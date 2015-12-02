@@ -111,9 +111,7 @@ Private Sub radChartView1_Drill(sender As Object, e As DrillEventArgs)
 ````
 
 {{endregion}} 
-
-
-
+ 
 
 >note The navigation element’s text is taken from __TitleElement.Text__ property by default, so every time you drill, you have to change this text accordingly. If this text is empty, it will be taken from the __RadChartView.View.ViewName__ property.
 >
@@ -121,7 +119,7 @@ Private Sub radChartView1_Drill(sender As Object, e As DrillEventArgs)
 
 To make the example complete you should make few more steps:
 
-1. First you should create __DrillDownDataInfo__ class which will contain two properties __Value__ and __Date__ and will implement the __INotifyPropertyChanged__ interface: 
+1\. First you should create __DrillDownDataInfo__ class which will contain two properties __Value__ and __Date__ and will implement the __INotifyPropertyChanged__ interface: 
 
 {{source=..\SamplesCS\ChartView\Features\ChartDrillDown.cs region=DrillDownDataInfo}} 
 {{source=..\SamplesVB\ChartView\Features\ChartDrillDown.vb region=DrillDownDataInfo}} 
@@ -208,10 +206,7 @@ End Class
 
 {{endregion}} 
 
-
-
-
-1. Now you can use this class to create three binding lists. Each one will contain data for the chart view. These methods are used in the previously described Drill event handler. 
+2\. Now you can use this class to create three binding lists. Each one will contain data for the chart view. These methods are used in the previously described Drill event handler. 
 
 {{source=..\SamplesCS\ChartView\Features\ChartDrillDown.cs region=LoadData}} 
 {{source=..\SamplesVB\ChartView\Features\ChartDrillDown.vb region=LoadData}} 
@@ -353,15 +348,12 @@ End Function
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 >note Note that the data is loaded from external files. These files contain dates and values which are parsed and stored in out DrillDownDataInfo class objects. The files are included in __Telerik UI for WinForms__ suite (navigate to *Telerik\UI for WinForms Q3 2013\Examples\QuickStart\Resources* ).
 >
 
 
-1. Finally you should initialize the chart by adding a series to it. Also the corresponding axes should be added. 
+3\. Finally you should initialize the chart by adding a series to it. Also the corresponding axes should be added. 
 
 {{source=..\SamplesCS\ChartView\Features\ChartDrillDown.cs region=DataByYears}} 
 {{source=..\SamplesVB\ChartView\Features\ChartDrillDown.vb region=DataByYears}} 

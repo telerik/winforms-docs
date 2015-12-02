@@ -85,6 +85,8 @@ Properties:
             
 
 * __Value__ (of type object) - the place on the associated axis where the annotation crosses it. When the associated axis is numerical (linear or logarithmic) a numeric value is expected and when it is a categorical - a category
+
+* __Label__ - this property allows you to display text near the annotation and indicate what it is for. 
             
 
 ## Polar axis grid line annotation

@@ -16,12 +16,13 @@ This article demonstrates how to customize the trackball labels text and styles.
 
 ## ![chartview-customization-formatting-trackball-labels 001](images/chartview-customization-formatting-trackball-labels001.png)
 
-1. You should subscribe to the __TextNeeded__ event and add the __ChartTrackballController__ to the chart as follows. 
-2. 
-	{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=Trackball}} 
-	{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=Trackball}} 
+1\. You should subscribe to the __TextNeeded__ event and add the __ChartTrackballController__ to the chart as follows. 
+2\. Now, you can use the TextNeeded and change any properties you desire.
+ 
+{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=Trackball}} 
+{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=Trackball}} 
 
-	````C#
+````C#
 ChartTrackballController controler = new ChartTrackballController();
 controler.TextNeeded += controler_TextNeeded;
 radChartView1.Controllers.Add(controler);
@@ -34,16 +35,14 @@ RadChartView1.Controllers.Add(controler)
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
+3\. Now, you can use the __TextNeeded__ and change any properties you desire. 
+	
+{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=TextNeeded}} 
+{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=TextNeeded}} 
 
-
-
-1. Now, you can use the __TextNeeded__ and change any properties you desire. 
-	{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=TextNeeded}} 
-	{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=TextNeeded}} 
-
-	````C#
+````C#
 private Font font = new Font("Segoe Script", 12, FontStyle.Regular);
 private void controler_TextNeeded(object sender, TextNeededEventArgs e)
 {
@@ -73,7 +72,7 @@ End Sub
 
 ````
 
-	{{endregion}}  
+{{endregion}}  
 
 >important The code for getting the current data point can depend on the used series type. For example if you use scatter chart, you should use __ScatterDataPoint__ type.
 >

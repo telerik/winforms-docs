@@ -17,12 +17,12 @@ position: 5
 For the need of validation process we made two events (__ItemValidating, ItemValidated__) that are firing when the __Validating__ and __Validated__ events occur in the editors. __RadDataEntry__ provides three different ways to show to the users that some editors do not match to validation criteria – Validation label, Error provider and Validation Panel. In the following tutorial we will demonstrate how use validation panel together with Error provider.
         
 
-1. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items: 
+1\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items: 
 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
 
-	````C#
+````C#
 private class Employee
 {
     public string FirstName
@@ -154,13 +154,13 @@ Public Sub New()
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
 
-	````C#
+````C#
 this.radDataEntry1.DataSource = new Employee() 
 { 
     FirstName = "Sarah",
@@ -185,18 +185,18 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-	![dataentry-validation 001](images/dataentry-validation001.png)
+![dataentry-validation 001](images/dataentry-validation001.png)
 
-1. Set the __ShowValidationPanel__ property to true. This will display the panel below the editors:
+2\. Set the __ShowValidationPanel__ property to true. This will display the panel below the editors:
             
 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ShowValidationPanel2}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ShowValidationPanel2}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ShowValidationPanel2}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ShowValidationPanel2}} 
 
-	````C#
+````C#
 this.radDataEntry1.ShowValidationPanel = true;
 
 ````
@@ -205,16 +205,16 @@ Me.radDataEntry1.ShowValidationPanel = True
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
 
-1. Subscribe to the __ItemValidated__ event of __RadDataEntry__:
+3\. Subscribe to the __ItemValidated__ event of __RadDataEntry__:
             
 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ItemValidated}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ItemValidated}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ItemValidated}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ItemValidated}} 
 
-	````C#
+````C#
 void radDataEntry1_ItemValidated(object sender, ItemValidatedEventArgs e)
 {
     Employee employee = this.radDataEntry1.CurrentObject as Employee;
@@ -343,9 +343,9 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-	![dataentry-validation 002](images/dataentry-validation002.png)
+![dataentry-validation 002](images/dataentry-validation002.png)
 
 In this tutorial we also used and Error provider to show error icon next to the editors.  You can read more about Microsoft Error provider here - [ErrorProvider Class](http://msdn.microsoft.com/en-us/library/system.windows.forms.errorprovider%28v=vs.110%29.aspx)

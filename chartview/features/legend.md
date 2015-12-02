@@ -202,13 +202,25 @@ Me.RadChartView1.ChartElement.LegendElement.Items.Add(item)
 You can use your own legend item elements by handling the __VisualItemCreating__ event of the legend. This allows you to change the way legend items are represented in the legend:  
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomLegendItem1}} 
-{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomLegendItem2}} 
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=CustomLegendItem1}} 
+
 ````C#
 this.radChartView1.ChartElement.LegendElement.VisualItemCreating +=new LegendItemElementCreatingEventHandler(LegendElement_VisualItemCreating);
-//
 
 ````
 ````VB.NET
+AddHandler Me.RadChartView1.ChartElement.LegendElement.VisualItemCreating, AddressOf LegendElement_VisualItemCreating
+````
+
+{{endregion}} 
+
+#### Custom LegendItemElement implementation:
+
+{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomLegendItem2}} 
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=CustomLegendItem2}} 
+
+````C#
+
 public class CustomLegendItemElement : LegendItemElement
 {
     public CustomLegendItemElement(LegendItem item)
@@ -230,7 +242,29 @@ private void LegendElement_VisualItemCreating(object sender, LegendItemElementCr
 {
     e.ItemElement = new CustomLegendItemElement(e.LegendItem);
 }
-//
+````
+````VB.NET
+Public Class CustomLegendItemElement
+    Inherits LegendItemElement
+
+    Public Sub New(item As LegendItem)
+        MyBase.New(item)
+        Me.Children.Remove(Me.MarkerElement)
+        Me.TitleElement.DrawFill = True
+        Me.TitleElement.DrawBorder = True
+        Me.StretchHorizontally = True
+    End Sub
+
+    Protected Overrides Sub Synchronize()
+        MyBase.Synchronize()
+        Me.SyncVisualStyleProperties(Me.LegendItem.Element, Me.TitleElement)
+        Me.TitleElement.ForeColor = Color.White
+    End Sub
+End Class
+
+Private Sub LegendElement_VisualItemCreating(sender As Object, e As LegendItemElementCreatingEventArgs)
+    e.ItemElement = New CustomLegendItemElement(e.LegendItem)
+End Sub
 
 ````
 

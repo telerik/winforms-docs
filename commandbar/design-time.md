@@ -30,7 +30,11 @@ Alternatively, follow these steps to edit line elements:
 
 1. Click the Add button in the RadElement Collection Editor to add a new row element.
 
-1. Click OK.![commandbar-design-time 002](images/commandbar-design-time002.png)![commandbar-design-time 003](images/commandbar-design-time003.png)
+1. Click OK.
+
+![commandbar-design-time 002](images/commandbar-design-time002.png)
+
+![commandbar-design-time 003](images/commandbar-design-time003.png)
 
 ## Adding a RadCommandBarStripElement to a RadCommandBarRowElement
 
@@ -50,11 +54,15 @@ Alternatively, follow these steps to edit strip elements:
 
 * Click OK.
 
-![commandbar-design-time 005](images/commandbar-design-time005.png)![commandbar-design-time 006](images/commandbar-design-time006.png)
+![commandbar-design-time 005](images/commandbar-design-time005.png)
+
+![commandbar-design-time 006](images/commandbar-design-time006.png)
 
 ## Adding an item to a RadCommandBarStripElement
 
-To add an item to a strip element, click on the down arrow button, placed in the strip and choose the item type to add.![commandbar-design-time 007](images/commandbar-design-time007.png)
+To add an item to a strip element, click on the down arrow button, placed in the strip and choose the item type to add.
+
+![commandbar-design-time 007](images/commandbar-design-time007.png)
 
 Alternatively, follow these steps to edit items:
 

@@ -15,21 +15,21 @@ position: 1
 The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
         
 
-1. Drop a __RadSplitContainer__ on your form and set its __Dock__ property to *Fill* .
+1\. Drop a __RadSplitContainer__ on your form and set its __Dock__ property to *Fill* .
             
 
-1. Add two panels to the split container. For example by using the smart tag.
+2\. Add two panels to the split container. For example by using the smart tag.
             
 
-1. Add  __RadLabel__, __RadCheckedListBox__ and a __RadButton__ to each of the panels. At this point the form should look like this: ![checkedlistbox-getting-started 001](images/checkedlistbox-getting-started001.png)
+3\. Add  __RadLabel__, __RadCheckedListBox__ and a __RadButton__ to each of the panels. At this point the form should look like this: ![checkedlistbox-getting-started 001](images/checkedlistbox-getting-started001.png)
 
-1. Now you are ready to bind the control. Open the code behind and add the following:  
+4\. Now you are ready to bind the control. Open the code behind and add the following:  
 
 
-	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=Initialization}} 
-	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=Initialization}} 
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=Initialization}} 
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=Initialization}} 
 
-	````C#
+````C#
 this.radCheckedListBox1.DataSource = this.CreatePhoneBookEntries();
 this.radCheckedListBox1.VisualItemFormatting += radCheckedListBox1_VisualItemFormatting;
 ListViewDetailColumn nameColumn = new ListViewDetailColumn("Name");
@@ -56,16 +56,16 @@ AddHandler Me.radButtonRemoveFromContacts.Click, AddressOf radButtonRemoveFromCo
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-1. The example uses the following sample business object: 
+5\. The example uses the following sample business object: 
 	
 
-	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=PhonebookEntry}} 
-	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=PhonebookEntry}} 
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=PhonebookEntry}} 
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=PhonebookEntry}} 
 
-	````C#
+````C#
 public class PhonebookEntry
 {
     public string FirstName { get; set; }
@@ -127,15 +127,15 @@ End Class
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-1. Now you can create a collection of PhonebookEntry business objects:
+6\. Now you can create a collection of PhonebookEntry business objects:
 
-	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=CreatePhonebookEntries}} 
-	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=CreatePhonebookEntries}} 
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=CreatePhonebookEntries}} 
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=CreatePhonebookEntries}} 
 
-	````C#
+````C#
 private IEnumerable<PhonebookEntry> CreatePhoneBookEntries()
 {
     List<PhonebookEntry> entries = new List<PhonebookEntry>() 
@@ -226,15 +226,15 @@ End Function
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-1. The next step is to create click event handlers for the buttons:
+7\. The next step is to create click event handlers for the buttons:
 
-	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=ClickEvents}} 
-	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=ClickEvents}} 
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=ClickEvents}} 
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=ClickEvents}} 
 
-	````C#
+````C#
 void radButtonAddToContacts_Click(object sender, EventArgs e)
 {
     foreach (ListViewDataItem item in this.radCheckedListBox1.CheckedItems)
@@ -275,15 +275,15 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-1. The final step is to use the VisualItemFormatting event to style the items in the first __RadCheckedListBox__. Please note that the checkbox position is changed.
+8\. The final step is to use the VisualItemFormatting event to style the items in the first __RadCheckedListBox__. Please note that the checkbox position is changed.
             
-	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=VisualItemFormatting}} 
-	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=VisualItemFormatting}} 
-
-	````C#
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=VisualItemFormatting}} 
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=VisualItemFormatting}} 
+	
+````C#
 BaseListViewVisualItem item = e.VisualItem;
 PhonebookEntry entry = item.Data.Value as PhonebookEntry;
 item.Image = entry.Image.GetThumbnailImage(80, 80, null, IntPtr.Zero);
@@ -310,7 +310,7 @@ End If
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
 ![checkedlistbox-getting-started 002](images/checkedlistbox-getting-started002.png)

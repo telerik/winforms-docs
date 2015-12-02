@@ -17,17 +17,17 @@ The Telerik RadCommandBar is built up of five levels of nested components:
 
 * RadCommandbar
 
-* RadCommandBarElement
+	* RadCommandBarElement
 
-* CommandBarRowElement (Rows Collection)
+		* CommandBarRowElement (Rows Collection)
 
-* CommandBarStripElement (Strips Collection)
+			* CommandBarStripElement (Strips Collection)
 
-* RadCommandBarGripButton
+				* RadCommandBarGripButton
 
-* Items ( arranged in ItemsLayout)
+				* Items ( arranged in ItemsLayout)
 
-* RadCommandBarOverflowButton
+				* RadCommandBarOverflowButton
 
 ## RadCommandBar
 

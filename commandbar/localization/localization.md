@@ -78,11 +78,9 @@ End Class
 {{endregion}} 
  
 
-To apply the custom localization provider, instantiate and assign it to the current localization provider: #_[C#] Assigning the Current Localization Provider_
+To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
-	
-
-
+#### Assigning the Current Localization Provider 
 
 {{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=usingProvider}} 
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=usingProvider}} 

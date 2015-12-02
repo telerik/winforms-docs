@@ -22,12 +22,12 @@ To handle this case, you need to tell the __RadDateTimePicker__, how to interpre
 
 The following example demonstrates how to do that:
 
-1. In the __BindingCreating__ event of the control you can tell which property to bind the field to. Here you should bind the "DateTime" field from the data source to the "NullableValue" property of __RadDateTimePicker__ (as it supports *null* values). 
+1\. In the __BindingCreating__ event of the control you can tell which property to bind the field to. Here you should bind the "DateTime" field from the data source to the "NullableValue" property of __RadDateTimePicker__ (as it supports *null* values). 
 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=BindingCreating}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=BindingCreating}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=BindingCreating}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=BindingCreating}} 
 
-	````C#
+````C#
 void radDataEntry1_BindingCreating(object sender, BindingCreatingEventArgs e)
 {
     if (e.DataMember == "DateTime")
@@ -46,15 +46,15 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-1. Then in the __BindingCreated__ event you will enable the binding formatting and will subscribe to its __Format__ event.  
+2\. Then in the __BindingCreated__ event you will enable the binding formatting and will subscribe to its __Format__ event.  
 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=BindingCreated}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=BindingCreated}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=BindingCreated}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=BindingCreated}} 
 
-	````C#
+````C#
 void radDataEntry1_BindingCreated(object sender, BindingCreatedEventArgs e)
 {
     if (e.DataMember == "DateTime")
@@ -75,18 +75,16 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-
-
-1. At the end we just need to interpret the *DBNull*  values as *null* values:
+3\. At the end we just need to interpret the *DBNull*  values as *null* values:
       
 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=Format}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=Format}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=Format}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=Format}} 
 
-	````C#
+````C#
 void Binding_Format(object sender, ConvertEventArgs e)
 {
     if (e.Value.Equals(DBNull.Value))
@@ -105,7 +103,7 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
 

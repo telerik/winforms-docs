@@ -17,17 +17,17 @@ This tutorial demonstrates how bind __RadDataEntry__ to business object and to a
 
 ## Binding RadDataEntry to a single object
 
-1. Place a __RadDataEntry__ control on a form. 
+1\. Place a __RadDataEntry__ control on a form. 
 
-	![dataentry-overview-getting-started 001](images/dataentry-overview-getting-started001.png)
+![dataentry-overview-getting-started 001](images/dataentry-overview-getting-started001.png)
 
-1. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties
+2\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties
             
 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
 
-	````C#
+````C#
 private class Employee
 {
     public string FirstName
@@ -159,16 +159,15 @@ Public Sub New()
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
+3\. Once the class Employee is defined, you may use it for creating an object of this type and bind it to the <b>RadDataEntry</b> control: 
+	
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
 
-
-1. Once the class Employee is defined, you may use it for creating an object of this type and bind it to the __RadDataEntry__ control: 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
-
-	````C#
+````C#
 this.radDataEntry1.DataSource = new Employee() 
 { 
     FirstName = "Sarah",
@@ -193,14 +192,11 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
-
-
-
-1. Press __F5__ to run the project and you should see the following:
+4\. Press <b>F5</b> to run the project and you should see the following:
  
-	![dataentry-overview-getting-started 002](images/dataentry-overview-getting-started002.png)
+![dataentry-overview-getting-started 002](images/dataentry-overview-getting-started002.png)
 
 >note  In case you want to be notified for changes made on the data item, the class Employee should implement [INotifyPropertyChanged ]( http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged%28v=vs.110%29.aspx ) Interface and raise the  __PropertyChanged__  event every time a property value changes.
  
@@ -210,16 +206,16 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 The following tutorial will demonstrate how to bind __RadDataEntry__ to a collection of objects and navigate through it. In order to navigate through the collection we will use  [RadBindingNavigator]({%slug winforms/bindingnavigator%}). __RadBindingNavigator__ is designed to use as data source a [ BindingSource ]( http://msdn.microsoft.com/en-us/library/system.windows.forms.bindingsource%28v=vs.110%29.aspx ) component. 
         
 
-1. Place __RadDataEntry__, __RadBindingNavigator__  and a BindingSource component on a form. Dock the navigator to *Top* and the data entry to *Fill*.
+1\. Place __RadDataEntry__, __RadBindingNavigator__  and a BindingSource component on a form. Dock the navigator to *Top* and the data entry to *Fill*.
  
-	![dataentry-overview-getting-started 003](images/dataentry-overview-getting-started003.png)
+![dataentry-overview-getting-started 003](images/dataentry-overview-getting-started003.png)
 
-1. Create List of business objects and set it as data source of BindingSource.
+2\. Create List of business objects and set it as data source of BindingSource.
              
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.cs region=bind2}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.vb region=bind2}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.cs region=bind2}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.vb region=bind2}} 
 
-	````C#
+````C#
 List<Employee> employees = new List<Employee>();
 employees.Add(new Employee() { FirstName = "Sarah", LastName = "Blake", Occupation = "Supplied Manager", StartingDate = new DateTime(2005, 04, 12), IsMarried = true, Salary = 3500, Gender = Gender.Female });
 employees.Add(new Employee() { FirstName = "Jane", LastName = "Simpson", Occupation = "Security", StartingDate = new DateTime(2008, 12, 03), IsMarried = true, Salary = 2000, Gender = Gender.Female });
@@ -270,15 +266,15 @@ Me.bindingSource1.DataSource = employees
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
-1. Set this __BindingSource__ to __RadBindingNavigator__ and __RadDataEntry__.
+3\. Set this __BindingSource__ to __RadBindingNavigator__ and __RadDataEntry__.
             
 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.cs region=bind3}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.vb region=bind3}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.cs region=bind3}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted2.vb region=bind3}} 
 
-	````C#
+````C#
 this.radDataEntry1.DataSource = this.bindingSource1;
 this.radBindingNavigator1.BindingSource = this.bindingSource1;
 
@@ -289,11 +285,9 @@ Me.radBindingNavigator1.BindingSource = Me.bindingSource1
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-
-
-1. Press __F5__ to run the project and you should see the following:
+4\. Press __F5__ to run the project and you should see the following:
  
 ![dataentry-overview-getting-started 004](images/dataentry-overview-getting-started004.png)

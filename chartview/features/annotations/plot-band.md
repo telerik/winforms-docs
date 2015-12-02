@@ -94,6 +94,8 @@ Properties:
             
 
 * __To__ (of type object) - the ending point for the plot band. When the associated axis is numerical (Linear or Logarithmic) a numeric value is expected and when it is a __CategoricalAxis__ - a category
+
+* __Label__ - this property allows you to display text near the annotation and indicate what it is for. 
             
 
 ## Polar axis plotBand annotation

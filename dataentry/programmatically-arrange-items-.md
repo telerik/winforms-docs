@@ -17,12 +17,12 @@ position: 4
 Items in __RadDataEntry__ can be arranged both at design time and run time. At design time users can use the designer to arrange the items according to their needs by drag and drop or by setting the desired properties of the items. However at run time there is no designer that can be used to arrange them, so to achieve the desired layout the user should use the exposed events or to access the controls from the __Controls__ collection and to change their location, size and etc. The following example will demonstrate how to use the control events to arrange the generated items.
         
 
-1. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items.
+1\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items.
              
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
 
-	````C#
+````C#
 private class Employee
 {
     public string FirstName
@@ -154,13 +154,13 @@ Public Sub New()
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
  
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
 
-	````C#
+````C#
 this.radDataEntry1.DataSource = new Employee() 
 { 
     FirstName = "Sarah",
@@ -185,17 +185,17 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-	![dataentry-overview-programmatically-arrange-items 001](images/dataentry-overview-programmatically-arrange-items001.png)
+![dataentry-overview-programmatically-arrange-items 001](images/dataentry-overview-programmatically-arrange-items001.png)
 
-1. To arrange the items we will subscribe to the *ItemInitialized* event of __RadDataEntry__. This event is triggered when an item is initialized, so it is suitable to introduce changes.
+2\. To arrange the items we will subscribe to the *ItemInitialized* event of __RadDataEntry__. This event is triggered when an item is initialized, so it is suitable to introduce changes.
             
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ItemInitialized}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ItemInitialized}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ItemInitialized}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ItemInitialized}} 
 
-	````C#
+````C#
 void radDataEntry1_ItemInitialized(object sender, Telerik.WinControls.UI.ItemInitializedEventArgs e)
 {
     if (e.Panel.Controls[1].Text == "FirstName")
@@ -232,7 +232,7 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-	![dataentry-overview-programmatically-arrange-items 002](images/dataentry-overview-programmatically-arrange-items002.png)
+![dataentry-overview-programmatically-arrange-items 002](images/dataentry-overview-programmatically-arrange-items002.png)
