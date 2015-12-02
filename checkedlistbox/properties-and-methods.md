@@ -17,7 +17,7 @@ position: 3
 This section demonstrates specific for the __RadCheckedListBox__ control properties.
       
 
-1. __CheckOnClickMode__
+1\. __CheckOnClickMode__
 
 * __Off__ – to toggle item CheckState the user has to click on the checkbox.
 
@@ -25,7 +25,7 @@ This section demonstrates specific for the __RadCheckedListBox__ control propert
 
 * __SecondClick__ – click over unselected item selects it. If item is selected each next click toggles its checkbox.
 
-1. __CheckBoxesAlignment__ - this new property comes in order to extend the __CheckBoxesPosition__, which supports 4 positions (Left, Right, Top, Bottom). CheckBoxesAlignment gives the user full control over the CheckBoxes alignment within the item.
+2\. __CheckBoxesAlignment__ - this new property comes in order to extend the __CheckBoxesPosition__, which supports 4 positions (Left, Right, Top, Bottom). CheckBoxesAlignment gives the user full control over the CheckBoxes alignment within the item.
             
 
 * __Near__ – when CheckBoxesPosition is set to Left or Right it means Top alignment. When CheckBoxesPosition is set to Top or Bottom it means Left.

@@ -56,7 +56,7 @@ End Sub
  
 
 * __FloatingStripCreated__ event is fired when the floating form is shown.
-  The following example shows how to set the caption text of the floating form:#_[C#]_
+  The following example shows how to set the caption text of the floating form: 
  
 {{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripCreated}} 
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreated}} 
@@ -79,7 +79,7 @@ End Sub
  
 
 * __FloatingStripDocking__ event is fired when a floating strip is about to be docked to a RadCommandBar control. 
-The following example shows how to prevent the strip with name “OptionsStrip” from being docked.#_[C#]_
+The following example shows how to prevent the strip with name “OptionsStrip” from being docked. 
  
 {{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripDocking}} 
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocking}} 

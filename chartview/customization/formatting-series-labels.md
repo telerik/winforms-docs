@@ -16,12 +16,12 @@ This article demonstrates how to change the labels styles and text. The series l
 
 ## ![chartview-customization-formatting-series-labels 001](images/chartview-customization-formatting-series-labels001.png)
 
-1. In order this event to fire, you should set the __ShowLabels__ property to *true* for at least one series. For example, you can set this property for all series with the following code. 
+1\. In order this event to fire, you should set the __ShowLabels__ property to *true* for at least one series. For example, you can set this property for all series with the following code. 
 
-	{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=ShowLabels}} 
-	{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=ShowLabels}} 
+{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=ShowLabels}} 
+{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=ShowLabels}} 
 
-	````C#
+````C#
 foreach (var series in radChartView1.Series)
 {
     series.ShowLabels = true;
@@ -35,15 +35,15 @@ Next
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
 
-1. Now you can change the labels styles and text. 
+2\. Now you can change the labels styles and text. 
 
-	{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=LabelFormatting}} 
-	{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=LabelFormatting}} 
+{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=LabelFormatting}} 
+{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=LabelFormatting}} 
 
-	````C#
+````C#
 private Font font1 = new Font("Segoe Script", 12, FontStyle.Regular);
 private void radChartView1_LabelFormatting(object sender, ChartViewLabelFormattingEventArgs e)
 {
@@ -71,7 +71,7 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
 
 >important The code for getting the current data point can depend on the used series type. For example if you use pie chart you should cast to __PiePointElement__ , and __PieDataPoint__ types.

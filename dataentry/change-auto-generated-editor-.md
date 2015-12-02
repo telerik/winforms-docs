@@ -30,13 +30,13 @@ By default __RadDataEntry__ generates several different editors according to the
 In the following example it will be demonstrated how to change default editor with the custom one.
         
 
-1. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items.
+1\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items.
             
 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
 
-	````C#
+````C#
 private class Employee
 {
     public string FirstName
@@ -168,14 +168,12 @@ Public Sub New()
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
 
- 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
-
-	````C#
+````C#
 this.radDataEntry1.DataSource = new Employee() 
 { 
     FirstName = "Sarah",
@@ -200,17 +198,17 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-	![dataentry-overview-change-auto-generated-editor 001](images/dataentry-overview-change-auto-generated-editor001.png)
+![dataentry-overview-change-auto-generated-editor 001](images/dataentry-overview-change-auto-generated-editor001.png)
 
-1. To change the default __RadTextBox__ editor of the “Salary” property with __RadMaskedEditBox__ we will subscribe to *EditorInitializing* event of __RadDataEntry__.
+2\. To change the default __RadTextBox__ editor of the “Salary” property with __RadMaskedEditBox__ we will subscribe to *EditorInitializing* event of __RadDataEntry__.
            
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=EditorInitializing}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=EditorInitializing}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=EditorInitializing}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=EditorInitializing}} 
 
-	````C#
+````C#
 void radDataEntry1_EditorInitializing(object sender, Telerik.WinControls.UI.EditorInitializingEventArgs e)
 {
     if (e.Property.Name == "Salary")
@@ -235,18 +233,18 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-	![dataentry-overview-change-auto-generated-editor 002](images/dataentry-overview-change-auto-generated-editor002.png)
+![dataentry-overview-change-auto-generated-editor 002](images/dataentry-overview-change-auto-generated-editor002.png)
 
-1. To achieve working binding for this new editor we should subscribe to the *BindingCreated* event where we will subscribe to the *Parse* event of the Binding object. You can read more about *Format* and *Parse* events of Binding object and why we should use them [here](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding_events%28v=vs.110%29.aspx).
+3\. To achieve working binding for this new editor we should subscribe to the *BindingCreated* event where we will subscribe to the *Parse* event of the Binding object. You can read more about *Format* and *Parse* events of Binding object and why we should use them [here](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding_events%28v=vs.110%29.aspx).
           
 
-	{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=BindingCreated}} 
-	{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=BindingCreated}} 
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=BindingCreated}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=BindingCreated}} 
 
-	````C#
+````C#
 void radDataEntry1_BindingCreated(object sender, BindingCreatedEventArgs e)
 {
     if (e.DataMember == "Salary")
@@ -274,7 +272,7 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
 

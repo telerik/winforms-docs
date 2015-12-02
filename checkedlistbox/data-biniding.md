@@ -37,22 +37,25 @@ As an inheritor of __RadListView__, __RadCheckedListBox__ extends its functional
 
 ## Design Time
 
-To data bind the checkboxes of __RadCheckedListBox__ you need to set __CheckedMember__ using the smart tag or the properties window. ![checkedlistbox-data-binding 001](images/checkedlistbox-data-binding001.png)
+To data bind the checkboxes of __RadCheckedListBox__ you need to set __CheckedMember__ using the smart tag or the properties window. 
 
-The result is data bound __CheckedListBox__![checkedlistbox-data-binding 002](images/checkedlistbox-data-binding002.png)
+![checkedlistbox-data-binding 001](images/checkedlistbox-data-binding001.png)
+
+The result is data bound __CheckedListBox__
+
+![checkedlistbox-data-binding 002](images/checkedlistbox-data-binding002.png)
 
 ## Binding Programmatically
 
 The following example demonstrates how you can bind the control by using the __CheckedMember__ property. This example uses the __CheckState__ property of the business object.
           
 
-1. Initially let’s create collection of objects.
+1\. Initially let’s create collection of objects.
 
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=SimpleObject}} 
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=SimpleObject}} 
 
-	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=SimpleObject}} 
-	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=SimpleObject}} 
-
-	````C#
+````C#
 public class SimpleObject
 {
     public int Id { get; set; }
@@ -94,12 +97,12 @@ End Class
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
-	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=CreateSimpleObjects}} 
-	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=CreateSimpleObjects}} 
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=CreateSimpleObjects}} 
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=CreateSimpleObjects}} 
 
-	````C#
+````C#
 private IEnumerable<SimpleObject> CreateSimpleObjects()
 {
     List<SimpleObject> data = new List<SimpleObject>()
@@ -154,18 +157,15 @@ End Function
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
-
-
-
-1. To support three state check boxes we need to set the __ThreeStateMode__ property:
+2\. To support three state check boxes we need to set the __ThreeStateMode__ property:
             
 
-	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=ThreeStateMode}} 
-	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ThreeStateMode}} 
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=ThreeStateMode}} 
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ThreeStateMode}} 
 
-	````C#
+````C#
 this.radCheckedListBox1.ThreeStateMode = true;
 
 ````
@@ -174,14 +174,14 @@ Me.RadCheckedListBox1.ThreeStateMode = True
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
-1. And finally set programmatically the __DataSource__, __DisplayMember__, __ValueMember__ and __CheckedMember__ properties. 
+3\. And finally set programmatically the <b>DataSource</b>, <b>DisplayMember</b>, <b>ValueMember</b> and __CheckedMember__ properties. 
 
-	{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=ProgramaticallyDatabind}} 
-	{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ProgramaticallyDatabind}} 
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=ProgramaticallyDatabind}} 
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=ProgramaticallyDatabind}} 
 
-	````C#
+````C#
 this.radCheckedListBox1.DataSource = this.CreateSimpleObjects();
 this.radCheckedListBox1.DisplayMember = "Name";
 this.radCheckedListBox1.ValueMember = "Id";
@@ -196,7 +196,7 @@ Me.RadCheckedListBox1.CheckedMember = "CheckState"
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
 ![checkedlistbox-data-binding 003](images/checkedlistbox-data-binding003.png)
