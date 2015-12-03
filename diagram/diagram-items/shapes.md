@@ -160,18 +160,18 @@ The __RadDiagramShape__ class exposes multiple properties that allow you to cont
 
 * __Shape Bounds__
 
-* __Bounds__- this property is of type Rect and it gets the width, height and location of the shape's bounds.
+	* __Bounds__- this property is of type Rect and it gets the width, height and location of the shape's bounds.
                 
 
-* __ActualBounds__ - this property is of type Rect and it gets the width, height and location of a rotated shape's bounds.
+	* __ActualBounds__ - this property is of type Rect and it gets the width, height and location of a rotated shape's bounds.
                 
 
 * __Shape Connections__ - you can get all incoming and outgoing connections related to the shape through the following properties:
 
-* __IncomingLinks__- this property is an enumeration that gets all incoming connections. It gives you information about the connections type, starting and ending points as well as the related connector positions.
+	* __IncomingLinks__- this property is an enumeration that gets all incoming connections. It gives you information about the connections type, starting and ending points as well as the related connector positions.
                 
 
-* __OutgoingLinks__- this property is an enumeration that gets all outgoing connections. It gives you information about the connections type, starting and ending points as well as the related connector positions.
+	* __OutgoingLinks__- this property is an enumeration that gets all outgoing connections. It gives you information about the connections type, starting and ending points as well as the related connector positions.
                 
 
 * __Rotation Angle__ - __RadDiagramShape__ supports rotation. You can get or set the rotation angle of a shape using the __RotationAngle__ property.

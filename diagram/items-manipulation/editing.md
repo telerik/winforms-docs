@@ -54,6 +54,31 @@ __RadDiagramItem__ also provides four editing events:
             
 
 * __BeginEdit__: fires when a __RadDiagramItem__ has just entered in edit mode.
+In the code snippet below it is demonstrated how to access the editor element:
+
+#### Access editor element 
+
+{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=GetEditor}} 
+{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=GetEditor}} 
+
+````C#
+            
+private void shape_BeginEdit(object sender, EventArgs e)
+{
+    RadDiagramShape shape = sender as RadDiagramShape;
+    RadTextBoxControlElement editorElement = shape.FindDescendant<RadTextBoxControlElement>();
+}
+
+````
+````VB.NET
+Private Sub shape_BeginEdit(sender As Object, e As EventArgs)
+    Dim shape As RadDiagramShape = TryCast(sender, RadDiagramShape)
+    Dim editorElement As RadTextBoxControlElement = shape.FindDescendant(Of RadTextBoxControlElement)()
+End Sub
+
+````
+
+{{endregion}} 
             
 
 * __PreviewEndEdit__: fires when a __RadDiagramItem__ is about to leave the edit mode. It is cancelable.

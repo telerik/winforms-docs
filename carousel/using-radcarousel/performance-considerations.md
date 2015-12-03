@@ -16,7 +16,7 @@ position: 4
 
 RadCarousel is a dynamic control, which utilizes a lot of animations in order to bring rich interactivity. Because of this, there are a few performance considerations that you have to keep in mind when working with the control:
 
-1. __Size of the images__ that you are using in the carousel items. Avoid large images, because they have a performance penalty on the animations. Here is a blog post where the author seems to have implemented a method that shows exactly how to manipulate large images:[https://web.archive.org/web/20130529061432/http://blog.justinholton.com/post/Create-a-Scaled-GDI-Thumbnail-(Constrain-Proportions).aspx ](https://web.archive.org/web/20130529061432/http://blog.justinholton.com/post/Create-a-Scaled-GDI-Thumbnail-(Constrain-Proportions).aspx)
+1. __Size of the images__ that you are using in the carousel items. Avoid large images, because they have a performance penalty on the animations. Here is a blog post where the author seems to have implemented a method that shows exactly how to manipulate large images:[Create a Scaled Thumbnail with GDI+ ](https://web.archive.org/web/20130529061432/http://blog.justinholton.com/post/Create-a-Scaled-GDI-Thumbnail-(Constrain-Proportions).aspx)
 
 1. __Item Reflections__ are calculated dynamically, and impact performance. If you are using reflections, try setting the __ItemReflectionPercentage__ property to a lower value (even zero) to see whether this helps. 
 

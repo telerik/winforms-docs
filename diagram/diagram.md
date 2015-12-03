@@ -33,6 +33,8 @@ Here is a list with short descriptions of the top-of-the-line features of __RadD
             
 
 * __Flexible diagramming connections__ - __RadDiagram__ exposes flexible diagram connections.
+
+* __Items editing__ -  __RadDiagram__ supports editing the content of the diagramming elements.
             
 
 * __Items rotation__ - __RadDiagram__ supports rotation.

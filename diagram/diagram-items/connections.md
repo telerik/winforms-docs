@@ -39,19 +39,19 @@ The __RadDiagramConnection__ class exposes the following properties that allow y
 * __SourceConnectorPosition/TargetConnectorPosition__ - there are five predefined strings that you can use to define where to position the connectors of the connection:           
             
 
-* __Auto__ - use it if you want to automatically determine the start/end point of a connection. This option will allow the connection to dynamically determine which shape connector to be used as a start/end point. Based on the end point position, the __SourceConnectorPosition__ will be set to the nearest shape connector. Alternatively, the __TargetConnectorPosition__ will be set to the nearest shape connector, based on the start point position of the connection.
+	* __Auto__ - use it if you want to automatically determine the start/end point of a connection. This option will allow the connection to dynamically determine which shape connector to be used as a start/end point. Based on the end point position, the __SourceConnectorPosition__ will be set to the nearest shape connector. Alternatively, the __TargetConnectorPosition__ will be set to the nearest shape connector, based on the start point position of the connection.
                 
 
-* __Left__ - use it to define the left connector of a shape as the source/target point of the connection
+	* __Left__ - use it to define the left connector of a shape as the source/target point of the connection
                 
 
-* __Top__ - use it to define the top connector of a shape as the source/target point of the connection
+	* __Top__ - use it to define the top connector of a shape as the source/target point of the connection
                 
 
-* __Right__ - use it to define the right connector of a shape as the source/target point of the connection
+	* __Right__ - use it to define the right connector of a shape as the source/target point of the connection
                 
 
-* __Bottom__ - use it to define the bottom connector of a shape as the source/target point of the connection
+	* __Bottom__ - use it to define the bottom connector of a shape as the source/target point of the connection
 
 ![diagram-diagram-items-connections 009](images/diagram-diagram-items-connections009.png)
 
@@ -103,7 +103,7 @@ RadDiagram1.Items.Add(connection1)
 * __ConnectionType__ - controls the connection type. As an enumeration of type Telerik.Windows.Diagrams.Core.ConnectionType, it exposes the following members:
             
 
-* __Polyline__ - this type allows you to define multiple points a connection has to pass through. By default, such a connection have two points it has to pass through - its source connector (or StartPoint) and its target connector (or EndPoint). This is why by default the Polyline __ConnectionType__ visualizes a straight connection. Sample of a straight Polyline connection between two shapes:
+\* __Polyline__ - this type allows you to define multiple points a connection has to pass through. By default, such a connection have two points it has to pass through - its source connector (or StartPoint) and its target connector (or EndPoint). This is why by default the Polyline __ConnectionType__ visualizes a straight connection. Sample of a straight Polyline connection between two shapes:
 
 ![diagram-diagram-items-connections 003](images/diagram-diagram-items-connections003.png) 
 
@@ -194,7 +194,7 @@ Sample of a curved Polyline connection:
 
 ![diagram-diagram-items-connections 004](images/diagram-diagram-items-connections004.png)
 
-* __Bezier__ - this connection type allows you to create a Bézier curve. The Bezier connection is a curve specified by four points: two end points (p1 and p2) - the source/start and target/end of the connection and two handle points (h1 and h2) and a tension parameter. The curve begins at p1 and ends at p2 and it doesn't   pass through the handle points, but the handle points act as magnets, pulling the curve in certain directions and influencing the way the curve bends. The following illustration shows a Bézier RadDiagramConnection along with its endpoints and handle points.
+\* __Bezier__ - this connection type allows you to create a Bézier curve. The Bezier connection is a curve specified by four points: two end points (p1 and p2) - the source/start and target/end of the connection and two handle points (h1 and h2) and a tension parameter. The curve begins at p1 and ends at p2 and it doesn't   pass through the handle points, but the handle points act as magnets, pulling the curve in certain directions and influencing the way the curve bends. The following illustration shows a Bézier RadDiagramConnection along with its endpoints and handle points.
 
 ![diagram-diagram-items-connections 005](images/diagram-diagram-items-connections005.png) The RadDiagramConnection. __BezierTension__ parameter defines the curve that will be produced for a given set of end and handle points. The following illustration shows a Bezier connection:
 
@@ -244,7 +244,7 @@ The offset between a Bezier connection handle point and its corresponding endpoi
 >
 
 
-* __Spline__ - this connection type represents a cardinal spline. The connection is specified by an array of points - the connection passes smoothly through each point in the array; there are no sharp corners and no abrupt changes in the tightness of the curve. The following illustration shows a set of points and a spline connection that passes through each point in the set. Sample of a Spline connection:
+\* __Spline__ - this connection type represents a cardinal spline. The connection is specified by an array of points - the connection passes smoothly through each point in the array; there are no sharp corners and no abrupt changes in the tightness of the curve. The following illustration shows a set of points and a spline connection that passes through each point in the set. Sample of a Spline connection:
 
 ![diagram-diagram-items-connections 008](images/diagram-diagram-items-connections008.png) 
 
@@ -443,6 +443,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4
 
 
 * __Arrow4Filled__:
+
 ![diagram-diagram-items-connections 019](images/diagram-diagram-items-connections019.png) 
  
 

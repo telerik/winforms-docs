@@ -59,16 +59,16 @@ __RadDiagram__ exposes two panning events:
 * __PreviewPan__: this event is fired before executing the pan operation. Its event handler receives two arguments:            
             
 
-* The sender argument that contains the __RadDiagram__ instance that fired the event.
+	* The sender argument that contains the __RadDiagram__ instance that fired the event.
 
-* A __PositionChangedRoutedEventArgs__ object that provides information regarding the current and the next position of the diagram through the __OldPosition__ and __NewPosition__ properties. This event can be handled to cancel a particular pan operation. For that purpose the PositionChangedRoutedEventArgs.__Handled__ property needs to be set to *true*.
+	* A __PositionChangedRoutedEventArgs__ object that provides information regarding the current and the next position of the diagram through the __OldPosition__ and __NewPosition__ properties. This event can be handled to cancel a particular pan operation. For that purpose the PositionChangedRoutedEventArgs.__Handled__ property needs to be set to *true*.
 
 * __Pan__: this event is raised by the __RadDiagram__ to inform that a pan operation has completed. Its event handler receives two arguments:
             
 
-* The sender argument that contains the __RadDiagram__ instance that fired the event.
+	* The sender argument that contains the __RadDiagram__ instance that fired the event.
 
-* A __PositionChangedRoutedEventArgs__ object that provides information regarding the current and the next position of the diagram through the __OldPosition__ and __NewPosition__ properties.
+	* A __PositionChangedRoutedEventArgs__ object that provides information regarding the current and the next position of the diagram through the __OldPosition__ and __NewPosition__ properties.
 
 >note Please note that if you handle the __PreviewPan__ event, the __Pan__ event will not be fired at all.
 >
@@ -130,10 +130,7 @@ Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 The current zoom value in a __RadDiagram__ instance is controlled through the __Zoom__ property. It represents a double value which cannot be null, infinity or NaN. Additionally, this value is coerced to be within the range defined by the __MinimumZoom__ and __MaximumZoom__ constants. The default __Zoom__ value is 1.
 
 >note Please note that in the diagramming framework we talk about "zooming out" when the __Zoom__ value is less than 1. Alternatively, a __Zoom__ value greater than 1 is considered a "zoom in".
@@ -149,9 +146,9 @@ If you need to initiate a zoom through code-behind, __RadDiagram__ provides two 
 * __ZoomIn__: this method performs an incremental zoom in taking into account the previous zoom operations. It can take up to 2 parameters:
             
 
-* a double value which indicates a zoom factor.
+	* a double value which indicates a zoom factor.
 
-* a Point value which indicates the coordinates of the point that should be used as a center of the zoom operation. Please note that if you decide to use this parameter, then you have to make sure the coordinates you provide are in the context of the current view port.
+	* a Point value which indicates the coordinates of the point that should be used as a center of the zoom operation. Please note that if you decide to use this parameter, then you have to make sure the coordinates you provide are in the context of the current view port.
 
 >note Please note that both of the parameters described above are optional.
 > 
@@ -169,16 +166,13 @@ Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 * __ZoomOut__: this method performs an incremental zoom out taking into account the previous zoom operations. It can take up to 2 parameters:
             
 
-* a double value which indicates a zoom factor.
+	* a double value which indicates a zoom factor.
 
-* a Point value which indicates the coordinates of the point that should be used as a center of the zoom operation. Please note that if you decide to use this parameter, then you have to make sure the coordinates you provide are in the context of the current view port.
+	* a Point value which indicates the coordinates of the point that should be used as a center of the zoom operation. Please note that if you decide to use this parameter, then you have to make sure the coordinates you provide are in the context of the current view port.
 
 >note Please note that both of the parameters described above are optional.
 > 
@@ -207,28 +201,28 @@ __RadDiagram__ exposes two zooming events:
 * __PreviewZoom__: this event is fired before executing the zoom operation. Its event handler receives two arguments:
             
 
-* The sender argument that contains the __RadDiagram__ instance that fired the event.
+	* The sender argument that contains the __RadDiagram__ instance that fired the event.
 
-* A __DiagramZoomEventArgs__ object that provides information regarding:
+	* A __DiagramZoomEventArgs__ object that provides information regarding:
 
-* __Zoom__: a double value representing the previous zoom value.
+		* __Zoom__: a double value representing the previous zoom value.
 
-* __TargetZoom__: a double value that gets or sets the result zoom. By default, this property contains the coerced new zoom value. Please note that if you decide to change that value, it will be coerced first and then applied on the diagramming instance.
+		* __TargetZoom__: a double value that gets or sets the result zoom. By default, this property contains the coerced new zoom value. Please note that if you decide to change that value, it will be coerced first and then applied on the diagramming instance.
                     
 
-* __ZoomPoint__: a Point value representing the center point of the zoom operation.
+		* __ZoomPoint__: a Point value representing the center point of the zoom operation.
                     
 
-* __IsAnimationRunning__: a boolean value indicating whether a zoom animation is currently running. This event can be handled to cancel a particular zoom operation. For that purpose the DiagramZoomEventArgs. __Handled__ property needs to be set to *true*.
+		* __IsAnimationRunning__: a boolean value indicating whether a zoom animation is currently running. This event can be handled to cancel a particular zoom operation. For that purpose the DiagramZoomEventArgs. __Handled__ property needs to be set to *true*.
                     
 
 * __ZoomChanged__:  this event is raised by the __RadDiagram__ to inform that a zoom operation has completed. Its event handler receives two arguments:
             
 
-* The sender argument that contains the __RadDiagram__ instance that fired the event.
+	* The sender argument that contains the __RadDiagram__ instance that fired the event.
                 
 
-* A __RadRoutedPropertyChangedEventArgs__ object that provides information regarding the old and the new value of the diagram zoom through the __OldValue__ and __NewValue__ properties.
+	* A __RadRoutedPropertyChangedEventArgs__ object that provides information regarding the old and the new value of the diagram zoom through the __OldValue__ and __NewValue__ properties.
                 
 
 >note Please note that if you handle the __PreviewZoom__ event, the __ZoomChanged__ event will not be fired at all.

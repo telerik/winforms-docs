@@ -192,9 +192,10 @@ Me.RadDiagram1.SetLayout(Telerik.Windows.Diagrams.Core.LayoutType.Tree, Settings
  
 ## Layout Settings
 
-* __Component Layout and Settings__One important aspect with respect to diagram layout is the concept of graph component. If a diagram consists of  separate sub-diagrams with no connection between them they are called components of a diagram.When applying a diagram layout to a diagram consisting of one or more components a layout is applied to each components and thereafter the components are organized in a grid.
+* __Component Layout and Settings__: One important aspect with respect to diagram layout is the concept of graph component. If a diagram consists of  separate sub-diagrams with no connection between them they are called components of a diagram.When applying a diagram layout to a diagram consisting of one or more components a layout is applied to each components and thereafter the components are organized in a grid.
 
-![diagram-features-layout 011](images/diagram-features-layout011.png) The splitting in components is automatic and the grid layout of the components applied to both the tree layout and the layered layout types. The grid layout has the following settings which are both present as part of the __SugiyamaLayoutSettings__ and the__TreeLayoutSettings__:
+![diagram-features-layout 011](images/diagram-features-layout011.png) 
+The splitting in components is automatic and the grid layout of the components applied to both the tree layout and the layered layout types. The grid layout has the following settings which are both present as part of the <b>SugiyamaLayoutSettings</b> and the <b>TreeLayoutSettings</b>:
 
 * __AnimateTransitions__: This property allows you to animate the dynamic changes of a Diagram layout. When you set the value of the property to *true* and dynamically change the layout settings of a Diagramming solution, an animation will be applied during the transition of the settings.
                 

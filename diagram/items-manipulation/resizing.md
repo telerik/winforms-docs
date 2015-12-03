@@ -38,7 +38,7 @@ Me.RadDiagram1.IsResizingEnabled = False
 
 ## Manipulation adorner
 
-The __IsManipulationAdornerVisible__
+The __IsManipulationAdornerVisible__ property controls whether the manipulation adorner will be displayed or not.
 
 ## Width and Height
 

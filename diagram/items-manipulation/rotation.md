@@ -38,7 +38,9 @@ Me.RadDiagram1.IsRotationEnabled = False
  
 ## Rotation Angle
 
-You can rotate shapes by using their __RotationAngle__ property: ![diagram-items-manipulation-rotation 002](images/diagram-items-manipulation-rotation002.png) 
+You can rotate shapes by using their __RotationAngle__ property: 
+
+![diagram-items-manipulation-rotation 002](images/diagram-items-manipulation-rotation002.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=RotationAngle}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=RotationAngle}} 

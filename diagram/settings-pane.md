@@ -166,10 +166,10 @@ __RadDiagram__ exposes two events that come in handy while working with the defa
 * __PreviewAdditionalContentActivated__- this event is raised by a RadDiagram to inform layouts that the additional content is going to be activated. The event handler receives two arguments:
             
 
-* The __sender__ argument contains the __RadDiagramElement__. This argument is of type object, but can be cast to the __RadDiagramElement__ type.
+	* The __sender__ argument contains the __RadDiagramElement__. This argument is of type object, but can be cast to the __RadDiagramElement__ type.
                 
 
-* An __AdditionalContentActivatedEventArgs__ object, that gives you access to a __ContextItems__ collection. This collection of __IDiagramItem__ objects represents the items that have activated the additional content. In most cases it contains a single item - the __RadDiagramItem__ that has activated the __SettingsPane__.
+	* An __AdditionalContentActivatedEventArgs__ object, that gives you access to a __ContextItems__ collection. This collection of __IDiagramItem__ objects represents the items that have activated the additional content. In most cases it contains a single item - the __RadDiagramItem__ that has activated the __SettingsPane__.
 
 >note Please note that you can handle this event in order to disable the __SettingsPane__ from displaying on certain __RadDiagramItems__ .
 >
@@ -178,8 +178,8 @@ __RadDiagram__ exposes two events that come in handy while working with the defa
 * __AdditionalContentActivated__ - this event is raised by a __RadDiagram__ to inform layouts that the additional content has been activated. The event handler receives two arguments:
             
 
-* The __sender__ argument contains the __RadDiagramElement__. This argument is of type object, but can be cast to the __RadDiagramElement__ type.
+	* The __sender__ argument contains the __RadDiagramElement__. This argument is of type object, but can be cast to the __RadDiagramElement__ type.
                 
 
-* An __AdditionalContentActivatedEventArgs__ object, that gives you access to a __ContextItems__ collection. This collection of __IDiagramItem__ objects represents the items that have activated the additional content. In most cases it contains a single item - the __RadDiagramItem__ that has activated the __SettingsPane__.
+	* An __AdditionalContentActivatedEventArgs__ object, that gives you access to a __ContextItems__ collection. This collection of __IDiagramItem__ objects represents the items that have activated the additional content. In most cases it contains a single item - the __RadDiagramItem__ that has activated the __SettingsPane__.
                 

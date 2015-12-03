@@ -598,33 +598,11 @@ Public Class Source
         }
     End Function
 End Class
-#End Region
-Private Sub BindToCustomObjects()
-    '#Region "SetupMembers"
-    Me.radDiagram1.DataSource = New Source()
-    Me.radDiagram1.ConnectionDataMember = "Relations"
-    Me.radDiagram1.ShapeDataMember = "Tasks"
-    Me.radDiagram1.ShapeIdMember = "Id"
-    Me.radDiagram1.ShapeTextMember = "Text"
-    Me.radDiagram1.ShapeTypeMember = "Type"
-    Me.radDiagram1.ShapeXMember = "X"
-    Me.radDiagram1.ShapeYMember = "Y"
-    Me.radDiagram1.ShapeWidthMember = "Width"
-    Me.radDiagram1.ShapeHeightMember = "Height"
-    Me.radDiagram1.ConnectionSourceShapeIdMember = "SourceTaskId"
-    Me.radDiagram1.ConnectionTargetShapeIdMember = "TargetTaskId"
-    Me.radDiagram1.ConnectionSourceCapTypeMember = "StartCapField"
-    Me.radDiagram1.ConnectionTargetCapTypeMember = "EndCapField"
-    Me.radDiagram1.ConnectionSourceConnectorMember = "SourceConnector"
-    Me.radDiagram1.ConnectionTargetConnectorMember = "TargetConnector"
 
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 The __Task__ class will represent a single shape in __RadDiagram__, while the __Relation__ class will represent a connection. Note that the __Source__ class contains two properties, __Tasks__ and __Relations__ which will be specified as __ConnectionDataMember__ and __ShapeDataMember__ for __RadDiagram__. To make data binding work, you should specify the member properties as well: 
 
 {{source=..\SamplesCS\Diagram\DiagramDataBinding.cs region=SetupMembers}} 

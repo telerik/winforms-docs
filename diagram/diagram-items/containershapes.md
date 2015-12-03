@@ -172,11 +172,8 @@ You can easily customize the visual appearance of the __RadDiagramContainerShape
             
 
 * __BorderThickness__ - gets or sets the width of the RadDiagramContainerShape outline.
-            #_[C#] RadDiagramContainerShape's appearance_
 
-	
-
-
+#### RadDiagramContainerShape's appearance 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=ContainerAppearance}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=ContainerAppearance}} 

@@ -85,7 +85,9 @@ radDiagram1.AddShape(shape3)
 {{endregion}} 
  
 
-We have reversed the natural ZOrder of the 3 Shapes. ![diagram-items-manipulation-zorder 001](images/diagram-items-manipulation-zorder001.png)
+We have reversed the natural ZOrder of the 3 Shapes. 
+
+![diagram-items-manipulation-zorder 001](images/diagram-items-manipulation-zorder001.png)
 
 ## Using the RadDiagram Commands
 

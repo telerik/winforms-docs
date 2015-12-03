@@ -77,22 +77,22 @@ The static __DiagramCommands__ class defines the following __RoutedUICommands__:
 
 * __Nudge__- Moves selected item/s in a specific direction. You can pass more specifics about the nudge operation through the __CommandParameter__. This parameter can be a single string representing the direction of the nudge:
 
-* __Left__
+	* __Left__
 
-* __Right__
+	* __Right__
 
-* __Up__
+	* __Up__
 
-* __Down__ - it can also be a string in the form of __"direction; amount"__, the __'direction'__ being a value from the above list of direction strings. The __'amount'__  options are:
+	* __Down__ - it can also be a string in the form of __"direction; amount"__, the __'direction'__ being a value from the above list of direction strings. The __'amount'__  options are:
                
 
-* __Small__ - if the RadDiagram.__IsSnapToGridEnabled__ property is set to *true* then this amount would mean that the nudge should happen once to the appointed direction using the SnapX/Y value as a step. The snap settings can be applied in the __RadDiagram__ definition. If the RadDiagram.__IsSnapToGridEnabled__ property is *false*, a *"Small"* amount indicates a step of 5 pixels;
+		* __Small__ - if the RadDiagram.__IsSnapToGridEnabled__ property is set to *true* then this amount would mean that the nudge should happen once to the appointed direction using the SnapX/Y value as a step. The snap settings can be applied in the __RadDiagram__ definition. If the RadDiagram.__IsSnapToGridEnabled__ property is *false*, a *"Small"* amount indicates a step of 5 pixels;
                 
 
-* __Large__ - if the RadDiagram.__IsSnapToGridEnabled__ property is set to *true* then this amount would mean that the nudge should happen once to the appointed direction using 5*SnapX/Y value as a step. The snap settings can be applied in the __RadDiagram__ definition. If the RadDiagram.__IsSnapToGridEnabled__ property is *false*, a *"Large"* amount indicates a step of 10 pixels;
+		* __Large__ - if the RadDiagram.__IsSnapToGridEnabled__ property is set to *true* then this amount would mean that the nudge should happen once to the appointed direction using 5*SnapX/Y value as a step. The snap settings can be applied in the __RadDiagram__ definition. If the RadDiagram.__IsSnapToGridEnabled__ property is *false*, a *"Large"* amount indicates a step of 10 pixels;
                 
 
-* __any number__ - if you provide a number in the __CommandParameter__, this number would indicate the number of pixels to be used as a step for the Nudge command.
+		* __any number__ - if you provide a number in the __CommandParameter__, this number would indicate the number of pixels to be used as a step for the Nudge command.
                 
 
 * __Group__- Groups the selected items.

@@ -69,7 +69,9 @@ You can access the __BackgroundGrid__ properties:
             
 >caption Figure. 2 CellSize
 
-![diagram-backgroundgrid 004](images/diagram-backgroundgrid004.png)#_[C#] Set the CellSize_
+![diagram-backgroundgrid 004](images/diagram-backgroundgrid004.png)
+
+#### Set the CellSize 
  
 {{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=CellSize}} 
 {{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=CellSize}} 
