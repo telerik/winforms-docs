@@ -71,7 +71,7 @@ RadGridView allows for exporting its data in different file formats. The support
 
 ## Localization and support for right-to-left languages
 
-RadGridView provides advanced Localization support. All displayed strings can be customized by using localization providers. RadGridView has also a full support for right-to-left languages.  Read more [here]({%slug winforms/gridview/localization/localization%}) [here]({%slug winforms/gridview/localization/right-to-left-support%})![gridview-fundamentals-key-features 012](images/gridview-fundamentals-key-features012.png)![gridview-fundamentals-key-features 013](images/gridview-fundamentals-key-features013.png)
+RadGridView provides advanced Localization support. All displayed strings can be customized by using localization providers. RadGridView has also a full support for right-to-left languages.  Read more [here]({%slug winforms/gridview/localization/localization%}) and [here]({%slug winforms/gridview/localization/right-to-left-support%})![gridview-fundamentals-key-features 012](images/gridview-fundamentals-key-features012.png)![gridview-fundamentals-key-features 013](images/gridview-fundamentals-key-features013.png)
 
 ## Easily customizable appearance and theming mechanism
 

@@ -12,7 +12,7 @@ position: 8
 
 A calculated column is identified by an expression. The only condition necessary to make a regular column behave like a calculated column is to set an expression to it. 
 
-The following code snippet demonstrates how the standard deviation of the *Consumption *column can be computed for each month in the *Deviation *column.
+The following code snippet demonstrates how the standard deviation of the *Consumption *column can be computed for each month in the *Deviation* column.
 
 #### Creating a calculated column
 

@@ -36,6 +36,8 @@ GridViewRowInfo also has an __EnsureVisible__ method that scrolls a row into vie
 
 The example below demonstrates the behavior of several of these properties:<br>![gridview-rows-gridviewrowinfo 001](images/gridview-rows-gridviewrowinfo001.png)
 
+#### Using GridViewRowInfo 
+
 {{source=..\SamplesCS\GridView\Rows\GridViewRowInfo1.cs region=GridViewRowInfo}} 
 {{source=..\SamplesVB\GridView\Rows\GridViewRowInfo1.vb region=GridViewRowInfo}} 
 

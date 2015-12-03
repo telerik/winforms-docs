@@ -30,6 +30,8 @@ __GridViewCellInfo__ class is the logical representation of a single grid cell. 
 
 GridViewCellInfo also includes an __EnsureVisible()__ method that scrolls the cell into view.
 
+#### Using GridViewCellInfo 
+
 {{source=..\SamplesCS\GridView\Cells\GridViewCellInfo1.cs region=GridViewCellInfo}} 
 {{source=..\SamplesVB\GridView\Cells\GridViewCellInfo1.vb region=GridViewCellInfo}} 
 

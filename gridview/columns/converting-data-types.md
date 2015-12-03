@@ -145,7 +145,7 @@ End Sub
 
 __Applying System.ComponentModel.TypeConverterAttribute to the incompatible property of the business object used as a data source__
 
-The second way to add type converters is to use the TypeConverterAttribute, which allows you to specify the TypeConverter for any property in your business object. When you set it as a data source for RadGridView, you create GridViewCheckBoxColumn instead of GridViewTextBoxColumn.  . This approach is handy when you are creating your own business objects with TypeConverter attribute applied.
+The second way to add type converters is to use the TypeConverterAttribute, which allows you to specify the TypeConverter for any property in your business object. When you set it as a data source for RadGridView, you create GridViewCheckBoxColumn instead of GridViewTextBoxColumn. This approach is handy when you are creating your own business objects with TypeConverter attribute applied.
 
 #### Custom class with TypeConverter attribute
 
@@ -261,6 +261,57 @@ this.radGridView1.Columns["ProductName"].DataSourceNullValue = "ENTER PRODUCT NA
 ````
 ````VB.NET
 Me.RadGridView1.Columns("ProductName").DataSourceNullValue = "ENTER PRODUCT NAME"
+
+````
+
+{{endregion}}
+
+## Using the TypeConverter when sorting.
+
+The type converter can be used when the column is sorted as well. To enable this functionality you should set the __UseDataTypeConverterWhenSorting__ property of the column.
+
+>caution You should consider that the column can contain null values and handle this in the custom type converter class as well. The following code snipped shows a custom float type converter that handles null values:
+>
+
+#### Handling null values when sorting
+
+{{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=Float}} 
+{{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=Float}} 
+
+````C#
+public class CustomFloatConverter : TypeConverter
+{
+    public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
+    {
+        return destinationType == typeof(float);
+    }
+        
+    public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
+    {
+        if (destinationType == typeof(float) && (value == null || value is DBNull))
+        {
+            return float.MinValue;
+        }
+        return value;
+    }
+}
+
+````
+````VB.NET
+Public Class CustomFloatConverter
+    Inherits TypeConverter
+
+    Public Overrides Function CanConvertTo(ByVal context As ITypeDescriptorContext, ByVal destinationType As Type) As Boolean
+        Return destinationType Is GetType(Single)
+    End Function
+
+    Public Overrides Function ConvertTo(ByVal context As ITypeDescriptorContext, ByVal culture As CultureInfo, ByVal value As Object, ByVal destinationType As Type) As Object
+        If destinationType Is GetType(Single) AndAlso (value Is Nothing OrElse TypeOf value Is DBNull) Then
+            Return Single.MinValue
+        End If
+        Return value
+    End Function
+End Class
 
 ````
 

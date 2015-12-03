@@ -10,11 +10,9 @@ position: 9
 
 # Tag property
 
-
-
-## 
-
 Each row has a *Tag* property associated with it of type object where you can store a custom object.
+
+#### Setting the Tag property of a row 
 
 {{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=assignTagProperty}} 
 {{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=assignTagProperty}} 
@@ -30,12 +28,9 @@ Me.RadGridView1.Rows(1).Tag = "Some tag"
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Setting the Tag property of cells in __CellFormatting__ event.
+#### Setting the Tag property of cells in CellFormatting event.
 
 {{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=setTagInCellFormatting}} 
 {{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=setTagInCellFormatting}} 
@@ -67,8 +62,7 @@ End Sub
 
 {{endregion}} 
 
-
-
+#### Collapsing all rows with the specified tag 
 
 The most natural place to use the tag is in some of the row/cell events. For example, to make the content of certain cells invisible use the following code:
 
@@ -94,10 +88,7 @@ Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Tele
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 >note Cells also have Tag property but it differs substantially from rows one because of the UI Virtualization. Cells are reused and when you scroll the tag value remains unchanged while cell data value is updated.
 >

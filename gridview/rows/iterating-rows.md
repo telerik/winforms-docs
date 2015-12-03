@@ -105,7 +105,129 @@ End Sub
 
 ````
 
+{{endregion}}
+
+## Iterating all rows in a hierarchical RadGridView
+
+When you have a hierarchical grid with many templates you can use a recursive method to iterate trough all rows:#_[C#]_
+
+	
+
+
+
+{{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=hierarchy}} 
+{{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=hierarchy}} 
+
+````C#
+        public void IterateAllRows(IEnumerable<GridViewRowInfo> rowsCollection)
+        {
+            foreach (GridViewDataRowInfo row in rowsCollection)
+            {
+                Debug.WriteLine(row.Cells[0].Value);//This rows is used for demonstration only!
+
+                if (row.HasChildRows())
+                {
+                    IterateAllRows(row.ChildRows);
+                }
+            }
+
+        }
+````
+````VB.NET
+    Public Sub IterateAllRows(rowsCollection As IEnumerable(Of GridViewRowInfo))
+        For Each row As GridViewDataRowInfo In rowsCollection
+            Debug.WriteLine(row.Cells(0).Value)
+
+            If row.HasChildRows() Then
+                IterateAllRows(row.ChildRows)
+            End If
+        Next
+    End Sub
+    '
+````
+
 {{endregion}} 
 
+## Iterating hierarchical rows
 
+You can iterate through grid rows using the __Rows__ collection of __RadGridView__ objects. The example below cycles through the rows of the grid, modifies the values for certain cells in the different hierarchy levels and counts the rows and cells in the whole RadGridView.
+>caption Figure 1.RadGridView Rows Changed
 
+![gridview-iterating-hierarchy-rows 001](images/gridview-iterating-hierarchy-rows001.png)
+
+{{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=IteratingHierarchicalRows}} 
+{{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=IteratingHierarchicalRows}} 
+
+````C#
+private void radButton1_Click(object sender, EventArgs e)
+{
+    int count = 0;
+    int i = 0;
+    foreach (GridViewDataRowInfo dataRow in this.GetAllRows(this.radGridView1.MasterTemplate))
+    {
+        count++;
+        foreach (GridViewCellInfo cell in dataRow.Cells)
+        {
+            if (cell.ColumnInfo.Name == "CompanyName" || cell.ColumnInfo.Name == "ShipCountry")
+            {
+                cell.Value = "TEST";
+            }
+
+            if (cell.ColumnInfo.Name == "UnitPrice")
+            {
+                cell.Value = 1.11111;
+            }
+
+            i++;
+        }
+    }
+}
+
+public List<GridViewRowInfo> GetAllRows(GridViewTemplate template)
+{
+    List<GridViewRowInfo> allRows = new List<GridViewRowInfo>();
+    allRows.AddRange(template.Rows);
+    foreach (GridViewTemplate childTemplate in template.Templates)
+    {
+        List<GridViewRowInfo> childRows = this.GetAllRows(childTemplate);
+        allRows.AddRange(childRows);
+    }
+
+    return allRows;
+}
+
+````
+````VB.NET
+Private Sub radButton1_Click(sender As Object, e As EventArgs)
+    Dim count As Integer = 0
+    Dim i As Integer = 0
+    For Each dataRow As GridViewDataRowInfo In Me.GetAllRows(Me.RadGridView1.MasterTemplate)
+        count += 1
+        For Each cell As GridViewCellInfo In dataRow.Cells
+            If cell.ColumnInfo.Name = "CompanyName" OrElse cell.ColumnInfo.Name = "ShipCountry" Then
+                cell.Value = "TEST"
+            End If
+
+            If cell.ColumnInfo.Name = "UnitPrice" Then
+                cell.Value = 1.11111
+            End If
+
+            i += 1
+        Next
+    Next
+End Sub
+
+Public Function GetAllRows(template As GridViewTemplate) As List(Of GridViewRowInfo)
+    Dim allRows As New List(Of GridViewRowInfo)()
+    allRows.AddRange(template.Rows)
+    For Each childTemplate As GridViewTemplate In template.Templates
+        Dim childRows As List(Of GridViewRowInfo) = Me.GetAllRows(childTemplate)
+        allRows.AddRange(childRows)
+    Next
+
+    Return allRows
+End Function
+
+````
+
+{{endregion}}

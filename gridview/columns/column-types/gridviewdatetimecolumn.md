@@ -12,7 +12,7 @@ position: 8
 
 
 
-__GridViewDateTimeColumn__ provides date entry and formatting for DateTime data types. You may enter the date and time directly into the editor or drop down the calendar to choose a date. The __FormatString__ property sets the format of the date when the date is not currently being edited. The __CustomFormat__ property is used to format the date once the user clicks on the cell to invoke the editor. <br>![gridview-columns-gridviewdatetimecolumn 002](images/gridview-columns-gridviewdatetimecolumn002.png)
+__GridViewDateTimeColumn__ provides date entry and formatting for DateTime data types. You may enter the date and time directly into the editor or drop down the calendar to choose a date. The __FormatString__ property sets the format of the date when the date is not currently being edited. The __CustomFormat__ property is used to format the date once the user clicks on the cell to invoke the editor. <br>![gridview-columns-gridviewdatetimecolumn 002](images/gridview-columns-gridviewdatetimecolumn001.png)<br>![gridview-columns-gridviewdatetimecolumn 002](images/gridview-columns-gridviewdatetimecolumn002.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=addDateTimeColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=addDateTimeColumn}} 

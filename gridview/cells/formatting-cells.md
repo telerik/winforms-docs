@@ -66,7 +66,9 @@ End Sub
       
 
 This is an advanced example of using *CellFormatting* event to highlight certain cells in red color based on the values of cells in the same row but *different* column. In the example, the values in the first column are  highlighted if the value in the check box column returns true:
-![gridview-cells-formatting-cells 002](images/gridview-cells-formatting-cells002.png)#_[C#]
+![gridview-cells-formatting-cells 002](images/gridview-cells-formatting-cells002.png)
+
+#### Formatting cells 
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=cellFormattingExample2}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=cellFormattingExample2}} 
@@ -145,6 +147,8 @@ While CellFormatting event is fired only for data cells, ViewCellFormatting is f
 
 For example, to change the font of the header cells and the group cells use the following code:
 
+####  Formatting non-data rows
+
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=viewCellFormatting1}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=viewCellFormatting1}} 
 
@@ -199,6 +203,8 @@ End Sub
 
 To modify the text alignment and the back color in the group rows use the following code snippet:
 
+#### Formatting non-data row 
+
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=viewCellFormatting2}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=viewCellFormatting2}} 
 
@@ -239,8 +245,7 @@ End Sub
 
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 ![gridview-cells-formatting-cells 004](images/gridview-cells-formatting-cells004.png)
 

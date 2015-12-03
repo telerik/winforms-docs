@@ -32,7 +32,7 @@ RadGridView1.MasterTemplate.AllowColumnChooser = False
 
 __AllowHide__ – this property determines whether the column is allowed to be moved to the Column Chooser. By default this property is set to true for all columns 
 
-##### Determines if the specified column is allowed to be dragged to the column chooser dialog
+#### Determines if the specified column is allowed to be dragged to the column chooser dialog
 
 {{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=AllowHide}} 
 {{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=AllowHide}} 

@@ -10,8 +10,6 @@ position: 3
 
 # Conditional Formatting Cells
 
-
-
 Cells and rows can be styled based on data conditions using ConditionalFormattingObjects.The formatting objects could contain the following formatting properties for cell, row, and text alignment:
 
 * __CellBackColor__  – sets the background color of the cell

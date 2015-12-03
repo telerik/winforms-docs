@@ -21,7 +21,8 @@ You can use the following approach to create a custom data cell with a progress 
 1\. Create a class for the cell which derives from __GridDataCellElement__:
 
 {{source=..\SamplesCS\GridView\Cells\CustomCells.cs region=CustomCellDefinition}} 
-{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=CustomCellDefinition}}````C#
+{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=CustomCellDefinition}}
+````C#
     
 public class ProgressBarCellElement : GridDataCellElement
 
@@ -35,8 +36,9 @@ Public Class ProgressBarCellElement
 {{endregion}} 
 
 {{source=..\SamplesCS\GridView\Cells\CustomCells.cs region=createDefaultConstructor}} 
-{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=createDefaultConstructor}}````C#
-        
+{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=createDefaultConstructor}}
+
+````C#
 public ProgressBarCellElement(GridViewColumn column, GridRowElement row) : base(column, row)
 {
 }
@@ -57,7 +59,6 @@ End Sub
 {{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=CreateChildElements}} 
 
 ````C#
-    
 private RadProgressBarElement radProgressBarElement;
         
 protected override void CreateChildElements()
@@ -84,7 +85,9 @@ End Sub
 3\. Override the __SetContentCore__ method to update the progress bar according to the cell value:
 
 {{source=..\SamplesCS\GridView\Cells\CustomCells.cs region=setContentCore}} 
-{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=setContentCore}}````C#
+{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=setContentCore}}
+
+````C#
         
 protected override void SetContentCore(object value)
 {
@@ -104,10 +107,7 @@ End Sub
 
 ```` 
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 4\. The custom cell will have no styles, because there are no defined styles for its type in the themes. You can apply the __GridDataCellElement’s__ styles to it by defining its __ThemeEffectiveType__:
 
@@ -115,7 +115,6 @@ End Sub
 {{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=themeEffectiveType}} 
 
 ````C#
-        
 protected override Type ThemeEffectiveType
 {
     get
@@ -134,14 +133,14 @@ End Property
 
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 5\. Thanks to the UI virtualization mechanism, of RadGridView only the currently visible cells are created and they are further reused when needed. A cell element is reused in other rows or columns if it is compatible for them. You can create a custom column and define that the custom cell __IsCompatible__ for that column only. This will prevent the cell from being unintentionally reused by other columns.
 
 {{source=..\SamplesCS\GridView\Cells\CustomCells.cs region=compatibility}} 
-{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=compatibility}}````C#
-        
+{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=compatibility}}
+
+````C#
 public override bool IsCompatible(GridViewColumn data, object context)
 {
     return data is ProgressBarColumn && context is GridDataRowElement;
@@ -153,14 +152,14 @@ Public Overrides Function IsCompatible(ByVal data As GridViewColumn, ByVal conte
     Return TypeOf data Is ProgressBarColumn AndAlso TypeOf context Is GridDataRowElement
 End Function
 
-```` 
-
+````
 
 {{endregion}} 
 
 {{source=..\SamplesCS\GridView\Cells\CustomCells.cs region=compatibility1}} 
-{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=compatibility1}}````C#
-    
+{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=compatibility1}}
+
+````C#
 public class ProgressBarColumn : GridViewDataColumn
 {
     public ProgressBarColumn(string fieldName) : base(fieldName)
@@ -194,184 +193,33 @@ End Class
 
 ````
 
-
 {{endregion}}  
 
-6\. Lastly, we need to add the custom column to our grid. The following screenshot demonstrates the usage of the custom column in RadGridView:<br>![gridview-cells-custom-cell 001](images/gridview-cells-custom-cell001.png)
+6\. Lastly, we need to add the custom column to our grid. The following screenshot demonstrates the usage of the custom column in RadGridView:
 
+{{source=..\SamplesCS\GridView\Cells\CustomCells.cs region=addColumn}} 
+{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=addColumn}}
+
+````C#
+ProgressBarColumn customColumn = new ProgressBarColumn("Progress column");
+this.radGridView1.Columns.Add(customColumn);
+
+````
+````VB.NET
+Dim customColumn As New ProgressBarColumn("Progress column")
+Me.RadGridView1.Columns.Add(customColumn)
+
+```` 
+
+{{endregion}} 
+
+![gridview-cells-custom-cell 001](images/gridview-cells-custom-cell001.png)
 
 ## Extending the custom data cell example
 
 You can extend the custom cell further by adding a button in it and subscribing to its __Click__ event. The button will be used to restart the progress bar by setting the cell value to 0. You can achieve this by using the following approach:
 
 1\. Initialize and add the elements to the cell:
-
-{{source=..\SamplesCS\GridView\Cells\CustomCells.cs region=addColumn}} 
-{{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=addColumn}}````C#
-            
-//ProgressBarColumn customColumn = new ProgressBarColumn("Progress column");
-//this.radGridView1.Columns.Add(customColumn);
-
-````
-````VB.NET
-Dim customColumn As New ProgressBarColumn("Progress column")
-Me.RadGridView1.Columns.Add(customColumn)
-'#End Region
-End Sub
-Private Sub CustomCells_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-'TODO: This line of code loads data into the 'NwindDataSet.Products' table. You can move, or remove it, as needed.
-Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
-Dim dt As New DataTable()
-dt.Columns.Add(New DataColumn("Id", GetType(Integer)))
-dt.Columns.Add(New DataColumn("Data", GetType(String)))
-dt.Columns.Add(New DataColumn("Progress", GetType(Integer)))
-Dim rand As New Random()
-For i As Integer = 0 To 14
-    Dim dr As DataRow = dt.NewRow()
-    dr(0) = i
-    dr(1) = "Data" & i.ToString()
-    dr(2) = rand.[Next](100)
-    dt.Rows.Add(dr)
-Next
-Me.RadGridView1.AutoGenerateColumns = False
-Me.RadGridView1.DataSource = dt
-Dim columnID As New GridViewDecimalColumn("ID")
-Me.RadGridView1.Columns.Add(columnID)
-Dim columnData As New GridViewTextBoxColumn("Data")
-Me.RadGridView1.Columns.Add(columnData)
-Me.gridCustomGroupCell.EnableGrouping = True
-End Sub
-Private Sub radButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radButton1.Click
-If Me.RadGridView1.Columns.Count = 3 Then
-    Me.RadGridView1.Columns.RemoveAt(2)
-End If
-Dim column As New ProgressBarColumn("Progress")
-column.Width = 100
-column.[ReadOnly] = True
-Me.RadGridView1.Columns.Add(column)
-End Sub
-Private Sub radButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radButton2.Click
-If Me.RadGridView1.Columns.Count = 3 Then
-    Me.RadGridView1.Columns.RemoveAt(2)
-End If
-Dim column As New CustomColumn("Progress")
-column.Width = 200
-column.[ReadOnly] = True
-Me.RadGridView1.Columns.Add(column)
-RadGridView1.AutoSize = True
-End Sub
-'#Region ReplaceCustomGroupCell
-Private Sub gridCustomGroupCell_CreateCell(sender As Object, e As GridViewCreateCellEventArgs) Handles gridCustomGroupCell.CreateCell
-If e.CellType = GetType(GridGroupContentCellElement) Then
-    e.CellElement = New CustomGridGroupContentCellElement(e.Column, e.Row)
-End If
-End Sub
-'#End Region
-'#Region CustomGroupCell
-Public Class CustomGridGroupContentCellElement
-Inherits GridGroupContentCellElement
-Private dropDown As RadDropDownListElement
-Private textElement As LightVisualElement
-Private aggregateElement As LightVisualElement
-Private stack As StackLayoutElement
-Public Sub New(column As GridViewColumn, row As GridRowElement)
-    MyBase.New(column, row)
-End Sub
-Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-    Get
-        Return GetType(GridGroupContentCellElement)
-    End Get
-End Property
-Protected Overrides Sub CreateChildElements()
-    MyBase.CreateChildElements()
-    stack = New StackLayoutElement()
-    stack.Orientation = Orientation.Horizontal
-    stack.StretchHorizontally = True
-    stack.Margin = New Padding(0, 2, 5, 0)
-    textElement = New LightVisualElement()
-    dropDown = New RadDropDownListElement()
-    dropDown.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
-    aggregateElement = New LightVisualElement()
-    AddHandler dropDown.SelectedIndexChanged, AddressOf SelectedIndexChanged
-    dropDown.Items.AddRange(New List(Of String)(New String() {"Sum", "Avg", "Min", "Max", "Count", "Last"}))
-    stack.Children.Add(textElement)
-    stack.Children.Add(dropDown)
-    stack.Children.Add(aggregateElement)
-    Me.Children.Add(stack)
-End Sub
-Public Overrides Sub SetContent()
-    MyBase.SetContent()
-    Dim row As GridViewGroupRowInfo = TryCast(Me.RowInfo, GridViewGroupRowInfo)
-    If row IsNot Nothing Then
-        Me.textElement.Text = row.HeaderText
-        If row.Tag IsNot Nothing Then
-            RemoveHandler dropDown.SelectedIndexChanged, AddressOf SelectedIndexChanged
-            dropDown.SelectedIndex = DirectCast(row.Tag, Integer)
-            AddHandler dropDown.SelectedIndexChanged, AddressOf SelectedIndexChanged
-        Else
-            RemoveHandler dropDown.SelectedIndexChanged, AddressOf SelectedIndexChanged
-            dropDown.SelectedIndex = -1
-            AddHandler dropDown.SelectedIndexChanged, AddressOf SelectedIndexChanged
-        End If
-    End If
-    Select Case dropDown.Text
-        Case "Sum"
-            Me.aggregateElement.Text = GetSum(row)
-        Case "Avg"
-            Me.aggregateElement.Text = GetSum(row) / row.ChildRows.Count
-        Case "Min"
-            Me.aggregateElement.Text = GetMin(row)
-        Case "Max"
-            Me.aggregateElement.Text = GetMax(row)
-        Case "Count"
-            Me.aggregateElement.Text = row.ChildRows.Count
-        Case "Last"
-            Me.aggregateElement.Text = row.ChildRows.Last().Cells("ProductName").Value.ToString()
-        Case Else
-            Me.aggregateElement.Text = "No aggregate function"
-            Exit Select
-    End Select
-    Me.Text = String.Empty
-End Sub
-Private Sub SelectedIndexChanged(sender As Object, e As Data.PositionChangedEventArgs)
-    Me.RowInfo.Tag = dropDown.SelectedIndex
-End Sub
-Private Function GetSum(row As GridViewGroupRowInfo) As Decimal
-    Dim sum As Decimal = 0
-    For Each childRow As GridViewRowInfo In row.ChildRows
-        sum = sum + childRow.Cells("UnitPrice").Value
-    Next
-    Return sum
-End Function
-Private Function GetMin(row As GridViewGroupRowInfo) As Decimal
-    Dim min As Decimal = Decimal.MaxValue
-    For Each childRow As GridViewRowInfo In row.ChildRows
-        If childRow.Cells("UnitPrice").Value < min Then
-            min = childRow.Cells("UnitPrice").Value
-        End If
-    Next
-    Return min
-End Function
-Private Function GetMax(row As GridViewGroupRowInfo) As Decimal
-    Dim max As Decimal = Decimal.MinValue
-    For Each childRow As GridViewRowInfo In row.ChildRows
-        If childRow.Cells("UnitPrice").Value > max Then
-            max = childRow.Cells("UnitPrice").Value
-        End If
-    Next
-    Return max
-End Function
-End Class
-'#End Region
-s
-'1
- customCellDefinition
-lass ProgressBarCellElement
-Inherits GridDataCellElement
-
-```` 
-
-{{endregion}} 
 
 {{source=..\SamplesCS\GridView\Cells\CustomCells.cs region=createChildElementsExample2}} 
 {{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=createChildElementsExample2}} 
@@ -463,9 +311,7 @@ End Function
 
 ````
 
-{{endregion}} 
-
-
+{{endregion}}
 
 
 3\. Handle the __Click__ event of __RadButtonElement__:
@@ -724,12 +570,6 @@ Public Class CustomGridGroupContentCellElement
         Return max
     End Function
 End Class
-'#End Region
-Class
-'1
-gion customCellDefinition
-ic Class ProgressBarCellElement
-Inherits GridDataCellElement
 
 ````
 
@@ -741,7 +581,6 @@ Inherits GridDataCellElement
 {{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=ReplaceCustomGroupCell}} 
 
 ````C#
-        
 private void gridCustomGroupCell_CreateCell(object sender, GridViewCreateCellEventArgs e)
 {
     if (e.CellType == typeof(GridGroupContentCellElement))
@@ -757,112 +596,9 @@ Private Sub gridCustomGroupCell_CreateCell(sender As Object, e As GridViewCreate
         e.CellElement = New CustomGridGroupContentCellElement(e.Column, e.Row)
     End If
 End Sub
-'#End Region
-'#Region CustomGroupCell
-Public Class CustomGridGroupContentCellElement
-    Inherits GridGroupContentCellElement
-    Private dropDown As RadDropDownListElement
-    Private textElement As LightVisualElement
-    Private aggregateElement As LightVisualElement
-    Private stack As StackLayoutElement
-    Public Sub New(column As GridViewColumn, row As GridRowElement)
-        MyBase.New(column, row)
-    End Sub
-    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-        Get
-            Return GetType(GridGroupContentCellElement)
-        End Get
-    End Property
-    Protected Overrides Sub CreateChildElements()
-        MyBase.CreateChildElements()
-        stack = New StackLayoutElement()
-        stack.Orientation = Orientation.Horizontal
-        stack.StretchHorizontally = True
-        stack.Margin = New Padding(0, 2, 5, 0)
-        textElement = New LightVisualElement()
-        dropDown = New RadDropDownListElement()
-        dropDown.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
-        aggregateElement = New LightVisualElement()
-        AddHandler dropDown.SelectedIndexChanged, AddressOf SelectedIndexChanged
-        dropDown.Items.AddRange(New List(Of String)(New String() {"Sum", "Avg", "Min", "Max", "Count", "Last"}))
-        stack.Children.Add(textElement)
-        stack.Children.Add(dropDown)
-        stack.Children.Add(aggregateElement)
-        Me.Children.Add(stack)
-    End Sub
-    Public Overrides Sub SetContent()
-        MyBase.SetContent()
-        Dim row As GridViewGroupRowInfo = TryCast(Me.RowInfo, GridViewGroupRowInfo)
-        If row IsNot Nothing Then
-            Me.textElement.Text = row.HeaderText
-            If row.Tag IsNot Nothing Then
-                RemoveHandler dropDown.SelectedIndexChanged, AddressOf SelectedIndexChanged
-                dropDown.SelectedIndex = DirectCast(row.Tag, Integer)
-                AddHandler dropDown.SelectedIndexChanged, AddressOf SelectedIndexChanged
-            Else
-                RemoveHandler dropDown.SelectedIndexChanged, AddressOf SelectedIndexChanged
-                dropDown.SelectedIndex = -1
-                AddHandler dropDown.SelectedIndexChanged, AddressOf SelectedIndexChanged
-            End If
-        End If
-        Select Case dropDown.Text
-            Case "Sum"
-                Me.aggregateElement.Text = GetSum(row)
-            Case "Avg"
-                Me.aggregateElement.Text = GetSum(row) / row.ChildRows.Count
-            Case "Min"
-                Me.aggregateElement.Text = GetMin(row)
-            Case "Max"
-                Me.aggregateElement.Text = GetMax(row)
-            Case "Count"
-                Me.aggregateElement.Text = row.ChildRows.Count
-            Case "Last"
-                Me.aggregateElement.Text = row.ChildRows.Last().Cells("ProductName").Value.ToString()
-            Case Else
-                Me.aggregateElement.Text = "No aggregate function"
-                Exit Select
-        End Select
-        Me.Text = String.Empty
-    End Sub
-    Private Sub SelectedIndexChanged(sender As Object, e As Data.PositionChangedEventArgs)
-        Me.RowInfo.Tag = dropDown.SelectedIndex
-    End Sub
-    Private Function GetSum(row As GridViewGroupRowInfo) As Decimal
-        Dim sum As Decimal = 0
-        For Each childRow As GridViewRowInfo In row.ChildRows
-            sum = sum + childRow.Cells("UnitPrice").Value
-        Next
-        Return sum
-    End Function
-    Private Function GetMin(row As GridViewGroupRowInfo) As Decimal
-        Dim min As Decimal = Decimal.MaxValue
-        For Each childRow As GridViewRowInfo In row.ChildRows
-            If childRow.Cells("UnitPrice").Value < min Then
-                min = childRow.Cells("UnitPrice").Value
-            End If
-        Next
-        Return min
-    End Function
-    Private Function GetMax(row As GridViewGroupRowInfo) As Decimal
-        Dim max As Decimal = Decimal.MinValue
-        For Each childRow As GridViewRowInfo In row.ChildRows
-            If childRow.Cells("UnitPrice").Value > max Then
-                max = childRow.Cells("UnitPrice").Value
-            End If
-        Next
-        Return max
-    End Function
-End Class
-'#End Region
-Class
-'1
-gion customCellDefinition
-ic Class ProgressBarCellElement
-Inherits GridDataCellElement
 
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 

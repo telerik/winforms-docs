@@ -10,8 +10,6 @@ position: 11
 
 # Summary Rows
 
-
-
 Summary rows are RadGridView rows which allow you to display information about the data in the control such as first item, last item, count of items, etc. The summary rows are top and bottom pinned rows. They can be used in a flat RadGridView or in groups and hierarchical views.
       
 
