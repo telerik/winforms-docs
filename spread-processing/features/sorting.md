@@ -5,7 +5,7 @@ description: Sorting
 slug: winforms/spread-processing/features/sorting
 tags: sorting
 published: True
-position: 16
+position: 17
 ---
 
 # Sorting

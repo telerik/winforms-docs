@@ -5,7 +5,7 @@ description: Grouping
 slug: winforms/spread-processing/features/grouping
 tags: grouping
 published: True
-position: 15
+position: 16
 ---
 
 # Grouping

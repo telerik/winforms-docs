@@ -5,7 +5,7 @@ description: Number Formatting
 slug: winforms/spread-processing/features/number-formatting
 tags: number,formatting
 published: True
-position: 11
+position: 12
 ---
 
 # Number Formatting

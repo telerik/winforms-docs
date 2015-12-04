@@ -5,7 +5,7 @@ description: Data Validation
 slug: winforms/spread-processing/features/data-validation
 tags: data,validation
 published: True
-position: 17
+position: 18
 ---
 
 # Data Validation
