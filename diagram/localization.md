@@ -19,15 +19,15 @@ This tutorial describes the localization support implemented in __RadDiagram__.
 To localize __RadDiagramRibbonBar__ to display control text and messages in a specific language:
         
 
-1. Start by creating a descendant of the __DiagramRibbonBarLocalizationProvider__ class.
+1\. Start by creating a descendant of the __DiagramRibbonBarLocalizationProvider__ class.
             
 
-1. Override the __GetLocalizedString(string id)__ method and provide a translation for the texts. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement in the example. Below is a sample implementation of a custom localization provider: 
+2\. Override the __GetLocalizedString(string id)__ method and provide a translation for the texts. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement in the example. Below is a sample implementation of a custom localization provider: 
 
-	{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=RibbonUILocalization}} 
-	{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=RibbonUILocalization}} 
+{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=RibbonUILocalization}} 
+{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=RibbonUILocalization}} 
 
-	````C#
+````C#
         
 public class MyDiagramRibbonBarLocalizationProvider : DiagramRibbonBarLocalizationProvider
 {
@@ -63,17 +63,14 @@ End Class
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
+3\. To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
+{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SetRibbonUILocalization}} 
+{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SetRibbonUILocalization}} 
 
-
-1. To apply the custom localization provider, instantiate and assign it to the current localization provider: 
-
-	{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SetRibbonUILocalization}} 
-	{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SetRibbonUILocalization}} 
-
-	````C#
+````C#
             
 DiagramRibbonBarLocalizationProvider.CurrentProvider = new MyDiagramRibbonBarLocalizationProvider();
 
@@ -83,25 +80,25 @@ DiagramRibbonBarLocalizationProvider.CurrentProvider = New MyDiagramRibbonBarLoc
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-	![diagram-localization 001](images/diagram-localization001.png)
+![diagram-localization 001](images/diagram-localization001.png)
 
 ## Localizing SettingsPane
 
 To localize __RadDiagramSettingsPane__ to display control text and messages in a specific language:
         
 
-1. Start by creating a descendant of the __DiagramSettingsPaneLocalizationProvider__ class.
+1\. Start by creating a descendant of the __DiagramSettingsPaneLocalizationProvider__ class.
             
 
-1. Override the __GetLocalizedString(string id)__ method and provide a translation for the texts. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement in the example. 
+2\. Override the __GetLocalizedString(string id)__ method and provide a translation for the texts. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement in the example. 
 
-	{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SettingsPaneLocalization}} 
-	{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SettingsPaneLocalization}} 
+{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SettingsPaneLocalization}} 
+{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SettingsPaneLocalization}} 
 	
-	````C#
+````C#
         
 public class MyDiagramSettingsPaneLocalizationProvider : DiagramSettingsPaneLocalizationProvider
 {
@@ -145,17 +142,14 @@ End Class
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
+3\. To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
+{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SetSettingsPaneLocalization}} 
+{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SetSettingsPaneLocalization}} 
 
-
-1. To apply the custom localization provider, instantiate and assign it to the current localization provider: 
-
-	{{source=..\SamplesCS\Diagram\DiagramLocalization.cs region=SetSettingsPaneLocalization}} 
-	{{source=..\SamplesVB\Diagram\DiagramLocalization.vb region=SetSettingsPaneLocalization}} 
-
-	````C#
+````C#
             
 DiagramSettingsPaneLocalizationProvider.CurrentProvider = new MyDiagramSettingsPaneLocalizationProvider();
 
@@ -165,7 +159,7 @@ DiagramSettingsPaneLocalizationProvider.CurrentProvider = New MyDiagramSettingsP
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-	![diagram-localization 002](images/diagram-localization002.png)
+![diagram-localization 002](images/diagram-localization002.png)

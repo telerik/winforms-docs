@@ -65,7 +65,7 @@ End Sub
 
 In order to customize the auto complete popup, you should subscribe to the __VisualItemFormatting__ event of the __AutoCompleteSuggestHelper__. The following code snippet demonstrates how to change the font of the auto complete drop down items:
 
-# Subscribe to the VisualItemFormatting event of the auto complete popup
+#### Subscribe to the VisualItemFormatting event of the auto complete popup
 
 {{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListCustomizeItems.cs region=SubscribeToAutoCompleteSuggestVisualItemFormattingEvent}} 
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListCustomizeItems.vb region=SubscribeToAutoCompleteSuggestVisualItemFormattingEvent}} 	
@@ -75,12 +75,11 @@ radDropDownList1.DropDownListElement.AutoCompleteSuggest.DropDownList.ListElemen
 
 ````
 ````VB.NET
+AddHandler RadDropDownList1.DropDownListElement.AutoCompleteSuggest.DropDownList.ListElement.VisualItemFormatting, AddressOf ListElement_VisualItemFormatting
+
 ````
 
-{{endregion}} 
-
-#### Subscribe to the VisualItemFormatting event of the auto complete popup_
- 
+{{endregion}}  
 
 The following code snippet, will demonstrate how to change the Font of all items in the auto complete drop down.
 
@@ -103,18 +102,6 @@ Private Sub ListElement_VisualItemFormatting(sender As Object, args As VisualIte
     args.VisualItem.Font = myFont
 End Sub
  Region
-'#region CustomizeItems
-Private Sub radDropDownList1_VisualListItemFormatting(sender As Object, args As VisualItemFormattingEventArgs)
-    If args.VisualItem.Selected Then
-        args.VisualItem.NumberOfColors = 1
-        args.VisualItem.BackColor = Color.Yellow
-        args.VisualItem.BorderColor = Color.Blue
-    Else
-        args.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local)
-        args.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        args.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-    End If
-End Sub
 
 ````
 

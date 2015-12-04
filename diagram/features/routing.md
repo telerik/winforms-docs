@@ -137,39 +137,39 @@ As the name suggests, this is a connection router that uses a version of the A* 
 
 * __Using Diagram Constants__
 
-* __DiagramConstants.RoutingGridSize__ - of type double and gets or sets the routing grid size.
+\* __DiagramConstants.RoutingGridSize__ - of type double and gets or sets the routing grid size.
                 
 >caption Fig.4 RoutingGridSize
 
 ![diagram-features-routing 004](images/diagram-features-routing004.png)
 
-* __DiagramConstants.RouterInflationValue__ - of type double and gets or sets the size of the restricted area around the shapes.
+\* __DiagramConstants.RouterInflationValue__ - of type double and gets or sets the size of the restricted area around the shapes.
                 
 
 * __Using properties of the router__
 
-* __AvoidShapes__ - boolean property controlling the logic that makes the connections go around the shapes. This property is *false* by default.
+\* __AvoidShapes__ - boolean property controlling the logic that makes the connections go around the shapes. This property is *false* by default.
                 
 >caption Fig.5 AvoidShapes
 
 ![diagram-features-routing 005](images/diagram-features-routing005.png)
 
-* __WallOptimization__- boolean property controlling router optimization logic. If you set this property to *true* the router will try to optimize some of the steps so that there are the least corners.
+\* __WallOptimization__- boolean property controlling router optimization logic. If you set this property to *true* the router will try to optimize some of the steps so that there are the least corners.
                 
 
 * __Using virtual methods__ - if the customization provided by these properties does not cover your requirements, you can create your custom router deriving from ours. This will allow you to customize the algorithm by overriding the following methods:
 
-* __GetSiblingNodes__ - this method receives the current state and the end target and should return the next possible nodes
+\* __GetSiblingNodes__ - this method receives the current state and the end target and should return the next possible nodes
                 
 
 >note The order in which the steps are returned is important - if you have two steps with the same price we'll choose the first one.
 >
 
 
-* __CalculateWallPenalty__ - this method calculates the penalty for the node that we give it. By default if the node is inside a shape we return the penaltyBaseValue which is the heuristic distance to the endpoint.
+\* __CalculateWallPenalty__ - this method calculates the penalty for the node that we give it. By default if the node is inside a shape we return the penaltyBaseValue which is the heuristic distance to the endpoint.
                 
 
-* __CalculateBendAlteration__ - this method calculates the bend alteration. By default the result value can be positive - a penalty for changing the direction or negative - a bonus for keeping the direction.
+\* __CalculateBendAlteration__ - this method calculates the bend alteration. By default the result value can be positive - a penalty for changing the direction or negative - a bonus for keeping the direction.
                 
 
 >note If the source and target positions of your connections are Auto this router will adjust them so that the path is minimal.

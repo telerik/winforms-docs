@@ -94,6 +94,19 @@ Me.RadDock1.SingleScreen = True
 
 {{endregion}} 
  
+## Properties
+
+This section describes the FloatinWindows specific properties.
+* __Standalone__: Allows the floating window to behave like separate form and appear in the taskbar.
+* __SnapToScreen__: Indicates whether this window should snap to the screen's edges.
+* __SnapToOthers__: Indicates whether this window should snap to other windows.
+* __SnapThreshold__: Indicates the threshold between edges before the window snaps.
+* __SnapOnResize__: Indicates whether this window should snap while resizing.
+* __SnapOnMove__: Indicates whether this window should snap while dragging.
+
+>note The snapping functionality can be enabled/disabled by using the __EnableFloatingWindowSnapping__ property of RadDock.
+>
+
 # See Also
 
  * [Customizing Floating Windows]({%slug winforms/dock/object-model/customizing-floating-windows%})

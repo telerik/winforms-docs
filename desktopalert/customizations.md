@@ -14,7 +14,7 @@ position: 2
  
 By default, RadDesktopAlert is initially shown with a predefined (default) size. You can, however, modify this size by using the __FixedSize__ property. If this property is set to a value different than empty size, this value will be considered as a size for the alert’s popup. This property can be set in the Visual Studio designer, as well as programmatically:
 
-####Setting FixedSize property 
+#### Setting FixedSize property 
 
 {{source=..\SamplesCS\DesktopAlert\DesktopAlert1.cs region=fixedSize}} 
 {{source=..\SamplesVB\DesktopAlert\DesktopAlert1.vb region=fixedSize}} 

@@ -25,12 +25,12 @@ Let's assume that we have a RadRibbonForm with two buttons each of which opens a
 Here is how to do that:
           
 
-1. For each of the types of forms that we create, we should create a corresponding DocumentWindow/ToolWindow that serves as a container. Initially, global variables for the DocumentWindows/ToolWindows should be defined without creating new objects. 
+1\. For each of the types of forms that we create, we should create a corresponding DocumentWindow/ToolWindow that serves as a container. Initially, global variables for the DocumentWindows/ToolWindows should be defined without creating new objects. 
 
-	{{source=..\SamplesCS\Dock\SingletonForms.cs region=fields}} 
-	{{source=..\SamplesVB\Dock\SingletonForms.vb region=fields}} 
+{{source=..\SamplesCS\Dock\SingletonForms.cs region=fields}} 
+{{source=..\SamplesVB\Dock\SingletonForms.vb region=fields}} 
 
-	````C#
+````C#
 DocumentWindow greenDockWindow;
 DocumentWindow yellowDockWindow;
 
@@ -41,15 +41,15 @@ Private yellowDockWindow As DocumentWindow
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
 
-1. Upon clicking a button for opening a specific type of form, we should check if an object of the appropriate DocumentWindow exists. If it does not exist, this means that a form of the type that matches the DocumentWindow has never been created, so we need to create such a form together with the DocumentWindow. Note that we set the CloseAction of the DocumentWindow to Hide. When the end-user closes the DocumentWindow, it actually becomes hidden rather than closed and diposed. This allows us to use the same instance later. After creating the form and the window, we should dock the form in the window - this will allow us to control the form together with the DocumentWindow that hosts it using the globally defined DocumentWindow variables. Finally, we should just Show the DocumentWindow. If the DocumentWindow has already been created the previous time we pressed the 'show' button, we should just Show it: 
+2\. Upon clicking a button for opening a specific type of form, we should check if an object of the appropriate DocumentWindow exists. If it does not exist, this means that a form of the type that matches the DocumentWindow has never been created, so we need to create such a form together with the DocumentWindow. Note that we set the CloseAction of the DocumentWindow to Hide. When the end-user closes the DocumentWindow, it actually becomes hidden rather than closed and diposed. This allows us to use the same instance later. After creating the form and the window, we should dock the form in the window - this will allow us to control the form together with the DocumentWindow that hosts it using the globally defined DocumentWindow variables. Finally, we should just Show the DocumentWindow. If the DocumentWindow has already been created the previous time we pressed the 'show' button, we should just Show it: 
 
-	{{source=..\SamplesCS\Dock\SingletonForms.cs region=clickHandlers}} 
-	{{source=..\SamplesVB\Dock\SingletonForms.vb region=clickHandlers}} 
+{{source=..\SamplesCS\Dock\SingletonForms.cs region=clickHandlers}} 
+{{source=..\SamplesVB\Dock\SingletonForms.vb region=clickHandlers}} 
 
-	````C#
+````C#
 private void btnOpenGreenForm_Click(object sender, EventArgs e)
 {
     if (greenDockWindow == null)
@@ -132,7 +132,7 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
 

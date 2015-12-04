@@ -31,7 +31,7 @@ The DockWindows property returns an array of all DockWindow in a RadDock instanc
             
 
 * Returns an array of DockWindows that are put in a specific DockState. For example, the following code snippet will return an array of DockWindows that are currently hidden: 
-* 
+
 {{source=..\SamplesCS\Dock\CreatingWindows.cs region=gettingHiddenWindows}} 
 {{source=..\SamplesVB\Dock\CreatingWindows.vb region=gettingHiddenWindows}} 
 

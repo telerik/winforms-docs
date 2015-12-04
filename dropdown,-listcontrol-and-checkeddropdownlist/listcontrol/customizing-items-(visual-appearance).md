@@ -14,7 +14,7 @@ position: 7
 
 You can use the __ItemDataBound__ event to change item content based on the data that is bound to each item. The __ListItemDataBoundEventArgs__ include properties for the native DataBoundItem (a DataRowView object, which provides access to the entire row being bound) and the data item of RadListControl. In the example below the DisplayName property is "FirstName". Two other columns, "FirstName" and "TitleOfCourtesy", are pre-pended to the data list item.
 
-With the introduction of the __HTML-like text rendering featurehttp://www.telerik.com/help/winforms/tpfhtml-like_text_formatting.html__, Telerik Presentation Framework increased the level of the available customizations that you can apply. That said, you are able to use this feature to indicate different roles of different parts of the __Text__ property value.
+With the introduction of the [HTML-like text rendering feature]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}), Telerik Presentation Framework increased the level of the available customizations that you can apply. That said, you are able to use this feature to indicate different roles of different parts of the __Text__ property value.
 
 The aim of this article is to demonstrate how you can achieve to look shown below. As you can see we have three different parts of the text: *TitleOfCourtesy*, *FullName*(*FirstName* + *LastName*) and *Title*. For the purposes of the example, we are going to add an image as well.
 
@@ -105,7 +105,7 @@ End Function
 
 {{endregion}} 
 
-2\. Since the *<br>* tag will split the __Text__ value in different lines, it is essential to set the __AutoSizeItems__ of RadListControl to *true*:
+2\. Since the *&lt; br &gt;* tag will split the __Text__ value in different lines, it is essential to set the __AutoSizeItems__ of RadListControl to *true*:
         	
 #### Setting AutoSizeItems 
 

@@ -16,18 +16,22 @@ As stated in [this documentation article]({%slug winforms/dock/loading-and-savin
 
 ## Example: Saving and Loading layout and content
 
-1. Usually, each DockWindow contains a set of controls. To make the task of saving and loading the content easier, let's put this content in UserControls, for example:
-	![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 001](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content001.png)
-	![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 002](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content002.png)
-	![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 003](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content003.png)
-	*Three UserControls containing different controls.*
+1\. Usually, each DockWindow contains a set of controls. To make the task of saving and loading the content easier, let's put this content in UserControls, for example:
 
-1. Then, let's define the path to the xml file where we will save our layout: 
+![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 001](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content001.png)
 
-	{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=paths}} 
-	{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=paths}} 
+![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 002](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content002.png)
 
-	````C#
+![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 003](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content003.png)
+
+*Three UserControls containing different controls.*
+
+2\. Then, let's define the path to the xml file where we will save our layout: 
+
+{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=paths}} 
+{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=paths}} 
+
+````C#
 private string dockLayoutPath = Application.StartupPath + "\\dock.xml";
 
 ````
@@ -36,14 +40,14 @@ Private dockLayoutPath As String = Application.StartupPath & "\dock.xml"
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
-1. At the Load event of our form we will check if the xml file with the saved layout exists. If the file exists at the specified location, we will load the layout as shown in the next paragraphs. If it does not exists, we will create a generic layout in RadDock loading our user controls: 
+3\. At the Load event of our form we will check if the xml file with the saved layout exists. If the file exists at the specified location, we will load the layout as shown in the next paragraphs. If it does not exists, we will create a generic layout in RadDock loading our user controls: 
 
-	{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=formLoad}} 
-	{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=formLoad}} 
+{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=formLoad}} 
+{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=formLoad}} 
 
-	````C#
+````C#
 private void MainForm_Load(object sender, EventArgs e)
 {
     if (!File.Exists(dockLayoutPath))
@@ -89,21 +93,22 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
+Please note that the names of the types of the UserControls are important, because these names will actually give the names of the HostWindows that will be created to host the UserControls. The names of the HostWindows will be later used during the process of loading the content.
 
-	Please note that the names of the types of the UserControls are important, because these names will actually give the names of the HostWindows that will be created to host the UserControls. The names of the HostWindows will be later used during the process of loading the content.
-	![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 004](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content004.png)
+![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 004](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content004.png)
 
-1. Let's now arrange the dock window in a more user friendly way:
-	![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 005](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content005.png)
+4\. Let's now arrange the dock window in a more user friendly way:
 
-1. Now close the form containing RadDock. The FormClosing event handler is a convenient place to save our layout: 
+![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 005](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content005.png)
 
-	{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=formClosing}} 
-	{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=formClosing}} 
+5\. Now close the form containing RadDock. The FormClosing event handler is a convenient place to save our layout: 
 
-	````C#
+{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=formClosing}} 
+{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=formClosing}} 
+
+````C#
 private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
 {
     this.radDock1.SaveToXml(dockLayoutPath);
@@ -117,20 +122,20 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
-1. Reopen the form. Since the xml file defined at paragraph two now exists, our layout and content will be loaded with the help of the following methods:
+6\. Reopen the form. Since the xml file defined at paragraph two now exists, our layout and content will be loaded with the help of the following methods:
             
 
-	* LoadFromXml - this method will create HostWindows and will arrange them according to the information saved in the xml file.
+* LoadFromXml - this method will create HostWindows and will arrange them according to the information saved in the xml file.
                 
 
-	* LoadContent - this is our custom method which loads the content in the created HostWindows. Note that the different user controls are loaded in the appropriate HostWindows depending on the names of these windows. 
+* LoadContent - this is our custom method which loads the content in the created HostWindows. Note that the different user controls are loaded in the appropriate HostWindows depending on the names of these windows. 
 
-	{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=loadContent}} 
-	{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=loadContent}} 
+{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=loadContent}} 
+{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=loadContent}} 
 
-	````C#
+````C#
 private void LoadContent()
 {
     for (int i = 0; i < this.radDock1.DockWindows.Count; i++)
@@ -181,10 +186,11 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
-	As a result we get the layout shown on the screenshot below:
-	![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 005](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content005.png)
+As a result we get the layout shown on the screenshot below:
+
+![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 005](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content005.png)
 
 
 | RELATED VIDEOS |  |

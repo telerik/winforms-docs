@@ -43,6 +43,8 @@ __RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindo
             
 
 * __QuickNavigatorSettings:__ this property give you an object of type QuickNavigatorSettings. This object gives you a full control over the [Quick Navigator]({%slug winforms/dock/architecture-and-features/quick-navigator%}) features.
+
+* __ShowDocumentPinButton__: Shows/hides the pin button of the tab items. This button allows you to pin the tabs. This way you can keep some of the tabs visible and navigate trough others.
             
 
 ## RadDock Methods

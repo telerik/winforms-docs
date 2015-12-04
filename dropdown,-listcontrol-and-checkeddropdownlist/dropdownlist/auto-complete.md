@@ -109,7 +109,7 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
  
 ## Auto-complete helpers
 
-* __AutoCompleteSuggestHelper__: it is created when the __AutoCompleteMode__ property is set to AutoCompleteMode.*Suggest* or AutoCompleteMode.*SuggestAppend*. You can find below the __AutoCompleteSuggestHelper__'s properties:
+\* __AutoCompleteSuggestHelper__: it is created when the __AutoCompleteMode__ property is set to AutoCompleteMode.*Suggest* or AutoCompleteMode.*SuggestAppend*. You can find below the __AutoCompleteSuggestHelper__'s properties:
             
 
 * __SuggestMode__: determines whether the items are auto-completed considering whether the text starts with or contains the searched text.
@@ -141,7 +141,7 @@ Me.radDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = Teleri
 * __AutoCompleteDisplayMember__: specifies the particular field in the data source which will be used from the items in __AutoCompleteSuggestHelper__  for their Text.
                 
 
-* __AutoCompleteAppendHelper__:  it is created when the __AutoCompleteMode__ property is set to AutoCompleteMode.*Append* or AutoCompleteMode.*SuggestAppend*. The __LimitToList__ property controls whether the user is blocked to enter invalid string in the editable part.
+\* __AutoCompleteAppendHelper__:  it is created when the __AutoCompleteMode__ property is set to AutoCompleteMode.*Append* or AutoCompleteMode.*SuggestAppend*. The __LimitToList__ property controls whether the user is blocked to enter invalid string in the editable part.
 
 #### Limit the user to enter only valid values 
 

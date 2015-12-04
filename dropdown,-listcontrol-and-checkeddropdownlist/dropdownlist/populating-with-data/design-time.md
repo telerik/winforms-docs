@@ -13,7 +13,7 @@ position: 0
 This article demonstrates how to populate __RadDropDownList__ with data at design time. The *RadListDataItem Collection Editor *allows you to do that.
 
 >caption Figure 1. RadListDataItem Collection Editor
->
+
 ![dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time 001](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time001.png)
  
 ## 

@@ -12,8 +12,8 @@ position: 0
  
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Converting from RadComboBox to RadDropDownList](http://tv.telerik.com/watch/winforms/converting-from-radcombobox-to-raddropdownlist)In this video, you will learn how to convert a RadComboBox to the new RadDropDownList control introduced in the Q2 2010 release of RadControls for WinForms.|![dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 003](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol003.png)|
-|[Converting from RadListBox to RadListControl](http://tv.telerik.com/watch/winforms/converting-from-radlistbox-to-radlistcontrol)In this video, you will learn how to convert a RadListBox to the new RadListControl introduced in the Q2 2010 release of RadControls for WinForms.|![dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 004](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol004.png)|
+|[Converting from RadComboBox to RadDropDownList](http://tv.telerik.com/watch/winforms/converting-from-radcombobox-to-raddropdownlist) In this video, you will learn how to convert a RadComboBox to the new RadDropDownList control introduced in the Q2 2010 release of RadControls for WinForms.|![dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 003](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol003.png)|
+|[Converting from RadListBox to RadListControl](http://tv.telerik.com/watch/winforms/converting-from-radlistbox-to-radlistcontrol) In this video, you will learn how to convert a RadListBox to the new RadListControl introduced in the Q2 2010 release of RadControls for WinForms.|![dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 004](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol004.png)|
 
 ## 
 

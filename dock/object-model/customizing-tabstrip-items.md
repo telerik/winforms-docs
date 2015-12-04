@@ -92,7 +92,9 @@ End Sub
 
 {{endregion}} 
  
-The tabs will look like this:![dock-object-model-customizing-tabstrip-items 001](images/dock-object-model-customizing-tabstrip-items001.png)
+The tabs will look like this:
+
+![dock-object-model-customizing-tabstrip-items 001](images/dock-object-model-customizing-tabstrip-items001.png)
 
 ## Replacing the entire TabStrip element.
       

@@ -19,27 +19,28 @@ This tutorial walks you through a real-world scenario that you can have in your 
 
 1. Implementing events, methods and properties in the user controls which allow you to have communication between the forms/user controls.
 
-	In our particular case we dock a user control instance in a RadDock instance. The user control itself contains a RadCalendar. When the user clicks the RadCalendar a custom __DateChanged__ event for the UserControl1 fires, showing a dialog with the selected date. Using this as a model you can create UserControls with custom properties, methods and events for more complex situations.
+In our particular case we dock a user control instance in a RadDock instance. The user control itself contains a RadCalendar. When the user clicks the RadCalendar a custom __DateChanged__ event for the UserControl1 fires, showing a dialog with the selected date. Using this as a model you can create UserControls with custom properties, methods and events for more complex situations.
 
-	![dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event 001](images/dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event001.png)
+![dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event 001](images/dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event001.png)
  
-1. In Visual Studio create a new Windows Application.
+1\. In Visual Studio create a new Windows Application.
 
-1. Create a new UserControl - from the Solution Explorer, right-click the project node in the Solution Explorer and select "*Add >> UserControl...*". Name the new user control __CalendarPanel__.
+2\. Create a new UserControl - from the Solution Explorer, right-click the project node in the Solution Explorer and select "*Add >> UserControl...*". Name the new user control __CalendarPanel__.
 
-1. Drop a RadCalendar instance on the __CalendarPanel__ design surface.
+3\. Drop a RadCalendar instance on the __CalendarPanel__ design surface.
 
-1. Set the RadCalendar __Dock__ property to *Fill*.
+4\. Set the RadCalendar __Dock__ property to *Fill*.
 
-1. In the Property Window locate the __SelectionChanged__ event and double-click it to create an event handler.
+5\. In the Property Window locate the __SelectionChanged__ event and double-click it to create an event handler.
 
-1. Add a delegate and event to be surfaced by the CalendarPanel control when the date selection changes:
-	#### Setting up DateChanged Event 
+6\. Add a delegate and event to be surfaced by the CalendarPanel control when the date selection changes:
+	
+#### Setting up DateChanged Event 
 
-	{{source=..\SamplesCS\Dock\CalendarPanel.cs region=definingDelegates}} 
-	{{source=..\SamplesVB\Dock\CalendarPanel.vb region=definingDelegates}} 
+{{source=..\SamplesCS\Dock\CalendarPanel.cs region=definingDelegates}} 
+{{source=..\SamplesVB\Dock\CalendarPanel.vb region=definingDelegates}} 
 
-	````C#
+````C#
 public delegate void DateChangedHandler(DateTime date);
 public event DateChangedHandler DateChanged;
 
@@ -50,16 +51,17 @@ Public Event DateChanged As DateChangedHandler
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
 
-	In the __SelectionChanged__ event handler add the following code:
-	#### Handling the RadCalendar SelectionChanged event 
+In the __SelectionChanged__ event handler add the following code:
 
-	{{source=..\SamplesCS\Dock\CalendarPanel.cs region=handlingSelectionChanged}} 
-	{{source=..\SamplesVB\Dock\CalendarPanel.vb region=handlingSelectionChanged}} 
+#### Handling the RadCalendar SelectionChanged event 
 
-	````C#
+{{source=..\SamplesCS\Dock\CalendarPanel.cs region=handlingSelectionChanged}} 
+{{source=..\SamplesVB\Dock\CalendarPanel.vb region=handlingSelectionChanged}} 
+
+````C#
 private void radCalendar1_SelectionChanged(object sender, EventArgs e)
 {
     if (DateChanged != null)
@@ -76,21 +78,22 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
 
  
 
-1. In the Solution Explorer, double-click the main form to open its design surface.  
+7\. In the Solution Explorer, double-click the main form to open its design surface.  
 
-1. Drop a RadDock instance on the opened design surface. Set the RadDock __Dock__ property *Fill.*
+8\. Drop a RadDock instance on the opened design surface. Set the RadDock __Dock__ property *Fill.*
 
-1. Dock the CalendarPanel user control to RadDock in the Form_Load event handler using the following code snippet:
-	#### Docking CalendarPanel user control in RadDock 
-
-	{{source=..\SamplesCS\Dock\DockingForms.cs region=creatingCalendarPanel}} 
-	{{source=..\SamplesVB\Dock\DockingForms.vb region=creatingCalendarPanel}} 
+9\. Dock the CalendarPanel user control to RadDock in the Form_Load event handler using the following code snippet:
 	
-	````C#
+#### Docking CalendarPanel user control in RadDock 
+
+{{source=..\SamplesCS\Dock\DockingForms.cs region=creatingCalendarPanel}} 
+{{source=..\SamplesVB\Dock\DockingForms.vb region=creatingCalendarPanel}} 
+	
+````C#
 CalendarPanel calendarPanel = new CalendarPanel();
 HostWindow host = this.radDock1.DockControl(calendarPanel, Telerik.WinControls.UI.Docking.DockPosition.Left);
 host.Text = "Calendar";
@@ -105,15 +108,16 @@ AddHandler calendarPanel.DateChanged, AddressOf calendarPanel_DateChanged
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
-1. Add an event handler for the CalendarPanel DateChanged event:
-	#### Handling the Custom DateChanged event 
+10\. Add an event handler for the CalendarPanel DateChanged event:
+	
+#### Handling the Custom DateChanged event 
 
-	{{source=..\SamplesCS\Dock\DockingForms.cs region=handlingDateChanged}} 
-	{{source=..\SamplesVB\Dock\DockingForms.vb region=handlingDateChanged}} 
+{{source=..\SamplesCS\Dock\DockingForms.cs region=handlingDateChanged}} 
+{{source=..\SamplesVB\Dock\DockingForms.vb region=handlingDateChanged}} 
 
-	````C#
+````C#
 void calendarPanel_DateChanged(DateTime date)
 {
     RadMessageBox.Show("Selected date is: " + date.ToShortDateString());
@@ -127,6 +131,6 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
-1. Press __F5__ to run the application. Click the cells in the calendar to display the date in a message dialog. 
+11\. Press __F5__ to run the application. Click the cells in the calendar to display the date in a message dialog. 

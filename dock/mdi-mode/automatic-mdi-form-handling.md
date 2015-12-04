@@ -16,16 +16,17 @@ RadDock has the capability of automatically finding and attaching Multiple Docum
 
 To configure your MDI application to use this feature:
 
-1. First designate which form that will act as MDI container.  Set the parent form __IsMdiContainer__ property to true. This can be done at design time or in code (see code example below).
+1\. First designate which form that will act as MDI container.  Set the parent form __IsMdiContainer__ property to true. This can be done at design time or in code (see code example below).
           
 
-1. Drop a __RadDock__ onto the parent form and set the __AutoDetectMdiChildForms__ property to true. You may also want to set the __RadDock.Dock__ property to __Fill__ to get the best use of space on the form.
-	#### Configuring the Parent Form 
+2\. Drop a __RadDock__ onto the parent form and set the __AutoDetectMdiChildForms__ property to true. You may also want to set the __RadDock.Dock__ property to __Fill__ to get the best use of space on the form.
+	
+#### Configuring the Parent Form 
 
-	{{source=..\SamplesCS\Dock\MDIHandling1.cs region=initialization}} 
-	{{source=..\SamplesVB\Dock\MDIHandling1.vb region=initialization}} 
+{{source=..\SamplesCS\Dock\MDIHandling1.cs region=initialization}} 
+{{source=..\SamplesVB\Dock\MDIHandling1.vb region=initialization}} 
 
-	````C#
+````C#
 private void Form1_Load(object sender, EventArgs e)
 {
     this.IsMdiContainer = true;
@@ -41,17 +42,17 @@ End Sub
 
 ````
 
-	{{endregion}} 
+{{endregion}} 
  
 
-1. Add a form to the project that will serve the role of child form. No properties, methods or event handlers need to be set for this form, except that you may want to add some content that will be visible when the child forms are displayed as tabbed documents.
+3\. Add a form to the project that will serve the role of child form. No properties, methods or event handlers need to be set for this form, except that you may want to add some content that will be visible when the child forms are displayed as tabbed documents.
 
-1. Add code to the parent form to create the child form and assign it an MDI parent: 
+4\. Add code to the parent form to create the child form and assign it an MDI parent: 
 
-	{{source=..\SamplesCS\Dock\MDIHandling1.cs region=creatingChildForm}} 
-	{{source=..\SamplesVB\Dock\MDIHandling1.vb region=creatingChildForm}} 
+{{source=..\SamplesCS\Dock\MDIHandling1.cs region=creatingChildForm}} 
+{{source=..\SamplesVB\Dock\MDIHandling1.vb region=creatingChildForm}} 
 
-	````C#
+````C#
 private void radMenuItem1_Click(object sender, EventArgs e)
 {
     Form childForm = new Form();
@@ -71,7 +72,7 @@ End Sub
 
 ````
 
-	{{endregion}}  
+{{endregion}}  
 
 ## MdiChildrenDockType
 
@@ -80,7 +81,7 @@ This property allows you to determine the default type of the DockWindows that w
 
 However, you can set the default type to ToolWindow:
 
-#### Setting the default DockWindow type for MDI children forms_ 
+#### Setting the default DockWindow type for MDI children forms  
 
 {{source=..\SamplesCS\Dock\MDIHandling1.cs region=mdiChildrenDockType}} 
 {{source=..\SamplesVB\Dock\MDIHandling1.vb region=mdiChildrenDockType}} 
