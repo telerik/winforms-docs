@@ -29,6 +29,8 @@ __4.__ Run the project.
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.cs region=HierarchyOfOneToManyRelation}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.vb region=HierarchyOfOneToManyRelation}} 
 
+#### Hierarchy of one to many relation 
+
 ````C#
 private void HierarchyOfOneToManyRelation_Load(object sender, EventArgs e)
 {

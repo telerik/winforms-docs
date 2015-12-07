@@ -71,7 +71,7 @@ Me.RadGridView1.Columns("Unit Price").ConditionalFormattingObjectList.Add(obj)
 {{endregion}} 
 
 
->caution The declarative nature of Conditional Formatting limits the situations in which it can be used. While the provided functionality covers most scenarios, there are situations in which you will need to use[events]({%slug winforms/gridview/rows/formatting-rows%}).
+>caution The declarative nature of Conditional Formatting limits the situations in which it can be used. While the provided functionality covers most scenarios, there are situations in which you will need to use [events]({%slug winforms/gridview/rows/formatting-rows%}).
 >
 
 

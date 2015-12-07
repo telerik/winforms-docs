@@ -23,7 +23,9 @@ RadGridView supports out-of-the-box binding to sub objects by intuitive and sim
 
 * Car - object Car
 
-Follows the implementation of the Person and the Car classes:#_[C#] Defining the Class and Sub Class_
+Follows the implementation of the Person and the Car classes:
+
+#### Defining the Class and Sub Class
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToSubObjects.cs region=classes}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToSubObjects.vb region=classes}} 

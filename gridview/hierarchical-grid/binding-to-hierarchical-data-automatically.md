@@ -26,6 +26,8 @@ The run-time code fills the categories and products data tables, sets the __Auto
 {{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.cs region=BindingToHierarchicalGridAutomatically}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.vb region=BindingToHierarchicalGridAutomatically}} 
 
+#### Generating Hierarchy From a DataSet 
+
 ````C#
         
 private void BindingToHierarchicalGridAutomatically_Load(object sender, EventArgs e)
@@ -60,6 +62,8 @@ It is possible to auto generate Multi-level hierarchy as well. You should again 
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.cs region=BindingToMultiLevelHierarchicalGridAutomatically}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.vb region=BindingToMultiLevelHierarchicalGridAutomatically}} 
+
+#### Generating Three-Level Hierarchy From a DataSet 
 
 ````C#
         

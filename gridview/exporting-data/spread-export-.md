@@ -217,50 +217,7 @@ End Sub
 
 ![gridview-exporting-data-spread-export 003](images/gridview-exporting-data-spread-export003.png)
 
-__WorkbookCreated__: This event is triggered on the __SpreadExportRenderer__ object when the workbook is ready to be exported. Allows to introduce final customizations (for example you can add [header and footer]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})). More information on how to work with Workbook is available here: [Working with Workbooks](76c31a52-0999-4bfb-bc1d-ee0e6f56b6c0). Here is an example how to best fit all columns:
-
-{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=AttachRenderer}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=AttachRenderer}} 
-
-````C#
-GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
-SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
-exportRenderer.WorkbookCreated += exportRenderer_WorkbookCreated;
-spreadExporter.RunExport("D:\\exportedFile.xlsx", exportRenderer);
-
-````
-````VB.NET
-Dim spreadExporter As New GridViewSpreadExport(Me.radGridView1)
-Dim exportRenderer As New SpreadExportRenderer()
-AddHandler exportRenderer.WorkbookCreated, AddressOf exportRenderer_WorkbookCreated
-spreadExporter.RunExport("D:\exportedFile.xlsx", exportRenderer)
-
-````
-
-{{endregion}} 
-
-{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=WorbookCreated}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=WorbookCreated}} 
-
-````C#
-void exportRenderer_WorkbookCreated(object sender, WorkbookCreatedEventArgs e)
-{
-    Worksheet worksheet = (Worksheet)e.Workbook.Sheets[0];
-    worksheet.Columns[worksheet.UsedCellRange].AutoFitWidth();
-}
-
-````
-````VB.NET
-Private Sub exportRenderer_WorkbookCreated(ByVal sender As Object, ByVal e As WorkbookCreatedEventArgs)
-    Dim worksheet As Worksheet = CType(e.Workbook.Sheets(0), Worksheet)
-    worksheet.Columns(worksheet.UsedCellRange).AutoFitWidth()
-End Sub
-
-````
-
-{{endregion}} 
-
-![gridview-exporting-data-spread-export 004](images/gridview-exporting-data-spread-export004.png)
+__WorkbookCreated__: This event is triggered on the __SpreadExportRenderer__ object when the workbook is ready to be exported. Allows to introduce final customizations (for example you can add [header and footer]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})). More information on how to work with Workbook is available here: [Working with Workbooks](76c31a52-0999-4bfb-bc1d-ee0e6f56b6c0).
 
 __ChildViewExporting__ - this event is used to specify which child view to be exported, for each exported row, during the export. Will be triggered only when the __ChildViewExportMode__ is set to *SelectViewToExport*. The event arguments provide the __ParentRow__ which active view should be set via the __ActiveViewIndex__ property.
 

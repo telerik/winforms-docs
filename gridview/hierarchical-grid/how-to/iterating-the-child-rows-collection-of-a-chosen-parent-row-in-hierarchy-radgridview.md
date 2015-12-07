@@ -19,6 +19,8 @@ In order to iterate all child rows in RadGridView, you need to change the Activ
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=iterateChildRows}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=iterateChildRows}} 
 
+#### Iterating the child rows collection of a chosen parent row in hierarchy RadGridView 
+
 ````C#
 void IterateRows()
 {

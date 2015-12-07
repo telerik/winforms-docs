@@ -15,7 +15,7 @@ position: 8
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Event Based Hierarchies with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/event-based-hierarchies-with-radgridview-for-winforms)In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![gridview-hierarchical-grid-load-on-demand-hierarchy 001](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)|
+|[Event Based Hierarchies with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/event-based-hierarchies-with-radgridview-for-winforms)<br>In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![gridview-hierarchical-grid-load-on-demand-hierarchy 001](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)|
 
 ## 
 
