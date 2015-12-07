@@ -145,29 +145,6 @@ For i As Integer = 0 To dt.Rows.Count - 1
         Return MyBase.EndEdit()
     End If
 Next i
-'#End Region
-'#Region "addValue"
-' An example of what we can do when we enter the custom text.
-' In this case we are adding a new data row in the underlying datasource of 
-' the combobox column and then in the CellEndEdit we are setting
-' the ID value of the newly created row to RadGridView.
-Dim newCategoriesRow As NwindDataSet.CategoriesRow = dt.NewCategoriesRow()
-newCategoriesRow.CategoryName = (CType(Me.EditorElement, RadDropDownListEditorElement)).Text
-f.DataSet.Categories.Rows.Add(newCategoriesRow)
-' Updating the database. You can do it here at another place
-' you find suitable for this purpose, for example, on FormClosing.
-f.CategoriesTA.Update(f.DataSet.Categories)
-cellElement.Tag = newCategoriesRow.CategoryID
-Return MyBase.EndEdit()
-'#End Region
-End Function
-s
-gion
-e SamplesCS.GridView.Editors.How_To1
-'#region customEditorClass1
-Public Class CustomDropDownEditor
-Inherits RadDropDownListEditor
-Public Overrides Function EndEdit() As Boolean
 
 ````
 
@@ -209,15 +186,6 @@ f.DataSet.Categories.Rows.Add(newCategoriesRow)
 f.CategoriesTA.Update(f.DataSet.Categories)
 cellElement.Tag = newCategoriesRow.CategoryID
 Return MyBase.EndEdit()
-'#End Region
-End Function
-s
-gion
-e SamplesCS.GridView.Editors.How_To1
-'#region customEditorClass1
-Public Class CustomDropDownEditor
-Inherits RadDropDownListEditor
-Public Overrides Function EndEdit() As Boolean
 
 ````
 

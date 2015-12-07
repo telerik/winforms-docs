@@ -25,9 +25,6 @@ rowToSelect.IsSelected = true;
 ````
 ````VB.NET
 rowToSelect.IsSelected = True
-' #endregion
-'#region unselectAllRows
-Me.RadGridView1.ClearSelection()
 
 ````
 
