@@ -554,13 +554,17 @@ h3 em {
     font-weight: bold;
 }
 
-blockquote,
-blockquote.note  {
+
+blockquote
+ {    
     color: #555;
     padding: 10px 10px 10px 64px;
-    background: #d9f0f7 url(../images/note-icon.png) no-repeat 15px center;
     margin: 5px 0;
 	min-height: 40px;
+}
+
+blockquote.note  {
+	 background: #d9f0f7 url(../images/note-icon.png) no-repeat 15px center;
 }
 
 blockquote.important {
