@@ -609,7 +609,7 @@ $(document).ready(function(){
 	}).remove();
 	
 	
-	$( "#PageHeader" ).prepend( "<a href=\"http://docs.telerik.com/devtools/wpf/\" class=\"t-logo\" title=\"Telerik UI for WPF \"> Telerik UI for WPF</a>" );
+	$( "#PageHeader" ).prepend( "<a href=\"http://docs.telerik.com/devtools/winforms/\" class=\"t-logo\" title=\"Telerik UI for WinForms \"> Telerik UI for WinForms</a>" );
 
 	var leftColum = $('#leftNav').height();
 	var rightColum = $('#TopicContent').height();
@@ -619,6 +619,6 @@ $(document).ready(function(){
 	$('#leftNav').height(parseInt(maxHeight));
 	$('#TopicContent').height(parseInt(maxHeight));
 	
-	$(".toclevel0 a:last-child").first().text("Telerik UI for WPF Documented Class Library");
+	$(".toclevel0 a:last-child").first().text("Telerik UI for WinForms Documented Class Library");
 });
 
