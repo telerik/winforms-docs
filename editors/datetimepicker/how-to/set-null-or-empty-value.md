@@ -50,7 +50,7 @@ Me.RadDateTimePicker1.NullText = "No date selected"
 
 {{endregion}} 
  
-When the__NullDate__ property value is equal to the control value no text will be displayed in the text box part (if the NullText is set it will appear). The default value of the property is __MinDate__, which is *1/1/1900*. Below is the code snippet for setting __NullDate__to a specific date (*01-01-2000*):
+When the __NullDate__ property value is equal to the control value no text will be displayed in the text box part (if the NullText is set it will appear). The default value of the property is __MinDate__, which is *1/1/1900*. Below is the code snippet for setting __NullDate__ to a specific date (*01-01-2000*):
 
 #### Setting the NullDate property of RadDateTimePicker 
 

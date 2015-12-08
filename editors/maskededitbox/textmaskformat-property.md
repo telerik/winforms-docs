@@ -81,7 +81,7 @@ And here is what the __Value__ property of RadMaskedEditBox will return dependin
 
 ## Using Currency mask
 
-3\. Define the Current mask as show below: 
+1\. Define the Current mask as show below: 
 
 {{source=..\SamplesCS\Editors\MaskEditBox1.cs region=currencyMask}} 
 {{source=..\SamplesVB\Editors\MaskEditBox1.vb region=currencyMask}} 
@@ -101,7 +101,7 @@ Me.RadMaskedEditBox1.Mask = "C2"
 {{endregion}} 
  
 
-4\. Now, assume that the user types "-1234.12". The UI of RadMaskedEditBox in this case look like this:
+2\. Now, assume that the user types "-1234.12". The UI of RadMaskedEditBox in this case look like this:
             
 ![editors-maskededitbox-textmaskformat 002](images/editors-maskededitbox-textmaskformat002.png)
 

@@ -14,7 +14,7 @@ position: 0
 
 RadCalendar provides built in internationalization support to build world-ready applications including: 
 
-* The __Culture__ property can be set using the drop down list in the Properties Window or set in code. The screenshot below shows the __Culture__ property set to "German(Germany)". 
+\* The __Culture__ property can be set using the drop down list in the Properties Window or set in code. The screenshot below shows the __Culture__ property set to "German(Germany)". 
 
 {{source=..\SamplesCS\Editors\DateTimePicker1.cs region=culture}} 
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=culture}} 
@@ -101,7 +101,7 @@ End Sub
 
 ![editors-datetimepicker-internationalization 001](images/editors-datetimepicker-internationalization001.png)
 
-* Right-to-Left support:          
+\* Right-to-Left support:          
             
 
 * Right-to-Left = No (default value) 
@@ -269,7 +269,7 @@ End Sub
 
 ![editors-datetimepicker-internationalization 003](images/editors-datetimepicker-internationalization003.png)
 
-* [Date Format Pattern]({%slug winforms/editors/datetimepicker/internationalization/date-formats%}): The __Format__ property has valid values of __Short__, __Long__, __Time__ and __Custom__. The __Custom__enables the __CustomFormat__ property.  
+\* [Date Format Pattern]({%slug winforms/editors/datetimepicker/internationalization/date-formats%}): The __Format__ property has valid values of __Short__, __Long__, __Time__ and __Custom__. The __Custom__enables the __CustomFormat__ property.  
 
 {{source=..\SamplesCS\Editors\DateTimePicker1.cs region=customFormat}} 
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=customFormat}} 

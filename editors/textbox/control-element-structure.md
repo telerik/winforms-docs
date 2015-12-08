@@ -27,9 +27,9 @@ This image shows the Control Element Structure of the Telerik RadTextBox as dis
 * The most important node is __RadTextBoxItem__ which *hosts* the __standard__.NET TextBox control. There are several implications because of that:
             
 
-* The first is that this node cannot be themed
+	* The first is that this node cannot be themed
 
-* And the second is that events hierarchy is broken at that place e.g. mouse click in the text box field does not propagate to the root element (RadTextBox control).
+	* And the second is that events hierarchy is broken at that place e.g. mouse click in the text box field does not propagate to the root element (RadTextBox control).
                 
 
 You can use the following code snippet to access RadTextBoxItem and subscribe to the click event:

@@ -79,7 +79,9 @@ Private Sub formatting1()
 
 {{endregion}} 
  
-The code above produces the following result:![editors-textboxcontrol-text-editing 001](images/editors-textboxcontrol-text-editing001.png)
+The code above produces the following result:
+
+![editors-textboxcontrol-text-editing 001](images/editors-textboxcontrol-text-editing001.png)
 
 Alternatively, you can insert text at the end of the RadTextBoxControl content by using the __AppendText__ method: 
 
@@ -138,7 +140,9 @@ Private Sub formatting1()
 {{endregion}} 
  
 
-The appended text is inserted at the end:![editors-textboxcontrol-text-editing 002](images/editors-textboxcontrol-text-editing002.png)
+The appended text is inserted at the end:
+
+![editors-textboxcontrol-text-editing 002](images/editors-textboxcontrol-text-editing002.png)
 
 You can delete the selected text or character at the caret position by using the __Delete__ method: 
 
@@ -192,7 +196,9 @@ Private Sub formatting1()
 {{endregion}} 
  
 
-After the deletion of the first word the text control looks like:![editors-textboxcontrol-text-editing 003](images/editors-textboxcontrol-text-editing003.png)
+After the deletion of the first word the text control looks like:
+
+![editors-textboxcontrol-text-editing 003](images/editors-textboxcontrol-text-editing003.png)
 
 Each editing operation raises the __TextChanging__ and __TextChanged__ events. Notice that you can prevent successful finishing of operation by subscribing to the __TextChanging__ event: 
 

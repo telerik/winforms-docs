@@ -38,16 +38,14 @@ private void SetText()
 Private Sub SetText()
     Me.RadAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;"
 End Sub
- Region
-Private Sub ShowRemoveButton()
-    '#Region "ShowRemoveButton"
-    Me.RadAutoCompleteBox1.ShowRemoveButton = False
 
 ````
 
 {{endregion}} 
  
-Here is the output:![editors-autocompletebox-getting-started 001](images/editors-autocompletebox-getting-started001.png)
+Here is the output:
+
+![editors-autocompletebox-getting-started 001](images/editors-autocompletebox-getting-started001.png)
 
 You can determine the visibility of the remove button by changing the __ShowRemoveButton__ property: 
 

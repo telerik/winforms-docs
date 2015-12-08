@@ -53,3 +53,9 @@ __Events:__
             
 
 ## RadCheckedListDataItem
+
+* __Checked__: Sets the value indicates whether the item is checked. The value is reflected in the RadCheckedDropDownList and in the DataBoundItem if such exists and RadCheckedDropDownList has its CheckedMember set accordingly.
+
+* __Owner__: Gets the owner RadListElement.
+
+* __Selected__: Gets or sets a value that indicates if this item is selected. Setting this property will cause the selection events of the owner list control to fire if there is one.

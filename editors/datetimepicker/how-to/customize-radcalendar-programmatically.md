@@ -12,7 +12,9 @@ position: 1
  
 ## 
 
-In order to customize RadCalendar in RadDateTimePicker, you should first take the instance of the RadCalendar. You can do so by calling the __GetCurrentBehavior__() method. For example, if we want to change the font and colors of the RadCalendar navigation title, we need to use the following code snippet:#_[C#] Changing the font of RadCalendar navigation title_
+In order to customize RadCalendar in RadDateTimePicker, you should first take the instance of the RadCalendar. You can do so by calling the __GetCurrentBehavior__() method. For example, if we want to change the font and colors of the RadCalendar navigation title, we need to use the following code snippet:
+
+#### Changing the font of RadCalendar navigation title 
  
 {{source=..\SamplesCS\Editors\DateTimePicker1.cs region=customizeRadCalendarProgramatically}} 
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=customizeRadCalendarProgramatically}} 

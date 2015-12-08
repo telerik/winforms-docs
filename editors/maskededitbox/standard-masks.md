@@ -12,7 +12,7 @@ position: 2
  
 ## 
 
-The table below describe the mask characters that can be used when the __MaskType__property is set to __Standard__.
+The table below describe the mask characters that can be used when the __MaskType__ property is set to __Standard__.
          
 
 | __Mask Character__ | __Description__ |

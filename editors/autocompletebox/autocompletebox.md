@@ -1,5 +1,5 @@
 ---
-title: AutoCompleteBox
+title: Overview
 page_title: AutoCompleteBox | UI for WinForms Documentation
 description: AutoCompleteBox
 slug: winforms/editors/autocompletebox
@@ -12,10 +12,9 @@ position: 0
 
 
 
-RadAutoCompleteBox allows the end-user to easily fill-in text thanks to auto-complete functionality
-		    and tokens of text. This behavior is similar to the “To” field of Outlook and Facebook where you are 
-		    filling-in the recipients to which you are going to send a new message:
-      ![editors-autocompletebox-overview 001](images/editors-autocompletebox-overview001.png)
+RadAutoCompleteBox allows the end-user to easily fill-in text thanks to auto-complete functionality and tokens of text. This behavior is similar to the “To” field of Outlook and Facebook where you are filling-in the recipients to which you are going to send a new message:
+      
+![editors-autocompletebox-overview 001](images/editors-autocompletebox-overview001.png)
 
 Key Features:
 

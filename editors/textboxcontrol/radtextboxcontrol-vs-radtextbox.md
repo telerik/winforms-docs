@@ -15,7 +15,7 @@ This article will demonstrate the difference between [RadTextBox]({%slug winform
 
 ## 
 
-The main and most important difference between RadTextBox and RadTextBoxControl is that RadTextBox is a wrapper around the standard .NET TextBox control, while RadTextBoxControl is built entirely on top of [Telerik Presentation Framework](87f43b63-7fff-4b3c-b7c7-4830f1e63903). This main difference helps avoid some of the limitations that hosted controls introduce such as unsupported clipping, higher memory usage, slower painting, etc. Follows a comparison table with the different features between these controls.
+The main and most important difference between RadTextBox and RadTextBoxControl is that RadTextBox is a wrapper around the standard .NET TextBox control, while RadTextBoxControl is built entirely on top of [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}). This main difference helps avoid some of the limitations that hosted controls introduce such as unsupported clipping, higher memory usage, slower painting, etc. Follows a comparison table with the different features between these controls.
         
 
 

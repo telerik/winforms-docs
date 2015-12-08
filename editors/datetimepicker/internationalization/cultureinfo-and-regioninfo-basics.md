@@ -33,6 +33,7 @@ The table below is a sample list of the names and identifiers found in the Cult
 |ar-SA|0x0401|Arabic - Saudi Arabia|
 |fa-IR|0x0429|Farsi - Iran|
 |ps-AF|0x0463|Pashto - Afghanistan|
+|ar-SA|0x0401|Arabic - Saudi Arabia|
 
 >caption Fig.1 Setting Arabic Culture
 

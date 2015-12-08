@@ -49,16 +49,16 @@ This article describes the most commonly used properties, events and methods.
 * __DropDownSizingMode:__ Controls the sizing grips configuration. The following values can be used:
             
 
-1. __UpDownAndRightBottom:__ The both sizing grips are visible.
+	1. __UpDownAndRightBottom:__ The both sizing grips are visible.
                 
 
-1. __UpDown:__ The middle sizing grip is visible, the popup can be resized vertically.
+	1. __UpDown:__ The middle sizing grip is visible, the popup can be resized vertically.
                 
 
-1. __RightBottom:__ The sizing grip in the right bottom part of the popup is visible. The popup can be resized in all directions.
+	1. __RightBottom:__ The sizing grip in the right bottom part of the popup is visible. The popup can be resized in all directions.
                 
 
-1. __None:__ The popup cannot be resized, no sizing grips are visible.
+	1. __None:__ The popup cannot be resized, no sizing grips are visible.
                 
 
 ## Events
@@ -75,8 +75,7 @@ This article describes the most commonly used properties, events and methods.
 * __PopupClosed:__ Fires after the popup is closed.
             
 
-## 
-        Methods
+## Methods
       
 
 * __ClosePopup:__ This method can be used for closing the popup, it has two overrides. The first one does not take any parameters. The second is taking __RadPopupCloseReason__ as parameter. The specified reason will be passed as an argument to the closing events. The method can be used as follows:

@@ -116,15 +116,6 @@ void radAutoCompleteBox1_TextChanging(object sender, Telerik.WinControls.TextCha
 Private Sub radAutoCompleteBox1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
     e.Cancel = String.IsNullOrEmpty(e.NewValue) AndAlso e.OldValue.Contains(Me.RadAutoCompleteBox1.Delimiter.ToString())
 End Sub
- Region
-ion "SetText"
-Private Sub SetText()
-    Me.RadAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;"
-End Sub
- Region
-Private Sub ShowRemoveButton()
-    '#Region "ShowRemoveButton"
-    Me.RadAutoCompleteBox1.ShowRemoveButton = False
 
 ````
 

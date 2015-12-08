@@ -1,5 +1,5 @@
 ---
-title: CheckedDropDownList
+title: Overview
 page_title: CheckedDropDownList | UI for WinForms Documentation
 description: CheckedDropDownList
 slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist

@@ -38,7 +38,9 @@ The __MaskType__ property defines what type of mask would be used in the masked 
 
 * __Email__ - validate user input for the valid mail. If this email is not valid will notify user with validation icon:
 
-![editors-maskededitbox-overview 005](images/editors-maskededitbox-overview005.png)![editors-maskededitbox-overview 007](images/editors-maskededitbox-overview007.png)
+![editors-maskededitbox-overview 005](images/editors-maskededitbox-overview005.png)
+
+![editors-maskededitbox-overview 007](images/editors-maskededitbox-overview007.png)
 
 Additional features supported by RadMaskedEditoBox are:
 

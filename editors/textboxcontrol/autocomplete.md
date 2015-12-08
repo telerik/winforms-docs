@@ -115,4 +115,6 @@ Private Sub formatting1()
 {{endregion}} 
  
 
-Here is the result of the above code:![editors-textboxcontrol-autocomplete 002](images/editors-textboxcontrol-autocomplete002.png)
+Here is the result of the above code:
+
+![editors-textboxcontrol-autocomplete 002](images/editors-textboxcontrol-autocomplete002.png)
