@@ -18,7 +18,7 @@ This article explains how the different types of items supported in __RadLayoutC
         
 >caption Figure 1: Items Types.<br>![layoutcontrol-items 001](images/layoutcontrol-items001.png)
 
-1. __LayoutControlItem:__ This item holds the controls added to a__RadLayoutControl__. Each control is added to an item and then the item is added to the layout control. This grants you control over the control sizing and position. The most important properties are:
+1. __LayoutControlItem:__ This item holds the controls added to a __RadLayoutControl__. Each control is added to an item and then the item is added to the layout control. This grants you control over the control sizing and position. The most important properties are:
   * __MinSize:__ Gets or sets the item’s minimum size.
   * __MaxSize:__ Gets or sets the item’s maximum size.
   * __DrawText:__ specifies if the item's text should be drawn.
@@ -29,7 +29,7 @@ This article explains how the different types of items supported in __RadLayoutC
 2. __LayoutControlLabelItem:__ Basic item that allows displaying text and/or image.
 3. __LayoutControlSeparatorItem:__ Stands as a separator, its orientation is determined by the position it is placed in. You can use the __Thickness__ property to set the item width.        
 4. __LayoutControlGroupItem:__ A group with a header and another layout container inside of it, can be collapsed, has its own Items collection. Its most important properties are:
-  * HeaderElement:__ Gives access to the underlying CollapsiblePanelHeaderElement. 
+  * __HeaderElement:__ Gives access to the underlying CollapsiblePanelHeaderElement. 
   * __HeaderHeight:__ Gets or set the header height.
   * __IsExpanded:__ Indicates if the group is expanded.
   * __TextAlignment:__ Gets or set the header text alignment.

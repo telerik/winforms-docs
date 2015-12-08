@@ -28,9 +28,7 @@ The screenshot below shows sorting by the "ProductName" column:
 
 | Ascending | Descending | Natural Sort (Unsorted) |
 | ------ | ------ | ------ |
-|![gridview-end-user-capabilities-sorting 001](images/gridview-end-user-capabilities-sorting001.png)|
-![gridview-end-user-capabilities-sorting 002](images/gridview-end-user-capabilities-sorting002.png)|
-![gridview-end-user-capabilities-sorting 003](images/gridview-end-user-capabilities-sorting003.png)|
+|![gridview-end-user-capabilities-sorting 001](images/gridview-end-user-capabilities-sorting001.png)|![gridview-end-user-capabilities-sorting 002](images/gridview-end-user-capabilities-sorting002.png)|![gridview-end-user-capabilities-sorting 003](images/gridview-end-user-capabilities-sorting003.png)|
 
 __Modifying sorting behavior__ As you can see above, by default you can turn off the sorting of a column only via the context menu of the sorted column. However, what if you want to turn of the sorting on the third click on the column header? In order to achieve this, you should handle the SortChanging event, cancel the current sorting operation and set the sorting to None. Here is how you can do this, assuming that the column in question is ProductName:
 

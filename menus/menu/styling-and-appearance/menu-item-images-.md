@@ -12,7 +12,7 @@ position: 2
 
 
 
-Images can be placed in both the main and sub menu items. Images can be added directly to each __RadMenuItem____Image__ property through local and project resources or can be supplied by an __ImageList__ component.<br>![menus-menu-styling-and-appearance-menu-item-images 001](images/menus-menu-styling-and-appearance-menu-item-images001.png)
+Images can be placed in both the main and sub menu items. Images can be added directly to each __RadMenuItemImage__ property through local and project resources or can be supplied by an __ImageList__ component.<br>![menus-menu-styling-and-appearance-menu-item-images 001](images/menus-menu-styling-and-appearance-menu-item-images001.png)
 
 ## Local Resources
 
@@ -24,7 +24,7 @@ To use an image from a project resource click the __RadMenuItem__ and in the Pro
 
 ## Using an ImageList
 
-For consistent management of multiple images that can be used by more than one control at a time use the Windows standard __ImageList__ component. The __ImageList____Smart Tag__ allows: 
+For consistent management of multiple images that can be used by more than one control at a time use the Windows standard __ImageList__ component. The __ImageListSmart Tag__ allows: 
 
 * Sizing all images at one time, so you can increase the __Image Size__ from the default 16 x 16 pixels up to 256 x 256. The example at the beginning of this topic shows a 64 x 64 image.
 

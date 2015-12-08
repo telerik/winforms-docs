@@ -178,5 +178,3 @@ stripElement1.MultiLineItemFitMode = MultiLineItemFitMode.Reflow
 
 
 ![pageview-strip-view-fitting-items 007](images/pageview-strip-view-fitting-items007.gif)
-
-# See Also

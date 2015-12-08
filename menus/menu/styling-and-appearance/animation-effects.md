@@ -38,7 +38,7 @@ The controls used in the example are:
 
 * __RadDropDownList__ named "ddlAnimation".  
 
-To load the __RadDropDownList__with members of the __RadEasingType__ enumeration add the following code to a __Form Load__event handler. This code iterations the enumeration and adds both the string representation and the enumerated value itself. 
+To load the __RadDropDownList__ with members of the __RadEasingType__ enumeration add the following code to a __Form Load__ event handler. This code iterations the enumeration and adds both the string representation and the enumerated value itself. 
 
 {{source=..\SamplesCS\Menus\Menu\AnimationEffects.cs region=easingTypes}} 
 {{source=..\SamplesVB\Menus\Menu\AnimationEffects.vb region=easingTypes}} 
@@ -75,7 +75,7 @@ The example requires event handlers for:
 
 * __RadTrackBar ValueChanged__ event.
 
-When the __RadDropDownList__ selection changes the __RadEasingType__ enumeration value is assigned to the __RadMenu____DropDownAnimationEasing__ property. The __RadCheckBox____Click__ event handler toggles the __DropDownAnimationEnabled__ property. The __RadTrackBar____ValueChanged__ event handler sets the __DropDownAnimationFrames__ property and displays the current value in the label. 
+When the __RadDropDownList__ selection changes the __RadEasingType__ enumeration value is assigned to the __RadMenu__ __DropDownAnimationEasing__ property. The __RadCheckBox__ __Click__ event handler toggles the __DropDownAnimationEnabled__ property. The __RadTrackBar__ __ValueChanged__ event handler sets the __DropDownAnimationFrames__ property and displays the current value in the label. 
 
 {{source=..\SamplesCS\Menus\Menu\AnimationEffects.cs region=eventHandlers}} 
 {{source=..\SamplesVB\Menus\Menu\AnimationEffects.vb region=eventHandlers}} 
@@ -114,7 +114,4 @@ End Sub
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

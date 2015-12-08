@@ -137,9 +137,7 @@ End Class
 {{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=RegisterRowBehavior}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=RegisterRowBehavior}} 
 
-````C#
-           
-            
+````C#      
 //register the custom row behavior
 BaseGridBehavior gridBehavior = this.radGridView1.GridBehavior as BaseGridBehavior;
 gridBehavior.UnregisterBehavior(typeof(GridViewDataRowInfo));

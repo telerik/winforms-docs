@@ -30,7 +30,7 @@ The following controls are used to create a menu structure:
 
 The RadMenuItem represents a standard menu item. Some of its properties include:
 
-* __AutoSizeMode__indicates how the menu item will be sized and can be __FitToAvailableSize__, __WrapAroundChildren__ or __Auto__. 
+* __AutoSizeMode__ indicates how the menu item will be sized and can be __FitToAvailableSize__, __WrapAroundChildren__ or __Auto__. 
 
 * __AngleTransform__ sets the angle offset from horizontal with which the item will be displayed. 
 

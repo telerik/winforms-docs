@@ -42,9 +42,7 @@ At design time you will be able to add and arrange any underlying controls you w
 
 The selection glyph is an arrow that is shown when a control in the layout panel is selected. It allows you to select the underlying host [item]({%slug winforms/layoutcontrol/items%}) and change its properties at design time.
         
->caption Figure 4: Selection Glyph.
-
-![layoutcontrol-design-time 004](images/layoutcontrol-design-time004.png)
+>caption Figure 4: Selection Glyph.<br>![layoutcontrol-design-time 004](images/layoutcontrol-design-time004.png)
 
 ## Adding Groups
 

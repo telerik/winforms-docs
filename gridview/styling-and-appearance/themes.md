@@ -41,9 +41,9 @@ The built-in themes are:
 
 ![gridview-styling-and-appearance-themes 012](images/gridview-styling-and-appearance-themes012.png)<br>*High Contrast Black theme*
 
->note You can preview the built-in themes using our[Theme Viewer]({%slug winforms/tools/themeviewer%})application.
+>note You can preview the built-in themes using our [Theme Viewer]({%slug winforms/tools/themeviewer%})application.
 >
 
->note You can edit the existing built-in themes or you can create brand new ones using[Visual Style Builder]({%slug winforms/tools/visual-style-builder%}).
+>note You can edit the existing built-in themes or you can create brand new ones using [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}).
 >
 

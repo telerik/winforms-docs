@@ -5,7 +5,7 @@ description: Drop down properties
 slug: winforms/multicolumncombobox/drop-down-properties
 tags: drop,down,properties
 published: True
-position: 0
+position: 1
 ---
 
 # Drop down properties
@@ -16,6 +16,7 @@ position: 0
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=dropDownHeight}} 
 
 ````C#
+            
 this.radMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownWidth = 500;
 
 ````
@@ -37,7 +38,7 @@ this.radMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500;
 
 ````
 ````VB.NET
-Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 50
+Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500
 
 ````
 
@@ -59,7 +60,8 @@ It determines whether the drop-down portion of the control will be auto-sized to
 this.radMultiColumnComboBox1.AutoSizeDropDownToBestFit = true;
 
 ````
-````VB.NET  
+````VB.NET
+ 
 Me.RadMultiColumnComboBox1.AutoSizeDropDownToBestFit = True
 
 ````

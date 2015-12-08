@@ -12,7 +12,7 @@ position: 6
 
 
 
-## Adding items
+## Adding Items
 
 The columns of RadListView are stored in a collection that is accessible through the __Items__ property. Columns can be added to RadListView using one of the overloads of the __Add__ method.
 
@@ -34,7 +34,7 @@ Me.RadListView1.Items.Add("Item 2")
 
 {{endregion}} 
 
-## Adding columns
+## Adding Columns
 
 The columns of RadListView are stored in a collection that is accessible through the __Columns__ property. Columns can be added to RadListView using one of the three overloads of the __Add__ method as it is shown below. Each column must have unique name because columns are distinguished by their __Name__ property. 
 

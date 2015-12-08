@@ -21,19 +21,12 @@ This article demonstrates how to alter the default serialization procedure and e
 Here are several properties to have in mind:
 
 * __radGridView1.XmlSerializationInfo__ - this property of RadGridView gets the serialization information used by the SaveLayout and LoadLayout methods. It contains all RadGridView data that should persist between application states.
-            
 
 * __radGridView1.XmlSerializationInfo.DisregardOriginalSerializationVisibility__ - this property determines whether the serialization engine should take the default serialization attributes or the custom serialization metadata provided by the programmer. To define a custom collection of properties, set the property to true.
-            
 
 * __radGridView1.XmlSerializationInfo.SerializationMetadata__ - this property returns a collection of PropertySerializationMetadata objects, which contains information about the type, name and serialization method of the corresponding property. You need to clear the collection in order to be sure that only the serialization instructions will be considered.
-            
 
-Here is a snippet which prepares the SerializationMedata for customization:#_[C#]_
-
-	
-
-
+Here is a snippet which prepares the SerializationMedata for customization:
 
 {{source=..\SamplesCS\GridView\SaveLoadLayout\Advanced.cs region=preparation}} 
 {{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=preparation}} 
@@ -49,16 +42,9 @@ Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Clear()
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-The first property to add for serialization is the MasterGridViewTemplate, which contains RadGridView’s data and its structure. Please note that the MasterGridViewTemplate property is of type GridViewTemplate and that the DesignerSerializationVisibilityAttribute works exactly as the standard Microsoft .NET Framework attribute. #_[C#]_
-
-	
-
-
+The first property to add for serialization is the MasterGridViewTemplate, which contains RadGridView’s data and its structure. Please note that the MasterGridViewTemplate property is of type GridViewTemplate and that the DesignerSerializationVisibilityAttribute works exactly as the standard Microsoft .NET Framework attribute.
 
 {{source=..\SamplesCS\GridView\SaveLoadLayout\Advanced.cs region=SerializationMetadataRadGridView}} 
 {{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataRadGridView}} 
@@ -72,16 +58,9 @@ Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(RadGridVi
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-You can use the same approach to add the child templates. Additionally, you may want to add the Caption property of the template.#_[C#]_
-
-	
-
-
+You can use the same approach to add the child templates. Additionally, you may want to add the Caption property of the template.
 
 {{source=..\SamplesCS\GridView\SaveLoadLayout\Advanced.cs region=SerializationMetadataChildTemplates}} 
 {{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataChildTemplates}} 
@@ -97,16 +76,9 @@ Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewT
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Since the Columns property points to a complex object, you should set the DesignerSerializationVisibilityAttribute attribute to Content. In this way, the serialization engine will automatically detect that Columns points to a collection and will enumerate its items. Further, for each column you should define the properties to be stored in the XML output. In the following snippet the serialized properties are UniqueName and Width. By specifying the GridViewDataColumn type you tell the serializer that this instruction should be considered each time an object of this type is found. Please note that the DesignerSerializationVisibilityAttribute attribute is set to Visibility, because the value of the property should be serialized.#_[C#]_
-
-	
-
-
+Since the Columns property points to a complex object, you should set the DesignerSerializationVisibilityAttribute attribute to Content. In this way, the serialization engine will automatically detect that Columns points to a collection and will enumerate its items. Further, for each column you should define the properties to be stored in the XML output. In the following snippet the serialized properties are UniqueName and Width. By specifying the GridViewDataColumn type you tell the serializer that this instruction should be considered each time an object of this type is found. Please note that the DesignerSerializationVisibilityAttribute attribute is set to Visibility, because the value of the property should be serialized.
 
 {{source=..\SamplesCS\GridView\SaveLoadLayout\Advanced.cs region=SerializationMetadataGridViewDataColumn}} 
 {{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataGridViewDataColumn}} 
@@ -124,16 +96,10 @@ Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(GridViewD
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
 
-
-
-Further, you may want to save information concerning grouping, sorting, filtering. Here is a sample snippet:#_[C#]_
-
-	
-
-
+Further, you may want to save information concerning grouping, sorting, filtering. Here is a sample snippet:
 
 {{source=..\SamplesCS\GridView\SaveLoadLayout\Advanced.cs region=SerializationMetadataOperations}} 
 {{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=SerializationMetadataOperations}} 
@@ -170,7 +136,4 @@ Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDes
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

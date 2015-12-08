@@ -10,10 +10,6 @@ position: 1
 
 # Editing Behavior
 
-
-
-## 
-
 To begin editing using the mouse:
 
 1. Select a row
@@ -24,7 +20,7 @@ To begin editing using the mouse:
 
 To edit using the keyboard:
 
-* Depending of the value of __RadGridView.BeginEditMode__property, start editing by pressing __F2, Enter__or by any __keystroke__.
+* Depending of the value of __RadGridView.BeginEditMode__ property, start editing by pressing __F2, Enter__ or by any __keystroke__.
 
 * Press __Escape__ to cancel editing or __Enter__ to confirm the new value.
 

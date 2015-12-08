@@ -35,13 +35,11 @@ You can use the following properties to change the behavior of the StripView
 {{source=..\SamplesVB\PageView\StripView.vb region=scrollingAndOverflow}} 
 
 ````C#
-
 RadPageViewStripElement stripElement = (RadPageViewStripElement)this.radPageView1.ViewElement;
 stripElement.StripButtons = StripViewButtons.All;
 
 ````
 ````VB.NET
-
 Dim stripElement As RadPageViewStripElement = DirectCast(Me.radPageView1.ViewElement, RadPageViewStripElement)
 stripElement.StripButtons = StripViewButtons.All
 

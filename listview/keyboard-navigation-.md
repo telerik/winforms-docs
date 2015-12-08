@@ -28,17 +28,10 @@ To enable this functionality a single property setting is needed:
 
 ````C#
 radListView1.KeyboardSearchEnabled = true;
-//#End Region
-//#region KeyboardSearchResetInterval
-radListView1.KeyboardSearchResetInterval = 200;
-//
 
 ````
 ````VB.NET
 RadListView1.KeyboardSearchEnabled = True
-'#End Region
-'#region KeyboardSearchResetInterval
-RadListView1.KeyboardSearchResetInterval = 200
 
 ````
 
@@ -51,7 +44,6 @@ Another property of interest is the __KeyboardSearchResetInterval__. It is used 
 
 ````C#
 radListView1.KeyboardSearchResetInterval = 200;
-//
 
 ````
 ````VB.NET
