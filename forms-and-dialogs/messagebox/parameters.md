@@ -48,47 +48,47 @@ The Show method displays a RadMessageBox. It returns a DialogResult value and ha
 * __Buttons__ - One of the MessageBoxButtons enumeration values that specifies which buttons to display in the message box:
             
 
-* AbortRetryIgnore
+	* AbortRetryIgnore
 
-* OK
+	* OK
 
-* OKCancel
+	* OKCancel
 
-* RetryCancel
+	* RetryCancel
 
-* YesNo
+	* YesNo
 
-* YesNoCancel
+	* YesNoCancel
 
 * __Icon__ - One of the RadMessageIcon enumeration values that specifies which icon to display in the message box or a custom Bitmap icon that will be displayed:
             
 
-* RadMessageIcon.None
+	* RadMessageIcon.None
 
-* RadMessageIcon.Info
+	* RadMessageIcon.Info
 
-* RadMessageIcon.Question
+	* RadMessageIcon.Question
 
-* RadMessageIcon.Exclamation
+	* RadMessageIcon.Exclamation
 
-* RadMessageIcon.Error
+	* RadMessageIcon.Error
 
 * __defaultBtn__ - One of the MessageBoxDefaultButton enumeration values the specifies the default button for the message box:            
 
-* MessageBoxDefaultButton.Button1
+	* MessageBoxDefaultButton.Button1
 
-* MessageBoxDefaultButton.Button2
+	* MessageBoxDefaultButton.Button2
 
-* MessageBoxDefaultButton.Button2
+	* MessageBoxDefaultButton.Button2
 
 * __Rtl__ - RightToLeft settings:
             
 
-* RightToLeft.No
+	* RightToLeft.No
 
-* RightToLeft.Yes
+	* RightToLeft.Yes
 
-* RightToLeft.Inherit
+	* RightToLeft.Inherit
 
 ## Details Section
 

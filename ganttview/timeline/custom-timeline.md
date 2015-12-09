@@ -17,7 +17,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 ## 
 
-1. First you need to set the *TimelineRange* property of the gantt view graphical element to Custom. If you want you can override and modify the default views as well but for this example we will use the Custom value. 
+1\. First you need to set the *TimelineRange* property of the gantt view graphical element to Custom. If you want you can override and modify the default views as well but for this example we will use the Custom value. 
 
 
 {{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=TimeRangeCustom}} 
@@ -35,7 +35,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 {{endregion}} 
  
 
-1. Next you need to create a custom timeline behavior class and assign it to the graphical view. In this class you will add the logic for the new decades view. 
+2\. Next you need to create a custom timeline behavior class and assign it to the graphical view. In this class you will add the logic for the new decades view. 
 
 {{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=CustomBehavior}} 
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=CustomBehavior}} 
@@ -52,7 +52,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineBehavior = New De
 {{endregion}} 
 
  
-1. Now you can fill the class with the code that will create the view. You should note that because we want to preserve the built-in views throughout the example we will check whether the time range is Custom and only handle this case.
+3\. Now you can fill the class with the code that will create the view. You should note that because we want to preserve the built-in views throughout the example we will check whether the time range is Custom and only handle this case.
 
 * First you have to override the *AdjustedTimelineStart* and *AdjustedTimelineEnd* properties. What these properties do is to enlarge the timeline start and end to allow only whole timeline cells to be displayed. Here is an example. Imagine you use a view with quarters and your *TimelineStart* property is set to 15.05.2013. This date is somewhere in the middle of the year’s second quarter. The *AdjustedTimelineStart* property takes this date and the fact you use quarters and returns an adjusted date which is the actual start of the quarter. In this particular case the property will return 03.04.2013 which is the start date of the quarter that contains the *TimelineStart* date. The *AdjustedTimelineEnd* property does the same for the end of the timeline. For the decades view this properties will adjust the start and end dates to years: 
 

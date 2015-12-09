@@ -33,25 +33,25 @@ The following tutorial demonstrates configuring __RadStatusStrip__ at design-tim
             
 6\. Click the downward arrow on the __Add__ split button. Add the following elements:
             
-1\. __RadImageButtonElement__
+1. __RadImageButtonElement__
 
-2\. __CommandBarSeparator__
+1. __CommandBarSeparator__
 
-3\. __RadProgressBarElement__
+1. __RadProgressBarElement__
 
-4\. __RadButtonElement__
+1. __RadButtonElement__
 
 7\. Click __OK__ to close the __Rad Item Collection Editor.__
 
 8\. Use the Properties window to set the following properties to the elements above:
 
-1\. __RadImageButtonElement: Name__ = "imgStatus", __DisplayStyle__ = "Image"
+1. __RadImageButtonElement: Name__ = "imgStatus", __DisplayStyle__ = "Image"
                 
-2\. __CommandBarSeparator__. *There are no properties to set for the separator element.*
+1. __CommandBarSeparator__. *There are no properties to set for the separator element.*
 
-3\. __RadProgressBarElement__: __Name__ = "pbStatus"
+1. __RadProgressBarElement__: __Name__ = "pbStatus"
                 
-4\. __RadButtonElement: Name__ = "btnStatus", __Text__ = "Go!", __Spring__ = __true__.
+1. __RadButtonElement: Name__ = "btnStatus", __Text__ = "Go!", __Spring__ = __true__.
                 
 
 9\. Double-click "btnStatus" to create a __Click__ event handler. Add the code below to replace the event handler. This code block bumps the list control selected index until the end of the list is reached, and then moves the index back to the first item in the list.
@@ -85,21 +85,21 @@ End Sub
 
 10\. In the __Properties Window__ for the __RadListControl:__
 
-1\. Set the __Dock__ property to __Fill__.
+1. Set the __Dock__ property to __Fill__.
                 
 
-2\. Select the __Items__ property ellipses. This will open the __RadItem Collection Editor__.
+1. Select the __Items__ property ellipses. This will open the __RadItem Collection Editor__.
                 
 
-3\. Click the __Add__ button. Set the __RadListDataItem.Text__ property to "Music", __TextImageRelation__ to ImageBeforeText and __Image__ to one of the images previously set as project resources.
+1. Click the __Add__ button. Set the __RadListDataItem.Text__ property to "Music", __TextImageRelation__ to ImageBeforeText and __Image__ to one of the images previously set as project resources.
                 
 
-4\. Click the __Add__ button. Set the __RadListDataItem.Text__ property to "Pictures", __TextImageRelation__ to ImageBeforeText and __Image__ to one of the images previously set as project resources.
+1. Click the __Add__ button. Set the __RadListDataItem.Text__ property to "Pictures", __TextImageRelation__ to ImageBeforeText and __Image__ to one of the images previously set as project resources.
                 
-5\. Click the __Add__ button. Set the __RadListDataItem.Text__ property to "Email", __TextImageRelation__ to ImageBeforeText and __Image__ to one of the images previously set as project resources.
+1. Click the __Add__ button. Set the __RadListDataItem.Text__ property to "Email", __TextImageRelation__ to ImageBeforeText and __Image__ to one of the images previously set as project resources.
                 
 
-6\. Click __OK__ to close the __RadItem Collection Editor__.
+1. Click __OK__ to close the __RadItem Collection Editor__.
                 
 
 11\. In the __Properties Window__ for the __RadListControl__ select the __Events__ button.
@@ -108,7 +108,7 @@ End Sub
 12\. Locate and double-click the __RadListControl.SelectedIndexChanged__ event to create an event handler.
             
 
-13\. Paste the following code to the __SelectedIndexChanged__ event handler.  * The code retrieves the selected item and assigns the text and image for the selected item to the status bar label and image elements. Then the progress bar element mimics an operation against the newly selected item. *
+13\. Paste the following code to the __SelectedIndexChanged__ event handler.  *The code retrieves the selected item and assigns the text and image for the selected item to the status bar label and image elements. Then the progress bar element mimics an operation against the newly selected item.*
  
 
 {{source=..\SamplesCS\Forms And Dialogs\StatusStripGettingStarted.cs region=selectedIndexChanged}} 

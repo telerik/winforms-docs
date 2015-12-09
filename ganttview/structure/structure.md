@@ -1,5 +1,5 @@
 ---
-title: Structure
+title: Overview
 page_title: Structure | UI for WinForms Documentation
 description: Structure
 slug: winforms/ganttview-/structure
@@ -19,28 +19,28 @@ The main elements of the structure of RadGanttView are displayed below:
 * RadGanttView
             
 
-* RadGanttViewElement
+	* RadGanttViewElement
                 
 
-* GanttViewTextViewElement (virtualized container)
+		* GanttViewTextViewElement (virtualized container)
                     
 
-* GanttViewTextItemElement
+			* GanttViewTextItemElement
                         
 
-* GanttViewTextViewCellElement
+				* GanttViewTextViewCellElement
                             
 
-* GanttViewGraphicalViewElement (virtualized container)
+		* GanttViewGraphicalViewElement (virtualized container)
                     
 
-* GanttViewTimelineContainer (virtualized container)
+			* GanttViewTimelineContainer (virtualized container)
                         
 
-* GanttGraphicalViewBaseItemElement
+			* GanttGraphicalViewBaseItemElement
                         
 
-* GanttGraphicalViewBaseTaskElement
+				* GanttGraphicalViewBaseTaskElement
                             
 ![ganttview-structure 001](images/ganttview-structure001.png)
 

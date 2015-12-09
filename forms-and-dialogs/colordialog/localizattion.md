@@ -1,5 +1,5 @@
 ---
-title: Localizattion
+title: Localization
 page_title: Localizattion | UI for WinForms Documentation
 description: Localizattion
 slug: winforms/forms-and-dialogs/colordialog/localizattion
@@ -8,10 +8,8 @@ published: True
 position: 4
 ---
 
-# Localizattion
-
-
-
+# Localization
+ 
 ## 
 
 To localize RadColorDialog form to display text and messages in a specific language:

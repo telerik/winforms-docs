@@ -18,7 +18,7 @@ To add a __ShapedForm__ to your project:
 
 1\. Create a new Windows Application in Visual Studio.
 
-2\. Make sure your project includes a reference to __Telerik.WinControls__and __Telerik.WinControls.UI__ libraries.
+2\. Make sure your project includes a reference to __Telerik.WinControls__ and __Telerik.WinControls.UI__ libraries.
 			
 
 >note You can add these references automatically by adding any RadControl to the form.
@@ -31,13 +31,13 @@ To add a __ShapedForm__ to your project:
 
 5\. __If you are working in Visual Basic:__
 
-6\. Click the __Show All Files__ button in Solution Explorer.
+1. Click the __Show All Files__ button in Solution Explorer.
 
-7\. Expand the Form1.vb node in Solution Explorer. 
+1. Expand the Form1.vb node in Solution Explorer. 
 
-8\. Open the Form1.Designer.vb file by double-clicking it.
+1. Open the Form1.Designer.vb file by double-clicking it.
 
-9\. Change the declaration in the Form1.Designer.vb file so that it derives from the __Telerik.WinControls.UI.ShapedForm__ class: 
+1. Change the declaration in the Form1.Designer.vb file so that it derives from the __Telerik.WinControls.UI.ShapedForm__ class: 
       			
 #### Changing WinForms form to Telerik ShapedForm 
 

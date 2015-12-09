@@ -5,7 +5,7 @@ description: Printing Events
 slug: winforms/ganttview-/printing-support/printing-events
 tags: printing,events
 published: True
-position: 0
+position: 1
 ---
 
 # Printing Events

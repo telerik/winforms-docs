@@ -24,9 +24,9 @@ Changing the base class of a standard Windows Form to RadForm in C#:
 
 1. Make sure that your project includes references to the following assemblies:
 
-1. Telerik.WinControls
-
-1. Telerik.WinControls.UI
+	1. Telerik.WinControls
+	
+	1. Telerik.WinControls.UI
 
 1. Right-click the default form created in the project and select the __View Code__ option.
             
@@ -57,7 +57,7 @@ Changing the base class of a standard Windows Form to RadForm in VB.NET:
     		Inherits Telerik.WinControls.UI.RadForm
 	````
 
-	Return to the __Design View__ of the form. Visual Studio will repaint the form and the __ControlDefault__ (Office2007Blue)__ theme will be applied to the form. __RadForm__ is ready for use:
+Return to the __Design View__ of the form. Visual Studio will repaint the form and the __ControlDefault (Office2007Blue)__ theme will be applied to the form. __RadForm__ is ready for use:
 
 	![forms-and-dialogs-form-getting-started 001](images/forms-and-dialogs-form-getting-started001.png)
 

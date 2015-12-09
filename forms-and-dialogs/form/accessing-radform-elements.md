@@ -9,10 +9,8 @@ position: 2
 ---
 
 # Accessing RadForm Elements
-
-
-
-The __RadForm__is build of a __RadFormTitleBarElement__, __FormBorderPrimitive__ and a __FormImageBorderPrimitive.__ The following topic demonstrates how to access and modify these elements.
+ 
+The __RadForm__ is build of a __RadFormTitleBarElement__, __FormBorderPrimitive__ and a __FormImageBorderPrimitive.__ The following topic demonstrates how to access and modify these elements.
 
 ## Accessing the RadTitleBarElement
 

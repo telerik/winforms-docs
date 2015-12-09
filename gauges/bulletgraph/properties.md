@@ -5,7 +5,7 @@ description: Properties
 slug: winforms/gauges/bulletgraph/properties
 tags: properties
 published: True
-position: 2
+position: 3
 ---
 
 # Properties
