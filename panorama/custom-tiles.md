@@ -11,9 +11,7 @@ position: 8
 # Custom Tiles
 
 This article demonstrates how you can create custom tiles. The bellow sample code adds four elements to the tile. The result is shown in figure 1.
->caption Figure 1: Custom Title.
-
-![panorama-custom-tiles 001](images/panorama-custom-tiles001.png)
+>caption Figure 1: Custom Title.<br>![panorama-custom-tiles 001](images/panorama-custom-tiles001.png)
 
 ## 
 

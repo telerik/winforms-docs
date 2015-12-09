@@ -71,17 +71,17 @@ exporter.RunExport("C:\ExportedFile.xlsx", renderer)
 
 * __SheetMaxRows__: Тhe exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this __SheetMaxRows__  property. Available options are:
 
-* __1048576__: Max rows for Excel 2007 and above
+  * __1048576__: Max rows for Excel 2007 and above
 
-* __65536 (default)__: Max rows for previous versions of Excel. This is the default setting.
+  * __65536 (default)__: Max rows for previous versions of Excel. This is the default setting.
 
 * __SheetName__: Defines the sheet name of the sheet to export to. If your data is large enough to be split on more than one sheets, then the export method adds index to the names of the next sheets.
 
 * __FileExportMode__: This property determines whether the data will be exported into an existing or a new file. If new is chosen and such exists it will be overridden. Available options are:
 
-* __NewSheetInExistingFile__: This option will create a new sheet in an already existing file.
+  * __NewSheetInExistingFile__: This option will create a new sheet in an already existing file.
 
-* __CreateOrOverrideFile__: Creates new or overrides an existing file. __ExportChildItemsGrouped:__ Gets or sets a value indicating whether to export child items grouped.
+  * __CreateOrOverrideFile__: Creates new or overrides an existing file. __ExportChildItemsGrouped:__ Gets or sets a value indicating whether to export child items grouped.
 
 * __ExportDescriptions:__ Gets or sets a value indicating whether to export item descriptions.
 
@@ -93,11 +93,11 @@ exporter.RunExport("C:\ExportedFile.xlsx", renderer)
 
 * __CellFormatting__: This event is used to format the cells to be exported. The event arguments provide:
 
-* __Item__: Gives you access to the currently exported item.
+  * __Item__: Gives you access to the currently exported item.
 
-* __ExportCell__: Allows you to set the styles of the exported cell.
+  * __ExportCell__: Allows you to set the styles of the exported cell.
 
-* __RowIndex__: The index of the currently exported row. Here is an example of formatting the exported TreeView:
+  * __RowIndex__: The index of the currently exported row. Here is an example of formatting the exported TreeView:
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridExportCode.cs region=Formatting}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridExportCode.vb region=Formatting}} 

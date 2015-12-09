@@ -63,8 +63,8 @@ Here is a list of the supported features:
 
 * Support for multiple data sources: 
 
-* Support for XMLA access to OLAP Cube.
+  * Support for XMLA access to OLAP Cube.
 
-* Support for ADOMD access to OLAP Cube.
+  * Support for ADOMD access to OLAP Cube.
 
-* Support for local sources that implement the IEnumerable interface.
+  * Support for local sources that implement the IEnumerable interface.

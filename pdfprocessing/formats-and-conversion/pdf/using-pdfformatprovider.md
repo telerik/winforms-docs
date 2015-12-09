@@ -81,7 +81,6 @@ Using output As Stream = File.OpenWrite("sample.pdf")
     Dim document As RadFixedDocument = CreateRadFixedDocument()
     provider.Export(document, output)
 End Using
-'
 
 ````
 

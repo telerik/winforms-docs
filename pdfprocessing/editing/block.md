@@ -137,7 +137,6 @@ The __Block__ class has some properties and methods that affect how it will be r
 * __IndentAfterBullet__ – The indent size after the bullet element.
 
 * __TextProperties__ and __GraphicProperties__ Responsible for text and graphic properties. For more information see the [Text and Graphic Properties]({%slug winforms/pdfprocessing/editing/text-and-graphic-properties%}) article.
-                
 
 * __SaveTextProperties():__ Saves the TextProperties. It returns an IDisposable object which when disposed calls __RestoreTextProperties()__ and can be used in using statement.
                 
@@ -218,7 +217,7 @@ The __Split()__ method of a Block returns a new Block with the same properties. 
 
 The code in __Example 6__ splits a block in two. The first will contains text "Hello" and the second – "RadPdfProcessing!".
 
-#### Example 5: Measure Block
+#### Example 6: Split a Block
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Block1.cs region=radpdfprocessing-editing-block_5}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Block1.vb region=radpdfprocessing-editing-block_5}} 

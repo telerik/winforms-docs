@@ -107,8 +107,6 @@ End Using
 
 # See Also
 
- * [RadFixedDocument API Reference](http://www.telerik.com/help/winformsallmembers_t_telerik_windows_documents_fixed_model_radfixeddocument.html)
-
  * [RadFixedDocument]({%slug winforms/pdfprocessing/model/radfixeddocument%})
 
  * [RadFixedPage]({%slug winforms/pdfprocessing/model/radfixedpage%})

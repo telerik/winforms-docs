@@ -547,7 +547,10 @@ navigation:
         position: 4
     pdfprocessing/formats-and-conversion/pdf:
         title: Pdf
-        position: 0	
+        position: 0
+    pdfprocessing/formats-and-conversion/plain-text:
+        title: Plain Text
+        position: 1		
     pdfprocessing/editing:
         title: Editing
         position: 5

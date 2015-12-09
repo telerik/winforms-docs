@@ -75,11 +75,6 @@ void radPdfViewer1_DocumentLoaded(object sender, EventArgs e)
 Private Sub radPdfViewer1_DocumentLoaded(sender As Object, e As EventArgs)
     RadMessageBox.Show("The document was loaded.")
 End Sub
- Region
-Private Sub RadButton1_Click(sender As System.Object, e As System.EventArgs) Handles RadButton1.Click
-    '#Region "PrintMethods"
-    Me.RadPdfViewer1.Print()
-    Me.RadPdfViewer1.PrintPreview()
 
 ````
 

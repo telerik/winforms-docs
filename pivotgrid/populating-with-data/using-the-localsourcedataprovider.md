@@ -27,55 +27,6 @@ dataProvider.ItemsSource = dataset.Orders;
 ````VB.NET
 Dim dataProvider As New LocalDataSourceProvider()
 dataProvider.ItemsSource = dataset.Orders
-'  #endregion
-' #region RowGroupDescriptions
-dataProvider.BeginInit()
-dataProvider.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
- .PropertyName = "OrderDate", _
- .[Step] = DateTimeStep.Year, _
- .GroupComparer = New GroupNameComparer() _
-})
-dataProvider.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
- .PropertyName = "OrderDate", _
- .[Step] = DateTimeStep.Quarter, _
- .GroupComparer = New GroupNameComparer() _
-})
-dataProvider.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
- .PropertyName = "OrderDate", _
- .[Step] = DateTimeStep.Month, _
- .GroupComparer = New GroupNameComparer() _
-})
-dataProvider.EndInit()
-'  #endregion
-'   #region ColumnGroupDescriptions
-dataProvider.ColumnGroupDescriptions.Add(New PropertyGroupDescription() With { _
- .PropertyName = "EmployeeID", _
- .GroupComparer = New GrandTotalComparer() _
-})
-'  #endregion
-' #region AggregateDescriptions
-dataProvider.BeginInit()
-dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
- .PropertyName = "Freight", _
- .AggregateFunction = AggregateFunctions.Sum _
-})
-dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
- .PropertyName = "Freight", _
- .AggregateFunction = AggregateFunctions.Average _
-})
-dataProvider.EndInit()
-'  #endregion
-'   #region FilterDescriptions
-dataProvider.FilterDescriptions.Add(New PropertyFilterDescription() With { _
- .PropertyName = "ShipCountry", _
- .CustomName = "Country" _
-})
-'  #endregion
-'    #region ApplyingDataProvider
-Me.RadPivotGrid1.DataProvider = dataProvider
-'  #endregion
-'#region culture
-dataProvider.Culture = New System.Globalization.CultureInfo("de-DE")
 
 ````
 
@@ -122,36 +73,6 @@ dataProvider.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
  .GroupComparer = New GroupNameComparer() _
 })
 dataProvider.EndInit()
-'  #endregion
-'   #region ColumnGroupDescriptions
-dataProvider.ColumnGroupDescriptions.Add(New PropertyGroupDescription() With { _
- .PropertyName = "EmployeeID", _
- .GroupComparer = New GrandTotalComparer() _
-})
-'  #endregion
-' #region AggregateDescriptions
-dataProvider.BeginInit()
-dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
- .PropertyName = "Freight", _
- .AggregateFunction = AggregateFunctions.Sum _
-})
-dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
- .PropertyName = "Freight", _
- .AggregateFunction = AggregateFunctions.Average _
-})
-dataProvider.EndInit()
-'  #endregion
-'   #region FilterDescriptions
-dataProvider.FilterDescriptions.Add(New PropertyFilterDescription() With { _
- .PropertyName = "ShipCountry", _
- .CustomName = "Country" _
-})
-'  #endregion
-'    #region ApplyingDataProvider
-Me.RadPivotGrid1.DataProvider = dataProvider
-'  #endregion
-'#region culture
-dataProvider.Culture = New System.Globalization.CultureInfo("de-DE")
 
 ````
 
@@ -171,30 +92,6 @@ dataProvider.ColumnGroupDescriptions.Add(New PropertyGroupDescription() With { _
  .PropertyName = "EmployeeID", _
  .GroupComparer = New GrandTotalComparer() _
 })
-'  #endregion
-' #region AggregateDescriptions
-dataProvider.BeginInit()
-dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
- .PropertyName = "Freight", _
- .AggregateFunction = AggregateFunctions.Sum _
-})
-dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
- .PropertyName = "Freight", _
- .AggregateFunction = AggregateFunctions.Average _
-})
-dataProvider.EndInit()
-'  #endregion
-'   #region FilterDescriptions
-dataProvider.FilterDescriptions.Add(New PropertyFilterDescription() With { _
- .PropertyName = "ShipCountry", _
- .CustomName = "Country" _
-})
-'  #endregion
-'    #region ApplyingDataProvider
-Me.RadPivotGrid1.DataProvider = dataProvider
-'  #endregion
-'#region culture
-dataProvider.Culture = New System.Globalization.CultureInfo("de-DE")
 
 ````
 
@@ -223,18 +120,6 @@ dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With {
  .AggregateFunction = AggregateFunctions.Average _
 })
 dataProvider.EndInit()
-'  #endregion
-'   #region FilterDescriptions
-dataProvider.FilterDescriptions.Add(New PropertyFilterDescription() With { _
- .PropertyName = "ShipCountry", _
- .CustomName = "Country" _
-})
-'  #endregion
-'    #region ApplyingDataProvider
-Me.RadPivotGrid1.DataProvider = dataProvider
-'  #endregion
-'#region culture
-dataProvider.Culture = New System.Globalization.CultureInfo("de-DE")
 
 ````
 
@@ -254,12 +139,6 @@ dataProvider.FilterDescriptions.Add(New PropertyFilterDescription() With { _
  .PropertyName = "ShipCountry", _
  .CustomName = "Country" _
 })
-'  #endregion
-'    #region ApplyingDataProvider
-Me.RadPivotGrid1.DataProvider = dataProvider
-'  #endregion
-'#region culture
-dataProvider.Culture = New System.Globalization.CultureInfo("de-DE")
 
 ````
 
@@ -298,9 +177,6 @@ this.radPivotGrid1.DataProvider = dataProvider;
 ````
 ````VB.NET
 Me.RadPivotGrid1.DataProvider = dataProvider
-'  #endregion
-'#region culture
-dataProvider.Culture = New System.Globalization.CultureInfo("de-DE")
 
 ````
 

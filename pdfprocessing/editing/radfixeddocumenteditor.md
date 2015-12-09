@@ -12,7 +12,7 @@ position: 3
 
 __RadFixedDocumentEditor__ is a utility class aiming to allow the creation of [RadFixedDocument]({%slug winforms/pdfprocessing/model/radfixeddocument%}) in a flow-like manner. The editor provides methods that enable the generation of documents which automatically flows to pages.
 
->caution Although RadFixedDocumentEditor and this article operate with classes and concepts for Section, Block, Inline, these classes are different from the ones used in genuine flow editing libraries. RadFixedDocumentEditor ultimately creates a fixed document. If you are trying to create a flow document, try out our[RadWordsProcessing library](d17653ff-fe96-41c5-8739-01671fb45fba)instead.
+>caution Although RadFixedDocumentEditor and this article operate with classes and concepts for Section, Block, Inline, these classes are different from the ones used in genuine flow editing libraries. RadFixedDocumentEditor ultimately creates a fixed document. If you are trying to create a flow document, try out our [RadWordsProcessing library](d17653ff-fe96-41c5-8739-01671fb45fba) instead.
 >
 
 * [Creating RadFixedDocumentEditor](#creating-radfixeddocumenteditor)

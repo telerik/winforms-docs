@@ -65,7 +65,6 @@ FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data);
 ````
 ````VB.NET
 FontsRepository.RegisterFont(fontFamily, fontStyle, fontWeight, data)
-'
 
 ````
 
@@ -89,7 +88,6 @@ bool success = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, 
 ````VB.NET
 Dim font As FontBase
 Dim success As Boolean = FontsRepository.TryCreateFont(fontFamily, fontStyle, fontWeight, font)
-'
 
 ````
 

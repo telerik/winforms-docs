@@ -37,7 +37,6 @@ container.Content.Add(path);
 Dim path As Path = New Path()
 path.Geometry = geometry
 container.Content.Add(path)
-'
 
 ````
 
@@ -58,13 +57,12 @@ path.Geometry = geometry;
 ````VB.NET
 Dim path As Path = container.Content.AddPath()
 path.Geometry = geometry
-'
 
 ````
 
 {{endregion}} 
 
->note There are other methods that allow adding a path to a document. They can be taken advantage of when using[FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}).
+>note There are other methods that allow adding a path to a document. They can be taken advantage of when using [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}).
 >
 
 ## Modifying a Path

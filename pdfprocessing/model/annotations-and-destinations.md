@@ -47,7 +47,6 @@ page.Annotations.Add(linkWithDestination);
 ````VB.NET
 Dim linkWithDestination As Link = New Link(destination)
 page.Annotations.Add(linkWithDestination)
-'
 
 ````
 
@@ -68,7 +67,6 @@ page.Annotations.Add(linkWithAction);
 ````VB.NET
 Dim linkWithAction As Link = New Link(action)
 page.Annotations.Add(linkWithAction)
-'
 
 ````
 
@@ -130,7 +128,6 @@ location.Zoom = 4
 location.Page = secondPage
 Dim link = firstPage.Annotations.AddLink(location)
 link.Rect = New Rect(10, 10, 50, 50)
-'
 
 ````
 
@@ -177,7 +174,6 @@ Dim uriAction As UriAction = New UriAction()
 uriAction.Uri = New Uri("http://www.telerik.com")
 Dim uriLink = firstPage.Annotations.AddLink(uriAction)
 uriLink.Rect = New Rect(70, 10, 50, 50)
-'
 
 ````
 

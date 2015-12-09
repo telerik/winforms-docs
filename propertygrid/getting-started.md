@@ -59,7 +59,9 @@ Additionally, since the toolbox consists of a __StackLayoutPanel__, is supports 
 #### Add element to toolbox
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=AddElementToToolbox1}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=AddElementToToolbox1}}````C#
+{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=AddElementToToolbox1}}
+
+````C#
 RadButtonElement clearFiltering = new RadButtonElement();
 clearFiltering.Text = "Clear";
 clearFiltering.MinSize = new System.Drawing.Size(25, 22);
@@ -75,8 +77,6 @@ clearFiltering.StretchHorizontally = False
 AddHandler clearFiltering.Click, AddressOf clearFiltering_Click
 
 ````
-
-
 
 {{endregion}}
 
@@ -173,7 +173,7 @@ There are also four properties that allow you to control the expand/collapse ima
 
 The selection of the items is controlled by either setting a certain item to the __SelectedGridItem__ property, or by calling the __Select()__ method of an item.
 
-Accessing and modifying the default context menu, can be achieved by accessing the __RadContextMenu__ property of the control. For more information on how to work with menu items, please refer to our [Menu]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem%}) section. ![propertygrid-getting-started 002](images/propertygrid-getting-started002.png)
+Accessing and modifying the default context menu, can be achieved by accessing the __RadContextMenu__ property of the control. For more information on how to work with menu items, please refer to our [Menu]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem%}) section. <br>![propertygrid-getting-started 002](images/propertygrid-getting-started002.png)
 
 There are a few properties that you can set in order to change the item appearance:  
 
@@ -181,6 +181,6 @@ There are a few properties that you can set in order to change the item appearan
 
 * __ItemSpacing__ - sets the spacing between the items.
 
-* __ItemIndent__ - sets the indent space in the beginning of the items.![propertygrid-getting-started 003](images/propertygrid-getting-started003.png)
+* __ItemIndent__ - sets the indent space in the beginning of the items.<br>![propertygrid-getting-started 003](images/propertygrid-getting-started003.png)
 
 At the end, if you want to expand all groups automatically, you can set the __AutoExpandGroups__ to *true* (which is also the default setting).

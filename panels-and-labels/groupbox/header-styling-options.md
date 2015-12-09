@@ -10,10 +10,6 @@ position: 0
 
 # Header Styling Options
 
-
-
-##  Properties
-
 ##  HeaderPosition
 
 The HeaderPosition can be set to *Top*, *Right*, *Bottom*, and *Left*:<br>![panels-and-labels-groupbox-header-styling-options 001](images/panels-and-labels-groupbox-header-styling-options001.png)

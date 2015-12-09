@@ -40,6 +40,25 @@ End Using
 
 {{endregion}}
 
+With the __EncodedImageData__ class you can create an __ImageSource__ with encoded image data. This way the image quality will not be reduced on import.
+   
+#### Example 2: Create ImageSource from Encoded Image Data__
+
+{{source=..\SamplesCS\PdfProcessing\Model\PdfProcessingModelImageSource.cs region=radpdfprocessing-model-imagesource_2}} 
+{{source=..\SamplesVB\PdfProcessing\Model\PdfProcessingModelImageSource.vb region=radpdfprocessing-model-imagesource_2}} 
+
+````C#
+            
+EncodedImageData imageData = new EncodedImageData(imageBytes, 8, 655, 983, ColorSpaceNames.DeviceRgb, new string[] { Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Filters.PdfFilterNames.DCTDecode });
+
+````
+````VB.NET
+Dim imageData As New EncodedImageData(imageBytes, 8, 655, 983, ColorSpaceNames.DeviceRgb, New String() {Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Filters.PdfFilterNames.DCTDecode})
+
+````
+
+{{endregion}}
+
 ## Extensions
 
 __RadPdfProcessing__ exposes an extension method allowing to convert every BitmapSource to an ImageSource that can be used for the creation of   [FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}) elements. __Example 2__ shows how you can use the ToImageSource() extension method over a previously created bitmap.

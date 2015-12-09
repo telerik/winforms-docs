@@ -152,7 +152,7 @@ Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.Fi
 
 ![panels-and-labels-radcollapsiblepanel-methods-and-properties 007](images/panels-and-labels-radcollapsiblepanel-methods-and-properties007.png)
 
-__ShowHeaderLine__ - If *true*, a line will be displayed in the header which will fill the available space, otherwise it will not be displayed.<br>![panels-and-labels-radcollapsiblepanel-methods-and-properties 008](images/panels-and-labels-radcollapsiblepanel-methods-and-properties008.png)![panels-and-labels-radcollapsiblepanel-methods-and-properties 009](images/panels-and-labels-radcollapsiblepanel-methods-and-properties009.png)
+__ShowHeaderLine__ - If *true*, a line will be displayed in the header which will fill the available space, otherwise it will not be displayed.<br>![panels-and-labels-radcollapsiblepanel-methods-and-properties 008](images/panels-and-labels-radcollapsiblepanel-methods-and-properties008.png)<br>![panels-and-labels-radcollapsiblepanel-methods-and-properties 009](images/panels-and-labels-radcollapsiblepanel-methods-and-properties009.png)
 
 __HorizontalHeaderAlignment__ -Determines how the elements in the header to be aligned when it is in a horizontal position:
 

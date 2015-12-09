@@ -33,7 +33,6 @@ clipping.Clip = new RectangleGeometry(new Rect(5, 5, 50, 50));
 ````VB.NET
 Dim clipping As Telerik.Windows.Documents.Fixed.Model.Clipping = New Telerik.Windows.Documents.Fixed.Model.Clipping()
 clipping.Clip = New RectangleGeometry(New Rect(5, 5, 50, 50))
-'
 
 ````
 
@@ -58,7 +57,6 @@ image.Clipping = clipping;
 ````VB.NET
 Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage(imageSource)
 image.Clipping = clipping
-'
 
 ````
 

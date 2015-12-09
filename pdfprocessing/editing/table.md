@@ -359,7 +359,7 @@ When in need of more customization options, you can use the __DrawTable()__ meth
 
 __Example 10__ shows how to draw a rotated table with the help of FixedContentEditor.
 
-#### Example 9: Insert FixedWidth Table
+#### Example 10: Draw a Rotated Table
 
 {{source=..\SamplesCS\PdfProcessing\Editing\Table1.cs region=radpdfprocessing-editing-table_9}} 
 {{source=..\SamplesVB\PdfProcessing\Editing\Table1.vb region=radpdfprocessing-editing-table_9}} 

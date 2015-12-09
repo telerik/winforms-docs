@@ -32,7 +32,7 @@ Orders ON Employees.EmployeeID = Orders.EmployeeID) INNER JOIN
 Products ON [Order Details].ProductID = Products.ProductID)
 ````
 
-And this is how the fields of our custom TableAdapter are arranged:![pivotgrid-design-time-data-binding 004](images/pivotgrid-populating-with-data-design-time-data-binding004.png)
+And this is how the fields of our custom TableAdapter are arranged:<br>![pivotgrid-design-time-data-binding 004](images/pivotgrid-populating-with-data-design-time-data-binding004.png)
 
 Now let’s say we want to see a statistic of how much of each product has each employee sold. Additionally, we want to allow those who preview the statistics to filter the results by country. To do this, we take the following steps:
 

@@ -27,13 +27,13 @@ XmlaDataProvider has several important properties that have to be defined:
 
 * __ConnectionSettings__ - this property is of type XmlaConnectionSettings. It is used to define all needed connection settings through the XmlaConnectionSettings properties:
 
-* __Cube__ - string property defining the exact name of the Cube.
+  * __Cube__ - string property defining the exact name of the Cube.
 
-* __Database__ - string property defining the exact name of the Database.
+  * __Database__ - string property defining the exact name of the Database.
 
-* __ServerAddress__ - string property defining the exact address (with protocol used) of the server.
+  * __ServerAddress__ - string property defining the exact address (with protocol used) of the server.
 
-* __Credentials__ - this property is of type XmlaNetworkCredential and it is used to define the authentication details for the server (if it has any kind of authentication).
+  * __Credentials__ - this property is of type XmlaNetworkCredential and it is used to define the authentication details for the server (if it has any kind of authentication).
 
 * __AggregatesLevel__ - set the position where groups for the aggregates should be placed.
 

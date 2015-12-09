@@ -42,9 +42,9 @@ These properties are used to hold the parameters used for text fragments. The fo
 
 * __UnderlinePattern__: The underline pattern. Two patterns are supported.
 
-* __None__: There is no underline. This is the default value.
-
-* __Single__: The underline is single line.
+  * __None__: There is no underline. This is the default value.
+ 
+  * __Single__: The underline is single line.
 
 * __CharacterSpacing__: The character spacing for text fragments.
 
@@ -56,11 +56,11 @@ These properties are used to hold the parameters used for text fragments. The fo
 
 * __RenderingMode__: The rendering mode for text fragments.
 
-* __BaselineAlignment__: Describes how the baseline for a text-based element is positioned on the vertical axis, relative to the established baseline for text.
+  * __BaselineAlignment__: Describes how the baseline for a text-based element is positioned on the vertical axis, relative to the established baseline for text.
 
-* __Baseline__: A baseline that is aligned at the actual baseline of the containing box.
+  * __Baseline__: A baseline that is aligned at the actual baseline of the containing box.
 
-* __Subscript__: A baseline that is aligned at the subscript position of the containing box.
+  * __Subscript__: A baseline that is aligned at the subscript position of the containing box.
 
 * __Superscript__: A baseline that is aligned at the superscript position of the containing box.
 

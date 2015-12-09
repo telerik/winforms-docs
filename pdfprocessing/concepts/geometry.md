@@ -51,7 +51,6 @@ rectangleGeometry.Rect = new Rect(10, 5, 400, 300);
 ````VB.NET
 Dim rectangleGeometry As RectangleGeometry = New RectangleGeometry()
 rectangleGeometry.Rect = New Rect(10, 5, 400, 300)
-'
 
 ````
 
@@ -100,7 +99,6 @@ bezierSegment.Point1 = New Point(105, 50)
 bezierSegment.Point2 = New Point(130, 105)
 bezierSegment.Point3 = New Point(100, 200)
 pathFigure.IsClosed = True
-'
 
 ````
 

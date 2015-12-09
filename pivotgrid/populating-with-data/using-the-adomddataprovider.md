@@ -16,7 +16,7 @@ In this article we will show how to use AdomdDataProvider and use data from OLAP
 
 ADOMD.NET is a Microsoft .NET Framework data provider that is designed to communicate with Microsoft SQL Server Analysis Services. ADOMD.NET uses the XML for Analysis protocol to communicate with analytical data sources by using either TCP/IP or HTTP connections to transmit and receive SOAP requests and responses that are compliant with the XML for Analysis specification.
 
->caution With the current release RadPivotGrid supports only __Microsoft.AnalysisServices.AdomdClient version 10.0__ . You can download it from[here](http://www.microsoft.com/en-us/download/details.aspx?id=30440). After installing it, you will find the Microsoft.AnalysisServices.AdomdClient.dll under *C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\100* .
+>caution With the current release RadPivotGrid supports only __Microsoft.AnalysisServices.AdomdClient version 10.0__ . You can download it from [here](http://www.microsoft.com/en-us/download/details.aspx?id=30440). After installing it, you will find the Microsoft.AnalysisServices.AdomdClient.dll under *C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\100* .
 >
 
 ## AdomdDataProvider
@@ -27,11 +27,11 @@ AdomdDataProvider has several important properties that have to be defined in or
 
 * __ConnectionSettings__ - this property is of type AdomdConnectionSettings and it exposes several properties that are mandatory when connecting to the OLAP Cube:
 
-* __Cube__ - string property defining the exact name of the Cube.
+  * __Cube__ - string property defining the exact name of the Cube.
 
-* __Database__ - string property defining the exact name of the Database.
+  * __Database__ - string property defining the exact name of the Database.
 
-* __ConnectionString__ - string property used to open a database. It is in OLE DB connection string format.
+  * __ConnectionString__ - string property used to open a database. It is in OLE DB connection string format.
 
 >note The OLE DB connection string format has several keys and values connected with equal sign. The different key-value pairs are separated by semicolon characters. Some of the important properties are Provider, Data Source, Integrated Security, etc. Here are some examples for different OLE DB connection strings:
 >

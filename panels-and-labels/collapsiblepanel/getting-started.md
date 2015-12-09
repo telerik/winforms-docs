@@ -32,7 +32,7 @@ And this is how it will look if the panel is expanded <br>![panels-and-labels-co
 
 * __Dock__ - *Fill*
 
-* __DataSource__ - *This is optional, you can read how to bind RadGridView [here]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})*<br>![panels-and-labels-collapsible-panel-getting-started 002](images/panels-and-labels-collapsible-panel-getting-started002.png)
+* __DataSource__ - *This is optional, you can read how to bind RadGridView* [here]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})<br>![panels-and-labels-collapsible-panel-getting-started 002](images/panels-and-labels-collapsible-panel-getting-started002.png)
 
 {{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=ExpandCollapseHandlers}} 
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ExpandCollapseHandlers}} 

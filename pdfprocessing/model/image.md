@@ -12,9 +12,9 @@ position: 4
 
 __Image__ is a content element which contains an image source and represents an image.
 
-* [Inserting an Image](№Inserting_an_Image)
+* Inserting an Image
 
-* [Modifying an Image](№Modifying_an_Image)
+* Modifying an Image
 
 ## Inserting an Image
 
@@ -35,7 +35,6 @@ container.Content.Add(image);
 ````VB.NET
 Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = New Telerik.Windows.Documents.Fixed.Model.Objects.Image()
 container.Content.Add(image)
-'
 
 ````
 
@@ -56,7 +55,6 @@ Telerik.Windows.Documents.Fixed.Model.Objects.Image imageWithSource = container.
 ````VB.NET
 Dim image As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage()
 Dim imageWithSource As Telerik.Windows.Documents.Fixed.Model.Objects.Image = container.Content.AddImage(imageSource)
-'
 
 ````
 

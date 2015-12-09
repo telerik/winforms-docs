@@ -30,7 +30,7 @@ __RadFixedPage__ exposes the following properties:
 
 * __Size__: Property of type Size representing the size of the page.
 
-* __Rotation__: Property of type [Rotation](http://www.telerik.com/help/winforms/t_telerik_windows_documents_fixed_model_data_rotation.html) representing the page rotation.
+* __Rotation__: Property of type Rotation representing the page rotation.
 
 __Example 1__ demonstrates how to create a new __RadFixedPage__ instance and add it to the __Pages__ collection of __RadFixedDocument__.
 

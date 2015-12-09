@@ -25,11 +25,6 @@ radPropertyGrid1.SortOrder = SortOrder.Descending;
 ````VB.NET
 RadPropertyGrid1.PropertySort = PropertySort.Alphabetical
 RadPropertyGrid1.SortOrder = SortOrder.Descending
-' #endregion
-'#region SortDescriptor
-RadPropertyGrid1.EnableSorting = True
-Dim sort = New SortDescriptor("FormattedValue", ListSortDirection.Ascending)
-RadPropertyGrid1.SortDescriptors.Add(sort)
 
 ````
 

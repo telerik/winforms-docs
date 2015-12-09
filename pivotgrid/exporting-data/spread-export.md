@@ -123,9 +123,7 @@ __CellFormatting__: This event is used to format the cells to be exported. The e
 
 This is how the displayed in Fig. 1 pivot grid looks after handling the __CellFormatting__ event.
         
->caption Fig.2 Applying styles
-
-![pivotgrid-export-srpead-export 002](images/pivotgrid-export-srpead-export002.png)
+>caption Fig.2 Applying styles<br>![pivotgrid-export-srpead-export 002](images/pivotgrid-export-srpead-export002.png)
 
 {{source=..\SamplesCS\PivotGrid\PivotSpreadExport.cs region=Events}} 
 {{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=Events}} 
