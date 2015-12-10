@@ -27,7 +27,9 @@ If the caret is inside a table, the dialog would look like this:
 
 ### Caption Preview
 
-On the top there is a preview of the caption text that would be inserted. In this case we haven’t inserted any other captions with label  "Table" so the number that follows is 1. That number represents the number of captions inserted before that one with the same label.Options
+On the top there is a preview of the caption text that would be inserted. In this case we haven’t inserted any other captions with label  "Table" so the number that follows is 1. That number represents the number of captions inserted before that one with the same label.
+
+### Options
 
 You can select different options. The first one is __Label__. From here you can select the label text. By default you have  two options – __Figure__ and __Table__.
 
@@ -35,7 +37,9 @@ You can select different options. The first one is __Label__. From here you can 
 
 You can also specify the __Position__ of the caption - __Above selected item__ or __Below  selected item__
 
-We will have this option only if the caret is in a table or on an image. Otherwise it will be disabled.Creating and deleting labels
+We will have this option only if the caret is in a table or on an image. Otherwise it will be disabled.
+
+### Creating and deleting labels
 
 You can add new labels by using the __New Label…__ dialog and of course delete old ones with the __Delete Label__ button.
 

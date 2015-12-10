@@ -67,7 +67,7 @@ Dim currentInline As Inline = Me.radRichTextEditor1.Document.CaretPosition.GetCu
 
 {{endregion}} 
 
-and then, check if this inline is contained in a range using one of the methods below:#_[C#] _
+and then, check if this inline is contained in a range using one of the methods below: 
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=inRange}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inRange}} 

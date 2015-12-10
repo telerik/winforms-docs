@@ -34,10 +34,10 @@ After defining your new style, it is added to the list gallery and can easily be
 The default list styles come handy, as they require little to no effort on your part, but you can create your own using the API. The functionality you need to use is located in the __DocumentList__, __ListStyle__ and __ListLevelStyle__ classes. Here are the steps you need to follow in order to create a new list:
         
 
-1. Create a new instance of __ListStyle__. You can see that the __ListStyle__ class has a static readonly field __ListLevels__ that keeps the number of levels that the default lists can have (9). It is recommended that you allow your lists to have that many levels for uniformity and for prettier conversion between list types.
+1\. Create a new instance of __ListStyle__. You can see that the __ListStyle__ class has a static readonly field __ListLevels__ that keeps the number of levels that the default lists can have (9). It is recommended that you allow your lists to have that many levels for uniformity and for prettier conversion between list types.
             
 
-1. Define a __ListLevelStyle__ for each level depending on the way you wish your bullet or number to appear, and add it to the __Levels__ property. The customization options are presented by several properties. In the example below, these are specified:
+2\. Define a __ListLevelStyle__ for each level depending on the way you wish your bullet or number to appear, and add it to the __Levels__ property. The customization options are presented by several properties. In the example below, these are specified:
 
 	* __StartingIndex__ – should the list start at 0 or 1 for example;
                 
@@ -50,7 +50,7 @@ The default list styles come handy, as they require little to no effort on your 
 
 	* __Indent__ – affects the indent of each level.
                 
-1. Create a __DocumentList__ and in the constructor pass the appropriate __ListStyle__ object. The __DocumentList__  is the object that knows how the list should look (this is specified by the __ListStyle__ which we pass through the constructor) and which paragraphs are part of it. You add a paragraph to a __DocumentList__ by setting paragraph’s __ListId__ property to the ID of the __DocumentList__.
+3\. Create a __DocumentList__ and in the constructor pass the appropriate __ListStyle__ object. The __DocumentList__  is the object that knows how the list should look (this is specified by the __ListStyle__ which we pass through the constructor) and which paragraphs are part of it. You add a paragraph to a __DocumentList__ by setting paragraph’s __ListId__ property to the ID of the __DocumentList__.
 
 Here as an example of creating a __ListStyle__ and a __DocumentList__ programmatically:
 

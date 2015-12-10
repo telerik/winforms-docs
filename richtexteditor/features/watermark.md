@@ -12,7 +12,7 @@ position: 19
 
 Watermarks are text or pictures that appear behind document text. They often add interest or identify the document status. You can see watermarks in Paged layout mode; they can be printed and exported to all rich-text formats, except HTML.
 
->tip More on the specifics of the format providers you can find[here]({%slug winforms/richtexteditor/import%}).
+>tip More on the specifics of the format providers you can find [here]({%slug winforms/richtexteditor/import%}).
 >
 
 
@@ -77,7 +77,7 @@ Me.radRichTextEditor1.SetWatermarkText(textSettings)
 {{endregion}} 
 
 
-And this is how you create an image watermark and apply it:#_[C#] _
+And this is how you create an image watermark and apply it: 
 
 {{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=image}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=image}} 

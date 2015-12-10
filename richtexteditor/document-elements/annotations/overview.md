@@ -55,16 +55,16 @@ __AnnotationMarkerBase__ and __AnnotationRangeStart__ and __AnnotationRangeEnd__
 * __DeleteBehavior__, __BackspaceBehavior__, __DeleteSelectedBehavior__ - these behaviors determine the behavior of the annotations when a delete is initiated. They are of type __AnnotationMarkerDeleteBehavior__ and can obtain values from the AnnotationMarkerDeleteBehavior enum:
             
 
-* __PreserveAnnotation__ - preserves the annotation, but the content can be modified. Can be used for Backspace and DeleteBehavior;
+	* __PreserveAnnotation__ - preserves the annotation, but the content can be modified. Can be used for Backspace and DeleteBehavior;
                 
 
-* __SelectAnnotation__ - selects the annotation. Can be used for Backspace and DeleteBehavior;
+	* __SelectAnnotation__ - selects the annotation. Can be used for Backspace and DeleteBehavior;
                 
 
-* __RemoveAnnotation__ - removes the annotation, but leaves its content. Can be used for Backspace, Delete and DeleteSelectedBehavior;
+	* __RemoveAnnotation__ - removes the annotation, but leaves its content. Can be used for Backspace, Delete and DeleteSelectedBehavior;
                 
 
-* __SelectAnnotationMarker__ - selects the annotation marker. Can be used for Backspace and DeleteBehavior.
+	* __SelectAnnotationMarker__ - selects the annotation marker. Can be used for Backspace and DeleteBehavior.
                 
 
 ## Annotation Types
@@ -83,28 +83,28 @@ RadDocument has implementations of the following annotation range types (each an
 * __FieldRangeStartBase__ - a base class for the following FieldRange annotations:
             
 
-* __FieldRangeStart__ - the type of annotations inserted along with Fields. More information on fields can be found   [here]({%slug winforms/richtexteditor-/features/fields-and-document-variables/fields%});
+	* __FieldRangeStart__ - the type of annotations inserted along with Fields. More information on fields can be found   [here]({%slug winforms/richtexteditor-/features/fields-and-document-variables/fields%});
                 
 
-* __HyperlinkRangeStart__ - the annotations that surround hyperlinks. The hyperlink functionality is a topic of discussion in [this article]({%slug winforms/richtexteditor-/features/hyperlink%});
+	* __HyperlinkRangeStart__ - the annotations that surround hyperlinks. The hyperlink functionality is a topic of discussion in [this article]({%slug winforms/richtexteditor-/features/hyperlink%});
                 
 
-* __MarkRangeStartBase__ - a base class for the following annotation starts:
+	* __MarkRangeStartBase__ - a base class for the following annotation starts:
                 
 
-* __NoteRangeStartBase__ - a base class for the following annotations:
+		* __NoteRangeStartBase__ - a base class for the following annotations:
                     
 
-* __EndnoteRangeStart__ - the annotations that specify the place in the document where an endnote occurs;
+			* __EndnoteRangeStart__ - the annotations that specify the place in the document where an endnote occurs;
                         
 
-* __FootnoteRangeStart__ - the annotations that specify the place in the document where a footnote is inserted;
+			* __FootnoteRangeStart__ - the annotations that specify the place in the document where a footnote is inserted;
                         
 
-* __NoteReferenceMarkStart__ - the annotation that fulfill the link from a note to the main document.
+		* __NoteReferenceMarkStart__ - the annotation that fulfill the link from a note to the main document.
                     
 
-* __ReadOnlyRangeStart__ - a type of annotations that can be inserted in the document in order to make their content read only.
+	* __ReadOnlyRangeStart__ - a type of annotations that can be inserted in the document in order to make their content read only.
                 
 
 * __PermissionRangeStart__ - the annotation ranges used in [document protection]({%slug winforms/richtexteditor-/features/document-protection%}).
@@ -113,10 +113,10 @@ RadDocument has implementations of the following annotation range types (each an
 * __RevisionRangeStart__ - the annotations used in [track changes]({%slug winforms/richtexteditor-/features/track-changes%}). A base class for the following annotations:
             
 
-* __DeleteRangeStart__ - denotes content that has been deleted when TrackChanges is enabled;
+	* __DeleteRangeStart__ - denotes content that has been deleted when TrackChanges is enabled;
                 
 
-* __InsertRangeStart__ - surround content inserted at a time when TrackChanges has been turned on.
+	* __InsertRangeStart__ - surround content inserted at a time when TrackChanges has been turned on.
                 
 
 ## Serialization

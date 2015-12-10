@@ -637,15 +637,14 @@ navigation:
         position: 1
     richtextbox/features/import-export:
         title: Import/Export
-        position: 10
-    richtexteditor:		
+        position: 10	
     richtexteditor:
         title: RichTextEditor
         position: 40  		
     richtexteditor/getting-started:
         title: Getting Started
         position: 2   
-    richtexteditor/document_elements:
+    richtexteditor/document-elements:
         title: Document Elements
         postion: 4
     richtexteditor/document-elements/annotations:		

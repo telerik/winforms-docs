@@ -125,7 +125,9 @@ Me.radRichTextEditor1.Document = document
 {{endregion}} 
 
 
-Here is a snapshot of the result.![richtexteditor-document-elements-table 001](images/richtexteditor-document-elements-table001.png)
+Here is a snapshot of the result.
+
+![richtexteditor-document-elements-table 001](images/richtexteditor-document-elements-table001.png)
 
 The __RadRichTextEditor__ exposes the following methods that regard the creation or deletion of a table:
         
@@ -168,7 +170,7 @@ You can also use the __InsertTableDialog__, which comes out of the box. To show 
         
 
 >note The __RadRichTextEditorUI__ also uses this dialog.
->
+
 ![richtexteditor-document-elements-table 003](images/richtexteditor-document-elements-table003.png)
 
 >caution Inserting a table through the UI applies to it a __TableGrid style__ , which has a predefined set of borders. However, a table created in code-behind is applied the __TableNormal__ style and does not have predefined borders.
@@ -179,7 +181,7 @@ A table could be deleted or modified via the Table Tools' contextual tab __Layou
 
 ## Formatting a Table at Runtime via RadRichTextEditor's API
 
->tip To learn more about the __Formatting API__ of the __RadRichTextEditor__ , read[this topic]({%slug winforms/richtexteditor-/getting-started/formatting-api%}).
+>tip To learn more about the __Formatting API__ of the __RadRichTextEditor__ , read [this topic]({%slug winforms/richtexteditor-/getting-started/formatting-api%}).
 >
 
 

@@ -39,7 +39,7 @@ It is also possible to apply a style using the Styles dialog as shown in the pic
 
 Other than using the API to declare a style, you can also use the UI.
 
->tip More info on how to create a style from code can be found in the[Styles article]({%slug winforms/richtexteditor/features/styles%})
+>tip More info on how to create a style from code can be found in the [Styles article]({%slug winforms/richtexteditor/features/styles%})
 >
 
 ![richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-applying-styles 003](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-applying-styles003.png)

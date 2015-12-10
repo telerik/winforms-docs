@@ -1,5 +1,5 @@
 ---
-title: Repalce Default Dialogs
+title: Replace Default Dialogs
 page_title: Repalce Default Dialogs | UI for WinForms Documentation
 description: Repalce Default Dialogs
 slug: winforms/richtexteditor-/how-to/repalce-default-dialogs

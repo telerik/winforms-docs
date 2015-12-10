@@ -13,6 +13,7 @@ position: 1
 
 
 Bibliographic references represent links (in the form of text) to documents, books, films and everything that can be cited in a Word document. You can manage those in __RadRichTextEditor__ by going to References -> Citations & Bibliography. It looks like this:
+
 ![richtexteditor-features-references-biliographic-references 001](images/richtexteditor-features-references-biliographic-references001.png)
 
 This article covers:
@@ -69,7 +70,8 @@ You can insert a bibliography on the caret position using the following button:
 ![richtexteditor-features-references-biliographic-references 004](images/richtexteditor-features-references-biliographic-references004.png)
 
 When you click on the "Insert Citation" drop down button you will get a list with all the available sources. Clicking on one will insert a Citation in the document. At the bottom there is another button that allows you to create new __BibliographicSource__ object (it shows the __AddNewBibliographicSource__ dialog):
- ![richtexteditor-features-references-biliographic-references 005](images/richtexteditor-features-references-biliographic-references005.png)
+
+![richtexteditor-features-references-biliographic-references 005](images/richtexteditor-features-references-biliographic-references005.png)
 
 ## Using Bibliographic References API
 
@@ -100,10 +102,7 @@ Me.radRichTextEditor1.Document.BibliographicSources.Add(bibliographicSource)
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 To create a custom __BibliographicStyle__ you have to derive from __BibliographicReferenceStyleBase__ and  add the style to the document so it can be usable. All styles are kept in a dictionary that matches a string to a  __BibliographicReferenceStyleBase__ object. Usually the string is the key of the particular style. Adding style is as easy as:
 
 
@@ -134,7 +133,7 @@ Me.radRichTextEditor1.Document.BibliographicStyles.Add(ISO690_FirstElementAndDat
 {{endregion}} 
 
 
-Insert Citation Field using code behind
+### Insert Citation Field using code behind
 
 The Citation field is a field not different from every other field. You can use the __InsertFIeld()__ method of  __RadDocument__ to insert a citation:
 

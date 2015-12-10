@@ -230,7 +230,7 @@ Styles of type LinkedStyle change the values of the paragraph when there is no s
 
 The default style for span and paragraph properties is __Normal__. It internally inherits the default style of the document located in __RadDocument.Style__
 
->note The document's default style is only for the current instance of the document and if you create a new document, those settings will not be copied. For this  purpose you can use the __DocumentInheritsDefaultStyleSettings__ property of __RadRichTextEditor__ . When set to true it will copy each property you set in __RadRichTextEditor.DefaultStyleSettings__ to newly created documents. You can find more information on setting default style settings on the document[here]({%slug winforms/richtexteditor-/frequently-asked-questions%}))
+>note The document's default style is only for the current instance of the document and if you create a new document, those settings will not be copied. For this  purpose you can use the __DocumentInheritsDefaultStyleSettings__ property of __RadRichTextEditor__ . When set to true it will copy each property you set in __RadRichTextEditor.DefaultStyleSettings__ to newly created documents. You can find more information on setting default style settings on the document [here]({%slug winforms/richtexteditor-/frequently-asked-questions%}))
 >
 
 

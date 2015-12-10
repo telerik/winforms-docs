@@ -182,7 +182,9 @@ Me.radRichTextEditor1.Document = document
 
 {{endregion}} 
 
-The result (Ctrl + Click to follow):![richtexteditor-features-hyperlink 001](images/richtexteditor-features-hyperlink001.png)
+The result (Ctrl + Click to follow):
+
+![richtexteditor-features-hyperlink 001](images/richtexteditor-features-hyperlink001.png)
 
 You will also need to use HyperlinkRangeStart and HyperlinkRangeEnd, if you are using hyperlinks for the implementation of a custom logic and want to get all hyperlinks from the document, manipulate the properties of the HyperlinkInfo or the whole part of the document that is included in the hyperlink.
         
@@ -228,7 +230,7 @@ By default hyperlinks take a fixed string as a tool tip. The default format is:
 >
 
 
-You have control over it using the __HyperlinkToolTipFormatString__of RadRichTextEditor, which will set the format for all hyperlinks in the document.
+You have control over it using the __HyperlinkToolTipFormatString__ of RadRichTextEditor, which will set the format for all hyperlinks in the document.
         
 
 __HyperlinkClicked__
