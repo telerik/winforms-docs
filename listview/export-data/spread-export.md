@@ -49,7 +49,6 @@ You should pass an instance of a [SpreadExportRenderer]({%slug winforms/telerik-
 ````C#
 ListViewSpreadExport exporter = new ListViewSpreadExport(this.radListView1);
 SpreadExportRenderer renderer = new SpreadExportRenderer();
-
 exporter.RunExport(@"C:\ExportedFile.xlsx", renderer);
 
 ````
@@ -106,7 +105,6 @@ void exporter_CellFormatting(object sender, ListViewSpreadExportCellFormattingEv
 {
     e.ExportCell.BackColor = ColorTranslator.FromHtml("#F4FFEC");
     e.ExportCell.Font = new Font("Consolas", 10, FontStyle.Underline);
-
 }
 
 ````
@@ -114,7 +112,6 @@ void exporter_CellFormatting(object sender, ListViewSpreadExportCellFormattingEv
 Private Sub exporter_CellFormatting(ByVal sender As Object, ByVal e As ListViewSpreadExportCellFormattingEventArgs)
     e.ExportCell.BackColor = ColorTranslator.FromHtml("#F4FFEC")
     e.ExportCell.Font = New Font("Consolas", 10, FontStyle.Underline)
-
 End Sub
 
 ````
@@ -179,7 +176,6 @@ private void spreadExporter_AsyncExportProgressChanged(object sender, ProgressCh
 {
     this.radProgressBar1.Value1 = e.ProgressPercentage;
 }
-
 private void spreadExporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
 {
     RadMessageBox.Show("Async Spread Export Completed!");
@@ -191,11 +187,11 @@ private void spreadExporter_AsyncExportCompleted(object sender, AsyncCompletedEv
 Private Sub spreadExporter_AsyncExportProgressChanged(ByVal sender As Object, ByVal e As ProgressChangedEventArgs)
     Me.radProgressBar1.Value1 = e.ProgressPercentage
 End Sub
-
 Private Sub spreadExporter_AsyncExportCompleted(ByVal sender As Object, ByVal e As AsyncCompletedEventArgs)
     RadMessageBox.Show("Async Spread Export Completed!")
     Me.radProgressBar1.Value1 = 0
 End Sub
+
 ````
 
 {{endregion}}

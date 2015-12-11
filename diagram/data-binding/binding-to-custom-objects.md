@@ -598,6 +598,25 @@ Public Class Source
         }
     End Function
 End Class
+#End Region
+Private Sub BindToCustomObjects()
+    '#Region "SetupMembers"
+    Me.radDiagram1.DataSource = New Source()
+    Me.radDiagram1.ConnectionDataMember = "Relations"
+    Me.radDiagram1.ShapeDataMember = "Tasks"
+    Me.radDiagram1.ShapeIdMember = "Id"
+    Me.radDiagram1.ShapeTextMember = "Text"
+    Me.radDiagram1.ShapeTypeMember = "Type"
+    Me.radDiagram1.ShapeXMember = "X"
+    Me.radDiagram1.ShapeYMember = "Y"
+    Me.radDiagram1.ShapeWidthMember = "Width"
+    Me.radDiagram1.ShapeHeightMember = "Height"
+    Me.radDiagram1.ConnectionSourceShapeIdMember = "SourceTaskId"
+    Me.radDiagram1.ConnectionTargetShapeIdMember = "TargetTaskId"
+    Me.radDiagram1.ConnectionSourceCapTypeMember = "StartCapField"
+    Me.radDiagram1.ConnectionTargetCapTypeMember = "EndCapField"
+    Me.radDiagram1.ConnectionSourceConnectorMember = "SourceConnector"
+    Me.radDiagram1.ConnectionTargetConnectorMember = "TargetConnector"
 
 ````
 

@@ -69,7 +69,8 @@ All methods, properties and events relevant to the discussed functionality are c
 {{source=..\SamplesCS\PdfViewer\PdfTextManipulation.cs region=TextSelection}} 
 {{source=..\SamplesVB\PdfViewer\PdfTextManipulation.vb region=TextSelection}} 
 
-````C# 
+````C#
+            
 Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition start = new Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document.CaretPosition);
 start.MoveToCurrentWordStart();
 Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition end = new Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document.CaretPosition);

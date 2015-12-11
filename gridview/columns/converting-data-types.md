@@ -300,11 +300,9 @@ public class CustomFloatConverter : TypeConverter
 ````VB.NET
 Public Class CustomFloatConverter
     Inherits TypeConverter
-
     Public Overrides Function CanConvertTo(ByVal context As ITypeDescriptorContext, ByVal destinationType As Type) As Boolean
         Return destinationType Is GetType(Single)
     End Function
-
     Public Overrides Function ConvertTo(ByVal context As ITypeDescriptorContext, ByVal culture As CultureInfo, ByVal value As Object, ByVal destinationType As Type) As Object
         If destinationType Is GetType(Single) AndAlso (value Is Nothing OrElse TypeOf value Is DBNull) Then
             Return Single.MinValue

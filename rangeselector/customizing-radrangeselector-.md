@@ -20,13 +20,18 @@ The following code snippet demonstrates how to access and customize the Range an
 {{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeHover}} 
 
 ````C#
-RangeSelectorViewElement chartElement = this.radRangeSelector1.RangeSelectorElement.AssociatedElement as RangeSelectorViewElement;
-chartElement.SeriesInitializing += new SeriesInitializingEventHandler(chartElement_SeriesInitializing);
+void chartElement_SeriesInitialized(object sender, SeriesInitializedEventArgs e)
+{
+    e.Series.BackColor = Color.Lime;
+    e.Series.BorderColor = Color.Red;
+}
 
 ````
 ````VB.NET
-Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
-AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitializing
+Private Sub chartElement_SeriesInitialized(sender As Object, e As SeriesInitializedEventArgs)
+    e.Series.BackColor = Color.Lime
+    e.Series.BorderColor = Color.Red
+End Sub
 
 ````
 
@@ -40,13 +45,18 @@ AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitial
 {{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeThumb}} 
 
 ````C#
-RangeSelectorViewElement chartElement = this.radRangeSelector1.RangeSelectorElement.AssociatedElement as RangeSelectorViewElement;
-chartElement.SeriesInitializing += new SeriesInitializingEventHandler(chartElement_SeriesInitializing);
+void chartElement_SeriesInitialized(object sender, SeriesInitializedEventArgs e)
+{
+    e.Series.BackColor = Color.Lime;
+    e.Series.BorderColor = Color.Red;
+}
 
 ````
 ````VB.NET
-Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
-AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitializing
+Private Sub chartElement_SeriesInitialized(sender As Object, e As SeriesInitializedEventArgs)
+    e.Series.BackColor = Color.Lime
+    e.Series.BorderColor = Color.Red
+End Sub
 
 ````
 
@@ -62,13 +72,18 @@ This scroll element appears only when associated element implements IRangeSelect
 {{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeScroll}} 
 
 ````C#
-RangeSelectorViewElement chartElement = this.radRangeSelector1.RangeSelectorElement.AssociatedElement as RangeSelectorViewElement;
-chartElement.SeriesInitializing += new SeriesInitializingEventHandler(chartElement_SeriesInitializing);
+void chartElement_SeriesInitialized(object sender, SeriesInitializedEventArgs e)
+{
+    e.Series.BackColor = Color.Lime;
+    e.Series.BorderColor = Color.Red;
+}
 
 ````
 ````VB.NET
-Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
-AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitializing
+Private Sub chartElement_SeriesInitialized(sender As Object, e As SeriesInitializedEventArgs)
+    e.Series.BackColor = Color.Lime
+    e.Series.BorderColor = Color.Red
+End Sub
 
 ````
 
@@ -81,16 +96,18 @@ AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitial
 The scales are created dynamically according to the associated element and its look and feel can be customized through the __ScaleInitializing__ event.
 
 {{source=..\SamplesCS\RangeSelector\CustomizingRadRangeSelector.cs region=CustomizeScales}} 
-{{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeScales}} 
-
 ````C#
-RangeSelectorViewElement chartElement = this.radRangeSelector1.RangeSelectorElement.AssociatedElement as RangeSelectorViewElement;
-chartElement.SeriesInitializing += new SeriesInitializingEventHandler(chartElement_SeriesInitializing);
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.LeftTopThumb.BackColor = Color.Green
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.LeftTopThumb.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.BottomRightThumb.BackColor = Color.Green
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.BottomRightThumb.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.Range.BackColor = Color.Green
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.Range.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.SellectionRange.BackColor = Color.Red
 
 ````
 ````VB.NET
-Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
-AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitializing
+this.radRangeSelector1.ScaleInitializing += new ScaleInitializingEventHandler(radRangeSelector1_ScaleInitializing);
 
 ````
 
@@ -106,13 +123,12 @@ In order to customize the chart that is drawn into __RadRangeSelector__ when it 
 {{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeChartElement}} 
 
 ````C#
-RangeSelectorViewElement chartElement = this.radRangeSelector1.RangeSelectorElement.AssociatedElement as RangeSelectorViewElement; 
-chartElement.SeriesInitializing += new SeriesInitializingEventHandler(chartElement_SeriesInitializing);
+RangeSelectorViewElement chartElement = this.radRangeSelector1.RangeSelectorElement.AssociatedElement as RangeSelectorViewElement;
+chartElement.SeriesInitialized += new SeriesInitializedEventHandler(chartElement_SeriesInitialized);
 
 ````
 ````VB.NET
 Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
-AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitializing
 
 ````
 
@@ -124,13 +140,18 @@ AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitial
 {{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeChartElement1}} 
 
 ````C#
-RangeSelectorViewElement chartElement = this.radRangeSelector1.RangeSelectorElement.AssociatedElement as RangeSelectorViewElement;
-chartElement.SeriesInitializing += new SeriesInitializingEventHandler(chartElement_SeriesInitializing);
+void chartElement_SeriesInitialized(object sender, SeriesInitializedEventArgs e)
+{
+    e.Series.BackColor = Color.Lime;
+    e.Series.BorderColor = Color.Red;
+}
 
 ````
 ````VB.NET
-Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
-AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitializing
+Private Sub chartElement_SeriesInitialized(sender As Object, e As SeriesInitializedEventArgs)
+    e.Series.BackColor = Color.Lime
+    e.Series.BorderColor = Color.Red
+End Sub
 
 ````
 

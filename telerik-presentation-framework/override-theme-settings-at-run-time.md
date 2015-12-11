@@ -27,15 +27,14 @@ Consider the case in which you should change the __BackColor__ for a __RadButton
 
 ````C#
             
-            this.radButton1.ButtonElement.ButtonFillElement.BackColor = Color.Red;
-            this.radButton1.ButtonElement.ButtonFillElement.GradientStyle = GradientStyles.Solid;
+this.radButton1.ButtonElement.ButtonFillElement.BackColor = Color.Red;
+this.radButton1.ButtonElement.ButtonFillElement.GradientStyle = GradientStyles.Solid;
+
 ````
 ````VB.NET
+Me.RadButton1.ButtonElement.ButtonFillElement.BackColor = Color.Red
+Me.RadButton1.ButtonElement.ButtonFillElement.GradientStyle = GradientStyles.Solid
 
-        Me.RadButton1.ButtonElement.ButtonFillElement.BackColor = Color.Red
-        Me.RadButton1.ButtonElement.ButtonFillElement.GradientStyle = GradientStyles.Solid
-
-        '
 ````
 
 {{endregion}}
@@ -51,19 +50,18 @@ To handle this, you can use the RadItem.__SetThemeValueOverride__ method by spec
 
 ````C#
             
-            this.radButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.BackColorProperty,
-                Color.Red, "", typeof(Telerik.WinControls.Primitives.FillPrimitive));
-            this.radButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.GradientStyleProperty,
-                GradientStyles.Solid, "", typeof(Telerik.WinControls.Primitives.FillPrimitive));
+this.radButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.BackColorProperty,
+    Color.Red, "", typeof(Telerik.WinControls.Primitives.FillPrimitive));
+this.radButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.GradientStyleProperty,
+    GradientStyles.Solid, "", typeof(Telerik.WinControls.Primitives.FillPrimitive));
+
 ````
 ````VB.NET
+Me.RadButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.BackColorProperty, _
+                                                  Color.Red, "", GetType(Telerik.WinControls.Primitives.FillPrimitive))
+Me.RadButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.GradientStyleProperty, _
+                                                  GradientStyles.Solid, "", GetType(Telerik.WinControls.Primitives.FillPrimitive))
 
-        Me.RadButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.BackColorProperty, _
-                                                          Color.Red, "", GetType(Telerik.WinControls.Primitives.FillPrimitive))
-        Me.RadButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.GradientStyleProperty, _
-                                                          GradientStyles.Solid, "", GetType(Telerik.WinControls.Primitives.FillPrimitive))
-
-        '
 ````
 
 {{endregion}} 
@@ -77,13 +75,12 @@ The __GetAvailableVisualStates__ method returns a list of the string representat
 
 ````C#
             
-            List<string> visualStates = this.radButton1.ButtonElement.GetAvailableVisualStates();
+List<string> visualStates = this.radButton1.ButtonElement.GetAvailableVisualStates();
+
 ````
 ````VB.NET
+Dim visualStates As List(Of String) = Me.RadButton1.ButtonElement.GetAvailableVisualStates()
 
-        Dim visualStates As List(Of String) = Me.RadButton1.ButtonElement.GetAvailableVisualStates()
-
-        '
 ````
 
 {{endregion}}
@@ -96,7 +93,8 @@ In case you need to change the hover color, you can use a similar approach:
 {{source=..\SamplesCS\TPF\OverrideThemeSettings.cs region=MouseOver}} 
 {{source=..\SamplesVB\TPF\OverrideThemeSettings.vb region=MouseOver}} 
 
-````C#            
+````C#
+            
 this.radButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.BackColorProperty,
     Color.Yellow, "MouseOver", typeof(Telerik.WinControls.Primitives.FillPrimitive));
 this.radButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.GradientStyleProperty,
@@ -108,7 +106,6 @@ Me.RadButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives
                                                   Color.Yellow, "MouseOver", GetType(Telerik.WinControls.Primitives.FillPrimitive))
 Me.RadButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.GradientStyleProperty, _
                                                   GradientStyles.Solid, "MouseOver", GetType(Telerik.WinControls.Primitives.FillPrimitive))
-
 
 ````
 
@@ -122,6 +119,7 @@ Here is an example how to combine states for __RadToggleButton__
 {{source=..\SamplesVB\TPF\OverrideThemeSettings.vb region=CombineStates}} 
 
 ````C#
+            
 this.radToggleButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.BackColorProperty,
     Color.Aqua, "ToggleState=On.MouseOver", typeof(Telerik.WinControls.Primitives.FillPrimitive));
 this.radToggleButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.GradientStyleProperty,
@@ -133,7 +131,6 @@ Me.RadToggleButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Prim
                                                         Color.Aqua, "ToggleState=On.MouseOver", GetType(Telerik.WinControls.Primitives.FillPrimitive))
 Me.RadToggleButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives.FillPrimitive.GradientStyleProperty, _
                                                         GradientStyles.Solid, "ToggleState=On.MouseOver", GetType(Telerik.WinControls.Primitives.FillPrimitive))
-
 
 ````
 

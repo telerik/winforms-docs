@@ -34,25 +34,20 @@ public class MyEnglishLayoutControlLocalizationProvider : LayoutControlLocalizat
                 return "Hidden Items ({0})";
             case LayoutControlStringId.CustomizeDialogNewItems:
                 return "New Items ({0})";
-
             case LayoutControlStringId.CustomizeDialogPageItems:
                 return "Items";
             case LayoutControlStringId.CustomizeDialogPageStructure:
                 return "Structure";
-
             case LayoutControlStringId.CustomizeDialogRootItem:
                 return "Root";
-
             case LayoutControlStringId.CustomizeDialogSaveLayout:
                 return "Save Layout";
             case LayoutControlStringId.CustomizeDialogLoadLayout:
                 return "Load Layout";
-
             case LayoutControlStringId.NewGroupDefaultText:
                 return "Item Group";
             case LayoutControlStringId.NewLabelDefaultText:
                 return "Label Item";
-
             case LayoutControlStringId.CustomizeDialogNewItemsEmptySpace:
                 return "Empty Space";
             case LayoutControlStringId.CustomizeDialogNewItemsLabel:
@@ -65,14 +60,12 @@ public class MyEnglishLayoutControlLocalizationProvider : LayoutControlLocalizat
                 return "Group";
             case LayoutControlStringId.CustomizeDialogNewItemsTabbedGroup:
                 return "Tabbed Group";
-
             case LayoutControlStringId.ContextMenuCustomize:
                 return "Customize";
             case LayoutControlStringId.ContextMenuHideItem:
                 return "Hide";
             case LayoutControlStringId.CustomizeDialogTitle:
                 return "Customize";
-
             case LayoutControlStringId.ErrorBoxTitle:
                 return "Error!";
             case LayoutControlStringId.ErrorFileNotFoundMessage:
@@ -80,7 +73,6 @@ public class MyEnglishLayoutControlLocalizationProvider : LayoutControlLocalizat
             case LayoutControlStringId.ErrorLoadingLayoutMessage:
                 return "Error loading layout!";
         }
-
         return base.GetLocalizedString(id);
     }
 }
@@ -95,25 +87,20 @@ Public Class MyEnglishLayoutControlLocalizationProvider
                 Return "Hidden Items ({0})"
             Case LayoutControlStringId.CustomizeDialogNewItems
                 Return "New Items ({0})"
-
             Case LayoutControlStringId.CustomizeDialogPageItems
                 Return "Items"
             Case LayoutControlStringId.CustomizeDialogPageStructure
                 Return "Structure"
-
             Case LayoutControlStringId.CustomizeDialogRootItem
                 Return "Root"
-
             Case LayoutControlStringId.CustomizeDialogSaveLayout
                 Return "Save Layout"
             Case LayoutControlStringId.CustomizeDialogLoadLayout
                 Return "Load Layout"
-
             Case LayoutControlStringId.NewGroupDefaultText
                 Return "Item Group"
             Case LayoutControlStringId.NewLabelDefaultText
                 Return "Label Item"
-
             Case LayoutControlStringId.CustomizeDialogNewItemsEmptySpace
                 Return "Empty Space"
             Case LayoutControlStringId.CustomizeDialogNewItemsLabel
@@ -126,14 +113,12 @@ Public Class MyEnglishLayoutControlLocalizationProvider
                 Return "Group"
             Case LayoutControlStringId.CustomizeDialogNewItemsTabbedGroup
                 Return "Tabbed Group"
-
             Case LayoutControlStringId.ContextMenuCustomize
                 Return "Customize"
             Case LayoutControlStringId.ContextMenuHideItem
                 Return "Hide"
             Case LayoutControlStringId.CustomizeDialogTitle
                 Return "Customize"
-
             Case LayoutControlStringId.ErrorBoxTitle
                 Return "Error!"
             Case LayoutControlStringId.ErrorFileNotFoundMessage
@@ -141,7 +126,6 @@ Public Class MyEnglishLayoutControlLocalizationProvider
             Case LayoutControlStringId.ErrorLoadingLayoutMessage
                 Return "Error loading layout!"
         End Select
-
         Return MyBase.GetLocalizedString(id)
     End Function
 End Class
@@ -159,6 +143,7 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 ````C#
 LayoutControlLocalizationProvider.CurrentProvider = new MyEnglishLayoutControlLocalizationProvider();
+
 ````
 ````VB.NET
 LayoutControlLocalizationProvider.CurrentProvider = New MyEnglishLayoutControlLocalizationProvider()

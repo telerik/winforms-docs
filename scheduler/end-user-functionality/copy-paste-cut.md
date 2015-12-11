@@ -49,6 +49,7 @@ Ctrl+V is the key combination performing the paste behavior in scheduler. The Ra
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=Pasting}} 
 
 ````C#
+        
 private void radScheduler1_AppointmentsPasting(object sender, SchedulerClipboardEventArgs e)
 {
     if (e.Format == "ICal")

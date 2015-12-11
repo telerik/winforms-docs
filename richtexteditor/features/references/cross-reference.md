@@ -137,6 +137,8 @@ radRichTextEditor1.InsertCrossReferenceToHeading(headingParagraph, ReferenceCont
 
 ````
 ````VB.NET
+radRichTextEditor1.InsertCrossReferenceToHeading(headingParagraph, ReferenceContentType.OnlyCaption, True)
+
 ```` 
 
 

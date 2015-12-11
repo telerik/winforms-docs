@@ -85,12 +85,10 @@ view.ColumnGroups[0].Rows.Add(new GridViewColumnGroupRow());
 view.ColumnGroups[0].Rows[0].ColumnNames.Add("CompanyName");
 view.ColumnGroups[0].Rows[0].ColumnNames.Add("ContactName");
 view.ColumnGroups[0].Rows[0].ColumnNames.Add("ContactTitle");
-
 view.ColumnGroups[1].Groups[0].Rows.Add(new GridViewColumnGroupRow());
 view.ColumnGroups[1].Groups[0].Rows[0].ColumnNames.Add("Address");
 view.ColumnGroups[1].Groups[0].Rows[0].ColumnNames.Add("City");
 view.ColumnGroups[1].Groups[0].Rows[0].ColumnNames.Add("Country");
-
 view.ColumnGroups[1].Groups[1].Rows.Add(new GridViewColumnGroupRow());
 view.ColumnGroups[1].Groups[1].Rows[0].ColumnNames.Add("Phone");
 view.ColumnGroups[1].Groups[1].Rows[0].ColumnNames.Add("Fax");
@@ -101,12 +99,10 @@ view.ColumnGroups(0).Rows.Add(New GridViewColumnGroupRow())
 view.ColumnGroups(0).Rows(0).ColumnNames.Add("CompanyName")
 view.ColumnGroups(0).Rows(0).ColumnNames.Add("ContactName")
 view.ColumnGroups(0).Rows(0).ColumnNames.Add("ContactTitle")
-
 view.ColumnGroups(1).Groups(0).Rows.Add(New GridViewColumnGroupRow())
 view.ColumnGroups(1).Groups(0).Rows(0).ColumnNames.Add("Address")
 view.ColumnGroups(1).Groups(0).Rows(0).ColumnNames.Add("City")
 view.ColumnGroups(1).Groups(0).Rows(0).ColumnNames.Add("Country")
-
 view.ColumnGroups(1).Groups(1).Rows.Add(New GridViewColumnGroupRow())
 view.ColumnGroups(1).Groups(1).Rows(0).ColumnNames.Add("Phone")
 view.ColumnGroups(1).Groups(1).Rows(0).ColumnNames.Add("Fax")

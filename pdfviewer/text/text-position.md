@@ -78,6 +78,7 @@ The caret position of __RadFixedDocument__ is also a __TextPosition__ and all me
 {{source=..\SamplesVB\PdfViewer\PdfTextManipulation.vb region=CaretPosition}} 
 
 ````C#
+            
 this.radPdfViewer1.PdfViewerElement.Document.CaretPosition.MoveToEndOfDocument();
 
 ````

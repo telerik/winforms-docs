@@ -27,7 +27,6 @@ public PdfDataExceptionCode()
     InitializeComponent();
     radPdfViewer1.DataError += radPdfViewer1_DataError;
 }
-
 void radPdfViewer1_DataError(object sender, PdfExceptionEventArgs args)
 {
     NotSupportedFilterException filterException = args.Exception as NotSupportedFilterException;
@@ -43,7 +42,6 @@ Public Sub New()
     InitializeComponent()
     AddHandler radPdfViewer1.DataError, AddressOf radPdfViewer1_DataError
 End Sub
-
 Private Sub radPdfViewer1_DataError(ByVal sender As Object, ByVal args As PdfExceptionEventArgs)
     Dim filterException As NotSupportedFilterException = TryCast(args.Exception, NotSupportedFilterException)
     If filterException IsNot Nothing Then

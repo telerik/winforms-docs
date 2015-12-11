@@ -26,6 +26,27 @@ this.radDropDownList1.Filter = FilterItem;
 ````
 ````VB.NET
 Me.radDropDownList1.Filter = AddressOf FilterItem
+'#End Region
+'#Region "FilteringExpression"
+Me.radDropDownList1.FilterExpression = "Country LIKE 'Argentina'"
+'#End Region
+End Sub
+'#Region "FilteringPredicate"
+Private Function FilterItem(item As RadListDataItem) As Boolean
+If item.Text.StartsWith("L") Then
+    Return True
+End If
+        
+Return False
+End Function
+'#End Region
+'#region handlingSelectedIndexChanged
+Private Sub radDropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+If Me.radDropDownList1.SelectedIndex > -1 Then
+    radLabelElement1.Text = Me.radDropDownList1.SelectedItem.Text
+    Me.radImageButtonElement1.Image = Me.radDropDownList1.SelectedItem.Image
+End If
+End Sub
 
 ````        
 
@@ -57,6 +78,14 @@ Private Function FilterItem(item As RadListDataItem) As Boolean
     
     Return False
 End Function
+'#End Region
+'#region handlingSelectedIndexChanged
+Private Sub radDropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+    If Me.radDropDownList1.SelectedIndex > -1 Then
+        radLabelElement1.Text = Me.radDropDownList1.SelectedItem.Text
+        Me.radImageButtonElement1.Image = Me.radDropDownList1.SelectedItem.Image
+    End If
+End Sub
 
 ```` 
 {{endregion}} 

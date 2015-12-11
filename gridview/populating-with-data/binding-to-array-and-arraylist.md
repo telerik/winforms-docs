@@ -160,7 +160,7 @@ End Class
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToArrayOfObjects}} 
 
 ````C#
-MyObject[] myArray = new MyObject[2] {new MyObject(1, "object one"), new MyObject(2, "object two") };
+MyObject[] myArray = new MyObject[2] { new MyObject(1, "object one"), new MyObject(2, "object two") };
 radGridView1.DataSource = myArray;
 
 ````
@@ -183,11 +183,11 @@ The code below demonstrates how to use an __ArrayList__ for RadGridView structur
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=BindingToArrayList}} 
 
 ````C#
-		    ArrayList arrayList = new System.Collections.ArrayList();
-            arrayList.Add(new MyObject(1, "Object one") );
-            arrayList.Add(new MyObject(2, "Object two") );
-            arrayList.Add(new MyObject(3, "Object three") );
-            radGridView1.DataSource = arrayList;
+ArrayList arrayList = new System.Collections.ArrayList();
+arrayList.Add(new MyObject(1, "Object one"));
+arrayList.Add(new MyObject(2, "Object two"));
+arrayList.Add(new MyObject(3, "Object three"));
+radGridView1.DataSource = arrayList;
 
 ````
 ````VB.NET

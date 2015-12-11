@@ -30,8 +30,6 @@ The example creates an ObservableCollection of Person, initializes the collectio
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=SampleClass}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=SampleClass}} 
 
-#### Creating sample class  
-
 ````C#
   
 public class Person
@@ -97,8 +95,6 @@ End Class
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Collection}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Collection}} 
 
-#### Defining the collection 
-
 ````C#
 private  System.Collections.ObjectModel.ObservableCollection<Person> people = new  System.Collections.ObjectModel.ObservableCollection<Person>();
 private void IntilalizeCollection()
@@ -159,8 +155,6 @@ End Sub
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Add}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Add}} 
 
-#### Add new record to the collection 
-
 ````C#
 private void Add_Click(object sender, EventArgs e)
 {
@@ -179,8 +173,6 @@ End Sub
 
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Remove}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Remove}} 
-
-#### Remove a record from the collection 
 
 ````C#
 private void Remove_Click(object sender, EventArgs e)
@@ -206,8 +198,6 @@ End Sub
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Move}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Move}} 
 
-#### Remove a record from the collection 
-
 ````C#
 private void Move_Click(object sender, EventArgs e)
 {
@@ -228,8 +218,6 @@ End Sub
 
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Binding}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Binding}} 
-
-#### Binding to the collection 
 
 ````C#
 private void BindingToObservableCollection_Load(object sender, EventArgs e)

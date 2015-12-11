@@ -22,16 +22,11 @@ public class Employee
 {
     [DisplayName("First Name")]
     public string FirstName { get; set; }
-
     [DisplayName("Family Name")]
     public string LastName { get; set; }
-
     public string Occupation { get; set; }
-
     public int Salary { get; set; }
-
     public DateTime StartingDate { get; set; }
-
     public bool IsMarried { get; set; }
 }
 
@@ -48,7 +43,6 @@ Public Class Employee
         End Set
     End Property
     Private m_FirstName As String
-
     <DisplayName("Family Name")> _
     Public Property LastName() As String
         Get
@@ -59,7 +53,6 @@ Public Class Employee
         End Set
     End Property
     Private m_LastName As String
-
     Public Property Occupation() As String
         Get
             Return m_Occupation
@@ -69,7 +62,6 @@ Public Class Employee
         End Set
     End Property
     Private m_Occupation As String
-
     Public Property Salary() As Integer
         Get
             Return m_Salary
@@ -79,7 +71,6 @@ Public Class Employee
         End Set
     End Property
     Private m_Salary As Integer
-
     Public Property StartingDate() As DateTime
         Get
             Return m_StartingDate
@@ -89,7 +80,6 @@ Public Class Employee
         End Set
     End Property
     Private m_StartingDate As DateTime
-
     Public Property IsMarried() As Boolean
         Get
             Return m_IsMarried
@@ -188,7 +178,6 @@ private void radDataLayout1_ItemValidated(object sender, Telerik.WinControls.UI.
         if (employee.FirstName.Length < 2 || employee.FirstName.Length > 15)
         {
             e.ErrorProvider.SetError((sender as Control), "First Name should be between 2 and 15 chars long.");
-
             if (!this.radDataLayout1.ValidationPanel.PanelContainer.Controls.ContainsKey("FirstName"))
             {
                 RadLabel label = new RadLabel();
@@ -211,7 +200,6 @@ private void radDataLayout1_ItemValidated(object sender, Telerik.WinControls.UI.
         if (employee.LastName.Length < 2 || employee.LastName.Length > 15)
         {
             e.ErrorProvider.SetError((sender as Control), "Last Name should be between 2 and 15 chars long.");
-
             if (!this.radDataLayout1.ValidationPanel.PanelContainer.Controls.ContainsKey("LastName"))
             {
                 RadLabel label = new RadLabel();
@@ -234,12 +222,10 @@ private void radDataLayout1_ItemValidated(object sender, Telerik.WinControls.UI.
         if (employee.Salary < 1400 || employee.Salary > 1800)
         {
             e.ErrorProvider.SetError((sender as Control), "Salary should be in range 1500 - 1700.");
-
             if (!this.radDataLayout1.ValidationPanel.PanelContainer.Controls.ContainsKey("Salary"))
             {
                 RadLabel label = new RadLabel();
                 label.Name = "Salary";
-
                 label.Text = "<html><size=10><b><color= Red>Salary : </b><color= Black>Salary should be in range 1500 - 1700.";
                 label.Dock = DockStyle.Top;
                 label.AutoSize = false;
@@ -262,7 +248,6 @@ Private Sub radDataLayout1_ItemValidated(sender As Object, e As Telerik.WinContr
     If e.Item.Text = "First Name" Then
         If employee.FirstName.Length < 2 OrElse employee.FirstName.Length > 15 Then
             e.ErrorProvider.SetError(TryCast(sender, Control), "First Name should be between 2 and 15 chars long.")
-
             If Not Me.RadDataLayout1.ValidationPanel.PanelContainer.Controls.ContainsKey("FirstName") Then
                 Dim label As New RadLabel()
                 label.Name = "FirstName"
@@ -279,7 +264,6 @@ Private Sub radDataLayout1_ItemValidated(sender As Object, e As Telerik.WinContr
     ElseIf e.Item.Text = "Family Name" Then
         If employee.LastName.Length < 2 OrElse employee.LastName.Length > 15 Then
             e.ErrorProvider.SetError(TryCast(sender, Control), "Last Name should be between 2 and 15 chars long.")
-
             If Not Me.RadDataLayout1.ValidationPanel.PanelContainer.Controls.ContainsKey("LastName") Then
                 Dim label As New RadLabel()
                 label.Name = "LastName"
@@ -296,11 +280,9 @@ Private Sub radDataLayout1_ItemValidated(sender As Object, e As Telerik.WinContr
     ElseIf e.Item.Text = "Salary" Then
         If employee.Salary < 1400 OrElse employee.Salary > 1800 Then
             e.ErrorProvider.SetError(TryCast(sender, Control), "Salary should be in range 1500 - 1700.")
-
             If Not Me.RadDataLayout1.ValidationPanel.PanelContainer.Controls.ContainsKey("Salary") Then
                 Dim label As New RadLabel()
                 label.Name = "Salary"
-
                 label.Text = "<html><size=10><b><color= Red>Salary : </b><color= Black>Salary should be in range 1500 - 1700."
                 label.Dock = DockStyle.Top
                 label.AutoSize = False

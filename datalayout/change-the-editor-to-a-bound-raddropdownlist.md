@@ -22,19 +22,18 @@ This article will walk you through the process of changing the default editor to
 {{source=..\SamplesVB\DataLayout\DataLayoutChangeEditor.vb region=subscribe}} 
 
 ````C#
-            this.radDataLayout1.EditorInitializing += radDataLayout1_EditorInitializing;
-            this.radDataLayout1.BindingCreating += radDataLayout1_BindingCreating;
-            this.radDataLayout1.BindingCreated += radDataLayout1_BindingCreated;
+this.radDataLayout1.EditorInitializing += radDataLayout1_EditorInitializing;
+this.radDataLayout1.BindingCreating += radDataLayout1_BindingCreating;
+this.radDataLayout1.BindingCreated += radDataLayout1_BindingCreated;
+this.radDataLayout1.DataSource = productsBinding;
 
-            this.radDataLayout1.DataSource = productsBinding;
 ````
 ````VB.NET
-        AddHandler Me.RadDataLayout1.EditorInitializing, AddressOf radDataLayout1_EditorInitializing
-        AddHandler Me.RadDataLayout1.BindingCreating, AddressOf radDataLayout1_BindingCreating
-        AddHandler Me.RadDataLayout1.BindingCreated, AddressOf radDataLayout1_BindingCreated
+AddHandler Me.RadDataLayout1.EditorInitializing, AddressOf radDataLayout1_EditorInitializing
+AddHandler Me.RadDataLayout1.BindingCreating, AddressOf radDataLayout1_BindingCreating
+AddHandler Me.RadDataLayout1.BindingCreated, AddressOf radDataLayout1_BindingCreated
+Me.RadDataLayout1.DataSource = productsBinding
 
-        Me.RadDataLayout1.DataSource = productsBinding
-        '
 ````
 
 {{endregion}} 
@@ -46,17 +45,14 @@ This article will walk you through the process of changing the default editor to
 
 ````C#
 RadDropDownList radDropDownList1;
-
 void radDataLayout1_EditorInitializing(object sender, Telerik.WinControls.UI.EditorInitializingEventArgs e)
 {
     if (e.Property.Name == "SupplierID")
     {
         radDropDownList1 = new RadDropDownList();
-
         radDropDownList1.DataSource = suplierList;
         radDropDownList1.ValueMember = "SupplierID";
         radDropDownList1.DisplayMember = "CompanyName";
-
         e.Editor = radDropDownList1;
     }
 }
@@ -64,15 +60,12 @@ void radDataLayout1_EditorInitializing(object sender, Telerik.WinControls.UI.Edi
 ````
 ````VB.NET
 Private radDropDownList1 As RadDropDownList
-
 Private Sub radDataLayout1_EditorInitializing(sender As Object, e As Telerik.WinControls.UI.EditorInitializingEventArgs)
     If e.[Property].Name = "SupplierID" Then
         radDropDownList1 = New RadDropDownList()
-
         radDropDownList1.DataSource = suplierList
         radDropDownList1.ValueMember = "SupplierID"
         radDropDownList1.DisplayMember = "CompanyName"
-
         e.Editor = radDropDownList1
     End If
 End Sub
@@ -124,12 +117,11 @@ void radDataLayout1_BindingCreated(object sender, BindingCreatedEventArgs e)
         e.Binding.Parse += new ConvertEventHandler(Binding_Parse);
     }
 }
-
+       
 private void Binding_Parse(object sender, ConvertEventArgs e)
 {
     int tmpvalue;
     int? result = int.TryParse(e.Value.ToString(), out tmpvalue) ? tmpvalue : (int?)null;
-
     e.Value = result;
 }
 
@@ -141,11 +133,9 @@ Private Sub radDataLayout1_BindingCreated(sender As Object, e As BindingCreatedE
         AddHandler e.Binding.Parse, AddressOf Binding_Parse
     End If
 End Sub
-
 Private Sub Binding_Parse(sender As Object, e As ConvertEventArgs)
     Dim tmpvalue As Integer
     Dim result As System.Nullable(Of Integer) = If(Integer.TryParse(e.Value.ToString(), tmpvalue), tmpvalue, DirectCast(Nothing, System.Nullable(Of Integer)))
-
     e.Value = result
 End Sub
 
@@ -163,13 +153,11 @@ public class ProductModel
 {
     private int? _supplierID;
     private string _productName;
-
     public ProductModel(int? supplierID, string productName)
     {
         this._supplierID = supplierID;
         this._productName = productName;
     }
-
     public int? SupplierID
     {
         get
@@ -181,7 +169,6 @@ public class ProductModel
             this._supplierID = value;
         }
     }
-
     public string ProductName
     {
         get
@@ -194,18 +181,15 @@ public class ProductModel
         }
     }
 }
-
 public partial class SupplierModel
 {
     private int? _supplierID;
     private string _companyName;
-
     public SupplierModel(int? supplierID, string companyName)
     {
         this._supplierID = supplierID;
         this._companyName = companyName;
     }
-
     public int? SupplierID
     {
         get
@@ -217,7 +201,6 @@ public partial class SupplierModel
             this._supplierID = value;
         }
     }
-
     public string CompanyName
     {
         get
@@ -236,12 +219,10 @@ public partial class SupplierModel
 Public Class ProductModel
     Private _supplierID As System.Nullable(Of Integer)
     Private _productName As String
-
     Public Sub New(supplierID As System.Nullable(Of Integer), productName As String)
         Me._supplierID = supplierID
         Me._productName = productName
     End Sub
-
     Public Property SupplierID() As System.Nullable(Of Integer)
         Get
             Return Me._supplierID
@@ -250,7 +231,6 @@ Public Class ProductModel
             Me._supplierID = value
         End Set
     End Property
-
     Public Property ProductName() As String
         Get
             Return Me._productName
@@ -260,16 +240,13 @@ Public Class ProductModel
         End Set
     End Property
 End Class
-
 Partial Public Class SupplierModel
     Private _supplierID As System.Nullable(Of Integer)
     Private _companyName As String
-
     Public Sub New(supplierID As System.Nullable(Of Integer), companyName As String)
         Me._supplierID = supplierID
         Me._companyName = companyName
     End Sub
-
     Public Property SupplierID() As System.Nullable(Of Integer)
         Get
             Return Me._supplierID
@@ -278,7 +255,6 @@ Partial Public Class SupplierModel
             Me._supplierID = value
         End Set
     End Property
-
     Public Property CompanyName() As String
         Get
             Return Me._companyName
@@ -288,7 +264,7 @@ Partial Public Class SupplierModel
         End Set
     End Property
 End Class
-'
+
 ````
 
 {{endregion}}
@@ -302,13 +278,11 @@ You can initialize the data sources in the Form’s constructor.
 List<ProductModel> productList;
 List<SupplierModel> suplierList;
 BindingSource productsBinding;
-
 public DataLayoutChangeEditor()
 {
     InitializeComponent();
     productList = new List<ProductModel>();
     suplierList = new List<SupplierModel>();
-
     productList.Add(new ProductModel(1, "Chai"));
     productList.Add(new ProductModel(2, "Chang"));
     productList.Add(new ProductModel(3, "Aniseed Syrup"));
@@ -319,14 +293,12 @@ public DataLayoutChangeEditor()
     productList.Add(new ProductModel(5, "Chartreuse verte"));
     productList.Add(new ProductModel(2, "Ravioli Angelo"));
     productList.Add(new ProductModel(4, "Perth Pasties"));
-
     suplierList.Add(new SupplierModel(1, "Exotic Liquids"));
     suplierList.Add(new SupplierModel(2, "New Orleans Cajun Delights"));
     suplierList.Add(new SupplierModel(3, "Tokyo Traders"));
     suplierList.Add(new SupplierModel(4, "Norske Meierier"));
     suplierList.Add(new SupplierModel(5, "New England Seafood Cannery"));
     suplierList.Add(new SupplierModel(6, "Leka Trading"));
-
     productsBinding = new BindingSource();
     productsBinding.DataSource = productList;
 }
@@ -336,12 +308,10 @@ public DataLayoutChangeEditor()
 Private productList As List(Of ProductModel)
 Private suplierList As List(Of SupplierModel)
 Private productsBinding As BindingSource
-
 Public Sub New()
     InitializeComponent()
     productList = New List(Of ProductModel)()
     suplierList = New List(Of SupplierModel)()
-
     productList.Add(New ProductModel(1, "Chai"))
     productList.Add(New ProductModel(2, "Chang"))
     productList.Add(New ProductModel(3, "Aniseed Syrup"))
@@ -352,14 +322,12 @@ Public Sub New()
     productList.Add(New ProductModel(5, "Chartreuse verte"))
     productList.Add(New ProductModel(2, "Ravioli Angelo"))
     productList.Add(New ProductModel(4, "Perth Pasties"))
-
     suplierList.Add(New SupplierModel(1, "Exotic Liquids"))
     suplierList.Add(New SupplierModel(2, "New Orleans Cajun Delights"))
     suplierList.Add(New SupplierModel(3, "Tokyo Traders"))
     suplierList.Add(New SupplierModel(4, "Norske Meierier"))
     suplierList.Add(New SupplierModel(5, "New England Seafood Cannery"))
     suplierList.Add(New SupplierModel(6, "Leka Trading"))
-
     productsBinding = New BindingSource()
     productsBinding.DataSource = productList
 End Sub

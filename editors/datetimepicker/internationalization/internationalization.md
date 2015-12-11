@@ -69,7 +69,7 @@ initialDateTime = Me.RadDateTimePicker1.Value
 AddHandler RadDateTimePicker1.ValueChanged, AddressOf radDateTimePicker1_ValueChanged
 End Sub
 '#End Region
-'#region valueChanged
+'#region "valueChanged"
 Private suspendValueChanged As Boolean = False
 Private Sub radDateTimePicker1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
 Dim dt As Date = Me.RadDateTimePicker1.Value
@@ -156,7 +156,7 @@ initialDateTime = Me.RadDateTimePicker1.Value
 AddHandler RadDateTimePicker1.ValueChanged, AddressOf radDateTimePicker1_ValueChanged
 End Sub
 '#End Region
-'#region valueChanged
+'#region "valueChanged"
 Private suspendValueChanged As Boolean = False
 Private Sub radDateTimePicker1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
 Dim dt As Date = Me.RadDateTimePicker1.Value
@@ -237,7 +237,7 @@ initialDateTime = Me.RadDateTimePicker1.Value
 AddHandler RadDateTimePicker1.ValueChanged, AddressOf radDateTimePicker1_ValueChanged
 End Sub
 '#End Region
-'#region valueChanged
+'#region "valueChanged"
 Private suspendValueChanged As Boolean = False
 Private Sub radDateTimePicker1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
 Dim dt As Date = Me.RadDateTimePicker1.Value
@@ -316,7 +316,7 @@ initialDateTime = Me.RadDateTimePicker1.Value
 AddHandler RadDateTimePicker1.ValueChanged, AddressOf radDateTimePicker1_ValueChanged
 End Sub
 '#End Region
-'#region valueChanged
+'#region "valueChanged"
 Private suspendValueChanged As Boolean = False
 Private Sub radDateTimePicker1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
 Dim dt As Date = Me.RadDateTimePicker1.Value

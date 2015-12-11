@@ -51,10 +51,6 @@ Private Sub OnTextBlockFormatting(sender As Object, e As Telerik.WinControls.UI.
         textBlock.ForeColor = Color.Red
     End If
 End Sub
- Region
-Private Sub applyCustomTextBlock1()
-    '#Region "applyCustomTextBlock1"
-    AddHandler RadTextBoxControl1.CreateTextBlock, AddressOf radTextBoxControl1_CreateTextBlock
 
 ````
 

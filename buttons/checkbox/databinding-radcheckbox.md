@@ -31,6 +31,7 @@ You can also add __DataBindings__ to your control programmatically. The followin
 {{source=..\SamplesVB\Buttons\CheckBox.vb region=databinding}} 
 
 ````C#
+Console.WriteLine("testing snippet tool");
 this.radCheckBox1.IsThreeState = false;
 DataTable t = new DataTable();
 t.Columns.Add("A", typeof(bool));

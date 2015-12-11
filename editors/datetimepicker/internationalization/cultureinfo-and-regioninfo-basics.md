@@ -43,11 +43,11 @@ The table below is a sample list of the names and identifiers found in the Cult
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=SetPashtoCulture}} 
 
 ````C#
-this.radDateTimePicker1.Culture = new System.Globalization.CultureInfo("ar-SA");
+this.radCalendar1.Culture = new System.Globalization.CultureInfo("ps-AF");
 
 ````
 ````VB.NET
-Me.RadDateTimePicker1.Culture = New System.Globalization.CultureInfo("ar-SA")
+Me.RadCalendar1.Culture = New System.Globalization.CultureInfo("ps-AF")
 
 ````
 

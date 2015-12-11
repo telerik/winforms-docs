@@ -28,7 +28,18 @@ In order to export a document to plain text you need to use the __Export()__ met
 {{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Plain Text\PdfProcessingFormatsAndConversionPlainTextUsingTextFormatProvider.cs region=UsingTextFormatProvider}} 
 {{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Plain Text\PdfProcessingFormatsAndConversionPlainTextUsingTextFormatProvider.vb region=UsingTextFormatProvider}}
 
-""
+````C#
+TextFormatProvider provider = new TextFormatProvider();
+RadFixedDocument document = CreateRadFixedDocument();
+string documentContent = provider.Export(document);
+
+````
+````VB.NET
+Dim provider As New TextFormatProvider()
+Dim document As RadFixedDocument = CreateRadFixedDocument()
+Dim documentContent As String = provider.Export(document)
+
+````
 
 {{endregion}}
 

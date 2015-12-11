@@ -104,11 +104,6 @@ Private Sub AddAutoCompleteItems()
     autoCompleteItems.Add(New RadListDataItem("David"))
     autoCompleteItems.Add(New RadListDataItem("Mike"))
 End Sub
- Region
-Private Sub formatting1()
-    '#Region "Formatting1"
-    AddHandler Me.RadTextBoxControl1.TextBlockFormatting, AddressOf Me.OnTextBlockFormatting
-    Me.RadTextBoxControl1.Text = "This is important text."
 
 ````
 

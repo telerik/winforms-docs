@@ -57,13 +57,13 @@ __Example 1__ shows how transformations can be appended.
 ````C#
 MatrixPosition matrixPosition = new MatrixPosition();
 matrixPosition.Translate(20, 20); // Translates the position by (20, 20)
-matrixPosition.Translate(30, 30); // Translates the position by (30, 30)
+matrixPosition.Translate(30, 30); // Translates the position by (30, 30).
 
 ````
 ````VB.NET
 Dim matrixPosition As MatrixPosition = New MatrixPosition()
 matrixPosition.Translate(20, 20) ' Translates the position by (20, 20)
-matrixPosition.Translate(30, 30) ' Translates the position by (30, 30)
+matrixPosition.Translate(30, 30) ' Translates the position by (30, 30).
 
 ````
 

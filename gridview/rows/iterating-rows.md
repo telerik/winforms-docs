@@ -119,31 +119,29 @@ When you have a hierarchical grid with many templates you can use a recursive me
 {{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=hierarchy}} 
 
 ````C#
-        public void IterateAllRows(IEnumerable<GridViewRowInfo> rowsCollection)
+public void IterateAllRows(IEnumerable<GridViewRowInfo> rowsCollection)
+{
+    foreach (GridViewDataRowInfo row in rowsCollection)
+    {
+        Debug.WriteLine(row.Cells[0].Value);//This rows is used for demonstration only!
+        if (row.HasChildRows())
         {
-            foreach (GridViewDataRowInfo row in rowsCollection)
-            {
-                Debug.WriteLine(row.Cells[0].Value);//This rows is used for demonstration only!
-
-                if (row.HasChildRows())
-                {
-                    IterateAllRows(row.ChildRows);
-                }
-            }
-
+            IterateAllRows(row.ChildRows);
         }
+    }
+}
+
 ````
 ````VB.NET
-    Public Sub IterateAllRows(rowsCollection As IEnumerable(Of GridViewRowInfo))
-        For Each row As GridViewDataRowInfo In rowsCollection
-            Debug.WriteLine(row.Cells(0).Value)
+Public Sub IterateAllRows(rowsCollection As IEnumerable(Of GridViewRowInfo))
+    For Each row As GridViewDataRowInfo In rowsCollection
+        Debug.WriteLine(row.Cells(0).Value)
+        If row.HasChildRows() Then
+            IterateAllRows(row.ChildRows)
+        End If
+    Next
+End Sub
 
-            If row.HasChildRows() Then
-                IterateAllRows(row.ChildRows)
-            End If
-        Next
-    End Sub
-    '
 ````
 
 {{endregion}} 
@@ -172,17 +170,14 @@ private void radButton1_Click(object sender, EventArgs e)
             {
                 cell.Value = "TEST";
             }
-
             if (cell.ColumnInfo.Name == "UnitPrice")
             {
                 cell.Value = 1.11111;
             }
-
             i++;
         }
     }
 }
-
 public List<GridViewRowInfo> GetAllRows(GridViewTemplate template)
 {
     List<GridViewRowInfo> allRows = new List<GridViewRowInfo>();
@@ -192,7 +187,6 @@ public List<GridViewRowInfo> GetAllRows(GridViewTemplate template)
         List<GridViewRowInfo> childRows = this.GetAllRows(childTemplate);
         allRows.AddRange(childRows);
     }
-
     return allRows;
 }
 
@@ -207,16 +201,13 @@ Private Sub radButton1_Click(sender As Object, e As EventArgs)
             If cell.ColumnInfo.Name = "CompanyName" OrElse cell.ColumnInfo.Name = "ShipCountry" Then
                 cell.Value = "TEST"
             End If
-
             If cell.ColumnInfo.Name = "UnitPrice" Then
                 cell.Value = 1.11111
             End If
-
             i += 1
         Next
     Next
 End Sub
-
 Public Function GetAllRows(template As GridViewTemplate) As List(Of GridViewRowInfo)
     Dim allRows As New List(Of GridViewRowInfo)()
     allRows.AddRange(template.Rows)
@@ -224,7 +215,6 @@ Public Function GetAllRows(template As GridViewTemplate) As List(Of GridViewRowI
         Dim childRows As List(Of GridViewRowInfo) = Me.GetAllRows(childTemplate)
         allRows.AddRange(childRows)
     Next
-
     Return allRows
 End Function
 
