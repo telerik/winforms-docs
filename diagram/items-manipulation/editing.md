@@ -62,7 +62,6 @@ In the code snippet below it is demonstrated how to access the editor element:
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=GetEditor}} 
 
 ````C#
-            
 private void shape_BeginEdit(object sender, EventArgs e)
 {
     RadDiagramShape shape = sender as RadDiagramShape;

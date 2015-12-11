@@ -67,6 +67,9 @@ End Sub
 
 >note These settings will not be applied on text which is imported by a rich text FormatProvider, as the settings defined in the input file/string will be applied.
 
+
+>tip You can set the caret width with the CaretWidth property as well
+
 ## How to Get and Set the Text of RadRichTextEditor
 
 __RadRichTextEditor__ does not have a Text property because different formats for import and export of documents are supported – RTF, HTML, XAML, docX, plain text and PDF (export only). In order to set the contents of the document, it should be clear what format the data is in. For easier extensibility and separation of concerns, format providers that deal with the import and export of the documents are used. Here is a list of the currently available format providers and the namespaces they are included in:
@@ -221,7 +224,7 @@ radRichTextEditor1.Document.Sections.First.PageMargin = New Telerik.WinForms.Doc
 Inserting multiple [Table]({%slug winforms/richtexteditor-/document-elements/table%}) elements in a RadDocument one after another results in them being separated by some space. This may also happen when importing a document from one of the supported formats.The additional space is caused by an empty paragraph appended between the tables and is expected as RadDocument's structure does not allow adjacent tables.
         
 
-When [building a document from code](a39d503e-19ad-420b-811f-3beffebe7401#Creating_a_Document_at_run_time), you should also follow the same approach and add paragraphs between tables in order to prevent possible issues from arising.
+When [building a document from code]({%slug winforms/richtexteditor-/getting-started%}), you should also follow the same approach and add paragraphs between tables in order to prevent possible issues from arising.
         
 
 >warning Removing paragraphs separating tables manually is highly inadvisable and may cause unexpected crashes.

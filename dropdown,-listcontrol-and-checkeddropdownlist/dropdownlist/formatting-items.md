@@ -75,8 +75,6 @@ radDropDownList1.DropDownListElement.AutoCompleteSuggest.DropDownList.ListElemen
 
 ````
 ````VB.NET
-AddHandler RadDropDownList1.DropDownListElement.AutoCompleteSuggest.DropDownList.ListElement.VisualItemFormatting, AddressOf ListElement_VisualItemFormatting
-
 ````
 
 {{endregion}}  
@@ -102,6 +100,18 @@ Private Sub ListElement_VisualItemFormatting(sender As Object, args As VisualIte
     args.VisualItem.Font = myFont
 End Sub
  Region
+'#region CustomizeItems
+Private Sub radDropDownList1_VisualListItemFormatting(sender As Object, args As VisualItemFormattingEventArgs)
+    If args.VisualItem.Selected Then
+        args.VisualItem.NumberOfColors = 1
+        args.VisualItem.BackColor = Color.Yellow
+        args.VisualItem.BorderColor = Color.Blue
+    Else
+        args.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local)
+        args.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
+        args.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local)
+    End If
+End Sub
 
 ````
 

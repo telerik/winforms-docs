@@ -16,7 +16,7 @@ position: 2
 
 __RadRichTextEditor__ supports searching the contents of the document along with providing some methods for manipulating the selection. Used in combination, they become quite a powerful tool enabling scenarios like highlighting of specific parts of the document or replacing words and collocations.
         
->tip To learn more about the selection API read the[Selection]({%slug winforms/richtexteditor-/features/selection%})topic.
+>tip To learn more about the selection API read the [Selection]({%slug winforms/richtexteditor-/features/selection%}) topic.
 >
 
 The simplest scenario – finding a string in the content of the document can be implemented with the following code:

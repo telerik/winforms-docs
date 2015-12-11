@@ -69,7 +69,7 @@ Me.radRichTextEditor1.InsertCodeBlock(code, formattingSettings)
 The inner representation of the code block in the document is achieved by surrounding the content with __CodeAnnotationRangeStart__ and __CodeAnnotationRangeEnd__.
         
 
->tip More about annotations you can learn in the respective help [article]({Slug winforms/richtexteditor-/document-elements/annotations}).
+>tip More about annotations you can learn in the respective help [article]({%slug winforms/richtexteditor-/document-elements/annotations%}).
 
 
 To remove the code block you can use the __DeleteCodeBlock()__ method of __RadRichTextEditor__ accepting __CodeAnnotationRangeStart__ as parameter:

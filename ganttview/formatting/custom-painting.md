@@ -26,10 +26,9 @@ The following example demonstrates how to draw an image which appears exactly 12
 ````C#
 this.radGanttView1.EnableCustomPainting = true;
 this.radGanttView1.ItemPaint += radGanttView1_ItemPaint1;
+
 ````
 ````VB.NET
-Me.radGanttView1.EnableCustomPainting = True
-AddHandler Me.radGanttView1.ItemPaint, AddressOf radGanttView1_ItemPaint1
 ````
 {{endregion}} 
 
@@ -37,17 +36,6 @@ AddHandler Me.radGanttView1.ItemPaint, AddressOf radGanttView1_ItemPaint1
 {{source=..\SamplesCS\GanttView\Formatting\CustomPainting.vb region=FormattingPaintEvent1}} 
 
 ````C#
- private void radGanttView1_ItemPaint1(object sender, GanttViewItemPaintEventArgs e)
-{
-    if (e.Element.Data.Items.Count == 0 && e.Element.Data.End - e.Element.Data.Start > new TimeSpan(12, 0, 0))
-    {
-        RectangleF rect = this.radGanttView1.GanttViewElement.GraphicalViewElement.GetDrawRectangle(e.Element.Data, e.Element.Data.End.AddHours(12));
-        rect.Width = rect.Height;
-        e.Graphics.DrawImage(prizeImage, rect);
-    }
-}
-````
-````VB.NET
 private void radGanttView1_ItemPaint1(object sender, GanttViewItemPaintEventArgs e)
 {
     if (e.Element.Data.Items.Count == 0 && e.Element.Data.End - e.Element.Data.Start > new TimeSpan(12, 0, 0))
@@ -58,6 +46,8 @@ private void radGanttView1_ItemPaint1(object sender, GanttViewItemPaintEventArgs
     }
 }
 
+````
+````VB.NET
 ````
 
 {{endregion}} 
@@ -75,8 +65,6 @@ this.radGanttView1.ItemPaint += radGanttView1_ItemPaint2;
 
 ````
 ````VB.NET
-AddHandler Me.radGanttView1.ItemPaint, AddressOf radGanttView1_ItemPaint2
-
 ````
 
 {{endregion}} 
@@ -96,16 +84,6 @@ private void radGanttView1_ItemPaint2(object sender, GanttViewItemPaintEventArgs
 
 ````
 ````VB.NET
-private void radGanttView1_ItemPaint2(object sender, GanttViewItemPaintEventArgs e)
-{
-    if (e.Element.Data.Items.Count > 0)
-    {
-        DateTime start = e.Element.Data.Start.AddHours(-18);
-        RectangleF rect = this.radGanttView1.GanttViewElement.GraphicalViewElement.GetDrawRectangle(e.Element.Data, start, start.AddHours(10));
-        e.Graphics.FillRectangle(Brushes.LightBlue, rect);
-    }
-}
-
 ````
 
 {{endregion}} 

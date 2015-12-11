@@ -20,6 +20,7 @@ The following code snippet demonstrates how to access and customize the Range an
 {{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeHover}} 
 
 ````C#
+<<<<<<< HEAD
 this.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.LeftHover.BackColor = Color.Yellow;
 this.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.LeftHover.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
 this.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.LeftHover.Opacity = 0.5;
@@ -41,6 +42,20 @@ Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElem
 Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.Range.Opacity = 0.5
 Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.Range.BackColor = Color.Red
 Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.Range.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+=======
+void chartElement_SeriesInitialized(object sender, SeriesInitializedEventArgs e)
+{
+    e.Series.BackColor = Color.Lime;
+    e.Series.BorderColor = Color.Red;
+}
+
+````
+````VB.NET
+Private Sub chartElement_SeriesInitialized(sender As Object, e As SeriesInitializedEventArgs)
+    e.Series.BackColor = Color.Lime
+    e.Series.BorderColor = Color.Red
+End Sub
+>>>>>>> c9326a18b0c0e083ebcefa48a7f598be504053e9
 
 ````
 
@@ -54,6 +69,7 @@ Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElem
 {{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeThumb}} 
 
 ````C#
+<<<<<<< HEAD
 this.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.LeftThumb.BackColor = Color.Green;
 this.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.LeftThumb.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
 this.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.RightThumb.BackColor = Color.Green;
@@ -69,6 +85,20 @@ Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElem
 Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.RightThumb.GradientStyle = Telerik.WinControls.GradientStyles.Solid
 Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.LeftThumbLine.BackColor = Color.Green
 Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElement.RightThumbLine.BackColor = Color.Green
+=======
+void chartElement_SeriesInitialized(object sender, SeriesInitializedEventArgs e)
+{
+    e.Series.BackColor = Color.Lime;
+    e.Series.BorderColor = Color.Red;
+}
+
+````
+````VB.NET
+Private Sub chartElement_SeriesInitialized(sender As Object, e As SeriesInitializedEventArgs)
+    e.Series.BackColor = Color.Lime
+    e.Series.BorderColor = Color.Red
+End Sub
+>>>>>>> c9326a18b0c0e083ebcefa48a7f598be504053e9
 
 ````
 
@@ -84,6 +114,7 @@ This scroll element appears only when associated element implements IRangeSelect
 {{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeScroll}} 
 
 ````C#
+<<<<<<< HEAD
 this.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.LeftTopThumb.BackColor = Color.Green;
 this.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.LeftTopThumb.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
 this.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.BottomRightThumb.BackColor = Color.Green;
@@ -101,6 +132,20 @@ Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.BottomRightThumb
 Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.Range.BackColor = Color.Green
 Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.Range.GradientStyle = Telerik.WinControls.GradientStyles.Solid
 Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.SellectionRange.BackColor = Color.Red
+=======
+void chartElement_SeriesInitialized(object sender, SeriesInitializedEventArgs e)
+{
+    e.Series.BackColor = Color.Lime;
+    e.Series.BorderColor = Color.Red;
+}
+
+````
+````VB.NET
+Private Sub chartElement_SeriesInitialized(sender As Object, e As SeriesInitializedEventArgs)
+    e.Series.BackColor = Color.Lime
+    e.Series.BorderColor = Color.Red
+End Sub
+>>>>>>> c9326a18b0c0e083ebcefa48a7f598be504053e9
 
 ````
 
@@ -113,9 +158,8 @@ Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.SellectionRange.
 The scales are created dynamically according to the associated element and its look and feel can be customized through the __ScaleInitializing__ event.
 
 {{source=..\SamplesCS\RangeSelector\CustomizingRadRangeSelector.cs region=CustomizeScales}} 
-{{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeScales}} 
-
 ````C#
+<<<<<<< HEAD
 this.radRangeSelector1.ScaleInitializing += new ScaleInitializingEventHandler(radRangeSelector1_ScaleInitializing);
 
 ````
@@ -148,6 +192,19 @@ Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInit
     e.ScaleElement.ForeColor = Color.White
     e.ScaleElement.ScalePostion = ViewPosition.TopLeft
 End Sub
+=======
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.LeftTopThumb.BackColor = Color.Green
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.LeftTopThumb.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.BottomRightThumb.BackColor = Color.Green
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.BottomRightThumb.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.Range.BackColor = Color.Green
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.Range.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.SellectionRange.BackColor = Color.Red
+
+````
+````VB.NET
+this.radRangeSelector1.ScaleInitializing += new ScaleInitializingEventHandler(radRangeSelector1_ScaleInitializing);
+>>>>>>> c9326a18b0c0e083ebcefa48a7f598be504053e9
 
 ````
 

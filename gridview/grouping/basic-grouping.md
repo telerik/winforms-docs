@@ -79,11 +79,6 @@ this.radGridView1.ShowGroupPanelScrollbars = true;
 ````
 ````VB.NET
 Me.RadGridView1.ShowGroupPanelScrollbars = True
-'#End Region
-'#region usingSimpleGroupDescriptor
-Dim descriptor As New GroupDescriptor()
-descriptor.GroupNames.Add("Country", ListSortDirection.Ascending)
-Me.RadGridView1.GroupDescriptors.Add(descriptor)
 
 ````
 

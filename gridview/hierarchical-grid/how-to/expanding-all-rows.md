@@ -19,8 +19,6 @@ In order to expand all rows in __RadGridView__ you have to iterate through them 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=expandAllRows}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=expandAllRows}} 
 
-#### Expanding all rows of RadGridView 
-
 ````C#
 void ExpandAllRows(GridViewTemplate template, bool expanded)
 {

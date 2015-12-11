@@ -15,13 +15,13 @@ __RadRichTextEditor__ allows you to export and import its content. This is usefu
 * __XAML__ - to import/export __XAML__ documents you have to use the __XamlFormatProvider__ class.
           
 
-* __DOCX__ - to import/export __DOCX__documents you have to use the __DocxFormatProvider__ class.
+* __DOCX__ - to import/export __DOCX__ documents you have to use the __DocxFormatProvider__ class.
           
 
 * __HTML__ - to import/export __HTML__ documents you have to use the __HtmlFormatProvider__ class.
           
 
-* __RTF__- to import/export __RTF__documents you have to use the __RtfFormatProvider__ class.
+* __RTF__- to import/export __RTF__ documents you have to use the __RtfFormatProvider__ class.
           
 
 * __Plain text__- to import/export plain text documents you have to use the __TxtFormatProvider__ class.
@@ -47,10 +47,10 @@ Content controls such as Text Box, Combo Box and Date Picker that can be include
 
 #### HtmlFormatProvider
 
-As HTML's concept of headers and footers is different, when exporting with __RadRichTextEditor__headers and footers are ignored. When it comes to importing, the <header> and <footer> tags are included in the content of the imported document, but are not interpreted as __Header__ and __Footer__ of __RadDocument__.
+As HTML's concept of headers and footers is different, when exporting with __RadRichTextEditor__ headers and footers are ignored. When it comes to importing, the &lt;header&gt; and &lt;footer&gt; tags are included in the content of the imported document, but are not interpreted as __Header__ and __Footer__ of __RadDocument__.
             
 
-Moreover, the __HtmlFormatProvider__ ignores the concept of __Paged__[layout mode]({%slug winforms/richtexteditor-/getting-started/layout-modes%}) as a whole. Page breaks inserted in HTML for printing purposes are also ignored.
+Moreover, the __HtmlFormatProvider__ ignores the concept of __Paged__ [layout mode]({%slug winforms/richtexteditor-/getting-started/layout-modes%}) as a whole. Page breaks inserted in HTML for printing purposes are also ignored.
             
 #### TxtFormatProvider
 

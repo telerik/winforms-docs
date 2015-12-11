@@ -137,12 +137,16 @@ radRichTextEditor1.InsertCrossReferenceToHeading(headingParagraph, ReferenceCont
 
 ````
 ````VB.NET
+radRichTextEditor1.InsertCrossReferenceToHeading(headingParagraph, ReferenceContentType.OnlyCaption, True)
+
 ```` 
 
 
 {{endregion}}
 
-The parameters are almost the same, except the first one. It represents the paragraph you want to reference. The other two have the same purpose.Inserting Cross-Reference to a Caption
+The parameters are almost the same, except the first one. It represents the paragraph you want to reference. The other two have the same purpose.
+
+### Inserting Cross-Reference to a Caption
 
 The method signature is:
 

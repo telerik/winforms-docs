@@ -18,6 +18,7 @@ __RadRichTextEditor__ control provides functionality for inserting comment annot
 ## UI and Commands
 
 Commenting functionality is available in the Review tab inside the RadRichTextEditorRibbonUI example:
+
 ![richtexteditor-features-comments 001](images/richtexteditor-features-comments001.png)
 
 The following commands related to the commenting functionality are available in the Commands property of the RadRichTextEditor:
@@ -41,7 +42,7 @@ The following commands related to the commenting functionality are available in 
 * __ToggleCommentsCommand__: Toggles comments visibility.
             
 
->tip In order to learn more about commands and how to use them refer to[this article]({%slug winforms/richtexteditor-/features/commands%}).
+>tip In order to learn more about commands and how to use them refer to [this article]({%slug winforms/richtexteditor-/features/commands%}).
 >
 
 

@@ -20,9 +20,11 @@ When the RadCommandBar control is right clicked, a context menu enlisting the st
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=subscribeToContextMenuOpening}} 
 ````C#
 radCommandBar1.CustomizeContextMenu.DropDownOpening += new CancelEventHandler(CustomizeContextMenu_DropDownOpening);
+
 ````
 ````VB.NET
-    AddHandler RadCommandBar1.CustomizeContextMenu.DropDownOpening, AddressOf CustomizeContextMenu_DropDownOpening
+AddHandler RadCommandBar1.CustomizeContextMenu.DropDownOpening, AddressOf CustomizeContextMenu_DropDownOpening
+
 ````
 
 {{endregion}} 
@@ -32,36 +34,35 @@ radCommandBar1.CustomizeContextMenu.DropDownOpening += new CancelEventHandler(Cu
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=CustomizeTheContextMenu}} 
 
 ````C#
-        void CustomizeContextMenu_DropDownOpening(object sender, CancelEventArgs e)
-        {
-            //add custom item
-            RadMenuItem myItem = new RadMenuItem("MyItem");
-            radCommandBar1.CustomizeContextMenu.Items.Add(myItem);
-
-            //remove the customize menu option
-            for (int i = 0; i < radCommandBar1.CustomizeContextMenu.Items.Count; i++)
+void CustomizeContextMenu_DropDownOpening(object sender, CancelEventArgs e)
+{
+    //add custom item
+    RadMenuItem myItem = new RadMenuItem("MyItem");
+    radCommandBar1.CustomizeContextMenu.Items.Add(myItem);
+    //remove the customize menu option
+    for (int i = 0; i < radCommandBar1.CustomizeContextMenu.Items.Count; i++)
 			{
-                if ( radCommandBar1.CustomizeContextMenu.Items[i].Text == "Customize...")
-                {
-                    radCommandBar1.CustomizeContextMenu.Items.RemoveAt(i);
-                }
-            }
+        if ( radCommandBar1.CustomizeContextMenu.Items[i].Text == "Customize...")
+        {
+            radCommandBar1.CustomizeContextMenu.Items.RemoveAt(i);
         }
+    }
+}
+
 ````
 ````VB.NET
-    Private Sub CustomizeContextMenu_DropDownOpening(sender As Object, e As System.ComponentModel.CancelEventArgs)
-        'add custom item
-        Dim myItem As New RadMenuItem("MyItem")
-        RadCommandBar1.CustomizeContextMenu.Items.Add(myItem)
+Private Sub CustomizeContextMenu_DropDownOpening(sender As Object, e As System.ComponentModel.CancelEventArgs)
+    'add custom item
+    Dim myItem As New RadMenuItem("MyItem")
+    RadCommandBar1.CustomizeContextMenu.Items.Add(myItem)
+    'remove the customize menu option
+    For i As Integer = 0 To RadCommandBar1.CustomizeContextMenu.Items.Count - 1
+        If RadCommandBar1.CustomizeContextMenu.Items(i).Text = "Customize..." Then
+            RadCommandBar1.CustomizeContextMenu.Items.RemoveAt(i)
+        End If
+    Next
+End Sub
 
-        'remove the customize menu option
-        For i As Integer = 0 To RadCommandBar1.CustomizeContextMenu.Items.Count - 1
-            If RadCommandBar1.CustomizeContextMenu.Items(i).Text = "Customize..." Then
-                RadCommandBar1.CustomizeContextMenu.Items.RemoveAt(i)
-            End If
-        Next
-    End Sub
-    '
 ````
 
 {{endregion}} 

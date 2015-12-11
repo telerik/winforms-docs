@@ -23,7 +23,6 @@ The following code snipped shows how you can add __FastLineSeries__ to __RadChar
 Random rnd = new Random();
 FastLineSeries series = new FastLineSeries();
 FastLineSeries series1 = new FastLineSeries();
-
 for (int i = 0; i < 50; i++)
 {
     series.DataPoints.Add(new CategoricalDataPoint(rnd.Next(50, 100), i));
@@ -37,7 +36,6 @@ radChartView1.Series.Add(series1);
 Dim rnd As New Random()
 Dim series As New FastLineSeries()
 Dim series1 As New FastLineSeries()
-
 For i As Integer = 0 To 49
     series.DataPoints.Add(New CategoricalDataPoint(rnd.Next(50, 100), i))
     series1.DataPoints.Add(New CategoricalDataPoint(rnd.Next(50), i))

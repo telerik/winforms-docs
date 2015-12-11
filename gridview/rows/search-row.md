@@ -117,13 +117,11 @@ Example 1 demonstrates how you can suspend the search.
 
 ````C#
 radGridView1.MasterView.TableSearchRow.SuspendSearch();
-
 radGridView1.MasterView.TableSearchRow.ResumeSearch();
 
 ````
 ````VB.NET
 RadGridView1.MasterView.TableSearchRow.SuspendSearch()
-
 RadGridView1.MasterView.TableSearchRow.ResumeSearch()
 
 ````

@@ -20,10 +20,10 @@ This article explains you can convert your applications that use the RadRichText
 In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take the following steps:     
         
 
-1. Remove the references to *Telerik.WinControls.RichTextBox.dll* and then add the one for the new control: 
+1\. Remove the references to *Telerik.WinControls.RichTextBox.dll* and then add the one for the new control: 
             *Telerik.WinControls.RichTextEditor.dll*
 
-1. Replace the __RadRichTextBox__ type with __RadRichTextEditor__ (you can change the name as well)
+2\. Replace the __RadRichTextBox__ type with __RadRichTextEditor__ (you can change the name as well)
 
 {{source=..\SamplesCS\RichTextEditor\Upgrade.cs region=upgrade}} 
 {{source=..\SamplesVB\RichTextEditor\Upgrade.vb region=upgrade}} 
@@ -46,7 +46,7 @@ Private radRichTextEditor1 As New RadRichTextEditor()
 {{endregion}} 
 
 
-1. __RadRichTextEditor__ supports all features that are supported in the RadRichTextBox (and much more), however some of them  may not be at the same place and some compile time errors may occur. The final step is to fix these errors, it can be achieved by  finding the new equivalents of the missing properties and method and replacing them. Should you have any issues finding a property or a method, feel free to submit a support ticket and we will help you find it.
+3\. __RadRichTextEditor__ supports all features that are supported in the RadRichTextBox (and much more), however some of them  may not be at the same place and some compile time errors may occur. The final step is to fix these errors, it can be achieved by  finding the new equivalents of the missing properties and method and replacing them. Should you have any issues finding a property or a method, feel free to submit a support ticket and we will help you find it.
 
 >important  __RadRichTextEditor__ example provides you with a ribbon UI that can be easily used if you need a fully functional text editor.  Detailed information is available [here]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}).
 >

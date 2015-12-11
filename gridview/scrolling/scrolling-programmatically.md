@@ -25,18 +25,6 @@ this.radGridView1.TableElement.ScrollTo(5, 4);
 ````
 ````VB.NET
 Me.RadGridView1.TableElement.ScrollTo(5, 4)
-'#End Region
-'#Region "Column"
-RadGridView1.TableElement.ScrollToColumn(3)
-'#End Region
-'#Region "Row"
-RadGridView1.TableElement.ScrollToRow(100)
-'#End Region
-End Sub
-'#region scrollBarValueChanged
-Sub VScrollBar_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-Console.WriteLine(Me.RadGridView1.TableElement.VScrollBar.Value)
-End Sub
 
 ````
 
@@ -54,15 +42,6 @@ radGridView1.TableElement.ScrollToColumn(3);
 ````
 ````VB.NET
 RadGridView1.TableElement.ScrollToColumn(3)
-'#End Region
-'#Region "Row"
-RadGridView1.TableElement.ScrollToRow(100)
-'#End Region
-End Sub
-'#region scrollBarValueChanged
-Sub VScrollBar_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-Console.WriteLine(Me.RadGridView1.TableElement.VScrollBar.Value)
-End Sub
 
 ````
 
@@ -80,12 +59,6 @@ radGridView1.TableElement.ScrollToRow(100);
 ````
 ````VB.NET
 RadGridView1.TableElement.ScrollToRow(100)
-'#End Region
-End Sub
-'#region scrollBarValueChanged
-Sub VScrollBar_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-Console.WriteLine(Me.RadGridView1.TableElement.VScrollBar.Value)
-End Sub
 
 ````
 

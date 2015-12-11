@@ -197,10 +197,6 @@ Private Sub radTextBoxControl1_CreateTextBlock(sender As Object, e As CreateText
         e.TextBlock = New ButtonTextBlock()
     End If
 End Sub
- Region
-Private Sub setTheText()
-    '#Region "applyCustomTextBlock3"
-    Me.RadTextBoxControl1.Text = "Please, click here"
 
 ````
 

@@ -51,13 +51,9 @@ Me.RadDataLayout1.AutoSizeLabels = True
 public class Employee
 {
     public string FirstName { get; set; }
-
     public string LastName { get; set; }
-
     public string Occupation { get; set; }
-
     public DateTime StartingDate { get; set; }
-
     public bool IsMarried { get; set; }
 }
 
@@ -73,7 +69,6 @@ Public Class EmployeeModel
         End Set
     End Property
     Private m_FirstName As String
-
     Public Property LastName() As String
         Get
             Return m_LastName
@@ -83,7 +78,6 @@ Public Class EmployeeModel
         End Set
     End Property
     Private m_LastName As String
-
     Public Property Occupation() As String
         Get
             Return m_Occupation
@@ -93,7 +87,6 @@ Public Class EmployeeModel
         End Set
     End Property
     Private m_Occupation As String
-
     Public Property StartingDate() As DateTime
         Get
             Return m_StartingDate
@@ -103,7 +96,6 @@ Public Class EmployeeModel
         End Set
     End Property
     Private m_StartingDate As DateTime
-
     Public Property IsMarried() As Boolean
         Get
             Return m_IsMarried
@@ -201,7 +193,6 @@ employees.Add(new Employee()
     StartingDate = new DateTime(2005, 04, 12),
     IsMarried = true
 });
-
 this.bindingSource1.DataSource = employees;
 this.radDataLayout1.DataSource = this.bindingSource1;
 this.radBindingNavigator1.BindingSource = this.bindingSource1;
@@ -237,7 +228,6 @@ employees.Add(New EmployeeModel() With {
     .StartingDate = New DateTime(2005, 4, 12),
     .IsMarried = True
 })
-
 Me.BindingSource1.DataSource = employees
 Me.RadDataLayout1.DataSource = Me.BindingSource1
 Me.RadBindingNavigator1.BindingSource = Me.BindingSource1

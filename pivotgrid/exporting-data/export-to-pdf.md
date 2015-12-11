@@ -25,14 +25,12 @@ Before exporting to PDF, you have to initialize the __PivotGridPdfExport__ class
 ````C#
 PivotGridPdfExport exporter = new PivotGridPdfExport(radPivotGrid1);
 PdfExportRenderer renderer = new PdfExportRenderer();
-
 exporter.RunExport(@"C:\PivotData.pdf", renderer);
 
 ````
 ````VB.NET
 Dim exporter As New PivotGridPdfExport(radPivotGrid1)
 Dim renderer As New PdfExportRenderer()
-
 exporter.RunExport("C:\PivotData.pdf", renderer)
 
 ````

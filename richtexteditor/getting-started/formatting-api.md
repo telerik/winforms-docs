@@ -16,7 +16,7 @@ If you want to format the content of __RadRichTextEditor__ at run time, you have
 
 The __RadRichTextEditor__ exposes methods that change the style of the selected text or the paragraph. When a method is called, the respective style is applied to the selected text. If there is no selection available, the style is applied to the word in which the caret is located.
 
-Here is an example of a toggle button that upon checking should make the selection or the current word bold. In the handler of the __Click__ event of the __RadToggleButton__, the __ToggleBold()__ method of__RadRichTextEditor__ is called.
+Here is an example of a toggle button that upon checking should make the selection or the current word bold. In the handler of the __Click__ event of the __RadToggleButton__, the __ToggleBold()__ method of __RadRichTextEditor__ is called.
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=bold}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=bold}} 
@@ -44,7 +44,7 @@ End Sub
 __RadRichTextEditor__ supports headers and footers. They are represented through separate instances of __RadRichTextEditor__. When a document has headers and footers you can use the __ActiveDocumentEditor__ property of __RadRichTextEditor__ to get the editor instance where the caret is currently situated.
         
 
->tip You can find more about the Header and Footer functionality in[this article]({%slug winforms/richtexteditor-/features/headers-and-footers%}).
+>tip You can find more about the Header and Footer functionality in [this article]({%slug winforms/richtexteditor-/features/headers-and-footers%}).
 >
 
 The following example inserts the word "text" at the CaretPosition.

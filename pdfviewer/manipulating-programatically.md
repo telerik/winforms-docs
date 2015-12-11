@@ -223,10 +223,6 @@ this.radPdfViewer1.RadContextMenu = this.radContextMenu1;
 ````
 ````VB.NET
 Me.radPdfViewer1.RadContextMenu = Me.radContextMenu1
-'#End Region
-'#region ShowHideThumbnails
-Me.radPdfViewer1.ShowThubnails()
-Me.radPdfViewer1.HideThumbnails()
 
 ````
 

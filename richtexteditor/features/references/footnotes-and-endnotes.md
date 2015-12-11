@@ -40,13 +40,13 @@ Here is the list of the available properties concerning footnotes:
 * __FootnotesNumberingRestartType__ - Represents the type of the footnotes numbering restart. The available types are :
                 
 
-* __Continuous__ - numbering is never restarted.
+	* __Continuous__ - numbering is never restarted.
                   
 
-* __EachPage__ - numbering is restarted on each page.
+	* __EachPage__ - numbering is restarted on each page.
                   
 
-* __EachSection__ - numbering is restarted on each section.
+	* __EachSection__ - numbering is restarted on each section.
                   
 
 * __FootnotesPosition__ - __PageBottom__ is the only available option.
@@ -64,19 +64,19 @@ Here is the list of the available properties concerning endnotes:
 * __EndnotesNumberingRestartType__ - Represents the type of the endnotes numbering restart. The available types are :
                 
 
-* __Continuous__ - same numbering is used for all endnotes in the document.
+	* __Continuous__ - same numbering is used for all endnotes in the document.
                   
 
-* __EachSection__ - numbering is restarted on each section.
+	* __EachSection__ - numbering is restarted on each section.
                   
 
 * __EndnotesPosition__ - Available options are:
                 
 
-* __DocumentEnd__ - all endnotes are shown at the end of the document.
+	* __DocumentEnd__ - all endnotes are shown at the end of the document.
                   
 
-* __SectionEnd__ - there is a list of endnotes for each section.
+	* __SectionEnd__ - there is a list of endnotes for each section.
                   
 
 ## Creating and Inserting

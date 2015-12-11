@@ -68,16 +68,12 @@ __RadDataLayout__ has support for several attributes that can be used to change 
 public class Employee
 {
     public string FirstName { get; set; }
-
     [DisplayName("Family Name")]
     public string LastName { get; set; }
-
     [Browsable(false)]
     public string Occupation { get; set; }
-
     [RadRange(2000, 3000)]
     public int Salary { get; set; }
-
     public DateTime StartingDate { get; set; }
 }
 
@@ -93,7 +89,6 @@ Public Class Employee
         End Set
     End Property
     Private m_FirstName As String
-
     <DisplayName("Family Name")> _
     Public Property LastName() As String
         Get
@@ -104,7 +99,6 @@ Public Class Employee
         End Set
     End Property
     Private m_LastName As String
-
     <Browsable(False)> _
     Public Property Occupation() As String
         Get
@@ -115,7 +109,6 @@ Public Class Employee
         End Set
     End Property
     Private m_Occupation As String
-
     <RadRange(2000, 3000)> _
     Public Property Salary() As Integer
         Get
@@ -126,7 +119,6 @@ Public Class Employee
         End Set
     End Property
     Private m_Salary As Integer
-
     Public Property StartingDate() As DateTime
         Get
             Return m_StartingDate

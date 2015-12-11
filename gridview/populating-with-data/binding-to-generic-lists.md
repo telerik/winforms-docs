@@ -19,8 +19,6 @@ Generally, you should not try to bind __RadGridView__ to a list of simple types.
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToGenericLists.cs region=bindingToListOfSimpleTypes}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToGenericLists.vb region=bindingToListOfSimpleTypes}} 
 
-#### Binding to list of simple types 
-
 ````C#
 List<string> list = new List<string>();
 list.Add("One");
@@ -51,8 +49,6 @@ The example below defines a "MyObject" class containing one integer and one stri
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToGenericLists.cs region=objectClass}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToGenericLists.vb region=objectClass}} 
-
-#### Creating object of simple type 
 
 ````C#
 public class MyObject
@@ -109,8 +105,6 @@ End Class
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToGenericLists.cs region=bindingtoObjectsOfSimpleType}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToGenericLists.vb region=bindingtoObjectsOfSimpleType}} 
-
-#### Binding to list of simple types 
 
 ````C#
 List<MyObject> myList = new List<MyObject>();

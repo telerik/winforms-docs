@@ -34,7 +34,14 @@ The constructor of the **TextFormatProviderSettings** class has two overloads:
 #### Example 1: Create TextFormatProviderSettings
 
 {{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Plain Text\PdfProcessingFormatsAndConversionPlainTextSettings.cs region=CreateSettings}} 
-{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Plain Text\PdfProcessingFormatsAndConversionPlainTextSettings.vb region=CreateSettings}}
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Plain Text\PdfProcessingFormatsAndConversionPlainTextSettings.vb region=CreateSettings}}````C#
+TextFormatProviderSettings settings = new TextFormatProviderSettings("/r/n", "*Page {0}*");
+
+````
+````VB.NET
+Dim settings As New TextFormatProviderSettings("/r/n", "*Page {0}*")
+
+````
 
 
 
@@ -49,7 +56,18 @@ The __Export()__ method of **TextFormatProvider** allows you to pass a **TextFor
 #### Example 2: Apply TextFormatProviderSettings
 
 {{source=..\SamplesCS\PdfProcessing\Formats and Conversion\Plain Text\PdfProcessingFormatsAndConversionPlainTextSettings.cs region=ApplySettings}} 
-{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Plain Text\PdfProcessingFormatsAndConversionPlainTextSettings.vb region=ApplySettings}}
+{{source=..\SamplesVB\PdfProcessing\Formats and Conversion\Plain Text\PdfProcessingFormatsAndConversionPlainTextSettings.vb region=ApplySettings}}````C#
+RadFixedDocument document = CreateRadFixedDocument();
+TextFormatProvider provider = new TextFormatProvider();
+string text = provider.Export(document, settings);
+
+````
+````VB.NET
+Dim document As RadFixedDocument = CreateRadFixedDocument()
+Dim provider As New TextFormatProvider()
+Dim text As String = provider.Export(document, settings)
+
+````
 
 ````C#
 RadFixedDocument document = CreateRadFixedDocument();

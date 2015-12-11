@@ -26,7 +26,7 @@ This article describes how this feature can be used in terms of UI and API of __
 
 The editing restrictions can be used with a set of users or groups. When document protection is enforced, each user will be able to edit only the parts of the document he/she has rights for and the parts that are editable by the group he/she belongs to.
 
-The users that will be able to edit the document and the groups they are in can be declared like this:#_[C#] _
+The users that will be able to edit the document and the groups they are in can be declared like this: 
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=users}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=users}} 
@@ -141,7 +141,7 @@ dropdown1.DisplayMember = "Username"
 
 {{endregion}} 
 
-Then, when the selected item of the combo changes, the CurrentUser of the editor will be updated:#_[C#] _
+Then, when the selected item of the combo changes, the CurrentUser of the editor will be updated: 
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=combo3}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo3}} 
