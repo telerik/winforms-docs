@@ -207,7 +207,9 @@ Me.RadGridView1.MasterTemplate.Templates(0).SummaryRowsTop.Add(summaryRowItem)
 The GroupSummaryEvaluate event is fired after a summary item is calculated and before the summary row is displayed. You can use it to apply custom formatting to the summary row:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=customFormatting}} 
-{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=customFormatting}}````C#
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=customFormatting}}
+
+````C#
 void CustomFormatting()
 {
     
@@ -256,7 +258,9 @@ You can write your own logic for summary items evaluation by inheriting the Grid
 The following example demonstrates how to create a custom summaryitem which calculates the count of orders with Freight is less than 50:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=customSummaryItemUsage}} 
-{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=customSummaryItemUsage}}````C#
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=customSummaryItemUsage}}
+
+````C#
 void CustomSummaryItemUsage()
 {
     CustomSummaryItem summaryItem = new CustomSummaryItem("Freight", "The low freight orders are {0}.", GridAggregateFunction.Count);
