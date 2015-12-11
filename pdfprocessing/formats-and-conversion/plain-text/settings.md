@@ -69,18 +69,6 @@ Dim text As String = provider.Export(document, settings)
 
 ````
 
-````C#
-RadFixedDocument document = CreateRadFixedDocument();
-TextFormatProvider provider = new TextFormatProvider();
-string text = provider.Export(document, settings);
-
-````
-````VB.NET
-Dim document As RadFixedDocument = CreateRadFixedDocument()
-Dim provider As New TextFormatProvider()
-Dim text As String = provider.Export(document, settings)
-````
-
 {{endregion}}
 
 
