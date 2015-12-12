@@ -10,8 +10,6 @@ position: 3
 
 # Custom painting
 
- 
-## 
 
 RadGanttView offers several method of customizing the looks of the elements it is displaying. One of these methods is allowing developers to directly draw over the control through its Graphics object. To enable this functionality you have to set the  __EnableCustomPainting__ property of the control to __true__ and to subscribe to the __ItemPaint__ event.
         
@@ -29,6 +27,9 @@ this.radGanttView1.ItemPaint += radGanttView1_ItemPaint1;
 
 ````
 ````VB.NET
+Me.radGanttView1.EnableCustomPainting = True
+AddHandler Me.radGanttView1.ItemPaint, AddressOf radGanttView1_ItemPaint1
+
 ````
 {{endregion}} 
 
@@ -48,6 +49,14 @@ private void radGanttView1_ItemPaint1(object sender, GanttViewItemPaintEventArgs
 
 ````
 ````VB.NET
+Private Sub radGanttView1_ItemPaint1(sender As Object, e As GanttViewItemPaintEventArgs)
+    If (e.Element.Data.Items.Count = 0 AndAlso e.Element.Data.End - e.Element.Data.Start > New TimeSpan(12, 0, 0)) Then
+        Dim rect As RectangleF = Me.radGanttView1.GanttViewElement.GraphicalViewElement.GetDrawRectangle(e.Element.Data, e.Element.Data.End.AddHours(12))
+        rect.Width = rect.Height
+        e.Graphics.DrawImage(prizeImage, rect)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
@@ -65,12 +74,14 @@ this.radGanttView1.ItemPaint += radGanttView1_ItemPaint2;
 
 ````
 ````VB.NET
+AddHandler Me.radGanttView1.ItemPaint, AddressOf radGanttView1_ItemPaint2
+
 ````
 
 {{endregion}} 
 
 {{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingPaintEvent2}} 
-{{source=..\SamplesCS\GanttView\Formatting\CustomPainting.vb region=FormattingPaintEvent2}} 
+{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingPaintEvent2}} 
 ````C#
 private void radGanttView1_ItemPaint2(object sender, GanttViewItemPaintEventArgs e)
 {
@@ -84,6 +95,14 @@ private void radGanttView1_ItemPaint2(object sender, GanttViewItemPaintEventArgs
 
 ````
 ````VB.NET
+Private Sub radGanttView1_ItemPaint2(sender As Object, e As GanttViewItemPaintEventArgs)
+    If (e.Element.Data.Items.Count > 0) Then
+        Dim start As DateTime = e.Element.Data.Start.AddHours(-18)
+        Dim rect As RectangleF = Me.radGanttView1.GanttViewElement.GraphicalViewElement.GetDrawRectangle(e.Element.Data, start, start.AddHours(10))
+        e.Graphics.FillRectangle(Brushes.LightBlue, rect)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
