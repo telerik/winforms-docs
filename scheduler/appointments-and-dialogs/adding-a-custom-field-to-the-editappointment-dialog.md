@@ -137,6 +137,28 @@ public class AppointmentWithEmail : Appointment
 
 ````
 ````VB.NET
+Public Class AppointmentWithEmail
+Inherits Appointment
+    Public Sub New()
+        MyBase.New()
+    End Sub
+    Protected Overrides Function CreateOccurrenceInstance() As [Event]
+        Return New AppointmentWithEmail()
+    End Function
+    Private _email As String = String.Empty
+    Public Property Email() As String
+        Get
+            Return Me._email
+        End Get
+        Set(ByVal value As String)
+            If Me._email <> value Then
+                Me._email = value
+                Me.OnPropertyChanged("Email")
+            End If
+        End Set
+    End Property
+End Class
+
 ````
 
 {{endregion}} 
@@ -150,22 +172,19 @@ public class AppointmentWithEmail : Appointment
     
 public class CustomAppointmentFactory : IAppointmentFactory
 {
-    #region IAppointmentFactory Members
-        
     public IEvent CreateNewAppointment()
     {
         return new AppointmentWithEmail();
     }
+}
 
 ````
 ````VB.NET
 Public Class CustomAppointmentFactory
 Implements IAppointmentFactory
-    #Region "IAppointmentFactory Members"
     Public Function CreateNewAppointment() As IEvent Implements IAppointmentFactory.CreateNewAppointment
         Return New AppointmentWithEmail()
     End Function
-    #End Region
 End Class
 
 ````
@@ -190,6 +209,14 @@ void radScheduler1_AppointmentEditDialogShowing(object sender, AppointmentEditDi
 
 ````
 ````VB.NET
+Private appointmentDialog As CustomAppointmentEditForm = Nothing
+Private Sub radScheduler1_AppointmentEditDialogShowing(ByVal sender As Object, ByVal e As AppointmentEditDialogShowingEventArgs)
+    If Me.appointmentDialog Is Nothing Then
+        Me.appointmentDialog = New CustomAppointmentEditForm()
+    End If
+    e.AppointmentEditDialog = Me.appointmentDialog
+End Sub
+
 ````
 
 {{endregion}} 

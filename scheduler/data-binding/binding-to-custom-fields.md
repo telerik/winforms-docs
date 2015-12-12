@@ -93,22 +93,19 @@ End Class
     
 public class CustomAppointmentFactory : IAppointmentFactory
 {
-    #region IAppointmentFactory Members
-        
     public IEvent CreateNewAppointment()
     {
         return new AppointmentWithEmail();
     }
+}
 
 ````
 ````VB.NET
 Public Class CustomAppointmentFactory
 Implements IAppointmentFactory
-    #Region "IAppointmentFactory Members"
     Public Function CreateNewAppointment() As IEvent Implements IAppointmentFactory.CreateNewAppointment
         Return New AppointmentWithEmail()
     End Function
-    #End Region
 End Class
 
 ````

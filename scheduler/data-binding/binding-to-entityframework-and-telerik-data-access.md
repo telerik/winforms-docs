@@ -33,16 +33,6 @@ private SchedulerDataEntities1 dbContext = new SchedulerDataEntities1();
 ````
 ````VB.NET
 Private dbContext As New SchedulerDataEntities1()
- Region
-Public Sub New()
-    InitializeComponent()
-    Me.scheduler = New RadScheduler()
-    Me.scheduler.Parent = Me
-    Me.scheduler.Dock = DockStyle.Fill
-    '#Region "Mappings"
-    Dim schedulerBindingSource As New SchedulerBindingDataSource()
-    Dim appointmentMappingInfo As New AppointmentMappingInfo()
-    Dim resourceMappingInfo As New ResourceMappingInfo()
 
 ````
 
