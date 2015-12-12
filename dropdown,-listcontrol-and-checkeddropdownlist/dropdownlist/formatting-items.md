@@ -67,15 +67,9 @@ In order to customize the auto complete popup, you should subscribe to the __Vis
 
 #### Subscribe to the VisualItemFormatting event of the auto complete popup
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListCustomizeItems.cs region=SubscribeToAutoCompleteSuggestVisualItemFormattingEvent}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListCustomizeItems.vb region=SubscribeToAutoCompleteSuggestVisualItemFormattingEvent}} 	
+{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListCustomizeItems.cs region=Event}} 
+{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListCustomizeItems.vb region=Event}} 	
 
-````C#
-radDropDownList1.DropDownListElement.AutoCompleteSuggest.DropDownList.ListElement.VisualItemFormatting += new VisualListItemFormattingEventHandler(ListElement_VisualItemFormatting);
-
-````
-````VB.NET
-````
 
 {{endregion}}  
 
@@ -86,34 +80,6 @@ The following code snippet, will demonstrate how to change the Font of all items
 {{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListCustomizeItems.cs region=CustomizeAutoCompleteDropDown}} 
 {{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListCustomizeItems.vb region=CustomizeAutoCompleteDropDown}} 
 
-````C#
-Font myFont = new Font("Segoe UI", 14, FontStyle.Bold);
-private void ListElement_VisualItemFormatting(object sender, VisualItemFormattingEventArgs args)
-{
-    args.VisualItem.Font = myFont;
-}
-
-````
-````VB.NET
-Private myFont As New Font("Segoe UI", 14, FontStyle.Bold)
-Private Sub ListElement_VisualItemFormatting(sender As Object, args As VisualItemFormattingEventArgs)
-    args.VisualItem.Font = myFont
-End Sub
- Region
-'#region CustomizeItems
-Private Sub radDropDownList1_VisualListItemFormatting(sender As Object, args As VisualItemFormattingEventArgs)
-    If args.VisualItem.Selected Then
-        args.VisualItem.NumberOfColors = 1
-        args.VisualItem.BackColor = Color.Yellow
-        args.VisualItem.BorderColor = Color.Blue
-    Else
-        args.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local)
-        args.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        args.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-    End If
-End Sub
-
-````
 
 {{endregion}} 
  

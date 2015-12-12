@@ -27,7 +27,8 @@ __Example 1__ shows how to import a txt file using a FileStream. The sample inst
 
 	
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingUsingTxtFormatProvider.cs region=radspreadprocessing-formats-and-conversion-txt-txtformatprovider_0}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingUsingTxtFormatProvider.vb region=radspreadprocessing-formats-and-conversion-txt-txtformatprovider_0}}````C#
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingUsingTxtFormatProvider.vb region=radspreadprocessing-formats-and-conversion-txt-txtformatprovider_0}}
+````C#
 Workbook workbook;
 IWorkbookFormatProvider formatProvider = new TxtFormatProvider();
 using (FileStream input = new FileStream(fileName, FileMode.Open))
@@ -50,7 +51,8 @@ __Example 2__ demonstrates how to export an existing Workbook to a TXT file. The
 
 	
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingUsingTxtFormatProvider.cs region=radspreadprocessing-formats-and-conversion-txt-txtformatprovider_1}} 
-{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingUsingTxtFormatProvider.vb region=radspreadprocessing-formats-and-conversion-txt-txtformatprovider_1}}````C#
+{{source=..\SamplesVB\RadSpreadProcessing\FormatsAndConversion\Txt\RadSpreadProcessingUsingTxtFormatProvider.vb region=radspreadprocessing-formats-and-conversion-txt-txtformatprovider_1}}
+````C#
 Workbook workbook = new Workbook();
 workbook.Worksheets.Add();
 string fileName = "SampleFile.txt";
