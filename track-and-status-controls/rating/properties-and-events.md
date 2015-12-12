@@ -43,9 +43,6 @@ this.radRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 ````
 ````VB.NET
 Me.RadRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-' #End Region
-'#Region "Direction"
-Me.RadRating1.Direction = RatingDirection.Reversed
 
 ````
 

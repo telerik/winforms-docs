@@ -31,7 +31,6 @@ EQATEC.Analytics.Monitor.IAnalyticsMonitor monitor = Telerik.WinControls.Analyti
 ````
 ````VB.NET
 Dim monitor As Global.EQATEC.Analytics.Monitor.IAnalyticsMonitor = Telerik.WinControls.Analytics.TraceMonitor.Initialize("product key")
-'
 
 ````
 
@@ -54,7 +53,6 @@ this.radButton1.AnalyticsName = "Save Button";
 ````VB.NET
 Me.RadButton1.EnableAnalytics = True
 Me.RadButton1.AnalyticsName = "Save Button"
-'
 
 ````
 

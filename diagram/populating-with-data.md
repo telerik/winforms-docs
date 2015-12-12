@@ -154,7 +154,6 @@ If openFileDialog1.ShowDialog() = DialogResult.OK Then
         MessageBox.Show((Convert.ToString("Unable to load ") & filename) + vbLf & "Error: " + ex.Message)
     End Try
 End If
-'
 
 ````
 

@@ -73,10 +73,6 @@ Private Sub radRating1_ValueChanged(sender As Object, e As EventArgs)
         rating.Description = String.Format("Your rating: {0:F2}/{1}", result, rating.Maximum)
     End If
 End Sub
-#End Region
-Private Sub RatingGettingStarted_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    '#Region "ShowItemToolTips"
-    Me.RadRating1.ShowItemToolTips = False
 
 ````
 

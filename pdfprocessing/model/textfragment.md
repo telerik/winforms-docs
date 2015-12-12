@@ -35,7 +35,6 @@ container.Content.Add(fragment);
 ````VB.NET
 Dim fragment As TextFragment = New TextFragment()
 container.Content.Add(fragment)
-'
 
 ````
 
@@ -56,7 +55,6 @@ TextFragment textFragmentWithText = container.Content.AddTextFragment("Text");
 ````VB.NET
 Dim textFragment As TextFragment = container.Content.AddTextFragment()
 Dim textFragmentWithText As TextFragment = container.Content.AddTextFragment("Text")
-'
 
 ````
 

@@ -216,31 +216,6 @@ Public Class Child
         Me.Status = status
     End Sub
 End Class
-#End Region
-Private Sub ObjectRelationalData(radTreeView1 As RadTreeView)
-    '#Region "CheckedMember"
-    Dim dataItems As New List(Of Parent)()
-    Dim currentParent As Parent
-    Dim currentChild As Child
-    Dim children As List(Of Child)
-    Dim parentId As String = String.Empty
-    Dim childId As String = String.Empty
-    For i As Integer = 1 To 5
-        parentId = Guid.NewGuid().ToString()
-        children = New List(Of Child)()
-        For j As Integer = 1 To 4
-            childId = Guid.NewGuid().ToString()
-            currentChild = New Child(childId, parentId, "SubNode." & i & "." & j, j Mod 2 = 0)
-            children.Add(currentChild)
-        Next
-        currentParent = New Parent(parentId, "Node." & i, i Mod 2 = 0, children)
-        dataItems.Add(currentParent)
-    Next
-    radTreeView1.DataSource = dataItems
-    radTreeView1.DisplayMember = "Title\Name"
-    radTreeView1.ChildMember = "Parent\Children"
-    radTreeView1.CheckedMember = "IsActive\Status"
-    radTreeView1.CheckBoxes = True
 
 ````
 

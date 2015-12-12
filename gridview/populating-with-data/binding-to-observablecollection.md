@@ -116,35 +116,6 @@ Private Sub IntilalizeCollection()
     people.Add(New Person("Sandi", "Willman", 32))
     people.Add(New Person("Damion", "Dagley", 51))
 End Sub
-' #endregion
-Private radGridView1 As New RadGridView()
-Private Add As New RadButton()
-Private Remove As New RadButton()
-Private Move As New RadButton()
-Public Sub New()
-    InitializeComponent()
-   
-    radGridView1.Parent = Me
-    radGridView1.Location = New Point(10, 10)
-    radGridView1.MinimumSize = New Size(370, 500)
-    Me.radGridView1.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill
-    Add.Text = "Add"
-    Add.Parent = Me
-    Add.Location = New Point(400, 10)
-    AddHandler Add.Click, AddressOf Add_Click
-    Remove.Text = "Remove"
-    Remove.Parent = Me
-    Remove.Location = New Point(400, 110)
-    AddHandler Remove.Click, AddressOf Remove_Click
-    Move.Text = "Move"
-    Move.Parent = Me
-    Move.Location = New Point(400, 210)
-    AddHandler Move.Click, AddressOf Move_Click
-End Sub
-'#region Add
-Private Sub Add_Click(sender As Object, e As EventArgs)
-    people.Add(New Person("Damion", "Dagley", 51))
-End Sub
 
 ````
 

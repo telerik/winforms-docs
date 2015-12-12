@@ -80,11 +80,6 @@ Private Sub makeCellYellowMenuItem_Click(ByVal sender As Object, ByVal e As Even
     currentCell.Background = Colors.Yellow
     Me.radRichTextEditor1.UpdateEditorLayout()
 End Sub
- Region
-Public Sub temp()
-    '#Region "create"
-    Dim contextMenu1 As Telerik.WinControls.RichTextEditor.UI.ContextMenu = CType(Me.radRichTextEditor1.RichTextBoxElement.ContextMenu, Telerik.WinControls.RichTextEditor.UI.ContextMenu)
-    contextMenu1.ContentBuilder = New CustomContextMenuContentBuilder(Me.radRichTextEditor1)
 
 ````
 

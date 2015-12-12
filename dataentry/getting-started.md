@@ -143,19 +143,6 @@ Private Enum Gender
     Female
     Male
 End Enum
-ion
-Public Sub New()
-    InitializeComponent()
-    '#Region "bind1"
-    Me.radDataEntry1.DataSource = New Employee() With { _
-      .FirstName = "Sarah", _
-      .LastName = "Blake", _
-      .Occupation = "Supplied Manager", _
-      .StartingDate = New DateTime(2005, 4, 12), _
-      .IsMarried = True, _
-      .Salary = 3500, _
-      .Gender = Gender.Female _
-     }
 
 ````
 

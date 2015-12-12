@@ -69,7 +69,6 @@ this.radRichTextBox1.Redo();
 ````VB.NET
 Me.RadRichTextBox1.Undo()
 Me.RadRichTextBox1.Redo()
-'
 
 ````
 
@@ -90,7 +89,6 @@ this.radRichTextBox1.Document.History.Depth = 500;
 ````
 ````VB.NET
 Me.RadRichTextBox1.Document.History.Depth = 500
-'
 
 ````
 

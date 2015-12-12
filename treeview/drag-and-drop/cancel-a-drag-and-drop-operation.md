@@ -105,11 +105,6 @@ Private Sub radTreeView1_DragEnding(sender As Object, e As RadTreeViewDragCancel
         RadMessageBox.Show("Only nodes from the same level can be dropped here.")
     End If
 End Sub
-#End Region
-    
-Private Sub Cancel_Drag_and_Drop_operation_Load(sender As Object, e As EventArgs)
-    '#Region "AllowDrop"
-    RadTreeView1.Nodes(0).AllowDrop = False
 
 ````
 
@@ -135,19 +130,6 @@ void radTreeView1_NodeExpandedChanging(object sender, RadTreeViewCancelEventArgs
 Private Sub radTreeView1_NodeExpandedChanging(sender As Object, e As RadTreeViewCancelEventArgs)
     e.Cancel = RadTreeView1.TreeViewElement.DragDropService.State = RadServiceState.Working
 End Sub
-#End Region
-#Region "DragEnding"
-Private Sub radTreeView1_DragEnding(sender As Object, e As RadTreeViewDragCancelEventArgs)
-    If e.TargetNode.Level <> e.Node.Level Then
-        e.Cancel = True
-        RadMessageBox.Show("Only nodes from the same level can be dropped here.")
-    End If
-End Sub
-#End Region
-    
-Private Sub Cancel_Drag_and_Drop_operation_Load(sender As Object, e As EventArgs)
-    '#Region "AllowDrop"
-    RadTreeView1.Nodes(0).AllowDrop = False
 
 ````
 

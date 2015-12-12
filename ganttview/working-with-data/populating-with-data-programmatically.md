@@ -161,7 +161,6 @@ link3.StartItem = subitem22
 link3.EndItem = subitem23
 link3.LinkType = TasksLinkType.FinishToStart
 Me.RadGanttView1.Links.Add(link3)
-'
 
 ````
 
@@ -193,7 +192,6 @@ Dim endColumn As New GanttViewTextViewColumn("End")
 Me.RadGanttView1.GanttViewElement.Columns.Add(titleColumn)
 Me.RadGanttView1.GanttViewElement.Columns.Add(startColumn)
 Me.RadGanttView1.GanttViewElement.Columns.Add(endColumn)
-'
 
 ````
 

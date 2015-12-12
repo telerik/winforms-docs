@@ -34,14 +34,6 @@ this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Mon
 ````
 ````VB.NET
 Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Month
-'			#End Region
-'#Region getMonthView
-Dim monthView As SchedulerMonthView = Me.RadScheduler1.GetMonthView()
-'			#End Region
-'#Region activeView
-If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Month Then
-    Dim activeMonthView As SchedulerMonthView = CType(Me.RadScheduler1.ActiveView, SchedulerMonthView)
-End If
 
 ````
 
@@ -63,11 +55,6 @@ SchedulerMonthView monthView = this.radScheduler1.GetMonthView();
 ````
 ````VB.NET
 Dim monthView As SchedulerMonthView = Me.RadScheduler1.GetMonthView()
-'			#End Region
-'#Region activeView
-If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Month Then
-    Dim activeMonthView As SchedulerMonthView = CType(Me.RadScheduler1.ActiveView, SchedulerMonthView)
-End If
 
 ````
 
@@ -86,9 +73,6 @@ monthView.ShowWeekend = false;
 ````
 ````VB.NET
 monthView.ShowWeekend = False
-'			#End Region
-'#Region weekCount
-monthView.WeekCount = 5
 
 ````
 

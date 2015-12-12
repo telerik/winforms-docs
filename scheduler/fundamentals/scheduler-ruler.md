@@ -141,6 +141,7 @@ this.scheduler.RulerTextFormatting += Scheduler_RulerTextFormatting;
 
 ````
 ````VB.NET
+AddHandler Me.scheduler.RulerTextFormatting, AddressOf Scheduler_RulerTextFormatting
 
 ````
 

@@ -58,7 +58,6 @@ this.radButton1.EnableAnalytics = false;
 ````
 ````VB.NET
 Me.RadButton1.EnableAnalytics = False
-'
 
 ````
 

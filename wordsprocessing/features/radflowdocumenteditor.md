@@ -62,12 +62,6 @@ Public Sub MoveToParagraphStart(paragraph As Paragraph)
 End Sub
 Public Sub MoveToTableEnd(table As Table)
 End Sub
-#End Region
-#End If
-Private Sub MovePositonInEditor(editor As RadFlowDocumentEditor, document As RadFlowDocument)
-    '#Region "radwordsprocessing-editing-radflowdocumenteditor_2"
-    Dim firstParagraph As Paragraph = document.EnumerateChildrenOfType(Of Paragraph)().First()
-    editor.MoveToInlineEnd(firstParagraph.Inlines(1))
 
 ````
 
@@ -291,14 +285,6 @@ Public Function InsertFloatingImage(source As ImageSource, size As Size) As Floa
 End Function
 Public Function InsertFloatingImage(stream As Stream, extension As String, size As Size) As FloatingImage
 End Function
-#End Region
-#End If
-Private Sub InsertImage(editor As RadFlowDocumentEditor)
-    '#Region "radwordsprocessing-editing-radflowdocumenteditor_9"
-    editor.InsertText("Image:")
-    Using stream As Stream = Me.GetResourceStream("Telerik_logo.png")
-        editor.InsertImageInline(stream, "png", New Size(118, 28))
-    End Using
 
 ````
 

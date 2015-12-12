@@ -32,6 +32,14 @@ radGridView1.Rows.Add(18);
 
 ````
 ````VB.NET
+Dim column As New GridViewRatingColumn("Rating Column")
+radGridView1.Columns.Add(column)
+radGridView1.Rows.Add(20)
+radGridView1.Rows.Add(35)
+radGridView1.Rows.Add(70)
+radGridView1.Rows.Add(3)
+radGridView1.Rows.Add(18)
+
 ````
 
 {{endregion}} 

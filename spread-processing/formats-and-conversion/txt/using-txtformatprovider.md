@@ -38,6 +38,16 @@ using (FileStream input = new FileStream(fileName, FileMode.Open))
 
 ````
 ````VB.NET
+Dim fileName As String = "SampleFile.txt"
+If Not File.Exists(fileName) Then
+    Throw New FileNotFoundException([String].Format("File {0} was not found!", fileName))
+End If
+Dim workbook As Workbook
+Dim formatProvider As IWorkbookFormatProvider = New TxtFormatProvider()
+Using input As New FileStream(fileName, FileMode.Open)
+    workbook = formatProvider.Import(input)
+End Using
+
 ```` 
 
 
@@ -64,6 +74,14 @@ using (FileStream output = new FileStream(fileName, FileMode.Create))
 
 ````
 ````VB.NET
+Dim workbook As New Workbook()
+workbook.Worksheets.Add()
+Dim fileName As String = "SampleFile.txt"
+Dim formatProvider As IWorkbookFormatProvider = New TxtFormatProvider()
+Using output As New FileStream(fileName, FileMode.Create)
+    formatProvider.Export(workbook, output)
+End Using
+
 ```` 
 
 

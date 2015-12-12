@@ -125,10 +125,6 @@ TimeSpan duration = timelineView.Duration;
 ````
 ````VB.NET
 Dim duration As TimeSpan = timelineView.Duration
-'			#End Region
-'#Region showTimescale
-Dim scale As Timescales = Timescales.Hours
-timelineView.ShowTimescale(scale)
 
 ````
 

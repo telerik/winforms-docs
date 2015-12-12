@@ -56,7 +56,6 @@ exporter.RunExport(@"C:\ExportedFile.xlsx", renderer);
 Dim exporter As New PropertyGridSpreadExport(Me.radPropertyGrid1)
 Dim renderer As New SpreadExportRenderer()
 exporter.RunExport("C:\ExportedFile.xlsx", renderer)
-'
 
 ````
 

@@ -146,12 +146,6 @@ Private Sub UpdateSelectedPoint(point As DataPoint)
         End If
     End If
 End Sub
- Region
-Private Sub snippets()
-    '#Region "controller"
-    RadChartView1.Controllers.Add(New ChartSelectionController())
-    RadChartView1.SelectionMode = ChartSelectionMode.SingleDataPoint
-    AddHandler RadChartView1.SelectedPointChanged, AddressOf RadChartView1_SelectedPointChanged
 
 ````
 
