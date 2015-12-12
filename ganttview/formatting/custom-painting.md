@@ -21,7 +21,7 @@ Since all the elements in the graphical view of the control are arranged along t
 The following example demonstrates how to draw an image which appears exactly 12 hours after each task which has a duration longer than 12 hours.
          
 {{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingEventSubscribe1}} 
-{{source=..\SamplesCS\GanttView\Formatting\CustomPainting.vb region=FormattingEventSubscribe1}} 
+{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingEventSubscribe1}} 
 
 ````C#
 this.radGanttView1.EnableCustomPainting = true;
@@ -33,7 +33,7 @@ this.radGanttView1.ItemPaint += radGanttView1_ItemPaint1;
 {{endregion}} 
 
 {{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingPaintEvent1}} 
-{{source=..\SamplesCS\GanttView\Formatting\CustomPainting.vb region=FormattingPaintEvent1}} 
+{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingPaintEvent1}} 
 
 ````C#
 private void radGanttView1_ItemPaint1(object sender, GanttViewItemPaintEventArgs e)
@@ -59,7 +59,7 @@ Another example demonstrating how to draw a colored rectangle which would be 10 
          
 
 {{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingEventSubscribe2}} 
-{{source=..\SamplesCS\GanttView\Formatting\CustomPainting.vb region=FormattingEventSubscribe2}} 
+{{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingEventSubscribe2}} 
 ````C#
 this.radGanttView1.ItemPaint += radGanttView1_ItemPaint2;
 
