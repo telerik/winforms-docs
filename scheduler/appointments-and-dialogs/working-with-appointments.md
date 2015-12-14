@@ -59,7 +59,7 @@ Me.RadScheduler1.Appointments.Add(appointment)
 	
 	* 4 = Tentative
 	
-	* To extend/replace the __Statuses__ collection, use the __AppointmentStatusInfo__ class:
+* To extend/replace the __Statuses__ collection, use the __AppointmentStatusInfo__ class:
             
 
 >note Make sure that the IDs of the statues are unique. It is good to add a new status with an ID bigger than the last filled status.
@@ -104,7 +104,7 @@ Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple,
 	
 	* 11 = PhoneCall
 	
-	* To extend/replace the __Backgrounds__ collection, use the __AppointmentBackgroundInfo__ class:
+* To extend/replace the __Backgrounds__ collection, use the __AppointmentBackgroundInfo__ class:
             
 
 >note Make sure that the IDs of the Backgrounds are unique. It is good to add a new status with an ID bigger than the last filled status.
@@ -155,23 +155,24 @@ Me.RadScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})"
 
 Here is a list with the different elements and their content:
             
-* {0} – Start time
+\* {0} – Start time
 
-* {1} – End time
+\* {1} – End time
 
-* {2} – Subject
+\* {2} – Subject
 
-* {3} – Location
+\* {3} – Location
 
-* {4} – "<span S>" where S is a style attribute with font-family, font-size and color
+\* {4} – "&lt;span S&gt;" where S is a style attribute with font-family, font-size and color
 
-* {5} – "</span>"
+\* {5} – "&lt;/span&gt;"
 
-* {6} – "<b>"
+\* {6} – "&lt;b&gt;"
 
-* {7} – "</b>"
+\* {7} – "&lt;/b&gt;"
 
-* {8} – New line or empty string
+\* {8} – New line or empty string
+
 
 * In order to change Appointment's Start, End, Duration, use the __Start__, __End__, __Duration__ properties of Appointment class.
   
