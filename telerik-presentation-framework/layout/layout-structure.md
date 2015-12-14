@@ -20,7 +20,7 @@ Content is the rectangular area where an element renders itself and places child
 
 ## Padding
 
-Padding is a rectangular area that surrounds the content rectangle and is typically filled with the background of the content area. The RadElement __Padding__ property provides the rectangle dimensions, includes helper functions to perform math on two Padding objects (adding and subtracting) and has dimension properties for each side of the rectangle. Padding properties __Vertical__and __Horizontal__ provide the sum of top/bottom, left/right padding areas.
+Padding is a rectangular area that surrounds the content rectangle and is typically filled with the background of the content area. The RadElement __Padding__ property provides the rectangle dimensions, includes helper functions to perform math on two Padding objects (adding and subtracting) and has dimension properties for each side of the rectangle. Padding properties __Vertical__ and __Horizontal__ provide the sum of top/bottom, left/right padding areas.
 
 ## Border
 

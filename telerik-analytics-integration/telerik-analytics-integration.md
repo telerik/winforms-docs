@@ -56,10 +56,7 @@ Me.RadButton1.AnalyticsName = "Save Button"
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}
 
 ## Tracing features
 

@@ -14,13 +14,13 @@ position: 12
 
 The RadRichTextBox control is designed to support "spell checking as you type" by setting a single property and specifying a proper dictionary to it. This topic will explain you the following:
 
-### Enabling SpellCheck
+## Enabling SpellCheck
 
 To enable or disable the spell checking functionality (present as red wavy underlines below unrecognized words), you can use the __IsSpellCheckingEnabled__ property on the RadRichTextBox. When the property is *False*, no dictionaries are loaded and no overhead is incurred for spell checking.
 
 You can customize the spell checker by using the __SpellChecker__ property of RadRichTextBox. It’s of type __ISpellChecker__. By default an object of type __DocumentSpellChecker__ that implements the interface, is used for this property. You can either use it or provide your custom class that implements the __ISpellChecker__ interface.
 
-### Dictionaries
+## Dictionaries
 
 The dictionaries in RadRichTextBox implement the __IWordDictionary__ interface. Easy interoperability with dictionaries from __RadSpell__ for ASP.NET is achieved through the __WordDictionary__ class, which supports the loading of a dictionary directly from the __*.tdf__ files, used with __RadSpell__.
 
@@ -57,7 +57,7 @@ End Sub
 
 {{endregion}}
 
-### Adding a Word
+## Adding a Word
 
 To add a word to a dictionary you can either use the __AddWord()__ method of the __DocumentSpellChecker__ or of the dictionary itself. Using the first one you can add a word to multiple dictionaries associated to the same culture. This done done by passing the desired culture as parameter to the method.
 
@@ -84,7 +84,7 @@ Me.RadRichTextBox1.SpellChecker.AddWord("RadRichTextBox", CultureInfo.InvariantC
 
 {{endregion}}
 
-### Internationalization
+## Internationalization
 
 The spell checking component is designed to suit scenarios where different cultures take place in the same application. Internationalization is achieved through associating each dictionary and custom dictionary with a specific culture (or the __InvariantCulture__ as the default one).
 

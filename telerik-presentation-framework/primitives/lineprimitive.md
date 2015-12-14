@@ -17,7 +17,6 @@ __LinePrimitive__ is actually a variation of a filled rectangle. The shadow of t
 
 #### Creating a LinePrimitive
 
-
 {{source=..\SamplesCS\TPF\Primitives\LinePrimitive1\MyLinePrimitiveElement.cs region=myLinePrimitiveElement}} 
 {{source=..\SamplesVB\TPF\Primitives\LinePrimitive1\MyLinePrimitiveElement.vb region=myLinePrimitiveElement}} 
 

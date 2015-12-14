@@ -26,7 +26,7 @@ RadRibbonBar is a complex control. In order to customize the styles that determi
 
 * __RadApplicationMenuButtonElement__ is the button element of the application drop-down menu.
 
-* The __RadMDIControlsItem__ represents the system buttons displayed when a MDI child is maximized in a Form which contains a __RadRibbonBar__control.
+* The __RadMDIControlsItem__ represents the system buttons displayed when a MDI child is maximized in a Form which contains a __RadRibbonBar__ control.
 
 * The __RibbonBarCaptionFillPrimitive__ represents the background fill of the RibbonBar's caption (title bar).
 

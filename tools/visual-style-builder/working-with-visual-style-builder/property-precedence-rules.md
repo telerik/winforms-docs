@@ -20,11 +20,37 @@ There are three levels at which properties can be applied:
 
 2. Repository items level. When you start creating a new repository item, you will notice that the properties that you tweak get a little square in the property grid. This square indicates that the default property is overridden and you have a custom value for that property. All the repository items are kept in a special repository xml file. An element refers to a repository items using the following xml pattern (assuming that Gradient1 is the key of the repository item):
 
+````XML
+<PropertySettingGroups>
+  <XmlPropertySettingGroup BasedOn="Gradient1">
+    <Selectors>
+      <XmlVisualStateSelector VisualState="RadButtonElement.MouseOver" AutoUnapply="False">
+        <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" AutoUnapply="False" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+      </XmlVisualStateSelector>
+    </Selectors>
+  </XmlPropertySettingGroup>
+</PropertySettingGroups>
+````
+
 >note The properties that are not set in the repository item property grid (i.e. they do not have the square indicator) should not be considered as default property values. Only the property grid of the element itself shows the default values.
 >
 
 3. Additional level allowing you to tweak an element overriding the default values and the values set by a repository item. In some cases you may want to tweak an element that has an assigned repository item without creating a new repository item. In such situations, you should click on the element and directly tweak its properties. These settings will override the repository item’s settings. The the xml code in this case looks like this (assuming that the Red color is set directly on the element):
 
+````XML
+<PropertySettingGroups>
+  <XmlPropertySettingGroup BasedOn="Gradient1">
+    <PropertySettings>
+      <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Red" />
+    </PropertySettings>
+    <Selectors>
+      <XmlVisualStateSelector VisualState="RadButtonElement.MouseOver" AutoUnapply="False">
+        <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" AutoUnapply="False" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+      </XmlVisualStateSelector>
+    </Selectors>
+  </XmlPropertySettingGroup>
+</PropertySettingGroups>
+````
 
 All the property levels can be considered as small particles in one bigger particle – VisualState. In other words these rules are valid between the property levels in a VisualState.
 

@@ -10,11 +10,5 @@ position: 2
 
 # Knowledge Base
 
-
-
-## 
-
-The Telerik Knowledge Base,
-          [http://www.telerik.com/support/kb/winforms.aspx](http://www.telerik.com/support/kb/winforms.aspx)
-          , lets you browse and search articles for a solution to your problem.
+The Telerik Knowledge Base, [http://www.telerik.com/support/kb/winforms.aspx](http://www.telerik.com/support/kb/winforms.aspx), lets you browse and search articles for a solution to your problem.
         

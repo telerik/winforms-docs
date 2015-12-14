@@ -23,8 +23,8 @@ Layout of elements proceed in two stages: the measure stage that reserves size t
 The measure stage calculates the RadElement __DesiredSize__ property. __DesiredSize__ is the minimum size that ensures that element content will not be clipped.
 
 >note  __DesiredSize__ 
-* By default[FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%})can be drawn without clipping even with empty size. DesiredSize for FillPrimitive is (0, 0) by default.
-* The DesiredSize for a[HostItem](E5579056-3A2D-43BA-A62E-D16F47051B66)(and indirectly for RadTextBoxElement) is determined by the size of the hosted control. By default the DesiredSize of a RadTextBoxElement is determined by the default size of the hosted TextBox.
+* By default [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%}) can be drawn without clipping even with empty size. DesiredSize for FillPrimitive is (0, 0) by default.
+* The DesiredSize for a [HostItem](E5579056-3A2D-43BA-A62E-D16F47051B66) (and indirectly for RadTextBoxElement) is determined by the size of the hosted control. By default the DesiredSize of a RadTextBoxElement is determined by the default size of the hosted TextBox.
 * The DesiredSize of RadLabel is determined by the Font and the Text property.>
 
 
@@ -72,7 +72,7 @@ The rectangles allocated by ArrangeOverride() do not need to be next to each oth
 ![tpf-layout-logic 004](images/tpf-layout-logic004.png)
 
 >caution The __ArrangeOverride__ and __MeasureOverride__ implementations in the layout panel logic are to be used for reserving size and arranging elements within the available area. They are not meant to be used for setting layout properties, but rather for implementing the logic needed to achieve the desired visual appearance.
-Layout-affecting properties such as[Margin, Scale and Padding]({%slug winforms/telerik-presentation-framework/layout/layout-structure%})are meant to be set outside of the layout panel logic code.
+Layout-affecting properties such as [Margin, Scale and Padding]({%slug winforms/telerik-presentation-framework/layout/layout-structure%}) are meant to be set outside of the layout panel logic code.
 >
 
 

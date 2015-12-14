@@ -16,7 +16,7 @@ This article will demonstrate how to integrate Telerik Analytics in WinForms pro
 
 1. First you should create Analytics project. To do that you should open your [Telerik Platform](https://platform.telerik.com/#workspaces) account and open (create) a workspace to host your project. Then just click "Create Analytics Project".
 
-	![telerik-analytics-integration-getting-started 001](images/telerik-analytics-integration-getting-started001.png)
+    ![telerik-analytics-integration-getting-started 001](images/telerik-analytics-integration-getting-started001.png)
 
 1. The next page allows you to select the target platform. Select .NET.
 	

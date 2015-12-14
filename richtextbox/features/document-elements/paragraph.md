@@ -35,7 +35,6 @@ this.radRichTextBox1.Document.Sections.Add(section);
 
 ````
 ````VB.NET
-  
 Dim section As New Section()
 Dim paragraph As New Paragraph()
 section.Blocks.Add(paragraph)

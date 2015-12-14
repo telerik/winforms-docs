@@ -12,7 +12,7 @@ position: 0
 
 |RELATED VIDEOS| |
 |----|----|
-|[Introduction to the New Visual Style Builder for WinForms](http://tv.telerik.com/winforms/visualstylebuilder/introduction-new-visual-style-builder-winforms) In this recorded webinar, you will learn how to build themes using the latest version of Visual Style Builder. You will also learn what Theme Repositories are and how they make creating themes easier. (Runtime: 42:56)|![tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 007](images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items007.png)|
+|[Introduction to the New Visual Style Builder for WinForms](http://tv.telerik.com/winforms/visualstylebuilder/introduction-new-visual-style-builder-winforms)<br>In this recorded webinar, you will learn how to build themes using the latest version of Visual Style Builder. You will also learn what Theme Repositories are and how they make creating themes easier. (Runtime: 42:56)|![tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 007](images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items007.png)|
 
 ## Overview
 

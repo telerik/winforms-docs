@@ -20,9 +20,9 @@ __RadDocument__ exposes several properties that allow you to customize the layou
 
 * __DefaultPageLayoutSettings__ - this property is of type __PageLayoutSettings__. The __PageLayoutSettings__ class exposes the following properties:
 
-* __Height__ - represents the height of the page.
+  * __Height__ - represents the height of the page.
 
-* __Width__ - represents the width of the page.
+  * __Width__ - represents the width of the page.
 
 >note The __DefaultPageLayoutSettings__ get applied only when Paged layout mode is used.
 >
@@ -33,11 +33,11 @@ __RadDocument__ exposes several properties that allow you to customize the layou
 
 * __LineSpacingType__ - specifies the type of spacing:
 
-* __AtLeast__ - the space between the lines should equal or greater than the value of the __LineSpacing__ property.
+  * __AtLeast__ - the space between the lines should equal or greater than the value of the __LineSpacing__ property.
 
-* __Auto__ - the space between the lines is determined automatically.
+  * __Auto__ - the space between the lines is determined automatically.
 
-* __Exact__ - the space between the lines should equal to the value of the __LineSpacing__ property.
+  * __Exact__ - the space between the lines should equal to the value of the __LineSpacing__ property.
 
 * __PageViewMargin__ - represents the margins of the pages towards the __RadRichTextBox__ borders. 
 

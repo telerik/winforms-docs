@@ -10,7 +10,7 @@ position: 5
 
 # RadElement
 
-*RadElement* is a key class that represents the smallest unit in a RadControl that can be painted or laid out on the screen. *RadElement *is the base class of all elements that take advantage of TPF features, e.g. property inheritance, layouts and styling. *RadElement *has a size and location specified in coordinates according to its parent. Other important *RadElement *features are:
+*RadElement* is a key class that represents the smallest unit in a RadControl that can be painted or laid out on the screen. *RadElement* is the base class of all elements that take advantage of TPF features, e.g. property inheritance, layouts and styling. *RadElement* has a size and location specified in coordinates according to its parent. Other important *RadElement* features are:
 
 * __Behaviors__: Each property can be handled by an arbitrary external object.
 
@@ -32,7 +32,7 @@ Each property change of a RadElement or inheritance parent results in calling th
 
 * Processes behaviors (see notes below) 
 
-*Raises [bubbling and tunneling events]({%slug winforms/telerik-presentation-framework/events/routed-events%}). 
+* Raises [bubbling and tunneling events]({%slug winforms/telerik-presentation-framework/events/routed-events%}). 
 
 * Invokes layout changes if appropriate.
 
@@ -99,7 +99,7 @@ End Class
 
 A RadElement instance can be in one of the following states: 
 
-__Constructing__: The element is in a process of being constructed. Layout operations are *forbidden *and Property Notifications are not *raised*.
+__Constructing__: The element is in a process of being constructed. Layout operations are *forbidden* and Property Notifications are not *raised*.
         
 
 __Constructed__: The element has already been successfully constructed and its child elements created. Layout operations are *forbidden, *but Property Notifications are allowed.
@@ -111,7 +111,7 @@ __Loading:__ The element is in a process of being loaded. Layout operations are 
 __Loaded:__ The element has already been successfully loaded. An element is considered *Loaded* when the owning RadControl handle has been successfully created and the control may be visualized on the screen. At this stage, all layout operations as well as property notifications are allowed.
         
 
-__Unloaded:__ A special state which indicates that the element has been successfully *loaded *one or more times, but now it either does not reside in a valid element tree, or its owning RadControl does not have a created handle. Layout operations are not allowed.
+__Unloaded:__ A special state which indicates that the element has been successfully *loaded* one or more times, but now it either does not reside in a valid element tree, or its owning RadControl does not have a created handle. Layout operations are not allowed.
         
 
 __Disposing:__ The element is in a process of being disposed. All layout operations and Property Notifications are *forbidden*.

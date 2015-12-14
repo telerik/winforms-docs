@@ -31,13 +31,6 @@ exportRenderer.WorkbookCreated += exportRenderer_WorkbookCreated;
 ````VB.NET
 Dim exportRenderer As New SpreadExportRenderer()
 AddHandler exportRenderer.WorkbookCreated, AddressOf exportRenderer_WorkbookCreated
-'#End Region
-End Sub
-'#region WorbookCreated
-Private Sub exportRenderer_WorkbookCreated(ByVal sender As Object, ByVal e As WorkbookCreatedEventArgs)
-Dim worksheet As Worksheet = CType(e.Workbook.Sheets(0), Worksheet)
-worksheet.Columns(worksheet.UsedCellRange).AutoFitWidth()
-End Sub
 
 ````
 

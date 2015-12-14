@@ -10,11 +10,5 @@ position: 3
 
 # Code Libraries
 
-
-
-## 
-
-The Telerik Code Libraries,
-          [http://www.telerik.com/community/code-library/winforms.aspx](http://www.telerik.com/community/code-library/winforms.aspx)
-          , lets you browse and search articles for a solution to your problem.
+The Telerik Code Libraries, [http://www.telerik.com/community/code-library/winforms.aspx](http://www.telerik.com/community/code-library/winforms.aspx), lets you browse and search articles for a solution to your problem.
         

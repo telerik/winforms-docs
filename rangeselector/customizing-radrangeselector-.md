@@ -114,7 +114,6 @@ The scales are created dynamically according to the associated element and its l
 
 {{source=..\SamplesCS\RangeSelector\CustomizingRadRangeSelector.cs region=CustomizeScales}} 
 ````C#
-<<<<<<< HEAD
 this.radRangeSelector1.ScaleInitializing += new ScaleInitializingEventHandler(radRangeSelector1_ScaleInitializing);
 
 ````

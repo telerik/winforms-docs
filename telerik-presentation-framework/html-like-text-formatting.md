@@ -12,7 +12,7 @@ position: 9
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Enhanced HTML-like Markup Support](http://tv.telerik.com/winforms/utility/enhanced-html-like-markup-support) This video goes over the new text rendering tags provided with the Q3 2009 release. It also shows the RadMarkupEditor and gives an example of how to use it from within your own applications. (Runtime: 04:11)|![tpf-html-like-text-formatting 001](images/tpf-html-like-text-formatting001.png)|
+|[Enhanced HTML-like Markup Support](http://tv.telerik.com/winforms/utility/enhanced-html-like-markup-support) <br>This video goes over the new text rendering tags provided with the Q3 2009 release. It also shows the RadMarkupEditor and gives an example of how to use it from within your own applications. (Runtime: 04:11)|![tpf-html-like-text-formatting 001](images/tpf-html-like-text-formatting001.png)|
 
 ## Introduction
 
@@ -43,7 +43,7 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 
 * __Bold, italic, and underline__ In the example below the first word is italic and the second one is both bold and italic. The third and the forth words are underlined.
 
-````xml
+````HTML
 <html>
 	<b>some <i> text </i></b><u> some text </u>
 </html>
@@ -51,7 +51,7 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 
 * __Paragraphs__
 
-````xml
+````HTML
 <html>
 	<p>First paragraph</p>
 	<p>Second paragraph</p>
@@ -61,7 +61,7 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 
 * __Font color__ Font color using color name e.g. *red* or using hex color e.g. *0000FF*.
 
-````xml
+````HTML
 <html>
 	<span style="color:red">font color (color name) </span>
 	<span style="color:#0000FF">font color (hex color) </span>
@@ -75,7 +75,7 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
               Font size can also be set in pt(s). The default font size in Windows Forms on most computers is *8.25pt* i.e. the font
               size returned by *SystemFonts.DefaultFont* property.
 
-````xml
+````HTML
 <html>
     <span style="font-size:large">font size(absolute) </span>
 	<span style="font-size:12">font size in pt(s) (absolute) </span>
@@ -87,39 +87,39 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 
 * __Highlighted text__
 
-````xml
+````HTML
 <html><span style="background-color:red">Highlighted Text</span></html>
 ````
 
 
 * __Font family__
 
-````xml
+````HTML
 <html><span style="font-family:georgia">Font Family</span></html>
 ````
 
 * __Striked text__
 
-````xml
+````HTML
 <html><strike> Some text </strike></html>
 ````
 
 
 * __Links__
 
-````xml
+````HTML
 <html><a href="<externalLink><linkText>www.telerik.com</linkText><linkUri>http://www.telerik.com</linkUri></externalLink>"> Telerik Corporation</a></html>
 ````
 
 * __Images__
 
-````xml
+````HTML
 <html><img src="ImagePath"></html>
 ````
 
 The image path can be a resource or file on the disk.To specify a resource, you can use the __res__ keyword:
 
-````xml
+````HTML
 <img src="res:Telerik.Examples.WinControls.SomeImage.jpg">
 ````
 

@@ -34,6 +34,8 @@ There are cases when you want to display a non-editable content that has been de
 
 As you can see the text is still editable. To make it read only you have to set the __IsReadOnly__ property of the RadRichTextBox to *True*.
 
+#### Read only mode 
+
 {{source=..\SamplesCS\RichTextBox\RichTextBoxGettingStarted.cs region=ReadOnly}} 
 {{source=..\SamplesVB\RichTextBox\RichTextBoxGettingStarted.vb region=ReadOnly}} 
 
@@ -51,6 +53,8 @@ RadRichTextBox1.IsReadOnly = True
 ## Formatting via a sample UI
 
 If you want to allow the user to edit and format the content of the RadRichTextBox, you have tocreate a UI and use the API exposed by the RadRichTextBox. The API exposes methods (like ToggleBold(), ToggleItalic() etc.) that modify the text in the control when called. Here is an example of creating a UI for making the text bold, italic and underlined.
+
+#### Bold, Italic, Underline 
 
 {{source=..\SamplesCS\RichTextBox\RichTextBoxGettingStarted.cs region=BoldItalicUnderline}} 
 {{source=..\SamplesVB\RichTextBox\RichTextBoxGettingStarted.vb region=BoldItalicUnderline}} 

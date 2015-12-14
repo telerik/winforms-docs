@@ -12,7 +12,7 @@ position: 0
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Telerik Presentation Framework Performance Tests](http://tv.telerik.com/watch/winforms/video/telerik-presentation-framework-performance-tests)In this video, you will see a live demonstration of just how much performance has increased in the RadControls between the Q1, Q2, and Q3 releases.|![tpf-overview 001](images/tpf-overview001.png)|
+|[Telerik Presentation Framework Performance Tests](http://tv.telerik.com/watch/winforms/video/telerik-presentation-framework-performance-tests)<br>In this video, you will see a live demonstration of just how much performance has increased in the RadControls between the Q1, Q2, and Q3 releases.|![tpf-overview 001](images/tpf-overview001.png)|
 
 ## 
 

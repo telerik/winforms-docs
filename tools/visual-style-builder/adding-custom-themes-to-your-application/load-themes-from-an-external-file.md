@@ -14,7 +14,7 @@ position: 1
 
 |RELATED VIDEOS||
 |----|----|
-|[Changing Themes at Run Time with Telerik UI for WinForms](http://tv.telerik.com/winforms/visualstylebuilder/changing-themes-at-run-time-with-radcontrols-winforms) In this video, you will learn how to give your users the ability to choose between Telerik themes and custom themes at run time. (Runtime: 08:42)|![tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-an-external-file 003](images/tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-an-external-file003.png)|
+|[Changing Themes at Run Time with Telerik UI for WinForms](http://tv.telerik.com/winforms/visualstylebuilder/changing-themes-at-run-time-with-radcontrols-winforms)<br>In this video, you will learn how to give your users the ability to choose between Telerik themes and custom themes at run time. (Runtime: 08:42)|![tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-an-external-file 003](images/tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-an-external-file003.png)|
 
 To load a theme from an external file into a Theme Manager, follow these steps:
         

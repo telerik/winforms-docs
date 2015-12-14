@@ -24,15 +24,30 @@ This topic demonstrates how to:
 
 The __Spans__can be used only in the context of the [Paragraph]({%slug winforms/richtextbox-(obsolete)/features/document-elements/paragraph%}) element. The __Paragraph__ exposes a collection of Inlines, to which the spans can be added.
 
-````vb.net  
-	        Dim section As New Section()
-	        Dim paragraph As New Paragraph()
-	        Dim span As New Span("Span declared in code-behind")
-	        paragraph.Inlines.Add(span)
-	        section.Blocks.Add(paragraph)
-	        Me.RadRichTextBox1.Document.Sections.Add(section)
-````
+{{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxSpan.cs region=UseSpans}} 
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxSpan.vb region=UseSpans}}
+````C#
+Section section = new Section();
+Paragraph paragraph = new Paragraph();
+Span span = new Span("Span declared in code-behind");
+paragraph.Inlines.Add(span);
+section.Blocks.Add(paragraph);
+this.radRichTextBox1.Document.Sections.Add(section);
 
+````
+````VB.NET
+Dim section As New Section()
+Dim paragraph As New Paragraph()
+Dim span As New Span("Span declared in code-behind")
+paragraph.Inlines.Add(span)
+section.Blocks.Add(paragraph)
+Me.RadRichTextBox1.Document.Sections.Add(section)
+
+```` 
+
+
+
+{{endregion}}
 
 
 ## Add Text to a Span
@@ -40,8 +55,7 @@ The __Spans__can be used only in the context of the [Paragraph]({%slug winforms/
 To specify the text in the __Span__ you can use its __Text__ property.
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxSpan.cs region=AddTextToSpan}} 
-{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxSpan.vb region=AddTextToSpan}} 
-
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxSpan.vb region=AddTextToSpan}}
 ````C#
 Span mySpan = new Span();
 mySpan.Text = "Thank you for choosing Telerik RadRichTextBox!";
@@ -51,7 +65,9 @@ mySpan.Text = "Thank you for choosing Telerik RadRichTextBox!";
 Dim mySpan As New Span()
 mySpan.Text = "Thank you for choosing Telerik RadRichTextBox!"
 
-````
+```` 
+
+
 
 {{endregion}}
 

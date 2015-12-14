@@ -15,7 +15,7 @@ position: 2
 
 1. Create a new custom theme and save it somewhere on your hard drive. 
 
-1. Right-click the project node in the Solution Explorer, choose __Add >> Existing Item__and add the custom theme file. This will automatically copy the custom theme file in your project's directory. 
+1. Right-click the project node in the Solution Explorer, choose __Add >> Existing Item__ and add the custom theme file. This will automatically copy the custom theme file in your project's directory. 
 
 1. Add a RadThemeManager to the form. 
 

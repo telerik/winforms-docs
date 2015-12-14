@@ -12,7 +12,7 @@ position: 6
 
 The RadRichTextBox supports not only selection via the UI, but also programmatic selection. This topic will explain you how to:
 
-### Enable/Disable History
+## Enable/Disable History
 
 You can enable or disable the history for the __RadDocument__ via the __Enabled__ property of the __DocumentHistory__.
 
@@ -32,7 +32,7 @@ Me.RadRichTextBox1.Document.History.Enabled = False
 
 {{endregion}}
 
-### Clear History
+## Clear History
 
 To clear the history you just have to call the __Clear()__ method of the __DocumentHistory__ class.
 
@@ -52,7 +52,7 @@ Me.RadRichTextBox1.Document.History.Clear()
 
 {{endregion}}
 
-### Undo/Redo
+## Undo/Redo
 
 To undo and redo some actions, you can call the __Undo()__ and __Redo()__ methods of the RadRichTextBox.
 
@@ -74,7 +74,7 @@ Me.RadRichTextBox1.Redo()
 
 {{endregion}}
 
-### Change History Depth
+## Change History Depth
 
 To change the history capacity you have to set the desired value of the __Depth__ property of the __DocumentHistory__. The default one is __1000__.
 

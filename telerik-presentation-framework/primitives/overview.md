@@ -47,7 +47,7 @@ Primitives are the elements in the control element tree that are painted to the 
 * [RadioPrimitive]({%slug winforms/telerik-presentation-framework/primitives/radioprimitive%}) represents a single radio button.
           
 
-* [RectanglePrimitive](FD9CF07E-B17D-4231-A54A-BA966ACF95A2) represents a rectangle.
+* RectanglePrimitive represents a rectangle.
           
 
 * [TextPrimitive]({%slug winforms/telerik-presentation-framework/primitives/textprimitive%}) represents a string of text.

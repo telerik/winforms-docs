@@ -49,7 +49,7 @@ Me.radButton1.DisableGesture(GestureType.Zoom)
 
 {{endregion}} 
 
->note An explanation of the different gestures can be found in[this MSDN article](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx).
+>note An explanation of the different gestures can be found in [this MSDN article](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx).
 >
 
 

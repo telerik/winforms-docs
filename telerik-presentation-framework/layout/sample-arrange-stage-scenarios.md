@@ -26,7 +26,7 @@ In the example below, the child DesiredSize is smaller than the rectangle alloca
 
 ![tpf-layout-sample-arrange-state-scenarios 002](images/tpf-layout-sample-arrange-state-scenarios002.png)
 
->note The area of the child that falls outside of the rectangle allocated by the parent is not clipped, but is shown to the extent it is within the area of the parent. See[Clipping]({%slug winforms/telerik-presentation-framework/layout/clipping%})for more information.
+>note The area of the child that falls outside of the rectangle allocated by the parent is not clipped, but is shown to the extent it is within the area of the parent. See [Clipping]({%slug winforms/telerik-presentation-framework/layout/clipping%}) for more information.
 >
 
 ## Parent Allocates Size Smaller than Requested Size

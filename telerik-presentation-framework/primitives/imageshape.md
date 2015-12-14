@@ -51,10 +51,10 @@ RadImageShape exposes some advanced settings that allow any complex rendering lo
 
 *PaintMode.StretchYTileX*
 
-* *InterpolationMode – *defines the interpolation passed to the underlying GDI+ Graphics used to paint the each image part.
+* *InterpolationMode* – defines the interpolation passed to the underlying GDI+ Graphics used to paint the each image part.
             
 
-* *RotateFlip – *additional option, which allows the source image to be rotated/flipped before segmentation.
+* *RotateFlip* – additional option, which allows the source image to be rotated/flipped before segmentation.
             
 
 __Editing RadImageShape in Visual Style Builder__

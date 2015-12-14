@@ -24,9 +24,9 @@ position: 1
 
 1. You will be prompted to enter the resource location. C# and VB.NET compilers differ from one another, so:
 
-* In a C# application the pattern is __ProjectDefaultNamespace.ContainingFolderName.ThemeFileName.Extention__ if the theme file is in a folder as mentioned in step 3, otherwise it is just __ProjectName.ThemeFileName.Extention__
+  * In a C# application the pattern is __ProjectDefaultNamespace.ContainingFolderName.ThemeFileName.Extention__ if the theme file is in a folder as mentioned in step 3, otherwise it is just __ProjectName.ThemeFileName.Extention__
 
-* In a VB.NET application, it does not matter whether the theme file is in a folder or not, the pattern is always the same: __ProjectRootNamespace.ThemeFileName.Extention__.
+  * In a VB.NET application, it does not matter whether the theme file is in a folder or not, the pattern is always the same: __ProjectRootNamespace.ThemeFileName.Extention__.
 
 1. Perform the same action for all theme files needed and also for the  __theme repository__
 

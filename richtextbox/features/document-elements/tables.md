@@ -134,7 +134,7 @@ You can use the __InsertTableDialog__, which comes out of the box. To show it up
 
 ## Formatting a Table at Runtime via RadRichTextBox's API
 
->tip To learn more about the  __Formatting API__  of the  __RadRichTextBox__ , read [this topic]({%slug winforms/richtextbox-(obsolete)/features/formatting-api%}).
+>tip To learn more about the  __Formatting API__  of the  __RadRichTextBox__, read [this topic]({%slug winforms/richtextbox-(obsolete)/features/formatting-api%}).
 
 
 The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements form the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. The __RadRichTextBox__ exposes the following methods that regard the modifying of a table:

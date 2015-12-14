@@ -27,8 +27,7 @@ More often than not, you would only need to use objects of type HyperlinkInfo. H
 For example, a link to our Telerik UI for WinForms demo page can be inserted in the document programmatically as follows:
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.cs region=AddLinkToSite}} 
-{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=AddLinkToSite}} 
-
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=AddLinkToSite}}
 ````C#
 HyperlinkInfo info = new HyperlinkInfo()
 {
@@ -46,27 +45,17 @@ Dim info As New HyperlinkInfo() With { _
  .IsAnchor = False _
 }
 Me.RadRichTextBox1.InsertHyperlink(info, "RadControls for WinForms demos")
-'#End Region
-'#Region "AddLinkToBookmark"
-Dim hlInfo As New HyperlinkInfo() With { _
- .NavigateUri = "bookmark1", _
- .Target = HyperlinkTargets.Self, _
- .IsAnchor = True _
-}
-Me.RadRichTextBox1.InsertHyperlink(hlInfo, "Link to Bookmark 1")
-'#End Region
-'#region RemoveHyperlink
-Me.RadRichTextBox1.RemoveHyperlink()
 
-````
+```` 
+
+
 
 {{endregion}}
 
 A link to a bookmark is inserted by specifying the bookmark's name as NavigateUri and setting the IsAnchor to true:
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.cs region=AddLinkToBookmark}} 
-{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=AddLinkToBookmark}} 
-
+{{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=AddLinkToBookmark}}
 ````C#
 HyperlinkInfo hlInfo = new HyperlinkInfo()
 {
@@ -84,11 +73,10 @@ Dim hlInfo As New HyperlinkInfo() With { _
  .IsAnchor = True _
 }
 Me.RadRichTextBox1.InsertHyperlink(hlInfo, "Link to Bookmark 1")
-'#End Region
-'#region RemoveHyperlink
-Me.RadRichTextBox1.RemoveHyperlink()
 
-````
+```` 
+
+
 
 {{endregion}}
 

@@ -35,47 +35,6 @@ DockLayoutPanel.SetDock(button, Telerik.WinControls.Layouts.Dock.Left);
 ````VB.NET
 Dim button As New RadButtonElement("button1")
 DockLayoutPanel.SetDock(button, Telerik.WinControls.Layouts.Dock.Left)
-'#End Region
-'#Region "snippet2"
-Dim button1 As New RadButtonElement("button1")
-DockLayoutPanel.SetDock(button1, Telerik.WinControls.Layouts.Dock.Left)
-Dim button2 As New RadButtonElement("button2")
-DockLayoutPanel.SetDock(button2, Telerik.WinControls.Layouts.Dock.Right)
-Dim button3 As New RadButtonElement("button3")
-DockLayoutPanel.SetDock(button3, Telerik.WinControls.Layouts.Dock.Top)
-Dim button4 As New RadButtonElement("button4")
-DockLayoutPanel.SetDock(button4, Telerik.WinControls.Layouts.Dock.Bottom)
-'#End Region
-'#Region "snippet3"
-Dim dockPanel As New DockLayoutPanel()
-dockPanel.Children.Add(button1)
-dockPanel.Children.Add(button2)
-dockPanel.Children.Add(button3)
-dockPanel.Children.Add(button4)
-'#End Region
-End Sub
-Private Sub snippets()
-Dim button1 As New RadButtonElement("button1")
-Dim button2 As New RadButtonElement("button2")
-Dim button3 As New RadButtonElement("button3")
-Dim button4 As New RadButtonElement("button4")
-'#Region "snippet4"
-Dim dockPanel As New DockLayoutPanel()
-dockPanel.Children.Add(button4)
-dockPanel.Children.Add(button3)
-dockPanel.Children.Add(button2)
-dockPanel.Children.Add(button1)
-'#End Region
-End Sub
-s
- dockLayoutClass
-lass MyDockLayoutPanelControl
-Inherits RadControl
-Protected Overrides Sub CreateChildItems(parent As RadElement)
-MyBase.CreateChildItems(parent)
-parent.Children.Add(New MyDockLayoutPanelElement())
-End Sub
-s
 
 ````
 
@@ -106,37 +65,6 @@ Dim button3 As New RadButtonElement("button3")
 DockLayoutPanel.SetDock(button3, Telerik.WinControls.Layouts.Dock.Top)
 Dim button4 As New RadButtonElement("button4")
 DockLayoutPanel.SetDock(button4, Telerik.WinControls.Layouts.Dock.Bottom)
-'#End Region
-'#Region "snippet3"
-Dim dockPanel As New DockLayoutPanel()
-dockPanel.Children.Add(button1)
-dockPanel.Children.Add(button2)
-dockPanel.Children.Add(button3)
-dockPanel.Children.Add(button4)
-'#End Region
-End Sub
-Private Sub snippets()
-Dim button1 As New RadButtonElement("button1")
-Dim button2 As New RadButtonElement("button2")
-Dim button3 As New RadButtonElement("button3")
-Dim button4 As New RadButtonElement("button4")
-'#Region "snippet4"
-Dim dockPanel As New DockLayoutPanel()
-dockPanel.Children.Add(button4)
-dockPanel.Children.Add(button3)
-dockPanel.Children.Add(button2)
-dockPanel.Children.Add(button1)
-'#End Region
-End Sub
-s
- dockLayoutClass
-lass MyDockLayoutPanelControl
-Inherits RadControl
-Protected Overrides Sub CreateChildItems(parent As RadElement)
-MyBase.CreateChildItems(parent)
-parent.Children.Add(New MyDockLayoutPanelElement())
-End Sub
-s
 
 ````
 
@@ -161,30 +89,6 @@ dockPanel.Children.Add(button1)
 dockPanel.Children.Add(button2)
 dockPanel.Children.Add(button3)
 dockPanel.Children.Add(button4)
-'#End Region
-End Sub
-Private Sub snippets()
-Dim button1 As New RadButtonElement("button1")
-Dim button2 As New RadButtonElement("button2")
-Dim button3 As New RadButtonElement("button3")
-Dim button4 As New RadButtonElement("button4")
-'#Region "snippet4"
-Dim dockPanel As New DockLayoutPanel()
-dockPanel.Children.Add(button4)
-dockPanel.Children.Add(button3)
-dockPanel.Children.Add(button2)
-dockPanel.Children.Add(button1)
-'#End Region
-End Sub
-s
- dockLayoutClass
-lass MyDockLayoutPanelControl
-Inherits RadControl
-Protected Overrides Sub CreateChildItems(parent As RadElement)
-MyBase.CreateChildItems(parent)
-parent.Children.Add(New MyDockLayoutPanelElement())
-End Sub
-s
 
 ````
 
@@ -211,17 +115,6 @@ dockPanel.Children.Add(button4)
 dockPanel.Children.Add(button3)
 dockPanel.Children.Add(button2)
 dockPanel.Children.Add(button1)
-'#End Region
-End Sub
-s
- dockLayoutClass
-lass MyDockLayoutPanelControl
-Inherits RadControl
-Protected Overrides Sub CreateChildItems(parent As RadElement)
-MyBase.CreateChildItems(parent)
-parent.Children.Add(New MyDockLayoutPanelElement())
-End Sub
-s
 
 ````
 
