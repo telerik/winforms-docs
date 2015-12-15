@@ -885,10 +885,10 @@ navigation:
         position: 4
     codedui:
         title: CodedUI 
-        position: 53
+        position: 54
     telerik-presentation-framework:
         title: Telerik Presentation Framework
-        position: 54
+        position: 55
     telerik-presentation-framework/overview:
         title: Overview
         position: 0
@@ -930,14 +930,14 @@ navigation:
         position: 19
     themes:
         title: Themes
-        position: 55
+        position: 56
     themes/advanced-topics:
         title: Advanced Topics
     themes/advanced-topics/adding-custom-redistributable-themes-to-your-application:
         title: Adding Custom Redistributable Themes to your Application
     tools:
         title: Tools
-        position: 56
+        position: 57
     tools/controlspy:
         title: ControlSpy
         position: 0
@@ -961,10 +961,10 @@ navigation:
         position: 3
     telerik-analytics-integration:
         title: Telerik Analytics Intergration
-        position: 57
+        position: 58
     for-more-help:
         title: For More Help
-        position: 58
+        position: 59
     
 ## Api Reference End
 ## The application virtual path

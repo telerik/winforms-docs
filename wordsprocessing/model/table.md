@@ -125,11 +125,11 @@ __Properties__ exposes several properties that allow you to customize the layout
 * __Shading__: Represents the shading applied to the table. It is a composite object and is read-only. You can obtain the following properties from it:
             
 
-* __BackgroundColor__: Specifies the background color for the shading.*Style property. The value is themable object.*
+  * __BackgroundColor__: Specifies the background color for the shading.*Style property. The value is themable object.*
 
-* __PatternColor__: Specifies the pattern color for the shading. *Style property. The value is themable object.*
+  * __PatternColor__: Specifies the pattern color for the shading. *Style property. The value is themable object.*
 
-* __Pattern__: Specifies the pattern which is used to lay the pattern color over the background color for the shading. *Style property.*
+  * __Pattern__: Specifies the pattern which is used to lay the pattern color over the background color for the shading. *Style property.*
 
 * __GridColumnsCount__: Returns the number of the columns in the table grid.
             
@@ -161,11 +161,11 @@ __Properties__ exposes several properties that allow you to customize the layout
 * __Overlap__: Indicates whether this floating table allows other floating tables to overlap its extents.
             
 
->tip Style properties are properties that can be inherited from a style. For more information about styles see[this article]({%slug winforms/wordsprocessing/concepts/style-properties%}).
+>tip Style properties are properties that can be inherited from a style. For more information about styles see [this article]({%slug winforms/wordsprocessing/concepts/style-properties%}).
 >
 
 
->tip Themable objects are objects that can be inherited from a theme. For more information about themes check[this article]({%slug winforms/wordsprocessing/concepts/document-themes%}).
+>tip Themable objects are objects that can be inherited from a theme. For more information about themes check [this article]({%slug winforms/wordsprocessing/concepts/document-themes%}).
 >
 
 ## Operating with a Table

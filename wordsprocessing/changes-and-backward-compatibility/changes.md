@@ -104,7 +104,7 @@ __What's Fixed__
 
 ## What's New in 2014 Q2
 
-* [Html Import/Export](89a612ca-fd29-481b-8f81-1517e559029d)
+* Html Import/Export
 
 * [Lists]({%slug winforms/wordsprocessing/concepts/lists%})
 

@@ -16,7 +16,7 @@ The __RadZipLibrary__ allows you compress and decompress data in your applicatio
 
 Deflate settings are used for compressing data using a combination of the LZ77 algorithm and Huffman coding.
 
->tip You can find more information on the Deflate data compression algorithm[here](http://en.wikipedia.org/wiki/DEFLATE).
+>tip You can find more information on the Deflate data compression algorithm [here](http://en.wikipedia.org/wiki/DEFLATE).
 >
 
 The __DeflateSettings__ class exposes some configurable parameters:

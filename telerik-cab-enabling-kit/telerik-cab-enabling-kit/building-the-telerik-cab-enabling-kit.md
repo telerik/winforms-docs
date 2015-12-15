@@ -10,7 +10,7 @@ position: 0
 
 # Building the Telerik CAB Enabling Kit
 
-Telerik CAB Enabling Kit can be downloaded from[Codeplex](http://telerikcab.codeplex.com/). The kit comes with Visual Studio 2010 solution file in *CABKit* folder. The solution contains of the __Telerik.WinControls.CompositeUI__ project where the RadControls workspaces, adapters, etc are located. Additionally, in the solution, you can find two sample applications created with Telerik CAB Enabling kit – BankTeller and Finance.
+Telerik CAB Enabling Kit can be downloaded from [Codeplex](http://telerikcab.codeplex.com/). The kit comes with Visual Studio 2010 solution file in *CABKit* folder. The solution contains of the __Telerik.WinControls.CompositeUI__ project where the RadControls workspaces, adapters, etc are located. Additionally, in the solution, you can find two sample applications created with Telerik CAB Enabling kit – BankTeller and Finance.
 
 In order to build the Telerik CAB Enabling Kit you will need:
 

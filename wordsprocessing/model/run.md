@@ -115,6 +115,12 @@ The Run exposes several properties that allow you to customize how it is rendere
             
 
 * __StyleId__: Represents the ID of the style that is applied to this run.
+
+* __FlowDirection__: Represents the flow direction of the run:
+
+  * __LeftToRight__: Indicates that the text should flow from left to right.
+
+  * __RightToLeft__: Indicates that the text should flow from right to left.
             
 
 * __FontFamily__: Specifies the font family that is used to render the text. *Style property. The value is themable object.*
@@ -123,9 +129,9 @@ The Run exposes several properties that allow you to customize how it is rendere
 
 * __Shading__: Represents the shading applied to the run. It is a composite object and is read-only. You can obtain the following properties from it:
 
-  * __BackgroundColor__: Specifies the background color for the shading. * Style property. The value is themable object.*
+  * __BackgroundColor__: Specifies the background color for the shading. *Style property. The value is themable object.*
 
-  * __PatternColor__: Specifies the pattern color for the shading. * Style property. The value is themable object.*
+  * __PatternColor__: Specifies the pattern color for the shading. *Style property. The value is themable object.*
 
   * __Pattern__: Specifies the pattern which is used to lay the pattern color over the background color for the shading. *Style property.*
 
@@ -147,11 +153,11 @@ The Run exposes several properties that allow you to customize how it is rendere
 
   * __Pattern__: Indicates the underline pattern. *Style property.*
 
->tip Style properties are properties that can be inherited from a style. For more information about styles see[this article]({%slug winforms/wordsprocessing/concepts/style-properties%}).
+>tip Style properties are properties that can be inherited from a style. For more information about styles see [this article]({%slug winforms/wordsprocessing/concepts/style-properties%}).
 >
 
 
->tip Themable objects are objects that can be inherited from a theme. For more information about themes check[this article]({%slug winforms/wordsprocessing/concepts/document-themes%}).
+>tip Themable objects are objects that can be inherited from a theme. For more information about themes check [this article]({%slug winforms/wordsprocessing/concepts/document-themes%}).
 >
 
 

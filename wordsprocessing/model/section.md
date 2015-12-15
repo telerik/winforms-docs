@@ -135,49 +135,49 @@ paragraph.Inlines.AddRun("This is a sample header.")
 * __SectionType__: Defines the section types:
             
 
-* __NextPage__ - specifies that the section starts on the next page.
+  * __NextPage__ - specifies that the section starts on the next page.
                 
 
-* __EvenPage__ - specifies that the section starts on the next page.
+  * __EvenPage__ - specifies that the section starts on the next page.
                 
 
-* __OddPage__ - specifies that the section starts on the next odd page.
+  * __OddPage__ - specifies that the section starts on the next odd page.
                 
 
-* __Continuous__ - specifies that the section starts on the same page.
+  * __Continuous__ - specifies that the section starts on the same page.
                 
 
-* __NextColumn__ - specifies that the section starts on the next column on the page.
+  * __NextColumn__ - specifies that the section starts on the next column on the page.
                 
 
-* __VerticalAlignment__ - Defines the vertical alignment:
+  * __VerticalAlignment__ - Defines the vertical alignment:
                 
 
-* __Top__ – specifies the section layout is top aligned. This is the default value.
+    * __Top__ – specifies the section layout is top aligned. This is the default value.
                     
 
-* __Bottom__ – specifies the section layout is bottom aligned.
+    * __Bottom__ – specifies the section layout is bottom aligned.
                     
 
-* __Center__ – specifies the section layout is center aligned.
+    * __Center__ – specifies the section layout is center aligned.
                     
 
-* __Justified__ – specifies the section layout is justified.
+    * __Justified__ – specifies the section layout is justified.
                     
 
-* __PageNumberingSettings__ - Defines page numbering settings. You can modify the settings through the following properties:
+  * __PageNumberingSettings__ - Defines page numbering settings. You can modify the settings through the following properties:
                 
 
-* __ChapterSeparatorCharacter__ – specifies the chapter separator character that shall appear between the chapter heading style index and the page number.
+    * __ChapterSeparatorCharacter__ – specifies the chapter separator character that shall appear between the chapter heading style index and the page number.
                     
 
-* __ChapterHeadingStyleIndex__ – specifies the index of the chapter heading style. The possible values are from 1 to 9 inclusive (Heading1, Heading2…).
+    * __ChapterHeadingStyleIndex__ – specifies the index of the chapter heading style. The possible values are from 1 to 9 inclusive (Heading1, Heading2…).
                     
 
-* __PageNumberFormat__ – specifies the number format for the page numbering in the current section.
+    * __PageNumberFormat__ – specifies the number format for the page numbering in the current section.
                     
 
-* __StartingPageNumber__ – specifies the starting page number which shall appear on the first page of the section. The possible values are 0 or greater.
+    * __StartingPageNumber__ – specifies the starting page number which shall appear on the first page of the section. The possible values are 0 or greater.
                     
 
 * __Properties__: Gets all section properties as __SectionProperties__ object. More info on how  to use section properties can be found in [ Style Properties]({%slug winforms/wordsprocessing/concepts/style-properties%}) article.
@@ -185,7 +185,7 @@ paragraph.Inlines.AddRun("This is a sample header.")
 
 ## Operating with a Section
 
-Section derives [BlockContainerBase](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_blockcontainerbase.html) , inheriting Blocks property of BlockCollection type. You can add [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%})  and [Table]({%slug winforms/wordsprocessing/model/table%}) objects to that collection:
+Section derives [BlockContainerBase](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_blockcontainerbase.html), inheriting Blocks property of BlockCollection type. You can add [Paragraph]({%slug winforms/wordsprocessing/model/paragraph%})  and [Table]({%slug winforms/wordsprocessing/model/table%}) objects to that collection:
 
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingSection.cs region=radwordsprocessing-model-section_6}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingSection.vb region=radwordsprocessing-model-section_6}} 

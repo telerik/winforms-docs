@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# WordsProcessing Overview
+# Overview
 
 ![wordsprocessing-logo 002](images/wordsprocessing-logo002.png)
 

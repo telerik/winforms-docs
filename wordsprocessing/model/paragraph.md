@@ -43,8 +43,7 @@ section.Blocks.Add(paragraph)
 
 {{endregion}} 
 
->tip The parent BlockContainer element (in this case - the *section* ) should belong to the same document that is
-            passed to the constructor of the __Paragraph__ .
+>tip The parent BlockContainer element (in this case - the *section* ) should belong to the same document that is passed to the constructor of the __Paragraph__ .
 >
 
 You can add a paragraph at a specific index in the __Blocks__ collection of a __BlockContainer__ using the __Insert()__ method. Here is how to add a paragraph at the beginning of a section:
@@ -135,21 +134,21 @@ __Paragraph__ exposes several properties that allow you to customize the layout 
 
 * __Indentation__: Defines a set of indentations which can be applied to a Paragraph element through a ParagraphIndentation object. __ParagraphIndentation__ is a composite one and contains the following properties:
 
-* __FirstLineIndent__: Indicates the additional indentation which is applied to the first line of the paragraph.
+  * __FirstLineIndent__: Indicates the additional indentation which is applied to the first line of the paragraph.
 
-* __HangingIndent__: Specifies a value which is removed from the indentation of the first line of the paragraph, by moving the indentation on the first line back towards the beginning of the direction of text flow.
+  * __HangingIndent__: Specifies a value which is removed from the indentation of the first line of the paragraph, by moving the indentation on the first line back towards the beginning of the direction of text flow.
 
-* __LeftIndent__: Indicates the indentation which is applied to the left side of the whole paragraph.
+  * __LeftIndent__: Indicates the indentation which is applied to the left side of the whole paragraph.
 
-* __RightIndent__: Indicates the indentation which is applied to the right side of the whole paragraph.
+  * __RightIndent__: Indicates the indentation which is applied to the right side of the whole paragraph.
 
 * __Shading__: Represents the shading applied to the paragraph. It is a composite object and is read-only. You can obtain the following properties from it:
 
-* __BackgroundColor__: Specifies the background color for the shading.
-
-* __PatternColor__: Specifies the pattern color for the shading.
-
-* __Pattern__: Specifies the pattern which is used to lay the pattern color over the background color for the shading.
+  * __BackgroundColor__: Specifies the background color for the shading.
+  
+  * __PatternColor__: Specifies the pattern color for the shading.
+  
+  * __Pattern__: Specifies the pattern which is used to lay the pattern color over the background color for the shading.
 
 * __AllowOverflowPunctuation__: Defines whether the last punctuation character on a line can overflow in paragraph margin/indent.
 

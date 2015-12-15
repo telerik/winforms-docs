@@ -21,7 +21,7 @@ RadFlowDocument can contain various types of document elements, all of them inhe
 
 ![wordsprocessing-model 004](images/wordsprocessing-model004.png)
 
-Every document element is associated with an instance of __RadFlowDocument__ since its creation. This link is permanent and  attempts to move document elements from one document to another result in exception; [cloning](af1d82bf-d15b-4bfb-b7f1-7a0b7f73ec11) can be used instead to create deep copy of an element associated to another instance of RadFlowDocument. Current associated document is stored in the [Document](http://www.telerik.com/help/winforms/p_telerik_windows_documents_flow_model_documentelementbase_document.html) property.
+Every document element is associated with an instance of __RadFlowDocument__ since its creation. This link is permanent and  attempts to move document elements from one document to another result in exception; cloning can be used instead to create deep copy of an element associated to another instance of RadFlowDocument. Current associated document is stored in the [Document](http://www.telerik.com/help/winforms/p_telerik_windows_documents_flow_model_documentelementbase_document.html) property.
         
 
 ## Composition of Document Elements
