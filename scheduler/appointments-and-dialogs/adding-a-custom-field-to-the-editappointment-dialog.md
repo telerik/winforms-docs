@@ -51,9 +51,13 @@ Partial Class CustomAppointmentEditForm
 3\. Here is the form's implementation:
  
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.cs region=customAppEditForm}}           
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.vb region=customAppEditForm}} 
-
 ````C#
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class CustomAppointmentEditForm
+    Inherits Telerik.WinControls.UI.Scheduler.Dialogs.EditAppointmentDialog
+
+````
+````VB.NET
 public partial class CustomAppointmentEditForm : EditAppointmentDialog
 {
     public CustomAppointmentEditForm()
@@ -83,31 +87,6 @@ public partial class CustomAppointmentEditForm : EditAppointmentDialog
         return new AppointmentWithEmail();
     }
 }
-
-````
-````VB.NET
-Public Class CustomAppointmentEditForm
-    Public Sub New()
-        InitializeComponent()
-    End Sub
-    Protected Overrides Sub LoadSettingsFromEvent(ByVal ev As IEvent)
-        MyBase.LoadSettingsFromEvent(ev)
-        Dim appointmentWithEmail As AppointmentWithEmail = TryCast(ev, AppointmentWithEmail)
-        If appointmentWithEmail IsNot Nothing Then
-            Me.txtEmail.Text = appointmentWithEmail.Email
-        End If
-    End Sub
-    Protected Overrides Sub ApplySettingsToEvent(ByVal ev As IEvent)
-        Dim appointmentWithEmail As AppointmentWithEmail = TryCast(ev, AppointmentWithEmail)
-        If appointmentWithEmail IsNot Nothing Then
-            appointmentWithEmail.Email = Me.txtEmail.Text
-        End If
-        MyBase.ApplySettingsToEvent(ev)
-    End Sub
-    Protected Overrides Function CreateNewEvent() As IEvent
-        Return New AppointmentWithEmail()
-    End Function
-End Class
 
 ````
 
