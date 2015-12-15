@@ -70,6 +70,6 @@ multiDayView.GetAppointmentsInInterval(interval)
 
 4\. To get all appointments in the view, use the __Appointments__ collection.
 
->note  __SchedulerMultiDayView__ inherits the rest of its properties from the base __SchedulerDayView__ and therefore you can refer to the[Day View]({%slug winforms/scheduler/views/day-view%})article for additional options.
+>note  __SchedulerMultiDayView__ inherits the rest of its properties from the base __SchedulerDayView__ and therefore you can refer to the [Day View]({%slug winforms/scheduler/views/day-view%}) article for additional options.
 >
 

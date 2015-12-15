@@ -344,45 +344,93 @@ When the application is run, a series of CustomAppointment objects show up in th
 
 To use grouping by resource in this scenario, first you will need to create the business object that represents the resources:
 
-{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=create_the_resource_object}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=create_the_resource_object}} 
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=createTheResourceObject}} 
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=createTheResourceObject}} 
 
 ````C#
-//other fields…
-private List<EventId> resources = new List<EventId>();
-//other properties…
-public List<EventId> Resources
+public class CustomResource : INotifyPropertyChanged
 {
-    get
+    private int id;
+    private string name;
+
+    public int Id
     {
-        return this.resources;
-    }
-    set
-    {
-        if (this.resources != value)
+        get
         {
-            this.resources = value;
-            this.OnPropertyChanged("Resources");
+            return this.id;
+        }
+        set
+        {
+            if (this.id != value)
+            {
+                this.id = value;
+                this.OnPropertyChanged("Id");
+            }
+        }
+    }
+
+    public string Name
+    {
+        get
+        {
+            return this.name;
+        }
+        set
+        {
+            if (this.name != value)
+            {
+                this.name = value;
+                this.OnPropertyChanged("Name");
+            }
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+    protected virtual void OnPropertyChanged(string propertyName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
 
 ````
 ````VB.NET
-'other fields…
-Private _resources As New List(Of EventId)
-'other properties…
-Public Property Resources() As List(Of EventId)
-    Get
-        Return Me._resources
-    End Get
-    Set(value As List(Of EventId))
-        If Not Me._resources.Equals(value) Then
-            Me._resources = value
-            Me.OnPropertyChanged("Resources")
-        End If
-    End Set
-End Property
+Public Class CustomResource
+    Implements INotifyPropertyChanged
+    Private m_id As Integer
+    Private m_name As String
+
+    Public Property Id() As Integer
+        Get
+            Return Me.m_id
+        End Get
+        Set(value As Integer)
+            If Me.m_id <> value Then
+                Me.m_id = value
+                Me.OnPropertyChanged("Id")
+            End If
+        End Set
+    End Property
+
+    Public Property Name() As String
+        Get
+            Return Me.m_name
+        End Get
+        Set(value As String)
+            If Me.m_name <> value Then
+                Me.m_name = value
+                Me.OnPropertyChanged("Name")
+            End If
+        End Set
+    End Property
+
+    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+    Protected Overridable Sub OnPropertyChanged(propertyName As String)
+        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+    End Sub
+End Class
 
 ````
 
@@ -440,8 +488,8 @@ Next we need to create the relation between appointments and resources. We can c
 
 To create a one-to-many relation between appointments and resources we need to add a property of type __EventId__ to the business object that represents an appointment:
 
-{{source=..\SamplesCS\Scheduler\DataBinding\CustomAppointment.cs region=CustomAppointment_with_one-to-many_relation}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\CustomAppointment.vb region=CustomAppointment_with_one-to-many_relation}} 
+{{source=..\SamplesCS\Scheduler\DataBinding\CustomAppointment.cs region=CustomAppointmentWithOneToManyRelation}} 
+{{source=..\SamplesVB\Scheduler\DataBinding\CustomAppointment.vb region=CustomAppointmentWithOneToManyRelation}} 
 
 ````C#
 //other fields…
@@ -552,8 +600,8 @@ Me.radScheduler1.GroupType = GroupType.Resource
 
 This scenario can be implemented similarly to the previous one. Instead of the __ResourceId__ property, we should add a __Resources__ property which represents a collection of __EventId__ objects:
 
-{{source=..\SamplesCS\Scheduler\DataBinding\CustomAppointment.cs region=CustomAppointment_with_many-to-many_relation}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\CustomAppointment.vb region=CustomAppointment_with_many-to-many_relation}} 
+{{source=..\SamplesCS\Scheduler\DataBinding\CustomAppointment.cs region=CustomAppointmentWithManyToManyRelation}} 
+{{source=..\SamplesVB\Scheduler\DataBinding\CustomAppointment.vb region=CustomAppointmentWithManyToManyRelation}} 
 
 ````C#
 //other fields…

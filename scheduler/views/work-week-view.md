@@ -40,7 +40,7 @@ Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.WorkW
 
 To get the instance to the SchedulerWeekView from the RadScheduler object,either:
 
-* use the __GetDayView__ method:
+* use the __GetWeekView__ method:
 
 {{source=..\SamplesCS\Scheduler\Views\WorkWeekView.cs region=getWeekView}} 
 {{source=..\SamplesVB\Scheduler\Views\WorkWeekView.vb region=getWeekView}} 

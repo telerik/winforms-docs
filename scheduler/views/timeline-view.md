@@ -14,7 +14,7 @@ position: 9
 
 ## Timeline View Overview
 
-RadScheduler's __Timeline__ view allows you to display appointments in horizontally arranged time slots. Consequently, time slots can be configured by duration and the time scale can be set for minutes to years. User capabilities include creating, adding, and modifying appointments at run-time, appointment and cell selection, resizing, drag and drop, keyboard navigation, a customizable timeline context menu and resource grouping support. To move to the next day or previous month, you can use the back and forward keyboard arrows, or the[SchedulerNavigator]({%slug winforms/scheduler/scheduler-navigator/overview%}) control.
+RadScheduler's __Timeline__ view allows you to display appointments in horizontally arranged time slots. Consequently, time slots can be configured by duration and the time scale can be set for minutes to years. User capabilities include creating, adding, and modifying appointments at run-time, appointment and cell selection, resizing, drag and drop, keyboard navigation, a customizable timeline context menu and resource grouping support. To move to the next day or previous month, you can use the back and forward keyboard arrows, or the [SchedulerNavigator]({%slug winforms/scheduler/scheduler-navigator/overview%}) control.
         
 
 ## Structure of Timeline View
@@ -27,8 +27,8 @@ The [Timeline View]({%slug winforms/scheduler/views/timeline-view%}) of the sch
 
 The Timeline View can be set it to be the default view which the user sees:
 
-{{source=..\SamplesCS\Scheduler\Views\TimelineView.cs region=activeViewType}} 
-{{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=activeViewType}} 
+{{source=..\SamplesCS\Scheduler\Views\TimelineView.cs region=activeViewType1}} 
+{{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=activeViewType1}} 
 
 ````C#
             
@@ -67,8 +67,8 @@ Dim timelineView As SchedulerTimelineView = Me.RadScheduler1.GetTimelineView()
 
 * use the the RadScheduler __ActiveView__ property:
 
-{{source=..\SamplesCS\Scheduler\Views\TimelineView.cs region=activeView}} 
-{{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=activeView}} 
+{{source=..\SamplesCS\Scheduler\Views\TimelineView.cs region=activeView2}} 
+{{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=activeView2}} 
 
 ````C#
 ype

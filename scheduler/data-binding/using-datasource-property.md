@@ -27,7 +27,8 @@ To have the data source make any sense to the SchedulerBindingDataSource you als
 Here's a dataset design view for the SchedulerData.mdf database file that ships with Telerik UI for WinForms. You can see all the fields that can be defined for appointments and resources. Also notice a "join table" named "TransientAppointmentsResources" that assigns a particular resource to an appointment.
 
 >note Notice that while the database structure allows for multiple resources, the built-in scheduler dialog only allows a single resource to be selected at a time.
->
+
+
 ![scheduler-data-binding-using-datasource-property 001](images/scheduler-data-binding-using-datasource-property001.png)
 
 The foreign key relationship between "TransientAppointmentsResources" and the "Appointments" table will also be defined in the AppointmentMappingInfo object.

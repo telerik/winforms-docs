@@ -24,16 +24,11 @@ To explicitly set the Work Week to be the default view which the user sees on 
 {{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=ViewType}} 
 
 ````C#
-if (this.radScheduler1.ActiveViewType == SchedulerViewType.Week)
-{
-    SchedulerWeekView activeWeekView = (SchedulerWeekView)this.radScheduler1.ActiveView;
-}
+this.radScheduler1.ActiveViewType = SchedulerViewType.Week;
 
 ````
 ````VB.NET
-If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Week Then
-    Dim activeWeekView As SchedulerWeekView = CType(Me.RadScheduler1.ActiveView, SchedulerWeekView)
-End If
+Me.RadScheduler1.ActiveViewType = SchedulerViewType.Week
 
 ````
 
@@ -43,7 +38,7 @@ End If
 
 To get the instance to the SchedulerWeek view from the RadScheduler object, either:
 
-* use the __GetDayView__ method:
+* use the __GetWeekView__ method:
 
 {{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=weekView}} 
 {{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=weekView}} 

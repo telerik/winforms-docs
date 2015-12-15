@@ -12,7 +12,7 @@ position: 2
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[In-Place Editors with RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/in-place-editors-with-radscheduler-for-winforms)In this video, you will learn how to use the new in-place editors feature of RadScheduler for WinForms.|![scheduler-end-user-functionality-editing-appointments 004](images/scheduler-end-user-functionality-editing-appointments004.png)|
+|[In-Place Editors with RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/in-place-editors-with-radscheduler-for-winforms) In this video, you will learn how to use the new in-place editors feature of RadScheduler for WinForms.|![scheduler-end-user-functionality-editing-appointments 004](images/scheduler-end-user-functionality-editing-appointments004.png)|
 
 RadScheduler offers two options to edit an appointment:
 

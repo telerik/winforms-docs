@@ -12,7 +12,7 @@ position: 11
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Using Time Zones in RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/using-time-zones-in-radscheduler-for-winforms)In this video, you will learn how to display appointments contained in RadScheduler in different time zones. You will also learn how to add time zone rulers to RadScheduler.|![scheduler-views-time-zones 009](images/scheduler-views-time-zones009.png)|
+|[Using Time Zones in RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/using-time-zones-in-radscheduler-for-winforms) In this video, you will learn how to display appointments contained in RadScheduler in different time zones. You will also learn how to add time zone rulers to RadScheduler.|![scheduler-views-time-zones 009](images/scheduler-views-time-zones009.png)|
 
 ## 
 

@@ -123,7 +123,7 @@ backgroundIdSchedulerMapping.ConvertToDataSource = New ConvertCallback(AddressOf
 
 If the database has fields that can be Null then you need to add converters for those fields. For example, let's suppose that the database has a field "Location", which is a string and you wish to check whether its value is DBNull. If it is DBNull you would want to convert it to null. Here are the steps:
         
-1\. Create a conversion method with the following signature:#_[C#]_
+1\. Create a conversion method with the following signature: 
 
 {{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=locationCallback}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=locationCallback}} 
@@ -151,7 +151,7 @@ End Function
 
 {{endregion}} 
 
-2\. Apply the Location mapping settings in the AppointmentMappingInfo:#_[C#]_
+2\. Apply the Location mapping settings in the AppointmentMappingInfo: 
 
 {{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=location}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=location}} 

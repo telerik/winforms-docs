@@ -19,7 +19,7 @@ position: 0
 A first-rate scheduling component should offer intuitive, simple, and familiar interface, to help the user review all events in  a fast and efficient manner. Telerik Windows Forms Scheduler provides simplistic, but powerful interface, following closely the established UI standards.
         
 
-The structure of the __RadScheduler__ control varies slightly, depending on the view type. When the view type changes, the main __ViewElement__ of __RadScheduler__ is also changed. The view element for[Day]({%slug winforms/scheduler/views/day-view%}), [MultiDay]({%slug winforms/scheduler/views/multiday-view%}), [Week]({%slug winforms/scheduler/views/week-view%}), and[Work Week]({%slug winforms/scheduler/views/work-week-view%})  views is the same - __SchedulerDayViewElement__. This ensures simplified deployment, much better flexibility and saves the need to write  or modify the logic behind all the different view types. Added to that, you can set your preferences from one place to apply to all views. The [Month]({%slug winforms/scheduler/views/month-view%}) and [Timeline]({%slug winforms/scheduler/views/timeline-view%}) Views use a different presentation elements – __SchedulerMonthViewElement__ and __SchedulerTimelineViewElement__ respectively.
+The structure of the __RadScheduler__ control varies slightly, depending on the view type. When the view type changes, the main __ViewElement__ of __RadScheduler__ is also changed. The view element for [Day]({%slug winforms/scheduler/views/day-view%}), [MultiDay]({%slug winforms/scheduler/views/multiday-view%}), [Week]({%slug winforms/scheduler/views/week-view%}), and [Work Week]({%slug winforms/scheduler/views/work-week-view%})  views is the same - __SchedulerDayViewElement__. This ensures simplified deployment, much better flexibility and saves the need to write  or modify the logic behind all the different view types. Added to that, you can set your preferences from one place to apply to all views. The [Month]({%slug winforms/scheduler/views/month-view%}) and [Timeline]({%slug winforms/scheduler/views/timeline-view%}) Views use a different presentation elements – __SchedulerMonthViewElement__ and __SchedulerTimelineViewElement__ respectively.
 
 All view elements inherit from the base __SchedulerViewElement__ type, which defines common methods and properties for all views. The current view element can be accessed via the __ViewElement__ property of __RadScheduler__.
 
@@ -47,16 +47,16 @@ RadScheduler displays all of its events in a __Time table__. The time table cons
 
 * __Current Day__ is highlighted in most scheduler views for a better visual presentation.
 
-    ![scheduler-views-overview-and-structure 002](images/scheduler-views-overview-and-structure002.png)
+![scheduler-views-overview-and-structure 002](images/scheduler-views-overview-and-structure002.png)
 
 * In addition, __Navigation Elements__ let the user jump forward or backwards to the nearest appointment.
 
 
-    ![scheduler-views-overview-and-structure 003](images/scheduler-views-overview-and-structure003.png)
+![scheduler-views-overview-and-structure 003](images/scheduler-views-overview-and-structure003.png)
 
 ## Structure of Month View
 
-The [Month View]({%slug winforms/scheduler/views/month-view%})of the scheduler simply has a __Header__, __Month Cells__ for every day in the month and zero or more __Appointment Cells__ in each month cell.
+The [Month View]({%slug winforms/scheduler/views/month-view%}) of the scheduler simply has a __Header__, __Month Cells__ for every day in the month and zero or more __Appointment Cells__ in each month cell.
 
 ![scheduler-views-overview-and-structure 004](images/scheduler-views-overview-and-structure004.png)
 
@@ -82,6 +82,6 @@ The supported __scales__ can be set to any of the predefined values, or the user
 
 ## Scheduler Navigator 
 
-A [Scheduler Navigator]({%slug winforms/scheduler/scheduler-navigator/overview%})control can be placed at the top of the scheduler for easy navigation between the different views and dates;
+A [Scheduler Navigator]({%slug winforms/scheduler/scheduler-navigator/overview%}) control can be placed at the top of the scheduler for easy navigation between the different views and dates;
 
 ![scheduler-views-overview-and-structure 006](images/scheduler-views-overview-and-structure006.png)

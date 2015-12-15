@@ -57,13 +57,15 @@ Much like Microsoft Outlook, RadScheduler for WinForms offers several ways of cr
     - In the __recurrence dialog__ you can do the following:
 
     - Specify appointment hours and duration
-        ![scheduler-end-user-functionality-adding-appointments 003](images/scheduler-end-user-functionality-adding-appointments003.png)
+     
+	![scheduler-end-user-functionality-adding-appointments 003](images/scheduler-end-user-functionality-adding-appointments003.png)
 
-    - Specify how often the appointment recurs. Recurrence can be Daily, Weekly, Monthly, or Yearly.
+    	- Specify how often the appointment recurs. Recurrence can be Daily, Weekly, Monthly, or Yearly.
 
-    - Specify the duration between the occurrences of a recurring appointment
+    	- Specify the duration between the occurrences of a recurring appointment
 
-    - Specify when the recurrence ends
+    	- Specify when the recurrence ends
+    	
         ![scheduler-end-user-functionality-adding-appointments 004](images/scheduler-end-user-functionality-adding-appointments004.png)
 
     - When you are ready press the Ok button to accept the changes or press the Cancel button to cancel them.

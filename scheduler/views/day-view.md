@@ -20,16 +20,16 @@ The Day view shows one or more days at a time. To move to the next or previous 
 
 The Day View is the default RadScheduler view, but you can explicitly set it to be the view which the user sees:
 
-{{source=..\SamplesCS\Scheduler\Views\DayView.cs region=activeViewType}} 
-{{source=..\SamplesVB\Scheduler\Views\DayView.vb region=activeViewType}} 
+{{source=..\SamplesCS\Scheduler\Views\DayView.cs region=activeViewType1}} 
+{{source=..\SamplesVB\Scheduler\Views\DayView.vb region=activeViewType1}} 
 
 ````C#
-ype
+
             this.radScheduler1.ActiveViewType = SchedulerViewType.Day;
 
 ````
 ````VB.NET
-ype
+
         Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day
 
 ````
@@ -60,8 +60,8 @@ Dim dayView As SchedulerDayView = Me.RadScheduler1.GetDayView()
 
 * use the the RadScheduler __ActiveView__ property:
 
-{{source=..\SamplesCS\Scheduler\Views\DayView.cs region=activeView}} 
-{{source=..\SamplesVB\Scheduler\Views\DayView.vb region=activeView}} 
+{{source=..\SamplesCS\Scheduler\Views\DayView.cs region=activeView2}} 
+{{source=..\SamplesVB\Scheduler\Views\DayView.vb region=activeView2}} 
 
 ````C#
 ype
@@ -81,13 +81,14 @@ ype
 The Day View can show a predefined number of days through the __DayCount__ property. The default value is 3 days, whereas the minimum value is 1 day and the maximum is 10 days:
 
 {{source=..\SamplesCS\Scheduler\Views\DayView.cs region=dayCount}} 
+{{source=..\SamplesVB\Scheduler\Views\DayView.vb region=dayCount}} 
+
 ````C#
-ype
-        Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day
+        dayView.DayCount = 3;
 
 ````
 ````VB.NET
-dayView.DayCount = 3;
+		dayView.DayCount = 3;
 
 ````
 
@@ -172,8 +173,6 @@ dayView.HeaderFormat = "MMMM dd"
 {{endregion}} 
 
 
-## Customizing the time ruler area
-
 ## Ruler Scale
 
 The default __scale of the ruler__ can be set with a single property (__RangeFactor__) to any of the predefined values, or the user can select a new scale by simply right-clicking in the time ruler and selecting the preferable setting. The Range factor modes are (the default is 60 minutes):
@@ -257,6 +256,7 @@ dayView.RulerEndScaleMinutes = 45
 
 The __RulerFormatStrings__ property changes the time format in the ruler between am and pm.   The properties of the __RulerFormatStrings__ class allow you to specify the hour and minute formats for both types of ticks (whole hour ticks and sub hour ticks). The following example demonstrates the usage of __RulerFormatStrings__:
 
+
 {{source=..\SamplesCS\Scheduler\Views\DayView.cs region=12rulerTimeFormat}} 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=12rulerTimeFormat}} 
 
@@ -294,6 +294,8 @@ dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
 ````
 
 {{endregion}} 
+
+![scheduler-views-day-view 005](images/scheduler-views-day-view006.png)
 
 ## Showing and Hiding the Ruler
 
