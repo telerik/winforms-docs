@@ -352,7 +352,6 @@ public class CustomResource : INotifyPropertyChanged
 {
     private int id;
     private string name;
-
     public int Id
     {
         get
@@ -368,7 +367,6 @@ public class CustomResource : INotifyPropertyChanged
             }
         }
     }
-
     public string Name
     {
         get
@@ -384,7 +382,6 @@ public class CustomResource : INotifyPropertyChanged
             }
         }
     }
-
     public event PropertyChangedEventHandler PropertyChanged;
     protected virtual void OnPropertyChanged(string propertyName)
     {
@@ -401,7 +398,6 @@ Public Class CustomResource
     Implements INotifyPropertyChanged
     Private m_id As Integer
     Private m_name As String
-
     Public Property Id() As Integer
         Get
             Return Me.m_id
@@ -413,7 +409,6 @@ Public Class CustomResource
             End If
         End Set
     End Property
-
     Public Property Name() As String
         Get
             Return Me.m_name
@@ -425,7 +420,6 @@ Public Class CustomResource
             End If
         End Set
     End Property
-
     Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
     Protected Overridable Sub OnPropertyChanged(propertyName As String)
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
@@ -647,14 +641,25 @@ End Property
 In the __AppointmentMappingInfo__ settings the __ResourceId__ property should be left unset and the __Resources__ property should be set with the name of the collection:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=ManyToMany1}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=ManyToMany1}} 
-
 ````C#
-appointmentMappingInfo.Resources = "Resources";
+'other fields…
+Private _resources As New List(Of EventId)
+'other properties…
+Public Property Resources() As List(Of EventId)
+    Get
+        Return Me._resources
+    End Get
+    Set(value As List(Of EventId))
+        If Not Me._resources.Equals(value) Then
+            Me._resources = value
+            Me.OnPropertyChanged("Resources")
+        End If
+    End Set
+End Property
 
 ````
 ````VB.NET
-appointmentMappingInfo.Resources = "Resources"
+appointmentMappingInfo.Resources = "Resources";
 
 ````
 

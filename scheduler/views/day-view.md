@@ -24,13 +24,11 @@ The Day View is the default RadScheduler view, but you can explicitly set it to 
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=activeViewType1}} 
 
 ````C#
-
-            this.radScheduler1.ActiveViewType = SchedulerViewType.Day;
+this.radScheduler1.ActiveViewType = SchedulerViewType.Day;
 
 ````
 ````VB.NET
-
-        Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day
+Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day
 
 ````
 
@@ -64,13 +62,16 @@ Dim dayView As SchedulerDayView = Me.RadScheduler1.GetDayView()
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=activeView2}} 
 
 ````C#
-ype
-            this.radScheduler1.ActiveViewType = SchedulerViewType.Day;
+if (this.radScheduler1.ActiveViewType == SchedulerViewType.Day)
+{
+    SchedulerDayView activeDayView = (SchedulerDayView)this.radScheduler1.ActiveView;
+}
 
 ````
 ````VB.NET
-ype
-        Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day
+If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Day Then
+    Dim activeDayView As SchedulerDayView = CType(Me.RadScheduler1.ActiveView, SchedulerDayView)
+End If
 
 ````
 
@@ -84,11 +85,11 @@ The Day View can show a predefined number of days through the __DayCount__ prope
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=dayCount}} 
 
 ````C#
-        dayView.DayCount = 3;
+dayView.DayCount = 3;
 
 ````
 ````VB.NET
-		dayView.DayCount = 3;
+dayView.DayCount = 3
 
 ````
 

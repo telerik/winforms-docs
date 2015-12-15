@@ -71,14 +71,17 @@ Dim timelineView As SchedulerTimelineView = Me.RadScheduler1.GetTimelineView()
 {{source=..\SamplesVB\Scheduler\Views\TimelineView.vb region=activeView2}} 
 
 ````C#
-ype
             
-            this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Timeline;
+if (this.radScheduler1.ActiveViewType == SchedulerViewType.Timeline)
+{
+    SchedulerTimelineView activeTimelineView = (SchedulerTimelineView)this.radScheduler1.ActiveView;
+}
 
 ````
 ````VB.NET
-ype
-        Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Timeline
+If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Timeline Then
+    Dim activeTimelineView As SchedulerTimelineView = CType(Me.RadScheduler1.ActiveView, SchedulerTimelineView)
+End If
 
 ````
 
