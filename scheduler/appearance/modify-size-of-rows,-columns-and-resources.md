@@ -40,7 +40,7 @@ TryCast(scheduler.ViewElement, SchedulerDayViewElement).SetColumnWidth(1, 3)
 {{endregion}} 
 
 >important The actual width of a column will be calculated proportionally according to the values other columns have. The default value of each column is 1. This means that setting a value of 2 for a given column will make it twice as large compared to other columns.
->
+
 ![scheduler-appearance-modifying-size-of-rows-columns-and-resources 002](images/scheduler-appearance-modifying-size-of-rows-columns-and-resources002.png)
 
 ## MonthView

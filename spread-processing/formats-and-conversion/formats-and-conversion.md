@@ -29,9 +29,10 @@ The document model exposes three format providers that work with each of the for
 >note Unlike the __CsvFormatProvider__ and __TxtFormatProvider__ classes, the __XlsxFormatProvider__ requires references to the following assemblies:
 >
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
-* Telerik.Windows.Zip.dll> __PdfFormatProvider__ requires reference to the following assembly:
+* Telerik.Windows.Zip.dll> 
 >
-* Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll>
+__PdfFormatProvider__ requires reference to the following assembly:
+* Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
 
 The document model of RadSpreadProcessing also contains a __WorkbookFormatProvidersManager__ class, which exposes a whole set of useful static methods. The manager allows you to specify a set of format providers you would like to use. Then you can import and export a file leaving the manager to choose the appropriate format provider to use. You only need to specify the extension of the file that you open or save:
 

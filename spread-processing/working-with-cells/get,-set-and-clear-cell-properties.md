@@ -300,10 +300,7 @@ The result of Example 6 is illustrated in __Figure 2__
 
 ![spreadprocessing-working-with-cells-get-set-and-clear-cell-properties 002](images/spreadprocessing-working-with-cells-get-set-and-clear-cell-properties002.png)
 
-The __GradientFill__ is used to set the background of a region of cell to a gradual blending of two colors. To create a GradientFill, 
-          you need to specify a
-          [GradientType](http://www.telerik.com/help/winforms/t_telerik_windows_documents_spreadsheet_model_gradienttype.html)
-          , and the two colors that will blend.
+The __GradientFill__ is used to set the background of a region of cell to a gradual blending of two colors. To create a GradientFill, you need to specify a [GradientType](http://www.telerik.com/help/winforms/t_telerik_windows_documents_spreadsheet_model_gradienttype.html), and the two colors that will blend.
         
 
 __Example 7__ assigns the region A1:F1 a smooth horizontal green gradient.

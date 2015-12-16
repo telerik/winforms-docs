@@ -80,7 +80,7 @@ appointment.Reminder = New TimeSpan(10000)
 
 {{endregion}} 
 
-2\. Set StartReminderInterval and EndReminderInterval.
+3\. Set StartReminderInterval and EndReminderInterval.
 
 {{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=interval}} 
 {{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=interval}} 
@@ -105,7 +105,7 @@ appointment.Reminder = New TimeSpan(10000)
 
 {{endregion}} 
 
-1. You should set the reminder property of the appointment. This property indicates how much time before the appointment start, the reminder will be shown. For example you can initialize and add an appointment with the following code.
+4\. You should set the reminder property of the appointment. This property indicates how much time before the appointment start, the reminder will be shown. For example you can initialize and add an appointment with the following code.
 
 {{source=..\SamplesCS\Scheduler\Reminders\SchedulerReminder.cs region=reminder}} 
 {{source=..\SamplesVB\Scheduler\Reminders\SchedulerReminder.vb region=reminder}} 

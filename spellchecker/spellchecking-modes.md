@@ -22,8 +22,7 @@ RadSpellChecker allows you to choose between two spellchecking modes:
 
 ### Check Word By Word
 
-To do this kind of check, you should set the __SpellCheckMode__
-property to *WordByWord*:
+To do this kind of check, you should set the __SpellCheckMode__ property to *WordByWord*:
 
 
 {{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=wordByWord}} 
@@ -51,11 +50,12 @@ You are presented with a list of all possible suggestions, from which you can ch
 This dialog will be called on every word considered wrong.
 
 >note 
-
 WordByWord is the default value of SpellCheckMode so unless you have a complex scenario where you need to go from WordByWord to AllAtOnce an back, you do not need to set the property.
 
 
-__Check All Words at Once__  To do this kind of check, you should set the __SpellCheckMode__ property to *AllAtOnce*:
+__Check All Words at Once__  
+
+To do this kind of check, you should set the __SpellCheckMode__ property to *AllAtOnce*:
 
 {{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=allAtOnce}} 
 {{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=allAtOnce}} 

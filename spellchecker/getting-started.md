@@ -12,8 +12,7 @@ position: 1
 
 
 
-The following tutorial demonstrates how you can make RadSpellChecker
-check a simple text-editing control - RadTextBox.
+The following tutorial demonstrates how you can make RadSpellChecker check a simple text-editing control - RadTextBox.
       
 
 >note Before executing the following steps, please make sure that the target framework of the project in which you are going to use RadSpellChecker is .NET Framework 4.0. This will allow you to see RadSpellChecker in your Toolbox and work with it.

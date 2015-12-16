@@ -15,7 +15,7 @@ position: 3
 
 ![splitcontainer-building-advanced-layouts 001](images/splitcontainer-building-advanced-layouts001.png)
 
-* A 5*5 Grid of SplitPanel instances, with the center panel’s SizeMode set to SplitPanelSizeMode.Fill
+A 5*5 Grid of SplitPanel instances, with the center panel’s SizeMode set to SplitPanelSizeMode.Fill
           
 In order to achieve the layout on the top screen, refer to the code snippet
  below:
@@ -130,7 +130,7 @@ End Sub
 
 ![splitcontainer-building-advanced-layouts 003](images/splitcontainer-building-advanced-layouts003.png)
 
-*The green panel in the center is with applied size restrictions.
+*The green panel in the center is with applied size restrictions.*
          
 These settings are considered by both the layout engine and the splitterlogic, which will clamp the drag hint to visually emphasize on the restrictions.
         

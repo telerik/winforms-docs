@@ -26,7 +26,7 @@ The __WorkbookFormatProvidersManager__ class contains two methods that allow you
 
 >note Unlike the __CsvFormatProvider__ and __TxtFormatProvider__ classes, using __XlsxFormatProvider__ requires references to the following assemblies:
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
-* Telerik.Windows.Zip.dll>
+* Telerik.Windows.Zip.dll
 >
 
 {{source=..\SamplesCS\RadSpreadProcessing\FormatsAndConversion\SpreadFormatProvidersManager.cs region=radspreadprocessing-formats-and-conversion-workbookformatprovidersmanager_0}} 

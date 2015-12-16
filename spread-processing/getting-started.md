@@ -68,7 +68,7 @@ The following .NET assemblies are required as well"
 The document model allows you to instantiate a new [workbook]({%slug winforms/spread-processing/working-with-workbooks/whats-is-a-workbook?%}) and populate it with any data you want.
         
 
-__Example 1__ shows how you can create a workbook and add a new worksheet to it. _
+__Example 1__ shows how you can create a workbook and add a new worksheet to it.
 
 #### Example 1: Create Workbook
 

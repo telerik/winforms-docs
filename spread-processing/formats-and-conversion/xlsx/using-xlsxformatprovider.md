@@ -14,7 +14,7 @@ __XlsxFormatProvider__ makes it easy to import and export xlsx files. An xlsx fi
 
 >note Unlike the csv and txt format providers, the __XlsxFormatProvider__ requires references to the following assemblies:
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
-* Telerik.Windows.Zip.dll>
+* Telerik.Windows.Zip.dll
 >
 
 

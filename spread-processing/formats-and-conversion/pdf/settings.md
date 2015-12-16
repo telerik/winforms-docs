@@ -5,7 +5,7 @@ description: Settings
 slug: winforms/spread-processing/formats-and-conversion/pdf/settings
 tags: settings
 published: True
-position: 2
+position: 3
 ---
 
 # Settings
@@ -27,6 +27,8 @@ __PdfExportSettings__ allow controlling how a Workbook is exported to PDF. Using
             
 
 * __SelectedRanges property__: A list of ranges specifying which areas of the active worksheet should be exported. Using the __ExportWhat.Selection__ option you may specify that you need to export exactly this __SelectedRanges__ from the current worksheet, __ignoring PrintArea and PageBreaks__ from __WorksheetPageSetup__.
+
+* __PdfFileSettings__: A property of type Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export.PdfExportSettings which is a class related to the [RadPdfProcessing]({% slug winforms/pdfprocessing%}) library. Thus, the property allows you to control the encryption, and other PDF format related properties. More information on the settings are available in the [export settings article for RadPdfProcessing]({%slug winforms/pdfprocessing/formats-and-conversion/pdf/settings%}).
             
 
 The following example shows how to export the Entire Workbook without ignoring the __PrintArea__ property in all worksheets:

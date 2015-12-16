@@ -28,8 +28,5 @@ The control is shipped with a rich set of themes that allow you to easily build 
 |TelerikMetro![scheduler-appearance-themes-and-appearance 015](images/scheduler-appearance-themes-and-appearance015.png)|VisualStudio2012Light![scheduler-appearance-themes-and-appearance 016](images/scheduler-appearance-themes-and-appearance016.png)|
 |Office2010Silver![scheduler-appearance-themes-and-appearance 017](images/scheduler-appearance-themes-and-appearance017.png)|TelerikMetroTouch![scheduler-appearance-themes-and-appearance 018](images/scheduler-appearance-themes-and-appearance018.png)|
 
-In addition to the built-in themes for the scheduler navigator, every single area do the Scheduler can be customized, including but not 
-          limited to appointments, status indicators (busy, tentative, etc), background (indicating the category it belongs to), text format and 
-          positioning, date/time indicators, headers, working time, etc. This is done by using the 
-          [Visual Style Builder productivity tool](http://www.telerik.com/help/winforms/vsb_overview.html).
+In addition to the built-in themes for the scheduler navigator, every single area do the Scheduler can be customized, including but not limited to appointments, status indicators (busy, tentative, etc), background (indicating the category it belongs to), text format and positioning, date/time indicators, headers, working time, etc. This is done by using the [Visual Style Builder productivity tool]({%slug winforms/tools/visual-style-builder%}).
         

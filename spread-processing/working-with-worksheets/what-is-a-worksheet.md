@@ -25,13 +25,13 @@ The main characteristics of worksheets can be summarized in the following list:
 * __Cells__: Each worksheet has a significant number of cells that can be assigned values and various formatting options. The Cells property allows you to insert, manipulate and delete worksheet cells. More information about worksheet cells is available in the [What is a Cell?]({%slug winforms/spread-processing/working-with-cells/what-is-a-cell?%}) section.
             
 
-* __Rows and Columns__: Cells in a worksheet are organized in rows and columns. The API of a worksheet allows you insert, manipulate and delete rows and columns. Additionally, you can adjust the height of specific rows and the width of columns. For more info about rows refer to the [Working  with Rows and Columns](f33b85a1-1f3d-442c-9dcb-d6b2d33ba99c) section.
+* __Rows and Columns__: Cells in a worksheet are organized in rows and columns. The API of a worksheet allows you insert, manipulate and delete rows and columns. Additionally, you can adjust the height of specific rows and the width of columns. For more info about rows refer to the [Working  with Rows and Columns]({%slug winforms/spread-processing/working-with-rows-and-columns/what-is-row-column%}) section.
             
 
 * __Names (Named Ranges)__: the Worksheet class exposes a Names property of type NameCollection that allows you to create, update and manage names. More about the feature is available in the [Names]({%slug winforms/spread-processing/features/names-(named-ranges)%}) article.
             
 
-* __UsedCellRange__: Since each worksheet contains over a million rows and more than sixteen thousand columns, it is unlikely to use the full capacity of a worksheet. Typically, a worksheet uses only a part of the available cells. That said, in a number of scenarios you might want to know which part of the worksheet contains your data and ignore the rest of the cells. The UsedCellRange property of the Worksheet class returns a cell range that starts from cell A1 and holds all cells containing data.
+* __UsedCellRange and GetUsedCellRange()__: Since each worksheet contains over a million rows and more than sixteen thousand columns, it is unlikely to use the full capacity of a worksheet. Typically, a worksheet uses only a part of the available cells. That said, in a number of scenarios you might want to know which part of the worksheet contains your data and ignore the rest of the cells. The UsedCellRange property of the Worksheet class returns a cell range that starts from cell A1 and holds all cells containing data.
             
 
 * __Collection of Hyperlinks__: Each worksheet can contain numerous hyperlinks to web pages, particular cells in the workbook or email addresses. More information on the topic is available in the [Hyperlink]({%slug winforms/spread-processing/features/hyperlink%}) article.

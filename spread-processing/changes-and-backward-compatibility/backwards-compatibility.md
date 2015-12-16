@@ -12,6 +12,44 @@ position: 1
 
 This article will list the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
 
+## What's Different in 2015 Q2
+
+__Changed__
+
+Telerik.Windows.Documents.Spreadsheet.Layout.Layers.WorksheetRenderUpdateContext::ViewportPaneTypeToVisibleCellBoxes property is removed.
+
+__What to do now__
+
+Use Telerik.Windows.Documents.Spreadsheet.Layout.Layers.WorksheetRenderUpdateContext::VisibleCellLayoutBoxes property instead.
+
+__Changed__
+
+Telerik.Windows.Documents.Spreadsheet.Measurement.FontManager is removed.
+
+__What to do now__
+
+Use Telerik.Windows.Documents.Core.Fonts.SystemFontsManager class instead.
+
+__Changed__
+
+Telerik.Windows.Documents.Spreadsheet.Model.SpreadsheetNameCollectionScope::Name property is removed.
+
+__Changed__
+
+Telerik.Windows.Documents.Spreadsheet.Model.SelectionState::SelectionState(IEnumerable selectedRanges, CellIndex activeCellIndex) constructor is removed.
+
+__What to do now__
+
+Use Telerik.Windows.Documents.Spreadsheet.Model.SelectionState::SelectionState(IEnumerable selectedRanges, CellIndex activeCellIndex, ViewportPaneType pane) constructor instead.
+
+__Changed__
+
+Telerik.Windows.Documents.Spreadsheet.Utilities.UnitHelper::EMUsToDIP(int value) is removed.
+
+__What to do now__
+
+Use EmuToDip(double value) method instead.
+
 ## What's Different in 2014 Q3
 
 __Changed__

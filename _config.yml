@@ -646,13 +646,13 @@ navigation:
         position: 2   
     richtexteditor/document-elements:
         title: Document Elements
-        postion: 4
+        position: 4
     richtexteditor/document-elements/annotations:		
         title: Annotations
         position: 8
     richtexteditor/features:
         title: Features
-        postion: 5
+        position: 5
     richtexteditor/features/styles:
         title: Styles
         position: 13
@@ -664,13 +664,13 @@ navigation:
         position: 18
     richtexteditor/import:
         title: Import/Export
-        postion: 6
+        position: 6
     richtexteditor/ui-for-applying-rich-text-formatting:
         title: UI for Applying Rich Text Formatting
-        postion: 7
+        position: 7
     richtexteditor/how-to:
         title: How-To
-        postion: 14
+        position: 14
     rotator:
         title: Rotator
         position: 41
@@ -735,7 +735,7 @@ navigation:
         title: Changes and Backward Compatibility
         position: 2
     spread-processing/working-with-workbooks:
-        title: Workingwith Workbooks
+        title: Working with Workbooks
         position: 3
     spread-processing/working-with-worksheets:
         title: Working with Worksheets
