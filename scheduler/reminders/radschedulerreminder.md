@@ -34,20 +34,6 @@ RadSchedulerReminder schedulerReminder = new RadSchedulerReminder();
 ````
 ````VB.NET
 Dim schedulerReminder As New RadSchedulerReminder()
-'			#End Region
-'			#Region "associatedScheduler"
-schedulerReminder.AssociatedScheduler = Me.RadScheduler1
-'			#End Region
-'			#Region "interval"
-schedulerReminder.StartReminderInterval = Date.Now
-schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
-'			#End Region
-'#region reminder
-Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
-Dim dtEnd As DateTime = dtStart.AddHours(1)
-Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
-Me.RadScheduler1.Appointments.Add(appointment)
-appointment.Reminder = New TimeSpan(10000)
 
 ````
 
@@ -64,17 +50,6 @@ schedulerReminder.AssociatedScheduler = this.radScheduler1;
 ````
 ````VB.NET
 schedulerReminder.AssociatedScheduler = Me.RadScheduler1
-'			#End Region
-'			#Region "interval"
-schedulerReminder.StartReminderInterval = Date.Now
-schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
-'			#End Region
-'#region reminder
-Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
-Dim dtEnd As DateTime = dtStart.AddHours(1)
-Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
-Me.RadScheduler1.Appointments.Add(appointment)
-appointment.Reminder = New TimeSpan(10000)
 
 ````
 
@@ -93,13 +68,6 @@ schedulerReminder.EndReminderInterval = DateTime.Now.AddDays(1);
 ````VB.NET
 schedulerReminder.StartReminderInterval = Date.Now
 schedulerReminder.EndReminderInterval = Date.Now.AddDays(1)
-'			#End Region
-'#region reminder
-Dim dtStart As DateTime = DateTime.Now.AddMinutes(1)
-Dim dtEnd As DateTime = dtStart.AddHours(1)
-Dim appointment As New Appointment(dtStart, dtEnd, "Appointment description")
-Me.RadScheduler1.Appointments.Add(appointment)
-appointment.Reminder = New TimeSpan(10000)
 
 ````
 
