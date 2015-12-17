@@ -14,4 +14,4 @@ position: 0
 
 ## 
 
-The full text of the license agreement can be found on Telerik's site, section Purchase > License Agreement, or at the following link: [http://www.telerik.com/purchase/license-agreement/devcraft-complete.aspx](http://www.telerik.com/purchase/license-agreement/devcraft-complete.aspx)
+The full text of the license agreement can be found at the following link: [http://www.telerik.com/purchase/license-agreement/winforms-dlw-s](http://www.telerik.com/purchase/license-agreement/winforms-dlw-s)
