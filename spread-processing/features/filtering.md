@@ -159,9 +159,9 @@ Other than the members of the __IFilter__ interface, the __CustomFilter__ class 
 
 * __LogicalOperator__: The logical operator which determines the logical relationship between the critera. It can have two values:
 
-* And
+	* And
 
-* Or
+	* Or
 
 The criteria is represented by the __CustomFilterCriteria__ class. Each criteria contains the following:
 
@@ -169,17 +169,17 @@ The criteria is represented by the __CustomFilterCriteria__ class. Each criteria
 
 * __ComparisonOperator__: The operator which indicates how the cell value should compare to the FilterValue. The comparison operator can be:
 
-* EqualsTo
+	* EqualsTo
 
-* GreaterThan
+	* GreaterThan
 
-* GreaterThanOrEqualsTo
+	* GreaterThanOrEqualsTo
 
-* LessThan
+	* LessThan
 
-* LessThanOrEqualsTo
+	* LessThanOrEqualsTo
 
-* NotEqualsTo
+	* NotEqualsTo
 
 __Example 2__ shows how to create a custom filter.
 
@@ -213,13 +213,13 @@ Other than the members of the __IFilter__ interface, the __TopFilter__ class exp
 
 * __TopFilterType__: The value indicating whether the filter should display the top or bottom values and whether the number of values will be indicated as a number of items or as percent of the total number of items. The top filter type can be:
 
-* TopNumber
+	* TopNumber
 
-* BottomNumber
+	* BottomNumber
 
-* TopPercent
+	* TopPercent
 
-* BottomPercent
+	* BottomPercent
 
 * __Value__: The number of items or the percent of the total number of items which will be displayed by the filter.
 

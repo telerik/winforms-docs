@@ -30,11 +30,11 @@ The __SpreadsheetHyperlink__ class is the representation of hyperlink in the doc
 
 * __HyperlinkInfo__: Property of type __HyperlinkInfo__; indicates the type of the hyperlink (Url, MailTo, InDocument) and contains information about the target of the hyperlink. As the description of __HyperlinkInfo__ suggests, there are three supported types of hyperlinks:
 
-* __Url__: The Url hyperlink refers to a page on the internet.
+	* __Url__: The Url hyperlink refers to a page on the internet.
 
-* __MailTo__: The MailTo hyperlink contains an e-mail address and, optionally, a subject.
+	* __MailTo__: The MailTo hyperlink contains an e-mail address and, optionally, a subject.
 
-* __InDocument__: The InDocument hyperlink holds a reference to a cell range in string format, e.g. A1:B3.
+	* __InDocument__: The InDocument hyperlink holds a reference to a cell range in string format, e.g. A1:B3.
 
 Depending on the type of the hyperlink, the __HyperlinkInfo__ object may contain additional information about the target. The class exposes the string properties Address, EmailSubject, ScreenTip and SubAddress and each hyperlink type requires a set of these properties to be filled. Note, however, that some of them are mutually exclusive. For example, if you have a Url hyperlink, you do not need to specify the EmailSubject.
 
@@ -143,7 +143,7 @@ Dim a1b3Range As New CellRange(a1Index, b3Index)
 
 {{endregion}} 
 
-1. __Example 6__ gets all hyperlinks the ranges of which are contained in the cell range from __Example 5__.
+1\. __Example 6__ gets all hyperlinks the ranges of which are contained in the cell range from __Example 5__.
 
 #### Example 6: Get hyperlinks in cell range
 
@@ -164,7 +164,7 @@ Dim containingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.Hy
 >note The __GetContainingHyperlinks()__ method has an overload which accepts a collection of cell ranges.
 >
 
-1. __Example 7__ gets all hyperlinks the ranges of which intersect with the cell range from __Example 5__.
+2\. __Example 7__ gets all hyperlinks the ranges of which intersect with the cell range from __Example 5__.
 
 #### Example 7: Get hyperlinks intersecting with cell range
 
@@ -182,7 +182,7 @@ Dim intersectingHyperlinks As IEnumerable(Of SpreadsheetHyperlink) = worksheet1.
 
 {{endregion}} 
 
-1. __Example 8__ gets the last added hyperlink that intersects with the cell range from __Example 5__.
+3\. __Example 8__ gets the last added hyperlink that intersects with the cell range from __Example 5__.
 
 #### 8: Get last hyperlink intersecting with cell range_
 
@@ -203,7 +203,7 @@ Dim canGetHyperlink As Boolean = worksheet1.Hyperlinks.TryGetHyperlink(a1Index, 
 >note The __TryGetHyperlink__ method has an overload that accepts a __CellIndex__ instead of __CellRange__ .
 >
 
-1. __Example 9__ gets the hyperlink which range matches the cell range from __Example 5__.
+4\. __Example 9__ gets the hyperlink which range matches the cell range from __Example 5__.
 
 #### Example 9: Get hyperlink exactly matching cell range
 

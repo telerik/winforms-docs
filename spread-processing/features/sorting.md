@@ -82,9 +82,9 @@ This class has one additional member, other than the members of the __ISortCondi
 
 * __SortOrder__: The sort order. It can have one of these values:
 
-* Ascending
+	* Ascending
 
-* Descending
+	* Descending
 
 ## ValuesSortCondition
 

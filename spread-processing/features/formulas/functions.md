@@ -5,7 +5,7 @@ description: Functions
 slug: winforms/spread-processing/features/formulas/functions
 tags: functions
 published: True
-position: 2
+position: 3
 ---
 
 # Functions

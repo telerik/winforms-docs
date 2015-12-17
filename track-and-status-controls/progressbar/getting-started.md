@@ -12,9 +12,7 @@ position: 1
 
 ## 
 
-In this tutorial, you will use a Telerik RadProgressBar to show the progress
-of a long-running operation. The long-running operation is simulated with a
-Timer control.
+In this tutorial, you will use a Telerik RadProgressBar to show the progress of a long-running operation. The long-running operation is simulated with a Timer control.
 
 1\. Place a __RadProgressBar__ control, a __RadButton__ control, and a standard __Timer__ control on a form.
 

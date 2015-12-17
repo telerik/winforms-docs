@@ -50,8 +50,7 @@ Me.RadTrackBar1.Value = 5
 {{endregion}} 
 
 
-* The __TickStyle__ property controls whether the tick marks are drawn on one or both sides of the control.
-              The default value is *Both*.
+* The __TickStyle__ property controls whether the tick marks are drawn on one or both sides of the control. The default value is *Both*.
             
 
 * Setting __TickStyle__ to *None* will disable the ticks.
@@ -73,6 +72,7 @@ Me.RadTrackBar1.TickStyle = Telerik.WinControls.Enumerations.TickStyles.None
 
 
 ![track-and-status-controls-trackbar-programming-radtrackbar 001](images/track-and-status-controls-trackbar-programming-radtrackbar001.png)![track-and-status-controls-trackbar-programming-radtrackbar 002](images/track-and-status-controls-trackbar-programming-radtrackbar002.png)
+
 
 * Setting __TickStyle__ to *Both* will enable ticks on both sides.
 

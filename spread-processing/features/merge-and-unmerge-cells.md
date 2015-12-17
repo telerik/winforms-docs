@@ -289,7 +289,7 @@ Once a cell is merged, the API offers an easy way to split it back to its compos
 
 __Example 9__ invokes the __Unmerge()__ method for the region *B2:D4* of the worksheet from __Figure 5__, which intersects with the two merged ranges.
 
-#### Example 9: Unmerge cells_
+#### Example 9: Unmerge cells 
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.cs region=radspreadprocessing-features-merge-unmerge-cells_7}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingMergeAndUnmergeCells.vb region=radspreadprocessing-features-merge-unmerge-cells_7}} 

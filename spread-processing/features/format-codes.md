@@ -22,7 +22,7 @@ A number format could contain up to four sections. Each of them defines a format
 
 These sections are not required and could be omitted. If only one section is specified, its code is used for all numbers. In case the specified sections are two, the first one is used for positive numbers and zeros and the second one for negative numbers.
 
-> If a number format is not explicitly set, the default one is General. It represents an empty string, which has a default behavior for the different types of values.
+>note  If a number format is not explicitly set, the default one is General. It represents an empty string, which has a default behavior for the different types of values.
 
 ## Format With Text Values
 
@@ -54,7 +54,7 @@ Table 1
 </table>
 
 
-> If the format code consists only of an ‘@’ sign, the value in the cell will be visualized as it is typed.
+>note  If the format code consists only of an ‘@’ sign, the value in the cell will be visualized as it is typed.
 
 
 Some characters like the percentage sign (%) do not require using quotation marks when including them in a format code. They are listed in Table 2.
@@ -194,7 +194,7 @@ The number formats could be applied according to conditions. Each condition is e
 
 {{region}}
 
-	[Red][<=50];[Blue][>50]
+[Red][<=50];[Blue][>50]
 {{endregion}}
 
 ## Date and Time Formatting

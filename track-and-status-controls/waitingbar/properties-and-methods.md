@@ -29,13 +29,13 @@ Significant RadWaitingBar properties are:
 * __WaitingDirection__: the property indicates the direction of indicators’ movement.
 		
 
-* When set to __Right__ the indicators move from left to right;
+	* When set to __Right__ the indicators move from left to right;
 
-* When set to __Left__ the indicators move from right to left;
+	* When set to __Left__ the indicators move from right to left;
 
-* When set to __Top__ the indicators move from bottom to top;
+	* When set to __Top__ the indicators move from bottom to top;
 
-* When set to __Bottom__ the indicators move from top to bottom;
+	* When set to __Bottom__ the indicators move from top to bottom;
 
 * Note that setting __WaitingDirection__ does not change the size of the control. This implies that when you set the property to __Bottom__ or __Top__, 
 you will need to resize the RadWaitingBar appropriately, i.e. the control height should be larger than its width.
@@ -49,25 +49,25 @@ you will need to resize the RadWaitingBar appropriately, i.e. the control height
 * __WaitingSpeed__: the property sets the speed of the animation. The higher the __WaitingSpeed__, the faster the waiting indicators move. __WaitingSpeed__ possible values range from 0 to 100, where 1 sets the slowest indicator and 100 results in the fastest indicator.
 		
 
-* If the __WaitingSpeed__ is set to 0,  the __WaitingStopped__ event is raised and the waiting process terminates. Then, if the __WaitingSpeed__ is set to a value greater than 0, the __WaitingStarted__ event is raised and the waiting animation continues automatically.
+	* If the __WaitingSpeed__ is set to 0,  the __WaitingStopped__ event is raised and the waiting process terminates. Then, if the __WaitingSpeed__ is set to a value greater than 0, the __WaitingStarted__ event is raised and the waiting animation continues automatically.
 
 * __WaitingStep__: sets the number of pixels the waiting indicators move during each step of the waiting animation process.
 	
 
-* If the __WaitingStep__ is set to 0, the __WaitingStopped__ event is raised and the waiting process terminates. Then, if the WaitingStep is set to a value greater than 0, the __WaitingStarted__ event raises and the waiting animation continues automatically.
+	* If the __WaitingStep__ is set to 0, the __WaitingStopped__ event is raised and the waiting process terminates. Then, if the WaitingStep is set to a value greater than 0, the __WaitingStarted__ event raises and the waiting animation continues automatically.
 
 * __WaitingStyle__: sets the style of RadWaitingBar. Currently, there are three modes supported:
 		
 
-* __Indeterminate__: mimics the indeterminate mode of the standard MS ProgressBar.
+	* __Indeterminate__: mimics the indeterminate mode of the standard MS ProgressBar.
 
     ![track-and-status-controls-waitingbar-programming-radwaitingbar 002](images/track-and-status-controls-waitingbar-programming-radwaitingbar002.png)
 
-* __Throbber__: moves one indicator in two directions: left and right when the RadWaitingBar is horizontal, and bottom and top when the control is vertical.
+	* __Throbber__: moves one indicator in two directions: left and right when the RadWaitingBar is horizontal, and bottom and top when the control is vertical.
 
     ![track-and-status-controls-waitingbar-programming-radwaitingbar 003](images/track-and-status-controls-waitingbar-programming-radwaitingbar003.png)
 
-* __Dash__: instead of indicators, the control moves smoothly a striped pattern in its active portion.
+	* __Dash__: instead of indicators, the control moves smoothly a striped pattern in its active portion.
 
     ![track-and-status-controls-waitingbar-programming-radwaitingbar 001](images/track-and-status-controls-waitingbar-programming-radwaitingbar001.png)
 
@@ -79,4 +79,4 @@ In addition, three methods that control the waiting animation:
 
 * The __ResetWaiting__() method moves the waiting indicators to their initial position.
 
-* Resetting the animation after the waiting process has been started will not stop the animation. Respectively, resetting the animation after the waiting process has been stopped will not start the animation.
+	* Resetting the animation after the waiting process has been started will not stop the animation. Respectively, resetting the animation after the waiting process has been stopped will not start the animation.

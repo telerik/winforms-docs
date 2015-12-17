@@ -18,7 +18,7 @@ __RadHSrollBar__ and __RadVScrollBar__ are themeable alternatives to the standar
 
 [Programming RadScrollBars]({%slug winforms/track-and-status-controls/scrollbar/programming-radscrollbars%})
 
-[Styling](472282FC-8DFB-4ED7-8164-C60A53E690E8)
+Styling
 
 [Control Element Structure]({%slug winforms/track-and-status-controls/scrollbar/control-element-structure%})
 

@@ -5,7 +5,7 @@ description: Cell References
 slug: winforms/spread-processing/features/formulas/cell-references
 tags: cell,references
 published: True
-position: 1
+position: 2
 ---
 
 # Cell References

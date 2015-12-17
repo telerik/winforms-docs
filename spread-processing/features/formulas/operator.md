@@ -5,7 +5,7 @@ description: Operator
 slug: winforms/spread-processing/features/formulas/operator
 tags: operator
 published: True
-position: 0
+position: 1
 ---
 
 # Operator
@@ -50,12 +50,14 @@ The document model supports four groups of operators: arithmetic, comparison, te
 
 If you combine multiple operators in a single formula, the expression is evaluated in order determined by the precedence of the operators. If two operators have equal precedence, they are evaluated from left to right. The following table contains all operators sorted by precedence in descending order:
 
+|||
+|----|----|
 |: (Colon) , (Space)|Reference Operators|
 |- (Minus)|Negation (-2)|
 |^ (Caret)|Exponentiation|
 |* (Asterisk) / (Forward slash)|Multiplication and division|
 |+ (Plus sign) - (Minus sign)|Addition and subtraction|
 |& (Ampersand)|Concatenates two strings|
-|= (Equal)> (Greater than)< (Less than)>= (Greater than or equal to)<= (Less than or equal to)<> (Not equal)|Comparison operators|
+|= (Equal) <br> > (Greater than) <br> < (Less than) <br> >= (Greater than or equal to) <br> <= (Less than or equal to) <br> <> (Not equal)|Comparison operators|
 
 The order of operations within an expression can be changed through applying parenthesis.

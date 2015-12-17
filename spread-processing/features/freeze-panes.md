@@ -25,7 +25,9 @@ This article briefly describes what frozen panes are, and how to create and work
 
 ## What are frozen panes?
 
-Frozen panes are a method to keep part of the worksheet visible at all times when scrolling. The image below shows a document with frozen top rows and first left column.![spreadprocessing-features-freeze-panes 001](images/spreadprocessing-features-freeze-panes001.png)
+Frozen panes are a method to keep part of the worksheet visible at all times when scrolling. The image below shows a document with frozen top rows and first left column.
+
+![spreadprocessing-features-freeze-panes 001](images/spreadprocessing-features-freeze-panes001.png)
 
 ## Types of panes
 
@@ -42,7 +44,9 @@ There are four types of panes, as marked on the image below:
 1. Vertical scrollable
             
 
-1. Scrollable ![spreadprocessing-features-freeze-panes 002](images/spreadprocessing-features-freeze-panes002.png)
+1. Scrollable 
+
+![spreadprocessing-features-freeze-panes 002](images/spreadprocessing-features-freeze-panes002.png)
 
 When the panes are split only horizontally the panes present are horizontal scrollable and scrollable. When the panes are split vertically, the two panes are vertical scrollable and scrollable.
 
@@ -73,7 +77,9 @@ In order to describe fully the state of the frozen panes the following need to b
 
     - void FreezePanes(CellIndex fixedPaneTopLeftCellIndex, int frozenRowsCount, int frozenColumnsCount)
 
-    - void FreezePanes(CellIndex fixedPaneTopLeftCellIndex, int frozenRowsCount, int frozenColumnsCount, CellIndex scrollableTopLeftCellIndex)If the top left cell indices of the fixed pane and of the scrollable pane are not specified, it will be assumed that the top left index of the fixed pane is the current top left index of the viewport and that the scrollable pane is not scrolled.The result from the image above can be achieved with the following code:
+    - void FreezePanes(CellIndex fixedPaneTopLeftCellIndex, int frozenRowsCount, int frozenColumnsCount, CellIndex scrollableTopLeftCellIndex)
+
+If the top left cell indices of the fixed pane and of the scrollable pane are not specified, it will be assumed that the top left index of the fixed pane is the current top left index of the viewport and that the scrollable pane is not scrolled.The result from the image above can be achieved with the following code:
 
 {{source=..\SamplesCS\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.cs region=FreezingPanes}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\RadSpreadProcessingFreezePanes.vb region=FreezingPanes}} 
@@ -112,7 +118,11 @@ workbook.ActiveWorksheet.ViewState.FreezePanes(fixedPaneTopLeftCellIndex, 0, 4)
 ````
 {{endregion}} 
 
-This code will result in the following:![spreadprocessing-features-freeze-panes 004](images/spreadprocessing-features-freeze-panes004.png)Since the two panes present are only vertical scrollable and scrollable the columns A and B will remain unreachable. However, the user will be able to scroll to the first two rows. Even though there are two rows from the start of the document at the time of freezing, the document will not be split horizontally.
+This code will result in the following:
+
+![spreadprocessing-features-freeze-panes 004](images/spreadprocessing-features-freeze-panes004.png)
+
+Since the two panes present are only vertical scrollable and scrollable the columns A and B will remain unreachable. However, the user will be able to scroll to the first two rows. Even though there are two rows from the start of the document at the time of freezing, the document will not be split horizontally.
 
 * __The Pane class__ Another option to freeze the panes in a worksheet is to use the Pane property of type Pane of the WorksheetViewState. The functionality you can achieve is almost identical to the FreezePanes() methods. The Pane class has the following properties:
 

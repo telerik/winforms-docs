@@ -5,7 +5,7 @@ description: Formulas
 slug: winforms/spread-processing/features/formulas
 tags: formulas
 published: True
-position: 1
+position: 0
 ---
 
 # Formulas

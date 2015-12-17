@@ -15,7 +15,7 @@ position: 0
 A cell style is a predefined set of formatting options, such as cell borders, fonts, font sizes and number formats. Using cell styles allows you to apply multiple format options in one step and also offers an easy approach to achieve consistency in cell formatting. The document model has a number of built-in cell styles that you can modify or apply directly. Its API allows you to duplicate an existing style or create a new one according to your preferences.
       
 
->note You can create cell styles that are dependent on the current document theme. Such styles are updated automatically when you change the selected document theme. You can read more about document themes and dependent cell styles in the[Document Themes]({%slug winforms/spread-processing/features/styling/document-themes%})article.
+>note You can create cell styles that are dependent on the current document theme. Such styles are updated automatically when you change the selected document theme. You can read more about document themes and dependent cell styles in the [Document Themes]({%slug winforms/spread-processing/features/styling/document-themes%}) article.
 >
 
 
@@ -34,49 +34,49 @@ A cell style is represented by the __CellStyle__ class. The properties of the cl
 
 * Number group
 
-* Format
+	* Format
 
 * Alignment group
 
-* HorizontalAlignment
+	* HorizontalAlignment
 
-* VerticalAlignment
+	* VerticalAlignment
 
-* Indent
+	* Indent
 
-* IsWrapped
+	* IsWrapped
 
 * Font group
 
-* FontFamily
+	* FontFamily
 
-* FontSize
+	* FontSize
 
-* IsBold
+	* IsBold
 
-* IsItalic
+	* IsItalic
 
-* Underline
+	* Underline
 
-* ForeColor
+	* ForeColor
 
 * Border group
 
-* LeftBorder
+	* LeftBorder
 
-* TopBorder
+	* TopBorder
 
-* RightBorder
+	* RightBorder
 
-* BottomBorder
+	* BottomBorder
 
-* DiagonalUpBorder
+	* DiagonalUpBorder
 
-* DiagonalDownBorder
+	* DiagonalDownBorder
 
 * Fill group
 
-* Fill
+	* Fill
 
 In addition to the properties above, the __CellStyle__ class exposes five Boolean properties that indicate whether the groups above will be applied:
         
@@ -219,6 +219,35 @@ style.EndUpdate()
 You can also remove a style from the __Styles__ collection. It is as easy as removing an object from a list, you simply use the __Remove()__ method which returns a Bolean value. When there is such style to be removed the method returns true.
 
 #### Example 4: Remove a style
+
+{{source=..\SamplesCS\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.cs region=radspreadprocessing-features-styling-cell-styles_3}} 
+{{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.vb region=radspreadprocessing-features-styling-cell-styles_3}}
+
+````C#
+			Workbook workbook = new Workbook();
+            workbook.Worksheets.Add();
+
+            if (workbook.Styles.Remove("Bad"))
+            {
+                Debug.WriteLine("Style removed");
+            }
+            else
+            {
+                Debug.WriteLine("The style does not exist");
+            }
+````
+````VB.NET
+		Dim workbook As New Workbook()
+        workbook.Worksheets.Add()
+
+        If workbook.Styles.Remove("Bad") Then
+            Debug.WriteLine("Style removed")
+        Else
+            Debug.WriteLine("The style do not exist")
+        End If
+````
+
+{{endregion}} 
 
 # See Also
 

@@ -12,7 +12,7 @@ position: 3
 
 ## 
 
-This image shows the __Control Element Structure__of __RadScrollBar__as displayed by __Visual Style Builder__:
+This image shows the __Control Element Structure__ of __RadScrollBar__ as displayed by __Visual Style Builder__:
 
 ![track-and-status-controls-scrollbar-control-element-structure 001](images/track-and-status-controls-scrollbar-control-element-structure001.png)
 

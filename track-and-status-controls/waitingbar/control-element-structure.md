@@ -18,21 +18,21 @@ RadWaitingBar is built up of several levels of nested components:
 
 * RadWaitingBar   
 
-* RadWaitingBarElement   
+	* RadWaitingBarElement   
 
-* WaitingBarContentElement
+		* WaitingBarContentElement
 
-* WaitingBarSeparatorElement
+			* WaitingBarSeparatorElement
 
-* WaitingBarTextElement
+			* WaitingBarTextElement
 
-* WaitingBarIndicatorElement
+			* WaitingBarIndicatorElement
 
-* WaitingBarSeparatorElement
+				* WaitingBarSeparatorElement
 
-* WaitingBarIndicatorElement
+			* WaitingBarIndicatorElement
 
-* WaitingBarSeparatorElement 
+				* WaitingBarSeparatorElement 
 
 
 The __RadWaitingBarElement__ represents the entire __RadWaitingBar__ control. Any settings you make at this level will be inherited by all elements further down in the tree. The __WaitingBarContentElement__ wraps up the layout logic of the waiting bar and arranges the waiting indicators, the separator element, and the text element. The __WaitingBarSeparatorElement__ covers the __WaitingBarContentElement__’s area completely with a customizable stripe-pattern, hiding the waiting indicators. Stretched in the __WaitingBarContentElement__, the __WaitingBarTextElement__ displays the text of the __RadWaitingBar__. By default, RadWaitingBar comprises two instances of WaitingBarIndicatorElements which represent the control indicators. Each __WaitingBarIndicatorElement__ contains a __WaitingBarSeparatorElement__ in order to allow the waiting indicators to support dash style.   

@@ -98,13 +98,13 @@ There are several ways to create a __ThemableColor__ object:
 
 * Passing two parameters to the constructor – *ThemeColorType* and *double*.
 
-* __ThemeColorType__ is an enum which has twelve possible values (the aforementioned color types).
+	* __ThemeColorType__ is an enum which has twelve possible values (the aforementioned color types).
 
-* The second parameter is of type __double__ and should be between -1 and 1. It represents the tint and shade to be applied on the selected color.
+	* The second parameter is of type __double__ and should be between -1 and 1. It represents the tint and shade to be applied on the selected color.
 
 * Passing *ThemeColorType* and *ColorShadeType*.
 
-* __ThemeColorType__ is the same as in the previously mentioned constructor.
+	* __ThemeColorType__ is the same as in the previously mentioned constructor.
 
 In order to create colors that depend on the current document theme, you need to use __ThemableColor__ objects.
 

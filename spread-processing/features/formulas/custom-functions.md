@@ -5,7 +5,7 @@ description: Custom Functions
 slug: winforms/spread-processing/features/formulas/custom-functions
 tags: custom,functions
 published: True
-position: 4
+position: 5
 ---
 
 # Custom Functions
@@ -170,21 +170,21 @@ __FunctionInfo__ has the following properties:
 * __OptionalArgumentsRepetitionCount__: Returns the number of repetitions of the optional group. The valid count of all arguments depends on this value by satisfying the following conditions:
             
 
-* When __OptionalArgumentsRepetionCount <= 1:__
+	* When __OptionalArgumentsRepetionCount <= 1:__
 
-* __ValidArgumentsCount >= RequiredArgumentsCount__
+		* __ValidArgumentsCount >= RequiredArgumentsCount__
 
-* __ValidArgumentsCount <= RequiredArgumentsCount + OptionalArgumentsCount__
+		* __ValidArgumentsCount <= RequiredArgumentsCount + OptionalArgumentsCount__
 
-* When __OptionalArgumentsRepetitionsCount > 1:__
+	* When __OptionalArgumentsRepetitionsCount > 1:__
 
-* __ValidArgumentsCount = RequiredArgumentsCount + i * OptionalArgumentsCount__
+		* __ValidArgumentsCount = RequiredArgumentsCount + i * OptionalArgumentsCount__
 
-* __i >= 0__
+		* __i >= 0__
 
-* __i <= OptionalArgumentsRepetitionsCount__
+		* __i <= OptionalArgumentsRepetitionsCount__
 
-* __i is integer number__
+		* __i is integer number__
 
 * __IsDefaultValueFunction__: Returns Boolean indicating whether the function is default value function.
             

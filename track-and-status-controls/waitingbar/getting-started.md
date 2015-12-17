@@ -68,12 +68,8 @@ End Sub
 
 {{endregion}} 
 
-10\. 
+10\. Press __F5__ to run the project.
 
-Press __F5__ to run the project.
-
-11\. 
-
-Click the Start button to start and stop the animation.
+11\. Click the Start button to start and stop the animation.
 
 ![track-and-status-controls-waitingbar-getting-started 001](images/track-and-status-controls-waitingbar-getting-started001.png)
