@@ -84,8 +84,39 @@ public partial class CustomAppointmentEditForm : EditAppointmentDialog
 
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=appWithMail}} 
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=appWithMail}} 
 ````C#
+public partial class CustomAppointmentEditForm : EditAppointmentDialog
+{
+    public CustomAppointmentEditForm()
+    {
+        InitializeComponent();
+    }
+    protected override void LoadSettingsFromEvent(IEvent ev)
+    {
+        base.LoadSettingsFromEvent(ev);
+        AppointmentWithEmail appointmentWithEmail = ev as AppointmentWithEmail;
+        if (appointmentWithEmail != null)
+        {
+            this.txtEmail.Text = appointmentWithEmail.Email;
+        }
+    }
+    protected override void ApplySettingsToEvent(IEvent ev)
+    {
+        AppointmentWithEmail appointmentWithEmail = ev as AppointmentWithEmail;
+        if (appointmentWithEmail != null)
+        {
+            appointmentWithEmail.Email = this.txtEmail.Text;
+        }
+        base.ApplySettingsToEvent(ev);
+    }
+    protected override IEvent CreateNewEvent()
+    {
+        return new AppointmentWithEmail();
+    }
+}
+
+````
+````VB.NET
     
 public class AppointmentWithEmail : Appointment
 {
@@ -116,30 +147,6 @@ public class AppointmentWithEmail : Appointment
         }
     }
 }
-
-````
-````VB.NET
-Public Class AppointmentWithEmail
-Inherits Appointment
-    Public Sub New()
-        MyBase.New()
-    End Sub
-    Protected Overrides Function CreateOccurrenceInstance() As [Event]
-        Return New AppointmentWithEmail()
-    End Function
-    Private _email As String = String.Empty
-    Public Property Email() As String
-        Get
-            Return Me._email
-        End Get
-        Set(ByVal value As String)
-            If Me._email <> value Then
-                Me._email = value
-                Me.OnPropertyChanged("Email")
-            End If
-        End Set
-    End Property
-End Class
 
 ````
 

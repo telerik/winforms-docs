@@ -224,27 +224,19 @@ You can also remove a style from the __Styles__ collection. It is as easy as rem
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Styling\RadSpreadProcessingCellStyles.vb region=radspreadprocessing-features-styling-cell-styles_3}}
 
 ````C#
-			Workbook workbook = new Workbook();
-            workbook.Worksheets.Add();
+Workbook workbook = new Workbook();
+workbook.Worksheets.Add();
+if (workbook.Styles.Remove("Bad"))
+{
+    Debug.WriteLine("Style removed");
+}
+else
+{
+    Debug.WriteLine("The style does not exist");
+}
 
-            if (workbook.Styles.Remove("Bad"))
-            {
-                Debug.WriteLine("Style removed");
-            }
-            else
-            {
-                Debug.WriteLine("The style does not exist");
-            }
 ````
 ````VB.NET
-		Dim workbook As New Workbook()
-        workbook.Worksheets.Add()
-
-        If workbook.Styles.Remove("Bad") Then
-            Debug.WriteLine("Style removed")
-        Else
-            Debug.WriteLine("The style do not exist")
-        End If
 ````
 
 {{endregion}} 
