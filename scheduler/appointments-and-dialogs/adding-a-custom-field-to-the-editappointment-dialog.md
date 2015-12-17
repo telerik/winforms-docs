@@ -30,21 +30,6 @@ Here is a step by step guide how to achieve that:
 
 1\. First we have to create a new form (let's call it CustomAppointmentEditForm) which derives from EditAppointmentDialog in order to extend the default scheduler’s dialog.
 
->note In VB.NET you need to open the designer file and add the inherits statement there
-
-#### Inherit the form in VB.NET 
-
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.Designer.vb region=inheritsInVB}} 
-
-````VB.NET
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class CustomAppointmentEditForm
-    Inherits Telerik.WinControls.UI.Scheduler.Dialogs.EditAppointmentDialog
-
-````
-
-{{endregion}} 
-
 2\. Open the dialog in Design Time and add a label and a text box to under the Resource label and text box. Name the text box __txtEmail__
 
 
