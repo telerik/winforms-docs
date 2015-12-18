@@ -40,7 +40,6 @@ Assuming that "toc.xml" is in the TreeView\DataBinding directory which is relati
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToXmlData.vb region=toc}} 
 
 ````C#
-            
 DataSet tocDataSet = new DataSet("Toc");
 tocDataSet.ReadXml("TreeView\\DataBinding\\toc.xml");
 this.radTreeView1.DataMember = "Node";

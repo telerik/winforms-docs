@@ -39,20 +39,8 @@ The following code snippet shows how to use __DocxFormatProvider__ to import a d
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing-formats-and-conversion-docx-docxformatprovider_0}} 
 
 ````C#
-            
-DocxFormatProvider provider = new DocxFormatProvider();
-using (Stream input = File.OpenRead("Sample.docx"))
-{
-    RadFlowDocument document = provider.Import(input);
-}
-
 ````
 ````VB.NET
-Dim provider As New DocxFormatProvider()
-Using input As Stream = File.OpenRead("Sample.docx")
-    Dim document As RadFlowDocument = provider.Import(input)
-End Using
-
 ````
 
 {{endregion}} 

@@ -52,9 +52,6 @@ radTreeView1.KeyboardSearchEnabled = true;
 ````
 ````VB.NET
 radTreeView1.KeyboardSearchEnabled = True
-'#End Region
-'#region KeyboardSearchResetInterval
-radTreeView1.KeyboardSearchResetInterval = 500
 
 ````
 
