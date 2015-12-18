@@ -43,10 +43,6 @@ this.radTreeView1.DataSource = customers;
 ````VB.NET
 Dim customers As IEnumerable(Of Customer) = context.GetTable(Of Customer)().ToList()
 Me.RadTreeView1.DataSource = customers
-'#End Region
-'#region relationClasses
-Me.RadTreeView1.DisplayMember = "ContactName\ShipName\UnitPrice"
-Me.RadTreeView1.ChildMember = "Customers\Orders\Order_Details"
 
 ````
 
@@ -134,7 +130,7 @@ Public Class Parent
             Return m_ParentId
         End Get
         Set(value As String)
-            m_ParentId = Value
+            m_ParentId = value
         End Set
     End Property
     Private m_ParentId As String
@@ -143,7 +139,7 @@ Public Class Parent
             Return m_Title
         End Get
         Set(value As String)
-            m_Title = Value
+            m_Title = value
         End Set
     End Property
     Private m_Title As String
@@ -152,7 +148,7 @@ Public Class Parent
             Return m_IsActive
         End Get
         Set(value As Boolean)
-            m_IsActive = Value
+            m_IsActive = value
         End Set
     End Property
     Private m_IsActive As Boolean
@@ -161,7 +157,7 @@ Public Class Parent
             Return m_Children
         End Get
         Set(value As List(Of Child))
-            m_Children = Value
+            m_Children = value
         End Set
     End Property
     Private m_Children As List(Of Child)
@@ -178,7 +174,7 @@ Public Class Child
             Return m_ChildId
         End Get
         Set(value As String)
-            m_ChildId = Value
+            m_ChildId = value
         End Set
     End Property
     Private m_ChildId As String
@@ -187,7 +183,7 @@ Public Class Child
             Return m_ParentId
         End Get
         Set(value As String)
-            m_ParentId = Value
+            m_ParentId = value
         End Set
     End Property
     Private m_ParentId As String
@@ -196,7 +192,7 @@ Public Class Child
             Return m_Name
         End Get
         Set(value As String)
-            m_Name = Value
+            m_Name = value
         End Set
     End Property
     Private m_Name As String
@@ -205,7 +201,7 @@ Public Class Child
             Return m_Status
         End Get
         Set(value As Boolean)
-            m_Status = Value
+            m_Status = value
         End Set
     End Property
     Private m_Status As Boolean
