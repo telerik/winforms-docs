@@ -41,16 +41,8 @@ Here is how to create a document with a single __Date__ field using __RadFlowDoc
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_0}} 
 
 ````C#
-RadFlowDocument document = new RadFlowDocument();
-RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
-editor.InsertField("DATE", "10/11/2012");
-
 ````
 ````VB.NET
-Dim document As New RadFlowDocument()
-Dim editor As New RadFlowDocumentEditor(document)
-editor.InsertField("DATE", "10/11/2012")
-
 ````
 
 {{endregion}} 
@@ -61,32 +53,8 @@ You can also create and insert all the parts of the field manually by creating a
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_1}} 
 
 ````C#
-// Create a document with paragraph            
-RadFlowDocument document = new RadFlowDocument();
-Paragraph paragraph = document.Sections.AddSection().Blocks.AddParagraph();
-// Create the field info
-FieldInfo field = new FieldInfo(document);
-// Create and add all the inlines to the paragraph.
-paragraph.Inlines.Add(field.Start);
-paragraph.Inlines.AddRun("AUTHOR");
-paragraph.Inlines.Add(field.Separator);
-paragraph.Inlines.AddRun("John Doe");
-paragraph.Inlines.Add(field.End);
-
 ````
 ````VB.NET
-' Create a document with paragraph 
-Dim document As New RadFlowDocument()
-Dim paragraph As Paragraph = document.Sections.AddSection().Blocks.AddParagraph()
-' Create the field info
-Dim field As New FieldInfo(document)
-' Create and add all the inlines to the paragraph.
-paragraph.Inlines.Add(field.Start)
-paragraph.Inlines.AddRun("AUTHOR")
-paragraph.Inlines.Add(field.Separator)
-paragraph.Inlines.AddRun("John Doe")
-paragraph.Inlines.Add(field.[End])
-
 ````
 
 {{endregion}} 
@@ -123,22 +91,8 @@ Updating a single field is done with the __UpdateField()__ method of the __Field
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_2}} 
 
 ````C#
-RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-FieldInfo fieldInfo = editor.InsertField("DATE \\@ dd/MM/yyyy", "result");
-Console.WriteLine(fieldInfo.GetResult()); // Output: result
-fieldInfo.UpdateField();
-Console.WriteLine(fieldInfo.GetResult()); // Output: 06/06/2014
-
 ````
 ````VB.NET
-Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
-Console.WriteLine(fieldInfo.GetResult())
-' Output: result
-fieldInfo.UpdateField()
-Console.WriteLine(fieldInfo.GetResult())
-' Output: 06/06/2014
-
 ````
 
 {{endregion}} 
@@ -151,24 +105,8 @@ All fields in the document can be updated using __UpdateFields()__ of __RadFlowD
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_3}} 
 
 ````C#
-RadFlowDocument document = new RadFlowDocument();
-RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
-FieldInfo fieldInfo = editor.InsertField("DATE \\@ dd/MM/yyyy", "result");
-Console.WriteLine(fieldInfo.GetResult()); // Output: result
-document.UpdateFields();
-Console.WriteLine(fieldInfo.GetResult()); // Output: 06/06/2014
-
 ````
 ````VB.NET
-Dim document As New RadFlowDocument()
-Dim editor As New RadFlowDocumentEditor(document)
-Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
-Console.WriteLine(fieldInfo.GetResult())
-' Output: result
-document.UpdateFields()
-Console.WriteLine(fieldInfo.GetResult())
-' Output: 06/06/2014
-
 ````
 
 {{endregion}} 
@@ -205,33 +143,8 @@ Here is an example of cratering a field which will be evaluated to appropriate g
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_4}} 
 
 ````C#
-RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
-// Create an outer field with empty code fragment
-FieldInfo outerFieldInfo = editor.InsertField(string.Empty, "if field result");
-// Move the editor after the field start character
-editor.MoveToInlineEnd(outerFieldInfo.Start);
-// Create the a code fragment with a nested TIME field
-editor.InsertText("IF ");
-editor.InsertField("TIME \\@ HH", "time field result");
-editor.InsertText(" < 12 \"Good morning!\" \"Good afternoon!\"");
-outerFieldInfo.UpdateField();
-Console.WriteLine(outerFieldInfo.GetResult()); // Output: Good afternoon!
-
 ````
 ````VB.NET
-Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
-' Create an outer field with empty code fragment
-Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
-' Move the editor after the field start character
-editor.MoveToInlineEnd(outerFieldInfo.Start)
-' Create the a code fragment with a nested TIME field
-editor.InsertText("IF ")
-editor.InsertField("TIME \@ HH", "time field result")
-editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
-outerFieldInfo.UpdateField()
-Console.WriteLine(outerFieldInfo.GetResult())
-' Output: Good afternoon!
-
 ````
 
 {{endregion}} 

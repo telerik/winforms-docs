@@ -45,7 +45,8 @@ __Example 1__ demonstrates the creation of a text watermark.
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingWatermark.cs region=radwordsprocessing-concepts-watermark_0}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingWatermark.vb region=radwordsprocessing-concepts-watermark_0}} 
 
-````C#    
+````C#
+            
 Telerik.Windows.Documents.Flow.Model.Watermarks.TextWatermarkSettings settings = new Telerik.Windows.Documents.Flow.Model.Watermarks.TextWatermarkSettings()
 {
     Angle = 12,
@@ -82,7 +83,8 @@ Creating image watermark is very similar to creating a text one. __Example 2__ s
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingWatermark.cs region=radwordsprocessing-concepts-watermark_1}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingWatermark.vb region=radwordsprocessing-concepts-watermark_1}} 
 
-````C#  
+````C#
+            
 Telerik.Windows.Documents.Flow.Model.Watermarks.Watermark imageWatermark = new Watermark(new ImageWatermarkSettings()
 {
     Angle = 45,
@@ -115,6 +117,7 @@ __Example 3__ demonstrates how you can add the watermark created in __Example 1_
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingWatermark.vb region=radwordsprocessing-concepts-watermark_2}} 
 
 ````C#
+            
 Telerik.Windows.Documents.Flow.Model.Header header = document.Sections.First().Headers.Add(Telerik.Windows.Documents.Flow.Model.HeaderFooterType.Default); 
 header.Watermarks.Add(textWatermark);
 
@@ -139,7 +142,8 @@ __Example 4__ demonstrates how to set the watermark created in __Example 2__ thr
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingWatermark.cs region=radwordsprocessing-concepts-watermark_3}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingWatermark.vb region=radwordsprocessing-concepts-watermark_3}} 
 
-````C#  
+````C#
+            
 Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor editor = new Telerik.Windows.Documents.Flow.Model.Editing.RadFlowDocumentEditor(document);       
 Telerik.Windows.Documents.Flow.Model.Section section = editor.Document.Sections.AddSection(); 
 editor.SetWatermark(imageWatermark, section, Telerik.Windows.Documents.Flow.Model.HeaderFooterType.First);

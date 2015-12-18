@@ -69,7 +69,8 @@ The __TabStopCollection__ class exposes the following members:
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingTabStop.cs region=NewTabStop}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingTabStop.vb region=NewTabStop}} 
 
-````C# 
+````C#
+            
 List<TabStop> tabStops = new List<TabStop>();
 tabStops.Add(new TabStop(Telerik.WinForms.Documents.Model.Unit.InchToDip(1), TabStopType.Left));
 tabStops.Add(new TabStop(Telerik.WinForms.Documents.Model.Unit.InchToDip(2), TabStopType.Center, TabStopLeader.Dot));
@@ -117,6 +118,7 @@ Dim collection1 As TabStopCollection = collection.Insert(New TabStop(Unit.InchTo
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingTabStop.vb region=Remove}} 
 
 ````C#
+            
 TabStop tabStopToRemove = collection.First();
 collection = collection.Remove(tabStopToRemove);
 
@@ -159,6 +161,7 @@ Dim tabStop As New TabStop(Telerik.WinForms.Documents.Model.Unit.InchToDip(2), T
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingTabStop.vb region=insert}} 
 
 ````C#
+        
 paragraph.TabStops.Insert(tabStop);
 
 ````
@@ -176,7 +179,8 @@ paragraph.TabStops.Insert(tabStop)
 {{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingTabStop.cs region=paragraphRemove}} 
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingTabStop.vb region=paragraphRemove}} 
 
-````C# 
+````C#
+            
 paragraph.TabStops.Remove(tabStop);
 
 ````

@@ -48,7 +48,8 @@ __Example 1__ demonstrates how to create permission credentials for a single use
 {{source=..\SamplesCS\WordsProcessing\Model\WordsProcessingPermissionRange.cs region=radwordsprocessing-model-permissionranget_0}} 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingPremissionRange.vb region=radwordsprocessing-model-permissionranget_0}} 
 
-````C#   
+````C#
+            
 Telerik.Windows.Documents.Flow.Model.Protection.PermissionRangeCredentials jane =
     new Telerik.Windows.Documents.Flow.Model.Protection.PermissionRangeCredentials("Jane.Doe@telerik.com"); 
 Telerik.Windows.Documents.Flow.Model.Protection.PermissionRange range = new Telerik.Windows.Documents.Flow.Model.Protection.PermissionRange(document, jane);
@@ -82,6 +83,7 @@ __Example 2__ demonstrates how to specify that a __TableCell__ can be edited by 
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingPremissionRange.vb region=radwordsprocessing-model-permissionranget_1}} 
 
 ````C#
+            
 Table table = editor.InsertTable(); 
 TableRow row = table.Rows.AddTableRow(); 
 TableCell cell = row.Cells.AddTableCell();
@@ -121,6 +123,7 @@ Dim range = editor.InsertPermissionRange(everyone, cell)
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingPremissionRange.vb region=radwordsprocessing-model-permissionranget_2}} 
 
 ````C#
+            
 editor.Protect(String.Empty); 
 if (editor.Unprotect(string.Empty)) 
 {
@@ -153,6 +156,7 @@ editor.Unprotect()
 {{source=..\SamplesVB\WordsProcessing\Model\WordsProcessingPremissionRange.vb region=radwordsprocessing-model-permissionranget_3}} 
 
 ````C#
+            
 document.ProtectionSettings.Enforced = true;
 
 ````
