@@ -106,7 +106,7 @@ Default style is style which, according to its style type , is applied to object
 Built-in styles are commonly used styles which are predefined for convenience. They have to be explicitly added to the style repository before usage using the __StyleRepository.AddBuiltInStyle()__ method.
         
 
-[BuiltInStyleNames](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_builtInstylenames.html)static class contains properties and methods for getting the IDs of all built-in styles. For example, the following code gets the ID of the "Heading 1" built-in style:
+[BuiltInStyleNames](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_builtInstylenames.html) static class contains properties and methods for getting the IDs of all built-in styles. For example, the following code gets the ID of the "Heading 1" built-in style:
 
 __BuiltInStyles__ static class can be used for work with the raw built-in styles.
         
@@ -169,19 +169,19 @@ Paragraph style can be based on other paragraph or linked styles.
 * When a paragraph style is based on another paragraph style the inheritance of the properties is as follows:
                 
 
-* Paragraph properties inherit the paragraph properties from the base paragraph style.
+  * Paragraph properties inherit the paragraph properties from the base paragraph style.
                     
 
-* Character properties inherit the character properties from the base paragraph style.
+  * Character properties inherit the character properties from the base paragraph style.
                     
 
 * When a paragraph style is based on a linked style the inheritance of the properties is as follows:
                 
 
-* Paragraph properties inherit the paragraph properties from the paragraph style part in the base linked style.
+  * Paragraph properties inherit the paragraph properties from the paragraph style part in the base linked style.
                     
 
-* Character properties inherit the character properties from the character style part in the base linked style.
+  * Character properties inherit the character properties from the character style part in the base linked style.
                     
 
 ### Table style
@@ -212,19 +212,19 @@ Linked styles can be based on other linked styles or on paragraph styles.
 * When a linked style is based on a paragraph style the inheritance of the properties is as follows:
                 
 
-* Paragraph properties inherit the paragraph properties from the base paragraph style.
+  * Paragraph properties inherit the paragraph properties from the base paragraph style.
                     
 
-* Character properties inherit the character properties from the base paragraph style.
+  * Character properties inherit the character properties from the base paragraph style.
                     
 
 * When a linked style is based on another linked style the inheritance of the properties is as follows:
                 
 
-* Paragraph properties inherit the paragraph properties from the base linked paragraph style.
+  * Paragraph properties inherit the paragraph properties from the base linked paragraph style.
                     
 
-* Character properties inherit the character properties from the base linked character style.
+  * Character properties inherit the character properties from the base linked character style.
                     
 
 # See Also

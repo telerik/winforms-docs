@@ -76,7 +76,7 @@ The __TableRow__ element exposes several properties that allow you to customize 
 
 * __Height__: Specifies the row height.
 
->tip Style properties are properties that can be inherited from a style. For more information about styles see[this article]({%slug winforms/wordsprocessing/concepts/style-properties%}).
+>tip Style properties are properties that can be inherited from a style. For more information about styles see [this article]({%slug winforms/wordsprocessing/concepts/style-properties%}).
 >
 
 

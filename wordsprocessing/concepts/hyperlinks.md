@@ -51,7 +51,7 @@ The result looks like this:
 
 ![wordsprocessing-concepts-hyperlinks 001](images/wordsprocessing-concepts-hyperlinks001.png)
 
->tip The __InsertHyperlink()__ method also automatically applies the Hyperlink style to the result fragment of the inserted  field. More information about styles is available in the[Styles]({%slug winforms/wordsprocessing/concepts/styles%})article.
+>tip The __InsertHyperlink()__ method also automatically applies the Hyperlink style to the result fragment of the inserted  field. More information about styles is available in the [Styles]({%slug winforms/wordsprocessing/concepts/styles%}) article.
 >
 
 

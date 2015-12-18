@@ -43,16 +43,16 @@ Style properties are exposed through [IStyleProperty<T>]( http://www.telerik.com
 * __PropertyDefinition__: The [property definition](#style-property-definitions) is exposed through the [IStylePropertyDefinition](http://www.telerik.com/help/winforms/allmembers_t_telerik_windows_documents_flow_model_styles_core_istylepropertydefinition.html) interface and specifies some details for the style property as:
             
 
-* __PropertyName__: Returns the name of the style property.
+  * __PropertyName__: Returns the name of the style property.
                 
 
-* __StylePropertyType__: Returns the type of the style property.
+  * __StylePropertyType__: Returns the type of the style property.
                 
 
-* __Validation__: Used to determine if a value is valid for this style property.
+  * __Validation__: Used to determine if a value is valid for this style property.
                 
 
-* __GetDefaultValueAsObject()__: This method returns the default value as object.
+  * __GetDefaultValueAsObject()__: This method returns the default value as object.
                 
 
 Some of the style properties always contain local value and are normally referred to as local style properties. They are used only by the document elements and their values are not respected by styles and style inheritance .

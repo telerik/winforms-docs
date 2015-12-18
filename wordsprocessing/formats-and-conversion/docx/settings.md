@@ -36,8 +36,8 @@ The __AutoUpdateFields__ setting indicates if fields should be auto-updated when
               
 The following code snippet shows how you can create and specify particular export settings to DocxFormatProvider.
 
-{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingWordsProcessingSettings.cs region=radwordsprocessing-formats-and-conversion-docx-settings_0}} 
-{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingWordsProcessingSettings.vb region=radwordsprocessing-formats-and-conversion-docx-settings_0}} 
+{{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingWordsProcessingSettings.cs region=radwordsprocessing_formats_and_conversion_docx_settings_0}} 
+{{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingWordsProcessingSettings.vb region=radwordsprocessing_formats_and_conversion_docx_settings_0}} 
 
 ````C#
             

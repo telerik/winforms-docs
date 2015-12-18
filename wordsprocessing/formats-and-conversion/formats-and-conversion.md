@@ -73,7 +73,7 @@ You can use RadWordsProcessing to convert among variety of formats. Below you ca
 | __Other Elements__ ||||||||
 |Bookmarks|Supported|Supported|Supported|Supported||||
 
->note *All fields are supported through custom code fields. More information is available[here]({%slug winforms/wordsprocessing/concepts/customcodefield%}).
+>note *All fields are supported through custom code fields. More information is available [here]({%slug winforms/wordsprocessing/concepts/customcodefield%}).
 >
 
 

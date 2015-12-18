@@ -5,12 +5,10 @@ description: RadFlowDocumentEditor
 slug: winforms/wordsprocessing/editing/radflowdocumenteditor
 tags: radflowdocumenteditor
 published: True
-position: 1
+position: 3
 ---
 
 # RadFlowDocumentEditor
-
-
 
 Although __RadFlowDocument__ can be created and modified by using the style properties and child collections of the document  elements this can be quite cumbersome. __RadFlowDocumentEditor__ is utility class that is intended to simplify this process and achieve the same results with less amount of code. It is also useful when a couple of document elements should be inserted in the right order to ensure the document integrity – for example when inserting fields, hyperlinks, images etc.
       
@@ -140,7 +138,7 @@ The result looks like this:
 
 ![wordsprocessing-editing-radflowdocumenteditor 001](images/wordsprocessing-editing-radflowdocumenteditor001.png)
 
->note The current[CharacterFormatting](#changing-current-styles)and[ParagraphFormatting](#changing-current-styles)is applied for each Run and Paragraph that is created.
+>note The current [CharacterFormatting](#changing-current-styles) and [ParagraphFormatting](#changing-current-styles) is applied for each Run and Paragraph that is created.
 >
 
 
@@ -194,7 +192,7 @@ If you call the __InsertSection()__ method while the editor is positioned in a T
 
 ### Inserting Hyperlinks
 
-__Hyperlinks__ in the __RadFlowDocument__ model are actually [Fields]({%slug winforms/wordsprocessing/concepts/fields%}), which means they have code and result parts separated by[FieldCharacter]({%slug winforms/wordsprocessing/model/fieldcharacter%}) inlines. Inserting hyperlinks is simplified with __RadFlowDocumentEditor.InsertHyperlink()__  method:
+__Hyperlinks__ in the __RadFlowDocument__ model are actually [Fields]({%slug winforms/wordsprocessing/concepts/fields%}), which means they have code and result parts separated by [FieldCharacter]({%slug winforms/wordsprocessing/model/fieldcharacter%}) inlines. Inserting hyperlinks is simplified with __RadFlowDocumentEditor.InsertHyperlink()__  method:
             
 
 `public Hyperlink InsertHyperlink(string text, string uri, bool isAnchor, string toolTip)`
@@ -258,7 +256,7 @@ The result is:
 Note that in this case the result is automatically updated when a document is opened in MS Word, because the page fields are in the header of the document.
             
 
->tip You can find an extensive list of field codes in the Office Open XML standard documentation -[ECMA-376](http://www.ecma-international.org/publications/standards/Ecma-376.htm)4th edition, December 2012, Chapter 17.16.6 Field Definitions.
+>tip You can find an extensive list of field codes in the Office Open XML standard documentation -[ECMA-376](http://www.ecma-international.org/publications/standards/Ecma-376.htm) 4th edition, December 2012, Chapter 17.16.6 Field Definitions.
 >
 
 
@@ -328,7 +326,7 @@ The following methods can be used to insert [Table]({%slug winforms/wordsprocess
 `public Table InsertTable(int rows, int columns)`: Inserts table with specified number of rows and columns.
             
 
->note The formatting specified with the[TableFormatting](#changing-current-styles)property is applied to the inserted table. After the insert operation the editor is automatically placed directly __after__ the inserted table (not inside it).
+>note The formatting specified with the [TableFormatting](#changing-current-styles) property is applied to the inserted table. After the insert operation the editor is automatically placed directly __after__ the inserted table (not inside it).
 >
 Here is how to insert a table with the "TableGrid" built-in style:
 

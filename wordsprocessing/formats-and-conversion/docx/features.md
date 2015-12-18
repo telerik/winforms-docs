@@ -73,7 +73,7 @@ Below you can find a list of all the features that are supported by DocxFormatPr
 |Date Field|Yes||
 |Merge fields|Yes||
 |Document Variables|Yes||
-|Other Fields|Partial|Through[custom code fields]({%slug winforms/wordsprocessing/concepts/customcodefield%}).|
+|Other Fields|Partial|Through [custom code fields]({%slug winforms/wordsprocessing/concepts/customcodefield%}).|
 | __Review__ |||
 |Comments|Yes||
 |Protection|||

@@ -37,8 +37,8 @@ The suggested way to insert field is to use the __InsertField()__ method of [Rad
 
 Here is how to create a document with a single __Date__ field using __RadFlowDocumenteditor__:
 
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_0}} 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_0}} 
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing_concepts_fields_0}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_0}} 
 
 ````C#
 RadFlowDocument document = new RadFlowDocument();
@@ -57,8 +57,8 @@ editor.InsertField("DATE", "10/11/2012")
 
 You can also create and insert all the parts of the field manually by creating a __FieldInfo__ instance and adding all the inlines to the document structure. Here is how to achieve the same result as in the previous example:
 
-{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing-concepts-fields_1}} 
-{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing-concepts-fields_1}} 
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing_concepts_fields_1}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_1}} 
 
 ````C#
 // Create a document with paragraph            
@@ -103,7 +103,7 @@ __RadWordsPorcessing__ supports updating of some fields types. When a field is u
 
 Here is a list of the field types that support updating:
 
-* Formulas and Expressions (formulas and expressions begin with "=") 
+* Formulas and Expressions (formulas and expressions begin with " = ") 
 
 * IF
 
@@ -119,9 +119,59 @@ If the field type is not one of the above the result will not be updated and the
 
 Updating a single field is done with the __UpdateField()__ method of the __FieldInfo__ class:
 
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing_concepts_fields_2}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_2}} 
+
+````C#
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+FieldInfo fieldInfo = editor.InsertField("DATE \\@ dd/MM/yyyy", "result");
+Console.WriteLine(fieldInfo.GetResult()); // Output: result
+fieldInfo.UpdateField();
+Console.WriteLine(fieldInfo.GetResult()); // Output: 06/06/2014
+
+````
+````VB.NET
+Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
+Console.WriteLine(fieldInfo.GetResult())
+' Output: result
+fieldInfo.UpdateField()
+Console.WriteLine(fieldInfo.GetResult())
+' Output: 06/06/2014
+
+````
+
+{{endregion}} 
+
 Note that field result is not automatically updated upon insertion. The initial result fragment is passed as a parameter to the __InsertField()__ method.
 
 All fields in the document can be updated using __UpdateFields()__ of __RadFlowDocument__:
+
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing_concepts_fields_3}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_3}} 
+
+````C#
+RadFlowDocument document = new RadFlowDocument();
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(document);
+FieldInfo fieldInfo = editor.InsertField("DATE \\@ dd/MM/yyyy", "result");
+Console.WriteLine(fieldInfo.GetResult()); // Output: result
+document.UpdateFields();
+Console.WriteLine(fieldInfo.GetResult()); // Output: 06/06/2014
+
+````
+````VB.NET
+Dim document As New RadFlowDocument()
+Dim editor As New RadFlowDocumentEditor(document)
+Dim fieldInfo As FieldInfo = editor.InsertField("DATE \@ dd/MM/yyyy", "result")
+Console.WriteLine(fieldInfo.GetResult())
+' Output: result
+document.UpdateFields()
+Console.WriteLine(fieldInfo.GetResult())
+' Output: 06/06/2014
+
+````
+
+{{endregion}} 
 
 ## Syntax and Switches
 
@@ -129,10 +179,8 @@ The syntax of a field code is as follows:
         
 
 field-type [field-argument] [switches]
-        
 
 * *field-type*: The type of the field. For example: HYPERINK.
-            
 
 * *argument*: The argument of the field. This is optional as some of the fields do not require an argument.
             
@@ -140,22 +188,53 @@ field-type [field-argument] [switches]
 * *switches*: One or several additional properties of the field. The syntax of a switch is the following:
             *\switch-character [switch-argument]*
 
-* *switch-character*: Character defining the switch. For example the "\o" switch for HYPERINK fields
-                  defines the tooltip switch.
-                
+* *switch-character*: Character defining the switch. For example the "\o" switch for HYPERINK fields defines the tooltip switch.
 
 * *switch-argument*: The argument of the switch. The argument is optional as not all switches require an argument.
                 
 
-Below is an example of field code:
-        ![wordsprocessing-concepts-fields 003](images/wordsprocessing-concepts-fields003.png)
+Below is an example of field code: <br>![wordsprocessing-concepts-fields 003](images/wordsprocessing-concepts-fields003.png)
 
 ## Nested Fields
 
 Fields can also be nested in each other. If there are nested fields inside the code fragment of a field – their result will be used when calculating the result of the outer field.
-        
 
 Here is an example of cratering a field which will be evaluated to appropriate greeting based on the time of the day.
+
+{{source=..\SamplesCS\WordsProcessing\Concepts\WordsProcessingFields.cs region=radwordsprocessing_concepts_fields_4}} 
+{{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_4}} 
+
+````C#
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+// Create an outer field with empty code fragment
+FieldInfo outerFieldInfo = editor.InsertField(string.Empty, "if field result");
+// Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start);
+// Create the a code fragment with a nested TIME field
+editor.InsertText("IF ");
+editor.InsertField("TIME \\@ HH", "time field result");
+editor.InsertText(" < 12 \"Good morning!\" \"Good afternoon!\"");
+outerFieldInfo.UpdateField();
+Console.WriteLine(outerFieldInfo.GetResult()); // Output: Good afternoon!
+
+````
+````VB.NET
+Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+' Create an outer field with empty code fragment
+Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
+' Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start)
+' Create the a code fragment with a nested TIME field
+editor.InsertText("IF ")
+editor.InsertField("TIME \@ HH", "time field result")
+editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
+outerFieldInfo.UpdateField()
+Console.WriteLine(outerFieldInfo.GetResult())
+' Output: Good afternoon!
+
+````
+
+{{endregion}} 
 
 ![wordsprocessing-concepts-fields 002](images/wordsprocessing-concepts-fields002.png)
 

@@ -5,12 +5,10 @@ description: Mail Merge
 slug: winforms/wordsprocessing/editing/mail-merge
 tags: mail,merge
 published: True
-position: 2
+position: 5
 ---
 
 # Mail Merge
-
-
 
 [Mail merge](http://en.wikipedia.org/wiki/Mail_merge) is functionality allowing to produce personalized documents from a template holding fixed content and variables. The variables are called [Merge Fields]({%slug winforms/wordsprocessing/concepts/fields/merge-field%}) and are replaced through the merge process with content from a specified data source.
       

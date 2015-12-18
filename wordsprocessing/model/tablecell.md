@@ -104,11 +104,11 @@ The __TableCell__ element exposes several properties that allow you to customize
 * __GridRowIndex__: Represents the row index of the cell in the table grid.
             
 
->tip Style properties are properties that can be inherited from a style. For more information about styles see[this article]({%slug winforms/wordsprocessing/concepts/style-properties%}).
+>tip Style properties are properties that can be inherited from a style. For more information about styles see [this article]({%slug winforms/wordsprocessing/concepts/style-properties%}).
 >
 
 
->tip Themable objects are objects that can be inherited from a theme. For more information about themes check[this article]({%slug winforms/wordsprocessing/concepts/document-themes%}).
+>tip Themable objects are objects that can be inherited from a theme. For more information about themes check [this article]({%slug winforms/wordsprocessing/concepts/document-themes%}).
 >
 
 
