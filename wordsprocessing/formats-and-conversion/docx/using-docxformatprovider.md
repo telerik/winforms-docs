@@ -36,8 +36,7 @@ The following code snippet shows how to use __DocxFormatProvider__ to import a d
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.cs region=radwordsprocessing_formats_and_conversion_docx_docxformatprovider_0}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingUsingDocxFormatProvider.vb region=radwordsprocessing_formats_and_conversion_docx_docxformatprovider_0}} 
 
-````C#
-            
+````C# 
 DocxFormatProvider provider = new DocxFormatProvider();
 using (Stream input = File.OpenRead("Sample.docx"))
 {

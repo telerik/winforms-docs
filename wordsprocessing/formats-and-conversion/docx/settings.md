@@ -39,8 +39,7 @@ The following code snippet shows how you can create and specify particular expor
 {{source=..\SamplesCS\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingWordsProcessingSettings.cs region=radwordsprocessing_formats_and_conversion_docx_settings_0}} 
 {{source=..\SamplesVB\WordsProcessing\FormatsAndConversion\Docx\WordsProcessingWordsProcessingSettings.vb region=radwordsprocessing_formats_and_conversion_docx_settings_0}} 
 
-````C#
-            
+````C#  
 DocxFormatProvider provider = new DocxFormatProvider();
 DocxExportSettings exportSettings = new DocxExportSettings();
 exportSettings.AutoUpdateFields = true;
