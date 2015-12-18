@@ -77,9 +77,9 @@ End Sub
 
 {{endregion}} 
 
-1. Enable multiple [selection]({%slug winforms/treeview/working-with-nodes/selecting-nodes%}) by setting the __MultiSelect__  property to *true*.
+2\. Enable multiple [selection]({%slug winforms/treeview/working-with-nodes/selecting-nodes%}) by setting the __MultiSelect__  property to *true*.
 
-1. Create a derivative of the __TreeViewDragDropService__ which should perform the desired drag and drop functionality.  The __OnPreviewDragOver__ method allows you to control on what targets the nodes, being dragged, can be dropped on. The __OnPreviewDragDrop__ method initiates the actual physical move of the nodes from one position to another.
+3\. Create a derivative of the __TreeViewDragDropService__ which should perform the desired drag and drop functionality.  The __OnPreviewDragOver__ method allows you to control on what targets the nodes, being dragged, can be dropped on. The __OnPreviewDragDrop__ method initiates the actual physical move of the nodes from one position to another.
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\DragAndDropInBoundMode.cs region=CustomService}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\DragAndDropInBoundMode.vb region=CustomService}} 
@@ -367,10 +367,10 @@ End Class
 
 {{endregion}} 
 
->note When a change in the underlying data source occurs, the tree needs to repopulate itself in order to get the latest changes. As a result, the expanded state of the available nodes, selection and scroll bar position are not kept.[Keep RadTreeView states on reset]({%slug winforms/treeview/how-to/keep-radtreeview-states-on-reset%})help article explains how to save the tree state prior the change and restore it afterwards.
+>note When a change in the underlying data source occurs, the tree needs to repopulate itself in order to get the latest changes. As a result, the expanded state of the available nodes, selection and scroll bar position are not kept. [Keep RadTreeView states on reset]({%slug winforms/treeview/how-to/keep-radtreeview-states-on-reset%}) help article explains how to save the tree state prior the change and restore it afterwards.
 >
 
-2\. The custom __TreeViewDragDropService__ is ready. Now, we need to replace the default one. For this purpose, it is necessary to create a derivative of the __RadTreeViewElement__ and override the __CreateDragDropService__ method. 
+4\. The custom __TreeViewDragDropService__ is ready. Now, we need to replace the default one. For this purpose, it is necessary to create a derivative of the __RadTreeViewElement__ and override the __CreateDragDropService__ method. 
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\DragAndDropInBoundMode.cs region=CustomTreeViewElement}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\DragAndDropInBoundMode.vb region=CustomTreeViewElement}} 
@@ -411,7 +411,7 @@ End Class
 
 {{endregion}} 
 
-3\. Finally, replace the default __RadTreeViewElement__ in the tree with the custom one.
+5\. Finally, replace the default __RadTreeViewElement__ in the tree with the custom one.
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\DragAndDropInBoundMode.cs region=TreeView}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\DragAndDropInBoundMode.vb region=TreeView}} 

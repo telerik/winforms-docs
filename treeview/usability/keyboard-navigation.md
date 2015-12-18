@@ -39,7 +39,7 @@ RadTreeView allows navigation through the visible nodes by using keyboard. Two s
 
 * Typing more than one character will navigate to the first node matching the typed string 
 
-    ![treeview-usability-keyboard-navigation 012](images/treeview-usability-keyboard-navigation012.gif)
+![treeview-usability-keyboard-navigation 012](images/treeview-usability-keyboard-navigation012.gif)
 
 To enable this functionality a single property setting is needed:
 

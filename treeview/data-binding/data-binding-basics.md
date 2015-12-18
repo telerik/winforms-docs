@@ -22,33 +22,41 @@ Set the __DisplayMember__ to the name of the field that you want visible in the 
 
 The example below binds a generic list of "Product" objects and displays only a single level of data. "Product" has an integer field, a float field and a string field. In this example, we set the ValueMember to the int field and the DisplayMember to the string field:
 
-{{source=..\SamplesCS\TreeView\DataBinding\DataBindingBasics.cs region=dataBindingBasics}} 
+
 {{source=..\SamplesCS\TreeView\DataBinding\Product.cs region=product}} 
+{{source=..\SamplesVB\TreeView\DataBinding\Product.vb region=product}} 
 ````C#
-public partial class DataBindingBasics : Form
+public class Product
 {
-    public DataBindingBasics()
+    private int _id;
+    private string _description;
+    private float _price;
+
+    public int ID
     {
-        InitializeComponent();
-        List<Product> products = new List<Product>();
-        products.Add(new Product(567, "Bicycle", 5));
-        products.Add(new Product(456, "Car", 5000));
-        products.Add(new Product(789, "Bike", 1500));
-        radTreeView1.DataSource = products;
-        radTreeView1.DisplayMember = "Description";
-        radTreeView1.ValueMember = "ID";
-        radTreeView1.SelectedNodeChanged += radTreeView1_SelectedNodeChanged;
-        radTreeView1.NodeDataBound += radTreeView1_NodeDataBound;
+        get { return _id; }
+        set { _id = value; }
     }
-    #region nodeDataBoundEvent
-    void radTreeView1_NodeDataBound(object sender, Telerik.WinControls.UI.RadTreeViewEventArgs e)
+
+    public string Description
     {
-        DataRowView dataRow = e.Node.DataBoundItem as DataRowView;
-        if(dataRow != null)
-        {
-            e.Node.ForeColor = (Color)dataRow["ForeColor"];
-        }
+        get { return _description; }
+        set { _description = value; }
     }
+
+    public float Price
+    {
+        get { return _price; }
+        set { _price = value; }
+    }
+
+    public Product(int id, string description, float price)
+    {
+        _id = id;
+        _description = description;
+        _price = price;
+    }
+}
 
 ````
 ````VB.NET
@@ -79,6 +87,44 @@ public class Product
         _price = price;
     }
 }
+
+````
+
+{{endregion}} 
+
+{{source=..\SamplesCS\TreeView\DataBinding\DataBindingBasics.cs region=dataBindingBasics}} 
+{{source=..\SamplesVB\TreeView\DataBinding\DataBindingBasics.vb region=dataBindingBasics}} 
+
+````C#
+public partial class DataBindingBasics : Form
+{
+    public DataBindingBasics()
+    {
+        InitializeComponent();
+        List<Product> products = new List<Product>();
+        products.Add(new Product(567, "Bicycle", 5));
+        products.Add(new Product(456, "Car", 5000));
+        products.Add(new Product(789, "Bike", 1500));
+        radTreeView1.DataSource = products;
+        radTreeView1.DisplayMember = "Description";
+        radTreeView1.ValueMember = "ID";
+        radTreeView1.SelectedNodeChanged += radTreeView1_SelectedNodeChanged;
+        radTreeView1.NodeDataBound += radTreeView1_NodeDataBound;
+    }
+
+````
+````VB.NET
+ Public Class DataBindingBasics
+        Public Sub New()
+            InitializeComponent()
+
+            Dim products As New List(Of Product)()
+            products.Add(New Product(567, "Bicycle", 5))
+            products.Add(New Product(456, "Car", 5000))
+            products.Add(New Product(789, "Bike", 1500))
+            RadTreeView1.DisplayMember = "ID"
+            RadTreeView1.DataSource = products
+        End Sub
 
 ````
 
@@ -142,13 +188,6 @@ Private Sub RadTreeView1_NodeDataBound(sender As Object, e As Telerik.WinControl
     End If
 End Sub
 ion
-'#Region dataBoundItem
-Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RadTreeViewEventArgs) Handles RadTreeView1.SelectedNodeChanged
-    Dim product As Product = TryCast(e.Node.DataBoundItem, Product)
-    If product IsNot Nothing Then
-        MessageBox.Show("Product: " & e.Node.Text & ", Price: " & product.Price)
-    End If
-End Sub
 
 ````
 
@@ -167,7 +206,8 @@ In order to display the hierarchy of business objects, we just need to set appro
 
 
 {{source=..\SamplesCS\TreeView\DataBinding\BasicsHierarchyForm.cs region=hierarchy}} 
-{{source=..\SamplesCS\TreeView\DataBinding\Product.cs region=product}} 
+{{source=..\SamplesVB\TreeView\DataBinding\BasicsHierarchyForm.vb region=hierarchy}} 
+
 ````C#
         
 public BasicsHierarchyForm()
@@ -195,6 +235,72 @@ void radTreeView1_SelectedNodeChanged(object sender, Telerik.WinControls.UI.RadT
         MessageBox.Show("Product: " + e.Node.Text + ", Price: " + product.Price);
     }
 }
+
+````
+````VB.NET
+Public Sub New()
+            InitializeComponent()
+
+            Dim products As New List(Of Product)()
+            products.Add(New Product(567, "Bicycle", 5))
+            products.Add(New Product(456, "Car", 5000))
+            products.Add(New Product(789, "Bike", 1500))
+            Dim categories As New List(Of Category)()
+            categories.Add(New Category("Bikes", products))
+            categories.Add(New Category("Accessories", Nothing))
+            categories.Add(New Category("Clothing", Nothing))
+            RadTreeView1.DataSource = categories
+            RadTreeView1.DisplayMember = "Name\Description"
+            RadTreeView1.ChildMember = "Categories\Products"
+        End Sub
+
+        Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RadTreeViewEventArgs)
+            Dim product As Product = TryCast(e.Node.DataBoundItem, Product)
+            If product IsNot Nothing Then
+                MessageBox.Show("Product: " & e.Node.Text & ", Price: " & product.Price)
+            End If
+        End Sub
+
+````
+
+{{endregion}} 
+
+{{source=..\SamplesCS\TreeView\DataBinding\Product.cs region=product}} 
+{{source=..\SamplesVB\TreeView\DataBinding\Product.vb region=product}} 
+
+````C#
+        
+public class Product
+    {
+        private int _id;
+        private string _description;
+        private float _price;
+
+        public int ID
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
+        public string Description
+        {
+            get { return _description; }
+            set { _description = value; }
+        }
+
+        public float Price
+        {
+            get { return _price; }
+            set { _price = value; }
+        }
+
+        public Product(int id, string description, float price)
+        {
+            _id = id;
+            _description = description;
+            _price = price;
+        }
+    }
 
 ````
 ````VB.NET
@@ -228,6 +334,61 @@ public class Product
 
 ````
 
+{{source=..\SamplesCS\TreeView\DataBinding\Category.cs region=category}} 
+{{source=..\SamplesVB\TreeView\DataBinding\Category.vb region=category}} 
+
+````C#
+        
+ public class Category
+    {
+        public Category(string name, List<Product> products)
+        {
+            _name = name;
+            _products = products;
+        }
+        private List<Product> _products;
+        private string _name;
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+        public List<Product> Products
+        {
+            get { return _products; }
+            set { _products = value; }
+        }
+    }
+
+````
+````VB.NET
+Public Class Category
+        Public Sub New(ByVal name As String, ByVal products As List(Of Product))
+            _name = name
+            _products = products
+        End Sub
+        Private _products As List(Of Product)
+        Private _name As String
+        Public Property Name() As String
+            Get
+                Return _name
+            End Get
+            Set(ByVal value As String)
+                _name = value
+            End Set
+        End Property
+        Public Property Products() As List(Of Product)
+            Get
+                Return _products
+            End Get
+            Set(ByVal value As List(Of Product))
+                _products = value
+            End Set
+        End Property
+    End Class
+
+````
+
 {{endregion}} 
 
 ## Binding check boxes
@@ -236,72 +397,73 @@ Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a
 
 ![treeview-data-binding-data-binding-basics 003](images/treeview-data-binding-data-binding-basics003.png)
 
-{{source=..\SamplesVB\TreeView\DataBinding\Product.vb region=product}} 
-
-{{source=..\SamplesVB\TreeView\DataBinding\Category.vb region=category}} 
+{{source=..\SamplesCS\TreeView\DataBinding\BasicsHierarchyForm.cs region=CheckedMember}} 
+{{source=..\SamplesVB\TreeView\DataBinding\BasicsHierarchyForm.vb region=CheckedMember}} 
 
 ````C#
-Public Class Product
-    Private _id As Integer
-    Private _description As String
-    Private _price As Single
-    Public Property ID() As Integer
-        Get
-            Return _id
-        End Get
-        Set(ByVal value As Integer)
-            _id = value
-        End Set
-    End Property
-    Public Property Description() As String
-        Get
-            Return _description
-        End Get
-        Set(ByVal value As String)
-            _description = value
-        End Set
-    End Property
-    Public Property Price() As Single
-        Get
-            Return _price
-        End Get
-        Set(ByVal value As Single)
-            _price = value
-        End Set
-    End Property
-    Public Sub New(ByVal id As Integer, ByVal description As String, ByVal price As Single)
-        _id = id
-        _description = description
-        _price = price
-    End Sub
-End Class
+ DataTable parentDt = new DataTable("Parent");
+            parentDt.Columns.Add("MasterId", typeof(string));
+            parentDt.Columns.Add("Title", typeof(string));
+            parentDt.Columns.Add("IsActive", typeof(bool));
+            
+            DataTable childDt = new DataTable("Child");
+            childDt.Columns.Add("ChildId", typeof(string));
+            childDt.Columns.Add("ParentId", typeof(string));
+            childDt.Columns.Add("Name", typeof(string));
+            childDt.Columns.Add("Status", typeof(bool));
+            
+            string parentId = string.Empty;
+            string childId = string.Empty;
+            for (int i = 1; i <= 5; i++)
+            {
+                parentId = Guid.NewGuid().ToString();
+                parentDt.Rows.Add(parentId, "Node." + i, i % 2 == 0);
+                
+                for (int j = 1; j < 5; j++)
+                {
+                    childId = Guid.NewGuid().ToString();
+                    childDt.Rows.Add(childId, parentId, "SubNode." + i + "." + j, j % 2 == 0);
+                }
+            }
+            
+            radTreeView1.DataSource = parentDt;
+            radTreeView1.RelationBindings.Add(new RelationBinding(childDt,null,"Name","MasterId","ParentId","ChildId","Status"));
+            radTreeView1.DisplayMember = "Title";
+            radTreeView1.ValueMember = "Id";
+            radTreeView1.CheckedMember = "IsActive";
+            radTreeView1.CheckBoxes = true; 
 
 ````
 ````VB.NET
-Public Class Category
-    Public Sub New(ByVal name As String, ByVal products As List(Of Product))
-        _name = name
-        _products = products
-    End Sub
-    Private _products As List(Of Product)
-    Private _name As String
-    Public Property Name() As String
-        Get
-            Return _name
-        End Get
-        Set(ByVal value As String)
-            _name = value
-        End Set
-    End Property
-    Public Property Products() As List(Of Product)
-        Get
-            Return _products
-        End Get
-        Set(ByVal value As List(Of Product))
-            _products = value
-        End Set
-    End Property
-End Class
+Dim parentDt As New DataTable("Parent")
+            parentDt.Columns.Add("MasterId", GetType(String))
+            parentDt.Columns.Add("Title", GetType(String))
+            parentDt.Columns.Add("IsActive", GetType(Boolean))
+
+            Dim childDt As New DataTable("Child")
+            childDt.Columns.Add("ChildId", GetType(String))
+            childDt.Columns.Add("ParentId", GetType(String))
+            childDt.Columns.Add("Name", GetType(String))
+            childDt.Columns.Add("Status", GetType(Boolean))
+
+            Dim parentId As String = String.Empty
+            Dim childId As String = String.Empty
+            For i As Integer = 1 To 5
+                parentId = Guid.NewGuid().ToString()
+                parentDt.Rows.Add(parentId, "Node." & i, i Mod 2 = 0)
+
+                For j As Integer = 1 To 4
+                    childId = Guid.NewGuid().ToString()
+                    childDt.Rows.Add(childId, parentId, "SubNode." & i & "." & j, j Mod 2 = 0)
+                Next
+            Next
+
+            radTreeView1.DataSource = parentDt
+            radTreeView1.RelationBindings.Add(New RelationBinding(childDt, Nothing, "Name", "MasterId", "ParentId", "ChildId", "Status"))
+            radTreeView1.DisplayMember = "Title"
+            radTreeView1.ValueMember = "Id"
+            radTreeView1.CheckedMember = "IsActive"
+            radTreeView1.CheckBoxes = True
 
 ````
 

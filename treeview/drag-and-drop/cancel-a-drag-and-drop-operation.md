@@ -81,7 +81,7 @@ Next
 {{endregion}} 
 
 
-1\. Now we can subscribe to the __DragEnding__ event and cancel the drop operation if the dragged node and target node have different hierarchy levels. Also we will show an appropriate message:
+2\. Now we can subscribe to the __DragEnding__ event and cancel the drop operation if the dragged node and target node have different hierarchy levels. Also we will show an appropriate message:
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\CancelDragAndDropOperation.cs region=DragEnding}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\CancelDragAndDropOperation.vb region=DragEnding}} 

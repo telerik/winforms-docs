@@ -24,13 +24,13 @@ RadTreeView provides a convenient API that will allow you to modify its context 
 * __Node__: The node for which the context menu is  invoked. This node is a data node of type RadTreeNode. You will find useful three properties of the Node.
           
 
-* __Text__: Returns the text of the node. This comes in handy when you want to conditionally modify the context menu depending on the text of the node.
+	* __Text__: Returns the text of the node. This comes in handy when you want to conditionally modify the context menu depending on the text of the node.
               
 
-* __Level__: This property returns an integer that indicates the level of the node in the three hierarchy. The level index is zero-based.
+	* __Level__: This property returns an integer that indicates the level of the node in the three hierarchy. The level index is zero-based.
               
 
-* __DataBoundItem__: If RadTreeView is data-bound, each data node (of type RadTreeNode) has an associated DataBoundItem. DataBoundItem is the object of the underlying data source for which a RadTreeNode is created. You may need to modify the context menu depending on the data that you can extract from the DataBoundItem object.
+	* __DataBoundItem__: If RadTreeView is data-bound, each data node (of type RadTreeNode) has an associated DataBoundItem. DataBoundItem is the object of the underlying data source for which a RadTreeNode is created. You may need to modify the context menu depending on the data that you can extract from the DataBoundItem object.
               
 
 * __TreeViewElement__: TreeViewElement (of type RadTreeViewElement) is the main element of RadTreeView control.

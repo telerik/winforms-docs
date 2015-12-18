@@ -25,6 +25,6 @@ The contents of the saved XML file contain the properties for the RadTreeView as
 
 ![treeview-data-binding-serialize-deserialize-to-xml 001](images/treeview-data-binding-serialize-deserialize-to-xml001.png)
 
->note  __RadTreeView__ supports save/load functionality at design time via the[Property Builder]({%slug winforms/treeview/design-time/property-builder%}).
+>note  __RadTreeView__ supports save/load functionality at design time via the [Property Builder]({%slug winforms/treeview/design-time/property-builder%}).
 >
 

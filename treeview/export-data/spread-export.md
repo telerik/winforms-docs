@@ -28,7 +28,7 @@ Here is how the following RadTreeView, looks when it is exported.
 * Telerik.WinControls.TelerikExport
 >
 
->important Since this functionality is using the[RadSpreadProcessingLibrary]({%slug winforms/spread-processing%})you need to reference the following assemblies as well:
+>important Since this functionality is using the [RadSpreadProcessingLibrary]({%slug winforms/spread-processing%}) you need to reference the following assemblies as well:
 * Telerik.Windows.Documents.Core
 * Telerik.Windows.Documents.Fixed
 * Telerik.Windows.Documents.Spreadsheet
