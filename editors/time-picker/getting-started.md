@@ -17,10 +17,7 @@ position: 1
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadTimePicker for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms) This video demonstrates the new RadTimePicker control as well as several properties you should be aware of.|
->caption 
-
-![editors-timepicker-overview 003](images/editors-timepicker-overview003.png)|
+|[Getting Started with RadTimePicker for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms) This video demonstrates the new RadTimePicker control as well as several properties you should be aware of.|![editors-timepicker-overview 003](images/editors-timepicker-overview003.png)|
 
 This tutorial will demonstrate how to get started with RadTimePicker control, its functionalities and customization abilities:
         
