@@ -41,8 +41,33 @@ Here is how to create a document with a single __Date__ field using __RadFlowDoc
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_0}} 
 
 ````C#
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+// Create an outer field with empty code fragment
+FieldInfo outerFieldInfo = editor.InsertField(string.Empty, "if field result");
+// Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start);
+// Create the a code fragment with a nested TIME field
+editor.InsertText("IF ");
+editor.InsertField("TIME \\@ HH", "time field result");
+editor.InsertText(" < 12 \"Good morning!\" \"Good afternoon!\"");
+outerFieldInfo.UpdateField();
+Console.WriteLine(outerFieldInfo.GetResult()); // Output: Good afternoon!
+
 ````
 ````VB.NET
+Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+' Create an outer field with empty code fragment
+Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
+' Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start)
+' Create the a code fragment with a nested TIME field
+editor.InsertText("IF ")
+editor.InsertField("TIME \@ HH", "time field result")
+editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
+outerFieldInfo.UpdateField()
+Console.WriteLine(outerFieldInfo.GetResult())
+' Output: Good afternoon!
+
 ````
 
 {{endregion}} 
@@ -53,8 +78,33 @@ You can also create and insert all the parts of the field manually by creating a
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_1}} 
 
 ````C#
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+// Create an outer field with empty code fragment
+FieldInfo outerFieldInfo = editor.InsertField(string.Empty, "if field result");
+// Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start);
+// Create the a code fragment with a nested TIME field
+editor.InsertText("IF ");
+editor.InsertField("TIME \\@ HH", "time field result");
+editor.InsertText(" < 12 \"Good morning!\" \"Good afternoon!\"");
+outerFieldInfo.UpdateField();
+Console.WriteLine(outerFieldInfo.GetResult()); // Output: Good afternoon!
+
 ````
 ````VB.NET
+Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+' Create an outer field with empty code fragment
+Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
+' Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start)
+' Create the a code fragment with a nested TIME field
+editor.InsertText("IF ")
+editor.InsertField("TIME \@ HH", "time field result")
+editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
+outerFieldInfo.UpdateField()
+Console.WriteLine(outerFieldInfo.GetResult())
+' Output: Good afternoon!
+
 ````
 
 {{endregion}} 
@@ -91,8 +141,33 @@ Updating a single field is done with the __UpdateField()__ method of the __Field
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_2}} 
 
 ````C#
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+// Create an outer field with empty code fragment
+FieldInfo outerFieldInfo = editor.InsertField(string.Empty, "if field result");
+// Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start);
+// Create the a code fragment with a nested TIME field
+editor.InsertText("IF ");
+editor.InsertField("TIME \\@ HH", "time field result");
+editor.InsertText(" < 12 \"Good morning!\" \"Good afternoon!\"");
+outerFieldInfo.UpdateField();
+Console.WriteLine(outerFieldInfo.GetResult()); // Output: Good afternoon!
+
 ````
 ````VB.NET
+Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+' Create an outer field with empty code fragment
+Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
+' Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start)
+' Create the a code fragment with a nested TIME field
+editor.InsertText("IF ")
+editor.InsertField("TIME \@ HH", "time field result")
+editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
+outerFieldInfo.UpdateField()
+Console.WriteLine(outerFieldInfo.GetResult())
+' Output: Good afternoon!
+
 ````
 
 {{endregion}} 
@@ -105,8 +180,33 @@ All fields in the document can be updated using __UpdateFields()__ of __RadFlowD
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_3}} 
 
 ````C#
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+// Create an outer field with empty code fragment
+FieldInfo outerFieldInfo = editor.InsertField(string.Empty, "if field result");
+// Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start);
+// Create the a code fragment with a nested TIME field
+editor.InsertText("IF ");
+editor.InsertField("TIME \\@ HH", "time field result");
+editor.InsertText(" < 12 \"Good morning!\" \"Good afternoon!\"");
+outerFieldInfo.UpdateField();
+Console.WriteLine(outerFieldInfo.GetResult()); // Output: Good afternoon!
+
 ````
 ````VB.NET
+Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+' Create an outer field with empty code fragment
+Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
+' Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start)
+' Create the a code fragment with a nested TIME field
+editor.InsertText("IF ")
+editor.InsertField("TIME \@ HH", "time field result")
+editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
+outerFieldInfo.UpdateField()
+Console.WriteLine(outerFieldInfo.GetResult())
+' Output: Good afternoon!
+
 ````
 
 {{endregion}} 
@@ -143,8 +243,33 @@ Here is an example of cratering a field which will be evaluated to appropriate g
 {{source=..\SamplesVB\WordsProcessing\Concepts\WordsProcessingFields.vb region=radwordsprocessing_concepts_fields_4}} 
 
 ````C#
+RadFlowDocumentEditor editor = new RadFlowDocumentEditor(new RadFlowDocument());
+// Create an outer field with empty code fragment
+FieldInfo outerFieldInfo = editor.InsertField(string.Empty, "if field result");
+// Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start);
+// Create the a code fragment with a nested TIME field
+editor.InsertText("IF ");
+editor.InsertField("TIME \\@ HH", "time field result");
+editor.InsertText(" < 12 \"Good morning!\" \"Good afternoon!\"");
+outerFieldInfo.UpdateField();
+Console.WriteLine(outerFieldInfo.GetResult()); // Output: Good afternoon!
+
 ````
 ````VB.NET
+Dim editor As New RadFlowDocumentEditor(New RadFlowDocument())
+' Create an outer field with empty code fragment
+Dim outerFieldInfo As FieldInfo = editor.InsertField(String.Empty, "if field result")
+' Move the editor after the field start character
+editor.MoveToInlineEnd(outerFieldInfo.Start)
+' Create the a code fragment with a nested TIME field
+editor.InsertText("IF ")
+editor.InsertField("TIME \@ HH", "time field result")
+editor.InsertText(" < 12 ""Good morning!"" ""Good afternoon!""")
+outerFieldInfo.UpdateField()
+Console.WriteLine(outerFieldInfo.GetResult())
+' Output: Good afternoon!
+
 ````
 
 {{endregion}} 
