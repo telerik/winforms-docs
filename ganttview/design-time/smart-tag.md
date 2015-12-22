@@ -41,6 +41,3 @@ The Smart Tag for RadGanttView lets you quickly access common tasks involved wit
             
 
 * __Dock in parent container:__ Docks RadGanttView into its parent container.
-            
-
-# See Also

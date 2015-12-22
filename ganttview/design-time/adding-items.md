@@ -39,6 +39,3 @@ The more important properties of the column you need to set up are:
             
 
 * __Progress:__ Allows you to set the completion of the task.
-            
-
-# See Also

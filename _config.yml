@@ -294,7 +294,7 @@ navigation:
         title:  MessageBox
         position: 5
     forms-and-dialogs/statusstrip:
-        title:  StatisStrip
+        title:  StatusStrip
         position: 6
     forms-and-dialogs/templates:
         title:  Templates

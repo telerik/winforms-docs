@@ -27,6 +27,3 @@ The more important properties of the column you need to set up are:
             
 
 * __LinkType:__ Determines the type of the link (dependency) between the start and end items.
-            
-
-# See Also
