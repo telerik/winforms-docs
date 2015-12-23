@@ -136,6 +136,12 @@ __FileExportMode__: This property determines whether the data will be exported i
 
 * __ExportViewDefinition:__  Gets or sets a value indicating whether to export the [view definition.]({%slug winforms/gridview/view-definitions/overview%})
 
+### Exported Cells Data Type
+
+>important
+Each column in RadGridView has __ExcelExportType__ property which can be used for explicitly setting the data type of the cells in the exported document.
+>
+
 ## Events
 
 __CellFormatting__: This event is used to format the cells to be exported. The event arguments provide:
