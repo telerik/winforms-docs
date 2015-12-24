@@ -191,7 +191,12 @@ Me.RadDiagram1.DiagramElement.ZoomOut(3.5)
 
 {{endregion}} 
 
+* __BringIntoView__: This method allows you to center the currently occupied space:
+{{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=BringIntoView}} 
+{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=BringIntoView}} 
 
+
+{{endregion}} 
 
 
 ## Zoom events
