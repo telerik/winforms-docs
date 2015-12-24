@@ -243,5 +243,6 @@ provider.AutoSelectNextPart = True
 
 {{endregion}} 
 
-
-
+>note 
+The __MaskProviderCreated__ event will be fired each time when new provider instance is created. For example when the MaskType is changed.
+>
