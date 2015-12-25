@@ -17,7 +17,7 @@
 
 # zip -r //telerik.com/resources/AppDirector/Drops/Winforms/Winforms.Zip/Winforms.Docs/Winforms.Docs.zip //telerik.com/resources/AppDirector/Drops/Winforms/Winforms.Docs/*
 
-VERSION="`date +%Y-%m-%d:%H:%M:%S`";
+VERSION="`date + %Y-%m-%d-%H-%M-%S`";
 
 
 PAYLOAD="{ \"Folder\": \"//telerik.com/resources/AppDirector/Drops/Winforms/Winforms.Zip\",
