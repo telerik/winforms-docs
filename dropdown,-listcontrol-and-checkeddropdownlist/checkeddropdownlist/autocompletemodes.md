@@ -10,8 +10,7 @@ position: 5
 
 # AutoCompleteModes
  
-__RadCheckedDropDownList__ provides two AutoCompleteModes: *Suggest* and *Append*. You can change the way items are filtered e.g. *Contains* or *StartsWith* comparer.
-      
+The __AutoCompleteMode__ property controls auto-complete behavior and can be set to None, Suggest, Append and SuggestAppend.   
 
 ## 
 
@@ -33,81 +32,22 @@ Me.RadCheckedDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
 
 {{endregion}} 
 
-
-
-
-Changing the filter for the __AutoCompleteSuggest__ is as easy as setting the __SuggestMode__ property:
-
-#### Set AutoCompleteMode 
-
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=SuggestMode}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SuggestMode}} 
-
-````C#
-this.radCheckedDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains;
-
-````
-````VB.NET
-Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains
-
-````
-
-{{endregion}} 
  
-In order to customize the __AutoCompleteAppendHelper__ you need to create a descendant class and override the DefaultCompare method:
+* *None*: Nothing happens when a user begins to type into the text box portion of the control.  
 
-#### Set CustomHelper 
+![dropdown-and-listcontrol-checkeddropdownlist-autocompletemodes 001](images/dropdown-and-listcontrol-autocompletemodes001.png) 
 
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=CustomHelper}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=CustomHelper}} 
+* *Suggest*: As the user types an entry into the text box, the drop-down portion of the control is shown, and the items that contains the entered text are displayed.
 
-````C#
-class MyAutoCompleteAppendHelper : AutoCompleteAppendHelper
-{
-    public MyAutoCompleteAppendHelper(RadDropDownListElement ddList)
-        : base(ddList)
-    {
-    }
-    protected override bool DefaultCompare(RadListDataItem item)
-    {
-        return item.Text == this.FindString;
-    }
-}
+![dropdown-and-listcontrol-checkeddropdownlist-autocompletemodes 002](images/dropdown-and-listcontrol-autocompletemodes002.png) 
 
-````
-````VB.NET
-Private Class MyAutoCompleteAppendHelper
-    Inherits AutoCompleteAppendHelper
-    Public Sub New(ddList As RadDropDownListElement)
-        MyBase.New(ddList)
-    End Sub
-    Protected Overrides Function DefaultCompare(item As RadListDataItem) As Boolean
-        Return item.Text = Me.FindString
-    End Function
-End Class
+* *Append*: As the user types, the next item in the list that matches the user input is automatically appended to the characters the user has already typed. The drop-down list is not shown without the user clicking the arrow.
 
-````
+![dropdown-and-listcontrol-checkeddropdownlist-autocompletemodes 003](images/dropdown-and-listcontrol-autocompletemodes003.png) 
 
-{{endregion}} 
+* *SuggestAppend*: Similar to the Append setting, but the drop-down list is shown and the suggested item is highlighted.
+
+![dropdown-and-listcontrol-checkeddropdownlist-autocompletemodes 004](images/dropdown-and-listcontrol-autocompletemodes004.png)
 
 
-#### Set SetAppendHelper 
- 
-
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=SetAppendHelper}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SetAppendHelper}} 
-
-````C#
-this.radCheckedDropDownList1.DropDownListElement.AutoCompleteAppend = new MyAutoCompleteAppendHelper(this.radCheckedDropDownList1.DropDownListElement);
-
-````
-````VB.NET
-Me.RadCheckedDropDownList1.DropDownListElement.AutoCompleteAppend = New MyAutoCompleteAppendHelper(Me.RadCheckedDropDownList1.DropDownListElement)
-
-````
-
-{{endregion}} 
- 
->note You can also create a custom __AutoCompleteSuggestHelper__ and override the __DefaultFilter__ method to achieve similar effect.
->
 
