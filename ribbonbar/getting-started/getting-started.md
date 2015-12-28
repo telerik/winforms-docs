@@ -20,6 +20,10 @@ This section will help you in creating your first Telerik RadRibbonBar with some
 
 1. The __RadRibbonForm__'s designer automatically adds a __RadRibbonBar__ control on the form as shown below:<br>![ribbonbar-getting-started 001](images/ribbonbar-getting-started001.png)
 
+>note By default, __RadRibbonBar__ shows minimize, mazimize and close buttons in its caption element. The __HelpButton__ is not shown. It is necessary to set the RibbonBarElement.RibbonCaption.HelpButton.__Visibility__ property to *ElementVisibility.Visible* in order to be displayed. The form's __HelpButtonClicked__ event is fired when Help button in the ribbon's caption element is clicked. It can be canceled. However, if it is not canceled, the __HelpRequested__ event will be fired when the Help cursor is clicked on any Control. 
+> 
+> ![ribbonbar-getting-started 013](images/ribbonbar-getting-started013.png)
+
 ## Adding Tabs to the Telerik RadRibbonBar
 
 1. Click __Add New Tab...__
@@ -27,6 +31,8 @@ This section will help you in creating your first Telerik RadRibbonBar with some
 1. Type __Edit__ and press __Enter__. A new __Add New Tab...__ button will be created to the right of the __Edit__ tab:<br>![ribbonbar-getting-started 002](images/ribbonbar-getting-started002.png)
 
 1. Add two more __TabItems__ with captions __Format__ and __Insert:__ <br>![ribbonbar-getting-started 003](images/ribbonbar-getting-started003.png)
+
+
 
 ## Adding Groups to a RadRibbonBar Tab
 

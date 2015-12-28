@@ -14,7 +14,7 @@ The __RadForm__ is build of a __RadFormTitleBarElement__, __FormBorderPrimitive_
 
 ## Accessing the RadTitleBarElement
 
-The __RadFormTitleBarElement__ is positioned on the top of the form and its default behavior is to display an icon, text, and the minimize, maximize/restore and close buttons. You can access the __RadFormTitleBarElement__ the following way:
+The __RadFormTitleBarElement__ is positioned on the top of the form and its default behavior is to display an icon, text, and the help, minimize, maximize/restore and close buttons. You can access the __RadFormTitleBarElement__ the following way:
 
 #### Accessing RadForm elements 
 
@@ -26,6 +26,7 @@ void Form1_Shown(object sender, EventArgs e)
 {
     this.FormElement.TitleBar.MaximizeButton.Enabled = false;
     this.FormElement.TitleBar.MinimizeButton.Enabled = false;
+    this.FormElement.TitleBar.HelpButton.Visibility = Telerik.WinControls.ElementVisibility.Visible;
 }
 
 ````
@@ -33,13 +34,20 @@ void Form1_Shown(object sender, EventArgs e)
 Private Sub Form1_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
     Me.FormElement.TitleBar.MaximizeButton.Enabled = False
     Me.FormElement.TitleBar.MinimizeButton.Enabled = False
+    Me.FormElement.TitleBar.HelpButton.Visibility = Telerik.WinControls.ElementVisibility.Visible
 End Sub
 
 ````
 
 {{endregion}} 
 
- 
+  
+![forms-and-dialogs-accessing-radform-elements 001](images/forms-and-dialogs-accessing-radform-elements001.png)
+
+
+>note By default, the __HelpButton__ is not shown. It is necessary to set its __Visibility__ property to *ElementVisibility.Visible* in order to be displayed. The __HelpButtonClicked__ event is fired when Help button in the title bar is clicked. It can be canceled. However, if it is not canceled, the __HelpRequested__ event will be fired when the Help cursor is clicked on any Control. 
+
+
 ## Adding a new button to the title bar
 
 You can easily extend the __RadFormTitleBarElement__ 's functionality by adding new elements to its hierarchy. The following code snippet demonstrated how to add a __RadButtonElement__ before the minimize button in the __RadFormTitleBarElement__:
@@ -69,6 +77,7 @@ End Sub
 
 {{endregion}} 
  
+
 ## Accessing the Form Borders
 
 The border of a __RadForm__ control is composed of two border primitives which, together, define the visual appearance of the whole border: __FormBorderPrimitive__ and __FormImageBorderPrimitive__.
@@ -92,7 +101,8 @@ Me.FormElement.Border.ForeColor = System.Drawing.Color.Green
 ````
 
 {{endregion}} 
- 
+
+
 >note The visual appearance of the border and also for the whole RadForm control can be designed in the Visual Style Builder.
 >
 
