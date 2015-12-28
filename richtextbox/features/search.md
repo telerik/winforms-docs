@@ -21,7 +21,7 @@ RadRichTextBox supports searching the contents of the document along with provid
 
 The simplest scenario – finding a string in the content of the document can be implemented with the following code:
 
-#_[C#] Select all matches
+#### Select all matches
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxSearch.cs region=SelectAllMatches}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxSearch.vb region=SelectAllMatches}} 

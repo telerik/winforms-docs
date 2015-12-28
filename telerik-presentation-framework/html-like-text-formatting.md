@@ -12,7 +12,7 @@ position: 9
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Enhanced HTML-like Markup Support](http://tv.telerik.com/winforms/utility/enhanced-html-like-markup-support) <br>This video goes over the new text rendering tags provided with the Q3 2009 release. It also shows the RadMarkupEditor and gives an example of how to use it from within your own applications. (Runtime: 04:11)|![tpf-html-like-text-formatting 001](images/tpf-html-like-text-formatting001.png)|
+|[Enhanced HTML-like Markup Support](http://tv.telerik.com/watch/winforms/utility/enhanced-html-like-markup-support) <br>This video goes over the new text rendering tags provided with the Q3 2009 release. It also shows the RadMarkupEditor and gives an example of how to use it from within your own applications. (Runtime: 04:11)|![tpf-html-like-text-formatting 001](images/tpf-html-like-text-formatting001.png)|
 
 ## Introduction
 

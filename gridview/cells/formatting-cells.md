@@ -19,7 +19,7 @@ position: 4
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Formatting Data In RadGridView for WinForms](http://tv.telerik.com/radtips/radgrid/formatting-data-in-radgridview)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|![gridview-cells-formatting-cells 006](images/gridview-cells-formatting-cells006.png)|
+|[Formatting Data In RadGridView for WinForms](http://tv.telerik.com/watch/radtips/radgrid/formatting-data-in-radgridview)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|![gridview-cells-formatting-cells 006](images/gridview-cells-formatting-cells006.png)|
 
 __CellFormatting__ event is used to add formatting to grid *data* cells including the *new row cells*. For example, the code sample below changes the ForeColor in all cells in the "KBytes" column to red:
 

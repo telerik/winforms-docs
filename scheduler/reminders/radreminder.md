@@ -13,7 +13,7 @@ position: 0
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadSchedulerReminder](http://tv.telerik.com/watch/winforms/getting-started-with-radschedulerreminder) In this video, you will learn how to notify users of upcoming appointments through the use of RadSchedulerReminder.|![scheduler-reminders-radreminder 002](images/scheduler-reminders-radreminder002.png)|
+|[Getting Started with RadSchedulerReminder](http://tv.telerik.com/watch/winforms/getting-started-with-radschedulerreminder)<br>In this video, you will learn how to notify users of upcoming appointments through the use of RadSchedulerReminder.|![scheduler-reminders-radreminder 002](images/scheduler-reminders-radreminder002.png)|
 
 ## Overview
 

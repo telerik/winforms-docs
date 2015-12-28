@@ -14,7 +14,7 @@ position: 0
 
 |Related Videos|  |
 |-------|------|
-|[Using RadScheduler for WinForms](http://tv.telerik.com/winforms/radscheduler/scheduler) Have you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs. (Runtime: 32:46)|![scheduler-introduction 001](images/scheduler-introduction001.png)|
+|[Using RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/scheduler)<br>Have you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs. (Runtime: 32:46)|![scheduler-introduction 001](images/scheduler-introduction001.png)|
 
 A first-rate scheduling component should offer intuitive, simple, and familiar interface, to help the user review all events in  a fast and efficient manner. Telerik Windows Forms Scheduler provides simplistic, but powerful interface, following closely the established UI standards.
         

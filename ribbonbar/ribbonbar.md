@@ -17,7 +17,7 @@ position: 0
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadRibbonBar Overview](http://tv.telerik.com/winforms/radribbonbar/radribbonbar-overview)<br>This video contains a brief overview of the RadRibbonBar. (Runtime: 02:15)|![overview-video 001](images/overview-video001.png)|
+|[RadRibbonBar Overview](http://tv.telerik.com/watch/winforms/radribbonbar/radribbonbar-overview)<br>This video contains a brief overview of the RadRibbonBar. (Runtime: 02:15)|![overview-video 001](images/overview-video001.png)|
 
 With the __RadRibbonBar__ control you can build user interfaces similar to those used in Microsoft Office 2007. The figure below shows an example of a RadRibbonBar usage scenario: <br>![ribbonbar-overview 001](images/ribbonbar-overview001.jpg)
 

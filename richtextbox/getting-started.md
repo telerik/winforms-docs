@@ -15,10 +15,6 @@ position: 2
 |[ Getting started with RadRichTextBox ](http://tv.telerik.com/watch/winforms/getting-started-with-teleriks-radrichtextbox)<br>In this video, we are going to see what it takes to get started with the RadRichTextBox. The RichTextBox control offers broad editing and formatting capabilities with true Word-like experience. You can load XAML, HTML, DOCX, RTF, or plain text document into the WinForms RichTextBox control. Each of these formats will allow you to edit and format the document, which can then be exported to/saved as any of the above mentioned supported formats, plus PDF. RadRichTextBox can also be used with RadRibbonBar for Windows Forms to give an Microsoft Office style look to your WinForms application. Also included is SpellChecking, Multi-region Selection and Editing and much much more.|![richtextbox-getting-started 000](images/richtextbox-getting-started000.png)|
 
 RadRichTextBox is a control that allows you to display rich text content including sections, paragraphs, spans, italic text, bold text, in-line images etc. This topic will help you to quickly get started using the control.
-      
-| RELATED VIDEOS |  |
-| --- | ------ |
-|[Getting Started with Telerik's RadRichTextBox](http://tv.telerik.com/watch/winforms/getting-started-with-teleriks-radrichtextbox)<br>In this video, we are going to see what it takes to get started with the RadRichTextBox. The RichTextBox control offers broad editing and formatting capabilities with true  Word-like experience. You can load XAML, HTML, DOCX, RTF, or plain text document  into the WinForms RichTextBox control. Each of these formats will allow you to edit and format the document, which can then be exported to/saved as any of the above mentioned supported formats, plus PDF. RadRichTextBox can also be used with  RadRibbonBar for Windows Forms to give an Microsoft Office style look to your  WinForms application. Also included is SpellChecking, Multi-region Selection and Editing and much much more.|![richtextbox-getting-started 001](images/richtextbox-getting-started001.png)|
 
 ## Formatting at design time
 
