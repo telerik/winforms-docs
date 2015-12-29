@@ -17,7 +17,7 @@ RadCommandBar is a fully theme-able tool strip that provides unprecedented flexi
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Working with RadCommandBar](http://tv.telerik.com/watch/winforms/working-with-radcommandbar-for-winforms) In this video, you will learn how to create and add RadCommandBars to your applications.|![command-bar-working-with-command-bar-video](images/command-bar-working-with-command-bar-video.png)|
+|[Working with RadCommandBar](http://www.telerik.com/videos/winforms/working-with-radcommandbar-for-winforms)<br>In this video, you will learn how to create and add RadCommandBars to your applications.|![command-bar-working-with-command-bar-video](images/command-bar-working-with-command-bar-video.png)|
 
 ## Orientation
 
