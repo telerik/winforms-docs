@@ -830,12 +830,15 @@ navigation:
     treeview/usability:
         title: Usability
         position: 12
-    wizard:
-        title: Wizzard
+    virtualgrid:
+        title: VirtualGrid
         position: 49
+    wizard:
+        title: Wizard
+        position: 50
     wordsprocessing:
         title: WordsProcessing
-        position: 50
+        position: 51
     wordsprocessing/changes-and-backward-compatibility:
         title: Changes and Backward Compatibility
         position: 2
@@ -876,7 +879,7 @@ navigation:
         title: Features
     telerik-cab-enabling-kit:
         title: Telerik Cab Enabling Kit
-        position: 52
+        position: 53
     telerik-cab-enabling-kit/getting-started:
         title: Getting Started
         position: 3
