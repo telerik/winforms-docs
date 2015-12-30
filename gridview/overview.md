@@ -75,7 +75,7 @@ __A complete list with all key features can be found here__
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadGridView for WinForms Webinar](http://tv.telerik.com/winforms/webinar/radgridview-for-winforms-webinar)<br>This video provides an in-depth overview of Telerik's RadGridView for WinForms|![gridview-overview 002](images/gridview-overview002.png)|
+|[RadGridView for WinForms Webinar](http://tv.telerik.com/watch/winforms/webinar/radgridview-for-winforms-webinar)<br>This video provides an in-depth overview of Telerik's RadGridView for WinForms|![gridview-overview 002](images/gridview-overview002.png)|
 
 # See Also
 

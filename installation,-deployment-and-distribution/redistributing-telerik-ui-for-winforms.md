@@ -28,14 +28,14 @@ The Telerik UI for WinForms suite includes a limited run time royalty-free licen
             
 * Open source products.
 
-For additional usage requirements, development restrictions and, defined term definitions, please refer to the WinForms [license agreement]({%slug winforms/licensing/license-agreement%}).  For uses that require additional review, please send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
+For additional usage requirements, development restrictions and, defined term definitions, please refer to the WinForms [license agreement]({%slug winforms/licensing/license-agreement%}). For uses that require additional review, please send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
         
 
 ## ILMerge Telerik WinForms assemblies
 
 |RELATED VIDEOS||
 |----|----|
-|[ILMerge](http://www.telerik.com/videos/winforms/ilmerge) This video demonstrates how to merge your application exe with the Telerik assemblies, so they cannot be reused. (Runtime: 1:57)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows015.png)|
+|[ILMerge](http://www.telerik.com/videos/winforms/ilmerge)<br>This video demonstrates how to merge your application exe with the Telerik assemblies, so they cannot be reused. (Runtime: 1:57)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows015.png)|
 
 When you deploy your application, you may prefer to do it as a single executable rather than an executable referencing many external assemblies. In this case, you need to ILMerge the assemblies with the executable. Here is a link to MSDN from where you can download the ILMerge executable: [Download ILMerge](http://www.microsoft.com/download/en/details.aspx?id=17630)
 
@@ -108,7 +108,7 @@ The MergedApplicationExecutable.exe is now a stand-alone application executable 
 
 |RELATED VIDEOS||
 |----|----|
-|[Redistribute OEM](http://www.telerik.com/videos/winforms/redistribute-oem) This video demonstrates how to build the Telerik assemblies, so they are locked to your application and cannot be reused outside of it. (Runtime: 5:49)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows016.png)|
+|[Redistribute OEM](http://www.telerik.com/videos/winforms/redistribute-oem)<br>This video demonstrates how to build the Telerik assemblies, so they are locked to your application and cannot be reused outside of it. (Runtime: 5:49)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows016.png)|
 
 This method requires modifications to the source files, which are distributed as part of the Subscription license. If you have purchased a Subscription license for Telerik UI for WinForms, and would like to explore this method, the following information will allow you to do so.
         
@@ -157,7 +157,7 @@ Once you finish these steps, and if you or someone else tries to use that assemb
 
 |RELATED VIDEOS||
 |----|----|
-|[Redistribute OEMKEY](http://www.telerik.com/videos/winforms/redistribute-oemkey) This video demonstrates how to build the Telerik assemblies, so they are locked to your application public token key and cannot be reused outside of it. (Runtime: 7:19)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows017.png)|
+|[Redistribute OEMKEY](http://www.telerik.com/videos/winforms/redistribute-oemkey)<br>This video demonstrates how to build the Telerik assemblies, so they are locked to your application public token key and cannot be reused outside of it. (Runtime: 7:19)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows017.png)|
 
 This section demonstrates how to deploy a project with a public token key. We will assume that you have downloaded and extracted your source code distribution in C:\Telerik UI for WinForms Source\RadControlsVS2010.sln:
         

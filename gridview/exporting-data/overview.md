@@ -14,7 +14,7 @@ position: 0
 
 |RELATED VIDEOS|
 | ------ |
-|[Export to Excel with RadGridView for WinForms](http://tv.telerik.com/radtips/radgrid/grid-to-excel)<br>In this RadTip, John Kellar demonstrates how you can export data stored in a RadGridView for Windows Forms to Excel using the ExcelML export options. (Runtime: 08:53)|
+|[Export to Excel with RadGridView for WinForms](http://www.telerik.com/videos/winforms/export-to-excel-with-radgridview-for-winforms)<br>In this RadTip, John Kellar demonstrates how you can export data stored in a RadGridView for Windows Forms to Excel using the ExcelML export options. (Runtime: 08:52)|
 
 __RadGridView__ supports several built-in methods for exporting data:
 

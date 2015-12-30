@@ -12,7 +12,7 @@ position: 0
 
 | RELATED VIDEOS |  |
 | ------ | ------:|
-|[Introduction to RadControlSpyForm](http://tv.telerik.com/watch/winforms/utility/radcontrols-for-winforms-introduction-to-radcontrolspyr)|![tools-controlspy-overview 001](images/tools-controlspy-overview001.png)|
+|[Introduction to RadControlSpyForm](http://www.telerik.com/videos/winforms/introduction-to-radcontrolspyform)|![tools-controlspy-overview 001](images/tools-controlspy-overview001.png)|
 
 ## 
 

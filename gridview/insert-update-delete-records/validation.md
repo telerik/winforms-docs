@@ -18,7 +18,7 @@ position: 4
 
 |RELATED VIDEOS|
 | ------ |
-|[Validation with RadGridView for WinForms](http://tv.telerik.com/winforms/radgridview/validation-with-radgridview-winforms)<br>In this video you will learn how to use the event-based Validation functionality in RadGridView for WinForms. Learn how to use the CellValidating and RowValidating events to ensure user input is valid. (Runtime: 08:47)|
+|[Validation with RadGridView for WinForms](https://www.youtube.com/watch?v=N0J8P8ngsHY&list=PLvmaC-XMqeBaRgdM2nVNSM-0SSG_xbjSN&index=8)<br>In this video you will learn how to use the event-based Validation functionality in RadGridView for WinForms. Learn how to use the CellValidating and RowValidating events to ensure user input is valid. (Runtime: 08:47)|
 
 To prevent invalid input, wire the __ValueChanging__ and __ValueChanged__ events of the grid to add custom
 validation logic. Below is a simple example that demonstrates how to reject

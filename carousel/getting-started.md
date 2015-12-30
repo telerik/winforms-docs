@@ -16,7 +16,7 @@ position: 1
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Overview of RadCarousel for WinForms](http://tv.telerik.com/winforms/radcarousel/overview-radcarousel-winforms)
+|[Overview of RadCarousel for WinForms](http://tv.telerik.com/watch/winforms/radcarousel/overview-radcarousel-winforms)
  See how to quickly get started using the Telerik RadCarousel for WinForms. (Runtime: 07:18)|![carousel-overview 001](images/carousel-overview001 - Copy.png)|
 >caption 
 

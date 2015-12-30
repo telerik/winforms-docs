@@ -17,7 +17,7 @@ position: 0
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Filtering and Expressions in RadGridView for WinForms](http://tv.telerik.com/watch/winforms/filtering-expressions-in-radgridview-for-winforms)<br>In this video, you will learn how to enable three different types of filtering on RadGridView for WinForms.|![gridview-filtering-basic-filtering 001](images/gridview-filtering-basic-filtering001.png)|
+|[Filtering and Expressions in RadGridView for WinForms](http://www.telerik.com/videos/winforms/filtering-and-expressions-in-radgridview-for-winforms)<br>In this video, you will learn how to enable three different types of filtering on RadGridView for WinForms.|![gridview-filtering-basic-filtering 001](images/gridview-filtering-basic-filtering001.png)|
 
 User filtering in RadGridView is enabled using RadGridView.__EnableFiltering__ or GridViewTemplate.__EnableFiltering__ properties. By default, filtering is disabled at all levels.
 

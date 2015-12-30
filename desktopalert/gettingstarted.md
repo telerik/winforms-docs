@@ -17,7 +17,7 @@ position: 1
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadDesktopAlert](http://tv.telerik.com/watch/winforms/getting-started-with-raddesktopalert) In this video, you will learn how to get started with RadDesktopAlert.| ![desktopalert-overview 001](images/desktopalert-overview001.png)|
+|[Getting Started with RadDesktopAlert](http://tv.telerik.com/watch/winforms/getting-started-with-raddesktopalert)<br>In this video, you will learn how to get started with RadDesktopAlert.| ![desktopalert-overview 001](images/desktopalert-overview001.png)|
 
 1\. Create a new Windows Forms application in Visual Studio and open the designer of the default form.
 

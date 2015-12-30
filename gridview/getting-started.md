@@ -18,7 +18,7 @@ position: 1
 
 | RELATED VIDEOS |  
 | ------ |
-|[RadGridView for WinForms Webinar](http://tv.telerik.com/winforms/webinar/radgridview-for-winforms-webinar)<br>Lino Tadros from Falalel provides an in-depth overview of Telerik's RadGridView for WinForms (Runtime: 01:45:11)|
+|[RadGridView for WinForms Webinar](http://tv.telerik.com/watch/winforms/webinar/radgridview-for-winforms-webinar)<br>Lino Tadros from Falalel provides an in-depth overview of Telerik's RadGridView for WinForms (Runtime: 01:45:11)|
 
 The example below demonstrates creating a hierarchical grid presenting two tables *Product Category* and *Product Information*.
 

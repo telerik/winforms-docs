@@ -13,7 +13,7 @@ position: 1
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadAutoCompleteBox for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-radautocompletebox-for-winforms) RadAutoCompleteBox allows the end-user to easily fill-in text thanks to auto-complete functionality and tokens of text. This behavior is similar to the “To” field of Outlook and Facebook where you are filling-in the recipients to which you are going to send a new message.|![editors-autocompletebox-getting-started 004](images/editors-autocompletebox-getting-started004.png)|
+|[Getting Started with RadAutoCompleteBox for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-radautocompletebox-for-winforms)<br>RadAutoCompleteBox allows the end-user to easily fill-in text thanks to auto-complete functionality and tokens of text. This behavior is similar to the “To” field of Outlook and Facebook where you are filling-in the recipients to which you are going to send a new message.|![editors-autocompletebox-getting-started 004](images/editors-autocompletebox-getting-started004.png)|
 
 ## 
 

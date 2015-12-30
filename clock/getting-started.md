@@ -56,4 +56,4 @@ Here is the result:
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadTimePicker and RadClock for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms) In this video, we are going to demonstrate the new RadTimePicker and RadClock controls as well as several properties you should be aware of.|![clock-getting-started 002](images/clock-getting-started002.png)|
+|[Getting Started with RadTimePicker and RadClock for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms)<br>In this video, we are going to demonstrate the new RadTimePicker and RadClock controls as well as several properties you should be aware of.|![clock-getting-started 002](images/clock-getting-started002.png)|

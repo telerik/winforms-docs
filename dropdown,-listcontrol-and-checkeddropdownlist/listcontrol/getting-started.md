@@ -15,7 +15,7 @@ position: 2
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadListControl](http://tv.telerik.com/watch/winforms/getting-started-with-radlistcontrol) In this video, you will learn how to bind data to the new RadListControl.|![dropdown-and-listcontrol-listcontrol-getting-started 003](images/dropdown-and-listcontrol-listcontrol-getting-started003.png)|
+|[Getting Started with RadListControl](http://www.telerik.com/videos/winforms/getting-started-with-radlistcontrol)<br>In this video, you will learn how to bind data to the new RadListControl.|![dropdown-and-listcontrol-listcontrol-getting-started 003](images/dropdown-and-listcontrol-listcontrol-getting-started003.png)|
 
 ## 
 
