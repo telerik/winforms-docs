@@ -983,9 +983,9 @@ defaults:
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
 # The google services configuration
-google_analytics: UA-111455-1
+google_analytics: UA-1119090:eblhnfskwrk'
 google_tag_manager: GTM-6X92
-google_custom_search: '001595215763381649090:jt1stbj813w'
+google_custom_search: '001595215763381649090:hu79u-xean0'
 ## Do not edit below this line
 safe: false
 markdown: MarkdownProcessor
