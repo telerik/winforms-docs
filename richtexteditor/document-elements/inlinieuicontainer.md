@@ -32,6 +32,9 @@ You can add any element that derives from the RadElement class inside the __RadE
 >note In order to utilize the __InlineUIContainer__ , you have to set its __Height__ and __Width__ explicitly (or use the constructor that takes a __Size__ as a parameter). Otherwise, it will not shown in the document.
 >
 
+>note The following article contains more information about the element types which can be used inside the document: [Elements Overview]({%winforms/telerik-presentation-framework/elements/overview%}).
+>
+
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\UIContainerCode.cs region=add}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\UIContainerCode.vb region=add}} 
 
@@ -73,10 +76,10 @@ Me.radRichTextEditor1.Document.Sections.Add(section)
 ##  Import Export InlineUIContainers
       
 
-Most features that __RadRichTextEditor__ provides are also supported in the format providers that it uses for export and import. Currently import/export UIElement is only supported with HtmlFormatProvider.
+Most features that __RadRichTextEditor__ provides are also supported in the format providers that it uses for export and import. Currently import/export UIElement is only supported with __HtmlFormatProvider__. If your document has any inline UI elements by default they will be exported/imported when the __HtmlFormatProvider__ is used.
         
 
-* __Exporting with HtmlFormatProvider__ - the inline UI containers are serialized as XML and are included in the HTML as comments.  If the user handles the __InlineUIContainerExporting__ event, they can provide their own implementation for the export of the UI elements by accessing the properties of the __InlineUIContainerExportingEventArgs__ and setting the ones they need. The CommentContent contains the XML serialization and the __HtmlContent__ string property can be set to the desired user-defined HTML equivalent of the UI element. It will appear when the page is rendered outside RadRichTextEditor. The UI element can also be omitted from the document altogether.
+* __Exporting with HtmlFormatProvider__ - the inline UI containers are serialized as XML and are included in the HTML as comments. If the user handles the __InlineUIContainerExporting__ event, they can provide their own implementation for the export of the UI elements by accessing the properties of the __InlineUIContainerExportingEventArgs__ and setting the ones they need. The CommentContent contains the XML serialization and the __HtmlContent__ string property can be set to the desired user-defined HTML equivalent of the UI element. It will appear when the page is rendered outside RadRichTextEditor. The UI element can also be omitted from the document altogether.
             
 >caption Figure 1: The  InlineUIContainerExporting event.
 
