@@ -31,7 +31,7 @@ First let’s create a form with [RadCommandBar]({%slug winforms/commandbar%}) d
 | __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonList</li><li>ToolTipText: “ListView”</li><li>Image: Some image representing ListView</li></ul>|
 | __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonTiles</li><li>ToolTipText: “IconsView”</li><li>Image: Some image representing IconsView</li></ul>|
 | __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonDetails</li><li>ToolTipText: “DetailsView”</li><li>Image: Some image representing DetailsView</li></ul>|
-| __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonCard</li><li>ToolTipText: CardView”</li><li>Image: Some image representing DetailsView</li></ul>|
+| __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonCard</li><li>ToolTipText: "CardView”</li><li>Image: Some image representing DetailsView</li></ul>|
 | __CommandBarSeparatorItem__ ||
 | __CommandBarTextBox__ |<ul><li>Name: commandBarTextBoxFilter</li><li>Text: “”</li></ul>|
 
