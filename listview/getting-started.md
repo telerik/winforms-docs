@@ -31,6 +31,7 @@ First let’s create a form with [RadCommandBar]({%slug winforms/commandbar%}) d
 | __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonList</li><li>ToolTipText: “ListView”</li><li>Image: Some image representing ListView</li></ul>|
 | __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonTiles</li><li>ToolTipText: “IconsView”</li><li>Image: Some image representing IconsView</li></ul>|
 | __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonDetails</li><li>ToolTipText: “DetailsView”</li><li>Image: Some image representing DetailsView</li></ul>|
+| __CommandBarToggleButton__ |<ul><li>Name: commandBarToggleButtonCard</li><li>ToolTipText: CardView”</li><li>Image: Some image representing DetailsView</li></ul>|
 | __CommandBarSeparatorItem__ ||
 | __CommandBarTextBox__ |<ul><li>Name: commandBarTextBoxFilter</li><li>Text: “”</li></ul>|
 
@@ -49,6 +50,7 @@ this.radListView1.VisualItemFormatting += new Telerik.WinControls.UI.ListViewVis
 this.radListView1.CellFormatting += new Telerik.WinControls.UI.ListViewCellFormattingEventHandler(radListView1_CellFormatting);
 this.radListView1.ColumnCreating += new ListViewColumnCreatingEventHandler(radListView1_ColumnCreating);
 this.radListView1.ViewTypeChanged += new EventHandler(radListView1_ViewTypeChanged);
+this.radListView1.CardViewItemFormatting += new ListViewCardItemFormattingEventHandler(radListView1_CardViewItemFormatting);
 this.radListView1.AllowEdit = false;
 this.radListView1.AllowRemove = false;
 this.radListView1.DataSource = this.songsDataTableBindingSource;
@@ -63,6 +65,7 @@ AddHandler Me.RadListView1.VisualItemFormatting, AddressOf radListView1_VisualIt
 AddHandler Me.RadListView1.ViewTypeChanged, AddressOf radListView1_ViewTypeChanged
 AddHandler Me.RadListView1.CellFormatting, AddressOf radListView1_CellFormatting
 AddHandler Me.RadListView1.ColumnCreating, AddressOf radListView1_ColumnCreating
+AddHandler Me.RadListView1.CardViewItemFormatting, AddressOf radListView1_CardViewItemFormatting
 Me.RadListView1.AllowEdit = False
 Me.RadListView1.AllowRemove = False
 Me.RadListView1.DataSource = Me.SongsDataTableBindingSource
@@ -143,7 +146,7 @@ End Sub
 
 {{endregion}} 
 
-The __CellFormatting__ event is handled in order to customize the appearance of the cells, when RadListView is in __DetailsView__. Here we will set the cell image.
+The __CellFormatting__ event is handled in order to customize the appearance of the cells, when __RadListView__ is in __DetailsView__. Here we will set the cell image. When the __ViewType__ is set to *CardView* we would need to handle the __CardViewItemFormatting__ event.
 
 #### Set the cell image
 
@@ -158,12 +161,35 @@ void radListView1_CellFormatting(object sender, ListViewCellFormattingEventArgs 
         e.CellElement.Image = e.CellElement.Image.GetThumbnailImage(32, 32, null, IntPtr.Zero);
     }
 }
+void radListView1_CardViewItemFormatting(object sender, ListViewCardItemFormattingEventArgs e)
+{
+    CardViewItem imageItem = e.Item as CardViewItem;
+    if (imageItem == null || imageItem.Column == null)
+    {
+        return;
+    }
+    if (imageItem.Column.Name == "Image")
+    {
+        imageItem.EditorItem.DrawText = false;
+        imageItem.EditorItem.Image = e.VisualItem.Data.Image.GetThumbnailImage(64, 64, null, IntPtr.Zero);
+    }
+}
 
 ````
 ````VB.NET
 Private Sub radListView1_CellFormatting(sender As Object, e As ListViewCellFormattingEventArgs)
     If e.CellElement.Image IsNot Nothing Then
         e.CellElement.Image = e.CellElement.Image.GetThumbnailImage(32, 32, Nothing, IntPtr.Zero)
+    End If
+End Sub
+Private Sub radListView1_CardViewItemFormatting(sender As Object, e As ListViewCardItemFormattingEventArgs)
+    Dim imageItem = TryCast(e.Item, CardViewItem)
+    If imageItem Is Nothing OrElse imageItem.Column Is Nothing Then
+        Return
+    End If
+    If imageItem.Column.Name = "Image" Then
+        imageItem.EditorItem.DrawText = False
+        imageItem.EditorItem.Image = e.VisualItem.Data.Image.GetThumbnailImage(64, 64, Nothing, IntPtr.Zero)
     End If
 End Sub
 
@@ -225,11 +251,13 @@ End Sub
 
 The last event of RadListView, which we are going to handle is the ViewTypeChanged event - fired when the ViewType of the control is changed. This event is convenient to set view specific settings. To handle the event, we will create three helper methods:
 
-* __SetupDetailsView__ - here we will set the __AllowArbitraryItemHeight__,  property to *true*, in order to allow the items to size themselves in height, according to their content.
+* __SetupDetailsView__: Here we will set the __AllowArbitraryItemHeight__,  property to *true*, in order to allow the items to size themselves in height, according to their content.
 
-* __SetupIconsView__ - here we will define a custom size for the items, set some spacing between the items and again set the __AllowArbitraryItemHeight__, property to *true*
+* __SetupIconsView__: Here we will define a custom size for the items, set some spacing between the items and again set the __AllowArbitraryItemHeight__, property to *true*
 
-* __SetupSimpleListView__ - in this method we will only set the __AllowArbitraryItemHeight__, property to *true*.
+* __SetupSimpleListView__: In this method we will only set the __AllowArbitraryItemHeight__, property to *true*.
+
+* __SetupCardView__: In this method we will rebind the control and define a proper __ItemSize__.
 
 In the ViewTypeChanged event handler, we will simply check which is the new view and call the corresponding setup method.
 
@@ -253,6 +281,14 @@ private void SetupSimpleListView()
 {
     this.radListView1.AllowArbitraryItemHeight = true;
 }
+private void SetupCardView()
+{
+    this.radListView1.ItemSize = new Size(200, 300);
+    this.radListView1.DataSource = null;
+    this.radListView1.DataSource = this.songsDataTableBindingSource;
+    this.radListView1.DisplayMember = "SongName";
+    this.radListView1.ValueMember = "SongID";
+}
 void radListView1_ViewTypeChanged(object sender, EventArgs e)
 {
     switch (radListView1.ViewType)
@@ -265,6 +301,9 @@ void radListView1_ViewTypeChanged(object sender, EventArgs e)
             break;
         case ListViewType.DetailsView:
             SetupDetailsView();
+            break;
+        case ListViewType.CardView:
+            SetupCardView();
             break;
     }
 }
@@ -282,6 +321,13 @@ End Sub
 Private Sub SetupSimpleListView()
     Me.RadListView1.AllowArbitraryItemHeight = True
 End Sub
+Private Sub SetupCardView()
+    Me.RadListView1.ItemSize = New Size(200, 300)
+    Me.RadListView1.DataSource = Nothing
+    Me.RadListView1.DataSource = Me.SongsDataTableBindingSource
+    Me.RadListView1.DisplayMember = "SongName"
+    Me.RadListView1.ValueMember = "SongID"
+End Sub
 Private Sub radListView1_ViewTypeChanged(sender As Object, e As EventArgs)
     Select Case RadListView1.ViewType
         Case ListViewType.ListView
@@ -293,17 +339,17 @@ Private Sub radListView1_ViewTypeChanged(sender As Object, e As EventArgs)
         Case ListViewType.DetailsView
             SetupDetailsView()
             Exit Select
+        Case ListViewType.CardView
+            SetupCardView()
+            Exit Select
     End Select
 End Sub
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Now we only need to fill up the __RadCommandBar__ elements functionality.  First we are going to handle the view changing buttons. For this purpose, subscribe for the __ToggleStateChanged__ and __ToggleStateChanging__ events of all the __CommandBarToggleButtons__ that we have added earlier. In the ToggleStateChanged event handler, check which is the clicked button, and set the rest of the buttons to *Off*. Additionally, set the __RadListView____ViewType__ according to the pressed button.
+Now we only need to fill up the __RadCommandBar__ elements functionality.  First we are going to handle the view changing buttons. For this purpose, subscribe for the __ToggleStateChanged__ and __ToggleStateChanging__ events of all the __CommandBarToggleButtons__ that we have added earlier. In the ToggleStateChanged event handler, check which is the clicked button, and set the rest of the buttons to *Off*. Additionally, set the __RadListView__ __ViewType__ according to the pressed button.
 
 #### Handle the toggle buttons
 
@@ -331,6 +377,10 @@ private void ViewToggleButton_ToggleStateChanged(object sender, StateChangedEven
     {
         this.commandBarToggleButtonTiles.ToggleState = ToggleState.Off;
     }
+    if (this.commandBarToggleButtonCard != sender)
+    {
+        this.commandBarToggleButtonCard.ToggleState = ToggleState.Off;
+    }
     this.updatingToggleState = false;
     if (this.commandBarToggleButtonDetails.ToggleState == ToggleState.On)
     {
@@ -344,7 +394,11 @@ private void ViewToggleButton_ToggleStateChanged(object sender, StateChangedEven
     {
         this.radListView1.ViewType = ListViewType.IconsView;
     }
- }
+    if (this.commandBarToggleButtonCard.ToggleState == ToggleState.On)
+    {
+        this.radListView1.ViewType = ListViewType.CardView;
+    }
+}
 private void ViewToggleButton_ToggleStateChanging(object sender, StateChangingEventArgs args)
 {
     if (!updatingToggleState && args.OldValue == ToggleState.On)
@@ -356,7 +410,7 @@ private void ViewToggleButton_ToggleStateChanging(object sender, StateChangingEv
 ````
 ````VB.NET
 Private updatingToggleState As Boolean = False
-Private Sub ViewToggleButton_ToggleStateChanged(sender As Object, args As StateChangedEventArgs) Handles commandBarToggleButtonTiles.ToggleStateChanged, commandBarToggleButtonList.ToggleStateChanged, commandBarToggleButtonDetails.ToggleStateChanged
+Private Sub ViewToggleButton_ToggleStateChanged(sender As Object, args As StateChangedEventArgs) Handles commandBarToggleButtonTiles.ToggleStateChanged, commandBarToggleButtonList.ToggleStateChanged, commandBarToggleButtonDetails.ToggleStateChanged, CommandBarToggleButtonCard.ToggleStateChanged
     If updatingToggleState Then
         Return
     End If
@@ -370,6 +424,9 @@ Private Sub ViewToggleButton_ToggleStateChanged(sender As Object, args As StateC
     If Me.commandBarToggleButtonTiles IsNot sender Then
         Me.commandBarToggleButtonTiles.ToggleState = ToggleState.Off
     End If
+    If Me.CommandBarToggleButtonCard IsNot sender Then
+        Me.CommandBarToggleButtonCard.ToggleState = ToggleState.Off
+    End If
     Me.updatingToggleState = False
     If Me.commandBarToggleButtonDetails.ToggleState = ToggleState.[On] Then
         Me.RadListView1.ViewType = ListViewType.DetailsView
@@ -379,6 +436,9 @@ Private Sub ViewToggleButton_ToggleStateChanged(sender As Object, args As StateC
     End If
     If Me.commandBarToggleButtonTiles.ToggleState = ToggleState.[On] Then
         Me.RadListView1.ViewType = ListViewType.IconsView
+    End If
+    If Me.CommandBarToggleButtonCard.ToggleState = ToggleState.[On] Then
+        Me.RadListView1.ViewType = ListViewType.CardView
     End If
 End Sub
 Private Sub ViewToggleButton_ToggleStateChanging(sender As Object, args As StateChangingEventArgs) Handles commandBarToggleButtonTiles.ToggleStateChanging, commandBarToggleButtonList.ToggleStateChanging, commandBarToggleButtonDetails.ToggleStateChanging
@@ -394,7 +454,7 @@ End Sub
 
 
 
-Next, subscribe to the __SelectedIndexChanged__ event of *commandBarDropDownSort*__CommandBarDropDownList__. In the event handler, we are going to add the desired __SortDescriptors__, according to the selected item in the drop down.
+Next, subscribe to the __SelectedIndexChanged__ event of *commandBarDropDownSort* __CommandBarDropDownList__. In the event handler, we are going to add the desired __SortDescriptors__, according to the selected item in the drop down.
 
 #### Handle sorting functionality
 
@@ -502,12 +562,9 @@ End Sub
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
-
-
-Lastly, lets subscribe ot the __TextChanged__ event of *commandBarTextBoxFilter*__CommandBarTextBox__. Here we will  add __FilterDescriptor__ according to the text entered in the text box:
+Lastly, lets subscribe ot the __TextChanged__ event of *commandBarTextBoxFilter* __CommandBarTextBox__. Here we will  add __FilterDescriptor__ according to the text entered in the text box:
 
 #### Handle filtering functionality
 
