@@ -1,3 +1,4 @@
+---
 title: Paging Panel
 page_title: Paging Panel | UI for WinForms Documentation
 description: Paging panel

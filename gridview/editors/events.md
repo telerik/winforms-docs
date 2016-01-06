@@ -10,10 +10,6 @@ position: 2
 
 # Events
 
-
-
-## 
-
 The following events occur during the editing process:
 
 __EditorRequired__ – This is the first event that fires when a cell is to become editable (edit mode). 

@@ -1,0 +1,49 @@
+---
+title: Changing the Default Editors
+page_title: Changing the Default Editors | UI for WinForms Documentation
+description: Creating custom editors 
+slug: winforms/virtualgrid/cells/changing-default-editor
+tags: virtualgrid, custom, editor
+published: True
+position: 3
+---
+
+# Changing the Default Editors
+
+By default the grid is using the underlying field data type to determine the editor type. If you want to change the default editor you should use the __EditorReqired__ event. For example the following snippet shows how you can change the default text editor to VirtualGridDropDownListEditor.
+
+{{source=..\SamplesCS\VirtualGrid\Editing\EditorsProperties.cs region=ChangeEditor}} 
+{{source=..\SamplesVB\VirtualGrid\Editing\EditorsProperties.vb region=ChangeEditor}}
+````C#
+private void RadVirtualGrid1_EditorRequired(object sender, VirtualGridEditorRequiredEventArgs e)
+{
+    if (e.ColumnIndex == 1)
+    {
+        VirtualGridDropDownListEditor dropDownListEditor = new VirtualGridDropDownListEditor();
+        RadDropDownListEditorElement element = dropDownListEditor.EditorElement as RadDropDownListEditorElement;
+        element.DataSource = new string[] { "Mr.", "Mrs.", "Ms.", "Dr." };
+        e.Editor = dropDownListEditor;
+        
+        
+    }
+}
+
+````
+````VB.NET
+Private Sub RadVirtualGrid1_EditorRequired(ByVal sender As Object, ByVal e As VirtualGridEditorRequiredEventArgs)
+    If e.ColumnIndex = 1 Then
+        Dim dropDownListEditor As New VirtualGridDropDownListEditor()
+        Dim element As RadDropDownListEditorElement = TryCast(dropDownListEditor.EditorElement, RadDropDownListEditorElement)
+        element.DataSource = New String() {"Mr.", "Mrs.", "Ms.", "Dr."}
+        e.Editor = dropDownListEditor
+    End If
+End Sub
+
+````
+
+{{endregion}}
+
+# Custom Editors
+
+
+
