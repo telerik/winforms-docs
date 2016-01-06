@@ -10,7 +10,14 @@ position: 0
 
 # Populating with data
 
-__RadVirtualGrid__ is a control that allows you to display and edit tabular data from any kind of data source and large number of records. In order to fill the grid with data, you should follow the steps below:
+__RadVirtualGrid__ is a control that allows you to display and edit tabular data from any kind of data source and large number of records. By default, no data is displayed in the grid. You can control whether the *no data* message will be shown by using the __ShowNoDataText__ property:
+
+|ShowNoDataText = *true*|ShowNoDataText = *false*|
+|----|----|
+|![virtualgrid-populating-with-data002](images/virtualgrid-populating-with-data002.png)|![virtualgrid-populating-with-data003](images/virtualgrid-populating-with-data003.png)|
+ 
+
+In order to fill the grid with data, you should follow the steps below:
 
 1\. Handle the __CellValueNeeded__ event. You should specify the __Value__ argument in the __VirtualGridCellValueNeededEventArgs__. 
 

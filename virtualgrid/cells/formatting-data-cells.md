@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Formatting Cells
+# Formatting Data Cells
 
 The __CellFormatting__ event is used to add formatting to grid cells. For example, the code sample below changes the __ForeColor__, __BackColor__ and __GradientStyle__ in all data cells in the *ContactTitle* column if the cell value is *Owner*:
 

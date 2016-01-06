@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Formatting Rows
+# Formatting Data Rows
 
 Use the __RowFormatting__ event to apply custom formatting to RadVirtualGrid's data rows. The code snippet below demonstrates changing the __ForeColor__, __BackColor__ and __GradientStyle__ in all data rows where the cell value in the *ContactTitle* column is *Owner*:
 
