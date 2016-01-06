@@ -67,8 +67,9 @@ For the WinForms documentaion:
 
  1. Clone the repository `git clone git@github.com:telerik/winforms-docs.git`
  2. Run `bundle install` (you must have ruby and bundler installed beforehand)
- 3. Run `jekyll serve`
- 4. Open "http://localhost:4000/devtools/winforms" in your browser
+ 3. Run `bundle exec jekyll serve`
+ 4. Configure an [IIS server](https://github.com/telerik/winforms-docs/wiki/Deploying-Documentation-on-IIS)
+ 5. Open "http://localhost/devtools/winforms" in your browser
 
 ## License
 
