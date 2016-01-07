@@ -10,7 +10,7 @@ position: 2
 
 # Alternating Row Color
 
-__RadVirtualGrid__ supports alternating row color. It can be enable by simpy setting the __EnableAlternatingRowColor__ to *true*.
+__RadVirtualGrid__ supports an alternating row color. It can be enabled by simply setting the __EnableAlternatingRowColor__ to *true*.
 
 ![virtualgrid-rows-alternating-row-color001](images/virtualgrid-rows-alternating-row-color001.png)
 
