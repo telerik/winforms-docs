@@ -31,26 +31,28 @@ Me.RadVirtualGrid1.AllowRowResize = True
 
 The grid rows can be resized by end users simply by positioning the mouse over the horizontal grid line and dragging it to a desired size.
 
+>caption Fig.1 Mouse resizing<br>
 ![virtualgrid-rows-resizing-rows001](images/virtualgrid-rows-resizing-rows001.gif)
 
 ## Resizing System Rows
 
-The __VirtualGridTableElement__ object exposes properties for directly accessing its system rows and setting a desired height.
+The __VirtualGridViewInfo__ object exposes properties for directly accessing its system rows and setting a desired height.
 
-![virtualgrid-rows-resizing-rows001](images/virtualgrid-rows-resizing-rows002.png)
+>caption Fig.2 Resizing System Rows<br>
+![virtualgrid-rows-resizing-rows002](images/virtualgrid-rows-resizing-rows002.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=ResizingSystemRows}} 
 {{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=ResizingSystemRows}}
 ````C#
-this.radVirtualGrid1.TableElement.HeaderRowHeight = 30;
-this.radVirtualGrid1.TableElement.NewRowHeight = 40;
-this.radVirtualGrid1.TableElement.FilterRowHeight = 50;
+this.radVirtualGrid1.MasterViewInfo.HeaderRowHeight = 30;
+this.radVirtualGrid1.MasterViewInfo.NewRowHeight = 40;
+this.radVirtualGrid1.MasterViewInfo.FilterRowHeight = 50;
 
 ````
 ````VB.NET
-Me.RadVirtualGrid1.TableElement.HeaderRowHeight = 30
-Me.RadVirtualGrid1.TableElement.NewRowHeight = 40
-Me.radVirtualGrid1.TableElement.FilterRowHeight = 50
+Me.RadVirtualGrid1.MasterViewInfo.HeaderRowHeight = 30
+Me.RadVirtualGrid1.MasterViewInfo.NewRowHeight = 40
+Me.radVirtualGrid1.MasterViewInfo.FilterRowHeight = 50
 
 ```` 
 
@@ -60,18 +62,19 @@ Me.radVirtualGrid1.TableElement.FilterRowHeight = 50
 
 ## Resizing Data Rows
 
-The data rows can also be programatically resized. __VirtualGridTableElement__ provides a property for setting a uniform height to all rows and also a method for defining the height of a single row.
+The data rows can also be programmatically resized. __RadVirtualGrid.VirtualGridViewInfo__ provides a property for defining a uniform height to all rows and also methods for setting or retrieving the height of a single row.
 
-![virtualgrid-rows-resizing-rows001](images/virtualgrid-rows-resizing-rows003.png)
+>caption Fig.3 Resizing All Data Rows<br>
+![virtualgrid-rows-resizing-rows003](images/virtualgrid-rows-resizing-rows003.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=ResizingDataRows}} 
 {{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=ResizingDataRows}}
 ````C#
-this.radVirtualGrid1.TableElement.RowHeight = 60;
+this.radVirtualGrid1.MasterViewInfo.RowHeight = 60;
 
 ````
 ````VB.NET
-Me.radVirtualGrid1.TableElement.RowHeight = 60
+Me.radVirtualGrid1.MasterViewInfo.RowHeight = 60
 
 ```` 
 
@@ -79,16 +82,19 @@ Me.radVirtualGrid1.TableElement.RowHeight = 60
 
 {{endregion}}
 
-![virtualgrid-rows-resizing-rows001](images/virtualgrid-rows-resizing-rows004.png)
+>caption Fig.4 Resizing A Single Data Rows<br>
+![virtualgrid-rows-resizing-rows004](images/virtualgrid-rows-resizing-rows004.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=SetRowHeight}} 
 {{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=SetRowHeight}}
 ````C#
 this.radVirtualGrid1.MasterViewInfo.SetRowHeight(0, 40);
+int rowHeight = this.radVirtualGrid1.MasterViewInfo.GetRowHeight(0);
 
 ````
 ````VB.NET
 Me.RadVirtualGrid1.MasterViewInfo.SetRowHeight(0, 40)
+Dim rowHeight As Integer = Me.RadVirtualGrid1.MasterViewInfo.GetRowHeight(0)
 
 ```` 
 
