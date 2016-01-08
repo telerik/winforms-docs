@@ -2,7 +2,7 @@
 title: Alternating Row Color
 page_title: Alternating Row Color | UI for WinForms Documentation
 description: Alternating Row Color
-slug: winforms/virtualgrid/rows/formatting-system-rows
+slug: winforms/virtualgrid/rows/alternating-row-colors
 tags: virtualgrid, rows, alternating, color
 published: True
 position: 2
@@ -18,7 +18,6 @@ __RadVirtualGrid__ supports an alternating row color. It can be enabled by simpl
 {{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridRowsAlternatingRownColor.vb region=Settings}} 
 
 ````C#
-this.radVirtualGrid1.CellValueNeeded += radVirtualGrid1_CellValueNeeded;
 this.radVirtualGrid1.EnableAlternatingRowColor = true;
 this.radVirtualGrid1.TableElement.AlternatingRowColor = Color.LightBlue;
 
