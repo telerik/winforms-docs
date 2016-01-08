@@ -323,3 +323,5 @@ End Class
 ```` 
 
 {{endregion}}
+
+>note It is neccessary to specify the __FieldName__ property for the filter cells.
