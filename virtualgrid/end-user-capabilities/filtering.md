@@ -5,7 +5,7 @@ description: Filtering
 slug: winforms/virtualgrid/end-user-capabilities/filtering
 tags: filtering
 published: True
-position: 5
+position: 3
 ---
 
 # Filtering

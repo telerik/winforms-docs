@@ -60,7 +60,7 @@ Me.RadVirtualGrid1.TableElement.ColumnsViewState.SetItemSize(0, 200)
 
 Columns can be auto-sized by calling the to a best fit value. The available API exposes methods for best-fitting all columns or just a single one:
 
->caption Fig.1 Best Fit All Columns<br>
+>caption Fig.2 Best Fit All Columns<br>
 ![virtualgrid-columns-resizing-columns002](images/virtualgrid-columns-resizing-columns002.png)
 
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=BestFitAllColumns}} 

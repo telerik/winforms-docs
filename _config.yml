@@ -872,6 +872,9 @@ navigation:
     virtualgrid/handling-user-input:
         title: Handling User Input
         position: 18
+    virtualgrid/end-user-capabilities:
+        title: End User Capabilities
+        position: 19
     wizard:
         title: Wizard
         position: 50

@@ -1,14 +1,14 @@
 ---
-title: Resizing Rows
-page_title: Resizing Rows | UI for WinForms Documentation
-description: Resizinng Rows
-slug: winforms/virtualgrid/rows/resizing-rows
+title: Resizing Rows Programmatically
+page_title: Resizing Rows Programmatically| UI for WinForms Documentation
+description: Resizinng Rows Programmatically
+slug: winforms/virtualgrid/rows/resizing-rows-programmatically
 tags: virtualgrid, rows, resizing
 published: True
 position: 3
 ---
 
-# Resizing Rows
+# Resizing Rows Programmatically
 
 __RadVirtualGrid__ exposes an API allowing resizing of its rows. In order to utilize it we need to set the __AllowRowResize__ property to *true*.
 
@@ -27,18 +27,11 @@ Me.RadVirtualGrid1.AllowRowResize = True
 
 {{endregion}}
 
-## End User Functionality
-
-The grid rows can be resized by end users simply by positioning the mouse over the horizontal grid line and dragging it to a desired size.
-
->caption Fig.1 Mouse resizing<br>
-![virtualgrid-rows-resizing-rows001](images/virtualgrid-rows-resizing-rows001.gif)
-
 ## Resizing System Rows
 
 The __VirtualGridViewInfo__ object exposes properties for directly accessing its system rows and setting a desired height.
 
->caption Fig.2 Resizing System Rows<br>
+>caption Fig.1 Resizing System Rows<br>
 ![virtualgrid-rows-resizing-rows002](images/virtualgrid-rows-resizing-rows002.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=ResizingSystemRows}} 
@@ -64,7 +57,7 @@ Me.radVirtualGrid1.MasterViewInfo.FilterRowHeight = 50
 
 The data rows can also be programmatically resized. __RadVirtualGrid.VirtualGridViewInfo__ provides a property for defining a uniform height to all rows and also methods for setting or retrieving the height of a single row.
 
->caption Fig.3 Resizing All Data Rows<br>
+>caption Fig.2 Resizing All Data Rows<br>
 ![virtualgrid-rows-resizing-rows003](images/virtualgrid-rows-resizing-rows003.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=ResizingDataRows}} 
@@ -82,7 +75,7 @@ Me.radVirtualGrid1.MasterViewInfo.RowHeight = 60
 
 {{endregion}}
 
->caption Fig.4 Resizing A Single Data Rows<br>
+>caption Fig.3 Resizing A Single Data Row<br>
 ![virtualgrid-rows-resizing-rows004](images/virtualgrid-rows-resizing-rows004.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=SetRowHeight}} 

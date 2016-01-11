@@ -28,6 +28,6 @@ __RadVirtualGrid__ and its master view info expose properties defining whether o
 * __RadVirtualGrid1.MasterViewInfo.ShowFilterRow__
 
 
-The system rows can be resized to a particular height: [Resizing Rows]({%slug winforms/virtualgrid/rows/resizing-rows%}).
+The system rows can be resized to a particular height: [Resizing Rows Programmatiacally]({%slug winforms/virtualgrid/rows/resizing-rows-programmatically%}).
 
 
