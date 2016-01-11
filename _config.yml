@@ -833,15 +833,48 @@ navigation:
     virtualgrid:
         title: VirtualGrid
         position: 49
+    virtualgrid/fundamentals:
+        title: Fundamentals
+        position: 3
     virtualgrid/working-with-data:
         title: Working with Data
         position: 4
+    virtualgrid/columns:
+        title: Columns
+        position: 5
     virtualgrid/rows:
         title: Rows
         position: 6
     virtualgrid/cells:
         title: Cells
         position: 7
+    virtualgrid/editing:
+        title: Editing
+        position: 8
+    virtualgrid/context-menu:
+        title: Context Menu
+        position: 11
+    virtualgrid/selection:
+        title: Selection
+        position: 12
+    virtualgrid/sorting:
+        title: Sorting
+        position: 13	
+    virtualgrid/filtering:
+        title: Filtering
+        position: 14
+    virtualgrid/paging:
+        title: Paging
+        position: 15
+    virtualgrid/filtering:
+        title: Filtering
+        position: 16
+    virtualgrid/hierarchical-virtual-grid:
+        title: Hierarchical Virtual Grid
+        position: 18
+    virtualgrid/handling-user-input:
+        title: Handling User Input
+        position: 19
     wizard:
         title: Wizard
         position: 50

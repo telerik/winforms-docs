@@ -5,7 +5,7 @@ description: Busy Indicators
 slug: winforms/virtualgrid/busy-indicators
 tags: virtualgrid, busy, indicators
 published: True
-position: 9
+position: 10
 ---
 
 # Busy Indicators
