@@ -10,9 +10,6 @@ position: 1
 
 # API
 
-
-## 
-
 The editing process can be controlled by using the following methods:
 
 __BeginEdit__ – Puts the current cell in edit mode.

@@ -833,6 +833,15 @@ navigation:
     virtualgrid:
         title: VirtualGrid
         position: 49
+    virtualgrid/working-with-data:
+        title: Working with Data
+        position: 4
+    virtualgrid/rows:
+        title: Rows
+        position: 6
+    virtualgrid/cells:
+        title: Cells
+        position: 7
     wizard:
         title: Wizard
         position: 50
