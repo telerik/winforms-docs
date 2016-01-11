@@ -5,7 +5,7 @@ description: Formatting Data Cells
 slug: winforms/virtualgrid/copy-paste-cut
 tags: virtualgrid, copy, paste, cut
 published: True
-position: 8
+position: 9
 ---
 
 # Copy/Paste/Cut

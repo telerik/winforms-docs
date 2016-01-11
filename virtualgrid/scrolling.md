@@ -5,7 +5,7 @@ description: VirtualGrid
 slug: winforms/virtualgrid/scrolling
 tags: virtualgrid, scrolling
 published: True
-position: 14
+position: 15
 ---
 
 # Scrolling
@@ -18,7 +18,7 @@ __RadVirtualGrid__ allows three types of scroll modes:
        
 * __Deferred__: Does not cause GUI updates until the user finishes the scrolling operation.
 
->caption Fig.1 Smmooth Scrolling<br>
+>caption Fig.1 Smooth Scrolling<br>
 ![virtualgrid-overview 001](images/virtualgrid-scrolling001.gif)
 
 
