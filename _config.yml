@@ -851,30 +851,27 @@ navigation:
     virtualgrid/editing:
         title: Editing
         position: 8
-    virtualgrid/context-menu:
-        title: Context Menu
+    virtualgrid/sorting:
+        title: Sorting
+        position: 9	
+    virtualgrid/filtering:
+        title: Filtering
+        position: 10
+    virtualgrid/paging:
+        title: Paging
         position: 11
     virtualgrid/selection:
         title: Selection
         position: 12
-    virtualgrid/sorting:
-        title: Sorting
-        position: 13	
-    virtualgrid/filtering:
-        title: Filtering
-        position: 14
-    virtualgrid/paging:
-        title: Paging
-        position: 15
-    virtualgrid/filtering:
-        title: Filtering
-        position: 16
+    virtualgrid/context-menu:
+        title: Context Menu
+        position: 13
     virtualgrid/hierarchical-virtual-grid:
         title: Hierarchical Virtual Grid
-        position: 18
+        position: 14
     virtualgrid/handling-user-input:
         title: Handling User Input
-        position: 19
+        position: 18
     wizard:
         title: Wizard
         position: 50

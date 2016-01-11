@@ -5,7 +5,7 @@ description: VirtualGrid
 slug: winforms/virtualgrid/scrolling
 tags: virtualgrid, scrolling
 published: True
-position: 15
+position: 17
 ---
 
 # Scrolling
