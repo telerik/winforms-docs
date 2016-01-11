@@ -106,7 +106,7 @@ Dim rowHeight As Integer = Me.RadVirtualGrid1.MasterViewInfo.GetRowHeight(0)
 
 The API exposes two events for notifications when a change in the height of a row is about to happen or has already happened.
 
-* __RowHeightChanging__: Raised before the operation starts, it can be canceled. The event arguments:
+* __RowHeightChanging__: Raised before the operation starts, it can be canceled. The event arguments are:
 
  * __Cancel__: If set to *true* suspends the operation.
 
@@ -118,7 +118,7 @@ The API exposes two events for notifications when a change in the height of a ro
   
  * __ViewInfo__: Reference to the __VirtualGridViewInfo__ object.
 
-* __RowHeightChanged__: Raised after the execution of the resizing operation. The event arguments:
+* __RowHeightChanged__: Raised after the execution of the resizing operation. The event arguments are:
 
  * __RowIndex__: The index of the resized row.
   
