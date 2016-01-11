@@ -11,7 +11,7 @@ position: 3
 
 # Pinned Rows
 
-__RadVirtualGrid__ rows can be pinned so that the rows appear anchored to the top or bottom of the grid. To pin a row you should use the __SetRowPinPosition__ where you just need to pass the row index and the desired pin position.
+__RadVirtualGrid__ rows can be pinned so that the rows appear anchored to the top or bottom of the grid. To pin a row you should use the __SetRowPinPosition__ method where you just need to pass the row index and the desired pin position.
 
 {{source=..\SamplesCS\VirtualGrid\pinned-cells-rows.cs region=PinRow}} 
 {{source=..\SamplesVB\VirtualGrid\pinned-cells-rows.vb region=PinRow}}

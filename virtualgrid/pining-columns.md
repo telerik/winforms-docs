@@ -11,7 +11,7 @@ position: 10
 
 # Pinned Columns
 
-__RadVirtualGrid__ columns can be pinned so that the rows appear anchored to the left or or right of the grid. To pin a column you should use the __SetColumnPinPosition__ method where you just need to pass the column index and the desired pin position.
+__RadVirtualGrid__ columns can be pinned so that the rows appear anchored to the left or right of the grid. To pin a column you should use the __SetColumnPinPosition__ method where you just need to pass the column index and the desired pin position.
 
 {{source=..\SamplesCS\VirtualGrid\pinned-cells-rows.cs region=PinColumn}} 
 {{source=..\SamplesVB\VirtualGrid\pinned-cells-rows.vb region=PinColumn}}
@@ -28,7 +28,7 @@ radVirtualGrid1.VirtualGridElement.SetColumnPinPosition(2, PinnedColumnPosition.
 {{endregion}}
 
 
-The result is that the columns is pined bellow to the right.
+The result is that the column is pined to the right.
 
 ![virtualgrid-pinned-columns001](images/virtualgrid-pinned-columns001.png)
 

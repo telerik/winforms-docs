@@ -12,19 +12,19 @@ position: 1
 
 The editing process can be controlled by using the following properties and methods of __VirtualGridElement__:
 
-* __BeginEdit__ – Puts the current cell in edit mode.
+* __BeginEdit:__ Puts the current cell in edit mode.
 
-* __EndEdit__ – Ends the edit operation on the current cell and commits any changes in the underlying data source.
+* __EndEdit:__ Ends the edit operation on the current cell and commits any changes in the underlying data source.
 
-* __CloseEditor__ – Ends the edit operation on the current cell without committing the changes in the underlying data source.
+* __CloseEditor:__ Ends the edit operation on the current cell without committing the changes in the underlying data source.
 
-* __CancelEdit__ – Closes the currently active editor and discards all changes.
+* __CancelEdit:__ Closes the currently active editor and discards all changes.
 
-* __ActiveEditor__ returns reference to the currently active editor. 
+* __ActiveEditor:__ returns reference to the currently active editor. 
 
-* __IsInEditMode__ indicates whether the grid is in edit mode.
+* __IsInEditMode:__ indicates whether the grid is in edit mode.
 
-* __BeginEditMode__ indicates how one can start the edit operation. The possible values are:
+* __BeginEditMode:__ indicates how one can start the edit operation. The possible values are:
     - __BeginEditOnEnter__
     - __BeginEditOnF2__
     - __BeginEditOnKeystroke__

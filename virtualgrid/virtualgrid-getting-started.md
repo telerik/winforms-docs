@@ -10,11 +10,11 @@ position: 1
 
 # Getting Started
 
-The example bellow demostrates how one can use __RadVirtualGrid__ with a list which contains large amount of data. The example shows how you can use the control events to add or remove rows as well.
+The example bellow demonstrates how one can use __RadVirtualGrid__ with a list which contains large amount of data. The example shows how you can use the control events to add or remove rows as well.
 
 ![virtualgrid-getting-started001](images/virtualgrid-getting-started001.png)
 
->note In order to use __RadVirtualGrid__ you should add reference to the Telerik.WinControls.GridView assmbly.
+>note In order to use __RadVirtualGrid__ you should add reference to the Telerik.WinControls.GridView assembly.
 >
 
 ### Setting the form and adding data 
@@ -79,7 +79,7 @@ End Class
 
 {{endregion}}
 
-3\. Now you can create the list of objects which will be used as data source. In additon you can creaate a array with the column names.
+3\. Now you can create the list of objects which will be used as data source. In addition you can create an array that contains the column names.
 
 {{source=..\SamplesCS\VirtualGrid\VirtualGridGettingStarted.cs region=CreateData}} 
 {{source=..\SamplesVB\VirtualGrid\VirtualGridGettingStarted.vb region=CreateData}}
@@ -128,7 +128,7 @@ End Sub
 
 ### Using the virtual grid
 
-1\. Tou use the grid you should firs specify the the count of columns and rows. In addition you should subscribe to the __CellValueNeeded__ and __CellValuePushed__ events which are used for populating the grid with data and updating the data source when a value in the grid is changed:
+1\. To use the grid you should first specify the the count of columns and rows. In addition, you should subscribe to the __CellValueNeeded__ and __CellValuePushed__ events which are used for populating the grid with data and updating the data source when a values are changed:
 
 {{source=..\SamplesCS\VirtualGrid\VirtualGridGettingStarted.cs region=InitGrid}} 
 {{source=..\SamplesVB\VirtualGrid\VirtualGridGettingStarted.vb region=InitGrid}}
@@ -150,7 +150,7 @@ radVirtualGrid1.RowCount = data.Count
 
 {{endregion}}
 
-2\. Now you can add the event the __CellValueNeeded__ event handler. In it we will pass retrive the cell value and pass it to the grid acording to the curent row index. The event is fired for the header row so you can set the header cells text as well.
+2\. Now you can add the event the __CellValueNeeded__ event handler. In it we will pass retrieve the cell value and pass it to the grid according to the current row index. The event is fired for the header row so you can set the header cells text as well.
 
 {{source=..\SamplesCS\VirtualGrid\VirtualGridGettingStarted.cs region=SetValue}} 
 {{source=..\SamplesVB\VirtualGrid\VirtualGridGettingStarted.vb region=SetValue}}
@@ -281,3 +281,4 @@ End Sub
 ```` 
 
 {{endregion}}
+

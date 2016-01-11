@@ -10,7 +10,7 @@ position: 3
 
 # Changing the Default Editors
 
-By default the grid is using the underlying field data type to determine the editor type. If you want to change the default editor you should use the __EditorReqired__ event. For example the following snippet shows how you can change the default text editor to VirtualGridDropDownListEditor.
+By default the grid is using the underlying field data type to determine the editor type. If you want to change the default editor you should use the __EditorReqired__ event. For example the following snippet shows how you can change the default text editor to __VirtualGridDropDownListEditor__.
 
 {{source=..\SamplesCS\VirtualGrid\Editing\EditorsProperties.cs region=ChangeEditor}} 
 {{source=..\SamplesVB\VirtualGrid\Editing\EditorsProperties.vb region=ChangeEditor}}
@@ -42,8 +42,5 @@ End Sub
 ````
 
 {{endregion}}
-
-# Custom Editors
-
 
 

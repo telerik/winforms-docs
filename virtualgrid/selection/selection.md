@@ -51,7 +51,7 @@ The following events will fire in case the selection is changed:
 
 ## API
 
-Using the __Selection__ property of the VirtualGridElement you can perform various selection operations. Here are the most common methods which this property exposes:
+Using the __Selection__ property of the __VirtualGridElement__ you can perform various selection operations. Here are the most common methods which this property exposes:
 * __ClearSelection:__ clears all selected items.
 * __IsSelected:__ you can use the this method to check if particular cell is selected.
 * __RowContainsSelection:__ use this method to check if a particular row contains the selected cell.

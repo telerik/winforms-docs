@@ -12,7 +12,7 @@ position: 2
 
 ## Single Cell Select
 
-You can use the following method to select a cell in code:
+You can use the following method to select a cell in the code:
 
 {{source=..\SamplesCS\VirtualGrid\VirtualGridSelection.cs region=changeCurentCell}} 
 {{source=..\SamplesVB\VirtualGrid\VirtualGridSelection.vb region=changeCurentCell}}

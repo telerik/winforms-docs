@@ -23,4 +23,5 @@ Here are some of the currently supported key features:
 * Sorting
 * Filtering
 * Paging
+* Editing
 

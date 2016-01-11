@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Accessing the editors and changing their properties.
+# Accessing the Editors and Changing their Properties.
 
 Since the editors are created each time when the user stars edit operation, they can by accessed in the __CellEditorInitialized__ event. The following example shows how you can access some of the editors and change their properties.
 

@@ -22,4 +22,7 @@ __RadVirtualGrid__ uses the [Telerik Presentation Framework]({%slug winforms/tel
 
 * __VirtualGridCellElement__ is the base visual element for presenting cells. It references __VirtaulGridRowElement__ objects.
 
-* __Scrollbar Elements__ – instead of using the build-in WinForms mechanism for scrolling, __RadVirtualGrid__ uses elements and implements custom logic. Scrollbar elements are accessible using the HScrollBar and VScrollBar properties of __TableElement__. When using hierarchy, you can choose between a single scrollbar and dedicated scrollbar elements in every child view. To do this, set the __UseScrollbarsInHierarchy__ property to *true*.
+* __Scrollbar Elements__ – instead of using the build-in WinForms mechanism for scrolling, __RadVirtualGrid__ uses elements and implements custom logic. Scrollbar elements are accessible using the __HScrollBar__ and __VScrollBar__ properties of __TableElement__. When using hierarchy, you can choose between a single scrollbar and dedicated scrollbar elements in every child view. To do this, set the __UseScrollbarsInHierarchy__ property to *true*.
+
+
+
