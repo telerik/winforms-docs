@@ -875,6 +875,9 @@ navigation:
     virtualgrid/end-user-capabilities:
         title: End User Capabilities
         position: 19
+    virtualgrid/localization:
+        title: Localization
+        position: 20
     wizard:
         title: Wizard
         position: 50
