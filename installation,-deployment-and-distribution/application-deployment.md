@@ -491,4 +491,5 @@ Telerik.WinControls.Themes.Windows8.dll</td></tr>
 <tr><td>RadLayoutControl</td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td>RadPopupEditor</td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td>RadDataLayout</td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td>RadVirtualGrid</td><td>Telerik.WinControls.GridView.dll</td></tr>
 </table>
