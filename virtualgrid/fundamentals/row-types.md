@@ -14,9 +14,9 @@ position: 3
 
 __RadVirtualGrid__ contains the following system rows:
 
-* __HeaderRow:__ shows the columns headers where one ca put the columns text. The __ShowHeaderRow__ property controls the visibility of this row. 
+* __HeaderRow:__ shows the columns headers where one can put the columns text. The __ShowHeaderRow__ property controls the visibility of this row. 
 
-* __FilteringRow__ this row will appear when the filtering is enabled. It allows the user to type a filler value and choose between different filter types. The row can be accessed in the [RowFormatting event]({%slug winforms/virtualgrid/rows/formatting-system-rows%}).   
+* __FilteringRow__ this row will appear when the filtering is enabled. It allows the user to type a filler value and choose between different filter types. The row can be accessed in the [RowFormatting]({%slug winforms/virtualgrid/rows/formatting-system-rows%}) event.   
 
 * __NewRow:__ this row allows the user to add new data rows. The __AllowAddNewRow__ property controls this row visibility.
 
@@ -30,5 +30,5 @@ __RadVirtualGrid__ is getting the data rows only when this is needed, when the g
 The following list shows the most commonly used row properties and methods:
 
 * __TableElement.RowHeight:__ You can set the default row height by setting the property.
-* __AllowRowResize__  You can allow the end user to resize rows by setting this property to *true*.
-* __TableElement.SetRowHeight__ this method allows you to set the height of a specific row in he code behind.
+* __AllowRowResize:__  You can allow the end user to resize rows by setting this property to *true*.
+* __TableElement.SetRowHeight:__ this method allows you to set the height of a specific row in he code behind.

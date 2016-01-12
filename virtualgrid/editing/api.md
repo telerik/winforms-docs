@@ -16,8 +16,6 @@ The editing process can be controlled by using the following properties and meth
 
 * __EndEdit:__ Ends the edit operation on the current cell and commits any changes in the underlying data source.
 
-* __CloseEditor:__ Ends the edit operation on the current cell without committing the changes in the underlying data source.
-
 * __CancelEdit:__ Closes the currently active editor and discards all changes.
 
 * __ActiveEditor:__ returns reference to the currently active editor. 

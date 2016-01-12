@@ -10,7 +10,7 @@ position: 1
 
 # Formatting System Rows
 
-The __RowFormatting__ event is used to add formatting to grid systems rows: header row, filter row and new row. Depending on the __RowIndex__, you can distinguish the system row:
+The __RowFormatting__ event is used to add formatting to grid systems rows: header row, filter row and new row. Depending on the __RowIndex__, you can distinguish the system rows:
 
 |RowIndex|VirtualGridRowElement|
 |----|----|

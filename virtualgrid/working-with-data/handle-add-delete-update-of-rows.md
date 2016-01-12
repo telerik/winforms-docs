@@ -14,7 +14,7 @@ When the user adds new rows, updates or deletes the existing ones, the external 
 
 1\. Handle the __CellValuePushed__ event in order to detect when a cell value is changed. 
 
-#### Push value to data source
+#### Push value to the data source
 
 {{source=..\SamplesCS\VirtualGrid\PushValue.cs region=FillData}} 
 {{source=..\SamplesVB\VirtualGrid\PushValue.vb region=FillData}} 

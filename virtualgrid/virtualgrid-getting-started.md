@@ -14,7 +14,7 @@ The example bellow demonstrates how one can use __RadVirtualGrid__ with a list w
 
 ![virtualgrid-getting-started001](images/virtualgrid-getting-started001.png)
 
->note In order to use __RadVirtualGrid__ you should add reference to the Telerik.WinControls.GridView assembly.
+>note In order to use __RadVirtualGrid__ you should add reference to the __Telerik.WinControls.GridView__ assembly.
 >
 
 ### Setting the form and adding data 
@@ -128,7 +128,7 @@ End Sub
 
 ### Using the virtual grid
 
-1\. To use the grid you should first specify the the count of columns and rows. In addition, you should subscribe to the __CellValueNeeded__ and __CellValuePushed__ events which are used for populating the grid with data and updating the data source when a values are changed:
+1\. To use the grid you should first specify the the count of columns and rows. In addition, you should subscribe to the __CellValueNeeded__ and __CellValuePushed__ events which are used for populating the grid with data and updating the data source when values are changed:
 
 {{source=..\SamplesCS\VirtualGrid\VirtualGridGettingStarted.cs region=InitGrid}} 
 {{source=..\SamplesVB\VirtualGrid\VirtualGridGettingStarted.vb region=InitGrid}}
@@ -150,7 +150,7 @@ radVirtualGrid1.RowCount = data.Count
 
 {{endregion}}
 
-2\. Now you can add the event the __CellValueNeeded__ event handler. In it we will pass retrieve the cell value and pass it to the grid according to the current row index. The event is fired for the header row so you can set the header cells text as well.
+2\. Now you can add the __CellValueNeeded__ event handler. In it we will retrieve the cell value and pass it to the grid according to the current row/column index. The event is fired for the header row so you can set the header cells text as well.
 
 {{source=..\SamplesCS\VirtualGrid\VirtualGridGettingStarted.cs region=SetValue}} 
 {{source=..\SamplesVB\VirtualGrid\VirtualGridGettingStarted.vb region=SetValue}}

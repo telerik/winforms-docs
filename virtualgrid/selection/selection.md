@@ -15,7 +15,7 @@ RadVirtualGrid provides you with a selection functionality, which allows the use
 
 ## Row Selection 
 
-To select an item in __RadVirtualGrid__ click in the rectangle area of the desired row. By default the the user can select only one row (the entire row is selected). 
+To select an item in __RadVirtualGrid__ click in the rectangle area of the desired row. By default the user can select only one row (the entire row is selected). 
 
 ![virtualgrid-selection001](images/virtualgrid-selection001.png)
 

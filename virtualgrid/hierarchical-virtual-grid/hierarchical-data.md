@@ -22,7 +22,7 @@ In order to fill the grid with hierarchical data, you should follow the steps be
 
 2\. You will also need to set the __RowCount__ and __ColumnCount__ properties so that the grid will know how many rows/columns it needs to display.
 
-3\. Handle the __QueryHasChildRows__ event which is fired for each row displayed in the associated __VirtualGridViewInfo__ . Set the VirtualGridQueryHasChildRowsEventArgs.__HasChildRows__ property to *true* to indicate that the row has child rows.
+3\. Handle the __QueryHasChildRows__ event which is fired for each row displayed in the associated __VirtualGridViewInfo__. Set the VirtualGridQueryHasChildRowsEventArgs.__HasChildRows__ property to *true* to indicate that the row has child rows.
 
 4\. Subscribe to the __RowExpanding__ event in order to specify the __ColumnCount__ and __RowCount__ properties of the __ChildViewInfo__.
 

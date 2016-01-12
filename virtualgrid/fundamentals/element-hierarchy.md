@@ -16,7 +16,7 @@ __RadVirtualGrid__ uses the [Telerik Presentation Framework]({%slug winforms/tel
 
 * __VirtualGridElement__ is the root element in grid hierarchy. It contains all other grid elements.
 
-* __VirtualGridTableElement__ this element contains all visual rows shown in the grid. If the hierarchical grid is used each child view has it own table element. The element can be accessed via the __TableElement__ property and exposes useful row/cell properties.
+* __VirtualGridTableElement__ contains all visual rows shown in the grid. If the hierarchical grid is used each child view has it own table element. The element can be accessed via the __TableElement__ property and exposes useful row/cell properties.
 
 * __VirtaulGridRowElement__ is the base visual element for presenting rows. It contains three different layouts enabling presenting frozen columns.
 

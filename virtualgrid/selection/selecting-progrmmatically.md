@@ -17,15 +17,13 @@ You can use the following method to select a cell in the code:
 {{source=..\SamplesCS\VirtualGrid\VirtualGridSelection.cs region=changeCurentCell}} 
 {{source=..\SamplesVB\VirtualGrid\VirtualGridSelection.vb region=changeCurentCell}}
 ````C#
-radVirtualGrid1.VirtualGridElement.Selection.BeginSelection(3, 1, radVirtualGrid1.MasterViewInfo, true);
-radVirtualGrid1.VirtualGridElement.Selection.ExtendCurrentRegion(6, 3);
+this.radVirtualGrid1.SelectCell(5, 2);
 
 ````
 ````VB.NET
-radVirtualGrid1.VirtualGridElement.Selection.BeginSelection(3, 1, radVirtualGrid1.MasterViewInfo, True)
-radVirtualGrid1.VirtualGridElement.Selection.ExtendCurrentRegion(6, 3)
+Me.radVirtualGrid1.SelectCell(5, 2)
 
-```` 
+````
 
 {{endregion}}
 
@@ -45,7 +43,7 @@ radVirtualGrid1.VirtualGridElement.Selection.ExtendCurrentRegion(6, 3);
 radVirtualGrid1.VirtualGridElement.Selection.BeginSelection(3, 1, radVirtualGrid1.MasterViewInfo, True)
 radVirtualGrid1.VirtualGridElement.Selection.ExtendCurrentRegion(6, 3)
 
-```` 
+````
 
 {{endregion}}
 
