@@ -96,4 +96,4 @@ Me.RadVirtualGrid1.VirtualGridElement.InputBehavior = New CustomVirtualGridInput
 
 {{endregion}}
 
->note You can follow a similar approach to customize any of the methods that handles the mouse and keyboard user input.
+>note You can follow a similar approach to customize any of the methods that handle the mouse and keyboard user input.
