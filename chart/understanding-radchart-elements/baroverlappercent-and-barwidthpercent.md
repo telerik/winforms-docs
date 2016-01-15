@@ -1,20 +1,20 @@
 ---
-title: BarOverLapPercent and BarWidthPercent
-page_title: BarOverLapPercent and BarWidthPercent | UI for WinForms Documentation
-description: BarOverLapPercent and BarWidthPercent
+title: BarOverlapPercent and BarWidthPercent
+page_title: BarOverlapPercent and BarWidthPercent | UI for WinForms Documentation
+description: BarOverlapPercent and BarWidthPercent
 slug: winforms/chart/understanding-radchart-elements/baroverlappercent-and-barwidthpercent
 tags: baroverlappercent,and,barwidthpercent
 published: True
 position: 13
 ---
 
-# BarOverLapPercent and BarWidthPercent
+# BarOverlapPercent and BarWidthPercent
 
 
 
 ## 
 
-In bar charts with multiple series __BarOverLapPercent__ governs to what degree the bars will overlap the preceding bar series. If you enter a negative value for __BarOverLapPercent__ , a gap appears between the bars of different series. Overlapping is especially useful when a long series of items needs to fit in a small-size chart. 
+In bar charts with multiple series __BarOverlapPercent__ governs to what degree the bars will overlap the preceding bar series. If you enter a negative value for __BarOverlapPercent__ , a gap appears between the bars of different series. Overlapping is especially useful when a long series of items needs to fit in a small-size chart. 
 
 __BarWidthPercent__ controls how much space each bar takes up so that a __BarWidthPercent__ of 100 will have all the bars in the chart taking exactly all the available width. 
 
