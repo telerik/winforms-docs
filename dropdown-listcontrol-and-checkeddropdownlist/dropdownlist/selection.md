@@ -2,7 +2,7 @@
 title: Selection
 page_title: Selection | UI for WinForms Documentation
 description: Selection
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/selection
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/selection
 tags: selection
 published: True
 position: 16

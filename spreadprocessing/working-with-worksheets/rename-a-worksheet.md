@@ -2,7 +2,7 @@
 title: Rename a Worksheet
 page_title: Rename a Worksheet | UI for WinForms Documentation
 description: Rename a Worksheet
-slug: winforms/spread-processing/working-with-worksheets/rename-a-worksheet
+slug: winforms/spreadprocessing/working-with-worksheets/rename-a-worksheet
 tags: rename,a,worksheet
 published: True
 position: 3

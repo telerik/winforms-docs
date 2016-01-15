@@ -2,7 +2,7 @@
 title: Auto-complete
 page_title: Auto-complete | UI for WinForms Documentation
 description: Auto-complete
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/auto-complete
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/auto-complete
 tags: auto-complete
 published: True
 position: 6

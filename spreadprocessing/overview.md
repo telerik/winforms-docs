@@ -2,7 +2,7 @@
 title: Overview
 page_title: Spread Processing | UI for WinForms Documentation
 description: Spread Processing
-slug: winforms/spread-processing
+slug: winforms/spreadprocessing
 tags: spread,processing
 published: True
 position: 0

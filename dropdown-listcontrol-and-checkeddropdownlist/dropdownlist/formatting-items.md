@@ -2,7 +2,7 @@
 title: Formatting Items
 page_title: Formatting Items | UI for WinForms Documentation
 description: Formatting Items
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/formatting-items
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/formatting-items
 tags: formatting,items
 published: True
 position: 9

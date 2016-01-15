@@ -2,7 +2,7 @@
 title: History
 page_title: History | UI for WinForms Documentation
 description: History
-slug: winforms/spread-processing/features/history
+slug: winforms/spreadprocessing/features/history
 tags: history
 published: True
 position: 7

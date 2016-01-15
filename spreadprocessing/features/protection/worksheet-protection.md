@@ -2,7 +2,7 @@
 title: Worksheet Protection
 page_title: Worksheet Protection | UI for WinForms Documentation
 description: Worksheet Protection
-slug: winforms/spread-processing/features/protection/worksheet-protection
+slug: winforms/spreadprocessing/features/protection/worksheet-protection
 tags: worksheet,protection
 published: True
 position: 1
@@ -120,6 +120,6 @@ The __WorksheetProtectionOptions__ class exposes the following options:
 
 # See Also
 
- * [What is a Worksheet?]({%slug winforms/spread-processing/working-with-worksheets/what-is-a-worksheet?%})
+ * [What is a Worksheet?]({%slug winforms/spreadprocessing/working-with-worksheets/what-is-a-worksheet?%})
 
- * [Workbook Protection]({%slug winforms/spread-processing/features/protection/workbook-protection%})
+ * [Workbook Protection]({%slug winforms/spreadprocessing/features/protection/workbook-protection%})

@@ -2,7 +2,7 @@
 title: Document Themes
 page_title: Document Themes | UI for WinForms Documentation
 description: Document Themes
-slug: winforms/spread-processing/features/styling/document-themes
+slug: winforms/spreadprocessing/features/styling/document-themes
 tags: document,themes
 published: True
 position: 1
@@ -296,4 +296,4 @@ Dim actualFont = themableFont.GetActualValue(theme)
 
 # See Also
 
- * [Cell Styles]({%slug winforms/spread-processing/features/styling/cell-styles%})
+ * [Cell Styles]({%slug winforms/spreadprocessing/features/styling/cell-styles%})

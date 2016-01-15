@@ -2,7 +2,7 @@
 title: Control Element Structure
 page_title: Control Element Structure | UI for WinForms Documentation
 description: Control Element Structure
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/control-element-structure
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/control-element-structure
 tags: control,element,structure
 published: True
 position: 1

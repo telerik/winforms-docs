@@ -2,7 +2,7 @@
 title: Overview
 page_title: Xlsx | UI for WinForms Documentation
 description: Xlsx
-slug: winforms/spread-processing/formats-and-conversion/xlsx
+slug: winforms/spreadprocessing/formats-and-conversion/xlsx
 tags: xlsx
 published: True
 position: 0

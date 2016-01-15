@@ -2,7 +2,7 @@
 title: Upgrade wizard
 page_title: Upgrade wizard | UI for WinForms Documentation
 description: Upgrade wizard
-slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/upgrade-wizard
+slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-wizard
 tags: upgrade,wizard
 published: True
 position: 6
@@ -52,7 +52,7 @@ The last step suggests creating a backup of your projects:![installation-deploym
 >note 
 * The Telerik UI for WinForms distribution selection screen lists all the versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions, available in the GAC. Hotfixes, downloaded manually cannot be detected.
 * You can use the Browse button to navigate to the folder of a manually downloaded distribution.
-* You can use the Download button to access the [Latest Version Acquirer tool]({%slug winforms/installation,-deployment-and-distribution/visual-studio-extensions/automatic-latest-version-retrieval%}) and download the latest available version on our website
+* You can use the Download button to access the [Latest Version Acquirer tool]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-latest-version-retrieval%}) and download the latest available version on our website
 * The distribution, downloaded by the Upgrade Wizard contains only the "hotfix" files, e.g. the barebone files, needed for a project to run correctly. It does not contain the documentation or the Live Examples.
 * A Visual Studio restart will be required in order to update your toolbox. If the automatic restart fails, a restart should be initiated manually in order to complete the toolbox upgrade.>
 

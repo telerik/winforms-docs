@@ -2,7 +2,7 @@
 title: Errors
 page_title: Errors | UI for WinForms Documentation
 description: Errors
-slug: winforms/spread-processing/features/formulas/errors
+slug: winforms/spreadprocessing/features/formulas/errors
 tags: errors
 published: True
 position: 4

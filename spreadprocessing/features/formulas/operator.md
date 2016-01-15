@@ -2,7 +2,7 @@
 title: Operator
 page_title: Operator | UI for WinForms Documentation
 description: Operator
-slug: winforms/spread-processing/features/formulas/operator
+slug: winforms/spreadprocessing/features/formulas/operator
 tags: operator
 published: True
 position: 1

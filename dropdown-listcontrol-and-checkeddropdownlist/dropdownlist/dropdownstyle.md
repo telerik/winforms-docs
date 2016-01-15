@@ -2,7 +2,7 @@
 title: DropDownStyle
 page_title: DropDownStyle | UI for WinForms Documentation
 description: DropDownStyle
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/dropdownstyle
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdownstyle
 tags: dropdownstyle
 published: True
 position: 7

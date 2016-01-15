@@ -2,7 +2,7 @@
 title: Filtering
 page_title: Filtering | UI for WinForms Documentation
 description: Filtering
-slug: winforms/spread-processing/features/filtering
+slug: winforms/spreadprocessing/features/filtering
 tags: filtering
 published: True
 position: 15
@@ -42,7 +42,7 @@ This article describes what is filtering and filters and how to work with them t
 The filtering feature allows the user to hide and show certain rows of a range, based on different criteria. It provides an easy way to work with just the relevant set of data.
         
 
-The information about the filtering applied to a worksheet is contained in the [worksheet]({%slug winforms/spread-processing/working-with-worksheets/what-is-a-worksheet?%}) property __Filter__, which is of type __AutoFilter__. Through it you can set and modify the current range which is filtered and add and remove filters to its columns. Each column can have only one filter applied to it. The interface implemented by all filters is __IFilter__.
+The information about the filtering applied to a worksheet is contained in the [worksheet]({%slug winforms/spreadprocessing/working-with-worksheets/what-is-a-worksheet?%}) property __Filter__, which is of type __AutoFilter__. Through it you can set and modify the current range which is filtered and add and remove filters to its columns. Each column can have only one filter applied to it. The interface implemented by all filters is __IFilter__.
         
 
 ## AutoFilter
@@ -478,8 +478,8 @@ Setting the __FilteredRange__ property to null without removing the filters befo
 
 # See Also
 
- * [Sorting]({%slug winforms/spread-processing/features/sorting%})
+ * [Sorting]({%slug winforms/spreadprocessing/features/sorting%})
 
- * [What is a Worksheet?]({%slug winforms/spread-processing/working-with-worksheets/what-is-a-worksheet?%})
+ * [What is a Worksheet?]({%slug winforms/spreadprocessing/working-with-worksheets/what-is-a-worksheet?%})
 
- * [Document Themes]({%slug winforms/spread-processing/features/styling/document-themes%})
+ * [Document Themes]({%slug winforms/spreadprocessing/features/styling/document-themes%})

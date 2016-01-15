@@ -2,7 +2,7 @@
 title: Data Validation
 page_title: Data Validation | UI for WinForms Documentation
 description: Data Validation
-slug: winforms/spread-processing/features/data-validation
+slug: winforms/spreadprocessing/features/data-validation
 tags: data,validation
 published: True
 position: 18
@@ -10,7 +10,7 @@ position: 18
 
 # Data Validation
 
-__Data validation__ is used to control the type of data or the values that users enter into a cell. Compared to [Protection]({%slug winforms/spread-processing/features/protection/workbook-protection%}), data validation does not restrict the user input, but ensures that the entered data complies with certain rules. For example the user may be restricted to enter data only within a certain range of dates, whole numbers, decimal numbers, or from a list of predefined values.
+__Data validation__ is used to control the type of data or the values that users enter into a cell. Compared to [Protection]({%slug winforms/spreadprocessing/features/protection/workbook-protection%}), data validation does not restrict the user input, but ensures that the entered data complies with certain rules. For example the user may be restricted to enter data only within a certain range of dates, whole numbers, decimal numbers, or from a list of predefined values.
       
 
 ## Data Validation Rules
@@ -283,7 +283,7 @@ worksheet.Cells(dataValidationRuleCellIndex).SetDataValidationRule(rule)
 
 {{endregion}} 
 
-You are allowed to enter any valid [formula]({%slug winforms/spread-processing/features/formulas%}) as a rule argument that returns a number. __Example 4__ shows how to restrict the user input to the values less than the sum of the values in cells A1 and B1.
+You are allowed to enter any valid [formula]({%slug winforms/spreadprocessing/features/formulas%}) as a rule argument that returns a number. __Example 4__ shows how to restrict the user input to the values less than the sum of the values in cells A1 and B1.
 
 #### Example 4: Apply Whole Number Rule with Formula
 
@@ -659,6 +659,6 @@ Dim filter As New ValuesCollectionFilter(0, stringItems, dateItems, True)
 
 # See Also
 
-* [Workbook Protection]({%slug winforms/spread-processing/features/protection/workbook-protection%})
+* [Workbook Protection]({%slug winforms/spreadprocessing/features/protection/workbook-protection%})
 
-* [Formulas]({%slug winforms/spread-processing/features/formulas%})
+* [Formulas]({%slug winforms/spreadprocessing/features/formulas%})

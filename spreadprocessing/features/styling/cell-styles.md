@@ -2,7 +2,7 @@
 title: Cell Styles
 page_title: Cell Styles | UI for WinForms Documentation
 description: Cell Styles
-slug: winforms/spread-processing/features/styling/cell-styles
+slug: winforms/spreadprocessing/features/styling/cell-styles
 tags: cell,styles
 published: True
 position: 0
@@ -15,7 +15,7 @@ position: 0
 A cell style is a predefined set of formatting options, such as cell borders, fonts, font sizes and number formats. Using cell styles allows you to apply multiple format options in one step and also offers an easy approach to achieve consistency in cell formatting. The document model has a number of built-in cell styles that you can modify or apply directly. Its API allows you to duplicate an existing style or create a new one according to your preferences.
       
 
->note You can create cell styles that are dependent on the current document theme. Such styles are updated automatically when you change the selected document theme. You can read more about document themes and dependent cell styles in the [Document Themes]({%slug winforms/spread-processing/features/styling/document-themes%}) article.
+>note You can create cell styles that are dependent on the current document theme. Such styles are updated automatically when you change the selected document theme. You can read more about document themes and dependent cell styles in the [Document Themes]({%slug winforms/spreadprocessing/features/styling/document-themes%}) article.
 >
 
 
@@ -243,6 +243,6 @@ else
 
 # See Also
 
- * [Document Themes]({%slug winforms/spread-processing/features/styling/document-themes%})
+ * [Document Themes]({%slug winforms/spreadprocessing/features/styling/document-themes%})
 
- * [Whats is a Workbook?]({%slug winforms/spread-processing/working-with-workbooks/whats-is-a-workbook?%})
+ * [Whats is a Workbook?]({%slug winforms/spreadprocessing/working-with-workbooks/whats-is-a-workbook?%})

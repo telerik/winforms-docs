@@ -2,7 +2,7 @@
 title: Merge and Unmerge Cells
 page_title: Merge and Unmerge Cells | UI for WinForms Documentation
 description: Merge and Unmerge Cells
-slug: winforms/spread-processing/features/merge-and-unmerge-cells
+slug: winforms/spreadprocessing/features/merge-and-unmerge-cells
 tags: merge,and,unmerge,cells
 published: True
 position: 9

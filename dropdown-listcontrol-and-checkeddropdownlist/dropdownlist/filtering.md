@@ -2,7 +2,7 @@
 title: Filtering
 page_title: Filtering | UI for WinForms Documentation
 description: Filtering
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/filtering
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/filtering
 tags: filtering
 published: True
 position: 11

@@ -2,7 +2,7 @@
 title: Names (Named Ranges)
 page_title: Names (Named Ranges) | UI for WinForms Documentation
 description: Names (Named Ranges)
-slug: winforms/spread-processing/features/names-(named-ranges)
+slug: winforms/spreadprocessing/features/names-(named-ranges)
 tags: names,(named,ranges)
 published: True
 position: 10

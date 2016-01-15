@@ -2,7 +2,7 @@
 title: Cell Value Types
 page_title: Cell Value Types | UI for WinForms Documentation
 description: Cell Value Types
-slug: winforms/spread-processing/working-with-cells/cell-value-types
+slug: winforms/spreadprocessing/working-with-cells/cell-value-types
 tags: cell,value,types
 published: True
 position: 4
@@ -204,7 +204,7 @@ worksheet.Cells(0, 1).SetValue(booleanCellValueFalse)
 
 ## Number Cell Value
 
-The __NumberCellValue__ contains a value of type double. The ValueType of each NumberCellValue instance  is Number and the RawValue is the string representation of the double it holds internally. Note that the RawValue of the  NumberCellValue may be different from the value that appears in the cell since a cell value format may be applied.  For example, if two cells present to the user "50.00%" and "5.00E-01", actually they both contain a  NumberCellValue with a RawValue "0.5". The values appear differently, because percentage format has been  applied to the first cell and scientific format – to the second cell. In fact, dates are also number values presented in date format. For example, 16 September 2020 is actually the number 44090.  You can find detailed description of the possible number formats and examples of their automatic assigning in the [Number Formatting]({%slug winforms/spread-processing/features/number-formatting%}) article.
+The __NumberCellValue__ contains a value of type double. The ValueType of each NumberCellValue instance  is Number and the RawValue is the string representation of the double it holds internally. Note that the RawValue of the  NumberCellValue may be different from the value that appears in the cell since a cell value format may be applied.  For example, if two cells present to the user "50.00%" and "5.00E-01", actually they both contain a  NumberCellValue with a RawValue "0.5". The values appear differently, because percentage format has been  applied to the first cell and scientific format – to the second cell. In fact, dates are also number values presented in date format. For example, 16 September 2020 is actually the number 44090.  You can find detailed description of the possible number formats and examples of their automatic assigning in the [Number Formatting]({%slug winforms/spreadprocessing/features/number-formatting%}) article.
         
 The __SetValue()__ method has several overloads that produce a NumberCellValue. You can use SetValue(double) and pass the double value or SetValue(DateTime) and hand in the a DateTime instance that will be internally converted to a number. Also, you can use the SetValue(string) and pass the string representation of the number you would like to set. Note that the SetValue(string) method attempts to parse the string you provide to all values and turns it into a __TextCellValue__ only if it cannot produce any of the other types of values.
  
@@ -291,7 +291,7 @@ worksheet.Cells(0, 0).SetValue("=A2")
 After this code is executed the value of cell *A1* will be the same as the value of cell A2. When the value of A2 is modified, the change will be reflected in A1 automatically.
         
 
-An expression can also contain a predefined function that performs a given calculation. The document model offers a number of built-in functions. You can read more about the available functions in the [Functions]({%slug winforms/spread-processing/features/formulas/functions%}) article. Note that if the current CellValueFormat of the cell is Text ("@"), the method will produce a TextCellValue instead of a FormulaCellValue.
+An expression can also contain a predefined function that performs a given calculation. The document model offers a number of built-in functions. You can read more about the available functions in the [Functions]({%slug winforms/spreadprocessing/features/formulas/functions%}) article. Note that if the current CellValueFormat of the cell is Text ("@"), the method will produce a TextCellValue instead of a FormulaCellValue.
         
 
 #### Example 10 illustrates the use of the SUM built-in function.
@@ -478,4 +478,4 @@ worksheet.Cells(cellIndex).SetValueAsText("This is most certainly a text.")
 
 # See Also
 
-* [Accessing Cells of a Worksheet]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%})
+* [Accessing Cells of a Worksheet]({%slug winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet%})

@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: winforms/spread-processing/getting-started
+slug: winforms/spreadprocessing/getting-started
 tags: getting,started
 published: True
 position: 1
@@ -65,7 +65,7 @@ The following .NET assemblies are required as well"
 
 ## Creating a Workbook
 
-The document model allows you to instantiate a new [workbook]({%slug winforms/spread-processing/working-with-workbooks/whats-is-a-workbook?%}) and populate it with any data you want.
+The document model allows you to instantiate a new [workbook]({%slug winforms/spreadprocessing/working-with-workbooks/whats-is-a-workbook?%}) and populate it with any data you want.
         
 
 __Example 1__ shows how you can create a workbook and add a new worksheet to it.
@@ -88,7 +88,7 @@ Dim worksheet As Worksheet = workbook.Worksheets.Add()
 
 {{endregion}} 
 
-You can then create a [CellSelection]({%slug winforms/spread-processing/working-with-cells/get,-set-and-clear-cell-properties%}) and set any value to the selected cells. __Example 2__ shows how you can create a cell and set a string value to it.
+You can then create a [CellSelection]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%}) and set any value to the selected cells. __Example 2__ shows how you can create a cell and set a string value to it.
 
 #### Example 2: Set Value of Cell
 
@@ -140,10 +140,10 @@ End Using
 
 # See Also
 
- * [Whats is a Workbook?]({%slug winforms/spread-processing/working-with-workbooks/whats-is-a-workbook?%})
+ * [Whats is a Workbook?]({%slug winforms/spreadprocessing/working-with-workbooks/whats-is-a-workbook?%})
 
- * [What is a Worksheet?]({%slug winforms/spread-processing/working-with-worksheets/what-is-a-worksheet?%})
+ * [What is a Worksheet?]({%slug winforms/spreadprocessing/working-with-worksheets/what-is-a-worksheet?%})
 
- * [Get, Set and Clear Cell Properties]({%slug winforms/spread-processing/working-with-cells/get,-set-and-clear-cell-properties%})
+ * [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%})
 
- * [Xlsx]({%slug winforms/spread-processing/formats-and-conversion/xlsx%})
+ * [Xlsx]({%slug winforms/spreadprocessing/formats-and-conversion/xlsx%})

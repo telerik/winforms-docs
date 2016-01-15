@@ -2,7 +2,7 @@
 title: Design time
 page_title: Design time | UI for WinForms Documentation
 description: Design time
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/design-time
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/design-time
 tags: design,time
 published: True
 position: 0

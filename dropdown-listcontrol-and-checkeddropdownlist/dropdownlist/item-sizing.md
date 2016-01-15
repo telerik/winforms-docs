@@ -2,7 +2,7 @@
 title: Item Sizing
 page_title: Item Sizing | UI for WinForms Documentation
 description: Item Sizing
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/item-sizing
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/item-sizing
 tags: item,sizing
 published: True
 position: 12

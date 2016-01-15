@@ -2,7 +2,7 @@
 title: Customization
 page_title: Customization | UI for WinForms Documentation
 description: Customization
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/customization
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/customization
 tags: customization
 published: True
 position: 4

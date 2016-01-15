@@ -2,7 +2,7 @@
 title: Adding RadControls to Visual Studio Toolbox
 page_title: Adding RadControls to Visual Studio Toolbox
 description: Adding RadControls to Visual Studio Toolbox
-slug: winforms/installation,-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox
+slug: winforms/installation-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox
 tags: adding,radcontrols,to,visual,studio,toolbox
 published: True
 position: 3
@@ -10,7 +10,7 @@ position: 3
 
 # Adding RadControls to Visual Studio Toolbox
 
-Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/2012 Toolbox [during installation]({%slug winforms/installation,-deployment-and-distribution/installing-on-your-computer%}). If however they do not appear in the toolbox after the installation, you can do this manually. There are two ways to manually add Telerik UI for WinForms to the Toolbox in your Visual Studio.
+Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/2012 Toolbox [during installation]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). If however they do not appear in the toolbox after the installation, you can do this manually. There are two ways to manually add Telerik UI for WinForms to the Toolbox in your Visual Studio.
       
 ## Using the Visual Studio menus
 
@@ -118,7 +118,7 @@ Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/
 ## Troubleshooting
 __Telerik assemblies do not appear in Visual Studio's Add reference dialog__
 
-Make sure that the Telerik WinForms controls are added in the Global Assembly Cache (GAC) as described in the [Add/Remove RadControls to the Global Assembly Cache (GAC)]({%slug winforms/installation,-deployment-and-distribution/application-deploymentadd-remove-radcontrols-to-the-global-assembly-cache-(gac)%}) topic. 
+Make sure that the Telerik WinForms controls are added in the Global Assembly Cache (GAC) as described in the [Add/Remove RadControls to the Global Assembly Cache (GAC)]({%slug winforms/installation-deployment-and-distribution/application-deploymentadd-remove-radcontrols-to-the-global-assembly-cache-(gac)%}) topic. 
 
 __Telerik assemblies do not appear in Visual Studio's Add reference dialog although they are added in the GAC__
 

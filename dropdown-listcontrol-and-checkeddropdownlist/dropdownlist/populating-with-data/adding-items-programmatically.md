@@ -2,7 +2,7 @@
 title: Adding items programmatically
 page_title: Adding items programmatically | UI for WinForms Documentation
 description: Adding items programmatically
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/adding-items-programmatically
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/adding-items-programmatically
 tags: adding,items,programmatically
 published: True
 position: 1

@@ -2,7 +2,7 @@
 title: Data binding
 page_title: Data binding | UI for WinForms Documentation
 description: Data binding
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/data-binding
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/data-binding
 tags: data,binding
 published: True
 position: 2

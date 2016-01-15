@@ -2,7 +2,7 @@
 title: Drag and Drop in Bound Mode
 page_title: Drag and Drop in Bound Mode | UI for WinForms Documentation
 description: Drag and Drop in Bound Mode
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop/drag-and-drop-in-bound-mode
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop/drag-and-drop-in-bound-mode
 tags: drag,and,drop,in,bound,mode
 published: True
 position: 0

@@ -2,7 +2,7 @@
 title: DataBinding
 page_title: DataBinding | UI for WinForms Documentation
 description: DataBinding
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/databinding
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/databinding
 tags: databinding
 published: True
 position: 3

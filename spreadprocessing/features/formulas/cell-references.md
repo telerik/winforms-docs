@@ -2,7 +2,7 @@
 title: Cell References
 page_title: Cell References | UI for WinForms Documentation
 description: Cell References
-slug: winforms/spread-processing/features/formulas/cell-references
+slug: winforms/spreadprocessing/features/formulas/cell-references
 tags: cell,references
 published: True
 position: 2
@@ -125,6 +125,6 @@ A mixed cell reference specifies its row as absolute and its column as relative 
 
 # See Also
 
- * [Activate a Worksheet]({%slug winforms/spread-processing/working-with-worksheets/activate-a-worksheet%})
+ * [Activate a Worksheet]({%slug winforms/spreadprocessing/working-with-worksheets/activate-a-worksheet%})
 
- * [Errors]({%slug winforms/spread-processing/features/formulas/errors%})
+ * [Errors]({%slug winforms/spreadprocessing/features/formulas/errors%})

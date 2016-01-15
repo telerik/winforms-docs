@@ -2,7 +2,7 @@
 title: Activate a Worksheet
 page_title: Activate a Worksheet | UI for WinForms Documentation
 description: Activate a Worksheet
-slug: winforms/spread-processing/working-with-worksheets/activate-a-worksheet
+slug: winforms/spreadprocessing/working-with-worksheets/activate-a-worksheet
 tags: activate,a,worksheet
 published: True
 position: 2

@@ -2,7 +2,7 @@
 title: Download Product Files
 page_title: Download Product Files
 description: Download Product Files
-slug: winforms/installation,-deployment-and-distribution/download-product-files
+slug: winforms/installation-deployment-and-distribution/download-product-files
 tags: download,product,files
 published: True
 position: 7

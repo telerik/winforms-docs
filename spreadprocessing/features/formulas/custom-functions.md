@@ -2,7 +2,7 @@
 title: Custom Functions
 page_title: Custom Functions | UI for WinForms Documentation
 description: Custom Functions
-slug: winforms/spread-processing/features/formulas/custom-functions
+slug: winforms/spreadprocessing/features/formulas/custom-functions
 tags: custom,functions
 published: True
 position: 5
@@ -408,7 +408,7 @@ End Class
 
 # See Also
 
- * [Cell Value Types]({%slug winforms/spread-processing/working-with-cells/cell-value-types%})
+ * [Cell Value Types]({%slug winforms/spreadprocessing/working-with-cells/cell-value-types%})
 
  * [ArgumentInterpretation](http://www.telerik.com/help/winforms/t_telerik_windows_documents_spreadsheet_expressions_functions_argumentinterpretation.html)
 

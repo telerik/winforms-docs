@@ -2,7 +2,7 @@
 title: Repeat Values
 page_title: Repeat Values | UI for WinForms Documentation
 description: Repeat Values
-slug: winforms/spread-processing/features/fill-data-automatically/repeat-values
+slug: winforms/spreadprocessing/features/fill-data-automatically/repeat-values
 tags: repeat,values
 published: True
 position: 0
@@ -14,7 +14,7 @@ The document model allows you to automatically repeat data that has already been
 
 ## 
 
-To repeat the values, first you need to create a [CellSelection]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%}) for the range of cells that you want to populate. Note that the range should include the values that you would like to repeat. Then, you need to invoke the __FillData()__ method of the __CellSelection__ instance and pass appropriate __FillDirection__ as an argument. There are four __FillDirection__ values:
+To repeat the values, first you need to create a [CellSelection]({%slug winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet%}) for the range of cells that you want to populate. Note that the range should include the values that you would like to repeat. Then, you need to invoke the __FillData()__ method of the __CellSelection__ instance and pass appropriate __FillDirection__ as an argument. There are four __FillDirection__ values:
         
 
 * __Left__: The values in the rightmost column are copied to the rest of the columns in the range.
@@ -110,6 +110,6 @@ __Figure 2__ demonstrates the result of __Example 2__.
 
 # See Also
 
- * [Accessing Cells of a Worksheet]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%})
+ * [Accessing Cells of a Worksheet]({%slug winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet%})
 
- * [Series]({%slug winforms/spread-processing/features/fill-data-automatically/series%})
+ * [Series]({%slug winforms/spreadprocessing/features/fill-data-automatically/series%})

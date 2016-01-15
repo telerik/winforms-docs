@@ -18,7 +18,7 @@ position: 1
 
 All themes that come with Telerik WinForms controls since version Q2 2008 are available as standalone components, apart from the control's assemblies. This improvement has been added in order to simplify the way themes are added to the application and to improve the application’s loading time.
 
-If you have installed the suite from the provided installation files, you will see the themes loaded in the Visual Studio toolbox. If you do not see the themes in the toolbox, you will have to [add them manually to the toolbox.]({%slug winforms/installation,-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox%})
+If you have installed the suite from the provided installation files, you will see the themes loaded in the Visual Studio toolbox. If you do not see the themes in the toolbox, you will have to [add them manually to the toolbox.]({%slug winforms/installation-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox%})
 
 In order to use the Theme components, just drag and drop them from the VS Toolbox to the form. This will add a reference to the corresponding theme assembly in the project and will enable the theme in the ThemeName drop-down of all Telerik controls on the form. All you have to do afterwards is to set the needed theme from the ThemeName drop-down or programmatically.
 

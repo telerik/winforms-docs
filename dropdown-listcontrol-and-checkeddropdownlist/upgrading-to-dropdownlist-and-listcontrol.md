@@ -2,7 +2,7 @@
 title: Upgrading to DropDownList and ListControl
 page_title: Upgrading to DropDownList and ListControl | UI for WinForms Documentation
 description: Upgrading to DropDownList and ListControl
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol
 tags: upgrading,to,dropdownlist,and,listcontrol
 published: True
 position: 0

@@ -2,7 +2,7 @@
 title: Get, Set and Clear Cell Properties
 page_title: Get, Set and Clear Cell Properties | UI for WinForms Documentation
 description: Get, Set and Clear Cell Properties
-slug: winforms/spread-processing/working-with-cells/get,-set-and-clear-cell-properties
+slug: winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties
 tags: get,,set,and,clear,cell,properties
 published: True
 position: 3
@@ -26,7 +26,7 @@ Cells are the atomic parts of a worksheet and its basic data units. Each cell ca
 
 ## Get, Set and Clear Methods
 
-In order to access cell properties, you have to create a __CellSelection__ object that contains the region of cells you would like to change. More information about retrieving __CellSelection__ instances is available in the [Accessing Cells of a Worksheet]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%}) article.
+In order to access cell properties, you have to create a __CellSelection__ object that contains the region of cells you would like to change. More information about retrieving __CellSelection__ instances is available in the [Accessing Cells of a Worksheet]({%slug winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet%}) article.
         
 
 __Example 1__ creates a selection for cells in the range A1:F6.
@@ -135,7 +135,7 @@ Using the above approach you can set the value of almost all cell properties. Th
 
 ## Value Property
 
-The __Value__ property uses an instance of __ICellValue__ to retrieve and change its value. The property has support for  the following types of cell values, all of which conform to the ICellValue interface: *EmptyCellValue*, *NumberCellValue*, *BooleanCellValue*, *TextCellValue*, *FormulaCellValue*. Similarly to the other properties, __Value__ has three methods that control the property: __GetValue()__, __SetValue()__ and __ClearValue()__. More information about different value types is available in the [Cell Value Types]({%slug winforms/spread-processing/working-with-cells/cell-value-types%}) article.
+The __Value__ property uses an instance of __ICellValue__ to retrieve and change its value. The property has support for  the following types of cell values, all of which conform to the ICellValue interface: *EmptyCellValue*, *NumberCellValue*, *BooleanCellValue*, *TextCellValue*, *FormulaCellValue*. Similarly to the other properties, __Value__ has three methods that control the property: __GetValue()__, __SetValue()__ and __ClearValue()__. More information about different value types is available in the [Cell Value Types]({%slug winforms/spreadprocessing/working-with-cells/cell-value-types%}) article.
 
 The __GetValue()__ method retrieves the value of the property and returns an instance of __RangePropertyValue<ICellValue>__. The __Value__ property of the __RangePropertyValue__ instance returns the actual value of the selected region.
 __Example 3__ illustrates who to retrieve the value of cell B2:
@@ -371,7 +371,7 @@ selection.DecreaseIndent()
 
 # See Also
 
- * [Accessing Cells of a Worksheet]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%})
+ * [Accessing Cells of a Worksheet]({%slug winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet%})
 
  * [PatternType Enumeration](http://www.telerik.com/help/winforms/t_telerik_windows_documents_spreadsheet_model_patterntype.html)
 

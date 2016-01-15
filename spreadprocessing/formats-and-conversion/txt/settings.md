@@ -2,7 +2,7 @@
 title: Settings
 page_title: Settings | UI for WinForms Documentation
 description: Settings
-slug: winforms/spread-processing/formats-and-conversion/txt/settings
+slug: winforms/spreadprocessing/formats-and-conversion/txt/settings
 tags: settings
 published: True
 position: 1

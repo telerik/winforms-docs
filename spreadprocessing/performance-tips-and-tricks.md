@@ -2,7 +2,7 @@
 title: Performance Tips and Tricks
 page_title: Performance Tips and Tricks | UI for WinForms Documentation
 description: Performance Tips and Tricks
-slug: winforms/spread-processing/performance-tips-and-tricks
+slug: winforms/spreadprocessing/performance-tips-and-tricks
 tags: performance,tips,and,tricks
 published: True
 position: 9
@@ -199,7 +199,7 @@ Setting the same values to thousands of cells one by one takes more time than se
 
 ## Avoid Using the Additional Calculations Options Provided by the Shapes and Images
 
-When setting the properties of an image you have created, you have to keep in mind that some of the members may cause recalculation of other properties in order to make the images more convenient to use in a UI context. You can read more about what calculation are performed in the [Shapes and Images]({%slug winforms/spread-processing/features/shapes-and-images%}) article.If you are generating a document from scratch the recalculation of other properties will most likely be an unnecessary burden for your application. In this case it is advisable to use the properties of the shape classes:
+When setting the properties of an image you have created, you have to keep in mind that some of the members may cause recalculation of other properties in order to make the images more convenient to use in a UI context. You can read more about what calculation are performed in the [Shapes and Images]({%slug winforms/spreadprocessing/features/shapes-and-images%}) article.If you are generating a document from scratch the recalculation of other properties will most likely be an unnecessary burden for your application. In this case it is advisable to use the properties of the shape classes:
         
 
 * Width
@@ -225,15 +225,15 @@ When setting values to cells, the cell value type is determined by an internal p
 The easiest way to achieve this is by using the __SetValue()__ overload with the respective CLR type (DateTime, Double, etc.) or in the case of formula value type and text value type -  the __SetValueAsFormula()__ and __SetValueAsText()__ methods respectively.
         
 
-More information regarding cell value types is available in the  [Cell Value Types]({%slug winforms/spread-processing/working-with-cells/cell-value-types%}) articles.
+More information regarding cell value types is available in the  [Cell Value Types]({%slug winforms/spreadprocessing/working-with-cells/cell-value-types%}) articles.
         
 
 # See Also
 
- * [Cell Value Types]({%slug winforms/spread-processing/working-with-cells/cell-value-types%})
+ * [Cell Value Types]({%slug winforms/spreadprocessing/working-with-cells/cell-value-types%})
 
- * [Get, Set and Clear Cell Properties]({%slug winforms/spread-processing/working-with-cells/get,-set-and-clear-cell-properties%})
+ * [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%})
 
- * [Shapes and Images]({%slug winforms/spread-processing/features/shapes-and-images%})
+ * [Shapes and Images]({%slug winforms/spreadprocessing/features/shapes-and-images%})
 
- * [History]({%slug winforms/spread-processing/features/history%})
+ * [History]({%slug winforms/spreadprocessing/features/history%})

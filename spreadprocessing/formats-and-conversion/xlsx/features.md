@@ -2,7 +2,7 @@
 title: Features
 page_title: Features | UI for WinForms Documentation
 description: Features
-slug: winforms/spread-processing/formats-and-conversion/xlsx/features
+slug: winforms/spreadprocessing/formats-and-conversion/xlsx/features
 tags: features
 published: True
 position: 1

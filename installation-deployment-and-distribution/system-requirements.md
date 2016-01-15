@@ -2,7 +2,7 @@
 title: System Requirements
 page_title: System Requirements | UI for WinForms Documentation
 description: System Requirements
-slug: winforms/installation,-deployment-and-distribution/system-requirements
+slug: winforms/installation-deployment-and-distribution/system-requirements
 tags: system,requirements
 published: True
 position: 0

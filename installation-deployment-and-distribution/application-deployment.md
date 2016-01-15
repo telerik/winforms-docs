@@ -2,7 +2,7 @@
 title: Application Deployment
 page_title: Application Deployment
 description: Application Deployment
-slug: winforms/installation,-deployment-and-distribution/application-deployment
+slug: winforms/installation-deployment-and-distribution/application-deployment
 tags: application,deployment
 published: True
 position: 2
@@ -26,7 +26,7 @@ Thus these Telerik assemblies will be copied to your *Release/Bin*, *Debug/Bin* 
 
 ### GAC
 
-As noted above, Telerik assemblies are installed in the GAC by Telerik installer on the developer machines. You may choose to insert Telerik assemblies in the GAC of your client machines too by following the instructions in the [Add/Remove RadControls to the Global Assembly Cache (GAC)]({%slug winforms/installation,-deployment-and-distribution/application-deploymentadd-remove-radcontrols-to-the-global-assembly-cache-(gac)%}) section. 
+As noted above, Telerik assemblies are installed in the GAC by Telerik installer on the developer machines. You may choose to insert Telerik assemblies in the GAC of your client machines too by following the instructions in the [Add/Remove RadControls to the Global Assembly Cache (GAC)]({%slug winforms/installation-deployment-and-distribution/application-deploymentadd-remove-radcontrols-to-the-global-assembly-cache-(gac)%}) section. 
               
 
 >Please do not use Telerik installer to install Telerik assemblies in the GACs of your clients' machines. Telerik installer should be used only for the developers' machines.

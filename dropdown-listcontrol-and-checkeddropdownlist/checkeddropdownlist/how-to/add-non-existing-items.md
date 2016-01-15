@@ -2,7 +2,7 @@
 title: Add non-existing Items
 page_title: Add non-existing Items | UI for WinForms Documentation
 description: Add non-existing Items
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to/add-non-existing-items
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to/add-non-existing-items
 tags: add,non-existing,items
 published: True
 position: 0

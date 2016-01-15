@@ -2,7 +2,7 @@
 title: Iterate Through Worksheets
 page_title: Iterate Through Worksheets | UI for WinForms Documentation
 description: Iterate Through Worksheets
-slug: winforms/spread-processing/working-with-worksheets/iterate-through-worksheets
+slug: winforms/spreadprocessing/working-with-worksheets/iterate-through-worksheets
 tags: iterate,through,worksheets
 published: True
 position: 4

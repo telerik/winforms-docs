@@ -2,7 +2,7 @@
 title: Overview
 page_title: Visual Studio Extensions | UI for WinForms Documentation
 description: Visual Studio Extensions
-slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions
+slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: visual,studio,extensions
 published: True
 position: 0

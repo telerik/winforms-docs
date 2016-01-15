@@ -2,7 +2,7 @@
 title: Overview
 page_title: Formats and Conversion | UI for WinForms Documentation
 description: Formats and Conversion
-slug: winforms/spread-processing/formats-and-conversion
+slug: winforms/spreadprocessing/formats-and-conversion
 tags: formats,and,conversion
 published: True
 position: 0
@@ -40,8 +40,8 @@ The document model of RadSpreadProcessing also contains a __WorkbookFormatProvid
 
 * `public static void Export(Workbook workbook, string extension, Stream output)`
 
-The *Formats and Conversion* section contains three separate articles dedicated on each of the format providers and one article that illustrates how to work with the [WorkbookFormatProvidersManager]({%slug winforms/spread-processing/formats-and-conversion/format-providers-manager%}) class.
+The *Formats and Conversion* section contains three separate articles dedicated on each of the format providers and one article that illustrates how to work with the [WorkbookFormatProvidersManager]({%slug winforms/spreadprocessing/formats-and-conversion/format-providers-manager%}) class.
 
 # See Also
 
-* [Activate a Worksheet]({%slug winforms/spread-processing/working-with-worksheets/activate-a-worksheet%})
+* [Activate a Worksheet]({%slug winforms/spreadprocessing/working-with-worksheets/activate-a-worksheet%})

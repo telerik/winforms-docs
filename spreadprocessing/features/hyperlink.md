@@ -2,7 +2,7 @@
 title: Hyperlink
 page_title: Hyperlink | UI for WinForms Documentation
 description: Hyperlink
-slug: winforms/spread-processing/features/hyperlink
+slug: winforms/spreadprocessing/features/hyperlink
 tags: hyperlink
 published: True
 position: 8

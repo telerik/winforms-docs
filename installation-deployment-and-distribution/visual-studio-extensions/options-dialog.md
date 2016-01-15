@@ -2,7 +2,7 @@
 title: Options dialog
 page_title: Options dialog | UI for WinForms Documentation
 description: Options dialog
-slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/options-dialog
+slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/options-dialog
 tags: options,dialog
 published: True
 position: 4
@@ -46,7 +46,7 @@ __Suggest upgrades when an equal Dev release detected on projects using a Trial_
 __Notify me when a Telerik subscription I have is about to expire__ – When enabled, you will receive reminders if any of your subscriptions expire within the next month.
         
 
-> You can benefit subscription reminders only if you have saved your credentials in the [Latest Version Acquirer tool.]({%slug winforms/installation,-deployment-and-distribution/visual-studio-extensions/automatic-latest-version-retrieval%})
+> You can benefit subscription reminders only if you have saved your credentials in the [Latest Version Acquirer tool.]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-latest-version-retrieval%})
 >
 
 ![installation-deployment-and-distribution-vsx-options-dialog 003](images/installation-deployment-and-distribution-vsx-options-dialog003.png)
@@ -58,7 +58,7 @@ All settings under the WinForms category affect only the Telerik UI for WinForms
 
 Configures the path where the extensions look for and store distributions.
 
-> You can benefit subscription reminders only if you have saved your credentials in the [Latest Version Acquirer tool.]({%slug winforms/installation,-deployment-and-distribution/visual-studio-extensions/automatic-latest-version-retrieval%})
+> You can benefit subscription reminders only if you have saved your credentials in the [Latest Version Acquirer tool.]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-latest-version-retrieval%})
 >
 
 

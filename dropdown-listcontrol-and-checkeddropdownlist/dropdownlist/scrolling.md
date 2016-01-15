@@ -2,7 +2,7 @@
 title: Scrolling
 page_title: Scrolling | UI for WinForms Documentation
 description: Scrolling
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/scrolling
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/scrolling
 tags: scrolling
 published: True
 position: 16

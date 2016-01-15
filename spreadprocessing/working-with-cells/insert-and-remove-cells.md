@@ -2,7 +2,7 @@
 title: Insert and Remove Cells
 page_title: Insert and Remove Cells | UI for WinForms Documentation
 description: Insert and Remove Cells
-slug: winforms/spread-processing/working-with-cells/insert-and-remove-cells
+slug: winforms/spreadprocessing/working-with-cells/insert-and-remove-cells
 tags: insert,and,remove,cells
 published: True
 position: 1

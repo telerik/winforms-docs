@@ -2,7 +2,7 @@
 title: Insert and Remove Rows and Columns
 page_title: Insert and Remove Rows and Columns | UI for WinForms Documentation
 description: Insert and Remove Rows and Columns
-slug: winforms/spread-processing/working-with-rows-and-columns/insert-and-remove-rows-and-columns
+slug: winforms/spreadprocessing/working-with-rows-and-columns/insert-and-remove-rows-and-columns
 tags: insert,and,remove,rows,and,columns
 published: True
 position: 1

@@ -2,7 +2,7 @@
 title: Grouping
 page_title: Grouping | UI for WinForms Documentation
 description: Grouping
-slug: winforms/spread-processing/features/grouping
+slug: winforms/spreadprocessing/features/grouping
 tags: grouping
 published: True
 position: 16
@@ -172,6 +172,6 @@ Dim outLineLevel As Integer = outlineLevelRangeValue.Value
 
 # See Also
 
- * [Filtering]({%slug winforms/spread-processing/features/filtering%})
+ * [Filtering]({%slug winforms/spreadprocessing/features/filtering%})
 
- * [Sorting]({%slug winforms/spread-processing/features/sorting%})
+ * [Sorting]({%slug winforms/spreadprocessing/features/sorting%})

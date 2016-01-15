@@ -2,7 +2,7 @@
 title: Using XlsxFormatProvider
 page_title: Using XlsxFormatProvider | UI for WinForms Documentation
 description: Using XlsxFormatProvider
-slug: winforms/spread-processing/formats-and-conversion/xlsx/using-xlsxformatprovider
+slug: winforms/spreadprocessing/formats-and-conversion/xlsx/using-xlsxformatprovider
 tags: using,xlsxformatprovider
 published: True
 position: 2

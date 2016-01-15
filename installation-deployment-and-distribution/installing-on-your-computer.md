@@ -2,7 +2,7 @@
 title: Installing On Your Computer
 page_title: Installing On Your Computer
 description: Installing On Your Computer
-slug: winforms/installation,-deployment-and-distribution/installing-on-your-computer
+slug: winforms/installation-deployment-and-distribution/installing-on-your-computer
 tags: installing,on,your,computer
 published: True
 position: 1

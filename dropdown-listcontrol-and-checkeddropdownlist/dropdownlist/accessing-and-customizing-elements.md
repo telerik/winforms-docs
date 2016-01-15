@@ -2,7 +2,7 @@
 title: Accessing and Customizing Elements
 page_title: Accessing and Customizing Elements | UI for WinForms Documentation
 description: Accessing and Customizing Elements
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/accessing-and-customizing-elements
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/accessing-and-customizing-elements
 tags: accessing,and,customizing,elements
 published: True
 position: 4
@@ -10,7 +10,7 @@ position: 4
 
 # Accessing and Customizing Elements
  
-Accessing and customizing elements can be performed either at design time, or at run time. Before proceeding with this topic, it is recommended to get familiar with the [visual structure]({%slug winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/structure%}) of the __RadDropDownList__.
+Accessing and customizing elements can be performed either at design time, or at run time. Before proceeding with this topic, it is recommended to get familiar with the [visual structure]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/structure%}) of the __RadDropDownList__.
       
 
 ## Design time
@@ -60,4 +60,4 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None
 
 {{endregion}} 
  
-In order to style the pop-up items it is suitable to use the [VisualItemFormatting]({%slug winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/formatting-items%}) event.
+In order to style the pop-up items it is suitable to use the [VisualItemFormatting]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/formatting-items%}) event.

@@ -2,7 +2,7 @@
 title: Find and Replace
 page_title: Find and Replace | UI for WinForms Documentation
 description: Find and Replace
-slug: winforms/spread-processing/features/find-and-replace
+slug: winforms/spreadprocessing/features/find-and-replace
 tags: find,and,replace
 published: True
 position: 5
@@ -162,4 +162,4 @@ workbook.ReplaceAll(options)
 
 # See Also
 
- * [Activate a Worksheet]({%slug winforms/spread-processing/working-with-worksheets/activate-a-worksheet%})
+ * [Activate a Worksheet]({%slug winforms/spreadprocessing/working-with-worksheets/activate-a-worksheet%})

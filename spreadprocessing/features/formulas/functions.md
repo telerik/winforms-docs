@@ -2,7 +2,7 @@
 title: Functions
 page_title: Functions | UI for WinForms Documentation
 description: Functions
-slug: winforms/spread-processing/features/formulas/functions
+slug: winforms/spreadprocessing/features/formulas/functions
 tags: functions
 published: True
 position: 3

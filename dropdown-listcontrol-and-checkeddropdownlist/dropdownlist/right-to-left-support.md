@@ -2,7 +2,7 @@
 title: Right-To-Left Support
 page_title: Right-To-Left Support | UI for WinForms Documentation
 description: Right-To-Left Support
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/right-to-left-support
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/right-to-left-support
 tags: right-to-left,support
 published: True
 position: 14

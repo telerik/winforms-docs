@@ -2,7 +2,7 @@
 title: Workbook Protection
 page_title: Workbook Protection | UI for WinForms Documentation
 description: Workbook Protection
-slug: winforms/spread-processing/features/protection/workbook-protection
+slug: winforms/spreadprocessing/features/protection/workbook-protection
 tags: workbook,protection
 published: True
 position: 0
@@ -77,6 +77,6 @@ workbook.Unprotect("telerik")
 
 # See Also
 
- * [Whats is a Workbook?]({%slug winforms/spread-processing/working-with-workbooks/whats-is-a-workbook?%})
+ * [Whats is a Workbook?]({%slug winforms/spreadprocessing/working-with-workbooks/whats-is-a-workbook?%})
 
- * [Worksheet Protection]({%slug winforms/spread-processing/features/protection/worksheet-protection%})
+ * [Worksheet Protection]({%slug winforms/spreadprocessing/features/protection/worksheet-protection%})

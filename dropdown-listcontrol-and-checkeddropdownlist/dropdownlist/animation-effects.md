@@ -2,7 +2,7 @@
 title: Animation Effects
 page_title: Animation Effects | UI for WinForms Documentation
 description: Animation Effects
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/animation-effects
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/animation-effects
 tags: animation,effects
 published: True
 position: 15

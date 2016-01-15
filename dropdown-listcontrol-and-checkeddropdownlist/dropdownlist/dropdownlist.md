@@ -2,7 +2,7 @@
 title: Overview
 page_title: DropDownList | UI for WinForms Documentation
 description: DropDownList
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist
 tags: dropdownlist
 published: True
 position: 0

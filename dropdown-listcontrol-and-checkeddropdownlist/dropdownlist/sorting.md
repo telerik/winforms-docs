@@ -2,7 +2,7 @@
 title: Sorting
 page_title: Sorting | UI for WinForms Documentation
 description: Sorting
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/sorting
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/sorting
 tags: sorting
 published: True
 position: 10

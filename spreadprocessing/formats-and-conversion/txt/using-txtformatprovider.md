@@ -2,7 +2,7 @@
 title: Using TxtFormatProvider
 page_title: Using TxtFormatProvider | UI for WinForms Documentation
 description: Using TxtFormatProvider
-slug: winforms/spread-processing/formats-and-conversion/txt/using-txtformatprovider
+slug: winforms/spreadprocessing/formats-and-conversion/txt/using-txtformatprovider
 tags: using,txtformatprovider
 published: True
 position: 0

@@ -2,7 +2,7 @@
 title: Using PdfFormatProvider
 page_title: Using PdfFormatProvider | UI for WinForms Documentation
 description: Using PdfFormatProvider
-slug: winforms/spread-processing/formats-and-conversion/pdf/using-pdfformatprovider
+slug: winforms/spreadprocessing/formats-and-conversion/pdf/using-pdfformatprovider
 tags: using,pdfformatprovider
 published: True
 position: 2
@@ -19,7 +19,7 @@ __PdfFormatProvider__ is part of SpreadProcessing which allows export to PDF for
 
 __PdfFormatProvider__ makes it easy to export a Workbook to a PDF format. Each Worksheet exported to PDF is being divided 
           into pages according to its WorksheetPageSetup. More information about paging a Worksheet is available in the
-          [Worksheet Page Setup]({%slug winforms/spread-processing/features/worksheet-page-setup%}) documentation article.
+          [Worksheet Page Setup]({%slug winforms/spreadprocessing/features/worksheet-page-setup%}) documentation article.
         
 
 ## Prerequisites

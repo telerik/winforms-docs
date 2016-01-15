@@ -2,7 +2,7 @@
 title: Structure
 page_title: Structure | UI for WinForms Documentation
 description: Structure
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/structure
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/structure
 tags: structure
 published: True
 position: 1

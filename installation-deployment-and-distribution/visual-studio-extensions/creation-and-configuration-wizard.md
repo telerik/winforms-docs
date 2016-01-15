@@ -2,7 +2,7 @@
 title: Creation and configuration wizard
 page_title: Creation and configuration wizard | UI for WinForms Documentation
 description: Creation and configuration wizard
-slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/creation-and-configuration-wizard
+slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/creation-and-configuration-wizard
 tags: creation,and,configuration,wizard
 published: True
 position: 1

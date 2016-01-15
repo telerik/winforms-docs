@@ -2,7 +2,7 @@
 title: Use as RadGridView editor
 page_title: Use as RadGridView editor | UI for WinForms Documentation
 description: Use as RadGridView editor
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to/use-as-radgridview-editor
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to/use-as-radgridview-editor
 tags: use,as,radgridview,editor
 published: True
 position: 1

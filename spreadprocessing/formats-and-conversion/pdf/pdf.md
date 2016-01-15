@@ -2,7 +2,7 @@
 title: Overview
 page_title: PDF | UI for WinForms Documentation
 description: PDF
-slug: winforms/spread-processing/formats-and-conversion/pdf
+slug: winforms/spreadprocessing/formats-and-conversion/pdf
 tags: pdf
 published: True
 position: 0

@@ -2,7 +2,7 @@
 title: Customizing Items (visual appearance)
 page_title: Customizing Items (visual appearance) | UI for WinForms Documentation
 description: Customizing Items (visual appearance)
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/listcontrol/customizing-items-(visual-appearance)
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/customizing-items-(visual-appearance)
 tags: customizing,items,(visual,appearance)
 published: True
 position: 7

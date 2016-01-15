@@ -2,7 +2,7 @@
 title: What is a Row? What is a Column?
 page_title: What is a Row? What is a Column? | UI for WinForms Documentation
 description: What is a Row? What is a Column?
-slug: winforms/spread-processing/working-with-rows-and-columns/what-is-row-column
+slug: winforms/spreadprocessing/working-with-rows-and-columns/what-is-row-column
 tags: what,is,a,row,column?
 published: True
 position: 0
@@ -28,4 +28,4 @@ Similarly, columns expose several ways to set their width:
 
 * Auto Fit: The auto fit feature sets the width of a specified column based on the content of all cells in the column. The width of the column is determined by the cell containing the widest content.
 
-More information about setting row's height and column's width is available in the [Resizing Rows and Columns]({%slug winforms/spread-processing/working-with-rows-and-columns/resizing-rows-and-columns%}) article.
+More information about setting row's height and column's width is available in the [Resizing Rows and Columns]({%slug winforms/spreadprocessing/working-with-rows-and-columns/resizing-rows-and-columns%}) article.

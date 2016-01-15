@@ -2,7 +2,7 @@
 title: AutoCompleteModes
 page_title: AutoCompleteModes | UI for WinForms Documentation
 description: AutoCompleteModes
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/autocompletemodes
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/autocompletemodes
 tags: autocompletemodes
 published: True
 position: 5

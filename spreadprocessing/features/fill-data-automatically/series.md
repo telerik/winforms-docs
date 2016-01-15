@@ -2,7 +2,7 @@
 title: Series
 page_title: Series | UI for WinForms Documentation
 description: Series
-slug: winforms/spread-processing/features/fill-data-automatically/series
+slug: winforms/spreadprocessing/features/fill-data-automatically/series
 tags: series
 published: True
 position: 1
@@ -13,7 +13,7 @@ position: 1
 The document model has the ability to automatically construct series of data using a specified pattern or data that is already in the worksheet. The Auto Fill feature can continue series of numbers, dates, time periods, or number and text combinations based on start and step values. The automatic fill supports the following series: linear, growth, date and auto fill.
       
 
-To use the auto fill functionality, first you need to create a [CellSelection]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%}) for the range of cells that you want to populate. Note that the range should include starting values of the series. The __CellSelection__ offers the following methods for series construction:
+To use the auto fill functionality, first you need to create a [CellSelection]({%slug winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet%}) for the range of cells that you want to populate. Note that the range should include starting values of the series. The __CellSelection__ offers the following methods for series construction:
       
 
 * [FillDataSeriesLinear](#linear-series): Calculates the value of each cell after the initial values by adding a specific __Step__ value to the value of the previous cell.
@@ -348,6 +348,6 @@ __Figure 9__ demonstrates the result of __Example 7__.
 
 # See Also
 
- * [Accessing Cells of a Worksheet]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%})
+ * [Accessing Cells of a Worksheet]({%slug winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet%})
 
- * [Repeat Values]({%slug winforms/spread-processing/features/fill-data-automatically/repeat-values%})
+ * [Repeat Values]({%slug winforms/spreadprocessing/features/fill-data-automatically/repeat-values%})

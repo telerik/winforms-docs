@@ -2,7 +2,7 @@
 title: Shapes and Images
 page_title: Shapes and Images | UI for WinForms Documentation
 description: Shapes and Images
-slug: winforms/spread-processing/features/shapes-and-images
+slug: winforms/spreadprocessing/features/shapes-and-images
 tags: shapes,and,images
 published: True
 position: 13

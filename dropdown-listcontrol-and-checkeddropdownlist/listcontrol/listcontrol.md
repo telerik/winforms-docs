@@ -2,7 +2,7 @@
 title: ListControl
 page_title: ListControl | UI for WinForms Documentation
 description: ListControl
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/listcontrol
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol
 tags: listcontrol
 published: True
 position: 0

@@ -2,7 +2,7 @@
 title: Accessing Cells of a Worksheet
 page_title: Accessing Cells of a Worksheet | UI for WinForms Documentation
 description: Accessing Cells of a Worksheet
-slug: winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet
+slug: winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet
 tags: accessing,cells,of,a,worksheet
 published: True
 position: 2
@@ -155,5 +155,5 @@ Dim selection6 As CellSelection = worksheet.Cells(0, 0, 5, 5)
 ````
 
 {{endregion}} 
-Once you have a __CellSelection__ object you can get, set and clear the properties of the selected cells. More information about cell properties is available in the [Get, Set and Clear Cell Properties]({%slug winforms/spread-processing/working-with-cells/get,-set-and-clear-cell-properties%}) article.
+Once you have a __CellSelection__ object you can get, set and clear the properties of the selected cells. More information about cell properties is available in the [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%}) article.
         

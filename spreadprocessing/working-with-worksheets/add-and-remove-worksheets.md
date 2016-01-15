@@ -2,7 +2,7 @@
 title: Add and Remove Worksheets
 page_title: Add and Remove Worksheets | UI for WinForms Documentation
 description: Add and Remove Worksheets
-slug: winforms/spread-processing/working-with-worksheets/add-and-remove-worksheets
+slug: winforms/spreadprocessing/working-with-worksheets/add-and-remove-worksheets
 tags: add,and,remove,worksheets
 published: True
 position: 1
@@ -18,7 +18,7 @@ This article demonstrates how to add and remove worksheets from a workbook.
 
 ## Add Worksheets
 
-Adding a new worksheet to a workbook can be easily achieved through its __Worksheets__ collection. The collection exposes an __Add()__ method that does not take arguments and returns the instance of the newly created worksheet. By default worksheets are assigned the first available name in the sequence Sheet1, Sheet2, Sheet3… You can easily change the name of the worksheet through the __Worksheet.Name__ property. More information about renaming a worksheet is available in the [Rename a Worksheet]({%slug winforms/spread-processing/working-with-worksheets/rename-a-worksheet%}) article.
+Adding a new worksheet to a workbook can be easily achieved through its __Worksheets__ collection. The collection exposes an __Add()__ method that does not take arguments and returns the instance of the newly created worksheet. By default worksheets are assigned the first available name in the sequence Sheet1, Sheet2, Sheet3… You can easily change the name of the worksheet through the __Worksheet.Name__ property. More information about renaming a worksheet is available in the [Rename a Worksheet]({%slug winforms/spreadprocessing/working-with-worksheets/rename-a-worksheet%}) article.
         
 
 __Example 1__ creates a workbook from scratch and adds a single worksheet to it. Since this is the first worksheet in the workbook, it is also set as the active worksheet. All worksheets added after it will not become active.

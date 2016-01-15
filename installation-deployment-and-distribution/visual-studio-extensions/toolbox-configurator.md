@@ -2,7 +2,7 @@
 title: Toolbox configurator
 page_title: Toolbox configurator | UI for WinForms Documentation
 description: Toolbox configurator
-slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/toolbox-configurator
+slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/toolbox-configurator
 tags: toolbox,configurator
 published: True
 position: 5

@@ -2,7 +2,7 @@
 title: Theming
 page_title: Theming | UI for WinForms Documentation
 description: Theming
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/theming
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/theming
 tags: theming
 published: True
 position: 8

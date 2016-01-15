@@ -2,7 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events | UI for WinForms Documentation
 description: Properties and Events
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/properties-and-events
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/properties-and-events
 tags: properties,and,events
 published: True
 position: 6

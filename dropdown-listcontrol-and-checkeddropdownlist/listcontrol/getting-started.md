@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/listcontrol/getting-started
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/getting-started
 tags: getting,started
 published: True
 position: 2

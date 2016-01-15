@@ -2,7 +2,7 @@
 title: Custom Items
 page_title: Custom Items | UI for WinForms Documentation
 description: Custom Items
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/custom-items
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/custom-items
 tags: custom,items
 published: True
 position: 8

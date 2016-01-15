@@ -2,7 +2,7 @@
 title: Worksheet Page Setup
 page_title: Worksheet Page Setup | UI for WinForms Documentation
 description: Worksheet Page Setup
-slug: winforms/spread-processing/features/worksheet-page-setup
+slug: winforms/spreadprocessing/features/worksheet-page-setup
 tags: worksheet,page,setup
 published: True
 position: 14

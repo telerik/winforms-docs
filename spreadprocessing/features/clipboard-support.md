@@ -2,7 +2,7 @@
 title: Clipboard Support
 page_title: Clipboard Support | UI for WinForms Documentation
 description: Clipboard Support
-slug: winforms/spread-processing/features/clipboard-support
+slug: winforms/spreadprocessing/features/clipboard-support
 tags: clipboard,support
 published: True
 position: 4
@@ -153,4 +153,4 @@ worksheet.Cells(3, 0).Paste(worksheetFragment, valuesAndFormatting)
 
 # See Also
 
-* [CellSelection]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%})
+* [CellSelection]({%slug winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet%})

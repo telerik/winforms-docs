@@ -2,7 +2,7 @@
 title: Changes
 page_title: Changes | UI for WinForms Documentation
 description: Changes
-slug: winforms/spread-processing/changes-and-backward-compatibility/changes
+slug: winforms/spreadprocessing/changes-and-backward-compatibility/changes
 tags: changes
 published: True
 position: 0
@@ -68,11 +68,11 @@ __What's Fixed__
 
 ## What's New in 2014 Q2
 
-* [Filtering]({%slug winforms/spread-processing/features/filtering%})
+* [Filtering]({%slug winforms/spreadprocessing/features/filtering%})
 
-* [Sorting]({%slug winforms/spread-processing/features/sorting%})
+* [Sorting]({%slug winforms/spreadprocessing/features/sorting%})
 
-* [Export to PDF]({%slug winforms/spread-processing/formats-and-conversion/pdf%})
+* [Export to PDF]({%slug winforms/spreadprocessing/formats-and-conversion/pdf%})
 
 * Error cell value
             

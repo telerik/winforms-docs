@@ -2,7 +2,7 @@
 title: Resizing Rows and Columns
 page_title: Resizing Rows and Columns | UI for WinForms Documentation
 description: Resizing Rows and Columns
-slug: winforms/spread-processing/working-with-rows-and-columns/resizing-rows-and-columns
+slug: winforms/spreadprocessing/working-with-rows-and-columns/resizing-rows-and-columns
 tags: resizing,rows,and,columns
 published: True
 position: 2

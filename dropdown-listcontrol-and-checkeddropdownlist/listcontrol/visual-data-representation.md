@@ -2,7 +2,7 @@
 title: Visual Data Representation
 page_title: Visual Data Representation | UI for WinForms Documentation
 description: Visual Data Representation
-slug: winforms/dropdown,-listcontrol-and-checkeddropdownlist/listcontrol/visual-data-representation
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/visual-data-representation
 tags: visual,data,representation
 published: True
 position: 6

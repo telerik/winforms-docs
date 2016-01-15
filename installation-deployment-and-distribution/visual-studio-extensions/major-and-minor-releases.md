@@ -2,7 +2,7 @@
 title: Major and Minor releases
 page_title: Major and Minor releases | UI for WinForms Documentation
 description: Major and Minor releases
-slug: winforms/installation,-deployment-and-distribution/visual-studio-extensions/major-and-minor-releases
+slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/major-and-minor-releases
 tags: major,and,minor,releases
 published: True
 position: 8

@@ -2,7 +2,7 @@
 title: Formulas
 page_title: Formulas | UI for WinForms Documentation
 description: Formulas
-slug: winforms/spread-processing/features/formulas
+slug: winforms/spreadprocessing/features/formulas
 tags: formulas
 published: True
 position: 0
@@ -18,18 +18,18 @@ A formula is an algebraic expression that contains values, operators, functions,
 * __Values__: Expressions can contain numbers, booleans, strings, arrays. For example, all of the following formulas represent valid expressions that contain values of different type: =3+4, ="Rad"&"Spreadsheet", =AND(TRUE, FALSE), =SUM({1, 2; 3, 4}).
           
 
-* __Operators__: Formulas can include arithmetic, comparison, cell reference, and text operators. Examples of expressions that use operators are:          =-1+2, =B1<=4, =SUM(A1:B4), ="Rad"&"Spreadsheet". More information about the supported operators can be found in the [Operator]({%slug winforms/spread-processing/features/formulas/operator%}) article.
+* __Operators__: Formulas can include arithmetic, comparison, cell reference, and text operators. Examples of expressions that use operators are:          =-1+2, =B1<=4, =SUM(A1:B4), ="Rad"&"Spreadsheet". More information about the supported operators can be found in the [Operator]({%slug winforms/spreadprocessing/features/formulas/operator%}) article.
           
 
-* __Cell references__: Formulas can contain references to cells or ranges of cells. For example, the expression *=B1+B2* adds the values of cells B1 and B2 of the current worksheet, while the formula *=SUM(B1:B5)* sums up the values of all cells between B1 and B5. Further information about cell references is available in the [Cell References]({%slug winforms/spread-processing/features/formulas/cell-references%}) article.
+* __Cell references__: Formulas can contain references to cells or ranges of cells. For example, the expression *=B1+B2* adds the values of cells B1 and B2 of the current worksheet, while the formula *=SUM(B1:B5)* sums up the values of all cells between B1 and B5. Further information about cell references is available in the [Cell References]({%slug winforms/spreadprocessing/features/formulas/cell-references%}) article.
           
 
-* __Built-in functions__: You can take advantage of a large set of predefined functions that can be directly included in expressions. Examples of formulas that use built-in functions are: *=ABS(-5), =COS(PI()), =AND(B1, B2)<>OR(C1, C2)*. You can find the full list in the [Functions]({%slug winforms/spread-processing/features/formulas/functions%}) article.
+* __Built-in functions__: You can take advantage of a large set of predefined functions that can be directly included in expressions. Examples of formulas that use built-in functions are: *=ABS(-5), =COS(PI()), =AND(B1, B2)<>OR(C1, C2)*. You can find the full list in the [Functions]({%slug winforms/spreadprocessing/features/formulas/functions%}) article.
           
 
 ## Get and set formulas in cells
 
-In order to set the value of a cell to a formula use the __SetValue()__ method of the [CellSelection]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%}) class and pass the formula string as an argument. In order to produce a formula value the string you enter should start with either __=__ (equal) or __–__ (minus) sign, otherwise, the method treats the input as plain text.
+In order to set the value of a cell to a formula use the __SetValue()__ method of the [CellSelection]({%slug winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet%}) class and pass the formula string as an argument. In order to produce a formula value the string you enter should start with either __=__ (equal) or __–__ (minus) sign, otherwise, the method treats the input as plain text.
         
 
 __Example 1__ creates a workbook from scratch and adds a worksheet. Further, the code assigns the value =3+4 to cell A1.
@@ -104,6 +104,6 @@ End If
 
 # See Also
 
- * [Accessing Cells of a Worksheet]({%slug winforms/spread-processing/working-with-cells/accessing-cells-of-a-worksheet%})
+ * [Accessing Cells of a Worksheet]({%slug winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet%})
 
- * [Get, Set and Clear Cell Properties]({%slug winforms/spread-processing/working-with-cells/get,-set-and-clear-cell-properties%})
+ * [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%})

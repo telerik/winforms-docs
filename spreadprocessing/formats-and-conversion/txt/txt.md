@@ -2,7 +2,7 @@
 title: Overview
 page_title: Txt | UI for WinForms Documentation
 description: Txt
-slug: winforms/spread-processing/formats-and-conversion/txt
+slug: winforms/spreadprocessing/formats-and-conversion/txt
 tags: txt
 published: True
 position: 0

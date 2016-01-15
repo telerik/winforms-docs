@@ -2,7 +2,7 @@
 title: Format Providers Manager
 page_title: Format Providers Manager | UI for WinForms Documentation
 description: Format Providers Manager
-slug: winforms/spread-processing/formats-and-conversion/format-providers-manager
+slug: winforms/spreadprocessing/formats-and-conversion/format-providers-manager
 tags: format,providers,manager
 published: True
 position: 1

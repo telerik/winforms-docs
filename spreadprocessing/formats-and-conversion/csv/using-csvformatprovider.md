@@ -2,7 +2,7 @@
 title: Using CsvFormatProvider
 page_title: Using CsvFormatProvider | UI for WinForms Documentation
 description: Using CsvFormatProvider
-slug: winforms/spread-processing/formats-and-conversion/csv/using-csvformatprovider
+slug: winforms/spreadprocessing/formats-and-conversion/csv/using-csvformatprovider
 tags: using,csvformatprovider
 published: True
 position: 1

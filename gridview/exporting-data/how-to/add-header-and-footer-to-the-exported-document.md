@@ -17,7 +17,7 @@ This article will show how you can add header and footer to your exported docume
 
 ## 
 
-The [spread export]({%slug winforms/gridview/exporting-data/spread-export-%}) functionality gives you access to the exported document. It can be accessed in the __WorkbookCreated__ event. The following steps are showing how you can use this event to add header and footer.
+The [spread export]({%slug winforms/gridview/exporting-data/spread-export%}) functionality gives you access to the exported document. It can be accessed in the __WorkbookCreated__ event. The following steps are showing how you can use this event to add header and footer.
 
 1\. You can use the following code to initialize the exporter and subscribe to the event.
 

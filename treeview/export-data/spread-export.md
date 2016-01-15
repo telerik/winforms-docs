@@ -10,7 +10,7 @@ position: 0
 
 # Spread Export
 
-__TreeViewSpreadExport__ utilizes our [RadSpreadProcessing]({%slug winforms/spread-processing%}) libraries to export the contents of __RadTreeView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how you can use it.
+__TreeViewSpreadExport__ utilizes our [RadSpreadProcessing]({%slug winforms/spreadprocessing%}) libraries to export the contents of __RadTreeView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how you can use it.
  
 * [Exporting Data](#exporting-data)
 
@@ -28,7 +28,7 @@ Here is how the following RadTreeView, looks when it is exported.
 * Telerik.WinControls.TelerikExport
 >
 
->important Since this functionality is using the [RadSpreadProcessingLibrary]({%slug winforms/spread-processing%}) you need to reference the following assemblies as well:
+>important Since this functionality is using the [RadSpreadProcessingLibrary]({%slug winforms/spreadprocessing%}) you need to reference the following assemblies as well:
 * Telerik.Windows.Documents.Core
 * Telerik.Windows.Documents.Fixed
 * Telerik.Windows.Documents.Spreadsheet

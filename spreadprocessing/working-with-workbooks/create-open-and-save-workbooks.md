@@ -2,7 +2,7 @@
 title: Create, Open and Save Workbooks
 page_title: Create, Open and Save Workbooks | UI for WinForms Documentation
 description: Create, Open and Save Workbooks
-slug: winforms/spread-processing/working-with-workbooks/create,-open-and-save-workbooks
+slug: winforms/spreadprocessing/working-with-workbooks/create,-open-and-save-workbooks
 tags: create,,open,and,save,workbooks
 published: True
 position: 1
@@ -73,7 +73,7 @@ webClient.OpenReadAsync(New Uri(FilePath))
 
 {{endregion}} 
 
-More information about import is available in the [Formats and Conversion]({%slug winforms/spread-processing/formats-and-conversion%}) section.
+More information about import is available in the [Formats and Conversion]({%slug winforms/spreadprocessing/formats-and-conversion%}) section.
 
 
 ## Save a Workbook
@@ -109,4 +109,4 @@ End Using
 
 {{endregion}} 
 
-More information about export is available in the [Formats and Conversion]({%slug winforms/spread-processing/formats-and-conversion%}) section.
+More information about export is available in the [Formats and Conversion]({%slug winforms/spreadprocessing/formats-and-conversion%}) section.

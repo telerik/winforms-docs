@@ -2,7 +2,7 @@
 title: Freeze Panes
 page_title: Freeze Panes | UI for WinForms Documentation
 description: Freeze Panes
-slug: winforms/spread-processing/features/freeze-panes
+slug: winforms/spreadprocessing/features/freeze-panes
 tags: freeze,panes
 published: True
 position: 6
@@ -196,4 +196,4 @@ workbook.ActiveWorksheet.ViewState.Pane = Nothing
 
 # See Also
 
- * [What is a Worksheet?]({%slug winforms/spread-processing/working-with-worksheets/what-is-a-worksheet?%})
+ * [What is a Worksheet?]({%slug winforms/spreadprocessing/working-with-worksheets/what-is-a-worksheet?%})

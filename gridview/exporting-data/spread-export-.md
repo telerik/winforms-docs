@@ -2,7 +2,7 @@
 title: Spread export 
 page_title: Spread export  | UI for WinForms Documentation
 description: Spread export 
-slug: winforms/gridview/exporting-data/spread-export-
+slug: winforms/gridview/exporting-data/spread-export
 tags: spread,export,
 published: True
 position: 1
@@ -10,7 +10,7 @@ position: 1
 
 # Spread export 
 
-__GridViewSpreadExport__ utilizes our [RadSpreadProcessing]({%slug winforms/spread-processing%}) libraries to export the contents of __RadGridView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how to use it.
+__GridViewSpreadExport__ utilizes our [RadSpreadProcessing]({%slug winforms/spreadprocessing%}) libraries to export the contents of __RadGridView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how to use it.
 
 * [Exporting Data](#exporting-data)
 
@@ -24,7 +24,7 @@ Here is how the following grid, looks when exported.<br>![gridview-exporting-dat
 * Telerik.WinControls.TelerikExport
 >
 
->important Since this functionality is using the [RadSpreadProcessingLibrary]({%slug winforms/spread-processing%}) you need to reference the following assemblies as well:
+>important Since this functionality is using the [RadSpreadProcessingLibrary]({%slug winforms/spreadprocessing%}) you need to reference the following assemblies as well:
 * Telerik.Windows.Documents.Core
 * Telerik.Windows.Documents.Fixed
 * Telerik.Windows.Documents.Spreadsheet
@@ -146,7 +146,7 @@ Each column in RadGridView has __ExcelExportType__ property which can be used fo
 
 __CellFormatting__: This event is used to format the cells to be exported. The event arguments provide:
 
-* *CellSelection*:  After casting to the __CellSelection__ class, provides access to the excel cells selection. More information about the abilities this object introduces, can be found here: [Get, Set and Clear Cell Properties]({%slug winforms/spread-processing/working-with-cells/get,-set-and-clear-cell-properties%}).
+* *CellSelection*:  After casting to the __CellSelection__ class, provides access to the excel cells selection. More information about the abilities this object introduces, can be found here: [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%}).
 
 * *CellStyleInfo*: This object is a wrapper of the CellSelection object, and allows to easier modification of the most common appearance settings.
 

@@ -2,7 +2,7 @@
 title: Backwards Compatibility
 page_title: Backwards Compatibility | UI for WinForms Documentation
 description: Backwards Compatibility
-slug: winforms/spread-processing/changes-and-backward-compatibility/backwards-compatibility
+slug: winforms/spreadprocessing/changes-and-backward-compatibility/backwards-compatibility
 tags: backwards,compatibility
 published: True
 position: 1

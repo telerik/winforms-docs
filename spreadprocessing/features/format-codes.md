@@ -2,7 +2,7 @@
 title: Format Codes
 page_title: Format Codes | UI for WinForms Documentation
 description: Format Codes
-slug: winforms/spread-processing/features/format-codes
+slug: winforms/spreadprocessing/features/format-codes
 tags: number,formatting, codes
 published: True
 position: 11
@@ -307,4 +307,4 @@ Table 4
 
 # See Also
 
-* [Number Formatting]({%slug winforms/spread-processing/features/number-formatting%})
+* [Number Formatting]({%slug winforms/spreadprocessing/features/number-formatting%})

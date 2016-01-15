@@ -2,7 +2,7 @@
 title: Number Formatting
 page_title: Number Formatting | UI for WinForms Documentation
 description: Number Formatting
-slug: winforms/spread-processing/features/number-formatting
+slug: winforms/spreadprocessing/features/number-formatting
 tags: number,formatting
 published: True
 position: 12
