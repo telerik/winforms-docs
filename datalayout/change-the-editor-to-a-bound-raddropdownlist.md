@@ -5,7 +5,7 @@ description: Change the Editor to a Bound RadDropDownList
 slug: winforms/datalayout/change-the-editor-to-a-bound-raddropdownlist
 tags: change,the,editor,to,a,bound,raddropdownlist
 published: True
-position: 7
+position: 8
 ---
 
 # Change the Editor to a Bound RadDropDownList

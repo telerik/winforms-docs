@@ -5,7 +5,7 @@ description: Properties, Events and Attributes
 slug: winforms/datalayout/properties,-events-and-attributes
 tags: properties,,events,and,attributes
 published: True
-position: 2
+position: 3
 ---
 
 # Properties, Events and Attributes

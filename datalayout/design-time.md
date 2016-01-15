@@ -5,7 +5,7 @@ description: Design Time
 slug: winforms/datalayout/design-time
 tags: design,time
 published: True
-position: 0
+position: 1
 ---
 
 # Design Time

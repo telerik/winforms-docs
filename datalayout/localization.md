@@ -5,7 +5,7 @@ description: Localization
 slug: winforms/datalayout/localization
 tags: localization
 published: True
-position: 6
+position: 7
 ---
 
 # Localization

@@ -5,7 +5,7 @@ description: Save/Load Layout
 slug: winforms/datalayout/save/load-layout
 tags: save/load,layout
 published: True
-position: 5
+position: 6
 ---
 
 # Save/Load Layout
