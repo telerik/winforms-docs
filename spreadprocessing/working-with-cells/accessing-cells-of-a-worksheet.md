@@ -155,5 +155,5 @@ Dim selection6 As CellSelection = worksheet.Cells(0, 0, 5, 5)
 ````
 
 {{endregion}} 
-Once you have a __CellSelection__ object you can get, set and clear the properties of the selected cells. More information about cell properties is available in the [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%}) article.
+Once you have a __CellSelection__ object you can get, set and clear the properties of the selected cells. More information about cell properties is available in the [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get-set-and-clear-cell-properties%}) article.
         

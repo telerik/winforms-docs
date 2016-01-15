@@ -106,4 +106,4 @@ End If
 
  * [Accessing Cells of a Worksheet]({%slug winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-worksheet%})
 
- * [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%})
+ * [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get-set-and-clear-cell-properties%})

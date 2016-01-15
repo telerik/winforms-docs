@@ -232,7 +232,7 @@ More information regarding cell value types is available in the  [Cell Value Typ
 
  * [Cell Value Types]({%slug winforms/spreadprocessing/working-with-cells/cell-value-types%})
 
- * [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%})
+ * [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get-set-and-clear-cell-properties%})
 
  * [Shapes and Images]({%slug winforms/spreadprocessing/features/shapes-and-images%})
 

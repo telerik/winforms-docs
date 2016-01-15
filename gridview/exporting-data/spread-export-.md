@@ -146,7 +146,7 @@ Each column in RadGridView has __ExcelExportType__ property which can be used fo
 
 __CellFormatting__: This event is used to format the cells to be exported. The event arguments provide:
 
-* *CellSelection*:  After casting to the __CellSelection__ class, provides access to the excel cells selection. More information about the abilities this object introduces, can be found here: [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%}).
+* *CellSelection*:  After casting to the __CellSelection__ class, provides access to the excel cells selection. More information about the abilities this object introduces, can be found here: [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get-set-and-clear-cell-properties%}).
 
 * *CellStyleInfo*: This object is a wrapper of the CellSelection object, and allows to easier modification of the most common appearance settings.
 

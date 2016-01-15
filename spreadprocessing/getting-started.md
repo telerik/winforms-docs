@@ -88,7 +88,7 @@ Dim worksheet As Worksheet = workbook.Worksheets.Add()
 
 {{endregion}} 
 
-You can then create a [CellSelection]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%}) and set any value to the selected cells. __Example 2__ shows how you can create a cell and set a string value to it.
+You can then create a [CellSelection]({%slug winforms/spreadprocessing/working-with-cells/get-set-and-clear-cell-properties%}) and set any value to the selected cells. __Example 2__ shows how you can create a cell and set a string value to it.
 
 #### Example 2: Set Value of Cell
 
@@ -144,6 +144,6 @@ End Using
 
  * [What is a Worksheet?]({%slug winforms/spreadprocessing/working-with-worksheets/what-is-a-worksheet?%})
 
- * [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties%})
+ * [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get-set-and-clear-cell-properties%})
 
  * [Xlsx]({%slug winforms/spreadprocessing/formats-and-conversion/xlsx%})

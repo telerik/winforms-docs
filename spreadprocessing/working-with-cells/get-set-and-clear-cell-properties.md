@@ -2,7 +2,7 @@
 title: Get, Set and Clear Cell Properties
 page_title: Get, Set and Clear Cell Properties | UI for WinForms Documentation
 description: Get, Set and Clear Cell Properties
-slug: winforms/spreadprocessing/working-with-cells/get,-set-and-clear-cell-properties
+slug: winforms/spreadprocessing/working-with-cells/get-set-and-clear-cell-properties
 tags: get,,set,and,clear,cell,properties
 published: True
 position: 3
