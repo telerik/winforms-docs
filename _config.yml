@@ -5,10 +5,10 @@ site_name: WinForms
 exclude: [README.md,Gemfile,Gemfile.lock]
 navigation:
 ## List your directory names and order here, like this:
-    installation,-deployment-and-distribution:
+    installation-deployment-and-distribution:
         title: Installation, Deployment and Distribution
         position: 4
-    installation,-deployment-and-distribution/visual-studio-extensions:
+    installation-deployment-and-distribution/visual-studio-extensions:
         title: Visual Studio Extensions
         position: 6
     licensing:
@@ -212,25 +212,25 @@ navigation:
     desktopalert:
         title: DesktopAlert
         position: 19
-    dropdown,-listcontrol-and-checkeddropdownlist:
+    dropdown-listcontrol-and-checkeddropdownlist:
         title: DropDown and ListControl
         position: 20
-    dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist:
+    dropdown-listcontrol-and-checkeddropdownlist/dropdownlist:
         title: DropDownList
         position: 1
-    dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data:
+    dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data:
         title: Populating with Data
         position: 5
-    dropdown,-listcontrol-and-checkeddropdownlist/listcontrol:
+    dropdown-listcontrol-and-checkeddropdownlist/listcontrol:
         title: ListControl
         position: 2
-    dropdown,-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop:
+    dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop:
         title: Drag and Drop
         position: 5
-    dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist:
+    dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist:
         title: CheckedDropDownList
         position: 3
-    dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to:
+    dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to:
         title: How-To
         position: 7
     editors:
@@ -728,52 +728,52 @@ navigation:
     splitcontainer:
         title: SplitContainer
         position: 45
-    spread-processing:
+    spreadprocessing:
         title: SpreadProcessing
         position: 46
-    spread-processing/changes-and-backward-compatibility:
+    spreadprocessing/changes-and-backward-compatibility:
         title: Changes and Backward Compatibility
         position: 2
-    spread-processing/working-with-workbooks:
+    spreadprocessing/working-with-workbooks:
         title: Working with Workbooks
         position: 3
-    spread-processing/working-with-worksheets:
+    spreadprocessing/working-with-worksheets:
         title: Working with Worksheets
         position: 4
-    spread-processing/working-with-rows-and-columns:
+    spreadprocessing/working-with-rows-and-columns:
         title: Working with Rows and Columns
         position: 5
-    spread-processing/working-with-cells:
+    spreadprocessing/working-with-cells:
         title: Working with Cells
         position: 6
-    spread-processing/formats-and-conversion:
+    spreadprocessing/formats-and-conversion:
         title: Formats and Conversion
         position: 7
-    spread-processing/formats-and-conversion/xlsx:
+    spreadprocessing/formats-and-conversion/xlsx:
         title: Xlsx
         position: 2
-    spread-processing/formats-and-conversion/pdf:
+    spreadprocessing/formats-and-conversion/pdf:
         title: PDF
         position: 3
-    spread-processing/formats-and-conversion/csv:
+    spreadprocessing/formats-and-conversion/csv:
         title: Csv
         position: 4
-    spread-processing/formats-and-conversion/txt:
+    spreadprocessing/formats-and-conversion/txt:
         title: Txt
         position: 5
-    spread-processing/features:
+    spreadprocessing/features:
         title: Features
         position: 8
-    spread-processing/features/fill-data-automatically:
+    spreadprocessing/features/fill-data-automatically:
         title: Fill Data Automatically
         position: 0
-    spread-processing/features/formulas:
+    spreadprocessing/features/formulas:
         title: Formulas
         position: 1
-    spread-processing/features/protection:
+    spreadprocessing/features/protection:
         title: Protection
         position: 2
-    spread-processing/features/styling:
+    spreadprocessing/features/styling:
         title: Styling
         position: 3
     track-and-status-controls:
