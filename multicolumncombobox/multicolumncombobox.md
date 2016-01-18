@@ -23,7 +23,7 @@ The image below represents the structure of the multi-column combobox.
 
 
 
-The drop-down element is an object of type __MultiColumnComboBoxElement__. Use this element to set the [drop-down style](8A628922-8097-4004-86BC-FC9867F69520), [animation](B5F911BA-D4C6-49B8-8F1E-8D01A95F4DC6) and [sizing](F67129EE-E012-4983-8E3B-8A83BA1FD5B2) as you would do for the regular combobox.  
+The drop-down element is an object of type __MultiColumnComboBoxElement__. Use this element to set the [drop-down style]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdownstyle%}), [animation]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/animation-effects%}) and [sizing]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdown-resizing%}) as you would do for the regular combobox.  
 
 The __EditorControl__ property of the __MultiColumnComboBoxElement__ gives you a reference to the __RadGridView__ control. Using that reference you can obtain the RadGridView object and work as with normal RadGridView control. Refer to RadGridView documentation for additional information on RadGridView.
 
