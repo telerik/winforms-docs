@@ -92,7 +92,7 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 
 	* [AutoCompleteBox]({%slug winforms/editors/autocompletebox%})
 
-	* [BrowseEditor]({%slug winforms/editors/browse-editor%})
+	* [BrowseEditor]({%slug winforms/editors/browseeditor%})
 	
 	* [CalculatorDropDown]({%slug winforms/editors/calculatordropdown%})
 

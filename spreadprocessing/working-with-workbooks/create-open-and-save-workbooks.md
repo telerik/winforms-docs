@@ -2,7 +2,7 @@
 title: Create, Open and Save Workbooks
 page_title: Create, Open and Save Workbooks | UI for WinForms Documentation
 description: Create, Open and Save Workbooks
-slug: winforms/spreadprocessing/working-with-workbooks/create,-open-and-save-workbooks
+slug: winforms/spreadprocessing/working-with-workbooks/create-open-and-save-workbooks
 tags: create,,open,and,save,workbooks
 published: True
 position: 1

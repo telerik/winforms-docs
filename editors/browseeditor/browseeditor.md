@@ -2,7 +2,7 @@
 title: Overview
 page_title: Browse Editor | UI for WinForms Documentation
 description: Browse Editor
-slug: winforms/editors/browse-editor
+slug: winforms/editors/browseeditor
 tags: browse,editor
 published: True
 position: 0

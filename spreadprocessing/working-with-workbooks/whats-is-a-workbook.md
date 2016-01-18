@@ -18,7 +18,7 @@ The workbook lays in the core of the RadSpreadProcessing' and RadSpreadsheet doc
 
 The workbook is designed to hold together multiple worksheets in order to allow efficient organization and consolidation of data. Typically, a workbook has a single theme and contains worksheets with related data. For example, an annual budget workbook may comprise four worksheets that break down the budget in quarters.
         
-You can create a workbook from scratch or import an existing document. To save a document you can export its contents into a csv, txt or xlsx file. Further information is available in the [Create, Open and Save Workbooks]({%slug winforms/spreadprocessing/working-with-workbooks/create,-open-and-save-workbooks%}) article and the [Formats and Conversion]({%slug winforms/spreadprocessing/formats-and-conversion%}) section.
+You can create a workbook from scratch or import an existing document. To save a document you can export its contents into a csv, txt or xlsx file. Further information is available in the [Create, Open and Save Workbooks]({%slug winforms/spreadprocessing/working-with-workbooks/create-open-and-save-workbooks%}) article and the [Formats and Conversion]({%slug winforms/spreadprocessing/formats-and-conversion%}) section.
 
 ## What is in it?
 

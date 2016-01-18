@@ -2,7 +2,7 @@
 title: Customization
 page_title: Customization | UI for WinForms Documentation
 description: Customization
-slug: winforms/editors/time-picker/customization
+slug: winforms/editors/timepicker/customization
 tags: customization
 published: True
 position: 3
@@ -12,7 +12,7 @@ position: 3
 
 
 
-Each of the control's elements can be accessed and customized. At the [Structure, properties and events article]({%slug winforms/editors/time-picker/structure,-properties-and-events%}) , you can find what is the control's structure. Once you access the desired elements, you can tweak its properties in order to modify it. In this tutorial, we will take a look at code snippets, demonstrating how to access and modify different parts of the control:
+Each of the control's elements can be accessed and customized. At the [Structure, properties and events article]({%slug winforms/editors/timepicker/structure,-properties-and-events%}) , you can find what is the control's structure. Once you access the desired elements, you can tweak its properties in order to modify it. In this tutorial, we will take a look at code snippets, demonstrating how to access and modify different parts of the control:
       
 
 ## Customize text box

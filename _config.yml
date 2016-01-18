@@ -239,7 +239,7 @@ navigation:
     editors/autocompletebox:
         title: AutoCompleteBox
         position: 0		
-    editors/browse-editor:
+    editors/browseeditor:
         title: BrowseEditor
         position: 1
     editors/calculatordropdown:
@@ -269,7 +269,7 @@ navigation:
     editors/textboxcontrol:
         title: TextBoxControl
         position: 8
-    editors/time-picker:
+    editors/timepicker:
         title: TimePicker
         position: 9
     editors/popupeditor:

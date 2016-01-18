@@ -2,7 +2,7 @@
 title: Localization
 page_title: Localization | UI for WinForms Documentation
 description: Localization
-slug: winforms/editors/time-picker/localization
+slug: winforms/editors/timepicker/localization
 tags: localization
 published: True
 position: 4

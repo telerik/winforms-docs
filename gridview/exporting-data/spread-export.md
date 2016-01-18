@@ -223,7 +223,9 @@ End Sub
 
 ![gridview-exporting-data-spread-export 003](images/gridview-exporting-data-spread-export003.png)
 
-__WorkbookCreated__: This event is triggered on the __SpreadExportRenderer__ object when the workbook is ready to be exported. Allows to introduce final customizations (for example you can add [header and footer]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})). More information on how to work with Workbook is available here: [Working with Workbooks](76c31a52-0999-4bfb-bc1d-ee0e6f56b6c0).
+__WorkbookCreated__: This event is triggered on the __SpreadExportRenderer__ object when the workbook is ready to be exported. Allows to introduce final customizations (for example you can add [header and footer]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})). More information on how to work with Workbook is available here: [Working with Workbooks]({%slug winforms/spreadprocessing/working-with-workbooks/create-open-and-save-workbooks%}).
+
+
 
 __ChildViewExporting__ - this event is used to specify which child view to be exported, for each exported row, during the export. Will be triggered only when the __ChildViewExportMode__ is set to *SelectViewToExport*. The event arguments provide the __ParentRow__ which active view should be set via the __ActiveViewIndex__ property.
 

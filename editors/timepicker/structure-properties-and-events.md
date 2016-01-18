@@ -2,7 +2,7 @@
 title: Structure, Properties and Events
 page_title: Structure, Properties and Events | UI for WinForms Documentation
 description: Structure, Properties and Events
-slug: winforms/editors/time-picker/structure,-properties-and-events
+slug: winforms/editors/timepicker/structure,-properties-and-events
 tags: structure,,properties,and,events
 published: True
 position: 2

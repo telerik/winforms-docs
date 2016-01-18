@@ -2,7 +2,7 @@
 title: Working with RadBrowseEditor
 page_title: Working with RadBrowseEditor | UI for WinForms Documentation
 description: Working with RadBrowseEditor
-slug: winforms/editors/browse-editor/working-with-radbrowseeditor
+slug: winforms/editors/browseeditor/working-with-radbrowseeditor
 tags: working,with,radbrowseeditor
 published: True
 position: 2

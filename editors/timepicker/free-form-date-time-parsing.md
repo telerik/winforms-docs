@@ -2,7 +2,7 @@
 title: Free Form Date Time Parsing
 page_title: Free Form Date Time Parsing | UI for WinForms Documentation
 description: Free Form Date Time Parsing
-slug: winforms/editors/time-picker/free-form-date-time-parsing
+slug: winforms/editors/timepicker/free-form-date-time-parsing
 tags: free,form,date,time,parsing
 published: True
 position: 5

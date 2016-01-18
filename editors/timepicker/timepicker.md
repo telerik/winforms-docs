@@ -2,7 +2,7 @@
 title: Overview
 page_title: Time Picker | UI for WinForms Documentation
 description: Time Picker
-slug: winforms/editors/time-picker
+slug: winforms/editors/timepicker
 tags: time,picker
 published: True
 position: 0

@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
-slug: winforms/editors/time-picker/getting-started
+slug: winforms/editors/timepicker/getting-started
 tags: getting,started
 published: True
 position: 1
