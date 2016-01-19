@@ -86,7 +86,7 @@ The password to be used if the document is encrypted. The default password is em
 
 __ImageQuality__
 
-The ImageQuality property specifies the quality with which images are exported to PDF. The higher the quality, the bigger the PDF document. Possible values for this property are High, Medium, and Low. The default quality is Medium.
+The ImageQuality property specifies the quality with which images are exported to PDF. More information about how it works is available in [this article]({%slug radpdfprocessing-concepts-imagequality%}).
         
 
 __ComplianceLevel__

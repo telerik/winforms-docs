@@ -61,7 +61,8 @@ Dim textFragmentWithText As TextFragment = container.Content.AddTextFragment("Te
 {{endregion}} 
 
 >tip  __TextFragment__ represents a single line of text. In order to make your text "flows" in a document you should make sure all fragments you add can fit in a line or you can use[FixedContentEditor]({%slug winforms/pdfprocessing/editing/fixedcontenteditor%}).
->
+
+>The '\r' and '\n' characters don't have the usual meaning of "go to next line" when they are inserted in a PDF document and you cannot simply insert text containing these characters to produce multiline text. Instead, you should split the text and insert it line by line. 
 
 ## Modifying a TextFragment
 

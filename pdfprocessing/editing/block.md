@@ -56,6 +56,8 @@ block.InsertText(New System.Windows.Media.FontFamily("Arial"), "Text")
 
 {{endregion}}
 
+>The '\r' and '\n' characters don't have the usual meaning of "go to next line" when they are inserted in a PDF document and you cannot simply insert text containing these characters to produce multiline text. Instead, you should insert a line break.
+
 ### Inserting Line Break
 
 Inserting a line break results in the next element starting on a new line. The action is achieved with the __InsertLineBreak()__ method as shown in __Example 3__.

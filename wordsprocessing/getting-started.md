@@ -14,7 +14,7 @@ position: 1
 
 This tutorial will take you through the creation of a sample application that uses RadWordsProcessing.
 
-* [Assembly Reference](#assembly-references)
+* [Assembly References](#assembly-references)
 
 * [Creating RadFlowDocument from Code](#creating-radflowdocument-from-code)
 
@@ -47,6 +47,8 @@ Here is a list of assemblies that contain the __RadWordsProcessing__ functionali
 
 Here is how to create a [RadFlowDocument]({%slug winforms/wordsprocessing/model/radflowdocument%}) and insert some text content.
 
+#### Example 1: Create RadFlowDocument Programmatically
+
 {{source=..\SamplesCS\WordsProcessing\WordsProcessingGettingStarted.cs region=radwordsprocessing-getting-started_0}} 
 {{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_0}} 
 
@@ -78,6 +80,8 @@ You need to add using directive to the following namespaces:
 
 Exporting the document to Docx file can be achieved with the [DocxFormatProvider]({%slug winforms/wordsprocessing/formats-and-conversion/docx/using-docxformatprovider%}). Here is how to create a provider instance and save a document with it:
 
+#### Example 2: Export RadFlowDocument to Docx
+
 {{source=..\SamplesCS\WordsProcessing\WordsProcessingGettingStarted.cs region=radwordsprocessing-getting-started_1}} 
 {{source=..\SamplesVB\WordsProcessing\WordsProcessingGettingStarted.vb region=radwordsprocessing-getting-started_1}} 
 
@@ -100,4 +104,8 @@ End Using
 {{endregion}}
 
 More information about the supported formats and features can be found [here](b61690b2-afed-4616-be13-20a38078c066).
+
+# See Also
+
+* [Model]({%slug winforms/wordsprocessing/model%})
         

@@ -735,16 +735,16 @@ navigation:
         title: Changes and Backward Compatibility
         position: 2
     spreadprocessing/working-with-workbooks:
-        title: Working with Workbooks
+        title: Workbooks
         position: 3
     spreadprocessing/working-with-worksheets:
-        title: Working with Worksheets
+        title: Worksheets
         position: 4
     spreadprocessing/working-with-rows-and-columns:
         title: Working with Rows and Columns
         position: 5
     spreadprocessing/working-with-cells:
-        title: Working with Cells
+        title: Cells
         position: 6
     spreadprocessing/formats-and-conversion:
         title: Formats and Conversion
