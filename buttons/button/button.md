@@ -6,6 +6,7 @@ slug: winforms/buttons/button
 tags: button
 published: True
 position: 0
+previous_url: /help/winforms/buttons-button-overview.html
 ---
 
 # Button
