@@ -2,7 +2,7 @@
 title: RadPivotFieldList
 page_title: RadPivotFieldList | UI for WinForms Documentation
 description: RadPivotFieldList
-slug: winforms/pivotgrid/radpivotfieldlist
+slug: winforms/pivotgrid/pivot-field-list/radpivotfieldlist
 tags: radpivotfieldlist
 published: True
 position: 0
@@ -10,13 +10,13 @@ position: 0
 
 # RadPivotFieldList
 
-RadPivotFieldList is a control which provides functionality similar to the PivotTable Field List panel in MS Excel. Using RadPivotFieldList the end user can change the way of representing aggregated data in RadPivotGrid by modifying the column/row group descriptions, the aggregate descriptions or the report filters. The end users can do this by dragging fields across the four list boxes in RadPivotFieldList or by reordering the items in a single list.<br>![pivotgrid-radpivotfieldlist 001](images/pivotgrid-radpivotfieldlist001.png)
+__RadPivotFieldList__ is a control which provides functionality similar to the PivotTable Field List panel in MS Excel. Using RadPivotFieldList the end user can change the way of representing aggregated data in RadPivotGrid by modifying the column/row group descriptions, the aggregate descriptions or the report filters. The end users can do this by dragging fields across the four list boxes in RadPivotFieldList or by reordering the items in a single list.<br>![pivotgrid-radpivotfieldlist 001](images/pivotgrid-radpivotfieldlist001.png)
 
 ## Associating with RadPivotGrid
 
-RadPivotFieldList is a standalone control that can be associated with RadPivotGrid. To do this, you should set its __AssociatedPivotGrid__ property. This setting is also available in the smart tag of RadPivotFieldList so you can easily choose between the available RadPivotGrids on your form.
+__RadPivotFieldList__ is a standalone control that can be associated with RadPivotGrid. To do this, you should set its __AssociatedPivotGrid__ property. This setting is also available in the smart tag of RadPivotFieldList so you can easily choose between the available RadPivotGrids on your form.
 
-RadPivotFieldList also provides you the option to defer the update of RadPivotGrid’s layout until you have pressed the __Update__  button or to update the layout immediately after you change the contents of its lists. This feature can be controlled by the checkbox at the bottom of the control, or via the __DeferUpdates__ property.
+__RadPivotFieldList__ also provides you the option to defer the update of RadPivotGrid’s layout until you have pressed the __Update__  button or to update the layout immediately after you change the contents of its lists. This feature can be controlled by the checkbox at the bottom of the control, or via the __DeferUpdates__ property.
 
 ## Value options
 

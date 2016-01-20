@@ -10,7 +10,7 @@ position: 0
 
 # Report Filters
 
-RadPivotGrid allows you to add filter conditions which describe which items from the data source should be included in the report. These filters are called __Report Filters__. Report filtering occurs before the aggregated information is calculated. This type of filtering is useful when you would like to see a report which concerns only records that share a common property, for example a sales report only for a specified country. <br>![pivotgrid-filtering-report-filters 001](images/pivotgrid-filtering-report-filters001.png)
+__RadPivotGrid__ allows you to add filter conditions which describe which items from the data source should be included in the report. These filters are called __Report Filters__. Report filtering occurs before the aggregated information is calculated. This type of filtering is useful when you would like to see a report which concerns only records that share a common property, for example a sales report only for a specified country. <br>![pivotgrid-filtering-report-filters 001](images/pivotgrid-filtering-report-filters001.png)
 
 The report filters are displayed as descriptor elements in the report filters area. This area is hidden by default and in order to show it, you need to set the following property:
 
@@ -28,7 +28,7 @@ Me.radPivotGrid1.ShowFilterArea = True
 
 {{endregion}}
 
-The end-user can add/remove report filters by dragging a field to the report filters area or by using the [RadPivotFieldList]({%slug winforms/pivotgrid/radpivotfieldlist%}).  Additionally, the filter menu opened by the filter button on the filter descriptor elements allows applying different filter conditions. This can be achieved by either selecting/deselecting items from the list box or by using one of the well-known filtering functions (Equals, Contains, Between, etc.).
+The end-user can add/remove report filters by dragging a field to the report filters area or by using the [RadPivotFieldList]({%slug winforms/pivotgrid/pivot-field-list/radpivotfieldlist%}).  Additionally, the filter menu opened by the filter button on the filter descriptor elements allows applying different filter conditions. This can be achieved by either selecting/deselecting items from the list box or by using one of the well-known filtering functions (Equals, Contains, Between, etc.).
 
 ## Adding a report filter description
 

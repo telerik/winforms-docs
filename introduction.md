@@ -37,7 +37,7 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 * [MultiColumnComboBox]({%slug winforms/multicolumncombobox%})
 * [PageView]({%slug winforms/pageview%})[Panorama]({%slug winforms/panorama%})
 * [PivotGrid]({%slug winforms/pivotgrid%})
-* [PivotFieldList]({%slug winforms/pivotgrid/radpivotfieldlist%})
+* [PivotFieldList]({%slug winforms/pivotgrid/pivot-field-list/radpivotfieldlist%})
 * [PropertyGrid]({%slug winforms/propertygrid%})
 * [RangeSelector]({%slug winforms/rangeselector-%})
 * [RibbonBar]({%slug winforms/ribbonbar%})
