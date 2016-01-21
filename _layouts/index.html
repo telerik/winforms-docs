@@ -9,14 +9,14 @@
         <link href="{{site.baseurl}}/favicon.ico?Version=2014" rel="shortcut icon" />
 		
         {% if page.description %}<meta name="description" content="{{page.description}}">{% endif %}
-		<meta name="page-position" content="{{page.position}}"> 
-        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+		<meta name="page-position" content="{{page.position}}">        
+		{% stylesheet 2014_2_716_styleskendo.common.min.css %}
         {% stylesheet styles %}
         {% stylesheet theme %}
         {% stylesheet branding %}
         {% stylesheet highlight %}
         {% javascript jquery-1.12.0.min.js %}
-        <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.web.min.js"></script>
+		{% javascript kendo %}    
         {% javascript app %}
 		{% javascript prettify %}
         {% javascript branding %}
