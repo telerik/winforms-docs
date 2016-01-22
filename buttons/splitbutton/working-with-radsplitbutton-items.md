@@ -6,6 +6,7 @@ slug: winforms/buttons/splitbutton/working-with-radsplitbutton-items
 tags: working,with,radsplitbutton,items
 published: True
 position: 1
+previous_url: /help/winforms/buttons-splitbutton-working-with-radsplitbutton-items.html
 ---
 
 # Working with RadSplitButton Items

@@ -6,6 +6,7 @@ slug: winforms/chart/getting-started/quick-start:-create-a-bar-chart-with-simple
 tags: quick,start,create,a,bar,chart,with,simple,static,data
 published: True
 position: 0
+previous_url: /help/winforms/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data.html
 ---
 
 # Quick Start: Create a Bar Chart with Simple Static Data

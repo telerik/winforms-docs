@@ -6,6 +6,7 @@ slug: winforms/chart/building-radcharts/binding-to-objectdatasource-at-run-time
 tags: binding,to,objectdatasource,at,run-time
 published: True
 position: 12
+previous_url: /help/winforms/chart-building-radcharts-data-binding-radchart-binding-to-objectdatasource-at-runtime.html
 ---
 
 # Binding to ObjectDataSource at Run-Time

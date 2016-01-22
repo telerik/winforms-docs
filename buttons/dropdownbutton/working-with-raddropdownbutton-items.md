@@ -6,6 +6,7 @@ slug: winforms/buttons/dropdownbutton/working-with-raddropdownbutton-items
 tags: working,with,raddropdownbutton,items
 published: True
 position: 1
+previous_url: /help/winforms/buttons-dropdownbutton-working-with-raddropdownbutton-items.html
 ---
 
 # Working with RadDropDownButton Items

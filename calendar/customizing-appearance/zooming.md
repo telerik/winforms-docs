@@ -6,6 +6,7 @@ slug: winforms/calendar/customizing-appearance/zooming
 tags: zooming
 published: True
 position: 4
+previous_url: /help/winforms/calendar-customizing-appearance-zooming.html
 ---
 
 # Zooming

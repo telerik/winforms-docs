@@ -6,6 +6,7 @@ slug: winforms/calendar/customizing-behavior/customizing-zoom-navigation
 tags: customizing,zoom,navigation
 published: True
 position: 4
+previous_url: /help/winforms/calendar-customizing-behavior-customizing-zoom-navigation.html
 ---
 
 # Customizing Zoom Navigation

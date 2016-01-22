@@ -6,6 +6,7 @@ slug: winforms/buttons/mnemonics
 tags: mnemonics
 published: True
 position: 7
+previous_url: /help/winforms/buttons-mnemonics.html
 ---
 
 # Mnemonics

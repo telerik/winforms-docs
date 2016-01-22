@@ -6,6 +6,7 @@ slug: winforms/chart/building-radcharts/populate-radchart-at-design-time
 tags: populate,radchart,at,design-time
 published: True
 position: 1
+previous_url: /help/winforms/chart-building-radcharts-populate-radchart-at-design-time.html
 ---
 
 # Populate RadChart at Design-Time

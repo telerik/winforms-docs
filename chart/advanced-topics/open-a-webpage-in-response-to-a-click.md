@@ -6,6 +6,7 @@ slug: winforms/chart/advanced-topics/open-a-webpage-in-response-to-a-click
 tags: open,a,webpage,in,response,to,a,click
 published: True
 position: 1
+previous_url: /help/winforms/chart-advanced-topics-open-a-webpage-in-response-to-a-click.html
 ---
 
 # Open a WebPage in Response to a Click

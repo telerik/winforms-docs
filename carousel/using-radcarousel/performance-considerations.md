@@ -6,6 +6,7 @@ slug: winforms/carousel/using-radcarousel/performance-considerations
 tags: performance,considerations
 published: True
 position: 4
+previous_url: /help/winforms/carousel-using-radcarousel-performance-considerations.html 
 ---
 
 # Performance Considerations

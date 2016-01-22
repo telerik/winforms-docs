@@ -6,6 +6,7 @@ slug: winforms/chart/building-radcharts/data-binding-radchart
 tags: data,binding,radchart
 published: True
 position: 4
+previous_url: /help/winforms/chart-building-radcharts-data-binding-radchart.html
 ---
 
 # Data Binding RadChart

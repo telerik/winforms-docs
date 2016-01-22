@@ -6,6 +6,7 @@ slug: winforms/chart/features/empty-values
 tags: empty,values
 published: True
 position: 1
+previous_url: /help/winforms/chart-features-empty-values.html
 ---
 
 # Empty Values

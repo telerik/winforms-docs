@@ -6,6 +6,7 @@ slug: winforms/carousel/using-radcarousel/radcarousel-properties
 tags: radcarousel,properties
 published: True
 position: 3
+previous_url: /help/winforms/carousel-using-radcarousel-radcarousel-properties.html
 ---
 
 # RadCarousel Properties

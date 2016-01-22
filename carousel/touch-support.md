@@ -6,6 +6,7 @@ slug: winforms/carousel/touch-support
 tags: touch,support
 published: True
 position: 3
+previous_url: /help/winforms/carousel-touch-support.html
 ---
 
 # Touch support

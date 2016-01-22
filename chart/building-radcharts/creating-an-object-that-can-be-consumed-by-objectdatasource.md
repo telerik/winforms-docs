@@ -6,6 +6,7 @@ slug: winforms/chart/building-radcharts/creating-an-object-that-can-be-consumed-
 tags: creating,an,object,that,can,be,consumed,by,objectdatasource
 published: True
 position: 11
+previous_url: /help/winforms/chart-building-radcharts-data-binding-radchart-creating-an-object-that-can-be-consumed-by-objectdatasource.html
 ---
 
 # Creating an Object that can be Consumed by ObjectDataSource

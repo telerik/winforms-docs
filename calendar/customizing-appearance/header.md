@@ -6,6 +6,7 @@ slug: winforms/calendar/customizing-appearance/header
 tags: header
 published: True
 position: 2
+previous_url: /help/winforms/calendar-customizing-appearance-header.html
 ---
 
 # Header

@@ -6,6 +6,7 @@ slug: winforms/buttons/button/indicating-focus
 tags: indicating,focus
 published: True
 position: 2
+previous_url: /help/winforms/buttons-button-indicating-focus.html
 ---
 
 # Indicating Focus

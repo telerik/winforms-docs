@@ -6,6 +6,7 @@ slug: winforms/chart/features/scale-breaks
 tags: scale,breaks
 published: True
 position: 2
+previous_url: /help/winforms/chart-features-scale-breaks.html
 ---
 
 # Scale Breaks

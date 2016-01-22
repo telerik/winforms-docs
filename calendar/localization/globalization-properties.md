@@ -6,6 +6,7 @@ slug: winforms/calendar/localization/globalization-properties
 tags: globalization,properties
 published: True
 position: 3
+previous_url: /help/winforms/calendar-localization-globalization-properties.html
 ---
 
 # Globalization Properties

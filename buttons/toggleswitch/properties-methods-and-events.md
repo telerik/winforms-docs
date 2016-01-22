@@ -6,6 +6,7 @@ slug: winforms/buttons/toggleswitch/properties,-methods-and-events
 tags: properties,,methods,and,events
 published: True
 position: 3
+previous_url: /help/winforms/buttons-toggleswitch-properties-methods-events.html
 ---
 
 # Properties, Methods and Events

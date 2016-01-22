@@ -6,6 +6,7 @@ slug: winforms/calendar/calendar-structure
 tags: calendar,structure
 published: True
 position: 1
+previous_url: /help/winforms/calendar-overview-structure.html
 ---
 
 # Calendar Structure

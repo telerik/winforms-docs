@@ -6,6 +6,7 @@ slug: winforms/buttons/radiobutton/handling-radradiobutton-states
 tags: handling,radradiobutton,states
 published: True
 position: 3
+previous_url: /help/winforms/buttons-radiobutton-handling-radradiobutton-states.html
 ---
 
 # Handling RadRadioButton States

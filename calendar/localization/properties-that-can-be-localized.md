@@ -6,6 +6,7 @@ slug: winforms/calendar/localization/properties-that-can-be-localized
 tags: properties,that,can,be,localized
 published: True
 position: 4
+previous_url: /help/winforms/calendar-localization-properties-that-can-be-localized.html
 ---
 
 # Properties that can be localized

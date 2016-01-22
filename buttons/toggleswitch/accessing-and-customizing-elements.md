@@ -6,6 +6,7 @@ slug: winforms/buttons/toggleswitch/accessing-and-customizing-elements
 tags: accessing,and,customizing,elements
 published: True
 position: 4
+previous_url: /help/winforms/buttons-toggleswitch-accessing-and-customizing-elements.html
 ---
 
 # Accessing and Customizing Elements

@@ -6,6 +6,7 @@ slug: winforms/calendar/getting-started
 tags: getting,started
 published: True
 position: 3
+previous_url:/help/winforms/calendar-getting-started.html
 ---
 
 # Getting Started

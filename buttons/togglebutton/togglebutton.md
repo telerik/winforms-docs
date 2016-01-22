@@ -6,6 +6,7 @@ slug: winforms/buttons/togglebutton
 tags: togglebutton
 published: True
 position: 0
+previous_url: /help/winforms/buttons-togglebutton-overview.html
 ---
 
 # ToggleButton

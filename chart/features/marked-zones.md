@@ -6,6 +6,7 @@ slug: winforms/chart/features/marked-zones
 tags: marked,zones
 published: True
 position: 6
+previous_url: /help/winforms/chart-features-marked-zones.html
 ---
 
 # Marked Zones

@@ -6,6 +6,7 @@ slug: winforms/buttons/repeatbutton/working-with-radrepeatbutton
 tags: working,with,radrepeatbutton
 published: True
 position: 1
+previous_url: /help/winforms/buttons-repeatbutton-working-with-radrepeatbutton.html
 ---
 
 # Working with RadRepeatButton

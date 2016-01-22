@@ -6,6 +6,7 @@ slug: winforms/calendar/customizing-behavior/repeating-events
 tags: repeating,events
 published: True
 position: 7
+previous_url: /help/winforms/calendar-customizing-behavior-repeating-events.html
 ---
 
 # Repeating Events

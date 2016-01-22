@@ -6,6 +6,7 @@ slug: winforms/carousel/design-time/adding-carousel-items
 tags: adding,carousel,items
 published: True
 position: 0
+previous_url: /help/winforms/carousel-design-time-adding-carousel-items.html
 ---
 
 # Adding Carousel Items

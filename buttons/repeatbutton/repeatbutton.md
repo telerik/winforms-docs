@@ -6,6 +6,7 @@ slug: winforms/buttons/repeatbutton
 tags: repeatbutton
 published: True
 position: 0
+previous_url: /help/winforms/buttons-radiobutton-designing-radradiobutton.html
 ---
 
 # RepeatButton

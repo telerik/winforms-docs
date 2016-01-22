@@ -6,6 +6,7 @@ slug: winforms/chart/building-radcharts/data-binding-radchart-to-a-generic-list-
 tags: data,binding,radchart,to,a,generic,list,of,objects
 published: True
 position: 9
+previous_url: /help/winforms/chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-objects.html
 ---
 
 # Data Binding RadChart to a Generic List of Objects

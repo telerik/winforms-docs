@@ -6,6 +6,7 @@ slug: winforms/chart/changes-and-backward-compatibility/changes-and-backwards-co
 tags: changes,and,backwards,compatibility
 published: True
 position: 0
+previous_url: /help/winforms/chart-changes-and-backward-compatibility.html
 ---
 
 # Changes and Backwards Compatibility

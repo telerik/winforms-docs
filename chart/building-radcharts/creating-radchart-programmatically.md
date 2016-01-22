@@ -6,6 +6,7 @@ slug: winforms/chart/building-radcharts/creating-radchart-programmatically
 tags: creating,radchart,programmatically
 published: True
 position: 2
+previous_url: /help/winforms/chart-building-radcharts-creating-radchart-programmatically.html
 ---
 
 # Creating RadChart Programmatically

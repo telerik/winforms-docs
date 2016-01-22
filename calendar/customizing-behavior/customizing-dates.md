@@ -6,6 +6,7 @@ slug: winforms/calendar/customizing-behavior/customizing-dates
 tags: customizing,dates
 published: True
 position: 2
+previous_url: /help/winforms/calendar-customizing-behavior-customizing-dates.html
 ---
 
 # Customizing Dates

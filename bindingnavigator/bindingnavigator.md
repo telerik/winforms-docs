@@ -6,6 +6,7 @@ slug: winforms/bindingnavigator
 tags: bindingnavigator
 published: True
 position: 0
+previous_url: /help/winforms/bindingnavigator-overview.html
 ---
 
 # BindingNavigator

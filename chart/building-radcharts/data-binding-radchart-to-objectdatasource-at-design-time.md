@@ -6,6 +6,7 @@ slug: winforms/chart/building-radcharts/data-binding-radchart-to-objectdatasourc
 tags: data,binding,radchart,to,objectdatasource,at,design-time
 published: True
 position: 13
+previous_url: /help/winforms/chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time.html
 ---
 
 # Data Binding RadChart to ObjectDataSource at Design-Time

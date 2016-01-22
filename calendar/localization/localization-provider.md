@@ -6,6 +6,7 @@ slug: winforms/calendar/localization/localization-provider
 tags: localization,provider
 published: True
 position: 5
+previous_url: /help/winforms/calendar-localization-localization-provider.html
 ---
 
 # Localization Provider

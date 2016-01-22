@@ -6,6 +6,7 @@ slug: winforms/chart/building-radcharts/data-binding-radchart-to-a-database-obje
 tags: data,binding,radchart,to,a,database,object
 published: True
 position: 6
+previous_url: /help/winforms/chart-building-radcharts-data-binding-radchart-to-a-database-object.html
 ---
 
 # Data Binding RadChart to a Database Object

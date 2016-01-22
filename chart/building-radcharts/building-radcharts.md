@@ -6,6 +6,7 @@ slug: winforms/chart/building-radcharts/building-radcharts
 tags: building,radcharts
 published: True
 position: 0
+previous_url: /help/winforms/chart-building-radcharts.html
 ---
 
 # Building RadCharts

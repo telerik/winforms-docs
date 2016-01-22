@@ -6,6 +6,7 @@ slug: winforms/calendar/localization
 tags: localization
 published: True
 position: 0
+previous_url: /help/winforms/calendar-localization-overview.html
 ---
 
 # Localization

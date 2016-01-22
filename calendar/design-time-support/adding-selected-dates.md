@@ -6,6 +6,7 @@ slug: winforms/calendar/design-time-support/adding-selected-dates
 tags: adding,selected,dates
 published: True
 position: 0
+previous_url: /help/winforms/calendar-design-time-support-adding-selected-dates.html
 ---
 
 # Adding Selected Dates

@@ -6,6 +6,7 @@ slug: winforms/calendar/customizing-behavior/customizing-navigation
 tags: customizing,navigation
 published: True
 position: 3
+previous_url: /help/winforms/calendar-customizing-behavior-customizing-navigation.html
 ---
 
 # Customizing Navigation

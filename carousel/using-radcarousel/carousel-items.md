@@ -6,6 +6,7 @@ slug: winforms/carousel/using-radcarousel/carousel-items
 tags: carousel,items
 published: True
 position: 0
+previous_url: /help/winforms/carousel-using-radcarousel-carousel-items.html
 ---
 
 # Carousel Items
