@@ -6,7 +6,7 @@ slug: winforms/chart/building-radcharts/creating-radchart-programmatically---mor
 tags: creating,radchart,programmatically,-,more,complex,example
 published: True
 position: 3
-previous_url: /help/winforms/chart-building-radcharts-creating-radchart-programmatically.html
+previous_url: /help/winforms/chart-building-radcharts-creating-radchart-programmatically-more-complex-example.html
 ---
 
 # Creating RadChart Programmatically - more complex example
