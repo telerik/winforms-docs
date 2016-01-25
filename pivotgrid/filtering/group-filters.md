@@ -28,7 +28,7 @@ Me.radPivotGrid1.AllowGroupFiltering = True
 
 {{endregion}}
 
-The end-user can apply group filters using the filter button in the group descriptor elements or via the drop-down menus of the group fields in [RadPivotFieldList]({%slug winforms/pivotgrid/radpivotfieldlist%}). The filtering options are similar to the options of the __Report Filters__ with the addition of the __Top10 value filters__.  The Top10 filters allow you to select only the top/bottom groups from the order sorted by a given group value.
+The end-user can apply group filters using the filter button in the group descriptor elements or via the drop-down menus of the group fields in [RadPivotFieldList]({%slug winforms/pivotgrid/pivot-field-list/radpivotfieldlist%}). The filtering options are similar to the options of the __Report Filters__ with the addition of the __Top10 value filters__.  The Top10 filters allow you to select only the top/bottom groups from the order sorted by a given group value.
 
 ## Adding a group filter description
 

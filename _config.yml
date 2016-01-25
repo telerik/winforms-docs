@@ -572,6 +572,9 @@ navigation:
     pivotgrid/populating-with-data:
         title: Populating with Data
         position: 3
+    pivotgrid/pivot-field-list:
+        title: Pivot Field List
+        position: 7
     pivotgrid/filtering:
         title: Filtering
         position: 8
