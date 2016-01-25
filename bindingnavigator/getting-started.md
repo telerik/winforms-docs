@@ -6,7 +6,7 @@ slug: winforms/bindingnavigator/getting-started
 tags: getting,started
 published: True
 position: 1
-previous_url: /help/winforms/bindingnavigator-overview-gettingstarted.html
+previous_url: bindingnavigator-overview-gettingstarted.html
 ---
 
 # Getting Started
