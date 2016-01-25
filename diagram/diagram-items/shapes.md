@@ -6,6 +6,7 @@ slug: winforms/diagram/diagram-items/shapes
 tags: shapes
 published: True
 position: 0
+previous_url: diagram-diagram-items-shapes
 ---
 
 # Shapes

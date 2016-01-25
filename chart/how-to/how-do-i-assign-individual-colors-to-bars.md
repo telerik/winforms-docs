@@ -6,7 +6,7 @@ slug: winforms/chart/how-to/how-do-i-assign-individual-colors-to-bars?
 tags: how,do,i,assign,individual,colors,to,bars?
 published: True
 position: 2
-previous_url: /help/winforms/chart-how-to-assign-individual-colors-to-bars.html
+previous_url: chart-how-to-assign-individual-colors-to-bars
 ---
 
 # How Do I Assign Individual Colors to Bars?

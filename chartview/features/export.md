@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/export
 tags: export
 published: True
 position: 9
+previous_url: chartview-features-export
 ---
 
 # Export

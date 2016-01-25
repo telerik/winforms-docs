@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/legend
 tags: legend
 published: True
 position: 6
+previous_url: chartview-features-legend
 ---
 
 # Legend

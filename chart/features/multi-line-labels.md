@@ -6,7 +6,7 @@ slug: winforms/chart/features/multi-line-labels
 tags: multi-line,labels
 published: True
 position: 3
-previous_url: /help/winforms/chart-features-multi-line-labels.html
+previous_url: chart-features-multi-line-labels
 ---
 
 # Multi-Line Labels

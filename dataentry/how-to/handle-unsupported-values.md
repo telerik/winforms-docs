@@ -6,6 +6,7 @@ slug: winforms/dataentry/how-to/handle-unsupported-values
 tags: handle,unsupported,values
 published: True
 position: 0
+previous_url: dataentry-how-to-handle-unsupported-values
 ---
 
 # Handle unsupported values

@@ -6,7 +6,7 @@ slug: winforms/buttons/checkbox/handling-radcheckbox-states
 tags: handling,radcheckbox,states
 published: True
 position: 1
-previous_url: /help/winforms/buttons-checkbox-handling-radcheckbox-states.html
+previous_url: buttons-checkbox-handling-radcheckbox-states
 ---
 
 # Handling RadCheckBox States

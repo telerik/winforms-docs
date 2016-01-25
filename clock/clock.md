@@ -6,6 +6,7 @@ slug: winforms/clock
 tags: clock
 published: True
 position: 0
+previous_url: clock-overview
 ---
 
 # Clock

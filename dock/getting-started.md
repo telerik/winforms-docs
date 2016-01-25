@@ -6,6 +6,7 @@ slug: winforms/dock/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: dock-getting-started
 ---
 
 # Getting Started 

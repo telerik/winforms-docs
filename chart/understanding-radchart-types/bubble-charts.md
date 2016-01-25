@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-types/bubble-charts
 tags: bubble,charts
 published: True
 position: 8
-previous_url: /help/winforms/chart-undestanding-radchart-types-bubble-charts.html
+previous_url: chart-undestanding-radchart-types-bubble-charts
 ---
 
 # Bubble Charts

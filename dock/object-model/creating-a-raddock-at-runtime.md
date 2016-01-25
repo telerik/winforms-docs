@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/creating-a-raddock-at-runtime
 tags: creating,a,raddock,at,runtime
 published: True
 position: 1
+previous_url: dock-object-model-creating-a-raddock-at-runtime
 ---
 
 # Creating a RadDock at Runtime

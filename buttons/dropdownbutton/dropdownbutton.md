@@ -6,7 +6,7 @@ slug: winforms/buttons/dropdownbutton
 tags: dropdownbutton
 published: True
 position: 0
-previous_url: help/winforms/buttons-dropdownbutton-overview.html
+previous_url: buttons-dropdownbutton-overview
 ---
 
 # DropDownButton

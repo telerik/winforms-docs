@@ -6,6 +6,7 @@ slug: winforms/datalayout/save/load-layout
 tags: save/load,layout
 published: True
 position: 6
+previous_url: datalayout-save-load-layout
 ---
 
 # Save/Load Layout

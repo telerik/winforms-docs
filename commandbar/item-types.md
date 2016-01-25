@@ -6,6 +6,7 @@ slug: winforms/commandbar/item-types
 tags: item,types
 published: True
 position: 3
+previous_url: commandbar-item-types
 ---
 
 # Item Types

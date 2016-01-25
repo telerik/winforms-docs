@@ -6,7 +6,7 @@ slug: winforms/chart/building-radcharts/data-binding-radchart-to-an-xml-file
 tags: data,binding,radchart,to,an,xml,file
 published: True
 position: 14
-previous_url: /help/winforms/chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-an-xml-file.html
+previous_url: chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-an-xml-file
 ---
 
 # Data Binding RadChart to an XML file

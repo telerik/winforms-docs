@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/docking-assistant
 tags: docking,assistant
 published: True
 position: 2
+previous_url: dock-architecture-and-features-docking-assistant
 ---
 
 # Docking Assistant

@@ -6,6 +6,7 @@ slug: winforms/diagram
 tags: diagram,(beta)
 published: True
 position: 0
+previous_url: diagram-overview
 ---
 
 # Diagram 

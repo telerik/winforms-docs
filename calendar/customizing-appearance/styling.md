@@ -6,7 +6,7 @@ slug: winforms/calendar/customizing-appearance/styling
 tags: styling
 published: True
 position: 0
-previous_url: /help/winforms/calendar-customizing-appearance-styling.html
+previous_url: calendar-customizing-appearance-styling
 ---
 
 # Styling

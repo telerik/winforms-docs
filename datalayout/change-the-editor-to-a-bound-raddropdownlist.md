@@ -6,6 +6,7 @@ slug: winforms/datalayout/change-the-editor-to-a-bound-raddropdownlist
 tags: change,the,editor,to,a,bound,raddropdownlist
 published: True
 position: 8
+previous_url: datalayout-how-to-change-editor-to-drop-down-list
 ---
 
 # Change the Editor to a Bound RadDropDownList

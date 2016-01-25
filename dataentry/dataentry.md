@@ -6,6 +6,7 @@ slug: winforms/dataentry
 tags: dataentry
 published: True
 position: 0
+previous_url: dataentry-overview
 ---
 
 # DataEntry

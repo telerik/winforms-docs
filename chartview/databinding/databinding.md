@@ -6,6 +6,7 @@ slug: winforms/chartview-/databinding
 tags: databinding
 published: True
 position: 0
+previous_url: chartview-databinding
 ---
 
 # DataBinding

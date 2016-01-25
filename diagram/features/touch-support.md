@@ -6,6 +6,7 @@ slug: winforms/diagram/features/touch-support
 tags: touch,support
 published: True
 position: 4
+previous_url: diagram-features-touch-support
 ---
 
 # Touch Support

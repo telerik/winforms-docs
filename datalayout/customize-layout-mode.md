@@ -6,6 +6,7 @@ slug: winforms/datalayout/customize-layout-mode
 tags: customize,layout,mode
 published: True
 position: 5
+previous_url: datalayout-customize-layout-mode
 ---
 
 # Customize Layout Mode

@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/pie
 tags: pie
 published: True
 position: 10
+previous_url: chartview-series-types-pie
 ---
 
 # Pie

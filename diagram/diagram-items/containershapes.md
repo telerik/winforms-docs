@@ -6,6 +6,7 @@ slug: winforms/diagram/diagram-items/containershapes
 tags: containershapes
 published: True
 position: 2
+previous_url: diagram-diagram-items-container-shapes
 ---
 
 # ContainerShapes

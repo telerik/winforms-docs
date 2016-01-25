@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-types/pie-charts
 tags: pie,charts
 published: True
 position: 4
-previous_url: /help/winforms/chart-undestanding-radchart-types-pie-charts.html
+previous_url: chart-undestanding-radchart-types-pie-charts
 ---
 
 # Pie Charts

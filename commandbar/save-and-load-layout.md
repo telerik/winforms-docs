@@ -6,6 +6,7 @@ slug: winforms/commandbar/save-and-load-layout
 tags: save,and,load,layout
 published: True
 position: 4
+previous_url: commandbar-save-and-load-layout
 ---
 
 # Save and Load Layout

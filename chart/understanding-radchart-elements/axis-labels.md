@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/axis-labels
 tags: axis,labels
 published: True
 position: 3
-previous_url: /help/winforms/chart-undestanding-radchart-elements-axis-labels.html
+previous_url: chart-undestanding-radchart-elements-axis-labels
 ---
 
 # Axis Labels

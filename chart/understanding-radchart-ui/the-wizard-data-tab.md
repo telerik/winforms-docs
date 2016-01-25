@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-ui/the-wizard-data-tab
 tags: the,wizard,data,tab
 published: True
 position: 4
+previous_url: chart-understanding-radchart-ui-the-wizard-data-tab
 ---
 
 # The Wizard Data Tab

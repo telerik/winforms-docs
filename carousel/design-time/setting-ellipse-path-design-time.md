@@ -6,7 +6,7 @@ slug: winforms/carousel/design-time/setting-ellipse-path-design-time
 tags: setting,ellipse,path,design-time
 published: True
 position: 1
-previous_url: /help/winforms/carousel-design-time-setting-ellipse-path-design-time.html
+previous_url: carousel-design-time-setting-ellipse-path-design-time
 ---
 
 # Setting Ellipse Path Design-time

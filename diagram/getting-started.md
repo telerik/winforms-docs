@@ -6,6 +6,7 @@ slug: winforms/diagram)/getting-started
 tags: getting,started
 published: True
 position: 2
+previous_url: diagram-getting-started
 ---
 
 # Getting Started

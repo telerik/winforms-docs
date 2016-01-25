@@ -6,6 +6,7 @@ slug: winforms/diagram/settings-pane
 tags: settings,pane
 published: True
 position: 4
+previous_url: diagram-settings-pane
 ---
 
 # Settings Pane

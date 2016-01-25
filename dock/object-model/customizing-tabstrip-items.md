@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/customizing-tabstrip-items
 tags: customizing,tabstrip,items
 published: True
 position: 10
+previous_url: dock-object-model-customizing-tabstrip-items
 ---
 
 # Customizing TabStrip Items

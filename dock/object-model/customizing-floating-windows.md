@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/customizing-floating-windows
 tags: customizing,floating,windows
 published: True
 position: 9
+previous_url: dock-object-model-customizing-floating-windows
 ---
 
 # Customizing Floating Windows

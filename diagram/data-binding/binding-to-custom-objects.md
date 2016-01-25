@@ -6,6 +6,7 @@ slug: winforms/diagram/data-binding/binding-to-custom-objects
 tags: binding,to,custom,objects
 published: True
 position: 2
+previous_url: diagram-data-binding-binding-to-custom-objects
 ---
 
 # Binding to Custom Objects

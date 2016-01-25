@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/series-overview
 tags: series,overview
 published: True
 position: 8
-previous_url: /help/winforms/chart-undestanding-radchart-elements-series-overview.html
+previous_url: chart-undestanding-radchart-elements-series-overview
 ---
 
 # Series Overview

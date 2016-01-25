@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types
 tags: series,types
 published: True
 position: 0
+previous_url: chartview-series-types-overview
 ---
 
 # Series Types

@@ -6,7 +6,7 @@ slug: winforms/chart/advanced-topics/activeregions-and-showing-tooltips
 tags: activeregions,and,showing,tooltips
 published: True
 position: 0
-previous_url: /help/winforms/chart-advanced-topics-active-regions-and-showing-tooltips.html
+previous_url: chart-advanced-topics-active-regions-and-showing-tooltips
 ---
 
 # ActiveRegions and Showing ToolTips

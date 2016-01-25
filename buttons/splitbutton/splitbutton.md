@@ -6,7 +6,7 @@ slug: winforms/buttons/splitbutton
 tags: splitbutton
 published: True
 position: 0
-previous_url: /help/winforms/buttons-splitbutton-overview.html
+previous_url: buttons-splitbutton-overview
 ---
 
 # SplitButton

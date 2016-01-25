@@ -6,7 +6,7 @@ slug: winforms/buttons/radiobutton/designing-radradiobutton-
 tags: designing,radradiobutton,
 published: True
 position: 2
-previous_url: /help/winforms/buttons-radiobutton-designing-radradiobutton.html 
+previous_url: buttons-radiobutton-designing-radradiobutton
 ---
 
 # Designing RadRadioButton 

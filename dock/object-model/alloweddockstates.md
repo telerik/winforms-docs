@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/alloweddockstates
 tags: alloweddockstates
 published: True
 position: 8
+previous_url: dock-object-model-allowed-dock-states
 ---
 
 # AllowedDockStates

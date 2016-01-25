@@ -6,6 +6,7 @@ slug: winforms/diagram/features/grouping
 tags: grouping
 published: True
 position: 7
+previous_url: diagram-features-grouping
 ---
 
 # Grouping

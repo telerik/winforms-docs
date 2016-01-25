@@ -6,7 +6,7 @@ slug: winforms/chart/getting-started/quick-start:-create-a-data-bound-chart
 tags: quick,start,create,a,data,bound,chart
 published: True
 position: 1
-previous_url: /help/winforms/chart-getting-started-quick-start-create-a-data-bound-chart.html
+previous_url: chart-getting-started-quick-start-create-a-data-bound-chart
 ---
 
 # Quick Start: Create a Data Bound Chart

@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-ui/understanding-wizard-values-data-
 tags: understanding,wizard,values,data,table,tab
 published: True
 position: 8
+previous_url: chart-understanding-radchart-ui-understanding-wizard-values-data-table-tab
 ---
 
 # Understanding Wizard Values Data Table Tab

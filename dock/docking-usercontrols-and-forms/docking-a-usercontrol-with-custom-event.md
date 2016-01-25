@@ -6,6 +6,7 @@ slug: winforms/dock/docking-usercontrols-and-forms/docking-a-usercontrol-with-cu
 tags: docking,a,usercontrol,with,custom,event
 published: True
 position: 1
+previous_url: dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event
 ---
 
 # Docking a UserControl with custom event

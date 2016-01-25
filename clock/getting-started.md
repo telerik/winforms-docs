@@ -6,6 +6,7 @@ slug: winforms/clock/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: clock-getting-started
 ---
 
 # Getting Started

@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/area
 tags: area
 published: True
 position: 1
+previous_url: chartview-series-types-area
 ---
 
 # Area

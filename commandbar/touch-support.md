@@ -6,6 +6,7 @@ slug: winforms/commandbar/touch-support
 tags: touch,support
 published: True
 position: 8
+previous_url: commandbar-touch-support
 ---
 
 # Touch Support

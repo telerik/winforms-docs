@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/using-the-contextmenuservice
 tags: using,the,contextmenuservice
 published: True
 position: 9
+previous_url: dock-architecture-and-features-using-the-contextmenuservice
 ---
 
 # Using the ContextMenuService

@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-ui/radchart-wizard
 tags: radchart,wizard
 published: True
 position: 2
+previous_url: chart-understanding-radchart-ui-radchart-wizard
 ---
 
 # RadChart Wizard

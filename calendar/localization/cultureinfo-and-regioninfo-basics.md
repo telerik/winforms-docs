@@ -6,7 +6,7 @@ slug: winforms/calendar/localization/cultureinfo-and-regioninfo-basics
 tags: cultureinfo,and,regioninfo,basics
 published: True
 position: 1
-previous_url: /help/winforms/calendar-localization-cultureinfo-and-regioninfo-basics.html
+previous_url: calendar-localization-cultureinfo-and-regioninfo-basics
 ---
 
 # CultureInfo and RegionInfo Basics

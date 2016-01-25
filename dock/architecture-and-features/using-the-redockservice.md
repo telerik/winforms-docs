@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/using-the-redockservice
 tags: using,the,redockservice
 published: True
 position: 10
+previous_url: dock-architecture-and-features-using-the-redockservice
 ---
 
 # Using the RedockService

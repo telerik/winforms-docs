@@ -6,7 +6,7 @@ slug: winforms/chart/styling-radcharts/styling-chart-elements
 tags: styling,chart,elements
 published: True
 position: 0
-previous_url: /help/winforms/chart-styling-radcharts-styling-chart-elements.html
+previous_url: chart-styling-radcharts-styling-chart-elements
 ---
 
 # Styling Chart Elements

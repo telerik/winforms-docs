@@ -6,6 +6,7 @@ slug: winforms/chartview-/databinding/binding-to-datatable
 tags: binding,to,datatable
 published: True
 position: 1
+previous_url: chartview-databinding-binding-to-datatable
 ---
 
 # Binding to DataTable

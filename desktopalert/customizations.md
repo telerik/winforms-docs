@@ -6,6 +6,7 @@ slug: winforms/desktopalert/customizations
 tags: customizations
 published: True
 position: 2
+previous_url: desktopalert-customizations
 ---
 
 # Customizations

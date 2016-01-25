@@ -6,7 +6,7 @@ slug: winforms/chart/features/strict-mode
 tags: strict,mode
 published: True
 position: 5
-previous_url: /help/winforms/chart-features-strict-mode.html
+previous_url: chart-features-strict-mode
 ---
 
 # Strict Mode

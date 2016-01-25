@@ -6,6 +6,7 @@ slug: winforms/checkedlistbox/properties-and-methods
 tags: properties,and,methods
 published: True
 position: 3
+previous_url: checkedlistbox-features
 ---
 
 # Properties and Methods

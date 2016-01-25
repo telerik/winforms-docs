@@ -6,6 +6,7 @@ slug: winforms/diagram/features/undo-and-redo
 tags: undo,and,redo
 published: True
 position: 3
+previous_url: diagram-features-undo-and-redo
 ---
 
 # Undo and Redo

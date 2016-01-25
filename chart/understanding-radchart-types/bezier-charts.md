@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-types/bezier-charts
 tags: bezier,charts
 published: True
 position: 6
-previous_url: /help/winforms/chart-undestanding-radchart-types-bezier.charts.html
+previous_url: chart-undestanding-radchart-types-bezier.charts
 ---
 
 # Bezier Charts

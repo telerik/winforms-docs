@@ -6,6 +6,7 @@ slug: winforms/diagram/features/printing-support
 tags: printing,support
 published: True
 position: 5
+previous_url: diagram-features-printing-support
 ---
 
 # Printing Support

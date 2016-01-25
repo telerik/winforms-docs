@@ -6,6 +6,7 @@ slug: winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts
 tags: loading,and,saving,layouts
 published: True
 position: 0
+previous_url: dock-loading-and-saving-layouts
 ---
 
 # Loading And Saving Layouts

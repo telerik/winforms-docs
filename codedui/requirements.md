@@ -6,6 +6,7 @@ slug: winforms/codedui/requirements
 tags: requirements
 published: True
 position: 1
+previous_url: codedui-requirements
 ---
 
 # Requirements

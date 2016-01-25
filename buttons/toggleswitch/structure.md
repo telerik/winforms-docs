@@ -6,7 +6,7 @@ slug: winforms/buttons/toggleswitch/structure
 tags: structure
 published: True
 position: 2
-previous_url: /help/winforms/buttons-toggleswitch-structure.html 
+previous_url: buttons-toggleswitch-structure
 ---
 
 # Structure

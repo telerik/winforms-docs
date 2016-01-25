@@ -6,6 +6,7 @@ slug: winforms/diagram-(beta)/features/pan-and-zoom
 tags: pan,and,zoom
 published: True
 position: 2
+previous_url: diagram-features-pan-and-zoom
 ---
 
 # Pan and Zoom

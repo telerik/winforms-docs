@@ -6,7 +6,7 @@ slug: winforms/buttons/repeatbutton
 tags: repeatbutton
 published: True
 position: 0
-previous_url: /help/winforms/buttons-repeatbutton-overview.html
+previous_url: buttons-repeatbutton-overview
 ---
 
 # RepeatButton

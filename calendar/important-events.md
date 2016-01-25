@@ -6,7 +6,7 @@ slug: winforms/calendar/important-events
 tags: important,events
 published: True
 position: 2
-previous_url: /help/winforms/calendar-overview-important-events.html
+previous_url: calendar-overview-important-events
 ---
 
 # Important Events

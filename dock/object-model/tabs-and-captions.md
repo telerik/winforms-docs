@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/tabs-and-captions
 tags: tabs,and,captions
 published: True
 position: 7
+previous_url: dock-object-model-tabs-and-captions
 ---
 
 # Tabs and Captions

@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/title
 tags: title
 published: True
 position: 5
+previous_url: chartview-features-title
 ---
 
 # Title

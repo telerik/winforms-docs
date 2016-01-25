@@ -6,6 +6,7 @@ slug: winforms/diagram/events/items-events
 tags: items,events
 published: True
 position: 1
+previous_url: diagram-events-items-events
 ---
 
 # Items Events

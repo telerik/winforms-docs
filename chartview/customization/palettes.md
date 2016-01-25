@@ -6,6 +6,7 @@ slug: winforms/chartview-/customization/palettes
 tags: palettes
 published: True
 position: 0
+previous_url: chartview-customization-palettes
 ---
 
 # Palettes

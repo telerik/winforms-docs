@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-types/point-charts
 tags: point,charts
 published: True
 position: 9
-previous_url: /help/winforms/chart-undestanding-radchart-types-point-charts.html
+previous_url: chart-undestanding-radchart-types-point-charts
 ---
 
 # Point Charts

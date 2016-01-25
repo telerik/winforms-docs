@@ -6,6 +6,7 @@ slug: winforms/chartview-/printing-support/printing
 tags: printing
 published: True
 position: 0
+previous_url: chartview-printing-support-printing
 ---
 
 # Printing

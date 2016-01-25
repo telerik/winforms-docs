@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/understanding-raddock
 tags: understanding,raddock
 published: True
 position: 0
+previous_url: dock-architecture-and-features-understanding-raddock
 ---
 
 # Understanding RadDock

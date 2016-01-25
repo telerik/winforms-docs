@@ -6,6 +6,7 @@ slug: winforms/chartview-/customization/formatting-trackball-labels
 tags: formatting,trackball,labels
 published: True
 position: 4
+previous_url: chartview-customization-formatting-trackball-labels
 ---
 
 # Formatting Trackball Labels

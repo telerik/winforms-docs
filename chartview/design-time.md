@@ -6,6 +6,7 @@ slug: winforms/chartview-/design-time
 tags: design,time
 published: True
 position: 2
+previous_url: chartview-designtime
 ---
 
 # Design time

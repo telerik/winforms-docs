@@ -6,6 +6,7 @@ slug: winforms/datalayout/properties,-events-and-attributes
 tags: properties,,events,and,attributes
 published: True
 position: 3
+previous_url: datalayout-properties-event-and-attributes
 ---
 
 # Properties, Events and Attributes

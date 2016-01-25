@@ -6,7 +6,7 @@ slug: winforms/carousel/using-radcarousel/data-binding
 tags: data,binding
 published: True
 position: 2
-previous_url: /help/winforms/carousel-using-radcarousel-data-binding.html
+previous_url: carousel-using-radcarousel-data-binding
 ---
 
 # Data Binding

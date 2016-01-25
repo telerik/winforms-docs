@@ -6,6 +6,7 @@ slug: winforms/chartview-/property-builder
 tags: property,builder
 published: True
 position: 3
+previous_url: chartview-property-builder
 ---
 
 # Property Builder

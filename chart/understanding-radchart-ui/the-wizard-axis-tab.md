@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-ui/the-wizard-axis-tab
 tags: the,wizard,axis,tab
 published: True
 position: 7
+previous_url: chart-understanding-radchart-ui-the-wizard-axis-tab
 ---
 
 # The Wizard Axis Tab

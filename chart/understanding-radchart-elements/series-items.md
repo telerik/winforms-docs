@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/series-items
 tags: series,items
 published: True
 position: 9
-previous_url: /help/winforms/chart-undestanding-radchart-elements-series-items.html
+previous_url: chart-undestanding-radchart-elements-series-items
 ---
 
 # Series Items

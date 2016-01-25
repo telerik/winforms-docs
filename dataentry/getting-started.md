@@ -6,6 +6,7 @@ slug: winforms/dataentry/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: dataentry-overview-getting-started
 ---
 
 # Getting Started

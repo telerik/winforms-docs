@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/tracking-the-activewindow
 tags: tracking,the,activewindow
 published: True
 position: 11
+previous_url: dock-object-model-tracking-the-activewindow
 ---
 
 # Tracking the ActiveWindow

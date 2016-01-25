@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/dockingguidestemplate
 tags: dockingguidestemplate
 published: True
 position: 12
+previous_url: dock-architecture-and-features-docking-guides-template
 ---
 
 # DockingGuidesTemplate

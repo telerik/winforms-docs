@@ -6,6 +6,7 @@ slug: winforms/dataentry/change-auto-generated-editor-
 tags: change,auto,generated,editor,
 published: True
 position: 3
+previous_url: dataentry-overview-change-auto-generated-editor
 ---
 
 # Change auto generated editor 

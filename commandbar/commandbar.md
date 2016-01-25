@@ -6,6 +6,7 @@ slug: winforms/commandbar
 tags: commandbar
 published: True
 position: 0
+previous_url: commandbar-overview
 ---
 
 # CommandBar

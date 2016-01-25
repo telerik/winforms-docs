@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/fastline-
 tags: fastline,
 published: True
 position: 3
+previous_url: chartview-series-types-fast-line
 ---
 
 # FastLine

@@ -6,6 +6,7 @@ slug: winforms/datalayout/overview
 tags: design,time
 published: True
 position: 0
+previous_url: datalayout-overview
 ---
 
 # Data Layout

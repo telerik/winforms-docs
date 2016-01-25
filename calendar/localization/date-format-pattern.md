@@ -6,7 +6,7 @@ slug: winforms/calendar/localization/date-format-pattern
 tags: date,format,pattern
 published: True
 position: 2
-previous_url: /help/winforms/calendar-localization-date-format-pattern.html
+previous_url: calendar-localization-date-format-pattern
 ---
 
 # Date Format Pattern

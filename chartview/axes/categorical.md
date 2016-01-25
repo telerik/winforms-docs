@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes/categorical
 tags: categorical
 published: True
 position: 1
+previous_url: chartview-axes-categorical
 ---
 
 # Categorical

@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-ui/the-wizard-type-tab
 tags: the,wizard,type,tab
 published: True
 position: 3
+previous_url: chart-understanding-radchart-ui-the-wizard-type-tab
 ---
 
 # The Wizard Type Tab

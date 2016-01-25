@@ -6,6 +6,7 @@ slug: winforms/datalayout/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: datalayout-getting-started
 ---
 
 # Getting Started

@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/funnel
 tags: funnel
 published: True
 position: 17
+previous_url: chartview-series-types-funnel
 ---
 
 # Funnel

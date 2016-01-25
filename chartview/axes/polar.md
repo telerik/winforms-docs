@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes/polar
 tags: polar
 published: True
 position: 4
+previous_url: chartview-axes-polar
 ---
 
 # Polar

@@ -6,6 +6,7 @@ slug: winforms/diagram/diagram-tools/text-tool
 tags: text,tool
 published: True
 position: 1
+previous_url: diagram-tools-text-tool
 ---
 
 # Text Tool

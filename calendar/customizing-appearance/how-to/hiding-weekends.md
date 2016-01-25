@@ -6,7 +6,7 @@ slug: winforms/calendar/customizing-appearance/how-to/hiding-weekends
 tags: hiding,weekends
 published: True
 position: 0
-previous_url: /help/winforms/calendar-customizing-appearance-how-to-hiding-weekends.html
+previous_url: calendar-customizing-appearance-how-to-hiding-weekends
 ---
 
 # Hiding weekends

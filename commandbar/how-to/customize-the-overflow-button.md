@@ -6,6 +6,7 @@ slug: winforms/commandbar/how-to/customize-the-overflow-button
 tags: customize,the,overflow,button
 published: True
 position: 0
+previous_url: commandbar-howto-customize-the-overflow-button
 ---
 
 # Customize the overflow button

@@ -6,6 +6,7 @@ slug: winforms/diagram-(beta)/items-manipulation/rotation
 tags: rotation
 published: True
 position: 0
+previous_url: diagram-items-manipulation-rotation
 ---
 
 # Rotation

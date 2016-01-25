@@ -6,6 +6,7 @@ slug: winforms/diagram/populating-with-data
 tags: populating,with,data
 published: True
 position: 9
+previous_url: diagram-populating-with-data
 ---
 
 # Populating with data

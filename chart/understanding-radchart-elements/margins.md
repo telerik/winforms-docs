@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/margins
 tags: margins
 published: True
 position: 6
-previous_url: /help/winforms/chart-undestanding-radchart-elements-margins.html
+previous_url: chart-undestanding-radchart-elements-margins
 ---
 
 # Margins

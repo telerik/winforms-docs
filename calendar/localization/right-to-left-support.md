@@ -6,7 +6,7 @@ slug: winforms/calendar/localization/right-to-left-support
 tags: right-to-left,support
 published: True
 position: 0
-previous_url: /help/winforms/calendar-localization-right-to-left-support.html
+previous_url: calendar-localization-right-to-left-support
 ---
 
 # Right-To-Left Support

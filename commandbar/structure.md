@@ -6,6 +6,7 @@ slug: winforms/commandbar/structure
 tags: structure
 published: True
 position: 1
+previous_url: commandbar-structure
 ---
 
 # Structure

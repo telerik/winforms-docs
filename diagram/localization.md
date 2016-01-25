@@ -6,6 +6,7 @@ slug: winforms/diagram/localization
 tags: localization
 published: True
 position: 15
+previous_url: diagram-localization
 ---
 
 # Localization

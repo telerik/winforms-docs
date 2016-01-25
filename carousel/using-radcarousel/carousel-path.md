@@ -6,7 +6,7 @@ slug: winforms/carousel/using-radcarousel/carousel-path
 tags: carousel,path
 published: True
 position: 1
-previous_url: /help/winforms/carousel-using-radcarousel-carousel-path.html
+previous_url: carousel-using-radcarousel-carousel-path
 ---
 
 # Carousel Path

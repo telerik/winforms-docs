@@ -6,6 +6,7 @@ slug: winforms/checkedlistbox/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: checkedlistbox-getting-started
 ---
 
 # Getting Started

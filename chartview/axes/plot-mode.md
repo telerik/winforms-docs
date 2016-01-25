@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes/plot-mode
 tags: plot,mode
 published: True
 position: 6
+previous_url: chartview-axes-plot-mode
 ---
 
 # Plot Mode

@@ -6,6 +6,7 @@ slug: winforms/dock/loading-and-saving-layouts/tutorial:-saving-and-loading-layo
 tags: tutorial,saving,and,loading,layout,and,content
 published: True
 position: 1
+previous_url: dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content
 ---
 
 # Tutorial: Saving and Loading Layout and Content

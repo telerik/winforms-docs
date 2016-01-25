@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/hlc
 tags: hlc
 published: True
 position: 15
+previous_url: chartview-series-types-hlc
 ---
 
 # Hlc

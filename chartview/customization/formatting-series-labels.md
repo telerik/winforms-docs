@@ -6,6 +6,7 @@ slug: winforms/chartview-/customization/formatting-series-labels
 tags: formatting,series,labels
 published: True
 position: 3
+previous_url: chartview-customization-formatting-series-labels
 ---
 
 # Formatting Series Labels

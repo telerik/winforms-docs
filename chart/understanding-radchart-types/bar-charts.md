@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-types/bar-charts
 tags: bar,charts
 published: True
 position: 1
-previous_url: /help/winforms/chart-undestanding-radchart-types-bar-charts.html
+previous_url: chart-undestanding-radchart-types-bar-charts
 ---
 
 # Bar Charts

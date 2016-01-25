@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/scatterline
 tags: scatterline
 published: True
 position: 7
+previous_url: chartview-series-types-scatterline
 ---
 
 # ScatterLine

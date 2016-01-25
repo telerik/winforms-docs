@@ -6,6 +6,7 @@ slug: winforms/diagram/features/routing
 tags: routing
 published: True
 position: 6
+previous_url: diagram-features-routing
 ---
 
 # Routing

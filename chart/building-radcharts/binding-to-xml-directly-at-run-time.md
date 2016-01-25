@@ -6,7 +6,7 @@ slug: winforms/chart/building-radcharts/binding-to-xml-directly-at-run-time
 tags: binding,to,xml,directly,at,run-time
 published: True
 position: 16
-previous_url: /help/winforms/chart-building-radcharts-data-binding-radchart-binding-to-xml-directly-at-runtime.html
+previous_url: chart-building-radcharts-data-binding-radchart-binding-to-xml-directly-at-runtime
 ---
 
 # Binding to XML Directly at Run-Time

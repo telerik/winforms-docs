@@ -6,6 +6,7 @@ slug: winforms/commandbar/how-to/customize-the-control-context-menu
 tags: customize,the,control,context,menu
 published: True
 position: 1
+previous_url: commandbar-howto-customize-the-control-context-menu
 ---
 
 # Customize the control context menu

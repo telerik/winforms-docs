@@ -6,6 +6,7 @@ slug: winforms/dock/docking-usercontrols-and-forms/get-a-hostwindow-by-its-conte
 tags: get,a,hostwindow,by,its,content
 published: True
 position: 2
+previous_url: dock-docking-usercontrols-and-forms-get-a-hostwindow-by-its-content
 ---
 
 # Get a HostWindow by its Content

@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-types/radchart-types-overview
 tags: radchart,types,overview
 published: True
 position: 0
-previous_url: /help/winforms/chart-undestanding-radchart-types-radchart-types-overview.html
+previous_url: chart-undestanding-radchart-types-radchart-types-overview
 ---
 
 # RadChart Types Overview

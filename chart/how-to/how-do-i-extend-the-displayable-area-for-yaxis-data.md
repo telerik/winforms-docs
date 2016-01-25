@@ -6,7 +6,7 @@ slug: winforms/chart/how-to/how-do-i-extend-the-displayable-area-for-yaxis-data?
 tags: how,do,i,extend,the,displayable,area,for,yaxis,data?
 published: True
 position: 0
-previous_url: /help/winforms/chart-how-to-extend-the-displayable-area-for-yaxus-data.html
+previous_url: chart-how-to-extend-the-displayable-area-for-yaxus-data
 ---
 
 # How Do I extend the Displayable Area for YAxis Data?

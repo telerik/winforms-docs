@@ -6,6 +6,7 @@ slug: winforms/diagram/items-manipulation/clipboard-operations
 tags: clipboard,operations
 published: True
 position: 3
+previous_url: diagram-items-manipulation-clipboard-operations
 ---
 
 # Clipboard operations

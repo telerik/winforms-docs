@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes/multiple-axes
 tags: multiple,axes
 published: True
 position: 7
+previous_url: chartview-axes-multiple-axes
 ---
 
 # Multiple axes

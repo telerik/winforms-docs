@@ -6,7 +6,7 @@ slug: winforms/chart/advanced-topics/multiple-chart-types-in-a-single-chart
 tags: multiple,chart,types,in,a,single,chart
 published: True
 position: 3
-previous_url: /help/winforms/chart-advanced-topics-multiple-chart-types-in-a-single-chart.html
+previous_url: chart-advanced-topics-multiple-chart-types-in-a-single-chart
 ---
 
 # Multiple Chart Types in a Single Chart

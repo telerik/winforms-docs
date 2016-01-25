@@ -6,7 +6,7 @@ slug: winforms/buttons/toggleswitch
 tags: toggleswitch
 published: True
 position: 0
-previous_url: /help/winforms/buttons-toggleswitch-overview.html
+previous_url: buttons-toggleswitch-overview
 ---
 
 # ToggleSwitch

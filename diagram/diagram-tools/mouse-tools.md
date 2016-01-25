@@ -6,6 +6,7 @@ slug: winforms/diagram-(beta)/diagram-tools/mouse-tools
 tags: mouse,tools
 published: True
 position: 0
+previous_url: diagram-tools-mouse-tools
 ---
 
 # Mouse Tools

@@ -6,7 +6,7 @@ slug: winforms/chart/building-radcharts/binding-to-xml-at-design-time-using-an-x
 tags: binding,to,xml,at,design-time,using,an,xmldatasource
 published: True
 position: 15
-previous_url: /help/winforms/chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource.html
+previous_url: chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource
 ---
 
 # Binding to XML at Design-Time using an XMLDataSource

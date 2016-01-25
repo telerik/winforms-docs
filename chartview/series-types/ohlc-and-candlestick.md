@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/ohlc-and-candlestick
 tags: ohlc,and,candlestick
 published: True
 position: 14
+previous_url: chartview-series-types-ohlc-and-candlestick
 ---
 
 # Ohlc and Candlestick

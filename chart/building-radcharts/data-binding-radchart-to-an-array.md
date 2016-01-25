@@ -6,7 +6,7 @@ slug: winforms/chart/building-radcharts/data-binding-radchart-to-an-array
 tags: data,binding,radchart,to,an,array
 published: True
 position: 5
-previous_url: /help/winforms/chart-building-radcharts-data-binding-radchart-to-an-array.html
+previous_url: chart-building-radcharts-data-binding-radchart-to-an-array
 ---
 
 # Data Binding RadChart to an Array

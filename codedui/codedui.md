@@ -6,6 +6,7 @@ slug: winforms/codedui
 tags: codedui
 published: True
 position: 0
+previous_url: codedui
 ---
 
 # CodedUI

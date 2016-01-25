@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/background-and-plot-areas
 tags: background,and,plot,areas
 published: True
 position: 1
-previous_url: /help/winforms/chart-undestanding-radchart-elements-background-and-plot-areas.html
+previous_url: chart-undestanding-radchart-elements-background-and-plot-areas
 ---
 
 # Background and Plot Areas

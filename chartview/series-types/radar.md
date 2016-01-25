@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/radar
 tags: radar
 published: True
 position: 13
+previous_url: chartview-series-types-radar
 ---
 
 # Radar

@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/annotations
 tags: annotations
 published: True
 position: 0
+previous_url: chartview-features-annotations
 ---
 
 # Annotations

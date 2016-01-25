@@ -6,6 +6,7 @@ slug: winforms/diagram-(beta)/features/layout
 tags: layout
 published: True
 position: 1
+previous_url: diagram-features-layout
 ---
 
 # Layout

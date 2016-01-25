@@ -6,7 +6,7 @@ slug: winforms/chart/advanced-topics/localization-example-using-local-resources,
 tags: localization,example,using,local,resources,,implicit,expression
 published: True
 position: 2
-previous_url: /help/winforms/chart-advanced-topics-localization-example-using-local-resources-implicit-expression.html
+previous_url: chart-advanced-topics-localization-example-using-local-resources-implicit-expression
 ---
 
 # Localization Example Using Local Resources, Implicit Expression

@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/lasso-selection
 tags: lasso,selection
 published: True
 position: 1
+previous_url: chartview-features-lasso-selection
 ---
 
 # Lasso Selection

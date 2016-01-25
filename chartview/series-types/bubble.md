@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/bubble
 tags: bubble
 published: True
 position: 9
+previous_url: chartview-series-types-bubble
 ---
 
 # Bubble

@@ -6,6 +6,7 @@ slug: winforms/release-notes
 tags: release,notes
 published: True
 position: 3
+previous_url: release-notes
 ---
 
 # Release Notes

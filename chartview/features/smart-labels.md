@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/smart-labels
 tags: smart,labels
 published: True
 position: 7
+previous_url: chartview-features-smart-labels
 ---
 
 # Smart labels

@@ -6,7 +6,7 @@ slug: winforms/calendar/customizing-appearance/using-templates
 tags: using,templates
 published: True
 position: 1
-previous_url: /help/winforms/calendar-customizing-appearance-using-templates.html
+previous_url: calendar-customizing-appearance-using-templates
 ---
 
 # Using Templates

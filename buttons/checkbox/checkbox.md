@@ -6,7 +6,7 @@ slug: winforms/buttons/checkbox
 tags: checkbox
 published: True
 position: 0
-previous_url: /help/winforms/buttons-checkbox-overview.html
+previous_url: buttons-checkbox-overview
 ---
 
 # CheckBox

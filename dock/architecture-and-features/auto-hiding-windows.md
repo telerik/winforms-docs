@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/auto-hiding-windows
 tags: auto-hiding,windows
 published: True
 position: 4
+previous_url: dock-architecture-and-features-auto-hiding-windows
 ---
 
 # Auto-Hiding Windows

@@ -6,6 +6,7 @@ slug: winforms/diagram-(beta)/items-manipulation/resizing
 tags: resizing
 published: True
 position: 1
+previous_url: diagram-items-manipulation-resizing
 ---
 
 # Resizing

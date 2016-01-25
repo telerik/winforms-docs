@@ -6,6 +6,7 @@ slug: winforms/dock/docking-usercontrols-and-forms/docking-singleton-forms
 tags: docking,singleton,forms
 published: True
 position: 3
+previous_url: docking-usercontrols-and-forms-docking-singleton-forms
 ---
 
 # Docking Singleton Forms

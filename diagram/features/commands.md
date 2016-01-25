@@ -6,6 +6,7 @@ slug: winforms/diagram/features/commands
 tags: commands
 published: True
 position: 0
+previous_url: diagram-features-commands
 ---
 
 # Commands

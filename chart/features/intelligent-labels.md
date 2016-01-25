@@ -6,7 +6,7 @@ slug: winforms/chart/features/intelligent-labels
 tags: intelligent,labels
 published: True
 position: 4
-previous_url: /help/winforms/chart-features-intelligent-labels.html
+previous_url: chart-features-intelligent-labels
 ---
 
 # Intelligent Labels

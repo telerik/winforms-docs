@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/scroll-and-zoom
 tags: scroll,and,zoom
 published: True
 position: 0
+previous_url: chartview-features-scroll-and-zoom
 ---
 
 # Scroll and Zoom

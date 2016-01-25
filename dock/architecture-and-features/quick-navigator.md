@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/quick-navigator
 tags: quick,navigator
 published: True
 position: 5
+previous_url: dock-architecture-and-features-quick-navigator
 ---
 
 # Quick Navigator

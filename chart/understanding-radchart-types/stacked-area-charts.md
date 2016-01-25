@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-types/stacked-area-charts
 tags: stacked,area,charts
 published: True
 position: 15
+previous_url: chart-undestanding-radchart-types-stacked-area-charts
 ---
 
 # Stacked Area Charts

@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/selection
 tags: selection
 published: True
 position: 2
+previous_url: chartview-features-selection
 ---
 
 # Selection

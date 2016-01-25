@@ -6,7 +6,7 @@ slug: winforms/buttons/togglebutton/handling-radtogglebutton-states
 tags: handling,radtogglebutton,states
 published: True
 position: 1
-previous_url: /help/winforms/buttons-togglebutton-handling-radtogglebutton-states.html
+previous_url: buttons-togglebutton-handling-radtogglebutton-states
 ---
 
 # Handling RadToggleButton States

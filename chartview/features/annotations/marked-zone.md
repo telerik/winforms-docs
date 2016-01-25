@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/annotations/marked-zone
 tags: marked,zone
 published: True
 position: 2
+previous_url: chartview-features-annotations-markedzone-annotations
 ---
 
 # Marked zone

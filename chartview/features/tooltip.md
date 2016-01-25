@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/tooltip
 tags: tooltip
 published: True
 position: 3
+previous_url: chartview-features-tooltip
 ---
 
 # Tooltip

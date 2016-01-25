@@ -6,6 +6,7 @@ slug: winforms/diagram/data-binding/design-time-data-binding
 tags: design,time,data,binding
 published: True
 position: 1
+previous_url: diagram-data-binding-design-time-data-binding
 ---
 
 # Design Time Data Binding

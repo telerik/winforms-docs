@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-ui/the-wizard-labels,-legend-and-tit
 tags: the,wizard,labels,,legend,and,titles,tab
 published: True
 position: 6
+previous_url: chart-understanding-radchart-ui-the-wizard-labels-legend-and-titles-tab
 ---
 
 # The Wizard Labels, Legend and Titles Tab

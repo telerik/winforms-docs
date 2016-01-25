@@ -6,6 +6,7 @@ slug: winforms/diagram/items-manipulation/removing-items
 tags: removing,items
 published: True
 position: 4
+previous_url: diagram-items-manipulation-removing-items
 ---
 
 # Removing items

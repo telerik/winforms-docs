@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes/linear
 tags: linear
 published: True
 position: 2
+previous_url: chartview-axes-linear
 ---
 
 # Linear

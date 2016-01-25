@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-types/stacked-spline-area-charts
 tags: stacked,spline,area,charts
 published: True
 position: 11
+previous_url: chart-undestanding-radchart-types-stacked-spline-area-charts
 ---
 
 # Stacked Spline Area Charts

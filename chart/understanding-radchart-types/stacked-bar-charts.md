@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-types/stacked-bar-charts
 tags: stacked,bar,charts
 published: True
 position: 2
+previous_url: chart-undestanding-radchart-types-stacked-bar-charts
 ---
 
 # Stacked Bar Charts

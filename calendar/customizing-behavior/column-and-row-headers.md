@@ -6,7 +6,7 @@ slug: winforms/calendar/customizing-behavior/column-and-row-headers
 tags: column,and,row,headers
 published: True
 position: 0
-previous_url: /help/winforms/calendar-customizing-behavior-column-and-row-headers.html
+previous_url: calendar-customizing-behavior-column-and-row-headers
 ---
 
 # Column and Row Headers

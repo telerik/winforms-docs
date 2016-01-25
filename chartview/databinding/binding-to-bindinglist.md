@@ -6,6 +6,7 @@ slug: winforms/chartview-/databinding/binding-to-bindinglist
 tags: binding,to,bindinglist
 published: True
 position: 2
+previous_url: chartview-databinding-binding-to-bindinglist
 ---
 
 # Binding to BindingList

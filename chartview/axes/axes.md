@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes
 tags: axes
 published: True
 position: 0
+previous_url: chartview-axes
 ---
 
 # Axes

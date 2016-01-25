@@ -6,7 +6,7 @@ slug: winforms/carousel/design-time/setting-bezier-path-design-time
 tags: setting,bezier,path,design-time
 published: True
 position: 2
-previous_url: /help/winforms/carousel-design-time-setting-bezier-path-design-time.html
+previous_url: carousel-design-time-setting-bezier-path-design-time
 ---
 
 # Setting Bezier Path Design-Time

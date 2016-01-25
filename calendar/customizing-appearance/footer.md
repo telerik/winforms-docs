@@ -6,7 +6,7 @@ slug: winforms/calendar/customizing-appearance/footer
 tags: footer
 published: True
 position: 3
-previous_url: /help/winforms/calendar-customizing-appearance-footer.html
+previous_url: calendar-customizing-appearance-footer
 ---
 
 # Footer

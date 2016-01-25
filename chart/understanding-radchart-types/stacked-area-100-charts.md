@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-types/stacked-area-100%-charts
 tags: stacked,area,100%,charts
 published: True
 position: 16
+previous_url: chart-undestanding-radchart-types-stacked-area-100-charts
 ---
 
 # Stacked Area 100% Charts

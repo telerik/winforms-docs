@@ -6,6 +6,7 @@ slug: winforms/diagram/background-grid
 tags: background,grid
 published: True
 position: 7
+previous_url: diagram-backgroundgrid
 ---
 
 # Background Grid

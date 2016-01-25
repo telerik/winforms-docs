@@ -6,6 +6,7 @@ slug: winforms/codedui/supported-controls-and-actions
 tags: supported,controls,and,actions
 published: True
 position: 3
+previous_url: codedui-supported-controls-and-actions
 ---
 
 # Supported Controls and Actions

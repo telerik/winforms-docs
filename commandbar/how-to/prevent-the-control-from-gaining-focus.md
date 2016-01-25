@@ -6,6 +6,7 @@ slug: winforms/commandbar/how-to/prevent-the-control-from-gaining-focus
 tags: prevent,the,control,from,gaining,focus
 published: True
 position: 2
+previous_url: commandbar-howto-prevent-the-control-from-gaining-focus
 ---
 
 # Prevent the control from gaining focus

@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/bezier
 tags: bezier
 published: True
 position: 8
+previous_url: chartview-series-types-bezier
 ---
 
 # Bezier

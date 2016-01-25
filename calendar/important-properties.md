@@ -6,7 +6,7 @@ slug: winforms/calendar/important-properties
 tags: important,properties
 published: True
 position: 1
-previous_url: /help/winforms/calendar-overview-important-properties.html
+previous_url: calendar-overview-important-properties
 ---
 
 # Important Properties

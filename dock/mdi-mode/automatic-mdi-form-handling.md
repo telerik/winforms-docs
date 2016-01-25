@@ -6,6 +6,7 @@ slug: winforms/dock/mdi-mode/automatic-mdi-form-handling
 tags: automatic,mdi,form,handling
 published: True
 position: 0
+previous_url: dock-mdi-mode-automatic-mdi-form-handling
 ---
 
 # Automatic MDI Form Handling 

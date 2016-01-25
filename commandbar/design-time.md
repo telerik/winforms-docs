@@ -6,6 +6,7 @@ slug: winforms/commandbar/design-time
 tags: design-time
 published: True
 position: 2
+previous_url: commandbar-design-time
 ---
 
 # Design-Time

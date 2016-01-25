@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-types/spline-charts
 tags: spline,charts
 published: True
 position: 7
+previous_url: chart-undestanding-radchart-types-spline-charts
 ---
 
 # Spline Charts

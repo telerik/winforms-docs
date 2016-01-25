@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/toolwindow-and-documentwindow-properties-and-me
 tags: toolwindow,and,documentwindow,properties,and,methods
 published: True
 position: 3
+previous_url: dock-object-model-toolwindow-and-documentwindow-properties-at-runtime
 ---
 
 # ToolWindow and DocumentWindow Properties and Methods

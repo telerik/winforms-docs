@@ -6,6 +6,7 @@ slug: winforms/chart/building-radcharts/data-binding-radchart-to-a-generic-list-
 tags: data,binding,radchart,to,a,generic,list,of,simple,types
 published: True
 position: 8
+previous_url: chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-simple-types
 ---
 
 # Data Binding RadChart to a Generic List of Simple Types

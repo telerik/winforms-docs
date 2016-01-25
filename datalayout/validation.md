@@ -6,6 +6,7 @@ slug: winforms/datalayout/validation
 tags: validation
 published: True
 position: 4
+previous_url: datalayout-validation
 ---
 
 # Validation

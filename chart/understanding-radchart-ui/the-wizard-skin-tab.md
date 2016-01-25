@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-ui/the-wizard-skin-tab
 tags: the,wizard,skin,tab
 published: True
 position: 5
+previous_url: chart-understanding-radchart-ui-the-wizard-skin-tab
 ---
 
 # The Wizard Skin Tab

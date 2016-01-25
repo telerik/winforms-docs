@@ -6,6 +6,7 @@ slug: winforms/chartview-/chart-grid
 tags: chart,grid
 published: True
 position: 4
+previous_url: chartview-chartgrid
 ---
 
 # Chart Grid

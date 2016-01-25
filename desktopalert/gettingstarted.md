@@ -6,6 +6,7 @@ slug: winforms/desktopalert/gettingstarted
 tags: gettingstarted
 published: True
 position: 1
+previous_url: desktopalert-getting-started
 ---
 
 # GettingStarted

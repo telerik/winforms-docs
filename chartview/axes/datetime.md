@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes/datetime
 tags: datetime
 published: True
 position: 1
+previous_url: chartview-axes-datetime
 ---
 
 # DateTime

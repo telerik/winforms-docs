@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/annotations/plot-band
 tags: plot,band
 published: True
 position: 1
+previous_url: chartview-features-annotations-plotband
 ---
 
 # Plot band

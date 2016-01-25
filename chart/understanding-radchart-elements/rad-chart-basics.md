@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/rad-chart-basics
 tags: rad,chart,basics
 published: True
 position: 0
-previous_url: /help/winforms/chart-undestanding-radchart-elements-radchart-basics.html
+previous_url: chart-undestanding-radchart-elements-radchart-basics
 ---
 
 # Rad Chart Basics

@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/line
 tags: line
 published: True
 position: 2
+previous_url: chartview-series-types-line
 ---
 
 # Line

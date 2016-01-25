@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes/inverse-axis
 tags: inverse,axis
 published: True
 position: 9
+previous_url: chartview-axes-inverse-axis
 ---
 
 # Inverse Axis

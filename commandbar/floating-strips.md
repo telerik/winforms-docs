@@ -6,6 +6,7 @@ slug: winforms/commandbar/floating-strips
 tags: floating,strips
 published: True
 position: 5
+previous_url: commandbar-floating-strips
 ---
 
 # Floating Strips

@@ -6,7 +6,7 @@ slug: winforms/calendar/design-time-support/adding-special-days
 tags: adding,special,days
 published: True
 position: 1
-previous_url: /help/winforms/calendar-design-time-support-adding-special-dates.html
+previous_url: calendar-design-time-support-adding-special-dates
 ---
 
 # Adding Special Days

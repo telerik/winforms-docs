@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/raddock-properties-and-methods
 tags: raddock,properties,and,methods
 published: True
 position: 0
+previous_url: dock-object-model-raddock-properties-and-methods
 ---
 
 # RadDock Properties and Methods

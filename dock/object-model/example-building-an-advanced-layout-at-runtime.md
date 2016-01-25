@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/example:-building-an-advanced-layout-at-runtime
 tags: example,building,an,advanced,layout,at,runtime
 published: True
 position: 6
+previous_url: dock-object-model-example-building-an-advanced-layout-at-runtime
 ---
 
 # Example: Building an advanced layout at runtime

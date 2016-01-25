@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-types/spline-area-charts
 tags: spline,area,charts
 published: True
 position: 10
+previous_url: chart-undestanding-radchart-types-spline-area-charts
 ---
 
 # Spline Area Charts

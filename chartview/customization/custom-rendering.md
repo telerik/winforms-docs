@@ -6,6 +6,7 @@ slug: winforms/chartview-/customization/custom-rendering
 tags: custom,rendering
 published: True
 position: 1
+previous_url: chartview-customization-custom-rendering
 ---
 
 # Custom rendering

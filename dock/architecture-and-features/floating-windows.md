@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/floating-windows
 tags: floating,windows
 published: True
 position: 3
+previous_url: dock-architecture-and-features-floating-windows
 ---
 
 # Floating Windows

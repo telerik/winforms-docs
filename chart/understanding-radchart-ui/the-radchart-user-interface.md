@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-ui/the-radchart-user-interface
 tags: the,radchart,user,interface
 published: True
 position: 0
+previous_url: chart-understanding-radchart-ui-the-radchart-user-interface
 ---
 
 # The RadChart User Interface

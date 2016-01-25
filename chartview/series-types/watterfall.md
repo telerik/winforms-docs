@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/watterfall
 tags: watterfall
 published: True
 position: 18
+previous_url: charview-series-types-waterfall
 ---
 
 # Waterfall

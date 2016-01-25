@@ -6,6 +6,7 @@ slug: winforms/diagram/items-manipulation/selection
 tags: selection
 published: True
 position: 2
+previous_url: diagram-items-manipulation-selection
 ---
 
 # Selection

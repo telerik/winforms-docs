@@ -6,6 +6,7 @@ slug: winforms/dock
 tags: dock
 published: True
 position: 0
+previous_url: dock-overview
 ---
 
 # Dock

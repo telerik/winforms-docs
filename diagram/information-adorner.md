@@ -6,6 +6,7 @@ slug: winforms/diagram/information-adorner
 tags: information,adorner
 published: True
 position: 6
+previous_url: diagram-information-adorner
 ---
 
 # Information Adorner

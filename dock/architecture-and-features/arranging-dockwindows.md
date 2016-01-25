@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/arranging-dockwindows
 tags: arranging,dockwindows
 published: True
 position: 1
+previous_url: dock-architecture-and-features-arranging-dockwindows
 ---
 
 # Arranging DockWindows

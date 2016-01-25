@@ -6,6 +6,7 @@ slug: winforms/diagram/items-manipulation/editing
 tags: editing
 published: True
 position: 6
+previous_url: diagram-items-manipulation-editing
 ---
 
 # Editing

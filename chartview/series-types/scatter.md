@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/scatter
 tags: scatter
 published: True
 position: 5
+previous_url: chartview-series-types-scatter
 ---
 
 # Scatter

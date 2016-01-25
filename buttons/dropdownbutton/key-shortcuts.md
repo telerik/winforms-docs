@@ -6,7 +6,7 @@ slug: winforms/buttons/dropdownbutton/key-shortcuts
 tags: key,shortcuts
 published: True
 position: 2
-previous_url: /help/winforms/buttons-dropdownbutton-key-shortcuts.html
+previous_url: buttons-dropdownbutton-key-shortcuts
 ---
 
 # Key ShortCuts

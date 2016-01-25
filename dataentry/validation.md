@@ -6,6 +6,7 @@ slug: winforms/dataentry/validation
 tags: validation
 published: True
 position: 5
+previous_url: dataentry-validation
 ---
 
 # Validation

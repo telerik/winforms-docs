@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/using-the-dragdropservice
 tags: using,the,dragdropservice
 published: True
 position: 7
+previous_url: dock-architecture-and-features-using-the-dragdropservice
 ---
 
 # Using the DragDropService

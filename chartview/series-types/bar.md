@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/bar
 tags: bar
 published: True
 position: 1
+previous_url: chartview-series-types-bar
 ---
 
 # Bar

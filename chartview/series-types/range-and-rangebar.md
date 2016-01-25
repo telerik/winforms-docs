@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/range-and-rangebar
 tags: range,and,rangebar
 published: True
 position: 16
+previous_url: chartview-series-types-range
 ---
 
 # Range and RangeBar

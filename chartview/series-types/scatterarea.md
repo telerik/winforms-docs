@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/scatterarea
 tags: scatterarea
 published: True
 position: 6
+previous_url: chartview-series-types-scatter-area
 ---
 
 # ScatterArea

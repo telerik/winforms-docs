@@ -6,6 +6,7 @@ slug: winforms/dataentry/programmatically-arrange-items-
 tags: programmatically,arrange,items,
 published: True
 position: 4
+previous_url: dataentry-overview-programmatically-arrange-items
 ---
 
 # Programmatically arrange items 

@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/using-the-commandmanager
 tags: using,the,commandmanager
 published: True
 position: 8
+previous_url: dock-architecture-and-features-using-the-command-manager
 ---
 
 # Using the CommandManager

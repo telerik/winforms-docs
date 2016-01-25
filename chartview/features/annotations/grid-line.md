@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/annotations/grid-line
 tags: grid,line
 published: True
 position: 1
+previous_url: chartview-features-annotations-gridline
 ---
 
 # Grid line

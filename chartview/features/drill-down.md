@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/drill-down
 tags: drill,down
 published: True
 position: 8
+previous_url: chartview-features-drill-down
 ---
 
 # Drill down 

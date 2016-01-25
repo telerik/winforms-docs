@@ -6,6 +6,7 @@ slug: winforms/diagram/features/export
 tags: diagram, export
 published: True
 position: 8
+previous_url: diagram-features-export
 ---
 
 # Export

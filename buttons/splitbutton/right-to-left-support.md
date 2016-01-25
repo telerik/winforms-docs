@@ -6,7 +6,7 @@ slug: winforms/buttons/splitbutton/right-to-left-support
 tags: right-to-left,support
 published: True
 position: 2
-previous_url: /help/winforms/buttons-splitbutton-rtl.html
+previous_url: buttons-splitbutton-rtl
 ---
 
 # Right-to-Left support

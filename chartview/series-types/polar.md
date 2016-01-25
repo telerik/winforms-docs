@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/polar
 tags: polar
 published: True
 position: 12
+previous_url: chartview-series-types-polar
 ---
 
 # Polar

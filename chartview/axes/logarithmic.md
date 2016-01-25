@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes/logarithmic
 tags: logarithmic
 published: True
 position: 3
+previous_url: chartview-axes-logarithmic
 ---
 
 # Logarithmic

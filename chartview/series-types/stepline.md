@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/stepline
 tags: stepline
 published: True
 position: 4
+previous_url: chartview-series-types-stepline
 ---
 
 # Stepline

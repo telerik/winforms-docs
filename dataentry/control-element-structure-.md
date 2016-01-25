@@ -6,6 +6,7 @@ slug: winforms/dataentry/control-element-structure-
 tags: control,element,structure,
 published: True
 position: 2
+previous_url: dataentry-overview-control-element-structure
 ---
 
 # Control Element Structure 

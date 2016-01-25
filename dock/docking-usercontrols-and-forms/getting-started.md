@@ -6,6 +6,7 @@ slug: winforms/dock/docking-usercontrols-and-forms/getting-started
 tags: getting,started
 published: True
 position: 0
+previous_url: dock-docking-usercontrols-and-forms-getting-started
 ---
 
 # Getting Started

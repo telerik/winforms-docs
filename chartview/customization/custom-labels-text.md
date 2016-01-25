@@ -6,6 +6,7 @@ slug: winforms/chartview-/customization/custom-labels-text
 tags: custom,labels,text
 published: True
 position: 2
+previous_url: chartview-customization-custom-labels
 ---
 
 # Custom labels text

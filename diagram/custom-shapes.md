@@ -6,6 +6,7 @@ slug: winforms/diagram/custom-shapes
 tags: custom,shapes
 published: True
 position: 15
+previous_url: diagram-custom-shapes
 ---
 
 # Custom shapes

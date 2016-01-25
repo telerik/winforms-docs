@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/accessing-dockwindows
 tags: accessing,dockwindows
 published: True
 position: 2
+previous_url: dock-object-model-accessing-dockwindows
 ---
 
 # Accessing DockWindows

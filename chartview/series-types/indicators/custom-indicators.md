@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/indicators/custom-indicators
 tags: custom,indicators
 published: True
 position: 1
+previous_url: chartview-series-types-indicators-custom-indicators
 ---
 
 # Custom Indicators

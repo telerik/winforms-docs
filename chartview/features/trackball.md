@@ -6,6 +6,7 @@ slug: winforms/chartview-/features/trackball
 tags: trackball
 published: True
 position: 4
+previous_url: chartview-features-trackball
 ---
 
 # Trackball

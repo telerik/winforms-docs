@@ -6,6 +6,7 @@ slug: winforms/datalayout/design-time
 tags: design,time
 published: True
 position: 1
+previous_url: datalayout-design-time
 ---
 
 # Design Time

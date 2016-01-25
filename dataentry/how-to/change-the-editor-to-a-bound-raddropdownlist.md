@@ -6,6 +6,7 @@ slug: winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist
 tags: change,the,editor,to,a,bound,raddropdownlist
 published: True
 position: 1
+previous_url: dataentry-how-to-change-editor-to-drop-down-list
 ---
 
 # Change the editor to a bound RadDropDownList

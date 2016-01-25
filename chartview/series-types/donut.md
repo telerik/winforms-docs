@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/donut
 tags: donut
 published: True
 position: 11
+previous_url: chartview-series-types-donut
 ---
 
 # Donut

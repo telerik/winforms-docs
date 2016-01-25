@@ -6,7 +6,7 @@ slug: winforms/chart/features/spline-areas
 tags: spline,areas
 published: True
 position: 0
-previous_url: /help/winforms/chart-features-spline-areas.html
+previous_url: chart-features-spline-areas
 ---
 
 # Spline Areas

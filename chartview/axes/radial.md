@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes/radial
 tags: radial
 published: True
 position: 5
+previous_url: chartview-axes-radial
 ---
 
 # Radial

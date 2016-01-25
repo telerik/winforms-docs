@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-types/stacked-bar-100%-charts
 tags: stacked,bar,100%,charts
 published: True
 position: 3
+previous_url: chart-undestanding-radchart-types-stacked-bar-100-charts
 ---
 
 # Stacked Bar 100% Charts

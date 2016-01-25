@@ -6,6 +6,7 @@ slug: winforms/checkedlistbox
 tags: checkedlistbox
 published: True
 position: 0
+previous_url: checkedlistbox-overview
 ---
 
 # CheckedListBox

@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/creating-toolwindow-and-documentwindow-at-runti
 tags: creating,toolwindow,and,documentwindow,at,runtime
 published: True
 position: 4
+previous_url: dock-object-model-creating-toolwindow-and-documentwindow-at-runtime
 ---
 
 # Creating ToolWindow and DocumentWindow at Runtime

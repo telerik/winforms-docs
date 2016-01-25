@@ -6,6 +6,7 @@ slug: winforms/diagram/structure
 tags: structure
 published: True
 position: 1
+previous_url: diagram-structure
 ---
 
 # Structure

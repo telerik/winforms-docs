@@ -6,6 +6,7 @@ slug: winforms/diagram/diagram-items/connections
 tags: connections
 published: True
 position: 1
+previous_url: diagram-diagram-items-connections
 ---
 
 # Connections

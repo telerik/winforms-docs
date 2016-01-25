@@ -6,7 +6,7 @@ slug: winforms/calendar
 tags: calendar
 published: True
 position: 0
-previous_url: /help/winforms/calendar-overview.html
+previous_url: calendar-overview
 ---
 
 # Calendar

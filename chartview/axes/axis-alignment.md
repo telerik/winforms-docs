@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes/axis-alignment
 tags: axis,alignment
 published: True
 position: 8
+previous_url: chartview-axes-axis-alignment
 ---
 
 # Axis Alignment

@@ -6,7 +6,7 @@ slug: winforms/overview
 tags: overview
 published: True
 position: 1
-previous_url: ^/help/winforms/overview.html, overview.html
+previous_url: overview
 ---
 
 # Telerik UI for WinForms

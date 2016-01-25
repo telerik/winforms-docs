@@ -6,6 +6,7 @@ slug: winforms/chartview-/axes/scale-breaks
 tags: scale,breaks
 published: True
 position: 10
+previous_url: chartview-features-scale-breaks
 ---
 
 # Scale Breaks

@@ -6,6 +6,7 @@ slug: winforms/dataentry/properties,-events-and-attributes
 tags: properties,,events,and,attributes
 published: True
 position: 5
+previous_url: dataentry-properties-events-and-attributes
 ---
 
 # Properties, events and attributes

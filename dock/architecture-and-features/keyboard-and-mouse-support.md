@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/keyboard-and-mouse-support
 tags: keyboard,and,mouse,support
 published: True
 position: 6
+previous_url: dock-architecture-and-features-keyboard-and-mouse-support
 ---
 
 # Keyboard And Mouse Support

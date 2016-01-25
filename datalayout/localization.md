@@ -6,6 +6,7 @@ slug: winforms/datalayout/localization
 tags: localization
 published: True
 position: 7
+previous_url: datalayout-localization
 ---
 
 # Localization

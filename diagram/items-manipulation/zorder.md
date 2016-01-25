@@ -6,6 +6,7 @@ slug: winforms/diagram/items-manipulation/zorder
 tags: zorder
 published: True
 position: 5
+previous_url: diagram-items-manipulation-zorder
 ---
 
 # ZOrder

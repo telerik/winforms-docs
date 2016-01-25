@@ -6,6 +6,7 @@ slug: winforms/diagram/ribbonui
 tags: ribbonui
 published: True
 position: 4
+previous_url: diagram-ribbonui
 ---
 
 # RibbonUI

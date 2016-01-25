@@ -6,6 +6,7 @@ slug: winforms/diagram/toolbox
 tags: toolbox
 published: True
 position: 3
+previous_url: diagram-toolbox
 ---
 
 # Toolbox

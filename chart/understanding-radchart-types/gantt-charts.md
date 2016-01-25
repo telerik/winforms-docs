@@ -6,7 +6,7 @@ slug: winforms/chart/understanding-radchart-types/gantt-charts
 tags: gantt,charts
 published: True
 position: 5
-previous_url: /help/winforms/chart-undestanding-radchart-types-gantt-charts.html
+previous_url: chart-undestanding-radchart-types-gantt-charts
 ---
 
 # Gantt Charts

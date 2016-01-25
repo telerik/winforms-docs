@@ -6,7 +6,7 @@ slug: winforms/calendar/customizing-behavior/selecting-dates
 tags: selecting,dates
 published: True
 position: 5
-previous_url: /help/winforms/calendar-customizing-behavior-selecting-dates.html
+previous_url: calendar-customizing-behavior-selecting-dates
 ---
 
 # Selecting Dates

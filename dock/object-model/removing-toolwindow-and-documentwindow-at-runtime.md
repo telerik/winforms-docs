@@ -6,6 +6,7 @@ slug: winforms/dock/object-model/removing-toolwindow-and-documentwindow-at-runti
 tags: removing,toolwindow,and,documentwindow,at,runtime
 published: True
 position: 5
+previous_url: dock-object-model-removing-toolwindow-and-documentwindow-at-runtime
 ---
 
 # Removing ToolWindow and DocumentWindow at Runtime

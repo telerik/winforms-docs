@@ -6,6 +6,7 @@ slug: winforms/dock/architecture-and-features/document-manager
 tags: document,manager
 published: True
 position: 11
+previous_url: dock-architecture-and-features-document-manager
 ---
 
 # Document Manager

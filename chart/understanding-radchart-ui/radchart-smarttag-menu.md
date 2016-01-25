@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-ui/radchart-smarttag-menu
 tags: radchart,smarttag,menu
 published: True
 position: 1
+previous_url: chart-understanding-radchart-ui-radchart-smarttag-menu
 ---
 
 # RadChart SmartTag Menu

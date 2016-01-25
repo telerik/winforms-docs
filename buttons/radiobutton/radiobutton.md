@@ -6,7 +6,7 @@ slug: winforms/buttons/radiobutton
 tags: radiobutton
 published: True
 position: 0
-previous_url: /help/winforms/buttons-radiobutton-overview.html
+previous_url: buttons-radiobutton-overview
 ---
 
 # RadioButton

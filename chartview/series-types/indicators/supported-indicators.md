@@ -6,6 +6,7 @@ slug: winforms/chartview-/series-types/indicators/supported-indicators
 tags: supported,indicators
 published: True
 position: 0
+previous_url: chartview-series-types-indicators-supported-indicators
 ---
 
 # Supported Indicators
