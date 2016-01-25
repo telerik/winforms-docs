@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/gridlines
 tags: gridlines
 published: True
 position: 4
+previous_url: /help/winforms/chart-undestanding-radchart-elements-gridlines.html
 ---
 
 # Gridlines

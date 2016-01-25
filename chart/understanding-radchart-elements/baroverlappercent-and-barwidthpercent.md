@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/baroverlappercent-and-barwi
 tags: baroverlappercent,and,barwidthpercent
 published: True
 position: 13
+previous_url: /help/winforms/chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent.html
 ---
 
 # BarOverlapPercent and BarWidthPercent

@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/ticks
 tags: ticks
 published: True
 position: 11
+previous_url: /help/winforms/chart-undestanding-radchart-elements-ticks.html
 ---
 
 # Ticks

@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-types/candlestick-charts
 tags: candlestick,charts
 published: True
 position: 17
+previous_url: /help/winforms/chart-undestanding-radchart-types-candlestick-charts.html
 ---
 
 # CandleStick Charts

@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-types/line-charts
 tags: line,charts
 published: True
 position: 13
+previous_url: /help/winforms/chart-undestanding-radchart-types-line-charts.html
 ---
 
 # Line Charts

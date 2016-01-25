@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/titles
 tags: titles
 published: True
 position: 7
+previous_url: /help/winforms/chart-undestanding-radchart-elements-titles.html
 ---
 
 # Titles

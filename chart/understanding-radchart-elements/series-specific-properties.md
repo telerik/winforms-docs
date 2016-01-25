@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/series-specific-properties
 tags: series-specific,properties
 published: True
 position: 10
+previous_url: /help/winforms/chart-undestanding-radchart-elements-series-specific-properties.html
 ---
 
 # Series-Specific Properties

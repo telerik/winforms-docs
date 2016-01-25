@@ -6,6 +6,7 @@ slug: winforms/chart/styling-radcharts/custom-appearance-properties
 tags: custom,appearance,properties
 published: True
 position: 2
+previous_url: /help/winforms/chart-styling-radcharts-custom-appearance-properties.html
 ---
 
 # Custom Appearance Properties

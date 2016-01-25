@@ -6,6 +6,7 @@ slug: winforms/chart/styling-radcharts/step-by-step-skinning-example
 tags: step-by-step,skinning,example
 published: True
 position: 4
+previous_url: /help/winforms/chart-styling-radcharts-step-by-step-skinning-example.html
 ---
 
 # Step-By-Step Skinning Example

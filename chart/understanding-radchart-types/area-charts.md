@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-types/area-charts
 tags: area,charts
 published: True
 position: 14
+previous_url: /help/winforms/chart-undestanding-radchart-types-area-charts.html
 ---
 
 # Area Charts

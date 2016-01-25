@@ -6,6 +6,7 @@ slug: winforms/chart/how-to/how-do-i-make-colors-display-with-partial-transparen
 tags: how,do,i,make,colors,display,with,partial,transparency?
 published: True
 position: 3
+previous_url: /help/winforms/chart-how-to-make-colors-display-with-partial-transparency.html
 ---
 
 # How do I make colors display with partial transparency?

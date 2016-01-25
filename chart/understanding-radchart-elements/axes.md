@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/axes
 tags: axes
 published: True
 position: 2
+previous_url: /help/winforms/chart-undestanding-radchart-elements-axes.html
 ---
 
 # Axes

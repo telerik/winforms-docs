@@ -6,6 +6,7 @@ slug: winforms/chart/how-to/how-do-i-add-axis-labels-programmatically?
 tags: how,do,i,add,axis,labels,programmatically?
 published: True
 position: 1
+previous_url: /help/winforms/chart-how-to-add-axis-labels-programmatically.html
 ---
 
 # How Do I add Axis Labels Programmatically?

@@ -6,6 +6,7 @@ slug: winforms/chart/styling-radcharts/chart-skin
 tags: chart,skin
 published: True
 position: 3
+previous_url: /help/winforms/chart-styling-radcharts-chart-skin.html
 ---
 
 # Chart Skin

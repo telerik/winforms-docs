@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/legends
 tags: legends
 published: True
 position: 5
+previous_url: /help/winforms/chart-undestanding-radchart-elements-legends.html
 ---
 
 # Legends

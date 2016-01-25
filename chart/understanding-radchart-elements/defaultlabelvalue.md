@@ -6,6 +6,7 @@ slug: winforms/chart/understanding-radchart-elements/defaultlabelvalue
 tags: defaultlabelvalue
 published: True
 position: 12
+previous_url: /help/winforms/chart-undestanding-radchart-elements-default-label-value.html
 ---
 
 # DefaultLabelValue

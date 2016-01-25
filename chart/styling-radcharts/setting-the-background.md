@@ -6,6 +6,7 @@ slug: winforms/chart/styling-radcharts/setting-the-background
 tags: setting,the,background
 published: True
 position: 1
+previous_url: /help/winforms/chart-styling-radcharts-setting-the-background.html
 ---
 
 # Setting The Background
