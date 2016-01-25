@@ -8,9 +8,15 @@ published: True
 position: 1
 ---
 
+# Customizing the Field List Control
+
 ## Visual Field Manipulation
 
 __RadPivotFieldList__ internally contains a __RadTreeView__ built with nodes coming from the data source object as fields. The tree can be easily accessed and its elements modified.
+
+| Before Sorting | After Sorting |
+| ------ | ------ |
+|![pivotgrid-radpivotfieldlist 004](images/pivotgrid-radpivotfieldlist004.png)|![pivotgrid-radpivotfieldlist 005](images/pivotgrid-radpivotfieldlist005.png)|
 
 #### Sorting the Nodes
 
@@ -21,11 +27,17 @@ this.radPivotFieldList1.FieldsControl.SortOrder = System.Windows.Forms.SortOrder
 
 ````
 ````VB.NET
+Me.RadPivotFieldList1.FieldsControl.SortOrder = System.Windows.Forms.SortOrder.Descending
+
 ```` 
 
 
 
 {{endregion}}
+
+| Before Hiding | After Hiding |
+| ------ | ------ |
+|![pivotgrid-radpivotfieldlist 006](images/pivotgrid-radpivotfieldlist006.png)|![pivotgrid-radpivotfieldlist 007](images/pivotgrid-radpivotfieldlist007.png)|
 
 #### Hiding Nodes
 
@@ -38,6 +50,8 @@ this.radPivotGrid1.UpdateCompleted += radPivotGrid1_UpdateCompleted;
 
 ````
 ````VB.NET
+AddHandler Me.RadPivotGrid1.UpdateCompleted, AddressOf RadPivotGrid1_UpdateCompleted
+
 ```` 
 
 
@@ -58,6 +72,13 @@ private void radPivotGrid1_UpdateCompleted(object sender, EventArgs e)
 
 ````
 ````VB.NET
+Private Sub RadPivotGrid1_UpdateCompleted(sender As Object, e As EventArgs)
+    Dim promotionField As RadTreeNode = Me.RadPivotFieldList1.FieldsControl.Nodes.Where(Function(n) n.Text = "Promotion").FirstOrDefault()
+    If promotionField IsNot Nothing Then
+        promotionField.Visible = False
+    End If
+End Sub
+
 ```` 
 
 
@@ -81,11 +102,21 @@ this.provider.FieldDescriptionsProvider = descriptionProvider;
 
 ````
 ````VB.NET
+Me.provider = New LocalDataSourceProvider() With {.ItemsSource = orders}
+Dim descriptionProvider As LocalDataSourceFieldDescriptionsProvider = New LocalDataSourceFieldDescriptionsProvider()
+AddHandler descriptionProvider.AddingContainerNode, AddressOf descriptionProvider_AddingContainerNode
+AddHandler descriptionProvider.GetDescriptionsDataAsyncCompleted, AddressOf descriptionProvider_GetDescriptionsDataAsyncCompleted
+Me.provider.FieldDescriptionsProvider = descriptionProvider
+
 ```` 
 
 
 
 {{endregion}}
+
+| Before Canceling | After Canceling |
+| ------ | ------ |
+|![pivotgrid-radpivotfieldlist 006](images/pivotgrid-radpivotfieldlist006.png)|![pivotgrid-radpivotfieldlist 007](images/pivotgrid-radpivotfieldlist007.png)|
 
 #### Cancel Adding a Particular Node
 
@@ -102,11 +133,21 @@ private void descriptionProvider_AddingContainerNode(object sender, ContainerNod
 
 ````
 ````VB.NET
+Private Sub descriptionProvider_AddingContainerNode(sender As Object, e As ContainerNodeEventArgs)
+    If e.ContainerNode.Name = "Promotion" Then
+        e.Cancel = True
+    End If
+End Sub
+
 ```` 
 
 
 
 {{endregion}}
+
+| Before Removing | After Removing |
+| ------ | ------ |
+|![pivotgrid-radpivotfieldlist 008](images/pivotgrid-radpivotfieldlist008.png)|![pivotgrid-radpivotfieldlist 009](images/pivotgrid-radpivotfieldlist009.png)|
 
 #### Remove a Child Date Node
 
@@ -128,6 +169,16 @@ private void descriptionProvider_GetDescriptionsDataAsyncCompleted(object sender
 
 ````
 ````VB.NET
+Private Sub descriptionProvider_GetDescriptionsDataAsyncCompleted(sender As Object, e As GetDescriptionsDataCompletedEventArgs)
+    Dim dateNode As ContainerNode = e.DescriptionsData.RootFieldInfo.Children.Where(Function(n) n.Name = "Date").FirstOrDefault()
+    If dateNode IsNot Nothing Then
+        Dim yearNode As FieldInfoNode = TryCast(dateNode.Children.Where(Function(n) n.Name = "Date.Year").FirstOrDefault(), FieldInfoNode)
+        If yearNode IsNot Nothing Then
+            dateNode.Children.Remove(yearNode)
+        End If
+    End If
+End Sub
+
 ```` 
 
 
