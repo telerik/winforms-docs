@@ -565,7 +565,10 @@ navigation:
         position: 34
     pdfviewer/text:
         title: Text
-        position: 5		
+        position: 5	
+    pdfviewer/ui:
+        title: UI
+        position: 6		
     pivotgrid:
         title: PivotGrid 
         position: 35
