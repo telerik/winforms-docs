@@ -6,6 +6,7 @@ slug: winforms/gauges/radialgauge/save-and-load-layout
 tags: save,and,load,layout
 published: True
 position: 5
+previous_url: radialgauge-save-and-load-layout
 ---
 
 # Save and Load layout

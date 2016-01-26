@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/statusstrip/radstatusbar-properties
 tags: radstatusbar,properties
 published: True
 position: 2
+previous_url: forms-and-dialogs-statusstrip-radstatusbar-properties
 ---
 
 # RadStatusBar Properties

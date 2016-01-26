@@ -6,6 +6,7 @@ slug: winforms/gridview/cells/creating-custom-cells
 tags: creating,custom,cells
 published: True
 position: 8
+previous_url: gridview-cells-custom-cells
 ---
 
 # Creating custom cells

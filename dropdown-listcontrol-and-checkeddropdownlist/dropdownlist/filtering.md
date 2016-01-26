@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/filteri
 tags: filtering
 published: True
 position: 11
+previous_url: dropdown-and-listcontrol-dropdownlist-filtering
 ---
 
 # Filtering

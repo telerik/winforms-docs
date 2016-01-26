@@ -6,6 +6,7 @@ slug: winforms/gridview/cells/accessing-and-setting-the-currentcell
 tags: accessing,and,setting,the,currentcell
 published: True
 position: 6
+previous_url: gridview-cells-setting-current-cell
 ---
 
 # Accessing and setting the CurrentCell

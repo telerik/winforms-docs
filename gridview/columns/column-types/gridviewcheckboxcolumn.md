@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewcheckboxcolumn
 tags: gridviewcheckboxcolumn
 published: True
 position: 4
+previous_url: gridview-columns-gridviewcheckboxcolumn
 ---
 
 # GridViewCheckBoxColumn

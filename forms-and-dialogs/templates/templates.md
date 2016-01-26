@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/templates
 tags: templates
 published: True
 position: 0
+previous_url: forms-and-dialogs-templates-overview
 ---
 
 # Templates

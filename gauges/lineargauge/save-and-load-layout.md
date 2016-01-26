@@ -6,6 +6,7 @@ slug: winforms/gauges/lineargauge/save-and-load-layout
 tags: save,and,load,layout
 published: True
 position: 6
+previous_url: lineargauge-save-and-load-layout
 ---
 
 # Save and Load Layout

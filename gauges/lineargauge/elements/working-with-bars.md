@@ -6,6 +6,7 @@ slug: winforms/gauges/lineargauge/elements/working-with-bars
 tags: working,with,bars
 published: True
 position: 0
+previous_url: lineargauge-elements-working-with-bars
 ---
 
 # Working with Bars

@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewimagecolumn
 tags: gridviewimagecolumn
 published: True
 position: 11
+previous_url: gridview-columns-gridviewimagecolumn
 ---
 
 # GridViewImageColumn

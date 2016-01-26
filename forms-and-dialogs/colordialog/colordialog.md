@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/colordialog
 tags: colordialog
 published: True
 position: 0
+previous_url: forms-and-dialogs-colordialog-overview
 ---
 
 # ColorDialog

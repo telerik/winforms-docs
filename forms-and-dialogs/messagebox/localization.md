@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/messagebox/localization
 tags: localization
 published: True
 position: 3
+previous_url: forms-and-dialogs-messagebox-localization
 ---
 
 # Localization

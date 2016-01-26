@@ -6,6 +6,7 @@ slug: winforms/ganttview-/formatting/timeline-item-formatting
 tags: timeline,item,formatting
 published: True
 position: 2
+previous_url: ganttview-formatting-timelineviewitem-formatting
 ---
 
 # Timeline item formatting

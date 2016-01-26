@@ -6,6 +6,7 @@ slug: winforms/gauges/lineargauge/elements/working-with-ticks
 tags: working,with,ticks
 published: True
 position: 2
+previous_url: lineargauge-elements-working-with-ticks
 ---
 
 # Working with Ticks

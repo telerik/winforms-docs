@@ -6,6 +6,7 @@ slug: winforms/ganttview-/design-time/adding-links
 tags: adding,links
 published: True
 position: 3
+previous_url: ganttview-designtime-adding-links
 ---
 
 # Adding links

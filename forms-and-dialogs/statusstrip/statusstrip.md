@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/statusstrip
 tags: statusstrip
 published: True
 position: 0
+previous_url: forms-and-dialogs-statusstrip-overview
 ---
 
 # StatusStrip

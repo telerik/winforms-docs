@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewbrowsecolumn
 tags: gridviewbrowsecolumn
 published: True
 position: 2
+previous_url: gridview-columns-gridviewbrowsecolumn
 ---
 
 # GridViewBrowseColumn

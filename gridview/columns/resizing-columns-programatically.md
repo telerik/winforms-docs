@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/resizing-columns-programatically
 tags: resizing,columns,programatically
 published: True
 position: 4
+previous_url: gridview-columns-resizing-columns-programatically
 ---
 
 # Resizing columns programatically

@@ -6,6 +6,7 @@ slug: winforms/ganttview-
 tags: ganttview,
 published: True
 position: 0
+previous_url: ganttview-overview 
 ---
 
 # GanttView 

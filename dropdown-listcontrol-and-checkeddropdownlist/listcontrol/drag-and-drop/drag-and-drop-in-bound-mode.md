@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and
 tags: drag,and,drop,in,bound,mode
 published: True
 position: 0
+previous_url: dropdown-and-listcontrol-listcontrol-drag-and-drop
 ---
 
 # Drag and Drop in Bound Mode

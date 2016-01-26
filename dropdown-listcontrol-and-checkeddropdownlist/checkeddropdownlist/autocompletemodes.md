@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/
 tags: autocompletemodes
 published: True
 position: 5
+previous_url: dropdown-and-list-control-checkeddropdownlist-autocompletemodes
 ---
 
 # AutoCompleteModes

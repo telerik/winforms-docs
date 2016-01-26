@@ -6,6 +6,7 @@ slug: winforms/editors/textboxcontrol/radtextboxcontrol-vs-radtextbox
 tags: radtextboxcontrol,vs,radtextbox
 published: True
 position: 1
+previous_url: editors-textboxcontrol-radtextboxcontrol-vs-radtextbox
 ---
 
 # RadTextBoxControl vs RadTextBox

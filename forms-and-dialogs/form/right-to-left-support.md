@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/form/right-to-left-support
 tags: right-to-left,support
 published: True
 position: 6
+previous_url: forms-and-dialogs-form-right-to-left-support
 ---
 
 # Right-To-Left Support

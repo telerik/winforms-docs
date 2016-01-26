@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/item-si
 tags: item,sizing
 published: True
 position: 12
+previous_url: dropdown-and-listcontrol-dropdownlist-item-sizing
 ---
 
 # Item Sizing

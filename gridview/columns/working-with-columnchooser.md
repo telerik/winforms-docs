@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/working-with-columnchooser
 tags: working,with,columnchooser
 published: True
 position: 6
+previous_url: gridview-columns-working-with-column-chooser
 ---
 
 # Working with ColumnChooser

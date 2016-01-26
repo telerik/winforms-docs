@@ -6,6 +6,7 @@ slug: winforms/ganttview-/formatting/textview-item-formatting
 tags: textview,item,formatting
 published: True
 position: 0
+previous_url: ganttview-formatting-textviewitem-cellformatting
 ---
 
 # TextView item formatting

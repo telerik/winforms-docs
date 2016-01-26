@@ -6,6 +6,7 @@ slug: winforms/ganttview-/context-menu/data-item-context-menu
 tags: data,item,context,menu
 published: True
 position: 1
+previous_url: ganttview-context-menu-item-context-menu
 ---
 
 # Data item context menu

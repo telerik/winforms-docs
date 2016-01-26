@@ -6,6 +6,7 @@ slug: winforms/ganttview-/formatting/graphicalview-item-formatting
 tags: graphicalview,item,formatting
 published: True
 position: 1
+previous_url: ganttview-formatting-graphicalviewitem-formatting
 ---
 
 # GraphicalView item formatting

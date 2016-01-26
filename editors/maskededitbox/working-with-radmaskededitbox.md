@@ -6,6 +6,7 @@ slug: winforms/editors/maskededitbox/working-with-radmaskededitbox
 tags: working,with,radmaskededitbox
 published: True
 position: 5
+previous_url: editors-maskededitbox-working-with-radmaskededitbox
 ---
 
 # Working with RadMaskedEditBox

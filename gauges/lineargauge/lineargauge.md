@@ -6,6 +6,7 @@ slug: winforms/gauges/lineargauge
 tags: lineargauge
 published: True
 position: 0
+previous_url: lineargauge-overview
 ---
 
 # LinearGauge

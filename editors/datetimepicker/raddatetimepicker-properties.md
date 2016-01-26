@@ -6,6 +6,7 @@ slug: winforms/editors/datetimepicker/raddatetimepicker-properties
 tags: raddatetimepicker,properties
 published: True
 position: 2
+previous_url: editors-datetimepicker-basics-raddatetimepicker-properties
 ---
 
 # RadDateTimePicker Properties

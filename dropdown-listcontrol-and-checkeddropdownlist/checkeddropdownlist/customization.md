@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/
 tags: customization
 published: True
 position: 4
+previous_url: dropdown-and-listcontrol-checkeddropdownlist-customization
 ---
 
 # Customization

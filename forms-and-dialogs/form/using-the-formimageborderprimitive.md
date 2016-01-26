@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/form/using-the-formimageborderprimitive
 tags: using,the,formimageborderprimitive
 published: True
 position: 5
+previous_url: forms-and-dialogs-form-using-the-formimageborderprimitive
 ---
 
 # Using the FormImageBorderPrimitive

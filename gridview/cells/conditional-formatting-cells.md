@@ -6,6 +6,7 @@ slug: winforms/gridview/cells/conditional-formatting-cells
 tags: conditional,formatting,cells
 published: True
 position: 3
+previous_url: gridview-cells-conditional-formatting-cells
 ---
 
 # Conditional Formatting Cells

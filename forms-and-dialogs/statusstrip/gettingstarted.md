@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/statusstrip/gettingstarted
 tags: gettingstarted
 published: True
 position: 1
+previous_url: forms-and-dialogs-statusstrip-getting-started
 ---
 
 # GettingStarted

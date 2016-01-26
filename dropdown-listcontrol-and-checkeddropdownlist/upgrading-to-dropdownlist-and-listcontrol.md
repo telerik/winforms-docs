@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdow
 tags: upgrading,to,dropdownlist,and,listcontrol
 published: True
 position: 0
+previous_url: dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol
 ---
 
 # Upgrading to DropDownList and ListControl

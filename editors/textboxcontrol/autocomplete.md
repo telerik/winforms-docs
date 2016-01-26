@@ -6,6 +6,7 @@ slug: winforms/editors/textboxcontrol/autocomplete
 tags: autocomplete
 published: True
 position: 6
+previous_url: editors-textboxcontrol-autocomplete
 ---
 
 # AutoComplete

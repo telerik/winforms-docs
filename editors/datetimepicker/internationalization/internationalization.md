@@ -6,6 +6,7 @@ slug: winforms/editors/datetimepicker/internationalization/internationalization
 tags: internationalization
 published: True
 position: 0
+previous_url: editors-datetimepicker-internationalization
 ---
 
 # Internationalization

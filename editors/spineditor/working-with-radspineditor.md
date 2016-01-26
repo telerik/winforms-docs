@@ -6,6 +6,7 @@ slug: winforms/editors/spineditor/working-with-radspineditor
 tags: working,with,radspineditor
 published: True
 position: 2
+previous_url: editors-spineditor-working-with-radspineditor
 ---
 
 # Working with RadSpinEditor

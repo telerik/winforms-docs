@@ -6,6 +6,7 @@ slug: winforms/editors/datetimepicker/free-form-date-time-parsing
 tags: free,form,date,time,parsing
 published: True
 position: 4
+previous_url: editors-datetimepicker-freeformdatetime-parsing
 ---
 
 # Free Form Date Time parsing

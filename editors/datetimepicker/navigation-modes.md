@@ -6,6 +6,7 @@ slug: winforms/editors/datetimepicker/navigation-modes
 tags: navigation,modes
 published: True
 position: 3
+previous_url: editors-datetimepicker-navigation-modes
 ---
 
 # Navigation Modes

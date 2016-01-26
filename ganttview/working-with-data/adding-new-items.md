@@ -6,6 +6,7 @@ slug: winforms/ganttview-/working-with-data/adding-new-items
 tags: adding,new,items
 published: True
 position: 3
+previous_url: ganttview-working-with-data-adding-new-items
 ---
 
 # Adding new items

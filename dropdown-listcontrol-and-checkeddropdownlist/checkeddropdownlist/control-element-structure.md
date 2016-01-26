@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/
 tags: control,element,structure
 published: True
 position: 1
+previous_url: dropdown-and-listcontrol-checkeddropdownlist-control-element-structure
 ---
 
 # Control Element Structure

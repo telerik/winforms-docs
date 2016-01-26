@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/form/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: forms-and-dialogs-form-getting-started
 ---
 
 # Getting Started

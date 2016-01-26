@@ -6,6 +6,7 @@ slug: winforms/editors/datetimepicker/how-to/set-null-or-empty-value
 tags: set,null,or,empty,value
 published: True
 position: 0
+previous_url: editors-datetimepicker-how-to-set-null-or-empty-value
 ---
 
 # Set null or empty value

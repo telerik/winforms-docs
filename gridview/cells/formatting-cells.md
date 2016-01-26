@@ -6,6 +6,7 @@ slug: winforms/gridview/cells/formatting-cells
 tags: formatting,cells
 published: True
 position: 4
+previous_url: gridview-cells-formatting-cells
 ---
 
 # Formatting Cells

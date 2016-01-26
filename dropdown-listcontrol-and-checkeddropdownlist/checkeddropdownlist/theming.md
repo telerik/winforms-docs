@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/
 tags: theming
 published: True
 position: 8
+previous_url: dropdown-and-listcontrol-checkeddropdownlist-theming
 ---
 
 # Theming

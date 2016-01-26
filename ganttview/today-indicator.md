@@ -6,6 +6,7 @@ slug: winforms/ganttview-/today-indicator
 tags: today,indicator
 published: True
 position: 10
+previous_url: ganttview-today-indicator
 ---
 
 # Today Indicator

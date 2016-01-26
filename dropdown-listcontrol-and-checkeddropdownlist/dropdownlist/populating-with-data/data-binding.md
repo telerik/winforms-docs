@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populat
 tags: data,binding
 published: True
 position: 2
+previous_url: dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding
 ---
 
 # Data binding

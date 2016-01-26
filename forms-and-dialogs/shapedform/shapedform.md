@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/shapedform
 tags: shapedform
 published: True
 position: 0
+previous_url: forms-and-dialogs-shapedform-overview
 ---
 
 # ShapedForm

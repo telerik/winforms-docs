@@ -6,6 +6,7 @@ slug: winforms/ganttview-/context-menu/default-context-menu
 tags: default,context,menu
 published: True
 position: 0
+previous_url: ganttview-context-menu-default-context-menu
 ---
 
 # Default context menu

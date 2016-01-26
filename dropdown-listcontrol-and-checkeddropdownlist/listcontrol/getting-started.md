@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/getting-
 tags: getting,started
 published: True
 position: 2
+previous_url: dropdown-and-listcontrol-listcontrol-getting-started
 ---
 
 # Getting Started

@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/colordialog/working-with-the-radcolordialog
 tags: working,with,the,radcolordialog
 published: True
 position: 3
+previous_url: forms-and-dialogs-colordialog-working-with-the-radcolordialog
 ---
 
 # Working with the RadColorDialog

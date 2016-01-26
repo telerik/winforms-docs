@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/templates/radaboutbox-template
 tags: radaboutbox,template
 published: True
 position: 2
+previous_url: forms-and-dialogs-templates-radaboutbox-overview
 ---
 
 # RadAboutBox Template

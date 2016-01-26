@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewcomboboxcolumn
 tags: gridviewcomboboxcolumn
 published: True
 position: 6
+previous_url: gridview-columns-gridviewcomboboxcolumn
 ---
 
 # GridViewComboBoxColumn

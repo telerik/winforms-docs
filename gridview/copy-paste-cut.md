@@ -6,6 +6,7 @@ slug: winforms/gridview/cut-copy-paste
 tags: copy/paste/cut
 published: True
 position: 11
+previous_url: gridview-copy-paste-cut
 ---
 
 # Copy/Paste/Cut

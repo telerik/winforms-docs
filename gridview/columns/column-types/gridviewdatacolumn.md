@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewdatacolumn
 tags: gridviewdatacolumn
 published: True
 position: 1
+previous_url: gridview-columns-gridviewdatacolumn
 ---
 
 # GridViewDataColumn

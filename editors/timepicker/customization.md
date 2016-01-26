@@ -6,6 +6,7 @@ slug: winforms/editors/timepicker/customization
 tags: customization
 published: True
 position: 3
+previous_url: editors-timepicker-customization
 ---
 
 # Customization

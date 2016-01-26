@@ -6,6 +6,7 @@ slug: winforms/ganttview-/design-time/adding-columns
 tags: adding,columns
 published: True
 position: 1
+previous_url: ganttview-designtime-adding-columns
 ---
 
 # Adding columns

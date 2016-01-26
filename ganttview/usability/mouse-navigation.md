@@ -6,6 +6,7 @@ slug: winforms/ganttview-/usability/mouse-navigation
 tags: mouse,navigation
 published: True
 position: 1
+previous_url: ganttview-usability-mouse-navigation
 ---
 
 # Mouse navigation

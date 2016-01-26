@@ -6,6 +6,7 @@ slug: winforms/gridview/cells/accessing-cells
 tags: accessing,cells
 published: True
 position: 0
+previous_url: gridview-cells-accessing-cells
 ---
 
 # Accessing Cells

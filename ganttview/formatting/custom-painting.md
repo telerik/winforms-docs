@@ -6,6 +6,7 @@ slug: winforms/ganttview-/formatting/custom-painting
 tags: custom,painting
 published: True
 position: 3
+previous_url: ganttview-formatting-custom-paiting
 ---
 
 # Custom painting

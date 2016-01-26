@@ -6,6 +6,7 @@ slug: winforms/gauges/lineargauge/elements/working-with-labels
 tags: working,with,labels
 published: True
 position: 3
+previous_url: lineargauge-elements-working-with-labels
 ---
 
 # Working with Labels

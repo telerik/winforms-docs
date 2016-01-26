@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdow
 tags: dropdown,resizing
 published: True
 position: 13
+previous_url: dropdown-and-listcontrol-dropdownlist-dropdown-resizing
 ---
 
 # DropDown Resizing

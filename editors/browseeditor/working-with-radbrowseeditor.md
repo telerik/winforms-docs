@@ -6,6 +6,7 @@ slug: winforms/editors/browseeditor/working-with-radbrowseeditor
 tags: working,with,radbrowseeditor
 published: True
 position: 2
+previous_url: editors-browse-editor-working-with
 ---
 
 # Working with RadBrowseEditor

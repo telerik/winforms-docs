@@ -6,6 +6,7 @@ slug: winforms/editors/spineditor/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: editors-spineditor-getting-started
 ---
 
 # Getting Started

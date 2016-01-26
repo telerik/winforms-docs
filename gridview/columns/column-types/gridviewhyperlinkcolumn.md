@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewhyperlinkcolumn
 tags: gridviewhyperlinkcolumn
 published: True
 position: 10
+previous_url: gridview-columns-gridviewhyperlinkcolumn
 ---
 
 # GridViewHyperlinkColumn

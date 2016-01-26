@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features
 tags: features
 published: True
 position: 1
+previous_url: dropdown-and-listcontrol-listcontrol-features
 ---
 
 # Features

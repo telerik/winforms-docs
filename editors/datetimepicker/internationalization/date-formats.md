@@ -6,6 +6,7 @@ slug: winforms/editors/datetimepicker/internationalization/date-formats
 tags: date,formats
 published: True
 position: 2
+previous_url: editors-datetimepicker-internationalization-date-formats
 ---
 
 # Date Formats

@@ -6,6 +6,7 @@ slug: winforms/gauges/lineargauge/structure
 tags: structure
 published: True
 position: 3
+previous_url: lineargauge-structure
 ---
 
 # Structure

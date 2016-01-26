@@ -6,6 +6,7 @@ slug: winforms/ganttview-/printing-support/printing-events
 tags: printing,events
 published: True
 position: 1
+previous_url: ganttview-printing-support-printing-events
 ---
 
 # Printing Events

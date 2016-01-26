@@ -6,6 +6,7 @@ slug: winforms/editors/spineditor
 tags: spineditor
 published: True
 position: 0
+previous_url: editors-spineditor-overview
 ---
 
 # SpinEditor

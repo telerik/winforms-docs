@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/scrolli
 tags: scrolling
 published: True
 position: 16
+previous_url: dropdown-and-listcontrol-dropdownlist-scrolling
 ---
 
 # Scrolling

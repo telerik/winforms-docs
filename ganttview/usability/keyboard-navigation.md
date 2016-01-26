@@ -6,6 +6,7 @@ slug: winforms/ganttview-/usability/keyboard-navigation
 tags: keyboard,navigation
 published: True
 position: 0
+previous_url: ganttview-usability-keyboard-navigation
 ---
 
 # Keyboard navigation

@@ -6,6 +6,7 @@ slug: winforms/editors/textbox/control-element-structure
 tags: control,element,structure
 published: True
 position: 2
+previous_url: editors-textbox-control-element-structure
 ---
 
 # Control Element Structure

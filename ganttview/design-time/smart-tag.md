@@ -6,6 +6,7 @@ slug: winforms/ganttview-/design-time/smart-tag
 tags: smart,tag
 published: True
 position: 0
+previous_url: ganttview-designtime-smart-tag
 ---
 
 # Smart Tag

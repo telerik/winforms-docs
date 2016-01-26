@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewcolumn
 tags: gridviewcolumn
 published: True
 position: 0
+previous_url: gridview-columns-gridviewcolumn
 ---
 
 # GridViewColumn

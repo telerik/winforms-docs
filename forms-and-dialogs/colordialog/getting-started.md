@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/colordialog/getting-started
 tags: getting,started
 published: True
 position: 2
+previous_url: forms-and-dialogs-colordialog-getting-started
 ---
 
 # Getting Started

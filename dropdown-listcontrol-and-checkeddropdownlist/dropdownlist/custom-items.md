@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/custom-
 tags: custom,items
 published: True
 position: 8
+previous_url: dropdown-and-listcontrol-dropdownlist-customizing-items
 ---
 
 # Custom Items

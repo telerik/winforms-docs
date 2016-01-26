@@ -6,6 +6,7 @@ slug: winforms/gauges/lineargauge/design-time
 tags: design,time
 published: True
 position: 2
+previous_url: lineargauge-design-time
 ---
 
 # Design Time

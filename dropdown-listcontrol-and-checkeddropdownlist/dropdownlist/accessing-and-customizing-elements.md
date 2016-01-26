@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/accessi
 tags: accessing,and,customizing,elements
 published: True
 position: 4
+previous_url: dropdown-and-listcontrol-dropdownlist-accessing-and-customizing-elements
 ---
 
 # Accessing and Customizing Elements

@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/generating-columns
 tags: generating,columns
 published: True
 position: 1
+previous_url: gridview-columns-generating-columns
 ---
 
 # Generating Columns

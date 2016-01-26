@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewratingcolumn
 tags: gridviewratingcolumn
 published: True
 position: 15
+previous_url: gridview-columns-gridviewratingcolumn
 ---
 
 # GridViewRatingColumn

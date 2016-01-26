@@ -6,6 +6,7 @@ slug: winforms/editors/textboxcontrol/formatting-blocks
 tags: formatting,blocks
 published: True
 position: 7
+previous_url: editors-textboxcontrol-formatting-blocks
 ---
 
 # Formatting blocks

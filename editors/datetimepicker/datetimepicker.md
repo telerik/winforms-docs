@@ -6,6 +6,7 @@ slug: winforms/editors/datetimepicker
 tags: datetimepicker
 published: True
 position: 0
+previous_url: editors-datetimepicker-overview
 ---
 
 # DateTimePicker

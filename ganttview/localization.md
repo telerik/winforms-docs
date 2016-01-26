@@ -6,6 +6,7 @@ slug: winforms/ganttview-/localization
 tags: localization
 published: True
 position: 11
+previous_url: ganttview-localizaton
 ---
 
 # Localization

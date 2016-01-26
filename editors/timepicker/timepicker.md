@@ -6,6 +6,7 @@ slug: winforms/editors/timepicker
 tags: time,picker
 published: True
 position: 0
+previous_url: editors-timepicker-overview
 ---
 
 # Time Picker

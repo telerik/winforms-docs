@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/formatt
 tags: formatting,items
 published: True
 position: 9
+previous_url: dropdown-and-listcontrol-dropdownlist-formatting-items
 ---
 
 # Formatting Items

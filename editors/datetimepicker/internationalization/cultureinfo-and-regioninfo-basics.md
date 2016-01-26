@@ -6,6 +6,7 @@ slug: winforms/editors/datetimepicker/internationalization/cultureinfo-and-regio
 tags: cultureinfo,and,regioninfo,basics
 published: True
 position: 1
+previous_url: editors-datetimepicker-internationalization-cultureinfo-and-regioninfo-basics
 ---
 
 # CultureInfo and RegionInfo Basics

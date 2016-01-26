@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/data-rep
 tags: data,representation
 published: True
 position: 4
+previous_url: dropdown-and-listcontrol-listcontrol-data-representation
 ---
 
 # Data Representation

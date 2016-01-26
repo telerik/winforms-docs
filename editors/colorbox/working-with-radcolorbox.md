@@ -6,6 +6,7 @@ slug: winforms/editors/colorbox/working-with-radcolorbox
 tags: working,with,radcolorbox
 published: True
 position: 2
+previous_url: editors-color-box-working-with
 ---
 
 # Working with RadColorBox

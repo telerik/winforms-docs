@@ -6,6 +6,7 @@ slug: winforms/editors/popupeditor/design-time
 tags: design,time
 published: True
 position: 3
+previous_url: editors-popupeditor-design-time
 ---
 
 # Design Time

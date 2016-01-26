@@ -6,6 +6,7 @@ slug: winforms/editors/browseeditor
 tags: browse,editor
 published: True
 position: 0
+previous_url: editors-browse-editor-overview
 ---
 
 # Browse Editor

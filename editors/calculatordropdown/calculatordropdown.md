@@ -6,6 +6,7 @@ slug: winforms/editors/calculatordropdown
 tags: calculatordropdown
 published: True
 position: 0
+previous_url: editors-calculatordropdown-overview
 ---
 
 # CalculatorDropDown

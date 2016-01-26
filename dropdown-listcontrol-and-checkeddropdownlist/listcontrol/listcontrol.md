@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol
 tags: listcontrol
 published: True
 position: 0
+previous_url: dropdown-and-listcontrol-listcontrol-overview
 ---
 
 # ListControl

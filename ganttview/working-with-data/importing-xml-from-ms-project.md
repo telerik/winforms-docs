@@ -6,6 +6,7 @@ slug: winforms/ganttview-/working-with-data/importing-xml-from-ms-project
 tags: importing,xml,from,ms,project
 published: True
 position: 5
+previous_url: ganttview-working-with-data-importing-xml-from-msproject
 ---
 
 # Importing XML from MS Project

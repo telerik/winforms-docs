@@ -6,6 +6,7 @@ slug: winforms/ganttview-/editing/customizing-editor
 tags: customizing,editor
 published: True
 position: 2
+previous_url: ganttview-editing-customizing-editor
 ---
 
 # Customizing editor

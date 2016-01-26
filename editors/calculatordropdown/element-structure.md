@@ -6,6 +6,7 @@ slug: winforms/editors/calculatordropdown/element-structure
 tags: element,structure
 published: True
 position: 1
+previous_url: editors-calculatordropdown-element-structure
 ---
 
 # Element structure

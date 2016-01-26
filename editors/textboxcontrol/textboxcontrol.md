@@ -6,6 +6,7 @@ slug: winforms/editors/textboxcontrol
 tags: textboxcontrol
 published: True
 position: 0
+previous_url: editors-textboxcontrol-overview
 ---
 
 # TextBoxControl

@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populat
 tags: adding,items,programmatically
 published: True
 position: 1
+previous_url: dropdown-and-listcontrol-dropdownlist-populating-with-data-adding-items-programmatically
 ---
 
 # Adding items programmatically

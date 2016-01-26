@@ -6,6 +6,7 @@ slug: winforms/ganttview-/editing/editing-graphical-view
 tags: editing,graphical,view
 published: True
 position: 1
+previous_url: ganttview-editing-editing-graphicalview
 ---
 
 # Editing graphical view

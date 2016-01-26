@@ -6,6 +6,7 @@ slug: winforms/ganttview-/working-with-data/populating-with-data-programmaticall
 tags: populating,with,data,programmatically
 published: True
 position: 2
+previous_url: ganttview-working-with-data-populating-with-data-programmatically
 ---
 
 # Populating with Data Programmatically

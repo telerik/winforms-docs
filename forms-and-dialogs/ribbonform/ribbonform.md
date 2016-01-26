@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/ribbonform
 tags: ribbonform
 published: True
 position: 0
+previous_url: forms-and-dialogs-ribbonform-overview
 ---
 
 # RibbonForm

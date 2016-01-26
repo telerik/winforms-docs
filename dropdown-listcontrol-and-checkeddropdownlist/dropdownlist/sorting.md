@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/sorting
 tags: sorting
 published: True
 position: 10
+previous_url: dropdown-and-listcontrol-dropdownlist-sorting
 ---
 
 # Sorting

@@ -6,6 +6,7 @@ slug: winforms/ganttview-/timeline/timeline-views
 tags: timeline,views
 published: True
 position: 0
+previous_url: ganttview-timeline-timeline-views
 ---
 
 # Timeline views

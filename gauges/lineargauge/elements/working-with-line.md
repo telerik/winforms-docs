@@ -6,6 +6,7 @@ slug: winforms/gauges/lineargauge/elements/working-with-line
 tags: working,with,line
 published: True
 position: 1
+previous_url: lineargauge-elements-working-with-lines
 ---
 
 # Working with Line

@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/
 tags: databinding
 published: True
 position: 3
+previous_url: dropdown-and-listcontrol-checkeddropdownlist-databinding
 ---
 
 # DataBinding

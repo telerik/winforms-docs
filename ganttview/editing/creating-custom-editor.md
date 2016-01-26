@@ -6,6 +6,7 @@ slug: winforms/ganttview-/editing/creating-custom-editor
 tags: creating,custom,editor
 published: True
 position: 3
+previous_url: ganttview-editing-creating-a-custom-editor
 ---
 
 # Creating custom editor

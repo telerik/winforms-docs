@@ -6,6 +6,7 @@ slug: winforms/gauges/lineargauge/properties-and-events
 tags: properties,and,events
 published: True
 position: 5
+previous_url: lineargauge-properties-and-events
 ---
 
 # Properties and Events

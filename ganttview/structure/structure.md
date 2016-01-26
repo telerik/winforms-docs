@@ -6,6 +6,7 @@ slug: winforms/ganttview-/structure
 tags: structure
 published: True
 position: 0
+previous_url: ganttview-structure
 ---
 
 # Structure

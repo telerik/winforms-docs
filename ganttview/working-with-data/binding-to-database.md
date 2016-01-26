@@ -6,6 +6,7 @@ slug: winforms/ganttview-/working-with-data/binding-to-database
 tags: binding,to,database
 published: True
 position: 1
+previous_url: ganttview-working-with-data-binding-to-database
 ---
 
 # Binding to database

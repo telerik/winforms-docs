@@ -6,6 +6,7 @@ slug: winforms/editors/maskededitbox
 tags: maskededitbox
 published: True
 position: 0
+previous_url: editors-maskededitbox-overview
 ---
 
 # MaskedEditBox

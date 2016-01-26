@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/messagebox/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: forms-and-dialogs-messagebox-getting-started
 ---
 
 # Getting Started

@@ -6,6 +6,7 @@ slug: winforms/editors/textboxcontrol/creating-custom-blocks
 tags: creating,custom,blocks
 published: True
 position: 8
+previous_url: editors-textboxcontrol-creating-custom-blocks
 ---
 
 # Creating custom blocks

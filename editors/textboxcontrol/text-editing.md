@@ -6,6 +6,7 @@ slug: winforms/editors/textboxcontrol/text-editing
 tags: text,editing
 published: True
 position: 5
+previous_url: editors-textboxcontrol-text-editing
 ---
 
 # Text editing

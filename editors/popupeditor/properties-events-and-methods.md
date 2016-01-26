@@ -6,6 +6,7 @@ slug: winforms/editors/popupeditor/properties,-events-and-methods
 tags: properties,,events,and,methods
 published: True
 position: 4
+previous_url: editors-popupeditor-properties-and-events
 ---
 
 # Properties, Events and Methods

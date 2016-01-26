@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/data-formatting
 tags: data,formatting
 published: True
 position: 7
+previous_url: gridview-columns-data-formatting
 ---
 
 # Data Formatting

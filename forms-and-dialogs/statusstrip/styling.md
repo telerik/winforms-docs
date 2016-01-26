@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/statusstrip/styling
 tags: styling
 published: True
 position: 4
+previous_url: forms-and-dialogs-statusstrip-styling
 ---
 
 # Styling

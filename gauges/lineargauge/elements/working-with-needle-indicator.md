@@ -6,6 +6,7 @@ slug: winforms/gauges/lineargauge/elements/working-with-needle-indicator
 tags: working,with,needle,indicator
 published: True
 position: 4
+previous_url: lineargauge-elements-working-with-needle-indicator
 ---
 
 # Working with Needle Indicator

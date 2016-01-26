@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/auto-co
 tags: auto-complete
 published: True
 position: 6
+previous_url: dropdown-and-listcontrol-dropdownlist-autocompleate
 ---
 
 # Auto-complete

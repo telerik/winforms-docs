@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/shapedform/customizing-shapedform
 tags: customizing,shapedform
 published: True
 position: 2
+previous_url: forms-and-dialogs-shapedform-customizing-shapedform
 ---
 
 # Customizing ShapedForm

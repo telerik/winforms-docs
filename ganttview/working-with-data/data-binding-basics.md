@@ -6,6 +6,7 @@ slug: winforms/ganttview-/working-with-data/data-binding-basics
 tags: data,binding,basics
 published: True
 position: 0
+previous_url: ganttview-working-with-data-data-binding-basics
 ---
 
 # Data binding basics

@@ -6,6 +6,7 @@ slug: winforms/editors/popupeditor/customize-elements
 tags: customize,elements
 published: True
 position: 6
+previous_url: editors-popupeditor-customize-elements
 ---
 
 # Customize Elements

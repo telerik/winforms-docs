@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/radtitlebar/detecting-when-the-user-drags-the-r
 tags: detecting,when,the,user,drags,the,radtitlebar
 published: True
 position: 1
+previous_url: forms-and-dialogs-radtitlebar-how-to-detecting-when-the-user-drags-the-radtitlebar
 ---
 
 # Detecting when the User Drags the RadTitleBar

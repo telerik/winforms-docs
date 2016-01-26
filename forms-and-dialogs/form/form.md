@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/form
 tags: form
 published: True
 position: 0
+previous_url: forms-and-dialogs-form-overview
 ---
 
 # Form

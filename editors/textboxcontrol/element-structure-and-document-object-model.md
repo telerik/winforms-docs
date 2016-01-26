@@ -6,6 +6,7 @@ slug: winforms/editors/textboxcontrol/element-structure-and-document-object-mode
 tags: element,structure,and,document,object,model
 published: True
 position: 3
+previous_url: editors-textboxcontrol-element-structure-and-document-object-model
 ---
 
 # Element structure and document object model

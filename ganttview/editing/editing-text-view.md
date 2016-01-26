@@ -6,6 +6,7 @@ slug: winforms/ganttview-/editing/editing-text-view
 tags: editing,text,view
 published: True
 position: 0
+previous_url: ganttview-editing-editing-textview
 ---
 
 # Editing text view

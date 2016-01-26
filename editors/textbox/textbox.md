@@ -6,6 +6,7 @@ slug: winforms/editors/textbox
 tags: textbox
 published: True
 position: 0
+previous_url: editors-textbox-overview
 ---
 
 # TextBox

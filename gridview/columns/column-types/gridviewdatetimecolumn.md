@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewdatetimecolumn
 tags: gridviewdatetimecolumn
 published: True
 position: 8
+previous_url: gridview-columns-gridviewdatetimecolumn
 ---
 
 # GridViewDateTimeColumn

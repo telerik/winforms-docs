@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/statusstrip/working-with-radstatusstrip-items
 tags: working,with,radstatusstrip,items
 published: True
 position: 3
+previous_url: forms-and-dialogs-statusstrip-working-with-radstatusstrip-items
 ---
 
 # Working With RadStatusStrip Items

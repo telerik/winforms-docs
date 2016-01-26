@@ -6,6 +6,7 @@ slug: winforms/editors/textbox/programming-radtextbox
 tags: programming,radtextbox
 published: True
 position: 1
+previous_url: editors-textbox-programming-radtextbox
 ---
 
 # Programming RadTextBox

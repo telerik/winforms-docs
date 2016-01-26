@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/design-
 tags: design,time
 published: True
 position: 2
+previous_url: dropdown-and-listcontrol-dropdownlist-design-time
 ---
 
 # Design Time

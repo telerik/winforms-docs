@@ -6,6 +6,7 @@ slug: winforms/gridview/cells/painting-and-drawing-in-cells
 tags: painting,and,drawing,in,cells
 published: True
 position: 7
+previous_url: gridview-cells-painting-and-drawing-in-cells
 ---
 
 # Painting and drawing in cells

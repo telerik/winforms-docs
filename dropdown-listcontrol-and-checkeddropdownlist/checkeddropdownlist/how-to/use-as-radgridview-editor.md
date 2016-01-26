@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/
 tags: use,as,radgridview,editor
 published: True
 position: 1
+previous_url: dropdown-and-listcontrol-checked-dropdownlist-how-to-use-as-radgridview-editor
 ---
 
 # Use as RadGridView editor

@@ -6,6 +6,7 @@ slug: winforms/ganttview-/printing-support
 tags: printing,support
 published: True
 position: 0
+previous_url: ganttview-printing-support-printing
 ---
 
 # Printing Support

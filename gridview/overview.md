@@ -6,6 +6,7 @@ slug: winforms/gridview
 tags: gridview
 published: True
 position: 0
+previous_url: gridview-overview
 ---
 
 # GridView

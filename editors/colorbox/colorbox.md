@@ -6,6 +6,7 @@ slug: winforms/editors/colorbox
 tags: colorbox
 published: True
 position: 0
+previous_url: editors-color-box-overview
 ---
 
 # ColorBox

@@ -6,6 +6,7 @@ slug: winforms/editors/textboxcontrol/getting-started
 tags: getting,started
 published: True
 position: 2
+previous_url: editors-textboxcontrol-getting-started
 ---
 
 # Getting Started

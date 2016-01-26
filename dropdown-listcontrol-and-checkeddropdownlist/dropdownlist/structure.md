@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/structu
 tags: structure
 published: True
 position: 1
+previous_url: dropdown-and-listcontrol-dropdownlist-structure
 ---
 
 # Structure

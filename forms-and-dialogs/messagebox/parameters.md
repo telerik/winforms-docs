@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/messagebox/parameters
 tags: parameters
 published: True
 position: 2
+previous_url: forms-and-dialogs-messagebox-parameters
 ---
 
 # Parameters

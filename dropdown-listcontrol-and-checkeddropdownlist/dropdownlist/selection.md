@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/selecti
 tags: selection
 published: True
 position: 16
+previous_url: dropdown-and-listcontrol-dropdownlist-selection
 ---
 
 # Selection

@@ -6,6 +6,7 @@ slug: winforms/ganttview-/integration
 tags: integration
 published: True
 position: 9
+previous_url: ganttview-integration
 ---
 
 # Integration

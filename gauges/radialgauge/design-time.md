@@ -6,6 +6,7 @@ slug: winforms/gauges/radialgauge/design-time
 tags: design,time
 published: True
 position: 3
+previous_url: radialgauge-design-time
 ---
 
 # Design time

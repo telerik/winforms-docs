@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/colordialog/usability
 tags: usability
 published: True
 position: 1
+previous_url: forms-and-dialogs-colordialog-usability
 ---
 
 # Usability

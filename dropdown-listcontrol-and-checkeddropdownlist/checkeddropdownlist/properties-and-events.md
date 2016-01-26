@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/
 tags: properties,and,events
 published: True
 position: 6
+previous_url: dropdown-and-listcontrol-checkedropdownlist-properties-and-events
 ---
 
 # Properties and Events

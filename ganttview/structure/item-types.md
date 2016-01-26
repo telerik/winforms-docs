@@ -6,6 +6,7 @@ slug: winforms/ganttview-/structure/item-types
 tags: item,types
 published: True
 position: 1
+previous_url: ganttview-structure-item-types
 ---
 
 # Item types

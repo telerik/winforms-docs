@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/customiz
 tags: customizing,items,(visual,appearance)
 published: True
 position: 7
+previous_url: dropdown-and-listcontrol-listcontrol-customizing-items-(visual-appearance)
 ---
 
 # Customizing Items (visual appearance)

@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/overview
 tags: overview
 published: True
 position: 0
+previous_url: forms-and-dialogs-overview
 ---
 
 # Forms and Dialogs Overview

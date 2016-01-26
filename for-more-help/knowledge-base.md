@@ -6,6 +6,7 @@ slug: winforms/for-more-help/knowledge-base
 tags: knowledge,base
 published: True
 position: 2
+previous_url: for-more-help-knowledge-base
 ---
 
 # Knowledge Base

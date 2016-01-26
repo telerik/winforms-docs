@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/
 tags: add,non-existing,items
 published: True
 position: 0
+previous_url: dropdown-and-listcontrol-checked-dropdownlist-how-to-add-non-existing-items
 ---
 
 # Add non-existing Items

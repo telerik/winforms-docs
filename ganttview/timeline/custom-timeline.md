@@ -6,6 +6,7 @@ slug: winforms/ganttview-/timeline/custom-timeline
 tags: custom,timeline
 published: True
 position: 1
+previous_url: ganttview-timeline-custom-timeline
 ---
 
 # Custom timeline

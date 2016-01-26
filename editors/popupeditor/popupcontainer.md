@@ -6,6 +6,7 @@ slug: winforms/editors/popupeditor/popupcontainer
 tags: popupcontainer
 published: True
 position: 5
+previous_url: editors-popupeditor-radpopupcontainer
 ---
 
 # PopupContainer

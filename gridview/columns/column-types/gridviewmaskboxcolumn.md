@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewmaskboxcolumn
 tags: gridviewmaskboxcolumn
 published: True
 position: 12
+previous_url: gridview-columns-gridviewmaskboxcolumn
 ---
 
 # GridViewMaskBoxColumn

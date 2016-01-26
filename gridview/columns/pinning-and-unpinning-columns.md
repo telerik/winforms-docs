@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/pinning-and-unpinning-columns
 tags: pinning,and,unpinning,columns
 published: True
 position: 5
+previous_url: gridview-columns-pinning-and-unpinning-columns
 ---
 
 # Pinning and Unpinning Columns

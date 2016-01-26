@@ -6,6 +6,7 @@ slug: winforms/gridview/cells/tooltips
 tags: tooltips
 published: True
 position: 5
+previous_url: gridview-cells-tooltips
 ---
 
 # ToolTips

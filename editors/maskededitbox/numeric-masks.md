@@ -6,6 +6,7 @@ slug: winforms/editors/maskededitbox/numeric-masks
 tags: numeric,masks
 published: True
 position: 4
+previous_url: editors-maskededitbox-numeric-masks
 ---
 
 # Numeric Masks

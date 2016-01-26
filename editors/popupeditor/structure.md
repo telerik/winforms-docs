@@ -6,6 +6,7 @@ slug: winforms/editors/popupeditor/structure
 tags: structure
 published: True
 position: 2
+previous_url: editors-popupeditor-structure
 ---
 
 # Structure

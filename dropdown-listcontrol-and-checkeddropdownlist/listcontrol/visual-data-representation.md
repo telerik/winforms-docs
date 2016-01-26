@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/visual-d
 tags: visual,data,representation
 published: True
 position: 6
+previous_url: dropdown-and-listcontrol-listcontrol-visual-data-representation
 ---
 
 # Visual Data Representation

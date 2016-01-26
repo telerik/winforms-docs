@@ -6,6 +6,7 @@ slug: winforms/editors/timepicker/localization
 tags: localization
 published: True
 position: 4
+previous_url: editors-timepicker-localization
 ---
 
 # Localization

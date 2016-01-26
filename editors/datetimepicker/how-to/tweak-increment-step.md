@@ -6,6 +6,7 @@ slug: winforms/editors/datetimepicker/how-to/tweak-increment-step
 tags: tweak,increment,step
 published: True
 position: 2
+previous_url: editors-maskededitbox-how-to-tweak-increment-step
 ---
 
 # Tweak Increment Step

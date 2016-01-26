@@ -6,6 +6,7 @@ slug: winforms/gauges/radialgauge
 tags: radialgauge
 published: True
 position: 0
+previous_url: radialgauge-overview
 ---
 
 # RadialGauge

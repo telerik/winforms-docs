@@ -6,6 +6,7 @@ slug: winforms/for-more-help/code-libraries
 tags: code,libraries
 published: True
 position: 3
+previous_url: for-more-help-code-libraries
 ---
 
 # Code Libraries

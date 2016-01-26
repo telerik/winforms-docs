@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/templates/radribbonform-template
 tags: radribbonform,template
 published: True
 position: 1
+previous_url: forms-and-dialogs-templates-radribbonform-overview
 ---
 
 # RadRibbonForm Template

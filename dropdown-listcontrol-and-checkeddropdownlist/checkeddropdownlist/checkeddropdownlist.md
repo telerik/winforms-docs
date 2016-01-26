@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist
 tags: checkeddropdownlist
 published: True
 position: 0
+previous_url: dropdown-and-listcontrol-checkedropdownlist
 ---
 
 # CheckedDropDownList

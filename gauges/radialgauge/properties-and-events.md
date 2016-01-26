@@ -6,6 +6,7 @@ slug: winforms/gauges/radialgauge/properties-and-events
 tags: properties,and,events
 published: True
 position: 5
+previous_url: radialgauge-properties-and-events
 ---
 
 # Properties and events

@@ -6,6 +6,7 @@ slug: winforms/editors/autocompletebox/creating-custom-blocks
 tags: creating,custom,blocks
 published: True
 position: 7
+previous_url: editors-autocompletetextbox-creating-custom-blocks
 ---
 
 # Creating Custom Blocks

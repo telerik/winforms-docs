@@ -6,6 +6,7 @@ slug: winforms/ganttview-/design-time/adding-items
 tags: adding,items
 published: True
 position: 2
+previous_url: ganttview-designtime-adding-items
 ---
 
 # Adding items

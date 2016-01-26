@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/form/mdi
 tags: mdi
 published: True
 position: 3
+previous_url: forms-and-dialogs-form-mdi
 ---
 
 # MDI

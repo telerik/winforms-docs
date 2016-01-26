@@ -6,6 +6,7 @@ slug: winforms/editors/popupeditor
 tags: popupeditor
 published: True
 position: 0
+previous_url: editors-popupeditor
 ---
 
 # PopupEditor

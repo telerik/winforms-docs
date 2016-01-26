@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewcalculatorcolumn
 tags: gridviewcalculatorcolumn
 published: True
 position: 3
+previous_url: gridview-columns-gridviewcalculatorcolumn
 ---
 
 # GridViewCalculatorColumn

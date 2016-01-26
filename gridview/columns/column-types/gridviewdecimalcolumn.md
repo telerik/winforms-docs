@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewdecimalcolumn
 tags: gridviewdecimalcolumn
 published: True
 position: 9
+previous_url: gridview-columns-gridviewdecimalcolumn
 ---
 
 # GridViewDecimalColumn

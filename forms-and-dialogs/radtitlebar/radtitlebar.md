@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/radtitlebar
 tags: radtitlebar
 published: True
 position: 0
+previous_url: forms-and-dialogs-radtitlebar-overview
 ---
 
 # RadTitleBar

@@ -6,6 +6,7 @@ slug: winforms/editors/textboxcontrol/caret-positioning-and-selection
 tags: caret,positioning,and,selection
 published: True
 position: 4
+previous_url: editors-textboxcontrol-caret-positioning-and-selection
 ---
 
 # Caret positioning and selection

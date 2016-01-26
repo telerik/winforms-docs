@@ -6,6 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populat
 tags: design,time
 published: True
 position: 0
+previous_url: dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time
 ---
 
 # Design time

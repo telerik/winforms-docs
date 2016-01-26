@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/reordering-columns
 tags: reordering,columns
 published: True
 position: 3
+previous_url: gridview-columns-reordering-columns
 ---
 
 # Reordering Columns

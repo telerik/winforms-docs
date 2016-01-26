@@ -6,6 +6,7 @@ slug: winforms/editors/timepicker/structure,-properties-and-events
 tags: structure,,properties,and,events
 published: True
 position: 2
+previous_url: editors-timepicker-structure-properties-and-events
 ---
 
 # Structure, Properties and Events

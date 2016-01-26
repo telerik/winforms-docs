@@ -6,6 +6,7 @@ slug: winforms/editors/autocompletebox/caret-positioning-and-selection
 tags: caret,positioning,and,selection
 published: True
 position: 3
+previous_url: editors-autocompletebox-caret-positioning-and-selection
 ---
 
 # Caret positioning and selection

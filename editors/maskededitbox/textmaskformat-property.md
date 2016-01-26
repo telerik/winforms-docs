@@ -6,6 +6,7 @@ slug: winforms/editors/maskededitbox/textmaskformat-property
 tags: textmaskformat,property
 published: True
 position: 6
+previous_url: editors-maskededitbox-textmaskformat
 ---
 
 # TextMaskFormat Property

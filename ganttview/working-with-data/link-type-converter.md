@@ -6,6 +6,7 @@ slug: winforms/ganttview-/working-with-data/link-type-converter
 tags: link,type,converter
 published: True
 position: 4
+previous_url: ganttview-working-with-data-link-type-converter
 ---
 
 # Link type converter

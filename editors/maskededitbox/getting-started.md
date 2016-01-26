@@ -6,6 +6,7 @@ slug: winforms/editors/maskededitbox/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: editors-maskededitbox-getting-started
 ---
 
 # Getting Started

@@ -6,6 +6,7 @@ slug: winforms/gridview/cells/gridviewcellinfo
 tags: gridviewcellinfo
 published: True
 position: 1
+previous_url: gridview-cells-gridviewcellinfo
 ---
 
 # GridViewCellInfo

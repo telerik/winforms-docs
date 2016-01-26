@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewcolorcolumn
 tags: gridviewcolorcolumn
 published: True
 position: 5
+previous_url: gridview-columns-gridviewcolorcolumn
 ---
 
 # GridViewColorColumn

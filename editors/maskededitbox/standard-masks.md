@@ -6,6 +6,7 @@ slug: winforms/editors/maskededitbox/standard-masks
 tags: standard,masks
 published: True
 position: 2
+previous_url: editors-maskededitbox-standart-masks
 ---
 
 # Standard Masks

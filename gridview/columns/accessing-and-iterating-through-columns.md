@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/accessing-and-iterating-through-columns
 tags: accessing,and,iterating,through,columns
 published: True
 position: 2
+previous_url: gridview-columns-iterating-columns
 ---
 
 # Accessing and Iterating through Columns

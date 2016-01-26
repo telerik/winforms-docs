@@ -6,6 +6,7 @@ slug: winforms/editors/calculatordropdown/customization
 tags: customization
 published: True
 position: 2
+previous_url: editors-calculatordropdown-customization
 ---
 
 # Customization

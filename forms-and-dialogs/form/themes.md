@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/form/themes
 tags: themes
 published: True
 position: 4
+previous_url: forms-and-dialogs-form-themes
 ---
 
 # Themes

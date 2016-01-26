@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/form/accessing-radform-elements
 tags: accessing,radform,elements
 published: True
 position: 2
+previous_url: forms-and-dialogs-form-accessing-radform-elements
 ---
 
 # Accessing RadForm Elements

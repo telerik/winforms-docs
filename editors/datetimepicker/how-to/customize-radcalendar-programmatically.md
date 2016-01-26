@@ -6,6 +6,7 @@ slug: winforms/editors/datetimepicker/how-to/customize-radcalendar-programmatica
 tags: customize,radcalendar,programmatically
 published: True
 position: 1
+previous_url: editors-datetimepicker-how-to-customize-radcalendar-programmatically
 ---
 
 # Customize RadCalendar Programmatically

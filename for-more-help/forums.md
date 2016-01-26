@@ -6,6 +6,7 @@ slug: winforms/for-more-help/forums
 tags: forums
 published: True
 position: 1
+previous_url: for-more-help-forums
 ---
 
 # Forums

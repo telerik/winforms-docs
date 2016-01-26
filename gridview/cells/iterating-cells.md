@@ -6,6 +6,7 @@ slug: winforms/gridview/cells/iterating-cells
 tags: iterating,cells
 published: True
 position: 2
+previous_url: gridview-cells-iterating-cells
 ---
 
 # Iterating Cells

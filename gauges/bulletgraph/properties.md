@@ -6,6 +6,7 @@ slug: winforms/gauges/bulletgraph/properties
 tags: properties
 published: True
 position: 3
+previous_url: bulletgraph-properties
 ---
 
 # Properties

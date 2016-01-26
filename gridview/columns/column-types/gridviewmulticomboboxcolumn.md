@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewmulticomboboxcolumn
 tags: gridviewmulticomboboxcolumn
 published: True
 position: 13
+previous_url: gridview-columns-gridviewmulticomboboxcolumn
 ---
 
 # GridViewMultiComboBoxColumn

@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/calculated-columns-(column-expressions)
 tags: calculated,columns,(column,expressions)
 published: True
 position: 8
+previous_url: gridview-columns-calculated-columns-(column-expressions)
 ---
 
 # Calculated Columns (Column Expressions)

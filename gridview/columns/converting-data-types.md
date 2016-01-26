@@ -6,6 +6,7 @@ slug: winforms/gridview/columns/converting-data-types
 tags: converting,data,types
 published: True
 position: 9
+previous_url: gridview-columns-converting-data-types
 ---
 
 # Converting Data Types

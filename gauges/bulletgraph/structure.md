@@ -6,6 +6,7 @@ slug: winforms/gauges/bulletgraph/structure
 tags: structure
 published: True
 position: 2
+previous_url: bulletgraph-structure
 ---
 
 # Structure

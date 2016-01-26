@@ -6,6 +6,7 @@ slug: winforms/gauges/bulletgraph
 tags: bulletgraph
 published: True
 position: 0
+previous_url: bulletgraph-overview
 ---
 
 # BulletGraph

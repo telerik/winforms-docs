@@ -6,6 +6,7 @@ slug: winforms/ganttview-/context-menu/modifying-context-menu
 tags: modifying,context,menu
 published: True
 position: 2
+previous_url: ganttview-context-menu-modifying-context-menu
 ---
 
 # Modifying context menu
