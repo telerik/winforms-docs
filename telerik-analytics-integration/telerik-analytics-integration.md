@@ -14,7 +14,7 @@ position: 0
 
 When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors occurred during the execution. With the Q1 2014 release UI for WinForms provides integrated support for [ Telerik Analytics](http://www.telerik.com/analytics). Using Analytics you will be able to trace certain features of the controls and get statistics about their usage. By default we have implemented the most used features of our controls (enlisted below) and of course you are enabled to track your own features that will better suit your needs. In advance, you can disable the features we track per control.
 
-In order to use this service, first you should log into the [analytics dashboard](https://analytics.telerik.com/), register your application and obtain a __product key__. For more information please check out the topic on [Getting Started with Telerik Analytics. ](http://www.telerik.com/analytics/resources/getting-started) Then you can create a new Telerik WinForms Application with enabled Analytics support or you can enable it in an existing project. Both options are explained in details below.
+In order to use this service, first you should contact <sales@telerik.com> and they will help you get started. Once your account is setup, you can log into the [analytics dashboard](https://platform.telerik.com/), and obtain a __product key__. For more information please check out the topic on [Getting Started with Telerik Analytics. ](http://docs.telerik.com/platform/analytics/getting-started/your-application) Then you can create a new Telerik WinForms Application with enabled Analytics support or you can enable it in an existing project. Both options are explained in details below.
 
 ![eqatec-analitics-application-integration 001](images/eqatec-analitics-application-integration001.png)
 
@@ -36,7 +36,7 @@ Dim monitor As Global.EQATEC.Analytics.Monitor.IAnalyticsMonitor = Telerik.WinCo
 
 {{endregion}} 
 
-Where "product_key" should be replaced with the product key you got after registering your application on [https://analytics.telerik.com ](https://analytics.telerik.com)
+Where "product_key" should be replaced with the product key you got after registering your application on [https://platform.telerik.com ](https://platform.telerik.com)
 
 ## Disable analytics per control
 
@@ -147,3 +147,8 @@ Currently only few controls support analytics out of the box. Note that only use
 |RadTreeView|SelectExpand, Collapse, SelectionChanged, Edit, RemoveionChanged|
 |RadWaitingBar|StartWaiting, EndWaiting|
 |Exporting features in controls|All export providers(including async exports) - when export operation is completed|
+
+# See Also
+
+ * [Introduction to Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction)
+ * [Add Analytics to Your Application](http://docs.telerik.com/platform/analytics/getting-started/your-application)
