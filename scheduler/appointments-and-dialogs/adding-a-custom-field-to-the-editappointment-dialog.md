@@ -213,29 +213,13 @@ End Sub
 7\. Last, but not least we should assign the custom AppointmentFactory to our RadScheduler. This will come in handy when you create your appointments in-line:
             
 
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomField.vb region=showing}} 
-{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomField.cs region=showing}} 
+{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomField.vb region=settingFactory}} 
+{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomField.cs region=settingFactory}} 
 ````C#
-Private appointmentDialog As CustomAppointmentEditForm = Nothing
-Private Sub radScheduler1_AppointmentEditDialogShowing(ByVal sender As Object, ByVal e As AppointmentEditDialogShowingEventArgs)
-    If Me.appointmentDialog Is Nothing Then
-        Me.appointmentDialog = New CustomAppointmentEditForm()
-    End If
-    e.AppointmentEditDialog = Me.appointmentDialog
-End Sub
-
+this.radScheduler1.AppointmentFactory = new CustomAppointmentFactory(); 
 ````
 ````VB.NET
-CustomAppointmentEditForm appointmentDialog = null;
-void radScheduler1_AppointmentEditDialogShowing(object sender, AppointmentEditDialogShowingEventArgs e)
-{
-    if (this.appointmentDialog == null)
-    {
-        this.appointmentDialog = new CustomAppointmentEditForm();
-    }
-   e.AppointmentEditDialog = this.appointmentDialog;
-}
-
+ Me.RadScheduler1.AppointmentFactory = New CustomAppointmentFactory()
 ````
 
 {{endregion}} 
