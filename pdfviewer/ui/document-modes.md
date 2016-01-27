@@ -1,24 +1,24 @@
 ---
-title: Document Presenters
-page_title: Document Presenters | UI for WinForms Documentation
-description: Document Presenters
-slug: winforms/pdfviewer/ui/document-presenters
+title: Document Modes
+page_title: Document Modes | UI for WinForms Documentation
+description: Document Modes
+slug: winforms/pdfviewer/ui/document-modes
 tags: document presenters
 published: True
 position: 1
 ---
 
-# Document Presenters 
+# Document Modes 
 
 The document presenter is responsible for displaying the pages of the document, navigating in it, managing the selection markers, conversion between view coordinates and document location coordinates, plus proper response to mouse and touch events.
 
-## Pages Presenter
+## Pages Mode
 
 This document presenter displays the pages in a vertical order and is used by default by __RadPdfViewer__. There is a fixed margin between the pages, and each page is centered horizontally inside the __RadPdfViewer__.  
 
 ![pdfviewer-overview 001](images/pdfviewer-ui-documents-presenter001.gif)
 
-## Single Page Presenter (Fit Full Page)
+## Single Page Mode (Fit Full Page)
 
 This document presenter displays a single page at a time inside the viewer. The page is vertically and horizontally centered. In order to enable this mode, set the __FitFullPage__ property to *true*.
 

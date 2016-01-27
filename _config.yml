@@ -568,7 +568,10 @@ navigation:
         position: 5	
     pdfviewer/ui:
         title: UI
-        position: 6		
+        position: 6	
+    pdfviewer/customize-and-extensibility:
+        title: Customize and Extensibility
+        position: 7			
     pivotgrid:
         title: PivotGrid 
         position: 35
