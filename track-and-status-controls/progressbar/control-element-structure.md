@@ -5,7 +5,7 @@ description: Control Element Structure
 slug: winforms/track-and-status-controls/progressbar/control-element-structure
 tags: control,element,structure
 published: True
-position: 3
+position: 1
 ---
 
 # Control Element Structure
