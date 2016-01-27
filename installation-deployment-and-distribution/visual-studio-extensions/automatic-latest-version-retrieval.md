@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: automatic,latest,version,retrieval
 published: True
 position: 7
+previous_url: installation-deployment-and-distribution-vsx-automatic-latest-version-retrieval
 ---
 
 # Automatic latest version retrieval

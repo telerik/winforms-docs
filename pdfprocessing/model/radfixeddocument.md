@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/model/radfixeddocument
 tags: radfixeddocument
 published: True
 position: 1
+previous_url: pdfprocessing-model-radfixeddocument
 ---
 
 # RadFixedDocument

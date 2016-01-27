@@ -6,6 +6,7 @@ slug: winforms/propertygrid/features/custom-grouping
 tags: custom,grouping
 published: True
 position: 2
+previous_url: propertygrid-features-custom-grouping
 ---
 
 # Custom Grouping

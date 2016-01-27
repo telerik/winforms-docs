@@ -6,6 +6,7 @@ slug: winforms/pageview/stackview
 tags: stackview
 published: True
 position: 0
+previous_url: pageview-stackview-overview
 ---
 
 # StackView

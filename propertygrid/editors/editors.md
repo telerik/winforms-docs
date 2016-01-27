@@ -6,6 +6,7 @@ slug: winforms/propertygrid/editors
 tags: editors
 published: True
 position: 0
+previous_url: propertygrid-editors
 ---
 
 # Editors

@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/concepts/geometry
 tags: geometry
 published: True
 position: 2
+previous_url: pdfprocessing-concepts-geometry
 ---
 
 # Geometry

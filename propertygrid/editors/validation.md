@@ -6,6 +6,7 @@ slug: winforms/propertygrid/editors/validation
 tags: validation
 published: True
 position: 3
+previous_url: propertygrid-editors-validation
 ---
 
 # Validation

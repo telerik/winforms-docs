@@ -6,6 +6,7 @@ slug: winforms/pdfviewer
 tags: pdfviewer
 published: True
 position: 0
+previous_url: pdfviewer-overview
 ---
 
 # PdfViewer

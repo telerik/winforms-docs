@@ -6,6 +6,7 @@ slug: winforms/gridview/view-definitions/html-view
 tags: html,view
 published: True
 position: 3
+previous_url: gridview-viewdefinitions-html-view
 ---
 
 # HTML View

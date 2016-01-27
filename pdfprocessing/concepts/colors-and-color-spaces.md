@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/concepts/colors-and-color-spaces
 tags: colors,and,color,spaces
 published: True
 position: 0
+previous_url: pdfprocessing-concepts-colors-and-color-spaces
 ---
 
 # Colors and Color Spaces

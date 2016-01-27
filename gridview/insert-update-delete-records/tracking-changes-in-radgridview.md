@@ -6,6 +6,7 @@ slug: winforms/gridview/insert/update/delete-records/tracking-changes-in-radgrid
 tags: tracking,changes,in,radgridview
 published: True
 position: 3
+previous_url: gridview-insert-update-delete-records-tracking-changes-in-radgridview
 ---
 
 # Tracking changes in RadGridView

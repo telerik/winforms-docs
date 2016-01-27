@@ -6,6 +6,7 @@ slug: winforms/listview/programmatically-populating-with-data
 tags: programmatically,populating,with,data
 published: True
 position: 6
+previous_url: listview-programatically-populating-with-data
 ---
 
 # Programmatically populating with data

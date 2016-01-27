@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/model/textfragment
 tags: textfragment
 published: True
 position: 3
+previous_url: pdfprocessing-model-textfragment
 ---
 
 # TextFragment

@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/overview/working-with-backstage-view
 tags: working,with,backstage,view
 published: True
 position: 1
+previous_url: ribbonbar-backstage-view-working-with-backstage-view
 ---
 
 # Working with Backstage View

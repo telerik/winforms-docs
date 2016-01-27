@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/painting-rows
 tags: painting,rows
 published: True
 position: 12
+previous_url: gridview-rows-painting-rows
 ---
 
 # Painting Rows

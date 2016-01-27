@@ -6,6 +6,7 @@ slug: winforms/propertygrid/keyboard-navigation
 tags: keyboard,navigation
 published: True
 position: 7
+previous_url: propertygrid-keyboard-navigation
 ---
 
 # Keyboard Navigation

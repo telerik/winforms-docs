@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: creation,and,configuration,wizard
 published: True
 position: 1
+previous_url: installation-deployment-and-distribution-vsx-creation-and-configuration-wizard
 ---
 
 # Creation and configuration wizard

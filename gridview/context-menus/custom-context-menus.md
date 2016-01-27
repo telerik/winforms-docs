@@ -6,6 +6,7 @@ slug: winforms/gridview/context-menus/custom-context-menus
 tags: custom,context,menus
 published: True
 position: 0
+previous_url: gridview-context-menus-custom-context-menus
 ---
 
 # Custom Context Menus

@@ -6,6 +6,7 @@ slug: winforms/pageview/how-to/add-contextmenu-to-radpageviewpage-tabs
 tags: add,contextmenu,to,radpageviewpage,tabs
 published: True
 position: 0
+previous_url: pageview-how-to-add-contextmenu-to-radpageviewpage-tabs
 ---
 
 # Add ContextMenu to RadPageViewPage tabs

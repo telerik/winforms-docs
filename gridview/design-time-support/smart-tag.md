@@ -6,6 +6,7 @@ slug: winforms/gridview/design-time-support/smart-tag
 tags: smart,tag
 published: True
 position: 0
+previous_url: gridview-design-time-support-smart-tag
 ---
 
 # Smart Tag

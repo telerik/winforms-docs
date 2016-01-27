@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/editing/text-and-graphic-properties
 tags: text,and,graphic,properties
 published: True
 position: 7
+previous_url: pdfprocessing-editing-text-and-graphic-properties
 ---
 
 # Text and Graphic Properties

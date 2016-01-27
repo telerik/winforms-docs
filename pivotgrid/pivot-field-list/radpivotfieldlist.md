@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/pivot-field-list/radpivotfieldlist
 tags: radpivotfieldlist
 published: True
 position: 0
+previous_url: pivotgrid-radpivotfieldlist
 ---
 
 # RadPivotFieldList

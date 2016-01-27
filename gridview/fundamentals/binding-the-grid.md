@@ -6,6 +6,7 @@ slug: winforms/gridview/fundamentals/binding-the-grid
 tags: binding,the,grid
 published: True
 position: 6
+previous_url: gridview-fundamentals-binding-the-grid
 ---
 
 # Binding the Grid

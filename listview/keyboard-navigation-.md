@@ -6,6 +6,7 @@ slug: winforms/listview/keyboard-navigation-
 tags: keyboard,navigation,
 published: True
 position: 12
+previous_url: listview-keyboard-navigation
 ---
 
 # Keyboard Navigation 

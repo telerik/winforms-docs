@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/new-row
 tags: new,row
 published: True
 position: 13
+previous_url: gridview-rows-new-row
 ---
 
 # New Row

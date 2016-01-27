@@ -6,6 +6,7 @@ slug: winforms/gridview/editors/api
 tags: api
 published: True
 position: 1
+previous_url: gridview-editors-api
 ---
 
 # API

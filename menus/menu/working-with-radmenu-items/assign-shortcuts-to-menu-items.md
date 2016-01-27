@@ -6,6 +6,7 @@ slug: winforms/menus/menu/working-with-radmenu-items/assign-shortcuts-to-menu-it
 tags: assign,shortcuts,to,menu,items
 published: True
 position: 6
+previous_url: menus-menu-working-with-radmenu-items-assign-shorcut
 ---
 
 # Assign Shortcuts to Menu Items

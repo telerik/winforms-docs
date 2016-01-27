@@ -6,6 +6,7 @@ slug: winforms/pageview/how-to/editing-page-tabs
 tags: editing,page,tabs
 published: True
 position: 3
+previous_url: pageview-how-to-editing-page-tabs
 ---
 
 # Editing page tabs

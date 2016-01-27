@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/hierarchy-of-one-to-many-relations
 tags: hierarchy,of,one,to,many,relations
 published: True
 position: 6
+previous_url: gridview-hirarchical-grid-hierarchy-of-one-to-many-relations
 ---
 
 # Hierarchy of one to many relations

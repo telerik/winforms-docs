@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/calculated-items
 tags: calculated,items
 published: True
 position: 11
+previous_url: pivotgrid-calculated-items
 ---
 
 # Calculated items

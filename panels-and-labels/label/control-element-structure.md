@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/label/control-element-structure
 tags: control,element,structure
 published: True
 position: 2
+previous_url: panels-and-labels-label-control-element-structure
 ---
 
 # Control Element Structure

@@ -6,6 +6,7 @@ slug: winforms/pageview/stackview/customizing-the-stack-position
 tags: customizing,the,stack,position
 published: True
 position: 2
+previous_url: pageview-stackview-customizing-the-stack-position
 ---
 
 # Customizing the Stack Position

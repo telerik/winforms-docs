@@ -6,6 +6,7 @@ slug: winforms/gridview/end-user-capabilities/keyboard-support
 tags: keyboard,support
 published: True
 position: 0
+previous_url: gridview-end-user-capabilities-keyboard-support
 ---
 
 # Keyboard Support

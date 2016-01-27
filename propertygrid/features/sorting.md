@@ -6,6 +6,7 @@ slug: winforms/propertygrid/features/sorting
 tags: sorting
 published: True
 position: 3
+previous_url: propertygrid-features-sorting
 ---
 
 # Sorting

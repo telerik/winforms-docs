@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/populating-with-data/using-the-localsourcedataprovider
 tags: using,the,localsourcedataprovider
 published: True
 position: 2
+previous_url: pivotgrid-populating-with-data-using-localsourcedataprovider
 ---
 
 # Using the LocalSourceDataProvider

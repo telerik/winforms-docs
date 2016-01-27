@@ -6,6 +6,7 @@ slug: winforms/pdfviewer/unsupported-features
 tags: unsupported,features
 published: True
 position: 8
+previous_url: pdfviewer-unsupported-features
 ---
 
 # Unsupported features

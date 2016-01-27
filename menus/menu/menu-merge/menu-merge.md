@@ -6,6 +6,7 @@ slug: winforms/menus/menu/menu-merge/menu-merge
 tags: menu,merge
 published: True
 position: 1
+previous_url: menus-menu-menu-merge
 ---
 
 # Menu Merge

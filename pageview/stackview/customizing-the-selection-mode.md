@@ -6,6 +6,7 @@ slug: winforms/pageview/stackview/customizing-the-selection-mode
 tags: customizing,the,selection,mode
 published: True
 position: 1
+previous_url: pageview-stackviewview-customizing-the-selection-mode
 ---
 
 # Customizing the Selection Mode

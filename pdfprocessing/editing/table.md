@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/editing/table
 tags: table
 published: True
 position: 4
+previous_url: pdfprocessing-editing-table
 ---
 
 # Table

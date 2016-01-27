@@ -6,6 +6,7 @@ slug: winforms/gridview/fundamentals/columns
 tags: columns
 published: True
 position: 4
+previous_url: gridview-fundamentals-columns
 ---
 
 # Columns

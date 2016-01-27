@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/formats-and-conversion/plain-text-settings
 tags: using,textformatprovider, settings
 published: True
 position: 2
+previous_url: pdfprocessing-formats-and-conversion-plain-text-settings
 ---
 
 

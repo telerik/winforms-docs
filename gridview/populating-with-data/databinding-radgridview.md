@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/databinding-radgridview
 tags: databinding,radgridview
 published: True
 position: 0
+previous_url: gridview-populating-with-data-databinding-radgridview
 ---
 
 # Databinding RadGridView

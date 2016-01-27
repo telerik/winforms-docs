@@ -6,6 +6,7 @@ slug: winforms/gridview/sorting/custom-sorting
 tags: custom,sorting
 published: True
 position: 3
+previous_url: gridview-sorting-custom-sorting
 ---
 
 # Custom Sorting

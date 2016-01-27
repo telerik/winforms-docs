@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/editing/list
 tags: list
 published: True
 position: 2
+previous_url: radpdfprocessing-editing-list
 ---
 
 # List

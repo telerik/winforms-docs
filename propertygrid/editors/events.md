@@ -6,6 +6,7 @@ slug: winforms/propertygrid/editors/events
 tags: events
 published: True
 position: 2
+previous_url: propertygrid-editors-events
 ---
 
 # Events

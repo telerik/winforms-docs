@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/reflecting-custom-object-changes-in
 tags: reflecting,custom,object,changes,in,rgv
 published: True
 position: 11
+previous_url: gridview-populating-with-data-reflecting-custom-object-changes-in-rgv
 ---
 
 # Reflecting Custom Object Changes in RGV

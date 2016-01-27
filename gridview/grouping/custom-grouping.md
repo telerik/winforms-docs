@@ -6,6 +6,7 @@ slug: winforms/gridview/grouping/custom-grouping
 tags: custom,grouping
 published: True
 position: 5
+previous_url: gridview-grouping-custom-grouping
 ---
 
 # Custom Grouping

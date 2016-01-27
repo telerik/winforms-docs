@@ -6,6 +6,7 @@ slug: winforms/gridview/sorting/basic-sorting
 tags: basic,sorting
 published: True
 position: 0
+previous_url: gridview-sorting-basic-sorting
 ---
 
 # Basic Sorting

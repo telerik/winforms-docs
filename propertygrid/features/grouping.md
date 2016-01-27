@@ -6,6 +6,7 @@ slug: winforms/propertygrid/features/grouping
 tags: grouping
 published: True
 position: 1
+previous_url: propertygrid-features-grouping
 ---
 
 # Grouping

@@ -6,6 +6,7 @@ slug: winforms/propertygrid/customization
 tags: customization
 published: True
 position: 5
+previous_url: propertygrid-customization
 ---
 
 # Customization

@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/tag-property
 tags: tag,property
 published: True
 position: 9
+previous_url: gridview-rows-tag-property
 ---
 
 # Tag property

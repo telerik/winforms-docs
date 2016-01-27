@@ -6,6 +6,7 @@ slug: winforms/listview/export-data/spread-export
 tags: spread,export
 published: True
 position: 0
+previous_url: listview-export-data-spread-export
 ---
 
 # Spread Export

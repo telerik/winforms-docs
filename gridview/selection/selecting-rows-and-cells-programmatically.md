@@ -6,6 +6,7 @@ slug: winforms/gridview/selection/selecting-rows-and-cells-programmatically
 tags: selecting,rows,and,cells,programmatically
 published: True
 position: 2
+previous_url: gridview-selection-selecting-rows-and-cells-programmatically
 ---
 
 # Selecting Rows and Cells Programmatically

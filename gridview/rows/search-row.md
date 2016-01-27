@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/search-row
 tags: search,row
 published: True
 position: 16
+previous_url: gridview-rows-search-row
 ---
 
 # Search Row

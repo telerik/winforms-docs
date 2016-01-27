@@ -6,6 +6,7 @@ slug: winforms/gridview/filtering/filterexpressionchanged-event
 tags: filterexpressionchanged,event
 published: True
 position: 5
+previous_url: gridview-filtering-filterexpressionchanged-event
 ---
 
 # FilterExpressionChanged Event

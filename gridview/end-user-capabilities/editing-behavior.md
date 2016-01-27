@@ -6,6 +6,7 @@ slug: winforms/gridview/end-user-capabilities/editing-behavior
 tags: editing,behavior
 published: True
 position: 1
+previous_url: gridview-end-user-capabilities-editing-behavior
 ---
 
 # Editing Behavior

@@ -6,6 +6,7 @@ slug: winforms/listview/checkboxes-and-editors
 tags: checkboxes,and,editors
 published: True
 position: 8
+previous_url: listview-checkboxes-and-editors
 ---
 
 # Checkboxes and editors

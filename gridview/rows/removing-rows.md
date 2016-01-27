@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/removing-rows
 tags: removing,rows
 published: True
 position: 3
+previous_url: gridview-rows-removing-rows
 ---
 
 # Removing rows

@@ -6,6 +6,7 @@ slug: winforms/layoutcontrol/items
 tags: items
 published: True
 position: 3
+previous_url: layoutcontrol-items
 ---
 
 # Items

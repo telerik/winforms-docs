@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/formats-and-conversion/pdf/features
 tags: features
 published: True
 position: 1
+previous_url: pdfprocessing-formats-and-conversion-pdf-features
 ---
 
 # Features

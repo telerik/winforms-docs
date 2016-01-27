@@ -6,6 +6,7 @@ slug: winforms/gridview/sorting/events
 tags: events
 published: True
 position: 4
+previous_url: gridview-sorting-events
 ---
 
 # Events

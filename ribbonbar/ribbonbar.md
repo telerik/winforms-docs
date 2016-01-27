@@ -6,6 +6,7 @@ slug: winforms/ribbonbar
 tags: ribbonbar
 published: True
 position: 0
+previous_url: ribbonbar-overview
 ---
 
 # RibbonBar

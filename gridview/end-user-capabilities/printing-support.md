@@ -6,6 +6,7 @@ slug: winforms/gridview/end-user-capabilities/printing-support
 tags: printing,support
 published: True
 position: 9
+previous_url: gridview-end-user-capabilities-printing-support
 ---
 
 # Printing Support

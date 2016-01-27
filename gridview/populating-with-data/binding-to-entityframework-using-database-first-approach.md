@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/binding-to-entityframework-using-da
 tags: binding,to,entityframework,using,database,first,approach
 published: True
 position: 13
+previous_url: gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach
 ---
 
 # Binding to EntityFramework using Database first approach

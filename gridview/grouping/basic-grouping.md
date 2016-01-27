@@ -6,6 +6,7 @@ slug: winforms/gridview/grouping/basic-grouping
 tags: basic,grouping
 published: True
 position: 0
+previous_url: gridview-grouping-basic-grouping
 ---
 
 # Basic Grouping

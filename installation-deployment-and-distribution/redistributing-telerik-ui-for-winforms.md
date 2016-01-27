@@ -6,6 +6,7 @@ slug: installation-deployment-and-distribution-redestributing-telerik-radcontrol
 tags: redistributing,telerik,ui,for,winforms
 published: True
 position: 5
+previous_url: installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows
 ---
 
 # Redistributing Telerik UI for WinForms

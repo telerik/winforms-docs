@@ -6,6 +6,7 @@ slug: winforms/menus/menu/working-with-radmenu-items/nesting-controls-tutorial
 tags: nesting,controls,tutorial
 published: True
 position: 3
+previous_url: menus-menu-working-with-radmenu-items-nesting-controls-tutorial
 ---
 
 # Nesting Controls Tutorial

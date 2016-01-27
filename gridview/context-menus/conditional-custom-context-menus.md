@@ -6,6 +6,7 @@ slug: winforms/gridview/context-menus/conditional-custom-context-menus
 tags: conditional,custom,context,menus
 published: True
 position: 1
+previous_url: gridview-context-menus-conditional-custom-context-menus
 ---
 
 # Conditional Custom Context Menus

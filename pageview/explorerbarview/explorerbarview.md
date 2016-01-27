@@ -6,6 +6,7 @@ slug: winforms/pageview/explorerbarview
 tags: explorerbarview
 published: True
 position: 0
+previous_url: pageview-explorerbarview-overview
 ---
 
 # ExplorerBarView

@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/binding-to-observablecollection
 tags: binding,to,observablecollection
 published: True
 position: 14
+previous_url: gridview-populating-with-data-binding-to-%20observable-collection
 ---
 
 # Binding to ObservableCollection

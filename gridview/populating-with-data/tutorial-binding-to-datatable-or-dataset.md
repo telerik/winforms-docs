@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-d
 tags: tutorial,binding,to,datatable,or,dataset
 published: True
 position: 5
+previous_url: gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset
 ---
 
 # Tutorial: Binding to DataTable or DataSet

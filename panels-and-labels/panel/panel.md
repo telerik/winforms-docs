@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/panel
 tags: panel
 published: True
 position: 0
+previous_url: panels-and-labels-panel-overview
 ---
 
 # Panel

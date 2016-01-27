@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/application-deployment
 tags: application,deployment
 published: True
 position: 2
+previous_url: installation-deployment-and-distribution-application-deployment
 ---
 
 # Application Deployment

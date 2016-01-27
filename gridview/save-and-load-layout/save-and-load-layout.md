@@ -6,6 +6,7 @@ slug: winforms/gridview/save-and-load-layout/overview
 tags: save-and-load-layout
 published: True
 position: 0
+previous_url: gridview-save-and-load-layout-overview
 ---
 
 # Save and Load Layout Overview

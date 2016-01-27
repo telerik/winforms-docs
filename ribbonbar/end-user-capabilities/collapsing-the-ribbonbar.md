@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/end-user-capabilities/collapsing-the-ribbonbar
 tags: collapsing,the,ribbonbar
 published: True
 position: 0
+previous_url: ribbonbar-end-user-capabilities-collapsing-the-ribbonbar
 ---
 
 # Collapsing the RibbonBar

@@ -6,6 +6,7 @@ slug: winforms/menus/menu/working-with-radmenu-items/multi-line-menu-item-text
 tags: multi-line,menu,item,text
 published: True
 position: 4
+previous_url: menus-menu-working-with-radmenu-items-multi-line-menu-item-text
 ---
 
 # Multi-Line Menu Item Text

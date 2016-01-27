@@ -6,6 +6,7 @@ slug: winforms/gridview/fundamentals/editing
 tags: editing
 published: True
 position: 9
+previous_url: gridview-fundamentals-editing
 ---
 
 # Editing

@@ -6,6 +6,7 @@ slug: winforms/propertygrid/features/toolbar
 tags: toolbar
 published: True
 position: 5
+previous_url: propertygrid-features-toolbar
 ---
 
 # ToolBar

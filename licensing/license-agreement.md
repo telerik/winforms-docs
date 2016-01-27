@@ -6,6 +6,7 @@ slug: winforms/licensing/license-agreement
 tags: license,agreement
 published: True
 position: 0
+previous_url: licensing-license-agreement
 ---
 
 # License Agreement

@@ -6,6 +6,7 @@ slug: winforms/gridview/fundamentals/overview-of-radgridview-structure
 tags: overview,of,radgridview,structure
 published: True
 position: 2
+previous_url: gridview-fundamentals-overview-of-radgridview-structure
 ---
 
 # Overview of RadGridView Structure

@@ -6,6 +6,7 @@ slug: winforms/gridview/paging/paging-panel
 tags: paging,panel
 published: True
 position: 1
+previous_url: gridview-paging-panel
 ---
 
 # Paging panel

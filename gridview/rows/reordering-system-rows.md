@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/reordering-system-rows
 tags: reordering,system,rows
 published: True
 position: 18
+previous_url: gridview-rows-reordering-system-rows
 ---
 
 # Reordering System Rows

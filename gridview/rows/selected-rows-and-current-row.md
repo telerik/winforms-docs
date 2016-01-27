@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/selected-rows-and-current-row
 tags: selected,rows,and,current,row
 published: True
 position: 7
+previous_url: gridview-rows-selected-rows-and-current-row
 ---
 
 # Selected rows and Current row

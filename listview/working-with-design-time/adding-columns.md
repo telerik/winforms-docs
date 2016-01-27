@@ -6,6 +6,7 @@ slug: winforms/listview/working-with-design-time/adding-columns
 tags: adding,columns
 published: True
 position: 0
+previous_url: listview-working-with-design-time-adding-columns
 ---
 
 # Adding columns

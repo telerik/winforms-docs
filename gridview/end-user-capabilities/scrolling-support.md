@@ -6,6 +6,7 @@ slug: winforms/gridview/end-user-capabilities/scrolling-support
 tags: scrolling,support
 published: True
 position: 10
+previous_url: gridview-end-user-capabilities-printing-support-scrolling
 ---
 
 # Scrolling Support

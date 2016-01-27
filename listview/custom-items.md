@@ -6,6 +6,7 @@ slug: winforms/listview/custom-items
 tags: custom,items
 published: True
 position: 11
+previous_url: listview-custom-items
 ---
 
 # Custom items

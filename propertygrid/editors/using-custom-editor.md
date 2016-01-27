@@ -6,6 +6,7 @@ slug: winforms/propertygrid/editors/using-custom-editor
 tags: using,custom,editor
 published: True
 position: 5
+previous_url: propertygrid-editors-using-custom-editor
 ---
 
 # Using custom editor

@@ -6,6 +6,7 @@ slug: winforms/rangeselector-/integration-with-radchartview-
 tags: integration,with,radchartview,
 published: True
 position: 4
+previous_url: rangeselector-integration-with-chartview
 ---
 
 # Integration with RadChartView

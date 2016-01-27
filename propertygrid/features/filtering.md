@@ -6,6 +6,7 @@ slug: winforms/propertygrid/features/filtering
 tags: filtering
 published: True
 position: 0
+previous_url: propertygrid-features-filtering
 ---
 
 # Filtering

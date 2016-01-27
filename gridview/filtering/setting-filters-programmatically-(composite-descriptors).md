@@ -6,6 +6,7 @@ slug: winforms/gridview/filtering/setting-filters-programmatically-(composite-de
 tags: setting,filters,programmatically,(composite,descriptors)
 published: True
 position: 3
+previous_url: gridview-filtering-setting-filters-programmatically-composite-descriptors
 ---
 
 # Setting Filters Programmatically (composite descriptors)

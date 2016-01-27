@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/overview/customization
 tags: customization
 published: True
 position: 3
+previous_url: ribbonbar-backstage-view-customization
 ---
 
 # Customization

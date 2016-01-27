@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/bind-to-xml
 tags: bind,to,xml
 published: True
 position: 10
+previous_url: gridview-populating-with-data-bind-to-xml
 ---
 
 # Bind to XML

@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/groupbox/smart-tag
 tags: smart,tag
 published: True
 position: 2
+previous_url: panels-and-labels-groupbox-smart-tag
 ---
 
 # Smart Tag

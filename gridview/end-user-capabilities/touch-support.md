@@ -6,6 +6,7 @@ slug: winforms/gridview/end-user-capabilities/touch-support
 tags: touch,support
 published: True
 position: 8
+previous_url: gridview-end-user-capabilities-touch-support
 ---
 
 # Touch Support

@@ -6,6 +6,7 @@ slug: winforms/gridview/save-and-load-layout/load-layout-buttons-in-the-property
 tags: save/load,layout,buttons,in,the,property,grid
 published: True
 position: 1
+previous_url: gridview-save-and-load-layout-save-load-layout-buttons-in-the-property-grid
 ---
 
 # Save/Load layout buttons in the Property Grid

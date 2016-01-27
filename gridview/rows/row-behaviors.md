@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/row-behaviors
 tags: row,behaviors
 published: True
 position: 15
+previous_url: gridview-rows-row-behaviors
 ---
 
 # Row behaviors

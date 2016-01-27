@@ -6,6 +6,7 @@ slug: winforms/gridview/selection/multiple-selection
 tags: multiple,selection
 published: True
 position: 1
+previous_url: gridview-selection-multiple-selection
 ---
 
 # Multiple Selection

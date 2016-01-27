@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/how-to/iterating-the-child-rows-collec
 tags: iterating,the,child,rows,collection,of,a,chosen,parent,row,in,hierarchy,radgridview
 published: True
 position: 2
+previous_url: gridview-hirarchical-grid-how-to-iterating-the-child-rows-collection-of-a-chosen-parent-row
 ---
 
 # Iterating the child rows collection of a chosen parent row in hierarchy RadGridView

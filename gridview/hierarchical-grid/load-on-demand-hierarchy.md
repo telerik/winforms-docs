@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/load-on-demand-hierarchy
 tags: load-on-demand,hierarchy
 published: True
 position: 8
+previous_url: gridview-hierarchical-grid-load-on-demand-hierarchy
 ---
 
 # Load-On-Demand Hierarchy

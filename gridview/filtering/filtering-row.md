@@ -6,6 +6,7 @@ slug: winforms/gridview/filtering/filtering-row
 tags: filtering,row
 published: True
 position: 1
+previous_url: gridview-filtering-filtering-row
 ---
 
 # Filtering Row

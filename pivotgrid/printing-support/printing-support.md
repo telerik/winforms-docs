@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/printing-support
 tags: printing,support
 published: True
 position: 0
+previous_url: pivotgrid-printing-support
 ---
 
 # Printing Support

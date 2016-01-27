@@ -6,6 +6,7 @@ slug: winforms/gridview/expression-editor
 tags: expression,editor
 published: True
 position: 0
+previous_url: gridview-expressioneditor-overview
 ---
 
 # Expression Editor

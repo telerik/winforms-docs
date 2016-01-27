@@ -6,6 +6,7 @@ slug: winforms/listview/drag-and-drop/drag-and-drop-from-another-control
 tags: drag,and,drop,from,another,control
 published: True
 position: 1
+previous_url: listview-drag-and-drop-drag-and-drop-from-another-control
 ---
 
 # Drag and Drop from another control

@@ -6,6 +6,7 @@ slug: winforms/gridview/end-user-capabilities/column-chooser
 tags: column,chooser
 published: True
 position: 3
+previous_url: gridview-end-user-capabilities-column-chooser
 ---
 
 # Column Chooser

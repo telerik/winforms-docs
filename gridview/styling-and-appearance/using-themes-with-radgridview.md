@@ -6,6 +6,7 @@ slug: winforms/gridview/styling-and-appearance/using-themes-with-radgridview
 tags: using,themes,with,radgridview
 published: True
 position: 1
+previous_url: gridview-styling-and-appearance-using-themes-with-radgridview
 ---
 
 # Using Themes with RadGridView

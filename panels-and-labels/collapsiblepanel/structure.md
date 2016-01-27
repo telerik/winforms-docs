@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/collapsiblepanel/structure
 tags: structure
 published: True
 position: 1
+previous_url: panels-and-labels-collapsible-panel-structure
 ---
 
 # Structure

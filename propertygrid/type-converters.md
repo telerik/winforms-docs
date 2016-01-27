@@ -6,6 +6,7 @@ slug: winforms/propertygrid/type-converters
 tags: type,converters
 published: True
 position: 12
+previous_url: propertygrid-type-converters
 ---
 
 # Type Converters

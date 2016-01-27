@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/changes-and-backward-compatibility/backward-compati
 tags: backward,compatibility
 published: True
 position: 1
+previous_url: pdfprocessing-backward-compatibility
 ---
 
 # Backward Compatibility

@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/binding-to-sub-objects
 tags: binding,to,sub,objects
 published: True
 position: 7
+previous_url: gridview-populating-with-data-binding-to-sub-objects
 ---
 
 # Binding to Sub Objects

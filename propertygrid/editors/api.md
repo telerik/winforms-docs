@@ -6,6 +6,7 @@ slug: winforms/propertygrid/editors/api
 tags: api
 published: True
 position: 1
+previous_url: propertygrid-editors-api
 ---
 
 # API

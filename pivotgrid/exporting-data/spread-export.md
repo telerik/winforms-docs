@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/exporting-data/spread-export
 tags: spread,export
 published: True
 position: 0
+previous_url: pivotgrid-export-srpead-export
 ---
 
 # Spread Export

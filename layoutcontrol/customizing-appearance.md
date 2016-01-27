@@ -6,6 +6,7 @@ slug: winforms/layoutcontrol/customizing-appearance
 tags: customizing,appearance
 published: True
 position: 7
+previous_url: layoutcontrol-customizing-appearance
 ---
 
 # Customizing Appearance

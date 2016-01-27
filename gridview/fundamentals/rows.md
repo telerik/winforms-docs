@@ -6,6 +6,7 @@ slug: winforms/gridview/fundamentals/rows
 tags: rows
 published: True
 position: 5
+previous_url: gridview-fundamentals-rows
 ---
 
 # Rows

@@ -6,6 +6,7 @@ slug: winforms/pageview/stripview/strip-element-properties
 tags: strip,element,properties
 published: True
 position: 2
+previous_url: pageview-stripview-properties
 ---
 
 # Strip Element Properties

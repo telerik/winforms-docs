@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/adding-radcontrols-to-vi
 tags: adding,radcontrols,to,visual,studio,toolbox
 published: True
 position: 3
+previous_url: installation-deployment-and-distribution-adding-radcontrols-to-visual-studio-toolbox
 ---
 
 # Adding RadControls to Visual Studio Toolbox

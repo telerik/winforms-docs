@@ -6,6 +6,7 @@ slug: winforms/gridview/styling-and-appearance/alternating-row-color
 tags: alternating,row,color
 published: True
 position: 4
+previous_url: gridview-styling-and-appearance-alternating-row-color
 ---
 
 # Alternating Row Color

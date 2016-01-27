@@ -6,6 +6,7 @@ slug: winforms/gridview/editors/data-validation
 tags: data,validation
 published: True
 position: 3
+previous_url: gridview-editors-data-validation
 ---
 
 # Data validation

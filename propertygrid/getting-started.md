@@ -6,6 +6,7 @@ slug: winforms/propertygrid/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: propertygrid-getting-started
 ---
 
 # Getting Started

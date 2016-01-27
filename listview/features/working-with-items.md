@@ -6,6 +6,7 @@ slug: winforms/listview/features/working-with-items
 tags: working,with,items
 published: True
 position: 1
+previous_url: listview-features-working-with-items
 ---
 
 # Working with items

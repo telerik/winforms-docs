@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/property-builder
 tags: property,builder
 published: True
 position: 2
+previous_url: pivotgrid-propertybuilder
 ---
 
 # Property Builder

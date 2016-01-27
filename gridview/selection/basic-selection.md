@@ -6,6 +6,7 @@ slug: winforms/gridview/selection/basic-selection
 tags: basic,selection
 published: True
 position: 0
+previous_url: gridview-selection-basic-selection
 ---
 
 # Basic Selection

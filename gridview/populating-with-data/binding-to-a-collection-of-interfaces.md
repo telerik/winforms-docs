@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/binding-to-a-collection-of-interfac
 tags: binding,to,a,collection,of,interfaces
 published: True
 position: 15
+previous_url: gridview-populating-with-data-binding-to-a-collection-of-interfaces
 ---
 
 # Binding to a Collection of Interfaces

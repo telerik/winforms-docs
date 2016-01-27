@@ -6,6 +6,7 @@ slug: winforms/gridview/exporting-data/export-to-pdf
 tags: export,to,pdf
 published: True
 position: 6
+previous_url: gridview-exporting-data-export-to-pdf
 ---
 
 # Export to PDF

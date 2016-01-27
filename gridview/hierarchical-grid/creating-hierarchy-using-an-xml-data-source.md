@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-s
 tags: creating,hierarchy,using,an,xml,data,source
 published: True
 position: 4
+previous_url: gridview-hirarchical-grid-creating-hierarchy-using-an-xml-data-source
 ---
 
 # Creating hierarchy using an XML data source

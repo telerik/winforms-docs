@@ -6,6 +6,7 @@ slug: winforms/gridview/end-user-capabilities/reordering-rows
 tags: reordering,rows
 published: True
 position: 6
+previous_url: gridview-rows-reordering-rows
 ---
 
 # Reordering Rows

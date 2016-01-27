@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/conditional-formatting-rows
 tags: conditional,formatting,rows
 published: True
 position: 8
+previous_url: gridview-rows-conditional-formatting-rows
 ---
 
 # Conditional Formatting Rows

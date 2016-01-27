@@ -6,6 +6,7 @@ slug: winforms/gridview/design-time-support/property-builder
 tags: property,builder
 published: True
 position: 1
+previous_url: gridview-design-time-support-property-builder
 ---
 
 # Property Builder

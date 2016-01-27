@@ -6,6 +6,7 @@ slug: winforms/gridview/insert/update/delete-records/data-editing-support
 tags: data,editing,support
 published: True
 position: 0
+previous_url: gridview-insert-update-delete-records-data-editing-support
 ---
 
 # Data Editing Support

@@ -6,6 +6,7 @@ slug: winforms/listview/drag-and-drop/drag-and-drop-using-raddragdropservice
 tags: drag,and,drop,using,raddragdropservice
 published: True
 position: 2
+previous_url: listview-drag-and-drop-drag-and-drop-using-raddragdropservice
 ---
 
 # Drag and Drop using RadDragDropService

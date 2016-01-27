@@ -6,6 +6,7 @@ slug: winforms/gridview/filtering/events
 tags: events
 published: True
 position: 7
+previous_url: gridview-filtering-events
 ---
 
 # Events

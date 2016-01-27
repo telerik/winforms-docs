@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/pinned-rows
 tags: pinned,rows
 published: True
 position: 6
+previous_url: gridview-rows-pinned-rows
 ---
 
 # Pinned Rows

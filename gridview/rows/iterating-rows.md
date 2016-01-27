@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/iterating-rows
 tags: iterating,rows
 published: True
 position: 1
+previous_url: gridview-rows-iterating-rows
 ---
 
 # Iterating Rows

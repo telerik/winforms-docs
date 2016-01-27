@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/formats-and-conversion/pdf/using-pdfformatprovider
 tags: using,pdfformatprovider
 published: True
 position: 2
+previous_url: pdfprocessing-formats-and-conversion-pdf-using-pdfformatprovider
 ---
 
 # Using PdfFormatProvider

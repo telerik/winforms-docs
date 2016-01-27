@@ -6,6 +6,7 @@ slug: winforms/listview/features/grouping
 tags: grouping
 published: True
 position: 3
+previous_url: listview-features-grouping
 ---
 
 # Grouping

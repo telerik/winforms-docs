@@ -6,6 +6,7 @@ slug: winforms/gridview/filtering/excel-like-filtering
 tags: excel-like,filtering
 published: True
 position: 8
+previous_url: gridview-filtering-excel-like-filtering
 ---
 
 # Excel-like filtering

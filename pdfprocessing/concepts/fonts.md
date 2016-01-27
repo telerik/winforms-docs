@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/concepts/fonts
 tags: fonts
 published: True
 position: 3
+previous_url: pdfprocessing-concepts-fonts
 ---
 
 # Fonts

@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/rows-vs-childrows
 tags: rows,vs,childrows
 published: True
 position: 4
+previous_url: gridview-rows-rows-vs-childrows
 ---
 
 # Rows vs ChildRows

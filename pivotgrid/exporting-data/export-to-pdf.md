@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/exporting-data/export-to-pdf
 tags: export,to,pdf
 published: True
 position: 2
+previous_url: pivotgrid-export-export-to-pdf
 ---
 
 # Export to Pdf

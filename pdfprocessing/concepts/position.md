@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/concepts/position
 tags: position
 published: True
 position: 4
+previous_url: pdfprocessing-concepts-position
 ---
 
 # Position

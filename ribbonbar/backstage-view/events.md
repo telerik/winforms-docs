@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/overview/events
 tags: events
 published: True
 position: 2
+previous_url: ribbonbar-backstage-view-events
 ---
 
 # Events

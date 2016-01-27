@@ -6,6 +6,7 @@ slug: winforms/pdfviewer/structure
 tags: structure
 published: True
 position: 2
+previous_url: pdfviewer-structure
 ---
 
 # Structure

@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/populating-with-data/using-the-adomddataprovider
 tags: using,the,adomddataprovider
 published: True
 position: 3
+previous_url: pivotgrid-populating-with-data-using-adomddataprovider
 ---
 
 # Using the AdomdDataProvider

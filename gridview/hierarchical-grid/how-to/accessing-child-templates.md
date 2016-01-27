@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/how-to/accessing-child-templates
 tags: accessing,child,templates
 published: True
 position: 0
+previous_url: gridview-hirarchical-grid-how-to-accessing-child-templates
 ---
 
 # Accessing Child Templates

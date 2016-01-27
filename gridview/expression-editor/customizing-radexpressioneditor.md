@@ -6,6 +6,7 @@ slug: winforms/gridview/expression-editor/customizing-radexpressioneditor
 tags: customizing,radexpressioneditor
 published: True
 position: 2
+previous_url: gridview-expressioneditor-cutomizing-radexpressioneditor
 ---
 
 # Customizing RadExpressionEditor

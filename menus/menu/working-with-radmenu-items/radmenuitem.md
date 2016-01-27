@@ -6,6 +6,7 @@ slug: winforms/menus/menu/working-with-radmenu-items/radmenuitem
 tags: radmenuitem
 published: True
 position: 0
+previous_url: menus-menu-working-with-radmenu-items-radmenuitem
 ---
 
 # RadMenuItem

@@ -6,6 +6,7 @@ slug: winforms/gridview/paging/overview
 tags: overview
 published: True
 position: 0
+previous_url: gridview-paging-overview
 ---
 
 # Paging Overview

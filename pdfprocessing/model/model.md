@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/model
 tags: model
 published: True
 position: 0
+previous_url: pdfprocessing-model
 ---
 
 # Model

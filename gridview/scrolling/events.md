@@ -6,6 +6,7 @@ slug: winforms/gridview/scrolling/events
 tags: events
 published: True
 position: 0
+previous_url: gridview-scrolling-events
 ---
 
 # Events

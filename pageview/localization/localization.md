@@ -6,6 +6,7 @@ slug: winforms/pageview/localization/localization
 tags: localization
 published: True
 position: 0
+previous_url: pageview-localization
 ---
 
 # Localization

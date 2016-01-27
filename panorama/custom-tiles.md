@@ -6,6 +6,7 @@ slug: winforms/panorama/custom-tiles
 tags: custom,tiles
 published: True
 position: 8
+previous_url: panorama-cutom-tiles
 ---
 
 # Custom Tiles

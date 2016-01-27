@@ -6,6 +6,7 @@ slug: winforms/gridview/styling-and-appearance/images
 tags: images
 published: True
 position: 3
+previous_url: gridview-styling-and-appearance-changing-the-currentrow-indicator
 ---
 
 # Images

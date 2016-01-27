@@ -6,6 +6,7 @@ slug: winforms/gridview/grouping/formatting-group-header-row
 tags: formatting,group,header,row
 published: True
 position: 4
+previous_url: gridview-grouping-formatting-group-header-row
 ---
 
 # Formatting Group Header Row

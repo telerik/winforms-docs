@@ -6,6 +6,7 @@ slug: winforms/layoutcontrol/customize-layout-mode
 tags: customize,layout,mode
 published: True
 position: 6
+previous_url: layoutcontrol-customize-layout-mode
 ---
 
 # Customize Layout Mode

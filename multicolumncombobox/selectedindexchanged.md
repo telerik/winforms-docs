@@ -6,6 +6,7 @@ slug: winforms/multicolumncombobox/selectedindexchanged
 tags: selectedindexchanged
 published: True
 position: 2
+previous_url: multicolumncombobox-selectedindexchanged
 ---
 
 # SelectedIndexChanged

@@ -6,6 +6,7 @@ slug: winforms/layoutcontrol
 tags: layoutcontrol
 published: True
 position: 0
+previous_url: layoutcontrol-overview
 ---
 
 # LayoutControl

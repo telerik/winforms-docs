@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/model/-annotations-and-destinations
 tags: annotations,and,destinations
 published: True
 position: 7
+previous_url: pdfprocessing-model-annotations-and-destinations
 ---
 
 #  Annotations and Destinations

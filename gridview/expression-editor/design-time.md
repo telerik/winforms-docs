@@ -6,6 +6,7 @@ slug: winforms/gridview/expression-editor/design-time
 tags: design-time
 published: True
 position: 1
+previous_url: gridview-expressioneditor-design-time
 ---
 
 # Design-time

@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/system-requirements
 tags: system,requirements
 published: True
 position: 0
+previous_url: installation-deployment-and-distribution-system-requirements
 ---
 
 # System Requirements

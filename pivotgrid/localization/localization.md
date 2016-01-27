@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/localization/localization
 tags: localization
 published: True
 position: 0
+previous_url: pivotgrid-localization-localization
 ---
 
 # Localization

@@ -6,6 +6,7 @@ slug: winforms/pdfviewer/exception-handling
 tags: exception,handling
 published: True
 position: 9
+previous_url: pdfviewer-exception-handling
 ---
 
 # Exception Handling

@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/populating-with-data/using-the-datasource-property
 tags: using,the,datasource,property
 published: True
 position: 1
+previous_url: pivotgrid-populating-with-data-using-the-datasource-property
 ---
 
 # Using the DataSource property

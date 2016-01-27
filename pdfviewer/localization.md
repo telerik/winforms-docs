@@ -6,6 +6,7 @@ slug: winforms/pdfviewer/localization
 tags: localization
 published: True
 position: 11
+previous_url: pdfviewer-localization
 ---
 
 # Localization

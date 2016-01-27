@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/dialogs
 tags: dialogs
 published: True
 position: 0
+previous_url: pivotgrid-dialogs
 ---
 
 # Dialogs

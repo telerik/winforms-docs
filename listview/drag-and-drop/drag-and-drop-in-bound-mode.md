@@ -6,6 +6,7 @@ slug: winforms/listview/drag-and-drop/drag-and-drop-in-bound-mode
 tags: drag,and,drop,in,bound,mode
 published: True
 position: 0
+previous_url: listview-drag-and-drop-drag-and-drop-in-bound-mode
 ---
 
 # Drag and Drop in bound mode

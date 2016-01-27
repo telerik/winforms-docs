@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/how-to/applying-formatting-only-to-cel
 tags: applying,formatting,only,to,cells,in,a,child,template
 published: True
 position: 3
+previous_url: gridview-hirarchical-grid-how-to-applying-formatting-only-to-cells-in-a-child-template
 ---
 
 # Applying formatting only to cells in a child template

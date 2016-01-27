@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/unbound-mode
 tags: unbound,mode
 published: True
 position: 9
+previous_url: gridview-populating-with-data-unbound-mode
 ---
 
 # Unbound Mode

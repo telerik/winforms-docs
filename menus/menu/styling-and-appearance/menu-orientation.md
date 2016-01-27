@@ -6,6 +6,7 @@ slug: winforms/menus/menu/styling-and-appearance/menu-orientation
 tags: menu,orientation
 published: True
 position: 0
+previous_url: menus-menu-styling-and-appearance-menu-orientation
 ---
 
 # Menu Orientation

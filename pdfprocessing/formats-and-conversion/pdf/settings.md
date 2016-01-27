@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/formats-and-conversion/pdf/settings
 tags: settings
 published: True
 position: 3
+previous_url: pdfprocessing-formats-and-conversion-pdf-settings
 ---
 
 # Settings

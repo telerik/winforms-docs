@@ -6,6 +6,7 @@ slug: winforms/gridview/exporting-data/export-to-excel-via-excelml-format
 tags: export,to,excel,via,excelml,format
 published: True
 position: 2
+previous_url: gridview-exporting-data-export-to-excel-via-excelml-format
 ---
 
 # Export to Excel via ExcelML Format

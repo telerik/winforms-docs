@@ -6,6 +6,7 @@ slug: winforms/pdfviewer/text/text-selection
 tags: text,selection
 published: True
 position: 1
+previous_url: pdfviewer-text-text-selection
 ---
 
 # Text Selection

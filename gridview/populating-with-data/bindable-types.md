@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/bindable-types
 tags: bindable,types
 published: True
 position: 1
+previous_url: gridview-populating-with-data-bindable-types
 ---
 
 # Bindable Types

@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/formats-and-conversion/plain-text
 tags: plain, text
 published: True
 position: 0
+previous_url: pdfprocessing-formats-and-conversion-plain-text
 ---
 
 # Plain Text

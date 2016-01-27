@@ -6,6 +6,7 @@ slug: winforms/pageview/stripview/fitting-items
 tags: fitting,items
 published: True
 position: 4
+previous_url: pageview-strip-view-fitting-items
 ---
 
 # Fitting Items

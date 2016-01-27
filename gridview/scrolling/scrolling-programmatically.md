@@ -6,6 +6,7 @@ slug: winforms/gridview/scrolling/scrolling-programmatically
 tags: scrolling,programmatically
 published: True
 position: 1
+previous_url: gridview-scrolling-scrolling-programmatically
 ---
 
 # Scrolling Programmatically

@@ -6,6 +6,7 @@ slug: winforms/menus/menu/design-time/menu-designer
 tags: menu,designer
 published: True
 position: 1
+previous_url: menus-menu-design-time-menu-designer
 ---
 
 # Menu Designer

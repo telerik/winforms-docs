@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/populating-with-data/design-time-data-binding
 tags: design,time,data,binding
 published: True
 position: 0
+previous_url: pivotgrid-populating-with-data-design-time-databinding
 ---
 
 # Design time data binding

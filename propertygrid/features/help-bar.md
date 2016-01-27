@@ -6,6 +6,7 @@ slug: winforms/propertygrid/features/help-bar
 tags: help,bar
 published: True
 position: 4
+previous_url: propertygrid-features-helpbar
 ---
 
 # Help bar

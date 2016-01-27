@@ -6,6 +6,7 @@ slug: winforms/gridview/insert/update/delete-records/data-editing-event-sequence
 tags: data,editing,event,sequence
 published: True
 position: 1
+previous_url: gridview-insert-update-delete-records-data-editing-event-sequence
 ---
 
 # Data Editing Event Sequence

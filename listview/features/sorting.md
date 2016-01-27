@@ -6,6 +6,7 @@ slug: winforms/listview/features/sorting
 tags: sorting
 published: True
 position: 4
+previous_url: listview-features-sorting
 ---
 
 # Sorting

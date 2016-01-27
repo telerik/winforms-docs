@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/binding-to-hierarchical-data
 tags: binding,to,hierarchical,data
 published: True
 position: 0
+previous_url: gridview-hierarchical-grid-binding-to-hierarchical-data
 ---
 
 # Binding to Hierarchical Data

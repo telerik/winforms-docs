@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/selection-rectangle
 tags: selection,rectangle
 published: True
 position: 10
+previous_url: gridview-rows-selection-rectangle
 ---
 
 # Selection Rectangle

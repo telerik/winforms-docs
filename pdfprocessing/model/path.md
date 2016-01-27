@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/model/path
 tags: path
 published: True
 position: 6
+previous_url: pdfprocessing-model-path
 ---
 
 # Path

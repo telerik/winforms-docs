@@ -6,6 +6,7 @@ slug: winforms/multicolumncombobox/databinding
 tags: databinding
 published: True
 position: 4
+previous_url: multicolumncombobox-databinding
 ---
 
 # DataBinding

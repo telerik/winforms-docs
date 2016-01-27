@@ -6,6 +6,7 @@ slug: winforms/gridview/grouping/events
 tags: events
 published: True
 position: 7
+previous_url: gridview-grouping-events
 ---
 
 # Events

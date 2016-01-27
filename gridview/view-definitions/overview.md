@@ -6,6 +6,7 @@ slug: winforms/gridview/view-definitions/overview
 tags: overview
 published: True
 position: 0
+previous_url: gridview-viewdefinitions-overview
 ---
 
 # View Definitions Overview

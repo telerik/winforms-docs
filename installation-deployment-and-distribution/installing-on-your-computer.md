@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/installing-on-your-compu
 tags: installing,on,your,computer
 published: True
 position: 1
+previous_url: installation-deployment-and-distribution-installing-on-your-computer
 ---
 
 # Installing On Your Computer

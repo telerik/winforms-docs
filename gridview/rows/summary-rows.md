@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/summary-rows
 tags: summary,rows
 published: True
 position: 11
+previous_url: gridview-rows-summary-rows
 ---
 
 # Summary Rows

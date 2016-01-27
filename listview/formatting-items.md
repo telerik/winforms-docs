@@ -6,6 +6,7 @@ slug: winforms/listview/formatting-items
 tags: formatting,items
 published: True
 position: 9
+previous_url: listview-formating-items
 ---
 
 # Formatting Items

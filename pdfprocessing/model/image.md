@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/model/image
 tags: image
 published: True
 position: 4
+previous_url: pdfprocessing-model-image
 ---
 
 # Image

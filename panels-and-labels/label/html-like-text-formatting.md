@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/label/html-like-text-formatting
 tags: html-like,text,formatting
 published: True
 position: 3
+previous_url: panels-and-labels-label-html-like-text-formatting
 ---
 
 # HTML-like Text Formatting

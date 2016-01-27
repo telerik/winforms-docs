@@ -6,6 +6,7 @@ slug: winforms/pdfviewer/thumbnails
 tags: thumbnails
 published: True
 position: 10
+previous_url: pdfviewer-thumbnails
 ---
 
 # Thumbnails

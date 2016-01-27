@@ -6,6 +6,7 @@ slug: winforms/listview/touch-support
 tags: touch,support
 published: True
 position: 13
+previous_url: listview-touch-support
 ---
 
 # Touch Support

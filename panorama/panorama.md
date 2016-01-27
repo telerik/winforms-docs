@@ -6,6 +6,7 @@ slug: winforms/panorama
 tags: panorama
 published: True
 position: 0
+previous_url: panorama-overview
 ---
 
 # Panorama

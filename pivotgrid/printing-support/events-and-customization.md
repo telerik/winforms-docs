@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/printing-support/events-and-customization
 tags: events,and,customization
 published: True
 position: 2
+previous_url: pivotgrid-printing-support-events-and-customization
 ---
 
 # Events and Customization

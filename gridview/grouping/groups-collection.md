@@ -6,6 +6,7 @@ slug: winforms/gridview/grouping/groups-collection
 tags: groups,collection
 published: True
 position: 3
+previous_url: gridview-grouping-groups-collection
 ---
 
 # Groups Collection

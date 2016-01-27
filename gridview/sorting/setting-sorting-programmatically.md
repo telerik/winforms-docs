@@ -6,6 +6,7 @@ slug: winforms/gridview/sorting/setting-sorting-programmatically
 tags: setting,sorting,programmatically
 published: True
 position: 1
+previous_url: gridview-sorting-setting-sorting-programmatically
 ---
 
 # Setting Sorting Programmatically

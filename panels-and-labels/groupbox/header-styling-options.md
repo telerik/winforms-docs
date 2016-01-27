@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/groupbox/header-styling-options
 tags: header,styling,options
 published: True
 position: 0
+previous_url: panels-and-labels-groupbox-header-styling-options
 ---
 
 # Header Styling Options

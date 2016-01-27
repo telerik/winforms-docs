@@ -6,6 +6,7 @@ slug: winforms/gridview/exporting-data/spread-export
 tags: spread,export,
 published: True
 position: 1
+previous_url: gridview-exporting-data-spread-export
 ---
 
 # Spread export 

@@ -6,6 +6,7 @@ slug: winforms/gridview/sorting/sorting-expressions
 tags: sorting,expressions
 published: True
 position: 2
+previous_url: gridview-sorting-sorting-expressions
 ---
 
 # Sorting Expressions

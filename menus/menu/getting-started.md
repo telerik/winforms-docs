@@ -6,6 +6,7 @@ slug: winforms/menus/menu/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: menus-menu-getting-started
 ---
 
 # Getting Started

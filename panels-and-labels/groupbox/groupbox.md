@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/groupbox
 tags: groupbox
 published: True
 position: 0
+previous_url: panels-and-labels-groupbox-overview
 ---
 
 # GroupBox

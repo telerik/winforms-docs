@@ -6,6 +6,7 @@ slug: winforms/panorama/touch-support
 tags: touch,support
 published: True
 position: 4
+previous_url: panorama-touch-support
 ---
 
 # Touch Support

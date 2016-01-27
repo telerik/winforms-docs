@@ -6,6 +6,7 @@ slug: winforms/gridview/fundamentals/keyboard-support
 tags: keyboard,support
 published: True
 position: 8
+previous_url: gridview-fundamentals-keyboard-support
 ---
 
 # Keyboard Support

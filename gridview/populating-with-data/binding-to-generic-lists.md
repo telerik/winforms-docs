@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/binding-to-generic-lists
 tags: binding,to,generic,lists
 published: True
 position: 3
+previous_url: gridview-populating-with-data-binding-to-generic-list
 ---
 
 # Binding to Generic Lists

@@ -6,6 +6,7 @@ slug: winforms/gridview/localization/localization
 tags: localization
 published: True
 position: 0
+previous_url: gridview-localization
 ---
 
 # Localization

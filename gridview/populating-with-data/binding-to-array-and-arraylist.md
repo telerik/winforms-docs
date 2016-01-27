@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/binding-to-array-and-arraylist
 tags: binding,to,array,and,arraylist
 published: True
 position: 2
+previous_url: gridview-populating-with-data-binding-to-array-and-arraylist
 ---
 
 # Binding to Array and ArrayList

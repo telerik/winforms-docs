@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/object-relational-hierarchy-mode
 tags: object,relational,hierarchy,mode
 published: True
 position: 7
+previous_url: gridview-hierarchical-grid-object-relational-hierarchy-mode
 ---
 
 # Object Relational Hierarchy Mode

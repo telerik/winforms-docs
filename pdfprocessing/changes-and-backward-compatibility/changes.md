@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/changes-and-backward-compatibility/changes
 tags: changes
 published: True
 position: 0
+previous_url: pdfprocessing-changes
 ---
 
 # Changes

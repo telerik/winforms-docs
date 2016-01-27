@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/formatting-appearance
 tags: formatting,appearance
 published: True
 position: 5
+previous_url: pivotgrid-formatting-appearance
 ---
 
 # Formatting appearance

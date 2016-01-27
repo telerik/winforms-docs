@@ -6,6 +6,7 @@ slug: winforms/pageview/how-to/subscribing-to-radpageviewpage-events
 tags: subscribing,to,radpageviewpage,events
 published: True
 position: 2
+previous_url: pageview-how-to-subscribing-to-radpageviewpage-events
 ---
 
 # Subscribing to RadPageViewPage Events

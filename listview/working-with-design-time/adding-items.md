@@ -6,6 +6,7 @@ slug: winforms/listview/working-with-design-time/adding-items
 tags: adding,items
 published: True
 position: 2
+previous_url: listview-working-with-design-time-adding-items
 ---
 
 # Adding items

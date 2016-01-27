@@ -6,6 +6,7 @@ slug: winforms/gridview/printing-support/gridprintstyle
 tags: gridprintstyle
 published: True
 position: 1
+previous_url: gridview-printing-support-gridprintstyle
 ---
 
 # GridPrintStyle

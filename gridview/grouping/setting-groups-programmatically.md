@@ -6,6 +6,7 @@ slug: winforms/gridview/grouping/setting-groups-programmatically
 tags: setting,groups,programmatically
 published: True
 position: 1
+previous_url: gridview-grouping-setting-groups-programmatically
 ---
 
 # Setting Groups Programmatically

@@ -6,6 +6,7 @@ slug: winforms/multicolumncombobox/drop-down-properties
 tags: drop,down,properties
 published: True
 position: 1
+previous_url: multicolumncombobox-drop-down-properties
 ---
 
 # Drop down properties

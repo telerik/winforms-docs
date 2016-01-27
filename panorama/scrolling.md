@@ -6,6 +6,7 @@ slug: winforms/panorama/scrolling
 tags: scrolling
 published: True
 position: 6
+previous_url: panorama-scrolling
 ---
 
 # Scrolling

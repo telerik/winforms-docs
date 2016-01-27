@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/download-product-files
 tags: download,product,files
 published: True
 position: 7
+previous_url: installation-deployment-and-distribution-download-product-files
 ---
 
 # Download Product Files

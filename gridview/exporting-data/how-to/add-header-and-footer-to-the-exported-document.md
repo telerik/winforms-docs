@@ -6,6 +6,7 @@ slug: winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-expor
 tags: add,header,and,footer,to,the,exported,document
 published: True
 position: 0
+previous_url: radgridview-exporting-data-how-to-add-header-and-footer
 ---
 
 # Add Header and Footer to the Exported Document

@@ -6,6 +6,7 @@ slug: winforms/pivotgrid
 tags: pivotgrid
 published: True
 position: 0
+previous_url: pivotgrid-overview
 ---
 
 # PivotGrid

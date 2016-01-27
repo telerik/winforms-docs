@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/drag-and-drop
 tags: drag,and,drop
 published: True
 position: 14
+previous_url: gridview-rows-drag-and-drop
 ---
 
 # Drag and Drop

@@ -6,6 +6,7 @@ slug: winforms/menus/menu/working-with-radmenu-items/adding-and-removing-items
 tags: adding,and,removing,items
 published: True
 position: 1
+previous_url: menus-menu-working-with-radmenu-items-adding-and-removing-items
 ---
 
 # Adding and Removing Items

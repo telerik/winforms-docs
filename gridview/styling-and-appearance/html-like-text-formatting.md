@@ -6,6 +6,7 @@ slug: winforms/gridview/styling-and-appearance/html-like-text-formatting
 tags: html-like,text,formatting
 published: True
 position: 2
+previous_url: gridview-styling-and-appearance-html-like-text-formatting
 ---
 
 # HTML-like Text Formatting

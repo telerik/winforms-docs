@@ -6,6 +6,7 @@ slug: winforms/menus/menu/usability/keyboard-navigation
 tags: keyboard,navigation
 published: True
 position: 0
+previous_url: menus-menu-usability-keyboard-navigation
 ---
 
 # Keyboard Navigation

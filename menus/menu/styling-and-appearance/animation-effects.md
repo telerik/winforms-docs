@@ -6,6 +6,7 @@ slug: winforms/menus/menu/styling-and-appearance/animation-effects
 tags: animation,effects
 published: True
 position: 3
+previous_url: menus-menu-styling-and-appearance-animation-effects
 ---
 
 # Animation Effects

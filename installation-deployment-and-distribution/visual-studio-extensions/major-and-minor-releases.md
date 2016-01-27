@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: major,and,minor,releases
 published: True
 position: 8
+previous_url: installation-deployment-and-distribution-vsx-major-and-minor-releases
 ---
 
 # Major and Minor releases

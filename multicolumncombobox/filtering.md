@@ -6,6 +6,7 @@ slug: winforms/multicolumncombobox/filtering
 tags: filtering
 published: True
 position: 3
+previous_url: multicolumncombobox-filtering
 ---
 
 # Filtering

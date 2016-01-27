@@ -6,6 +6,7 @@ slug: winforms/gridview/filtering/setting-filters-programmatically-(simple-descr
 tags: setting,filters,programmatically,(simple,descriptors)
 published: True
 position: 2
+previous_url: gridview-filtering-setting-filters-programmatically-simple-descriptors
 ---
 
 # Setting Filters Programmatically (simple descriptors)

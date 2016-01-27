@@ -6,6 +6,7 @@ slug: winforms/gridview/view-definitions/column-groups-view
 tags: column,groups,view
 published: True
 position: 2
+previous_url: gridview-viewdefinitions-column-groups-view
 ---
 
 # Column Groups View

@@ -6,6 +6,7 @@ slug: winforms/pageview/outlookview/using-the-overflow-grip
 tags: using,the,overflow,grip
 published: True
 position: 1
+previous_url: pageview-outlookview-using-the-overflow-grip
 ---
 
 # Using The Overflow Grip

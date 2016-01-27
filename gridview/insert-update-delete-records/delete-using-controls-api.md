@@ -6,6 +6,7 @@ slug: winforms/gridview/insert/update/delete-records/insert/update/delete-using-
 tags: insert/update/delete,using,controls,api
 published: True
 position: 2
+previous_url: gridview-insert-update-delete-records-insert-update-delete-using-controls-api
 ---
 
 # Insert/Update/Delete Using Controls API

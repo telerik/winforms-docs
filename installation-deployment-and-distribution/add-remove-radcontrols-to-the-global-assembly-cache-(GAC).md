@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/application-deploymentad
 tags: add/remove,radcontrols,to,the,global,assembly,cache,(gac)
 published: True
 position: 4
+previous_url: installation-deployment-and-distribution-add-remove-radcontrols-to-the-global-assembly-cache-(gac)
 ---
 
 # Add/Remove RadControls to the Global Assembly Cache (GAC)

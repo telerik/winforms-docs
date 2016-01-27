@@ -6,6 +6,7 @@ slug: winforms/gridview/end-user-capabilities/sorting
 tags: sorting
 published: True
 position: 2
+previous_url: gridview-end-user-capabilities-sorting
 ---
 
 # Sorting

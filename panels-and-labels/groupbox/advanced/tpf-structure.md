@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/groupbox/advanced/tpf-structure
 tags: tpf,structure
 published: True
 position: 0
+previous_url: panels-and-labels-groupbox-advanced-tpf-structure
 ---
 
 # TPF structure

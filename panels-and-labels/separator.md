@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/separator
 tags: separator
 published: True
 position: 4
+previous_url: panels-and-labels-separator
 ---
 
 # Separator

@@ -6,6 +6,7 @@ slug: winforms/layoutcontrol/properties,-events-and-methods
 tags: properties,,events,and,methods
 published: True
 position: 5
+previous_url: layoutcontrol-properties-events-and-methods
 ---
 
 # Properties, Events and Methods

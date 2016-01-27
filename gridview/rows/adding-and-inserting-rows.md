@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/adding-and-inserting-rows
 tags: adding,and,inserting,rows
 published: True
 position: 2
+previous_url: gridview-rows-adding-and-inserting-rows
 ---
 
 # Adding and Inserting Rows

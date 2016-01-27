@@ -6,6 +6,7 @@ slug: winforms/propertygrid/export-data/spread-export
 tags: spread,export
 published: True
 position: 0
+previous_url: propertygrid-export-data-spreadexport
 ---
 
 # Spread Export

@@ -6,6 +6,7 @@ slug: winforms/gridview/fundamentals/logical-vs.-visual-grid-structure
 tags: logical,vs.,visual,grid,structure
 published: True
 position: 3
+previous_url: gridview-fundamentals-logical-vs-visual-grid-structure
 ---
 
 # Logical vs. Visual Grid Structure

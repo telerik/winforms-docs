@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing
 tags: pdfprocessing
 published: True
 position: 0
+previous_url: pdfprocessing-overview
 ---
 
 # PdfProcessing

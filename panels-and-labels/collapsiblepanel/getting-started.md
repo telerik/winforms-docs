@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/collapsiblepanel/getting-started
 tags: getting,started
 published: True
 position: 2
+previous_url: panels-and-labels-collapsible-panel-getting-started
 ---
 
 # Getting Started

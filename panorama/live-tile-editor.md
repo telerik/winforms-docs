@@ -6,6 +6,7 @@ slug: winforms/panorama/live-tile-editor
 tags: live,tile,editor
 published: True
 position: 3
+previous_url: panorama-live-tile-editor
 ---
 
 # Live Tile Editor

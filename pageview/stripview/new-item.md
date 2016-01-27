@@ -6,6 +6,7 @@ slug: winforms/pageview/stripview/new-item
 tags: new,item
 published: True
 position: 3
+previous_url: pageview-stripview-new-item
 ---
 
 # New Item

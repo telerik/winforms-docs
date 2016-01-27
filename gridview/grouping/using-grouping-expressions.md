@@ -6,6 +6,7 @@ slug: winforms/gridview/grouping/using-grouping-expressions
 tags: using,grouping,expressions
 published: True
 position: 2
+previous_url: gridview-grouping-using-grouping-expressions
 ---
 
 # Using Grouping Expressions

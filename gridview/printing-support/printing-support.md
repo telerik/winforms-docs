@@ -6,6 +6,7 @@ slug: winforms/gridview/printing-support
 tags: printing,support
 published: True
 position: 0
+previous_url: gridview-printing-support
 ---
 
 # Printing Support

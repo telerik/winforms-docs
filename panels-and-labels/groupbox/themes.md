@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/groupbox/themes
 tags: themes
 published: True
 position: 1
+previous_url: panels-and-labels-groupbox-themes
 ---
 
 # Themes

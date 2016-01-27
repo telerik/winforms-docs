@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/editing/tablecell
 tags: tablecell
 published: True
 position: 5
+previous_url: pdfprocessing-editing-table-cell
 ---
 
 # TableCell

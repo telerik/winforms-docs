@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/editing/fixedcontenteditor
 tags: fixedcontenteditor
 published: True
 position: 0
+previous_url: pdfprocessing-editing-fixedcontenteditor
 ---
 
 # FixedContentEditor

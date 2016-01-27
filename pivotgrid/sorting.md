@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/sorting
 tags: sorting
 published: True
 position: 9
+previous_url: pivotgrid-sorting
 ---
 
 # Sorting

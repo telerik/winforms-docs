@@ -6,6 +6,7 @@ slug: winforms/pageview/localization/right-to-left-support
 tags: right-to-left,support
 published: True
 position: 1
+previous_url: pageview-localization-rtl
 ---
 
 # Right-to-left support

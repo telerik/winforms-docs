@@ -6,6 +6,7 @@ slug: winforms/listview/features/filtering
 tags: filtering
 published: True
 position: 2
+previous_url: listview-features-filtering
 ---
 
 # Filtering

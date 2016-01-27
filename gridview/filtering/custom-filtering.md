@@ -6,6 +6,7 @@ slug: winforms/gridview/filtering/custom-filtering
 tags: custom,filtering
 published: True
 position: 6
+previous_url: gridview-filtering-custom-filtering
 ---
 
 # Custom Filtering

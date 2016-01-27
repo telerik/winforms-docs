@@ -6,6 +6,7 @@ slug: winforms/gridview/end-user-capabilities/grouping
 tags: grouping
 published: True
 position: 4
+previous_url: gridview-end-user-capabilities-grouping
 ---
 
 # Grouping

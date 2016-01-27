@@ -6,6 +6,7 @@ slug: winforms/menus/menu/menu-merge/mdi-list
 tags: mdi,list
 published: True
 position: 2
+previous_url: menus-menu-menu-merge-mdi-list
 ---
 
 # MDI list

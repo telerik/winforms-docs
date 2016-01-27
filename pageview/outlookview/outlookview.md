@@ -6,6 +6,7 @@ slug: winforms/pageview/outlookview
 tags: outlookview
 published: True
 position: 0
+previous_url: pageview-outlookview-overview
 ---
 
 # OutlookView

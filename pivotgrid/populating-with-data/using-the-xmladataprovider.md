@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/populating-with-data/using-the-xmladataprovider
 tags: using,the,xmladataprovider
 published: True
 position: 4
+previous_url: pivotgrid-populating-with-data-using-xmladataprovider
 ---
 
 # Using the XmlaDataProvider

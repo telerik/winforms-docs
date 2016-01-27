@@ -6,6 +6,7 @@ slug: winforms/rangeselector-
 tags: rangeselector,
 published: True
 position: 0
+previous_url: rangeselector
 ---
 
 # RangeSelector

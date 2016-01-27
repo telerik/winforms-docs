@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/tips-when-binding-to-custom-collect
 tags: tips,when,binding,to,custom,collections
 published: True
 position: 8
+previous_url: gridview-populating-with-data-tips-when-binding-to-custom-collections
 ---
 
 # Tips when Binding to Custom Collections

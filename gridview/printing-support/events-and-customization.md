@@ -6,6 +6,7 @@ slug: winforms/gridview/printing-support/events-and-customization
 tags: events,and,customization
 published: True
 position: 2
+previous_url: gridview-printing-support-events
 ---
 
 # Events and Customization

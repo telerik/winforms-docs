@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/calculated-fields
 tags: calculated,fields
 published: True
 position: 10
+previous_url: pivotgrid-calculated-fields
 ---
 
 # Calculated fields

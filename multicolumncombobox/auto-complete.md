@@ -6,6 +6,7 @@ slug: winforms/multicolumncombobox/auto-complete
 tags: auto-complete
 published: True
 position: 5
+previous_url: multicolumncombobox-autocomplete
 ---
 
 # Auto-Complete

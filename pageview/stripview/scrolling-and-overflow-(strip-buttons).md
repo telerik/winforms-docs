@@ -6,6 +6,7 @@ slug: winforms/pageview/stripview/scrolling-and-overflow-(strip-buttons)
 tags: scrolling,and,overflow,(strip,buttons)
 published: True
 position: 1
+previous_url: pageview-stripview-scrolling-and-overflow
 ---
 
 # Scrolling and Overflow (strip buttons)

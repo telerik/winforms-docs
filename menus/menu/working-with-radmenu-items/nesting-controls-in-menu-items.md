@@ -6,6 +6,7 @@ slug: winforms/menus/menu/working-with-radmenu-items/nesting-controls-in-menu-it
 tags: nesting,controls,in,menu,items
 published: True
 position: 2
+previous_url: menus-menu-working-with-radmenu-items-nesting-controls-in-menu-items
 ---
 
 # Nesting Controls in Menu Items

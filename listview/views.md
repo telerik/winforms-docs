@@ -6,6 +6,7 @@ slug: winforms/listview/views
 tags: views
 published: True
 position: 2
+previous_url: listview-views
 ---
 
 # Views

@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/label/programming-radlabel
 tags: programming,radlabel
 published: True
 position: 1
+previous_url: panels-and-labels-label-programming-radlabel
 ---
 
 # Programming RadLabel

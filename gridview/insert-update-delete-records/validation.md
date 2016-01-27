@@ -6,6 +6,7 @@ slug: winforms/gridview/insert/update/delete-records/validation
 tags: validation
 published: True
 position: 4
+previous_url: gridview-insert-update-delete-records-validation
 ---
 
 # Validation

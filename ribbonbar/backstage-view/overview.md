@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/overview
 tags: overview
 published: True
 position: 0
+previous_url: ribbonbar-backstage-view-overview
 ---
 
 # BackStage View

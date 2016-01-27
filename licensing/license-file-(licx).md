@@ -6,6 +6,7 @@ slug: winforms/licensing/license-file-(licx)
 tags: license,file,(licx)
 published: True
 position: 1
+previous_url: licensing-license-file
 ---
 
 # License file (licx)

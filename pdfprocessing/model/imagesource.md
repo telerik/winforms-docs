@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/model/imagesource
 tags: imagesource
 published: True
 position: 5
+previous_url: pdfprocessing-model-imagesource
 ---
 
 # ImageSource

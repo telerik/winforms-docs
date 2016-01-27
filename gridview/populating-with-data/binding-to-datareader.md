@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/binding-to-datareader
 tags: binding,to,datareader
 published: True
 position: 6
+previous_url: gridview-populating-with-data-binding-to-datareader
 ---
 
 # Binding to DataReader

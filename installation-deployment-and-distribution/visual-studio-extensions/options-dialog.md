@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: options,dialog
 published: True
 position: 4
+previous_url: installation-deployment-and-distribution-vsx-options-dialog
 ---
 
 # Options dialog

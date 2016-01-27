@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/gridviewrowinfo
 tags: gridviewrowinfo
 published: True
 position: 0
+previous_url: gridview-rows-gridviewrowinfo
 ---
 
 # GridViewRowInfo

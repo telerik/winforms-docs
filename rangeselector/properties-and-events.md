@@ -6,6 +6,7 @@ slug: winforms/rangeselector-/properties-and-events
 tags: properties,and,events
 published: True
 position: 3
+previous_url: rangeselector-properties-and-events
 ---
 
 # Properties and Events

@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/updating-the-database-with-ado.net
 tags: updating,the,database,with,ado.net
 published: True
 position: 12
+previous_url: gridview-populating-with-data-updating-the-data-base-with-ado-net
 ---
 
 # Updating the Database with ADO.Net

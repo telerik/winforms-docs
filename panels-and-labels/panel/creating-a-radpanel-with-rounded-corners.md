@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/panel/creating-a-radpanel-with-rounded-corners
 tags: creating,a,radpanel,with,rounded,corners
 published: True
 position: 1
+previous_url: panels-and-labels-panel-creating-a-radpanel-with-rounded-corners
 ---
 
 # Creating a RadPanel with Rounded Corners

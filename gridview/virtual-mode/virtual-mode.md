@@ -6,6 +6,7 @@ slug: winforms/gridview/virtual-mode/virtual-mode
 tags: virtual,mode
 published: True
 position: 0
+previous_url: gridview-virtual-mode
 ---
 
 # Virtual Mode

@@ -6,6 +6,7 @@ slug: winforms/layoutcontrol/localization
 tags: localization
 published: True
 position: 8
+previous_url: layoutcontrol-localization
 ---
 
 # Localization

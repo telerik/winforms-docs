@@ -6,6 +6,7 @@ slug: winforms/propertygrid/radpropertystore---adding-custom-properties
 tags: radpropertystore,-,adding,custom,properties
 published: True
 position: 3
+previous_url: propertygrid-radpropertystore
 ---
 
 # RadPropertyStore - adding custom properties

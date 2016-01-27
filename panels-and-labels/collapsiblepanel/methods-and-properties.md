@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/collapsiblepanel/methods-and-properties
 tags: methods,and,properties
 published: True
 position: 4
+previous_url: panels-and-labels-collapsible-panel-methods-and-properties
 ---
 
 # Methods and properties

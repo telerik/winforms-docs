@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/editing/radfixeddocumenteditor
 tags: radfixeddocumenteditor
 published: True
 position: 3
+previous_url: pdfprocessing-editing-radfixeddocumenteditor
 ---
 
 # RadFixedDocumentEditor

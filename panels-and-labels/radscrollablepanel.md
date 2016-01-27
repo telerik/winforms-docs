@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/radscrollablepanel
 tags: radscrollablepanel
 published: True
 position: 5
+previous_url: panels-and-labels-radscrollablepanel-overview
 ---
 
 # RadScrollablePanel

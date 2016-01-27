@@ -6,6 +6,7 @@ slug: winforms/gridview/view-definitions/table-view
 tags: table,view
 published: True
 position: 1
+previous_url: gridview-viewdefinitions-table-view
 ---
 
 # Table View

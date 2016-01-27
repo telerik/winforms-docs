@@ -6,6 +6,7 @@ slug: winforms/gridview/fundamentals/element-hierarchy
 tags: element,hierarchy
 published: True
 position: 1
+previous_url: gridview-fundamentals-element-hierarchy
 ---
 
 # Element Hierarchy

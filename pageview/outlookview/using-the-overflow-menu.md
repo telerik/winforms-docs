@@ -6,6 +6,7 @@ slug: winforms/pageview/outlookview/using-the-overflow-menu
 tags: using,the,overflow,menu
 published: True
 position: 2
+previous_url: pageview-outlookview-using-the-overflow-menu
 ---
 
 # Using The Overflow Menu

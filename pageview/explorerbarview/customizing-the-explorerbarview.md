@@ -6,6 +6,7 @@ slug: winforms/pageview/explorerbarview/customizing-the-explorerbarview
 tags: customizing,the,explorerbarview
 published: True
 position: 1
+previous_url: pageview-explorerbarview-customizing-the-explorerbarview
 ---
 
 # Customizing the ExplorerBarView

@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: toolbox,configurator
 published: True
 position: 5
+previous_url: installation-deployment-and-distribution-vsx-toolbox-configurator
 ---
 
 # Toolbox configurator

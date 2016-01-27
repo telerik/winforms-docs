@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/how-to/how-to-comply-with-pdf/a-standard
 tags: how,to,comply,with,pdf/a,standard
 published: True
 position: 0
+previous_url: pdfprocessing-how-to-comply-with-pdfa-standard
 ---
 
 # How to Comply with PDF/A Standard

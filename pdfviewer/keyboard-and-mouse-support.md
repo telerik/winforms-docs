@@ -6,6 +6,7 @@ slug: winforms/pdfviewer/keyboard-and-mouse-support
 tags: keyboard,and,mouse,support
 published: True
 position: 5
+previous_url: pdfviewer-keyboard-and-mouse-support
 ---
 
 # Keyboard and mouse support

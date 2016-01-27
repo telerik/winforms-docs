@@ -6,6 +6,7 @@ slug: winforms/gridview/grouping/group-aggregates
 tags: group,aggregates
 published: True
 position: 6
+previous_url: gridview-grouping-group-aggregates
 ---
 
 # Group Aggregates

@@ -6,6 +6,7 @@ slug: winforms/pdfviewer/pdfviewernavigator
 tags: pdfviewernavigator
 published: True
 position: 6
+previous_url: pdfviewer-pdfviewernavigator
 ---
 
 # PdfViewerNavigator

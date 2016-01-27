@@ -6,6 +6,7 @@ slug: winforms/panorama/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: panorama-getting-started
 ---
 
 # Getting Started

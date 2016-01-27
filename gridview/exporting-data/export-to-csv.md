@@ -6,6 +6,7 @@ slug: winforms/gridview/exporting-data/export-to-csv
 tags: export,to,csv
 published: True
 position: 4
+previous_url: gridview-exporting-data-export-to-csv
 ---
 
 # Export to CSV

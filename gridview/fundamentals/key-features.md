@@ -6,6 +6,7 @@ slug: winforms/gridview/fundamentals/key-features
 tags: key,features
 published: True
 position: 0
+previous_url: gridview-fundamentals-key-features
 ---
 
 # Key Features

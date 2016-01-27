@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/editing/block
 tags: block
 published: True
 position: 1
+previous_url: radpdfprocessing-editing-block
 ---
 
 # Block

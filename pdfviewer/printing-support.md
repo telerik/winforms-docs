@@ -6,6 +6,7 @@ slug: winforms/pdfviewer/printing-support
 tags: printing,support
 published: True
 position: 7
+previous_url: pdfviewer-printing-support
 ---
 
 # Printing support

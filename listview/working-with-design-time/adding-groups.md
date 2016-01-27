@@ -6,6 +6,7 @@ slug: winforms/listview/working-with-design-time/adding-groups
 tags: adding,groups
 published: True
 position: 1
+previous_url: listview-working-with-design-time-adding-groups
 ---
 
 # Adding groups

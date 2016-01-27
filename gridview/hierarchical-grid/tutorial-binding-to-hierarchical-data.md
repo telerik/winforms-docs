@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/tutorial:-binding-to-hierarchical-data
 tags: tutorial,binding,to,hierarchical,data
 published: True
 position: 1
+previous_url: gridview-hierarchical-grid-tutorial-binding-to-hierarchical-data
 ---
 
 # Tutorial: Binding to Hierarchical Data

@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/filtering/report-filters
 tags: report,filters
 published: True
 position: 0
+previous_url: pivotgrid-filtering-report-filters
 ---
 
 # Report Filters

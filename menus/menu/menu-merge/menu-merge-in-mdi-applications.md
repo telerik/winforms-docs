@@ -6,6 +6,7 @@ slug: winforms/menus/menu/menu-merge/menu-merge-in-mdi-applications
 tags: menu,merge,in,mdi,applications
 published: True
 position: 0
+previous_url: menus-menu-menu-merge-menu-merge-in-mdi-applications
 ---
 
 # Menu Merge in MDI applications

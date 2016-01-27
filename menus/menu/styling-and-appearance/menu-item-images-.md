@@ -6,6 +6,7 @@ slug: winforms/menus/menu/styling-and-appearance/menu-item-images-
 tags: menu,item,images,
 published: True
 position: 2
+previous_url: menus-menu-styling-and-appearance-menu-item-images
 ---
 
 # Menu Item Images 

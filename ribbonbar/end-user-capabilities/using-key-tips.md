@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/end-user-capabilities/using-key-tips
 tags: using,key,tips
 published: True
 position: 1
+previous_url: ribbonbar-end-user-capabilities-using-key-tips
 ---
 
 # Using Key Tips

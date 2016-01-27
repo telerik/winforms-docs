@@ -6,6 +6,7 @@ slug: winforms/gridview/end-user-capabilities/filtering
 tags: filtering
 published: True
 position: 5
+previous_url: gridview-end-user-capabilities-filtering
 ---
 
 # Filtering

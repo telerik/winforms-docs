@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/creating-custom-rows
 tags: creating,custom,rows
 published: True
 position: 17
+previous_url: gridview-rows-custom-rows
 ---
 
 # Creating custom rows

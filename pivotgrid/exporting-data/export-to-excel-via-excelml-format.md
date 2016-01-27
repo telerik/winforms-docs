@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/exporting-data/export-to-excel
 tags: export,to,excel
 published: True
 position: 1
+previous_url: pivotgrid-export-to-excel
 ---
 
 # Export to Excel

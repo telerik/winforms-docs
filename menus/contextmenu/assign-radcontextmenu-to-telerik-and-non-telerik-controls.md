@@ -6,6 +6,7 @@ slug: winforms/menus/contextmenu/assign-radcontextmenu-to-telerik-and-non-teleri
 tags: assign,radcontextmenu,to,telerik,and,non-telerik,controls
 published: True
 position: 1
+previous_url: menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls
 ---
 
 # Assign RadContextMenu to Telerik and non-Telerik controls

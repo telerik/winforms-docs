@@ -6,6 +6,7 @@ slug: winforms/pageview/design-time
 tags: design-time
 published: True
 position: 3
+previous_url: pageview-design-time
 ---
 
 # Design-time

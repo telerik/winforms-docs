@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: visual,studio,extensions
 published: True
 position: 0
+previous_url: installation-deployment-and-distribution-vsx-overview
 ---
 
 # Visual Studio Extensions

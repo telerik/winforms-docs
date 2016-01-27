@@ -6,6 +6,7 @@ slug: winforms/gridview/save-and-load-layout/advanced
 tags: advanced
 published: True
 position: 2
+previous_url: gridview-save-and-load-layout-advanced
 ---
 
 # Advanced

@@ -6,6 +6,7 @@ slug: winforms/menus/applicationmenu
 tags: applicationmenu
 published: True
 position: 1
+previous_url: menus-application-menu-overview
 ---
 
 # ApplicationMenu

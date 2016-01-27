@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/self-referencing-hierarchy
 tags: self-referencing,hierarchy
 published: True
 position: 9
+previous_url: gridview-hierarchical-grid-self-referencing-hierarchy
 ---
 
 # Self-Referencing Hierarchy

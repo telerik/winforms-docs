@@ -6,6 +6,7 @@ slug: winforms/multicolumncombobox
 tags: multicolumncombobox
 published: True
 position: 0
+previous_url: multicolumncombobox-overview
 ---
 
 # MultiColumnComboBox

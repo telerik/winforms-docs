@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/filtering/group-filters
 tags: group,filters
 published: True
 position: 1
+previous_url: pivotgrid-filtering-group-filters
 ---
 
 # Group Filters

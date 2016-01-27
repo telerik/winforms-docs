@@ -6,6 +6,7 @@ slug: winforms/gridview/editors/how-to/allow-end-users-to-add-items-to-dropdownl
 tags: allow,end-users,to,add,items,to,dropdownlisteditor
 published: True
 position: 0
+previous_url: gridview-editors-howto-allow-end-users-to-add-items-to-dropdownlisteditor
 ---
 
 # Allow end-users to add items to DropDownListEditor

@@ -6,6 +6,7 @@ slug: winforms/gridview/editors/how-to/change-the-active-editor-depending-on-the
 tags: change,the,active,editor,depending,on,the,cell,value,type.
 published: True
 position: 2
+previous_url: gridview-editors-howto-change-the-active-editor-depending-on-the-cell-value-type
 ---
 
 # Change the active editor depending on the cell value type.

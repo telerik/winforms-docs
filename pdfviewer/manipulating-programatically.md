@@ -6,6 +6,7 @@ slug: winforms/pdfviewer/manipulating-programatically
 tags: manipulating,programatically
 published: True
 position: 3
+previous_url: pdfviewer-manipulating-programatically
 ---
 
 # Manipulating programatically

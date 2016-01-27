@@ -6,6 +6,7 @@ slug: winforms/gridview/styling-and-appearance/themes
 tags: themes
 published: True
 position: 5
+previous_url: gridview-styling-and-appearance-themes
 ---
 
 # Themes

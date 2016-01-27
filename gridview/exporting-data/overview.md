@@ -6,6 +6,7 @@ slug: winforms/gridview/exporting-data/overview
 tags: overview
 published: True
 position: 0
+previous_url: gridview-exporting-data-overview
 ---
 
 # Exporting Data Overview

@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/dialogs/customizing-the-dialogs
 tags: customizing,the,dialogs
 published: True
 position: 1
+previous_url: pivotgrid-dialogs-customizing-the-dialogs
 ---
 
 # Customizing the Dialogs

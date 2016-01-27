@@ -6,6 +6,7 @@ slug: winforms/gridview/populating-with-data/binding-to-bindinglist
 tags: binding,to,bindinglist
 published: True
 position: 4
+previous_url: gridview-populating-with-data-binding-to-bindinglist
 ---
 
 # Binding to BindingList

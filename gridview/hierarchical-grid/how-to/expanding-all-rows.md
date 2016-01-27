@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/how-to/expanding-all-rows
 tags: expanding,all,rows
 published: True
 position: 1
+previous_url: gridview-hirarchical-grid-how-to-expading-all-rows
 ---
 
 # Expanding all rows

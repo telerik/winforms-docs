@@ -6,6 +6,7 @@ slug: winforms/pageview/how-to/programatically-adding-pages
 tags: programatically,adding,pages
 published: True
 position: 1
+previous_url: pageview-how-to-programmatically-adding-pages
 ---
 
 # Programatically adding pages

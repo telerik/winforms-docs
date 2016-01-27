@@ -6,6 +6,7 @@ slug: winforms/propertygrid/editors/customizing-editor-behavior
 tags: customizing,editor,behavior
 published: True
 position: 4
+previous_url: propertygrid-editors-customizing-editor-behavior
 ---
 
 # Customizing editor behavior

@@ -6,6 +6,7 @@ slug: winforms/gridview/editors/events
 tags: events
 published: True
 position: 2
+previous_url: gridview-editors-events
 ---
 
 # Events

@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/formats-and-conversion/pdf
 tags: pdf
 published: True
 position: 0
+previous_url: pdfprocessing-formats-and-conversion-pdf
 ---
 
 # Pdf

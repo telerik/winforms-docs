@@ -6,6 +6,7 @@ slug: winforms/gridview/grouping/sorting-group-rows
 tags: sorting,group,rows
 published: True
 position: 8
+previous_url: gridview-grouping-sorting-group-rows
 ---
 
 # Sorting group rows

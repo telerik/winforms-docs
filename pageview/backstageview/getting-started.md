@@ -6,6 +6,7 @@ slug: winforms/pageview/getting-started
 tags: getting,started
 published: True
 position: 0
+previous_url: pageview-backstageview-getting-started
 ---
 
 # Getting Started

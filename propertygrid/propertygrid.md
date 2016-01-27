@@ -6,6 +6,7 @@ slug: winforms/propertygrid
 tags: propertygrid
 published: True
 position: 0
+previous_url: propertygrid-overview
 ---
 
 # PropertyGrid

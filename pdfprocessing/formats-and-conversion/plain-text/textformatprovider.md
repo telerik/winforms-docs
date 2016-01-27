@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/formats-and-conversion/plain-text
 tags: using,textformatprovider
 published: True
 position: 1
+previous_url: pdfprocessing-formats-and-conversion-plain-text-using-textformatprovider
 ---
 
 # Using TextFormatProvider

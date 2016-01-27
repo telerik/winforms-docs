@@ -6,6 +6,7 @@ slug: winforms/gridview/context-menus/modifying-the-default-context-menu
 tags: modifying,the,default,context,menu
 published: True
 position: 2
+previous_url: gridview-context-menus-modifying-the-default-context-menu
 ---
 
 # Modifying the Default Context Menu

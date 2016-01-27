@@ -6,6 +6,7 @@ slug: winforms/gridview/rows/formatting-rows
 tags: formatting,rows
 published: True
 position: 5
+previous_url: gridview-rows-formatting-rows
 ---
 
 # Formatting Rows

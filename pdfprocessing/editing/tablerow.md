@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/editing/tablerow
 tags: tablerow
 published: True
 position: 6
+previous_url: pdfprocessing-editing-table-row
 ---
 
 # TableRow

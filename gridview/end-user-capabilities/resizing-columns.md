@@ -6,6 +6,7 @@ slug: winforms/gridview/end-user-capabilities/resizing-columns
 tags: resizing,columns
 published: True
 position: 7
+previous_url: gridview-end-user-capabilities-resizing-columns
 ---
 
 # Resizing Columns

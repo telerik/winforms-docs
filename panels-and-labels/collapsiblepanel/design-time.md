@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/collapsiblepanel/design-time
 tags: design,time
 published: True
 position: 3
+previous_url: panels-and-labels-collapsible-panel-design-time
 ---
 
 # Design Time

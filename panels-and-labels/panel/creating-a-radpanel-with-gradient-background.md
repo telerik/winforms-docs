@@ -6,6 +6,7 @@ slug: winforms/panels-and-labels/panel/creating-a-radpanel-with-gradient-backgro
 tags: creating,a,radpanel,with,gradient,background
 published: True
 position: 2
+previous_url: panels-and-labels-panel-creating-a-radpanel-with-gradient-background
 ---
 
 # Creating a RadPanel with Gradient Background

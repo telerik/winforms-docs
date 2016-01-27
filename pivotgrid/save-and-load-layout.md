@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/save-and-load-layout
 tags: save,and,load,layout
 published: True
 position: 23
+previous_url: pivotgrid-save-and-load-layout
 ---
 
 # Save and Load Layout

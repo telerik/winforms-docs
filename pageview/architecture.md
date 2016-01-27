@@ -6,6 +6,7 @@ slug: winforms/pageview/architecture
 tags: architecture
 published: True
 position: 2
+previous_url: pageview-architecture
 ---
 
 # Architecture

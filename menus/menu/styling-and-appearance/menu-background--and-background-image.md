@@ -6,6 +6,7 @@ slug: winforms/menus/menu/styling-and-appearance/menu-background--and-background
 tags: menu,background,,and,background,image
 published: True
 position: 1
+previous_url: menus-menu-styling-and-appearance-menu-background-and-background-image
 ---
 
 # Menu Background  and Background Image

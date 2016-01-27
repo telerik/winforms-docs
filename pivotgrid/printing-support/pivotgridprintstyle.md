@@ -6,6 +6,7 @@ slug: winforms/pivotgrid/printing-support/pivotgridprintstyle
 tags: pivotgridprintstyle
 published: True
 position: 1
+previous_url: pivotgrid-printing-support-pivotgridprintstyle
 ---
 
 # PivotGridPrintStyle

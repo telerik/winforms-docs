@@ -6,6 +6,7 @@ slug: winforms/layoutcontrol/design-time
 tags: design,time
 published: True
 position: 2
+previous_url: layoutcontrol-design-time
 ---
 
 # Design Time

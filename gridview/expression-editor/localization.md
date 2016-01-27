@@ -6,6 +6,7 @@ slug: winforms/gridview/expression-editor/localization
 tags: localization
 published: True
 position: 3
+previous_url: gridview-expressioneditor-localization
 ---
 
 # Localization

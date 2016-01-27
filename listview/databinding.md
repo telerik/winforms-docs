@@ -6,6 +6,7 @@ slug: winforms/listview/databinding
 tags: databinding
 published: True
 position: 5
+previous_url: listview-databinding
 ---
 
 # Databinding

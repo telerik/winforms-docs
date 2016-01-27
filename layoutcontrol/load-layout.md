@@ -6,6 +6,7 @@ slug: winforms/layoutcontrol/load-layout
 tags: save/load,layout
 published: True
 position: 4
+previous_url: layoutcontrol-save-load-layout
 ---
 
 # Save/Load Layout

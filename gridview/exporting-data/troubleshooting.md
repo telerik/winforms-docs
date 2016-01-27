@@ -6,6 +6,7 @@ slug: winforms/gridview/exporting-data/troubleshooting
 tags: troubleshooting
 published: True
 position: 7
+previous_url: gridview-exporting-data-export-to-troubleshooting
 ---
 
 # Troubleshooting

@@ -6,6 +6,7 @@ slug: winforms/propertygrid/binding-to-multiple-objects
 tags: binding,to,multiple,objects
 published: True
 position: 4
+previous_url: propertygrid-bindiing-to-multiple-objects
 ---
 
 # Binding to multiple objects

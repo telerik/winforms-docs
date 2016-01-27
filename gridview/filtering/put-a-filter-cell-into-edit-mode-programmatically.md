@@ -6,6 +6,7 @@ slug: winforms/gridview/filtering/put-a-filter-cell-into-edit-mode-programmatica
 tags: put,a,filter,cell,into,edit,mode,programmatically
 published: True
 position: 4
+previous_url: gridview-filtering-put-a-filter-cell-into-edit-mode-programmatically
 ---
 
 # Put a filter cell into edit mode programmatically

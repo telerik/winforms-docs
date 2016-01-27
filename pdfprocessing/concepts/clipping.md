@@ -6,6 +6,7 @@ slug: winforms/pdfprocessing/concepts/clipping
 tags: clipping
 published: True
 position: 1
+previous_url: pdfprocessing-concepts-clipping
 ---
 
 # Clipping

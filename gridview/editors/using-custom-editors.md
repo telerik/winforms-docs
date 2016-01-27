@@ -6,6 +6,7 @@ slug: winforms/gridview/editors/using-custom-editors
 tags: using,custom,editors
 published: True
 position: 5
+previous_url: gridview-editors-using-custom-editors
 ---
 
 # Using custom editors

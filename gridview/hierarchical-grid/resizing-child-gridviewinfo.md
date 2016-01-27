@@ -6,6 +6,7 @@ slug: winforms/gridview/hierarchical-grid/resizing-child-gridviewinfo
 tags: resizing,child,gridviewinfo
 published: True
 position: 5
+previous_url: gridview-hirarchical-grid-resizing-child-gridviewinfo
 ---
 
 # Resizing child GridViewInfo

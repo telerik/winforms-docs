@@ -6,6 +6,7 @@ slug: winforms/pdfviewer/text/text-position
 tags: text,position
 published: True
 position: 0
+previous_url: pdfviewer-text-text-position
 ---
 
 # Text Position

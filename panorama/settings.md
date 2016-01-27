@@ -6,6 +6,7 @@ slug: winforms/panorama/settings
 tags: settings
 published: True
 position: 5
+previous_url: panorama-settings
 ---
 
 # Settings

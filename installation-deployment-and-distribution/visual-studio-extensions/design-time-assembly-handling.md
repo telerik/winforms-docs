@@ -6,6 +6,7 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: design-time,assembly,handling
 published: True
 position: 3
+previous_url: installation-deployment-and-distribution-vsx-design-time-assembly-handling
 ---
 
 # Design-time assembly handling

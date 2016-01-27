@@ -6,6 +6,7 @@ slug: winforms/panorama/design-time
 tags: design,time
 published: True
 position: 2
+previous_url: panorama-design-time
 ---
 
 # Design Time

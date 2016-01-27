@@ -6,6 +6,7 @@ slug: winforms/gridview/printing-support/printing-hierarchical-grid
 tags: printing,hierarchical,grid
 published: True
 position: 3
+previous_url: gridview-printing-support-printing-hierarchical-grid
 ---
 
 # Printing Hierarchical Grid
