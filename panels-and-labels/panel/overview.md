@@ -1,5 +1,5 @@
 ---
-title: Panel
+title: Overview
 page_title: Panel | UI for WinForms Documentation
 description: Panel
 slug: winforms/panels-and-labels/panel

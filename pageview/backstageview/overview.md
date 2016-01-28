@@ -1,5 +1,5 @@
 ---
-title: Backstage View
+title: Overview
 page_title: Getting Started | UI for WinForms Documentation
 description: Getting Started
 slug: winforms/pageview/getting-started

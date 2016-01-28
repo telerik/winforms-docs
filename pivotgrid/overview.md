@@ -1,5 +1,5 @@
 ---
-title: PivotGrid
+title: Overview
 page_title: PivotGrid | UI for WinForms Documentation
 description: PivotGrid
 slug: winforms/pivotgrid

@@ -1,5 +1,5 @@
 ---
-title: PropertyGrid
+title: Overview
 page_title: PropertyGrid | UI for WinForms Documentation
 description: PropertyGrid
 slug: winforms/propertygrid

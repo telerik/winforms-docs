@@ -1,5 +1,5 @@
 ---
-title: RichTextBox
+title: Overview
 page_title: RichTextBox (Obsolete) | UI for WinForms Documentation
 description: RichTextBox (Obsolete)
 slug: winforms/richtextbox-obsolete

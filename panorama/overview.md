@@ -1,5 +1,5 @@
 ---
-title: Panorama
+title: Overview
 page_title: Panorama | UI for WinForms Documentation
 description: Panorama
 slug: winforms/panorama

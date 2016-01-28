@@ -1,5 +1,5 @@
 ---
-title: Menu
+title: Overview
 page_title: Menu | UI for WinForms Documentation
 description: Menu
 slug: winforms/menus/menu

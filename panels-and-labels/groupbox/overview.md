@@ -1,5 +1,5 @@
 ---
-title: GroupBox
+title: Overview
 page_title: GroupBox | UI for WinForms Documentation
 description: GroupBox
 slug: winforms/panels-and-labels/groupbox

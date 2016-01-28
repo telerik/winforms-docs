@@ -1,5 +1,5 @@
 ---
-title: StackView
+title: Overview
 page_title: StackView | UI for WinForms Documentation
 description: StackView
 slug: winforms/pageview/stackview

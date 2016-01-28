@@ -1,5 +1,5 @@
 ---
-title: Dialogs
+title: Overview
 page_title: Dialogs | UI for WinForms Documentation
 description: Dialogs
 slug: winforms/pivotgrid/dialogs

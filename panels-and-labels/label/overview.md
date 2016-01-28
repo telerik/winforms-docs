@@ -1,5 +1,5 @@
 ---
-title: Label
+title: Overview
 page_title: Label | UI for WinForms Documentation
 description: Label
 slug: winforms/panels-and-labels/label

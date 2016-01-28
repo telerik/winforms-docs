@@ -1,14 +1,14 @@
 ---
-title: Customizing the Field List Control
-page_title: Customizing the Field List Control | UI for WinForms Documentation
-description: Customizing the Field List Control
-slug: winforms/pivotgrid/pivot-field-list/customizing-the-field-list-control
+title: Customizing RadPivotFieldList
+page_title: Customizing RadPivotFieldList | UI for WinForms Documentation
+description: Customizing RadPivotFieldList
+slug: winforms/pivotgrid/pivot-field-list/customizing-radpivotfieldList
 tags: customizing,radpivotfieldlist 
 published: True
 position: 1
 ---
 
-# Customizing the Field List Control
+# Customizing RadPivotFieldList
 
 ## Visual Field Manipulation
 

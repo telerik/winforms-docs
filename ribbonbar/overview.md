@@ -1,5 +1,5 @@
 ---
-title: RibbonBar
+title: Overview
 page_title: RibbonBar | UI for WinForms Documentation
 description: RibbonBar
 slug: winforms/ribbonbar

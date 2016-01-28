@@ -1,5 +1,5 @@
 ---
-title: CollapsiblePanel
+title: Overview
 page_title: CollapsiblePanel | UI for WinForms Documentation
 description: CollapsiblePanel
 slug: winforms/panels-and-labels/collapsiblepanel

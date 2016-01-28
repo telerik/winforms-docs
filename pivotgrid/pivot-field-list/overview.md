@@ -1,5 +1,5 @@
 ---
-title: RadPivotFieldList
+title: Overview
 page_title: RadPivotFieldList | UI for WinForms Documentation
 description: RadPivotFieldList
 slug: winforms/pivotgrid/pivot-field-list/radpivotfieldlist

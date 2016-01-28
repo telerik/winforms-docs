@@ -1,5 +1,5 @@
 ---
-title: Backstage View
+title: Overview
 page_title: Backstage View | UI for WinForms Documentation
 description: Backstage View
 slug: winforms/ribbonbar/overview

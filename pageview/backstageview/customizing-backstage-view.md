@@ -5,7 +5,7 @@ description: Customizing Backstage View
 slug: winforms/pageview/getting-started/customizing-backstage-view
 tags: customizing,backstage,view
 published: True
-position: 0
+position: 1
 previous_url: pageview-backstageview-customizing-backstageview
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: OutlookView
+title: Overview
 page_title: OutlookView | UI for WinForms Documentation
 description: OutlookView
 slug: winforms/pageview/outlookview

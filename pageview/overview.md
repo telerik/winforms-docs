@@ -1,5 +1,5 @@
 ---
-title: PageView
+title: Overview
 page_title: PageView | UI for WinForms Documentation
 description: PageView
 slug: winforms/pageview

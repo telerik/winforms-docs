@@ -1,5 +1,5 @@
 ---
-title: ExplorerBarView
+title: Overview
 page_title: ExplorerBarView | UI for WinForms Documentation
 description: ExplorerBarView
 slug: winforms/pageview/explorerbarview
