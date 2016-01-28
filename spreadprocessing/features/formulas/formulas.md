@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/formulas
 tags: formulas
 published: True
 position: 0
+previous_url: spreadprocessing-features-formulas
 ---
 
 # Formulas

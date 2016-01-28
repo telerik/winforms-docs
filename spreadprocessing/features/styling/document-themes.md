@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/styling/document-themes
 tags: document,themes
 published: True
 position: 1
+previous_url: spreadprocessing-features-styling-document-themes
 ---
 
 # Document Themes

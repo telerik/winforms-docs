@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/references/footnotes-and-endnotes
 tags: footnotes,and,endnotes
 published: True
 position: 0
+previous_url: richtexteditor-features-references-footnotes-and-endnotes
 ---
 
 # Footnotes and Endnotes

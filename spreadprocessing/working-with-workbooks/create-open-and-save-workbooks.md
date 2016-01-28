@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-workbooks/create-open-and-save-work
 tags: create,,open,and,save,workbooks
 published: True
 position: 1
+previous_url: spreadprocessing-working-with-workbooks-create-open-and-save-workbooks
 ---
 
 # Create, Open and Save Workbooks

@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/selection-mi
 tags: selection,mini,toolbar
 published: True
 position: 3
+previous_url: richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-selection-mini-toolbar
 ---
 
 # Selection Mini Toolbar

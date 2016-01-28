@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/formats-and-conversion/xlsx/using-xlsxformatprov
 tags: using,xlsxformatprovider
 published: True
 position: 2
+previous_url: spreadprocessing-formats-and-conversion-xlsx-xlsxformatprovider
 ---
 
 # Using XlsxFormatProvider

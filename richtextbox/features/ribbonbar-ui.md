@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/ribbonbar-ui
 tags: ribbonbar,ui
 published: True
 position: 9
+previous_url: richtextbox-features-ribbon-ui
 ---
 
 # RibbonBar UI

@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/class-hierarchy/radobject
 tags: radobject
 published: True
 position: 4
+previous_url: tpf-class-hierarchy-radobject
 ---
 
 # RadObject

@@ -6,6 +6,7 @@ slug: winforms/telerik-cab-enabling-kit/telerik-cab-enabling-kit/workspaces
 tags: workspaces
 published: True
 position: 1
+previous_url: telerik-cab-enabling-kit-telerik-cab-enabling-kit-workspaces
 ---
 
 # Workspaces

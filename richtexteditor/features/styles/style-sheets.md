@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/styles/style-sheets
 tags: style,sheets
 published: True
 position: 2
+previous_url: richtexteditor-features-styles-style-sheets
 ---
 
 # Style Sheets

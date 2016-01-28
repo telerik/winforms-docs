@@ -6,6 +6,7 @@ slug: winforms/telerik-cab-enabling-kit/system-requirements
 tags: system,requirements
 published: True
 position: 1
+previous_url: telerik-cab-enabling-kit-system-requirements
 ---
 
 # System Requirements

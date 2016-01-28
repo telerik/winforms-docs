@@ -6,6 +6,7 @@ slug: winforms/scheduler/scheduler-navigator/overview
 tags: overview
 published: True
 position: 0
+previous_url: scheduler-scheduler-navigator-overview
 ---
 
 # Scheduler Navigator Overview

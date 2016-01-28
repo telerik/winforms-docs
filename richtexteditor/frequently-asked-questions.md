@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/frequently-asked-questions
 tags: frequently,asked,questions
 published: True
 position: 3
+previous_url: richtexteditor-frequently-asked-questions
 ---
 
 # Frequently Asked Questions

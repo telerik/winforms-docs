@@ -6,6 +6,7 @@ slug: winforms/richtextbox-obsolete
 tags: richtextbox,(obsolete)
 published: True
 position: 0
+previous_url: richtextbox-overview
 ---
 
 # RichTextBox (Obsolete)

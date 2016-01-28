@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/upgrading-to-radrichtexteditor
 tags: upgrading,to,radrichtexteditor
 published: True
 position: 1
+previous_url: richtexteditor-converting-from-radrichtextbox
 ---
 
 # Upgrading to RadRichTextEditor

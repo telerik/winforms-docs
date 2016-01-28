@@ -6,6 +6,7 @@ slug: winforms/shortcuts
 tags: shortcuts
 published: True
 position: 0
+previous_url: shortcuts-overview
 ---
 
 # Shortcuts

@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/class-hierarchy/baseprimitive
 tags: baseprimitive
 published: True
 position: 7
+previous_url: tpf-class-hierarchy-baseprimitive
 ---
 
 # BasePrimitive

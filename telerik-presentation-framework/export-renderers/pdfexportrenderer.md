@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/export-renderers/pdfexportrenderer
 tags: pdfexportrenderer
 published: True
 position: 1
+previous_url: tpf-export-data-support-pdf-export-renderer
 ---
 
 # PdfExportRenderer

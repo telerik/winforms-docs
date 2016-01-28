@@ -6,6 +6,7 @@ slug: winforms/spellchecker/localization
 tags: localization
 published: True
 position: 5
+previous_url: spellchecker-localization
 ---
 
 # Localization

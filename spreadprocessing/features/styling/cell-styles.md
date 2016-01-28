@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/styling/cell-styles
 tags: cell,styles
 published: True
 position: 0
+previous_url: spreadprocessing-features-styling-cell-styles
 ---
 
 # Cell Styles

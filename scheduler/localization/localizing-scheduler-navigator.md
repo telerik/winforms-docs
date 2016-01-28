@@ -6,6 +6,7 @@ slug: winforms/scheduler/localization/localizing-scheduler-navigator
 tags: localizing,scheduler,navigator
 published: True
 position: 1
+previous_url: scheduler-localization-localizing-scheduler-navigator
 ---
 
 # Localizing Scheduler Navigator

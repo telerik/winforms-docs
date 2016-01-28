@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/touch-support
 tags: touch,support
 published: True
 position: 12
+previous_url: tpf-touch-support
 ---
 
 # Touch Support

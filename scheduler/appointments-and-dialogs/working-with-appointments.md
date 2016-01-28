@@ -6,6 +6,7 @@ slug: winforms/scheduler/appointments-and-dialogs/working-with-appointments
 tags: working,with,appointments
 published: True
 position: 0
+previous_url: scheduler-appointments-and-dialogs-working-with-appointments
 ---
 
 # Working with Appointments

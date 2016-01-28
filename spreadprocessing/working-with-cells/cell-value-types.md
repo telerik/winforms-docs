@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-cells/cell-value-types
 tags: cell,value,types
 published: True
 position: 4
+previous_url: spreadprocessing-working-with-cells-cell-value-types
 ---
 
 # Cell Value Types

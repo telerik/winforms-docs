@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/freeze-panes
 tags: freeze,panes
 published: True
 position: 6
+previous_url: spreadprocessing-features-freeze-panes
 ---
 
 # Freeze Panes

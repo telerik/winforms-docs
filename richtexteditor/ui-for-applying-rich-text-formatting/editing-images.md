@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/editing-imag
 tags: editing,images
 published: True
 position: 1
+previous_url: richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-editing-images
 ---
 
 # Editing Images

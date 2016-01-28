@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/spellcheck
 tags: spellcheck
 published: True
 position: 7
+previous_url: richtexteditor-features-spellcheck
 ---
 
 # Spellcheck

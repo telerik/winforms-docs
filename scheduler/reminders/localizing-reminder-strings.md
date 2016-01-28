@@ -6,6 +6,7 @@ slug: winforms/scheduler/reminders/localizing-reminder-strings
 tags: localizing,reminder,strings
 published: True
 position: 2
+previous_url: scheduler-reminders-localizing-reminder-strings
 ---
 
 # Localizing Reminder Strings

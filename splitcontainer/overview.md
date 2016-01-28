@@ -6,6 +6,7 @@ slug: winforms/splitcontainer
 tags: splitcontainer
 published: True
 position: 0
+previous_url: splitcontainer-overview
 ---
 
 # SplitContainer

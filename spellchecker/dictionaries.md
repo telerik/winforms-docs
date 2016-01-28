@@ -6,6 +6,7 @@ slug: winforms/spellchecker/dictionaries
 tags: dictionaries
 published: True
 position: 5
+previous_url: spellchecker-dictionaries
 ---
 
 # Dictionaries

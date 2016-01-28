@@ -6,6 +6,7 @@ slug: winforms/spellchecker/spellchecking-radgridview
 tags: spellchecking,radgridview
 published: True
 position: 3
+previous_url: spellchecker-spellchecking-radgridview
 ---
 
 # SpellChecking RadGridView

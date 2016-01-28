@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/events/routed-events
 tags: routed,events
 published: True
 position: 1
+previous_url: tpf-events-routed-events
 ---
 
 # Routed Events

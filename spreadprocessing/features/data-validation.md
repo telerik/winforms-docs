@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/data-validation
 tags: data,validation
 published: True
 position: 18
+previous_url: spreadprcessing-features-data-validation
 ---
 
 # Data Validation

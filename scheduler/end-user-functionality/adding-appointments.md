@@ -6,6 +6,7 @@ slug: winforms/scheduler/end-user-functionality/adding-appointments
 tags: adding,appointments
 published: True
 position: 1
+previous_url: scheduler-end-user-functionality-adding-appointments
 ---
 
 # Adding Appointments

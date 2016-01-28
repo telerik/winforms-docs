@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/events
 tags: events
 published: True
 position: 4
+previous_url: richtextbox-events
 ---
 
 # Events

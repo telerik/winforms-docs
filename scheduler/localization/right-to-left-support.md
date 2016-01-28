@@ -6,6 +6,7 @@ slug: winforms/scheduler/localization/right-to-left-support
 tags: right-to-left,support
 published: True
 position: 3
+previous_url: scheduler-localization-right-to-left
 ---
 
 # Right-to-Left support

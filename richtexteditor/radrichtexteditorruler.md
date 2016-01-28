@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/radrichtexteditorruler-
 tags: radrichtexteditorruler,
 published: True
 position: 9
+previous_url: richtexteditor-richtexteditorruler
 ---
 
 # RadRichTextEditorRuler 

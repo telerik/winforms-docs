@@ -6,6 +6,7 @@ slug: winforms/splitcontainer/properties
 tags: properties
 published: True
 position: 4
+previous_url: splitcontainer-properties
 ---
 
 # Properties

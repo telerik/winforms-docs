@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/history
 tags: history
 published: True
 position: 3
+previous_url: richtexteditor-features-history
 ---
 
 # History

@@ -6,6 +6,7 @@ slug: winforms/spellchecker/spell-check-as-you-type
 tags: spell,check,as,you,type
 published: True
 position: 4
+previous_url: spellchecker-spell-check-as-you-type
 ---
 
 # Spell check as you type

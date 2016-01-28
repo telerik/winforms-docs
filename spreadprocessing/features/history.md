@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/history
 tags: history
 published: True
 position: 7
+previous_url: spreadprocessing-features-history
 ---
 
 # History

@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/watermark
 tags: watermark
 published: True
 position: 19
+previous_url: richtexteditor-features-watermark
 ---
 
 # Watermark

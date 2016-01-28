@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/day-view
 tags: day,view
 published: True
 position: 4
+previous_url: scheduler-views-day-view
 ---
 
 # Day View

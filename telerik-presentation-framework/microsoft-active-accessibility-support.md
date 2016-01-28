@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/microsoft-active-accessibility-sup
 tags: microsoft,active,accessibility,support
 published: True
 position: 11
+previous_url: tpf-msaa-support
 ---
 
 # Microsoft Active Accessibility Support

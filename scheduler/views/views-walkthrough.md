@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/views-walkthrough
 tags: views,walkthrough
 published: True
 position: 3
+previous_url: scheduler-views-views-walkthrough
 ---
 
 # Views Walkthrough

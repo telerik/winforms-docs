@@ -6,6 +6,7 @@ slug: winforms/spellchecker
 tags: spellchecker
 published: True
 position: 0
+previous_url: spellchecker-overview
 ---
 
 # SpellChecker

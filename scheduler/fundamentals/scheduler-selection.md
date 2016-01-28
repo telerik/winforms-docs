@@ -6,6 +6,7 @@ slug: winforms/scheduler/fundamentals/scheduler-selection
 tags: scheduler,selection
 published: True
 position: 3
+previous_url: scheduler-fundamentals-scheduler-selection
 ---
 
 # Scheduler Selection

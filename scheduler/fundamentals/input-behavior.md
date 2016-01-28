@@ -6,6 +6,7 @@ slug: winforms/scheduler/fundamentals/input-behavior
 tags: input,behavior
 published: True
 position: 1
+previous_url: scheduler-fundamentals-input-behavior
 ---
 
 # Input behavior

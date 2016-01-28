@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing
 tags: spread,processing
 published: True
 position: 0
+previous_url: spreadprocessing-overview
 ---
 
 # Spread Processing

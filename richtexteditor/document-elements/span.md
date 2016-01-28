@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/document-elements/span
 tags: span
 published: True
 position: 3
+previous_url: richtexteditor-document-elements-span
 ---
 
 # Span

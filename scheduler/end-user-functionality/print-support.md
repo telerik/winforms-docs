@@ -6,6 +6,7 @@ slug: winforms/scheduler/end-user-functionality/print-support
 tags: print,support
 published: True
 position: 4
+previous_url: scheduler-end-user-functionality-print-support
 ---
 
 # Print Support

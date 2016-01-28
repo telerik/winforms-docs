@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/performance-tips-and-tricks
 tags: performance,tips,and,tricks
 published: True
 position: 9
+previous_url: spreadprocessing-performance
 ---
 
 # Performance Tips and Tricks

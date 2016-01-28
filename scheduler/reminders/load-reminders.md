@@ -6,6 +6,7 @@ slug: winforms/scheduler/reminders/save/load-reminders
 tags: save/load,reminders
 published: True
 position: 3
+previous_url: scheduler-reminders-save-load-reminders
 ---
 
 # Save/Load reminders

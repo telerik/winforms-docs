@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/hyperlink
 tags: hyperlink
 published: True
 position: 9
+previous_url: richtexteditor-features-hyperlink
 ---
 
 # Hyperlink

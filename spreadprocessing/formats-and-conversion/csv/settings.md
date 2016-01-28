@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/formats-and-conversion/csv/settings
 tags: settings
 published: True
 position: 2
+previous_url: spreadprocessing-formats-and-conversion-csv-settings
 ---
 
 # Settings

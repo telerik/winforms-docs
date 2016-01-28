@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/formulas/operator
 tags: operator
 published: True
 position: 1
+previous_url: spreadprocessing-features-formulas-operator
 ---
 
 # Operator

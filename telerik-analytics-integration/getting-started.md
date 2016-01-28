@@ -6,6 +6,7 @@ slug: winforms/telerik-analytics-integration/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: telerik-analytics-integration-getting-started
 ---
 
 # Getting Started

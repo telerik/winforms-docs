@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/shapes-and-images
 tags: shapes,and,images
 published: True
 position: 13
+previous_url: spreadprocessing-features-shapes-and-images
 ---
 
 # Shapes and Images

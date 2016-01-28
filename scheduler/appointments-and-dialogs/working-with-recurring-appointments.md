@@ -6,6 +6,7 @@ slug: winforms/scheduler/appointments-and-dialogs/working-with-recurring-appoint
 tags: working,with,recurring,appointments
 published: True
 position: 1
+previous_url: scheduler-appointments-and-dialogs-working-with-recurring-appointments
 ---
 
 # Working with Recurring Appointments

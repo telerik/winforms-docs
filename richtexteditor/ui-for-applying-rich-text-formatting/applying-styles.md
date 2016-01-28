@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/applying-sty
 tags: applying,styles
 published: True
 position: 4
+previous_url: richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-applying-styles
 ---
 
 # Applying Styles

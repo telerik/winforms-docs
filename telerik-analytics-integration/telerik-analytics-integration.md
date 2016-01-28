@@ -6,6 +6,7 @@ slug: winforms/telerik-analytics-integration
 tags: telerik,analytics,integration
 published: True
 position: 0
+previous_url: telerik-analytics-integration
 ---
 
 # Telerik Analytics Integration

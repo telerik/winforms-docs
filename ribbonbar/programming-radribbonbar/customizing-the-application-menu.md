@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/programming-radribbonbar/customizing-the-application-me
 tags: customizing,the,application,menu
 published: True
 position: 4
+previous_url: ribbonbar-programming-radribbonbar-customizing-the-application-menu
 ---
 
 # Customizing the Application Menu

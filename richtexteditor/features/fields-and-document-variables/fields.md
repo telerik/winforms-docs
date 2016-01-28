@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/fields-and-document-variables/fields
 tags: fields
 published: True
 position: 0
+previous_url: richtexteditor-features-fields-and-document-variables-fields
 ---
 
 # Fields

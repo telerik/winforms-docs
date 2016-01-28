@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/formats-and-conversion
 tags: formats,and,conversion
 published: True
 position: 0
+previous_url: spreadprocessing-formats-and-conversion
 ---
 
 # Formats and Conversion

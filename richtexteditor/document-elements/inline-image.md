@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/document-elements/inline-image
 tags: inline,image
 published: True
 position: 4
+previous_url: richtexteditor-document-elements-inline-image
 ---
 
 # Inline Image

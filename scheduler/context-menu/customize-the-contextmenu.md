@@ -6,6 +6,7 @@ slug: winforms/scheduler/context-menu/customize-the-contextmenu
 tags: customize,the,contextmenu
 published: True
 position: 0
+previous_url: scheduler-context-menu-customize-context-menu
 ---
 
 # Customize the ContextMenu

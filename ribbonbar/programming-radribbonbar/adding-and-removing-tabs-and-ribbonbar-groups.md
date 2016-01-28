@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/programming-radribbonbar/adding-and-removing-tabs-and-r
 tags: adding,and,removing,tabs,and,ribbonbar,groups
 published: True
 position: 0
+previous_url: ribbonbar-programming-radribbonbar-adding-and-removing-tabs-and-ribbonbar-groups
 ---
 
 # Adding and Removing Tabs and RibbonBar Groups

@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/creating-a-gallery
 tags: creating,a,gallery
 published: True
 position: 11
+previous_url: ribbonbar-creating-a-gallery
 ---
 
 # Creating a Gallery

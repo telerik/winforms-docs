@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/html-like-text-formatting
 tags: html-like,text,formatting
 published: True
 position: 9
+previous_url: tpf-html-like-text-formatting
 ---
 
 # HTML-like Text Formatting

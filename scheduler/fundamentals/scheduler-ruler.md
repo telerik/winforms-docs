@@ -6,6 +6,7 @@ slug: winforms/scheduler/fundamentals/scheduler-ruler
 tags: scheduler,ruler
 published: True
 position: 2
+previous_url: scheduler-fundamentals-ruler
 ---
 
 # Scheduler Ruler

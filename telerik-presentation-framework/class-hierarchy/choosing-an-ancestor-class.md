@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/class-hierarchy/choosing-an-ancest
 tags: choosing,an,ancestor,class
 published: True
 position: 1
+previous_url: tpf-class-hierarchy-hierarchy-ancestor
 ---
 
 # Choosing an Ancestor Class

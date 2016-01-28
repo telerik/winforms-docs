@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/import/export/import/export-setti
 tags: import/export,settings
 published: True
 position: 1
+previous_url: richtextbox-features-import-export-import-export-settings
 ---
 
 # Import/Export Settings

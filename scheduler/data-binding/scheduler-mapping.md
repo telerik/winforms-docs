@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/scheduler-mapping
 tags: scheduler,mapping
 published: True
 position: 11
+previous_url: scheduler-data-binding-scheduler-mapping
 ---
 
 # Scheduler Mapping

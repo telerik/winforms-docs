@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/data-binding-walkthrough
 tags: data,binding,walkthrough
 published: True
 position: 1
+previous_url: scheduler-data-binding-data-binding-walkthrough
 ---
 
 # Data Binding Walkthrough

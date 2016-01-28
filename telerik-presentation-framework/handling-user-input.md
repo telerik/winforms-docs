@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/handling-user-input
 tags: handling,user,input
 published: True
 position: 8
+previous_url: tpf-handling-user-input
 ---
 
 # Handling User Input

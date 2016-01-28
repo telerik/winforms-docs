@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/customizing-the-quick-access-toolbar
 tags: customizing,the,quick,access,toolbar
 published: True
 position: 10
+previous_url: ribbonbar-customizing-the-quick-access-toolbar
 ---
 
 # Customizing the Quick Access Toolbar

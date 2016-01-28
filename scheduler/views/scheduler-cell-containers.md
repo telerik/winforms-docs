@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/scheduler-cell-containers
 tags: scheduler,cell,containers
 published: True
 position: 12
+previous_url: scheduler-views-scheduler-cell-containers
 ---
 
 # Scheduler Cell Containers

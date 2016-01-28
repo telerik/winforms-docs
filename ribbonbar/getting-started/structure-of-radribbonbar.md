@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/structure-of-radribbonbar
 tags: structure,of,radribbonbar
 published: True
 position: 1
+previous_url: ribbonbar-structure-of-radribbonbar
 ---
 
 # Structure of RadRibbonBar

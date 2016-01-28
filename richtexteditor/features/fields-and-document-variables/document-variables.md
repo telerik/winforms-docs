@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/fields-and-document-variables/document-v
 tags: document,variables
 published: True
 position: 1
+previous_url: richtexteditor-features-fields-and-document-variables-document-variables
 ---
 
 # Document Variables

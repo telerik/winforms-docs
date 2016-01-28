@@ -6,6 +6,7 @@ slug: winforms/scheduler/fundamentals/scheduler-element-provider-
 tags: scheduler,element,provider,
 published: True
 position: 0
+previous_url: scheduler-fundamentals-scheduler-element-provider
 ---
 
 # Scheduler Element Provider 

@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/programming-radribbonbar/adding-and-removing-groups-and
 tags: adding,and,removing,groups,and,buttons
 published: True
 position: 1
+previous_url: ribbonbar-programming-radribbonbar-adding-and-removing-groups-and-buttons
 ---
 
 # Adding and Removing Groups and Buttons

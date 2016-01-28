@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/working-with-resources
 tags: working,with,resources
 published: True
 position: 8
+previous_url: scheduler-data-binding-working-with-resources
 ---
 
 # Working with Resources

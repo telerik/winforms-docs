@@ -6,6 +6,7 @@ slug: winforms/telerik-cab-enabling-kit/telerik-cab-enabling-kit/cab-application
 tags: cab,application,classes
 published: True
 position: 3
+previous_url: telerik-cab-enabling-kit-telerik-cab-enabling-kit-cab-application-classes
 ---
 
 # CAB Application Classes

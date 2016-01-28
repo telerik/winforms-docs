@@ -6,6 +6,7 @@ slug: winforms/scheduler/appointments-and-dialogs/adding-tooltips-to-appointment
 tags: adding,tooltips,to,appointments
 published: True
 position: 5
+previous_url: scheduler-appointments-and-dialogs-adding-tooltips-to-appointments
 ---
 
 # Adding Tooltips to Appointments

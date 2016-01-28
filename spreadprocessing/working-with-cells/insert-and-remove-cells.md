@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-cells/insert-and-remove-cells
 tags: insert,and,remove,cells
 published: True
 position: 1
+previous_url: spreadprocessing-working-with-cells-insert-remove-cells
 ---
 
 # Insert and Remove Cells

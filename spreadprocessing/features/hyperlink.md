@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/hyperlink
 tags: hyperlink
 published: True
 position: 8
+previous_url: spreadprocessing-features-hyperlink
 ---
 
 # Hyperlink

@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui
 tags: ribbon,ui
 published: True
 position: 0
+previous_url: richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui
 ---
 
 # Ribbon UI

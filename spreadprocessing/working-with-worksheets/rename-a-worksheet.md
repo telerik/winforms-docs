@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-worksheets/rename-a-worksheet
 tags: rename,a,worksheet
 published: True
 position: 3
+previous_url: spreadprocessing-working-with-worksheets-rename-worksheet
 ---
 
 # Rename a Worksheet

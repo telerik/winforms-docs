@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/class-hierarchy/class-hierarchy-ov
 tags: class,hierarchy,overview
 published: True
 position: 0
+previous_url: tpf-class-hierarchy-overview
 ---
 
 # Class Hierarchy Overview

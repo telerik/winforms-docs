@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/search
 tags: search
 published: True
 position: 4
+previous_url: richtextbox-features-search
 ---
 
 # Search

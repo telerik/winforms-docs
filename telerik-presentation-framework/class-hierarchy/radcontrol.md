@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/class-hierarchy/radcontrol
 tags: radcontrol
 published: True
 position: 11
+previous_url: tpf-class-hierarchy-radcontrol
 ---
 
 # RadControl

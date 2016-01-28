@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/bookmarks
 tags: bookmarks
 published: True
 position: 10
+previous_url: richtexteditor-features-bookmarks
 ---
 
 # Bookmarks

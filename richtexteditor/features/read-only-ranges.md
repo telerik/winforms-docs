@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/read-only-ranges
 tags: read,only,ranges
 published: True
 position: 15
+previous_url: richtexteditor-features-read-only-ranges
 ---
 
 # Read Only Ranges

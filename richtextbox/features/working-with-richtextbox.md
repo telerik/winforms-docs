@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/working-with-richtextbox
 tags: working,with,richtextbox
 published: True
 position: 0
+previous_url: richtextbox-features-working-with-richtextbox
 ---
 
 # Working with RichTextBox

@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/using-a-data-provider
 tags: using,a,data,provider
 published: True
 position: 4
+previous_url: scheduler-data-binding-using-a-data-provider
 ---
 
 # Using a Data Provider

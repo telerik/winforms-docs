@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/document-elements/paragraph
 tags: paragraph
 published: True
 position: 3
+previous_url: richtextbox-features-document-elements-paragraph
 ---
 
 # Paragraph

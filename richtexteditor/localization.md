@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/localization
 tags: localization
 published: True
 position: 12
+previous_url: richtexteditor-localization
 ---
 
 # Localization

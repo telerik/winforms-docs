@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/document-elements/inlineimage
 tags: inlineimage
 published: True
 position: 6
+previous_url: richtextbox-features-document-elements-inlineimage
 ---
 
 # InlineImage

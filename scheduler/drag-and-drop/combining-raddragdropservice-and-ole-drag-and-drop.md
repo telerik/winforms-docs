@@ -6,6 +6,7 @@ slug: winforms/scheduler/drag-and-drop/combining-raddragdropservice-and-ole-drag
 tags: combining,raddragdropservice,and,ole,drag-and-drop
 published: True
 position: 2
+previous_url: scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop
 ---
 
 # Combining RadDragDropService and OLE drag-and-drop

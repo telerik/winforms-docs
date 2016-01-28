@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/adding-other-controls-to-the-ribbonbar
 tags: adding,other,controls,to,the,ribbonbar
 published: True
 position: 7
+previous_url: ribbonbar-adding-other-controls-to-the-ribbonbar
 ---
 
 # Adding Other Controls to the RibbonBar

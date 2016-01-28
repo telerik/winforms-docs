@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/using-datasource-property
 tags: using,datasource,property
 published: True
 position: 3
+previous_url: scheduler-data-binding-using-datasource-property
 ---
 
 # Using DataSource property

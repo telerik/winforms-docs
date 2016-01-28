@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/exact-time-rendering
 tags: exact,time,rendering
 published: True
 position: 13
+previous_url: scheduler-views-exact-time-rendering
 ---
 
 # Exact time rendering

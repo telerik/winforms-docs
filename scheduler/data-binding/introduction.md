@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/introduction
 tags: introduction
 published: True
 position: 0
+previous_url: scheduler-data-binding-introduction
 ---
 
 # Introduction

@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/protection/workbook-protection
 tags: workbook,protection
 published: True
 position: 0
+previous_url: spreadprocessing-features-protection-workbook
 ---
 
 # Workbook Protection

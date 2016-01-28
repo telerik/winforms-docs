@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/fill-data-automatically/series
 tags: series
 published: True
 position: 1
+previous_url: spreadprocessing-features-fill-data-automatically-series
 ---
 
 # Series

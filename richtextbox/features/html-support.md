@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/html-support
 tags: html,support
 published: True
 position: 11
+previous_url: richtextbox-features-html-support
 ---
 
 # HTML Support

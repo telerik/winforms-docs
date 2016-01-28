@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/names-(named-ranges)
 tags: names,(named,ranges)
 published: True
 position: 10
+previous_url: spreadprocessing-features-named-ranges
 ---
 
 # Names (Named Ranges)

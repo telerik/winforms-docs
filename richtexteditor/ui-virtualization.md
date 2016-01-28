@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/ui-virtualization
 tags: ui,virtualization
 published: True
 position: 11
+previous_url: richtexteditor-ui-virtualization
 ---
 
 # UI Virtualization

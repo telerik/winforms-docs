@@ -6,6 +6,7 @@ slug: winforms/spellchecker/spellchecking-modes
 tags: spellchecking,modes
 published: True
 position: 2
+previous_url: spellchecker-spellchecking-modes
 ---
 
 # SpellChecking Modes

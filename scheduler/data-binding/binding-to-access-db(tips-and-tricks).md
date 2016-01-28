@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/binding-to-access-db(tips-and-tricks)
 tags: binding,to,access,db(tips,and,tricks)
 published: True
 position: 7
+previous_url: scheduler-data-binding-binding-to-access-db-(tips-and-tricks)
 ---
 
 # Binding to Access DB(Tips and Tricks)

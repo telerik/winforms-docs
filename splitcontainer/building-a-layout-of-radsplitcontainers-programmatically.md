@@ -6,6 +6,7 @@ slug: winforms/splitcontainer/building-a-layout-of-radsplitcontainers-programmat
 tags: building,a,layout,of,radsplitcontainers,programmatically
 published: True
 position: 2
+previous_url: splitcontainer-building-a-layout-of-radsplitcontainers-programmatically
 ---
 
 # Building a layout of RadSplitContainers programmatically

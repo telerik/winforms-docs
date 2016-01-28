@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/keyboard-support
 tags: keyboard,support
 published: True
 position: 13
+previous_url: richtextbox-features-keyboard-support
 ---
 
 # Keyboard support

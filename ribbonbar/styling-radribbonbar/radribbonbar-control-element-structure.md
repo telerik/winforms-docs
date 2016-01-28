@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/styling-radribbonbar/radribbonbar-control-element-struc
 tags: radribbonbar,control,element,structure
 published: True
 position: 0
+previous_url: ribbonbar-styling-radribbonbar-radribbonbar-control-element-structure
 ---
 
 # RadRibbonBar Control Element Structure

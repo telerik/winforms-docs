@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/document-elements/annotations/custom-annotations
 tags: custom,annotations
 published: True
 position: 2
+previous_url: richtexteditor-document-elements-annotations-custom-annotations
 ---
 
 # Custom Annotations

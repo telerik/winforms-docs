@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/styles/list-styles
 tags: list,styles
 published: True
 position: 1
+previous_url: richtexteditor-features-styles-list-styles
 ---
 
 # List Styles

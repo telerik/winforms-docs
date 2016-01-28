@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/binding-to-custom-fields
 tags: binding,to,custom,fields
 published: True
 position: 6
+previous_url: scheduler-data-binding-binding-to-custom-fields
 ---
 
 # Binding to Custom Fields

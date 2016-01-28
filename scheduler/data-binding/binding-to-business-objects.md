@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/binding-to-business-objects
 tags: binding,to,business,objects
 published: True
 position: 5
+previous_url: scheduler-data-binding-binding-to-business-objects
 ---
 
 # Binding to Business Objects

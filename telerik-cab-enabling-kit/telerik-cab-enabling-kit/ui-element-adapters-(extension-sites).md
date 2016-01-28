@@ -6,6 +6,7 @@ slug: winforms/telerik-cab-enabling-kit/telerik-cab-enabling-kit/ui-element-adap
 tags: ui,element,adapters,(extension,sites)
 published: True
 position: 2
+previous_url: telerik-cab-enabling-kit-telerik-cab-enabling-kit-ui-element-adapters-(extension-sites)
 ---
 
 # UI Element Adapters (Extension Sites)

@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/using-large-and-small-images
 tags: using,large,and,small,images
 published: True
 position: 14
+previous_url: ribbonbar-using-large-and-small-images
 ---
 
 # Using Large and Small Images

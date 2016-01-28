@@ -6,6 +6,7 @@ slug: winforms/rotator/tutorial:-creating-a-slide-viewer-with-radrotator
 tags: tutorial,creating,a,slide,viewer,with,radrotator
 published: True
 position: 3
+previous_url: rotator-tutorial-creating-a-slide-viewer-with-radrotator
 ---
 
 # Tutorial: Creating a Slide Viewer with RadRotator

@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/formats-and-conversion/csv
 tags: csv
 published: True
 position: 0
+previous_url: spreadprocessing-formats-and-conversion-csv
 ---
 
 # Csv

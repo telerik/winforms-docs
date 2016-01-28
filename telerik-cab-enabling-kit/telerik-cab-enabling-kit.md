@@ -6,6 +6,7 @@ slug: winforms/telerik-cab-enabling-kit
 tags: telerik,cab,enabling,kit
 published: True
 position: 0
+previous_url: telerik-cab-enabling-kit-overview
 ---
 
 # Telerik CAB Enabling Kit

@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/formats-and-conversion/format-providers-manager
 tags: format,providers,manager
 published: True
 position: 1
+previous_url: spreadprocessing-formats-and-conversion-import-export-format-providers-manager
 ---
 
 # Format Providers Manager

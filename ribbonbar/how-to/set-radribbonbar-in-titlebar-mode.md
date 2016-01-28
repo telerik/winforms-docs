@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/how-to/set-radribbonbar-in-titlebar-mode
 tags: set,radribbonbar,in,titlebar,mode
 published: True
 position: 0
+previous_url: ribbonbar-how-to-set-radribbonbar-in-titlebar-mode
 ---
 
 # Set RadRibbonBar in titlebar mode

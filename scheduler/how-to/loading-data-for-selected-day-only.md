@@ -6,6 +6,7 @@ slug: winforms/scheduler/how-to/loading-data-for-selected-day-only
 tags: loading,data,for,selected,day,only
 published: True
 position: 0
+previous_url: scheduler-how-to-loading-data-for-selected-day-only
 ---
 
 # Loading Data for Selected Day Only

@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/mail-merge
 tags: mail,merge
 published: True
 position: 13
+previous_url: richtexteditor-features-mail-merge
 ---
 
 # Mail Merge

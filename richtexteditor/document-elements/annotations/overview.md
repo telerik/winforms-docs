@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/document-elements/annotations
 tags: annotations
 published: True
 position: 0
+previous_url: richtexteditor-document-elements-annotations
 ---
 
 # Annotations

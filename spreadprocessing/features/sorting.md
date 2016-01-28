@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/sorting
 tags: sorting
 published: True
 position: 17
+previous_url: spreadprocessing-features-sorting
 ---
 
 # Sorting

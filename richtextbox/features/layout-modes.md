@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/layout-modes
 tags: layout,modes
 published: True
 position: 2
+previous_url: richtextbox-features-layout-modes
 ---
 
 # Layout modes

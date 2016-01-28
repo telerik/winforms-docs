@@ -6,6 +6,7 @@ slug: winforms/scheduler/print-support/schedulerprintstyles
 tags: schedulerprintstyles
 published: True
 position: 1
+previous_url: scheduler-print-support-schedulerprintstyle
 ---
 
 # SchedulerPrintStyles

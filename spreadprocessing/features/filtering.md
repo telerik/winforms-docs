@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/filtering
 tags: filtering
 published: True
 position: 15
+previous_url: spreadprocessing-features-filtering
 ---
 
 # Filtering

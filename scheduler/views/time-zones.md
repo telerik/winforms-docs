@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/time-zones
 tags: time,zones
 published: True
 position: 11
+previous_url: scheduler-views-time-zones
 ---
 
 # Time Zones

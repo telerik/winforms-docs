@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/formats-and-conversion/csv/using-csvformatprovid
 tags: using,csvformatprovider
 published: True
 position: 1
+previous_url: spreadprocessing-formats-and-conversion-csv-csvformatprovider
 ---
 
 # Using CsvFormatProvider

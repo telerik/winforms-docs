@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/history
 tags: history
 published: True
 position: 6
+previous_url: richtextbox-features-history
 ---
 
 # History

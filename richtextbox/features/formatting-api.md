@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/formatting-api
 tags: formatting,api
 published: True
 position: 8
+previous_url: richtextbox-features-formatting-api
 ---
 
 # Formatting API

@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/document-protection
 tags: document,protection
 published: True
 position: 14
+previous_url: richtexteditor-features-document-protection
 ---
 
 # Document Protection

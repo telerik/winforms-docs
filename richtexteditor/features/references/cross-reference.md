@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/references/cross-reference
 tags: cross,reference
 published: True
 position: 2
+previous_url: richtexteditor-features-references-cross-reference
 ---
 
 # Cross Reference

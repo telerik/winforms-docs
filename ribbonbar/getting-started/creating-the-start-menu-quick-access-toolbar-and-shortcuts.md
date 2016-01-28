@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/creating-the-start-menu,-quick-access-t
 tags: creating,the,start,menu,,quick,access,toolbar,,and,shortcuts
 published: True
 position: 3
+previous_url: ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts
 ---
 
 # Creating the Start Menu, Quick Access Toolbar, and Shortcuts

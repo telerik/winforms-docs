@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/getting-started/formatting-api
 tags: formatting,api
 published: True
 position: 2
+previous_url: richtexteditor-getting-started-formatting-api
 ---
 
 # Formatting API

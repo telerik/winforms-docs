@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/customizing-the-start-menu
 tags: customizing,the,start,menu
 published: True
 position: 9
+previous_url: ribbonbar-customizing-the-start-menu
 ---
 
 # Customizing the Start Menu

@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/formulas/cell-references
 tags: cell,references
 published: True
 position: 2
+previous_url: spreadprocessing-features-formulas-cell-references
 ---
 
 # Cell References

@@ -6,6 +6,7 @@ slug: winforms/scheduler/drag-and-drop/drag-and-drop-from-another-control
 tags: drag,and,drop,from,another,control
 published: True
 position: 0
+previous_url: scheduler-drag-and-drop-drag-and-drop-from-another-control
 ---
 
 # Drag and Drop from Another Control

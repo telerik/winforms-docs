@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/class-hierarchy/visualelement
 tags: visualelement
 published: True
 position: 6
+previous_url: tpf-class-hierarchy-visualelement
 ---
 
 # VisualElement

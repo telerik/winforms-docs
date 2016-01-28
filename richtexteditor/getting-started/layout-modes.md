@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/getting-started/layout-modes
 tags: layout,modes
 published: True
 position: 1
+previous_url: richtexteditor-getting-started-layout-modes
 ---
 
 # Layout Modes

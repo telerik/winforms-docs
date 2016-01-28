@@ -6,6 +6,7 @@ slug: winforms/telerik-cab-enabling-kit/what-is-in-the-package
 tags: what,is,in,the,package
 published: True
 position: 2
+previous_url: telerik-cab-enabling-kit-what-is-in-the-package
 ---
 
 # What is in the package

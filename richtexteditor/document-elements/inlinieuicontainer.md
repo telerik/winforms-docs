@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/document-elements/inlinieuicontainer
 tags: inlinieuicontainer
 published: True
 position: 6
+previous_url: richtexteditor-document-elements-inlineuicontainer
 ---
 
 # InlinieUIContainer

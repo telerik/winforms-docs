@@ -6,6 +6,7 @@ slug: winforms/scheduler/reminders/radschedulerreminder
 tags: radschedulerreminder
 published: True
 position: 1
+previous_url: scheduler-reminders-radschedulerreminder
 ---
 
 # RadSchedulerReminder

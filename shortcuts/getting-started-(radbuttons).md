@@ -6,6 +6,7 @@ slug: winforms/shortcuts/getting-started-(radbuttons)
 tags: getting,started,(radbuttons)
 published: True
 position: 2
+previous_url: shortcuts-getting-started-(radbuttons)
 ---
 
 # Getting Started (RadButtons)

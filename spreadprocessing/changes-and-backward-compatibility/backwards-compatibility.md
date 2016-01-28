@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/changes-and-backward-compatibility/backwards-com
 tags: backwards,compatibility
 published: True
 position: 1
+previous_url: spreadprocessing-backwards-compatibility
 ---
 
 # Backwards Compatibility

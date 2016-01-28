@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/printing
 tags: printing
 published: True
 position: 8
+previous_url: richtexteditor-printing
 ---
 
 # Printing

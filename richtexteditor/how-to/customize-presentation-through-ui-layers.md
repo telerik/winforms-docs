@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/how-to/customize-presentation-through-ui-layers
 tags: customize,presentation,through,ui,layers
 published: True
 position: 0
+previous_url: richtexteditor-how-to-customize-presentation-trought-ui-layers
 ---
 
 # Customize Presentation through UI Layers

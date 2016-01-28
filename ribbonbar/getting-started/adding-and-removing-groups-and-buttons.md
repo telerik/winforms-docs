@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/adding-and-removing-groups-and-buttons
 tags: adding,and,removing,groups,and,buttons
 published: True
 position: 5
+previous_url: ribbonbar-adding-and-removing-groups-and-buttons
 ---
 
 # Adding and Removing Groups and Buttons

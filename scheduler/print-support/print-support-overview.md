@@ -6,6 +6,7 @@ slug: winforms/scheduler/print-support
 tags: print,support
 published: True
 position: 0
+previous_url: scheduler-print-support
 ---
 
 # Print Support

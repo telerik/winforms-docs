@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/formats-and-conversion/txt/settings
 tags: settings
 published: True
 position: 1
+previous_url: spreadprocessing-formats-and-conversion-txt-settings
 ---
 
 # Settings

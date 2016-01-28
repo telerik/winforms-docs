@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/events/clr-events
 tags: clr,events
 published: True
 position: 0
+previous_url: tpf-events-clr-events
 ---
 
 # CLR Events

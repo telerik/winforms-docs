@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/radmarkupdialog
 tags: radmarkupdialog
 published: True
 position: 10
+previous_url: tpf-radmarkupdialog
 ---
 
 # RadMarkupDialog

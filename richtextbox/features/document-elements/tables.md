@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/document-elements/tables
 tags: tables
 published: True
 position: 7
+previous_url: richtextbox-features-document-elements-tables
 ---
 
 # Tables

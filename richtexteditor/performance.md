@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/performance
 tags: performance
 published: True
 position: 15
+previous_url: richtexteditor-performance
 ---
 
 # Performance

@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/context-menu
 tags: context,menu
 published: True
 position: 2
+previous_url: richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-context-menu
 ---
 
 # Context Menu

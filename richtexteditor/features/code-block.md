@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/code-block
 tags: code,block
 published: True
 position: 20
+previous_url: richtexteditor-features-code-block
 ---
 
 # Code Block

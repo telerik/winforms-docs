@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/programming-radribbonbar/adding-and-customizing-element
 tags: adding,and,customizing,elements
 published: True
 position: 2
+previous_url: ribbonbar-programming-radribbonbar-adding-and-customizing-elements
 ---
 
 # Adding and Customizing Elements

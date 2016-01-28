@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/elements/radradiobuttonelement
 tags: radradiobuttonelement
 published: True
 position: 1
+previous_url: tpf-elements-radradiobutton
 ---
 
 # RadRadioButtonElement

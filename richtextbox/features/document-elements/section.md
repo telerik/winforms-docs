@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/document-elements/section
 tags: section
 published: True
 position: 2
+previous_url: richtextbox-features-document-elements-section
 ---
 
 # Section

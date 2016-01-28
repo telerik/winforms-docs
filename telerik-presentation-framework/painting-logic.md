@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/painting-logic
 tags: painting,logic
 published: False
 position: 16
+previous_url: 
 ---
 
 # Painting Logic

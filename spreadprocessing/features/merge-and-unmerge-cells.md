@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/merge-and-unmerge-cells
 tags: merge,and,unmerge,cells
 published: True
 position: 9
+previous_url: spreadprocessing-features-merge-unmerge-cells
 ---
 
 # Merge and Unmerge Cells

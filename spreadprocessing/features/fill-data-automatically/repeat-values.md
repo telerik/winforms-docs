@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/fill-data-automatically/repeat-values
 tags: repeat,values
 published: True
 position: 0
+previous_url: spreadprocessing-features-fill-data-automatically-repeat-values
 ---
 
 # Repeat Values

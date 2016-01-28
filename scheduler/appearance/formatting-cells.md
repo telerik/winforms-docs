@@ -6,6 +6,7 @@ slug: winforms/scheduler/appearance/formatting-cells
 tags: formatting,cells
 published: True
 position: 1
+previous_url: scheduler-appearance-formatting-cells
 ---
 
 # Formatting cells

@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/selection
 tags: selection
 published: True
 position: 3
+previous_url: richtextbox-features-selection
 ---
 
 # Selection

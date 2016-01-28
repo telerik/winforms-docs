@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/formulas/custom-functions
 tags: custom,functions
 published: True
 position: 5
+previous_url: spreadprocessing-features-formulas-custom-functions
 ---
 
 # Custom Functions

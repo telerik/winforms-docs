@@ -6,6 +6,7 @@ slug: winforms/richtexteditor/events
 tags: events
 published: True
 position: 13
+previous_url: richtexteditor-events
 ---
 
 # Events

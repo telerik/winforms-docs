@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/week-view
 tags: week,view
 published: True
 position: 6
+previous_url: scheduler-views-week-view
 ---
 
 # Week View

@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/search
 tags: search
 published: True
 position: 2
+previous_url: richtexteditor-features-search
 ---
 
 # Search

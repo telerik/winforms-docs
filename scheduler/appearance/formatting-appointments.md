@@ -6,6 +6,7 @@ slug: winforms/scheduler/appearance/formatting-appointments
 tags: formatting,appointments
 published: True
 position: 2
+previous_url: scheduler-appearance-formatting-appointments
 ---
 
 # Formatting appointments

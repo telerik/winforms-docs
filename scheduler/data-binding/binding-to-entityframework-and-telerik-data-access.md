@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/binding-to-entityframework-and-telerik-dat
 tags: binding,to,entityframework,and,telerik,data,access
 published: True
 position: 13
+previous_url: scheduler-data-binding-binding-to-entity-framework-and-telerik-data-access
 ---
 
 # Binding to EntityFramework and Telerik Data Access

@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/class-hierarchy/radpropertymetadat
 tags: radpropertymetadata
 published: True
 position: 3
+previous_url: tpf-class-hierarchy-radproperty-metadata
 ---
 
 # RadPropertyMetadata

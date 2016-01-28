@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/formulas/errors
 tags: errors
 published: True
 position: 4
+previous_url: spreadprocessing-features-formulas-errors
 ---
 
 # Errors

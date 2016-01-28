@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/positioning
 tags: positioning
 published: True
 position: 5
+previous_url: richtextbox-features-positioning
 ---
 
 # Positioning

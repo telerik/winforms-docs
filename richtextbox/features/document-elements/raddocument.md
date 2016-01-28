@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/document-elements/raddocument
 tags: raddocument
 published: True
 position: 1
+previous_url: richtextbox-features-document-elements-raddocument
 ---
 
 # RadDocument

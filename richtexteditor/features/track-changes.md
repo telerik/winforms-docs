@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/track-changes
 tags: track,changes
 published: True
 position: 16
+previous_url: richtexteditor-features-track-changes
 ---
 
 # Track Changes

@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-de
 tags: inherit,themes,from,radcontrols,derivatives
 published: True
 position: 17
+previous_url: tpf-inherit-themes-from-radcontrols-derivatives
 ---
 
 # Inherit themes from RadControls derivatives

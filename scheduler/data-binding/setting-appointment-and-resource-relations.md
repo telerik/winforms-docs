@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/setting-appointment-and-resource-relations
 tags: setting,appointment,and,resource,relations
 published: True
 position: 10
+previous_url: scheduler-data-binding-setting-appointment-and-resource-relations
 ---
 
 # Setting Appointment and Resource relations

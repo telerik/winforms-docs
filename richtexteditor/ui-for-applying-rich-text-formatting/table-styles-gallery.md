@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/table-styles
 tags: table,styles,gallery
 published: True
 position: 5
+previous_url: richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-table-style-gallery
 ---
 
 # Table Styles Gallery

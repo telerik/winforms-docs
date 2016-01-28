@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-rows-and-columns/insert-and-remove-
 tags: insert,and,remove,rows,and,columns
 published: True
 position: 1
+previous_url: spreadprocessing-working-with-rows-and-columns-insert-and-remove
 ---
 
 # Insert and Remove Rows and Columns

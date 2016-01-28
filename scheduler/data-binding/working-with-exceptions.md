@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/working-with-exceptions
 tags: working,with,exceptions
 published: True
 position: 9
+previous_url: scheduler-data-binding-working-with-exceptions
 ---
 
 # Working with Exceptions

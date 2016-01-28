@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/document-elements/span
 tags: span
 published: True
 position: 4
+previous_url: richtextbox-features-document-elements-span
 ---
 
 # Span

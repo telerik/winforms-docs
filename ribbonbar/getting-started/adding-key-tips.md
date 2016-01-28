@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/adding-key-tips
 tags: adding,key,tips
 published: True
 position: 13
+previous_url: ribbonbar-adding-key-tips
 ---
 
 # Adding Key Tips

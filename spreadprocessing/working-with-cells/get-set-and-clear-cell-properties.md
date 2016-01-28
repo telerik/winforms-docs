@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-cells/get-set-and-clear-cell-proper
 tags: get,,set,and,clear,cell,properties
 published: True
 position: 3
+previous_url: spreadprocessing-working-with-cells-get-set-clear-properties
 ---
 
 # Get, Set and Clear Cell Properties

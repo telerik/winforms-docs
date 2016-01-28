@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/keyboard-support
 tags: keyboard,support
 published: True
 position: 10
+previous_url: richtexteditor-keyboard-support
 ---
 
 # Keyboard Support

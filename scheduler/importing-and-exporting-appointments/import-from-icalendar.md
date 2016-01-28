@@ -6,6 +6,7 @@ slug: winforms/scheduler/importing-and-exporting-appointments/import-from-icalen
 tags: import,from,icalendar
 published: True
 position: 0
+previous_url: scheduler-importing-and-exporting-appointments-import-from-icalendar
 ---
 
 # Import from ICalendar

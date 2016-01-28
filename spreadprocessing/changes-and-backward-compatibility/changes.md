@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/changes-and-backward-compatibility/changes
 tags: changes
 published: True
 position: 0
+previous_url: spreadprocessing-changes
 ---
 
 # Changes

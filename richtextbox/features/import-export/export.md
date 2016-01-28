@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/import/export/import/export
 tags: import/export
 published: True
 position: 0
+previous_url: richtextbox-features-import-export-import-export
 ---
 
 # Import/Export

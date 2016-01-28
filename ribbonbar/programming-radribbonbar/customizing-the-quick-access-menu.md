@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/programming-radribbonbar/customizing-the-quick-access-m
 tags: customizing,the,quick,access,menu
 published: True
 position: 5
+previous_url: ribbonbar-programming-radribbonbar-customizing-the-quick-access-menu
 ---
 
 # Customizing the Quick Access Menu

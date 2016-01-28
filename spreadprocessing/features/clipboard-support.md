@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/clipboard-support
 tags: clipboard,support
 published: True
 position: 4
+previous_url: spreadprocessing-features-clipboard-support
 ---
 
 # Clipboard Support

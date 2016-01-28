@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/protection/worksheet-protection
 tags: worksheet,protection
 published: True
 position: 1
+previous_url: spreadprocessing-features-protection-worksheet
 ---
 
 # Worksheet Protection

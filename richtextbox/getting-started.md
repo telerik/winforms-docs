@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/getting-started
 tags: getting,started
 published: True
 position: 2
+previous_url: richtextbox-getting-started
 ---
 
 # Getting started

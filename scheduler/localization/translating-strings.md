@@ -6,6 +6,7 @@ slug: winforms/scheduler/localization/translating-strings
 tags: translating,strings
 published: True
 position: 0
+previous_url: scheduler-localization-translating-strings
 ---
 
 # Translating Strings

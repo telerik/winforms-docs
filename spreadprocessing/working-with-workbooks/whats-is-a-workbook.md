@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-workbooks/whats-is-a-workbook?
 tags: whats,is,a,workbook?
 published: True
 position: 0
+previous_url: spreadprocessing-working-with-workbooks-what-is-workbook
 ---
 
 # Whats is a Workbook?

@@ -6,6 +6,7 @@ slug: winforms/telerik-cab-enabling-kit/getting-started/starting-the-sample-appl
 tags: starting,the,sample,application
 published: True
 position: 1
+previous_url: telerik-cab-enabling-kit-starting-the-sample-application
 ---
 
 # Starting the Sample application

@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/commnets
 tags: commnets
 published: True
 position: 11
+previous_url: richtexteditor-features-comments
 ---
 
 # Commnets

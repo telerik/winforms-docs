@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/getting-started/use-as-rich-content-viewer
 tags: use,as,rich,content,viewer
 published: True
 position: 3
+previous_url: richtexteditor-getting-started-use-as-rich-content-viewer
 ---
 
 # Use as Rich Content Viewer

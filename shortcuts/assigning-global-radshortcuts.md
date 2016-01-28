@@ -6,6 +6,7 @@ slug: winforms/shortcuts/assigning-global-radshortcuts
 tags: assigning,global,radshortcuts
 published: True
 position: 3
+previous_url: shortcuts-assigning-global-radshortcuts
 ---
 
 # Assigning Global RadShortcuts

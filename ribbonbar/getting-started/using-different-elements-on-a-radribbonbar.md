@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/using-different-elements-on-a-radribbon
 tags: using,different,elements,on,a,radribbonbar
 published: True
 position: 6
+previous_url: ribbonbar-using-different-elements-on-a-radribbonbar
 ---
 
 # Using Different Elements on a RadRibbonBar

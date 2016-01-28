@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/override-theme-settings-at-run-tim
 tags: override,theme,settings,at,run,time
 published: True
 position: 18
+previous_url: tpf-override-theme-settings-at-run-time
 ---
 
 # Override Theme Settings at Run Time

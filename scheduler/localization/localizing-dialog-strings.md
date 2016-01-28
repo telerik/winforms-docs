@@ -6,6 +6,7 @@ slug: winforms/scheduler/localization/localizing-dialog-strings
 tags: localizing,dialog,strings
 published: True
 position: 2
+previous_url: scheduler-localization-localizing-dialog-strings
 ---
 
 # Localizing Dialog Strings

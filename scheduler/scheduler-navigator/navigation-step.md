@@ -6,6 +6,7 @@ slug: winforms/scheduler/scheduler-navigator/navigation-step
 tags: navigation,step
 published: True
 position: 2
+previous_url: scheduler-scheduler-navigator-navigation-step
 ---
 
 # Navigation Step

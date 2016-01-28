@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/document-elements/paragraph
 tags: paragraph
 published: True
 position: 2
+previous_url: richtexteditor-document-elements-paragraph
 ---
 
 # Paragraph

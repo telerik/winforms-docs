@@ -6,6 +6,7 @@ slug: winforms/scheduler/appearance/modify-size-of-rows,-columns-and-resources
 tags: modify,size,of,rows,,columns,and,resources
 published: True
 position: 3
+previous_url: scheduler-appearance-modify-size-of-rows-columns-and-resources
 ---
 
 # Modify Size of Rows, Columns and Resources

@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-rows-and-columns/resizing-rows-and-
 tags: resizing,rows,and,columns
 published: True
 position: 2
+previous_url: spreadprocessing-working-with-rows-and-columns-resizing
 ---
 
 # Resizing Rows and Columns

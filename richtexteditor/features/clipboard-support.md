@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/clipboard-support
 tags: clipboard,support
 published: True
 position: 5
+previous_url: richtexteditor-features-clipboard-support
 ---
 
 # Clipboard Support

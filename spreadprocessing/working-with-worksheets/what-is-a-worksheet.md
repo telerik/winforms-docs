@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-worksheets/what-is-a-worksheet?
 tags: what,is,a,worksheet?
 published: True
 position: 0
+previous_url: spreadprocessing-working-with-worksheets-what-is-worksheet
 ---
 
 # What is a Worksheet?

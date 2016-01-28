@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/commands
 tags: commands
 published: True
 position: 6
+previous_url: richtexteditor-features-commands
 ---
 
 # Commands

@@ -6,6 +6,7 @@ slug: winforms/scheduler/importing-and-exporting-appointments/import/export-to-a
 tags: import/export,to,a,custom,file
 published: True
 position: 2
+previous_url: scheduler-importing-and-exporting-appointments-import-export-to-a-custom-file
 ---
 
 # Import/Export to a Custom File

@@ -6,6 +6,7 @@ slug: winforms/scheduler/end-user-functionality/scheduler-navigation
 tags: scheduler,navigation
 published: True
 position: 0
+previous_url: scheduler-end-user-functionality-scheduler-navigation
 ---
 
 # Scheduler Navigation

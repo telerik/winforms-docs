@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/document-elements/table
 tags: table
 published: True
 position: 5
+previous_url: richtexteditor-document-elements-table
 ---
 
 # Table

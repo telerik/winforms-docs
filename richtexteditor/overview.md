@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-
 tags: richtexteditor,
 published: True
 position: 0
+previous_url: richtexteditor
 ---
 
 # RichTextEditor 

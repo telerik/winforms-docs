@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/radtooltip
 tags: radtooltip
 published: True
 position: 15
+previous_url: tpf-radtooltip
 ---
 
 # RadToolTip

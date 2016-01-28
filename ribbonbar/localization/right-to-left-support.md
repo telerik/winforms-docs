@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/localization/right-to-left-support
 tags: right-to-left,support
 published: True
 position: 1
+previous_url: ribbonbar-localization-rtl
 ---
 
 # Right-to-left support

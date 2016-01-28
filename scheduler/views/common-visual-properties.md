@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/common-visual-properties
 tags: common,visual,properties
 published: True
 position: 1
+previous_url: scheduler-views-common-visual-properties
 ---
 
 # Common visual properties

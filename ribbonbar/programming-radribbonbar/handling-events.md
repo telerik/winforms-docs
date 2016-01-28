@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/programming-radribbonbar/handling-events
 tags: handling,events
 published: True
 position: 6
+previous_url: ribbonbar-programming-radribbonbar-handling-events
 ---
 
 # Handling Events

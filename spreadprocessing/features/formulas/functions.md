@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/formulas/functions
 tags: functions
 published: True
 position: 3
+previous_url: spreadprocessing-features-formulas-functions
 ---
 
 # Functions

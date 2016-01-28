@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/adding-and-removing-tabs-and-ribbonbar-
 tags: adding,and,removing,tabs,and,ribbonbar,groups
 published: True
 position: 4
+previous_url: ribbonbar-adding-and-removing-tabs-and-ribbobbar-groups
 ---
 
 # Adding and Removing Tabs and RibbonBar Groups

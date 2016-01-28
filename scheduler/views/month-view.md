@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/month-view
 tags: month,view
 published: True
 position: 8
+previous_url: scheduler-views-month-view
 ---
 
 # Month View

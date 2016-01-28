@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/formats-and-conversion/txt/using-txtformatprovid
 tags: using,txtformatprovider
 published: True
 position: 0
+previous_url: spreadprocessing-formats-and-conversion-txt-txtformatprovider
 ---
 
 # Using TxtFormatProvider

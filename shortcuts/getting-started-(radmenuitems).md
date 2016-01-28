@@ -6,6 +6,7 @@ slug: winforms/shortcuts/getting-started-(radmenuitems)
 tags: getting,started,(radmenuitems)
 published: True
 position: 1
+previous_url: shortcuts-getting-started-(radmenuitems)
 ---
 
 # Getting Started (RadMenuItems)

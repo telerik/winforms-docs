@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/customizing-radribbonbar
 tags: customizing,radribbonbar
 published: True
 position: 2
+previous_url: ribbonbar-customizing-radribbonbar
 ---
 
 # Customizing RadRibbonBar

@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/adding-screen-tips
 tags: adding,screen,tips
 published: True
 position: 12
+previous_url: ribbonbar-adding-screen-tips
 ---
 
 # Adding Screen Tips

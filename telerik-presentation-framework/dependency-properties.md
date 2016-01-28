@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/dependency-properties
 tags: dependency,properties
 published: True
 position: 7
+previous_url: tpf-dependency-properties
 ---
 
 # Dependency Properties

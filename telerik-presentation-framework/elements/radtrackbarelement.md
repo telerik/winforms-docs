@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/elements/radtrackbarelement
 tags: radtrackbarelement
 published: True
 position: 2
+previous_url: tpf-elements-radtrackbar
 ---
 
 # RadTrackBarElement

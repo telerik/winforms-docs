@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/multiday-view
 tags: multiday,view
 published: True
 position: 5
+previous_url: scheduler-views-multiday-view
 ---
 
 # MultiDay View

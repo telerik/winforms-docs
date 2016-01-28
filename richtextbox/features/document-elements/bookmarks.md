@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/document-elements/bookmarks
 tags: bookmarks
 published: True
 position: 8
+previous_url: richtextbox-features-document-elements-bookmarks
 ---
 
 # Bookmarks

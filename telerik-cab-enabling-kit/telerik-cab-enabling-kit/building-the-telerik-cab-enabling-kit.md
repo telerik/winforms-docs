@@ -6,6 +6,7 @@ slug: winforms/telerik-cab-enabling-kit/telerik-cab-enabling-kit/building-the-te
 tags: building,the,telerik,cab,enabling,kit
 published: True
 position: 0
+previous_url: telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit
 ---
 
 # Building the Telerik CAB Enabling Kit

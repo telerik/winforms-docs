@@ -6,6 +6,7 @@ slug: winforms/scheduler/appearance/themes-and-appearance
 tags: themes,and,appearance
 published: True
 position: 0
+previous_url: scheduler-appearance-themes-and-appearance
 ---
 
 # Themes and appearance

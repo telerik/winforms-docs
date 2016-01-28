@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-rows-and-columns/what-is-row-column
 tags: what,is,a,row,column?
 published: True
 position: 0
+previous_url: spreadprocessing-working-with-rows-and-columns-what-is-row-column
 ---
 
 # What is a Row? What is a Column?

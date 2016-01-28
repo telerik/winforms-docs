@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/creating-and-using-contextual-tab-group
 tags: creating,and,using,contextual,tab,groups
 published: True
 position: 8
+previous_url: ribbonbar-creating-and-using-contextual-tab-groups
 ---
 
 # Creating and Using Contextual Tab Groups

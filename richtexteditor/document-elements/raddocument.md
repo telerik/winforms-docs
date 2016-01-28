@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/document-elements/raddocument
 tags: raddocument
 published: True
 position: 1
+previous_url: richtexteditor-document-elements-raddocument
 ---
 
 # RadDocument

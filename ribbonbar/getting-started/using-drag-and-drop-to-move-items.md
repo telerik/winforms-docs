@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/using-drag-and-drop-to-move-items
 tags: using,drag,and,drop,to,move,items
 published: True
 position: 15
+previous_url: ribbonbar-using-drag-and-drop-to-move-items
 ---
 
 # Using Drag and Drop to Move Items

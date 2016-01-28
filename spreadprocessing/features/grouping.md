@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/grouping
 tags: grouping
 published: True
 position: 16
+previous_url: spreadprocessing-features-grouping
 ---
 
 # Grouping

@@ -6,6 +6,7 @@ slug: winforms/scheduler/end-user-functionality/editing-appointments-
 tags: editing,appointments,
 published: True
 position: 2
+previous_url: scheduler-end-user-functionality-editing-appointments
 ---
 
 # Editing Appointments 

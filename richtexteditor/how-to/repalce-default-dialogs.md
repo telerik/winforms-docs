@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/how-to/repalce-default-dialogs
 tags: repalce,default,dialogs
 published: True
 position: 2
+previous_url: richtexteditor-how-to-repalce-default-dialogs
 ---
 
 # Repalce Default Dialogs

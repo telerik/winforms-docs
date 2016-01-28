@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/localization/localization
 tags: localization
 published: True
 position: 0
+previous_url: ribbonbar-localization-localization
 ---
 
 # Localization

@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/positioning
 tags: positioning
 published: True
 position: 0
+previous_url: richtexteditor-features-positioning
 ---
 
 # Positioning

@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/codeless-data-binding
 tags: codeless,data,binding
 published: True
 position: 2
+previous_url: scheduler-data-binding-codeless-data-binding
 ---
 
 # Codeless data binding

@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/getting-started
 tags: getting,started
 published: True
 position: 0
+previous_url: richtexteditor-getting-started
 ---
 
 # Getting Started

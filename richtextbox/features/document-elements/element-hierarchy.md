@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/document-elements/element-hierarc
 tags: element,hierarchy
 published: True
 position: 0
+previous_url: richtextbox-features-document-elements-elements-hierarchy
 ---
 
 # Element Hierarchy

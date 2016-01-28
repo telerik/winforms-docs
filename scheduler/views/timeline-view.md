@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/timeline-view
 tags: timeline,view
 published: True
 position: 9
+previous_url: scheduler-views-timeline-view
 ---
 
 # Timeline View

@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/getting-started/getting-started
 tags: getting,started
 published: True
 position: 0
+previous_url: ribbonbar-getting-started
 ---
 
 # Getting Started

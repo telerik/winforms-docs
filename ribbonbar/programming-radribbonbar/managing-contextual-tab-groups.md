@@ -6,6 +6,7 @@ slug: winforms/ribbonbar/programming-radribbonbar/managing-contextual-tab-groups
 tags: managing,contextual,tab,groups
 published: True
 position: 3
+previous_url: ribbonbar-programming-radribbonbar-managing-contextual-tab-groups
 ---
 
 # Managing Contextual Tab Groups

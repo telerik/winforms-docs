@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/import/export/html-support
 tags: html,support
 published: True
 position: 2
+previous_url: richtexteditor-import-export-html-support
 ---
 
 # HTML support

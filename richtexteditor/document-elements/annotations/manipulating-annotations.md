@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/document-elements/annotations/manipulating-annota
 tags: manipulating,annotations
 published: True
 position: 1
+previous_url: richtexteditor-document-elements-annotations-manipulating-annotations
 ---
 
 # Manipulating Annotations

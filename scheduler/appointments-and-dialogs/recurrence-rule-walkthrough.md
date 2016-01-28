@@ -6,6 +6,7 @@ slug: winforms/scheduler/appointments-and-dialogs/recurrence-rule-walkthrough
 tags: recurrence,rule,walkthrough
 published: True
 position: 2
+previous_url: scheduler-appointments-and-dialogs-recurrence-rule-walkthrough
 ---
 
 # Recurrence Rule Walkthrough

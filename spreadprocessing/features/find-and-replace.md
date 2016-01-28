@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/find-and-replace
 tags: find,and,replace
 published: True
 position: 5
+previous_url: spreadprocessing-features-find-and-replace
 ---
 
 # Find and Replace

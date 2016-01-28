@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/class-hierarchy/layoutpanel
 tags: layoutpanel
 published: True
 position: 9
+previous_url: tpf-class-hierarchy-layoutpanel
 ---
 
 # LayoutPanel

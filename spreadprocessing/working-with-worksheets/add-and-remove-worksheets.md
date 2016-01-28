@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-worksheets/add-and-remove-worksheet
 tags: add,and,remove,worksheets
 published: True
 position: 1
+previous_url: spreadprocessing-working-with-worksheets-add-remove-worksheets
 ---
 
 # Add and Remove Worksheets

@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/f.a.q.
 tags: f.a.q.
 published: True
 position: 1
+previous_url: richtextbox-faq
 ---
 
 # F.A.Q.

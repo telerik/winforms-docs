@@ -6,6 +6,7 @@ slug: winforms/scheduler/scheduler-navigator/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: scheduler-scheduler-navigator-getting-started
 ---
 
 # Getting Started

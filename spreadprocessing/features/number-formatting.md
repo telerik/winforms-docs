@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/number-formatting
 tags: number,formatting
 published: True
 position: 12
+previous_url: spreadprocessing-features-number-formats
 ---
 
 # Number Formatting

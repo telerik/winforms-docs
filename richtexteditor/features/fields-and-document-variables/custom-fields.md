@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/fields-and-document-variables/custom-fie
 tags: custom,fields
 published: True
 position: 2
+previous_url: richtexteditor-features-fields-and-document-variables-custom-fields
 ---
 
 # Custom Fields

@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/document-elements/section
 tags: section
 published: True
 position: 1
+previous_url: richtexteditor-document-elements-section
 ---
 
 # Section

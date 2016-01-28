@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/references/bibliographic-references
 tags: bibliographic,references
 published: True
 position: 1
+previous_url: richtexteditor-features-references-biliographic-references
 ---
 
 # Bibliographic References

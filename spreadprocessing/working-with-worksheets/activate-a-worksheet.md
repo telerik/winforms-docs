@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-worksheets/activate-a-worksheet
 tags: activate,a,worksheet
 published: True
 position: 2
+previous_url: spreadprocessing-working-with-worksheets-activate-worksheet
 ---
 
 # Activate a Worksheet

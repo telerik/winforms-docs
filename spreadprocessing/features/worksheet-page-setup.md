@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/features/worksheet-page-setup
 tags: worksheet,page,setup
 published: True
 position: 14
+previous_url: spreadprocessing-features-worksheetpagesetup
 ---
 
 # Worksheet Page Setup

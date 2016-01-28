@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/document-elements
 tags: document,elements
 published: True
 position: 0
+previous_url: richtexteditor-document-elements
 ---
 
 # Document Elements

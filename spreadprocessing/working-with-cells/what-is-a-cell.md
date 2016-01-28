@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-cells/what-is-a-cell?
 tags: what,is,a,cell?
 published: True
 position: 0
+previous_url: spreadprocessing-working-with-cells-what-is-cell
 ---
 
 # What is a Cell?

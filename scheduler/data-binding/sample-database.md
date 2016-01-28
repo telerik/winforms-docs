@@ -6,6 +6,7 @@ slug: winforms/scheduler/data-binding/sample-database
 tags: sample,database
 published: True
 position: 12
+previous_url: scheduler-data-binding-sample-database
 ---
 
 # Sample Database

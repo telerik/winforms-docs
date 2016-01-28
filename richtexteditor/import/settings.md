@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/import/export/settings
 tags: settings
 published: True
 position: 1
+previous_url: richtexteditor-import-export-settings
 ---
 
 # Settings

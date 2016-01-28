@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/class-hierarchy/raditem
 tags: raditem
 published: True
 position: 10
+previous_url: tpf-class-hierarchy-raditem
 ---
 
 # RadItem

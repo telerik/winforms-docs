@@ -6,6 +6,7 @@ slug: winforms/splitcontainer/building-advanced-layouts
 tags: building,advanced,layouts
 published: True
 position: 3
+previous_url: splitcontainer-building-advanced-layouts
 ---
 
 # Building Advanced Layouts

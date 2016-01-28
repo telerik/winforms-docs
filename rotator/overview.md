@@ -6,6 +6,7 @@ slug: winforms/rotator
 tags: rotator
 published: True
 position: 0
+previous_url: rotator-overview
 ---
 
 # Rotator

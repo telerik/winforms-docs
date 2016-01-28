@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/read-only-radrichtextbox
 tags: read,only,radrichtextbox
 published: True
 position: 7
+previous_url: richtextbox-features-read-only-radrichtextbox
 ---
 
 # Read Only RadRichTextBox

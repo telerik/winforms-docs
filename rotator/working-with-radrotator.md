@@ -6,6 +6,7 @@ slug: winforms/rotator/working-with-radrotator
 tags: working,with,radrotator
 published: True
 position: 2
+previous_url: rotator-working-with-radrotator
 ---
 
 # Working with RadRotator

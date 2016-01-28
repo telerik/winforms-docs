@@ -6,6 +6,7 @@ slug: winforms/scheduler/end-user-functionality/copy/paste/cut
 tags: copy/paste/cut
 published: True
 position: 5
+previous_url: scheduler-end-user-functionality-copy-paste-cut
 ---
 
 # Copy/Paste/Cut

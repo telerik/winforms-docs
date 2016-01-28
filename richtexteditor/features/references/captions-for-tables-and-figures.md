@@ -6,6 +6,7 @@ slug: winforms/richtexteditor-/features/references/captions-for-tables-and-figur
 tags: captions,for,tables,and,figures
 published: True
 position: 3
+previous_url: richtexteditor-features-references-caption-for-tables-and-figures
 ---
 
 # Captions for tables and Figures

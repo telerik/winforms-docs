@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/formats-and-conversion/pdf/settings
 tags: settings
 published: True
 position: 3
+previous_url: spreadprocessing-format-and-conversion-pdf-settingsl
 ---
 
 # Settings

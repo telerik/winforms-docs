@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/animations
 tags: animations
 published: True
 position: 14
+previous_url: tpf-animations
 ---
 
 # Animations

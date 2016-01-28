@@ -6,6 +6,7 @@ slug: winforms/scheduler/print-support/events-and-customization
 tags: events,and,customization
 published: True
 position: 2
+previous_url: scheduler-print-support-events
 ---
 
 # Events and Customization

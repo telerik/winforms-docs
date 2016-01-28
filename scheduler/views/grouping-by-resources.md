@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/grouping-by-resources
 tags: grouping,by,resources
 published: True
 position: 10
+previous_url: scheduler-views-grouping-by-resources
 ---
 
 # Grouping by Resources

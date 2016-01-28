@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/overview-and-structure
 tags: overview,and,structure
 published: True
 position: 0
+previous_url: scheduler-views-overview-and-structure
 ---
 
 # Overview and Structure

@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-cells/accessing-cells-of-a-workshee
 tags: accessing,cells,of,a,worksheet
 published: True
 position: 2
+previous_url: spreadprocessing-working-with-cells-accessing-cells-of-worksheet
 ---
 
 # Accessing Cells of a Worksheet

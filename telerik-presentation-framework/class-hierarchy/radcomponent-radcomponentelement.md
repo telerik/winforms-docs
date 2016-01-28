@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/class-hierarchy/radcomponent,-radc
 tags: radcomponent,,radcomponentelement
 published: True
 position: 8
+previous_url: tpf-class-hierarchy-radcomponentelement
 ---
 
 # RadComponent, RadComponentElement

@@ -6,6 +6,7 @@ slug: winforms/scheduler/views/working-with-views
 tags: working,with,views
 published: True
 position: 2
+previous_url: scheduler-views-working-with-views
 ---
 
 # Working with Views

@@ -6,6 +6,7 @@ slug: winforms/scheduler/end-user-functionality/resizing,-moving,-and-deleting-a
 tags: resizing,,moving,,and,deleting,appointments
 published: True
 position: 3
+previous_url: scheduler-end-user-functionality-resizing-moving-and-deleting-appointments
 ---
 
 # Resizing, Moving, and Deleting Appointments

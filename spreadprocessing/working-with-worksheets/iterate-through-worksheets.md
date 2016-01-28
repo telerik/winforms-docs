@@ -6,6 +6,7 @@ slug: winforms/spreadprocessing/working-with-worksheets/iterate-through-workshee
 tags: iterate,through,worksheets
 published: True
 position: 4
+previous_url: spreadprocessing-working-with-worksheets-iterate-through-worksheets
 ---
 
 # Iterate Through Worksheets

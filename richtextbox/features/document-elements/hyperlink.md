@@ -6,6 +6,7 @@ slug: winforms/richtextbox-(obsolete)/features/document-elements/hyperlink
 tags: hyperlink
 published: True
 position: 5
+previous_url: richtextbox-features-document-elements-hyperlink
 ---
 
 # Hyperlink
