@@ -1,5 +1,5 @@
 ---
-title: PdfViewer
+title: Overview
 page_title: PdfViewer | UI for WinForms Documentation
 description: PdfViewer
 slug: winforms/pdfviewer

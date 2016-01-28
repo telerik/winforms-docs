@@ -8,7 +8,44 @@ published: True
 position: 0
 ---
 
-__RadPdfViewer__ shows __PdfViewerContextMenu__ when the user right clicks over the viewer. To be shown in the area where __RadPdfViewer__ is, you have to load a document.  
+# Context Menu 
+
+__RadPdfViewer__ has a default context menu - __PdfViewerContextMenu__ which provides a quick way of performing a number of commands. However, you can replace this menu with any custom one by setting the __RadContextMenu__ property of the __RadPdfViewer__.
+
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ChangeContextMenu}} 
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ChangeContextMenu}} 
+
+````C#
+this.radPdfViewer1.RadContextMenu = this.radContextMenu1;
+
+````
+````VB.NET
+Me.radPdfViewer1.RadContextMenu = Me.radContextMenu1
+
+````
+
+{{endregion}}
+
+You can also use the __ShowMenu__ method to show the context menu programmatically at a specified location.
+
+{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ShowContextMenu}} 
+{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ShowContextMenu}} 
+
+````C#
+private void buttonShowMenu_Click(object sender, EventArgs e)
+{
+    this.radPdfViewer1.PdfViewerElement.ShowMenu(new Point(100, 100));
+}
+
+````
+````VB.NET
+Private Sub buttonShowMenu_Click(sender As Object, e As EventArgs) Handles buttonShowMenu.Click
+    Me.radPdfViewer1.PdfViewerElement.ShowMenu(New Point(100, 100))
+End Sub
+
+````
+
+{{endregion}}
 
 The context menu can change dynamically. For example, when the Text Selection mode is enabled, *Copy* and *Select All* items are displayed in the menu with a separator below them:
 

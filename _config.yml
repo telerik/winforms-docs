@@ -563,6 +563,12 @@ navigation:
     pdfviewer:
         title: PdfViewer
         position: 34
+    pdfviewer/features:
+        title: Features
+        position: 3	
+    pdfviewer/features/text:
+        title: Text Manipulation
+        position: 3	
     pdfviewer/text:
         title: Text
         position: 5	

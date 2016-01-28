@@ -5,7 +5,7 @@ description: Unsupported features
 slug: winforms/pdfviewer/unsupported-features
 tags: unsupported,features
 published: True
-position: 8
+position: 5
 previous_url: pdfviewer-unsupported-features
 ---
 
@@ -21,11 +21,11 @@ The unsupported features include:
 
 * There are some limitations with CCITTFaxDecode filter;
 
-* Pattern, Lab, ICCBased color spaces;
+* Lab, ICCBased color spaces;
 
 * Encrypted documents when a non-standard encryption method is used, or the document is password-protected;
 
-* JPXDecode and Crypt filters. We have provided API to plug-in custom user-defined filters, but the filters do not work out of the box;
+* JPXDecode filters. We have provided API to plug-in custom user-defined filters, but the filters do not work out of the box;
 
 * Annotations - of all annotations, only link is supported;
 

@@ -5,9 +5,10 @@ description: Annotations
 slug: winforms/pdfviewer/annotations
 tags: annotations
 published: True
-position: 5
+position: 0
 ---
 
+# Annotations
 __RadPdfViewer__ supports Link annotations, which means that if you open a PDF file that includes hyperlinks to absolute URIs, you can click them and have a window open, navigated to the respective address. In addition, if there are links pointing to bookmarks in the same document, the view port will be scrolled to the destination specified in the link.
 
 The current API includes the following members, which allow customization of the default behavior or implementing custom logic:
