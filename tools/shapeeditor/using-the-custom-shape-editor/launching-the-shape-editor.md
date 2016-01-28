@@ -6,6 +6,7 @@ slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/launching-the-sha
 tags: launching,the,shape,editor
 published: True
 position: 0
+previous_url: tools-shapeeditor-using-the-custom-shape-editor-lunching-the-shape-editor
 ---
 
 # Launching the Shape Editor

@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/concepts/customcodefield
 tags: customcodefield
 published: True
 position: 2
+previous_url: wordsprocessing-concepts-customcodefield
 ---
 
 # CustomCodeField

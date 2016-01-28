@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/concepts/style-properties
 tags: style,properties
 published: True
 position: 5
+previous_url: wordsprocessing-concepts-style-properties
 ---
 
 # Style Properties

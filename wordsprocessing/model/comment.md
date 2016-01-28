@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/comment
 tags: comment
 published: True
 position: 13
+previous_url: wordsprocessing-model-comment
 ---
 
 # Comment

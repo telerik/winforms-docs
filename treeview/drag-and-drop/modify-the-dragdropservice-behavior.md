@@ -6,6 +6,7 @@ slug: winforms/treeview/drag-and-drop/modify-the-dragdropservice-behavior
 tags: modify,the,dragdropservice,behavior
 published: True
 position: 2
+previous_url: treeview-drag-and-drop-modify-the-drag-drop-service-behavior
 ---
 
 # Modify the DragDropService behavior

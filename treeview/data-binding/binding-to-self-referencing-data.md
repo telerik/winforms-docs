@@ -6,6 +6,7 @@ slug: winforms/treeview/data-binding/binding-to-self-referencing-data
 tags: binding,to,self,referencing,data
 published: True
 position: 3
+previous_url: treeview-data-binding-binding-to-self-referencing-data
 ---
 
 # Binding to Self Referencing Data

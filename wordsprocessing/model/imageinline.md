@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/imageinline
 tags: imageinline
 published: True
 position: 7
+previous_url: wordsprocessing-model-imageinline
 ---
 
 # ImageInline

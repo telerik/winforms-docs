@@ -6,6 +6,7 @@ slug: winforms/treeview/styling-and-appearance/tree-lines-and-rows
 tags: tree,lines,and,rows
 published: True
 position: 1
+previous_url: treeview-styling-and-appearance-tree-lines-and-rows
 ---
 
 # Tree Lines and Rows

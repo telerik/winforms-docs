@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion/pdf/using-pdfformatprovide
 tags: using,pdfformatprovider
 published: True
 position: 1
+previous_url: wordsprocessing-formats-and-conversion-docx-using-pdfformatprovider
 ---
 
 # Using PdfFormatProvider

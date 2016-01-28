@@ -6,6 +6,7 @@ slug: winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-yo
 tags: adding,a,custom,theme,as,a,file
 published: True
 position: 2
+previous_url: themes-advanced-topics-adding-custom-adding-as-file
 ---
 
 # Adding a custom theme as a file

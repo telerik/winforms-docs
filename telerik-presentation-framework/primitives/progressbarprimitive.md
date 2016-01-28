@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/progressbarprimitive
 tags: progressbarprimitive
 published: True
 position: 11
+previous_url: tpf-primitives-progressprimitive
 ---
 
 # ProgressBarPrimitive

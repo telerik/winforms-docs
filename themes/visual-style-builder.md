@@ -6,6 +6,7 @@ slug: winforms/themes/visual-style-builder
 tags: visual,style,builder
 published: True
 position: 0
+previous_url: themes-visualstylebuilder
 ---
 
 # Visual Style Builder

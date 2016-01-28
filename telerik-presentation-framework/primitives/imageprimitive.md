@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/imageprimitive
 tags: imageprimitive
 published: True
 position: 7
+previous_url: tpf-primitives-imageprimitive
 ---
 
 # ImagePrimitive

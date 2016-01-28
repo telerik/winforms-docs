@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/section
 tags: section
 published: True
 position: 1
+previous_url: wordsprocessing-model-section
 ---
 
 # Section

@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-applicati
 tags: applying,a,theme,to,a,control
 published: True
 position: 4
+previous_url: tools-visual-style-builder-adding-custom-themes-to-your-application-applying-a-theme-to-a-control
 ---
 
 # Applying a Theme to a Control

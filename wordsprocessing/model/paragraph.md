@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/paragraph
 tags: paragraph
 published: True
 position: 2
+previous_url: wordsprocessing-model-paragraph
 ---
 
 # Paragraph

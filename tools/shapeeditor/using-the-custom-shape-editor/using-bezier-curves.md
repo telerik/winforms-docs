@@ -6,6 +6,7 @@ slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/using-bezier-curv
 tags: using,bezier,curves
 published: True
 position: 3
+previous_url: tools-shapeeditor-using-the-custom-shape-editor-using-bezier-curves
 ---
 
 # Using Bezier Curves

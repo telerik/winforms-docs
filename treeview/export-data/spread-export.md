@@ -6,6 +6,7 @@ slug: winforms/treeview/export-data/spread-export
 tags: spread,export
 published: True
 position: 0
+previous_url: treeview-export-data-spread-export
 ---
 
 # Spread Export

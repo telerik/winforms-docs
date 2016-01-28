@@ -6,6 +6,7 @@ slug: winforms/treeview/data-binding/binding-to-database-data
 tags: binding,to,database,data
 published: True
 position: 1
+previous_url: treeview-data-binding-binding-to-database-data
 ---
 
 # Binding to Database Data

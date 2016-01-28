@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/events
 tags: events
 published: True
 position: 6
+previous_url: treeview-working-with-nodes-events
 ---
 
 # Events

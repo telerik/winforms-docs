@@ -6,6 +6,7 @@ slug: winforms/wizard/modes
 tags: modes
 published: True
 position: 2
+previous_url: wizard-modes
 ---
 
 # Modes

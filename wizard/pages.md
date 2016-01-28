@@ -6,6 +6,7 @@ slug: winforms/wizard/pages
 tags: pages
 published: True
 position: 3
+previous_url: wizard-pages
 ---
 
 # Pages

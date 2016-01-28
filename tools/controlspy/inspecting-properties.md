@@ -6,6 +6,7 @@ slug: winforms/tools/controlspy/inspecting-properties
 tags: inspecting,properties
 published: True
 position: 1
+previous_url: tools-controlspy-inspecting-properties
 ---
 
 # Inspecting Properties

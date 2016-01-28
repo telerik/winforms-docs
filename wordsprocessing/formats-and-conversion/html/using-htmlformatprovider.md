@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion/html/using-htmlformatprovi
 tags: using,htmlformatprovider
 published: True
 position: 2
+previous_url: wordsprocessing-formats-and-conversion-html-usinghtmlformatprovider
 ---
 
 # Using HtmlFormatProvider

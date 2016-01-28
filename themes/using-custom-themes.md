@@ -6,6 +6,7 @@ slug: winforms/themes/using-custom-themes
 tags: using,custom,themes
 published: True
 position: 3
+previous_url: themes-using-custom-themes
 ---
 
 # Using custom themes

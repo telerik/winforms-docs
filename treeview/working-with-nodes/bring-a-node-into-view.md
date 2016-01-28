@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/bring-a-node-into-view
 tags: bring,a,node,into,view
 published: True
 position: 3
+previous_url: treeview-working-with-nodes-bring-a-node-into-view
 ---
 
 # Bring a Node into View

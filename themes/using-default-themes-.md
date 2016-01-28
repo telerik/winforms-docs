@@ -6,6 +6,7 @@ slug: winforms/themes/using-default-themes-
 tags: using,default,themes,
 published: True
 position: 1
+previous_url: themes-using-default-themes
 ---
 
 # Using default themes 

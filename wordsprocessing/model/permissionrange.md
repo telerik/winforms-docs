@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/permissionrange
 tags: permissionrange
 published: True
 position: 14
+previous_url: wordsprocessing-model-permissionrange
 ---
 
 # PermissionRange

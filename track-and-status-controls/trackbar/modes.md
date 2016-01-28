@@ -6,6 +6,7 @@ slug: winforms/track-and-status-controls/trackbar/modes
 tags: modes
 published: True
 position: 4
+previous_url: track-and-status-controls-trackbar-modes
 ---
 
 # Modes

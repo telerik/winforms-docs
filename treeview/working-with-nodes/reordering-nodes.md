@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/reordering-nodes
 tags: reordering,nodes
 published: True
 position: 1
+previous_url: treeview-working-with-nodes-reordering-nodes
 ---
 
 # Reordering Nodes

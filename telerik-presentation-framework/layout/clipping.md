@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/clipping
 tags: clipping
 published: True
 position: 8
+previous_url: tpf-layout-clipping
 ---
 
 # Clipping

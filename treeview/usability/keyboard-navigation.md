@@ -6,6 +6,7 @@ slug: winforms/treeview/usability/keyboard-navigation
 tags: keyboard,navigation
 published: True
 position: 0
+previous_url: treeview-usability-keyboard-navigation
 ---
 
 # Keyboard Navigation

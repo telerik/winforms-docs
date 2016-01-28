@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/appl
 tags: applying,font,repository,items
 published: True
 position: 6
+previous_url: tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items
 ---
 
 # Applying Font repository items

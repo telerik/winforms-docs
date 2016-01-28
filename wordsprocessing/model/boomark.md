@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/boomark
 tags: boomark
 published: True
 position: 12
+previous_url: wordsprocessing-model-bookmark
 ---
 
 # Boomark

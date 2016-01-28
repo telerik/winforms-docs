@@ -6,6 +6,7 @@ slug: winforms/wizard/structure
 tags: structure
 published: True
 position: 1
+previous_url: wizard-structure
 ---
 
 # Structure

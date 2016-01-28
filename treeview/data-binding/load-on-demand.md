@@ -6,6 +6,7 @@ slug: winforms/treeview/data-binding/load-on-demand
 tags: load,on,demand
 published: True
 position: 6
+previous_url: treeview-data-binding-load-on-demand
 ---
 
 # Load On Demand

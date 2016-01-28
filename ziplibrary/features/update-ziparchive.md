@@ -6,6 +6,7 @@ slug: winforms/ziplibrary/features/update-ziparchive
 tags: update,ziparchive
 published: True
 position: 0
+previous_url: ziplibrary-features-update-ziparchive
 ---
 
 # Update ZipArchive

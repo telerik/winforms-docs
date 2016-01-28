@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/gr
 tags: gridlayout
 published: True
 position: 4
+previous_url: tpf-layout-predefined-layout-panels-gridlayout
 ---
 
 # GridLayout

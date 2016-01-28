@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/floatingimage
 tags: floatingimage
 published: True
 position: 8
+previous_url: wordsprocessing-model-floatingimage
 ---
 
 # FloatingImage

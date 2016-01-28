@@ -6,6 +6,7 @@ slug: winforms/ziplibrary/features/protect-ziparchive
 tags: protect,ziparchive
 published: True
 position: 1
+previous_url: ziplibrary-features-protect-ziparchive
 ---
 
 # Protect ZipArchive

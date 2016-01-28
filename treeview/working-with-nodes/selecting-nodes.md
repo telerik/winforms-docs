@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/selecting-nodes
 tags: selecting,nodes
 published: True
 position: 4
+previous_url: treeview-working-with-nodes-selecting-nodes
 ---
 
 # Selecting Nodes

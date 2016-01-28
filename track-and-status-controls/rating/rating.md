@@ -6,6 +6,7 @@ slug: winforms/track-and-status-controls/rating
 tags: rating
 published: True
 position: 0
+previous_url: track-and-status-controls-rating-overview
 ---
 
 # Rating

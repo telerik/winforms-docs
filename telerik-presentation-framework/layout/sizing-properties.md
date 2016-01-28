@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/sizing-properties
 tags: sizing,properties
 published: True
 position: 7
+previous_url: tpf-layout-sizing-properties
 ---
 
 # Sizing Properties

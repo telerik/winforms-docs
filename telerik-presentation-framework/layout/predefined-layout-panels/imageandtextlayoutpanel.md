@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/im
 tags: imageandtextlayoutpanel
 published: True
 position: 1
+previous_url: tpf-layout-predefined-layout-panels-imageandtextlayoutpanel
 ---
 
 # ImageAndTextLayoutPanel

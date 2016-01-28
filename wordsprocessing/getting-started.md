@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: wordsprocessing-getting-started
 ---
 
 # Getting Started

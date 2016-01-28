@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/colo
 tags: color,blending
 published: True
 position: 7
+previous_url: tools-visual-style-builder-working-with-visual-style-builder-color-blending
 ---
 
 # Color Blending

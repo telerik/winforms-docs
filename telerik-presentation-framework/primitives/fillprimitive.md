@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/fillprimitive
 tags: fillprimitive
 published: True
 position: 4
+previous_url: tpf-primitives-fillprimitive
 ---
 
 # FillPrimitive

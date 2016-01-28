@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/checkprimitive
 tags: checkprimitive
 published: True
 position: 3
+previous_url: tpf-primitives-checkprimitive
 ---
 
 # CheckPrimitive

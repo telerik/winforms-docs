@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/load
 tags: loading,themes,created,with,the,old,vsb
 published: True
 position: 4
+previous_url: tools-visual-style-builder-working-with-visual-style-builder-loading-themes-created-with-the-old-vsb
 ---
 
 # Loading themes created with the old VSB

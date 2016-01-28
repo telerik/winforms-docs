@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/features/insert-documents
 tags: insert,documents
 published: True
 position: 1
+previous_url: wordsprocessing-editing-insert-documents
 ---
 
 # Insert Documents

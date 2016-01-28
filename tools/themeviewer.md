@@ -6,6 +6,7 @@ slug: winforms/tools/themeviewer
 tags: themeviewer
 published: True
 position: 4
+previous_url: tools-themeviewer
 ---
 
 # ThemeViewer

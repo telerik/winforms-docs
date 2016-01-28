@@ -6,6 +6,7 @@ slug: winforms/treeview/data-binding/binding-to-object-relational-data
 tags: binding,to,object-relational,data
 published: True
 position: 2
+previous_url: treeview-data-binding-binding-to-object-relational-data
 ---
 
 # Binding to Object-relational Data

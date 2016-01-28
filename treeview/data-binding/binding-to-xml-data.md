@@ -6,6 +6,7 @@ slug: winforms/treeview/data-binding/binding-to-xml-data
 tags: binding,to,xml,data
 published: True
 position: 4
+previous_url: treeview-data-binding-binding-to-xml-data
 ---
 
 # Binding to XML Data

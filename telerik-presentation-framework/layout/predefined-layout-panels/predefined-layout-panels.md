@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels
 tags: predefined,layout,panels
 published: True
 position: 0
+previous_url: tpf-layout-predefined-layout-panels
 ---
 
 # Predefined Layout Panels

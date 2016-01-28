@@ -6,6 +6,7 @@ slug: winforms/wizard/right-to-left-support
 tags: right-to-left,support
 published: True
 position: 6
+previous_url: wizard-right-to-left
 ---
 
 # Right-to-Left support

@@ -6,6 +6,7 @@ slug: winforms/tools/controlspy/starting-the-control-spy
 tags: starting,the,control,spy
 published: True
 position: 2
+previous_url: tools-controlspy-starting-the-control-spy
 ---
 
 # Starting the Control Spy

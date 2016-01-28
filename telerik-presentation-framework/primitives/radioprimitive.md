@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/radioprimitive
 tags: radioprimitive
 published: True
 position: 12
+previous_url: tpf-primitives-radioprimitive
 ---
 
 # RadioPrimitive

@@ -6,6 +6,7 @@ slug: winforms/treeview/data-binding/load-on-demand-with-crud-operations
 tags: load,on,demand,with,crud,operations
 published: True
 position: 7
+previous_url: treeview-data-binding-load-on-demand-with-crud-operations
 ---
 
 # Load On Demand with CRUD operations

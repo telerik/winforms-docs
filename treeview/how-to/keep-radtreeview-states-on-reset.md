@@ -6,6 +6,7 @@ slug: winforms/treeview/how-to/keep-radtreeview-states-on-reset
 tags: keep,radtreeview,states,on,reset
 published: True
 position: 1
+previous_url: treeview-how-to-keep-radtreeview-states-on-reset
 ---
 
 # Keep RadTreeView states on reset

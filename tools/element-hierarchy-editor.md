@@ -6,6 +6,7 @@ slug: winforms/tools/element-hierarchy-editor
 tags: element,hierarchy,editor
 published: True
 position: 3
+previous_url: tools-element-hierarchy-editor-overview
 ---
 
 # Element Hierarchy Editor

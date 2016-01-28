@@ -6,6 +6,7 @@ slug: winforms/treeview/data-binding/data-binding-basics
 tags: data,binding,basics
 published: True
 position: 0
+previous_url: treeview-data-binding-data-binding-basics
 ---
 
 # Data Binding Basics

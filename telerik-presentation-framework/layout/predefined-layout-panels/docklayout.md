@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/do
 tags: docklayout
 published: True
 position: 6
+previous_url: tpf-layout-predefined-layout-panels-docklayout
 ---
 
 # DockLayout

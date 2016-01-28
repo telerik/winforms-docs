@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/overflowprimitive
 tags: overflowprimitive
 published: True
 position: 10
+previous_url: tpf-primitives-overflowprimitive
 ---
 
 # OverflowPrimitive

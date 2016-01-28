@@ -6,6 +6,7 @@ slug: winforms/treeview/design-time/smart-tag
 tags: smart,tag
 published: True
 position: 0
+previous_url: treeview-design-time-smart-tag
 ---
 
 # Smart Tag

@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/prec
 tags: precedence,example,visibility,property
 published: True
 position: 2
+previous_url: tools-visual-style-builder-working-with-visual-style-builder-precedence-example-visibility-property
 ---
 
 # Precedence Example: Visibility Property

@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/custom-filtering
 tags: custom,filtering
 published: True
 position: 11
+previous_url: treeview-working-with-nodes-custom-filtering
 ---
 
 # Custom Filtering

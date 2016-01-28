@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/prop
 tags: property,precedence,rules
 published: True
 position: 1
+previous_url: tools-visual-style-builder-working-with-visual-style-builder-property-precedence-rules
 ---
 
 # Property Precedence Rules

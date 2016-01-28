@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/element-offset-calculations
 tags: element,offset,calculations
 published: True
 position: 9
+previous_url: tpf-layout-element-offset-calculations
 ---
 
 # Element Offset Calculations

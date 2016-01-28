@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/starting-vsb
 tags: starting,vsb
 published: True
 position: 1
+previous_url: tools-visual-style-builder-starting-vsb
 ---
 
 # Starting VSB

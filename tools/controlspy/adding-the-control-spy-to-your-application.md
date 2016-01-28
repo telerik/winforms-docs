@@ -6,6 +6,7 @@ slug: winforms/tools/controlspy/adding-the-control-spy-to-your-application
 tags: adding,the,control,spy,to,your,application
 published: True
 position: 3
+previous_url: tools-controlspy-adding-the-control-spy-to-your-application
 ---
 
 # Adding the Control Spy to Your Application

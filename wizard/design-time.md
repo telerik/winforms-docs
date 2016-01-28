@@ -6,6 +6,7 @@ slug: winforms/wizard/design-time
 tags: design,time
 published: True
 position: 5
+previous_url: wizard-design-time
 ---
 
 # Design Time

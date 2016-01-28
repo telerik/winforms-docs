@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/overview
 tags: overview
 published: True
 position: 0
+previous_url: tpf-primitives-overview
 ---
 
 # Primitives Overview

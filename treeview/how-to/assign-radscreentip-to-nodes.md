@@ -6,6 +6,7 @@ slug: winforms/treeview/how-to/assign-radscreentip-to-nodes
 tags: assign,radscreentip,to,nodes
 published: True
 position: 0
+previous_url: treeview-how-to-assign-radscreentip-to-nodes
 ---
 
 # Assign RadScreenTip to nodes

@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/concepts/lists
 tags: lists
 published: True
 position: 6
+previous_url: wordsprocessing-concepts-lists
 ---
 
 # Lists

@@ -6,6 +6,7 @@ slug: winforms/treeview/localization/localization
 tags: localization
 published: True
 position: 0
+previous_url: treeview-localization-localization
 ---
 
 # Localization

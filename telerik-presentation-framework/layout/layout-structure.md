@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/layout-structure
 tags: layout,structure
 published: True
 position: 2
+previous_url: tpf-layout-structure
 ---
 
 # Layout Structure

@@ -6,6 +6,7 @@ slug: winforms/tools/controlspy
 tags: controlspy
 published: True
 position: 0
+previous_url: tools-controlspy-overview
 ---
 
 # ControlSpy

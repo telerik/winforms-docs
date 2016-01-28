@@ -6,6 +6,7 @@ slug: winforms/ziplibrary/features/compression-settings
 tags: compression,settings
 published: True
 position: 3
+previous_url: ziplibrary-features-compression-settings
 ---
 
 # Compression settings

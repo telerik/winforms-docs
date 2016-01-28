@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/savi
 tags: saving,and,loading,theme,files
 published: True
 position: 3
+previous_url: tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files
 ---
 
 # Saving and Loading Theme Files

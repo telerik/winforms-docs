@@ -6,6 +6,7 @@ slug: winforms/treeview/styling-and-appearance/themes
 tags: themes
 published: True
 position: 0
+previous_url: treeview-styling-and-appearance-themes
 ---
 
 # Themes

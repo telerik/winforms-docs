@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion/pdf/settings
 tags: settings
 published: True
 position: 2
+previous_url: wordsprocessing-formats-and-conversion-pdf-settings
 ---
 
 # Settings

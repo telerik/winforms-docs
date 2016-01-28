@@ -6,6 +6,7 @@ slug: winforms/track-and-status-controls/waitingbar/customizing-radwaitingbar
 tags: customizing,radwaitingbar
 published: True
 position: 5
+previous_url: track-and-status-controls-waitingbar-customizing-radwaitingbar
 ---
 
 # Customizing RadWaitingBar

@@ -6,6 +6,7 @@ slug: winforms/treeview/design-time/context-menus
 tags: context,menus
 published: True
 position: 2
+previous_url: treeview-design-time-context-menus
 ---
 
 # Context Menus

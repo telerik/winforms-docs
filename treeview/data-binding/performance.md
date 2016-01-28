@@ -6,6 +6,7 @@ slug: winforms/treeview/data-binding/performance
 tags: performance
 published: True
 position: 8
+previous_url: treeview-data-binding-perfomance
 ---
 
 # Performance

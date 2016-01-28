@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/control-specific-theme-tutorials/styli
 tags: styling,radribbonbar
 published: True
 position: 0
+previous_url: tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar
 ---
 
 # Styling RadRibbonBar

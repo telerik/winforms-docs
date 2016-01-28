@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/editing/clone-and-merge
 tags: clone,and,merge
 published: True
 position: 0
+previous_url: wordsprocessing-editing-clone-and-merge
 ---
 
 # Clone and Merge

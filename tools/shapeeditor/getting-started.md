@@ -6,6 +6,7 @@ slug: winforms/tools/shapeeditor/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: tools-getting-started
 ---
 
 # Getting Started

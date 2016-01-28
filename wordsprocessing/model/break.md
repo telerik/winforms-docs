@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/break
 tags: break
 published: True
 position: 11
+previous_url: wordsprocessing-model-break
 ---
 
 # Break

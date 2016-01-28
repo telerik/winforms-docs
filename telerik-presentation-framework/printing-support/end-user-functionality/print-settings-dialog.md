@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/printing-support/end-user-function
 tags: print,settings,dialog
 published: True
 position: 1
+previous_url: tpf-printing-support-radprintsettingdialog
 ---
 
 # Print Settings Dialog

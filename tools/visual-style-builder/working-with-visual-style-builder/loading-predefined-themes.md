@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/load
 tags: loading,predefined,themes
 published: True
 position: 5
+previous_url: tools-visual-style-builder-working-with-visual-style-builder-loading-predefined-themes
 ---
 
 # Loading Predefined Themes

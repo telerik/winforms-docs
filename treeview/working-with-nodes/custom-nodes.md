@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/custom-nodes
 tags: custom,nodes
 published: True
 position: 12
+previous_url: treeview-working-with-nodes-custom-nodes
 ---
 
 # Custom Nodes

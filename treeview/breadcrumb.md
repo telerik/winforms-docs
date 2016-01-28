@@ -6,6 +6,7 @@ slug: winforms/treeview/breadcrumb
 tags: breadcrumb
 published: True
 position: 13
+previous_url: treeview-breadcrumb
 ---
 
 # Breadcrumb

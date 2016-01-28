@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/features/import-document-element
 tags: import,document,element
 published: True
 position: 4
+previous_url: wordsprocessing-editing-import-document-element
 ---
 
 # Import Document Element

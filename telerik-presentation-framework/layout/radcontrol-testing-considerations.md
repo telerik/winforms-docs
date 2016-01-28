@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/radcontrol-testing-consider
 tags: radcontrol,testing,considerations
 published: True
 position: 11
+previous_url: tpf-layout-radcontrol-testing-considerations
 ---
 
 # RadControl Testing Considerations

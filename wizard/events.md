@@ -6,6 +6,7 @@ slug: winforms/wizard/events
 tags: events
 published: True
 position: 4
+previous_url: wizard-events
 ---
 
 # Events

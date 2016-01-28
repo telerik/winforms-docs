@@ -6,6 +6,7 @@ slug: winforms/ziplibrary
 tags: ziplibrary
 published: True
 position: 0
+previous_url: ziplibrary
 ---
 
 # ZipLibrary

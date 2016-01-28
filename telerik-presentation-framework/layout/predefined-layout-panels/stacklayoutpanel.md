@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/st
 tags: stacklayoutpanel
 published: True
 position: 3
+previous_url: tpf-layout-predefined-layout-panels-stacklayoutpanel 
 ---
 
 # StackLayoutPanel

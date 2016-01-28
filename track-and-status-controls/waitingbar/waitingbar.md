@@ -6,6 +6,7 @@ slug: winforms/track-and-status-controls/waitingbar
 tags: waitingbar
 published: True
 position: 0
+previous_url: track-and-status-controls-waitingbar-overview
 ---
 
 # WaitingBar

@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/table
 tags: table
 published: True
 position: 4
+previous_url: wordsprocessing-model-table
 ---
 
 # Table

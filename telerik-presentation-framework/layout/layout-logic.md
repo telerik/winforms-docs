@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/layout-logic
 tags: layout,logic
 published: True
 position: 3
+previous_url: tpf-layout-logic
 ---
 
 # Layout Logic

@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-applicati
 tags: load,themes,from,an,external,file
 published: True
 position: 1
+previous_url: tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-an-external-file
 ---
 
 # Load Themes from an External File

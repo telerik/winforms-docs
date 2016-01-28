@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion/plain-text
 tags: plain,text
 published: True
 position: 4
+previous_url: wordsprocessing-formats-and-conversion-plain-text
 ---
 
 # Plain text

@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/layout-activation
 tags: layout,activation
 published: True
 position: 1
+previous_url: tpf-layout-activation
 ---
 
 # Layout Activation

@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/getting-started
 tags: getting,started
 published: True
 position: 4
+previous_url: tools-visual-style-builder-getting-started
 ---
 
 # Getting Started

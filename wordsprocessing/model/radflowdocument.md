@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/radflowdocument
 tags: radflowdocument
 published: True
 position: 0
+previous_url: wordsprocessing-model-radflowdocument
 ---
 
 # RadFlowDocument

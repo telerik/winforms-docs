@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/
 tags: design,time
 published: True
 position: 1
+previous_url: tpf-printing-support-radprintdocument-design-time
 ---
 
 # Design Time

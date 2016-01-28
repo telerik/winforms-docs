@@ -6,6 +6,7 @@ slug: winforms/track-and-status-controls/trackbar/programming-radtrackbar
 tags: programming,radtrackbar
 published: True
 position: 3
+previous_url: track-and-status-controls-trackbar-programming-radtrackbar
 ---
 
 # Programming RadTrackBar

@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/run
 tags: run
 published: True
 position: 3
+previous_url: wordsprocessing-model-run
 ---
 
 # Run

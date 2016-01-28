@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/printing-support/end-user-function
 tags: watermark,dialog
 published: True
 position: 2
+previous_url: tpf-printing-support-radwatermarkdialog
 ---
 
 # Watermark Dialog

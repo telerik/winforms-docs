@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion/docx/using-docxformatprovi
 tags: using,docxformatprovider
 published: True
 position: 1
+previous_url: wordsprocessing-formats-and-conversion-docx-using-docxformatprovider
 ---
 
 # Using DocxFormatProvider

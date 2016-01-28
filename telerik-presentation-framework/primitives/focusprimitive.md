@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/focusprimitive
 tags: focusprimitive
 published: True
 position: 5
+previous_url: tpf-primitives-focusprimitive
 ---
 
 # FocusPrimitive

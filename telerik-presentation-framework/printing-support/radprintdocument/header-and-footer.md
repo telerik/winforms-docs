@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/
 tags: header,and,footer
 published: True
 position: 2
+previous_url: tpf-printing-support-radprintdocument-header-and-footer
 ---
 
 # Header and Footer

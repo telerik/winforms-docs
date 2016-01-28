@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-applicati
 tags: adding,radthememanager,to,a,form
 published: True
 position: 0
+previous_url: tools-visual-style-builder-adding-custom-themes-to-your-application-adding-radthememanager-to-a-form
 ---
 
 # Adding RadThemeManager to a Form

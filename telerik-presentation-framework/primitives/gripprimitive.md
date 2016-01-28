@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/gripprimitive
 tags: gripprimitive
 published: True
 position: 6
+previous_url: tpf-primitives-gripprimitive
 ---
 
 # GripPrimitive

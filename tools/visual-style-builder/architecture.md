@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/architecture
 tags: architecture
 published: True
 position: 3
+previous_url: tools-visual-style-builder-architecture
 ---
 
 # Architecture

@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/printing-support/end-user-function
 tags: print,preview,dialog
 published: True
 position: 0
+previous_url: tpf-printing-support-radprintpreviewdialog
 ---
 
 # Print Preview Dialog

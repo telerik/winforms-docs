@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/concepts/tabstop
 tags: tabstop
 published: True
 position: 8
+previous_url: wordsprocessing-concepts-tabstop
 ---
 
 # TabStop

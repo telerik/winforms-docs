@@ -6,6 +6,7 @@ slug: winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-yo
 tags: creating,a,theme,component
 published: True
 position: 0
+previous_url: themes-advanced-topics-adding-custom-creating-theme-component
 ---
 
 # Creating a theme component

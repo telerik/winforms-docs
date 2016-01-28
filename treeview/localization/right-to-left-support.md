@@ -6,6 +6,7 @@ slug: winforms/treeview/localization/right-to-left-support
 tags: right-to-left,support
 published: True
 position: 1
+previous_url: treeview-localization-rtl
 ---
 
 # Right-to-left support

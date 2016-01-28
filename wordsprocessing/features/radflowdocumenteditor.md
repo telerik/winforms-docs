@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/editing/radflowdocumenteditor
 tags: radflowdocumenteditor
 published: True
 position: 3
+previous_url: wordsprocessing-editing-radflowdocumenteditor
 ---
 
 # RadFlowDocumentEditor

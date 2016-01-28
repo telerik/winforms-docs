@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/borderprimitive
 tags: borderprimitive
 published: True
 position: 2
+previous_url: tpf-primitives-borderprimitive
 ---
 
 # BorderPrimitive

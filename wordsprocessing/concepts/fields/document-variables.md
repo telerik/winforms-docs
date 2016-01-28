@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/concepts/fields/document-variables
 tags: document,variables
 published: True
 position: 2
+previous_url: radwordsprocessing-concepts-document-variables
 ---
 
 # Document Variables

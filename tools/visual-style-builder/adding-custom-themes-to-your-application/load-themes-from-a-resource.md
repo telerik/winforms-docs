@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-applicati
 tags: load,themes,from,a,resource
 published: True
 position: 2
+previous_url: tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-a-resource
 ---
 
 # Load Themes from a Resource

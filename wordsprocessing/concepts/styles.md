@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/concepts/styles
 tags: styles
 published: True
 position: 4
+previous_url: wordsprocessing-concepts-styles
 ---
 
 # Styles

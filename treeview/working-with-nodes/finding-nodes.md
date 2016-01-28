@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/finding-nodes
 tags: finding,nodes
 published: True
 position: 10
+previous_url: treeview-working-with-nodes-finding-nodes
 ---
 
 # Finding Nodes

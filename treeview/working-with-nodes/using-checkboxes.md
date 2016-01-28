@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/using-checkboxes
 tags: using,checkboxes
 published: True
 position: 5
+previous_url: treeview-working-with-nodes-using-checkboxes
 ---
 
 # Using Checkboxes

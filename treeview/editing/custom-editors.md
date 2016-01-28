@@ -6,6 +6,7 @@ slug: winforms/treeview/editing/custom-editors
 tags: custom,editors
 published: True
 position: 1
+previous_url: treeview-editing-custom-editors
 ---
 
 # Custom Editors

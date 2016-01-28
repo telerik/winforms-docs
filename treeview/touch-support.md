@@ -6,6 +6,7 @@ slug: winforms/treeview/touch-support
 tags: touch,support
 published: True
 position: 12
+previous_url: treeview-touch-support
 ---
 
 # Touch Support

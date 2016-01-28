@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/custom-layouts
 tags: custom,layouts
 published: True
 position: 6
+previous_url: tpf-layout-custom-layout
 ---
 
 # Custom Layouts

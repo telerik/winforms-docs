@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/overview
 tags: overview
 published: True
 position: 0
+previous_url: wordsprocessing-overview
 ---
 
 # Overview

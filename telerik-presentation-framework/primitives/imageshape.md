@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/imageshape
 tags: imageshape
 published: True
 position: 8
+previous_url: tpf-primitives-imageshape
 ---
 
 # ImageShape

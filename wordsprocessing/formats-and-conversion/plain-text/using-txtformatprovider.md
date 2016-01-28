@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion/plain-text/using-txtformat
 tags: using,txtformatprovider
 published: True
 position: 0
+previous_url: wordsprocessing-formats-and-conversion-plain-text-using-txtformatprovider
 ---
 
 # Using TxtFormatProvider

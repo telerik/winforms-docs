@@ -6,6 +6,7 @@ slug: winforms/tools/shapeeditor
 tags: shapeeditor
 published: True
 position: 0
+previous_url: tools-shapeeditor-overview
 ---
 
 # ShapeEditor

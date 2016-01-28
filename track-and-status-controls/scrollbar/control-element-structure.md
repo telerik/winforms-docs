@@ -6,6 +6,7 @@ slug: winforms/track-and-status-controls/scrollbar/control-element-structure
 tags: control,element,structure
 published: True
 position: 3
+previous_url: track-and-status-controls-scrollbar-control-element-structure
 ---
 
 # Control Element Structure

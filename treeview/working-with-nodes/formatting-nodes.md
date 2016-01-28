@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/formatting-nodes
 tags: formatting,nodes
 published: True
 position: 2
+previous_url: treeview-working-with-nodes-formatting-nodes
 ---
 
 # Formatting Nodes

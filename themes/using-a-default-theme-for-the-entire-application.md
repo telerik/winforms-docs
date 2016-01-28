@@ -6,6 +6,7 @@ slug: winforms/themes/using-a-default-theme-for-the-entire-application
 tags: using,a,default,theme,for,the,entire,application
 published: True
 position: 2
+previous_url: themes-using-a-default-theme-for-the-entire-application
 ---
 
 # Using a default theme for the entire application

@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/
 tags: watermark
 published: True
 position: 3
+previous_url: tpf-printing-support-radprintdocument-watermark
 ---
 
 # Watermark

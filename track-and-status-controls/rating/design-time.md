@@ -6,6 +6,7 @@ slug: winforms/track-and-status-controls/rating/design-time
 tags: design,time
 published: True
 position: 3
+previous_url: track-and-status-controls-rating-design-time
 ---
 
 # Design time

@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/printing-support/localize-print-di
 tags: localize,print,dialogs
 published: True
 position: 3
+previous_url: tpf-printing-support-localizing-printdialogs
 ---
 
 # Localize print dialogs

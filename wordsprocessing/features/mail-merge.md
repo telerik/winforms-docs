@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/editing/mail-merge
 tags: mail,merge
 published: True
 position: 5
+previous_url: wordsprocessing-editing-mail-merge
 ---
 
 # Mail Merge

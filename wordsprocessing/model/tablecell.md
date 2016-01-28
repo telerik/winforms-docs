@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/tablecell
 tags: tablecell
 published: True
 position: 6
+previous_url: wordsprocessing-model-tablecell
 ---
 
 # TableCell

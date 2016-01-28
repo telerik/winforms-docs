@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/custom-sorting
 tags: custom,sorting
 published: True
 position: 9
+previous_url: treeview-working-with-nodes-custom-sorting
 ---
 
 # Custom Sorting

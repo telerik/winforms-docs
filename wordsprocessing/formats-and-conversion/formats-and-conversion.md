@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion
 tags: formats,and,conversion
 published: True
 position: 0
+previous_url: wordsprocessing-formats-and-conversion
 ---
 
 # Formats and Conversion

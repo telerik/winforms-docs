@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/concepts/watermark
 tags: watermark
 published: True
 position: 7
+previous_url: wordsprocessing-concepts-watermark
 ---
 
 # Watermark

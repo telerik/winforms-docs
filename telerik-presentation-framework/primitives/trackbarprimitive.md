@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/trackbarprimitive
 tags: trackbarprimitive
 published: True
 position: 14
+previous_url: tpf-primitives-trackbarprimitive
 ---
 
 # TrackBarPrimitive

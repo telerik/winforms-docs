@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/sorting-nodes
 tags: sorting,nodes
 published: True
 position: 8
+previous_url: treeview-working-with-nodes-sorting
 ---
 
 # Sorting Nodes

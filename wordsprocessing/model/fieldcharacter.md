@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/fieldcharacter
 tags: fieldcharacter
 published: True
 position: 10
+previous_url: wordsprocessing-model-fieldcharacter
 ---
 
 # FieldCharacter

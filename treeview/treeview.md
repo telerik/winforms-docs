@@ -6,6 +6,7 @@ slug: winforms/treeview
 tags: treeview
 published: True
 position: 0
+previous_url: treeview-overview
 ---
 
 # TreeView

@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/concepts/fields
 tags: fields
 published: True
 position: 0
+previous_url: wordsprocessing-concepts-fields
 ---
 
 # Fields

@@ -6,6 +6,7 @@ slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/moving-and-lockin
 tags: moving,and,locking,points
 published: True
 position: 1
+previous_url: tools-shapeeditor-using-the-custom-shape-editor-moving-and-locking-points
 ---
 
 # Moving and Locking Points

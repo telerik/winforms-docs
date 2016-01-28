@@ -6,6 +6,7 @@ slug: winforms/track-and-status-controls/rating/properties-and-events
 tags: properties,and,events
 published: True
 position: 4
+previous_url: track-and-status-controls-rating-properties-and-events
 ---
 
 # Properties and events

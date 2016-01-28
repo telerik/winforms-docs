@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/concepts/document-themes
 tags: document,themes
 published: True
 position: 3
+previous_url: wordsprocessing-concepts-document-themes
 ---
 
 # Document Themes

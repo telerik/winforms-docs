@@ -6,6 +6,7 @@ slug: winforms/ziplibrary/getting-started
 tags: getting,started
 published: True
 position: 1
+previous_url: ziplibrary-getting-started
 ---
 
 # Getting Started

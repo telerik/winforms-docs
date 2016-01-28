@@ -6,6 +6,7 @@ slug: winforms/tools/shapeeditor/shape-editor-user-interface
 tags: shape,editor,user,interface
 published: True
 position: 0
+previous_url: tools-shapeeditor-the-custom-shape-editor-user-interface
 ---
 
 # Shape Editor User Interface

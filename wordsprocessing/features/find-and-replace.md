@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/features/find-and-replace
 tags: find,and,replace
 published: True
 position: 2
+previous_url: wordsprocessing-editing-find-and-replace
 ---
 
 # Find and Replace

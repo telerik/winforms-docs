@@ -6,6 +6,7 @@ slug: winforms/track-and-status-controls/trackbar/customization
 tags: customization
 published: True
 position: 5
+previous_url: track-and-status-controls-trackbar-customization
 ---
 
 # Customization

@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion/html
 tags: html
 published: True
 position: 2
+previous_url: wordsprocessing-formats-and-conversion-html
 ---
 
 # Html

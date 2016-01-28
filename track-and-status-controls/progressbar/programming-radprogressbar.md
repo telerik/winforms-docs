@@ -6,6 +6,7 @@ slug: winforms/track-and-status-controls/progressbar/programming-radprogressbar
 tags: programming,radprogressbar
 published: True
 position: 1
+previous_url: track-and-status-controls-progressbar-programming-radprogressbar
 ---
 
 # Programming RadProgressBar

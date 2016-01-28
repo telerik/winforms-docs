@@ -6,6 +6,7 @@ slug: winforms/treeview/data-binding/serialize/deserialize-to-xml
 tags: serialize/deserialize,to,xml
 published: True
 position: 5
+previous_url: treeview-data-binding-serialize-deserialize-to-xml
 ---
 
 # Serialize/Deserialize to XML

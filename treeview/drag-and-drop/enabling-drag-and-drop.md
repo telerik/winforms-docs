@@ -6,6 +6,7 @@ slug: winforms/treeview/drag-and-drop/enabling-drag-and-drop
 tags: enabling,drag,and,drop
 published: True
 position: 0
+previous_url: treeview-drag-and-drop-enabling-drag-and-drop
 ---
 
 # Enabling Drag and Drop

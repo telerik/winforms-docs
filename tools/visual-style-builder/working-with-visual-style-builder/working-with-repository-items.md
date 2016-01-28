@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/work
 tags: working,with,repository,items
 published: True
 position: 0
+previous_url: tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items
 ---
 
 # Working With Repository Items

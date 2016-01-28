@@ -6,6 +6,7 @@ slug: winforms/track-and-status-controls/rating/structure
 tags: structure
 published: True
 position: 0
+previous_url: track-and-status-controls-rating-structure
 ---
 
 # Structure

@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/headers-and-footers
 tags: headers,and,footers
 published: True
 position: 9
+previous_url: wordsprocessing-model-headers-and-footers
 ---
 
 # Headers and Footers

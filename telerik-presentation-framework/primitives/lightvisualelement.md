@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/lightvisualelement
 tags: lightvisualelement
 published: True
 position: 15
+previous_url: tpf-primitives-lightvisualelement
 ---
 
 # LightVisualElement

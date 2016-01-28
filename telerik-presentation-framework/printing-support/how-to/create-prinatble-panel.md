@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/printing-support/how-to/create-pri
 tags: create,prinatble,panel
 published: True
 position: 0
+previous_url: tpf-printing-support-how-to-create-printable-panel
 ---
 
 # Create Prinatble Panel

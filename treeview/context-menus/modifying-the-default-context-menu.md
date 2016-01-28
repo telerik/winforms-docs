@@ -6,6 +6,7 @@ slug: winforms/treeview/context-menus/modifying-the-default-context-menu
 tags: modifying,the,default,context,menu
 published: True
 position: 1
+previous_url: treeview-context-menus-modifying-the-default-context-menu
 ---
 
 # Modifying the Default Context Menu

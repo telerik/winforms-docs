@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-applicati
 tags: editing,themes
 published: True
 position: 3
+previous_url: tools-visual-style-builder-adding-custom-themes-to-your-application-editing-themes
 ---
 
 # Editing Themes

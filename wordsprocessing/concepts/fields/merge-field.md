@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/concepts/fields/merge-field
 tags: merge,field
 published: True
 position: 1
+previous_url: radwordsprocessing-concepts-merge-fields-mergefield
 ---
 
 # Merge Field

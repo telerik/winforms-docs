@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/concepts/hyperlinks
 tags: hyperlinks
 published: True
 position: 1
+previous_url: wordsprocessing-concepts-hyperlinks
 ---
 
 # Hyperlinks

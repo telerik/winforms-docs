@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/wr
 tags: wraplayoutpanel
 published: True
 position: 2
+previous_url: tpf-layout-predefined-layout-panels-wraplayoutpanel
 ---
 
 # WrapLayoutPanel

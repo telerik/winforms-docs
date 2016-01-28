@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/filtering-nodes
 tags: filtering,nodes
 published: True
 position: 7
+previous_url: treeview-working-with-nodes-filtering
 ---
 
 # Filtering Nodes

@@ -6,6 +6,7 @@ slug: winforms/ziplibrary/features/compress-a-stream
 tags: compress,a,stream
 published: True
 position: 2
+previous_url: ziplibrary-features-compress-a-stream
 ---
 
 # Compress a stream

@@ -6,6 +6,7 @@ slug: winforms/wizard/localization
 tags: localization
 published: True
 position: 7
+previous_url: wizard-localization
 ---
 
 # Localization

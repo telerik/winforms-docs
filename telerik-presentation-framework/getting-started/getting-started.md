@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/getting-started/getting-started
 tags: getting,started
 published: True
 position: 0
+previous_url: tpf-getting-started
 ---
 
 # Getting Started

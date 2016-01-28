@@ -6,6 +6,7 @@ slug: winforms/treeview/design-time/property-builder
 tags: property,builder
 published: True
 position: 1
+previous_url: treeview-design-time-property-builder
 ---
 
 # Property Builder

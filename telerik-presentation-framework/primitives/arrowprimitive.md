@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/arrowprimitive
 tags: arrowprimitive
 published: True
 position: 1
+previous_url: tpf-primitives-arrowprimitive
 ---
 
 # ArrowPrimitive

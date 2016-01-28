@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion/rtf/using-rtfformatprovide
 tags: using,rtfformatprovider
 published: True
 position: 1
+previous_url: wordsprocessing-formats-and-conversion-rtf-using-rtfformatprovider
 ---
 
 # Using RtfFormatProvider

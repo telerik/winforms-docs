@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion/rtf
 tags: rtf
 published: True
 position: 1
+previous_url: wordsprocessing-formats-and-conversion-rtf
 ---
 
 # Rtf

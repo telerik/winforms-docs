@@ -6,6 +6,7 @@ slug: winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-yo
 tags: adding,a,custom,theme,as,a,resource
 published: True
 position: 1
+previous_url: themes-advanced-topics-adding-custom-adding-as-resource
 ---
 
 # Adding a custom theme as a resource

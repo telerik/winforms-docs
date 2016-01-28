@@ -6,6 +6,7 @@ slug: winforms/treeview/editing/editing-nodes
 tags: editing,nodes
 published: True
 position: 0
+previous_url: treeview-editing-editing-nodes
 ---
 
 # Editing Nodes

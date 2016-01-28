@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/sample-arrange-stage-scenar
 tags: sample,arrange,stage,scenarios
 published: True
 position: 4
+previous_url: tpf-layout-sample-arrange-state-scenarios
 ---
 
 # Sample Arrange Stage Scenarios

@@ -6,6 +6,7 @@ slug: winforms/treeview/working-with-nodes/adding-and-removing-nodes
 tags: adding,and,removing,nodes
 published: True
 position: 0
+previous_url: treeview-working-with-nodes-adding-and-removing-nodes
 ---
 
 # Adding and Removing Nodes

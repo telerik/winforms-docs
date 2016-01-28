@@ -6,6 +6,7 @@ slug: winforms/tools/visual-style-builder/concepts
 tags: concepts
 published: True
 position: 2
+previous_url: tools-visual-style-builder-concepts
 ---
 
 # Concepts

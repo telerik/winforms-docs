@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/bo
 tags: boxlayout
 published: True
 position: 5
+previous_url: tpf-layout-predefined-layout-panels-boxlayout
 ---
 
 # BoxLayout

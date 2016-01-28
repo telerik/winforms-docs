@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion/pdf/features
 tags: features
 published: True
 position: 0
+previous_url: wordsprocessing-formats-and-conversion-pdf-features
 ---
 
 # Features

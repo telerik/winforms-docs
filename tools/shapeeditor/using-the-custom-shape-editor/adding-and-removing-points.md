@@ -6,6 +6,7 @@ slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/adding-and-removi
 tags: adding,and,removing,points
 published: True
 position: 2
+previous_url: tools-shapeeditor-using-the-custom-shape-editor-adding-and-removing-points
 ---
 
 # Adding and Removing Points

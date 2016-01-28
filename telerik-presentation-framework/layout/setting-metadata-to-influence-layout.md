@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/layout/setting-metadata-to-influen
 tags: setting,metadata,to,influence,layout
 published: True
 position: 10
+previous_url: tpf-layout-setting-metadata-to-influence-layout
 ---
 
 # Setting Metadata to Influence Layout

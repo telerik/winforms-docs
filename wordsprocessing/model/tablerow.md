@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/model/tablerow
 tags: tablerow
 published: True
 position: 5
+previous_url: wordsprocessing-model-tablerow
 ---
 
 # TableRow

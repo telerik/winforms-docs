@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/overview/building-tpf-based-contro
 tags: building,tpf,based,controls
 published: True
 position: 2
+previous_url: tpf-overview-building-tpf-controls
 ---
 
 # Building TPF Based Controls

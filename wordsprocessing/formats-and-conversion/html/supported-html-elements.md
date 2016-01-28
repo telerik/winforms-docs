@@ -6,6 +6,7 @@ slug: winforms/wordsprocessing/formats-and-conversion/html/supported-html-elemen
 tags: supported,html,elements
 published: True
 position: 1
+previous_url: wordsprocessing-formats-and-conversion-html-supported-html-elements
 ---
 
 # Supported Html Elements

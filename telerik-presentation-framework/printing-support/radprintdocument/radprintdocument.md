@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/printing-support/radprintdocument
 tags: radprintdocument
 published: True
 position: 0
+previous_url: tpf-printing-support-radprintdocument
 ---
 
 # RadPrintDocument

@@ -6,6 +6,7 @@ slug: winforms/wizard
 tags: wizard
 published: True
 position: 0
+previous_url: wizard-overview
 ---
 
 # Wizard

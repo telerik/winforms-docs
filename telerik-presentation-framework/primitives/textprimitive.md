@@ -6,6 +6,7 @@ slug: winforms/telerik-presentation-framework/primitives/textprimitive
 tags: textprimitive
 published: True
 position: 13
+previous_url: tpf-primitives-textprimitive
 ---
 
 # TextPrimitive
