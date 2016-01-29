@@ -57,6 +57,6 @@ The most important *Header* and *Footer* styling options include the following o
 
 * *FooterTextImageRelation*
 
-Please refer to *ImageAndTextLayoutPanel* documentation section about further details of those properties.
+Please refer to [ImageAndTextLayoutPanel]({$slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/imageandtextlayoutpanel%}) documentation section about further details of those properties.
 
 All these properties can be set in *Visual Style Builder. *Furthermore, the control can be customized on a very fine-grained level using the *Visual Style Builder* to set any other property in the control hierarchy. Please refer to [RadGroupBox TPF structure]({%slug winforms/panels-and-labels/groupbox/advanced/tpf-structure%}) section for more details.
