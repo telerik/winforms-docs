@@ -15,18 +15,15 @@ previous_url: multicolumncombobox-overview
 
 ## 
 
-The multi-column combobox is a special case of combobox control with RadGridView integrated in its drop-down. The control combines the functionality and features of RadComboBox and RadGridView. Structure
+The multi-column combobox is a special case of combobox control with RadGridView integrated in its drop-down. The control combines the functionality and features of RadDropDownList and RadGridView. 
 
 The image below represents the structure of the multi-column combobox.
->caption 
 
 ![multicolumncombobox-overview 001](images/multicolumncombobox-overview001.png)
 
-
-
 The drop-down element is an object of type __MultiColumnComboBoxElement__. Use this element to set the [drop-down style]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdownstyle%}), [animation]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/animation-effects%}) and [sizing]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdown-resizing%}) as you would do for the regular combobox.  
 
-The __EditorControl__ property of the __MultiColumnComboBoxElement__ gives you a reference to the __RadGridView__ control. Using that reference you can obtain the RadGridView object and work as with normal RadGridView control. Refer to RadGridView documentation for additional information on RadGridView.
+The __EditorControl__ property of the __MultiColumnComboBoxElement__ gives you a reference to the __RadGridView__ control. Using that reference you can obtain the RadGridView object and work as with normal RadGridView control. Refer to the [RadGridView documentation] ({%slug winforms/gridview/gridview%}) for additional information on RadGridView.
 
 The current version has some limitations that you should consider:
 
