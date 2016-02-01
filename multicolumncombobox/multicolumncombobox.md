@@ -28,7 +28,7 @@ The drop-down element is an object of type __MultiColumnComboBoxElement__. Use t
 
 The __EditorControl__ property of the __MultiColumnComboBoxElement__ gives you a reference to the __RadGridView__ control. Using that reference you can obtain the RadGridView object and work as with normal RadGridView control. Refer to RadGridView documentation for additional information on RadGridView.
 
-The current version has one limitation that you should consider:
+The current version has some limitations that you should consider:
 
 * You cannot use the auto-complete mode of RadDropDownList
 
