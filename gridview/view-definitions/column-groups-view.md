@@ -135,3 +135,5 @@ The result is:
 >caption Figure 1: ColumnGroups ViewDefinition
 
 ![gridview-viewdefinitions-column-groups-view 001](images/gridview-viewdefinitions-column-groups-view001.jpg)
+
+>caution In order to pin a certain group, you should do it after the RadGridView.__ViewDefinition__ property is set and the grid is populated with data. 
