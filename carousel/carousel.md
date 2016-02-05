@@ -6,7 +6,7 @@ slug: winforms/carousel
 tags: carousel
 published: True
 position: 0
-previous_url: carousel/getting-started
+previous_url: /help/winforms/carousel-overview, /devtools/winforms/carousel/getting-started
 ---
 
 # Carousel
