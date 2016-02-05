@@ -6,7 +6,7 @@ slug: winforms/carousel
 tags: carousel
 published: True
 position: 0
-previous_url: /help/winforms/carousel-overview, /devtools/winforms/carousel/getting-started
+previous_url: http://www.telerik.com/help/winforms/help/winforms/carousel-overview.html, /devtools/winforms/carousel/getting-started
 ---
 
 # Carousel
