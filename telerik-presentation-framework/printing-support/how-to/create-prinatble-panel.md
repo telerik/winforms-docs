@@ -11,10 +11,6 @@ previous_url: tpf-printing-support-how-to-create-printable-panel
 
 # Create Prinatble Panel
 
-
-
-## 
-
 This example shows how you can implement printable panel. This can be very useful when you want to print several controls at once. To achieve this you can create a custom panel that inherits from RadPanel and implements the __IPrintable__ interface. This interface contains four methods:
         
 
