@@ -847,7 +847,10 @@ navigation:
         position: 12
     virtualgrid:
         title: VirtualGrid
-        position: 49
+        position: 49 
+    virtualgrid/design-time:
+        title: Design Time
+        position: 1
     virtualgrid/fundamentals:
         title: Fundamentals
         position: 3
