@@ -19,9 +19,9 @@ The __RadPrintDocument__ class can be easily customized through inheritance. The
 
 >caption Fig. 1 Custom Header<br>![telerik-presentation-frameworkprinting-support-how-to-customize-radprintdocument](images/telerik-presentation-frameworkprinting-support-how-to-customize-radprintdocument001.png)
 
-In this example we will modify the header of the print document introducing new properties, defining fonts, color and a new layout. The control which we will be printing is going to be __RadGridView__ bound to the *Categories* table of the *Northwind* database. An example is availabe [here](%slug winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset%).         
+In this example we will modify the header of the print document by introducing new properties, defining fonts, color and a new layout. The control which we will be printing is going to be __RadGridView__ bound to the *Categories* table of the *Northwind* database. An example is availabe [here]({%slug winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset%}).         
 
-Let us first create a class extending __RadPrintDocument__ and define 6 new properties which will be used for painting a text with a speicific font and size. We are also going to override the __PrintHeader__ method and draw the text of the newly introduced properties at a specific location:
+Let us first create a class extending __RadPrintDocument__ and define six new properties which will be used for painting a text with a speicific font and size. We are also going to override the __PrintHeader__ method and draw the contents of the newly introduced properties at specific locations:
 
 #### Inheriting RadPrintDocument
 
