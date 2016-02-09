@@ -73,6 +73,6 @@ Private Sub RadGridView1_CellValidating(ByVal sender As Object, ByVal e As Teler
 
 
 
->note You can watch the movie [Validation with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/radgridview/validation-with-radgridview-winforms) regarding the usage of RadGridView built-in validation.
+>note You can watch the [Validation with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/radgridview/validation-with-radgridview-winforms) video regarding the usage of RadGridView built-in validation.
 >
 
