@@ -601,7 +601,10 @@ navigation:
         position: 21
     pivotgrid/exporting-data:
         title: Exporting Data
-        position: 22		
+        position: 22
+    pivotgrid/save-and-load-layout:
+        title: Save and Load Layout
+        position: 23		
     propertygrid:
         title: PropertyGrid
         position: 36
