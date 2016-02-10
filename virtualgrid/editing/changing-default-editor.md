@@ -5,7 +5,7 @@ description: Creating custom editors
 slug: winforms/virtualgrid/cells/changing-default-editor
 tags: virtualgrid, custom, editor
 published: True
-position: 3
+position: 4
 ---
 
 # Changing the Default Editors

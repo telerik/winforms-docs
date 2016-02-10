@@ -1,5 +1,5 @@
 ---
-title: Editors
+title: Overview
 page_title: Editors | UI for WinForms Documentation
 description: Editors
 slug: winforms/virtualgrid/editing/editors
