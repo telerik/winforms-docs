@@ -11,10 +11,6 @@ previous_url: panels-and-labels-groupbox-overview
 
 # GroupBox
 
-
-
-
-
 __RadGroupBox__ control is a group box control with advanced styling options. The primarily usage of this control is to hold a single radio buttons group. The control does not support scrolling which is however supported by *RadPanel*. The control never gets focus being a container for other controls which can get focus. 
 
 You need to include *Telerik.WinControls.UI* namespace in your application.
