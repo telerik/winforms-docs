@@ -2,7 +2,7 @@
 title: API
 page_title: API | UI for WinForms Documentation
 description: Formatting Data Cells
-slug: winforms/virtualgrid/cells/formatting-data-cells
+slug: winforms/virtualgrid/cells/api
 tags: virtualgrid, editors, api
 published: True
 position: 1
