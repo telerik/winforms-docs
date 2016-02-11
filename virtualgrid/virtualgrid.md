@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# RadVirtualGrid
+# RadVirtualGrid Test
 
 __RadVirtualGrid__ is a grid component developed on top of Telerik Presentation Framework which provides a convenient way to implement your own data management operations and optimizes the performance when interacting with large amounts of data.
 
