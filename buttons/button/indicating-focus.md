@@ -5,7 +5,7 @@ description: Indicating Focus
 slug: winforms/buttons/button/indicating-focus
 tags: indicating,focus
 published: True
-position: 2
+position: 4
 previous_url: buttons-button-indicating-focus
 ---
 
