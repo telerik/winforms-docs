@@ -896,6 +896,9 @@ navigation:
     virtualgrid/localization:
         title: Localization
         position: 20
+    virtualgrid/save-and-load-layout:
+        title: Save and Load Layout
+        position: 21
     wizard:
         title: Wizard
         position: 50
