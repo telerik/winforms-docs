@@ -72,9 +72,7 @@ this.radVirtualGrid1.BestFitColumns();
 ````VB.NET
 Me.RadVirtualGrid1.BestFitColumns()
 
-```` 
-
-
+````  
 
 {{endregion}}
 
@@ -90,10 +88,22 @@ this.radVirtualGrid1.VirtualGridElement.BestFitColumn(1);
 ````VB.NET
 Me.RadVirtualGrid1.VirtualGridElement.BestFitColumn(1)
 
-```` 
+````  
+{{endregion}}
 
+Columns can be auto-sized to fit the available space in __RadVirtualGrid__. It is necessary to set the __AutoSizeColumnsMode__ property to *VirtualGridAutoSizeColumnsMode.Fill*:
 
+>caption Fig.4 AutoSizeColumnsMode.*Fill*
+![virtualgrid-columns-resizing-columns004](images/virtualgrid-columns-resizing-columns004.gif)
 
+{{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=AutoSizeColumnsMode}} 
+{{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=AutoSizeColumnsMode}}
+````C#
+this.radVirtualGrid1.AutoSizeColumnsMode = VirtualGridAutoSizeColumnsMode.Fill;
+````
+````VB.NET
+Me.RadVirtualGrid1.AutoSizeColumnsMode = VirtualGridAutoSizeColumnsMode.Fill
+````  
 {{endregion}}
 
 ## Events

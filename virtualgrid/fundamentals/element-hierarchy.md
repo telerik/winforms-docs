@@ -2,7 +2,7 @@
 title: Element Hierarchy
 page_title: Element Hierarchy | UI for WinForms Documentation
 description: Element Hierarchy
-slug: winforms/virtualgrid/cells/formatting-data-cells
+slug: winforms/virtualgrid/cells/element-hierarchy
 tags: virtualgrid, element, hierarchy
 published: True
 position: 1

@@ -850,7 +850,10 @@ navigation:
         position: 12
     virtualgrid:
         title: VirtualGrid
-        position: 49
+        position: 49 
+    virtualgrid/design-time:
+        title: Design Time
+        position: 1
     virtualgrid/fundamentals:
         title: Fundamentals
         position: 3
@@ -890,9 +893,12 @@ navigation:
     virtualgrid/handling-user-input:
         title: Handling User Input
         position: 18
+    virtualgrid/how-to:
+        title: How-To
+        position: 19	 
     virtualgrid/end-user-capabilities:
         title: End User Capabilities
-        position: 19
+        position: 20
     virtualgrid/localization:
         title: Localization
         position: 20
