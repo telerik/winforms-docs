@@ -12,8 +12,6 @@ position: 0
 ## Editors
 
 __RadVirtualGrid__ allows the users to edit the cells values. Usually this process starts by typing in the cell or by pressing F2. By default the editor type is determined according to the data value type. When in edit mode, the user can change the cell value and press __Enter__ to commit the change or __Esc__ to revert to the original value. Clicking outside the edited cell also commits the change. 
-=======
-__VirtualRadgridView__ allows the users to edit the cells values. Usually this process starts by typing in the cell or by pressing F2. By default, the editor type is determined according to the data value type. When in edit mode, the user can change the cell value and press __Enter__ to commit the change or __Esc__ to revert to the original value. Clicking outside the edited cell also commits the change. 
 
 >caption Row editing indication 
 ![virtualgrid-editing-editors001](images/virtualgrid-editing-editors001.png)
