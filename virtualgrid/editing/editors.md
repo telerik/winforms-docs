@@ -32,7 +32,7 @@ Currently __RadVirtualGrid__ supports the following editors out of the box:
 * __VirtualGridColorPickerEditor__
 * __VirtualGridBrowseEditor__
 
-__RadVirtualGrid__ exposes an API for defining the data types of its columns. If the data type is explicitly set it wil determine the cell editors used in this column. Otherwise, the editor is determined by the cell value.
+__RadVirtualGrid__ exposes an API for defining the data types of its columns. If the data type is explicitly set it wil determine the cell editors used in this column. Otherwise, the editor is determined by the cell value. The API works by column index.
 
 #### Defining a Columns`s Data Type
 
@@ -40,12 +40,25 @@ __RadVirtualGrid__ exposes an API for defining the data types of its columns. If
 {{source=..\SamplesVB\Virtualgrid\Editing\EditorsProperties.vb region=DefineColumnDataType}}
 ````C#
 this.radVirtualGrid1.MasterViewInfo.ColumnDataTypes[0] = typeof(int);
-Type dataType = this.radVirtualGrid1.MasterViewInfo.GetColumnDataType(0);
 
 ````
 ````VB.NET
 Me.radVirtualGrid1.MasterViewInfo.ColumnDataTypes(0) = GetType(Integer)
-Dim dataType As Type = Me.radVirtualGrid1.MasterViewInfo.GetColumnDataType(0)
+
+```` 
+
+{{endregion}}
+
+#### Reading a Columns`s Data Type
+
+{{source=..\SamplesCS\VirtualGrid\Editing\EditorsProperties.cs region=ReadColumnDataType}} 
+{{source=..\SamplesVB\Virtualgrid\Editing\EditorsProperties.vb region=ReadColumnDataType}}
+````C#
+Type dataType = this.radVirtualGrid1.MasterViewInfo.GetColumnDataType(1);
+
+````
+````VB.NET
+Dim dataType As Type = Me.radVirtualGrid1.MasterViewInfo.GetColumnDataType(1)
 
 ```` 
 

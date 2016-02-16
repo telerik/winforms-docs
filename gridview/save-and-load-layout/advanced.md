@@ -11,23 +11,19 @@ previous_url: gridview-save-and-load-layout-advanced
 
 # Advanced
 
-
-
-## 
-
-RadGridView Serialization API provides a wide range of options that enables the programmer to customize the serialized content in a flexible manner. Based on the principles of the standard Microsoft .NET XML serialization approach, the API can be easily used for implementing different serialization scenarios. 
+RadGridView Serialization API provides a wide range of options that enable the programmer to customize the serialized content in a flexible manner. Based on the principles of the standard Microsoft .NET XML serialization approach, the API can be easily used for implementing different serialization scenarios. 
 
 This article demonstrates how to alter the default serialization procedure and explicitly define the properties to be serialized.
 
 Here are several properties to have in mind:
 
-* __radGridView1.XmlSerializationInfo__ - this property of RadGridView gets the serialization information used by the SaveLayout and LoadLayout methods. It contains all RadGridView data that should persist between application states.
+* __RadGridView.XmlSerializationInfo__ - this property of RadGridView gets the serialization information used by the SaveLayout and LoadLayout methods. It contains all RadGridView data that should persist between application states.
 
-* __radGridView1.XmlSerializationInfo.DisregardOriginalSerializationVisibility__ - this property determines whether the serialization engine should take the default serialization attributes or the custom serialization metadata provided by the programmer. To define a custom collection of properties, set the property to true.
+* __RadGridView.XmlSerializationInfo.DisregardOriginalSerializationVisibility__ - this property determines whether the serialization engine should take the default serialization attributes or the custom serialization metadata provided by the programmer. To define a custom collection of properties, set the property to true.
 
-* __radGridView1.XmlSerializationInfo.SerializationMetadata__ - this property returns a collection of PropertySerializationMetadata objects, which contains information about the type, name and serialization method of the corresponding property. You need to clear the collection in order to be sure that only the serialization instructions will be considered.
+* __RadGridView.XmlSerializationInfo.SerializationMetadata__ - this property returns a collection of PropertySerializationMetadata objects, which contains information about the type, name and serialization method of the corresponding property. You need to clear the collection in order to be sure that only the serialization instructions will be considered.
 
-Here is a snippet which prepares the SerializationMedata for customization:
+Here is a snippet clearing the default settings:
 
 {{source=..\SamplesCS\GridView\SaveLoadLayout\Advanced.cs region=preparation}} 
 {{source=..\SamplesVB\GridView\SaveLoadLayout\Advanced.vb region=preparation}} 
@@ -44,6 +40,9 @@ Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Clear()
 ````
 
 {{endregion}}
+
+>note Clearing the default settings would require all the serialization meta data to be loaded manually.
+>
 
 The first property to add for serialization is the MasterGridViewTemplate, which contains RadGridView’s data and its structure. Please note that the MasterGridViewTemplate property is of type GridViewTemplate and that the DesignerSerializationVisibilityAttribute works exactly as the standard Microsoft .NET Framework attribute.
 
