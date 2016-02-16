@@ -5,7 +5,7 @@ description: HTML-like Text Formatting
 slug: winforms/buttons/button/html-like-text-formatting
 tags: html-like,text,formatting
 published: True
-position: 1
+position: 3
 previous_url: buttons-button-html-like-text-formatting
 ---
 

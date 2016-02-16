@@ -5,7 +5,7 @@ description: Access and change the editors properties
 slug: winforms/virtualgrid/editing/editors-properties
 tags: virtualgrid, edidtors, properties
 published: True
-position: 4
+position: 5
 ---
 
 # Accessing the Editors and Changing their Properties.
