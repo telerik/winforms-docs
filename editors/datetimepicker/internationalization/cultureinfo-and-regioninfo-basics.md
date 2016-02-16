@@ -54,6 +54,8 @@ Me.RadCalendar1.Culture = New System.Globalization.CultureInfo("ps-AF")
 
 {{endregion}}
 
+>note There is a known issue in the .NET Framework considering the "fa-IR" culture. Please refer to the following MSDN resource for a solution: [Fixing Persian Locale for Persian Calendar and Month Names](https://code.msdn.microsoft.com/Fixing-Persian-Locale-for-6e66e044)
+
 ## RegionInfo
 
 The __RegionInfo__ class contains information about the country/region.  In contrast to __CultureInfo__, __RegionInfo__ does not represent preferences of the user and does not depend on the user's language or culture. The __RegionInfo__ name is one of the two-letter codes defined in ISO 3166 for country/region. Case is not significant; however, the __Name__, the __TwoLetterISORegionName__, and the __ThreeLetterISORegionName__ properties return the appropriate code in uppercase.
