@@ -13,16 +13,16 @@ previous_url: dock-overview
  
 ## 
 
-RadDock helps you manage multiple windows in your application with a docking system similar to Microsoft Visual Studio 2005. RadDock can contain both tool and tabbed document style windows. RadDock also includes fully interactive design-time layout management.
+RadDock helps you manage multiple windows in your application with a docking system similar to Microsoft Visual Studio. RadDock can contain both tool and tabbed document style windows. RadDock also includes fully interactive design-time layout management.
         
 
 * The RadDock control provides a container that holds dockable windows. This container can fill the entire client area of a Windows Form, or can be limited to any rectangular area you choose to manage.
             
 
-* Tabbed documents can be switched between, resized, dragged to arrange in various configurations and closed. Tabbed documents are supported by the DocumentWindow control. You can place other controls (either Telerik UI for WinForms controls or standard Windows Forms controls) within a DocumentWnidow.
+* Tool windows can be dragged outside their containers ("floating"), dragged to other containers, collapsed against the side of the RadDock and transformed to tabbed documents. Tool windows are supported by the ToolWindow control. You can place other controls (either Telerik UI for WinForms controls or standard Windows Forms controls) within a ToolWindow.
             
 
-* Tool windows can be dragged outside their containers ("floating"), dragged to other containers, collapsed against the side of the RadDock and transformed to tabbed documents. Tool windows are supported by the ToolWindow control. You can place other controls (either Telerik UI for WinForms controls or standard Windows Forms controls) within a ToolWindow.
+* Tabbed documents can be switched between, floated, resized, dragged, to arrange in various configurations and closed. Tabbed documents are supported by the DocumentWindow control. You can place other controls (either Telerik UI for WinForms controls or standard Windows Forms controls) within a DocumentWnidow.
             
 
 * The RadDock Advanced Layout Designer gives you fully interactive design-time control over the number, position, and properties of DockWindows within a RadDock.
