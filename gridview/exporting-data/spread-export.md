@@ -1,9 +1,9 @@
 ---
-title: Spread export 
-page_title: Spread export  | UI for WinForms Documentation
-description: Spread export 
+title: Export to Excel
+page_title: Export to Excel  | UI for WinForms Documentation
+description: Export to Excel 
 slug: winforms/gridview/exporting-data/spread-export
-tags: spread,export,
+tags: spread,export,excel,xlsx
 published: True
 position: 1
 previous_url: gridview-exporting-data-spread-export
