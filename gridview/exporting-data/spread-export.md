@@ -265,6 +265,9 @@ spreadExporter.RunExport("..\..\exportedFile.xlsx", exportRenderer)
 
 __RadGridView__ can export its contents asynchronously. This feature can be utilized by calling the  __RunExportAsync__ method on the __GridViewSpreadExport__ object.
 
+>important Due to performance considerations and in order to decrease the consumed memory the visual settings in __RadGridView__ are not exported when the operation is run async.
+>
+
 ## Methods
 
 The following methods of the __GridViewSpreadExport__ class are responsible for exporting the data.
