@@ -22,7 +22,7 @@ The following image demonstrates the structure of RadTimePicker control, which m
 
 ## Properties
 
-* __Value__ – used to get or set the control value
+* __Value__ – used to get or set the control value. It accepts an object of type DateTime, where only the time part is taken under consideration.
 
 * __Culture__ – determines the language of the drop down and the editable area. From here you can control if the format is 12 (“en-US”) or 24 hours (“en-UK”)
 
