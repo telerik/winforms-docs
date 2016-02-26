@@ -6,7 +6,6 @@ slug: winforms/section-508-compliance
 tags: section,508,compliance
 published: True
 position: 53
-previous_url: section-508-compliance
 ---
 
 # Section 508 Compliance
