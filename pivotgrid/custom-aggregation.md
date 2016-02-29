@@ -217,7 +217,7 @@ End Class
 
 ## Assigning the Custom Function
 
-We can make use of our new function by assigning it to the __AggregateFunction__ property of a __PropertyAggregateDescription__ before setting to our pivot.
+We can make use of our new function by assigning it to the __AggregateFunction__ property of a __PropertyAggregateDescription__ object before setting it to our pivot.
 
 {{source=..\SamplesCS\PivotGrid\PivotGridCustomAggregation.cs region=CustomFunctionUsage}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridCustomAggregation.vb region=CustomFunctionUsage}}
