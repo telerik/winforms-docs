@@ -11,15 +11,11 @@ previous_url: diagram-backgroundgrid
 
 # Background Grid
 
-
-
-## 
-
 You can control the background settings of the diagramming surface through the following properties:
         
 
 * __IsBackgroundSurfaceVisible__: a boolean property that determines whether the background surface of the __RadDiagram__  should be displayed. Its default value is *true*. 
-* 
+
 {{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=IsBackgroundSurfaceVisible}} 
 {{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=IsBackgroundSurfaceVisible}} 
 
