@@ -179,6 +179,7 @@ The document model supports the following functions:
 |HYPERLINK|Creates a shortcut or jump that opens a document stored on a network server, an intranet, or the Internet|
 |INDEX|Uses an index to choose a value from a reference or array|
 |LOOKUP|Looks up values in a vector or array|
+|INDIRECT|Returns the cell reference specified by a text string. The references are evaluated immediately to display their values. The text string, passed as an argument could be a reference to a cell that contains an A1-style reference, a name defined as a reference, or a reference to a cell as a text string|
 
 
 | Math and Trigonometry Functions |  |

@@ -21,6 +21,8 @@ This article provides information about the possible approaches for creating a c
 
 * [ FunctionInfo](#functioninfo)
 
+* [Get Cell Reference Range Expression from Function](#get-cell-reference-range-expression-from-function)
+
 * [Custom Function Examples](#custom-function-examples)
 
 ## Inheriting FunctionBase abstract class
@@ -64,17 +66,16 @@ The document model provides an inheritance tree of classes providing ready to us
 
 __Figure 1__ the base abstract function classes.
         
->caption Figure 1: Functions Inheritance
+>caption Figure 1: Function Inheritance
 
 ![spreadprocessing-features-formulas-custom-functions 001](images/spreadprocessing-features-formulas-custom-functions001.png)
 
-* __FunctionBase__: Provides the base functions properties (__Name, FunctionInfo, ArgumentConvertionRules__). Also provides the logic of the __IsArgumentNumberValid()__ method which handles the logic when invalid arguments count is inputted by the user. By inheriting __FunctionBase__ you must override the __EvaluateOverrideFunctionEvaluationContext&lt;RadExpression&gt; context)__  method, so you need to handle the whole logic of converting __RadExpression__ arguments to function arguments.
-            
+* __FunctionBase__: Provides the base functions properties (__Name, FunctionInfo, ArgumentConvertionRules__). Also provides the logic of the __IsArgumentNumberValid()__ method which handles the logic when invalid arguments count is inputted by the user. By inheriting __FunctionBase__ you must override the __EvaluateOverride(FunctionEvaluationContext&lt;RadExpression&gt; context)__ method, so you need to handle the whole logic of converting __RadExpression__ arguments to function arguments.            
 
 * __FunctionWithArguments__: Handles the basic logic of converting __RadExpression__'s value to some other value type corresponding to the ArgumentType defined in FunctionInfo property. By inheriting from this class you need to override the __EvaluateOverride(FunctionEvaluationContext&lt;object&gt; context)__ method and handle and array of already converted function argument values.
             
 
-* __FunctionWithSameTypeArguments<T>__: By inheriting this class you need to override __EvaluateOverride(FunctionEvaluationContext&lt;object&gt; context)__ method and handle an array of arguments with same type T.
+* __FunctionWithSameTypeArguments<T>__: By inheriting this class you need to override __EvaluateOverride(FunctionEvaluationContext&lt;T&gt; context)__ method and handle an array of arguments with same type T.
             
 
 * __StringInFunctions, NumbersInFunction, BooleansInFunction__: These classes inherit directly from __FunctionWithSameTypeArguments<String>, FunctionWithSameTypeArguments<double> and FunctionWithSameTypeArguments<bool>__. Using them is appropriate in cases when the function the respective argument type - String, double or Boolean.
@@ -249,8 +250,6 @@ You can create a CellReferenceRangeExpression object using the **NameConverter.T
 * **int columnIndex**: The column index of the cell where the CellReferenceRangeExpression is located(created). 
 * **out CellReferenceRangeExpression expression**: The constructed CellReferenceRangeExpression is returned as an out parameter.
 
->tipThe usage of CellReferenceRangeExpression is demonstrated in the implementation of the INDIRECT function, available in our [SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/CustomFunctions).
-
 The API of CellReferenceRangeExpression allows you to access the different cell reference ranges. This could be done with the **CellReferenceRange** and **CellReferenceRanges** properties.
 
 You can convert a **CellReferenceRange** object to **CellRange** with an extension method from the [ExpressionExtensions](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Spreadsheet_Expressions_ExpressionExtensions.htm) class:
@@ -261,10 +260,10 @@ You can convert a **CellReferenceRange** object to **CellRange** with an extensi
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_10}} 
 
 ````C#   
-
+CellRange cellRange = expression.CellReferenceRange.ToCellRange();
 ````
 ````VB.NET
-
+Dim cellRange As CellRange = expression.CellReferenceRange.ToCellRange()
 ````
 
 {{endregion}} 
@@ -327,10 +326,10 @@ public class Arguments : FunctionBase
         Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount: 3);
     }
     
-    protected override RadExpression EvaluateOverride(RadExpression[] arguments)
-    {
-        return new NumberExpression(arguments.Length);
-    }
+    protected override RadExpression EvaluateOverride(FunctionEvaluationContext<RadExpression> context)
+            {
+                return new NumberExpression(context.Arguments.Length);
+            }
 }
 
 ````
@@ -355,9 +354,10 @@ Public Class Arguments
         Dim optionalArguments As IEnumerable(Of ArgumentInfo) = New ArgumentInfo() {New ArgumentInfo("First", "First argument.", ArgumentType.Any), New ArgumentInfo("Second", "Second argument.", ArgumentType.Any), New ArgumentInfo("Third", "Third argument.", ArgumentType.Any)}
         Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=3)
     End Sub
-    Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
-        Return New NumberExpression(arguments.Length)
-    End Function
+    Protected Overrides Function EvaluateOverride(context As FunctionEvaluationContext(Of RadExpression)) As RadExpression
+            Return New NumberExpression(arguments.Length)
+            Return New NumberExpression(context.Arguments.Length)
+        End Function
 End Class
 
 ````
@@ -404,10 +404,10 @@ public class E : FunctionBase
         Info = new FunctionInfo(FunctionName, FunctionCategory.MathTrig, description);
     }
     
-    protected override RadExpression EvaluateOverride(RadExpression[] arguments)
-    {
-        return NumberExpression.E;
-    }
+    protected override RadExpression EvaluateOverride(FunctionEvaluationContext<RadExpression> context)
+         {
+             return NumberExpression.E;
+         }
 }
 
 ````
@@ -430,9 +430,9 @@ Public Class E
         Dim description As String = "Returns the Napier's constant."
         Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description)
     End Sub
-    Protected Overrides Function EvaluateOverride(arguments As RadExpression()) As RadExpression
-        Return NumberExpression.E
-    End Function
+    Protected Overrides Function EvaluateOverride(context As FunctionEvaluationContext(Of RadExpression)) As RadExpression
+	Return NumberExpression.E
+End Function
 End Class
 
 ````
