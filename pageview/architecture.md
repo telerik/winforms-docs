@@ -27,6 +27,8 @@ Currently, we ship three modes of this control which implement different layout 
 * Strip Mode: equivalent to the RadTabStrip control.
 * Stack Mode: equivalent to the RadPanelBar’s ListBar mode.
 * Outlook Mode: equivalent to the RadPanelBar’s OutlookNavPane mode.
+* Explorer Mode: designed to display multiple visible pages at once.
+* Backstage Mode: designed after the Office 2010 backstage mode.
 
 ## Events
 
