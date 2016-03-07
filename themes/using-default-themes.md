@@ -2,7 +2,7 @@
 title: Using default themes 
 page_title: Using default themes  | UI for WinForms Documentation
 description: Using default themes 
-slug: winforms/themes/using-default-themes-
+slug: winforms/themes/using-default-themes
 tags: using,default,themes,
 published: True
 position: 1

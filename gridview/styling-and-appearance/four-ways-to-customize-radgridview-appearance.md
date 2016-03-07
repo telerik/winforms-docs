@@ -17,7 +17,7 @@ There are four ways to customize RadGridView appearance - Themes, UI editor (De
 
 ## Themes
 
-Just as all our WinForms controls, RadGridView supports our theming mechanism. You can use one of the default themes or create your own theme. Please refer to our [Themes]({%slug winforms/themes/using-default-themes-%}) section in the documentation for more details. 
+Just as all our WinForms controls, RadGridView supports our theming mechanism. You can use one of the default themes or create your own theme. Please refer to our [Themes]({%slug winforms/themes/using-default-themes%}) section in the documentation for more details. 
         
 
 ## UI editor (DesignTime)  
