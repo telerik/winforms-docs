@@ -75,6 +75,6 @@ End Sub
 {{endregion}} 
  
 
->important Please note that when you select the style all events will be automatically created and you can directly access them. You can create the control in code as well. More information is available in the following article:[Getting Started]({%slug winforms/gauges/lineargauge/getting-started%})
+>important Please note that when you select the style all elements will be automatically created and you can directly access them. You can create the control in code as well. More information is available in the following article:[Getting Started]({%slug winforms/gauges/lineargauge/getting-started%})
 >
 
