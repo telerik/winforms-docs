@@ -274,7 +274,7 @@ The __DisplayName__ attribute defines what text should be displayed in the label
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=DisplayName}} 
 
 ````C#
-//[DisplayName("family name")]
+[DisplayName("family name")]
 public string LastName
 {
     get;
