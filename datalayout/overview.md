@@ -11,7 +11,7 @@ previous_url: datalayout-overview
 
 # Data Layout
 
-The __RadDataLayout__ control provides means for displaying business objects entry data in a highly customizable layout. It adds to the already known features of [RadDataEntry]({%slug winforms/dataentry%}) options to easily modify its layout at design-time as well as at run-time.
+The __RadDataLayout__ control provides means for displaying data in a highly customizable layout by automatically creating the items and editors and further allowing easy creating of complex layouts at design-time as well as at run-time.
         
 >caption Figure 1: RadDataLayout.
 
