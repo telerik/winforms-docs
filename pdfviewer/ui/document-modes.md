@@ -44,7 +44,7 @@ This mode fills the window with each page and scroll through pages continuously.
 {{source=..\SamplesVB\PdfViewer\PdfUI.vb region=FitToWidth}} 
 
 ````C#
-this.radPdfViewer1.FitFullPage = true;
+this.radPdfViewer1.FitToWidth = true;
 ````
 ````VB.NET
 Me.RadPdfViewer1.FitToWidth = True 

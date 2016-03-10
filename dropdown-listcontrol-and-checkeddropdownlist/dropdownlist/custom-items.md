@@ -90,6 +90,13 @@ public class CustomVisualItem : RadListVisualItem
         mainContainer.Children.Add(rightColumn);  
         DockLayoutPanel.SetDock(leftColumn, Telerik.WinControls.Layouts.Dock.Left);
         DockLayoutPanel.SetDock(rightColumn, Telerik.WinControls.Layouts.Dock.Right);
+        leftColumn.NotifyParentOnMouseInput = true;
+        rightColumn.NotifyParentOnMouseInput = true;
+        titleElement.NotifyParentOnMouseInput = true;
+        photoElement.NotifyParentOnMouseInput = true;
+        nameElement.NotifyParentOnMouseInput = true;
+        addressElement.NotifyParentOnMouseInput = true;
+        phoneElement.NotifyParentOnMouseInput = true;
     }
     
     public override void Synchronize()
@@ -185,6 +192,13 @@ Inherits RadListVisualItem
         mainContainer.Children.Add(rightColumn)
         DockLayoutPanel.SetDock(leftColumn, Telerik.WinControls.Layouts.Dock.Left)
         DockLayoutPanel.SetDock(rightColumn, Telerik.WinControls.Layouts.Dock.Right)
+		leftColumn.NotifyParentOnMouseInput = True
+		rightColumn.NotifyParentOnMouseInput = True
+		titleElement.NotifyParentOnMouseInput = True
+		photoElement.NotifyParentOnMouseInput = True
+		nameElement.NotifyParentOnMouseInput = True
+		addressElement.NotifyParentOnMouseInput = True
+		phoneElement.NotifyParentOnMouseInput = True
     End Sub
     Public Overrides Sub Synchronize()
         MyBase.Synchronize()
