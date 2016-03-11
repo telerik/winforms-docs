@@ -280,6 +280,16 @@ End Class
 {{source=..\SamplesVB\PivotGrid\PivotGridSerializeCubeDataProvider.vb region=XmlaProviderSerializer}} 
 
 ````C#
+public class XmlaProviderSerializer : DataProviderSerializer
+{
+    public override IEnumerable<Type> KnownTypes
+    {
+        get
+        {
+            return AdomdPivotSerializationHelper.KnownTypes;
+        }
+    }
+}
 ````
 ````VB.NET
 Public Class XmlaProviderSerializer
