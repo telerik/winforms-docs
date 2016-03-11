@@ -15,7 +15,9 @@ previous_url: codedui-requirements
 
 ## 
 
-* Microsoft Visual Studio 2010 Premium/Ultimate/Test Professional edition +VS Service Pack 1 + [VS10SP1-KB2696646](http://support.microsoft.com/kb/2696646) or Microsoft Visual Studio 2012 Premium
-
-* Telerik UI for WinForms version Q3 2012 or higher
+|Visual Studio Version|Requires|Available since|
+|----|----|----|
+|Microsoft Visual Studio 2010 Premium/Ultimate/Test Professional edition|VS Service Pack 1 [VS10SP1-KB2696646] (http://support.microsoft.com/kb/2696646)|Q3 2012|
+|Microsoft Visual Studio 2012 Premium/Ultimate edition|None|Q3 2012|
+|Microsoft Visual Studio 2015 Enterprise edition|[Update 1](https://www.microsoft.com/en-US/download/details.aspx?id=49989)|Q1 2016|
             
