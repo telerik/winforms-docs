@@ -32,6 +32,5 @@ The main and most important difference between RadTextBox and RadTextBoxControl 
 |-|Localizable context menu|
 |-|Supports transparency, image or gradient as background|
 |-|Lightweight as it does not host control in it|
-|-|Lightweight as it does not host control in it|
 |-|Flexible and intuitive API|
-|-|AutoComplete with data binding|
+|-|Customizible AutoComplete with data binding|
