@@ -15,7 +15,7 @@ __RadPivotGrid__ is designed to aggregate data and it provides an API for assign
 >caption Fig.1 Using the Built-in *Sum* function
 >![pivotgrid-custom-aggregation 001](images/pivotgrid-custom-aggregation001.png)
 
->caption Fig.1 Using the Custom *Sqrt Of Sum* function
+>caption Fig.2 Using the Custom *Sqrt Of Sum* function
 >![pivotgrid-custom-aggregation 001](images/pivotgrid-custom-aggregation002.png)
 
 ## Defining a Custom Aggregation Funtion
