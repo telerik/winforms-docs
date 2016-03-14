@@ -20,7 +20,7 @@ RadGanttView supports binding to Database data. Levels are created using the Par
 1. In a new Windows project drop a RadGanttView control on the form.
             
 
-1. In the __DataSource__ property drop down in the Properties Window of from the smart tag of the control select the __Add Project Data Source__ link.
+1. In the __DataSource__ property drop down in the Properties Window of from the Smart Tag of the control select the __Add Project Data Source__ link.
             
 
 1. In the __Choose a Data Source Type__ page select the __Database__ icon, then click the __Next__ button.
@@ -41,9 +41,13 @@ RadGanttView supports binding to Database data. Levels are created using the Par
 1. Set the DataSource property first to Tasks, then to Links datatable. This will create the necessary data-binding components in the component tray - a DataSet, BindingSources and TableAdapters. The DataSet is the container for the data, the TableAdapters are used to fill the DataSet.
             
 
-1. In the smart tag or in the properties window set the member properties in the following way.
+1. In the Smart Tag or in the properties window set the member properties in the following way.
             
 	![ganttview-working-with-data-binding-to-database 004](images/ganttview-working-with-data-binding-to-database004.png)
+
+1. Once the binding is completed, you can open the _Edit Columns_ option from the Smart Tag, where you can add three columns. Make sure to set their FieldName's to the respective fields - Title, Start and End.
+
+	![ganttview-working-with-data-binding-to-database 004](images/ganttview-working-with-data-binding-to-database005.png)
 
 1. Finally add this code to the form load event handler to specify the timeline range:
             
@@ -64,4 +68,4 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineEnd = New DateTim
 {{endregion}} 
 
 
-![ganttview-working-with-data-binding-to-database 005](images/ganttview-working-with-data-binding-to-database005.png)
+![ganttview-working-with-data-binding-to-database 005](images/ganttview-working-with-data-binding-to-database006.png)
