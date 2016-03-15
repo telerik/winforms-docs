@@ -23,20 +23,26 @@ All controls in the suite support Level 1 and Level 2. The list below shows the 
 
 | Element | Level 3 - Properties/Actions | Level 4 - Properties/Actions |
 | ------ | ------ | ------ |
-|RadMenu|ItemsCountHasChildNodes||
-|RadMenuItem|CheckedIsTopLevelMenuTextHasChildNodesItemsCount||
-|RadDropDownList|ExpandedIsEditableSelectedIndexSelectedItem||
-|RadDropDownButton|ForeColorBackColorTextItemsCountHasChildNodes||
-|RadRadioButton|IsCheckedText||
-|RadCheckBox|IsCheckedToggleStateText||
-|RadButton|ForeColorBackColorTextPressedButtonClick|ButtonClick|
-|RadGridView|RowCountColumnCount||
-|GridViewCellInfo|ForeColorBackColorTextSelectedRowIndexColumnIndexWait|Wait|
-|GridViewRowInfo|CellCountSelectedRowIndex||
-|RadListControl|SelectedIndexSelectedValueItemsCountDataSourceDataMemberValueMemberAutoSizeItemsItemHeightIsMultipleSelection|SelectedIndex|
-|RadListDataItem|TextForeColorActiveSelectedRowIndex|Selected|
-|RadTreeView|TreeViewXmlItemsCount||
-|RadTreeNode|ExpandedSelectedTextHasChildNodes|ExpandedSelectedText|
-|RadCommandBar|ForeColorBackColorTextLines||
-|CommandBarItem|ForeColorBackColorText||
-|RadTextBox|LineCountMaxLenghtSelectionStartSelectionEndIsPasswordReadOnlyText|Text|
+|RadMenu|ItemsCount<br> HasChildNodes||
+|RadMenuItem|Checked <br> IsTopLevelMenu <br> Text <br> HasChildNodes <br> ItemsCount|Checked|
+|RadDropDownList|Expanded <br> IsEditable <br> SelectedIndex <br> SelectedItem <br> Text||
+|RadDropDownButton|ForeColor <br> BackColor <br> Text <br> ItemsCount <br> HasChildNodes||
+|RadRadioButton|IsChecked <br> Text||
+|RadCheckBox|IsChecked <br> ToggleState <br> Text||
+|RadButton|ForeColor <br> BackColor <br> Text <br> IsPressed <br> ButtonClick|ButtonClick|
+|RadGridView|RowCount <br> ColumnCount||
+|GridViewCellInfo|ForeColor <br> BackColor <br> Text <br> Selected <br> RowIndex <br> ColumnIndex||
+|GridViewRowInfo|CellCount <br> Selected <br> RowIndex||
+|RadListControl|SelectedIndex <br> SelectedValue <br> ItemsCount <br> DataSource <br> DataMember <br> ValueMember <br> AutoSizeItems <br> ItemHeight <br> IsMultipleSelection|SelectedIndex|
+|RadListDataItem|Text <br> ForeColor <br> Active <br> Selected <br> RowIndex|Selected|
+|RadTreeView|TreeViewXml <br> ItemsCount||
+|RadTreeNode|Expanded <br> Selected <br> Text <br> HasChildNodes <br> Checked <br> CheckedState|CheckState <br> Checked <br> Expanded <br> Selected <br> Text|
+|RadCommandBar|ForeColor <br> BackColor <br> Text <br> Lines||
+|CommandBarItem|ForeColor <br> BackColor <br> Text||
+|RadTextBox|LineCount <br> MaxLenght <br> SelectionStart <br> SelectionText <br> SelectionEnd <br> IsPassword <br> ReadOnly <br> Text||
+|RadDateTimePicker|ShowCheckBox <br> ReadOnly <br> Text||
+|RadMaskedEditBox| MaxLenght <br> SelectionStart <br> SelectedText <br> Mask <br> ReadOnly <br> Text <br> SelectionEnd||
+|RadPageViewItem|Selected <br> Text|ItemClick <br> Selected|
+|RadPageView|SelectedIndex <br> TabCount <br> ViewMode <br> SelectedPage|SelectedIndex|
+|RadSpinEditor|Minimum <br> Maximum <br> Value <br> Increment|Minimum <br> Maximum <br> Value <br> Increment|
+|RadStatusStrip|ForeColor <br> BackColor <br> Text <br> ItemsCount||
