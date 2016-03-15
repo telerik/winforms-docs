@@ -85,7 +85,12 @@ void radChartView1_Drill(object sender, DrillEventArgs e)
             #region TheYearCorresponding
             if (e.SelectedPoint != null)
                 year = ((DrillDownDataInfo)e.SelectedPoint.DataItem).Date.Year;
-
+           break;
+           }
+           e.View.Axes.Clear();
+            e.View.Palette = KnownPalette.Cold;
+            e.View.Series.Clear();
+            e.View.Series.Add(barSeries);
 ````
 ````VB.NET
 Private year As Integer, month As Integer
