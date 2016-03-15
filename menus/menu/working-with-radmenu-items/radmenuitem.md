@@ -75,12 +75,6 @@ The RadMenuItem represents a standard menu item. Some of its properties include:
 
 * __StringAlignment__ formats the alignment of the text string so it is positioned near, center, or far from the left border of the menu item. 
 
-## Creating Two Columns on a Drop-Down Menu Item
-
-The __HasTwoColumnDropDown__ property formats a drop-down list into two columns. It is recommended that you set this property to __True__ before you begin to add menu items to the list. This setting lets you view both columns in form designer so you can add new menu items to the appropriate column.
-
-![menus-menu-working-with-radmenu-items-radmenuitem 002](images/menus-menu-working-with-radmenu-items-radmenuitem002.png)
-
 ## RadMenuComboItem
 
 The __RadMenuComboItem__ allows you to put a drop-down list on a menu. To add items to the combo box work with the __Items__ collection of the __RadMenuComboItem.ComboBoxElement__ property. Because the ComboBoxElement returns a RadDropDownListElement, you can also use data binding to put items in the drop-down list from any data source.

@@ -30,7 +30,7 @@ RadGanttView supports binding to Database data. Levels are created using the Par
 1. In the __Choose Your Data Connection__ page of the wizard click the __New Connection__ button.
             
 
-1. In the __Add Connection__ dialog click the __Change__ button, select "Microsoft Access Database File" and click the __OK__ button. In the __Database file name__ entry click the __Browse__ button and locate the WeddingPlanner.mdb file in the installation directory under *\Examples\DataSources*. Click the __OK__ button. When prompted if you would like to copy the local data file to your project click the __Yes__ button.
+1. In the __Add Connection__ dialog click the __Change__ button, select "Microsoft Access Database File" and click the __OK__ button. In the __Database file name__ entry click the __Browse__ button and locate the WeddingPlanner.mdb file. You can download the mdb file from here: [WeddingPlanner.mdb](http://www.telerik.com/docs/default-source/ui-for-winforms/weddingplanner.zip?sfvrsn=2). Click the __OK__ button. When prompted if you would like to copy the local data file to your project click the __Yes__ button.
             
 	![ganttview-working-with-data-binding-to-database 002](images/ganttview-working-with-data-binding-to-database002.png)
 
