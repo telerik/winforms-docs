@@ -1,5 +1,5 @@
 ---
-title: CodedUI
+title: Overview
 page_title: CodedUI | UI for WinForms Documentation
 description: CodedUI
 slug: winforms/codedui
