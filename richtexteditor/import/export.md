@@ -13,22 +13,22 @@ previous_url: richtexteditor-import-export
 
 __RadRichTextEditor__ allows you to export and import its content. This is useful in case you want to save the user's input into a data base and then load it from there, or if you want to save/load the content of __RadRichTextEditor__ to/from a file. To import and export you have to use a specific class that implements the __IDocumentFormatProvider__. You can find built-in classes, that implement this interface, for each of the supported formats. Currently __RadRichTextEditor__ can export and import the following formats:
 
-* __XAML__ - to import/export __XAML__ documents you have to use the __XamlFormatProvider__ class.
+* __XAML__ - to import/export __XAML__ documents you have to use the Telerik.WinForms.Documents.FormatProviders.Xaml.__XamlFormatProvider__ class.
           
 
-* __DOCX__ - to import/export __DOCX__ documents you have to use the __DocxFormatProvider__ class.
+* __DOCX__ - to import/export __DOCX__ documents you have to use the Telerik.WinForms.Documents.FormatProviders.OpenXml.Docx.__DocxFormatProvider__ class.
           
 
-* __HTML__ - to import/export __HTML__ documents you have to use the __HtmlFormatProvider__ class.
+* __HTML__ - to import/export __HTML__ documents you have to use the Telerik.WinForms.Documents.FormatProviders.Html.__HtmlFormatProvider__ class.
           
 
-* __RTF__- to import/export __RTF__ documents you have to use the __RtfFormatProvider__ class.
+* __RTF__- to import/export __RTF__ documents you have to use the Telerik.WinForms.Documents.FormatProviders.Rtf.__RtfFormatProvider__ class.
           
 
-* __Plain text__- to import/export plain text documents you have to use the __TxtFormatProvider__ class.
+* __Plain text__- to import/export plain text documents you have to use the Telerik.WinForms.Documents.FormatProviders.Txt.__TxtFormatProvider__ class.
           
 
-* __PDF__ - to export documents to __PDF__ you have to use the __PdfFormatProvider__ class.
+* __PDF__ - to export documents to __PDF__ you have to use the Telerik.WinForms.Documents.FormatProviders.Pdf.__PdfFormatProvider__ class.
           
 
 ## Specifics
