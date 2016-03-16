@@ -23,6 +23,7 @@ You can find below a sample code snippet demonstrating how to override the defau
 
 
 ````C#
+        
 public class CustomVirtualGridInputBehavior : VirtualGridInputBehavior
 {
     public CustomVirtualGridInputBehavior(RadVirtualGridElement gridElement) : base(gridElement)
@@ -57,7 +58,6 @@ Inherits VirtualGridInputBehavior
     Public Sub New(gridElement As RadVirtualGridElement)
         MyBase.New(gridElement)
     End Sub
-
     Protected Overrides Function HandleUpKey(keys As KeyEventArgs) As Boolean
         Dim dr As DialogResult = RadMessageBox.Show("Please confirm the move up operation!", "Confirmation", MessageBoxButtons.YesNo)
         If dr = DialogResult.Yes Then
@@ -65,7 +65,6 @@ Inherits VirtualGridInputBehavior
         End If
         Return False
     End Function
-
     Protected Overrides Function HandleDownKey(keys As KeyEventArgs) As Boolean
         Dim dr As DialogResult = RadMessageBox.Show("Please confirm the move down operation!", "Confirmation", MessageBoxButtons.YesNo)
         If dr = DialogResult.Yes Then
@@ -86,7 +85,8 @@ End Class
 
 
 ````C#
-this.radVirtualGrid1.VirtualGridElement.InputBehavior = new CustomVirtualGridInputBehavior(this.radVirtualGrid1.VirtualGridElement); 
+            
+this.radVirtualGrid1.VirtualGridElement.InputBehavior = new CustomVirtualGridInputBehavior(this.radVirtualGrid1.VirtualGridElement);
 
 ````
 ````VB.NET

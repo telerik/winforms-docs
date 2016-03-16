@@ -37,12 +37,13 @@ When you add a new descriptor to the collection, the data is automatically filte
 {{source=..\SamplesVB\VirtualGrid\Filtering\VirtualGridFiltering.vb region=SimpleDescriptors}}
 
 ````C#
+            
 FilterDescriptor filter = new FilterDescriptor();
 filter.PropertyName = "ContactName";
 filter.Operator = FilterOperator.StartsWith ;
 filter.Value = "p";
 filter.IsFilterEditor = true;
-this.radVirtualGrid1.FilterDescriptors.Add(filter);
+ this.radVirtualGrid1.FilterDescriptors.Add(filter);
 
 ````
 ````VB.NET
@@ -70,6 +71,7 @@ To filter a single data field by multiple values, you have to use the __Composit
 {{source=..\SamplesVB\VirtualGrid\Filtering\VirtualGridFiltering.vb region=CompositeDescriptors}}
 
 ````C#
+            
 CompositeFilterDescriptor compositeFilter = new CompositeFilterDescriptor();
 compositeFilter.FilterDescriptors.Add(new FilterDescriptor("ContactName", FilterOperator.StartsWith,"p"));
 compositeFilter.FilterDescriptors.First().IsFilterEditor = true;

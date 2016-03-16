@@ -27,6 +27,7 @@ You can also activate the Pan [MouseTool]({%slug winforms/diagram-(beta)/diagram
 {{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=IsPanEnabled}} 
 
 ````C#
+            
 this.radDiagram1.IsPanEnabled = true;
 
 ````
@@ -34,7 +35,7 @@ this.radDiagram1.IsPanEnabled = true;
 Me.RadDiagram1.IsPanEnabled = True
 '#End Region
 '#Region "IsZoomEnabled"
-Me.radDiagram1.IsZoomEnabled = True
+Me.RadDiagram1.IsZoomEnabled = True
 '#End Region
 '#Region "MinMaxZoom"
 Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5
@@ -87,7 +88,7 @@ this.radDiagram1.IsZoomEnabled = true;
 
 ````
 ````VB.NET
-Me.radDiagram1.IsZoomEnabled = True
+Me.RadDiagram1.IsZoomEnabled = True
 '#End Region
 '#Region "MinMaxZoom"
 Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5
@@ -117,6 +118,7 @@ The zoom range is controlled through two __DiagramConstants__:
 {{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=MinMaxZoom}} 
 
 ````C#
+            
 Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5;
 Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10;
 
@@ -158,6 +160,7 @@ If you need to initiate a zoom through code-behind, __RadDiagram__ provides two 
 {{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=ZoomIn}} 
 
 ````C#
+            
 this.radDiagram1.DiagramElement.ZoomIn(1.5);
 
 ````
@@ -182,6 +185,7 @@ Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
 {{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=ZoomOut}} 
 
 ````C#
+            
 this.radDiagram1.DiagramElement.ZoomOut(3.5);
 
 ````
@@ -194,7 +198,25 @@ Me.RadDiagram1.DiagramElement.ZoomOut(3.5)
 
 * __BringIntoView__: This method allows you to center the currently occupied space:
 {{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=BringIntoView}} 
-{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=BringIntoView}} 
+{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=BringIntoView}}
+````C#
+        
+private void radButton1_Click(object sender, EventArgs e)
+{
+    var enclosingBounds = ((IGraph)this.radDiagram1.DiagramElement).CalculateEnclosingBoundsWithoutTransform();
+    this.radDiagram1.DiagramElement.BringIntoView(enclosingBounds, false);
+    this.radDiagram1.Zoom = 1;
+}
+
+````
+````VB.NET
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim enclosingBounds = DirectCast(Me.RadDiagram1.DiagramElement, IGraph).CalculateEnclosingBoundsWithoutTransform()
+    Me.RadDiagram1.DiagramElement.BringIntoView(enclosingBounds, False)
+    Me.RadDiagram1.Zoom = 1
+End Sub
+
+```` 
 
 
 {{endregion}} 

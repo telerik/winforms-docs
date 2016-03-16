@@ -97,25 +97,27 @@ __ExcelCellFormating__ event: It gives an access to a single cell’s __SingleSt
 ````C#
 void exporter_PivotExcelCellFormatting(object sender, Telerik.WinControls.UI.Export.ExcelPivotCellExportingEventArgs e)  
 {   
-    if (e.ColumnIndex == 1 || e.ColumnIndex==2)//format the header columns
+    decimal value = 0;        
+    if (decimal.TryParse(e.Cell.Text, out value))           
     {
-        e.Cell.ForeColor = System.Drawing.Color.Red;                
-    }
-    else if (e.RowIndex == 1 )//format the header row
-    {
-        e.Cell.ForeColor = System.Drawing.Color.Green;
-    }
+        if(value>1000)                   
+            e.Cell.BackColor = System.Drawing.Color.Red;    
+        if (value < 100)                   
+            e.Cell.BackColor = System.Drawing.Color.Green;         
+    } 
 }
 
 ````
 ````VB.NET
 Private Sub exporter_PivotExcelCellFormatting(sender As Object, e As Telerik.WinControls.UI.Export.ExcelPivotCellExportingEventArgs)
-    If e.ColumnIndex = 1 OrElse e.ColumnIndex = 2 Then
-        'format the header columns
-        e.Cell.ForeColor = System.Drawing.Color.Red
-    ElseIf e.RowIndex = 1 Then
-        'format the header row
-        e.Cell.ForeColor = System.Drawing.Color.Green
+    Dim value As Decimal = 0
+    If Decimal.TryParse(e.Cell.Text, value) Then
+        If value > 1000 Then
+            e.Cell.BackColor = System.Drawing.Color.Red
+        End If
+        If value < 100 Then
+            e.Cell.BackColor = System.Drawing.Color.Green
+        End If
     End If
 End Sub
 

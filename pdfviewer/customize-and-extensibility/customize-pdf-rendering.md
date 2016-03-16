@@ -55,15 +55,15 @@ Inheriting from __IPdfFilter__ will result in the following:
 {{source=..\SamplesVB\PdfViewer\PdfDecoder.vb region=CustomFilter}} 
 
 ````C#
+        
 public class CustomFilter : Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.Pdf.Filters.IPdfFilter
 {
-    public byte[] Encode(Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.Pdf.Filters.PdfObject encodedObject, byte[] inputData)
+    public byte[] Encode(PdfObject encodedObject, byte[] inputData)
     {
         throw new NotImplementedException();
     }
     
-    public byte[] Decode(Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.Pdf.Filters.PdfObject decodedObject, 
-        byte[] inputData, Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.Pdf.Filters.DecodeParameters parms)
+    public byte[] Decode(PdfObject decodedObject, byte[] inputData, DecodeParameters decodeParameters)
     {
         throw new NotImplementedException();
     }
@@ -72,7 +72,7 @@ public class CustomFilter : Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.
     {
         get
         {
-            return Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.Pdf.Filters.PdfFilterNames.CCITTFaxDecode;
+            throw new NotImplementedException();
         }
     }
 }
@@ -81,25 +81,21 @@ public class CustomFilter : Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.
 ````VB.NET
 Public Class CustomFilter
     Implements Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.Pdf.Filters.IPdfFilter
-
     Public Function Encode(encodedObject As PdfObject, inputData As Byte()) As Byte() Implements IPdfFilter.Encode
         ' TODO: Implement this method
         Throw New NotImplementedException()
     End Function
-
     Public Function Decode(decodedObject As PdfObject, inputData As Byte(), _
                            decodeParameters As DecodeParameters) As Byte() Implements IPdfFilter.Decode
         ' TODO: Implement this method
         Throw New NotImplementedException()
     End Function
-
     Public ReadOnly Property Name() As String Implements IPdfFilter.Name
         Get
             ' TODO: Implement this property getter
             Throw New NotImplementedException()
         End Get
     End Property
-
 End Class
 
 ````
@@ -112,8 +108,9 @@ You should also register the filter as follows:
 {{source=..\SamplesVB\PdfViewer\PdfDecoder.vb region=RegisterFilter}} 
 
 ````C#
+        
 private CustomFilter _filter;
-
+        
 public PdfDecoder()
 {
     InitializeComponent();
@@ -125,10 +122,8 @@ public PdfDecoder()
 ````
 ````VB.NET
 Private _filter As CustomFilter
-
 Public Sub New()
     InitializeComponent()
-
     _filter = New CustomFilter()
     Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.Old.Pdf.Filters.FiltersManager.RegisterFilter(_filter)
 End Sub

@@ -37,12 +37,15 @@ In order to specify the default **ImageQuality** value when exporting to PDF, yo
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsImageQuality.vb region=radpdfprocessing-concepts-imagequality_0}} 
 
 ````C#
-            PdfExportSettings settings = new PdfExportSettings();
-            settings.ImageQuality = ImageQuality.Medium;
+            
+PdfExportSettings settings = new PdfExportSettings();
+settings.ImageQuality = ImageQuality.Medium;
+
 ````
 ````VB.NET
-        Dim settings As New PdfExportSettings()
-        settings.ImageQuality = ImageQuality.Medium
+Dim settings As New PdfExportSettings()
+settings.ImageQuality = ImageQuality.Medium
+
 ````
 
 {{endregion}}
@@ -58,10 +61,13 @@ If you need some particular image to be exported with a different **ImageQuality
 {{source=..\SamplesVB\PdfProcessing\Concepts\PdfProcessingConceptsImageQuality.vb region=radpdfprocessing-concepts-imagequality_1}} 
 
 ````C#
+            
 ImageSource imageSource = new ImageSource(bitmap, ImageQuality.Medium);
+
 ````
 ````VB.NET
 Dim imageSource As New ImageSource(bitmap, ImageQuality.Medium)
+
 ````
 
 {{endregion}}

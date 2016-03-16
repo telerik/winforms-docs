@@ -217,10 +217,12 @@ End Sub
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomField.vb region=settingFactory}} 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomField.cs region=settingFactory}} 
 ````C#
-this.radScheduler1.AppointmentFactory = new CustomAppointmentFactory(); 
+Me.RadScheduler1.AppointmentFactory = New CustomAppointmentFactory()
+
 ````
 ````VB.NET
- Me.RadScheduler1.AppointmentFactory = New CustomAppointmentFactory()
+this.radScheduler1.AppointmentFactory = new CustomAppointmentFactory();
+
 ````
 
 {{endregion}} 

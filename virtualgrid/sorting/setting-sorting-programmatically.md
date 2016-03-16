@@ -27,11 +27,9 @@ Here is how to create and add two __SortDescriptors__. The __PropertyName__ prop
 SortDescriptor descriptorContactTitle = new SortDescriptor();
 descriptorContactTitle.PropertyName = "ContactTitle";
 descriptorContactTitle.Direction = ListSortDirection.Ascending;
-
 SortDescriptor descriptorContactName = new SortDescriptor();
 descriptorContactName.PropertyName = "ContactName";
 descriptorContactName.Direction = ListSortDirection.Descending;
-
 this.radVirtualGrid1.SortDescriptors.Add(descriptorContactTitle);
 this.radVirtualGrid1.SortDescriptors.Add(descriptorContactName);
 
@@ -40,11 +38,9 @@ this.radVirtualGrid1.SortDescriptors.Add(descriptorContactName);
 Dim descriptorContactTitle As New SortDescriptor()
 descriptorContactTitle.PropertyName = "ContactTitle"
 descriptorContactTitle.Direction = ListSortDirection.Ascending
-
 Dim descriptorContactName As New SortDescriptor()
 descriptorContactName.PropertyName = "ContactName"
 descriptorContactName.Direction = ListSortDirection.Descending
-
 Me.RadVirtualGrid1.SortDescriptors.Add(descriptorContactTitle)
 Me.RadVirtualGrid1.SortDescriptors.Add(descriptorContactName)
 

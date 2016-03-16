@@ -18,6 +18,7 @@ Use the __RowFormatting__ event to apply custom formatting to RadVirtualGrid's d
 {{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridFormattingRows.vb region=FormattingRows}} 
 
 ````C#
+        
 private void radVirtualGrid1_RowFormatting(object sender, VirtualGridRowElementEventArgs e)
 { 
     VirtualGridCellElement contactTitleCell = radVirtualGrid1.VirtualGridElement.GetCellElement(e.RowElement.RowIndex, 3, radVirtualGrid1.MasterViewInfo);

@@ -45,7 +45,7 @@ this.radVirtualGrid1.MasterViewInfo.FilterRowHeight = 50;
 ````VB.NET
 Me.RadVirtualGrid1.MasterViewInfo.HeaderRowHeight = 30
 Me.RadVirtualGrid1.MasterViewInfo.NewRowHeight = 40
-Me.radVirtualGrid1.MasterViewInfo.FilterRowHeight = 50
+Me.RadVirtualGrid1.MasterViewInfo.FilterRowHeight = 50
 
 ```` 
 
@@ -67,7 +67,7 @@ this.radVirtualGrid1.MasterViewInfo.RowHeight = 60;
 
 ````
 ````VB.NET
-Me.radVirtualGrid1.MasterViewInfo.RowHeight = 60
+Me.RadVirtualGrid1.MasterViewInfo.RowHeight = 60
 
 ```` 
 
@@ -122,7 +122,7 @@ The API exposes two events for notifications when a change in the height of a ro
 ````C#
 private void radVirtualGrid1_RowHeightChanging(object sender, VirtualGridRowHeightChangingEventArgs e)
 {
-    if (e.RowIndex == 1)
+    if (e.RowIndex == 0)
     {
         e.Cancel = true;
     }
@@ -134,7 +134,7 @@ private void radVirtualGrid1_RowHeightChanged(object sender, VirtualGridRowEvent
 ````
 ````VB.NET
 Private Sub radVirtualGrid1_RowHeightChanging(sender As Object, e As VirtualGridRowHeightChangingEventArgs)
-    If e.RowIndex = 1 Then
+    If e.RowIndex = 0 Then
         e.Cancel = True
     End If
 End Sub

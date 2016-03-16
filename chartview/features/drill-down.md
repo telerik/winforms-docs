@@ -65,55 +65,42 @@ To handle the different levels, the __Drill__ event should be used. Depending on
 
 ````C#
 int year, month;
-
 void radChartView1_Drill(object sender, DrillEventArgs e)
 {
     CartesianSeries series = new BarSeries();
     series.ValueMember = "Value";
     series.CategoryMember = "Date";
-
     DateTimeCategoricalAxis horizontalAxis = new DateTimeCategoricalAxis();
-
     LinearAxis verticalAxis = new LinearAxis();
     verticalAxis.AxisType = AxisType.Second;
     verticalAxis.Title = "USD";
-
     switch (e.Level)
     {
         case 0:
             series.DataSource = LoadDataByYears();
-
             horizontalAxis.LabelFormat = "{0:yyyy}";
             horizontalAxis.Title = "Year";
-
             break;
         case 1:
-
             if (e.SelectedPoint != null)
                 year = ((DrillDownDataInfo)e.SelectedPoint.DataItem).Date.Year;
-
             horizontalAxis.LabelFormat = "{0:MM}";
             horizontalAxis.Title = "Month";
             e.View.Palette = KnownPalette.Metro;
             series.DataSource = ParseDataByMonth(year);
-
             break;
         case 2:
             if (e.SelectedPoint != null)
                 month = ((DrillDownDataInfo)e.SelectedPoint.DataItem).Date.Month;
-
             series = new LineSeries();
             series.ValueMember = "Value";
             series.CategoryMember = "Date";
             series.DataSource = ParseDataByDay(year, month);
-
             series.ShowLabels = true;
-
             horizontalAxis.LabelFormat = "{0:dd}";
             horizontalAxis.Title = "Day";
             break;
     }
-
     e.View.Series.Clear();
     e.View.Axes.Clear();
     series.HorizontalAxis = horizontalAxis;
@@ -127,61 +114,47 @@ void radChartView1_Drill(object sender, DrillEventArgs e)
 ````
 ````VB.NET
 Private year As Integer, month As Integer
-
 Private Sub radChartView1_Drill(sender As Object, e As DrillEventArgs)
     Dim series As CartesianSeries = New BarSeries()
     series.ValueMember = "Value"
     series.CategoryMember = "Date"
-
     Dim horizontalAxis As New DateTimeCategoricalAxis()
-
     Dim verticalAxis As New LinearAxis()
     verticalAxis.AxisType = AxisType.Second
     verticalAxis.Title = "USD"
-
     Select Case e.Level
         Case 0
             series.DataSource = LoadDataByYears()
-
             horizontalAxis.LabelFormat = "{0:yyyy}"
             horizontalAxis.Title = "Year"
-
             Exit Select
         Case 1
-
             If e.SelectedPoint IsNot Nothing Then
                 year = DirectCast(e.SelectedPoint.DataItem, DrillDownDataInfo).[Date].Year
             End If
-
             horizontalAxis.LabelFormat = "{0:MM}"
             horizontalAxis.Title = "Month"
             e.View.Palette = KnownPalette.Metro
             series.DataSource = ParseDataByMonth(year)
-
             Exit Select
         Case 2
             If e.SelectedPoint IsNot Nothing Then
                 month = DirectCast(e.SelectedPoint.DataItem, DrillDownDataInfo).[Date].Month
             End If
-
             series = New LineSeries()
             series.ValueMember = "Value"
             series.CategoryMember = "Date"
             series.DataSource = ParseDataByDay(year, month)
-
             series.ShowLabels = True
-
             horizontalAxis.LabelFormat = "{0:dd}"
             horizontalAxis.Title = "Day"
             Exit Select
     End Select
-
     e.View.Series.Clear()
     e.View.Axes.Clear()
     series.HorizontalAxis = horizontalAxis
     series.VerticalAxis = verticalAxis
     e.View.Series.Add(series)
-
     series.DrawLinesToLabels = True
     series.BorderColor = Color.FromArgb(142, 196, 65)
     series.BackColor = Color.FromArgb(142, 196, 65)

@@ -32,10 +32,13 @@ You can control whether the context menu will be displayed by the __AllowColumnH
 {{source=..\SamplesVB\VirtualGrid\ContextMenu\VirtualGridContextMenu.vb region=CellContextMenu}} 
 
 ````C#
+            
 this.radVirtualGrid1.AllowCellContextMenu = false;
+
 ````
 ````VB.NET
 Me.RadVirtualGrid1.AllowCellContextMenu = False
+
 ````
 
 {{endregion}} 
@@ -46,10 +49,13 @@ Me.RadVirtualGrid1.AllowCellContextMenu = False
 {{source=..\SamplesVB\VirtualGrid\ContextMenu\VirtualGridContextMenu.vb region=HeaderContextMenu}} 
 
 ````C#
+            
 this.radVirtualGrid1.AllowColumnHeaderContextMenu = false;
+
 ````
 ````VB.NET
 Me.RadVirtualGrid1.AllowColumnHeaderContextMenu = False
+
 ````
 
 {{endregion}} 

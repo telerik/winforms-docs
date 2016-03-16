@@ -15,7 +15,15 @@ __RadGroupBox__ supports mnemonics out of the box. When its mnemonic key is pres
 In order to activate this functionality you should specify the character that will be used for a given control by placing the __&__ character before the desired symbol. 
 
 {{source=..\SamplesCS\PanelsAndLabels\GroupBox\Advanced\TPFStructure.cs region=SetMenemonic}} 
-{{source=..\SamplesVB\PanelsAndLabels\GroupBox\Advanced\TPFStructure.vb region=SetMenemonic}} 
+{{source=..\SamplesVB\PanelsAndLabels\GroupBox\Advanced\TPFStructure.vb region=SetMenemonic}}
+````C#
+radGroupBox1.Text = "Te&st";
+
+````
+````VB.NET
+RadGroupBox1.Text = "Te&st"
+
+```` 
 
 
 {{endregion}} 

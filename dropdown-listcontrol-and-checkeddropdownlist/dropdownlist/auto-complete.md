@@ -211,7 +211,7 @@ Public Sub ApplyComparer()
     Me.radDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = SuggestMode.Contains
 End Sub
 Public Class CustomAutoCompleteSuggestHelper
-Inherits AutoCompleteSuggestHelper
+    Inherits AutoCompleteSuggestHelper
     Public Sub New(owner As RadDropDownListElement)
         MyBase.New(owner)
     End Sub
@@ -221,7 +221,7 @@ Inherits AutoCompleteSuggestHelper
     End Sub
 End Class
 Public Class CustomComparer
-Implements IComparer(Of RadListDataItem)
+    Implements IComparer(Of RadListDataItem)
     Public Function [Compare](x As RadListDataItem, y As RadListDataItem) As Integer Implements IComparer(Of RadListDataItem).[Compare]
         Return x.Text.Length.CompareTo(y.Text.Length)
     End Function

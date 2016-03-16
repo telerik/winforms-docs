@@ -32,36 +32,37 @@ The code snippet below demonstrates simple data validation scenario. It is enabl
 {{source=..\SamplesCS\VirtualGrid\Editing\EditorsProperties.cs region=CellValidating}} 
 {{source=..\SamplesVB\VirtualGrid\Editing\EditorsProperties.vb region=CellValidating}}
 ````C#
-         private void radVirtualGrid1_CellValidating(object sender, VirtualGridCellValidatingEventArgs e)
+        
+private void radVirtualGrid1_CellValidating(object sender, VirtualGridCellValidatingEventArgs e)
+{
+    if (e.RowIndex >= 0 && e.ColumnIndex == 2)
+    {
+        e.ViewInfo.SetRowErrorText(e.RowIndex, "Validation error!");
+        if (string.IsNullOrEmpty((string)e.NewValue) || ((string)e.NewValue).Trim() == string.Empty)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex == 2)
-            {
-                e.ViewInfo.SetRowErrorText(e.RowIndex, "Validation error!");
-                if (string.IsNullOrEmpty((string)e.NewValue) || ((string)e.NewValue).Trim() == string.Empty)
-                {
-                    e.Cancel = true;
-                    e.ViewInfo.SetRowErrorText(e.RowIndex, "Validation error!");
-                }
-                else
-                {
-                    e.ViewInfo.ClearRowErrorText(e.RowIndex);
-                }
-            }
+            e.Cancel = true;
+            e.ViewInfo.SetRowErrorText(e.RowIndex, "Validation error!");
         }
+        else
+        {
+            e.ViewInfo.ClearRowErrorText(e.RowIndex);
+        }
+    }
+}
 
 ````
 ````VB.NET
-    Private Sub radVirtualGrid1_CellValidating(sender As Object, e As VirtualGridCellValidatingEventArgs)
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = 2 Then
+Private Sub radVirtualGrid1_CellValidating(sender As Object, e As VirtualGridCellValidatingEventArgs)
+    If e.RowIndex >= 0 AndAlso e.ColumnIndex = 2 Then
+        e.ViewInfo.SetRowErrorText(e.RowIndex, "Validation error!")
+        If String.IsNullOrEmpty(DirectCast(e.NewValue, String)) OrElse DirectCast(e.NewValue, String).Trim() = String.Empty Then
+            e.Cancel = True
             e.ViewInfo.SetRowErrorText(e.RowIndex, "Validation error!")
-            If String.IsNullOrEmpty(DirectCast(e.NewValue, String)) OrElse DirectCast(e.NewValue, String).Trim() = String.Empty Then
-                e.Cancel = True
-                e.ViewInfo.SetRowErrorText(e.RowIndex, "Validation error!")
-            Else
-                e.ViewInfo.ClearRowErrorText(e.RowIndex)
-            End If
+        Else
+            e.ViewInfo.ClearRowErrorText(e.RowIndex)
         End If
-    End Sub 
+    End If
+End Sub
 
 ````
 

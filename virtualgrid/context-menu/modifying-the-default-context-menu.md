@@ -16,13 +16,14 @@ The default __RadVirtualGrid__  context menu can be customized in the __ContextM
 {{source=..\SamplesVB\VirtualGrid\ContextMenu\VirtualGridContextMenu.vb region=RemoveItem}} 
 
 ````C#
+        
 private void Remove_ContextMenuOpening(object sender, VirtualGridContextMenuOpeningEventArgs e)
 {
     for (int i = 0; i < e.ContextMenu.Items.Count; i++)
     {
         if (e.ContextMenu.Items[i].Text == "Delete")
         {
-            // hide the Delete option from the header row context menu
+            // hide the Delete option from the context menu
             e.ContextMenu.Items[i].Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
             // hide the separator before the Delete option
             e.ContextMenu.Items[i - 1].Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
@@ -35,7 +36,7 @@ private void Remove_ContextMenuOpening(object sender, VirtualGridContextMenuOpen
 Private Sub Remove_ContextMenuOpening(sender As Object, e As VirtualGridContextMenuOpeningEventArgs)
     For i As Integer = 0 To e.ContextMenu.Items.Count - 1
         If e.ContextMenu.Items(i).Text = "Delete" Then
-            ' hide the Delete option from the header row context menu
+            ' hide the Delete option from the context menu
             e.ContextMenu.Items(i).Visibility = Telerik.WinControls.ElementVisibility.Collapsed
             ' hide the separator before the Delete option
             e.ContextMenu.Items(i - 1).Visibility = Telerik.WinControls.ElementVisibility.Collapsed
@@ -61,6 +62,7 @@ In order to add custom menu items to the default context menu, you should create
 {{source=..\SamplesVB\VirtualGrid\ContextMenu\VirtualGridContextMenu.vb region=AddItem}} 
 
 ````C#
+        
 private void Add_ContextMenuOpening(object sender, VirtualGridContextMenuOpeningEventArgs e)
 {
     RadMenuItem customMenuItem = new RadMenuItem();

@@ -24,6 +24,7 @@ The code below sets text in the control at run time:
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetText}} 
 
 ````C#
+        
 private void SetDefaultText()
 {
     this.radTextBoxControl1.Text = "Type your name here.";
@@ -48,6 +49,7 @@ You can also define the lines in the text box at run time:
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Lines}} 
 
 ````C#
+        
 private void SetLines()
 {
     string[] lines = new string[]
@@ -79,6 +81,7 @@ By setting the __NullText__ property, the control will display a custom string w
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetNullText}} 
 
 ````C#
+    
 private void SetNullText()
 {
     this.radTextBoxControl1.NullText = "Type your name...";
@@ -103,6 +106,7 @@ Based on the value set to the __TextAlign__ property, the control will display i
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetTextAlign}} 
 
 ````C#
+        
 public void SetTextAlign()
 {
     this.radTextBoxControl1.TextAlign = HorizontalAlignment.Left;

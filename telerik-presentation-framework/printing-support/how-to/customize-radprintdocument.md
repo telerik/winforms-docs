@@ -33,25 +33,19 @@ public class MyPrintDocument : RadPrintDocument
 {
     public string LeftUpperText { get; set; }
     public Font LeftUpperFont { get; set; }
-
     public string LeftMiddleText { get; set; }
     public Font LeftMiddleFont { get; set; }
-
     public string LeftLowerText { get; set; }
     public Font LeftLowerFont { get; set; }
-
     protected override void PrintHeader(System.Drawing.Printing.PrintPageEventArgs args)
     {
         base.PrintHeader(args);
-
         Rectangle headerRect = new Rectangle(args.MarginBounds.Location, new Size(args.MarginBounds.Width, this.HeaderHeight));
         StringFormat stringFormat = new StringFormat();
         stringFormat.Alignment = StringAlignment.Near;
-
         args.Graphics.DrawString(this.LeftUpperText, this.LeftUpperFont, Brushes.Red, new Rectangle(headerRect.X, headerRect.Y, headerRect.Width / 3, headerRect.Height / 3), stringFormat);
         args.Graphics.DrawString(this.LeftMiddleText, this.LeftMiddleFont, Brushes.Blue, new Rectangle(headerRect.X, headerRect.Y + headerRect.Height / 3, headerRect.Width / 3, headerRect.Height / 3), stringFormat);
         args.Graphics.DrawString(this.LeftLowerText, this.LeftLowerFont, Brushes.Green, new Rectangle(headerRect.X, headerRect.Y + (headerRect.Height) * 2 / 3, headerRect.Width / 3, headerRect.Height / 3), stringFormat);
-
         args.Graphics.DrawLine(new Pen(Brushes.Black), headerRect.Location, new Point(headerRect.Location.X + headerRect.Width, headerRect.Location.Y));
     }
 }
@@ -60,7 +54,6 @@ public class MyPrintDocument : RadPrintDocument
 ````VB.NET
 Public Class MyPrintDocument
     Inherits RadPrintDocument
-
     Public Property LeftUpperText() As String
         Get
             Return m_LeftUpperText
@@ -70,7 +63,6 @@ Public Class MyPrintDocument
         End Set
     End Property
     Private m_LeftUpperText As String
-
     Public Property LeftUpperFont() As Font
         Get
             Return m_LeftUpperFont
@@ -80,7 +72,6 @@ Public Class MyPrintDocument
         End Set
     End Property
     Private m_LeftUpperFont As Font
-
     Public Property LeftMiddleText() As String
         Get
             Return m_LeftMiddleText
@@ -90,7 +81,6 @@ Public Class MyPrintDocument
         End Set
     End Property
     Private m_LeftMiddleText As String
-
     Public Property LeftMiddleFont() As Font
         Get
             Return m_LeftMiddleFont
@@ -100,7 +90,6 @@ Public Class MyPrintDocument
         End Set
     End Property
     Private m_LeftMiddleFont As Font
-
     Public Property LeftLowerText() As String
         Get
             Return m_LeftLowerText
@@ -110,7 +99,6 @@ Public Class MyPrintDocument
         End Set
     End Property
     Private m_LeftLowerText As String
-
     Public Property LeftLowerFont() As Font
         Get
             Return m_LeftLowerFont
@@ -120,17 +108,14 @@ Public Class MyPrintDocument
         End Set
     End Property
     Private m_LeftLowerFont As Font
-
     Protected Overrides Sub PrintHeader(args As System.Drawing.Printing.PrintPageEventArgs)
         MyBase.PrintHeader(args)
         Dim headerRect As New Rectangle(args.MarginBounds.Location, New Size(args.MarginBounds.Width, Me.HeaderHeight))
         Dim stringFormat As New StringFormat()
         stringFormat.Alignment = StringAlignment.Near
-
         args.Graphics.DrawString(Me.LeftUpperText, Me.LeftUpperFont, Brushes.Red, New Rectangle(headerRect.X, headerRect.Y, headerRect.Width / 3, headerRect.Height / 3), stringFormat)
         args.Graphics.DrawString(Me.LeftMiddleText, Me.LeftMiddleFont, Brushes.Blue, New Rectangle(headerRect.X, headerRect.Y + headerRect.Height / 3, headerRect.Width / 3, headerRect.Height / 3), stringFormat)
         args.Graphics.DrawString(Me.LeftLowerText, Me.LeftLowerFont, Brushes.Green, New Rectangle(headerRect.X, headerRect.Y + (headerRect.Height) * 2 / 3, headerRect.Width / 3, headerRect.Height / 3), stringFormat)
-
         args.Graphics.DrawLine(New Pen(Brushes.Black), headerRect.Location, New Point(headerRect.Location.X + headerRect.Width, headerRect.Location.Y))
     End Sub
 End Class
@@ -151,14 +136,12 @@ MyPrintDocument doc = new MyPrintDocument();
 doc.HeaderHeight = 60;
 doc.Landscape = true;
 doc.AssociatedObject = this.radGridView1;
-
 doc.LeftUpperText = "Line 1";
 doc.LeftUpperFont = new Font("Arial", 12, FontStyle.Italic);
 doc.LeftMiddleText = "Line 2";
 doc.LeftMiddleFont = new Font("Calibri", 8);
 doc.LeftLowerText = "Line 3";
 doc.LeftLowerFont = new Font("Tahoma", 6);
-
 RadPrintPreviewDialog dialog = new RadPrintPreviewDialog(doc);
 dialog.Show();
 
@@ -168,14 +151,12 @@ Dim doc As New MyPrintDocument()
 doc.HeaderHeight = 60
 doc.Landscape = True
 doc.AssociatedObject = Me.RadGridView1
-
 doc.LeftUpperText = "Line 1"
 doc.LeftUpperFont = New Font("Arial", 12, FontStyle.Italic)
 doc.LeftMiddleText = "Line 2"
 doc.LeftMiddleFont = New Font("Calibri", 8)
 doc.LeftLowerText = "Line 3"
 doc.LeftLowerFont = New Font("Tahoma", 6)
-
 Dim dialog As New RadPrintPreviewDialog(doc)
 dialog.Show()
 

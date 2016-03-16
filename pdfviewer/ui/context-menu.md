@@ -59,32 +59,33 @@ Additionally, you can easily add a custom menu item to the context menu. You can
 {{source=..\SamplesVB\PdfViewer\PdfUI.vb region=CustomContextMenuItem}} 
 
 ````C#
-public PdfUI()
-        {
-            InitializeComponent();
-
-            RadMenuItem item = new RadMenuItem("MyItem");
-            item.Click += item_Click;
-            this.radPdfViewer1.PdfViewerElement.ContextMenu.Items.Add(item);
-        }
         
-        private void item_Click(object sender, EventArgs e)
-        {
-            RadMessageBox.Show("Perform your custom action here");
-        }
+public PdfUI()
+{
+    InitializeComponent();
+    
+    RadMenuItem item = new RadMenuItem("MyItem");
+    item.Click += item_Click;
+    this.radPdfViewer1.PdfViewerElement.ContextMenu.Items.Add(item);
+}
+        
+private void item_Click(object sender, EventArgs e)
+{
+    RadMessageBox.Show("Perform your custom action here");
+}
+
 ````
 ````VB.NET
- Public Sub New()
-        InitializeComponent()
+Public Sub New()
+    InitializeComponent()
+    Dim item As New RadMenuItem("MyItem")
+    AddHandler item.Click, AddressOf item_Click
+    Me.RadPdfViewer1.PdfViewerElement.ContextMenu.Items.Add(item)
+End Sub
+Private Sub item_Click(sender As Object, e As EventArgs)
+    RadMessageBox.Show("Perform your custom action here")
+End Sub
 
-        Dim item As New RadMenuItem("MyItem")
-        AddHandler item.Click, AddressOf item_Click
-        Me.RadPdfViewer1.PdfViewerElement.ContextMenu.Items.Add(item)
-    End Sub
-
-    Private Sub item_Click(sender As Object, e As EventArgs)
-        RadMessageBox.Show("Perform your custom action here")
-    End Sub
 ````
 
 {{endregion}}

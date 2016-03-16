@@ -19,6 +19,7 @@ The RadTextBoxControl allow appearance customization of each instance of __IText
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Formatting1}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Formatting1}}
 ````C#
+            
 this.radTextBoxControl1.TextBlockFormatting += this.OnTextBlockFormatting;
 this.radTextBoxControl1.Text = "This is important text.";
 
@@ -35,6 +36,7 @@ Me.RadTextBoxControl1.Text = "This is important text."
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=formatting2}} 
 
 ````C#
+        
 private void OnTextBlockFormatting(object sender, Telerik.WinControls.UI.TextBlockFormattingEventArgs e)
 {
     TextBlockElement textBlock = e.TextBlock as TextBlockElement;

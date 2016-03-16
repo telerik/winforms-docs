@@ -18,6 +18,7 @@ The __CellFormatting__ event is used to add formatting to grid cells. For exampl
 {{source=..\SamplesVB\VirtualGrid\Cells\VirtualGridFormattingCells.vb region=FormattingCells}} 
 
 ````C#
+        
 private void radVirtualGrid1_CellFormatting(object sender, VirtualGridCellElementEventArgs e)
 {
     if (e.CellElement.RowIndex > -1)
@@ -43,7 +44,8 @@ private void radVirtualGrid1_CellFormatting(object sender, VirtualGridCellElemen
 ````VB.NET
 Private Sub radVirtualGrid1_CellFormatting(sender As Object, e As VirtualGridCellElementEventArgs)
     If e.CellElement.RowIndex > -1 Then
-        If e.CellElement.ColumnIndex = 3 AndAlso e.CellElement.Value IsNot Nothing AndAlso e.CellElement.Value.ToString() = "Owner" Then
+        If e.CellElement.ColumnIndex = 3 AndAlso e.CellElement.Value IsNot Nothing _
+        AndAlso e.CellElement.Value.ToString() = "Owner" Then
             e.CellElement.DrawFill = True
             e.CellElement.BackColor = Color.Yellow
             e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid

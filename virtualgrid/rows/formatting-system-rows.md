@@ -24,6 +24,7 @@ The __RowFormatting__ event is used to add formatting to grid systems rows: head
 {{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridFormattingRows.vb region=SystemRowsFormatting}} 
 
 ````C#
+        
 private void radVirtualGrid_RowFormatting(object sender, VirtualGridRowElementEventArgs e)
 {
     if (e.RowElement.RowIndex == -1)  //format header row

@@ -259,11 +259,13 @@ You can convert a **CellReferenceRange** object to **CellRange** with an extensi
 {{source=..\SamplesCS\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.cs region=radspreadprocessing-features-formulas-custom-functions_10}} 
 {{source=..\SamplesVB\RadSpreadProcessing\Features\Formulas\RadSpreadProcessingCustomFunctions.vb region=radspreadprocessing-features-formulas-custom-functions_10}} 
 
-````C#   
+````C#
 CellRange cellRange = expression.CellReferenceRange.ToCellRange();
+
 ````
 ````VB.NET
 Dim cellRange As CellRange = expression.CellReferenceRange.ToCellRange()
+
 ````
 
 {{endregion}} 
@@ -327,9 +329,9 @@ public class Arguments : FunctionBase
     }
     
     protected override RadExpression EvaluateOverride(FunctionEvaluationContext<RadExpression> context)
-            {
-                return new NumberExpression(context.Arguments.Length);
-            }
+    {
+        return new NumberExpression(context.Arguments.Length);
+    }
 }
 
 ````
@@ -355,9 +357,8 @@ Public Class Arguments
         Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description, requiredArguments, optionalArguments, optionalArgumentsRepeatCount:=3)
     End Sub
     Protected Overrides Function EvaluateOverride(context As FunctionEvaluationContext(Of RadExpression)) As RadExpression
-            Return New NumberExpression(arguments.Length)
-            Return New NumberExpression(context.Arguments.Length)
-        End Function
+        Return New NumberExpression(context.Arguments.Length)
+    End Function
 End Class
 
 ````
@@ -405,9 +406,9 @@ public class E : FunctionBase
     }
     
     protected override RadExpression EvaluateOverride(FunctionEvaluationContext<RadExpression> context)
-         {
-             return NumberExpression.E;
-         }
+    {
+        return NumberExpression.E;
+    }
 }
 
 ````
@@ -431,8 +432,8 @@ Public Class E
         Info = New FunctionInfo(FunctionName, FunctionCategory.MathTrig, description)
     End Sub
     Protected Overrides Function EvaluateOverride(context As FunctionEvaluationContext(Of RadExpression)) As RadExpression
-	Return NumberExpression.E
-End Function
+        Return NumberExpression.E
+    End Function
 End Class
 
 ````

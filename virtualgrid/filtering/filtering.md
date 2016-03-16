@@ -20,11 +20,13 @@ __RadVirtualGrid__  supports data filtering. Set the RadVirtualGrid.__AllowFilte
 {{source=..\SamplesVB\VirtualGrid\Filtering\VirtualGridFiltering.vb region=AllowFiltering}}
 
 ````C#
+            
 this.radVirtualGrid1.AllowFiltering = true;
 
 ````
 ````VB.NET
 Me.RadVirtualGrid1.AllowFiltering = True
+
 ```` 
 
 {{endregion}}
@@ -50,15 +52,16 @@ The following example demonstrates how to achieve filtering functionality in __R
 {{source=..\SamplesVB\VirtualGrid\Filtering\VirtualGridFiltering.vb region=Filtering}}
 
 ````C#
+        
 private void radVirtualGrid1_FilterChanged(object sender, VirtualGridEventArgs e)
 {
     SelectData();
 }
-
+        
 private readonly string selectCommand = "SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, PostalCode FROM Customers";
 private string[] columnNames = new string[] { "CompanyName", "ContactName", "ContactTitle", "Address", "PostalCode" };
 List<Customer> data = new List<Customer>();
-
+        
 private void SelectData()
 {
     string filterExpression = this.radVirtualGrid1.FilterDescriptors.Expression;
@@ -93,7 +96,7 @@ private void SelectData()
     
     this.radVirtualGrid1.RowCount = data.Count;
 }
-
+        
 private void radVirtualGrid1_CellValueNeeded(object sender, Telerik.WinControls.UI.VirtualGridCellValueNeededEventArgs e)
 {
     if (e.ColumnIndex < 0)
@@ -113,7 +116,7 @@ private void radVirtualGrid1_CellValueNeeded(object sender, Telerik.WinControls.
         e.Value = data[e.RowIndex][e.ColumnIndex];
     }
 }
-
+        
 private void VirtualGridFiltering_Load(object sender, EventArgs e)
 {
     this.radVirtualGrid1.ColumnCount = columnNames.Length;
@@ -121,7 +124,7 @@ private void VirtualGridFiltering_Load(object sender, EventArgs e)
     this.radVirtualGrid1.FilterChanged += radVirtualGrid1_FilterChanged;
     SelectData();
 }
-
+        
 public class Customer
 {
     public string CustomerId { get; set; }
@@ -169,43 +172,34 @@ public class Customer
     }
 }
 
-
 ````
 ````VB.NET
 Private Sub radVirtualGrid1_FilterChanged(sender As Object, e As VirtualGridEventArgs)
     SelectData()
 End Sub
-
 Private ReadOnly selectCommand As String = "SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, PostalCode FROM Customers"
 Private columnNames As String() = New String() {"CompanyName", "ContactName", "ContactTitle", "Address", "PostalCode"}
 Private data As New List(Of Customer)()
-
 Private Sub SelectData()
     Dim filterExpression As String = Me.RadVirtualGrid1.FilterDescriptors.Expression
-
     If Not String.IsNullOrEmpty(filterExpression) Then
         filterExpression = Convert.ToString("WHERE ") & filterExpression
     End If
-
     Dim commandString As String = [String].Format("{0} {1}", selectCommand, filterExpression)
     Using command As New System.Data.OleDb.OleDbCommand(commandString)
         command.Connection = New System.Data.OleDb.OleDbConnection(My.Settings.NwindConnectionString)
         command.Connection.Open()
         Dim reader As IDataReader = command.ExecuteReader()
         data.Clear()
-
         While reader.Read()
             Dim customer As New Customer(Convert.ToString(reader(0)), Convert.ToString(reader(1)), Convert.ToString(reader(2)), _
                                          Convert.ToString(reader(3)), Convert.ToString(reader(4)), Convert.ToString(reader(5)))
             data.Add(customer)
         End While
-
         command.Connection.Close()
     End Using
-
     Me.RadVirtualGrid1.RowCount = data.Count
 End Sub
-
 Private Sub radVirtualGrid1_CellValueNeeded(sender As Object, e As Telerik.WinControls.UI.VirtualGridCellValueNeededEventArgs)
     If e.ColumnIndex < 0 Then
         Return
@@ -213,23 +207,19 @@ Private Sub radVirtualGrid1_CellValueNeeded(sender As Object, e As Telerik.WinCo
     If e.RowIndex = RadVirtualGrid.HeaderRowIndex Then
         e.Value = columnNames(e.ColumnIndex)
     End If
-
     If e.RowIndex < 0 Then
         e.FieldName = columnNames(e.ColumnIndex)
     End If
-
     If e.RowIndex >= 0 AndAlso e.RowIndex < data.Count Then
         e.Value = data(e.RowIndex)(e.ColumnIndex)
     End If
 End Sub
-
 Private Sub VirtualGridFiltering_Load(sender As Object, e As EventArgs) Handles Me.Load
     Me.RadVirtualGrid1.ColumnCount = columnNames.Length
     AddHandler Me.RadVirtualGrid1.CellValueNeeded, AddressOf radVirtualGrid1_CellValueNeeded
     AddHandler Me.RadVirtualGrid1.FilterChanged, AddressOf radVirtualGrid1_FilterChanged
     SelectData()
 End Sub
-
 Public Class Customer
     Public Property CustomerId() As String
         Get
@@ -240,7 +230,6 @@ Public Class Customer
         End Set
     End Property
     Private m_CustomerId As String
-
     Public Property CompanyName() As String
         Get
             Return m_CompanyName
@@ -250,7 +239,6 @@ Public Class Customer
         End Set
     End Property
     Private m_CompanyName As String
-
     Public Property ContactName() As String
         Get
             Return m_ContactName
@@ -260,7 +248,6 @@ Public Class Customer
         End Set
     End Property
     Private m_ContactName As String
-
     Public Property ContactTitle() As String
         Get
             Return m_ContactTitle
@@ -270,7 +257,6 @@ Public Class Customer
         End Set
     End Property
     Private m_ContactTitle As String
-
     Public Property Address() As String
         Get
             Return m_Address
@@ -280,7 +266,6 @@ Public Class Customer
         End Set
     End Property
     Private m_Address As String
-
     Public Property PostalCode() As String
         Get
             Return m_PostalCode
@@ -290,7 +275,6 @@ Public Class Customer
         End Set
     End Property
     Private m_PostalCode As String
-
     Public Sub New(customerId As String, companyName As String, contactName As String, contactTitle As String, address As String, postalCode As String)
         Me.CustomerId = customerId
         Me.CompanyName = companyName
@@ -299,7 +283,6 @@ Public Class Customer
         Me.Address = address
         Me.PostalCode = postalCode
     End Sub
-
     Default Public ReadOnly Property Item(i As Integer) As String
         Get
             Select Case i

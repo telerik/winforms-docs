@@ -15,6 +15,7 @@ Since the editors are created each time when the user stars edit operation, they
 {{source=..\SamplesCS\VirtualGrid\Editing\EditorsProperties.cs region=AccessProperties}} 
 {{source=..\SamplesVB\Virtualgrid\Editing\EditorsProperties.vb region=AccessProperties}}
 ````C#
+        
 void radVirtualGrid1_CellEditorInitialized(object sender, VirtualGridCellEditorInitializedEventArgs e)
 {
     var dateTimeEditor = e.ActiveEditor as VirtualGridDateTimeEditor;
@@ -24,7 +25,7 @@ void radVirtualGrid1_CellEditorInitialized(object sender, VirtualGridCellEditorI
         editorElement.Format = DateTimePickerFormat.Custom;
         editorElement.CustomFormat = "dd/MM/yyyy";
     }
-        
+    
     var dropDownListEditor = e.ActiveEditor as VirtualGridDropDownListEditor;
     if (dropDownListEditor != null)
     {
@@ -34,7 +35,7 @@ void radVirtualGrid1_CellEditorInitialized(object sender, VirtualGridCellEditorI
         
         element.DataSource = GetTable();
     }
-        
+    
     var textBoxEditor = e.ActiveEditor as VirtualGridTextBoxEditor;
     if (textBoxEditor != null)
     {

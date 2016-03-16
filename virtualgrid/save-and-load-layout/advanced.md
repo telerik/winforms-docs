@@ -65,11 +65,9 @@ private void DefineData(object sender, EventArgs e)
     this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(VirtualGridViewInfo), "ColumnDataTypes", new DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden));
     this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(VirtualGridTableViewState), "ItemSizes", new DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden));
     this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(VirtualGridTableViewState), "ItemCount", new DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden));
-
     //Sort Descriptors            
     this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(VirtualGridViewInfo), "SortDescriptors", DesignerSerializationVisibilityAttribute.Hidden);
     this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(SortDescriptor), "Direction", DesignerSerializationVisibilityAttribute.Hidden);
-
     //Filter Descriptors           
     this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(VirtualGridViewInfo), "FilterDescriptors", DesignerSerializationVisibilityAttribute.Hidden);
     this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Hidden);
@@ -86,11 +84,9 @@ Private Sub DefineData(sender As Object, e As EventArgs)
     Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(VirtualGridViewInfo), "ColumnDataTypes", New DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden))
     Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(VirtualGridTableViewState), "ItemSizes", New DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden))
     Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(VirtualGridTableViewState), "ItemCount", New DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden))
-
     'Sort Descriptors            
     Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(VirtualGridViewInfo), "SortDescriptors", DesignerSerializationVisibilityAttribute.Hidden)
     Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(SortDescriptor), "Direction", DesignerSerializationVisibilityAttribute.Hidden)
-
     'Filter Descriptors           
     Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(VirtualGridViewInfo), "FilterDescriptors", DesignerSerializationVisibilityAttribute.Hidden)
     Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Hidden)

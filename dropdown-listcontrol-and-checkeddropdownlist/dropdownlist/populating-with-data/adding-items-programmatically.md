@@ -57,9 +57,6 @@ Dim dataItem As New RadListDataItem()
 dataItem.Text = "Chicken toast"
 dataItem.Image = My.Resources.chicken_toast
 Me.radDropDownList1.Items.Add(dataItem)
-'#End Region
-'#region autoCNone
-Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None
 
 ````
 

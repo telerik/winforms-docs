@@ -73,10 +73,12 @@ To use auto-completion without specifying a data source, you need to populate th
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=AddAutoCompleteItems}} 
 
 ````C#
+    
 private void AddAutoCompleteItems()
 {
     this.radTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest;
     RadListDataItemCollection autoCompleteItems = this.radTextBoxControl1.AutoCompleteItems;
+        
     autoCompleteItems.Add(new RadListDataItem("Luke"));
     autoCompleteItems.Add(new RadListDataItem("Max"));
     autoCompleteItems.Add(new RadListDataItem("Adam"));

@@ -19,6 +19,7 @@ The current API includes the following members, which allow customization of the
 {{source=..\SamplesVB\PdfViewer\PdfAnnotations.vb region=AnnotationClicked}} 
 
 ````C#
+        
 private void radPdfViewer1_AnnotationClicked(object sender, Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.EventArgs.AnnotationEventArgs e)
 {
     Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link l = e.Annotation as Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link;
@@ -60,28 +61,29 @@ End Sub
 {{source=..\SamplesVB\PdfViewer\PdfAnnotations.vb region=GetAllLinks}} 
 
 ````C#
+        
 private IEnumerable<Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link> GetAllLinks(Telerik.Windows.Pdf.Documents.Fixed.Model.RadFixedDocument document)
+{
+    foreach (Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Annotation a in document.Annotations)
+    {
+        Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link l = a as Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link;
+        if (l != null)
         {
-            foreach (Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Annotation a in document.Annotations)
-            {
-                Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link l = a as Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link;
-                if (l != null)
-                {
-                    yield return l;
-                }
-            }
+            yield return l;
         }
+    }
+}
 
 ````
 ````VB.NET
- Private Iterator Function GetAllLinks(document As Telerik.Windows.Pdf.Documents.Fixed.Model.RadFixedDocument) As IEnumerable(Of Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link)
-        For Each a As Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Annotation In document.Annotations
-            Dim l As Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link = TryCast(a, Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link)
-            If l IsNot Nothing Then
-                Yield l
-            End If
-        Next
-    End Function
+Private Iterator Function GetAllLinks(document As Telerik.Windows.Pdf.Documents.Fixed.Model.RadFixedDocument) As IEnumerable(Of Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link)
+    For Each a As Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Annotation In document.Annotations
+        Dim l As Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link = TryCast(a, Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link)
+        If l IsNot Nothing Then
+            Yield l
+        End If
+    Next
+End Function
 
 ````
 
@@ -93,17 +95,18 @@ The bookmarks in terms of “docx bookmarks” are not explicitly saved in PDF f
 {{source=..\SamplesVB\PdfViewer\PdfAnnotations.vb region=Bookmarks}} 
 
 ````C#
- private IEnumerable<Telerik.Windows.Pdf.Documents.Fixed.Model.Navigation.Destination> GetAllBookmarks(Telerik.Windows.Pdf.Documents.Fixed.Model.RadFixedDocument document)
+        
+private IEnumerable<Telerik.Windows.Pdf.Documents.Fixed.Model.Navigation.Destination> GetAllBookmarks(Telerik.Windows.Pdf.Documents.Fixed.Model.RadFixedDocument document)
+{
+    foreach (Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Annotation a in document.Annotations)
+    {
+        Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link l = a as Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link;
+        if (l != null && l.Destination != null)
         {
-            foreach (Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Annotation a in document.Annotations)
-            {
-                Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link l = a as Telerik.Windows.Pdf.Documents.Fixed.Model.Annotations.Link;
-                if (l != null && l.Destination != null)
-                {
-                    yield return l.Destination;
-                }
-            }
+            yield return l.Destination;
         }
+    }
+}
 
 ````
 ````VB.NET
@@ -126,15 +129,18 @@ In this way it would be possible to create some UI that contains all bookmarks. 
 {{source=..\SamplesVB\PdfViewer\PdfAnnotations.vb region=GoToDestination}} 
 
 ````C#
+        
 private void GoToDestination(Telerik.Windows.Pdf.Documents.Fixed.Model.Navigation.Destination destination)
-        {
-            this.radPdfViewer1.PdfViewerElement.GoToDestination(destination);
-        }  
+{
+    this.radPdfViewer1.PdfViewerElement.GoToDestination(destination);
+}
+
 ````
 ````VB.NET
- Private Sub GoToDestination(destination As Telerik.Windows.Pdf.Documents.Fixed.Model.Navigation.Destination)
-        Me.RadPdfViewer1.PdfViewerElement.GoToDestination(destination)
-    End Sub 
+Private Sub GoToDestination(destination As Telerik.Windows.Pdf.Documents.Fixed.Model.Navigation.Destination)
+    Me.RadPdfViewer1.PdfViewerElement.GoToDestination(destination)
+End Sub
+
 ````
 
 {{endregion}}

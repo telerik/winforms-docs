@@ -192,13 +192,13 @@ Inherits RadListVisualItem
         mainContainer.Children.Add(rightColumn)
         DockLayoutPanel.SetDock(leftColumn, Telerik.WinControls.Layouts.Dock.Left)
         DockLayoutPanel.SetDock(rightColumn, Telerik.WinControls.Layouts.Dock.Right)
-		leftColumn.NotifyParentOnMouseInput = True
-		rightColumn.NotifyParentOnMouseInput = True
-		titleElement.NotifyParentOnMouseInput = True
-		photoElement.NotifyParentOnMouseInput = True
-		nameElement.NotifyParentOnMouseInput = True
-		addressElement.NotifyParentOnMouseInput = True
-		phoneElement.NotifyParentOnMouseInput = True
+        leftColumn.NotifyParentOnMouseInput = True
+        rightColumn.NotifyParentOnMouseInput = True
+        titleElement.NotifyParentOnMouseInput = True
+        photoElement.NotifyParentOnMouseInput = True
+        nameElement.NotifyParentOnMouseInput = True
+        addressElement.NotifyParentOnMouseInput = True
+        phoneElement.NotifyParentOnMouseInput = True
     End Sub
     Public Overrides Sub Synchronize()
         MyBase.Synchronize()

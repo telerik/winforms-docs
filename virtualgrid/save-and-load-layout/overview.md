@@ -26,12 +26,10 @@ private void SaveButton_Click(object sender, EventArgs e)
     SaveFileDialog dialog = new SaveFileDialog();
     dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
     dialog.Title = "Select a xml file";
-
     if (dialog.ShowDialog() == DialogResult.OK)
     {
         s = dialog.FileName;
     }
-
     this.radVirtualGrid1.SaveLayout(s);
 }
 
@@ -42,11 +40,9 @@ Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles RadButton
     Dim dialog As New SaveFileDialog()
     dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
     dialog.Title = "Select a xml file"
-
     If dialog.ShowDialog() = DialogResult.OK Then
         s = dialog.FileName
     End If
-
     Me.RadVirtualGrid1.SaveLayout(s)
 End Sub
 
@@ -68,12 +64,10 @@ private void LoadButton_Click(object sender, EventArgs e)
     OpenFileDialog dialog = new OpenFileDialog();
     dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
     dialog.Title = "Select a xml file";
-
     if (dialog.ShowDialog() == DialogResult.OK)
     {
         s = dialog.FileName;
     }
-
     this.radVirtualGrid1.LoadLayout(s);
 }
 
@@ -84,11 +78,9 @@ Private Sub LoadButton_Click(sender As Object, e As EventArgs) Handles RadButton
     Dim dialog As New OpenFileDialog()
     dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
     dialog.Title = "Select a xml file"
-
     If dialog.ShowDialog() = DialogResult.OK Then
         s = dialog.FileName
     End If
-
     Me.RadVirtualGrid1.LoadLayout(s)
 End Sub
 

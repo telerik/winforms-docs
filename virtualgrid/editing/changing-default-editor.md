@@ -15,6 +15,7 @@ By default the grid is using the underlying field data type to determine the edi
 {{source=..\SamplesCS\VirtualGrid\Editing\EditorsProperties.cs region=ChangeEditor}} 
 {{source=..\SamplesVB\VirtualGrid\Editing\EditorsProperties.vb region=ChangeEditor}}
 ````C#
+        
 private void RadVirtualGrid1_EditorRequired(object sender, VirtualGridEditorRequiredEventArgs e)
 {
     if (e.ColumnIndex == 1)
@@ -23,8 +24,6 @@ private void RadVirtualGrid1_EditorRequired(object sender, VirtualGridEditorRequ
         RadDropDownListEditorElement element = dropDownListEditor.EditorElement as RadDropDownListEditorElement;
         element.DataSource = new string[] { "Mr.", "Mrs.", "Ms.", "Dr." };
         e.Editor = dropDownListEditor;
-        
-        
     }
 }
 
@@ -38,6 +37,9 @@ Private Sub RadVirtualGrid1_EditorRequired(ByVal sender As Object, ByVal e As Vi
         e.Editor = dropDownListEditor
     End If
 End Sub
+Private Sub DefineColumnDataType()
+    '#Region "DefineColumnDataType"
+    Me.radVirtualGrid1.MasterViewInfo.ColumnDataTypes(0) = GetType(Integer)
 
 ````
 

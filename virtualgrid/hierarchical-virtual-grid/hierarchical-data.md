@@ -34,8 +34,8 @@ The following example demonstrates how to setup the hierarchy in __RadVirtualGri
 {{source=..\SamplesVB\VirtualGrid\Hierarchy\VirtualGridHierarchy.vb region=SetupHierarchy}}
 
 ````C#
+        
 List<Employee> data = new List<Employee>();
-
 private void VirtualGridHierarchy_Load(object sender, EventArgs e)
 {
     this.employeesTableAdapter.Fill(this.nwindDataSet.Employees);
@@ -46,13 +46,13 @@ private void VirtualGridHierarchy_Load(object sender, EventArgs e)
     LoadData();
     this.radVirtualGrid1.TableElement.RowHeight = 120;
 }
-
+        
 private void radVirtualGrid1_RowExpanding(object sender, VirtualGridRowExpandingEventArgs e)
 {
     e.ChildViewInfo.ColumnCount = Sale.FieldNames.Length;
     e.ChildViewInfo.RowCount = data[e.ChildViewInfo.ParentRowIndex].Sales.Count;
 }
-
+        
 private void radVirtualGrid1_CellFormatting(object sender, VirtualGridCellElementEventArgs e)
 {
     //display the Employee's image
@@ -72,12 +72,12 @@ private void radVirtualGrid1_CellFormatting(object sender, VirtualGridCellElemen
         e.CellElement.ResetValue(LightVisualElement.ImageProperty, Telerik.WinControls.ValueResetFlags.Local);
     }
 }
-
+        
 private void radVirtualGrid1_QueryHasChildRows(object sender, VirtualGridQueryHasChildRowsEventArgs e)
 {
     e.HasChildRows = (e.ViewInfo == this.radVirtualGrid1.MasterViewInfo);
 }
-
+        
 private void radVirtualGrid1_CellValueNeeded(object sender, VirtualGridCellValueNeededEventArgs e)
 {
     if (e.ViewInfo == this.radVirtualGrid1.MasterViewInfo)
@@ -137,7 +137,7 @@ private void radVirtualGrid1_CellValueNeeded(object sender, VirtualGridCellValue
         }
     }
 }
-
+        
 private void LoadData()
 {
     Random random = new Random();
@@ -164,7 +164,7 @@ private void LoadData()
     this.radVirtualGrid1.RowCount = data.Count;
     this.radVirtualGrid1.ColumnCount = Employee.FieldNames.Length;
 }
-
+        
 private Image GetImageFromBytes(byte[] bytes)
 {
     Image result = null;
@@ -199,7 +199,6 @@ private Image GetImageFromBytes(byte[] bytes)
 ````
 ````VB.NET
 Private data As New List(Of Employee)()
-
 Private Sub VirtualGridHierarchy_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     Me.EmployeesTableAdapter.Fill(Me.NwindDataSet.Employees)
     AddHandler Me.RadVirtualGrid1.CellValueNeeded, AddressOf radVirtualGrid1_CellValueNeeded
@@ -209,18 +208,15 @@ Private Sub VirtualGridHierarchy_Load(sender As Object, e As EventArgs) Handles 
     LoadData()
     Me.RadVirtualGrid1.TableElement.RowHeight = 120
 End Sub
-
 Private Sub radVirtualGrid1_RowExpanding(sender As Object, e As VirtualGridRowExpandingEventArgs)
     e.ChildViewInfo.ColumnCount = Sale.FieldNames.Length
     e.ChildViewInfo.RowCount = data(e.ChildViewInfo.ParentRowIndex).Sales.Count
 End Sub
-
 Private Sub radVirtualGrid1_CellFormatting(sender As Object, e As VirtualGridCellElementEventArgs)
     'display the Employee's image
     If e.CellElement.ColumnIndex < 0 Then
         Return
     End If
-
     If TypeOf e.CellElement.Value Is Image Then
         e.CellElement.Image = DirectCast(e.CellElement.Value, Image)
         e.CellElement.ImageLayout = ImageLayout.Zoom
@@ -229,19 +225,15 @@ Private Sub radVirtualGrid1_CellFormatting(sender As Object, e As VirtualGridCel
         e.CellElement.ResetValue(LightVisualElement.ImageProperty, Telerik.WinControls.ValueResetFlags.Local)
     End If
 End Sub
-
 Private Sub radVirtualGrid1_QueryHasChildRows(sender As Object, e As VirtualGridQueryHasChildRowsEventArgs)
     e.HasChildRows = (e.ViewInfo.Equals(Me.RadVirtualGrid1.MasterViewInfo))
 End Sub
-
 Private Sub radVirtualGrid1_CellValueNeeded(sender As Object, e As VirtualGridCellValueNeededEventArgs)
     If e.ViewInfo.Equals(Me.RadVirtualGrid1.MasterViewInfo) Then
         If e.ColumnIndex < 0 Then
             Return
         End If
-
         e.FieldName = Employee.FieldNames(e.ColumnIndex)
-
         If e.RowIndex = RadVirtualGrid.HeaderRowIndex Then
             e.Value = e.FieldName
         ElseIf e.RowIndex >= 0 Then
@@ -256,9 +248,7 @@ Private Sub radVirtualGrid1_CellValueNeeded(sender As Object, e As VirtualGridCe
         If e.ColumnIndex < 0 Then
             Return
         End If
-
         e.FieldName = Sale.FieldNames(e.ColumnIndex)
-
         If e.RowIndex = RadVirtualGrid.HeaderRowIndex Then
             e.Value = e.FieldName
         ElseIf e.RowIndex >= 0 Then
@@ -273,7 +263,6 @@ Private Sub radVirtualGrid1_CellValueNeeded(sender As Object, e As VirtualGridCe
         End If
     End If
 End Sub
-
 Private Sub LoadData()
     Dim random As New Random()
     For i As Integer = 0 To Me.NwindDataSet.Employees.Count - 1
@@ -299,11 +288,9 @@ Private Sub LoadData()
     Me.RadVirtualGrid1.RowCount = data.Count
     Me.RadVirtualGrid1.ColumnCount = Employee.FieldNames.Length
 End Sub
-
 Private Function GetImageFromBytes(bytes As Byte()) As Image
     Dim result As Image = Nothing
     Dim stream As MemoryStream = Nothing
-
     Try
         stream = New MemoryStream(bytes, 78, bytes.Length - 78)
         result = Image.FromStream(stream)
@@ -319,7 +306,6 @@ Private Function GetImageFromBytes(bytes As Byte()) As Image
             stream.Close()
         End If
     End Try
-
     Return result
 End Function
 
@@ -333,20 +319,15 @@ End Function
 {{source=..\SamplesVB\VirtualGrid\Hierarchy\VirtualGridHierarchy.vb region=HelpClasses}}
 
 ````C#
+        
 public class Employee
 {
     public static readonly string[] FieldNames = { "Photo", "Name", "Salary", "HireDate", "Title" };
-
     public Image Photo { get; set; }
-
     public string Name { get; set; }
-
     public decimal Salary { get; set; }
-
     public DateTime HireDate { get; set; }
-
     public string Title { get; set; }
-
     public List<Sale> Sales { get; private set; }
     
     public object this[int index]
@@ -376,19 +357,14 @@ public class Employee
         Sales = new List<Sale>();
     }
 }
-
+        
 public class Sale
 {
     public static readonly string[] FieldNames = { "Name", "ProductNumber", "Quantity", "Discount", "Total" };
-
     public string Name { get; set; }
-
     public int ProductNumber { get; set; }
-
     public int Quantity { get; set; }
-
     public int Discount { get; set; }
-
     public int Total { get; set; }
     
     public object this[int index]
@@ -418,7 +394,6 @@ public class Sale
 ````VB.NET
 Public Class Employee
     Public Shared ReadOnly FieldNames As String() = {"Photo", "Name", "Salary", "HireDate", "Title"}
-
     Public Property Photo() As Image
         Get
             Return m_Photo
@@ -428,7 +403,6 @@ Public Class Employee
         End Set
     End Property
     Private m_Photo As Image
-
     Public Property Name() As String
         Get
             Return m_Name
@@ -438,7 +412,6 @@ Public Class Employee
         End Set
     End Property
     Private m_Name As String
-
     Public Property Salary() As Decimal
         Get
             Return m_Salary
@@ -448,7 +421,6 @@ Public Class Employee
         End Set
     End Property
     Private m_Salary As Decimal
-
     Public Property HireDate() As DateTime
         Get
             Return m_HireDate
@@ -458,7 +430,6 @@ Public Class Employee
         End Set
     End Property
     Private m_HireDate As DateTime
-
     Public Property Title() As String
         Get
             Return m_Title
@@ -468,7 +439,6 @@ Public Class Employee
         End Set
     End Property
     Private m_Title As String
-
     Public Property Sales() As List(Of Sale)
         Get
             Return m_Sales
@@ -478,7 +448,6 @@ Public Class Employee
         End Set
     End Property
     Private m_Sales As List(Of Sale)
-
     Default Public ReadOnly Property Item(index As Integer) As Object
         Get
             Select Case index
@@ -497,15 +466,12 @@ Public Class Employee
             End Select
         End Get
     End Property
-
     Public Sub New()
         Sales = New List(Of Sale)()
     End Sub
 End Class
-
 Public Class Sale
     Public Shared ReadOnly FieldNames As String() = {"Name", "ProductNumber", "Quantity", "Discount", "Total"}
-
     Public Property Name() As String
         Get
             Return m_Name
@@ -515,7 +481,6 @@ Public Class Sale
         End Set
     End Property
     Private m_Name As String
-
     Public Property ProductNumber() As Integer
         Get
             Return m_ProductNumber
@@ -525,7 +490,6 @@ Public Class Sale
         End Set
     End Property
     Private m_ProductNumber As Integer
-
     Public Property Quantity() As Integer
         Get
             Return m_Quantity
@@ -535,7 +499,6 @@ Public Class Sale
         End Set
     End Property
     Private m_Quantity As Integer
-
     Public Property Discount() As Integer
         Get
             Return m_Discount
@@ -545,7 +508,6 @@ Public Class Sale
         End Set
     End Property
     Private m_Discount As Integer
-
     Public Property Total() As Integer
         Get
             Return m_Total
@@ -555,7 +517,6 @@ Public Class Sale
         End Set
     End Property
     Private m_Total As Integer
-
     Default Public ReadOnly Property Item(index As Integer) As Object
         Get
             Select Case index

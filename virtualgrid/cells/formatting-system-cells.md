@@ -26,6 +26,7 @@ For example, the code sample below changes the __ForeColor__, __BackColor__ and 
 {{source=..\SamplesVB\VirtualGrid\Cells\VirtualGridFormattingCells.vb region=SystemCellsFormatting}} 
 
 ````C#
+        
 private void radVirtualGrid_CellFormatting(object sender, VirtualGridCellElementEventArgs e)
 {
     if (e.CellElement.RowIndex == -1)  //format header row
@@ -81,7 +82,6 @@ private void radVirtualGrid_CellFormatting(object sender, VirtualGridCellElement
     }
 }
 
-
 ````
 ````VB.NET
 Private Sub radVirtualGrid_CellFormatting(sender As Object, e As VirtualGridCellElementEventArgs)
@@ -126,7 +126,6 @@ Private Sub radVirtualGrid_CellFormatting(sender As Object, e As VirtualGridCell
         End If
     End If
 End Sub
-
 
 ````
 

@@ -39,6 +39,7 @@ You can use the following approach to create a custom data cell with a check box
 
 
 ````C#
+        
 public class MyVirtualGridCheckBoxCellElement : VirtualGridCellElement
 {
     private RadCheckBoxElement checkBox;
@@ -59,38 +60,38 @@ public class MyVirtualGridCheckBoxCellElement : VirtualGridCellElement
         {
             this.checkBox.Checked = (bool)args.Value;
         }
-        
+    
         this.Text = String.Empty;
     }
     
     public override bool IsCompatible(int data, object context)
     {
         VirtualGridRowElement rowElement = context as VirtualGridRowElement;
-        
+    
         return data == 3 && rowElement.RowIndex >= 0;
     }
     
     public override void Attach(int data, object context)
     {
         base.Attach(data, context);
-        
+    
         this.checkBox.ToggleStateChanged += checkBox_ToggleStateChanged;
     }
     
     public override void Detach()
     {
         this.checkBox.ToggleStateChanged -= checkBox_ToggleStateChanged;
-        
+    
         base.Detach();
     }
     
     protected override SizeF ArrangeOverride(SizeF finalSize)
     {
         SizeF size = base.ArrangeOverride(finalSize);
-        
+            
         this.checkBox.Arrange(new RectangleF((finalSize.Width - this.checkBox.DesiredSize.Width) / 2f,
             (finalSize.Height - this.checkBox.DesiredSize.Height) / 2f, this.checkBox.DesiredSize.Width, this.checkBox.DesiredSize.Height));
-        
+    
         return size;
     }
     
@@ -113,57 +114,41 @@ public class MyVirtualGridCheckBoxCellElement : VirtualGridCellElement
 Public Class MyVirtualGridCheckBoxCellElement
     Inherits VirtualGridCellElement
     Private checkBox As RadCheckBoxElement
-
     Protected Overrides Sub CreateChildElements()
         MyBase.CreateChildElements()
-
         Me.checkBox = New RadCheckBoxElement()
         Me.Children.Add(Me.checkBox)
     End Sub
-
     Protected Overrides Sub UpdateInfo(args As VirtualGridCellValueNeededEventArgs)
         MyBase.UpdateInfo(args)
-
         If TypeOf args.Value Is Boolean Then
             Me.checkBox.Checked = CBool(args.Value)
         End If
-
         Me.Text = [String].Empty
     End Sub
-
     Public Overrides Function IsCompatible(data As Integer, context As Object) As Boolean
         Dim rowElement As VirtualGridRowElement = TryCast(context, VirtualGridRowElement)
-
-        Return data = 3 AndAlso rowElement.RowIndex >= 0
+        Return data = 3 AndAlso rowElement.RowIndex = 0
     End Function
-
     Public Overrides Sub Attach(data As Integer, context As Object)
         MyBase.Attach(data, context)
-
         AddHandler Me.checkBox.ToggleStateChanged, AddressOf checkBox_ToggleStateChanged
     End Sub
-
     Public Overrides Sub Detach()
         RemoveHandler Me.checkBox.ToggleStateChanged, AddressOf checkBox_ToggleStateChanged
-
         MyBase.Detach()
     End Sub
-
     Protected Overrides Function ArrangeOverride(finalSize As SizeF) As SizeF
         Dim size As SizeF = MyBase.ArrangeOverride(finalSize)
-
         Me.checkBox.Arrange(New RectangleF((finalSize.Width - Me.checkBox.DesiredSize.Width) / 2.0F, _
                                            (finalSize.Height - Me.checkBox.DesiredSize.Height) / 2.0F, Me.checkBox.DesiredSize.Width, Me.checkBox.DesiredSize.Height))
-
         Return size
     End Function
-
     Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
         Get
             Return GetType(VirtualGridCellElement)
         End Get
     End Property
-
     Private Sub checkBox_ToggleStateChanged(sender As Object, args As StateChangedEventArgs)
         Me.TableElement.GridElement.SetCellValue(Me.checkBox.Checked, Me.RowIndex, Me.ColumnIndex, Me.ViewInfo)
     End Sub
@@ -182,6 +167,7 @@ End Class
 
 
 ````C#
+        
 private void radVirtualGrid1_CreateCellElement(object sender, VirtualGridCreateCellEventArgs e)
 {
     if (e.ColumnIndex == 3 && e.RowIndex >= 0)
@@ -209,6 +195,7 @@ End Sub
 
 
 ````C#
+            
 this.radVirtualGrid1.MasterViewInfo.RegisterCustomColumn(3);
 
 ````
@@ -230,6 +217,7 @@ Me.RadVirtualGrid1.MasterViewInfo.RegisterCustomColumn(3)
 
 
 ````C#
+        
 private void radVirtualGrid1_EditorRequired(object sender, VirtualGridEditorRequiredEventArgs e)
 {
     if (e.ColumnIndex == 3)

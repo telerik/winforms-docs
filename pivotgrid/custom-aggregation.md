@@ -31,12 +31,10 @@ public class SqrtSumAggregateFunction : Telerik.Pivot.Core.Aggregates.AggregateF
     {
         get { return "Sqrt Of Sum"; }
     }
-
     protected override AggregateValue CreateAggregate(Type dataType)
     {
         return new SqrtSumAggregate();
     }
-
     public override string GetStringFormat(Type dataType, string format)
     {
         if (format == null)
@@ -45,26 +43,21 @@ public class SqrtSumAggregateFunction : Telerik.Pivot.Core.Aggregates.AggregateF
         }
         return format;
     }
-
     public override string ToString()
     {
         return "Sqrt Of Sum";
     }
-
     public override bool Equals(object obj)
     {
         return obj is SqrtSumAggregateFunction;
     }
-
     protected override void CloneCore(Telerik.Pivot.Core.Cloneable source)
     {
     }
-
     protected override Telerik.Pivot.Core.Cloneable CreateInstanceCore()
     {
         return new SqrtSumAggregateFunction();
     }
-
     protected override AggregateValue CreateAggregate(IAggregateContext context)
     {
         return this.CreateAggregate(context.DataType);
@@ -75,39 +68,31 @@ public class SqrtSumAggregateFunction : Telerik.Pivot.Core.Aggregates.AggregateF
 ````VB.NET
 Public Class SqrtSumAggregateFunction
     Inherits Telerik.Pivot.Core.Aggregates.AggregateFunction
-
     Public Overrides ReadOnly Property DisplayName() As String
         Get
             Return "Sqrt Of Sum"
         End Get
     End Property
-
     Protected Overrides Function CreateAggregate(dataType As Type) As AggregateValue
         Return New SqrtSumAggregate()
     End Function
-
     Public Overrides Function GetStringFormat(dataType As Type, format As String) As String
         If format Is Nothing Then
             Return "G"
         End If
         Return format
     End Function
-
     Public Overrides Function ToString() As String
         Return "Sqrt Of Sum"
     End Function
-
     Public Overrides Function Equals(obj As Object) As Boolean
         Return TypeOf obj Is SqrtSumAggregateFunction
     End Function
-
     Protected Overrides Sub CloneCore(source As Telerik.Pivot.Core.Cloneable)
     End Sub
-
     Protected Overrides Function CreateInstanceCore() As Telerik.Pivot.Core.Cloneable
         Return New SqrtSumAggregateFunction()
     End Function
-
     Protected Overrides Function CreateAggregate(context As IAggregateContext) As AggregateValue
         Return Me.CreateAggregate(context.DataType)
     End Function
@@ -128,17 +113,14 @@ public sealed class SqrtSumAggregate : AggregateValue, IConvertibleAggregateValu
 {
     private double sum;
     private bool hasError = false;
-
     protected override object GetValueOverride()
     {
         return Math.Round(Math.Sqrt(this.sum), 2);
     }
-
     protected override void AccumulateOverride(object value)
     {
         this.sum += Convert.ToDouble(value, CultureInfo.InvariantCulture);
     }
-
     protected override void MergeOverride(AggregateValue childAggregate)
     {
         var sumAggregate = childAggregate as SqrtSumAggregate;
@@ -160,7 +142,6 @@ public sealed class SqrtSumAggregate : AggregateValue, IConvertibleAggregateValu
             }
         }
     }
-
     bool IConvertibleAggregateValue<double>.TryConvertValue(out double value)
     {
         if (this.hasError)
@@ -168,9 +149,7 @@ public sealed class SqrtSumAggregate : AggregateValue, IConvertibleAggregateValu
             value = 0;
             return false;
         }
-
         value = (double)this.sum;
-
         return true;
     }
 }
@@ -180,18 +159,14 @@ public sealed class SqrtSumAggregate : AggregateValue, IConvertibleAggregateValu
 Public NotInheritable Class SqrtSumAggregate
     Inherits AggregateValue
     Implements IConvertibleAggregateValue(Of Double)
-
     Private sum As Double
     Private hasError As Boolean = False
-
     Protected Overrides Function GetValueOverride() As Object
         Return Math.Round(Math.Sqrt(Me.sum), 2)
     End Function
-
     Protected Overrides Sub AccumulateOverride(value As Object)
         Me.sum += Convert.ToDouble(value, CultureInfo.InvariantCulture)
     End Sub
-
     Protected Overrides Sub MergeOverride(childAggregate As AggregateValue)
         Dim sumAggregate = TryCast(childAggregate, SqrtSumAggregate)
         If sumAggregate IsNot Nothing Then
@@ -206,7 +181,6 @@ Public NotInheritable Class SqrtSumAggregate
             End If
         End If
     End Sub
-
     Private Function IConvertibleAggregateValue_TryConvertValue(ByRef value As Double) As Boolean Implements IConvertibleAggregateValue(Of Double).TryConvertValue
         If Me.hasError Then
             value = 0
@@ -241,7 +215,6 @@ dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With {
 .PropertyName = "Freight", _
 .AggregateFunction = AggregateFunctions.Sum _
 })
-
 Me.RadPivotGrid1.DataProvider = dataProvider
 
 ```` 

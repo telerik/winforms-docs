@@ -25,7 +25,7 @@ void ExpandAllRows(GridViewTemplate template, bool expanded)
 {
     foreach (GridViewRowInfo row in template.Rows)
     {
-        row.IsExpanded = true;
+        row.IsExpanded = expanded;
     }
     if (template.Templates.Count > 0)
     {
@@ -40,7 +40,7 @@ void ExpandAllRows(GridViewTemplate template, bool expanded)
 ````VB.NET
 Private Sub ExpandAllRows(ByVal template As GridViewTemplate, ByVal expanded As Boolean)
     For Each row As GridViewRowInfo In template.Rows
-        row.IsExpanded = True
+        row.IsExpanded = expanded
     Next
     If template.Templates.Count > 0 Then
         For Each childTemplate As GridViewTemplate In template.Templates

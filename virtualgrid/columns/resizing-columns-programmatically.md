@@ -44,6 +44,7 @@ The width of columns can be set individually, per column. Note that the visible 
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=ResizeSingleColumn}} 
 {{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=ResizeSingleColumn}}
 ````C#
+            
 this.radVirtualGrid1.TableElement.ColumnsViewState.SetItemSize(0, 200);
 
 ````
@@ -66,6 +67,7 @@ Columns can be auto-sized to a best fit value. The available API exposes methods
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=BestFitAllColumns}} 
 {{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=BestFitAllColumns}}
 ````C#
+            
 this.radVirtualGrid1.BestFitColumns();
 
 ````
@@ -82,6 +84,7 @@ Me.RadVirtualGrid1.BestFitColumns()
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=BestFitColumn}} 
 {{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=BestFitColumn}}
 ````C#
+            
 this.radVirtualGrid1.VirtualGridElement.BestFitColumn(1);
 
 ````
@@ -99,10 +102,13 @@ Columns can be auto-sized to fit the available space in __RadVirtualGrid__. It i
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=AutoSizeColumnsMode}} 
 {{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=AutoSizeColumnsMode}}
 ````C#
+            
 this.radVirtualGrid1.AutoSizeColumnsMode = VirtualGridAutoSizeColumnsMode.Fill;
+
 ````
 ````VB.NET
 Me.RadVirtualGrid1.AutoSizeColumnsMode = VirtualGridAutoSizeColumnsMode.Fill
+
 ````  
 {{endregion}}
 
@@ -131,6 +137,7 @@ The API exposes two events for notifications when a change in the height of a ro
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=ResizingEvents}} 
 {{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=ResizingEvents}}
 ````C#
+        
 private void radVirtualGrid1_ColumnWidthChanging(object sender, VirtualGridColumnWidthChangingEventArgs e)
 {
     if (e.ColumnIndex == 0)
@@ -138,6 +145,7 @@ private void radVirtualGrid1_ColumnWidthChanging(object sender, VirtualGridColum
         e.Cancel = true;
     }
 }
+        
 private void radVirtualGrid1_ColumnWidthChanged(object sender, VirtualGridColumnEventArgs e)
 {
 }

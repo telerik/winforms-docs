@@ -25,6 +25,7 @@ First, you should create a button that implements __ITextBlock__ interface:
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=customTextBlock}} 
 
 ````C#
+        
 public class ButtonTextBlock : RadButtonElement, ITextBlock
 {
     private int index;
@@ -35,6 +36,7 @@ public class ButtonTextBlock : RadButtonElement, ITextBlock
         this.offset = 0;
         this.MaxSize = new Size(0, 12);
     }
+        
     protected override Type ThemeEffectiveType
     {
         get
@@ -42,36 +44,59 @@ public class ButtonTextBlock : RadButtonElement, ITextBlock
             return typeof(RadButtonElement);
         }
     }
+        
     public int Index
     {
-        get { return this.index; }
-        set { this.index = value; }
+        get
+        {
+            return this.index;
+        }
+        set
+        {
+            this.index = value;
+        }
     }
+        
     public int Length
     {
-        get { return 1; }
+        get
+        {
+            return 1;
+        }
     }
+        
     public int Offset
     {
-        get { return this.offset; }
-        set { this.offset = value; }
+        get
+        {
+            return this.offset;
+        }
+        set
+        {
+            this.offset = value;
+        }
     }
+            
     public int GetCharacterIndexFromX(float x)
     {
         RectangleF bounds = this.ControlBoundingRectangle;
         float median = bounds.X + bounds.Width / 2;
         return x <= median ? 0 : 1;
     }
+    
     public RectangleF GetRectangleFromCharacterIndex(int index, bool trailEdge)
     {
         Rectangle bounds = this.ControlBoundingRectangle;
+        
         if (index == 1)
         {
             bounds.X = bounds.Right;
             bounds.Width = 0;
         }
+    
         return bounds;
     }
+        
     protected override void OnClick(EventArgs e)
     {
         base.OnClick(e);
@@ -81,9 +106,10 @@ public class ButtonTextBlock : RadButtonElement, ITextBlock
 
 ````
 ````VB.NET
+    
 Public Class ButtonTextBlock
-    Inherits RadButtonElement
-    Implements ITextBlock
+Inherits RadButtonElement
+Implements ITextBlock
     Private m_index As Integer
     Private m_offset As Integer
     Public Sub New()
@@ -128,6 +154,7 @@ Public Class ButtonTextBlock
             bounds.X = bounds.Right
             bounds.Width = 0
         End If
+        
         Return bounds
     End Function
     Protected Overrides Sub OnClick(e As EventArgs)
@@ -169,6 +196,7 @@ Then you should subscribe to the __CreateTextBlock__ event before initializing t
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=applyCustomTextBlock1}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=applyCustomTextBlock1}} 
 ````C#
+        
 radTextBoxControl1.CreateTextBlock += new CreateTextBlockEventHandler(radTextBoxControl1_CreateTextBlock);
 
 ````

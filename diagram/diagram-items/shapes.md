@@ -236,7 +236,6 @@ shape.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollection(New
     2, _
     2 _
 })
-End Sub
 
 ````
 

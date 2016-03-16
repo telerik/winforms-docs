@@ -109,6 +109,7 @@ Each editing operation raises the __TextChanging__ and __TextChanged__ events. N
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=TextChanging}} 
 
 ````C#
+        
 private void radTextBoxControl1_TextChanging(object sender, Telerik.WinControls.TextChangingEventArgs e)
 {
     e.Cancel = string.IsNullOrEmpty(e.NewValue);

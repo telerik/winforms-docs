@@ -33,45 +33,49 @@ The code snippet below demonstrates how to select data from the Northwind.Custom
 {{source=..\SamplesVB\VirtualGrid\VirtualGridPopulatingWithData.vb region=FillData}} 
 
 ````C#
+        
 private string[] columnNames = new string[] { "CompanyName", "ContactName", "ContactTitle", "Address", "PostalCode" };
+string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" +
+                          @"..\..\DataSources\Nwind.mdb;Persist Security Info=True";
 List<Customer> data = new List<Customer>();
+    
 private void VirtualGridPopulatingWithData_Load(object sender, EventArgs e)
 {
     this.radVirtualGrid1.CellValueNeeded += radVirtualGrid1_CellValueNeeded;
     this.radVirtualGrid1.ColumnCount = columnNames.Length;
     SelectData();
-} 
+}
+        
 private void radVirtualGrid1_CellValueNeeded(object sender, VirtualGridCellValueNeededEventArgs e)
 {
-    if (e.ColumnIndex < 0) return;
+    if (e.ColumnIndex < 0)
+        return;
     if (e.RowIndex == RadVirtualGrid.HeaderRowIndex)
     {
         e.Value = columnNames[e.ColumnIndex];
     }
-
+    
     if (e.RowIndex < 0)
     {
         e.FieldName = columnNames[e.ColumnIndex];
     }
-
+    
     if (e.RowIndex >= 0 && e.RowIndex < data.Count)
     {
         e.Value = data[e.RowIndex][e.ColumnIndex];
     }
 }
-
+    
 private void SelectData()
 {
     string selectCommand = "SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, PostalCode FROM Customers";
     using (System.Data.OleDb.OleDbCommand command = new System.Data.OleDb.OleDbCommand(selectCommand))
     {
-        string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" +
-            @"..\..\DataSources\Nwind.mdb;Persist Security Info=True";
         command.Connection = new System.Data.OleDb.OleDbConnection(connectionString);
         command.Connection.Open();
         IDataReader reader = command.ExecuteReader();
         data.Clear();
-
+                
         while (reader.Read())
         {
             Customer customer = new Customer(
@@ -83,19 +87,20 @@ private void SelectData()
                 Convert.ToString(reader[5]));
             data.Add(customer);
         }
-
+    
         command.Connection.Close();
     }
-
+        
     this.radVirtualGrid1.RowCount = data.Count;
 }
-
 
 ````
 ````VB.NET
 Private columnNames As String() = New String() {"CompanyName", "ContactName", "ContactTitle", "Address", "PostalCode"}
+Dim connectionString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + _
+"..\..\DataSources\Nwind.mdb;Persist Security Info=True"
 Private data As New List(Of Customer)()
-Private Sub VirtualGridPopulatingWithData_Load(sender As Object, e As EventArgs)
+Private Sub VirtualGridPopulatingWithData_Load(sender As Object, e As EventArgs) Handles Me.Load
     AddHandler Me.radVirtualGrid1.CellValueNeeded, AddressOf radVirtualGrid1_CellValueNeeded
     Me.radVirtualGrid1.ColumnCount = columnNames.Length
     SelectData()
@@ -107,38 +112,29 @@ Private Sub radVirtualGrid1_CellValueNeeded(sender As Object, e As VirtualGridCe
     If e.RowIndex = RadVirtualGrid.HeaderRowIndex Then
         e.Value = columnNames(e.ColumnIndex)
     End If
-
     If e.RowIndex < 0 Then
         e.FieldName = columnNames(e.ColumnIndex)
     End If
-
     If e.RowIndex >= 0 AndAlso e.RowIndex < data.Count Then
         e.Value = data(e.RowIndex)(e.ColumnIndex)
     End If
 End Sub
-
 Private Sub SelectData()
     Dim selectCommand As String = "SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, PostalCode FROM Customers"
     Using command As New System.Data.OleDb.OleDbCommand(selectCommand)
-        Dim connectionString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + _
-            "..\..\DataSources\Nwind.mdb;Persist Security Info=True"
         command.Connection = New System.Data.OleDb.OleDbConnection(connectionString)
         command.Connection.Open()
         Dim reader As IDataReader = command.ExecuteReader()
         data.Clear()
-
         While reader.Read()
             Dim customer As New Customer(Convert.ToString(reader(0)), Convert.ToString(reader(1)), Convert.ToString(reader(2)), _
                                          Convert.ToString(reader(3)), Convert.ToString(reader(4)), Convert.ToString(reader(5)))
             data.Add(customer)
         End While
-
         command.Connection.Close()
     End Using
-
     Me.radVirtualGrid1.RowCount = data.Count
 End Sub
-
 
 ````
 
@@ -149,20 +145,21 @@ End Sub
 {{source=..\SamplesCS\VirtualGrid\VirtualGridPopulatingWithData.cs region=CustomerClass}} 
 {{source=..\SamplesVB\VirtualGrid\VirtualGridPopulatingWithData.vb region=CustomerClass}} 
 ````C#
+    
 public class Customer
 {
     public string CustomerId { get; set; }
-
+    
     public string CompanyName { get; set; }
-
+    
     public string ContactName { get; set; }
-
+    
     public string ContactTitle { get; set; }
-
+    
     public string Address { get; set; }
-
+    
     public string PostalCode { get; set; }
-
+        
     public Customer(string customerId, string companyName, string contactName,
         string contactTitle, string address, string postalCode)
     {
@@ -173,7 +170,7 @@ public class Customer
         this.Address = address;
         this.PostalCode = postalCode;
     }
-
+            
     public string this[int i]
     {
         get
@@ -199,6 +196,7 @@ public class Customer
 
 ````
 ````VB.NET
+    
 Public Class Customer
     Public Property CustomerId() As String
         Get
@@ -209,7 +207,6 @@ Public Class Customer
         End Set
     End Property
     Private m_CustomerId As String
-
     Public Property CompanyName() As String
         Get
             Return m_CompanyName
@@ -219,7 +216,6 @@ Public Class Customer
         End Set
     End Property
     Private m_CompanyName As String
-
     Public Property ContactName() As String
         Get
             Return m_ContactName
@@ -229,7 +225,6 @@ Public Class Customer
         End Set
     End Property
     Private m_ContactName As String
-
     Public Property ContactTitle() As String
         Get
             Return m_ContactTitle
@@ -239,7 +234,6 @@ Public Class Customer
         End Set
     End Property
     Private m_ContactTitle As String
-
     Public Property Address() As String
         Get
             Return m_Address
@@ -249,7 +243,6 @@ Public Class Customer
         End Set
     End Property
     Private m_Address As String
-
     Public Property PostalCode() As String
         Get
             Return m_PostalCode
@@ -259,9 +252,8 @@ Public Class Customer
         End Set
     End Property
     Private m_PostalCode As String
-
     Public Sub New(customerId As String, companyName As String, contactName As String, _
-                   contactTitle As String, address As String, postalCode As String)
+    contactTitle As String, address As String, postalCode As String)
         Me.CustomerId = customerId
         Me.CompanyName = companyName
         Me.ContactName = contactName
@@ -269,7 +261,6 @@ Public Class Customer
         Me.Address = address
         Me.PostalCode = postalCode
     End Sub
-
     Default Public ReadOnly Property Item(i As Integer) As String
         Get
             Select Case i

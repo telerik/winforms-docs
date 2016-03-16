@@ -23,16 +23,15 @@ The RadDiagram.__ExportToImage()__ method allows you to export the diagram to an
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=Export}} 
 
 ````C#
-        
- 		Image img1 = this.radDiagram1.ExportToImage();
-        string imagePath1 = @"..\..\img1.png";
-        img1.Save(imagePath1);
+Image img1 = this.radDiagram1.ExportToImage();
+string imagePath1 = @"..\..\img1.png";
+img1.Save(imagePath1);
 
 ````
 ````VB.NET
-        Dim img1 As Image = Me.RadDiagram1.ExportToImage()
-        Dim imagePath1 As String = "..\..\img1.png"
-        img1.Save(imagePath1)
+Dim img1 As Image = Me.RadDiagram1.ExportToImage()
+Dim imagePath1 As String = "..\..\img1.png"
+img1.Save(imagePath1)
 
 ````
 

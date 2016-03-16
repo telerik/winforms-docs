@@ -22,24 +22,24 @@ We've added the DataContract attribute to all classes used by __AdomdDataProvide
 {{source=..\SamplesVB\PivotGrid\PivotGridSerializeCubeDataProvider.vb region=DataProviderSettings}} 
 
 ````C#
+    
 [DataContract]
 public class DataProviderSettings
 {
     [DataMember]
     public object[] Aggregates { get; set; }
-
+    
     [DataMember]
     public object[] Filters { get; set; }
-
+    
     [DataMember]
     public object[] Rows { get; set; }
-
+    
     [DataMember]
     public object[] Columns { get; set; }
-
+    
     [DataMember]
     public int AggregatesLevel { get; set; }
-
     [DataMember]
     public PivotAxis AggregatesPosition { get; set; }
 }
@@ -58,7 +58,6 @@ Public Class DataProviderSettings
         End Set
     End Property
     Private m_Aggregates As Object()
-
     <DataMember> _
     Public Property Filters() As Object()
         Get
@@ -69,7 +68,6 @@ Public Class DataProviderSettings
         End Set
     End Property
     Private m_Filters As Object()
-
     <DataMember> _
     Public Property Rows() As Object()
         Get
@@ -80,7 +78,6 @@ Public Class DataProviderSettings
         End Set
     End Property
     Private m_Rows As Object()
-
     <DataMember> _
     Public Property Columns() As Object()
         Get
@@ -91,7 +88,6 @@ Public Class DataProviderSettings
         End Set
     End Property
     Private m_Columns As Object()
-
     <DataMember> _
     Public Property AggregatesLevel() As Integer
         Get
@@ -102,7 +98,6 @@ Public Class DataProviderSettings
         End Set
     End Property
     Private m_AggregatesLevel As Integer
-
     <DataMember> _
     Public Property AggregatesPosition() As PivotAxis
         Get
@@ -113,7 +108,6 @@ Public Class DataProviderSettings
         End Set
     End Property
     Private m_AggregatesPosition As PivotAxis
-
 End Class
 
 ````
@@ -128,17 +122,19 @@ The next step is to implement the serializer. When serializing the provider, you
 {{source=..\SamplesVB\PivotGrid\PivotGridSerializeCubeDataProvider.vb region=DataProviderSerializer}} 
 
 ````C#
+    
 public abstract class DataProviderSerializer
 {
     public abstract IEnumerable<Type> KnownTypes { get; }
+        
     public string Serialize(object context)
     {
         string serialized = string.Empty;
         IDataProvider dataProvider = context as IDataProvider;
-
         if (dataProvider != null)
         {
             MemoryStream stream = new MemoryStream();
+                
             DataProviderSettings settings = new DataProviderSettings()
             {
                 Aggregates = dataProvider.Settings.AggregateDescriptions.OfType<object>().ToArray(),
@@ -148,16 +144,17 @@ public abstract class DataProviderSerializer
                 AggregatesLevel = dataProvider.Settings.AggregatesLevel,
                 AggregatesPosition = dataProvider.Settings.AggregatesPosition
             };
-
+            
             DataContractSerializer serializer = new DataContractSerializer(typeof(DataProviderSettings), KnownTypes);
             serializer.WriteObject(stream, settings);
             stream.Position = 0;
             var streamReader = new StreamReader(stream);
             serialized += streamReader.ReadToEnd();
         }
-
+    
         return serialized;
     }
+        
     public void Deserialize(object context, string savedValue)
     {
         IDataProvider dataProvider = context as IDataProvider;
@@ -168,33 +165,34 @@ public abstract class DataProviderSerializer
             tw.Write(savedValue);
             tw.Flush();
             stream.Position = 0;
-
+            
             DataContractSerializer serializer = new DataContractSerializer(typeof(DataProviderSettings), KnownTypes);
             var result = serializer.ReadObject(stream);
+            
             dataProvider.Settings.AggregateDescriptions.Clear();
             foreach (var aggregateDescription in (result as DataProviderSettings).Aggregates)
             {
                 dataProvider.Settings.AggregateDescriptions.Add(aggregateDescription);
             }
-
+            
             dataProvider.Settings.FilterDescriptions.Clear();
             foreach (var filterDescription in (result as DataProviderSettings).Filters)
             {
                 dataProvider.Settings.FilterDescriptions.Add(filterDescription);
             }
-
+            
             dataProvider.Settings.RowGroupDescriptions.Clear();
             foreach (var rowDescription in (result as DataProviderSettings).Rows)
             {
                 dataProvider.Settings.RowGroupDescriptions.Add(rowDescription);
             }
-
+            
             dataProvider.Settings.ColumnGroupDescriptions.Clear();
             foreach (var columnDescription in (result as DataProviderSettings).Columns)
             {
                 dataProvider.Settings.ColumnGroupDescriptions.Add(columnDescription);
             }
-
+    
             dataProvider.Settings.AggregatesPosition = (result as DataProviderSettings).AggregatesPosition;
             dataProvider.Settings.AggregatesLevel = (result as DataProviderSettings).AggregatesLevel;
         }
@@ -205,11 +203,9 @@ public abstract class DataProviderSerializer
 ````VB.NET
 Public MustInherit Class DataProviderSerializer
     Public MustOverride ReadOnly Property KnownTypes() As IEnumerable(Of Type)
-
     Public Function Serialize(context As Object) As String
         Dim serialized As String = String.Empty
         Dim dataProvider As IDataProvider = TryCast(context, IDataProvider)
-
         If dataProvider IsNot Nothing Then
             Dim stream As New MemoryStream()
             Dim settings As New DataProviderSettings() With {
@@ -220,48 +216,40 @@ Public MustInherit Class DataProviderSerializer
                  .AggregatesLevel = dataProvider.Settings.AggregatesLevel,
                  .AggregatesPosition = dataProvider.Settings.AggregatesPosition
             }
-
             Dim serializer As New DataContractSerializer(GetType(DataProviderSettings), KnownTypes)
             serializer.WriteObject(stream, settings)
             stream.Position = 0
             Dim streamReader = New StreamReader(stream)
             serialized += streamReader.ReadToEnd()
         End If
-
         Return serialized
     End Function
     Public Sub Deserialize(context As Object, savedValue As String)
         Dim dataProvider As IDataProvider = TryCast(context, IDataProvider)
-
         If dataProvider IsNot Nothing Then
             Dim stream = New MemoryStream()
             Dim tw = New StreamWriter(stream)
             tw.Write(savedValue)
             tw.Flush()
             stream.Position = 0
-
             Dim serializer As New DataContractSerializer(GetType(DataProviderSettings), KnownTypes)
             Dim result = serializer.ReadObject(stream)
             dataProvider.Settings.AggregateDescriptions.Clear()
             For Each aggregateDescription As AggregateDescriptionBase In TryCast(result, DataProviderSettings).Aggregates
                 dataProvider.Settings.AggregateDescriptions.Add(aggregateDescription)
             Next
-
             dataProvider.Settings.FilterDescriptions.Clear()
             For Each filterDescription As FilterDescription In TryCast(result, DataProviderSettings).Filters
                 dataProvider.Settings.FilterDescriptions.Add(filterDescription)
             Next
-
             dataProvider.Settings.RowGroupDescriptions.Clear()
             For Each rowDescription As OlapGroupDescription In TryCast(result, DataProviderSettings).Rows
                 dataProvider.Settings.RowGroupDescriptions.Add(rowDescription)
             Next
-
             dataProvider.Settings.ColumnGroupDescriptions.Clear()
             For Each columnDescription As OlapGroupDescription In TryCast(result, DataProviderSettings).Columns
                 dataProvider.Settings.ColumnGroupDescriptions.Add(columnDescription)
             Next
-
             dataProvider.Settings.AggregatesPosition = TryCast(result, DataProviderSettings).AggregatesPosition
             dataProvider.Settings.AggregatesLevel = TryCast(result, DataProviderSettings).AggregatesLevel
         End If
@@ -276,6 +264,7 @@ End Class
 {{source=..\SamplesVB\PivotGrid\PivotGridSerializeCubeDataProvider.vb region=AdomdProviderSerializer}} 
 
 ````C#
+        
 public class AdomdProviderSerializer : DataProviderSerializer
 {
     public override IEnumerable<Type> KnownTypes
@@ -291,7 +280,6 @@ public class AdomdProviderSerializer : DataProviderSerializer
 ````VB.NET
 Public Class AdomdProviderSerializer
     Inherits DataProviderSerializer
-
     Public Overrides ReadOnly Property KnownTypes() As IEnumerable(Of Type)
         Get
             Return AdomdPivotSerializationHelper.KnownTypes
@@ -311,13 +299,15 @@ So the last step is to serialize the provider and deserialize it.
 {{source=..\SamplesVB\PivotGrid\PivotGridSerializeCubeDataProvider.vb region=SampleUsageAdomd}} 
 
 ````C#
+        
 string lastAdomdSerializadProvider = "";
+        
 private void serializeAdomdBtn_Click(object sender, EventArgs e)
 {
     AdomdProviderSerializer serializeProvider = new AdomdProviderSerializer();
     this.lastAdomdSerializadProvider = serializeProvider.Serialize(this.radPivotGrid1.DataProvider);
 }
-
+        
 private void deserializeAdomdBtn_Click(object sender, EventArgs e)
 {
     AdomdProviderSerializer provider = new AdomdProviderSerializer();
@@ -331,7 +321,6 @@ Private Sub serializeAdomdBtn_Click(sender As Object, e As EventArgs) Handles se
     Dim serializeProvider As New AdomdProviderSerializer()
     Me.lastAdomdSerializadProvider = serializeProvider.Serialize(Me.RadPivotGrid1.DataProvider)
 End Sub
-
 Private Sub deserializeAdomdBtn_Click(sender As Object, e As EventArgs) Handles deserializeAdomdBtn.Click
     Dim provider As New AdomdProviderSerializer()
     provider.Deserialize(Me.RadPivotGrid1.DataProvider, Me.lastAdomdSerializadProvider)

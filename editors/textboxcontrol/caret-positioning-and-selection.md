@@ -31,6 +31,7 @@ The __SelectionLength__ property is a numeric value that sets the width of the i
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetSelection}} 
 
 ````C#
+    
 private void SetSelection()
 {
     this.radTextBoxControl1.Text = "Hello, John Green";

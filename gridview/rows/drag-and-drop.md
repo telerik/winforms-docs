@@ -51,20 +51,28 @@ The drag and drop functionality is made easy using the built-in RadGridViewDragD
 
 ````C#
 public DragAndDropRadGrid() 
-{  
+{ 
     this.MultiSelect = true;                       
     
     //handle drag and drop events for the grid through the DragDrop service
-    RadDragDropService svc = 
-            this.GridViewElement.GetService<RadDragDropService>();
+    RadDragDropService svc =
+        this.GridViewElement.GetService<RadDragDropService>();
     svc.PreviewDragStart += svc_PreviewDragStart;
     svc.PreviewDragDrop += svc_PreviewDragDrop;
     svc.PreviewDragOver += svc_PreviewDragOver;
- 
+    
     //register the custom row selection behavior
     var gridBehavior = this.GridBehavior as BaseGridBehavior;
     gridBehavior.UnregisterBehavior(typeof(GridViewDataRowInfo));
     gridBehavior.RegisterBehavior(typeof(GridViewDataRowInfo), new RowSelectionGridBehavior());
+}
+    
+public override string ThemeClassName  
+{ 
+    get 
+    { 
+        return typeof(RadGridView).FullName;  
+    }
 }
 
 ````
@@ -81,6 +89,14 @@ Public Sub New()
     gridBehavior.UnregisterBehavior(GetType(GridViewDataRowInfo))
     gridBehavior.RegisterBehavior(GetType(GridViewDataRowInfo), New RowSelectionGridBehavior())
 End Sub
+Public Overrides Property ThemeClassName As String
+    Get
+        Return GetType(RadGridView).FullName
+    End Get
+    Set(value As String)
+        MyBase.ThemeClassName = value
+    End Set
+End Property
 
 ````
 
@@ -97,6 +113,7 @@ In order to start the drag and drop service when the user clicks on a row with t
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=GridBehavior}} 
 
 ````C#
+            
 //initiates drag and drop service for clicked rows
 public class RowSelectionGridBehavior : GridDataRowBehavior
 {
@@ -148,6 +165,7 @@ The PreviewDragStart event is fired once the Drag and Drop service on the grid i
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=PreviewDragStart}} 
 
 ````C#
+    
 //required to initiate drag and drop when grid is in bound mode
 private void svc_PreviewDragStart(object sender, PreviewDragStartEventArgs e)
 {
@@ -171,11 +189,12 @@ The next event we will handle is the PreviewDragOver event. This event allows yo
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=PreviewDragOver}} 
 
 ````C#
+                    
 private void svc_PreviewDragOver(object sender, RadDragOverEventArgs e)
 {
     if (e.DragInstance is GridDataRowElement)
     {
-        e.CanDrop = e.HitTarget is GridDataRowElement || 
+        e.CanDrop = e.HitTarget is GridDataRowElement ||
                     e.HitTarget is GridTableElement ||
                     e.HitTarget is GridSummaryRowElement;
     }
@@ -202,6 +221,7 @@ The last event we want to handle in our implementation is the PreviewDragDrop ev
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=PreviewDragDrop}} 
 
 ````C#
+    
 //gather drag/source grid and target/destination information and initiate the move of selected rows
 private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
 {
@@ -211,21 +231,24 @@ private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
         return;
     }
     e.Handled = true;
+    
     var dropTarget = e.HitTarget as RadItem;
     var targetGrid = dropTarget.ElementTree.Control as RadGridView;
     if (targetGrid == null)
     {
         return;
     }
+        
     var dragGrid = rowElement.ElementTree.Control as RadGridView;
     if (targetGrid != dragGrid)
     {
         e.Handled = true;
         //append dragged rows to the end of the target grid
         int index = targetGrid.RowCount;
+            
         //Grab every selected row from the source grid, including the current row
-        List<GridViewRowInfo> rows = 
-                            dragGrid.SelectedRows.ToList<GridViewRowInfo>();
+        List<GridViewRowInfo> rows =
+            dragGrid.SelectedRows.ToList<GridViewRowInfo>();
         if (dragGrid.CurrentRow != null)
         {
             GridViewRowInfo row = dragGrid.CurrentRow;
@@ -290,8 +313,9 @@ It is in the MoveRows method where the physical moving of the data happens. Basi
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=MoveRows}} 
 
 ````C#
-private void MoveRows(RadGridView targetGrid, RadGridView dragGrid, 
-                        IList<GridViewRowInfo> dragRows, int index) 
+        
+private void MoveRows(RadGridView targetGrid, RadGridView dragGrid,
+    IList<GridViewRowInfo> dragRows, int index) 
 { 
     dragGrid.BeginUpdate();
     targetGrid.BeginUpdate();
@@ -311,7 +335,9 @@ private void MoveRows(RadGridView targetGrid, RadGridView dragGrid,
                 if (newRow.Cells[cell.ColumnInfo.Name] != null)
                     newRow.Cells[cell.ColumnInfo.Name].Value = cell.Value;
             }
+            
             targetGrid.Rows.Insert(index, newRow);
+            
             row.IsSelected = false;
             dragGrid.Rows.Remove(row);
         }
@@ -320,11 +346,13 @@ private void MoveRows(RadGridView targetGrid, RadGridView dragGrid,
             //bound to a dataset scenario
             var sourceTable = ((DataSet)dragGrid.DataSource).Tables[0];
             var targetTable = ((DataSet)targetGrid.DataSource).Tables[0];
+            
             var newRow = targetTable.NewRow();
             foreach (GridViewCellInfo cell in row.Cells)
             {
                 newRow[cell.ColumnInfo.Name] = cell.Value;
             }
+            
             sourceTable.Rows.Remove(((DataRowView)row.DataBoundItem).Row);
             targetTable.Rows.InsertAt(newRow, index);
         }
