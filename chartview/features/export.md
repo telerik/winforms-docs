@@ -25,9 +25,9 @@ You can export the __RadChartVew__ content by using one of the following overloa
 
 * ExportToImage(Stream stream, Size size, ImageFormat imageFormat)
 
-* ExportToImage(Stream stream, Size size)
+* ExportToImage(string filePath, Size size)
 
-* ExportToImage(Stream stream, Size size, ImageFormat imageFormat) 
+* ExportToImage(string filePath, Size size, ImageFormat imageFormat) 
 
 {{source=..\SamplesCS\ChartView\ChartViewExport.cs region=ExportToImage}} 
 {{source=..\SamplesVB\ChartView\ChartViewExport.vb region=ExportToImage}} 
