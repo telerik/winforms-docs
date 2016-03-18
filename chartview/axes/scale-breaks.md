@@ -11,13 +11,12 @@ previous_url: chartview-features-scale-breaks
 
 # Scale Breaks
 
-
-
-## 
-
 The ScaleBreaks feature allows you to "break off" large chunks of the axis so that graphs with large amplitude are easier to read. ScaleBreaks are available for both axes of the plot area.
 
 ![chartview-axes-scale-breaks 001](images/chartview-axes-scale-breaks001.png)
+
+>important This feature assumes the __CombinedMode__ property of the series to be *ChartSeriesCombineMode.Cluster*, which is also its default setting. 
+>
 
 To add a scale break you show use the __ScaleBreaks__ collection of the axis. First, you need to create an __AxisScaleBreak__ item and set its __From__  and __To__ properties (you can set the __Name__ property as well): 
 
