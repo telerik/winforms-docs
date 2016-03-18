@@ -13,7 +13,7 @@ previous_url: radialgauge-overview
 
 
 
-The __RadRadialGauge__ control is designed to display a simple value within a definite range. This range is represented in a circular format similar to car speed dial. The circular container contains a scale in it which controls the overall layout of ticks, tick labels, needles and ranges and renders an optional scale bar.
+The __RadRadialGauge__ control is designed to display a simple value within a definite range. This range is represented in a circular format similar to car speed gauge. The circular container contains a scale in it which controls the overall layout of ticks, tick labels, needles and ranges and renders an optional scale bar.
 
 ![radialgauge-overview 001](images/radialgauge-overview001.gif)
 
