@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: RibbonForm | UI for WinForms Documentation
-description: RibbonForm
+description: RadRibbonForm control is designed to host a RadRibbonBar control and mimic the Microsoft Office 2007 UI form style.
 slug: winforms/forms-and-dialogs/ribbonform
 tags: ribbonform
 published: True

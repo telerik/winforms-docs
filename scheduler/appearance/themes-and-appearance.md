@@ -1,7 +1,7 @@
 ---
 title: Themes and appearance
 page_title: Themes and appearance | UI for WinForms Documentation
-description: Themes and appearance
+description: The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc.
 slug: winforms/scheduler/appearance/themes-and-appearance
 tags: themes,and,appearance
 published: True

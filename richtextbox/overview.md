@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: RichTextBox (Obsolete) | UI for WinForms Documentation
-description: RichTextBox (Obsolete)
+description: RadRichTextBox is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), etc.
 slug: winforms/richtextbox-obsolete
 tags: richtextbox,(obsolete)
 published: True

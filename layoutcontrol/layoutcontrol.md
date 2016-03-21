@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: LayoutControl | UI for WinForms Documentation
-description: LayoutControl
+description: RadLayoutControl allows you to add and arrange other controls in complex layouts.
 slug: winforms/layoutcontrol
 tags: layoutcontrol
 published: True

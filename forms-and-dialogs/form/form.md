@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Form | UI for WinForms Documentation
-description: Form
+description: The RadForm control is an extended standard Windows Form that fully supports the Telerik Presentation Framework (TPF) and the Telerik's theming mechanism.
 slug: winforms/forms-and-dialogs/form
 tags: form
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: PageView | UI for WinForms Documentation
-description: PageView
+description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview
 tags: pageview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: MessageBox | UI for WinForms Documentation
-description: MessageBox
+description: RadMessageBox displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message, such as status or error information.
 slug: winforms/forms-and-dialogs/messagebox
 tags: messagebox
 published: True

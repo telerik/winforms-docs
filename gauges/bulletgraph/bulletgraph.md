@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: BulletGraph | UI for WinForms Documentation
-description: BulletGraph
+description: RadBulletGraph control is a variation of linear gauge. It combines a number of indicators, as well as the data indicator into one control, which is light weight, easily customizable and straightforward to setup and use.
 slug: winforms/gauges/bulletgraph
 tags: bulletgraph
 published: True

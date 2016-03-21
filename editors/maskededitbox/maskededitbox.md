@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: MaskedEditBox | UI for WinForms Documentation
-description: MaskedEditBox
+description: RadMaskedEditBox is a themeable text box that formats and constrains text to a predefined pattern or a pattern you define. 
 slug: winforms/editors/maskededitbox
 tags: maskededitbox
 published: True

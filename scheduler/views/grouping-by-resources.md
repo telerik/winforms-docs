@@ -1,7 +1,7 @@
 ---
 title: Grouping by Resources
 page_title: Grouping by Resources | UI for WinForms Documentation
-description: Grouping by Resources
+description: RadScheduler control allows you to define custom resources that can be assigned to the appointments.
 slug: winforms/scheduler/views/grouping-by-resources
 tags: grouping,by,resources
 published: True

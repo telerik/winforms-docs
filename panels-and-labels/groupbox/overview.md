@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: GroupBox | UI for WinForms Documentation
-description: GroupBox
+description: RadGroupBox control is a group box control with advanced styling options.
 slug: winforms/panels-and-labels/groupbox
 tags: groupbox
 published: True

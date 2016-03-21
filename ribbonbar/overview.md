@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: RibbonBar | UI for WinForms Documentation
-description: RibbonBar
+description: RadRibbonBar control provides a flexible way for organizing all the functionality of your application.
 slug: winforms/ribbonbar
 tags: ribbonbar
 published: True

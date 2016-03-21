@@ -1,7 +1,7 @@
 ---
 title: TPF structure
 page_title: TPF structure | UI for WinForms Documentation
-description: TPF structure
+description: Like all Telerik *WinForms* controls *RadGroupBox* is build upon *Telerik Presentation Framework* (TPF). TPF consists of various elements (such as primitives and layouts) that are the building blocks of the controls
 slug: winforms/panels-and-labels/groupbox/advanced/tpf-structure
 tags: tpf,structure
 published: True

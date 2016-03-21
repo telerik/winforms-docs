@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: ListView | UI for WinForms Documentation
-description: ListView
+description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview
 tags: listview
 published: True

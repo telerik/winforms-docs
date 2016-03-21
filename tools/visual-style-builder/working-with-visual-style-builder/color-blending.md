@@ -1,7 +1,7 @@
 ---
 title: Color Blending
 page_title: Color Blending | UI for WinForms Documentation
-description: Color Blending
+description: Visual Style Builder provides a color blending functionality making it easy to completely transform an existing theme.
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending
 tags: color,blending
 published: True

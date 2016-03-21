@@ -1,7 +1,7 @@
 ---
 title: Working with Recurring Appointments
 page_title: Working with Recurring Appointments | UI for WinForms Documentation
-description: Working with Recurring Appointments
+description: RadScheduler includes support for recurring events on minutely, hourly, weekly, daily, monthly and yearly basis. 
 slug: winforms/scheduler/appointments-and-dialogs/working-with-recurring-appointments
 tags: working,with,recurring,appointments
 published: True

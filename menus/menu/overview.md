@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Menu | UI for WinForms Documentation
-description: Menu
+description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 slug: winforms/menus/menu
 tags: menu
 published: True

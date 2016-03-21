@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: VirtualGrid | UI for WinForms Documentation
-description: VirtualGrid
+description: RadVirtualGrid is a grid component developed on top of Telerik Presentation Framework which provides a convenient way to implement your own data management operations and optimizes the performance when interacting with large amounts of data.
 slug: winforms/virtualgrid
 tags: virtualgrid
 published: True

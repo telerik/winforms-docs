@@ -1,7 +1,7 @@
 ---
 title: Overview 
 page_title: ChartView  | UI for WinForms Documentation
-description: ChartView 
+description: RadChartView is a versatile charting component that offers drawing capabilities, user interaction and real-time updates. 
 slug: winforms/chartview
 tags: chartview,
 published: True

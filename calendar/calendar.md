@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Calendar | UI for WinForms Documentation
-description: Calendar
+description: Telerik Calendar supports all common features you would find in the standard Month Calendar control.
 slug: winforms/calendar
 tags: calendar
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Scheduler | UI for WinForms Documentation
-description: Scheduler
+description: Telerik RadScheduler is a highly-customizable appointment presentation component that offers rich Outlook®-style functionality.
 slug: winforms/scheduler
 tags: scheduler
 published: True

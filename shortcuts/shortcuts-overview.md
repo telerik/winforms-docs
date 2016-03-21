@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Shortcuts | UI for WinForms Documentation
-description: Shortcuts
+description: Almost each application uses the so called “Shortcuts” – a keyboard combination that triggers a specific action.
 slug: winforms/shortcuts
 tags: shortcuts
 published: True

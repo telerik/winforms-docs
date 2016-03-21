@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: ProgressBar | UI for WinForms Documentation
-description: ProgressBar
+description: RadProgressBar is designed to display progress information to the user during a long-running operation.  
 slug: winforms/track-and-status-controls/progressbar
 tags: progressbar
 published: True

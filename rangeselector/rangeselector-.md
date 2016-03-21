@@ -1,7 +1,7 @@
 ---
 title: RangeSelector 
 page_title: RangeSelector  | UI for WinForms Documentation
-description: RangeSelector 
+description: RadRangeSelector provides an elegant solution for end-users to select range (in percentages) and these percentages could be mapped to any kind of visually represented data. 
 slug: winforms/rangeselector-
 tags: rangeselector,
 published: True
