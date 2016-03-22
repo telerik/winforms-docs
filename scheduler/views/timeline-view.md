@@ -1,7 +1,7 @@
 ---
 title: Timeline View
 page_title: Timeline View | UI for WinForms Documentation
-description: Timeline View
+description: RadScheduler's Timeline view allows you to display appointments in horizontally arranged time slots. 
 slug: winforms/scheduler/views/timeline-view
 tags: timeline,view
 published: True

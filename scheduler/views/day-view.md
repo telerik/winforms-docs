@@ -1,7 +1,7 @@
 ---
 title: Day View
 page_title: Day View | UI for WinForms Documentation
-description: Day View
+description: The Day view shows one or more days at a time. To move to the next or previous day, you can use the back and forward keyboard arrows, or the SchedulerNavigator.
 slug: winforms/scheduler/views/day-view
 tags: day,view
 published: True

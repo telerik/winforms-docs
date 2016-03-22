@@ -1,7 +1,7 @@
 ---
 title: MultiDay View
 page_title: MultiDay View | UI for WinForms Documentation
-description: MultiDay View
+description: MultidayView shows multiple date-time intervals with appointments arranged one next to another.
 slug: winforms/scheduler/views/multiday-view
 tags: multiday,view
 published: True

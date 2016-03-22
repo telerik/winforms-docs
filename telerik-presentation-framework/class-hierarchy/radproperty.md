@@ -1,7 +1,7 @@
 ---
 title: RadProperty
 page_title: RadProperty | UI for WinForms Documentation
-description: RadProperty
+description: RadProperty encapsulates properties used in RadObject and support dependency properties.
 slug: winforms/telerik-presentation-framework/class-hierarchy/radproperty
 tags: radproperty
 published: True

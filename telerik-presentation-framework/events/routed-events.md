@@ -1,7 +1,7 @@
 ---
 title: Routed Events
 page_title: Routed Events | UI for WinForms Documentation
-description: Routed Events
+description: Routed events are a structure that allows events to tunnel down the visual tree to a target element or bubble up to the root element.
 slug: winforms/telerik-presentation-framework/events/routed-events
 tags: routed,events
 published: True

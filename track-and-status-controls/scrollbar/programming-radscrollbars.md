@@ -1,7 +1,7 @@
 ---
 title: Programming RadScrollBars
 page_title: Programming RadScrollBars | UI for WinForms Documentation
-description: Programming RadScrollBars
+description: RadHScrollBar and RadVScrollBar share the same properties. The only difference between the two is that the former is displayed horizontally while the latter is displayed vertically.
 slug: winforms/track-and-status-controls/scrollbar/programming-radscrollbars
 tags: programming,radscrollbars
 published: True

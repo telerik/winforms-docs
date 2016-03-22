@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: ControlSpy | UI for WinForms Documentation
-description: ControlSpy
+description: The Control Spy is a tool to let you examine the detailed internal structure of any RadControl.
 slug: winforms/tools/controlspy
 tags: controlspy
 published: True

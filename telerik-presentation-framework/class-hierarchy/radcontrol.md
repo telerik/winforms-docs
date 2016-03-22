@@ -1,7 +1,7 @@
 ---
 title: RadControl
 page_title: RadControl | UI for WinForms Documentation
-description: RadControl
+description: RadControl is the abstract base class for all RadControls. Each RadControl contains a tree of RadElements.
 slug: winforms/telerik-presentation-framework/class-hierarchy/radcontrol
 tags: radcontrol
 published: True

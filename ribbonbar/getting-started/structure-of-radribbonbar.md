@@ -1,7 +1,7 @@
 ---
 title: Structure of RadRibbonBar
 page_title: Structure of RadRibbonBar | UI for WinForms Documentation
-description: Structure of RadRibbonBar
+description: The Telerik RadRibbonBar control has a very complex structure. You can add a variety of constituent controls to customize the Telerik RadRibbonBar.
 slug: winforms/ribbonbar/getting-started/structure-of-radribbonbar
 tags: structure,of,radribbonbar
 published: True

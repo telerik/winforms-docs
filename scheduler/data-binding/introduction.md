@@ -1,7 +1,7 @@
 ---
 title: Introduction
 page_title: Introduction | UI for WinForms Documentation
-description: Introduction
+description: RadScheduler uses a data source provider model for data binding that targets highly customizable information storage and retrieval.
 slug: winforms/scheduler/data-binding/introduction
 tags: introduction
 published: True

@@ -1,7 +1,7 @@
 ---
 title: RadComponent, RadComponentElement
 page_title: RadComponent, RadComponentElement | UI for WinForms Documentation
-description: RadComponent, RadComponentElement
+description: RadComponent and RadComponentElement both implement IComponent, The IComponent interface introduces the ability to be contained.
 slug: winforms/telerik-presentation-framework/class-hierarchy/radcomponent,-radcomponentelement
 tags: radcomponent,,radcomponentelement
 published: True

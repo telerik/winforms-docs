@@ -1,7 +1,7 @@
 ---
 title: VisualElement
 page_title: VisualElement | UI for WinForms Documentation
-description: VisualElement
+description: VisualElement adds visual properties common to all elements that will be painted, e.g. back color, fore color, font, default size, smoothing mode, opacity.
 slug: winforms/telerik-presentation-framework/class-hierarchy/visualelement
 tags: visualelement
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: LinearGauge | UI for WinForms Documentation
-description: LinearGauge
+description: RadLinearGauge displays simple value within a specific range. The range is displayed in a rectangle, this rectangle can contain scale with or without ticks, labels and a scale bar.
 slug: winforms/gauges/lineargauge
 tags: lineargauge
 published: True

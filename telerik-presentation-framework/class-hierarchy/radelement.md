@@ -1,7 +1,7 @@
 ---
 title: RadElement
 page_title: RadElement | UI for WinForms Documentation
-description: RadElement
+description: RadElement is a key class that represents the smallest unit in a RadControl that can be painted or laid out on the screen.
 slug: winforms/telerik-presentation-framework/class-hierarchy/radelement
 tags: radelement
 published: True

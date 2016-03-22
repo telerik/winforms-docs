@@ -1,7 +1,7 @@
 ---
 title: Internationalization
 page_title: Internationalization | UI for WinForms Documentation
-description: Internationalization
+description: RadCalendar provides built in internationalization support to build world-ready applications.
 slug: winforms/editors/datetimepicker/internationalization/internationalization
 tags: internationalization
 published: True

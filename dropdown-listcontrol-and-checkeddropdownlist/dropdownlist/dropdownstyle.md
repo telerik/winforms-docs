@@ -1,7 +1,7 @@
 ---
 title: DropDownStyle
 page_title: DropDownStyle | UI for WinForms Documentation
-description: DropDownStyle
+description: RadDropDownList.DropDownStyle property determines if the text area at the top of the control can be edited. 
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdownstyle
 tags: dropdownstyle
 published: True

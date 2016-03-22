@@ -1,7 +1,7 @@
 ---
 title: Standard Masks
 page_title: Standard Masks | UI for WinForms Documentation
-description: Standard Masks
+description: When the MaskType property is set to Standard the user is allowed to enter digits, letters, special characters.
 slug: winforms/editors/maskededitbox/standard-masks
 tags: standard,masks
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Translating Strings
 page_title: Translating Strings | UI for WinForms Documentation
-description: Translating Strings
+description: To localize RadScheduler to display control text and messages in a specific language create a descendant of the RadSchedulerLocalizationProvider class.
 slug: winforms/scheduler/localization/translating-strings
 tags: translating,strings
 published: True

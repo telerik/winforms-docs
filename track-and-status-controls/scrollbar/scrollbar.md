@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: ScrollBar | UI for WinForms Documentation
-description: ScrollBar
+description: RadHSrollBar and RadVScrollBar are themeable alternatives to the standard Windows Forms scroll bar controls.
 slug: winforms/track-and-status-controls/scrollbar
 tags: scrollbar
 published: True

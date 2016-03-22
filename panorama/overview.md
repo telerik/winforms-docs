@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Panorama | UI for WinForms Documentation
-description: Panorama
+description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
 slug: winforms/panorama
 tags: panorama
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Scheduler Navigation
 page_title: Scheduler Navigation | UI for WinForms Documentation
-description: Scheduler Navigation
+description: A Scheduler Navigator control at the top allows for quick switching between the available scheduler views 
 slug: winforms/scheduler/end-user-functionality/scheduler-navigation
 tags: scheduler,navigation
 published: True

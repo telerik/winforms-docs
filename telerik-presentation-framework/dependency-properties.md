@@ -1,7 +1,7 @@
 ---
 title: Dependency Properties
 page_title: Dependency Properties | UI for WinForms Documentation
-description: Dependency Properties
+description: RadControls support the Telerik Presentation Framework (TPF) dependency property system.
 slug: winforms/telerik-presentation-framework/dependency-properties
 tags: dependency,properties
 published: True

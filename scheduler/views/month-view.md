@@ -1,7 +1,7 @@
 ---
 title: Month View
 page_title: Month View | UI for WinForms Documentation
-description: Month View
+description: The Month view shows one month at a time, or a preset number of weeks. To move to the next day or previous month, you can use the back and forward keyboard arrows, or the SchedulerNavigator.
 slug: winforms/scheduler/views/month-view
 tags: month,view
 published: True

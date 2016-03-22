@@ -1,7 +1,7 @@
 ---
 title: RadPropertyMetadata
 page_title: RadPropertyMetadata | UI for WinForms Documentation
-description: RadPropertyMetadata
+description: RadPropertyMetadata describes a property and de-couples the information about a property from the property itself.
 slug: winforms/telerik-presentation-framework/class-hierarchy/radpropertymetadata
 tags: radpropertymetadata
 published: True

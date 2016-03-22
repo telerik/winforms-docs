@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+description: Using Telerik scrollbars is a bit more intricate compared to using the standard scrollbars because you have to handle scroll event manually.
 slug: winforms/track-and-status-controls/scrollbar/getting-started
 tags: getting,started
 published: True
