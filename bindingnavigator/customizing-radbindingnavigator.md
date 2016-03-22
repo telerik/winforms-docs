@@ -5,18 +5,16 @@ description: Customizing RadBindingNavigator
 slug: winforms/bindingnavigator/customizing-radbindingnavigator-
 tags: customizing,radbindingnavigator,
 published: True
-position: 2
+position: 4
 previous_url: bindingnavigator-overview-customizing-radbindingnavigator
 ---
 
 # Customizing RadBindingNavigator 
 
+Each of the control's elements can be accessed and customized. Once you access the desired elements, you can tweak their properties in order to modify them. The following snippet shows how you can add a button in RadBindingNavigator.
 
+#### Add custom button to the second strip element. 
 
-## 
-
-Each of the control's elements can be accessed and customized. Once you access the desired elements, you can tweak its properties in order to modify it. In this tutorial, we will take a look at code snippet, demonstrating how to add a button in the __RadBindingNavigator__ :
-        
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=custradBindingNavigator1}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=custradBindingNavigator1}} 
 
@@ -39,5 +37,6 @@ Me.radBindingNavigator1.Rows(0).Strips(1).Items.Add(newButton)
 
 {{endregion}} 
 
+>caption The new button is added after at the last position.
 
 ![bindingnavigator-overview-customizing-radbindingnavigator 001](images/bindingnavigator-overview-customizing-radbindingnavigator001.png)

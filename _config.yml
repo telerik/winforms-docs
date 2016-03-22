@@ -44,6 +44,9 @@ navigation:
     bindingnavigator:
         title: BindingNavigator
         position: 7
+    bindingnavigator/design-time:
+        title: DesignTime
+        position: 2
     calendar:
         title: Calendar
         position: 8

@@ -11,21 +11,10 @@ previous_url: bindingnavigator-overview-gettingstarted
 
 # Getting Started
  
-__RadBindingNavigator__ extends [RadCommandBar]({%slug winforms/commandbar%}) control, so most of its ways for customization at runtime and design time will be valid here as well. __RadBindingNavigator__ displays two sets of buttons separated into two __CommandBarStripElement__ according to the purpose of their commands: Navigation and Editing.
+__RadBindingNavigator__ extends [RadCommandBar]({%slug winforms/commandbar%}) control, so most of its ways for customization at runtime and design time will be valid here as well. __RadBindingNavigator__ displays two sets of buttons separated into two ''CommandBarStripElements'' according to the purpose of their commands:
+* __Navigation__
+* __Editing__
         
-
-The __navigation buttons__ come as follows:
-        
-
-And the __editing buttons__:
-        
-
-* Add new item
-            
-
-* Delete item
-            
-
 Adding a __RadBindingNavigator__ control to a form and binding it to a data source, such as a [BindingSource](http://msdn.microsoft.com/en-us/library/system.windows.forms.bindingsource%28v=vs.110%29.aspx), will automatically establish relationships between the buttons and the BindingSource methods. In the list below are represented all relationships.
         
 * Move to first item - [MoveFirst](https://msdn.microsoft.com/en-us/library/ms158169(v=vs.110).aspx) 
@@ -37,10 +26,11 @@ Adding a __RadBindingNavigator__ control to a form and binding it to a data sour
 
 ## How does it work?
 
-1\. The following tutorial will demonstrate how to get __RadBindingNaviagator__ up and running: Place __RadBindingNaviagator__ control and BindingSource component on a form.
-            
+The following tutorial will demonstrate how to get __RadBindingNaviagator__ up and running: 
 
-2\. Setup the DataSource property of the BindingSource and the BindingSource property of __RadBindingNaviagator__:
+1\.Place __RadBindingNaviagator__ control and BindingSource component on a form.
+
+2\. Setup the `DataSource` property of the `BindingSource` and the `BindingSource` property of __RadBindingNaviagator__.
           
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=radBindingNavigator1}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=radBindingNavigator1}} 
@@ -67,11 +57,11 @@ Me.radBindingNavigator1.BindingSource = Me.bindingSource1
 
 {{endregion}} 
 
-3\. Press F5 to run the project and you should see the following:
+3\. Press __F5__ to run the project and you should see the following:
 
 ![bindingnavigator-overview-gettingstarted 001](images/bindingnavigator-overview-gettingstarted001.png)
 
->important Due to the nature of the way __RadBindingNavigator__ is created at design time its __Name__ property should not be changed (does not apply if the control is created at runtime).
+>caution Due to the nature of the way __RadBindingNavigator__ is created at design time its __Name__ property should not be changed (does not apply if the control is created at runtime).
 >(This is needed in order to map the handler of a certain button with the button itself and have it accessible and editable at design time, as is it not possible to generate click event handler with the code in it at design time).
 >
 
