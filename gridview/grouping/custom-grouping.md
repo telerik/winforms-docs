@@ -90,7 +90,6 @@ private void radGridView1_CustomGrouping(object sender, GridViewCustomGroupingEv
             break;
     }
 }
-
 private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
 {
     if (e.Value == null)
@@ -103,7 +102,6 @@ private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvalua
 ````VB.NET
 Private Sub RadGridView1_CustomGrouping(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomGroupingEventArgs) Handles RadGridView1.CustomGrouping
     Dim country As String = e.Row.Cells("Country").Value.ToString()
-
     Select Case country
         Case "USA"
             e.GroupKey = "1. USA"
@@ -119,7 +117,6 @@ Private Sub RadGridView1_CustomGrouping(ByVal sender As Object, ByVal e As Teler
             Exit Select
     End Select
 End Sub
-
 Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
     If e.Value Is Nothing Then
         e.FormatString = e.Group.Key.ToString()
@@ -149,7 +146,6 @@ private void radGridView1_CustomGrouping(object sender, GridViewCustomGroupingEv
     DateTime date = (DateTime)e.Row.Cells["Date"].Value;
     e.GroupKey = date.Year + " " + this.GetQuarter(date);
 }
-
 private string GetQuarter(DateTime date)
 {
     if (date.Month >= 0 && date.Month <= 3)
@@ -169,7 +165,6 @@ private string GetQuarter(DateTime date)
         return "Q4";
     }
 }
-
 private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
 {
     if (e.Value == null)
@@ -184,7 +179,6 @@ Private Sub radGridView1_CustomGrouping(sender As Object, e As GridViewCustomGro
     Dim [date] As DateTime = DirectCast(e.Row.Cells("Date").Value, DateTime)
     e.GroupKey = Convert.ToString([date].Year) & " " & Me.GetQuarter([date])
 End Sub
-
 Private Function GetQuarter([date] As DateTime) As String
     If [date].Month >= 0 AndAlso [date].Month <= 3 Then
         Return "Q1"
@@ -196,7 +190,6 @@ Private Function GetQuarter([date] As DateTime) As String
         Return "Q4"
     End If
 End Function
-
 Private Sub radGridView1_GroupSummaryEvaluate(sender As Object, e As GroupSummaryEvaluationEventArgs)
     If e.Value Is Nothing Then
         e.FormatString = e.Group.Key.ToString()
@@ -226,7 +219,6 @@ private object PerformGrouping(GridViewRowInfo row, int level)
 {
     string title = row.Cells["ContactTitle"].Value.ToString();
     string groupKey;
-
     if (title.StartsWith("Sales"))
     {
         groupKey = "1. Sales contacts";
@@ -243,7 +235,6 @@ private object PerformGrouping(GridViewRowInfo row, int level)
     {
         groupKey = "Other contacts";
     }
-
     return groupKey;
 }
 private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
@@ -259,7 +250,6 @@ private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvalua
 Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As Integer) As Object
     Dim title As String = row.Cells("ContactTitle").Value.ToString()
     Dim groupKey As String
-
     If title.StartsWith("Sales") Then
         groupKey = "1. Sales contacts"
     ElseIf title.StartsWith("Marketing") Then
@@ -269,10 +259,8 @@ Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As In
     Else
         groupKey = "Other contacts"
     End If
-
     Return groupKey
 End Function
-
 Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
     If e.Value Is Nothing Then
         e.FormatString = e.Group.Key.ToString()
@@ -292,7 +280,6 @@ private object PerformGrouping(GridViewRowInfo row, int level)
 {
     string title = row.Cells["ContactTitle"].Value.ToString();
     string groupKey;
-
     if (title.StartsWith("Sales"))
     {
         groupKey = "1. Sales contacts";
@@ -309,7 +296,6 @@ private object PerformGrouping(GridViewRowInfo row, int level)
     {
         groupKey = "Other contacts";
     }
-
     return groupKey;
 }
 private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
@@ -325,7 +311,6 @@ private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvalua
 Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As Integer) As Object
     Dim title As String = row.Cells("ContactTitle").Value.ToString()
     Dim groupKey As String
-
     If title.StartsWith("Sales") Then
         groupKey = "1. Sales contacts"
     ElseIf title.StartsWith("Marketing") Then
@@ -335,10 +320,8 @@ Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As In
     Else
         groupKey = "Other contacts"
     End If
-
     Return groupKey
 End Function
-
 Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
     If e.Value Is Nothing Then
         e.FormatString = e.Group.Key.ToString()
