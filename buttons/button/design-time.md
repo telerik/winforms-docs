@@ -1,7 +1,7 @@
 ---
 title: Design Time
 page_title: Design Time | UI for WinForms Documentation
-description: Design Time
+description: At desing time you can use the RadButton's Smart Tag to change the applied theme or navigate to the online documentation.
 slug: winforms/buttons/button/design-time
 tags: button, design-time
 published: True

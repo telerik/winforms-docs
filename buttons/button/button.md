@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Button | UI for WinForms Documentation
-description: Button
+description: RadButton is a themable replacement of the standard WinForms Button. It can be clicked by using the mouse, Enter key, or Spacebar, if the button has focus.
 slug: winforms/buttons/button
 tags: button
 published: True

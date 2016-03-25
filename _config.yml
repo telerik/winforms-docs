@@ -19,7 +19,9 @@ navigation:
         position: 6
     buttons/button:
         title: Button
-        position: 0
+    buttons/button/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     buttons/checkbox:
         title: CheckBox
         position: 1
