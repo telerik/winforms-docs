@@ -8,7 +8,7 @@ published: True
 position: 2 
 ---
 
-This help article will demonstrate a step by step tutorial how to customize the ControlDeafult theme for __RadButton__
+This help article will demonstrate a step by step tutorial how to customize the ControlDeafult theme for __RadButton__ 
 
 1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}).
 
