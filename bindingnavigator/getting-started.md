@@ -50,3 +50,10 @@ Me.radBindingNavigator1.BindingSource = Me.bindingSource1
 >(This is needed in order to map the handler of a certain button with the button itself and have it accessible and editable at design time, as is it not possible to generate click event handler with the code in it at design time).
 >
 
+## See Also
+
+ * [Properties]({%slug winforms/bindingnavigator/properties%})
+
+ * [Structure]({%slug winforms/bindingnavigator/structure%})
+
+ * [Customizing Appearance]({%slug winforms/bindingnavigator/customizing-radbindingnavigator-%})

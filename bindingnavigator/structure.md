@@ -27,3 +27,10 @@ Adding a __RadBindingNavigator__ control to a form and binding it to a data sour
 * Move to last item - [MoveLast](https://msdn.microsoft.com/en-us/library/ms158170(v=vs.110).aspx)
 * Add new item - [AddNew](https://msdn.microsoft.com/en-us/library/ms158154(v=vs.110).aspx)
 * Delete item - [RemoveCurrent](https://msdn.microsoft.com/en-us/library/ms158184(v=vs.110).aspx)
+
+
+## See Also
+
+ * [Properties]({%slug winforms/bindingnavigator/properties%})
+
+ * [Customizing Appearance]({%slug winforms/bindingnavigator/customizing-radbindingnavigator-%})
