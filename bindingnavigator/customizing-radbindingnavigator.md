@@ -5,7 +5,7 @@ description: Customizing RadBindingNavigator
 slug: winforms/bindingnavigator/customizing-radbindingnavigator-
 tags: customizing,radbindingnavigator,
 published: True
-position: 4
+position: 5
 previous_url: bindingnavigator-overview-customizing-radbindingnavigator
 ---
 
