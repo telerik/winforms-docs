@@ -52,8 +52,8 @@ Me.radBindingNavigator1.BindingSource = Me.bindingSource1
 
 ## See Also
 
- * [Properties]({%slug winforms/bindingnavigator/properties%})
+ * [Using Custom Themes]({%slug winforms/themes/using-custom-themes%})
 
- * [Structure]({%slug winforms/bindingnavigator/structure%})
+ * [Loading Custom Themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
 
  * [Customizing Appearance]({%slug winforms/bindingnavigator/customizing-radbindingnavigator-%})

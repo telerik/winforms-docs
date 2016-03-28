@@ -12,10 +12,7 @@ previous_url: calendar-design-time-support-adding-special-dates
 # Adding Special Days
 
 
-
-## 
-
-"Special days" correspond to public holidays, vacation days, birth days, etc. and are usually marked in a calendar for planning and scheduling purposes. Click the ellipses for the __SpecialDays__ property in the Properties Window to add, remove and configure special days. The __Special Days Collection Editor__ allows you to: 
+"Special days" correspond to public holidays, vacation days, birth days, etc. and are usually marked in a calendar for planning and scheduling purposes. Click the ellipses of the __SpecialDays__ property in the `Properties` window to add, remove and configure special days. The __Special Days Collection Editor__ allows you to: 
 
 * Click the __Add__ button to append a __RadCalendarDay__ object to the collection.
             

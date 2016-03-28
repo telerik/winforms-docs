@@ -1,22 +1,17 @@
 ---
-title: Important Properties
-page_title: Important Properties | UI for WinForms Documentation
-description: Important Properties
-slug: winforms/calendar/important-properties
-tags: important,properties
+title: Properties and Events
+page_title: Properties and Events | UI for WinForms Documentation
+description: This article list the most important properties and events of RadCalendar.
+slug: winforms/calendar/important-events
+tags: important,events
 published: True
-position: 1
-previous_url: calendar-overview-important-properties
+position: 3
+previous_url: calendar-overview-important-events, calendar-overview-important-properties
 ---
 
-# Important Properties
+# Properties 
 
-
-
-## RadCalendar Properties 
-
-
-|  __Property__  |  __Description__  |
+| Property | Description |
 | ------ | ------ |
 | __AllowMultipleSelect__ |Enables multiple selection of items.|
 | __ShowNavigation__ |Gets or sets whether the navigation controls in the title section will be displayed.|
@@ -35,3 +30,9 @@ previous_url: calendar-overview-important-properties
 | __ShowRowHeaders__ |Show the row headers.|
 | __ShowOtherMonthsDays__ |Gets or sets whether the month matrix, when rendered will show days from other (previous or next) months or will render only blank cells.|
 | __ZoomLevel__ |Gets or sets the level used for the zoom navigation mode. By default its value is ZoomLevel. *Days* .|
+
+# Events
+ 
+|Event|Description|
+| ---- | ---- |
+|ElementRender| This event fires before each element is painted. It can be used for styling the elements. More information is available in the following article [Element Render]({%slug winforms\calendar\renderer%}).| SelectionChanging |This event is fired just prior to a selection change and allows you to programmatically cancel the change. The SelectionEventArgs passed to this event include __Date,__ a __DateTimeCollection__ of selected dates and __Cancel__ that can be set to true to disallow the selection from being changed.|SelectionChanged|This event is fired when a day, week, month or year is changed.|ViewChanging|This event fires just prior to __ViewChanged__ and allows you to cancel.  The __ViewChangingEventArgs__ passed to this event include the __View__ and a boolean __Cancel__ property.|__ViewChanged__|This event is fired when the currently visible view (for example a YearView Or MonthsView) is changed.|__ZoomChanging__|This event is fired when the __ZoomLevel__ is changing in HeaderNavigationMode. *Zoom* .|__ZoomChanged__|This event is fired when the __ZoomLevel__ is changed in HeaderNavigationMode. *Zoom* .|

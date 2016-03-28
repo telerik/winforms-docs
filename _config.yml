@@ -47,6 +47,9 @@ navigation:
     bindingnavigator/design-time:
         title: Design Time
         position: 3
+    bindingnavigator/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     calendar:
         title: Calendar
         position: 8
@@ -59,9 +62,9 @@ navigation:
     calendar/customizing-behavior:
         title: Customizing Behavior
         position: 5
-    calendar/design-time-support:
-        title: Design-Time Support
-        position: 6
+    calendar/design-time:
+        title: Design Time
+        position: 2
     calendar/localization:
         title: Localization
         position: 7
