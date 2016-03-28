@@ -34,14 +34,13 @@ You can customize the nested elements at run time as well:
 {{source=..\SamplesVB\Buttons\Button.vb region=AccessingCustomizingElements}} 
 
 ````C#
-            
 this.radButton1.ButtonElement.TextElement.ForeColor = Color.Red;
 this.radButton1.ButtonElement.ButtonFillElement.BackColor = Color.Aqua;
 this.radButton1.ButtonElement.BorderElement.BoxStyle = Telerik.WinControls.BorderBoxStyle.FourBorders;
 this.radButton1.ButtonElement.BorderElement.TopColor = Color.Aqua;
 this.radButton1.ButtonElement.BorderElement.BottomColor = Color.Aqua;
 this.radButton1.ButtonElement.BorderElement.LeftColor = Color.Red;
-this.radButton1.ButtonElement.BorderElement.RightColor = Color.Red; 
+this.radButton1.ButtonElement.BorderElement.RightColor = Color.Red;
 
 ````
 ````VB.NET
