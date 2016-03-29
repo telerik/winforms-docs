@@ -32,7 +32,13 @@ previous_url: calendar-overview-important-events, calendar-overview-important-pr
 | __ZoomLevel__ |Gets or sets the level used for the zoom navigation mode. By default its value is ZoomLevel. *Days* .|
 
 # Events
- 
+
 |Event|Description|
-| ---- | ---- |
-|ElementRender| This event fires before each element is painted. It can be used for styling the elements. More information is available in the following article [Element Render]({%slug winforms\calendar\renderer%}).| SelectionChanging |This event is fired just prior to a selection change and allows you to programmatically cancel the change. The SelectionEventArgs passed to this event include __Date,__ a __DateTimeCollection__ of selected dates and __Cancel__ that can be set to true to disallow the selection from being changed.|SelectionChanged|This event is fired when a day, week, month or year is changed.|ViewChanging|This event fires just prior to __ViewChanged__ and allows you to cancel.  The __ViewChangingEventArgs__ passed to this event include the __View__ and a boolean __Cancel__ property.|__ViewChanged__|This event is fired when the currently visible view (for example a YearView Or MonthsView) is changed.|__ZoomChanging__|This event is fired when the __ZoomLevel__ is changing in HeaderNavigationMode. *Zoom* .|__ZoomChanged__|This event is fired when the __ZoomLevel__ is changed in HeaderNavigationMode. *Zoom* .|
+|---|---|
+|__ElementRender__| More information is available in the following article [Element Render]({%slug winforms\calendar\renderer%}).|
+|__SelectionChanging__|This event is fired just prior to a selection change and allows you to programmatically cancel the change. The SelectionEventArgs passed to this event include __Date,__ a __DateTimeCollection__ of selected dates and __Cancel__ that can be set to true to disallow the selection from being changed.|
+|__SelectionChanged__|This event is fired when a day, week, month or year is changed.|
+|__ViewChanging__|This event fires just prior to __ViewChanged__ and allows you to cancel.  The __ViewChangingEventArgs__ passed to this event include the __View__ and a boolean __Cancel__ property.|
+|__ViewChanged__|This event is fired when the currently visible view (for example a YearView Or MonthsView) is changed.|
+|__ZoomChanging__|This event is fired when the __ZoomLevel__ is changing in HeaderNavigationMode. *Zoom* .|
+|__ZoomChanged__|This event is fired when the __ZoomLevel__ is changed in HeaderNavigationMode. *Zoom* .|
