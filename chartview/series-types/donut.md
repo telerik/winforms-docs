@@ -76,7 +76,7 @@ series.Range = range
 * __RadiusFactor__ - the property can increase and decrease the diameter of the series. Setting the __RadiusFactor__ to *0.9* will decrease the radius of the series by *10 percent*. Similarly, the value *1.1* will increase it. Leaving the property with value *1* will make the donut fill the available space.
             
 
-* __InnerRadiusFactor__ - – the property is used to determine the inner radius of the donut series. Like __RadiusFactor__, its value is used as a percentage of the whole radius.
+* __InnerRadiusFactor__ - the property is used to determine the inner radius of the donut series. Like __RadiusFactor__, its value is used as a percentage of the whole radius, if the __RadiusFactor__ factor is set the value will be calculated according to the entire new radius.
             
 
 Additionally, DonutSeries allows offsetting a pie segment from the rest of the slices. This is achieved through the __OffsetFromCenter__ property of the individual __PieDataPoint__. The following snippet demonstrates how to shift the first pie piece: 
