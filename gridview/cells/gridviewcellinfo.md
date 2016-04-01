@@ -15,7 +15,7 @@ previous_url: gridview-cells-gridviewcellinfo
 
 ## 
 
-__GridViewCellInfo__ class is the logical representation of a single grid cell. __GridViewCellInfo__properties include:
+__GridViewCellInfo__ class is the logical representation of a single grid cell. __GridViewCellInfo__ properties include:
 
 * __Value:__ The value displayed in the cell.
 
