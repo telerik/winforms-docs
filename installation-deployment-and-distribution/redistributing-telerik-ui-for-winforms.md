@@ -448,10 +448,6 @@ Telerik.WinControls.UI.dll</td></tr><tr><td>
 
 Telerik.WinControls.GridView.dll</td></tr><tr><td>
 
-<b>RadPanel</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
 <b>RadProgressBar</b></td><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>
@@ -616,11 +612,7 @@ Telerik.WinControls.UI.dll</td></tr><tr><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>
 
-<b>RadProgressBar</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadOageView</b></td><td>
+<b>RadPageView</b></td><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>
 
@@ -755,11 +747,11 @@ Telerik.WinControls.Themes.VisualStudio2012Light.dll</td></tr><tr><td>
 <b>Windows8</b></td><td>
 
 Telerik.WinControls.Themes.Windows8.dll</td></tr>
-<tr><td>RadToggleSwitch</td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td>RadLayoutControl</td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td>RadPopupEditor</td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td>RadDataLayout</td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td>RadVirtualGrid</td><td>Telerik.WinControls.GridView.dll</td></tr>
+<tr><td><b>RadToggleSwitch</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadLayoutControl</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadPopupEditor</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadDataLayout</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadVirtualGrid</b></td><td>Telerik.WinControls.GridView.dll</td></tr>
 </table>
 
 You can find all these assemblies in the __/bin__ folder of your installation.
