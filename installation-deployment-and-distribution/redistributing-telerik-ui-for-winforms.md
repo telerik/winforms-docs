@@ -752,6 +752,18 @@ Telerik.WinControls.Themes.Windows8.dll</td></tr>
 <tr><td><b>RadPopupEditor</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadDataLayout</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadVirtualGrid</b></td><td>Telerik.WinControls.GridView.dll</td></tr>
+
+<tr><td><b>RadPanorama</b></td><td> Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadColorBox</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadCalculatorDropDown</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadBrowseEditor</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadColorBox</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadColorBox</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadColorBox</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadColorBox</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadColorBox</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadColorBox</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+
 </table>
 
 You can find all these assemblies in the __/bin__ folder of your installation.
