@@ -49,7 +49,7 @@ Me.RadChartView1.Series.Add(series)
 
 DonutSeries can be customized using the following properties:
 
-* __Range__ - the property consists of two parameters __StartAngle__ and __SweepAngle__. __StartAngle__ sets the angle in degrees from which the drawing of the pie segments will begin. Note that pie slices are always rendered in counter-clockwise direction. __SweepAngle__ determines if the chart will appear as a full circle or a partial circle. The snippet below illustrates DonutSeries how to set the __Range__ property: 
+* __Range__ - the property consists of two parameters __StartAngle__ and __SweepAngle__. __StartAngle__ sets the angle in degrees from which the drawing of the pie segments will begin. Note that pie slices are always rendered in clockwise direction. __SweepAngle__ determines if the chart will appear as a full circle or a partial circle. The snippet below illustrates DonutSeries how to set the __Range__ property: 
 
 {{source=..\SamplesCS\ChartView\Series\DonutSeriesForm.cs region=donutAngleRange}} 
 {{source=..\SamplesVB\ChartView\Series\DonutSeriesForm.vb region=donutAngleRange}} 

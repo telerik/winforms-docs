@@ -48,7 +48,7 @@ Me.RadChartView1.Series.Add(series)
 __PieSeries__ can be customized using the following properties:
         
 
-* __Range:__ The property consists of two parameters StartAngle and SweepAngle. StartAngle sets the angle in degrees from which the drawing of the pie segments will begin. Note that pie slices are always rendered in counter-clockwise direction. SweepAngle determines if the chart will appear as a full circle or a partial circle.The snippet below illustrates PieSeries how to set the Range property: 
+* __Range:__ The property consists of two parameters StartAngle and SweepAngle. StartAngle sets the angle in degrees from which the drawing of the pie segments will begin. Note that pie slices are always rendered in clockwise direction. SweepAngle determines if the chart will appear as a full circle or a partial circle.The snippet below illustrates PieSeries how to set the Range property: 
 
 {{source=..\SamplesCS\ChartView\Series\PieSeriesForm.cs region=angleRange}} 
 {{source=..\SamplesVB\ChartView\Series\PieSeriesForm.vb region=angleRange}} 
