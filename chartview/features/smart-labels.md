@@ -63,93 +63,39 @@ In a specific scenario you may need to control the labels' position. For this pu
 {{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=CustomSmartLabelsStrategy}} 
 
 ````C#
-public class MyStrategy : SmartLabelsStrategyBase
-{
-    public override void CalculateLocations(ChartSeriesCollection series, Rectangle plotArea)
-    {
-        List<LabelElement> labels = new List<LabelElement>();
-        List<int> overlaps = new List<int>();
-
-        int x = 70;
-        int y = 30;
-        int spacing = 6;
-        foreach (ChartSeries chartSeries in series)
-        {
-            if (!chartSeries.ShowLabels || !chartSeries.IsVisible)
-            {
-                continue;
-            }
-
-            foreach (DataPointElement point in chartSeries.Children)
-            {
-                LabelElement label = (LabelElement)point.Children[0];
-                Rectangle labelRect = ChartRenderer.ToRectangle(label.GetLayoutSlot());
-
-                var newRect = new Rectangle(x, y, labelRect.Width, labelRect.Height);
-
-                x += spacing + labelRect.Width;
-                if (x + spacing + labelRect.Width > plotArea.Width - 100)
-                {
-                    y += spacing + labelRect.Height;
-                    x = 70;
-                }
-
-                label.SmartRectangle = newRect;
-                labels.Add(label);
-            }
-        }
-    }
-}
-
-public class MySmartLabelsController : SmartLabelsController
-{
-    public override void CalculateLabelsPositions(ChartSeriesCollection series, Rectangle plotArea)
-    {
-        if (this.Strategy != null)
-        {
-            this.Strategy.CalculateLocations(series, plotArea);
-        }
-    }
-}
-
 ````
 ````VB.NET
 Public Class MyStrategy
     Inherits SmartLabelsStrategyBase
-    Public Overrides Sub CalculateLocations(series As ChartSeriesCollection, plotArea As Rectangle)
+    Public Overrides Sub CalculateLocations(series As Telerik.WinControls.UI.ChartSeriesCollection, plotArea As Rectangle)
         Dim labels As New List(Of LabelElement)()
         Dim overlaps As New List(Of Integer)()
-
         Dim x As Integer = 70
         Dim y As Integer = 30
         Dim spacing As Integer = 6
-        For Each chartSeries As ChartSeries In series
+        For Each chartSeries As Telerik.WinControls.UI.ChartSeries In series
             If Not chartSeries.ShowLabels OrElse Not chartSeries.IsVisible Then
                 Continue For
             End If
-
             For Each point As DataPointElement In chartSeries.Children
                 Dim label As LabelElement = DirectCast(point.Children(0), LabelElement)
                 Dim labelRect As Rectangle = ChartRenderer.ToRectangle(label.GetLayoutSlot())
-
                 Dim newRect = New Rectangle(x, y, labelRect.Width, labelRect.Height)
-
                 x += spacing + labelRect.Width
                 If x + spacing + labelRect.Width > plotArea.Width - 100 Then
                     y += spacing + labelRect.Height
                     x = 70
                 End If
-
                 label.SmartRectangle = newRect
                 labels.Add(label)
             Next
         Next
     End Sub
+  
 End Class
-
 Public Class MySmartLabelsController
     Inherits SmartLabelsController
-    Public Overrides Sub CalculateLabelsPositions(series As ChartSeriesCollection, plotArea As Rectangle)
+    Public Overrides Sub CalculateLabelsPositions(series As Telerik.WinControls.UI.ChartSeriesCollection, plotArea As Rectangle)
         If Me.Strategy IsNot Nothing Then
             Me.Strategy.CalculateLocations(series, plotArea)
         End If
@@ -175,9 +121,9 @@ this.radChartView1.Controllers.Add(controler);
 
 ````
 ````VB.NET
-Dim controler = New MySmartLabelsController()
+Dim controler As New MySmartLabelsController()
 controler.Strategy = New MyStrategy()
-Me.RadChartView1.Controllers.Add(controler)
+Me.radChartView1.Controllers.Add(controler)
 
 ````
 
