@@ -31,4 +31,4 @@ position: 4
 |Event|Description|
 |----|----|
 |Click|Occurs when the control is clicked|
-|MouseDoubleClick|Occurs when the control is clicked by the mouse|
+|MouseClick|Occurs when the control is clicked by the mouse|
