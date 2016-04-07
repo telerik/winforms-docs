@@ -35,7 +35,7 @@ previous_url: calendar-overview-important-events, calendar-overview-important-pr
 
 |Event|Description|
 |---|---|
-|__ElementRender__| More information is available in the following article [Element Render]({%slug winforms\calendar\renderer%}).|
+|__ElementRender__| More information is available in the following article [Element Render]({%slug winforms/calendar/customizing-appearance/formatting-items%}).|
 |__SelectionChanging__|This event is fired just prior to a selection change and allows you to programmatically cancel the change. The SelectionEventArgs passed to this event include __Date,__ a __DateTimeCollection__ of selected dates and __Cancel__ that can be set to true to disallow the selection from being changed.|
 |__SelectionChanged__|This event is fired when a day, week, month or year is changed.|
 |__ViewChanging__|This event fires just prior to __ViewChanged__ and allows you to cancel.  The __ViewChangingEventArgs__ passed to this event include the __View__ and a boolean __Cancel__ property.|

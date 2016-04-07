@@ -37,6 +37,8 @@ End Sub
 
 ````
 
+{{endregion}}
+
 ![calendar-formatting-items 001](calendar-formatting-items001.png)
 
 ## Refresh the visual elements at runtime.
@@ -55,3 +57,5 @@ radCalendar1.CalendarElement.RefreshVisuals();
 radCalendar1.CalendarElement.RefreshVisuals()
 
 ````
+
+{{endregion}}
