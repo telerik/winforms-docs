@@ -5,7 +5,7 @@ description: Handling RadCheckBox States
 slug: winforms/buttons/checkbox/handling-radcheckbox-states
 tags: handling,radcheckbox,states
 published: True
-position: 1
+position: 4
 previous_url: buttons-checkbox-handling-radcheckbox-states
 ---
 
