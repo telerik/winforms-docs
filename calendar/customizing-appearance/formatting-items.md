@@ -10,7 +10,7 @@ position: 0
 
 # Formatting Items
 
-The __ElementRender__ event will be fired before every element is painted. This allows to easily change the styles of the elements at runtime, or format the items upon a condition. The following example shows how you can change change the the border for a particular days. 
+The __ElementRender__ event will be fired before every element is painted. This allows to easily change the styles of the elements at runtime, or format the items upon a condition. The following example shows how you can change the the border for a particular days. 
 
 #### Formating items in the ElementRender event.
 

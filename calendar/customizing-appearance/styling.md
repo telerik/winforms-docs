@@ -1,23 +1,37 @@
 ---
-title: Styling
+title: Themes
 page_title: Styling | UI for WinForms Documentation
-description: Styling
+description: The following article shows how you can change calendar cells in Visual Style Builder.
 slug: winforms/calendar/customizing-appearance/styling
-tags: styling
+tags: styling, themes
 published: True
 position: 0
 previous_url: calendar-customizing-appearance-styling
 ---
 
-# Styling
+# Styling in Visual Style Builder
+
+The following article shows how you can change the calendar cells styles in [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}). The `CalendarTableElement` corresponds to a single month view in __RadCalendar__. The `CalendarTableElement` is the container of __RadCalendar__ cells that represent the days of the month. 
 
 
+### Changing the Today cell styles in Visual Style Builder
 
-## 
+1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}).
+2. Export the built-in themes in a specific folder by selecting `File >> Export Built-in Themes`.
+3. Load a desired theme from the just exported files by selecting `File >> Open Package`.
+4. Select __RadCalendar__ and expand the elements up to `CalendarCellElement`.
+   ![calendar-themes001](images/calendar-themes001.png)
+5. Select the `Today` state in the `Element States` window.Then open `CalCellTodayFill` repository item.
+   ![calendar-themes002](images/calendar-themes002.png)
+6. Once the item is opened change the BackColor and close the item.
+   ![calendar-themes003](images/calendar-themes003.png)
+7. In the `Elements` window select the Font and change its style and sizе.
+   ![calendar-themes004](images/calendar-themes004.png)
 
-__RadCalendar__ can be fully styled through the __Visual Style Builder__. 
 
-Every visual element is inherited from the __CalendarVisualElement__. Some of the most important properties are:
+### Common Styling Properties
+
+You can use this approach to customize all other states styles. The following list shows some of the most important properties that can be changed:
 
 1. __BackColor__ - Gets or sets the back color which will be used in the gradient fill. 
 
@@ -63,7 +77,7 @@ Every visual element is inherited from the __CalendarVisualElement__. Some of th
 
 1. __BorderGradientStyle__ - Gets or sets the border gradient style.
 
-The __CalendarTableElement__ corresponds to a single month view in __RadCalendar__. The __CalendarTableElement__ is the container of RadCalendar cells that represent the days of the month.  
+### Supported States 
 
 Each day is represented by an instance of __CalendarCellElement__. The logical states of the day are embodied in the __CalendarCellElement__ properties shown below. 
 
@@ -91,5 +105,4 @@ Each day is represented by an instance of __CalendarCellElement__. The logical s
 
 
 1. __OutOfRange -__ Indicates whether the visual element is representing a day which is out of the specified range.
-
-The logical states represented by these properties can be mapped to styles in __Visual Style Builder__.
+ 
