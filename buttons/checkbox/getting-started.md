@@ -21,17 +21,22 @@ previous_url: buttons-checkbox-getting-started
 {{source=..\SamplesVB\Buttons\CheckBox.vb region=AddCheckBox}} 
 
 ````C#
- RadCheckBox checkBox = new RadCheckBox();
- checkBox.ToggleState = Telerik.WinControls.Enumerations.ToggleState.On;
- checkBox.Text = "Is active";
- this.Controls.Add(checkBox);
+public void AddCheckBox()
+{
+    RadCheckBox checkBox = new RadCheckBox();
+    checkBox.ToggleState = Telerik.WinControls.Enumerations.ToggleState.On;
+    checkBox.Text = "Is active";
+    this.Controls.Add(checkBox);
+}
 
 ````
 ````VB.NET
-Dim checkBox As New RadCheckBox()
-checkBox.ToggleState = Telerik.WinControls.Enumerations.ToggleState.[On]
-checkBox.Text = "Is active"
-Me.Controls.Add(checkBox)
+Public Sub AddCheckBox()
+    Dim checkBox As New RadCheckBox()
+    checkBox.ToggleState = Telerik.WinControls.Enumerations.ToggleState.[On]
+    checkBox.Text = "Is active"
+    Me.Controls.Add(checkBox)
+End Sub
 
 ````
 
