@@ -2,12 +2,14 @@
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
 description: RadCheckBox is designed to provide an interface element that can represent an On or Off state using a check mark.
-slug: winforms/buttons/checkbox-getting-started
+slug: winforms/buttons/checkbox/getting-started
 tags: checkbox
 published: True
 position: 3
 previous_url: buttons-checkbox-getting-started
 ---
+
+# Getting Started
 
 * To add a __RadCheckBox__ to your form, drag a __RadCheckBox__ from the toolbox onto the surface of the form designer.
 
