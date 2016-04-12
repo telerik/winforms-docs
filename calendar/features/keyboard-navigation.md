@@ -10,11 +10,7 @@ previous_url: calendar-customizing-behavior-keyboard-navigation
 ---
 
 # Keyboard Navigation
-
-
-
-## 
-
+ 
 
 |  |  __Key__  |  __Behavior__  |
 | ------ | ------ | ------ |
