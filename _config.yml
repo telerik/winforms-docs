@@ -55,19 +55,19 @@ navigation:
         position: 8
     calendar/customizing-appearance:
         title: Customizing Appearance
-        position: 4
-    calendar/customizing-appearance/how-to:
-        title: How To
-        position: 5
+        position: 6
     calendar/customizing-behavior:
         title: Customizing Behavior
+        position: 7
+    calendar/features:
+        title: Features
         position: 5
     calendar/design-time:
         title: Design Time
         position: 2
     calendar/localization:
         title: Localization
-        position: 7
+        position: 8
     carousel:
         title: Carousel
         position: 9
