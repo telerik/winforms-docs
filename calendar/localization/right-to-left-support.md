@@ -11,16 +11,16 @@ previous_url: calendar-localization-right-to-left-support
 
 # Right-To-Left Support
 
+__RadCalendar__ fully supports right-to-left (RTL) language locales. You can enable/disable the right-to-left support using the __RightToLeft__ enumeration, which has two members: __Yes__, __No__.
 
-
-## 
-
-RadCalendar fully supports right-to-left (RTL) language locales. You can enable/disable the right-to-left support using the __RightToLeft__ enumeration, which has two members: __Yes__, __No__.
-
+>caption RightToleft = No
 ![calendar-localization-right-to-left-support 001](images/calendar-localization-right-to-left-support001.png)
 
-__Assigning RightToLeft__
+>caption RightToleft = Yes
+![calendar-localization-right-to-left-support 002](images/calendar-localization-right-to-left-support002.png)
 
+
+#### Setting RightToLeft
 
 {{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=rtl}} 
 {{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=rtl}} 

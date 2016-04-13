@@ -1,5 +1,5 @@
 ---
-title: Zooming
+title: Zoom
 page_title: Zooming | UI for WinForms Documentation
 description: Zooming
 slug: winforms/calendar/customizing-appearance/zooming
@@ -9,14 +9,29 @@ position: 5
 previous_url: calendar-customizing-appearance-zooming, /calendar/customizing-appearance/zooming
 ---
 
-# Zooming
+## FishEye Effect
 
-__RadCalendar__ has a built-in zooming functionality.The  __Zoom-In__ operation is activated by holding the left mouse button on a particular calendar cell. The __Zoom-Out__ operation is activated when the left mouse button is released. The following properties control zooming:
+__RadCalendar__ has a built-in date zoom functionality.The  __Zoom-In__ operation is activated by holding the left mouse button on a particular calendar cell. The __Zoom-Out__ operation is activated when the left mouse button is released. The following properties control zooming:
 
-* __AllowFishEye__ - enables the zooming functionality 
+* __AllowFishEye:__ Enables the zooming functionality 
 
-* __ZoomingFactor__ - gets or sets the zooming factor of a cell which is handled by the zooming (fish eye) functionality. 
+* __ZoomingFactor:__ Gets or sets the zooming factor of a cell which is handled by the zooming (fish eye) functionality. 
 
 The screenshot below shows a calendar with a zoomed-in date.
 
-![calendar-customizing-appearance-zooming 001](images/calendar-customizing-appearance-zooming001.png)
+![calendar-features-zoom 001](images/calendar-features-zoom001.png)
+
+## Navigation Zoom
+
+The zoom functionality supports changing the current view type as well. With this functionality you are able to switch between Day, Month, and Year view by just clinking the header. This functionality is controlled by the following properties: 
+* __HeaderNavigationMode:__ Specifies the navigation mode that will be used when user clicks on header element.
+
+* __ZoomLevel:__ Get or sets the current level. The possible values are, *Days*, *Months*, *Years* and *YearRanges*.
+
+>caption Header zoom navigation mode
+
+![calendar-features-zoom 002](images/calendar-features-zoom002.gif)
+
+>caution
+Zoom navigation mode is not supporting in MultipleView of RadCalendar.
+>

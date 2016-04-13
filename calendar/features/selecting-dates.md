@@ -11,21 +11,21 @@ previous_url: calendar-customizing-behavior-selecting-dates
 
 # Selecting Dates
 
-To enable selection of dates set the RadCalendar __AllowSelect__ property to *true*. Set __AllowMultipleSelect__ to *true* to enable more than one selection at one time.
+To enable selection of dates set the __AllowSelect__ property to *true*. Set __AllowMultipleSelect__ to *true* to enable more than one date at a time.
 
-## Selecting using the keyboard
+## Selecting with the keyboard
 
-See [Keyboard Navigation]({%slug winforms/calendar/customizing-behavior/keyboard-navigation%}) for a complete list of keys used to navigate RadCalendar.
+See [Keyboard Navigation]({%slug winforms/calendar/customizing-behavior/keyboard-navigation%}) for a complete list of keys used to navigate __RadCalendar__.
 
-## Selecting using the mouse
+## Selecting with the mouse
 
-Select a single date by clicking on it. If __AllowMultipleSelect__ is true, you can select multiple dates by holding the `Ctrl` key and clicking each date.
+Select a single date by clicking on it. If __AllowMultipleSelect__ is true, you can select multiple dates by holding the `Ctrl` key and clicking each date.
 
-See the [Column and Row Headers]({%slug winforms/calendar/customizing-behavior/column-and-row-headers%}) topic for how to select entire columns and rows at one time.
+See the [Column and Row Headers]({%slug winforms/calendar/customizing-behavior/column-and-row-headers%}) topic for how to select entire columns and rows at once.
 
 ## Selecting using the API
 
-To select a single day assign a __DateTime__ value to the __SelectedDate__ property. To select multiple dates use the RadCalendar __SelectedDates.Add()__ method to add __DateTime__ values to the collection. To have more than one date in the __SelectedDates__ collection you should set the RadCalendar __AllowMultipleSelect__ property to *true*. The code snippet below shows how to select multiple date through the API. 
+To select a single day assign a __DateTime__ value to the __SelectedDate__ property. To select multiple dates use the __SelectedDates.Add()__ method to add __DateTime__ values to the collection. To have more than one date in the __SelectedDates__ collection you should set the __AllowMultipleSelect__ property to *true*. The code snippet below shows how to select multiple dates through the API. 
 
 #### Selecting dates
 

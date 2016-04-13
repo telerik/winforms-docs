@@ -39,11 +39,11 @@ End Sub
 
 {{endregion}}
 
-![calendar-formatting-items 001](calendar-formatting-items001.png)
+![calendar-formatting-items 001](images/calendar-formatting-items001.png)
 
 ## Refresh the visual elements at runtime.
 
-Since the event is called when the calendar is made visible, you may need to trigger it again at run-time. This can be done by calling RefreshVisuals method.
+Since the event is called when the calendar is made visible, you may need to trigger it again at run-time. This can be done by calling __RefreshVisuals__ method.
 
 #### Trigger the ElementRender event at run-time.
 

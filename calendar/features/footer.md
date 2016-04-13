@@ -11,16 +11,13 @@ previous_url: calendar-customizing-appearance-footer,
 
 # Footer
 
-
 The Footer/Status bar area of __RadCalendar__ is located below the main calendar content area. 
 
 ![calendar-customizing-appearance-footer 003](images/calendar-customizing-appearance-footer003.png)
 
 By default the footer contains a string showing the current date and time and two buttons - __Clear__ button and __Today__ button. The __Clear__ button is used to clear all selected dates in __RadCalendar__ and the __Today__ button navigates to the current date. The following properties of __RadCalendar__ are used to modify appearance and functionality of the footer:
 
-
-
-* __ShowFooter__ - gets or sets whether RadCalendar will display its footer/status bar area 
+* __ShowFooter__ - gets or sets whether RadCalendar will display its footer/status bar.
 
 * __TodayButton__ - gets an instance of RadButtonElement representing the Today button in the footer. 
 
@@ -43,7 +40,3 @@ RadCalendar1.TodayButton.Image = ImageList1.Images(0)
 {{endregion}} 
  
 * __ClearButton__ - gets an instance of RadButtonElement representing the Clear button in the footer.
-
-
-
-

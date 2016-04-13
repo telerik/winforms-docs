@@ -13,7 +13,8 @@ previous_url: calendar-customizing-behavior-column-and-row-headers, /calendar/cu
 
 __RadCalendar__ supports row and column headers that can be enabled by setting the __ShowRowHeaders__, __ShowColumnHeaders__ and __ShowViewSelector__ properties:
 
-![calendar-customizing-behavior-column-and-row-headers 001](images/calendar-customizing-behavior-column-and-row-headers001.png)
+>caption The column/row headers and the view selector
+![calendar-features-column-and-row-headers 001](images/calendar-features-column-and-row-headers001.png)
 
 {{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=showingHeaders}} 
 {{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=showingHeaders}} 
@@ -53,5 +54,5 @@ Me.RadCalendar1.AllowRowHeaderSelectors = True
 ````
 
 {{endregion}} 
-
-![calendar-customizing-behavior-column-and-row-headers 002](images/calendar-customizing-behavior-column-and-row-headers002.png)
+>caption Selecting specific day with column header
+![calendar-features-column-and-row-headers 002](images/calendar-fatures-column-and-row-headers002.png)

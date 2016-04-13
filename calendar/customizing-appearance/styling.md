@@ -25,7 +25,7 @@ The following article shows how you can change the calendar cells styles in [Vis
    ![calendar-themes002](images/calendar-themes002.png)
 6. Once the item is opened change the BackColor and close the item.
    ![calendar-themes003](images/calendar-themes003.png)
-7. In the `Elements` window select the Font and change its style and sizе.
+7. In the `Elements` window select the Font and change its style and sizе. The result can be seen in the bellow image.
    ![calendar-themes004](images/calendar-themes004.png)
 
 
@@ -33,76 +33,58 @@ The following article shows how you can change the calendar cells styles in [Vis
 
 You can use this approach to customize all other states styles. The following list shows some of the most important properties that can be changed:
 
-1. __BackColor__ - Gets or sets the back color which will be used in the gradient fill. 
+* __BackColor:__ Gets or sets the back color which will be used in the gradient fill. 
 
 
-1. __BackColor2__ - Gets or sets the second back color which will be used in the gradient fill. 
+* __BackColor2:__ Gets or sets the second back color which will be used in the gradient fill. 
 
 
-1. __BackColor3__ - Gets or sets the third back color which will be used in the gradient fill. 
+* __BackColor3:__ Gets or sets the third back color which will be used in the gradient fill. 
 
+* __BackColor4:__ Gets or sets the fourth back color which will be used in the gradient fill. 
 
-1. __BackColor4__ - Gets or sets the fourth back color which will be used in the gradient fill. 
+* __NumberOfColors:__ Gets or sets the number of back colors which will take effect in the gradient fill. 
 
+* __GradientStyles:__ Gets or sets the gradient style which will be used in the gradient fill. 
 
-1. __NumberOfColors__ - Gets or sets the number of back colors which will take effect in the gradient fill. 
+* __BorderBoxStyle:__  Gets or sets the type of border for the visual element. 
 
+* __BorderColor:__  Gets or sets the border color. 
 
-1. __GradientStyles__ - Gets or sets the gradient style which will be used in the gradient fill. 
+* __BorderColor2:__ Gets or sets the second border color. 
 
+* __BorderColor3:__ Gets or sets the third border color. 
 
-1. __BorderBoxStyle__ -  Gets or sets the type of border for the visual element. 
+* __BorderColor4:__ Gets or sets the fourth border color. 
 
+* __BorderWidth:__ Gets or sets the width of the visual element's border 
 
-1. __BorderColor__ -  Gets or sets the border color. 
+* __DrawFill:__ Gets or sets whether the gradient fill of the visual element should be drawn. 
 
+* __DrawBorder:__ Gets or sets whether the border of the visual element should be drawn. 
 
-1. __BorderColor2__ - Gets or sets the second border color. 
-
-
-1. __BorderColor3__ - Gets or sets the third border color. 
-
-
-1. __BorderColor4__ - Gets or sets the fourth border color. 
-
-
-1. __BorderWidth__ - Gets or sets the width of the visual element's border 
-
-
-1. __DrawFill__ - Gets or sets whether the gradient fill of the visual element should be drawn. 
-
-
-1. __DrawBorder__ - Gets or sets whether the border of the visual element should be drawn. 
-
-
-1. __BorderGradientStyle__ - Gets or sets the border gradient style.
+* __BorderGradientStyle__ - Gets or sets the border gradient style.
 
 ### Supported States 
 
 Each day is represented by an instance of __CalendarCellElement__. The logical states of the day are embodied in the __CalendarCellElement__ properties shown below. 
 
-1. __WeekEnd -__ Indicates that the visual element is representing a week end day. 
+* __WeekEnd:__ Indicates that the visual element is representing a week end day. 
 
-1. __OtherMonth -__  Indicates that the visual element is representing a day from another month. 
-
-
-1. __Selected -__ Indicates whether the current visual element is selected 
+* __OtherMonth:__  Indicates that the visual element is representing a day from another month. 
 
 
-1. __Today -__ Indicates whether the visual element is representing the current day. 
+* __Selected:__ Indicates whether the current visual element is selected 
 
+* __Today:__ Indicates whether the visual element is representing the current day. 
 
-1. __Focused -__ Indicates whether the visual element is focused. 
+* __Focused:__ Indicates whether the visual element is focused. 
 
+* __IsZooming:__ Indicates whether the visual element is in zoom-mode. 
 
-1. __IsZooming -__ Indicates whether the visual element is in zoom-mode. 
+* __IsHeader:__ Indicates whether the visual element is representing a header cell. 
 
+* __SpecialDay:__ Indicates whether the visual element is representing a special day. 
 
-1. __IsHeader -__ Indicates whether the visual element is representing a header cell. 
-
-
-1. __SpecialDay -__ Indicates whether the visual element is representing a special day. 
-
-
-1. __OutOfRange -__ Indicates whether the visual element is representing a day which is out of the specified range.
+* __OutOfRange:__ Indicates whether the visual element is representing a day which is out of the specified range.
  
