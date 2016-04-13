@@ -8,7 +8,9 @@ published: True
 position: 2 
 ---
 
-This help article will demonstrate a step by step tutorial how to customize the ControlDeafult theme for __RadButton__ 
+# Themes
+
+This help article will demonstrate a step by step tutorial how to customize the ControlDefault theme for __RadButton__ 
 
 1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}).
 
@@ -16,7 +18,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Load a desired theme from the just exported files by selecting *File >> Open Package*
 
-1. Select __RadButtonElement__ in *Controls Elements* on the left side. Then, select __ButtonFill__ in the *Elements* section.
+1. Select __RadButtonElement__ in *Controls Structure* on the left side. Then, select __ButtonFill__ in the *Elements* section.
 
 	![button-customizing-appearance-themes 001](images/button-customizing-appearance-themes001.png)
 

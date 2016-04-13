@@ -25,7 +25,10 @@ navigation:
         position: 5
     buttons/checkbox:
         title: CheckBox
-        position: 1
+        position: 1    
+    buttons/checkbox/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     buttons/dropdownbutton:
         title: DropDownButton
         position: 2
