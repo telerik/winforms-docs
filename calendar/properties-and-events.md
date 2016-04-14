@@ -33,6 +33,14 @@ previous_url: calendar-overview-important-events, calendar-overview-important-pr
 |__FirstDayOfWeek__ | Specifies the day to display as the first day of the week. This property can be left as "Default" or use the drop down in the `Properties` window to select a new day name.|
 |__CurrentDateColumn__ |  specifies the column (in multiple view mode) where the single view containing the FocusedDate will be positioned.
 |__CurrentDateRow__ |   specifies the row(in multiple view mode) where the single view containing the __FocusedDate__ will be positioned.|
+|__RowHeaderText__ | Provides custom text for all row header elements.|
+|__RowHeaderImage__ | The image displayed for all row header elements.|
+|__ColumnHeaderText__ | Provides custom text for all column header elements.|
+|__ColumnHeaderImage__ | The image displayed for all column header elements.|
+|__ViewSelectorText__ | The text displayed in the view selector element.|
+|__ViewSelectorImage__ | The image displayed in the view selector element.|
+|__CellVerticalSpacing__| Gets or sets the vertical spacing between the calendar cells.|
+|__CellHorizontalSpacing__ | Gets or sets the horizontal spacing between the calendar cells.|
 
 # Events
 

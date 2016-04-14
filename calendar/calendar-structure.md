@@ -1,7 +1,7 @@
 ---
-title: Calendar Structure
+title: Structure
 page_title: Calendar Structure | UI for WinForms Documentation
-description: Calendar Structure
+description: This article shows the calendar structure and the element hierarchy.
 slug: winforms/calendar/calendar-structure
 tags: calendar,structure
 published: True
@@ -30,9 +30,23 @@ __RadCalenadar__ consists of the following elements:
 
 * __Fast Navigation Popup:__ Displays a popup window with the months and years surrounding the selected date.
 
->caption The fast navigation popup
+>caption The fast navigation popup.
 ![calendar-calendar-structure 002](images/calendar-calendar-structure002.png)
 
+# Element Hierarchy
+
+__RadCalendar__ uses the Telerik Presentation Framework which enables rich experiences like advanced styling and animations. Just like WPF it uses elements ordered in a visual tree called element hierarchy. This section describes the element hierarchy used in __RadCalendar__:
+
+>caption RadCalendar element hierarchy.
+
+![calendar-calendar-structure 003](images/calendar-calendar-structure003.png)
+
+* __RadCalenadarElement:__ The main calendar element, contains all other elements. 
+* __CalendaraStatusElement:__ The footer element contains the current date/time and the Clear ant Today buttons.
+* __CalendarNavigationElement:__ Contains the navigation buttons and title.
+* __MonthViewElement:__ Contains the calendar title and table element. 
+* __CalendarTableElement:__ Contains all the calendar cells.
+* __TitleElement:__ represents the calendar title.
 
 ## See Also
 
