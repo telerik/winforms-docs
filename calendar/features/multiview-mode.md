@@ -6,7 +6,7 @@ slug: winforms/calendar/customizing-behavior/multiview-mode
 tags: multiview,mode
 published: True
 position: 3
-previous_url: calendar-customizing-behavior-customizing-multi-view
+previous_url: calendar-customizing-behavior-customizing-multi-view, /calendar/customizing-behavior/multiview-mode
 ---
 
 # MultiView Mode

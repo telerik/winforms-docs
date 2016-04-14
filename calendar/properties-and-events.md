@@ -6,7 +6,7 @@ slug: winforms/calendar/important-events
 tags: important,events
 published: True
 position: 3
-previous_url: calendar-overview-important-events, calendar-overview-important-properties
+previous_url: calendar-overview-important-events, calendar-overview-important-properties, /calendar/customizing-behavior/customizing-dates
 ---
 
 # Properties 
@@ -30,6 +30,9 @@ previous_url: calendar-overview-important-events, calendar-overview-important-pr
 | __ShowRowHeaders__ |Show the row headers.|
 | __ShowOtherMonthsDays__ |Gets or sets whether the month matrix, when rendered will show days from other (previous or next) months or will render only blank cells.|
 | __ZoomLevel__ |Gets or sets the level used for the zoom navigation mode. By default its value is ZoomLevel. *Days* .|
+|__FirstDayOfWeek__ | Specifies the day to display as the first day of the week. This property can be left as "Default" or use the drop down in the `Properties` window to select a new day name.|
+|__CurrentDateColumn__ |  specifies the column (in multiple view mode) where the single view containing the FocusedDate will be positioned.
+|__CurrentDateRow__ |   specifies the row(in multiple view mode) where the single view containing the __FocusedDate__ will be positioned.|
 
 # Events
 

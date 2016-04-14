@@ -6,7 +6,7 @@ slug: winforms/calendar/customizing-behavior/keyboard-navigation
 tags: keyboard,navigation
 published: True
 position: 6
-previous_url: calendar-customizing-behavior-keyboard-navigation
+previous_url: calendar-customizing-behavior-keyboard-navigation, /calendar/customizing-behavior/keyboard-navigation
 ---
 
 # Keyboard Navigation
