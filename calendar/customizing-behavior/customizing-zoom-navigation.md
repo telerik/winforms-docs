@@ -11,10 +11,6 @@ previous_url: calendar-customizing-behavior-customizing-zoom-navigation
 
 # Customizing Zoom Navigation
 
-
-
-## 
-
 This article will guide you through the process of creating a month-year picker. For this purpose, it is necessary to set the __HeaderNavigationMode__ property to HeaderNavigationMode.*Zoom* and set the __ZoomLevel__ property to ZoomLevel.*Months*. This will allow the user to select a specific __CalendarCellElement__ and navigate upwards/downwards in the __RadCalendar__ similar to Windows calendar. 
 
 {{source=..\SamplesCS\Calendar\Calendar1.cs region=monthYearPicker}} 
@@ -70,3 +66,7 @@ End Sub
 
 
 ![calendar-customizing-behavior-customizing-zoom-navigation 001](images/calendar-customizing-behavior-customizing-zoom-navigation001.gif)
+
+## See Also
+
+* [Zoom]({%slug winforms/calendar/customizing-appearance/zooming%})

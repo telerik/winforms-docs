@@ -36,5 +36,12 @@ RadCalendar1.RightToLeft = RightToLeft.Yes
 
 {{endregion}} 
 
+## See Also
 
+* [Date Format Pattern]({%slug winforms/calendar/localization/date-format-pattern%})
+* [Globalization Properties]({%slug winforms/calendar/localization/globalization-properties%})
+* [Localization]({%slug  winforms/calendar/localization%})
+* [Localization Provider]({%slug winforms/calendar/localization/localization-provider%})
+* [Properties that can be localized]({%slug winforms/calendar/localization/properties-that-can-be-localized%})
+* [CultureInfo and RegionInfo Basics]({%slug winforms/calendar/localization/cultureinfo-and-regioninfo-basics%})
 

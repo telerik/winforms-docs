@@ -21,3 +21,9 @@ The Smart Tag for __RadCalendar__ lets you quickly access common tasks involved 
 * __Learning Center:__ Navigate to the Telerik help, code library projects or support forum.
 
 * __Search:__ Search the Telerik site for a given string.
+
+## See Also
+
+* [Adding Selected Dates]({%slug  winforms/calendar/design-time-support/adding-selected-dates%})
+
+* [Adding Special Days]({%slug winforms/calendar/design-time-support/adding-special-days%})

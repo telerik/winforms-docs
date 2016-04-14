@@ -87,4 +87,10 @@ Each day is represented by an instance of __CalendarCellElement__. The logical s
 * __SpecialDay:__ Indicates whether the visual element is representing a special day. 
 
 * __OutOfRange:__ Indicates whether the visual element is representing a day which is out of the specified range.
+
+## See Also
+
+* [Formating Items]({%slug winforms/calendar/customizing-appearance/formatting-items%})
+
+* [Using Templates]({%slug winforms/calendar/customizing-appearance/using-templates%})
  

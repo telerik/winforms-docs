@@ -11,8 +11,6 @@ previous_url: calendar-localization-localization-provider
 
 # Localization Provider
 
-
-
 To localize RadCalendar to display control text and messages in a specific language:
 
 * All required classes for localization are defined in __Telerik.WinControls.UI__ namespace.
@@ -83,6 +81,15 @@ CalendarLocalizationProvider.CurrentProvider = New MyEnglishCalendarLocalization
 ````
 
 {{endregion}} 
+
+## See Also
+
+* [Date Format Pattern]({%slug winforms/calendar/localization/date-format-pattern%})
+* [Globalization Properties]({%slug winforms/calendar/localization/globalization-properties%})
+* [Localization]({%slug  winforms/calendar/localization%})
+* [CultureInfo and RegionInfo Basics]({%slug winforms/calendar/localization/cultureinfo-and-regioninfo-basics%})
+* [Properties that can be localized]({%slug winforms/calendar/localization/properties-that-can-be-localized%})
+* [Right-To-Left Support]({%slug winforms/calendar/localization/right-to-left-support%})
 
 
 

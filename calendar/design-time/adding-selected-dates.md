@@ -32,3 +32,9 @@ Click the ellipses in the `Property Window` to edit the __SelecteDates DateTime_
 >
 
 ![calendar-design-time-support-adding-selected-dates 001](images/calendar-design-time-support-adding-selected-dates001.png)
+
+## See Also
+
+* [Smart Tag]({%slug winforms/calendar/smart-tag%})
+
+* [Adding Special Days]({%slug winforms/calendar/design-time-support/adding-special-days%})

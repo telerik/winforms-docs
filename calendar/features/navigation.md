@@ -31,6 +31,18 @@ __RadCalendar__ provides two types of navigation that allow you to switch or jum
 
 * __TitleFormat:__ This property allos you to set the format date format of the title. The default value is "MMMM yyyy".
 
+## See Also
+
+* [Header]({%slug winforms/calendar/customizing-appearance/header%})
+* [Footer]({%slug winforms/calendar/customizing-appearance/footer%})
+* [Keyboard Navigation]({%slug  winforms/calendar/customizing-behavior/keyboard-navigation%})
+* [MultiView]({%slug winforms/calendar/customizing-behavior/multiview-mode%})
+* [Column and Row Headers]({%slug winforms/calendar/customizing-behavior/column-and-row-headers%})
+* [Repeating Events]({%slug winforms/calendar/customizing-behavior/repeating-events%})
+* [Selecting Dates]({%slug winforms/calendar/customizing-behavior/selecting-dates%})
+* [Zoom]({%slug winforms/calendar/customizing-appearance/zooming%})
+
+
 
 
 

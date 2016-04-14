@@ -26,3 +26,14 @@ previous_url: calendar-customizing-behavior-keyboard-navigation, /calendar/custo
 |![calendar-customizing-behavior-keyboard-navigation 009](images/calendar-customizing-behavior-keyboard-navigation009.png)|End key|Selects the last day of the current month. If __RangeMaxDate__ is before the end of the month, End navigates to the __RangeMaxDate__ value.|
 ||Space key|Selects focused date.|
 |![calendar-customizing-behavior-keyboard-navigation 010](images/calendar-customizing-behavior-keyboard-navigation010.png)|Enter key|Selects focused date|
+
+## See Also
+
+* [Header]({%slug winforms/calendar/customizing-appearance/header%})
+* [Footer]({%slug winforms/calendar/customizing-appearance/footer%})
+* [Column and Row Headers]({%slug winforms/calendar/customizing-behavior/column-and-row-headers%})
+* [MultiView]({%slug winforms/calendar/customizing-behavior/multiview-mode%})
+* [Navigation]({%slug winforms/calendar/customizing-behavior/customizing-navigation%})
+* [Repeating Events]({%slug winforms/calendar/customizing-behavior/repeating-events%})
+* [Selecting Dates]({%slug winforms/calendar/customizing-behavior/selecting-dates%})
+* [Zoom]({%slug winforms/calendar/customizing-appearance/zooming%})

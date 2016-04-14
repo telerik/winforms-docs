@@ -43,5 +43,9 @@ RadCalendar1.SpecialDays(0).TemplateItem = hostItem
 
 {{endregion}} 
 
+## See Also
 
+* [Themes]({%slug winforms/calendar/customizing-appearance/styling%})
+
+* [Formatting Items]({%slug winforms/calendar/customizing-appearance/formatting-items%})
 

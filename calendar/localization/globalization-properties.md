@@ -11,10 +11,6 @@ previous_url: calendar-localization-globalization-properties
 
 # Globalization Properties
 
-
-
-## 
-
 The __Culture__ property can be set using the drop down list in the Properties Window or set in code. The screenshot below shows the __Culture__ property set to "French (France)".
 
 ![calendar-localization-globalization-properties 001](images/calendar-localization-globalization-properties001.png)
@@ -51,3 +47,13 @@ Additional properties that relate to globalization are:
 |TitleFormat|Gets or sets the format string that is applied to the calendar title. The default value is "MMMM yyyy".|
 |CellToolTipFormat|Gets or sets the format string that is applied to the days cells tooltip. The default value is "dddd.MMMM dd, yyyy".|
 |DateRangeSeparator|Gets or sets the separator string that will be put between start and end months in a multi view title. The default value is " - ".|
+
+## See Also
+
+* [Date Format Pattern]({%slug winforms/calendar/localization/date-format-pattern%})
+* [CultureInfo and RegionInfo Basics]({%slug winforms/calendar/localization/cultureinfo-and-regioninfo-basics%})
+* [Localization]({%slug  winforms/calendar/localization%})
+* [Localization Provider]({%slug winforms/calendar/localization/localization-provider%})
+* [Properties that can be localized]({%slug winforms/calendar/localization/properties-that-can-be-localized%})
+
+* [Right-To-Left Support]({%slug winforms/calendar/localization/right-to-left-support%})

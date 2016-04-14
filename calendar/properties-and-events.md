@@ -45,3 +45,17 @@ previous_url: calendar-overview-important-events, calendar-overview-important-pr
 |__ViewChanged__|This event is fired when the currently visible view (for example a YearView Or MonthsView) is changed.|
 |__ZoomChanging__|This event is fired when the __ZoomLevel__ is changing in HeaderNavigationMode. *Zoom* .|
 |__ZoomChanged__|This event is fired when the __ZoomLevel__ is changed in HeaderNavigationMode. *Zoom* .|
+
+
+## See Also
+
+* [Header]({%slug winforms/calendar/customizing-appearance/header%})
+
+* [Footer]({%slug  winforms/calendar/customizing-appearance/footer%})
+
+* [Zoom]({%slug winforms/calendar/customizing-appearance/zooming%})
+
+* [MultiView]({%slug winforms/calendar/customizing-behavior/multiview-mode%})
+* [Navigation]({%slug winforms/calendar/customizing-behavior/customizing-navigation%})
+
+

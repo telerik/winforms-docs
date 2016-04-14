@@ -11,11 +11,9 @@ previous_url: calendar-localization-cultureinfo-and-regioninfo-basics
 
 # CultureInfo and RegionInfo Basics
 
-
-
 Telerik RadCalendar provides full support for the __System.Globalization Namespace__. This namespace consists of classes (CompareInfo, CultureInfo, RegionInfo, etc.) which contain culture-related information, such as the language, country/region, calendars in use, format patterns for dates, currency, and numbers, and the sort order for strings. They are useful classes for writing internationalized applications.
 
-Two of the most important classes in this namespace are: __CultureInfo__ and __RegionInfo__. 
+Two of the most important classes in this namespaces are: __CultureInfo__ and __RegionInfo__. 
 
 ## CultureInfo
 
@@ -61,3 +59,12 @@ Me.RadCalendar1.Culture = New System.Globalization.CultureInfo("ps-AF")
 ## RegionInfo
 
 The __RegionInfo__ class contains information about the country/region.  In contrast to __CultureInfo__, __RegionInfo__ does not represent preferences of the user and does not depend on the user's language or culture. The __RegionInfo__ name is one of the two-letter codes defined in ISO 3166 for country/region. Case is not significant; however, the __Name__, the __TwoLetterISORegionName__, and the __ThreeLetterISORegionName__ properties return the appropriate code in uppercase.
+
+## See Also
+
+* [Date Format Pattern]({%slug winforms/calendar/localization/date-format-pattern%})
+* [Globalization Properties]({%slug winforms/calendar/localization/globalization-properties%})
+* [Localization]({%slug  winforms/calendar/localization%})
+* [Localization Provider]({%slug winforms/calendar/localization/localization-provider%})
+* [Properties that can be localized]({%slug winforms/calendar/localization/properties-that-can-be-localized%})
+* [Right-To-Left Support]({%slug winforms/calendar/localization/right-to-left-support%})

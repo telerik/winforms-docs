@@ -12,9 +12,6 @@ previous_url: calendar-localization-date-format-pattern
 # Date Format Pattern
 
 
-
-## 
-
 The table below displays a list of the standard format characters supported by Telerik RadCalendar. The format characters are case-sensitive; for example, 'f' and 'F' represent different patterns.
 
 <table>
@@ -63,3 +60,11 @@ The table below shows a list of patterns that can be combined to create custo
 >note  __RadCalendar__ uses the __DayNameFormat__ enumeration to represents the formats for the days of the week.
 >
 
+## See Also
+
+* [CultureInfo and RegionInfo Basics]({%slug winforms/calendar/localization/cultureinfo-and-regioninfo-basics%})
+* [Globalization Properties]({%slug winforms/calendar/localization/globalization-properties%})
+* [Localization]({%slug  winforms/calendar/localization%})
+* [Localization Provider]({%slug winforms/calendar/localization/localization-provider%})
+* [Properties that can be localized]({%slug winforms/calendar/localization/properties-that-can-be-localized%})
+* [Right-To-Left Support]({%slug winforms/calendar/localization/right-to-left-support%})

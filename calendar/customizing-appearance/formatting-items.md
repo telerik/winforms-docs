@@ -59,3 +59,11 @@ radCalendar1.CalendarElement.RefreshVisuals()
 ````
 
 {{endregion}}
+
+
+## See Also
+
+* [Themes]({%slug winforms/calendar/customizing-appearance/styling%})
+
+* [Using Templates]({%slug winforms/calendar/customizing-appearance/using-templates%})
+

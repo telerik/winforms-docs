@@ -34,3 +34,12 @@ __RadCalenadar__ consists of the following elements:
 ![calendar-calendar-structure 002](images/calendar-calendar-structure002.png)
 
 
+## See Also
+
+* [Properties and Events]({%slug winforms/calendar/important-events%})
+
+* [Header]({%slug winforms/calendar/customizing-appearance/header%})
+
+* [Footer]({%slug  winforms/calendar/customizing-appearance/footer%})
+
+* [Zoom]({%slug winforms/calendar/customizing-appearance/zooming%})
