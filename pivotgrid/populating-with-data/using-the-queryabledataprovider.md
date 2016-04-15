@@ -54,13 +54,10 @@ Here's how to define the __RowGroupDescriptions__ in your application:
 ````C#
 QueryablePropertyGroupDescription shipCountryGroupDescription = new QueryablePropertyGroupDescription();
 shipCountryGroupDescription.PropertyName = "ShipCountry";
-
 QueryableDoubleGroupDescription freightCountryGroupDescription = new QueryableDoubleGroupDescription();
 freightCountryGroupDescription.PropertyName = "Freight"; ;
-
 QueryableDateTimeGroupDescription orderDateCountryGroupDescription = new QueryableDateTimeGroupDescription();
 orderDateCountryGroupDescription.PropertyName = "OrderDate";
-
 using (queryableDataProvider.DeferRefresh())
 {
     queryableDataProvider.RowGroupDescriptions.Add(shipCountryGroupDescription);
@@ -72,13 +69,10 @@ using (queryableDataProvider.DeferRefresh())
 ````VB.NET
 Dim shipCountryGroupDescription As New QueryablePropertyGroupDescription()
 shipCountryGroupDescription.PropertyName = "ShipCountry"
-
 Dim freightCountryGroupDescription As New QueryableDoubleGroupDescription()
 freightCountryGroupDescription.PropertyName = "Freight"
-
 Dim orderDateCountryGroupDescription As New QueryableDateTimeGroupDescription()
 orderDateCountryGroupDescription.PropertyName = "OrderDate"
-
 Using queryableDataProvider.DeferRefresh()
     queryableDataProvider.RowGroupDescriptions.Add(shipCountryGroupDescription)
     queryableDataProvider.RowGroupDescriptions.Add(freightCountryGroupDescription)
@@ -126,12 +120,10 @@ QueryablePropertyAggregateDescription freightAggregateDescription = new Queryabl
     StringFormat = "C",
     AggregateFunction = QueryableAggregateFunction.Max
 };
-
 QueryablePropertyAggregateDescription shipViaAggregateDescription = new QueryablePropertyAggregateDescription
 {
     PropertyName = "ShipVia"
 };
-
 using (queryableDataProvider.DeferRefresh())
 {
     queryableDataProvider.AggregateDescriptions.Add(freightAggregateDescription);
@@ -145,11 +137,9 @@ Dim freightAggregateDescription As New QueryablePropertyAggregateDescription() W
      .StringFormat = "C",
      .AggregateFunction = QueryableAggregateFunction.Max
 }
-
 Dim shipViaAggregateDescription As New QueryablePropertyAggregateDescription() With {
      .PropertyName = "ShipVia"
 }
-
 Using queryableDataProvider.DeferRefresh()
     queryableDataProvider.AggregateDescriptions.Add(freightAggregateDescription)
     queryableDataProvider.AggregateDescriptions.Add(shipViaAggregateDescription)
@@ -170,7 +160,6 @@ Here's how to define the __FilterDescriptions__ in your application:
 QueryableIntervalCondition intervalCondition = new QueryableIntervalCondition();
 intervalCondition.From = 10;
 intervalCondition.To = 200;
-
 QueryablePropertyFilterDescription freightFilterDescription = new QueryablePropertyFilterDescription();
 freightFilterDescription.PropertyName = "Freight";
 freightFilterDescription.Condition = intervalCondition;
@@ -181,7 +170,6 @@ this.queryableDataProvider.FilterDescriptions.Add(freightFilterDescription);
 Dim intervalCondition As New QueryableIntervalCondition()
 intervalCondition.From = 10
 intervalCondition.[To] = 200
-
 Dim freightFilterDescription As New QueryablePropertyFilterDescription()
 freightFilterDescription.PropertyName = "Freight"
 freightFilterDescription.Condition = intervalCondition
