@@ -198,7 +198,7 @@ All property description classes are inheriting the abstract class DescriptionBa
 
 * __PropertyName__: This is the most important property. It must be set to the property of the data that will be represented with this property description.
 
-* __CustomName__ : Sets the name that will be shown instead of the property name in __RadPivotGrid__ and __RadPivotFieldList__.
+* __CustomName__: Sets the name that will be shown instead of the property name in __RadPivotGrid__ and __RadPivotFieldList__.
 
 Here is a list of the property descriptions that you can use:
 
