@@ -26,6 +26,10 @@ this.queryableDataProvider = new QueryableDataProvider() { Source = dataset.Orde
 
 ````
 ````VB.NET
+Me.queryableDataProvider = New QueryableDataProvider() With {
+     .Source = dataset.Orders.AsQueryable()
+}
+
 ````
 
 {{endregion}} 
@@ -66,11 +70,26 @@ using (queryableDataProvider.DeferRefresh())
 
 ````
 ````VB.NET
+Dim shipCountryGroupDescription As New QueryablePropertyGroupDescription()
+shipCountryGroupDescription.PropertyName = "ShipCountry"
+
+Dim freightCountryGroupDescription As New QueryableDoubleGroupDescription()
+freightCountryGroupDescription.PropertyName = "Freight"
+
+Dim orderDateCountryGroupDescription As New QueryableDateTimeGroupDescription()
+orderDateCountryGroupDescription.PropertyName = "OrderDate"
+
+Using queryableDataProvider.DeferRefresh()
+    queryableDataProvider.RowGroupDescriptions.Add(shipCountryGroupDescription)
+    queryableDataProvider.RowGroupDescriptions.Add(freightCountryGroupDescription)
+    queryableDataProvider.RowGroupDescriptions.Add(orderDateCountryGroupDescription)
+End Using
+
 ````
 
 {{endregion}}
 
-* __ColumnGroupDescription__: The data added to this description will be shown as columns headers in __RadPivotGrid__ and __RadPivotFieldList__. The properties can be defined as __QueryablePropertyGroupDescription__, __QueryableDateTimeGroupDescription__, __QueryableDoubleGroupDescription __ or you can create custom implementation of the __QueryableGroupDescription__ class.
+* __ColumnGroupDescription__: The data added to this description will be shown as columns headers in __RadPivotGrid__ and __RadPivotFieldList__. The properties can be defined as __QueryablePropertyGroupDescription__, __QueryableDateTimeGroupDescription__, __QueryableDoubleGroupDescription__ or you can create custom implementation of the __QueryableGroupDescription__ class.
 
 Here's how to define the __ColumnGroupDescriptions__ in your application:
 
@@ -85,6 +104,10 @@ this.queryableDataProvider.ColumnGroupDescriptions.Add(new QueryableDoubleGroupD
 
 ````
 ````VB.NET
+Me.queryableDataProvider.ColumnGroupDescriptions.Add(New QueryableDoubleGroupDescription() With {
+     .PropertyName = "Freight"
+})
+
 ````
 
 {{endregion}}
@@ -117,6 +140,21 @@ using (queryableDataProvider.DeferRefresh())
 
 ````
 ````VB.NET
+Dim freightAggregateDescription As New QueryablePropertyAggregateDescription() With {
+     .PropertyName = "Freight",
+     .StringFormat = "C",
+     .AggregateFunction = QueryableAggregateFunction.Max
+}
+
+Dim shipViaAggregateDescription As New QueryablePropertyAggregateDescription() With {
+     .PropertyName = "ShipVia"
+}
+
+Using queryableDataProvider.DeferRefresh()
+    queryableDataProvider.AggregateDescriptions.Add(freightAggregateDescription)
+    queryableDataProvider.AggregateDescriptions.Add(shipViaAggregateDescription)
+End Using
+
 ````
 
 {{endregion}} 
@@ -136,11 +174,19 @@ intervalCondition.To = 200;
 QueryablePropertyFilterDescription freightFilterDescription = new QueryablePropertyFilterDescription();
 freightFilterDescription.PropertyName = "Freight";
 freightFilterDescription.Condition = intervalCondition;
-
 this.queryableDataProvider.FilterDescriptions.Add(freightFilterDescription);
 
 ````
 ````VB.NET
+Dim intervalCondition As New QueryableIntervalCondition()
+intervalCondition.From = 10
+intervalCondition.[To] = 200
+
+Dim freightFilterDescription As New QueryablePropertyFilterDescription()
+freightFilterDescription.PropertyName = "Freight"
+freightFilterDescription.Condition = intervalCondition
+Me.queryableDataProvider.FilterDescriptions.Add(freightFilterDescription)
+
 ````
 
 {{endregion}} 
@@ -178,6 +224,8 @@ this.radPivotGrid1.PivotGridElement.DataProvider = queryableDataProvider;
 
 ````
 ````VB.NET
+Me.RadPivotGrid1.PivotGridElement.DataProvider = queryableDataProvider
+
 ````
 
 {{endregion}} 
