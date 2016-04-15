@@ -22,8 +22,6 @@ You can create an object of type __QueryableDataProvider__ and assign it to __Ra
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheQueryableDataProvider.vb region=InitializeProvider}} 
 
 ````C#
-this.queryableDataProvider = new QueryableDataProvider() { Source = dataset.Orders.AsQueryable() };
-
 ````
 ````VB.NET
 ````
@@ -48,22 +46,6 @@ Here's how to define the __RowGroupDescriptions__ in your application:
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheQueryableDataProvider.vb region=RowGroupDescriptions}} 
 
 ````C#
-QueryablePropertyGroupDescription shipCountryGroupDescription = new QueryablePropertyGroupDescription();
-shipCountryGroupDescription.PropertyName = "ShipCountry";
-
-QueryableDoubleGroupDescription freightCountryGroupDescription = new QueryableDoubleGroupDescription();
-freightCountryGroupDescription.PropertyName = "Freight"; ;
-
-QueryableDateTimeGroupDescription orderDateCountryGroupDescription = new QueryableDateTimeGroupDescription();
-orderDateCountryGroupDescription.PropertyName = "OrderDate";
-
-using (queryableDataProvider.DeferRefresh())
-{
-    queryableDataProvider.RowGroupDescriptions.Add(shipCountryGroupDescription);
-    queryableDataProvider.RowGroupDescriptions.Add(freightCountryGroupDescription);
-    queryableDataProvider.RowGroupDescriptions.Add(orderDateCountryGroupDescription);
-}
-
 ````
 ````VB.NET
 ````
@@ -78,11 +60,6 @@ Here's how to define the __ColumnGroupDescriptions__ in your application:
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheQueryableDataProvider.vb region=ColumnGroupDescriptions}} 
 
 ````C#
-this.queryableDataProvider.ColumnGroupDescriptions.Add(new QueryableDoubleGroupDescription
-{
-    PropertyName = "Freight"
-});
-
 ````
 ````VB.NET
 ````
@@ -97,24 +74,6 @@ Here's how to define the __AggregateDescriptions__ in your application:
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheQueryableDataProvider.vb region=AggregateDescriptions}} 
 
 ````C#
-QueryablePropertyAggregateDescription freightAggregateDescription = new QueryablePropertyAggregateDescription
-{
-    PropertyName = "Freight",
-    StringFormat = "C",
-    AggregateFunction = QueryableAggregateFunction.Max
-};
-
-QueryablePropertyAggregateDescription shipViaAggregateDescription = new QueryablePropertyAggregateDescription
-{
-    PropertyName = "ShipVia"
-};
-
-using (queryableDataProvider.DeferRefresh())
-{
-    queryableDataProvider.AggregateDescriptions.Add(freightAggregateDescription);
-    queryableDataProvider.AggregateDescriptions.Add(shipViaAggregateDescription);
-}
-
 ````
 ````VB.NET
 ````
@@ -129,16 +88,6 @@ Here's how to define the __FilterDescriptions__ in your application:
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheQueryableDataProvider.vb region=FilterDescritions}} 
 
 ````C#
-QueryableIntervalCondition intervalCondition = new QueryableIntervalCondition();
-intervalCondition.From = 10;
-intervalCondition.To = 200;
-
-QueryablePropertyFilterDescription freightFilterDescription = new QueryablePropertyFilterDescription();
-freightFilterDescription.PropertyName = "Freight";
-freightFilterDescription.Condition = intervalCondition;
-
-this.queryableDataProvider.FilterDescriptions.Add(freightFilterDescription);
-
 ````
 ````VB.NET
 ````
@@ -174,8 +123,6 @@ To apply the already defined data provider, use the following property:
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheQueryableDataProvider.vb region=ApplyingDataProvider}} 
 
 ````C#
-this.radPivotGrid1.PivotGridElement.DataProvider = queryableDataProvider;
-
 ````
 ````VB.NET
 ````
