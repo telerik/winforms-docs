@@ -11,10 +11,6 @@ previous_url: calendar-localization-properties-that-can-be-localized
 
 # Properties that can be localized
 
-
-
-## 
-
 The following properties can be localized:
 
 
@@ -60,3 +56,13 @@ __ClearButton__
 | Property | Description |
 | ------ | ------ |
 |Text|Gets or sets the text associated with Clear button.|
+
+
+## See Also
+
+* [Date Format Pattern]({%slug winforms/calendar/localization/date-format-pattern%})
+* [Globalization Properties]({%slug winforms/calendar/localization/globalization-properties%})
+* [Localization]({%slug  winforms/calendar/localization%})
+* [Localization Provider]({%slug winforms/calendar/localization/localization-provider%})
+* [CultureInfo and RegionInfo Basics]({%slug winforms/calendar/localization/cultureinfo-and-regioninfo-basics%})
+* [Right-To-Left Support]({%slug winforms/calendar/localization/right-to-left-support%})

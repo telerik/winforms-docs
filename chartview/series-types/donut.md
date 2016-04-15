@@ -49,7 +49,7 @@ Me.RadChartView1.Series.Add(series)
 
 DonutSeries can be customized using the following properties:
 
-* __Range__ - the property consists of two parameters __StartAngle__ and __SweepAngle__. __StartAngle__ sets the angle in degrees from which the drawing of the pie segments will begin. Note that pie slices are always rendered in counter-clockwise direction. __SweepAngle__ determines if the chart will appear as a full circle or a partial circle. The snippet below illustrates DonutSeries how to set the __Range__ property: 
+* __Range__ - the property consists of two parameters __StartAngle__ and __SweepAngle__. __StartAngle__ sets the angle in degrees from which the drawing of the pie segments will begin. Note that pie slices are always rendered in clockwise direction. __SweepAngle__ determines if the chart will appear as a full circle or a partial circle. The snippet below illustrates DonutSeries how to set the __Range__ property: 
 
 {{source=..\SamplesCS\ChartView\Series\DonutSeriesForm.cs region=donutAngleRange}} 
 {{source=..\SamplesVB\ChartView\Series\DonutSeriesForm.vb region=donutAngleRange}} 
@@ -76,7 +76,7 @@ series.Range = range
 * __RadiusFactor__ - the property can increase and decrease the diameter of the series. Setting the __RadiusFactor__ to *0.9* will decrease the radius of the series by *10 percent*. Similarly, the value *1.1* will increase it. Leaving the property with value *1* will make the donut fill the available space.
             
 
-* __InnerRadiusFactor__ - – the property is used to determine the inner radius of the donut series. Like __RadiusFactor__, its value is used as a percentage of the whole radius.
+* __InnerRadiusFactor__ - the property is used to determine the inner radius of the donut series. Like __RadiusFactor__, its value is used as a percentage of the whole radius, if the __RadiusFactor__ factor is set the value will be calculated according to the entire new radius.
             
 
 Additionally, DonutSeries allows offsetting a pie segment from the rest of the slices. This is achieved through the __OffsetFromCenter__ property of the individual __PieDataPoint__. The following snippet demonstrates how to shift the first pie piece: 
