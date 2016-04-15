@@ -40,7 +40,7 @@ radBindingNavigator1.BindingNavigatorElement.NextButton.GradientStyle = Telerik.
 
 {{endregion}} 
 
->caption The new button is added after at the last position.
+>caption The next button background is changed.
 
 ![bindingnavigator-overview-customizing-radbindingnavigator 002](images/bindingnavigator-overview-customizing-radbindingnavigator002.png)
 
