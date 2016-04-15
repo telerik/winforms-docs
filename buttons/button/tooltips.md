@@ -20,9 +20,14 @@ There are two ways to assign tooltips to __RadButton__, namely setting the __Too
 
 ````C#
 this.radButton1.ButtonElement.ToolTipText = "I am a button";
+
 ````
 ````VB.NET
 Me.radButton1.ButtonElement.ToolTipText = "I am a button"
+'#End Region
+'#region mnemonics
+Me.radButton1.Text = "&radButton1"
+
 ````
 
 {{endregion}} 

@@ -19,10 +19,8 @@ There are two ways to assign tooltips to __RadCheckBox__, namely setting the __T
 {{source=..\SamplesVB\CheckBox\Button.vb region=SetToolTipText}}
 
 ````C#
-this.radCheckBox1.ButtonElement.ToolTipText = "CheckBox tool tip";
 ````
 ````VB.NET
-Me.radCheckBox1.ButtonElement.ToolTipText = "CheckBox tool tip"
 ````
 
 {{endregion}} 
