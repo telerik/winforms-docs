@@ -21,6 +21,15 @@ previous_url: buttons-dropdownbutton-getting-started
 {{source=..\SamplesVB\Buttons\DropDownButton.vb region=CreatingButton}} 
 
 ````C#
+RadDropDownButton radDropDownButton = new RadDropDownButton();
+radDropDownButton1.Text = "Fruits";
+RadMenuItem item1 = new RadMenuItem("Orange");
+radDropDownButton1.Items.Add(item1);
+RadMenuItem item2 = new RadMenuItem("Lemon");
+radDropDownButton1.Items.Add(item2);
+RadMenuItem item3 = new RadMenuItem("Banana");
+radDropDownButton1.Items.Add(item3);
+this.Controls.Add(radDropDownButton);
 ````
 ````VB.NET
 Dim radDropDownButton As New RadDropDownButton()
@@ -29,7 +38,7 @@ Dim item1 As New RadMenuItem("Orange")
 radDropDownButton1.Items.Add(item1)
 Dim item2 As New RadMenuItem("Lemon")
 radDropDownButton1.Items.Add(item2)
-Dim item3 As New RadMenuItem("Banan")
+Dim item3 As New RadMenuItem("Banana")
 radDropDownButton1.Items.Add(item3)
 Me.Controls.Add(radDropDownButton)
 
