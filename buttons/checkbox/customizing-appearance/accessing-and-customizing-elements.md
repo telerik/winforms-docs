@@ -45,21 +45,6 @@ Me.radCheckBox1.ButtonElement.TextElement.ForeColor = Color.Blue
 Me.radCheckBox1.ButtonElement.CheckMarkPrimitive.CheckElement.ForeColor = Color.Blue
 Me.radCheckBox1.ButtonElement.CheckMarkPrimitive.Border.ForeColor = Color.Red
 Me.radCheckBox1.ButtonElement.CheckMarkPrimitive.Border.BoxStyle = Telerik.WinControls.BorderBoxStyle.SingleBorder
-'#End Region
-'#Region "SetToolTipText"
-Me.radCheckBox1.ButtonElement.ToolTipText = "CheckBox tool tip"
-'#End Region
-' Add any initialization after the InitializeComponent() call.
-AddHandler radCheckBox1.ToggleStateChanged, AddressOf RadCheckBox1_ToggleStateChanged
-AddHandler radCheckBox1.ToggleStateChanging, AddressOf RadCheckBox1_ToggleStateChanging
-'#region databinding
-Me.radCheckBox1.IsThreeState = False
-Dim t As New DataTable
-t.Columns.Add("A", GetType(Boolean))
-t.Rows.Add(True)
-t.Rows.Add(False)
-t.Rows.Add(True)
-Me.radCheckBox1.DataBindings.Add(New Binding("IsChecked", t, "A"))
 
 ````
 
