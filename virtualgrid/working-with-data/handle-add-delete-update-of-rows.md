@@ -20,6 +20,7 @@ When the user adds new rows, updates or deletes the existing ones, the external 
 {{source=..\SamplesVB\VirtualGrid\VirtualGridPopulatingWithData.vb region=FillData}} 
 
 ````C#
+        
 private string[] columnNames = new string[] { "CompanyName", "ContactName", "ContactTitle", "Address", "PostalCode" };
 string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" +
                           @"..\..\DataSources\Nwind.mdb;Persist Security Info=True";
@@ -76,7 +77,7 @@ private void SelectData()
     
         command.Connection.Close();
     }
-
+        
     this.radVirtualGrid1.RowCount = data.Count;
 }
 
@@ -98,16 +99,13 @@ Private Sub radVirtualGrid1_CellValueNeeded(sender As Object, e As VirtualGridCe
     If e.RowIndex = RadVirtualGrid.HeaderRowIndex Then
         e.Value = columnNames(e.ColumnIndex)
     End If
-
     If e.RowIndex < 0 Then
         e.FieldName = columnNames(e.ColumnIndex)
     End If
-
     If e.RowIndex >= 0 AndAlso e.RowIndex < data.Count Then
         e.Value = data(e.RowIndex)(e.ColumnIndex)
     End If
 End Sub
-
 Private Sub SelectData()
     Dim selectCommand As String = "SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, PostalCode FROM Customers"
     Using command As New System.Data.OleDb.OleDbCommand(selectCommand)
@@ -120,10 +118,8 @@ Private Sub SelectData()
                                          Convert.ToString(reader(3)), Convert.ToString(reader(4)), Convert.ToString(reader(5)))
             data.Add(customer)
         End While
-
         command.Connection.Close()
     End Using
-
     Me.radVirtualGrid1.RowCount = data.Count
 End Sub
 
@@ -139,6 +135,7 @@ End Sub
 {{source=..\SamplesVB\VirtualGrid\VirtualGridPopulatingWithData.vb region=AddRow}} 
 
 ````C#
+        
 private void radVirtualGrid1_UserAddedRow(object sender, VirtualGridNewRowEventArgs e)
 {
     List<object> newValues = new List<object>();
@@ -148,7 +145,7 @@ private void radVirtualGrid1_UserAddedRow(object sender, VirtualGridNewRowEventA
     }
     this.AddDataRow(newValues);
 }
-
+        
 private void AddDataRow(List<object> newValues)
 {
     using (OleDbCommand command = new OleDbCommand(@"INSERT INTO Customers (CustomerID, CompanyName," +
@@ -170,7 +167,7 @@ private void AddDataRow(List<object> newValues)
     this.radVirtualGrid1.VirtualGridElement.InputBehavior.SelectCell(data.Count - 1, currentColumn, false,
         false, this.radVirtualGrid1.VirtualGridElement.MasterViewInfo);
 }
-
+        
 private string GenerateID()
 {
     StringBuilder sb = new StringBuilder();
@@ -191,7 +188,6 @@ Private Sub radVirtualGrid1_UserAddedRow(sender As Object, e As VirtualGridNewRo
     Next
     Me.AddDataRow(newValues)
 End Sub
-
 Private Sub AddDataRow(newValues As List(Of Object))
     Using command As New OleDbCommand("INSERT INTO Customers (CustomerID, CompanyName," + _
     " ContactName, ContactTitle, Address, PostalCode)  values (?, ?, ?, ?, ?, ?)")
@@ -211,7 +207,6 @@ Private Sub AddDataRow(newValues As List(Of Object))
     Me.radVirtualGrid1.VirtualGridElement.InputBehavior.SelectCell(data.Count - 1, currentColumn, _
                                                                    False, False, Me.radVirtualGrid1.VirtualGridElement.MasterViewInfo)
 End Sub
-
 Private Function GenerateID() As String
     Dim sb As New StringBuilder()
     Dim rand As New Random()
@@ -233,6 +228,7 @@ End Function
 {{source=..\SamplesVB\VirtualGrid\VirtualGridPopulatingWithData.vb region=DeleteRow}} 
 
 ````C#
+        
 private void radVirtualGrid1_UserDeletedRow(object sender, VirtualGridRowsEventArgs e)
 {
     string query = "";
@@ -240,10 +236,8 @@ private void radVirtualGrid1_UserDeletedRow(object sender, VirtualGridRowsEventA
     {
         query += "'" + data[item].CustomerId + "',";
     }
-
     DeleteDataRow(query.TrimEnd(','));
 }
-
 private void DeleteDataRow(string query)
 {
     using (OleDbCommand command = new OleDbCommand("DELETE FROM Customers where CustomerID In  (" + query + ")"))
@@ -263,10 +257,9 @@ Private Sub radVirtualGrid1_UserDeletedRow(sender As Object, e As VirtualGridRow
     For Each item As Integer In e.RowIndices
         query += "'" + data(item).CustomerId + "',"
     Next
-
     DeleteDataRow(query.TrimEnd(","c))
 End Sub
-
+    
 Private Sub DeleteDataRow(query As String)
     Using command As New OleDbCommand((Convert.ToString("DELETE FROM Customers where CustomerID In  (") & query) + ")")
         command.Connection = New OleDbConnection(connectionString)
