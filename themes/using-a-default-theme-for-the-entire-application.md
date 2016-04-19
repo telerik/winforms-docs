@@ -18,7 +18,7 @@ When your application has many and different controls, you may find it inconveni
 In the form constructor set the static __ThemeResolutionService.ApplicationThemeName__ property to a theme name:
         
 
-You can watch the video [Telerik UI for WinForms Theme](http://tv.telerik.com/winforms/themes/radcontrols-winforms-theme) regarding the usage of theme components and __ApplicationThemeName__ property.
+You can watch the video [Telerik UI for WinForms Theme](http://www.telerik.com/videos/winforms/theme-for-telerik-ui-for-winforms) regarding the usage of theme components and __ApplicationThemeName__ property.
         
 #### Setting a theme for the entire application
 
