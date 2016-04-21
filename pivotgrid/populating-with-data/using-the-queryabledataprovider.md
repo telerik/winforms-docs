@@ -108,6 +108,9 @@ Me.queryableDataProvider.ColumnGroupDescriptions.Add(New QueryableDoubleGroupDes
 
 * __AggregateDescriptions__: The data added to this description will be aggregated and included in __RadPivotGrid__ as cells. The properties can be defined as __QueryablePropertyAggregateDescription__ or you can create custom implementation of the __QueryableAggregateDescription__ class.
 
+>note The __QueryablePropertyAggregateDescriptionBase__ defines an __IgnoreNullValues__ property determining whether the aggregate function will ignore *null* values when calculating the result. The default value of the property is __false__.
+>
+
 Here's how to define the __AggregateDescriptions__ in your application:
 
 {{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheQueryableDataProvider.cs region=AggregateDescriptions}} 
