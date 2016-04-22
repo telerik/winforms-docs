@@ -43,6 +43,6 @@ When you click the Finish button:
 
  * [Automatic Dependency Resolving]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-resolving%})
 
- * [Upgrade Project]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrading%})
+ * [Upgrade Project]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%})
 
  * [Download New Version]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})
