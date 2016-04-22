@@ -26,15 +26,19 @@ The Create New Project Wizard lets you:
 ![installation-deployment-and-distribution-vsx-create-project 002](images/installation-deployment-and-distribution-vsx-create-project001.png)
 
 * Select a Telerik UI version from the list of versions detected on your system
+
 * Download the latest versions available on our website using the __GET LATEST__ button
+
 * Specify which assemblies your project would use. When selecting a UI for WinForms assembly all dependent controls are selected automatically and vice-versa.
 
 >GET LATEST button is available only when there is a newer version released on our web site.
 
->If you prefer the Telerik assemblies to be copied into your solution folder, the Copy referenced assemblies to solution and source control option could be selected only into the Visual Studio Extensions Options.
+>If you prefer the Telerik assemblies to be copied into your solution folder, the __Copy referenced assemblies to solution and source control__ option could be selected only into the [Visual Studio Extensions Options](%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/vs-extensions-options).
 
 When you click the Finish button:
+
 * The selected assembly references get added to your project
+
 * A default application-wide theme gets set according to the selected project type.
 
 # See Also
