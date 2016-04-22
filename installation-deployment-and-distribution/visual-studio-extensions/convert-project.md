@@ -5,7 +5,7 @@ description: Convert Project
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/project-convert
 tags: project, configuration
 published: True
-position: 1
+position: 2
 previous_url: installation-deployment-and-distribution-vsx-creation-and-configuration-wizard
 ---
 
