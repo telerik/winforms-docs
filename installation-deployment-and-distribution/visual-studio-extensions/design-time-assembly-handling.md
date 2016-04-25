@@ -1,11 +1,11 @@
 ---
 title: Design-time assembly handling
-page_title: Design-time assembly handling | UI for WinForms Documentation
+page_title: Design-time assembly handling
 description: Design-time assembly handling
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/design-time-assembly-handling
 tags: design-time,assembly,handling
 published: True
-position: 3
+position: 9
 previous_url: installation-deployment-and-distribution-vsx-design-time-assembly-handling
 ---
 
