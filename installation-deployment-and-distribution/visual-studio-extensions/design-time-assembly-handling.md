@@ -35,6 +35,7 @@ To ensure __proper design time support__ the design assembly is added to the __G
 ## Actions taken by the Telerik Visual Studio Extensions Wizards
       
 
+When the Telerik Project Wizard offers you available distributions to choose it also checks whether the design assembly is in the GAC and in case it is not, the wizard adds the corresponding __Telerik.WinControls.UI.Design__ from the selected distribution to the GAC.
 
 ![installation-deployment-and-distribution-vsx-design-time-assembly-handling 002](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling002.png)
 
