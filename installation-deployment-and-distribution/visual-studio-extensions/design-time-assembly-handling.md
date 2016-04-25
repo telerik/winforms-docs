@@ -35,22 +35,11 @@ To ensure __proper design time support__ the design assembly is added to the __G
 ## Actions taken by the Telerik Visual Studio Extensions Wizards
       
 
-When the Telerik Project Wizard offers you available distributions to choose it also checks whether the design assembly is in the GAC:
-          
 
-* In case it is not, the option to add the corresponding __Telerik.WinControls.UI.Design__ from the selected distribution to GAC will be present:
- ![installation-deployment-and-distribution-vsx-design-time-assembly-handling 002](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling002.png)![installation-deployment-and-distribution-vsx-design-time-assembly-handling 003](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling003.png)
+![installation-deployment-and-distribution-vsx-design-time-assembly-handling 002](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling002.png)
 
 > __Elevated privileges__ are required to add an assembly to the GAC. In case your machine has __User Account Control__ enabled a permission dialog will appear later in the wizard and must be confirmed.
->
-
-
-* In case the corresponding __Telerik.WinControls.UI.Design__ is missing from the distribution and is not in the GAC a warning is shown:
- 
-![installation-deployment-and-distribution-vsx-design-time-assembly-handling 004](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling004.png)
-
-This indicates that __Telerik.WinControls.UI.Design.dll__ is missing from the distribution. To avoid the errors in the Designer you can download the chosen distribution again (making sure no files are missing) and run the wizard again.
-              
+>  
 
 ##  Location of Telerik.WinControls.UI.Design assembly
       
