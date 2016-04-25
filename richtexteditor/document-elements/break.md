@@ -22,25 +22,51 @@ Break element is an inline-level flow content element, which indicates that a br
 
 The Break elements can be used only in the context of a Paragraph element. The [Paragraph]({%slug winforms/richtexteditor-/document-elements/paragraph%}) exposes a collection of __Inlines__, to which the breaks can be added. __Example 1__ shows how to achieve this.
 
-#### [C#] Example 1: Insert a break
+#### Example 1: Insert a break
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\BreakCode.cs region=AddBreak}}
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\BreakCode.vb region=AddBreak}}
- 
+````C#
+Section section = new Section();
+Paragraph paragraph = new Paragraph();
+Break br = new Break(BreakType.PageBreak);
+paragraph.Inlines.Add(br);
+section.Blocks.Add(paragraph);
 
-{{ednregion}}
+````
+````VB.NET
+Dim section As New Section()
+Dim paragraph As New Paragraph()
+Dim br As New Break(BreakType.PageBreak)
+paragraph.Inlines.Add(br)
+section.Blocks.Add(paragraph)
+
+````
+
+
+{{endregion}}
+
 
 ## Modifying a Break
 
 The __Break__ element exposes a __BreakType__ property, which specifies the type of the break. __Example 2__ demonstrates how to change it.
 
-#### [C#] Example 2: Modify a break
+#### Example 2: Modify a break
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\BreakCode.cs region=ModifyBreak}}
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\BreakCode.vb region=ModifyBreak}}
-   
+````C#
+br.BreakType = BreakType.LineBreak;
 
-{{ednregion}}
+````
+````VB.NET
+br.BreakType = BreakType.LineBreak
+
+````
+
+
+{{endregion}}
+
 
 # See Also
 

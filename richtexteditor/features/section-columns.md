@@ -57,8 +57,16 @@ The `SectionColumnCollection` class contains the information about the text colu
 
 #### [C#] Example 1: Create SectionColumnCollection
 
-{{source=..\SamplesCS\RichTextEditor\Features\SectionColumnsCode.cs region=NewCollection}}
-{{source=..\SamplesVB\RichTextEditor\Features\SectionColumnsCode.vb region=NewCollection}}
+{{source=..\SamplesCS\RichTextEditor\Features\SectionColumnCode.cs region=NewCollection}}
+{{source=..\SamplesVB\RichTextEditor\Features\SectionColumnCode.vb region=NewCollection}}
+````C#
+SectionColumnCollection sectionColumnCollection = new SectionColumnCollection(2, 75, true);
+
+````
+````VB.NET
+Dim sectionColumnCollection As New SectionColumnCollection(2, 75, True)
+
+````
 
 
 {{endregion}}
@@ -78,8 +86,16 @@ Depending on whether you prefer to insert columns with equal width or assign a s
 To create text columns with equal width, you could directly use the SectionColumnCollection constructor overloads that allow you specify the number of columns you would like to insert. **Example 2** shows how to apply the SectionColumnCollection instance, created in **Example 1** to a Section object.
 
 #### [C#] Example 2: Apply columns with equal width
-{{source=..\SamplesCS\RichTextEditor\Features\SectionColumnsCode.cs region=AssignCollection}}
-{{source=..\SamplesVB\RichTextEditor\Features\SectionColumnsCode.vb region=AssignCollection}}
+{{source=..\SamplesCS\RichTextEditor\Features\SectionColumnCode.cs region=AssignCollection}}
+{{source=..\SamplesVB\RichTextEditor\Features\SectionColumnCode.vb region=AssignCollection}}
+````C#
+section.Columns = sectionColumnCollection;
+
+````
+````VB.NET
+section.Columns = sectionColumnCollection
+
+````
     
 {{endregion}}
 
@@ -90,8 +106,29 @@ The API allows you create the columns severally from each other with the Section
 
 #### [C#] Example 3: Apply columns with different width
 
-{{source=..\SamplesCS\RichTextEditor\Features\SectionColumnsCode.cs region=DifferentWidth}}
-{{source=..\SamplesVB\RichTextEditor\Features\SectionColumnsCode.vb region=DifferentWidth}}
+{{source=..\SamplesCS\RichTextEditor\Features\SectionColumnCode.cs region=DifferentWidth}}
+{{source=..\SamplesVB\RichTextEditor\Features\SectionColumnCode.vb region=DifferentWidth}}
+````C#
+IEnumerable<SectionColumn> columns = new List<SectionColumn>()
+{
+    new SectionColumn(100, 5),
+    new SectionColumn(200, 10),
+    new SectionColumn(300, 15)
+};
+SectionColumnCollection sectionColumnCollection1 = new SectionColumnCollection(columns);
+section.Columns = sectionColumnCollection1;
+
+````
+````VB.NET
+Dim columns As IEnumerable(Of SectionColumn) = New List(Of SectionColumn)() From {
+    New SectionColumn(100, 5),
+    New SectionColumn(200, 10),
+    New SectionColumn(300, 15)
+}
+Dim sectionColumnCollection1 As New SectionColumnCollection(columns)
+section.Columns = sectionColumnCollection1
+
+````
  
 {{endregion}}
 
@@ -112,8 +149,16 @@ In addition to the so far discussed approaches, [RadDocumentEditor]({%slug winfo
 * **Right**: Represents two text columns where the right one has a smaller width than the left one.
 
 #### **[C#] Example 4: Apply columns through editor**
-{{source=..\SamplesCS\RichTextEditor\Features\SectionColumnsCode.cs region=Editor}}
-{{source=..\SamplesVB\RichTextEditor\Features\SectionColumnsCode.vb region=Editor}}
+{{source=..\SamplesCS\RichTextEditor\Features\SectionColumnCode.cs region=Editor}}
+{{source=..\SamplesVB\RichTextEditor\Features\SectionColumnCode.vb region=Editor}}
+````C#
+editor.ChangeSectionColumns(SectionColumnsLayout.Left);
+
+````
+````VB.NET
+editor.ChangeSectionColumns(SectionColumnsLayout.Left)
+
+````
     
 {{endregion}}
 
