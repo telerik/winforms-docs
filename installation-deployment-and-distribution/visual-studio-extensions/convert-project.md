@@ -6,12 +6,10 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: project, configuration
 published: True
 position: 2
-previous_url: installation-deployment-and-distribution-vsx-creation-and-configuration-wizard
 ---
 
 # Convert project
 
-## 
 
 __Convert to Telerik WinForms Application__
 

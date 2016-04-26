@@ -5,6 +5,9 @@ site_name: WinForms
 exclude: [README.md,Gemfile,Gemfile.lock]
 navigation:
 ## List your directory names and order here, like this:
+    winforms-converter:
+        title: Convert to UI for WinForms Application
+        position: 3
     installation-deployment-and-distribution:
         title: Installation, Deployment and Distribution
         position: 4

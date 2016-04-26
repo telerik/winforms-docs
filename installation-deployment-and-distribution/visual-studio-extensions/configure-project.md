@@ -6,7 +6,6 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: project,and,configuration
 published: True
 position: 3
-previous_url: installation-deployment-and-distribution-vsx-creation-and-configuration-wizard
 ---
 
 # Visual Studio Extensions
