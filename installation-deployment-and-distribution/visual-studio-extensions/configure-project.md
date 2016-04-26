@@ -11,8 +11,6 @@ previous_url: installation-deployment-and-distribution-vsx-creation-and-configur
 
 # Visual Studio Extensions
 
-## 
-
 __Configure Telerik WinForms Application__
 
 You can access the Project Configuration Wizard through the Telerik menu when you need to configure your Telerik WinForms application:
