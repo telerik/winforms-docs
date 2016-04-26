@@ -55,6 +55,6 @@ Notes:
 
 * [Configure Project]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/configure-project%})
 
-* [Automatic Dependency Resolving]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-resolving%})
+* [Automatic Dependency Resolving]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-dependency-resolving%})
 
 * [Download New Version]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})

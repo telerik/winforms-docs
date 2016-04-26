@@ -39,7 +39,7 @@ __Suggest upgrades when an equal Dev release detected on projects using a Trial_
 
 __Notify me when a Telerik subscription I have is about to expire__ – When enabled, you will receive reminders if any of your subscriptions expire within the next month.
 
-> You can benefit subscription reminders only if you have saved your credentials in the [Latest Version Acquirer tool.]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-latest-version-acquirer%})
+> You can benefit subscription reminders only if you have saved your credentials in the [Latest Version Acquirer tool.]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})
 >
 
 ![installation-deployment-and-distribution-vsx-options-dialog 003](images/installation-deployment-and-distribution-vsx-options-dialog003.png)
@@ -54,7 +54,7 @@ Configures the path where the extensions look for and store distributions.
 
 ## Latest version retrieval
 
-__Include internal builds in Latest Version update and retrieval__ – When enabled, the __[Latest Version Acquirer]({%slug radcontrols-vs-extensions-project-latest-version-acquirer%})__ tool will retrieve internal builds as well as official releases when checking for a new version.
+__Include internal builds in Latest Version update and retrieval__ – When enabled, the __[Latest Version Acquirer]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})__ tool will retrieve internal builds as well as official releases when checking for a new version.
 
 ## Notifications
 
