@@ -39,10 +39,10 @@ You can check the additional information about the release by clicking the __Rel
 
 ![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 005](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer005.png)
 
-Once the download succeeds, the latest version of the Telerik UI for WinForms will be available for use in the [Upgrade Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%}) and the [New Project Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/create-project%}).
+Once the download succeeds, the latest version of the Telerik UI for WinForms will be available for use in the [Upgrade Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%}) and the [New Project Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation%}).
         
 
->tip The Download buttons of the [Upgrade Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%}) and the [New Project Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/create-proejct%}) launch the Latest Version Acquirer tool too.
+>tip The Download buttons of the [Upgrade Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%}) and the [New Project Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation%}) launch the Latest Version Acquirer tool too.
 >
 
 >note The Latest Version Acquirer tool actually downloads the hotfix zip files, containing the latest Telerik binaries and any resources vital for the Telerik WinForms project creation. These get unpacked to the %appdata%\Telerik\Updates folder.
