@@ -5,7 +5,7 @@ description: Using WaitingBar with a Background Worker
 slug: winforms/track-and-status-controls/waitingbar/using-waitingbar-with-a-background-worker
 tags: using,waitingbar,with,a,background,worker
 published: True
-position: 4
+position: 6
 previous_url: track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker
 ---
 

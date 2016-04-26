@@ -5,7 +5,7 @@ description: Properties and Methods
 slug: winforms/track-and-status-controls/waitingbar/properties-and-methods
 tags: properties,and,methods
 published: True
-position: 2
+position: 5
 previous_url: track-and-status-controls-waitingbar-programming-radwaitingbar
 ---
 
