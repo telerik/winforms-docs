@@ -10,34 +10,36 @@ position: 1
 
 # PropertyGrid
 
+The PropertyGrid in your application will be converted to [RadPropertyGrid]({%slug winforms/propertygrid%}). The following table describes which properties, methods and events are removed and which are replaced with similar equivalents.
+
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
-|CategoryForeColor|Removed after converting|   |
-|CommandsBackColor|Removed after converting|   |
-|CommandsDisabledLinkColor|Removed after converting|   |
-|CommandsForeColor|Removed after converting|   |
-|CommandsLinkColor|Removed after converting|   |
-|LineColor|Removed after converting|   |
-|HelpBackColor|Removed after converting|   |
-|HelpForeColor|Removed after converting|   |
-|ViewBackColor|Removed after converting|   |
-|ViewForeColor|Removed after converting|   |
-|LargeButtons|Removed after converting|   |
-|CommandsVisibleIfAvailable|Removed after converting|   |
-|PropertySort|Removed after converting|   |
-|ToolbarVisible|Removed after converting|   |
+|CategoryForeColor|Removed|   |
+|CommandsBackColor|Removed|   |
+|CommandsDisabledLinkColor|Removed|   |
+|CommandsForeColor|Removed|   |
+|CommandsLinkColor|Removed|   |
+|LineColor|Removed|   |
+|HelpBackColor|Removed|   |
+|HelpForeColor|Removed|   |
+|ViewBackColor|Removed|   |
+|ViewForeColor|Removed|   |
+|LargeButtons|Removed|   |
+|CommandsVisibleIfAvailable|Removed|   |
+|PropertySort|Removed|   |
+|ToolbarVisible|Removed|   |
 
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
-|RefreshTabs|Give an error after converting|   |
-|PerformAutoScale|Remove after converting|   |
+|RefreshTabs|Produces Error|   |
+|PerformAutoScale|Removed|   |
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
-|PropertyTabChanged|Give an error after converting|   |
-|PropertySortChanged|Give an error after converting|   |
-|SelectedObjectsChanged|Give an error after converting|   |
-|PropertyValueChanged|Give an error after converting|   |
-|SelectedGridItemChanged|Give an error after converting   |
+|PropertyTabChanged|Produces Error|   |
+|PropertySortChanged|Produces Error|   |
+|SelectedObjectsChanged|Produces Error|   |
+|PropertyValueChanged|Produces Error|   |
+|SelectedGridItemChanged|Produces Error|
 

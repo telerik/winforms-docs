@@ -10,5 +10,5 @@ position: 1
 
 # HScrollBar
 
-The type of the HscrollBar is changed to RadHscrollBar. There is no properties specific properties that are not converted.
+The HScrollBar control is changed to [RadHScrollBar]({%slug winforms/track-and-status-controls/scrollbar%}). There are no specific properties that are not converted.
 

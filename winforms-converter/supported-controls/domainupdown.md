@@ -15,17 +15,17 @@ This control is converted to [RadDropDownList]({%slug winforms/dropdown-listcont
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
 |TextAlign|Replaced with|DropDownListElement.TextBox.TextAlign|
-|UpDownAlign|Removed after converting| |
-|InterceptArrowKeys|Removed after converting| |
-|BorderStyle|Removed after converting| |
+|UpDownAlign|Removed| |
+|InterceptArrowKeys|Removed| |
+|BorderStyle|Removed| |
 |Sorted|Replace with |SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending|
-|Wrap|Remove after converting| |
+|Wrap|Removed| |
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
-|UpButton()|Removed after converting| |
-|DownButton()|Removed after converting| |
+|UpButton()|Removed| |
+|DownButton()|Removed| |
 
 |Events|Action|RadControls Equivalent|
 |---|---|---|
-|SelectedItemChanged|Gives an error after converting| |
+|SelectedItemChanged|Produces Error| |

@@ -10,16 +10,18 @@ position: 1
 
 # NumericUpDown
 
+The NumericUpDown control in your application will be converted to [RadSpinEditor]({%slug winforms/editors/spineditor%}). The following tables describes which properties and methods are removed and which are replaced with similar equivalents.
+
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
-|TextAlign|Replaced with|TextAlignment|
-|UpDownAlign|Remove after converting|   |
+|TextAlign|Replaced|TextAlignment|
+|UpDownAlign|Removed|   |
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
-|Validate(true)|Give an error after converting|   |
-|Validate()|Give an error after converting|   |
-|PerformAutoScale()|Removed after converting|   |
-|UpButton()|Replaced with|SpinElement.ButtonUp.PerformClick()|
-|DownButton()|Replaced with|SpinElement.ButtonDown.PerformClick()|
+|Validate(true)|Produces Error|   |
+|Validate()|Produces Error|   |
+|PerformAutoScale()|Removed|   |
+|UpButton()|Replaced|SpinElement.ButtonUp.PerformClick()|
+|DownButton()|Replaced|SpinElement.ButtonDown.PerformClick()|
 

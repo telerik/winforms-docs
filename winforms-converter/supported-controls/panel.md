@@ -10,8 +10,10 @@ position: 1
 
 # Panel
 
+The Panel in your application will be converted to [RadPanel]({%slug winforms/panels-and-labels/panel%}). The following table describes which properties are removed and which are replaced with similar equivalents.
+
 |Proeprties|Action|RadControls Equivalent|
 |---|---|---|
-|AutoSizeMode|Remove after converting|   |
-|BorderStyle|Remove after converting|   |
+|AutoSizeMode|Removed|   |
+|BorderStyle|Removed|   |
 
