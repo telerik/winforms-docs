@@ -10,6 +10,8 @@ position: 1
 
 # Button
 
+The buttons in your application will be converted to [RadButton]({%slug winforms/buttons/button%}). The following table describes which properties are removed and which are replaced with similar equivalents.
+
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
 |AutoEllipsis|Replaced with|ButtonElement.TextElement.AutoEllipsis|

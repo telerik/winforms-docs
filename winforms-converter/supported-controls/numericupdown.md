@@ -1,14 +1,14 @@
 ---
-title: SpinEditor
-page_title: SpinEditor | UI for Winforms Documentation
+title: NumericUpDown
+page_title: NumericUpDown | UI for Winforms Documentation
 description: This article explains which default .NET controls are automatically converted.
-slug: winforms/winforms-converter/supported-controls/spineditor
-tags: covert, winforms, spineditor
+slug: winforms/winforms-converter/supported-controls/numericupdown
+tags: covert, winforms, numericupdown, spineditor
 published: True
 position: 1
 ---
 
-# SpinEditor
+# NumericUpDown
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

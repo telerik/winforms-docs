@@ -8,6 +8,9 @@ navigation:
     winforms-converter:
         title: Convert to UI for WinForms Application
         position: 3
+    winforms-converter/supported-controls:
+        title: Supported Controls
+        position: 3
     installation-deployment-and-distribution:
         title: Installation, Deployment and Distribution
         position: 4
