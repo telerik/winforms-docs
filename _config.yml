@@ -821,6 +821,9 @@ navigation:
     track-and-status-controls/waitingbar:
         title: WaitingBar
         position: 4
+    track-and-status-controls/waitingbar/customizing-appearance:
+        title: Customizing Appearance
+        position: 6
     track-and-status-controls/rating:
         title: Raiting
         position: 5
