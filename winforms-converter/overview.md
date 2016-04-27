@@ -16,9 +16,9 @@ This tool allows you to convert all default .NET controls in a particular soluti
 
 * __Real-Time differences resolving__ - after the project is converted you can view the differences in Visual Studio.
 
-* __BackUp support__ - you can create a backup of the converted solution. 
+* __Auto BackUp Support__ - by default the tool creates a project backup. You can find it in the project folder.  
 
-* __Conversion Log__ - you can generate a conversion log which contains detailed information about the conversion process.  
+* __Conversion Log__ - Conversion log is created when the process is completed. It contains a complete list of all converted files.   
 
-* __Convert to a specific version__ you can choose to which version of Telerik UI for WinForms you want to convert. 
+* __Convert to a specific version__ you can choose to which version of __Telerik UI for WinForms__ you want to convert. 
 

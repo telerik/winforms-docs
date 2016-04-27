@@ -14,7 +14,7 @@ The CheckBoxes are converted to [RadCheckBox]({%slug winforms/buttons/checkbox%}
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
-|Appearance|Give an error after converting|   |
+|Appearance|Gives an error after converting|   |
 |AutoCheck|Give an error after converting|   |
 |AutoEllipsis|Replaced with|ButtonElement.TextElement.AutoEllipsis|
 |AutoSize|   |   |
