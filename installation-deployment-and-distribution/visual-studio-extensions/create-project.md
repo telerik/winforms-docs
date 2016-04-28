@@ -6,7 +6,7 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: project, creation
 published: True
 position: 1
-previous_url: installation-deployment-and-distribution-vsx-creation-and-configuration-wizard
+previous_url: installation-deployment-and-distribution-vsx-creation-and-configuration-wizard,/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/creation-and-configuration-wizard
 ---
 
 # Create project

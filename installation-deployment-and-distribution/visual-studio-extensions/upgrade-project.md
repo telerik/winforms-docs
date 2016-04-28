@@ -6,7 +6,7 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: upgrade,project
 published: True
 position: 4
-previous_url: installation-deployment-and-distribution-vsx-upgrade-wizard
+previous_url: installation-deployment-and-distribution-vsx-upgrade-wizard,/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-wizard
 ---
 
 # Upgrade project
