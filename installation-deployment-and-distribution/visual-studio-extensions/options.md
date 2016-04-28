@@ -39,7 +39,7 @@ __Suggest upgrades when an equal Dev release detected on projects using a Trial_
 
 __Notify me when a Telerik subscription I have is about to expire__ – When enabled, you will receive reminders if any of your subscriptions expire within the next month.
 
-> You can benefit subscription reminders only if you have saved your credentials in the [Latest Version Acquirer tool.]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})
+>note You can benefit subscription reminders only if you have saved your credentials in the [Latest Version Acquirer tool.]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})
 >
 
 ![installation-deployment-and-distribution-vsx-options-dialog 003](images/installation-deployment-and-distribution-vsx-options-dialog003.png)
@@ -50,7 +50,7 @@ All settings under the WinForms category affect only the Telerik UI for WinForms
 
 Configures the path where the extensions look for and store distributions.
 
-> Changing the folder path will not move existing folder contents from your previous path. Please, move your previous folder contents manually in case you still want to use them.
+>note Changing the folder path will not move existing folder contents from your previous path. Please, move your previous folder contents manually in case you still want to use them.
 
 ## Latest version retrieval
 

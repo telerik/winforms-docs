@@ -47,4 +47,4 @@ When installed, the extensions add several project templates to the New Project 
 
 ![installation-deployment-and-distribution-vsx-overview 004](images/installation-deployment-and-distribution-vsx-overview004.png)
 
->These are available in the language specific nodes of the dialog as well. New Project dialog contains __Telerik WinForms Application__ under both CSharp\Windows and Visual Basic\ Windows nodes.
+>note These are available in the language specific nodes of the dialog as well. New Project dialog contains __Telerik WinForms Application__ under both CSharp\Windows and Visual Basic\ Windows nodes.
