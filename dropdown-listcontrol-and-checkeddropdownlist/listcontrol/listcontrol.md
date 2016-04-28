@@ -11,8 +11,6 @@ previous_url: dropdown-and-listcontrol-listcontrol-overview
 
 # ListControl
 
-
-
 ## ![dropdown-and-listcontrol-listcontrol-overview 001](images/dropdown-and-listcontrol-listcontrol-overview001.png)
 
 RadListControl is the an alternative to the Microsoft ListBox control.

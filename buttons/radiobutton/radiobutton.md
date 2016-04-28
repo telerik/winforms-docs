@@ -12,9 +12,6 @@ previous_url: buttons-radiobutton-overview
 # RadioButton
 
 
-
-## 
-
 RadRadioButton replaces the WinForms RadioButton control and adds robust data binding, state management, and design options. 
 
 ![buttons-radiobutton-overview 001](images/buttons-radiobutton-overview001.png)
