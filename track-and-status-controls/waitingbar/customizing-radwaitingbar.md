@@ -85,12 +85,12 @@ The waiting indicators also support dash style. To customize the appearance of t
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=waitingIndicators}} 
 
 ````C#
-this.radWaitingBar1.WaitingBarElement.Indicators[0].BackColor = Color.LightGreen;
-this.radWaitingBar1.WaitingBarElement.Indicators[0].NumberOfColors = 1;
-this.radWaitingBar1.WaitingBarElement.Indicators[1].BackColor = Color.LightGreen;
-this.radWaitingBar1.WaitingBarElement.Indicators[1].NumberOfColors = 1;
-WaitingBarSeparatorElement separator = this.radWaitingBar1.WaitingBarElement.Indicators[0].SeparatorElement;
-WaitingBarSeparatorElement helpSeparator = this.radWaitingBar1.WaitingBarElement.Indicators[1].SeparatorElement;
+this.radWaitingBar1.WaitingBarElement.WaitingIndicators[0].BackColor = Color.LightGreen;
+this.radWaitingBar1.WaitingBarElement.WaitingIndicators[0].NumberOfColors = 1;
+this.radWaitingBar1.WaitingBarElement.WaitingIndicators[1].BackColor = Color.LightGreen;
+this.radWaitingBar1.WaitingBarElement.WaitingIndicators[1].NumberOfColors = 1;
+WaitingBarSeparatorElement separator = ((WaitingBarIndicatorElement)this.radWaitingBar1.WaitingBarElement.WaitingIndicators[0]).SeparatorElement;
+WaitingBarSeparatorElement helpSeparator = ((WaitingBarIndicatorElement)this.radWaitingBar1.WaitingBarElement.WaitingIndicators[1]).SeparatorElement;
 separator.Dash = true;
 helpSeparator.Dash = true;
 separator.NumberOfColors = 2;
@@ -110,12 +110,12 @@ helpSeparator.GradientPercentage = 0.25f;
 
 ````
 ````VB.NET
-Me.RadWaitingBar1.WaitingBarElement.Indicators(0).BackColor = Color.LightGreen
-Me.RadWaitingBar1.WaitingBarElement.Indicators(0).NumberOfColors = 1
-Me.RadWaitingBar1.WaitingBarElement.Indicators(1).BackColor = Color.LightGreen
-Me.RadWaitingBar1.WaitingBarElement.Indicators(1).NumberOfColors = 1
-Dim separator As WaitingBarSeparatorElement = Me.RadWaitingBar1.WaitingBarElement.Indicators(0).SeparatorElement
-Dim helpSeparator As WaitingBarSeparatorElement = Me.RadWaitingBar1.WaitingBarElement.Indicators(1).SeparatorElement
+Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(0).BackColor = Color.LightGreen
+Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(0).NumberOfColors = 1
+Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(1).BackColor = Color.LightGreen
+Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(1).NumberOfColors = 1
+Dim separator As WaitingBarSeparatorElement = DirectCast(Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(0), WaitingBarIndicatorElement).SeparatorElement
+Dim helpSeparator As WaitingBarSeparatorElement = DirectCast(Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(1), WaitingBarIndicatorElement).SeparatorElement
 separator.Dash = True
 helpSeparator.Dash = True
 separator.NumberOfColors = 2
@@ -150,16 +150,16 @@ Different shapes can be applied to both the WaitingBarElement and the waiting in
 Telerik.WinControls.EllipseShape shape = new Telerik.WinControls.EllipseShape();
 this.radWaitingBar1.WaitingBarElement.Shape = shape;
 this.radWaitingBar1.WaitingBarElement.ContentElement.Shape = shape;
-this.radWaitingBar1.WaitingBarElement.Indicators[0].Shape = shape;
-this.radWaitingBar1.WaitingBarElement.Indicators[1].Shape = shape;
+this.radWaitingBar1.WaitingBarElement.WaitingIndicators[0].Shape = shape;
+this.radWaitingBar1.WaitingBarElement.WaitingIndicators[1].Shape = shape;
 
 ````
 ````VB.NET
 Dim shape As New Telerik.WinControls.EllipseShape()
 Me.RadWaitingBar1.WaitingBarElement.Shape = shape
 Me.RadWaitingBar1.WaitingBarElement.ContentElement.Shape = shape
-Me.RadWaitingBar1.WaitingBarElement.Indicators(0).Shape = shape
-Me.RadWaitingBar1.WaitingBarElement.Indicators(1).Shape = shape
+Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(0).Shape = shape
+Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(1).Shape = shape
 
 ````
 
