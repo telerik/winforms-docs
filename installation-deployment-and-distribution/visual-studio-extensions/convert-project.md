@@ -33,7 +33,7 @@ The wizard’s first page lets you:
 
 >note GET LATEST button is available only when there is a newer version released on our web site.
 >
-> If you prefer the Telerik assemblies to be copied into your solution folder, the __Copy referenced assemblies to solution and source control__ option could be selected only into the [Visual Studio Extensions Options](%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/options).
+> If you prefer the Telerik assemblies to be copied into your solution folder, the __Copy referenced assemblies to solution and source control__ option could be selected only into the [Visual Studio Extensions Options]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/options%}).
 
 Through the Convert Project Wizard’s second page you can:
 
