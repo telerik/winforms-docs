@@ -10,18 +10,20 @@ position: 1
 
 # ProgressBar
 
+The ProgressBars in your application will be converted to [RadProgressBar]({%slug winforms/track-and-status-controls/progressbar%}). The following table describes which properties, methods and events are removed and which are replaced with similar equivalents.
+
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
-|MarqueeAnimationSpeed|Removed after converting|   |
-|Style |Give an error after converting|   |
-|Value|Replace with|Value1|
-|RightToLeftLayout|Removed after converting|   |
+|MarqueeAnimationSpeed|Removed|   |
+|Style |Produces Error|   |
+|Value|Replaced|Value1|
+|RightToLeftLayout|Removed|   |
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
-|PerformStep()|Replace with|ProgressBarElement.PerformStepValue1()|
-|Increment(value)|Replace with|ProgressBarElement.IncrementValue1(value)|
+|PerformStep()|Replaced|ProgressBarElement.PerformStepValue1()|
+|Increment(value)|Replaced|ProgressBarElement.IncrementValue1(value)|
 
 |Events|Action|RadControls Equivalent|
 |---|---|---|
-|RightToLeftLayoutChanged|Remove after converting|   |
+|RightToLeftLayoutChanged|Removed|   |

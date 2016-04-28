@@ -8,4 +8,6 @@ published: True
 position: 1
 ---
 
-The type of the VScrollBar is changed to RadVScrollBar. There is no properties specific properties that are not converted.
+# VScrollBar
+
+The VScrollBar control is changed to [RadVScrollBar]({%slug winforms/track-and-status-controls/scrollbar%}). There are no specific properties that are not converted.

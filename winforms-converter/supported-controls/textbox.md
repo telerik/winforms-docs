@@ -10,15 +10,17 @@ position: 1
 
 # TextBox
 
+The TextBoxes in your application will be converted to [RadTextBox]({%slug winforms/editors/textbox%}). The following table describes which properties, methods and events are removed and which are replaced with similar equivalents.
+
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
-|TextAlign|Replaced with|TextAlign|
-|BorderStyle|Removed after converting|   |
+|TextAlign|Replaced|TextAlign|
+|BorderStyle|Removed|   |
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
-|Undo|Replaced with|TextBoxElement.TextBoxItem.TextBoxControl.Undo|
+|Undo|Replaced|TextBoxElement.TextBoxItem.TextBoxControl.Undo|
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
-|BorderStyleChanged|Removed after converting| |
+|BorderStyleChanged|Removed| |
