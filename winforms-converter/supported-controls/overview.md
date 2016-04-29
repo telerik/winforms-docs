@@ -1,5 +1,5 @@
 ---
-title: Supported Controls Overview
+title: Overview
 page_title: Supported Controls | UI for Winforms Documentation
 description: This article explains which default .NET controls are automatically converted.
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/supported-controls
@@ -10,7 +10,7 @@ position: 0
 
 # Supported Controls
 
-This article will list all .NET controls which can be converted to RadConrtols. It shows which properties are relapsed with other equivalents on RadControls. The unsupported properties are listed as well.
+This article will list the .NET controls which can be converted to theiUI for WinForms counterparts. It shows what actions are being taken for each control type.
 
 1. [Button]({%slug winforms/winforms-converter/supported-controls/button%})
 1. [CheckBox]({%slug winforms/winforms-converter/supported-controls/checkbox%})

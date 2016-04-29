@@ -6,7 +6,7 @@ exclude: [README.md,Gemfile,Gemfile.lock]
 navigation:
 ## List your directory names and order here, like this:
     winforms-converter:
-        title: Convert to UI for WinForms Application
+        title: Convert your application to UI for WinForms 
         position: 3
     winforms-converter/supported-controls:
         title: Supported Controls
