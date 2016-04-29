@@ -77,6 +77,12 @@ navigation:
     cardview:
         title: Cardview
         position: 9
+    cardview/populating-with-data:
+        title: Populating with Data
+        position: 4
+    cardview/features:
+        title: Features
+        position: 5
     carousel:
         title: Carousel
         position: 10
