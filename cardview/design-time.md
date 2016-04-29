@@ -25,15 +25,15 @@ position: 2
 
 * __RadCardView Specific Actions__:
 
-	* __Edit Items__:
+	* __Edit Items__: When in unbound mode adds or edits __CardViewItems__
 
-	* __Edit Columns__:
+	* __Edit Columns__: Adds or edits columns
 
-	* __Edit Groups__:
+	* __Edit Groups__: Adds or edits groups
 	
-	* __Customize Template__:
+	* __Customize Template__: Opens the CardTemplate Layout editor
 	
-	The short video below demonstrates how columns can be set up at design -time and later the layout modified using the Customize Dialog.
+	The short video below demonstrates how columns can be set up at design-time and later the layout modified using the Customize Dialog.
 
 >caption Fig.2 Create Layout
 ![radcardview-design-time 002](images/radcardview-design-time002.gif)
@@ -42,7 +42,7 @@ position: 2
 
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 
-* __Search__: Search the Telerik site for a given string.
+* __Search__: Search the Telerik website for a given string.
 
 # See Also
 

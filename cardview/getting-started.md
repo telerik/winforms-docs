@@ -10,7 +10,7 @@ position: 3
 
 # Getting Started
 
-The example below demonstrates setting up RadCardView to display data form the *Northwind* database.
+The example below demonstrates setting up __RadCardView__ to display data form the *Northwind* database.
 
 ## Setting up the Form 
 
