@@ -10,10 +10,15 @@ position: 2
 
 # Design Time
 
+When you drag a __RadWaitingBar__ from the Toolbox and drop it onto the form, the waiting bar style gallery will offer you to pick up the desired type. It allows you to customize the appearance settings as well:
+
+![track-and-status-controls-waiting-bar-design-time 001](images/track-and-status-controls-waiting-bar-design-time001.png)
+
 ## Smart Tag
 
 >caption Fig.1 Smart Tag
-![track-and-status-controls-wiating-bar-design-time 001](images/track-and-status-controls-wiating-bar-design-time001.png)
+
+![track-and-status-controls-waiting-bar-design-time 002](images/track-and-status-controls-waiting-bar-design-time002.png)
 
 * __Common Tasks__
 
@@ -22,6 +27,7 @@ position: 2
 	* __Edit UI elements__: Opens a dialog that displays the *Element Hierarchy Editor*. This editor lets you browse all the elements in the control.
 
 	* __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style at one time.
+* __Choose WaitingBar style__: opens the gallery.
 
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 
