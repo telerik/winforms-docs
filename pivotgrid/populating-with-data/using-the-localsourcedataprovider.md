@@ -98,7 +98,12 @@ dataProvider.ColumnGroupDescriptions.Add(New PropertyGroupDescription() With { _
 
 {{endregion}}
 
-* __AggregateDescriptions__ - the data added to this description will be aggregated and included in RadPivotGrid as Cells. The properties can be defined as PropertyAggregateDescription or you can create custom implementation of PropertyAggregateDescriptionBase class. Here's how to define the AggregateDescriptions in your application:
+* __AggregateDescriptions__ - the data added to this description will be aggregated and included in RadPivotGrid as Cells. The properties can be defined as PropertyAggregateDescription or you can create custom implementation of PropertyAggregateDescriptionBase class. 
+
+>note The __PropertyAggregateDescriptionBase__ defines an __IgnoreNullValues__ property determining whether the aggregate function will ignore *null* values when calculating the result. The default value of the property is __false__.
+>
+
+Here's how to define the AggregateDescriptions in your application:
 
 {{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=AggregateDescriptions}} 
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=AggregateDescriptions}} 

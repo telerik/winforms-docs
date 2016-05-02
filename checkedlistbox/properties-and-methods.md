@@ -35,12 +35,7 @@ This section demonstrates specific for the __RadCheckedListBox__ control propert
 
 * __Far__ - when CheckBoxesPosition is set to Left or Right it means Bottom alignment. When CheckBoxesPosition is set to Top or Bottom it means Right.
 
->important If __RadCheckedListBox__ is in DetailsView the checkboxes position is fixed (on the left of the item).
->
-
-
 ## Using the Space Bar
-      
 
 The space bar allows you to toggle selected items check state with a single hit. Pressing space bar selects current item if it is not selected. When current item is selected and the space bar key is pressed there are two cases:
         
@@ -48,8 +43,6 @@ The space bar allows you to toggle selected items check state with a single hit.
 * Toggle selected items, if all items CheckStates are equal.
 
 * Check selected items, if at least one item has different CheckState. ![checkedlistbox-features 001](images/checkedlistbox-features001.gif)
-
-
 
 1. Initially there are three selected items and another one is focused.
 
@@ -60,16 +53,12 @@ The space bar allows you to toggle selected items check state with a single hit.
 1. Toggles selected items CheckState.
 
 ## Methods
-      
 
 * __CheckAllItems__ – Checks all items.
             
-
 * __UncheckAllItems__ – Unchecks all items.
-            
 
 * __CheckSelectedItems__ – Checks selected items.
             
-
 * __UncheckSelectedItems__ – Unchecks selected items.
             

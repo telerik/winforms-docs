@@ -13,13 +13,11 @@ previous_url: track-and-status-controls-waitingbar-overview
 
 ## 
 
-RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing. The control supports waiting animation in four directions: Left, Right, Bottom and Top, and also three different styles: __Indeterminate__,  __Throbber__ and __Dash__:        
-		
+__RadWaitingBar__ is designed to indicate that a long-running operation with indeterminate  length is undergoing. The control supports waiting animation in four directions: Left, Right, Bottom and Top, and also different line and circular styles.       
 
-* The __Indeterminate__ style is similar to the  indeterminate mode of the standard Microsoft ProgressBar control. In this style RadWaitingBar smoothly animates all indicators longwise. 
+![track-and-status-controls-waitingbar-overview 001](images/track-and-status-controls-waitingbar-overview001.gif)
 
-* The __Throbber__ mode moves only one of the control’s indicators in two directions, left and right when the RadWaitingBar is horizontal, and bottom and top when the control is vertical.
+![track-and-status-controls-waitingbar-overview 002](images/track-and-status-controls-waitingbar-overview002.gif)
 
-* In __Dash__ style RadWaitingBar moves smoothly a striped pattern instead of indicators.
+![track-and-status-controls-waitingbar-overview 003](images/track-and-status-controls-waitingbar-overview003.gif)
 
-![track-and-status-controls-waitingbar-overview 001](images/track-and-status-controls-waitingbar-overview001.png)

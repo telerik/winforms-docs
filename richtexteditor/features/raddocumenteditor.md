@@ -11,8 +11,6 @@ previous_url: richtexteditor-features-raddocumenteditor
 
 # RadDocumentEditor
 
-
-
 __RadDocument__ has API of its own, but using it has a set of limitations. First of all, adding and removing Blocks and  Inlines from the document can be done only before the document has been measured – a procedure that calculates the desired size of the spans, paragraphs and the document altogether in order to calculate its layout. These operations are usually invoked by the framework when the document in shown in a __RadRichTextEditor__. However, some of the methods of __RadDocument__ and __RadRichTextEditor__ require that the document be measured before their execution, so if such a method is invoked, the document will be measured. Then, adding Paragraphs, Tables, Sections and Spans will break the structure of the document.
       
 
