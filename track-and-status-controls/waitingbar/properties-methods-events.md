@@ -33,7 +33,7 @@ previous_url: track-and-status-controls-waitingbar-programming-radwaitingbar
 |__StartWaiting__()|Starts the animation.|
 |__StopWaiting__()|Stops the animation.|
 |__ResetWaiting__()|Moves the waiting indicators to their initial position. Resetting the animation after the waiting process has been started will not stop the animation. Respectively, resetting the animation after the waiting process has been stopped will not start the animation.|
-|__SetAssociatedControlRuntime __|Specifies the associated control.|
+|__SetAssociatedControlRuntime__|Specifies the associated control.|
 
 # Events
 
