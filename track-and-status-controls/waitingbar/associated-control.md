@@ -37,7 +37,7 @@ private void radButton1_Click(object sender, EventArgs e)
 {
     timer.Interval = 3000;
     timer.Tick += timer_Tick;
-     this.radWaitingBar1.AssociatedControl=this.radGridView1;
+    this.radWaitingBar1.AssociatedControl=this.radGridView1;
     this.radWaitingBar1.StartWaiting();
     timer.Start();
 }
