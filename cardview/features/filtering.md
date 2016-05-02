@@ -36,8 +36,8 @@ Once the filtering is enabled, we have to create a new __FilterDescriptor__ and 
 {{source=..\SamplesVB\CardView\CardViewFeatures.vb region=FilterDescriptor}} 
 
 ````C#
-FilterDescriptor valueFilter = new FilterDescriptor("Address", FilterOperator.Contains, "Capital");
-this.radCardView1.FilterDescriptors.Add(valueFilter);
+FilterDescriptor columnFilter = new FilterDescriptor("Address", FilterOperator.Contains, "Capital");
+this.radCardView1.FilterDescriptors.Add(columnFilter);
 
 ````
 ````VB.NET

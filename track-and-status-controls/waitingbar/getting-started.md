@@ -114,7 +114,6 @@ The following example demonstrates how to add __DotsLineWaitingBarIndicatorEleme
 RadWaitingBar radWaitingBar1 = new RadWaitingBar();
 radWaitingBar1.Size = new System.Drawing.Size(200, 200);
 radWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.DotsSpinner;
-
 radWaitingBar1.StartWaiting();
 int radius = 20;
 int elementCount = 5;
@@ -128,26 +127,21 @@ for (int i = 0; i < 4; i++)
     dsi.ElementCount = elementCount;
     dsi.RotationDirection = (RotationDirection)(i % 2);
 }
-
 DotsLineWaitingBarIndicatorElement dli = new DotsLineWaitingBarIndicatorElement();
 radWaitingBar1.WaitingIndicators.Add(dli);
 dli.PositionOffset = new SizeF(0, 50);
-
 DotsLineWaitingBarIndicatorElement dli1 = new DotsLineWaitingBarIndicatorElement();
 radWaitingBar1.WaitingIndicators.Add(dli1);
 dli1.WaitingDirection = Telerik.WinControls.ProgressOrientation.Left;
 dli1.PositionOffset = new SizeF(0, -50);
-
 DotsLineWaitingBarIndicatorElement dli2 = new DotsLineWaitingBarIndicatorElement();
 radWaitingBar1.WaitingIndicators.Add(dli2);
 dli2.WaitingDirection = Telerik.WinControls.ProgressOrientation.Bottom;
 dli2.PositionOffset = new SizeF(50, 0);
-
 DotsLineWaitingBarIndicatorElement dli4 = new DotsLineWaitingBarIndicatorElement();
 radWaitingBar1.WaitingIndicators.Add(dli4);
 dli4.WaitingDirection = Telerik.WinControls.ProgressOrientation.Top;
 dli4.PositionOffset = new SizeF(-50, 0);
-
 radWaitingBar1.Location = new Point(10, 10);
 this.Controls.Add(radWaitingBar1);
 radWaitingBar1.StartWaiting();
@@ -157,7 +151,6 @@ radWaitingBar1.StartWaiting();
 Dim radWaitingBar1 As New RadWaitingBar()
 radWaitingBar1.Size = New System.Drawing.Size(200, 200)
 radWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.DotsSpinner
-
 radWaitingBar1.StartWaiting()
 Dim radius As Integer = 20
 Dim elementCount As Integer = 5
@@ -170,26 +163,21 @@ For i As Integer = 0 To 3
     dsi.ElementCount = elementCount
     dsi.RotationDirection = DirectCast(i Mod 2, RotationDirection)
 Next
-
 Dim dli As New DotsLineWaitingBarIndicatorElement()
 radWaitingBar1.WaitingIndicators.Add(dli)
 dli.PositionOffset = New SizeF(0, 50)
-
 Dim dli1 As New DotsLineWaitingBarIndicatorElement()
 radWaitingBar1.WaitingIndicators.Add(dli1)
 dli1.WaitingDirection = Telerik.WinControls.ProgressOrientation.Left
 dli1.PositionOffset = New SizeF(0, -50)
-
 Dim dli2 As New DotsLineWaitingBarIndicatorElement()
 radWaitingBar1.WaitingIndicators.Add(dli2)
 dli2.WaitingDirection = Telerik.WinControls.ProgressOrientation.Bottom
 dli2.PositionOffset = New SizeF(50, 0)
-
 Dim dli4 As New DotsLineWaitingBarIndicatorElement()
 radWaitingBar1.WaitingIndicators.Add(dli4)
 dli4.WaitingDirection = Telerik.WinControls.ProgressOrientation.Top
 dli4.PositionOffset = New SizeF(-50, 0)
-
 radWaitingBar1.Location = New Point(10, 10)
 Me.Controls.Add(radWaitingBar1)
 radWaitingBar1.StartWaiting()

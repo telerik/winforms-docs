@@ -41,7 +41,6 @@ private void radButton1_Click(object sender, EventArgs e)
     this.radWaitingBar1.StartWaiting();
     timer.Start();
 }
-
 private void timer_Tick(object sender, EventArgs e)
 {
     timer.Stop();
@@ -59,7 +58,6 @@ Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton
     Me.RadWaitingBar1.StartWaiting()
     Timer.Start()
 End Sub
-
 Private Sub timer_Tick(sender As Object, e As EventArgs)
     timer.[Stop]()
     Me.radWaitingBar1.SetAssociatedControlRuntime(Nothing)
