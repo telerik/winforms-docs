@@ -11,7 +11,9 @@ position: 1
 # Convert your existing application to Telerik UI for Winforms
 
 This article will guide you trough the process of converting the Microsoft Windows Forms controls in your application to Telerik UI for Winforms counterparts. 
->note
+
+>note We strongly recommend using using a source control system like TFS or Git. This will allow you to review the changes and restore to previous version if needed. 
+
 1. Before staring you need to open a solution which contains a project which is using the Microsoft Winforms controls. This will enable the converter option in the WinForms menu item.
 
     ![winforms-converter-step-by-step-tutorial001](images/winforms-converter-step-by-step-tutorial001.png)
@@ -41,4 +43,4 @@ This article will guide you trough the process of converting the Microsoft Windo
 5. The final step is to resolve any compile time errors. There properties and methods which do not have analogs in our implementation. Since the converter does not remove the code for these you will get a compile time error
     ![winforms-converter-step-by-step-tutorial006](images/winforms-converter-step-by-step-tutorial006.png)
 
->note 
+>note You should check if all existing functionality is working as before after the upgrade process.

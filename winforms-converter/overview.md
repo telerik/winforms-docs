@@ -21,5 +21,7 @@ This tool allows you to convert the standard .NET Windows Forms controls for all
 * __Conversion Log__ - Conversion log is created when the process is completed. It contains a complete list of all converted files.   
 
 * __Convert to a specific version__ - you can choose to which version of __Telerik UI for WinForms__ you want to convert. 
-VB and C#
+
+* Visual Basic and C# projects are supported. 
+
 
