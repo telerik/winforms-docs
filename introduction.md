@@ -32,6 +32,7 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 * [VirtualGrid]({%slug winforms/virtualgrid%})
 * [ListControl]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol%})
 * [ListView]({%slug winforms/listview%})
+* [CardView]({%slug winforms/cardview%})
 * [LinearGauge]({%slug winforms/gauges/lineargauge%})
 * [Menu]({%slug winforms/menus/menu%})
 * [MultiColumnComboBox]({%slug winforms/multicolumncombobox%})
