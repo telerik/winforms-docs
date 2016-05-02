@@ -10,7 +10,7 @@ position: 1
 
 # Grouping
 
-__RadCardView__ allows grouping of its __CardViewItems__ and it can be enabled by using the __EnableFiltering__ property of the control. An example with custom grouping is demonstrated in the __Populating Data Programatically__ section of the  [Unbound Mode](%slug winforms/cardview/populating-with-data/unbound-mode%) article.
+__RadCardView__ allows grouping of its __CardViewItems__ and it can be enabled by using the __EnableFiltering__ property of the control. An example with custom grouping is demonstrated in the __Populating Data Programmatically__ section of the  [Unbound Mode](%slug winforms/cardview/populating-with-data/unbound-mode%) article.
 
 #### Enable Grouping
 
@@ -30,7 +30,7 @@ Me.RadCardView1.ShowGroups = True
 
 {{endregion}} 
 
-Once the filtering is enabled, we have to create a new __FilterDescriptor__ and assign its __PropertyName__, __FilterOperator__ and __SearchCriteria__. First, let’s filter the items by their value and look for items starting with *“Local”*.
+Once the grouping is enabled, we have to create a new __GroupDescriptor__ and assign its __PropertyName__ and __ListSortDirection__. Let's group the items by `Address` in `Descending` direction. 
 
 #### Group by Column
 

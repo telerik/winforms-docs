@@ -20,13 +20,13 @@ The element hierarchy and structure may vary depending on the current settings a
 >caption Fig.2 RadCardView`s Structure
 ![radcardview-structure 001](images/radcardview-structure002.png)
 
-* __RadCardViewElement__: Represents the main element of __RadCardView__
-* __CarListViewElement__: Container element of the control
-* __CardListViewVisualItem__: A single __RadCardView__ visual item
-* __CardViewItem__: A particular __RadCardView__ item
-* __LayoutControlTabbedGrouped__: Represents a layout control container of the tabbed groups 
-* __LayoutControlTabbedStripElement__: Tabbed strip element of the layout control
-* __CardViewGroupItem__: A single grouped item
+* __RadCardViewElement__: Represents the main element of __RadCardView__.
+* __CarListViewElement__: Container element of the control.
+* __CardListViewVisualItem__: A single __RadCardView__ visual item.
+* __CardViewItem__: A particular __RadCardView__ item.
+* __LayoutControlTabbedGrouped__: Represents a layout control container of the tabbed groups.
+* __LayoutControlTabbedStripElement__: Tabbed strip element of the layout control.
+* __CardViewGroupItem__: A single grouped item.
 
 ## See Also
 
