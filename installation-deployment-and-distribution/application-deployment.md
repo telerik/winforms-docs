@@ -501,4 +501,5 @@ Telerik.WinControls.Themes.Windows8.dll</td></tr>
 <tr><td><b>RadTimePicker</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadClock</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadPdfViewerNavigator</b></td><td>Telerik.WinControls.PdfViewer.dll</td></tr>
+<tr><td><b>RadCardView</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 </table>
