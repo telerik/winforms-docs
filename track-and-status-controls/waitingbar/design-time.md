@@ -27,7 +27,10 @@ When you drag a __RadWaitingBar__ from the Toolbox and drop it onto the form, th
 	* __Edit UI elements__: Opens a dialog that displays the *Element Hierarchy Editor*. This editor lets you browse all the elements in the control.
 
 	* __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style at one time.
-* __Choose WaitingBar style__: opens the gallery.
+	
+* __Associated Control__: Specifies the associated control.
+
+* __Choose WaitingBar style__: Opens the gallery.
 
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 

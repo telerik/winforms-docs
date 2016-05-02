@@ -25,6 +25,7 @@ previous_url: track-and-status-controls-waitingbar-programming-radwaitingbar
 |__WaitingSpeed__|The property sets the speed of the animation. The higher the __WaitingSpeed__ is, the faster the waiting indicators move. __WaitingSpeed__ possible values range from *0* to *100*, where *1* sets the slowest indicator and *100* results in the fastest indicator. If the __WaitingSpeed__ is set to *0*,  the __WaitingStopped__ event is raised and the waiting process terminates. Then, if the __WaitingSpeed__ is set to a value greater than *0*, the __WaitingStarted__ event is raised and the waiting animation continues automatically.|![track-and-status-controls-waitingbar-properties-methods-events 014](images/track-and-status-controls-waitingbar-properties-methods-events014.gif)|
 |__WaitingStep__|Sets the number of pixels the waiting indicators move during each step of the waiting animation process. If the __WaitingStep__ is set to *0*, the __WaitingStopped__ event is raised and the waiting process terminates. Then, if the __WaitingStep__ is set to a value greater than *0*, the __WaitingStarted__ event raises and the waiting animation continues automatically.|![track-and-status-controls-waitingbar-properties-methods-events 015](images/track-and-status-controls-waitingbar-properties-methods-events015.gif)|
 |__WaitingStyle__|Sets the style of __RadWaitingBar__. Read more here: [Waiting Styles]({%slug winforms/track-and-status-controls/waiting-styles%})||
+|__AssociatedControl__|Specifies the associated control.||
 
 # Methods
 
@@ -33,7 +34,6 @@ previous_url: track-and-status-controls-waitingbar-programming-radwaitingbar
 |__StartWaiting__()|Starts the animation.|
 |__StopWaiting__()|Stops the animation.|
 |__ResetWaiting__()|Moves the waiting indicators to their initial position. Resetting the animation after the waiting process has been started will not stop the animation. Respectively, resetting the animation after the waiting process has been stopped will not start the animation.|
-|__SetAssociatedControlRuntime__|Specifies the associated control.|
 
 # Events
 

@@ -879,7 +879,7 @@ navigation:
         title: Usability
         position: 12
     virtualgrid:
-        title: VirtualGrid (Beta)
+        title: VirtualGrid
         position: 50 
     virtualgrid/design-time:
         title: Design Time
