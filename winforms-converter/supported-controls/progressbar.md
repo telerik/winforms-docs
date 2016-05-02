@@ -1,7 +1,7 @@
 ---
 title: ProgressBar
 page_title: ProgressBar | UI for Winforms Documentation
-description: This article explains which default .NET controls are automatically converted.
+description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/progressbar
 tags: covert, winforms, progressbar
 published: True

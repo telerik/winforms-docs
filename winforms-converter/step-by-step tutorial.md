@@ -14,21 +14,21 @@ This article will guide you trough the process of converting the Microsoft Windo
 
 >note We strongly recommend using using a source control system like TFS or Git. This will allow you to review the changes and restore to previous version if needed. 
 
-1. Before staring you need to open a solution which contains a project which is using the Microsoft Winforms controls. This will enable the converter option in the WinForms menu item.
+1. Before staring you need to open a solution which contains a project which is using standard Microsoft Winforms controls. This will enable the converter option in the WinForms menu item.
 
     ![winforms-converter-step-by-step-tutorial001](images/winforms-converter-step-by-step-tutorial001.png)
 
-2. Clicking the menu item will open the following window. 
+2. Clicking the menu item will open the following window, where you can perform the following actions: 
 
-    1. Select a version - you can choose between all installed versions, including the ones for .NET 2.0 and .NET 4.0.
+    1\. Select a version - you can choose between all installed versions, including the ones for .NET 2.0 and .NET 4.0.
 
-    2. Select controls - you can choose which controls you can convert. For this example leave all controls selected. 
+    2\. Select controls - you can choose which controls you can convert. For this example leave all controls selected. 
 
-    3. The Convert button - pressing this button will start the conversion process. Please note that you cannot go back to this window.  
+    3\. The `Convert` button - pressing this button will start the conversion process. Please note that you cannot go back to this window.  
 
     ![winforms-converter-step-by-step-tutorial002](images/winforms-converter-step-by-step-tutorial002.png)
 
-3. Press 'Convert' and wait until the project is converted. Once the conversion processes is complete the summary dialog will appear. This will allow you to see which files are converted. You can open the generated log as well.
+3. Press `Convert` and wait until the project is converted. Once the conversion processes is complete the summary dialog will appear. This will allow you to see which files are converted. You can open the generated log as well.
 
     ![winforms-converter-step-by-step-tutorial003](images/winforms-converter-step-by-step-tutorial003.png)
 
@@ -40,7 +40,7 @@ This article will guide you trough the process of converting the Microsoft Windo
 
     ![winforms-converter-step-by-step-tutorial005](images/winforms-converter-step-by-step-tutorial005.png)
 
-5. The final step is to resolve any compile time errors. There properties and methods which do not have analogs in our implementation. Since the converter does not remove the code for these you will get a compile time error
+5. The final step is to resolve any compile time errors. There are properties and methods which do not have analogs in our implementation. Since the converter does not remove the code for these you will get a compile time error
     ![winforms-converter-step-by-step-tutorial006](images/winforms-converter-step-by-step-tutorial006.png)
 
->note You should check if all existing functionality is working as before after the upgrade process.
+>note After the conversion process is completed you should check if all existing functionality is working as before.

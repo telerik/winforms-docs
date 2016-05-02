@@ -1,7 +1,7 @@
 ---
 title: Requirements
 page_title: Requirements | UI for Winforms Documentation
-description: This article explains which default .NET controls are automatically converted.
+description: This article explains which what you require in order to convert your projects. 
 slug: winforms/winforms-converter/supported-controls/requirements
 tags: covert, winforms, requirements
 published: True

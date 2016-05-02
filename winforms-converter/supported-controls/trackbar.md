@@ -1,7 +1,7 @@
 ---
 title: TrackBar
 page_title: TrackBar | UI for Winforms Documentation
-description: This article explains which default .NET controls are automatically converted.
+description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/trackbar
 tags: covert, winforms, trackbar
 published: True

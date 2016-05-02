@@ -1,7 +1,7 @@
 ---
 title: RadioButton
 page_title: RadioButton | UI for Winforms Documentation
-description: This article explains which default .NET controls are automatically converted.
+description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/radiobutton
 tags: covert, winforms, radiobutton
 published: True

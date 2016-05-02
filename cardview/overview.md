@@ -10,7 +10,7 @@ position: 0
 
 # CardView
 
-__RadCardView__ is a powerful control providing means for displaying and editing text data organized in a card layout. It incorprates a __RadLaoutControl__ allowing modifications of the layout in the Visual Studio designer as well as at run-time.
+__RadCardView__ is a powerful control providing means for displaying and editing text data organized in a card layout. It incorporates a __RadLaoutControl__ allowing modifications of the layout in the Visual Studio designer as well as at run-time.
 
 >caption Fig.1 RadCardView
 ![cardview-overview 001](images/radcardview-overview001.png)
