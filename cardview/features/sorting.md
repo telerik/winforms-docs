@@ -10,9 +10,8 @@ position: 2
 
 # Sorting
 
-Sorting is possible in two ways either programmatically by adding the appropriate __SortDescriptor__ to the __SortDescriptors__ collection of __RadCardView__.
-
-Enabling sorting on header click is done by setting both __EnableSorting__  property to *true*.
+Enabling sorting is done by setting __EnableSorting__ property to *true*.
+You should add appropriate __SortDescriptor__ to the __SortDescriptors__ collection as well.
 
 #### Enable Column Sorting
 

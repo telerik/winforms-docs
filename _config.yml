@@ -81,7 +81,7 @@ navigation:
         title: Localization
         position: 8
     cardview:
-        title: Cardview
+        title: CardView
         position: 9
     cardview/populating-with-data:
         title: Populating with Data

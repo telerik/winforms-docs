@@ -28,7 +28,7 @@ Me.RadCardView1.EnableFiltering = True
 
 {{endregion}} 
 
-Once the filtering is enabled, we have to create a new __FilterDescriptor__ and assign its __PropertyName__, __FilterOperator__ and __SearchCriteria__. First, let’s filter the items by their value and look for items starting with *“Local”*.
+Once the filtering is enabled, we have to create a new __FilterDescriptor__ and assign its __PropertyName__, __FilterOperator__ and __SearchCriteria__. First, let’s filter the items by their value and look for items containing with `Capital`.
 
 #### Filter by Column
 
