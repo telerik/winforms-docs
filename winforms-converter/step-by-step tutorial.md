@@ -14,11 +14,11 @@ This article will guide you trough the process of converting the Microsoft Windo
 
 >note We strongly recommend using using a source control system like TFS or Git. This will allow you to review the changes and restore to previous version if needed. 
 
-1. Before staring you need to open a solution which contains a project which is using standard Microsoft Winforms controls. This will enable the converter option in the WinForms menu item.
+1. Before starting you need to open a solution which contains a project that is using standard Microsoft Winforms controls. This will enable the converter option in the `UI for WinForms menu` item.
 
     ![winforms-converter-step-by-step-tutorial001](images/winforms-converter-step-by-step-tutorial001.png)
 
-2. Clicking the menu item will open the following window, where you can perform the following actions: 
+2. Clicking the menu item will open the following window where you can perform the following actions: 
 
     1\. Select a version - you can choose between all installed versions, including the ones for .NET 2.0 and .NET 4.0.
 
@@ -32,7 +32,7 @@ This article will guide you trough the process of converting the Microsoft Windo
 
     ![winforms-converter-step-by-step-tutorial003](images/winforms-converter-step-by-step-tutorial003.png)
 
-    At this step you can compare the old and the converted files. To do that just click the `What Changed` link in the file list. This will open the the files tabs in Visual Studio and you will be able to review the changed code.
+    At this step you can compare the old and the converted files. To do that just click the __`What's Changed`__ link in the file list. This will open the the files tabs in Visual Studio and you will be able to review the changed code.
     
     ![winforms-converter-step-by-step-tutorial004](images/winforms-converter-step-by-step-tutorial004.png)
 
@@ -40,7 +40,7 @@ This article will guide you trough the process of converting the Microsoft Windo
 
     ![winforms-converter-step-by-step-tutorial005](images/winforms-converter-step-by-step-tutorial005.png)
 
-5. The final step is to resolve any compile time errors. There are properties and methods which do not have analogs in our implementation. Since the converter does not remove the code for these you will get a compile time error
+5. The final step is to resolve any compile time errors. There are properties and methods which do not have analogs in our implementation. Since the converter does not remove the code for these, you will get a compile time error:
     ![winforms-converter-step-by-step-tutorial006](images/winforms-converter-step-by-step-tutorial006.png)
 
 >note After the conversion process is completed you should check if all existing functionality is working as before.
