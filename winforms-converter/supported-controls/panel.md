@@ -17,3 +17,8 @@ The Panel in your application will be converted to [RadPanel]({%slug winforms/pa
 |AutoSizeMode|Removed|   |
 |BorderStyle|Removed|   |
 
+## See Also
+
+* [Step-by-step tutorial]({%slug winforms/winforms-converter/step-by-step-tutorial%})
+* [Requirements] ({%slug winforms/winforms-converter/requirements%})
+

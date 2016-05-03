@@ -35,3 +35,8 @@ The CheckBoxes are converted to [RadCheckBox]({%slug winforms/buttons/checkbox%}
 |---|---|---|
 |AppearanceChanged|Produces Error|   |
 |CheckedChanged|Replaced|CheckedChanged|
+
+## See Also
+
+* [Step-by-step tutorial]({%slug winforms/winforms-converter/step-by-step-tutorial%})
+* [Requirements] ({%slug winforms/winforms-converter/requirements%})

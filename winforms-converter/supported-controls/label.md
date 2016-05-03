@@ -24,3 +24,8 @@ The Label is converted to [RadLabel]({%slug winforms/panels-and-labels/label%}).
 |Events|Action|RadControls Equivalent|
 |---|---|---|
 |TextAlignChanged|Produces Error|   |
+
+## See Also
+
+* [Step-by-step tutorial]({%slug winforms/winforms-converter/step-by-step-tutorial%})
+* [Requirements] ({%slug winforms/winforms-converter/requirements%})

@@ -2,7 +2,7 @@
 title: Step-by-step tutorial
 page_title: Step-by-step tutorial | UI for Winforms Documentation
 description: This article explains how you can convert a project with the winforms converter.
-slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/Step-by-step-tutorial
+slug: winforms/winforms-converter/step-by-step-tutorial
 tags: covert, winforms, radcontrols
 published: True
 position: 1
@@ -44,3 +44,7 @@ This article will guide you trough the process of converting the Microsoft Windo
     ![winforms-converter-step-by-step-tutorial006](images/winforms-converter-step-by-step-tutorial006.png)
 
 >note After the conversion process is completed you should check if all existing functionality is working as before.
+
+## See Also
+
+* [Requirements] ({%slug winforms/winforms-converter/requirements%})
