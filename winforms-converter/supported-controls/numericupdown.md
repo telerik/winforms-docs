@@ -25,3 +25,9 @@ The NumericUpDown control in your application will be converted to [RadSpinEdito
 |UpButton()|Replaced|SpinElement.ButtonUp.PerformClick()|
 |DownButton()|Replaced|SpinElement.ButtonDown.PerformClick()|
 
+
+## See Also
+
+* [Step-by-step tutorial]({%slug winforms/winforms-converter/step-by-step-tutorial%})
+* [Requirements] ({%slug winforms/winforms-converter/requirements%})
+

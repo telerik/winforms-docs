@@ -24,4 +24,8 @@ This tool allows you to convert the standard .NET Windows Forms controls for all
 
 * Visual Basic and C# projects are supported. 
 
+## See Also
+
+* [Step-by-step tutorial]({%slug winforms/winforms-converter/step-by-step-tutorial%})
+* [Requirements] ({%slug winforms/winforms-converter/requirements%})
 
