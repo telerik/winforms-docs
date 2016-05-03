@@ -10,7 +10,7 @@ position: 1
 
 # ListBox
 
-The ListBox is converted to [RadListControl]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol%}). The following tables describes which properties, methods and events are removed and which are replaced with similar equivalents.
+The ListBox is converted to [RadListControl]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

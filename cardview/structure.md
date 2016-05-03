@@ -10,7 +10,7 @@ position: 1
 
 # Structure
 
-The __CardListViewVisualItem__ element extends the __IconListViewVisualItem__ class used by __RadListView__ control. Hence most of the functionality already defined for __RadListView__ when set up in *IconsView* will also be valid for the __RadCardView__ control. __RadLayoutContol__ is responsible for the setting up and arranging the elements of __RadCardView__ in a complex layout always adjusting to the available space.
+The __CardListViewVisualItem__ element extends the __IconListViewVisualItem__ class used by __RadListView__ control. Hence, most of the functionality already defined for __RadListView__ when set up in *IconsView* will also be valid for the __RadCardView__ control. __RadLayoutContol__ is responsible for the setting up and arranging the elements of __RadCardView__ in a complex layout always adjusting to the available space.
 
 >caption Fig.1 RadCardView`s Element Hierarchy
 ![radcardview-structure 001](images/radcardview-structure001.png)

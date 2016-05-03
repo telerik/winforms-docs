@@ -10,7 +10,7 @@ position: 1
 
 # ProgressBar
 
-The ProgressBars in your application will be converted to [RadProgressBar]({%slug winforms/track-and-status-controls/progressbar%}). The following table describes which properties, methods and events are removed and which are replaced with similar equivalents.
+The ProgressBars in your application will be converted to [RadProgressBar]({%slug winforms/track-and-status-controls/progressbar%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

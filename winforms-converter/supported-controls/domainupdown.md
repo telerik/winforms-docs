@@ -10,7 +10,7 @@ position: 1
 
 # DomainUpDown
 
-This control is converted to [RadDropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist%}). The following table describes which properties, methods and events are removed and which are replaced with similar equivalents.
+This control is converted to [RadDropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist%}). The following table describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
@@ -18,7 +18,7 @@ This control is converted to [RadDropDownList]({%slug winforms/dropdown-listcont
 |UpDownAlign|Removed| |
 |InterceptArrowKeys|Removed| |
 |BorderStyle|Removed| |
-|Sorted|Replace with |SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending|
+|Sorted|Replaced with |SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending|
 |Wrap|Removed| |
 
 |Methods|Action|RadControls Equivalent|

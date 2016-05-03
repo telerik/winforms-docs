@@ -10,7 +10,7 @@ position: 1
 
 # Checkbox
 
-The CheckBoxes are converted to [RadCheckBox]({%slug winforms/buttons/checkbox%}). The following tables describes which properties and events are removed and which are replaced with similar equivalents.
+The CheckBoxes are converted to [RadCheckBox]({%slug winforms/buttons/checkbox%}). The following tables describe which properties and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

@@ -10,7 +10,7 @@ position: 1
 
 # DateTimePicker
 
-The DateTimePicker is converted to [RadDateTimePicker]({%slug  winforms/editors/datetimepicker%}). The following tables describes which properties, methods and events are removed and which are replaced with similar equivalents.
+The DateTimePicker is converted to [RadDateTimePicker]({%slug  winforms/editors/datetimepicker%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Events|Action|RadControls Equivalent|
 |---|---|---|

@@ -10,7 +10,7 @@ position: 1
 
 # ComboBox
 
-The ComBox is converted to [RadDropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist%}). The following tables describes which properties, methods and events are removed and which are replaced with similar equivalents.
+The ComboBox is converted to [RadDropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

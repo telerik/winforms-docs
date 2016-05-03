@@ -38,7 +38,7 @@ position: 2
 >caption Fig.2 Create Layout
 ![radcardview-design-time 002](images/radcardview-design-time002.gif)
 
-* __Data Binding__: RadCardView utilizes the standard WinForms data binding mechanism. A complete example is available in Data Binding section.
+* __Data Binding__: __RadCardView__ utilizes the standard WinForms data binding mechanism. A complete example is available in Data Binding section.
 
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 

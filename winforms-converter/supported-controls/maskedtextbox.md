@@ -10,7 +10,7 @@ position: 1
 
 # MaskedTextBox
 
-The MaskedTextBox is converted to [RadMaskedEditBox]({%slug winforms/editors/maskededitbox%}). The following tables describes which properties, methods and events are removed and which are replaced with similar equivalents.
+The MaskedTextBox is converted to [RadMaskedEditBox]({%slug winforms/editors/maskededitbox%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

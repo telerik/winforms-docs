@@ -10,8 +10,7 @@ position: 2
 
 # Sorting
 
-Enabling sorting is done by setting __EnableSorting__ property to *true*.
-You should add appropriate __SortDescriptor__ to the __SortDescriptors__ collection as well.
+Enabling sorting is done by setting __EnableSorting__ property to *true*. You should add appropriate  an __SortDescriptor__ to the __SortDescriptors__ collection as well.
 
 #### Enable Column Sorting
 
@@ -29,7 +28,7 @@ Me.RadCardView1.EnableSorting = True
 
 {{endregion}} 
 
-The following code demonstrates how to add __SortDescriptor__ to RadCardView:
+The following code demonstrates how to add __SortDescriptor__ to __RadCardView__:
 
 #### Adding SortDescriptors
 

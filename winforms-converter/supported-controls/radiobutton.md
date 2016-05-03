@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-The RadioButton is converted to [RadRadioButton]({%slug winforms/buttons/radiobutton%}). The following tables describes which properties, methods and events are removed and which are replaced with similar equivalents.
+The RadioButton is converted to [RadRadioButton]({%slug winforms/buttons/radiobutton%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

@@ -10,7 +10,7 @@ position: 0
 
 # Supported Controls
 
-This article will list the .NET controls which can be converted to their UI for WinForms counterparts. It shows what actions are being taken for each control type.
+This article lists the .NET controls which can be converted to their UI for WinForms counterparts. It shows what actions are being taken for each control type.
 
 1. [Button]({%slug winforms/winforms-converter/supported-controls/button%})
 1. [CheckBox]({%slug winforms/winforms-converter/supported-controls/checkbox%})

@@ -10,7 +10,7 @@ position: 1
 
 # PropertyGrid
 
-The PropertyGrid in your application will be converted to [RadPropertyGrid]({%slug winforms/propertygrid%}). The following table describes which properties, methods and events are removed and which are replaced with similar equivalents.
+The PropertyGrid in your application will be converted to [RadPropertyGrid]({%slug winforms/propertygrid%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

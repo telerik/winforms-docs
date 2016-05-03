@@ -10,7 +10,7 @@ position: 1
 
 # TrackBar
 
-The TrackBar is converted to [RadTrackBar]({%slug winforms/track-and-status-controls/trackbar%}). The following tables describes which properties, methods and events are removed and which are replaced with similar equivalents.
+The TrackBar is converted to [RadTrackBar]({%slug winforms/track-and-status-controls/trackbar%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

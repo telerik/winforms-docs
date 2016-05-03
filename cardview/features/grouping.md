@@ -10,7 +10,7 @@ position: 1
 
 # Grouping
 
-__RadCardView__ allows grouping of its __CardViewItems__ and it can be enabled by using the __EnableFiltering__ property of the control. An example with custom grouping is demonstrated in the __Populating Data Programmatically__ section of the  [Unbound Mode](%slug winforms/cardview/populating-with-data/unbound-mode%) article.
+__RadCardView__ allows grouping of its __CardViewItems__ and it can be enabled by using the __EnableGrouping__ property of the control. An example with custom grouping is demonstrated in the __Populating Data Programmatically__ section of the  [Unbound Mode](%slug winforms/cardview/populating-with-data/unbound-mode%) article.
 
 #### Enable Grouping
 

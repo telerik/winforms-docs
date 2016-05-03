@@ -32,7 +32,7 @@ This article will guide you through the process of converting the Microsoft Wind
 
     ![winforms-converter-step-by-step-tutorial003](images/winforms-converter-step-by-step-tutorial003.png)
 
-    At this step you can compare the old and the converted files. To do that just click the __`What's Changed`__ link in the file list. This will open the the files tabs in Visual Studio and you will be able to review the changed code.
+    At this step you can compare the old and the converted files. To do that just click the __`What's Changed`__ link in the file list. This will open the files tabs in Visual Studio and you will be able to review the changed code.
     
     ![winforms-converter-step-by-step-tutorial004](images/winforms-converter-step-by-step-tutorial004.png)
 
@@ -43,7 +43,7 @@ This article will guide you through the process of converting the Microsoft Wind
 5. The final step is to resolve any compile time errors. There are properties and methods which do not have analogs in our implementation. Since the converter does not remove the code for these, you will get a compile time error:
     ![winforms-converter-step-by-step-tutorial006](images/winforms-converter-step-by-step-tutorial006.png)
 
->note After the conversion process is completed you should check if all existing functionality is working as before.
+>note After the conversion process is completed, you should check if all existing functionality is working as before.
 
 ## See Also
 

@@ -10,7 +10,7 @@ position: 1
 
 # Label
 
-The Label is converted to [RadLabel]({%slug winforms/panels-and-labels/label%}). The following tables describes which properties, methods and events are removed and which are replaced with similar equivalents.
+The Label is converted to [RadLabel]({%slug winforms/panels-and-labels/label%}). The following table describes which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

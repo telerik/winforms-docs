@@ -10,7 +10,7 @@ position: 2
 
 # Requirements
 
-The following article list what is required in order to be able to use the controls converter.
+The following article lists what is required in order to be able to use the controls converter.
 
 * __Visual Studio 2015 Update 2__
  

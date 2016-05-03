@@ -10,7 +10,7 @@ position: 1
 
 # NumericUpDown
 
-The NumericUpDown control in your application will be converted to [RadSpinEditor]({%slug winforms/editors/spineditor%}). The following tables describes which properties and methods are removed and which are replaced with similar equivalents.
+The NumericUpDown control in your application will be converted to [RadSpinEditor]({%slug winforms/editors/spineditor%}). The following tables describe which properties and methods are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

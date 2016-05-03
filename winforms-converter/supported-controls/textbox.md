@@ -10,7 +10,7 @@ position: 1
 
 # TextBox
 
-The TextBoxes in your application will be converted to [RadTextBox]({%slug winforms/editors/textbox%}). The following table describes which properties, methods and events are removed and which are replaced with similar equivalents.
+The TextBoxes in your application will be converted to [RadTextBox]({%slug winforms/editors/textbox%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|

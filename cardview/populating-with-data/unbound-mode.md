@@ -12,12 +12,12 @@ position: 1
 
 ## Design Time Adding Items
 
-Unbound data cane be populated in the Visual Studio designer by using the __Edit Columns__ and __Edit Items__ groups of the control's Smart Tag. The value of the label is determined by the __HeaderText__ property of the column. Each of the added items exposes a __SubItems__ collection which can be filled with sting data corresponding to each of the columns. The short video below sets up the control with one __CardViewItem__ having four columns and four editor values.
+Unbound data can be populated in the Visual Studio designer by using the __Edit Columns__ and __Edit Items__ groups of the control's Smart Tag. The value of the label is determined by the __HeaderText__ property of the column. Each of the added items exposes a __SubItems__ collection which can be filled with string data corresponding to each of the columns. The short video below sets up the control with one __CardViewItem__ having four columns and four editor values.
 
 >caption Fig. 1: Add Items at Design Time
 ![radcardview-populating-with-data 001](images/radcardview-populating-with-data002.gif)
 
-After you run the application the result should be similar to the following image.
+After you run the application, the result should be similar to the following image.
 
 >caption Fig. 2: Added Items at Design Time
 ![radcardview-populating-with-data 001](images/radcardview-populating-with-data003.png)

@@ -10,11 +10,11 @@ position: 3
 
 # Getting Started
 
-The example below demonstrates setting up __RadCardView__ to display data form the *Northwind* database.
+The example below demonstrates setting up __RadCardView__ to display data from the *Northwind* database.
 
 ## Setting up the Form 
 
-1. Create a new __Windows Application__ project.
+1. Create a new __Windows Forms Application__ project.
             
 1. Drop a __RadCardView__ control on the form.
             
@@ -48,7 +48,7 @@ The example below demonstrates setting up __RadCardView__ to display data form t
 1. In __Choose Database Objects__ page of the dialog, select the *Employees* table
 ![radcardview-getting-started 003](images/radcardview-getting-started003.png)
 
-1. Now __RadCardView__ is bound to the *Employees* table from the *Northwind* database and should look like this screen shot below: 
+1. Now, __RadCardView__ is bound to the *Employees* table from the *Northwind* database and should look like this screen shot below: 
 ![grid-getting-started 005](images/radcardview-getting-started004.png)
 
 1. Press __F5__ to run the application.
