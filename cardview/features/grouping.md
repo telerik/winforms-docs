@@ -38,10 +38,8 @@ Once the grouping is enabled, we have to create a new __GroupDescriptor__ and as
 {{source=..\SamplesVB\CardView\CardViewFeatures.vb region=GroupDescriptor}} 
 
 ````C#
-GroupDescriptor groupByAddress = new GroupDescriptor(new SortDescriptor[] 
-                                                    {
-                                                      new SortDescriptor("Address", ListSortDirection.Descending), 
-                                                    });
+GroupDescriptor groupByAddress = new GroupDescriptor(new SortDescriptor[] {
+     new SortDescriptor("Address", ListSortDirection.Descending),});
 this.radCardView1.GroupDescriptors.Add(groupByAddress);
 
 ````
