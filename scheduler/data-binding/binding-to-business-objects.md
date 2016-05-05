@@ -445,7 +445,6 @@ for (int i = 0; i < 5; i++)
     resource.Name = "Resource " + i;
     resources.Add(resource);
 }
-
 ResourceMappingInfo resourceMappingInfo = new ResourceMappingInfo();
 resourceMappingInfo.Name = "Name";
 resourceMappingInfo.Id = "Id";
@@ -454,19 +453,18 @@ dataSource.ResourceProvider.DataSource = resources;
 
 ````
 ````VB.NET
- Dim resources As New BindingList(Of CustomResource)()
- For i As Integer = 0 To 4
-     Dim resource As New CustomResource()
-     resource.Id = i
-     resource.Name = "Resource " & i
-     resources.Add(resource)
- Next
-
- Dim resourceMappingInfo As New ResourceMappingInfo()
- resourceMappingInfo.Name = "Name"
- resourceMappingInfo.Id = "Id"
- dataSource.ResourceProvider.Mapping = resourceMappingInfo
- dataSource.ResourceProvider.DataSource = resources
+Dim resources As New BindingList(Of CustomResource)()
+For i As Integer = 0 To 4
+    Dim resource As New CustomResource()
+    resource.Id = i
+    resource.Name = "Resource " & i
+    resources.Add(resource)
+Next
+Dim resourceMappingInfo As New ResourceMappingInfo()
+resourceMappingInfo.Name = "Name"
+resourceMappingInfo.Id = "Id"
+dataSource.ResourceProvider.Mapping = resourceMappingInfo
+dataSource.ResourceProvider.DataSource = resources
 
 ````
 
@@ -484,9 +482,7 @@ To create a one-to-many relation between appointments and resources we need to a
 ````C#
 //other fields…
 private EventId resourceId;
-
 //other properties…
-
 public EventId ResourceId
 {
     get
@@ -507,7 +503,6 @@ public EventId ResourceId
 ````VB.NET
 'other fields…
 Private _resourceId As EventId
-
 'other properties…
 Public Property ResourceId() As EventId
     Get
@@ -647,8 +642,6 @@ appointmentMappingInfo.Resources = "Resources";
 
 ````
 ````VB.NET
-appointmentMappingInfo.Resources = "Resources"
-
 ````
 
 {{endregion}} 
