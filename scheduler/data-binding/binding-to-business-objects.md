@@ -635,13 +635,15 @@ End Property
 In the __AppointmentMappingInfo__ settings the __ResourceId__ property should be left unset and the __Resources__ property should be set with the name of the collection:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=ManyToMany1}} 
-{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.vb region=ManyToMany1}} 
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=ManyToMany1}} 
 
 ````C#
 appointmentMappingInfo.Resources = "Resources";
 
 ````
 ````VB.NET
+appointmentMappingInfo.Resources = "Resources"
+
 ````
 
 {{endregion}} 
