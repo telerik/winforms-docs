@@ -437,41 +437,36 @@ Now we need to bind the __ResourceProvider__ of __SchedulerBindingDataSource__ t
 {{source=..\SamplesVB\Scheduler\DataBinding\BindingToBusinessObjects.vb region=bind_the_resource_provider}} 
 
 ````C#
-//other fields…
-private List<EventId> resources = new List<EventId>();
-//other properties…
-public List<EventId> Resources
+BindingList<CustomResource> resources = new BindingList<CustomResource>();
+for (int i = 0; i < 5; i++)
 {
-    get
-    {
-        return this.resources;
-    }
-    set
-    {
-        if (this.resources != value)
-        {
-            this.resources = value;
-            this.OnPropertyChanged("Resources");
-        }
-    }
+    CustomResource resource = new CustomResource();
+    resource.Id = i;
+    resource.Name = "Resource " + i;
+    resources.Add(resource);
 }
+
+ResourceMappingInfo resourceMappingInfo = new ResourceMappingInfo();
+resourceMappingInfo.Name = "Name";
+resourceMappingInfo.Id = "Id";
+dataSource.ResourceProvider.Mapping = resourceMappingInfo;
+dataSource.ResourceProvider.DataSource = resources;
 
 ````
 ````VB.NET
-'other fields…
-Private _resources As New List(Of EventId)
-'other properties…
-Public Property Resources() As List(Of EventId)
-    Get
-        Return Me._resources
-    End Get
-    Set(value As List(Of EventId))
-        If Not Me._resources.Equals(value) Then
-            Me._resources = value
-            Me.OnPropertyChanged("Resources")
-        End If
-    End Set
-End Property
+ Dim resources As New BindingList(Of CustomResource)()
+ For i As Integer = 0 To 4
+     Dim resource As New CustomResource()
+     resource.Id = i
+     resource.Name = "Resource " & i
+     resources.Add(resource)
+ Next
+
+ Dim resourceMappingInfo As New ResourceMappingInfo()
+ resourceMappingInfo.Name = "Name"
+ resourceMappingInfo.Id = "Id"
+ dataSource.ResourceProvider.Mapping = resourceMappingInfo
+ dataSource.ResourceProvider.DataSource = resources
 
 ````
 
@@ -488,20 +483,22 @@ To create a one-to-many relation between appointments and resources we need to a
 
 ````C#
 //other fields…
-private List<EventId> resources = new List<EventId>();
+private EventId resourceId;
+
 //other properties…
-public List<EventId> Resources
+
+public EventId ResourceId
 {
     get
     {
-        return this.resources;
+        return this.resourceId;
     }
     set
     {
-        if (this.resources != value)
+        if (this.resourceId != value)
         {
-            this.resources = value;
-            this.OnPropertyChanged("Resources");
+            this.resourceId = value;
+            this.OnPropertyChanged("ResourceId");
         }
     }
 }
@@ -509,16 +506,17 @@ public List<EventId> Resources
 ````
 ````VB.NET
 'other fields…
-Private _resources As New List(Of EventId)
+Private _resourceId As EventId
+
 'other properties…
-Public Property Resources() As List(Of EventId)
+Public Property ResourceId() As EventId
     Get
-        Return Me._resources
+        Return Me._resourceId
     End Get
-    Set(value As List(Of EventId))
-        If Not Me._resources.Equals(value) Then
-            Me._resources = value
-            Me.OnPropertyChanged("Resources")
+    Set(value As EventId)
+        If Not Object.Equals(Me._resourceId, value) Then
+            Me._resourceId = value
+            Me.OnPropertyChanged("ResourceId")
         End If
     End Set
 End Property
@@ -642,25 +640,14 @@ End Property
 In the __AppointmentMappingInfo__ settings the __ResourceId__ property should be left unset and the __Resources__ property should be set with the name of the collection:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.cs region=ManyToMany1}} 
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToBusinessObjects.vb region=ManyToMany1}} 
+
 ````C#
-'other fields…
-Private _resources As New List(Of EventId)
-'other properties…
-Public Property Resources() As List(Of EventId)
-    Get
-        Return Me._resources
-    End Get
-    Set(value As List(Of EventId))
-        If Not Me._resources.Equals(value) Then
-            Me._resources = value
-            Me.OnPropertyChanged("Resources")
-        End If
-    End Set
-End Property
+appointmentMappingInfo.Resources = "Resources";
 
 ````
 ````VB.NET
-appointmentMappingInfo.Resources = "Resources";
+appointmentMappingInfo.Resources = "Resources"
 
 ````
 
