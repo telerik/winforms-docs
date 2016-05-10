@@ -1,0 +1,56 @@
+            <div id="feedback-section">
+                <script src="https://bs-static.cdn.telerik.com/documentation/feedback/latest/feedback.js"></script>
+                <span id="popupNotification"></span>
+                <div id="feedback-menu-container">
+                    <div id="helpful-buttons-container">
+                        Helpful?
+                        <button id="yesButton">Yes</button>
+                        <button id="noButton">No</button>
+                    </div>
+                    <div id="feedback-submitted-container">
+                        Thank you for your feedback!
+                    </div>
+                    <div id="additional-feedback-button">Give additional feedback</div>
+                </div>
+                <div id="feedback-window-container">
+                    <div id="feedback-form-window" style="background-color: white;">
+                        <p style="font-weight: bold; font-size: 20px;">Give article feedback</p>
+                        <p>Tell us how we can improve the information</p>
+                        <span id="feedback-form-popup-container"></span>
+                        <form id="feedback-form">
+                            <input id="hidden-sheet-id" type="hidden" value="{{site.ff-sheet-id}}">
+                            <label>
+                                <input type="checkbox" value="outdated-sample"
+                                       data-bind="checked: outdatedSample"/>
+                                Code samples are inaccurate/outdated.
+                            </label>
+                            <label>
+                                <input type="checkbox" value="wrong-information"
+                                       data-bind="checked: wrongInformation"/>
+                                I expected to find other information.
+                            </label>
+                            <label>
+                                <input type="checkbox" value="insufficient-information"
+                                       data-bind="checked: insufficientInformation"/>
+                                I expected to find more information.
+                            </label>
+                            <label>
+                                <input type="checkbox" value="text-errors" data-bind="checked: textErrors"/>
+                                There are typos / broken links / broken page elements.
+                            </label>
+                            <label>
+                                <input type="checkbox" value="inaccurate-content"
+                                       data-bind="checked: inaccurateContent"/>
+                                Content is inaccurate / outdated.
+                            </label>
+                                <textarea id="feedback-text-input"
+                                          placeholder="Enter details or unlisted feedback"
+                                          data-bind="value: textFeedback"
+                                          style="height: 40px; width: 140px;"></textarea>
+                            <input type="email" placeholder="email (optional)" data-email-msg="Email format is not valid"  data-bind="value: email"/>
+                            <button>Send feedback</button>
+                        </form>
+                        <button id="form-close-button">Cancel</button>
+                    </div>
+                </div>
+            </div>

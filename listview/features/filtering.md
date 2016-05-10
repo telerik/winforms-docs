@@ -15,7 +15,7 @@ previous_url: listview-features-filtering
 
 ## 
 
-RadListView allows filtering operations in all views. To enable filtering operations use the __EnableFiltering__ property of the control: 
+__RadListView__ allows filtering operations in all views. To enable filtering operations use the __EnableFiltering__ property of the control: 
 
 #### Enable filtering
 

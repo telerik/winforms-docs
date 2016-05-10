@@ -55,9 +55,16 @@ public class CustomRowElement : GridDataRowElement
             cellElement.Detach();
             this.Children.Remove(cellElement);
         }
+        SizeF elementSize = this.TableElement.RowScroller.ElementProvider.GetElementSize(this.RowInfo);
+        int oldHeight = RowInfo.Height == -1 ? (int)elementSize.Height : RowInfo.Height;
         this.RowInfo.SuspendPropertyNotifications();
-        this.RowInfo.Height = (int)Math.Max(baseSize.Height, desiredSize.Height);
+        this.RowInfo.Height = (int)desiredSize.Height;
         this.RowInfo.ResumePropertyNotifications();
+        if (!this.RowInfo.IsPinned)
+        {
+            int delta = RowInfo.Height - oldHeight;
+            TableElement.RowScroller.UpdateScrollRange(TableElement.RowScroller.Scrollbar.Maximum + delta, false);
+        }
         baseSize.Height = this.RowInfo.Height;
         return baseSize;
     }
@@ -76,47 +83,53 @@ public class CustomRowElement : GridDataRowElement
 
 ````
 ````VB.NET
-    Public Class CustomRowElement
-        Inherits GridDataRowElement
-        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-            Get
-                Return GetType(GridDataRowElement)
-            End Get
-        End Property
-        Protected Overrides Function MeasureOverride(ByVal availableSize As SizeF) As SizeF
-            Dim baseSize As SizeF = MyBase.MeasureOverride(availableSize)
-            Dim provider As New CellElementProvider(Me.TableElement)
-            Dim desiredSize As SizeF = SizeF.Empty
-            For Each column As GridViewColumn In Me.ViewTemplate.Columns
-                If Me.IsColumnVisible(column) Then
-                    Continue For
+Public Class CustomRowElement
+    Inherits GridDataRowElement
+    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+        Get
+            Return GetType(GridDataRowElement)
+        End Get
+    End Property
+    Protected Overrides Function MeasureOverride(ByVal availableSize As SizeF) As SizeF
+        Dim baseSize As SizeF = MyBase.MeasureOverride(availableSize)
+        Dim provider As New CellElementProvider(Me.TableElement)
+        Dim desiredSize As SizeF = SizeF.Empty
+        For Each column As GridViewColumn In Me.ViewTemplate.Columns
+            If Me.IsColumnVisible(column) Then
+                Continue For
+            End If
+            Dim cellElement As GridDataCellElement = TryCast(provider.GetElement(column, Me), GridDataCellElement)
+            Me.Children.Add(cellElement)
+            If cellElement IsNot Nothing Then
+                cellElement.Measure(New SizeF(column.Width, Single.PositiveInfinity))
+                If desiredSize.Height < cellElement.DesiredSize.Height Then
+                    desiredSize.Height = cellElement.DesiredSize.Height
                 End If
-                Dim cellElement As GridDataCellElement = TryCast(provider.GetElement(column, Me), GridDataCellElement)
-                Me.Children.Add(cellElement)
-                If cellElement IsNot Nothing Then
-                    cellElement.Measure(New SizeF(column.Width, Single.PositiveInfinity))
-                    If desiredSize.Height < cellElement.DesiredSize.Height Then
-                        desiredSize.Height = cellElement.DesiredSize.Height
-                    End If
-                End If
-                cellElement.Detach()
-                Me.Children.Remove(cellElement)
-            Next column
-            Me.RowInfo.SuspendPropertyNotifications()
-            Me.RowInfo.Height = CInt(Math.Max(baseSize.Height, desiredSize.Height))
-            Me.RowInfo.ResumePropertyNotifications()
-            baseSize.Height = Me.RowInfo.Height
-            Return baseSize
-        End Function
-        Private Function IsColumnVisible(ByVal column As GridViewColumn) As Boolean
-            For Each cellElement As GridCellElement In Me.VisualCells
-                If cellElement.ColumnInfo Is column Then
-                    Return True
-                End If
-            Next cellElement
-            Return False
-        End Function
-    End Class
+            End If
+            cellElement.Detach()
+            Me.Children.Remove(cellElement)
+        Next column
+        Dim elementSize As SizeF = Me.TableElement.RowScroller.ElementProvider.GetElementSize(Me.RowInfo)
+        Dim oldHeight As Integer = If(RowInfo.Height = -1, CInt(elementSize.Height), RowInfo.Height)
+        Me.RowInfo.SuspendPropertyNotifications()
+        Me.RowInfo.Height = CInt(desiredSize.Height)
+        Me.RowInfo.ResumePropertyNotifications()
+        If Not Me.RowInfo.IsPinned Then
+            Dim delta As Integer = RowInfo.Height - oldHeight
+            TableElement.RowScroller.UpdateScrollRange(TableElement.RowScroller.Scrollbar.Maximum + delta, False)
+        End If
+        baseSize.Height = Me.RowInfo.Height
+        Return baseSize
+    End Function
+    Private Function IsColumnVisible(ByVal column As GridViewColumn) As Boolean
+        For Each cellElement As GridCellElement In Me.VisualCells
+            If cellElement.ColumnInfo Is column Then
+                Return True
+            End If
+        Next cellElement
+        Return False
+    End Function
+End Class
 
 ```` 
 
@@ -163,9 +176,16 @@ public class CustomRowElement : GridDataRowElement
             cellElement.Detach();
             this.Children.Remove(cellElement);
         }
+        SizeF elementSize = this.TableElement.RowScroller.ElementProvider.GetElementSize(this.RowInfo);
+        int oldHeight = RowInfo.Height == -1 ? (int)elementSize.Height : RowInfo.Height;
         this.RowInfo.SuspendPropertyNotifications();
-        this.RowInfo.Height = (int)Math.Max(baseSize.Height, desiredSize.Height);
+        this.RowInfo.Height = (int)desiredSize.Height;
         this.RowInfo.ResumePropertyNotifications();
+        if (!this.RowInfo.IsPinned)
+        {
+            int delta = RowInfo.Height - oldHeight;
+            TableElement.RowScroller.UpdateScrollRange(TableElement.RowScroller.Scrollbar.Maximum + delta, false);
+        }
         baseSize.Height = this.RowInfo.Height;
         return baseSize;
     }
@@ -184,47 +204,53 @@ public class CustomRowElement : GridDataRowElement
 
 ````
 ````VB.NET
-    Public Class CustomRowElement
-        Inherits GridDataRowElement
-        Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
-            Get
-                Return GetType(GridDataRowElement)
-            End Get
-        End Property
-        Protected Overrides Function MeasureOverride(ByVal availableSize As SizeF) As SizeF
-            Dim baseSize As SizeF = MyBase.MeasureOverride(availableSize)
-            Dim provider As New CellElementProvider(Me.TableElement)
-            Dim desiredSize As SizeF = SizeF.Empty
-            For Each column As GridViewColumn In Me.ViewTemplate.Columns
-                If Me.IsColumnVisible(column) Then
-                    Continue For
+Public Class CustomRowElement
+    Inherits GridDataRowElement
+    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+        Get
+            Return GetType(GridDataRowElement)
+        End Get
+    End Property
+    Protected Overrides Function MeasureOverride(ByVal availableSize As SizeF) As SizeF
+        Dim baseSize As SizeF = MyBase.MeasureOverride(availableSize)
+        Dim provider As New CellElementProvider(Me.TableElement)
+        Dim desiredSize As SizeF = SizeF.Empty
+        For Each column As GridViewColumn In Me.ViewTemplate.Columns
+            If Me.IsColumnVisible(column) Then
+                Continue For
+            End If
+            Dim cellElement As GridDataCellElement = TryCast(provider.GetElement(column, Me), GridDataCellElement)
+            Me.Children.Add(cellElement)
+            If cellElement IsNot Nothing Then
+                cellElement.Measure(New SizeF(column.Width, Single.PositiveInfinity))
+                If desiredSize.Height < cellElement.DesiredSize.Height Then
+                    desiredSize.Height = cellElement.DesiredSize.Height
                 End If
-                Dim cellElement As GridDataCellElement = TryCast(provider.GetElement(column, Me), GridDataCellElement)
-                Me.Children.Add(cellElement)
-                If cellElement IsNot Nothing Then
-                    cellElement.Measure(New SizeF(column.Width, Single.PositiveInfinity))
-                    If desiredSize.Height < cellElement.DesiredSize.Height Then
-                        desiredSize.Height = cellElement.DesiredSize.Height
-                    End If
-                End If
-                cellElement.Detach()
-                Me.Children.Remove(cellElement)
-            Next column
-            Me.RowInfo.SuspendPropertyNotifications()
-            Me.RowInfo.Height = CInt(Math.Max(baseSize.Height, desiredSize.Height))
-            Me.RowInfo.ResumePropertyNotifications()
-            baseSize.Height = Me.RowInfo.Height
-            Return baseSize
-        End Function
-        Private Function IsColumnVisible(ByVal column As GridViewColumn) As Boolean
-            For Each cellElement As GridCellElement In Me.VisualCells
-                If cellElement.ColumnInfo Is column Then
-                    Return True
-                End If
-            Next cellElement
-            Return False
-        End Function
-    End Class
+            End If
+            cellElement.Detach()
+            Me.Children.Remove(cellElement)
+        Next column
+        Dim elementSize As SizeF = Me.TableElement.RowScroller.ElementProvider.GetElementSize(Me.RowInfo)
+        Dim oldHeight As Integer = If(RowInfo.Height = -1, CInt(elementSize.Height), RowInfo.Height)
+        Me.RowInfo.SuspendPropertyNotifications()
+        Me.RowInfo.Height = CInt(desiredSize.Height)
+        Me.RowInfo.ResumePropertyNotifications()
+        If Not Me.RowInfo.IsPinned Then
+            Dim delta As Integer = RowInfo.Height - oldHeight
+            TableElement.RowScroller.UpdateScrollRange(TableElement.RowScroller.Scrollbar.Maximum + delta, False)
+        End If
+        baseSize.Height = Me.RowInfo.Height
+        Return baseSize
+    End Function
+    Private Function IsColumnVisible(ByVal column As GridViewColumn) As Boolean
+        For Each cellElement As GridCellElement In Me.VisualCells
+            If cellElement.ColumnInfo Is column Then
+                Return True
+            End If
+        Next cellElement
+        Return False
+    End Function
+End Class
 
 ```` 
 

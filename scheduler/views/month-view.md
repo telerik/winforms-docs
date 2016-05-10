@@ -299,19 +299,17 @@ monthView.RangeEndDate = DateTime.Today.AddYears(1)
 
 RadScheduler handles the overflown cells in month view in two ways. The first one is by displaying a cell overflow button at the bottom of each cell that has more appointments than it can display. Clicking on this button opens a DayView set to the same date the cell represents. This way the user can scroll through and preview all appointments. The second way to handle overflown cells is by displaying a scrollbar at the end of each row if this row contains overflown cells. Using the scrollbar the end user can scroll directly through the appointments. Both of these features can be disabled or enabled using the following properties:
 
-{{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=columnRowResize}} 
-{{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=columnRowResize}} 
+{{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=overflow}} 
+{{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=overflow}} 
 
 ````C#
-SchedulerMonthViewElement monthViewElement = (SchedulerMonthViewElement)this.radScheduler1.ViewElement;
-monthViewElement.SetRowHeight(1, 2);
-monthViewElement.SetColumnWidth(1, 2);
+monthView.EnableCellOverflowButton = true;
+monthView.EnableAppointmentsScrolling = true;
 
 ````
 ````VB.NET
-Dim monthViewElement As SchedulerMonthViewElement = DirectCast(Me.RadScheduler1.ViewElement, SchedulerMonthViewElement)
-monthViewElement.SetRowHeight(1, 2)
-monthViewElement.SetColumnWidth(1, 2)
+monthView.EnableCellOverflowButton = True
+monthView.EnableAppointmentsScrolling = True
 
 ````
 

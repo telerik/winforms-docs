@@ -138,5 +138,5 @@ InitializeComponent()
 
 ![richtexteditor-localization 002](images/richtexteditor-localization002.png)
 
-You can download a xml file that contains all the currently used strings from here:
-          [Strings file](http://www.telerik.com/docs/default-source/ui-for-winforms/richtextboxstrings.zip?sfvrsn=2)
+>important You can download a xml file that contains all the currently used strings from here:           [Strings file](http://www.telerik.com/docs/default-source/ui-for-winforms/richtextboxstrings.zip?sfvrsn=2)
+>

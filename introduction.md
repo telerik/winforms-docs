@@ -5,7 +5,7 @@ description: Telerik UI for WinForms includes over 110 UI controls that you can 
 slug: winforms/overview
 tags: overview
 published: True
-position: 1
+position: 0
 previous_url: overview
 ---
 
@@ -32,6 +32,7 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 * [VirtualGrid]({%slug winforms/virtualgrid%})
 * [ListControl]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol%})
 * [ListView]({%slug winforms/listview%})
+* [CardView]({%slug winforms/cardview/overview%})
 * [LinearGauge]({%slug winforms/gauges/lineargauge%})
 * [Menu]({%slug winforms/menus/menu%})
 * [MultiColumnComboBox]({%slug winforms/multicolumncombobox%})

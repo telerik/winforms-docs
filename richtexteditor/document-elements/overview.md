@@ -10,8 +10,6 @@ previous_url: richtexteditor-document-elements
 ---
 
 # Document Elements
- 
-## 
 
 There is an element hierarchy which you must consider when building your rich content manually. To become familiar with it, take a look at the diagram below.![richtexteditor-document-elements-elements-hierarchy 001](images/richtexteditor-document-elements-elements-hierarchy001.png)
 

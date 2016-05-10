@@ -1,7 +1,7 @@
 ---
 title: Indicating Focus
 page_title: Indicating Focus | UI for WinForms Documentation
-description: Indicating Focus
+description: RadButton indicates that it is focused by setting the AllowShowFocusCues property to true.
 slug: winforms/buttons/button/indicating-focus
 tags: indicating,focus
 published: True
@@ -15,7 +15,7 @@ previous_url: buttons-button-indicating-focus
 
 ## 
 
-RadButton has two ways to indicate that it is focused:
+__RadButton__ has two ways to indicate that it is focused:
 
 * Showing a thin dotted rectangular frame. This feature could be enabled by setting __AllowShowFocusCues__ property to *true* (the default value is *true*). The style of the frame cannot be customized. 
  

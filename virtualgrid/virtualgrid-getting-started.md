@@ -128,7 +128,7 @@ End Sub
 
 ### Using the virtual grid
 
-1\. To use the grid you should first specify the the count of columns and rows. In addition, you should subscribe to the __CellValueNeeded__ and __CellValuePushed__ events which are used for populating the grid with data and updating the data source when values are changed:
+1\. To use the grid you should first specify the count of columns and rows. In addition, you should subscribe to the __CellValueNeeded__ and __CellValuePushed__ events which are used for populating the grid with data and updating the data source when values are changed:
 
 {{source=..\SamplesCS\VirtualGrid\VirtualGridGettingStarted.cs region=InitGrid}} 
 {{source=..\SamplesVB\VirtualGrid\VirtualGridGettingStarted.vb region=InitGrid}}

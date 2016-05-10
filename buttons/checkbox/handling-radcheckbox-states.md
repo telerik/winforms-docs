@@ -1,11 +1,11 @@
 ---
 title: Handling RadCheckBox States
 page_title: Handling RadCheckBox States | UI for WinForms Documentation
-description: Handling RadCheckBox States
+description: RadCheckBox is designed to provide an interface element that can represent an On or Off state using a check mark.
 slug: winforms/buttons/checkbox/handling-radcheckbox-states
 tags: handling,radcheckbox,states
 published: True
-position: 1
+position: 5
 previous_url: buttons-checkbox-handling-radcheckbox-states
 ---
 
@@ -43,6 +43,6 @@ End Sub
 {{endregion}} 
 
 
->note Due to the specifics of the [simple data binding](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding(v=vs.110).aspx) we have introduced the __CheckChanging__ / __CheckChanged__ events together with the __CheckState__ property. These events and property provide the same functionality as the __ToggleStateChanged__ , __ToggleStateChanging__ and the __ToggleState__ property, but give you the ability to simple data bind the control.
+>note Due to the specifics of the [simple data binding](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding(v=vs.110).aspx) we have introduced the __CheckStateChanging__ / __CheckStateChanged__ events together with the __CheckState__ property. These events and property provide the same functionality as the __ToggleStateChanged__ , __ToggleStateChanging__ and the __ToggleState__ property, but give you the ability to simple data bind the control.
 >
 

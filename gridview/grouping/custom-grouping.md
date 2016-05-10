@@ -1,7 +1,7 @@
 ---
 title: Custom Grouping
 page_title: Custom Grouping | UI for WinForms Documentation
-description: Custom Grouping
+description: Custom grouping is a flexible mechanism for creating RadGridView groups by using custom logic. It has a higher priority than the applied GroupDescriptors (added either by code or by dragging columns to the group panel).
 slug: winforms/gridview/grouping/custom-grouping
 tags: custom,grouping
 published: True
@@ -40,6 +40,10 @@ The __CustomGrouping__ event is fired if custom grouping is enabled through the 
 * __Handled__ – defines whether the row is processed by the custom algorithm or by the applied group descriptors.
 
 The following example demonstrates how to handle the __CustomGrouping__ event to group the RadGridView rows by the values of the Country column creating groups only for predefined countries:
+
+>caption Fig.1 Custom Grouping
+
+![gridview-grouping-custom-grouping 001](images/gridview-grouping-custom-grouping001.png)
 
 {{source=..\SamplesCS\GridView\Grouping\CustomGrouping.cs region=usingCustomGrouping}} 
 {{source=..\SamplesVB\GridView\Grouping\CustomGrouping.vb region=usingCustomGrouping}} 
@@ -123,8 +127,78 @@ End Sub
 
 {{endregion}} 
 
+When __RadGridView__ is displaying date columns, it is a common requirement to perform grouping by certain part of the DateTime value. The example below will handle a scenario in which the date fields are grouped in year quarters.
 
-![gridview-grouping-custom-grouping 001](images/gridview-grouping-custom-grouping001.png)
+>caption Fig.2 DateTime Grouping Default Behavior
+
+![gridview-grouping-custom-grouping 001](images/gridview-grouping-custom-grouping003.png)
+
+>caption Fig.3 DateTime Grouping Custom Behavior
+
+![gridview-grouping-custom-grouping 001](images/gridview-grouping-custom-grouping004.png)
+
+{{source=..\SamplesCS\GridView\Grouping\CustomGroupingDateFields.cs region=CustomGrouping}} 
+{{source=..\SamplesVB\GridView\Grouping\CustomGroupingDateFields.vb region=CustomGrouping}} 
+
+````C#
+private void radGridView1_CustomGrouping(object sender, GridViewCustomGroupingEventArgs e)
+{
+    DateTime date = (DateTime)e.Row.Cells["Date"].Value;
+    e.GroupKey = date.Year + " " + this.GetQuarter(date);
+}
+private string GetQuarter(DateTime date)
+{
+    if (date.Month >= 0 && date.Month <= 3)
+    {
+        return "Q1";
+    }
+    else if (date.Month >= 4 && date.Month <= 6)
+    {
+        return "Q2";
+    }
+    else if (date.Month >= 7 && date.Month <= 9)
+    {
+        return "Q3";
+    }
+    else
+    {
+        return "Q4";
+    }
+}
+private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
+{
+    if (e.Value == null)
+    {
+        e.FormatString = e.Group.Key.ToString();
+    }
+}
+
+````
+````VB.NET
+Private Sub radGridView1_CustomGrouping(sender As Object, e As GridViewCustomGroupingEventArgs)
+    Dim [date] As DateTime = DirectCast(e.Row.Cells("Date").Value, DateTime)
+    e.GroupKey = Convert.ToString([date].Year) & " " & Me.GetQuarter([date])
+End Sub
+Private Function GetQuarter([date] As DateTime) As String
+    If [date].Month >= 0 AndAlso [date].Month <= 3 Then
+        Return "Q1"
+    ElseIf [date].Month >= 4 AndAlso [date].Month <= 6 Then
+        Return "Q2"
+    ElseIf [date].Month >= 7 AndAlso [date].Month <= 9 Then
+        Return "Q3"
+    Else
+        Return "Q4"
+    End If
+End Function
+Private Sub radGridView1_GroupSummaryEvaluate(sender As Object, e As GroupSummaryEvaluationEventArgs)
+    If e.Value Is Nothing Then
+        e.FormatString = e.Group.Key.ToString()
+    End If
+End Sub
+
+````
+
+{{endregion}} 
 
 ## Implementing grouping mechanism by using GroupPredicate
 
@@ -132,6 +206,10 @@ You can replace the grouping mechanism in RadGridView with a custom one by setti
         
 
 The following example demonstrates how to use a custom grouping mechanism in RadGridView to group the rows by the values of the ContactTitle column, creating groups only for the desired contact title categories:
+
+>caption Fig.4 Implementing GroupPredicate
+
+![gridview-grouping-custom-grouping 002](images/gridview-grouping-custom-grouping002.png)
 
 {{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=usingGroupPredicate}} 
 {{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=usingGroupPredicate}} 
@@ -252,7 +330,4 @@ End Sub
 
 ````
 
-{{endregion}} 
-
-
-![gridview-grouping-custom-grouping 002](images/gridview-grouping-custom-grouping002.png)
+{{endregion}}

@@ -5,7 +5,7 @@ description: DataBinding RadCheckBox
 slug: winforms/buttons/checkbox/databinding-radcheckbox
 tags: databinding,radcheckbox
 published: True
-position: 2
+position: 7
 previous_url: buttons-checkbox-radcheckbox-databinding
 ---
 

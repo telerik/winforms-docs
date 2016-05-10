@@ -5,7 +5,7 @@ description: Release Notes
 slug: winforms/release-notes
 tags: release,notes
 published: True
-position: 3
+position: 2
 ---
 
 # Release Notes
