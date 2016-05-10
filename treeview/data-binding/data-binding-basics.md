@@ -335,6 +335,62 @@ End Class
 
 {{endregion}} 
 
+{{source=..\SamplesCS\TreeView\DataBinding\Category.cs region=category}} 
+{{source=..\SamplesVB\TreeView\DataBinding\Category.vb region=category}} 
+
+````C#
+public class Category
+{
+    public Category(string name, List<Product> products)
+    {
+        _name = name;
+        _products = products;
+    }
+    private List<Product> _products;
+    private string _name;
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+    public List<Product> Products
+    {
+        get { return _products; }
+        set { _products = value; }
+    }
+}
+
+````
+````VB.NET
+Public Class Category
+    Public Sub New(ByVal name As String, ByVal products As List(Of Product))
+        _name = name
+        _products = products
+    End Sub
+    Private _products As List(Of Product)
+    Private _name As String
+    Public Property Name() As String
+        Get
+            Return _name
+        End Get
+        Set(ByVal value As String)
+            _name = value
+        End Set
+    End Property
+    Public Property Products() As List(Of Product)
+        Get
+            Return _products
+        End Get
+        Set(ByVal value As List(Of Product))
+            _products = value
+        End Set
+    End Property
+End Class
+
+````
+
+{{endregion}} 
+
 ## Binding check boxes
 
 Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify   the RadTreeView. __CheckedMember__ property. The following code snippet demonstrates how to setup hierarchical tree by using two separate DataTables:
