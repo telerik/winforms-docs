@@ -38,6 +38,9 @@ navigation:
     buttons/dropdownbutton:
         title: DropDownButton
         position: 2
+    buttons/dropdownbutton/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     buttons/radiobutton:
         title: RadioButton
         position: 3
