@@ -2,23 +2,29 @@
 title: Overview
 page_title: Shapes | UI for WinForms Documentation
 description: This article lists all the shapes supported in the Telerik UI for Winforms
-slug: winforms/telerik-presentation-framework/animations
-tags: animations
+slug: winforms/telerik-presentation-framework/shapes
+tags: shapes
 published: True
-position: 14
+position: 0
 ---
 
 # Shapes
 
 The following list shows all shapes currently included in the suite:
 
-*[DiamondShape]({%slug actual_slug%})
-*[DonutShape]({%slug actual_slug%})
-*[ElipseShape]({%slug actual_slug%})
-*[HeartShape]({%slug actual_slug%})
-*[GaugeShape]({%slug actual_slug%})
-*[MediaShape]({%slug actual_slug%})
-*[RoundRectShape]({%slug actual_slug%})
-*[StarShape]({%slug actual_slug%})
+* [DiamondShape]({%slug winforms/telerik-presentation-framework/diamond-shape%})
+
+* [DonutShape]({%slug winforms/telerik-presentation-framework/donut-shape%})
+
+* [ElipseShape]({%slug winforms/telerik-presentation-framework/ellipse-shape%})
+
+* [HeartShape]({%slug winforms/telerik-presentation-framework/heart-shape%})
+
+* [MediaShape]({%slug winforms/telerik-presentation-framework/media-shape%})
+
+* [RoundRectShape]({%slug winforms/telerik-presentation-framework/roundrect-shape%})
+
+* [StarShape]({%slug winforms/telerik-presentation-framework/star-shape%})
+
 
 
