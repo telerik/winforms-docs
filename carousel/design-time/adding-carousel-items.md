@@ -1,38 +1,34 @@
 ---
-title: Adding Carousel Items
-page_title: Adding Carousel Items | UI for WinForms Documentation
-description: Adding Carousel Items
-slug: winforms/carousel/design-time/adding-carousel-items
-tags: adding,carousel,items
+title: Smart Tag
+page_title: Smart Tag | UI for WinForms Documentation
+description: This article explain what you can do with the RadCarousel smart tag. 
+slug: winforms/carousel/design-time/smart-tag
+tags: adding,carousel,items,smart,tag
 published: True
 position: 0
 previous_url: carousel-design-time-adding-carousel-items
 ---
 
-# Adding Carousel Items
+# Smart Tag
 
+The Smart Tag for __RadCarousel__ lets you quickly access common tasks involved with managing items, customizing appearance or setting the theme.
 
+![carousel-smart-tag001](images/carousel-smart-tag001.png)
 
-## 
+* __Edit Items:__ Opens the __RadItem__ collection editor, in it you can add different types of __RadElements__: 
+    ![carousel-smart-tag002](images/carousel-smart-tag002.png)
 
-You can add carousel items using the Visual Studio designer. Open the __RadCarousel__ Smart Tag and choose Edit Items command.
+    You can add as many items as you want. Use the __Up__ and __Down__ buttons next to the items list to change the items order. 
 
+    Use the properties editor to set item-specific properties such as __ToolTip__, caption (__Text__ property), etc.
 
->caption 
+* __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.
 
-![carousel-design-time-adding-carousel-items 002](images/carousel-design-time-adding-carousel-items002.png)
+* __Edit UI elements:__ Opens a dialog that displays the __Element Hierarchy Editor.__ This editor lets you browse all the elements in the control.
 
+* __Theme Name:__ Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style at one time.
 
+* __Learning Center:__ Navigate to the Telerik help, code library projects or support forum.
 
-The __RadItem__ collection editor will open, where you can add different types of __RadElements__: 
-
-
->caption 
-
-![carousel-design-time-adding-carousel-items 001](images/carousel-design-time-adding-carousel-items001.png)
-
-You can add as many items as you want. Use the __Up__ and __Down__ buttons next to the items list to change the order of the items. 
-
-Use the properties editor to set item-specific properties such as __ToolTip__, caption (__Text__ property), etc.
-
+* __Search:__ Search the Telerik site for a given string.
 

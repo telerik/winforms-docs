@@ -15,26 +15,40 @@ To create a custom shape you need to inherit the `ElementShape` class and overri
 {{source=..\SamplesCS\TPF\Shapes\ShapesCode.cs region=CustomShape}}  
 {{source=..\SamplesVB\TPF\Shapes\ShapesCode.vb region=CustomShape}}
 ````C#
-hape
-    public class CrossShape : ElementShape
+public class CrossShape : ElementShape
+{
+    public CrossShape()
     {
-        public CrossShape()
-        {
-            this.Width = 20;
-        }
-        public override GraphicsPath CreatePath(Rectangle bounds)
-        {
-            GraphicsPath path = new GraphicsPath();
-            path.AddRectangle(new RectangleF(bounds.X, (bounds.Y + bounds.Height / 2) - Width / 2, bounds.Width, Width));
-            path.AddRectangle(new RectangleF((bounds.X + bounds.Width / 2) - Width / 2, bounds.Y, Width, bounds.Height));
-            path.CloseFigure();
-            return path;
-        }
-        public int Width { get; set; }
+        this.Width = 20;
     }
+    public override GraphicsPath CreatePath(Rectangle bounds)
+    {
+        GraphicsPath path = new GraphicsPath();
+        path.AddRectangle(new RectangleF(bounds.X, (bounds.Y + bounds.Height / 2) - Width / 2, bounds.Width, Width));
+        path.AddRectangle(new RectangleF((bounds.X + bounds.Width / 2) - Width / 2, bounds.Y, Width, bounds.Height));
+        path.CloseFigure();
+        return path;
+    }
+    public int Width { get; set; }
+}
 
 ````
 ````VB.NET
+Public Class CrossShape
+    Inherits ElementShape
+    Public Sub New()
+        Me.Width = 20
+    End Sub
+    Public Overrides Function CreatePath(ByVal bounds As Rectangle) As GraphicsPath
+        Dim path As New GraphicsPath()
+        path.AddRectangle(New RectangleF(bounds.X, (bounds.Y + bounds.Height \ 2) - Width \ 2, bounds.Width, Width))
+        path.AddRectangle(New RectangleF((bounds.X + bounds.Width \ 2) - Width \ 2, bounds.Y, Width, bounds.Height))
+        path.CloseFigure()
+        Return path
+    End Function
+    Public Property Width() As Integer
+End Class
+
 ````  
  
 {{endregion}} 

@@ -12,10 +12,7 @@ previous_url: carousel-design-time-setting-ellipse-path-design-time
 # Setting Ellipse Path Design-time
 
 
-
-## 
-
-You can set the bezier path for the carousel using the Visual Studio designer. 
+You can set the ellipse path for the carousel using the Visual Studio designer. 
 
 1. Drag the __RadCarousel__ control in your form. 
 
