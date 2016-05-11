@@ -9,7 +9,7 @@ position: 0
 previous_url: overview
 ---
 
-# Telerik UI for WinForms
+# Telerik UI for WinForms by Progress
 
 ## Performance you demand, UI you can't believe
 
