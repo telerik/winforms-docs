@@ -45,11 +45,11 @@ this.radCardView1.DataSource = dataSource;
 
 ````
 ````VB.NET
-Dim dataSource As New BindingList(Of Person)() From {
-    New Person("1", "Nancy Davolio", "507 - 20th Ave. E.Apt. 2A", DateTime.Parse("12/8/1948")),
-    New Person("2", "Andrew Fuller", "908 W. Capital Way", DateTime.Parse("2/19/1952")),
-    New Person("3", "Janet Leverling", "722 Moss Bay Blvd.", DateTime.Parse("8/30/1963")),
-    New Person("4", "Margaret Peacock", "110 Old Redmond Rd.", DateTime.Parse("9/19/1937"))
+Dim dataSource As New BindingList(Of CardViewModel)() From {
+    New CardViewModel("1", "Nancy Davolio", "507 - 20th Ave. E.Apt. 2A", DateTime.Parse("12/8/1948")),
+    New CardViewModel("2", "Andrew Fuller", "908 W. Capital Way", DateTime.Parse("2/19/1952")),
+    New CardViewModel("3", "Janet Leverling", "722 Moss Bay Blvd.", DateTime.Parse("8/30/1963")),
+    New CardViewModel("4", "Margaret Peacock", "110 Old Redmond Rd.", DateTime.Parse("9/19/1937"))
 }
 Me.RadCardView1.DataSource = dataSource
 
@@ -149,7 +149,7 @@ public class CardViewModel : INotifyPropertyChanged
 
 ````
 ````VB.NET
-Public Class Person
+Public Class CardViewModel
     Implements INotifyPropertyChanged
     Private m_id As String
     Private m_name As String
