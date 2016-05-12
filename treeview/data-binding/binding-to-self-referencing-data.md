@@ -173,7 +173,7 @@ As a result we get the hierarchy of nodes shown below:
 
 ## Binding check boxes
 
-Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify the RadTreeView.__CheckedMember__ property. The following code snippet demonstrates how to setup a self referencing hierarchy in the tree and bind the check boxes:
+Since R3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify the RadTreeView.__CheckedMember__ property. The following code snippet demonstrates how to setup a self referencing hierarchy in the tree and bind the check boxes:
 
 ![treeview-data-binding-binding-to-self-referencing-data 002](images/treeview-data-binding-binding-to-self-referencing-data002.png)
 

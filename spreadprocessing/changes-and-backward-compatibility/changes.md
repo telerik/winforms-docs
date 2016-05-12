@@ -13,7 +13,7 @@ previous_url: spreadprocessing-changes
 
 This topic will summarize the new functionality introduced in the library with helpful links to places in the documentation that describe in greater detail the new functionality and how it can be used.
 
-## What's New in 2014 Q3
+## What's New in 2014 R3
 
 __What's New__
 
@@ -67,7 +67,7 @@ __What's Fixed__
 * The currency number format is not exported correctly in cultures that contain “.” or “,” in the currency symbol, e.g. Bulgarian and Serbian.
         
 
-## What's New in 2014 Q2
+## What's New in 2014 R2
 
 * [Filtering]({%slug winforms/spreadprocessing/features/filtering%})
 

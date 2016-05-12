@@ -15,7 +15,7 @@ previous_url: scheduler-data-binding-working-with-exceptions
 
 |RELATED BLOGS|
 | ---- | 
-|RadScheduler for WinForms data binding and occurrence exceptions. The big new feature for Q3 2009 release in RadScheduler for WinForms has got to be the resource grouping functionality. There are, however, numerous other improvements that also deserve attention, such as data binding. Some of you may remember that in its first release the WinForms Scheduler had just basic support for binding to appointment data. Later we extended this functionality to support storing associations to resources in the data source. [Read full post ...](http://blogs.telerik.com/winformsteam/posts/09-11-04/radscheduler_for_winforms_data_binding_and_occurrence_exceptions.aspx)|
+|RadScheduler for WinForms data binding and occurrence exceptions. The big new feature for R3 2009 release in RadScheduler for WinForms has got to be the resource grouping functionality. There are, however, numerous other improvements that also deserve attention, such as data binding. Some of you may remember that in its first release the WinForms Scheduler had just basic support for binding to appointment data. Later we extended this functionality to support storing associations to resources in the data source. [Read full post ...](http://blogs.telerik.com/winformsteam/posts/09-11-04/radscheduler_for_winforms_data_binding_and_occurrence_exceptions.aspx)|
 
 An __exception__, in RadScheduler terms, is an appointment instance that does not fully conform to the rule that created it. They are designed to handle the occurrence of exceptions, or special conditions that change the normal flow of the appointment execution.
 

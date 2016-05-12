@@ -14,11 +14,11 @@ previous_url: dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Converting from RadComboBox to RadDropDownList](http://tv.telerik.com/watch/winforms/converting-from-radcombobox-to-raddropdownlist)<br>In this video, you will learn how to convert a RadComboBox to the new RadDropDownList control introduced in the Q2 2010 release of RadControls for WinForms.|![dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 003](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol003.png)|
-|[Converting from RadListBox to RadListControl](http://tv.telerik.com/watch/winforms/converting-from-radlistbox-to-radlistcontrol)<br>In this video, you will learn how to convert a RadListBox to the new RadListControl introduced in the Q2 2010 release of RadControls for WinForms.|![dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 004](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol004.png)|
+|[Converting from RadListBox to RadListControl](http://tv.telerik.com/watch/winforms/converting-from-radlistbox-to-radlistcontrol)<br>In this video, you will learn how to convert a RadListBox to the new RadListControl introduced in the R2 2010 release of RadControls for WinForms.|![dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 004](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol004.png)|
 
 ## 
 
->note This article is valid for Telerik UI for WinForms versions prior to Q2 2011 SP1 inclusive. The Upgrade Tool can be used only if started from the SmartTag of the obsolete controls. Since these controls have been removed in Q3 2011, their respective Upgrade Tools are not available as well. In case you want to use the tools, please upgrade/downgrade to Q2 2011 SP1 (v2011.2.11.831)
+>note This article is valid for Telerik UI for WinForms versions prior to R2 2011 SP1 inclusive. The Upgrade Tool can be used only if started from the SmartTag of the obsolete controls. Since these controls have been removed in R3 2011, their respective Upgrade Tools are not available as well. In case you want to use the tools, please upgrade/downgrade to R2 2011 SP1 (v2011.2.11.831)
 >
  
 Since Q2 2010 several brand controls were released, as successors of older and not that optimized controls. These are:

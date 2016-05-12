@@ -9,9 +9,7 @@ position: 8
 previous_url: chartview-features-drill-down
 ---
 
-# Drill down 
-
-## 
+# Drill down
 
 The drill down functionality of a chart allows users to click on a graphical element (bar, pie segment etc.), representing some data, in order to navigate to another view which contains different data than the first one. The new view usually contains finer grained data like displaying information from yearly to quarterly data, from quarterly to monthly, etc., or in the case of a retail store from categories to brands, from brands to items, etc. The drill-down functionality basically makes your data points act like a hotspots for “drilling-down” or “zooming” into your data. 
 

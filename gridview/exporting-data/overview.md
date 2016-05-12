@@ -29,6 +29,6 @@ __RadGridView__ supports several built-in methods for exporting data:
 
 You can also RadGridView data to a Telerik Reporting report for printing purposes.
 
->note As of Q1 2012 RadGridView natively supports printing. More information about this feature can be found [here]({%slug winforms/gridview/printing-support%}).
+>note As of R1 2012 RadGridView natively supports printing. More information about this feature can be found [here]({%slug winforms/gridview/printing-support%}).
 >
 

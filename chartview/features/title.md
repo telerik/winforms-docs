@@ -12,9 +12,6 @@ previous_url: chartview-features-title
 # Title
 
 
-
-## 
-
 To show the title in RadChartView you need to set the __ShowTitle__ property to *true* (by default is *false*) and also to set the desired title text in the __Title__ property: 
 
 

@@ -172,7 +172,7 @@ The ApplicationMenu of RadRibbonBar supports wrapping of the main and descriptio
 
 ````C#
 this.LongNameFileMenuItem.Text = "This is a file with a veeeeeeeery veeeeery long name.png";
-this.UntitledFileMenuItem.DescriptionText = "C:\\Program Files (x86)\\Telerik\\RadControls for WinForms Q3 2012\\Resources\\Untitled.png";
+this.UntitledFileMenuItem.DescriptionText = "C:\\Program Files (x86)\\Telerik\\RadControls for WinForms R3 2012\\Resources\\Untitled.png";
 this.UntitledFileMenuItem.Text = "Untitled.png";
 
 ````

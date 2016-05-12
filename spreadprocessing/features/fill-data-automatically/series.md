@@ -271,7 +271,7 @@ The __FillDataSeriesAuto()__ method automatically constructs complex patterns of
 |Jan, Apr|Jul, Oct, Jan…|
 |15-Jan, 15-Apr|15-Jul, 15-Oct…|
 |2007, 2008|2009, 2010, 2011…|
-|Q3|Q4, Q1, Q2…|
+|R3|R4, R1, R2…|
 |Quarter3|Quarter4, Quarter1, Quarter2…|
 |text1, textA|text2, textA, text3, textA…|
 |Product 1|Product 2, Product 3…|

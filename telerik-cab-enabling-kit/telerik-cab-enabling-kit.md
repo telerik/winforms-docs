@@ -12,7 +12,7 @@ previous_url: telerik-cab-enabling-kit-overview
 # Telerik CAB Enabling Kit
 
 
-The [Telerik CAB Enabling Kit for WinForms](http://telerikcab.codeplex.com/) is part of the [Telerik UI for WinForms suite](http://www.telerik.com/products/winforms.aspx) since the Q1 2008 release.  It provides seamless integration of Telerik UI for WinForms with the Composite UI Application Block (CAB). It is well suited for enterprise applications, and helps developers with using the best practices and patterns.
+The [Telerik CAB Enabling Kit for WinForms](http://telerikcab.codeplex.com/) is part of the [Telerik UI for WinForms suite](http://www.telerik.com/products/winforms.aspx) since the R1 2008 release.  It provides seamless integration of Telerik UI for WinForms with the Composite UI Application Block (CAB). It is well suited for enterprise applications, and helps developers with using the best practices and patterns.
       
 
 The Telerik CAB Enabling Kit (TCEK) for WinForms can be used to develop smart-client line-of-business applications such as OLTP (online transaction processing) front ends for data entry applications; rich client portals to back-end services like government or bank teller applications; UI-intensive stand-alone applications such as those used by call center staff, IT support desks or stock traders.

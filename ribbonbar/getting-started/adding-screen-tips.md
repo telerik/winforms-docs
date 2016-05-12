@@ -39,7 +39,7 @@ To modify an existing screen tip, follow these steps:
 
 ## Adding Screen Tips Programmatically
 
-There are several options for Office 2007-like screen tips we introduced in 2008 Q3 for your convenience.
+There are several options for Office 2007-like screen tips we introduced in 2008 R3 for your convenience.
 
 To completely customize the screen tips appearance, its size, text wrapping, etc you may handle the ScreenTipNeeded event of any RadControl (RadRibbonBar, RadGridView, etc) and customize the screen tip provided by the event arguments, or even assign a new ScreenTip object to the corresponding item. 
 

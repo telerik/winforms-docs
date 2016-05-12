@@ -11,8 +11,6 @@ previous_url: gridview-grouping-custom-grouping
 
 # Custom Grouping
 
-
-
 Custom grouping is a flexible mechanism for creating RadGridView groups by using  custom logic. It has a higher priority than the applied __GroupDescriptors__ (added either by code or by dragging columns to the group panel).
 
 Custom grouping is applied if user grouping is enabled through the __RadGridView.EnableGrouping__ or __GridViewTemplate.EnableGrouping__ properties. By default, grouping is enabled at all levels.
@@ -150,19 +148,19 @@ private string GetQuarter(DateTime date)
 {
     if (date.Month >= 0 && date.Month <= 3)
     {
-        return "Q1";
+        return "R1";
     }
     else if (date.Month >= 4 && date.Month <= 6)
     {
-        return "Q2";
+        return "R2";
     }
     else if (date.Month >= 7 && date.Month <= 9)
     {
-        return "Q3";
+        return "R3";
     }
     else
     {
-        return "Q4";
+        return "R4";
     }
 }
 private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
@@ -181,13 +179,13 @@ Private Sub radGridView1_CustomGrouping(sender As Object, e As GridViewCustomGro
 End Sub
 Private Function GetQuarter([date] As DateTime) As String
     If [date].Month >= 0 AndAlso [date].Month <= 3 Then
-        Return "Q1"
+        Return "R1"
     ElseIf [date].Month >= 4 AndAlso [date].Month <= 6 Then
-        Return "Q2"
+        Return "R2"
     ElseIf [date].Month >= 7 AndAlso [date].Month <= 9 Then
-        Return "Q3"
+        Return "R3"
     Else
-        Return "Q4"
+        Return "R4"
     End If
 End Function
 Private Sub radGridView1_GroupSummaryEvaluate(sender As Object, e As GroupSummaryEvaluationEventArgs)

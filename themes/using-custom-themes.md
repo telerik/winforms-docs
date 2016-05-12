@@ -11,7 +11,7 @@ previous_url: themes-using-custom-themes
 
 # Using custom themes
 
-Since version Q1 2010 of the WinForms Visual Style Builder we have introduced a new theming mechanism, which allows you to create or modify one theme at a time, but for all Rad Controls simultaneously. Once the theming process is finished here is how save the theme and apply it in your application:
+Since version R1 2010 of the WinForms Visual Style Builder we have introduced a new theming mechanism, which allows you to create or modify one theme at a time, but for all Rad Controls simultaneously. Once the theming process is finished here is how save the theme and apply it in your application:
       
 
 ## Saving a custom theme

@@ -140,5 +140,5 @@ End Function
 >important As you can notice, we can perform all data operations on the child templates – grouping, sorting and filtering. RadGridView processes only the amount of data required for a particular data operation (lazy data loading). This provides us with better performance and small memory footprint.
 >
 
->note Since the Q3 2015 SP1 release __RadGridView__ supports CRUD operations for its inner levels. The __AutoUpdateObjectRelationalSource__ defines whether CRUD should be managed by the API or not, by default its value is set to *true* . In case one needs to handle these operations manually the property needs to be set to *false* .
+>note Since the R3 2015 SP1 release __RadGridView__ supports CRUD operations for its inner levels. The __AutoUpdateObjectRelationalSource__ defines whether CRUD should be managed by the API or not, by default its value is set to *true* . In case one needs to handle these operations manually the property needs to be set to *false* .
 >

@@ -13,9 +13,9 @@ previous_url: tpf-overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Telerik Presentation Framework Performance Tests](http://www.telerik.com/videos/winforms/telerik-presentation-framework-performance-tests)<br>In this video, you will see a live demonstration of just how much performance has increased in the RadControls between the Q1, Q2, and Q3 releases.|![tpf-overview 001](images/tpf-overview001.png)|
+|[Telerik Presentation Framework Performance Tests](http://www.telerik.com/videos/winforms/telerik-presentation-framework-performance-tests)<br>In this video, you will see a live demonstration of just how much performance has increased in the RadControls between the R1, R2, and R3 releases.|![tpf-overview 001](images/tpf-overview001.png)|
 
-## 
+ 
 
 The Telerik Presentation Framework (TPF) offers WPF-like features within classic Windows Forms applications. 
 
