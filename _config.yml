@@ -44,6 +44,9 @@ navigation:
     buttons/radiobutton:
         title: RadioButton
         position: 3
+    buttons/radiobutton/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     buttons/repeatbutton:
         title: RepeatButton
         position: 4
