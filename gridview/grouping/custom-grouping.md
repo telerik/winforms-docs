@@ -148,19 +148,19 @@ private string GetQuarter(DateTime date)
 {
     if (date.Month >= 0 && date.Month <= 3)
     {
-        return "R1";
+        return "Q1";
     }
     else if (date.Month >= 4 && date.Month <= 6)
     {
-        return "R2";
+        return "Q2";
     }
     else if (date.Month >= 7 && date.Month <= 9)
     {
-        return "R3";
+        return "Q3";
     }
     else
     {
-        return "R4";
+        return "Q4";
     }
 }
 private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
@@ -179,13 +179,13 @@ Private Sub radGridView1_CustomGrouping(sender As Object, e As GridViewCustomGro
 End Sub
 Private Function GetQuarter([date] As DateTime) As String
     If [date].Month >= 0 AndAlso [date].Month <= 3 Then
-        Return "R1"
+        Return "Q1"
     ElseIf [date].Month >= 4 AndAlso [date].Month <= 6 Then
-        Return "R2"
+        Return "Q2"
     ElseIf [date].Month >= 7 AndAlso [date].Month <= 9 Then
-        Return "R3"
+        Return "Q3"
     Else
-        Return "R4"
+        Return "Q4"
     End If
 End Function
 Private Sub radGridView1_GroupSummaryEvaluate(sender As Object, e As GroupSummaryEvaluationEventArgs)
