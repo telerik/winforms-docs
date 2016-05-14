@@ -56,6 +56,9 @@ navigation:
     buttons/splitbutton:
         title: SplitButton
         position: 5
+    buttons/splitbutton/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     buttons/togglebutton:
         title: ToggleButton
         position: 6

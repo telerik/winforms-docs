@@ -1,43 +1,63 @@
 ---
-title: Working with RadSplitButton Items
-page_title: Working with RadSplitButton Items | UI for WinForms Documentation
-description: Working with RadSplitButton Items
+title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
+description: RadSplitButton provides a menu-like interface contained within a button that can be placed anywhere on a form.
 slug: winforms/buttons/splitbutton/working-with-radsplitbutton-items
 tags: working,with,radsplitbutton,items
 published: True
-position: 1
+position: 2
 previous_url: /buttons-splitbutton-working-with-radsplitbutton-items
 ---
 
+# Getting Started
+
+* To add a __RadSplitButton__ to your form, drag a __RadSplitButton__ from the toolbox onto the surface of the form designer. Like a standard button, you can control the displayed text by setting the __Text__ property. Unlike a standard button, __RadSplitButton__ displays drop-down items when clicked. So handling the __Click__ event of this button is not appropriate. Instead, work directly with the events for each item.
+
+* To programmatically add a __RadSplitButton__ to a form, create a new instance of a __RadSplitButton__, and add it to the form __Controls__ collection.
+
+#### Adding a RadSplitButton at runtime 
+
+{{source=..\SamplesCS\Buttons\SplitButton.cs region=CreatingButton}} 
+{{source=..\SamplesVB\Buttons\SplitButton.vb region=CreatingButton}} 
+
+````C#
+RadSplitButton splitButton = new RadSplitButton();
+splitButton.Text = "Fruits";
+RadMenuItem item1 = new RadMenuItem("Orange");
+splitButton.Items.Add(item1);
+RadMenuItem item2 = new RadMenuItem("Lemon");
+splitButton.Items.Add(item2);
+RadMenuItem item3 = new RadMenuItem("Banana");
+splitButton.Items.Add(item3);
+this.Controls.Add(splitButton);
+
+````
+````VB.NET
+Dim splitButton As New RadSplitButton()
+splitButton.Text = "Fruits"
+Dim item1 As New RadMenuItem("Orange")
+splitButton.Items.Add(item1)
+Dim item2 As New RadMenuItem("Lemon")
+splitButton.Items.Add(item2)
+Dim item3 As New RadMenuItem("Banana")
+splitButton.Items.Add(item3)
+Me.Controls.Add(splitButton)
+
+````
+
+{{endregion}} 
+
 # Working with RadSplitButton Items
-
-
 
 The heart of __RadSplitButton__ is the __Items__ collection. This collection defines the menu items that appear when the __RadSplitButton__ is clicked. There are two ways to add items to a __RadSplitButton__.
 
 ## Adding Items at Design-time in the UI
 
-To add menu items at design-time, click in the __Items__ property, and then click the ellipsis button to launch the __RadElement Collection Editor__. Click the arrow next to the __Add__ button to add items to the menu. You can add a variety of items, such as the __RadMenuItem,__ to the collection.
-
-![buttons-splitbutton-working-with-radsplitbutton-items 001](images/buttons-splitbutton-working-with-radsplitbutton-items001.png)
-
-Once you have added a __RadMenuItem__ to the collection, it will appear in the list on the left side of the dialog. Click the __RadMenuItem__ you wish to edit and its property grid will be accessible on the right side of the dialog.
-
-![buttons-splitbutton-working-with-radsplitbutton-items 002](images/buttons-splitbutton-working-with-radsplitbutton-items002.png)
-
-In the property grid you will find many of the standard control properties, including __Text__, to control the display text of the item and __ToolTipText__ that displays when the mouse hovers over an item. Each __RadMenuItem__ also contains an __Items__ collection of its own, allowing you to create menu hierarchies within a __RadSplitButton__. Other significant properties for __RadSplitButton__ items are:
-
-* Associate an image with each item using the __Image__ property or associate a standard __ImageList__ component to the __RadSplitButton__ and use the __ImageIndex__ or __ImageKey__ properties for the item. 
-
-* __PopupDirection__ determines the relationship that sub items of a __RadMenuItem__ will display in and can be __Left__, __Right__, __Up__ or __Down.__
-
-* To display sub items in two columns set __HasTwoColumns__ to true and add items to the __RightColumnItems__ collection.
-
-* Use __CheckOnClick__ to toggle a check mark next to a __RadMenuItem__. This property is appropriate to use when the item doesn't contain sub items.
+To add menu items at design-time, please refer to the [Design Time]({%slug winforms/buttons/splitbutton/design-time%}) help article.
 
 ## Adding Items at Run Time in Code
 
-You can also add items to RadSplitButton in code at run time. The following example code illustrates programmatically adding a __RadMenuItem__ to your button.
+You can also add items to __RadSplitButton__ in code at run time. The following example code illustrates programmatically adding a __RadMenuItem__ to your button.
 
 #### Adding a RadMenuItem 
 
@@ -126,11 +146,11 @@ From this dialog you can select an image file from a project resource file or fr
 
 ## Using the Click Event
 
-To handle the __Click__ event of RadMenuItems on the drop down menu, locate the __RadMenuItem__ in the drop down list in the Properties window of the Windows Form designer. Click the events button, then double-click the __Click__ event to generate an event handler. Fill in the details of your event-handling code.
+To handle the __Click__ event of __RadMenuItems__ on the drop down menu, locate the __RadMenuItem__ in the drop down list in the Properties window of the Windows Form designer. Click the events button, then double-click the __Click__ event to generate an event handler. Fill in the details of your event-handling code.
 
 ## Setting the Default Item
 
-The default item is the item whose __Click__ event is triggered by the user pressing the button, instead of choosing from the menu. The DefaultItem can be assigned in code: 
+The default item is the item whose __Click__ event is triggered by the user pressing the button, instead of choosing from the menu. The __DefaultItem__ can be assigned in code: 
 
 #### Assigning the default item 
 
