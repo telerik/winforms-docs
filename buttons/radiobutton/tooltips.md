@@ -11,7 +11,7 @@ previous_url: buttons-radiobutton-tooltips
 
 # Tooltips
 
-There are two ways to assign tooltips to __RadRadioButton__, namely setting the __ToolTipText__ property of the __RadRadioButtonElement__, or as in most of the RadControls by using the __ToolTipTextNeeded__ event of __RadRadRadioButton__. It is necessary the __ShowItemToolTips__ property to be set to *true* which is the default value.
+There are two ways to assign tooltips to __RadRadioButton__, namely setting the __ToolTipText__ property of the __RadRadioButtonElement__, or as in most of the RadControls by using the __ToolTipTextNeeded__ event of __RadRadioButton__. It is necessary the __ShowItemToolTips__ property to be set to *true* which is the default value.
 
 #### Setting the ToolTipText property
 
