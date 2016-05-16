@@ -63,7 +63,7 @@ The following tutorial demonstrates creating two groups of radio buttons that ac
 ````C#
 void radRadioButton1_ToggleStateChanged(object sender, StateChangedEventArgs args)
 {
-  lblStatus.Text = (sender as RadRadioButton).Text + " is selected";
+    lblStatus.Text = (sender as RadRadioButton).Text + " is selected";
 }
 
 ````

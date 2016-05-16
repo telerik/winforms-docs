@@ -18,11 +18,12 @@ There are two ways to assign tooltips to __RadRepeatButton__, namely setting the
 {{source=..\SamplesCS\Buttons\RepeatButton.cs region=SetToolTipText}} 
 {{source=..\SamplesVB\Buttons\RepeatButton.vb region=SetToolTipText}}
 
-````C# 
- this.radRepeatButton1.ButtonElement.ToolTipText = "sample tooltip";
+````C#
+this.radRepeatButton1.ButtonElement.ToolTipText = "sample tooltip";
 
 ````
-````VB.NET  
+````VB.NET
+ 
 Me.radRepeatButton1.ButtonElement.ToolTipText = "sample tooltip"
 
 ````

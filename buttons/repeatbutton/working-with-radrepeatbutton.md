@@ -27,9 +27,9 @@ this.Controls.Add(repeatButton);
 
 ````
 ````VB.NET
- Dim repeatButton As New RadRepeatButton()
- repeatButton.Text = "Increase value"
- Me.Controls.Add(repeatButton)
+Dim repeatButton As New RadRepeatButton()
+repeatButton.Text = "Increase value"
+Me.Controls.Add(repeatButton)
 
 ````
 

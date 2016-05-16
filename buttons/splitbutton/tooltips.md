@@ -24,6 +24,29 @@ this.radSplitButton1.DropDownButtonElement.ToolTipText = "sample tooltip";
 ````
 ````VB.NET
 Me.radSplitButton1.DropDownButtonElement.ToolTipText = "sample tooltip"
+'#End Region
+End Sub
+'#Region "ToolTipTextNeeded"
+Private Sub RadSplitButton1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs)
+Dim actionButtonElement As ActionButtonElement = TryCast(sender, ActionButtonElement)
+Dim arrowButtonElement As RadArrowButtonElement = TryCast(sender, RadArrowButtonElement)
+If actionButtonElement IsNot Nothing Then
+    e.ToolTipText = "ActionButtonElement"
+ElseIf arrowButtonElement IsNot Nothing Then
+    e.ToolTipText = "RadArrowButtonElement"
+End If
+End Sub
+'#End Region
+'#region items
+Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+Dim myRadMenuItem As New RadMenuItem()
+myRadMenuItem.Text = "My New Item"
+AddHandler myRadMenuItem.Click, AddressOf myRadMenuItem_Click
+radSplitButton1.Items.Add(myRadMenuItem)
+End Sub
+Sub myRadMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+MessageBox.Show((TryCast(sender, RadMenuItem)).Text)
+End Sub
 
 ````
 
@@ -53,7 +76,6 @@ private void RadSplitButton1_ToolTipTextNeeded(object sender, Telerik.WinControl
     }
 }
 
-
 ````
 ````VB.NET
 Private Sub RadSplitButton1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs)
@@ -64,6 +86,17 @@ Private Sub RadSplitButton1_ToolTipTextNeeded(sender As Object, e As Telerik.Win
     ElseIf arrowButtonElement IsNot Nothing Then
         e.ToolTipText = "RadArrowButtonElement"
     End If
+End Sub
+'#End Region
+'#region items
+Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Dim myRadMenuItem As New RadMenuItem()
+    myRadMenuItem.Text = "My New Item"
+    AddHandler myRadMenuItem.Click, AddressOf myRadMenuItem_Click
+    radSplitButton1.Items.Add(myRadMenuItem)
+End Sub
+Sub myRadMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    MessageBox.Show((TryCast(sender, RadMenuItem)).Text)
 End Sub
 
 ````

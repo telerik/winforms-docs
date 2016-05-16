@@ -18,11 +18,11 @@ There are two ways to assign tooltips to __RadRadioButton__, namely setting the 
 {{source=..\SamplesCS\Buttons\RadioButton.cs region=SetToolTipText}} 
 {{source=..\SamplesVB\Buttons\RadioButton.vb region=SetToolTipText}}
 
-````C# 
+````C#
 this.radRadioButton1.ButtonElement.ToolTipText = "sample tooltip";
 
 ````
-````VB.NET 
+````VB.NET
 Me.radRadioButton1.ButtonElement.ToolTipText = "sample tooltip"
 
 ````
