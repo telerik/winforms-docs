@@ -1,22 +1,22 @@
 ---
 title: Structure
 page_title: Structure | UI for WinForms Documentation
-description: Structure
+description: RadToggleSwitch is a control designed to represent two states- e.g. true/false, On/Off, etc.
+
 slug: winforms/buttons/toggleswitch/structure
 tags: structure
 published: True
-position: 2
+position: 1
 previous_url: buttons-toggleswitch-structure
 ---
 
 # Structure
 
+>caption Fig.1 RadToggleSwitch's elements hierarchy
 
+![buttons-toggleswitch-structure 001](images/buttons-toggleswitch-structure002.png)
 
-## 
-
-This article describes the inner structure and organization of the elements which build the __RadToggleSwitch__ 
-          control.
+This article describes the inner structure and organization of the elements which build the __RadToggleSwitch__ control.
         
 >caption Fig.1 RadToggleSwitch visual structure
 

@@ -5,7 +5,7 @@ description: To add a RadButton to your form, drag a RadButton from the toolbox 
 slug: winforms/buttons/button/getting-started
 tags: button, getting-started
 published: True
-position: 3 
+position: 4 
 ---
 
 # Getting Started

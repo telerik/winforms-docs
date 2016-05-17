@@ -68,6 +68,9 @@ navigation:
     buttons/toggleswitch:
         title: ToggleSwitch
         position: 8
+    buttons/toggleswitch/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     bindingnavigator:
         title: BindingNavigator
         position: 7

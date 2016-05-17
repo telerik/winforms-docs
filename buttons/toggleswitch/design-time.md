@@ -1,11 +1,12 @@
 ---
 title: Design Time
 page_title: Design Time | UI for WinForms Documentation
-description: At desing time you can use the RadButton's Smart Tag to change the applied theme or navigate to the online documentation.
-slug: winforms/buttons/button/design-time
-tags: button, design-time
+description: RadToggleSwitch is a control designed to represent two states- e.g. true/false, On/Off, etc.
+slug: winforms/buttons/toggleswitch/design-time
+tags: structure
 published: True
-position: 2 
+position: 2
+previous_url: buttons-toggleswitch-design-time
 ---
 
 # Design Time
@@ -13,6 +14,7 @@ position: 2
 ## Smart Tag
 
 >caption Fig.1 Smart Tag
+
 ![buttons-toggleswitch-desing-time 001](images/buttons-toggleswitch-design-time001.png)
 
 * __Common Tasks__
@@ -30,5 +32,6 @@ position: 2
 # See Also
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
+
 
 
