@@ -62,6 +62,9 @@ navigation:
     buttons/togglebutton:
         title: ToggleButton
         position: 6
+    buttons/togglebutton/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     buttons/toggleswitch:
         title: ToggleSwitch
         position: 8
