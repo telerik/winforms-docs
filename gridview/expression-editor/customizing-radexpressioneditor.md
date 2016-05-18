@@ -69,7 +69,15 @@ Telerik.Data.Expressions.ExpressionContext.Context = New CustomExpressionContext
 Than the new expression method can be used:
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=settingExpression}} 
-{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=settingExpression}} 
+{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=settingExpression}}
+````C#
+this.radGridView1.Columns["expression"].Expression = "PI()";
+
+````
+````VB.NET
+Me.RadGridView1.Columns("expression").Expression = "PI()"
+
+```` 
 
 {{endregion}} 
 

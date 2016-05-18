@@ -19,7 +19,7 @@ There are two ways to assign tooltips to __RadToggleButton__, namely setting the
 {{source=..\SamplesVB\Buttons\ToggleButton.vb region=SetToolTipText}}
 
 ````C#
- this.radToggleButton1.ButtonElement.ToolTipText = "I am a toggle button";
+this.radToggleButton1.ButtonElement.ToolTipText = "I am a toggle button";
 
 ````
 ````VB.NET

@@ -172,7 +172,6 @@ this.radToggleSwitch1.Height = 50;
 
 ````
 ````VB.NET
-        
 Me.RadToggleSwitch1.Height = 50
 
 ````
