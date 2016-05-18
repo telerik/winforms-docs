@@ -5,7 +5,7 @@ description: Data Biniding
 slug: winforms/checkedlistbox/data-biniding
 tags: data,biniding
 published: True
-position: 2
+position: 4
 previous_url: checkedlistbox-data-binding
 ---
 

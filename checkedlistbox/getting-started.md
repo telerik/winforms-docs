@@ -1,17 +1,42 @@
 ---
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+description: RadCheckedListBox is an enhanced alternative to the standard Windows Forms checked list box control. 
 slug: winforms/checkedlistbox/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: checkedlistbox-getting-started
 ---
 
 # Getting Started
 
-## 
+* To add a __RadCheckedListBox__ to your form, drag a __RadCheckedListBox__ from the toolbox onto the surface of the form designer.
+
+* To programmatically add a __RadCheckedListBox__ to a form, create a new instance of a __RadCheckedListBox__, and add it to the form __Controls__ collection.
+
+#### Adding a RadCheckedListBox at runtime 
+
+{{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=CreatingControl}} 
+{{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=CreatingControl}} 
+
+````C#
+RadCheckedListBox checkedListBox = new RadCheckedListBox();
+this.Controls.Add(checkedListBox);
+checkedListBox.Items.Add("Coffee");
+checkedListBox.Items.Add("Tea");
+
+````
+````VB.NET
+Dim checkedListBox As New RadCheckedListBox()
+Me.Controls.Add(checkedListBox)
+checkedListBox.Items.Add("Coffee")
+checkedListBox.Items.Add("Tea")
+
+````
+
+{{endregion}} 
+
 
 The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
         
