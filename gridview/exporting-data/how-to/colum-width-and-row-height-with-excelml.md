@@ -21,7 +21,7 @@ private void Exporter_ExcelRowFormatting(object sender, ExcelRowFormattingEventA
 {
     if (e.ExcelRowElement.Attributes.Contains("ss:Height"))
     {
-        dynamic att = e.ExcelRowElement.Attributes["ss:Height"];
+        var att = e.ExcelRowElement.Attributes["ss:Height"];
         if (Convert.ToInt32(att) > 400)
         {
             e.ExcelRowElement.Attributes["ss:Height"] = "400";
@@ -56,7 +56,7 @@ private void Exporter_ExcelRowFormatting(object sender, ExcelRowFormattingEventA
 {
     if (e.ExcelRowElement.Attributes.Contains("ss:Height"))
     {
-        dynamic att = e.ExcelRowElement.Attributes["ss:Height"];
+        var att = e.ExcelRowElement.Attributes["ss:Height"];
         if (Convert.ToInt32(att) > 400)
         {
             e.ExcelRowElement.Attributes["ss:Height"] = "400";
