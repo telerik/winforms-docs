@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Clock | UI for WinForms Documentation
-description: Clock
+description: RadClock is a control which allows the developers to use it in their applications to display time to the users.
 slug: winforms/clock
 tags: clock
 published: True
@@ -11,17 +11,12 @@ previous_url: clock-overview
 
 # Clock
 
+__RadClock__ is a control which allows the developers to use it in their applications to display time to the users. 
 
-
-## 
-
-RadClock is a control which allows the developers to use it in their applications to display time to the users. 
-
-![clock-overview 001](images/clock-overview001.png)
+![clock-overview 001](images/clock-overview001.gif)
 
 >note The control cannot be resized since it uses a bitmap for its background.
 >
-
 
 
 | RELATED VIDEOS |  |
