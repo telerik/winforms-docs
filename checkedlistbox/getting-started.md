@@ -304,7 +304,7 @@ End Sub
 {{endregion}} 
 
 
-8\. The final step is to use the VisualItemFormatting event to style the items in the first __RadCheckedListBox__. Please note that the checkbox position is changed.
+8\. The final step is to use the __VisualItemFormatting__ event to style the items in the first __RadCheckedListBox__. Please note that the checkbox position is changed.
             
 {{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxGettingStarted.cs region=VisualItemFormatting}} 
 {{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxGettingStarted.vb region=VisualItemFormatting}} 
