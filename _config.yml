@@ -410,6 +410,9 @@ navigation:
     gridview/rows:
         title: Rows
         position: 4
+    gridview/rows/how-to:
+        title: How To
+        position: 19  
     gridview/cells:
         title: Cells
         position: 5
