@@ -5,15 +5,12 @@ description: Touch support
 slug: winforms/carousel/touch-support
 tags: touch,support
 published: True
-position: 3
+position: 4
 previous_url: carousel-touch-support
 ---
 
 # Touch support
 
-
-
-## 
 
 RadCarousel supports changing the selected item via touch. Simply tap the desired item and it will be selected:
 
