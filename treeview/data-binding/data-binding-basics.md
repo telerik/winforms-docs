@@ -393,7 +393,7 @@ End Class
 
 ## Binding check boxes
 
-Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify   the RadTreeView. __CheckedMember__ property. The following code snippet demonstrates how to setup hierarchical tree by using two separate DataTables:
+Since R3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify   the RadTreeView. __CheckedMember__ property. The following code snippet demonstrates how to setup hierarchical tree by using two separate DataTables:
 
 ![treeview-data-binding-data-binding-basics 003](images/treeview-data-binding-data-binding-basics003.png)
 

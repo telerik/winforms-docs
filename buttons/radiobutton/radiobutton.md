@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: RadioButton | UI for WinForms Documentation
-description: RadioButton
+description: RadRadioButton replaces the WinForms RadioButton control and adds robust data binding, state management, and design options. 
 slug: winforms/buttons/radiobutton
 tags: radiobutton
 published: True
@@ -12,8 +12,8 @@ previous_url: buttons-radiobutton-overview
 # RadioButton
 
 
-RadRadioButton replaces the WinForms RadioButton control and adds robust data binding, state management, and design options. 
+__RadRadioButton__ replaces the WinForms RadioButton control and adds robust data binding, state management, and design options. 
 
 ![buttons-radiobutton-overview 001](images/buttons-radiobutton-overview001.png)
 
-To begin using RadRadioButton see the [Getting Started]({%slug winforms/buttons/radiobutton/getting-started%}) section. To learn about the significant properties for RadRadioButton, including how radio buttons are grouped, multiple lines of text, how to assign images and layout for text, radio mark and image see the [Designing RadRadioButton]({%slug winforms/buttons/radiobutton/designing-radradiobutton-%}) topic. Learn how to react to user input in [Handling RadRadioButton States]({%slug winforms/buttons/radiobutton/handling-radradiobutton-states%}) topic.
+To begin using __RadRadioButton__ see the [Getting Started]({%slug winforms/buttons/radiobutton/getting-started%}) section. To learn about the significant properties for __RadRadioButton__, including how radio buttons are grouped, multiple lines of text, how to assign images and layout for text, radio mark and image see the [Properties, Methods and Events]({%slug winforms/buttons/radiobutton/properties-methods-events%}) topic. Learn how to react to user input in [Handling RadRadioButton States]({%slug winforms/buttons/radiobutton/handling-radradiobutton-states%}) topic.

@@ -4,18 +4,16 @@ page_title: Designing RadRadioButton  | UI for WinForms Documentation
 description: Designing RadRadioButton 
 slug: winforms/buttons/radiobutton/designing-radradiobutton-
 tags: designing,radradiobutton,
-published: True
-position: 2
+published: false
+position: 4
 previous_url: buttons-radiobutton-designing-radradiobutton
 ---
 
 # Designing RadRadioButton 
 
-
-
 ## RadioButton Grouping
 
-RadioButtons are grouped according to the parent. You can place a set of RadioButtons on a panel so that the choices made will be mutually exclusive, i.e. when one radio button is chosen, the others are deselected. By including multiple parents with their own RadRadioButtons you can have multiple groups of radio buttons acting independently. See the [Getting Started tutorial]({%slug winforms/buttons/radiobutton/getting-started%}) for an example.
+__RadRadioButtons__ are grouped according to their parent. You can place a set of __RadRadioButtons__ on a panel so that the choices made will be mutually exclusive, i.e. when one radio button is chosen, the others are deselected. By including multiple parents with their own __RadRadioButtons__ you can have multiple groups of radio buttons acting independently. See the [Getting Started tutorial]({%slug winforms/buttons/radiobutton/getting-started%}) for an example.
 
 Use __RadioCheckAlignment__ to control where the radio button appears in relation to the text of the control. 
 

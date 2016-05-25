@@ -1,17 +1,17 @@
 ---
 title: Working with RadDropDownButton Items
 page_title: Working with RadDropDownButton Items | UI for WinForms Documentation
-description: Working with RadDropDownButton Items
+description: RadDropDownButton provides a menu-like interface open from a button. Each of the items of RadDropDownButton can be set to perform an action when clicked.
 slug: winforms/buttons/dropdownbutton/working-with-raddropdownbutton-items
 tags: working,with,raddropdownbutton,items
-published: True
+published: False
 position: 6
 previous_url: buttons-dropdownbutton-working-with-raddropdownbutton-items
 ---
 
 # Working with RadDropDownButton Items
 
-The heart of RadDropDownButton is the __Items__ collection. This collection defines the menu items that appear when the RadDropDownButton is clicked. To get started, drag a __RadDropDownButton__ on the surface of your form from the Toolbox. There are two ways to add items to your new button.
+The heart of RadDropDownButton is the __Items__ collection. This collection defines the menu items that appear when the __RadDropDownButton__ is clicked. To get started, drag a __RadDropDownButton__ on the surface of your form from the Toolbox. There are two ways to add items to your new button.
 
 ## Adding Items at Design Time 
 
@@ -138,4 +138,4 @@ To add an image to your menu item, click in the __Image__ property of the __RadM
 
 ## Using the Click Event
 
-To handle the __Click__ event of individual RadMenuItems on the drop down menu at Design Time, locate the RadMenuItem in the drop down list in the __Properties__ window of the Windows Form designer. Click the events button, then double-click the __Click__ event to generate an event handler. Then fill in your event-handling code.
+To handle the __Click__ event of individual __RadMenuItems__ on the drop down menu at Design Time, locate the RadMenuItem in the drop down list in the __Properties__ window of the Windows Form designer. Click the events button, then double-click the __Click__ event to generate an event handler. Then fill in your event-handling code.

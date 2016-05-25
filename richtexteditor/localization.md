@@ -11,9 +11,6 @@ previous_url: richtexteditor-localization
 
 # Localization
 
-
-## 
-
 To change the default English localization provider you should use the __CurrentProvider__ static property of the          __RichTextBoxLocalizationProvider__ class. For example you can load the string from a xml file like this:
 
 {{source=..\SamplesCS\RichTextEditor\Localization.cs region=xml}} 
@@ -31,7 +28,7 @@ RichTextBoxLocalizationProvider.CurrentProvider = RichTextBoxLocalizationProvide
 
 {{endregion}} 
 
->note As of Q2 2015 __RichTextBoxLocalizationProvider__ contains all strings related to the __RadRichTextEditorRibbonUI__ as well.
+>note As of R2 2015 __RichTextBoxLocalizationProvider__ contains all strings related to the __RadRichTextEditorRibbonUI__ as well.
 >
 
 Another approach is to create a custom localization provider class which inherits __RichTextBoxLocalizationProvider__. In it you should just override the __GetLocalizedString__  method and return the localized string depending on current id.

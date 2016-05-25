@@ -38,21 +38,39 @@ navigation:
     buttons/dropdownbutton:
         title: DropDownButton
         position: 2
+    buttons/dropdownbutton/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     buttons/radiobutton:
         title: RadioButton
         position: 3
+    buttons/radiobutton/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     buttons/repeatbutton:
         title: RepeatButton
         position: 4
+    buttons/repeatbutton/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     buttons/splitbutton:
         title: SplitButton
+        position: 5
+    buttons/splitbutton/customizing-appearance:
+        title: Customizing Appearance
         position: 5
     buttons/togglebutton:
         title: ToggleButton
         position: 6
+    buttons/togglebutton/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     buttons/toggleswitch:
         title: ToggleSwitch
         position: 8
+    buttons/toggleswitch/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     bindingnavigator:
         title: BindingNavigator
         position: 7
@@ -392,6 +410,9 @@ navigation:
     gridview/rows:
         title: Rows
         position: 4
+    gridview/rows/how-to:
+        title: How To
+        position: 19  
     gridview/cells:
         title: Cells
         position: 5

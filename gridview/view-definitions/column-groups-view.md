@@ -12,9 +12,9 @@ previous_url: gridview-viewdefinitions-column-groups-view
 # Column Groups View
 
 ## Add groups view definition by using the Property Builder
-      
 
-Since Q3 2015 you can add and configure the groups view definition in the [property builder]({%slug winforms/gridview/design-time-support/property-builder%}). This section will show you how you can use the property builder to setup the groups view definition.
+
+Since R3 2015 you can add and configure the groups view definition in the [property builder]({%slug winforms/gridview/design-time-support/property-builder%}). This section will show you how you can use the property builder to setup the groups view definition.
 
 1. Before configuring the view definition you should add all regular columns to the grid. For example you can add some columns directly in the property builder window. Figure 2 shows how you can do that.
             

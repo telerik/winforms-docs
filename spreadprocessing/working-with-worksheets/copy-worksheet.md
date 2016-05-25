@@ -11,7 +11,7 @@ position: 5
 # Copy a Worksheet
 
 
-There are scenarios in which you may need to copy a specific Worksheet and apply a modification to it. For those cases, in Q1 2016 we introduced API in the __Worksheet__ class allowing you to copy a sheet to the same or another __Workbook__.
+There are scenarios in which you may need to copy a specific Worksheet and apply a modification to it. For those cases, in R1 2016 we introduced API in the __Worksheet__ class allowing you to copy a sheet to the same or another __Workbook__.
 
 
 The __CopyFrom(Worksheet source)__ method of a Worksheet will copy the passed _source_ sheet into the one the method is called for. This will clone all content and formatting from the source.

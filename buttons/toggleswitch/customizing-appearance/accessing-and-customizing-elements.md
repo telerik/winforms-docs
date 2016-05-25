@@ -5,13 +5,11 @@ description: Accessing and Customizing Elements
 slug: winforms/buttons/toggleswitch/accessing-and-customizing-elements
 tags: accessing,and,customizing,elements
 published: True
-position: 4
+position: 0
 previous_url: buttons-toggleswitch-accessing-and-customizing-elements
 ---
 
 # Accessing and Customizing Elements
-
-
 
 ## Design time
 

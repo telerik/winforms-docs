@@ -11,8 +11,6 @@ previous_url: gridview-grouping-custom-grouping
 
 # Custom Grouping
 
-
-
 Custom grouping is a flexible mechanism for creating RadGridView groups by using  custom logic. It has a higher priority than the applied __GroupDescriptors__ (added either by code or by dragging columns to the group panel).
 
 Custom grouping is applied if user grouping is enabled through the __RadGridView.EnableGrouping__ or __GridViewTemplate.EnableGrouping__ properties. By default, grouping is enabled at all levels.

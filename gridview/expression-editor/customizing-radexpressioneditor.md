@@ -69,20 +69,15 @@ Telerik.Data.Expressions.ExpressionContext.Context = New CustomExpressionContext
 Than the new expression method can be used:
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=settingExpression}} 
-{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=settingExpression}} 
-
+{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=settingExpression}}
 ````C#
-string path = "Telerik.Examples.WinControls.GridView.Expressions.ExpressionItemsListData.xml";
-Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path);
-RadExpressionEditorForm.ExpressionItemsList.LoadFromXML(stream);
+this.radGridView1.Columns["expression"].Expression = "PI()";
 
 ````
 ````VB.NET
-Dim path As String = "Telerik.Examples.WinControls.GridView.Expressions.ExpressionItemsListData.xml"
-Dim stream_ As Stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path)
-RadExpressionEditorForm.ExpressionItemsList.LoadFromXML(stream_)
+Me.RadGridView1.Columns("expression").Expression = "PI()"
 
-````
+```` 
 
 {{endregion}} 
 

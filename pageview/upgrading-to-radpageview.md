@@ -16,15 +16,15 @@ previous_url: pageview-upgrading-to-radpageview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Converting from RadPanelBar to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radpanelbar-to-radpageview)<br>In this video, you will learn how to convert a RadPanelBar to the new RadPageView control introduced in the Q2 2010 release of RadControls for WinForms.|![pageview-upgrading-to-radpageview 003](images/pageview-upgrading-to-radpageview003.png)|
-|[Converting from RadTabStrip to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radtabstrip-to-radpageview)<br>In this video, you will learn how to convert a RadTabStrip to the new RadPageView control introduced in the Q2 2010 release of RadControls for WinForms.|![pageview-upgrading-to-radpageview 004](images/pageview-upgrading-to-radpageview004.png)|
+|[Converting from RadPanelBar to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radpanelbar-to-radpageview)<br>In this video, you will learn how to convert a RadPanelBar to the new RadPageView control introduced in the R2 2010 release of RadControls for WinForms.|![pageview-upgrading-to-radpageview 003](images/pageview-upgrading-to-radpageview003.png)|
+|[Converting from RadTabStrip to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radtabstrip-to-radpageview)<br>In this video, you will learn how to convert a RadTabStrip to the new RadPageView control introduced in the R2 2010 release of RadControls for WinForms.|![pageview-upgrading-to-radpageview 004](images/pageview-upgrading-to-radpageview004.png)|
 
 ## 
 
->note This article is valid for Telerik UI for WinForms versions prior to Q2 2011 SP1 inclusive. The Upgrade Tool can be used only if started from the SmartTag of the obsolete controls. Since these controls have been removed in Q3 2011, their respective Upgrade Tools are not available as well. In case you want to use the tools, please upgrade/downgrade to Q2 2011 SP1 (v2011.2.11.831)
+>note This article is valid for Telerik UI for WinForms versions prior to R2 2011 SP1 inclusive. The Upgrade Tool can be used only if started from the SmartTag of the obsolete controls. Since these controls have been removed in R3 2011, their respective Upgrade Tools are not available as well. In case you want to use the tools, please upgrade/downgrade to R2 2011 SP1 (v2011.2.11.831)
 >
 
-Since Q2 2010 several brand controls were released, as successors of older and not that optimized controls. These are:
+Since R2 2010 several brand controls were released, as successors of older and not that optimized controls. These are:
 
 * [RadPageView](http://www.telerik.com/help/winforms/pageview-overview.html)- successor of RadTabStrip and RadPanelBar.
 
@@ -32,7 +32,7 @@ Since Q2 2010 several brand controls were released, as successors of older and n
 
 * [RadDropDownList](http://www.telerik.com/help/winforms/dropdown-and-listcontrol-dropdownlist-overview.html) - successor of RadComboBox.
 
-In order to encourage our users to use the new controls, we have removed all the old controls from our Toolbox. But what about old controls, present in already existing applications? A manual conversion by simply dropping the new control and moving the entire content of the old control to the new one is not a straightforward process. Here comes the new tool, introduced in our Q2 2010 Service Pack 1 release, namely Telerik Conversion Wizard. The tool is available as a smart tag option in all Telerik Controls:<br>![pageview-upgrading-to-radpageview 001](images/pageview-upgrading-to-radpageview001.png)
+In order to encourage our users to use the new controls, we have removed all the old controls from our Toolbox. But what about old controls, present in already existing applications? A manual conversion by simply dropping the new control and moving the entire content of the old control to the new one is not a straightforward process. Here comes the new tool, introduced in our R2 2010 Service Pack 1 release, namely Telerik Conversion Wizard. The tool is available as a smart tag option in all Telerik Controls:<br>![pageview-upgrading-to-radpageview 001](images/pageview-upgrading-to-radpageview001.png)
 
 *The “Conversion Wizard…” command will open the wizard dialog.* <br>![pageview-upgrading-to-radpageview 002](images/pageview-upgrading-to-radpageview002.png)
 

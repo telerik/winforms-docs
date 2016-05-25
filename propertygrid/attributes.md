@@ -15,7 +15,7 @@ This article contains a list of some of the more important and more commonly use
 
 ## EditorAttribute
 
-With the editor attribute you can specify __UITypeEditor__ as well as __BaseInputEditor__ (since Q1 2013) to be used for a given property.
+With the editor attribute you can specify __UITypeEditor__ as well as __BaseInputEditor__ (since R1 2013) to be used for a given property.
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=EditorAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=EditorAttribute}} 

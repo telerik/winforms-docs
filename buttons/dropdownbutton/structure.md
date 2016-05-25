@@ -12,6 +12,7 @@ previous_url: buttons-dropdownbutton-structure
 # Structure
 
 >caption Fig.1 RadDropDownButton's elements hierarchy
+
 ![buttons-dropdownbutton-structure 001](images/buttons-dropdownbutton-structure001.png)
 
 1. __RadArrowButtonElement__: represents the arrow button that opens the popup

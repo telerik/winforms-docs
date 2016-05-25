@@ -45,7 +45,7 @@ workbook.History.IsEnabled = False
 
 {{endregion}} 
 
->warning The default value of the IsEnabled property was changed in Q3 2014. In versions prior that one, the history is enabled by default.
+>warning The default value of the IsEnabled property was changed in R3 2014. In versions prior that one, the history is enabled by default.
 >
 
 ## Undo / Redo Actions

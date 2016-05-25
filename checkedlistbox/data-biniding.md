@@ -1,26 +1,24 @@
 ---
 title: Data Biniding
 page_title: Data Biniding | UI for WinForms Documentation
-description: Data Biniding
+description: RadCheckedListBox is an enhanced alternative to the standard Windows Forms checked list box control. 
 slug: winforms/checkedlistbox/data-biniding
 tags: data,biniding
 published: True
-position: 2
+position: 4
 previous_url: checkedlistbox-data-binding
 ---
 
 # Data Biniding
 
-
-
 ## Supported Bindable Types
 
 As an inheritor of __RadListView__, __RadCheckedListBox__ extends its functionality and provides a way to bind your __RadCheckedListBox__ check boxes to a data source. There are several types of data that __CheckedMember__ can be bound to:
 
-* __Boolean__ – True represents ToggleState.On and False – ToggleState.Off.
+* __Boolean__ – *True* represents ToggleState.*On* and *False* – ToggleState.*Off*.
             
 
-* __Numeric__ – 0 represents ToggleState.Off, any other value is calculated as ToggleState.On.
+* __Numeric__ – *0* represents ToggleState.*Off*, any other value is calculated as ToggleState.*On*.
             
 
 * __ToggleState__ enumeration.
@@ -29,10 +27,10 @@ As an inheritor of __RadListView__, __RadCheckedListBox__ extends its functional
 * __CheckState__ enumeration.
             
 
-* __String__ – representing CheckBox ToggleState.On state with values like: "True", "On" and "T", ToggleState.Indeterminate state with value "indeterminate", ToggleState.Off state with any other value.
+* __String__ – representing CheckBox ToggleState.*On* state with values like: "True", "On" and "T", ToggleState.*Indeterminate* state with value "indeterminate", ToggleState.*Off* state with any other value.
             
 
->note Information about __RadListView__ data binding is available here:[RadListView Data Binding]({%slug winforms/listview/databinding%}).
+>note Information about __RadListView__ data binding is available here: [RadListView Data Binding]({%slug winforms/listview/databinding%}).
 >
 
 

@@ -30,6 +30,7 @@ a img {
 #page-header {
     background-color: #2a2d33;
     font-size: 12px;
+	height: 85px;
 }
 
 #page-header:after {
@@ -46,31 +47,26 @@ a img {
 #logo-bar-sl {
     font-size: 14px;
 	float: left;
-    margin-bottom: 1.717em;
+    /*margin-bottom: 1.717em;*/
     margin-left: 1.833em;
     margin-top: 1.617em;
+	width: 341;
 }
 
 #logo-bar a,
 #logo-bar-sl a {
-	display: inline-block;
-	background: url('../images/telerik_logo_winforms.png') 0 center no-repeat;
-	height: 33px;
 	color: #fff;
-	width: 238px;
+	display: inline-block;
+	max-width: 100%;
 }
 
-#logo-bar span {
-	display: none;
-}
+#logo-bar a img,
+#logo-bar-sl a img {
+	display: inline-block;
+	height: auto;
+	width: 100%;
+ }
 
-#logo-bar-sl a{
-	background: url('../images/telerik_logo_sl.png') 0 center no-repeat;
-}
-
-#logo-bar-sl span {
-	display: none;
-}
 
 .nav-buttons {
     float: right;
@@ -156,6 +152,7 @@ a img {
     position: relative;
     margin-left: 1.833em;
     cursor: pointer;
+	top:12px;
 }
 
 #page-search {
@@ -166,7 +163,7 @@ a img {
     padding: 0;
     right: 514px;
     text-align: right;
-    left: 20%;
+    left: 30%;
 }
 
 #page-search.search-visibility {
@@ -848,15 +845,12 @@ header, nav, section, article, aside, footer {
     }
     
     #page-search {
-        left: 30%;
+        left: 371px;
+		right: 377px;
     }
 
     .btn.pricing-btn {
         display: none;
-    }
-
-    #page-search {
-        right: 390px;
     }
 }
 
@@ -906,15 +900,16 @@ header, nav, section, article, aside, footer {
 
     #logo-bar,
 	#logo-bar-sl {
-       float: none;
-       display: inline-block;
-       margin-left: 1em;
-	   width: 0px;
+		position: absolute;
+		top: 12px;
+		margin-top: 0px;
+		margin-left: 5em;
     }
 
     #page-search {
-        width: 30%;
+        width: 25%;
         left: auto;
+		right: 0px;
         display: none;
         background-color: #2a2d33;
     }
@@ -951,7 +946,7 @@ header, nav, section, article, aside, footer {
         display: inline-block;
         margin: 0;
         position: absolute;
-        top: 27px;
+        top: 11px;
         padding: 0;
         right: 1.833em;
         text-align: right;
@@ -962,4 +957,10 @@ header, nav, section, article, aside, footer {
     footer {
         display: none;
     }
+}
+@media (max-width:500px) {
+	#logo-bar,
+	#logo-bar-sl {
+		width: 0px;
+	}
 }

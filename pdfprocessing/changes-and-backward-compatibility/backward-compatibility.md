@@ -13,7 +13,7 @@ previous_url: pdfprocessing-backward-compatibility
 
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to another.
 
-## What's Different in 2015 Q1
+## What's Different in 2015 R1
 
 ### Changed
           
@@ -24,7 +24,7 @@ Telerik.Windows.Documents.Fixed.Model.Editing.RadFixedDocumentEditor::TablePrope
 
 __TableLayoutType__ can now be set directly in the __Table__ class using the __LayoutType__ property.
 
-## What's Different in 2014 Q3
+## What's Different in 2014 R3
 
 ### Changed
 

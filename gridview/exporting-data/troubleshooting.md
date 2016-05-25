@@ -15,7 +15,7 @@ previous_url: gridview-exporting-data-export-to-troubleshooting
 
 ## Exported file is corrupt and will not open in Excel 2003 or Excel 2007
 
-Check for invalid DateTime values, such as "0001-01-01T00:00:00.000". MS Excel does not support DateTime values before "1900-01-01". UPDATE: Since Q1 2010 the ExportToExcelML method validates the date values and throws a FormatException with message: “The DateTime value is not supported in Excel!”.
+Check for invalid DateTime values, such as "0001-01-01T00:00:00.000". MS Excel does not support DateTime values before "1900-01-01". UPDATE: Since R1 2010 the ExportToExcelML method validates the date values and throws a FormatException with message: “The DateTime value is not supported in Excel!”.
 
 ## RadGridView cannot export child templates and hierarchical data
 
@@ -46,7 +46,7 @@ Me.RadGridView1.LoadElementTree()
 
 
 
-UPDATE: The issue has been addressed in Q1 2010 onwards. 
+UPDATE: The issue has been addressed in R1 2010 onwards. 
 
 ## Exporting two or more independent RadGridViews to one Excel file does not work
 

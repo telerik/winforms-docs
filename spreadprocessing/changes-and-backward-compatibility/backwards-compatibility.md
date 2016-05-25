@@ -13,7 +13,7 @@ previous_url: spreadprocessing-backwards-compatibility
 
 This article will list the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
 
-## What's Different in 2016 Q1
+## What's Different in 2016 R1
 
 ### Changed
 
@@ -61,7 +61,7 @@ Use Telerik.Windows.Documents.Spreadsheet.Expressions.Functions::**FunctionWithA
 Use Telerik.Windows.Documents.Spreadsheet.Expressions.Functions::**FunctionWithSameTypeArguments&lt;T&gt;.EvaluateOverride(FunctionEvaluationContext&lt;T&gt; context)** instead.
 
 
-## What's Different in 2015 Q2
+## What's Different in 2015 R2
 
 ### Changed 
 
@@ -99,7 +99,7 @@ Telerik.Windows.Documents.Spreadsheet.Utilities.UnitHelper::EMUsToDIP(int value)
 
 Use EmuToDip(double value) method instead.
 
-## What's Different in 2014 Q3
+## What's Different in 2014 R3
 
 ### Changed 
 

@@ -14,7 +14,7 @@ previous_url: dock-object-model-tabs-and-captions
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadDock Tab Alignment/Visibility and Automation](http://tv.telerik.com/watch/winforms/raddock/raddock-tab-alignmentvisibility-automation)In this video, you will learn about some of the new features provided in the Q3 2009 release of the RadDock. These features include tab alignment and visibility as well as drag and drop automation.|![dock-object-model-tabs-and-captions 007](images/dock-object-model-tabs-and-captions007.png)|
+|[RadDock Tab Alignment/Visibility and Automation](http://tv.telerik.com/watch/winforms/raddock/raddock-tab-alignmentvisibility-automation)In this video, you will learn about some of the new features provided in the R3 2009 release of the RadDock. These features include tab alignment and visibility as well as drag and drop automation.|![dock-object-model-tabs-and-captions 007](images/dock-object-model-tabs-and-captions007.png)|
 
 ## 
 

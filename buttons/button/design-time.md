@@ -13,7 +13,7 @@ position: 2
 ## Smart Tag
 
 >caption Fig.1 Smart Tag
-![buttons-button-desing-time 001](images/buttons-button-design-time001.png)
+![buttons-toggleswitch-desing-time 001](images/buttons-toggleswitch-design-time001.png)
 
 * __Common Tasks__
 

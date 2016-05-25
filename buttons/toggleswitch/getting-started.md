@@ -5,14 +5,11 @@ description: Getting Started
 slug: winforms/buttons/toggleswitch/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: buttons-toggleswitch-getting-started
 ---
 
 # Getting Started
- 
-
-## 
 
 You can add a __RadToggleSwitch__ to your form either at design time or at run time:
         

@@ -18,7 +18,7 @@ This article explains how to use the ImageQuality enumeration to change the expo
 
 ## Overview
 
-The [ImageQuality enumeration](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_FormatProviders_Pdf_Export_ImageQuality.htm) allows you to control the quality of the images when exporting to PDF. Possible values for this property are High, Medium, and Low. Since Q1 2016, the **default value of ImageQuality is High**.
+The [ImageQuality enumeration](http://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Fixed_FormatProviders_Pdf_Export_ImageQuality.htm) allows you to control the quality of the images when exporting to PDF. Possible values for this property are High, Medium, and Low. Since R1 2016, the **default value of ImageQuality is High**.
 
 
 ## Using ImageQuality

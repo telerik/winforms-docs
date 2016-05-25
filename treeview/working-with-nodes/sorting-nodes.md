@@ -12,12 +12,9 @@ previous_url: treeview-working-with-nodes-sorting
 # Sorting Nodes
 
 
-
-## 
-
 RadTreeView supports sorting of its nodes. The sorting operation is applied separately to each group of nodes at the the same level. To sort the nodes, you should just set the __SortOrder__ property to one of the following values: *None*, *Ascending*.
         
-As of Q1 2011 SP1, RadTreeView will support Descending sort order as well.
+As of R1 2011 SP1, RadTreeView will support Descending sort order as well.
      
 
 For example, if we have this RadTreeView instance:

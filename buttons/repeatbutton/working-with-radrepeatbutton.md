@@ -1,26 +1,47 @@
 ---
-title: Working with RadRepeatButton
-page_title: Working with RadRepeatButton | UI for WinForms Documentation
-description: Working with RadRepeatButton
+title: Getting Started
+page_title: Getting Started | UI for WinForms Documentation
+description: RadRepeatButton provides press-and-hold functionality and it is an ideal UI element for allowing users to control an increasing or decreasing value, such as volume or brightness.
 slug: winforms/buttons/repeatbutton/working-with-radrepeatbutton
 tags: working,with,radrepeatbutton
 published: True
-position: 1
+position: 3
 previous_url: buttons-repeatbutton-working-with-radrepeatbutton
 ---
 
+# Getting Started
+
+* To add a __RadRepeatButton__ to your form, drag a __RadRepeatButton__ from the toolbox onto the surface of the form designer.
+
+* To programmatically add a __RadRepeatButton__ to a form, create a new instance of a __RadRepeatButton__, and add it to the form __Controls__ collection.
+
+#### Adding a RadButton at runtime 
+
+{{source=..\SamplesCS\Buttons\RepeatButton.cs region=creatingbutton}} 
+{{source=..\SamplesVB\Buttons\RepeatButton.vb region=creatingbutton}} 
+
+````C#
+RadRepeatButton repeatButton = new RadRepeatButton();
+repeatButton.Text = "Increase value";
+this.Controls.Add(repeatButton);
+
+````
+````VB.NET
+Dim repeatButton As New RadRepeatButton()
+repeatButton.Text = "Increase value"
+Me.Controls.Add(repeatButton)
+
+````
+
+{{endregion}} 
+
 # Working with RadRepeatButton
-
-
-
-## 
 
 In addition to the standard properties shared by all buttons, notice a new property named __Interval__. This property determines the time, in milliseconds, between button click events after the control begins repeating events. The default value is 33.
 
 To begin the repeat process, use the __ButtonClick__ event instead of __Click__. To create an event handler for this event, change the filter in the Property Grid to __Events__ and find the entry for __ButtonClick__. Double-click in the empty value drop-down list for the property to have the designer create a method to handle __ButtonClick__.
 
 The following code illustrates the use of a __RadRepeatButton__ to manipulate a __ProgressBar__ control. At each interval the __ProgressBar__ value will increment. You do not need to write any additional code to handle the repeating event. As long as the mouse button is pressed down on the __RepeatButton__ control, the code in the __ButtonClick__ event handler will run at each interval. 
-
 
 
 {{source=..\SamplesCS\Buttons\RepeatButton.cs region=handlingClickEvent}} 
@@ -53,5 +74,4 @@ End Sub
 
 {{endregion}} 
 
-
-![buttons-repeatbutton-working-with-radrepeatbutton 001](images/buttons-repeatbutton-working-with-radrepeatbutton001.png)
+![buttons-repeatbutton-overview 001](images/buttons-repeatbutton-overview001.gif)

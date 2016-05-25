@@ -130,7 +130,7 @@ The API exposes two events for notifications when a change in the height of a ro
 
 * __ColumnWidthChanged__: Raised after the execution of the resizing operation. The event arguments are:
 
- * __RowIndex__: The index of the resized column.
+ * __ColumnIndex__: The index of the resized column.
   
  * __ViewInfo__: Reference to the __VirtualGridViewInfo__ object.
 

@@ -74,7 +74,7 @@ As a result, we get the following hierarchy in RadTreeView:
 
 ## Binding check boxes
 
-Since Q3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify the RadTreeView. __CheckedMember__ property in addition to the necessary information described above. 
+Since R3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify the RadTreeView. __CheckedMember__ property in addition to the necessary information described above. 
 
 Consider the following diagram which can be illustrated with the sample classes below: ![treeview-data-binding-binding-to-object-relational-data 002](images/treeview-data-binding-binding-to-object-relational-data002.png)
 

@@ -1,19 +1,38 @@
 ---
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+description: RadClock is a control which allows the developers to use it in their applications to display time to the users.
 slug: winforms/clock/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: clock-getting-started
 ---
 
 # Getting Started
 
+* To add a __RadClock__ to your form, drag a __RadClock__ from the toolbox onto the surface of the form designer.
 
+* To programmatically add a __RadClock__ to a form, create a new instance of a __RadClock__, and add it to the form __Controls__ collection.
 
-## 
+#### Adding a RadClock at runtime 
+
+{{source=..\SamplesCS\Clock\ClockGettingStarted.cs region=CreatingControl}} 
+{{source=..\SamplesVB\Clock\ClockGettingStarted.vb region=CreatingControl}} 
+
+````C#
+RadClock clock = new RadClock();
+this.Controls.Add(clock);
+
+````
+````VB.NET
+Dim clock As New RadClock()
+Me.Controls.Add(clock)
+
+````
+
+{{endregion}} 
+
 
 The control has three important properties:
 
