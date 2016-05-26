@@ -15,7 +15,7 @@ Each of the control's elements can be accessed and customized. Once you access t
 
 ### Customize Fill and Border
 
-You can access the control element by opening the [Element Hierarchy Editor] from the controls smart tag. This allows you to select elements and change their properties. The next image shows how you can change the BackColor and the BorderColor.
+You can access the control element by opening the [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%}) from the controls smart tag. This allows you to select elements and change their properties. The next image shows how you can change the BackColor and the BorderColor.
 
 >caption Figure 1: Change the BackColor and the BorderColor.
 
