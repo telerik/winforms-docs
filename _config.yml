@@ -115,7 +115,7 @@ navigation:
         position: 4
     carousel/design-time:
         title: Design-time
-        position: 3
+        position: 2
     chart:
         title: Chart (obsolete)
         position: 11

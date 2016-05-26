@@ -5,13 +5,11 @@ description: Carousel Path
 slug: winforms/carousel/using-radcarousel/carousel-path
 tags: carousel,path
 published: True
-position: 1
+position: 0
 previous_url: carousel-using-radcarousel-carousel-path
 ---
 
 # Carousel Path
-
-
 
 The __CarouselPath__ property defines the route that the carousel items will be animated along. Assign a CarouselParameterPath descendant instance to the RadCarousel CarouselPath.
 
@@ -61,32 +59,6 @@ Me.RadCarousel1.CarouselPath = ellipsePath
 {{endregion}} 
 
 
-
-
-## CarouselEllipsePath in design-time
-
-You can set the bezier path for the carousel using the Visual Studio designer.
-
-*  Drag the RadCarousel control in your form.
-  
-
-*  In Properties, set __CarouselPath__ to *newCarouselEllipsePath*
-
-![carousel-using-radcorousel-carousel-carousel-path 001](images/carousel-using-radcorousel-carousel-carousel-path001.png)
-
-* Drag the two control points (U and V) and the center poing to set the ellipse as desired:
-
-![carousel-using-radcorousel-carousel-carousel-path 002](images/carousel-using-radcorousel-carousel-carousel-path002.png)
-
->note You can arrange the points only in 2D. The Z coordinate (if needed) should be set programmatically.
->
-
-
->note You can revert the rotating direction (when AutoLoop is set to true) by swapping the V and U points positions. The rotation is alway from V to U point.
->You can drag the ellipse points over the whole designer area, i.e. you are not limited to the form only.
->
-
-
 ## CarouselBezierPath
 
 __CarouselBezierPath__ describes two end points and two "control" points in three dimensional space. The control points dictate the amount of curve between the end points.  The significant properties are:
@@ -123,27 +95,6 @@ Me.RadCarousel1.CarouselPath = bezierPath
 {{endregion}} 
 
 
-
-
-
-
-## CarouselBezierPath in design-time
-
-You can set the bezier path for the carousel using the Visual Studio designer.
-
-1. Drag the RadCarousel control in your form.
-
-1.  In Properties, set __CarouselPath__ to *newCarouselBezierPath*:
-  ![carousel-using-radcorousel-carousel-carousel-path 003](images/carousel-using-radcorousel-carousel-carousel-path003.png)
-
-1. Drag the four control points and set the bezier as desired:
-  ![carousel-using-radcorousel-carousel-carousel-path 004](images/carousel-using-radcorousel-carousel-carousel-path004.png)
-
->note You can arrange the points only in 2D. The Z coordinate (if needed) should be set programmatically.
->You can drag the bezier points over the whole designer area, i.e. you are not limited to the form only.
->
-
-
 # See Also
 
- * [RadCarousel Properties]({%slug winforms/carousel/using-radcarousel/radcarousel-properties%})
+ * [RadCarousel Properties]({%slug winforms/carousel/properties%})

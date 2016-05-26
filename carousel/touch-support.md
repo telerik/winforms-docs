@@ -5,7 +5,7 @@ description: Touch support
 slug: winforms/carousel/touch-support
 tags: touch,support
 published: True
-position: 4
+position: 6
 previous_url: carousel-touch-support
 ---
 
