@@ -194,6 +194,9 @@ navigation:
     clock:
         title: Clock
         position: 14
+    clock/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     commandbar:
         title: CommandBar
         position: 15
