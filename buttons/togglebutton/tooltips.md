@@ -6,7 +6,6 @@ slug: winforms/buttons/togglebutton/tooltips
 tags: togglebutton
 published: True
 position: 7
-previous_url: buttons-togglebutton-tooltips
 ---
 
 # Tooltips
