@@ -143,7 +143,7 @@ Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
 {{endregion}} 
 
 
-![dataentry-properties-events-and-attributes 002](images/dataentry-properties-events-and-attributes002.png)
+![dataentry-properties-events-and-attributes 002](images/dataentry-properties-events-and-attributes005.png)
 
 * The __ItemSpace__ property controls the space that between the generated items. Default value is 5 pixels.
            
