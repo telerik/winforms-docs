@@ -12,10 +12,7 @@ previous_url: carousel-design-time-setting-ellipse-path-design-time
 # Setting Ellipse Path Design-time
 
 
-
-## 
-
-You can set the bezier path for the carousel using the Visual Studio designer. 
+You can set the ellipse path for the carousel using the Visual Studio designer. 
 
 1. Drag the __RadCarousel__ control in your form. 
 
@@ -40,3 +37,10 @@ You can set the bezier path for the carousel using the Visual Studio designer.
 You can revert the rotating direction (when __AutoLoop__ is set to __true__) by swapping the __V__ and __U__ points positions. The rotation is always from __V__ to __U__ point. 
 
 You can drag the ellipse points over the whole designer area, i.e. you are not limited to the form only. 
+
+# See Also
+
+ * [RadCarousel Properties]({%slug winforms/carousel/properties%})
+ * [Working with items]({%slug  winforms/carousel/using-radcarousel/carousel-items%})
+ * [Data Binding]({%slug winforms/carousel/using-radcarousel/data-binding%})
+ * [Carousel Path]({%slug winforms/carousel/using-radcarousel/carousel-path%})

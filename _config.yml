@@ -112,10 +112,13 @@ navigation:
         position: 10
     carousel/using-radcarousel:
         title: Using RadCarousel
-        position: 2
+        position: 5
+    carousel/customizing-appearance:
+        title: Customizing Appearance
+        position: 6
     carousel/design-time:
         title: Design-time
-        position: 3
+        position: 2
     chart:
         title: Chart (obsolete)
         position: 11

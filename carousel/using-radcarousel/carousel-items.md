@@ -1,25 +1,25 @@
 ---
-title: Carousel Items
-page_title: Carousel Items | UI for WinForms Documentation
-description: Carousel Items
+title: Working with Items 
+page_title: Working with Items | UI for WinForms Documentation
+description: This article describes how one cam add/remove items with code.
 slug: winforms/carousel/using-radcarousel/carousel-items
 tags: carousel,items
 published: True
-position: 0
+position: 1
 previous_url: carousel-using-radcarousel-carousel-items
 ---
 
 # Carousel Items
  
-You can add to __RadCarousel__ control by using the __Items__ collection (programmatically or design-time), or by [binding to a data source]({%slug winforms/carousel/using-radcarousel/data-binding%}). You can use __RadItem__ descendants to populate the __RadCarousel.Items__ collection, for example __RadLabelElement__ or __RadButtonElement__.
+You can add items to __RadCarousel__ control by using the __Items__ collection (programmatically or design-time), or by [binding to a data source]({%slug winforms/carousel/using-radcarousel/data-binding%}). You can use __RadItem__ descendants to populate the __RadCarousel.Items__ collection, for example __RadLabelElement__ or __RadButtonElement__.
 
-## Adding Carousel Items
+### Adding Carousel Items
 
 To add items to the carousel without [data binding]({%slug winforms/carousel/using-radcarousel/data-binding%}), use the __Add__ method of the carousel collection. The example below adds a number of different RadItem types.
 
 ![carousel-using-radcorousel-carousel-items 001](images/carousel-using-radcorousel-carousel-items001.png)
 
-#### Adding Carousel Items 
+#### Adding Items 
 
 {{source=..\SamplesCS\Carousel\CarouselItems.cs region=carouselItems}} 
 {{source=..\SamplesVB\Carousel\CarouselItems.vb region=carouselItems}} 
@@ -61,20 +61,9 @@ RadCarousel1.Items.Add(radio3)
 
 {{endregion}} 
  
+### Deleting Items
 
-## Adding Carousel Items in Visual Studio design-time
-
-You can add carousel items using the Visual Studio designer. Open the __RadCarousel__ Smart Tag and choose Edit Items command.
-
-![carousel-using-radcorousel-carousel-items 002](images/carousel-using-radcorousel-carousel-items002.png)
-
-The __RadItem__ collection editor will open, where you can add different types of __RadElements:__![carousel-using-radcorousel-carousel-items 004](images/carousel-using-radcorousel-carousel-items004.png)
-
-## 
-
-Deleting Carousel Items
-
-To delete an entry from the carousel Items collection, use the __Remove__ or __RemoveAt__ methods. Remove takes the __RadItem__ instance to be deleted and __RemoveAt__ takes the index position of the item to be deleted:
+To delete an entry from the carousel __Items__ collection, use the __Remove__ or __RemoveAt__ methods. __Remove__ takes the __RadItem__ instance to be deleted and __RemoveAt__ takes the index position of the item to be deleted:
         
 #### Deleting Carousel Items 
 
@@ -95,4 +84,8 @@ RadCarousel1.Items.RemoveAt(0)
 {{endregion}} 
 
 
+# See Also
 
+ * [Customize Appearance]({%slug winforms/carousel/customizing-appearance%})
+ * [Data Binding]({%slug winforms/carousel/using-radcarousel/data-binding%})
+ * [Carousel Path]({%slug winforms/carousel/using-radcarousel/carousel-path%})
