@@ -1,7 +1,7 @@
 ---
 title: Oveview
 page_title: CommandBar | UI for WinForms Documentation
-description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility.
+description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
 slug: winforms/commandbar
 tags: commandbar
 published: True
@@ -11,9 +11,7 @@ previous_url: commandbar-overview
 
 # CommandBar
 
-
-
-RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility. More than just a collection of buttons, RadCommandBar hosts any RadControl, including combo boxes, text boxes, split buttons, drop-down buttons, toggle buttons and more. CommandBar can be moved, rearranged and resized at run time for easy end-user customization. RadCommandBar can be styled to match any user interface using a predefined theme or a theme you design yourself using the Visual Style Builder. ![commandbar-overview 001](images/commandbar-overview001.png)
+__RadCommandBar__ is a fully themeable tool strip that provides unprecedented flexibility. More than just a collection of buttons, __RadCommandBar__ hosts any RadControl, including combo boxes, text boxes, split buttons, drop-down buttons, toggle buttons and more. CommandBar can be moved, rearranged and resized at run time for easy end-user customization. __RadCommandBar__ can be styled to match any user interface using a predefined theme or a theme you design yourself using the Visual Style Builder. ![commandbar-overview 001](images/commandbar-overview001.png)
 
 
 | RELATED VIDEOS |  |
@@ -22,34 +20,14 @@ RadCommandBar is a fully theme-able tool strip that provides unprecedented flexi
 
 ## Orientation
 
-RadCommandBar supports horizontal and vertical orientation:
+__RadCommandBar__ supports horizontal and vertical orientation:
 
 ![commandbar-overview 002](images/commandbar-overview002.png)
 
 ## Theming
 
-The appearance of the RadCommandBar, containers and tool items can be tailored using one of the predefined themes, altering an existing theme in the Visual Style Builder, or by building your own custom themes with Visual Style Builder. Visual Style Builder lets you alter the look and feel of the toolstrip and of each individual item in the toolstrip, including dynamically changing properties using the new Visual Style Builder animation capabilities.
+The appearance of the __RadCommandBar__, containers and tool items can be tailored using one of the predefined themes, altering an existing theme in the Visual Style Builder, or by building your own custom themes with Visual Style Builder. Visual Style Builder lets you alter the look and feel of the tool strip and of each individual item in the tool strip, including dynamically changing properties using the new Visual Style Builder animation capabilities.
         
-Office2007Blue (ControlDefault)
-
-![commandbar-overview 003](images/commandbar-overview003.png)
-
-Office2007Silver
-
-![commandbar-overview 006](images/commandbar-overview006.png)
-
-Office2007Black
-
-![commandbar-overview 007](images/commandbar-overview007.png)
-
-Office2010
-
-![commandbar-overview 004](images/commandbar-overview004.png)
-
-Desert
-
-![commandbar-overview 005](images/commandbar-overview005.png)
-
 ## Overflow Handling
 
 The overflow button automatically displays items that don't have the real estate to display by default. The end user can also customize the toolstrip by adding and removing buttons.
