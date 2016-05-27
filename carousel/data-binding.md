@@ -23,7 +23,7 @@ This same pattern holds true, regardless of the type of data being bound to.
 
 ## Example
 
-The example below creates a generic list of an object called "Feature". "Feature" has "ID" and "Name" properties. In the __NewCarouselItemCreating__ event handler, `RadButtonElement` instances are created. In the __ItemDataBound__ event handler, the button text is assigned the "Name" property of the "Feature" object. The "ID" property of the "Feature" object is stored in the `RadButtonElement` Tag property for later use in the __Click__ event.
+The example below creates a generic list of an object called "Feature". "Feature" has "ID" and "Name" properties. In the __NewCarouselItemCreating__ event handler, `RadButtonElement` instances are created. In the __ItemDataBound__ event handler, the button text is assigned the "Name" property of the "Feature" object. The "ID" property of the "Feature" object is stored in the `RadButtonElement` __Tag__ property for later use in the `Click` event handler.
 
 ![carousel-using-radcorousel-carousel-data-binding 001](images/carousel-using-radcorousel-carousel-data-binding001.png)
 
@@ -192,4 +192,9 @@ End Sub
 {{endregion}} 
 
 
+# See Also
 
+ * [Customize Appearance]({%slug winforms/carousel/customizing-appearance%})
+ * [Working with items]({%slug  winforms/carousel/using-radcarousel/carousel-items%})
+ * [Data Binding]({%slug winforms/carousel/using-radcarousel/data-binding%})
+ * [Carousel Path]({%slug winforms/carousel/using-radcarousel/carousel-path%})

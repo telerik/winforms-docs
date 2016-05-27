@@ -18,6 +18,6 @@ __RadCarousel__ is a dynamic control, which utilizes a lot of animations in orde
 
 1. __Item Reflections__ are calculated dynamically, and impact performance. If you are using reflections, try setting the __ItemReflectionPercentage__ property to a lower value (even zero) to see whether this helps. 
 
-1. __Transparent background__. Consider turning off transparency (if your carousel is set with a transparent background) by setting a Carousel background image that mixes well with the form background.A very good example that demonstrates the RadCarousel with a well-mixed background is located in the Quick Start Framework under __RadCarousel__-> Music Library.
+1. __Transparent background__ consider turning off transparency (if your carousel is set with a transparent background) by setting a Carousel background image that mixes well with the form background.A very good example that demonstrates the RadCarousel with a well-mixed background is located in the Quick Start Framework under __RadCarousel__-> Music Library.
 
 1. __Number of items__ that you have in the carousel. Generally speaking, having more than 10 items will slow it down, especially if some of the above items are true.

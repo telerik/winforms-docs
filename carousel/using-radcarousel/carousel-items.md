@@ -11,7 +11,7 @@ previous_url: carousel-using-radcarousel-carousel-items
 
 # Carousel Items
  
-You can add to __RadCarousel__ control by using the __Items__ collection (programmatically or design-time), or by [binding to a data source]({%slug winforms/carousel/using-radcarousel/data-binding%}). You can use __RadItem__ descendants to populate the __RadCarousel.Items__ collection, for example __RadLabelElement__ or __RadButtonElement__.
+You can add items to __RadCarousel__ control by using the __Items__ collection (programmatically or design-time), or by [binding to a data source]({%slug winforms/carousel/using-radcarousel/data-binding%}). You can use __RadItem__ descendants to populate the __RadCarousel.Items__ collection, for example __RadLabelElement__ or __RadButtonElement__.
 
 ### Adding Carousel Items
 
@@ -63,7 +63,7 @@ RadCarousel1.Items.Add(radio3)
  
 ### Deleting Items
 
-To delete an entry from the carousel Items collection, use the __Remove__ or __RemoveAt__ methods. Remove takes the __RadItem__ instance to be deleted and __RemoveAt__ takes the index position of the item to be deleted:
+To delete an entry from the carousel __Items__ collection, use the __Remove__ or __RemoveAt__ methods. __Remove__ takes the __RadItem__ instance to be deleted and __RemoveAt__ takes the index position of the item to be deleted:
         
 #### Deleting Carousel Items 
 
@@ -84,4 +84,8 @@ RadCarousel1.Items.RemoveAt(0)
 {{endregion}} 
 
 
+# See Also
 
+ * [Customize Appearance]({%slug winforms/carousel/customizing-appearance%})
+ * [Data Binding]({%slug winforms/carousel/using-radcarousel/data-binding%})
+ * [Carousel Path]({%slug winforms/carousel/using-radcarousel/carousel-path%})

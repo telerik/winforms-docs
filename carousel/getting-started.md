@@ -5,7 +5,7 @@ description: RadCarousel is a navigation control that animates a series of eleme
 slug: winforms/carousel
 tags: carousel
 published: True
-position: 1
+position: 2
 previous_url: carousel-getting-started
 ---
 
@@ -20,7 +20,7 @@ The minimum required to use __RadCarousel__ is:
 The example below demonstrates creating an elliptical path and populating the carousel items with button and label elements.
 
 1\. In a new WinForms project, add a __RadCarousel__ to the default form. Set its __Dock__ property to *Fill*.
-2\. Add the following code to the Form_Load event handler:
+2\. Add the following code to the form's `Load` event handler:
 
 {{source=..\SamplesCS\Carousel\CarouselGettingStarted.cs region=carouselGettingStarted}}
 {{source=..\SamplesVB\Carousel\CarouselGettingStarted.vb region=carouselGettingStarted}}
@@ -78,6 +78,11 @@ End Sub
 
 ![carousel-getting-started 001](images/carousel-getting-started001.gif)
 
+# See Also
 
+ * [RadCarousel Properties]({%slug winforms/carousel/properties%})
+ * [Working with items]({%slug  winforms/carousel/using-radcarousel/carousel-items%})
+ * [Data Binding]({%slug winforms/carousel/using-radcarousel/data-binding%})
+ * [Carousel Path]({%slug winforms/carousel/using-radcarousel/carousel-path%})
 
 

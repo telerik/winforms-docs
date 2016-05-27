@@ -5,7 +5,7 @@ description: RadCarousel is a navigation control that animates a series of eleme
 slug: winforms/carousel/properties
 tags: carousel, properties, methods, events
 published: True
-position: 5
+position: 7
 previous_url: carousel/using-radcarousel/radcarousel-properties
 ---
 
@@ -74,6 +74,11 @@ previous_url: carousel/using-radcarousel/radcarousel-properties
 * __SelectedItemChanged:__ Occurs when the selected items is changed.
 
 
+# See Also
 
+ * [Customize Appearance]({%slug winforms/carousel/customizing-appearance%})
+ * [Working with items]({%slug  winforms/carousel/using-radcarousel/carousel-items%})
+ * [Data Binding]({%slug winforms/carousel/using-radcarousel/data-binding%})
+ * [Carousel Path]({%slug winforms/carousel/using-radcarousel/carousel-path%})
 
 
