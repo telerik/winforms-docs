@@ -53,8 +53,8 @@ Now let's create a simple application. Add four RadClocks to your RadForm and on
 
 ````C#
 sofiaClock.ShowSystemTime = true;
-londonClock.Offset = new TimeSpan(-2,0,0);
-newYorkClock.Offset = new TimeSpan(-6,0,0);
+londonClock.Offset = new TimeSpan(-2, 0, 0);
+newYorkClock.Offset = new TimeSpan(-6, 0, 0);
 tokyoClock.Offset = new TimeSpan(7, 0, 0);
 
 ````
