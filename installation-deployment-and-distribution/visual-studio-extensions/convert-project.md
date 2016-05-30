@@ -11,7 +11,7 @@ position: 2
 # Convert project
 
 
-__Convert to Telerik WinForms Application__
+__Add References__
 
 Telerik Visual Studio extensions Convert Project Wizard could be accessed through the Telerik menu when you need to convert an existing WinForms application to a Telerik WinForms application:
 
