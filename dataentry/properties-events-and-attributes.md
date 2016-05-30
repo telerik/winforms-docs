@@ -1,19 +1,17 @@
 ---
 title: Properties, events and attributes
 page_title: Properties, events and attributes | UI for WinForms Documentation
-description: Properties, events and attributes
+description: This article describes the most commonly used properties and events and attributes.
 slug: winforms/dataentry/properties,-events-and-attributes
-tags: properties,,events,and,attributes
+tags: properties,events,and,attributes
 published: True
-position: 5
+position: 4
 previous_url: dataentry-properties-events-and-attributes
 ---
 
 # Properties, events and attributes
 
-
-
-## Properties:
+### Properties:
 
 The main purpose of __RadDataEntry__ is to generate editors according to the object properties and to create simple data bindings for them. For this reason, most of the control properties will take effect only if they are set __before setting the DataSource.__
 

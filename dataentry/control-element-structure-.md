@@ -1,19 +1,15 @@
 ---
-title: Control Element Structure 
-page_title: Control Element Structure  | UI for WinForms Documentation
-description: Control Element Structure 
+title: Structure 
+page_title: Control Element Structure | UI for WinForms Documentation
+description: The article describes the DataEntry elements structure.
 slug: winforms/dataentry/control-element-structure-
 tags: control,element,structure,
 published: True
-position: 2
+position: 1
 previous_url: dataentry-overview-control-element-structure
 ---
 
 # Control Element Structure 
-
-
-
-## 
 
 __RadDataEntry__ control inherits __RadScrollablePanel__ control, so __RadDataEntry__ has support for horizontal and vertical scrollbars. In __RadDataEntry__ there is embedded Validation Panel that can be used to show some additional information according the validation requirements. The figure below demonstrates the structure of __RadDataEntry__.
  

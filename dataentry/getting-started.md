@@ -1,20 +1,17 @@
 ---
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+description: Step by step tutorial about how one can use RadDataEntry.
 slug: winforms/dataentry/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: dataentry-overview-getting-started
 ---
 
 # Getting Started
 
-
-
 This tutorial demonstrates how bind __RadDataEntry__ to business object and to a collection of objects.
-        
 
 ## Binding RadDataEntry to a single object
 
