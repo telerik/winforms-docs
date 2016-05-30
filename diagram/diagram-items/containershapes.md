@@ -83,7 +83,6 @@ RadDiagramShape shape = new RadDiagramShape()
     BackColor = Color.LimeGreen
 };
 shape.Position = new Telerik.Windows.Diagrams.Core.Point(100, 100);
-this.radDiagram1.AddShape(shape);
             
 RadDiagramContainerShape containerShape = new RadDiagramContainerShape();
 containerShape.Content = "Container header";
@@ -100,7 +99,6 @@ Dim shape As New RadDiagramShape() With { _
     .BackColor = Color.LimeGreen _
 }
 shape.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
-Me.RadDiagram1.AddShape(shape)
 Dim containerShape As New RadDiagramContainerShape()
 containerShape.Content = "Container header"
 containerShape.Location = New Point(10, 10)
@@ -112,11 +110,6 @@ containerShape.Items.Add(shape)
 
 {{endregion}} 
 
-
-
-
->note Note that it is important to add the __RadDiagramShape__ to __RadDiagram__ before adding it to the __RadDiagramContainerShape__ .
->
 
 >caption Fig.3 RadDiagramContainerShape.Items
 
