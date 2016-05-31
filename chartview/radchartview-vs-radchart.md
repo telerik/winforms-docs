@@ -13,10 +13,10 @@ previous_url: chartview-radchartview-vs.-radchart
 
 
 
-With Q2 2012 we expanded our data visualization controls with one new member - RadChartView for WinForms. Developed to address the limitations and deficiencies identified in its predecessor (RadChart), the new control allows you to create interactive, rich, animated charts and enables the end users to analyze complex data. The fact that RadChartView and RadChart rely on different chart engines implies that the two controls differ in their series types, functionalities and features. This also suggests that there is not a straightforward migration path from one to the other. You may wonder what benefits th new RadChartView will bring you over the old RadChart for WinForms. This help topic aims to compare the two controls, so that you can choose the one that fits your scenario better.
+With Q2 2012 we expanded our data visualization controls with one new member - __RadChartView__ for WinForms. Developed to address the limitations and deficiencies identified in its predecessor (__RadChart__), the new control allows you to create interactive, rich, animated charts and enables the end users to analyze complex data. The fact that __RadChartView__ and __RadChart__ rely on different chart engines implies that the two controls differ in their series types, functionalities and features. This also suggests that there is not a straightforward migration path from one to the other. You may wonder what benefits the new __RadChartView__ will bring you over the old __RadChart__ for WinForms. This help topic aims to compare the two controls, so that you can choose the one that fits your scenario better.
       
 
->note Generally, we would encourage you to use the new ChartView control for any new project development that you are starting now. As for your existing applications - the migration is possible but there is no straightforward migration path between RadChart and RadChartView due to the different approach taken in the development of RadChartView.
+>note Generally, we would encourage you to use the new ChartView control for any new project development that you are starting now. As for your existing applications - the migration is possible but there is no straightforward migration path between RadChart and RadChartView due to the different approach taken in the development of __RadChartView__.
 >
 
 
@@ -54,7 +54,7 @@ Below you can find a tabular version that highlights some of the main features e
 
 Notes:
 
-* RadChartView currently supports only standard Tooltips that cannot be modified. The functionality will be available in a future release.
+* __RadChartView__ currently supports only standard Tooltips that cannot be modified. The functionality will be available in a future release.
 
 Below you may find the full list of series types available at present (Q3 2012):
 

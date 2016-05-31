@@ -1,31 +1,31 @@
 ---
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
-description: RadCardView is a control developed on top of Telerik Presentation Framework which provides a way for displaying and editing text data as well as performing layout modifications
-slug: winforms/cardview/getting-started
+description: RadChartView is a control developed on top of Telerik Presentation Framework. It incorporates various series types handling different business scenarios.
+slug: winforms/chartview/getting-started
 tags: getting,started
 published: True
-position: 3
+position: 4
 ---
 
 # Getting Started
 
-The example below demonstrates setting up __RadCardView__ to display data from the *Northwind* database.
+The example below demonstrates setting up __RadChartView__ to display data from the *Northwind* database.
 
 ## Setting up the Form 
 
 1. Create a new __Windows Application__ project.
             
-1. Drop a __RadCardView__ control on the form.
+1. Drop a __RadChartView__ control on the form.
             
 
 ## Connecting to Data
 
 1. Open the __Smart Tag__ of the control and in the __Cooose DataSource__ drop down select *Add Project Data Source..*
-![radcardview-getting-started 001](images/radcardview-getting-started001.png)
+![radchartview-getting-started 001](images/radchartview-getting-started001.png)
 
 1. In the __Data Source Configuration Wizard__, select the *Database* icon, and click *Next*.
-![radcardview-getting-started 002](images/radcardview-getting-started002.png)
+![radchartview-getting-started 001](images/radchartview-getting-started002.png)
 
 1. In the __Choose a Database Model__ page of the wizard, select the *Dataset* icon and click *Next*.
             
@@ -46,15 +46,18 @@ The example below demonstrates setting up __RadCardView__ to display data from t
 1. In __Save the Connection String to the Application Configuration File__ page of the wizard, click the *Next* button. 
 
 1. In __Choose Database Objects__ page of the dialog, select the *Employees* table
-![radcardview-getting-started 003](images/radcardview-getting-started003.png)
+![radchartview-getting-started 001](images/radchartview-getting-started003.png)
 
-1. Now __RadCardView__ is bound to the *Employees* table from the *Northwind* database and should look like this screen shot below: 
-![grid-getting-started 005](images/radcardview-getting-started004.png)
+1. Back in the __Smart Tag__ of the control click on the *Series* drop-down button and open the __ChartSeries Collection Editor__ dialog. Add a new __BarSeries__.
+![radchartview-getting-started 001](images/radchartview-getting-started004.png)
+
+1. Set the __CategoryMember__ and __ValueMember__ fields to *LastName* and *Extension* respectively. Make sure that the __DataSource__ property points the *Employees* binding source instance.
+![radchartview-getting-started 001](images/radchartview-getting-started005.gif)
 
 1. Press __F5__ to run the application.
-![grid-getting-started 005](images/radcardview-getting-started005.gif)
+![grid-getting-started 005](images/radchartview-getting-started006.png)
             
 # See Also
 
-* [Structure]({%slug winforms/cardview/structure%})
-* [Design Time]({%slug winforms/cardview/design-time%})
+* [Design Time]({%slug winforms/chartview-/design-time%})
+* [Property Builder]({%slug winforms/chartview-/property-builder%})
