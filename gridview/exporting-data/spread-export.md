@@ -56,6 +56,44 @@ spreadExporter.RunExport("D:\exportedFile.xlsx", exportRenderer)
 
 {{endregion}} 
 
+The __RunExport__ method has several overloads allowing the user to export using a stream as well:
+
+####  Running export synchronously using a stream
+
+{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=StreamRunExport}} 
+{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=StreamRunExport}} 
+
+````C#
+string exportFile = @"..\..\exportedData.xlsx";
+using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
+{
+    Telerik.WinControls.Export.GridViewSpreadExport exporter = new Telerik.WinControls.Export.GridViewSpreadExport(this.radGridView1);
+    Telerik.WinControls.Export.SpreadExportRenderer renderer = new Telerik.WinControls.Export.SpreadExportRenderer();
+    exporter.RunExport(ms, renderer);
+
+    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
+    {
+        ms.WriteTo(fileStream);
+    }
+}
+
+````
+````VB.NET
+Dim exportFile As String = "..\..\exportedData.xlsx"
+Using ms As New System.IO.MemoryStream()
+    Dim exporter As New Telerik.WinControls.Export.GridViewSpreadExport(Me.radGridView1)
+    Dim renderer As New Telerik.WinControls.Export.SpreadExportRenderer()
+    exporter.RunExport(ms, renderer)
+    
+    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
+        ms.WriteTo(fileStream)
+    End Using
+End Using
+
+````
+
+{{endregion}} 
+
 ## Properties
 
 __ExportFormat__: Defines the format the grid will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
@@ -373,10 +411,7 @@ End Sub
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}  
 
 3\. Handle the notification events and report progress.
 
@@ -402,6 +437,57 @@ End Sub
 Private Sub spreadExporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
     RadMessageBox.Show("Async Spread Export Completed!")
     Me.RadProgressBar1.Value1 = 0
+End Sub
+
+````
+
+{{endregion}} 
+
+The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
+
+{{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=StreamRunExportAsync}} 
+{{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=StreamRunExportAsync}} 
+
+````C# 
+private void button1_Click(object sender, EventArgs e)
+{
+    System.IO.MemoryStream ms = new System.IO.MemoryStream();         
+    Telerik.WinControls.Export.GridViewSpreadExport exporter = new Telerik.WinControls.Export.GridViewSpreadExport(this.radGridView1);
+    Telerik.WinControls.Export.SpreadExportRenderer renderer = new Telerik.WinControls.Export.SpreadExportRenderer();
+    exporter.AsyncExportCompleted += exporter_AsyncExportCompleted;
+    exporter.RunExportAsync(ms, renderer);
+}
+    
+private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
+{
+    RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
+    string exportFile = @"..\..\exportedAsyncData.xlsx";
+    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
+    { 
+        MemoryStream ms = args.Result as MemoryStream;
+        ms.WriteTo(fileStream);
+        ms.Close();
+    }
+}
+
+````
+````VB.NET 
+Private Sub button1_Click(sender As Object, e As EventArgs)
+    Dim ms As New System.IO.MemoryStream()
+    Dim exporter As New Telerik.WinControls.Export.GridViewSpreadExport(Me.radGridView1)
+    Dim renderer As New Telerik.WinControls.Export.SpreadExportRenderer()
+    AddHandler exporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
+    exporter.RunExportAsync(ms, renderer)
+End Sub
+
+Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
+    Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
+    Dim exportFile As String = "..\..\exportedAsyncData.xlsx"
+    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
+        Dim ms As MemoryStream = TryCast(args.Result, MemoryStream)
+        ms.WriteTo(fileStream)
+        ms.Close()
+    End Using
 End Sub
 
 ````

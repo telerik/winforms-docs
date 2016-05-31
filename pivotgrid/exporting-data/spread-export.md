@@ -62,6 +62,44 @@ spreadExport.RunExport("..\..\exported-file.xlsx", New SpreadExportRenderer())
 
 {{endregion}}
 
+The __RunExport__ method has several overloads allowing the user to export using a stream as well:
+
+####  Running export synchronously using a stream
+
+{{source=..\SamplesCS\PivotGrid\PivotSpreadExport.cs region=StreamRunExport}} 
+{{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=StreamRunExport}} 
+
+````C#
+string exportFile = @"..\..\exportedData.xlsx";
+using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
+{
+    Telerik.WinControls.Export.PivotGridSpreadExport exporter = new Telerik.WinControls.Export.PivotGridSpreadExport(this.radPivotGrid1);
+    Telerik.WinControls.Export.SpreadExportRenderer renderer = new Telerik.WinControls.Export.SpreadExportRenderer();
+    exporter.RunExport(ms, renderer);
+    
+    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
+    {
+        ms.WriteTo(fileStream);
+    }
+}
+
+````
+````VB.NET
+Dim exportFile As String = "..\..\exportedData.xlsx"
+Using ms As New System.IO.MemoryStream()
+    Dim exporter As New Telerik.WinControls.Export.PivotGridSpreadExport(Me.RadPivotGrid1)
+    Dim renderer As New Telerik.WinControls.Export.SpreadExportRenderer()
+    exporter.RunExport(ms, renderer)
+
+    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
+        ms.WriteTo(fileStream)
+    End Using
+End Using
+
+````
+
+{{endregion}} 
+
 #### Running export asynchronously
 
 {{source=..\SamplesCS\PivotGrid\PivotSpreadExport.cs region=ExportingDataAsync}} 
@@ -79,6 +117,57 @@ spreadExport.RunExportAsync("..\..\exported-file.xlsx", New SpreadExportRenderer
 ````
 
 {{endregion}}
+
+The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
+
+{{source=..\SamplesCS\PivotGrid\PivotSpreadExport.cs region=StreamRunExportAsync}} 
+{{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=StreamRunExportAsync}} 
+
+````C# 
+private void buttonRunExportAsync_Click(object sender, EventArgs e)
+{
+    System.IO.MemoryStream ms = new System.IO.MemoryStream();         
+    Telerik.WinControls.Export.PivotGridSpreadExport exporter = new Telerik.WinControls.Export.PivotGridSpreadExport(this.radPivotGrid1);
+    Telerik.WinControls.Export.SpreadExportRenderer renderer = new Telerik.WinControls.Export.SpreadExportRenderer();
+    exporter.AsyncExportCompleted += exporter_AsyncExportCompleted;
+    exporter.RunExportAsync(ms, renderer);
+}
+
+private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
+{
+    RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
+    string exportFile = @"..\..\exportedAsyncData.xlsx";
+    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
+    { 
+        MemoryStream ms = args.Result as MemoryStream;
+        ms.WriteTo(fileStream);
+        ms.Close();
+    }
+}
+
+````
+````VB.NET 
+Private Sub buttonRunExportAsync_Click(sender As Object, e As EventArgs)
+    Dim ms As New System.IO.MemoryStream()
+    Dim exporter As New Telerik.WinControls.Export.PivotGridSpreadExport(Me.RadPivotGrid1)
+    Dim renderer As New Telerik.WinControls.Export.SpreadExportRenderer()
+    AddHandler exporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
+    exporter.RunExportAsync(ms, renderer)
+End Sub
+
+Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
+    Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
+    Dim exportFile As String = "..\..\exportedAsyncData.xlsx"
+    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
+        Dim ms As MemoryStream = TryCast(args.Result, MemoryStream)
+        ms.WriteTo(fileStream)
+        ms.Close()
+    End Using
+End Sub
+
+````
+
+{{endregion}} 
 
 ## Properties
 
