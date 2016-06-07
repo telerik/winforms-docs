@@ -451,24 +451,23 @@ End Sub
 
 The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
 
-{{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=StreamRunExportAsync}} 
-{{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=StreamRunExportAsync}} 
+{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=StreamRunExportAsync}} 
+{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=StreamRunExportAsync}} 
 
 ````C#
-        
-private void radButton1_Click(object sender, EventArgs e)
+private void button1_Click(object sender, EventArgs e)
 {
     System.IO.MemoryStream ms = new System.IO.MemoryStream();         
-    Telerik.WinControls.Export.GridViewPdfExport pdfExporter = new Telerik.WinControls.Export.GridViewPdfExport(this.radGridView1);
-    Telerik.WinControls.Export.PdfExportRenderer renderer = new Telerik.WinControls.Export.PdfExportRenderer();
-    pdfExporter.AsyncExportCompleted += pdfExporter_AsyncExportCompleted;
-    pdfExporter.RunExportAsync(ms, renderer);
+    Telerik.WinControls.Export.GridViewSpreadExport exporter = new Telerik.WinControls.Export.GridViewSpreadExport(this.radGridView1);
+    Telerik.WinControls.Export.SpreadExportRenderer renderer = new Telerik.WinControls.Export.SpreadExportRenderer();
+    exporter.AsyncExportCompleted += exporter_AsyncExportCompleted;
+    exporter.RunExportAsync(ms, renderer);
 }
-        
-private void pdfExporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
+    
+private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
 {
     RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
-    string exportFile = @"..\..\exportedAsyncData.pdf";
+    string exportFile = @"..\..\exportedAsyncData.xlsx";
     using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
     { 
         MemoryStream ms = args.Result as MemoryStream;
@@ -479,16 +478,17 @@ private void pdfExporter_AsyncExportCompleted(object sender, AsyncCompletedEvent
 
 ````
 ````VB.NET
-Private Sub radButton1_Click(sender As Object, e As EventArgs)
+Private Sub button1_Click(sender As Object, e As EventArgs)
     Dim ms As New System.IO.MemoryStream()
-    Dim pdfExporter As New Telerik.WinControls.Export.GridViewPdfExport(Me.RadGridView1)
-    Dim renderer As New Telerik.WinControls.Export.PdfExportRenderer()
-    AddHandler pdfExporter.AsyncExportCompleted, AddressOf pdfExporter_AsyncExportCompleted
-    pdfExporter.RunExportAsync(ms, renderer)
+    Dim exporter As New Telerik.WinControls.Export.GridViewSpreadExport(Me.radGridView1)
+    Dim renderer As New Telerik.WinControls.Export.SpreadExportRenderer()
+    AddHandler exporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
+    exporter.RunExportAsync(ms, renderer)
 End Sub
-Private Sub pdfExporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
+
+Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
     Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
-    Dim exportFile As String = "..\..\exportedAsyncData.pdf"
+    Dim exportFile As String = "..\..\exportedAsyncData.xlsx"
     Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
         Dim ms As MemoryStream = TryCast(args.Result, MemoryStream)
         ms.WriteTo(fileStream)
