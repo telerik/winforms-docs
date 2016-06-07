@@ -62,6 +62,44 @@ exporter.RunExport("C:\ExportedFile.xlsx", renderer)
 
 {{endregion}}
 
+The __RunExport__ method has several overloads allowing the user to export using a stream as well:
+
+####  Running export synchronously using a stream
+
+{{source=..\SamplesCS\ListView\SpreadExportCode.cs region=StreamRunExport}} 
+{{source=..\SamplesVB\ListView\SpreadExportCode.vb region=StreamRunExport}} 
+
+````C#
+ string exportFile = @"..\..\exportedData.xlsx";
+ using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
+ {
+     Telerik.WinControls.Export.ListViewSpreadExport spreadExporter = new Telerik.WinControls.Export.ListViewSpreadExport(this.radListView1);
+     Telerik.WinControls.Export.SpreadExportRenderer spreadRenderer = new Telerik.WinControls.Export.SpreadExportRenderer();
+     spreadExporter.RunExport(ms, spreadRenderer);
+     
+     using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
+     {
+         ms.WriteTo(fileStream);
+     }
+ }
+
+````
+````VB.NET
+Dim exportFile As String = "..\..\exportedData.xlsx"
+Using ms As New System.IO.MemoryStream()
+    Dim spreadExporter As New Telerik.WinControls.Export.ListViewSpreadExport(Me.radListView1)
+    Dim spreadRenderer As New Telerik.WinControls.Export.SpreadExportRenderer()
+    spreadExporter.RunExport(ms, spreadRenderer)
+
+    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
+        ms.WriteTo(fileStream)
+    End Using
+End Using
+
+````
+
+{{endregion}} 
+
 ## Properties
 
 * __ExportFormat__: Defines the format the ListView will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
@@ -196,6 +234,59 @@ End Sub
 ````
 
 {{endregion}}
+
+The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
+
+####  Running export asynchronously using a stream
+
+{{source=..\SamplesCS\ListView\SpreadExportCode.cs region=StreamRunExportAsync}} 
+{{source=..\SamplesVB\ListView\SpreadExportCode.vb region=StreamRunExportAsync}} 
+
+````C# 
+private void buttonRunExportAsync_Click(object sender, EventArgs e)
+{
+    System.IO.MemoryStream ms = new System.IO.MemoryStream();         
+    Telerik.WinControls.Export.ListViewSpreadExport spreadExporter = new Telerik.WinControls.Export.ListViewSpreadExport(this.radListView1);
+    Telerik.WinControls.Export.SpreadExportRenderer spreadRenderer = new Telerik.WinControls.Export.SpreadExportRenderer();
+    spreadExporter.AsyncExportCompleted += exporter_AsyncExportCompleted;
+    spreadExporter.RunExportAsync(ms, spreadRenderer);
+}
+
+private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
+{
+    RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
+    string exportFile = @"..\..\exportedAsyncData.xlsx";
+    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
+    { 
+        MemoryStream ms = args.Result as MemoryStream;
+        ms.WriteTo(fileStream);
+        ms.Close();
+    }
+}
+
+````
+````VB.NET 
+ Private Sub buttonRunExportAsync_Click(sender As Object, e As EventArgs)
+     Dim ms As New System.IO.MemoryStream()
+     Dim spreadExporter As New Telerik.WinControls.Export.ListViewSpreadExport(Me.radListView1)
+     Dim spreadRenderer As New Telerik.WinControls.Export.SpreadExportRenderer()
+     AddHandler spreadExporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
+     spreadExporter.RunExportAsync(ms, spreadRenderer)
+ End Sub
+
+ Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
+     Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
+     Dim exportFile As String = "..\..\exportedAsyncData.xlsx"
+     Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
+         Dim ms As MemoryStream = TryCast(args.Result, MemoryStream)
+         ms.WriteTo(fileStream)
+         ms.Close()
+     End Using
+ End Sub
+
+````
+
+{{endregion}} 
 
 ## Async Export Methods and Events
 

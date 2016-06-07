@@ -23,6 +23,7 @@ This article lists the .NET controls which can be converted to their UI for WinF
 1. [Label]({%slug winforms/winforms-converter/supported-controls/label%})
 1. [ListBox]({%slug winforms/winforms-converter/supported-controls/listbox%})
 1. [MaskedTextBox]({%slug winforms/winforms-converter/supported-controls/maskedtextbox%})
+2. [MenuStrip]({%slug winforms/winforms-converter/supported-controls/menustrip%})
 1. [NumericUpDown]({%slug winforms/winforms-converter/supported-controls/numericupdown%})
 1. [Panel]({%slug winforms/winforms-converter/supported-controls/panel%})
 1. [ProgressBar]({%slug winforms/winforms-converter/supported-controls/progressbar%})

@@ -107,6 +107,9 @@ navigation:
     cardview/features:
         title: Features
         position: 5
+    cardview/customizing-appearance:
+        title: Customzing Appearance
+        position: 6
     carousel:
         title: Carousel
         position: 10

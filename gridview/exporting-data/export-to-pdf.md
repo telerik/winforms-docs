@@ -319,6 +319,46 @@ pdfExporter.RunExport(fileName)
 
 {{endregion}} 
 
+
+The __RunExport__ method has several overloads allowing the user to export using a stream as well:
+
+####  Running export synchronously using a stream
+
+{{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=StreamRunExport}} 
+{{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=StreamRunExport}} 
+
+````C#
+string exportFile = @"..\..\exportedData.pdf";
+using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
+{
+    Telerik.WinControls.Export.GridViewPdfExport exporter = new Telerik.WinControls.Export.GridViewPdfExport(this.radGridView1);
+    Telerik.WinControls.Export.PdfExportRenderer renderer = new Telerik.WinControls.Export.PdfExportRenderer();
+    exporter.RunExport(ms, renderer);
+
+    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
+    {
+        ms.WriteTo(fileStream);
+    }
+}
+
+````
+````VB.NET
+Dim exportFile As String = "..\..\exportedData.pdf"
+Using ms As New System.IO.MemoryStream()
+    Dim exporter As New Telerik.WinControls.Export.GridViewPdfExport(Me.RadGridView1)
+    Dim renderer As New Telerik.WinControls.Export.PdfExportRenderer()
+    exporter.RunExport(ms, renderer)
+
+    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
+        ms.WriteTo(fileStream)
+    End Using
+End Using
+
+````
+
+{{endregion}} 
+
+
 * RunExportAsync: Runs on a thread different than the UI thread.
 
 #### Running export asynchronously
@@ -339,6 +379,58 @@ pdfExporter.RunExportAsync(fileNameAsync)
 
 {{endregion}} 
 
+
+The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
+
+{{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=StreamRunExportAsync}} 
+{{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=StreamRunExportAsync}} 
+
+````C# 
+private void radButton1_Click(object sender, EventArgs e)
+{
+    System.IO.MemoryStream ms = new System.IO.MemoryStream();         
+    Telerik.WinControls.Export.GridViewPdfExport pdfExporter = new Telerik.WinControls.Export.GridViewPdfExport(this.radGridView1);
+    Telerik.WinControls.Export.PdfExportRenderer renderer = new Telerik.WinControls.Export.PdfExportRenderer();
+    pdfExporter.AsyncExportCompleted += pdfExporter_AsyncExportCompleted;
+    pdfExporter.RunExportAsync(ms, renderer);
+}
+
+private void pdfExporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
+{
+    RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
+    string exportFile = @"..\..\exportedAsyncData.pdf";
+    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
+    { 
+        MemoryStream ms = args.Result as MemoryStream;
+        ms.WriteTo(fileStream);
+        ms.Close();
+    }
+}
+
+````
+````VB.NET 
+Private Sub radButton1_Click(sender As Object, e As EventArgs)
+    Dim ms As New System.IO.MemoryStream()
+    Dim pdfExporter As New Telerik.WinControls.Export.GridViewPdfExport(Me.RadGridView1)
+    Dim renderer As New Telerik.WinControls.Export.PdfExportRenderer()
+    AddHandler pdfExporter.AsyncExportCompleted, AddressOf pdfExporter_AsyncExportCompleted
+    pdfExporter.RunExportAsync(ms, renderer)
+End Sub
+
+Private Sub pdfExporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
+    Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
+    Dim exportFile As String = "..\..\exportedAsyncData.pdf"
+    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
+        Dim ms As MemoryStream = TryCast(args.Result, MemoryStream)
+        ms.WriteTo(fileStream)
+        ms.Close()
+    End Using
+End Sub
+
+````
+
+{{endregion}} 
+
 ## Events
 
 * CellFormatting: Fires for every cell which is being exported
@@ -346,8 +438,6 @@ pdfExporter.RunExportAsync(fileNameAsync)
 * CellPaint: Fires when a cell is being drawn
 
 ## Exporting Data using ExportToPDF object
-
-
 
 __Initialization__
 

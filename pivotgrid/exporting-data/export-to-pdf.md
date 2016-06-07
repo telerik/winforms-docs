@@ -38,6 +38,44 @@ exporter.RunExport("C:\PivotData.pdf", renderer)
 
 {{endregion}} 
 
+The __RunExport__ method has several overloads allowing the user to export using a stream as well:
+
+####  Running export synchronously using a stream
+
+{{source=..\SamplesCS\Pivotgrid\PdfExportCode.cs region=StreamRunExport}} 
+{{source=..\SamplesVB\Pivotgrid\PdfExportCode.vb region=StreamRunExport}} 
+
+````C#
+string exportFile = @"..\..\exportedData.pdf";
+using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
+{
+    Telerik.WinControls.Export.PivotGridPdfExport pdfExporter = new Telerik.WinControls.Export.PivotGridPdfExport(radPivotGrid1);
+    Telerik.WinControls.Export.PdfExportRenderer pdfRenderer = new Telerik.WinControls.Export.PdfExportRenderer();
+    pdfExporter.RunExport(ms, pdfRenderer);
+
+    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
+    {
+        ms.WriteTo(fileStream);
+    }
+}
+
+````
+````VB.NET
+Dim exportFile As String = "..\..\exportedData.pdf"
+Using ms As New System.IO.MemoryStream()
+    Dim pdfExporter As New Telerik.WinControls.Export.PivotGridPdfExport(radPivotGrid1)
+    Dim pdfRenderer As New Telerik.WinControls.Export.PdfExportRenderer()
+    pdfExporter.RunExport(ms, pdfRenderer)
+
+    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
+        ms.WriteTo(fileStream)
+    End Using
+End Using
+
+````
+
+{{endregion}} 
+
 ## Properties
 
 * __ExportVisualSettings:__ Gets or sets a value indicating whether the visual settings should be exported.
@@ -93,6 +131,57 @@ exporter.RunExportAsync("C:\PivotData.pdf", renderer)
 ````
 
 {{endregion}}
+
+The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
+
+{{source=..\SamplesCS\Pivotgrid\PdfExportCode.cs region=StreamRunExportAsync}} 
+{{source=..\SamplesVB\Pivotgrid\PdfExportCode.vb region=StreamRunExportAsync}} 
+
+````C# 
+private void buttonRunExportAsync_Click(object sender, EventArgs e)
+{
+    System.IO.MemoryStream ms = new System.IO.MemoryStream();         
+    Telerik.WinControls.Export.PivotGridPdfExport exporter = new Telerik.WinControls.Export.PivotGridPdfExport(radPivotGrid1);
+    Telerik.WinControls.Export.PdfExportRenderer renderer = new Telerik.WinControls.Export.PdfExportRenderer();
+    exporter.AsyncExportCompleted += exporter_AsyncExportCompleted;
+    exporter.RunExportAsync(ms, renderer);
+}
+    
+private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
+{
+    RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
+    string exportFile = @"..\..\exportedAsyncData.pdf";
+    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
+    { 
+        MemoryStream ms = args.Result as MemoryStream;
+        ms.WriteTo(fileStream);
+        ms.Close();
+    }
+}
+
+````
+````VB.NET 
+Private Sub buttonRunExportAsync_Click(sender As Object, e As EventArgs)
+    Dim ms As New System.IO.MemoryStream()
+    Dim exporter As New Telerik.WinControls.Export.PivotGridPdfExport(radPivotGrid1)
+    Dim renderer As New Telerik.WinControls.Export.PdfExportRenderer()
+    AddHandler exporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
+    exporter.RunExportAsync(ms, renderer)
+End Sub
+
+Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
+    Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
+    Dim exportFile As String = "..\..\exportedAsyncData.pdf"
+    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
+        Dim ms As MemoryStream = TryCast(args.Result, MemoryStream)
+        ms.WriteTo(fileStream)
+        ms.Close()
+    End Using
+End Sub
+
+````
+
+{{endregion}} 
 
 There are two events that can be used with the asynchronous export:
 
