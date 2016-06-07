@@ -80,6 +80,7 @@ The __PivotGrid__ can be exported asynchronously as well. The following example 
 {{source=..\SamplesVB\Pivotgrid\PdfExportCode.vb region=Async}} 
 
 ````C#
+            
 PivotGridPdfExport exporter = new PivotGridPdfExport(radPivotGrid1);
 PdfExportRenderer renderer = new PdfExportRenderer();
 exporter.RunExportAsync(@"C:\PivotData.pdf", renderer);

@@ -42,6 +42,7 @@ To use the spread export functionality, an instance of the __GridViewSpreadExpor
 {{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=Export}} 
 
 ````C#
+            
 GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
 SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
 spreadExporter.RunExport("D:\\exportedFile.xlsx", exportRenderer);
@@ -164,11 +165,13 @@ Here is an example of formatting the exported grid:
 {{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=CellFormatting}} 
 
 ````C#
+    
 void spreadExporter_CellFormatting(object sender, Telerik.WinControls.Export.CellFormattingEventArgs e)
 {
     if (e.GridRowInfoType == typeof(GridViewTableHeaderRowInfo))
     {
         e.CellStyleInfo.Underline = true;
+        
         if (e.GridCellInfo.RowInfo.HierarchyLevel == 0)
         {
             e.CellStyleInfo.BackColor = Color.DeepSkyBlue;
@@ -178,6 +181,7 @@ void spreadExporter_CellFormatting(object sender, Telerik.WinControls.Export.Cel
             e.CellStyleInfo.BackColor = Color.LightSkyBlue;
         }
     }
+        
     if (e.GridRowInfoType == typeof(GridViewHierarchyRowInfo))
     {
         if (e.GridCellInfo.RowInfo.HierarchyLevel == 0)
@@ -244,10 +248,11 @@ __RadGridView__ can export its grouped content by simply setting the __ExportChi
 {{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=ExportingGroupedData}} 
 
 ````C#
+            
 GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
 spreadExporter.ExportChildRowsGrouped = true;
 SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
-spreadExporter.RunExport(@"..\..\exportedFile.xlsx",exportRenderer);
+spreadExporter.RunExport(@"..\..\exportedFile.xlsx", exportRenderer);
 
 ````
 ````VB.NET

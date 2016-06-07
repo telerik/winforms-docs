@@ -55,7 +55,7 @@ exporter.RunExport(@"C:\ExportedFile.xlsx", renderer);
 
 ````
 ````VB.NET
-Dim exporter As New TreeViewSpreadExport(Me.radListView1)
+Dim exporter As New TreeViewSpreadExport(Me.radTreeView1)
 Dim renderer As New SpreadExportRenderer()
 exporter.RunExport("C:\ExportedFile.xlsx", renderer)
 
@@ -176,7 +176,7 @@ private void btnExportAsync_Click(object sender, EventArgs e)
 ````
 ````VB.NET
 Private Sub btnExportAsync_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Dim spreadExporter As New TreeViewSpreadExport(Me.radListView1)
+    Dim spreadExporter As New TreeViewSpreadExport(Me.radTreeView1)
     AddHandler spreadExporter.AsyncExportProgressChanged, AddressOf spreadExporter_AsyncExportProgressChanged
     AddHandler spreadExporter.AsyncExportCompleted, AddressOf spreadExporter_AsyncExportCompleted
     Dim exportRenderer As New SpreadExportRenderer()
