@@ -39,6 +39,7 @@ Before running export to PDF, you have to initialize the __GridViewPdfExport__ c
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=InitializePdfExporter}} 
 
 ````C#
+            
 Telerik.WinControls.Export.GridViewPdfExport pdfExporter = new Telerik.WinControls.Export.GridViewPdfExport(this.radGridView1);
 
 ````
@@ -59,6 +60,7 @@ The __FileExtension__ property allows you to change the default (*.pdf) file ext
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetFileExtension}} 
 
 ````C#
+            
 pdfExporter.FileExtension = ".pdf";
 
 ````
@@ -86,6 +88,7 @@ __GridViewPdfExport__ uses the default enumeration of hidden column and row sett
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetHiddenPref}} 
 
 ````C#
+            
 pdfExporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
 
 ````
@@ -106,6 +109,7 @@ Bofore applying customizations to the headers and footers we need to enable them
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=ShowHeaderAndFooter}} 
 
 ````C#
+            
 pdfExporter.ShowHeaderAndFooter = true;
 
 ````
@@ -123,15 +127,18 @@ pdfExporter.ShowHeaderAndFooter = True
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=CustomizeHeaderAndFooter}} 
 
 ````C#
+            
 pdfExporter.HeaderHeight = 30;
 pdfExporter.HeaderFont = new Font("Arial", 22);
 pdfExporter.Logo = System.Drawing.Image.FromFile(@"C:\MyLogo.png");
 pdfExporter.LeftHeader = "[Logo]";
 pdfExporter.LogoAlignment = ContentAlignment.MiddleLeft;
 pdfExporter.LogoLayout = Telerik.WinControls.Export.LogoLayout.Fit;
+            
 pdfExporter.MiddleHeader = "Middle header";
 pdfExporter.RightHeader = "Right header";
 pdfExporter.ReverseHeaderOnEvenPages = true;
+            
 pdfExporter.FooterHeight = 30;
 pdfExporter.FooterFont = new Font("Arial", 22);
 pdfExporter.LeftFooter = "Left footer";
@@ -179,6 +186,7 @@ The __SummariesExportOption__ property to specifies how to export summary items.
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetSummaryItems}} 
 
 ````C#
+            
 pdfExporter.SummariesExportOption = SummariesOption.ExportAll;
 
 ````
@@ -199,6 +207,7 @@ Use this property to make the grid fits to the PDF page width.
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetFitToPage}} 
 
 ````C#
+            
 pdfExporter.FitToPageWidth = true;
 
 ````
@@ -219,6 +228,7 @@ You can use __Scale__ to change the grid size on the pdf. For example if __Scale
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=SetScale}} 
 
 ````C#
+            
 pdfExporter.Scale = 1.2;
 
 ````
@@ -245,6 +255,7 @@ The __PDFExportSettings__ property supports various settings on PDF file level. 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=ExportSettings}} 
 
 ````C#
+            
 pdfExporter.ExportSettings.Description = "Document Description";
 
 ````
@@ -285,6 +296,7 @@ The __PDFExportSettings__ property supports various settings on PDF file level. 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=ExportSettings}} 
 
 ````C#
+            
 pdfExporter.ExportSettings.Description = "Document Description";
 
 ````
@@ -307,6 +319,7 @@ Two methods are responsible for exporting data to PDF. Both receive as a paramet
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=RunExport}} 
 
 ````C#
+            
 string fileName = "c:\\ExportedData.pdf";
 pdfExporter.RunExport(fileName);
 
@@ -367,6 +380,7 @@ End Using
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=RunExportAsync}} 
 
 ````C#
+            
 string fileNameAsync = "c:\\ExportedDataAsync.pdf";
 pdfExporter.RunExportAsync(fileNameAsync);
 

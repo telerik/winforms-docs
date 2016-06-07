@@ -50,6 +50,7 @@ To use the spread export functionality, an instance of the __PivotGridSpreadExpo
 {{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=ExportingData}} 
 
 ````C#
+            
 PivotGridSpreadExport spreadExport = new PivotGridSpreadExport(this.radPivotGrid1);
 spreadExport.RunExport(@"..\..\exported-file.xlsx", new SpreadExportRenderer());
 
@@ -219,6 +220,7 @@ This is how the displayed in Fig. 1 pivot grid looks after handling the __CellFo
 {{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=Events}} 
 
 ````C#
+    
 private void spreadExport_CellFormatting(object sender, PivotGridSpreadExportCellFormattingEventArgs e)
 {
     if (e.ColumnIndex % 2 == 0 && e.RowIndex % 2 != 0)
