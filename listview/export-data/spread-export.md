@@ -70,18 +70,19 @@ The __RunExport__ method has several overloads allowing the user to export using
 {{source=..\SamplesVB\ListView\SpreadExportCode.vb region=StreamRunExport}} 
 
 ````C#
- string exportFile = @"..\..\exportedData.xlsx";
- using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
- {
-     Telerik.WinControls.Export.ListViewSpreadExport spreadExporter = new Telerik.WinControls.Export.ListViewSpreadExport(this.radListView1);
-     Telerik.WinControls.Export.SpreadExportRenderer spreadRenderer = new Telerik.WinControls.Export.SpreadExportRenderer();
-     spreadExporter.RunExport(ms, spreadRenderer);
-     
-     using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
-     {
-         ms.WriteTo(fileStream);
-     }
- }
+            
+string exportFile = @"..\..\exportedData.xlsx";
+using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
+{
+    Telerik.WinControls.Export.ListViewSpreadExport spreadExporter = new Telerik.WinControls.Export.ListViewSpreadExport(radListView1);
+    Telerik.WinControls.Export.SpreadExportRenderer spreadRenderer = new Telerik.WinControls.Export.SpreadExportRenderer();
+    spreadExporter.RunExport(ms, spreadRenderer);
+    
+    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
+    {
+        ms.WriteTo(fileStream);
+    }
+}
 
 ````
 ````VB.NET
@@ -90,7 +91,6 @@ Using ms As New System.IO.MemoryStream()
     Dim spreadExporter As New Telerik.WinControls.Export.ListViewSpreadExport(Me.radListView1)
     Dim spreadRenderer As New Telerik.WinControls.Export.SpreadExportRenderer()
     spreadExporter.RunExport(ms, spreadRenderer)
-
     Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
         ms.WriteTo(fileStream)
     End Using
@@ -242,7 +242,8 @@ The __RunExportAsync__ method has several overloads allowing the user to export 
 {{source=..\SamplesCS\ListView\SpreadExportCode.cs region=StreamRunExportAsync}} 
 {{source=..\SamplesVB\ListView\SpreadExportCode.vb region=StreamRunExportAsync}} 
 
-````C# 
+````C#
+        
 private void buttonRunExportAsync_Click(object sender, EventArgs e)
 {
     System.IO.MemoryStream ms = new System.IO.MemoryStream();         
@@ -251,7 +252,7 @@ private void buttonRunExportAsync_Click(object sender, EventArgs e)
     spreadExporter.AsyncExportCompleted += exporter_AsyncExportCompleted;
     spreadExporter.RunExportAsync(ms, spreadRenderer);
 }
-
+        
 private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
 {
     RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
@@ -265,24 +266,23 @@ private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArg
 }
 
 ````
-````VB.NET 
- Private Sub buttonRunExportAsync_Click(sender As Object, e As EventArgs)
-     Dim ms As New System.IO.MemoryStream()
-     Dim spreadExporter As New Telerik.WinControls.Export.ListViewSpreadExport(Me.radListView1)
-     Dim spreadRenderer As New Telerik.WinControls.Export.SpreadExportRenderer()
-     AddHandler spreadExporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
-     spreadExporter.RunExportAsync(ms, spreadRenderer)
- End Sub
-
- Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
-     Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
-     Dim exportFile As String = "..\..\exportedAsyncData.xlsx"
-     Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
-         Dim ms As MemoryStream = TryCast(args.Result, MemoryStream)
-         ms.WriteTo(fileStream)
-         ms.Close()
-     End Using
- End Sub
+````VB.NET
+Private Sub buttonRunExportAsync_Click(sender As Object, e As EventArgs)
+    Dim ms As New System.IO.MemoryStream()
+    Dim spreadExporter As New Telerik.WinControls.Export.ListViewSpreadExport(Me.radListView1)
+    Dim spreadRenderer As New Telerik.WinControls.Export.SpreadExportRenderer()
+    AddHandler spreadExporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
+    spreadExporter.RunExportAsync(ms, spreadRenderer)
+End Sub
+Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
+    Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
+    Dim exportFile As String = "..\..\exportedAsyncData.xlsx"
+    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
+        Dim ms As MemoryStream = TryCast(args.Result, MemoryStream)
+        ms.WriteTo(fileStream)
+        ms.Close()
+    End Using
+End Sub
 
 ````
 

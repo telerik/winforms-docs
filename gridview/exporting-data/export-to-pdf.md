@@ -341,13 +341,14 @@ The __RunExport__ method has several overloads allowing the user to export using
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=StreamRunExport}} 
 
 ````C#
+            
 string exportFile = @"..\..\exportedData.pdf";
 using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
 {
     Telerik.WinControls.Export.GridViewPdfExport exporter = new Telerik.WinControls.Export.GridViewPdfExport(this.radGridView1);
     Telerik.WinControls.Export.PdfExportRenderer renderer = new Telerik.WinControls.Export.PdfExportRenderer();
     exporter.RunExport(ms, renderer);
-
+    
     using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
     {
         ms.WriteTo(fileStream);
@@ -361,7 +362,6 @@ Using ms As New System.IO.MemoryStream()
     Dim exporter As New Telerik.WinControls.Export.GridViewPdfExport(Me.RadGridView1)
     Dim renderer As New Telerik.WinControls.Export.PdfExportRenderer()
     exporter.RunExport(ms, renderer)
-
     Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
         ms.WriteTo(fileStream)
     End Using
@@ -399,7 +399,8 @@ The __RunExportAsync__ method has several overloads allowing the user to export 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=StreamRunExportAsync}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=StreamRunExportAsync}} 
 
-````C# 
+````C#
+        
 private void radButton1_Click(object sender, EventArgs e)
 {
     System.IO.MemoryStream ms = new System.IO.MemoryStream();         
@@ -408,7 +409,7 @@ private void radButton1_Click(object sender, EventArgs e)
     pdfExporter.AsyncExportCompleted += pdfExporter_AsyncExportCompleted;
     pdfExporter.RunExportAsync(ms, renderer);
 }
-
+        
 private void pdfExporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
 {
     RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
@@ -422,7 +423,7 @@ private void pdfExporter_AsyncExportCompleted(object sender, AsyncCompletedEvent
 }
 
 ````
-````VB.NET 
+````VB.NET
 Private Sub radButton1_Click(sender As Object, e As EventArgs)
     Dim ms As New System.IO.MemoryStream()
     Dim pdfExporter As New Telerik.WinControls.Export.GridViewPdfExport(Me.RadGridView1)
@@ -430,7 +431,6 @@ Private Sub radButton1_Click(sender As Object, e As EventArgs)
     AddHandler pdfExporter.AsyncExportCompleted, AddressOf pdfExporter_AsyncExportCompleted
     pdfExporter.RunExportAsync(ms, renderer)
 End Sub
-
 Private Sub pdfExporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
     Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
     Dim exportFile As String = "..\..\exportedAsyncData.pdf"

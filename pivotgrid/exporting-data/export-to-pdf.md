@@ -52,7 +52,6 @@ using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
     Telerik.WinControls.Export.PivotGridPdfExport pdfExporter = new Telerik.WinControls.Export.PivotGridPdfExport(radPivotGrid1);
     Telerik.WinControls.Export.PdfExportRenderer pdfRenderer = new Telerik.WinControls.Export.PdfExportRenderer();
     pdfExporter.RunExport(ms, pdfRenderer);
-
     using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
     {
         ms.WriteTo(fileStream);
@@ -66,7 +65,6 @@ Using ms As New System.IO.MemoryStream()
     Dim pdfExporter As New Telerik.WinControls.Export.PivotGridPdfExport(radPivotGrid1)
     Dim pdfRenderer As New Telerik.WinControls.Export.PdfExportRenderer()
     pdfExporter.RunExport(ms, pdfRenderer)
-
     Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
         ms.WriteTo(fileStream)
     End Using
@@ -138,7 +136,8 @@ The __RunExportAsync__ method has several overloads allowing the user to export 
 {{source=..\SamplesCS\Pivotgrid\PdfExportCode.cs region=StreamRunExportAsync}} 
 {{source=..\SamplesVB\Pivotgrid\PdfExportCode.vb region=StreamRunExportAsync}} 
 
-````C# 
+````C#
+    
 private void buttonRunExportAsync_Click(object sender, EventArgs e)
 {
     System.IO.MemoryStream ms = new System.IO.MemoryStream();         
@@ -161,7 +160,7 @@ private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArg
 }
 
 ````
-````VB.NET 
+````VB.NET
 Private Sub buttonRunExportAsync_Click(sender As Object, e As EventArgs)
     Dim ms As New System.IO.MemoryStream()
     Dim exporter As New Telerik.WinControls.Export.PivotGridPdfExport(radPivotGrid1)
@@ -169,7 +168,6 @@ Private Sub buttonRunExportAsync_Click(sender As Object, e As EventArgs)
     AddHandler exporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
     exporter.RunExportAsync(ms, renderer)
 End Sub
-
 Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
     Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
     Dim exportFile As String = "..\..\exportedAsyncData.pdf"

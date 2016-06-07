@@ -71,6 +71,7 @@ The __RunExport__ method has several overloads allowing the user to export using
 {{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=StreamRunExport}} 
 
 ````C#
+            
 string exportFile = @"..\..\exportedData.xlsx";
 using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
 {
@@ -91,7 +92,6 @@ Using ms As New System.IO.MemoryStream()
     Dim exporter As New Telerik.WinControls.Export.PivotGridSpreadExport(Me.RadPivotGrid1)
     Dim renderer As New Telerik.WinControls.Export.SpreadExportRenderer()
     exporter.RunExport(ms, renderer)
-
     Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
         ms.WriteTo(fileStream)
     End Using
@@ -124,7 +124,8 @@ The __RunExportAsync__ method has several overloads allowing the user to export 
 {{source=..\SamplesCS\PivotGrid\PivotSpreadExport.cs region=StreamRunExportAsync}} 
 {{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=StreamRunExportAsync}} 
 
-````C# 
+````C#
+        
 private void buttonRunExportAsync_Click(object sender, EventArgs e)
 {
     System.IO.MemoryStream ms = new System.IO.MemoryStream();         
@@ -133,7 +134,7 @@ private void buttonRunExportAsync_Click(object sender, EventArgs e)
     exporter.AsyncExportCompleted += exporter_AsyncExportCompleted;
     exporter.RunExportAsync(ms, renderer);
 }
-
+        
 private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
 {
     RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
@@ -147,7 +148,7 @@ private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArg
 }
 
 ````
-````VB.NET 
+````VB.NET
 Private Sub buttonRunExportAsync_Click(sender As Object, e As EventArgs)
     Dim ms As New System.IO.MemoryStream()
     Dim exporter As New Telerik.WinControls.Export.PivotGridSpreadExport(Me.RadPivotGrid1)
@@ -155,7 +156,6 @@ Private Sub buttonRunExportAsync_Click(sender As Object, e As EventArgs)
     AddHandler exporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
     exporter.RunExportAsync(ms, renderer)
 End Sub
-
 Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
     Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
     Dim exportFile As String = "..\..\exportedAsyncData.xlsx"
