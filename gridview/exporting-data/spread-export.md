@@ -455,6 +455,7 @@ The __RunExportAsync__ method has several overloads allowing the user to export 
 {{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=StreamRunExportAsync}} 
 
 ````C#
+    
 private void button1_Click(object sender, EventArgs e)
 {
     System.IO.MemoryStream ms = new System.IO.MemoryStream();         
@@ -485,7 +486,6 @@ Private Sub button1_Click(sender As Object, e As EventArgs)
     AddHandler exporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
     exporter.RunExportAsync(ms, renderer)
 End Sub
-
 Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
     Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
     Dim exportFile As String = "..\..\exportedAsyncData.xlsx"
