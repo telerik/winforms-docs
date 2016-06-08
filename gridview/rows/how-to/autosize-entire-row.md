@@ -38,7 +38,7 @@ public class CustomRowElement : GridDataRowElement
         SizeF desiredSize = SizeF.Empty;
         foreach (GridViewColumn column in this.ViewTemplate.Columns)
         {
-            if (this.IsColumnVisible(column))
+            if (!this.IsColumnVisible(column))
             {
                 continue;
             }
@@ -70,14 +70,7 @@ public class CustomRowElement : GridDataRowElement
     }
     private bool IsColumnVisible(GridViewColumn column)
     {
-        foreach (GridCellElement cellElement in this.VisualCells)
-        {
-            if (cellElement.ColumnInfo == column)
-            {
-                return true;
-            }
-        }
-        return false;
+        return column.IsVisible;
     }
 }
 
@@ -95,7 +88,7 @@ Public Class CustomRowElement
         Dim provider As New CellElementProvider(Me.TableElement)
         Dim desiredSize As SizeF = SizeF.Empty
         For Each column As GridViewColumn In Me.ViewTemplate.Columns
-            If Me.IsColumnVisible(column) Then
+            If Not Me.IsColumnVisible(column) Then
                 Continue For
             End If
             Dim cellElement As GridDataCellElement = TryCast(provider.GetElement(column, Me), GridDataCellElement)
@@ -122,12 +115,7 @@ Public Class CustomRowElement
         Return baseSize
     End Function
     Private Function IsColumnVisible(ByVal column As GridViewColumn) As Boolean
-        For Each cellElement As GridCellElement In Me.VisualCells
-            If cellElement.ColumnInfo Is column Then
-                Return True
-            End If
-        Next cellElement
-        Return False
+        Return column.IsVisible
     End Function
 End Class
 
