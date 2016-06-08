@@ -13,7 +13,7 @@ previous_url: installation-deployment-and-distribution-download-product-files
 
 
 
-When you are licensed developer you are allowed to download the following files:
+When you are a licensed developer you are allowed to download the following files:
 
 * Old versions
 
@@ -25,29 +25,29 @@ When you are licensed developer you are allowed to download the following files:
 
 * Documentation files
 
+* Source code
+
 ## 
 
 In order to download these you need to take the following steps:
 
-1. Log in your account.
+1. Log in to your account.
 
-1. Click on __Products and Subscriptions__ and the select __DevCraftComplete__.
- 
-	![installation-deployment-and-distribution-download-product-files 001](images/installation-deployment-and-distribution-download-product-files001.png)
+1. Click on the __Downloads__ tab:
 
-1. Click on the __Download Installer and other resources__ button.
- 
-	![installation-deployment-and-distribution-download-product-files 002](images/installation-deployment-and-distribution-download-product-files002.png)
+	![installation-deployment-and-distribution-download-product-files 006](images/installation-deployment-and-distribution-download-product-files006.png)
 
-1. Here you can select depending on what you want to download (the download button downloads the ControlPanel). Select __Browse all product files__.
- 
-	![installation-deployment-and-distribution-download-product-files 003](images/installation-deployment-and-distribution-download-product-files003.png)
+1. Select the __UI for WinForms__ product from the drop down:
 
-1. The page allows you to download the __Automatic Installation__ msi file, __Control Panel__, __DLLs and themes__, __PDB files__, __NuGet Packages__ documentation files, and __Source code__.
- 
-	![installation-deployment-and-distribution-download-product-files 004](images/installation-deployment-and-distribution-download-product-files004.png)
+	![installation-deployment-and-distribution-download-product-files 007](images/installation-deployment-and-distribution-download-product-files007.png)
 
+1. This page allows you to download the Automatic Installation msi file, DLLs and themes, PDB files, NuGet Packages, documentation files, and Source code.
 
-	>important If you go back one step and click on __Older Versions__ you will be able to download an older version of the suite. Please note that if you do not see the desired version you can contact our sales team and they will enable the version for download: [sales@telerik.com](mailto:sales@telerik.co)
+	![installation-deployment-and-distribution-download-product-files 008](images/installation-deployment-and-distribution-download-product-files008.png)
 
-1. ![installation-deployment-and-distribution-download-product-files 005](images/installation-deployment-and-distribution-download-product-files005.png)
+1. From the __Version__ drop down, you can select an older version to download: 
+
+	![installation-deployment-and-distribution-download-product-files 009](images/installation-deployment-and-distribution-download-product-files009.png)
+
+	>important Please note that if you do not see the desired version you can contact our sales team and they will enable the version for download: [sales@telerik.com](mailto:sales@telerik.co)
+
