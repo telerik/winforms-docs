@@ -2,7 +2,7 @@
 title: Structure 
 page_title: Control Element Structure | UI for WinForms Documentation
 description: The article describes the DataEntry elements structure.
-slug: winforms/dataentry/control-element-structure-
+slug: winforms/dataentry/control-element-structure
 tags: control,element,structure,
 published: True
 position: 1
@@ -21,3 +21,9 @@ __RadDataEntry__ generates content item for each public property that can be edi
 
 The Validation label does not have any text by default. It is designed to be used in cases where users want to show some additional information.
         
+# See Also
+
+ * [Getting Started]({%slug  winforms/dataentry/getting-started%})
+ * [Properties, events and attributes]({%slug  winforms/dataentry/properties,-events-and-attributes%})
+ * [Themes]({%slug winforms/dataentry/themes%})
+ * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})

@@ -11,8 +11,6 @@ previous_url: dataentry-how-to-change-editor-to-drop-down-list
 
 # Change the editor to a bound RadDropDownList
 
-
-
 This article will walk you through the process of changing the default editor to a bound drop down list, where the current value corresponds to a value within the drop down list data source. The case where the corresponding values are nullable is also handled. 
 
 ![dataentry-how-to-change-editor-to-drop-down-list 001](images/dataentry-how-to-change-editor-to-drop-down-list001.png)
@@ -342,5 +340,11 @@ End Sub
 
 {{endregion}} 
 
+# See Also
 
+ * [Structure]({%slug  winforms/dataentry/control-element-structure%})
+ * [Getting Started]({%slug  winforms/dataentry/getting-started%})
+ * [Properties, events and attributes]({%slug  winforms/dataentry/properties,-events-and-attributes%})
+ * [Validation]({%slug winforms/dataentry/validation%})
+ * [Themes]({%slug winforms/dataentry/themes%})
 

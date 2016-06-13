@@ -23,3 +23,12 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 6. Change the BackColor:
    ![dataentry-themes003](images/dataentry-themes003.png)
+
+# See Also
+
+ * [Structure]({%slug  winforms/dataentry/control-element-structure%})
+ * [Getting Started]({%slug  winforms/dataentry/getting-started%})
+ * [Properties, events and attributes]({%slug  winforms/dataentry/properties,-events-and-attributes%})
+ * [Validation]({%slug winforms/dataentry/validation%})
+ * [Customizing Appearance]({%slug winforms/dataentry/customizing-appearance%})
+ * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})

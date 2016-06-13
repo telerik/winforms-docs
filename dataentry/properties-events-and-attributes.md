@@ -11,7 +11,7 @@ previous_url: dataentry-properties-events-and-attributes
 
 # Properties, events and attributes
 
-### Properties:
+## Properties
 
 The main purpose of __RadDataEntry__ is to generate editors according to the object properties and to create simple data bindings for them. For this reason, most of the control properties will take effect only if they are set __before setting the DataSource.__
 
@@ -201,7 +201,7 @@ Me.radDataEntry1.AutoSizeLabels = False
 
 ![dataentry-properties-events-and-attributes 008](images/dataentry-properties-events-and-attributes008.png)
 
-## Events:
+## Events
 
 There are several events that you will find useful in the context of __RadDataEntry__:
         
@@ -230,7 +230,7 @@ __ItemValidating__ – this event is fired when any of the generated editors fir
 __ItemValidated__ – this event is fired when any of the generated editors fires its Validated event.
         
 
-## Attributes:
+## Attributes
 
 __RadDataEntry__ has support for several attributes that can be used to change the behavior of the control.
         
@@ -329,5 +329,10 @@ Private m_Salary As Integer
 
 {{endregion}} 
 
+# See Also
 
-
+ * [Structure]({%slug  winforms/dataentry/control-element-structure%})
+ * [Getting Started]({%slug  winforms/dataentry/getting-started%})
+ * [Validation]({%slug winforms/dataentry/validation%})
+ * [Themes]({%slug winforms/dataentry/themes%})
+ * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})
