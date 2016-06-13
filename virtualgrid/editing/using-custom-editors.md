@@ -37,8 +37,8 @@ Most of the grid editors inherit from __BaseVirtualGridEditor__. The following s
 
 #### Creating MultiColumnComboBoxVirtualGridEditor 
 
-{{source=..\SamplesCS\VirtualGrid\Editing\CustomEditor.cs region=MyEditor}} 
-{{source=..\SamplesVB\Virtualgrid\Editing\CustomEditor.vb region=MyEditor}}
+{{source=..\SamplesCS\VirtualGrid\Editing\VirtualGridCustomEditor.cs region=MyEditor}} 
+{{source=..\SamplesVB\Virtualgrid\Editing\VirtualGridCustomEditor.vb region=MyEditor}}
 ````C#
  public class MultiColumnComboBoxVirtualGridEditor : BaseVirtualGridEditor
         {
