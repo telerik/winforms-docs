@@ -1,7 +1,7 @@
 ---
 title: Properties, Events and Attributes
 page_title: Properties, Events and Attributes | UI for WinForms Documentation
-description: Properties, Events and Attributes
+description: This article shows the most used properties, events and attributes.
 slug: winforms/datalayout/properties,-events-and-attributes
 tags: properties,,events,and,attributes
 published: True
@@ -10,8 +10,6 @@ previous_url: datalayout-properties-event-and-attributes
 ---
 
 # Properties, Events and Attributes
-
-
 
 __RadDataLayout__ exposes properties and events which are similar to the ones provided by the __RadDataEntry__ control.
       

@@ -1,7 +1,7 @@
 ---
 title: Design Time
 page_title: Design Time | UI for WinForms Documentation
-description: Design Time
+description: This article describes the design-time capabilities of RadDataLayout.
 slug: winforms/datalayout/design-time
 tags: design,time
 published: True
@@ -11,7 +11,7 @@ previous_url: datalayout-design-time
 
 # Design Time
 
-__RadDataLayout__ control hosts a __RadLayoutControl__ allowing the user to build complex layouts at desing-time as well as at run-time. Information on how __RadLayoutControl__ can be customized in the designer is available here: [RadLayoutControl Design Time]({%slug winforms/layoutcontrol/design-time%})
+__RadDataLayout__ control hosts a __RadLayoutControl__ allowing the user to build complex layouts at design-time as well as at run-time. Information on how __RadLayoutControl__ can be customized in the designer is available here: [RadLayoutControl Design Time]({%slug winforms/layoutcontrol/design-time%})
 
 ## Smart Tag
 
@@ -23,7 +23,7 @@ The smart tag allows you to open the layout editor, change the theme and open th
 
 ## Design Time Data Binding
 
-For the purpose of this example we will bind our data layout control to the Cars table of the Northwind database. After specifying the data source, the control will build the editors according to the properties of the data bound object.
+For the purpose of this example we will bind our data layout control to the `Cars` table of the Northwind database. After specifying the data source, the control will build the editors according to the properties of the data bound object.
         
 >caption Figure 2: Data Binding.
 
@@ -37,19 +37,12 @@ This editor allows us to rearrange the generated editors. Additional elements ca
 
 ![datalayout-design-time 003](images/datalayout-design-time003.png)
 
-## Arrange Controls 
-
-At design time you will be able to add and arrange any underlying controls you want.
-        
->caption Figure 4: Arrange Controls.
-
-![datalayout-design-time 004](images/datalayout-design-time004.gif)
 
 ## Selection Glyph
 
 The selection glyph is an arrow that is shown when a control in the layout panel is selected. It allows you to select the underlying host item and change its properties at design time.
         
->caption Figure 5: Selection Glyph.
+>caption Figure 4: Selection Glyph.
 
 ![datalayout-design-time 005](images/datalayout-design-time005.png)
 

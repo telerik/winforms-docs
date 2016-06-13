@@ -1,7 +1,7 @@
 ---
 title: Customize Layout Mode
 page_title: Customize Layout Mode | UI for WinForms Documentation
-description: Customize Layout Mode
+description: This article shows how one can use the layout customization dialog.
 slug: winforms/datalayout/customize-layout-mode
 tags: customize,layout,mode
 published: True
@@ -19,7 +19,7 @@ The customize dialog can be opened from the default context menu of __RadDataLay
         
 >caption Figure 1: Customize Dialog
 
-![datalayout-customize-layout-mode 001](images/datalayout-customize-layout-mode001.gif)
+![datalayout-customize-layout-mode 001](images/datalayout-customize-layout-mode001.png)
 
 ## Perform Changes
 

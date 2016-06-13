@@ -1,7 +1,7 @@
 ---
 title: Save/Load Layout
 page_title: Save/Load Layout | UI for WinForms Documentation
-description: Save/Load Layout
+description: This article describes how the end user can build and Save/Load custom layouts.
 slug: winforms/datalayout/save/load-layout
 tags: save/load,layout
 published: True

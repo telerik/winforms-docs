@@ -1,7 +1,7 @@
 ---
 title: Validation
 page_title: Validation | UI for WinForms Documentation
-description: Validation
+description: This article shows how one can validate the user input.
 slug: winforms/datalayout/validation
 tags: validation
 published: True
@@ -11,7 +11,7 @@ previous_url: datalayout-validation
 
 # Validation
 
-For the need of validation process we made two events (__ItemValidating, ItemValidated__) that are firing when the __Validating__ and __Validated__ events occur in the editors. __RadDataLayout__ provides three different ways to show to the users that some editors do not match to validation criteria – Validation label, Error provider and Validation Panel. In the following tutorial we will demonstrate how to use a validation panel together with Error provider.
+For the need of validation process we made two events (__ItemValidating, ItemValidated__) that are firing when the __Validating__ and __Validated__ events occur in the editors. __RadDataLayout__ provides three different ways to show to the users that some editors do not match the validation criteria – Validation label, Error provider and Validation Panel. In the following tutorial we will demonstrate how to use a validation panel together with Error provider.
 
 1\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataLayout__ to object from this type we will generate several items:
 
@@ -128,7 +128,7 @@ Me.RadDataLayout1.DataSource = New Employee() With {
 
 ![datalayout-validation 001](images/datalayout-validation001.png)
 
-2\. Set the __ShowValidationPanel__ property to true. This will display the panel below the editors:
+2\. Set the __ShowValidationPanel__ property to *true*. This will display the panel below the editors:
 
 {{source=..\SamplesCS\DataLayout\DataLayoutValidation.cs region=DataLayoutShowPanel}} 
 {{source=..\SamplesVB\DataLayout\DataLayoutValidation.vb region=DataLayoutShowPanel}} 

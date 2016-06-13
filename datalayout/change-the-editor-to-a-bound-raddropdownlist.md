@@ -1,7 +1,7 @@
 ---
 title: Change the Editor to a Bound RadDropDownList
 page_title: Change the Editor to a Bound RadDropDownList | UI for WinForms Documentation
-description: Change the Editor to a Bound RadDropDownList
+description: This article shows how you can change the default editor to a bound RadDropDownList.
 slug: winforms/datalayout/change-the-editor-to-a-bound-raddropdownlist
 tags: change,the,editor,to,a,bound,raddropdownlist
 published: True
@@ -17,7 +17,7 @@ This article will walk you through the process of changing the default editor to
 
 ![datalayout-how-to-change-editor-to-drop-down-list 001](images/datalayout-how-to-change-editor-to-drop-down-list001.png)
 
-1\. First you can subscribe to the __BindingCreating__, __BindingCreated__ and __EditorInitializing__ events of __RadDataLayout__ (please note that this should be done before the control has been data bound).
+1\. First you can subscribe to the __BindingCreating__, __BindingCreated__ and __EditorInitializing__ events of __RadDataLayout__ (please note that this should be done before the control has been bound).
 
 {{source=..\SamplesCS\DataLayout\DataLayoutChangeEditor.cs region=subscribe}} 
 {{source=..\SamplesVB\DataLayout\DataLayoutChangeEditor.vb region=subscribe}} 
@@ -74,8 +74,6 @@ End Sub
 ````
 
 {{endregion}} 
-
-
 
 
 3\. In order the values to be synchronized correctly, the bound property should be set in the __BindingCreating__ event handler. In this case it should be set to the __SelectedValue__ property.

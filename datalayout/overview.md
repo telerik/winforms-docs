@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Design Time | UI for WinForms Documentation
-description: Overview
+description: This article shows what represents RadDataLayout control and it features.
 slug: winforms/datalayout/overview
 tags: design,time
 published: True
@@ -25,7 +25,7 @@ __RadDataLayout__ generates different editors depending on the type of the prope
 
 * __RadDateTimePicker__: Responsible for dates
 
-* __RadDropDownList__: Dipslays enum values
+* __RadDropDownList__: Displays enum values
 
 * __RadColorBox__: Handles color
 
