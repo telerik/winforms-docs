@@ -1,7 +1,7 @@
 ---
 title: Save and Load Layout
 page_title: Save and Load Layout | UI for WinForms Documentation
-description: Save and Load Layout
+description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
 slug: winforms/commandbar/save-and-load-layout
 tags: save,and,load,layout
 published: True
@@ -11,14 +11,9 @@ previous_url: commandbar-save-and-load-layout
 
 # Save and Load Layout
 
+__RadCommandBar__ allows  the user to add and remove items and rearrange strip elements on different rows. The Save/Load layout functionality gives your applications the opportunity to preserve user settings concerning position, visibility and orientation.      
 
-
-RadCommandBar allows  the user to add and remove items and rearrange strip elements on different rows. The Save/Load layout functionality gives your applications the opportunity to preserve user settings concerning position, visibility and orientation. 
-      
-
-## 
-
-When you save the layout, all the preferences of a user will be saved in an xml file. When you load the file, the saved layout settings will be applied to RadCommandBar.
+When you save the layout, all the preferences of a user will be saved in an XML file. When you load the file, the saved layout settings will be applied to __RadCommandBar__.
 
 Here is an example demonstrating how you can implement a *Save Layout* button event handler:
 
@@ -100,18 +95,14 @@ End Sub
 
 {{endregion}} 
 
-
-
-
 After loading the layout it will reload the initial settings of the existing items:![command-bar-save-and-load-layout 001](images/command-bar-save-and-load-layout001.png)
 
 >important When loading the layout it will only load the settings for the items that were there by the time when the layout was saved. If some of the items (i.e. CommandBarButton, CommandBarToggleButton) were deleted - the layout loading will not recreate them and if some items were added the layout will not effect them either.
 >
 
-
 __Sample save/load scenario__
 
-The following example demonstrates how you can save the layout settings of a RadCommandBar when the parent form of this command bar is closed and how you can load these settings when the form is reopened. Basically, you need to handle the Load and FormClosing events of the form.  
+The following example demonstrates how you can save the layout settings of a __RadCommandBar__ when the parent form of this command bar is closed and how you can load these settings when the form is reopened. Basically, you need to handle the __Load__ and __FormClosing__ events of the form.  
  
 {{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=autoLoadLayoutOnFormLoad}} 
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=autoLoadLayoutOnFormLoad}} 

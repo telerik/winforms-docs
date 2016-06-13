@@ -11,7 +11,7 @@ previous_url: commandbar-item-types
 
 # Item Types
 
-You can add these item types to the CommandBarStripElement from the context menu or the RadElement Collection Editor:
+You can add these item types to the __CommandBarStripElement__ from the context menu or the RadElement Collection Editor:
 
 ## Item Types
 
