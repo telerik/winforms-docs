@@ -18,7 +18,7 @@ previous_url: chartview-overview
 
 __1. Overview__
 
-RadChartView is a versatile charting component that offers drawing capabilities, user interaction and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in design-time or through code. The control is completely data aware and may work in bound or unbound mode, depending on the requirements. Chart types (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points – for example we have __CartesianArea__ (using Cartesian coordinate system) and __PieArea__ (using radial coordinate system).
+__RadChartView__ is a versatile charting component that offers drawing capabilities, user interaction and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in design-time or through code. The control is completely data aware and may work in bound or unbound mode, depending on the requirements. Chart types (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points – for example we have __CartesianArea__ (using Cartesian coordinate system) and __PieArea__ (using radial coordinate system).
         
 
 >note The following references are required in order to use __RadChartView__:
@@ -33,7 +33,7 @@ __2. Architecture__
 A charting component in general is used to visualize (or plot) some data in a human-readable way through different representations like lines, areas, bars pies, etc. Each series has a collection of data points – the data equivalent of a 2D point – and knows how to visualize them. Different series types may process certain types of data points – for example categorical series may contain categorical data points. Data points may be added directly to series or a data binding mechanism may be used to create the appropriate data points from the raw data.
         
 
-__RadChartView__ works with three area types - Cartesian, Polar and Pie
+__RadChartView__ works with three area types - __Cartesian__, __Polar__ and __Pie__
 
 __2.1. CartesianArea__
 

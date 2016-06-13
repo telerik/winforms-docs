@@ -17,7 +17,6 @@ The example below demonstrates setting up __RadChartView__ to display data from 
 1. Create a new __Windows Application__ project.
             
 1. Drop a __RadChartView__ control on the form.
-            
 
 ## Connecting to Data
 

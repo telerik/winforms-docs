@@ -11,10 +11,7 @@ previous_url: chartview-chartgrid
 
 # Chart Grid
 
-
-
 __RadChartView__ areas, which support axes, can render a grid that facilitate the process of determining the values of points afar from the axes. Since Pie area does not use axes, the grid is valid only the context of Cartesian and Polar areas. Here is how to set up the grid of both areas:
-      
 
 ## Cartesian Grid  
 

@@ -1,7 +1,7 @@
 ---
 title: Property Builder
 page_title: Property Builder | UI for WinForms Documentation
-description: Property Builder
+description: RadChartView`s Property Builder provides advanced editing and customization options in the Visual Studio designer 
 slug: winforms/chartview-/property-builder
 tags: property,builder
 published: True
@@ -10,10 +10,6 @@ previous_url: chartview-property-builder
 ---
 
 # Property Builder
-
-
-
-## 
 
 The Property builder is divided into three sections: Chart, Series and Appearance.
         
@@ -38,3 +34,9 @@ The second mode is “Bound mode” where you provide data to __RadChartView__ f
 >caption Fig.4 Appearance Section
 The third section allows you to setup different options like grid, axes labels, series labels and the interactive features of __RadChartView__ like the pan and zoom, trackball, title and legend. 
 ![chartview-propety-builder 004](images/chartview-propety-builder004.png)
+
+# See Also
+
+* [Design Time]({%slug winforms/chartview-/design-time%})
+* [Getting Started]({%slug winforms/chartview/getting-started%})
+* [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})

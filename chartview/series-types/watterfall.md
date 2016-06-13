@@ -70,7 +70,7 @@ To achieve the same chart in a data bound mode you will need appropriate data an
 * __TotalMember:__ This is the final data point and it will display the average value. 
             
 
-You need to set the standard databinding properties as well ([Binding to BindingList]({%slug winforms/chartview-/databinding/binding-to-bindinglist%}) ValueMember, CategoryMember and DataSource). Here is an example: 
+You need to set the standard databinding properties as well ([Binding to BindingList]({%slug winforms/chartview-/populating-with-data/binding-to-bindinglist%}) ValueMember, CategoryMember and DataSource). Here is an example: 
 
 {{source=..\SamplesCS\ChartView\Series\WaterfallSeriesForm.cs region=DataBinding}} 
 {{source=..\SamplesVB\ChartView\Series\WaterfallSeriesForm.vb region=DataBinding}} 
