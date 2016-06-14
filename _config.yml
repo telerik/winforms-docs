@@ -206,6 +206,9 @@ navigation:
     commandbar:
         title: CommandBar
         position: 15
+    commandbar/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     commandbar/how-to:
         title: How To
         position: 6
