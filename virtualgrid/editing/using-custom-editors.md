@@ -25,195 +25,179 @@ Most of the grid editors inherit from __BaseVirtualGridEditor__. The following s
 {{source=..\SamplesCS\VirtualGrid\Editing\VirtualGridCustomEditor.cs region=MyEditor}} 
 {{source=..\SamplesVB\Virtualgrid\Editing\VirtualGridCustomEditor.vb region=MyEditor}}
 ````C#
- public class MultiColumnComboBoxVirtualGridEditor : BaseVirtualGridEditor
+public class MultiColumnComboBoxVirtualGridEditor : BaseVirtualGridEditor
+{
+    protected override Telerik.WinControls.RadElement CreateEditorElement()
+    {
+        return new RadMultiColumnComboBoxElement();
+    }
+    public override object Value
+    {
+        get
         {
-            protected override Telerik.WinControls.RadElement CreateEditorElement()
+            RadMultiColumnComboBoxElement editor = this.EditorElement as RadMultiColumnComboBoxElement;
+            if (editor.SelectedValue != null)
             {
-                return new RadMultiColumnComboBoxElement();
-            }
-
-            public override object Value
-            {
-                get
+                if (!string.IsNullOrEmpty(editor.ValueMember))
                 {
-                    RadMultiColumnComboBoxElement editor = this.EditorElement as RadMultiColumnComboBoxElement;
-
-                    if (editor.SelectedValue != null)
-                    {
-                        if (!string.IsNullOrEmpty(editor.ValueMember))
-                        {
-                            return editor.SelectedValue;
-                        }
-                    }
-                    return -1;
-                }
-                set
-                {
-                    RadMultiColumnComboBoxElement editor = this.EditorElement as RadMultiColumnComboBoxElement;
-
-                    if (value == null)
-                    {
-                        editor.SelectedIndex = -1;
-                    }
-                    else if (editor.ValueMember != null)
-                    {
-                        editor.SelectedValue = value;
-                    }
+                    return editor.SelectedValue;
                 }
             }
-
-            public object DataSource
+            return -1;
+        }
+        set
+        {
+            RadMultiColumnComboBoxElement editor = this.EditorElement as RadMultiColumnComboBoxElement;
+            if (value == null)
             {
-                get
-                {
-                    RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
-
-                    return editorElement.DataSource;
-                }
-                set
-                {
-                    RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
-                    if (editorElement.BindingContext == null)
-                    {
-                        editorElement.BindingContext = new BindingContext();
-                    }
-                    editorElement.DataSource = value;
-                }
+                editor.SelectedIndex = -1;
             }
-
-            public string ValueMember
+            else if (editor.ValueMember != null)
             {
-                get
-                {
-                    RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
-                    return editorElement.ValueMember;
-                }
-                set
-                {
-                    RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
-                    editorElement.ValueMember = value;
-                }
-            }
-
-            public string DisplayMember
-            {
-                get
-                {
-                    RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
-                    return editorElement.DisplayMember;
-                }
-                set
-                {
-                    RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
-                    editorElement.DisplayMember = value;
-                }
+                editor.SelectedValue = value;
             }
         }
-
-        private void radVirtualGrid1_EditorRequired(object sender, Telerik.WinControls.UI.VirtualGridEditorRequiredEventArgs e)
+    }
+    public object DataSource
+    {
+        get
         {
-            if (e.ColumnIndex == 2)
-            {
-                MultiColumnComboBoxVirtualGridEditor editor = new MultiColumnComboBoxVirtualGridEditor();
-                DataTable dt = new DataTable();
-                dt.Columns.Add("Id", typeof(int));
-                dt.Columns.Add("Name", typeof(string));
-                dt.Rows.Add(-1, "");
-                for (int i = 0; i <= 9; i++)
-                {
-                    dt.Rows.Add(i, "Item" + i);
-                }
-                editor.DataSource = dt;
-                editor.ValueMember = "Id";
-                editor.DisplayMember = "Name";
-                e.Editor = editor;
-            }
+            RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
+            return editorElement.DataSource;
         }
+        set
+        {
+            RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
+            if (editorElement.BindingContext == null)
+            {
+                editorElement.BindingContext = new BindingContext();
+            }
+            editorElement.DataSource = value;
+        }
+    }
+    public string ValueMember
+    {
+        get
+        {
+            RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
+            return editorElement.ValueMember;
+        }
+        set
+        {
+            RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
+            editorElement.ValueMember = value;
+        }
+    }
+    public string DisplayMember
+    {
+        get
+        {
+            RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
+            return editorElement.DisplayMember;
+        }
+        set
+        {
+            RadMultiColumnComboBoxElement editorElement = this.EditorElement as RadMultiColumnComboBoxElement;
+            editorElement.DisplayMember = value;
+        }
+    }
+}
+private void radVirtualGrid1_EditorRequired(object sender, Telerik.WinControls.UI.VirtualGridEditorRequiredEventArgs e)
+{
+    if (e.ColumnIndex == 2)
+    {
+        MultiColumnComboBoxVirtualGridEditor editor = new MultiColumnComboBoxVirtualGridEditor();
+        DataTable dt = new DataTable();
+        dt.Columns.Add("Id", typeof(int));
+        dt.Columns.Add("Name", typeof(string));
+        dt.Rows.Add(-1, "");
+        for (int i = 0; i <= 9; i++)
+        {
+            dt.Rows.Add(i, "Item" + i);
+        }
+        editor.DataSource = dt;
+        editor.ValueMember = "Id";
+        editor.DisplayMember = "Name";
+        e.Editor = editor;
+    }
+}
 
 ````
 ````VB.NET
 Public Class MultiColumnComboBoxVirtualGridEditor
-        Inherits BaseVirtualGridEditor
-        Protected Overrides Function CreateEditorElement() As Telerik.WinControls.RadElement
-            Return New RadMultiColumnComboBoxElement()
-        End Function
-
-        Public Overrides Property Value() As Object
-            Get
-                Dim editor As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
-
-                If editor.SelectedValue IsNot Nothing Then
-                    If Not String.IsNullOrEmpty(editor.ValueMember) Then
-                        Return editor.SelectedValue
-                    End If
+    Inherits BaseVirtualGridEditor
+    Protected Overrides Function CreateEditorElement() As Telerik.WinControls.RadElement
+        Return New RadMultiColumnComboBoxElement()
+    End Function
+    Public Overrides Property Value() As Object
+        Get
+            Dim editor As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
+            If editor.SelectedValue IsNot Nothing Then
+                If Not String.IsNullOrEmpty(editor.ValueMember) Then
+                    Return editor.SelectedValue
                 End If
-                Return -1
-            End Get
-            Set(value As Object)
-                Dim editor As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
-
-                If value Is Nothing Then
-                    editor.SelectedIndex = -1
-                ElseIf editor.ValueMember IsNot Nothing Then
-                    editor.SelectedValue = value
-                End If
-            End Set
-        End Property
-
-        Public Property DataSource() As Object
-            Get
-                Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
-
-                Return editorElement.DataSource
-            End Get
-            Set(value As Object)
-                Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
-                If editorElement.BindingContext Is Nothing Then
-                    editorElement.BindingContext = New BindingContext()
-                End If
-                editorElement.DataSource = value
-            End Set
-        End Property
-
-        Public Property ValueMember() As String
-            Get
-                Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
-                Return editorElement.ValueMember
-            End Get
-            Set(value As String)
-                Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
-                editorElement.ValueMember = value
-            End Set
-        End Property
-
-        Public Property DisplayMember() As String
-            Get
-                Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
-                Return editorElement.DisplayMember
-            End Get
-            Set(value As String)
-                Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
-                editorElement.DisplayMember = value
-            End Set
-        End Property
-    End Class
-
-    Private Sub radVirtualGrid1_EditorRequired(sender As Object, e As Telerik.WinControls.UI.VirtualGridEditorRequiredEventArgs)
-        If e.ColumnIndex = 2 Then
-            Dim editor As New MultiColumnComboBoxVirtualGridEditor()
-            Dim dt As New DataTable()
-            dt.Columns.Add("Id", GetType(Integer))
-            dt.Columns.Add("Name", GetType(String))
-            dt.Rows.Add(-1, "")
-            For i As Integer = 0 To 9
-                dt.Rows.Add(i, "Item" & i)
-            Next
-            editor.DataSource = dt
-            editor.ValueMember = "Id"
-            editor.DisplayMember = "Name"
-            e.Editor = editor
-        End If
-    End Sub
+            End If
+            Return -1
+        End Get
+        Set(value As Object)
+            Dim editor As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
+            If value Is Nothing Then
+                editor.SelectedIndex = -1
+            ElseIf editor.ValueMember IsNot Nothing Then
+                editor.SelectedValue = value
+            End If
+        End Set
+    End Property
+    Public Property DataSource() As Object
+        Get
+            Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
+            Return editorElement.DataSource
+        End Get
+        Set(value As Object)
+            Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
+            If editorElement.BindingContext Is Nothing Then
+                editorElement.BindingContext = New BindingContext()
+            End If
+            editorElement.DataSource = value
+        End Set
+    End Property
+    Public Property ValueMember() As String
+        Get
+            Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
+            Return editorElement.ValueMember
+        End Get
+        Set(value As String)
+            Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
+            editorElement.ValueMember = value
+        End Set
+    End Property
+    Public Property DisplayMember() As String
+        Get
+            Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
+            Return editorElement.DisplayMember
+        End Get
+        Set(value As String)
+            Dim editorElement As RadMultiColumnComboBoxElement = TryCast(Me.EditorElement, RadMultiColumnComboBoxElement)
+            editorElement.DisplayMember = value
+        End Set
+    End Property
+End Class
+Private Sub radVirtualGrid1_EditorRequired(sender As Object, e As Telerik.WinControls.UI.VirtualGridEditorRequiredEventArgs)
+    If e.ColumnIndex = 2 Then
+        Dim editor As New MultiColumnComboBoxVirtualGridEditor()
+        Dim dt As New DataTable()
+        dt.Columns.Add("Id", GetType(Integer))
+        dt.Columns.Add("Name", GetType(String))
+        dt.Rows.Add(-1, "")
+        For i As Integer = 0 To 9
+            dt.Rows.Add(i, "Item" & i)
+        Next
+        editor.DataSource = dt
+        editor.ValueMember = "Id"
+        editor.DisplayMember = "Name"
+        e.Editor = editor
+    End If
+End Sub
 
 ```` 
 
