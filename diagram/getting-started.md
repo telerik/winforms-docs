@@ -54,7 +54,7 @@ The Property Builder allows you to drag a shapes from the [RadDiagramToolbox]({%
 
 In order to create a diagram describing the flow of an "if-else" operator, you will need 4 shapes - two will represent the statements, one will describe the condition and one will represent the final result of the operator.
 
->note The __RadDiagramShape__ exposes a __ElementShape__ property that allows you to create a custom geometry or use predefined shape geometry.
+>note The __RadDiagramShape__ exposes an __ElementShape__ property that allows you to create a custom geometry or use predefined shape geometry.
  
 ![diagram-getting-started 004](images/diagram-getting-started004.png)
 

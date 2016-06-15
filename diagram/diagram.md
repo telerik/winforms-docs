@@ -11,8 +11,6 @@ previous_url: diagram-overview
 
 # Diagram 
 
-
-
 __RadDiagram__ offers flexible and interactive diagramming layouts for your rich data-visualization applications. The framework tool set enables you to:
 
 * Design work-flows in which case shapes and connections are tightly bound to an underlying API

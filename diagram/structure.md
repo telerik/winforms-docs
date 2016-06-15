@@ -1,7 +1,7 @@
 ---
 title: Structure
 page_title: Structure | UI for WinForms Documentation
-description: Structure
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications. 
 slug: winforms/diagram/structure
 tags: structure
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-structure
 ---
 
 # Structure
-
-
 
 ## Diagram structure
 
