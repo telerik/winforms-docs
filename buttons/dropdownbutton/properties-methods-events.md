@@ -6,7 +6,6 @@ slug: winforms/buttons/dropdownbutton/properties-methods-events
 tags: dropdownbutton
 published: True
 position: 4
-previous_url: buttons-dropdownbutton-properties-methods-events
 ---
 
 # Properties

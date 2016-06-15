@@ -6,7 +6,6 @@ slug: winforms/buttons/checkbox/desing-time
 tags: checkbox
 published: True
 position: 2
-previous_url: buttons-checkbox-desing-time
 ---
 
 # Smart tag

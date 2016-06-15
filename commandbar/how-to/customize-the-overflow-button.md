@@ -1,7 +1,7 @@
 ---
 title: Customize the overflow button
 page_title: Customize the overflow button | UI for WinForms Documentation
-description: Customize the overflow button
+description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
 slug: winforms/commandbar/how-to/customize-the-overflow-button
 tags: customize,the,overflow,button
 published: True
@@ -11,11 +11,7 @@ previous_url: commandbar-howto-customize-the-overflow-button
 
 # Customize the overflow button
 
-
-
-## 
-
-This article will demonstrate how to access the __Overflow__ button in RadCommandBar and how to customize its items.
+This article will demonstrate how to access the __Overflow__ button in __RadCommandBar__ and how to customize its items.
  
 ![commandbar-howto-customize-the-overflow-button 001](images/commandbar-howto-customize-the-overflow-button001.png)
 

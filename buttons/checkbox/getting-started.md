@@ -6,7 +6,6 @@ slug: winforms/buttons/checkbox/getting-started
 tags: checkbox
 published: True
 position: 3
-previous_url: buttons-checkbox-getting-started
 ---
 
 # Getting Started

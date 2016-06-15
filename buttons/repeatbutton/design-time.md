@@ -5,8 +5,7 @@ description: RadRepeatButton provides press-and-hold functionality and it is an 
 slug: winforms/buttons/repeatbutton/design-time
 tags: repeatbutton
 published: True
-position: 2
-previous_url: buttons-repeatbutton-design-time
+position: 2 
 ---
 
 # Design Time

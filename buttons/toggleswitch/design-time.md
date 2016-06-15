@@ -5,8 +5,7 @@ description: RadToggleSwitch is a control designed to represent two states- e.g.
 slug: winforms/buttons/toggleswitch/design-time
 tags: structure
 published: True
-position: 2
-previous_url: buttons-toggleswitch-design-time
+position: 2 
 ---
 
 # Design Time

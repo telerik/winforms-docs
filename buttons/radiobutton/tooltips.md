@@ -6,7 +6,6 @@ slug: winforms/buttons/radiobutton/tooltips
 tags: radiobutton
 published: True
 position: 7
-previous_url: buttons-radiobutton-tooltips
 ---
 
 # Tooltips

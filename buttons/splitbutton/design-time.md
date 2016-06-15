@@ -5,8 +5,7 @@ description: RadSplitButton provides a menu-like interface contained within a bu
 slug: winforms/buttons/splitbutton/design-time
 tags: splitbutton
 published: True
-position: 2
-previous_url: buttons-splitbutton-design-time
+position: 2 
 ---
 
 # Design Time

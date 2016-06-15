@@ -6,7 +6,6 @@ slug: winforms/buttons/radiobutton/properties-methods-events
 tags: radiobutton
 published: True
 position: 4
-previous_url: buttons-radiobutton-properties-methods-events
 ---
 
 

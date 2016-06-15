@@ -6,7 +6,6 @@ slug: winforms/buttons/checkbox/structure
 tags: checkbox
 published: True
 position: 1
-previous_url: buttons-checkbox-structure
 ---
 
 # Structure

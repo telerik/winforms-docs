@@ -6,7 +6,6 @@ slug: winforms/buttons/dropdownbutton/getting-started
 tags: dropdownbutton
 published: True
 position: 3
-previous_url: buttons-dropdownbutton-getting-started
 ---
 
 # Getting Started

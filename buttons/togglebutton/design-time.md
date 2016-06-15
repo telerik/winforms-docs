@@ -5,8 +5,7 @@ description: RadToggleButton is designed to manage states on your form. It shar
 slug: winforms/buttons/togglebutton/design-time
 tags: togglebutton
 published: True
-position: 2
-previous_url: buttons-togglebutton-design-time
+position: 2 
 ---
 
 # Design Time

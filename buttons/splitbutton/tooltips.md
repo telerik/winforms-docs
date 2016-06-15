@@ -5,8 +5,7 @@ description: RadSplitButton provides a menu-like interface contained within a bu
 slug: winforms/buttons/splitbutton/tooltips
 tags: splitbutton
 published: True
-position: 6
-previous_url: buttons-splitbutton-tooltips
+position: 6 
 ---
 
 # Tooltips

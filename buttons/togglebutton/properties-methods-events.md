@@ -5,8 +5,7 @@ description: RadToggleButton is designed to manage states on your form. It shar
 slug: winforms/buttons/togglebutton/properties-methods-events
 tags: togglebutton
 published: True
-position: 4
-previous_url: buttons-togglebutton-properties-methods-events
+position: 4 
 ---
 
 # Properties

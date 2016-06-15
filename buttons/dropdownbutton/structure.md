@@ -6,7 +6,6 @@ slug: winforms/buttons/dropdownbutton/structure
 tags: dropdownbutton
 published: True
 position: 1
-previous_url: buttons-dropdownbutton-structure
 ---
 
 # Structure

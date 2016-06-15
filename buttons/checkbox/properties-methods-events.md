@@ -6,7 +6,6 @@ slug: winforms/buttons/checkbox/properties-methods-events
 tags: checkbox
 published: True
 position: 4
-previous_url: buttons-checkbox-properties-methods-events
 ---
 
 # Properties

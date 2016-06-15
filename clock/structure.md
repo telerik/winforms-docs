@@ -5,8 +5,7 @@ description: RadClock is a control which allows the developers to use it in thei
 slug: winforms/clock/structure
 tags: clock
 published: True
-position: 1
-previous_url: clock-structure
+position: 1 
 ---
 
 # Structure

@@ -6,8 +6,7 @@ description: RadToggleSwitch is a control designed to represent two states- e.g.
 slug: winforms/buttons/toggleswitch/tooltips
 tags: toggleswitch
 published: True
-position: 6
-previous_url: buttons-toggleswitch-tooltips
+position: 6 
 ---
 
 # Tooltips

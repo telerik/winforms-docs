@@ -5,8 +5,7 @@ description: RadDropDownButton provides a menu-like interface open from a button
 slug: winforms/buttons/dropdownbutton/tooltips
 tags: dropdownbutton
 published: True
-position: 6
-previous_url: buttons-dropdownbutton-tooltips
+position: 6 
 ---
 
 # Tooltips

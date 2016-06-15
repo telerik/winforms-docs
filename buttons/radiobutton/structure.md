@@ -6,7 +6,6 @@ slug: winforms/buttons/radiobutton/structure
 tags: radiobutton
 published: True
 position: 0
-previous_url: buttons-radiobutton-structure
 ---
 
 # Structure

@@ -6,7 +6,6 @@ slug: winforms/buttons/radiobutton/getting-started
 tags: getting,started
 published: True
 position: 3
-previous_url: buttons-radiobutton-getting-started
 ---
 
 # Getting Started

@@ -6,7 +6,6 @@ slug: winforms/buttons/checkbox/tooltips
 tags: checkbox, tooltips
 published: True
 position: 7
-previous_url: buttons-checkbox-tooltips
 ---
 
 # Tooltips
