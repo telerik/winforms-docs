@@ -21,6 +21,7 @@ position: 3
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=CreatingControl}} 
 
 ````C#
+            
 RadCommandBar radCommandBar = new RadCommandBar();
 this.Controls.Add(radCommandBar);
 radCommandBar.Dock = DockStyle.Top;

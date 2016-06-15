@@ -87,6 +87,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=usingProvider}} 
 
 ````C#
+            
 CommandBarLocalizationProvider.CurrentProvider = new MyEnglishCommandBarLocalizationProvider();
 
 ````

@@ -21,6 +21,7 @@ You can present the content of your commandbar instance in a right-to-left direc
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=rtl}} 
 
 ````C#
+            
 this.radCommandBar1.RightToLeft = RightToLeft.Yes;
 
 ````

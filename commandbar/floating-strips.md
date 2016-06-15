@@ -33,6 +33,7 @@ There are some events that provide you with control over the floating/docking pr
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreating}} 
 
 ````C#
+    
 void radCommandBar1_FloatingStripCreating(object sender, CancelEventArgs e)
 {
     if ((sender as CommandBarStripElement).Name == "OptionsStrip")
@@ -113,6 +114,7 @@ End Sub
 {{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocked}} 
 
 ````C#
+        
 void radCommandBar1_FloatingStripDocked(object sender, EventArgs e)
 {
     CommandBarStripElement dockedStrip = sender as CommandBarStripElement;
