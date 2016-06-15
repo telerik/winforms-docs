@@ -166,3 +166,8 @@ The essential properties of PolarGrid are the following:
 * __AlternatingBackColor__: The property sets the color of the alternating polar sectors. The property takes effect only when DrawPolarFills and AlternatingPolarColor are set to true;
 
 * __AlternatingBackColor2__: The property sets the color of the alternating radial sectors. The property takes effect only when DrawRadialFills and AlternatingRadialColor are set to true;
+
+# See Also
+
+* [Getting Started]({%slug winforms/chartview/getting-started%})
+* [Series Types]({%slug winforms/chartview-/series-types%})
