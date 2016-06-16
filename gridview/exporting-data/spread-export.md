@@ -11,7 +11,7 @@ previous_url: gridview-exporting-data-spread-export
 
 # Spread export 
 
-__GridViewSpreadExport__ utilizes our [RadSpreadProcessing]({%slug winforms/spreadprocessing%}) libraries to export the contents of __RadGridView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how to use it.
+__GridViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadGridView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how to use it.
 
 * [Exporting Data](#exporting-data)
 
@@ -25,7 +25,7 @@ Here is how the following grid, looks when exported.<br>![gridview-exporting-dat
 * Telerik.WinControls.TelerikExport
 >
 
->important Since this functionality is using the [RadSpreadProcessingLibrary]({%slug winforms/spreadprocessing%}) you need to reference the following assemblies as well:
+>important Since this functionality is using the [RadSpreadProcessingLibrary](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) you need to reference the following assemblies as well:
 * Telerik.Windows.Documents.Core
 * Telerik.Windows.Documents.Fixed
 * Telerik.Windows.Documents.Spreadsheet
@@ -186,7 +186,7 @@ Each column in RadGridView has __ExcelExportType__ property which can be used fo
 
 __CellFormatting__: This event is used to format the cells to be exported. The event arguments provide:
 
-* *CellSelection*:  After casting to the __CellSelection__ class, provides access to the excel cells selection. More information about the abilities this object introduces, can be found here: [Get, Set and Clear Cell Properties]({%slug winforms/spreadprocessing/working-with-cells/get-set-and-clear-cell-properties%}).
+* *CellSelection*:  After casting to the __CellSelection__ class, provides access to the excel cells selection. More information about the abilities this object introduces, can be found here: [Get, Set and Clear Cell Properties](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-cells/get-set-clear-properties).
 
 * *CellStyleInfo*: This object is a wrapper of the CellSelection object, and allows to easier modification of the most common appearance settings.
 
@@ -266,7 +266,7 @@ End Sub
 
 ![gridview-exporting-data-spread-export 003](images/gridview-exporting-data-spread-export003.png)
 
-__WorkbookCreated__: This event is triggered on the __SpreadExportRenderer__ object when the workbook is ready to be exported. Allows to introduce final customizations (for example you can add [header and footer]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})). More information on how to work with Workbook is available here: [Working with Workbooks]({%slug winforms/spreadprocessing/working-with-workbooks/create-open-and-save-workbooks%}).
+__WorkbookCreated__: This event is triggered on the __SpreadExportRenderer__ object when the workbook is ready to be exported. Allows to introduce final customizations (for example you can add [header and footer]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})). More information on how to work with Workbook is available here: [Working with Workbooks](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-workbooks/create-open-and-save-workbooks).
 
 
 

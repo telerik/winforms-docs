@@ -11,7 +11,7 @@ previous_url: pivotgrid-export-export-to-pdf
 
 # Export to Pdf
 
-__RadPivotGrid__ can export its contents to PDF. This is achieved with the help of the [RadPdfProcessing]({%slug winforms/pdfprocessing%}) library. <br>![pivotgrid-export-export-to-pdf 001](images/pivotgrid-export-export-to-pdf001.png)
+__RadPivotGrid__ can export its contents to PDF. This is achieved with the help of the [RadPdfProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library. <br>![pivotgrid-export-export-to-pdf 001](images/pivotgrid-export-export-to-pdf001.png)
 
 >note The PDF export functionality is located in the __TelerikExport.dll__ assembly and to use the functionality you need yo add reference to it.
 >
@@ -92,7 +92,7 @@ End Using
 
 * __ShowHeaderAndFooter:__ Gets or sets a value indicating whether header and footer should be exported.
 
-* __ExportSettings:__ This property allows you to set the [document information]({%slug winforms/pdfprocessing/model/radfixeddocument%}).
+* __ExportSettings:__ This property allows you to set the [document information](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/radfixeddocument).
 
 The following properties define color and font of the different cell elements: __CellBackColor__, __HeadersBackColor__, __DescriptorsBackColor__, __SubTotalsBackColor__, __GrandTotalsBackColor__, __BorderColor__, __HeaderCellsFont__, __DataCellsFont__
 

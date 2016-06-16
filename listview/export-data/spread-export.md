@@ -11,7 +11,7 @@ previous_url: listview-export-data-spread-export
 
 # Spread Export
 
-__ListViewSpreadExport__ utilizes our [RadSpreadProcessing]({%slug winforms/spreadprocessing%})  libraries to export the contents of __RadListView__ to *xlsx, csv, pdf* and *txt* formats. The list view is exported according to the current ViewType. All three view types can be exported. This article will explain in detail the SpreadExport abilities and will demonstrate how you can use it.
+__ListViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)  libraries to export the contents of __RadListView__ to *xlsx, csv, pdf* and *txt* formats. The list view is exported according to the current ViewType. All three view types can be exported. This article will explain in detail the SpreadExport abilities and will demonstrate how you can use it.
 
 * [Exporting Data](#exporting-data)
 
@@ -27,7 +27,7 @@ Here is how the following __RadListView__, looks when it is exported.
 * Telerik.WinControls.TelerikExport
 >
 
->important Since this functionality is using the [RadSpreadProcessingLibrary]({%slug winforms/spreadprocessing%}) you need to reference the following assemblies as well:
+>important Since this functionality is using the [RadSpreadProcessingLibrary](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) you need to reference the following assemblies as well:
 * Telerik.Windows.Documents.Core
 * Telerik.Windows.Documents.Fixed
 * Telerik.Windows.Documents.Spreadsheet

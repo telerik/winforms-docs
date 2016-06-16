@@ -15,7 +15,7 @@ previous_url: tpf-export-data-support-spread-export-renderer
 The __SpreadExportRenderer__ class gives you access to the exported document and provides you with the ability to change it before it is saved.
         
 
-The __SpreadExportRenderer__ API gives you the ability to manipulate the document. The most important part is the __WorkbookCreated__ event. This event is triggered on the __SpreadExportRenderer__ object when the workbook is ready to be exported. Allows to introduce final customizations (for example you can add [header and footer]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})). More information on how to work with Workbook is available here: [Working with Workbooks]({%slug winforms/spreadprocessing/working-with-workbooks/create-open-and-save-workbooks%}).
+The __SpreadExportRenderer__ API gives you the ability to manipulate the document. The most important part is the __WorkbookCreated__ event. This event is triggered on the __SpreadExportRenderer__ object when the workbook is ready to be exported. Allows to introduce final customizations (for example you can add [header and footer]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})). More information on how to work with Workbook is available here: [Working with Workbooks](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-workbooks/create-open-and-save-workbooks).
         
 
 The following example shows how you can subscribe to the event and use it to best fit the columns in the file:

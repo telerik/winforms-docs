@@ -18,7 +18,7 @@ previous_url: gridview-exporting-data-export-to-pdf
 __RadGridView__ can export its contents to PDF using two separate mecahnisms.
         
 
-* The __GridViewPdfExport__ object utilizes the powerful [RadPdfProcessing]({%slug winforms/pdfprocessing%}) library and exports __RadGridView__`s data natively to the PDF format.
+* The __GridViewPdfExport__ object utilizes the powerful [RadPdfProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library and exports __RadGridView__`s data natively to the PDF format.
 
 * The __ExportToPdf__ object on the other hand first renders __RadGridView__ as an XHTML table and the export process will convert that table to a PDF document. That said, Export to PDF supports all of the ExportToHTML settings, but it also adds some PDF specific ones.
 

@@ -11,7 +11,7 @@ previous_url: pivotgrid-export-srpead-export
 
 # Spread Export
 
-__PivotGridSpreadExport__ utilizes our [RadSpreadProcessing]({%slug winforms/spreadprocessing%}) libraries to export the contents of __RadPivotGrid__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how to use it.
+__PivotGridSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadPivotGrid__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how to use it.
 
 * [Exporting Data](#exporting-data)
 
@@ -29,7 +29,7 @@ Here is how the following grid, looks when exported.
 * Telerik.WinControls.TelerikExport
 >
 
->important Since this functionality is using the [RadSpreadProcessingLibrary]({%slug winforms/spreadprocessing%}) you need to reference the following assemblies as well:
+>important Since this functionality is using the [RadSpreadProcessingLibrary](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) you need to reference the following assemblies as well:
 * Telerik.Windows.Documents.Core
 * Telerik.Windows.Documents.Fixed
 * Telerik.Windows.Documents.Spreadsheet
