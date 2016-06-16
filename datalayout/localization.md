@@ -5,7 +5,7 @@ description: This article shows how you can localize the string used in RadDataL
 slug: winforms/datalayout/localization
 tags: localization
 published: True
-position: 7
+position: 8
 previous_url: datalayout-localization
 ---
 

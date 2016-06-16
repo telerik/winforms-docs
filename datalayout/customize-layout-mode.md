@@ -5,7 +5,7 @@ description: This article shows how one can use the layout customization dialog.
 slug: winforms/datalayout/customize-layout-mode
 tags: customize,layout,mode
 published: True
-position: 5
+position: 6
 previous_url: datalayout-customize-layout-mode
 ---
 

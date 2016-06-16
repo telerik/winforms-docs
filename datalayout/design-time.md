@@ -5,7 +5,7 @@ description: This article describes the design-time capabilities of RadDataLayou
 slug: winforms/datalayout/design-time
 tags: design,time
 published: True
-position: 1
+position: 2
 previous_url: datalayout-design-time
 ---
 

@@ -5,7 +5,7 @@ description: This article describes how the end user can build and Save/Load cus
 slug: winforms/datalayout/save/load-layout
 tags: save/load,layout
 published: True
-position: 6
+position: 7
 previous_url: datalayout-save-load-layout
 ---
 
@@ -13,6 +13,7 @@ previous_url: datalayout-save-load-layout
 
 __RadDataLayout__ allows changes at runtime. The control can export/import its layout which is stored in Xml format. This funtionality can be utilized by calling the __SaveLayout__ and __LoadLayout__ methods.
 
+#### Save the layout.
 {{source=..\SamplesCS\DataLayout\LoadSaveLayout.cs region=SaveLayout}} 
 {{source=..\SamplesVB\DataLayout\LoadSaveLayout.vb region=SaveLayout}} 
 
@@ -45,6 +46,8 @@ End Sub
 ````
 
 {{endregion}} 
+
+#### Load the Layout
 
 {{source=..\SamplesCS\DataLayout\LoadSaveLayout.cs region=LoadLayout}} 
 {{source=..\SamplesVB\DataLayout\LoadSaveLayout.vb region=LoadLayout}} 

@@ -5,7 +5,7 @@ description: This article shows how you can start using RadDataLayout.
 slug: winforms/datalayout/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: datalayout-getting-started
 ---
 
