@@ -1,19 +1,19 @@
 ---
 title: Validation
 page_title: Validation | UI for WinForms Documentation
-description: Validation
+description: This article shows how one can validate the user input.
 slug: winforms/datalayout/validation
 tags: validation
 published: True
-position: 4
+position: 5
 previous_url: datalayout-validation
 ---
 
 # Validation
 
-For the need of validation process we made two events (__ItemValidating, ItemValidated__) that are firing when the __Validating__ and __Validated__ events occur in the editors. __RadDataLayout__ provides three different ways to show to the users that some editors do not match to validation criteria – Validation label, Error provider and Validation Panel. In the following tutorial we will demonstrate how to use a validation panel together with Error provider.
+For the need of validation process we made two events (__ItemValidating, ItemValidated__) that are firing when the __Validating__ and __Validated__ events occur in the editors. __RadDataLayout__ provides three different ways to show to the users that some editors do not match the validation criteria – `Validation Label`, `Error Provider` and `Validation Panel`. In the following tutorial we will demonstrate how to use a validation panel together with Error provider.
 
-1\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataLayout__ to object from this type we will generate several items:
+1\. For the purpose of this tutorial, we will create a new class `Employee` with a couple of exposed properties. By binding __RadDataLayout__ to object from this type we will generate several items:
 
 {{source=..\SamplesCS\DataLayout\DataLayoutValidation.cs region=DataLayoutEmployee}} 
 {{source=..\SamplesVB\DataLayout\DataLayoutValidation.vb region=DataLayoutEmployee}} 
@@ -128,7 +128,7 @@ Me.RadDataLayout1.DataSource = New Employee() With {
 
 ![datalayout-validation 001](images/datalayout-validation001.png)
 
-2\. Set the __ShowValidationPanel__ property to true. This will display the panel below the editors:
+2\. Set the __ShowValidationPanel__ property to *true*. This will display the panel below the editors:
 
 {{source=..\SamplesCS\DataLayout\DataLayoutValidation.cs region=DataLayoutShowPanel}} 
 {{source=..\SamplesVB\DataLayout\DataLayoutValidation.vb region=DataLayoutShowPanel}} 
@@ -303,4 +303,13 @@ End Sub
 
 ![datalayout-validation 002](images/datalayout-validation002.png)
 
-In this tutorial we also used an Error provider to show error icon next to the editors. You can read more about Microsoft Error provider here - [ErrorProvider Class](http://msdn.microsoft.com/en-us/library/system.windows.forms.errorprovider%28v=vs.110%29.aspx)
+In this tutorial we also used an error provider to show error icon next to the editors. You can read more about Microsoft Error provider here - [ErrorProvider Class](http://msdn.microsoft.com/en-us/library/system.windows.forms.errorprovider%28v=vs.110%29.aspx)
+
+# See Also
+
+ * [Structure]({%slug winforms/datalayout/control-element-structure%})
+ * [Getting Started]({%slug winforms/datalayout/getting-started%})
+ * [Properties, events and attributes]({%slug winforms/datalayout/properties,-events-and-attributes%})
+ * [Localization]({%slug winforms/datalayout/localization%})
+ * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})
+ * [Customizing Appearance ]({%slug winforms/raddatalayout/customizing-appearance%})

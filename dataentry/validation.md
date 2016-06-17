@@ -1,19 +1,16 @@
 ---
 title: Validation
 page_title: Validation | UI for WinForms Documentation
-description: Validation
+description: This article describes how RadDataEntry validates the user input.
 slug: winforms/dataentry/validation
 tags: validation
 published: True
-position: 5
+position: 6
 previous_url: dataentry-validation
 ---
 
 # Validation
 
-
-
-## 
 
 For the need of validation process we made two events (__ItemValidating, ItemValidated__) that are firing when the __Validating__ and __Validated__ events occur in the editors. __RadDataEntry__ provides three different ways to show to the users that some editors do not match to validation criteria – Validation label, Error provider and Validation Panel. In the following tutorial we will demonstrate how use validation panel together with Error provider.
         
@@ -337,3 +334,11 @@ End Sub
 ![dataentry-validation 002](images/dataentry-validation002.png)
 
 In this tutorial we also used and Error provider to show error icon next to the editors.  You can read more about Microsoft Error provider here - [ErrorProvider Class](http://msdn.microsoft.com/en-us/library/system.windows.forms.errorprovider%28v=vs.110%29.aspx)
+
+# See Also
+
+ * [Structure]({%slug  winforms/dataentry/control-element-structure%})
+ * [Getting Started]({%slug  winforms/dataentry/getting-started%})
+ * [Properties, events and attributes]({%slug  winforms/dataentry/properties,-events-and-attributes%})
+ * [Themes]({%slug winforms/dataentry/themes%})
+ * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})

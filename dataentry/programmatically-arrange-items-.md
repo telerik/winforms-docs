@@ -1,19 +1,15 @@
 ---
 title: Programmatically arrange items 
 page_title: Programmatically arrange items  | UI for WinForms Documentation
-description: Programmatically arrange items 
+description: This article describes how one can arrange the editors.
 slug: winforms/dataentry/programmatically-arrange-items-
 tags: programmatically,arrange,items,
 published: True
-position: 4
+position: 5
 previous_url: dataentry-overview-programmatically-arrange-items
 ---
 
 # Programmatically arrange items 
-
-
-
-## 
 
 Items in __RadDataEntry__ can be arranged both at design time and run time. At design time users can use the designer to arrange the items according to their needs by drag and drop or by setting the desired properties of the items. However at run time there is no designer that can be used to arrange them, so to achieve the desired layout the user should use the exposed events or to access the controls from the __Controls__ collection and to change their location, size and etc. The following example will demonstrate how to use the control events to arrange the generated items.
         
@@ -224,3 +220,12 @@ End Sub
 
 
 ![dataentry-overview-programmatically-arrange-items 002](images/dataentry-overview-programmatically-arrange-items002.png)
+
+# See Also
+
+ * [Structure]({%slug  winforms/dataentry/control-element-structure%})
+ * [Getting Started]({%slug  winforms/dataentry/getting-started%})
+ * [Properties, events and attributes]({%slug  winforms/dataentry/properties,-events-and-attributes%})
+ * [Validation]({%slug winforms/dataentry/validation%})
+ * [Themes]({%slug winforms/dataentry/themes%})
+ * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})

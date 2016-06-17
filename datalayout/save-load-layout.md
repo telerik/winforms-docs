@@ -1,11 +1,11 @@
 ---
 title: Save/Load Layout
 page_title: Save/Load Layout | UI for WinForms Documentation
-description: Save/Load Layout
+description: This article describes how the end user can build and Save/Load custom layouts.
 slug: winforms/datalayout/save/load-layout
 tags: save/load,layout
 published: True
-position: 6
+position: 7
 previous_url: datalayout-save-load-layout
 ---
 
@@ -13,6 +13,7 @@ previous_url: datalayout-save-load-layout
 
 __RadDataLayout__ allows changes at runtime. The control can export/import its layout which is stored in Xml format. This funtionality can be utilized by calling the __SaveLayout__ and __LoadLayout__ methods.
 
+#### Save the layout.
 {{source=..\SamplesCS\DataLayout\LoadSaveLayout.cs region=SaveLayout}} 
 {{source=..\SamplesVB\DataLayout\LoadSaveLayout.vb region=SaveLayout}} 
 
@@ -45,6 +46,8 @@ End Sub
 ````
 
 {{endregion}} 
+
+#### Load the Layout
 
 {{source=..\SamplesCS\DataLayout\LoadSaveLayout.cs region=LoadLayout}} 
 {{source=..\SamplesVB\DataLayout\LoadSaveLayout.vb region=LoadLayout}} 
@@ -81,3 +84,11 @@ End Sub
 
 The layout can be saved/loaded with the [customize dialog]({%slug winforms/datalayout/customize-layout-mode%}) as well.
         
+# See Also
+
+ * [Structure]({%slug winforms/datalayout/control-element-structure%})
+ * [Getting Started]({%slug winforms/datalayout/getting-started%})
+ * [Properties, events and attributes]({%slug winforms/datalayout/properties,-events-and-attributes%})
+ * [Localization]({%slug winforms/datalayout/localization%})
+ * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})
+ * [Customizing Appearance ]({%slug winforms/raddatalayout/customizing-appearance%})

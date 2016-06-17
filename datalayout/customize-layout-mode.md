@@ -1,11 +1,11 @@
 ---
 title: Customize Layout Mode
 page_title: Customize Layout Mode | UI for WinForms Documentation
-description: Customize Layout Mode
+description: This article shows how one can use the layout customization dialog.
 slug: winforms/datalayout/customize-layout-mode
 tags: customize,layout,mode
 published: True
-position: 5
+position: 6
 previous_url: datalayout-customize-layout-mode
 ---
 
@@ -19,7 +19,7 @@ The customize dialog can be opened from the default context menu of __RadDataLay
         
 >caption Figure 1: Customize Dialog
 
-![datalayout-customize-layout-mode 001](images/datalayout-customize-layout-mode001.gif)
+![datalayout-customize-layout-mode 001](images/datalayout-customize-layout-mode001.png)
 
 ## Perform Changes
 
@@ -36,3 +36,13 @@ The __DragOverlay__ is a separate control which is shown when the customize dial
 >caption Figure 3: DragOverlay
 
 ![datalayout-customize-layout-mode 002](images/datalayout-customize-layout-mode003.png)
+
+
+# See Also
+
+ * [Structure]({%slug winforms/datalayout/control-element-structure%})
+ * [Getting Started]({%slug winforms/datalayout/getting-started%})
+ * [Properties, events and attributes]({%slug winforms/datalayout/properties,-events-and-attributes%})
+ * [Validation]({%slug winforms/datalayout/validation%})
+ * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})
+ * [Customizing Appearance ]({%slug winforms/raddatalayout/customizing-appearance%})
