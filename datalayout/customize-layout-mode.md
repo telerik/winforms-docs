@@ -36,3 +36,13 @@ The __DragOverlay__ is a separate control which is shown when the customize dial
 >caption Figure 3: DragOverlay
 
 ![datalayout-customize-layout-mode 002](images/datalayout-customize-layout-mode003.png)
+
+
+# See Also
+
+ * [Structure]({%slug winforms/datalayout/control-element-structure%})
+ * [Getting Started]({%slug winforms/datalayout/getting-started%})
+ * [Properties, events and attributes]({%slug winforms/datalayout/properties,-events-and-attributes%})
+ * [Validation]({%slug winforms/datalayout/validation%})
+ * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})
+ * [Customizing Appearance ]({%slug winforms/raddatalayout/customizing-appearance%})

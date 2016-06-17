@@ -23,3 +23,11 @@ __RadDataLayout__ generates content item for each public property that can be ed
 ![datalayout-structure 002](images/datalayout-structure002.png)
 
 The Validation label does not have any text by default. It is designed to be used in cases where users want to show some additional information. 
+
+# See Also
+
+ * [Localization]({%slug winforms/datalayout/localization%})
+ * [Getting Started]({%slug winforms/datalayout/getting-started%})
+ * [Properties, events and attributes]({%slug winforms/datalayout/properties,-events-and-attributes%})
+ * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})
+ * [Customizing Appearance ]({%slug winforms/raddatalayout/customizing-appearance%})

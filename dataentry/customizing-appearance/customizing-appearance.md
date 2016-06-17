@@ -41,7 +41,7 @@ radDataEntry1.DataEntryElement.Border.ForeColor = ColorTranslator.FromHtml("#e83
 
 ![dataentry-customizing-appearance002](images/dataentry-customizing-appearance002.png)  
 
-## Changing this styles of the underlying controls. 
+## Changing the styles of the underlying controls. 
 
 The following snippet shows how you access the underlying controls and change the their styles:
 

@@ -30,3 +30,12 @@ __RadDataLayout__ generates different editors depending on the type of the prope
 * __RadColorBox__: Handles color
 
 * __PictureBox__: Edits images
+
+# See Also
+
+ * [Structure]({%slug winforms/datalayout/control-element-structure%})
+ * [Getting Started]({%slug winforms/datalayout/getting-started%})
+ * [Properties, events and attributes]({%slug winforms/datalayout/properties,-events-and-attributes%})
+ * [Localization]({%slug winforms/datalayout/localization%})
+ * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})
+ * [Customizing Appearance ]({%slug winforms/raddatalayout/customizing-appearance%})
