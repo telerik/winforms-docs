@@ -10,11 +10,12 @@ previous_url: dock-overview
 ---
 
 # Dock
- 
-## 
 
 RadDock helps you manage multiple windows in your application with a docking system similar to Microsoft Visual Studio. RadDock can contain both tool and tabbed document style windows. RadDock also includes fully interactive design-time layout management.
         
+![dock-overview 000](images/dock-overview000.png)
+
+### Features
 
 * The RadDock control provides a container that holds dockable windows. This container can fill the entire client area of a Windows Form, or can be limited to any rectangular area you choose to manage.
             
@@ -57,29 +58,33 @@ This sample RSS Reader implements RadDock and several other Telerik controls. Do
 
 Features of RadDock include:
 
-* Tool windows (DockPanels) can be floating, docked, pinned, unpinned and tabbed.
-            
+* Tool windows (DockPanels) can be floating, docked, pinned, unpinned and tabbed.  
 
 * Horizontal or vertical splits between groups of DockPanels.
 
 * Full drag and drop support including the docking compass and docking hints for visual feedback
-![dock-overview 002](images/dock-overview002.png)
+    ![dock-overview 002](images/dock-overview002.png)
 
-* Tool windows can be "AutoHidden" (collapsed) or pinned open.   ![dock-overview 003](images/dock-overview003.png)![dock-overview 004](images/dock-overview004.png)
+* Tool windows can be "AutoHidden" (collapsed) or pinned open.  
 
-* Fully interactive design-time layout management.![dock-overview 006](images/dock-overview006.png)
+    ![dock-overview 003](images/dock-overview003.png)
+    ![dock-overview 004](images/dock-overview004.png)
 
-* Ctrl+Tab support for navigating between DockWindows.![dock-overview 007](images/dock-overview007.png)
+* Fully interactive design-time layout management.
+
+    ![dock-overview 005](images/dock-overview005.png)
+
+* Ctrl+Tab support for navigating between DockWindows.
+ 
+     ![dock-overview 006](images/dock-overview006.png)
 
 * Tabbed documents (DocumentWindows) can be dragged and rearranged within the tabbed document container.
 
-![dock-overview 005](images/dock-overview005.png)
+    ![dock-overview 007](images/dock-overview007.png)
 
 * Automatic MDI Support. As MDI children are added to a parent form the MDI children are added to the RadDock as tabbed documents.
-![dock-overview 008](images/dock-overview008.png)
 
 * Support for custom tool window and custom tabbed documents. These objects are like standard UserControl and Form objects in the designer but add docking support for free. 
-            
 
 * Support for saving and loading panel layout.
 
