@@ -171,6 +171,7 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 
 {{endregion}} 
 
+>caption Figure 1. RadDataEntry is initialized.
 
 ![dataentry-overview-programmatically-arrange-items 001](images/dataentry-overview-programmatically-arrange-items001.png)
 
@@ -218,6 +219,7 @@ End Sub
 
 {{endregion}} 
 
+>caption Figure 2. The whole name is now displayed in the first row. 
 
 ![dataentry-overview-programmatically-arrange-items 002](images/dataentry-overview-programmatically-arrange-items002.png)
 

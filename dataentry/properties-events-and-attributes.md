@@ -20,6 +20,8 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
 
+#### Set the data source of RadDataEntry.
+
 ````C#
 this.radDataEntry1.DataSource = new Employee() 
 { 
@@ -47,11 +49,14 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 
 {{endregion}} 
 
+>caption> Figure 1. Set the data source of RadDataEntry
 
 ![dataentry-properties-events-and-attributes 001](images/dataentry-properties-events-and-attributes001.png)
 
 * The __ColumnCount__ property controls the amount of columns that __RadDataEntry__ will use to arrange generated controls. Default value is 1 
  
+#### Set the columns count.
+
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=NumberOfColumns}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=NumberOfColumns}} 
 
@@ -66,10 +71,13 @@ Me.radDataEntry1.ColumnCount = 2
 
 {{endregion}} 
 
+>caption Figure 2. Set the columns Count.
 
 ![dataentry-properties-events-and-attributes 002](images/dataentry-properties-events-and-attributes002.png)
 
 * The __FitToParentWidth__ property controls whether the generated editors should fit their width to width of the __RadDataEntry__. Default Value is *false*. 
+
+#### Set FitToParentWidth property.
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=FitToParentWidth}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=FitToParentWidth}} 
@@ -85,11 +93,13 @@ Me.radDataEntry1.FitToParentWidth = True
 
 {{endregion}} 
 
+>caption Figure 3. Set FitToParentWidth
 
 ![dataentry-properties-events-and-attributes 003](images/dataentry-properties-events-and-attributes003.png)
 
 * The __ShowValidationPanel__ property controls the visibility of validation panel. Please note that this property will change the visibility of panel if only there are controls inside it. By default this panel is disabled.
             
+#### Setup the Validation Panel.
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ShowValidationPanel}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ShowValidationPanel}} 
@@ -119,10 +129,13 @@ Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
 
 {{endregion}} 
 
+>caption Figure 4. The Validation Panel.
 
 ![dataentry-properties-events-and-attributes 004](images/dataentry-properties-events-and-attributes004.png)
 
 * The __FlowDirection__ controls the direction the editors will be generated when the __ColumnCount__ property has value bigger than 1. 
+
+### Set the flow direction.
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=FillingOrder1}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=FillingOrder1}} 
@@ -140,11 +153,13 @@ Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
 
 {{endregion}} 
 
+>caption Figure 5. Set the flow direction.
 
 ![dataentry-properties-events-and-attributes 002](images/dataentry-properties-events-and-attributes005.png)
 
 * The __ItemSpace__ property controls the space that between the generated items. Default value is 5 pixels.
            
+#### Set the space between the items.
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ItemSpace}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ItemSpace}} 
@@ -160,10 +175,13 @@ Me.radDataEntry1.ItemSpace = 10
 
 {{endregion}} 
 
+>caption Figure 6 Set the items space.
 
 ![dataentry-properties-events-and-attributes 006](images/dataentry-properties-events-and-attributes006.png)
 
 * The __ItemDefaultSize__ property sets the size that generated items should have if __FitToParentWidth__ property has value *false*. When property the __FitToParentWidth__ has value *true* the width of items are calculated according the width of the __RadDataEntry__ control and the number of the columns. In this case the width defined with __ItemDefaultSize__ is ignored. 
+
+#### Set items default size.
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ItemDefaultSize}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ItemDefaultSize}} 
@@ -179,10 +197,13 @@ Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
 
 {{endregion}} 
 
+>caption Figure 7. Set items size.
 
 ![dataentry-properties-events-and-attributes 007](images/dataentry-properties-events-and-attributes007.png)
 
 * In __RadDataEntry__ control there is logic that arranges the labels of the editors in one column according to the longest text. This logic can be controlled by the __AutoSizeLabels__ property. By default the property value is false and the labels width will equals the longest label width. If you set this property to true, the labels will be sized according to their content, as shown on the following figure: 
+
+#### Set the AutoSizeLabels property.
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ResizeLabels}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ResizeLabels}} 
@@ -198,6 +219,7 @@ Me.radDataEntry1.AutoSizeLabels = False
 
 {{endregion}} 
 
+>caption Figure 8. The labels are not auto sized.
 
 ![dataentry-properties-events-and-attributes 008](images/dataentry-properties-events-and-attributes008.png)
 
@@ -237,6 +259,8 @@ __RadDataEntry__ has support for several attributes that can be used to change t
 
 With the __Browsable__ attribute users can easily control which properties should be displayed 
 
+#### Set the Browsable attribute. 
+
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=Browsable}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=Browsable}} 
 
@@ -267,6 +291,8 @@ Private m_PhoneNumber As String
 
 
 The __DisplayName__ attribute defines what text should be displayed in the label that is associated with the editor. 
+
+#### Set the DisplayName attribute.
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=DisplayName}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=DisplayName}} 
@@ -299,7 +325,9 @@ Private m_LastName As String
 
 ![dataentry-properties-events-and-attributes 009](images/dataentry-properties-events-and-attributes009.png)
 
-With __RadRangeAttribute__ attribute users can define range that can be used into validation process. This attribute is provided in validation events. 
+With __RadRange__ attribute users can define range that can be used into validation process. This attribute is provided in validation events. 
+
+#### Set the RadRange attribute
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=RadRange}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=RadRange}} 
