@@ -11,7 +11,7 @@ previous_url: dock-architecture-and-features-docking-guides-template
 
 # DockingGuidesTemplate
  
-RadDock comes with two predefined docking guides templates:
+RadDock comes with four predefined docking guides templates:
 
 * Visual Studio 2008 
 
@@ -20,6 +20,14 @@ RadDock comes with two predefined docking guides templates:
 * Visual Studio 2010 
 
 ![dock-architecture-and-features-docking-guides-template 002](images/dock-architecture-and-features-docking-guides-template002.png)
+
+* Control Default
+
+![dock-architecture-and-features-docking-guides-template 016](images/dock-architecture-and-features-docking-guides-template016.png)
+
+* Office2010
+
+![dock-architecture-and-features-docking-guides-template 017](images/dock-architecture-and-features-docking-guides-template017.png)
 
 By default, RadDock uses the VS2010 template. In order to use the VS2008 template, you can set it as shown below: 
 

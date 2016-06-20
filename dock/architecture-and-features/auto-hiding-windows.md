@@ -11,28 +11,19 @@ previous_url: dock-architecture-and-features-auto-hiding-windows
 
 # Auto-Hiding Windows
 
-
-
 ## Auto-Hide a DockPanel
 
 Un-pin the __ToolWindow__ by clicking the pushpin icon in the title bar. This will cause the __ToolWindow__ to auto-hide at the edge of the __RadDock__ to which it belongs. The screen shots below show before and after un-pinning the panel.
 
-|||
-|----|----|
-|![dock-architecture-and-features-auto-hiding-windows 001](images/dock-architecture-and-features-auto-hiding-windows001.png)|![dock-architecture-and-features-auto-hiding-windows 002](images/dock-architecture-and-features-auto-hiding-windows002.png)|
-
+![dock-architecture-and-features-auto-hiding-windows 001](images/dock-architecture-and-features-auto-hiding-windows001.gif)
 
 
 ## Showing and Pinning a Hidden DockPanel
 
 Hover the mouse over the tab at the edge of the __RadDock__ that displays the __ToolWindow__ title. This will cause the __ToolWindow__ to slide out over the other panels. As long as the mouse cursor is over the tab or the panel itself, the panel will stay visible. Moving the mouse away from the tab and panel will cause the panel to collapse again to its un-pinned state. To dock the panel, click the "pin" button to pin the panel in place.
 
-
-|||
-|----|----|
-|![dock-architecture-and-features-auto-hiding-windows 003](images/dock-architecture-and-features-auto-hiding-windows003.png)|![dock-architecture-and-features-auto-hiding-windows 004](images/dock-architecture-and-features-auto-hiding-windows004.png)|
+![dock-architecture-and-features-auto-hiding-windows 002](images/dock-architecture-and-features-auto-hiding-windows002.gif)
  
-
 ## Understanding AutoHidePosition
 
 When you unpin a ToolTabStrip with ToolWindows, these windows will collapse against a specific side - Left, Top, Right or Bottom. By default when you dock a ToolWindow in RadDock, the ToolTabStrip container of this ToolWindow has its AutoHidePosition set to Auto. The side to which a ToolWindow will collapse depends on the docked position of the ToolTabStrip in relation to the main DocumentContainer. Let's put it simple:
