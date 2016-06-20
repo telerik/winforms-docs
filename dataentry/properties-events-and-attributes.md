@@ -20,8 +20,6 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
 
-#### Set the data source of RadDataEntry.
-
 ````C#
 this.radDataEntry1.DataSource = new Employee() 
 { 
