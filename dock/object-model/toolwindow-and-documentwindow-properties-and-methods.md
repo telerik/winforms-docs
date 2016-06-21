@@ -11,7 +11,7 @@ previous_url: dock-object-model-toolwindow-and-documentwindow-properties-at-runt
 
 # ToolWindow and DocumentWindow Properties and Methods
  
-## ToolWindow and DocumentWindow Properties
+## Properties
 
 __ToolWindow__ and __DocumentWindow__ both implement the same interfaces, such as __IDockWindow__ and have a common set of properties even though their runtime behavior differs.
 
@@ -33,15 +33,15 @@ __ToolWindow__ and __DocumentWindow__ both implement the same interfaces, such a
 * __Text__ specifies the text to display in the caption bar at the top of the __ToolWindow__ and on the tab at the bottom of the __ToolWindow__.
             
 
-## ToolWindow and DocumentWindow Methods
+## Methods
 
-__Close():__ Closes a ToolWindow or a DocumentWindow. The ToolWindow/DocumentWindow can be just hidden or directly disposed. This depends on its default behavior and the __CloseAction__ property. For additional information refer to [Removing ToolWindow and DocumentWindow at Runtime]({%slug winforms/dock/object-model/removing-toolwindow-and-documentwindow-at-runtime%}).
+* __Close:__ Closes a ToolWindow or a DocumentWindow. The ToolWindow/DocumentWindow can be just hidden or directly disposed. This depends on its default behavior and the __CloseAction__ property. For additional information refer to [Removing ToolWindow and DocumentWindow at Runtime]({%slug winforms/dock/object-model/removing-toolwindow-and-documentwindow-at-runtime%}).
 
-__Show():__ Shows a hidden ToolWindow or DocumentWindow.
+* __Show:__ Shows a hidden ToolWindow or DocumentWindow.
 
-__DockTo(DockWindow window, DockPosition dockPosition):__ Docks a window with another window in the same container. The example below docks "Bottom Window" to the container of "Top Window".
+* __DockTo(DockWindow window, DockPosition dockPosition):__ Docks a window with another window in the same container. The example below docks "Bottom Window" to the container of "Top Window".
 
-![dock-object-model-toolwindow-and-documentwindow-properties-at-runtime 001](images/dock-object-model-toolwindow-and-documentwindow-properties-at-runtime001.png)
+    ![dock-object-model-toolwindow-and-documentwindow-properties-at-runtime 001](images/dock-object-model-toolwindow-and-documentwindow-properties-at-runtime001.png)
 
 #### Using DockTo() 
 
