@@ -6,7 +6,7 @@ slug: winforms/richtexteditor/import
 tags: import/export
 published: True
 position: 0
-previous_url: richtexteditor-import-export
+previous_url: richtexteditor-import-export, richtexteditor-import-export-data-providers
 ---
 
 # Import/Export

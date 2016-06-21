@@ -6,7 +6,7 @@ slug: winforms/telerik-presentation-framework/overview
 tags: overview
 published: True
 position: 0
-previous_url: tpf-overview
+previous_url: tpf-overview, tpf-painting-logic
 ---
 
 # Telerik Presentation Framework Overview

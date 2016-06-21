@@ -6,6 +6,7 @@ slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-arcs
 tags: working,with,arcs
 published: True
 position: 0
+previous_url: radialgauge-understanding-gauge-elements-working-with-arcs
 ---
 
 # Working with arcs

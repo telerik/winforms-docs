@@ -6,7 +6,7 @@ slug: winforms/richtexteditor-
 tags: richtexteditor,
 published: True
 position: 0
-previous_url: richtexteditor
+previous_url: richtexteditor, richtexteditor-troubleshooting, richtexteditor-styles-and-templates-template-structure, richtexteditor-styles-and-templates-styling-the-richtexteditor, richtexteditor-styles-and-templates   
 ---
 
 # RichTextEditor 

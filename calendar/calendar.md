@@ -6,7 +6,7 @@ slug: winforms/calendar
 tags: calendar
 published: True
 position: 0
-previous_url: calendar-overview
+previous_url: calendar-overview, calendar-customizing-appearance-how-to-hiding-weekends, calendar-customizing-behavior-customizing-dates
 ---
 
 # Calendar

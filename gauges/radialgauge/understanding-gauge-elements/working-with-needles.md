@@ -6,6 +6,7 @@ slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-need
 tags: working,with,needles
 published: True
 position: 1
+previous_url: radialgauge-understanding-gauge-elements-working-with-needles
 ---
 
 # Working with needles

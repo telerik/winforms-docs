@@ -6,6 +6,7 @@ slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-tick
 tags: working,with,ticks
 published: True
 position: 3
+previous_url: radialgauge-understanding-gauge-elements-working-with-ticks
 ---
 
 # Working with ticks

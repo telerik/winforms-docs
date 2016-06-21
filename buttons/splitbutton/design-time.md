@@ -6,6 +6,7 @@ slug: winforms/buttons/splitbutton/design-time
 tags: splitbutton
 published: True
 position: 2 
+previous_url: /buttons-splitbutton-working-with-radsplitbutton-items
 ---
 
 # Design Time

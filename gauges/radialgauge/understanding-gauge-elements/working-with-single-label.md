@@ -6,6 +6,7 @@ slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-sing
 tags: working,with,single,label
 published: True
 position: 4
+previous_url: radialgauge-understanding-gauge-elements-working-with-single-label
 ---
 
 # Working with single label

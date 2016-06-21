@@ -6,7 +6,7 @@ slug: winforms/scheduler/appointments-and-dialogs/adding-a-custom-field-to-the-e
 tags: adding,a,custom,field,to,the,editappointment,dialog
 published: True
 position: 3
-previous_url: scheduler-appointments-and-dialogs-adding-a-custom-field-to-the-editappointment-dialog
+previous_url: scheduler-appointments-and-dialogs-adding-a-custom-field-to-the-editappointment-dialog, scheduler-appointments-and-dialogs-creating-a-custom-editappointment-dialog
 ---
 
 # Adding a custom field to the EditAppointment dialog

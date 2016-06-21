@@ -6,6 +6,7 @@ slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-labe
 tags: working,with,labels
 published: True
 position: 2
+previous_url: radialgauge-understanding-gauge-elements-working-with-labels
 ---
 
 # Working with labels

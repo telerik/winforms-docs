@@ -6,7 +6,7 @@ slug: winforms/carousel/properties
 tags: carousel, properties, methods, events
 published: True
 position: 7
-previous_url: carousel/using-radcarousel/radcarousel-properties
+previous_url: carousel/using-radcarousel/radcarousel-properties, carousel-using-radcarousel-radcarousel-properties
 ---
 
 ## Properties

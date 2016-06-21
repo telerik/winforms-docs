@@ -6,7 +6,7 @@ slug: winforms/track-and-status-controls/waitingbar/structure
 tags: control,element,structure
 published: True
 position: 1
-previous_url: track-and-status-controls-waitingbar-structure
+previous_url: track-and-status-controls-waitingbar-structure, track-and-status-controls-waitingbar-control-element-structure
 ---
 
 # Structure

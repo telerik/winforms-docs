@@ -6,7 +6,7 @@ slug: winforms/gridview/columns/column-types/gridviewcheckboxcolumn
 tags: gridviewcheckboxcolumn
 published: True
 position: 4
-previous_url: gridview-columns-gridviewcheckboxcolumn
+previous_url: gridview-columns-gridviewcheckboxcolumn, gridview-editors-howto-checkboxeditor-submit-value-change
 ---
 
 # GridViewCheckBoxColumn

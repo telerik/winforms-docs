@@ -6,7 +6,7 @@ slug: winforms/buttons/radiobutton/design-time
 tags: radiobutton
 published: True
 position: 2
-previous_url: buttons-radiobutton-design-time
+previous_url: buttons-radiobutton-design-time, buttons-radiobutton-designing-radradiobutton
 ---
 
 # Design Time

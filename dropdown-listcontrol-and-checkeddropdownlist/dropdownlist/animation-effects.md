@@ -6,7 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/animati
 tags: animation,effects
 published: True
 position: 15
-previous_url: dropdown-and-listcontrol-dropdownlist-animation-effects.html
+previous_url: dropdown-and-listcontrol-dropdownlist-animation-effects
 ---
 
 # Animation Effects

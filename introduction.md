@@ -6,7 +6,7 @@ slug: winforms/overview
 tags: overview
 published: True
 position: 0
-previous_url: overview
+previous_url: overview, RadControlsForWinForms
 ---
 
 # Telerik UI for WinForms by Progress

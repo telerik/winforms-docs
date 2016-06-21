@@ -6,7 +6,7 @@ slug: winforms/track-and-status-controls/waitingbar/accessing-and-customizing-el
 tags: customizing,radwaitingbar
 published: True
 position: 0
-previous_url: track-and-status-controls-waitingbar-accessing-and-customizing-elements
+previous_url: track-and-status-controls-waitingbar-accessing-and-customizing-elements, track-and-status-controls-waitingbar-customizing-radwaitingbar
 ---
 
 # Accessing and Customizing Elements
