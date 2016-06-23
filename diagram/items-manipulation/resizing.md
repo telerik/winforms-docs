@@ -1,7 +1,7 @@
 ---
 title: Resizing
 page_title: Resizing | UI for WinForms Documentation
-description: Resizing
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram-(beta)/items-manipulation/resizing
 tags: resizing
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-items-manipulation-resizing
 ---
 
 # Resizing
-
-
 
 __RadDiagram__ gives you the ability to resize shapes by dragging their __Resizing Thumbs__. You can also use the shapes' __Width__ and __Height__ for this purpose.
 

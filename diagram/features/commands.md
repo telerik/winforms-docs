@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Commands | UI for WinForms Documentation
-description: Commands
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/features/commands
 tags: commands
 published: True
@@ -10,9 +10,7 @@ previous_url: diagram-features-commands
 ---
 
 # Commands
-
-
-
+ 
 __RadDiagram__ provides a powerful set of __RoutedUICommands__ that help you work with your __RadDiagram__ and its items easily and build better MVVM applications.
 
 ## RadDiagram Commands

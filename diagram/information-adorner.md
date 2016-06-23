@@ -1,7 +1,7 @@
 ---
 title: Information Adorner
 page_title: Information Adorner | UI for WinForms Documentation
-description: Information Adorner
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/information-adorner
 tags: information,adorner
 published: True
@@ -11,13 +11,8 @@ previous_url: diagram-information-adorner
 
 # Information Adorner
 
-
-
 __RadDiagram__ shows information tool-tips that appear below the manipulation adorner when you resize, rotate or drag a shape or group of shapes and connections.
       
-
-## 
-
 __RadDiagram__ uses the __ItemInformationAdorner__ to visualize information regarding the position, size and rotation angle of its shapes.  
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EnableInformationAdorner}} 

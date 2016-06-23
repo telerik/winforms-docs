@@ -1,7 +1,7 @@
 ---
 title: Undo and Redo
 page_title: Undo and Redo | UI for WinForms Documentation
-description: Undo and Redo
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/features/undo-and-redo
 tags: undo,and,redo
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-features-undo-and-redo
 ---
 
 # Undo and Redo
-
-
 
 __Telerik Diagramming Framework__ exposes Undo/Redo functionality. The framework allows you to keep track of the changes made in a Diagramming structure and trigger an undo or redo action using commands, methods or keyboard shortcuts.
 

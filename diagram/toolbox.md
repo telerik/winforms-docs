@@ -1,7 +1,7 @@
 ---
 title: Toolbox
 page_title: Toolbox | UI for WinForms Documentation
-description: Toolbox
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/toolbox
 tags: toolbox
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-toolbox
 ---
 
 # Toolbox
-
-
 
 __RadDiagramToolbox__  introduces a set of shapes that can be dragged to a __RadDiagram__.
 

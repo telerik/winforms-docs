@@ -1,7 +1,7 @@
 ---
 title: Shapes
 page_title: Shapes | UI for WinForms Documentation
-description: Shapes
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/diagram-items/shapes
 tags: shapes
 published: True
@@ -11,13 +11,10 @@ previous_url: diagram-diagram-items-shapes
 
 # Shapes
 
-
-
 This tutorial will walk you through the functionality and the main features of __RadDiagramShape__.
 
 >note Before proceeding with this topic, it is recommended to get familiar with the [visual structure]({%slug winforms/diagram/structure%}) of the __RadDiagram__ .
 >
-
 
 ## RadDiagramShape
 

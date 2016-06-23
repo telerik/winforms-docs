@@ -1,7 +1,7 @@
 ---
 title: Clipboard operations
 page_title: Clipboard operations | UI for WinForms Documentation
-description: Clipboard operations
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/items-manipulation/clipboard-operations
 tags: clipboard,operations
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-items-manipulation-clipboard-operations
 ---
 
 # Clipboard operations
-
-
 
 __RadDiagram__ gives you the ability to Cut, Copy and Paste __RadDiagramItems__ within an application.
 

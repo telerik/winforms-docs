@@ -1,7 +1,7 @@
 ---
 title: ContainerShapes
 page_title: ContainerShapes | UI for WinForms Documentation
-description: ContainerShapes
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/diagram-items/containershapes
 tags: containershapes
 published: True
@@ -10,7 +10,6 @@ previous_url: diagram-diagram-items-container-shapes
 ---
 
 # ContainerShapes
-
 
 
 This article will walk you through the functionality and the main features of the __RadDiagramContainerShape__.

@@ -1,7 +1,7 @@
 ---
 title: Touch Support
 page_title: Touch Support | UI for WinForms Documentation
-description: Touch Support
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/features/touch-support
 tags: touch,support
 published: True
@@ -10,7 +10,6 @@ previous_url: diagram-features-touch-support
 ---
 
 # Touch Support
-
 
 
 This article describes the touch support implemented in the __RadDiagram__

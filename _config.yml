@@ -230,6 +230,9 @@ navigation:
     diagram/diagram-items:
         title: Diagram Items
         position: 8
+    diagram/diagram-items/connections:
+        title: Connections
+        position: 1
     diagram/data-binding:
         title: Data Binding
         position: 10 

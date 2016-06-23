@@ -1,7 +1,7 @@
 ---
 title: Removing items
 page_title: Removing items | UI for WinForms Documentation
-description: Removing items
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/items-manipulation/removing-items
 tags: removing,items
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-items-manipulation-removing-items
 ---
 
 # Removing items
-
-
 
 __RadDiagram__ gives you the ability to remove __RadDiagramItems__ interactively, programmatically or with __DiagramCommands__.
 

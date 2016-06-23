@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection | UI for WinForms Documentation
-description: Selection
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/items-manipulation/selection
 tags: selection
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-items-manipulation-selection
 ---
 
 # Selection
-
-
 
 __RadDiagram__ gives you the ability to select __RadDiagramItems__ in code behind, interactively or by invoking [RadDiagramCommand]({%slug winforms/diagram/features/commands%}).
 

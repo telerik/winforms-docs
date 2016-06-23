@@ -1,7 +1,7 @@
 ---
 title: Editing
 page_title: Editing | UI for WinForms Documentation
-description: Editing
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/items-manipulation/editing
 tags: editing
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-items-manipulation-editing
 ---
 
 # Editing
-
-
 
 __RadDiagram__ gives you the ability to edit the content of its items. You can double-click items in order to edit them or use [RadDiagramCommand]({%slug winforms/diagram/features/commands%}).
 

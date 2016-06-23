@@ -1,7 +1,7 @@
 ---
 title: Export
 page_title: Export | UI for WinForms Documentation
-description: Export
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/features/export
 tags: diagram, export
 published: True

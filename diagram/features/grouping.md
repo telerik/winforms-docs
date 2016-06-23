@@ -1,7 +1,7 @@
 ---
 title: Grouping
 page_title: Grouping | UI for WinForms Documentation
-description: Grouping
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/features/grouping
 tags: grouping
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-features-grouping
 ---
 
 # Grouping
-
-
 
 Grouping in the __RadDiagram__ is a way of organizing shapes and connections in logical groups. Groups are non-visual, logical collections of shapes and/or connections and/or other groups which can be created in code behind or with Commands.
       

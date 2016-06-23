@@ -1,7 +1,7 @@
 ---
 title: Printing Support
 page_title: Printing Support | UI for WinForms Documentation
-description: Printing Support
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/features/printing-support
 tags: printing,support
 published: True
@@ -10,9 +10,7 @@ previous_url: diagram-features-printing-support
 ---
 
 # Printing Support
-
-
-
+ 
 __RadDiagram__ provides options to print its content by using a [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}).
       
 

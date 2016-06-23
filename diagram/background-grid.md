@@ -1,7 +1,7 @@
 ---
 title: Background Grid
 page_title: Background Grid | UI for WinForms Documentation
-description: Background Grid
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications. 
 slug: winforms/diagram/background-grid
 tags: background,grid
 published: True

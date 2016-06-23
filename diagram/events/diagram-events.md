@@ -1,7 +1,7 @@
 ---
 title: Diagram Events
 page_title: Diagram Events | UI for WinForms Documentation
-description: Diagram Events
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/events/diagram-events
 tags: diagram,events
 published: True
@@ -10,9 +10,7 @@ previous_url: diagram-events-diagram-events
 ---
 
 # Diagram Events
-
-
-
+ 
 This topic covers the specific events exposed by the __RadDiagram__. The events are grouped by their general purpose.
 
 ## Selection Events

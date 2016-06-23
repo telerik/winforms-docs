@@ -1,7 +1,7 @@
 ---
 title: Data Binding Basics
 page_title: Data Binding Basics | UI for WinForms Documentation
-description: Data Binding Basics
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/data-binding/data-binding-basics
 tags: data,binding,basics
 published: True
@@ -11,11 +11,8 @@ previous_url: diagram-data-binding-basics
 
 # Data Binding Basics
 
-
-
 In this article you can check how to data bind __RadDiagram__. To make data binding work, minimally you must assign the __DataSource__ property of __RadDiagram__ and the member properties explained below.
 
-## 
 
 * __ConnectionDataMember__ - set this to the field that holds the collection of data that will be used to populate the connections.
             

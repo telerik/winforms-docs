@@ -1,7 +1,7 @@
 ---
 title: Layout
 page_title: Layout | UI for WinForms Documentation
-description: Layout
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram-(beta)/features/layout
 tags: layout
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-features-layout
 ---
 
 # Layout
-
-
 
 Layout in the __RadDiagram__ refers to the way the __Shapes__ are arranged on the diagramming surface. __RadDiagram__ provides a dozen of layout algorithms which can be easily customized.
 
@@ -37,8 +35,6 @@ Me.RadDiagram1.SetLayout(Telerik.Windows.Diagrams.Core.LayoutType.Sugiyama)
 ````
 
 {{endregion}} 
-
-
 
 
 * use the DiagramCommands.__Layout__: 

@@ -1,7 +1,7 @@
 ---
 title: RibbonUI
 page_title: RibbonUI | UI for WinForms Documentation
-description: RibbonUI
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/ribbonui
 tags: ribbonui
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-ribbonui
 ---
 
 # RibbonUI
-
-
 
 __RadDiagramRibbonBar__ is a ribbon control that has been wired to work with the API that  __RadDiagram__ exposes.
       

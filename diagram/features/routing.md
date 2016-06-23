@@ -1,7 +1,7 @@
 ---
 title: Routing
 page_title: Routing | UI for WinForms Documentation
-description: Routing
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/features/routing
 tags: routing
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-features-routing
 ---
 
 # Routing
-
-
 
 Routing is a mechanism using algorithms to make sure that the connections don't cross each other while building links/paths between the shapes.
 

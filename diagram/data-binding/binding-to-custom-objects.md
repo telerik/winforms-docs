@@ -1,7 +1,7 @@
 ---
 title: Binding to Custom Objects
 page_title: Binding to Custom Objects | UI for WinForms Documentation
-description: Binding to Custom Objects
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/data-binding/binding-to-custom-objects
 tags: binding,to,custom,objects
 published: True
@@ -12,11 +12,8 @@ previous_url: diagram-data-binding-binding-to-custom-objects
 # Binding to Custom Objects
 
 
-
 In this article you can check how to data bind __RadDiagram__ by using custom objects.
     
-
-## 
 
 The data source should contain columns/fields that represent the shapes/connections collections. Each of the objects that illustrates the shape/connection should have columns/fields for each of the diagram fields that you want to specify. For example, if you want to pull the width of the shape from the data source, this will require a separate column/field that contains the widths of each shape.
         

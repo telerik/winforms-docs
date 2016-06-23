@@ -1,7 +1,7 @@
 ---
 title: Rotation
 page_title: Rotation | UI for WinForms Documentation
-description: Rotation
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram-(beta)/items-manipulation/rotation
 tags: rotation
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-items-manipulation-rotation
 ---
 
 # Rotation
-
-
 
 __RadDiagram__ gives you the ability to rotate shapes by dragging their Rotation Thumb or by changing their __RotationAngle__ property.
 

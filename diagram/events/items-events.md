@@ -1,7 +1,7 @@
 ---
 title: Items Events
 page_title: Items Events | UI for WinForms Documentation
-description: Items Events
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/events/items-events
 tags: items,events
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-events-items-events
 ---
 
 # Items Events
-
-
 
 This topic covers the specific events exposed by the __RadDiagramItem__. The events are grouped by their general purpose.
 

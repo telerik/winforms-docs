@@ -1,7 +1,7 @@
 ---
 title: Pan and Zoom
 page_title: Pan and Zoom | UI for WinForms Documentation
-description: Pan and Zoom
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram-(beta)/features/pan-and-zoom
 tags: pan,and,zoom
 published: True
@@ -10,9 +10,7 @@ previous_url: diagram-features-pan-and-zoom
 ---
 
 # Pan and Zoom
-
-
-
+ 
 In __RadDiagram__ you can easily pan, zoom in or out of your current diagramming structure. This article will get you familiar with the pan and zoom implementation within the __RadDiagram__.
     
 

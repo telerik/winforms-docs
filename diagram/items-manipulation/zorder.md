@@ -1,7 +1,7 @@
 ---
 title: ZOrder
 page_title: ZOrder | UI for WinForms Documentation
-description: ZOrder
+description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/items-manipulation/zorder
 tags: zorder
 published: True
@@ -10,8 +10,6 @@ previous_url: diagram-items-manipulation-zorder
 ---
 
 # ZOrder
-
-
 
 __RadDiagram__ gives you the ability to control the Z-Order of shapes and connections by using their __ZIndex__ property. You can also use __RadDiagramCommands__ in order to increase/decrease __ZIndex__ of the selected __RadDiagramItems__ simultaneously.
 
