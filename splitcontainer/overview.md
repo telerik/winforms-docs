@@ -11,7 +11,6 @@ previous_url: splitcontainer-overview
 
 # SplitContainer
 
-## 
 
 Telerik SplitContainer is a layout control which allows you to add many container panels to a form, separated by splitter(s). It is very handy for creating complex user interfaces where a selection in one panel determines what objects are shown in another panel. The splitter makes it very easy for users to resize the panels to fit their personal liking.
 

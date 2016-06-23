@@ -10,18 +10,14 @@ previous_url: dock-architecture-and-features-floating-windows
 ---
 
 # Floating Windows
+
+__ToolWindows__ can reside in docked or floating docking containers. Floating containers are still controlled by __RadDock__.
  
-
-__ToolWindows__ can reside in docked or floating docking containers. Floating containers are still controlled by the __RadDock__.
-      
-
 ## Floating a ToolWindow
 
 There are multiple ways to float a __ToolWindow__:
-        
 
 * Drag the __ToolWindow__ out of the docked container area to an existing floating container.
-            
 
 * Drag the __ToolWindow__ to any area within the __DockingAssistant__ other than a drop target icon, the __RadDock__ will create a new floating container with the __ToolWindow__ in it.
             
@@ -42,7 +38,6 @@ You can drag __DockPanels__ to an existing floating container. Select left, rig
 ## Unfloating a ToolWindow
 
 To "un-float" a __ToolWindow__, drag the title bar to a docked container, or double-click the title bar.
-        
 
 ## Moving a ToolWindow to a New Docking Container
 
@@ -77,7 +72,7 @@ You can drag document windows to an existing floating container. Select left, ri
 
 ## Changing the floating behavior
 
-To enable the Visual Studio 2008-like docking behavior, set the SingleScreen property to true. Enabling this property will prevent document windows from floating and from docking inside existing floating windows.
+To enable the Visual Studio 2008-like docking behavior, set the __SingleScreen__ property to *true*. Enabling this property will prevent document windows from floating and from docking inside existing floating windows.
         
 
 {{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=floatingTabsMode}} 
@@ -100,11 +95,11 @@ This section describes the FloatinWindows specific properties.
 * __Standalone__: Allows the floating window to behave like separate form and appear in the taskbar.
 * __SnapToScreen__: Indicates whether this window should snap to the screen's edges.
 * __SnapToOthers__: Indicates whether this window should snap to other windows.
-* __SnapThreshold__: Indicates the threshold between edges before the window snaps.
+* __SnapThreshold__: Indicates whether the threshold between edges before the window snaps.
 * __SnapOnResize__: Indicates whether this window should snap while resizing.
 * __SnapOnMove__: Indicates whether this window should snap while dragging.
 
->note The snapping functionality can be enabled/disabled by using the __EnableFloatingWindowSnapping__ property of RadDock.
+>note The snapping functionality can be enabled/disabled by using the __EnableFloatingWindowSnapping__ property of __RadDock__.
 >
 
 # See Also

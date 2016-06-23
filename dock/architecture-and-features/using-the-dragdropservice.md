@@ -100,8 +100,6 @@ service.AllowedStates = service.AllowedStates And Not AllowedDockState.Floating
 
 * __PreviewHitTest:__ Allows for preview and/or modification of the generated hit-test result.
 
-
-
 The following example demonstrates how to allow only `DockPosition.Bottom` for the `MainDocumentContainer`:
 
 

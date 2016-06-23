@@ -22,7 +22,7 @@ previous_url: dock-architecture-and-features-using-the-command-manager
 * __PreviousDocument (CTRL+SHIFT+F6)__ Puts the last document in the activation order list in front and activates it.
  
 
-The names of all predefined commands may be found in the static PredefinedCommandNames class.
+The names of all predefined commands may be found in the static `PredefinedCommandNames` class.
  
 
 ## Providing Custom Shortcuts
@@ -145,7 +145,6 @@ End Sub
 
 {{endregion}} 
  
-## Enable Disable the Command Manager
+## Enable/Disable the Command Manager
  
-
 You may easily disable the command manager, using its __Enabled__ property. Alternatively, you may either clear all commands or clear any shortcut associated with these commands.

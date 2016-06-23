@@ -11,7 +11,7 @@ previous_url: dock-architecture-and-features-docking-guides-template
 
 # DockingGuidesTemplate
  
-RadDock comes with four predefined docking guides templates:
+__RadDock__ comes with four predefined docking guides templates:
 
 * Visual Studio 2008 
 
@@ -29,7 +29,7 @@ RadDock comes with four predefined docking guides templates:
 
 ![dock-architecture-and-features-docking-guides-template 017](images/dock-architecture-and-features-docking-guides-template017.png)
 
-By default, RadDock uses the VS2010 template. In order to use the VS2008 template, you can set it as shown below: 
+By default, __RadDock__ uses the VS2010 template. In order to use the VS2008 template, you can set it as shown below: 
 
 {{source=..\SamplesCS\Dock\dock-architecture-and-features-docking-guides-template.cs region=VS2008}} 
 {{source=..\SamplesVB\Dock\dock-architecture-and-features-docking-guides-template.vb region=VS2008}} 
@@ -58,7 +58,7 @@ For our custom DockingGuidesTemplate we will use the following images (used in V
 | __Left Hot__ ![dock-architecture-and-features-docking-guides-template 008](images/dock-architecture-and-features-docking-guides-template008.png)| __Top Hot__ ![dock-architecture-and-features-docking-guides-template 009](images/dock-architecture-and-features-docking-guides-template009.png)| __Right Hot__ ![dock-architecture-and-features-docking-guides-template 011](images/dock-architecture-and-features-docking-guides-template011.png)| __Bottom Hot__ ![dock-architecture-and-features-docking-guides-template 012](images/dock-architecture-and-features-docking-guides-template012.png)| __Fill Hot__ ![dock-architecture-and-features-docking-guides-template 013](images/dock-architecture-and-features-docking-guides-template013.png)|
 | __Center Background__ ![dock-architecture-and-features-docking-guides-template 014](images/dock-architecture-and-features-docking-guides-template014.png)|||||
 
-We should first create a DockingGuidesTemplate object and then set the images and their locations on the Center Background image. RadDock will define its hot mouse areas on the CenterBackground image depending on the images' locations that we set. The left, top, right and bottom images are reused for the outer guides (outside the center "compass"): 
+We should first create a `DockingGuidesTemplate` object and then set the images and their locations on the center background image. RadDock will define its hot mouse areas on the CenterBackground image depending on the images' locations that we set. The left, top, right and bottom images are reused for the outer guides (outside the center "compass"): 
 
 {{source=..\SamplesCS\Dock\dock-architecture-and-features-docking-guides-template.cs region=Template}} 
 {{source=..\SamplesVB\Dock\dock-architecture-and-features-docking-guides-template.vb region=Template}} 
@@ -128,7 +128,6 @@ End Sub
 
 As you can see in the code snippet, we are setting the __DockingHintBackColor__ and __DockingHintBorderColor__ properties which determine the colors of the docking hint area:
         
-
-The result is shown on the figure below
+The result is shown on the figure below:
 
 ![dock-architecture-and-features-docking-guides-template 015](images/dock-architecture-and-features-docking-guides-template015.png)
