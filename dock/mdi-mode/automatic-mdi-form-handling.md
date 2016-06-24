@@ -11,16 +11,16 @@ previous_url: dock-mdi-mode-automatic-mdi-form-handling
 
 # Automatic MDI Form Handling 
 
-RadDock has the capability of automatically finding and attaching Multiple Document Interface (MDI) child forms as tabbed documents. Since RadDock takes control over the MDI children, these children are not added to the parent form's MdiChildren collection, but they are added to the RadDock.MdiChildren collection instead.
+__RadDock__ has the capability of automatically finding and attaching Multiple Document Interface (MDI) child forms as tabbed documents. Since __RadDock__ takes control over the MDI children, these children are not added to the parent form's `MdiChildren` collection, but they are added to the `RadDock.MdiChildren` collection instead.
 
 ![dock-mdi-mode-automatic-mdi-form-handling 001](images/dock-mdi-mode-automatic-mdi-form-handling001.png)
 
 To configure your MDI application to use this feature:
 
-1\. First designate which form that will act as MDI container.  Set the parent form __IsMdiContainer__ property to true. This can be done at design time or in code (see code example below).
+1\. First designate which form that will act as MDI container.  Set the parent form __IsMdiContainer__ property to *true*. This can be done at design time or in code (see code example below).
           
 
-2\. Drop a __RadDock__ onto the parent form and set the __AutoDetectMdiChildForms__ property to true. You may also want to set the __RadDock.Dock__ property to __Fill__ to get the best use of space on the form.
+2\. Drop a __RadDock__ onto the parent form and set the __AutoDetectMdiChildForms__ property to *true*. You may also want to set the __RadDock.Dock__ property to __Fill__ to get the best use of space on the form.
 	
 #### Configuring the Parent Form 
 
@@ -119,7 +119,7 @@ When closing a DockWindow that has been automatically created to host an MDI for
 * __DockWindowClosed__ of the DockWindow that hosts the MDI child form
             
 
-This chain of events allows you to encapsulate all your business logic in the respective forms. For example, you may have to show a message box asking the user to confirm the closing operation and the best place for this will be the FormClosing event of the form. If the FormClosing event is canceled, none of the windows (the DockWindow and the child MDI form) will be closed.      
+This chain of events allows you to encapsulate all your business logic in the respective forms. For example, you may have to show a message box asking the user to confirm the closing operation and the best place for this will be the `FormClosing` event of the form. If the `FormClosing` event is canceled, none of the windows (the DockWindow and the child MDI form) will be closed.      
         
 
 ## Cancel the main form closing
@@ -152,6 +152,6 @@ End Sub
 
 ## Using Singleton forms in MDI scenario with RadDock
 
-A popular scenario for many applications is the use of singleton forms, where the end-user can show one type of form once only and where closing the form would mean just hiding it which saves its state for further showing and manipulation. This scenario is popular in context of MDI as well. However, the architecture and chain of events in RadDock do not allow such a feature in the MDI case. Therefore, if you have such a requirement for your application, you need to remove the MDI functionality from it and use the standard approach of docking of controls/forms. One of the benefits that come with this approach concerns the overhead of the MDI approach. On one hand, you have the .NET MdiClient created and attached to the main form and on the other hand, you have our RadDock that snoops on the notifications from the MDI Client. If it captures new Forms added, it internally creates HostWindows, adds the Forms to the HostWindows, and adds HostWindows to the MainDocumentContainer. 
+A popular scenario for many applications is the use of singleton forms, where the end-user can show one type of form once only and where closing the form would mean just hiding it which saves its state for further showing and manipulation. This scenario is popular in context of MDI as well. However, the architecture and chain of events in __RadDock__ do not allow such a feature in the MDI case. Therefore, if you have such a requirement for your application, you need to remove the MDI functionality from it and use the standard approach of docking of controls/forms. One of the benefits that come with this approach concerns the overhead of the MDI approach. On one hand, you have the .NET MdiClient created and attached to the main form and on the other hand, you have our __RadDock__ that snoops on the notifications from the MDI Client. If it captures new forms added, it internally creates HostWindows, adds the forms to the HostWindows, and adds HostWindows to the MainDocumentContainer. 
 
 For more information about the non-MDI approach, please refer to [this article]({%slug winforms/dock/docking-usercontrols-and-forms/docking-singleton-forms%})

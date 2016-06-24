@@ -12,11 +12,11 @@ previous_url: dock-loading-and-saving-layouts
 # Loading And Saving Layouts
  
 
-__RadDock__ provides methods to save and load layouts. A layout records the size and arrangement of all __DockWindows__ within __RadDock__. This saves all managed dockables (__ToolWindow__ and __DocumentWindow__) regardless of state (i.e. a window may be hidden or floating and still be saved). 
+__RadDock__ provides methods to save and load layouts. A layout records the size and arrangement of all __DockWindows__ within __RadDock__. This saves all managed windows (__ToolWindow__ and __DocumentWindow__) regardless of state (i.e. a window may be hidden or floating and still be saved). 
        
 ## To Save a Layout
 
-To save a layout, call the __RadDock.SaveToXML()__ method:
+To save a layout, call the __RadDock.SaveToXML__ method:
 
 #### SaveToXml 
 
@@ -63,7 +63,8 @@ End Sub
 
 ## To Load a Layout
 
-To load a layout, call the __RadDock.LoadFromXML()__ method:
+To load a layout, call the __RadDock.LoadFromXML__ method:
+
 #### LoadFromXml 
 
 {{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=loadLayout}} 
