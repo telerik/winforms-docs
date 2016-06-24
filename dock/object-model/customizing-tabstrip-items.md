@@ -212,14 +212,15 @@ The tab items of the __DocumentWindows__ in __RadDock__ have a predefined shape 
 >note Since the __TabStripItemCreating__ event is static the event subscription have to be defined before the call to the InitializeComponent method.
 > 
 
-{{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=MultiLineRowLayoutInit}} 
-{{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=MultiLineRowLayoutInit}} 
+{{source=..\SamplesCS\Dock\CustomizingTabStripItemsForm.cs region=MultiLineRowLayoutInit}} 
+{{source=..\SamplesVB\Dock\CustomizingTabStripItemsForm.vb region=MultiLineRowLayoutInit}} 
 
 ````C#
-public void CustomizingTabStripItemsForm()
+public CustomizingTabStripItemsForm()
 {
     RadDockEvents.TabStripItemCreating += RadDockEvents_TabStripItemCreating;
     InitializeComponent();
+    new RadControlSpyForm().Show();
     DocumentContainer container = this.documentContainer1;
     DocumentTabStrip tabStrip = container.Controls[0] as DocumentTabStrip;
     if (tabStrip != null)
@@ -238,13 +239,13 @@ void RadDockEvents_TabStripItemCreating(object sender, TabStripItemCreatingEvent
 Public Sub New()
     AddHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
     InitializeComponent()
-    Dim container As DocumentContainer = Me.documentContainer1
+    Dim container As DocumentContainer = Me.DocumentContainer1
     Dim tabStrip As DocumentTabStrip = TryCast(container.Controls(0), DocumentTabStrip)
     If tabStrip IsNot Nothing Then
         tabStrip.TabStripElement.ItemFitMode = StripViewItemFitMode.MultiLine
     End If
 End Sub
-Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
+Private Sub RadDockEvents_TabStripItemCreating(sender As Object, args As TabStripItemCreatingEventArgs)
     args.TabItem.Shape = New ChamferedRectShape()
     args.TabItem.Padding = New System.Windows.Forms.Padding(4, 4, 7, 4)
 End Sub
