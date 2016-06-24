@@ -2,3 +2,12 @@ _site
 SlugLog.log
 _site.zip
 .bundle/
+install/.gitignore
+install/Gemfile
+install/README.md
+install/Rakefile
+install/bin/console
+install/bin/setup
+install/install.gemspec
+install/lib/install.rb
+install/lib/install/version.rb

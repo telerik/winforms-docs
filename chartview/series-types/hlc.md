@@ -1,7 +1,7 @@
 ---
 title: Hlc
 page_title: Hlc | UI for WinForms Documentation
-description: Hlc
+description: The Hlc series is a simple variant of the Ohlc series. Its data points contain information about the following parameters - high, low and close.
 slug: winforms/chartview-/series-types/hlc
 tags: hlc
 published: True
@@ -11,22 +11,17 @@ previous_url: chartview-series-types-hlc
 
 # Hlc
 
-
-
-## 
-
-The __Hlc series__ is a simple variant of the [Ohlc series]({%slug winforms/chartview-/series-types/ohlc-and-candlestick%}) which was discussed in the previous topic. Its data points contain information about the following parameters: * high, low* and *close*.
-      
+The __Hlc series__ is a simple variant of the [Ohlc series]({%slug winforms/chartview-/series-types/ohlc-and-candlestick%}) which was discussed in the previous topic. Its data points contain information about the following parameters: * high*, *low* and *close*.
 
 Here is how to read the values of an __Hlc__ point:
-        
 
-
-|  __Ohlc__  |
+|  __Hlc__  |
 | ------ |
 |![chartview-series-types-hlc 001](images/chartview-series-types-hlc001.png)|
 
 Here is how to setup the __Hlc__ series: 
+
+#### Initial Setup
 
 {{source=..\SamplesCS\ChartView\Series\HlcSeriesForm.cs region=hlc}} 
 {{source=..\SamplesVB\ChartView\Series\HlcSeriesForm.vb region=hlc}} 
@@ -52,5 +47,10 @@ Me.RadChartView1.Series.Add(hlcSeries)
 
 {{endregion}} 
 
-
+>caption Fig.1 Initial Setup 
 ![chartview-series-types-hlc 002](images/chartview-series-types-hlc002.png)
+
+# See Also
+
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

@@ -53,7 +53,7 @@ Me.RadChartView1.Series.Add(ohlcSeries)
 
 Here is how to setup Candlestick series:
 
-#### #### Initial Setup CandlestickSeries
+#### Initial Setup CandlestickSeries
 
 {{source=..\SamplesCS\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.cs region=candlestick}} 
 {{source=..\SamplesVB\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.vb region=candlestick}} 
@@ -81,3 +81,8 @@ Me.RadChartView1.Series.Add(candlestickSeries)
 
 >caption Fig.2 Initial Setup CandlestickSeries
 ![chartview-series-types-ohlc-and-candlestick 004](images/chartview-series-types-ohlc-and-candlestick004.png)
+
+# See Also
+
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
