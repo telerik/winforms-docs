@@ -276,7 +276,7 @@ Private Sub menuItemSolutionExplorer_Click(ByVal sender As Object, ByVal e As Ev
     End If
 End Sub
 '#End Region
-'#region wrongApproach
+'#Region "wrongApproach"
 Private Sub menuItemTeamExplorer_Click1(ByVal sender As Object, ByVal e As EventArgs)
     Dim teuc As New TeamExplorerUserControl()
     Dim dockTo As DockPosition = DockPosition.Right
