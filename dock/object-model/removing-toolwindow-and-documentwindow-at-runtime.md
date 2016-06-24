@@ -11,19 +11,15 @@ previous_url: dock-object-model-removing-toolwindow-and-documentwindow-at-runtim
 
 # Removing ToolWindow and DocumentWindow at Runtime
  
-RadDock has two different methods which you can call if you want to remove a ToolWindow/DocumentWindow. The of from these methods depends on the __CloseAction__ property which can have one of these values
+__RadDock__ has two different methods which you can call if you want to remove a ToolWindow/DocumentWindow. The of from these methods depends on the __CloseAction__ property which can have one of these values
 
-* __Close.__ When a __DockWindow__ has its __CloseAction__ set to __Close__, this window is closed and detached (but not disposed) from its __RadDock__. You cannot manage it from __RadDock__ collections anymore.
+* __Close.__ When a DockWindow has its __CloseAction__ set to *Close*, this window is closed and detached (but not disposed) from its __RadDock__. You cannot manage it from __RadDock__ collections anymore.
           
-
-* __Hide.__ When a __DockWindow__ has its __CloseAction__ set to Hide, this window is only closed (hidden) in __RadDock__. However, this window is not detached from its __RadDock__ and you can manage it from the __RadDock__ collections.
-          
+* __Hide.__ When a DockWindow has its __CloseAction__ set to *Hide*, this window is only closed (hidden) in __RadDock__. However, this window is not detached from its __RadDock__ and you can manage it from the __RadDock__ collections.
 
 * __CloseAndDispose.__ When a __DockWindow__ has its __CloseAction__ set to __CloseAndDispose__, this window is closed and then disposed.
            
-## RemoveWindow
-
-This method closes and detaches (but does not dispose) a __DockWindow__ regardless of its __CloseAction__ property. This will happen if you pass only a DockWindow as a parameter. In addition, you can pass a __CloseAction__ parameter in the RemoveWindow method. In this case, the RemoveWindow method will act differently in accordance with this parameter. 
+* __RemoveWindow__ This method closes and detaches (but does not dispose) a DockWindow regardless of its __CloseAction__ property. This will happen if you pass only a DockWindow as a parameter. In addition, you can pass a __CloseAction__ parameter. In this case, the RemoveWindow method will act differently in accordance with this parameter. 
 
 ## CloseWindow
 

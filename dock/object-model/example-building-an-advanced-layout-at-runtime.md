@@ -15,11 +15,11 @@ In this tutorial we are going to create an advanced layout of __ToolWindows__ an
 
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 001](images/dock-object-model-example-building-an-advanced-layout-at-runtime001.png)
 
-We will have a floating window with two `ToolWindows` and dimensions of the floating window 150 height and 300 width. An interesting part of building the layout is using the __SizeInfo__ property of the `TabStrip` containers. This property gives you:
+We will have a floating window with two ToolWindows and dimensions of the floating window 150 height and 300 width. An interesting part of building the layout is using the __SizeInfo__ property of the TabStrip containers. This property gives you:
 
-1. The ability to set a precise size of a TabStrip which will not be changed when a user resizes the whole __RadDock__ control. For example, the TabStrip of `window7` will not be resized when we resize the whole form. Its width will always be 150 unless we explicitly resize the TabStrip of the `window7` by using the Splitter. 
+* The ability to set a precise size of a TabStrip which will not be changed when a user resizes the whole __RadDock__ control. For example, the TabStrip of `window7` will not be resized when we resize the whole form. Its width will always be 150 unless we explicitly resize the TabStrip of the `window7` by using the splitter. 
 
-1. The ability to set a relative size of a TabStrip so to keep two TabStrips in a specific size ratio. When we resize the form, the TabStrips of `window1` and `window2` will keep the ration of 1:2 between them - the TabStrip of window2 having 1/3 parts and the TabStrip of `window1` having 2/3 parts. 
+* The ability to set a relative size of a TabStrip so to keep two TabStrips in a specific size ratio. When we resize the form, the TabStrips of `window1` and `window2` will keep the ration of 1:2 between them - the TabStrip of `window2` having 1/3 parts and the TabStrip of `window1` having 2/3 parts. 
 
 So, let's start building the layout:
 
@@ -55,7 +55,7 @@ Me.RadDock1.DockWindow(window2, window1, DockPosition.Bottom)
 
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 002](images/dock-object-model-example-building-an-advanced-layout-at-runtime002.png)
 
-3\. Next, let's make the height of `window2` __TabStrip__ relative to the height of the `window1` __TabStrip__:
+3\. Next, let's make the height of `window2` relative to the height of the `window1`:
 
 #### Setting relative size 
 
@@ -79,7 +79,7 @@ The result is shown on the picture below:
 
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 003](images/dock-object-model-example-building-an-advanced-layout-at-runtime003.png)
 
-Now if we decide to resize the form, the ration of the TabStrips' Height will be kept:
+Now if we decide to resize the form, the ration of the TabStrips' height will be kept:
 
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 004](images/dock-object-model-example-building-an-advanced-layout-at-runtime004.png)
  
@@ -115,7 +115,7 @@ window4.TabStrip.SizeInfo.AbsoluteSize = New Size(150, 0)
 
 {{endregion}} 
  
-This time we set the __Width__ of the `window4` TabStrip to an absolute value of 150 pixels.  
+This time we set the __Width__ of the `window4` to an absolute value of 150 pixels.  
 
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 005](images/dock-object-model-example-building-an-advanced-layout-at-runtime005.png)
 
