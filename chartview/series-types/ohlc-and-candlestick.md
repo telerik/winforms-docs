@@ -1,7 +1,7 @@
 ---
 title: Ohlc and Candlestick
 page_title: Ohlc and Candlestick | UI for WinForms Documentation
-description: Ohlc and Candlestick
+description: RadChartView introduces support for stock series – both Ohlc (Open-High-Low-Close) and Candlestick
 slug: winforms/chartview-/series-types/ohlc-and-candlestick
 tags: ohlc,and,candlestick
 published: True
@@ -11,11 +11,7 @@ previous_url: chartview-series-types-ohlc-and-candlestick
 
 # Ohlc and Candlestick
 
- 
-## 
-
-RadChartView introduces support for stock series – both __Ohlc (Open-High-Low-Close)__ and __Candlestick__. These series operate with special data points which hold information about each the following parameters: *open, high, low, close*. As members of the __Categorical__ series, stock series plot their data upon a categorical (or __DateTimeCategorical__) axis.
-        
+__RadChartView__ introduces support for stock series – both __Ohlc (Open-High-Low-Close)__ and __Candlestick__. These series operate with special data points which hold information about each the following parameters: *open, high, low, close*. As members of the __Categorical__ series, stock series plot their data upon a categorical (or __DateTimeCategorical__) axis.
 
 __Ohlc__ and __Candlestick__ series are indeed two alternative ways to visualize the same data. Here is how to read the values of an __Ohlc__ and __Candlestick__ point:
  
@@ -25,6 +21,8 @@ __Ohlc__ and __Candlestick__ series are indeed two alternative ways to visualize
 |![chartview-series-types-ohlc-and-candlestick 001](images/chartview-series-types-ohlc-and-candlestick001.png)|![chartview-series-types-ohlc-and-candlestick 002](images/chartview-series-types-ohlc-and-candlestick002.png)|
 
 Here is how to setup Ohlc series: 
+
+#### Initial Setup OhlcSeries
 
 {{source=..\SamplesCS\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.cs region=ohlc}} 
 {{source=..\SamplesVB\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.vb region=ohlc}} 
@@ -50,10 +48,12 @@ Me.RadChartView1.Series.Add(ohlcSeries)
 
 {{endregion}} 
 
-
+>caption Fig.1 Initial Setup OhlcSeries
 ![chartview-series-types-ohlc-and-candlestick 003](images/chartview-series-types-ohlc-and-candlestick003.png)
 
 Here is how to setup Candlestick series:
+
+#### #### Initial Setup CandlestickSeries
 
 {{source=..\SamplesCS\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.cs region=candlestick}} 
 {{source=..\SamplesVB\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.vb region=candlestick}} 
@@ -79,5 +79,5 @@ Me.RadChartView1.Series.Add(candlestickSeries)
 
 {{endregion}} 
 
-
+>caption Fig.2 Initial Setup CandlestickSeries
 ![chartview-series-types-ohlc-and-candlestick 004](images/chartview-series-types-ohlc-and-candlestick004.png)

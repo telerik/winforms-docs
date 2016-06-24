@@ -50,3 +50,8 @@ RadChartView1.Series.Add(series1)
 
 >caption Fig.1 Initial Setup
 ![chartview-series-types-line 004](images/chartview-series-types-line004.png)
+
+# See Also
+
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
