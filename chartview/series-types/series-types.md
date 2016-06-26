@@ -22,7 +22,7 @@ Chart series have two primary functions: (1) they contain a collection of specif
 Each series type contains a __DataPoints__ collection that contains specific data points. For example, __Bar__, __Line__ and __Area__ series work with __CategoricalDataPoints__. __Scatter__ and __Pie__ series, however, operate only with __ScatterDataPoints__ and __PieDataPoints__ respectively. Each series type visualizes the data in the best way to present the information stored in its data points. The screenshots below illustrate how each series type is rendered: 
 
 >caption Fig.1 Series Types
-![](images/chartview-series-types-overview001.png)
+![chartview series types overview 001](images/chartview-series-types-overview001.png)
 
 Chart series support both bound and unbound mode. All series contain the following two binding properties - __DataSource__ and __ValueMember__. Once a __DataSource__ is assigned, the __ValueMember__ property is used to resolve the property of the data records visualized by the data points. Different series types introduce additional data binding properties, related to the specific of the contained data. These are __CategoricalMember__, __AngleMember__, __XValueMember__, __YValueMember__. In unbound mode, categorical series can be populated with data manually using the __DataPoints__ collection.
 
