@@ -32,7 +32,7 @@ The following example demonstrates how to use the __CellPaint__ event to change 
 void radGridView1_CellPaint(object sender, Telerik.WinControls.UI.GridViewCellPaintEventArgs e)
 {
     GridDataCellElement dataCell = e.Cell as GridDataCellElement;
-    if (dataCell != null && dataCell.ColumnInfo.Name == "UnitPrice")
+    if (dataCell != null && dataCell.ColumnInfo.Name == "UnitPrice" && !(dataCell.RowElement is GridFilterRowElement))
     {
         double value = Convert.ToDouble(dataCell.Value);
         if (value == 0)
