@@ -47,7 +47,7 @@ Me.RadChartView1.Series.Add(hlcSeries)
 
 {{endregion}} 
 
->caption Fig.1 Initial Setup 
+>caption Figure 1: Initial Setup 
 ![chartview-series-types-hlc 002](images/chartview-series-types-hlc002.png)
 
 # See Also

@@ -51,7 +51,7 @@ Me.RadChartView1.Series.Add(bezier3)
 
 {{endregion}} 
 
->caption Fig.1 Initial Setup
+>caption Figure 1: Initial Setup
 ![chartview-series-types-bezier 001](images/chartview-series-types-bezier001.png)
  
 Here are some of the important properties of __BezierSeries__:

@@ -43,7 +43,7 @@ Me.RadChartView1.Series.Add(series)
 
 {{endregion}} 
 
->caption Fig.1 Initial Setup
+>caption Figure 1: Initial Setup
 ![chartview-series-types-donut 001](images/chartview-series-types-donut001.png)
 
 DonutSeries can be customized using the following properties:
@@ -68,7 +68,7 @@ series.Range = range
 
 {{endregion}} 
 
->caption Fig.2 AngleRange
+>caption Figure 2: AngleRange
 ![chartview-series-types-donut 002](images/chartview-series-types-donut002.png)
 
 * __ShowLabels:__ The property determines whether the labels above each point will be visible.            
@@ -102,7 +102,7 @@ End If
 
 {{endregion}} 
 
->caption Fig.3 Donut Offset
+>caption Figure 3: Donut Offset
 ![chartview-series-types-donut 003](images/chartview-series-types-donut003.png)
 
 # See Also

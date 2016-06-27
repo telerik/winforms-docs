@@ -12,7 +12,6 @@ previous_url: chartview-databinding-binding-to-datatable
 # Binding to DataTable
 
 Binding to DataTable is quite easy with __RadChartView__. Once your table is created, you just need to set the needed members to the desired fields. In [this article]({%slug winforms/chartview-/populating-with-data%}) , you can find the members needed for the different series types.
-        
 
 Here is a sample demonstrating how to bind а [LineSeries]({%slug winforms/chartview-/series-types/line%}): 
 
@@ -65,12 +64,12 @@ End Sub
 
 {{endregion}} 
 
->caption Fig.1 Binding to DataTable
+>caption Figure 1: Binding to DataTable
 ![chartview-databinding-binding-to-datatable 001](images/chartview-databinding-binding-to-datatable001.png)
 
 Adding, removing or modifying a record in the DataTable is automatically reflected in __RadChartView__:
 
->caption Fig.2 Modify Item
+>caption Figure 2: Modify Item
 ![chartview-databinding-binding-to-datatable 002](images/chartview-databinding-binding-to-datatable002.png)
 
 # See Also

@@ -43,7 +43,7 @@ Me.RadChartView1.Series.Add(series)
 
 {{endregion}} 
 
->caption Fig.1 Initial Setup
+>caption Figure 1: Initial Setup
 ![chartview-series-types-pie001](images/chartview-series-types-pie001.png)
 
 __PieSeries__ can be customized using the following properties:        
@@ -66,7 +66,7 @@ series.Range = range
 
 {{endregion}}
 
->caption Fig.2 Angle Range
+>caption Figure 2: Angle Range
 ![](images/chartview-series-types-pie002.png)
 
 * __ShowLabels:__ The property determines whether the labels above each point will be visible.
@@ -98,7 +98,7 @@ End If
 
 {{endregion}} 
 
->caption Fig.3 Offset Segment
+>caption Figure 3: Offset Segment
 ![chartview-series-types-pie003](images/chartview-series-types-pie003.png)
 
 # See Also

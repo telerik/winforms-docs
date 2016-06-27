@@ -48,7 +48,7 @@ Me.RadChartView1.Series.Add(ohlcSeries)
 
 {{endregion}} 
 
->caption Fig.1 Initial Setup OhlcSeries
+>caption Figure 1: Initial Setup OhlcSeries
 ![chartview-series-types-ohlc-and-candlestick 003](images/chartview-series-types-ohlc-and-candlestick003.png)
 
 Here is how to setup Candlestick series:
@@ -79,7 +79,7 @@ Me.RadChartView1.Series.Add(candlestickSeries)
 
 {{endregion}} 
 
->caption Fig.2 Initial Setup CandlestickSeries
+>caption Figure 2: Initial Setup CandlestickSeries
 ![chartview-series-types-ohlc-and-candlestick 004](images/chartview-series-types-ohlc-and-candlestick004.png)
 
 # See Also

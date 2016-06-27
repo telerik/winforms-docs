@@ -52,7 +52,7 @@ Me.RadChartView1.Series.Add(lineSeries2)
 {{endregion}} 
 
 
->caption Fig.1 Initial Setup
+>caption Figure 1: Initial Setup
 ![chartview-series-types-line 001](images/chartview-series-types-line001.png)
 
 The essential properties of __LineSeries__ are:
@@ -69,7 +69,7 @@ The essential properties of __LineSeries__ are:
 
 * CombineMode – a common property for all categorical series, which introduces a mechanism for combining data points that reside in different series but have the same category. The combine mode can be __None__, __Cluster__, __Stack__ and __Stack100__. In the case of Line series, __None__ and __Cluster__ mean that the series will be plotted independently of each other, so that they are overlapping. __Stack__ plots the points on top of each other and __Stack100__ presents the values of one series as a percentage of the other series. The combine mode is best described by a picture.
 
->caption Fig.2 Combine Mode
+>caption Figure 2: Combine Mode
 ![chartview-series-types-line 002](images/chartview-series-types-line002.png)
 
 # See Also

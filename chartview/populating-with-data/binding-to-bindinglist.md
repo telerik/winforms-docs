@@ -58,7 +58,7 @@ End Sub
 
 {{endregion}} 
 
->caption Fig.1 Binding to BindingList
+>caption Figure 1: Binding to BindingList
 ![chartview-databinding-binding-to-bindinglist 001](images/chartview-databinding-binding-to-bindinglist001.png)
 
 In order to allow __RadChartView__ to automatically reflect changes in the data source, your object should implement the INotifyPropertyChanged interface: 
@@ -170,7 +170,7 @@ End Sub
 
 {{endregion}} 
 
->caption Fig.2 Reflect Object Changes
+>caption Figure 2: Reflect Object Changes
 ![chartview-databinding-binding-to-bindinglist 002](images/chartview-databinding-binding-to-bindinglist002.png)
 
 # See Also

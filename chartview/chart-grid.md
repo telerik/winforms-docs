@@ -53,7 +53,7 @@ Me.RadChartView1.Series.Add(series)
 
 {{endregion}} 
 
->caption Fig.1 Cartesian Grid
+>caption Figure 1: Cartesian Grid
 ![chartview-chart-grid 001](images/chartview-chart-grid001.png)
 
 The essential properties of CartesianGrid are the following:
@@ -138,7 +138,7 @@ Me.RadChartView1.Series.Add(polarPointSeries)
 
 {{endregion}} 
 
->caption Fig.2 Polar Grid
+>caption Figure 2: Polar Grid
 ![chartview-chart-grid 002](images/chartview-chart-grid002.png)
 
 The essential properties of PolarGrid are the following:

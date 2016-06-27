@@ -1,7 +1,7 @@
 ---
 title: Categorical
 page_title: Categorical | UI for WinForms Documentation
-description: Categorical
+description: RadChartView uses Categorical axes to plot data that contains categorical values. The axis is valid only in the context of Cartesian Area type.
 slug: winforms/chartview-/axes/categorical
 tags: categorical
 published: True
@@ -25,10 +25,10 @@ __RadChartView__ uses Categorical axes to plot data that contains categorical va
 
 * __ClipLabels:__ This property controls whether labels will be clipped to the size of the axes (width/height). 
 
+#### Categroical Axes Setup
+
 {{source=..\SamplesCS\ChartView\Axes\CategoricalAxisForm.cs region=catAxis}} 
 {{source=..\SamplesVB\ChartView\Axes\CategoricalAxisForm.vb region=catAxis}} 
-
-#### Categroical Axes Setup
 
 ````C#
 LineSeries series = new LineSeries();
@@ -62,7 +62,7 @@ End If
 
 {{endregion}} 
 
->caption Fig.1 Categorical Axes Setup
+>caption Figure 1: Categorical Axes Setup
 ![chartview-axes-categorical 001](images/chartview-axes-categorical001.png)
 
 # See Also

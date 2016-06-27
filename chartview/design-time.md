@@ -13,7 +13,7 @@ previous_url: chartview-designtime
 
 In this article we will describe the design time abilities of __RadChartView__. Here is how the control's SmartTag looks like:
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
 ![chartview-design-time 001](images/chartview-design-time001.png)
 
 * __Common Tasks__
@@ -41,7 +41,6 @@ In this article we will describe the design time abilities of __RadChartView__. 
 	* __ShowTrackBall__: Defines whether trackball should be enabled
 
 	* __ShowToolTip__: Defines whether tooltips should be shown
-            
 
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 

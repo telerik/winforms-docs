@@ -62,7 +62,7 @@ Me.RadChartView1.Series.Add(polarPointSeries)
 
 {{endregion}} 
 
->caption Fig.1 Initial Setup
+>caption Figure 1: Initial Setup
 ![chartview series types polar 001](images/chartview-series-types-polar001.png)
 
 #### PolarLineSeries
@@ -112,7 +112,7 @@ Me.RadChartView1.Series.Add(polarLineSeries)
 
 {{endregion}} 
 
->caption Fig.2 PolarLineSeries
+>caption Figure 2: PolarLineSeries
 ![chartview series types polar 002](images/chartview-series-types-polar002.png) 
  
 #### PolarAreaSeries
@@ -165,7 +165,7 @@ Me.RadChartView1.Series.Add(polarAreaSeries)
 
 {{endregion}} 
 
->caption Fig.3 PolarAreaSeries
+>caption Figure 3: PolarAreaSeries
 ![chartview series types polar 003](images/chartview-series-types-polar003.png)
 
 Here are some of the important properties all __PolarSeries__ share:

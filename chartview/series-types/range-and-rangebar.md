@@ -51,7 +51,7 @@ radChartView1.Series.Add(rangeSeries)
 
 {{endregion}}
 
->caption Fig.1 Initial Setup RangeSeries
+>caption Figure 1: Initial Setup RangeSeries
 ![chartview-series-types-range 001](images/chartview-series-types-range001.png)
 
 ## RangeBarSeries
@@ -92,7 +92,7 @@ radChartView1.Series.Add(rangeBarSeries)
 
 {{endregion}}
 
->caption Fig.2 Initial Setup RangeBarSeries
+>caption Figure 2: Initial Setup RangeBarSeries
 ![chartview-series-types-range 002](images/chartview-series-types-range002.png)
 
 # See Also

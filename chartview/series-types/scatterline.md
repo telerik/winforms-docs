@@ -61,7 +61,7 @@ Me.radChartView1.Series.Add(scatterSeries2)
 
 {{endregion}} 
 
->caption Fig.1 Initial Setup
+>caption Figure 1: Initial Setup
 ![chartview-series-scatterline 001](images/chartview-series-scatterline001.png)
 
 __ScatterLineSeries__ inherit from __ScatterSeries__ thus all important properties are inherited as well. Two important properties are added for the scatter line:
@@ -88,7 +88,7 @@ scatterLine.SplineTension = 0.8F
 
 {{endregion}} 
 
->caption Fig.2 Spline Settings
+>caption Figire 2: Spline Settings
 ![chartview-series-scatterline 002](images/chartview-series-scatterline002.png)
 
 # See Also
