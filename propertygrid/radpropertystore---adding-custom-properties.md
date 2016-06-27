@@ -55,7 +55,7 @@ Me.RadPropertyGrid1.SelectedObject = store
 
 ![propertygrid-radpropertystore 001](images/propertygrid-radpropertystore001.png)
 
-You can then use the RadPropertyGrid to edit the PropertyStoreItems values as if they were properties of an object. You can also change the value of a given property in the RadPropertyStore and the change will be reflected immediately in the RadPropertyGrid. Additionally you can also add or remove items from the RadPropertyStore during runtime and again all changes will be reflected in the RadGridView.
+You can then use the RadPropertyGrid to edit the PropertyStoreItems values as if they were properties of an object. You can also change the value of a given property in the RadPropertyStore and the change will be reflected immediately in the RadPropertyGrid. Additionally you can also add or remove items from the RadPropertyStore during runtime and again all changes will be reflected in the __RadPropertyGrid__.
 
 #### Add/Remove/Edit PropertyStoreItems through code
 

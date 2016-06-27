@@ -15,22 +15,22 @@ previous_url: dock-object-model-toolwindow-and-documentwindow-properties-at-runt
 
 __ToolWindow__ and __DocumentWindow__ both implement the same interfaces, such as __IDockWindow__ and have a common set of properties even though their runtime behavior differs.
 
-* __AllowedDockState__ specifies the allowed dock states for a __DockWindow__.
+* __AllowedDockState:__ Specifies the allowed dock states for a __DockWindow__.
             
 
-* __DockState__ specifies the current state of the __DockWindow__. You can set __DockState__ to __Docked__, __Floating__, __AutoHide__, __Hidden__, __TabbedDocument__.
+* __DockState:__ Specifies the current state of the __DockWindow__. You can set __DockState__ to __Docked__, __Floating__, __AutoHide__, __Hidden__, __TabbedDocument__.
             
 
-* __DockType__: This read-only property contains one of the __Telerik.WinControls.Dock.DockType__ enumeration members __ToolWindow__ (for ToolWindow) or __Document__ for DocumentWindow.
+* __DockType:__ This read-only property contains one of the __Telerik.WinControls.Dock.DockType__ enumeration members __ToolWindow__ (for ToolWindow) or __Document__ for DocumentWindow.
             
 
-* __Name__: This Guid property uniquely identifies each dock panel or tabbed document. Use this property when saving and restoring content. See [Loading and Saving Layouts]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%}) for more information.
+* __Name:__ This Guid property uniquely identifies each dock panel or tabbed document. Use this property when saving and restoring content. See [Loading and Saving Layouts]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%}) for more information.
             
 
-* __Image__: Used to assign an image that displays in the tab for the __ToolWindow__ or __DocumentWindow__. 
+* __Image:__ Used to assign an image that displays in the tab for the __ToolWindow__ or __DocumentWindow__. 
  
 
-* __Text__ specifies the text to display in the caption bar at the top of the __ToolWindow__ and on the tab at the bottom of the __ToolWindow__.
+* __Text:__ Specifies the text to display in the caption bar at the top of the __ToolWindow__ and on the tab at the bottom of the __ToolWindow__.
             
 
 ## Methods

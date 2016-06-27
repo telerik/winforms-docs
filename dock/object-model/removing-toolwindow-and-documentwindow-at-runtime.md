@@ -19,9 +19,11 @@ __RadDock__ has two different methods which you can call if you want to remove a
 
 * __CloseAndDispose.__ When a __DockWindow__ has its __CloseAction__ set to __CloseAndDispose__, this window is closed and then disposed.
            
-* __RemoveWindow__ This method closes and detaches (but does not dispose) a DockWindow regardless of its __CloseAction__ property. This will happen if you pass only a DockWindow as a parameter. In addition, you can pass a __CloseAction__ parameter. In this case, the RemoveWindow method will act differently in accordance with this parameter. 
+###  __RemoveWindow__ 
 
-## CloseWindow
+This method closes and detaches (but does not dispose) a DockWindow regardless of its __CloseAction__ property. This will happen if you pass only a DockWindow as a parameter. In addition, you can pass a __CloseAction__ parameter. In this case, the RemoveWindow method will act differently in accordance with this parameter. 
+
+### CloseWindow
 
 This method has a different result on a DockWindow instance, in accordance with the __CloseAction__ property of this instance. 
  
