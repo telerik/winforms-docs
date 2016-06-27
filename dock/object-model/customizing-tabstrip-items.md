@@ -217,39 +217,8 @@ The tab items of the __DocumentWindows__ in __RadDock__ have a predefined shape 
 {{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=MultiLineRowLayoutInit}} 
 
 ````C#
-public void CustomizingTabStripItemsForm()
-{
-    RadDockEvents.TabStripItemCreating += RadDockEvents_TabStripItemCreating;
-    InitializeComponent();
-    DocumentContainer container = this.documentContainer1;
-    DocumentTabStrip tabStrip = container.Controls[0] as DocumentTabStrip;
-    if (tabStrip != null)
-    {
-        tabStrip.TabStripElement.ItemFitMode = StripViewItemFitMode.MultiLine;
-    }
-}
-void RadDockEvents_TabStripItemCreating(object sender, TabStripItemCreatingEventArgs args)
-{
-    args.TabItem.Shape = new ChamferedRectShape();
-    args.TabItem.Padding = new System.Windows.Forms.Padding(4, 4, 7, 4);
-}
-
 ````
 ````VB.NET
-Public Sub New()
-    AddHandler RadDockEvents.TabStripItemCreating, AddressOf RadDockEvents_TabStripItemCreating
-    InitializeComponent()
-    Dim container As DocumentContainer = Me.documentContainer1
-    Dim tabStrip As DocumentTabStrip = TryCast(container.Controls(0), DocumentTabStrip)
-    If tabStrip IsNot Nothing Then
-        tabStrip.TabStripElement.ItemFitMode = StripViewItemFitMode.MultiLine
-    End If
-End Sub
-Private Sub RadDockEvents_TabStripItemCreating(ByVal sender As Object, ByVal args As TabStripItemCreatingEventArgs)
-    args.TabItem.Shape = New ChamferedRectShape()
-    args.TabItem.Padding = New System.Windows.Forms.Padding(4, 4, 7, 4)
-End Sub
-
 ````
 
 {{endregion}}  
