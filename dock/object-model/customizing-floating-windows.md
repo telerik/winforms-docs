@@ -1,7 +1,7 @@
 ---
 title: Customizing Floating Windows
 page_title: Customizing Floating Windows | UI for WinForms Documentation
-description: Customizing Floating Windows
+description: Customizing Floating Windows when they are created.
 slug: winforms/dock/object-model/customizing-floating-windows
 tags: customizing,floating,windows
 published: True

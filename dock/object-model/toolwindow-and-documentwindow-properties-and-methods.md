@@ -1,7 +1,7 @@
 ---
 title: ToolWindow and DocumentWindow Properties and Methods
 page_title: ToolWindow and DocumentWindow Properties and Methods | UI for WinForms Documentation
-description: ToolWindow and DocumentWindow Properties and Methods
+description: ToolWindow and DocumentWindow most used properties and methods.
 slug: winforms/dock/object-model/toolwindow-and-documentwindow-properties-and-methods
 tags: toolwindow,and,documentwindow,properties,and,methods
 published: True
@@ -21,10 +21,10 @@ __ToolWindow__ and __DocumentWindow__ both implement the same interfaces, such a
 * __DockState:__ Specifies the current state of the __DockWindow__. You can set __DockState__ to __Docked__, __Floating__, __AutoHide__, __Hidden__, __TabbedDocument__.
             
 
-* __DockType:__ This read-only property contains one of the __Telerik.WinControls.Dock.DockType__ enumeration members __ToolWindow__ (for ToolWindow) or __Document__ for DocumentWindow.
+* __DockType:__ This read-only property contains one of the __Telerik.WinControls.Dock.DockType__ enumeration members __ToolWindow__ (for ToolWindow) or __Document__ (for DocumentWindow).
             
 
-* __Name:__ This Guid property uniquely identifies each dock panel or tabbed document. Use this property when saving and restoring content. See [Loading and Saving Layouts]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%}) for more information.
+* __Name:__ This property uniquely identifies each dock panel or tabbed document. Use this property when saving and restoring content. See [Loading and Saving Layouts]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%}) for more information.
             
 
 * __Image:__ Used to assign an image that displays in the tab for the __ToolWindow__ or __DocumentWindow__. 

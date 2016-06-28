@@ -1,7 +1,7 @@
 ---
 title: Docking Singleton Forms
 page_title: Docking Singleton Forms | UI for WinForms Documentation
-description: Docking Singleton Forms
+description: Shows how you can have only one instance of specific window.
 slug: winforms/dock/docking-usercontrols-and-forms/docking-singleton-forms
 tags: docking,singleton,forms
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Arranging DockWindows
 page_title: Arranging DockWindows | UI for WinForms Documentation
-description: Arranging DockWindows
+description: This article shows how you can arrange the windows at runtime.
 slug: winforms/dock/architecture-and-features/arranging-dockwindows
 tags: arranging,dockwindows
 published: True

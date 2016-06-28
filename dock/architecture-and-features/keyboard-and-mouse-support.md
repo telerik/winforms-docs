@@ -1,7 +1,7 @@
 ---
 title: Keyboard And Mouse Support
 page_title: Keyboard And Mouse Support | UI for WinForms Documentation
-description: Keyboard And Mouse Support
+description: This article shows the specific keyboard and mouse features. 
 slug: winforms/dock/architecture-and-features/keyboard-and-mouse-support
 tags: keyboard,and,mouse,support
 published: True

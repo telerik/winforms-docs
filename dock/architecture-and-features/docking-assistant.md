@@ -1,7 +1,7 @@
 ---
 title: Docking Assistant
 page_title: Docking Assistant | UI for WinForms Documentation
-description: Docking Assistant
+description: The Docking Assistant indicates the relationship of a dragged panel to the rest of the docking layout.
 slug: winforms/dock/architecture-and-features/docking-assistant
 tags: docking,assistant
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Floating Windows
 page_title: Floating Windows | UI for WinForms Documentation
-description: Floating Windows
+description: This article describes what is floating window. 
 slug: winforms/dock/architecture-and-features/floating-windows
 tags: floating,windows
 published: True

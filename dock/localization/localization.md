@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization | UI for WinForms Documentation
-description: Localization
+description: This article show how you can localize the strings used in RadDock.
 slug: winforms/dock/localization/localization
 tags: localization
 published: True

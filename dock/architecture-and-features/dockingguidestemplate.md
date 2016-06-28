@@ -1,7 +1,7 @@
 ---
 title: DockingGuidesTemplate
 page_title: DockingGuidesTemplate | UI for WinForms Documentation
-description: DockingGuidesTemplate
+description: Shows how you can use the predefined templates or use custom ones.
 slug: winforms/dock/architecture-and-features/dockingguidestemplate
 tags: dockingguidestemplate
 published: True

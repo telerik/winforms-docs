@@ -1,7 +1,7 @@
 ---
 title: Auto-Hiding Windows
 page_title: Auto-Hiding Windows | UI for WinForms Documentation
-description: Auto-Hiding Windows
+description: This article shows how you can hide windows at runtime.
 slug: winforms/dock/architecture-and-features/auto-hiding-windows
 tags: auto-hiding,windows
 published: True

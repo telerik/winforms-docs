@@ -1,7 +1,7 @@
 ---
 title: AllowedDockStates
 page_title: AllowedDockStates | UI for WinForms Documentation
-description: AllowedDockStates
+description: Describes how you can set the allowed dock states. 
 slug: winforms/dock/object-model/alloweddockstates
 tags: alloweddockstates
 published: True

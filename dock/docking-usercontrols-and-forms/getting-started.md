@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+description: Start docking user controls and forms inside RadDock.
 slug: winforms/dock/docking-usercontrols-and-forms/getting-started
 tags: getting,started
 published: True

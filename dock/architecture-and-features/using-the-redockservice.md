@@ -1,7 +1,7 @@
 ---
 title: Using the RedockService
 page_title: Using the RedockService | UI for WinForms Documentation
-description: Using the RedockService
+description: This article describes how you can use the RedockService.
 slug: winforms/dock/architecture-and-features/using-the-redockservice
 tags: using,the,redockservice
 published: True

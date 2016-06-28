@@ -1,7 +1,7 @@
 ---
 title: Quick Navigator
 page_title: Quick Navigator | UI for WinForms Documentation
-description: Quick Navigator
+description: Use the built-in pop-up QuickNavigator to set the focus to any window.
 slug: winforms/dock/architecture-and-features/quick-navigator
 tags: quick,navigator
 published: True

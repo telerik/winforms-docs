@@ -1,7 +1,7 @@
 ---
 title: Using the ContextMenuService
 page_title: Using the ContextMenuService | UI for WinForms Documentation
-description: Using the ContextMenuService
+description: Shows how one can customize the context menu.  
 slug: winforms/dock/architecture-and-features/using-the-contextmenuservice
 tags: using,the,contextmenuservice
 published: True

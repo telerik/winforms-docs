@@ -1,7 +1,7 @@
 ---
 title: Loading And Saving Layouts
 page_title: Loading And Saving Layouts | UI for WinForms Documentation
-description: Loading And Saving Layouts
+description: Loading And Saving the state of RadDock.
 slug: winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts
 tags: loading,and,saving,layouts
 published: True
