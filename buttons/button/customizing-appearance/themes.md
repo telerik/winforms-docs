@@ -12,7 +12,7 @@ position: 2
 
 This help article will demonstrate a step by step tutorial how to customize the ControlDefault theme for __RadButton__ 
 
-1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}).
+1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}): Start menu (Start >> Programs >> Telerik >> UI for WinForms [version] >> Tools).
 
 1. Export the built-in themes in a specific folder by selecting *File >> Export Built-in Themes*.
 
@@ -29,3 +29,8 @@ This help article will demonstrate a step by step tutorial how to customize the 
 1. Save the theme by selecting *File >> Save As*.
 
 1. Now, you can apply your custom theme to __RadButton__ by using the demonstrated approach in the following link: [Using custom themes]({%slug winforms/themes/using-custom-themes%})
+
+# See Also 
+
+* [Getting Started with VisualStyleBuilder]({%slug winforms/tools/visual-style-builder/getting-started%})
+* [Working With Repository Items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%})

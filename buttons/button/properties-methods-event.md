@@ -32,3 +32,11 @@ position: 4
 |----|----|
 |Click|Occurs when the control is clicked|
 |MouseClick|Occurs when the control is clicked by the mouse|
+
+# See Also
+
+* [Properties](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadButton.htm)
+* [Methods](http://docs.telerik.com/devtools/winforms/api/html/Methods_T_Telerik_WinControls_UI_RadButton.htm)
+* [Events](http://docs.telerik.com/devtools/winforms/api/html/Events_T_Telerik_WinControls_UI_RadButton.htm)
+
+

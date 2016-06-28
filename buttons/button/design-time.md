@@ -10,9 +10,13 @@ position: 2
 
 # Design Time
 
+To start using __RadButton__ just drag it from the toolbox and drop it on the form.
+
 ## Smart Tag
 
->caption Fig.1 Smart Tag
+Select __RadButton__ and click the small arrow at the top right position in order to open the Smart Tag.
+
+>caption Figure 1 Smart Tag
 
 ![buttons-toggleswitch-desing-time 001](images/buttons-button-design-time001.png)
 
@@ -31,5 +35,6 @@ position: 2
 # See Also
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
+* [Using default themes]({%slug winforms/themes/using-default-themes%})
 
 

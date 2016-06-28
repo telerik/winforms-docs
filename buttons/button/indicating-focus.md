@@ -11,13 +11,7 @@ previous_url: buttons-button-indicating-focus
 
 # Indicating Focus
 
-
-
-## 
-
-__RadButton__ has two ways to indicate that it is focused:
-
-* Showing a thin dotted rectangular frame. This feature could be enabled by setting __AllowShowFocusCues__ property to *true* (the default value is *true*). The style of the frame cannot be customized. 
+__RadButton__ can indicate that it is focused by showing a thin dotted rectangular frame. This feature could be enabled by setting __AllowShowFocusCues__ property to *true* (the default value is *true*). The style of the frame cannot be customized. 
  
 ![buttons-button-indicating-focus 001](images/buttons-button-indicating-focus001.png) 
           
