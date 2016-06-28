@@ -11,8 +11,6 @@ previous_url: installation-deployment-and-distribution-download-product-files
 
 # Download Product Files
 
-
-
 When you are a licensed developer you are allowed to download the following files:
 
 * Old versions
@@ -25,9 +23,7 @@ When you are a licensed developer you are allowed to download the following file
 
 * Documentation files
 
-* Source code
-
-## 
+* Source code 
 
 In order to download these you need to take the following steps:
 
@@ -37,7 +33,7 @@ In order to download these you need to take the following steps:
 
 	![installation-deployment-and-distribution-download-product-files 006](images/installation-deployment-and-distribution-download-product-files006.png)
 
-1. Select the __UI for WinForms__ product from the drop down:
+1. Select the __UI for WinForms__ product tile:
 
 	![installation-deployment-and-distribution-download-product-files 007](images/installation-deployment-and-distribution-download-product-files007.png)
 
