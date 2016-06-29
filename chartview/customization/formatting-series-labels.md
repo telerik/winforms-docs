@@ -1,7 +1,7 @@
 ---
 title: Formatting Series Labels
 page_title: Formatting Series Labels | UI for WinForms Documentation
-description: Formatting Series Labels
+description: This article demonstrates how to change the labels styles and text. The series labels can be customized in the LabelFormatting event of RadChartView.
 slug: winforms/chartview-/customization/formatting-series-labels
 tags: formatting,series,labels
 published: True
@@ -11,13 +11,14 @@ previous_url: chartview-customization-formatting-series-labels
 
 # Formatting Series Labels
 
-
-
 This article demonstrates how to change the labels styles and text. The series labels can be customized in the __LabelFormatting__ event of __RadChartView__. This event is fired for each label, which allows you to customize all labels, depending on your goals.
 
-## ![chartview-customization-formatting-series-labels 001](images/chartview-customization-formatting-series-labels001.png)
+>caption Figure 1: Formatting Labels
+![chartview-customization-formatting-series-labels 001](images/chartview-customization-formatting-series-labels001.png)
 
 1\. In order this event to fire, you should set the __ShowLabels__ property to *true* for at least one series. For example, you can set this property for all series with the following code. 
+
+#### Show Labels
 
 {{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=ShowLabels}} 
 {{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=ShowLabels}} 
@@ -40,6 +41,8 @@ Next
  
 
 2\. Now you can change the labels styles and text. 
+
+#### LabelFormatting Event
 
 {{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=LabelFormatting}} 
 {{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=LabelFormatting}} 
@@ -72,9 +75,14 @@ End Sub
 
 ````
 
-{{endregion}} 
- 
+{{endregion}}
 
 >important The code for getting the current data point can depend on the used series type. For example if you use pie chart you should cast to __PiePointElement__ , and __PieDataPoint__ types.
 >
+
+# See Also
+
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Axes]({%slug winforms/chartview-/axes%})
+
 
