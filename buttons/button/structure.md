@@ -8,9 +8,12 @@ published: True
 position: 1 
 ---
 
+This article will show the internal elements structure of __RadButton__:
+
 # Structure
 
 >caption Fig.1 RadButton's elements hierarchy
+
 ![buttons-button-structure 001](images/buttons-button-structure001.png)
 
 1. __FillPrimitive__: represents the button's filling
@@ -20,5 +23,6 @@ position: 1
 3. __BorderPrimitive__: represents's the button's border
 
 >caption Fig.2 RadButton's structure
+
 ![buttons-button-structure 002](images/buttons-button-structure002.png)
 

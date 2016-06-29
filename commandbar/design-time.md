@@ -11,7 +11,11 @@ previous_url: commandbar-design-time
 
 # Design-Time
 
+To start using __RadCommandBar__ just drag it from the toolbox and drop it at the form.
+
 ## Smart Tag
+
+Select __RadCommandBar__ and click the small arrow on the top right position in order to open the Smart Tag.
 
 >caption Fig.1 Smart Tag
 
@@ -103,3 +107,8 @@ Alternatively, follow these steps to edit items:
 1. Click OK.
 
 ![commandbar-design-time 008](images/commandbar-design-time008.png)
+
+# See Also
+
+* [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
+* [Using default themes]({%slug winforms/themes/using-default-themes%})

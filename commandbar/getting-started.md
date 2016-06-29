@@ -10,9 +10,18 @@ position: 3
 
 # Getting Started
 
-* To add a __RadCommandBar__ to your form, drag a __RadCommandBar__ from the toolbox onto the surface of the form designer. In order to set up the __RadCommandBar__ at design time you can refer to the [Design time]({%slug  winforms/commandbar/design-time%}) help article.
+You can add __RadCommandBar__ either at design time or at run time:
 
-* To programmatically add a __RadCommandBar__ to a form, create a new instance of a __RadCommandBar__, and add it to the form __Controls__ collection.
+## Design Time
+
+1. To add a __RadCommandBar__ to your form, drag a __RadCommandBar__ from the toolbox onto the surface of the form designer. In order to set up the __RadCommandBar__ at design time you can refer to the [Design time]({%slug  winforms/commandbar/design-time%}) help article.
+2. Select the default __CommandBarStripElement__ and in the *Properties* section of Visual Studio open the __Items__ property.
+3. Add the desired items by choosing the item type in the drop down button.
+4. Click `F5` to start the application.
+
+## Run Time
+
+To programmatically add a __RadCommandBar__ to a form, create a new instance of a __RadCommandBar__, and add it to the form __Controls__ collection.
 
 
 #### Adding a RadCommandBar at runtime 

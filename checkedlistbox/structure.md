@@ -9,17 +9,15 @@ position: 1
 previous_url: checkedlistbox-structure
 ---
 
-# Structure
+This article will show the internal elements structure of __RadCheckedListBox__ considering the __ListViewType__:
 
->caption Fig.1 RadCheckedListBox's elements hierarchy
+# Structure of ListViewType.ListView
 
-|ListViewType|Elements hierarchy|
-|----|----|
-|__ListView__|![checkedlistbox-structure 001](images/checkedlistbox-structure001.png)|
-|__IconsView__|![checkedlistbox-structure 005](images/checkedlistbox-structure005.png)|
-|__DetailsView__|![checkedlistbox-structure 006](images/checkedlistbox-structure006.png)|
+>caption Figure 1: ListViewType.ListView's elements hierarchy
 
->caption Fig.2 RadCheckedListBox's structure in ListViewType.ListView
+![checkedlistbox-structure 001](images/checkedlistbox-structure001.png)
+
+>caption Figure 2: RadCheckedListBox's structure in ListViewType.ListView
 
 ![checkedlistbox-structure 002](images/checkedlistbox-structure002.png)
 
@@ -28,9 +26,13 @@ previous_url: checkedlistbox-structure
 2. __SimpleListViewContainer__: represents the view container.
 3. __RadScrollBarElement__: represents the scroll bar.
 
+# Structure of ListViewType.IconsView
 
+>caption Figure 3: ListViewType.IconsView's elements hierarchy
 
->caption Fig.3 RadCheckedListBox's structure in ListViewType.IconsView
+![checkedlistbox-structure 005](images/checkedlistbox-structure005.png)
+
+>caption Figure 4: RadCheckedListBox's structure in ListViewType.IconsView
 
 ![checkedlistbox-structure 003](images/checkedlistbox-structure003.png)
 
@@ -39,7 +41,13 @@ previous_url: checkedlistbox-structure
 2. __IconListViewContainer__: represents the view container.
 3. __RadScrollBarElement__: represents the scroll bar.
 
->caption Fig.4 RadCheckedListBox's structure in ListViewType.DetailsView
+# Structure of ListViewType.DetailsView
+
+>caption Figure 5: RadCheckedListBox's structure in ListViewType.DetailsView
+
+![checkedlistbox-structure 006](images/checkedlistbox-structure006.png)
+
+>caption Figure 6: RadCheckedListBox's structure in ListViewType.DetailsView
 
 ![checkedlistbox-structure 004](images/checkedlistbox-structure004.png)
 

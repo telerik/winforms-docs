@@ -1,6 +1,6 @@
 ---
-title: Accessing and customizing elements
-page_title: Accessing and customizing elements | UI for WinForms Documentation
+title: Accessing and Customizing Elements
+page_title: Accessing and Customizing Elements | UI for WinForms Documentation
 description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
 slug: winforms/commandbar/accessing-and-customizing-elements
 tags: elements, customize

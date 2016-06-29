@@ -64,4 +64,8 @@ End Sub
 
 {{endregion}} 
 
+>caption Figure 1: CustomizeContextMenu
+>
+![commandbar-customize-the-control-context-menu 001](images/commandbar-customize-the-control-context-menu001.png)
+
 

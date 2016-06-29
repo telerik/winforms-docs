@@ -1,6 +1,6 @@
 ---
-title: Desing Time
-page_title: Desing Time | UI for WinForms Documentation
+title: Design Time
+page_title: Design Time | UI for WinForms Documentation
 description: RadCheckedListBox is an enhanced alternative to the standard Windows Forms checked list box control. 
 slug: winforms/checkedlistbox/design-time
 tags: checkedlistbox
@@ -11,7 +11,11 @@ previous_url: checkedlistbox-design-time
  
 # Design Time
 
+To start using __RadCheckedListBox__ just drag it from the toolbox and drop it at the form.
+
 ## Smart Tag
+
+Select __RadCheckedListBox__ and click the small arrow on the top right position in order to open the Smart Tag.
 
 >caption Fig.1 Smart Tag
 
@@ -53,3 +57,4 @@ previous_url: checkedlistbox-design-time
 # See Also
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
+* [Using default themes]({%slug winforms/themes/using-default-themes%})

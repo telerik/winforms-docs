@@ -11,9 +11,18 @@ previous_url: checkedlistbox-getting-started
 
 # Getting Started
 
-* To add a __RadCheckedListBox__ to your form, drag a __RadCheckedListBox__ from the toolbox onto the surface of the form designer.
+You can add __RadCheckedListBox__ either at design time or at run time:
 
-* To programmatically add a __RadCheckedListBox__ to a form, create a new instance of a __RadCheckedListBox__, and add it to the form __Controls__ collection.
+## Design Time
+
+1. To add a __RadCheckedListBox__ to your form, drag a __RadCheckedListBox__ from the toolbox onto the surface of the form designer.
+2. In the *Properties* section in Visual Studio open the __Items__ property.
+3. Add several items by clicking the `Add` button.
+4. Click `F5` to start the application.
+
+## Run Time
+
+To programmatically add a __RadCheckedListBox__ to a form, create a new instance of a __RadCheckedListBox__, and add it to the form __Controls__ collection.
 
 #### Adding a RadCheckedListBox at runtime 
 

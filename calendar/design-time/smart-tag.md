@@ -27,3 +27,5 @@ The Smart Tag for __RadCalendar__ lets you quickly access common tasks involved 
 * [Adding Selected Dates]({%slug  winforms/calendar/design-time-support/adding-selected-dates%})
 
 * [Adding Special Days]({%slug winforms/calendar/design-time-support/adding-special-days%})
+
+* [Using default themes]({%slug winforms/themes/using-default-themes%})

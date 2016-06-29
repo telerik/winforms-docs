@@ -19,6 +19,7 @@ position: 4
 |TextWrap|Gets or sets text wrapping mode|
 |ForeColor|Gets or sets the foreground color of the control|
 |BackColor|Gets or sets the background color of the button control|
+|DisplayStyle|Specifies the options for display of image and text primitives in the element|
 
 # Methods
 
