@@ -5,13 +5,18 @@ description: At design time you can use the RadChartView's Smart Tag to change t
 slug: winforms/chartview-/design-time
 tags: design,time
 published: True
-position: 2
+position: 3
 previous_url: chartview-designtime
 ---
 
 # Design time
 
-In this article we will describe the design time abilities of __RadChartView__. Here is how the control's SmartTag looks like:
+In this article we will describe the design time abilities of __RadChartView__. 
+
+>note A step by step tutorial for design-time data binding is available in the [Getting Started]({%slug winforms/chartview/getting-started%}) article. Advanced design-time editing and customization can be achieved by utilizing the [Property Builder]({%slug winforms/chartview-/property-builder%}) of __RadChartView__.
+>
+
+Here is how the control's Smart Tag looks like:
 
 >caption Figure 1: Smart Tag
 ![chartview-design-time 001](images/chartview-design-time001.png)
@@ -24,7 +29,7 @@ In this article we will describe the design time abilities of __RadChartView__. 
 
 	* __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style at one time.
 
-* __Data Binding__: RadChartView utilizes the standard WinForms data binding mechanism. A complete example is available in [Getting Started]({%slug winforms/chartview/getting-started%}) .
+* __Data Binding__: RadChartView utilizes the standard WinForms data binding mechanism. A complete example is available in [Getting Started]({%slug winforms/chartview/getting-started%}).
 
 * __RadChartView Specific Actions__:
 	

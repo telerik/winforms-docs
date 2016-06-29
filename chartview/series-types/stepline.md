@@ -68,7 +68,7 @@ The essential properties of SteplineSeries are:
 ![chartview-series-types-stepline 001](images/chartview-series-types-stepline001.png)
 
 >caption Figure 3: Stack
-[chartview-series-types-stepline 002](images/chartview-series-types-stepline002.png)
+![chartview-series-types-stepline 002](images/chartview-series-types-stepline002.png)
 
 >caption Figure 4: Stack100
 ![chartview-series-types-stepline 003](images/chartview-series-types-stepline003.png)

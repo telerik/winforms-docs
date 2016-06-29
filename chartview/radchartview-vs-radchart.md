@@ -95,3 +95,10 @@ Below you may find the full list of series types available at present (Q3 2012):
 Notes:
 
 * You can use __RangeBarSeries__ instead of Gantt series or you can use [RadGanttView]({%slug winforms/ganttview-%})
+
+# See Also
+
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Design Time]({%slug winforms/chartview-/design-time%})
+* [Property Builder]({%slug winforms/chartview-/property-builder%})
+* [Getting Started]({%slug winforms/chartview/getting-started%})

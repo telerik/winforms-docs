@@ -30,13 +30,13 @@ A common scenario for __RadChartView__ is to contain several series instances, w
 
 The chart series also have a mechanism for combining data points that reside in different series but have the same category. This mechanism is controlled via the __CombineMode__ property. The combine mode can be *None*, *Cluster* and *Stack*.        
 
-* __None__ means that the series will be plotted independently of each other.
+* __None:__ The series will be plotted independently of each other.
 
-* __Cluster__ will display data points in the same category huddled close together.
+* __Cluster:__ The data points will be in the same category huddled close together.
 
-* __Stack__ on the other hand will plot the points on top of each other.
+* __Stack:__ Plots the points on top of each other.
 
-* __Stack100__ presents the values of one series as a percentage of the other series
+* __Stack100:__ Presents the values of one series as a percentage of the other series.
 
 # See Also
 

@@ -5,7 +5,7 @@ description: RadChartView is a control developed on top of Telerik Presentation 
 slug: winforms/chartview/getting-started
 tags: getting,started
 published: True
-position: 4
+position: 5
 ---
 
 # Getting Started

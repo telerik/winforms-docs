@@ -5,14 +5,13 @@ description: RadChartView`s Property Builder provides advanced editing and custo
 slug: winforms/chartview-/property-builder
 tags: property,builder
 published: True
-position: 3
+position: 4
 previous_url: chartview-property-builder
 ---
 
 # Property Builder
 
 The Property builder is divided into three sections: Chart, Series and Appearance.
-        
 
 The first section allows you to choose the type of chart you will be creating, the type of axes for the chart and the palette. 
 
