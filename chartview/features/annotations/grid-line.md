@@ -1,7 +1,7 @@
 ---
-title: Grid line
+title: Grid Line
 page_title: Grid line | UI for WinForms Documentation
-description: Grid line
+description: Grid line annotations are lines or circles that cross the chart grid at location on the axis, specified by their Value property.
 slug: winforms/chartview-/features/annotations/grid-line
 tags: grid,line
 published: True
@@ -9,34 +9,28 @@ position: 1
 previous_url: chartview-features-annotations-gridline
 ---
 
-# Grid line
-
-
+# Grid Line
 
 Grid line annotations are lines or circles that cross the chart grid at location on the axis, specified by their __Value__ property.
-      
 
 Common properties to the three types of annotations include:
-      
 
-* __BorderDashStyle__ - defines the dash style of the border of the annotation
-          
+* __BorderDashStyle:__ Defines the dash style of the border of the annotation
 
-* __BorderColor__ - sets the color of the border of the annotation
-          
+* __BorderColor:__ Sets the color of the border of the annotation
 
-* __BorderWidth__ - specifies the width of the border of the annotation
-          
+* __BorderWidth:__ Specifies the width of the border of the annot
 
-## Cartesian grid line annotation
+## Cartesian Grid Line Annotation
 
 In the case of the Cartesian chart, the grid line represents a vertical or horizontal line that crosses the entire plot area.
-        
 
 Here is what __CartesianGridLineAnnotation__ looks like:
+
+>caption Figure 1: CartesianGridLineAnnotation
 ![chartview-annotations-gridline-annotations 001](images/chartview-annotations-gridline-annotations001.png)
 
-
+#### Cartesian Grid Line Setup
 
 {{source=..\SamplesCS\ChartView\Annotations\GridLine.cs region=CartesianGridLine}} 
 {{source=..\SamplesVB\ChartView\Annotations\GridLine.vb region=CartesianGridLine}} 
@@ -76,29 +70,27 @@ Me.radChartView1.Annotations.Add(annotation2)
 
 ````
 
-{{endregion}} 
-
+{{endregion}}
  
 Properties:
-        
 
-* __Axis__ - the Cartesian grid line annotation needs to be associated with horizontal or vertical axis explicitly
+* __Axis:__ The Cartesian grid line annotation needs to be associated with horizontal or vertical axis explicitly
             
 
-* __Value__ (of type object) - the place on the associated axis where the annotation crosses it. When the associated axis is numerical (linear or logarithmic) a numeric value is expected and when it is a categorical - a category
+* __Value__ (of type object): The place on the associated axis where the annotation crosses it. When the associated axis is numerical (linear or logarithmic) a numeric value is expected and when it is a categorical - a category
 
-* __Label__ - this property allows you to display text near the annotation and indicate what it is for. 
-            
+* __Label:__ This property allows you to display text near the annotation and indicate what it is for.
 
-## Polar axis grid line annotation
+## Polar Axis Grid Line Annotation
 
-Polar axis grid lines represent concentric circles that cross the Polar axis at the corresponding __Value__.
-        
+Polar axis grid lines represent concentric circles that cross the Polar axis at the corresponding __Value__.        
 
 Here is what __PolarAxisGridLineAnnotation__ looks like:
 
-![chartview-annotations-gridline-annotations 002](images/chartview-annotations-gridline-annotations002.png) 
+>caption Figure 2: PolarAxisGridLineAnnotation
+![chartview-annotations-gridline-annotations 002](images/chartview-annotations-gridline-annotations002.png)
 
+#### Plar Grid Line Setup
 
 {{source=..\SamplesCS\ChartView\Annotations\GridLine.cs region=PolarGridLine}} 
 {{source=..\SamplesVB\ChartView\Annotations\GridLine.vb region=PolarGridLine}} 
@@ -150,18 +142,16 @@ Me.radChartView1.Annotations.Add(annotation3)
 
 Property: 
 
-* __Value__ (of type double) - specifies the location on the Polar axis (the radius), where the grid line will cross
-            
+* __Value__ (of type double): Specifies the location on the Polar axis (the radius), where the grid line will cross
 
-## Radial axis grid line annotation
+## Radial Axis Grid Line Annotation
 
 Radial axis grid lines basically represent the radius of the polar chart.
-        
 
 Here is what __RadialAxisGridLineAnnotation__ looks like:
+
+>capion Figure 3: RadialAxisGridLineAnnotation
 ![chartview-annotations-gridline-annotations 003](images/chartview-annotations-gridline-annotations003.png)
-
-
 
 {{source=..\SamplesCS\ChartView\Annotations\GridLine.cs region=RadialGridLine}} 
 {{source=..\SamplesVB\ChartView\Annotations\GridLine.vb region=RadialGridLine}} 
@@ -209,11 +199,15 @@ Me.radChartView1.Annotations.Add(annotation3)
 
 ````
 
-{{endregion}} 
- 
+{{endregion}}
 
 Property:
-        
 
-* __Value__ (of type object) - specifies the location on the Radial axis, where the grid line will cross. When the Radial axis is __NumericRadialAxis__ a numeric value is expected and when it is a __CategoricalRadialAxis__ - a category
+* __Value__ (of type object): Specifies the location on the Radial axis, where the grid line will cross. When the Radial axis is __NumericRadialAxis__ a numeric value is expected and when it is a __CategoricalRadialAxis__ - a category
             
+# See Also
+
+* [Annotations]({%slug winforms/chartview-/features/annotations%})
+* [Axes]({%slug winforms/chartview-/axes%})
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

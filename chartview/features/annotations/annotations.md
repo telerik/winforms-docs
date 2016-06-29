@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Annotations | UI for WinForms Documentation
-description: Annotations
+description: Annotations are visual elements that can be used to highlight certain areas on the plot area and denote significant values.
 slug: winforms/chartview-/features/annotations
 tags: annotations
 published: True
@@ -11,33 +11,29 @@ previous_url: chartview-features-annotations
 
 # Annotations
 
-
-
-## 
-
 Annotations are visual elements that can be used to highlight certain areas on the plot area and denote significant values.
-      
 
-The __RadChartView__ provides the following types of annotations:
-      
+__RadChartView__ provides the following types of annotations:
 
-* Cartesian GridLine
-          
+* __Cartesian grid line__
 
-* Cartesian PlotBand
-          
+* __Cartesian plot band__
 
-* Cartesian MarkedZone
-          
+* __Cartesian marked zone__
 
-* Polar Axis GridLine (associated with the polar axis)
-          
+* __Polar axis grid line (associated with the polar axis)__
 
-* Polar Axis PlotBand (associated with the polar axis)
-          
+* __Polar axis plot band (associated with the polar axis)__
 
-* Polar Axis GridLine (associated with the radial axis)
-          
+* __Polar axis grid line (associated with the radial axis)__
 
-* Radial Axis PlotBand (associated with the radial axis)
+* __Radial axis plot band (associated with the radial axis)__
+
+>caption Figure 1: Chart Annotations
 ![chartview-annotations 001](images/chartview-annotations001.png)
+
+# See Also
+
+* [Axes]({%slug winforms/chartview-/axes%})
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

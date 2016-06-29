@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection | UI for WinForms Documentation
-description: Selection
+description: This help topic will demonstrate how you can make your charts more interactive by adding a selection behavior.
 slug: winforms/chartview-/features/selection
 tags: selection
 published: True
@@ -11,14 +11,11 @@ previous_url: chartview-features-selection
 
 # Selection
 
+This help topic will demonstrate how you can make your charts more interactive by adding a selection behavior.        
 
+In order to utilize this behavior users simply have to add it to the chart's __Controllers__ collection. For example:
 
-## 
-
-This help topic will demonstrate how you can make your charts more interactive by adding a selection behavior.
-        
-
-In order to utilize this behavior users simply have to add it to the chart's __Controllers__ collection. For example: 
+#### Add Controller
 
 {{source=..\SamplesCS\ChartView\Features\ChartSelection.cs region=controller}} 
 {{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=controller}} 
@@ -36,12 +33,11 @@ AddHandler RadChartView1.SelectedPointChanged, AddressOf RadChartView1_SelectedP
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
+The __ChartSelectionController__ will be added automatically if the __SelectionMode__ property of __RadChartView__ control is set to one of available options. 
 
-
-
-The ChartSelectionController will be added automatically if the __SelectionMode__ property of RadChartView control is set to one of available options. 
+#### ChartSelectionMode
 
 {{source=..\SamplesCS\ChartView\Features\ChartSelection.cs region=selectionMode}} 
 {{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=selectionMode}} 
@@ -59,7 +55,9 @@ radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints
 
 {{endregion}}  
 
-Here is a sample using PieSeries and multiple selection. When a slice is selected, it is being offsetted from the center: 
+Here is a sample using __PieSerie__s and multiple selection. When a slice is selected, it is being offsetted from the center: 
+
+#### Sliced Pie
 
 {{source=..\SamplesCS\ChartView\Features\ChartSelection.cs region=example}} 
 {{source=..\SamplesVB\ChartView\Features\ChartSelection.vb region=example}} 
@@ -150,7 +148,15 @@ End Sub
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
-
+>caption Figure 2: Sliced Pie
 ![chartview-features-selection 001](images/chartview-features-selection001.png)
+
+# See Also
+
+* [Axes]({%slug winforms/chartview-/axes%})
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
+* [Customization]({%slug winforms/chartview-/customization/custom-rendering%})
+* [Printing]({%slug winforms/chartview-/printing-support/printing%})

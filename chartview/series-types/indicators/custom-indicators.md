@@ -155,31 +155,33 @@ End Class
 #### Create Data
 
 {{source=..\SamplesCS\ChartView\Series\Indicators\CustomIndicatorsDIForm.cs region=CreateData}} 
-{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsDIForm.vb region=CreateData}} 
-
+{{source=..\SamplesVB\ChartView\Series\Indicators\CustomIndicatorsDIForm.vb region=CreateData}}
 ````C#
-DisparityIndexIndicator indicator = new DisparityIndexIndicator();
-indicator.ValueMember = "Close";
-indicator.CategoryMember = "Date";
-indicator.DataSource = dataSource;
-indicator.Period = 5;
-indicator.BorderColor = Color.Red;
-indicator.PointSize = SizeF.Empty;
-this.radChartView1.Series.Add(indicator);
+BindingList<ClosingPriceObject> dataSource = new BindingList<ClosingPriceObject>();
+dataSource.Add(new ClosingPriceObject(4, DateTime.Now));
+dataSource.Add(new ClosingPriceObject(7, DateTime.Now.AddDays(1)));
+dataSource.Add(new ClosingPriceObject(4, DateTime.Now.AddDays(2)));
+dataSource.Add(new ClosingPriceObject(2, DateTime.Now.AddDays(3)));
+dataSource.Add(new ClosingPriceObject(6, DateTime.Now.AddDays(4)));
+dataSource.Add(new ClosingPriceObject(7, DateTime.Now.AddDays(5)));
+dataSource.Add(new ClosingPriceObject(4, DateTime.Now.AddDays(6)));
+dataSource.Add(new ClosingPriceObject(3, DateTime.Now.AddDays(7)));
+dataSource.Add(new ClosingPriceObject(7, DateTime.Now.AddDays(8)));
 
 ````
 ````VB.NET
-Dim indicator As New DisparityIndexIndicator
-indicator.Period = 5
-indicator.ValueMember = "Close"
-indicator.CategoryMember = "Date"
-indicator.DataSource = dataSource
-indicator.BorderColor = Color.Red
-indicator.PointSize = SizeF.Empty
-Me.RadChartView1.Series.Add(indicator)
+Dim dataSource As New BindingList(Of ClosingPriceObject)()
+dataSource.Add(New ClosingPriceObject(4, DateTime.Now))
+dataSource.Add(New ClosingPriceObject(7, DateTime.Now.AddDays(1)))
+dataSource.Add(New ClosingPriceObject(4, DateTime.Now.AddDays(2)))
+dataSource.Add(New ClosingPriceObject(2, DateTime.Now.AddDays(3)))
+dataSource.Add(New ClosingPriceObject(6, DateTime.Now.AddDays(4)))
+dataSource.Add(New ClosingPriceObject(7, DateTime.Now.AddDays(5)))
+dataSource.Add(New ClosingPriceObject(4, DateTime.Now.AddDays(6)))
+dataSource.Add(New ClosingPriceObject(3, DateTime.Now.AddDays(7)))
+dataSource.Add(New ClosingPriceObject(7, DateTime.Now.AddDays(8)))
 
 ````
-
 {{endregion}}
 
 #### SetupDIIndicator

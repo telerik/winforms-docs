@@ -1,7 +1,7 @@
 ---
 title: Trackball
 page_title: Trackball | UI for WinForms Documentation
-description: Trackball
+description: Along with tooltip and pan/zoom controllers, RadChartView provides a trackball behavior through the ChartTrackballController class.
 slug: winforms/chartview-/features/trackball
 tags: trackball
 published: True
@@ -11,14 +11,11 @@ previous_url: chartview-features-trackball
 
 # Trackball
 
+Along with tooltip and pan/zoom controllers, RadChartView provides a trackball behavior through the __ChartTrackballController__ class. This controller can display a vertical line across the chart plot area and also to display little visual indicators (circles by default) at points where the trackball line crosses the visualization of a series object. For example when the trackball line crosses a line series line segment, a small circle is drawn highlighting the value of the series at this point. The last capability of the trackball behavior is to display a small popup, similar to the tooltip, in order to provide more detailed information about the closest points to the track ball line's cross section.    
 
+In order to utilize this behavior users simply have to add it to the chart's __Controllers__ collection. For example:
 
-## 
-
-Along with tooltip and pan/zoom controllers, RadChartView provides a trackball behavior through the __ChartTrackballController__ class. This controller can display a vertical line across the chart plot area and also to display little visual indicators (circles by default) at points where the trackball line crosses the visualization of a series object. For example when the trackball line crosses a line series line segment, a small circle is drawn highlighting the value of the series at this point. The last capability of the trackball behavior is to display a small popup, similar to the tooltip, in order to provide more detailed information about the closest points to the track ball line's cross section.
-        
-
-In order to utilize this behavior users simply have to add it to the chart's __Controllers__ collection. For example: 
+#### Add Controller
 
 {{source=..\SamplesCS\ChartView\Features\Trackball.cs region=controller}} 
 {{source=..\SamplesVB\ChartView\Features\Trackball.vb region=controller}} 
@@ -32,10 +29,11 @@ RadChartView1.Controllers.Add(New ChartTrackballController())
 
 ````
 
-{{endregion}} 
- 
+{{endregion}}
 
-The ChartTrackballController will be added automatically if the __ShowTrackBall__ property of RadChartView control is set to *true*: 
+The __ChartTrackballController__ will be added automatically if the __ShowTrackBall__ property of __RadChartView__ control is set to *true*: 
+
+#### Set Property
 
 {{source=..\SamplesCS\ChartView\Features\Trackball.cs region=showTrackBall}} 
 {{source=..\SamplesVB\ChartView\Features\Trackball.vb region=showTrackBall}} 
@@ -49,10 +47,11 @@ RadChartView1.ShowTrackBall = True
 
 ````
 
-{{endregion}} 
- 
+{{endregion}}
 
-A sample is shown below: 
+A sample is shown below:
+
+#### Sample Setup
 
 {{source=..\SamplesCS\ChartView\Features\Trackball.cs region=example}} 
 {{source=..\SamplesVB\ChartView\Features\Trackball.vb region=example}} 
@@ -122,5 +121,13 @@ RadChartView1.ShowTrackBall = True
 
 {{endregion}} 
 
-
+>caption Figure 1: Trackball
 ![chartview-features-trackball 001](images/chartview-features-trackball001.png)
+
+# See Also
+
+* [Axes]({%slug winforms/chartview-/axes%})
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
+* [Customization]({%slug winforms/chartview-/customization/custom-rendering%})
+* [Printing]({%slug winforms/chartview-/printing-support/printing%})

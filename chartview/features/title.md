@@ -11,12 +11,9 @@ previous_url: chartview-features-title
 
 # Title
 
+To show the title in __RadChartView__ you need to set the __ShowTitle__ property to *true* (by default is *false*) and also to set the desired title text in the __Title__ property: 
 
-
-## 
-
-To show the title in RadChartView you need to set the __ShowTitle__ property to *true* (by default is *false*) and also to set the desired title text in the __Title__ property: 
-
+#### Showing Title
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewTitle.cs region=ShowTitle}} 
 {{source=..\SamplesVB\ChartView\Features\ChartViewTitle.vb region=ShowTitle}} 
@@ -34,7 +31,7 @@ Me.RadChartView1.ShowTitle = True
 
 {{endregion}} 
 
-
+>caption Figure 1: Custom Title
 ![chartview-features-title 001](images/chartview-features-title001.png)
 
 The title can be moved to all four sides of the chart using the __TitleLocation__ property. Also, you can access the title element, which allows you to set various options: 
@@ -57,5 +54,13 @@ Me.RadChartView1.ChartElement.TitleElement.FlipText = True
 
 {{endregion}} 
 
-
+>caption Figure 2: Title Positon
 ![chartview-features-title 002](images/chartview-features-title002.png)
+
+# See Also
+
+* [Axes]({%slug winforms/chartview-/axes%})
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
+* [Customization]({%slug winforms/chartview-/customization/custom-rendering%})
+* [Printing]({%slug winforms/chartview-/printing-support/printing%})
