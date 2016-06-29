@@ -248,24 +248,27 @@ navigation:
     dock:
         title: Dock
         position: 19
+    dock/design-time:
+        title: Design-Time
+        position: 2
     dock/architecture-and-features:
         title: Architecture and Features
-        position: 2
+        position: 3
     dock/object-model:
         title: Object Model
-        position: 3
+        position: 4
     dock/docking-usercontrols-and-forms:
         title: Docking UserControls and Forms
-        position: 4
+        position: 5
     dock/mdi-mode:
         title: MDI Mode
-        position: 5
+        position: 6
     dock/loading-and-saving-layouts:
         title: Loading and Saving Layouts
-        position: 6		
+        position: 7		
     dock/localization:
         title: Localization
-        position: 7
+        position: 8
     desktopalert:
         title: DesktopAlert
         position: 20

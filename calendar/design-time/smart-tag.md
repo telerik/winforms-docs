@@ -7,7 +7,7 @@ tags: RadCalendar, SmartTag
 published: True
 position: 2
 ---
-The Smart Tag for __RadCalendar__ lets you quickly access common tasks involved with and customizing appearance or setting the theme.
+The Smart Tag of __RadCalendar__ lets you quickly access common tasks involved with customizing appearance or setting the theme.
 
 ![calendar-smart-tag001.png](images/calendar-smart-tag001.png) 
 
@@ -15,8 +15,7 @@ The Smart Tag for __RadCalendar__ lets you quickly access common tasks involved 
 
 * __Edit UI elements:__ Opens a dialog that displays the __Element Hierarchy Editor.__ This editor lets you browse all the elements in the control.
 
-* __Theme Name:__ Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style at one time.
-
+* __Theme Name:__ Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style. The following article shows how you can add themes: [Using themes]({%slug winforms/themes/using-default-themes%}). 
 
 * __Learning Center:__ Navigate to the Telerik help, code library projects or support forum.
 
