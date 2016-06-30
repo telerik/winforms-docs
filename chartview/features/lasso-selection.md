@@ -1,7 +1,7 @@
 ---
 title: Lasso Selection
 page_title: Lasso Selection | UI for WinForms Documentation
-description: Lasso Selection
+description: _RadChartView provides lasso zoom (zoom to selection) functionality by selecting a rectangle on the surface of the control and then zoom in automatically based on the selected Cartesian area
 slug: winforms/chartview-/features/lasso-selection
 tags: lasso,selection
 published: True
@@ -11,13 +11,11 @@ previous_url: chartview-features-lasso-selection
 
 # Lasso Selection
 
-
-
-__RadChartView__ provides lasso zoom (zoom to selection) functionality by selecting a rectangle on the surface of the control and then zoom in automatically based on the selected *Cartesian area*. 
-
-## 
+__RadChartView__ provides lasso zoom (zoom to selection) functionality by selecting a rectangle on the surface of the control and then zoom in automatically based on the selected *Cartesian area*.
 
 First let’s start by adding some data points to the __RadChartView__ and __LassoZoomController__: 
+
+#### Add Controller
 
 {{source=..\SamplesCS\ChartView\Features\LassoSelection.cs region=AddController}} 
 {{source=..\SamplesVB\ChartView\Features\LassoSelection.vb region=AddController}} 
@@ -74,16 +72,22 @@ End Sub
 
 {{endregion}} 
 
-
+>caption Figure 1: Initial Chart
 ![chartview-features-lasso-selection 001](images/chartview-features-lasso-selection001.png)
 
 Now, let’s select some area:
+
+>caption Figure 2: Lasso Selection
 ![chartview-features-lasso-selection 002](images/chartview-features-lasso-selection002.png)
 
 And the chart will automatically zoom to the selected area:
+
+>caption Figure 3: Zoom to Selection
 ![chartview-features-lasso-selection 003](images/chartview-features-lasso-selection003.png)
 
 __LassoZoomController__ supports zoom and pan functionality programmatically via the *ZoomAndPan*  method, which allows specifying the exact *from* and *to* percentage. The following code will zoom the first half of the chart: 
+
+#### Zoom and Pan
 
 {{source=..\SamplesCS\ChartView\Features\LassoSelection.cs region=ZoomFirst}} 
 {{source=..\SamplesVB\ChartView\Features\LassoSelection.vb region=ZoomFirst}} 
@@ -112,7 +116,16 @@ End Sub
 
 {{endregion}} 
 
-
+>caption Figure 4: Zoom and Pan
 ![chartview-features-lasso-selection 004](images/chartview-features-lasso-selection004.png)
 
 Using this approach you can zoom any area in the chart using the 0-100 percentage scale.
+
+# See Also
+
+* [Axes]({%slug winforms/chartview-/axes%})
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
+* [Customization]({%slug winforms/chartview-/customization/custom-rendering%})
+* [Printing]({%slug winforms/chartview-/printing-support/printing%})
+* [Integrating PanZoom, TrackBall and LassoZoom Controllers in RadChartView](http://www.telerik.com/support/kb/winforms/details/integrating-panzoom-trackball-and-lassozoom-controllers-in-radchartview)

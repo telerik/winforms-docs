@@ -1,20 +1,17 @@
 ---
 title: Chart Grid
 page_title: Chart Grid | UI for WinForms Documentation
-description: Chart Grid
+description: RadChartView areas, which support axes, can render a grid that facilitate the process of determining the values of points afar from the axes. 
 slug: winforms/chartview-/chart-grid
 tags: chart,grid
 published: True
-position: 4
+position: 6
 previous_url: chartview-chartgrid
 ---
 
 # Chart Grid
 
-
-
-RadChartView areas, which support axes, can render a grid that facilitate the process of determining the values of points afar from the axes. Since Pie area does not use axes, the grid is valid only the context of Cartesian and Polar areas. Here is how to set up the grid of both areas:
-      
+__RadChartView__ areas, which support axes, can render a grid that facilitate the process of determining the values of points afar from the axes. Since Pie area does not use axes, the grid is valid only the context of Cartesian and Polar areas. Here is how to set up the grid of both areas:
 
 ## Cartesian Grid  
 
@@ -56,34 +53,34 @@ Me.RadChartView1.Series.Add(series)
 
 {{endregion}} 
 
-
+>caption Figure 1: Cartesian Grid
 ![chartview-chart-grid 001](images/chartview-chart-grid001.png)
 
 The essential properties of CartesianGrid are the following:
 
-* __ForeColor__ – the property determines the color of the lines that separate grid sectors;
+* __ForeColor__: The property determines the color of the lines that separate grid sectors.
 
-* __BorderDashStyle__ – the property indicates the style of the borders. Possible values are Solid, Dash, Dot, DashDot, DashDotDot, Custom;
+* __BorderDashStyle__: The property indicates the style of the borders. Possible values are Solid, Dash, Dot, DashDot, DashDotDot, Custom.
 
-* __DrawHorizontalStripes__ – the property determines whether the horizontal borders of the grid will be rendered;
+* __DrawHorizontalStripes:__ The property determines whether the horizontal borders of the grid will be rendered.
 
-* __DrawVerticalStripes__ – the property determines whether the vertical borders of the grid will be rendered; 
+* __DrawVerticalStripes:__ The property determines whether the vertical borders of the grid will be rendered.
 
-* __DrawHorizontalFills__ – the property indicates whether the fills of the horizontal sectors will be drawn;
+* __DrawHorizontalFills:__ The property indicates whether the fills of the horizontal sectors will be drawn.
 
-* __DrawVerticalFills__ – the property indicates whether the fills of the vertical sectors will be drawn;
+* __DrawVerticalFills:__ The property indicates whether the fills of the vertical sectors will be drawn.
 
-* __BackColor__ – the property sets the color of the horizontal sectors. The property takes effect only if DrawHorizontalFills are set to true;
+* __BackColor:__ The property sets the color of the horizontal sectors. The property takes effect only if DrawHorizontalFills are set to true.
 
-* __BackColor2__ – the property sets the color of the vertical sectors. The property takes effect only if DrawVerticalFills are set to true;
+* __BackColor2:__ The property sets the color of the vertical sectors. The property takes effect only if DrawVerticalFills are set to true.
 
-* __AlternatingVerticalColor__ – this is a Boolean property that determines whether the fill of the alternating vertical sectors will be drawn. The property takes effect only when the DrawVerticalFills is set to true;
+* __AlternatingVerticalColor:__ This is a Boolean property that determines whether the fill of the alternating vertical sectors will be drawn. The property takes effect only when the DrawVerticalFills is set to true.
 
-* __AlternatingBackColor__ – the property sets the color of the fill of the alternating vertical sectors. The property takes effect only when the AlternatingVerticalColor and DrawVerticalFills properties are set to true;
+* __AlternatingBackColor:__ The property sets the color of the fill of the alternating vertical sectors. The property takes effect only when the AlternatingVerticalColor and DrawVerticalFills properties are set to true.
 
-* __AlternatingHorizontalColor__ – this is a Boolean property that determines whether the fill of the alternating horizontal sectors will be drawn. The property takes effect only when the DrawHorizontalFills is set to true;
+* __AlternatingHorizontalColor:__ This is a Boolean property that determines whether the fill of the alternating horizontal sectors will be drawn. The property takes effect only when the DrawHorizontalFills is set to true.
 
-* __AlternatingBackColor2__ – the property sets the color of the fill of the alternating horizontal sectors. The property takes effect only when the AlternatingHorizontalColor and DrawHorizontalFills properties are set to true;
+* __AlternatingBackColor2:__ The property sets the color of the fill of the alternating horizontal sectors. The property takes effect only when the AlternatingHorizontalColor and DrawHorizontalFills properties are set to true.
 
 ## Polar Grid 
 
@@ -141,31 +138,36 @@ Me.RadChartView1.Series.Add(polarPointSeries)
 
 {{endregion}} 
 
-
+>caption Figure 2: Polar Grid
 ![chartview-chart-grid 002](images/chartview-chart-grid002.png)
 
 The essential properties of PolarGrid are the following:
 
-* __ForeColor__ – the property determines the color of the lines that separate grid sectors;
+* __ForeColor:__ The property determines the color of the lines that separate grid sectors.
 
-* __BorderDashStyle__ – the property indicates the style of the borders. Possible values are Solid, Dash, Dot, DashDot, DashDotDot, Custom;
+* __BorderDashStyle:__ The property indicates the style of the borders. Possible values are Solid, Dash, Dot, DashDot, DashDotDot, Custom.
 
-* __DrawPolarStripes__ – the property determines whether the polar borders of the grid will be rendered;
+* __DrawPolarStripes:__ The property determines whether the polar borders of the grid will be rendered.
 
-* __DrawRadialStripes__ – the property determines whether the radial borders of the grid will be rendered; 
+* __DrawRadialStripes:__ The property determines whether the radial borders of the grid will be rendered. 
 
-* __DrawPolarFills__ – the property determines whether the fills of the polar sectors will be drawn;
+* __DrawPolarFills:__ The property determines whether the fills of the polar sectors will be drawn.
 
-* __DrawRadialFills__ – the property indicates whether the fills of the radial sectors will be drawn;
+* __DrawRadialFills:__ The property indicates whether the fills of the radial sectors will be drawn.
 
-* __BackColor__ – the property sets the color of the polar sectors. The property takes effect only in the DrawPolarFills is set to true;
+* __BackColor:__ The property sets the color of the polar sectors. The property takes effect only in the DrawPolarFills is set to true.
 
-* __BackColor2__ – the property sets the color of the radial sectors. The property takes effect only in the DrawRadialFills is set to true;
+* __BackColor2:__ The property sets the color of the radial sectors. The property takes effect only in the DrawRadialFills is set to true.
 
-* __AlternatingPolarColor__ – the property indicates whether the fill of the alternating polar sectors will be drawn. The property takes effect only when DrawPolarFills is set to true;
+* __AlternatingPolarColor:__ The property indicates whether the fill of the alternating polar sectors will be drawn. The property takes effect only when DrawPolarFills is set to true.
 
-* __AlternatingRadialColor__ – the property indicates whether the fill of the alternating radial sectors will be drawn. The property takes effect only when DrawRadialFills is set to true;
+* __AlternatingRadialColor:__ The property indicates whether the fill of the alternating radial sectors will be drawn. The property takes effect only when DrawRadialFills is set to true.
 
-* __AlternatingBackColor__ – the property sets the color of the alternating polar sectors. The property takes effect only when DrawPolarFills and AlternatingPolarColor are set to true;
+* __AlternatingBackColor:__ The property sets the color of the alternating polar sectors. The property takes effect only when DrawPolarFills and AlternatingPolarColor are set to true.
 
-* __AlternatingBackColor2__ – the property sets the color of the alternating radial sectors. The property takes effect only when DrawRadialFills and AlternatingRadialColor are set to true;
+* __AlternatingBackColor2:__ The property sets the color of the alternating radial sectors. The property takes effect only when DrawRadialFills and AlternatingRadialColor are set to true.
+
+# See Also
+
+* [Getting Started]({%slug winforms/chartview/getting-started%})
+* [Series Types]({%slug winforms/chartview-/series-types%})

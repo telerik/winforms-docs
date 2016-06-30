@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Axes | UI for WinForms Documentation
-description: Axes
+description: Each RadChartView area type uses a different set of axes to plot its data points. For example, Cartesian Area supports the following axes, Categorical, Linear, Logarithmic, DateTimeCategorical and DateTimeContinuous.
 slug: winforms/chartview-/axes
 tags: axes
 published: True
@@ -11,65 +11,48 @@ previous_url: chartview-axes
 
 # Axes
 
+Each __RadChartView__ area type uses a different set of axes to plot its data points. For example, Cartesian Area supports the following axes: __Categorical__, __Linear__, __Logarithmic__, __DateTimeCategorical__ and __DateTimeContinuous__. Polar area, however, renders its data upon Polar and Radar axes only. Note that Pie area does not support axes. This article discusses the common characteristics of the abstract class Axis, which is the single class all __RadChartView__ axes derive from. This class is responsible for displaying major and minor ticks and rendering the labels associated with the ticks. It also introduces several important properties:
 
+* __AxisType:__ The property sets the axis to be either First or Second.
 
-## 
+* __LabelFitMode:__ Gets or sets a value that determines how the axis labels will be laid out when they overlap.  The property specifies the approach the axis will use to handle label collision. The possible fit modes are None, Multiline and Rotate. None renders the all labels at their specified location without applying any fit logic. Multiline displays labels on a number of rows and Rotate turns the labels around a fixed point. Note that Multiline mode repositions the labels only if it is needed, while Rotate affects the labels regardless of the available space.
 
-Each RadChartView area type uses a different set of axes to plot its data points. For example, Cartesian Area supports the following axes: Categorical, Linear, Logarithmic, DateTimeCategorical and DateTimeContinuous. Polar area, however, renders its data upon Polar and Radar axes only. Note that Pie area does not support axes. This article discusses the common characteristics of the abstract class Axis, which is the single class all RadChartView axes derive from. This class is responsible for displaying major and minor ticks and rendering the labels associated with the ticks. It also introduces several important properties:
-        
+* __LabelRotationAngle:__ Gets or sets the rotation angle of the labels when LabelFitMode equals Rotate.
 
-* __AxisType__  – the property sets the axis to be either First or Second.
-            
+* __LabelFormat:__ Applies a predefined format to the label contents.
 
-* __LabelFitMode__  – Gets or sets a value that determines how the axis labels will be laid out when they overlap.  The property specifies the approach the axis will use to handle label collision. The possible fit modes are None, Multiline and Rotate. None renders the all labels at their specified location without applying any fit logic. Multiline displays labels on a number of rows and Rotate turns the labels around a fixed point. Note that Multiline mode repositions the labels only if it is needed, while Rotate affects the labels regardless of the available space.
-            
+* __LabelFormatProvider:__ Supplies an object that provides formatting information.
 
-* __LabelRotationAngle__  – gets or sets the rotation angle of the labels when LabelFitMode equals Rotate.
-            
+* __LabelInterval:__ Gets or sets the step at which labels are positioned. Specifies the value indicating that only the first out of n-axis labels is visible, where n is the value of the property. Setting the value to 2 makes every second label disappear and setting it to 3 makes only the first of each three labels visible.
 
-* __LabelFormat__  – applies a predefined format to the label contents.
-            
+* __LabelOffset:__ Gets or sets index-based offset of the first tick to be displayed. Setting this property to 1 makes the first label disappear; setting it to 3 makes the first three labels hidden. Note that the property only hides the labels. To hide the ticks use MajorTickOffset property.
 
-* __LabelFormatProvider__  – supplies an object that provides formatting information.
-            
+* __LastLabelVisibility:__ Specifies whether the last label should be Clipped, Visible or Hidden.
 
-* __LabelInterval__  – gets or sets the step at which labels are positioned. Specifies the value indicating that only the first out of n-axis labels is visible, where n is the value of the property. Setting the value to 2 makes every second label disappear and setting it to 3 makes only the first of each three labels visible.
-            
+* __LineWidth:__ The property specifies the width of the axis.
 
-* __LabelOffset__  – Gets or sets index-based offset of the first tick to be displayed. Setting this property to 1 makes the first label disappear; setting it to 3 makes the first three labels hidden. Note that the property only hides the labels. To hide the ticks use MajorTickOffset property.
-            
+* __MajorTickOffset:__ Gets or sets index-based offset of the first tick to be displayed.
 
-* __LastLabelVisibility__ – specifies whether the last label should be Clipped, Visible or Hidden.
-            
+* __TickLength:__ Gets or sets the length of major ticks.
 
-* __LineWidth__  – the property specifies the width of the axis.
-            
+* __TickWidth:__ Gets or sets the thickness of a single tick present on the axis.
 
-* __MajorTickOffset__  – gets or sets index-based offset of the first tick to be displayed.
-            
+* __Title:__ Specifies the title of the axis.
 
-* __TickLength__  – gets or sets the length of major ticks.
-            
+* __ShowLabels:__ A Boolean property that indicates whether the labels will be rendered or hidden.
 
-* __TickWidth__  – gets or sets the thickness of a single tick present on the axis.
-            
+* __BorderColor:__ The property sets the color used to draw the axis and the ticks
 
-* __Title__  – specifies the title of the axis.
-            
+* __ForeColor:__ Determines the color used to render the labels of the axis
 
-* __ShowLabels__  – a Boolean property that indicates whether the labels will be rendered or hidden.
-            
+* __BorderWidth:__ The property specifies the width of the axis
 
-* __BorderColor__  – the property sets the color used to draw the axis and the ticks
-            
-
-* __ForeColor__  – determines the color used to render the labels of the axis
-            
-
-* __BorderWidth__  – the property specifies the width of the axis
+>caption Figure 1: Axes Types
 ![chartview-axes 001](images/chartview-axes001.png)
 
 The following example demonstrates how some of the above properties are set: 
+
+#### Set Properties
 
 {{source=..\SamplesCS\ChartView\Axes\AxisForm.cs region=axis}} 
 {{source=..\SamplesVB\ChartView\Axes\AxisForm.vb region=axis}} 
@@ -123,5 +106,11 @@ verticalAxis.LabelFormat = "{0:c}"
 
 {{endregion}} 
 
-
+>caption Figure 2: Property Settings
 ![chartview-axes 002](images/chartview-axes002.png)
+
+## See Also
+
+* [Getting Started]({%slug winforms/chartview/getting-started%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
+* [Series Types]({%slug winforms/chartview-/series-types%})

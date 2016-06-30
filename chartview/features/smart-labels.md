@@ -1,7 +1,7 @@
 ---
-title: Smart labels
+title: Smart Labels
 page_title: Smart labels | UI for WinForms Documentation
-description: Smart labels
+description: RadChartView provides a built-in mechanism for resolving labels overlapping with the SmartLabelsController.
 slug: winforms/chartview-/features/smart-labels
 tags: smart,labels
 published: True
@@ -11,7 +11,9 @@ previous_url: chartview-features-smart-labels
 
 # Smart labels
 
-RadChartView provides a built-in mechanism for resolving labels overlapping with the __SmartLabelsController__ . You can add the controller to the __Controllers__ collection of RadChartView and it will optimize the arrangement of the labels in a way that there will be less overlaps. 
+__RadChartView__ provides a built-in mechanism for resolving labels overlapping with the __SmartLabelsController__. You can add the controller to the __Controllers__ collection of __RadChartView__ and it will optimize the arrangement of the labels in a way that there will be less overlaps.
+
+#### Add Controller
 
 {{source=..\SamplesCS\ChartView\Features\SmartLabels.cs region=AddSmartLabelsController}} 
 {{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=AddSmartLabelsController}} 
@@ -27,7 +29,9 @@ Me.radChartView1.Controllers.Add(New SmartLabelsController())
 
 {{endregion}}  
 
-Alternatively, you can leave RadChartView do this for you by setting the __ShowSmartLabels__ property: 
+Alternatively, you can leave __RadChartView__ do this for you by setting the __ShowSmartLabels__ property: 
+
+#### Set Property
 
 {{source=..\SamplesCS\ChartView\Features\SmartLabels.cs region=EnableSmartLabels}} 
 {{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=EnableSmartLabels}} 
@@ -41,21 +45,21 @@ Me.radChartView1.ShowSmartLabels = True
 
 ````
 
-{{endregion}} 
-
-
+{{endregion}}
  
 Automatic label placement is one the most complex and time consuming operations in a chart that is NP-hard ([http://en.wikipedia.org/wiki/NP-Hard](http://en.wikipedia.org/wiki/NP-Hard)). There is no universal solution for all chart types and there is no solution that can guarantee solution for 100% of the label collisions in every case.
 
+>caption Figure 1: Smart Labels
 ![chartview-features-smart-labels 001](images/chartview-features-smart-labels001.png)
 
-RadChartView’s __SmartLabelsController__ uses strategies specific to different chart types to resolve label overlaps. Since label overlapping can be quite time consuming with more generalized methods, the more concrete a strategy is the better the performance that can be expected out of it. You do not need to be concerned with the strategy, RadChartView will choose the best of the built-in strategies to be used in your chart.
+__RadChartView__’s __SmartLabelsController__ uses strategies specific to different chart types to resolve label overlaps. Since label overlapping can be quite time consuming with more generalized methods, the more concrete a strategy is the better the performance that can be expected out of it. You do not need to be concerned with the strategy, __RadChartView__ will choose the best of the built-in strategies to be used in your chart.
 
+>caption Figure 2: Resolving Overlaps
 ![chartview-features-smart-labels 002](images/chartview-features-smart-labels002.png)![chartview-features-smart-labels 003](images/chartview-features-smart-labels003.png)
 
 # Custom labels strategy
 
-In a specific scenario you may need to control the labels' position. For this purpose, create a derivative of the **SmartLabelsStrategyBase** class and override its **CalculateLocations** method. Then, you should use this custom logic in the **SmartLabelsController**. You can find below a sample code snippet demonstrating how you can position the labels in the top part of the chart:
+In a specific scenario you may need to control the labels' position. For this purpose, create a derivative of the __SmartLabelsStrategyBase__ class and override its __CalculateLocations__ method. Then, you should use this custom logic in the __SmartLabelsController__. You can find below a sample code snippet demonstrating how you can position the labels in the top part of the chart:
 
 #### Custom SmartLabelsStrategy 
 
@@ -107,7 +111,7 @@ End Class
 {{endregion}} 
 
 
-You must apply the custom **SmartLabelsController** to **RadChartView**:
+You must apply the custom __SmartLabelsController__ to __RadChartView__:
 
 #### Apply custom strategy
 
@@ -132,3 +136,11 @@ Me.radChartView1.Controllers.Add(controler)
 |Before|After|
 |----|----|
 |![chartview-features-smart-labels 004](images/chartview-features-smart-labels004.png)|![chartview-features-smart-labels 005](images/chartview-features-smart-labels005.png)|
+
+# See Also
+
+* [Axes]({%slug winforms/chartview-/axes%})
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
+* [Customization]({%slug winforms/chartview-/customization/custom-rendering%})
+* [Printing]({%slug winforms/chartview-/printing-support/printing%})

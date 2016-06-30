@@ -160,7 +160,7 @@ navigation:
         position: 12
     chartview/series-types:
         title: Series Types
-        position: 5
+        position: 7
     chartview/series-types/series-types:
         title: Overview
         position: 0		
@@ -172,28 +172,28 @@ navigation:
         position: 0
     chartview/axes:
         title: Axes
-        position: 6
+        position: 8
     chartview/axes/axes:
         title: Overview
         position: 0
     chartview/features:
         title: Features
-        position: 7			
+        position: 9			
     chartview/features/annotations:
         title: Annotations
         position: 10	
     chartview/features/annotations/annotations:
         title: Overview
         position: 0
-    chartview/databinding:
-        title: DataBinding
-        position: 8		
+    chartview/populating-with-data:
+        title: Populating with Data
+        position: 10		
     chartview/customization:
         title: Customization
-        position: 9	
+        position: 11	
     chartview/printing-support:
         title: Printing Support
-        position: 10
+        position: 12
     checkedlistbox:
         title: CheckedListBox
         position: 13

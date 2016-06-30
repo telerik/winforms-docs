@@ -1,7 +1,7 @@
 ---
 title: Scatter
 page_title: Scatter | UI for WinForms Documentation
-description: Scatter
+description: ScatterSeries plots its data upon two numerical axes. Scatter series identify the position of each ScatterDataPoint using two numerical values - XValue and YValue
 slug: winforms/chartview-/series-types/scatter
 tags: scatter
 published: True
@@ -11,12 +11,9 @@ previous_url: chartview-series-types-scatter
 
 # Scatter
 
-
-
-## 
-
 Unlike Categorical series, __ScatterSeries__ plots its data upon two numerical axes. Scatter series identify the position of each __ScatterDataPoint__ using two numerical values - *XValue* and *YValue* for the horizontal and vertical axes respectively, just like in the typical Cartesian coordinate system. Here is how to create two ScatterSeries and populate them manually:
- 
+
+#### Initial Setup
 
 {{source=..\SamplesCS\ChartView\Series\ScatterSeriesForm.cs region=scatter}} 
 {{source=..\SamplesVB\ChartView\Series\ScatterSeriesForm.vb region=scatter}} 
@@ -70,21 +67,20 @@ Me.RadChartView1.Series.Add(scatterSeries2)
 {{endregion}} 
 
 
-![](images/chartview-series-types-scatter001.png)
+>caption Figure 1: Initial Setup
+![chartview series types scatter 001](images/chartview-series-types-scatter001.png)
 
 __ScatterSeries__ have few important properties:
-        
 
-* __PointSize__ – the property defines the size of the ScatterSeries points.
-            
+* __PointSize:__ The property defines the size of the ScatterSeries points.
 
-* __XValueMember__ – if a DataSource is set, the property determines the name of the field that holds the XValue.
-            
+* __XValueMember:__ If a DataSource is set, the property determines the name of the field that holds the XValue.
 
-* __YValueMember__ – if a DataSource is set, the property determines the name of the field that holds the YValue.
-            
+* __YValueMember:__ If a DataSource is set, the property determines the name of the field that holds the YValue.
 
-* __Shape__ – to change the shape of a series points use the Shape property of the series 
+* __Shape:__ To change the shape of a series points use the Shape property of the series 
+
+#### Custom Shape
 
 {{source=..\SamplesCS\ChartView\Series\ScatterSeriesForm.cs region=shape}} 
 {{source=..\SamplesVB\ChartView\Series\ScatterSeriesForm.vb region=shape}} 
@@ -103,5 +99,10 @@ scatterSeries2.Shape = shape
 
 {{endregion}} 
 
-
+>caption Figure 2: Custom Shape
 ![](images/chartview-series-types-scatter002.png)
+
+# See Also
+
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

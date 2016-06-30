@@ -1,7 +1,7 @@
 ---
 title: Logarithmic
 page_title: Logarithmic | UI for WinForms Documentation
-description: Logarithmic
+description: Valid only in the context of Cartesian Area, Logarithmic axis can be used to plot any data that contains numerical values.
 slug: winforms/chartview-/axes/logarithmic
 tags: logarithmic
 published: True
@@ -11,46 +11,33 @@ previous_url: chartview-axes-logarithmic
 
 # Logarithmic
 
-
-
-## 
-
 Valid only in the context of Cartesian Area, Logarithmic axis can be used to plot any data that contains numerical values. The value of each of its ticks is growing exponentially, as opposed to linear axis, where tick values are growing linearly. Logarithmic axis is the typically used when the data values fall in a large range. The LogarithmBase property determines the base of the logarithm function and the ExponentStep property controls exponent step between each axis tick. By default the axis itself will calculate the exponent step, based on the incoming data. Here is a list of all LogarithmicAxis properties:
-        
 
-* __ActualRange__ – the property provides the actual range (the minimum and maximum) used by the axis to plot data points.
-            
+* __ActualRange:__ the property provides the actual range (the minimum and maximum) used by the axis to plot data points.
 
-* __DesiredTickCount__ – gets or sets the user-defined number of ticks on the axis.
-            
+* __DesiredTickCount:__ Gets or sets the user-defined number of ticks on the axis.
 
-* __Minimum__ – gets or sets the user-defined minimum of the axis. By default the axis calculates the minimum, depending on the minimum of the plotted data points. You can reset this property by setting it to Double.NegativeInfinity to restore the default behavior.
-            
+* __Minimum:__ Gets or sets the user-defined minimum of the axis. By default the axis calculates the minimum, depending on the minimum of the plotted data points. You can reset this property by setting it to Double.NegativeInfinity to restore the default behavior.
 
-* __Maximum__ – gets or sets the user-defined maximum of the axis. By default the axis calculates the maximum, depending on the maximum of the plotted data points. You can reset this property by setting it to Double.PositiveInfinity to restore the default behavior.
-            
+* __Maximum:__ Gets or sets the user-defined maximum of the axis. By default the axis calculates the maximum, depending on the maximum of the plotted data points. You can reset this property by setting it to Double.PositiveInfinity to restore the default behavior.
 
-* __LogarithmBase__ – the property determines the base of the logarithm used for normalizing data points' values.
-            
+* __LogarithmBase:__ The property determines the base of the logarithm used for normalizing data points' values.
 
-* __ExponentStep__ – indicates the exponent step between each axis tick. By default the axis calculates the exponent step, depending on the plotted data points. You can reset this property by setting it to 0 to restore the default behavior.
-            
+* __ExponentStep:__ Indicates the exponent step between each axis tick. By default the axis calculates the exponent step, depending on the plotted data points. You can reset this property by setting it to 0 to restore the default behavior.
 
-* __RangeExtendDirection__ – gets or sets a value that specifies how the auto-range of this axis is extended so that each data point is visualized in the best way. Possible values are None, Positive, Negative, Both. None sets the range minimum to the minimum data point value and the range maximum to the maximum data point value. Positive extends the range maximum with one major step if necessary. Negative extends the range minimum with one major step if necessary. Both extend the range in both negative and positive direction.
-            
+* __RangeExtendDirection:__ Gets or sets a value that specifies how the auto-range of this axis is extended so that each data point is visualized in the best way. Possible values are None, Positive, Negative, Both. None sets the range minimum to the minimum data point value and the range maximum to the maximum data point value. Positive extends the range maximum with one major step if necessary. Negative extends the range minimum with one major step if necessary. Both extend the range in both negative and positive direction.
 
-* __HorizontalLocation__ – the property determines the horizontal location of the axis in relation to the plot area. Possible values are Top and Bottom, where Top displays the axis above the area and Bottom displays the axis below the area. The default value is Bottom.
-            
+* __HorizontalLocation:__ The property determines the horizontal location of the axis in relation to the plot area. Possible values are Top and Bottom, where Top displays the axis above the area and Bottom displays the axis below the area. The default value is Bottom.
 
-* __VerticalLocation__ – the property determines the vertical location of the axis in relation to the plot area. Possible values are Left and Right, where Left displays the axis on the left of the area and Right displays the axis on the right of the area. The default value is Left.
-            
+* __VerticalLocation:__ The property determines the vertical location of the axis in relation to the plot area. Possible values are Left and Right, where Left displays the axis on the left of the area and Right displays the axis on the right of the area. The default value is Left.
 
-* __ClipLabels__ – this property controls whether labels will be clipped to the size of the axes (width/height).
-            
+* __ClipLabels:__ This property controls whether labels will be clipped to the size of the axes (width/height).
 
-Additionally, LinearAxis inherits all properties of the Axis class.
+Additionally, __LogarithmicAxis__ inherits all properties of the Axis class.
 
 Logarithmic axis is not added by default to Cartesian series. For this reason you will need to create an instance of the LogarithmicAxis class and assign it to the VerticalAxis property of the series, before it is added to the chart. Here is a sample snippet: 
+
+#### LogarithmicAxis Setup
 
 {{source=..\SamplesCS\ChartView\Axes\LogarithmicAxisForm.cs region=axis}} 
 {{source=..\SamplesVB\ChartView\Axes\LogarithmicAxisForm.vb region=axis}} 
@@ -87,5 +74,11 @@ radChartView1.Series.Add(series);
 
 {{endregion}} 
 
-
+>caption Figure 1: LogarithmicAxis Setup
 ![chartview-axes-logarithmic 001](images/chartview-axes-logarithmic001.png)
+
+# See Also
+
+* [Axes]({%slug winforms/chartview-/axes%})
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

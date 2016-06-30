@@ -33,7 +33,7 @@ You can add any element that derives from the RadElement class inside the __RadE
 >note In order to utilize the __InlineUIContainer__ , you have to set its __Height__ and __Width__ explicitly (or use the constructor that takes a __Size__ as a parameter). Otherwise, it will not shown in the document.
 >
 
->note The following article contains more information about the element types which can be used inside the document: [Elements Overview]({%winforms/telerik-presentation-framework/elements/overview%}).
+>note The following article contains more information about the element types which can be used inside the document: [Elements Overview]({%slug winforms/telerik-presentation-framework/elements/overview%}).
 >
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\UIContainerCode.cs region=add}} 

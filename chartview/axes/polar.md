@@ -1,7 +1,7 @@
 ---
 title: Polar
 page_title: Polar | UI for WinForms Documentation
-description: Polar
+description: The PolarAxis is special axis rendered as a fixed line in a system of polar coordinates where polar angle, θ, is measured anticlockwise.
 slug: winforms/chartview-/axes/polar
 tags: polar
 published: True
@@ -11,27 +11,17 @@ previous_url: chartview-axes-polar
 
 # Polar
 
+The __PolarAxis__ is special axis rendered as a fixed line in a system of polar coordinates where polar angle, θ, is measured anticlockwise. The axis is created automatically when the Polar or Radar series are added to RadChartView. Its MajorStep, Minimum and Maximum properties define its major settings – tick step, minimum and maximum value. Below is a list of __PolarAxis__ properties:
 
+* __Minimum:__ Gets or sets the user-defined minimum of the axis. By default the axis calculates the minimum, depending on the minimum of the plotted data points. You can reset this property by setting it to Double.NegativeInfinity to restore the default behavior.
 
-## 
+* __Maximum:__ Gets or sets the user-defined maximum of the axis. By default the axis calculates the maximum, depending on the maximum of the plotted data points. You can reset this property by setting it to Double.PositiveInfinity to restore the default behavior.
 
-The PolarAxis is special axis rendered as a fixed line in a system of polar coordinates where polar angle, θ, is measured anticlockwise. The axis is created automatically when the Polar or Radar series are added to RadChartView. Its MajorStep, Minimum and Maximum properties define its major settings – tick step, minimum and maximum value. Below is a list of PolarAxis properties:
-        
+* __MajorStep:__ The property determines the major step between each axis tick. By default the axis calculates the major step, depending on the plotted data points. You can reset this property by setting it to 0 to restore the default behavior.
 
-* __Minimum__  – gets or sets the user-defined minimum of the axis. By default the axis calculates the minimum, depending on the minimum of the plotted data points. You can reset this property by setting it to Double.NegativeInfinity to restore the default behavior.
-            
+Polar axis is created by default when you add Polar or Radar series to the Polar Area of __RadChartView__. Here is how to set the MajorStep and Maximum properties of a Polar axis:
 
-* __Maximum__  – gets or sets the user-defined maximum of the axis. By default the axis calculates the maximum, depending on the maximum of the plotted data points. You can reset this property by setting it to Double.PositiveInfinity to restore the default behavior.
-            
-
-* __MajorStep__  – the property determines the major step between each axis tick. By default the axis calculates the major step, depending on the plotted data points. You can reset this property by setting it to 0 to restore the default behavior.
-            
-
-Additionally, LinearAxis inherits all properties of the Axis class.
-        
-
-Polar axis is created by default when you add Polar or Radar series to the Polar Area of RadChartView. Here is how to set the MajorStep and Maximum properties of a Polar axis:
-![chartview-axes-polar 001](images/chartview-axes-polar001.png) 
+#### PolarAxis Setup
 
 {{source=..\SamplesCS\ChartView\Axes\PolarAxisForm.cs region=axis}} 
 {{source=..\SamplesVB\ChartView\Axes\PolarAxisForm.vb region=axis}} 
@@ -79,7 +69,13 @@ axis.Maximum = 12
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
+>caption Figure 1: PolarAxis Setup
+![chartview-axes-polar 001](images/chartview-axes-polar001.png) 
 
+# See Also
 
+* [Axes]({%slug winforms/chartview-/axes%})
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

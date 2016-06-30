@@ -1,7 +1,7 @@
 ---
 title: Formatting Trackball Labels
 page_title: Formatting Trackball Labels | UI for WinForms Documentation
-description: Formatting Trackball Labels
+description: This article demonstrates how to customize the trackball labels text and styles. This can be achieved in the TextNeeded event of the trackball controller.
 slug: winforms/chartview-/customization/formatting-trackball-labels
 tags: formatting,trackball,labels
 published: True
@@ -11,15 +11,15 @@ previous_url: chartview-customization-formatting-trackball-labels
 
 # Formatting Trackball Labels
 
-
-
 This article demonstrates how to customize the trackball labels text and styles. This can be achieved in the __TextNeeded__ event of the trackball controller. This event is fired when the user hover over a particular data point with the mouse and can be used to set any styles and text, depending on your preferences.
 
-## ![chartview-customization-formatting-trackball-labels 001](images/chartview-customization-formatting-trackball-labels001.png)
+>caption Figure 1: Formatting TrackBall
+![chartview-customization-formatting-trackball-labels 001](images/chartview-customization-formatting-trackball-labels001.png)
 
 1\. You should subscribe to the __TextNeeded__ event and add the __ChartTrackballController__ to the chart as follows. 
-2\. Now, you can use the TextNeeded and change any properties you desire.
- 
+
+#### Add Controller
+
 {{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=Trackball}} 
 {{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=Trackball}} 
 
@@ -38,7 +38,9 @@ RadChartView1.Controllers.Add(controler)
 
 {{endregion}} 
 
-3\. Now, you can use the __TextNeeded__ and change any properties you desire. 
+2\. Now, you can use the __TextNeeded__ and change any properties you desire. 
+
+#### Handle TextNeeded
 	
 {{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=TextNeeded}} 
 {{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=TextNeeded}} 
@@ -78,3 +80,7 @@ End Sub
 >important The code for getting the current data point can depend on the used series type. For example if you use scatter chart, you should use __ScatterDataPoint__ type.
 >
 
+# See Also
+
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Axes]({%slug winforms/chartview-/axes%})

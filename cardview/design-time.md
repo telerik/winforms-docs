@@ -1,7 +1,7 @@
 ---
 title: Design Time
 page_title: Design Time | UI for WinForms Documentation
-description: At desing time you can use the RadCardViews's Smart Tag to change the applied theme or navigate to the online documentation.
+description: At design time you can use the RadCardViews's Smart Tag to change the applied theme or navigate to the online documentation.
 slug: winforms/cardview/design-time
 tags: cardview, design-time
 published: True

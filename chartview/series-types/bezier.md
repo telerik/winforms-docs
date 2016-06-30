@@ -1,7 +1,7 @@
 ---
 title: Bezier
 page_title: Bezier | UI for WinForms Documentation
-description: Bezier
+description: The Bezier chart displays a series of points on a curved line.  Two control points determine the position and amount of curvature in the line between end points
 slug: winforms/chartview-/series-types/bezier
 tags: bezier
 published: True
@@ -11,12 +11,9 @@ previous_url: chartview-series-types-bezier
 
 # Bezier
 
-
-
 The Bezier chart displays a series of points on a curved line.  Two "control points" determine the position and amount of curvature in the line between end points.
-![chartview-series-types-bezier 001](images/chartview-series-types-bezier001.png)
 
-## 
+#### Initial Setup
  
 {{source=..\SamplesCS\ChartView\Series\BezierSeriesForm.cs region=Bezier}} 
 {{source=..\SamplesVB\ChartView\Series\BezierSeriesForm.vb region=Bezier}} 
@@ -53,24 +50,25 @@ Me.RadChartView1.Series.Add(bezier3)
 ````
 
 {{endregion}} 
+
+>caption Figure 1: Initial Setup
+![chartview-series-types-bezier 001](images/chartview-series-types-bezier001.png)
  
 Here are some of the important properties of __BezierSeries__:
-        
 
-* __ControlPoint1XMember__ - if a DataSource is set, the property determines the name of the field that holds the X coordinate of ControlPoint1.
-            
+* __ControlPoint1XMember:__ If a DataSource is set, the property determines the name of the field that holds the X coordinate of ControlPoint1.
 
-* __ControlPoint1YMember__ - if a DataSource is set, the property determines the name of the field that holds the Y coordinate of ControlPoint1.
-            
+* __ControlPoint1YMember:__ If a DataSource is set, the property determines the name of the field that holds the Y coordinate of ControlPoint1.
 
-* __ControlPoint2XMember__ - if a DataSource is set, the property determines the name of the field that holds the X coordinate of ControlPoint2.
-            
+* __ControlPoint2XMember:__ If a DataSource is set, the property determines the name of the field that holds the X coordinate of ControlPoint2.
 
-* __ControlPoint2YMember__ - if a DataSource is set, the property determines the name of the field that holds the Y coordinate of ControlPoint2.
-            
+* __ControlPoint2YMember:__ If a DataSource is set, the property determines the name of the field that holds the Y coordinate of ControlPoint2.
 
-* __XValueMember__ - if a DataSource is set, the property determines the name of the field that holds the XValue.
-            
+* __XValueMember:__ If a DataSource is set, the property determines the name of the field that holds the XValue.
 
-* __YValueMember__ - if a DataSource is set, the property determines the name of the field that holds the YValue.
-            
+* __YValueMember:__ If a DataSource is set, the property determines the name of the field that holds the YValue.
+
+# See Also
+
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

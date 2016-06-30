@@ -1,7 +1,7 @@
 ---
 title: Range and RangeBar
 page_title: Range and RangeBar | UI for WinForms Documentation
-description: Range and RangeBar
+description: The Range series allows you to define range with each data point. RangeBarSeries is visualized on the screen as separate rectangles representing each of the DataPoints.
 slug: winforms/chartview-/series-types/range-and-rangebar
 tags: range,and,rangebar
 published: True
@@ -13,12 +13,13 @@ previous_url: chartview-series-types-range
 
 
 
-## Range series
+## RangeSeries
 
 The __Range__ series allows you to define range with each data point. 
-![chartview-series-types-range 001](images/chartview-series-types-range001.png)
 
-You can use the following code to display a simple RangeSeries 
+You can use the following code to display a simple __RangeSeries__
+
+#### Initial Setup RangeSeries
 
 {{source=..\SamplesCS\ChartView\Series\RangeAndRangeBarSeries.cs region=Range}} 
 {{source=..\SamplesVB\ChartView\Series\RangeAndRangeBarSeries.vb region=Range}} 
@@ -48,15 +49,18 @@ radChartView1.Series.Add(rangeSeries)
 
 ````
 
-{{endregion}}  
+{{endregion}}
 
-## RangeBar series
+>caption Figure 1: Initial Setup RangeSeries
+![chartview-series-types-range 001](images/chartview-series-types-range001.png)
 
-This series is visualized on the screen as separate rectangles representing each of the DataPoints. 
-![chartview-series-types-range 002](images/chartview-series-types-range002.png)
+## RangeBarSeries
+
+This series is visualized on the screen as separate rectangles representing each of the DataPoints.
 
 You can use the following code to display a simple RangeBarSeries 
 
+#### Initial Setup RangeBarSeries
  
 {{source=..\SamplesCS\ChartView\Series\RangeAndRangeBarSeries.cs region=Bar}} 
 {{source=..\SamplesVB\ChartView\Series\RangeAndRangeBarSeries.vb region=Bar}} 
@@ -86,7 +90,12 @@ radChartView1.Series.Add(rangeBarSeries)
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
+>caption Figure 2: Initial Setup RangeBarSeries
+![chartview-series-types-range 002](images/chartview-series-types-range002.png)
 
+# See Also
 
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

@@ -1,7 +1,7 @@
 ---
 title: Bubble
 page_title: Bubble | UI for WinForms Documentation
-description: Bubble
+description: BubbleSeries are used to visualize data points as points with coordinates and size defined by their items' values
 slug: winforms/chartview-/series-types/bubble
 tags: bubble
 published: True
@@ -11,10 +11,13 @@ previous_url: chartview-series-types-bubble
 
 # Bubble
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> Hristo_Review
 __BubbleSeries__ are used to visualize data points as points with coordinates and size defined by their items' values. You might think of a Bubble chart as a variation of the Scatter chart, in which the data points are replaced with bubbles. 
-![chartview-series-types-bubble 001](images/chartview-series-types-bubble001.png) 
 
+#### Initial Setup
  
 {{source=..\SamplesCS\ChartView\Series\BubbleSeriesForm.cs region=Bubble}} 
 {{source=..\SamplesVB\ChartView\Series\BubbleSeriesForm.vb region=Bubble}} 
@@ -60,25 +63,26 @@ Me.RadChartView1.Series.Add(bubbleSeries2)
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
+>caption Figure 1: Initial Setup
+![chartview-series-types-bubble 001](images/chartview-series-types-bubble001.png)
  
 Here are some of the important properties of __BubbleSeries__:
 
-* __XValueMember__ - if a DataSource is set, the property determines the name of the field that holds the XValue.
-            
+* __XValueMember:__ If a DataSource is set, the property determines the name of the field that holds the XValue.
 
-* __YValueMember__ - if a DataSource is set, the property determines the name of the field that holds the YValue.
-            
+* __YValueMember:__ If a DataSource is set, the property determines the name of the field that holds the YValue. 
 
-* __ValueMember__ - if a DataSource is set, the property determines the name of the field that holds the Value.
-            
+* __ValueMember:__ If a DataSource is set, the property determines the name of the field that holds the Value.
 
-* __AutoScale__ - defines whether the size of the bubbles is calculated automatically by the chart engine or by the __Scale__ property.
-            
+* __AutoScale:__ Defines whether the size of the bubbles is calculated automatically by the chart engine or by the __Scale__ property.
 
-* __Scale__ - specifies a fixed scale for the relation between the size of the bubbles and their value when the __AutoScale__ property is set to *false*.
-            
+* __Scale:__ Specifies a fixed scale for the relation between the size of the bubbles and their value when the __AutoScale__ property is set to *false*.
 
-* __AutoScaleMaxWidth__ - the maximum size in pixels of a single bubble when __AutoScale__ is *true*.
+* __AutoScaleMaxWidth:__ The maximum size in pixels of a single bubble when __AutoScale__ is *true*.
             
+# See Also
+
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

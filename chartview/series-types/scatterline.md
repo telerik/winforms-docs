@@ -1,7 +1,7 @@
 ---
 title: ScatterLine
 page_title: ScatterLine | UI for WinForms Documentation
-description: ScatterLine
+description: ScatterLineSeries allow data represented as a line to be plotted against two linear axes. Each point from the line in the chart is defined by two numeric values – XValue and YValue
 slug: winforms/chartview-/series-types/scatterline
 tags: scatterline
 published: True
@@ -11,11 +11,9 @@ previous_url: chartview-series-types-scatterline
 
 # ScatterLine
 
-
-
-## 
-
 __ScatterLineSeries__ allow data represented as a line to be plotted against two linear axes. Each point from the line in the chart is defined by two numeric values – __XValue__ and __YValue__ for the horizontal and for the vertical axis respectively. This chart type is the closest resemblance of the mathematical Cartesian coordinate system. Next we create a simple chart with two lines: 
+
+#### Initial Setup
 
 {{source=..\SamplesCS\ChartView\Series\ScatterLineSeriesForm.cs region=scatterLineSetup}} 
 {{source=..\SamplesVB\ChartView\Series\ScatterLineSeriesForm.vb region=scatterLineSetup}} 
@@ -63,17 +61,16 @@ Me.radChartView1.Series.Add(scatterSeries2)
 
 {{endregion}} 
 
-
+>caption Figure 1: Initial Setup
 ![chartview-series-scatterline 001](images/chartview-series-scatterline001.png)
 
 __ScatterLineSeries__ inherit from __ScatterSeries__ thus all important properties are inherited as well. Two important properties are added for the scatter line:
-        
 
-* __Spline__ - Boolean property, which indicates whether the series will draw straight lines of smooth curves
-            
+* __Spline:__ Boolean property, which indicates whether the series will draw straight lines of smooth curves.            
 
-* __SplineTension__ – the property sets the tension of the spline. The property will have effect only if the __Spline__ property is set to __true__ 
+* __SplineTension:__ The property sets the tension of the spline. The property will have effect only if the __Spline__ property is set to __true__.
 
+#### Spline Settings
  
 {{source=..\SamplesCS\ChartView\Series\ScatterLineSeriesForm.cs region=scatterLineSpline}} 
 {{source=..\SamplesVB\ChartView\Series\ScatterLineSeriesForm.vb region=scatterLineSpline}} 
@@ -91,5 +88,10 @@ scatterLine.SplineTension = 0.8F
 
 {{endregion}} 
 
-
+>caption Figire 2: Spline Settings
 ![chartview-series-scatterline 002](images/chartview-series-scatterline002.png)
+
+# See Also
+
+* [Series Types]({%slug winforms/chartview-/series-types%})
+* [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
