@@ -11,10 +11,6 @@ previous_url: pivotgrid-localization-localization
 
 # Localization
 
-
-
-## 
-
 To localize __RadPivotGrid__ to display any text and messages in a specific language:
 
 * Create a custom __PivotGridLocalizationProvider__ class.
@@ -25,7 +21,7 @@ Below is a sample implementation of an English localization provider:
 
 #### Localizing RadPivotGrid Strings
 
-{{source=..\SamplesCS\PivotGrid\Localization\Localization1.cs region=CustomProvider}} 
+{{source=..\SamplesCS\PivotGrid\Localization\PivotGridLocalization.cs region=CustomProvider}} 
 {{source=..\SamplesVB\PivotGrid\Localization\PivotGridLocalization.vb region=CustomProvider}} 
 
 ````C#
@@ -615,17 +611,27 @@ End Class
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
+>note RadPivotGrid`s localization provider needs to be loaded in the form`s constructor prior to calling the __InitializeComponent__ method.
+>
+
 #### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\PivotGrid\Localization\Localization1.cs region=LocalizePivot}} 
+{{source=..\SamplesCS\PivotGrid\Localization\PivotGridLocalization.cs region=LocalizePivot}} 
 {{source=..\SamplesVB\PivotGrid\Localization\PivotGridLocalization.vb region=LocalizePivot}} 
 
 ````C#
-PivotGridLocalizationProvider.CurrentProvider = new MyEnglishPivotGridLoclizationProvider();
+public PivotGridLocalization()
+{
+    PivotGridLocalizationProvider.CurrentProvider = new MyEnglishPivotGridLoclizationProvider();
+    InitializeComponent();
+}
 
 ````
 ````VB.NET
-PivotGridLocalizationProvider.CurrentProvider = New MyEnglishPivotGridLoclizationProvider()
+Public Sub New()
+    PivotGridLocalizationProvider.CurrentProvider = New MyEnglishPivotGridLoclizationProvider()
+    InitializeComponent()
+End Sub
 
 ````
 
