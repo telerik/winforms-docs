@@ -11,13 +11,9 @@ previous_url: chartview-series-types-bar
 
 # Bar
 
-<<<<<<< HEAD
-BarSeries are used to visualize data points as bar blocks where the height of each bar denotes the magnitude of its value. As a descendant of Categorical series, Bars require one categorical and one numerical axis. The following snippet demonstrates how to manually populate two BarSeries: 
-=======
 __BarSeries__ are used to visualize data points as bar blocks where the height of each bar denotes the magnitude of its value. As a descendant of Categorical series, Bars require one categorical and one numerical axis. The following snippet demonstrates how to manually populate two __BarSeries__: 
 
 #### Initial Setup
->>>>>>> Hristo_Review
 
 {{source=..\SamplesCS\ChartView\Series\BarSeriesForm.cs region=bar}} 
 {{source=..\SamplesVB\ChartView\Series\BarSeriesForm.vb region=bar}} 

@@ -13,12 +13,7 @@ previous_url: chartview-features-title
 
 To show the title in __RadChartView__ you need to set the __ShowTitle__ property to *true* (by default is *false*) and also to set the desired title text in the __Title__ property: 
 
-<<<<<<< HEAD
-To show the title in RadChartView you need to set the __ShowTitle__ property to *true* (by default is *false*) and also to set the desired title text in the __Title__ property: 
-
-=======
 #### Showing Title
->>>>>>> Hristo_Review
 
 {{source=..\SamplesCS\ChartView\Features\ChartViewTitle.cs region=ShowTitle}} 
 {{source=..\SamplesVB\ChartView\Features\ChartViewTitle.vb region=ShowTitle}} 

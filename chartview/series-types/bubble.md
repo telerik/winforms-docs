@@ -11,10 +11,6 @@ previous_url: chartview-series-types-bubble
 
 # Bubble
 
-<<<<<<< HEAD
-
-=======
->>>>>>> Hristo_Review
 __BubbleSeries__ are used to visualize data points as points with coordinates and size defined by their items' values. You might think of a Bubble chart as a variation of the Scatter chart, in which the data points are replaced with bubbles. 
 
 #### Initial Setup

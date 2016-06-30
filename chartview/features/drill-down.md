@@ -56,14 +56,10 @@ radChartView1.Views.AddNew("Revenue by Day")
 
 ````
 
-<<<<<<< HEAD
-{{endregion}} 
- 
+{{endregion}}
+
 >important In order to show the added __ChartViews__ you should set the __ShowDrillNavigation__ property to *true*.
 >
-=======
-{{endregion}}
->>>>>>> Hristo_Review
 
 To handle the different levels, the __Drill__ event should be used. Depending on the __Level__ provided in the event arguments, you can decide how to setup the View. In the example below, different data is represented for Years, Months and Days: 
 

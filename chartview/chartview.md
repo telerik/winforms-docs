@@ -9,33 +9,22 @@ position: 0
 previous_url: chartview-overview
 ---
 
-<<<<<<< HEAD
-# ChartView 
-
-
-| RELATED VIDEOS |  |
-| ------ | ------ |
-|[What is new in R3 2012 Telerik UI for WinForms](http://www.telerik.com/videos/winforms/what-is-new-in-q3-2012-radcontrols-for-winforms)<br>This webinar examines the new features found in Telerik UI for WinForms. Included in the R3 2012 release is RadPivotGrid (Beta), Coded UI Testing Support, touch, legend and financial charts for RadChartView, Visual Studio 2012 compliance and much much more. See what's new in the design-time capabilities of RadChartView. (19:12 - 24:12)|![webinar Q 32012](images/webinarQ32012.png)|
-=======
 # ChartView
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[What is new in Q3 2012 Telerik UI for WinForms](http://www.telerik.com/videos/winforms/what-is-new-in-q3-2012-radcontrols-for-winforms)<br>This webinar examines the new features found in Telerik UI for WinForms. Included in the Q3 2012 release is RadPivotGrid (Beta), Coded UI Testing Support, touch, legend and financial charts for __RadChartView__, Visual Studio 2012 compliance and much much more. See what's new in the design-time capabilities of RadChartView. (19:12 - 24:12)|![webinar Q 32012](images/webinarQ32012.png)|
->>>>>>> Hristo_Review
 |[Getting Started with RadChartView for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-radchartview-for-winforms) <br>Telerik ChartView control facilitates data visualization, achieving stunning visual effects. This chart component sets no limits on your data visualization needs. It can easily turn into Bar, Pie, Line, Area, Polar, Radar and Scatter with only a few clicks at design time. The input data is contained in a set of series classes. Each series have a collection of data points, that is, a data source which it displays according to the series’ type.|![chartview-overview 002](images/chartview-overview001.png)|
 
 ## Overview
 
 __RadChartView__ is a versatile charting component that offers drawing capabilities, user interaction and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in design-time or through code. The control is completely data aware and may work in bound or unbound mode, depending on the requirements. Chart types (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points – for example we have __CartesianArea__ (using Cartesian coordinate system) and __PieArea__ (using radial coordinate system).
-        
 
 >note The following references are required in order to use __RadChartView__:
 >
 *  __Telerik.WinControls.ChartView.dll__ 
 *  __Telerik.WinControls.dll__ 
-*  __TelerikCommon.dll__ 
-
+*  __TelerikCommon.dll__
 
 ## Architecture
 A charting component in general is used to visualize (or plot) some data in a human-readable way through different representations like lines, areas, bars pies, etc. Each series has a collection of data points – the data equivalent of a 2D point – and knows how to visualize them. Different series types may process certain types of data points – for example categorical series may contain categorical data points. Data points may be added directly to series or a data binding mechanism may be used to create the appropriate data points from the raw data.
