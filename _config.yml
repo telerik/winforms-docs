@@ -269,6 +269,9 @@ navigation:
     dock/localization:
         title: Localization
         position: 8
+    dock/customizing-appearance:
+        title: Customizing Appearance
+        position: 8
     desktopalert:
         title: DesktopAlert
         position: 20
