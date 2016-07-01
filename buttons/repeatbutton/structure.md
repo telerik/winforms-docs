@@ -10,6 +10,8 @@ position: 1
 
 # Structure
 
+This article will show the internal elements structure of __RadRepeatButton__:
+
 >caption Fig.1 RadRepeatButton's elements hierarchy
 
 ![buttons-repeatbutton-structure 001](images/buttons-repeatbutton-structure001.png)

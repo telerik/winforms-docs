@@ -11,7 +11,11 @@ previous_url: buttons-radiobutton-design-time, buttons-radiobutton-designing-rad
 
 # Design Time
 
+To start using __RadRadioButton__ just drag it from the toolbox and drop it at the form.
+
 ## Smart Tag
+
+Select __RadRadioButton__ and click the small arrow on the top right position in order to open the Smart Tag.
 
 >caption Fig.1 Smart Tag
 
@@ -29,3 +33,7 @@ previous_url: buttons-radiobutton-design-time, buttons-radiobutton-designing-rad
 
 * __Search__: Search the Telerik site for a given string.
 
+
+## See Also
+
+* [Using default themes]({%slug winforms/themes/using-default-themes%})

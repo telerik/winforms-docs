@@ -11,9 +11,18 @@ previous_url: buttons-repeatbutton-working-with-radrepeatbutton
 
 # Getting Started
 
-* To add a __RadRepeatButton__ to your form, drag a __RadRepeatButton__ from the toolbox onto the surface of the form designer.
+You can add __RadRepeatButton__ either at design time or at run time:
 
-* To programmatically add a __RadRepeatButton__ to a form, create a new instance of a __RadRepeatButton__, and add it to the form __Controls__ collection.
+## Design Time
+
+1. To add a __RadRepeatButton__ to your form, drag a __RadRepeatButton__ from the toolbox onto the surface of the form designer.
+2. In the *Properties* section in Visual Studio you can change the __Text__ property.
+3. Double click the __RadRepeatButton__ at design time in order to generate the __Click__ event handler.
+4. Click `F5` to start the application.
+
+## Run Time
+
+To programmatically add a __RadRepeatButton__ to a form, create a new instance of a __RadRepeatButton__, and add it to the form __Controls__ collection.
 
 #### Adding a RadButton at runtime 
 

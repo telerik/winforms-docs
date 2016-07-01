@@ -13,7 +13,7 @@ previous_url: buttons-repeatbutton-themes
 
 This help article will demonstrate a step by step tutorial how to customize the ControlDefault theme for __RadRepeatButton__ 
 
-1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}).
+1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}): Start menu (Start >> Programs >> Telerik >> UI for WinForms [version] >> Tools).
 
 1. Export the built-in themes in a specific folder by selecting *File >> Export Built-in Themes*.
 
@@ -34,4 +34,5 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 ## See Also
 
+* [Getting Started with VisualStyleBuilder]({%slug winforms/tools/visual-style-builder/getting-started%})
 * [Repository Items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%})ws

@@ -10,9 +10,17 @@ position: 3
 
 # Getting Started
 
-* To add a __RadDropDownButton__ to your form, drag a __RadDropDownButton__ from the toolbox onto the surface of the form designer. Like a standard button, you can control the displayed text by setting the __Text__ property. Unlike a standard button, __RadDropDownButton__ displays drop-down items when clicked. So handling the __Click__ event of this button is not appropriate. Instead, work directly with the events for each item.
+You can add __RadDropDownButton__ either at design time or at run time:
 
-* To programmatically add a __RadDropDownButton__ to a form, create a new instance of a __RadDropDownButton__, and add it to the form __Controls__ collection.
+## Design Time
+
+1. To add a __RadDropDownButton__ to your form, drag a __RadDropDownButton__ from the toolbox onto the surface of the form designer.
+2. Like a standard button, you can control the displayed text by setting the __Text__ property.
+3. Unlike a standard button, __RadDropDownButton__ displays drop-down items when clicked. So handling the __Click__ event of this button is not appropriate. Instead, work directly with the events for each item.
+
+## Run Time
+
+To programmatically add a __RadDropDownButton__ to a form, create a new instance of a __RadDropDownButton__, and add it to the form __Controls__ collection.
 
 #### Adding a RadButton at runtime 
 

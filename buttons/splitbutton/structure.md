@@ -10,6 +10,8 @@ position: 1
 
 # Structure
 
+This article will show the internal elements structure of __RadSplitButton__:
+
 >caption Fig.1 RadDropDownButton's elements hierarchy
 >
 ![buttons-splitbutton-structure 001](images/buttons-splitbutton-structure001.png)

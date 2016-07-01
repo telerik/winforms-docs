@@ -10,9 +10,17 @@ position: 3
 
 # Getting Started
 
-* To add a __RadToggleButton__ to your form, drag a __RadToggleButton__ from the toolbox onto the surface of the form designer.
+You can add ____ either at design time or at run time:
 
-* To programmatically add a __RadToggleButton__ to a form, create a new instance of a __RadToggleButton__, and add it to the form __Controls__ collection.
+## Design Time
+
+1. To add a __RadToggleButton__ to your form, drag a __RadToggleButton__ from the toolbox onto the surface of the form designer.
+2. In the *Properties* section in Visual Studio you can change the __Text__ property.
+3. Double click the __RadToggleButton__ at design time in order to generate the __ToggleStateChanged__ event handler.
+
+## Run Time
+
+To programmatically add a __RadToggleButton__ to a form, create a new instance of a __RadToggleButton__, and add it to the form __Controls__ collection.
 
 #### Adding a RadToggleButton at runtime 
 

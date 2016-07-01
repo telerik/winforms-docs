@@ -10,6 +10,8 @@ position: 2
 
 # Design Time
 
+To start using __RadRepeatButton__ just drag it from the toolbox and drop it at the form.
+
 ## Smart Tag
 
 >caption Fig.1 Smart Tag
@@ -31,5 +33,5 @@ position: 2
 # See Also
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
-
+* [Using default themes]({%slug winforms/themes/using-default-themes%})
  

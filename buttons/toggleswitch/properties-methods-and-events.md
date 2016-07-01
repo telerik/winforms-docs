@@ -37,8 +37,6 @@ Me.RadToggleSwitch1.OnText = "True"
 {{endregion}} 
 
 
-
-
 * __OffText__: gets or sets the text displayed when the state is Off. The default string is *"OFF"*.
             
 >caption Fig.2 RadToggleSwitch.OffText
@@ -202,3 +200,7 @@ Me.RadToggleSwitch1.Height = 50
 
 * __ValueChanged__: occurs when the __Value__ has changed.
             
+# See Also 
+* [Properties](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadToggleSwitch.htm)
+* [Methods](http://docs.telerik.com/devtools/winforms/api/html/Methods_T_Telerik_WinControls_UI_RadToggleSwitch.htm)
+* [Events](http://docs.telerik.com/devtools/winforms/api/html/Events_T_Telerik_WinControls_UI_RadToggleSwitch.htm)

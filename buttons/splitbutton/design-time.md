@@ -11,7 +11,11 @@ previous_url: /buttons-splitbutton-working-with-radsplitbutton-items
 
 # Design Time
 
+To start using __RadSplitButton__ just drag it from the toolbox and drop it at the form.
+
 ## Smart Tag
+
+Select __RadSplitButton__ and click the small arrow on the top right position in order to open the Smart Tag.
 
 >caption Fig.1 Smart Tag
 
@@ -51,5 +55,5 @@ In the property grid you will find many of the standard control properties, incl
 
 
 # See Also
-
+* [Using default themes]({%slug winforms/themes/using-default-themes%})
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})

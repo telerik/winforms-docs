@@ -10,6 +10,8 @@ position: 1
 
 # Structure
 
+This article will show the internal elements structure of __RadDropDownButton__:
+
 >caption Fig.1 RadDropDownButton's elements hierarchy
 
 ![buttons-dropdownbutton-structure 001](images/buttons-dropdownbutton-structure001.png)

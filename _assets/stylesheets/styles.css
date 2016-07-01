@@ -964,3 +964,163 @@ header, nav, section, article, aside, footer {
 		width: 0px;
 	}
 }
+/* feedback form styles */
+		#feedback-section {
+			padding-top: 50px;
+			background-color: white;
+		}
+		
+		#feedback-menu-container {
+			width: 100%;
+			max-width: 930px;
+		}
+		
+		#helpful-buttons-container {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 1.5em;
+			font-weight: bold;
+			color: #000;
+			text-decoration: none;
+			position: relative;
+		}
+		
+		#helpful-buttons-container button {
+			line-height: 0.933em;
+			position: absolute;
+			font-size: 15px;
+			font-weight: bold;
+			text-align: center;
+			border-radius: 2px;
+			padding: 0.667em 2.000em;
+			background-color: #fff;
+			color: #555;
+			border-width: 0;
+			cursor: pointer;
+			background-clip: padding-box;
+			border: 1px solid #ccc;
+			transition-property: background-color, color;
+			transition-duration: 0.2s;
+			transition-timing-function: ease;
+		}
+		
+		#helpful-buttons-container button:hover{
+			background-color: #2a2d33;
+			color: #fff;
+		}
+		
+		#helpful-buttons-container button:nth-child(1) {
+			top: 0;
+			right: 99px;
+		}
+		
+		#helpful-buttons-container button:nth-child(2) {
+			top: 0;
+			right: 0;
+		}
+		
+		#feedback-submitted-container,
+		#additional-feedback-button {
+			visibility: hidden;
+		}
+		
+		.k-widget.k-window.k-window-titleless {
+			padding: 29px;
+			height: 590px !important;
+			width: 460px !important;
+			top: 188px !important;
+			margin: auto;
+			border: none;
+			position: absolute;
+			background-color: #fff;
+		}
+		
+		#feedback-form-window input::-webkit-input-placeholder,
+		#feedback-form-window textarea::-webkit-input-placeholder,
+		#feedback-form-window input:-moz-placeholder,
+		#feedback-form-window textarea:-moz-placeholder,
+		#feedback-form-window input::-moz-placeholder,
+		#feedback-form-window textarea::-moz-placeholder,
+		#feedback-form-window input:-ms-input-placeholder,
+		#feedback-form-window textarea:-ms-input-placeholder {
+			color: #d9d9d9;
+		}
+		
+		#feedback-form-window p:nth-child(1) {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 1.5em;
+			font-weight: bold;
+			color: #000;
+			text-decoration: none;
+		}
+		
+		#feedback-form-window p:nth-child(2) {
+			margin-top: 10px;
+			margin-bottom: 20px;
+			font-size: 1.12em;
+			font-weight: bold;
+			color: #000;
+			text-decoration: none;
+		}
+		
+		#feedback-form label {
+			display: block;
+			margin: 5px 0;
+		}
+		
+		#feedback-text-input {
+			margin-top: 21px;
+			padding: 10px 0 0 10px;
+			width: 430px;
+			height: 156px;
+			border: 1px solid #d9d9d9;
+			font-style: italic;
+		}
+		
+		#feedback-text-input ~ input[type="email"] {
+			width: 430px;
+			margin-top: 11px;
+			margin-bottom: 30px;
+			border: 1px solid #d9d9d9;
+			padding: 5px;
+			font-style: italic;
+		}
+		
+		#feedback-form-window button {
+			line-height: 0.933em;
+			font-size: 15px;
+			font-weight: bold;
+			text-align: center;
+			border-radius: 2px;
+			padding: 0.667em 2.000em;
+			background-color: #015991;
+			color: #fff;
+			border-width: 0;
+			cursor: pointer;
+			background-clip: padding-box;
+			border: 1px solid #015991;
+			transition-property: background-color, color;
+			transition-duration: 0.2s;
+			transition-timing-function: ease;
+		}
+		
+		#feedback-form-window button:hover {
+			background-color: #013a5e;
+		}
+		
+		button#form-close-button {
+			background-color: #fff;
+			color: #555;
+			border: 1px solid #ccc;
+		}
+		
+		button#form-close-button:hover {
+			background-color: #ccc;
+		}
+		#feedback-form span.k-tooltip {
+			border: 0;
+			color: #ff0000;
+			font-style: italic;
+			font-size: 12px;
+		}	

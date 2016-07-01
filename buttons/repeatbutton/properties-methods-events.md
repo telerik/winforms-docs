@@ -38,3 +38,7 @@ position: 4
 |__Click__|Occurs when the control is clicked|
  
 
+# See Also 
+* [Properties](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadRepeatButton.htm)
+* [Methods](http://docs.telerik.com/devtools/winforms/api/html/Methods_T_Telerik_WinControls_UI_RadRepeatButton.htm)
+* [Events](http://docs.telerik.com/devtools/winforms/api/html/Events_T_Telerik_WinControls_UI_RadRepeatButton.htm)

@@ -11,9 +11,17 @@ previous_url: buttons-splitbutton-working-with-radsplitbutton-items
 
 # Getting Started
 
-* To add a __RadSplitButton__ to your form, drag a __RadSplitButton__ from the toolbox onto the surface of the form designer. Like a standard button, you can control the displayed text by setting the __Text__ property. Unlike a standard button, __RadSplitButton__ displays drop-down items when clicked. So handling the __Click__ event of this button is not appropriate. Instead, work directly with the events for each item.
+You can add ____ either at design time or at run time:
 
-* To programmatically add a __RadSplitButton__ to a form, create a new instance of a __RadSplitButton__, and add it to the form __Controls__ collection.
+## Design Time
+
+1. To add a __RadSplitButton__ to your form, drag a __RadSplitButton__ from the toolbox onto the surface of the form designer. 
+2. Like a standard button, you can control the displayed text by setting the __Text__ property. 
+3. Unlike a standard button, __RadSplitButton__ displays drop-down items when clicked. So handling the __Click__ event of this button is not appropriate. Instead, work directly with the events for each item.
+
+## Run Time
+
+To programmatically add a __RadSplitButton__ to a form, create a new instance of a __RadSplitButton__, and add it to the form __Controls__ collection.
 
 #### Adding a RadSplitButton at runtime 
 

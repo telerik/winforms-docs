@@ -13,7 +13,7 @@ previous_url: buttons-radiobutton-themes
 
 This help article will demonstrate a step by step tutorial how to customize the ControlDefault theme for __RadRadioButton__ and change the back color of the radio mark:
 
-1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}).
+1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}): Start menu (Start >> Programs >> Telerik >> UI for WinForms [version] >> Tools).
 
 1. Export the built-in themes in a specific folder by selecting *File >> Export Built-in Themes*.
 
@@ -33,4 +33,5 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 ## See Also
 
-* [Repository Items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%})
+* [Getting Started with VisualStyleBuilder]({%slug winforms/tools/visual-style-builder/getting-started%})
+* [Working With Repository Items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%})

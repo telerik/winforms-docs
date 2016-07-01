@@ -1,6 +1,6 @@
 ---
-title: Accessing and customizing elements
-page_title: Accessing and customizing elements | UI for WinForms Documentation
+title: Accessing and Customizing Elements
+page_title: Accessing and Customizing Elements | UI for WinForms Documentation
 description: RadRadioButton replaces the WinForms RadioButton control and adds robust data binding, state management, and design options. 
 slug: winforms/buttons/radiobutton/accessing-and-customizing-elements
 tags: radiobutton

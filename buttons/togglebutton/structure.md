@@ -10,6 +10,8 @@ position: 1
 
 # Structure
 
+This article will show the internal elements structure of __RadToggleButton__:
+
 >caption Fig.1 RadToggleButton's elements hierarchy
 >
 ![buttons-togglebutton-structure 001](images/buttons-togglebutton-structure001.png)

@@ -14,10 +14,14 @@ previous_url: buttons-toggleswitch-getting-started
 You can add a __RadToggleSwitch__ to your form either at design time or at run time:
         
 
-* Adding __RadToggleSwitch__ at design time: drag a __RadToggleSwitch__ from the toolbox and drop it onto the surface of the form’s designer.
-            
+## Design Time
 
-* Adding __RadToggleSwitch__ programmatically: create a new instance of __RadToggleSwitch__ and add it to the Form.__Controls__ collection:
+1. Drag a __RadToggleSwitch__ from the toolbox and drop it onto the surface of the form’s designer.
+2. Double click the __RadToggleSwitch__ at design time in order to generate the __ValueChanged__ event handler.
+            
+## Run Time
+
+Adding __RadToggleSwitch__ programmatically: create a new instance of __RadToggleSwitch__ and add it to the Form.__Controls__ collection:
             
 
 #### Adding RadToggleSwitch programmatically 

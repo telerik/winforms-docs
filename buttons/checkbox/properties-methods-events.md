@@ -32,3 +32,8 @@ position: 4
 |CheckStateChanging|Occurs before the elements's state changes.|
 |CheckStateChanged|Occurs when the elemnts's state changes.|
         
+# See Also 
+
+* [Properties](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadCheckBox.htm)
+* [Methods](http://docs.telerik.com/devtools/winforms/api/html/Methods_T_Telerik_WinControls_UI_RadCheckBoxEditor.htm)
+* [Events](http://docs.telerik.com/devtools/winforms/api/html/Events_T_Telerik_WinControls_UI_RadCheckBox.htm)

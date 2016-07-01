@@ -11,9 +11,17 @@ previous_url: buttons-radiobutton-getting-started
 
 # Getting Started
 
-* To add a __RadRadioButton__ to your form, drag a __RadRadioButton__ from the toolbox onto the surface of the form designer. Like a standard button, you can control the displayed text by setting the __Text__ property.
+You can add __RadRadioButton__ either at design time or at run time:
 
-* To programmatically add a __RadRadioButton__ to a form, create a new instance of a __RadRadioButton__, and add it to the form __Controls__ collection.
+## Design Time
+
+1. To add a __RadRadioButton__ to your form, drag a __RadRadioButton__ from the toolbox onto the surface of the form designer.
+2. Like a standard button, you can control the displayed text by setting the __Text__ property.
+3. Double click the __RadRadioButton__ at design time to generate the __ToggleStateChanged__ event.
+
+## Run Time
+
+To programmatically add a __RadRadioButton__ to a form, create a new instance of a __RadRadioButton__, and add it to the form __Controls__ collection.
 
 #### Adding RadRadioButton at run time
 

@@ -10,7 +10,11 @@ position: 2
 
 # Design Time
 
+To start using __RadToggleButton__ just drag it from the toolbox and drop it at the form.
+
 ## Smart Tag
+
+Select __RadToggleButton__ and click the small arrow on the top right position in order to open the Smart Tag.
 
 >caption Fig.1 Smart Tag
 
@@ -29,5 +33,5 @@ position: 2
 * __Search__: Search the Telerik site for a given string.
 
 # See Also
-
+* [Using default themes]({%slug winforms/themes/using-default-themes%})
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})

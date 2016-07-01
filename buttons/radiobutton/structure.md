@@ -10,6 +10,8 @@ position: 0
 
 # Structure
 
+This article will show the internal elements structure of __RadRadioButton__:
+
 >caption Fig.1 RadRadioButton's elements hierarchy
 
 ![buttons-radiobutton-structure 001](images/buttons-radiobutton-structure001.png)
