@@ -94,6 +94,6 @@ Notes:
 # See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
-* [Design Time]({%slug winforms/chartview-/design-time%})
-* [Property Builder]({%slug winforms/chartview-/property-builder%})
+* [Design Time]({%slug winforms/chartview/design-time/smart-tag%})
+* [Property Builder]({%slug winforms/chartview/design-time/property-builder%})
 * [Getting Started]({%slug winforms/chartview/getting-started%})

@@ -1,11 +1,11 @@
 ---
-title: Design time
+title: Smart Tag
 page_title: Design time | UI for WinForms Documentation
 description: At design time you can use the RadChartView's Smart Tag to change the applied theme or navigate to the online documentation. The control supports design-time data binding and features a property builder.
-slug: winforms/chartview-/design-time
+slug: winforms/chartview/design-time/smart-tag
 tags: design,time
 published: True
-position: 3
+position: 0
 previous_url: chartview-designtime
 ---
 
@@ -13,7 +13,7 @@ previous_url: chartview-designtime
 
 In this article we will describe the design time abilities of __RadChartView__. 
 
->note A step by step tutorial for design-time data binding is available in the [Getting Started]({%slug winforms/chartview/getting-started%}) article. Advanced design-time editing and customization can be achieved by utilizing the [Property Builder]({%slug winforms/chartview-/property-builder%}) of __RadChartView__.
+>note A step by step tutorial for design-time data binding is available in the [Getting Started]({%slug winforms/chartview/getting-started%}) article. Advanced design-time editing and customization can be achieved by utilizing the [Property Builder]({%slug winforms/chartview/design-time/property-builder%}) of __RadChartView__.
 >
 
 Here is how the control's Smart Tag looks like:
@@ -55,6 +55,6 @@ All of these properties are also available in the Properties window of Visual St
 
 # See Also
 
-* [Property Builder]({%slug winforms/chartview-/property-builder%})
+* [Property Builder]({%slug winforms/chartview/design-time/property-builder%})
 * [Getting Started]({%slug winforms/chartview/getting-started%})
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})

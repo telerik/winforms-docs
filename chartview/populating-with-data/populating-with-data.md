@@ -47,7 +47,7 @@ __RadChartView__ can also be setup in unbound mode. This can be performed in the
 # See Also
 
 * [Getting Started]({%slug winforms/chartview/getting-started%})
-* [Property Builder]({%slug winforms/chartview-/property-builder%})
+* [Property Builder]({%slug winforms/chartview/design-time/property-builder%})
 * [Binding to DataTable]({%slug winforms/chartview-/populating-with-data/binding-to-datatable%})
 * [Binding to BindingList]({%slug winforms/chartview-/populating-with-data/binding-to-bindinglist%})
 * [Series Overview]({%slug winforms/chartview-/series-types%})

@@ -2,7 +2,7 @@
 title: Overview 
 page_title: ChartView  | UI for WinForms Documentation
 description: RadChartView is a versatile charting component that offers drawing capabilities, user interaction and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in design-time or through code.
-slug: winforms/chartview
+slug: winforms/chartview/overview
 tags: chartview,
 published: True
 position: 0
@@ -95,7 +95,7 @@ Each of the above series of same type may be combined in either stacks or cluste
 ### Chart Grid
 The chart may be optionally decorated with grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes – the area between two adjacent ticks. Such visuals are available for both Cartesian and Polar coordinates via Cartesian Grid and Polar Grid respectively.
 
-* You may refer to the [Cartesian Grid]({%slug winforms/chartview-/chart-grid%}) article for more information on how to toggle grid lines and Stripes inside Cartesian and Polar Grid.
+* You may refer to the [Cartesian Grid]({%slug winforms/chartview/features/chart-grid%}) article for more information on how to toggle grid lines and Stripes inside Cartesian and Polar Grid.
 
 ## Pie Area
 This concrete chart control visualizes its data points using radial coordinate system. Each point is represented as an arc segment where the arc’s length is actually the percentage this point’s value is from the total sum.
@@ -120,8 +120,8 @@ Both chart types (pie and cartesian) have a controllers collection that accepts 
 
 # See Also
 
-* [Design Time]({%slug winforms/chartview-/design-time%})
-* [Property Builder]({%slug winforms/chartview-/property-builder%})
+* [Design Time]({%slug winforms/chartview/design-time/smart-tag%})
+* [Property Builder]({%slug winforms/chartview/design-time/property-builder%})
 * [Getting Started]({%slug winforms/chartview/getting-started%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

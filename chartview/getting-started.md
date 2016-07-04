@@ -58,5 +58,5 @@ The example below demonstrates setting up __RadChartView__ to display data from 
             
 # See Also
 
-* [Design Time]({%slug winforms/chartview-/design-time%})
-* [Property Builder]({%slug winforms/chartview-/property-builder%})
+* [Design Time]({%slug winforms/chartview/design-time/smart-tag%})
+* [Property Builder]({%slug winforms/chartview/design-time/property-builder%})

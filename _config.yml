@@ -158,9 +158,12 @@ navigation:
     chartview:
         title: ChartView
         position: 12
+    chartview/design-time:
+        title: Design Time
+        position: 3
     chartview/series-types:
         title: Series Types
-        position: 7
+        position: 6
     chartview/series-types/series-types:
         title: Overview
         position: 0		
@@ -172,28 +175,28 @@ navigation:
         position: 0
     chartview/axes:
         title: Axes
-        position: 8
+        position: 7
     chartview/axes/axes:
         title: Overview
         position: 0
     chartview/features:
         title: Features
-        position: 9			
+        position: 8			
     chartview/features/annotations:
         title: Annotations
-        position: 10	
+        position: 11	
     chartview/features/annotations/annotations:
         title: Overview
         position: 0
     chartview/populating-with-data:
         title: Populating with Data
-        position: 10		
+        position: 9		
     chartview/customization:
         title: Customization
-        position: 11	
+        position: 10	
     chartview/printing-support:
         title: Printing Support
-        position: 12
+        position: 11
     checkedlistbox:
         title: CheckedListBox
         position: 13

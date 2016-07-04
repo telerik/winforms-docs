@@ -2,7 +2,7 @@
 title: Property Builder
 page_title: Property Builder | UI for WinForms Documentation
 description: RadChartView`s Property Builder provides advanced editing and customization options in the Visual Studio designer 
-slug: winforms/chartview-/property-builder
+slug: winforms/chartview/design-time/property-builder
 tags: property,builder
 published: True
 position: 4
@@ -36,6 +36,6 @@ The third section allows you to setup different options like grid, axes labels, 
 
 # See Also
 
-* [Design Time]({%slug winforms/chartview-/design-time%})
+* [Design Time]({%slug winforms/chartview/design-time/smart-tag%})
 * [Getting Started]({%slug winforms/chartview/getting-started%})
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})

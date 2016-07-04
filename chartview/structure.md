@@ -31,7 +31,7 @@ The element hierarchy and structure will vary depending on the types of the seri
 
 ## See Also
 
-* [Design Time]({%slug winforms/chartview-/design-time%})
-* [Property Builder]({%slug winforms/chartview-/property-builder%})
+* [Design Time]({%slug winforms/chartview/design-time/smart-tag%})
+* [Property Builder]({%slug winforms/chartview/design-time/property-builder%})
 * [Getting Started]({%slug winforms/chartview/getting-started%})
-* [Series Types]({%slug winforms/chartview-/property-builder%})
+* [Series Types]({%slug winforms/chartview-/series-types%})
