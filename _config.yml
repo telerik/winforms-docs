@@ -272,6 +272,9 @@ navigation:
     desktopalert:
         title: DesktopAlert
         position: 20
+    desktopalert/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     dropdown-listcontrol-and-checkeddropdownlist:
         title: DropDown and ListControl
         position: 21

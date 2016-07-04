@@ -15,6 +15,8 @@ previous_url: desktopalert-getting-started
 | ------ | ------ |
 |[Getting Started with RadDesktopAlert](http://tv.telerik.com/watch/winforms/getting-started-with-raddesktopalert)<br>In this video, you will learn how to get started with RadDesktopAlert.| ![desktopalert-overview 001](images/desktopalert-overview001.png)|
 
+Follow the described steps below:
+
 1\. Create a new Windows Forms application in Visual Studio and open the designer of the default form.
 
 2\. Open the Visual Studio’s Toolbox, find the __RadDesktopAlert__ component and add it to your form by using a drag-and-drop operation. The __RadDesktopAlert__ will appear in the component tray of the Form designer and will be available for customization via the Visual Studio’s property grid.

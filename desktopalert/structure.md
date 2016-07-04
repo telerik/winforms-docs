@@ -10,6 +10,8 @@ position: 1
 
 # Structure
 
+This article will show the internal elements structure of __RadDesktopAlert__:
+
 >caption Fig.1 RadDesktopAlert's structure
 
 ![desktopalert-structure 001](images/desktopalert-structure001.png)
@@ -22,3 +24,7 @@ This article describes the inner structure and organization of the elements whic
 		 1\.1\.2\. __AlertWindowTextAndSystemButtonsElement__: represents the part of a __RadDesktopAlert__ that contains the text and the system buttons.<br>
 	1\.2\. __AlertWindowContentElement__: represents the content of a __RadDesktopAlert__ component.The content usually is built of an image and HTML enabled text. <br>
 	1\.3\. __AlertWindowButtonsPanel__: represents the element which holds the buttons that can be added in a __RadDesktopAlert__ window.<br>
+
+# See Also
+
+* [RadControlSpy]({%slug winforms/tools/controlspy%})
