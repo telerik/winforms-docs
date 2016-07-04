@@ -8,8 +8,10 @@ published: True
 position: 1
 ---
 
-The Smart Tag of __RadDock__ lets you quickly access common tasks like adding windows to several positions. 
+The __Smart Tag__ of __RadDock__ lets you quickly access common tasks like adding windows to several positions. 
 
+>caption Figure 1: SmartTag 
+ 
 ![raddock-smart-tag001](images/raddock-smart-tag001.png) 
 
 * __Common Tasks:__

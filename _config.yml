@@ -268,7 +268,7 @@ navigation:
         position: 7		
     dock/localization:
         title: Localization
-        position: 8
+        position: 9
     dock/customizing-appearance:
         title: Customizing Appearance
         position: 8

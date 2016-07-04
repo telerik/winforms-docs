@@ -46,11 +46,15 @@ __RadDock__ provides the end user a great deal of control over the placement of 
 
 Both __ToolWindow__ and __DocumentWindow__ host other controls and provide two different approaches to managing layout.
 
+>caption Figure 1: RadDock elements.
+
 ![dock-architecture-and-features-understanding-raddock 003](images/dock-architecture-and-features-understanding-raddock003.png)
 
 ## Document Outline tool
 
 You can inspect the hierarchy of the elements at design-time by using the Visual Studio `Document Outline` tool. In order to use it, simply go to View >> Other Windows >> Document Outline or press Ctrl+Alt+T. The screenshot below represents a RadDock instance at design-time and its corresponding hierarchy of elements in the `Document Outline` tool:
+
+>caption Figure 2: The document outline window in Visual Studio.
 
 ![dock-architecture-and-features-understanding-raddock 004](images/dock-architecture-and-features-understanding-raddock004.png)
 
@@ -58,8 +62,10 @@ You can inspect the hierarchy of the elements at design-time by using the Visual
 
 Differences in the behavior of __DocumentWindow__ vs. __ToolWindow__ are reflected in their context menus. __DocumentWindow__ has commands for closing windows, creating new horizontal and vertical tab groups and for moving windows between groups.
 
+>caption Figure: 3 DocumentWindow context menu
 ![dock-architecture-and-features-understanding-raddock 006](images/dock-architecture-and-features-understanding-raddock006.png)
 
 The __ToolWindow__ context menu has commands that allow the panel to be __Floating__ away from the form, __Dockable__ (causes the panel to dock) or __Tabbed Document__.  If __Tabbed Document__ is selected the __ToolWindow__ becomes hosted in a __DocumentTabStrip__ container along with the tabbed documents. __Auto Hide__ causes the panel to be unpinned and collapsed against the nearest edge of the __RadDock__ (see the diagram in "Anatomy of RadDock" above). __Hide__ makes the panel invisible. By default, hidden __ToolWindows__ are still part of the [RadDock]({%slug winforms/dock/object-model/raddock-properties-and-methods%}) ToolWindows collection.
 
+>caption Figure 4: ToowWindow context menu
 ![dock-architecture-and-features-understanding-raddock 005](images/dock-architecture-and-features-understanding-raddock005.png)
