@@ -148,3 +148,11 @@ End Sub
 ## Enable/Disable the Command Manager
  
 You may easily disable the command manager, using its __Enabled__ property. Alternatively, you may either clear all commands or clear any shortcut associated with these commands.
+
+# See Also
+
+[Getting Started]({%slug winforms/dock/getting-started%})
+[Understanding RadDock]({%slug winforms/dock/architecture-and-features/understanding-raddock%})     
+[Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})
+[Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%}) 
+[Document Manager]({%slug winforms/dock/architecture-and-features/document-manager%})   

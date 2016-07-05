@@ -135,4 +135,8 @@ End Sub
 {{endregion}} 
 
 
+# See Also
 
+* [Docking a UserControl with custom event]({%slug winforms/dock/docking-usercontrols-and-forms/docking-a-usercontrol-with-custom-event%})     
+* [Getting Started]({%slug winforms/dock/docking-usercontrols-and-forms/getting-started%})
+* [Get a HostWindow by its Content]({%slug winforms/dock/docking-usercontrols-and-forms/get-a-hostwindow-by-its-content%}) 

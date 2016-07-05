@@ -12,6 +12,7 @@ position: 2
 
 This designer allows you to build your layout ad design-time. You can arrange the windows the same way as at-runtime.
 
+>caption Figure 1: Advanced Layout Designer.
 ![raddock-advanced-layout-designer001](images/raddock-advanced-layout-designer001.png)  
 
 
@@ -25,3 +26,9 @@ The table below shows what you can do with the buttons in the title bar:
 |![raddock-advanced-layout-designer005](images/raddock-advanced-layout-designer005.png) | With this group you can save the layout to a file. You can load a predefined layouts as well.|
 |![raddock-advanced-layout-designer006](images/raddock-advanced-layout-designer006.png)| You can remove ToolWindows by clicking the red button in the windows list.|
 |![raddock-advanced-layout-designer007](images/raddock-advanced-layout-designer007.png) | The main area shows the current layout. Here you can arrange the windows by simply dragging them to the desired position. | 
+
+# See Also
+
+[Getting Started]({%slug winforms/dock/getting-started%})
+[Structure]({%slug winforms/dock/architecture-and-features/understanding-raddock%})     
+[Smart Tag]({%slug winforms/raddock/smart-tag%})

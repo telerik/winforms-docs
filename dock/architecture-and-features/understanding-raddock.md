@@ -69,3 +69,12 @@ The __ToolWindow__ context menu has commands that allow the panel to be __Floati
 
 >caption Figure 4: ToowWindow context menu
 ![dock-architecture-and-features-understanding-raddock 005](images/dock-architecture-and-features-understanding-raddock005.png)
+
+# See Also
+
+* [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
+* [Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})
+* [Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%}) 
+* [Document Manager]({%slug winforms/dock/architecture-and-features/document-manager%})   
+
+

@@ -29,3 +29,7 @@ Me.radDock1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 
 ![dock-localization-rtl 001](images/dock-localization-rtl001.png)
+
+# See Also
+
+* [winforms/dock/localization/localization]({%slug winforms/dock/localization/localization%})

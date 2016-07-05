@@ -20,7 +20,7 @@ As stated in [this documentation article]({%slug winforms/dock/loading-and-savin
 
 1\. Usually, each DockWindow contains a set of controls. To make the task of saving and loading the content easier, let's put this content in UserControls.
 
->caption Three UserControls containing different controls.
+>caption Figure 1: Three UserControls containing different controls.
 
 ![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 001](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content001.png)
 
@@ -199,3 +199,7 @@ As a result we get the layout shown on the screenshot below:
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Saving and Loading RadDock for WinForms Layouts](http://www.telerik.com/videos/winforms/saving-and-loading-raddock-for-winforms-layouts) In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts. (Runtime: 07:03)|![dock-loading-and-saving-layouts 001](images/dock-loading-and-saving-layouts001.png)|
+
+# See Also
+
+* [Loading And Saving Layouts]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%})

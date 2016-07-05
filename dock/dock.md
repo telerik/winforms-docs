@@ -82,3 +82,9 @@ This sample RSS Reader implements __RadDock__ and several other Telerik UI for W
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |The new and improved __RadDock__ for WinForms has landed and this is your opportunity to get a first look. Join Developer Evangelist John Kellar as he shows you how quickly you can get up and running with the new version of RadDock. John will cover the new features so you know what to expect and how you can use RadDock in your applications once it is officially released. (Runtime: 32:54)<br>[ Introducing the new RadDock for WinForms ](http://www.telerik.com/videos/winforms/introducing-the-new-raddock-for-winforms)![dock-overview 009](images/dock-overview009.png)|In this video, you will learn how to get started with the run-time and design-time features in the new RadDock for WinForms. You will see the rich RadDock run-time features in action and you will see how easy it is to get started with RadDock in Visual Studio. You will also be introduced to the new Advanced Layout Designer for RadDock, a design-time tool that makes it easy to customize your RadDock layouts. (Runtime: 09:42)<br>[ Getting Started with RadDock for WinForms ](http://www.telerik.com/videos/winforms/getting-started-with-raddock-for-winforms)![dock-overview 010](images/dock-overview010.png)|
+
+# See Also
+
+* [Getting Started]({%slug winforms/dock/getting-started%})
+* [Structure]({%slug winforms/dock/architecture-and-features/understanding-raddock%})     
+* [Advanced Layout Designer]({%slug winforms/raddock/advanced-layout-designer%})     

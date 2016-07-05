@@ -130,3 +130,8 @@ End Sub
 {{endregion}} 
  
 11\. Press __F5__ to run the application. Click the cells in the calendar to display the date in a message dialog. 
+
+# See Also
+* [Getting Started]({%slug winforms/dock/docking-usercontrols-and-forms/getting-started%})
+* [Docking Singleton Forms]({%slug winforms/dock/docking-usercontrols-and-forms/docking-singleton-forms%})
+* [Get a HostWindow by its Content]({%slug winforms/dock/docking-usercontrols-and-forms/get-a-hostwindow-by-its-content%}) 

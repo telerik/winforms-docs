@@ -64,7 +64,11 @@ Dim vegetablesWindow As HostWindow = Me.RadDock1.GetHostWindow(VegetablesForm)
 
 {{endregion}} 
 
+# See Also
 
+* [Docking a UserControl with custom event]({%slug winforms/dock/docking-usercontrols-and-forms/docking-a-usercontrol-with-custom-event%})     
+* [Docking Singleton Forms]({%slug winforms/dock/docking-usercontrols-and-forms/docking-singleton-forms%})
+* [Getting Started]({%slug winforms/dock/docking-usercontrols-and-forms/getting-started%})
 
 
 

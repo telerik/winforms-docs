@@ -104,4 +104,9 @@ This section describes the FloatinWindows specific properties.
 
 # See Also
 
- * [Customizing Floating Windows]({%slug winforms/dock/object-model/customizing-floating-windows%})
+* [Customizing Floating Windows]({%slug winforms/dock/object-model/customizing-floating-windows%})
+* [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
+*[Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})
+* [Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%}) 
+* [Document Manager]({%slug winforms/dock/architecture-and-features/document-manager%})   
+* [Understanding RadDock]({%slug winforms/dock/architecture-and-features/understanding-raddock%})

@@ -126,6 +126,7 @@ This chain of events allows you to encapsulate all your business logic in the re
 
 The __CloseAllWindows__ returns bool value which indicates if the operation is successful (it will return true if all child windows are closed). This is allowing you to keep the main form opened if some of the MDI children cannot be closed for the moment. You can use the method as follows:       
 
+#### Using the CloseAllWindows method. 
 {{source=..\SamplesCS\Dock\MDIHandling1.cs region=closing}} 
 {{source=..\SamplesVB\Dock\MDIHandling1.vb region=closing}} 
 

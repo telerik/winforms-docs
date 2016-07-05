@@ -21,3 +21,11 @@ __Esc:__ Cancels a drag operation, but does not revert to the initial state. I.
 ## Mouse Support
 
 __Double click:__ Double-clicking the title bar of a ToolWindow un-docks the panel so that it floats. Double-clicking the title bar of a floating window docks the ToolWindow.
+
+# See Also
+
+* [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
+* [Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})
+* [Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%}) 
+* [Document Manager]({%slug winforms/dock/architecture-and-features/document-manager%})   
+* [Understanding RadDock]({%slug winforms/dock/architecture-and-features/understanding-raddock%})

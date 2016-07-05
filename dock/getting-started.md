@@ -13,6 +13,7 @@ previous_url: dock-getting-started
 
 This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on the left represents a list of reports. The right side of the form in __RadDock__ contains three __DocumentWindows__, each representing a report. This tutorial demonstrates the layout of __ToolWindow__ and __DocumentWindows__. It also demonstrates adding a RadTreeView control to one of the created windows and synchronizing the active DockWindow with the selection in the RadTreeView instance. 
 
+>caption Figure 1: The final application layout.
 ![dock-getting-started 003](images/dock-getting-started003.png)
 
 ## Configure the RadDock
@@ -176,3 +177,9 @@ Press __F5__ to run the application. Try experimenting with...
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |The new and improved RadDock for WinForms has landed and this is your opportunity to get a first look. Join Developer Evangelist John Kellar as he shows you how quickly you can get up and running with the new version of RadDock. John will cover the new features so you know what to expect and how you can use RadDock in your applications once it is officially released. (Runtime: 32:54)<br>[ Introducing the new RadDock for WinForms ](http://www.telerik.com/videos/winforms/introducing-the-new-raddock-for-winforms)![dock-getting-started 004](images/dock-getting-started004.png)|In this video, you will learn how to get started with the run-time and design-time features in the new RadDock for WinForms. You will see the rich RadDock run-time features in action and you will see how easy it is to get started with RadDock in Visual Studio. You will also be introduced to the new Advanced Layout Designer for RadDock, a design-time tool that makes it easy to customize yoru RadDock layouts. (Runtime: 09:42)<br>[ Getting Started with RadDock for WinForms ](http://www.telerik.com/videos/winforms/getting-started-with-raddock-for-winforms)![dock-getting-started 005](images/dock-getting-started005.png)|
+
+# See Also
+
+* [Smart Tag]({%slug winforms/raddock/smart-tag%})
+* [Structure]({%slug winforms/dock/architecture-and-features/understanding-raddock%})     
+* [Advanced Layout Designer]({%slug winforms/raddock/advanced-layout-designer%})

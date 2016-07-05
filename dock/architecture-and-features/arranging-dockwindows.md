@@ -40,3 +40,12 @@ In addition to moving __ToolWindows__ in different ToolTabStrip containers, you 
 To resize a ToolTabStrip/DocumentTabStrip container, click the splitter bar between two adjacent docking containers and drag the splitter to the desired location. The __ToolWindows__ and docking containers will automatically resize themselves to fit the space available to them, subject to any minimum or maximum size limits set at design time. You can find the splitter bar between docking containers as shown in the below image.
 
 ![dock-architecture-and-features-arranging-dockwindows 002](images/dock-architecture-and-features-arranging-dockwindows002.gif)
+
+# See Also
+
+* [Getting Started]({%slug winforms/dock/getting-started%})
+* [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
+* [Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})
+* [Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%}) 
+* [Document Manager]({%slug winforms/dock/architecture-and-features/document-manager%})   
+* [Understanding RadDock]({%slug winforms/dock/architecture-and-features/understanding-raddock%})

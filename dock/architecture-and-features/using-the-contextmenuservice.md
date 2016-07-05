@@ -116,3 +116,11 @@ You can notice in the code snippet above that we are using the __Name__ property
 |Auto Hide|AutoHide|
 |Hide|Hidden|
 | *Document Name* |ActivateWindow|
+
+# See Also
+
+[Getting Started]({%slug winforms/dock/getting-started%})
+[Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
+[Understanding RadDock]({%slug winforms/dock/architecture-and-features/understanding-raddock%})
+[Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%}) 
+[Document Manager]({%slug winforms/dock/architecture-and-features/document-manager%})   
