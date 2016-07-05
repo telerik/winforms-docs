@@ -13,7 +13,6 @@ previous_url: richtexteditor-getting-started
 
 __RadRichTexteditor__ is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:
 
-
 * [Creating a RadRichTextEditor](#creating-a-radrichtexteditor)
 
 * [Formatting the text via sample UI](#formatting-via-a-sample-ui)

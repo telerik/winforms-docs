@@ -5,7 +5,7 @@ description: Null values support
 slug: winforms/chartview-/null-values-support-
 tags: null,values,support,
 published: True
-position: 12
+position: 13
 previous_url: chartview-null-values-support
 ---
 

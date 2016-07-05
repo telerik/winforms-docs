@@ -55,7 +55,7 @@ radChartView1.SelectionMode = ChartSelectionMode.MultipleDataPoints
 
 {{endregion}}  
 
-Here is a sample using __PieSerie__s and multiple selection. When a slice is selected, it is being offsetted from the center: 
+Here is a sample using __PieSeries__ and multiple selection. When a slice is selected, it is being offsetted from the center: 
 
 #### Sliced Pie
 

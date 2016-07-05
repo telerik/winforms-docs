@@ -118,6 +118,54 @@ radChartView1.ShowToolTip = True
 >caption Figure 1: ToolTip
 ![chartview-features-tooltips 001](images/chartview-features-tooltips001.png)
 
+The __ChartTooltipController__ also exposes a tooltip event. The event handler is a suitable place for changing the precalculated text.
+
+#### Subscribe to Event
+
+{{source=..\SamplesCS\ChartView\Features\ChartTooltip.cs region=DataPointTooltipTextNeeded}} 
+{{source=..\SamplesVB\ChartView\Features\ChartTooltip.vb region=DataPointTooltipTextNeeded}}
+````C#
+ChartTooltipController tooltipController = new ChartTooltipController();
+tooltipController.DataPointTooltipTextNeeded += tooltipController_DataPointTooltipTextNeeded;
+this.radChartView1.Controllers.Add(tooltipController);
+
+````
+````VB.NET
+Dim tooltipController As New ChartTooltipController()
+AddHandler tooltipController.DataPointTooltipTextNeeded, AddressOf tooltipController_DataPointTooltipTextNeeded
+Me.RadChartView1.Controllers.Add(tooltipController)
+
+```` 
+
+
+
+{{endregion}}
+
+#### Change ToolTip`s Text
+
+{{source=..\SamplesCS\ChartView\Features\ChartTooltip.cs region=ChangeText}} 
+{{source=..\SamplesVB\ChartView\Features\ChartTooltip.vb region=ChangeText}}
+````C#
+private void tooltipController_DataPointTooltipTextNeeded(object sender, DataPointTooltipTextNeededEventArgs e)
+{
+    e.Text = "My special tooltip!";
+}
+
+````
+````VB.NET
+Private Sub TooltipController_DataPointTooltipTextNeeded(sender As Object, e As DataPointTooltipTextNeededEventArgs)
+    e.Text = "My special tooltip!"
+End Sub
+
+```` 
+
+
+
+{{endregion}}
+
+>caption Figure 2: Modified ToolTip
+![chartview-features-tooltips 002](images/chartview-features-tooltips002.png)
+
 # See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
