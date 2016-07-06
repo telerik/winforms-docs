@@ -1,7 +1,7 @@
 ---
 title: Tutorial Saving and Loading Layout and Content
 page_title: Tutorial Saving and Loading Layout and Content | UI for WinForms Documentation
-description: Tutorial Saving and Loading Layout and Content
+description: Tutorial Saving and Loading Layout and Content of RadDock.
 slug: winforms/dock/loading-and-saving-layouts/tutorial:-saving-and-loading-layout-and-content
 tags: tutorial,saving,and,loading,layout,and,content
 published: True
@@ -12,12 +12,15 @@ previous_url: dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout
 # Tutorial: Saving and Loading Layout and Content
 
  
-As stated in [this documentation article]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%}) RadDock can save and then load the layout of its DockWindows. However, this mechanism does not save the content of these windows. The purpose of this article is to demonstrate what approach you should follow when you want to restore not only the layout of the DockWindows, but their content as well.
+As stated in [this documentation article]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%}) __RadDock__ can save and then load the layout of its DockWindows. However, this mechanism does not save the content of these windows. The purpose of this article is to demonstrate what approach you should follow when you want to restore not only the layout of the DockWindows, but their content as well.
       
 
 ## Example: Saving and Loading layout and content
 
-1\. Usually, each DockWindow contains a set of controls. To make the task of saving and loading the content easier, let's put this content in UserControls, for example:
+
+1\. Usually, each DockWindow contains a set of controls. To make the task of saving and loading the content easier, let's put this content in UserControls.
+
+>caption Figure 1: Three UserControls containing different controls.
 
 ![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 001](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content001.png)
 
@@ -25,7 +28,6 @@ As stated in [this documentation article]({%slug winforms/dock/loading-and-savin
 
 ![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 003](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content003.png)
 
-*Three UserControls containing different controls.*
 
 2\. Then, let's define the path to the xml file where we will save our layout: 
 
@@ -43,7 +45,7 @@ Private dockLayoutPath As String = Application.StartupPath & "\dock.xml"
 
 {{endregion}} 
  
-3\. At the Load event of our form we will check if the xml file with the saved layout exists. If the file exists at the specified location, we will load the layout as shown in the next paragraphs. If it does not exists, we will create a generic layout in RadDock loading our user controls: 
+3\. At the `Load` event of our form we will check if the xml file with the saved layout exists. If the file exists at the specified location, we will load the layout as shown in the next paragraphs. If it does not exists, we will create a generic layout in RadDock loading our user controls: 
 
 {{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=formLoad}} 
 {{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=formLoad}} 
@@ -104,7 +106,7 @@ Please note that the names of the types of the UserControls are important, becau
 
 ![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 005](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content005.png)
 
-5\. Now close the form containing RadDock. The FormClosing event handler is a convenient place to save our layout: 
+5\. Now close the form containing RadDock. The `FormClosing` event handler is a convenient place to save our layout: 
 
 {{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=formClosing}} 
 {{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=formClosing}} 
@@ -128,10 +130,10 @@ End Sub
 6\. Reopen the form. Since the xml file defined at paragraph two now exists, our layout and content will be loaded with the help of the following methods:
             
 
-* LoadFromXml - this method will create HostWindows and will arrange them according to the information saved in the xml file.
+* __LoadFromXml:__  This method will create HostWindows and will arrange them according to the information saved in the xml file.
                 
 
-* LoadContent - this is our custom method which loads the content in the created HostWindows. Note that the different user controls are loaded in the appropriate HostWindows depending on the names of these windows. 
+* __LoadContent:__ This is our custom method which loads the content in the created HostWindows. Note that the different user controls are loaded in the appropriate HostWindows depending on the names of these windows. 
 
 {{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=loadContent}} 
 {{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=loadContent}} 
@@ -197,3 +199,7 @@ As a result we get the layout shown on the screenshot below:
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Saving and Loading RadDock for WinForms Layouts](http://www.telerik.com/videos/winforms/saving-and-loading-raddock-for-winforms-layouts) In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts. (Runtime: 07:03)|![dock-loading-and-saving-layouts 001](images/dock-loading-and-saving-layouts001.png)|
+
+# See Also
+
+* [Loading And Saving Layouts]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%})

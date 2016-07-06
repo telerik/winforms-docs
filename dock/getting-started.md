@@ -13,47 +13,40 @@ previous_url: dock-getting-started
 
 This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on the left represents a list of reports. The right side of the form in __RadDock__ contains three __DocumentWindows__, each representing a report. This tutorial demonstrates the layout of __ToolWindow__ and __DocumentWindows__. It also demonstrates adding a RadTreeView control to one of the created windows and synchronizing the active DockWindow with the selection in the RadTreeView instance. 
 
+>caption Figure 1: The final application layout.
 ![dock-getting-started 003](images/dock-getting-started003.png)
 
 ## Configure the RadDock
 
 1\. Drop a __RadDock__ control on the form.
-            
 
 2\. Set the __RadDock Dock__ property to __Fill.__
 
-3\. Open the __RadDock__ Smart Tag and select __Show Advanced Layout Designer.__ This step will display the __RadDock Advanced Layout Designer__ dialog.
-            
+3\. Open the `Smart Tag` and select __Show Advanced Layout Designer.__ This step will display the __RadDock Advanced Layout Designer__ dialog.
 
 4\. In the RadRibbonBar on top, click the left green arrow to dock a new __ToolWindow__ to the left.
 
 ![dock-getting-started 001](images/dock-getting-started001.png)
 
->note The list on the left side of the preview displays all created windows. From this list you can set the visibility of the ToolWindows to false, if you do not need some of them visible at runtime initially.
+>note The list on the left side of the preview displays all created windows. From this list you can set the __Visibility__ of the ToolWindows to *false*, if you do not need some of them visible at runtime initially.
 >
 
-
 5\. Again from the RadRibbonBar, click on the __Add DocumentWindow__ button three times to add three __DocumentWindows__ instances.
-            
 
 6\. Click __Save and Close__ button to close the dialog and save the layout to the __RadDock__. 
 
 ![dock-getting-started 002](images/dock-getting-started002.png)
 
-For more complex scenarios RadDock advanced layout designer provides full drag and drop and user interaction support in the preview RadDock control. This allows you to the dock a ToolWindow to bottom-right, to set a ToolWindow in AutoHide mode or even to float a ToolWindow.
-            
+For more complex scenarios the advanced layout designer provides full drag and drop and user interaction support in the preview __RadDock__ control.
 
->caution The real layout of RadDock which is displayed at runtime is available only through RadDock Advanced Layout Designer. I.e. if you have hidden, auto-hidden or floating ToolWindows, they will be shown as such only in the advanced designer. In Visual Studio IDE we display ToolWindows in their docked state, which allows you to place and layout your controls in them.
+>caution The real layout of __RadDock__ which is displayed at runtime is available only through `RadDock Advanced Layout Designer`. I.e. if you have hidden, auto-hidden or floating ToolWindows, they will be shown as such only in the advanced designer. In Visual Studio IDE we display ToolWindows in their docked state, which allows you to place and layout your controls in them.
 	
 
-7\. In the designer select the __ToolWindow__ on the left. You can verify this by checking that the currently selected component in the Properties Window of Visual Studio is __ToolWindow__.
-            
+7\. In the designer select the __ToolWindow__ on the left. You can verify this by checking that the currently selected component in the `Properties Window` of Visual Studio.
 
 8\. Set the __ToolWindow Text__ property to "Reports".
-            
 
-9\. Select one of the __DocumentWindows__. To do this in the designer, select the tab (i.e. on "Document1"), then click inside the client area. Check the Properties Window that you have selected a __DocumentWindow__.
-            
+9\. Select one of the __DocumentWindows__. To do this in the designer, select the tab (i.e. on "Document1"), then click inside the client area. Check the `Properties Window` that you have selected a __DocumentWindow__.
 
 10\. Set the __DocumentWindow Name__ property to "dwProductListing" and __Text__ property to "Product Listing".
             
@@ -132,7 +125,7 @@ End Sub
 {{endregion}} 
  
 
-16\. Create an __SelectedNodeChanged__ event handler and add the following code to it. The code for this event handler verifies that the Tag of the selected node has a value. Further, if this value corresponds to the name of an existing window in RadDock, the appropriate DocumentWindow gets activated.
+16\. Create an __SelectedNodeChanged__ event handler and add the following code to it. The code for this event handler verifies that the __Tag__ of the selected node has a value. Further, if this value corresponds to the name of an existing window in __RadDock__, the appropriate DocumentWindow gets activated.
 
 #### Handling the RadTreeView SelectedNodeChanged event 
  
@@ -169,24 +162,24 @@ End Sub
 {{endregion}} 
  
 Press __F5__ to run the application. Try experimenting with...
-        
 
 * Dragging the panel and document tabs
-            
 
 * Right-clicking document and panel tabs.
-            
 
 * Pressing __Ctrl-Tab__ to invoke the [Quick Navigator]({%slug winforms/dock/architecture-and-features/quick-navigator%}).
-            
 
 * Pinning and un-pinning the __DockWindow__.
-            
 
 * Using the __ToolWindow__ and __DocumentWindow__ menus by clicking the downward arrows.
-            
 
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |The new and improved RadDock for WinForms has landed and this is your opportunity to get a first look. Join Developer Evangelist John Kellar as he shows you how quickly you can get up and running with the new version of RadDock. John will cover the new features so you know what to expect and how you can use RadDock in your applications once it is officially released. (Runtime: 32:54)<br>[ Introducing the new RadDock for WinForms ](http://www.telerik.com/videos/winforms/introducing-the-new-raddock-for-winforms)![dock-getting-started 004](images/dock-getting-started004.png)|In this video, you will learn how to get started with the run-time and design-time features in the new RadDock for WinForms. You will see the rich RadDock run-time features in action and you will see how easy it is to get started with RadDock in Visual Studio. You will also be introduced to the new Advanced Layout Designer for RadDock, a design-time tool that makes it easy to customize yoru RadDock layouts. (Runtime: 09:42)<br>[ Getting Started with RadDock for WinForms ](http://www.telerik.com/videos/winforms/getting-started-with-raddock-for-winforms)![dock-getting-started 005](images/dock-getting-started005.png)|
+
+# See Also
+
+* [Smart Tag]({%slug winforms/raddock/smart-tag%})
+* [Structure]({%slug winforms/dock/architecture-and-features/understanding-raddock%})     
+* [Advanced Layout Designer]({%slug winforms/raddock/advanced-layout-designer%})

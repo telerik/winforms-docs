@@ -1,7 +1,7 @@
 ---
 title: Creating ToolWindow and DocumentWindow at Runtime
 page_title: Creating ToolWindow and DocumentWindow at Runtime | UI for WinForms Documentation
-description: Creating ToolWindow and DocumentWindow at Runtime
+description: Creating ToolWindows and DocumentWindows at runtime.
 slug: winforms/dock/object-model/creating-toolwindow-and-documentwindow-at-runtime
 tags: creating,toolwindow,and,documentwindow,at,runtime
 published: True
@@ -13,7 +13,7 @@ previous_url: dock-object-model-creating-toolwindow-and-documentwindow-at-runtim
  
 ## Creating ToolWindow at Runtime
 
-To create a new __ToolWindow__, construct a __ToolWindow__ instance, set properties and call the __RadDock DockWindow()__ method, passing a reference to the __ToolWindow__ and a __DockPosition__ enumeration value.
+To create a new __ToolWindow__, construct a __ToolWindow__ instance, set properties and call the __DockWindow()__ method, passing a reference to the __ToolWindow__ and a __DockPosition__ enumeration value.
 
 #### Creating a ToolWindow 
 
@@ -38,7 +38,7 @@ Me.RadDock1.DockWindow(windowTop, DockPosition.Top)
  
 ## Creating DocumentWindow at Runtime
 
-To create a __DocumentWindow__, construct an instance of __DocumentWindow__, assign properties and call the __RadDock Add__ __Document()__ method, passing the __DocumentWindow__ instance.
+To create a __DocumentWindow__, construct an instance of __DocumentWindow__, assign properties and call the __AddDocument__ method, passing the __DocumentWindow__ instance.
 
 #### Creating a DocumentWindow 
 
@@ -119,11 +119,11 @@ Me.RadDock1.AddDocument(document3)
 
 ## Creating and docking multiple windows in a single strip
 
-There are cases in which you might prefer docking two or more windows to the right edge of RadDock only, so that these right-edged windows are tabbed in a single container. For example, let’s say that we have Team Explorer, Solution Explorer and Server Explorer windows and they are all initially closed. We also have a menu that allows us to open these windows, and after clicking all the corresponding menu items we want to get this picture:
+There are cases in which you might prefer docking two or more windows to the right edge of __RadDock__ only, so that these right-edged windows are tabbed in a single container. For example, let’s say that we have `Team Explorer`, `Solution Explorer` and `Server Explorer` windows and they are all initially closed. We also have a menu that allows us to open these windows, and after clicking all the corresponding menu items we want to get this picture:
 
 ![dock-how-to-docking-windows-in-a-single-strip 001](images/dock-how-to-docking-windows-in-a-single-strip001.png)
 
-At first, let’s try a solution that seems to be the easiest one: 
+The bellow code shows how you can create each one of the windows:
 
 {{source=..\SamplesCS\Dock\How-To\DockingWindowsToRight.cs region=wrongApproach}} 
 {{source=..\SamplesVB\Dock\How-To\DockingWindowsToRight.vb region=wrongApproach}} 
@@ -175,11 +175,11 @@ End Sub
 ````
 
 {{endregion}}  
-However, this API makes RadDock dock the window to right of RadDock itself, not taking into consideration other right-docked windows:
+However, this API docks the windows to right of RadDock, not taking into consideration other right-docked windows:
 
 ![dock-object-model-creating-toolwindow-and-documentwindow-at-runtime 002](images/dock-object-model-creating-toolwindow-and-documentwindow-at-runtime002.png)
 
-So, we need to follow another approach. What we need to do is to globally define a ToolTabStrip variable that would be set the first time a window is right-docked. Then, the next time we dock a window, we will do it in the context of the already created ToolTabStrip. Here is what should be done in code on click of the menu items:
+So, we need to follow another approach. What we need to do is to globally define a `ToolTabStrip` variable that would be set the first time a window is right-docked. Then, the next time we dock a window, we will do it in the context of the already created ToolTabStrip. Here is what should be done in code on click of the menu items:
 
 
 {{source=..\SamplesCS\Dock\How-To\DockingWindowsToRight.cs region=menuItemsClick}} 
@@ -280,5 +280,16 @@ End Sub
 
 {{endregion}} 
 
+# See Also
 
-
+* [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
+* [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})
+* [Accessing DockWindows]({%slug winforms/dock/object-model/accessing-dockwindows%})
+* [Customizing Floating Windows]({%slug winforms/dock/object-model/customizing-floating-windows%})
+* [Customizing TabStrip Items]({%slug winforms/dock/object-model/customizing-tabstrip-items%})
+* [Building an Advanced Layout at Runtime]({%slug winforms/dock/object-model/example:-building-an-advanced-layout-at-runtime%})
+* [RadDock Properties and Methods]({%slug winforms/dock/object-model/raddock-properties-and-methods%})
+* [Removing ToolWindow and DocumentWindow at Runtime]({%slug winforms/dock/object-model/removing-toolwindow-and-documentwindow-at-runtime%})
+* [Tabs and Captions]({%slug winforms/dock/object-model/tabs-and-captions%})
+* [ToolWindow and DocumentWindow Properties and Methods]({%slug winforms/dock/object-model/toolwindow-and-documentwindow-properties-and-methods%})
+* [Tracking the ActiveWindow]({%slug winforms/dock/object-model/tracking-the-activewindow%})

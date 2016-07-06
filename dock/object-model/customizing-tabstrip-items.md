@@ -1,7 +1,7 @@
 ---
 title: Customizing TabStrip Items
 page_title: Customizing TabStrip Items | UI for WinForms Documentation
-description: Customizing TabStrip Items
+description: This article demonstrates how you can customize or replace the TabStrip items.
 slug: winforms/dock/object-model/customizing-tabstrip-items
 tags: customizing,tabstrip,items
 published: True
@@ -16,7 +16,7 @@ This article demonstrates how you can customize or replace the TabStrip items.
 ##  Using the TabStripItemCreating event
       
 
-The above examples are using the __TabStripItemCreating__ event. This event cannot be accessed via the RadDock instance. You can subscribe to the event by using the static __RadDockEvents__ class. You should do that before the InitializeComponent method call: 
+The above examples are using the __TabStripItemCreating__ event. This event cannot be accessed via the RadDock instance. You can subscribe to the event by using the static __RadDockEvents__ class. You should do that before the `InitializeComponent` method call: 
 
 {{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=subscribe}} 
 {{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=subscribe}} 
@@ -66,7 +66,7 @@ End Sub
  
 ## Adding element to the TabStrip item
 
-The TabStripItemCreating event can be used for adding any kind of RadElement to the TabStrip. For example the following code adds text box to each TabStrip item: 
+The `TabStripItemCreating` event can be used for adding any kind of RadElements to the TabStrip. For example the following code adds text box to each TabStrip item: 
 
 {{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=element}} 
 {{source=..\SamplesVB\Dock\CustomizingTabStripItems.vb region=element}} 
@@ -98,7 +98,6 @@ The tabs will look like this:
 ![dock-object-model-customizing-tabstrip-items 001](images/dock-object-model-customizing-tabstrip-items001.png)
 
 ## Replacing the entire TabStrip element.
-      
 
 The TabStripItemCreating event can be used for replacing the entire element as well. First you need to create a TabStripItem class descendant 
 
@@ -207,7 +206,7 @@ The tabs will look like in the following image:
 ## DocumentTabStrip Multi Line Row Layout with a Custom Tab Shape
       
 
-The tab items of the __DocumentWindows__ in __RadDock__ have a predefined shape applied (*TabVsShape*). The following example will demonstrate how the default layout can be modified so the tabs are displayed in a multi row layout and how a custom shape can be set to the tab items. For the purpose we have to subscribe to the static __TabStripItemCreating__ event (where we will change the __Shape__ property) and access the __DocumentTabStrip__ in order to set the desired __StripViewItemFitMode__.
+The tab items of the __DocumentWindows__ in __RadDock__ have a predefined shape applied (*TabVsShape*). The following example will demonstrate how the default layout can be modified so the tabs are displayed in a multi row layout and how a custom shape can be applied to the tab items. For the purpose we have to subscribe to the static __TabStripItemCreating__ event (where we will change the __Shape__ property) and access the __DocumentTabStrip__ in order to set the desired __StripViewItemFitMode__.
         
 
 >note Since the __TabStripItemCreating__ event is static the event subscription have to be defined before the call to the InitializeComponent method.
@@ -221,6 +220,7 @@ public CustomizingTabStripItemsForm()
 {
     RadDockEvents.TabStripItemCreating += RadDockEvents_TabStripItemCreating;
     InitializeComponent();
+    new RadControlSpyForm().Show();
     DocumentContainer container = this.documentContainer1;
     DocumentTabStrip tabStrip = container.Controls[0] as DocumentTabStrip;
     if (tabStrip != null)
@@ -281,3 +281,17 @@ End Sub
 Here is the outcome of the code above:
 
 ![dock-object-model-customizing-tabstrip-items 003](images/dock-object-model-customizing-tabstrip-items003.png)
+
+# See Also
+
+* [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
+* [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})
+* [ Creating ToolWindow and DocumentWindow at Runtime]({%slug winforms/dock/object-model/creating-toolwindow-and-documentwindow-at-runtime%})
+* [Customizing Floating Windows]({%slug winforms/dock/object-model/customizing-floating-windows%})
+* [Accessing DockWindows]({%slug winforms/dock/object-model/accessing-dockwindows%})
+* [Building an Advanced Layout at Runtime]({%slug winforms/dock/object-model/example:-building-an-advanced-layout-at-runtime%})
+* [RadDock Properties and Methods]({%slug winforms/dock/object-model/raddock-properties-and-methods%})
+* [Removing ToolWindow and DocumentWindow at Runtime]({%slug winforms/dock/object-model/removing-toolwindow-and-documentwindow-at-runtime%})
+* [Tabs and Captions]({%slug winforms/dock/object-model/tabs-and-captions%})
+* [ToolWindow and DocumentWindow Properties and Methods]({%slug winforms/dock/object-model/toolwindow-and-documentwindow-properties-and-methods%})
+* [Tracking the ActiveWindow]({%slug winforms/dock/object-model/tracking-the-activewindow%})
