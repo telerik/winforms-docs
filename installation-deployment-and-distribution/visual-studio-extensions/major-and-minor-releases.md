@@ -23,7 +23,7 @@ Minor releases on the other hand can't be installed in parallel when they are fr
 
 Here are some sample scenarios:
 
-1. Parallel major releases
+Parallel major releases
 
 1. Install R2 2011
 
@@ -32,23 +32,23 @@ Here are some sample scenarios:
 1. Install R1 2012
 <br/>Result: all three versions (R2 2011, R3 2011 and R1 2012) are installed in parallel on the machine
 
-1. Minor releases from the same major release
+Minor releases from the same major release
 
 1. Install R1 2012
 
 1. Install R1 2012 SP1
 
 1. Install R1 2012 SP2
-<br/>Result: only the latest version (R1 2012 SP2) is installed on the machine
+        Result: only the latest version (R1 2012 SP2) is installed on the machine
 
-1. Minor releases from different major releases
+Minor releases from different major releases
 
 1. Install R3 2011
 
 1. Install R3 2011 SP1
 
 1. Install R1 2012 SP1
-<br/>Result: R3 2011 SP1 and R1 2012 SP1 are installed on the machine
+        Result: R3 2011 SP1 and R1 2012 SP1 are installed on the machine
                 
 
 >note Part of the Telerik UI for WinForms are the Visual Studio Extensions. Since the Visual Studio Extensions integrate into the Visual Studio IDE they don't support parallel versions. When newer version is installed regardless of its type (major/minor) the Visual Studio Extensions get updated to the newer version.
