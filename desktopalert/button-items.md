@@ -22,6 +22,7 @@ __RadDesktopAlert__ supports adding custom items to the pop up by using the __Bu
 {{source=..\SamplesVB\DesktopAlert\DesktopAlert1.vb region=ButtonItems}} 
 
 ````C#
+    
 public void AddButtonItems()
 {
     RadLabelElement labelElement = new RadLabelElement();
@@ -36,10 +37,10 @@ public void AddButtonItems()
     this.radDesktopAlert1.ButtonItems.Add(spinElement);
     this.radDesktopAlert1.ButtonItems.Add(buttonElement);
 }
-
+    
 private void ButtonElement_Click(object sender, EventArgs e)
 {
-   //TODO
+    //TODO
 }
 
 ````
@@ -57,7 +58,6 @@ Public Sub AddButtonItems()
     Me.radDesktopAlert1.ButtonItems.Add(spinElement)
     Me.radDesktopAlert1.ButtonItems.Add(buttonElement)
 End Sub
-
 Private Sub ButtonElement_Click(sender As Object, e As EventArgs)
 'TODO
 End Sub

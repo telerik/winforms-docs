@@ -31,16 +31,14 @@ The following example demonstrates how to use the __CellPaint__ event to change 
 ````C#
 void radGridView1_CellPaint(object sender, Telerik.WinControls.UI.GridViewCellPaintEventArgs e)
 {
-    GridDataCellElement dataCell = e.Cell as GridDataCellElement;
-    if (dataCell != null && dataCell.ColumnInfo.Name == "UnitPrice")
+    if (e.Cell != null && e.Cell.RowInfo is GridViewDataRowInfo && e.Cell.ColumnInfo.Name == "UnitPrice")
     {
-        double value = Convert.ToDouble(dataCell.Value);
+        double value = Convert.ToDouble(e.Cell.Value);
         if (value == 0)
         {
             return;
         }
         Brush brush = value < 20 ? Brushes.Red : Brushes.Green;
-        Size cellSize = e.Cell.Size;
         using (Font font = new Font("Segoe UI", 17))
         {
             e.Graphics.DrawString("*", font, brush, Point.Empty);
@@ -51,21 +49,16 @@ void radGridView1_CellPaint(object sender, Telerik.WinControls.UI.GridViewCellPa
 ````
 ````VB.NET
 Private Sub RadGridView1_CellPaint(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellPaintEventArgs) Handles RadGridView1.CellPaint
-    Dim dataCell As GridDataCellElement = TryCast(e.Cell, GridDataCellElement)
-
-        If dataCell IsNot Nothing AndAlso dataCell.ColumnInfo.Name = "UnitPrice" Then
-            Dim value As Double = Convert.ToDouble(dataCell.Value)
-            If value = 0 Then
-                Return
-            End If
-
-            Dim brush As Brush = If(value < 20, Brushes.Red, Brushes.Green)
-            Dim cellSize As Size = e.Cell.Size
-
-            Using font As New Font("Segoe UI", 17)
-                e.Graphics.DrawString("*", font, brush, Point.Empty)
-            End Using
+    If e.Cell IsNot Nothing AndAlso TypeOf e.Cell.RowInfo Is GridViewDataRowInfo AndAlso e.Cell.ColumnInfo.Name = "UnitPrice" Then
+        Dim value As Double = Convert.ToDouble(e.Cell.Value)
+        If value = 0 Then
+            Return
         End If
+        Dim brush As Brush = If(value < 20, Brushes.Red, Brushes.Green)
+        Using font As New Font("Segoe UI", 17)
+            e.Graphics.DrawString("*", font, brush, Point.Empty)
+        End Using
+    End If
 
 ````
 

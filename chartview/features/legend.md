@@ -205,7 +205,6 @@ You can use your own legend item elements by handling the __VisualItemCreating__
 {{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=CustomLegendItem1}}
 ````C#
 this.radChartView1.ChartElement.LegendElement.VisualItemCreating +=new LegendItemElementCreatingEventHandler(LegendElement_VisualItemCreating);
-//
 
 ````
 ````VB.NET

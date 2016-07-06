@@ -24,6 +24,7 @@ The following code example demonstrates how to customize the nested elements at 
 {{source=..\SamplesVB\DesktopAlert\DesktopAlert1.vb region=AccessingCustomizingElements}} 
 
 ````C#
+            
 this.radDesktopAlert1.Popup.AlertElement.CaptionElement.TextAndButtonsElement.TextElement.ForeColor = Color.Red;
 this.radDesktopAlert1.Popup.AlertElement.CaptionElement.CaptionGrip.BackColor = Color.Red;
 this.radDesktopAlert1.Popup.AlertElement.CaptionElement.CaptionGrip.GradientStyle = GradientStyles.Solid;
@@ -43,6 +44,15 @@ Me.radDesktopAlert1.Popup.AlertElement.ContentElement.TextImageRelation = TextIm
 Me.radDesktopAlert1.Popup.AlertElement.BackColor = Color.Yellow
 Me.radDesktopAlert1.Popup.AlertElement.GradientStyle = GradientStyles.Solid
 Me.radDesktopAlert1.Popup.AlertElement.BorderColor = Color.Red
+'#End Region
+End Sub
+'#region showingAlert
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+Me.radDesktopAlert1.ContentImage = envelopeImage
+Me.radDesktopAlert1.CaptionText = "New E-mail Notification"
+Me.radDesktopAlert1.ContentText = "Hello Jack, I am writing to inform you " & "that the planning meeting scheduled for Wednesday has been postponed and" & "it will eventually be rescheduled, possibly for the next Tuesday"
+Me.radDesktopAlert1.Show()
+End Sub
 
 ````
 

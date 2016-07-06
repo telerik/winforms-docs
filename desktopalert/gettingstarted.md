@@ -29,13 +29,14 @@ Follow the described steps below:
 {{source=..\SamplesVB\DesktopAlert\DesktopAlert1.vb region=showingAlert}} 
 
 ````C#
+    
 void radButton1_Click(object sender, EventArgs e)
 {
     this.radDesktopAlert1.ContentImage = envelopeImage;
     this.radDesktopAlert1.CaptionText = "New E-mail Notification";
     this.radDesktopAlert1.ContentText = "Hello Jack, I am writing to inform you " +
-        "that the planning meeting scheduled for Wednesday has been postponed and" +
-        "it will eventually be rescheduled, possibly for the next Tuesday";
+                                        "that the planning meeting scheduled for Wednesday has been postponed and" +
+                                        "it will eventually be rescheduled, possibly for the next Tuesday";
     this.radDesktopAlert1.Show();
 }
 
