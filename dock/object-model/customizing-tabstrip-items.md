@@ -220,7 +220,6 @@ public CustomizingTabStripItemsForm()
 {
     RadDockEvents.TabStripItemCreating += RadDockEvents_TabStripItemCreating;
     InitializeComponent();
-    new RadControlSpyForm().Show();
     DocumentContainer container = this.documentContainer1;
     DocumentTabStrip tabStrip = container.Controls[0] as DocumentTabStrip;
     if (tabStrip != null)
