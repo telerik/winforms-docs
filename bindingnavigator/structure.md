@@ -32,5 +32,4 @@ Adding a __RadBindingNavigator__ control to a form and binding it to a data sour
 ## See Also
 
  * [Properties]({%slug winforms/bindingnavigator/properties%})
-
  * [Customizing Appearance]({%slug winforms/bindingnavigator/customizing-radbindingnavigator-%})

@@ -230,6 +230,9 @@ navigation:
     datalayout:
         title: DataLayout
         position: 17
+    datalayout/customizing-appearance:
+        title: Customizing Appearance
+        position: 10
     diagram:
         title: Diagram
         position: 18

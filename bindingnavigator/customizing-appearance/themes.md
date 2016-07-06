@@ -10,7 +10,7 @@ position: 1
 
 # Themes
 
-You can customize the visual appearance by using [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}). You can either edit the predefined themes or create a custom ones. Please note that the element styles are reused and for __RadBindingNavigator__ you can customize the only the fill, the border and the buttons' images. If you want to customize other button elements you must change the styles of `RadButtonElement`.
+You can customize the visual appearance by using [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}) tool. You can either edit the predefined themes or create a custom ones. Please note that the element styles are reused and for __RadBindingNavigator__ you can customize the only the fill, the border and the buttons' images. If you want to customize other button elements you must change the styles of `RadButtonElement`.
 
 ## Changing the Fill and Border in Visual Style Builder.
 
@@ -27,7 +27,5 @@ You can customize the visual appearance by using [Visual Style Builder]({%slug w
 ## See Also
 
 * [Properties]({%slug winforms/bindingnavigator/properties%})
-
 * [Structure]({%slug winforms/bindingnavigator/structure%})
-
 * [Repository Items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%})

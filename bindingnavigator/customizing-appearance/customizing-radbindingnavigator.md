@@ -47,5 +47,4 @@ radBindingNavigator1.BindingNavigatorElement.NextButton.GradientStyle = Telerik.
 ## See Also
 
  * [Properties]({%slug winforms/bindingnavigator/properties%})
-
  * [Structure]({%slug winforms/bindingnavigator/structure%})

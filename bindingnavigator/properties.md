@@ -38,5 +38,4 @@ will handle internally the creation of new items. When this property is set to f
 ## See Also
 
  * [Customizing Appearance]({%slug winforms/bindingnavigator/customizing-radbindingnavigator-%})
-
  * [Structure]({%slug winforms/bindingnavigator/structure%})
