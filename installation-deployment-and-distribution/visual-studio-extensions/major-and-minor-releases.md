@@ -29,8 +29,8 @@ Here are some sample scenarios:
 
 1. Install R3 2011
 
-1. Install R1 2012Result: all three versions (R2 2011, R3 2011 and R1 2012) are installed in parallel on the machine
-                
+1. Install R1 2012
+<br/>Result: all three versions (R2 2011, R3 2011 and R1 2012) are installed in parallel on the machine
 
 1. Minor releases from the same major release
 
@@ -38,8 +38,8 @@ Here are some sample scenarios:
 
 1. Install R1 2012 SP1
 
-1. Install R1 2012 SP2Result: only the latest version (R1 2012 SP2) is installed on the machine
-                
+1. Install R1 2012 SP2
+<br/>Result: only the latest version (R1 2012 SP2) is installed on the machine
 
 1. Minor releases from different major releases
 
@@ -47,7 +47,8 @@ Here are some sample scenarios:
 
 1. Install R3 2011 SP1
 
-1. Install R1 2012 SP1Result: R3 2011 SP1 and R1 2012 SP1 are installed on the machine
+1. Install R1 2012 SP1
+<br/>Result: R3 2011 SP1 and R1 2012 SP1 are installed on the machine
                 
 
 >note Part of the Telerik UI for WinForms are the Visual Studio Extensions. Since the Visual Studio Extensions integrate into the Visual Studio IDE they don't support parallel versions. When newer version is installed regardless of its type (major/minor) the Visual Studio Extensions get updated to the newer version.
