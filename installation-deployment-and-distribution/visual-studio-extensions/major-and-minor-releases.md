@@ -30,7 +30,7 @@ Parallel major releases
 1. Install R3 2011
 
 1. Install R1 2012
-<br/>Result: all three versions (R2 2011, R3 2011 and R1 2012) are installed in parallel on the machine
+        Result: all three versions (R2 2011, R3 2011 and R1 2012) are installed in parallel on the machine
 
 Minor releases from the same major release
 
