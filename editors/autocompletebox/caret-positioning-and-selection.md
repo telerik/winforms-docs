@@ -1,5 +1,5 @@
 ---
-title: Caret positioning and selection
+title: Caret Positioning and Selection
 page_title: Caret positioning and selection | UI for WinForms Documentation
 description: Caret positioning and selection
 slug: winforms/editors/autocompletebox/caret-positioning-and-selection
@@ -10,17 +10,12 @@ previous_url: editors-autocompletebox-caret-positioning-and-selection
 ---
 
 # Caret positioning and selection
- 
-## 
 
-The positioning and selection in RadAutoCompleteBox can be performed programmatically as well as by using the keyboard and mouse input.
-        
+The positioning and selection in __RadAutoCompleteBox__ can be performed programmatically as well as by using the keyboard and mouse input.
 
-the keyboard (up, down, left, right buttons). To select text you can press the shift key followed by left mouse button or one of the navigation keys of
-        
+To select items with the press the arrow keys while holding `Shift`.
 
-Programmatic selection can be performed by using the __SelectionStart__ and __SelectionLength__ properties of RadAutoCompleteBox.
-        
+Programmatic selection can be performed by using the __SelectionStart__ and __SelectionLength__ properties.
 
 The __SelectionStart__ property is an integer that indicates the insertion point within the string of text, with 0 being the left-most position. If the __SelectionStart__ property is set to a value equal to or greater than the number of characters in the text box, the insertion point is placed after the last character.
         
