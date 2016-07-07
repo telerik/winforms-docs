@@ -614,33 +614,6 @@ navigation:
     panorama:
         title: Panorama
         position: 33
-    pdfprocessing:
-        title: PdfProcessing 
-        position: 34
-    pdfprocessing/changes-and-backward-compatibility:
-        title: Changes and Backward Compatibility 
-        position: 1
-    pdfprocessing/model:
-        title: Model
-        position: 3
-    pdfprocessing/formats-and-conversion:
-        title: Formats and Conversion
-        position: 4
-    pdfprocessing/formats-and-conversion/pdf:
-        title: Pdf
-        position: 0
-    pdfprocessing/formats-and-conversion/plain-text:
-        title: Plain Text
-        position: 1		
-    pdfprocessing/editing:
-        title: Editing
-        position: 5
-    pdfprocessing/concepts:
-        title: Concepts
-        position: 6
-    pdfprocessing/how-to:
-        title: How To
-        position: 7		
     pdfviewer:
         title: PdfViewer
         position: 35
@@ -827,54 +800,6 @@ navigation:
     splitcontainer:
         title: SplitContainer
         position: 46
-    spreadprocessing:
-        title: SpreadProcessing
-        position: 47
-    spreadprocessing/changes-and-backward-compatibility:
-        title: Changes and Backward Compatibility
-        position: 2
-    spreadprocessing/working-with-workbooks:
-        title: Workbooks
-        position: 3
-    spreadprocessing/working-with-worksheets:
-        title: Worksheets
-        position: 4
-    spreadprocessing/working-with-rows-and-columns:
-        title: Working with Rows and Columns
-        position: 5
-    spreadprocessing/working-with-cells:
-        title: Cells
-        position: 6
-    spreadprocessing/formats-and-conversion:
-        title: Formats and Conversion
-        position: 7
-    spreadprocessing/formats-and-conversion/xlsx:
-        title: Xlsx
-        position: 2
-    spreadprocessing/formats-and-conversion/pdf:
-        title: PDF
-        position: 3
-    spreadprocessing/formats-and-conversion/csv:
-        title: Csv
-        position: 4
-    spreadprocessing/formats-and-conversion/txt:
-        title: Txt
-        position: 5
-    spreadprocessing/features:
-        title: Features
-        position: 8
-    spreadprocessing/features/fill-data-automatically:
-        title: Fill Data Automatically
-        position: 0
-    spreadprocessing/features/formulas:
-        title: Formulas
-        position: 1
-    spreadprocessing/features/protection:
-        title: Protection
-        position: 2
-    spreadprocessing/features/styling:
-        title: Styling
-        position: 3
     track-and-status-controls:
         title: Track and Status controls
         position: 48
@@ -992,47 +917,6 @@ navigation:
     wizard:
         title: Wizard
         position: 51
-    wordsprocessing:
-        title: WordsProcessing
-        position: 52
-    wordsprocessing/changes-and-backward-compatibility:
-        title: Changes and Backward Compatibility
-        position: 2
-    wordsprocessing/model:
-        title: Model
-        position: 3
-    wordsprocessing/formats-and-conversion:
-        title: Formats and Conversion
-        position: 4
-    wordsprocessing/formats-and-conversion/docx:
-        title: Docx
-        position: 1
-    wordsprocessing/formats-and-conversion/rtf:
-        title: Rtf
-        position: 2
-    wordsprocessing/formats-and-conversion/html:
-        title: Html
-        position: 3
-    wordsprocessing/formats-and-conversion/pdf:
-        title: Pdf
-        position: 4
-    wordsprocessing/formats-and-conversion/plain-text:
-        title: Plain Text
-        position: 5
-    wordsprocessing/features:
-        title: Features
-        position: 5
-    wordsprocessing/concepts:
-        title: Concepts
-        position: 6
-    wordsprocessing/concepts/fields:
-        title: Fields
-        position: 0
-    ziplibrary:
-        title: ZipLibrary
-        position: 53
-    ziplibrary/features:
-        title: Features
     telerik-cab-enabling-kit:
         title: Telerik Cab Enabling Kit
         position: 54
