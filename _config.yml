@@ -320,6 +320,9 @@ navigation:
     editors/browseeditor:
         title: BrowseEditor
         position: 1
+    editors/browseeditor/design-time:
+        title: Design Time
+        position: 2
     editors/calculatordropdown:
         title: CalculatorDropDown
         position: 2
