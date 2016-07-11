@@ -1,7 +1,7 @@
 ---
 title: Design Time
 page_title: Design Time | UI for WinForms Documentation
-description: Design Time
+description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/design-time
 tags: design,time
 published: True
@@ -10,10 +10,13 @@ previous_url: dropdown-and-listcontrol-dropdownlist-design-time
 ---
 
 # Design Time
+
+To start using __RadDropDownList__ just drag it from the toolbox and drop it at the form.
  
 ## Smart Tag
 
-The __Smart Tag__ for __RadDropDownList__ lets you quickly access common tasks involved with building __RadDropDownList__ elements and customizing appearance through themes.
+Select __RadDropDownList__ and click the small arrow on the top right position in order to open the __Smart Tag__. The __Smart Tag__ for __RadDropDownList__ lets you quickly access common tasks involved with building __RadDropDownList__ elements and customizing appearance through themes.
+
 >caption Fig.1 Smart Tag
 
 ![dropdown-and-listcontrol-dropdownlist-design-time 001](images/dropdown-and-listcontrol-dropdownlist-design-time001.png)
@@ -37,3 +40,7 @@ The __Smart Tag__ for __RadDropDownList__ lets you quickly access common tasks i
 
 You can bind __RadDropDownList__ at design time by specifying the __DataSource__, __ValueMember__ and __DisplayMember__ properties. Additional information can be found on the following link: [Data binding at design time]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/data-binding%}).
         
+# See Also
+
+* [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
+* [Using default themes]({%slug winforms/themes/using-default-themes%})
