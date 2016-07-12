@@ -10,13 +10,11 @@ previous_url: editors-autocompletetextbox-creating-custom-blocks
 ---
 
 # Creating Custom Blocks
- 
-## 
 
-The RadAutoCompleteBox allows not only appearance customization via the formatting event, but also replacement of the default UI block representation. The __CreateTextBlock__ event exposes this possibility.
+__RadAutoCompleteBox__ allows not only appearance customization via the formatting event, but also replacement of the default UI block representation. The __CreateTextBlock__ event exposes this possibility.
         
 
-You should create a custom text block that inherits from __ITextBlock__ and any inheritor of RadElement. Let’s extend the default __TokenizedTextBlockElement__ by adding a check box. We don’t need to implement the __ITextBlock__ interface, because it is already defined in the base class: 
+You should create a custom text block that inherits from __ITextBlock__ and any inheritor of __RadElement__. Let’s extend the default __TokenizedTextBlockElement__ by adding a check box. You don’t need to implement the __ITextBlock__ interface, because it is already defined in the base class: 
 
 {{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=customTokens}} 
 {{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=customTokens}} 

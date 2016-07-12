@@ -10,10 +10,8 @@ previous_url: editors-autocompletebox-text-editing
 ---
 
 # Text Editing
- 
-## 
 
-The editing point is determined by the caret position and selection in RadAutoCompleteBox. The editing position is visible only if the control is focused.
+The editing point is determined by the caret position and selection in __RadAutoCompleteBox__. The editing position is visible only if the control is focused.
         
 
 You can insert text programmatically at concrete position by using the __Insert__ method. In this case, the text is inserted at the position determined by the __SelectionStart__ property. If the __SelectionLength__ property is greater than zero, the inserted text replaces the selected text. 
@@ -45,7 +43,7 @@ The code above produces the following result:
 
 ![editors-autocompletebox-text-editing 001](images/editors-autocompletebox-text-editing001.png)
 
-Alternatively, you can insert text at the end of the RadAutoCompleteBox content by using the __AppendText__ method: 
+Alternatively, you can insert text at the end of the __RadAutoCompleteBox__ content by using the __AppendText__ method: 
 
 {{source=..\SamplesCS\editors\AutoCompleteBox.cs region=Append}} 
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=Append}} 

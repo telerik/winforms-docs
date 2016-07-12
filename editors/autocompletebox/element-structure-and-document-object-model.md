@@ -11,11 +11,7 @@ previous_url: editors-autocompletebox-element-structure-and-document-object-mode
 
 # Element Structure and Document Object Model
 
-
-
-## RadAutoCompleteBox
-
-The document object model of RadAutoCompleteBox is represented by the __LineInfo__ class and the __ITextBlock__ interface. The __LineInfo__ class contains logical information about the start and end block of the line and its size. The __ITextBlock__ interface exposes layout information of single word. Notice that the elements which implement __ITextBlock__ interface should be inheritors of RadElement.
+The document object model of __RadAutoCompleteBox__ is represented by the __LineInfo__ class and the __ITextBlock__ interface. The __LineInfo__ class contains logical information about the start and end block of the line and its size. The __ITextBlock__ interface exposes layout information of single word. Notice that the elements which implement __ITextBlock__ interface should be inheritors of RadElement.
         
 
 ## RadTextBoxControlElement
