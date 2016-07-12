@@ -12,6 +12,8 @@ position: 0
 
 The Smart Tag for __RadBindingNavigator__ lets you quickly access common tasks involved with and customizing appearance or setting the theme.
 
+>caption Figure 1: The RadBindingNavigator Smart Tag.
+
 ![bindingnavigator-smart-tag001.png](images/bindingnavigator-smart-tag001.png) 
 * __Common Tasks__
     - __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.

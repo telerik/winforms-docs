@@ -13,7 +13,7 @@ previous_url: carousel-using-radcarousel-data-binding, carousel/using-radcarouse
 
 To bind data to __RadCarousel__:
 
-* Set the RadCarousel __DataSource__ property.
+* Set the __DataSource__ property.
           
 * Handle the __NewCarouselItemCreating__ event. In the event handler, create a __RadItem__ descendant instance.
           
