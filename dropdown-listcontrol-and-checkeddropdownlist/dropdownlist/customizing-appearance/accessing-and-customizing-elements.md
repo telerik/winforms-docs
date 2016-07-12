@@ -1,11 +1,11 @@
 ---
 title: Accessing and Customizing Elements
 page_title: Accessing and Customizing Elements | UI for WinForms Documentation
-description: Accessing and Customizing Elements
+description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/accessing-and-customizing-elements
 tags: accessing,and,customizing,elements
 published: True
-position: 4
+position: 0
 previous_url: dropdown-and-listcontrol-dropdownlist-accessing-and-customizing-elements
 ---
 

@@ -299,6 +299,9 @@ navigation:
     dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data:
         title: Populating with Data
         position: 5
+    dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/customizing-appearance:
+        title: Customizing Appearance
+        position: 4
     dropdown-listcontrol-and-checkeddropdownlist/listcontrol:
         title: ListControl
         position: 2
