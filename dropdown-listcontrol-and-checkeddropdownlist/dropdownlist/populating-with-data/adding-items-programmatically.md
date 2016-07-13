@@ -1,7 +1,7 @@
 ---
-title: Adding items programmatically
-page_title: Adding items programmatically | UI for WinForms Documentation
-description: Adding items programmatically
+title: Adding Items Programmatically
+page_title: Adding Items Programmatically | UI for WinForms Documentation
+description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/adding-items-programmatically
 tags: adding,items,programmatically
 published: True
@@ -10,8 +10,6 @@ previous_url: dropdown-and-listcontrol-dropdownlist-populating-with-data-adding-
 ---
 
 # Adding items programmatically
-
-
 
 __RadDropDownList__ supports adding items at run time, which means that you can manually populate it with data. The following example demonstrates how to add two different items to the RadDropDownList.__Items__  collection. 
 
@@ -25,7 +23,8 @@ You can use one of the following item types:
 * __DescriptionTextListDataItem__ – similar to the __RadListDataItem__. In addition, it displays some description below the item’s text.
 
 
->caption Figure 1. Sample RadListDataItem and DescriptionTextListDataItem
+>caption Figure 1: Sample RadListDataItem and DescriptionTextListDataItem
+
 ![dropdown-and-listcontrol-dropdownlist-populating-with-data-adding-items-programmatically 001](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-adding-items-programmatically001.png)
 
 #### Add items programmatically 
@@ -62,5 +61,8 @@ Me.radDropDownList1.Items.Add(dataItem)
 
 {{endregion}} 
 
+# See Also
 
+* [Design Time]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/design-time%})
+* [Data Binding]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/data-binding%})
 
