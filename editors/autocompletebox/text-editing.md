@@ -5,7 +5,7 @@ description: Text Editing
 slug: winforms/editors/autocompletebox/text-editing
 tags: text,editing
 published: True
-position: 4
+position: 5
 previous_url: editors-autocompletebox-text-editing
 ---
 

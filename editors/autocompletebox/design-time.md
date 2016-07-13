@@ -5,7 +5,7 @@ description: This article describes the functionality provided by the RadAutoCom
 slug: winforms/bindingnavigator/smarttag
 tags: bindingnavigator
 published: True
-position: 0
+position: 2
 ---
 
 # Smart Tag

@@ -5,7 +5,7 @@ description: Element Structure and Document Object Model
 slug: winforms/editors/autocompletebox/element-structure-and-document-object-model
 tags: element,structure,and,document,object,model
 published: True
-position: 2
+position: 1
 previous_url: editors-autocompletebox-element-structure-and-document-object-model
 ---
 

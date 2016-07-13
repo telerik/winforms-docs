@@ -5,7 +5,7 @@ description: Formatting Blocks
 slug: winforms/editors/autocompletebox/formatting-blocks
 tags: formatting,blocks
 published: True
-position: 6
+position: 7
 previous_url: editors-autocompletetextbox-formatting-blocks
 ---
 

@@ -5,7 +5,7 @@ description: Caret positioning and selection
 slug: winforms/editors/autocompletebox/caret-positioning-and-selection
 tags: caret,positioning,and,selection
 published: True
-position: 3
+position: 4
 previous_url: editors-autocompletebox-caret-positioning-and-selection
 ---
 

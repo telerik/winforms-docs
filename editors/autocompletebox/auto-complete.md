@@ -5,7 +5,7 @@ description: Auto-Complete
 slug: winforms/editors/autocompletebox/auto-complete
 tags: auto-complete
 published: True
-position: 5
+position: 6
 previous_url: editors-autocompletebox-auto-complete
 ---
 
