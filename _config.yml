@@ -316,7 +316,10 @@ navigation:
         position: 22		
     editors/autocompletebox:
         title: AutoCompleteBox
-        position: 0		
+        position: 0
+    editors/autocompletebox/customizing-appearance:
+        title: Customizing Appearance
+        position: 10				
     editors/browseeditor:
         title: BrowseEditor
         position: 1

@@ -97,46 +97,9 @@ Finally, the text property should be set:
 >
  
 
-{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=subscribeToFormatting}} 
-{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=subscribeToFormatting}} 
-````C#
-radAutoCompleteBox1.TextBlockFormatting += new TextBlockFormattingEventHandler(radAutoCompleteBox1_TextBlockFormatting);
-this.radAutoCompleteBox1.Text = "Euro;USD;GBP;";
+{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=SubscribeToCreateTextBlock}} 
+{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=SubscribeToCreateTextBlock}} 
 
-````
-````VB.NET
-AddHandler RadAutoCompleteBox1.TextBlockFormatting, AddressOf radAutoCompleteBox1_TextBlockFormatting
-Me.RadAutoCompleteBox1.Text = "Euro;USD;GBP;"
-
-````
-
-{{endregion}} 
-
-{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=formatting}}
-{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=formatting}} 
-
-````C#
-void radAutoCompleteBox1_TextBlockFormatting(object sender, TextBlockFormattingEventArgs e)
-{
-    TokenizedTextBlockElement token = e.TextBlock as TokenizedTextBlockElement;
-    if (token != null)
-    {
-        token.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-        token.BackColor = Color.Yellow;
-    }
-}
-
-````
-````VB.NET
-Private Sub radAutoCompleteBox1_TextBlockFormatting(sender As Object, e As TextBlockFormattingEventArgs)
-    Dim token As TokenizedTextBlockElement = TryCast(e.TextBlock, TokenizedTextBlockElement)
-    If token IsNot Nothing Then
-        token.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-        token.BackColor = Color.Yellow
-    End If
-End Sub
-
-````
 
 {{endregion}} 
 
