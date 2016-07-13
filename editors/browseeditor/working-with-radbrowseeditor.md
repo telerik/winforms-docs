@@ -1,32 +1,19 @@
 ---
 title: Working with RadBrowseEditor
 page_title: Working with RadBrowseEditor | UI for WinForms Documentation
-description: Working with RadBrowseEditor
+description: The events defined in RadBrowseEditor provide an easy way to track user input and perform validation.
 slug: winforms/editors/browseeditor/working-with-radbrowseeditor
 tags: working,with,radbrowseeditor
 published: True
-position: 2
+position: 5
 previous_url: editors-browse-editor-working-with
 ---
 
 # Working with RadBrowseEditor
  
-## Properties
+The events defined in __RadBrowseEditor__ provide an easy way to track user input and perform validation. The example handles such scenario.
 
-__Value__: this property gets or sets the value of the editor.
-        
-
-__ReadOnly__: When this property is set to true, the control prevents direct text entry and allows the value to be changed only through the browse button. By default this property is true.
-		  
-
-__DialogType__: This property determines what type of dialog will be opened when the browse button is pressed. There are two options: OpenFileDialog and FolderBrowserDialog for selecting files or directories respectively.
-		 
-
-## Events
-
-__ValueChanging__: This event fires before the value changes and allows you to prevent changing the value. The event passes a __ValueChangingEventArgs__ parameter that includes the __OldValue__, __NewValue__ and __Cancel__ properties. Set __Cancel__ to true to prevent the change. The example below cancels the value changing if the new value is an invalid file path:
-
-#### Cancel changing the value 
+#### Cancel ValueChanging Event 
 
 {{source=..\SamplesCS\Editors\BrowseEditor1.cs region=browseEditorValueChanging}} 
 {{source=..\SamplesVB\Editors\BrowseEditor1.vb region=browseEditorValueChanging}} 
@@ -45,7 +32,12 @@ End Sub
 
 ````
 
-{{endregion}} 
+{{endregion}}
+
+## See Also
+
+* [Properties and Events]({%slug winforms/editors/browseeditor/properties-events%})
+
 
 
 

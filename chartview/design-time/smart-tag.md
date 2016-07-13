@@ -9,7 +9,7 @@ position: 0
 previous_url: chartview-designtime
 ---
 
-# Design time
+# Smart Tag
 
 In this article we will describe the design time abilities of __RadChartView__. 
 

@@ -11,7 +11,7 @@ previous_url: editors-browse-editor-overview
 
 # Browse Editor
 
-__RadBrowseEditor__ is a themable control which allows users to select a file or a directory from the file system or directly type the full path in the editor.
+__RadBrowseEditor__ is a themable control which allows users to select a file or a directory from the file system or directly type the full path to it in the editor.
 
 >caption Figure 1: RadBrowseEditor
 ![editors-browse-editor-overview 001](images/editors-browse-editor-overview001.png)

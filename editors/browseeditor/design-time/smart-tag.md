@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Design time
+# Smart Tag
 
 In this article we will describe the design time abilities of __RadBrowseEditor__ provided by its Smart Tag. 
 

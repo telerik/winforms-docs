@@ -5,7 +5,7 @@ description: The following example demonstrates how to change the image of a Rad
 slug: winforms/editors/browseeditor/getting-started
 tags: getting,started
 published: True
-position: 2
+position: 3
 previous_url: editors-browse-editor-getting-started
 ---
 
@@ -16,11 +16,11 @@ The following example demonstrates how to change the image of a __RadButton__ us
 >caption Figure 1: Browsed Image
 ![editors-browse-editor-getting-started 001](images/editors-browse-editor-getting-started001.png)
 
-1. Drag a __RadBrowseEditor__ and a __RadButton__ on a form.
+1\. Drag a __RadBrowseEditor__ and a __RadButton__ on a form.
 
-1. Select the __RadButton__ and in the __Property Window__ set the __DisplayStyle__ to __Image__
+2\. Select the __RadButton__ and in the __Property Window__ set the __DisplayStyle__ to __Image__
 
-1. Select the __RadBrowseEditor__, click the __Events tab__ of the __Property Window__, locate the __ValueChanged__ event and double-click it in order to create an event handler. Replace the event handler with the following code. 
+3\. Select the __RadBrowseEditor__, click the __Events tab__ of the __Property Window__, locate the __ValueChanged__ event and double-click it in order to create an event handler. Replace the event handler with the following code. 
 
 {{source=..\SamplesCS\Editors\BrowseEditor1.cs region=browseEditorValueChanged}} 
 {{source=..\SamplesVB\Editors\BrowseEditor1.vb region=browseEditorValueChanged}} 
@@ -47,4 +47,4 @@ End Sub
 
 * [Structure]({%slug winforms/editors/browseeditor/structure%})
 * [Smart Tag]({%slug winforms/browseeditor/design-time/smart-tag%})
-* [Dialog Type]({%slug winforms/chartview-/series-types%})
+* [Dialog Types]({%slug winforms/editors/browseeditor/dialog-types%})
