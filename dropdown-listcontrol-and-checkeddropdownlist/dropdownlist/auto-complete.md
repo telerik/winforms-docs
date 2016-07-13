@@ -1,7 +1,7 @@
 ---
 title: Auto-complete
 page_title: Auto-complete | UI for WinForms Documentation
-description: Auto-complete
+description: RadDropDownList provides flexible auto-completion options that suggest and append text from choices in the list as the user types.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/auto-complete
 tags: auto-complete
 published: True
@@ -16,15 +16,15 @@ __RadDropDownList__ provides flexible auto-completion options that suggest and  
 
 ## AutoCompleteMode
 
-The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavior and can be set to *None, Suggest,Append* and *SuggestAppend*:
+The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavior and can be set to *None, Suggest, Append* and *SuggestAppend*:
          
-
->note All auto-complete modes depend on the value of the boolean __CaseSensitive__ property.
+>note All auto-complete modes depend on the value of the Boolean __CaseSensitive__ property.
 >
 
+* __None__: Nothing happens when a user begins to type into the text box part of the control. If the user types the whole text of an item and presses Enter, the item is selected. 
 
-* __None__: Nothing happens when a user begins to type into the text box portion of the control. If the user types the whole text of an item and presses Enter, the item is selected. 
-
+>caption Figure 1: AutoCompleteMode.None 
+ 
 ![dropdown-and-listcontrol-dropdownlist-autocompleate 001](images/dropdown-and-listcontrol-dropdownlist-autocompleate001.png)
 
 #### AutoCompleteMode.None 
@@ -44,7 +44,9 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None
 
 {{endregion}} 
  
-* __Suggest__: As the user types an entry into the text box, the drop-down portion of the control is shown, and the displayed items are filtered according to the entered text
+* __Suggest__: As the user types an entry into the text box, the drop-down part of the control is shown, and the displayed items are filtered according to the entered text.
+
+>caption Figure 2: AutoCompleteMode.Suggest 
 
 ![dropdown-and-listcontrol-dropdownlist-autocompleate 002](images/dropdown-and-listcontrol-dropdownlist-autocompleate002.png)
 
@@ -65,6 +67,7 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest
 
 {{endregion}} 
  
+>caption Figure 3: AutoCompleteMode.Append 
 
 * __Append__: As the user types, the next item in the list that matches the user input is automatically appended to the characters the user has already typed. The drop-down list is not shown without the user clicking the arrow.
 
@@ -89,6 +92,8 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Append
  
 * __SuggestAppend__: Similar to the Append setting, but the drop-down list is shown and the suggested item is highlighted.
 
+>caption Figure 4: AutoCompleteMode.SuggestAppend
+
 ![dropdown-and-listcontrol-dropdownlist-autocompleate 004](images/dropdown-and-listcontrol-dropdownlist-autocompleate004.png)
 
 #### AutoCompleteMode.SuggestAppend 
@@ -110,12 +115,14 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
  
 ## Auto-complete helpers
 
+__RadDropDownList__ internally uses auto-complete helpers to perform the auto-complete functionality.
+
 \* __AutoCompleteSuggestHelper__: it is created when the __AutoCompleteMode__ property is set to AutoCompleteMode.*Suggest* or AutoCompleteMode.*SuggestAppend*. You can find below the __AutoCompleteSuggestHelper__'s properties:
             
 
 * __SuggestMode__: determines whether the items are auto-completed considering whether the text starts with or contains the searched text.
                 
->caption Fig.5 SuggestMode.Contains
+>caption Figure 5: SuggestMode.Contains
 
 ![dropdown-and-listcontrol-dropdownlist-autocompleate 005](images/dropdown-and-listcontrol-dropdownlist-autocompleate005.png)
 
@@ -164,7 +171,7 @@ Me.radDropDownList1.DropDownListElement.AutoCompleteAppend.LimitToList = True
 
 By default, the items displayed in the __AutoCompleteSuggestHelper__’s pop-up are sorted alphabetically. The following example demonstrates how to manipulate the sort order considering the item’s Text.__Length__ property:
 
->caption Fig.6 Custom comparer
+>caption Figure 6: Custom comparer
 
 ![dropdown-and-listcontrol-dropdownlist-autocompleate 006](images/dropdown-and-listcontrol-dropdownlist-autocompleate006.png)
 

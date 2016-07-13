@@ -1,7 +1,7 @@
 ---
-title: Data binding
-page_title: Data binding | UI for WinForms Documentation
-description: Data binding
+title: Data Binding
+page_title: Data Binding | UI for WinForms Documentation
+description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/data-binding
 tags: data,binding
 published: True
@@ -21,6 +21,7 @@ Data binding is a mechanism for automatic population of the __RadDropDownList__ 
 
 * __ValueMember__ - specifies the particular field in the data source which will be stored in the items Value property.
           
+__RadDropDownList__ supports data binding either at design time or at run time:
 
 ## Data binding at design time
 
@@ -30,17 +31,17 @@ You can set the __DataSource__ property at design time in the *Properties* windo
 
 1. Click the *Add Project Data Source…* link and follow the instructions in the *Data Source Configuration Wizard*  to add a data source to your project. You can use a single database table. 
 
-	>caption Fig.1 Setting the DataSource at Design time
+	>caption Figure: 1 Setting the DataSource at Design time
 
 	![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 001](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding001.png)
 
 1. Afterwards, you need to specify the __DisplayMember__ and __ValueMember__ properties.
 
-	>caption Fig.2 Setting the DisplayMember and ValueMember properties at Design time
+	>caption Figure: 2 Setting the DisplayMember and ValueMember properties at Design time
 
 	![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 002](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding002.png)
 
-	>caption Fig.3 RadDropDownList bound at Design time
+	>caption Figure: 3 RadDropDownList bound at Design time
 
 	![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 003](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding003.png)
 
@@ -120,6 +121,9 @@ End Sub
 
 {{endregion}} 
  
->caption Fig.4 RadDropDownList bound at Run time
+>caption Figure: 4 RadDropDownList bound at Run time
 
 ![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 004](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding004.png)
+
+* [Design Time]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/design-time%})
+* [Adding Items Programmatically]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/adding-items-programmatically%})
