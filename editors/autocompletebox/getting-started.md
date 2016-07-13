@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+description: This article describes how you can start using RadAutoCompleteBox.
 slug: winforms/editors/autocompletebox/getting-started
 tags: getting,started
 published: True
@@ -43,12 +43,11 @@ End Sub
 
 {{endregion}} 
  
-Here is the output:
+>caption Figure 1: Set the text of RadAutoCompleteBox.
 
 ![editors-autocompletebox-getting-started 001](images/editors-autocompletebox-getting-started001.png)
 
 You can determine the visibility of the remove button by changing the __ShowRemoveButton__ property: 
-
 
 {{source=..\SamplesCS\editors\AutoCompleteBox.cs region=ShowRemoveButton}} 
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=ShowRemoveButton}} 
@@ -64,25 +63,8 @@ Me.RadAutoCompleteBox1.ShowRemoveButton = False
 
 {{endregion}} 
 
+>caption Figure 2: The Tokenized items are not showing the close button.
 
 ![editors-autocompletebox-getting-started 002](images/editors-autocompletebox-getting-started002.png)
 
-To access the tokenized items use the __Items__ collection property of RadAutoCompleteBox: 
 
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=AccessToken}} 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=AccessToken}} 
-
-````C#
-RadTokenizedTextItem thirdToken = radAutoCompleteBox1.Items[2];
-
-````
-````VB.NET
-Dim thirdToken As RadTokenizedTextItem = RadAutoCompleteBox1.Items(2)
-
-````
-
-{{endregion}} 
-  
-Setting the __NullText__ property will display a custom string when the Text property is empty or null:
-
-![editors-autocompletebox-getting-started 003](images/editors-autocompletebox-getting-started003.png)

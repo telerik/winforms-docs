@@ -1,7 +1,7 @@
 ---
 title: Element Structure and Document Object Model
 page_title: Element Structure and Document Object Model | UI for WinForms Documentation
-description: Element Structure and Document Object Model
+description: This article shows the element structure of RadAutoCompleteBox
 slug: winforms/editors/autocompletebox/element-structure-and-document-object-model
 tags: element,structure,and,document,object,model
 published: True
@@ -17,6 +17,8 @@ The document object model of __RadAutoCompleteBox__ is represented by the __Line
 ## RadTextBoxControlElement
 
 The visual element structure of the RadTextBoxControlElement is presented on the following diagram:
+
+>caption Figure 1: The elements used in RadAutoCompleteBox
 
 ![editors-autocompletebox-element-structure-and-dom 001](images/editors-autocompletebox-element-structure-and-dom001.png)
 

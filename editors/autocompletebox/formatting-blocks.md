@@ -1,7 +1,7 @@
 ---
 title: Formatting Blocks
 page_title: Formatting Blocks | UI for WinForms Documentation
-description: Formatting Blocks
+description: This article shows how one can change the tokenized elements styles.
 slug: winforms/editors/autocompletebox/formatting-blocks
 tags: formatting,blocks
 published: True

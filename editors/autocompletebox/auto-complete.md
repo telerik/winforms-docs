@@ -1,7 +1,7 @@
 ---
 title: Auto-Complete
 page_title: Auto-Complete | UI for WinForms Documentation
-description: Auto-Complete
+description: This article describes which are the supported auto-complete modes.
 slug: winforms/editors/autocompletebox/auto-complete
 tags: auto-complete
 published: True
@@ -52,7 +52,8 @@ Three properties control data binding:
 * The __AutoCompleteValueMember__ property specifies the particular data to be returned as the value of the tokenized block element.
 
 To set the __AutoCompleteDataSource__ property, select the __AutoCompleteDataSource__ in the `Properties` window of Visual Studio, click the drop-down arrow to display all existing data sources on the form. Click the `Add Project Data Source` link and follow the instructions in the `Data Source Configuration Wizard` to add a data source to your project. You can use databases, web services, or objects as data sources.
-        
+
+>caption Figure 1: The AutoCompleteDataSource property in Visual Studio.        
 ![editors-autocompletebox-autocomplete 001](images/editors-autocompletebox-autocomplete001.png)
 
 __AutoCompleteDisplayMember__: To set the __AutoCompleteDisplayMember__ property, first set the data source property. Then, select a value for the __AutoCompleteDisplayMember__ property from the drop-down list in the Properties window.
@@ -113,7 +114,6 @@ End Sub
 
 {{endregion}} 
  
-
-Here is the result of the above code:
+>caption Figure 2: RadAutoCompleteBox with some items added directly. 
 
 ![editors-autocompletebox-autocomplete 002](images/editors-autocompletebox-autocomplete002.png)

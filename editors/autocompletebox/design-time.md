@@ -12,7 +12,9 @@ position: 2
 
 The __Smart Tag__ of __RadAutoCompleteBox__ lets you quickly access common tasks involved with and customizing the layout or setting the theme.
 
-![autocompletebox-smart-tag001.png](images/bindingnavigator-smart-tag001.png) 
+>caption Figure 1: The Smart Tag of RadAutoCompleteBox
+
+![autocompletebox-smart-tag001.png](images/autocompletebox-smart-tag001.png) 
 
 * __Common Tasks__
     - __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.

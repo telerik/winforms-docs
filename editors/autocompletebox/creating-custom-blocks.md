@@ -1,7 +1,7 @@
 ---
 title: Creating Custom Blocks
 page_title: Creating Custom Blocks | UI for WinForms Documentation
-description: Creating Custom Blocks
+description: This article describes how you can create custom tokens with RadAutoCompleteBox.
 slug: winforms/editors/autocompletebox/creating-custom-blocks
 tags: creating,custom,blocks
 published: True
@@ -140,7 +140,6 @@ End Sub
 
 {{endregion}} 
 
-
-The following screen demonstrates the final result:
+The following image demonstrates the final result:
 
 ![editors-autocompletebox-creating-custom-blocks 001](images/editors-autocompletebox-creating-custom-blocks001.png)
