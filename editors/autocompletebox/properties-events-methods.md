@@ -27,3 +27,13 @@ position: 8
 |__CreateTextBlock__|Occurs when an instance of ITextBlock is created.|
 |__TextBlockFormatting__|Allows you to change the styles if the text blocks.|
 |__TextChanging__|Occurs when the text is changing.|
+
+
+
+# See Also
+
+* [Caret Positioning and Selection]({%slug winforms/editors/autocompletebox/caret-positioning-and-selection%})
+* [Creating Custom Blocks]({%slug winforms/editors/autocompletebox/creating-custom-blocks%})
+* [Element Structure and Document Object Model]({%slug winforms/editors/autocompletebox/element-structure-and-document-object-model%})
+* [Text Editing]({%slug winforms/editors/autocompletebox/text-editing%})
+* [Auto-Complete]({%slug winforms/editors/autocompletebox/auto-complete%})

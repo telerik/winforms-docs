@@ -47,3 +47,7 @@ End Sub
 
 Note that the event occurs when the text blocks are repositioned. This happens in different cases - editing, control resizing and etc. Hence, you should subscribe to the event before initializing the __Text__ property.
 		
+# See Also
+
+* [Customize Fill and Border]({%slug winforms/editors/autocompletebox/fill-and-border%})
+* [Themes]({%slug winforms/editors/autocompletebox/themes%})
