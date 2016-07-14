@@ -1,7 +1,7 @@
 ---
 title: Filtering
 page_title: Filtering | UI for WinForms Documentation
-description: Filtering
+description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/filtering
 tags: filtering
 published: True
@@ -10,8 +10,6 @@ previous_url: dropdown-and-listcontrol-dropdownlist-filtering
 ---
 
 # Filtering
- 
-## 
 
 __RadDropDownList__ supports filtering of its items. In order to apply a filter, you should set the __Filter__ property of __RadDropDownList__ to a predicate that will be called for every data item in order to determine if the item will be visible.
 
@@ -29,10 +27,7 @@ Me.radDropDownList1.Filter = AddressOf FilterItem
 
 ```` 
 
-    
-
 {{endregion}} 
-
 
 #### Filtering predicate 
 
@@ -61,14 +56,12 @@ End Function
 
 ```` 
 
-
-
 {{endregion}} 
  
 
 If you apply the above filter to a __RadDropDownList__ that is bound to the Northwind.__Customers__ table you will obtain the following result:
         
->caption Fig.1 Filter
+>caption Figure 1: Filter
 
 ![dropdown-and-listcontrol-dropdownlist-filtering 001](images/dropdown-and-listcontrol-dropdownlist-filtering001.png)
 
@@ -87,14 +80,12 @@ Me.radDropDownList1.FilterExpression = "Country LIKE 'Argentina'"
 
 ```` 
 
-
-
 {{endregion}} 
  
->caption Fig.2 FilteringExpression
+>caption Figure 2: FilteringExpression
 
 ![dropdown-and-listcontrol-dropdownlist-filtering 002](images/dropdown-and-listcontrol-dropdownlist-filtering002.png)
 
->note The __IsFilterActive__ property gets a value indicating whether there is a Filter or FilterExpression set.
+>note The __IsFilterActive__ property gets a value indicating whether there is a __Filter__ or __FilterExpression__ set.
 >
 

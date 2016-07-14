@@ -1,7 +1,7 @@
 ---
 title: Custom Items
 page_title: Custom Items | UI for WinForms Documentation
-description: Custom Items
+description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/custom-items
 tags: custom,items
 published: True
@@ -13,10 +13,9 @@ previous_url: dropdown-and-listcontrol-dropdownlist-customizing-items
  
 By default, __RadDropDownList__ displays text and image in its drop-down items. However, the default layout might not be suitable for you, and in this case you can use the flexible mechanism it features for creating visual items with custom content elements, functionality and properties.
 
-## 
-
 This article demonstrates how to display detailed information for each employee from the Northwind.__Employees__ table which is used as data source.
->caption Fig.1 Custom visual items
+
+>caption Figure 1: Custom visual items
 
 ![dropdown-and-listcontrol-dropdownlist-customizing-items 003](images/dropdown-and-listcontrol-dropdownlist-customizing-items003.png)
 

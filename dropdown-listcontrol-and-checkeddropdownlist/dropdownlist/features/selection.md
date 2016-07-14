@@ -1,7 +1,7 @@
 ---
 title: Selection
 page_title: Selection | UI for WinForms Documentation
-description: Selection
+description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/selection
 tags: selection
 published: True
@@ -24,7 +24,7 @@ __RadDropDownList__ supports three types of selection modes:
 
 * __MultiExtended__: Multiple selection which can also be performed by using the Ctrl, Shift and arrow keys.
             
->caption Fig.1 MutiExtended Selection Mode
+>caption Figure 1: MutiExtended Selection Mode
 
 ![dropdown-and-listcontrol-dropdownlist-selection 001](images/dropdown-and-listcontrol-dropdownlist-selection001.png)
 
@@ -48,7 +48,7 @@ Me.radDropDownList1.DropDownListElement.SelectionMode = SelectionMode.MultiExten
 ## Select Next Item
 
 __RadDropDownList__ can automatically select the next item when a double click in the edit box is performed.
->caption Fig.2 Select Next Item
+>caption Figure 2: Select Next Item
 
 ![dropdown-and-listcontrol-dropdownlist-selection 002](images/dropdown-and-listcontrol-dropdownlist-selection002.gif)
 
