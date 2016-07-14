@@ -13,7 +13,7 @@ previous_url: calendar-customizing-appearance-zooming, /calendar/customizing-app
 
 __RadCalendar__ has a built-in date zoom functionality.The  __Zoom-In__ operation is activated by holding the left mouse button on a particular calendar cell. The __Zoom-Out__ operation is activated when the left mouse button is released. The following properties control zooming:
 
-* __AllowFishEye:__ Enables the zooming functionality 
+* __AllowFishEye:__ Enables the zooming functionality.
 
 * __ZoomingFactor:__ Gets or sets the zooming factor of a cell which is handled by the zooming (fish eye) functionality. 
 
