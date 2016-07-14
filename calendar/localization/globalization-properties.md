@@ -55,5 +55,4 @@ Additional properties that relate to globalization are:
 * [Localization]({%slug  winforms/calendar/localization%})
 * [Localization Provider]({%slug winforms/calendar/localization/localization-provider%})
 * [Properties that can be localized]({%slug winforms/calendar/localization/properties-that-can-be-localized%})
-
 * [Right-To-Left Support]({%slug winforms/calendar/localization/right-to-left-support%})
