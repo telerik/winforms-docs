@@ -10,9 +10,13 @@ previous_url: editors-color-box-overview
 ---
 
 # ColorBox
- 
-## 
 
-RadColorBox is a themable control which allows users to select a color from a color dialog or to directly type it in the text field.
+The main purpose of the control is to allow the user to select a color from a [color dialog]({%slug winforms/forms-and-dialogs/colordialog%}) with preset colors or to type the color directly into the text field. The control then displays the color name if it is a named color or the RGB values of the selected color. A small rectangle filled with the selected color is displayed as well. The __RadColorBox__ supports input in the following formats:
+
+* RGB – (203, 252, 12)
+* Name – Red
+* Hex - #CBFC0C
+
+>caption Figure 1: RadColorBox
 
 ![editors-color-box-overview 001](images/editors-color-box-overview001.png)
