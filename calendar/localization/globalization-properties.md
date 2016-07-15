@@ -13,6 +13,8 @@ previous_url: calendar-localization-globalization-properties
 
 The __Culture__ property can be set using the drop down list in the Properties Window or set in code. The screenshot below shows the __Culture__ property set to "French (France)".
 
+>caption Figure 1: RadCalendar with French culture.
+
 ![calendar-localization-globalization-properties 001](images/calendar-localization-globalization-properties001.png)
 
 #### Setting CultureInfo in code 

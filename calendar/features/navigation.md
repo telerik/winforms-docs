@@ -18,7 +18,9 @@ __RadCalendar__ provides two types of navigation that allow you to switch or jum
             
 
 * __Jump N months forward/backward__ - allows you to jump N number of months (one view can have several months if [Multiview Mode]({%slug winforms/calendar/customizing-behavior/multiview-mode%}) is enabled) forward or backward when you click the "<<" or ">>" buttons. The jump step is specified in the __FastNavigationStep__ property. For example where two months are displayed and __FastNavigationStep__ = "2", __RadCalendar__ will jump 4 instead of 2 months ahead.  If the initial view shows January and February and the fast navigation button forward button is clicked then __RadCalendar__ will show May and June. 
-            
+
+>caption Figure 1: The navigation pane of RadCalendar. 
+
 ![calendar-customizing-behaviour-customizing-navigation 001](images/calendar-customizing-behaviour-customizing-navigation001.png)
 
 ## Navigation properties:

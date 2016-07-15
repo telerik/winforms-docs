@@ -16,6 +16,8 @@ __RadCalendar__ provides a collection of dynamic templates that customize the pr
 
 In the example below a __PictureBox__ control is created and assigned an image from an __ImageList__. A new instance of __RadHostItem__ is created passing the picture box in its constructor.  Finally we set the __TemplateItem__ property of the special day.  When the day is rendered the associated image is displayed in the cell for that day. The example assumes that you have an instance of `ImageList` on the form populated with at least one image and at least one special day added to the __SpecialDays__ collection of __RadCalendar__.
 
+>caption Figure 1: RadCalndar with a picture box added to a cell.
+
 ![calendar-customizing-appearance-using-templates 001](images/calendar-customizing-appearance-using-templates001.png)
 
 #### Assigning a TemplateItem 

@@ -13,7 +13,7 @@ previous_url: calendar-customizing-behavior-column-and-row-headers, /calendar/cu
 
 __RadCalendar__ supports row and column headers that can be enabled by setting the __ShowRowHeaders__, __ShowColumnHeaders__ and __ShowViewSelector__ properties:
 
->caption The column/row headers and the view selector
+>caption Figure 1: The column/row headers and the view selector
 ![calendar-features-column-and-row-headers 001](images/calendar-features-column-and-row-headers001.png)
 
 {{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=showingHeaders}} 

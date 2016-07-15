@@ -9,6 +9,8 @@ position: 2
 ---
 The Smart Tag of __RadCalendar__ lets you quickly access common tasks involved with customizing appearance or setting the theme.
 
+>caption Figure 1: The smart tag of RadCalendar.
+
 ![calendar-smart-tag001.png](images/calendar-smart-tag001.png) 
 
 * __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.
