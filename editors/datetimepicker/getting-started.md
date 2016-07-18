@@ -10,8 +10,6 @@ previous_url: editors-datetimepicker-getting-started
 ---
 
 # Getting Started
- 
-## 
 
 The following tutorial demonstrates basic usage of __RadDateTimePicker__, formatting and applying themes.
 

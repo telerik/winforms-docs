@@ -11,7 +11,7 @@ previous_url: editors-datetimepicker-internationalization-cultureinfo-and-region
 
 # CultureInfo and RegionInfo Basics
  
-Telerik __RadDateTimePicker__ provides full support for the __System.Globalization Namespace__. This namespace consists of classes (__CompareInfo__, __CultureInfo__, __RegionInfo__, etc.) which contain culture-related information, such as the language, country/region, calendars in use, format patterns for dates, currency, and numbers, and the sort order for strings. They are useful classes for writing internationalized applications.
+__RadDateTimePicker__ provides full support for the __System.Globalization Namespace__. This namespace consists of classes (__CompareInfo__, __CultureInfo__, __RegionInfo__, etc.) which contain culture-related information, such as the language, country/region, calendars in use, format patterns for dates, currency, and numbers, and the sort order for strings. They are useful classes for writing internationalized applications.
 
 Two of the most important classes in this namespace are: __CultureInfo__ and __RegionInfo__. 
 

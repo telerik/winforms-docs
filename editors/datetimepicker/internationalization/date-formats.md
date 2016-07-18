@@ -10,8 +10,7 @@ previous_url: editors-datetimepicker-internationalization-date-formats
 ---
 
 # Date Formats
- 
-## 
+
 
 The table below displays a list of the standard format characters supported by __RadDateTimePicker__. The format characters are case-sensitive; for example, 'f' and 'F' represent different patterns.
  

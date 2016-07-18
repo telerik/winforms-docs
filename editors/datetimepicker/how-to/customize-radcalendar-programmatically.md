@@ -10,10 +10,9 @@ previous_url: editors-datetimepicker-how-to-customize-radcalendar-programmatical
 ---
 
 # Customize RadCalendar Programmatically
- 
-## 
 
-In order to customize RadCalendar in RadDateTimePicker, you should first take the instance of the RadCalendar. You can do so by calling the __GetCurrentBehavior__() method. For example, if we want to change the font and colors of the RadCalendar navigation title, we need to use the following code snippet:
+
+In order to customize __RadCalendar__ in __RadDateTimePicker__, you should first take the instance of the __RadCalendar__. You can do so by calling the __GetCurrentBehavior__() method. For example, if we want to change the font and colors of the __RadCalendar__ navigation title, we need to use the following code snippet:
 
 #### Changing the font of RadCalendar navigation title 
  

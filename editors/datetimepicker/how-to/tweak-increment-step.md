@@ -11,13 +11,13 @@ previous_url: editors-maskededitbox-how-to-tweak-increment-step
 
 # Tweak Increment Step
  
-The rich API of RadDateTimePicker allows you to change the increment/decrement step for each date/time part of the datetime value. For example, you can allow the end-user to increment/decrement the minutes value only by 5 and not by 1 as it is by default. The example below demonstrates how to do this:    
+The rich API of __RadDateTimePicker__ allows you to change the increment/decrement step for each date/time part of the datetime value. For example, you can allow the end-user to increment/decrement the minutes value only by 5 and not by 1 as it is by default. The example below demonstrates how to do this:    
 
 ## Increasing increment/decrement step example
 
-Let's give a brief overview of the approach. When the user clicks the up/down arrow buttons or presses the arrow keys, the ValueChanged event is fired. We need to handle this event for several reasons. First, we need to understand where the value of the RadDateTimePicker is increased or decreased. To do so, we have initially set a variable equal to the initial value of RadDateTimePicker which we compare to the changed value of RadDateTimePicker. Second, we use ValueChanged event to additionally modify the changed value of RadDateTimePicker in the appropriate direction (up or down). Since we are changing a value in ValueChanged event, we need to set and reset a boolean flag, thus avoiding StackOverflowException.  
+When the user clicks the up/down arrow buttons or presses the arrow keys, the __ValueChanged__ event is fired. We need to handle this event for several reasons. First, we need to understand if the value of the __RadDateTimePicker__ is increased or decreased.  Second, we use __ValueChanged__ event to additionally modify the changed value of RadDateTimePicker in the appropriate direction (up or down). Since we are changing a value in __ValueChanged__ event, we need to set and reset a boolean flag, this is necessary because setting the value in the code will trigger the event as well.  
 
-As a prerequisite for the example, RadDateTimePicker should of course show minutes and to demonstrate the full power of the example, we also may want to show up/down arrow buttons instead of a dropdown button. To these customizations, we need to set the following code lines: 
+As a prerequisite for the example, __RadDateTimePicker__ should of course show minutes and to demonstrate the full power of the example, we also may want to show up/down arrow buttons instead of a dropdown button. To these customizations, we need to add the following code: 
 
 {{source=..\SamplesCS\Editors\DateTimePicker1.cs region=prerequisite}} 
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=prerequisite}} 
@@ -39,8 +39,7 @@ Me.RadDateTimePicker1.ShowUpDown = True
  
 Here is the approach divided into separate steps:
 
-1\. In Form Load event handler we subscribe to the ValueChanged event of RadDateTimePicker. We also 
-  define a DateTime variable globally which holds the initial value of RadDateTimePicker: 
+1\. In the form's `Load` event handler subscribe to the __ValueChanged__ event of RadDateTimePicker. Define a DateTime variable globally which holds the initial value: 
 
 {{source=..\SamplesCS\Editors\DateTimePicker1.cs region=initialization}} 
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=initialization}} 
@@ -65,7 +64,7 @@ End Sub
 
 {{endregion}} 
  
-2\. Here comes the ValueChanged handler implementation. In this part we are first checking whether the new value of RadDateTimePicker is bigger than the old one or not. Then, we are getting the MaskDateTimeProvider responsible for the navigation between the date/time parts - hours, minutes, etc. If the provider states that the currently selected time part is minutes, we, depending on the the direction in which we want to change the value, call the Up/Down method four times, so that we can have a step of 5 minutes as a result. Please note that we are setting and resetting the boolean flag suspendValueChanged so that we can safely call Up/Down methods: 
+2\. Here comes the ValueChanged handler implementation. In this part we are first checking whether the new value of RadDateTimePicker is bigger than the old one or not. Then, we are getting the MaskDateTimeProvider responsible for the navigation between the date/time parts - hours, minutes, etc. If the provider states that the currently selected time part is minutes, we, depending on the the direction in which we want to change the value, call the __Up/Down__ method four times, so that we can have a step of 5 minutes as a result. Please note that we are setting and resetting the boolean flag __suspendValueChanged__ so that we can safely call __Up/Down__ methods: 
 
 {{source=..\SamplesCS\Editors\DateTimePicker1.cs region=valueChanged}} 
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=valueChanged}} 
@@ -132,6 +131,6 @@ End Sub
 
 {{endregion}} 
  
-The result is shown below. Just with a single key stroke of the up arrow key, we increase the value of the
-minutes by 5:
-![editors-maskededitbox-how-to-tweak-increment-step 001](images/editors-maskededitbox-how-to-tweak-increment-step001.png)![editors-maskededitbox-how-to-tweak-increment-step 002](images/editors-maskededitbox-how-to-tweak-increment-step002.png)
+The result is shown below. Just with a single key stroke of the up arrow key, we increase the value of the minutes by 5:
+
+![editors-maskededitbox-how-to-tweak-increment-step 001](images/editors-maskededitbox-how-to-tweak-increment-step001.gif)
