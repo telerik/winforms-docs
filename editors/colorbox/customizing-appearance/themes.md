@@ -25,3 +25,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
    ![colorbox-themes003](images/colorbox-themes003.png)
 
 >note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
+
+# See Also
+
+* [Customizing Appearance]({%slug winforms/editors/customizing-appearance%})

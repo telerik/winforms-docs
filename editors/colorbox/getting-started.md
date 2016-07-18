@@ -41,3 +41,9 @@ End Sub
 {{endregion}} 
  
 3.\ Press __F5__ to run the application. Press the color dialog button and select a color. The color is then applied as __ForeColor__ of the __RadLabel__.
+
+# See Also
+
+* [Design Time]({%slug winforms/editors/design-time%})
+* [Structure]({%slug winforms/editors/structure%})
+* [Properties and Events]({%slug winforms/editors/colorbox/working-with-radcolorbox%})

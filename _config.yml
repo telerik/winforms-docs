@@ -329,6 +329,9 @@ navigation:
     editors/colorbox:
         title: ColorBox 
         position: 3
+    editors/colorbox/customizing-appearance:
+        title: Customizing Appearance
+        position: 6		
     editors/datetimepicker:
         title: DateTimePicker 
         position: 4

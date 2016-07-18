@@ -20,3 +20,11 @@ The main purpose of the control is to allow the user to select a color from a [c
 >caption Figure 1: RadColorBox
 
 ![editors-color-box-overview 001](images/editors-color-box-overview001.png)
+
+
+# See Also
+
+* [Design Time]({%slug winforms/editors/design-time%})
+* [Getting Started]({%slug winforms/editors/colorbox/getting-started%})
+* [Structure]({%slug winforms/editors/structure%})
+* [Properties and Events]({%slug winforms/editors/colorbox/working-with-radcolorbox%})
