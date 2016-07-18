@@ -1,7 +1,7 @@
 ---
 title: Item Sizing
 page_title: Item Sizing | UI for WinForms Documentation
-description: Item Sizing
+description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/item-sizing
 tags: item,sizing
 published: True
@@ -13,8 +13,9 @@ previous_url: dropdown-and-listcontrol-dropdownlist-item-sizing
  
 ## ItemHeight
 
-By default, all items in __RadDropDownList__ have equal height, 18px. You can set the ListElement.__ItemHeight__  property in order to specify the desired height for all items.
->caption Fig.1 ItemHeight
+By default, all items in __RadDropDownList__ have equal height, *18px*. You can set the ListElement.__ItemHeight__  property in order to specify the desired height for all items.
+
+>caption Figure 1: ItemHeight
 
 ![dropdown-and-listcontrol-dropdownlist-item-sizing 001](images/dropdown-and-listcontrol-dropdownlist-item-sizing001.png)
 
@@ -40,9 +41,9 @@ Me.RadDropDownList1.ListElement.ItemHeight = 40
 
 ## AutoSizeItems
 
-RadDropDownList.__AutoSizeItems__ property indicates whether items will be sized according to their content.       
+The RadDropDownList.__AutoSizeItems__ property indicates whether items will be sized according to their content.       
       
->caption Fig.2 AutoSizeItems
+>caption Figure 2: AutoSizeItems
 
 ![dropdown-and-listcontrol-dropdownlist-item-sizing 002](images/dropdown-and-listcontrol-dropdownlist-item-sizing002.png)
 
@@ -67,7 +68,7 @@ Me.RadDropDownList1.AutoSizeItems = True
  
 If this property is set to *false* the user can set the __Height__ property of each individual __RadListDataItem__ in the __Items__ collection in order to override the automatic sizing.
         
->caption Fig.3 Custom height for each item
+>caption Figure 3: Custom height for each item
 
 ![dropdown-and-listcontrol-dropdownlist-item-sizing 003](images/dropdown-and-listcontrol-dropdownlist-item-sizing003.gif)
 
@@ -116,7 +117,7 @@ Next
 
 When the RadDropDownList.__AutoCompleteMode__ property is set to *Suggest* or *SuggestAppend* you can customize the height of the auto-complete items by setting the DropDownListElement.AutoCompleteSuggest.DropDownList.ListElement.__ItemHeight__ property:
         
->caption Fig.4 AutoCompleteSuggest.DropDownList.ListElement.ItemHeight
+>caption Figure 4: AutoCompleteSuggest.DropDownList.ListElement.ItemHeight
 
 ![dropdown-and-listcontrol-dropdownlist-item-sizing 004](images/dropdown-and-listcontrol-dropdownlist-item-sizing004.png)
 

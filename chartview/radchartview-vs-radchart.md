@@ -89,7 +89,7 @@ Below you may find the full list of series types available at present (R3 2012):
 
 Notes:
 
-* You can use __RangeBarSeries__ instead of Gantt series or you can use [RadGanttView]({%slug winforms/ganttview-%})
+* You can use __RangeBarSeries__ instead of Gantt series or you can use [RadGanttView]({%slug winforms/ganttview%})
 
 # See Also
 

@@ -2,7 +2,7 @@
 title: Overview 
 page_title: GanttView  | UI for WinForms Documentation
 description: GanttView 
-slug: winforms/ganttview-
+slug: winforms/ganttview
 tags: ganttview,
 published: True
 position: 0
