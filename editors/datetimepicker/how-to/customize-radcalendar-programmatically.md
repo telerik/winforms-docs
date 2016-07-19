@@ -1,6 +1,6 @@
 ---
-title: Customize RadCalendar Programmatically
-page_title: Customize RadCalendar Programmatically | UI for WinForms Documentation
+title: Customize the Calendar inside RadDateTimePicker. 
+page_title: Customize the Calendar inside RadDateTimePicker. 
 description: Customize RadCalendar Programmatically
 slug: winforms/editors/datetimepicker/how-to/customize-radcalendar-programmatically
 tags: customize,radcalendar,programmatically
@@ -62,7 +62,7 @@ Next item
 {{endregion}} 
  
 
-The result is shown on the screenshot below:
+>caption Figure 1: The result from the above code:
 
 ![editors-datetimepicker-how-to-customize-radcalendar-programmatically 001](images/editors-datetimepicker-how-to-customize-radcalendar-programmatically001.png)
 

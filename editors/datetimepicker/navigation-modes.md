@@ -1,7 +1,7 @@
 ---
 title: Navigation Modes
-page_title: Navigation Modes | UI for WinForms Documentation
-description: Navigation Modes
+page_title: Navigation Modes - RadDateTimePicker
+description: This article shows how you can change the navigation mode of the underlying calendar
 slug: winforms/editors/datetimepicker/navigation-modes
 tags: navigation,modes
 published: True

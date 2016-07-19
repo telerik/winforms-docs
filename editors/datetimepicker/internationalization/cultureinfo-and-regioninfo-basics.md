@@ -1,7 +1,7 @@
 ---
 title: CultureInfo and RegionInfo Basics
-page_title: CultureInfo and RegionInfo Basics | UI for WinForms Documentation
-description: CultureInfo and RegionInfo Basics
+page_title: CultureInfo and RegionInfo Basics | RadDateTimePicker  
+description: This article shows how you can use RadDateTimePicker with different culture settings.
 slug: winforms/editors/datetimepicker/internationalization/cultureinfo-and-regioninfo-basics
 tags: cultureinfo,and,regioninfo,basics
 published: True
@@ -36,19 +36,19 @@ The table below is a sample list of the names and identifiers found in the Cult
 |ps-AF|0x0463|Pashto - Afghanistan|
 |ar-SA|0x0401|Arabic - Saudi Arabia|
 
->caption Fig.1 Setting Arabic Culture
+>caption Figure: 1 Setting Arabic Culture
 
 ![editors-datetimepicker-internationalization-cultureinfo-and-regioninfo-basics 001](images/editors-datetimepicker-internationalization-cultureinfo-and-regioninfo-basics001.png)
 
-{{source=..\SamplesCS\Calendar\Calendar1.cs region=SetPashtoCulture}} 
-{{source=..\SamplesVB\Calendar\Calendar1.vb region=SetPashtoCulture}} 
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=SetPashtoCulture}} 
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=SetPashtoCulture}} 
 
 ````C#
-this.radCalendar1.Culture = new System.Globalization.CultureInfo("ps-AF");
+this.radDateTimePicker1.Culture = new System.Globalization.CultureInfo("ps-AF");
 
 ````
 ````VB.NET
-Me.RadCalendar1.Culture = New System.Globalization.CultureInfo("ps-AF")
+Me.RadDateTimePicker1.Culture = New System.Globalization.CultureInfo("ps-AF")
 
 ````
 

@@ -1,7 +1,7 @@
 ---
 title: Tweak Increment Step
-page_title: Tweak Increment Step | UI for WinForms Documentation
-description: Tweak Increment Step
+page_title: Tweak Increment Step | RadDateTimePicker
+description: This article shows how you can change th increment step of the up/down buttons. 
 slug: winforms/editors/datetimepicker/how-to/tweak-increment-step
 tags: tweak,increment,step
 published: True
@@ -131,6 +131,6 @@ End Sub
 
 {{endregion}} 
  
-The result is shown below. Just with a single key stroke of the up arrow key, we increase the value of the minutes by 5:
+The result is shown below. Just with a single click of the up arrow key, we increase the value of the minutes by 5:
 
 ![editors-maskededitbox-how-to-tweak-increment-step 001](images/editors-maskededitbox-how-to-tweak-increment-step001.gif)

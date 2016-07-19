@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: DateTimePicker | UI for WinForms Documentation
+page_title: DateTimePicker Overview
 description: RadDateTimePicker allows interactive selection of dates using a drop down calendar. 
 slug: winforms/editors/datetimepicker
 tags: datetimepicker
@@ -20,6 +20,7 @@ __RadDateTimePicker__ allows interactive selection of dates using a drop down ca
 
 * Supports multiple built-in date formats or custom formats.
 
+>caption Figure 1: RadDateTimePicker.
 ![editors-datetimepicker-overview 001](images/editors-datetimepicker-overview001.png)
 
 

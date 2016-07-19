@@ -1,6 +1,6 @@
 ---
 title: Properties
-page_title: Properties | UI for WinForms Documentation
+page_title: Properties - RadDateTimePicker
 description: This article describes the significant properties for RadDateTimePicker.
 slug: winforms/editors/datetimepicker/raddatetimepicker-properties
 tags: raddatetimepicker,properties
