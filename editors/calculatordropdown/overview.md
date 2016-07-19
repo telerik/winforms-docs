@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: CalculatorDropDown | UI for WinForms Documentation
+page_title: CalculatorDropDown Overview
 description: RadCalculatorDropDown has a simple easy-to-use interface enabling the end user to perform all basic calculations such as addition, subtraction, multiplication, division as well as some more complicated ones – reciprocal, square root, negate. 
 slug: winforms/editors/calculatordropdown
 tags: calculatordropdown
@@ -34,8 +34,7 @@ __RadCalculatorDropDown__ key features list:
 
 ## See Also
 
-* [Structure]({%slug winforms/editors/browseeditor/structure%})
-* [Getting Started]({%slug winforms/editors/browseeditor/getting-started%})
-* [Smart Tag]({%slug winforms/browseeditor/design-time/smart-tag%})
-* [Dialog Type]({%slug winforms/chartview-/series-types%})
+* [Structure]({%slug winforms/editors/calculatordropdown/structure%})
+* [Getting Started]({%slug winforms/editors/calculatordropdown/getting-started%})
+* [Smart Tag]({%slug winforms/calculatordropdown/design-time/smart-tag%})
             

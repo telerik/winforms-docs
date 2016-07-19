@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | UI for WinForms Documentation
+page_title: RadCalculatorDropDown Structure
 description: This article describes the inner structure and organization of the elements which build the RadCalculatorDropDown control.
 slug: winforms/editors/calculatordropdown/structure
 tags: element,structure
@@ -21,11 +21,11 @@ __RadCalculatorDropDown__ consists of two parts - editable part which is the act
 >caption Figure 2: RadCalculatorDropDown Structure
 ![editors-calculator-element-structure 002](images/editors-calculator-element-structure002.png)
 
-## Editable area
+## Editable Area
 
 The editable area consists of three elements:
 
-* __Editable Area Part__: Contains the editor repsponsible for handling user input.
+* __Editable Area__: Contains the editor repsponsible for handling user input.
 
   * __RadCalculatorMemoryElement__: This element gets visible when the memory functions of the calculator are used.
 
@@ -33,7 +33,11 @@ The editable area consists of three elements:
   
   * __RadCalculatorArrowButtonElement__: This the arrow button which opens the popup of the control.
 
-* _Drop-Down Part__
+## Drop-down Part
+
+The popup part consists of six elements:
+
+* __Drop-Down__: Handles the arithmetic operations.
 
   * __RadCalculatorMemoryButtonElement__: This is the type of the buttons for memory operations
            
@@ -49,5 +53,5 @@ The editable area consists of three elements:
             
 ## See Also
 
-* [Design Time]({%slug winforms/browseeditor/design-time/smart-tag%})
-* [Getting Started]({%slug winforms/chartview/getting-started%})
+* [Design Time]({%slug winforms/calculatordropdown/design-time/smart-tag%})
+* [Getting Started]({%slug winforms/editors/calculatordropdown/getting-started%})
