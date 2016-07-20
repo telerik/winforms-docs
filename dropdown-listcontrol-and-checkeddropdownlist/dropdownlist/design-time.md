@@ -17,7 +17,7 @@ To start using __RadDropDownList__ just drag it from the toolbox and drop it at 
 
 Select __RadDropDownList__ and click the small arrow on the top right position in order to open the __Smart Tag__. The __Smart Tag__ for __RadDropDownList__ lets you quickly access common tasks involved with building __RadDropDownList__ elements and customizing appearance through themes.
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
 
 ![dropdown-and-listcontrol-dropdownlist-design-time 001](images/dropdown-and-listcontrol-dropdownlist-design-time001.png)
 
@@ -26,7 +26,7 @@ Select __RadDropDownList__ and click the small arrow on the top right position i
 
 * __Edit UI Elements__: allows setting properties at multiple levels of the class hierarchy.
             
->caption Fig.2 Element hierarchy editor
+>caption Figure 2: Element hierarchy editor
 
 ![dropdown-and-listcontrol-dropdownlist-design-time 002](images/dropdown-and-listcontrol-dropdownlist-design-time002.png)
 
