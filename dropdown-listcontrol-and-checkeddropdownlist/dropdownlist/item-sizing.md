@@ -1,6 +1,6 @@
 ---
 title: Item Sizing
-page_title: Item Sizing | UI for WinForms Documentation
+page_title: Item Sizing | RadDropDownList
 description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/item-sizing
 tags: item,sizing

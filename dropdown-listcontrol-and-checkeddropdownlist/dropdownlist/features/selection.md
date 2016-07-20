@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection | UI for WinForms Documentation
+page_title: Selection | RadDropDownList
 description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/selection
 tags: selection

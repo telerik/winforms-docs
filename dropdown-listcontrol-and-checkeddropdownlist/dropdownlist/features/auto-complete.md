@@ -1,6 +1,6 @@
 ---
 title: Auto-complete
-page_title: Auto-complete | UI for WinForms Documentation
+page_title: Auto-complete | RadDropDownList
 description: RadDropDownList provides flexible auto-completion options that suggest and append text from choices in the list as the user types.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/auto-complete
 tags: auto-complete

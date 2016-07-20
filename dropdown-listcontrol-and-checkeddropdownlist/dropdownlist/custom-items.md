@@ -1,6 +1,6 @@
 ---
 title: Custom Items
-page_title: Custom Items | UI for WinForms Documentation
+page_title: Custom Items | RadDropDownList
 description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/custom-items
 tags: custom,items

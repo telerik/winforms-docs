@@ -1,6 +1,6 @@
 ---
 title: Adding Items Programmatically
-page_title: Adding Items Programmatically | UI for WinForms Documentation
+page_title: Adding Items Programmatically | RadDropDownList
 description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/adding-items-programmatically
 tags: adding,items,programmatically
