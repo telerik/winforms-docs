@@ -26,6 +26,7 @@ The __Smart Tag__ of __RadColorBox__ lets you quickly access common tasks involv
 
 # See Also
 
+* [Add Themes]({%slug winforms/themes/using-default-themes%})
 * [Getting Started]({%slug winforms/editors/colorbox/getting-started%})
 * [Structure]({%slug winforms/editors/structure%})
 * [Properties and Events]({%slug winforms/editors/colorbox/working-with-radcolorbox%})

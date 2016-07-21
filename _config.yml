@@ -337,10 +337,13 @@ navigation:
         position: 4
     editors/datetimepicker/internationalization:
         title: Internationalization 
-        position: 5
+        position: 8
     editors/datetimepicker/how-to:
         title: How-to 
-        position: 6
+        position: 9
+    editors/datetimepicker/customizing-appearance:
+        title: Customzing Appearance
+        position: 10
     editors/maskededitbox:
         title: MaskedEditBox
         position: 5

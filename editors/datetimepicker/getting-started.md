@@ -5,7 +5,7 @@ description: This article shows how you can start using RadDateTimePicker.
 slug: winforms/editors/datetimepicker/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: editors-datetimepicker-getting-started
 ---
 

@@ -5,7 +5,7 @@ description: This article shows how you can change the navigation mode of the un
 slug: winforms/editors/datetimepicker/navigation-modes
 tags: navigation,modes
 published: True
-position: 3
+position: 6
 previous_url: editors-datetimepicker-navigation-modes
 ---
 
