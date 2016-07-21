@@ -24,4 +24,8 @@ The logical items that __RadListControl__ creates internally are of type __RadLi
 __RadListVisualItem__ is the class that is used to visually represent the __RadListDataItems__ in __RadListControl__. There is a virtualization mechanism that creates only a few visual items, just enough to fill the area that __RadListControl__ occupies on a form and to allow scrolling. For example, if a __RadListControl__ instance is 100 pixels tall and the list item height has been set to be 20, __RadListControl__ will create only 5 visual items. But how can 5 items visually represent possibly thousands of logical __RadListDataItems__? The virtualization mechanism does this by simply mapping the visual items to the logical items taking into account the scroll bar value. For example, if you scroll down by one item, all visual items will be mapped to one below the previous logical item that they were mapped to initially. In essence, the logical items shift under the visual items and the visual items update accordingly. This means that updating the UI is a constant operation and is instantaneous in the majority of use cases. __RadListVisualItem__ is the second major point of extensibility. __RadListControl__ allows creating custom visual items, just like the logical items, which allows the user to visually represent their custom data as close as possible.        
 
 The rest of the help articles in this section describe in more detail the logical items, the visual items, how to extend them and the other features that __RadListControl__ provides out of the box.
+
+# See Also
+
+* [Getting Started]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/getting-started%})
         
