@@ -227,6 +227,9 @@ navigation:
     dataentry/how-to:
         title: How To
         position: 7
+    dataentry/customizing-appearance:
+        title: Customizing Appearance
+        position: 8
     datalayout:
         title: DataLayout
         position: 17

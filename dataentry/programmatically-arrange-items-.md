@@ -1,5 +1,5 @@
 ---
-title: Programmatically arrange items 
+title: Programmatically Arrange Items 
 page_title: Programmatically arrange items  | UI for WinForms Documentation
 description: This article describes how one can arrange the editors.
 slug: winforms/dataentry/programmatically-arrange-items-
@@ -9,13 +9,14 @@ position: 5
 previous_url: dataentry-overview-programmatically-arrange-items
 ---
 
-# Programmatically arrange items 
+# Programmatically Arrange Items
 
 Items in __RadDataEntry__ can be arranged both at design time and run time. At design time users can use the designer to arrange the items according to their needs by drag and drop or by setting the desired properties of the items. However at run time there is no designer that can be used to arrange them, so to achieve the desired layout the user should use the exposed events or to access the controls from the __Controls__ collection and to change their location, size and etc. The following example will demonstrate how to use the control events to arrange the generated items.
-        
 
 1\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items.
-             
+
+#### Data Object
+
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
 
@@ -140,7 +141,8 @@ End Enum
 
 {{endregion}} 
 
- 
+#### Data Binding 
+
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
 
@@ -176,7 +178,9 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 ![dataentry-overview-programmatically-arrange-items 001](images/dataentry-overview-programmatically-arrange-items001.png)
 
 2\. To arrange the items we will subscribe to the *ItemInitialized* event of __RadDataEntry__. This event is triggered when an item is initialized, so it is suitable to introduce changes.
-            
+
+#### Special Arrangement
+
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ItemInitialized}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ItemInitialized}} 
 
