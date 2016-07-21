@@ -27,9 +27,11 @@ Here is how our visual item class could look like:
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=customVisualItem}} 
 
 ````C#
+    
 public class CustomVisualItem : RadListVisualItem
 {
     private RadCheckBoxElement checkBox = null;
+        
     static CustomVisualItem()
     {
         RadListVisualItem.SynchronizationProperties.Add(CustomDataItem.AvailableProperty);
@@ -53,7 +55,7 @@ public class CustomVisualItem : RadListVisualItem
 ````
 ````VB.NET
 Public Class CustomVisualItem
-    Inherits RadListVisualItem
+Inherits RadListVisualItem
     Private checkBox As RadCheckBoxElement = Nothing
     Shared Sub New()
         RadListVisualItem.SynchronizationProperties.Add(CustomDataItem.AvailableProperty)
@@ -86,6 +88,7 @@ Once we have created a custom visual item, we need to subscribe to the CreatingV
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=creatingVisualListItem}} 
 
 ````C#
+        
 void radListControl1_CreatingVisualListItem(object sender, CreatingVisualListItemEventArgs args)
 {
     args.VisualItem = new CustomVisualItem();
