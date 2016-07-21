@@ -47,12 +47,13 @@ You can set the __DataSource__ property at design time in the *Properties* windo
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=Binding}} 
 
 ````C#
+    
 public class Item
 {
     public int Id { get; set; }
         
     public string Description { get; set; }
-
+        
     public Item(int id, string description)
     {
         this.Id = id;
@@ -84,7 +85,6 @@ Public Class Item
         End Set
     End Property
     Private m_Id As Integer
-
     Public Property Description() As String
         Get
             Return m_Description
@@ -94,13 +94,11 @@ Public Class Item
         End Set
     End Property
     Private m_Description As String
-
     Public Sub New(id As Integer, description As String)
         Me.Id = id
         Me.Description = description
     End Sub
 End Class
-
 Public Sub Bind()
     Dim items As New List(Of Item)()
     For i As Integer = 0 To 9
@@ -109,6 +107,11 @@ Public Sub Bind()
     radListControl1.DataSource = items
     radListControl1.DisplayMember = "Description"
     radListControl1.ValueMember = "Id"
+End Sub
+'#End Region
+'#region creatingVisualListItem
+Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
+    args.VisualItem = New CustomVisualItem()
 End Sub
 
 ````

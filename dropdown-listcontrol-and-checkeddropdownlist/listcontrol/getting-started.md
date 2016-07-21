@@ -48,6 +48,7 @@ This tutorial demonstrates how to manually populate __RadListControl__ and how 
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=handlingSelectedIndexChanged}} 
 
 ````C#
+    
 void radListControl1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 {
     RadListDataItem item = this.radListControl1.SelectedItem as RadListDataItem;
