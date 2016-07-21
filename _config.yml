@@ -310,10 +310,13 @@ navigation:
         position: 2
     dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop:
         title: Drag and Drop
-        position: 5
+        position: 7
     dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data:
         title: Populating with Data
         position: 4
+    dropdown-listcontrol-and-checkeddropdownlist/listcontrol/customizing-appearance:
+        title: Customizing Appearance
+        position: 8
     dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist:
         title: CheckedDropDownList
         position: 3
