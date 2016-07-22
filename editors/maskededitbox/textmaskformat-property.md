@@ -1,6 +1,6 @@
 ---
 title: TextMaskFormat Property
-page_title: TextMaskFormat Property | UI for WinForms Documentation
+page_title: TextMaskFormat Property | MaskedEditBox
 description: TextMaskFormat Property
 slug: winforms/editors/maskededitbox/textmaskformat-property
 tags: textmaskformat,property

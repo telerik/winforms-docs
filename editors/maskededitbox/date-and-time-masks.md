@@ -1,6 +1,6 @@
 ---
 title: Date and Time Masks
-page_title: Date and Time Masks | UI for WinForms Documentation
+page_title: Date and Time Masks | MaskedEditBox
 description: The following tables  describe the mask characters that can be used when the MaskType is DateTime. Note that the format characters are case sensitive.
 slug: winforms/editors/maskededitbox/date-and-time-masks
 tags: date,and,time,masks
