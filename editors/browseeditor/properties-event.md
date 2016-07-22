@@ -1,6 +1,6 @@
 ---
 title: Properties and Events
-page_title: Properties and Events | UI for WinForms Documentation
+page_title: Properties and Events | Browse Editor
 description: RadBrowseEditor is a themable control which allows users to select a file or a directory from the file system or directly to type the full path in the editor.
 slug: winforms/editors/browseeditor/properties-events
 tags: browseditor, properties, events

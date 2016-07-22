@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | Browse Editor
 description: The following example demonstrates how to change the image of a RadButton using the RadBrowseEditor.
 slug: winforms/editors/browseeditor/getting-started
 tags: getting,started

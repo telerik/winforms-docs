@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Design time | UI for WinForms Documentation
+page_title: Design time | Browse Editor
 description: In this article we will describe the design time abilities of RadBrowseEditor provided by its Smart Tag.
 slug: winforms/browseeditor/design-time/smart-tag
 tags: design,time

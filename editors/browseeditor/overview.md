@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Browse Editor | UI for WinForms Documentation
+page_title: Browse Editor | Browse Editor
 description: RadBrowseEditor is a themable control which allows users to select a file or a directory from the file system or directly to type the full path in the editor.
 slug: winforms/editors/browseeditor
 tags: browse,editor

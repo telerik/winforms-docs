@@ -1,7 +1,7 @@
 ---
 title: Themes
-page_title: Accessing and customizing elements | UI for WinForms Documentation
-description: RadButton is a themable replacement of the standard WinForms Button. It can be clicked by using the mouse, Enter key, or Spacebar, if the button has focus. 
+page_title: Themes | Browse Editor
+description: RadBrowseEditor is a themable replacement of the standard WinForms Button. It can be clicked by using the mouse, Enter key, or Spacebar, if the button has focus. 
 slug: winforms/browseeditor/customizing-appearance/themes
 tags: button, themes
 published: True
