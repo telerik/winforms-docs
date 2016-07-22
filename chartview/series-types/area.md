@@ -1,6 +1,6 @@
 ---
 title: Area
-page_title: Area | UI for WinForms Documentation
+page_title: Area | ChartView
 description: As a derivative of Categorical series, AreaSeries plot their data points using category-value couples
 slug: winforms/chartview-/series-types/area
 tags: area

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: DataBinding | UI for WinForms Documentation
+page_title: DataBinding | ChartView
 description: DataBinding
 slug: winforms/chartview-/populating-with-data
 tags: RadChartView can be populated with data in bound and unbound mode. Data binding is performed following the standard WinForms model 

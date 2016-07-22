@@ -1,6 +1,6 @@
 ---
 title: Tooltip
-page_title: Tooltip | UI for WinForms Documentation
+page_title: Tooltip | ChartView
 description: RadChartView provides a tooltip interactivity  with the ChartTooltipController class and can be used to visualize arbitrary information related to a data point.
 slug: winforms/chartview-/features/tooltip
 tags: tooltip

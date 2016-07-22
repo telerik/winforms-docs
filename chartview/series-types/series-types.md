@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Series Types | UI for WinForms Documentation
+page_title: Series Types | ChartView
 description: Chart series contain a collection of specific data points and visualize the data according to a predefined model depending on the series type. 
 slug: winforms/chartview-/series-types
 tags: series,types

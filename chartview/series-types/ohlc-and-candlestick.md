@@ -1,6 +1,6 @@
 ---
 title: Ohlc and Candlestick
-page_title: Ohlc and Candlestick | UI for WinForms Documentation
+page_title: Ohlc and Candlestick | ChartView
 description: RadChartView introduces support for stock series – both Ohlc (Open-High-Low-Close) and Candlestick
 slug: winforms/chartview-/series-types/ohlc-and-candlestick
 tags: ohlc,and,candlestick

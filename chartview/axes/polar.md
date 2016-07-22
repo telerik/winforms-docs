@@ -1,6 +1,6 @@
 ---
 title: Polar
-page_title: Polar | UI for WinForms Documentation
+page_title: Polar | ChartView
 description: The PolarAxis is special axis rendered as a fixed line in a system of polar coordinates where polar angle, θ, is measured anticlockwise.
 slug: winforms/chartview-/axes/polar
 tags: polar

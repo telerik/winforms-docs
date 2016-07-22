@@ -1,6 +1,6 @@
 ---
 title: Palettes
-page_title: Palettes | UI for WinForms Documentation
+page_title: Palettes | ChartView
 description: Palettes are a quick and easy way to define a skin for your chart view. A palette is a collection of several palette entries and each palette entry defines up to four colors – two fills and two strokes.
 slug: winforms/chartview-/customization/palettes
 tags: palettes
