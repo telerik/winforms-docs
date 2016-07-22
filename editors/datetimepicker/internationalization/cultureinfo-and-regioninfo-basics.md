@@ -59,3 +59,8 @@ Me.RadDateTimePicker1.Culture = New System.Globalization.CultureInfo("ps-AF")
 ## RegionInfo
 
 The __RegionInfo__ class contains information about the country/region.  In contrast to __CultureInfo__, __RegionInfo__ does not represent preferences of the user and does not depend on the user's language or culture. The __RegionInfo__ name is one of the two-letter codes defined in ISO 3166 for country/region. Case is not significant; however, the __Name__, the __TwoLetterISORegionName__, and the __ThreeLetterISORegionName__ properties return the appropriate code in uppercase.
+
+# See Also
+
+* [Internationalization]({%slug winforms/editors/datetimepicker/internationalization/internationalization%})
+* [Date Formats]({%slug winforms/editors/datetimepicker/internationalization/date-formats%})

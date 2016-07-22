@@ -2,7 +2,7 @@
 title: Design Time
 page_title: Design Time | RadDateTimePicker
 description: This article shows what you can do with the smart tag of RadDateTimePicker.
-slug: winforms/editors/datetimepicker
+slug: winforms/editors/datetimepicker/designtime
 tags: datetimepicker
 published: True
 position: 2
@@ -26,4 +26,8 @@ The __Smart Tag__ of __RadAutoCompleteBox__ lets you quickly access common tasks
 
 # See Also
 
- * [Add Themes]({%slug winforms/themes/using-default-themes%})
+* [Add Themes]({%slug winforms/themes/using-default-themes%})
+* [Free Form Date Time Parsing]({%slug winforms/editors/datetimepicker/free-form-date-time-parsing%})
+* [MaskDateTimeProvider]({%slug winforms/editors/maskeddatetimeprovider%})
+* [Properties]({%slug winforms/editors/datetimepicker/raddatetimepicker-properties%})
+* [Structure]({%slug winforms/editors/datetimepicker%})

@@ -55,3 +55,8 @@ The table below shows a list of patterns that can be combined to create custo
 |ss|The second. Single-digit seconds will have a leading zero.|
 |t|The first character in the AM/PM designator defined in AMDesignator or PMDesignator, if any.|
 |tt|The AM/PM designator defined in AMDesignator or PMDesignator, if any.|
+
+# See Also
+
+* [CultureInfo and RegionInfo Basics]({%slug winforms/editors/datetimepicker/internationalization/cultureinfo-and-regioninfo-basics%})
+* [Internationalization]({%slug winforms/editors/datetimepicker/internationalization/internationalization%})

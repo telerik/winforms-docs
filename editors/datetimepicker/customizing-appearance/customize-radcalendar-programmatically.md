@@ -67,3 +67,7 @@ Next item
 ![editors-datetimepicker-how-to-customize-radcalendar-programmatically 001](images/editors-datetimepicker-how-to-customize-radcalendar-programmatically001.png)
 
 
+# See Also
+
+* [Customizing Appearance]({%slug winforms/editors/datetimepicker/customizing-appearance%})
+* [Themes]({%slug winforms/editors/datetimepicker/themes%})
