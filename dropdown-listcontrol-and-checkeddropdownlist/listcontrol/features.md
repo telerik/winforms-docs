@@ -5,7 +5,7 @@ description: Features
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features
 tags: features
 published: True
-position: 1
+position: 8
 previous_url: dropdown-and-listcontrol-listcontrol-features
 ---
 
@@ -25,6 +25,7 @@ Sorting in RadListControl is controlled via the __SortStyle__ property. It suppo
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=sorting}} 
 
 ````C#
+            
 radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending;
 
 ````
@@ -48,6 +49,7 @@ RadListControl can filter which items are currently visible by using the __Filte
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=filteringMethod}} 
 
 ````C#
+    
 private bool FilterMethod(RadListDataItem itemToFilter)
 {
     return itemToFilter.Text.EndsWith("SomeString");
@@ -70,6 +72,7 @@ End Function
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=filtering}} 
 
 ````C#
+            
 radListControl1.Filter = FilterMethod;
 
 ````
@@ -93,6 +96,7 @@ RadListControl can search for an item with the FindString() and FindStringExact(
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=searching}} 
 
 ````C#
+            
 int index = radListControl1.FindString("someitem");
 
 ````
@@ -111,6 +115,7 @@ This method call will return the index of the first item with "someitem" as its 
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=index}} 
 
 ````C#
+        
 int index = radListControl1.FindString("someitem", 5);
 
 ````
@@ -150,6 +155,7 @@ __RadListControl__ supports alternating item color which can be easily enabled b
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=alternating}} 
 
 ````C#
+            
 radListControl1.EnableAlternatingItemColor = true;
 radListControl1.ListElement.AlternatingItemColor = Color.Red;
 
@@ -158,7 +164,53 @@ radListControl1.ListElement.AlternatingItemColor = Color.Red;
 radListControl1.EnableAlternatingItemColor = True
 radListControl1.ListElement.AlternatingItemColor = Color.Red
 '#End Region
+'#Region "AddItemsProgrammatically"
+Dim descriptionItem As New DescriptionTextListDataItem()
+descriptionItem.Text = "Chicken wings"
+descriptionItem.Image = My.Resources.chicken_wings
+descriptionItem.DescriptionText = "some description"
+Me.radListControl1.Items.Add(descriptionItem)
+Dim dataItem As New RadListDataItem()
+dataItem.Text = "Chicken toast"
+dataItem.Image = My.Resources.chicken_toast
+Me.radListControl1.Items.Add(dataItem)
+'#End Region
 End Sub
+'#Region "Binding"
+Public Class Item
+Public Property Id() As Integer
+    Get
+        Return m_Id
+    End Get
+    Set(value As Integer)
+        m_Id = value
+    End Set
+End Property
+Private m_Id As Integer
+Public Property Description() As String
+    Get
+        Return m_Description
+    End Get
+    Set(value As String)
+        m_Description = value
+    End Set
+End Property
+Private m_Description As String
+Public Sub New(id As Integer, description As String)
+    Me.Id = id
+    Me.Description = description
+End Sub
+End Class
+Public Sub Bind()
+Dim items As New List(Of Item)()
+For i As Integer = 0 To 9
+    items.Add(New Item(i, "Data" + i))
+Next
+radListControl1.DataSource = items
+radListControl1.DisplayMember = "Description"
+radListControl1.ValueMember = "Id"
+End Sub
+'#End Region
 '#region creatingVisualListItem
 Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
 args.VisualItem = New CustomVisualItem()

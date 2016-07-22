@@ -1,6 +1,6 @@
 ---
-title: Change the editor to a bound RadDropDownList
-page_title: Change the editor to a bound RadDropDownList | UI for WinForms Documentation
+title: Change The Editor To a Bound RadDropDownList
+page_title: Change The Editor To a Bound RadDropDownList | DataEntry
 description: Change the editor to a bound RadDropDownList
 slug: winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist
 tags: change,the,editor,to,a,bound,raddropdownlist
@@ -9,15 +9,16 @@ position: 1
 previous_url: dataentry-how-to-change-editor-to-drop-down-list
 ---
 
-# Change the editor to a bound RadDropDownList
+# Change The Editor To a Bound RadDropDownList
 
 This article will walk you through the process of changing the default editor to a bound drop down list, where the current value corresponds to a value within the drop down list data source. The case where the corresponding values are nullable is also handled. 
 
+>caption Figure 1. Custom Editor
 ![dataentry-how-to-change-editor-to-drop-down-list 001](images/dataentry-how-to-change-editor-to-drop-down-list001.png)
 
-## 
-
 1\. First you can subscribe to the __BindingCreating__, __BindingCreated__ and __EditorInitializing__ events of __RadDataEntry__ (please note that this should be done before the data entry control is being data bound). 
+
+#### Subscribe to Events
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=subscribe}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=subscribe}} 
@@ -42,6 +43,7 @@ radDataEntry1.DataSource = productsBinding
 
 2\. In the __EditorInitializing__ event handler, you will be able to change the automatically generated editor with RadDropDownList. In addition, you should set it up as needed. In this case we will set the __DataSource__, __DisplayMember__ and  __ValueMenber__ properties. 
 
+#### Change Default Editor
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=editor}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=editor}} 
@@ -79,7 +81,8 @@ End Sub
 
 
 3\. In order the values to be synchronized correctly, the bound property should be set in the __BindingCreating__ event handler. In this case it should be set to the __SelectedValue__ property.
-             
+
+#### Map Property
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=creating}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=creating}} 
@@ -106,6 +109,8 @@ End Sub
 {{endregion}} 
 
 4\. When the data source is using nullable values in order the user to be able to change the current value via the drop down list, the result value should be manually parsed. This can be done in the binding's __Parse__ event. You can subscribe to this event in the __BindingCreated__ event handler (in order this event to fire the formatting should be enabled). 
+
+#### Enable Formatting
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=created}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=created}} 
@@ -146,6 +151,8 @@ End Sub
 {{endregion}} 
  
 To make the example complete you can use the following classes.
+
+#### Data Models
         
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=data}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=data}} 
@@ -271,9 +278,9 @@ End Class
 
 {{endregion}} 
 
- 
-
 You can initialize the data sources in the Form’s constructor.
+
+#### Initialize Data
         
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.cs region=init}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\ChangeEditorToDropDownList.vb region=init}} 

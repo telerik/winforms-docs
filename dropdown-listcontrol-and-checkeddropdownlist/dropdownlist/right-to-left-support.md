@@ -1,7 +1,7 @@
 ---
 title: Right-To-Left Support
-page_title: Right-To-Left Support | UI for WinForms Documentation
-description: Right-To-Left Support
+page_title: Right-To-Left Support | RadDropDownList
+description: RadDropDownList fully supports right-to-left (RTL) language locales which is controlled by the RightToLeft property
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/right-to-left-support
 tags: right-to-left,support
 published: True
@@ -13,8 +13,6 @@ previous_url: dropdown-and-listcontrol-dropdownlist-right-to-left-support
  
 __RadDropDownList__ fully supports right-to-left (RTL) language locales. You can enable/disable the right-to-left support using __RightToLeft__ enumeration, which has the following members:
 
-## 
-
 * __Yes__: Content is aligned from right to left.
             
 
@@ -23,14 +21,10 @@ __RadDropDownList__ fully supports right-to-left (RTL) language locales. You can
 
 * __Inherit__: Direction will be determined by the parent control.
             
-
->caption Fig.1 RightToLeft.Yes
-
-![dropdown-and-listcontrol-dropdownlist-right-to-left-support 001](images/dropdown-and-listcontrol-dropdownlist-right-to-left-support001.png)|
->caption Fig.2 RightToLeft.No
-
-![dropdown-and-listcontrol-dropdownlist-right-to-left-support 002](images/dropdown-and-listcontrol-dropdownlist-right-to-left-support002.png)|
-
+|RightToLeft.Yes|RightToLeft.No|
+|----|----|
+|![dropdown-and-listcontrol-dropdownlist-right-to-left-support 001](images/dropdown-and-listcontrol-dropdownlist-right-to-left-support001.png)|![dropdown-and-listcontrol-dropdownlist-right-to-left-support 002](images/dropdown-and-listcontrol-dropdownlist-right-to-left-support002.png)
+ 
 #### Assigning RightToLeft 
 
 {{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListRightToLeft.cs region=SetRightToLeft}} 

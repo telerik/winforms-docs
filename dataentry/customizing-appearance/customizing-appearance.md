@@ -1,6 +1,6 @@
 ---
 title: Customizing Appearance 
-page_title: Customizing Appearance | UI for WinForms Documentation
+page_title: Customizing Appearance | DataEntry
 description: The article describes how one can customize the RadDataEntry appearance.
 slug: winforms/dataentry/customizing-appearance
 tags: appearance
@@ -24,6 +24,8 @@ You can access and modify the style for different elements in __RadDataEntry__ b
 
 The following snippet show how you can customize the RadDataEntry styles at runtime. 
 
+#### Change Border Color
+
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=SetBorderColor}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=SetBorderColor}}
 ````C#
@@ -41,9 +43,11 @@ radDataEntry1.DataEntryElement.Border.ForeColor = ColorTranslator.FromHtml("#e83
 
 ![dataentry-customizing-appearance002](images/dataentry-customizing-appearance002.png)  
 
-## Changing the styles of the underlying controls. 
+## Changing The Styles Of The Underlying Controls. 
 
 The following snippet shows how you access the underlying controls and change the their styles:
+
+#### Set Labels ForeColor
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=LabelColor}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=LabelColor}}

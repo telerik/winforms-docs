@@ -1,6 +1,6 @@
 ---
 title: Data Binding
-page_title: Data Binding | UI for WinForms Documentation
+page_title: Data Binding | RadDropDownList
 description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/data-binding
 tags: data,binding
@@ -124,6 +124,8 @@ End Sub
 >caption Figure: 4 RadDropDownList bound at Run time
 
 ![dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding 004](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding004.png)
+
+# See Also
 
 * [Design Time]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/design-time%})
 * [Adding Items Programmatically]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/adding-items-programmatically%})

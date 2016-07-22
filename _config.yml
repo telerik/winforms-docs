@@ -227,6 +227,9 @@ navigation:
     dataentry/how-to:
         title: How To
         position: 7
+    dataentry/customizing-appearance:
+        title: Customizing Appearance
+        position: 8
     datalayout:
         title: DataLayout
         position: 17
@@ -302,12 +305,21 @@ navigation:
     dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/customizing-appearance:
         title: Customizing Appearance
         position: 4
+    dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/features:
+        title: Features
+        position: 6
     dropdown-listcontrol-and-checkeddropdownlist/listcontrol:
         title: ListControl
         position: 2
     dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop:
         title: Drag and Drop
-        position: 5
+        position: 7
+    dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data:
+        title: Populating with Data
+        position: 4
+    dropdown-listcontrol-and-checkeddropdownlist/listcontrol/customizing-appearance:
+        title: Customizing Appearance
+        position: 8
     dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist:
         title: CheckedDropDownList
         position: 3
