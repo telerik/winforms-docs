@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Elements
-page_title: RadCalculatorDropDown Accessing and Customizing Elements
+page_title: Accessing and Customizing Elements | CalculatorDropDown
 description: This topic will demonstrate how to access different element in the control in order to change their appearance.
 slug: winforms/editors/customizing-appearance/accessing-and-customizing-elements
 tags: customization

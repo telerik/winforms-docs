@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: RadCalculatorDropDown Design time
+page_title: Smart Tag | CalculatorDropDown
 description: In this article we will describe the design time abilities of RadCalculatorDropDown provided by its Smart Tag.
 slug: winforms/calculatordropdown/design-time/smart-tag
 tags: design,time

@@ -1,6 +1,6 @@
 ---
 title: Getting Started 
-page_title: Getting Started with RadCalculatorDropDown
+page_title: Getting Started | CalculatorDropDown
 description: The following example demonstrates how to set up RadCalculatorDropDown with a minmum popup width and height.
 slug: winforms/editors/calculatordropdown/getting-started
 tags: getting,started

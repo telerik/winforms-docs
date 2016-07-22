@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: RadCalculatorDropDown Structure
+page_title: Structure | CalculatorDropDown
 description: This article describes the inner structure and organization of the elements which build the RadCalculatorDropDown control.
 slug: winforms/editors/calculatordropdown/structure
 tags: element,structure

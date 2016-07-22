@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: CalculatorDropDown Overview
+page_title: Overview | CalculatorDropDown
 description: RadCalculatorDropDown has a simple easy-to-use interface enabling the end user to perform all basic calculations such as addition, subtraction, multiplication, division as well as some more complicated ones – reciprocal, square root, negate. 
 slug: winforms/editors/calculatordropdown
 tags: calculatordropdown
