@@ -19,11 +19,11 @@ This topic will demonstrate how to access different element in the control in or
 {{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheImageOfMemoryElement}} 
 
 ````C#
-radCalculatorDropDown1.CalculatorElement.MemoryElement.Image = Resources.email;
+this.radCalculatorDropDown1.CalculatorElement.MemoryElement.Image = Resources.email;
 
 ````
 ````VB.NET
-RadCalculatorDropDown1.CalculatorElement.MemoryElement.Image = My.Resources.email
+Me.RadCalculatorDropDown1.CalculatorElement.MemoryElement.Image = My.Resources.email
 
 ````
 
@@ -38,13 +38,13 @@ RadCalculatorDropDown1.CalculatorElement.MemoryElement.Image = My.Resources.emai
 {{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheBackColorOfTheTextBox}} 
 
 ````C#
-radCalculatorDropDown1.CalculatorElement.FillPrimitive.BackColor = Color.Yellow;
-radCalculatorDropDown1.CalculatorElement.EditorContentElement.Fill.BackColor = Color.Yellow;
+this.radCalculatorDropDown1.CalculatorElement.FillPrimitive.BackColor = Color.Yellow;
+this.radCalculatorDropDown1.CalculatorElement.EditorContentElement.Fill.BackColor = Color.Yellow;
 
 ````
 ````VB.NET
-RadCalculatorDropDown1.CalculatorElement.FillPrimitive.BackColor = Color.Yellow
-RadCalculatorDropDown1.CalculatorElement.EditorContentElement.Fill.BackColor = Color.Yellow
+Me.RadCalculatorDropDown1.CalculatorElement.FillPrimitive.BackColor = Color.Yellow
+Me.RadCalculatorDropDown1.CalculatorElement.EditorContentElement.Fill.BackColor = Color.Yellow
 
 ````
 
@@ -59,11 +59,11 @@ RadCalculatorDropDown1.CalculatorElement.EditorContentElement.Fill.BackColor = C
 {{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheBackColorOfTheCalculator}} 
 
 ````C#
-radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.BackColor = Color.Green;
+this.radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.BackColor = Color.Green;
 
 ````
 ````VB.NET
-RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.BackColor = Color.Green
+Me.RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.BackColor = Color.Green
 
 ````
 
@@ -78,18 +78,17 @@ RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.BackColor = Co
 {{source=..\SamplesVB\Editors\RadCalculatorDropDownCustomization.vb region=ChangeTheBackColorOfButtons}} 
 
 ````C#
-radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.BackColor = Color.Navy;
-            
-radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonDelete.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonDelete.BackColor = Color.Red;
+this.radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+this.radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.BackColor = Color.Navy;
+this.radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonDelete.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+this.radCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonDelete.BackColor = Color.Red;
 
 ````
 ````VB.NET
-RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.BackColor = Color.Navy
-RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonDelete.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonDelete.BackColor = Color.Red
+Me.RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+Me.RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonEquals.BackColor = Color.Navy
+Me.RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonDelete.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+Me.RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonDelete.BackColor = Color.Red
 
 ````
 
