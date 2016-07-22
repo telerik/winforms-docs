@@ -25,7 +25,7 @@ Items appearance in __RadListControl__ can be customized by making use of the __
 
 ````C#
 Font font = new Font("Consolas", 14, FontStyle.Bold);
-
+        
 private void radListControl1_VisualItemFormatting(object sender, VisualItemFormattingEventArgs args)
 {
     if (args.VisualItem.Selected)
@@ -46,11 +46,9 @@ private void radListControl1_VisualItemFormatting(object sender, VisualItemForma
     }
 }
 
-
 ````
 ````VB.NET
 Private font As New Font("Consolas", 14, FontStyle.Bold)
-
 Private Sub radListControl1_VisualItemFormatting(sender As Object, args As VisualItemFormattingEventArgs)
     If args.VisualItem.Selected Then
         args.VisualItem.NumberOfColors = 1
@@ -66,7 +64,21 @@ Private Sub radListControl1_VisualItemFormatting(sender As Object, args As Visua
         args.VisualItem.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local)
     End If
 End Sub
-
+'#End Region
+Class
+gion customDataItem
+ic Class CustomDataItem
+rits RadListDataItem
+Public Shared ReadOnly AvailableProperty As RadProperty = RadProperty.Register("Available", GetType(Boolean), GetType(CustomDataItem), New RadElementPropertyMetadata(False))
+Public Property Available() As Boolean
+    Get
+        Return CBool(Me.GetValue(CustomDataItem.AvailableProperty))
+    End Get
+    Set(ByVal value As Boolean)
+        Me.SetValue(CustomDataItem.AvailableProperty, value)
+    End Set
+End Property
+Class
 
 ````
 
