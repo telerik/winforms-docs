@@ -34,3 +34,8 @@ previous_url: editors-spineditor-working-with-radspineditor
 |__ValueChanging__|This event fires before the value has changed and allows you to prevent a given value from being entered. The event passes a __ValueChangingEventArgs__ parameter that includes the __OldValue__, __NewValue__ and __Cancel__ properties.|
 |__ValueChanged__|This event fires when the number has already changed. Use the __Value__ property to get the current number in the __RadSpinEditor__.|
 
+# See Also
+
+* [Getting Started]({%slug winforms/editors/spineditor/getting-started%})
+* [Structure]({%slug winforms/editors/spineditor/structure%})
+ 

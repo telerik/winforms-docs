@@ -2,7 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance | RadSpinEditor
 description: RadSpinEditor is a themable alternative to the standard Windows Numeric Up Down control.
-slug: winforms/editors/customizing-appearance
+slug: winforms/editors/spineditor/customizing-appearance
 tags: colorbox
 published: True
 position: 0
@@ -20,6 +20,6 @@ You can easily change the styles of the border in the `Element Hierarchy Editor`
 
 # See Also
 
-* [Themes]({%slug winforms/editors/themes%})
+* [Themes]({%slug winforms/editors/spineditor/themes%})
 
 

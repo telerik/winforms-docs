@@ -2,7 +2,7 @@
 title: Themes
 page_title: Themes | RadSpinEditor
 description: RadSpinEditor is a themable alternative to the standard Windows Numeric Up Down control.
-slug: winforms/editors/themes
+slug: winforms/editors/spineditor/themes
 tags: spineditor
 published: True
 position: 1
@@ -25,3 +25,8 @@ This help article will demonstrate a step by step tutorial how to customize the 
    ![spineditor-themes003](images/spineditor-themes003.png)
 
 >note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
+
+# See Also 
+
+* [Customizing Appearance]({%slug winforms/editors/spineditor/customizing-appearance%})
+
