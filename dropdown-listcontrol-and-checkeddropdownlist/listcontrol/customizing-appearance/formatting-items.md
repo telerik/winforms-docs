@@ -25,7 +25,6 @@ Items appearance in __RadListControl__ can be customized by making use of the __
 
 ````C#
 Font font = new Font("Consolas", 14, FontStyle.Bold);
-        
 private void radListControl1_VisualItemFormatting(object sender, VisualItemFormattingEventArgs args)
 {
     if (args.VisualItem.Selected)

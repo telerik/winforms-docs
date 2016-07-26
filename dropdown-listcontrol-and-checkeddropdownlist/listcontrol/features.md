@@ -25,7 +25,6 @@ Sorting in RadListControl is controlled via the __SortStyle__ property. It suppo
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=sorting}} 
 
 ````C#
-            
 radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending;
 
 ````
@@ -49,7 +48,6 @@ RadListControl can filter which items are currently visible by using the __Filte
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=filteringMethod}} 
 
 ````C#
-    
 private bool FilterMethod(RadListDataItem itemToFilter)
 {
     return itemToFilter.Text.EndsWith("SomeString");
@@ -72,7 +70,6 @@ End Function
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=filtering}} 
 
 ````C#
-            
 radListControl1.Filter = FilterMethod;
 
 ````
@@ -96,7 +93,6 @@ RadListControl can search for an item with the FindString() and FindStringExact(
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=searching}} 
 
 ````C#
-            
 int index = radListControl1.FindString("someitem");
 
 ````
@@ -115,7 +111,6 @@ This method call will return the index of the first item with "someitem" as its 
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=index}} 
 
 ````C#
-        
 int index = radListControl1.FindString("someitem", 5);
 
 ````
@@ -155,7 +150,6 @@ __RadListControl__ supports alternating item color which can be easily enabled b
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=alternating}} 
 
 ````C#
-            
 radListControl1.EnableAlternatingItemColor = true;
 radListControl1.ListElement.AlternatingItemColor = Color.Red;
 
@@ -174,6 +168,9 @@ Dim dataItem As New RadListDataItem()
 dataItem.Text = "Chicken toast"
 dataItem.Image = My.Resources.chicken_toast
 Me.radListControl1.Items.Add(dataItem)
+'#End Region
+'#Region "expression"
+Me.radListControl1.FilterExpression = "Country LIKE 'Argentina'"
 '#End Region
 End Sub
 '#Region "Binding"

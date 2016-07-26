@@ -31,7 +31,6 @@ Sorting in __RadListControl__ is controlled by the __SortStyle__ property. The a
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=sorting}} 
 
 ````C#
-            
 radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending;
 
 ````

@@ -23,11 +23,9 @@ __RadListDataItem__ initially has the most basic visual properties required whic
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=customDataItem}} 
 
 ````C#
-            
 public class CustomDataItem : RadListDataItem
 {
     public static readonly RadProperty AvailableProperty = RadProperty.Register("Available", typeof(bool), typeof(CustomDataItem), new RadElementPropertyMetadata(false));
-            
     public bool Available
     {
         get
@@ -68,7 +66,6 @@ Once we have the custom data item with the additional information, we can convin
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=itemDataBinding}} 
 
 ````C#
-        
 void radListControl1_ItemDataBinding(object sender, ListItemDataBindingEventArgs args)
 {
     args.NewItem = new CustomDataItem();

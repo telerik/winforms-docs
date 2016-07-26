@@ -18,7 +18,6 @@ __RadListControl__ can search for an item with the __FindString__ and __FindStri
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=searching}} 
 
 ````C#
-            
 int index = radListControl1.FindString("someitem");
 
 ````
@@ -37,7 +36,6 @@ This method call will return the index of the first item with *"someitem"* as it
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=index}} 
 
 ````C#
-        
 int index = radListControl1.FindString("someitem", 5);
 
 ````

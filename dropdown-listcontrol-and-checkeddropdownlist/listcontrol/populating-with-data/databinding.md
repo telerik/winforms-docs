@@ -47,26 +47,22 @@ You can set the __DataSource__ property at design time in the *Properties* windo
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=Binding}} 
 
 ````C#
-    
 public class Item
 {
     public int Id { get; set; }
-        
     public string Description { get; set; }
-        
     public Item(int id, string description)
     {
         this.Id = id;
         this.Description = description;
     }
 }
-        
 public void Bind()
 {
     List<Item> items = new List<Item>();
     for (int i = 0; i < 10; i++)
     {
-        items.Add(new Item(i,"Data" + i));
+        items.Add(new Item(i, "Data" + i));
     }
     radListControl1.DataSource = items;
     radListControl1.DisplayMember = "Description";
