@@ -1,6 +1,6 @@
 ---
 title: ToolWindow and DocumentWindow Properties and Methods
-page_title: ToolWindow and DocumentWindow Properties and Methods | UI for WinForms Documentation
+page_title: ToolWindow and DocumentWindow Properties and Methods | RadDock
 description: ToolWindow and DocumentWindow most used properties and methods.
 slug: winforms/dock/object-model/toolwindow-and-documentwindow-properties-and-methods
 tags: toolwindow,and,documentwindow,properties,and,methods

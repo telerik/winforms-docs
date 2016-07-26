@@ -1,6 +1,6 @@
 ---
 title: Tracking the ActiveWindow
-page_title: Tracking the ActiveWindow | UI for WinForms Documentation
+page_title: Tracking the ActiveWindow | RadDock
 description: This article shows how you can track the active window.
 slug: winforms/dock/object-model/tracking-the-activewindow
 tags: tracking,the,activewindow

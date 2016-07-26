@@ -1,6 +1,6 @@
 ---
 title: Tutorial Saving and Loading Layout and Content
-page_title: Tutorial Saving and Loading Layout and Content | UI for WinForms Documentation
+page_title: Tutorial Saving and Loading Layout and Content | RadDock
 description: Tutorial Saving and Loading Layout and Content of RadDock.
 slug: winforms/dock/loading-and-saving-layouts/tutorial:-saving-and-loading-layout-and-content
 tags: tutorial,saving,and,loading,layout,and,content

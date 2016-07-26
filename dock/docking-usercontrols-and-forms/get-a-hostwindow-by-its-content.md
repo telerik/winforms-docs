@@ -1,6 +1,6 @@
 ---
 title: Get a HostWindow by its Content
-page_title: Get a HostWindow by its Content | UI for WinForms Documentation
+page_title: Get a HostWindow by its Content | RadDock
 description: Get a HostWindow by using the form/control inside it.
 slug: winforms/dock/docking-usercontrols-and-forms/get-a-hostwindow-by-its-content
 tags: get,a,hostwindow,by,its,content

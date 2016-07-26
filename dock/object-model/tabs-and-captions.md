@@ -1,6 +1,6 @@
 ---
 title: Tabs and Captions
-page_title: Tabs and Captions | UI for WinForms Documentation
+page_title: Tabs and Captions | RadDock
 description: Describes the mostly used Tabs and Captions properties.
 slug: winforms/dock/object-model/tabs-and-captions
 tags: tabs,and,captions

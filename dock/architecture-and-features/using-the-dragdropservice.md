@@ -1,6 +1,6 @@
 ---
 title: Using the DragDropService
-page_title: Using the DragDropService | UI for WinForms Documentation
+page_title: Using the DragDropService | RadDock
 description: This article shows howe you can use the DragDropService.
 slug: winforms/dock/architecture-and-features/using-the-dragdropservice
 tags: using,the,dragdropservice

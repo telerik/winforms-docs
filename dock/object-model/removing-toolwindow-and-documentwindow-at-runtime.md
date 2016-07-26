@@ -1,6 +1,6 @@
 ---
 title: Removing ToolWindow and DocumentWindow at Runtime
-page_title: Removing ToolWindow and DocumentWindow at Runtime | UI for WinForms Documentation
+page_title: Removing ToolWindow and DocumentWindow at Runtime | RadDock
 description: Removing ToolWindow and DocumentWindow at Runtime.
 slug: winforms/dock/object-model/removing-toolwindow-and-documentwindow-at-runtime
 tags: removing,toolwindow,and,documentwindow,at,runtime

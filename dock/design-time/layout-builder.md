@@ -1,6 +1,6 @@
 ---
 title: Advanced Layout Designer
-page_title: Advanced Layout Designer | UI for WinForms Documentation
+page_title: Advanced Layout Designer | RadDock
 description: This article describes the functionality provided by the Advanced Layout Designer.
 slug: winforms/raddock/advanced-layout-designer
 tags: RadDock, advanced layout designer 

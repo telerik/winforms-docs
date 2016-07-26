@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | UI for WinForms Documentation
+page_title: Smart Tag | RadDock
 description: This article describes the functionality provided by the RadDock smart tag.
 slug: winforms/raddock/smart-tag
 tags: RadDock, SmartTag 

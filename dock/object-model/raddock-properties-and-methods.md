@@ -1,6 +1,6 @@
 ---
 title: RadDock Properties and Methods
-page_title: RadDock Properties and Methods | UI for WinForms Documentation
+page_title: RadDock Properties and Methods | RadDock
 description: Describes the most used RadDock properties and methods
 slug: winforms/dock/object-model/raddock-properties-and-methods
 tags: raddock,properties,and,methods

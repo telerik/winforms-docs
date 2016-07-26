@@ -1,6 +1,6 @@
 ---
 title: Auto-Hiding Windows
-page_title: Auto-Hiding Windows | UI for WinForms Documentation
+page_title: Auto-Hiding Windows | RadDock
 description: This article shows how you can hide windows at runtime.
 slug: winforms/dock/architecture-and-features/auto-hiding-windows
 tags: auto-hiding,windows
