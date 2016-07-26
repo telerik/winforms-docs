@@ -5,7 +5,7 @@ description: Start using RadSpinEditor from the Telerik UI for WinForms suite.
 slug: winforms/editors/spineditor/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: editors-spineditor-getting-started
 ---
 

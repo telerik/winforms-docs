@@ -350,6 +350,9 @@ navigation:
     editors/spineditor:
         title: SpinEditor
         position: 6
+    editors/spineditor/customizing-appearance:
+        title: Customzing Appearance
+        position: 5
     editors/textbox:
         title: TextBox
         position: 7

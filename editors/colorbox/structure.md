@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | UI for WinForms Documentation
+page_title: Structure | RadColorBox
 description: RadColorBox is a themable control which allows users to select a color from a color dialog or to directly type it in the text field.
 slug: winforms/editors/structure
 tags: colorbox
@@ -23,7 +23,7 @@ The bellow image shows the structure of RadColorBox.
 
 # Elements hierarchy
 
->caption Figure 2: The RadColorBox Elements hierarchy.
+>caption Figure 2: The RadColorBox elements hierarchy.
 
  ![colorbox-structure 001](images/colorbox-structure002.png)
 

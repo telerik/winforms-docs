@@ -1,11 +1,11 @@
 ---
 title: Themes
-page_title: Themes | UI for WinForms Documentation
+page_title: Themes | RadColorBox
 description: RadColorBox is a themable control which allows users to select a color from a color dialog or to directly type it in the text field.
 slug: winforms/editors/themes
 tags: colorbox
 published: True
-position: 0
+position: 1
 ---
 
 # Themes
@@ -18,7 +18,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 4. Expand __RadColorBox__ and select the `ColorEditorColorBox`. 
     ![colorbox-themes001](images/colorbox-themes001.png)
 
-5. Open the `Edit Repository Item` dialog and change the Margin:
+5. Open the `Edit Repository Item` dialog and change the `Margin`:
    ![colorbox-themes002](images/colorbox-themes002.png)
 
 6. The Margin is now changed, the result is that the color box is smaller:
