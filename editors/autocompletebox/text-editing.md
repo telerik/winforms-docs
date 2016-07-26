@@ -1,6 +1,6 @@
 ---
 title: Text Editing
-page_title: Text Editing | UI for WinForms Documentation
+page_title: Text Editing | RadAutoCompleteBox
 description: This article shows how you can edit the text in the code behind.
 slug: winforms/editors/autocompletebox/text-editing
 tags: text,editing

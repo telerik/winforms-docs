@@ -1,6 +1,6 @@
 ---
 title: Properties and Events
-page_title: Working with RadColorBox | UI for WinForms Documentation
+page_title: Working with RadColorBox | RadColorBox
 description: Working with RadColorBox
 slug: winforms/editors/colorbox/working-with-radcolorbox
 tags: working,with,radcolorbox

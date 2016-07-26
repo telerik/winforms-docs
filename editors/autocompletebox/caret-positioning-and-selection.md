@@ -1,6 +1,6 @@
 ---
 title: Caret Positioning and Selection
-page_title: Caret positioning and selection | UI for WinForms Documentation
+page_title: Caret positioning and selection | RadAutoCompleteBox
 description: This article describes how one can select parts of the text in the code behind.
 slug: winforms/editors/autocompletebox/caret-positioning-and-selection
 tags: caret,positioning,and,selection

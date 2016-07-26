@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadColorBox
 description: This article shows how you can start using RadColorBox. 
 slug: winforms/editors/colorbox/getting-started
 tags: getting,started

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadAutoCompleteBox
 description: This article describes how you can start using RadAutoCompleteBox.
 slug: winforms/editors/autocompletebox/getting-started
 tags: getting,started

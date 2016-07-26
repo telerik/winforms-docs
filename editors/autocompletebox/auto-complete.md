@@ -1,6 +1,6 @@
 ---
 title: Auto-Complete
-page_title: Auto-Complete | UI for WinForms Documentation
+page_title: Auto-Complete | RadAutoCompleteBox
 description: This article describes which are the supported auto-complete modes.
 slug: winforms/editors/autocompletebox/auto-complete
 tags: auto-complete

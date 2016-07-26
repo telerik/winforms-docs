@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started - RadDateTimePicker
+page_title: Getting Started | RadDateTimePicker
 description: This article shows how you can start using RadDateTimePicker.
 slug: winforms/editors/datetimepicker/getting-started
 tags: getting,started

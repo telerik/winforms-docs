@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | UI for WinForms Documentation
+page_title: Themes | RadAutoCompleteBox
 description: This article shows how one can change the tokenized elements styles in Visual Style Builder.
 slug: winforms/editors/autocompletebox/themes
 tags: formatting,blocks

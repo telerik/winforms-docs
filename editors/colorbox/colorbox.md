@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: ColorBox | UI for WinForms Documentation
+page_title: ColorBox | RadColorBox
 description: RadColorBox is a themable control which allows users to select a color from a color dialog or to directly type it in the text field.
 slug: winforms/editors/colorbox
 tags: colorbox

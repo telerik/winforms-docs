@@ -1,6 +1,6 @@
 ---
 title: Properties and Events
-page_title: Properties and Events | UI for WinForms Documentation
+page_title: Properties and Events | RadAutoCompleteBox
 description: This article shows The mos common properties methods and events used in RadAutoCompleteBox.
 slug: winforms/editors/autocompletebox/formatting-blocks
 tags: formatting,blocks

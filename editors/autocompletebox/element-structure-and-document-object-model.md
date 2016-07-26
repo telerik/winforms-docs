@@ -1,6 +1,6 @@
 ---
 title: Element Structure and Document Object Model
-page_title: Element Structure and Document Object Model | UI for WinForms Documentation
+page_title: Element Structure and Document Object Model | RadAutoCompleteBox
 description: This article shows the element structure of RadAutoCompleteBox
 slug: winforms/editors/autocompletebox/element-structure-and-document-object-model
 tags: element,structure,and,document,object,model

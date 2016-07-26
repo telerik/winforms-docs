@@ -1,6 +1,6 @@
 ---
 title: Free Form Date Time parsing
-page_title: RadDateTimePicker - Free Form Date Time parsing
+page_title: Free Form Date Time parsing | RadDateTimePicker
 description: This article shows how you can use  the free form date time parsing.
 slug: winforms/editors/datetimepicker/free-form-date-time-parsing
 tags: free,form,date,time,parsing
