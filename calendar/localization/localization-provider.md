@@ -1,6 +1,6 @@
 ---
 title: Localization Provider
-page_title: Localization Provider | UI for WinForms Documentation
+page_title: Localization Provider | RadCalendar
 description: Localization Provider
 slug: winforms/calendar/localization/localization-provider
 tags: localization,provider

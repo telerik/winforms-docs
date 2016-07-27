@@ -1,6 +1,6 @@
 ---
 title: Globalization Properties
-page_title: Globalization Properties | UI for WinForms Documentation
+page_title: Globalization Properties | RadCalendar
 description: Globalization Properties
 slug: winforms/calendar/localization/globalization-properties
 tags: globalization,properties

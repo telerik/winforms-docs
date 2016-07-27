@@ -1,6 +1,6 @@
 ---
 title: Zoom
-page_title: Zooming | UI for WinForms Documentation
+page_title: Zooming | RadCalendar
 description: Zooming
 slug: winforms/calendar/customizing-appearance/zooming
 tags: zooming

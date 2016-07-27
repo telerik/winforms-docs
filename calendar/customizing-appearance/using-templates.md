@@ -1,6 +1,6 @@
 ---
 title: Using Templates
-page_title: Using Templates | UI for WinForms Documentation
+page_title: Using Templates | RadCalendar
 description: Using Templates
 slug: winforms/calendar/customizing-appearance/using-templates
 tags: using,templates

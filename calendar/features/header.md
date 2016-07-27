@@ -1,6 +1,6 @@
 ---
 title: Header
-page_title: Header | UI for WinForms Documentation
+page_title: Header | RadCalendar
 description: Header
 slug: winforms/calendar/customizing-appearance/header
 tags: header

@@ -1,6 +1,6 @@
 ---
 title: Right-To-Left Support
-page_title: Right-To-Left Support | UI for WinForms Documentation
+page_title: Right-To-Left Support | RadCalendar
 description: Right-To-Left Support
 slug: winforms/calendar/localization/right-to-left-support
 tags: right-to-left,support

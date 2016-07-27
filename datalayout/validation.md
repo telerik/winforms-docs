@@ -1,6 +1,6 @@
 ---
 title: Validation
-page_title: Validation | UI for WinForms Documentation
+page_title: Validation | RadDataLayout
 description: This article shows how one can validate the user input.
 slug: winforms/datalayout/validation
 tags: validation

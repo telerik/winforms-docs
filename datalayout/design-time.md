@@ -1,6 +1,6 @@
 ---
 title: Design Time
-page_title: Design Time | UI for WinForms Documentation
+page_title: Design Time | RadDataLayout
 description: This article describes the design-time capabilities of RadDataLayout.
 slug: winforms/datalayout/design-time
 tags: design,time

@@ -1,6 +1,6 @@
 ---
 title: CultureInfo and RegionInfo Basics
-page_title: CultureInfo and RegionInfo Basics | UI for WinForms Documentation
+page_title: CultureInfo and RegionInfo Basics | RadCalendar
 description: CultureInfo and RegionInfo Basics
 slug: winforms/calendar/localization/cultureinfo-and-regioninfo-basics
 tags: cultureinfo,and,regioninfo,basics

@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
+page_title: Localization | RadDataLayout
 description: This article shows how you can localize the string used in RadDataLayout.
 slug: winforms/datalayout/localization
 tags: localization

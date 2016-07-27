@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Calendar Structure | UI for WinForms Documentation
+page_title: Calendar Structure | RadCalendar
 description: This article shows the calendar structure and the element hierarchy.
 slug: winforms/calendar/calendar-structure
 tags: calendar,structure

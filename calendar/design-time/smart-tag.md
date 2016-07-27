@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | UI for WinForms Documentation
+page_title: Smart Tag | RadCalendar
 description: This article describes the functionality provided by the RadCalendar smart tag.
 slug: winforms/calendar/smart-tag
 tags: RadCalendar, SmartTag 

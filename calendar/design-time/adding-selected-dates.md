@@ -1,6 +1,6 @@
 ---
 title: Adding Selected Dates
-page_title: Adding Selected Dates | UI for WinForms Documentation
+page_title: Adding Selected Dates | RadCalendar
 description: Adding Selected Dates
 slug: winforms/calendar/design-time-support/adding-selected-dates
 tags: adding,selected,dates

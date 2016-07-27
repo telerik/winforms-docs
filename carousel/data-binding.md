@@ -1,6 +1,6 @@
 ---
 title: Data Binding
-page_title: Data Binding | UI for WinForms Documentation
+page_title: Data Binding | RadCarousel
 description: Data Binding
 slug: winforms/carousel/using-radcarousel/data-binding
 tags: data,binding

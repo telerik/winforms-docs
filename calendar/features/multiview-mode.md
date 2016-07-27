@@ -1,6 +1,6 @@
 ---
 title: MultiView Mode
-page_title: MultiView Mode | UI for WinForms Documentation
+page_title: MultiView Mode | RadCalendar
 description: MultiView Mode
 slug: winforms/calendar/customizing-behavior/multiview-mode
 tags: multiview,mode

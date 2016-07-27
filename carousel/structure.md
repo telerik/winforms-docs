@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | UI for WinForms Documentation 
+page_title: Structure | RadCarousel 
 description: This articles shows the RadCarousel structure. 
 slug: winforms/carousel/structure
 tags:  carousel, structure

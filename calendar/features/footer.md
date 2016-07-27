@@ -1,6 +1,6 @@
 ---
 title: Footer
-page_title: Footer | UI for WinForms Documentation
+page_title: Footer | RadCalendar
 description: Footer
 slug: winforms/calendar/customizing-appearance/footer
 tags: footer

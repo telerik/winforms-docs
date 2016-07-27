@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: DataEntry | UI for WinForms Documentation
+page_title: DataEntry | RadDataEntry
 description: This article describes the purpose of the DataEntry Control.
 slug: winforms/dataentry
 tags: dataentry

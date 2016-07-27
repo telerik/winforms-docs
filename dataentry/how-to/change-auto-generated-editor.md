@@ -1,6 +1,6 @@
 ---
 title: Change auto generated editor 
-page_title: Change auto generated editor  | UI for WinForms Documentation
+page_title: Change auto generated editor  | RadDataEntry
 description: Change auto generated editor 
 slug: winforms/dataentry/change-auto-generated-editor-
 tags: change,auto,generated,editor,

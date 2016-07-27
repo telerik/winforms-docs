@@ -1,6 +1,6 @@
 ---
 title: Structure 
-page_title: Control Element Structure | UI for WinForms Documentation
+page_title: Control Element Structure | RadDataLayout
 description: The article describes the DataLayout elements structure.
 slug: winforms/datalayout/control-element-structure
 tags: control,element,structure,

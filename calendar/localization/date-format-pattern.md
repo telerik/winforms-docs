@@ -1,6 +1,6 @@
 ---
 title: Date Format Pattern
-page_title: Date Format Pattern | UI for WinForms Documentation
+page_title: Date Format Pattern | RadCalendar
 description: Date Format Pattern
 slug: winforms/calendar/localization/date-format-pattern
 tags: date,format,pattern

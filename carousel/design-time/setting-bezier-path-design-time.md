@@ -1,6 +1,6 @@
 ---
 title: Setting Bezier Path Design-Time
-page_title: Setting Bezier Path Design-Time | UI for WinForms Documentation
+page_title: Setting Bezier Path Design-Time | RadCarousel
 description: Setting Bezier Path Design-Time
 slug: winforms/carousel/design-time/setting-bezier-path-design-time
 tags: setting,bezier,path,design-time

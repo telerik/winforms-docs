@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: BindingNavigator | UI for WinForms Documentation
+page_title: BindingNavigator | RadBindingNavigator
 description: BindingNavigator
 slug: winforms/bindingnavigator
 tags: bindingnavigator

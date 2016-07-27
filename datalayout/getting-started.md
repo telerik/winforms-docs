@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadDataLayout
 description: This article shows how you can start using RadDataLayout.
 slug: winforms/datalayout/getting-started
 tags: getting,started

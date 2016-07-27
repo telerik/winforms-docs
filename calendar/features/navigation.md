@@ -1,6 +1,6 @@
 ---
 title: Navigation
-page_title: Customizing Navigation | UI for WinForms Documentation
+page_title: Customizing Navigation | RadCalendar
 description: Customizing Navigation
 slug: winforms/calendar/customizing-behavior/customizing-navigation
 tags: customizing,navigation

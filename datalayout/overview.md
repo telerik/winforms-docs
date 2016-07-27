@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Design Time | UI for WinForms Documentation
+page_title: Design Time | RadDataLayout
 description: This article shows what represents RadDataLayout control and it features.
 slug: winforms/datalayout/overview
 tags: design,time

@@ -1,6 +1,6 @@
 ---
 title: Repeating Events
-page_title: Repeating Events | UI for WinForms Documentation
+page_title: Repeating Events | RadCalendar
 description: Repeating Events
 slug: winforms/calendar/customizing-behavior/repeating-events
 tags: repeating,events

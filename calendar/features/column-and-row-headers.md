@@ -1,6 +1,6 @@
 ---
 title: Column and Row Headers
-page_title: Column and Row Headers | UI for WinForms Documentation
+page_title: Column and Row Headers | RadCalendar
 description: Column and Row Headers
 slug: winforms/calendar/customizing-behavior/column-and-row-headers
 tags: column,and,row,headers
