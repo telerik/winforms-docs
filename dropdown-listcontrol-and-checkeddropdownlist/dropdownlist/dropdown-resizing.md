@@ -183,12 +183,49 @@ The following example demonstrates a sample approach how to handle the RadDropDo
 
 #### Auto size drop down 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListItemSizing.cs region=AutoSizeDropDown}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=AutoSizeDropDown}} 
+{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=AutoSizeDropDown}} 
+{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=AutoSizeDropDown}} 
 
 ````C#
+private void RadDropDownList1_PopupOpening(object sender, CancelEventArgs e)
+{
+    RadDropDownListElement list = sender as RadDropDownListElement;
+    float width = 0;
+
+    for (int x = 0; x < list.Items.Count(); x++)
+    {
+        width = Math.Max(width, TextRenderer.MeasureText(list.Items[x].Text, list.Font).Width);
+    }
+
+    if (list.Items.Count * (list.ItemHeight-1) > list.DropDownHeight)
+    {
+        width += list.ListElement.VScrollBar.Size.Width;
+
+    }
+
+    list.Popup.Width = (int)width;
+
+}
+
 ````
 ````VB.NET
+Private Sub RadDropDownList1_PopupOpening(sender As Object, e As CancelEventArgs)
+    Dim list As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
+    Dim width As Single = 0
+
+    For x As Integer = 0 To list.Items.Count() - 1
+        width = Math.Max(width, TextRenderer.MeasureText(list.Items(x).Text, list.Font).Width)
+    Next
+
+    If list.Items.Count * (list.ItemHeight - 1) > list.DropDownHeight Then
+
+        width += list.ListElement.VScrollBar.Size.Width
+    End If
+
+    list.Popup.Width = CInt(width)
+
+End Sub
+
 ````
 
 {{endregion}} 

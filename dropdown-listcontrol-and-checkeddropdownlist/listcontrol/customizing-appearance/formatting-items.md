@@ -82,3 +82,30 @@ Class
 ````
 
 {{endregion}} 
+
+## Alternating Item Color
+
+__RadListControl__ supports alternating item color which can be easily enabled by just setting a couple of properties: 
+
+{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=alternating}} 
+{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=alternating}} 
+
+````C#
+radListControl1.EnableAlternatingItemColor = true;
+radListControl1.ListElement.AlternatingItemColor = Color.Red;
+
+````
+````VB.NET
+radListControl1.EnableAlternatingItemColor = True
+radListControl1.ListElement.AlternatingItemColor = Color.Red
+
+````
+
+{{endregion}} 
+
+>caption Figure 2: AlternatingItemColor
+
+![listcontrol-formatting-items 002](images/listcontrol-formatting-items002.png)
+
+
+
