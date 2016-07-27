@@ -91,7 +91,9 @@ Run the application. Notice the three selected and the highlighted special day. 
 * [Adding Selected Dates]({%slug winforms/calendar/design-time-support/adding-selected-dates%})
 
 * [Adding Spacial Days]({%slug winforms/calendar/design-time-support/adding-special-days%})
+
 * [Properties and Events]({%slug winforms/calendar/important-events%})
+
 * [Formatting Items ]({%slug  winforms/calendar/customizing-appearance/formatting-items%})
 
 

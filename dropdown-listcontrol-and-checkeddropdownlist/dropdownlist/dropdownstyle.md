@@ -1,6 +1,6 @@
 ---
 title: DropDownStyle
-page_title: DropDownStyle | UI for WinForms Documentation
+page_title: DropDownStyle | RadDropDownList
 description: RadDropDownList.DropDownStyle property determines if the text area at the top of the control can be edited. 
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdownstyle
 tags: dropdownstyle
@@ -10,18 +10,16 @@ previous_url: dropdown-and-listcontrol-dropdownlist-dropdownstyle
 ---
 
 # DropDownStyle
- 
-## 
 
 The __RadDropDownList.DropDownStyle__ property determines if the text area at the top of the control can be edited. A setting of *DropDown* (the default) allows editing and the *DropDownList* setting shows the text area as read-only.
          
-|
->caption Fig.1 DropDown
+>caption Figure 1: DropDown
 
-![dropdown-and-listcontrol-dropdownlist-dropdownstyle 001](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle001.png)|
->caption Fig.2 DropDownList
+![dropdown-and-listcontrol-dropdownlist-dropdownstyle 001](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle001.png)
 
-![dropdown-and-listcontrol-dropdownlist-dropdownstyle 002](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle002.png)|
+>caption Figure 2: DropDownList
+
+![dropdown-and-listcontrol-dropdownlist-dropdownstyle 002](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle002.png)
 
 #### Setting DropDownStyle 
 

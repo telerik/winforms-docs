@@ -213,6 +213,11 @@ $(document).ready(function () {
 	$("#form-close-button").click(function () {
 		win.close();
 	});
+    
+    //Attach to submit button inside form window
+    $("#form-submit-button").click(function () {
+        feedbackForm.submit();
+    });
 
 	//Init buttons
 	$("#yesButton").click(function () {

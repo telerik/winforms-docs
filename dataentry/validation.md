@@ -11,11 +11,11 @@ previous_url: dataentry-validation
 
 # Validation
 
-
 For the need of validation process we made two events (__ItemValidating, ItemValidated__) that are firing when the __Validating__ and __Validated__ events occur in the editors. __RadDataEntry__ provides three different ways to show to the users that some editors do not match to validation criteria – Validation label, Error provider and Validation Panel. In the following tutorial we will demonstrate how use validation panel together with Error provider.
-        
 
 1\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items: 
+
+#### DataObject
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=empl1}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=empl1}} 
@@ -142,6 +142,8 @@ End Enum
 {{endregion}} 
  
 
+#### Data Binding
+
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
 
@@ -195,7 +197,8 @@ Me.radDataEntry1.ShowValidationPanel = True
  
 
 3\. Subscribe to the __ItemValidated__ event of __RadDataEntry__:
-            
+
+#### Data Validation
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ItemValidated}} 
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ItemValidated}} 

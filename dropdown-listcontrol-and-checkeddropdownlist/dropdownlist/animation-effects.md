@@ -1,6 +1,6 @@
 ---
 title: Animation Effects
-page_title: Animation Effects | UI for WinForms Documentation
+page_title: Animation Effects | RadDropDownList
 description: Three properties define the animation behavior of RadDropDownList - DropDownAnimationEnabled, DropDownAnimationEasing, DropDownAnimationFrames.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/animation-effects
 tags: animation,effects
@@ -10,12 +10,8 @@ previous_url: dropdown-and-listcontrol-dropdownlist-animation-effects
 ---
 
 # Animation Effects
- 
 
 Three properties define the animation behavior of __RadDropDownList__:
-      
-
-## 
 
 * __DropDownAnimationEnabled__: This property controls whether an animation will be enabled or not.
             
@@ -25,7 +21,7 @@ Three properties define the animation behavior of __RadDropDownList__:
 
 * __DropDownAnimationFrames__: Property specifies the length of the animation. The higher the value of this property, the longer the animation will take.
             
->caption Fig.1 Enable Animation
+>caption Figure 1: Enable Animation
 
 ![dropdown-and-listcontrol-dropdownlist-animation-effects 001](images/dropdown-and-listcontrol-dropdownlist-animation-effects001.gif)
 

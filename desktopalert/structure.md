@@ -10,13 +10,12 @@ position: 1
 
 # Structure
 
-This article will show the internal elements structure of __RadDesktopAlert__:
+This article describes the inner structure and organization of the elements which build the __RadDesktopAlert__ control.
 
 >caption Fig.1 RadDesktopAlert's structure
 
 ![desktopalert-structure 001](images/desktopalert-structure001.png)
 
-This article describes the inner structure and organization of the elements which build the __RadDesktopAlert__ control.
 
 1. __RadDesktopAlertElement__: represents the main element of a __RadDesktopAlert__ <br>
 	1\.1\. __AlertWindowCaptionElement__: represents the caption of a __RadDesktopAlert__. It contains a caption grip which is used to move the alert window, close button and options drop-down button.<br>

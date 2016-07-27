@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadListControl
+description:  RadListControl is the an alternative to the Microsoft ListBox control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/getting-started
 tags: getting,started
 published: True
@@ -9,19 +9,14 @@ position: 2
 previous_url: dropdown-and-listcontrol-listcontrol-getting-started
 ---
 
-# Getting Started
-
-
-
+# Getting Started 
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Getting Started with RadListControl](http://www.telerik.com/videos/winforms/getting-started-with-radlistcontrol)<br>In this video, you will learn how to bind data to the new RadListControl.|![dropdown-and-listcontrol-listcontrol-getting-started 003](images/dropdown-and-listcontrol-listcontrol-getting-started003.png)|
 
-## 
 
-This tutorial demonstrates how to manually populate RadListControl and
-how to react to a user choice in code.
+This tutorial demonstrates how to manually populate __RadListControl__ and how to react to a user's choice in code.
 
 1\. Place a __RadListControl__ and a __RadLabel__ control on a form.
 
@@ -32,6 +27,8 @@ how to react to a user choice in code.
 4\. In the __RadItem Collection Editor__, click __Add__.
 
 5\. Set the __Text__ property of the new __ListItem__ to "RadComboBox". 
+
+>caption Figure 1: RadListDataItem Collection Editor
 
 ![dropdown-and-listcontrol-listcontrol-getting-started 001](images/dropdown-and-listcontrol-listcontrol-getting-started001.png)
 
@@ -44,6 +41,7 @@ how to react to a user choice in code.
 9\. Double-click the __SelectedIndexChanged__ event.
 
 10\. Replace the automatically-generated event handler with this code:
+
 #### Handling the SelectedIndexChanged event 
 
 {{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=handlingSelectedIndexChanged}} 
@@ -71,3 +69,8 @@ End Sub
 11\. Press __F5__ to run the project. Select an item in the list box and note the value of the label.
 
 ![dropdown-and-listcontrol-listcontrol-getting-started 002](images/dropdown-and-listcontrol-listcontrol-getting-started002.png)
+
+# See Also
+
+* [Adding Items Programmatically]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data/adding-items-programmatically%})
+* [Data Binding]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data/data-binding%})

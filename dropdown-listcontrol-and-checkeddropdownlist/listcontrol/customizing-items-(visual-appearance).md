@@ -5,7 +5,7 @@ description: Customizing Items (visual appearance)
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/customizing-items-(visual-appearance)
 tags: customizing,items,(visual,appearance)
 published: True
-position: 7
+position: 9
 previous_url: dropdown-and-listcontrol-listcontrol-customizing-items-(visual-appearance)
 ---
 

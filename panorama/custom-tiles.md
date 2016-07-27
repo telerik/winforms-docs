@@ -24,7 +24,6 @@ The code snippet bellow illustrates how the layout is achieved. There is a [Grid
 {{source=..\SamplesVB\Panorama\CustomTiles.vb region=CustomTileClass}} 
 
 ````C#
-    
 class CustomTileElement : RadTileElement
 {
     LightVisualElement subject;
@@ -35,10 +34,11 @@ class CustomTileElement : RadTileElement
     protected override void CreateChildElements()
     {
         base.CreateChildElements();
-        
         layoutPanel = new GridLayout();
         layoutPanel.Columns.Clear();
         layoutPanel.Rows.Clear();
+        layoutPanel.StretchHorizontally = false;
+        layoutPanel.StretchVertically = false;
         //add columns
         layoutPanel.Columns.Add(new GridLayoutColumn()
         {
@@ -66,7 +66,6 @@ class CustomTileElement : RadTileElement
             SizingType = GridLayoutSizingType.Proportional,
             ProportionalHeightWeight = 34
         });
-        
         subject = new LightVisualElement();
         subject.Text = "WinForms Conference";
         subject.Font = new System.Drawing.Font("Consolas", 18, FontStyle.Underline);
@@ -76,18 +75,14 @@ class CustomTileElement : RadTileElement
         subject.SetValue(GridLayout.RowIndexProperty, 0);
         subject.SetValue(GridLayout.ColumnIndexProperty, 0);
         subject.SetValue(GridLayout.ColSpanProperty, 2);
-        
         startTime = new LightVisualElement();
         startTime.Text = "Start: " + DateTime.Now.ToShortDateString();
-        
         startTime.SetValue(GridLayout.RowIndexProperty, 1);
         startTime.SetValue(GridLayout.ColumnIndexProperty, 0);
-        
         endTime = new LightVisualElement();
         endTime.Text = "End: " + DateTime.Now.AddDays(3).ToShortDateString();
         endTime.SetValue(GridLayout.RowIndexProperty, 1);
         endTime.SetValue(GridLayout.ColumnIndexProperty, 1);
-        
         alarmIcon = new LightVisualElement();
         alarmIcon.Image = Image.FromFile(@"../../bell.png").GetThumbnailImage(35, 35, null, IntPtr.Zero);
         alarmIcon.ImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -95,19 +90,16 @@ class CustomTileElement : RadTileElement
         alarmIcon.ImageAlignment = ContentAlignment.MiddleRight;
         alarmIcon.SetValue(GridLayout.RowIndexProperty, 2);
         alarmIcon.SetValue(GridLayout.ColumnIndexProperty, 1);
-        
         this.layoutPanel.Children.Add(subject);
         this.layoutPanel.Children.Add(startTime);
         this.layoutPanel.Children.Add(endTime);
         this.layoutPanel.Children.Add(alarmIcon);
         this.Children.Add(layoutPanel);
     }
-    
     public CustomTileElement()
     {
         this.BackColor = ColorTranslator.FromHtml("#008de7");
     }
-        
     protected override Type ThemeEffectiveType
     {
         get
@@ -131,6 +123,8 @@ Inherits RadTileElement
         layoutPanel = New GridLayout()
         layoutPanel.Columns.Clear()
         layoutPanel.Rows.Clear()
+        layoutPanel.StretchHorizontally = False
+        layoutPanel.StretchVertically = False
         'add columns
         layoutPanel.Columns.Add(New GridLayoutColumn() With {.SizingType = GridLayoutSizingType.Proportional, .ProportionalWidthWeight = 50})
         layoutPanel.Columns.Add(New GridLayoutColumn() With {.SizingType = GridLayoutSizingType.Proportional, .ProportionalWidthWeight = 50})
@@ -190,7 +184,6 @@ You can use the new tile with the following code:
 {{source=..\SamplesVB\Panorama\CustomTiles.vb region=AddTile}} 
 
 ````C#
-            
 CustomTileElement tile = new CustomTileElement();
 radPanorama1.Items.Add(tile);
 

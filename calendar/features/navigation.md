@@ -26,7 +26,9 @@ __RadCalendar__ provides two types of navigation that allow you to switch or jum
 ## Navigation properties:
 
 * __AllowFastNavigation:__ Shows/hides the fast navigation buttons.
+
 * __TitleAlign:__ Gets or sets the horizontal alignment of the calendar title. 
+
 * __FastNavigationStep:__ this property gets or sets the current step used by the fast navigation buttons.
 
 * __FastNavigationNextImage__, __FastNavigationNextText__, __FastNavigationNextToolTip:__ these properties allows you to set the text image and tooltip of the next button.

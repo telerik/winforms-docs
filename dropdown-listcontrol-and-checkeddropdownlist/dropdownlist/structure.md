@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | UI for WinForms Documentation
-description: Structure
+page_title: Structure | RadDropDownList
+description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/structure
 tags: structure
 published: True
@@ -10,12 +10,10 @@ previous_url: dropdown-and-listcontrol-dropdownlist-structure
 ---
 
 # Structure
- 
-## RadDropDownList structure
 
 This article describes the inner structure and organization of the elements which build the __RadDropDownList__ control.
         
->caption Figure 1. RadDropDownList visual structure
+>caption Figure 1: RadDropDownList visual structure
 
 ![dropdown-and-listcontrol-dropdownlist-structure 001](images/dropdown-and-listcontrol-dropdownlist-structure001.png)
 
@@ -38,4 +36,9 @@ This article describes the inner structure and organization of the elements whic
             
 
 1. __SizeGripElement__: Resizes the drop down element.
+
+
+# See Also
+
+* [RadControlSpy]({%slug winforms/tools/controlspy%})
             

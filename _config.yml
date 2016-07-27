@@ -227,6 +227,9 @@ navigation:
     dataentry/how-to:
         title: How To
         position: 7
+    dataentry/customizing-appearance:
+        title: Customizing Appearance
+        position: 8
     datalayout:
         title: DataLayout
         position: 17
@@ -299,12 +302,27 @@ navigation:
     dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data:
         title: Populating with Data
         position: 5
+    dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/customizing-appearance:
+        title: Customizing Appearance
+        position: 4
+    dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/features:
+        title: Features
+        position: 6
     dropdown-listcontrol-and-checkeddropdownlist/listcontrol:
         title: ListControl
         position: 2
     dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop:
         title: Drag and Drop
-        position: 5
+        position: 7
+    dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data:
+        title: Populating with Data
+        position: 4
+    dropdown-listcontrol-and-checkeddropdownlist/listcontrol/customizing-appearance:
+        title: Customizing Appearance
+        position: 8
+    dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features:
+        title: Features
+        position: 9
     dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist:
         title: CheckedDropDownList
         position: 3
@@ -1036,7 +1054,7 @@ defaults:
 # "foo": "Bar"
 
 # Feedback Form Google Sheet ID
-ff-sheet-id: 
+ff-sheet-id: 14RypVB61J1Zbq7JjxBay2Pf3seiLOlwrK08jbfNL64M 
 
 # The google services configuration
 google_analytics: UA-1119090:eblhnfskwrk'

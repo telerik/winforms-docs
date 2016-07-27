@@ -4,8 +4,8 @@ page_title: Features | UI for WinForms Documentation
 description: Features
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features
 tags: features
-published: True
-position: 1
+published: False
+position: 8
 previous_url: dropdown-and-listcontrol-listcontrol-features
 ---
 
@@ -158,7 +158,56 @@ radListControl1.ListElement.AlternatingItemColor = Color.Red;
 radListControl1.EnableAlternatingItemColor = True
 radListControl1.ListElement.AlternatingItemColor = Color.Red
 '#End Region
+'#Region "AddItemsProgrammatically"
+Dim descriptionItem As New DescriptionTextListDataItem()
+descriptionItem.Text = "Chicken wings"
+descriptionItem.Image = My.Resources.chicken_wings
+descriptionItem.DescriptionText = "some description"
+Me.radListControl1.Items.Add(descriptionItem)
+Dim dataItem As New RadListDataItem()
+dataItem.Text = "Chicken toast"
+dataItem.Image = My.Resources.chicken_toast
+Me.radListControl1.Items.Add(dataItem)
+'#End Region
+'#Region "expression"
+Me.radListControl1.FilterExpression = "Country LIKE 'Argentina'"
+'#End Region
 End Sub
+'#Region "Binding"
+Public Class Item
+Public Property Id() As Integer
+    Get
+        Return m_Id
+    End Get
+    Set(value As Integer)
+        m_Id = value
+    End Set
+End Property
+Private m_Id As Integer
+Public Property Description() As String
+    Get
+        Return m_Description
+    End Get
+    Set(value As String)
+        m_Description = value
+    End Set
+End Property
+Private m_Description As String
+Public Sub New(id As Integer, description As String)
+    Me.Id = id
+    Me.Description = description
+End Sub
+End Class
+Public Sub Bind()
+Dim items As New List(Of Item)()
+For i As Integer = 0 To 9
+    items.Add(New Item(i, "Data" + i))
+Next
+radListControl1.DataSource = items
+radListControl1.DisplayMember = "Description"
+radListControl1.ValueMember = "Id"
+End Sub
+'#End Region
 '#region creatingVisualListItem
 Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
 args.VisualItem = New CustomVisualItem()
