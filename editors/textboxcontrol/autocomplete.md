@@ -10,28 +10,24 @@ previous_url: editors-textboxcontrol-autocomplete
 ---
 
 # AutoComplete
- 
 
-## 
-
-The RadTextBoxControl can automatically complete the input string by comparing the prefix being entered to the prefix of all strings in the maintained source. This is useful for RadTextBoxControl in which URLs, addresses, file names or commands will be frequently entered.
+The __RadTextBoxControl__ can automatically complete the input string by comparing the prefix being entered to the prefix of all strings in the maintained source. This is useful for __RadTextBoxControl__ in which URLs, addresses, file names or commands will be frequently entered.
         
 
 There are four different completion modes:
 
-* __Append__ - Appends the remainder of the most likely candidate string to the existing characters, highlighting the appended characters.
+* __Append:__ Appends the remainder of the most likely candidate string to the existing characters, highlighting the appended characters.
 		  	
 
-* __None__ - Disables the automatic completion feature. 
+* __None:__ Disables the automatic completion feature. 
 		  	
 
-* __Suggest__ - Displays the auxiliary drop-down list associated with the control. This drop-down is populated with the matching completion strings.
+* __Suggest:__ Displays the auxiliary drop-down list associated with the control. This drop-down is populated with the matching completion strings.
 		  	
 
-* __SuggestAppend__ - Applies both Suggest and Append options.
-		  	
+* __SuggestAppend:__ Applies both Suggest and Append options.
 
-You can change the completion behavior by setting the AutoCompleteMode property. You can determine the items used for auto-completion by specifying a data source or adding the items manually.
+You can change the completion behavior by setting the __AutoCompleteMode__ property. You can determine the items used for auto-completion by specifying a data source or adding the items manually.
 		
 
 ## Auto-completion data binding
