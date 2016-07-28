@@ -12,7 +12,7 @@ position: 2
 
 The __Smart Tag__ of __RadSpinEditor__ lets you quickly access common tasks involved with and customizing the layout or setting the theme.
 
->caption Figure 1: The Smart Tag of RadColorBox
+>caption Figure 1: The Smart Tag of RadSpinEditor
 
 ![editors-spineditor-design-time001](images/editors-spineditor-design-time001.png)        
 

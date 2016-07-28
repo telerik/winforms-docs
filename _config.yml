@@ -374,6 +374,9 @@ navigation:
     editors/textbox:
         title: TextBox
         position: 7
+    editors/textbox/customizing-appearance:
+        title: Customizing Appearance
+        position: 6		
     editors/textboxcontrol:
         title: TextBoxControl
         position: 8

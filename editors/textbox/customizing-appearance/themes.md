@@ -1,16 +1,16 @@
 ---
 title: Themes
-page_title: Themes | RadSpinEditor
-description: RadSpinEditor is a themable alternative to the standard Windows Numeric Up Down control.
-slug: winforms/editors/spineditor/themes
-tags: spineditor
+page_title: Themes | RadTextBox
+description: This article shows how you can change the disabled back color of RadTextBox.
+slug: winforms/editors/textbox/themes
+tags: textbox
 published: True
 position: 1
 ---
 
 # Themes
 
-This help article will demonstrate a step by step tutorial how to customize the `ControlDefault` theme for __RadSpinEditor__
+This help article will demonstrate a step by step tutorial how to customize the `ControlDefault` theme for __RadTextBox__
 
 1. Open [Visual Style Builder] ({%slug winforms/tools/visual-style-builder/starting-vsb%})
 2. Export the built-in themes in a specific folder by selecting `File` >> `Export Built-in Themes`.
@@ -29,4 +29,3 @@ This help article will demonstrate a step by step tutorial how to customize the 
 # See Also 
 
 * [Customizing Appearance]({%slug winforms/editors/spineditor/customizing-appearance%})
-

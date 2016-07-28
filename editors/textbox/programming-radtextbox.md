@@ -5,7 +5,7 @@ description: This article shows the most commonly used properties and events of 
 slug: winforms/editors/textbox/programming-radtextbox
 tags: programming,radtextbox
 published: True
-position: 1
+position: 3
 previous_url: editors-textbox-programming-radtextbox
 ---
 
