@@ -32,7 +32,7 @@ You can change the completion behavior by setting the __AutoCompleteMode__ prope
 
 ## Auto-completion data binding
 
-RadTextBoxControl binds to collections of bindable types from many sources including:
+__RadTextBoxControl__ binds to collections of bindable types from many sources including:
 
 * Array and ArrayList of simple types or custom objects.
 				
@@ -54,16 +54,16 @@ Two properties control data binding:
 * The __AutoCompleteDisplayMember__ property specifies the particular data to be displayed in a RadTextBoxControl auto-completion drop down.
 				
 
-To set the __AutoCompleteDataSource__ property, select the __AutoCompleteDataSource__ property in the Properties window, click the drop-down arrow to display all existing data sources on the form. Click the Add Project Data Source link and follow the instructions in the Data Source Configuration Wizard to add a data source to your project. You can use databases, web services, or objects as data sources.
+To set the __AutoCompleteDataSource__ property, select the __AutoCompleteDataSource__ property in the Properties window, click the drop-down arrow to display all existing data sources on the form. Click the `Add Project Data Source` link and follow the instructions in the `Data Source Configuration Wizard` to add a data source to your project. You can use databases, web services, or objects as data sources.
 
 ![editors-textboxcontrol-autocomplete 001](images/editors-textboxcontrol-autocomplete001.png)
 
-To set the __AutoCompleteDisplayMember__ property, first set the data source property. Then, select a value for the __AutoCompleteDisplayMember__ property from the drop-down list in the Properties window.
+To set the __AutoCompleteDisplayMember__ property, first set the data source property. Then, select a value for the __AutoCompleteDisplayMember__ property from the drop-down list in the `Properties` window.
 		
 
 ## Auto-completion in unbound mode
 
-To use auto-completion without specifying a data source, you need to populate the items which will be used for completing the input string in RadTextBoxControl, in the __Items__ collection of the control: 
+To use auto-completion without specifying a data source, you need to populate the items which will be used for completing the input string in __RadTextBoxControl__, in the __Items__ collection of the control: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=AddAutoCompleteItems}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=AddAutoCompleteItems}} 

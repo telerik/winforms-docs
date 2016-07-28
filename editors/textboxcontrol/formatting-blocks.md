@@ -10,11 +10,10 @@ previous_url: editors-textboxcontrol-formatting-blocks
 ---
 
 # Formatting blocks
- 
-
-## 
 
 The RadTextBoxControl allow appearance customization of each instance of __ITextBlock__. This can be easily achieved by subscribing to the __FormattingTextBlock__ event: 
+
+#### Subscribing to TextBlockFormatting event
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Formatting1}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Formatting1}}
@@ -31,6 +30,8 @@ Me.RadTextBoxControl1.Text = "This is important text."
 ````
 
 {{endregion}} 
+
+#### The TextBlockFormatting event handler
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=formatting2}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=formatting2}} 
@@ -62,5 +63,5 @@ End Sub
 
 ![editors-textboxcontrol-formatting-blocks 001](images/editors-textboxcontrol-formatting-blocks001.png)
 
-Notice that the event occurs when the text blocks are repositioned. This happens in different cases: editing, control resizing and etc. Hence, you should subscribe to the event before initializing the __Text__ property.
+>note Notice that the event occurs when the text blocks are repositioned. This happens in different cases: editing, control resizing and etc. Hence, you should subscribe to the event before initializing the __Text__ property.
         

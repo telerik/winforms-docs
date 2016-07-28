@@ -10,13 +10,11 @@ previous_url: editors-textboxcontrol-element-structure-and-document-object-model
 ---
 
 # Element structure and document object model
- 
-## 
 
-The document object model of RadTextBoxControl is represented by __LineInfo__ class and __ITextBlock__ interface. The __LineInfo__ class contains logical information about the start and end block of the line and its size. The __ITextBlock__ interface exposes layout information of a single word. Notice that the elements which implement __ITextBlock__ interface should be inheritors of RadElement.
+The document object model of RadTextBoxControl is represented by __LineInfo__ class and __ITextBlock__ interface. The __LineInfo__ class contains logical information about the start and end block of the line and its size. The __ITextBlock__ interface exposes layout information of a single word. Notice that the elements which implement __ITextBlock__ interface should be inheritors of `RadElement`.
        	
 
-The visual element structure of the RadTextBoxControlElement is presented on the following diagram:
+The visual element structure of the `RadTextBoxControlElement` is presented on the following diagram:
 
 ![editors-textboxcontrol-element-structure 001](images/editors-textboxcontrol-element-structure001.png)
 

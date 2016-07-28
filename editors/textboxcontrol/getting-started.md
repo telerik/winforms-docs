@@ -10,12 +10,10 @@ previous_url: editors-textboxcontrol-getting-started
 ---
 
 # Getting Started
- 
-## 
 
-The RadTextBoxControl is used to get input from the user or to display text. The control can display multiple lines, wrap text to the size of the control, add basic formatting, use themes, and the main differences with RadTextBox - can be transparent and use gradients. The text box control provides a single format style for the text displayed or entered.
+The __RadTextBoxControl__ is used to get input from the user or to display text. The control can display multiple lines, wrap text to the size of the control, add basic formatting, use themes, and the main differences with RadTextBox - can be transparent and use gradients. The text box control provides a single format style for the text displayed or entered.
          
-The text displayed by the control resides in the Text property. It can be set at design time via the Properties window in Visual Studio, at run time in code, or by user input at run time. The current contents of a text box can be retrieved at run time by via the Text property.
+The text displayed by the control resides in the __Text__ property. It can be set at design time via the `Properties` window in Visual Studio, at run time in code, or by user input at run time. The current contents of a text box can be retrieved at run time by via the Text property.
         
 
 The code below sets text in the control at run time: 

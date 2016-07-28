@@ -11,14 +11,9 @@ previous_url: editors-textboxcontrol-radtextboxcontrol-vs-radtextbox
 
 # RadTextBoxControl vs RadTextBox
  
-This article will demonstrate the difference between [RadTextBox]({%slug winforms/editors/textbox%}) and RadTextBoxControl.
-      
+This article will demonstrate the difference between [RadTextBox]({%slug winforms/editors/textbox%}) and __RadTextBoxControl__.
 
-## 
-
-The main and most important difference between RadTextBox and RadTextBoxControl is that RadTextBox is a wrapper around the standard .NET TextBox control, while RadTextBoxControl is built entirely on top of [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}). This main difference helps avoid some of the limitations that hosted controls introduce such as unsupported clipping, higher memory usage, slower painting, etc. Follows a comparison table with the different features between these controls.
-        
-
+The main and most important difference between __RadTextBox__ and __RadTextBoxControl__ is that __RadTextBox__ is a wrapper around the standard .NET TextBox control, while __RadTextBoxControl__ is built entirely on top of [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}). This main difference helps avoid some of the limitations that hosted controls introduce such as unsupported clipping, higher memory usage, slower painting, etc. Follows a comparison table with the different features between these controls.
 
 | RadTextBox | RadTextBoxControl |
 | ------ | ------ |

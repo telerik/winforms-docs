@@ -10,14 +10,10 @@ previous_url: editors-textboxcontrol-caret-positioning-and-selection
 ---
 
 # Caret positioning and selection
- 
-## 
 
-The positioning and selection in RadTextBoxControl can be performed programmatically as well as using keyboard and mouse input.
-        
+The positioning and selection in __RadTextBoxControl__ can be performed programmatically as well as using keyboard and mouse input.
 
 To select text you can press the shift key followed by left mouse button or one of the navigation keys of the keyboard (up, down, left, right buttons).
-        
 
 Programmatically selection can be performed by using the __SelectionStart__ and __SelectionLength__ properties of RadTextBoxControl.
         
@@ -51,7 +47,7 @@ End Sub
 
 {{endregion}} 
  
-Alternatively, you can use the Select method to select the same part of the text: 
+Alternatively, you can use the __Select__ method to select the same part of the text: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Select}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Select}} 
