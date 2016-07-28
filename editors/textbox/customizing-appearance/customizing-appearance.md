@@ -20,4 +20,4 @@ You can easily change the styles of the border in the `Element Hierarchy Editor`
 
 # See Also
 
-* [Themes]({%slug winforms/editors/spineditor/themes%})
+* [Themes]({%slug winforms/editors/textbox/themes%})
