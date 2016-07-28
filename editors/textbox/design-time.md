@@ -26,3 +26,5 @@ The __Smart Tag__ of __RadTextBox__ lets you quickly access common tasks involve
 # See Also
 
 * [Add Themes]({%slug winforms/themes/using-default-themes%})
+* [Structure]({%slug winforms/editors/textbox/control-element-structure%})
+* [Adding Buttons to RadTextBox]({%slug winforms/editors/textbox/adding-buttons-to-radtextbox%})

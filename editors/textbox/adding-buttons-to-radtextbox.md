@@ -156,3 +156,9 @@ End Sub
 {{endregion}} 
  
 This is it! Now you have a good-looking RadTextBox with buttons!
+
+# See Also
+
+* [Properties]({%slug winforms/editors/textbox/programming-radtextbox%})
+* [Design Time]({%slug winforms/editors/textbox/designtime%})
+* [Structure]({%slug winforms/editors/textbox/control-element-structure%})
