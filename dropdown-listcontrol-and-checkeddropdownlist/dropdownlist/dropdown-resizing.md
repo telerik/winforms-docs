@@ -191,20 +191,15 @@ private void RadDropDownList1_PopupOpening(object sender, CancelEventArgs e)
 {
     RadDropDownListElement list = sender as RadDropDownListElement;
     float width = 0;
-
     for (int x = 0; x < list.Items.Count(); x++)
     {
         width = Math.Max(width, TextRenderer.MeasureText(list.Items[x].Text, list.Font).Width);
     }
-
     if (list.Items.Count * (list.ItemHeight-1) > list.DropDownHeight)
     {
         width += list.ListElement.VScrollBar.Size.Width;
-
     }
-
     list.Popup.Width = (int)width;
-
 }
 
 ````
@@ -212,19 +207,23 @@ private void RadDropDownList1_PopupOpening(object sender, CancelEventArgs e)
 Private Sub RadDropDownList1_PopupOpening(sender As Object, e As CancelEventArgs)
     Dim list As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
     Dim width As Single = 0
-
     For x As Integer = 0 To list.Items.Count() - 1
         width = Math.Max(width, TextRenderer.MeasureText(list.Items(x).Text, list.Font).Width)
     Next
-
     If list.Items.Count * (list.ItemHeight - 1) > list.DropDownHeight Then
-
         width += list.ListElement.VScrollBar.Size.Width
     End If
-
     list.Popup.Width = CInt(width)
-
 End Sub
+'#End Region
+'#Region "FilteringPredicate"
+Private Function FilterItem(item As RadListDataItem) As Boolean
+    If item.Text.StartsWith("L") Then
+        Return True
+    End If
+    
+    Return False
+End Function
 
 ````
 
