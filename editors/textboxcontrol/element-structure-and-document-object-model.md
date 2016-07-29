@@ -1,11 +1,11 @@
 ---
 title: Element structure and document object model
-page_title: Element structure and document object model | UI for WinForms Documentation
-description: Element structure and document object model
+page_title: Element structure and document object model | RadTextBoxControl
+description: This article shows how RadTextBox controls is strucutured and which are its main elements.
 slug: winforms/editors/textboxcontrol/element-structure-and-document-object-model
 tags: element,structure,and,document,object,model
 published: True
-position: 3
+position: 2
 previous_url: editors-textboxcontrol-element-structure-and-document-object-model
 ---
 

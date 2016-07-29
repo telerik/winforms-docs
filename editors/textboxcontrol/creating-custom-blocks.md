@@ -1,11 +1,11 @@
 ---
 title: Creating custom blocks
-page_title: Creating custom blocks | UI for WinForms Documentation
+page_title: Creating custom blocks | RadTextBoxControl
 description: Creating custom blocks
 slug: winforms/editors/textboxcontrol/creating-custom-blocks
 tags: creating,custom,blocks
 published: True
-position: 8
+position: 9
 previous_url: editors-textboxcontrol-creating-custom-blocks
 ---
 

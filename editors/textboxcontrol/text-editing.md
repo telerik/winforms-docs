@@ -1,19 +1,17 @@
 ---
 title: Text editing
-page_title: Text editing | UI for WinForms Documentation
+page_title: Text editing | RadTextBoxControl
 description: Text editing
 slug: winforms/editors/textboxcontrol/text-editing
 tags: text,editing
 published: True
-position: 5
+position: 6
 previous_url: editors-textboxcontrol-text-editing
 ---
 
 # Text editing
- 
-## 
 
-The editing point is determined by the caret position and selection in RadTextBoxControl. The editing position is visible only if the control is focused.
+The editing point is determined by the caret position and selection in __RadTextBoxControl__. The editing position is visible only if the control is focused.
         
 
 You can insert text programmatically at concrete position by using the __Insert__ method. At that case, the text is inserted at the position determined by the __SelectionStart__ property. If the __SelectionLength__ property is greater than zero, the inserted text replaces the selected text. 

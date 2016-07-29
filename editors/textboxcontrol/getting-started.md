@@ -1,11 +1,11 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadTextBoxControl
 description: Getting Started
 slug: winforms/editors/textboxcontrol/getting-started
 tags: getting,started
 published: True
-position: 2
+position: 4
 previous_url: editors-textboxcontrol-getting-started
 ---
 

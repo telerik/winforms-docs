@@ -1,11 +1,11 @@
 ---
 title: Caret positioning and selection
-page_title: Caret positioning and selection | UI for WinForms Documentation
+page_title: Caret positioning and selection | RadTextBoxControl
 description: Caret positioning and selection
 slug: winforms/editors/textboxcontrol/caret-positioning-and-selection
 tags: caret,positioning,and,selection
 published: True
-position: 4
+position: 5
 previous_url: editors-textboxcontrol-caret-positioning-and-selection
 ---
 
@@ -70,7 +70,9 @@ End Sub
 
 {{endregion}} 
  
-The both approaches produce same result:![editors-textboxcontrol-caret-positioning-and-selection 001](images/editors-textboxcontrol-caret-positioning-and-selection001.png)
+The both approaches produce same result:
+
+![editors-textboxcontrol-caret-positioning-and-selection 001](images/editors-textboxcontrol-caret-positioning-and-selection001.png)
 
 You can access the selected text through the __SelectedText__ property. To select the whole text use the __SelectAll__ method.
 		

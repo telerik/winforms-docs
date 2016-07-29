@@ -1,11 +1,11 @@
 ---
 title: AutoComplete
-page_title: AutoComplete | UI for WinForms Documentation
+page_title: AutoComplete | RadTextBoxControl
 description: AutoComplete
 slug: winforms/editors/textboxcontrol/autocomplete
 tags: autocomplete
 published: True
-position: 6
+position: 7
 previous_url: editors-textboxcontrol-autocomplete
 ---
 

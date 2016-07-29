@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: TextBoxControl | UI for WinForms Documentation
+page_title: TextBoxControl | RadTextBoxControl
 description: TextBoxControl
 slug: winforms/editors/textboxcontrol
 tags: textboxcontrol
