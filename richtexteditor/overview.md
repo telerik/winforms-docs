@@ -65,7 +65,7 @@ __RadRichTextEditor__ is a control that is able to display and edit rich-text co
 
 * __Bookmarks__ - provide easy retrieval of previously marked parts of the document.[Read more]({%slug winforms/richtexteditor-/features/bookmarks%})
 
-* __Comments__ - offer the ability to add text to the document which is not inserted directly in the page.[Read more]({%slug winforms/richtexteditor-/features/commnets%})
+* __Comments__ - offer the ability to add text to the document which is not inserted directly in the page.[Read more]({%slug winforms/richtexteditor-/features/comments%})
 
 * __Document protection__ - allows editing restrictions in the document for a set of users and groups.[Read more]({%slug winforms/richtexteditor-/features/document-protection%})
 

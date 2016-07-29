@@ -326,6 +326,9 @@ navigation:
     dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist:
         title: CheckedDropDownList
         position: 3
+    dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/populating-with-data:
+        title: Populating with Data
+        position: 4
     dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to:
         title: How-To
         position: 7
