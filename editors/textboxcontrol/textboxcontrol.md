@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: TextBoxControl | RadTextBoxControl
-description: TextBoxControl
+page_title: Overview | RadTextBoxControl
+description: TextBoxControl extends the the default text box by providing additional functionality like word formating and auto-complete. 
 slug: winforms/editors/textboxcontrol
 tags: textboxcontrol
 published: True
@@ -9,7 +9,7 @@ position: 0
 previous_url: editors-textboxcontrol-overview
 ---
 
-# TextBoxControl
+# RadTextBoxControl
 
 
 __RadTextBoxControl__ provides similar to the standard .NET Framework text box features. In addition it allows easy customizations and enhancements. It is generally used for editing text, although it can be used to display text, when in read-only mode. The control can display multiple lines, wrap text to the size of the control and perform text block formatting and replacement.
