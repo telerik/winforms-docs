@@ -46,3 +46,11 @@ position: 8
 |__CreateTextBlock__|Occurs when an instance of ITextBlock instance is created.|
 |__ContextMenuOpening__|Occurs before the default context menu is opened.|
  
+# See Also
+
+* [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
+* [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
+* [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})
+* [Structure]({%slug winforms/editors/textboxcontrol/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/textboxcontrol/properties%})
+* [Text editing]({%slug winforms/editors/textboxcontrol/text-editing%})

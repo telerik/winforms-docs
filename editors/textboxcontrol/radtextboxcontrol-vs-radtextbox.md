@@ -1,7 +1,7 @@
 ---
 title: RadTextBoxControl vs RadTextBox
 page_title: RadTextBoxControl vs RadTextBox | RadTextBoxControl
-description: RadTextBoxControl vs RadTextBox
+description: This article show the differences between RadTextBox and RadTextBoxControl. 
 slug: winforms/editors/textboxcontrol/radtextboxcontrol-vs-radtextbox
 tags: radtextboxcontrol,vs,radtextbox
 published: True
@@ -29,3 +29,13 @@ The main and most important difference between __RadTextBox__ and __RadTextBoxCo
 |-|Lightweight as it does not host control in it|
 |-|Flexible and intuitive API|
 |-|Customizible AutoComplete with data binding|
+
+
+# See Also
+
+* [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
+* [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})
+* [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
+* [Structure]({%slug winforms/editors/textboxcontrol/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/textboxcontrol/properties%})
+* [Text editing]({%slug winforms/editors/textboxcontrol/text-editing%})

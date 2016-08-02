@@ -1,7 +1,7 @@
 ---
 title: Creating custom blocks
 page_title: Creating custom blocks | RadTextBoxControl
-description: Creating custom blocks
+description: Shows how you can create a custom text block and replace a word with a button for example.
 slug: winforms/editors/textboxcontrol/creating-custom-blocks
 tags: creating,custom,blocks
 published: True
@@ -12,7 +12,7 @@ previous_url: editors-textboxcontrol-creating-custom-blocks
 # Creating custom blocks
 
 
-The RadTextBoxControl allows not only appearance customizations via the formatting event, but also a replacement of the default UI block representation. The __CreateTextBlock__ event exposes this possibility.
+The __RadTextBoxControl__ allows not only appearance customizations via the formatting event, but also a replacement of the default UI block representation. The __CreateTextBlock__ event exposes this possibility.
         
 
 You should create a custom text block that inherits from __ITextBlock__ and any inheritor of `RadElement`. Let’s create a button text block that should be created for each occurrence of the string here:
@@ -246,5 +246,14 @@ Me.RadTextBoxControl1.Text = "Please, click here"
 
 {{endregion}} 
 
+>caption Figure 1: The "here" word is replaced with a button.
 
 ![editors-textboxcontrol-creatng-custom-blocks 001](images/editors-textboxcontrol-creatng-custom-blocks001.png)
+
+# See Also
+
+* [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
+* [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
+* [Structure]({%slug winforms/editors/textboxcontrol/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/textboxcontrol/properties%})
+* [Text editing]({%slug winforms/editors/textboxcontrol/text-editing%})

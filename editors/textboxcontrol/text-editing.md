@@ -1,7 +1,7 @@
 ---
 title: Text editing
 page_title: Text editing | RadTextBoxControl
-description: Text editing
+description: Use the RadtextBoxControl API to edit the text in th code behind.
 slug: winforms/editors/textboxcontrol/text-editing
 tags: text,editing
 published: True
@@ -16,6 +16,7 @@ The editing point is determined by the caret position and selection in __RadText
 
 You can insert text programmatically at concrete position by using the __Insert__ method. At that case, the text is inserted at the position determined by the __SelectionStart__ property. If the __SelectionLength__ property is greater than zero, the inserted text replaces the selected text. 
 
+#### Insert string.
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Insert}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Insert}} 
 
@@ -39,12 +40,13 @@ End Sub
 
 {{endregion}} 
  
-The code above produces the following result:
+>caption Figure 1: The string is inserted at the specified position.
 
 ![editors-textboxcontrol-text-editing 001](images/editors-textboxcontrol-text-editing001.png)
 
 Alternatively, you can insert text at the end of the RadTextBoxControl content by using the __AppendText__ method: 
 
+### Append specific string.
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=AppendText}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=AppendText}} 
 
@@ -66,13 +68,13 @@ End Sub
 
 {{endregion}} 
  
-
-The appended text is inserted at the end:
+>caption Figure 2: The string is added at the end of the existing text.
 
 ![editors-textboxcontrol-text-editing 002](images/editors-textboxcontrol-text-editing002.png)
 
 You can delete the selected text or character at the caret position by using the __Delete__ method: 
 
+#### Select and delete a word.
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Delete}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Delete}} 
 
@@ -96,12 +98,13 @@ End Sub
 
 {{endregion}} 
  
-
-After the deletion of the first word the text control looks like:
+>caption Figure 3: The first word is deleted.
 
 ![editors-textboxcontrol-text-editing 003](images/editors-textboxcontrol-text-editing003.png)
 
 Each editing operation raises the __TextChanging__ and __TextChanged__ events. Notice that you can prevent successful finishing of operation by subscribing to the __TextChanging__ event: 
+
+#### Cancel the ex changing if the entire text is deleted.
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=TextChanging}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=TextChanging}} 
@@ -122,5 +125,12 @@ End Sub
 ````
 
 {{endregion}} 
- 
-The code above prevent deleting in RadTextBoxControl.
+
+# See Also
+
+* [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
+* [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
+* [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})
+* [Structure]({%slug winforms/editors/textboxcontrol/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/textboxcontrol/properties%})
+* [Text editing]({%slug winforms/editors/textboxcontrol/text-editing%})

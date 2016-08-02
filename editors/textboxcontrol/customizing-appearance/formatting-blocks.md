@@ -65,7 +65,7 @@ End Sub
 
 >note Notice that the event occurs when the text blocks are repositioned. This happens in different cases: editing, control resizing and etc. Hence, you should subscribe to the event before initializing the __Text__ property.
 
-#See Also
+# See Also
 
 * [Themes]({%slug winforms/editors/radtextboxcontrol/themes%})
 * [Customizing Appearance]({%slug winforms/editors/textboxcontrol/customizing-appearance%})

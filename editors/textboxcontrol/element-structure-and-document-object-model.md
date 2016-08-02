@@ -1,7 +1,7 @@
 ---
 title: Element structure and document object model
 page_title: Element structure and document object model | RadTextBoxControl
-description: This article shows how RadTextBox controls is strucutured and which are its main elements.
+description: This article shows how RadTextBox controls is structured and which are its main elements.
 slug: winforms/editors/textboxcontrol/element-structure-and-document-object-model
 tags: element,structure,and,document,object,model
 published: True
@@ -26,3 +26,10 @@ The visual element structure of the `RadTextBoxControlElement` is presented on t
 
 Depending on how content of the editor is changed, one or more instances of __ITextBlock__ can be merged into a single instance.
 		
+# See Also
+
+* [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
+* [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})
+* [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
+* [Properties and Events]({%slug winforms/editors/textboxcontrol/properties%})
+* [Text editing]({%slug winforms/editors/textboxcontrol/text-editing%})

@@ -1,7 +1,7 @@
 ---
 title: AutoComplete
 page_title: AutoComplete | RadTextBoxControl
-description: AutoComplete
+description: This article shows how you can use the auto-complete functionality of RadTextBoxControl
 slug: winforms/editors/textboxcontrol/autocomplete
 tags: autocomplete
 published: True
@@ -112,3 +112,12 @@ End Sub
 Here is the result of the above code:
 
 ![editors-textboxcontrol-autocomplete 002](images/editors-textboxcontrol-autocomplete002.png)
+
+# See Also
+
+* [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
+* [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})
+* [Structure]({%slug winforms/editors/textboxcontrol/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/textboxcontrol/properties%})
+* [Text editing]({%slug winforms/editors/textboxcontrol/text-editing%})
+ 
