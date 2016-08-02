@@ -380,9 +380,15 @@ navigation:
     editors/textboxcontrol:
         title: TextBoxControl
         position: 8
+    editors/textboxcontrol/customizing-appearance:
+        title: Customizing Appearance
+        position: 10
     editors/timepicker:
         title: TimePicker
         position: 9
+    editors/timepicker/customizing-appearance:
+        title: Customizing Appearance
+        position: 8
     editors/popupeditor:
         title: PopupEditor 
         position: 10
