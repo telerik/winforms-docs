@@ -24,7 +24,7 @@ You can use one of the following item types:
 
 >caption Figure 1: Sample RadCheckedListDataItem and DescriptionTextCheckedListDataItem
 
-![dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-adding-items-programmatically 001](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-adding-items-programmatically001.png)
+![dropdown-and-listcontrol-checkeddropdownlist-adding-items-programmatically 001](images/dropdown-and-listcontrol-checkeddropdownlist-adding-items-programmatically001.png)
 
 #### Add items programmatically 
 
