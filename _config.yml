@@ -650,6 +650,9 @@ navigation:
     panorama:
         title: Panorama
         position: 33
+    pdfprocessing:
+        title: PdfProcessing 
+        position: 34
     pdfviewer:
         title: PdfViewer
         position: 35
@@ -836,6 +839,9 @@ navigation:
     splitcontainer:
         title: SplitContainer
         position: 46
+    spreadprocessing:
+        title: SpreadProcessing
+        position: 47
     track-and-status-controls:
         title: Track and Status controls
         position: 48
@@ -953,6 +959,12 @@ navigation:
     wizard:
         title: Wizard
         position: 51
+    wordsprocessing:
+        title: WordsProcessing
+        position: 52
+    ziplibrary:
+        title: ZipLibrary
+        position: 53
     telerik-cab-enabling-kit:
         title: Telerik Cab Enabling Kit
         position: 54
