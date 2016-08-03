@@ -37,12 +37,12 @@ You can customize the nested elements at run time as well:
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=CustomizeElements}} 
 
 ````C#
+            
 this.radCheckedDropDownList1.DropDownListElement.ArrowButton.Fill.BackColor = Color.Aqua;
 this.radCheckedDropDownList1.DropDownListElement.EditableElement.BorderColor  = Color.Red;
 this.radCheckedDropDownList1.DropDownListElement.EditableElement.DrawBorder = true;
 this.radCheckedDropDownList1.DropDownListElement.EditableElement.BorderGradientStyle = GradientStyles.Solid;
 this.radCheckedDropDownList1.DropDownListElement.EditableElement.BorderWidth = 1;
-         
 
 ````
 ````VB.NET

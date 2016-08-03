@@ -35,19 +35,18 @@ You can use one of the following item types:
 RadCheckedListDataItem dataItem = new RadCheckedListDataItem();
 dataItem.Text = "Chicken toast";
 radCheckedDropDownList1.Items.Add(dataItem);
-
+            
 DescriptionTextCheckedListDataItem descriptionItem = new DescriptionTextCheckedListDataItem();
 descriptionItem.Text = "Chicken wings";
 descriptionItem.Checked = true;
 descriptionItem.DescriptionText = "some description";
 radCheckedDropDownList1.Items.Add(descriptionItem);
-         
+
 ````
 ````VB.NET
 Dim dataItem As New RadCheckedListDataItem()
 dataItem.Text = "Chicken toast"
 radCheckedDropDownList1.Items.Add(dataItem)
-
 Dim descriptionItem As New DescriptionTextCheckedListDataItem()
 descriptionItem.Text = "Chicken wings"
 descriptionItem.Checked = True
