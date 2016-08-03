@@ -5,7 +5,7 @@ description: Properties and Events
 slug: winforms/editors/timepicker/properties-and-events
 tags: properties,and,events
 published: True
-position: 2
+position: 4
 previous_url: editors-timepicker-structure-properties-and-events
 ---
 

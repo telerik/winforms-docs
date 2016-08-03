@@ -5,7 +5,7 @@ description: Localization
 slug: winforms/editors/timepicker/localization
 tags: localization
 published: True
-position: 4
+position: 6
 previous_url: editors-timepicker-localization
 ---
 
