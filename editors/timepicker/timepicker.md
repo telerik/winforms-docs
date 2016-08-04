@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Time Picker | UI for WinForms Documentation
-description: Time Picker
+page_title: Time Picker | RadTimePicker
+description: RadTimePicker allows you to easily enter or adjust time value by selecting the time form a drop down or using the up/down buttons.
 slug: winforms/editors/timepicker
 tags: time,picker
 published: True

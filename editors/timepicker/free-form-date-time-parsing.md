@@ -1,7 +1,7 @@
 ---
 title: Free Form Date Time Parsing
-page_title: Free Form Date Time Parsing | UI for WinForms Documentation
-description: Free Form Date Time Parsing
+page_title: Free Form Date Time Parsing | RadTimePicker
+description: Use the "Free Form Date Time Parsing" to enter the time without specifying a strict format.
 slug: winforms/editors/timepicker/free-form-date-time-parsing
 tags: free,form,date,time,parsing
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
-description: Localization
+page_title: Localization | RadTimePicker
+description: Shows how you can use the localization provider to change all string used in the control to custom ones. 
 slug: winforms/editors/timepicker/localization
 tags: localization
 published: True
