@@ -1,7 +1,7 @@
 ---
 title: Add non-existing Items
-page_title: Add non-existing Items | UI for WinForms Documentation
-description: Add non-existing Items
+page_title: Add non-existing Items | RadCheckedDropDownList
+description: RadCheckedDropDownList combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area. 
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to/add-non-existing-items
 tags: add,non-existing,items
 published: True
@@ -11,13 +11,11 @@ previous_url: dropdown-and-listcontrol-checked-dropdownlist-how-to-add-non-exist
 
 # Add non-existing Items
  
-There are cases where the item which your user is typing is not in your current list of items. In this case you can manually add it.
+There are cases where the item which the user is typing is not in the current list of items. In this case, you can manually add it.
 
-## 
+For this purpose, __RadCheckedDropDownList__ has the __TokenValidating__ event. It gives you information for the token's text and whether the token, being validated, is valid. You can use this to check whether the item is already present in the items of the __RadCheckedDropDownList__ and make the token valid:
 
-For this purpose __RadCheckedDropDownList__ has the __TokenValidating__ event. It gives you information whether the token being validated is valid and its text. You can use this to check whether the item is already present in  the items of the __RadCheckedDropDownList__ and make the token valid:
-
-#### Subscibe for TokenValidating 
+#### Subscribe for TokenValidating 
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.cs region=Subscribe}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.vb region=Subscribe}} 
@@ -68,6 +66,12 @@ End Sub
 ````
 
 {{endregion}} 
+
+>note In order to make the custom text a valid token, it is necessary to enter the delimeter which is __;__ by default.
+
+>caption Figure 1: Tokens Validating
+
+![dropdown-and-listcontrol-checkeddropdownlist-how-to 001](images/dropdown-and-listcontrol-checkeddropdownlist-how-to001.gif)
 
 
 
