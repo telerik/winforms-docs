@@ -172,7 +172,7 @@ The __EditorType__ property allows you to easily change the editor type. It coul
 
 * __DateTimePicker__ - this is the default value and the editor will be a standard RadDateTimePicker.
 
-* __DateTimePicker__ - the editor will be a __RadTimePicker__.
+* __TimePicker__ - the editor will be a __RadTimePicker__.
             
 
 * __DateTimePickerSpinMode__ - this type of editor shows up/down buttons instead of a drop down with a calendar.
