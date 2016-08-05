@@ -50,7 +50,7 @@ void radCheckedDropDownList1_TextBlockFormatting(object sender, TextBlockFormatt
         token.DrawFill = false;
         token.BorderColor = Color.DarkRed;
         token.BorderWidth = 1.3f;
-		token.DrawBorder = true;
+        token.DrawBorder = true;
         token.BorderGradientStyle = GradientStyles.Solid;
     }
 }
@@ -64,7 +64,7 @@ Private Sub radCheckedDropDownList1_TextBlockFormatting(sender As Object, e As T
         token.DrawFill = False
         token.BorderColor = Color.DarkRed
         token.BorderWidth = 1.3F
-		token.DrawBorder = True
+        token.DrawBorder = True
         token.BorderGradientStyle = GradientStyles.Solid
     End If
 End Sub
