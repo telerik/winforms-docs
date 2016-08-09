@@ -1,11 +1,11 @@
 ---
 title: Themes
 page_title: Themes | Browse Editor
-description: RadBrowseEditor is a themable replacement of the standard WinForms Button. It can be clicked by using the mouse, Enter key, or Spacebar, if the button has focus. 
+description: This help article will demonstrate a step by step tutorial how to customize the ControlDefault theme of RadBrowseEditor. 
 slug: winforms/browseeditor/customizing-appearance/themes
 tags: button, themes
 published: True
-position: 0
+position: 1
 ---
 
 # Themes
@@ -25,6 +25,9 @@ This help article will demonstrate a step by step tutorial how to customize the 
 1. Modify the applied *fill* repository item. 
 
 	![browseeditor-customizing-appearance-themes 002](images/browseeditor-customizing-appearance-themes002.png)
+
+1. You can see the result directly in the Visual Style Builder.
+    ![browseeditor-customizing-appearance-themes 002](images/browseeditor-customizing-appearance-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 
