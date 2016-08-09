@@ -1,6 +1,6 @@
 ---
 title: Customizing Appearance 
-page_title: Customizing Appearance | DataEntry
+page_title: Customizing Appearance | RadDataEntry
 description: The article describes how one can customize the RadDataEntry appearance.
 slug: winforms/dataentry/customizing-appearance
 tags: appearance

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadDock
 description: Getting Started
 slug: winforms/dock/getting-started
 tags: getting,started

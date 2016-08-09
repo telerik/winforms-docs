@@ -1,6 +1,6 @@
 ---
-title: Properties that can be localized
-page_title: Properties that can be localized | UI for WinForms Documentation
+title: Properties that can be Localized
+page_title: Properties that can be localized | RadCalendar
 description: Properties that can be localized
 slug: winforms/calendar/localization/properties-that-can-be-localized
 tags: properties,that,can,be,localized
@@ -9,7 +9,7 @@ position: 4
 previous_url: calendar-localization-properties-that-can-be-localized
 ---
 
-# Properties that can be localized
+# Properties that can be Localized
 
 The following properties can be localized:
 

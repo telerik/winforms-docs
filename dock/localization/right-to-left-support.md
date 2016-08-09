@@ -1,6 +1,6 @@
 ---
 title: Right-to-left support
-page_title: Right-to-left support | UI for WinForms Documentation
+page_title: Right-to-left support | RadDock
 description: Shows how you can enable the RightToLeft layout.
 slug: winforms/dock/localization/right-to-left-support
 tags: right-to-left,support

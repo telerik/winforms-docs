@@ -1,6 +1,6 @@
 ---
 title: Internationalization
-page_title: Internationalization | UI for WinForms Documentation
+page_title: Internationalization | RadDateTimePicker
 description: RadCalendar provides built in internationalization support to build world-ready applications.
 slug: winforms/editors/datetimepicker/internationalization/internationalization
 tags: internationalization
@@ -10,8 +10,6 @@ previous_url: editors-datetimepicker-internationalization
 ---
 
 # Internationalization
- 
-## 
 
 RadCalendar provides built in internationalization support to build world-ready applications including: 
 
@@ -31,6 +29,7 @@ Me.RadDateTimePicker1.Culture = New System.Globalization.CultureInfo("de-DE")
 
 {{endregion}} 
 
+>caption Figure 1: The culture is changed to German.
 
 ![editors-datetimepicker-internationalization 001](images/editors-datetimepicker-internationalization001.png)
 
@@ -53,10 +52,10 @@ Me.RadDateTimePicker1.RightToLeft = RightToLeft.No
 
 {{endregion}} 
 
-
+>caption Figure 2: The right to left support is turned off.
 ![editors-datetimepicker-internationalization 002](images/editors-datetimepicker-internationalization002.png)
 
-*  Right-to-Left = Yes 
+\*  Right-to-Left = Yes 
 
 {{source=..\SamplesCS\Editors\DateTimePicker1.cs region=rightYes}} 
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=rightYes}} 
@@ -72,6 +71,7 @@ Me.RadDateTimePicker1.RightToLeft = RightToLeft.Yes
 
 {{endregion}} 
 
+>caption Figure 3: The right to left support is turned on.
 
 ![editors-datetimepicker-internationalization 003](images/editors-datetimepicker-internationalization003.png)
 
@@ -93,7 +93,13 @@ Me.RadDateTimePicker1.CustomFormat = "MMM - dd - yyyy"
 
 {{endregion}} 
 
+>caption Figure 4: Using custom format.
 
 ![editors-datetimepicker-internationalization 004](images/editors-datetimepicker-internationalization004.png)
 
 See the article [Introduction to International Applications Based on .NET Framework](http://msdn2.microsoft.com/en-us/library/t18274tk(vs.80).aspx) for an overview of internationalization in general. 
+
+# See Also
+
+* [CultureInfo and RegionInfo Basics]({%slug winforms/editors/datetimepicker/internationalization/cultureinfo-and-regioninfo-basics%})
+* [Date Formats]({%slug winforms/editors/datetimepicker/internationalization/date-formats%})

@@ -1,11 +1,11 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadAutoCompleteBox
+description: This article describes how you can start using RadAutoCompleteBox.
 slug: winforms/editors/autocompletebox/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: editors-autocompletebox-getting-started
 ---
 
@@ -16,9 +16,8 @@ previous_url: editors-autocompletebox-getting-started
 | ------ | ------ |
 |[Getting Started with RadAutoCompleteBox for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-radautocompletebox-for-winforms)<br>RadAutoCompleteBox allows the end-user to easily fill-in text thanks to auto-complete functionality and tokens of text. This behavior is similar to the “To” field of Outlook and Facebook where you are filling-in the recipients to which you are going to send a new message.|![editors-autocompletebox-getting-started 004](images/editors-autocompletebox-getting-started004.png)|
 
-## 
 
-The RadAutoCompleteBox allows your users to select multiple items from a predefined list, using auto completion as they type. You may have seen a similar type of text entry when filling in the recipient’s field, while sending messages on Facebook. RadAutoCompleteBox inherits all features of [RadTextBoxControl]({%slug winforms/editors/textboxcontrol%}).
+The __RadAutoCompleteBox__ allows your users to select multiple items from a predefined list, using auto completion as they type. You may have seen a similar type of text entry when filling in the recipient’s field, while sending messages on Facebook. __RadAutoCompleteBox__ inherits all features of [RadTextBoxControl]({%slug winforms/editors/textboxcontrol%}).
         
 
 Each tokenized text block is separated by character, specified by the __Delimiter__ property. You can change the __Delimiter__ at any time.
@@ -44,12 +43,11 @@ End Sub
 
 {{endregion}} 
  
-Here is the output:
+>caption Figure 1: Set the text of RadAutoCompleteBox.
 
 ![editors-autocompletebox-getting-started 001](images/editors-autocompletebox-getting-started001.png)
 
 You can determine the visibility of the remove button by changing the __ShowRemoveButton__ property: 
-
 
 {{source=..\SamplesCS\editors\AutoCompleteBox.cs region=ShowRemoveButton}} 
 {{source=..\SamplesVB\editors\AutoCompleteBox.vb region=ShowRemoveButton}} 
@@ -65,25 +63,16 @@ Me.RadAutoCompleteBox1.ShowRemoveButton = False
 
 {{endregion}} 
 
+>caption Figure 2: The Tokenized items are not showing the close button.
 
 ![editors-autocompletebox-getting-started 002](images/editors-autocompletebox-getting-started002.png)
 
-To access the tokenized items use the __Items__ collection property of RadAutoCompleteBox: 
 
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=AccessToken}} 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=AccessToken}} 
+# See Also
 
-````C#
-RadTokenizedTextItem thirdToken = radAutoCompleteBox1.Items[2];
-
-````
-````VB.NET
-Dim thirdToken As RadTokenizedTextItem = RadAutoCompleteBox1.Items(2)
-
-````
-
-{{endregion}} 
-  
-Setting the __NullText__ property will display a custom string when the Text property is empty or null:
-
-![editors-autocompletebox-getting-started 003](images/editors-autocompletebox-getting-started003.png)
+* [Caret Positioning and Selection]({%slug winforms/editors/autocompletebox/caret-positioning-and-selection%})
+* [Creating Custom Blocks]({%slug winforms/editors/autocompletebox/creating-custom-blocks%})
+* [Element Structure and Document Object Model]({%slug winforms/editors/autocompletebox/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/autocompletebox/formatting-blocks%})
+* [Text Editing]({%slug winforms/editors/autocompletebox/text-editing%})
+* [Auto-Complete]({%slug winforms/editors/autocompletebox/auto-complete%})

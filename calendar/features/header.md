@@ -1,6 +1,6 @@
 ---
 title: Header
-page_title: Header | UI for WinForms Documentation
+page_title: Header | RadCalendar
 description: Header
 slug: winforms/calendar/customizing-appearance/header
 tags: header
@@ -13,62 +13,63 @@ previous_url: calendar-customizing-appearance-header, /calendar/customizing-appe
 
 The Header area of __RadCalendar__ is located above the calendar's content area. The header contains the calendar title and the navigation buttons.
 
+>caption Figure 1: The structure of RadCalendar header.
 ![calendar-customizing-appearance-header 001](images/calendar-customizing-appearance-header001.png)
 
 Use the the following properties to modify title appearance and functionality:
 
-*  __TitleFormat__ - gets or sets the format string that is applied to the calendar title. 
+*  __TitleFormat:__ Gets or sets the format string that is applied to the calendar title. 
 
 
-*  __TitleAlign__ - gets or sets the horizontal alignment of calendar's title.
+*  __TitleAlign:__ Gets or sets the horizontal alignment of calendar's title.
 
 
-*  __ShowHeader__ - gets or sets whether the calendar will display the title. 
+*  __ShowHeader:__ Gets or sets whether the calendar will display the title. 
 
 
-*  __ShowNavigationButtons__ - gets or sets whether the navigation buttons should be visible.
+*  __ShowNavigationButtons:__ Gets or sets whether the navigation buttons should be visible.
 
 
-*  __ShowFastNavigationButtons__ - gets or sets whether the fast navigation buttons should be visible.
+*  __ShowFastNavigationButtons:__ Gets or sets whether the fast navigation buttons should be visible.
 
 
-*  __FastNavigationNextImage__ - gets or sets the image that is displayed for the fast next navigation control.
+*  __FastNavigationNextImage:__ Gets or sets the image that is displayed for the fast next navigation control.
 
 
-*  __FastNavigationNextText__ - gets or sets the text that is displayed for the fast next navigation control. 
+*  __FastNavigationNextText:__ Gets or sets the text that is displayed for the fast next navigation control. 
 
 
-* __FastNavigationNextToolTip__ - gets or sets the tool tip that is displayed for the fast next navigation control. 
+* __FastNavigationNextToolTip:__ Gets or sets the tool tip that is displayed for the fast next navigation control. 
 
 
-* __FastNavigationPrevImage__ - gets or sets the image that is displayed for the fast previous navigation control. 
+* __FastNavigationPrevImage:__ Gets or sets the image that is displayed for the fast previous navigation control. 
 
 
-* __FastNavigationPrevText__ - gets or sets the text that is displayed for the fast previous navigation control. 
+* __FastNavigationPrevText:__ Gets or sets the text that is displayed for the fast previous navigation control. 
 
 
-* __FastNavigationPrevToolTip__ - gets or sets the tool tip that is displayed for the fast previous navigation control. 
+* __FastNavigationPrevToolTip:__ Gets or sets the tool tip that is displayed for the fast previous navigation control. 
 
 
-* __NavigationNextImage__ - gets or sets the image that is displayed for the navigation next  control. 
+* __NavigationNextImage:__ Gets or sets the image that is displayed for the navigation next  control. 
 
 
-* __NavigationNextText__ - gets or sets the text that is displayed for the navigation  next  control. 
+* __NavigationNextText:__ Gets or sets the text that is displayed for the navigation  next  control. 
 
 
-* __NavigationNextToolTip__ - gets or sets the tool tip that is displayed for the navigation next  control. 
+* __NavigationNextToolTip:__ Gets or sets the tool tip that is displayed for the navigation next  control. 
 
 
-* __NavigationPrevImage__ - gets or sets the image that is displayed for the navigation previous control. 
+* __NavigationPrevImage:__ Gets or sets the image that is displayed for the navigation previous control. 
 
 
-* __NavigationPrevText__ - gets or sets the text that is displayed for the navigation previous rev control. 
+* __NavigationPrevText:__ Gets or sets the text that is displayed for the navigation previous rev control. 
 
 
-* __NavigationPrevToolTip__ - gets or sets the tool tip that is displayed for the navigation previous control. 
+* __NavigationPrevToolTip:__ Gets or sets the tool tip that is displayed for the navigation previous control. 
 
 
-* __FastNavigationStep__ - gets or sets the number of views that will be scrolled when the user clicks on a fast navigation link.
+* __FastNavigationStep:__ Gets or sets the number of views that will be scrolled when the user clicks on a fast navigation link.
 
 ## Title Properties
 

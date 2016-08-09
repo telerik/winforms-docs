@@ -1,6 +1,6 @@
 ---
 title: Adding Selected Dates
-page_title: Adding Selected Dates | UI for WinForms Documentation
+page_title: Adding Selected Dates | RadCalendar
 description: Adding Selected Dates
 slug: winforms/calendar/design-time-support/adding-selected-dates
 tags: adding,selected,dates
@@ -30,6 +30,8 @@ Click the ellipses in the `Property Window` to edit the __SelecteDates DateTime_
 
 >note If you close the DateTime Collection Editor, reopen and see that only the last date has persisted in the collection, verify that __AllowMultipleSelect__ is set to true. If __AllowMultipleSelect__ is *false* the expected behavior is that only the last date in the collection is used.
 >
+
+>caption Figure 1: Add selected dates.
 
 ![calendar-design-time-support-adding-selected-dates 001](images/calendar-design-time-support-adding-selected-dates001.png)
 

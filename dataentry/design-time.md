@@ -1,6 +1,6 @@
 ---
 title: Design Time
-page_title: Design Time | UI for WinForms Documentation
+page_title: Design Time | RadDataEntry
 description: This article described the design time capabilities of RadDataEntry.
 slug: winforms/dataentry/design-time
 tags: validation
@@ -9,6 +9,8 @@ position: 2
 ---
 
 # Smart Tag
+
+This article shows what you can achieve using the smart tag of RadDataEntry.
 
 >caption Figure 1: RadDataEntry Smart Tag
 

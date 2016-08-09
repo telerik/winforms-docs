@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | DataEntry
+page_title: Getting Started | RadDataEntry
 description: Step by step tutorial about how one can use RadDataEntry.
 slug: winforms/dataentry/getting-started
 tags: getting,started

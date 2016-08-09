@@ -1,6 +1,6 @@
 ---
 title: Docking a UserControl with custom event
-page_title: Docking a UserControl with custom event | UI for WinForms Documentation
+page_title: Docking a UserControl with custom event | RadDock
 description: This article shows how you can dock UserControl inside RadDock.
 slug: winforms/dock/docking-usercontrols-and-forms/docking-a-usercontrol-with-custom-event
 tags: docking,a,usercontrol,with,custom,event

@@ -1,6 +1,6 @@
 ---
 title: Customizing Appearance 
-page_title: Customizing Appearance | UI for WinForms Documentation
+page_title: Customizing Appearance | RadDataLayout
 description: The article describes how one can customize the RadDataLayout appearance.
 slug: winforms/raddatalayout/customizing-appearance
 tags: appearance

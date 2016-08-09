@@ -1,6 +1,6 @@
 ---
 title: Validation
-page_title: Validation | DataEntry
+page_title: Validation | RadDataEntry
 description: This article describes how RadDataEntry validates the user input.
 slug: winforms/dataentry/validation
 tags: validation

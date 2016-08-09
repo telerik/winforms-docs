@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | DataEntry
+page_title: Themes | RadDataEntry
 description: The article describes how one can customize the RadDataEntry appearance in Visual Style Builder.
 slug: winforms/dataentry/themes
 tags: appearance, themes

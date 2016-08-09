@@ -1,6 +1,6 @@
 ---
 title: Adding Special Days
-page_title: Adding Special Days | UI for WinForms Documentation
+page_title: Adding Special Days | RadCalendar
 description: Adding Special Days
 slug: winforms/calendar/design-time-support/adding-special-days
 tags: adding,special,days
@@ -23,7 +23,9 @@ previous_url: calendar-design-time-support-adding-special-dates
 * Use the up and down arrow keys to reorder special days in the collection. 
 
 * Configure a selected __RadCalendarDay__ including assign an __Image__, set the day to __Disabled__, [set the Recurring enumeration]({%slug winforms/calendar/customizing-behavior/repeating-events%}), determine if the day is __Selectable__, if it is __Selected__ and assign a __ToolTip__. Assign __TemplateItems__ if __RadHostItems__ are available, otherwise see [Using Templates]({%slug winforms/calendar/customizing-appearance/using-templates%}) for how to do this in code.
-             
+
+>caption Figure 1: Adding special days.
+
 ![calendar-design-time-support-adding-special-dates 001](images/calendar-design-time-support-adding-special-dates001.png)
 
 ## See Also

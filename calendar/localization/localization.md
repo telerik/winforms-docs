@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Localization | UI for WinForms Documentation
+page_title: Localization | RadCalendar
 description: Localization
 slug: winforms/calendar/localization
 tags: localization

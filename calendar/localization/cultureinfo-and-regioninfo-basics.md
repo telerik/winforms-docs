@@ -1,6 +1,6 @@
 ---
 title: CultureInfo and RegionInfo Basics
-page_title: CultureInfo and RegionInfo Basics | UI for WinForms Documentation
+page_title: CultureInfo and RegionInfo Basics | RadCalendar
 description: CultureInfo and RegionInfo Basics
 slug: winforms/calendar/localization/cultureinfo-and-regioninfo-basics
 tags: cultureinfo,and,regioninfo,basics
@@ -35,7 +35,7 @@ The table below is a sample list of the names and identifiers found in the Cult
 |fa-IR|0x0429|Farsi - Iran|
 |ps-AF|0x0463|Pashto - Afghanistan|
 
->caption Fig.1 Setting Pashto Culture
+>caption Figure 1: Setting Pashto Culture
 
 ![calendar-localization-cultureinfo-and-regioninfo-basics 001](images/calendar-localization-cultureinfo-and-regioninfo-basics001.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | UI for WinForms Documentation
+page_title: Accessing and Customizing Elements | RadDesktopAlert
 description: RadDesktopAlert component displays a small pop-up window on the screen to notify the user that a specific event has occurred in the application. 
 slug: winforms/desktopalert/customizing-appearance/accessing-and-customizing-elements 
 tags: desktopalert

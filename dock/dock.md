@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Dock | UI for WinForms Documentation
+page_title: Dock | RadDock
 description: The RadDock control provides a container that holds dockable windows. This container can fill the entire client area of a Windows Form, or can be limited to any rectangular area you choose to manage.
 slug: winforms/dock
 tags: dock

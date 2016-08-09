@@ -1,6 +1,6 @@
 ---
 title: Properties, Events and Attributes
-page_title: Properties, Events and Attributes | DataEntry
+page_title: Properties, events and attributes | RadDataEntry
 description: This article describes the most commonly used properties and events and attributes.
 slug: winforms/dataentry/properties,-events-and-attributes
 tags: properties,events,and,attributes

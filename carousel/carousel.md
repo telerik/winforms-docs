@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Carousel | UI for WinForms Documentation
+page_title: Carousel | RadCarousel
 description: RadCarousel is a navigation control that animates a series of elements either by the user clicking a particular element or by clicking the forward and back arrows.
 slug: winforms/carousel
 tags: carousel

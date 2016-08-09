@@ -1,6 +1,6 @@
 ---
 title: Selecting Dates
-page_title: Selecting Dates | UI for WinForms Documentation
+page_title: Selecting Dates | RadCalendar
 description: Selecting Dates
 slug: winforms/calendar/customizing-behavior/selecting-dates
 tags: selecting,dates

@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | UI for WinForms Documentation
+page_title: Smart Tag | RadBindingNavigator
 description: This article describes the functionality provided by the RadBindingNavigator smart tag.
 slug: winforms/bindingnavigator/smarttag
 tags: bindingnavigator
@@ -11,6 +11,8 @@ position: 0
 # Smart Tag
 
 The Smart Tag for __RadBindingNavigator__ lets you quickly access common tasks involved with and customizing appearance or setting the theme.
+
+>caption Figure 1: The RadBindingNavigator Smart Tag.
 
 ![bindingnavigator-smart-tag001.png](images/bindingnavigator-smart-tag001.png) 
 * __Common Tasks__

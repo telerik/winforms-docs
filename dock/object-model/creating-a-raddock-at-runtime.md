@@ -1,6 +1,6 @@
 ---
 title: Creating a RadDock at Runtime
-page_title: Creating a RadDock at Runtime | UI for WinForms Documentation
+page_title: Creating a RadDock at Runtime | RadDock
 description: Creating a RadDock at Runtime
 slug: winforms/dock/object-model/creating-a-raddock-at-runtime
 tags: creating,a,raddock,at,runtime

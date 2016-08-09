@@ -1,6 +1,6 @@
 ---
 title: Date Formats
-page_title: Date Formats | UI for WinForms Documentation
+page_title: Date Formats | RadDateTimePicker
 description: This article illustrates a table that displays a list of the standard format characters supported by RadDateTimePicker.
 slug: winforms/editors/datetimepicker/internationalization/date-formats
 tags: date,formats
@@ -10,8 +10,7 @@ previous_url: editors-datetimepicker-internationalization-date-formats
 ---
 
 # Date Formats
- 
-## 
+
 
 The table below displays a list of the standard format characters supported by __RadDateTimePicker__. The format characters are case-sensitive; for example, 'f' and 'F' represent different patterns.
  
@@ -56,3 +55,8 @@ The table below shows a list of patterns that can be combined to create custo
 |ss|The second. Single-digit seconds will have a leading zero.|
 |t|The first character in the AM/PM designator defined in AMDesignator or PMDesignator, if any.|
 |tt|The AM/PM designator defined in AMDesignator or PMDesignator, if any.|
+
+# See Also
+
+* [CultureInfo and RegionInfo Basics]({%slug winforms/editors/datetimepicker/internationalization/cultureinfo-and-regioninfo-basics%})
+* [Internationalization]({%slug winforms/editors/datetimepicker/internationalization/internationalization%})

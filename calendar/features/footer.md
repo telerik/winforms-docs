@@ -1,6 +1,6 @@
 ---
 title: Footer
-page_title: Footer | UI for WinForms Documentation
+page_title: Footer | RadCalendar
 description: Footer
 slug: winforms/calendar/customizing-appearance/footer
 tags: footer
@@ -13,13 +13,15 @@ previous_url: calendar-customizing-appearance-footer, /calendar/customizing-appe
 
 The Footer/Status bar area of __RadCalendar__ is located below the main calendar content area. 
 
+>caption Figure 1: The footer of RadCalendar.
+
 ![calendar-customizing-appearance-footer 003](images/calendar-customizing-appearance-footer003.png)
 
 By default the footer contains a string showing the current date and time and two buttons - __Clear__ button and __Today__ button. The __Clear__ button is used to clear all selected dates in __RadCalendar__ and the __Today__ button navigates to the current date. The following properties of __RadCalendar__ are used to modify appearance and functionality of the footer:
 
-* __ShowFooter__ - gets or sets whether RadCalendar will display its footer/status bar.
+* __ShowFooter:__ Gets or sets whether RadCalendar will display its footer/status bar.
 
-* __TodayButton__ - gets an instance of RadButtonElement representing the Today button in the footer. 
+* __TodayButton:__ Gets an instance of RadButtonElement representing the Today button in the footer. 
 
 #### Using the Today button
 

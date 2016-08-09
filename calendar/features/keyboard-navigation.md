@@ -1,6 +1,6 @@
 ---
 title: Keyboard Navigation
-page_title: Keyboard Navigation | UI for WinForms Documentation
+page_title: Keyboard Navigation | RadCalendar
 description: Keyboard Navigation
 slug: winforms/calendar/customizing-behavior/keyboard-navigation
 tags: keyboard,navigation

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadCalendar
 description: Getting Started
 slug: winforms/calendar/getting-started
 tags: getting,started
@@ -12,9 +12,7 @@ previous_url: calendar-getting-started
 # Getting Started
 
 
-This tutorial will demonstrate adding selected and special days to the calendar at design time, then iterating and displaying those dates at runtime.![calendar-getting-started 004](images/calendar-getting-started004.png)
-
-
+This tutorial will demonstrate adding selected and special days to the calendar at design time, then iterating and displaying those dates at runtime.![calendar-getting-started 004](images/calendar-getting-started004.gif)
 
 1. In a new Windows Application form drop a __RadCalendar__ control. Set the __AllowMultipleSelect__ property to *true*.
           

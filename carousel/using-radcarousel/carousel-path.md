@@ -1,6 +1,6 @@
 ---
 title: Carousel Path
-page_title: Carousel Path | UI for WinForms Documentation
+page_title: Carousel Path | RadCarousel
 description: Carousel Path
 slug: winforms/carousel/using-radcarousel/carousel-path
 tags: carousel,path

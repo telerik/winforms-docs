@@ -30,13 +30,11 @@ You can use one of the following item types:
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=AddItemsProgrammatically}} 
 
 ````C#
-            
 DescriptionTextListDataItem descriptionItem = new DescriptionTextListDataItem();
 descriptionItem.Text = "Chicken wings";
 descriptionItem.Image = Properties.Resources.chicken_wings;
 descriptionItem.DescriptionText = "some description";
 this.radListControl1.Items.Add(descriptionItem);
-            
 RadListDataItem dataItem = new RadListDataItem();
 dataItem.Text = "Chicken toast";
 dataItem.Image = Properties.Resources.chicken_toast;
@@ -53,6 +51,9 @@ Dim dataItem As New RadListDataItem()
 dataItem.Text = "Chicken toast"
 dataItem.Image = My.Resources.chicken_toast
 Me.radListControl1.Items.Add(dataItem)
+'#End Region
+'#Region "expression"
+Me.radListControl1.FilterExpression = "Country LIKE 'Argentina'"
 '#End Region
 End Sub
 '#Region "Binding"

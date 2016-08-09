@@ -1,6 +1,6 @@
 ---
 title: Touch support
-page_title: Touch support | UI for WinForms Documentation
+page_title: Touch support | RadCarousel
 description: Touch support
 slug: winforms/carousel/touch-support
 tags: touch,support

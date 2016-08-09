@@ -1,11 +1,11 @@
 ---
 title: Caret Positioning and Selection
-page_title: Caret positioning and selection | UI for WinForms Documentation
-description: Caret positioning and selection
+page_title: Caret positioning and selection | RadAutoCompleteBox
+description: This article describes how one can select parts of the text in the code behind.
 slug: winforms/editors/autocompletebox/caret-positioning-and-selection
 tags: caret,positioning,and,selection
 published: True
-position: 3
+position: 4
 previous_url: editors-autocompletebox-caret-positioning-and-selection
 ---
 
@@ -71,3 +71,12 @@ End Sub
 The both approaches produce same result:
 
 ![editors-autocompletebox-caret-positioning-and-selection 001](images/editors-autocompletebox-caret-positioning-and-selection001.png)
+
+
+# See Also
+ 
+* [Creating Custom Blocks]({%slug winforms/editors/autocompletebox/creating-custom-blocks%})
+* [Element Structure and Document Object Model]({%slug winforms/editors/autocompletebox/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/autocompletebox/formatting-blocks%})
+* [Text Editing]({%slug winforms/editors/autocompletebox/text-editing%})
+* [Auto-Complete]({%slug winforms/editors/autocompletebox/auto-complete%})

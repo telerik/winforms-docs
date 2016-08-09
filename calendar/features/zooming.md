@@ -1,6 +1,6 @@
 ---
 title: Zoom
-page_title: Zooming | UI for WinForms Documentation
+page_title: Zooming | RadCalendar
 description: Zooming
 slug: winforms/calendar/customizing-appearance/zooming
 tags: zooming
@@ -17,7 +17,7 @@ __RadCalendar__ has a built-in date zoom functionality.The  __Zoom-In__ operati
 
 * __ZoomingFactor:__ Gets or sets the zooming factor of a cell which is handled by the zooming (fish eye) functionality. 
 
-The screenshot below shows a calendar with a zoomed-in date.
+>caption Figure 1: Calendar with a zoomed-in date.
 
 ![calendar-features-zoom 001](images/calendar-features-zoom001.png)
 
@@ -28,7 +28,7 @@ The zoom functionality supports changing the current view type as well. With thi
 
 * __ZoomLevel:__ Get or sets the current level. The possible values are, *Days*, *Months*, *Years* and *YearRanges*.
 
->caption Header zoom navigation mode
+>caption Figure 2: Header zoom navigation mode
 
 ![calendar-features-zoom 002](images/calendar-features-zoom002.gif)
 

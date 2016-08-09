@@ -1,7 +1,7 @@
 ---
 title: CultureInfo and RegionInfo Basics
-page_title: CultureInfo and RegionInfo Basics | UI for WinForms Documentation
-description: CultureInfo and RegionInfo Basics
+page_title: CultureInfo and RegionInfo Basics | RadDateTimePicker  
+description: This article shows how you can use RadDateTimePicker with different culture settings.
 slug: winforms/editors/datetimepicker/internationalization/cultureinfo-and-regioninfo-basics
 tags: cultureinfo,and,regioninfo,basics
 published: True
@@ -11,7 +11,7 @@ previous_url: editors-datetimepicker-internationalization-cultureinfo-and-region
 
 # CultureInfo and RegionInfo Basics
  
-Telerik __RadDateTimePicker__ provides full support for the __System.Globalization Namespace__. This namespace consists of classes (__CompareInfo__, __CultureInfo__, __RegionInfo__, etc.) which contain culture-related information, such as the language, country/region, calendars in use, format patterns for dates, currency, and numbers, and the sort order for strings. They are useful classes for writing internationalized applications.
+__RadDateTimePicker__ provides full support for the __System.Globalization Namespace__. This namespace consists of classes (__CompareInfo__, __CultureInfo__, __RegionInfo__, etc.) which contain culture-related information, such as the language, country/region, calendars in use, format patterns for dates, currency, and numbers, and the sort order for strings. They are useful classes for writing internationalized applications.
 
 Two of the most important classes in this namespace are: __CultureInfo__ and __RegionInfo__. 
 
@@ -36,19 +36,19 @@ The table below is a sample list of the names and identifiers found in the Cult
 |ps-AF|0x0463|Pashto - Afghanistan|
 |ar-SA|0x0401|Arabic - Saudi Arabia|
 
->caption Fig.1 Setting Arabic Culture
+>caption Figure: 1 Setting Arabic Culture
 
 ![editors-datetimepicker-internationalization-cultureinfo-and-regioninfo-basics 001](images/editors-datetimepicker-internationalization-cultureinfo-and-regioninfo-basics001.png)
 
-{{source=..\SamplesCS\Calendar\Calendar1.cs region=SetPashtoCulture}} 
-{{source=..\SamplesVB\Calendar\Calendar1.vb region=SetPashtoCulture}} 
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=SetPashtoCulture}} 
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=SetPashtoCulture}} 
 
 ````C#
-this.radCalendar1.Culture = new System.Globalization.CultureInfo("ps-AF");
+this.radDateTimePicker1.Culture = new System.Globalization.CultureInfo("ps-AF");
 
 ````
 ````VB.NET
-Me.RadCalendar1.Culture = New System.Globalization.CultureInfo("ps-AF")
+Me.RadDateTimePicker1.Culture = New System.Globalization.CultureInfo("ps-AF")
 
 ````
 
@@ -59,3 +59,8 @@ Me.RadCalendar1.Culture = New System.Globalization.CultureInfo("ps-AF")
 ## RegionInfo
 
 The __RegionInfo__ class contains information about the country/region.  In contrast to __CultureInfo__, __RegionInfo__ does not represent preferences of the user and does not depend on the user's language or culture. The __RegionInfo__ name is one of the two-letter codes defined in ISO 3166 for country/region. Case is not significant; however, the __Name__, the __TwoLetterISORegionName__, and the __ThreeLetterISORegionName__ properties return the appropriate code in uppercase.
+
+# See Also
+
+* [Internationalization]({%slug winforms/editors/datetimepicker/internationalization/internationalization%})
+* [Date Formats]({%slug winforms/editors/datetimepicker/internationalization/date-formats%})

@@ -1,6 +1,6 @@
 ---
 title: Handle Unsupported Values
-page_title: Handle Unsupported Values | DataEntry
+page_title: Handle unsupported values | RadDataEntry
 description: Handle unsupported values
 slug: winforms/dataentry/how-to/handle-unsupported-values
 tags: handle,unsupported,values

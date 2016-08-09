@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadBindingNavigator
 description: Getting Started
 slug: winforms/bindingnavigator/getting-started
 tags: getting,started

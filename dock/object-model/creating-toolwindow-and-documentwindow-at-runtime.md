@@ -1,6 +1,6 @@
 ---
 title: Creating ToolWindow and DocumentWindow at Runtime
-page_title: Creating ToolWindow and DocumentWindow at Runtime | UI for WinForms Documentation
+page_title: Creating ToolWindow and DocumentWindow at Runtime | RadDock
 description: Creating ToolWindows and DocumentWindows at runtime.
 slug: winforms/dock/object-model/creating-toolwindow-and-documentwindow-at-runtime
 tags: creating,toolwindow,and,documentwindow,at,runtime

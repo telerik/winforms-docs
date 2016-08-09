@@ -1,6 +1,6 @@
 ---
 title: Using the ContextMenuService
-page_title: Using the ContextMenuService | UI for WinForms Documentation
+page_title: Using the ContextMenuService | RadDock
 description: Shows how one can customize the context menu.  
 slug: winforms/dock/architecture-and-features/using-the-contextmenuservice
 tags: using,the,contextmenuservice

@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Calendar Structure | UI for WinForms Documentation
+page_title: Calendar Structure | RadCalendar
 description: This article shows the calendar structure and the element hierarchy.
 slug: winforms/calendar/calendar-structure
 tags: calendar,structure
@@ -10,8 +10,9 @@ previous_url: calendar-overview-structure
 ---
 
 # Calendar Structure
+This article list the main __RadCalendar__ elements.
 
->caption The RadCalendar Elements
+>caption Figure 1: The RadCalendar Elements
 ![calendar-calendar-structure 001](images/calendar-calendar-structure001.png)
 
 __RadCalenadar__ consists of the following elements:
@@ -37,7 +38,7 @@ __RadCalenadar__ consists of the following elements:
 
 __RadCalendar__ uses the Telerik Presentation Framework which enables rich experiences like advanced styling and animations. Just like WPF it uses elements ordered in a visual tree called element hierarchy. This section describes the element hierarchy used in __RadCalendar__:
 
->caption RadCalendar element hierarchy.
+>caption Figure 2: RadCalendar element hierarchy.
 
 ![calendar-calendar-structure 003](images/calendar-calendar-structure003.png)
 

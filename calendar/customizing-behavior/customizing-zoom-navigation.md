@@ -1,6 +1,6 @@
 ---
 title: Customizing Zoom Navigation
-page_title: Customizing Zoom Navigation | UI for WinForms Documentation
+page_title: Customizing Zoom Navigation | RadCalendar
 description: Customizing Zoom Navigation
 slug: winforms/calendar/customizing-behavior/customizing-zoom-navigation
 tags: customizing,zoom,navigation
@@ -64,6 +64,7 @@ End Sub
 
 {{endregion}} 
 
+>caption Figure 1: The zoom level is limited to months.
 
 ![calendar-customizing-behavior-customizing-zoom-navigation 001](images/calendar-customizing-behavior-customizing-zoom-navigation001.gif)
 

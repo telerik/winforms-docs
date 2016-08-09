@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | UI for WinForms Documentation
+page_title: Smart Tag | RadCarousel
 description: This article explain what you can do with the RadCarousel smart tag. 
 slug: winforms/carousel/design-time/smart-tag
 tags: adding,carousel,items,smart,tag
@@ -11,7 +11,9 @@ previous_url: carousel-design-time-adding-carousel-items
 
 # Smart Tag
 
-The Smart Tag for __RadCarousel__ lets you quickly access common tasks involved with managing items, customizing appearance or setting the theme.
+The __Smart Tag__ of __RadCarousel__ lets you quickly access common tasks involved with managing items, customizing appearance or setting the theme.
+
+>caption Figure 1: The Smart Tag of RadCarousel
 
 ![carousel-smart-tag001](images/carousel-smart-tag001.png)
 

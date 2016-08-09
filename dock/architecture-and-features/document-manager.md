@@ -1,6 +1,6 @@
 ---
 title: Document Manager
-page_title: Document Manager | UI for WinForms Documentation
+page_title: Document Manager | RadDock
 description: The DocumentManager object manages all DockWindows that are parented in the main DocumentCountainer.
 slug: winforms/dock/architecture-and-features/document-manager
 tags: document,manager

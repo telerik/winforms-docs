@@ -1,7 +1,7 @@
 ---
 title: Creating Custom Blocks
-page_title: Creating Custom Blocks | UI for WinForms Documentation
-description: Creating Custom Blocks
+page_title: Creating Custom Blocks | RadAutoCompleteBox
+description: This article describes how you can create custom tokens with RadAutoCompleteBox.
 slug: winforms/editors/autocompletebox/creating-custom-blocks
 tags: creating,custom,blocks
 published: True
@@ -10,13 +10,11 @@ previous_url: editors-autocompletetextbox-creating-custom-blocks
 ---
 
 # Creating Custom Blocks
- 
-## 
 
-The RadAutoCompleteBox allows not only appearance customization via the formatting event, but also replacement of the default UI block representation. The __CreateTextBlock__ event exposes this possibility.
+__RadAutoCompleteBox__ allows not only appearance customization via the formatting event, but also replacement of the default UI block representation. The __CreateTextBlock__ event exposes this possibility.
         
 
-You should create a custom text block that inherits from __ITextBlock__ and any inheritor of RadElement. Let’s extend the default __TokenizedTextBlockElement__ by adding a check box. We don’t need to implement the __ITextBlock__ interface, because it is already defined in the base class: 
+You should create a custom text block that inherits from __ITextBlock__ and any inheritor of __RadElement__. Let’s extend the default __TokenizedTextBlockElement__ by adding a check box. You don’t need to implement the __ITextBlock__ interface, because it is already defined in the base class: 
 
 {{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=customTokens}} 
 {{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=customTokens}} 
@@ -99,50 +97,32 @@ Finally, the text property should be set:
 >
  
 
-{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=subscribeToFormatting}} 
-{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=subscribeToFormatting}} 
+{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=SubscribeToCreateTextBlock}} 
+{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=SubscribeToCreateTextBlock}}
 ````C#
-radAutoCompleteBox1.TextBlockFormatting += new TextBlockFormattingEventHandler(radAutoCompleteBox1_TextBlockFormatting);
+radAutoCompleteBox1.CreateTextBlock+=new CreateTextBlockEventHandler(radAutoCompleteBox1_CreateTextBlock);
 this.radAutoCompleteBox1.Text = "Euro;USD;GBP;";
 
 ````
 ````VB.NET
-AddHandler RadAutoCompleteBox1.TextBlockFormatting, AddressOf radAutoCompleteBox1_TextBlockFormatting
+AddHandler RadAutoCompleteBox1.CreateTextBlock, AddressOf radAutoCompleteBox1_CreateTextBlock
 Me.RadAutoCompleteBox1.Text = "Euro;USD;GBP;"
 
-````
+```` 
+
 
 {{endregion}} 
 
-{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=formatting}}
-{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=formatting}} 
-
-````C#
-void radAutoCompleteBox1_TextBlockFormatting(object sender, TextBlockFormattingEventArgs e)
-{
-    TokenizedTextBlockElement token = e.TextBlock as TokenizedTextBlockElement;
-    if (token != null)
-    {
-        token.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-        token.BackColor = Color.Yellow;
-    }
-}
-
-````
-````VB.NET
-Private Sub radAutoCompleteBox1_TextBlockFormatting(sender As Object, e As TextBlockFormattingEventArgs)
-    Dim token As TokenizedTextBlockElement = TryCast(e.TextBlock, TokenizedTextBlockElement)
-    If token IsNot Nothing Then
-        token.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-        token.BackColor = Color.Yellow
-    End If
-End Sub
-
-````
-
-{{endregion}} 
-
-
-The following screen demonstrates the final result:
+The following image demonstrates the final result:
 
 ![editors-autocompletebox-creating-custom-blocks 001](images/editors-autocompletebox-creating-custom-blocks001.png)
+
+
+# See Also
+
+* [Caret Positioning and Selection]({%slug winforms/editors/autocompletebox/caret-positioning-and-selection%})
+ 
+* [Element Structure and Document Object Model]({%slug winforms/editors/autocompletebox/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/autocompletebox/formatting-blocks%})
+* [Text Editing]({%slug winforms/editors/autocompletebox/text-editing%})
+* [Auto-Complete]({%slug winforms/editors/autocompletebox/auto-complete%})
