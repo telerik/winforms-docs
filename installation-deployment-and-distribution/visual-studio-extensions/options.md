@@ -11,7 +11,7 @@ previous_url: installation-deployment-and-distribution-vsx-options-dialog,/devto
 
 # Options
 
-## 
+##
 
 The __Visual Studio Extensions__ options dialog provides settings, so you can configure the Telerik Visual Studio Extensions to best suit your needs.
 
@@ -20,7 +20,7 @@ It can be accessed through the __Visual Studio | Telerik | VSExtensions Options�
 ![installation-deployment-and-distribution-vsx-options-dialog 001](images/installation-deployment-and-distribution-vsx-options-dialog001.png)
 
 The __Options__ dialog contains two sets of options that affect the __Telerik UI for WinForms__ Visual Studio Extensions.
- 
+
 ![installation-deployment-and-distribution-vsx-options-dialog 002](images/installation-deployment-and-distribution-vsx-options-dialog002.png)
 
 The settings under the __General__ category affect all of the installed __Telerik Visual Studio Extensions__.
@@ -32,7 +32,7 @@ __Add referenced assemblies to solution and source control__ - When enabled, the
 ## Project Upgrade Notifications for Detected Local Distributions
 
 __Suggest project upgrades for Telerik product version available on my computer__  – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI for WinForms installed on your system
-        
+
 __Suggest upgrades when an equal Dev release detected on projects using a Trial__ – When enabled, you will be prompted to upgrade if a licensed version of Telerik UI for WinForms is available on your system, but the current project uses a trial version
 
 ## Other Notifications
@@ -58,4 +58,4 @@ __Include internal builds in Latest Version update and retrieval__ – When enab
 
 ## Notifications
 
-__Show me a message when a newer version is available on__ [www.telerik.com](http://www.telerik.com). When enabled, you will receive notifications if a new version of __Telerik UI for WinForms__ is available on the Telerik website.
+__Show me a message when a newer version is available on__ [www.telerik.com](http://www.telerik.com). When enabled and solution containing an UI for WinForms project is loaded, you will receive notification if a new version of __Telerik UI for WinForms__ is available on the Telerik website.
