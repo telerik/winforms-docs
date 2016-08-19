@@ -1,6 +1,6 @@
 ---
 title: Funnel
-page_title: Funnel | UI for WinForms Documentation
+page_title: Funnel | ChartView
 description: Funnel
 slug: winforms/chartview-/series-types/funnel
 tags: funnel

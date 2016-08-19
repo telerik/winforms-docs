@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | MaskedEditBox
 description: Getting Started
 slug: winforms/editors/maskededitbox/getting-started
 tags: getting,started

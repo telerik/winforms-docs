@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Design time | UI for WinForms Documentation
+page_title: Design time | ChartView
 description: At design time you can use the RadChartView's Smart Tag to change the applied theme or navigate to the online documentation. The control supports design-time data binding and features a property builder.
 slug: winforms/chartview/design-time/smart-tag
 tags: design,time
@@ -9,7 +9,7 @@ position: 0
 previous_url: chartview-designtime
 ---
 
-# Design time
+# Smart Tag
 
 In this article we will describe the design time abilities of __RadChartView__. 
 

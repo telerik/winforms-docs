@@ -1,6 +1,6 @@
 ---
 title: Title
-page_title: Title | UI for WinForms Documentation
+page_title: Title | ChartView
 description: Title
 slug: winforms/chartview-/features/title
 tags: title

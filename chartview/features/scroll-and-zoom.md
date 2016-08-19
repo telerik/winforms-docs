@@ -1,6 +1,6 @@
 ---
 title: Scroll and Zoom
-page_title: Scroll and Zoom | UI for WinForms Documentation
+page_title: Scroll and Zoom | ChartView
 description: RadChartView provides zoom and scroll interactivity with the ChartPanZoomController class.
 slug: winforms/chartview-/features/scroll-and-zoom
 tags: scroll,and,zoom

@@ -1,6 +1,6 @@
 ---
 title: Export
-page_title: Export | UI for WinForms Documentation
+page_title: Export | ChartView
 description: RadChartView supports export to image functionality. You can export the chart`s content by using any of the following overloads of the ExportToImage method.
 slug: winforms/chartview-/features/export
 tags: export

@@ -347,9 +347,21 @@ navigation:
     editors/browseeditor:
         title: BrowseEditor
         position: 1
+    editors/browseeditor/customizing-appearance:
+        title: Customizing Appearance
+        position: 7
+    editors/browseeditor/design-time:
+        title: Design Time
+        position: 2
     editors/calculatordropdown:
         title: CalculatorDropDown
         position: 2
+    editors/calculatordropdown/design-time:
+        title: Design Time
+        position: 2
+    editors/calculatordropdown/customizing-appearance:
+        title: Customizing Appearance
+        position: 4
     editors/colorbox:
         title: ColorBox 
         position: 3
