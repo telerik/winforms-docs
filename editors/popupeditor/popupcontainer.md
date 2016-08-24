@@ -1,7 +1,7 @@
 ---
 title: PopupContainer
-page_title: PopupContainer | UI for WinForms Documentation
-description: PopupContainer
+page_title: PopupContainer | RadPopupEditor
+description: Use the PopupContainer build the layout that will be shown in the drop down.
 slug: winforms/editors/popupeditor/popupcontainer
 tags: popupcontainer
 published: True
@@ -10,10 +10,6 @@ previous_url: editors-popupeditor-radpopupcontainer
 ---
 
 # PopupContainer
-
-
-
-## 
 
 __RadPopupContainer__ is a simple scrollable panel which is used with __RadPopupEditor__. It allows you to build your layout at design time. Once this is done, you can just associate the panel with the __RadPopupEditor__.
         
