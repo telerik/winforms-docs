@@ -1,6 +1,6 @@
 ---
 title: Customizing editor
-page_title: Customizing editor | UI for WinForms Documentation
+page_title: Customizing editor | RadGanttView
 description: Customizing editor
 slug: winforms/ganttview-/editing/customizing-editor
 tags: customizing,editor

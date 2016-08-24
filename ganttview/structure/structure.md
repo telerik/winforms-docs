@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Structure | UI for WinForms Documentation
+page_title: Structure | RadGanttView
 description: Structure
 slug: winforms/ganttview-/structure
 tags: structure

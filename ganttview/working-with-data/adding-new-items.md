@@ -1,6 +1,6 @@
 ---
 title: Adding new items
-page_title: Adding new items | UI for WinForms Documentation
+page_title: Adding new items | RadGanttView
 description: Adding new items
 slug: winforms/ganttview-/working-with-data/adding-new-items
 tags: adding,new,items

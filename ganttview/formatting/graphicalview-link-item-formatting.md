@@ -1,6 +1,6 @@
 ---
 title: GraphicalView Link Item formatting
-page_title: GraphicalView Link Item formatting | UI for WinForms Documentation
+page_title: GraphicalView Link Item formatting | RadGanttView
 description: GraphicalView Link Item formatting
 slug: winforms/ganttview-/formatting/graphicalview-link-item-formatting
 tags: graphicalview,link,item,formatting

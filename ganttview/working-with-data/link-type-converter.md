@@ -1,6 +1,6 @@
 ---
 title: Link type converter
-page_title: Link type converter | UI for WinForms Documentation
+page_title: Link type converter | RadGanttView
 description: Link type converter
 slug: winforms/ganttview-/working-with-data/link-type-converter
 tags: link,type,converter

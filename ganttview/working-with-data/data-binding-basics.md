@@ -1,6 +1,6 @@
 ---
 title: Data binding basics
-page_title: Data binding basics | UI for WinForms Documentation
+page_title: Data binding basics | RadGanttView
 description: Data binding basics
 slug: winforms/ganttview-/working-with-data/data-binding-basics
 tags: data,binding,basics

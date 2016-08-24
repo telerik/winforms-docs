@@ -1,6 +1,6 @@
 ---
 title: Printing Events
-page_title: Printing Events | UI for WinForms Documentation
+page_title: Printing Events | RadGanttView
 description: Printing Events
 slug: winforms/ganttview-/printing-support/printing-events
 tags: printing,events

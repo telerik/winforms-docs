@@ -1,6 +1,6 @@
 ---
 title: Binding to database
-page_title: Binding to database | UI for WinForms Documentation
+page_title: Binding to database | RadGanttView
 description: Binding to database
 slug: winforms/ganttview-/working-with-data/binding-to-database
 tags: binding,to,database

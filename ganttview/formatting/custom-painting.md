@@ -1,6 +1,6 @@
 ---
 title: Custom painting
-page_title: Custom painting | UI for WinForms Documentation
+page_title: Custom painting | RadGanttView
 description: Custom painting
 slug: winforms/ganttview-/formatting/custom-painting
 tags: custom,painting

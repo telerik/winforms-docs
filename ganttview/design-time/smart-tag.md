@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | UI for WinForms Documentation
+page_title: Smart Tag | RadGanttView
 description: Smart Tag
 slug: winforms/ganttview-/design-time/smart-tag
 tags: smart,tag
@@ -11,10 +11,7 @@ previous_url: ganttview-designtime-smart-tag
 
 # Smart Tag
 
- 
-## 
-
-The Smart Tag for RadGanttView lets you quickly access common tasks involved with customizing RadGanttView elements, data binding and customizing its appearance through themes.
+The Smart Tag for __RadGanttView__ lets you quickly access common tasks involved with customizing __RadGanttView__ elements, data binding and customizing its appearance through themes.
         
 ![ganttview-designtime-smart-tag 001](images/ganttview-designtime-smart-tag001.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Custom timeline
-page_title: Custom timeline | UI for WinForms Documentation
+page_title: Custom timeline | RadGanttView
 description: Custom timeline
 slug: winforms/ganttview-/timeline/custom-timeline
 tags: custom,timeline

@@ -1,6 +1,6 @@
 ---
 title: TextView item formatting
-page_title: TextView item formatting | UI for WinForms Documentation
+page_title: TextView item formatting | RadGanttView
 description: TextView item formatting
 slug: winforms/ganttview-/formatting/textview-item-formatting
 tags: textview,item,formatting

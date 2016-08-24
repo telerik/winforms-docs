@@ -1,6 +1,6 @@
 ---
 title: Keyboard navigation
-page_title: Keyboard navigation | UI for WinForms Documentation
+page_title: Keyboard navigation | RadGanttView
 description: Keyboard navigation
 slug: winforms/ganttview-/usability/keyboard-navigation
 tags: keyboard,navigation

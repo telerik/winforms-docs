@@ -1,6 +1,6 @@
 ---
 title: GraphicalView item formatting
-page_title: GraphicalView item formatting | UI for WinForms Documentation
+page_title: GraphicalView item formatting | RadGanttView
 description: GraphicalView item formatting
 slug: winforms/ganttview-/formatting/graphicalview-item-formatting
 tags: graphicalview,item,formatting

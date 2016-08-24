@@ -1,6 +1,6 @@
 ---
 title: Editing graphical view
-page_title: Editing graphical view | UI for WinForms Documentation
+page_title: Editing graphical view | RadGanttView
 description: Editing graphical view
 slug: winforms/ganttview-/editing/editing-graphical-view
 tags: editing,graphical,view

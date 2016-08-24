@@ -1,6 +1,6 @@
 ---
 title: Item types
-page_title: Item types | UI for WinForms Documentation
+page_title: Item types | RadGanttView
 description: Item types
 slug: winforms/ganttview-/structure/item-types
 tags: item,types

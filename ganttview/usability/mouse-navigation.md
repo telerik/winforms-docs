@@ -1,6 +1,6 @@
 ---
 title: Mouse navigation
-page_title: Mouse navigation | UI for WinForms Documentation
+page_title: Mouse navigation | RadGanttView
 description: Mouse navigation
 slug: winforms/ganttview-/usability/mouse-navigation
 tags: mouse,navigation

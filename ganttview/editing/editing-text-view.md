@@ -1,6 +1,6 @@
 ---
 title: Editing text view
-page_title: Editing text view | UI for WinForms Documentation
+page_title: Editing text view | RadGanttView
 description: Editing text view
 slug: winforms/ganttview-/editing/editing-text-view
 tags: editing,text,view

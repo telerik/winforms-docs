@@ -1,6 +1,6 @@
 ---
 title: Timeline views
-page_title: Timeline views | UI for WinForms Documentation
+page_title: Timeline views | RadGanttView
 description: Timeline views
 slug: winforms/ganttview-/timeline/timeline-views
 tags: timeline,views

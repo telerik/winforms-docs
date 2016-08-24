@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Printing Support | UI for WinForms Documentation
+page_title: Printing Support | RadGanttView
 description: Printing Support
 slug: winforms/ganttview-/printing-support
 tags: printing,support

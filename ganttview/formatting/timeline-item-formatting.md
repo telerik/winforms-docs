@@ -1,6 +1,6 @@
 ---
 title: Timeline item formatting
-page_title: Timeline item formatting | UI for WinForms Documentation
+page_title: Timeline item formatting | RadGanttView
 description: Timeline item formatting
 slug: winforms/ganttview-/formatting/timeline-item-formatting
 tags: timeline,item,formatting

@@ -1,6 +1,6 @@
 ---
 title: Populating with Data Programmatically
-page_title: Populating with Data Programmatically | UI for WinForms Documentation
+page_title: Populating with Data Programmatically | RadGanttView
 description: Populating with Data Programmatically
 slug: winforms/ganttview-/working-with-data/populating-with-data-programmatically
 tags: populating,with,data,programmatically
