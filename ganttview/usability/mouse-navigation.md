@@ -10,11 +10,8 @@ previous_url: ganttview-usability-mouse-navigation
 ---
 
 # Mouse navigation
- 
-## 
 
 The user can use the following mouse commands to navigate in the gantt view.
-
 
 | Command | Over | Description |
 | ------ | ------ | ------ |

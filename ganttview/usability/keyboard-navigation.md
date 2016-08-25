@@ -10,8 +10,6 @@ previous_url: ganttview-usability-keyboard-navigation
 ---
 
 # Keyboard navigation
- 
-## 
 
 The user can use the keyboard commands in the below table to navigate in the gantt view.
 

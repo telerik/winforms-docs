@@ -10,10 +10,8 @@ previous_url: ganttview-working-with-data-importing-xml-from-msproject
 ---
 
 # Importing XML from MS Project
- 
-## 
 
-Although RadGanttView does not support direct binding or importing of MS Project files we have prepared a class that would help you import an MS Project saved as xml into RadGanttView.
+Although __RadGanttView__ does not support direct binding or importing of MS Project files we have prepared a class that would help you import an MS Project saved as xml.
         
 {{source=..\SamplesCS\GanttView\WorkingWithData\ImportXmlFromMsProject.cs region=MsProjectImport}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\ImportXmlFromMsProject.vb region=MsProjectImport}} 
@@ -293,7 +291,7 @@ End Class
 {{endregion}} 
  
 
-After you have this code in your project you can load the data from the xml into RadGanttView with the following code: 
+After you have this code in your project you can load the data from the xml into __RadGanttView__ like this: 
 
 {{source=..\SamplesCS\GanttView\WorkingWithData\ImportXmlFromMsProject.cs region=ImportXmlIntoGanttView}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\ImportXmlFromMsProject.vb region=ImportXmlIntoGanttView}} 

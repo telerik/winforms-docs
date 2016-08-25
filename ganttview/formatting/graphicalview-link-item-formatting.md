@@ -11,9 +11,7 @@ previous_url: ganttview-formatting-graphical-view-link-item-formatting
 
 # GraphicalView Link Item formatting
 
- 
 __RadGanttView__ allows formatting of individual links through the __GraphicalViewLinkItemFormatting__ event. The following example demonstrates how to format links based on their type.
- 
 
 {{source=..\SamplesCS\GanttView\Formatting\GraphicalViewLinkItemFormatting.cs region=GraphicalViewLinkItemFormatting}} 
 {{source=..\SamplesVB\GanttView\Formatting\GraphicalViewLinkItemFormatting.vb region=GraphicalViewLinkItemFormatting}} 
@@ -84,6 +82,5 @@ End Sub
 ````
 
 {{endregion}} 
-
 
 ![ganttview-formatting-graphical-view-item-formatting 001](images/ganttview-formatting-graphical-view-item-formatting001.png)

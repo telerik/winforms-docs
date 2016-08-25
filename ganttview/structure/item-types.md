@@ -11,8 +11,6 @@ previous_url: ganttview-structure-item-types
 
 # Item types
 
-
-
 There are total of three item types: summary item, task item and milestone item.
 
 ![ganttview-structure-item-types 001](images/ganttview-structure-item-types001.png)
@@ -34,8 +32,6 @@ Milestone items are defined as items with identical start and end time. They are
 Common tasks are concrete tasks with defined start and end time.
 
 ![ganttview-structure-item-types 004](images/ganttview-structure-item-types004.png)
-
-## 
 
 The following table demonstrates the similarities and differences between the item types:
         
