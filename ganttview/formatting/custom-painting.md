@@ -104,8 +104,7 @@ End Sub
 
 {{endregion}} 
 
+
 ![ganttview-formatting-custom-paiting 002](images/ganttview-formatting-custom-paiting002.png)
 
-You will see that if the zoom level changes the rectangle size resizes accordingly.
-        
-![ganttview-formatting-custom-paiting 003](images/ganttview-formatting-custom-paiting003.png)
+
