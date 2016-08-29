@@ -30,6 +30,7 @@ The MenuStrip control in your application will be converted to [RadMenu]({%slug 
 |ItemAdded|Produces Error|   |
 |ItemClicked|Produces Error| |
 |ItemRemoved|Produces Error| |
+|LayoutCompleted|Produces Error| |
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
@@ -57,6 +58,7 @@ The MenuStrip control in your application will be converted to [RadMenu]({%slug 
 |ShowShortcutKeys|Produces Error||
 |TextAlign|Replaced|TextAlignment|
 |Visible|Replaced|Visibility|
+|MergeAction|Produces Error|   |
 
 |Events|Action|RadControls Equivalent|
 |---|---|---|
@@ -78,7 +80,7 @@ The MenuStrip control in your application will be converted to [RadMenu]({%slug 
 |CreateObjRef|Produces Error| |
 |GetCurrentParent|Produces Error| |
 
-### ToolStripComboBox is converted to RadMenuComBoItem
+### ToolStripComboBox is converted to RadMenuComboItem
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
@@ -92,7 +94,13 @@ The MenuStrip control in your application will be converted to [RadMenu]({%slug 
 |SelectedIndex|Produces Error| |
 |RightToLeft (Enumeration)|Produces Error| |
 |Sorted|Produces Error| |
-
+|DropDownHeight|Replaced with |ComboBoxElement.DropDownHeight|
+|DropDownStyle|Replaced with |ComboBoxElement.DropDownStyle|
+|DropDownWidth|Replaced with |ComboBoxElement.DropDownWidth|
+|FlatStyle|Removed| |
+|RightToLeft (Enumeration)|Replaced with |RightToLeft (Boolean)|
+|SelectedIndex|Replaced with |ComboBoxElement.SelectedIndex|
+|Sorted|Replaced with |ComboBoxElement.SortStyle|
 
 ## See Also
 
