@@ -28,6 +28,6 @@ This article describes the inner structure and organization of the elements whic
 
 # See Also
 
-* [RadControlSpy]({%slug winforms/tools/controlspy%})
+* [Getting Started]({%slug winforms/forms-and-dialogs/form/getting-started%})
 
 
