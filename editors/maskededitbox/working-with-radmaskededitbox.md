@@ -1,11 +1,11 @@
 ---
 title: Working with RadMaskedEditBox
-page_title: Working with RadMaskedEditBox | MaskedEditBox
+page_title: Working with RadMaskedEditBox | RadMaskedEditBox
 description: RadMaskedEditBox descends from RadTextBox and so has the same properties, methods and events. 
 slug: winforms/editors/maskededitbox/working-with-radmaskededitbox
 tags: working,with,radmaskededitbox
 published: True
-position: 5
+position: 6
 previous_url: editors-maskededitbox-working-with-radmaskededitbox
 ---
 

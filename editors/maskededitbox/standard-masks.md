@@ -1,17 +1,15 @@
 ---
 title: Standard Masks
-page_title: Standard Masks | MaskedEditBox
+page_title: Standard Masks | RadMaskedEditBox
 description: When the MaskType property is set to Standard the user is allowed to enter digits, letters, special characters.
 slug: winforms/editors/maskededitbox/standard-masks
 tags: standard,masks
 published: True
-position: 2
+position: 3
 previous_url: editors-maskededitbox-standart-masks
 ---
 
 # Standard Masks
- 
-## 
 
 The table below describe the mask characters that can be used when the __MaskType__ property is set to __Standard__.
          

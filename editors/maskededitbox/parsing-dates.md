@@ -1,17 +1,15 @@
 ---
 title: Parsing Dates
-page_title: Parsing Dates | MaskedEditBox
+page_title: Parsing Dates | RadMaskedEditBox
 description: When RadMaskedEditBox is with MaksType FreeFormDateTime the control tries to recognize a free-form string and convert it to a valid date. 
 slug: winforms/editors/maskededitbox/parsing-dates
 tags: parsing,dates
 published: True
-position: 7
+position: 8
 previous_url: editors-maskededitbox-parsing-dates
 ---
 
 # Parsing Dates
-
-
 
 When __RadMaskedEditBox__ is with __MaksType__ FreeFormDateTime the control tries to recognize a free-form string and convert it to a valid date. In this article you can find information about the algorithms that are using and what they are able to parse.
       

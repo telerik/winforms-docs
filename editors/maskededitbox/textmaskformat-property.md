@@ -1,11 +1,11 @@
 ---
 title: TextMaskFormat Property
-page_title: TextMaskFormat Property | MaskedEditBox
+page_title: TextMaskFormat Property | RadMaskedEditBox
 description: TextMaskFormat Property
 slug: winforms/editors/maskededitbox/textmaskformat-property
 tags: textmaskformat,property
 published: True
-position: 6
+position: 7
 previous_url: editors-maskededitbox-textmaskformat
 ---
 
