@@ -5,7 +5,7 @@ description: A sample setup demonstrating how to configure RadMaskedEditBox with
 slug: winforms/editors/maskededitbox/getting-started
 tags: getting,started
 published: True
-position: 2
+position: 3
 previous_url: editors-maskededitbox-getting-started
 ---
 
@@ -23,3 +23,9 @@ Here is how to quickly configure two __RadMaskedEditBox__ controls. One uses a c
 1. In the second __RadMaskedEditBox__ set the __MaskType__ property to __DateTime__ and the __Mask__ property to "d". * See [Date and Time Masks]({%slug winforms/editors/maskededitbox/date-and-time-masks%})** for more information on how this mask is constructed.*
 
 1. Press __F5__ to run the application. Notice the behavior in the first __RadMaskedEditBox__ where the literals *"("* and *")"* are jumped over and cannot be replaced by the user. Also notice that mask characters are represented by the character in the __PromptChar__ property (by default this is the underscore *"_"* character) when blank.
+
+## See Also
+
+* [Structure]({%slug winforms/editors/maskededitbox/structure%})
+* [Smart Tag]({%slug winforms/editors/maskededitbox/design-time/smart-tag%})
+* [Working with RadMaskedEditBox]({%slug winforms/editors/maskededitbox/working-with-radmaskededitbox%})

@@ -383,6 +383,12 @@ navigation:
     editors/maskededitbox:
         title: MaskedEditBox
         position: 5
+    editors/maskededitbox/design-time:
+        title: Design Time
+        position: 2
+    editors/maskededitbox/customizing-appearance:
+        title: Customizing Appearance
+        position: 11
     editors/spineditor:
         title: SpinEditor
         position: 6
