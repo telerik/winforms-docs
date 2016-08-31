@@ -15,6 +15,7 @@ This article lists the .NET controls which can be converted to their UI for WinF
 1. [Button]({%slug winforms/winforms-converter/supported-controls/button%})
 1. [CheckBox]({%slug winforms/winforms-converter/supported-controls/checkbox%})
 1. [ComboBox]({%slug winforms/winforms-converter/supported-controls/combobox%})
+2. [DataGridView]({%slug winforms/winforms-converter/supported-controls/datagridview%})
 1. [DateTimePicker]({%slug winforms/winforms-converter/supported-controls/datetimepicker%})
 1. [DomainUpDown]({%slug winforms/winforms-converter/supported-controls/domainupdown%})
 1. [Form]({%slug winforms/winforms-converter/supported-controls/form%})
@@ -29,8 +30,11 @@ This article lists the .NET controls which can be converted to their UI for WinF
 1. [ProgressBar]({%slug winforms/winforms-converter/supported-controls/progressbar%})
 1. [PropertyGrid]({%slug winforms/winforms-converter/supported-controls/propertygrid%})
 1. [RadioButton]({%slug winforms/winforms-converter/supported-controls/radiobutton%})
+2. [StatusStrip]({%slug winforms/forms-and-dialogs/statusstrip%})
 1. [TextBox]({%slug winforms/winforms-converter/supported-controls/textbox%})
+2. [ToolStrip]({%slug winforms/winforms-converter/supported-controls/toolstrip%})
 1. [TrackBar]({%slug winforms/winforms-converter/supported-controls/trackbar%})
+2. [TreeView]({%slug winforms/winforms-converter/supported-controls/treeview%})
 1. [VScrollBar]({%slug winforms/winforms-converter/supported-controls/vscrollbar%})
 
 

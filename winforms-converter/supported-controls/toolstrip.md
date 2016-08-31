@@ -2,15 +2,15 @@
 title: ToolStrip    
 page_title: ToolStrip | Winforms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
-slug: winforms/winforms-converter/supported-controls/datagridview
+slug: winforms/winforms-converter/supported-controls/toolstrip
 tags: covert, winforms, treeview
 published: True
 position: 1
 ---
 
-# TreeView
+# ToolStrip
 
-The ToolStrip is converted to [RadCommandBar]({%slug winforms/comandbar%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
+The ToolStrip is converted to [RadCommandBar]({%slug winforms/commandbar%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
@@ -235,3 +235,93 @@ The ToolStrip is converted to [RadCommandBar]({%slug winforms/comandbar%}). The 
 |InitializeLifetimeService|Produces Error|   | 
 
 ## ToolStripComboBox
+
+
+|Properties|Action|RadControls Equivalent|
+|---|---|---|
+|Alignment|Removed|   | 
+|AutoCompleteCustomSource|Produces Error|   | 
+|AutoCompleteSource|Produces Error|   | 
+|CausesValidation|Removed|   | 
+|DisplayStyle|Removed|   | 
+|DropDownStyle|Replaced with|DropDownStyle| 
+|FlatStyle|Removed|   | 
+|IntegralHeight|Removed|   | 
+|Items|Replaced with|Items| 
+|ImageAlign|Replaced with|ImageAlignment| 
+|MergeAction|Removed|   | 
+|Overflow|Removed|   | 
+|RightToLeft|Replaced with|RightToLeft| 
+|TextAlign|Replaced with|TextAlignment| 
+|Sorted|Replaced with|DropDownListElement.SortStyle| 
+|Visible|Replaced with|Visibility| 
+
+
+|Events|Action|RadControls Equivalent|
+|---|---|---|
+|DropDown|Replaced with|PopupOpened| 
+|DropDownClosed|Replaced with|PopupClosed| 
+|DropDownStyleChanged|Produces Error|   | 
+|TextUpdate|Produces Error|   | 
+|Enter|Produces Error|   | 
+|Leave|Produces Error|   | 
+|Validating|Produces Error|   | 
+|Validated|Produces Error|   | 
+|BackColorChanged|Produces Error|   | 
+|ForeColorChanged|Produces Error|   | 
+|LocationChanged|Produces Error|   | 
+|OwnerChanged|Produces Error|   | 
+|Paint|Produces Error|   | 
+|RightToLeftChanged|Produces Error|   | 
+|VisibleChanged|Produces Error|   | 
+
+|Methods|Action|RadControls Equivalent|
+|---|---|---|
+|BeginUpdate|Produces Error|   | 
+|CreateObjRef|Produces Error|   | 
+|EndUpdate|Produces Error|   | 
+|FindStringExact|Produces Error|   | 
+|FindString|Produces Error|   | 
+|InitializeLifetimeService|Produces Error|   | 
+|GetItemHeight|Produces Error|   | 
+|GetLifetimeService|Produces Error|   | 
+|GetPreferredSize|Produces Error|   | 
+|SelectAll|Produces Error|   | 
+
+## ToolStripTextBox
+
+|Properties|Action|RadControls Equivalent|
+|---|---|---|
+|DisplayStyle|Removed|   | 
+|ImageAlign|Replaced with|ImageAlignment| 
+|TextAlign|Replaced with|TextAlignment| 
+|Visible|Replaced with|Visibility| 
+ 
+|Events|Action|RadControls Equivalent|
+|---|---|---|
+|AcceptsTabChanged|Produces Error|   | 
+|BorderStyleChanged|Produces Error|   | 
+|HideSelectionChanged|Produces Error|   | 
+|ModifiedChanged|Produces Error|   | 
+|ReadOnlyChanged|Produces Error|   | 
+|TextBoxTextAlignChanged|Produces Error|   | 
+|Enter|Produces Error|   | 
+|Leave|Produces Error|   | 
+|Validating|Produces Error|   |
+|Validated|Produces Error|   | 
+|BackColorChanged|Produces Error|   | 
+|ForeColorChanged|Produces Error|   | 
+|LocationChanged|Produces Error|   | 
+|OwnerChanged|Produces Error|   | 
+|Paint|Produces Error|   | 
+|RightToLeftChanged|Produces Error|   | 
+|VisibleChanged|Produces Error|   | 
+
+
+|Methods|Action|RadControls Equivalent|
+|---|---|---|
+|CreateObjRef|Produces Error|   | 
+|GetLifetimeService|Produces Error|   | 
+|GetPreferredSize|Produces Error|   | 
+|InitializeLifetimeService|Produces Error|   | 
+|Undo|Replaced with|TextBoxElement.TextBoxItem.Undo| 
