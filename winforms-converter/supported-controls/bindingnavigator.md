@@ -1,6 +1,6 @@
 ---
 title: BindingNavigator
-page_title: BindingNavigator | UI for Winforms Documentation
+page_title: BindingNavigator | WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/bindingnavigator
 tags: covert, winforms, BindingNavigator

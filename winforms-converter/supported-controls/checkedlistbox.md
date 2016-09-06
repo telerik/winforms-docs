@@ -1,6 +1,6 @@
 ---
 title: CheckedListBox
-page_title: CheckedListBox | UI for Winforms Documentation
+page_title: CheckedListBox | WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/checkedlistbox
 tags: covert, winforms, CheckedListBox, 

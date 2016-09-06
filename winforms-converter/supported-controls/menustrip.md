@@ -1,6 +1,6 @@
 ---
 title: MenuStrip
-page_title: MenuStrip | UI for Winforms Documentation
+page_title: MenuStrip | WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/menustrip
 tags: covert, winforms, numericupdown, spineditor
