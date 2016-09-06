@@ -1,16 +1,16 @@
 ---
-title: MontlyCalendar
-page_title: MontlyCalendar | UI for Winforms Documentation
+title: MonthCalendar
+page_title: MonthCalendar | UI for Winforms Documentation
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
-slug: winforms/winforms-converter/supported-controls/menustrip
+slug: winforms/winforms-converter/supported-controls/monthcalendar
 tags: covert, winforms, numericupdown, spineditor
 published: True
 position: 1
 ---
 
-# MontlyCalendar
+# MonthCalendar
 
-The MontlyCalendar control in your application will be converted to [RadCalendar]({%slug winforms/calendar%}). The following tables describe which properties and methods are removed and which are replaced with similar equivalents.
+The MonthCalendar control in your application will be converted to [RadCalendar]({%slug winforms/calendar%}). The following tables describe which properties and methods are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
@@ -44,11 +44,8 @@ The MontlyCalendar control in your application will be converted to [RadCalendar
 |RemoveAnnuallyBoldedDate(System.DateTime date)|Produces Error||
 |RemoveBoldedDate(System.DateTime date)|Produces Error||
 |RemoveMonthlyBoldedDate(System.DateTime date)|Produces Error||
-|SetCalendarDimensions(int x, int y)|Produces Error|The following properties need to be set:
-this.radCalendar1.AllowMultipleView = true;
-this.radCalendar1.MultiViewColumns = 2;
-this.radCalendar1.MultiViewRows = 2; |
-|SetDate(System.DateTime date) |Produces Error|In order to set the date, you can set the FocusedDate property|
+|SetCalendarDimensions(int x, int y)|Produces Error|The following properties need to be set: __AllowMultipleView__, __MultiViewColumns__ and __MultiViewRows__|
+|SetDate(System.DateTime date) |Produces Error|In order to set the date, you can set the __FocusedDate__ property|
 |SetSelectionRange(System.DateTime date1, System.DateTime date2)|Produces Error||
 |UpdateBoldedDates()|Produces Error||
 
