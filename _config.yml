@@ -572,6 +572,12 @@ navigation:
     map:
         title: Map
         position: 285
+    map/providers:
+        title: Providers
+        position: 3
+    map/providers/bingmap:
+        title: Bing Map
+        position: 1
     menus:
         title: Menus
         position: 290

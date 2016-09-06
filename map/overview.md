@@ -3,7 +3,7 @@ title: Overview
 page_title: Overview | RadMap
 description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
 slug: winforms/map
-tags: listview
+tags: map, overview
 published: True
 position: 0 
 ---
@@ -11,6 +11,8 @@ position: 0
 # Map
 
 __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsportal.com/) and the [OpenStreetMaps](http://wiki.openstreetmap.org/wiki/API) REST services as well as from the local file system. 
+
+![map-overview 001](images/map-overview001.png)
 
 # Key Features
 
@@ -27,7 +29,5 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 * Mini map
 * Legend
 * Custom shapes (pins, callouts)
-
-![map-overview 001](images/map-overview001.png)
 
 ![map-overview 002](images/map-overview002.png)
