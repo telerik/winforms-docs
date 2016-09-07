@@ -1,9 +1,9 @@
 ---
 title: Properties, Methods and Events
 page_title: Properties, Methods, Events | RadMaskedEditBox
-description: RadMaskedEditBox is a themeable text box that formats and constrains text to a predefined pattern or a pattern you define. The article lists the important properties, methods and events. 
+description: RadMaskedEditBox is a themeable text box that formats and constrains textÂ to a predefined pattern or a pattern you define. The article lists the important properties, methods and events.
 slug: winforms/editors/maskededitbox/properties-methods-and-events
-tags: desktopalert, structure
+tags: maskededitbox, properties, methods, events
 published: True
 position: 10
 ---
@@ -11,55 +11,55 @@ position: 10
 # Properties
 
 |Property|Description|
-|----|----|
-|__RightToLeft__|Gets or sets a value indicating whether control's elements are aligned to support locales using right-to-left fonts.|
-|__PlaySound__|Gets or sets a Boolean value determining whether a sound is played when the alert's pop up is shown.|
-|__SoundToPlay__|Gets or sets the sound played when the alert's pop up is shown.|
-|__Opacity__|Gets or sets the initial opacity of the alert's pop up.|
-|__ShowOptionsButton__|Gets or sets a Boolean value determining whether the options button is shown.|
-|__ShowPinButton__|Gets or sets a Boolean value determining whether the pin button is shown.|
-|__ShowCloseButton__|Gets or sets a Boolean value determining whether the close button is shown.|
-|__IsPinned__|Gets or sets a Boolean value determining whether the alert's pop up will be pinned on the screen. If pinned, the alert's pop up will not be automatically closed upon mouse click outside its bounds or if the __AutoClose__ property is set to *true*.|
-|__CanMove__|Gets or sets a Boolean value determining whether the pop up can be moved by dragging the caption grip.|
-|__PopupAnimation__|Gets or sets a Boolean value determining whether the alert's pop up will be animated.|
-|__PopupAnimationDirection__|Gets or sets a value determining the direction of the alert's pop up animation.|
-|__PopupAnimationFrames__|Gets or sets the count of the alert's drop-down animation frames.|
-|__PopupAnimationEasing__|Gets or sets the type of the drop-down animation easing.|
-|__FadeAnimationType__|Gets or sets a value from the __FadeAnimationType__ enumerator that determines the type of fade animation performed when the alert's pop up is opened/closed|
-|__FadeAnimationSpeed__|Gets or sets the interval in milliseconds between two animation frames.|
-|__FadeAnimationFrames__|Gets or sets the count of animation frames for the fade animation.|
-|__AutoClose__|Gets or sets a Boolean value determining whether the alert's pop up is automatically closed.|
-|__AutoCloseDelay__|Gets or sets the amount of time in seconds after which the alert will be automatically closed.|
-|__ScreenPosition__|Gets or sets the position of the alert pop up on the working area of the active screen.|
-|__FixedSize__|Gets or sets the fixed size for the alert's pop up. If the value is Size.Empty, the size of the pop up is dynamically adjusted according to its content.|
-|__ContentImage__|Gets or sets the content image of the alert.|
-|__ContentText__|Gets or sets the alert's content text. This text can be HTML formatted for better appearance.|
-|__CaptionText__|Gets or sets the alert's caption text.|
-|__ButtonItems__|Gets the collection that holds the button items added to the alert.|
-|__OptionItems__|Gets the collection that holds the option items added to the alert's options button.|
-|__Popup__|Gets an instance of the __DesktopAlertPopup__ that represents the pop up of the desktop alert.|
-
+|------|------|
+|__AutoSize__|Gets or sets whether the edit control is auto-sized|
+|__PlaceHolder__|Gets or sets the character used as the placeholder in a masked editor|
+|__Mask__|Gets or sets a mask expression|
+|__MaskType__|Gets or sets the mask type|
+|__Value__|Gets or sets the value associated to the mask edit box|
+|__TextMaskFormat__|Gets or sets a value that determines whether literals and prompt characters are included in the formatted string|
+|__UseGenericBorderPaint__|Gets or sets a value indicating whether to show the bottom part of characters, clipped due to font name or size particularities|
+|__TextAlign__|Gets or sets the horizontal alignment of the text|
+|__ShortcutsEnabled__|Gets or sets a value indicating whether the defined shortcuts are enabled|
+|__SelectionStart__|Gets or sets the starting point of text selected in the text box|
+|__Modified__|Gets or sets a value indicating whether the RadTextBox control has been modified by the user since the control was created or since its contents were last set|
+|__Multiline__|Gets or sets a value indicating whether this is a multiline TextBox control|
+|__NullText__|Gets or sets the text that is displayed when the ComboBox contains a null reference|
+|__PasswordChar__|Gets or sets the character used to mask characters of a password in a single-line TextBox control|
+|__ReadOnly__|Gets or sets a value indicating whether the contents of the TextBox control can be changed|
+|__ScrollBars__|Gets or sets which scroll bars should appear in a multiline TextBox control|
+|__SelectedText__|Gets or sets a value indicating the currently selected text in the control|
+|__SelectionLength__|Gets or sets the number of characters selected in the text box|
+|__HideSelection__|Gets or sets a value indicating whether the selected text remains highlighted even when the RadTextBox has lost the focus|
+|__Lines__|Gets or sets the lines of text in multiline configurations|
+|__AcceptsReturn__|Gets or sets a value indicating whether pressing ENTER in a multiline RadTextBox control creates a new line of text in the control or activates the default button for the form|
+|__AcceptsTab__|Gets or sets a value indicating whether pressing the TAB key in a multiline text box control types a TAB character in the control instead of moving the focus to the next control in the tab order|
+|__CharacterCasing__|Gets or sets a value indicating whether the RadTextBox control modifies the case of characters as they are typed|
+|__Culture__|Gets or sets the current culture associated to the RadMasedkEditBox|
 
 # Methods
 
 |Method|Description|
-|----|----|
-|__Show__|Displays the alert pop up on the screen at the specified location.|
-|__Hide__|Hides the alert pop up from the screen.|
-|__ResetLocationModifier__|Resets the explicit location modifier. In other words, if the user has modified the location of the alert's pop up, the __DesktopAlertManager__ will not consider it when rearranging the visible alerts. This method will reset the explicit location modifier and thus the __DesktopAlertManager__ will continue managing the location of the alert according to its location settings.|
+|------|------|
+|__Clear__|Clears all text from the text box control and Value|
+|__ClearUndo__|Clears information about the most recent operation from the undo buffer of the text box|
+|__SelectAll__|selects the whole text|
 
 # Events
 
 |Event|Description|
-|----|----|
-|__Opening__|Fires when the alert's pop up is about to be opened. The opening action can be canceled by modifying the arguments of this event.|
-|__Opened__|Fires when the alert's pop up was opened.|
-|__Closing__|Fires when the alert's pop up is about to be closed. The closing action can be canceled by modifying the arguments of this event.|
-|__Closed__|Fires when the alert's pop up was closed.|
+|------|------|
+|__ValueChanged__|Occurs when the editing value has been changed|
+|__ValueChanging__|Occurs when the editing value is changing|
+|__KeyDown__|Occurs when the RadItem has focus and the user pressees a key down|
+|__KeyPress__|Occurs when the RadItem has focus and the user pressees a key|
+|__KeyUp__|Occurs when the RadItem has focus and the user releases the pressed key up|
+|__MultilineChanged__|Occurs when the value of the Multiline property has changed|
+|__TextAlignChanged__|Occurs when the value of the TextAlign property has changed|
 
+# See Also
 
-# See Also 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadDesktopAlert.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/Methods_T_Telerik_WinControls_UI_RadDesktopAlert.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/Events_T_Telerik_WinControls_UI_RadDesktopAlert.htm)
+* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radmaskededitbox.htm)
+* [Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_ui_radmaskededitbox.htm)
+* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radmaskededitbox.htm)
 
