@@ -14,18 +14,45 @@ The BindingNavigator control in your application will be converted to [RadBindin
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
-
+|AllowItemReorder |Removed||
+|AllowMerge |Removed||
+|CanOverflow |Removed||
+|GripMargin |Removed||
+|GripStyle|Removed||
+|RenderMode |Removed||
+|Stretch |Removed||
+|TextDirection |Produces Error||
+|AddNewItem |Replaced|BindingNavigatorElement.AddNewButton|
+|CountItem |Replaced|BindingNavigatorElement.PageLabel|
+|DeleteItem |Replaced|BindingNavigatorElement.DeleteButton|
+|MoveFirstItem |Replaced|BindingNavigatorElement.FirstButton|
+|MoveLastItem |Replaced|BindingNavigatorElement.LastButton|
+|MoveNextItem |Replaced|BindingNavigatorElement.NextButto|
+|MovePreviousItem |Replaced|BindingNavigatorElement.PreviousButton|
+|PositionItem |Replaced|BindingNavigatorElement.CurrentNumberTextBox|
 
 |Events|Action|RadControls Equivalent|
 |---|---|---|
-
+|BeginDrag|Produces Error||
+|EndDrag |Produces Error||
+|ItemAdded |Produces Error||
+|ItemClicked |Produces Error||
+|ItemRemoved |Produces Error||
+|LayoutCompleted |Produces Error||
+|LayoutStyleChanged |Produces Error||
+|PaintGrip |Produces Error||
+|RefreshItems |Produces Error||
+|RendererChanged|Produces Error||
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
-
+|AddStandardItems()|Produces Error||
+|GetItemAt()|Produces Error||
 
 Standard BindingNavigator and our RadBindingNaigator have different mapping of items' name. That's why the navigation will not work after the conversion process is finished. In order to resolve the issue, you need to change the __Name__ properties of each item manually in the `Designer` file. Each name should starts with BindingNavigator's name plus item's name. For example: 
 `this.bindingNavigator1.Name = "bindingNavigator1";`
+
+In addition, if there are other items added to the navigator, the will be converted as well, their properties, events and methods are listed [here]({%slug winforms/winforms-converter/supported-controls/toolstrip%}).
 
 
 |Standard Binding Navigator|Telerik RadBindingNavigator|

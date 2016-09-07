@@ -14,9 +14,41 @@ The CheckedListBox control in your application will be converted to [RadCheckedL
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
+|BorderStyle|Removed||
+|CheckOnClick|Replaced|CheckOnClickMode|
+|ColumnWidth|Produces Error||
+|FormatString|Produces Error||
+|FormattingEnabled|Removed||
+|HorizontalExtent|Removed||
+|HorizontalScrollbar|Replaced|HorizontalScrollState |
+|IntegralHeight|Removed||
+|MultiColumn|Produces Error||
+|ThreeDCheckBoxes|Removed||
+|Sorted|Produces Error||
+|ScrollAlwaysVisible
+|Replaced|VerticalScrollState|
+|UseTabStops|Removed||
 
 |Events|Action|RadControls Equivalent|
 |---|---|---|
+|Format|Produces Error||
+|FormatStringChanged|Produces Error||
+|FormattingEnabledChanged|Produces Error||
+|ItemCheck|Replaced|ItemCheckedChanged|
+|SelectedValueChanged|Produces Error||
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
+|ClearSelected()|Replaced|SelectedItems.Clear()|
+|FindString(string s)|Produces Error||
+|FindStringExact(string s|Produces Error||
+|IndexFromPoint(Point p)|Produces Error||
+|GetItemChecked(int index)|Produces Error||
+|GetItemCheckState(int index)|Produces Error|Items[2].CheckState|
+|GetSelected(int index)|Produces Error||
+|GetItemText(object item)|Produces Error||
+|GetItemHeight(int index)|Produces Error||
+|GetItemRectangle(int index)|Produces Error||
+|SetItemChecked(int index, bool value)|Produces Error||
+|SetItemCheckState(int index, CheckState value)|Produces Error||
+|SetSelected(int index, bool value)|Produces Error||

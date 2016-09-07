@@ -12,8 +12,10 @@ position: 0
 
 This article lists the .NET controls which can be converted to their UI for WinForms counterparts. It shows what actions are being taken for each control type.
 
+1. [BindingNavigator]({%slug winforms/winforms-converter/supported-controls/bindingnavigator%})
 1. [Button]({%slug winforms/winforms-converter/supported-controls/button%})
 1. [CheckBox]({%slug winforms/winforms-converter/supported-controls/checkbox%})
+2. [CheckedListBox]({%slug winforms/winforms-converter/supported-controls/checkedlistbox%})
 1. [ComboBox]({%slug winforms/winforms-converter/supported-controls/combobox%})
 2. [DataGridView]({%slug winforms/winforms-converter/supported-controls/datagridview%})
 1. [DateTimePicker]({%slug winforms/winforms-converter/supported-controls/datetimepicker%})
