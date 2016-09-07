@@ -578,6 +578,12 @@ navigation:
     map/providers/bingmap:
         title: Bing Map
         position: 1
+    map/features:
+        title: Features
+        position: 4
+    map/features/layers:
+        title: Layers
+        position: 0
     menus:
         title: Menus
         position: 290
