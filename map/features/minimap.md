@@ -1,5 +1,5 @@
 ---
-title: Minimap
+title: MiniMap
 page_title: Minimap | RadMap
 description: Layers provide an additional means to present meaningful information to the end user.
 slug: winforms/map/features/minimap
@@ -8,4 +8,117 @@ published: True
 position: 1
 ---
 
-# Minimap
+# MiniMap
+
+The mini map feature is responsible for displaying a certain part of the wordl at a different zoom level compared the main map control and thus allowing easier navigation. It is enabled by default and it is painted in the top right corner of the viewport.
+
+>caption Figure 1: MiniMap
+
+![map features minimap 001](images/map-features-minimap001.png)
+
+The __RadMap.ShowMiniMap__ property is responsible for showing or hiding the min map control.
+
+#### Hide MiniMap
+
+{{source=..\SamplesCS\Map\MapLayers.cs region=HideMiniMap}} 
+{{source=..\SamplesVB\Map\MapLayers.vb region=HideMiniMap}}
+````C#
+this.radMap1.ShowMiniMap = false;
+
+````
+````VB.NET
+Me.radMap1.ShowMiniMap = False
+
+````
+
+
+
+{{endregion}}
+
+The mini map can be also programmatically expanded or collapsed via its __IsCollapsed__ property or the __Expand__ and __Collapse__ methods.
+
+#### Expand/Collapse
+
+{{source=..\SamplesCS\Map\MapLayers.cs region=ExpandCollapse}} 
+{{source=..\SamplesVB\Map\MapLayers.vb region=ExpandCollapse}}
+````C#
+if (this.radMap1.MapElement.MiniMapElement.IsCollapsed)
+{
+    this.radMap1.MapElement.MiniMapElement.Expand();
+}
+else
+{
+    this.radMap1.MapElement.MiniMapElement.Collapse();
+}
+
+````
+````VB.NET
+If Me.radMap1.MapElement.MiniMapElement.IsCollapsed Then
+    Me.radMap1.MapElement.MiniMapElement.Expand()
+Else
+    Me.radMap1.MapElement.MiniMapElement.Collapse()
+End If
+
+````
+
+
+
+{{endregion}}
+
+
+# MiniMap Modes
+
+The mini map behavior can be altered by setting the __MiniMapMode__ property.
+
+* __MiniMapMode__.*WholeWorld*: The mini map shows the whole world map at zoom level 1.
+
+>caption Figure 2: WholeWorld
+
+![map features minimap 002](images/map-features-minimap002.gif)
+
+* __MiniMapMode__.*StaticZoom*: The mini map will show a fixed zoom level at all times. Use the BringIntoView method to position the map at the required location and zoom level.
+
+>caption Figure 3: StaticZoom 
+
+![map features minimap 003](images/map-features-minimap003.gif)
+
+* __MiniMapMode__.*OffsetZoom*: The mini map will show a dynamic zoom level offset from the main map view. Use the __ZoomLevelOffset__ property to define the offset.
+
+>caption Figure 4: OffsetZoom 
+
+![map features minimap 004](images/map-features-minimap003.gif)
+
+The __MiniMapElement__ can be easily accessed via the __RadMap.MapElement__ object. The table below lists the exposed properties and methods.
+
+# Properties
+
+|Property|Description|
+|------|------|
+|__MapElement__|Gets the map element.|
+|__MiniMapMode__|Gets or sets the mini map mode.|
+|__ZoomLevel__|Gets or sets the current zoom level.|
+|__ZoomOffset__|Gets or sets the zoom offset. This property is used when the MiniMapMode is set to OffsetZoom.|
+|__ToggleMiniMapButton__|Gets the toggle mini map button.|
+|__MiniMapSize__|Gets or sets the size of the mini map.|
+|__IsCollapsed__|Gets or sets a value indicating whether this instance is collapsed.|
+|__ViewportControlBackColor__|Gets or sets the back color of the view port control.|
+|__ViewportControlBorderColor__|Gets or sets the border color of the view port control.|
+
+# Methods
+
+|Method|Description|
+|------|------|
+|__Subscribe__|Subscribes to the map viewport events that affect the mini map.|
+|__Unsubscribe__|Unsubscribes to the map viewport events that affect the mini map.|
+|__SetMapElement__|Sets the map element.|
+|__SetMiniMapMode__|Sets the mini map mode.|
+|__OnProviderInitializationComplete__|Called when a map provider is initialized.|
+|__OnMapElementViewportChanged__|Handles the MapElement ViewportChanged event.|
+|__Collapse__|Collapses the mini map.|
+|__Expand__|Expands the mini map.|
+|__PaintWholeWorldMiniMap__|Paints the mini map when the mode is set to WholeWorld.|
+|__PaintStaticMiniMap__|Paints the mini map when the mode is set to StaticZoom.|
+|__PaintDynamicMiniMap__|Paints the mini map when the mode is set to OffsetZoom.|
+|__DrawViewportControlRectangle__|Draws the viewport control rectangle.|
+
+
