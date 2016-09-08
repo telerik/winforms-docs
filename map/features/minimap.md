@@ -76,7 +76,7 @@ The mini map behavior can be altered by setting the __MiniMapMode__ property.
 
 ![map features minimap 002](images/map-features-minimap002.gif)
 
-* __MiniMapMode__.*StaticZoom*: The mini map will show a fixed zoom level at all times. Use the BringIntoView method to position the map at the required location and zoom level.
+* __MiniMapMode__.*StaticZoom*: The mini map will show a fixed zoom level at all times. Use the __BringIntoView __ method to position the map at the required location and zoom level.
 
 >caption Figure 3: StaticZoom 
 
@@ -108,17 +108,6 @@ The __MiniMapElement__ can be easily accessed via the __RadMap.MapElement__ obje
 
 |Method|Description|
 |------|------|
-|__Subscribe__|Subscribes to the map viewport events that affect the mini map.|
-|__Unsubscribe__|Unsubscribes to the map viewport events that affect the mini map.|
-|__SetMapElement__|Sets the map element.|
-|__SetMiniMapMode__|Sets the mini map mode.|
-|__OnProviderInitializationComplete__|Called when a map provider is initialized.|
-|__OnMapElementViewportChanged__|Handles the MapElement ViewportChanged event.|
 |__Collapse__|Collapses the mini map.|
 |__Expand__|Expands the mini map.|
-|__PaintWholeWorldMiniMap__|Paints the mini map when the mode is set to WholeWorld.|
-|__PaintStaticMiniMap__|Paints the mini map when the mode is set to StaticZoom.|
-|__PaintDynamicMiniMap__|Paints the mini map when the mode is set to OffsetZoom.|
-|__DrawViewportControlRectangle__|Draws the viewport control rectangle.|
-
 
