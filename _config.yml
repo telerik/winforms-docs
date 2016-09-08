@@ -575,8 +575,8 @@ navigation:
     map/providers:
         title: Providers
         position: 3
-    map/providers/bingmap:
-        title: Bing Map
+    map/providers/bingmaps:
+        title: Bing Maps
         position: 1
     map/features:
         title: Features
