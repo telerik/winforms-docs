@@ -10,7 +10,7 @@ position: 2
 
 # OpenStreetMapProvider
 
-__RadMap__ can visualize data from the [OpenStreetMaps](http://wiki.openstreetmap.org/wiki/API) REST services.  It supports data caching to a local folder, which can be enabled by setting a new __LocalFileCacheProvider__ to the OpenStreetMapProvider.__CacheProvider__ property.
+__RadMap__ can visualize data from the [OpenStreetMaps](http://wiki.openstreetmap.org/wiki/API) REST services.  You can enable tile caching to a local folder setting a new __LocalFileCacheProvider__ to the OpenStreetMapProvider.__CacheProvider__ property.
 
 >caption Figure 1: OpenStreetMapProvider 
 
