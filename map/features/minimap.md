@@ -10,7 +10,7 @@ position: 1
 
 # MiniMap
 
-The mini map feature is responsible for displaying a certain part of the wordl at a different zoom level compared the main map control and thus allowing easier navigation. It is enabled by default and it is painted in the top right corner of the viewport.
+The mini map feature is responsible for displaying a certain part of the wordl at a different zoom level compared to the main map control and thus allowing easier navigation. It is enabled by default and it is painted in the top right corner of the viewport.
 
 >caption Figure 1: MiniMap
 
@@ -70,7 +70,7 @@ End If
 
 The mini map behavior can be altered by setting the __MiniMapMode__ property.
 
-* __MiniMapMode__.*WholeWorld*: The mini map shows the whole world map at zoom level 1.
+* __MiniMapMode__.*WholeWorld*: The mini map shows the whole world map.
 
 >caption Figure 2: WholeWorld
 
@@ -86,7 +86,7 @@ The mini map behavior can be altered by setting the __MiniMapMode__ property.
 
 >caption Figure 4: OffsetZoom 
 
-![map features minimap 004](images/map-features-minimap003.gif)
+![map features minimap 004](images/map-features-minimap004.gif)
 
 The __MiniMapElement__ can be easily accessed via the __RadMap.MapElement__ object. The table below lists the exposed properties and methods.
 
