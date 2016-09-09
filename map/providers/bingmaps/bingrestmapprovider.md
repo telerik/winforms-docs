@@ -10,13 +10,15 @@ position: 0
 
 # BingRestMapProvider
 
-__RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsportal.com/) REST service. It supports data caching to a local folder, which can be enabled by setting a new __LocalFileCacheProvider__ to the BingRestMapProvider.__CacheProvider__ property.
+__RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsportal.com/) REST service. You can enable tile caching to a local folder by setting a new __LocalFileCacheProvider__ to the BingRestMapProvider.__CacheProvider__ property.
 
 >caption Figure 1: BingRestMapProvider 
 
 ![map-bingrestmapprovider 001](images/map-bingrestmapprovider001.png)
 
->note If you use __RadMap__ in .Net Framework 2.0 and you don't have installation of the Telerik UI for WinForms suite on the current machine, it is necessary to add the Newtonsoft.Json assembly which can be found in the \Bin folder of the *Telerik_UI_For_WinForms_[version]_Dev_dlls.zip*.
+>note You must provide a Bing Maps Key to the provider for it to work. To get your free Bing Maps Key, please refer to the following link: [Getting a Bing Maps Key](https://msdn.microsoft.com/en-us/library/ff428642.aspx).
+
+>note If you use __RadMap__ with .Net Framework 2.0 and you don't have an installation of the Telerik UI for WinForms suite on the current machine, it is necessary to add a reference to the Newtonsoft.Json assembly which can be found in the \Bin folder of the *Telerik_UI_For_WinForms_[version]_Dev_dlls.zip*. If you are using .Net Framework 4.0 this is not requried.
 
 #### Using BingRestMapProvider
 
@@ -53,5 +55,3 @@ Me.radMap1.Providers.Add(bingProvider)
 ````
 
 {{endregion}} 
-
->note To get your Bing Maps Key, please refer to the following link: [Getting a Bing Maps Key](https://msdn.microsoft.com/en-us/library/ff428642.aspx).
