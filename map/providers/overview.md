@@ -10,7 +10,7 @@ position: 0
 
 # Providers Overview
 
-The __RadMap__ control doesn't display a map on itself, it needs a map provider from which to consume the required data. Currently, __RadMap__ supports the following providers:
+The __RadMap__ control needs a provider of imagery data in order to display a map. Currently, __RadMap__ supports the following providers:
 
 * [BingRestMapProvider]({%slug winforms/map/providers/bingrestmapprovider%})
 * [OpenStreetMapProvider]({%slug winforms/map/providers/openstreetmapprovider%})
