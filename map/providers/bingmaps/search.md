@@ -3,7 +3,7 @@ title: Search
 page_title: Search | RadMap
 description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
 slug: winforms/map/providers/search
-tags: map, providers
+tags: map, providers, search
 published: True
 position: 2 
 ---

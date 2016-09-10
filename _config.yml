@@ -578,6 +578,9 @@ navigation:
     map/providers/bingmaps:
         title: Bing Maps
         position: 1
+    map/providers/bingmaps/elevation:
+        title: Elevation
+        position: 4
     map/features:
         title: Features
         position: 4
