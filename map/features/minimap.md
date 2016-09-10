@@ -1,7 +1,7 @@
 ---
 title: MiniMap
 page_title: Minimap | RadMap
-description: Layers provide an additional means to present meaningful information to the end user.
+description: The mini map feature is responsible for displaying a certain part of the world at a different zoom level compared to the main map control and thus allowing easier navigation.
 slug: winforms/map/features/minimap
 tags: map, features, minimap
 published: True
