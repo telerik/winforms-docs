@@ -55,3 +55,50 @@ Me.radMap1.Providers.Add(bingProvider)
 ````
 
 {{endregion}} 
+
+# Properties
+
+|Property|Description|
+|----|----|
+|__BingKey__|Gets or sets the Bing key.|
+|__UseSession__|Gets or sets a value indicating whether to use session key.|
+|__SessionId__|Gets the session identifier.|
+|__ImagerySet__|Gets or sets the imagery set.|
+|__Initializing__|Gets or sets a value indicating whether this __BingRestMapProvider__ is currently in the initialization process.|
+|__Initialized__|Gets or sets a value indicating whether this __BingRestMapProvider__ is initialized.|
+|__MaxZoomLevel__|Gets or sets the maximum zoom level.|
+|__MinZoomLevel__|Gets or sets the minimum zoom level.|
+|__TileSize__|Gets the tile size.|
+|__CacheProvider__|Gets or sets the provider used for data caching.|
+|__EnableCaching__|Gets or set a value whether the caching is enabled.|
+|__TileDownloader__|Gets or sets the tile downloader.|
+
+# Methods 
+
+|Method|Description|
+|----|----|
+|__Initialize__|Initializes this provider.|
+|__GetTile__|Gets the tile uri.|
+|__GetTileImage__|Gets the tile image.|
+|__CalculateRouteAsync__|Calculates the route asynchronously.|
+|__SearchAsync__|Performs search request asynchronously.|
+|__CalculateElevationAsync__|Calculates the elevation asynchronously.|
+|__GetSupportedViews__|Gets the supported views. BingRestMapProvider supports *Aerial* and *Road* MapViewInfo.|
+|__SetView__|Sets the view in the BingRestMapProvider.|
+
+# Events
+
+|Event|Description|
+|----|----|
+|__InitializationComplete__|Fires when the initialization is completed.|
+|__InitializationError__|Fires when an error during the initialization occurs.|
+|__ProviderUpdated__|Fires when the provider has been updated, e.g. when a tile is downloaded.|
+|__CalculateRouteCompleted__|Fires when the route calculation is completed.|
+|__CalculateRouteError__|Fires when an error occurs during route calculating.|
+|__SearchCompleted__|Fires when the search request has completed.|
+|__SearchError__|Fires when an error|
+|__CalculateElevationCompleted__|Fires when the elevation calculations is completed.|
+|__CalculateElevationError__|Fire when an error occurs duriong elevation calculating.|
+
+
+
