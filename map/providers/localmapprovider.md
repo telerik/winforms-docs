@@ -18,8 +18,8 @@ __RadMap__ can visualize data from local image files by using a __LocalMapProvid
 
 #### Using LocalMapProvider
 
-{{source=..\SamplesCS\Map\MapGettingStarted.cs region=SetupLocalMapProvider}} 
-{{source=..\SamplesVB\Map\MapGettingStarted.vb region=SetupLocalMapProvider}}
+{{source=..\SamplesCS\Map\MapLocalMapProvider.cs region=SetupLocalMapProvider}} 
+{{source=..\SamplesVB\Map\MapLocalMapProvider.vb region=SetupLocalMapProvider}}
 
 ````C#
 string mapFolder = @"..\..\World";
