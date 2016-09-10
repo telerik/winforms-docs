@@ -10,7 +10,7 @@ position: 1
 
 # MiniMap
 
-The mini map feature is responsible for displaying a certain part of the wordl at a different zoom level compared to the main map control and thus allowing easier navigation. It is enabled by default and it is painted in the top right corner of the viewport.
+The mini map feature is responsible for displaying a certain part of the world at a different zoom level compared to the main map control and thus allowing easier navigation. It is enabled by default and it is painted in the top right corner of the view port.
 
 >caption Figure 1: MiniMap
 
