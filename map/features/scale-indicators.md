@@ -12,7 +12,7 @@ position: 3
 
 The scale indicators use two measures - imperial and metric. Depending on the scale of the view port the indicators have two modes showing miles and kilometers or feet and meters.
 
->caption Figure 1: Big Scale
+>caption Figure 1: Large Scale
 
 ![map features scale indicators 001](images/map-features-scale-indicators001.png)
 
