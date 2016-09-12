@@ -24,7 +24,7 @@ The scale indicators use two measures - imperial and metric. Depending on the sc
 
 The scaling indicators expose several properties allowing modification of the way the element is painted.
 
->caption Figure 2: Custom Text, Color and Bar Height 
+>caption Figure 3: Custom Text, Color and Bar Height 
 
 ![map features scale indicators 003](images/map-features-scale-indicators003.png)
 
@@ -56,3 +56,11 @@ Me.RadMap1.MapElement.ScaleIndicatorElement.FeetText = " фт"
 
 
 {{endregion}}
+
+# See Also
+
+* [Layers Overview]({%slug winforms/map/features/layers/overview%})
+* [Mini Map]({%slug winforms/map/features/minimap%})
+* [Navigation Controls]({%slug winforms/map/features/navigation-controls%})
+* [Legend]({%slug winforms/map/features/legend%})
+* [Pan and Zoom]({%slug winforms/map/features/pan-and-zoom%})

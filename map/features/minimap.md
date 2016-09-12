@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# MiniMap
+# Mini Map
 
 The mini map feature is responsible for displaying a certain part of the world at a different zoom level compared to the main map control and thus allowing easier navigation. It is enabled by default and it is painted in the top right corner of the view port.
 
@@ -18,7 +18,7 @@ The mini map feature is responsible for displaying a certain part of the world a
 
 The RadMap.__ShowMiniMap__ property is responsible for showing or hiding the mini map control.
 
-#### Hide MiniMap
+#### Hide Mini Map
 
 {{source=..\SamplesCS\Map\MapLayers.cs region=HideMiniMap}} 
 {{source=..\SamplesVB\Map\MapLayers.vb region=HideMiniMap}}
@@ -66,7 +66,7 @@ End If
 {{endregion}}
 
 
-# MiniMap Modes
+# Mini Map Modes
 
 The mini map behavior can be altered by setting the __MiniMapMode__ property.
 
@@ -111,3 +111,10 @@ The __MiniMapElement__ can be easily accessed via the RadMap.__MapElement__ obje
 |__Collapse__|Collapses the mini map.|
 |__Expand__|Expands the mini map.|
 
+# See Also
+
+* [Layers Overview]({%slug winforms/map/features/layers/overview%})
+* [Navigation Controls]({%slug winforms/map/features/navigation-controls%})
+* [Scale Indicators]({%slug winforms/map/features/scale-indicators%})
+* [Legend]({%slug winforms/map/features/legend%})
+* [Pan and Zoom]({%slug winforms/map/features/pan-and-zoom%})

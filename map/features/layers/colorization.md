@@ -142,7 +142,7 @@ End Sub
 
 # Property Colorization
 
->caption Figure 2: Property Colorization
+>caption Figure 3: Property Colorization
 
 The __PropertyColorizationStrategy__ evaluates the values of a certain property defined in the shape file. Depending on the result the engine assigns one of the predefined colors.
 
@@ -188,7 +188,7 @@ End Sub
 
 {{endregion}}
 
-Here is the required code to setup the provider and read the [sample shape file](http://www.telerik.com/docs/default-source/ui-for-winforms/world_data.zip?sfvrsn=2) used in the example above. 
+Here is the required code to setup the provider and read the [sample shape file](http://www.telerik.com/docs/default-source/ui-for-winforms/world_data.zip?sfvrsn=2) used in the examples above. 
 
 #### Setting up EmptyMapProvider
 
@@ -310,3 +310,10 @@ End Sub
 
 
 {{endregion}}
+
+# See Also
+
+* [Layers Overview]({%slug winforms/map/features/layers/overview%})
+* [ESRI Shapefile Reader]({%slug winforms/map/file-readers/esri-shapefile-reader%})
+* [Clusterization]({%slug winforms/map/features/layers/clusterization%})
+ 

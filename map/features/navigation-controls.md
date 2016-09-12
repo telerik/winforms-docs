@@ -72,7 +72,7 @@ The location of the __MapNavigationBarElement__ is controlled by the RadMap.MapE
 
 The navigation control allows an easy selection of the currently displayed view.
 
->note The views which will be displayed in the drop-down will vary depending on the chosen map provider: [Getting a Bing Maps Key](https://msdn.microsoft.com/en-us/library/ff428642.aspx).
+>note The views which will be displayed in the drop-down will vary depending on the chosen map provider: [Providers Overview]({%slug winforms/map/providers%}).
 
 >caption Figure 7: BingRestMapProvider Views
 
@@ -97,4 +97,11 @@ The __MapNavigationBarElement__ can be accessed through the __RadMap.MapElement.
 |__ZoomOutButton__|Gets the zoom out button.|
 |__ViewButton__|Gets the view button.|
 |__MapNavigationElement__|Gets the map navigation element.|
- 
+
+# See Also
+
+* [Layers Overview]({%slug winforms/map/features/layers/overview%})
+* [Mini Map]({%slug winforms/map/features/minimap%})
+* [Scale Indicators]({%slug winforms/map/features/scale-indicators%})
+* [Legend]({%slug winforms/map/features/legend%})
+* [Pan and Zoom]({%slug winforms/map/features/pan-and-zoom%})

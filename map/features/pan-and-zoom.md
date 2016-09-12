@@ -1,8 +1,8 @@
 ---
 title: Pan and Zoom
 page_title: Pan and Zoom | RadMap
-description: Layers provide an additional means to present meaningful information to the end user.
-slug: winforms/map/features/pan-and-zoo
+description: RadMap can be panned and zoomed both from the UI as well as programmatically.
+slug: winforms/map/features/pan-and-zoom
 tags: map, features, pan, zoom
 published: True
 position: 5
@@ -42,3 +42,11 @@ Me.RadMap1.Pan(New SizeL(200, 200))
 
 
 {{endregion}}
+
+# See Also
+
+* [Layers Overview]({%slug winforms/map/features/layers/overview%})
+* [Mini Map]({%slug winforms/map/features/minimap%})
+* [Navigation Controls]({%slug winforms/map/features/navigation-controls%})
+* [Scale Indicators]({%slug winforms/map/features/scale-indicators%})
+* [Legend]({%slug winforms/map/features/legend%})
