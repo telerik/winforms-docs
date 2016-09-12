@@ -22,6 +22,7 @@ ElevationType.*List* __ElevationRequest__ gets elevations for latitude and longi
 {{source=..\SamplesVB\Map\BingProvider.vb region=ListElevationRequest}}
 
 ````C#
+        
 public void SetupListElevationRequest()
 {
     //add pins to the map 
@@ -40,7 +41,7 @@ public void SetupListElevationRequest()
     this.radMap1.Layers["Pins"].Add(pin1);
     this.radMap1.Layers["Pins"].Add(pin2);
     this.radMap1.Layers["Pins"].Add(pin3);
-        
+    
     ElevationRequest request = new ElevationRequest();
     request.ElevationType = ElevationType.List;
     request.Points = new List<Telerik.WinControls.UI.Map.PointG>()
@@ -79,16 +80,13 @@ Public Sub SetupListElevationRequest()
     Dim pin1 As New MapPin(point1)
     Dim pin2 As New MapPin(point2)
     Dim pin3 As New MapPin(point3)
-
     Dim pinsLayer As New MapLayer("Pins")
     Me.radMap1.Layers.Add(pinsLayer)
-
     Dim calloutsLayer As New MapLayer("Callouts")
     Me.radMap1.Layers.Add(calloutsLayer)
     Me.radMap1.Layers("Pins").Add(pin1)
     Me.radMap1.Layers("Pins").Add(pin2)
     Me.radMap1.Layers("Pins").Add(pin3)
-
     Dim request As New ElevationRequest()
     request.ElevationType = ElevationType.List
     request.Points = New List(Of Telerik.WinControls.UI.Map.PointG)() From { _
@@ -100,7 +98,6 @@ Public Sub SetupListElevationRequest()
     AddHandler bingProvider.CalculateElevationCompleted, AddressOf BingProvider_CalculateElevationCompleted
     bingProvider.CalculateElevationAsync(request)
 End Sub
-
 Private Sub BingProvider_CalculateElevationCompleted(sender As Object, e As ElevationCompletedEventArgs)
     For i As Integer = 0 To Me.radMap1.Layers("Pins").Overlays.Count - 1
         Dim pin As MapPin = TryCast(Me.radMap1.Layers("Pins").Overlays(i), MapPin)

@@ -26,19 +26,20 @@ To read your data you have to use a __KmlReader__.
 {{source=..\SamplesVB\Map\MapFileReaders.vb region=SetupKMLReader}}
 
 ````C#
-OpenStreetMapProvider osmProvider = new OpenStreetMapProvider();  
-this.radMap1.MapElement.Providers.Add(osmProvider); 
+        
+OpenStreetMapProvider osmProvider = new OpenStreetMapProvider();
+this.radMap1.MapElement.Providers.Add(osmProvider);
 this.radMap1.Layers.Clear();
 this.radMap1.Layers.Add(new MapLayer("Capitals"));
 using (FileStream seatsStream = new FileStream(@"..\..\Resources\cb_2015_us_county_5m.kml", FileMode.Open, FileAccess.Read))
 {
-    List<MapVisualElement> elements = KmlReader.Read(seatsStream);
-    foreach (var item in elements)
-    {
-        item.BorderWidth = 1;
-        item.BorderColor = Color.Red;
-    }
-    this.radMap1.Layers["Capitals"].AddRange(elements);
+List<MapVisualElement> elements = KmlReader.Read(seatsStream);
+foreach (MapVisualElement item in elements)
+{
+item.BorderWidth = 1;
+item.BorderColor = Color.Red;
+}
+        this.radMap1.Layers["Capitals"].AddRange(elements);
 }
 
 ````

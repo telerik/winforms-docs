@@ -27,7 +27,7 @@ this.radMap1.ShowMiniMap = false;
 
 ````
 ````VB.NET
-Me.radMap1.ShowMiniMap = False
+Me.RadMap1.ShowMiniMap = False
 
 ````
 
@@ -53,10 +53,10 @@ else
 
 ````
 ````VB.NET
-If Me.radMap1.MapElement.MiniMapElement.IsCollapsed Then
-    Me.radMap1.MapElement.MiniMapElement.Expand()
+If Me.RadMap1.MapElement.MiniMapElement.IsCollapsed Then
+    Me.RadMap1.MapElement.MiniMapElement.Expand()
 Else
-    Me.radMap1.MapElement.MiniMapElement.Collapse()
+    Me.RadMap1.MapElement.MiniMapElement.Collapse()
 End If
 
 ````

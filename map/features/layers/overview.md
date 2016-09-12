@@ -78,9 +78,9 @@ private void SetupData()
     element.Text = "Boston";
     element.BackColor = Color.Blue;
     this.radMap1.Layers["Eastern"].Add(element);
-    MapLabel westernLabel = new MapLabel(new PointG(36.251282d, -111.593335d), "Western") 
+    MapLabel westernLabel = new MapLabel(new PointG(36.251282d, -111.593335d), "Western")
     {
-        BackColor = Color.FromArgb(122, 255, 0, 0) 
+        BackColor = Color.FromArgb(122, 255, 0, 0)
     };
     MapLabel easternLabel = new MapLabel(new PointG(38.790412d, -81.000594d), "Eastern")
     {

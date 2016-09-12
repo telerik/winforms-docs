@@ -22,6 +22,7 @@ ElevationType.*Polyline* __ElevationRequest__ gets elevations at equally-spaced 
 {{source=..\SamplesVB\Map\BingProvider.vb region=PolylineElevationRequest}}
 
 ````C#
+        
 public void SetupPolylineElevationRequest()
 {
     //add pins to the map 
@@ -54,7 +55,7 @@ public void SetupPolylineElevationRequest()
     bingProvider.CalculateElevationCompleted += BingProviderPolyline_CalculateElevationCompleted;
     bingProvider.CalculateElevationAsync(request);
 }
-
+        
 private void BingProviderPolyline_CalculateElevationCompleted(object sender, ElevationCompletedEventArgs e)
 {
     List<Telerik.WinControls.UI.Map.PointG> points = new List<Telerik.WinControls.UI.Map.PointG>();
@@ -68,13 +69,12 @@ private void BingProviderPolyline_CalculateElevationCompleted(object sender, Ele
             points.Add(pin.Location);
         }
     }
-
     this.radMap1.Layers["Pins"].Clear();
     
     MapPolyline polyline = new MapPolyline(points);
     this.radMap1.Layers["Callouts"].Add(polyline);
-
-    List<Telerik.WinControls.UI.Map.PointG> p = this.CalculateEquidistantPointsAlongPolyline(polyline, 
+        
+    List<Telerik.WinControls.UI.Map.PointG> p = this.CalculateEquidistantPointsAlongPolyline(polyline,
         this.radMap1.MapElement.ZoomLevel, e.Elevations[0].Elevations.Length);
     
     for (int i = 0; i < p.Count; i++)
@@ -88,7 +88,7 @@ private void BingProviderPolyline_CalculateElevationCompleted(object sender, Ele
         this.radMap1.Layers["Callouts"].Add(callout);
     }
 }
-
+        
 private List<Telerik.WinControls.UI.Map.PointG> CalculateEquidistantPointsAlongPolyline(MapPolyline polyline, int zoomLevel, int numberOfPoints)
 {
     List<Telerik.WinControls.UI.Map.PointL> points = new List<Telerik.WinControls.UI.Map.PointL>();
@@ -128,21 +128,19 @@ private List<Telerik.WinControls.UI.Map.PointG> CalculateEquidistantPointsAlongP
         double t = (double)dt / distance;
         double x = ((1d - t) * p1.X + t * p2.X);
         double y = ((1d - t) * p1.Y + t * p2.Y);
-        
-        equidistantPoints.Add(new Telerik.WinControls.UI.Map.PointL((long)Math.Round(x, MidpointRounding.AwayFromZero), 
+            
+        equidistantPoints.Add(new Telerik.WinControls.UI.Map.PointL((long)Math.Round(x, MidpointRounding.AwayFromZero),
             (long)Math.Round(y, MidpointRounding.AwayFromZero)));
         currentDistance += step;
     }
-
     equidistantPoints.Add(points[points.Count - 1]);
-
     List<Telerik.WinControls.UI.Map.PointG> result = new List<Telerik.WinControls.UI.Map.PointG>();
     
     foreach (Telerik.WinControls.UI.Map.PointL point in equidistantPoints)
     {
         result.Add(MapTileSystemHelper.PixelXYToLatLong(point, zoomLevel));
     }
-
+        
     return result;
 }
 
@@ -156,16 +154,13 @@ Public Sub SetupPolylineElevationRequest()
     Dim pin1 As New MapPin(point1)
     Dim pin2 As New MapPin(point2)
     Dim pin3 As New MapPin(point3)
-
     Dim pinsLayer As New MapLayer("Pins")
     Me.radMap1.Layers.Add(pinsLayer)
-
     Dim calloutsLayer As New MapLayer("Callouts")
     Me.radMap1.Layers.Add(calloutsLayer)
     Me.radMap1.Layers("Pins").Add(pin1)
     Me.radMap1.Layers("Pins").Add(pin2)
     Me.radMap1.Layers("Pins").Add(pin3)
-
     Dim request As New ElevationRequest()
     request.ElevationType = ElevationType.Polyline
     request.Samples = 3
@@ -178,86 +173,64 @@ Public Sub SetupPolylineElevationRequest()
     AddHandler bingProvider.CalculateElevationCompleted, AddressOf BingProviderPolyline_CalculateElevationCompleted
     bingProvider.CalculateElevationAsync(request)
 End Sub
-
 Private Sub BingProviderPolyline_CalculateElevationCompleted(sender As Object, e As ElevationCompletedEventArgs)
     Dim points As New List(Of Telerik.WinControls.UI.Map.PointG)()
-
     For i As Integer = 0 To Me.radMap1.Layers("Pins").Overlays.Count - 1
         Dim pin As MapPin = TryCast(Me.radMap1.Layers("Pins").Overlays(i), MapPin)
-
         If pin IsNot Nothing Then
             points.Add(pin.Location)
         End If
     Next
-
     Me.radMap1.Layers("Pins").Clear()
-
     Dim polyline As New MapPolyline(points)
     Me.radMap1.Layers("Callouts").Add(polyline)
-
     Dim p As List(Of Telerik.WinControls.UI.Map.PointG) = Me.CalculateEquidistantPointsAlongPolyline(polyline, _
-                                          Me.radMap1.MapElement.ZoomLevel, e.Elevations(0).Elevations.Length)
-
+                                                                                                     Me.radMap1.MapElement.ZoomLevel, e.Elevations(0).Elevations.Length)
     For i As Integer = 0 To p.Count - 1
         Dim point As New MapPoint(p(i))
         Me.radMap1.Layers("Callouts").Add(point)
-
         Dim callout As New MapCallout(point)
         callout.MaxWidth = 50
         callout.Text = e.Elevations(0).Elevations(i).ToString() + "m"
         Me.radMap1.Layers("Callouts").Add(callout)
     Next
 End Sub
-
 Private Function CalculateEquidistantPointsAlongPolyline(polyline As MapPolyline, zoomLevel As Integer, _
-                                       numberOfPoints As Integer) As List(Of Telerik.WinControls.UI.Map.PointG)
+numberOfPoints As Integer) As List(Of Telerik.WinControls.UI.Map.PointG)
     Dim points As New List(Of Telerik.WinControls.UI.Map.PointL)()
-
     For Each point As Telerik.WinControls.UI.Map.PointG In polyline.Points
         points.Add(MapTileSystemHelper.LatLongToPixelXY(point, zoomLevel))
     Next
-
     Dim totalDistance As Integer = 0
     Dim distances As New List(Of Double)()
-
     For i As Integer = 0 To points.Count - 2
         totalDistance += CInt(Math.Sqrt(Math.Pow(points(i + 1).X - points(i).X, 2) + Math.Pow(points(i + 1).Y - points(i).Y, 2)))
         distances.Add(totalDistance)
     Next
-
     Dim equidistantPoints As New List(Of Telerik.WinControls.UI.Map.PointL)()
     Dim [step] As Double = CDbl(totalDistance) / (numberOfPoints - 1)
     Dim currentDistance As Double = 0
-
     While currentDistance < totalDistance - 1
         Dim index As Integer = distances.BinarySearch(currentDistance)
-
         If index < 0 Then
             index = Not index
         End If
-
         Dim p1 As Telerik.WinControls.UI.Map.PointL = points(index)
         Dim p2 As Telerik.WinControls.UI.Map.PointL = points(index + 1)
         Dim distance As Double = If(index = 0, distances(index), distances(index) - distances(index - 1))
         Dim dt As Double = If(index = 0, currentDistance, currentDistance - distances(index - 1))
-
         Dim t As Double = CDbl(dt) / distance
         Dim x As Double = ((1.0 - t) * p1.X + t * p2.X)
         Dim y As Double = ((1.0 - t) * p1.Y + t * p2.Y)
-
         equidistantPoints.Add(New Telerik.WinControls.UI.Map.PointL(CLng(Math.Round(x, MidpointRounding.AwayFromZero)), _
                                                                     CLng(Math.Round(y, MidpointRounding.AwayFromZero))))
         currentDistance += [step]
     End While
-
     equidistantPoints.Add(points(points.Count - 1))
-
     Dim result As New List(Of Telerik.WinControls.UI.Map.PointG)()
-
     For Each point As Telerik.WinControls.UI.Map.PointL In equidistantPoints
         result.Add(MapTileSystemHelper.PixelXYToLatLong(point, zoomLevel))
     Next
-
     Return result
 End Function
 

@@ -25,69 +25,69 @@ To read your data you have to use a __ShapeFileReader__ which reads __ShapeFileR
 {{source=..\SamplesVB\Map\MapFileReaders.vb region=SetupESRIShapeReader}}
 
 ````C#
+        
 private Font seatsFont = new Font("Arial", 7f, FontStyle.Bold);
-
-        public void SetupESRIShapeReader()
+    
+public void SetupESRIShapeReader()
+{
+    MapLayer pinsLayer = new MapLayer("Hall Layout");
+    this.radMap1.Layers.Add(pinsLayer);
+    EmptyMapProvider emptyProvider = new EmptyMapProvider();
+    emptyProvider.MinZoomLevel = 15;
+    emptyProvider.MaxZoomLevel = 16;
+    emptyProvider.InitializationComplete += emptyProvider_ESRIInitializationComplete;
+    
+    radMap1.Providers.Add(emptyProvider);
+    using (MemoryStream seatsStream = new MemoryStream(Properties.Resources.theatre_seats_pol))
+    {
+        using (MemoryStream seatsDataStream = new MemoryStream(Properties.Resources.theatre_seats_pol_data))
         {
-            MapLayer pinsLayer = new MapLayer("Hall Layout");
-            this.radMap1.Layers.Add(pinsLayer);
-            EmptyMapProvider emptyProvider = new EmptyMapProvider();
-            emptyProvider.MinZoomLevel = 15;
-            emptyProvider.MaxZoomLevel = 16;
-            emptyProvider.InitializationComplete += emptyProvider_ESRIInitializationComplete;
-
-            radMap1.Providers.Add(emptyProvider);
-            using (MemoryStream seatsStream = new MemoryStream(Properties.Resources.theatre_seats_pol))
+            using (MemoryStream aisleStream = new MemoryStream(Properties.Resources.theatre_aisle_labels))
             {
-                using (MemoryStream seatsDataStream = new MemoryStream(Properties.Resources.theatre_seats_pol_data))
+                ShapeFileReaderParameters parameters = new ShapeFileReaderParameters();
+                parameters.ShapeStream = seatsStream;
+                parameters.DbfStream = seatsDataStream;
+                ShapeFileReader reader = new ShapeFileReader();
+                List<MapVisualElement> elements = reader.Read(parameters);
+                    
+                foreach (MapGeometry element in elements)
                 {
-                    using (MemoryStream aisleStream = new MemoryStream(Properties.Resources.theatre_aisle_labels))
-                    {
-                        ShapeFileReaderParameters parameters = new ShapeFileReaderParameters();
-                        parameters.ShapeStream = seatsStream;
-                        parameters.DbfStream = seatsDataStream;
-                        ShapeFileReader reader = new ShapeFileReader();
-                        List<MapVisualElement> elements = reader.Read(parameters);
-
-                        foreach (MapGeometry element in elements)
-                        {
-                            element.Font = this.seatsFont;
-                            element.ForeColor = Color.White;
-                            element.Text = "$[CAPTION]";
-                            element.BackColor = Color.FromArgb(
-                                Convert.ToInt32(element.ExtendedData.GetValue("RGB0")),
-                                Convert.ToInt32(element.ExtendedData.GetValue("RGB1")),
-                                Convert.ToInt32(element.ExtendedData.GetValue("RGB2")));
-                            element.BorderWidth = 0;
-                        }
-
-                        this.radMap1.Layers["Hall Layout"].AddRange(elements);
-
-                        parameters = new ShapeFileReaderParameters();
-                        parameters.ShapeStream = aisleStream;
-                        elements = reader.Read(parameters);
-                        this.radMap1.Layers["Hall Layout"].AddRange(elements);
-                    }
+                    element.Font = this.seatsFont;
+                    element.ForeColor = Color.White;
+                    element.Text = "$[CAPTION]";
+                    element.BackColor = Color.FromArgb(
+                        Convert.ToInt32(element.ExtendedData.GetValue("RGB0")),
+                        Convert.ToInt32(element.ExtendedData.GetValue("RGB1")),
+                        Convert.ToInt32(element.ExtendedData.GetValue("RGB2")));
+                    element.BorderWidth = 0;
                 }
+                
+                this.radMap1.Layers["Hall Layout"].AddRange(elements);
+                
+                parameters = new ShapeFileReaderParameters();
+                parameters.ShapeStream = aisleStream;
+                elements = reader.Read(parameters);
+                this.radMap1.Layers["Hall Layout"].AddRange(elements);
             }
         }
-
-        private void emptyProvider_ESRIInitializationComplete(object sender, EventArgs e)
-        {
-            List<Telerik.WinControls.UI.Map.PointG> locations = new List<Telerik.WinControls.UI.Map.PointG>();
-
-            foreach (MapVisualElement el in this.radMap1.Layers["Hall Layout"].Overlays)
-            {
-                locations.Add(el.Location);
-            }
-
-            this.radMap1.BringIntoView(Telerik.WinControls.UI.Map.RectangleG.GetBoundingRectangle(locations));
-        }
+    }
+}
+    
+private void emptyProvider_ESRIInitializationComplete(object sender, EventArgs e)
+{
+    List<Telerik.WinControls.UI.Map.PointG> locations = new List<Telerik.WinControls.UI.Map.PointG>();
+        
+    foreach (MapVisualElement el in this.radMap1.Layers["Hall Layout"].Overlays)
+    {
+        locations.Add(el.Location);
+    }
+        
+    this.radMap1.BringIntoView(Telerik.WinControls.UI.Map.RectangleG.GetBoundingRectangle(locations));
+}
 
 ````
 ````VB.NET
 Private seatsFont As New Font("Arial", 7.0F, FontStyle.Bold)
-
 Public Sub SetupESRIShapeReader()
     Dim pinsLayer As New MapLayer("Hall Layout")
     Me.radMap1.Layers.Add(pinsLayer)
@@ -95,7 +95,6 @@ Public Sub SetupESRIShapeReader()
     emptyProvider.MinZoomLevel = 15
     emptyProvider.MaxZoomLevel = 16
     AddHandler emptyProvider.InitializationComplete, AddressOf emptyProvider_ESRIInitializationComplete
-
     radMap1.Providers.Add(emptyProvider)
     Using seatsStream As New MemoryStream(My.Resources.theatre_seats_pol)
         Using seatsDataStream As New MemoryStream(My.Resources.theatre_seats_pol_data)
@@ -105,7 +104,6 @@ Public Sub SetupESRIShapeReader()
                 parameters.DbfStream = seatsDataStream
                 Dim reader As New ShapeFileReader()
                 Dim elements As List(Of MapVisualElement) = reader.Read(parameters)
-
                 For Each element As MapGeometry In elements
                     element.Font = Me.seatsFont
                     element.ForeColor = Color.White
@@ -114,9 +112,7 @@ Public Sub SetupESRIShapeReader()
                                                        Convert.ToInt32(element.ExtendedData.GetValue("RGB1")), Convert.ToInt32(element.ExtendedData.GetValue("RGB2")))
                     element.BorderWidth = 0
                 Next
-
                 Me.radMap1.Layers("Hall Layout").AddRange(elements)
-
                 parameters = New ShapeFileReaderParameters()
                 parameters.ShapeStream = aisleStream
                 elements = reader.Read(parameters)
@@ -125,14 +121,11 @@ Public Sub SetupESRIShapeReader()
         End Using
     End Using
 End Sub
-
 Private Sub emptyProvider_ESRIInitializationComplete(sender As Object, e As EventArgs)
     Dim locations As New List(Of Telerik.WinControls.UI.Map.PointG)()
-
     For Each el As MapVisualElement In Me.radMap1.Layers("Hall Layout").Overlays
         locations.Add(el.Location)
     Next
-
     Me.radMap1.BringIntoView(Telerik.WinControls.UI.Map.RectangleG.GetBoundingRectangle(locations))
 End Sub
 

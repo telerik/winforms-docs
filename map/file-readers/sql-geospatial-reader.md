@@ -23,25 +23,26 @@ __SqlGeospatialDataReader__ allows generating map shapes from any IEnumerable in
 {{source=..\SamplesVB\Map\MapFileReaders.vb region=SetupSQLGeospatialReader}}
 
 ````C#
- OpenStreetMapProvider osmProvider = new OpenStreetMapProvider();
- this.radMap1.Providers.Add(osmProvider);
- MapLayer layer = new MapLayer("Capitals");
- this.radMap1.Layers.Add(layer);
- 
- BindingSource source = new BindingSource();
- source.DataSource = dt;
- 
- SqlGeospatialDataReader datareader = new SqlGeospatialDataReader();
- datareader.Source = source;
- datareader.GeospatialPropertyName = "Geometry";
- 
- List<MapVisualElement> elements = datareader.Read(source, "Geometry", true, null);
- foreach (var item in elements)
- {
-     item.BorderColor = Color.YellowGreen;
- }
- 
- this.radMap1.Layers["Capitals"].AddRange(elements);
+            
+OpenStreetMapProvider osmProvider = new OpenStreetMapProvider();
+this.radMap1.Providers.Add(osmProvider);
+MapLayer layer = new MapLayer("Capitals");
+this.radMap1.Layers.Add(layer);
+            
+BindingSource source = new BindingSource();
+source.DataSource = dt;
+            
+SqlGeospatialDataReader datareader = new SqlGeospatialDataReader();
+datareader.Source = source;
+datareader.GeospatialPropertyName = "Geometry";
+            
+List<MapVisualElement> elements = datareader.Read(source, "Geometry", true, null);
+foreach (var item in elements)
+{
+    item.BorderColor = Color.YellowGreen;
+}
+            
+this.radMap1.Layers["Capitals"].AddRange(elements);
 
 ````
 ````VB.NET
@@ -49,19 +50,15 @@ Dim osmProvider As New OpenStreetMapProvider()
 Me.radMap1.Providers.Add(osmProvider)
 Dim layer As New MapLayer("Capitals")
 Me.radMap1.Layers.Add(layer)
-
 Dim source As New BindingSource()
 source.DataSource = dt
-
 Dim datareader As New SqlGeospatialDataReader()
 datareader.Source = source
 datareader.GeospatialPropertyName = "Geometry"
-
 Dim elements As List(Of MapVisualElement) = datareader.Read(source, "Geometry", True, Nothing)
 For Each item As MapVisualElement In elements
     item.BorderColor = Color.YellowGreen
 Next
-
 Me.radMap1.Layers("Capitals").AddRange(elements)
 
 ````
