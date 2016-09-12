@@ -51,7 +51,7 @@ The drop-down arrow to the right of the tabs opens a menu listing all of the tab
 
 ## Contextual Tabs Groups
 
-Contextual Tab Groups provide a way to organize related tabs. They are often used to group tabs that apply to a specific object in your application.![ribbonbar-structure-of-radribbonbar 001](images/ribbonbar-structure-of-radribbonbar001.png)
+Contextual Tab Groups provide a way to organize related tabs. They are often used to group tabs that apply to a specific object in your application.![ribbonbar-structure-of-radribbonbar 009](images/ribbonbar-structure-of-radribbonbar009.png)
 
 In the screenshot above, __Appearance__ and __Data__ are contextual tab groups. Their width indicates the tabs that they contain, so that the __Appearance__ contextual tab group includes the __Formatting__ and __Layout__ tabs, and the __Data__ contextual tab group includes the __Spelling__ and __Insert__ tabs. Color is also used to unify a contextual tab group with its contained __Ribbon Bar Groups__. The tabs that belong to contextual tab groups are always placed to the right of other tabs on the Telerik __RadRibbonBar__.
 
