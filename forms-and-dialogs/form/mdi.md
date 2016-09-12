@@ -1,17 +1,19 @@
 ---
 title: MDI
-page_title: MDI | UI for WinForms Documentation
-description: MDI
+page_title: MDI | RadForm
+description: The RadForm control is an extended standard Windows Form that fully supports the Telerik Presentation Framework (TPF) and the Telerik's theming mechanism.
 slug: winforms/forms-and-dialogs/form/mdi
 tags: mdi
 published: True
-position: 3
+position: 5
 previous_url: forms-and-dialogs-form-mdi
 ---
 
 # MDI
  
-RadForm can be used in Multiple Document Interface (MDI) scenarios. With MDI, a single menu bar is shared between all child windows, reducing clutter and increasing the efficient use of screen space. RadForm fits well in MDI cases by automatically providing minimize, restore, maximize, and inactive states.
+__RadForm__ can be used in Multiple Document Interface (MDI) scenarios. With MDI, a single menu bar is shared between all child windows, reducing clutter and increasing the efficient use of screen space. __RadForm__ fits well in MDI cases by automatically providing minimize, restore, maximize, and inactive states.
+
+>caption Figure 1: MDI
 
 ![forms-and-dialogs-form-mdi 001](images/forms-and-dialogs-form-mdi001.png)
 
@@ -73,10 +75,12 @@ form.Show()
 
 When a MDI child Form is maximized, it automatically hides its title bar and the parent form displays a default MDI menu. This menu contains controls can execute the basic window commands on the currently maximized MDI child:
 
+>caption Figure 2: MDI Menu Strip
+
 ![forms-and-dialogs-form-mdi 002](images/forms-and-dialogs-form-mdi002.png)
 
 The appearance of the default MDI menu can be designed in the Visual Style Builder.
 
 ## Menu Merging
 
-Each MDI child that contains __RadMenu__ can have its menu merged with the __RadMenu__ control of the MDI parent form, if any. You can read more on this topic in the Menu Merge section.
+Each MDI child that contains __RadMenu__ can have its menu merged with the __RadMenu__ control of the MDI parent form, if any. You can read more on this topic in the [Menu Merge section]({%slug winforms/menus/menu/menu-merge/menu-merge-in-mdi-applications%}).

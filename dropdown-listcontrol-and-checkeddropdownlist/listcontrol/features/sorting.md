@@ -6,7 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features
 tags: listcontrol, sorting
 published: True
 position: 0 
-previous_url: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features
+previous_url: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features, winforms/dropdown-and-listcontrol-listcontrol-features
 ---
 
 # Sorting
