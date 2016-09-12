@@ -135,5 +135,5 @@ End Sub
 
 # See Also
 
- * [Clusterization]({%slug winforms/map/features/layers/clusterization%})
- * [Colorization]({%slug  winforms/map/features/layers/colorization%})
+* [Colorization]({%slug winforms/map/features/layers/colorization%})
+* [Clusterization]({%slug winforms/map/features/layers/clusterization%})

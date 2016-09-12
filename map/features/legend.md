@@ -1,8 +1,8 @@
 ---
 title: Legend
 page_title: Legend | RadMap
-description: The __RadMap__ control allows displaying a legend for a particular layer.
-slug: winforms/map/features/scale-indicators
+description: The RadMap control introduces the MapLegendElement object. It allows you to display a legend for a particular layer inside the control.
+slug: winforms/map/features/legend
 tags: map, features, legend
 published: True
 position: 4
@@ -10,7 +10,7 @@ position: 4
 
 # Legend
 
-The __RadMap__ control introduces the __MapLegendElement__ object. It allows you to display a legend for a particular layer inside the control.
+The __RadMap__ control introduces the __MapLegendElement__ object. It allows displaying a legend for a particular layer inside the control.
 
 >caption Figure 1: Map Legend
 
@@ -48,3 +48,11 @@ Me.RadMap1.MapElement.LegendElement.ItemStackElement.Children.Add(New MapLegendI
 
 
 {{endregion}}
+
+# See Also
+
+* [Layers Overview]({%slug winforms/map/features/layers/overview%})
+* [Mini Map]({%slug winforms/map/features/minimap%})
+* [Navigation Controls]({%slug winforms/map/features/navigation-controls%})
+* [Scale Indicators]({%slug winforms/map/features/scale-indicators%})
+* [Pan and Zoom]({%slug winforms/map/features/pan-and-zoom%})

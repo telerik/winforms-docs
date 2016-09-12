@@ -18,7 +18,7 @@ __RadMap__ supports clusterization of its layers allowing grouping of their item
 
 # Clusterization Modes
 
-The __ClusterdDistance__ property of a certain layer is responsible for setting a distance according to which each of the layer items will be evaluated to form a group. There are two types of clusters which can be assigned to the __ClusterStrategy__ property of the layer:
+The __ClusterDistance__ property of a certain layer is responsible for setting a distance according to which each of the layer items will be evaluated to form a group. There are two types of clusters which can be assigned to the __ClusterStrategy__ property of the layer:
 
 * __ElementClusterStrategy__: All of the layer items are evaluated and a cluster is being created on the exact coordinates an item within the cluster.
 
@@ -147,3 +147,8 @@ End Sub
 >caption Figure 4: DistanceClusterStrategy
 
 ![map features layers clusterization 004](images/map-features-layers-clusterization004.png)
+
+# See Also
+
+* [Layers Overview]({%slug winforms/map/features/layers/overview%})
+* [Colorization]({%slug winforms/map/features/layers/colorization%})
