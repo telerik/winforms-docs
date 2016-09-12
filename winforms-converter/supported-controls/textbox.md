@@ -1,6 +1,6 @@
 ---
 title: TextBox
-page_title: TextBox | UI for Winforms Documentation
+page_title: TextBox | WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/textbox
 tags: covert, winforms, textbox
