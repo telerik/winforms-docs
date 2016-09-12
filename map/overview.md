@@ -20,7 +20,7 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 * Bing Maps and OpenStreetMaps imagery services
 * Bing Maps Search, Route and Elevation services
 * Layers
-* Visualizes data from ESRI shapefiles, KML files and SQL Geospatial data files
+* Visualizes data from ESRI shapefiles, KML files and SQL Geospatial data
 * Clusterization
 * Colorization
 * Navigation bar
