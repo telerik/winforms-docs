@@ -16,7 +16,7 @@ The mini map feature is responsible for displaying a certain part of the world a
 
 ![map features minimap 001](images/map-features-minimap001.png)
 
-The __RadMap.ShowMiniMap__ property is responsible for showing or hiding the min map control.
+The RadMap.__ShowMiniMap__ property is responsible for showing or hiding the mini map control.
 
 #### Hide MiniMap
 
@@ -76,7 +76,7 @@ The mini map behavior can be altered by setting the __MiniMapMode__ property.
 
 ![map features minimap 002](images/map-features-minimap002.gif)
 
-* __MiniMapMode__.*StaticZoom*: The mini map will show a fixed zoom level at all times. Use the __BringIntoView __ method to position the map at the required location and zoom level.
+* __MiniMapMode__.*StaticZoom*: The mini map will show a fixed zoom level at all times. Use the __BringIntoView__ method to position the map at the required location and zoom level.
 
 >caption Figure 3: StaticZoom 
 
@@ -88,7 +88,7 @@ The mini map behavior can be altered by setting the __MiniMapMode__ property.
 
 ![map features minimap 004](images/map-features-minimap004.gif)
 
-The __MiniMapElement__ can be easily accessed via the __RadMap.MapElement__ object. The table below lists the exposed properties and methods.
+The __MiniMapElement__ can be easily accessed via the RadMap.__MapElement__ object. The table below lists the exposed properties and methods.
 
 # Properties
 

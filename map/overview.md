@@ -31,3 +31,7 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 * Custom shapes (pins, callouts)
 
 ![map-overview 002](images/map-overview002.png)
+
+# See Also 
+* [Structure]({%slug winforms/map/structure%})
+* [Getting Started]({%slug winforms/map/getting-started%})

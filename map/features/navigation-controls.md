@@ -10,13 +10,13 @@ position: 2
 
 # Navigation Controls
 
-__RadMap__ provides incorporates a navigation tool allowing the end to user to easily zoom, pan and change the current view. 
+__RadMap__ incorporates a navigation tool allowing the end to user to easily zoom, pan and change the current view. 
 
 >caption Figure 1: Navigation Bar
 
 ![map features navigation controls 001](images/map-features-navigation-controls001.png)
 
-The __RadMap.ShowNavigationBar__ property is responsible for showing or hiding the navigation bar. By default this property is set to *true* and the location of the location is set to *BottomRight*.
+The __RadMap.ShowNavigationBar__ property is responsible for showing or hiding the navigation bar. By default this property is set to *true* and the location of the navigation bar is set to *BottomRight*.
 
 #### Hide Navigation Bar
 
@@ -30,14 +30,13 @@ this.radMap1.ShowNavigationBar = false;
 Me.RadMap1.ShowNavigationBar = False
 
 ````
-
-
+ 
 
 {{endregion}}
 
 # Navigation Bar Location
 
-The location is of the __MapNavigationBarElement__ is controlled by the __RadMap.MapElement.NavigationBarLocation__ property.
+The location of the __MapNavigationBarElement__ is controlled by the RadMap.MapElement.__NavigationBarLocation__ property.
 
 * __MapNavigationBarLocation__.*TopRight*: The location is set to the top right part of the view port.
 
