@@ -25,7 +25,12 @@ The __GridViewTemplate__ properties that govern grouping behavior are:
 
 Once grouped, you can additionally sort the grid data, using the default sorting mechanism.
 
-The example below allows GroupDescriptors to be added programmatically, but does not allow the user to group via drag and drop. The groups are automatically expanded.<br>![gridview-grouping-basic-grouping 001](images/gridview-grouping-basic-grouping001.png)
+The example below allows GroupDescriptors to be added programmatically, but does not allow the user to group via drag and drop. The groups are automatically expanded.
+
+>note When there are more that on groups on the same level the inforation in the group header row is separated by the "," character. This character is taken for the current culture settings: `Thread.CurrentThread.CurrentCulture.TextInfo.ListSeparator`.
+
+![gridview-grouping-basic-grouping 001](images/gridview-grouping-basic-grouping001.png)
+
 
 #### Setting grouping properties
 
