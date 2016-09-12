@@ -64,6 +64,8 @@ Dim textFormat As New CellValueFormat("@")
 
 {{endregion}} 
 
+>important You need to add a reference to the `PresentationCore` assembly and the `System.Windows.Media` namespace.
+
 3\. Now you can add the header, first you need to insert a new row on top of the document. Then you can merge the all the cells above the grid and set the new cell value and styles.
 
 #### Add header
