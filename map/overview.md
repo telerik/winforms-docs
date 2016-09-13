@@ -28,7 +28,7 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 * Scale indicator
 * Mini map
 * Legend
-* Custom shapes (pins, callouts)
+* Built-in pins, callouts, routes, air routes, labels, paths
 
 ![map-overview 002](images/map-overview002.png)
 
