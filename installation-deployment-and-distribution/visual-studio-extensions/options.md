@@ -33,7 +33,7 @@ __Copy referenced assemblies to solution and integrate with source control__ - W
 
 __Suggest project upgrades for Telerik product version available on my computer__  – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI for WinForms installed on your system
 
-__Suggest upgrades when an equal Dev release detected on projects using a Trial__ – When enabled, you will be prompted to upgrade if a licensed version of Telerik UI for WinForms is available on your system, but the current project uses a trial version
+__Suggest upgrades when an equal Dev release is detected on projects using a Trial__ – When enabled, you will be prompted to upgrade if a licensed version of Telerik UI for WinForms is available on your system, but the current project uses a trial version
 
 ![installation-deployment-and-distribution-vsx-options-dialog 003](images/installation-deployment-and-distribution-vsx-options-dialog003.png)
 
