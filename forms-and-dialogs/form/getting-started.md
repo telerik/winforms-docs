@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/forms-and-dialogs/form/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 2
 previous_url: forms-and-dialogs-form-getting-started
 ---
 
@@ -73,3 +73,9 @@ To apply a theme to RadForm, you should first drag-and-drop the desired Theme Co
 1. In the Properties Window set the __ThemeName__ property of the Form to *'Office2007Black'*
 	
 	![forms-and-dialogs-form-getting-started 003](images/forms-and-dialogs-form-getting-started003.png)
+
+
+# See Also 
+
+* [Accessing RadForm Elements]({%slug winforms/forms-and-dialogs/form/accessing-radform-elements%})
+* [Properties, Methods and Events]({%slug winforms/forms-and-dialogs/form/properties-methods-events%})

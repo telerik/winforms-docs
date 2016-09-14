@@ -135,7 +135,7 @@ In the __EditorRequired__ event we replace the default editor:
 ````C#
 private void GanttViewElement_EditorRequired(object sender, GanttViewEditorRequiredEventArgs e)
 {
-    if (e.EditorType == typeof(BaseSpinEditor))
+    if (e.EditorType == typeof(GanttViewSpinEditor))
     {
         e.EditorType = typeof(GanttViewTrackBarEditor);
     }
@@ -144,7 +144,7 @@ private void GanttViewElement_EditorRequired(object sender, GanttViewEditorRequi
 ````
 ````VB.NET
 Private Sub GanttViewElement_EditorRequired(sender As Object, e As GanttViewEditorRequiredEventArgs)
-    If (e.EditorType = GetType(BaseSpinEditor)) Then
+    If (e.EditorType = GetType(GanttViewSpinEditor)) Then
         e.EditorType = GetType(GanttViewTrackBarEditor)
     End If
 End Sub

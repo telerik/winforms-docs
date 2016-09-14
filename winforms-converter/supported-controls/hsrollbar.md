@@ -1,6 +1,6 @@
 ---
 title: HScrollBar
-page_title: HScrollBar | UI for Winforms Documentation
+page_title: HScrollBar | WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/hscrollbar
 tags: covert, winforms, hscrollbar

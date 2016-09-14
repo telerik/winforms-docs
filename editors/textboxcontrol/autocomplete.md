@@ -10,9 +10,7 @@ previous_url: editors-textboxcontrol-autocomplete
 ---
 
 # AutoComplete
- 
 
-## 
 
 The RadTextBoxControl can automatically complete the input string by comparing the prefix being entered to the prefix of all strings in the maintained source. This is useful for RadTextBoxControl in which URLs, addresses, file names or commands will be frequently entered.
         

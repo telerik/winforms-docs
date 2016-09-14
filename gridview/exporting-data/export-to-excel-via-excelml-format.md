@@ -236,7 +236,7 @@ void exporter_ExcelCellFormatting(object sender, Telerik.WinControls.UI.Export.E
         BorderStyles border = new BorderStyles();
         border.Color = Color.Black;
         border.Weight = 2;
-        border.LineStyle = LineStyle.Continuous;
+        border.LineStyle = Telerik.WinControls.UI.Export.ExcelML.LineStyle.Continuous;
         border.PositionType = PositionType.Bottom;
         e.ExcelStyleElement.Borders.Add(border);
     }
@@ -254,7 +254,7 @@ Private Sub exporter_ExcelCellFormatting(ByVal sender As Object, ByVal e As Tele
         Dim border As BorderStyles = New BorderStyles()
         border.Color = Color.Black
         border.Weight = 2
-        border.LineStyle = LineStyle.Continuous
+        border.LineStyle = Telerik.WinControls.UI.Export.ExcelML.LineStyle.Continuous
         border.PositionType = PositionType.Bottom
         e.ExcelStyleElement.Borders.Add(border)
     ElseIf e.GridRowIndex = 2 AndAlso e.GridColumnIndex = 1 Then

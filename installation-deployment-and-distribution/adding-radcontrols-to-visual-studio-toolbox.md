@@ -112,6 +112,8 @@ Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/
  * Telerik.WinControls.PivotGrid.dll
 
  * Telerik.WinControls.RichTextEditor.dll
+ 
+ * Telerik.WinControls.RadMap.dll
 
 
 >Resetting the toolbox through the __Reset__ context command will remove the tools from the toolbox. If you need to reset the toolbox, just add the controls as described above.

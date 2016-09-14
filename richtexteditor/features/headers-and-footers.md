@@ -22,11 +22,11 @@ __RadRichTextEditor__ supports Headers and Footers in its document when in Paged
 
 The topic contains the following sections:
 
-* [Header Footer Types](Header_Footer_Types)
+* [Header Footer Types](#header-footer-types)
 
-* [Customizing Headers And Footers](Customizing_Headers_And_Footers)
+* [Customizing Headers And Footers](#customizing-headers-and-footers)
 
-* [Disabling Headers and Footers](Disabling_Headers_and_Footers)
+* [Disabling Headers and Footers](#disabling-headers-and-footers)
 
 ## Header Footer Types
 
@@ -41,7 +41,7 @@ The Headers and Footers are properties of a Section and each section in the docu
 * __Even__ - to be used on every even page.
             
 
-## Customizing Headers and Footers
+## Customizing Headers And Footers
 
 Here is an example how you can create a Header: 
 {{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=header}} 

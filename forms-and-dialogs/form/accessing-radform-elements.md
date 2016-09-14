@@ -5,7 +5,7 @@ description: Accessing RadForm Elements
 slug: winforms/forms-and-dialogs/form/accessing-radform-elements
 tags: accessing,radform,elements
 published: True
-position: 2
+position: 3
 previous_url: forms-and-dialogs-form-accessing-radform-elements
 ---
 
@@ -42,6 +42,7 @@ End Sub
 
 {{endregion}} 
 
+>caption Figure 1: TitleBar
   
 ![forms-and-dialogs-accessing-radform-elements 001](images/forms-and-dialogs-accessing-radform-elements001.png)
 
