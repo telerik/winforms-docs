@@ -12,11 +12,13 @@ position: 1
 
 The bellow image shows the __RadCaroucel__ elements:
 
+>caption Figure 1: RadCarousel Elements.
+
 ![carousel-structure 001](images/carousel-structure001.png)
 
 # Elements Hierarchy
 
-__RadCarosel__ consist of the following elements: 
+__RadCarousel__ consist of the following elements: 
 
 * __Items Container__ the container which holds the items.
 * __Navigation Buttons__ These buttons allows you to change the current item.
