@@ -26,57 +26,14 @@ In this example we will use the second approach by setting the  MapElement.Searc
 {{source=..\SamplesVB\Map\BingProvider.vb region=BingSearch}}
 
 ````C#
-private void BingProvider_Load(object sender, EventArgs e)
-{
-    this.radMap1.ShowSearchBar = true;
-    BingRestMapProvider bingProvider = this.radMap1.Providers[0] as BingRestMapProvider;
-    Telerik.WinControls.UI.MapLayer pinsLayer = new MapLayer("Pins");
-    this.radMap1.Layers.Add(pinsLayer);
-    this.radMap1.MapElement.SearchBarElement.SearchProvider = bingProvider;
-    
-    this.radMap1.MapElement.SearchBarElement.SearchProvider.SearchCompleted += BingProvider_SearchCompleted;
-    this.radMap1.MapElement.SearchBarElement.SearchProvider.SearchError += BingProvider_SearchError;
-}
-
-private void BingProvider_SearchError(object sender, SearchErrorEventArgs e)
-{
-    RadMessageBox.Show(e.Error.Message);
-}
-
-private void BingProvider_SearchCompleted(object sender, SearchCompletedEventArgs e)
-{
-    Telerik.WinControls.UI.Map.RectangleG allPoints = new Telerik.WinControls.UI.Map.RectangleG(double.MinValue, double.MaxValue, double.MaxValue, double.MinValue);
-    this.radMap1.Layers["Pins"].Clear();
-    foreach (Telerik.WinControls.UI.Map.Bing.Location location in e.Locations)
-    {
-        Telerik.WinControls.UI.Map.PointG point = new Telerik.WinControls.UI.Map.PointG(location.Point.Coordinates[0], location.Point.Coordinates[1]);
-        MapPin pin = new MapPin(point);
-        pin.Size = new System.Drawing.Size(20, 40);
-        pin.BackColor = Color.Red;
-        pin.ToolTipText = location.Address.FormattedAddress;
-        this.radMap1.MapElement.Layers["Pins"].Add(pin);
-        allPoints.North = Math.Max(allPoints.North, point.Latitude);
-        allPoints.South = Math.Min(allPoints.South, point.Latitude);
-        allPoints.West = Math.Min(allPoints.West, point.Longitude);
-        allPoints.East = Math.Max(allPoints.East, point.Longitude);
-    }
-    if (e.Locations.Length > 0)
-    {
-        if (e.Locations.Length == 1)
-        {
-            this.radMap1.BringIntoView(new Telerik.WinControls.UI.Map.PointG(e.Locations[0].Point.Coordinates[0], e.Locations[0].Point.Coordinates[1]));
-        }
-        else
-        {
-            this.radMap1.MapElement.BringIntoView(allPoints);
-            this.radMap1.Zoom(this.radMap1.MapElement.ZoomLevel - 1);
-        }
-    }
-    else
-    {
-        RadMessageBox.Show("No result found for the provided search query!");
-    }
-}
+equest
+            
+            Telerik.WinControls.UI.Map.Bing.SearchRequest request = new SearchRequest();
+            request.Query = "San Marino";
+            request.SearchOptions.Count = 10;
+            request.SearchOptions.QueryParse = true;
+            BingRestMapProvider bingProvider = this.radMap1.Providers[0] as BingRestMapProvider;
+            bingProvider.SearchAsync(request);
 
 ````
 ````VB.NET
@@ -86,15 +43,12 @@ Private Sub BingProvider_Load(sender As Object, e As EventArgs) Handles Me.Load
     Dim pinsLayer As Telerik.WinControls.UI.MapLayer = New MapLayer("Pins")
     Me.radMap1.Layers.Add(pinsLayer)
     Me.radMap1.MapElement.SearchBarElement.SearchProvider = bingProvider
-
     AddHandler Me.radMap1.MapElement.SearchBarElement.SearchProvider.SearchCompleted, AddressOf BingProvider_SearchCompleted
     AddHandler Me.radMap1.MapElement.SearchBarElement.SearchProvider.SearchError, AddressOf BingProvider_SearchError
 End Sub
-
 Private Sub BingProvider_SearchError(sender As Object, e As SearchErrorEventArgs)
     RadMessageBox.Show(e.[Error].Message)
 End Sub
-
 Private Sub BingProvider_SearchCompleted(sender As Object, e As SearchCompletedEventArgs)
     Dim allPoints As New Telerik.WinControls.UI.Map.RectangleG(Double.MinValue, Double.MaxValue, Double.MaxValue, Double.MinValue)
     Me.radMap1.Layers("Pins").Clear()
