@@ -32,6 +32,9 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 
 ![map-overview 002](images/map-overview002.png)
 
+>important RadMap control does not license right of use to any map provider. You must obtain and/or follow the licensing requirements set forth by each map provider. 
+>
+
 # See Also 
 * [Structure]({%slug winforms/map/structure%})
 * [Getting Started]({%slug winforms/map/getting-started%})
