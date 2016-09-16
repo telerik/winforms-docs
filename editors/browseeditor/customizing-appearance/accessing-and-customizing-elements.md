@@ -2,7 +2,7 @@
 title: Accessing and Customizing Elements
 page_title: Accessing and Customizing Elements | Browse Editor
 description: Accessing and customizing elements can be performed either at design time, or at run time
-slug: winforms/browseeditor/customizing-appearance/themes
+slug: winforms/browseeditor/customizing-appearance/acessing-and-customizing-appearance
 tags: button, themes
 published: True
 position: 0

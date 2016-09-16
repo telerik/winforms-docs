@@ -1,23 +1,21 @@
 ---
 title: Date and Time Masks
-page_title: Date and Time Masks | MaskedEditBox
+page_title: Date and Time Masks | RadMaskedEditBox
 description: The following tables  describe the mask characters that can be used when the MaskType is DateTime. Note that the format characters are case sensitive.
 slug: winforms/editors/maskededitbox/date-and-time-masks
 tags: date,and,time,masks
 published: True
-position: 3
+position: 5
 previous_url: editors-maskededitbox-date-and-time-masks
 ---
 
 # Date and Time Masks
  
 The tables below describe the mask characters that can be used when the __MaskType__ is __DateTime__. Note that the format characters are case sensitive.
-      
 
 ## Standard Date Format codes
 
 Full list of the supported masks can be found in the following MSDN article: [Standard DateTime masks](http://msdn.microsoft.com/en-us/library/az4se3k1(v=VS.71).aspx)
-
  
 | __Format Character__ | __Description__ |
 |----|----|
@@ -36,7 +34,6 @@ Full list of the supported masks can be found in the following MSDN article: [St
 ##  Custom Date Format codes
 
 Where standard date codes are too restrictive, create your own custom formats using the format patterns listed below.
-        
 
 Full list of the supported masks can be found in the following MSDN article: [Custom DateTime masks](http://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.71).aspx)
 
@@ -88,3 +85,9 @@ provider.AutoSelectNextPart = True
 {{endregion}} 
  
 More information about this provider can be found in the last section of the following article: [RadDateTimePicker Properties]({%slug winforms/editors/datetimepicker/raddatetimepicker-properties%})
+
+## See Also
+
+* [Standard]({%slug winforms/editors/maskededitbox/standard-masks%})
+* [Numeric Masks]({%slug winforms/editors/maskededitbox/numeric-masks%})
+* [Working with RadMaskedEditBox]({%slug winforms/editors/maskededitbox/working-with-radmaskededitbox%})
