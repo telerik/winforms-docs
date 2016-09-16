@@ -26,6 +26,7 @@ In this example we will use the second approach by setting the  MapElement.Searc
 {{source=..\SamplesVB\Map\BingProvider.vb region=SearchCompleted}}
 
 ````C#
+        
 private void BingProvider_Load(object sender, EventArgs e)
 {
     this.radMap1.ShowSearchBar = true;
@@ -37,12 +38,12 @@ private void BingProvider_Load(object sender, EventArgs e)
     this.radMap1.MapElement.SearchBarElement.SearchProvider.SearchCompleted += BingProvider_SearchCompleted;
     this.radMap1.MapElement.SearchBarElement.SearchProvider.SearchError += BingProvider_SearchError;
 }
-
+        
 private void BingProvider_SearchError(object sender, SearchErrorEventArgs e)
 {
     RadMessageBox.Show(e.Error.Message);
 }
-
+        
 private void BingProvider_SearchCompleted(object sender, SearchCompletedEventArgs e)
 {
     Telerik.WinControls.UI.Map.RectangleG allPoints = new Telerik.WinControls.UI.Map.RectangleG(double.MinValue, double.MaxValue, double.MaxValue, double.MinValue);
@@ -86,15 +87,12 @@ Private Sub BingProvider_Load(sender As Object, e As EventArgs) Handles Me.Load
     Dim pinsLayer As Telerik.WinControls.UI.MapLayer = New MapLayer("Pins")
     Me.radMap1.Layers.Add(pinsLayer)
     Me.radMap1.MapElement.SearchBarElement.SearchProvider = bingProvider
-
     AddHandler Me.radMap1.MapElement.SearchBarElement.SearchProvider.SearchCompleted, AddressOf BingProvider_SearchCompleted
     AddHandler Me.radMap1.MapElement.SearchBarElement.SearchProvider.SearchError, AddressOf BingProvider_SearchError
 End Sub
-
 Private Sub BingProvider_SearchError(sender As Object, e As SearchErrorEventArgs)
     RadMessageBox.Show(e.[Error].Message)
 End Sub
-
 Private Sub BingProvider_SearchCompleted(sender As Object, e As SearchCompletedEventArgs)
     Dim allPoints As New Telerik.WinControls.UI.Map.RectangleG(Double.MinValue, Double.MaxValue, Double.MaxValue, Double.MinValue)
     Me.radMap1.Layers("Pins").Clear()
