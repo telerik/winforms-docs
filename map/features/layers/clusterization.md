@@ -20,11 +20,11 @@ __RadMap__ supports clusterization of its layers allowing grouping of their item
 
 The __ClusterDistance__ property of a certain layer is responsible for setting a distance according to which each of the layer items will be evaluated to form a group. There are two types of clusters which can be assigned to the __ClusterStrategy__ property of the layer:
 
-* __ElementClusterStrategy__: All of the layer items are evaluated and a cluster is being created on the exact coordinates an item within the cluster.
+* __ElementClusterStrategy__: All of the layer items are evaluated and a cluster is being created on the exact coordinates of an item within the cluster.
 
 * __DistanceClusterStrategy__: All of the layer items are evaluated and a cluster is being created on the geographic center of the items part of the cluster.
 
-The example below creates a layer having with four __MapPin__ elements and defines clusters using __ElementClusterStrategy__ and __DistanceClusterStrategy__ having the same __ClusterDistance__. 
+The example below creates a layer with four __MapPin__ elements and defines clusters using __ElementClusterStrategy__ and __DistanceClusterStrategy__ having the same __ClusterDistance__. 
 
 #### Add Layer and Data
 
