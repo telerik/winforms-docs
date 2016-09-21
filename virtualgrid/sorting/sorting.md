@@ -39,9 +39,11 @@ Me.RadVirtualGrid1.AllowSorting = True
 
 ````C#
 this.radVirtualGrid1.AllowMultiColumnSorting = true;
+
 ````
 ````VB.NET
 Me.RadVirtualGrid1.AllowMultiColumnSorting = True
+
 ```` 
 
 {{endregion}}
