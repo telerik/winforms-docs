@@ -16,7 +16,7 @@ To start using __RadButton__ just drag it from the toolbox and drop it on the fo
 
 Select __RadButton__ and click the small arrow at the top right position in order to open the Smart Tag.
 
->caption Figure 1 Smart Tag
+>caption Figure 1: Smart Tag
 
 ![buttons-toggleswitch-desing-time 001](images/buttons-button-design-time001.png)
 

@@ -11,8 +11,6 @@ previous_url: buttons-checkbox-handling-radcheckbox-states
 
 # Handling RadCheckBox States
 
-
-
 ## State Properties
 
 The property which controls the state of RadCheckBox is called __ToggleState__. It is an enumeration and can be one of the following values: __On__, __Off__, or __Indeterminate__. 

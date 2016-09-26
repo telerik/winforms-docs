@@ -15,14 +15,14 @@ previous_url: buttons-toggleswitch-accessing-and-customizing-elements
 
 You can access and modify the style for different elements in __RadToggleSwitch__ by using the *Element hierarchy editor*. Before proceeding with this topic, it is recommended to get familiar with the [visual structure]({%slug winforms/buttons/toggleswitch/structure%}) of the __RadToggleSwitch__.
         
->caption Fig.1 Element hierarchy editor
+>caption Figure 1: Element hierarchy editor
 
 ![buttons-toggleswitch-accessing-and-customizing-elements 001](images/buttons-toggleswitch-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
->caption Fig.2
+>caption Figure 2:
 
 ![buttons-toggleswitch-accessing-and-customizing-elements 002](images/buttons-toggleswitch-accessing-and-customizing-elements002.gif)
 

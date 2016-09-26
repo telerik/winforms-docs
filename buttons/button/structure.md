@@ -12,7 +12,7 @@ This article will show the internal elements structure of __RadButton__:
 
 # Structure
 
->caption Fig.1 RadButton's elements hierarchy
+>caption Figure 1: RadButton's elements hierarchy
 
 ![buttons-button-structure 001](images/buttons-button-structure001.png)
 
@@ -22,7 +22,7 @@ This article will show the internal elements structure of __RadButton__:
 	2\.2\. __TextPrimitive__: represents the button's text
 3. __BorderPrimitive__: represents's the button's border
 
->caption Fig.2 RadButton's structure
+>caption Figure 2: RadButton's structure
 
 ![buttons-button-structure 002](images/buttons-button-structure002.png)
 

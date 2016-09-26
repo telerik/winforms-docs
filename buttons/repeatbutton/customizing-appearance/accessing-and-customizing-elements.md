@@ -16,16 +16,17 @@ Accessing and customizing elements can be performed either at design time, or at
 
 ## Design time
 
-You can access and modify the style for different elements in __RadRepeatButton__ by using the Element hierarchy editor.
+You can access and modify the style for different elements in __RadRepeatButton__ by using the Element hierarchy editor. It can be accessed by selecting the *Edit UI Elements* item from the Smart Tag.
 
->caption Fig.1 Element hierarchy editor
+
+>caption Figure 1: Element hierarchy editor
 
 ![repeatbutton-customizing-appearance-accessing-and-customizing-elements 001](images/repeatbutton-customizing-appearance-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
->caption Fig.2 Customize elements
+>caption Figure 2: Customize elements
 
 ![repeatbutton-customizing-appearance-accessing-and-customizing-elements 002](images/repeatbutton-customizing-appearance-accessing-and-customizing-elements002.png)
 

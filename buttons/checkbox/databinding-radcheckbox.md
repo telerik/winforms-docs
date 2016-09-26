@@ -11,8 +11,6 @@ previous_url: buttons-checkbox-radcheckbox-databinding
 
 # DataBinding RadCheckBox
 
-
-
 RadCheckBox supports all DataBinding features you might expect from a Windows Forms control.
 
 ## DataBinding at Design-time

@@ -46,6 +46,6 @@ Me.Controls.Add(toggleSwitch)
 
 
 
->caption Fig.1 RadToggleSwitch added at run time
+>caption Figure 1: RadToggleSwitch added at run time
 
 ![buttons-toggleswitch-overview 002](images/buttons-toggleswitch-overview002.png)
