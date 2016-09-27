@@ -45,9 +45,12 @@ The control has three important properties:
 * __Offset__ - allows you to set time offset - useful to display different time zones
             
 
-Now let's create a simple application. Add four RadClocks to your RadForm and on the top of each, place a label. Set the labels text to - Sofia, London, New York and Tokyo. In the code behind, set the ShowSystemTime property of the first clock (assuming that your system time show the time in Sofia). For the rest of the clocks, set their Offset properties to: -2, -6, +7:
+Now let's create a simple application. 
+1\. Add four __RadClocks__ to your __RadForm__ and on the top of each, place a label. 
+2\. Set the labels text to - *Sofia*, *London*, *New York* and *Tokyo*. 
+3\. In the code behind, set the __ShowSystemTime__ property of the first clock (assuming that your system time show the time in Sofia). 
+4\. For the rest of the clocks, set their __Offset__ properties to: *-2*, *-6*, *+7*:
         
-
 {{source=..\SamplesCS\Clock\ClockGettingStarted.cs region=gettingStarted}} 
 {{source=..\SamplesVB\Clock\ClockGettingStarted.vb region=gettingStarted}} 
 
@@ -77,3 +80,7 @@ Here is the result:
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Getting Started with RadTimePicker and RadClock for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms)<br>In this video, we are going to demonstrate the new RadTimePicker and RadClock controls as well as several properties you should be aware of.|![clock-getting-started 002](images/clock-getting-started002.png)|
+
+# See Also
+
+* [Properties]({%slug winforms/clock/properties%})

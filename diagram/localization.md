@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
+page_title: Localization | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/localization
 tags: localization

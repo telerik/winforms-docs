@@ -1,6 +1,6 @@
 ---
 title: Populating with data
-page_title: Populating with data | UI for WinForms Documentation
+page_title: Populating with data | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/populating-with-data
 tags: populating,with,data

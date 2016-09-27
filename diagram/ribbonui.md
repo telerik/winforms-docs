@@ -1,6 +1,6 @@
 ---
 title: RibbonUI
-page_title: RibbonUI | UI for WinForms Documentation
+page_title: RibbonUI | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/ribbonui
 tags: ribbonui

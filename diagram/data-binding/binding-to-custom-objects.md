@@ -1,6 +1,6 @@
 ---
 title: Binding to Custom Objects
-page_title: Binding to Custom Objects | UI for WinForms Documentation
+page_title: Binding to Custom Objects | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/data-binding/binding-to-custom-objects
 tags: binding,to,custom,objects

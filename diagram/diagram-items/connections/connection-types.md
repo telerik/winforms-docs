@@ -1,6 +1,6 @@
 ---
 title: Connection Types
-page_title: Connection Types | UI for WinForms Documentation
+page_title: Connection Types | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/diagram-items/connections
 tags: connections

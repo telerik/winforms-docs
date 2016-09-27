@@ -1,6 +1,6 @@
 ---
 title: Design Time
-page_title: Diagram (beta) | UI for WinForms Documentation
+page_title: Diagram (beta) | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications. 
 slug: winforms/diagram
 tags: diagram,(beta)

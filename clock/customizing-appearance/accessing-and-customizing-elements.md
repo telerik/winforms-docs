@@ -15,7 +15,7 @@ Accessing and customizing elements can be performed either at design time, or at
 
 ## Design time
 
-You can access and modify the style for different elements in __RadClock__ by using the Element hierarchy editor.
+You can access and modify the style for different elements in __RadClock__ by using the Element hierarchy editor. It can be accessed by selecting the *Edit UI Elements* item from the Smart Tag.
 
 >caption Fig.1 Element hierarchy editor
 

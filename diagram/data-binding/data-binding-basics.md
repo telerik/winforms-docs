@@ -1,6 +1,6 @@
 ---
 title: Data Binding Basics
-page_title: Data Binding Basics | UI for WinForms Documentation
+page_title: Data Binding Basics | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/data-binding/data-binding-basics
 tags: data,binding,basics

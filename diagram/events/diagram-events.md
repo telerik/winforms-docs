@@ -1,6 +1,6 @@
 ---
 title: Diagram Events
-page_title: Diagram Events | UI for WinForms Documentation
+page_title: Diagram Events | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/events/diagram-events
 tags: diagram,events

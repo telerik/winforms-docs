@@ -1,6 +1,6 @@
 ---
 title: Routing
-page_title: Routing | UI for WinForms Documentation
+page_title: Routing | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/features/routing
 tags: routing
@@ -16,7 +16,7 @@ Routing is a mechanism using algorithms to make sure that the connections don't 
 ## Default Routing
 
 Routing in __RadDiagram__ is only available if the RadDiagram.__RouteConnections__ property is set to *true*. Please note that its default value is False and you need to explicitly declare you want to enable the routing features.
->caption Fig.1 Routing
+>caption Figure 1: Routing
 
 ![diagram-features-routing 001](images/diagram-features-routing001.gif)
 
@@ -69,7 +69,7 @@ The __TreeLayoutType__ points to the type of Layout you wish to use. The routing
         
 
 Below you can see these shapes after *TreeDown* Layout operation performed on the __RadDiagram__.
->caption Fig.2
+>caption Figure 2:
 
 ![diagram-features-routing 002](images/diagram-features-routing002.png)
 
@@ -126,7 +126,7 @@ Me.RadDiagram1.SetLayout(Telerik.Windows.Diagrams.Core.LayoutType.Tree, settings
 
 
 The following screenshot illustrates the result:
->caption Fig.3 TipOverTreeRouter
+>caption Figure 3: TipOverTreeRouter
 
 ![diagram-features-routing 003](images/diagram-features-routing003.png)
 
@@ -138,7 +138,7 @@ As the name suggests, this is a connection router that uses a version of the A* 
 
 \* __DiagramConstants.RoutingGridSize__ - of type double and gets or sets the routing grid size.
                 
->caption Fig.4 RoutingGridSize
+>caption Figure 4: RoutingGridSize
 
 ![diagram-features-routing 004](images/diagram-features-routing004.png)
 
@@ -149,7 +149,7 @@ As the name suggests, this is a connection router that uses a version of the A* 
 
 \* __AvoidShapes__ - boolean property controlling the logic that makes the connections go around the shapes. This property is *false* by default.
                 
->caption Fig.5 AvoidShapes
+>caption Figure 5: AvoidShapes
 
 ![diagram-features-routing 005](images/diagram-features-routing005.png)
 
@@ -309,6 +309,6 @@ Me.RadDiagram1.RoutingService.Router = New CustomRouter()
 
 
 
->caption Fig.6 Custom Router
+>caption Figure 6: Custom Router
 
 ![diagram-features-routing 006](images/diagram-features-routing006.png)

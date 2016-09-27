@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Diagram| UI for WinForms Documentation
+page_title: Diagram| RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications. 
 slug: winforms/diagram
 tags: diagram,(beta)

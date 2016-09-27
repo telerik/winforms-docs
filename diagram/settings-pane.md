@@ -1,6 +1,6 @@
 ---
 title: Settings Pane
-page_title: Settings Pane | UI for WinForms Documentation
+page_title: Settings Pane | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/settings-pane
 tags: settings,pane
@@ -35,13 +35,13 @@ Me.RadDiagram1.IsSettingsPaneEnabled = True
 
 
 
->caption Fig.1 SettingsPane
+>caption Figure 1: SettingsPane
 
 ![diagram-settings-pane 001](images/diagram-settings-pane001.gif)
 
 The __SettingsPane__ control is a standalone control that can be displayed as the content of any ContentControl. Its main purpose is to provide you with a ready-to-use view that contains the most common features and settings of a single __RadDiagramItem__ (Shape or Connection). In most Diagramming examples you will find the __SettingsPane__ applied as an AdditionalContent on the diagramming surface. This way the control is displayed next to a focused __RadDiagramItem__ thus allowing users to dynamically change the look and feel of the item. 
         
->caption Fig.2
+>caption Figure 2:
 
 ![diagram-settings-pane 002](images/diagram-settings-pane002.png)
 
@@ -67,10 +67,7 @@ Me.RadDiagram1.DiagramElement.ItemInformationAdorner), RadButtonElement)
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 ## Customization
 
 The __SettingsPane__ has a default view that can be used out-of-the-box in scenarios where you only need to display the common settings of a __RadDiagramItem__. However, you can also customize the content of the pane to represent more specific information. These are the basic tasks you might need to implement while customizing your SettingsPane instance:
@@ -103,7 +100,7 @@ Me.RadDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Add(toolsPage)
 
 
 
->caption Fig.3
+>caption Figure 3:
 
 ![diagram-settings-pane 003](images/diagram-settings-pane003.png)
 
@@ -153,7 +150,7 @@ Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCut.Visible = False
 
 
 
->caption Fig.4
+>caption Figure 4:
 
 ![diagram-settings-pane 004](images/diagram-settings-pane004.png)
 

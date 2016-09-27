@@ -17,6 +17,10 @@ position: 4
 |__ClockElement__|Gets the RadClockElement which encapsulates the UI representation and functionality of the control.|
 |__Value__|Gets or sets the value.|
 
+# See Also
+
+* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radclock.htm)
+
 
  
 

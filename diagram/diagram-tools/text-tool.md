@@ -1,6 +1,6 @@
 ---
 title: Text Tool
-page_title: Text Tool | UI for WinForms Documentation
+page_title: Text Tool | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/diagram-tools/text-tool
 tags: text,tool
