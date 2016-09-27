@@ -1,7 +1,7 @@
 ---
 title: Today Indicator
 page_title: Today Indicator | RadGanttView
-description: Today Indicator
+description: The today indicator represents the current date and time in the graphical view of RadGanttView.
 slug: winforms/ganttview-/today-indicator
 tags: today,indicator
 published: True

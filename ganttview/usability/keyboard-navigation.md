@@ -1,7 +1,7 @@
 ---
 title: Keyboard navigation
 page_title: Keyboard navigation | RadGanttView
-description: Keyboard navigation
+description: The user can use several keyboard commands to navigate in the gantt view.
 slug: winforms/ganttview-/usability/keyboard-navigation
 tags: keyboard,navigation
 published: True

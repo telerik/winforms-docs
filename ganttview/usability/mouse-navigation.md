@@ -1,7 +1,7 @@
 ---
 title: Mouse navigation
 page_title: Mouse navigation | RadGanttView
-description: Mouse navigation
+description: The user can use mouse commands to navigate in the gantt view.
 slug: winforms/ganttview-/usability/mouse-navigation
 tags: mouse,navigation
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Structure | RadGanttView
-description: Structure
+description: This article shows the elements of RadGanttView.
 slug: winforms/ganttview-/structure
 tags: structure
 published: True
@@ -51,8 +51,8 @@ The main elements of the structure of __RadGanttView__ are displayed below:
 1. __GanttViewTimelineContainer__ is a virtualized stack container which holds items displaying time.
             
 
-1. __GanttGraphicalViewBaseItemElement__ – this is the base type for the items displayed in the graphical view element
+1. __GanttGraphicalViewBaseItemElement__ is the base type for the items displayed in the graphical view element
             
 
-1. __GanttGraphicalViewBaseTaskElement__- this is the base type for the task elements.
+1. __GanttGraphicalViewBaseTaskElement__ is the base type for the task elements.
             

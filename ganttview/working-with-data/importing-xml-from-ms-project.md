@@ -1,7 +1,7 @@
 ---
 title: Importing XML from MS Project
 page_title: Importing XML from MS Project | RadGanttView
-description: Importing XML from MS Project
+description: We have prepared a class that would help you import an MS Project saved as xml.
 slug: winforms/ganttview-/working-with-data/importing-xml-from-ms-project
 tags: importing,xml,from,ms,project
 published: True

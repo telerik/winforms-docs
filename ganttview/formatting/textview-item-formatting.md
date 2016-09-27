@@ -1,7 +1,7 @@
 ---
 title: TextView item formatting
 page_title: TextView item formatting | RadGanttView
-description: TextView item formatting
+description: RadGanttView offers two events for formatting the text view part.
 slug: winforms/ganttview-/formatting/textview-item-formatting
 tags: textview,item,formatting
 published: True
@@ -11,7 +11,7 @@ previous_url: ganttview-formatting-textviewitem-cellformatting
 
 # TextView item formatting
 
-__RadGanttView__ offers two level of granularity when it comes to formatting the text view part. There is the __TextViewItemFormatting__ event which is fired for each item (row) and there is the __TextViewCellFormatting__ which is fired for every cell.
+__RadGanttView__ offers two events for formatting the text view part. The __TextViewItemFormatting__ event  is fired for each item (row) and the __TextViewCellFormatting__ is fired for every cell.
 
 Here is an example demonstrating how to use the event to make all summary items have a green back color and all tasks a yellow one.
  

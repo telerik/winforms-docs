@@ -1,7 +1,7 @@
 ---
 title: Creating custom editor
 page_title: Creating custom editor | RadGanttView
-description: Creating custom editor
+description: RadGanttView allows you to replace the standard editors with a custom ones.
 slug: winforms/ganttview-/editing/creating-custom-editor
 tags: creating,custom,editor
 published: True
@@ -11,7 +11,7 @@ previous_url: ganttview-editing-creating-a-custom-editor
 
 # Creating custom editor
 
-__RadGanttView__ allows you to replace the standard editors with a custom editors. The following examples demonstrates how to replace the spin editor with a track bar editor. All editors inherit from __BaseInputEditor__. So, you have to inherit from this class and override several methods:
+__RadGanttView__ allows you to replace the standard editors with a custom ones. The following examples demonstrates how to replace the spin editor with a track bar editor. All editors inherit from __BaseInputEditor__. So, you have to inherit from this class and override several methods:
 
 {{source=..\SamplesCS\GanttView\Editing\CustomEditor.cs region=CustomTrackBarEditor}} 
 {{source=..\SamplesVB\GanttView\Editing\CustomEditor.vb region=CustomTrackBarEditor}} 

@@ -1,7 +1,7 @@
 ---
 title: Editing graphical view
 page_title: Editing graphical view | RadGanttView
-description: Editing graphical view
+description: The graphical view of RadGanttView allows the users to modify several aspects of the tasks they are viewing.
 slug: winforms/ganttview-/editing/editing-graphical-view
 tags: editing,graphical,view
 published: True
