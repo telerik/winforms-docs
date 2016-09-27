@@ -1,8 +1,8 @@
 ---
 title: Item types
 page_title: Item types | RadGanttView
-description: There are total of three item types: summary item, task item and milestone item.
-slug: winforms/ganttview-/structure/item-types
+description: There are total of three item types - summary item task item and milestone item. 
+slug: winforms/ganttview/structure/item-types
 tags: item,types
 published: True
 position: 1

@@ -451,15 +451,15 @@ navigation:
         position: 1
     ganttview/working-with-data:
         title: Working with Data
-        position: 2
+        position: 3
     ganttview/design-time:
         title: Design time
-        position: 3
+        position: 2
     ganttview/context-menu:
         title: Context Menu
         position: 4
     ganttview/formatting:
-        title: Formatting
+        title: Customizing Appearance
         position: 5
     ganttview/editing:
         title: Editing
