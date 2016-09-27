@@ -1,7 +1,7 @@
 ---
 title: Properties and Events
-page_title: Working with RadColorBox | RadColorBox
-description: Working with RadColorBox
+page_title: Properties and Events | RadColorBox
+description: Properties and Events RadColorBox
 slug: winforms/editors/colorbox/working-with-radcolorbox
 tags: working,with,radcolorbox
 published: True
@@ -9,22 +9,27 @@ position: 4
 previous_url: editors-color-box-working-with, editors/colorbox/working-with-radcolorbox
 ---
 
-## Properties
+# Properties
 
-* __Value:__ this property gets or sets the value of the editor.
-* __ReadOnly:__ When this property is true the control prevents direct text entry and allows the value to be changed only through the color dialog button. By default this property is *false*.
-* __ColorDialog:__ This property gives access to the [RadColorDialog]({%slug winforms/forms-and-dialogs/colordialog%}) that opens when the color dialog button is pressed.
-* __ColorBoxElement:__ Grants access to the RadColorBoxElement.
+|Property|Description|
+|------|------|
+|__ColorDialog__|Gets the RadColorDialog of this control.|
+|__ColorBoxElement__|Gets the RadColorBoxElement of this control.|
+|__Value__|Gets or sets the value of the editor.|
+|__ReadOnly__|Determines if users can input text directly into the text field..|
+|__TabStop__|Gets or sets a value indicating whether the user can give the focus to this control using the TAB key.|
 
-## Events
+# Events
 
-* __DialogClosed:__ Fires after the color dialog is closed.
+|Event|Description|
+|------|------|
+|__DialogClosed__|Fires after the color dialog is closed.|
+|__ValueChanging__|Fires right before the value is changed, can be canceled.|
+|__ValueChanged__|Fires after the editor value is changed.|
 
-* __ValueChanged:__ Fires after the editor value is changed.
+The __ValueChanging__ event fires before the value is changed and allows you to prevent the change. The event passes a __ValueChangingEventArgs__ parameter that includes the __OldValue__, __NewValue__ and __Cancel__ properties. Set __Cancel__ to true to prevent the change. The example below cancels the value changing if the new value is not a named color:
 
-* __ValueChanging__: This event fires before the value is changed and allows you to prevent the change. The event passes a __ValueChangingEventArgs__ parameter that includes the __OldValue__, __NewValue__ and __Cancel__ properties. Set __Cancel__ to true to prevent the change. The example below cancels the value changing if the new value is not a named color:
-
-#### Example 1: Cancel the value changing. 
+#### Cancel ValueChanging.
 
 {{source=..\SamplesCS\Editors\ColorBox1.cs region=colorBoxValueChanging}} 
 {{source=..\SamplesVB\Editors\ColorBox1.vb region=colorBoxValueChanging}} 
@@ -47,7 +52,5 @@ End Sub
 
 # See Also
 
-* [Design Time]({%slug winforms/editors/design-time%})
-* [Getting Started]({%slug winforms/editors/colorbox/getting-started%})
-* [Structure]({%slug winforms/editors/structure%})
- 
+* [Properties](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadColorBox.htm)
+* [Events](http://docs.telerik.com/devtools/winforms/api/html/Events_T_Telerik_WinControls_UI_RadColorBox.htm)

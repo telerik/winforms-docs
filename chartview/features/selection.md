@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection | UI for WinForms Documentation
+page_title: Selection | ChartView
 description: This help topic will demonstrate how you can make your charts more interactive by adding a selection behavior.
 slug: winforms/chartview-/features/selection
 tags: selection

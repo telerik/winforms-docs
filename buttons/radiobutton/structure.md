@@ -12,7 +12,7 @@ position: 0
 
 This article will show the internal elements structure of __RadRadioButton__:
 
->caption Fig.1 RadRadioButton's elements hierarchy
+>caption Figure 1: RadRadioButton's elements hierarchy
 
 ![buttons-radiobutton-structure 001](images/buttons-radiobutton-structure001.png)
 
@@ -22,6 +22,6 @@ This article will show the internal elements structure of __RadRadioButton__:
 2. __TextPrimitive__: represents the radio button's text
 3. __ImagePrimitive__
 
->caption Fig.2 RadRadioButton's structure
+>caption Figure 2: RadRadioButton's structure
 
 ![buttons-radiobutton-structure002](images/buttons-radiobutton-structure002.png)

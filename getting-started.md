@@ -10,6 +10,25 @@ position: 2
 
 # Getting Started with Telerik UI for WinForms
 
+## Installing Telerik UI for WinForms
+The following article provides step-by-step instructions how to install Telerik UI for WinForms on your computer: [Installing UI for WinForms](http://docs.telerik.com/devtools/winforms/installation-deployment-and-distribution/installing-on-your-computer)
+
+## Demo application
+When installing the suite, unless otherwise chosen, our Demo Application will be installed on your machine as well. It can be started either from the desktop icon created or from *Start Menu > Programs > Telerik > UI for WinForms [version] > Demo Application*
+
+![overview](images/overview.png)
+
+## Visual Studio Extensions
+At the following link you can find more information about the [Telerik UI for WinForms integration with Visual Studio] (http://docs.telerik.com/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/overview)
+
+## Predefined Template Applications
+In addition, there are several predefined application templates one can use to get started with variety of application scenarions. More information is available at the following article : [Predefined Templates](http://docs.telerik.com/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/create-project)
+
+## Comprehansive step-by-step guide
+If you are new to the Windows Forms world and/or the Telerik UI for WinForms product, a good place to start is our [step-by-step pdf tutorial](http://www.telerik.com/winforms/winforms-guide), which contains over 750 pages of training material, as well as plenty of code samples.
+
+## Getting started articles
+
 Below are listed the *Getting Started* help articles for most of the controls in the Telerik UI for WinForms suite:
 
 |||||
@@ -30,3 +49,16 @@ Below are listed the *Getting Started* help articles for most of the controls in
 |[RadSpellChecker]({%slug winforms/spellchecker/getting-started%})|[RadSplitContainer]({%slug winforms/splitcontainer/getting-started%})|[Telerik Analytics]({%slug winforms/telerik-analytics-integration/getting-started%})|[RadProgressBar]({%slug winforms/track-and-status-controls/progressbar/getting-started%})|
 |[RadRating]({%slug winforms/track-and-status-controls/rating/getting-started%})|[RadScrollBar]({%slug winforms/track-and-status-controls/scrollbar/getting-started%})|[RadTrackBar]({%slug winforms/track-and-status-controls/trackbar/getting-started%})|[RadWaitingBar]({%slug winforms/track-and-status-controls/waitingbar/getting-started%})
 |[RadTreeView]({%slug winforms/treeview/getting-started%})|[RadVirtualGrid]({%slug winforms/virtualgrid/getting-started%})|[RadChartView]({%slug winforms/chartview/getting-started%})|[RadCheckedListBox]({%slug winforms/checkedlistbox/getting-started%})|
+
+
+## Convert your existing Windows Forms applications to Telerik UI for WinForms
+The product also features a tool that aids the conversion process of applications using the standard Microsoft Windows Forms controls to their Telerik UI for WinForms counterparts. See [Converter Tool page](http://docs.telerik.com/devtools/winforms/winforms-converter/overview) for more information.
+
+## Product blog 
+In our blog you can follow interesting topics concerning our product as well as product update information: [UI for WinForms blog](http://www.telerik.com/blogs/tag/winforms)
+
+## Product pages
+Here you can find the [Telerik UI for WinForms](http://www.telerik.com/products/winforms) product pages.
+
+## Roadmap 
+At the following link you can find what's cooking for our next release: [Roadmap](http://www.telerik.com/support/whats-new/winforms/roadmap)

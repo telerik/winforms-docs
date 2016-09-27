@@ -1,6 +1,6 @@
 ---
 title: RadChartView vs RadChart
-page_title: RadChartView vs RadChart | UI for WinForms Documentation
+page_title: RadChartView vs RadChart | ChartView
 description: RadChartView vs RadChart
 slug: winforms/chartview-/radchartview-vs-radchart
 tags: radchartview,vs,radchart

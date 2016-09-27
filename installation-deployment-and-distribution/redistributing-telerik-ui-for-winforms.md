@@ -761,7 +761,7 @@ Telerik.WinControls.Themes.Windows8.dll</td></tr>
 <tr><td><b>RadClock</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadPdfViewerNavigator</b></td><td>Telerik.WinControls.PdfViewer.dll</td></tr>
 <tr><td><b>RadCardView</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-
+<tr><td><b>RadMap</b></td><td>Telerik.WinControls.RadMap.dll</td></tr>
 </table>
 
 You can find all these assemblies in the __/bin__ folder of your installation.

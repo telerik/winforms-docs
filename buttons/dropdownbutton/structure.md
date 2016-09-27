@@ -12,7 +12,7 @@ position: 1
 
 This article will show the internal elements structure of __RadDropDownButton__:
 
->caption Fig.1 RadDropDownButton's elements hierarchy
+>caption Figure 1: RadDropDownButton's elements hierarchy
 
 ![buttons-dropdownbutton-structure 001](images/buttons-dropdownbutton-structure001.png)
 
@@ -21,6 +21,7 @@ This article will show the internal elements structure of __RadDropDownButton__:
 3. __RadMenuItem__: represents the drop down item
 4. __RadDropDownButtonPopup__: represents the drop down
 
->caption Fig.2 RadDropDownButton's structure
+>caption Figure 2: RadDropDownButton's structure
+
 ![buttons-dropdownbutton-structure 002](images/buttons-dropdownbutton-structure002.png)
 

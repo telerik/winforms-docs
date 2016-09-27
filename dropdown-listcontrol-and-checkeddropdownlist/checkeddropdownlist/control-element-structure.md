@@ -1,7 +1,7 @@
 ---
-title: Control Element Structure
-page_title: Control Element Structure | UI for WinForms Documentation
-description: Control Element Structure
+title: Structure
+page_title: Structure | RadCheckedDropDownList
+description: RadCheckedDropDownList combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/control-element-structure
 tags: control,element,structure
 published: True
@@ -9,18 +9,26 @@ position: 1
 previous_url: dropdown-and-listcontrol-checkeddropdownlist-control-element-structure
 ---
 
-# Control Element Structure
+# Structure
  
-This article will show you the most important parts of the structure of __RadCheckedDropDownList__
-
-## 
-
-Below are the key elements in __RadCheckedDropDownList__:
+This article describes the inner structure and organization of the elements which build __RadCheckedDropDownList__  control.
         
+>caption Figure 1: RadCheckedDropDownList's elements hierarchy
 
-* __RadCheckedDropDownListElement__: The main element of the control which holds all other elements. Can be accessed as follows: *RadCheckedDropDownList.__CheckedDropDownListElement__. It also gives you access to the popup which shows when the arrow button is clicked: RadCheckedDropDownList.CheckedDropDownListElement.__PopupForm__*
+![dropdown-and-listcontrol-checkedropdownlist-structure 001](images/dropdown-and-listcontrol-checkedropdownlist-structure001.png)
 
-* __RadCheckedDropDownListEditableAreaElement__: Contains the [editor]({%slug winforms/editors/autocompletebox%}) and the arrow button
-            
+>caption Figure 2: RadCheckedDropDownList's structure
 
-* __CheckedDropDownAutoCompleteBoxElement__: An instance of the [RadAutoCompleteBox]({%slug winforms/editors/autocompletebox%})
+![dropdown-and-listcontrol-checkedropdownlist-structure 002](images/dropdown-and-listcontrol-checkedropdownlist-structure002.png)
+
+1. __RadCheckedDropDownListElement__: The main element of the control which holds all other elements. It can be accessed by the RadCheckedDropDownList.__CheckedDropDownListElement__ property. It also gives you access to the popup which shows when the arrow button is clicked: RadCheckedDropDownList.CheckedDropDownListElement.__PopupForm__.  
+  1.1. __RadCheckedDropDownListEditableAreaElement__: Contains the [editor]({%slug winforms/editors/autocompletebox%}) and the arrow button.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. __CheckedDropDownAutoCompleteBoxElement__: An instance of the [RadAutoCompleteBox]({%slug winforms/editors/autocompletebox%})   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1.1. __AutoCompleteBoxViewElement__  
+  1.2. __RadDropDownListArrowButtonElement__: Expands the RadListElement.
+ 
+
+# See Also
+
+* [RadControlSpy]({%slug winforms/tools/controlspy%})
+* [Getting Started]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/getting-started%})

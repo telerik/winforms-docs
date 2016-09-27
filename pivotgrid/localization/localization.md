@@ -218,6 +218,9 @@ class MyEnglishPivotGridLoclizationProvider : PivotGridLocalizationProvider
             case PivotStringId.CalcualtedFields: return "Calculated Fields";
             case PivotStringId.Max: return "Max";
             case PivotStringId.NullValue: return "(blank)";
+            case PivotStringId.CellScreenTipValue: return "Value";
+            case PivotStringId.CellScreenTipRow: return "Row";
+            case PivotStringId.CellScreenTipColumn: return "Column";
             default: return base.GetLocalizedString(id);                  
         }           
     }
@@ -599,6 +602,12 @@ Class MyEnglishPivotGridLoclizationProvider
                 Return "Max"
             Case PivotStringId.NullValue
                 Return "(blank)"
+            Case PivotStringId.CellScreenTipValue
+                Return "Value"
+            Case PivotStringId.CellScreenTipRow
+                Return "Row"
+            Case PivotStringId.CellScreenTipColumn
+                Return "Column"
             Case Else
                 Return MyBase.GetLocalizedString(id)
         End Select

@@ -98,7 +98,17 @@ Finally, the text property should be set:
  
 
 {{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=SubscribeToCreateTextBlock}} 
-{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=SubscribeToCreateTextBlock}} 
+{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=SubscribeToCreateTextBlock}}
+````C#
+radAutoCompleteBox1.CreateTextBlock+=new CreateTextBlockEventHandler(radAutoCompleteBox1_CreateTextBlock);
+this.radAutoCompleteBox1.Text = "Euro;USD;GBP;";
+
+````
+````VB.NET
+AddHandler RadAutoCompleteBox1.CreateTextBlock, AddressOf radAutoCompleteBox1_CreateTextBlock
+Me.RadAutoCompleteBox1.Text = "Euro;USD;GBP;"
+
+```` 
 
 
 {{endregion}} 

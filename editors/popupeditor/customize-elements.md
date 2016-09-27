@@ -22,12 +22,12 @@ You can access the text box by using the __TextBoxElement__ property. This allow
 
 ````C#
 radPopupEditor1.TextBoxElement.Font = new Font("Arial", 12, FontStyle.Regular);
-radPopupEditor1.TextBoxElement.ForeColor = ColorTranslator.FromHtml("#008de7");
+radPopupEditor1.ForeColor = ColorTranslator.FromHtml("#008de7");
 
 ````
 ````VB.NET
 radPopupEditor1.TextBoxElement.Font = New Font("Arial", 12, FontStyle.Regular)
-radPopupEditor1.TextBoxElement.ForeColor = ColorTranslator.FromHtml("#008de7")
+radPopupEditor1.ForeColor = ColorTranslator.FromHtml("#008de7")
 
 ````
 

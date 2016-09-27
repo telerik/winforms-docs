@@ -12,7 +12,7 @@ position: 1
 
 This article will show the internal elements structure of __RadToggleButton__:
 
->caption Fig.1 RadToggleButton's elements hierarchy
+>caption Figure 1: RadToggleButton's elements hierarchy
 >
 ![buttons-togglebutton-structure 001](images/buttons-togglebutton-structure001.png)
 
@@ -22,6 +22,6 @@ This article will show the internal elements structure of __RadToggleButton__:
 	2\.2\. __TextPrimitive__: represents the toggle button's text
 3. __BorderPrimitive__: represents's the toggle button's border
 
->caption Fig.2 RadToggleButton's structure
+>caption Figure 2: RadToggleButton's structure
 
 ![buttons-togglebutton-structure 002](images/buttons-togglebutton-structure002.png)

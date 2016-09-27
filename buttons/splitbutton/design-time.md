@@ -17,7 +17,7 @@ To start using __RadSplitButton__ just drag it from the toolbox and drop it at t
 
 Select __RadSplitButton__ and click the small arrow on the top right position in order to open the Smart Tag.
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
 
 ![buttons-splitbutton-desing-time 001](images/buttons-splitbutton-design-time001.png)
 

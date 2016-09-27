@@ -12,7 +12,8 @@ position: 1
 
 This article will show the internal elements structure of __RadCheckBox__:
 
->caption Fig.1 RadCheckBox's elements hierarchy
+>caption Figure 1: RadCheckBox's elements hierarchy
+
 ![buttons-checkbox-structure 001](images/buttons-checkbox-structure001.png)
 
 1. __RadCheckmark__ <br>

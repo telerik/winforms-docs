@@ -1,6 +1,6 @@
 ---
 title: Chart Grid
-page_title: Chart Grid | UI for WinForms Documentation
+page_title: Chart Grid | ChartView
 description: RadChartView areas, which support axes, can render a grid that facilitate the process of determining the values of points afar from the axes. 
 slug: winforms/chartview/features/chart-grid
 tags: chart,grid

@@ -19,7 +19,7 @@ previous_url: pivotgrid-end-user-functionalities
 
 * __Context menu__ – the context menu in RadPivotGrid allows the user to execute various tasks depending on the element over which the menu was opened. <br>![pivotgrid-end-user-functionalities 003](images/pivotgrid-end-user-functionalities003.png)
 
-* __Selection, Copy/Paste__ – In RadPivotGrid you can select multiple cells using the mouse in a combination with the Shift/Control keys. Additionally, you can copy the selected data and paste in other text or spreadsheet editors. <br>![pivotgrid-end-user-functionalities 004](images/pivotgrid-end-user-functionalities004.png)
+* __Selection and Copying__ – In RadPivotGrid you can select multiple cells using the mouse in a combination with the Shift/Control keys. Additionally, you can copy the selected data and paste in other text or spreadsheet editors. <br>![pivotgrid-end-user-functionalities 004](images/pivotgrid-end-user-functionalities004.png)
 
 * __Drag & drop__ – with the built-in drag&drop functionality of RadPivotGrid the end-user can easily change the way data is aggregated. This can be done by dragging a field descriptor element to another descriptor area or changing the descriptors order within the same area. <br>![pivotgrid-end-user-functionalities 005](images/pivotgrid-end-user-functionalities005.png)
 

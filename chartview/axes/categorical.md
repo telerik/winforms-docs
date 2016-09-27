@@ -1,6 +1,6 @@
 ---
 title: Categorical
-page_title: Categorical | UI for WinForms Documentation
+page_title: Categorical | ChartView
 description: RadChartView uses Categorical axes to plot data that contains categorical values. The axis is valid only in the context of Cartesian Area type.
 slug: winforms/chartview-/axes/categorical
 tags: categorical

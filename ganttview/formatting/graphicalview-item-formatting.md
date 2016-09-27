@@ -22,12 +22,10 @@ private void radGanttView1_GraphicalViewItemFormatting(object sender, GanttViewG
     if (e.Item.Title.StartsWith("Select"))
     {
         e.ItemElement.TaskElement.BackColor = Color.Lime;
-        e.ItemElement.TaskElement.BackColor2 = Color.Yellow;
     }
     else
     {
         e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColor2Property, Telerik.WinControls.ValueResetFlags.Local);
     }
 }
 
@@ -36,10 +34,8 @@ private void radGanttView1_GraphicalViewItemFormatting(object sender, GanttViewG
 Private Sub radGanttView1_GraphicalViewItemFormatting(sender As Object, e As GanttViewGraphicalViewItemFormattingEventArgs)
     If (e.Item.Title.StartsWith("Select")) Then
         e.ItemElement.TaskElement.BackColor = Color.Lime
-        e.ItemElement.TaskElement.BackColor2 = Color.Yellow
     Else
         e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.ItemElement.TaskElement.ResetValue(LightVisualElement.BackColor2Property, Telerik.WinControls.ValueResetFlags.Local)
     End If
 End Sub
 

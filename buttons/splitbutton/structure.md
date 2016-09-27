@@ -12,7 +12,7 @@ position: 1
 
 This article will show the internal elements structure of __RadSplitButton__:
 
->caption Fig.1 RadDropDownButton's elements hierarchy
+>caption Figure 1: RadDropDownButton's elements hierarchy
 >
 ![buttons-splitbutton-structure 001](images/buttons-splitbutton-structure001.png)
 
@@ -21,6 +21,6 @@ This article will show the internal elements structure of __RadSplitButton__:
 3. __RadMenuItem__: represents the drop down item
 4. __RadDropDownButtonPopup__: represents the drop down
 
->caption Fig.2 RadDropDownButton's structure
+>caption Figure 2: RadDropDownButton's structure
 
 ![buttons-splitbutton-structure 002](images/buttons-splitbutton-structure002.png)

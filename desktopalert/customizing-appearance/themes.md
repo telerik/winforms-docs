@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | UI for WinForms Documentation
+page_title: Themes | RadDesktopAlert
 description: RadDesktopAlert component displays a small pop-up window on the screen to notify the user that a specific event has occurred in the application. 
 slug: winforms/desktopalert/customizing-appearance/themes
 tags: desktopalert, themes
@@ -25,6 +25,10 @@ This help article will demonstrate a step by step tutorial how to customize the 
 1. Modify the applied *text* repository item. 
 
 	![desktopalert-themes 002](images/desktopalert-themes002.png)
+
+1. You can see the result directly in the Visual Style Builder.
+	
+	![desktopalert-themes 003](images/desktopalert-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

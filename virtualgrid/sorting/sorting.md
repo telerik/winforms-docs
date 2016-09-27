@@ -34,12 +34,16 @@ Me.RadVirtualGrid1.AllowSorting = True
 
 #### Enabling multiple columns sorting
 
-{{source=..\SamplesCS\VirtualGrid\Sorting\VirtualGridSorting.cs region=AllowMultiColumnSorting}} 
-{{source=..\SamplesVB\VirtualGrid\Sorting\VirtualGridSorting.vb region=AllowMultiColumnSorting}}
+{{source=..\SamplesCS\VirtualGrid\Sorting\VirtualGridSorting.cs region=MultiColumnSorting}} 
+{{source=..\SamplesVB\VirtualGrid\Sorting\VirtualGridSorting.vb region=MultiColumnSorting}}
 
 ````C#
+this.radVirtualGrid1.AllowMultiColumnSorting = true;
+
 ````
 ````VB.NET
+Me.RadVirtualGrid1.AllowMultiColumnSorting = True
+
 ```` 
 
 {{endregion}}

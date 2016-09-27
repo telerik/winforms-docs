@@ -14,7 +14,7 @@ To start using __RadRepeatButton__ just drag it from the toolbox and drop it at 
 
 ## Smart Tag
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
 
 ![buttons-repeatbutton-desing-time 001](images/buttons-repeatbutton-design-time001.png)
 

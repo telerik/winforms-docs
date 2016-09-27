@@ -14,7 +14,8 @@ To start using __RadCheckBox__ just drag it from the toolbox and drop it at the 
 
 Select __RadCheckBox__ and click the small arrow on the top right position in order to open the Smart Tag.
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
+
 ![buttons-checkbox-desing-time 001](images/buttons-checkbox-desing-time001.png)
 
 * __Common Tasks__

@@ -1,6 +1,6 @@
 ---
 title: Inverse Axis
-page_title: Inverse Axis | UI for WinForms Documentation
+page_title: Inverse Axis | ChartView
 description: The IsInverse property of the abstract LineAxis class determines whether an axis of a __RadChartView__ will be reversed.
 slug: winforms/chartview-/axes/inverse-axis
 tags: inverse,axis

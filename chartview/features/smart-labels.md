@@ -1,6 +1,6 @@
 ---
 title: Smart Labels
-page_title: Smart labels | UI for WinForms Documentation
+page_title: Smart labels | ChartView
 description: RadChartView provides a built-in mechanism for resolving labels overlapping with the SmartLabelsController.
 slug: winforms/chartview-/features/smart-labels
 tags: smart,labels

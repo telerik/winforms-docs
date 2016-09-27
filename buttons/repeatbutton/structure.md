@@ -12,7 +12,7 @@ position: 1
 
 This article will show the internal elements structure of __RadRepeatButton__:
 
->caption Fig.1 RadRepeatButton's elements hierarchy
+>caption Figure 1: RadRepeatButton's elements hierarchy
 
 ![buttons-repeatbutton-structure 001](images/buttons-repeatbutton-structure001.png)
 
@@ -22,7 +22,7 @@ This article will show the internal elements structure of __RadRepeatButton__:
 	2\.2\. __TextPrimitive__: represents the repeat button's text
 3. __BorderPrimitive__: represents's the repeat button's border
 
->caption Fig.2 RadRepeatButton's structure
+>caption Figure 2: RadRepeatButton's structure
 
 ![buttons-repeatbutton-structure 002](images/buttons-repeatbutton-structure002.png)
  

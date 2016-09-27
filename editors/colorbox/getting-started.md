@@ -13,7 +13,7 @@ previous_url: editors-color-box-getting-started
 
 The following example demonstrates how to change the __ForeColor__  of __RadLabel__ by using the __RadColorBox__.
 		
->caption Figure 1: The label ForeColor is synchronized with the color box value.
+>caption Figure 1: Synchronize Color.
 
 ![editors-color-box-getting-started 001](images/editors-color-box-getting-started001.png)
  
@@ -40,7 +40,7 @@ End Sub
 
 {{endregion}} 
  
-3.\ Press __F5__ to run the application. Press the color dialog button and select a color. The color is then applied as __ForeColor__ of the __RadLabel__.
+3\. Press __F5__ to run the application. Press the color dialog button and select a color. The color is then applied as __ForeColor__ of the __RadLabel__.
 
 # See Also
 

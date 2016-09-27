@@ -78,7 +78,7 @@ RadDocument has implementations of the following annotation range types (each an
 * __CodeAnnotationRangeStart__ - these type of ranges surround code blocks. More information can be found [here]({%slug winforms/richtexteditor-/features/code-block%});
             
 
-* __CommentRangeStart__ - used for inserting comments in the document;  More information can be found [here]({%slug winforms/richtexteditor-/features/commnets%});
+* __CommentRangeStart__ - used for inserting comments in the document;  More information can be found [here]({%slug winforms/richtexteditor-/features/comments%});
             
 
 * __FieldRangeStartBase__ - a base class for the following FieldRange annotations:

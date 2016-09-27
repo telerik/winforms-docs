@@ -1,59 +1,61 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadCheckedDropDownList
+description: RadCheckedDropDownList combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area. 
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/getting-started
 tags: getting,started
 published: True
-position: 2
+position: 3
 previous_url: dropdown-and-listcontrol-getting-started
 ---
 
 # Getting Started
  
+The following tutorial demonstrates how to populate __RadCheckedDropDownList__ and how to react to a user's choice in code.
 
-## Design-Time Setup
-
-Here is how to setup __RadCheckedDropDownList__ at design time:
+>caption Figure 1: Adding items at design time
 
 ![dropdown-and-listcontrol-checkeddropdownlist-getting-started 001](images/dropdown-and-listcontrol-checkeddropdownlist-getting-started001.png)
 
-1\. Drag __RadCheckedDropDownList__ to a form and click the smart tag
+1\. Drag __RadCheckedDropDownList__ to a form and click the *Smart Tag*.
             
 
-2\. Click the *Edit Items* button
+2\. Click the *Edit Items* button.
             
 
-3\. Add a few items
+3\. Add a few items.
             
 
-4\. Check some of them
-            
+4\. Check some of them.
 
-## Run-Time Setup
+5\. In the *Properties* section in Visual Studio select the events button and double click the __ItemCheckedChanged__ event.
 
-Adding items at runtime is quite similar to the design-time prodcedure. Below you can see a sample code which shows how to add items and check them:
+6\. Replace the automatically generated event handler with this code:
 
-#### Add items 
+#### Handling ItemCheckedChanged event
 
 {{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\GettingStarted1.cs region=AddItems}} 
 {{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\GettingStarted1.vb region=AddItems}} 
 
 ````C#
-for (int i = 0; i < 10; i++)
+private void radCheckedDropDownList1_ItemCheckedChanged(object sender, RadCheckedListDataItemEventArgs e)
 {
-    this.radCheckedDropDownList1.Items.Add(new RadCheckedListDataItem("Item " + i, i % 2 == 0));
+      RadMessageBox.Show(" Item >> " + e.Item.Text + " Checked state >> " + e.Item.Checked);
 }
 
 ````
 ````VB.NET
-For i As Integer = 0 To 9
-    Me.RadCheckedDropDownList1.Items.Add(New RadCheckedListDataItem("Item " + i, i Mod 2 = 0))
-Next
+Private Sub radCheckedDropDownList1_ItemCheckedChanged(sender As Object, e As RadCheckedListDataItemEventArgs)
+    RadMessageBox.Show(" Item >> " + e.Item.Text + " Checked state >> " + e.Item.Checked)
+End Sub
 
 ````
 
-{{endregion}} 
-
+>caption Figure 2: Handling ItemCheckedChanged
 
 ![dropdown-and-listcontrol-checkeddropdownlist-getting-started 002](images/dropdown-and-listcontrol-checkeddropdownlist-getting-started002.png)
+
+# See Also
+
+* [Structure]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/control-element-structure%})
+* [Design Time]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/design-time%})

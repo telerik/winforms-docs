@@ -1,6 +1,6 @@
 ---
 title: Custom Labels Text
-page_title: Custom labels text | UI for WinForms Documentation
+page_title: Custom labels text | ChartView
 description: RadChartView allows you to easily change the axes labels text by using a custom format provider class.
 slug: winforms/chartview-/customization/custom-labels-text
 tags: custom,labels,text

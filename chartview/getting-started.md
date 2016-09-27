@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | ChartView
 description: RadChartView is a control developed on top of Telerik Presentation Framework. It incorporates various series types handling different business scenarios.
 slug: winforms/chartview/getting-started
 tags: getting,started

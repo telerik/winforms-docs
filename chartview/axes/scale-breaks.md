@@ -1,6 +1,6 @@
 ---
 title: Scale Breaks
-page_title: Scale Breaks | UI for WinForms Documentation
+page_title: Scale Breaks | ChartView
 description: The ScaleBreaks feature allows you to break off large chunks of the axis so that graphs with large amplitude are easier to read. ScaleBreaks are available for both axes of the plot area.
 slug: winforms/chartview-/axes/scale-breaks
 tags: scale,breaks

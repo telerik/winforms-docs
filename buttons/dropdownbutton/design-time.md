@@ -17,7 +17,8 @@ To start using __RadDropDownButton__ just drag it from the toolbox and drop it a
 
 Select __RadDropDownButton__ and click the small arrow on the top right position in order to open the Smart Tag.
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
+
 ![buttons-dropdownbutton-desing-time 001](images/buttons-dropdownbutton-design-time001.png)
 
 * __Common Tasks__

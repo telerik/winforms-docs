@@ -1,6 +1,6 @@
 ---
 title: Bar
-page_title: Bar | UI for WinForms Documentation
+page_title: Bar | ChartView
 description: BarSeries are used to visualize data points as bar blocks where the height of each bar denotes the magnitude of its value
 slug: winforms/chartview-/series-types/bar
 tags: bar

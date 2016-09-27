@@ -10,9 +10,9 @@ position: 1
 
 # Structure
 
-The bellow image shows the structure of RadColorBox.
+The bellow image shows the structure of __RadColorBox__.
 
->caption Figure 1: RadColorBox elements.
+>caption Figure 1: RadColorBox Elements.
 
 ![colorbox-structure 001](images/colorbox-structure001.png)
 
@@ -25,10 +25,9 @@ The bellow image shows the structure of RadColorBox.
 
 >caption Figure 2: The RadColorBox elements hierarchy.
 
- ![colorbox-structure 001](images/colorbox-structure002.png)
+![colorbox-structure 001](images/colorbox-structure002.png)
 
- # See Also
-
+# See Also
  
 * [Design Time]({%slug winforms/editors/design-time%})
 * [Getting Started]({%slug winforms/editors/colorbox/getting-started%})

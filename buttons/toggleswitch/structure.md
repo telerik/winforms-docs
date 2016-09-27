@@ -14,13 +14,13 @@ previous_url: buttons-toggleswitch-structure
 
 This article will show the internal elements structure of __RadToggleSwitch__:
 
->caption Fig.1 RadToggleSwitch's elements hierarchy
+>caption Fiure 1: RadToggleSwitch's elements hierarchy
 
 ![buttons-toggleswitch-structure 001](images/buttons-toggleswitch-structure002.png)
 
 This article describes the inner structure and organization of the elements which build the __RadToggleSwitch__ control.
         
->caption Fig.1 RadToggleSwitch visual structure
+>caption Figure 2: RadToggleSwitch visual structure
 
 ![buttons-toggleswitch-structure 001](images/buttons-toggleswitch-structure001.png)
 

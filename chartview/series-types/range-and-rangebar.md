@@ -1,6 +1,6 @@
 ---
 title: Range and RangeBar
-page_title: Range and RangeBar | UI for WinForms Documentation
+page_title: Range and RangeBar | ChartView
 description: The Range series allows you to define range with each data point. RangeBarSeries is visualized on the screen as separate rectangles representing each of the DataPoints.
 slug: winforms/chartview-/series-types/range-and-rangebar
 tags: range,and,rangebar

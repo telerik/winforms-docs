@@ -1,6 +1,6 @@
 ---
 title: Property Builder
-page_title: Property Builder | UI for WinForms Documentation
+page_title: Property Builder | ChartView
 description: RadChartView`s Property Builder provides advanced editing and customization options in the Visual Studio designer 
 slug: winforms/chartview/design-time/property-builder
 tags: property,builder

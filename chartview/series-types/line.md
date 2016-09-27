@@ -1,6 +1,6 @@
 ---
 title: Line
-page_title: Line | UI for WinForms Documentation
+page_title: Line | ChartView
 description: LineSeries plot their Categorical data points on Cartesian Area using one categorical and one numerical axis
 slug: winforms/chartview-/series-types/line
 tags: line

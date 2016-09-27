@@ -1,6 +1,6 @@
 ---
 title: Printing
-page_title: Printing | UI for WinForms Documentation
+page_title: Printing | ChartView
 description: RadChartView provides printing support, which allows you to print the chart content by using RadPrintDocument
 slug: winforms/chartview-/printing-support/printing
 tags: printing
