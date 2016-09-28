@@ -24,6 +24,7 @@ previous_url: dropdown-and-listcontrol-checkedropdownlist-properties-and-events
 |__Items__|Gets a collection representing the items contained in this RadCheckedDropDownList.|
 |__CheckedItems__|Gets a collection representing the checked items contained in this RadCheckedDropDownList.| 
 |__CheckedMember__|Gets or sets a string which will be used to get a description text string for each visual item. This property can not be set to null. Setting it to null will cause it to contain an empty string.|
+|__ShowCheckAllItems__|Show or Hide the *CheckAll* item.|
           
 ### Events
 

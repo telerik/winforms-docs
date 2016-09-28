@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/forms-and-dialogs/ribbonform/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 2
 previous_url: forms-and-dialogs-ribbonform-getting-started
 ---
 
