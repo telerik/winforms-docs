@@ -192,3 +192,8 @@ container.BorderBrush = New System.Drawing.SolidBrush(Color.Fuchsia)
 >caption Fig.5 RadDiagramContainerShape's appearance
 
 ![diagram-diagram-items-container-shapes 005](images/diagram-diagram-items-container-shapes005.png)
+
+# See Also
+  	
+* [Connections]({%slug winforms/diagram/diagram-items/connections%})	
+* [Shapes]({%slug winforms/diagram/diagram-items/shapes%})

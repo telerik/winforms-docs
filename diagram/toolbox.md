@@ -27,3 +27,8 @@ Since __RadDiagramToolbox__ is a separate control it is available in the toolbox
 
 1. Run the application. Now, you are allowed to drag any shape from the __RadDiagramToolbox__ and drop it onto the __RadDiagram__.  
             
+
+# See Also
+
+* [RibbonUI]({%slug winforms/diagram/ribbonui%})	
+* [Settings Pane]({%slug winforms/diagram/settings-pane%})	 

@@ -133,5 +133,11 @@ Me.RadDiagram1.DiagramElement.BackgroundGrid.LineStrokeThickness = 5
 
 {{endregion}} 
 
+# See Also
+
+* [RibbonUI]({%slug winforms/diagram/ribbonui%})	
+* [Settings Pane]({%slug winforms/diagram/settings-pane%})	
+* [Toolbox]({%slug winforms/diagram/toolbox%})
+
 
 

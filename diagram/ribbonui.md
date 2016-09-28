@@ -23,3 +23,7 @@ __RadDiagramRibbonBar__ can be found in the Toolbox of Visual Studio, if you hav
 
 __RadDiagramRibbonBar__ introduces UI for saving and loading predefined diagramming layouts. Additionally, you can manipulate the ZOrder of the shapes and perform clipboard operations.
         
+# See Also
+ 
+* [Settings Pane]({%slug winforms/diagram/settings-pane%})	
+* [Toolbox]({%slug winforms/diagram/toolbox%})

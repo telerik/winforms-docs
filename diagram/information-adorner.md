@@ -132,3 +132,9 @@ item.Height = 20
 >caption Fig.2 Custom Information Adorner
 
 ![diagram-information-adorner 002](images/diagram-information-adorner002.gif)
+
+# See Also
+
+* [RibbonUI]({%slug winforms/diagram/ribbonui%})	
+* [Settings Pane]({%slug winforms/diagram/settings-pane%})	
+* [Toolbox]({%slug winforms/diagram/toolbox%})

@@ -1,9 +1,9 @@
 ---
 title: Design Time
-page_title: Diagram (beta) | RadDiagram
+page_title: Diagram | RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications. 
-slug: winforms/diagram
-tags: diagram,(beta)
+slug: winforms/diagram/design-time
+tags: diagram
 published: True
 position: 2 
 ---
@@ -33,3 +33,9 @@ position: 2
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 
 * __Search__: Search the Telerik site for a given string.
+
+
+# See Also
+
+* [Structure]({%slug winforms/diagram/structure%})
+* [Getting Started]({%slug winforms/diagram/getting-started%})
