@@ -1,6 +1,6 @@
 ---
-title: Link type converter
-page_title: Link type converter | RadGanttView
+title: Link Type Converter
+page_title: Link Type Converter | RadGanttView
 description: Convert the data stored in your database to TasksLinkType and vice versa.
 slug: winforms/ganttview-/working-with-data/link-type-converter
 tags: link,type,converter
@@ -134,5 +134,10 @@ Me.RadGanttView1.LinkTypeConverter = New MyLinkTypeConverter()
 
 {{endregion}} 
 
+# See Also  
 
-
+* [Binding to Database]({%slug winforms/ganttview-/working-with-data/binding-to-database%})
+* [Data Binding Basics]({%slug winforms/ganttview-/working-with-data/data-binding-basics%})
+* [Importing XML from MS Project]({%slug winforms/ganttview-/working-with-data/importing-xml-from-ms-project%})
+* [Adding new items]({%slug winforms/ganttview-/working-with-data/adding-new-items%})
+* [Populating with Data Programmatically]({%slug winforms/ganttview-/working-with-data/populating-with-data-programmatically%})

@@ -39,3 +39,9 @@ The Smart Tag for __RadGanttView__ lets you quickly access common tasks involved
             
 
 * __Dock in parent container:__ Docks RadGanttView into its parent container.
+
+# See Also
+
+* [Adding items]({%slug winforms/ganttview-/design-time/adding-items%})
+* [Adding links]({%slug winforms/ganttview-/design-time/adding-links%})
+* [Adding columns]({%slug winforms/ganttview-/design-time/adding-columns%})

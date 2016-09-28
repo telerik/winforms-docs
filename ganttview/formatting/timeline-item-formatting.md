@@ -69,3 +69,11 @@ End Sub
 {{endregion}} 
 
 ![ganttview-formatting-timelineviewitem-formatting 001](images/ganttview-formatting-timelineviewitem-formatting001.png)
+
+# See Also
+
+* [GraphicalView item formatting]({%slug winforms/ganttview-/formatting/graphicalview-item-formatting%})
+* [GraphicalView Link Item formatting]({%slug winforms/ganttview-/formatting/graphicalview-link-item-formatting%})
+* [TextView item formatting]({%slug winforms/ganttview-/formatting/textview-item-formatting%})
+* [Themes]({%slug winforms/ganttview/themes%})
+* [Custom Painting]({%slug winforms/ganttview-/formatting/custom-painting%})

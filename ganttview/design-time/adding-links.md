@@ -24,3 +24,9 @@ The more important properties of the links you need to set up are:
             
 
 * __LinkType:__ Determines the type of the link (dependency) between the start and end items.
+
+# See Also
+
+* [Adding items]({%slug winforms/ganttview-/design-time/adding-items%})
+* [Adding columns]({%slug winforms/ganttview-/design-time/adding-columns%})
+* [Smart Tag]({%slug winforms/ganttview-/design-time/smart-tag%})

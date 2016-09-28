@@ -120,3 +120,7 @@ End Sub
 {{endregion}} 
 
 ![ganttview-printing-printing-events 003](images/ganttview-printing-printing-events003.png)
+
+# See Also
+
+* [Printing Support]({%slug winforms/ganttview-/printing-support%})

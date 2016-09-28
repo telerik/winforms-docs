@@ -1,6 +1,6 @@
 ---
-title: Data binding basics
-page_title: Data binding basics | RadGanttView
+title: Data Binding Basics
+page_title: Data Binding Basics | RadGanttView
 description: RadGanttView can be bound to any object that implements IList, IListSource or IBindingList interfaces.
 slug: winforms/ganttview-/working-with-data/data-binding-basics
 tags: data,binding,basics
@@ -164,3 +164,11 @@ Me.RadGanttView1.Columns.Add("End")
 
 
 ![ganttview-working-with-data-data-binding-basics 001](images/ganttview-working-with-data-data-binding-basics001.png)
+
+# See Also  
+
+* [Binding to Database]({%slug winforms/ganttview-/working-with-data/binding-to-database%})
+* [Adding new items]({%slug winforms/ganttview-/working-with-data/adding-new-items%})
+* [Importing XML from MS Project]({%slug winforms/ganttview-/working-with-data/importing-xml-from-ms-project%})
+* [Link Type Converter]({%slug winforms/ganttview-/working-with-data/link-type-converter%})
+* [Populating with Data Programmatically]({%slug winforms/ganttview-/working-with-data/populating-with-data-programmatically%})

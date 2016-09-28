@@ -1,6 +1,6 @@
 ---
-title: Editing graphical view
-page_title: Editing graphical view | RadGanttView
+title: Editing Graphical View
+page_title: Editing Graphical View | RadGanttView
 description: The graphical view of RadGanttView allows the users to modify several aspects of the tasks they are viewing.
 slug: winforms/ganttview-/editing/editing-graphical-view
 tags: editing,graphical,view
@@ -38,3 +38,9 @@ Users can create links (dependences) by doing the following:
 1. Finally the user should release the mouse over a link handle of another item. The link type is determined by the link handle where the operation started and the link handle where it ended.
             
 ![ganttview-editing-editing-graphicalview 001](images/ganttview-editing-editing-graphicalview001.gif)
+
+# See Also
+
+* [Customizing editor]({%slug winforms/ganttview-/editing/customizing-editor%})
+* [Creating custom editor]({%slug winforms/ganttview-/editing/creating-custom-editor%})
+* [Editing Text View]({%slug winforms/ganttview-/editing/editing-text-view%})

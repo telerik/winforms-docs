@@ -99,3 +99,12 @@ End Sub
 {{endregion}} 
 
 ![ganttview-formatting-textviewitem-cellformatting 002](images/ganttview-formatting-textviewitem-cellformatting002.png)
+
+
+# See Also
+
+* [GraphicalView item formatting]({%slug winforms/ganttview-/formatting/graphicalview-item-formatting%})
+* [GraphicalView Link Item formatting]({%slug winforms/ganttview-/formatting/graphicalview-link-item-formatting%})
+* [Custom Painting]({%slug winforms/ganttview-/formatting/custom-painting%})
+* [Themes]({%slug winforms/ganttview/themes%})
+* [Timeline item formatting]({%slug winforms/ganttview-/formatting/timeline-item-formatting%})

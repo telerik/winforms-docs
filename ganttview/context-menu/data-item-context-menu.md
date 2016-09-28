@@ -48,3 +48,9 @@ Me.radGanttView1.Items(0).Items(0).ContextMenu = ContextMenu2
 ![ganttview-context-menu-item-context-menu 001](images/ganttview-context-menu-item-context-menu001.png)
 
 ![ganttview-context-menu-item-context-menu 002](images/ganttview-context-menu-item-context-menu002.png)
+
+
+# See Also
+
+* [Modifying context menu]({%slug winforms/ganttview-/context-menu/modifying-context-menu%})
+* [Default context menu]({%slug winforms/ganttview-/context-menu/default-context-menu%})

@@ -1,6 +1,6 @@
 ---
-title: Editing text view
-page_title: Editing text view | RadGanttView
+title: Editing Text View
+page_title: Editing Text View | RadGanttView
 description: The editing process in the text view of RadGanttView goes through a similar lifecycle as other controls using our editors system.
 slug: winforms/ganttview-/editing/editing-text-view
 tags: editing,text,view
@@ -60,3 +60,8 @@ During the editing process there are a number of events that are fired at variou
 
 1. __ItemEdited:__ Fires when the editing process is finished.
             
+# See Also
+
+* [Customizing editor]({%slug winforms/ganttview-/editing/customizing-editor%})
+* [Editing Graphical View]({%slug winforms/ganttview-/editing/editing-graphical-view%})
+* [Creating custom editor]({%slug winforms/ganttview-/editing/creating-custom-editor%})

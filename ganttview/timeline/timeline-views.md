@@ -1,6 +1,6 @@
 ---
-title: Timeline views
-page_title: Timeline views | RadGanttView
+title: Timeline Views
+page_title: Timeline Views | RadGanttView
 description: Timeline views
 slug: winforms/ganttview-/timeline/timeline-views
 tags: timeline,views
@@ -183,3 +183,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 
 ![ganttview-timeline-timeline-views 009](images/ganttview-timeline-timeline-views009.png)
+
+# See Also
+
+* [Custom Timeline]({%slug winforms/ganttview-/timeline/custom-timeline%})

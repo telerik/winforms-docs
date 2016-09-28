@@ -45,3 +45,8 @@ The __Progress__ option allows you to set the progress of a task to a certain va
 >caption Figure 4: Setting the progress with the context menu.
         
 ![ganttview-context-menu-default-context-menu 007](images/ganttview-context-menu-default-context-menu007.png)
+
+# See Also
+
+* [Data item context menu]({%slug winforms/ganttview-/context-menu/data-item-context-menu%})
+* [Modifying context menu]({%slug winforms/ganttview-/context-menu/modifying-context-menu%})

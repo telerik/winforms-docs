@@ -41,5 +41,9 @@ End Sub
 
 {{endregion}} 
 
+# See Also
 
+* [Creating custom editor]({%slug winforms/ganttview-/editing/creating-custom-editor%})
+* [Editing Graphical View]({%slug winforms/ganttview-/editing/editing-graphical-view%})
+* [Editing Text View]({%slug winforms/ganttview-/editing/editing-text-view%})
 

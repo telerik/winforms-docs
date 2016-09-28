@@ -42,3 +42,7 @@ The following table demonstrates the similarities and differences between the it
 |Summary|True|True|True|False|
 |Milestone|True|False|False|False|
 |Task|True|True|True|True|
+
+# See Also
+
+* [Structure]({%slug winforms/ganttview-/structure%})

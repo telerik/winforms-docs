@@ -1,4 +1,4 @@
----
+ ---
 title: Overview
 page_title: Printing Support | RadGanttView
 description: RadGanttView provides options to print its content using a RadPrintDocument.
@@ -80,3 +80,7 @@ Other options include:
 * __TimelineBottomRowForeColor:__ Defines the fore color for the lower timeline cells.
 
 * __TimelineBottomRowFont:__ Defines the font for the lower timeline cells.             
+
+# See Also
+
+* [Printing Events]({%slug winforms/ganttview-/printing-support/printing-events%})

@@ -36,3 +36,9 @@ The more important properties of the item you need to set up are:
             
 
 * __Progress:__ Allows you to set the completion of the task.
+
+# See Also
+
+* [Adding columns]({%slug winforms/ganttview-/design-time/adding-columns%})
+* [Adding links]({%slug winforms/ganttview-/design-time/adding-links%})
+* [Smart Tag]({%slug winforms/ganttview-/design-time/smart-tag%})

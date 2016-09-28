@@ -26,3 +26,7 @@ The user can use the keyboard commands in the below table to navigate in the gan
 |Esc|If the current cell is in edit mode, end edit and discards any changes.|
 |Home|Moves the selection to the first visible item.|
 |End|Moves the selection to the last visible item.|
+
+# See Also
+
+* [Mouse navigation]({%slug winforms/ganttview-/usability/mouse-navigation%})

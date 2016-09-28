@@ -44,4 +44,6 @@ timelineTodayIndicator.BackColor2 = Color.Green
 {{endregion}} 
 
 
+# See Also
 
+* [Properties]({%slug winforms/ganttview/properties%})

@@ -149,3 +149,9 @@ End Sub
 {{endregion}} 
 
 ![ganttview-editing-creating-a-custom-editor 001](images/ganttview-editing-creating-a-custom-editor001.png)
+
+# See Also
+
+* [Customizing editor]({%slug winforms/ganttview-/editing/customizing-editor%})
+* [Editing Graphical View]({%slug winforms/ganttview-/editing/editing-graphical-view%})
+* [Editing Text View]({%slug winforms/ganttview-/editing/editing-text-view%})

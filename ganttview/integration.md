@@ -54,3 +54,6 @@ End Sub
 {{endregion}} 
 
 ![ganttview-integration 001](images/ganttview-integration001.png)
+
+# See Also
+* [RadScheduler]({%slug winforms/scheduler%})

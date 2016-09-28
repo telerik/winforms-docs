@@ -2,7 +2,7 @@
 title: Properties, events and methods.
 page_title: Properties Events and methods| RadGanttView
 description: This article list the most important properties of RadGanttView. 
-slug: winforms/ganttview/Properties
+slug: winforms/ganttview/properties
 tags: properties,events,methods
 published: True
 position: 10
@@ -67,3 +67,9 @@ position: 10
 |__EndUpdate__|Ends the update.|
 
 Complete list of Properties events and methods can be found in the API Reference: [RadGanttView](http://docs.telerik.com/devtools/winforms/api/html/t_telerik_wincontrols_ui_radganttview.htm) 
+
+# See Also
+
+* [Today Indicator]({%slug winforms/ganttview-/today-indicator%})
+* [Localization]({%slug winforms/ganttview-/localization%})
+* [Structure]({%slug winforms/ganttview-/structure%})

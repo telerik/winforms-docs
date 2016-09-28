@@ -286,5 +286,7 @@ End Function
 
 {{endregion}} 
 
+# See Also
 
+* [Timeline views]({%slug winforms/ganttview-/timeline/timeline-views%})
 

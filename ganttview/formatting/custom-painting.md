@@ -1,6 +1,6 @@
 ---
-title: Custom painting
-page_title: Custom painting | RadGanttView
+title: Custom Painting
+page_title: Custom Painting | RadGanttView
 description: RaddGanttView allows developers to directly draw over the control through its Graphics object.
 slug: winforms/ganttview-/formatting/custom-painting
 tags: custom,painting
@@ -107,4 +107,10 @@ End Sub
 
 ![ganttview-formatting-custom-paiting 002](images/ganttview-formatting-custom-paiting002.png)
 
+# See Also
 
+* [GraphicalView item formatting]({%slug winforms/ganttview-/formatting/graphicalview-item-formatting%})
+* [GraphicalView Link Item formatting]({%slug winforms/ganttview-/formatting/graphicalview-link-item-formatting%})
+* [TextView item formatting]({%slug winforms/ganttview-/formatting/textview-item-formatting%})
+* [Themes]({%slug winforms/ganttview/themes%})
+* [Timeline item formatting]({%slug winforms/ganttview-/formatting/timeline-item-formatting%})

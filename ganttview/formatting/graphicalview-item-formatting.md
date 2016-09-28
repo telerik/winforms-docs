@@ -45,3 +45,11 @@ End Sub
 
 
 ![ganttview-formatting-graphicalviewitem-formatting 001](images/ganttview-formatting-graphicalviewitem-formatting001.png)
+
+# See Also
+
+* [Custom Painting]({%slug winforms/ganttview-/formatting/custom-painting%})
+* [GraphicalView Link Item formatting]({%slug winforms/ganttview-/formatting/graphicalview-link-item-formatting%})
+* [TextView item formatting]({%slug winforms/ganttview-/formatting/textview-item-formatting%})
+* [Themes]({%slug winforms/ganttview/themes%})
+* [Timeline item formatting]({%slug winforms/ganttview-/formatting/timeline-item-formatting%})

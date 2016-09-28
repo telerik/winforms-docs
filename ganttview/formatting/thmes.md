@@ -25,3 +25,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
    ![radganttview-themes003](images/radganttview-themes003.png)
 
 >note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
+
+# See Also
+
+* [GraphicalView item formatting]({%slug winforms/ganttview-/formatting/graphicalview-item-formatting%})
+* [GraphicalView Link Item formatting]({%slug winforms/ganttview-/formatting/graphicalview-link-item-formatting%})
+* [TextView item formatting]({%slug winforms/ganttview-/formatting/textview-item-formatting%})
+* [Custom Painting]({%slug winforms/ganttview-/formatting/custom-painting%})
+* [Timeline item formatting]({%slug winforms/ganttview-/formatting/timeline-item-formatting%})

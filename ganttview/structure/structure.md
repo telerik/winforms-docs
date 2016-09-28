@@ -56,3 +56,6 @@ The main elements of the structure of __RadGanttView__ are displayed below:
 
 1. __GanttGraphicalViewBaseTaskElement__ is the base type for the task elements.
             
+# See Also
+
+* [Item types]({%slug winforms/ganttview/structure/item-types%})

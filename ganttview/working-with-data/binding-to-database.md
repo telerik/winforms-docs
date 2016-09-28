@@ -1,6 +1,6 @@
 ---
-title: Binding to database
-page_title: Binding to database | RadGanttView
+title: Binding to Database
+page_title: Binding to Database | RadGanttView
 description: RadGanttView supports binding to Database data. Levels are created using the Parent and Child members' values.
 slug: winforms/ganttview-/working-with-data/binding-to-database
 tags: binding,to,database
@@ -63,3 +63,11 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineEnd = New DateTim
 {{endregion}} 
 
 ![ganttview-working-with-data-binding-to-database 005](images/ganttview-working-with-data-binding-to-database006.png)
+
+# See Also  
+
+* [Adding new items]({%slug winforms/ganttview-/working-with-data/adding-new-items%})
+* [Data Binding Basics]({%slug winforms/ganttview-/working-with-data/data-binding-basics%})
+* [Importing XML from MS Project]({%slug winforms/ganttview-/working-with-data/importing-xml-from-ms-project%})
+* [Link Type Converter]({%slug winforms/ganttview-/working-with-data/link-type-converter%})
+* [Populating with Data Programmatically]({%slug winforms/ganttview-/working-with-data/populating-with-data-programmatically%})
