@@ -1,7 +1,7 @@
 ---
-title: Auto-Size Entire Row text
-page_title: Adding and Inserting Rows | UI for WinForms Documentation
-description: Adding and Inserting Rows
+title: Auto-Size Entire Row Text
+page_title: Auto-Size Entire Row Text | RadGridView
+description: This article will explain how you can measure the entire row so the row height is constant while the users are scrolling horizontally.
 slug: winforms/gridview/rows/how-to/auto-size
 tags: auto-size,rows
 published: True
