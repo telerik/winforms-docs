@@ -425,6 +425,9 @@ navigation:
     forms-and-dialogs/ribbonform:
         title: RibbonForm
         position: 2
+    forms-and-dialogs/ribbonform/customizing-appearance:
+        title: Customizing Appearance
+        position: 4
     forms-and-dialogs/shapedform:
         title: ShapedForm
         position: 3
