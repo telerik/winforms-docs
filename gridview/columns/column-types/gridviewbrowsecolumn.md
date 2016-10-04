@@ -11,11 +11,11 @@ previous_url: gridview-columns-gridviewbrowsecolumn
 
 # GridViewBrowseColumn
 
+__GridViewBrowseColumn__ allows __RadGridView__ to edit file paths using __OpenFileDialog__. The default editor of the column is __GridBrowseEditor__. 
 
+![gridview-columns-gridviewbrowsecolumn 001](images/gridview-columns-gridviewbrowsecolumn001.png)
 
-__GridViewBrowseColumn__ allows __RadGridView__ to edit file paths using __OpenFileDialog__. The default editor of the column is __GridBrowseEditor__. ![gridview-columns-gridviewbrowsecolumn 001](images/gridview-columns-gridviewbrowsecolumn001.png)
-
-__GridViewBrowseColumn__ is never auto-generated. The following code snippet demonstrates how to create and add the column to RadGridView and also add some example data for it:
+__GridViewBrowseColumn__ is never auto-generated. The following code snippet demonstrates how to create and add the column to RadGridView and also add some sample data for it:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewBrowseColumn1.cs region=addBrowseColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewBrowseColumn1.vb region=addBrowseColumn}} 

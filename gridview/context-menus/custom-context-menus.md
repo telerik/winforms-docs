@@ -11,11 +11,9 @@ previous_url: gridview-context-menus-custom-context-menus
 
 # Custom Context Menus
 
-
-
-## 
-
 __RadGridView__ provides a straightforward way to use custom context menus, instead of the default one. This context menu will appear every time the user right-clicks the __RadGridView__, regardless of the element of the control they click.
+
+>caption Figure 1: Custom Context Menu.
 
 ![gridview-context-menus-custom-context-menus 001](images/gridview-context-menus-custom-context-menus001.png)
 
@@ -55,9 +53,6 @@ End Sub
 ````
 
 {{endregion}} 
-
-
-
 
 Once the menu object has been initialized and populated with menu items, it is ready to be attached to the __RadGridView__. To do that, subscribe to the __ContextMenuOpening__ event and set the context menu to be displayed:
 

@@ -5,7 +5,7 @@ description: Working with ColumnChooser
 slug: winforms/gridview/columns/working-with-columnchooser
 tags: working,with,columnchooser
 published: True
-position: 6
+position: 8
 previous_url: gridview-columns-working-with-column-chooser
 ---
 
@@ -31,7 +31,7 @@ RadGridView1.MasterTemplate.AllowColumnChooser = False
 
 {{endregion}}
 
-__AllowHide__ – this property determines whether the column is allowed to be moved to the Column Chooser. By default this property is set to true for all columns 
+__AllowHide:__ this property determines whether the column is allowed to be moved to the Column Chooser. By default this property is set to *true* for all columns 
 
 #### Determines if the specified column is allowed to be dragged to the column chooser dialog
 
@@ -49,7 +49,7 @@ RadGridView1.Columns("CategoryName").AllowHide = False
 
 {{endregion}}
 
-__VisibleInColumnChooser__ – by setting this property for each column you determine whether the column will be visible in the Column Chooser when dragged to it. By default this property is set to true for all columns:
+__VisibleInColumnChooser:__ by setting this property for each column you determine whether the column will be visible in the Column Chooser when dragged to it. By default this property is set to *true* for all columns:
 
 #### Determines if the specified column is going to be visible in the column chooser dialog
 
@@ -67,7 +67,7 @@ RadGridView1.Columns("Picture").VisibleInColumnChooser = False
 
 {{endregion}}
 
-In order to customize the Column Chooser you can access it directly from the instance of radGridView, as shown in the following example:
+In order to customize the Column Chooser you can access it directly from the instance of RadGridView, as shown in the following example:
 
 #### Accessing and customizing the column chooser
 

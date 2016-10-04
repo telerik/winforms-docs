@@ -5,7 +5,7 @@ description: Pinning and Unpinning Columns
 slug: winforms/gridview/columns/pinning-and-unpinning-columns
 tags: pinning,and,unpinning,columns
 published: True
-position: 5
+position: 7
 previous_url: gridview-columns-pinning-and-unpinning-columns
 ---
 
@@ -13,7 +13,7 @@ previous_url: gridview-columns-pinning-and-unpinning-columns
 
 ## Pinning single column
 
-Columns in RadGridView can be pinned which will result in the pinned columns being anchored to the left or right side of the grid. To pin a particular column, set its __IsPinned__ property of the __Columns collection item__ to *True*. This will pin the column to the left size of RadGridView. In order to change the position where the column should be pinned you have to use the __PinPosition__ property of the particular column and choose a value from the provided enumeration. The code block below shows pinning the third column (called “FirstName) in the RadGridView:
+Columns in RadGridView can be pinned which will result in the pinned columns being anchored to the left or right side of the grid. To pin a particular column, set its __IsPinned__ property of the __Columns collection item__ to *True*. This will pin the column to the left side of RadGridView. In order to change the position where the column should be pinned you have to use the __PinPosition__ property of the particular column and choose a value from the provided enumeration. The code block below shows pinning the third column (called "FirstName") in the RadGridView:
 
 #### Pinning a single columns
 
@@ -34,7 +34,7 @@ Me.RadGridView1.Columns("FirstName").IsPinned = True
 
 {{endregion}}
 
-In order to pin the column to the right side of RadGridView consider the following code snippet: ![gridview-columns-pinning-and-unpinning-columns 001](images/gridview-columns-pinning-and-unpinning-columns001.png)
+![gridview-columns-pinning-and-unpinning-columns 001](images/gridview-columns-pinning-and-unpinning-columns001.png)
 
 ## Pinning multiple columns 
 

@@ -11,10 +11,6 @@ previous_url: gridview-columns
 
 # Columns
 
-
-
-## 
-
 The __Columns__ in RadGridView are the fundamental meta-objects for data source representation. They provide the structure according to which __rows__ are composed. The term __cell__ is often used interchangeably with __column__, although many consider it more correct to use __cell__ to refer specifically to the single item that  [Rows]({%slug winforms/gridview/rows/gridviewrowinfo%}) and [Cells]({%slug winforms/gridview/cells/gridviewcellinfo%}) topics for more information on these objects).
 
 This chapter gives you detailed information about the RadGridView columns. The covered topics are:

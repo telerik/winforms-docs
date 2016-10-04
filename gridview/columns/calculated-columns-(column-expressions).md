@@ -5,7 +5,7 @@ description: Calculated Columns (Column Expressions)
 slug: winforms/gridview/columns/calculated-columns-(column-expressions)
 tags: calculated,columns,(column,expressions)
 published: True
-position: 8
+position: 10
 previous_url: gridview-columns-calculated-columns-(column-expressions)
 ---
 
@@ -13,7 +13,7 @@ previous_url: gridview-columns-calculated-columns-(column-expressions)
 
 A calculated column is identified by an expression. The only condition necessary to make a regular column behave like a calculated column is to set an expression to it. 
 
-The following code snippet demonstrates how the standard deviation of the *Consumption *column can be computed for each month in the *Deviation* column.
+The following code snippet demonstrates how the standard deviation of the *Consumption* column can be computed for each month in the *Deviation* column.
 
 #### Creating a calculated column
 
@@ -45,7 +45,7 @@ RadGridView1.Columns("Calculated Column").Expression = "UnitsOnOrder * UnitPrice
 
 An expression is evaluated to a value by combining values from multiple cells of the same row and aggregates on the columns using the provided operators. 
 
-For decimal columns, you can use simple arithmetic operators like + and *. You can also use logical operators like '=' and '<'. 
+For decimal columns, you can use simple arithmetic operators like '+' and '*'. You can also use logical operators like '=' and '<'. 
 
 Boolean operators (AND, OR, NOT) are also allowed as well as more complex operators like IN, LIKE, and % (modulus). Operators take the usual precedence. You can alter this precedence using parentheses. 
 

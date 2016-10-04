@@ -5,15 +5,11 @@ description: GridViewDataColumn
 slug: winforms/gridview/columns/column-types/gridviewdatacolumn
 tags: gridviewdatacolumn
 published: True
-position: 1
-previous_url: gridview-columns-gridviewdatacolumn
+position: 2
+previous_url: gridview-columns-gridviewdatacolumn, /devtools/winforms/gridview/columns/column-types/gridviewdatacolumn
 ---
 
 # GridViewDataColumn
-
-
-
-## 
 
 __GridViewDataColumn__ descends from __GridViewColumn__ and is the base class for all data bound column types. Using __GridViewDataColumn__ you can find out the data type for the column and other properties that relate specificly to data binding including:
 

@@ -11,21 +11,17 @@ previous_url: gridview-editors-data-validation
 
 # Data validation
 
-
-
-## 
-
 __RadGridView__ provides a convenient way to perform validation before data is committed to the underlying data source. You can validate data by handling __CellValidating__ event which is raised by __RadGridView__ when the current cell changes or when the cell loses input focus (when pressing Enter key). Canceling this event prevents the user from exiting the cell until a valid editor value is entered or the edit process is canceled. The __RowValidating__ event can be used the same way to prevent the user from exiting the current row.
 
 Here is a list of all validation events:
 
-__CellValidating__ – Fires when a cell loses input focus, enabling content validation.
+__CellValidating:__ Fires when a cell loses input focus, enabling content validation.
 
-__CellValidated__ – Fires after the cell has finished validating.
+__CellValidated:__ Fires after the cell has finished validating.
 
-__RowValidating__ – Fires when a row is validating.
+__RowValidating:__ Fires when a row is validating.
 
-__RowValidated__ – Fires after a row has finished validating.
+__RowValidated:__ Fires after a row has finished validating.
 
 The __GridViewDataRowInfo.ErrorText__ property can be used to indicate validation errors. It will show an error indicator at the row header when you set this property to a non empty string.
 
@@ -69,9 +65,6 @@ Private Sub RadGridView1_CellValidating(ByVal sender As Object, ByVal e As Teler
 ````
 
 {{endregion}} 
-
-
-
 
 >note You can watch the [Validation with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/radgridview/validation-with-radgridview-winforms) video regarding the usage of RadGridView built-in validation.
 >

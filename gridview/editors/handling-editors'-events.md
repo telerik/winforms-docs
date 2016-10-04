@@ -11,14 +11,9 @@ previous_url: gridview-editors-handling-editors-events
 
 # Handling Editors' events
 
-
-
-## 
-
 In some cases you may need to perform a specific operation depending on the user input in the editor while the editor is still opened.
 
-
-For example if you are in GridViewTextBoxColumn, the editor for the cells in this column is RadTextBoxEditor. You may need to set specific text in the text box editor when the user presses CTRL + L. In this case, you should subscribe to the KeyDown event of the RadTextBoxEditorElement in the CellEditorInitialized event handler. The editors in RadGridView are reused, so we define a field which prevents us from subscribing to the KeyDown more than once.
+For example if you are in __GridViewTextBoxColumn__, the editor for the cells in this column is __RadTextBoxEditor__. You may need to set specific text in the text box editor when the user presses CTRL + L. In this case, you should subscribe to the __KeyDown__ event of the __RadTextBoxEditorElement__ in the __CellEditorInitialized__ event handler. The editors in RadGridView are reused, so we define a field which prevents us from subscribing to the __KeyDown__ more than once.
 
 {{source=..\SamplesCS\GridView\Editors\HandlingEditorsEvents.cs region=HandlingEditorsEvents}} 
 {{source=..\SamplesVB\GridView\Editors\HandlingEditorsEvents.vb region=HandlingEditorsEvents}} 
@@ -81,7 +76,4 @@ End Sub
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

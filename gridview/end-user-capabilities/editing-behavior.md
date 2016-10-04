@@ -13,9 +13,9 @@ previous_url: gridview-end-user-capabilities-editing-behavior
 
 To begin editing using the mouse:
 
-1. Select a row
+1. Select a row.
 
-1. Click on the respective cell 
+1. Click on the respective cell.
 
 1. Click once more to open the editor. 
 

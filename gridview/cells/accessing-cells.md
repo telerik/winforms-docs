@@ -11,9 +11,7 @@ previous_url: gridview-cells-accessing-cells
 
 # Accessing Cells
 
-
-
-Cells can be accessed by index or via the column __Name__ property.
+Cells can be accessed by index or the column __Name__ property.
 
 >note RadGridView uses virtualization for its visual elements. This means that only the rows that are currently visible have a visual element. When the grid is scrolled up and down the visual elements are reused. Because of the virtualization, it is safe to use the __CellElement__ only inside the __CellFormatting__ event and only for the current cell.
 >
@@ -21,27 +19,6 @@ Cells can be accessed by index or via the column __Name__ property.
 >note When assigning values to several cells subsequently, the RadGridView should be placed between __BeginUpdate()__ and __EndUpdate()__ method invocations of the desired template. See section "Multiple assignments of cell values" below for more information.
 >
 
-
-## Accessing cells by index
-
-The example below modifies the second cell of the first row and sets a value greater than 10 back to 10.
-
-{{source=..\SamplesCS\GridView\Cells\AccessingCells.cs region=accessingCellsByIndex}} 
-{{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=accessingCellsByIndex}} 
-
-````C#
-if ((decimal)radGridView1.Rows[0].Cells[5].Value > 10)
-    radGridView1.Rows[0].Cells[5].Value = 10;
-
-````
-````VB.NET
-If DirectCast(RadGridView1.Rows(0).Cells(5).Value, Decimal) > 10 Then
-    RadGridView1.Rows(0).Cells(5).Value = 10
-End If
-
-````
-
-{{endregion}} 
 
 ## Accessing cells by column Name
 
@@ -64,18 +41,39 @@ End If
 
 {{endregion}} 
 
+>caption Figure 1: Before setting the value.
 
+![gridview-cells-accessing-cells 001](images/gridview-cells-accessing-cells001.png)
 
+>caption Figure 2: After the value is set.
 
-Before<br>![gridview-cells-accessing-cells 001](images/gridview-cells-accessing-cells001.png)
+![gridview-cells-accessing-cells 002](images/gridview-cells-accessing-cells002.png)
 
-After<br>![gridview-cells-accessing-cells 002](images/gridview-cells-accessing-cells002.png)
+## Accessing cells by index
 
+The example below modifies the second cell of the first row and sets a value greater than 10 back to 10.
+
+{{source=..\SamplesCS\GridView\Cells\AccessingCells.cs region=accessingCellsByIndex}} 
+{{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=accessingCellsByIndex}} 
+
+````C#
+if ((decimal)radGridView1.Rows[0].Cells[5].Value > 10)
+    radGridView1.Rows[0].Cells[5].Value = 10;
+
+````
+````VB.NET
+If DirectCast(RadGridView1.Rows(0).Cells(5).Value, Decimal) > 10 Then
+    RadGridView1.Rows(0).Cells(5).Value = 10
+End If
+
+````
+
+{{endregion}} 
 
 
 ## Multiple assignments of cell values
 
-When assigning values to several cells subsequently, the RadGridView should be placed between __BeginUpdate()__ and __EndUpdate()__ method invocations of the desired template. This way of setting multiple assignments is recommended for performance considerations. For example if you have added a sorting descriptor to RadGridView and you enter/modify five cell values without using these methods, the sorting mechanism will recreate the whole grid five times, which will slow it down. On the other hand if this is done between the suggested methods, the sorting mechanism will run only once, right after calling __EndUpdate()__ method. 
+When assigning values to several cells subsequently, the __RadGridView__ should be placed between __BeginUpdate__ and __EndUpdate__ method invocations of the desired template. This way of setting multiple assignments is recommended for performance considerations. For example if you have added a sorting descriptor to __RadGridView__ and you enter/modify five cell values without using these methods, the sorting mechanism will recreate the whole grid five times, which will slow it down. On the other hand if this is done between the suggested methods, the sorting mechanism will run only once, right after calling __EndUpdate__ method. 
 
 {{source=..\SamplesCS\GridView\Cells\AccessingCells.cs region=updateCells}} 
 {{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=updateCells}} 
@@ -103,7 +101,7 @@ Me.RadGridView1.TableElement.EndUpdate()
 
 {{endregion}} 
 
+>caption Figure 3: Setting multiple values.
 
 ![gridview-cells-accessing-cells 003](images/gridview-cells-accessing-cells003.png)
 
-To style a cell use [Conditional Formatting]({%slug winforms/gridview/cells/conditional-formatting-cells%}).

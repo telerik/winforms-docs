@@ -11,10 +11,6 @@ previous_url: gridview-editors-using-custom-editors
 
 # Using custom editors
 
-
-
-## 
-
 This following snippet demonstrates how to replace the standard spin editor with a track bar.
 
 All grid editors inherit from __BaseGridEditor__. So, you have to inherit from this class and override several methods:
@@ -105,11 +101,6 @@ End Class
 
 {{endregion}} 
 
-
-
-
-
-
 We use the standard __RadTrackBar__ element in this example with some modification to enable keyboard navigation:
 
 {{source=..\SamplesCS\GridView\Editors\UsingCustomEditors.cs region=trackBarEditorElement}} 
@@ -182,11 +173,6 @@ End Class
 ````
 
 {{endregion}} 
-
-
-
-
-
 
 The __EditorRequired__ event is the correct place to replace the default editor:
 

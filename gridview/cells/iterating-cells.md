@@ -11,8 +11,6 @@ previous_url: gridview-cells-iterating-cells
 
 # Iterating Cells
 
-
-
 You can iterate through the cells of each row using the __Cells__ collection of [GridViewCellInfo]({%slug winforms/gridview/cells/gridviewcellinfo%}). The example below firstly iterates the rows of the grid, then the cells for each row:
 
 {{source=..\SamplesCS\GridView\Cells\IteratingCells.cs region=iteratingCells}} 
@@ -50,6 +48,10 @@ Next
 >
 
 
-Before<br>![gridview-cells-iterating-cells 001](images/gridview-cells-iterating-cells001.png)
+>caption Figure 1: Before the cell values are changed
 
-After<br>![gridview-cells-iterating-cells 002](images/gridview-cells-iterating-cells002.png)
+![gridview-cells-iterating-cells 001](images/gridview-cells-iterating-cells001.png)
+
+>caption Figure 2: After the cell values are changed. 
+
+![gridview-cells-iterating-cells 002](images/gridview-cells-iterating-cells002.png)

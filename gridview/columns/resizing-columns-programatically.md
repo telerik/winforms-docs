@@ -5,7 +5,7 @@ description: Resizing columns programatically
 slug: winforms/gridview/columns/resizing-columns-programatically
 tags: resizing,columns,programatically
 published: True
-position: 4
+position: 6
 previous_url: gridview-columns-resizing-columns-programatically
 ---
 
@@ -13,7 +13,9 @@ previous_url: gridview-columns-resizing-columns-programatically
 
 ## Resizing columns
 
-The columns inside the RadGridView are resizable by default. The user is able to easily change the column width by positioning the mouse over the columns vertical grid line and dragging it until the desired size is achieved. <br>![](images/gridview-columns-rezise-columns001.png)
+The columns inside the RadGridView are resizable by default. The user is able to easily change the column width by positioning the mouse over the columns vertical grid line and dragging it until the desired size is achieved. 
+
+![gridview-columns-rezise-columns001](images/gridview-columns-rezise-columns001.png)
 
 ## Disabling resizing
 
@@ -57,7 +59,7 @@ Me.RadGridView1.Columns("Photo").AllowResize = False
 
 ## Programatically resizing columns
 
-The width of columns can be set individually, per column. Note that the visible width will always include some amount of data even when set  to very small amounts. To resize the columns programmatically you can use the __Width__ property. For example: 
+The width of columns can be set individually, per column. Note that the visible width will always include some amount of data even when set to very small amounts. To resize the columns programmatically you can use the __Width__ property. For example: 
 
 #### Rezise a column programatically
 
@@ -83,7 +85,9 @@ There are two ways to auto size the columns:
 
 __AutoSizeColumnsMode__
 
-Here, columns can automatically fill the entire width of the grid. Just set the __AutoSizeColumnsMode__ property of the desired template to __GridViewAutoSizeColumnsMode.Fill__. <br>![](images/gridview-columns-rezise-columns002.png)
+Here, columns can automatically fill the entire width of the grid. Just set the __AutoSizeColumnsMode__ property of the desired template to __GridViewAutoSizeColumnsMode.Fill__.
+
+![gridview-columns-rezise-columns002](images/gridview-columns-rezise-columns002.png)
 
 __Best fit__
 

@@ -11,11 +11,11 @@ previous_url: gridview-design-time-support-smart-tag
 
 # Smart Tag
 
+The Smart Tag of RadGridView lets you quickly access common tasks involved with building RadGridView elements and customizing appearance through themes.
+S
+>caption Figure 1: The Smart Tag of RadGridView.
 
-
-## 
-
-The Smart Tag for RadGridView lets you quickly access common tasks involved with building RadGridView elements and customizing appearance through themes.<br>![gridview-design-time-support-smart-tag 001](images/gridview-design-time-support-smart-tag001.png)
+![gridview-design-time-support-smart-tag 001](images/gridview-design-time-support-smart-tag001.png)
 
 * __New Theme Manager__: Adds a new __RadThemeManager__ component to the form.
 

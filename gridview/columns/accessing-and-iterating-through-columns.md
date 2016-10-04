@@ -5,7 +5,7 @@ description: Accessing and Iterating through Columns
 slug: winforms/gridview/columns/accessing-and-iterating-through-columns
 tags: accessing,and,iterating,through,columns
 published: True
-position: 2
+position: 4
 previous_url: gridview-columns-iterating-columns
 ---
 
@@ -13,7 +13,7 @@ previous_url: gridview-columns-iterating-columns
 
 ## Accessing Columns
 
-You can access a column by name or index. Generally speaking, accessing the columns by name is the preferred approach because if the user reorders the columns the indexes would also change.
+You can access any column by name or index. Generally speaking, accessing the columns by name is the preferred approach because if the user reorders the columns the indexes would also change.
 
 For example, the code snippet below sets the width of an image column named "Picture" to 110: 
 
@@ -73,6 +73,8 @@ Next
 ````
 
 {{endregion}}
+
+>caption Figure 1: Iterating columns and setting their HeaderText.
 
 The result from the code above is displayed on the following image:![gridview-columns-iterating-columns 001](images/gridview-columns-iterating-columns001.png)
 
@@ -146,4 +148,5 @@ Public Function GetAllColumns(ByVal template As GridViewTemplate) As List(Of Gri
 
 {{endregion}} 
 
+>caption Figure 2: Iterating hierarchical grid.
 ![gridview-columns-iterating-columns 002](images/gridview-columns-iterating-columns002.png)

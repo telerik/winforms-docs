@@ -502,7 +502,7 @@ navigation:
         position: 3
     gridview/columns/column-types:
         title: Column Types
-        position: 1
+        position: 3
     gridview/rows:
         title: Rows
         position: 4

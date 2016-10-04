@@ -5,7 +5,7 @@ description: Data Formatting
 slug: winforms/gridview/columns/data-formatting
 tags: data,formatting
 published: True
-position: 7
+position: 9
 previous_url: gridview-columns-data-formatting
 ---
 

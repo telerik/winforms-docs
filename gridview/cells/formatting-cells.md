@@ -11,12 +11,7 @@ previous_url: gridview-cells-formatting-cells
 
 # Formatting Cells
 
-
-
 ## CellFormatting
-
-## 
-
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
@@ -60,13 +55,15 @@ End Sub
 
 {{endregion}} 
 
+>caption Figure 1 Changing the cells fore color. 
 
 ![gridview-cells-formatting-cells 001](images/gridview-cells-formatting-cells001.png)
 
 ## Example: Cells background formatting
-      
 
-This is an advanced example of using *CellFormatting* event to highlight certain cells in red color based on the values of cells in the same row but *different* column. In the example, the values in the first column are  highlighted if the value in the check box column returns true:
+This is an advanced example of using CellFormatting event to highlight certain cells in red color based on the values of cells in the same row but *different* column. In the example, the values in the first column are  highlighted if the value in the check box column returns true:
+
+>caption Figure 2 Formating cell upon a condition. 
 ![gridview-cells-formatting-cells 002](images/gridview-cells-formatting-cells002.png)
 
 #### Formatting cells 
@@ -135,16 +132,11 @@ End Sub
 
 {{endregion}} 
 
-
-
-
 ## ViewCellFormatting - formatting non-data cells
 
-While CellFormatting event is fired only for data cells, ViewCellFormatting is fired for all RadGridView cells. So if you want to format the grouping row or the header cells, you should use the ViewCellFormatting event.
-        
+While __CellFormatting__ event is fired only for data cells, __ViewCellFormatting__ is fired for all cells. So if you want to format the grouping row or the header cells, you should use the __ViewCellFormatting__ event.
 
 ## Example: Change group and header cells font and removing the default filter operator text
-      
 
 For example, to change the font of the header cells and the group cells use the following code:
 
@@ -197,6 +189,7 @@ End Sub
 
 {{endregion}} 
 
+>caption Figure 3: Formatting non-data rows.
 
 ![gridview-cells-formatting-cells 003](images/gridview-cells-formatting-cells003.png)
 
@@ -204,7 +197,7 @@ End Sub
 
 To modify the text alignment and the back color in the group rows use the following code snippet:
 
-#### Formatting non-data row 
+#### Formatting group rows
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=viewCellFormatting2}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=viewCellFormatting2}} 
@@ -248,10 +241,9 @@ End Sub
 
 {{endregion}}
 
-![gridview-cells-formatting-cells 004](images/gridview-cells-formatting-cells004.png)
+>caption Figure 4: Formatting group rows.
 
->note In certain cases, where a custom layout is needed (for example, when you want to place RadCheckBoxElement in a specific place in a header cell) you should create your own type of cell instead of using ViewCellFormatting. Such an example is demonstrated in [this knowledge base article](http://www.telerik.com/support/kb/winforms/gridview/add-check-uncheck-all-check-box-in-the-header-cell.aspx).
->
+![gridview-cells-formatting-cells 004](images/gridview-cells-formatting-cells004.png)
 
 
 ## Example 3: Change the appearance of the buttons in GridViewCommandColumn
@@ -307,16 +299,17 @@ End Sub
 
 {{endregion}} 
 
+>caption Figure 5: Styling the command cell button. 
 
-
-
-And this is how the result looks:<br>![gridview-cells-formatting-cells 009](images/gridview-cells-formatting-cells009.png)
+![gridview-cells-formatting-cells 009](images/gridview-cells-formatting-cells009.png)
 
 ## Example 4: Hiding child tabs when no data is available
 
 When __RadGridView__ displays hierarchical data, you expand/collapse child levels in the hierarchy with the help of __GridGroupExpanderCellElement__ containing an expand/collapse image. If you have more than one template at a specific child level, these templates are displayed by using the __GridDetailViewCellElement__. Consider the __RadGridView__ has two child templates under the master template. If you expand the parent row, two tabs will be displayed for the respective child level. However, some of the child tabs may not contain any data. This example demonstrates a sample approach how to hide the child tabs if no data is available. If none of the child tabs for a specific parent row contains any data, the expander image will be hidden.
 
 >note In order for a GridDetailViewCellElement to display a page view instead of a single table element, either the template of the row holding it has to have more than one child template, or its __ShowChildViewCaptions__ should be *true* . Once there is a page view, the tabs in it will be visible at all times, except when some of the templates has no rows and __AllowAddNewRow__ for it is *false* – if it does not have any rows and the user cannot add row, it is considered that there is no need from it.
+
+>caption Figure 6: Using formatting event to hide empty tabs.
 
 ![gridview-cells-formatting-cells 010](images/gridview-cells-formatting-cells010.png)
 
@@ -418,16 +411,12 @@ End Function
 
 {{endregion}} 
 
-
-
-
-## Formatting cells on demand
-      
+## Formatting cells on demand   
 
 Sometimes you may need to format the cells on a specific user action, for example, on a button click. Let's take the following scenario: you have a search box (RadTextBox) above RadGridView and a RadButton. When you click the button, RadGridView should highlight the cells that match the text typed in the RadTextBox. Here is how to do it:
         
 
-* First, you should handle the CellFormatting event of RadGridView, setting the back color of those cells that have text that matches the text of RadTextBox
+* First, you should handle the `CellFormatting` event and set the back color of the cells whose text matches the text in the RadTextBox
 {{source=..\SamplesCS\GridView\Cells\FormattingCellsOnDemand.cs region=cellFormatting}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCellsOnDemand.vb region=cellFormatting}} 
 
@@ -466,7 +455,7 @@ End Sub
 
 {{endregion}} 
 
-* Now comes the tricky part. The user types some text, but then we should somehow notify RadGridView that it needs to refresh itself. This is done by calling the Update method of the TableElement, passing the *StateChanged* argument as a parameter.
+* Now comes the tricky part. The user types some text, but then we should somehow notify RadGridView that it needs to refresh itself. This is done by calling the __Update__ method of the `TableElement`, passing the *StateChanged* argument as a parameter.
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCellsOnDemand.cs region=buttonClick}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCellsOnDemand.vb region=buttonClick}} 
@@ -488,11 +477,15 @@ End Sub
 {{endregion}} 
 
 
-As a result of the Update call, the CellFormatting (and the other formatting events as well) will be fired and you will get the screenshot shown below:<br> ![gridview-cells-formatting-cells 007](images/gridview-cells-formatting-cells007.png)
+As a result of the update call, the CellFormatting (and the other formatting events as well) will be fired and you will get the following results:
+
+>caption Figure 7: Manually trigger the grid update. 
+
+![gridview-cells-formatting-cells 007](images/gridview-cells-formatting-cells007.png)
 
 ## Format cell with Style property
 
-The GridViewCellInfo __Style__ property gives direct access to the cell’s visual properties. It makes it possible to set styles to cells in runtime without using events like __CellFormatting__ or the __ConditionalFormattingObject__.
+The GridViewCellInfo.__Style__ property gives direct access to the cell’s visual properties. It makes it possible to set styles to cells in runtime without using events like __CellFormatting__ or the __ConditionalFormattingObject__.
 
 >note This approach lets you customize visual properties which are defined by the theme. All changes set this way will have a greater priority than the theme.
 >
@@ -516,7 +509,7 @@ Using the __Style__ property allows you to define cell’s style properties:
 
 * __ForeColor__
 
-The example below shows how to customize the __Font__ and __BackColor__ of RadGridView cell.
+The example below shows how to customize the __Font__ and __BackColor__ of a cell.
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=CellStyleMethod}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=CellStyleMethod}} 
@@ -572,5 +565,6 @@ Me.StyleCell(Me.RadGridView1.Rows(1).Cells(1))
 
 {{endregion}} 
 
+>caption Figure 8: Format using the Style property.
 
 ![gridview-cells-formatting-cells 008](images/gridview-cells-formatting-cells008.png)

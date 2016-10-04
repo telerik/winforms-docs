@@ -11,11 +11,9 @@ previous_url: gridview-end-user-capabilities-column-chooser
 
 # Column Chooser
 
+The visibility of all columns can be managed by the end-user at runtime using __Column Chooser__ window. To display the __Column Chooser__, the user right-clicks the grid and selects __Column Chooser__ from the context menu:
 
-
-## 
-
-The visibility of all columns can be managed by the end-user at runtime using __Column Chooser__ window. To display the __Column Chooser__, the user right-clicks the grid and selects __Column Chooser__ from the context menu:<br>![](images/gridview-end-user-capabilities-column-chooser1.png)
+![gridview-end-user-capabilities-column-chooser1](images/gridview-end-user-capabilities-column-chooser1.png)
 
 The user can then drag column headings to the __Column Chooser__ window and drop them there. This will remove the column from RadGridView and will place it in the __Column Chooser Window__. Columns can be dragged back to RadGridView:
 

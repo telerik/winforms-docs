@@ -11,13 +11,13 @@ previous_url: gridview-columns-gridviewcommandcolumn
 
 # GridViewCommandColumn
 
-
-
-__GridViewCommandColumn__ displays a button element that responds to user input mouse clicks and keyboard key presses. Either mouse click or keyboard input fires the __RadGridView.CommandCommandCellClick__ event. The button text can be supplied through the column __FieldName__ property values or by the column __DefaultText__ property. To display the same button text for every cell, set the __UseDefaultText__ property to true and the __DefaultText__ property to the value you want displayed in the button. __UseDefaultText__ is false by default.
+__GridViewCommandColumn__ displays a button element that responds to user input mouse clicks and keyboard key presses. Either mouse click or keyboard input fires the __CommandCommandCellClick__ event. The button text can be supplied through the column __FieldName__ property values or by the column __DefaultText__ property. To display the same button text for every cell, set the __UseDefaultText__ property to *true* and the __DefaultText__ property to the value you want displayed in the button. __UseDefaultText__ is *false* by default.
 
 __GridViewCommandColumn__ inherits from __GridViewDataColumn.__
 
-The example below creates two __GridViewCommandColumns__. The first has __UseDefaultText__ set to __False__ and so displays the __FieldName__ value for "ProductName" in the button text. The second has the __UseDefaultText__ property set to __True__ and the __DefaultText__ property set to "Order". In both cases the RadGridView __CommandCellClick__ reacts to a mouse click, casts "sender" to be __GridCommandCellElement__ and makes use of the __Value__ property.<br> ![gridview-columns-gridviewcommandcolumn 001](images/gridview-columns-gridviewcommandcolumn001.png)
+The example below creates two __GridViewCommandColumns__. The first has __UseDefaultText__ set to __False__ and so displays the __FieldName__ value for "ProductName" in the button text. The second has the __UseDefaultText__ property set to *true* and the __DefaultText__ property set to "Order". In both cases the RadGridView __CommandCellClick__ reacts to a mouse click, casts "sender" to be __GridCommandCellElement__ and makes use of the __Value__ property.
+
+![gridview-columns-gridviewcommandcolumn 001](images/gridview-columns-gridviewcommandcolumn001.png)
 
 {{source=..\SamplesCS\GridView\Columns\GridViewCommandColumn1.cs region=addCommandColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCommandColumn1.vb region=addCommandColumn}} 

@@ -5,7 +5,7 @@ description: Converting Data Types
 slug: winforms/gridview/columns/converting-data-types
 tags: converting,data,types
 published: True
-position: 9
+position: 11
 previous_url: gridview-columns-converting-data-types
 ---
 
@@ -13,7 +13,7 @@ previous_url: gridview-columns-converting-data-types
 
 ## Overview
 
-The GridViewDataColumn provides a unified way of converting incompatible value types to a type supported by the column instance. The standard [.NET Framework TypeConverter subclasses](http://msdn.microsoft.com/en-us/library/system.componentmodel.typeconverter.aspx) are used to convert values between data types.
+The __GridViewDataColumn__ provides a unified way of converting incompatible value types to a type supported by the column instance. The standard [.NET Framework TypeConverter subclasses](http://msdn.microsoft.com/en-us/library/system.componentmodel.typeconverter.aspx) are used to convert values between data types.
 
 For instance, instead of using [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%}) to display char fields you want to use a [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%}), implement a custom Type Converter class which to determine how RadGridView recognizes this type. For more information, see. [How to: Implement a Type Converter in MSDN.](http://msdn.microsoft.com/en-us/library/ayybcxe5.aspx)
 
@@ -146,7 +146,7 @@ End Sub
 
 __Applying System.ComponentModel.TypeConverterAttribute to the incompatible property of the business object used as a data source__
 
-The second way to add type converters is to use the TypeConverterAttribute, which allows you to specify the TypeConverter for any property in your business object. When you set it as a data source for RadGridView, you create GridViewCheckBoxColumn instead of GridViewTextBoxColumn. This approach is handy when you are creating your own business objects with TypeConverter attribute applied.
+The second way to add type converters is to use the __TypeConverterAttribute__, which allows you to specify the TypeConverter for any property in your business object. When you set it as a data source for RadGridView, you create GridViewCheckBoxColumn instead of GridViewTextBoxColumn. This approach is handy when you are creating your own business objects with TypeConverter attribute applied.
 
 #### Custom class with TypeConverter attribute
 

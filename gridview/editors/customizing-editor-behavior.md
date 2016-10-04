@@ -11,23 +11,13 @@ previous_url: gridview-editors-customizing-editor-behavior
 
 # Customizing editor behavior
 
-
-
-## 
-
 The look and behavior of grid editors can be changed programmatically. This can be done either in CellBeginEdit or in CellEditorInitialized event. 
 
-* CellBeginEdit event is fired when the editor is created
+* __CellBeginEdit__ event is fired when the editor is created
 
-* CellEditorInitialized is fired when the editor is created and initialized with a predefined set of properties
+* __CellEditorInitialized__ is fired when the editor is created and initialized with a predefined set of properties
 
-
-
-The following sample demonstrates how to change the default border of __GridSpinEditor__:#_[C#] Customizing spin editor_
-
-	
-
-
+The following sample demonstrates how to change the default border of __GridSpinEditor__:
 
 {{source=..\SamplesCS\GridView\Editors\CustomizingEditorBehavior.cs region=customizingEditors}} 
 {{source=..\SamplesVB\GridView\Editors\CustomizingEditorBehavior.vb region=customizingEditors}} 
@@ -56,7 +46,6 @@ End Sub
 
 {{endregion}} 
 
-
-
+>caption Figure 1: Accessing the editor element.
 
 ![gridview-editors-customizing-editor-behavior 001](images/gridview-editors-customizing-editor-behavior001.png)

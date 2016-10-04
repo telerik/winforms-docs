@@ -5,7 +5,7 @@ description: Generating Columns
 slug: winforms/gridview/columns/generating-columns
 tags: generating,columns
 published: True
-position: 1
+position: 3
 previous_url: gridview-columns-generating-columns
 ---
 
@@ -17,11 +17,11 @@ You can generate columns for RadGridView in two ways:
 
 * Manually, with columns added by the user
 
-The two modes can be switched using the __AutoGenerateColumns__ property of a template of the RadGridView. The default value of the property is *true*, indicating the columns will be generated from the data source. If additional control is required at compile time over the columns to be shown in the grid, columns can be added manually.
+The two modes can be switched using the template __AutoGenerateColumns__ property. The default value of the property is *true*, indicating the columns will be generated from the data source. If additional control is required at compile time over the columns to be shown in the grid, columns can be added manually.
 
 ## Automatic Column Generation
 
-Auto-generation of columns means that when you set the __DataSource__ property of the RadGridView  control to a collection of employees for example, a separate column will be created for each one of the public properties of your Employee object. This is the default behavior and it does not require any additional efforts from your side. Just set the __DataSource__ of your RadGridView and you are ready.
+Auto-generation of columns means that when you set the __DataSource__ property of the RadGridView control to a collection of employees for example, a separate column will be created for each one of the public properties of your Employee object. This is the default behavior and it does not require any additional efforts from your side. Just set the __DataSource__ of your __RadGridView__ and you are ready.
 
 However, if you wish to prevent the creation of a column for it, use the __System.ComponentModel.BrowsableAttribute__, as it is shown in the sample below:
 
@@ -128,7 +128,9 @@ Public Class Employee
 
 {{endregion}}
 
-And here is the result:<br>![gridview-auto-generate-columns 001](images/gridview-auto-generate-columns001.png)
+And here is the result:
+
+![gridview-auto-generate-columns 001](images/gridview-auto-generate-columns001.png)
 
 ## Manual Column Generation 
 

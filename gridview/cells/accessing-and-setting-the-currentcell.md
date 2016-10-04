@@ -1,7 +1,7 @@
 ---
-title: Accessing and setting the CurrentCell
-page_title: Accessing and setting the CurrentCell | RadGridView
-description: Accessing and setting the CurrentCell
+title: Accessing and Setting the CurrentCell
+page_title: Accessing and Setting the CurrentCell | RadGridView
+description: This article shows how you can access or set the current cell, column or row. 
 slug: winforms/gridview/cells/accessing-and-setting-the-currentcell
 tags: accessing,and,setting,the,currentcell
 published: True
@@ -12,10 +12,7 @@ previous_url: gridview-cells-setting-current-cell
 # Accessing and setting the CurrentCell
 
 
-
-## 
-
-In order to set the current cell of RadGridView, set the CurrentRow and CurrentColumn properties to respective row and column which cross at the desired cell:
+In order to set the current cell of __RadGridView__, set the __CurrentRow__ and __CurrentColumn__ properties to respective row and column which cross at the desired cell:
 
 {{source=..\SamplesCS\GridView\Cells\SetttingCurrentCell.cs region=settingTheCurrentCell}} 
 {{source=..\SamplesVB\GridView\Cells\SettingCurrentCell.vb region=settingTheCurrentCell}} 
@@ -42,7 +39,7 @@ Me.Text = Me.RadGridView1.CurrentCell.Value.ToString()
 
 ## Accessing the current cell
 
-To get an instance of the current cell simply create a variable of type GridDataCellElement and assign to it the current cell:
+To get an instance of the current cell simply create a variable of type `GridDataCellElement` and assign to it the current cell:
 
 {{source=..\SamplesCS\GridView\Cells\SetttingCurrentCell.cs region=readingTheCurrentCell}} 
 {{source=..\SamplesVB\GridView\Cells\SettingCurrentCell.vb region=readingTheCurrentCell}} 

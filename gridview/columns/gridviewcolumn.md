@@ -5,15 +5,11 @@ description: GridViewColumn
 slug: winforms/gridview/columns/column-types/gridviewcolumn
 tags: gridviewcolumn
 published: True
-position: 0
-previous_url: gridview-columns-gridviewcolumn
+position: 1
+previous_url: gridview-columns-gridviewcolumn, /devtools/winforms/gridview/columns/column-types/gridviewcolumn
 ---
 
 # GridViewColumn
-
-
-
-## 
 
 Columns are represented by __GridViewColumn__ objects. __GridViewColumn__ is the base class for all types of RadGridView columns, including [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%}) (the base class for all data bound columns). __GridViewColumn__ has properties that tailor appearance and behavior for the entire column including:
 
