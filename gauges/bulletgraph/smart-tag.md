@@ -1,16 +1,16 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | RadMaskedEditBox
-description: In this article we will describe the design time abilities of RadMaskedEditBox provided by its Smart Tag.
-slug: winforms/editors/maskededitbox/design-time/smart-tag
+page_title: Smart Tag | RadBulletGraph
+description: In this article we will describe the design time abilities of RadBulletGraph provided by its Smart Tag.
+slug: winforms/gauges/bulletgraph/smart-tag
 tags: design,time
 published: True
-position: 0
+position: 2
 ---
 
 # Smart Tag
 
-In this article we will describe the design time abilities of __RadMaskedEditBox__ provided by its Smart Tag. 
+In this article we will describe the design time abilities of __RadBulletGrpaph__ provided by its Smart Tag. 
 
 Here is how the control's Smart Tag looks like:
 
