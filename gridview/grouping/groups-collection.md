@@ -1,6 +1,6 @@
 ---
 title: Groups Collection
-page_title: Groups Collection | UI for WinForms Documentation
+page_title: Groups Collection | RadGridView
 description: Groups Collection
 slug: winforms/gridview/grouping/groups-collection
 tags: groups,collection

@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features | UI for WinForms Documentation
+page_title: Key Features | RadGridView
 description: Key Features
 slug: winforms/gridview/fundamentals/key-features
 tags: key,features

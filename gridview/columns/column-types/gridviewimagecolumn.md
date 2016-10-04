@@ -1,6 +1,6 @@
 ---
 title: GridViewImageColumn
-page_title: GridViewImageColumn | UI for WinForms Documentation
+page_title: GridViewImageColumn | RadGridView
 description: GridViewImageColumn
 slug: winforms/gridview/columns/column-types/gridviewimagecolumn
 tags: gridviewimagecolumn

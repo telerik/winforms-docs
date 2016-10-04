@@ -1,6 +1,6 @@
 ---
 title: Formatting Group Header Row
-page_title: Formatting Group Header Row | UI for WinForms Documentation
+page_title: Formatting Group Header Row | RadGridView
 description: Formatting Group Header Row
 slug: winforms/gridview/grouping/formatting-group-header-row
 tags: formatting,group,header,row

@@ -1,6 +1,6 @@
 ---
 title: Creating Hierarchical Grids
-page_title: Creating Hierarchical Grids | UI for WinForms Documentation
+page_title: Creating Hierarchical Grids | RadGridView
 description: Creating Hierarchical Grids
 slug: winforms/gridview/fundamentals/creating-hierarchical-grids
 tags: creating,hierarchical,grids

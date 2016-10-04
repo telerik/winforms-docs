@@ -1,6 +1,6 @@
 ---
 title: Binding to Generic Lists
-page_title: Binding to Generic Lists | UI for WinForms Documentation
+page_title: Binding to Generic Lists | RadGridView
 description: Binding to Generic Lists
 slug: winforms/gridview/populating-with-data/binding-to-generic-lists
 tags: binding,to,generic,lists

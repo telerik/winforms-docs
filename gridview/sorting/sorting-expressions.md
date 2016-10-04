@@ -1,6 +1,6 @@
 ---
 title: Sorting Expressions
-page_title: Sorting Expressions | UI for WinForms Documentation
+page_title: Sorting Expressions | RadGridView
 description: Sorting Expressions
 slug: winforms/gridview/sorting/sorting-expressions
 tags: sorting,expressions

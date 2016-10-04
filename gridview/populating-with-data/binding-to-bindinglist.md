@@ -1,6 +1,6 @@
 ---
 title: Binding to BindingList
-page_title: Binding to BindingList | UI for WinForms Documentation
+page_title: Binding to BindingList | RadGridView
 description: Binding to BindingList
 slug: winforms/gridview/populating-with-data/binding-to-bindinglist
 tags: binding,to,bindinglist

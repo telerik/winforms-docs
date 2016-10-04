@@ -1,6 +1,6 @@
 ---
 title: Selected rows and Current row
-page_title: Selected rows and Current row | UI for WinForms Documentation
+page_title: Selected rows and Current row | RadGridView
 description: Selected rows and Current row
 slug: winforms/gridview/rows/selected-rows-and-current-row
 tags: selected,rows,and,current,row

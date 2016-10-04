@@ -1,6 +1,6 @@
 ---
 title: Custom Context Menus
-page_title: Custom Context Menus | UI for WinForms Documentation
+page_title: Custom Context Menus | RadGridView
 description: Custom Context Menus
 slug: winforms/gridview/context-menus/custom-context-menus
 tags: custom,context,menus

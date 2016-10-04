@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadGridView
 description: RadGridView is a grid component developed on top of Telerik Presentation Framework which provides a combination of performance, extensibility, customizability, and ease of use.
 slug: winforms/gridview/getting-started
 tags: getting,started

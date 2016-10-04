@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | UI for WinForms Documentation
+page_title: Themes | RadGridView
 description: Themes
 slug: winforms/gridview/styling-and-appearance/themes
 tags: themes

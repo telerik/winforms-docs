@@ -1,6 +1,6 @@
 ---
 title: Reordering System Rows
-page_title: Reordering System Rows | UI for WinForms Documentation
+page_title: Reordering System Rows | RadGridView
 description: Reordering System Rows
 slug: winforms/gridview/rows/reordering-system-rows
 tags: reordering,system,rows

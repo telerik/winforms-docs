@@ -1,6 +1,6 @@
 ---
 title: Scrolling Programmatically
-page_title: Scrolling Programmatically | UI for WinForms Documentation
+page_title: Scrolling Programmatically | RadGridView
 description: Scrolling Programmatically
 slug: winforms/gridview/scrolling/scrolling-programmatically
 tags: scrolling,programmatically

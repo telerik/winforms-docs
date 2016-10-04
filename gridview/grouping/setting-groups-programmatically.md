@@ -1,6 +1,6 @@
 ---
 title: Setting Groups Programmatically
-page_title: Setting Groups Programmatically | UI for WinForms Documentation
+page_title: Setting Groups Programmatically | RadGridView
 description: Setting Groups Programmatically
 slug: winforms/gridview/grouping/setting-groups-programmatically
 tags: setting,groups,programmatically

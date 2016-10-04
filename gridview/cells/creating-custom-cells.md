@@ -1,6 +1,6 @@
 ---
 title: Creating custom cells
-page_title: Creating custom cells | UI for WinForms Documentation
+page_title: Creating custom cells | RadGridView
 description: Creating custom cells
 slug: winforms/gridview/cells/creating-custom-cells
 tags: creating,custom,cells

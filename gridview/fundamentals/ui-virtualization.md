@@ -1,6 +1,6 @@
 ---
 title: UI Virtualization
-page_title: UI Virtualization | UI for WinForms Documentation
+page_title: UI Virtualization | RadGridView
 description: UI Virtualization
 slug: winforms/gridview/fundamentals/ui-virtualization
 tags: ui,virtualization

@@ -1,6 +1,6 @@
 ---
 title: Binding to DataReader
-page_title: Binding to DataReader | UI for WinForms Documentation
+page_title: Binding to DataReader | RadGridView
 description: Binding to DataReader
 slug: winforms/gridview/populating-with-data/binding-to-datareader
 tags: binding,to,datareader

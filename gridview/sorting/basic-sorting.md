@@ -1,6 +1,6 @@
 ---
 title: Basic Sorting
-page_title: Basic Sorting | UI for WinForms Documentation
+page_title: Basic Sorting | RadGridView
 description: Basic Sorting
 slug: winforms/gridview/sorting/basic-sorting
 tags: basic,sorting

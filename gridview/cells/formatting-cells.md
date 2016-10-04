@@ -1,6 +1,6 @@
 ---
 title: Formatting Cells
-page_title: Formatting Cells | UI for WinForms Documentation
+page_title: Formatting Cells | RadGridView
 description: Formatting Cells
 slug: winforms/gridview/cells/formatting-cells
 tags: formatting,cells

@@ -1,6 +1,6 @@
 ---
 title: Export Data in a Group to Excel
-page_title: Export Data in a Group to Excel | UI for WinForms Documentation
+page_title: Export Data in a Group to Excel | RadGridView
 description: Export Data in a Group to Excel
 slug: winforms/gridview/exporting-data/export-data-in-a-group-to-excel
 tags: export,data,in,a,group,to,excel

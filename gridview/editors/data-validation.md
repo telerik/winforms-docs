@@ -1,6 +1,6 @@
 ---
 title: Data validation
-page_title: Data validation | UI for WinForms Documentation
+page_title: Data validation | RadGridView
 description: Data validation
 slug: winforms/gridview/editors/data-validation
 tags: data,validation

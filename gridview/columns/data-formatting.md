@@ -1,6 +1,6 @@
 ---
 title: Data Formatting
-page_title: Data Formatting | UI for WinForms Documentation
+page_title: Data Formatting | RadGridView
 description: Data Formatting
 slug: winforms/gridview/columns/data-formatting
 tags: data,formatting

@@ -1,6 +1,6 @@
 ---
 title: GridViewCommandColumn
-page_title: GridViewCommandColumn | UI for WinForms Documentation
+page_title: GridViewCommandColumn | RadGridView
 description: GridViewCommandColumn
 slug: winforms/gridview/columns/column-types/gridviewcommandcolumn
 tags: gridviewcommandcolumn

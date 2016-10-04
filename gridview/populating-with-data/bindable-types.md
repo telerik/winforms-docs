@@ -1,6 +1,6 @@
 ---
 title: Bindable Types
-page_title: Bindable Types | UI for WinForms Documentation
+page_title: Bindable Types | RadGridView
 description: Bindable Types
 slug: winforms/gridview/populating-with-data/bindable-types
 tags: bindable,types

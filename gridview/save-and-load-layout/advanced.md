@@ -1,6 +1,6 @@
 ---
 title: Advanced
-page_title: Advanced | UI for WinForms Documentation
+page_title: Advanced | RadGridView
 description: Advanced
 slug: winforms/gridview/save-and-load-layout/advanced
 tags: advanced

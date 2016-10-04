@@ -1,6 +1,6 @@
 ---
 title: Using custom editors
-page_title: Using custom editors | UI for WinForms Documentation
+page_title: Using custom editors | RadGridView
 description: Using custom editors
 slug: winforms/gridview/editors/using-custom-editors
 tags: using,custom,editors

@@ -1,6 +1,6 @@
 ---
 title: Basic Selection
-page_title: Basic Selection | UI for WinForms Documentation
+page_title: Basic Selection | RadGridView
 description: Basic Selection
 slug: winforms/gridview/selection/basic-selection
 tags: basic,selection

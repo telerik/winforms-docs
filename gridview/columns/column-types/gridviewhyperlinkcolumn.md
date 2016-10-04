@@ -1,6 +1,6 @@
 ---
 title: GridViewHyperlinkColumn
-page_title: GridViewHyperlinkColumn | UI for WinForms Documentation
+page_title: GridViewHyperlinkColumn | RadGridView
 description: GridViewHyperlinkColumn
 slug: winforms/gridview/columns/column-types/gridviewhyperlinkcolumn
 tags: gridviewhyperlinkcolumn

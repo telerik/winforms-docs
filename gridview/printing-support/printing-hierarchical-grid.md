@@ -1,6 +1,6 @@
 ---
 title: Printing Hierarchical Grid
-page_title: Printing Hierarchical Grid | UI for WinForms Documentation
+page_title: Printing Hierarchical Grid | RadGridView
 description: Printing Hierarchical Grid
 slug: winforms/gridview/printing-support/printing-hierarchical-grid
 tags: printing,hierarchical,grid

@@ -1,6 +1,6 @@
 ---
 title: Accessing Cells
-page_title: Accessing Cells | UI for WinForms Documentation
+page_title: Accessing Cells | RadGridView
 description: Accessing Cells
 slug: winforms/gridview/cells/accessing-cells
 tags: accessing,cells

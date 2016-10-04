@@ -1,6 +1,6 @@
 ---
 title: Events and Customization
-page_title: Events and Customization | UI for WinForms Documentation
+page_title: Events and Customization | RadGridView
 description: Events and Customization
 slug: winforms/gridview/printing-support/events-and-customization
 tags: events,and,customization

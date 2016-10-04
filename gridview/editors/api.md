@@ -1,6 +1,6 @@
 ---
 title: API
-page_title: API | UI for WinForms Documentation
+page_title: API | RadGridView
 description: API
 slug: winforms/gridview/editors/api
 tags: api

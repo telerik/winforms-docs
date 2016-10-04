@@ -1,6 +1,6 @@
 ---
 title: Selection Rectangle
-page_title: Selection Rectangle | UI for WinForms Documentation
+page_title: Selection Rectangle | RadGridView
 description: Selection Rectangle
 slug: winforms/gridview/rows/selection-rectangle
 tags: selection,rectangle

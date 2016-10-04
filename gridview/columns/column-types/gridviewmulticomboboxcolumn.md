@@ -1,6 +1,6 @@
 ---
 title: GridViewMultiComboBoxColumn
-page_title: GridViewMultiComboBoxColumn | UI for WinForms Documentation
+page_title: GridViewMultiComboBoxColumn | RadGridView
 description: GridViewMultiComboBoxColumn
 slug: winforms/gridview/columns/column-types/gridviewmulticomboboxcolumn
 tags: gridviewmulticomboboxcolumn

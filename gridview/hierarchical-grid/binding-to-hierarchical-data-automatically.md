@@ -1,6 +1,6 @@
 ---
 title: Binding to Hierarchical Data Automatically
-page_title: Binding to Hierarchical Data Automatically | UI for WinForms Documentation
+page_title: Binding to Hierarchical Data Automatically | RadGridView
 description: Binding to Hierarchical Data Automatically
 slug: winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically
 tags: binding,to,hierarchical,data,automatically

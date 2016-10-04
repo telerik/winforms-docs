@@ -1,6 +1,6 @@
 ---
 title: Creating hierarchy using an XML data source
-page_title: Creating hierarchy using an XML data source | UI for WinForms Documentation
+page_title: Creating hierarchy using an XML data source | RadGridView
 description: Creating hierarchy using an XML data source
 slug: winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source
 tags: creating,hierarchy,using,an,xml,data,source

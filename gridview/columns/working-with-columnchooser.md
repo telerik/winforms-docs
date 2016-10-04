@@ -1,6 +1,6 @@
 ---
 title: Working with ColumnChooser
-page_title: Working with ColumnChooser | UI for WinForms Documentation
+page_title: Working with ColumnChooser | RadGridView
 description: Working with ColumnChooser
 slug: winforms/gridview/columns/working-with-columnchooser
 tags: working,with,columnchooser

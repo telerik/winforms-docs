@@ -1,6 +1,6 @@
 ---
 title: GridViewDecimalColumn
-page_title: GridViewDecimalColumn | UI for WinForms Documentation
+page_title: GridViewDecimalColumn | RadGridView
 description: GridViewDecimalColumn
 slug: winforms/gridview/columns/column-types/gridviewdecimalcolumn
 tags: gridviewdecimalcolumn

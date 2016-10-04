@@ -1,6 +1,6 @@
 ---
 title: GridViewComboBoxColumn
-page_title: GridViewComboBoxColumn | UI for WinForms Documentation
+page_title: GridViewComboBoxColumn | RadGridView
 description: GridViewComboBoxColumn
 slug: winforms/gridview/columns/column-types/gridviewcomboboxcolumn
 tags: gridviewcomboboxcolumn

@@ -1,6 +1,6 @@
 ---
 title: Validation
-page_title: Validation | UI for WinForms Documentation
+page_title: Validation | RadGridView
 description: Validation
 slug: winforms/gridview/insert/update/delete-records/validation
 tags: validation

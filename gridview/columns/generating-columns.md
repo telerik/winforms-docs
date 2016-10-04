@@ -1,6 +1,6 @@
 ---
 title: Generating Columns
-page_title: Generating Columns | UI for WinForms Documentation
+page_title: Generating Columns | RadGridView
 description: Generating Columns
 slug: winforms/gridview/columns/generating-columns
 tags: generating,columns

@@ -1,6 +1,6 @@
 ---
 title: Right-to-left support
-page_title: Right-to-left support | UI for WinForms Documentation
+page_title: Right-to-left support | RadGridView
 description: Right-to-left support
 slug: winforms/gridview/localization/right-to-left-support
 tags: right-to-left,support

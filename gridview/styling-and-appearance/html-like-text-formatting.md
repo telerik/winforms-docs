@@ -1,6 +1,6 @@
 ---
 title: HTML-like Text Formatting
-page_title: HTML-like Text Formatting | UI for WinForms Documentation
+page_title: HTML-like Text Formatting | RadGridView
 description: HTML-like Text Formatting
 slug: winforms/gridview/styling-and-appearance/html-like-text-formatting
 tags: html-like,text,formatting

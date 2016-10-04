@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-page_title: Troubleshooting | UI for WinForms Documentation
+page_title: Troubleshooting | RadGridView
 description: Troubleshooting
 slug: winforms/gridview/exporting-data/troubleshooting
 tags: troubleshooting

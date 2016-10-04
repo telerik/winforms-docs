@@ -1,6 +1,6 @@
 ---
 title: Calculated Columns (Column Expressions)
-page_title: Calculated Columns (Column Expressions) | UI for WinForms Documentation
+page_title: Calculated Columns (Column Expressions) | RadGridView
 description: Calculated Columns (Column Expressions)
 slug: winforms/gridview/columns/calculated-columns-(column-expressions)
 tags: calculated,columns,(column,expressions)

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Columns | UI for WinForms Documentation
+page_title: Columns | RadGridView
 description: Columns
 slug: winforms/gridview/columns
 tags: columns

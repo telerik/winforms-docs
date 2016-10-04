@@ -1,6 +1,6 @@
 ---
 title: Rows
-page_title: Rows | UI for WinForms Documentation
+page_title: Rows | RadGridView
 description: Rows
 slug: winforms/gridview/fundamentals/rows
 tags: rows

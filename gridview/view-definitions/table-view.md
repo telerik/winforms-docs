@@ -1,6 +1,6 @@
 ---
 title: Table View
-page_title: Table View | UI for WinForms Documentation
+page_title: Table View | RadGridView
 description: Table View
 slug: winforms/gridview/view-definitions/table-view
 tags: table,view

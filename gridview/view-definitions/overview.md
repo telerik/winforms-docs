@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | UI for WinForms Documentation
+page_title: Overview | RadGridView
 description: Overview
 slug: winforms/gridview/view-definitions/overview
 tags: overview

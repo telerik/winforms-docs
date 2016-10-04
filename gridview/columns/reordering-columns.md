@@ -1,6 +1,6 @@
 ---
 title: Reordering Columns
-page_title: Reordering Columns | UI for WinForms Documentation
+page_title: Reordering Columns | RadGridView
 description: Reordering Columns
 slug: winforms/gridview/columns/reordering-columns
 tags: reordering,columns

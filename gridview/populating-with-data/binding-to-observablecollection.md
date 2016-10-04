@@ -1,6 +1,6 @@
 ---
 title: Binding to ObservableCollection
-page_title: Binding to ObservableCollection | UI for WinForms Documentation
+page_title: Binding to ObservableCollection | RadGridView
 description: Binding to ObservableCollection
 slug: winforms/gridview/populating-with-data/binding-to-observablecollection
 tags: binding,to,observablecollection

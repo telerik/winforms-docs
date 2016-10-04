@@ -1,6 +1,6 @@
 ---
 title: Self-Referencing Hierarchy
-page_title: Self-Referencing Hierarchy | UI for WinForms Documentation
+page_title: Self-Referencing Hierarchy | RadGridView
 description: Self-Referencing Hierarchy
 slug: winforms/gridview/hierarchical-grid/self-referencing-hierarchy
 tags: self-referencing,hierarchy

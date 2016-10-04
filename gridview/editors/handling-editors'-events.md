@@ -1,6 +1,6 @@
 ---
 title: Handling Editors' events
-page_title: Handling Editors' events | UI for WinForms Documentation
+page_title: Handling Editors' events | RadGridView
 description: Handling Editors' events
 slug: winforms/gridview/editors/handling-editors'-events
 tags: handling,editors',events

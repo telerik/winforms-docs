@@ -1,6 +1,6 @@
 ---
 title: Column Groups View
-page_title: Column Groups View | UI for WinForms Documentation
+page_title: Column Groups View | RadGridView
 description: Column Groups View
 slug: winforms/gridview/view-definitions/column-groups-view
 tags: column,groups,view

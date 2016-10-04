@@ -1,6 +1,6 @@
 ---
 title: Summary Rows
-page_title: Summary Rows | UI for WinForms Documentation
+page_title: Summary Rows | RadGridView
 description: Summary Rows
 slug: winforms/gridview/rows/summary-rows
 tags: summary,rows

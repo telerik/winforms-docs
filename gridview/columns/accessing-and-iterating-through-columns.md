@@ -1,6 +1,6 @@
 ---
 title: Accessing and Iterating through Columns
-page_title: Accessing and Iterating through Columns | UI for WinForms Documentation
+page_title: Accessing and Iterating through Columns | RadGridView
 description: Accessing and Iterating through Columns
 slug: winforms/gridview/columns/accessing-and-iterating-through-columns
 tags: accessing,and,iterating,through,columns

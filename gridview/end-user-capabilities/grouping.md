@@ -1,6 +1,6 @@
 ---
 title: Grouping
-page_title: Grouping | UI for WinForms Documentation
+page_title: Grouping | RadGridView
 description: Grouping
 slug: winforms/gridview/end-user-capabilities/grouping
 tags: grouping

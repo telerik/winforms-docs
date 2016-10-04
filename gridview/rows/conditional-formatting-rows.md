@@ -1,6 +1,6 @@
 ---
 title: Conditional Formatting Rows
-page_title: Conditional Formatting Rows | UI for WinForms Documentation
+page_title: Conditional Formatting Rows | RadGridView
 description: Conditional Formatting Rows
 slug: winforms/gridview/rows/conditional-formatting-rows
 tags: conditional,formatting,rows

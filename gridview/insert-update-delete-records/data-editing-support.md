@@ -1,6 +1,6 @@
 ---
 title: Data Editing Support
-page_title: Data Editing Support | UI for WinForms Documentation
+page_title: Data Editing Support | RadGridView
 description: Data Editing Support
 slug: winforms/gridview/insert/update/delete-records/data-editing-support
 tags: data,editing,support

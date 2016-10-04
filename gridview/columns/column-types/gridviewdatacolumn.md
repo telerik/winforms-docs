@@ -1,6 +1,6 @@
 ---
 title: GridViewDataColumn
-page_title: GridViewDataColumn | UI for WinForms Documentation
+page_title: GridViewDataColumn | RadGridView
 description: GridViewDataColumn
 slug: winforms/gridview/columns/column-types/gridviewdatacolumn
 tags: gridviewdatacolumn

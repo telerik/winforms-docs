@@ -1,6 +1,6 @@
 ---
 title: Tips when Binding to Custom Collections
-page_title: Tips when Binding to Custom Collections | UI for WinForms Documentation
+page_title: Tips when Binding to Custom Collections | RadGridView
 description: Tips when Binding to Custom Collections
 slug: winforms/gridview/populating-with-data/tips-when-binding-to-custom-collections
 tags: tips,when,binding,to,custom,collections

@@ -1,6 +1,6 @@
 ---
 title: Basic Filtering
-page_title: Basic Filtering | UI for WinForms Documentation
+page_title: Basic Filtering | RadGridView
 description: Basic Filtering
 slug: winforms/gridview/filtering/basic-filtering
 tags: basic,filtering

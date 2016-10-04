@@ -1,6 +1,6 @@
 ---
 title: Rows vs ChildRows
-page_title: Rows vs ChildRows | UI for WinForms Documentation
+page_title: Rows vs ChildRows | RadGridView
 description: Rows vs ChildRows
 slug: winforms/gridview/rows/rows-vs-childrows
 tags: rows,vs,childrows

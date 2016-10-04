@@ -1,6 +1,6 @@
 ---
 title: Export to Excel
-page_title: Export to Excel  | UI for WinForms Documentation
+page_title: Export to Excel  | RadGridView
 description: Export to Excel 
 slug: winforms/gridview/exporting-data/spread-export
 tags: spread,export,excel,xlsx

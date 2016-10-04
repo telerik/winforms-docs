@@ -1,6 +1,6 @@
 ---
 title: Change the active editor depending on the cell value type.
-page_title: Change the active editor depending on the cell value type. | UI for WinForms Documentation
+page_title: Change the active editor depending on the cell value type. | RadGridView
 description: Change the active editor depending on the cell value type.
 slug: winforms/gridview/editors/how-to/change-the-active-editor-depending-on-the-cell-value-type.
 tags: change,the,active,editor,depending,on,the,cell,value,type.

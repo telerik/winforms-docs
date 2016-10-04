@@ -1,6 +1,6 @@
 ---
 title: Sorting group rows
-page_title: Sorting group rows | UI for WinForms Documentation
+page_title: Sorting group rows | RadGridView
 description: Sorting group rows
 slug: winforms/gridview/grouping/sorting-group-rows
 tags: sorting,group,rows

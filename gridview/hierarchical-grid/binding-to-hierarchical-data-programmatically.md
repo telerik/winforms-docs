@@ -1,6 +1,6 @@
 ---
 title: Binding to Hierarchical Data Programmatically
-page_title: Binding to Hierarchical Data Programmatically | UI for WinForms Documentation
+page_title: Binding to Hierarchical Data Programmatically | RadGridView
 description: Binding to Hierarchical Data Programmatically
 slug: winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically
 tags: binding,to,hierarchical,data,programmatically

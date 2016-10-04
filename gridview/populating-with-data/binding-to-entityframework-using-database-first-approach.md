@@ -1,6 +1,6 @@
 ---
 title: Binding to EntityFramework using Database first approach
-page_title: Binding to EntityFramework using Database first approach | UI for WinForms Documentation
+page_title: Binding to EntityFramework using Database first approach | RadGridView
 description: Binding to EntityFramework using Database first approach
 slug: winforms/gridview/populating-with-data/binding-to-entityframework-using-database-first-approach
 tags: binding,to,entityframework,using,database,first,approach

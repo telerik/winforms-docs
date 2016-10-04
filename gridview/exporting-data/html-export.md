@@ -1,6 +1,6 @@
 ---
 title: Export to HTML
-page_title: Export to HTML | UI for WinForms Documentation
+page_title: Export to HTML | RadGridView
 description: Export to HTML
 slug: winforms/gridview/exporting-data/export-to-html
 tags: export,to,html

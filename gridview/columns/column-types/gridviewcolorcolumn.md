@@ -1,6 +1,6 @@
 ---
 title: GridViewColorColumn
-page_title: GridViewColorColumn | UI for WinForms Documentation
+page_title: GridViewColorColumn | RadGridView
 description: GridViewColorColumn
 slug: winforms/gridview/columns/column-types/gridviewcolorcolumn
 tags: gridviewcolorcolumn

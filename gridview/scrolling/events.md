@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events | UI for WinForms Documentation
+page_title: Events | RadGridView
 description: Events
 slug: winforms/gridview/scrolling/events
 tags: events

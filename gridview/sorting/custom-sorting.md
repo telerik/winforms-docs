@@ -1,6 +1,6 @@
 ---
 title: Custom Sorting
-page_title: Custom Sorting | UI for WinForms Documentation
+page_title: Custom Sorting | RadGridView
 description: Custom Sorting
 slug: winforms/gridview/sorting/custom-sorting
 tags: custom,sorting

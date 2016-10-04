@@ -1,6 +1,6 @@
 ---
 title: Painting Rows
-page_title: Painting Rows | UI for WinForms Documentation
+page_title: Painting Rows | RadGridView
 description: Painting Rows
 slug: winforms/gridview/rows/painting-rows
 tags: painting,rows

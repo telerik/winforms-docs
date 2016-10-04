@@ -1,6 +1,6 @@
 ---
 title: GridViewCellInfo
-page_title: GridViewCellInfo | UI for WinForms Documentation
+page_title: GridViewCellInfo | RadGridView
 description: GridViewCellInfo
 slug: winforms/gridview/cells/gridviewcellinfo
 tags: gridviewcellinfo

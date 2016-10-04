@@ -1,6 +1,6 @@
 ---
 title: HTML View
-page_title: HTML View | UI for WinForms Documentation
+page_title: HTML View | RadGridView
 description: HTML View
 slug: winforms/gridview/view-definitions/html-view
 tags: html,view

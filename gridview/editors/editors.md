@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Editors | UI for WinForms Documentation
+page_title: Editors | RadGridView
 description: Editors
 slug: winforms/gridview/editors/editors
 tags: editors

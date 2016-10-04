@@ -1,6 +1,6 @@
 ---
 title: Hierarchy of one to many relations
-page_title: Hierarchy of one to many relations | UI for WinForms Documentation
+page_title: Hierarchy of one to many relations | RadGridView
 description: Hierarchy of one to many relations
 slug: winforms/gridview/hierarchical-grid/hierarchy-of-one-to-many-relations
 tags: hierarchy,of,one,to,many,relations

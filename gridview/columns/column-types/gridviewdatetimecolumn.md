@@ -1,6 +1,6 @@
 ---
 title: GridViewDateTimeColumn
-page_title: GridViewDateTimeColumn | UI for WinForms Documentation
+page_title: GridViewDateTimeColumn | RadGridView
 description: GridViewDateTimeColumn
 slug: winforms/gridview/columns/column-types/gridviewdatetimecolumn
 tags: gridviewdatetimecolumn

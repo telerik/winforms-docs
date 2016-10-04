@@ -1,6 +1,6 @@
 ---
 title: Multiple Selection
-page_title: Multiple Selection | UI for WinForms Documentation
+page_title: Multiple Selection | RadGridView
 description: Multiple Selection
 slug: winforms/gridview/selection/multiple-selection
 tags: multiple,selection

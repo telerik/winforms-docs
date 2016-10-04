@@ -1,6 +1,6 @@
 ---
 title: Accessing and setting the CurrentCell
-page_title: Accessing and setting the CurrentCell | UI for WinForms Documentation
+page_title: Accessing and setting the CurrentCell | RadGridView
 description: Accessing and setting the CurrentCell
 slug: winforms/gridview/cells/accessing-and-setting-the-currentcell
 tags: accessing,and,setting,the,currentcell

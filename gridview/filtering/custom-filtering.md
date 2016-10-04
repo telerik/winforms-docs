@@ -1,6 +1,6 @@
 ---
 title: Custom Filtering
-page_title: Custom Filtering | UI for WinForms Documentation
+page_title: Custom Filtering | RadGridView
 description: Custom Filtering
 slug: winforms/gridview/filtering/custom-filtering
 tags: custom,filtering

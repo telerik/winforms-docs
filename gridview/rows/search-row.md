@@ -1,6 +1,6 @@
 ---
 title: Search Row
-page_title: Search Row | UI for WinForms Documentation
+page_title: Search Row | RadGridView
 description: Search Row
 slug: winforms/gridview/rows/search-row
 tags: search,row

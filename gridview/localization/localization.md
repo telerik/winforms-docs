@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
+page_title: Localization | RadGridView
 description: Localization
 slug: winforms/gridview/localization/localization
 tags: localization

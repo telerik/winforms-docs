@@ -1,6 +1,6 @@
 ---
 title: Bind to XML
-page_title: Bind to XML | UI for WinForms Documentation
+page_title: Bind to XML | RadGridView
 description: Bind to XML
 slug: winforms/gridview/populating-with-data/bind-to-xml
 tags: bind,to,xml

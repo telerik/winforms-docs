@@ -1,6 +1,6 @@
 ---
 title: Pinned Rows
-page_title: Pinned Rows | UI for WinForms Documentation
+page_title: Pinned Rows | RadGridView
 description: Pinned Rows
 slug: winforms/gridview/rows/pinned-rows
 tags: pinned,rows

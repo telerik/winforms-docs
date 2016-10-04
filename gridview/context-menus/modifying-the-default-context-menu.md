@@ -1,6 +1,6 @@
 ---
 title: Modifying the Default Context Menu
-page_title: Modifying the Default Context Menu | UI for WinForms Documentation
+page_title: Modifying the Default Context Menu | RadGridView
 description: Modifying the Default Context Menu
 slug: winforms/gridview/context-menus/modifying-the-default-context-menu
 tags: modifying,the,default,context,menu

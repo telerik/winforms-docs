@@ -1,6 +1,6 @@
 ---
 title: GridViewTextBoxColumn
-page_title: GridViewTextBoxColumn | UI for WinForms Documentation
+page_title: GridViewTextBoxColumn | RadGridView
 description: GridViewTextBoxColumn
 slug: winforms/gridview/columns/column-types/gridviewtextboxcolumn
 tags: gridviewtextboxcolumn

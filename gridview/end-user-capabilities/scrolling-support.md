@@ -1,6 +1,6 @@
 ---
 title: Scrolling Support
-page_title: Scrolling Support | UI for WinForms Documentation
+page_title: Scrolling Support | RadGridView
 description: Scrolling Support
 slug: winforms/gridview/end-user-capabilities/scrolling-support
 tags: scrolling,support

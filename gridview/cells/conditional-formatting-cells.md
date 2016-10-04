@@ -1,6 +1,6 @@
 ---
 title: Conditional Formatting Cells
-page_title: Conditional Formatting Cells | UI for WinForms Documentation
+page_title: Conditional Formatting Cells | RadGridView
 description: Conditional Formatting Cells
 slug: winforms/gridview/cells/conditional-formatting-cells
 tags: conditional,formatting,cells

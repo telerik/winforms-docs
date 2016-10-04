@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Expression Editor | UI for WinForms Documentation
+page_title: Expression Editor | RadGridView
 description: Expression Editor
 slug: winforms/gridview/expression-editor
 tags: expression,editor

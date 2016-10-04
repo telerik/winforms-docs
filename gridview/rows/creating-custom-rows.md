@@ -1,6 +1,6 @@
 ---
 title: Creating custom rows
-page_title: Creating custom rows | UI for WinForms Documentation
+page_title: Creating custom rows | RadGridView
 description: Creating custom rows
 slug: winforms/gridview/rows/creating-custom-rows
 tags: creating,custom,rows

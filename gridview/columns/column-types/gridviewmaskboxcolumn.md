@@ -1,6 +1,6 @@
 ---
 title: GridViewMaskBoxColumn
-page_title: GridViewMaskBoxColumn | UI for WinForms Documentation
+page_title: GridViewMaskBoxColumn | RadGridView
 description: GridViewMaskBoxColumn
 slug: winforms/gridview/columns/column-types/gridviewmaskboxcolumn
 tags: gridviewmaskboxcolumn

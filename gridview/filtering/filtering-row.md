@@ -1,6 +1,6 @@
 ---
 title: Filtering Row
-page_title: Filtering Row | UI for WinForms Documentation
+page_title: Filtering Row | RadGridView
 description: Filtering Row
 slug: winforms/gridview/filtering/filtering-row
 tags: filtering,row

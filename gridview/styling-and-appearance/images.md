@@ -1,6 +1,6 @@
 ---
 title: Images
-page_title: Images | UI for WinForms Documentation
+page_title: Images | RadGridView
 description: Images
 slug: winforms/gridview/styling-and-appearance/images
 tags: images

@@ -1,6 +1,6 @@
 ---
 title: Copy/Paste/Cut
-page_title: Copy/Paste/Cut | UI for WinForms Documentation
+page_title: Copy/Paste/Cut | RadGridView
 description: Copy/Paste/Cut
 slug: winforms/gridview/cut-copy-paste
 tags: copy/paste/cut

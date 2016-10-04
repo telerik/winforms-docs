@@ -1,6 +1,6 @@
 ---
 title: Resizing Columns
-page_title: Resizing Columns | UI for WinForms Documentation
+page_title: Resizing Columns | RadGridView
 description: Resizing Columns
 slug: winforms/gridview/end-user-capabilities/resizing-columns
 tags: resizing,columns

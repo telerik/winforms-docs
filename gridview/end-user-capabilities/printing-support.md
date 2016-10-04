@@ -1,6 +1,6 @@
 ---
 title: Printing Support
-page_title: Printing Support | UI for WinForms Documentation
+page_title: Printing Support | RadGridView
 description: Printing Support
 slug: winforms/gridview/end-user-capabilities/printing-support
 tags: printing,support

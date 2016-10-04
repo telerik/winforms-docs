@@ -1,6 +1,6 @@
 ---
 title: GridViewCheckBoxColumn
-page_title: GridViewCheckBoxColumn | UI for WinForms Documentation
+page_title: GridViewCheckBoxColumn | RadGridView
 description: GridViewCheckBoxColumn
 slug: winforms/gridview/columns/column-types/gridviewcheckboxcolumn
 tags: gridviewcheckboxcolumn

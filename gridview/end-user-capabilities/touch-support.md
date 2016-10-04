@@ -1,6 +1,6 @@
 ---
 title: Touch Support
-page_title: Touch Support | UI for WinForms Documentation
+page_title: Touch Support | RadGridView
 description: Touch Support
 slug: winforms/gridview/end-user-capabilities/touch-support
 tags: touch,support

@@ -1,6 +1,6 @@
 ---
 title: Expanding all rows
-page_title: Expanding all rows | UI for WinForms Documentation
+page_title: Expanding all rows | RadGridView
 description: Expanding all rows
 slug: winforms/gridview/hierarchical-grid/how-to/expanding-all-rows
 tags: expanding,all,rows

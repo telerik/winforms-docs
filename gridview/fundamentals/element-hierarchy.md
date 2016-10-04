@@ -1,6 +1,6 @@
 ---
 title: Element Hierarchy
-page_title: Element Hierarchy | UI for WinForms Documentation
+page_title: Element Hierarchy | RadGridView
 description: Element Hierarchy
 slug: winforms/gridview/fundamentals/element-hierarchy
 tags: element,hierarchy

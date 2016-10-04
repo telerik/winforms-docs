@@ -1,6 +1,6 @@
 ---
 title: Virtual Mode
-page_title: Virtual Mode | UI for WinForms Documentation
+page_title: Virtual Mode | RadGridView
 description: Virtual Mode
 slug: winforms/gridview/virtual-mode/virtual-mode
 tags: virtual,mode

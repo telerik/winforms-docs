@@ -1,6 +1,6 @@
 ---
 title: Design-time
-page_title: Design-time | UI for WinForms Documentation
+page_title: Design-time | RadGridView
 description: Design-time
 slug: winforms/gridview/expression-editor/design-time
 tags: design-time

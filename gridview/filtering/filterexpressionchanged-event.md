@@ -1,6 +1,6 @@
 ---
 title: FilterExpressionChanged Event
-page_title: FilterExpressionChanged Event | UI for WinForms Documentation
+page_title: FilterExpressionChanged Event | RadGridView
 description: FilterExpressionChanged Event
 slug: winforms/gridview/filtering/filterexpressionchanged-event
 tags: filterexpressionchanged,event

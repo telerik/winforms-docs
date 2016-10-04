@@ -1,6 +1,6 @@
 ---
 title: Filtering
-page_title: Filtering | UI for WinForms Documentation
+page_title: Filtering | RadGridView
 description: Filtering
 slug: winforms/gridview/end-user-capabilities/filtering
 tags: filtering

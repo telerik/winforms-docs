@@ -1,6 +1,6 @@
 ---
 title: Row behaviors
-page_title: Row behaviors | UI for WinForms Documentation
+page_title: Row behaviors | RadGridView
 description: Row behaviors
 slug: winforms/gridview/rows/row-behaviors
 tags: row,behaviors

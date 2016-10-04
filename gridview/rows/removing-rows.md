@@ -1,6 +1,6 @@
 ---
 title: Removing rows
-page_title: Removing rows | UI for WinForms Documentation
+page_title: Removing rows | RadGridView
 description: Removing rows
 slug: winforms/gridview/rows/removing-rows
 tags: removing,rows

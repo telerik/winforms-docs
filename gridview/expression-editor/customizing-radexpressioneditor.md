@@ -1,6 +1,6 @@
 ---
 title: Customizing RadExpressionEditor
-page_title: Customizing RadExpressionEditor | UI for WinForms Documentation
+page_title: Customizing RadExpressionEditor | RadGridView
 description: Customizing RadExpressionEditor
 slug: winforms/gridview/expression-editor/customizing-radexpressioneditor
 tags: customizing,radexpressioneditor

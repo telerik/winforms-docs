@@ -1,6 +1,6 @@
 ---
 title: Customizing editor behavior
-page_title: Customizing editor behavior | UI for WinForms Documentation
+page_title: Customizing editor behavior | RadGridView
 description: Customizing editor behavior
 slug: winforms/gridview/editors/customizing-editor-behavior
 tags: customizing,editor,behavior

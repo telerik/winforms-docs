@@ -1,6 +1,6 @@
 ---
 title: Editing
-page_title: Editing | UI for WinForms Documentation
+page_title: Editing | RadGridView
 description: Editing
 slug: winforms/gridview/fundamentals/editing
 tags: editing

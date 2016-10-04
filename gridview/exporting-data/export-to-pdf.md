@@ -1,6 +1,6 @@
 ---
 title: Export to PDF
-page_title: Export to PDF | UI for WinForms Documentation
+page_title: Export to PDF | RadGridView
 description: Export to PDF
 slug: winforms/gridview/exporting-data/export-to-pdf
 tags: export,to,pdf

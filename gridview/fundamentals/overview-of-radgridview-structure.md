@@ -1,6 +1,6 @@
 ---
 title: Overview of RadGridView Structure
-page_title: Overview of RadGridView Structure | UI for WinForms Documentation
+page_title: Overview of RadGridView Structure | RadGridView
 description: Overview of RadGridView Structure
 slug: winforms/gridview/fundamentals/overview-of-radgridview-structure
 tags: overview,of,radgridview,structure

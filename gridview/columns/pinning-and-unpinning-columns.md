@@ -1,6 +1,6 @@
 ---
 title: Pinning and Unpinning Columns
-page_title: Pinning and Unpinning Columns | UI for WinForms Documentation
+page_title: Pinning and Unpinning Columns | RadGridView
 description: Pinning and Unpinning Columns
 slug: winforms/gridview/columns/pinning-and-unpinning-columns
 tags: pinning,and,unpinning,columns

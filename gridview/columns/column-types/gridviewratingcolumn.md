@@ -1,6 +1,6 @@
 ---
 title: GridViewRatingColumn
-page_title: GridViewRatingColumn | UI for WinForms Documentation
+page_title: GridViewRatingColumn | RadGridView
 description: GridViewRatingColumn
 slug: winforms/gridview/columns/column-types/gridviewratingcolumn
 tags: gridviewratingcolumn

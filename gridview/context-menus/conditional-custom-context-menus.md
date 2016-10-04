@@ -1,6 +1,6 @@
 ---
 title: Conditional Custom Context Menus
-page_title: Conditional Custom Context Menus | UI for WinForms Documentation
+page_title: Conditional Custom Context Menus | RadGridView
 description: Conditional Custom Context Menus
 slug: winforms/gridview/context-menus/conditional-custom-context-menus
 tags: conditional,custom,context,menus

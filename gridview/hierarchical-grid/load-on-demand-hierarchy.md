@@ -1,6 +1,6 @@
 ---
 title: Load-On-Demand Hierarchy
-page_title: Load-On-Demand Hierarchy | UI for WinForms Documentation
+page_title: Load-On-Demand Hierarchy | RadGridView
 description: Load-On-Demand Hierarchy
 slug: winforms/gridview/hierarchical-grid/load-on-demand-hierarchy
 tags: load-on-demand,hierarchy

@@ -1,6 +1,6 @@
 ---
 title: Iterating Cells
-page_title: Iterating Cells | UI for WinForms Documentation
+page_title: Iterating Cells | RadGridView
 description: Iterating Cells
 slug: winforms/gridview/cells/iterating-cells
 tags: iterating,cells

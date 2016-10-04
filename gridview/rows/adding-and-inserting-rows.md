@@ -1,6 +1,6 @@
 ---
 title: Adding and Inserting Rows
-page_title: Adding and Inserting Rows | UI for WinForms Documentation
+page_title: Adding and Inserting Rows | RadGridView
 description: Adding and Inserting Rows
 slug: winforms/gridview/rows/adding-and-inserting-rows
 tags: adding,and,inserting,rows

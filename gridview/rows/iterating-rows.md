@@ -1,6 +1,6 @@
 ---
 title: Iterating Rows
-page_title: Iterating Rows | UI for WinForms Documentation
+page_title: Iterating Rows | RadGridView
 description: Iterating Rows
 slug: winforms/gridview/rows/iterating-rows
 tags: iterating,rows

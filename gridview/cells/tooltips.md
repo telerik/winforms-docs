@@ -1,6 +1,6 @@
 ---
 title: ToolTips
-page_title: ToolTips | UI for WinForms Documentation
+page_title: ToolTips | RadGridView
 description: ToolTips
 slug: winforms/gridview/cells/tooltips
 tags: tooltips

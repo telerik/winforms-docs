@@ -1,6 +1,6 @@
 ---
 title: Basic Grouping
-page_title: Basic Grouping | UI for WinForms Documentation
+page_title: Basic Grouping | RadGridView
 description: Basic Grouping
 slug: winforms/gridview/grouping/basic-grouping
 tags: basic,grouping

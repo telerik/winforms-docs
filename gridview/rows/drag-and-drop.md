@@ -1,6 +1,6 @@
 ---
 title: Drag and Drop
-page_title: Drag and Drop | UI for WinForms Documentation
+page_title: Drag and Drop | RadGridView
 description: Drag and Drop
 slug: winforms/gridview/rows/drag-and-drop
 tags: drag,and,drop

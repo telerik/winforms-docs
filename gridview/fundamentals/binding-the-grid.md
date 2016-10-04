@@ -1,6 +1,6 @@
 ---
 title: Binding the Grid
-page_title: Binding the Grid | UI for WinForms Documentation
+page_title: Binding the Grid | RadGridView
 description: Binding the Grid
 slug: winforms/gridview/fundamentals/binding-the-grid
 tags: binding,the,grid

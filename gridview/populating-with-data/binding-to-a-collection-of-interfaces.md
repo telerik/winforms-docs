@@ -1,6 +1,6 @@
 ---
 title: Binding to a Collection of Interfaces
-page_title: Binding to a Collection of Interfaces | UI for WinForms Documentation
+page_title: Binding to a Collection of Interfaces | RadGridView
 description: Binding to a Collection of Interfaces
 slug: winforms/gridview/populating-with-data/binding-to-a-collection-of-interfaces
 tags: binding,to,a,collection,of,interfaces

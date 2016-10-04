@@ -1,6 +1,6 @@
 ---
 title: Converting Data Types
-page_title: Converting Data Types | UI for WinForms Documentation
+page_title: Converting Data Types | RadGridView
 description: Converting Data Types
 slug: winforms/gridview/columns/converting-data-types
 tags: converting,data,types

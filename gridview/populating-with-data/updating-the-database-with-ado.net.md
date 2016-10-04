@@ -1,6 +1,6 @@
 ---
 title: Updating the Database with ADO.Net
-page_title: Updating the Database with ADO.Net | UI for WinForms Documentation
+page_title: Updating the Database with ADO.Net | RadGridView
 description: Updating the Database with ADO.Net
 slug: winforms/gridview/populating-with-data/updating-the-database-with-ado.net
 tags: updating,the,database,with,ado.net

@@ -1,6 +1,6 @@
 ---
 title: New Row
-page_title: New Row | UI for WinForms Documentation
+page_title: New Row | RadGridView
 description: New Row
 slug: winforms/gridview/rows/new-row
 tags: new,row

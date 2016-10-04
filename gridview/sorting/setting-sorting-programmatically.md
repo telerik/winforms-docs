@@ -1,6 +1,6 @@
 ---
 title: Setting Sorting Programmatically
-page_title: Setting Sorting Programmatically | UI for WinForms Documentation
+page_title: Setting Sorting Programmatically | RadGridView
 description: Setting Sorting Programmatically
 slug: winforms/gridview/sorting/setting-sorting-programmatically
 tags: setting,sorting,programmatically

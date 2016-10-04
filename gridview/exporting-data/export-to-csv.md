@@ -1,6 +1,6 @@
 ---
 title: Export to CSV
-page_title: Export to CSV | UI for WinForms Documentation
+page_title: Export to CSV | RadGridView
 description: Export to CSV
 slug: winforms/gridview/exporting-data/export-to-csv
 tags: export,to,csv

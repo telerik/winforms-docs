@@ -1,6 +1,6 @@
 ---
 title: Binding to Sub Objects
-page_title: Binding to Sub Objects | UI for WinForms Documentation
+page_title: Binding to Sub Objects | RadGridView
 description: Binding to Sub Objects
 slug: winforms/gridview/populating-with-data/binding-to-sub-objects
 tags: binding,to,sub,objects

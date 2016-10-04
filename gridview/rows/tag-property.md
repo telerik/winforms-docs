@@ -1,6 +1,6 @@
 ---
 title: Tag property
-page_title: Tag property | UI for WinForms Documentation
+page_title: Tag property | RadGridView
 description: Tag property
 slug: winforms/gridview/rows/tag-property
 tags: tag,property

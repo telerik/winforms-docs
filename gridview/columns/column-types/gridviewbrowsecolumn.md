@@ -1,6 +1,6 @@
 ---
 title: GridViewBrowseColumn
-page_title: GridViewBrowseColumn | UI for WinForms Documentation
+page_title: GridViewBrowseColumn | RadGridView
 description: GridViewBrowseColumn
 slug: winforms/gridview/columns/column-types/gridviewbrowsecolumn
 tags: gridviewbrowsecolumn

@@ -1,6 +1,6 @@
 ---
 title: Column Chooser
-page_title: Column Chooser | UI for WinForms Documentation
+page_title: Column Chooser | RadGridView
 description: Column Chooser
 slug: winforms/gridview/end-user-capabilities/column-chooser
 tags: column,chooser

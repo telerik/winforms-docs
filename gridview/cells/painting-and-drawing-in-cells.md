@@ -1,6 +1,6 @@
 ---
 title: Painting and drawing in cells
-page_title: Painting and drawing in cells | UI for WinForms Documentation
+page_title: Painting and drawing in cells | RadGridView
 description: Painting and drawing in cells
 slug: winforms/gridview/cells/painting-and-drawing-in-cells
 tags: painting,and,drawing,in,cells

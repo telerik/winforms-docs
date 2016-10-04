@@ -1,6 +1,6 @@
 ---
 title: Resizing columns programatically
-page_title: Resizing columns programatically | UI for WinForms Documentation
+page_title: Resizing columns programatically | RadGridView
 description: Resizing columns programatically
 slug: winforms/gridview/columns/resizing-columns-programatically
 tags: resizing,columns,programatically

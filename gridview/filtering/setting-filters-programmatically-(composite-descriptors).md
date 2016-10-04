@@ -1,6 +1,6 @@
 ---
 title: Setting Filters Programmatically (composite descriptors)
-page_title: Setting Filters Programmatically (composite descriptors) | UI for WinForms Documentation
+page_title: Setting Filters Programmatically (composite descriptors) | RadGridView
 description: Setting Filters Programmatically (composite descriptors)
 slug: winforms/gridview/filtering/setting-filters-programmatically-(composite-descriptors)
 tags: setting,filters,programmatically,(composite,descriptors)

@@ -1,6 +1,6 @@
 ---
 title: Databinding RadGridView
-page_title: Databinding RadGridView | UI for WinForms Documentation
+page_title: Databinding RadGridView | RadGridView
 description: Databinding RadGridView
 slug: winforms/gridview/populating-with-data/databinding-radgridview
 tags: databinding,radgridview

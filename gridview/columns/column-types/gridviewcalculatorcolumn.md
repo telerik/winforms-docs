@@ -1,6 +1,6 @@
 ---
 title: GridViewCalculatorColumn
-page_title: GridViewCalculatorColumn | UI for WinForms Documentation
+page_title: GridViewCalculatorColumn | RadGridView
 description: GridViewCalculatorColumn
 slug: winforms/gridview/columns/column-types/gridviewcalculatorcolumn
 tags: gridviewcalculatorcolumn

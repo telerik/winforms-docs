@@ -1,6 +1,6 @@
 ---
 title: Alternating Row Color
-page_title: Alternating Row Color | UI for WinForms Documentation
+page_title: Alternating Row Color | RadGridView
 description: Alternating Row Color
 slug: winforms/gridview/styling-and-appearance/alternating-row-color
 tags: alternating,row,color

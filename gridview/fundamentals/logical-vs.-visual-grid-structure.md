@@ -1,6 +1,6 @@
 ---
 title: Logical vs. Visual Grid Structure
-page_title: Logical vs. Visual Grid Structure | UI for WinForms Documentation
+page_title: Logical vs. Visual Grid Structure | RadGridView
 description: Logical vs. Visual Grid Structure
 slug: winforms/gridview/fundamentals/logical-vs.-visual-grid-structure
 tags: logical,vs.,visual,grid,structure

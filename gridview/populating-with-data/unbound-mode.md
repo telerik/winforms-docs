@@ -1,6 +1,6 @@
 ---
 title: Unbound Mode
-page_title: Unbound Mode | UI for WinForms Documentation
+page_title: Unbound Mode | RadGridView
 description: Unbound Mode
 slug: winforms/gridview/populating-with-data/unbound-mode
 tags: unbound,mode

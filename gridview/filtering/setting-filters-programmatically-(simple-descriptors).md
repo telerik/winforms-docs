@@ -1,6 +1,6 @@
 ---
 title: Setting Filters Programmatically (simple descriptors)
-page_title: Setting Filters Programmatically (simple descriptors) | UI for WinForms Documentation
+page_title: Setting Filters Programmatically (simple descriptors) | RadGridView
 description: Setting Filters Programmatically (simple descriptors)
 slug: winforms/gridview/filtering/setting-filters-programmatically-(simple-descriptors)
 tags: setting,filters,programmatically,(simple,descriptors)

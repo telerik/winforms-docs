@@ -1,6 +1,6 @@
 ---
 title: Formatting Rows
-page_title: Formatting Rows | UI for WinForms Documentation
+page_title: Formatting Rows | RadGridView
 description: Formatting Rows
 slug: winforms/gridview/rows/formatting-rows
 tags: formatting,rows

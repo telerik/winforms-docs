@@ -1,6 +1,6 @@
 ---
 title: Using Grouping Expressions
-page_title: Using Grouping Expressions | UI for WinForms Documentation
+page_title: Using Grouping Expressions | RadGridView
 description: Using Grouping Expressions
 slug: winforms/gridview/grouping/using-grouping-expressions
 tags: using,grouping,expressions

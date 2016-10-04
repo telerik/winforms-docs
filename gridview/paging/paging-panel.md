@@ -1,6 +1,6 @@
 ---
 title: Paging panel
-page_title: Paging panel | UI for WinForms Documentation
+page_title: Paging panel | RadGridView
 description: Paging panel
 slug: winforms/gridview/paging/paging-panel
 tags: paging,panel

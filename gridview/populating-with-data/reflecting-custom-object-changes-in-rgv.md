@@ -1,6 +1,6 @@
 ---
 title: Reflecting Custom Object Changes in RGV
-page_title: Reflecting Custom Object Changes in RGV | UI for WinForms Documentation
+page_title: Reflecting Custom Object Changes in RGV | RadGridView
 description: Reflecting Custom Object Changes in RGV
 slug: winforms/gridview/populating-with-data/reflecting-custom-object-changes-in-rgv
 tags: reflecting,custom,object,changes,in,rgv

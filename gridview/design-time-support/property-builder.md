@@ -1,6 +1,6 @@
 ---
 title: Property Builder
-page_title: Property Builder | UI for WinForms Documentation
+page_title: Property Builder | RadGridView
 description: Property Builder
 slug: winforms/gridview/design-time-support/property-builder
 tags: property,builder

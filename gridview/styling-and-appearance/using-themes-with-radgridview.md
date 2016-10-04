@@ -1,6 +1,6 @@
 ---
 title: Using Themes with RadGridView
-page_title: Using Themes with RadGridView | UI for WinForms Documentation
+page_title: Using Themes with RadGridView | RadGridView
 description: Using Themes with RadGridView
 slug: winforms/gridview/styling-and-appearance/using-themes-with-radgridview
 tags: using,themes,with,radgridview

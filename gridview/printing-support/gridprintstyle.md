@@ -1,6 +1,6 @@
 ---
 title: GridPrintStyle
-page_title: GridPrintStyle | UI for WinForms Documentation
+page_title: GridPrintStyle | RadGridView
 description: GridPrintStyle
 slug: winforms/gridview/printing-support/gridprintstyle
 tags: gridprintstyle

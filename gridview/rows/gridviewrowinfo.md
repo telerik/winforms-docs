@@ -1,6 +1,6 @@
 ---
 title: GridViewRowInfo
-page_title: GridViewRowInfo | UI for WinForms Documentation
+page_title: GridViewRowInfo | RadGridView
 description: GridViewRowInfo
 slug: winforms/gridview/rows/gridviewrowinfo
 tags: gridviewrowinfo

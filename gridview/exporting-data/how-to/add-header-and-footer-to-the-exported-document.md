@@ -1,6 +1,6 @@
 ---
 title: Add Header and Footer to the Exported Document
-page_title: Add Header and Footer to the Exported Document | UI for WinForms Documentation
+page_title: Add Header and Footer to the Exported Document | RadGridView
 description: Add Header and Footer to the Exported Document
 slug: winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document
 tags: add,header,and,footer,to,the,exported,document

@@ -1,6 +1,6 @@
 ---
 title: Tutorial Binding to Hierarchical Data
-page_title: Tutorial Binding to Hierarchical Data | UI for WinForms Documentation
+page_title: Tutorial Binding to Hierarchical Data | RadGridView
 description: Tutorial Binding to Hierarchical Data
 slug: winforms/gridview/hierarchical-grid/tutorial:-binding-to-hierarchical-data
 tags: tutorial,binding,to,hierarchical,data

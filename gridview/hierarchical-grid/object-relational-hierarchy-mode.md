@@ -1,6 +1,6 @@
 ---
 title: Object Relational Hierarchy Mode
-page_title: Object Relational Hierarchy Mode | UI for WinForms Documentation
+page_title: Object Relational Hierarchy Mode | RadGridView
 description: Object Relational Hierarchy Mode
 slug: winforms/gridview/hierarchical-grid/object-relational-hierarchy-mode
 tags: object,relational,hierarchy,mode

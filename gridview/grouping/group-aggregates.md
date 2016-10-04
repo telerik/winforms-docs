@@ -1,6 +1,6 @@
 ---
 title: Group Aggregates
-page_title: Group Aggregates | UI for WinForms Documentation
+page_title: Group Aggregates | RadGridView
 description: Group Aggregates
 slug: winforms/gridview/grouping/group-aggregates
 tags: group,aggregates
