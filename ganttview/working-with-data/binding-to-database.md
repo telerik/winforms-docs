@@ -1,7 +1,7 @@
 ---
-title: Binding to database
-page_title: Binding to database | UI for WinForms Documentation
-description: Binding to database
+title: Binding to Database
+page_title: Binding to Database | RadGanttView
+description: RadGanttView supports binding to Database data. Levels are created using the Parent and Child members' values.
 slug: winforms/ganttview-/working-with-data/binding-to-database
 tags: binding,to,database
 published: True
@@ -11,16 +11,11 @@ previous_url: ganttview-working-with-data-binding-to-database
 
 # Binding to database
 
+__RadGanttView__ supports binding to Database data. Levels are created using the __Parent__ and __Child__ members' values. You can read more on the data binding properties of RadGanttView in the [binding basics article.]({%slug winforms/ganttview-/working-with-data/data-binding-basics%})
 
+1. In a new Windows project drop a __RadGanttView__ control on the form.
 
-## 
-
-RadGanttView supports binding to Database data. Levels are created using the Parent and Child members’ values. You can read more on the data binding properties of RadGanttView in the [binding basics article.]({%slug winforms/ganttview-/working-with-data/data-binding-basics%})
-
-1. In a new Windows project drop a RadGanttView control on the form.
-            
-
-1. In the __DataSource__ property drop down in the Properties Window of from the Smart Tag of the control select the __Add Project Data Source__ link.
+1. In the __DataSource__ property drop down in the `Properties` window of from the Smart Tag of the control select the __Add Project Data Source__ link.
             
 
 1. In the __Choose a Data Source Type__ page select the __Database__ icon, then click the __Next__ button.
@@ -30,15 +25,15 @@ RadGanttView supports binding to Database data. Levels are created using the Par
 1. In the __Choose Your Data Connection__ page of the wizard click the __New Connection__ button.
             
 
-1. In the __Add Connection__ dialog click the __Change__ button, select "Microsoft Access Database File" and click the __OK__ button. In the __Database file name__ entry click the __Browse__ button and locate the WeddingPlanner.mdb file. You can download the mdb file from here: [WeddingPlanner.mdb](http://www.telerik.com/docs/default-source/ui-for-winforms/weddingplanner.zip?sfvrsn=2). Click the __OK__ button. When prompted if you would like to copy the local data file to your project click the __Yes__ button.
+1. In the __Add Connection__ dialog click __Change__, select "Microsoft Access Database File" and click __OK__. In the __Database file name__ entry click __Browse__ and locate the `WeddingPlanner.mdb` file. You can download the mdb file from here: [WeddingPlanner.mdb](http://www.telerik.com/docs/default-source/ui-for-winforms/weddingplanner.zip?sfvrsn=2). Click __OK__. When prompted if you would like to copy the local data file to your project click __Yes__.
             
 	![ganttview-working-with-data-binding-to-database 002](images/ganttview-working-with-data-binding-to-database002.png)
 
-1. In the Choose Your Database Objects page of the wizard check the "Tasks" and "Links" tables checkboxes. Click the Finish button.
+1. In the `Choose Your Database Objects` page of the wizard check the "Tasks" and "Links" tables checkboxes. Click __Finish__.
             
 	![ganttview-working-with-data-binding-to-database 003](images/ganttview-working-with-data-binding-to-database003.png)
 
-1. Set the DataSource property first to Tasks, then to Links datatable. This will create the necessary data-binding components in the component tray - a DataSet, BindingSources and TableAdapters. The DataSet is the container for the data, the TableAdapters are used to fill the DataSet.
+1. Set the __DataSource__ property first to _Tasks_, then to _Links_ datatable. This will create the necessary data-binding components in the component tray - a `DataSet`, `BindingSources` and `TableAdapters`. The `DataSet` is the container for the data, the `TableAdapters` are used to fill the `DataSet`.
             
 
 1. In the Smart Tag or in the properties window set the member properties in the following way.
@@ -67,5 +62,12 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineEnd = New DateTim
 
 {{endregion}} 
 
-
 ![ganttview-working-with-data-binding-to-database 005](images/ganttview-working-with-data-binding-to-database006.png)
+
+# See Also  
+
+* [Adding new items]({%slug winforms/ganttview-/working-with-data/adding-new-items%})
+* [Data Binding Basics]({%slug winforms/ganttview-/working-with-data/data-binding-basics%})
+* [Importing XML from MS Project]({%slug winforms/ganttview-/working-with-data/importing-xml-from-ms-project%})
+* [Link Type Converter]({%slug winforms/ganttview-/working-with-data/link-type-converter%})
+* [Populating with Data Programmatically]({%slug winforms/ganttview-/working-with-data/populating-with-data-programmatically%})

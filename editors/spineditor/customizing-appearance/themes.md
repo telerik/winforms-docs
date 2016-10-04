@@ -10,7 +10,7 @@ position: 1
 
 # Themes
 
-This help article will demonstrate a step by step tutorial how to customize the `ControlDefault` theme for __Radspineditor__
+This help article will demonstrate a step by step tutorial how to customize the `ControlDefault` theme for __RadSpinEditor__
 
 1. Open [Visual Style Builder] ({%slug winforms/tools/visual-style-builder/starting-vsb%})
 2. Export the built-in themes in a specific folder by selecting `File` >> `Export Built-in Themes`.

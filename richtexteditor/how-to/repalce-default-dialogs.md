@@ -1,7 +1,7 @@
 ---
 title: Replace Default Dialogs
-page_title: Repalce Default Dialogs | UI for WinForms Documentation
-description: Repalce Default Dialogs
+page_title: Replace Default Dialogs | UI for WinForms Documentation
+description: Replace Default Dialogs
 slug: winforms/richtexteditor-/how-to/repalce-default-dialogs
 tags: repalce,default,dialogs
 published: True
@@ -9,7 +9,7 @@ position: 2
 previous_url: richtexteditor-how-to-repalce-default-dialogs
 ---
 
-# Repalce Default Dialogs
+# Replace Default Dialogs
 
 This article will demonstrate how you can replace the default __FindAndRepacle__ dialog with a custom one. It will show which dialogs can be replaced as well.
 

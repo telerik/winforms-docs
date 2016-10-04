@@ -1,7 +1,7 @@
 ---
 title: GraphicalView item formatting
-page_title: GraphicalView item formatting | UI for WinForms Documentation
-description: GraphicalView item formatting
+page_title: GraphicalView item formatting | RadGanttView
+description: The GraphicalViewItemFormatting event allows you to change the style and looks of the items displayed in the graphical view. 
 slug: winforms/ganttview-/formatting/graphicalview-item-formatting
 tags: graphicalview,item,formatting
 published: True
@@ -10,10 +10,8 @@ previous_url: ganttview-formatting-graphicalviewitem-formatting
 ---
 
 # GraphicalView item formatting
- 
-## 
 
-The __GraphicalViewItemFormatting__ event allows you to change the style and looks of the items displayed in the graphical view. The following example demonstrates how to format all tasks that involve some selection e.g. their title starts with “Select”.
+The __GraphicalViewItemFormatting__ event allows you to change the style and looks of the items displayed in the graphical view. The following example demonstrates how to format all tasks that involve some selection e.g. their title starts with "Select".
         
 {{source=..\SamplesCS\GanttView\Formatting\GraphicalViewItemFormatting.cs region=GraphicalViewItemFormatting}} 
 {{source=..\SamplesVB\GanttView\Formatting\GraphicalViewItemFormatting.vb region=GraphicalViewItemFormatting}} 
@@ -47,3 +45,11 @@ End Sub
 
 
 ![ganttview-formatting-graphicalviewitem-formatting 001](images/ganttview-formatting-graphicalviewitem-formatting001.png)
+
+# See Also
+
+* [Custom Painting]({%slug winforms/ganttview-/formatting/custom-painting%})
+* [GraphicalView Link Item formatting]({%slug winforms/ganttview-/formatting/graphicalview-link-item-formatting%})
+* [TextView item formatting]({%slug winforms/ganttview-/formatting/textview-item-formatting%})
+* [Themes]({%slug winforms/ganttview/themes%})
+* [Timeline item formatting]({%slug winforms/ganttview-/formatting/timeline-item-formatting%})

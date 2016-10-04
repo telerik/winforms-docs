@@ -1,7 +1,7 @@
 ---
 title: TextView item formatting
-page_title: TextView item formatting | UI for WinForms Documentation
-description: TextView item formatting
+page_title: TextView item formatting | RadGanttView
+description: RadGanttView offers two events for formatting the text view part.
 slug: winforms/ganttview-/formatting/textview-item-formatting
 tags: textview,item,formatting
 published: True
@@ -10,14 +10,11 @@ previous_url: ganttview-formatting-textviewitem-cellformatting
 ---
 
 # TextView item formatting
- 
-## 
 
-RadGanttView offers two level of granularity when it comes to formatting the text view part. There is the __TextViewItemFormatting__ event which is fired for each item (row) and there is the __TextViewCellFormatting__ which is fired for every cell.
-        
+__RadGanttView__ offers two events for formatting the text view part. The __TextViewItemFormatting__ event  is fired for each item (row) and the __TextViewCellFormatting__ is fired for every cell.
 
 Here is an example demonstrating how to use the event to make all summary items have a green back color and all tasks a yellow one.
-         
+ 
 {{source=..\SamplesCS\GanttView\Formatting\TextViewItemCellFormatting.cs region=TextViewItemFormatting}} 
 {{source=..\SamplesVB\GanttView\Formatting\TextViewItemCellFormatting.vb region=TextViewItemFormatting}} 
 
@@ -69,7 +66,7 @@ End Sub
 
 ![ganttview-formatting-textviewitem-cellformatting 001](images/ganttview-formatting-textviewitem-cellformatting001.png)
 
-Another example showing how to change the fore color of the cells in the Title column for all types of tasks that start on an even day of the month.
+Another example showing how to change the fore color of the cells in the `Title` column for all types of tasks that start on an even day of the month.
         
 {{source=..\SamplesCS\GanttView\Formatting\TextViewItemCellFormatting.cs region=TextViewCellFormatting}} 
 {{source=..\SamplesVB\GanttView\Formatting\TextViewItemCellFormatting.vb region=TextViewCellFormatting}} 
@@ -101,5 +98,13 @@ End Sub
 
 {{endregion}} 
 
-
 ![ganttview-formatting-textviewitem-cellformatting 002](images/ganttview-formatting-textviewitem-cellformatting002.png)
+
+
+# See Also
+
+* [GraphicalView item formatting]({%slug winforms/ganttview-/formatting/graphicalview-item-formatting%})
+* [GraphicalView Link Item formatting]({%slug winforms/ganttview-/formatting/graphicalview-link-item-formatting%})
+* [Custom Painting]({%slug winforms/ganttview-/formatting/custom-painting%})
+* [Themes]({%slug winforms/ganttview/themes%})
+* [Timeline item formatting]({%slug winforms/ganttview-/formatting/timeline-item-formatting%})

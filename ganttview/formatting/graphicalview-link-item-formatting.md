@@ -1,7 +1,7 @@
 ---
 title: GraphicalView Link Item formatting
-page_title: GraphicalView Link Item formatting | UI for WinForms Documentation
-description: GraphicalView Link Item formatting
+page_title: GraphicalView Link Item formatting | RadGanttView
+description: RadGanttView allows formatting of individual links through the GraphicalViewLinkItemFormatting event.
 slug: winforms/ganttview-/formatting/graphicalview-link-item-formatting
 tags: graphicalview,link,item,formatting
 published: True
@@ -11,9 +11,7 @@ previous_url: ganttview-formatting-graphical-view-link-item-formatting
 
 # GraphicalView Link Item formatting
 
- 
 __RadGanttView__ allows formatting of individual links through the __GraphicalViewLinkItemFormatting__ event. The following example demonstrates how to format links based on their type.
- 
 
 {{source=..\SamplesCS\GanttView\Formatting\GraphicalViewLinkItemFormatting.cs region=GraphicalViewLinkItemFormatting}} 
 {{source=..\SamplesVB\GanttView\Formatting\GraphicalViewLinkItemFormatting.vb region=GraphicalViewLinkItemFormatting}} 
@@ -85,5 +83,12 @@ End Sub
 
 {{endregion}} 
 
-
 ![ganttview-formatting-graphical-view-item-formatting 001](images/ganttview-formatting-graphical-view-item-formatting001.png)
+
+# See Also
+
+* [GraphicalView item formatting]({%slug winforms/ganttview-/formatting/graphicalview-item-formatting%})
+* [Custom Painting]({%slug winforms/ganttview-/formatting/custom-painting%})
+* [TextView item formatting]({%slug winforms/ganttview-/formatting/textview-item-formatting%})
+* [Themes]({%slug winforms/ganttview/themes%})
+* [Timeline item formatting]({%slug winforms/ganttview-/formatting/timeline-item-formatting%})

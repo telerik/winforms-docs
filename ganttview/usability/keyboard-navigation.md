@@ -1,7 +1,7 @@
 ---
 title: Keyboard navigation
-page_title: Keyboard navigation | UI for WinForms Documentation
-description: Keyboard navigation
+page_title: Keyboard navigation | RadGanttView
+description: The user can use several keyboard commands to navigate in the gantt view.
 slug: winforms/ganttview-/usability/keyboard-navigation
 tags: keyboard,navigation
 published: True
@@ -10,8 +10,6 @@ previous_url: ganttview-usability-keyboard-navigation
 ---
 
 # Keyboard navigation
- 
-## 
 
 The user can use the keyboard commands in the below table to navigate in the gantt view.
 
@@ -28,3 +26,7 @@ The user can use the keyboard commands in the below table to navigate in the gan
 |Esc|If the current cell is in edit mode, end edit and discards any changes.|
 |Home|Moves the selection to the first visible item.|
 |End|Moves the selection to the last visible item.|
+
+# See Also
+
+* [Mouse navigation]({%slug winforms/ganttview-/usability/mouse-navigation%})

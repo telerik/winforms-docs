@@ -1,7 +1,7 @@
 ---
 title: Adding links
-page_title: Adding links | UI for WinForms Documentation
-description: Adding links
+page_title: Adding links | RadGanttView
+description: The CollectionEditor allows you to add links (dependences) between the items in the gantt view at design time.
 slug: winforms/ganttview-/design-time/adding-links
 tags: adding,links
 published: True
@@ -11,15 +11,11 @@ previous_url: ganttview-designtime-adding-links
 
 # Adding links
 
-
-
-## 
-
-The GanttViewLinkDataItem Collection Editor allows you to add links (dependences) between the items in the gantt view in design time.
+The __GanttViewLinkDataItem__ CollectionEditor allows you to add links (dependences) between the items in the gantt view at design time.
         
 ![ganttview-designtime-adding-links 001](images/ganttview-designtime-adding-links001.png)
 
-The more important properties of the column you need to set up are:
+The more important properties of the links you need to set up are:
 
 * __StartItem:__ Determines the item from which the link will start.
             
@@ -28,3 +24,9 @@ The more important properties of the column you need to set up are:
             
 
 * __LinkType:__ Determines the type of the link (dependency) between the start and end items.
+
+# See Also
+
+* [Adding items]({%slug winforms/ganttview-/design-time/adding-items%})
+* [Adding columns]({%slug winforms/ganttview-/design-time/adding-columns%})
+* [Smart Tag]({%slug winforms/ganttview-/design-time/smart-tag%})

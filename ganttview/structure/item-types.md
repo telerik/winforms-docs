@@ -1,8 +1,8 @@
 ---
 title: Item types
-page_title: Item types | UI for WinForms Documentation
-description: Item types
-slug: winforms/ganttview-/structure/item-types
+page_title: Item types | RadGanttView
+description: There are total of three item types - summary item task item and milestone item. 
+slug: winforms/ganttview/structure/item-types
 tags: item,types
 published: True
 position: 1
@@ -10,8 +10,6 @@ previous_url: ganttview-structure-item-types
 ---
 
 # Item types
-
-
 
 There are total of three item types: summary item, task item and milestone item.
 
@@ -35,8 +33,6 @@ Common tasks are concrete tasks with defined start and end time.
 
 ![ganttview-structure-item-types 004](images/ganttview-structure-item-types004.png)
 
-## 
-
 The following table demonstrates the similarities and differences between the item types:
         
 
@@ -46,3 +42,7 @@ The following table demonstrates the similarities and differences between the it
 |Summary|True|True|True|False|
 |Milestone|True|False|False|False|
 |Task|True|True|True|True|
+
+# See Also
+
+* [Structure]({%slug winforms/ganttview-/structure%})

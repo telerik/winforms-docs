@@ -1,21 +1,19 @@
 ---
 title: Today Indicator
-page_title: Today Indicator | UI for WinForms Documentation
-description: Today Indicator
+page_title: Today Indicator | RadGanttView
+description: The today indicator represents the current date and time in the graphical view of RadGanttView.
 slug: winforms/ganttview-/today-indicator
 tags: today,indicator
 published: True
-position: 10
+position: 12
 previous_url: ganttview-today-indicator
 ---
 
 # Today Indicator
  
-The today indicator represents the current date and time in the graphical view of RadGanttView. There are two indicators you can show. One is positioned over the timeline and the other is directly over the graphical view. 
+The today indicator represents the current date and time in the graphical view of __RadGanttView__. There are two indicators you can show. One is positioned over the timeline and the other is directly over the graphical view. 
 
 ![ganttview-today-indicator 001](images/ganttview-today-indicator001.png)
-
-## 
 
 You can control which one is visible through the __ShowTodayIndicator__ and the __ShowTimelineTodayIndicator__ properties.
 
@@ -46,4 +44,6 @@ timelineTodayIndicator.BackColor2 = Color.Green
 {{endregion}} 
 
 
+# See Also
 
+* [Properties]({%slug winforms/ganttview/properties%})

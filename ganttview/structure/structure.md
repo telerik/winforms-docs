@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Structure | UI for WinForms Documentation
-description: Structure
+page_title: Structure | RadGanttView
+description: This article shows the elements of RadGanttView.
 slug: winforms/ganttview-/structure
 tags: structure
 published: True
@@ -10,36 +10,24 @@ previous_url: ganttview-structure
 ---
 
 # Structure
- 
 
-## 
-
-The main elements of the structure of RadGanttView are displayed below:
+The main elements of the structure of __RadGanttView__ are displayed below:
         
-
 * RadGanttView
             
-
 	* RadGanttViewElement
-                
 
 		* GanttViewTextViewElement (virtualized container)
-                    
 
 			* GanttViewTextItemElement
-                        
 
 				* GanttViewTextViewCellElement
-                            
 
 		* GanttViewGraphicalViewElement (virtualized container)
-                    
 
 			* GanttViewTimelineContainer (virtualized container)
-                        
 
 			* GanttGraphicalViewBaseItemElement
-                        
 
 				* GanttGraphicalViewBaseTaskElement
                             
@@ -48,23 +36,26 @@ The main elements of the structure of RadGanttView are displayed below:
 1. RadGanttViewElement is the main element contained in the control. It parents the two main elements that you can see in RadGanttView and the separator between them.
             
 
-1. GanttViewTextViewElement is a virtualized stack container which holds the columns of the text view and the items in it.
+1. __GanttViewTextViewElement__ is a virtualized stack container which holds the columns of the text view and the items in it.
             
 
-1. GanttViewTextItemElement represents a single row in the text view.
+1. __GanttViewTextItemElement__ represents a single row in the text view.
             
 
-1. GanttViewTextViewCellElement is a cell element which displays data from the data item.
+1. __GanttViewTextViewCellElement__ is a cell element which displays data from the data item.
             
 
-1. GanttViewGraphicalViewElement is a virtualized stack container which holds the timeline container, the items graphically visualizing the gantt data and the links connecting different tasks.
+1. __GanttViewGraphicalViewElement__ is a virtualized stack container which holds the timeline container, the items graphically visualizing the gantt data and the links connecting different tasks.
             
 
-1. GanttViewTimelineContainer is a virtualized stack container which holds items displaying time.
+1. __GanttViewTimelineContainer__ is a virtualized stack container which holds items displaying time.
             
 
-1. GanttGraphicalViewBaseItemElement – this is the base type for the items displayed in the graphical view element
+1. __GanttGraphicalViewBaseItemElement__ is the base type for the items displayed in the graphical view element
             
 
-1. GanttGraphicalViewBaseTaskElement- this is the base type for the task elements.
+1. __GanttGraphicalViewBaseTaskElement__ is the base type for the task elements.
             
+# See Also
+
+* [Item types]({%slug winforms/ganttview/structure/item-types%})

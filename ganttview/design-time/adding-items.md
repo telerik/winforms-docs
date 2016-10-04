@@ -1,7 +1,7 @@
 ---
 title: Adding items
-page_title: Adding items | UI for WinForms Documentation
-description: Adding items
+page_title: Adding items | RadGanttView
+description: The Collection Editor allows you to add tasks to the gantt view in design time.
 slug: winforms/ganttview-/design-time/adding-items
 tags: adding,items
 published: True
@@ -11,15 +11,11 @@ previous_url: ganttview-designtime-adding-items
 
 # Adding items
 
-
-
-## 
-
-The GanttViewDataItem Collection Editor allows you to add tasks to the gantt view in design time.
+The __GanttViewDataItem__ Collection Editor allows you to add tasks to the gantt view in design time.
         
 ![ganttview-designtime-adding-items 001](images/ganttview-designtime-adding-items001.png)
 
-The more important properties of the column you need to set up are:
+The more important properties of the item you need to set up are:
 
 * __Title:__ This is the text that will be displayed over the item if it is a Task item. No text is displayed for summary and milestone items.
             
@@ -40,3 +36,9 @@ The more important properties of the column you need to set up are:
             
 
 * __Progress:__ Allows you to set the completion of the task.
+
+# See Also
+
+* [Adding columns]({%slug winforms/ganttview-/design-time/adding-columns%})
+* [Adding links]({%slug winforms/ganttview-/design-time/adding-links%})
+* [Smart Tag]({%slug winforms/ganttview-/design-time/smart-tag%})

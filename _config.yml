@@ -398,12 +398,21 @@ navigation:
     editors/textbox:
         title: TextBox
         position: 7
+    editors/textbox/customizing-appearance:
+        title: Customizing Appearance
+        position: 6		
     editors/textboxcontrol:
         title: TextBoxControl
         position: 8
+    editors/textboxcontrol/customizing-appearance:
+        title: Customizing Appearance
+        position: 10
     editors/timepicker:
         title: TimePicker
         position: 9
+    editors/timepicker/customizing-appearance:
+        title: Customizing Appearance
+        position: 8
     editors/popupeditor:
         title: PopupEditor 
         position: 10
@@ -442,15 +451,15 @@ navigation:
         position: 1
     ganttview/working-with-data:
         title: Working with Data
-        position: 2
+        position: 3
     ganttview/design-time:
         title: Design time
-        position: 3
+        position: 2
     ganttview/context-menu:
         title: Context Menu
         position: 4
     ganttview/formatting:
-        title: Formatting
+        title: Customizing Appearance
         position: 5
     ganttview/editing:
         title: Editing

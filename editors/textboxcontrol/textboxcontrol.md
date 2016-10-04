@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: TextBoxControl | UI for WinForms Documentation
-description: TextBoxControl
+page_title: Overview | RadTextBoxControl
+description: TextBoxControl extends the the default text box by providing additional functionality like word formating and auto-complete. 
 slug: winforms/editors/textboxcontrol
 tags: textboxcontrol
 published: True
@@ -9,11 +9,12 @@ position: 0
 previous_url: editors-textboxcontrol-overview
 ---
 
-# TextBoxControl
- 
-## 
+# RadTextBoxControl
 
-The RadTextBoxControl provides similar to the standard .NET Framework text box features. In addition it allows easy customizations and enhancements. It is generally used for editing text, although it can be used to display text, when in read-only mode. The control can display multiple lines, wrap text to the size of the control and perform text block formatting and replacement.
+
+__RadTextBoxControl__ provides similar to the standard .NET Framework text box features. In addition it allows easy customizations and enhancements. It is generally used for editing text, although it can be used to display text, when in read-only mode. The control can display multiple lines, wrap text to the size of the control and perform text block formatting and replacement.
+
+>caption Figure 1: RadTextBoxControl
         
 ![editors-textboxcontrol-overview 001](images/editors-textboxcontrol-overview001.png)
 
@@ -29,6 +30,13 @@ Key Features:
 
 * Flexible and intuitive API
 
-* RadTextBoxControl supports IME out of the box.
+* [IME](https://msdn.microsoft.com/en-us/library/cc194855.aspx) support.
 
-* IME support
+# See Also
+
+* [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
+* [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
+* [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})
+* [Structure]({%slug winforms/editors/textboxcontrol/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/textboxcontrol/properties%})
+* [Text editing]({%slug winforms/editors/textboxcontrol/text-editing%})

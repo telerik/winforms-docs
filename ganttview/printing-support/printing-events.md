@@ -1,7 +1,7 @@
 ---
 title: Printing Events
-page_title: Printing Events | UI for WinForms Documentation
-description: Printing Events
+page_title: Printing Events | RadGanttView
+description: You can customize the print output through the PrintElementFormatting and PrintElementPaint events.
 slug: winforms/ganttview-/printing-support/printing-events
 tags: printing,events
 published: True
@@ -11,7 +11,6 @@ previous_url: ganttview-printing-support-printing-events
 
 # Printing Events
  
-
 You can customize the print output through the __PrintElementFormatting__ and __PrintElementPaint__ events. __PrintElementFormatting__ provides you with a print element which has style properties available so you can customize it as you see fit. The __PrintElementPaint__ gives you direct access to the graphical context and allows you to directly draw to the print output. 
 
 ## PrintElementFormatting
@@ -82,13 +81,12 @@ End Sub
 
 {{endregion}} 
 
-
 ![ganttview-printing-printing-events 001](images/ganttview-printing-printing-events001.png)![ganttview-printing-printing-events 002](images/ganttview-printing-printing-events002.png)
 
 ## PrintElementPaint
 
 This example demonstrates how you can paint the text of summary items next to the printed graphical representation.
-         
+
 {{source=..\SamplesCS\GanttView\PrintingEvents\PrintingEvents.cs region=PrintPaint}} 
 {{source=..\SamplesVB\GanttView\PrintingEvents\PrintingEvents.vb region=PrintPaint}} 
 
@@ -121,5 +119,8 @@ End Sub
 
 {{endregion}} 
 
-
 ![ganttview-printing-printing-events 003](images/ganttview-printing-printing-events003.png)
+
+# See Also
+
+* [Printing Support]({%slug winforms/ganttview-/printing-support%})

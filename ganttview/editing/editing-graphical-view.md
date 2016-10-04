@@ -1,7 +1,7 @@
 ---
-title: Editing graphical view
-page_title: Editing graphical view | UI for WinForms Documentation
-description: Editing graphical view
+title: Editing Graphical View
+page_title: Editing Graphical View | RadGanttView
+description: The graphical view of RadGanttView allows the users to modify several aspects of the tasks they are viewing.
 slug: winforms/ganttview-/editing/editing-graphical-view
 tags: editing,graphical,view
 published: True
@@ -11,10 +11,7 @@ previous_url: ganttview-editing-editing-graphicalview
 
 # Editing graphical view
 
-
-
-The graphical view of RadGanttView allows the users to modify several aspects of the tasks they are viewing.
-      
+The graphical view of __RadGanttView__ allows the users to modify several aspects of the tasks they are viewing.
 
 ## Resizing
 
@@ -31,17 +28,19 @@ Users can drag the whole task by clicking anywhere on the task surface, without 
 ## Creating links
 
 Users can create links (dependences) by doing the following:
-        
 
 1. Hover over the item they want the link to start.
-            
 
 1. Two link handles will appear on both sides of the task.
-            
 
 1. Press the left mouse button and start dragging. A new link will appear.
-            
 
 1. Finally the user should release the mouse over a link handle of another item. The link type is determined by the link handle where the operation started and the link handle where it ended.
             
 ![ganttview-editing-editing-graphicalview 001](images/ganttview-editing-editing-graphicalview001.gif)
+
+# See Also
+
+* [Customizing editor]({%slug winforms/ganttview-/editing/customizing-editor%})
+* [Creating custom editor]({%slug winforms/ganttview-/editing/creating-custom-editor%})
+* [Editing Text View]({%slug winforms/ganttview-/editing/editing-text-view%})
