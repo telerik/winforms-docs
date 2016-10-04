@@ -1,23 +1,19 @@
 ---
 title: Caret positioning and selection
-page_title: Caret positioning and selection | UI for WinForms Documentation
-description: Caret positioning and selection
+page_title: Caret positioning and selection | RadTextBoxControl
+description: Use the API of RadTextBoxControl to position the caret or select any part of the text.
 slug: winforms/editors/textboxcontrol/caret-positioning-and-selection
 tags: caret,positioning,and,selection
 published: True
-position: 4
+position: 5
 previous_url: editors-textboxcontrol-caret-positioning-and-selection
 ---
 
 # Caret positioning and selection
- 
-## 
 
-The positioning and selection in RadTextBoxControl can be performed programmatically as well as using keyboard and mouse input.
-        
+The positioning and selection in __RadTextBoxControl__ can be performed programmatically as well as using keyboard and mouse input.
 
 To select text you can press the shift key followed by left mouse button or one of the navigation keys of the keyboard (up, down, left, right buttons).
-        
 
 Programmatically selection can be performed by using the __SelectionStart__ and __SelectionLength__ properties of RadTextBoxControl.
         
@@ -26,6 +22,8 @@ The __SelectionStart__ property is a number that indicates the insertion point w
         
 
 The __SelectionLength__ property is a numeric value that sets the width of the insertion point. Setting the __SelectionLength__ to a number greater than 0 causes that number of characters to be selected, starting from the current insertion point.
+
+#### Select part of the text using the __SelectionStart__ and __SelectionLenght__ properties.
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetSelection}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetSelection}} 
@@ -51,7 +49,7 @@ End Sub
 
 {{endregion}} 
  
-Alternatively, you can use the Select method to select the same part of the text: 
+#### Use the __Select__ method to select the part of the text:
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Select}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=Select}} 
@@ -74,10 +72,19 @@ End Sub
 
 {{endregion}} 
  
-The both approaches produce same result:![editors-textboxcontrol-caret-positioning-and-selection 001](images/editors-textboxcontrol-caret-positioning-and-selection001.png)
+The both approaches produce same result:
+
+![editors-textboxcontrol-caret-positioning-and-selection 001](images/editors-textboxcontrol-caret-positioning-and-selection001.png)
 
 You can access the selected text through the __SelectedText__ property. To select the whole text use the __SelectAll__ method.
 		
 
 Note that you can use the __CaretIndex__ property to move the caret at specified position and clear the selection.
 		
+# See Also
+
+* [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
+* [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})
+* [Structure]({%slug winforms/editors/textboxcontrol/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/textboxcontrol/properties%})
+* [Text editing]({%slug winforms/editors/textboxcontrol/text-editing%})

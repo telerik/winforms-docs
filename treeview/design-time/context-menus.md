@@ -14,7 +14,7 @@ previous_url: treeview-design-time-context-menus
 
 Context menus can be added to a RadTreeView or to each individual node. Context menus for nodes take precedence over the menu for the RadTreeView. To add a context menu to your RadTreeView, you should drag and drop RadContextMenu component on your form and then create a RadContextMenuManager. This will add a __RadContextMenu__ property for RadTreeView and you will be able to set the RadContextMenu instance to this property.
 
-You can also assign a RadContextMenu instance to an individual node. However, you do not need a [RadContextMenuManager](http://www.telerik.com/help/winforms/Assign_RadContextMenu_to_Telerik_and_non-Telerik_controls.html) for this purpose. You can simply use the RadTreeView Property Builder:
+You can also assign a RadContextMenu instance to an individual node. However, you do not need a [RadContextMenuManager]({%slug winforms/menus/contextmenu/assign-radcontextmenu-to-telerik-and-non-telerik-controls%}) for this purpose. You can simply use the RadTreeView Property Builder:
 
 1. Drag and drop RadTreeView control on your form. 
 

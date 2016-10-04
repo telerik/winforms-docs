@@ -57,7 +57,7 @@ __RadRichTextEditor__ is a control that is able to display and edit rich-text co
 
 * __Multi-region selection__ - the built-in multi-region support enables you to perform various operations for more than one selection simultaneously. [Read more]({%slug winforms/richtexteditor-/features/selection%})
 
-* __Rich-text clipboard –__ allows rich text copy/paste from Word, OpenOffice etc.[Read more](0696ADDB-DD5A-484D-B5C9-A8C90F6DA93D)
+* __Rich-text clipboard –__ allows rich text copy/paste from Word, OpenOffice etc.[Read more]({%slug winforms/richtexteditor-/features/clipboard-support%})
 
 * __Import/export__ - with Telerik __RadRichTextEditor__ control you can load XAML, HTML, RTF, DocX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats or PDF. [Read more]({%slug winforms/richtexteditor/import%})
 

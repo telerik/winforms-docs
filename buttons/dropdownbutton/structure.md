@@ -18,7 +18,7 @@ This article will show the internal elements structure of __RadDropDownButton__:
 
 1. __RadArrowButtonElement__: represents the arrow button that opens the popup
 2. __ActionButtonElement__: represents the action button element
-3. __RadMenuItem__: represents the drop down item
+3. __RadMenuItem__: represents the drop down item. For more information see [RadMenuItem]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem%}).
 4. __RadDropDownButtonPopup__: represents the drop down
 
 >caption Figure 2: RadDropDownButton's structure

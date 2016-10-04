@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadPopupEditor
+description: Start using RadPopupEditor and create custom popup controls.
 slug: winforms/editors/popupeditor/getting-started
 tags: getting,started
 published: True
@@ -10,10 +10,6 @@ previous_url: eidtors-popupeditor-getting-started
 ---
 
 # Getting Started
-
-
-
-## 
 
 This article shows how you can start using __RadPopupEditor__. Go ahead and add __RadPoupEditor__ and __RadPoupContainer__ to a form. The result should look like in Figure 1.
       
@@ -66,9 +62,6 @@ End Sub
 ````
 
 {{endregion}} 
-
-
-
 
 This way when __Submit__ is pressed the name will be displayed in the control's text box.
         

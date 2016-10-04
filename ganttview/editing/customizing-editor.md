@@ -1,7 +1,7 @@
 ---
 title: Customizing editor
-page_title: Customizing editor | UI for WinForms Documentation
-description: Customizing editor
+page_title: Customizing editor | RadGanttView
+description: The appearance and behavior of property grid editors can be changed programmatically.
 slug: winforms/ganttview-/editing/customizing-editor
 tags: customizing,editor
 published: True
@@ -11,14 +11,9 @@ previous_url: ganttview-editing-customizing-editor
 
 # Customizing editor
 
-
-
-## 
-
 The appearance and behavior of property grid editors can be changed programmatically. This can be done in the __EditorInitialized__ event. __EditorInitialized__ is fired when the editor is created and initialized with a predefined set of properties.
         
-
-The following sample demonstrates how to change the default font of a BaseTextBoxEditor in RadGanttView:
+The following sample demonstrates how to change the default font of a __BaseTextBoxEditor__ in RadGanttView:
          
 {{source=..\SamplesCS\GanttView\Editing\CustomizingEditor.cs region=CustomizingEditor}} 
 {{source=..\SamplesVB\GanttView\Editing\CustomizingEditor.vb region=CustomizingEditor}} 
@@ -46,5 +41,9 @@ End Sub
 
 {{endregion}} 
 
+# See Also
 
+* [Creating custom editor]({%slug winforms/ganttview-/editing/creating-custom-editor%})
+* [Editing Graphical View]({%slug winforms/ganttview-/editing/editing-graphical-view%})
+* [Editing Text View]({%slug winforms/ganttview-/editing/editing-text-view%})
 

@@ -11,7 +11,9 @@ previous_url: diagram-tools-text-tool
 
 # Text Tool
 
-The __TextTool__ allows you to enter the edit mode of a __RadDiagramItem__ as soon as you click on it. Furthermore, you can use this tool to draw text shapes. As it isn't active by default, you can use the RadDiagram.__ActiveTool__ property to activate it:#_[C#] Active Tool_
+The __TextTool__ allows you to enter the edit mode of a __RadDiagramItem__ as soon as you click on it. Furthermore, you can use this tool to draw text shapes. As it isn't active by default, you can use the RadDiagram.__ActiveTool__ property to activate it:
+
+#### Active Tool
 
 {{source=..\SamplesCS\Diagram\DiagramPopulatingWithData.cs region=ActiveTool}} 
 {{source=..\SamplesVB\Diagram\DiagramPopulatingWithData.vb region=ActiveTool}} 

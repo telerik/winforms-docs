@@ -59,3 +59,10 @@ In order to create a diagram describing the flow of an "if-else" operator, you w
 ![diagram-getting-started 004](images/diagram-getting-started004.png)
 
 Finally, you can connect all shapes using __RadDiagramConnections__.
+
+
+# See Also
+
+* [Structure]({%slug winforms/diagram/structure%})
+* [Design Time]({%slug winforms/diagram/design-time%})
+* [Toolbox]({%slug winforms/diagram/toolbox%})

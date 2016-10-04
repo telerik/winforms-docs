@@ -202,5 +202,8 @@ Here is a sample xml file for storing two shapes and a connection between them:
 
 ````
 
+# See Also
+
+* [DataBinding]({%slug winforms/diagram/data-binding/data-binding-basics%})
 
 

@@ -1,7 +1,7 @@
 ---
 title: Importing XML from MS Project
-page_title: Importing XML from MS Project | UI for WinForms Documentation
-description: Importing XML from MS Project
+page_title: Importing XML from MS Project | RadGanttView
+description: We have prepared a class that would help you import an MS Project saved as xml.
 slug: winforms/ganttview-/working-with-data/importing-xml-from-ms-project
 tags: importing,xml,from,ms,project
 published: True
@@ -10,10 +10,8 @@ previous_url: ganttview-working-with-data-importing-xml-from-msproject
 ---
 
 # Importing XML from MS Project
- 
-## 
 
-Although RadGanttView does not support direct binding or importing of MS Project files we have prepared a class that would help you import an MS Project saved as xml into RadGanttView.
+Although __RadGanttView__ does not support direct binding or importing of MS Project files we have prepared a class that would help you import an MS Project saved as xml.
         
 {{source=..\SamplesCS\GanttView\WorkingWithData\ImportXmlFromMsProject.cs region=MsProjectImport}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\ImportXmlFromMsProject.vb region=MsProjectImport}} 
@@ -293,7 +291,7 @@ End Class
 {{endregion}} 
  
 
-After you have this code in your project you can load the data from the xml into RadGanttView with the following code: 
+After you have this code in your project you can load the data from the xml into __RadGanttView__ like this: 
 
 {{source=..\SamplesCS\GanttView\WorkingWithData\ImportXmlFromMsProject.cs region=ImportXmlIntoGanttView}} 
 {{source=..\SamplesVB\GanttView\WorkingWithData\ImportXmlFromMsProject.vb region=ImportXmlIntoGanttView}} 
@@ -316,5 +314,11 @@ Dim dataSet As DataSet = importer.GetData(reader)
 
 {{endregion}} 
 
+# See Also  
 
+* [Binding to Database]({%slug winforms/ganttview-/working-with-data/binding-to-database%})
+* [Data Binding Basics]({%slug winforms/ganttview-/working-with-data/data-binding-basics%})
+* [Adding new items]({%slug winforms/ganttview-/working-with-data/adding-new-items%})
+* [Link Type Converter]({%slug winforms/ganttview-/working-with-data/link-type-converter%})
+* [Populating with Data Programmatically]({%slug winforms/ganttview-/working-with-data/populating-with-data-programmatically%})
 

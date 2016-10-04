@@ -1,24 +1,22 @@
 ---
-title: Customization
-page_title: Customization | UI for WinForms Documentation
-description: Customization
+title: Customizing Programmatically
+page_title: Customizing Programmatically | UI for WinForms Documentation
+description: Access and change the styles of the TimePicker elements in the code.
 slug: winforms/editors/timepicker/customization
 tags: customization
 published: True
-position: 3
-previous_url: editors-timepicker-customization
+position: 1
+previous_url: editors-timepicker-customization, editors/timepicker/customization
 ---
 
-# Customization
+# Customizing Programmatically
 
-
-
-Each of the control's elements can be accessed and customized. At the [Structure, properties and events article]({%slug winforms/editors/timepicker/structure,-properties-and-events%}) , you can find what is the control's structure. Once you access the desired elements, you can tweak its properties in order to modify it. In this tutorial, we will take a look at code snippets, demonstrating how to access and modify different parts of the control:
+Each of the control's elements can be accessed and customized. At the [Structure]({%slug winforms/editors/timepicker/structure%}), you can find what is the control's structure. Once you access the desired elements, you can tweak its properties in order to modify it. In this article, we will take a look at code snippets, demonstrating how to access and modify different parts of the control.
       
 
 ## Customize text box
 
-For example the editable area of the control consist of RadTextBoxItem hosted in RadMaskedEditBoxElement. So in order to customize the text box BackColor you need to set both the BackColor of the RadTextBoxItem and of the RadMaskedEditBoxElement’s FillPrimitive: 
+For example the editable area of the control consist of __RadTextBoxItem__ hosted in __RadMaskedEditBoxElement__. So in order to customize the text box __BackColor__ you need to set both the __BackColor__ of the __RadTextBoxItem__ and of the __RadMaskedEditBoxElement__ `FillPrimitive`: 
 
 {{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeTextBox}} 
 {{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeTextBox}} 
@@ -84,15 +82,11 @@ RadTimePicker1.TimePickerElement.DownButton.Border.ForeColor = Color.Blue
 
 {{endregion}} 
 
-
-
-
 ![editors-timepicker-customization 003](images/editors-timepicker-customization003.png)
 
 ## Customize clock element appearance
 
 Here is how to change the clock header background and font and also how to hide the seconds arrow from the clock:
-         
 
 {{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeClock}} 
 {{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeClock}} 
@@ -117,9 +111,6 @@ RadTimePicker1.TimePickerElement.PopupContentElement.ClockElement.SecondsArrow.V
 ````
 
 {{endregion}} 
-
-
-
 
 ![editors-timepicker-customization 004](images/editors-timepicker-customization004.png)
 
@@ -154,9 +145,6 @@ RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.He
 ````
 
 {{endregion}} 
-
-
-
 
 ![editors-timepicker-customization 005](images/editors-timepicker-customization005.png)
 
@@ -202,15 +190,11 @@ End Sub
 
 {{endregion}} 
 
-
-
-
 ![editors-timepicker-customization 006](images/editors-timepicker-customization006.png)
 
 ## Customize hours and minutes tables 
 
 This is how you can set the hours and minutes tables background color:
-         
 
 {{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeHoursAndMinutesTables}} 
 {{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeHoursAndMinutesTables}} 
@@ -240,13 +224,11 @@ RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.BackColor = Co
 
 {{endregion}} 
 
- 
 ![editors-timepicker-customization 007](images/editors-timepicker-customization007.png)
 
 ## Customize button panel
 
 Here is how to change the BackColor of the FooterPanel:
-         
 
 {{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeFooterPanel}} 
 {{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeFooterPanel}} 
@@ -262,7 +244,8 @@ RadTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Col
 
 {{endregion}} 
 
-
-
-
 ![editors-timepicker-customization 008](images/editors-timepicker-customization008.png)
+
+# See Also
+
+[Themes]({%slug editors/timepicker/themes%})

@@ -42,7 +42,7 @@ public class GroupComparer : IComparer<Group<GridViewRowInfo>>
         {
             return parsedX.CompareTo(parsedY);
         }
-        return x.Key.ToString().CompareTo(y.Key.ToString());
+        return ((object[])x.Key)[0].ToString().CompareTo(((object[])y.Key)[0].ToString());
     }
 }
 
@@ -58,7 +58,7 @@ Public Class GroupComparer
         Integer.TryParse(DirectCast(y.Key, Object()).First().ToString(), parsedY) Then
             Return parsedX.CompareTo(parsedY)
         End If
-        Return x.Key.ToString().CompareTo(y.Key.ToString())
+        Return DirectCast(x.Key, Object())(0).ToString().CompareTo(DirectCast(y.Key, Object())(0).ToString())
     End Function
 
 ````

@@ -34,7 +34,7 @@ In this article we are going to demonstrate how to create and apply a repository
 
 ## Creating a new Repository Item
 
->note For more information or repository items, check the [Theme Repository](47712B3D-4DF8-44F3-AA3F-8F354D53AA91) topic.
+>note For more information or repository items, check the [Theme Repository]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%}) topic.
 >
 
 ![tools-visual-style-builder-getting-started 002](images/tools-visual-style-builder-getting-started002.png)

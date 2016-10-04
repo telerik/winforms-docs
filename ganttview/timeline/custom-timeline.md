@@ -1,6 +1,6 @@
 ---
 title: Custom timeline
-page_title: Custom timeline | UI for WinForms Documentation
+page_title: Custom timeline | RadGanttView
 description: Custom timeline
 slug: winforms/ganttview-/timeline/custom-timeline
 tags: custom,timeline
@@ -16,10 +16,7 @@ __RadGanttView__ offers a number of built-in *TimeRange* settings which allow us
 
 ![ganttview-timeline-custom-timeline 001](images/ganttview-timeline-custom-timeline001.png)
 
-## 
-
-1\. First you need to set the *TimelineRange* property of the gantt view graphical element to Custom. If you want you can override and modify the default views as well but for this example we will use the Custom value. 
-
+1\. First you need to set the __TimelineRange__ property of the gantt view graphical element to *Custom*. If you want you can override and modify the default views as well but for this example we will use the custom value. 
 
 {{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=TimeRangeCustom}} 
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=TimeRangeCustom}} 
@@ -55,7 +52,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineBehavior = New De
  
 3\. Now you can fill the class with the code that will create the view. You should note that because we want to preserve the built-in views throughout the example we will check whether the time range is Custom and only handle this case.
 
-* First you have to override the *AdjustedTimelineStart* and *AdjustedTimelineEnd* properties. What these properties do is to enlarge the timeline start and end to allow only whole timeline cells to be displayed. Here is an example. Imagine you use a view with quarters and your *TimelineStart* property is set to 15.05.2013. This date is somewhere in the middle of the year’s second quarter. The *AdjustedTimelineStart* property takes this date and the fact you use quarters and returns an adjusted date which is the actual start of the quarter. In this particular case the property will return 03.04.2013 which is the start date of the quarter that contains the *TimelineStart* date. The *AdjustedTimelineEnd* property does the same for the end of the timeline. For the decades view this properties will adjust the start and end dates to years: 
+* First you have to override the __AdjustedTimelineStart__ and __AdjustedTimelineEnd__ properties. What these properties do is to enlarge the timeline start and end to allow only whole timeline cells to be displayed. Here is an example. Imagine you use a view with quarters and your __TimelineStart__ property is set to 15.05.2013. This date is somewhere in the middle of the year’s second quarter. The __AdjustedTimelineStart__ property takes this date and the fact you use quarters and returns an adjusted date which is the actual start of the quarter. In this particular case the property will return 03.04.2013 which is the start date of the quarter that contains the __TimelineStart__ date. The __AdjustedTimelineEnd__ property does the same for the end of the timeline. For the decades view this properties will adjust the start and end dates to years: 
 
 {{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=AdjustedStartAndEnd}} 
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=AdjustedStartAndEnd}} 
@@ -108,7 +105,7 @@ End Property
 {{endregion}} 
  
 
-* Next you should override the *BuildTimelineDataItems* method. The method returns a list of __GanttViewTimelineDataItems__. Each data item will represent a decade. 
+* Next you should override the __BuildTimelineDataItems__ method. The method returns a list of __GanttViewTimelineDataItems__. Each data item will represent a decade. 
 
 {{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=GanttViewTimelineDataItems}} 
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=GanttViewTimelineDataItems}} 
@@ -182,7 +179,7 @@ End Function
 {{endregion}} 
  
 
-* Next we have to calculate the timeline cells for each timeline data item. To this we override the *GetTimelineCellInfoForItem* method. The method returns an instance of the __GanttTimelineCellsInfo__ struct. This struct contains two properties. The first one, *NumberOfcells*, indicates how many cells the given timeline data item will display. The second one, *StartIndex*, is useful in the case where you use repeatable cell items e.g. quarters, halves, thirds etc. The property is useful when the start of the timeline is not the first item in the repeatable values collection. Here is an example. Imagine the timeline starts is the third quarter of the year with this property you will later be able to set the proper text to the cell item. If you do not have this info your cells will always start at 0 or 1. Since in this example the start is the third quarter starting at 0 or 1 would be wrong. In our example we have continuous data so we will not use this property: 
+* Next we have to calculate the timeline cells for each timeline data item. To this we override the __GetTimelineCellInfoForItem__ method. The method returns an instance of the __GanttTimelineCellsInfo__ struct. This struct contains two properties. The first one, __NumberOfcells__, indicates how many cells the given timeline data item will display. The second one, __StartIndex__, is useful in the case where you use repeatable cell items e.g. quarters, halves, thirds etc. The property is useful when the start of the timeline is not the first item in the repeatable values collection. Here is an example. Imagine the timeline starts is the third quarter of the year with this property you will later be able to set the proper text to the cell item. If you do not have this info your cells will always start at 0 or 1. Since in this example the start is the third quarter starting at 0 or 1 would be wrong. In our example we have continuous data so we will not use this property: 
 
 {{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=GanttTimelineCellsInfo}} 
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=GanttTimelineCellsInfo}} 
@@ -243,7 +240,7 @@ End Function
 
 {{endregion}} 
  
-* Finally we want to have a proper text inside our decade timeline items. For this purpose we override the *GetTimelineTopElementText* and *GetTimelineBottomElementText* methods.
+* Finally we want to have a proper text inside our decade timeline items. For this purpose we override the __GetTimelineTopElementText__ and __GetTimelineBottomElementText__ methods.
                  
 {{source=..\SamplesCS\GanttView\CustomTimeline\DecadesTimeline.cs region=TimelineElementsText}} 
 {{source=..\SamplesVB\GanttView\CustomTimeline\DecadesTimeline.vb region=TimelineElementsText}} 
@@ -289,5 +286,7 @@ End Function
 
 {{endregion}} 
 
+# See Also
 
+* [Timeline views]({%slug winforms/ganttview-/timeline/timeline-views%})
 

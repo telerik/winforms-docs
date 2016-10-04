@@ -37,3 +37,8 @@ __RadDiagram__ allows you to create various kinds of diagrams like Organizationa
 
 1. __Information Tooltips__ - tooltips that appear below the manipulation adorner when you resize, rotate or drag a shape or group of shapes and connections.
             
+
+# See Also
+
+* [Design Time]({%slug winforms/diagram/design-time%})
+* [Getting Started]({%slug winforms/diagram/getting-started%})

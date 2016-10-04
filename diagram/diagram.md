@@ -61,4 +61,11 @@ Here is a list with short descriptions of the top-of-the-line features of __RadD
             
 
 * __Diagram commands__ - __RadDiagram__ exposes a set of commands that allow you to easily implement interaction logic in MVVM solutions.
+
+
+# See Also
+
+* [Structure]({%slug winforms/diagram/structure%})
+* [Design Time]({%slug winforms/diagram/design-time%})
+* [Getting Started]({%slug winforms/diagram/getting-started%})
           

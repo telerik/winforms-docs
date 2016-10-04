@@ -21,3 +21,4 @@ The following screenshot shows the __RadRibbonForm__ control in action:
 
 * [RadForm]({%slug winforms/forms-and-dialogs/form%})
 * [RadRibbonBar]({%slug winforms/ribbonbar%})
+* [Getting Started]({%slug winforms/forms-and-dialogs/ribbonform/getting-started%})

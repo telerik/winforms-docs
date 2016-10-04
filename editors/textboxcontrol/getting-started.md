@@ -1,21 +1,19 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadTextBoxControl
+description: Get started using the main features of RadTextBoxControl. 
 slug: winforms/editors/textboxcontrol/getting-started
 tags: getting,started
 published: True
-position: 2
+position: 4
 previous_url: editors-textboxcontrol-getting-started
 ---
 
 # Getting Started
- 
-## 
 
-The RadTextBoxControl is used to get input from the user or to display text. The control can display multiple lines, wrap text to the size of the control, add basic formatting, use themes, and the main differences with RadTextBox - can be transparent and use gradients. The text box control provides a single format style for the text displayed or entered.
+The __RadTextBoxControl__ is used to get input from the user or to display text. The control can display multiple lines, wrap text to the size of the control, add basic formatting, use themes, and the main differences with RadTextBox - can be transparent and use gradients. The text box control provides a single format style for the text displayed or entered.
          
-The text displayed by the control resides in the Text property. It can be set at design time via the Properties window in Visual Studio, at run time in code, or by user input at run time. The current contents of a text box can be retrieved at run time by via the Text property.
+The text displayed by the control resides in the __Text__ property. It can be set at design time via the `Properties` window in Visual Studio, at run time in code, or by user input at run time. The current contents of a text box can be retrieved at run time by via the __Text__ property.
         
 
 The code below sets text in the control at run time: 
@@ -40,7 +38,7 @@ End Sub
 
 {{endregion}} 
 
-
+>caption Figure 1: Set the text at runtime.
 ![editors-textboxcontrol-getting-started 001](images/editors-textboxcontrol-getting-started001.png)
 
 You can also define the lines in the text box at run time: 
@@ -72,7 +70,7 @@ End Sub
 
 {{endregion}} 
 
-
+>caption Figure 2: Set the lines of a multiline text box.
 ![editors-textboxcontrol-getting-started 002](images/editors-textboxcontrol-getting-started002.png)
 
 By setting the __NullText__ property, the control will display a custom string when the __Text__ property is empty or null: 
@@ -97,10 +95,10 @@ End Sub
 
 {{endregion}} 
 
-
+>caption Figure 3: Setting the null text.
 ![editors-textboxcontrol-getting-started 003](images/editors-textboxcontrol-getting-started003.png)
 
-Based on the value set to the __TextAlign__ property, the control will display its conentent aligned to the left, center or right: 
+Based on the value set to the __TextAlign__ property, the control will display its content aligned to the left, center or right: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetTextAlign}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetTextAlign}} 
@@ -122,5 +120,14 @@ End Sub
 
 {{endregion}} 
 
-
+>caption Figure 4: Aligning the text to different positions.
 ![editors-textboxcontrol-getting-started 004](images/editors-textboxcontrol-getting-started004.png)
+
+# See Also
+
+* [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
+* [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
+* [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})
+* [Structure]({%slug winforms/editors/textboxcontrol/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/textboxcontrol/properties%})
+* [Text editing]({%slug winforms/editors/textboxcontrol/text-editing%})

@@ -238,8 +238,6 @@ shape.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollection(New
 
 {{endregion}} 
 
-
-
 >caption Fig.6 StrokeDashArray
 
 ![diagram-diagram-items-shapes 006](images/diagram-diagram-items-shapes006.png)
@@ -249,3 +247,8 @@ shape.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollection(New
 >caption Fig.7 StrokeThickness
 
 ![diagram-diagram-items-shapes 007](images/diagram-diagram-items-shapes007.png)
+
+# See Also
+ 
+* [ContainerShapes]({%slug winforms/diagram/diagram-items/containershapes%})	
+* [Connections]({%slug winforms/diagram/diagram-items/connections%})	 

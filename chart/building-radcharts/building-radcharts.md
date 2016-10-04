@@ -11,10 +11,6 @@ previous_url: chart-building-radcharts
 
 # Building RadCharts
 
-
-
-## 
-
 To provide flexibility and best ease-of-use, Telerik provides multiple avenues to populate RadChart. There are four main techniques for building the chart: interactively at design-time, declaratively in the ASP.NET HTML markup, programmatically at runtime and by data binding.
 
 In simple scenarios or to test out a design you can use the design-time interface to build the entire chart. Collection editors provide a consistent interface and easy navigation over all your chart series and series items. You can also use the RadChart Wizard to display a subset of the data.
@@ -28,7 +24,7 @@ To create and populate the __RadChart__ [ChartSeries]({%slug winforms/chart/und
 * At design time by [using the editors for ChartSeries and ChartSeriesItem collections]({%slug winforms/chart/building-radcharts/populate-radchart-at-design-time%}) or [using the RadChart Wizard]({%slug winforms/chart/understanding-radchart-ui/the-radchart-user-interface%}). 
 
 
-* [Declaratively in the ASP.NET HTML markup](30AD2813-E341-45AA-8E72-1070A6EA895B). 
+* Declaratively in the ASP.NET HTML markup. 
 
 
 * [Binding to a datasource]({%slug winforms/chart/building-radcharts/data-binding-radchart%}) at run time or design time. 

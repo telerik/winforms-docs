@@ -1,7 +1,7 @@
 ---
 title: Timeline item formatting
-page_title: Timeline item formatting | UI for WinForms Documentation
-description: Timeline item formatting
+page_title: Timeline item formatting | RadGanttView
+description: The TimelineItemFormatting event allows you to format the style and look of the items in the timeline container.
 slug: winforms/ganttview-/formatting/timeline-item-formatting
 tags: timeline,item,formatting
 published: True
@@ -10,10 +10,8 @@ previous_url: ganttview-formatting-timelineviewitem-formatting
 ---
 
 # Timeline item formatting
- 
-## 
 
-The RadGanttView __TimelineItemFormatting__ event allows you to format the style and look of the items in the timeline container. The following example demonstrates how to make the timeline appear as a checkered flag.
+The __TimelineItemFormatting__ event allows you to format the style and look of the items in the timeline container. The following example demonstrates how to make the timeline appear as a checkered flag.
          
 {{source=..\SamplesCS\GanttView\Formatting\TimelineItemFormatting.cs region=TimelineItemFormatting}} 
 {{source=..\SamplesVB\GanttView\Formatting\TimelineItemFormatting.vb region=TimelineItemFormatting}} 
@@ -70,5 +68,12 @@ End Sub
 
 {{endregion}} 
 
-
 ![ganttview-formatting-timelineviewitem-formatting 001](images/ganttview-formatting-timelineviewitem-formatting001.png)
+
+# See Also
+
+* [GraphicalView item formatting]({%slug winforms/ganttview-/formatting/graphicalview-item-formatting%})
+* [GraphicalView Link Item formatting]({%slug winforms/ganttview-/formatting/graphicalview-link-item-formatting%})
+* [TextView item formatting]({%slug winforms/ganttview-/formatting/textview-item-formatting%})
+* [Themes]({%slug winforms/ganttview/themes%})
+* [Custom Painting]({%slug winforms/ganttview-/formatting/custom-painting%})

@@ -1,40 +1,38 @@
 ---
 title: AutoComplete
-page_title: AutoComplete | UI for WinForms Documentation
-description: AutoComplete
+page_title: AutoComplete | RadTextBoxControl
+description: This article shows how you can use the auto-complete functionality of RadTextBoxControl
 slug: winforms/editors/textboxcontrol/autocomplete
 tags: autocomplete
 published: True
-position: 6
+position: 7
 previous_url: editors-textboxcontrol-autocomplete
 ---
 
 # AutoComplete
 
-
-The RadTextBoxControl can automatically complete the input string by comparing the prefix being entered to the prefix of all strings in the maintained source. This is useful for RadTextBoxControl in which URLs, addresses, file names or commands will be frequently entered.
+The __RadTextBoxControl__ can automatically complete the input string by comparing the prefix being entered to the prefix of all strings in the maintained source. This is useful for __RadTextBoxControl__ in which URLs, addresses, file names or commands will be frequently entered.
         
 
 There are four different completion modes:
 
-* __Append__ - Appends the remainder of the most likely candidate string to the existing characters, highlighting the appended characters.
+* __Append:__ Appends the remainder of the most likely candidate string to the existing characters, highlighting the appended characters.
 		  	
 
-* __None__ - Disables the automatic completion feature. 
+* __None:__ Disables the automatic completion feature. 
 		  	
 
-* __Suggest__ - Displays the auxiliary drop-down list associated with the control. This drop-down is populated with the matching completion strings.
+* __Suggest:__ Displays the auxiliary drop-down list associated with the control. This drop-down is populated with the matching completion strings.
 		  	
 
-* __SuggestAppend__ - Applies both Suggest and Append options.
-		  	
+* __SuggestAppend:__ Applies both Suggest and Append options.
 
-You can change the completion behavior by setting the AutoCompleteMode property. You can determine the items used for auto-completion by specifying a data source or adding the items manually.
+You can change the completion behavior by setting the __AutoCompleteMode__ property. You can determine the items used for auto-completion by specifying a data source or adding the items manually.
 		
 
 ## Auto-completion data binding
 
-RadTextBoxControl binds to collections of bindable types from many sources including:
+__RadTextBoxControl__ binds to collections of bindable types from many sources including:
 
 * Array and ArrayList of simple types or custom objects.
 				
@@ -56,16 +54,16 @@ Two properties control data binding:
 * The __AutoCompleteDisplayMember__ property specifies the particular data to be displayed in a RadTextBoxControl auto-completion drop down.
 				
 
-To set the __AutoCompleteDataSource__ property, select the __AutoCompleteDataSource__ property in the Properties window, click the drop-down arrow to display all existing data sources on the form. Click the Add Project Data Source link and follow the instructions in the Data Source Configuration Wizard to add a data source to your project. You can use databases, web services, or objects as data sources.
+To set the __AutoCompleteDataSource__ property, select the __AutoCompleteDataSource__ property in the Properties window, click the drop-down arrow to display all existing data sources on the form. Click the `Add Project Data Source` link and follow the instructions in the `Data Source Configuration Wizard` to add a data source to your project. You can use databases, web services, or objects as data sources.
 
 ![editors-textboxcontrol-autocomplete 001](images/editors-textboxcontrol-autocomplete001.png)
 
-To set the __AutoCompleteDisplayMember__ property, first set the data source property. Then, select a value for the __AutoCompleteDisplayMember__ property from the drop-down list in the Properties window.
+To set the __AutoCompleteDisplayMember__ property, first set the data source property. Then, select a value for the __AutoCompleteDisplayMember__ property from the drop-down list in the `Properties` window.
 		
 
 ## Auto-completion in unbound mode
 
-To use auto-completion without specifying a data source, you need to populate the items which will be used for completing the input string in RadTextBoxControl, in the __Items__ collection of the control: 
+To use auto-completion without specifying a data source, you need to populate the items which will be used for completing the input string in __RadTextBoxControl__, in the __Items__ collection of the control: 
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=AddAutoCompleteItems}} 
 {{source=..\SamplesVB\Editors\TextBoxControl.vb region=AddAutoCompleteItems}} 
@@ -114,3 +112,12 @@ End Sub
 Here is the result of the above code:
 
 ![editors-textboxcontrol-autocomplete 002](images/editors-textboxcontrol-autocomplete002.png)
+
+# See Also
+
+* [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
+* [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})
+* [Structure]({%slug winforms/editors/textboxcontrol/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/textboxcontrol/properties%})
+* [Text editing]({%slug winforms/editors/textboxcontrol/text-editing%})
+ 
