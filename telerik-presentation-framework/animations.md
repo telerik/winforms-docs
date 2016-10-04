@@ -11,7 +11,7 @@ previous_url: tpf-animations
 
 # Animations
 
-Using the [Telerik Presentation Framework](87f43b63-7fff-4b3c-b7c7-4830f1e63903) you can animate almost any element property. To do this you should use the __AnimatedPropertySetting__ class. The class constructors takes five arguments:
+Using the [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) you can animate almost any element property. To do this you should use the __AnimatedPropertySetting__ class. The class constructors takes five arguments:
         
 
 * The first argument of the AnimatedPropertySetting is the __RadProperty__ to animate
