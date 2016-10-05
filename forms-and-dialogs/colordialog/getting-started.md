@@ -1,11 +1,11 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadColorDialog
 description: Getting Started
 slug: winforms/forms-and-dialogs/colordialog/getting-started
 tags: getting,started
 published: True
-position: 2
+position: 3
 previous_url: forms-and-dialogs-colordialog-getting-started
 ---
 
