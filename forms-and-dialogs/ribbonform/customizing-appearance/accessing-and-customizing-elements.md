@@ -34,7 +34,7 @@ You can customize the nested elements at run time as well:
 
 ````C#
 this.AllowAero = false;
-this.RibbonBar.RibbonBarElement.CaptionFill.BackColor = Color.Lime; 
+this.RibbonBar.RibbonBarElement.CaptionFill.BackColor = Color.Lime;
 
 ````
 ````VB.NET
