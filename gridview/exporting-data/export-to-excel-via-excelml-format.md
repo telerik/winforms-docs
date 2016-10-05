@@ -11,13 +11,7 @@ previous_url: gridview-exporting-data-export-to-excel-via-excelml-format
 
 # Export to Excel via ExcelML Format
 
-
-
-## Export in ExcelML format
-
-## Overview
-
-This method offers excellent  ng performance and does not require MS Office installation on users' machines. The __ExcelML__ format can be read by MS Excel 2002 (MS Office XP) and above. Direct export to the xlsx format is possible by utilizing our __RadSpreadProcessing__ libraries (see [Spread Export]({%slug winforms/gridview/exporting-data/spread-export%}) and Async Spread Export articles for detailed information and examples).
+This method offers excellent performance and does not require MS Office installation on user machines. The __ExcelML__ format can be read by MS Excel 2002 (MS Office XP) and above. Direct export to the xlsx format is possible by utilizing our __RadSpreadProcessing__ libraries (see [Spread Export]({%slug winforms/gridview/exporting-data/spread-export%}) and Async Spread Export articles for detailed information and examples).
 
 >note The HTML export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
 * Telerik.WinControls.Data
@@ -26,9 +20,9 @@ This method offers excellent  ng performance and does not require MS Office inst
 
 ## Exporting Data
 
-__Initialize ExportToExcelML object__
+### Initialize ExportToExcelML object
 
-Before running export to ExcelML, you have to initialize the ExportToExcelML class. The constructor takes one parameter: the RadGridView that will be exported:
+Before running export to ExcelML, you have to initialize the `ExportToExcelML` class. The constructor takes one parameter, the RadGridView that will be exported:
 
 ####  ExportToExcelIML initialization
 

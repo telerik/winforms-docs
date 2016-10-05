@@ -11,11 +11,7 @@ previous_url: gridview-exporting-data-export-data-in-a-group-to-excel
 
 # Export Data in a Group to Excel
 
-
-
-## 
-
-Sometimes you may need to export just the data in a group in a grouped RadGridView. This is possible by using the context menu and its API:
+Sometimes you may need to export just the data in a group in a grouped RadGridView. This is possible by using the context menu:
 
 1\. Create RadContextMenu and get the right-clicked group header row by using the __MouseDown__ event and the __GetGridGroupHeaderRowElement__ method. After determining the clicked group row, you can get its child rows. Then simply show the context menu:
 
@@ -174,9 +170,6 @@ End Sub
 ````
 
 {{endregion}} 
-
-
-
 
 4\. If you need to get the text from the GroupRowHeader, use the following snippet:
 

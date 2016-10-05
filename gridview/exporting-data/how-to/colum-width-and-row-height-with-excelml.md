@@ -1,6 +1,6 @@
 ---
-title: Set Column Width and Row height with ExcelML format 
-page_title: Set Column Width and Row height with ExcelML format  | RadGridView
+title: Set Column Width and Row Height with ExcelML format 
+page_title: Set Column Width and Row Height with ExcelML format  | RadGridView
 description: Set Column Width and Row height with ExcelML format.
 slug: winforms/gridview/exporting-data/how-to/column-width-row-height
 tags: row,column,height,width
@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Set Column Width and Row height with ExcelML format 
+# Set Column Width and Row Height with ExcelML format 
 
 ### Columns Width
 

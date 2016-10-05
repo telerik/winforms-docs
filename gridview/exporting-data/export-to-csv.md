@@ -12,8 +12,6 @@ previous_url: gridview-exporting-data-export-to-csv
 # Export to CSV
 
 
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Exporting to CSV with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/exporting-to-csv-with-radgridview-for-winforms)<br>In this video, you will learn how to export RadGridView for WinForms to the CSV file format.|![exporting-to-csv-with-radgridview-for-winforms 001](images/exporting-to-csv-with-radgridview-for-winforms001.png)|
@@ -49,7 +47,7 @@ Dim exporter As ExportToCSV = New ExportToCSV(Me.RadGridView1)
 
 {{endregion}} 
 
-__File extension__
+### File Extension
 
 This property allows for changing the default (*.csv) file extension of the exported result file:
 
@@ -69,7 +67,7 @@ exporter.FileExtension = ""
 
 {{endregion}} 
 
-__Hidden columns and rows option__
+### Hidden Columns and Rows Option
 
 You can choose if the hidden columns and rows should be exported through __HiddenColumnOption__ and __HiddenRowOption__ properties. Please, note that these properties use the standard enums and include the *ExportAsHidden *option, which is not supported by CSV format. Setting that option will not affect the export at all.
 
@@ -79,7 +77,7 @@ You can choose if the hidden columns and rows should be exported through __Hidde
 
 * ExportAsHidden (not supported in csv)
 
-__Summaries export option__
+### Summaries export option
 
 You can use __SummariesExportOption__ property to specify how to export summary items. There are four options to choose from:
 
@@ -109,7 +107,7 @@ exporter.SummariesExportOption = SummariesOption.DoNotExport
 
 ## RunExport method
 
-Exporting data to CSV file is done through the RunExport method of ExportToCSV object. The RunExport method accepts the following parameter:
+Exporting data to CSV file is done through the RunExport method of the `ExportToCSV` object. The __RunExport__ method accepts the following parameter:
 
 * fileName: the name of the exported file
 
@@ -130,9 +128,6 @@ exporter.RunExport(fileName)
 ````
 
 {{endregion}} 
-
-
-
 
 ## Events
 
@@ -166,12 +161,9 @@ End Sub
 
 {{endregion}} 
 
-
-
-
 __CSVTableCreated event__:
 
-It can be used together with the public method AddCustomCSVRow. It allows for adding and formatting new custom rows on the top of the csv file :
+It can be used together with the public method __AddCustomCSVRow__. It allows for adding and formatting new custom rows on the top of the csv file :
 
 #### Handling the CSVTableCreated event
 

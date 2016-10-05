@@ -11,10 +11,6 @@ previous_url: gridview-end-user-capabilities-keyboard-support
 
 # Keyboard Support
 
-
-
-## 
-
 A typical business application needs to support "heads-down" data entry that avoids the use of the mouse. With RadGridView the user can:
 
 * Navigate the grid using only the arrow keys.

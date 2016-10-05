@@ -111,7 +111,7 @@ header.SetValue("Nortwind Products Details")
 
 {{endregion}} 
 
-4\. The final part is adding the footer. For example you can select the left most and right most cells below the actual grid data and set styles and value. At the end you can set the fill for the entire row.
+4\. The final part is adding the footer. For example you can select the left most and right most cells below the actual grid data and set their styles and value. At the end you can set the fill for the entire row.
 
 #### Add footer
 
