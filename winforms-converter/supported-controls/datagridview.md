@@ -18,7 +18,7 @@ The DataGridView is converted to [RadGridView]({%slug winforms/gridview%}). The 
 |AllowUserToDeleteRows|Replaced with|AllowDeleteRow| 
 |AllowUserToOrderColumns|Replaced with|AllowColumnReorder| 
 |AllowUserToResizeColumns|Replaced with|AllowColumnResize| 
-|AllowUserToResizeRows|Replaced with|   | 
+|AllowUserToResizeRows|Replaced with|AllowRowResize| 
 |AlternatingRowsDefaultCellStyle|Produces Error|   | 
 |AutoSizeColumnsMode|Produces Error|   | 
 |AutoSizeRowsMode|Produces Error|   | 
