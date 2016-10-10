@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started | RadColorDialog
-description: Getting Started
+description: RadColorDialog is a lightweight UI component that allows users to select from RGB or HEX color models.
 slug: winforms/forms-and-dialogs/colordialog/getting-started
 tags: getting,started
 published: True
@@ -10,31 +10,28 @@ previous_url: forms-and-dialogs-colordialog-getting-started
 ---
 
 # Getting Started
- 
-
-## 
 
 The following tutorial demonstrates configuring the __RadColorDialog__, localizing tab labeling and responding to the __OK__ button click.
 
+>caption Figure 1: Getting started with RadColorDialog
+
 ![forms-and-dialogs-colordialog-getting-started 001](images/forms-and-dialogs-colordialog-getting-started001.png)
 
-Drop a __RadColorDialog__ on the form.
+1\. Drop a __RadColorDialog__ on the form.
 
-In the Properties Window set the __Dock__ property to __Fill__.
+2\. Set the ColorDialogForm.__ShowBasicColors__ property to *false*.
 
-Set the __ShowBasicColors__ property to __false__.
+3\. Set the ColorDialogForm.__ShowProfessionalColors__ property to *false*.
 
-Set the __ShowProfessionalColors__ property to __false__.
+4\. Set the ColorDialogForm.__ShowHEXColorsValue__ property to *false*. 
 
-Set the __ShowHEXColorsValue__ property to __false__. 
+5\. Set the ColorDialogForm.__AllowPickColorFromScreen__ property to *false*.
 
-Set the __AllowPickColorFromScreen__ property to __false__.
+6\. Set the ColorDialogForm.__ShowCustomColors__ property to *false*.
 
-Set the __ShowCustomColors__ property to __false__.
+7\. Change the ColorDialogForm.__WebTabHeading__ property to read *Named Web Colors*.
 
-Change the __WebTabHeading__ property to read "Named Web Colors".
-
-Get the SelectedColor or SelectedHlsColor, check the returned DialogResult :
+8\. Get the __SelectedColor__ or __SelectedHlsColor__, check the returned __DialogResult__:
 
 #### Check the selected values in RadColorDialog 
 
@@ -43,23 +40,24 @@ Get the SelectedColor or SelectedHlsColor, check the returned DialogResult :
 
 ````C#
 if (radColorDialog1.ShowDialog() == DialogResult.OK)
-{
-    Color color = radColorDialog1.SelectedColor;
-    HslColor hslColor = radColorDialog1.SelectedHslColor;
-}
+ {
+	Color color = radColorDialog1.SelectedColor;
+	HslColor hslColor = radColorDialog1.SelectedHslColor;
+ }
 
 ````
 ````VB.NET
 If RadColorDialog1.ShowDialog() = DialogResult.OK Then
-    Dim color As Color = RadColorDialog1.SelectedColor
-    Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor
+ Dim color As Color = RadColorDialog1.SelectedColor
+ Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor
 End If
-
+	
 ````
 
 {{endregion}} 
 
+9\. Press __F5__ to run the application.
 
+# See Also
 
-
-Press __F5__ to run the application.
+* [Usability]({%slug winforms/forms-and-dialogs/colordialog/usability%})
