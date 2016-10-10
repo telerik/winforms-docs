@@ -18,13 +18,14 @@ The __RadBulletGraph__ control is a variation of linear gauge. It combines a num
 
 ## Key Features
 
-* __Easy to use__: using Telerik __RadBulletGraph__ is as easy as just dragging and dropping it from the toolbox.
+* __Easy to use__: Using Telerik __RadBulletGraph__ is as easy as just dragging and dropping it from the toolbox.
 
 * The Telerik __RadBulletGraph__ control supports the full design specification: non zero-based scale, negative featured measures, projected values, having many comparative measures and quantitative ranges is not a problem.
 
-* __Data Binding Support__: the control can be easily data bound to your business data, either by setting its properties directly, or by using a binding declaration.
+* __Data Binding Support__: The control can be easily data bound to your business data, either by setting its properties directly, or by using a binding declaration.
 
 # See Also
 
-* [Layers Overview]({%slug winforms/map/features/layers/overview%})
-* [Mini Map]({%slug winforms/map/features/minimap%})
+* [Structure]({%slug winforms/gauges/bulletgraph/structure%})
+* [Getting Started]({%slug winforms/gauges/bulletgraph/getting-started%})
+* [Smart Tag]({%slug winforms/gauges/bulletgraph/smart-tag%})

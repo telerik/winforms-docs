@@ -5,7 +5,7 @@ description: In this article we will describe the design time abilities of RadBu
 slug: winforms/gauges/bulletgraph/smart-tag
 tags: design,time
 published: True
-position: 2
+position: 0
 ---
 
 # Smart Tag
@@ -15,7 +15,7 @@ In this article we will describe the design time abilities of __RadBulletGrpaph_
 Here is how the control's Smart Tag looks like:
 
 >caption Figure 1: Smart Tag
-![radmaskededitbox design time 001](images/radmaskededitbox-design-time001.png)
+![radbulletgraph design time 001](images/radbulletgraph-design-time001.png)
 
 * __Common Tasks__
 
@@ -25,21 +25,24 @@ Here is how the control's Smart Tag looks like:
 
 	* __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style at one time.
 
-* __RadMaskedEditBox Specific Actions__:
+* __RadBulletGraph Specific Actions__:
 
-	* __SetMask__: Opens a dialog for specifying the mask.
+	* __Edit Gauge Items__: Opens the RadItem Collection Editor populated with each of the [bullet grаph items]({%slug winforms/gauges/bulletgraph/structure%}).
+	
+	* __Open Gallary__: Opens the [gallery]({%slug winforms/gauges/bulletgraph/getting-started%}) with available graph designs.
+	
+	* __Dock in Parent Container__: Docks the control to its parent.
+	
+	* __Save Gauge Layout to XML__: Saves the control`s layout to XML.
 
->caption Figure 1: Set Mask Dialog
-![radmaskededitbox design time 002](images/radmaskededitbox-design-time002.png)
-
+	* __Load Gauge Layout to XML__: Loads the control`s layout from XML.
+	
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 
 * __Search__: Search the Telerik website for a given string.
 
-All of these properties are also available in the Properties window of Visual Studio.
-
 # See Also
 
-* [Structure]({%slug winforms/editors/maskededitbox/structure%})
-* [Getting Started]({%slug winforms/editors/maskededitbox/getting-started%})
+* [Structure]({%slug winforms/gauges/bulletgraph/structure%})
+* [Getting Started]({%slug winforms/gauges/bulletgraph/getting-started%})
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})

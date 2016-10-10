@@ -1,24 +1,29 @@
 ---
-title: Properties
-page_title: Properties | UI for WinForms Documentation
-description: Properties
+title: Properties and Events
+page_title: Properties and Events| RadBulletGraph
+description: The article lists the important properties, methods and events.
 slug: winforms/gauges/bulletgraph/properties
 tags: properties
 published: True
-position: 3
+position: 4
 previous_url: bulletgraph-properties
 ---
 
 # Properties
 
+|Property|Description|
+|------|------|
+|__FeaturedMeasure__|Specifies the actual value, which the bar in the bullet graph will represent. All other visual indicators on the graph allow the end user to match this actual value against other qualitative and quantitative indicators.|
+|__ComparativeMeasure__|Sets the value of a visual indicator, which will be compared against the actual value, represented by the featured measure|
 
+# Events
 
-## Properties
+|Event|Description|
+|------|------|
+|__FeaturedMeasureChanged__|The OrientationChanged event fires when the orientation of the gauges is changed.|
+|__ComparativeMeasureChanged__|The OrientationChanged event fires when the orientation of the gauges is changed.|
 
-This section elaborates on the most important properties and settings in the control, their usage and meaning.
+# See Also
 
-* __FeaturedMeasure__ - this property specifies the actual value, which the bar in the bullet graph will represent. All other visual indicators on the graph allow the end user to match this actual value against other qualitative and quantitative indicators.
-        
-
-* __ComparativeMeasure__ - this property sets the value of a visual indicator, which will be compared against the actual value, represented by the FeaturedMeasure.
-            
+* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_gauges_radbulletgraph.htm)
+* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_gauges_radbulletgraph.htm)

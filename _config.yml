@@ -477,16 +477,19 @@ navigation:
         title: Gauges
         position: 250
     gauges/bulletgraph:
-        title: BulletGraph
+        title: Bullet Graph
         position: 0
+    gauges/bulletgraph/design-time:
+        title: Design Time
+        position: 2		
     gauges/lineargauge:
-        title: LinearGauge
+        title: Linear Gauge
         position: 1
     gauges/lineargauge/elements:
         title: Elements
         position: 4
     gauges/radialgauge:
-        title: RadialGauge
+        title: Radial Gauge
         position: 2
     gauges/radialgauge/understanding-gauge-elements:
         title: Understanding gauge elements
