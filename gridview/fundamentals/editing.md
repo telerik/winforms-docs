@@ -11,8 +11,6 @@ previous_url: gridview-fundamentals-editing
 
 # Editing
 
-## 
-
 __RadGridView__ allows data entry, data edit, and validation. The data can be edited by using editors specific for each column type. These include:
 
 | Editor | Column |
@@ -30,5 +28,6 @@ In addition to these default editors listed above, __RadGridView__ provides beha
 >note You can find more information about editors in [Editors]({%slug winforms/gridview/editors/editors%}) section.
 >
 
+The following image shows several of the default editors in __RadGridView__:
 
-The following image shows several of the default editors in __RadGridView__:![gridview-fundamentals-editing 001](images/gridview-fundamentals-editing001.png)
+![gridview-fundamentals-editing 001](images/gridview-fundamentals-editing001.png)
