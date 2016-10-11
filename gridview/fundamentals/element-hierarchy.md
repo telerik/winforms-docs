@@ -28,13 +28,13 @@ __RadGridView__ uses the [Telerik Presentation Framework]({%slug winforms/teleri
 >note Please note that all cell and row elements are virtualized. Visual elements are created only for rows and cells that are currently visible. [Read More]({%slug winforms/gridview/fundamentals/ui-virtualization%})
 >
 
-* __GridCellElement__ is the base visual element for presenting cells. It references __GridViewColumn__ and __GridRowElement__ objects to represent cell text using its __Value__ property.
+* __GridCellElement:__ The base visual element for presenting cells. It references __GridViewColumn__ and __GridRowElement__ objects to represent cell text using its __Value__ property.
 
-* __Scrollbar elements__ – instead of using the build-in WinForms mechanism for scrolling, __RadGridView__ uses elements and implements custom logic. Scrollbar elements are accessible using the __HScrollBar__ and RadGridView supports two different scrolling modes – normal and deferred, which is controlled using the __EnableFastScrolling__ property. When using hierarchy, you can choose between a single scrollbar and dedicated scrollbar elements in every child view. To do this, set the __UseScrollingInHierarchy__ property to *true*.
+* __Scrollbar elements:__  Instead of using the build-in WinForms mechanism for scrolling, __RadGridView__ uses elements and implements custom logic. Scrollbar elements are accessible using the __HScrollBar__ and RadGridView supports two different scrolling modes – normal and deferred, which is controlled using the __EnableFastScrolling__ property. When using hierarchy, you can choose between a single scrollbar and dedicated scrollbar elements in every child view. To do this, set the __UseScrollingInHierarchy__ property to *true*.
 
-* __GroupPanelElement__ – this panel is placed by default on top of __RadGridView__ and uses to indicate whether grouping applies. Its visibility is controlled by using the __ShowGroupPanel__ and __EnableGrouping__ properties.
+* __GroupPanelElement:__ This panel is placed by default on top of __RadGridView__ and uses to indicate whether grouping applies. Its visibility is controlled by using the __ShowGroupPanel__ and __EnableGrouping__ properties.
 
-* __GroupFieldElement__ – represents a single group descriptor in __GroupPanelElement__.
+* __GroupFieldElement:__ Represents a single group descriptor in __GroupPanelElement__.
 
 # See Also
 

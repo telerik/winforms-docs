@@ -11,8 +11,6 @@ previous_url: gridview-fundamentals-keyboard-support
 
 # Keyboard Support
 
-
-
 ## Keyboard support
       
 

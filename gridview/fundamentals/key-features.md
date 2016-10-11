@@ -11,8 +11,6 @@ previous_url: gridview-fundamentals-key-features
 
 # Key Features
 
-
-
 RadGridView has a bunch of useful features for you to give to your end-users. Here are these features at a glance: 
 
 ## Outstanding performance
