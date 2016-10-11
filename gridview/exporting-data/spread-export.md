@@ -98,81 +98,80 @@ End Using
 
 ## Properties
 
-__ExportFormat__: Defines the format the grid will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
+* __ExportFormat__: Defines the format the grid will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
 
-__ExportVisualSettings__: Allows you to export the visual settings (themes) to the exported file. RadGridView will also export all formatting to the Excel file. The column width and row height will also be matched in the exported file.
+* __ExportVisualSettings:__ Allows you to export the visual settings (themes) to the exported file. RadGridView will also export all formatting to the Excel file. The column width and row height will also be matched in the exported file.
 
-__ExportHierarchy__: Defines whether the exporter will export hierarchical data or not.
+* __ExportHierarchy:__ Defines whether the exporter will export hierarchical data or not.
 
-__ChildViewExportMode__: Defines which child view of a hierarchy row to be exported. Available modes are:
+* __ChildViewExportMode:__ Defines which child view of a hierarchy row to be exported. Available modes are:
 
-* *ExportFirstView*: The exporter exports the first view.
+    - *ExportFirstView*: The exporter exports the first view.
+                
+
+    - *ExportCurrentlyActiveView*: The exporter exports the view that is active in the grid.
+                
+
+    - *SelectViewToExport*: In this mode the __ChildViewExporing__ event is fired. The event allows to choose the view to export in row by row basis.
             
 
-* *ExportCurrentlyActiveView*: The exporter exports the view that is active in the grid.
+* __HiddenColumnOption:__ Defines whether hidden columns will be exported. Available options are:
+
+    - *ExportAlways*: The exporter will export hidden columns as well.
+                
+
+    - *DoNotExport*: The exporter will not export hidden columns.
+                
+
+    - *ExportAsHidden*: The exporter will export hidden columns as hidden in excel*.
             
 
-* *SelectViewToExport*: In this mode the __ChildViewExporing__ event is fired. The event allows to choose the view to export in row by row basis.
-            
-
-__HiddenColumnOption__: Defines whether hidden columns will be exported. Available options are:
+* __HiddenRowOption:__ Defines whether hidden rows will be exported. Available options are:
         
 
-* *ExportAlways*: The exporter will export hidden columns as well.
+    - *ExportAlways*: The exporter will export hidden rows as well.
+                
+
+    - *DoNotExport*: The exporter will not export hidden rows.
+                
+
+    - *ExportAsHidden*: The exporter will export hidden rows as hidden in excel*.
             
 
-* *DoNotExport*: The exporter will not export hidden columns.
-            
+    >note MS Excel does not support other ways of hiding a column/row different from setting its width to zero. To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__ or __HiddenRowOption__ property to *DoNotExport* :
+    >
 
-* *ExportAsHidden*: The exporter will export hidden columns as hidden in excel*.
-            
+* __PagingExportOption:__ Defines which pages to be exported, when paging is used in RadGridView.
 
-__HiddenRowOption__: Defines whether hidden rows will be exported. Available options are:
-        
+    - *CurrentPageOnly*: The exporter will export only the data on the current page.
 
-* *ExportAlways*: The exporter will export hidden rows as well.
-            
+    - *AllPAges*: The exporter will export the data from all pages.
 
-* *DoNotExport*: The exporter will not export hidden rows.
-            
+* __SummariesExportOption:__ Allows to specify how to export summary items. There are fourth option to chose:
 
-* *ExportAsHidden*: The exporter will export hidden rows as hidden in excel*.
-            
+    - *ExportAll (default)*: The exporter will export all summary rows. This is the default setting.
 
->note MS Excel does not support other ways of hiding a column/row different from setting its width to zero. To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__ or __HiddenRowOption__ property to *DoNotExport* :
->
+    - *ExportOnlyTop*: The exporter will export only the top summary rows.
 
-__PagingExportOption__: Defines which pages to be exported, when paging is used in RadGridView.
+    - *ExportOnlyBottom*: The exporter will export only the bottom summary rows.
 
-* *CurrentPageOnly*: The exporter will export only the data on the current page.
+    - *DoNotExport*: The exporter will not export any summary rows.
 
-* *AllPAges*: The exporter will export the data from all pages.
+* __RadGridViewToExport:__ This property is used to set the instance of RadGridView to export.
 
-__SummariesExportOption__: Allows to specify how to export summary items. There are fourth option to chose:
+*__SheetMaxRows:__ Тhe exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this SheetMaxRows property. Available options are:
 
-* *ExportAll (default)*: The exporter will export all summary rows. This is the default setting.
+    - *1048576*: Max rows for Excel 2007 and above
 
-* *ExportOnlyTop*: The exporter will export only the top summary rows.
+    - *65536 (default)*: Max rows for previous versions of Excel. This is the default setting.
 
-* *ExportOnlyBottom*: The exporter will export only the bottom summary rows.
+* __SheetName:__ Defines the sheet name of the sheet to export to. If your data is large enough to be split on more than one sheets, then the export method adds index to the names of the next sheets.
 
-* *DoNotExport*: The exporter will not export any summary rows.
+* __FileExportMode:__ This property determines whether the data will be exported into an existing or a new file. If new is chosen and such exists it will be overridden. Available options are:
 
-__RadGridViewToExport__: This property is used to set the instance of RadGridView to export.
+    - *NewSheetInExistingFile*: This option will create a new sheet in an already existing file.
 
-__SheetMaxRows__: Тhe exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this SheetMaxRows property. Available options are:
-
-* *1048576*: Max rows for Excel 2007 and above
-
-* *65536 (default)*: Max rows for previous versions of Excel. This is the default setting.
-
-__SheetName__: Defines the sheet name of the sheet to export to. If your data is large enough to be split on more than one sheets, then the export method adds index to the names of the next sheets.
-
-__FileExportMode__: This property determines whether the data will be exported into an existing or a new file. If new is chosen and such exists it will be overridden. Available options are:
-
-* *NewSheetInExistingFile*: This option will create a new sheet in an already existing file.
-
-* *CreateOrOverrideFile*: Creates new or overrides an existing file.
+    - *CreateOrOverrideFile*: Creates new or overrides an existing file.
 
 * __ExportViewDefinition:__  Gets or sets a value indicating whether to export the [view definition.]({%slug winforms/gridview/view-definitions/overview%})
 
@@ -184,7 +183,9 @@ Each column in RadGridView has __ExcelExportType__ property which can be used fo
 
 ## Events
 
-__CellFormatting__: This event is used to format the cells to be exported. The event arguments provide:
+### CellFormatting 
+
+This event is used to format the cells to be exported. The event arguments provide:
 
 * *CellSelection*:  After casting to the __CellSelection__ class, provides access to the excel cells selection. More information about the abilities this object introduces, can be found here: [Get, Set and Clear Cell Properties](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-cells/get-set-clear-properties).
 
@@ -266,13 +267,18 @@ End Sub
 
 ![gridview-exporting-data-spread-export 003](images/gridview-exporting-data-spread-export003.png)
 
-__WorkbookCreated__: This event is triggered on the __SpreadExportRenderer__ object when the workbook is ready to be exported. Allows to introduce final customizations (for example you can add [header and footer]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})). More information on how to work with Workbook is available here: [Working with Workbooks](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-workbooks/create-open-and-save-workbooks).
+### WorkbookCreated 
+
+This event is triggered on the __SpreadExportRenderer__ object when the workbook is ready to be exported. Allows to introduce final customizations (for example you can add [header and footer]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})). More information on how to work with Workbook is available here: [Working with Workbooks](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-workbooks/create-open-and-save-workbooks).
 
 
+### ChildViewExporting
 
-__ChildViewExporting__ - this event is used to specify which child view to be exported, for each exported row, during the export. Will be triggered only when the __ChildViewExportMode__ is set to *SelectViewToExport*. The event arguments provide the __ParentRow__ which active view should be set via the __ActiveViewIndex__ property.
+This event is used to specify which child view to be exported, for each exported row, during the export. Will be triggered only when the __ChildViewExportMode__ is set to *SelectViewToExport*. The event arguments provide the __ParentRow__ which active view should be set via the __ActiveViewIndex__ property.
 
-__ExportCompleted__: This event is triggered when the export operation completes.
+### ExportCompleted
+
+This event is triggered when the export operation completes.
 
 ## Exporting Grouped Data
 

@@ -11,8 +11,6 @@ previous_url: gridview-filtering-setting-filters-programmatically-composite-desc
 
 # Setting Filters Programmatically (composite descriptors)
 
-
-
 ## Using CompositeFilterDescriptor
 
 To filter a single data field by multiple values, you have to use the __CompositeFilterDescriptor__ object. It contains a collection of filter descriptors objects and the logical operator for that filters.
@@ -41,9 +39,13 @@ Me.RadGridView1.FilterDescriptors.Add(compositeFilter)
 
 {{endregion}} 
 
-The composite FilterDescriptors supports *__And__* and *__Or__* logical operators. Result of the above example using *__And__* logical operator:<BR>![gridview-filtering-setting-filters-programmatically-composite-descriptors 001](images/gridview-filtering-setting-filters-programmatically-composite-descriptors001.png)
+The __CompositeFilterDescriptors__ supports *__And__* and *__Or__* logical operators. Result of the above example using *__And__* logical operator:
 
-Result of the above example using *__Or__* logical operator:<br>![gridview-filtering-setting-filters-programmatically-composite-descriptors 002](images/gridview-filtering-setting-filters-programmatically-composite-descriptors002.png)
+![gridview-filtering-setting-filters-programmatically-composite-descriptors 001](images/gridview-filtering-setting-filters-programmatically-composite-descriptors001.png)
+
+Result of the above example using *__Or__* logical operator:
+
+![gridview-filtering-setting-filters-programmatically-composite-descriptors 002](images/gridview-filtering-setting-filters-programmatically-composite-descriptors002.png)
 
 ## More Complex Composite Filters
 

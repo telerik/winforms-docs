@@ -11,11 +11,7 @@ previous_url: gridview-filtering-put-a-filter-cell-into-edit-mode-programmatical
 
 # Put a filter cell into edit mode programmatically
 
-
-
-## 
-
-You can easily put a filter cell into edit mode by code. You should simply call the BeginEdit method of the desired cell:
+You can easily put a filter cell into edit mode by code. You should simply call the __BeginEdit__ method of the desired cell:
 
 #### Put a filter cell in edit mode programmatically
 
@@ -33,4 +29,6 @@ Me.RadGridView1.MasterView.TableFilteringRow.Cells(0).BeginEdit()
 
 {{endregion}}
 
-![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 001](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically001.png)<br>![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 002](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically002.png)
+![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 001](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically001.png)
+
+![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 002](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically002.png)

@@ -277,7 +277,7 @@ __ChildViewExportMode__: Defines which child view of a hierarchy row to be expor
 
 * *SelectViewToExport*: In this mode the __ChildViewExporing__ event is fired. The event allows to choose the view to export in row by row basis.
 
-__PDF Export Settings__
+### PDF Export Settings
 
 The __PDFExportSettings__ property supports various settings on PDF file level. You can set the following:
 
@@ -304,13 +304,13 @@ pdfExporter.ExportSettings.Description = "Document Description"
 
 {{endregion}} 
 
-## Exporting to PDF
+### Exporting to PDF
 
 Two methods are responsible for exporting data to PDF. Both receive as a parameter the file name.     
 
 * RunExport: Runs synchronously.
 
-####  Running export synchronously
+####  Running export
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=RunExport}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=RunExport}} 
@@ -516,9 +516,9 @@ exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotEx
 
 {{endregion}} 
 
-__Exporting Visual Settings__
+### Exporting Visual Settings
 
-Using the ExportToPDF class allows you to export the visual settings (themes) to the PDF file. ExportToPDF also provides a visual representation of the alternating row color. This feature works only if __EnableAlternatingRow__ property is set to *true*. Note that it does not transfer the alternating row settings that come from the theme of the control. RadGridView will also export the conditional formatting to the PDF file. You can enable exporting visual settings through the ExportVisualSettings property. The default value of this property is *false*. 
+Using the __ExportToPDF__ class allows you to export the visual settings (themes) to the PDF file. __ExportToPDF__ also provides a visual representation of the alternating row color. This feature works only if __EnableAlternatingRow__ property is set to *true*. Note that it does not transfer the alternating row settings that come from the theme of the control. RadGridView will also export the conditional formatting to the PDF file. You can enable exporting visual settings through the __ExportVisualSettings__ property. The default value of this property is *false*. 
 
 ####  Setting the ExportVisualSettings
 
@@ -536,7 +536,7 @@ exporter.ExportVisualSettings = True
 
 {{endregion}} 
 
-__Page Title__
+### Page Title 
 
 You can add a page title which will be presented on every page of the PDF document through __PageTitle__property.
 
@@ -556,7 +556,7 @@ exporter.PageTitle = "Title"
 
 {{endregion}} 
 
-__Summaries export option__
+### Summaries export option 
 
 You can use __SummariesExportOption__ property to specify how to export summary items. There are four options to choose:
 
@@ -584,7 +584,7 @@ exporter.SummariesExportOption = SummariesOption.ExportAll
 
 {{endregion}}
 
-__Fit to page__
+### Fit to page 
 
 Use this property to make the grid fits to the PDF page width.
 
@@ -604,7 +604,7 @@ exporter.FitToPageWidth = True
 
 {{endregion}} 
 
-__Scale__
+### Scale 
 
 You can use __Scale__ to change the grid size on the PDF. For example if __Scale__ = 1.2f means the grid will be 20% bigger.
 
@@ -624,7 +624,7 @@ exporter.Scale = 1.2F
 
 {{endregion}} 
 
-__TableBorderThickness__
+### TableBorderThickness 
 
 This property controls the thickness of the table border. The default value is 0 and border is not drawn. 
 
@@ -644,7 +644,7 @@ exporter.TableBorderThickness = 1
 
 {{endregion}} 
 
-__PDF Export Settings__
+### PDF Export Settings 
 
 The __PDFExportSettings__ property supports various settings on PDF file level. You can set the following:       
 
@@ -720,7 +720,7 @@ Dim fileName As String = "c:\ExportedData.pdf"
 
 ## Events
 
-__HTMLCellFormating__ event: Since the the export process first renders RadGridView in XHTML format you can use the event which comes from ExportToHTML class: __HTMLCellFormatting__.  It gives access to a single cell’s  html element that allows you to make additional formatting for every html cell related to the exported RadGridView:
+__HTMLCellFormating__ event: Since the the export process first renders RadGridView in XHTML format you can use the event which comes from ExportToHTML class: __HTMLCellFormatting__.  It gives access to a single cell  HTML element that allows you to make additional formatting for every HTML cell related to the exported RadGridView:
 
 ####  Handling the HTMLCellFormatting event
 
@@ -752,7 +752,7 @@ Private Sub exporter_HTMLCellFormatting(ByVal sender As Object, ByVal e As Teler
 
 ## Fonts / Unicode support
 
-ExportToPDF supports all left-to-right languages when the appropriate Unicode font is set. The most common international font is [Arial Unicode MS](http://support.microsoft.com/kb/287247), because it covers all Unicode characters. Of course, you can use other-specific fonts such as [Batang](http://www.ascenderfonts.com/font/batang-korean.aspx) for Korean, [SimSun](http://www.ascenderfonts.com/font/simsun-simplified-chinese.aspx) for Chinese, [MS Mincho](http://www.ascenderfonts.com/font/ms-mincho-japanese.aspx) for Japanese, etc.
+__ExportToPDF__ supports all left-to-right languages when the appropriate Unicode font is set. The most common international font is [Arial Unicode MS](http://support.microsoft.com/kb/287247), because it covers all Unicode characters. Of course, you can use other-specific fonts such as [Batang](http://www.ascenderfonts.com/font/batang-korean.aspx) for Korean, [SimSun](http://www.ascenderfonts.com/font/simsun-simplified-chinese.aspx) for Chinese, [MS Mincho](http://www.ascenderfonts.com/font/ms-mincho-japanese.aspx) for Japanese, etc.
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=htmlCellFormattingUnicode}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=htmlCellFormattingUnicode}} 

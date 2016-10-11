@@ -11,10 +11,6 @@ previous_url: gridview-filtering-filterexpressionchanged-event
 
 # FilterExpressionChanged Event
 
-
-
-## 
-
 This event is the only place in *RadGridView* API where you can access the final filtering expression as a string. This string value is produced by all items in filtering expressions collection. The expression applies to the whole grid template(single table if hierarchy is used).
 
 #### Filter expression changed event

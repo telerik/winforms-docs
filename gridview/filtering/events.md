@@ -11,11 +11,7 @@ previous_url: gridview-filtering-events
 
 # Events
 
-
-
-## 
-
-There are two events that are raised  when the data in the RadGridView is filtered. The first one is the __FilterChanging__ event and it is raised before the data is filtered. The second one is the __FilterChanged__ event which is raised after the data is filtered.
+There are two events that are raised when the data in the RadGridView is filtered. The first one is the __FilterChanging__ event and it is raised before the data is filtered. The second one is the __FilterChanged__ event which is raised after the data is filtered.
 
 {{source=..\SamplesCS\GridView\Filtering\FilteringEvents.cs region=events1}} 
 {{source=..\SamplesVB\GridView\Filtering\FilteringEvents.vb region=events}} 
@@ -37,9 +33,9 @@ End Sub
 
 From the event arguments of both events you can access the following data:
 
-* __Action__ – an enumeration with values: *Add*, *Remove*, *ItemChanged* and *Reset*. The __Action__ property notifies if a __FilterDescriptor__ is *added*, *removed*, *modified* or the __FilterDescriptors__ collection is *cleared*.
+* __Action:__ an enumeration with values: *Add*, *Remove*, *ItemChanged* and *Reset*. The __Action__ property notifies if a __FilterDescriptor__ is *added*, *removed*, *modified* or the __FilterDescriptors__ collection is *cleared*.
 
-* __NewItems__ - List of added, edited or removed __FilterDescriptors__. For each __FilterDescriptor__ you can get its *PropertyName*, *Operator*, *Value* and *Expression*.
+* __NewItems:__ List of added, edited or removed __FilterDescriptors__. For each __FilterDescriptor__ you can get its *PropertyName*, *Operator*, *Value* and *Expression*.
 
 You are also able to cancel the filtering operation by setting the __Cancel__ property to *True*.
 

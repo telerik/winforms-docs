@@ -11,15 +11,13 @@ previous_url: gridview-filtering-setting-filters-programmatically-simple-descrip
 
 # Setting Filters Programmatically (simple descriptors)
 
-
-
 ## RadGridView FilterDescriptors
 
-The RadGridView control includes FilterDescriptors property of the GridViewTemplate which is exposed in RadGridView class for MasterTemplate instance. This collection stores filter descriptors used for filtering operation. The most important classes are:        
+The RadGridView control includes __FilterDescriptors__ property of the GridViewTemplate which is exposed in RadGridView class. This collection stores filter descriptors used for filtering operation. The most important classes are:        
 
-* __FilterDescriptor__ - implements filtering property (field) name, filtering operator and value. Used to define simple filtering expressions like __Country = "Germany"__.
+* __FilterDescriptor:__ implements filtering property (field) name, filtering operator and value. Used to define simple filtering expressions like __Country = "Germany"__.
 
-* __CompositeFilterDescriptor__ - a collection of multiple filter descriptors with logical operator. Used to define complex filtering expressions like __(Country = "Germany" AND (City = "Berlin" OR City = "Aachen"))__.
+* __CompositeFilterDescriptor:__ a collection of multiple filter descriptors with logical operator. Used to define complex filtering expressions like __(Country = "Germany" AND (City = "Berlin" OR City = "Aachen"))__.
 
 ## Using simple FilterDescriptor:
 
@@ -51,7 +49,7 @@ Me.RadGridView1.FilterDescriptors.Add(filter)
 
 ![gridview-filtering-setting-filters-programmatically-simple-descriptors 001](images/gridview-filtering-setting-filters-programmatically-simple-descriptors001.png)
 
-FilterDescriptor major properties:
+### FilterDescriptor Properties
 
 * The __PropertyName__ property defines the property, which values will be filtered.
 
@@ -61,7 +59,7 @@ FilterDescriptor major properties:
 
 When you add a new descriptor to the collection, the data is automatically filtered according to it.
 
-Each data column (represented by [GridViewDataColumn](http://www.telerik.com/help/winforms/grid_gridviewdatacolumn.html)) has a __FilterDescriptor__  property that can be assigned a __FilterDescriptor__ bject:
+Each data column (represented by [GridViewDataColumn](http://www.telerik.com/help/winforms/grid_gridviewdatacolumn.html)) has a __FilterDescriptor__  property that can be assigned a __FilterDescriptor__ object:
 
 
 #### Assigning a filter descriptor object
@@ -88,9 +86,9 @@ Me.RadGridView1.Columns("ProductName").FilterDescriptor = filter1
 
 {{endregion}} 
 
-__Setting Multiple Filters__
+### Setting Multiple Filters
 
-You can add filters to multiple columns by adding a FilterDescriptor for each one of them: 
+You can add filters to multiple columns by adding a __FilterDescriptor__ for each one of them: 
 
 #### Setting multiple filters
 

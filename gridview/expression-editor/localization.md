@@ -11,12 +11,9 @@ previous_url: gridview-expressioneditor-localization
 
 # Localization
 
-
-
 ## Localizing UI elements
-        
 
-You can localize the UI elements of RadExpressionEditor by using a custom RadGridLocalizationProvider. For more details about RadGridLocalizationProvider, please refer to [this documentation article.]({%slug winforms/gridview/localization/localization%})
+You can localize the UI elements of __RadExpressionEditor__ by using a custom __RadGridLocalizationProvider__. For more details, please refer to [this article.]({%slug winforms/gridview/localization/localization%})
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomLocalizationProvider.cs region=expressionEditorLocalization}} 
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomLocalizationProvider.vb region=expressionEditorLocalization}} 

@@ -11,16 +11,13 @@ previous_url: gridview-exporting-data-export-to-html
 
 # Export to HTML
 
-
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Exporting to HTML with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/exporting-to-html-with-radgridview-for-winforms)<br>In this video, you will learn how to export RadGridView to the HTML file format.|![gridview-exporting-data-export-to-html 001](images/gridview-exporting-data-export-to-html001.png)|
 
 ## Overview
 
-This method offers excellent export performance and creates an html formatted file, which can be opened in a browser or MS Word.
+This method offers excellent export performance and creates an HTML formatted file, which can be opened in a browser or MS Word.
 
 >note The HTML export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
 * Telerik.WinControls.Data
@@ -29,9 +26,9 @@ This method offers excellent export performance and creates an html formatted fi
 
 ## Exporting Data
 
-__Initialize ExportToHTML object__
+### Initialize ExportToHTML object 
 
-Before running export to HTML, you have to initialize the ExportToHTML class. The constructor takes one parameter: the RadGridView that will be exported:
+Before running export to HTML, you have to initialize the __ExportToHTML__ class. The constructor takes one parameter: the __RadGridView__ that will be exported:
 
 #### ExportToHTML initialization
 
@@ -49,7 +46,9 @@ Dim exporter As ExportToHTML = New ExportToHTML(Me.RadGridView1)
 
 {{endregion}} 
 
-__File extension__  This property allows for changing the default (*.htm) file extension of the exported result file
+### File extension 
+
+This property allows for changing the default (*.htm) file extension of the exported result file
 
 #### Setting the file extension
 
@@ -67,7 +66,7 @@ exporter.FileExtension = ""
 
 {{endregion}} 
 
-__Hidden columns and rows option__
+### Hidden columns and rows option
 
 You can choose one of the three options below which will allow you to have a different behavior for the hidden column/rows. You can choose these options by __HiddenColumnOption__ and __HiddenRowOption__ properties:
 
@@ -77,7 +76,7 @@ You can choose one of the three options below which will allow you to have a dif
 
 * ExportAsHidden
 
-Please note that some browsers do not support hidden columns and if you open exported file you could see the hidden columns. To make sure that the hidden columns or rows in the exported html file will not be included, you should set __HiddenColumnOption__ or __HiddenRowOption__  property to *DoNotExport*:
+Please note that some browsers do not support hidden columns and if you open exported file you could see the hidden columns. To make sure that the hidden columns or rows in the exported HTML file will not be included, you should set __HiddenColumnOption__ or __HiddenRowOption__  property to *DoNotExport*:
 
 ####  Setting the HiddenColumnOption
 
@@ -95,7 +94,9 @@ exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotEx
 
 {{endregion}} 
 
-__Columns Width options__ There are three options for the column widths. First option is to have the columns with fixed width, dependant on the size of the columns in the actual RadGridView that is being exported. This is the default way the exporter works. Second option is to set a fixed width for all the columns. The columns will then take this width while keeping their aspect ratio. To set a fixed size for all columns use the __FitWidthSize__ option of the exporter.
+#### Columns Width options 
+
+There are three options for the column widths. First option is to have columns with fixed width, dependent on the size of the columns in the actual RadGridView that is being exported. This is the default way the exporter works. Second option is to set a fixed width for all the columns. The columns will then take this width while keeping their aspect ratio. To set a fixed size for all columns use the __FitWidthSize__ option of the exporter.
 
 #### Setting FitWidthSize
 
@@ -131,7 +132,7 @@ exporter.AutoSizeColumns = True
 
 {{endregion}} 
 
-If you use this option you need to control how the cells are sized. To do that you can use the __CellWhiteSpace__ option of the HTMLCellElement which controls how white spaces are handled. The possible values are. 
+If you use this option you need to control how the cells are sized. To do that you can use the __CellWhiteSpace__ option of the `HTMLCellElement` which controls how white spaces are handled. The possible values are. 
 
 * Normal (Defalut)
 
@@ -143,7 +144,9 @@ If you use this option you need to control how the cells are sized. To do that y
 
 * PreWrap
 
-__Exporting Visual Settings__ Using the ExportToHTML class allows you to export the visual settings (themes) to the HTML file. ExportToHTML also provides a visual representation of the alternating row color. This feature works only if __EnableAlternatingRow__ property is set to *true*. Note that it does not transfer the alternating row settings that come from control theme. RadGridView will also export the conditional formatting to the HTML file. The row height is exported with the default DPI transformation (60pixels = 72points). You can enable exporting visual settings through the __ExportVisualSettings__ property. By default the value of this property is *false*.
+### Exporting Visual Settings
+
+Using the __ExportToHTML__ class allows you to export the visual settings (themes) to the HTML file. ExportToHTML also provides a visual representation of the alternating row color. This feature works only if __EnableAlternatingRow__ property is set to *true*. Note that it does not transfer the alternating row settings that come from control theme. RadGridView will also export the conditional formatting to the HTML file. The row height is exported with the default DPI transformation (60pixels = 72points). You can enable exporting visual settings through the __ExportVisualSettings__ property. By default the value of this property is *false*.
 
 ####  Setting ExportVisualSettings
 
@@ -161,7 +164,9 @@ exporter.ExportVisualSettings = True
 
 {{endregion}} 
 
-__HTML Table Caption__   You can specify the table caption through __TableCaption__ property.
+### HTML Table Caption
+
+You can specify the table caption through __TableCaption__ property.
 
 ####  Setting the SheetName
 
@@ -179,7 +184,9 @@ exporter.TableCaption = "Table"
 
 {{endregion}} 
 
-__Summaries export option__ You can use __SummariesExportOption__ property to specify how to export summary items. There are four options to choose from:
+### Summaries export option
+
+You can use __SummariesExportOption__ property to specify how to export summary items. There are four options to choose from:
 
 * ExportAll (default)
 
@@ -207,9 +214,9 @@ exporter.SummariesExportOption = SummariesOption.DoNotExport
 
 ## RunExport method
 
-Exporting data to HTML is done through the RunExport method of ExportToHTML object. The RunExport method accepts the following parameter:
+Exporting data to HTML is done through the __RunExport__ method. This method accepts the following parameter:
 
-* fileName - the name of the exported file
+* FileName - the name of the exported file.
 
 Consider the code sample below:
 
@@ -233,7 +240,7 @@ exporter.RunExport(fileName)
 
 ## Events
 
-__HTMLCellFormating event__ It gives access to a single cell’s html element that allows you to make additional formatting for every html cell related to the exported RadGridView: 
+1\. __HTMLCellFormating:__ It gives access to a single cell’s HTML element that allows you to make additional formatting for every HTML cell related to the exported RadGridView: 
 
 ####  Handling the HTMLCellFormatting event
 
@@ -263,7 +270,7 @@ End Sub
 
 {{endregion}} 
 
-__HTMLTableCaptionFormatting event__ HTMLTableCaptionFormatting event can be used to make an additional formatting on the html caption table element . You can access TableCaptionElement through event’s arguments and apply a valid html format.
+2\. __HTMLTableCaptionFormatting:__ this event can be used to make an additional formatting on the HTML table caption element. You can access __TableCaptionElement__ through event’s arguments and apply a valid HTML format.
 
 ####  Handling the HTMLTableCaptionFormatting event
 

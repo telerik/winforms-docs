@@ -11,11 +11,9 @@ previous_url: gridview-filtering-filtering-row
 
 # Filtering Row
 
+The __GridFilterRowElement__ is the row that holds the filtering boxes. It appears automatically when you enable filtering (__EnableFiltering__ is __true__). __GridFilterRowElement__ could be pinned at the top or bottom as well as made scrollable.
 
-
-## 
-
-The __GridFilterRowElement__ is the row that holds the filtering boxes. It appears automatically when you enable filtering (__GridViewTemplate.EnableFiltering = true__). __GridFilterRowElement__ could be pinned at the top or bottom as well as made scrollable.<br>![gridview-filtering-filtering-row 001](images/gridview-filtering-filtering-row001.png)
+![gridview-filtering-filtering-row 001](images/gridview-filtering-filtering-row001.png)
 
 You can hide the operator text of the filter cells by setting the __ShowFilterCellOperator__ property to *false*:
 
@@ -62,4 +60,6 @@ Me.RadGridView1.ShowFilteringRow = False
 >
 
 
-You can customize the __GridFilterRowElement__ by using the __Visual Style Builder__.<br>![gridview-filtering-filtering-row 003](images/gridview-filtering-filtering-row003.png)
+You can customize the __GridFilterRowElement__ by using the __Visual Style Builder__.
+
+![gridview-filtering-filtering-row 003](images/gridview-filtering-filtering-row003.png)

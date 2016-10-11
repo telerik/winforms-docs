@@ -11,15 +11,15 @@ previous_url: gridview-filtering-excel-like-filtering
 
 # Excel-like filtering
 
+Excel-Like filtering offers another way for filtering data in RadGridView by the end user. It is built in a way to mimic the standard excel filtering functionality and offers a dialog, which contains a list with distinct column values, from which the end user can chose.
 
+![gridview-filtering-excel-like-filtering 001](images/gridview-filtering-excel-like-filtering001.jpg)
 
-## 
+In addition Excel-Like filtering supports the default filters available thorough "Available Filter" menu item and custom filter form.
 
-Excel-Like filtering offers another way for filtering data in RadGridView by the end user. It is built in a way to mimic the standard excel filtering functionality and offers a dialog, which contains a list with distinct column values, from which the end user can chose.<br>![gridview-filtering-excel-like-filtering 001](images/gridview-filtering-excel-like-filtering001.jpg)
+![gridview-filtering-excel-like-filtering 002](images/gridview-filtering-excel-like-filtering002.jpg)
 
-In addition Excel-Like filtering supports the default filters available thorough “Available Filter” menu item and custom filter form.![gridview-filtering-excel-like-filtering 002](images/gridview-filtering-excel-like-filtering002.jpg)
-
-Enabling the excel-like filtering is quite easy. You have to set the grid’s properties EnableFiltering and ShowHeaderCellButtons:
+Enabling the excel-like filtering is quite easy. You have to set the grid's properties __EnableFiltering__ and __ShowHeaderCellButtons__:
 
 #### Enabling Excel-like filtering
 
@@ -41,7 +41,7 @@ Me.RadGridView1.MasterTemplate.ShowFilteringRow = False
 
 {{endregion}} 
 
-Note that ShowHeaderCellButtons property can be specified on grid templates level, and scenarios with mixed filter functionality on the different hierarchy levels are possible. Also excel-like filtering will be synchronized with the previous filter row functionality if ShowFilteringRow remains true.
+Note that __ShowHeaderCellButtons__ property can be specified on grid templates level, and scenarios with mixed filter functionality on the different hierarchy levels are possible. Also excel-like filtering will be synchronized with the previous filter row functionality if __ShowFilteringRow__ remains *true*.
         
 
 After enabling the Excel-like filtering feature, you may decide that you do not want it for a specific column. In this case you should set the __AllowFiltering__ property of that column to *false*:
@@ -68,7 +68,9 @@ The __FilterPopupRequired__ event is thrown just before filter popup showing. It
 
 __Calendar filter popup__
 
-This popup allows convenient selection of specific date, or period. It will be shown for DateTime columns automatically  and by default it contains three custom menu items – “*Today*”, “*Yestarday*” and “*During last 7 days*”. A customization of the custom items is possible through following methods: __ClearCustomMenuItems__, __AddCustomMenuItem__ and __RemoveCustomMenuItem__. Here is how the default popup for DateTime column looks like:<br>![gridview-filtering-excel-like-filtering 004](images/gridview-filtering-excel-like-filtering004.png)
+This popup allows convenient selection of specific date, or period. It will be shown for DateTime columns automatically  and by default it contains three custom menu items – *Today*, *Yestarday* and *During last 7 days*. A customization of the custom items is possible through following methods: __ClearCustomMenuItems__, __AddCustomMenuItem__ and __RemoveCustomMenuItem__. Here is how the default popup for DateTime column looks like:
+
+![gridview-filtering-excel-like-filtering 004](images/gridview-filtering-excel-like-filtering004.png)
 
 The following code demonstrates how to clear the default custom items, and how to add your own item to this popup:
 
@@ -100,11 +102,13 @@ End Sub
 
 {{endregion}} 
 
-Here is how the customized popup looks like<br>![gridview-filtering-excel-like-filtering 005](images/gridview-filtering-excel-like-filtering005.png)
+Here is how the customized popup looks like
+
+![gridview-filtering-excel-like-filtering 005](images/gridview-filtering-excel-like-filtering005.png)
 
 __Simple list filter popup__
 
-This popup allows easy and fast filtering based on simple list and one-click filter apply. It can be set up through FilterPopupRequired event
+This popup allows easy and fast filtering based on simple list and one-click filter apply. It can be set up through __FilterPopupRequired__ event
 
 {{source=..\SamplesCS\GridView\Filtering\Excel-like Filtering2.cs region=SimpleListPopup}} 
 {{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering2.vb region=SimpleListPopup}} 
@@ -167,4 +171,6 @@ End Sub
 
 ## Customizing composite filter dialog
 
-When you select an item from the “Available Filter” menu, a __CompositeFilterForm__ is displayed. The __CreateCompositeFilterDialog__ event is fired ust before the __CompositeFilterForm__ is created. It allows you to create the default dialog and customize it or initialize your own implementation of the composite filter dialog.<br>![gridview-filtering-excel-like-filtering 008](images/gridview-filtering-excel-like-filtering008.png)
+When you select an item from the "Available Filter" menu, a __CompositeFilterForm__ is displayed. The __CreateCompositeFilterDialog__ event is fired before the __CompositeFilterForm__ is created. It allows you to create the default dialog and customize it or initialize your own implementation of the composite filter dialog.
+
+![gridview-filtering-excel-like-filtering 008](images/gridview-filtering-excel-like-filtering008.png)
