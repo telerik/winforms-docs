@@ -11,25 +11,22 @@ previous_url: gridview-exporting-data-export-to-pdf
 
 # Export to PDF
 
-
-
 ## Overview
 
-__RadGridView__ can export its contents to PDF using two separate mecahnisms.
-        
+__RadGridView__ can export its contents to PDF using two separate mechanisms.
 
 * The __GridViewPdfExport__ object utilizes the powerful [RadPdfProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library and exports __RadGridView__`s data natively to the PDF format.
 
-* The __ExportToPdf__ object on the other hand first renders __RadGridView__ as an XHTML table and the export process will convert that table to a PDF document. That said, Export to PDF supports all of the ExportToHTML settings, but it also adds some PDF specific ones.
+* The __ExportToPdf__ object on the other hand first renders __RadGridView__ as an XHTML table and the export process will convert that table to a PDF document. That said, Export to PDF supports all of the __ExportToHTML__ settings, but it also adds some PDF specific ones.
+
+## Exporting Data using GridViewPdfExport object
 
 >note The __GridViewPdfExport__ functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in __TelerikExport__ :
 * Telerik.WinControls.Export>The __ExportToPdf__ functionality is located in the __TelerikData.dll__ assembly. <br>You need to include the following amespace in order to access the types contained in __TelerikData__ :
 * Telerik.WinControls.UI.Export
 >
 
-## Exporting Data using GridViewPdfExport object
-
-__Initialization__
+### Initialization
 
 Before running export to PDF, you have to initialize the __GridViewPdfExport__ class. The constructor takes one parameter: __RadGridView__ which will be exported:
 
@@ -50,7 +47,7 @@ Dim pdfExporter As New Telerik.WinControls.Export.GridViewPdfExport(Me.RadGridVi
 
 {{endregion}} 
 
-__File Extension__
+### File Extension
 
 The __FileExtension__ property allows you to change the default (*.pdf) file extension of the exported file:
 
@@ -71,15 +68,15 @@ pdfExporter.FileExtension = ".pdf"
 
 {{endregion}} 
 
-__Hidden columns and rows option__
+### Hidden columns and rows option
 
-__GridViewPdfExport__ uses the default enumeration of hidden column and row settings. You can choose one of the three options by setting __HiddenColumnOption__ and __HiddenRowOption__ properties. However, PDF do not support real hidden columns, so choosing the ExportAsHidden will not behave the same as ExportAlways.
+__GridViewPdfExport__ uses the default enumeration of hidden column and row settings. You can choose one of the three options by setting __HiddenColumnOption__ and __HiddenRowOption__ properties. However, PDF do not support real hidden columns, so choosing the __ExportAsHidden__ will not behave the same as __ExportAlways__.
 
 * ExportAlways
 
 * DoNotExport (default)
 
-* ExportAsHidden  (brings the same result as ExportAlways option)
+* ExportAsHidden (brings the same result as ExportAlways option)
 
 
 ####  Setting the HiddenColumnOption
@@ -99,9 +96,9 @@ pdfExporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNo
 
 {{endregion}} 
 
-__Header and Footer__
+### Header and Footer
 
-Bofore applying customizations to the headers and footers we need to enable them:
+Before applying customizations to the headers and footers we need to enable them:
 
 ####  Enabling headers and footers
 
@@ -168,7 +165,7 @@ pdfExporter.ReverseFooterOnEvenPages = True
 
 {{endregion}} 
 
-__Summaries export option__
+### Summaries export option
 
 The __SummariesExportOption__ property to specifies how to export summary items. There are four options to choose:
 
@@ -197,7 +194,7 @@ pdfExporter.SummariesExportOption = SummariesOption.ExportAll
 
 {{endregion}} 
 
-__Fit to page__
+### Fit to page
 
 Use this property to make the grid fits to the PDF page width.
 
@@ -218,9 +215,9 @@ pdfExporter.FitToPageWidth = True
 
 {{endregion}} 
 
-__Scale__ 
+### Scale
 
-You can use __Scale__ to change the grid size on the pdf. For example if __Scale__ = 1.2f means the grid will be 20% bigger.
+You can use __Scale__ to change the grid size on the PDF. For example if __Scale__ = 1.2f means the grid will be 20% bigger.
 
 ####  Setting scale
 
@@ -473,7 +470,7 @@ Dim exporter As New ExportToPDF(Me.RadGridView1)
 
 {{endregion}} 
 
-__File Extension__
+### File Extension
 
 The __FileExtension__ property allows you to change the default (*.pdf) file extension of the exported file:
 
@@ -493,9 +490,9 @@ exporter.FileExtension = "pdf"
 
 {{endregion}} 
 
-__Hidden columns and rows option__
+### Hidden columns and rows option
 
-ExportToPDF uses the default enumeration of hidden column and row settings. You can choose one of the three options by setting __HiddenColumnOption__ and __HiddenRowOption__ properties. However, PDF do not support real hidden columns, so choosing the ExportAsHidden will not behave the same as ExportAlways.
+__ExportToPDF__ uses the default enumeration of hidden column and row settings. You can choose one of the three options by setting __HiddenColumnOption__ and __HiddenRowOption__ properties. However, PDF do not support real hidden columns, so choosing the ExportAsHidden will not behave the same as ExportAlways.
 
 * ExportAlways
 
@@ -609,7 +606,7 @@ exporter.FitToPageWidth = True
 
 __Scale__
 
-You can use __Scale__ to change the grid size on the pdf. For example if __Scale__ = 1.2f means the grid will be 20% bigger.
+You can use __Scale__ to change the grid size on the PDF. For example if __Scale__ = 1.2f means the grid will be 20% bigger.
 
 ####  Setting the Scale
 
