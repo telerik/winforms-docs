@@ -11,10 +11,6 @@ previous_url: gridview-grouping-events
 
 # Events
 
-
-
-## 
-
 There are two events that are raised, when the data in the RadGridView is grouped. The first one is the __GroupByChanging__ event which is raised before the data is grouped and he second one is the __GroupByChanged__ event raised after the data is grouped.
 
 {{source=..\SamplesCS\GridView\Grouping\GroupingEvents.cs region=eventHandlers}} 
@@ -38,9 +34,9 @@ End Sub
 
 From the event arguments of both events you can access the following data:
 
-* __Action__ - an enumeration with values: *Add*, *Remove*, *ItemChanged* and *Reset*.The __Action__ property notifies if a __GroupDescriptor__ is added, removed, modified or the __GroupDescriptors__ collection is cleared.
+* __Action:__ An enumeration with values: *Add*, *Remove*, *ItemChanged* and *Reset*.The __Action__ property notifies if a __GroupDescriptor__ is added, removed, modified or the __GroupDescriptors__ collection is cleared.
 		  
-* __NewItems__ - a List of *added*, *edited* or *removed*__GroupDescriptors__. For each __GroupDescriptor__ you can get its __GroupNames__, __Format__, __Aggregates__ and __Expression__.
+* __NewItems:__ A List of *added*, *edited* or *removed*__GroupDescriptors__. For each __GroupDescriptor__ you can get its __GroupNames__, __Format__, __Aggregates__ and __Expression__.
 
 You are also able to cancel the grouping operation by setting the __Cancel__ property to *True*
 
