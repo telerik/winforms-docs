@@ -5,7 +5,7 @@ description: Getting started
 slug: winforms/gauges/radialgauge/getting-started
 tags: getting,started
 published: True
-position: 2
+position: 3
 previous_url: radialgauge-getting-started
 ---
 

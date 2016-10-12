@@ -485,14 +485,20 @@ navigation:
     gauges/lineargauge:
         title: Linear Gauge
         position: 1
+    gauges/lineargauge/design-time:
+        title: Design Time
+        position: 2
     gauges/lineargauge/elements:
         title: Elements
         position: 4
     gauges/radialgauge:
         title: Radial Gauge
         position: 2
+    gauges/radialgauge/design-time:
+        title: Design Time
+        position: 2
     gauges/radialgauge/understanding-gauge-elements:
-        title: Understanding gauge elements
+        title: Understanding Gauge Elements
         position: 4
     gridview:
         title: GridView
