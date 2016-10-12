@@ -6,7 +6,7 @@ slug: winforms/forms-and-dialogs/colordialog/properties-methods-events
 tags: working,with,the,radcolordialog
 published: True
 position: 4
-previous_url: forms-and-dialogs-colordialog-working-with-the-radcolordialog, working-with-the-radcolordialog
+previous_url: forms-and-dialogs-colordialog-working-with-the-radcolordialog, /devtools/winforms/desktopalert/working-with-the-radcolordialog
 ---
 
 # Properties

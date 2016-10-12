@@ -6,7 +6,7 @@ slug: winforms/desktopalert/properties,methods,events
 tags: desktopalert, structure
 published: True
 position: 4
-previous_url: desktopalert-customizations
+previous_url: /devtools/winforms/desktopalert/desktopalert-customizations
 ---
 
 # Properties
