@@ -12,10 +12,6 @@ previous_url: gridview-hierarchical-grid-binding-to-hierarchical-data-programmat
 # Binding to Hierarchical Data Programmatically
 
 
-
-## 
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/watch/winforms/radgrid/radgridview-winforms-hierarchy-overview)<br>In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically001.png)|
@@ -74,13 +70,15 @@ Private Sub BindingToHierarchicalGridProgramatically_Load(ByVal sender As System
 {{endregion}} 
 
 
+You can also set the relation in design-time, using the provided collection editor as in the figure below:
 
-
-You can also set the relation in design-time, using the provided collection editor as in the figure below:<br>![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 005](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically005.png)
+![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 005](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically005.png)
 
 ## Setting the Multi-Level hierarchy in bound mode
 
-It is possible to manually set up the child templates and the relations between them in order to build a Multi-level hierarchy as well. The code snippet below demonstrates the approach, which uses three data tables from the Northwind database:<br>![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 002](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically002.png)
+It is possible to manually set up the child templates and the relations between them in order to build a multi-level hierarchy as well. The code snippet below demonstrates the approach, which uses three data tables from the Northwind database:
+
+![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 002](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically002.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.cs region=creatingMultiLevelHierarchicalGridInUnboundMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.vb region=creatingMultiLevelHierarchicalGridInUnboundMode}} 
@@ -153,7 +151,7 @@ End Sub
 
 ## Hierarchical Grid in Unbound mode
 
-Setting the hierarchical grid in unbound mode is quite similar to that for the bound mode with only difference is setting the unbound mode itself. First of all you need to create and the columns you need. After that set up the relation and finally load the data.
+Setting the hierarchical grid in unbound mode is quite similar to that for the bound mode with only difference is setting the unbound mode itself. First of all you need to create and add the columns you need. After that set up the relation and finally load the data.
 
 >note Note that the GridViewRelation is created by using the GridViewDataColumn.Name, not the FieldName. As in the example below it is best if you create the column and pass the FieldName in the column's constructor. This will automatically set its Name to the same value.
 >

@@ -11,10 +11,6 @@ previous_url: gridview-grouping-group-aggregates
 
 # Group Aggregates
 
-
-
-## 
-
 The text of the group header row is a formatted string with the following parameters:
 
 * __{0}__ – __Property name__ –the name of the RadGridView column by which the grouping is performed;

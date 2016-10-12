@@ -11,15 +11,13 @@ previous_url: gridview-hirarchical-grid-how-to-applying-formatting-only-to-cells
 
 # Applying formatting only to cells in a child template
 
-
-
 If the parent of the *view template* is not null, the cell element is located in a child template. 
 
-## Example 1
+### Example 1
 
-This idea is used in the code snippet below so that the backcolor of the cells located only in the child templates is changed:
+This idea is used in the code snippet below so that the BackColor of the cells located only in the child templates is changed:
 
-#### Changing the cells backcolor for cells located in a child template 
+#### Changing the cells BackColor for cells located in a child template 
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=example1}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=example1}} 
@@ -49,10 +47,7 @@ End Sub
 
 {{endregion}} 
 
-
-
-
-##  Example 2
+###  Example 2
 
 You can use the following code snippet to change the header height of the first level child template:
 

@@ -11,10 +11,6 @@ previous_url: gridview-hirarchical-grid-how-to-iterating-the-child-rows-collecti
 
 # Iterating the child rows collection of a chosen parent row in hierarchy RadGridView
 
-
-
-## 
-
 In order to iterate all child rows in RadGridView, you need to change the ActiveView of each hierarchy row to each of the available Views. This is needed as the grid will create the child rows for the sibling views (tabs in the detail cell) only after they are requested - when the tab is clicked.
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=iterateChildRows}} 

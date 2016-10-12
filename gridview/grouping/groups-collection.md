@@ -29,7 +29,7 @@ Dim templateGroupCollection = Me.RadGridView1.MasterTemplate.Groups
 
 {{endregion}} 
 
-You can expand and collapse groups programmatically. The code blocks below demonstrate how you can expand and collapse the first group in the *Groups* collection.
+You can expand and collapse groups programmatically. The code blocks below demonstrates how you can expand and collapse the first group in the *Groups* collection.
 
 #### Expanding groups
 

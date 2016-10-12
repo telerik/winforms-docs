@@ -13,14 +13,15 @@ previous_url: gridview-grouping-sorting-group-rows
 
 
 
-By default, when you perform grouping, __RadGridView__ sorts the created group rows alphabetically.
-      This article demonstrates how to customize the groups sort order.
+By default, when you perform grouping, __RadGridView__ sorts the created group rows alphabetically. This article demonstrates how to customize the groups sort order.
 
 ## 
 
-Consider the __RadGridView__ is [bound]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%}) to a list of custom objects. If you group by __DepartmentId__ column you will notice that the group rows are sorted alphabetically as this property is *typeof(string)*.
+Consider the __RadGridView__ is [bound]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%}) to a list of custom objects. If you group by __DepartmentId__ you will notice that the group rows are sorted alphabetically as this property is *typeof(string)*.
         
->caption Fig.1 Alphabetical sort order<br>![gridview-grouping-sorting-group-rows 001](images/gridview-grouping-sorting-group-rows001.png)
+>caption Figure 1: Alphabetical sort order
+
+![gridview-grouping-sorting-group-rows 001](images/gridview-grouping-sorting-group-rows001.png)
 
 However, you can change this sort order by using a group comparer. It is necessary to create a class that implements the  __IComparer<Group<GridViewRowInfo>>__ interface where you should return an integer number in the implemented __Compare__ method. The following code snippet illustrates how to order the group rows considering the integer value, not the string:
 
@@ -83,4 +84,6 @@ Me.RadGridView1.MasterTemplate.GroupComparer = New GroupComparer()
 
 {{endregion}} 
 
->caption Fig.2 Custom sort order of group rows<br>![gridview-grouping-sorting-group-rows 002](images/gridview-grouping-sorting-group-rows002.png)
+>caption Figure 2: Custom sort order of group rows.
+
+![gridview-grouping-sorting-group-rows 002](images/gridview-grouping-sorting-group-rows002.png)

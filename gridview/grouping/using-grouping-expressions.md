@@ -11,15 +11,12 @@ previous_url: gridview-grouping-using-grouping-expressions
 
 # Using Grouping Expressions
 
-
-
 ## Overview
 
 The __GroupDescriptorCollection__ contains __Expression__ property which is used to create flexible grouping conditions. Expression is a string that contains the column name followed by "ASC" (ascending) or "DESC" (descending). Columns are sorted ascending by default. Multiple columns can be separated by commas. Multiple grouping descriptors can be separated by semi column symbol.
 
-## Creating expressions
+## Creating expressions examples
 
-Creating a simple expression:
 
 #### Creating simple grouping expression
 
@@ -37,7 +34,7 @@ Me.RadGridView1.GroupDescriptors.Expression = "Country ASC"
 
 {{endregion}} 
 
-Grouping by two properties using an expression:
+
 
 #### Grouping by two columns, by using an expression
 
@@ -55,8 +52,6 @@ Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC"
 
 {{endregion}}
 
-Creating groups on two levels using an expression:
-
 #### Creating group on two levels, by using an expression
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=creatingGroupsOnTwoLevelsUsingExpression}} 
@@ -71,9 +66,7 @@ Me.RadGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC"
 
 ````
 
-{{endregion}} 
-
-Grouping by two properties on the first level and by one on the second:
+{{endregion}}
 
 #### Complex grouping
 

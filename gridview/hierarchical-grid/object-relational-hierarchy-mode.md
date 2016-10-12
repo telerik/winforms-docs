@@ -11,22 +11,19 @@ previous_url: gridview-hierarchical-grid-object-relational-hierarchy-mode
 
 # Object Relational Hierarchy Mode
 
-
-
-## 
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Creating Object Relational Hierarchies in RadGridView for WinForms](http://tv.telerik.com/watch/winforms/creating-object-relational-hierarchies-in-radgridview-for-winforms)<br>In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![gridview-hierarchical-grid-object-relational-hierarchy-mode 005](images/gridview-hierarchical-grid-object-relational-hierarchy-mode005.png)|
 
 ## Auto generating hierarchy mode 
 
-The Object-Relational Hierarchy mode is used to show hierarchy based on a complex IList (IEnumarable) object that contains inner ILits (IEnumerable) properties.
+The Object-Relational Hierarchy mode is used to show hierarchy based on a complex `IList` (IEnumarable) object that contains inner `ILits` (IEnumerable) properties.
 
 In order to create an Object-Relational Hierarchy automatically in this scenario, you must set only the DataSource and the AutoGenerateHierarachy properties of RadGridView.
 
-Here is an example with an entity model using the Northwind database:<br>![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode001.png)
+Here is an example with an entity model using the Northwind database:
+
+![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode001.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\AutoGenerateObjectRelationHierarchyMode.cs region=AutoGenerateObjectRelationHierarchyMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\AutoGenerateObjectRelationHierarchyMode.vb region=AutoGenerateObjectRelationHierarchyMode}} 
@@ -58,13 +55,15 @@ End Sub
 
 ## Manually generating hierarchy mode 
 
-The Object-Relational hierarchy mode can be setup manually by creating the Child GridViewTemplate and adding GridViewRelation between GridViewTemplates. This special relation should contain the name of the property that belongs to the parent object and that returns  an IList (IEnumerable)  of the subobjects.  RadGridView uses the name of the property to load the necessary data for the child GridViewTemplate when the user expands a parent row.
+The Object-Relational hierarchy mode can be setup manually by creating the child `GridViewTemplate` and adding `GridViewRelation` between `GridViewTemplates`. This special relation should contain the name of the property that belongs to the parent object and that returns an `IList` (IEnumerable) of sub-objects. RadGridView uses the name of the property to load the necessary data for the child `GridViewTemplate` when the user expands a parent row.
 
->note In this mode only the DataSource of parent  GridViewTemplate or RadGridView control must be set to a collection of custom business object or ORM data objects.
+>note In this mode only the DataSource of parent GridViewTemplate or RadGridView control must be set to a collection of custom business object or ORM data objects.
 >
 
 
-The following example demonstrates how you can manually build an Object-Relational Hierarchy using the "Customers" entity model from the Northwind database:<br>![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode003.png)
+The following example demonstrates how you can manually build an object-relational hierarchy using the "Customers" entity model from the Northwind database:
+
+![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode003.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.cs region=ManualGenerateObjectRelationalMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.vb region=ManualGenerateObjectRelationalMode}} 

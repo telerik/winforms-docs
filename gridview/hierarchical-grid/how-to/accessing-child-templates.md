@@ -10,7 +10,7 @@ previous_url: gridview-hirarchical-grid-how-to-accessing-child-templates
 ---
 
 # Accessing Child Templates
-You can programmatically access your child templates using __RadGridView.MasterTemplate.Templates__ collection. For example, use the following code to set the __AutoSizeColumnsMode__ to *Fill* in the first child template :
+You can programmatically access your child templates using __MasterTemplate.Templates__ collection. For example, use the following code to set the __AutoSizeColumnsMode__ to *Fill* in the first child template :
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=AccessingChildTemplates}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=AccessingChildTemplates}} 

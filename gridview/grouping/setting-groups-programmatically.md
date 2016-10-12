@@ -11,8 +11,6 @@ previous_url: gridview-grouping-setting-groups-programmatically
 
 # Setting Groups Programmatically
 
-
-
 ## Overview
 
 RadGridView has a __GroupDescriptors__ property at the GridViewTemplate level which is exposed in RadGridView class for MasterTemplate instance. This collection allows you to use descriptors which define the grouping criteria and the group's sorting direction for the data that is bound to the RadGridView.
@@ -43,7 +41,7 @@ Me.RadGridView1.GroupDescriptors.Add(descriptor)
 
 ![gridview-grouping-setting-groups-programmatically 001](images/gridview-grouping-setting-groups-programmatically001.png)
 
-The __GroupNames__ property defines the property, by which the data will be grouped. The __GroupName__ is a __SortDescriptorCollection__ and defines group names for one grouping criteria.
+The __GroupNames__ property defines the property, by which the data will be grouped. The __GroupNames__ is a __SortDescriptorCollection__ and defines group names for one grouping criteria.
 
 RadGridView supports grouping using one or more property names. The following example demonstrates how you can group by two properties:
 
