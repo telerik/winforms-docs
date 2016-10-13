@@ -17,15 +17,13 @@ You can track cell changes in __RadGridView__ by using __CellValueChanged__ eve
 
 You can track column changes with __CollectionChanging__, __CollectionChanged__ events which can be accessed from the __Columns__ collection.
 
-## 
-
->caution RadGridView supports another two editor related events ValueChanging and ValueChanged. Please refer to RadGridView [editors]({%slug winforms/gridview/editors/events%}) section for further details.
+>caution RadGridView supports another two editor related events __ValueChanging__ and __ValueChanged__. Please refer to RadGridView [editors]({%slug winforms/gridview/editors/events%}) section for further details.
 >
 
 
 ## CellValueChanged
 
-The event is raised after the cell value is changed.   
+The event is raised after the cell value is changed and the focus is moved away from the cell.   
 
 ## RowsChanging
 
@@ -34,7 +32,7 @@ The event fires before the rows collection is changed. __GridViewCollectionChan
 |||
 | ------- | ------- | 
 |e.Action|Indicates the reason for the change. __NotifyCollectionChangedAction__ enumeration specifies the action.|
-|e.Cancel|Boolean property indicating whether the event should be canceled. The default value is false and the event is not canceled.|
+|e.Cancel|Boolean property indicating whether the event should be canceled. The default value is *false* and the event is not canceled.|
 |e.GridViewTemplate|Specifies the grid view template.|
 |e.NewItems|Collection of the new items.|
 |e.NewStartingIndex|Indicates the new starting index.|
@@ -47,12 +45,12 @@ The event fires after one or more grid rows are changed. __GridViewCollectionCha
 
 ## CollectionChanging
 
-__CollectionChanging__ event is a generic event. It can be used for __Collumns__ and __Rows__. The events are accessible from the __Collumns__ and __Rows__ collection respectively of __RadGridView__. 
+__CollectionChanging__ event is a generic event. It can be used for __Collumns__ and __Rows__. The events are accessible from the __Collumns__ and __Rows__ collection respectively. 
 
 __CollectionChanging__ is equivalent to __RowsChanging__ event.
 
 ## CollectionChanged
 
-__CollectionChanged__ event is a generic event. It can be used for both __Collumns__ and __Rows__.The events are accessible from the __Collumns__ and __Rows__ collection respectively of RadGridView. 
+__CollectionChanged__ event is a generic event. It can be used for both __Collumns__ and __Rows__.The events are accessible from the __Collumns__ and __Rows__ collection respectively. 
 
 __CollectionChanged__ is equivalent to __RowsChanged__ event.

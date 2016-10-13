@@ -11,19 +11,13 @@ previous_url: gridview-insert-update-delete-records-validation
 
 # Validation
 
-
-
-## 
-
-
-
 |RELATED VIDEOS|
 | ------ |
 |[Validation with RadGridView for WinForms](http://www.telerik.com/videos/winforms/gridview/validation-with-radgridview-for-winforms)<br>In this video you will learn how to use the event-based Validation functionality in RadGridView for WinForms. Learn how to use the CellValidating and RowValidating events to ensure user input is valid. (Runtime: 08:47)|
 
-To prevent invalid input, wire the __ValueChanging__ and __ValueChanged__ events of the grid to add custom
+To prevent invalid input, wire the __ValueChanging__ and __ValueChanged__ events of the grid and add custom
 validation logic. Below is a simple example that demonstrates how to reject
-symbols greater than 10 characters long:
+strings longer than 10 characters:
 
 #### Handling the value changed event
 

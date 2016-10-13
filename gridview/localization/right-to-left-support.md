@@ -11,10 +11,6 @@ previous_url: gridview-localization-rtl
 
 # Right-to-left support
 
-
-
-## 
-
 You can present the content of your grid instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:
 
 {{source=..\SamplesCS\GridView\Localization\Localization1.cs region=rtl}} 

@@ -29,7 +29,7 @@ previous_url: gridview-insert-update-delete-records-data-editing-event-sequence
 
 * Finally the editor is closed.
 
-Some of these events may be called multiple times.  Here is a sample log of events as a string cell was put into edit mode and the string " new" was typed, then the cell was tabbed away from:
+Some of these events may be called multiple times. Here is a sample log of events as a string cell was put into edit mode and the string "new" was typed, then the cell was tabbed away from:
 
 CellBeginEdit
 
