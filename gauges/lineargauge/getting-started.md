@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadLinearGauge
 description: Getting Started
 slug: winforms/gauges/lineargauge/getting-started
 tags: getting,started
@@ -17,19 +17,22 @@ This article shows how you can add the control at design time or with code
 
 When you drag a __RadLinearGauge__ from the Toolbox and then drop it on the form, the gauge gallery will offer you to pick up the desired type:
 
+>caption Figure 1: Gallery Types
 ![lineargauge-getting-started 001](images/lineargauge-getting-started001.png)
 
->note If you do not choose a gauge's style and just close the gallery, an empty RadRadialGauge will be created.
+>note If you do not choose a gauge's style and just close the gallery, an empty __RadRadialGauge__ will be created.
 >
 
 You can open the gallery from the smart tag as well.
-        
+       
+>caption Figure 2: Smart Tag Gallery Option 
 ![lineargauge-getting-started 002](images/lineargauge-getting-started002.png)
 
-## Adding items programmatically
+## Adding Items Programmatically
 
 This example demonstrates how to programmatically setup a linear gauge.
-        design
+
+>caption Figure 3: Programmatically Added Items
 ![lineargauge-getting-started 003](images/lineargauge-getting-started003.png)
 
 {{source=..\SamplesCS\Gauges\LinearGauge\LinearGuageGettingStarted.cs region=add}} 
@@ -118,5 +121,8 @@ radLinearGauge1.Items.Add(linearGaugeLabels1)
 
 {{endregion}} 
 
+# See Also
 
+* [Structure]({%slug winforms/gauges/lineargauge/structure%})
+* [Smart Tag]({%slug winforms/gauges/lineargauge/design-time%})
 

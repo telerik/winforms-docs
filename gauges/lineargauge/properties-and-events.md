@@ -1,7 +1,7 @@
 ---
 title: Properties and Events
-page_title: Properties and Events | UI for WinForms Documentation
-description: Properties and Events
+page_title: Properties and Events | RadLinearGauge
+description: Properties and Events of RadLinearGauge
 slug: winforms/gauges/lineargauge/properties-and-events
 tags: properties,and,events
 published: True
@@ -9,25 +9,26 @@ position: 5
 previous_url: lineargauge-properties-and-events
 ---
 
-# Properties and Events
+# Properties
 
+|Property|Description|
+|------|------|
+|__RangeEnd__|Specifies the gauge's end.|
+|__RangeStart__|Specifies the gauge's start.|
+|__Value__|Specifies the gauge's value|
+|__Vertical__|Set or Get Gauge Orientation|
+|__XmlSerializationInfo__|Gets the serialization info for RadRadialGauge used by Save/Load layout methods to persist grid settings to/from XML. By default, or when set to null the ComponentXmlSerializationInfo provided by GetDefaultXmlSerializationInfo() will be used.|
 
+# Events
 
-## Properties
-
-* __Value:__ With this property you ca get/set all bound elements value. 
-
-* __RangeStart:__ Indicates the start value – the minimum value that will be shown.
-
-* __RangeEnd:__ Indicates the end value – the maximum value that will be displayed.
-
-* __Vertical:__ This is a Boolean property which gets/set the orientation of the gauge. This property should be set before the control is added to the controls collection.
-
-* __Items__ – this property allows you to access the items collection and add/remove elements.
-
-## Events
+|Event|Description|
+|------|------|
+|__ValueChanged__|The ValueChanged event fires when the value is modified.|
+|__OrientationChanged__|The OrientationChanged event fires when the orientation of the gauges is changed.|
 
 The __ValueChanged__ event fires when the __Value__ of the control is changed. For example you can use this event to alert the user that the current value is close to the maximum: 
+
+#### ValueChanged Event
 
 {{source=..\SamplesCS\Gauges\LinearGauge\LinearGuageGettingStarted.cs region=value}} 
 {{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=value}} 
@@ -51,7 +52,4 @@ End Sub
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

@@ -9,7 +9,7 @@ position: 0
 previous_url: bulletgraph-overview
 ---
 
-# BulletGraph
+# Overview
 
 The __RadBulletGraph__ control is a variation of linear gauge. It combines a number of indicators into one control making it light-weight, customizable, and straightforward to setup and use. The control is a great tool for dashboards as it is the optimal way to present a lot of information in relatively small size.
 

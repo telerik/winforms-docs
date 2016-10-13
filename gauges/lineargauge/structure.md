@@ -31,5 +31,5 @@ This article describes the inner structure and organization of the elements whic
 
 ## See Also
 
-* [Smart Tag]({%slug winforms/gauges/bulletgraph/smart-tag%})
-* [Getting Started]({%slug winforms/gauges/bulletgraph/getting-started%})
+* [Smart Tag]({%slug winforms/gauges/lineargauge/design-time%})
+* [Getting Started]({%slug winforms/gauges/lineargauge/getting-started%})
