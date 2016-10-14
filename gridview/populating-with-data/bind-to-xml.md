@@ -11,10 +11,6 @@ previous_url: gridview-populating-with-data-bind-to-xml
 
 # Bind to XML
 
-
-
-## 
-
 Binding to XML is not *directly *supported but DataTables are supported and a DataSet (containing DataTables) can be created from an XML document.
 
 This is a simple xml file used in the examples below:
@@ -38,7 +34,7 @@ This is a simple xml file used in the examples below:
 
 ![gridview-populating-with-data-bind-to-xml 001](images/gridview-populating-with-data-bind-to-xml001.JPG)
 
-You have to create a DataSet instance from the xml file. For the sample xml file above, the created DataSet contains only __one__ DataTable which is set as RadGridView data source. Please refer to this [topic]({%slug winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source%}) if you want to create hierarchy.
+You have to create a DataSet instance from the XML file. For the sample XML file above, the created DataSet contains only __one__ DataTable which is set as RadGridView data source. Please refer to this [topic]({%slug winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source%}) if you want to create hierarchy.
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToXml.cs region=bindingToXML}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToXml.vb region=bindingToXML}}````C#

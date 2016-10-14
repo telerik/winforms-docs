@@ -11,8 +11,6 @@ previous_url: gridview-populating-with-data-unbound-mode
 
 # Unbound Mode
 
-
-
 When in unbound mode of RadGridView does not use a data source to generate its content. In this mode, you need to add/remove the grid columns and rows using the provided API or the __RadGridView__ user interface (in design-time). You can also have a spreadsheet-like grid with empty rows and columns, letting the user enter own data. This topic described the three possible scenarios for creating unbound grids:
 
 * Creating empty grids with __RowCount__ property set to the number of desired rows
@@ -48,7 +46,9 @@ Me.RadGridView1.MasterTemplate.AllowAddNewRow = False
 
 {{endregion}} 
 
-The result from the code above is on the screenshot below:<br>![gridview-populating-with-data-unbound-mode 001](images/gridview-populating-with-data-unbound-mode001.png)
+The result from the code above is on the screenshot below:
+
+![gridview-populating-with-data-unbound-mode 001](images/gridview-populating-with-data-unbound-mode001.png)
 
 ## Adding rows programmatically (through Cells collection)
 
@@ -85,13 +85,13 @@ End Sub
 
 {{endregion}} 
 
-The code above results in the following grid:<br>![gridview-populating-with-data-unbound-mode 002](images/gridview-populating-with-data-unbound-mode002.png)
+The code above results in the following grid:
 
-
+![gridview-populating-with-data-unbound-mode 002](images/gridview-populating-with-data-unbound-mode002.png)
 
 ## Adding rows programmatically (through Rows collection)
 
-You can have the same result as the picture above by adding the rows data using the Add method of the Rows collection: 
+You can have the same result as the picture above by adding the rows data using the __Add__ method of the __Rows__ collection: 
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=addingRowsThroughRowsCollection}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=addingRowsThroughRowsCollection}} 

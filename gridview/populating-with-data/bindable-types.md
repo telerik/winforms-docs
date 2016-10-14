@@ -11,14 +11,9 @@ previous_url: gridview-populating-with-data-bindable-types
 
 # Bindable Types
 
-
-
-## 
-
 You can bind __RadGridView to__ a wide variety of data-sources. The data-source must implement __IEnumerable__ interface in general. You can further customize the binding of __RadGridView__ using __ITypedList/ICustomTypeDescriptor/INotifyPropertyChange__ interfaces together with your business objects.
 
 * __RadGridView__ follows the standard Windows Forms data-binding model. It can data bind to any *data-source *implementing one of the following interfaces:       
-
 
     * __IList__ interface for one-dimensional arrays. 
 
@@ -37,8 +32,7 @@ You can bind __RadGridView to__ a wide variety of data-sources. The data-source
 
 __RadGridView__ understands the following bindable property types:
 
-* All primitive types - __bool__, __byte__, __sbyte__, __char__, __short__, __ushort__, __int__, __uint__, __long__, __ulong__, __decimal__, __double__, __float__, __DateTime__, etc. 
-
+* All primitive types: __bool__, __byte__, __sbyte__, __char__, __short__, __ushort__, __int__, __uint__, __long__, __ulong__, __decimal__, __double__, __float__, __DateTime__, etc. 
 
 * __GUID__
 
@@ -47,7 +41,6 @@ __RadGridView__ understands the following bindable property types:
 * __TimeSpan__
 
 * __Enum__ types 
-
 
 * __Nullable__ types
 

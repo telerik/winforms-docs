@@ -11,11 +11,6 @@ previous_url: gridview-printing-support
 
 # Printing Support
 
-
-
-## 
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Getting Started with Printing for RadGridView](http://tv.telerik.com/watch/winforms/getting-started-with-printing-for-radgridview-)<br>This video demonstrates how to use the new Print features of RadGridView without the need to export to other formats. It also includes a tour of new end-user printing features.|![gridview-printing-support 003](images/gridview-printing-support003.png)|
@@ -52,7 +47,7 @@ Me.RadGridView1.Print(True)
 
 ![gridview-printing-support 001](images/gridview-printing-support001.png)
 
-The other available method is __PrintPreview())__, which opens [RadPrintPreviewDialog.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})
+The other available method is __PrintPreview()__, which opens [RadPrintPreviewDialog.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})
 
 {{source=..\SamplesCS\GridView\Printing support\PrintingSupport.cs region=PrintPreview}} 
 {{source=..\SamplesVB\GridView\Printing support\PrintingSupport.vb region=PrintPreview}} 

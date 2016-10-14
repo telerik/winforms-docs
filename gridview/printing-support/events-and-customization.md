@@ -11,8 +11,6 @@ previous_url: gridview-printing-support-events
 
 # Events and Customization
 
-
-
 The print events in RadGridView allow the developer to customize the print output for each individual cell. There are two events namely __PrintCellFormatting__ and __PrintCellPaint__.
 
 ## PrintCellFormatting

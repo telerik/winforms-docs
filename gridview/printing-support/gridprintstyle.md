@@ -11,21 +11,19 @@ previous_url: gridview-printing-support-gridprintstyle
 
 # GridPrintStyle
 
-
-
 You can customize the settings of the grid print job by setting the __PrintStyle__ property of the RadGridView to a new instance of the __GridPrintStyle__ class or editing the current one. The available properties are:
 
-* __PrintGrouping__ – determines if grouping will be printed.
+* __PrintGrouping:__ determines if grouping will be printed.
 
-* __PrintSummaries__ – determines if summary rows will be printed.
+* __PrintSummaries:__ determines if summary rows will be printed.
 
-* __PrintHiddenRows__ – determines if hidden rows will be printed.
+* __PrintHiddenRows:__ determines if hidden rows will be printed.
 
-* __PrintHiddenColumns__ – determines if hidden columns will be printed.
+* __PrintHiddenColumns:__ determines if hidden columns will be printed.
 
-* __PrintHeaderOnEachPage__ – determines if header cells will be printed on each page.
+* __PrintHeaderOnEachPage:__ determines if header cells will be printed on each page.
 
-* __FitWidthMode__ – determines how the RadGridView will be positioned on the page. There are three possible settings for this property:
+* __FitWidthMode:__ determines how the RadGridView will be positioned on the page. There are three possible settings for this property:
 
     * NoFit – the grid is aligned to the left and its size is not changed
 
@@ -113,4 +111,6 @@ This code defines four pages where the content of the pages is as follows:
 
 * Page 4 will contain the grid columns at indexes 3, 4 and 6.
 
-You should note that one column can appear on several pages. Here is the result of the above code when previewed in the PrintPreviewDialog:<br>![gridview-printing-support-gridprintstyle 002](images/gridview-printing-support-gridprintstyle002.png)
+You should note that one column can appear on several pages. Here is the result of the above code when previewed in the PrintPreviewDialog:
+
+![gridview-printing-support-gridprintstyle 002](images/gridview-printing-support-gridprintstyle002.png)

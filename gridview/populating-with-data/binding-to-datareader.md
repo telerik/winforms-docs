@@ -11,11 +11,7 @@ previous_url: gridview-populating-with-data-binding-to-datareader
 
 # Binding to DataReader
 
-
-
-## 
-
-To extract values from a data source using a __DataReader,__ use the GridViewTemplate __LoadFrom()__ method to consume an object instance that supports IDataReader. The code sample below uses a OleDbDataReader reading an Access data source:
+To extract values from a data source using a __DataReader,__ use the GridViewTemplate __LoadFrom()__ method to consume an object instance that supports `IDataReader`. The code sample below uses a `OleDbDataReader` reading an `Access` data source:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToDataReader.cs region=usingADataReader}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToDataReader.vb region=usingADataReader}} 

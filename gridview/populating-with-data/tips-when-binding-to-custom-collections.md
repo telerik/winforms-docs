@@ -11,8 +11,6 @@ previous_url: gridview-populating-with-data-tips-when-binding-to-custom-collecti
 
 # Tips when Binding to Custom Collections
 
-
-
 ## Reducing Column Processing
 
 By default RadGridView will fetch all bindable properties from the data source you use for control structure generation. These properties will be also be used in sorting, filtering, grouping or other operations. In some cases you may not need your grid instance to iterate through all the fields in your data source upon binding. Generally, this can be a requirement when you have custom collection of business objects which you pass to the __DataSource__ property of RadGridView to generate its content.
@@ -29,7 +27,7 @@ Currently RadGridView supports sorting, filtering and grouping natively. This is
 
 * GridViewInfo.FilterExpression
 
-These features are not tightly coupled with the column declarations of the grid but with the data that the grid is bound to. To clarify the idea, consider the following scenario. You want to display a list of all files in a directory. For this purpose you use __FileSystemInfo__ from the __System.IO.FileSystemInfo__ namespace. This collection has many properties: __Attributes__, __CreationTime__, __CreationTimeUtc__, __Exists__, __Extension__, __FullName__, __LastAccessTime__, __LastAccessTimeUtc__, __LastWriteTime__, __LastWriteTimeUtc__ and __Name__. This is a long list that you probably don't want to expose in the grid. Instead you define the columns to be displayed and supply the GridView DataSource with the files information:
+These features are not tightly coupled with the column declarations of the grid but with the data that the grid is bound to. To clarify the idea, consider the following scenario. You want to display a list of all files in a directory. For this purpose you use __FileSystemInfo__ from the __System.IO.FileSystemInfo__ namespace. This collection has many properties: __Attributes__, __CreationTime__, __CreationTimeUtc__, __Exists__, __Extension__, __FullName__, __LastAccessTime__, __LastAccessTimeUtc__, __LastWriteTime__, __LastWriteTimeUtc__ and __Name__. This is a long list that you probably don't want to expose in the grid. Instead you define the columns to be displayed and supply the GridView __DataSource__ with the files information:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\TipsWhenBindingToCustomCollections.cs region=addingColumnsToTheColumnsCollection}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\TipsWhenBindingToCustomCollections.vb region=addingColumnsToTheColumnsCollection}} 

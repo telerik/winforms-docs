@@ -11,11 +11,9 @@ previous_url: gridview-rows-adding-and-inserting-rows
 
 # Adding and Inserting Rows
 
-
-
 ## Adding rows to RadGridView
 
-Adding new rows in the RadGridView can be achieved via the __Rows__ collection. For example if the grid control contains three columns – [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%}), [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%}), [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%}) and [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%}) you can add an empty row as follows:
+Adding new rows in the RadGridView can be achieved via the __Rows__ collection. For example if the grid control contains four columns – [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%}), [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%}), [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%}) and [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%}) you can add an empty row as follows:
       	
 
 __RadGridView.Rows.AddNew()__ adds an empty row and allows the user to enter a value for each column cells’
@@ -87,7 +85,7 @@ RadGridView1.Rows.Add(rowInfo)
 
 ## Inserting rows in RadGridView
 
-Rows can be inserted at a specified position by using the __Insert__ method of the __Rows__ collection of RadGridView. Below you can see an example of this functionality:
+Rows can be inserted at a specified position by using the __Insert__ method of the __Rows__ collection. Below you can see an example of this functionality:
 
 {{source=..\SamplesCS\GridView\Rows\AddingAndInsertingRows.cs region=insertRow}} 
 {{source=..\SamplesVB\GridView\Rows\AddingAndInsertingRows.vb region=insertRow}} 

@@ -11,10 +11,7 @@ previous_url: gridview-rows-custom-rows
 
 # Creating custom rows
 
-
-
 __RadGridView__ provides a variety of visual cells per row with different functionality and purpose. However, in some cases you may need to display custom elements, not a single cell per column. This article demonstrates a sample approach how to create a custom row element.
-    
 
 ## Custom new row
 
@@ -139,7 +136,7 @@ End Class
 
 {{endregion}} 
 
-2\. Create a descendant of the __GridViewNewRowInfo__ and specify that it uses the row element from the previous step by overriding its __RowElementType__ property
+2\. Create a descendant of the __GridViewNewRowInfo__ and specify that it uses the row element from the previous step by overriding its __RowElementType__ property.
 
 {{source=..\SamplesCS\GridView\Rows\CreateCustomNewRow.cs region=RowInfo}} 
 {{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=RowInfo}} 
@@ -179,7 +176,7 @@ End Class
 
 {{endregion}} 
 
-3\. The last step is to subscribe to the RadGridView.__CreateRowInfo__ event at design time and replace the default __GridViewNewRowInfo__ with your custom one:
+3\. The last step is to subscribe to the __CreateRowInfo__ event at design time and replace the default __GridViewNewRowInfo__ with your custom one.
 
 {{source=..\SamplesCS\GridView\Rows\CreateCustomNewRow.cs region=ReplaceRow}} 
 {{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=ReplaceRow}} 

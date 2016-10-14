@@ -11,9 +11,6 @@ previous_url: gridview-populating-with-data-databinding-radgridview
 
 # Databinding RadGridView
 
-
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Binding RadGridView for WinForms to OpenAccess](http://tv.telerik.com/watch/winforms/binding-radgridview-for-winforms-to-openaccess)<br>In this video, you will learn how to bind RadGridView for WinForms to OpenAccess entities.|![gridview-populating-with-data-databinding-radgridview 001](images/gridview-populating-with-data-databinding-radgridview001.png)|
@@ -32,4 +29,4 @@ RadGridView binds to collections of [bindable types]({%slug winforms/gridview/p
 
 RadGridView can bind to a single level of data or multiple levels of [hierarchical data]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%}). 
 
-RadGridView can work in so called [Unbound mode]({%slug winforms/gridview/populating-with-data/unbound-mode%}), where the grid is not bound to any data and using the grid API,  you specify the data (columns and rows) that will be displayed  dynamically at runtime. 
+RadGridView can work in so called [Unbound mode]({%slug winforms/gridview/populating-with-data/unbound-mode%}), where the grid is not bound to any data and using the grid API, you specify the data (columns and rows) that will be displayed  dynamically at runtime. 
