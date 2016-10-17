@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | Shaped Form
+description: The ShapedForm control allows you to design and display a Windows form with any conceivable shape.
 slug: winforms/forms-and-dialogs/shapedform/getting-started
 tags: getting,started
 published: True
@@ -9,11 +9,7 @@ position: 1
 previous_url: forms-and-dialogs-shapedform-getting-started
 ---
 
-# Getting Started
-
-
-
-## 
+# Getting Started 
 
 To add a __ShapedForm__ to your project: 
 
@@ -61,3 +57,8 @@ Partial Class ShapedForm1
 10\. Return to the design view of the form. Visual Studio will repaint the form without a title bar, indicating that it is now being derived from the __ShapedForm__ class.
 
 11\. Press __F5__ to run the project.
+
+# See Also
+
+* [RadTitleBar]({%slug winforms/forms-and-dialogs/radtitlebar%})	
+

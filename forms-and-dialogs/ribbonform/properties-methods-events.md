@@ -20,7 +20,6 @@ position: 3
 # RibbonFormElement's Properties
 |Property|Description|
 |----|----|
-|__TitleBarElement__|Gets the __RadTitleBarElement__.|
 |__Border__|Gets the __RibbonFormBorderPrimitive__.|
 
 # RadRibbonFormBehavior's Properties

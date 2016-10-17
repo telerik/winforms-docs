@@ -58,5 +58,3 @@ position: 55
 |(a) Product Support Documentation|Fully Supported: Documentation is provided in digital format for customers on the Web and available for no-charge download at [http://www.telerik.com](http://www.telerik.com)|
 |(b) Accessibility and Compatibility Features|Fully Supported: Telerik UI for WinForms has accompanying Help documentation listing accessibility and compatibility features. An individual may access and view Help topics online or may select a topic for print.|
 |(c) Support Services|Fully Supported: Telerik Support is familiar with features specific for Assistance Technology and for people with disabilities.|
-
-

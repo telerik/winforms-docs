@@ -14,15 +14,15 @@ The DataGridView is converted to [RadGridView]({%slug winforms/gridview%}). The 
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
-|AllowUserToAddRows|Replaced with|   | 
-|AllowUserToDeleteRows|Replaced with|   | 
-|AllowUserToOrderColumns|Replaced with|   | 
-|AllowUserToResizeColumns|Replaced with|   | 
-|AllowUserToResizeRows|Replaced with|   | 
+|AllowUserToAddRows|Replaced with|AllowAddNewRow| 
+|AllowUserToDeleteRows|Replaced with|AllowDeleteRow| 
+|AllowUserToOrderColumns|Replaced with|AllowColumnReorder| 
+|AllowUserToResizeColumns|Replaced with|AllowColumnResize| 
+|AllowUserToResizeRows|Replaced with|AllowRowResize| 
 |AlternatingRowsDefaultCellStyle|Produces Error|   | 
 |AutoSizeColumnsMode|Produces Error|   | 
 |AutoSizeRowsMode|Produces Error|   | 
-|BackgroundColor|Replaced with|   | 
+|BackgroundColor|Replaced with|TableElement.BackColor| 
 |BorderStyle|Removed|   | 
 |ClipboardCopyMode|Replaced with|ClipboardCopyMode| 
 |ColumnHeadersHeightSizeMode|Removed|   | 

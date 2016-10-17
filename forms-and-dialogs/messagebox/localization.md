@@ -1,23 +1,19 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
-description: Localization
+page_title: Localization | RadMessageBox
+description: RadMessageBox displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message, such as status or error information.
 slug: winforms/forms-and-dialogs/messagebox/localization
 tags: localization
 published: True
-position: 3
+position: 5
 previous_url: forms-and-dialogs-messagebox-localization
 ---
 
 # Localization
 
+__RadMessageBox__ provides localization of its buttons text via __RadMessageLocalizationProvider__:
 
-
-## 
-
-RadMessageBox provides localization of its buttons text via RadMessageLocalizationProvider:
-
-1\. Start by creating a descendant of the RadGridLocalizationSettings class. Then override the GetLocalizedString(string id) method, and, in its implementation, provide a translation for the label and user messages. If one is not provided, the default value will be returned - this is guaranteed by the call to the base GetLocalizedString method in the default clause of the switch statement. 
+1\. Start by creating a descendant of the __RadGridLocalizationSettings__ class. Then, override the __GetLocalizedString(string id)__ method, and in its implementation, provide a translation for the label and user messages. If one is not provided, the default value will be returned - this is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement. 
 
 #### Creating a custom localization provider 
 
