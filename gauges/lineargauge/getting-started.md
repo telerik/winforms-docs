@@ -35,6 +35,8 @@ This example demonstrates how to programmatically setup a linear gauge.
 >caption Figure 3: Programmatically Added Items
 ![lineargauge-getting-started 003](images/lineargauge-getting-started003.png)
 
+#### Add Items
+
 {{source=..\SamplesCS\Gauges\LinearGauge\LinearGuageGettingStarted.cs region=add}} 
 {{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=add}} 
 

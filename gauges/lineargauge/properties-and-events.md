@@ -53,3 +53,8 @@ End Sub
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_gauges_radlineargauge.htm)
+* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_gauges_radlineargauge.htm)
