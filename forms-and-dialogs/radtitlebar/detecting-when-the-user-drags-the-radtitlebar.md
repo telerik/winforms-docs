@@ -5,7 +5,7 @@ description: RadTitleBar control is used in forms and provides functionality for
 slug: winforms/forms-and-dialogs/radtitlebar/detecting-when-the-user-drags-the-radtitlebar
 tags: detecting,when,the,user,drags,the,radtitlebar
 published: True
-position: 1
+position: 3
 previous_url: forms-and-dialogs-radtitlebar-how-to-detecting-when-the-user-drags-the-radtitlebar
 ---
 
