@@ -179,7 +179,7 @@ __FileExportMode__: This property determines whether the data will be exported i
 ### Exported Cells Data Type
 
 >important
-Each column in RadGridView has __ExcelExportType__ property which can be used for explicitly setting the data type of the cells in the exported document.
+Each column in RadGridView has __ExcelExportType__ property which can be used for explicitly setting the data type of the cells in the exported document. In order to change the format of the exported data, you can set the __ExcelExportType__ property of the specific column to *Custom* and specify the __ExcelExportFormatString__ property with the desired format.
 >
 
 ## Events
