@@ -5,7 +5,7 @@ description: RadMap can visualize tile data from the Bing Maps and the OpenStree
 slug: winforms/map/localization
 tags: map, structure
 published: True
-position: 7 
+position: 8 
 ---
 
 # Localization
