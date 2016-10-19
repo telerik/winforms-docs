@@ -107,37 +107,28 @@ __ExportHierarchy__: Defines whether the exporter will export hierarchical data 
 __ChildViewExportMode__: Defines which child view of a hierarchy row to be exported. Available modes are:
 
 * *ExportFirstView*: The exporter exports the first view.
-            
 
 * *ExportCurrentlyActiveView*: The exporter exports the view that is active in the grid.
-            
+
+* *ExportAllViews*: All child views are exported.
 
 * *SelectViewToExport*: In this mode the __ChildViewExporing__ event is fired. The event allows to choose the view to export in row by row basis.
-            
 
 __HiddenColumnOption__: Defines whether hidden columns will be exported. Available options are:
-        
 
 * *ExportAlways*: The exporter will export hidden columns as well.
-            
 
 * *DoNotExport*: The exporter will not export hidden columns.
-            
 
 * *ExportAsHidden*: The exporter will export hidden columns as hidden in excel*.
-            
 
 __HiddenRowOption__: Defines whether hidden rows will be exported. Available options are:
-        
 
 * *ExportAlways*: The exporter will export hidden rows as well.
-            
 
 * *DoNotExport*: The exporter will not export hidden rows.
-            
 
 * *ExportAsHidden*: The exporter will export hidden rows as hidden in excel*.
-            
 
 >note MS Excel does not support other ways of hiding a column/row different from setting its width to zero. To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__ or __HiddenRowOption__ property to *DoNotExport* :
 >
@@ -174,7 +165,7 @@ __FileExportMode__: This property determines whether the data will be exported i
 
 * *CreateOrOverrideFile*: Creates new or overrides an existing file.
 
-* __ExportViewDefinition:__  Gets or sets a value indicating whether to export the [view definition.]({%slug winforms/gridview/view-definitions/overview%})
+__ExportViewDefinition:__  Gets or sets a value indicating whether to export the [view definition.]({%slug winforms/gridview/view-definitions/overview%})
 
 ### Exported Cells Data Type
 
@@ -308,7 +299,7 @@ spreadExporter.RunExport("..\..\exportedFile.xlsx", exportRenderer)
 
 __RadGridView__ can export its contents asynchronously. This feature can be utilized by calling the  __RunExportAsync__ method on the __GridViewSpreadExport__ object.
 
->important Due to performance considerations and in order to decrease the consumed memory the visual settings in __RadGridView__ are not exported when the operation is run async.
+>important Due to performance considerations and in order to decrease the consumed memory the visual settings and view defintions in __RadGridView__ are not exported when the operation is run async.
 >
 
 ## Methods
