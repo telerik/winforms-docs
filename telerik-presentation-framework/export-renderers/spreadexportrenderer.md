@@ -1,13 +1,4 @@
----
-title: SpreadExportRenderer
-page_title: SpreadExportRenderer | UI for WinForms Documentation
-description: SpreadExportRenderer
-slug: winforms/telerik-presentation-framework/export-renderers/spreadexportrenderer
-tags: spreadexportrenderer
-published: True
-position: 0
-previous_url: tpf-export-data-support-spread-export-renderer
----
+
 
 # SpreadExportRenderer
 
