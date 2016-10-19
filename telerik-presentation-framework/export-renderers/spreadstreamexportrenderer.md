@@ -10,8 +10,7 @@ position: 2
 
 # SpreadStreamExportRenderer
 
-This class exposes methods and events needed to export using the [SpreadStreamExport]({%slug winforms/gridview/exporting-data/stream-export}).
-
+This class exposes methods and events needed to export using the [SpreadStreamExport]({%slug winforms/gridview/exporting-data/stream-export%}).
 
 ## Events
 
