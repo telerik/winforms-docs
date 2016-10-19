@@ -18,7 +18,7 @@ All required classes for localization are defined in the __Telerik.WinControls.U
 
 Below is a sample implementation of an English localization provider:
 
-#### Localizing RadMap's trings
+#### Localizing RadMap's Strings
 
 {{source=..\SamplesCS\Map\MapLocalization.cs region=LocalizeText}} 
 {{source=..\SamplesVB\Map\MapLocalization.vb region=LocalizeText}} 

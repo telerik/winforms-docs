@@ -30,6 +30,7 @@ previous_url: buttons-toggleswitch-properties-methods-events
 |__Thumb__|Gets the thumb of __RadToggleSwitch__.||
 |__Width__|Gets or sets the width of __RadToggleSwitch__.|![buttons-toggleswitch-properties-methods-events 005](images/buttons-toggleswitch-properties-methods-events005.png) |
 |__Height__|Gets or sets the height of __RadToggleSwitch__.|![buttons-toggleswitch-properties-methods-events 006](images/buttons-toggleswitch-properties-methods-events006.png)|
+|__ToggleStateMode__|Determines how ToggleSwitch button should handle mouse click and drag.|
 
 ## Methods
 
