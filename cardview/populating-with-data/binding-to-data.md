@@ -36,20 +36,20 @@ The example below will demonstrate how to bind __RadCardView__ to a collection o
 ````C#
 BindingList<CardViewModel> dataSource = new BindingList<CardViewModel>()
 {
-    new CardViewModel("1", "Nancy Davolio","507 - 20th Ave. E.Apt. 2A", DateTime.Parse("12/8/1948")),
-    new CardViewModel("2", "Andrew Fuller","908 W. Capital Way", DateTime.Parse("2/19/1952")),
-    new CardViewModel("3", "Janet Leverling","722 Moss Bay Blvd.", DateTime.Parse("8/30/1963")),
-    new CardViewModel("4", "Margaret Peacock","110 Old Redmond Rd.", DateTime.Parse("9/19/1937"))
+    new CardViewModel("1", "Nancy Davolio","507 - 20th Ave. E.Apt. 2A", DateTime.Parse("12/8/1948", CultureInfo.InvariantCulture)),
+    new CardViewModel("2", "Andrew Fuller","908 W. Capital Way", DateTime.Parse("2/19/1952", CultureInfo.InvariantCulture)),
+    new CardViewModel("3", "Janet Leverling","722 Moss Bay Blvd.", DateTime.Parse("8/30/1963", CultureInfo.InvariantCulture)),
+    new CardViewModel("4", "Margaret Peacock","110 Old Redmond Rd.", DateTime.Parse("9/19/1937", CultureInfo.InvariantCulture))
 };
 this.radCardView1.DataSource = dataSource;
 
 ````
 ````VB.NET
 Dim dataSource As New BindingList(Of CardViewModel)() From {
-    New CardViewModel("1", "Nancy Davolio", "507 - 20th Ave. E.Apt. 2A", DateTime.Parse("12/8/1948")),
-    New CardViewModel("2", "Andrew Fuller", "908 W. Capital Way", DateTime.Parse("2/19/1952")),
-    New CardViewModel("3", "Janet Leverling", "722 Moss Bay Blvd.", DateTime.Parse("8/30/1963")),
-    New CardViewModel("4", "Margaret Peacock", "110 Old Redmond Rd.", DateTime.Parse("9/19/1937"))
+    New CardViewModel("1", "Nancy Davolio", "507 - 20th Ave. E.Apt. 2A", DateTime.Parse("12/8/1948", CultureInfo.InvariantCulture)),
+    New CardViewModel("2", "Andrew Fuller", "908 W. Capital Way", DateTime.Parse("2/19/1952", CultureInfo.InvariantCulture)),
+    New CardViewModel("3", "Janet Leverling", "722 Moss Bay Blvd.", DateTime.Parse("8/30/1963", CultureInfo.InvariantCulture)),
+    New CardViewModel("4", "Margaret Peacock", "110 Old Redmond Rd.", DateTime.Parse("9/19/1937", CultureInfo.InvariantCulture))
 }
 Me.RadCardView1.DataSource = dataSource
 
