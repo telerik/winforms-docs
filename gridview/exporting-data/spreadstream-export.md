@@ -1,16 +1,16 @@
 ---
-title: Export to Excel with SpreadsheetStreaming library.
-page_title: Export to Excel with SpreadsheetStreaming library. | RadGridView
-description: Use SpreadsheetStreaming library to export grids that contain significant amount of data.
+title: Export to Excel with GridViewSpreadStreamExport .
+page_title: Export to Excel with GridViewSpreadStreamExport. | RadGridView
+description: Use RadSpreadStreamProcessing library to export grids that contain significant amount of data.
 slug: winforms/gridview/exporting-data/stream-export
 tags: spread,export,excel,xlsx
 published: True
-position: 3
+position: 2
 ---
 
-# SpreadsheetStreaming Export 
+# RadSpreadStreamProcessing Export 
 
-The __SpreadsheetStreaming__ uses the [__RadSpreadStreamProcessing__](http://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview) library which allows you to create big documents (without loading the entire document in the memory) and export them to the most common formats. 
+The __GridViewSpreadStreamExport__ uses the [__RadSpreadStreamProcessing__](http://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview) library which allows you to create big documents (without loading the entire document in the memory) and export them to the most common formats. 
 
 >caption Figure 1: Exporting RadGridView.
 
@@ -27,7 +27,7 @@ The __SpreadsheetStreaming__ uses the [__RadSpreadStreamProcessing__](http://doc
 
 # Exporting
 
-To use the spread export functionality create an instance of the __GridViewSpreadStreamExport__ object. Pass as parameter the __RadGridView__ instance to export. Afterwards, the __RunExport__ method will trigger the export process. The latter method accepts as parameter a filename of the file to be exported.
+To use the spread export functionality create an instance of the __GridViewSpreadStreamExport__ object. Pass as parameter the __RadGridView__ instance to export. Afterwards, the __RunExport__ method will trigger the export process. The latter method accepts as parameter the filename of the file to be exported and a [SpreadStreamExportRenderer](%slug winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer%) instance. 
 
 #### Exporting the grid. 
  
@@ -269,3 +269,7 @@ End Sub
 
 
 {{endregion}} 
+
+# See Also
+
+* [SpreadStreamExportRenderer](%slug winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer%) 
