@@ -123,7 +123,7 @@ Me.radPivotGrid1.ChartDataProvider.GroupNameDelimiter = " -> "
 
 {{endregion}}
 
-## PivotGridChartDataProvider events
+## PivotGridChartDataProvider Events
 
 There are two events that allow you to modify the settings of the generated series or to use custom series. The __SeriesCreating__ is fired when a series is being created and it allows you to replace the series instance with a custom one if needed. The __UpdateCompleted__ event is fired when all series have been generated so that you can apply to them any final settings.
 

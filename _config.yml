@@ -110,6 +110,9 @@ navigation:
     cardview/customizing-appearance:
         title: Customzing Appearance
         position: 6
+    cardview/editors:
+        title: Editors
+        position: 7
     carousel:
         title: Carousel
         position: 100

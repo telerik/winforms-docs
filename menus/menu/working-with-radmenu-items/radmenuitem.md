@@ -86,3 +86,6 @@ The __RadMenuContentItem__ is a container control that allows you to build up cu
 ## RadMenuSeparatorItem
 
 The __RadMenuSeparatorItem__ is used to add a horizontal line for visual separation between successive items on a menu.
+
+>note __RadMenuSeparatorItem__ defines a __TextVisibility__ property and it needs to be set to *Visible* in order the text set to the item to be displayed.
+>
