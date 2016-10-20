@@ -5,7 +5,7 @@ description: Selection
 slug: winforms/richtexteditor-/features/selection
 tags: selection
 published: True
-position: 1
+position: 9
 previous_url: richtexteditor-features-selection
 ---
 

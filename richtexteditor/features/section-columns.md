@@ -5,7 +5,7 @@ description: This article describes how you arrange your text in columns.
 slug: winforms/richtextEditor/section-columns
 tags: properties,and,methods
 published: True
-position: 22
+position: 9
 ---
 
 # Section Columns

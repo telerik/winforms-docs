@@ -5,7 +5,7 @@ description: Headers and Footers
 slug: winforms/richtexteditor-/features/headers-and-footers
 tags: headers,and,footers
 published: True
-position: 8
+position: 9
 previous_url: richtexteditor-features-headers-and-footers
 ---
 

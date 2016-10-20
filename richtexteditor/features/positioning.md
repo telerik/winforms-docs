@@ -5,7 +5,7 @@ description: Positioning
 slug: winforms/richtexteditor-/features/positioning
 tags: positioning
 published: True
-position: 0
+position: 9
 previous_url: richtexteditor-features-positioning
 ---
 
