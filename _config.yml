@@ -789,7 +789,7 @@ navigation:
         title: Localization
         position: 7		
     richtextbox:
-        title: RichTextBox (obsolote)
+        title: RichTextBox (deprecated)
         position: 400
     richtextbox/features:
         title: Features
