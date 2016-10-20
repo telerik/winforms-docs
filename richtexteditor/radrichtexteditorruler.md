@@ -13,7 +13,7 @@ previous_url: richtexteditor-richtexteditorruler
 
 
 
-__RadRichTextEditorRuler__ is a control providing ruler functionality to [RadRichTextEditor]({%slug winforms/richtexteditor-%}). The rulers allow you to change the paragraph, page margins or align the paragraphs in the document.![richtexteditor-richtexteditorruler 001](images/richtexteditor-richtexteditorruler001.png)
+__RadRichTextEditorRuler__ is a control providing ruler functionality to [RadRichTextEditor]({%slug winforms/richtexteditor%}). The rulers allow you to change the paragraph, page margins or align the paragraphs in the document.![richtexteditor-richtexteditorruler 001](images/richtexteditor-richtexteditorruler001.png)
 
 >note Rulers only apply to the [Paged]({%slug winforms/richtexteditor-/document-elements/raddocument%}) document layout mode of the __RadRichtextEditor.__ 
 >
