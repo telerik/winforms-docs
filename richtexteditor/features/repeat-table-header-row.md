@@ -104,7 +104,7 @@ Using this approach, header rows can be added consecutively. In other words, if 
 
 >caption Figure 3: Repeat Table Header Rows button in the Table Tools contextual menu
 
-![RadRichTextBox-Features_Repeat-Table-Header-Row001](images/RadRichTextBox-Features_Repeat-Table-Header-Row001.png)
+![RadRichTextBox-Features_Repeat-Table-Header-Row003](images/RadRichTextBox-Features_Repeat-Table-Header-Row003.png)
 
 # See Also
 

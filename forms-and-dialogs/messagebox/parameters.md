@@ -100,6 +100,34 @@ RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore
 ````
 ````VB.NET
 RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text")
+'#End Region
+End Sub
+s
+ "LocalizationProvider"
+lass MyRadMessageLocalizationProvider
+Inherits RadMessageLocalizationProvider
+Public Overloads Overrides Function GetLocalizedString(ByVal id As String) As String
+Select Case id
+    Case RadMessageStringID.AbortButton
+        Return "Abbruch"
+    Case RadMessageStringID.CancelButton
+        Return "Löschen"
+    Case RadMessageStringID.IgnoreButton
+        Return "Ignorieren"
+    Case RadMessageStringID.NoButton
+        Return "Nein"
+    Case RadMessageStringID.OKButton
+        Return "OK"
+    Case RadMessageStringID.RetryButton
+        Return "Wiederholung"
+    Case RadMessageStringID.YesButton
+        Return "Ja"
+    Case Else
+        Return MyBase.GetLocalizedString(id)
+End Select
+End Function
+s
+
 ````
 
 {{endregion}} 
