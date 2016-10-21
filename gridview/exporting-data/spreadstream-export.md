@@ -1,5 +1,5 @@
 ---
-title: Export to Excel with GridViewSpreadStreamExport .
+title: Export to Excel with GridViewSpreadStreamExport.
 page_title: Export to Excel with GridViewSpreadStreamExport. | RadGridView
 description: Use RadSpreadStreamProcessing library to export grids that contain significant amount of data.
 slug: winforms/gridview/exporting-data/stream-export
@@ -21,7 +21,7 @@ The __GridViewSpreadStreamExport__ uses the [__RadSpreadStreamProcessing__](http
 * Telerik.WinControls.TelerikExport
 >
 
->important Since this functionality is using the __RadSpreadStreamProcessing__ library you need to reference the following assemblies as well:
+>important Since this functionality is using the __RadSpreadStreamProcessing__ library you need to reference the following assembly as well:
 * Telerik.Documents.SpreadsheetStreaming
 >
 
@@ -30,46 +30,23 @@ The __GridViewSpreadStreamExport__ uses the [__RadSpreadStreamProcessing__](http
 To use the spread export functionality create an instance of the __GridViewSpreadStreamExport__ object. Pass as parameter the __RadGridView__ instance to export. Afterwards, the __RunExport__ method will trigger the export process. The latter method accepts as parameter the filename of the file to be exported and a [SpreadStreamExportRenderer](%slug winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer%) instance. 
 
 #### Exporting the grid. 
- 
-{{source=..\SamplesCS\GridView\ExportingData\SpreadStreamExportCode.cs region=RunExport}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadStreamExportCode.vb region=RunExport}}
+
+{{source=..\SamplesCS\GridView\ExportingData\SpreadStreamExportCode.cs region=SyncPort}} 
+{{source=..\SamplesVB\GridView\ExportingData\SpreadStreamExportCode.vb region=SyncPort}}
 ````C#
-private void RadButton1_Click(object sender, EventArgs e)
-{
-    GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.radGridView1);
-    spreadStreamExport.AsyncExportProgressChanged += SpreadStreamExport_AsyncExportProgressChanged;
-    spreadStreamExport.AsyncExportCompleted += SpreadStreamExport_AsyncExportCompleted;
-    spreadStreamExport.RunExportAsync(@"D:\StreamExport.xlsx", new SpreadStreamExportRenderer());
-}
-private void SpreadStreamExport_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
-{
-    RadMessageBox.Show("Export Completed");
-}
-private void SpreadStreamExport_AsyncExportProgressChanged(object sender, ProgressChangedEventArgs e)
-{
-    radProgressBar1.Value1 = e.ProgressPercentage;
-}
+GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.radGridView1);
+spreadStreamExport.ExportVisualSettings = true;
+spreadStreamExport.RunExport(@"D:\StreamExport.xlsx", new SpreadStreamExportRenderer());
 
 ````
 ````VB.NET
-Private Sub RadButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Dim spreadStreamExport As New GridViewSpreadStreamExport(Me.radGridView1)
-    AddHandler spreadStreamExport.AsyncExportProgressChanged, AddressOf SpreadStreamExport_AsyncExportProgressChanged
-    AddHandler spreadStreamExport.AsyncExportCompleted, AddressOf SpreadStreamExport_AsyncExportCompleted
-    spreadStreamExport.RunExportAsync("D:\StreamExport.xlsx", New SpreadStreamExportRenderer())
-End Sub
-Private Sub SpreadStreamExport_AsyncExportCompleted(ByVal sender As Object, ByVal e As AsyncCompletedEventArgs)
-    RadMessageBox.Show("Export Completed")
-End Sub
-Private Sub SpreadStreamExport_AsyncExportProgressChanged(ByVal sender As Object, ByVal e As ProgressChangedEventArgs)
-    radProgressBar1.Value1 = e.ProgressPercentage
-End Sub
+Dim spreadStreamExport As New GridViewSpreadStreamExport(Me.radGridView1)
+spreadStreamExport.ExportVisualSettings = True
+spreadStreamExport.RunExport("D:\StreamExport.xlsx", New SpreadStreamExportRenderer())
 
-```` 
-
+````
 
 {{endregion}} 
-
 
 ## Properties
 
@@ -129,7 +106,7 @@ End Sub
 
 ### RowCreated
 
-Occurs when a new row is created in current worksheet. This is suitable place to set any row properties (like height) and/or add any indent cells.
+Occurs when a new row is created in current worksheet. This is suitable place to set any row properties (like height) and/or add indent cells.
 
 #### Using RowCreated to set the rows height.
 
@@ -272,4 +249,4 @@ End Sub
 
 # See Also
 
-* [SpreadStreamExportRenderer](%slug winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer%) 
+* [SpreadStreamExportRenderer]({%slug winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer%}) 

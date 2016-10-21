@@ -17,7 +17,7 @@ previous_url: gridview-exporting-data-overview
 
 __RadGridView__ supports several built-in methods for exporting data:
 
-* [SpreadExcelExport]({%slug winforms/gridview/exporting-data/spread-export%}): Available since R3 2014 (version 2014.3.1021). Allows to export to __XSLX, CSV, PDF__ and __TXT__ formats. Supported with .NET 4.0 or newer.
+* [SpreadExcelExport]({%slug winforms/gridview/exporting-data/spread-export%}): Available since R3 2014 (version 2014.3.1021). Allows export to __XSLX, CSV, PDF__ and __TXT__ formats. Supported with .NET 4.0 or newer.
 
 * [SpreadStreemExport]({%slug winforms/gridview/exporting-data/stream-export%}): Does not load the entire document in the memory. Useful for exporting large amount of data. 
 
@@ -29,7 +29,6 @@ __RadGridView__ supports several built-in methods for exporting data:
 
 * [Export to PDF]({%slug winforms/gridview/exporting-data/export-to-pdf%})
 
-You can also RadGridView data to a Telerik Reporting report for printing purposes.
 
 >note As of R1 2012 RadGridView natively supports printing. More information about this feature can be found [here]({%slug winforms/gridview/printing-support%}).
 >

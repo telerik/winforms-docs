@@ -16,7 +16,7 @@ This class exposes methods and events needed to export using the [SpreadStreamEx
 
 ### WorksheetCreated 
 
-Occurs when a new worksheet is created.It is suitable to set the columns width or rows at the document begging or insert cells before the firs column.
+Occurs when a new worksheet is created. It is suitable to set the columns width, add rows at the document begging, or insert cells before the firs column.
 
 >note If this event is used the columns width would not be taken from the grid and you may want to explicitly set it. 
 
@@ -124,4 +124,4 @@ This is suitable place to add and/or modify Excel cell styles. Detailed informat
 
 # See Also
 
-* [SpreadStreamExport](%slug winforms/gridview/exporting-data/stream-export%) 
+* [SpreadStreamExport]({%slug winforms/gridview/exporting-data/stream-export%}) 
