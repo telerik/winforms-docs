@@ -37,19 +37,19 @@ When an item is displayed in __RadCardView__ and the user clicks on the editor o
 
 * The __BeginEdit()__ method is called internally.
 
-* The __ItemEditing__ event is fired. The edit operation can be canceled by setting the *Cancel* event argument to *true*.
+* The __ItemEditing__ event is fired. The edit operation can be canceled by setting the __Cancel__ event argument to *true*.
 
 * A text box editor appears in the selected item.
 
 When an item is brought out of edit mode, the following steps are performed:
 
-* The editor determines if it wants to handle the keystroke - for example Esc - cancels editing, Enter ends editing and submits changes.
+* The editor determines if it will handle the keystroke - for example Esc - cancels editing, Enter ends editing and submits changes.
 
 * The editor instance performs the action it has defined for the __Enter__ key. Typically this indicates that edit mode should be exited and any changes made during the edit session should be saved.
 
 * In response to the action described in the previous step the __EndEdit()__ method is called internally.
 
-* The __ItemValidating__ event allows the user to hook up custom logic for verification. If the __ValueValidating__ event does not succeed (*e.Cancel is true*), __ValidationError__ event is fired to notify all listeners that the validation has failed.
+* The __ItemValidating__ event allows the user to hook up custom logic for verification. If the __ValueValidating__ event does not succeed (__e.Cancel__ is *true*), __ValidationError__ event is fired to notify all listeners that the validation has failed.
 
 * Follows the __ItemValueChanging__ event via which you can cancel assigning a new value to the item.
 
