@@ -896,6 +896,9 @@ navigation:
     spreadprocessing:
         title: SpreadProcessing
         position: 470
+    spreadstreamprocessing:
+        title: SpreadStreamProcessing
+        position: 471
     track-and-status-controls:
         title: Track and Status controls
         position: 480
