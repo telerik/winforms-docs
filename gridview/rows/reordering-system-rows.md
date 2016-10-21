@@ -23,6 +23,8 @@ __RadGridView__ provides out of the box API for reordering its system rows: [Gri
 
 In order to perform system rows reordering, you can use the RadGridView.MasterView.SystemRows.__Move__ method. Required parameters are two indices according to which the row will be reordered, the first one being the old index and second one being the new index. The default order (starting from the top) is:
 
+* __GridViewTableHeaderRowInfo__: 0
+
 * __GridViewNewRowInfo__: 1
 
 * __GridViewFilteringRowInfo__: 2

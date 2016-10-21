@@ -110,6 +110,9 @@ navigation:
     cardview/customizing-appearance:
         title: Customzing Appearance
         position: 6
+    cardview/editors:
+        title: Editors
+        position: 7
     carousel:
         title: Carousel
         position: 100
@@ -798,7 +801,7 @@ navigation:
         title: Localization
         position: 7		
     richtextbox:
-        title: RichTextBox (obsolote)
+        title: RichTextBox (deprecated)
         position: 400
     richtextbox/features:
         title: Features
@@ -826,13 +829,13 @@ navigation:
         position: 5
     richtexteditor/features/styles:
         title: Styles
-        position: 13
+        position: 4
     richtexteditor/features/fields-and-document-variables:
         title: Fields and Document Variables
-        position: 17
+        position: 0
     richtexteditor/features/references:
         title: References
-        position: 18
+        position: 1
     richtexteditor/import:
         title: Import/Export
         position: 6
@@ -902,6 +905,9 @@ navigation:
     spreadprocessing:
         title: SpreadProcessing
         position: 470
+    spreadstreamprocessing:
+        title: SpreadStreamProcessing
+        position: 471
     track-and-status-controls:
         title: Track and Status controls
         position: 480

@@ -5,7 +5,7 @@ description: Watermark
 slug: winforms/richtexteditor-/features/watermark
 tags: watermark
 published: True
-position: 19
+position: 9
 previous_url: richtexteditor-features-watermark
 ---
 

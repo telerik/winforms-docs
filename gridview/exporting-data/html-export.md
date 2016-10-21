@@ -5,7 +5,7 @@ description: Export to HTML
 slug: winforms/gridview/exporting-data/export-to-html
 tags: export,to,html
 published: True
-position: 5
+position: 6
 previous_url: gridview-exporting-data-export-to-html
 ---
 

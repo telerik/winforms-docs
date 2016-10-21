@@ -5,7 +5,7 @@ description: Code Block
 slug: winforms/richtexteditor-/features/code-block
 tags: code,block
 published: True
-position: 20
+position: 9
 previous_url: richtexteditor-features-code-block
 ---
 

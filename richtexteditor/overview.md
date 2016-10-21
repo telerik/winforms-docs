@@ -2,7 +2,7 @@
 title: Overview 
 page_title: RichTextEditor  | UI for WinForms Documentation
 description: RichTextEditor 
-slug: winforms/richtexteditor-
+slug: winforms/richtexteditor
 tags: richtexteditor,
 published: True
 position: 0

@@ -5,7 +5,7 @@ description: Export to PDF
 slug: winforms/gridview/exporting-data/export-to-pdf
 tags: export,to,pdf
 published: True
-position: 6
+position: 7
 previous_url: gridview-exporting-data-export-to-pdf
 ---
 
@@ -23,7 +23,9 @@ __RadGridView__ can export its contents to PDF using two separate mecahnisms.
 * The __ExportToPdf__ object on the other hand first renders __RadGridView__ as an XHTML table and the export process will convert that table to a PDF document. That said, Export to PDF supports all of the ExportToHTML settings, but it also adds some PDF specific ones.
 
 >note The __GridViewPdfExport__ functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in __TelerikExport__ :
-* Telerik.WinControls.Export>The __ExportToPdf__ functionality is located in the __TelerikData.dll__ assembly. <br>You need to include the following amespace in order to access the types contained in __TelerikData__ :
+* Telerik.WinControls.Export
+
+>note The __ExportToPdf__ functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespace in order to access the types contained in __TelerikData__ :
 * Telerik.WinControls.UI.Export
 >
 
