@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview | RadSpreadProcessing
 description: Overview
-slug: radspreadstreamprocessing-overview
+slug: radspreadprocessing-overview
 tags: overview
 published: True
 position: 0
@@ -10,15 +10,12 @@ position: 0
 
 # Overview
 
+>note __RadSpreadProcessing__ is part of the __Telerik Document Processing__ libraries. The full documentation for this component is available at [http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview).
 
->note **RadSpreadStreamProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [http://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamsprocessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview).
-
-
-**RadSpreadStreamProcessing** is a library that allows you create big spreadsheet documents and export them to the most common file formats with a great performance and minimal resources.
+__RadSpreadProcessing__ is a library that allows you create big spreadsheet documents and export them to the most common file formats with a great performance and minimal resources.
 
 Some of the features you can take advantage of are:
 
-- Export to XLSX or CSV files
-- Styling and formatting cells
-- Hidden rows and columns
-- Grouping
+- Import/export to different spreadsheet formats
+- More than 100 built-in formulas
+- Powerful and easy-to-use API

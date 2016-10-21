@@ -5,7 +5,7 @@ description: Commands
 slug: winforms/richtexteditor-/features/commands
 tags: commands
 published: True
-position: 6
+position: 9
 previous_url: richtexteditor-features-commands
 ---
 

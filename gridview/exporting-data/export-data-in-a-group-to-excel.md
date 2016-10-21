@@ -5,7 +5,7 @@ description: Export Data in a Group to Excel
 slug: winforms/gridview/exporting-data/export-data-in-a-group-to-excel
 tags: export,data,in,a,group,to,excel
 published: True
-position: 3
+position: 4
 previous_url: gridview-exporting-data-export-data-in-a-group-to-excel
 ---
 

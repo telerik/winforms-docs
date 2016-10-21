@@ -14,33 +14,43 @@ This article will guide you through the process of converting the Microsoft Wind
 
 >note We strongly recommend you using a source control system like TFS or Git. This will allow you to review the changes and restore to previous version if needed. 
 
-1. Before starting you need to open a solution which contains a project that is using standard Microsoft Winforms controls. This will enable the converter option in the `UI for WinForms menu` item.
+1\. Before starting you need to open a solution which contains a project that is using standard Microsoft Winforms controls. This will enable the converter option in the `UI for WinForms menu` item.
 
-    ![winforms-converter-step-by-step-tutorial001](images/winforms-converter-step-by-step-tutorial001.png)
+![winforms-converter-step-by-step-tutorial001](images/winforms-converter-step-by-step-tutorial001.png)
 
-2. Clicking the menu item will open the following window where you can perform the following actions: 
+2\. Clicking the menu item will open the following window where you can perform the following actions: 
 
-    1\. Select a version - you can choose between all installed versions, including the ones for .NET 2.0 and .NET 4.0.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1\. Select a version - you can choose between all installed versions, including the ones for .NET 2.0 and .NET 4.0.
 
-    2\. Select controls - you can choose which controls you can convert. For this example leave all controls selected. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2\. Select controls - you can choose which controls you can convert. For this example leave all controls selected.  
 
-    3\. The `Convert` button - pressing this button will start the conversion process. Please note that you cannot go back to this window.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3\.1 *Convert whole solution* and *Convert specific files* options - you can control whether to convert the whole application or specify which files exactly to be converted. 
 
-    ![winforms-converter-step-by-step-tutorial002](images/winforms-converter-step-by-step-tutorial002.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3\.2 The `Convert` button - pressing this button will start the conversion process. Please note that you cannot go back to this window.  
 
-3. Press `Convert` and wait until the project is converted. Once the conversion process is complete, the summary dialog will appear. This will allow you to see which files are converted. You can open the generated log as well.
+![winforms-converter-step-by-step-tutorial002](images/winforms-converter-step-by-step-tutorial002.png)
 
-    ![winforms-converter-step-by-step-tutorial003](images/winforms-converter-step-by-step-tutorial003.png)
+3\.1 If you choose the *Convert specific files* option, press `Next`.
+	
+![winforms-converter-step-by-step-tutorial007](images/winforms-converter-step-by-step-tutorial007.png)
 
-    At this step you can compare the old and the converted files. To do that just click the __`What's Changed`__ link in the file list. This will open the files tabs in Visual Studio and you will be able to review the changed code.
+You will be navigated to a step to choose which files to be converted. Then press `Convert`:
+
+![winforms-converter-step-by-step-tutorial008](images/winforms-converter-step-by-step-tutorial008.png)
+
+3\.2 If you choose the *Convert whole solution* option, press `Convert` and wait until the project is converted. Once the conversion process is complete, the summary dialog will appear. This will allow you to see which files are converted. You can open the generated log as well.
+
+![winforms-converter-step-by-step-tutorial003](images/winforms-converter-step-by-step-tutorial003.png)
+
+At this step you can compare the old and the converted files. To do that just click the __`What's Changed`__ link in the file list. This will open the files tabs in Visual Studio and you will be able to review the changed code.
     
-    ![winforms-converter-step-by-step-tutorial004](images/winforms-converter-step-by-step-tutorial004.png)
+![winforms-converter-step-by-step-tutorial004](images/winforms-converter-step-by-step-tutorial004.png)
 
-4. Click `Close` and open the designer in the converted project. You will see that the project and the controls are now converted. The following image shows the application before and after the conversion process.
+4\. Click `Close` and open the designer in the converted project. You will see that the project and the controls are now converted. The following image shows the application before and after the conversion process.
 
-    ![winforms-converter-step-by-step-tutorial005](images/winforms-converter-step-by-step-tutorial005.png)
+![winforms-converter-step-by-step-tutorial005](images/winforms-converter-step-by-step-tutorial005.png)
 
-5. The final step is to resolve any compile time errors. There are properties and methods which do not have analogs in our implementation. Since the converter does not remove the code for these, you will get a compile time error:
+5\. The final step is to resolve any compile time errors. There are properties and methods which do not have analogs in our implementation. Since the converter does not remove the code for these, you will get a compile time error:
     ![winforms-converter-step-by-step-tutorial006](images/winforms-converter-step-by-step-tutorial006.png)
 
 >note After the conversion process is completed, you should check if all existing functionality is working as before.

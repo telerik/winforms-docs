@@ -5,7 +5,7 @@ description: Spellcheck
 slug: winforms/richtexteditor-/features/spellcheck
 tags: spellcheck
 published: True
-position: 7
+position: 9
 previous_url: richtexteditor-features-spellcheck
 ---
 

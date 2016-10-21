@@ -5,7 +5,7 @@ description: RadDocumentEditor
 slug: winforms/richtexteditor-/features/raddocumenteditor
 tags: raddocumenteditor
 published: True
-position: 4
+position: 9
 previous_url: richtexteditor-features-raddocumenteditor
 ---
 

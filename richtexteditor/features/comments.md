@@ -5,7 +5,7 @@ description: Comments
 slug: winforms/richtexteditor-/features/comments
 tags: comments
 published: True
-position: 11
+position: 9
 previous_url: richtexteditor-features-comments
 ---
 
