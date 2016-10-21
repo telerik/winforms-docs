@@ -24,6 +24,7 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesVB\Map\MapLocalization.vb region=LocalizeText}} 
 
 ````C#
+        
 public class EnglishMapLocalizationProvider : Telerik.WinControls.UI.Localization.RadMapLocalizationProvider
 {
     public override string GetLocalizedString(string id)
@@ -75,7 +76,6 @@ Public Class EnglishMapLocalizationProvider
             Case RadMapStringId.NavigationBarShowViewLabels
                 Return "Show labels"
         End Select
-
         Return String.Empty
     End Function
 End Class
@@ -92,11 +92,19 @@ To apply the custom localization provider, instantiate and assign it to the cur
 {{source=..\SamplesVB\Map\MapLocalization.vb region=SetMapLocalization}} 
 
 ````C#
-Telerik.WinControls.UI.Localization.RadMapLocalizationProvider.CurrentProvider = new EnglishMapLocalizationProvider();
+        
+public MapLocalization()
+{
+    Telerik.WinControls.UI.Localization.RadMapLocalizationProvider.CurrentProvider = new EnglishMapLocalizationProvider();
+    InitializeComponent();
+}
 
 ````
 ````VB.NET
-Telerik.WinControls.UI.Localization.RadMapLocalizationProvider.CurrentProvider = New EnglishMapLocalizationProvider()
+Public Sub New()
+    Telerik.WinControls.UI.Localization.RadMapLocalizationProvider.CurrentProvider = New EnglishMapLocalizationProvider()
+    InitializeComponent()
+End Sub
 
 ````
 

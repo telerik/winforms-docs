@@ -24,6 +24,7 @@ You can find below a sample code snippet:
 {{source=..\SamplesVB\Forms And Dialogs\TitleBarHelpButton.vb region=HelpButton}} 
 
 ````C#
+        
 public TitleBarHelpButton()
 {
     InitializeComponent();
@@ -33,7 +34,7 @@ public TitleBarHelpButton()
     this.HelpButtonClicked += ShapedForm1_HelpButtonClicked;
     this.radButton1.HelpRequested += radButton1_HelpRequested;
 }
-
+        
 private void ShapedForm1_HelpButtonClicked(object sender, CancelEventArgs e)
 {
     if (RadMessageBox.Show("Do you need help?", "Confirmation", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No)
@@ -41,7 +42,7 @@ private void ShapedForm1_HelpButtonClicked(object sender, CancelEventArgs e)
         e.Cancel = true;
     }
 }
-
+        
 private void radButton1_HelpRequested(object sender, HelpEventArgs hlpevent)
 {
     RadMessageBox.Show("This is RadButton.");
@@ -57,13 +58,11 @@ Public Sub New()
     AddHandler Me.HelpButtonClicked, AddressOf ShapedForm1_HelpButtonClicked
     AddHandler Me.RadButton1.HelpRequested, AddressOf radButton1_HelpRequested
 End Sub
-
 Private Sub ShapedForm1_HelpButtonClicked(sender As Object, e As CancelEventArgs)
     If RadMessageBox.Show("Do you need help?", "Confirmation", MessageBoxButtons.YesNo) = System.Windows.Forms.DialogResult.No Then
         e.Cancel = True
     End If
 End Sub
-
 Private Sub radButton1_HelpRequested(sender As Object, hlpevent As HelpEventArgs)
     RadMessageBox.Show("This is RadButton.")
 End Sub

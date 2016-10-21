@@ -44,13 +44,12 @@ public BulletGraphCode()
     timer.Interval = 1000;
     timer.Tick += timer_Tick;
     timer.Start();
-        
 }
      
 void timer_Tick(object sender, EventArgs e)
 {
-    radBulletGraph1.FeaturedMeasure = rand.Next(100);
-    radBulletGraph1.ComparativeMeasure = rand.Next(100);
+    this.radBulletGraph1.FeaturedMeasure = rand.Next(100);
+    this.radBulletGraph1.ComparativeMeasure = rand.Next(100);
 }
 
 ````

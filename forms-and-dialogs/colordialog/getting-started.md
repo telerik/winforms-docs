@@ -40,18 +40,18 @@ The following tutorial demonstrates configuring the __RadColorDialog__, localizi
 
 ````C#
 if (radColorDialog1.ShowDialog() == DialogResult.OK)
- {
-	Color color = radColorDialog1.SelectedColor;
-	HslColor hslColor = radColorDialog1.SelectedHslColor;
- }
+{
+    Color color = radColorDialog1.SelectedColor;
+    HslColor hslColor = radColorDialog1.SelectedHslColor;
+}
 
 ````
 ````VB.NET
 If RadColorDialog1.ShowDialog() = DialogResult.OK Then
- Dim color As Color = RadColorDialog1.SelectedColor
- Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor
+    Dim color As Color = RadColorDialog1.SelectedColor
+    Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor
 End If
-	
+
 ````
 
 {{endregion}} 
