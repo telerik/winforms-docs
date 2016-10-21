@@ -11,11 +11,7 @@ previous_url: gridview-save-and-load-layout-overview
 
 # Save and Load Layout Overview
 
-
-
-## 
-
-Save/Load layout functionality gives your applications the opportunity to preserve user grid settings such as column order and restore them later. Those layout settings are written in a xml file.
+Save/Load layout functionality gives your applications the opportunity to preserve user grid settings such as column order and restore them later. Those layout settings are written in a XML file.
 
 Here is a sample demonstrating how you can implement a *Save Layout* button event handler:
 

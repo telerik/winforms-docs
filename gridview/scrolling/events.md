@@ -11,10 +11,6 @@ previous_url: gridview-scrolling-events
 
 # Events
 
-
-
-## 
-
 There are a vertical and a horizontal scroll bar objects for the vertical and horizontal scrollbars respectively. For instance, to subscribe to *ValueChanged* event of the vertical scroll bar use the following code:
 
 #### ScrollBar value changed event
