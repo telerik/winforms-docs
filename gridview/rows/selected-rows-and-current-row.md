@@ -11,8 +11,6 @@ previous_url: gridview-rows-selected-rows-and-current-row
 
 # Selected rows and Current row
 
-
-
 ## IsSelected
 
 The property __IsSelected__ determines whether a row is selected. For example, to select a row programmatically use the following code snippet:
@@ -31,7 +29,7 @@ rowToSelect.IsSelected = True
 
 {{endregion}} 
 
-All *currently* selected rows are included in the __SelectedRows__ collection. If you clear this collection and send an update message to __RadGridView__, this will essentially unselect all rows:
+All currently selected rows are included in the __SelectedRows__ collection. If you clear this collection and send an update message to __RadGridView__, this will essentially unselect all rows:
 
 {{source=..\SamplesCS\GridView\Rows\SelectedRowAndCurrentRow.cs region=unselectAllRows}} 
 {{source=..\SamplesVB\GridView\Rows\SelectedRowAndCurrentRow.vb region=unselectAllRows}} 
@@ -47,14 +45,11 @@ Me.RadGridView1.ClearSelection()
 
 {{endregion}} 
 
-
-
-
 ## IsCurrent
 
-The property __IsCurrent__ determines which row is the current one. There can be only one current row or no current row if IsCurrent is set to null. 
+The property __IsCurrent__ determines which row is the current one. There can be only one current row or no current row if __IsCurrent__ is set to *null*. 
 
-Most themes visualizes it in a similar way to the way selected rows are visualized although technically IsCurrent and IsSelected are independent of one another. __IsCurrent__ functionality is related to the keyboard support.
+Most themes visualizes the current and the selected rows with the same styles although technically __IsCurrent__ and __IsSelected__ are independent of one another. __IsCurrent__ functionality is related to the keyboard support.
 
 Use the following code snippet to remove the current row:
 

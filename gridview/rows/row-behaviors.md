@@ -11,7 +11,6 @@ previous_url: gridview-rows-row-behaviors
 
 # Row behaviors
 
-## 
 
 __RadGridView__ manages user *mouse* and *keyboard* input over its rows by __GridRowBehavior__. Depending on the row type, __RadGridView__ introduces different behaviors, listed on the table below: 
 

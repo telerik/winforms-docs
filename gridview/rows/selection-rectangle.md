@@ -11,13 +11,9 @@ previous_url: gridview-rows-selection-rectangle
 
 # Selection Rectangle
 
-## 
-
-Rows in RadGridView can be selected by a translucent rectangle selection. You should set the __MultiSelect__ property to *true and* this will automatically enable the rectangle selection. The user just needs to perform a mouse drag operation on RadGridView. A translucent rectangle will be created to indicate the possible selection of rows or cells.
+The Rows in RadGridView can be selected by a translucent rectangle selection. You should set the __MultiSelect__ property to *true* and this will automatically enable the rectangle selection. The user just needs to perform a mouse drag operation on RadGridView. A translucent rectangle will be created to indicate the possible selection of rows or cells.
 
 ![gridview-rows-selection-rectangle 001](images/gridview-rows-selection-rectangle001.png)
-
-
 
 Use the __ShowTranslucentSelectionRecatangle__ of the __GridTableElement__ to enable or disable the selection rectangle:
 

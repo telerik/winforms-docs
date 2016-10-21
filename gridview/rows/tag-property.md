@@ -11,7 +11,7 @@ previous_url: gridview-rows-tag-property
 
 # Tag property
 
-Each row has a *Tag* property associated with it of type object where you can store a custom object.
+Each row has a __Tag__ property of type object where you can store a custom object.
 
 #### Setting the Tag property of a row 
 

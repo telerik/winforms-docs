@@ -110,10 +110,7 @@ End Sub
 
 ## Iterating all rows in a hierarchical RadGridView
 
-When you have a hierarchical grid with many templates you can use a recursive method to iterate trough all rows:#_[C#]_
-
-	
-
+When you have a hierarchical grid with many templates you can use a recursive method to iterate trough all rows:
 
 
 {{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=hierarchy}} 
@@ -150,7 +147,8 @@ End Sub
 ## Iterating hierarchical rows
 
 You can iterate through grid rows using the __Rows__ collection of __RadGridView__ objects. The example below cycles through the rows of the grid, modifies the values for certain cells in the different hierarchy levels and counts the rows and cells in the whole RadGridView.
->caption Figure 1.RadGridView Rows Changed
+
+>caption Figure 1: RadGridView Rows Changed
 
 ![gridview-iterating-hierarchy-rows 001](images/gridview-iterating-hierarchy-rows001.png)
 

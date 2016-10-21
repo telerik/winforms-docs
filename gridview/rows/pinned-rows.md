@@ -11,9 +11,7 @@ previous_url: gridview-rows-pinned-rows
 
 # Pinned Rows
 
-
-
-RadGridView rows can be pinned so that the rows appear anchored to the top or bottom of the grid. To pin a particular row, set the row PinPosition to one of the enumerated options -PinnedRowPosition.Bottom or PinnedRowPosition.Top:
+RadGridView rows can be pinned so that the rows appear anchored to the top or bottom of the grid. To pin a particular row, set the row __PinPosition__ to one of the enumerated options -PinnedRowPosition.__Bottom__ or PinnedRowPosition.__Top__:
 
 {{source=..\SamplesCS\GridView\Rows\PinnedRows.cs region=pinnedRows}} 
 {{source=..\SamplesVB\GridView\Rows\PinnedRows.vb region=pinnedRows}} 
@@ -31,13 +29,9 @@ RadGridView1.Rows(4).PinPosition = PinnedRowPosition.Top
 
 {{endregion}} 
 
+By using this code the __IsPinned__ property automatically gets a value true for the desired row.
 
-
-
-By using this code the IsPinned property automatically gets a value true for the desired row.
-    
-
-Another way of pinning a row is to set directly the IsPinned property of a Rows collection item to True. Please note that doing so will pin the row to the top of RadGridView.
+Another way of pinning a row is to set directly the __IsPinned__ property of a Rows collection item to True. Please note that doing so will pin the row to the top of RadGridView.
 
 {{source=..\SamplesCS\GridView\Rows\PinnedRows.cs region=isPinned}} 
 {{source=..\SamplesVB\GridView\Rows\PinnedRows.vb region=isPinned}} 
@@ -52,9 +46,6 @@ RadGridView1.Rows(3).IsPinned = True
 ````
 
 {{endregion}} 
-
-
-
 
 The example below shows pinning all selected rows in the grid:
 
@@ -77,12 +68,7 @@ Next
 
 {{endregion}} 
 
-
-
-
-## 
-
-__RadGridView__ rows can be pinned so that the rows appear anchored to the top of the grid. To pin a particular row, set the __IsPinned__ property of a __Rows__ collection item to __True__.
+__RadGridView__ rows can be pinned so that the rows appear anchored to the top of the grid. To pin a particular row, set the __IsPinned__ property of a __Rows__ collection item to  *true*.
 
 The example below shows pinning rows in the grid.<br> ![gridview-rows-pinned-rows 002](images/gridview-rows-pinned-rows002.png)
 

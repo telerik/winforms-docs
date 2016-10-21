@@ -11,12 +11,12 @@ previous_url: gridview-rows-reordering-system-rows
 
 # Reordering System Rows
 
-__RadGridView__ provides out of the box API for reordering its system rows: [GridFilterRowElement]({%slug winforms/gridview/filtering/filtering-row%}), [GridSearchRowElement]({%slug winforms/gridview/rows/search-row%}), [GridNewRowElement]({%slug winforms/gridview/rows/new-row%}). The screenshots below illustrate __RadGridView__ before and after the reordering operation.
+__RadGridView__ provides out of the box API for reordering its system rows: [GridFilterRowElement]({%slug winforms/gridview/filtering/filtering-row%}), [GridSearchRowElement]({%slug winforms/gridview/rows/search-row%}), [GridNewRowElement]({%slug winforms/gridview/rows/new-row%}). The figures below illustrate __RadGridView__ before and after the reordering operation.
 
-## 
 >caption Fig.1 Default Order
 
 ![gridview-rows-reordering-system-rows 001](images/gridview-rows-reordering-system-rows001.png)
+
 >caption Fig.2 Reordered Rows
 
 ![gridview-rows-reordering-system-rows 002](images/gridview-rows-reordering-system-rows002.png)

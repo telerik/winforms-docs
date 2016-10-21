@@ -11,9 +11,9 @@ previous_url: gridview-rows-new-row
 
 # New Row
 
+RadGridView provides the end-users with a special row that allows them to add a new data row. For brevity, we will call this row "new row". The following sections describe useful events and properties which will allow you to achieve different scenarios related to the new row.
 
-
-RadGridView provides the end-users with a special row that allows them to add a new data row. For brevity, we will call this row "new row". The following sections describe useful events and properties which will allow you to achieve different scenarios related to the new row.<br>![gridview-rows-new-row 005](images/gridview-rows-new-row005.png)
+![gridview-rows-new-row 005](images/gridview-rows-new-row005.png)
 
 ## Enabling the New Row
 
@@ -33,7 +33,7 @@ Me.RadGridView1.AllowAddNewRow = True
 
 {{endregion}} 
 
-If you want to hide the new row, just set the __AllowAddNewRow__ to *false* and RadGridView will look as shown below:
+If you want to hide the `New Row`, just set the __AllowAddNewRow__ to *false* and RadGridView will look as shown below:
 
 {{source=..\SamplesCS\GridView\Rows\NewRow.cs region=disablingNewRow}} 
 {{source=..\SamplesVB\GridView\Rows\NewRow.vb region=disablingNewRow}} 
@@ -74,7 +74,7 @@ Me.RadGridView1.MasterTemplate.Templates(0).NewRowText = "Click here to add a ne
 
 ## New Row position
 
-The new row can be pinned to top or bottom. By default, the new row is pinned to top. You can explicitly set its position to top by setting the __AddNewRowPosition__ to *Top*:
+The `New Row` can be pinned to top or bottom. By default, the new row is pinned to top. You can explicitly set its position to top by setting the __AddNewRowPosition__ to *Top*:
 
 {{source=..\SamplesCS\GridView\Rows\NewRow.cs region=positionTop}} 
 {{source=..\SamplesVB\GridView\Rows\NewRow.vb region=positionTop}} 
@@ -114,7 +114,7 @@ Me.RadGridView1.AddNewRowPosition = SystemRowPosition.Bottom
 
 ## Accessing the new row
 
-If you, for some reason, want to access the New Row, you can do it by getting the __TableAddNewRow__ object from the *view* you are in. Let's say that you want to programmatically make the New Row current. Here is how to do that for the main view:
+If you, for some reason, want to access the `New Row`, you can do it by getting the __TableAddNewRow__ object from the *view* you are in. Let's say that you want to programmatically make the `New Row` current. Here is how to do that for the main view:
 
 {{source=..\SamplesCS\GridView\Rows\NewRow.cs region=makingNewRowCurrent}} 
 {{source=..\SamplesVB\GridView\Rows\NewRow.vb region=makingNewRowCurrent}} 
@@ -130,13 +130,7 @@ Me.RadGridView1.CurrentRow = Me.RadGridView1.MasterView.TableAddNewRow
 
 {{endregion}} 
 
-
-
-
-In case your RadGridView is data-bound, it will try to set the CurrentRow to the first data row after it is filled with data.
-          Therefore, you have to set the CurrentRow to TableAddNewRow after you bind the grid (after the Fill call of the TableAdapter in case
-          you are following the ADO.NET approach for data-binding).
-        
+In case your RadGridView is data-bound, it will try to set the CurrentRow to the first data row after it is filled with data.Therefore, you have to set the CurrentRow to TableAddNewRow after you bind the grid (after the Fill call of the TableAdapter in case you are following the ADO.NET approach for data-binding).
 
 ## DefaultValuesNeeded event
 
@@ -165,14 +159,13 @@ End Sub
 
 {{endregion}} 
 
+As a result, when the end-user clicks the new row, the following values will be filled in for him:
 
-
-
-As a result, when the end-user clicks the new row to add a new row, the following values will be filled in for him:<br> ![gridview-rows-new-row 001](images/gridview-rows-new-row001.png)
+![gridview-rows-new-row 001](images/gridview-rows-new-row001.png)
 
 ## Adding rows to the underlying data source
 
-In some cases, you may need RadGridView to create a record in the underlying data source after the end-user commits the new row. In other cases, you may want to have a new record created immediately after the end-user starts editing the new row. RadGridView supports both modes. The behavior of RadGridView in this situation is determined by the __AddNewBoundRowBeforeEdit__ property:
+In some cases, you may need RadGridView to create a record in the underlying data source after the end-user commits the new row. In other cases, you may want to have a new record created immediately after the end-user starts editing the new row. RadGridView supports both modes. The behavior of RadGridView in this situation is determined by the __AddNewBoundRowBeforeEdit__property:
 
 {{source=..\SamplesCS\GridView\Rows\NewRow.cs region=addNewBoundRowBeforeEdit}} 
 {{source=..\SamplesVB\GridView\Rows\NewRow.vb region=addNewBoundRowBeforeEdit}} 
@@ -190,14 +183,14 @@ Me.RadGridView1.MasterTemplate.AddNewBoundRowBeforeEdit = True
 
 As you can see in the code snippet above, __AddNewBoundRowBeforeEdit__ is a boolean property and here is what RadGridView does depending on its values:
 
-* __False__: RadGridView creates a new record in the underlying data source only after the new row is committed (validated). This is the default behavior.            
+* __False:__ RadGridView creates a new record in the underlying data source only after the new row is committed (validated). This is the default behavior.            
 
-* __True__: RadGridView creates a new record in the underlying data source right after the end-user starts editing the new row. If the end-user presses Escape to cancel the editing operation of the new row and goes to another row, the newly created record is deleted.
+* __True:__ RadGridView creates a new record in the underlying data source right after the end-user starts editing the new row. If the end-user presses Escape to cancel the editing operation of the new row and goes to another row, the newly created record is deleted.
             
 
 ## Enter key mode
 
-The Enter key may behave differently in the new row depending on the value of the __NewRowEnterKeyMode__ property. By default, when the end-user presses Enter while being in the new row, the new row is committed, and the row next to the new row becomes current. Here is how the default value can be set explicitly:
+The `Enter` key may behave differently in the new row depending on the value of the __NewRowEnterKeyMode__ property. By default, when the end-user presses `Enter` while being in the new row, the new row is committed, and the row next to the new row becomes current. Here is how the default value can be set explicitly:
 
 {{source=..\SamplesCS\GridView\Rows\NewRow.cs region=enterMovesToNextRow}} 
 {{source=..\SamplesVB\GridView\Rows\NewRow.vb region=enterMovesToNextRow}} 
@@ -261,9 +254,6 @@ End Sub
 ````
 
 {{endregion}} 
-
-
-
 
 __UserAddedRow__ This event comes in handy when you want to update your data base right after the end-user has added a new row. Assuming that we are following the standard ADO.NET approach (DataTable\TableAdapter), in the following example we take the row that the end-user has just added, and we process it to the data base, by passing the row to the Update method of the TableAdapter:
 
