@@ -1,7 +1,7 @@
 ---
 title: Viewer Modes
-page_title: Viewer Modes | UI for WinForms Documentation
-description: Viewer Modes
+page_title: Viewer Modes | RadPdfViewer
+description: There are three FixedDocumentViewerModes which specify the behavior of RadPdfViewer.
 slug: winforms/pdfviewer/ui/viewer-modes
 tags: viewer modes
 published: True

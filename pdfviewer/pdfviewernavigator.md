@@ -1,11 +1,11 @@
 ---
 title: PdfViewerNavigator
-page_title: PdfViewerNavigator | UI for WinForms Documentation
-description: PdfViewerNavigator
+page_title: PdfViewerNavigator | RadPdfViewer
+description: PdfViewerNavigator can be added associated witha a RadPdfViewer control to provide a predefined UI for the most common end user operations. 
 slug: winforms/pdfviewer/pdfviewernavigator
 tags: pdfviewernavigator
 published: True
-position: 6
+position: 7
 previous_url: pdfviewer-pdfviewernavigator
 ---
 

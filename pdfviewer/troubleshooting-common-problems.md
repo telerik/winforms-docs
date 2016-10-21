@@ -1,11 +1,11 @@
 ---
 title: Troubleshooting Common Problems
-page_title: Troubleshooting Common Problems | UI for WinForms Documentation
-description: Troubleshooting Common Problems
+page_title: Troubleshooting Common Problems | RadPdfViewer
+description: This article describes common problems that can be encountered when using RadPdfViewer and their solutions.
 slug: winforms/pdfviewer/troubleshooting-common-problems
 tags: troubleshooting
 published: True
-position: 15 
+position: 12
 ---
 
 # Troubleshooting Common Problems

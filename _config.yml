@@ -721,19 +721,16 @@ navigation:
         position: 350
     pdfviewer/features:
         title: Features
-        position: 3	
+        position: 5	
     pdfviewer/features/text:
         title: Text Manipulation
-        position: 3	
-    pdfviewer/text:
-        title: Text
-        position: 5	
+        position: 3
     pdfviewer/ui:
         title: UI
-        position: 6	
+        position: 8	
     pdfviewer/customize-and-extensibility:
         title: Customize and Extensibility
-        position: 7			
+        position: 9			
     pivotgrid:
         title: PivotGrid 
         position: 360

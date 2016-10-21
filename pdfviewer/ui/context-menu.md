@@ -1,7 +1,7 @@
 ---
 title: Context Menu
-page_title: Context Menu | UI for WinForms Documentation
-description: Context Menu
+page_title: Context Menu | RadPdfViewer
+description: RadPdfViewer has a default context menu - __PdfViewerContextMenu__ which provides a quick way of performing a number of commands.
 slug: winforms/pdfviewer/ui/context-menu
 tags: context menu
 published: True

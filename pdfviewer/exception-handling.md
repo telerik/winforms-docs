@@ -1,11 +1,11 @@
 ---
 title: Exception Handling
-page_title: Exception Handling | UI for WinForms Documentation
-description: Exception Handling
+page_title: Exception Handling | RadPdfViewer
+description: RadPdfViewer provides an API for handling exceptions caused by documents which cannot be loaded correctly because of unsupported features of the control.
 slug: winforms/pdfviewer/exception-handling
 tags: exception,handling
 published: True
-position: 9
+position: 10
 previous_url: pdfviewer-exception-handling
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Thumbnails
-page_title: Thumbnails | UI for WinForms Documentation
-description: Thumbnails
+page_title: Thumbnails | RadPdfViewer
+description: RadPdfViewer providers options to display the pdf pages as thumbnails for easier navigation.
 slug: winforms/pdfviewer/thumbnails
 tags: thumbnails
 published: True
@@ -11,7 +11,7 @@ previous_url: pdfviewer-thumbnails
 
 # Thumbnails
 
-RadPdfViewer providers options to display the pdf pages as thumbnails for easier navigation.
+__RadPdfViewer__ providers options to display the pdf pages as thumbnails for easier navigation.
 
 ![pdfviewer-thumbnails 001](images/pdfviewer-thumbnails001.png)
 

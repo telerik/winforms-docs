@@ -1,7 +1,7 @@
 ---
 title: Unsupported features
-page_title: Unsupported features | UI for WinForms Documentation
-description: Unsupported features
+page_title: Unsupported features | RadPdfViewer 
+description: This article list some of the unsupported features.
 slug: winforms/pdfviewer/unsupported-features
 tags: unsupported,features
 published: True

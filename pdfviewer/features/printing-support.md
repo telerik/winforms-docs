@@ -1,7 +1,7 @@
 ---
 title: Printing support
-page_title: Printing support | UI for WinForms Documentation
-description: Printing support
+page_title: Printing support | RadPdfViewer
+description: This article demonstrates how RadPdfViewer can be printed. 
 slug: winforms/pdfviewer/printing-support
 tags: printing,support
 published: True
@@ -11,9 +11,7 @@ previous_url: pdfviewer-printing-support
 
 # Printing support
 
-## 
-
-RadPdfViewer can be used with [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}) just as any other control that supports printing – drag a __RadPrintDocument__ to the form and set the __Printed Object__ to the desired viewer. <br>![pdfviewer-printing-support](images/pdfviewer-printing-support.png)
+RadPdfViewer can be used with [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}) just as any other control that supports printing – drag a __RadPrintDocument__ to the form and set the __Printed Object__ to the desired viewer. <br>![pdfviewer-printing-support](images/pdfviewer-printing-support001.png)
 
 As such, RadPdfViewer allows you to benefit from the features that RadPrintDocument provides: header, footer, watermark, preview and settings dialogs.
 

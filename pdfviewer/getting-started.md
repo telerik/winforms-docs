@@ -1,11 +1,11 @@
 ---
 title: Getting started
-page_title: Getting started | UI for WinForms Documentation
-description: Getting started
+page_title: Getting started | RadPdfViewer
+description: RadPdfViewer enables you to easily load and display PDF documents natively in your app without using any third-party tools except Telerik’s WinForms toolbox.
 slug: winforms/pdfviewer/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 2
 previous_url: pdfviewer-getting-started
 ---
 

@@ -1,17 +1,15 @@
 ---
 title: Structure
 page_title: Structure | UI for WinForms Documentation
-description: Structure
+description: This article describes the visual as well as logical structure of the control.
 slug: winforms/pdfviewer/structure
 tags: structure
 published: True
-position: 2
+position: 1
 previous_url: pdfviewer-structure
 ---
 
 # Structure
-
-
 
 ## Document model
 

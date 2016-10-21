@@ -1,7 +1,7 @@
 ---
 title: Document Modes
-page_title: Document Modes | UI for WinForms Documentation
-description: Document Modes
+page_title: Document Modes | RadPdfViewer
+description: The document modes are controlled by a document presenter responsible for displaying the pages of the document.
 slug: winforms/pdfviewer/ui/document-modes
 tags: document presenters
 published: True

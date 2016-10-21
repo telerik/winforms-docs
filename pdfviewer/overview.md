@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: PdfViewer | UI for WinForms Documentation
-description: PdfViewer
+page_title: PdfViewer | RadPdfViewer
+description: RadPdfViewer enables you to easily load and display PDF documents natively in your application without using any third-party tools except Telerik’s WinForms toolbox.
 slug: winforms/pdfviewer
 tags: pdfviewer
 published: True
@@ -10,9 +10,6 @@ previous_url: pdfviewer-overview, pdfviewer-manipulating-programatically
 ---
 
 # PdfViewer
-
-
-
 
 | RELATED VIDEOS |  |
 | ------ | --- |

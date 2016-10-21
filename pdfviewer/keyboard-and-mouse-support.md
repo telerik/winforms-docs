@@ -1,11 +1,11 @@
 ---
 title: Keyboard and mouse support
-page_title: Keyboard and mouse support | UI for WinForms Documentation
-description: Keyboard and mouse support
+page_title: Keyboard and mouse support | RadPdfViewer
+description: RadPdfViewer supports a set of predefined input commands.
 slug: winforms/pdfviewer/keyboard-and-mouse-support
 tags: keyboard,and,mouse,support
 published: True
-position: 5
+position: 6
 previous_url: pdfviewer-keyboard-and-mouse-support
 ---
 
