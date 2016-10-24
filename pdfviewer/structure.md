@@ -11,21 +11,23 @@ previous_url: pdfviewer-structure
 
 # Structure
 
+This article describes the logical and visual structure of __RadPdfViewer__.
+
 ## Document model
 
 ### RadFixedDocument
 
 When __LoadDocument__ finishes loading a document, a new RadFixedDocument instance is created. RadFixedDocument represent logically a single PDF document. The members that RadFixedDocument exposes are:
 
-* __Pages__ - a collection of __RadFixedPage__ items created for the current document in the viewer.
+* __Pages__: A collection of __RadFixedPage__ items created for the current document in the viewer.
 
-* __Selection__ - information about the current selection in the document.
+* __Selection__: Information about the current selection in the document.
 
-* __Annotations__ - a collection of all annotations (such as links) in the current document.
+* __Annotations__: A collection of all annotations (such as links) in the current document.
 
-* __Destinations__ - a collection of all destinations (roughly said “bookmarks”) in the document that have links to them.
+* __Destinations__: A collection of all destinations (roughly said “bookmarks”) in the document that have links to them.
 
-* __CaretPosition__ – the current position of the caret.
+* __CaretPosition__: The current position of the caret.
 
 ### RadFixedPage
 
@@ -33,18 +35,35 @@ RadFixedPage represents logically a single page of a document. The __Pages__ col
 
 ## Element structure
 
-RadPdfViewer has the following element structure:
+__RadPdfViewer__ has the following element structure:
 
-* __RadPdfViewerElement__ – represents the main element of the control. Provides rich API for different document manipulations
+>caption Figure 1: RadPdfViewer`s Element Hierarchy
+![pdfviewer structure 001](images/pdfviewer-structure001.png)
 
-  * __PdfViewerStackContainer__ – represents a virtualized container for __RadFixedPageElements__.
+>caption Figure 2: RadPdfViewer`s Structure
+![pdfviewer structure 002](images/pdfviewer-structure002.png)
 
-    * __RadFixedPageElement__– displays a single page of a document, the current selection, the caret, and any annotation highlights. These elements are virtualized.
+1. __RadPdfViewerContainer__: Container element.
 
-    * ...more pages
+1. __RadPdfViewerElement__: Main UI element responsible for dispaying the pages.
 
-  * __RadScrollBarElement__ – represents the horizontal scroll which allows you to pan and scroll the document horizontally.
+1. __RadFixedPageElement__: Represents an element which displays a single PDF page.
 
-  * __RadScrollBarElement__ - represents the vertical scroll which allows you to pan and scroll the document vertically.
+1. __RadScrollBarElement__: Elements representing the horizontal or vertical scroll which allows you to pan and scroll the document.
 
-  * __RadWaitingBarElement__ – represents the waiting indicator which is only visible while loading a document.
+1. __ThumbnailListElement__: Main UI element holding the page thumbnails.
+
+1. __ThumbnailListHeaderElement__: Header element.
+
+1. __RadLabelElement__: Displays a title.
+
+1. __RadButtonElement__: Button element responsible for showing or hiding the thumbnails.
+
+* __PdfViewerStackContainer__: Represents a virtualized container for __RadFixedPageElements__.
+
+* __RadWaitingBarElement__: Waiting indicator which is only visible while loading a document.
+
+## See Also
+
+* [Smart Tag]({%slug winforms/gauges/lineargauge/design-time%})
+* [Getting Started]({%slug winforms/gauges/lineargauge/getting-started%})
