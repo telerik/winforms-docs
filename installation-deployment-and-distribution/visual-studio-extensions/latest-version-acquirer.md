@@ -11,8 +11,6 @@ previous_url: installation-deployment-and-distribution-vsx-automatic-latest-vers
 
 # Download New Version
 
-##
-
 With the Telerik Visual Studio Extensions you keep your projects in an up-to-date state. The __Latest Version Acquirer__ tool automatically retrieves the freshest Telerik UI for WinForms distribution, available on the Telerik website. Running the [Upgrade Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%}) as a next step makes the task of latest Telerik UI for WinForms package utilization extremely easy.
 
 When a solution containing an UI for WinForms project is loaded in Visual Studio, the Telerik WinForms VSExtension checks the Telerik website for a new version of Telerik UI for WinForms. A dialog gets displayed when a new version is available:

@@ -11,8 +11,6 @@ previous_url: installation-deployment-and-distribution-vsx-options-dialog,/devto
 
 # Options
 
-##
-
 The __Visual Studio Extensions__ options dialog provides settings, so you can configure the Telerik Visual Studio Extensions to best suit your needs.
 
 It can be accessed through the __Visual Studio | Telerik | VSExtensions Options…__
