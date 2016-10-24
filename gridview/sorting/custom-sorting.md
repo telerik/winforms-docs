@@ -11,12 +11,9 @@ previous_url: gridview-sorting-custom-sorting
 
 # Custom Sorting
 
-
-
 Custom sorting is a flexible mechanism for sorting RadGridView rows using custom logic. It has a higher priority than the applied __SortDescriptors__ (added either by code or by clicking the header row).
 
-Custom sorting is applied if user sorting is enabled by the __RadGridView.EnableSorting__ or  __GridViewTemplate.EnableSorting__properties. By default, sorting is enabled at all levels.
-      
+Custom sorting is applied if user sorting is enabled by the __EnableSorting__ or  __GridViewTemplate.EnableSorting__properties. By default, sorting is enabled at all levels.
 
 RadGridView provides two mechanisms for custom sorting:
 
@@ -26,17 +23,17 @@ RadGridView provides two mechanisms for custom sorting:
 
 ## Using the CustomSorting event
 
-The CustomSorting event is fired if custom sorting is enabled. The arguments of the event provide the following properties:
+The __CustomSorting__ event is fired if custom sorting is enabled. The arguments of the event provide the following properties:
 
-* __Template__ – the template that holds the rows which are going to be sorted 
+* __Template:__ The template that holds the rows which are going to be sorted.
 
-* __Row1, Row2__ – the rows to be compared
+* __Row1, Row2:__ The rows to be compared.
 
-* __SortResult__ – returns negative value when Row1 is before Row2, positive value if Row1 is after Row2 and zero if the rows are have equal values in a specified column.
+* __SortResult:__ returns negative value when `Row1` is before `Row2`, positive value if `Row1` is after `Row2` and zero if the rows are have equal values in a specified column.
 
-* __Handled__ – defines if the comparison of the two rows is processed by the custom algorithm or by the applied sort descriptors.
+* __Handled:__ defines if the comparison of the two rows is processed by the custom algorithm or by the applied sort descriptors.
 
-The following example demonstrates how to handle the __CustomSorting__ event sorting the RadGridView rows ascending by the values of the Freight column. The defined __SortOrder__ for the Freight column in this example assumes that rows sorting is not applied. All RadGridView rows are processed by the custom logic.
+The following example demonstrates how to handle the __CustomSorting__ event sorting the RadGridView rows ascending by the values of the `Freight` column. The defined __SortOrder__ for the `Freight` column in this example assumes that rows sorting is not applied. All RadGridView rows are processed by the custom logic.
 
 {{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingCustomSorting}} 
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingCustomSorting}} 
@@ -97,7 +94,7 @@ End Sub
 
 ![gridview-sorting-custom-sorting 001](images/gridview-sorting-custom-sorting001.png)
 
-The following example demonstrates the usage of the __Handled__ property of the __CustomSorting__ event arguments. It uses custom sorting to sort the rows ascending by the values of the Freight column. This sorting is applied to the rows that have a value in the Freight column greater than "0.33". The rest are handled by the defined __SortDescriptor__ and sorted descending by the values of the Freight column.
+The following example demonstrates the usage of the __Handled__ property of the __CustomSorting__ event arguments. It uses custom sorting to sort the rows ascending by the values of the `Freight` column. This sorting is applied to the rows that have a value in the `Freight` column greater than "0.33". The rest are handled by the defined __SortDescriptor__ and sorted descending by the values of the `Freight` column.
 
 {{source=..\SamplesCS\GridView\Sorting\CustomSorting1.cs region=usingCustomSortingPlusHandled}} 
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting1.vb region=usingCustomSortingPlusHandled}} 
@@ -171,7 +168,7 @@ End Sub
 
 You can replace the sorting mechanism in RadGridView with a custom one by setting the __SortComparer__ of the __GridViewTemplate__.
 
-The following example demonstrates how to use a custom sorting mechanism in RadGridView to sort the RadGridView rows ascending by the length of the ShipCity column:
+The following example demonstrates how to use a custom sorting mechanism in RadGridView to sort the RadGridView rows ascending by the length of the `ShipCity` column:
 
 {{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingSortComparer}} 
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingSortComparer}} 

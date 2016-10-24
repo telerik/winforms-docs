@@ -11,10 +11,6 @@ previous_url: gridview-styling-and-appearance-using-themes-with-radgridview
 
 # Using Themes with RadGridView
 
-
-
-## 
-
 Use the __ThemeName__ property to select a theme to alter the visual style for the entire grid. You can design your own themes using Visual Style Builder or select from one of the predefined themes: 
 
 ControlDefault<br>![gridview-styling-and-appearance-using-themes-with-radgridview 001](images/gridview-styling-and-appearance-using-themes-with-radgridview001.png)

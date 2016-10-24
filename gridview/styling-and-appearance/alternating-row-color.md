@@ -11,13 +11,9 @@ previous_url: gridview-styling-and-appearance-alternating-row-color
 
 # Alternating Row Color
 
-
-
-## 
-
 RadGridView supports alternating row color mode which allows you to easily distinguish one row from another.
 
-In order to enable the feature, you should set the EnableAlternatingRowColor property to true:
+In order to enable the feature, you should set the __EnableAlternatingRowColor__ property to *true*:
 
 #### Enable alternating row color
 
@@ -35,7 +31,7 @@ Me.RadGridView1.EnableAlternatingRowColor = True
 
 {{endregion}} 
 
-In order to change the default alternating row color, set the AlternatingRowColor property:
+In order to change the default alternating row color, set the __AlternatingRowColor__ property:
 
 #### Changing the alternating row color
 
@@ -53,4 +49,6 @@ CType(Me.RadGridView1.TableElement, GridTableElement).AlternatingRowColor = Colo
 
 {{endregion}} 
 
-The result is shown on the screenshot below:<br>![](images/gridview-styling-and-appearance-alternating-row-color.png)
+The result is shown on the screenshot below:
+
+![gridview-styling-and-appearance-alternating-row-color](images/gridview-styling-and-appearance-alternating-row-color.png)

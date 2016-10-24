@@ -13,7 +13,7 @@ previous_url: gridview-sorting-sorting-expressions
 
 ## Overview
 
-The __SortDescriptors__ Collection exposes the __Expression__ property which is used to create flexible sorting conditions. Expression is a string that contains the column name followed by "ASC" (ascending) or "DESC" (descending). Columns are sorted ascending by default. Multiple columns can be separated by commas.
+The __SortDescriptors__ collection exposes the __Expression__ property which is used to create flexible sorting conditions. Expression is a string that contains the column name followed by "ASC" (ascending) or "DESC" (descending). The columns are sorted ascending by default. Multiple columns can be separated by commas.
 
 ## Creating expressions
 

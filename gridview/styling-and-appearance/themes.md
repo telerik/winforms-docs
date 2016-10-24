@@ -11,8 +11,6 @@ previous_url: gridview-styling-and-appearance-themes
 
 # Themes
 
-
-
 RadGridView is built on top of the Telerik Presentation Framework and enables easy styling without writing any code. It ships with a set of predefined themes that you can easily use in your application as demonstrated [here]({%slug winforms/themes/using-default-themes%}).
 
 The built-in themes are:

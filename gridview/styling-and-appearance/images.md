@@ -11,17 +11,15 @@ previous_url: gridview-styling-and-appearance-changing-the-currentrow-indicator
 
 # Images
 
-
-
 RadGridView displays several images to indicate the status of a row:
 
-* __CurrentRowHeaderImage__ - image to indicate the current row
+* __CurrentRowHeaderImage:__ Image to indicate the current row.
 
-* __EditRowHeaderImage__ - image to indicate when RadGridView is in edit mode
+* __EditRowHeaderImage:__ Image to indicate when RadGridView is in edit mode.
 
-* __ErrorRowHeaderImage__ - image to indicate an error caused on validation
+* __ErrorRowHeaderImage:__ Image to indicate an error caused on validation.
 
-* __NewRowHeaderImage__  - image to indicate the new row
+* __NewRowHeaderImage:__ Image to indicate the new row.
 
 ## Changing the images programmatically
 
