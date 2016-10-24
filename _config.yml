@@ -821,6 +821,9 @@ navigation:
     richtexteditor/features/styles:
         title: Styles
         position: 4
+    richtexteditor/features/merge-documents:
+        title: Merge Documents
+        position: 3
     richtexteditor/features/fields-and-document-variables:
         title: Fields and Document Variables
         position: 0
