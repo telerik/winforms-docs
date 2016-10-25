@@ -31,16 +31,32 @@ Along with the [RadDocument]({%slug winforms/richtexteditor-/document-elements/r
 InsertDocumentOptions insertOptions = new InsertDocumentOptions();
 insertOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.UseTargetStyle;
 insertOptions.InsertLastParagraphMarker = false;
-
-merger.InsertDocument(sourceDocument, insertOptions);  
+merger.InsertDocument(sourceDocument, insertOptions);
 
 ````
 ````VB.NET
- Dim insertOptions As New InsertDocumentOptions()
+Dim insertOptions As New InsertDocumentOptions()
 insertOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.UseTargetStyle
 insertOptions.InsertLastParagraphMarker = False
-
 merger.InsertDocument(sourceDocument, insertOptions)
+'#End Region
+Me.radRichTextEditor1.Document = documentMerger.Document
+End Sub
+'#region commands
+Private Sub Main_Load(ByVal sender As Object, ByVal e As EventArgs)
+AddHandler radRichTextEditor1.Commands.ToggleBoldCommand.ToggleStateChanged, AddressOf ToggleBoldCommand_ToggleStateChanged
+AddHandler radRichTextEditor1.Commands.ToggleItalicCommand.ToggleStateChanged, AddressOf ToggleItalicCommand_ToggleStateChanged
+AddHandler radRichTextEditor1.Commands.ToggleUnderlineCommand.ToggleStateChanged, AddressOf ToggleUnderlineCommand_ToggleStateChanged
+End Sub
+Private Sub ToggleBoldCommand_ToggleStateChanged(ByVal sender As Object, ByVal e As Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))
+Me.BoldButton.IsChecked = e.NewValue
+End Sub
+Private Sub ToggleUnderlineCommand_ToggleStateChanged(ByVal sender As Object, ByVal e As Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))
+Me.UnderlineButton.IsChecked = e.NewValue
+End Sub
+Private Sub ToggleItalicCommand_ToggleStateChanged(ByVal sender As Object, ByVal e As Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))
+Me.ItalicButton.IsChecked = e.NewValue
+End Sub
 
 ````
 

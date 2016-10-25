@@ -45,12 +45,11 @@ The overloads of the __AppendDocument()__ method allow you to pass a parameter o
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=cs-radrichtextbox-features-merge-append-documents_1}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=cs-radrichtextbox-features-merge-append-documents_1}} 
 
-````C#       
-Telerik.WinForms.Documents.Model.Merging.RadDocumentMerger documentMerger = new RadDocumentMerger(targetDocument); 
+````C#
+Telerik.WinForms.Documents.Model.Merging.RadDocumentMerger documentMerger = new RadDocumentMerger(targetDocument);
 Telerik.WinForms.Documents.Model.Merging.AppendDocumentOptions options = new AppendDocumentOptions();
 options.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.UseTargetStyle;
 options.FirstSourceSectionPropertiesResolutionMode = SectionPropertiesResolutionMode.Target;
-
 documentMerger.AppendDocument(sourceDocument, options);
 
 ````
@@ -59,8 +58,31 @@ Dim documentMerger As Telerik.WinForms.Documents.Model.Merging.RadDocumentMerger
 Dim options As Telerik.WinForms.Documents.Model.Merging.AppendDocumentOptions = New AppendDocumentOptions()
 options.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.UseTargetStyle
 options.FirstSourceSectionPropertiesResolutionMode = SectionPropertiesResolutionMode.Target
-
 documentMerger.AppendDocument(sourceDocument, options)
+'#End Region
+'#Region "radrichtextbox-features-raddocumentmerger_1"
+Dim insertOptions As New InsertDocumentOptions()
+insertOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.UseTargetStyle
+insertOptions.InsertLastParagraphMarker = False
+merger.InsertDocument(sourceDocument, insertOptions)
+'#End Region
+Me.radRichTextEditor1.Document = documentMerger.Document
+End Sub
+'#region commands
+Private Sub Main_Load(ByVal sender As Object, ByVal e As EventArgs)
+AddHandler radRichTextEditor1.Commands.ToggleBoldCommand.ToggleStateChanged, AddressOf ToggleBoldCommand_ToggleStateChanged
+AddHandler radRichTextEditor1.Commands.ToggleItalicCommand.ToggleStateChanged, AddressOf ToggleItalicCommand_ToggleStateChanged
+AddHandler radRichTextEditor1.Commands.ToggleUnderlineCommand.ToggleStateChanged, AddressOf ToggleUnderlineCommand_ToggleStateChanged
+End Sub
+Private Sub ToggleBoldCommand_ToggleStateChanged(ByVal sender As Object, ByVal e As Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))
+Me.BoldButton.IsChecked = e.NewValue
+End Sub
+Private Sub ToggleUnderlineCommand_ToggleStateChanged(ByVal sender As Object, ByVal e As Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))
+Me.UnderlineButton.IsChecked = e.NewValue
+End Sub
+Private Sub ToggleItalicCommand_ToggleStateChanged(ByVal sender As Object, ByVal e As Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))
+Me.ItalicButton.IsChecked = e.NewValue
+End Sub
 
 ````
 
