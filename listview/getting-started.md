@@ -1,25 +1,29 @@
 ---
 title: Getting started
-page_title: Getting started | UI for WinForms Documentation
-description: Getting started
+page_title: Getting started | RadListView
+description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: listview-getting-started
 ---
 
 # Getting started
+ 
+This article will demonstrate the basic capabilities of **RadListView**, like filtering, grouping, sorting, customizing items, etc. and it will show you in a step-by-step manner how to start creating applications with **RadListView**. 
 
+>caption Figure 1: Getting started with RadListView
 
+![listview-getting-started 001](images/listview-getting-started001.png)
 
-## 
+For the sake of this example, we are going to use a DataTable containing data about Artists, Albums, Songs and Image. 
 
-This article will demonstrate the basic capabilities of RadListView, like filtering, grouping, sorting, customizing items, etc. and it will show you in a step-by-step manner how to start creating applications with RadListView. ![listview-getting-started 001](images/listview-getting-started001.png)
+>caption Figure 2: Songs DataTable
 
-For the sake of this example we are going to use a DataTable containing data about Artists, Albums, Songs and Image. ![listview-getting-started 002](images/listview-getting-started002.png)
+![listview-getting-started 002](images/listview-getting-started002.png)
 
-First let’s create a form with [RadCommandBar]({%slug winforms/commandbar%}) docked *Top* and RadListView docked *Fill*. Add a __Strip__ to [RadCommandBar]({%slug winforms/commandbar%}) and populate it with the following items:
+First let’s create a form with [RadCommandBar]({%slug winforms/commandbar%}) docked *Top* and **RadListView** docked *Fill*. Add a __Strip__ to [RadCommandBar]({%slug winforms/commandbar%}) and populate it with the following items:
 
 |   |   |
 |---|---|
@@ -35,9 +39,11 @@ First let’s create a form with [RadCommandBar]({%slug winforms/commandbar%}) d
 | __CommandBarSeparatorItem__ ||
 | __CommandBarTextBox__ |<ul><li>Name: commandBarTextBoxFilter</li><li>Text: “”</li></ul>|
 
-At this point the form should like something similar to this:<br>![listview-getting-started 003](images/listview-getting-started003.png)
+At this point the form should like something similar to this:
 
-Now let continue with setting the control __DataSource__, allow edit and remove operations and subscribe to the events that we are going to use in this example.
+![listview-getting-started 003](images/listview-getting-started003.png)
+
+Now, lets continue with setting the control __DataSource__, allow edit and remove operations and subscribe to the events that we are going to use in this example.
 
 #### Initial settings
 
@@ -74,7 +80,7 @@ Me.RadListView1.ValueMember = "SongID"
 
 {{endregion}} 
 
-Now, lets handle those events. In the event handler for the __ItemDataBound__ event, we will take the corresponding item image from the data source and we will assign it to the ListViewDataItem.
+Now, lets handle those events. In the event handler for the __ItemDataBound__ event, we will take the corresponding item image from the data source and we will assign it to the **ListViewDataItem**.
 
 #### Set the item image to the data item
 
@@ -101,7 +107,7 @@ End Sub
 
 {{endregion}} 
 
-Next lets hand the __VisualItemFormatting__ event, where we will set the visual item image. Additionally, for IconsView we will set the visual item text to a html-like combination of the *AlbumName*, *ArtistName* and *SongName*.
+Next, lets handle the __VisualItemFormatting__ event, where we will set the visual item image. Additionally, for *IconsView* we will set the visual item text to a html-like combination of the *AlbumName*, *ArtistName* and *SongName*.
 
 #### Customize visual item
 
@@ -144,7 +150,7 @@ End Sub
 
 {{endregion}} 
 
-The __CellFormatting__ event is handled in order to customize the appearance of the cells, when RadListView is in __DetailsView__. Here we will set the cell image.
+The __CellFormatting__ event is handled in order to customize the appearance of the cells, when **RadListView** is in __DetailsView__. Here we will set the cell image.
 
 #### Set the cell image
 
@@ -221,18 +227,15 @@ End Sub
 
 {{endregion}} 
 
-
-
-
-The last event of RadListView, which we are going to handle is the ViewTypeChanged event - fired when the ViewType of the control is changed. This event is convenient to set view specific settings. To handle the event, we will create three helper methods:
+The last event of **RadListView**, which we are going to handle is the **ViewTypeChanged** event - fired when the **ViewType** of the control is changed. This event is convenient to set view specific settings. To handle the event, we will create three helper methods:
 
 * __SetupDetailsView__ - here we will set the __AllowArbitraryItemHeight__,  property to *true*, in order to allow the items to size themselves in height, according to their content.
 
-* __SetupIconsView__ - here we will define a custom size for the items, set some spacing between the items and again set the __AllowArbitraryItemHeight__, property to *true*
+* __SetupIconsView__ - here we will define a custom size for the items, set some spacing between the items and again set the __AllowArbitraryItemHeight__, property to *true*.
 
 * __SetupSimpleListView__ - in this method we will only set the __AllowArbitraryItemHeight__, property to *true*.
 
-In the ViewTypeChanged event handler, we will simply check which is the new view and call the corresponding setup method.
+In the **ViewTypeChanged** event handler, we will simply check which is the new view and call the corresponding setup method.
 
 #### Handling view type changes
 
@@ -300,11 +303,8 @@ End Sub
 ````
 
 {{endregion}} 
-
-
-
-
-Now we only need to fill up the __RadCommandBar__ elements functionality.  First we are going to handle the view changing buttons. For this purpose, subscribe for the __ToggleStateChanged__ and __ToggleStateChanging__ events of all the __CommandBarToggleButtons__ that we have added earlier. In the ToggleStateChanged event handler, check which is the clicked button, and set the rest of the buttons to *Off*. Additionally, set the __RadListView____ViewType__ according to the pressed button.
+ 
+Now, we only need to fill up the __RadCommandBar__ elements functionality.  First, we are going to handle the view changing buttons. For this purpose, subscribe for the __ToggleStateChanged__ and __ToggleStateChanging__ events of all the __CommandBarToggleButtons__ that we have added earlier. In the **ToggleStateChanged** event handler, check which is the clicked button, and set the rest of the buttons to *Off*. Additionally, set the RadListView.**ViewType** according to the pressed button.
 
 #### Handle the toggle buttons
 
@@ -391,9 +391,6 @@ End Sub
 ````
 
 {{endregion}} 
-
-
-
 
 Next, subscribe to the __SelectedIndexChanged__ event of *commandBarDropDownSort*__CommandBarDropDownList__. In the event handler, we are going to add the desired __SortDescriptors__, according to the selected item in the drop down.
 
@@ -504,10 +501,7 @@ End Sub
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 Lastly, lets subscribe ot the __TextChanged__ event of *commandBarTextBoxFilter*__CommandBarTextBox__. Here we will  add __FilterDescriptor__ according to the text entered in the text box:
 
 #### Handle filtering functionality
@@ -552,4 +546,6 @@ End Sub
 
 {{endregion}} 
 
-Run the application and try the different functionalties:<br>![listview-getting-started 005](images/listview-getting-started005.png)
+Run the application and try the different functionalties:<br>
+
+![listview-getting-started 005](images/listview-getting-started005.png)
