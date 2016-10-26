@@ -11,24 +11,18 @@ previous_url: pdfviewer-getting-started
 
 # Getting started
 
-
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with the WinForms RadPdfViewer](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-the-winforms-radpdfviewer)<br>RadPdfViewer enables you to easily load and display PDF documents natively in your app without using any third-party tools except Telerik’s WinForms toolbox. Thanks to its built-in UI virtualization, RadPdfViewer delivers a performant solution in every scenario. This component will come as a nice addition to your Content Management Systems and Reporting applications, let’s see what RadPdfViewer provides as a feature set.|![pdfviewer-getting-started 003](images/pdfviewer-getting-started003.png)|
+|[Getting Started with the WinForms RadPdfViewer](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-the-winforms-radpdfviewer)<br>__RadPdfViewer__ enables you to easily load and display PDF documents natively in your app without using any third-party tools except Telerik’s WinForms toolbox. Thanks to its built-in UI virtualization, RadPdfViewer delivers a performant solution in every scenario. This component will come as a nice addition to your Content Management Systems and Reporting applications, let’s see what __RadPdfViewer__ provides as a feature set.|![pdfviewer-getting-started 003](images/pdfviewer-getting-started003.png)|
 
-This article will help you quickly get started with RadPdfViewer. To start off, drag and drop a RadPdfViewer control from the toolbox to your form. Open its smart tag menu and you will find the __ViewerMode__ setting.<br>![pdfviewer-getting-started 001](images/pdfviewer-getting-started001.png)
+This article will help you quickly get started with __RadPdfViewer__. To start off, drag and drop a the control from the toolbox to your form. Set the __ViewerMode__ option to a desired value.
 
-The __ViewerMode__ specifies the behavior of RadPdfViewer when you left-click in the document and drag across the document. There are three viewer modes:
-
-* *None* - the control does nothing
-
-* *Pan* - the document is scrolled in the respective direction
-
-* *TextSelection* - selection is initiated, which stops when you release the button of the mouse
+>caption Figure 1: Visual Studio Designer
+![pdfviewer-getting-started 001](images/pdfviewer-getting-started001.png)
 
 There is also a property for the above setting which you can set in your code:
+
+#### ViewerMode Property
 
 {{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=Modes}} 
 {{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Modes}} 
@@ -46,6 +40,8 @@ Me.RadPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection
 
 Loading a PDF document is done via the __LoadDocument__ method. It accepts either a filename or an input stream as an argument.
 
+#### LoadDocument Method
+
 {{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=Loading}} 
 {{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Loading}} 
 
@@ -61,6 +57,8 @@ Me.RadPdfViewer1.LoadDocument(Application.StartupPath & "\PdfViewer\Sample.pdf")
 {{endregion}}
 
 The calls above will start to load the specified document asynchronously. When the loading finishes, the __DocumentLoaded__ event will fire:
+
+#### DocumentLoaded Event
 
 {{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=DocumentLoaded}} 
 {{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=DocumentLoaded}} 
@@ -83,6 +81,8 @@ End Sub
 
 Respectively, to unload a document, you can use the __UnloadDocument__ method 
 
+#### UnloadDocument Method 
+
 {{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=Unloading}} 
 {{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Unloading}} 
 
@@ -97,7 +97,10 @@ Me.RadPdfViewer1.UnloadDocument()
 
 {{endregion}}
 
-To provide to the end-user an additional set of abilities for manipulating the document, you can use __RadPdfViewerNavigator__. To do this, drag it from the toolbox to your form and set its __AssociatedViewer__ from its SmartTag menu. <br>![pdfviewer-getting-started 002](images/pdfviewer-getting-started002.png)
+To provide to the end-user an additional set of abilities for manipulating the document, you can use __RadPdfViewerNavigator__. To do this, drag it from the toolbox to your form and set its __AssociatedViewer__ from its __SmartTag__ menu. 
+
+>caption Figure 2. RadPdfViewerNavigator
+![pdfviewer-getting-started 002](images/pdfviewer-getting-started002.png)
 
 You can also set this in your code by using the __AssociatedPdfViewer__ property of the __PdfViewerNavigator__.
 
@@ -126,3 +129,8 @@ If you add the __RadPdfViewer__ at run time you need to add references to the fo
 * Telerik.WinControls.UI
 
 * TelerikCommon
+
+# See Also
+
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})

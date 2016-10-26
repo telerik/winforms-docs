@@ -719,6 +719,9 @@ navigation:
     pdfviewer:
         title: PdfViewer
         position: 350
+    pdfviewer/structure:
+        title: Structure
+        position: 1
     pdfviewer/features:
         title: Features
         position: 5	

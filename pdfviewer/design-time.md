@@ -1,7 +1,7 @@
 ---
 title: Design Time
 page_title: Design Time | RadPdfViewer
-description: At design time you can use the RadCardViews's Smart Tag to change the applied theme or navigate to the online documentation.
+description: At design time you can use the RadPdfViewer's Smart Tag to change the applied theme or navigate to the online documentation.
 slug: winforms/pdfviewer/design-time
 tags: pdfviewer, design-time
 published: True
@@ -10,10 +10,8 @@ position: 2
 
 # Design Time
 
-## Smart Tag
-
 >caption Fig.1 Smart Tag
-![radcardview-design-time 001](images/radcardview-design-time001.png)
+![pdfviewer-design-time 001](images/pdfviewer-design-time001.png)
 
 * __Common Tasks__
 
@@ -23,22 +21,12 @@ position: 2
 
 	* __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style at one time.
 
-* __RadCardView Specific Actions__:
+* __Settings__:
 
-	* __Edit Items__: When in unbound mode adds or edits __CardViewItems__
-
-	* __Edit Columns__: Adds or edits columns
-
-	* __Edit Groups__: Adds or edits groups
-	
-	* __Customize Template__: Opens the CardTemplate Layout editor
-	
-	The short video below demonstrates how columns can be set up at design-time and later the layout modified using the Customize Dialog.
-
->caption Fig.2 Create Layout
-![radcardview-design-time 002](images/radcardview-design-time002.gif)
-
-* __Data Binding__: __RadCardView__ utilizes the standard WinForms data binding mechanism. A complete example is available in Data Binding section.
+	* __Viewer Mode__: Specifies the behavior of __RadPdfViewer__ when you left-click in the document and drag across the document:
+	  *  *None*: The document can be scrolled only with the mouse wheel or directly using the scrollbars.
+	  *  *Pan*: The document is scrolled in the respective direction.
+	  *  *TextSelection*: Selection is initiated, which stops when you release the button of the mouse.
 
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 
@@ -46,6 +34,8 @@ position: 2
 
 # See Also
 
-* [Getting Started]({%slug winforms/cardview/getting-started%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
 

@@ -1,37 +1,17 @@
 ---
-title: Structure
-page_title: Structure | UI for WinForms Documentation
+title: Visual Structure
+page_title: Visual Structure | RadPdfViewer
 description: This article describes the visual as well as logical structure of the control.
-slug: winforms/pdfviewer/structure
+slug: winforms/pdfviewer/structure/visual-structure
 tags: structure
 published: True
 position: 1
 previous_url: pdfviewer-structure
 ---
 
-# Structure
+# Visual Structure
 
-This article describes the logical and visual structure of __RadPdfViewer__.
-
-## Document model
-
-### RadFixedDocument
-
-When __LoadDocument__ finishes loading a document, a new RadFixedDocument instance is created. RadFixedDocument represent logically a single PDF document. The members that RadFixedDocument exposes are:
-
-* __Pages__: A collection of __RadFixedPage__ items created for the current document in the viewer.
-
-* __Selection__: Information about the current selection in the document.
-
-* __Annotations__: A collection of all annotations (such as links) in the current document.
-
-* __Destinations__: A collection of all destinations (roughly said “bookmarks”) in the document that have links to them.
-
-* __CaretPosition__: The current position of the caret.
-
-### RadFixedPage
-
-RadFixedPage represents logically a single page of a document. The __Pages__ collection of RadFixedDocument consists of such objects and they are used as data items by the virtualized __RadFixedPageElement__.
+This article describes the visual structure of __RadPdfViewer__.
 
 ## Element structure
 
@@ -63,7 +43,8 @@ __RadPdfViewer__ has the following element structure:
 
 * __RadWaitingBarElement__: Waiting indicator which is only visible while loading a document.
 
-## See Also
+# See Also
 
-* [Smart Tag]({%slug winforms/gauges/lineargauge/design-time%})
-* [Getting Started]({%slug winforms/gauges/lineargauge/getting-started%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Design Time]({%slug winforms/pdfviewer/design-time%})
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})

@@ -34,8 +34,9 @@ Here is a list of the supported features
 * Context menu
 * Printing
 
-## See Also
+# See Also
 
-* [Structure]({%slug winforms/pdfviewer/structure%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
 * [Design Time]({%slug winforms/cardview/design-time%})
 * [Getting Started]({%slug winforms/cardview/getting-started%})
