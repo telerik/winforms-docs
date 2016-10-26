@@ -27,7 +27,6 @@ You can declare a new __RadRichTextEditor__ as any normal WinForms control.
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=declare}} 
 
 ````C#
-        
 private RadRichTextEditor radRichTextEditor1 = new RadRichTextEditor();
 
 ````
@@ -46,19 +45,16 @@ If you want to allow the user to edit and format the content of __RadRichTextEdi
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=API}} 
 
 ````C#
-        
 private void BoldButton_Click(object sender, RoutedEventArgs e)
 {
     this.radRichTextEditor1.ToggleBold();
     this.radRichTextEditor1.Focus(); //return focus to the control
 }
-        
 private void ItalicButton_Click(object sender, RoutedEventArgs e)
 {
     this.radRichTextEditor1.ToggleItalic();
     this.radRichTextEditor1.Focus(); //return focus to the control
 }
-        
 private void UnderlineButton_Click(object sender, RoutedEventArgs e)
 {
     this.radRichTextEditor1.ToggleUnderline();
@@ -90,24 +86,20 @@ The UI should also respond when the caret is on a document position where the te
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=commands}} 
 
 ````C#
-        
 void Main_Load(object sender, EventArgs e)
 {
     this.radRichTextEditor1.Commands.ToggleBoldCommand.ToggleStateChanged += new EventHandler<Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(this.ToggleBoldCommand_ToggleStateChanged);
     this.radRichTextEditor1.Commands.ToggleItalicCommand.ToggleStateChanged += new EventHandler<Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(this.ToggleItalicCommand_ToggleStateChanged);
     this.radRichTextEditor1.Commands.ToggleUnderlineCommand.ToggleStateChanged += new EventHandler<Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(this.ToggleUnderlineCommand_ToggleStateChanged);
 }
-        
 private void ToggleBoldCommand_ToggleStateChanged(object sender, Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool> e)
 {
     this.BoldButton.IsChecked = e.NewValue;
 }
-        
 private void ToggleUnderlineCommand_ToggleStateChanged(object sender, Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool> e)
 {
     this.UnderlineButton.IsChecked = e.NewValue;
 }
-        
 private void ToggleItalicCommand_ToggleStateChanged(object sender, Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool> e)
 {
     this.ItalicButton.IsChecked = e.NewValue;
@@ -163,33 +155,26 @@ Here is an example of a document created from code-behind:
 ````C#
 RadDocument document = new RadDocument();
 Section section = new Section();
-            
 Paragraph paragraph1 = new Paragraph();
 paragraph1.TextAlignment = Telerik.WinForms.Documents.Layout.RadTextAlignment.Center;
 Span span1 = new Span("Thank you for choosing Telerik");
 paragraph1.Inlines.Add(span1);
-            
 Span span2 = new Span();
 span2.Text = " RadRichTextEditor!";
 span2.FontWeight = Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold;
 paragraph1.Inlines.Add(span2);
 section.Blocks.Add(paragraph1);
-            
 Paragraph paragraph2 = new Paragraph();
 Span span3 = new Span("RadRichTextEditor");
 span3.FontWeight = Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold;
 paragraph2.Inlines.Add(span3);
-            
 Span span4 = new Span(" is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs) etc.");
 paragraph2.Inlines.Add(span4);
 section.Blocks.Add(paragraph2);
-            
 Table table = new Table();
 table.LayoutMode = TableLayoutMode.AutoFit;
 table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
-            
 TableRow row1 = new TableRow();
-            
 TableCell cell1 = new TableCell();
 Paragraph p1 = new Paragraph();
 Span s1 = new Span();
@@ -197,7 +182,6 @@ s1.Text = "Cell 1";
 p1.Inlines.Add(s1);
 cell1.Blocks.Add(p1);
 row1.Cells.Add(cell1);
-            
 TableCell cell2 = new TableCell();
 Paragraph p2 = new Paragraph();
 Span s2 = new Span();
@@ -206,9 +190,7 @@ p2.Inlines.Add(s2);
 cell2.Blocks.Add(p2);
 row1.Cells.Add(cell2);
 table.Rows.Add(row1);
-            
 TableRow row2 = new TableRow();
-            
 TableCell cell3 = new TableCell();
 cell3.ColumnSpan = 2;
 Paragraph p3 = new Paragraph();
@@ -218,11 +200,9 @@ p3.Inlines.Add(s3);
 cell3.Blocks.Add(p3);
 row2.Cells.Add(cell3);
 table.Rows.Add(row2);
-            
 section.Blocks.Add(table);
 section.Blocks.Add(new Paragraph());
 document.Sections.Add(section);
-        
 this.radRichTextEditor1.Document = document;
 
 ````

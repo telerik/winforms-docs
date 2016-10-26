@@ -30,7 +30,6 @@ However, you can change this sort order by using a group comparer. It is necessa
 {{source=..\SamplesVB\GridView\Grouping\SortingGroupRows.vb region=GroupComparer}} 
 
 ````C#
-        
 public class GroupComparer : IComparer<Group<GridViewRowInfo>>
 {
     public int Compare(Group<GridViewRowInfo> x, Group<GridViewRowInfo> y)
@@ -40,7 +39,13 @@ public class GroupComparer : IComparer<Group<GridViewRowInfo>>
         if (int.TryParse(((object[])x.Key).First().ToString(), out parsedX) &&
             int.TryParse(((object[])y.Key).First().ToString(), out parsedY))
         {
-            return parsedX.CompareTo(parsedY);
+            int result = parsedX.CompareTo(parsedY);
+            DataGroup xGroup = x as DataGroup;
+            if (xGroup != null && ((DataGroup)x).GroupDescriptor.GroupNames.First().Direction == ListSortDirection.Descending)
+            {
+                 result *= -1;
+            }
+            return result;
         }
         return ((object[])x.Key)[0].ToString().CompareTo(((object[])y.Key)[0].ToString());
     }
@@ -54,12 +59,17 @@ Public Class GroupComparer
     Implements IComparer(Of Group(Of GridViewRowInfo)).[Compare]
         Dim parsedX As Integer
         Dim parsedY As Integer
-        If Integer.TryParse(DirectCast(x.Key, Object()).First().ToString(), parsedX) AndAlso _
-        Integer.TryParse(DirectCast(y.Key, Object()).First().ToString(), parsedY) Then
-            Return parsedX.CompareTo(parsedY)
+        If Integer.TryParse(DirectCast(x.Key, Object()).First().ToString(), parsedX) AndAlso Integer.TryParse(DirectCast(y.Key, Object()).First().ToString(), parsedY) Then
+            Dim result As Integer = parsedX.CompareTo(parsedY)
+            Dim xGroup As DataGroup = TryCast(x, DataGroup)
+            If xGroup IsNot Nothing AndAlso DirectCast(x, DataGroup).GroupDescriptor.GroupNames.First().Direction = ListSortDirection.Descending Then
+                result *= -1
+            End If
+            Return result
         End If
         Return DirectCast(x.Key, Object())(0).ToString().CompareTo(DirectCast(y.Key, Object())(0).ToString())
     End Function
+End Class
 
 ````
 
