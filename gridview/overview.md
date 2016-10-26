@@ -13,6 +13,8 @@ previous_url: gridview-overview
 
 __RadGridView__ is a grid component developed on top of [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) which provides a combination of performance, extensibility and ease of use. Its flexible hierarchy model allows using different data providers and creating highly interactive interfaces for display and management of large data without performance lost.
 
+>caption Figure 1: RadGridView layout. 
+
 ![gridview-overview 001](images/gridview-overview001.png)
 
 ## Key Features

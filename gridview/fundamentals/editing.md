@@ -28,6 +28,3 @@ In addition to these default editors listed above, __RadGridView__ provides beha
 >note You can find more information about editors in [Editors]({%slug winforms/gridview/editors/editors%}) section.
 >
 
-The following image shows several of the default editors in __RadGridView__:
-
-![gridview-fundamentals-editing 001](images/gridview-fundamentals-editing001.png)

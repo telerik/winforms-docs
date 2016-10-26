@@ -75,13 +75,9 @@ Most grids present table data. In addition to this, RadGridView enables creating
 
 Except displaying sets of data, RadGridView allows for managing it. You are able to execute the standard operations – Insert, Update and Delete. Besides, you can edit grid cells by using various in-place editors and validate the changes. RadGridView also supports the `IDataError` interface which enables automatic error indication.
 
-![gridview-fundamentals-key-features 010](images/gridview-fundamentals-key-features010.png)
-
 ## Selection and navigation
 
 RadGridView provides selection functionality, which allows single and multiple records selection that can be manipulated both with the mouse and with the keyboard. The navigation API gives you full control over this process when using code.
-
-![gridview-fundamentals-key-features 011](images/gridview-fundamentals-key-features011.png)
 
 ## Exporting data in different file formats
 
@@ -90,10 +86,6 @@ RadGridView allows for exporting its data in different file formats. The support
 ## Localization and support for right-to-left languages
 
 RadGridView provides advanced Localization support. All displayed strings can be customized by using localization providers. RadGridView has also a full support for right-to-left languages. Read more [here]({%slug winforms/gridview/localization/localization%}) and [here]({%slug winforms/gridview/localization/right-to-left-support%})
-
-![gridview-fundamentals-key-features 012](images/gridview-fundamentals-key-features012.png)
-
-![gridview-fundamentals-key-features 013](images/gridview-fundamentals-key-features013.png)
 
 ## Easily customizable appearance and theming mechanism
 

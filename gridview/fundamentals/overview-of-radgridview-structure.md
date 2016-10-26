@@ -59,12 +59,6 @@ __GridViewTemplate__ is a basic class containing settings for a single level of
 
 ![gridview-fundamentals-overview-of-radgridview-structure 008](images/gridview-fundamentals-overview-of-radgridview-structure008.png)
 
-## ScrollBars
-
-__RadGridView__ will automatically show and hide scrollbars as needed. 
-
-![gridview-fundamentals-overview-of-radgridview-structure 009](images/gridview-fundamentals-overview-of-radgridview-structure009.png)
-
 ## GroupPanel
 
 When you want to enable the group-by functionality for the end-user, you need to set __RadGridView.GroupingEnabled__ to *true* and __GridViewTemplate.EnableGrouping__.  If you want to prevent the end-user to drag column header into the __GroupPanel,__  set __GridViewTemplate.AllowDragToGroup__ to *false*. __RadGridView.ShowGroupPanel__ shows/hides the group panel. You can access the group panel using __RadGridView.GridElement.HeaderElement.GroupPanel__ property. 
