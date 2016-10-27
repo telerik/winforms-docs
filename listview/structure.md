@@ -64,5 +64,5 @@ This article will show the internal elements structure of __RadListView__ consid
 # See Also
 
 * [Getting Started]({%slug winforms/listview/getting-started%})
-* [Desing Time]({%slug winforms/listview/design-time%})
+* [Desing Time]({%slug winforms/listview/working-with-design-time/design-time%})
  

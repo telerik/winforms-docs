@@ -597,7 +597,7 @@ navigation:
         title: ListView
         position: 280
     listview/working-with-design-time:
-        title: Working with design time
+        title: Design Time
         position: 3
     listview/features:
         title: Features
