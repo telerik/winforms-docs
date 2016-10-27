@@ -13,6 +13,8 @@ previous_url: gridview-columns-gridviewmulticomboboxcolumn
 
 This column has __RadMultiColumnComboBoxElement__ as an editor. It covers the features that the RadMultiColumnComboBox control has.
 
+![gridview-columns-gridviewmulticomboboxcolumn 001](images/gridview-columns-gridviewmulticomboboxcolumn001.png)
+
 The following example demonstrates how to [manually generate columns for RadGridView]({%slug winforms/gridview/columns/generating-columns%}) in the dropdown and then make the dropdown autosize itself according to the width of the RadGridView columns.
 
 First of all, we should bind the GridViewMultiComboBoxColumn:
@@ -92,7 +94,7 @@ End Sub
 
 Please note that we have a 'dirty' flag, because the editors in RadGridView are reused. If we do not have such a flag, new OrderID and Quantity columns will be added each time a RadMultiColumnComboBoxElement editor is opened. 
 
-![gridview-columns-gridviewmulticomboboxcolumn 001](images/gridview-columns-gridviewmulticomboboxcolumn001.png)
+
 
 Other important properties for __GridViewMultiComboBoxColumn__ are:
 

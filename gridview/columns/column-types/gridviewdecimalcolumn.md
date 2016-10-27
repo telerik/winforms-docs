@@ -142,10 +142,6 @@ decimalColumn.FormatString = "{0:N2}"
 
 {{endregion}} 
 
-Here is the result of setting the _DecimalPlaces_ property to 3 and the FormatString property to {0:N2}: 
-
-![gridview-columns-gridviewdecimalcolumn 002](images/gridview-columns-gridviewdecimalcolumn002.png)
-
 >note For a list of the standard numeric format strings, see [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)
 >
 

@@ -13,9 +13,11 @@ previous_url: gridview-columns-gridviewdatetimecolumn
 
 __GridViewDateTimeColumn__ provides date entry and formatting for DateTime data types. You may enter the date and time directly into the editor or drop down the calendar to choose a date. The __FormatString__ property sets the format of the date when the date is not currently being edited. The __CustomFormat__ property is used to format the date once the user clicks on the cell to invoke the editor.
 
+>caption Figure 1: GridViewDateTimeColumn in edit mode
+
 ![gridview-columns-gridviewdatetimecolumn 002](images/gridview-columns-gridviewdatetimecolumn001.png)
 
-![gridview-columns-gridviewdatetimecolumn 002](images/gridview-columns-gridviewdatetimecolumn002.png)
+#### Formatting the date.
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=addDateTimeColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=addDateTimeColumn}} 
@@ -39,10 +41,7 @@ dateTimeColumn.FormatString = "{0:D}"
 
 {{endregion}} 
 
-
-The formatting for date and time values also responds to globalization settings as demonstrated in the example below where __CultureInfo__ is set to French-Belgium. 
-
-![gridview-columns-gridviewdatetimecolumn 003](images/gridview-columns-gridviewdatetimecolumn003.png)
+>note The formatting for date and time values also responds to globalization settings.
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn2.cs region=settingCurrentCulture}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn2.vb region=settingCurrentCulture}} 

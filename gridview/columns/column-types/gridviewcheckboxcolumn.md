@@ -43,8 +43,6 @@ RadGridView1.MasterTemplate.Columns.Add(checkBoxColumn)
 
 The column has also a built-in functionality for checking all check boxes in it, via check box placed in the column header cell. By setting the __EnableHeaderCheckBox__ property to *true* you will enable the embedded in the header cell RadCheckBoxElement. 
 
-![gridview-columns-gridviewcheckboxcolumn 002](images/gridview-columns-gridviewcheckboxcolumn002.png)
-
 {{source=..\SamplesCS\GridView\Columns\GridViewCheckBoxColumn1.cs region=EnableHeaderCheckBox}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=EnableHeaderCheckBox}} 
 

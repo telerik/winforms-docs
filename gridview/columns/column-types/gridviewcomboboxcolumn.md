@@ -32,8 +32,7 @@ Other important properties for __GridViewComboBoxColumn__ are:
 >note By default, when sorting is executed on GridViewComboBoxColumn it is sorted according to its __ValueMember__ setting. However, if you need to perform the sorting according to the DisplayMember instead, you should set the __DisplayMemberSort__ property of the column.
 >
 
-
-__GridViewComboBoxColumn__ inherits from __GridViewDataColumn.__ 
+>caption Figure 1: GridViewComboBoxColumn
 
 ![gridview-columns-gridviewcomboboxcolumn 001](images/gridview-columns-gridviewcomboboxcolumn001.png)
 
@@ -123,7 +122,7 @@ End Sub
 
 ## Binding to array of strings
 
-The following example demonstrates a case where the combo box is bound to a column with string values in the data source. In this case the __DisplayMember__ and __ValueMember__ are the same, an you need just an array of strings as a datasource to the ComboBoxColumn (those strings should be equal to the possible values in the data source):
+The following example demonstrates a case where the combo box is bound to a column with string values in the data source. In this case the __DisplayMember__ and __ValueMember__ are the same, an you need just an array of strings as a data source to the ComboBoxColumn (those strings should be equal to the possible values in the data source):
 
 #### Bind to array of string
 
@@ -182,8 +181,6 @@ RadGridView1.Columns.Add(comboColumn)
 
 {{endregion}} 
 
-
-![gridview-columns-gridviewcomboboxcolumn 002](images/gridview-columns-gridviewcomboboxcolumn002.png)
 
 ## Binding to collection of custom object
 
@@ -309,9 +306,6 @@ End Class
 ````
 
 {{endregion}} 
-
-
-![gridview-columns-gridviewcomboboxcolumn 003](images/gridview-columns-gridviewcomboboxcolumn003.png)
 
 ##  Customizing DropDownList editors in RadGridView
 
@@ -460,5 +454,6 @@ End Class
 
 {{endregion}} 
 
+>caption Figure 2: The items styles are now changed.
 
 ![gridview-columns-gridviewcomboboxcolumn 004](images/gridview-columns-gridviewcomboboxcolumn004.png)

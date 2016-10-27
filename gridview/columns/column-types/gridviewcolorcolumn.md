@@ -11,7 +11,7 @@ previous_url: gridview-columns-gridviewcolorcolumn
 
 # GridViewColorColumn
 
-__GridViewColorColumn__ allows RadGridView to edit colors using __RadColorDialog__. The default editor of the column is __GridColorPickerEditor__. 
+__GridViewColorColumn__ allows RadGridView to edit colors using [RadColorDialog]({%slug winforms/forms-and-dialogs/colordialog%}) . The default editor of the column is __GridColorPickerEditor__. 
 
 ![gridview-columns-gridviewcolorcolumn 001](images/gridview-columns-gridviewcolorcolumn001.png)
 
