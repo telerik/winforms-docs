@@ -11,11 +11,7 @@ previous_url: gridview-rows-drag-and-drop
 
 # Drag and Drop
 
-Sometimes applications need to allow users to split items up into separate groupings. One way to handle this scenario is through moving data back and forth between several RadGridView controls. There is a multitude of ways of implementing this. One way is that you could add buttons between two grids with buttons labeled with arrows denoting the direction in which to move selected data.
-
-![gridview-rows-drag-and-drop 001](images/gridview-rows-drag-and-drop001.png)
-
-On the other hand, in order to achieve a better user experience, implementing drag and drop functionality between the grids is ideal.
+Sometimes applications need to allow users to split items up into separate groupings. One way to handle this scenario is through moving data back and forth between several RadGridView controls. In order to achieve a better user experience, you can implement drag and drop functionality between the grids.
 
 ![gridview-rows-drag-and-drop 002](images/gridview-rows-drag-and-drop002.png)
 

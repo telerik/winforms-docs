@@ -60,9 +60,6 @@ RadGridView1.TableElement.SearchHighlightColor = Color.LightBlue
 
 {{endregion}} 
 
-
-![gridview-rows-search-row 002](images/gridview-rows-search-row002.png)
-
 You can also use the search functionality programmatically without showing the search row, just by using its API.
 
 {{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=GetSearchRow}} 

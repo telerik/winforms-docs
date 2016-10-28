@@ -198,10 +198,7 @@ Me.RadGridView1.MasterTemplate.Templates(0).SummaryRowsTop.Add(summaryRowItem)
 
 ````
 
-{{endregion}} 
-
-
-![gridview-rows-summary-rows 005](images/gridview-rows-summary-rows005.png)
+{{endregion}}
 
 ## Customizing the summary row
 

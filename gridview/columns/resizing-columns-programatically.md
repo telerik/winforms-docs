@@ -15,7 +15,7 @@ previous_url: gridview-columns-resizing-columns-programatically
 
 The columns inside the RadGridView are resizable by default. The user is able to easily change the column width by positioning the mouse over the columns vertical grid line and dragging it until the desired size is achieved. 
 
-![gridview-columns-rezise-columns001](images/gridview-columns-rezise-columns001.png)
+![gridview-columns-rezise-columns001](images/gridview-columns-rezise-columns001.gif)
 
 ## Disabling resizing
 
@@ -83,13 +83,11 @@ You can restrict the possible values of the __Width__ property by setting the __
 
 There are two ways to auto size the columns:
 
-__AutoSizeColumnsMode__
+### AutoSizeColumnsMode
 
 Here, columns can automatically fill the entire width of the grid. Just set the __AutoSizeColumnsMode__ property of the desired template to __GridViewAutoSizeColumnsMode.Fill__.
 
-![gridview-columns-rezise-columns002](images/gridview-columns-rezise-columns002.png)
-
-__Best fit__
+### Best fit
 
 The column widths can be set to fit its content by using the __GridViewTemplate.BestFitColumns__ or __GridViewDataColumn.BestFit__ methods. This mode distributes algorithm that attempts to fit in the header text and column data for all visible rows.
 

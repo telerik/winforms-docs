@@ -147,6 +147,3 @@ Public Function GetAllColumns(ByVal template As GridViewTemplate) As List(Of Gri
 ````
 
 {{endregion}} 
-
->caption Figure 2: Iterating hierarchical grid.
-![gridview-columns-iterating-columns 002](images/gridview-columns-iterating-columns002.png)

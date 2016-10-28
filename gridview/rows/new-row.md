@@ -50,8 +50,6 @@ Me.RadGridView1.AllowAddNewRow = False
 {{endregion}} 
 
 
-![gridview-rows-new-row 004](images/gridview-rows-new-row004.png)
-
 ## Setting the new row text
 
 For the text displayed in the new row of __RadGridView__ you have the option to set it directly to the corresponding template. This allows you to have a different text on the new row of each level of your hierarchical grid.
@@ -90,9 +88,6 @@ Me.RadGridView1.AddNewRowPosition = SystemRowPosition.Top
 
 {{endregion}} 
 
-
-![gridview-rows-new-row 002](images/gridview-rows-new-row002.png)
-
 In order to pin the new row to bottom, you should set the __AddNewRowPosition__ to *Bottom*:
 
 {{source=..\SamplesCS\GridView\Rows\NewRow.cs region=positionBottom}} 
@@ -108,7 +103,6 @@ Me.RadGridView1.AddNewRowPosition = SystemRowPosition.Bottom
 ````
 
 {{endregion}} 
-
 
 ![gridview-rows-new-row 003](images/gridview-rows-new-row003.png)
 

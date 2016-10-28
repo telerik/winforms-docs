@@ -244,8 +244,6 @@ End Class
 
 {{endregion}}
 
-The following screenshot shows the result:<br>![gridview-columns-converting-data-types 001](images/gridview-columns-converting-data-types001.png)
-
 ## Handling Null Values
 
 The RadGridView’s conversation layer can handle null values. You can specify the default value that is committed to the source if the cell value is changed to null. GridViewDataColumn’s __DataSourceNullValue__ property can be set using the following code snippet:
