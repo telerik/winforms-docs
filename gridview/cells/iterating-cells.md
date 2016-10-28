@@ -48,10 +48,3 @@ Next
 >
 
 
->caption Figure 1: Before the cell values are changed
-
-![gridview-cells-iterating-cells 001](images/gridview-cells-iterating-cells001.png)
-
->caption Figure 2: After the cell values are changed. 
-
-![gridview-cells-iterating-cells 002](images/gridview-cells-iterating-cells002.png)

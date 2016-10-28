@@ -32,8 +32,9 @@ Me.Text = Me.RadGridView1.CurrentCell.Value.ToString()
 
 {{endregion}} 
 
+>caption Figure 1: Changing the current row changes the forms text. 
 
-![gridview-setting-current-cell 001](images/gridview-setting-current-cell001.png)
+![gridview-setting-current-cell 001](images/gridview-setting-current-cell001.gif)
 
 
 
