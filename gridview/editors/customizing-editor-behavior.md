@@ -17,7 +17,7 @@ The look and behavior of grid editors can be changed programmatically. This can 
 
 * __CellEditorInitialized__ is fired when the editor is created and initialized with a predefined set of properties
 
-The following sample demonstrates how to change the default border of __GridSpinEditor__:
+The following sample demonstrates how to change the default ForeColor of __GridSpinEditor__:
 
 {{source=..\SamplesCS\GridView\Editors\CustomizingEditorBehavior.cs region=customizingEditors}} 
 {{source=..\SamplesVB\GridView\Editors\CustomizingEditorBehavior.vb region=customizingEditors}} 

@@ -16,7 +16,7 @@ The examples below demonstrate binding to a generic list, an arrays of custom ob
 >note Note: BindingList is the preferred collection since its changes are automatically reflected on the data-bound control.
 >
 
-## Binding to a Generic List
+## Binding to a Array List
 
 The example below creates an __ArrayList__ of generic objects initialized with five values and assigned as a __DataSource__ to the __RadGridView__.
 
@@ -170,31 +170,7 @@ Dim myArray As MyObject() = New MyObject(1) {New MyObject(1, "object one"), New 
 
 {{endregion}} 
 
-## Binding to ArrayList
 
-The code below demonstrates how to use an __ArrayList__ for RadGridView structure generation(*note: the sample object is used from the previous example*):
-
-{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=BindingToArrayList}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=BindingToArrayList}} 
-
-````C#
-ArrayList arrayList = new System.Collections.ArrayList();
-arrayList.Add(new MyObject(1, "Object one"));
-arrayList.Add(new MyObject(2, "Object two"));
-arrayList.Add(new MyObject(3, "Object three"));
-radGridView1.DataSource = arrayList;
-
-````
-````VB.NET
-Dim arrayList As New System.Collections.ArrayList()
-arrayList.Add(New MyObject(1, "Object one"))
-arrayList.Add(New MyObject(2, "Object two"))
-arrayList.Add(New MyObject(3, "Object three"))
-RadGridView1.DataSource = arrayList
-
-````
-
-{{endregion}} 
 
 
 

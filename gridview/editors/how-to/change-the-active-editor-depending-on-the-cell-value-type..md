@@ -117,3 +117,5 @@ End Sub
 The result is that the end user can edit the cells with the appropriate for their values editor:
 
 ![gridview-editors-howto-change-the-active-editor-depending-on-the-cell-value-type 001](images/gridview-editors-howto-change-the-active-editor-depending-on-the-cell-value-type001.png)
+
+![gridview-editors-howto-change-the-active-editor-depending-on-the-cell-value-type 002](images/gridview-editors-howto-change-the-active-editor-depending-on-the-cell-value-type002.png)
