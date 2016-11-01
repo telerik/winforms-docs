@@ -38,7 +38,7 @@ private RadRichTextEditor radRichTextEditor1 = new RadRichTextEditor();
 ````
 ````VB.NET
 'old
-Private radRichTextBox1 As New RadRichTextBox()
+' Private radRichTextBox1 As New RadRichTextBox()
 'new
 Private radRichTextEditor1 As New RadRichTextEditor()
 

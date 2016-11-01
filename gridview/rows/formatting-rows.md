@@ -79,7 +79,7 @@ To customize the non-data rows (header row, new row, filtering row, etc) of RadG
 ````C#
 void radGridView1_ViewRowFormatting(object sender, RowFormattingEventArgs e)
 {
-    Console.WriteLine(e.RowElement.GetType());
+    
     if (e.RowElement is GridTableHeaderRowElement)
     {
         e.RowElement.DrawFill = true;

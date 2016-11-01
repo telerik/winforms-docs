@@ -211,18 +211,9 @@ The GroupSummaryEvaluate event is fired after a summary item is calculated and b
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=customFormatting}}
 
 ````C#
-void CustomFormatting()
-{
-    
-    this.radGridView1.GroupSummaryEvaluate += new GroupSummaryEvaluateEventHandler(radGridView1_GroupSummaryEvaluate);
-    GridViewSummaryItem summaryItem = new GridViewSummaryItem("Quantity", "Max quantity = {0}", GridAggregateFunction.Max);
-    GridViewSummaryRowItem summaryRowItem = new GridViewSummaryRowItem();
-    summaryRowItem.Add(summaryItem);
-    this.radGridView1.MasterTemplate.Templates[0].SummaryRowsTop.Add(summaryRowItem);
-}
 private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
 {
-    if (e.Parent == this.radGridView1.MasterTemplate)
+    if (e.SummaryItem.Name == "ShipName")
     {
         e.FormatString = String.Format("There are {0} ships total.", e.Value);
     }
@@ -230,15 +221,8 @@ private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvalua
 
 ````
 ````VB.NET
-Private Sub CustomFormatting()
-    AddHandler RadGridView1.GroupSummaryEvaluate, AddressOf radGridView1_GroupSummaryEvaluate
-    Dim summaryItem As New GridViewSummaryItem("Quantity", "Max quantity = {0}", GridAggregateFunction.Max)
-    Dim summaryRowItem As New GridViewSummaryRowItem()
-    summaryRowItem.Add(summaryItem)
-    Me.RadGridView1.MasterTemplate.Templates(0).SummaryRowsTop.Add(summaryRowItem)
-End Sub
 Private Sub radGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As GroupSummaryEvaluationEventArgs)
-    If e.Parent Is Me.RadGridView1.MasterTemplate Then
+    If e.SummaryItem.Name = "ShipName" Then
         e.FormatString = String.Format("There are {0} ships total.", e.Value)
     End If
 End Sub
