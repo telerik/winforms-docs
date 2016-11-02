@@ -33,4 +33,9 @@ This control can be used with __RadPdfViewer__. It provides predefined UI for th
 
 * __FitWith and FithPage:__ These buttons allows you to fit the page according to the current window size.
 
-* __Search:__ You can search for a particular string and navigate among the results.
+* __Search:__ You can search fr a particular string and navigate among the results.
+
+# See Also
+
+* [Design Time]({%slug winforms/pdfviewer/design-time%})
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})

@@ -1,6 +1,6 @@
 ---
 title: Text Selection
-page_title: Text Selection | UI for WinForms Documentation
+page_title: Text Selection | RadPdfViewer
 description: Text Selection
 slug: winforms/pdfviewer/text/text-selection
 tags: text,selection
@@ -39,9 +39,9 @@ When it comes to programmatic selection, it can occur even if the __ViewerMode__
 
 All methods, properties and events relevant to the discussed functionality are contained in the __TextSelection__ class.
 
-* Properties:
+* __Properties__:
 
-  * __StartPosition__: the __TextPosition__ at which the selection starts.
+  * __StartPosition__: The __TextPosition__ at which the selection starts.
                   
   
   * __EndPosition__: The __TextPosition__ denoting the end of the selection respectively.
@@ -49,21 +49,23 @@ All methods, properties and events relevant to the discussed functionality are c
   
   * __IsEmpty__:  A boolean property showing if there is selection in the current document.
 
-* Methods:The methods for manipulating the selection include:
+* __Methods__:The methods for manipulating the selection include:
 
-  * public void SetSelectionStart(TextPosition startPosition)
+  * __SetSelectionStart(TextPosition startPosition)__
   
-  * public void SetSelectionEnd(TextPosition endPosition)
+  * __SetSelectionEnd(TextPosition endPosition)__
   
-  * public void SetSelection(TextPosition startPosition, TextPosition endPosition)
+  * __SetSelection(TextPosition startPosition, TextPosition endPosition)__
   
-  * public void SelectAll()
+  * __SelectAll()__
   
-  * public void Clear()
+  * __Clear()__
   
-  * public string GetSelectedText()
+  * __GetSelectedText()__
   
-  * public void GetSelectedTextAsync(Action<string> callback)Their names show clearly the action they execute.Here is an example showing how the functionality of __TextPositions__ can be combined with that of __TextSelection__ in order to select the word that the caret is currently positioned in:
+  * __GetSelectedTextAsync(Action<string> callback)__
+ 
+Their names show clearly the action they execute.Here is an example showing how the functionality of __TextPositions__ can be combined with that of __TextSelection__ in order to select the word that the caret is currently positioned in:
    
 #### Text selection
 
@@ -95,6 +97,8 @@ RadMessageBox.Show(Me.RadPdfViewer1.Document.Selection.GetSelectedText())
 There are various methods in the API of RadPdfViewerElement which you can use to manipulate the text selection.
 
 The __SelectAll__, __DeselectAll__, __Select__ methods allow you to set the selection programmatically:
+
+#### Select/Deselect
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=Select}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=Select}} 
@@ -141,6 +145,8 @@ End Sub
 
 You can use the __GetSelectedText__, __GetSelectedTextAsync__ methods to get the currently selected text. The __GetSelectedTextAsync__ method does this operation asynchronously and calls the specified callback function when ready. The __Copy__ method copies the current selection to the clipboard. It executes the operation in the background, so the text is not copied to the clipboard until the waiting indicator is visible.The following sample demonstrates using these methods:
 
+#### Get Selection Async
+
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=GetSelectedText}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=GetSelectedText}} 
 
@@ -176,7 +182,9 @@ End Sub
 
 {{endregion}}
 
-The __Find__, __FindPrevious__ are used to perform text search forwards or backwards respectively. These methods return the result in a special __SearchResult__ structure which provides information about the result:
+The __Find__ and __FindPrevious__ methods are used to perform text search forwards or backwards respectively. These methods return the result in a special __SearchResult__ structure which provides information about the result:
+
+#### Find Next
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=Search}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=Search}} 
@@ -226,8 +234,15 @@ End Sub
 >note There are no genuine words in PDF, so the viewer uses a greedy text recognition method. That is why it is not guaranteed that it would find the exact start and end position of a word.
 >
 
-* Events: 
+* __Events__: 
 
   * __SelectionChanging__: Occurs when you start to select part of the text.
   
   * __SelectionChanged__: Occurs when you have finished changing the current selection.
+
+# See Also
+
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
+* [Properties, Methods and Events]({%slug winforms/pdfviewer/properties-methods-and-events%})

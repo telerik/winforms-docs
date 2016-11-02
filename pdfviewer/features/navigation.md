@@ -8,9 +8,11 @@ published: True
 position: 3
 ---
 
-# Navigating
+# Navigation
 
 You can use the __PageUp__, __PageDown__, __GoToPage__ methods to navigate through the document programmatically:
+
+#### Page Navigation
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=PageNavigation}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=PageNavigation}} 
@@ -47,6 +49,8 @@ End Sub
 
 Additionally, you can control the precise scroll position by using the __Scroll__ method which scrolls the view with a specified offset or the __ScrollTo__ method which scrolls the view to an exact position:
 
+#### Scrolling
+
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=Scrolling}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=Scrolling}} 
 
@@ -72,3 +76,10 @@ End Sub
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
+* [Properties, Methods and Events]({%slug winforms/pdfviewer/properties-methods-and-events%})

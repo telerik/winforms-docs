@@ -19,6 +19,8 @@ To localize __RadPdfViewer__ to display any text and messages in a specific lang
 
 Below is a sample implementation of an English localization provider:
 
+#### RadPdfViewer Localization
+
 {{source=..\SamplesCS\PdfViewer\PdfLocalization.cs region=localization}} 
 {{source=..\SamplesVB\PdfViewer\PdfLocalization.vb region=localization}} 
 
@@ -147,6 +149,8 @@ End Class
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
+#### Changing the Localization Provider
+
 {{source=..\SamplesCS\PdfViewer\PdfLocalization.cs region=change}} 
 {{source=..\SamplesVB\PdfViewer\PdfLocalization.vb region=change}} 
 
@@ -160,3 +164,10 @@ PdfViewerLocalizationProvider.CurrentProvider = New MyLocalizationProvider()
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
+* [Properties, Methods and Events]({%slug winforms/pdfviewer/properties-methods-and-events%})

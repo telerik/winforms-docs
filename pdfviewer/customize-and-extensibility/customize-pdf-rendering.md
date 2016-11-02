@@ -15,23 +15,23 @@ __RadPdfViewer__ provides some customization options for the way PDF documents a
 
 When rendering the text, __RadPdfViewer__ uses different decoders. It finds the decoder that it needs to use by its name. These are the decoders that can be plugged:
 
-* ASCIIHexDecode
+* __ASCIIHexDecode__
 
-* ASCII85Decode
+* __ASCII85Decode__
 
-* LZWDecode
+* __LZWDecode__
 
-* FlateDecode
+* __FlateDecode__
 
-* RunLengthDecode
+* __RunLengthDecode__
 
-* CCITTFaxDecode
+* __CCITTFaxDecode__
 
-* JBIG2Decode
+* __JBIG2Decode__
 
-* DCTDecode
+* __DCTDecode__
 
-* JPXDecode
+* __JPXDecode__
 
 The following table indicates the status of the respective decoders in __RadPdfViewer__:
 
@@ -50,6 +50,8 @@ All decoders implement the __IPdfFilter__ interface and if you decide, you can i
 For example, you can create a custom decoder for Tiff images by implementing the interface and setting the Name of the filter to __CCITTFaxDecode__. Then, just register the new class by calling FiltersManager.__RegisterFilter()__ method and the viewer will use your implementation instead of the default one.
 
 Inheriting from __IPdfFilter__ will result in the following:
+
+#### Creating Custom Filter
 
 {{source=..\SamplesCS\PdfViewer\PdfDecoder.cs region=CustomFilter}} 
 {{source=..\SamplesVB\PdfViewer\PdfDecoder.vb region=CustomFilter}} 
@@ -104,6 +106,8 @@ End Class
 
 You should also register the filter as follows:
 
+#### Registering Filters
+
 {{source=..\SamplesCS\PdfViewer\PdfDecoder.cs region=RegisterFilter}} 
 {{source=..\SamplesVB\PdfViewer\PdfDecoder.vb region=RegisterFilter}} 
 
@@ -136,10 +140,17 @@ The result that a custom filter should return depends on the type of the filter.
 
 __RadPdfViewer__ expects these filters to return data that depends on the decoded object's colors space and bits per component (there are such properties in the decodedObject). The resulting byte array should contain exactly BitsPerComponent bits for each color component in the color space. For example, if you have RGB color space and 8 bits per component, the resulting byte array should contains a single byte value for each Red, Green and Blue value (for each pixel) in the decoded image.
 
-* CCITTFaxDecode
+* __CCITTFaxDecode__
 
-* JBIG2Decode
+* __JBIG2Decode__
 
-* DCTDecode
+* __DCTDecode__
 
-* JPXDecode
+* __JPXDecode__
+
+# See Also
+
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
+* [Properties, Methods and Events]({%slug winforms/pdfviewer/properties-methods-and-events%})

@@ -20,4 +20,11 @@ When retrieving a file as a byte array from database and creating a __MemoryStre
 
 PDF files have to end with %%EOF marker, so this essentially makes the document invalid and __RadPdfViewer__ is unable to show it. __RadPdfViewer__ is looking for this marker in the last 1024 bytes and if it does not find it, throws an exception.
 
-In order to fix the issue, you can manually trim the additional (null) bytes. 
+In order to fix the issue, you can manually trim the additional (null) bytes.
+
+# See Also
+
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* ["Startxref keyword cannot be found"](http://www.telerik.com/support/kb/winforms/details/notsupportedexception-startxref-keyword-cannot-be-found-when-loading-pdf-file-in-radpdfviewer-for-winforms)
+* [Unsupported Features]({%slug winforms/pdfviewer/unsupported-features%})
+* [Exception Handling]({%slug winforms/pdfviewer/exception-handling%})

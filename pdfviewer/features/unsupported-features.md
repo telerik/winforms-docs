@@ -11,8 +11,6 @@ previous_url: pdfviewer-unsupported-features
 
 # Unsupported features
 
-## Unsupported Content
-
 The unsupported features include:
 
 * Type3 fonts;
@@ -32,3 +30,11 @@ The unsupported features include:
 * Structured content - there are several ways to define structured content in a PDF file. RadPdfViewer does not support document outline, article threads and interactive form.
 
 When a PDF file contains some of these items, it may be shown incorrectly or not shown at all.
+
+# See Also
+
+* [Exception Handling]({%slug winforms/pdfviewer/exception-handling%})
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
+* [Properties, Methods and Events]({%slug winforms/pdfviewer/properties-methods-and-events%})

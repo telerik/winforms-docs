@@ -38,5 +38,5 @@ Here is a list of the supported features
 
 * [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
 * [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
-* [Design Time]({%slug winforms/cardview/design-time%})
-* [Getting Started]({%slug winforms/cardview/getting-started%})
+* [Design Time]({%slug winforms/pdfviewer/design-time%})
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})

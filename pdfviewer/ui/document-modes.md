@@ -16,11 +16,14 @@ The document presenter is responsible for displaying the pages of the document, 
 
 This document presenter displays the pages in a vertical order and is used by default by __RadPdfViewer__. There is a fixed margin between the pages, and each page is centered horizontally inside the __RadPdfViewer__.  
 
+>caption Figure 1: Pages Mode
 ![pdfviewer-overview 001](images/pdfviewer-ui-documents-presenter001.gif)
 
 ## Single Page Mode (Fit Full Page)
 
 This document presenter displays a single page at a time inside the viewer. The page is vertically and horizontally centered. In order to enable this mode, set the __FitFullPage__ property to *true*.
+
+#### Fit Full Page
 
 {{source=..\SamplesCS\PdfViewer\PdfUI.cs region=FitFullPage}} 
 {{source=..\SamplesVB\PdfViewer\PdfUI.vb region=FitFullPage}} 
@@ -36,6 +39,7 @@ Me.RadPdfViewer1.FitFullPage = True
 
 {{endregion}}
 
+>caption Figure 2: Fit Full Width
 ![pdfviewer-overview 001](images/pdfviewer-ui-documents-presenter002.gif)
 
 ## Fit Full Width
@@ -57,4 +61,12 @@ Me.RadPdfViewer1.FitToWidth = True
 
 {{endregion}}
 
+>caption Figure 3: Fit To Width
 ![pdfviewer-overview 001](images/pdfviewer-ui-documents-presenter003.gif)
+
+
+# See Also
+
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Context Menu]({%slug winforms/pdfviewer/ui/context-menu%})
+* [View Modes]({%slug winforms/pdfviewer/ui/viewer-modes%})
