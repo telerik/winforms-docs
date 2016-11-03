@@ -132,7 +132,9 @@ ruler.FormatStrings = New RulerFormatStrings("hh", "mm", "hh", "mm")
 {{endregion}} 
 
 
-![scheduler-fundamentals-ruler 006](images/scheduler-fundamentals-ruler006.png)The RulerTextFormatting event can be used to manually format the text. You can prepend a "0" in front of the text if it contains only one digit:
+![scheduler-fundamentals-ruler 006](images/scheduler-fundamentals-ruler006.png)
+
+The RulerTextFormatting event can be used to manually format the text. You can prepend a "0" in front of the text if it contains only one digit:
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\Ruler.cs region=RulerFormattingSubscribe}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=RulerFormattingSubscribe}} 
