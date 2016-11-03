@@ -83,13 +83,13 @@ Selecting the results of the search is particularly useful, as most formatting c
 ````C#
             
 this.radRichTextEditor1.ChangeTextHighlightColor(Telerik.WinControls.RichTextEditor.UI.Colors.LightGray);  // will highlight all selected words in LightGray
-this.radRichTextEditor1.ChangeFontSize(Telerik.WinControls.RichTextBox.Model.Unit.PointToDip(32));   // will increase the font size of the words to 30 DIP
+this.radRichTextEditor1.ChangeFontSize(Unit.PointToDip(32));   // will increase the font size of the words to 30 DIP
 this.radRichTextEditor1.ChangeFontFamily(new Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS")); // will change the font family of the spans, containing these words.
 
 ````
 ````VB.NET
 Me.radRichTextEditor1.ChangeTextHighlightColor(Telerik.WinControls.RichTextEditor.UI.Colors.LightGray) ' will highlight all selected words in LightGray
-Me.radRichTextEditor1.ChangeFontSize(Telerik.WinControls.RichTextBox.Model.Unit.PointToDip(32)) ' will increase the font size of the words to 30 DIP
+Me.radRichTextEditor1.ChangeFontSize(Telerik.WinForms.Documents.Model.Unit.PointToDip(32)) ' will increase the font size of the words to 30 DIP
 Me.radRichTextEditor1.ChangeFontFamily(New Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS")) ' will change the font family of the spans, containing these words.
 
 ````

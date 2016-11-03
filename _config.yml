@@ -606,11 +606,11 @@ navigation:
         title: ListView
         position: 280
     listview/working-with-design-time:
-        title: Working with design time
+        title: Design Time
         position: 3
     listview/features:
         title: Features
-        position: 4
+        position: 5
     listview/drag-and-drop:
         title: Drag and Drop
         position: 7

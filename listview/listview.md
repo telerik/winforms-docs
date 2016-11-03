@@ -51,4 +51,4 @@ You can find listed below the key features that **RadListView** supports:
 
 * [Getting Started]({%slug winforms/listview/getting-started%})
 * [Structure]({%slug winforms/listview/structure%})
-* [Desing Time]({%slug winforms/listview/design-time%})
+* [Desing Time]({%slug winforms/listview/working-with-design-time/design-time%})

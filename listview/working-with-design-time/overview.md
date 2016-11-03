@@ -1,11 +1,11 @@
 ---
-title: Design Time
-page_title: Design Time | RadListView
+title: Design Time Basics
+page_title: Design Time Basics | RadListView
 description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
-slug: winforms/listview/design-time
+slug: winforms/listview/working-with-design-time/design-time
 tags: listview
 published: True
-position: 2 
+position: 0 
 ---
 
 # Design Time
@@ -66,4 +66,7 @@ Select __RadListView__ and click the small arrow on the top right position in or
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
 * [Using default themes]({%slug winforms/themes/using-default-themes%})
-* [Getting Started]({%slug winforms/listview/getting-started%})
+* [Getting Started]({%slug winforms/listview/getting-started%})	
+* [Adding groups]({%slug winforms/listview/working-with-design-time/adding-groups%})	
+* [Adding items]({%slug winforms/listview/working-with-design-time/adding-items%})	
+* [Adding columns]({%slug winforms/listview/working-with-design-time/adding-columns%})	

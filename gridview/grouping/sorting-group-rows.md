@@ -30,6 +30,7 @@ However, you can change this sort order by using a group comparer. It is necessa
 {{source=..\SamplesVB\GridView\Grouping\SortingGroupRows.vb region=GroupComparer}} 
 
 ````C#
+        
 public class GroupComparer : IComparer<Group<GridViewRowInfo>>
 {
     public int Compare(Group<GridViewRowInfo> x, Group<GridViewRowInfo> y)
@@ -83,6 +84,7 @@ The last thing you need to do is to replace the default MasterTemplate.__GroupCo
 {{source=..\SamplesVB\GridView\Grouping\SortingGroupRows.vb region=Replace}} 
 
 ````C#
+            
 this.radGridView1.MasterTemplate.GroupComparer = new GroupComparer();
 
 ````
