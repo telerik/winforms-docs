@@ -58,8 +58,3 @@ Me.RadGridView1.ShowFilteringRow = False
 
 >caution Filtering strings not allowed are: " LIKE ", " AND ", " OR ", "\"", ">", "<", "<>", "%", " NULL ", " IS ". Note: the spaces are important (e.g. " LIKE " compared to "LIKE").
 >
-
-
-You can customize the __GridFilterRowElement__ by using the __Visual Style Builder__.
-
-![gridview-filtering-filtering-row 003](images/gridview-filtering-filtering-row003.png)

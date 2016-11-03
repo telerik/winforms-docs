@@ -79,23 +79,7 @@ All the selected cells are available in the RadGridView.SelectedCells collection
 
 If the __MultiSelect__ property is enabled, you can make a multiple selection by holding the left mouse button down and moving the mouse making a rectangle. This will select all rows (cells) in the created rectangle.
 
-![gridview-selection-multiple-selection 003](images/gridview-selection-multiple-selection003.png)![gridview-selection-multiple-selection 004](images/gridview-selection-multiple-selection004.png)
-
-In case you do not want to see the TranslucentRectangle when making such a selection, but still have this functionality working, simply set the __ShowTranslucentSelectionRectangle__ property of the TableElement to *false*:
-
-{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=transRectangle}} 
-{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=transRectangle}} 
-
-````C#
-radGridView1.TableElement.ShowTranslucentSelectionRectangle = false;
-
-````
-````VB.NET
-RadGridView1.TableElement.ShowTranslucentSelectionRectangle = False
-
-````
-
-{{endregion}} 
+![gridview-selection-multiple-selection 003](images/gridview-selection-multiple-selection003.gif)
 
 ## CurrentRow and CurrentCell when multiple selection is used
 

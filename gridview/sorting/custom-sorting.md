@@ -187,23 +187,6 @@ Me.RadGridView1.MasterTemplate.SortComparer = New CustomComparer()
 {{endregion}} 
 
 
-{{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingSortComparer1}}
-{{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingSortComparer1}} 
-
-````C#
-this.radGridView1.Columns["ShipCity"].SortOrder = RadSortOrder.Ascending;
-this.radGridView1.MasterTemplate.SortComparer = new CustomComparer();
-
-````
-````VB.NET
-Me.RadGridView1.Columns("ShipCity").SortOrder = RadSortOrder.Ascending
-Me.RadGridView1.MasterTemplate.SortComparer = New CustomComparer()
-
-````
-
-{{endregion}} 
-
-
 ![gridview-sorting-custom-sorting 003](images/gridview-sorting-custom-sorting003.png)
 
 ## Create custom sort order criteria for a particular column.

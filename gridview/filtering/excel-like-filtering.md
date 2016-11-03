@@ -13,11 +13,11 @@ previous_url: gridview-filtering-excel-like-filtering
 
 Excel-Like filtering offers another way for filtering data in RadGridView by the end user. It is built in a way to mimic the standard excel filtering functionality and offers a dialog, which contains a list with distinct column values, from which the end user can chose.
 
-![gridview-filtering-excel-like-filtering 001](images/gridview-filtering-excel-like-filtering001.jpg)
+![gridview-filtering-excel-like-filtering 001](images/gridview-filtering-excel-like-filtering001.png)
 
 In addition Excel-Like filtering supports the default filters available thorough "Available Filter" menu item and custom filter form.
 
-![gridview-filtering-excel-like-filtering 002](images/gridview-filtering-excel-like-filtering002.jpg)
+![gridview-filtering-excel-like-filtering 002](images/gridview-filtering-excel-like-filtering002.png)
 
 Enabling the excel-like filtering is quite easy. You have to set the grid's properties __EnableFiltering__ and __ShowHeaderCellButtons__:
 
@@ -169,8 +169,3 @@ End Sub
 
 ![gridview-filtering-excel-like-filtering 007](images/gridview-filtering-excel-like-filtering007.png)
 
-## Customizing composite filter dialog
-
-When you select an item from the "Available Filter" menu, a __CompositeFilterForm__ is displayed. The __CreateCompositeFilterDialog__ event is fired before the __CompositeFilterForm__ is created. It allows you to create the default dialog and customize it or initialize your own implementation of the composite filter dialog.
-
-![gridview-filtering-excel-like-filtering 008](images/gridview-filtering-excel-like-filtering008.png)
