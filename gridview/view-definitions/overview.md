@@ -37,6 +37,10 @@ All view definitions implement the __IViewDefinition__ interface and you could c
 
 * [HtmlViewDefinition]({%slug winforms/gridview/view-definitions/html-view%}): uses layout similar to the one existing in HTML tables.
 
-Some of the available views that you can achieve are demonstrated in the picture below:
+>caption Figure 1: ColumnGroupsViewDefinition
 
 ![gridview-viewdefinitions-overview 001](images/gridview-viewdefinitions-overview001.png)
+
+>caption Figure 2: HtmlViewDefinition
+
+![gridview-viewdefinitions-overview 002](images/gridview-viewdefinitions-overview002.png)

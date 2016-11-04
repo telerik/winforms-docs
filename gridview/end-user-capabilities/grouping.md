@@ -13,7 +13,7 @@ previous_url: gridview-end-user-capabilities-grouping
 
 The end-user can drag column headings to the grouping panel at the top of the grid to group by the column:
 
-![gridview-end-user-capabilities-grouping 001](images/gridview-end-user-capabilities-grouping001.png)
+![gridview-end-user-capabilities-grouping 001](images/gridview-end-user-capabilities-grouping001.gif)
 
 To un-group, click the close button of the group header button:
 

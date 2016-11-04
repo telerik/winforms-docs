@@ -13,7 +13,7 @@ previous_url: gridview-viewdefinitions-html-view
 
 The name of this view may lead to some confusion. __RadGridView__ does not support HTML rendering, and there are no plans to support it. This view enables using row layout similar to the one existing in HTML tables. In fact, you can take an existing HTML table and use its HTML code in RadGridView. Sometimes this can save a lot of work. Just change the cell text to be the unique name of the desired column.
 
-![gridview-viewdefinitions-html-view 001](images/gridview-viewdefinitions-html-view001.jpg)
+![gridview-viewdefinitions-html-view 001](images/gridview-viewdefinitions-html-view001.png)
 
 To use an HTML view we should instantiate HtmlViewDefinition and add the desired rows and cells.
 
@@ -143,26 +143,6 @@ At the end simply set the __ViewDefinitions__ property to the newly created __Vi
 
 >caution You need to assign the view definition to the *ViewDefinition* property of RadGridView as described in the[overview section]({%slug winforms/gridview/view-definitions/overview%}).
 >
-
-Now load the data in the RadGridView
- 
-{{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=loadTheData}} 
-{{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=loadTheData}} 
-````C#
-private void HTMLView_Load(object sender, EventArgs e)
-{
-    this.customersTableAdapter.Fill(this.nwindDataSet.Customers);
-}
-
-````
-````VB.NET
-Private Sub HTMLView1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    Me.CustomersTableAdapter.Fill(Me.NwindDataSet.Customers)
-End Sub
-
-````
-
-{{endregion}} 
 
 >caution You need to either create the columns manually or supply a data source which will generate them.
 >

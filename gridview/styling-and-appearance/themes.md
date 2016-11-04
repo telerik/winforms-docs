@@ -6,7 +6,7 @@ slug: winforms/gridview/styling-and-appearance/themes
 tags: themes
 published: True
 position: 5
-previous_url: gridview-styling-and-appearance-themes
+previous_url: gridview-styling-and-appearance-themes, gridview-styling-and-appearance-using-themes-with-radgridview, using-themes-with-radgridview
 ---
 
 # Themes
@@ -15,30 +15,78 @@ RadGridView is built on top of the Telerik Presentation Framework and enables ea
 
 The built-in themes are:
 
-![gridview-styling-and-appearance-themes 001](images/gridview-styling-and-appearance-themes001.png)<br>*Control Default theme*
+>caption Figure 1: Control Default theme
 
-![gridview-styling-and-appearance-themes 002](images/gridview-styling-and-appearance-themes002.png)<br>*Office 2010 Blue theme*
+![gridview-styling-and-appearance-themes 001](images/gridview-styling-and-appearance-themes001.png) 
 
-![gridview-styling-and-appearance-themes 003](images/gridview-styling-and-appearance-themes003.png)<br>*Office 2010 Silver theme*
+>caption Figure 2: Office 2010 Blue theme
 
+![gridview-styling-and-appearance-themes 002](images/gridview-styling-and-appearance-themes002.png) 
 
-![gridview-styling-and-appearance-themes 004](images/gridview-styling-and-appearance-themes004.png)<br>*Office 2010 Black theme*
+>caption Figure 3: Office 2010 Silver theme
 
-![gridview-styling-and-appearance-themes 005](images/gridview-styling-and-appearance-themes005.png)<br>*Office 2007 Silver theme*
+![gridview-styling-and-appearance-themes 003](images/gridview-styling-and-appearance-themes003.png) 
 
-![gridview-styling-and-appearance-themes 006](images/gridview-styling-and-appearance-themes006.png)<br>*Office 2007 Black theme*
+>caption Figure 4: Office 2010 Black theme
 
-![gridview-styling-and-appearance-themes 007](images/gridview-styling-and-appearance-themes007.png)<br>*Telerik Metro theme*
+![gridview-styling-and-appearance-themes 004](images/gridview-styling-and-appearance-themes004.png) 
 
-![gridview-styling-and-appearance-themes 008](images/gridview-styling-and-appearance-themes008.png)<br>*Telerik Metro Blue theme*
+>caption Figure 5: Office 2007 Silver theme
 
-![gridview-styling-and-appearance-themes 009](images/gridview-styling-and-appearance-themes009.png)<br>*Windows7 theme*
+![gridview-styling-and-appearance-themes 005](images/gridview-styling-and-appearance-themes005.png) 
 
-![gridview-styling-and-appearance-themes 010](images/gridview-styling-and-appearance-themes010.png)<br>*Desert theme*
+>caption Figure 6: Office 2007 Black theme
 
-![gridview-styling-and-appearance-themes 011](images/gridview-styling-and-appearance-themes011.png)<br>*Breeze theme*
+![gridview-styling-and-appearance-themes 006](images/gridview-styling-and-appearance-themes006.png) 
 
-![gridview-styling-and-appearance-themes 012](images/gridview-styling-and-appearance-themes012.png)<br>*High Contrast Black theme*
+>caption Figure 7: Telerik Metro theme
+
+![gridview-styling-and-appearance-themes 007](images/gridview-styling-and-appearance-themes007.png) 
+
+>caption Figure 8: Telerik Metro Blue theme
+
+![gridview-styling-and-appearance-themes 008](images/gridview-styling-and-appearance-themes008.png) 
+
+>caption Figure 9: Windows7 theme
+
+![gridview-styling-and-appearance-themes 009](images/gridview-styling-and-appearance-themes009.png) 
+
+>caption Figure 10: Desert theme
+
+![gridview-styling-and-appearance-themes 010](images/gridview-styling-and-appearance-themes010.png) 
+
+>caption Figure 11: Breeze theme
+
+![gridview-styling-and-appearance-themes 011](images/gridview-styling-and-appearance-themes011.png) 
+
+>caption Figure 12: High Contrast Black theme
+
+![gridview-styling-and-appearance-themes 012](images/gridview-styling-and-appearance-themes012.png) 
+
+>caption Figure 13: Visual Studio 2012 Dark theme
+
+![gridview-styling-and-appearance-themes 013](images/gridview-styling-and-appearance-themes013.png) 
+
+>caption Figure 14: Visual Studio 2012 Light theme
+
+![gridview-styling-and-appearance-themes 014](images/gridview-styling-and-appearance-themes014.png) 
+
+>caption Figure 15: Office 2013 Dark theme
+
+![gridview-styling-and-appearance-themes 015](images/gridview-styling-and-appearance-themes015.png) 
+
+>caption Figure 16: Office 2013 Light theme
+
+![gridview-styling-and-appearance-themes 016](images/gridview-styling-and-appearance-themes016.png) 
+
+>caption Figure 17: Windows 8 theme
+
+![gridview-styling-and-appearance-themes 017](images/gridview-styling-and-appearance-themes017.png) 
+
+>caption Figure 18: Aqua theme
+
+![gridview-styling-and-appearance-themes 018](images/gridview-styling-and-appearance-themes018.png) 
+
 
 >note You can preview the built-in themes using our [Theme Viewer]({%slug winforms/tools/themeviewer%})application.
 >

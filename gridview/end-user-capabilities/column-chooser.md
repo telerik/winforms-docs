@@ -15,8 +15,8 @@ The visibility of all columns can be managed by the end-user at runtime using __
 
 ![gridview-end-user-capabilities-column-chooser1](images/gridview-end-user-capabilities-column-chooser1.png)
 
-The user can then drag column headings to the __Column Chooser__ window and drop them there. This will remove the column from RadGridView and will place it in the __Column Chooser Window__. Columns can be dragged back to RadGridView:
+The user can then drag column headings to the __Column Chooser__ window and drop them there. This will remove the column from RadGridView and will place it in the __Column Chooser Window__. Columns can be dragged back to RadGridView.
 
-| | |
-| ------ | ------ |
-| ![](images/gridview-end-user-capabilities-column-chooser2.png) | ![](images/gridview-end-user-capabilities-column-chooser3.png) |
+>caption Figure 1: Using the Column Chooser
+
+![](images/gridview-end-user-capabilities-column-chooser2.gif)  
