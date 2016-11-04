@@ -17,11 +17,11 @@ previous_url: gridview-exporting-data-overview
 
 __RadGridView__ supports several built-in methods for exporting data:
 
-* [SpreadExcelExport]({%slug winforms/gridview/exporting-data/spread-export%}): Available since R3 2014 (version 2014.3.1021). Allows export to __XSLX, CSV, PDF__ and __TXT__ formats. Supported with .NET 4.0 or newer.
+* [SpreadExcelExport]({%slug winforms/gridview/exporting-data/spread-export%}): Available since R3 2014 (version 2014.3.1021). Allows export to __XSLX, CSV, PDF__ and __TXT__ formats. Supported with .NET 4.0 or newer. The exporter utilized the RadSpreadProcessing library, where you have the whole excel workbook available for edit.
 
-* [SpreadStreemExport]({%slug winforms/gridview/exporting-data/stream-export%}): Does not load the entire document in the memory. Useful for exporting large amount of data. 
+* [SpreadStreemExport]({%slug winforms/gridview/exporting-data/stream-export%}): Utilized RadSpreadStreamProcessing library, hence does not load the entire document in the memory, instead it writes everything straight to the file. Useful for exporting large amount of data. 
 
-* [Export to Excel via ExcelML]({%slug winforms/gridview/exporting-data/export-to-excel-via-excelml-format%}): Exports to XML format, can be opened with excel as well. Use for .NET 2.0 applications.  
+* [Export to Excel via ExcelML]({%slug winforms/gridview/exporting-data/export-to-excel-via-excelml-format%}): Exports to Excel ML (XML format), and can be opened with excel as well. Use for .NET 2.0 applications.  
 
 * [Export to CSV]({%slug winforms/gridview/exporting-data/export-to-csv%})
 
