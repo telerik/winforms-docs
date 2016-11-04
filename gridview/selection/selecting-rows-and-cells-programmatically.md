@@ -149,18 +149,18 @@ Selecting multiple cells programmatically is achieved by setting the IsSelected 
 radGridView1.MultiSelect = true;
 radGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.CellSelect;
 radGridView1.Rows[0].Cells[0].IsSelected = true;
-radGridView1.Rows[3].Cells[4].IsSelected = true;
-radGridView1.Rows[5].Cells[6].IsSelected = true;
-radGridView1.Rows[6].Cells[8].IsSelected = true;
+radGridView1.Rows[3].Cells[1].IsSelected = true;
+radGridView1.Rows[5].Cells[2].IsSelected = true;
+radGridView1.Rows[6].Cells[3].IsSelected = true;
 
 ````
 ````VB.NET
 RadGridView1.MultiSelect = True
 RadGridView1.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.CellSelect
 RadGridView1.Rows(0).Cells(0).IsSelected = True
-RadGridView1.Rows(3).Cells(4).IsSelected = True
-RadGridView1.Rows(5).Cells(6).IsSelected = True
-RadGridView1.Rows(6).Cells(8).IsSelected = True
+RadGridView1.Rows(3).Cells(1).IsSelected = True
+RadGridView1.Rows(5).Cells(2).IsSelected = True
+RadGridView1.Rows(6).Cells(3).IsSelected = True
 
 ````
 
