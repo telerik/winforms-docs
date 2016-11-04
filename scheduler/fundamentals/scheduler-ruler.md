@@ -42,7 +42,8 @@ Dim ruler As RulerPrimitive = TryCast(Me.scheduler.SchedulerElement.ViewElement,
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=TimePointerStyle}} 
 
 ````C#
-ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow;
+//ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow;
+//
 
 ````
 ````VB.NET
@@ -60,8 +61,9 @@ ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=StartEndScale}} 
 
 ````C#
-ruler.StartScale = 2;
-ruler.EndScale = 9;
+//ruler.StartScale = 2;
+//ruler.EndScale = 9;
+//
 
 ````
 ````VB.NET
@@ -81,11 +83,12 @@ ruler.EndScale = 9
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=RangeFactor}} 
 
 ````C#
-ruler.RangeFactor = ScaleRange.Hour;
+//ruler.RangeFactor = ScaleRange.FiveMinutes;
+//
 
 ````
 ````VB.NET
-ruler.RangeFactor = ScaleRange.Hour
+ruler.RangeFactor = ScaleRange.FiveMinutes
 
 ````
 
@@ -100,8 +103,9 @@ ruler.RangeFactor = ScaleRange.Hour
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=CurrentTimePointerWidthAndColor}} 
 
 ````C#
-ruler.CurrentTimePointerWidth = 10;
-ruler.CurrentTimePointerColor = Color.Red;
+//ruler.CurrentTimePointerWidth = 10;
+//ruler.CurrentTimePointerColor = Color.Red;
+//
 
 ````
 ````VB.NET
@@ -179,7 +183,8 @@ End Sub
 {{source=..\SamplesVB\Scheduler\Fundamentals\Ruler.vb region=RulerWidth}} 
 
 ````C#
-ruler.RulerWidth = 100;
+//ruler.RulerWidth = 100;
+//
 
 ````
 ````VB.NET
