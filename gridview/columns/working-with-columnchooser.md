@@ -1,7 +1,7 @@
 ---
 title: Working with ColumnChooser
 page_title: Working with ColumnChooser | RadGridView
-description: Working with ColumnChooser
+description: The Column Chooser allows you to hide or show the columns at run-time.
 slug: winforms/gridview/columns/working-with-columnchooser
 tags: working,with,columnchooser
 published: True

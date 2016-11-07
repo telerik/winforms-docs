@@ -1,7 +1,7 @@
 ---
 title: Printing Support
 page_title: Printing Support | RadGridView
-description: Printing Support
+description: The built-in print functionality allows the end user to change various print settings at run-time.
 slug: winforms/gridview/end-user-capabilities/printing-support
 tags: printing,support
 published: True

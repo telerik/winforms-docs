@@ -1,7 +1,7 @@
 ---
 title: Editing
 page_title: Editing | RadGridView
-description: Editing
+description: RadGridView allows data entry, data edit, and validation. The data can be edited by using editors specific for each column type.
 slug: winforms/gridview/fundamentals/editing
 tags: editing
 published: True

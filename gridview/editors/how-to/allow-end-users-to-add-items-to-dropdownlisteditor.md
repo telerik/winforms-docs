@@ -1,7 +1,7 @@
 ---
 title: Allow end-users to add items to DropDownListEditor
 page_title: Allow end-users to add items to DropDownListEditor | RadGridView
-description: Allow end-users to add items to DropDownListEditor
+description: Allow end-users to add items to DropDownListEditor by directly typing the value at run-time.
 slug: winforms/gridview/editors/how-to/allow-end-users-to-add-items-to-dropdownlisteditor
 tags: allow,end-users,to,add,items,to,dropdownlisteditor
 published: True

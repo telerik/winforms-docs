@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization | RadGridView
-description: Localization
+description: Translate every string used in RadGridView to any desired language.
 slug: winforms/gridview/expression-editor/localization
 tags: localization
 published: True

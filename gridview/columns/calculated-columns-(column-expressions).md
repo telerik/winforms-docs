@@ -1,7 +1,7 @@
 ---
 title: Calculated Columns (Column Expressions)
 page_title: Calculated Columns (Column Expressions) | RadGridView
-description: Calculated Columns (Column Expressions)
+description: Set the expression of the columns to dynamically calculate the values shown in it.
 slug: winforms/gridview/columns/calculated-columns-(column-expressions)
 tags: calculated,columns,(column,expressions)
 published: True

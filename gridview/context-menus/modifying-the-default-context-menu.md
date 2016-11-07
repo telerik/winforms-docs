@@ -1,7 +1,7 @@
 ---
 title: Modifying the Default Context Menu
 page_title: Modifying the Default Context Menu | RadGridView
-description: Modifying the Default Context Menu
+description: This article shows how you can add an items to the default context menu.
 slug: winforms/gridview/context-menus/modifying-the-default-context-menu
 tags: modifying,the,default,context,menu
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Conditional Formatting Cells
 page_title: Conditional Formatting Cells | RadGridView
-description: Conditional Formatting Cells
+description: Change the styled of a cell using a specific formatting rule (ConditionalFormattingObjects).
 slug: winforms/gridview/cells/conditional-formatting-cells
 tags: conditional,formatting,cells
 published: True

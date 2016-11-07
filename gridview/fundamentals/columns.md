@@ -1,7 +1,7 @@
 ---
 title: Columns
 page_title: Columns | RadGridView
-description: Columns
+description: This article shows the main columns types supported in RadGridView.
 slug: winforms/gridview/fundamentals/columns
 tags: columns
 published: True

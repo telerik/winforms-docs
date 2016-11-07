@@ -1,7 +1,7 @@
 ---
 title: GridViewImageColumn
 page_title: GridViewImageColumn | RadGridView
-description: GridViewImageColumn
+description: GridViewImageColumn displays read-only images for database columns of image data. 
 slug: winforms/gridview/columns/column-types/gridviewimagecolumn
 tags: gridviewimagecolumn
 published: True

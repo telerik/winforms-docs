@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Editors | RadGridView
-description: Editors
+description: RadGridView provides build-in functionality for editing the data.
 slug: winforms/gridview/editors/editors
 tags: editors
 published: True

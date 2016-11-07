@@ -1,7 +1,7 @@
 ---
 title: Element Hierarchy
 page_title: Element Hierarchy | RadGridView
-description: Element Hierarchy
+description: This article shows the main elements hierarchy used in RadgridView.
 slug: winforms/gridview/fundamentals/element-hierarchy
 tags: element,hierarchy
 published: True

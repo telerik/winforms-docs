@@ -1,7 +1,7 @@
 ---
 title: Logical vs. Visual Grid Structure
 page_title: Logical vs. Visual Grid Structure | RadGridView
-description: Logical vs. Visual Grid Structure
+description: RadGridView uses UI Virtualization and because of this the visual representation does not match the logical one.  
 slug: winforms/gridview/fundamentals/logical-vs.-visual-grid-structure
 tags: logical,vs.,visual,grid,structure
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events | RadGridView
-description: Events
+description: This article shows the events fired when the user is perfoming a filtering operation.
 slug: winforms/gridview/filtering/events
 tags: events
 published: True

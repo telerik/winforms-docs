@@ -1,7 +1,7 @@
 ---
 title: Filtering Row
 page_title: Filtering Row | RadGridView
-description: Filtering Row
+description: This article shows the properties that control the filtering row appearance.
 slug: winforms/gridview/filtering/filtering-row
 tags: filtering,row
 published: True
@@ -17,7 +17,7 @@ The __GridFilterRowElement__ is the row that holds the filtering boxes. It appea
 
 You can hide the operator text of the filter cells by setting the __ShowFilterCellOperator__ property to *false*:
 
-#### Hide filter row
+#### Hide operator text.
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=filterOperatorText}} 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=filterOperatorText}} 

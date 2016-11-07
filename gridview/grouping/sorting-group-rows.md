@@ -1,7 +1,7 @@
 ---
 title: Sorting group rows
 page_title: Sorting group rows | RadGridView
-description: Sorting group rows
+description: This article demonstrates how to customize the groups sort order.
 slug: winforms/gridview/grouping/sorting-group-rows
 tags: sorting,group,rows
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Customizing editor behavior
 page_title: Customizing editor behavior | RadGridView
-description: Customizing editor behavior
+description: Use the CellBeginEdit or CellEditorInitialized events to access the active editor and change its properties.
 slug: winforms/gridview/editors/customizing-editor-behavior
 tags: customizing,editor,behavior
 published: True
@@ -11,11 +11,11 @@ previous_url: gridview-editors-customizing-editor-behavior
 
 # Customizing editor behavior
 
-The look and behavior of grid editors can be changed programmatically. This can be done either in CellBeginEdit or in CellEditorInitialized event. 
+The look and behavior of grid editors can be changed programmatically. This can be done either in __CellBeginEdit__ or in __CellEditorInitialized__ events. 
 
-* __CellBeginEdit__ event is fired when the editor is created
+* __CellBeginEdit:__ Fired when the editor is created.
 
-* __CellEditorInitialized__ is fired when the editor is created and initialized with a predefined set of properties
+* __CellEditorInitialized:__ Fired when the editor is created and initialized with a predefined set of properties.
 
 The following sample demonstrates how to change the default ForeColor of __GridSpinEditor__:
 

@@ -1,7 +1,7 @@
 ---
 title: Export to HTML
 page_title: Export to HTML | RadGridView
-description: Export to HTML
+description: This method offers excellent export performance and creates an HTML formatted file, which can be opened in a browser or MS Word.
 slug: winforms/gridview/exporting-data/export-to-html
 tags: export,to,html
 published: True

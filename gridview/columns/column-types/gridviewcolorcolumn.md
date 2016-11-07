@@ -1,7 +1,7 @@
 ---
 title: GridViewColorColumn
 page_title: GridViewColorColumn | RadGridView
-description: GridViewColorColumn
+description: GridViewColorColumn__ allows RadGridView to edit colors using RadColorDialog.
 slug: winforms/gridview/columns/column-types/gridviewcolorcolumn
 tags: gridviewcolorcolumn
 published: True

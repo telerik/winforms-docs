@@ -1,7 +1,7 @@
 ---
 title: Group Aggregates
 page_title: Group Aggregates | RadGridView
-description: Group Aggregates
+description: Format the text in the group row using the default parameters.
 slug: winforms/gridview/grouping/group-aggregates
 tags: group,aggregates
 published: True

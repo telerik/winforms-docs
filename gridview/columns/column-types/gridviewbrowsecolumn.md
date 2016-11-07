@@ -1,7 +1,7 @@
 ---
 title: GridViewBrowseColumn
 page_title: GridViewBrowseColumn | RadGridView
-description: GridViewBrowseColumn
+description: GridViewBrowseColumn allows RadGridView to edit file paths using OpenFileDialog.
 slug: winforms/gridview/columns/column-types/gridviewbrowsecolumn
 tags: gridviewbrowsecolumn
 published: True

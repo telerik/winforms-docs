@@ -1,7 +1,7 @@
 ---
 title: GridViewCheckBoxColumn
 page_title: GridViewCheckBoxColumn | RadGridView
-description: GridViewCheckBoxColumn
+description: GridViewCheckBoxColumn displays and allows editing of boolean data. The values are shown as check boxes.
 slug: winforms/gridview/columns/column-types/gridviewcheckboxcolumn
 tags: gridviewcheckboxcolumn
 published: True

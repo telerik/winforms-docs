@@ -1,7 +1,7 @@
 ---
 title: End-user Support
 page_title: End-user Support | RadGridView
-description: End-user Support
+description: End-users can open the RadExpressionEditor by navigating to a built-in menu item from the context menu of RadGridView.
 slug: winforms/gridview/expression-editor/end-user-support
 tags: end-user,support
 published: True

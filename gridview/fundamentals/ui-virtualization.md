@@ -1,7 +1,7 @@
 ---
 title: UI Virtualization
 page_title: UI Virtualization | RadGridView
-description: UI Virtualization
+description: This article shows how the UI Virtualization works in RadGridView.
 slug: winforms/gridview/fundamentals/ui-virtualization
 tags: ui,virtualization
 published: True

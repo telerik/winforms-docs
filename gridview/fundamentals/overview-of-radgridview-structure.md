@@ -1,7 +1,7 @@
 ---
 title: Overview of RadGridView Structure
 page_title: Overview of RadGridView Structure | RadGridView
-description: Overview of RadGridView Structure
+description: This article shows the main elements used in each RadGridView control.
 slug: winforms/gridview/fundamentals/overview-of-radgridview-structure
 tags: overview,of,radgridview,structure
 published: True

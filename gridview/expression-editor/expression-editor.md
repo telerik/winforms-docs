@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Expression Editor | RadGridView
-description: Expression Editor
+description: RadExpressionEditor is a powerful editor that allows you to build complex expressions using a simple Domain Specific Language.
 slug: winforms/gridview/expression-editor
 tags: expression,editor
 published: True

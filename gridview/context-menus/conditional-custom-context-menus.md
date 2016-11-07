@@ -1,7 +1,7 @@
 ---
 title: Conditional Custom Context Menus
 page_title: Conditional Custom Context Menus | RadGridView
-description: Conditional Custom Context Menus
+description: Apply custom context menu for the cells of a specific column only.
 slug: winforms/gridview/context-menus/conditional-custom-context-menus
 tags: conditional,custom,context,menus
 published: True

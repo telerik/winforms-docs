@@ -1,7 +1,7 @@
 ---
 title: Editing Behavior
 page_title: Editing Behavior | RadGridView
-description: Editing Behavior
+description: This article shows how the end user can perform an editing operation. 
 slug: winforms/gridview/end-user-capabilities/editing-behavior
 tags: editing,behavior
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Resizing Columns
 page_title: Resizing Columns | RadGridView
-description: Resizing Columns
+description: You can easily change the column width by positioning the mouse over the columns vertical grid line and dragging it.
 slug: winforms/gridview/end-user-capabilities/resizing-columns
 tags: resizing,columns
 published: True

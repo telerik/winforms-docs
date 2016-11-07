@@ -1,7 +1,7 @@
 ---
 title: Smart Tag
 page_title: Smart Tag | RadGridView
-description: Smart Tag
+description: This article shows the various options available in the Smart Tag of RadGridView.
 slug: winforms/gridview/design-time-support/smart-tag
 tags: smart,tag
 published: True

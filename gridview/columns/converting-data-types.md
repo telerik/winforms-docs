@@ -1,7 +1,7 @@
 ---
 title: Converting Data Types
 page_title: Converting Data Types | RadGridView
-description: Converting Data Types
+description: Convert the data stored in the database to any other format that you want to present to the user.
 slug: winforms/gridview/columns/converting-data-types
 tags: converting,data,types
 published: True

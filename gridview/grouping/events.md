@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events | RadGridView
-description: Events
+description: This article shows how one can use the GroupByChanged and GroupByChanging events to control the groping operation.
 slug: winforms/gridview/grouping/events
 tags: events
 published: True

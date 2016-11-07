@@ -1,7 +1,7 @@
 ---
 title: Creating Custom Cells
 page_title: Creating Custom Cells | RadGridView
-description: Creating custom cells
+description: Create custom cell with a progress bar and a custom column that uses it.
 slug: winforms/gridview/cells/creating-custom-cells
 tags: creating,custom,cells
 published: True

@@ -1,15 +1,15 @@
 ---
-title: Resizing columns programatically
-page_title: Resizing columns programatically | RadGridView
-description: Resizing columns programatically
+title: Resizing columns programmatically
+page_title: Resizing columns programmatically | RadGridView
+description: Set the columns size either manually or use the API to size the columns according to their content.
 slug: winforms/gridview/columns/resizing-columns-programatically
-tags: resizing,columns,programatically
+tags: resizing,columns,programmatically
 published: True
 position: 6
 previous_url: gridview-columns-resizing-columns-programatically
 ---
 
-# Resizing columns programatically
+# Resizing columns programmatically
 
 ## Resizing columns
 
@@ -61,7 +61,7 @@ Me.RadGridView1.Columns("Photo").AllowResize = False
 
 The width of columns can be set individually, per column. Note that the visible width will always include some amount of data even when set to very small amounts. To resize the columns programmatically you can use the __Width__ property. For example: 
 
-#### Rezise a column programatically
+#### Resize a column programmatically
 
 {{source=..\SamplesCS\GridView\Columns\ResizingColumns.cs region=resizingColumn}} 
 {{source=..\SamplesVB\GridView\Columns\ResizingColumns.vb region=resizingColumn}} 

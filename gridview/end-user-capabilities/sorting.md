@@ -1,7 +1,7 @@
 ---
 title: Sorting
 page_title: Sorting | RadGridView
-description: Sorting
+description: The end-user can click on the header of the desired column to toggle between the sorting directions.
 slug: winforms/gridview/end-user-capabilities/sorting
 tags: sorting
 published: True

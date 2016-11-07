@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events | RadGridView
-description: Events
+description: This article describes the events fired along the editing process.
 slug: winforms/gridview/editors/events
 tags: events
 published: True
@@ -13,7 +13,7 @@ previous_url: gridview-editors-events
 
 The following events occur during the editing process:
 
-__EditorRequired__ – This is the first event that fires when a cell is to become editable (edit mode). 
+__EditorRequired:__  This is the first event that fires when a cell is to become editable (edit mode). 
 
 >note This is the right place to replace the editor with a custom one.[Here]({%slug winforms/gridview/editors/using-custom-editors%}) is an example of this behavior.
 >

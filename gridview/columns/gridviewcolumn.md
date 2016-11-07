@@ -1,7 +1,7 @@
 ---
 title: GridViewColumn
 page_title: GridViewColumn | RadGridView
-description: GridViewColumn
+description: GridViewColumn is the base class for all types of RadGridView columns, including GridViewDataColumn.
 slug: winforms/gridview/columns/column-types/gridviewcolumn
 tags: gridviewcolumn
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Custom Grouping
 page_title: Custom Grouping | RadGridView
-description: Custom grouping is a flexible mechanism for creating RadGridView groups by using custom logic. It has a higher priority than the applied GroupDescriptors (added either by code or by dragging columns to the group panel).
+description: Custom grouping is a flexible mechanism for creating RadGridView groups by using custom logic.
 slug: winforms/gridview/grouping/custom-grouping
 tags: custom,grouping
 published: True

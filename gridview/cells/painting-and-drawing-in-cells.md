@@ -1,7 +1,7 @@
 ---
 title: Painting and Drawing in Cells
 page_title: Painting and Drawing in Cells | RadGridView
-description: Painting and drawing in cells
+description: This article shows how you can manually paint in the cells inside RadGridView.
 slug: winforms/gridview/cells/painting-and-drawing-in-cells
 tags: painting,and,drawing,in,cells
 published: True

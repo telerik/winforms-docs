@@ -1,7 +1,7 @@
 ---
 title: Put a filter cell into edit mode programmatically
 page_title: Put a filter cell into edit mode programmatically | RadGridView
-description: Put a filter cell into edit mode programmatically
+description: This article shows how you can put a filter cell into edit mode programmatically.
 slug: winforms/gridview/filtering/put-a-filter-cell-into-edit-mode-programmatically
 tags: put,a,filter,cell,into,edit,mode,programmatically
 published: True

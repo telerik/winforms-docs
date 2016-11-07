@@ -1,7 +1,7 @@
 ---
 title: Data Formatting
 page_title: Data Formatting | RadGridView
-description: Data Formatting
+description: Format the text of the cells according to your desired format. 
 slug: winforms/gridview/columns/data-formatting
 tags: data,formatting
 published: True

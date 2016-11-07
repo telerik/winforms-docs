@@ -1,7 +1,7 @@
 ---
 title: Groups Collection
 page_title: Groups Collection | RadGridView
-description: Groups Collection
+description: Access all current groups using  
 slug: winforms/gridview/grouping/groups-collection
 tags: groups,collection
 published: True

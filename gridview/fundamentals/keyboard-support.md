@@ -1,7 +1,7 @@
 ---
 title: Keyboard Support
 page_title: Keyboard Support | RadGridView
-description: Keyboard Support
+description: This articled shows what the end user can do with the keyboard when RadGridView is focused.
 slug: winforms/gridview/fundamentals/keyboard-support
 tags: keyboard,support
 published: True
@@ -11,8 +11,6 @@ previous_url: gridview-fundamentals-keyboard-support
 
 # Keyboard Support
 
-## Keyboard support
-      
 
 A typical business application needs to support "heads-down" data entry that avoids the use of the mouse. With RadGridView the user can:
 

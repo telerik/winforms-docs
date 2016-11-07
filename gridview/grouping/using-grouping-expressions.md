@@ -1,7 +1,7 @@
 ---
 title: Using Grouping Expressions
 page_title: Using Grouping Expressions | RadGridView
-description: Using Grouping Expressions
+description: Use Expression pretty to customize the grouping and group by multiple columns.
 slug: winforms/gridview/grouping/using-grouping-expressions
 tags: using,grouping,expressions
 published: True

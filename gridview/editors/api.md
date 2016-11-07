@@ -1,7 +1,7 @@
 ---
 title: API
 page_title: API | RadGridView
-description: API
+description: This article show the most commonly used properties and methods used with the editing process.
 slug: winforms/gridview/editors/api
 tags: api
 published: True
@@ -21,8 +21,8 @@ The editing process can be controlled by using the following methods:
 
 * __CancelEdit:__ Closes the currently active editor and discards all changes.
 
-* __ActiveEditor__ property contains reference to the currently active editor. 
+* __ActiveEditor:__ This property contains reference to the currently active editor. 
 
-* __IsInEditMode__ property indicates whether the grid is in edit mode.
+* __IsInEditMode:__ This property indicates whether the grid is in edit mode.
 
 All editors used in __RadGridView__ inherit from __BaseGridEditor__ class. This class does not inherit from __RadElement__. You should use its __EditorElement__ property if you want to customize any element properties.

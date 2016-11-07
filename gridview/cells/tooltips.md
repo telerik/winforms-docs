@@ -1,7 +1,7 @@
 ---
 title: ToolTips
 page_title: ToolTips | RadGridView
-description: ToolTips
+description: This article explains how you can show tooltips for different RadGridView elements. 
 slug: winforms/gridview/cells/tooltips
 tags: tooltips
 published: True

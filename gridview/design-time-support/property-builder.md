@@ -1,7 +1,7 @@
 ---
 title: Property Builder
 page_title: Property Builder | RadGridView
-description: Property Builder
+description: The Property Builder allows you to build your grid structure at design time.
 slug: winforms/gridview/design-time-support/property-builder
 tags: property,builder
 published: True

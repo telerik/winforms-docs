@@ -1,7 +1,7 @@
 ---
 title: Iterating Cells
 page_title: Iterating Cells | RadGridView
-description: Iterating Cells
+description: You can iterate through the cells of each row using the __Cells__ collection of GridViewCellInfo.
 slug: winforms/gridview/cells/iterating-cells
 tags: iterating,cells
 published: True

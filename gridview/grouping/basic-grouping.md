@@ -1,7 +1,7 @@
 ---
 title: Basic Grouping
 page_title: Basic Grouping | RadGridView
-description: Basic Grouping
+description: This article describes the built-in graping functionality supported in RadGridView.
 slug: winforms/gridview/grouping/basic-grouping
 tags: basic,grouping
 published: True

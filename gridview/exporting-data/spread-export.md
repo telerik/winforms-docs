@@ -1,7 +1,7 @@
 ---
 title: Export to Excel
 page_title: Export to Excel  | RadGridView
-description: Export to Excel 
+description: This article will explain in detail the SpreadExport abilities and will demonstrate how to use it.
 slug: winforms/gridview/exporting-data/spread-export
 tags: spread,export,excel,xlsx
 published: True

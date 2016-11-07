@@ -1,7 +1,7 @@
 ---
 title: Handling Editors' events
 page_title: Handling Editors' events | RadGridView
-description: Handling Editors' events
+description: This article shows how you can use the CellEditorInitialized event handler to access the active editor.
 slug: winforms/gridview/editors/handling-editors'-events
 tags: handling,editors',events
 published: True

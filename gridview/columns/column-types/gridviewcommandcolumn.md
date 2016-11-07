@@ -1,7 +1,7 @@
 ---
 title: GridViewCommandColumn
 page_title: GridViewCommandColumn | RadGridView
-description: GridViewCommandColumn
+description: GridViewCommandColumn displays a button element that responds to user input mouse clicks and keyboard key presses.
 slug: winforms/gridview/columns/column-types/gridviewcommandcolumn
 tags: gridviewcommandcolumn
 published: True

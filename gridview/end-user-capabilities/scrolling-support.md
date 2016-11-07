@@ -1,7 +1,7 @@
 ---
 title: Scrolling Support
 page_title: Scrolling Support | RadGridView
-description: Scrolling Support
+description: Once there is not enough space for the rows or columns scrollbars will appear and the user will be able to scroll.
 slug: winforms/gridview/end-user-capabilities/scrolling-support
 tags: scrolling,support
 published: True

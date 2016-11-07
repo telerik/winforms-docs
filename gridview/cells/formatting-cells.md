@@ -1,7 +1,7 @@
 ---
 title: Formatting Cells
 page_title: Formatting Cells | RadGridView
-description: Formatting Cells
+description: Changing cells' styles must be performed in the formating events due to the UI Virtualization. 
 slug: winforms/gridview/cells/formatting-cells
 tags: formatting,cells
 published: True

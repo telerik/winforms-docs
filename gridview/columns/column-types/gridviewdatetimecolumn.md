@@ -1,7 +1,7 @@
 ---
 title: GridViewDateTimeColumn
 page_title: GridViewDateTimeColumn | RadGridView
-description: GridViewDateTimeColumn
+description: GridViewDateTimeColumn provides date entry and formatting for DateTime data types.
 slug: winforms/gridview/columns/column-types/gridviewdatetimecolumn
 tags: gridviewdatetimecolumn
 published: True

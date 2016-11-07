@@ -1,7 +1,7 @@
 ---
 title: Style Property
 page_title: Style Property | RadGridView
-description: Formatting Cells
+description: Use the Style property to change the styles of each cell separately.
 slug: winforms/gridview/cells/style
 tags: formatting,cells
 published: True

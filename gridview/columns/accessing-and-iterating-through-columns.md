@@ -1,7 +1,7 @@
 ---
 title: Accessing and Iterating through Columns
 page_title: Accessing and Iterating through Columns | RadGridView
-description: Accessing and Iterating through Columns
+description: This article shows how one can access and Iterate through the Columns in RadGridView.
 slug: winforms/gridview/columns/accessing-and-iterating-through-columns
 tags: accessing,and,iterating,through,columns
 published: True

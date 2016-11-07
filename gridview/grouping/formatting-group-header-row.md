@@ -1,7 +1,7 @@
 ---
 title: Formatting Group Header Row
 page_title: Formatting Group Header Row | RadGridView
-description: Formatting Group Header Row
+description: Use the GroupSummaryEvaluate event to modify the header text of the group rows. 
 slug: winforms/gridview/grouping/formatting-group-header-row
 tags: formatting,group,header,row
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Setting Filters Programmatically (composite descriptors)
 page_title: Setting Filters Programmatically (composite descriptors) | RadGridView
-description: Setting Filters Programmatically (composite descriptors)
+description: To filter a single data field by multiple values, you have to use the CompositeFilterDescriptor object.
 slug: winforms/gridview/filtering/setting-filters-programmatically-(composite-descriptors)
 tags: setting,filters,programmatically,(composite,descriptors)
 published: True

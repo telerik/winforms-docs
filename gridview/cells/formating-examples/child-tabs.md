@@ -1,7 +1,7 @@
 ---
 title: Hiding Child Tabs when no Data is Available
 page_title: Hiding Child Tabs when no Data is Available | RadGridView
-description: Formatting Cells
+description: Use the CellFormatting event to hide all child tabs when when there is no data in them. 
 slug: winforms/gridview/cells/formatting-childtabs
 tags: formatting,cells
 published: True

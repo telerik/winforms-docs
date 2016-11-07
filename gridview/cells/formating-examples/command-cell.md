@@ -1,7 +1,7 @@
 ---
 title: Formatting GridViewCommandColumn
 page_title: Formatting GridViewCommandColumn | RadGridView
-description: Formatting Cells
+description: Use cell formating change the styles of the buttons used in the GridViewCommandColumn.
 slug: winforms/gridview/cells/formatting-command-column
 tags: formatting,cells
 published: True

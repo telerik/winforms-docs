@@ -1,7 +1,7 @@
 ---
 title: Excel-like filtering
 page_title: Excel-like filtering | RadGridView
-description: Excel-like filtering
+description: Excel-like filtering is built in a way to mimic the standard excel filtering functionality.
 slug: winforms/gridview/filtering/excel-like-filtering
 tags: excel-like,filtering
 published: True

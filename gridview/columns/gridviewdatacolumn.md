@@ -1,7 +1,7 @@
 ---
 title: GridViewDataColumn
 page_title: GridViewDataColumn | RadGridView
-description: GridViewDataColumn
+description: GridViewDataColumn descends from GridViewColumn and is the base class for all data bound column types.
 slug: winforms/gridview/columns/column-types/gridviewdatacolumn
 tags: gridviewdatacolumn
 published: True
@@ -11,7 +11,7 @@ previous_url: gridview-columns-gridviewdatacolumn, /devtools/winforms/gridview/c
 
 # GridViewDataColumn
 
-__GridViewDataColumn__ descends from __GridViewColumn__ and is the base class for all data bound column types. Using __GridViewDataColumn__ you can find out the data type for the column and other properties that relate specificly to data binding including:
+__GridViewDataColumn__ descends from __GridViewColumn__ and is the base class for all data bound column types. Using __GridViewDataColumn__ you can find out the data type for the column and other properties that relate specifically to data binding including:
 
 * Grouping and sorting properties: __AllowDragToGroup__, __AllowGroup__, __AllowSort, IsGrouped, IsSorted.__
 

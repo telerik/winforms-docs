@@ -1,7 +1,7 @@
 ---
 title: Key Features
 page_title: Key Features | RadGridView
-description: Key Features
+description: This article list the the features supported in RadGridView out of the box. 
 slug: winforms/gridview/fundamentals/key-features
 tags: key,features
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Setting Groups Programmatically
 page_title: Setting Groups Programmatically | RadGridView
-description: Setting Groups Programmatically
+description: Use the GroupDescriptors collection to manipulate the grouping at runtime.
 slug: winforms/gridview/grouping/setting-groups-programmatically
 tags: setting,groups,programmatically
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Design-time
 page_title: Design-time | RadGridView
-description: Design-time
+description: Use the RadExpressionEditor at design-time to construct the formula used for the cells values.  
 slug: winforms/gridview/expression-editor/design-time
 tags: design-time
 published: True
@@ -11,7 +11,7 @@ previous_url: gridview-expressioneditor-design-time
 
 # Design-time
 
-At design time you can open __RadExpressionEditor__ by clicking the ellipsis button of the columns'  __Expression__ property:
+At design time you can open __RadExpressionEditor__ by clicking the ellipsis button of the columns' __Expression__ property:
 
 ![gridview-expressioneditor-design-time 001](images/gridview-expressioneditor-design-time001.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Binding the Grid
 page_title: Binding the Grid | RadGridView
-description: Binding the Grid
+description: This article shows the supported binding capabilities of RadGridView.
 slug: winforms/gridview/fundamentals/binding-the-grid
 tags: binding,the,grid
 published: True
