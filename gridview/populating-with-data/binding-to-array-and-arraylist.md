@@ -1,7 +1,7 @@
 ---
 title: Binding to Array and ArrayList
 page_title: Binding to Array and ArrayList | RadGridView
-description: Binding to Array and ArrayList
+description: This article shows how you can bind radgridView to an Array or ArrayList.
 slug: winforms/gridview/populating-with-data/binding-to-array-and-arraylist
 tags: binding,to,array,and,arraylist
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Resizing child GridViewInfo
 page_title: Resizing child GridViewInfo | RadGridView
-description: Resizing child GridViewInfo
+description: This article shows how you can et the size of the child template rows with code.
 slug: winforms/gridview/hierarchical-grid/how-to/resizing-child-gridviewinfo
 tags: resizing,child,gridviewinfo
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Binding to Hierarchical Data Programmatically
 page_title: Binding to Hierarchical Data Programmatically | RadGridView
-description: Binding to Hierarchical Data Programmatically
+description: Programmatically create a hierarchical grid that displays arbitrary number of child levels.
 slug: winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically
 tags: binding,to,hierarchical,data,programmatically
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Binding to Hierarchical Data
 page_title: Binding to Hierarchical Data | RadGridView
-description: Binding to Hierarchical Data
+description: Create a hierarchical grid that displays arbitrary number of child levels.
 slug: winforms/gridview/hierarchical-grid/binding-to-hierarchical-data
 tags: binding,to,hierarchical,data
 published: True

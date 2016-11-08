@@ -1,7 +1,7 @@
 ---
 title: Object Relational Hierarchy Mode
 page_title: Object Relational Hierarchy Mode | RadGridView
-description: Object Relational Hierarchy Mode
+description: The Object-Relational Hierarchy mode is used to show hierarchy based on a complex IList object that contains inner ILits properties.
 slug: winforms/gridview/hierarchical-grid/object-relational-hierarchy-mode
 tags: object,relational,hierarchy,mode
 published: True
@@ -13,7 +13,7 @@ previous_url: gridview-hierarchical-grid-object-relational-hierarchy-mode
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Creating Object Relational Hierarchies in RadGridView for WinForms](http://tv.telerik.com/watch/winforms/creating-object-relational-hierarchies-in-radgridview-for-winforms)<br>In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![gridview-hierarchical-grid-object-relational-hierarchy-mode 005](images/gridview-hierarchical-grid-object-relational-hierarchy-mode005.png)|
+|[Creating Object Relational Hierarchies in RadGridView](http://tv.telerik.com/watch/winforms/creating-object-relational-hierarchies-in-radgridview-for-winforms)<br>In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![gridview-hierarchical-grid-object-relational-hierarchy-mode 005](images/gridview-hierarchical-grid-object-relational-hierarchy-mode005.png)|
 
 ## Auto generating hierarchy mode 
 

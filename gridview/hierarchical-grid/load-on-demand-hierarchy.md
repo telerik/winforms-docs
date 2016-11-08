@@ -1,7 +1,7 @@
 ---
 title: Load-On-Demand Hierarchy
 page_title: Load-On-Demand Hierarchy | RadGridView
-description: Load-On-Demand Hierarchy
+description: This article shows how you can dynamically load the data in the child levels. 
 slug: winforms/gridview/hierarchical-grid/load-on-demand-hierarchy
 tags: load-on-demand,hierarchy
 published: True

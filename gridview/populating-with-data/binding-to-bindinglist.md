@@ -1,7 +1,7 @@
 ---
 title: Binding to BindingList
 page_title: Binding to BindingList | RadGridView
-description: Binding to BindingList
+description: This article shows how you can bind RadGridView to a BindingList. 
 slug: winforms/gridview/populating-with-data/binding-to-bindinglist
 tags: binding,to,bindinglist
 published: True

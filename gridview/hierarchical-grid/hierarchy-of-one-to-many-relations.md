@@ -1,7 +1,7 @@
 ---
 title: Hierarchy of one to many relations
 page_title: Hierarchy of one to many relations | RadGridView
-description: Hierarchy of one to many relations
+description: Bind RadgridView to a hierarchy containing one to many relations.
 slug: winforms/gridview/hierarchical-grid/hierarchy-of-one-to-many-relations
 tags: hierarchy,of,one,to,many,relations
 published: True

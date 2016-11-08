@@ -1,7 +1,7 @@
 ---
 title: Databinding RadGridView
 page_title: Databinding RadGridView | RadGridView
-description: Databinding RadGridView
+description: This article list the main bindable types which can be used as data source for RadGridView. 
 slug: winforms/gridview/populating-with-data/databinding-radgridview
 tags: databinding,radgridview
 published: True

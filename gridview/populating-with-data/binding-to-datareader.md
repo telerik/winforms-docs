@@ -1,7 +1,7 @@
 ---
 title: Binding to DataReader
 page_title: Binding to DataReader | RadGridView
-description: Binding to DataReader
+description: This article shows how you can directly load the data from a data reader to RadGridView.
 slug: winforms/gridview/populating-with-data/binding-to-datareader
 tags: binding,to,datareader
 published: True

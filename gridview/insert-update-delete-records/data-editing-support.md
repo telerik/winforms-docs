@@ -1,7 +1,7 @@
 ---
 title: Data Editing Support
 page_title: Data Editing Support | RadGridView
-description: Data Editing Support
+description: This article shows lists all built-in editors and the properties that control the editing process.
 slug: winforms/gridview/insert/update/delete-records/data-editing-support
 tags: data,editing,support
 published: True
@@ -10,8 +10,6 @@ previous_url: gridview-insert-update-delete-records-data-editing-support
 ---
 
 # Data Editing Support
-
-
 
 ## Control Cell Editing, Addition and Removal of rows
 

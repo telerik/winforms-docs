@@ -1,7 +1,7 @@
 ---
 title: Binding to Sub Objects
 page_title: Binding to Sub Objects | RadGridView
-description: Binding to Sub Objects
+description: Bind specific columns to sub object fields using the dot notation. 
 slug: winforms/gridview/populating-with-data/binding-to-sub-objects
 tags: binding,to,sub,objects
 published: True

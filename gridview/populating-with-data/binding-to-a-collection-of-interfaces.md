@@ -1,7 +1,7 @@
 ---
 title: Binding to a Collection of Interfaces
 page_title: Binding to a Collection of Interfaces | RadGridView
-description: Binding to a Collection of Interfaces
+description: This article shows how you can bind RadGridView to a collection of interfaces.
 slug: winforms/gridview/populating-with-data/binding-to-a-collection-of-interfaces
 tags: binding,to,a,collection,of,interfaces
 published: True

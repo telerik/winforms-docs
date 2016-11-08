@@ -1,7 +1,7 @@
 ---
 title: Expanding all rows
 page_title: Expanding all rows | RadGridView
-description: Expanding all rows
+description: This article shows how you can expand all rows in a hierarchical grid. 
 slug: winforms/gridview/hierarchical-grid/how-to/expanding-all-rows
 tags: expanding,all,rows
 published: True

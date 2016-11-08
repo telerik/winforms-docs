@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization | RadGridView
-description: Localization
+description: This article shows how you can localize all string used inside RadGridView.
 slug: winforms/gridview/localization/localization
 tags: localization
 published: True

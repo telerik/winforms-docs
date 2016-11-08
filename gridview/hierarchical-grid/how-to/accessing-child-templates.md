@@ -1,7 +1,7 @@
 ---
 title: Accessing Child Templates
 page_title: Accessing Child Templates | RadGridView
-description: Accessing Child Templates
+description: This article shows how you can access the Child Templates of RadGridView.
 slug: winforms/gridview/hierarchical-grid/how-to/accessing-child-templates
 tags: accessing,child,templates
 published: True

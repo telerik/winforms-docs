@@ -1,7 +1,7 @@
 ---
 title: Binding to ObservableCollection
 page_title: Binding to ObservableCollection | RadGridView
-description: Binding to ObservableCollection
+description: This article demonstrates how you can bind RadGridView to an ObservableCollection.
 slug: winforms/gridview/populating-with-data/binding-to-observablecollection
 tags: binding,to,observablecollection
 published: True

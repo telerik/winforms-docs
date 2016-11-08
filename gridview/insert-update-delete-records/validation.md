@@ -1,7 +1,7 @@
 ---
 title: Validation
 page_title: Validation | RadGridView
-description: Validation
+description: This article shows how you can validate the user input in order to avoid invalid data.
 slug: winforms/gridview/insert/update/delete-records/validation
 tags: validation
 published: True
