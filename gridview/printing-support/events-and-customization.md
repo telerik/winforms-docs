@@ -1,7 +1,7 @@
 ---
 title: Events and Customization
 page_title: Events and Customization | RadGridView
-description: Events and Customization
+description: Use the PrintCellFormatting and PrintCellPaint vents to customize the printed document.
 slug: winforms/gridview/printing-support/events-and-customization
 tags: events,and,customization
 published: True

@@ -1,7 +1,7 @@
 ---
 title: New Row
 page_title: New Row | RadGridView
-description: New Row
+description: This article shows how you can use the add rows to the grid by using the "new row".
 slug: winforms/gridview/rows/new-row
 tags: new,row
 published: True

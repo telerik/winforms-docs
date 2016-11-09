@@ -1,7 +1,7 @@
 ---
 title: Reflecting Custom Object Changes in RGV
 page_title: Reflecting Custom Object Changes in RGV | RadGridView
-description: Reflecting changed in the business  
+description: Use INotifyPropertyChanged and IBindingList to reflect changes made to the business objects in RadGridView.
 slug: winforms/gridview/populating-with-data/reflecting-custom-object-changes-in-rgv
 tags: reflecting,custom,object,changes,in,rgv
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Summary Rows
 page_title: Summary Rows | RadGridView
-description: Summary Rows
+description: Summary rows are RadGridView rows which allow you to display aggregate information about the data (count, sum. avg).
 slug: winforms/gridview/rows/summary-rows
 tags: summary,rows
 published: True

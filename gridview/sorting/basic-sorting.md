@@ -1,7 +1,7 @@
 ---
 title: Basic Sorting
 page_title: Basic Sorting | RadGridView
-description: Basic Sorting
+description: This article shows how you can use the built-in sorting functionality. 
 slug: winforms/gridview/sorting/basic-sorting
 tags: basic,sorting
 published: True

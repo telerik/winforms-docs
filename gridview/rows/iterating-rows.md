@@ -1,7 +1,7 @@
 ---
 title: Iterating Rows
 page_title: Iterating Rows | RadGridView
-description: Iterating Rows
+description: This article shows how you can iterate all rows in regular and hierarchical grid.
 slug: winforms/gridview/rows/iterating-rows
 tags: iterating,rows
 published: True

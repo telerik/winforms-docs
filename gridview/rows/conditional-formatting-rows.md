@@ -1,7 +1,7 @@
 ---
 title: Conditional Formatting Rows
 page_title: Conditional Formatting Rows | RadGridView
-description: Conditional Formatting Rows
+description: This article shows how you can use the ConditionalFormattingObject to style the rows upon a predefined condition.
 slug: winforms/gridview/rows/conditional-formatting-rows
 tags: conditional,formatting,rows
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Selecting Rows and Cells Programmatically
 page_title: Selecting Rows and Cells Programmatically | RadGridView
-description: Selecting Rows and Cells Programmatically
+description: This article shows how you can select rows and cells programmatically.
 slug: winforms/gridview/selection/selecting-rows-and-cells-programmatically
 tags: selecting,rows,and,cells,programmatically
 published: True

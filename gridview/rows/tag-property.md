@@ -1,7 +1,7 @@
 ---
 title: Tag property
 page_title: Tag property | RadGridView
-description: Tag property
+description: Each row has a Tag property of type object where you can store a custom object.
 slug: winforms/gridview/rows/tag-property
 tags: tag,property
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Printing Support | RadGridView
-description: Printing Support
+description: This article shows how you can use the built-in functionality to print the contents of the grid.
 slug: winforms/gridview/printing-support
 tags: printing,support
 published: True

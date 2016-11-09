@@ -1,7 +1,7 @@
 ---
 title: Formatting Rows
 page_title: Formatting Rows | RadGridView
-description: Formatting Rows
+description: Use RowFormatting event to apply custom formatting to RadGridView's data rows.
 slug: winforms/gridview/rows/formatting-rows
 tags: formatting,rows
 published: True

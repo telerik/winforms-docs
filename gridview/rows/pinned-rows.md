@@ -1,7 +1,7 @@
 ---
 title: Pinned Rows
 page_title: Pinned Rows | RadGridView
-description: Pinned Rows
+description: RadGridView rows can be pinned so that the rows appear anchored to the top or bottom of the grid.
 slug: winforms/gridview/rows/pinned-rows
 tags: pinned,rows
 published: True

@@ -8,7 +8,6 @@ published: True
 position: 0
 ---
 
-
 # Auto-size entire row height.
 
 It is common to use the rows auto-size functionality when the cells have multi-line text. However by default the grid measures only the visible cells text. So when the users scrolls horizontally the row height might be adjusted dynamically. This article will explain how you can measure the entire row so the row height is constant while the users are scrolling horizontally.

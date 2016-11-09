@@ -1,7 +1,7 @@
 ---
 title: Painting Rows
 page_title: Painting Rows | RadGridView
-description: Painting Rows
+description: This article show how you can paint directly in the rows using the RowPaint event. 
 slug: winforms/gridview/rows/painting-rows
 tags: painting,rows
 published: True

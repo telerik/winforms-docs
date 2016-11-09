@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop
 page_title: Drag and Drop | RadGridView
-description: Drag and Drop
+description: This article shows how you can perform a drag and drop operation between two grids in bound mode. 
 slug: winforms/gridview/rows/drag-and-drop
 tags: drag,and,drop
 published: True

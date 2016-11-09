@@ -1,7 +1,7 @@
 ---
 title: Rows vs ChildRows
 page_title: Rows vs ChildRows | RadGridView
-description: Rows vs ChildRows
+description: This article explains the difference between the ChildRows and Rows collections.
 slug: winforms/gridview/rows/rows-vs-childrows
 tags: rows,vs,childrows
 published: True
@@ -12,13 +12,10 @@ previous_url: gridview-rows-rows-vs-childrows
 # Rows vs ChildRows
 
 RadGridView exposes two collections that contains data rows:
-          
 
 * __Rows__. This collections contains all data rows that belong to RadGridView. Data operations such as grouping, sorting, filtering, etc. do not change the content of the collection or the order in which the row objects exist in the collection.
-              
 
 * __ChildRows__. This collection returns the data rows that are currently represented by RadGridView in the order in which they appear. The collection is modified every time a data operation (grouping, sorting, filtering) occurs. Depending on the data operation applied, this collection may contain 'system' rows, i.e. grouping rows, that are not a part of the original set of data rows contained in the __Rows__ collection. For a better understanding of the difference between __Rows__ and __ChildRows__, let's analyze the following example.
-        
 
 ## Rows vs. ChildRows Example
 

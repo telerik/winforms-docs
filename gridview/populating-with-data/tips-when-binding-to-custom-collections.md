@@ -1,7 +1,7 @@
 ---
 title: Tips when Binding to Custom Collections
 page_title: Tips when Binding to Custom Collections | RadGridView
-description: Tips when Binding to Custom Collections
+description: Speed up the data processing when you do not need to display all fields presented in the business object.
 slug: winforms/gridview/populating-with-data/tips-when-binding-to-custom-collections
 tags: tips,when,binding,to,custom,collections
 published: True
