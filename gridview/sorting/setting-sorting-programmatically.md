@@ -1,7 +1,7 @@
 ---
 title: Setting Sorting Programmatically
 page_title: Setting Sorting Programmatically | RadGridView
-description: Setting Sorting Programmatically
+description: This article shows how you can use SortDescriptors to sort the rows programmatically.
 slug: winforms/gridview/sorting/setting-sorting-programmatically
 tags: setting,sorting,programmatically
 published: True

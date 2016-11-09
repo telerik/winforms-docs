@@ -1,7 +1,7 @@
 ---
 title: Table View
 page_title: Table View | RadGridView
-description: Table View
+description: This is the default view where the data is presented like a table and you can reorder, hide and pin columns.
 slug: winforms/gridview/view-definitions/table-view
 tags: table,view
 published: True

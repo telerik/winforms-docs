@@ -1,7 +1,7 @@
 ---
 title: Sorting Expressions
 page_title: Sorting Expressions | RadGridView
-description: Sorting Expressions
+description: Sort RadgridView by directly altering the sort expression in the code.
 slug: winforms/gridview/sorting/sorting-expressions
 tags: sorting,expressions
 published: True

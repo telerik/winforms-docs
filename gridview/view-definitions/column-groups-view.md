@@ -1,7 +1,7 @@
 ---
 title: Column Groups View
 page_title: Column Groups View | RadGridView
-description: Column Groups View
+description: This article describes how you can use the ColumnGroupsViewDefinition in order to group columns and rows in one.
 slug: winforms/gridview/view-definitions/column-groups-view
 tags: column,groups,view
 published: True

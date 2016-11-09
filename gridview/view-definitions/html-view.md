@@ -1,7 +1,7 @@
 ---
 title: HTML View
 page_title: HTML View | RadGridView
-description: HTML View
+description: Define the cells/rows layout configuration using similar to the HTML tables syntax.
 slug: winforms/gridview/view-definitions/html-view
 tags: html,view
 published: True

@@ -1,7 +1,7 @@
 ---
-title: Images
-page_title: Images | RadGridView
-description: Images
+title: Row Header Images
+page_title: Row Header Images | RadGridView
+description: This article shows how you can change the status images used in the header row.
 slug: winforms/gridview/styling-and-appearance/images
 tags: images
 published: True
