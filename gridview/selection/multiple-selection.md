@@ -75,26 +75,6 @@ Once you have applied these setting, the options for selection are:
 
 All the selected cells are available in the RadGridView.SelectedCells collection
 
-## Rectangle selection
-
-If the MultiSelect property is enabled, you can make a multiple selection by holding the left mouse button down and moving the mouse making a rectangle. This will select all rows (cells) in the created rectangle.<br>![gridview-selection-multiple-selection 003](images/gridview-selection-multiple-selection003.png)![gridview-selection-multiple-selection 004](images/gridview-selection-multiple-selection004.png)
-
-In case you do not want to see the TranslucentRectangle when making such a selection, but still have this functionality working, simply set the __ShowTranslucentSelectionRectangle__ property of the TableElement to *false*:
-
-{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=transRectangle}} 
-{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=transRectangle}} 
-
-````C#
-radGridView1.TableElement.ShowTranslucentSelectionRectangle = false;
-
-````
-````VB.NET
-RadGridView1.TableElement.ShowTranslucentSelectionRectangle = False
-
-````
-
-{{endregion}} 
-
 ## CurrentRow and CurrentCell when multiple selection is used
 
 When multiple row (cell) selection is used, the current row(cell) value will be equal to the last cell (row) clicked when a selection is made. 
