@@ -265,3 +265,9 @@ As a result of the update call, the CellFormatting (and the other formatting eve
 
 ![gridview-cells-formatting-cells 004](images/gridview-cells-formatting-cells004.png)
 
+# See Also
+
+* [Formating Group Rows]({%slug winforms/gridview/cells/formatting-group-rows%})
+* [Formating Child Tabs]({%slug winforms/gridview/cells/formatting-child-tabs%})
+* [Formating Command Cells]({%slug winforms/gridview/cells/formatting-command-column%})
+* [The Style Property]({%slug winforms/gridview/cells/style%})

@@ -46,7 +46,7 @@ End Sub
 
 The following example demonstrates formatting of group header which uses data from the group rows:
 
-#### Formatting group header by using data grom data rows
+#### Formatting group header by using data from data rows
 
 {{source=..\SamplesCS\GridView\Grouping\FormattingGroupHeaderRow.cs region=formatGroupHeaderWhichUsersDataFromGroupRows}} 
 {{source=..\SamplesVB\GridView\Grouping\FormattingGroupHeaderRow.vb region=formatGroupHeaderWhichUsersDataFromGroupRows}} 

@@ -15,6 +15,8 @@ __GridViewDecimalColumn__ allows decimal data to be displayed and edited. __Grid
 
 ![gridview-columns-gridviewdecimalcolumn 001](images/gridview-columns-gridviewdecimalcolumn001.png)
 
+#### Add GridViewDecimalColumn to the grid.
+
 {{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=addingDecimalColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=addingDecimalColumn}} 
 

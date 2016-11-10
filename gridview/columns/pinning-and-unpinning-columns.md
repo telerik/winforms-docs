@@ -34,6 +34,8 @@ Me.RadGridView1.Columns("FirstName").IsPinned = True
 
 {{endregion}}
 
+>caption Figure 1: The left-most column is pinned.
+
 ![gridview-columns-pinning-and-unpinning-columns 001](images/gridview-columns-pinning-and-unpinning-columns001.png)
 
 ## Pinning multiple columns 
@@ -60,9 +62,14 @@ Me.RadGridView1.Columns("LastName").PinPosition = Telerik.WinControls.UI.PinnedC
 
 {{endregion}}
 
+>caption Figure 2: More than one column can be pinned as well.
 ![gridview-columns-pinning-and-unpinning-columns 002](images/gridview-columns-pinning-and-unpinning-columns002.png)
 
 >note All pinned columns appear in the selected pinned section ordered by their original column index in the Columns collection. After pinning multiple columns you can drag each of them to the desired position in the pin section.
 >
 
-![gridview-columns-pinning-and-unpinning-columns 003](images/gridview-columns-pinning-and-unpinning-columns003.png)![gridview-columns-pinning-and-unpinning-columns 004](images/gridview-columns-pinning-and-unpinning-columns004.png)
+>caption Figure 3: Reordering pinned columns. 
+
+![gridview-columns-pinning-and-unpinning-columns 003](images/gridview-columns-pinning-and-unpinning-columns003.png)
+
+![gridview-columns-pinning-and-unpinning-columns 004](images/gridview-columns-pinning-and-unpinning-columns004.png)

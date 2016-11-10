@@ -76,7 +76,7 @@ Next
 
 >caption Figure 1: Iterating columns and setting their HeaderText.
 
-The result from the code above is displayed on the following image:![gridview-columns-iterating-columns 001](images/gridview-columns-iterating-columns001.png)
+![gridview-columns-iterating-columns 001](images/gridview-columns-iterating-columns001.png)
 
 ## Iterating through Hierarchical Columns
 

@@ -13,7 +13,7 @@ previous_url: gridview-fundamentals-element-hierarchy
 
 __RadGridView__ uses the [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) which enables rich experiences like advanced styling and animations. Just like WPF it uses elements ordered in a visual tree called element hierarchy. This article describes the element hierarchy used in __RadGridView__:
       
->caption The RadGridView element hierarchy.
+>caption Figure 1: The RadGridView element hierarchy.
 
 ![gridview-fundamentals-element-hierarchy 001](images/gridview-fundamentals-element-hierarchy001.png)
 

@@ -17,6 +17,8 @@ previous_url: gridview-getting-started
 
 The example below demonstrates creating a hierarchical grid presenting two tables *Product Category* and *Product Information*.
 
+>caption Figure 1: The final result from the tutorial.
+
 ![grid-getting-started 001](images/grid-getting-started001.png)
 
 ## Setting up the Form 
@@ -54,7 +56,7 @@ The example below demonstrates creating a hierarchical grid presenting two table
 
 1. In `Choose Database Objects` page of the dialog, select columns from the Categories table: "CategoryID", "CategoryName" and "Description". Select columns from the Products table: "ProductName", "CategoryID", "UnitsOnOrder" and "Discontinued".
 
-![grid-getting-started 003](images/grid-getting-started003.png)
+    ![grid-getting-started 003](images/grid-getting-started003.png)
 
 1. Click the __Finish__ button to close the `Data Source Configuration Wizard`.
 
@@ -64,7 +66,7 @@ The example below demonstrates creating a hierarchical grid presenting two table
 1. Select the __DataSource__ property drop down a second time and select *Products* from *NwindDataSet* data source. This step will create *productsBindingSource* and *productsTableAdapter* components.
 
 1. Select the __DataSource__ property drop down for the third time and select *NwindDataSet*. This step will assign the entire dataset to the grid.
-![grid-getting-started 005](images/grid-getting-started005.png)
+    ![grid-getting-started 005](images/grid-getting-started005.png)
 
 ## Setting Properties
 

@@ -30,6 +30,8 @@ RadGridView1.AllowColumnReorder = True
 
 {{endregion}}
 
+>caption Figure 1: Reorder columns in RadGridView
+
 ![gridview-columns-reordering-columns 001](images/gridview-columns-reordering-columns001.png)
 
 ## Reordering columns programmatically

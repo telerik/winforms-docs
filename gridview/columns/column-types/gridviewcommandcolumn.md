@@ -19,6 +19,8 @@ The example below creates two __GridViewCommandColumns__. The first has __UseDe
 
 ![gridview-columns-gridviewcommandcolumn 001](images/gridview-columns-gridviewcommandcolumn001.png)
 
+#### Add GridViewCommandColumn to the grid.
+
 {{source=..\SamplesCS\GridView\Columns\GridViewCommandColumn1.cs region=addCommandColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCommandColumn1.vb region=addCommandColumn}} 
 

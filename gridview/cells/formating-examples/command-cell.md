@@ -59,6 +59,6 @@ End Sub
 
 {{endregion}} 
 
->caption Figure 5: Styling the command cell button. 
+>caption Figure 1: Styling the command cell button. 
 
 ![gridview-cells-formatting-cells-command-cell 001](images/gridview-cells-formatting-cells-command-cell001.png)

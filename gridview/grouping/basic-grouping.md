@@ -27,6 +27,8 @@ The example below allows GroupDescriptors to be added programmatically, but doe
 
 >note When there are more that one groups on the same level the information in the group header row is separated by the "," character. This character is taken for the current culture settings: `Thread.CurrentThread.CurrentCulture.TextInfo.ListSeparator`.
 
+>caption Figure 1: The grid is grouped by several fields.
+ 
 ![gridview-grouping-basic-grouping 001](images/gridview-grouping-basic-grouping001.png)
 
 

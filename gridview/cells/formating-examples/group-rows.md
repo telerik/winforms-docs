@@ -2,7 +2,7 @@
 title: Formating Group Rows
 page_title: Formating Group Rows | RadGridView
 description: Use the ViewCellFormatting event to change the styles of the group rows in RadGridview.
-slug: winforms/gridview/cells/formatting-childtabs
+slug: winforms/gridview/cells/formatting-group-rows
 tags: formatting,cells
 published: True
 position: 1
@@ -56,6 +56,6 @@ End Sub
 
 {{endregion}}
 
->caption Figure 4: Formatting group rows.
+>caption Figure 1: Formatting group rows.
 
 ![gridview-cells-formatting-cells-group-rows 001](images/gridview-cells-formatting-cells-group-rows001.png)

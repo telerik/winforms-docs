@@ -19,6 +19,8 @@ You can set a *mask* to GridViewMaskBoxColumn using its __Mask__ and __MaskType_
 
 >note You can use *FormatString* property to format the values of GridViewMaskBoxColumn cells not currently opened for editing.
 
+#### Add GridViewMaskBoxColumn to the grid.
+
 {{source=..\SamplesCS\GridView\Columns\GridViewMaskBoxColumn1.cs region=addMaskBoxColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewMaskBoxColumn1.vb region=addMaskBoxColumn}} 
 

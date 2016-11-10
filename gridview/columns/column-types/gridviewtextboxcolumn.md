@@ -17,6 +17,8 @@ When a user begins editing a cell, a textbox editor is provided to handle the us
 
 ![gridview-columns-gridviewtextboxcolumn 001](images/gridview-columns-gridviewtextboxcolumn001.png)
 
+#### Add GridViewTextBoxColumn to the grid.
+
 {{source=..\SamplesCS\GridView\Columns\GridViewTextBoxColumn1.cs region=addTextBoxColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewTextBoxColumn1.vb region=addTextBoxColumn}} 
 

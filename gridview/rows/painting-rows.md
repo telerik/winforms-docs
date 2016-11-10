@@ -32,6 +32,8 @@ The following example demonstrates how to use the __RowPaint__ event to set up t
 >important When handling this event, you should access the row through the parameters of the event handler rather than access the row directly.
 >
 
+#### Paint border when specific criteria is met.
+
 {{source=..\SamplesCS\GridView\Rows\RowPainting.cs region=handlingRowPaint}} 
 {{source=..\SamplesVB\GridView\Rows\RowPainting.vb region=handlingRowPaint}} 
 

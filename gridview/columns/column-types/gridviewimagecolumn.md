@@ -23,6 +23,8 @@ Supported image formats are those supported by the `Image` class of the .NET Fra
 
 ![gridview-columns-gridviewimagecolumn 001](images/gridview-columns-gridviewimagecolumn001.png)
 
+### Add GridViewImageColumn to the grid.
+
 {{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=addImageColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=addImageColumn}} 
 

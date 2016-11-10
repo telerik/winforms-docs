@@ -48,6 +48,8 @@ Dim unitPriceColumn As GridViewDecimalColumn = TryCast(Me.RadGridView1.Columns("
 
 {{endregion}}
 
+>caption Figure 1: The data in the middle is formated.
+
 ![gridview-columns-data-formatting 001](images/gridview-columns-data-formatting001.png)
 
 >note Note that the value of the NullValue property should be the same as its column data type.

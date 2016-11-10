@@ -13,11 +13,11 @@ previous_url: gridview-fundamentals-rows
 
 There are two main row types in RadGridView: 
 
-* Data rows
+* [Data rows](#data-rows)
 
-* Structure rows
+* [Structure rows](#structure-rows)
 
-## DataRows
+## Data Rows
 
 Each data row in the grid represents a record from the specified __DataSource__. Each __RadGridView__ has a row collection of type [GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%}). The collection provides methods to add or remove items.
       	

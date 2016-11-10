@@ -32,6 +32,7 @@ RadGridView1.Rows.AddNew()
 
 {{endregion}} 
 
+>caption Figure 1: Add blank new row.
 
 ![gridview-rows-adding-and-inserting-rows 001](images/gridview-rows-adding-and-inserting-rows001.png)
 
@@ -51,6 +52,7 @@ RadGridView1.Rows.Add("Adding New Row", 12.5, DateTime.Now, True)
 
 {{endregion}} 
 
+>caption Figure 2: Add new row with data in it.
 
 ![gridview-rows-adding-and-inserting-rows 002](images/gridview-rows-adding-and-inserting-rows002.png)
 
@@ -80,6 +82,7 @@ RadGridView1.Rows.Add(rowInfo)
 
 {{endregion}} 
 
+>caption Figure 3: Add new row by creating an instance first.
 
 ![gridview-rows-adding-and-inserting-rows 003](images/gridview-rows-adding-and-inserting-rows003.png)
 
@@ -109,5 +112,6 @@ RadGridView1.Rows.Insert(2, dataRowInfo)
 
 {{endregion}} 
 
+>caption Figure 4: Insert row to a specific position.
 
 ![gridview-rows-adding-and-inserting-rows 004](images/gridview-rows-adding-and-inserting-rows004.png)

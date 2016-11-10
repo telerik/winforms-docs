@@ -2,7 +2,7 @@
 title: Hiding Child Tabs when no Data is Available
 page_title: Hiding Child Tabs when no Data is Available | RadGridView
 description: Use the CellFormatting event to hide all child tabs when when there is no data in them. 
-slug: winforms/gridview/cells/formatting-childtabs
+slug: winforms/gridview/cells/formatting-child-tabs
 tags: formatting,cells
 published: True
 position: 1
@@ -14,9 +14,12 @@ When __RadGridView__ displays hierarchical data, you expand/collapse child level
 
 >note In order for a GridDetailViewCellElement to display a page view instead of a single table element, either the template of the row holding it has to have more than one child template, or its __ShowChildViewCaptions__ should be *true* . Once there is a page view, the tabs in it will be visible at all times, except when some of the templates has no rows and __AllowAddNewRow__ for it is *false* – if it does not have any rows and the user cannot add row, it is considered that there is no need from it.
 
->caption Figure 6: Using formatting event to hide empty tabs.
+>caption Figure 1: Using formatting event to hide empty tabs.
 
 ![gridview-cells-formatting-cells 001](images/gridview-cells-formatting-cells001.png)
+
+
+#### Accessing the child tabs in the ViewCellFormatting event.
 
 {{source=..\SamplesCS\GridView\Cells\HideChildTabs.cs region=HideTabs}} 
 {{source=..\SamplesVB\GridView\Cells\HideChildTabs.vb region=HideTabs}} 
