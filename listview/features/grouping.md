@@ -1,21 +1,21 @@
 ---
 title: Grouping
-page_title: Grouping | UI for WinForms Documentation
-description: Grouping
+page_title: Grouping | RadListView
+description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/features/grouping
 tags: grouping
 published: True
-position: 3
+position: 4
 previous_url: listview-features-grouping
 ---
 
 # Grouping
 
+**RadListView** supports both custom grouping and automatic grouping based on a certain property. 
 
+## Basic Grouping
 
-## 
-
-RadListView supports both custom grouping and automatic grouping based on a certain property. The latter is achievable by enabling the __EnableGrouping__ and __ShowGroups__ properties and then adding the desired __GroupDescriptors__ to the __GroupDescriptors__ collection of the control. The following code will group the items according to their __Value__ property:
+The basic grouping is achievable by enabling the __EnableGrouping__ and __ShowGroups__ properties and then adding the desired __GroupDescriptors__ to the __GroupDescriptors__ collection of the control. The following code will group the items according to their __Value__ property:
 
 #### Group by value
 
@@ -39,11 +39,13 @@ RadListView1.GroupDescriptors.Add(groupByValue)
 
 {{endregion}} 
 
-![listview-features-grouping 001](images/listview-features-grouping001.png)
+|Before grouping|After grouping|
+|----|----|
+|![listview-features-grouping 001](images/listview-features-grouping001.png)|![listview-features-grouping 004](images/listview-features-grouping004.png)|
 
 And here is how you can group by a certain column when __DetailsView__ is used:
 
-#### Group by column
+#### Group by column "Type"
 
 {{source=..\SamplesCS\ListView\Features\ListViewGrouping.cs region=groupByColumn}} 
 {{source=..\SamplesVB\ListView\Features\ListViewGrouping.vb region=groupByColumn}} 
@@ -68,10 +70,13 @@ RadListView1.GroupDescriptors.Add(groupByType)
 
 {{endregion}} 
 
-![listview-features-grouping 002](images/listview-features-grouping002.png)
+|Before grouping|After grouping|
+|----|----|
+|![listview-features-grouping 002](images/listview-features-grouping002.png)|![listview-features-grouping 005](images/listview-features-grouping005.png)| 
 
-To take advantage of the custom grouping feature of RadListView, just enable the __EnableCustomGrouping__ property and add the desired descriptor. Here is an example for custom grouping:
+## Custom Grouping
 
+To take advantage of the custom grouping feature of **RadListView**, just enable the __EnableCustomGrouping__ property and specify the **Group** for each item. Here is an example for custom grouping:
 
 #### Custom grouping
 
@@ -119,8 +124,10 @@ Next
 
 Please note, that if you are using data binding, you can use the __ItemDataBound__ event,  to assign certain item to a certain group.
 
-![listview-features-grouping 003](images/listview-features-grouping003.png)
-
+|Before grouping|After grouping|
+|----|----|
+|![listview-features-grouping 003](images/listview-features-grouping003.png)|![listview-features-grouping 006](images/listview-features-grouping006.png)|
+ 
 When grouping is enabled you have the option to quickly expand or collapse all groups in __RadListView__ throught the __ExpandAll__ and __CollapseAll__ methods:
 
 #### Expand and collapse all groups
