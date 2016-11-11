@@ -122,6 +122,8 @@ Next
 
 {{endregion}} 
 
+>important Items in a certain group are sorted in the order of setting the **Group** property of each **ListViewDataItem**.
+
 Please note, that if you are using data binding, you can use the __ItemDataBound__ event,  to assign certain item to a certain group.
 
 |Before grouping|After grouping|
@@ -147,6 +149,12 @@ Me.RadListView1.CollapseAll()
 ````
 
 {{endregion}} 
+
+        
+# See Also
+
+* [Filtering]({%slug winforms/listview/features/filtering%})	 
+* [Sorting]({%slug winforms/listview/features/sorting%})
 
 
 
