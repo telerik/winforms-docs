@@ -19,11 +19,11 @@ To un-group, click the close button of the group header button:
 
 ![gridview-end-user-capabilities-grouping 002](images/gridview-end-user-capabilities-grouping002.png)
 
-The user can also right-click a column and select `Group by this Column` from the context menu:
+The user can also right-click a column and select __Group by this Column__ from the context menu:
 
 ![gridview-end-user-capabilities-grouping 003](images/gridview-end-user-capabilities-grouping003.png)
 
-Multiple levels of grouping can be created by dragging additional column names to the grouping panel. Column names can be rearranged within the panel by dragging. In the screenshot below the top level grouping is by `Country` and the second by `ContactTitle`.
+Multiple levels of grouping can be created by dragging additional column names to the grouping panel. Column names can be rearranged within the panel by dragging. In the screenshot below the top level grouping is by `CategoryID` and the second by `ProductName`.
 
 ![gridview-end-user-capabilities-grouping 004](images/gridview-end-user-capabilities-grouping004.png)
 
