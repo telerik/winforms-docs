@@ -93,7 +93,6 @@ private bool MyFilter(ListViewDataItem item)
     {
         return true;
     }
-
     return false;
 }
 
@@ -103,7 +102,6 @@ Private Function MyFilter(item As ListViewDataItem) As Boolean
     If item.Value.ToString().Contains("C") Then
         Return True
     End If
-
     Return False
 End Function
 
