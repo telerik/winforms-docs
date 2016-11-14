@@ -71,6 +71,7 @@ Here is the sorted data:
 {{source=..\SamplesVB\ListView\Features\ListViewSorting.vb region=CustomSorting}} 
 
 ````C#
+        
 private void Form_Load(object sender, EventArgs e)
 {
     this.radListView1.ViewType = ListViewType.DetailsView;
@@ -89,7 +90,7 @@ private void Form_Load(object sender, EventArgs e)
     this.radListView1.ListViewElement.DataView.Comparer = new ListViewCustomComparer(this.radListView1.ListViewElement);
     this.radListView1.EnableSorting = true;
 }
-
+        
 public class ListViewCustomComparer : IComparer<ListViewDataItem>
 {
     RadListViewElement listViewElement;
@@ -131,20 +132,16 @@ Private Sub Form_Load(sender As Object, e As EventArgs)
         item(0) = i
         item(1) = CDec(rand.NextDouble() * Int32.MaxValue)
     Next
-
     Me.RadListView1.SortDescriptors.Add(New Telerik.WinControls.Data.SortDescriptor("Number", ListSortDirection.Ascending))
     Me.RadListView1.ListViewElement.DataView.Comparer = New ListViewCustomComparer(Me.RadListView1.ListViewElement)
     Me.RadListView1.EnableSorting = True
 End Sub
-
 Public Class ListViewCustomComparer
 Implements IComparer(Of ListViewDataItem)
     Private listViewElement As RadListViewElement
-
     Public Sub New(listViewElement As RadListViewElement)
         Me.listViewElement = listViewElement
     End Sub
-
     Public Function [Compare](x As ListViewDataItem, y As ListViewDataItem) As Integer Implements IComparer(Of ListViewDataItem).[Compare]
         Dim row1Freight As Decimal = CDec(x("Freight"))
         Dim row2Freight As Decimal = CDec(y("Freight"))
@@ -156,7 +153,6 @@ Implements IComparer(Of ListViewDataItem)
             Return 0
         End If
     End Function
-
 End Class
 
 ````
