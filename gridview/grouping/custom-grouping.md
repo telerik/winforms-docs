@@ -329,3 +329,20 @@ End Sub
 ````
 
 {{endregion}}
+# See Also
+* [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
+
+* [Events]({%slug winforms/gridview/grouping/events%})
+
+* [Formatting Group Header Row]({%slug winforms/gridview/grouping/formatting-group-header-row%})
+
+* [Group Aggregates]({%slug winforms/gridview/grouping/group-aggregates%})
+
+* [Groups Collection]({%slug winforms/gridview/grouping/groups-collection%})
+
+* [Setting Groups Programmatically]({%slug winforms/gridview/grouping/setting-groups-programmatically%})
+
+* [Sorting group rows]({%slug winforms/gridview/grouping/sorting-group-rows%})
+
+* [Using Grouping Expressions]({%slug winforms/gridview/grouping/using-grouping-expressions%})
+

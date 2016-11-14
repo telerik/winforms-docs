@@ -239,3 +239,6 @@ End Sub
 So, how should this implementation work? Let's say that we have a list of categories available at each product in RadGridView. However, we decide that this list does not cover the range of products, so we have to add the category 'SpaceFood'. We should just start editing the appropriate cell in the GridViewComboBoxColumn and type 'SpaceFood'. Then we can press Enter or we have press Tab to go to the next cell and the 'SpaceFood' value will be added. As you can see in the screenshot below, the record 'SpaceFood' receives a new CategoryID 9, which is saved in the appropriate RadGridView cell under the CategoryID column:
 
 ![gridview-editors-howto-allow-end-users-to-add-items-to-dropdownlisteditor 001](images/gridview-editors-howto-allow-end-users-to-add-items-to-dropdownlisteditor001.png)
+# See Also
+* [Change the Active Editor Depending on the Cell Value Type.]({%slug winforms/gridview/editors/how-to/change-the-active-editor-depending-on-the-cell-value-type.%})
+

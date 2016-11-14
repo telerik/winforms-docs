@@ -138,3 +138,10 @@ The result is:
 ![gridview-viewdefinitions-column-groups-view 001](images/gridview-viewdefinitions-column-groups-view001.png)
 
 >caution In order to pin a certain group, you should do it after the RadGridView.__ViewDefinition__ property is set and the grid is populated with data. 
+# See Also
+* [HTML View]({%slug winforms/gridview/view-definitions/html-view%})
+
+* [Overview]({%slug winforms/gridview/view-definitions/overview%})
+
+* [Table View]({%slug winforms/gridview/view-definitions/table-view%})
+

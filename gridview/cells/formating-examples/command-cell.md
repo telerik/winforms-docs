@@ -61,4 +61,10 @@ End Sub
 
 >caption Figure 1: Styling the command cell button. 
 
-![gridview-cells-formatting-cells-command-cell 001](images/gridview-cells-formatting-cells-command-cell001.png)
+![gridview-cells-formatting-cells-command-cell 001](images/gridview-cells-formatting-cells-command-cell001.png)# See Also
+* [Hiding Child Tabs when no Data is Available]({%slug winforms/gridview/cells/formatting-child-tabs%})
+
+* [Formating Group Rows]({%slug winforms/gridview/cells/formatting-group-rows%})
+
+* [Style Property]({%slug winforms/gridview/cells/style%})
+

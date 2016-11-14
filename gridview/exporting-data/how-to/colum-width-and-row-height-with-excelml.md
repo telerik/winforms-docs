@@ -76,3 +76,6 @@ End Sub
 {{endregion}} 
 
 
+# See Also
+* [Add Header and Footer to the Exported Document]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})
+

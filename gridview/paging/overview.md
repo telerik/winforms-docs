@@ -41,3 +41,6 @@ To access the public API for paging you will use the __MasterTemplate__ property
 
 * __PagingBeforeGrouping:__ Gets or sets a value indicating whether paging is performed before grouping or vice versa.
             
+# See Also
+* [Paging panel]({%slug winforms/gridview/paging/paging-panel%})
+

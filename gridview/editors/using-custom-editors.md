@@ -204,3 +204,16 @@ End Sub
 >note You can find a working version of this sample in our Demo application ( *GridView -> Custom Editors* )
 >
 
+# See Also
+* [API]({%slug winforms/gridview/editors/api%})
+
+* [Customizing editor behavior]({%slug winforms/gridview/editors/customizing-editor-behavior%})
+
+* [Data validation]({%slug winforms/gridview/editors/data-validation%})
+
+* [Overview]({%slug winforms/gridview/editors/editors%})
+
+* [Events]({%slug winforms/gridview/editors/events%})
+
+* [Handling Editors' events]({%slug winforms/gridview/editors/handling-editors'-events%})
+

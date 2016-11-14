@@ -82,3 +82,8 @@ The example below demonstrates creating a hierarchical grid presenting two table
 
 1. Press __F5__ to run the application. Notice that the grid first displays product categories. Each category has an icon that can be clicked to expand that category and show a child template with the corresponding products.
             
+# See Also
+* [Copy/Paste/Cut]({%slug winforms/gridview/cut-copy-paste%})
+
+* [Overview]({%slug winforms/gridview%})
+

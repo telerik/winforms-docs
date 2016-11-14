@@ -114,3 +114,10 @@ This code defines four pages where the content of the pages is as follows:
 You should note that one column can appear on several pages. Here is the result of the above code when previewed in the PrintPreviewDialog:
 
 ![gridview-printing-support-gridprintstyle 002](images/gridview-printing-support-gridprintstyle002.png)
+# See Also
+* [Events and Customization]({%slug winforms/gridview/printing-support/events-and-customization%})
+
+* [Printing Hierarchical Grid]({%slug winforms/gridview/printing-support/printing-hierarchical-grid%})
+
+* [Overview]({%slug winforms/gridview/printing-support%})
+

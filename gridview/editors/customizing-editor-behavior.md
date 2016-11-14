@@ -49,3 +49,16 @@ End Sub
 >caption Figure 1: Accessing the editor element.
 
 ![gridview-editors-customizing-editor-behavior 001](images/gridview-editors-customizing-editor-behavior001.png)
+# See Also
+* [API]({%slug winforms/gridview/editors/api%})
+
+* [Data validation]({%slug winforms/gridview/editors/data-validation%})
+
+* [Overview]({%slug winforms/gridview/editors/editors%})
+
+* [Events]({%slug winforms/gridview/editors/events%})
+
+* [Handling Editors' events]({%slug winforms/gridview/editors/handling-editors'-events%})
+
+* [Using custom editors]({%slug winforms/gridview/editors/using-custom-editors%})
+

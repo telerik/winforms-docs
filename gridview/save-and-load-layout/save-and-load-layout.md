@@ -96,3 +96,8 @@ End Sub
 
 
 
+# See Also
+* [Advanced]({%slug winforms/gridview/save-and-load-layout/advanced%})
+
+* [Save/Load layout buttons in the Property Grid]({%slug winforms/gridview/save-and-load-layout/load-layout-buttons-in-the-property-grid%})
+

@@ -32,3 +32,20 @@ Columns are represented by __GridViewColumn__ objects. __GridViewColumn__ is th
 * __TextAlignment__: Aligns the text to a __ContentAlignment__ enumeration member: TopLeft, TopCenter, TopRight, MiddleLeft, MidddleCenter, MiddleRight, BottomLeft, BottomCenter, BottomRight.
 
 
+# See Also
+* [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
+
+* [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
+
+* [Overview]({%slug winforms/gridview/columns%})
+
+* [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
+
+* [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
+
+* [Generating Columns]({%slug winforms/gridview/columns/generating-columns%})
+
+* [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
+
+* [Pinning and Unpinning Columns]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%})
+
