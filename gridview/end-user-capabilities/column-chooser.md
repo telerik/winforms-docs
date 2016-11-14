@@ -22,3 +22,20 @@ The user can then drag column headings to the __Column Chooser__ window and drop
 >caption Figure 2: Using the Column Chooser.
 
 ![](images/gridview-end-user-capabilities-column-chooser2.gif)  
+# See Also
+* [Editing Behavior]({[%slug winforms/gridview/end-user-capabilities/editing-behavior%]}
+
+* [Filtering]({[%slug winforms/gridview/end-user-capabilities/filtering%]}
+
+* [Grouping]({[%slug winforms/gridview/end-user-capabilities/grouping%]}
+
+* [Keyboard Support]({[%slug winforms/gridview/end-user-capabilities/keyboard-support%]}
+
+* [Printing Support]({[%slug winforms/gridview/end-user-capabilities/printing-support%]}
+
+* [Reordering Rows]({[%slug winforms/gridview/end-user-capabilities/reordering-rows%]}
+
+* [Resizing Columns]({[%slug winforms/gridview/end-user-capabilities/resizing-columns%]}
+
+* [Scrolling Support]({[%slug winforms/gridview/end-user-capabilities/scrolling-support%]}
+

@@ -171,3 +171,20 @@ The __EditorType__ allows you to easily change the editor type. It could be set 
 
 * __DateTimePickerSpinMode:__ this type of editor shows up/down buttons instead of a drop down with a calendar.
             
+# See Also
+* [GridViewBrowseColumn]({[%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%]}
+
+* [GridViewCalculatorColumn]({[%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%]}
+
+* [GridViewCheckBoxColumn]({[%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%]}
+
+* [GridViewColorColumn]({[%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%]}
+
+* [GridViewComboBoxColumn]({[%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%]}
+
+* [GridViewCommandColumn]({[%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%]}
+
+* [GridViewDecimalColumn]({[%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%]}
+
+* [GridViewHyperlinkColumn]({[%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%]}
+

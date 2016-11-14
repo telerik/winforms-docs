@@ -457,3 +457,20 @@ End Class
 >caption Figure 2: The items styles are now changed.
 
 ![gridview-columns-gridviewcomboboxcolumn 004](images/gridview-columns-gridviewcomboboxcolumn004.png)
+# See Also
+* [GridViewBrowseColumn]({[%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%]}
+
+* [GridViewCalculatorColumn]({[%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%]}
+
+* [GridViewCheckBoxColumn]({[%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%]}
+
+* [GridViewColorColumn]({[%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%]}
+
+* [GridViewCommandColumn]({[%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%]}
+
+* [GridViewDateTimeColumn]({[%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%]}
+
+* [GridViewDecimalColumn]({[%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%]}
+
+* [GridViewHyperlinkColumn]({[%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%]}
+

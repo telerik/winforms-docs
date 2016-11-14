@@ -260,3 +260,12 @@ void radGridView1_CustomSorting(object sender, Telerik.WinControls.UI.GridViewCu
 
 
 ![gridview-sorting-custom-sorting 005](images/gridview-sorting-custom-sorting005.png)
+# See Also
+* [Basic Sorting]({[%slug winforms/gridview/sorting/basic-sorting%]}
+
+* [Events]({[%slug winforms/gridview/sorting/events%]}
+
+* [Setting Sorting Programmatically]({[%slug winforms/gridview/sorting/setting-sorting-programmatically%]}
+
+* [Sorting Expressions]({[%slug winforms/gridview/sorting/sorting-expressions%]}
+

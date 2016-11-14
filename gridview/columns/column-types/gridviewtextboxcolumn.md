@@ -67,3 +67,20 @@ DirectCast(Me.RadGridView1.Columns(0), GridViewTextBoxColumn).ColumnCharacterCas
 >note ColumnCarecterCasing property affects only the editor and does not change the values in your data base. For instance, if your data base contains text which is lower case or partially lower case and you set the ColumnCharecterCasing to upper case the data will not be change, but if the user starts editing a cell, the editor will only allow upper case symbols and all lower case symbols will be converted to upper case ones.
 >
 
+# See Also
+* [GridViewBrowseColumn]({[%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%]}
+
+* [GridViewCalculatorColumn]({[%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%]}
+
+* [GridViewCheckBoxColumn]({[%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%]}
+
+* [GridViewColorColumn]({[%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%]}
+
+* [GridViewComboBoxColumn]({[%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%]}
+
+* [GridViewCommandColumn]({[%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%]}
+
+* [GridViewDateTimeColumn]({[%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%]}
+
+* [GridViewDecimalColumn]({[%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%]}
+

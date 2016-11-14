@@ -36,3 +36,12 @@ When sorting is enabled, the user can click on the column headers to control t
 *ShipCity column is sorted in descending order while the Freight column is sorted in ascending order*
 
 See [End-user Capabilities Sorting]({%slug winforms/gridview/end-user-capabilities/sorting%}) topic about more information on the sorting behavior of RadGridView from the users' perspective.
+# See Also
+* [Custom Sorting]({[%slug winforms/gridview/sorting/custom-sorting%]}
+
+* [Events]({[%slug winforms/gridview/sorting/events%]}
+
+* [Setting Sorting Programmatically]({[%slug winforms/gridview/sorting/setting-sorting-programmatically%]}
+
+* [Sorting Expressions]({[%slug winforms/gridview/sorting/sorting-expressions%]}
+

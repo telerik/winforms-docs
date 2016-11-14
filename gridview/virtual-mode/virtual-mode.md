@@ -122,3 +122,4 @@ the __VirtualMode__ property is set to *true*):
 >note When implementing the __CellValueNeeded__ event you should have in mind that the __ColumnIndex__ parameter depends on the current order of the columns as set by the user – reordering columns would change the column index.
 >
 
+# See Also

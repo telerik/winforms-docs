@@ -178,3 +178,8 @@ Dim selectedCell As GridViewCellInfo = RadGridView1.SelectedCells(0)
 
 Note that the cells are added to the collection in the same order as the order in which you have set the selected cells.
         
+# See Also
+* [Basic Selection]({[%slug winforms/gridview/selection/basic-selection%]}
+
+* [Multiple Selection]({[%slug winforms/gridview/selection/multiple-selection%]}
+

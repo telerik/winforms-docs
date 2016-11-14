@@ -56,3 +56,6 @@ The tree allows for the following operations:
 * __Template reordering__ via drag and drop. All changes are shown in the *Preview* section;
 
 * __Delete existing columns/templates__ by selecting the needed item, and hitting *Delete* in the command bar.
+# See Also
+* [Smart Tag]({[%slug winforms/gridview/design-time-support/smart-tag%]}
+

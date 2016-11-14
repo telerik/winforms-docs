@@ -137,3 +137,8 @@ Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDes
 ````
 
 {{endregion}}
+# See Also
+* [Save/Load layout buttons in the Property Grid]({[%slug winforms/gridview/save-and-load-layout/load-layout-buttons-in-the-property-grid%]}
+
+* [Overview]({[%slug winforms/gridview/save-and-load-layout/overview%]}
+

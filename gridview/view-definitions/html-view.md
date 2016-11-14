@@ -147,3 +147,10 @@ At the end simply set the __ViewDefinitions__ property to the newly created __Vi
 >caution You need to either create the columns manually or supply a data source which will generate them.
 >
 
+# See Also
+* [Column Groups View]({[%slug winforms/gridview/view-definitions/column-groups-view%]}
+
+* [Overview]({[%slug winforms/gridview/view-definitions/overview%]}
+
+* [Table View]({[%slug winforms/gridview/view-definitions/table-view%]}
+

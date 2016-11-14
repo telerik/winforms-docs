@@ -26,3 +26,8 @@ The label in the upper part of the dialog describes its function:
 >caution All checked properties will be included in the serialization. Uncheck the ones you want excluded. Properties which are not shown in the list will be persisted.
 >
 
+# See Also
+* [Advanced]({[%slug winforms/gridview/save-and-load-layout/advanced%]}
+
+* [Overview]({[%slug winforms/gridview/save-and-load-layout/overview%]}
+

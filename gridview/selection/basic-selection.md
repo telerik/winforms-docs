@@ -119,3 +119,8 @@ RadGridView1.Rows(0).IsCurrent = True
 
 When basic selection is used, the opposite is also valid – if you set the __CurrentRow__ or __CurrentCell__ (or the __IsCurrent__ property to true for a cell or row) in RadGridView and only if  basic selection is used (MultiSelect = false ), the selected row(cell) will be the same as the current row(cell).
       
+# See Also
+* [Multiple Selection]({[%slug winforms/gridview/selection/multiple-selection%]}
+
+* [Selecting Rows and Cells Programmatically]({[%slug winforms/gridview/selection/selecting-rows-and-cells-programmatically%]}
+

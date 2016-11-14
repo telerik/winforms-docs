@@ -117,4 +117,10 @@ End Function
 
 ````
 
-{{endregion}} 
+{{endregion}} # See Also
+* [Formatting GridViewCommandColumn]({[%slug winforms/gridview/cells/formatting-command-column%]}
+
+* [Formating Group Rows]({[%slug winforms/gridview/cells/formatting-group-rows%]}
+
+* [Style Property]({[%slug winforms/gridview/cells/style%]}
+

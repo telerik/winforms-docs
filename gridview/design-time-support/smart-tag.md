@@ -64,3 +64,6 @@ The Smart Tag of RadGridView lets you quickly access common tasks involved with 
 
 
 
+# See Also
+* [Property Builder]({[%slug winforms/gridview/design-time-support/property-builder%]}
+

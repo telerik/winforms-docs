@@ -100,3 +100,12 @@ Me.RadGridView1.SortDescriptors.Add(descriptorFreight)
 >note The order of adding the sort expressions to the SortDescriptors collections matters. In the example above, the grid will be first sorted by the `ShipName` column and then each group will be sorted according to the `Freight` column.
 >
 
+# See Also
+* [Basic Sorting]({[%slug winforms/gridview/sorting/basic-sorting%]}
+
+* [Custom Sorting]({[%slug winforms/gridview/sorting/custom-sorting%]}
+
+* [Events]({[%slug winforms/gridview/sorting/events%]}
+
+* [Sorting Expressions]({[%slug winforms/gridview/sorting/sorting-expressions%]}
+

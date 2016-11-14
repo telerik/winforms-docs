@@ -161,3 +161,6 @@ worksheet.Columns(worksheet.UsedCellRange).SetWidth(New ColumnWidth(130, False))
 
 
 
+# See Also
+* [Set Column Width and Row Height with ExcelML format]({[%slug winforms/gridview/exporting-data/how-to/column-width-row-height%]}
+

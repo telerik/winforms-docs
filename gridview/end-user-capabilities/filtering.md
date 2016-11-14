@@ -23,3 +23,20 @@ The user can select Custom from the drop down list to display a dialog that allo
 "Not" option.
 
 ![gridview-end-user-capabilities-filtering 002](images/gridview-end-user-capabilities-filtering002.png)
+# See Also
+* [Column Chooser]({[%slug winforms/gridview/end-user-capabilities/column-chooser%]}
+
+* [Editing Behavior]({[%slug winforms/gridview/end-user-capabilities/editing-behavior%]}
+
+* [Grouping]({[%slug winforms/gridview/end-user-capabilities/grouping%]}
+
+* [Keyboard Support]({[%slug winforms/gridview/end-user-capabilities/keyboard-support%]}
+
+* [Printing Support]({[%slug winforms/gridview/end-user-capabilities/printing-support%]}
+
+* [Reordering Rows]({[%slug winforms/gridview/end-user-capabilities/reordering-rows%]}
+
+* [Resizing Columns]({[%slug winforms/gridview/end-user-capabilities/resizing-columns%]}
+
+* [Scrolling Support]({[%slug winforms/gridview/end-user-capabilities/scrolling-support%]}
+
