@@ -30,7 +30,7 @@ As an inheritor of __RadListView__, __RadCheckedListBox__ extends its functional
 * __String__ – representing CheckBox ToggleState.*On* state with values like: "True", "On" and "T", ToggleState.*Indeterminate* state with value "indeterminate", ToggleState.*Off* state with any other value.
             
 
->note Information about __RadListView__ data binding is available here: [RadListView Data Binding]({%slug winforms/listview/databinding%}).
+>note Information about __RadListView__ data binding is available here: [RadListView Data Binding]({%slug winforms/listview/data-binding%}).
 >
 
 
