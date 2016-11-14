@@ -96,4 +96,4 @@ RadGridView is built on top of the Telerik Presentation Framework and enables ea
 
  * [Getting Started]({%slug winforms/gridview/getting-started%})
 
- * [Databinding RadGridView]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})[Visual Structure](c3744f84-3e80-4b59-8ea0-ce38723d4eca)
+ * [Databinding RadGridView]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})

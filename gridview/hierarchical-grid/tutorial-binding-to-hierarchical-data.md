@@ -103,7 +103,9 @@ The task has 3 basic steps:
 1. Click the ellipses for the __ParentColumnName__ property. In the ColumnName Collection Editor click the __Add__ button and set the column __Name__ property to "CategoryID". Click the __OK__ button to close the dialog.
 
 1. Press __F5__ to run the application.
+
 # See Also
+
 * [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
 
 * [Binding to Hierarchical Data Programmatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically%})

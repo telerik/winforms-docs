@@ -56,6 +56,8 @@ There are a number of properties, which allow you to customize the paging panel 
 * __ShowTextBoxStripElement:__ Controls whether the panel allowing users to jump to a concrete page is visible.
 
     ![gridview-paging-panel 010](images/gridview-paging-panel010.png)
+
+
 # See Also
-* [Overview]({%slug winforms/gridview/paging/overview%})
+* [Paging]({%slug winforms/gridview/paging/overview%})
 

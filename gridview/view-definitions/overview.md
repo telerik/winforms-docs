@@ -43,7 +43,9 @@ All view definitions implement the __IViewDefinition__ interface and you could c
 
 >caption Figure 2: HtmlViewDefinition
 
-![gridview-viewdefinitions-overview 002](images/gridview-viewdefinitions-overview002.png)# See Also
+![gridview-viewdefinitions-overview 002](images/gridview-viewdefinitions-overview002.png)
+
+# See Also
 * [Column Groups View]({%slug winforms/gridview/view-definitions/column-groups-view%})
 
 * [HTML View]({%slug winforms/gridview/view-definitions/html-view%})

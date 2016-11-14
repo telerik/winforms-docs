@@ -53,7 +53,10 @@ Me.RadGridView1.GridViewElement.TableElement.UpdateLayout()
 
 >note The layout needs to be invalidated and updated in order to reflect the changes.
 >
+
+
 # See Also
+
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
 
 * [Conditional Formatting Rows]({%slug winforms/gridview/rows/conditional-formatting-rows%})

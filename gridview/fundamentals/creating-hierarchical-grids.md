@@ -42,7 +42,9 @@ The general steps to setting up hierarchical data manually are:
 1. Using __GridViewTemplate.ChildGridViewTemplates__ collection, create a hierarchy of templates, one for every level of master-detail relations. Each template should be bound to its own data source.
 
 1. Populate the __Relations__ collection with __GridViewRelation__ objects. These objects define the relations between views in the hierarchy. The __ParentTemplate__ and __ChildTemplate__ properties of __GridViewRelation__ object are set to the existing templates. __ParentColumnNames__ and __ChildColumnNames__ collections are filled with the names of the fields of the corresponding data sources. See the topic [Tutorial: Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%}) for step by step instructions.
+
 # See Also
+
 * [Binding the Grid]({%slug winforms/gridview/fundamentals/binding-the-grid%})
 
 * [Columns]({%slug winforms/gridview/fundamentals/columns%})

@@ -58,7 +58,9 @@ Me.RadGridView1.ShowFilteringRow = False
 
 >caution Filtering strings not allowed are: " LIKE ", " AND ", " OR ", "\"", ">", "<", "<>", "%", " NULL ", " IS ". Note: the spaces are important (e.g. " LIKE " compared to "LIKE").
 >
+
 # See Also
+
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 
 * [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})

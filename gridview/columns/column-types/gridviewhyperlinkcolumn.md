@@ -83,7 +83,10 @@ Here are the __GridViewHyperlinkColumn__ specific events:
 * __HyperlinkOpening:__ cancelable event which is raised before opening the hyperlink
 
 * __HyperlinkOpened:__ event which is raised after opening the link.
+
+
 # See Also
+
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
 
 * [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
