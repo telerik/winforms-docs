@@ -16,7 +16,7 @@ RadSpellChecker comes with one predefined dictionary which checks the English la
 
 ## Loading a custom dictionary
 
->note To access the RadSpellChecker related types, you need to include the Telerik.WinControls.RichTextBox.Proofing namespace
+>note To access the RadSpellChecker related types, you need to include the __Telerik.WinControls.SpellChecker.Proofing__ namespace
 >
 
 
