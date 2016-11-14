@@ -95,12 +95,3 @@ End Sub
 {{endregion}} 
 
 
-# See Also
-* [Basic Sorting]({[%slug winforms/gridview/sorting/basic-sorting%]}
-
-* [Custom Sorting]({[%slug winforms/gridview/sorting/custom-sorting%]}
-
-* [Setting Sorting Programmatically]({[%slug winforms/gridview/sorting/setting-sorting-programmatically%]}
-
-* [Sorting Expressions]({[%slug winforms/gridview/sorting/sorting-expressions%]}
-

@@ -94,20 +94,3 @@ Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Tele
 >note Cells also have Tag property but it differs substantially from rows one because of the UI Virtualization. Cells are reused and when you scroll the tag value remains unchanged while cell data value is updated.
 >
 
-# See Also
-* [Adding and Inserting Rows]({[%slug winforms/gridview/rows/adding-and-inserting-rows%]}
-
-* [Conditional Formatting Rows]({[%slug winforms/gridview/rows/conditional-formatting-rows%]}
-
-* [Creating custom rows]({[%slug winforms/gridview/rows/creating-custom-rows%]}
-
-* [Drag and Drop]({[%slug winforms/gridview/rows/drag-and-drop%]}
-
-* [Formatting Rows]({[%slug winforms/gridview/rows/formatting-rows%]}
-
-* [GridViewRowInfo]({[%slug winforms/gridview/rows/gridviewrowinfo%]}
-
-* [Iterating Rows]({[%slug winforms/gridview/rows/iterating-rows%]}
-
-* [New Row]({[%slug winforms/gridview/rows/new-row%]}
-

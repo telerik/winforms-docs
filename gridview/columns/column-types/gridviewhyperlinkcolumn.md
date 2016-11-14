@@ -83,20 +83,3 @@ Here are the __GridViewHyperlinkColumn__ specific events:
 * __HyperlinkOpening:__ cancelable event which is raised before opening the hyperlink
 
 * __HyperlinkOpened:__ event which is raised after opening the link.
-# See Also
-* [GridViewBrowseColumn]({[%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%]}
-
-* [GridViewCalculatorColumn]({[%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%]}
-
-* [GridViewCheckBoxColumn]({[%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%]}
-
-* [GridViewColorColumn]({[%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%]}
-
-* [GridViewComboBoxColumn]({[%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%]}
-
-* [GridViewCommandColumn]({[%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%]}
-
-* [GridViewDateTimeColumn]({[%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%]}
-
-* [GridViewDecimalColumn]({[%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%]}
-

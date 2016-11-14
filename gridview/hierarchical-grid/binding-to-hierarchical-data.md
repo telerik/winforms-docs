@@ -30,20 +30,3 @@ At design-time the steps are:
 
 1. Populate the RadGridView.Relations collection with GridViewRelation objects. These objects define the relations between views in the hierarchy. The __ParentTemplate__ and __ChildTemplate__ properties of __GridViewRelation__ object are set to the existing templates. __ParentColumnNames__ and __ChildColumnNames__ collections are filled with the names of the fields of the corresponding data sources. See the topic [Tutorial: Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/tutorial:-binding-to-hierarchical-data%}) for step by step instructions.
              
-# See Also
-* [Binding to Hierarchical Data Automatically]({[%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%]}
-
-* [Binding to Hierarchical Data Programmatically]({[%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically%]}
-
-* [Creating hierarchy using an XML data source]({[%slug winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source%]}
-
-* [Hierarchy of one to many relations]({[%slug winforms/gridview/hierarchical-grid/hierarchy-of-one-to-many-relations%]}
-
-* [Load-On-Demand Hierarchy]({[%slug winforms/gridview/hierarchical-grid/load-on-demand-hierarchy%]}
-
-* [Object Relational Hierarchy Mode]({[%slug winforms/gridview/hierarchical-grid/object-relational-hierarchy-mode%]}
-
-* [Self-Referencing Hierarchy]({[%slug winforms/gridview/hierarchical-grid/self-referencing-hierarchy%]}
-
-* [Tutorial Binding to Hierarchical Data]({[%slug -binding-to-hierarchical-data%]}
-

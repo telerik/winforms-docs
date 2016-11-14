@@ -39,12 +39,3 @@ Events are the most advanced way to edit cells and rows visual properties condit
 
 The main advantage of conditional formatting is the declarative approach used to describe formatting. It has limitations compared to events but also requires less code. Please refer to the following two section about [cells]({%slug winforms/gridview/cells/conditional-formatting-cells%}) and [rows]({%slug winforms/gridview/rows/conditional-formatting-rows%}) conditional formatting. 
         
-# See Also
-* [Alternating Row Color]({[%slug winforms/gridview/styling-and-appearance/alternating-row-color%]}
-
-* [HTML-like Text Formatting]({[%slug winforms/gridview/styling-and-appearance/html-like-text-formatting%]}
-
-* [Row Header Images]({[%slug winforms/gridview/styling-and-appearance/images%]}
-
-* [Themes]({[%slug winforms/gridview/styling-and-appearance/themes%]}
-

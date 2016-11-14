@@ -28,20 +28,3 @@ A typical business application needs to support "heads-down" data entry that avo
 ||Esc|Deactivates cell editor and discards the changes|
 
 
-# See Also
-* [Column Chooser]({[%slug winforms/gridview/end-user-capabilities/column-chooser%]}
-
-* [Editing Behavior]({[%slug winforms/gridview/end-user-capabilities/editing-behavior%]}
-
-* [Filtering]({[%slug winforms/gridview/end-user-capabilities/filtering%]}
-
-* [Grouping]({[%slug winforms/gridview/end-user-capabilities/grouping%]}
-
-* [Printing Support]({[%slug winforms/gridview/end-user-capabilities/printing-support%]}
-
-* [Reordering Rows]({[%slug winforms/gridview/end-user-capabilities/reordering-rows%]}
-
-* [Resizing Columns]({[%slug winforms/gridview/end-user-capabilities/resizing-columns%]}
-
-* [Scrolling Support]({[%slug winforms/gridview/end-user-capabilities/scrolling-support%]}
-

@@ -40,12 +40,3 @@ End Sub
 
 
 
-# See Also
-* [Accessing Child Templates]({[%slug winforms/gridview/hierarchical-grid/how-to/accessing-child-templates%]}
-
-* [Applying formatting only to cells in a child template]({[%slug winforms/gridview/hierarchical-grid/how-to/applying-formatting-only-to-cells-in-a-child-template%]}
-
-* [Expanding all rows]({[%slug winforms/gridview/hierarchical-grid/how-to/expanding-all-rows%]}
-
-* [Iterating the child rows collection of a chosen parent row in hierarchy RadGridView]({[%slug winforms/gridview/hierarchical-grid/how-to/iterating-the-child-rows-collection-of-a-chosen-parent-row-in-hierarchy-radgridview%]}
-

@@ -84,8 +84,3 @@ If the __MultiSelect__ property is enabled, you can make a multiple selection by
 ## CurrentRow and CurrentCell when multiple selection is used
 
 When multiple row (cell) selection is used, the current row(cell) value will be equal to the last cell (row) clicked when a selection is made. 
-# See Also
-* [Basic Selection]({[%slug winforms/gridview/selection/basic-selection%]}
-
-* [Selecting Rows and Cells Programmatically]({[%slug winforms/gridview/selection/selecting-rows-and-cells-programmatically%]}
-

@@ -76,16 +76,4 @@ End Sub
 
 ````
 
-{{endregion}}# See Also
-* [API]({[%slug winforms/gridview/editors/api%]}
-
-* [Customizing editor behavior]({[%slug winforms/gridview/editors/customizing-editor-behavior%]}
-
-* [Data validation]({[%slug winforms/gridview/editors/data-validation%]}
-
-* [Overview]({[%slug winforms/gridview/editors/editors%]}
-
-* [Events]({[%slug winforms/gridview/editors/events%]}
-
-* [Using custom editors]({[%slug winforms/gridview/editors/using-custom-editors%]}
-
+{{endregion}}

@@ -28,20 +28,3 @@ A typical business application needs to support "heads-down" data entry that avo
 |Enter|Opens the cell editor / Commits the changes|
 |F2|Opens the cell editor|
 |Esc|Deactivates cell editor and discards the changes|
-# See Also
-* [Binding the Grid]({[%slug winforms/gridview/fundamentals/binding-the-grid%]}
-
-* [Columns]({[%slug winforms/gridview/fundamentals/columns%]}
-
-* [Creating Hierarchical Grids]({[%slug winforms/gridview/fundamentals/creating-hierarchical-grids%]}
-
-* [Editing]({[%slug winforms/gridview/fundamentals/editing%]}
-
-* [Element Hierarchy]({[%slug winforms/gridview/fundamentals/element-hierarchy%]}
-
-* [Key Features]({[%slug winforms/gridview/fundamentals/key-features%]}
-
-* [Logical vs. Visual Grid Structure]({[%slug winforms/gridview/fundamentals/logical-vs.-visual-grid-structure%]}
-
-* [Overview of RadGridView Structure]({[%slug winforms/gridview/fundamentals/overview-of-radgridview-structure%]}
-

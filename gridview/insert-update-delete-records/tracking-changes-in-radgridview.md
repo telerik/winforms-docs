@@ -54,12 +54,3 @@ __CollectionChanging__ is equivalent to __RowsChanging__ event.
 __CollectionChanged__ event is a generic event. It can be used for both __Collumns__ and __Rows__.The events are accessible from the __Collumns__ and __Rows__ collection respectively. 
 
 __CollectionChanged__ is equivalent to __RowsChanged__ event.
-# See Also
-* [Data Editing Event Sequence]({[%slug winforms/gridview/insert/update/delete-records/data-editing-event-sequence%]}
-
-* [Data Editing Support]({[%slug winforms/gridview/insert/update/delete-records/data-editing-support%]}
-
-* [Insert/Update/Delete Using Controls API]({[%slug winforms/gridview/insert/update/delete-records/insert/update/delete-using-controls-api%]}
-
-* [Validation]({[%slug winforms/gridview/insert/update/delete-records/validation%]}
-

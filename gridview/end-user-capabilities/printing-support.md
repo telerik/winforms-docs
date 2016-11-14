@@ -21,20 +21,3 @@ The __Format tab__ is divided into two sections.
 
 * The second part holds the settings for what should be printed and the font settings for the different type of cells - header, group, data and summary cells.
 		  	
-# See Also
-* [Column Chooser]({[%slug winforms/gridview/end-user-capabilities/column-chooser%]}
-
-* [Editing Behavior]({[%slug winforms/gridview/end-user-capabilities/editing-behavior%]}
-
-* [Filtering]({[%slug winforms/gridview/end-user-capabilities/filtering%]}
-
-* [Grouping]({[%slug winforms/gridview/end-user-capabilities/grouping%]}
-
-* [Keyboard Support]({[%slug winforms/gridview/end-user-capabilities/keyboard-support%]}
-
-* [Reordering Rows]({[%slug winforms/gridview/end-user-capabilities/reordering-rows%]}
-
-* [Resizing Columns]({[%slug winforms/gridview/end-user-capabilities/resizing-columns%]}
-
-* [Scrolling Support]({[%slug winforms/gridview/end-user-capabilities/scrolling-support%]}
-

@@ -26,20 +26,3 @@ __GridViewDataColumn__ descends from __GridViewColumn__ and is the base class fo
 See [Iterating Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%}) for an example of using __GridViewDataColumn__.
 
 See [Data Formatting]({%slug winforms/gridview/columns/data-formatting%}) for an example of formatting __GridViewDataColumns__.
-# See Also
-* [Accessing and Iterating through Columns]({[%slug winforms/gridview/columns/accessing-and-iterating-through-columns%]}
-
-* [Calculated Columns (Column Expressions)]({[%slug winforms/gridview/columns/calculated-columns-(column-expressions)%]}
-
-* [Overview]({[%slug winforms/gridview/columns%]}
-
-* [Converting Data Types]({[%slug winforms/gridview/columns/converting-data-types%]}
-
-* [Data Formatting]({[%slug winforms/gridview/columns/data-formatting%]}
-
-* [Generating Columns]({[%slug winforms/gridview/columns/generating-columns%]}
-
-* [GridViewColumn]({[%slug winforms/gridview/columns/column-types/gridviewcolumn%]}
-
-* [Pinning and Unpinning Columns]({[%slug winforms/gridview/columns/pinning-and-unpinning-columns%]}
-

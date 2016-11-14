@@ -147,20 +147,3 @@ decimalColumn.FormatString = "{0:N2}"
 >note For a list of the standard numeric format strings, see [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)
 >
 
-# See Also
-* [GridViewBrowseColumn]({[%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%]}
-
-* [GridViewCalculatorColumn]({[%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%]}
-
-* [GridViewCheckBoxColumn]({[%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%]}
-
-* [GridViewColorColumn]({[%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%]}
-
-* [GridViewComboBoxColumn]({[%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%]}
-
-* [GridViewCommandColumn]({[%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%]}
-
-* [GridViewDateTimeColumn]({[%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%]}
-
-* [GridViewHyperlinkColumn]({[%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%]}
-

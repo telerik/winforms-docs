@@ -49,20 +49,3 @@ Me.radGridView1.Rows.Add(0.56714)
 
 
 
-# See Also
-* [GridViewBrowseColumn]({[%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%]}
-
-* [GridViewCheckBoxColumn]({[%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%]}
-
-* [GridViewColorColumn]({[%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%]}
-
-* [GridViewComboBoxColumn]({[%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%]}
-
-* [GridViewCommandColumn]({[%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%]}
-
-* [GridViewDateTimeColumn]({[%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%]}
-
-* [GridViewDecimalColumn]({[%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%]}
-
-* [GridViewHyperlinkColumn]({[%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%]}
-

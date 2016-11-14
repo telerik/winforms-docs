@@ -169,20 +169,3 @@ End Sub
 
 ![gridview-filtering-excel-like-filtering 007](images/gridview-filtering-excel-like-filtering007.png)
 
-# See Also
-* [Basic Filtering]({[%slug winforms/gridview/filtering/basic-filtering%]}
-
-* [Customizing composite filter dialog]({[%slug winforms/gridview/filtering/composite-filter-dialog%]}
-
-* [Custom Filtering]({[%slug winforms/gridview/filtering/custom-filtering%]}
-
-* [Events]({[%slug winforms/gridview/filtering/events%]}
-
-* [FilterExpressionChanged Event]({[%slug winforms/gridview/filtering/filterexpressionchanged-event%]}
-
-* [Filtering Row]({[%slug winforms/gridview/filtering/filtering-row%]}
-
-* [Put a filter cell into edit mode programmatically]({[%slug winforms/gridview/filtering/put-a-filter-cell-into-edit-mode-programmatically%]}
-
-* [Setting Filters Programmatically (composite descriptors)]({[%slug winforms/gridview/filtering/setting-filters-programmatically-(composite-descriptors)%]}
-

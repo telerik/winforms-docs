@@ -90,20 +90,3 @@ End Sub
 {{endregion}} 
 
 ![gridview-hierarchical-grid-binding-to-hierarchical-data-automatically 003](images/gridview-hierarchical-grid-binding-to-hierarchical-data-automatically003.png)
-# See Also
-* [Binding to Hierarchical Data Programmatically]({[%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically%]}
-
-* [Binding to Hierarchical Data]({[%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%]}
-
-* [Creating hierarchy using an XML data source]({[%slug winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source%]}
-
-* [Hierarchy of one to many relations]({[%slug winforms/gridview/hierarchical-grid/hierarchy-of-one-to-many-relations%]}
-
-* [Load-On-Demand Hierarchy]({[%slug winforms/gridview/hierarchical-grid/load-on-demand-hierarchy%]}
-
-* [Object Relational Hierarchy Mode]({[%slug winforms/gridview/hierarchical-grid/object-relational-hierarchy-mode%]}
-
-* [Self-Referencing Hierarchy]({[%slug winforms/gridview/hierarchical-grid/self-referencing-hierarchy%]}
-
-* [Tutorial Binding to Hierarchical Data]({[%slug -binding-to-hierarchical-data%]}
-

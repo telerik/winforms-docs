@@ -250,20 +250,3 @@ End Sub
 
 `IEditableObject` provides functionality to commit or rollback changes to an object that is used as a data source. The DataTable object supports this functionality. If the current item is changed in the associated `CurrencyManager`, the __EndEdit__ operation is called automatically - it is processed when the current row of RadGridView is changed (to another row). The EndEdit operation in this implementation is needed to commit the changes that happen in the current row itself even if the current row of RadGridView is not changed (to another row).
         
-# See Also
-* [Bind to XML]({[%slug winforms/gridview/populating-with-data/bind-to-xml%]}
-
-* [Bindable Types]({[%slug winforms/gridview/populating-with-data/bindable-types%]}
-
-* [Binding to a Collection of Interfaces]({[%slug winforms/gridview/populating-with-data/binding-to-a-collection-of-interfaces%]}
-
-* [Binding to Array and ArrayList]({[%slug winforms/gridview/populating-with-data/binding-to-array-and-arraylist%]}
-
-* [Binding to BindingList]({[%slug winforms/gridview/populating-with-data/binding-to-bindinglist%]}
-
-* [Binding to DataReader]({[%slug winforms/gridview/populating-with-data/binding-to-datareader%]}
-
-* [Binding to EntityFramework using Database first approach]({[%slug winforms/gridview/populating-with-data/binding-to-entityframework-using-database-first-approach%]}
-
-* [Binding to Generic Lists]({[%slug winforms/gridview/populating-with-data/binding-to-generic-lists%]}
-

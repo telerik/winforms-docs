@@ -32,20 +32,3 @@ To edit using the keyboard:
 * Use the __Delete__ button to remove the current row.
 
 See the [Keyboard Support]({%slug winforms/gridview/end-user-capabilities/keyboard-support%}) topic for more information on navigating using the keyboard.
-# See Also
-* [Column Chooser]({[%slug winforms/gridview/end-user-capabilities/column-chooser%]}
-
-* [Filtering]({[%slug winforms/gridview/end-user-capabilities/filtering%]}
-
-* [Grouping]({[%slug winforms/gridview/end-user-capabilities/grouping%]}
-
-* [Keyboard Support]({[%slug winforms/gridview/end-user-capabilities/keyboard-support%]}
-
-* [Printing Support]({[%slug winforms/gridview/end-user-capabilities/printing-support%]}
-
-* [Reordering Rows]({[%slug winforms/gridview/end-user-capabilities/reordering-rows%]}
-
-* [Resizing Columns]({[%slug winforms/gridview/end-user-capabilities/resizing-columns%]}
-
-* [Scrolling Support]({[%slug winforms/gridview/end-user-capabilities/scrolling-support%]}
-

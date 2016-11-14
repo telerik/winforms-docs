@@ -18,10 +18,3 @@ This is the default view definition. The data is presented like a table and you 
 
 You need do not need to set this view manually and the view does not contain any properties to configure.
 		
-# See Also
-* [Column Groups View]({[%slug winforms/gridview/view-definitions/column-groups-view%]}
-
-* [HTML View]({[%slug winforms/gridview/view-definitions/html-view%]}
-
-* [Overview]({[%slug winforms/gridview/view-definitions/overview%]}
-

@@ -94,12 +94,3 @@ The built-in themes are:
 >note You can edit the existing built-in themes or you can create brand new ones using [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}).
 >
 
-# See Also
-* [Alternating Row Color]({[%slug winforms/gridview/styling-and-appearance/alternating-row-color%]}
-
-* [Four ways to customize RadGridView appearance]({[%slug winforms/gridview/styling-and-appearance/four-ways-to-customize-radgridview-appearance%]}
-
-* [HTML-like Text Formatting]({[%slug winforms/gridview/styling-and-appearance/html-like-text-formatting%]}
-
-* [Row Header Images]({[%slug winforms/gridview/styling-and-appearance/images%]}
-

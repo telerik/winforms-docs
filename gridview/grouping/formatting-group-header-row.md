@@ -89,20 +89,3 @@ End Sub
 {{endregion}} 
 
 ![gridview-grouping-formatting-group-header-row 002](images/gridview-grouping-formatting-group-header-row002.png)
-# See Also
-* [Basic Grouping]({[%slug winforms/gridview/grouping/basic-grouping%]}
-
-* [Custom Grouping]({[%slug winforms/gridview/grouping/custom-grouping%]}
-
-* [Events]({[%slug winforms/gridview/grouping/events%]}
-
-* [Group Aggregates]({[%slug winforms/gridview/grouping/group-aggregates%]}
-
-* [Groups Collection]({[%slug winforms/gridview/grouping/groups-collection%]}
-
-* [Setting Groups Programmatically]({[%slug winforms/gridview/grouping/setting-groups-programmatically%]}
-
-* [Sorting group rows]({[%slug winforms/gridview/grouping/sorting-group-rows%]}
-
-* [Using Grouping Expressions]({[%slug winforms/gridview/grouping/using-grouping-expressions%]}
-

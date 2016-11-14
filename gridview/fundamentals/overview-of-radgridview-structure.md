@@ -64,20 +64,3 @@ __GridViewTemplate__ is a basic class containing settings for a single level of
 When you want to enable the group-by functionality for the end-user, you need to set __RadGridView.GroupingEnabled__ to *true* and __GridViewTemplate.EnableGrouping__.  If you want to prevent the end-user to drag column header into the __GroupPanel,__  set __GridViewTemplate.AllowDragToGroup__ to *false*. __RadGridView.ShowGroupPanel__ shows/hides the group panel. You can access the group panel using __RadGridView.GridElement.HeaderElement.GroupPanel__ property. 
 
 ![gridview-fundamentals-overview-of-radgridview-structure 010](images/gridview-fundamentals-overview-of-radgridview-structure010.png)
-# See Also
-* [Binding the Grid]({[%slug winforms/gridview/fundamentals/binding-the-grid%]}
-
-* [Columns]({[%slug winforms/gridview/fundamentals/columns%]}
-
-* [Creating Hierarchical Grids]({[%slug winforms/gridview/fundamentals/creating-hierarchical-grids%]}
-
-* [Editing]({[%slug winforms/gridview/fundamentals/editing%]}
-
-* [Element Hierarchy]({[%slug winforms/gridview/fundamentals/element-hierarchy%]}
-
-* [Key Features]({[%slug winforms/gridview/fundamentals/key-features%]}
-
-* [Keyboard Support]({[%slug winforms/gridview/fundamentals/keyboard-support%]}
-
-* [Logical vs. Visual Grid Structure]({[%slug winforms/gridview/fundamentals/logical-vs.-visual-grid-structure%]}
-

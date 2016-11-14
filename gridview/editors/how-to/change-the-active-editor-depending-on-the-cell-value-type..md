@@ -119,6 +119,3 @@ The result is that the end user can edit the cells with the appropriate for thei
 ![gridview-editors-howto-change-the-active-editor-depending-on-the-cell-value-type 001](images/gridview-editors-howto-change-the-active-editor-depending-on-the-cell-value-type001.png)
 
 ![gridview-editors-howto-change-the-active-editor-depending-on-the-cell-value-type 002](images/gridview-editors-howto-change-the-active-editor-depending-on-the-cell-value-type002.png)
-# See Also
-* [Allow end-users to add items to DropDownListEditor]({[%slug winforms/gridview/editors/how-to/allow-end-users-to-add-items-to-dropdownlisteditor%]}
-

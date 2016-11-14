@@ -63,18 +63,3 @@ System.Diagnostics.Process.Start("C:\Test.xls")
 ## Wrong text alignment for rows with conditional formatting
 
 __ExportToExcelML__ does not support all text alignment settings for the conditional formatting; because of this ExportToExcelML takes and applies current conditional formatting alignments, but RadGridView skips the default values. This will be improved in future versions of RadGridView, but there is a workaround we can suggest, so feel free to open a [support ticket](http://www.telerik.com/account/support-tickets.aspx) to request it.
-# See Also
-* [Export Data in a Group to Excel]({[%slug winforms/gridview/exporting-data/export-data-in-a-group-to-excel%]}
-
-* [Export to CSV]({[%slug winforms/gridview/exporting-data/export-to-csv%]}
-
-* [Export to Excel via ExcelML Format]({[%slug winforms/gridview/exporting-data/export-to-excel-via-excelml-format%]}
-
-* [Export to PDF]({[%slug winforms/gridview/exporting-data/export-to-pdf%]}
-
-* [Export to HTML]({[%slug winforms/gridview/exporting-data/export-to-html%]}
-
-* [Overview]({[%slug winforms/gridview/exporting-data/overview%]}
-
-* [Export to Excel]({[%slug winforms/gridview/exporting-data/spread-export%]}
-

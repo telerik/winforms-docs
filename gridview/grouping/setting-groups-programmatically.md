@@ -99,20 +99,3 @@ Me.RadGridView1.GroupDescriptors.Add(descriptor3)
 {{endregion}} 
 
 ![gridview-grouping-setting-groups-programmatically 003](images/gridview-grouping-setting-groups-programmatically003.png)
-# See Also
-* [Basic Grouping]({[%slug winforms/gridview/grouping/basic-grouping%]}
-
-* [Custom Grouping]({[%slug winforms/gridview/grouping/custom-grouping%]}
-
-* [Events]({[%slug winforms/gridview/grouping/events%]}
-
-* [Formatting Group Header Row]({[%slug winforms/gridview/grouping/formatting-group-header-row%]}
-
-* [Group Aggregates]({[%slug winforms/gridview/grouping/group-aggregates%]}
-
-* [Groups Collection]({[%slug winforms/gridview/grouping/groups-collection%]}
-
-* [Sorting group rows]({[%slug winforms/gridview/grouping/sorting-group-rows%]}
-
-* [Using Grouping Expressions]({[%slug winforms/gridview/grouping/using-grouping-expressions%]}
-

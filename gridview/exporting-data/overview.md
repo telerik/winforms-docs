@@ -30,18 +30,3 @@ You can also export RadGridView data to a Telerik Reporting report for printing 
 >note As of R1 2012 RadGridView natively supports printing. More information about this feature can be found [here]({%slug winforms/gridview/printing-support%}).
 >
 
-# See Also
-* [Export Data in a Group to Excel]({[%slug winforms/gridview/exporting-data/export-data-in-a-group-to-excel%]}
-
-* [Export to CSV]({[%slug winforms/gridview/exporting-data/export-to-csv%]}
-
-* [Export to Excel via ExcelML Format]({[%slug winforms/gridview/exporting-data/export-to-excel-via-excelml-format%]}
-
-* [Export to PDF]({[%slug winforms/gridview/exporting-data/export-to-pdf%]}
-
-* [Export to HTML]({[%slug winforms/gridview/exporting-data/export-to-html%]}
-
-* [Export to Excel]({[%slug winforms/gridview/exporting-data/spread-export%]}
-
-* [Troubleshooting]({[%slug winforms/gridview/exporting-data/troubleshooting%]}
-

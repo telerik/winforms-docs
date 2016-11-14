@@ -30,20 +30,3 @@ Multiple levels of grouping can be created by dragging additional column names t
 Multiple groups can be created on the same level as shown in the example below:
 
 ![gridview-end-user-capabilities-grouping 005](images/gridview-end-user-capabilities-grouping005.png)
-# See Also
-* [Column Chooser]({[%slug winforms/gridview/end-user-capabilities/column-chooser%]}
-
-* [Editing Behavior]({[%slug winforms/gridview/end-user-capabilities/editing-behavior%]}
-
-* [Filtering]({[%slug winforms/gridview/end-user-capabilities/filtering%]}
-
-* [Keyboard Support]({[%slug winforms/gridview/end-user-capabilities/keyboard-support%]}
-
-* [Printing Support]({[%slug winforms/gridview/end-user-capabilities/printing-support%]}
-
-* [Reordering Rows]({[%slug winforms/gridview/end-user-capabilities/reordering-rows%]}
-
-* [Resizing Columns]({[%slug winforms/gridview/end-user-capabilities/resizing-columns%]}
-
-* [Scrolling Support]({[%slug winforms/gridview/end-user-capabilities/scrolling-support%]}
-

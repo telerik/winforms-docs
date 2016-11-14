@@ -120,12 +120,3 @@ RadExpressionEditorForm.ExpressionItemsList.LoadFromXML(stream_)
 ````
 
 {{endregion}} 
-# See Also
-* [Design-time]({[%slug winforms/gridview/expression-editor/design-time%]}
-
-* [End-user Support]({[%slug winforms/gridview/expression-editor/end-user-support%]}
-
-* [Overview]({[%slug winforms/gridview/expression-editor%]}
-
-* [Localization]({[%slug winforms/gridview/expression-editor/localization%]}
-

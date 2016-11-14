@@ -78,20 +78,3 @@ __Example 3:__
 Refer to the following external resource about further information on the expressions syntax:
 
 [http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression%28VS.80%29.aspx](http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression%28VS.80%29.aspx)
-# See Also
-* [Accessing and Iterating through Columns]({[%slug winforms/gridview/columns/accessing-and-iterating-through-columns%]}
-
-* [Overview]({[%slug winforms/gridview/columns%]}
-
-* [Converting Data Types]({[%slug winforms/gridview/columns/converting-data-types%]}
-
-* [Data Formatting]({[%slug winforms/gridview/columns/data-formatting%]}
-
-* [Generating Columns]({[%slug winforms/gridview/columns/generating-columns%]}
-
-* [GridViewColumn]({[%slug winforms/gridview/columns/column-types/gridviewcolumn%]}
-
-* [GridViewDataColumn]({[%slug winforms/gridview/columns/column-types/gridviewdatacolumn%]}
-
-* [Pinning and Unpinning Columns]({[%slug winforms/gridview/columns/pinning-and-unpinning-columns%]}
-

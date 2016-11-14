@@ -44,20 +44,3 @@ The default behavior of the grid is to allow all views of the data to be sorted,
 Sorting can be invoked through right clicking the column heading to display the context menu. The menu will allow you to choose from __Sort Ascending__, __Sort Descending__ and __Clear Sorting__.
 
 ![gridview-end-user-capabilities-sorting 006](images/gridview-end-user-capabilities-sorting006.png)
-# See Also
-* [Column Chooser]({[%slug winforms/gridview/end-user-capabilities/column-chooser%]}
-
-* [Editing Behavior]({[%slug winforms/gridview/end-user-capabilities/editing-behavior%]}
-
-* [Filtering]({[%slug winforms/gridview/end-user-capabilities/filtering%]}
-
-* [Grouping]({[%slug winforms/gridview/end-user-capabilities/grouping%]}
-
-* [Keyboard Support]({[%slug winforms/gridview/end-user-capabilities/keyboard-support%]}
-
-* [Printing Support]({[%slug winforms/gridview/end-user-capabilities/printing-support%]}
-
-* [Reordering Rows]({[%slug winforms/gridview/end-user-capabilities/reordering-rows%]}
-
-* [Resizing Columns]({[%slug winforms/gridview/end-user-capabilities/resizing-columns%]}
-

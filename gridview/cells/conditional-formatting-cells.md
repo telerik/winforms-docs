@@ -147,20 +147,3 @@ Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
 
 
 
-# See Also
-* [Accessing and Setting the CurrentCell]({[%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%]}
-
-* [Accessing Cells]({[%slug winforms/gridview/cells/accessing-cells%]}
-
-* [Creating Custom Cells]({[%slug winforms/gridview/cells/creating-custom-cells%]}
-
-* [Formatting Cells]({[%slug winforms/gridview/cells/formatting-cells%]}
-
-* [GridViewCellInfo]({[%slug winforms/gridview/cells/gridviewcellinfo%]}
-
-* [Iterating Cells]({[%slug winforms/gridview/cells/iterating-cells%]}
-
-* [Painting and Drawing in Cells]({[%slug winforms/gridview/cells/painting-and-drawing-in-cells%]}
-
-* [ToolTips]({[%slug winforms/gridview/cells/tooltips%]}
-

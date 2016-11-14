@@ -136,20 +136,3 @@ Me.dbContext.SaveChanges()
 {{endregion}} 
 
 Now, if you run your application you should see the hierarchical data.
-# See Also
-* [Bind to XML]({[%slug winforms/gridview/populating-with-data/bind-to-xml%]}
-
-* [Bindable Types]({[%slug winforms/gridview/populating-with-data/bindable-types%]}
-
-* [Binding to a Collection of Interfaces]({[%slug winforms/gridview/populating-with-data/binding-to-a-collection-of-interfaces%]}
-
-* [Binding to Array and ArrayList]({[%slug winforms/gridview/populating-with-data/binding-to-array-and-arraylist%]}
-
-* [Binding to BindingList]({[%slug winforms/gridview/populating-with-data/binding-to-bindinglist%]}
-
-* [Binding to DataReader]({[%slug winforms/gridview/populating-with-data/binding-to-datareader%]}
-
-* [Binding to Generic Lists]({[%slug winforms/gridview/populating-with-data/binding-to-generic-lists%]}
-
-* [Binding to ObservableCollection]({[%slug winforms/gridview/populating-with-data/binding-to-observablecollection%]}
-

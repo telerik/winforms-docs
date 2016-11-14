@@ -67,20 +67,3 @@ One __GridViewTemplate__ corresponds to one DataSource. As its name speaks, it 
         
 __GridViewInfo.Rows__ are a subset of __GridVIewTemplate.Rows__. The subset is created dynamically so it is slower operation.
         
-# See Also
-* [Adding and Inserting Rows]({[%slug winforms/gridview/rows/adding-and-inserting-rows%]}
-
-* [Conditional Formatting Rows]({[%slug winforms/gridview/rows/conditional-formatting-rows%]}
-
-* [Creating custom rows]({[%slug winforms/gridview/rows/creating-custom-rows%]}
-
-* [Drag and Drop]({[%slug winforms/gridview/rows/drag-and-drop%]}
-
-* [Formatting Rows]({[%slug winforms/gridview/rows/formatting-rows%]}
-
-* [Iterating Rows]({[%slug winforms/gridview/rows/iterating-rows%]}
-
-* [New Row]({[%slug winforms/gridview/rows/new-row%]}
-
-* [Painting Rows]({[%slug winforms/gridview/rows/painting-rows%]}
-

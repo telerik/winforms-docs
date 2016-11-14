@@ -110,10 +110,3 @@ End Sub
 {{endregion}} 
 
 ![gridview-printing-support-events 002](images/gridview-printing-support-events002.png)
-# See Also
-* [GridPrintStyle]({[%slug winforms/gridview/printing-support/gridprintstyle%]}
-
-* [Printing Hierarchical Grid]({[%slug winforms/gridview/printing-support/printing-hierarchical-grid%]}
-
-* [Overview]({[%slug winforms/gridview/printing-support%]}
-

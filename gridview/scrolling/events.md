@@ -37,6 +37,3 @@ End Sub
 >caution Please note that RadGridView Scroll event is NOT used.
 >
 
-# See Also
-* [Scrolling Programmatically]({[%slug winforms/gridview/scrolling/scrolling-programmatically%]}
-

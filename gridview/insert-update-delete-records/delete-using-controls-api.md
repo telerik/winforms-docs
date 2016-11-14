@@ -93,12 +93,3 @@ Me.RadGridView1.Rows.Remove(Me.RadGridView1.CurrentRow)
 
 
 
-# See Also
-* [Data Editing Event Sequence]({[%slug winforms/gridview/insert/update/delete-records/data-editing-event-sequence%]}
-
-* [Data Editing Support]({[%slug winforms/gridview/insert/update/delete-records/data-editing-support%]}
-
-* [Tracking changes in RadGridView]({[%slug winforms/gridview/insert/update/delete-records/tracking-changes-in-radgridview%]}
-
-* [Validation]({[%slug winforms/gridview/insert/update/delete-records/validation%]}
-

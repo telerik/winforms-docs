@@ -44,20 +44,3 @@ This event is also the final place where the filtering expression can be changed
 
 
 
-# See Also
-* [Basic Filtering]({[%slug winforms/gridview/filtering/basic-filtering%]}
-
-* [Customizing composite filter dialog]({[%slug winforms/gridview/filtering/composite-filter-dialog%]}
-
-* [Custom Filtering]({[%slug winforms/gridview/filtering/custom-filtering%]}
-
-* [Events]({[%slug winforms/gridview/filtering/events%]}
-
-* [Excel-like filtering]({[%slug winforms/gridview/filtering/excel-like-filtering%]}
-
-* [Filtering Row]({[%slug winforms/gridview/filtering/filtering-row%]}
-
-* [Put a filter cell into edit mode programmatically]({[%slug winforms/gridview/filtering/put-a-filter-cell-into-edit-mode-programmatically%]}
-
-* [Setting Filters Programmatically (composite descriptors)]({[%slug winforms/gridview/filtering/setting-filters-programmatically-(composite-descriptors)%]}
-

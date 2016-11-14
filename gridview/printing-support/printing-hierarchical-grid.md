@@ -65,10 +65,3 @@ __ChildViewPrinting:__ The event allows to choose the view to print on a row by 
 
 * __Row:__ Gives access to the current __GridViewHierarchyRowInfo__.
             
-# See Also
-* [Events and Customization]({[%slug winforms/gridview/printing-support/events-and-customization%]}
-
-* [GridPrintStyle]({[%slug winforms/gridview/printing-support/gridprintstyle%]}
-
-* [Overview]({[%slug winforms/gridview/printing-support%]}
-
