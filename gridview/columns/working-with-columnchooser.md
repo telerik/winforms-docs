@@ -13,7 +13,7 @@ previous_url: gridview-columns-working-with-column-chooser
 
 Listed below are the properties which control the behavior of the columns when used with the Column Chooser:
 
-__AllowColumnChooser__ - this property determines whether the Column Chooser is available in the template. By default this property is set to true for all templates
+__AllowColumnChooser:__ This property determines whether the Column Chooser is available in the template. By default this property is set to true for all templates
 
 #### Enable or Disable ColumnChooser
 
@@ -31,7 +31,7 @@ RadGridView1.MasterTemplate.AllowColumnChooser = False
 
 {{endregion}}
 
-__AllowHide:__ this property determines whether the column is allowed to be moved to the Column Chooser. By default this property is set to *true* for all columns 
+__AllowHide:__ This property determines whether the column is allowed to be moved to the Column Chooser. By default this property is set to *true* for all columns 
 
 #### Determines if the specified column is allowed to be dragged to the column chooser dialog
 
@@ -49,7 +49,7 @@ RadGridView1.Columns("CategoryName").AllowHide = False
 
 {{endregion}}
 
-__VisibleInColumnChooser:__ by setting this property for each column you determine whether the column will be visible in the Column Chooser when dragged to it. By default this property is set to *true* for all columns:
+__VisibleInColumnChooser:__ By setting this property for each column you determine whether the column will be visible in the Column Chooser when dragged to it. By default this property is set to *true* for all columns:
 
 #### Determines if the specified column is going to be visible in the column chooser dialog
 
@@ -66,6 +66,10 @@ RadGridView1.Columns("Picture").VisibleInColumnChooser = False
 ````
 
 {{endregion}}
+
+__ColumnChooserSortOrder:__ Gets or sets the column chooser sort order.
+
+#### Accessing the column chooser instance
 
 In order to customize the Column Chooser you can access it directly from the instance of RadGridView, as shown in the following example:
 
@@ -86,7 +90,9 @@ RadGridView1.ColumnChooser.Font = New Font("Segoe", 15, FontStyle.Bold)
 ````
 
 {{endregion}}
+
 # See Also
+
 * [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
 
 * [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})

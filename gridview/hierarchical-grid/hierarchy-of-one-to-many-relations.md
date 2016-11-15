@@ -144,6 +144,11 @@ End Sub
 The result is shown on the image below:
 
 ![gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 002](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations002.png)
+
+>note The ChildViewTabsPosition property gets or sets the position to place tabs for child views related with this template.
+>
+
+
 # See Also
 * [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
 

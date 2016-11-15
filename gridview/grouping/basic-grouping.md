@@ -21,6 +21,8 @@ The __GridViewTemplate__ properties that govern grouping behavior are:
 
 * __AutoExpandGroups:__ Groups are automatically expanded as grouping expressions are added either programmatically or by drag-and-drop. This property value is __False__ by default.
 
+* __GroupExpandAnimationType:__ Gets or set a value indicating the animation effect that will be used when expanding/collapsing groups.
+
 Once grouped, you can additionally sort the grid data, using the default sorting mechanism.
 
 The example below allows GroupDescriptors to be added programmatically, but does not allow the user to group via drag and drop. The groups are automatically expanded.

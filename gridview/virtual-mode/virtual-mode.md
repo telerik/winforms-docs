@@ -124,4 +124,4 @@ the __VirtualMode__ property is set to *true*):
 
 # See Also
 
-* [RadVirtualGrid]({%slug winforms/virtualgrid})
+* [RadVirtualGrid]({%slug winforms/virtualgrid%})

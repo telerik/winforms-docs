@@ -69,6 +69,11 @@ Private Sub RadGridView1_CellValidating(ByVal sender As Object, ByVal e As Teler
 >note You can watch the [Validation with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/radgridview/validation-with-radgridview-winforms) video regarding the usage of RadGridView built-in validation.
 >
 
+The following properties are controlling the errors visibility:
+
+* ShowCellErrors
+* ShowRowErrors
+
 # See Also
 * [API]({%slug winforms/gridview/editors/api%})
 
