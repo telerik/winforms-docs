@@ -571,8 +571,8 @@ navigation:
         title: How-To
         position: 21
     gridview/design-time-support:
-        title: Design-time Support
-        position: 22
+        title: Design-time
+        position: 2
     gridview/end-user-capabilities:
         title: End-user Capabilities
         position: 23
