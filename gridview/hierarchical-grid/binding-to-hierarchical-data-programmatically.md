@@ -1,7 +1,7 @@
 ---
 title: Binding to Hierarchical Data Programmatically
-page_title: Binding to Hierarchical Data Programmatically | UI for WinForms Documentation
-description: Binding to Hierarchical Data Programmatically
+page_title: Binding to Hierarchical Data Programmatically | RadGridView
+description: Programmatically create a hierarchical grid that displays arbitrary number of child levels.
 slug: winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically
 tags: binding,to,hierarchical,data,programmatically
 published: True
@@ -10,10 +10,6 @@ previous_url: gridview-hierarchical-grid-binding-to-hierarchical-data-programmat
 ---
 
 # Binding to Hierarchical Data Programmatically
-
-
-
-## 
 
 
 | RELATED VIDEOS |  |
@@ -74,13 +70,15 @@ Private Sub BindingToHierarchicalGridProgramatically_Load(ByVal sender As System
 {{endregion}} 
 
 
+You can also set the relation in design-time, using the provided collection editor as in the figure below:
 
-
-You can also set the relation in design-time, using the provided collection editor as in the figure below:<br>![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 005](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically005.png)
+![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 005](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically005.png)
 
 ## Setting the Multi-Level hierarchy in bound mode
 
-It is possible to manually set up the child templates and the relations between them in order to build a Multi-level hierarchy as well. The code snippet below demonstrates the approach, which uses three data tables from the Northwind database:<br>![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 002](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically002.png)
+It is possible to manually set up the child templates and the relations between them in order to build a multi-level hierarchy as well. The code snippet below demonstrates the approach, which uses three data tables from the Northwind database:
+
+![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 002](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically002.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.cs region=creatingMultiLevelHierarchicalGridInUnboundMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.vb region=creatingMultiLevelHierarchicalGridInUnboundMode}} 
@@ -153,7 +151,7 @@ End Sub
 
 ## Hierarchical Grid in Unbound mode
 
-Setting the hierarchical grid in unbound mode is quite similar to that for the bound mode with only difference is setting the unbound mode itself. First of all you need to create and the columns you need. After that set up the relation and finally load the data.
+Setting the hierarchical grid in unbound mode is quite similar to that for the bound mode with only difference is setting the unbound mode itself. First of all you need to create and add the columns you need. After that set up the relation and finally load the data.
 
 >note Note that the GridViewRelation is created by using the GridViewDataColumn.Name, not the FieldName. As in the example below it is best if you create the column and pass the FieldName in the column's constructor. This will automatically set its Name to the same value.
 >
@@ -473,3 +471,20 @@ End Sub
 
 
 ![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 004](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically004.png)
+# See Also
+* [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
+
+* [Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%})
+
+* [Creating hierarchy using an XML data source]({%slug winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source%})
+
+* [Hierarchy of one to many relations]({%slug winforms/gridview/hierarchical-grid/hierarchy-of-one-to-many-relations%})
+
+* [Load-On-Demand Hierarchy]({%slug winforms/gridview/hierarchical-grid/load-on-demand-hierarchy%})
+
+* [Object Relational Hierarchy Mode]({%slug winforms/gridview/hierarchical-grid/object-relational-hierarchy-mode%})
+
+* [Self-Referencing Hierarchy]({%slug winforms/gridview/hierarchical-grid/self-referencing-hierarchy%})
+
+* [Tutorial Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/tutorial-binding-to-hierarchical-data%})
+

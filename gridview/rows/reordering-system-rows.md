@@ -1,7 +1,7 @@
 ---
 title: Reordering System Rows
-page_title: Reordering System Rows | UI for WinForms Documentation
-description: Reordering System Rows
+page_title: Reordering System Rows | RadGridView
+description: This article describes how you can change the order of the header, filtering, search and new rows.
 slug: winforms/gridview/rows/reordering-system-rows
 tags: reordering,system,rows
 published: True
@@ -11,13 +11,13 @@ previous_url: gridview-rows-reordering-system-rows
 
 # Reordering System Rows
 
-__RadGridView__ provides out of the box API for reordering its system rows: [GridFilterRowElement]({%slug winforms/gridview/filtering/filtering-row%}), [GridSearchRowElement]({%slug winforms/gridview/rows/search-row%}), [GridNewRowElement]({%slug winforms/gridview/rows/new-row%}). The screenshots below illustrate __RadGridView__ before and after the reordering operation.
+__RadGridView__ provides out of the box API for reordering its system rows: [GridFilterRowElement]({%slug winforms/gridview/filtering/filtering-row%}), [GridSearchRowElement]({%slug winforms/gridview/rows/search-row%}), [GridNewRowElement]({%slug winforms/gridview/rows/new-row%}). The figures below illustrate __RadGridView__ before and after the reordering operation.
 
-## 
->caption Fig.1 Default Order
+>caption Figure 1: Default Order
 
 ![gridview-rows-reordering-system-rows 001](images/gridview-rows-reordering-system-rows001.png)
->caption Fig.2 Reordered Rows
+
+>caption Figure 2: Reordered Rows
 
 ![gridview-rows-reordering-system-rows 002](images/gridview-rows-reordering-system-rows002.png)
 
@@ -55,3 +55,23 @@ Me.RadGridView1.GridViewElement.TableElement.UpdateLayout()
 
 >note The layout needs to be invalidated and updated in order to reflect the changes.
 >
+
+
+# See Also
+
+* [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
+
+* [Conditional Formatting Rows]({%slug winforms/gridview/rows/conditional-formatting-rows%})
+
+* [Creating custom rows]({%slug winforms/gridview/rows/creating-custom-rows%})
+
+* [Drag and Drop]({%slug winforms/gridview/rows/drag-and-drop%})
+
+* [Formatting Rows]({%slug winforms/gridview/rows/formatting-rows%})
+
+* [GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%})
+
+* [Iterating Rows]({%slug winforms/gridview/rows/iterating-rows%})
+
+* [New Row]({%slug winforms/gridview/rows/new-row%})
+

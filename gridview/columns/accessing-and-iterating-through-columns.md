@@ -1,11 +1,11 @@
 ---
 title: Accessing and Iterating through Columns
-page_title: Accessing and Iterating through Columns | UI for WinForms Documentation
-description: Accessing and Iterating through Columns
+page_title: Accessing and Iterating through Columns | RadGridView
+description: This article shows how one can access and Iterate through the Columns in RadGridView.
 slug: winforms/gridview/columns/accessing-and-iterating-through-columns
 tags: accessing,and,iterating,through,columns
 published: True
-position: 2
+position: 4
 previous_url: gridview-columns-iterating-columns
 ---
 
@@ -13,7 +13,7 @@ previous_url: gridview-columns-iterating-columns
 
 ## Accessing Columns
 
-You can access a column by name or index. Generally speaking, accessing the columns by name is the preferred approach because if the user reorders the columns the indexes would also change.
+You can access any column by name or index. Generally speaking, accessing the columns by name is the preferred approach because if the user reorders the columns the indexes would also change.
 
 For example, the code snippet below sets the width of an image column named "Picture" to 110: 
 
@@ -74,7 +74,9 @@ Next
 
 {{endregion}}
 
-The result from the code above is displayed on the following image:![gridview-columns-iterating-columns 001](images/gridview-columns-iterating-columns001.png)
+>caption Figure 1: Iterating columns and setting their HeaderText.
+
+![gridview-columns-iterating-columns 001](images/gridview-columns-iterating-columns001.png)
 
 ## Iterating through Hierarchical Columns
 
@@ -145,5 +147,20 @@ Public Function GetAllColumns(ByVal template As GridViewTemplate) As List(Of Gri
 ````
 
 {{endregion}} 
+# See Also
+* [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
 
-![gridview-columns-iterating-columns 002](images/gridview-columns-iterating-columns002.png)
+* [Overview]({%slug winforms/gridview/columns%})
+
+* [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
+
+* [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
+
+* [Generating Columns]({%slug winforms/gridview/columns/generating-columns%})
+
+* [GridViewColumn]({%slug winforms/gridview/columns/column-types/gridviewcolumn%})
+
+* [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
+
+* [Pinning and Unpinning Columns]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%})
+

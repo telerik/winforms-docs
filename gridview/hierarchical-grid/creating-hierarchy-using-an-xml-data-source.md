@@ -1,7 +1,7 @@
 ---
 title: Creating hierarchy using an XML data source
-page_title: Creating hierarchy using an XML data source | UI for WinForms Documentation
-description: Creating hierarchy using an XML data source
+page_title: Creating hierarchy using an XML data source | RadGridView
+description: This article shows how you can create hierarchy using an XML data source.
 slug: winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source
 tags: creating,hierarchy,using,an,xml,data,source
 published: True
@@ -10,11 +10,6 @@ previous_url: gridview-hirarchical-grid-creating-hierarchy-using-an-xml-data-sou
 ---
 
 # Creating hierarchy using an XML data source
-
-
-
-## 
-
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
@@ -117,7 +112,7 @@ This xml file is used in the examples below:
     </Invoices>
 ````
 
-The DataSet created by ReadXml method for the *given xml above* contains 3 tables which you can avoid easily by skipping the second table and using the first and the third ones only. Note also that *Invoice_Id* and *Parts_Id* columns were added automatically to the tables by ReadXml method:
+The `DataSet` created by __ReadXml__ method for the *given xml above* contains 3 tables which you can avoid easily by skipping the second table and using the first and the third ones only. Note also that *Invoice_Id* and *Parts_Id* columns were added automatically to the tables by the __ReadXml__ method:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.cs region=CreatingHierarchyUsingXmlDataSource}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.vb region=CreatingHierarchyUsingXmlDataSource}}````C#
@@ -162,3 +157,20 @@ Private Sub CreatingHierarchyUsingXmlDataSource_Load(ByVal sender As System.Obje
 
 	
 {{endregion}} 
+# See Also
+* [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
+
+* [Binding to Hierarchical Data Programmatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically%})
+
+* [Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%})
+
+* [Hierarchy of one to many relations]({%slug winforms/gridview/hierarchical-grid/hierarchy-of-one-to-many-relations%})
+
+* [Load-On-Demand Hierarchy]({%slug winforms/gridview/hierarchical-grid/load-on-demand-hierarchy%})
+
+* [Object Relational Hierarchy Mode]({%slug winforms/gridview/hierarchical-grid/object-relational-hierarchy-mode%})
+
+* [Self-Referencing Hierarchy]({%slug winforms/gridview/hierarchical-grid/self-referencing-hierarchy%})
+
+* [Tutorial Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/tutorial-binding-to-hierarchical-data%})
+

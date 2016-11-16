@@ -1,7 +1,7 @@
 ---
 title: Customizing RadExpressionEditor
-page_title: Customizing RadExpressionEditor | UI for WinForms Documentation
-description: Customizing RadExpressionEditor
+page_title: Customizing RadExpressionEditor | RadGridView
+description: Create a custom expression method, which can be used in RadExpressionEditor or as a value of the Expression property.
 slug: winforms/gridview/expression-editor/customizing-radexpressioneditor
 tags: customizing,radexpressioneditor
 published: True
@@ -11,11 +11,9 @@ previous_url: gridview-expressioneditor-cutomizing-radexpressioneditor
 
 # Customizing RadExpressionEditor
 
-
-
 ## Creating custom expression functions
 
-Although Telerik provides a great number of predefined functions, there could be scenarios, which require additional functionality. We provide a mechanism, which allows the developer to create a custom expression method, which can be used in RadExpressionEditor or as a value of the Expression property. In order to do that, ExpressionContext class has to derive from the ExpressionContext class:
+Although Telerik provides a great number of predefined functions, there could be scenarios, which require additional functionality. We provide a mechanism, which allows the developer to create a custom expression method, which can be used in __RadExpressionEditor__ or as a value of the __Expression__ property. In order to do that, create a class that inherits from the __ExpressionContext__ class:
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=customFunction}} 
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=customFunction}} 
@@ -50,7 +48,7 @@ End Class
 
 {{endregion}} 
 
-Once implemented, the new custom ExpressionContext class, has to be set for the static Context property:
+Once implemented, the new custom __ExpressionContext__ class can be assigned by using the static __Context__ property:
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=settingCustom}} 
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=settingCustom}} 
@@ -83,7 +81,7 @@ Me.RadGridView1.Columns("expression").Expression = "PI()"
 
 ## Customizing the functions list
 
-RadExpressionEditor supports loading functions, operators and constants from an xml file. This allows for customizing the available elements, localizing functions descriptions and adding custom functions. All available values should be described in the source xml file according to the following xml structure:
+__RadExpressionEditor__ supports loading functions, operators and constants from an XML file. This allows for customizing the available elements, localizing functions descriptions and adding custom functions. All available values should be described in the source XML file according to the following XML structure:
 
 ````xml
 	<?xml version="1.0" encoding="utf-8" ?>
@@ -103,8 +101,7 @@ RadExpressionEditor supports loading functions, operators and constants from an 
 	</ExpressionItemsList>
 ````
 
-To load prepared xml source file LoadFromXML method should be used as shown bellow:
-
+To load prepared XML source file __LoadFromXML__ method should be used as shown bellow:
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=loadingXML}} 
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=loadingXML}} 
@@ -123,3 +120,12 @@ RadExpressionEditorForm.ExpressionItemsList.LoadFromXML(stream_)
 ````
 
 {{endregion}} 
+# See Also
+* [Design-time]({%slug winforms/gridview/expression-editor/design-time%})
+
+* [End-user Support]({%slug winforms/gridview/expression-editor/end-user-support%})
+
+* [Overview]({%slug winforms/gridview/expression-editor%})
+
+* [Localization]({%slug winforms/gridview/expression-editor/localization%})
+

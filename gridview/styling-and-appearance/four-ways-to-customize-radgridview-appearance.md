@@ -1,7 +1,7 @@
 ---
 title: Four ways to customize RadGridView appearance
-page_title: Four ways to customize RadGridView appearance | UI for WinForms Documentation
-description: Four ways to customize RadGridView appearance
+page_title: Four ways to customize RadGridView appearance | RadGridView
+description: This article shows various ways that you can use to change the appearance of RadgridView. 
 slug: winforms/gridview/styling-and-appearance/four-ways-to-customize-radgridview-appearance
 tags: four,ways,to,customize,radgridview,appearance
 published: True
@@ -10,8 +10,6 @@ previous_url: gridview-styling-and-appearance-four-ways-to-customize-radgridview
 ---
 
 # Four ways to customize RadGridView appearance
-
-
 
 There are four ways to customize RadGridView appearance - Themes, UI editor (DesignTime), Events, and Conditional Formatting. Each one has a field of applicability although they may overlap. 
 
@@ -22,7 +20,9 @@ Just as all our WinForms controls, RadGridView supports our theming mechanism. Y
 
 ## UI editor (DesignTime)  
 
-*Edit UI Elements* can be started from the *smart tag* of the control. In particular for the RadGridView, it has a limited functionality so that row and cell properties __cannot__ be edited. Cells and Rows are formatted using the other 3 approaches. Note also that there are no similar kind of limitations in Edit UI Elements dialog for the rest of our controls. The reason for this is that RadGridView employs UI virtualization and certain elements, for instance, cells are reused.<br>![gridview-styling-and-appearance-four-ways-to-customize-radgridview-appearance 001](images/gridview-styling-and-appearance-four-ways-to-customize-radgridview-appearance001.png)
+*Edit UI Elements* can be started from the *smart tag* of the control. In particular for the RadGridView, it has a limited functionality so that row and cell properties __cannot__ be edited. Cells and Rows are formatted using the other 3 approaches. Note also that there are no similar kind of limitations in Edit UI Elements dialog for the rest of our controls. The reason for this is that RadGridView employs UI virtualization and certain elements, for instance, cells are reused.
+
+![gridview-styling-and-appearance-four-ways-to-customize-radgridview-appearance 001](images/gridview-styling-and-appearance-four-ways-to-customize-radgridview-appearance001.png)
 
 Therefore, you can edit properties of other elements like *GridTableElement* and *GridTableBodyElement*. Actually these elements contain some properties that control behavior and appearance of grid cells and rows, like GridTableElement.RowHeight, RowSpacing and so on.
         
@@ -32,10 +32,19 @@ Setting properties through *Edit UI Elements* dialog will override the correspon
 
 ## Events 
 
-Events are the most advanced way to edit cells and rows visual properties conditionally and unconditionally. Using events you can achieve everything that you can do with Conditional Formatting but the reverse is not true. The main advantage of Conditional Formatting is that formatting is set declaratively instead of procedurally as in the events approach. Please refer to the following two topics about [row]({%slug winforms/gridview/rows/formatting-rows%}) and [cell]({%slug winforms/gridview/cells/formatting-cells%}) events.   
+Events are the most advanced way to edit cells and rows visual properties conditionally and unconditionally. Using events you can achieve everything that you can do with `Conditional Formatting` but the reverse is not true. The main advantage of Conditional Formatting is that formatting is set declaratively instead of procedurally as in the events approach. Please refer to the following two topics about [row]({%slug winforms/gridview/rows/formatting-rows%}) and [cell]({%slug winforms/gridview/cells/formatting-cells%}) formatting events.   
         
 
 ## Conditional Formatting
 
-The main advantage of conditional formatting is the declarative approach used to describe formatting. It has limitations compared to events but also requires less code. Please refer to the following two section about [cells]({%slug winforms/gridview/cells/conditional-formatting-cells%}) and [rows]({%slug winforms/gridview/rows/conditional-formatting-rows%}) Conditional Formatting. 
+The main advantage of conditional formatting is the declarative approach used to describe formatting. It has limitations compared to events but also requires less code. Please refer to the following two section about [cells]({%slug winforms/gridview/cells/conditional-formatting-cells%}) and [rows]({%slug winforms/gridview/rows/conditional-formatting-rows%}) conditional formatting. 
         
+# See Also
+* [Alternating Row Color]({%slug winforms/gridview/styling-and-appearance/alternating-row-color%})
+
+* [HTML-like Text Formatting]({%slug winforms/gridview/styling-and-appearance/html-like-text-formatting%})
+
+* [Row Header Images]({%slug winforms/gridview/styling-and-appearance/images%})
+
+* [Themes]({%slug winforms/gridview/styling-and-appearance/themes%})
+

@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Columns | UI for WinForms Documentation
-description: Columns
+page_title: Columns | RadGridView
+description: The Columns in RadGridView are the fundamental meta-objects for data source representation.
 slug: winforms/gridview/columns
 tags: columns
 published: True
@@ -10,10 +10,6 @@ previous_url: gridview-columns
 ---
 
 # Columns
-
-
-
-## 
 
 The __Columns__ in RadGridView are the fundamental meta-objects for data source representation. They provide the structure according to which __rows__ are composed. The term __cell__ is often used interchangeably with __column__, although many consider it more correct to use __cell__ to refer specifically to the single item that  [Rows]({%slug winforms/gridview/rows/gridviewrowinfo%}) and [Cells]({%slug winforms/gridview/cells/gridviewcellinfo%}) topics for more information on these objects).
 
@@ -77,3 +73,22 @@ This chapter gives you detailed information about the RadGridView columns. The c
 * [Column text properties ]({%slug winforms/gridview/columns/data-formatting%})
   - __WrapText__: Wraps text if the text is wider than the column width.
   - __TextAlignment__: Defines the text alignment.
+
+# See Also
+
+* [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
+
+* [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
+
+* [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
+
+* [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
+
+* [Generating Columns]({%slug winforms/gridview/columns/generating-columns%})
+
+* [GridViewColumn]({%slug winforms/gridview/columns/column-types/gridviewcolumn%})
+
+* [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
+
+* [Pinning and Unpinning Columns]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%})
+

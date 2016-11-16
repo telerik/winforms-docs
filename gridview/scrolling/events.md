@@ -1,7 +1,7 @@
 ---
 title: Events
-page_title: Events | UI for WinForms Documentation
-description: Events
+page_title: Events | RadGridView
+description: This article shows how you can subscribe to the ValueChanged event of the vertical scrollbar.
 slug: winforms/gridview/scrolling/events
 tags: events
 published: True
@@ -10,10 +10,6 @@ previous_url: gridview-scrolling-events
 ---
 
 # Events
-
-
-
-## 
 
 There are a vertical and a horizontal scroll bar objects for the vertical and horizontal scrollbars respectively. For instance, to subscribe to *ValueChanged* event of the vertical scroll bar use the following code:
 
@@ -40,4 +36,7 @@ End Sub
 
 >caution Please note that RadGridView Scroll event is NOT used.
 >
+
+# See Also
+* [Scrolling Programmatically]({%slug winforms/gridview/scrolling/scrolling-programmatically%})
 

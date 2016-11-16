@@ -1,7 +1,7 @@
 ---
 title: Summary Rows
-page_title: Summary Rows | UI for WinForms Documentation
-description: Summary Rows
+page_title: Summary Rows | RadGridView
+description: Summary rows are RadGridView rows which allow you to display aggregate information about the data (count, sum. avg).
 slug: winforms/gridview/rows/summary-rows
 tags: summary,rows
 published: True
@@ -51,11 +51,11 @@ Me.RadGridView1.SummaryRowsBottom.Add(summaryRowItem)
 
 Summary item major properties are:
 
-* Name – The name of the column which the summary item refers to.
+* __Name:__ The name of the column which the summary item refers to.
 
-* Aggregate – The function which will be evaluated.
+* __Aggregate:__ The function which will be evaluated.
 
-* AggregateExpression – The final expression to evaluate.
+* __AggregateExpression:__ The final expression to evaluate.
 
 * FormatString – Formatting string which is applied to the calculated value of the summary item.
 
@@ -63,29 +63,29 @@ Summary item major properties are:
 
 The predefined aggregates are:
 
-* None – No expression is evaluated.
+* __None:__ No expression is evaluated.
 
-* Sum – Returns the sum of all values.
+* __Sum:__ Returns the sum of all values.
 
-* Min – Returns the minimum value.
+* __Min:__ Returns the minimum value.
 
-* Max – Returns the maximum value.
+* __Max:__ Returns the maximum value.
 
-* Last – Returns the last value.
+* __Last:__ Returns the last value.
 
-* First – Returns the first value.
+* __First:__ Returns the first value.
 
-* Count – Returns the count of all values.
+* __Count:__ Returns the count of all values.
 
-* Avg – Returns the average of all values.
+* __Avg:__ Returns the average of all values.
 
-* StDev – Returns the standard deviation of all values.
+* __StDev:__ Returns the standard deviation of all values.
 
-* Var – Returns the sample variance of all values.
+* __Var:__ Returns the sample variance of all values.
 
 ## Using the FormatString
 
-The following example demonstrates how to add several summary items in a summary row and how the FormatString is used:
+The following example demonstrates how to add several summary items in a summary row and how the __FormatString__ is used:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=formatString}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=formatString}} 
@@ -113,7 +113,7 @@ Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 
 ## Using an AggregateExpression
 
-The next example demonstrates how to use AggregateExpression to calculate an average value excluding the Max and Min value:
+The next example demonstrates how to use __AggregateExpression__ to calculate an average value excluding the __Max__ and __Min__ values:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=aggregateExpression}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=aggregateExpression}} 
@@ -144,7 +144,7 @@ Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 
 ## Summary rows in grouped RadGridView
 
-When you use grouping, the summary rows are calculated for each group child rows and displayed as top or bottom pinned rows in each group. Using the template property ShowTotals you can define if total summary rows will be shown. They are calculated for the child rows of all groups and pinned at the top or bottom of all groups.
+When you use grouping, the summary rows are calculated for each group child rows and displayed as top or bottom pinned rows in each group. Using the template property __ShowTotals__ you can define if total summary rows will be shown. They are calculated for the child rows of all groups and pinned at the top or bottom of all groups.
 
 The next example demonstrates how to use summary rows in grouping:
 
@@ -198,14 +198,11 @@ Me.RadGridView1.MasterTemplate.Templates(0).SummaryRowsTop.Add(summaryRowItem)
 
 ````
 
-{{endregion}} 
-
-
-![gridview-rows-summary-rows 005](images/gridview-rows-summary-rows005.png)
+{{endregion}}
 
 ## Customizing the summary row
 
-The GroupSummaryEvaluate event is fired after a summary item is calculated and before the summary row is displayed. You can use it to apply custom formatting to the summary row:
+The `GroupSummaryEvaluate` event is fired after a summary item is calculated and before the summary row is displayed. You can use it to apply custom formatting to the summary row:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=customFormatting}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=customFormatting}}
@@ -233,14 +230,14 @@ End Sub
 
 ![gridview-rows-summary-rows 006](images/gridview-rows-summary-rows006.png)
 
-The same event is used to format the group header so it is important to check the Parent in the event arguments, as shown in the above example.
+The same event is used to format the group header so it is important to check the __Parent in the event arguments, as shown in the above example.
         
 
 ## Extending the GridViewSummaryItem
 
-You can write your own logic for summary items evaluation by inheriting the GridViewSummaryItem class and overriding the Evaluate event.
+You can write your own logic for summary items evaluation by inheriting the GridViewSummaryItem class and overriding the __Evaluate__ method.
 
-The following example demonstrates how to create a custom summaryitem which calculates the count of orders with Freight is less than 50:
+The following example demonstrates how to create a custom summary item which calculates the orders count with Freight less than 50:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=customSummaryItemUsage}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=customSummaryItemUsage}}
@@ -301,3 +298,20 @@ End Class
 {{endregion}}
 
 ![gridview-rows-summary-rows 007](images/gridview-rows-summary-rows007.png)
+# See Also
+* [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
+
+* [Conditional Formatting Rows]({%slug winforms/gridview/rows/conditional-formatting-rows%})
+
+* [Creating custom rows]({%slug winforms/gridview/rows/creating-custom-rows%})
+
+* [Drag and Drop]({%slug winforms/gridview/rows/drag-and-drop%})
+
+* [Formatting Rows]({%slug winforms/gridview/rows/formatting-rows%})
+
+* [GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%})
+
+* [Iterating Rows]({%slug winforms/gridview/rows/iterating-rows%})
+
+* [New Row]({%slug winforms/gridview/rows/new-row%})
+

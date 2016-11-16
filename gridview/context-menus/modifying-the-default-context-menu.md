@@ -1,7 +1,7 @@
 ---
 title: Modifying the Default Context Menu
-page_title: Modifying the Default Context Menu | UI for WinForms Documentation
-description: Modifying the Default Context Menu
+page_title: Modifying the Default Context Menu | RadGridView
+description: This article shows how you can add an items to the default context menu.
 slug: winforms/gridview/context-menus/modifying-the-default-context-menu
 tags: modifying,the,default,context,menu
 published: True
@@ -11,15 +11,9 @@ previous_url: gridview-context-menus-modifying-the-default-context-menu
 
 # Modifying the Default Context Menu
 
-
-
-The default RadGridView context menu can be customized in the ContextMenuOpening event handler.
-
-
+The default __RadGridView context__ menu can be customized in the ContextMenuOpening event handler.
 
 ## Removing an item from default RadGridView context menu:
-
-
 
 In order to remove an item, you need to make a loop iterating the __e.ContextMenu.Items__ and check if the __e.ContextMenu.Items[index].Text__ is equal to the text of the menu item that you want to hide. If so, just set the __Visibility__ of the menu item to *Collapsed*:
 
@@ -93,4 +87,11 @@ End Sub
 {{endregion}} 
 
 
-The result of combining the approaches from this article is shown on the screenshot below:![gridview-context-menus-modifying-the-default-context-menu 001](images/gridview-context-menus-modifying-the-default-context-menu001.png)
+The result of combining the approaches from this article is shown on the screenshot below:
+
+![gridview-context-menus-modifying-the-default-context-menu 001](images/gridview-context-menus-modifying-the-default-context-menu001.png)
+# See Also
+* [Conditional Custom Context Menus]({%slug winforms/gridview/context-menus/conditional-custom-context-menus%})
+
+* [Custom Context Menus]({%slug winforms/gridview/context-menus/custom-context-menus%})
+

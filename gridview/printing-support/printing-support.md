@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Printing Support | UI for WinForms Documentation
-description: Printing Support
+page_title: Printing Support | RadGridView
+description: This article shows how you can use the built-in functionality to print the contents of the grid.
 slug: winforms/gridview/printing-support
 tags: printing,support
 published: True
@@ -10,11 +10,6 @@ previous_url: gridview-printing-support
 ---
 
 # Printing Support
-
-
-
-## 
-
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
@@ -52,7 +47,7 @@ Me.RadGridView1.Print(True)
 
 ![gridview-printing-support 001](images/gridview-printing-support001.png)
 
-The other available method is __PrintPreview())__, which opens [RadPrintPreviewDialog.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})
+The other available method is __PrintPreview()__, which opens [RadPrintPreviewDialog.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})
 
 {{source=..\SamplesCS\GridView\Printing support\PrintingSupport.cs region=PrintPreview}} 
 {{source=..\SamplesVB\GridView\Printing support\PrintingSupport.vb region=PrintPreview}} 
@@ -69,3 +64,10 @@ Me.RadGridView1.PrintPreview()
 {{endregion}} 
 
 ![gridview-printing-support 002](images/gridview-printing-support002.png)
+# See Also
+* [Events and Customization]({%slug winforms/gridview/printing-support/events-and-customization%})
+
+* [GridPrintStyle]({%slug winforms/gridview/printing-support/gridprintstyle%})
+
+* [Printing Hierarchical Grid]({%slug winforms/gridview/printing-support/printing-hierarchical-grid%})
+

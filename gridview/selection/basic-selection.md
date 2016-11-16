@@ -1,7 +1,7 @@
 ---
 title: Basic Selection
-page_title: Basic Selection | UI for WinForms Documentation
-description: Basic Selection
+page_title: Basic Selection | RadGridView
+description: RadGridView provides you with a selection functionality, which allows the user to select one or more items.
 slug: winforms/gridview/selection/basic-selection
 tags: basic,selection
 published: True
@@ -10,8 +10,6 @@ previous_url: gridview-selection-basic-selection
 ---
 
 # Basic Selection
-
-
 
 RadGridView provides you with a selection functionality, which allows the user to select one or more items (rows or cells) from the data displayed by the control.    
 
@@ -38,11 +36,13 @@ RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
 
 {{endregion}} 
 
-To select an item in RadGridView click in the rectangle area of the desired row.<br>![gridview-selection-basic-selection 001](images/gridview-selection-basic-selection001.png)
+To select an item in RadGridView click in the rectangle area of the desired row.
+
+![gridview-selection-basic-selection 001](images/gridview-selection-basic-selection001.png)
 
 ## Basic cell selection
 
-You can modify RadGridView to select single cells instead of rows by setting its SelectionMode property to CellSelect from the GridViewSelectionMode enumeration:
+You can modify RadGridView to select single cells instead of rows by setting its __SelectionMode__ property to *CellSelect* from the `GridViewSelectionMode` enumeration:
 
 {{source=..\SamplesCS\GridView\Selection\Selection1.cs region=basicCellSelection}} 
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=basicCellSelection}} 
@@ -60,11 +60,13 @@ RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
 
 {{endregion}} 
 
-After setting these properties, to select a cell in RadGridView, click the desired cell.<br>![gridview-selection-basic-selection 002](images/gridview-selection-basic-selection002.png)
+After setting these properties, to select a cell in RadGridView, click the desired cell.
+
+![gridview-selection-basic-selection 002](images/gridview-selection-basic-selection002.png)
 
 ## Selected items
 
-Once an item is selected (row or cell), you can find this item in the SelectedRows and SelectedCells collections respectively. The following code described how to access those collections:
+Once an item is selected (row or cell), you can find this item in the __SelectedRows__ and __SelectedCells__ collections respectively. The following code describes how to access those collections:
 
 {{source=..\SamplesCS\GridView\Selection\Selection1.cs region=collections}} 
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=collections}} 
@@ -84,12 +86,12 @@ Dim selectedCells As GridViewSelectedCellsCollection = RadGridView1.SelectedCell
 
 ## Events
 
-There are two events relevant to the selection in the gridview: SelectionChanged, CurrentCellChanged. The sequence of the is as follows – the CurrentCellChanged is fired first and after that the SelectionChangedEvent event fires.     
+There are two events relevant to the selection: __SelectionChanged__, __CurrentCellChanged__. The sequence of the is as follows – the __CurrentCellChanged__ is fired first and after that the __SelectionChangedEvent__ event fires.     
         
 
 ## CurrentRow/CurrentCell
 
-Once an item is selected, it automatically becomes current (when basic selection is used). This means that if you select the first row (cell) of RadGridView, its IsCurrent property will be automatically set to true and CurrentRow (CurrentCell) property of RadGridView will hold an instance of this row (respectively cell). The following example demonstrates how to access the CurrentRow and CurrentCell properties and additionally the IsCurrent property of a row or a cell:
+Once an item is selected, it automatically becomes current (when basic selection is used). This means that if you select the first row (cell) of RadGridView, its __IsCurrent__ property will be automatically set to *true* and __CurrentRow__ (__CurrentCell__) property of RadGridView will hold an instance of this row (respectively cell). The following example demonstrates how to access the __CurrentRow__ and __CurrentCell__ properties and additionally the __IsCurrent__ property of a row or a cell:
 
 {{source=..\SamplesCS\GridView\Selection\Selection1.cs region=currentRowCell}} 
 {{source=..\SamplesVB\GridView\Selection\Selection1.vb region=currentRowCell}} 
@@ -115,5 +117,10 @@ RadGridView1.Rows(0).IsCurrent = True
 
 {{endregion}} 
 
-When basic selection is used, the opposite is also valid – if you set the CurrentRow or CurrentCell (or the IsCurrent property to true for a cell or row) in RadGridView and only if  basic selection is used (MultiSelect = false ), the selected row(cell) will be the same as the current row(cell).
+When basic selection is used, the opposite is also valid – if you set the __CurrentRow__ or __CurrentCell__ (or the __IsCurrent__ property to true for a cell or row) in RadGridView and only if  basic selection is used (MultiSelect = false ), the selected row(cell) will be the same as the current row(cell).
       
+# See Also
+* [Multiple Selection]({%slug winforms/gridview/selection/multiple-selection%})
+
+* [Selecting Rows and Cells Programmatically]({%slug winforms/gridview/selection/selecting-rows-and-cells-programmatically%})
+

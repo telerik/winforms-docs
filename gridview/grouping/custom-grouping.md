@@ -1,7 +1,7 @@
 ---
 title: Custom Grouping
-page_title: Custom Grouping | UI for WinForms Documentation
-description: Custom grouping is a flexible mechanism for creating RadGridView groups by using custom logic. It has a higher priority than the applied GroupDescriptors (added either by code or by dragging columns to the group panel).
+page_title: Custom Grouping | RadGridView
+description: Custom grouping is a flexible mechanism for creating RadGridView groups by using custom logic.
 slug: winforms/gridview/grouping/custom-grouping
 tags: custom,grouping
 published: True
@@ -11,13 +11,13 @@ previous_url: gridview-grouping-custom-grouping
 
 # Custom Grouping
 
-Custom grouping is a flexible mechanism for creating RadGridView groups by using  custom logic. It has a higher priority than the applied __GroupDescriptors__ (added either by code or by dragging columns to the group panel).
+Custom grouping is a flexible mechanism for creating groups by using  custom logic. It has a higher priority than the applied __GroupDescriptors__ (added either by code or by dragging columns to the group panel).
 
-Custom grouping is applied if user grouping is enabled through the __RadGridView.EnableGrouping__ or __GridViewTemplate.EnableGrouping__ properties. By default, grouping is enabled at all levels.
+Custom grouping is applied if user grouping is enabled through the __EnableGrouping__ or __GridViewTemplate.EnableGrouping__ properties. By default, grouping is enabled at all levels.
 
 RadGridView provides two mechanisms for custom grouping:
 
-* Handling the CustomGrouping event
+* Handling the __CustomGrouping__ event
 
 * Replacing the RadGridView grouping mechanism by providing a custom __GroupPredicate__
 
@@ -25,21 +25,21 @@ You can use the __GroupSummaryEvaluate__ event to format the group header row te
 
 ## Using the CustomGrouping event
 
-The __CustomGrouping__ event is fired if custom grouping is enabled through the __RadGridView.EnableCustomGrouping__ or __GridViewTemplate.EnableCustomGrouping__ properties. By default, custom grouping is disabled at all levels.
+The __CustomGrouping__ event is fired if custom grouping is enabled through the __EnableCustomGrouping__ or __GridViewTemplate.EnableCustomGrouping__ properties. By default, custom grouping is disabled at all levels.
 
-* __Template__ – the template that holds the rows that will be grouped
+* __Template:__ The template that holds the rows that will be grouped.
 
-* __Row__ – the row which group is defined
+* __Row:__ The row which group is defined.
 
-* __Level__ – the level of the current group, represents zero-based depth of the group
+* __Level:__ The level of the current group, represents zero-based depth of the group.
 
-* __GroupKey__ – identifier of the group
+* __GroupKey:__ Identifier of the group.
 
-* __Handled__ – defines whether the row is processed by the custom algorithm or by the applied group descriptors.
+* __Handled:__ Defines whether the row is processed by the custom algorithm or by the applied group descriptors.
 
-The following example demonstrates how to handle the __CustomGrouping__ event to group the RadGridView rows by the values of the Country column creating groups only for predefined countries:
+The following example demonstrates how to handle the __CustomGrouping__ event to group  by the values of the `Country` column creating groups only for predefined countries:
 
->caption Fig.1 Custom Grouping
+>caption Figure 1 Custom Grouping
 
 ![gridview-grouping-custom-grouping 001](images/gridview-grouping-custom-grouping001.png)
 
@@ -127,11 +127,11 @@ End Sub
 
 When __RadGridView__ is displaying date columns, it is a common requirement to perform grouping by certain part of the DateTime value. The example below will handle a scenario in which the date fields are grouped in year quarters.
 
->caption Fig.2 DateTime Grouping Default Behavior
+>caption Figure: 2 DateTime Grouping Default Behavior
 
 ![gridview-grouping-custom-grouping 001](images/gridview-grouping-custom-grouping003.png)
 
->caption Fig.3 DateTime Grouping Custom Behavior
+>caption Figure: 3 DateTime Grouping Custom Behavior
 
 ![gridview-grouping-custom-grouping 001](images/gridview-grouping-custom-grouping004.png)
 
@@ -203,9 +203,9 @@ End Sub
 You can replace the grouping mechanism in RadGridView with a custom one by setting the __GroupPredicate__ of the __GridViewTemplate__.
         
 
-The following example demonstrates how to use a custom grouping mechanism in RadGridView to group the rows by the values of the ContactTitle column, creating groups only for the desired contact title categories:
+The following example demonstrates how to use a custom grouping mechanism to group the rows by the values of the `ContactTitle` column, creating groups only for the desired contact title categories:
 
->caption Fig.4 Implementing GroupPredicate
+>caption Figure: 4 Implementing GroupPredicate
 
 ![gridview-grouping-custom-grouping 002](images/gridview-grouping-custom-grouping002.png)
 
@@ -329,3 +329,20 @@ End Sub
 ````
 
 {{endregion}}
+# See Also
+* [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
+
+* [Events]({%slug winforms/gridview/grouping/events%})
+
+* [Formatting Group Header Row]({%slug winforms/gridview/grouping/formatting-group-header-row%})
+
+* [Group Aggregates]({%slug winforms/gridview/grouping/group-aggregates%})
+
+* [Groups Collection]({%slug winforms/gridview/grouping/groups-collection%})
+
+* [Setting Groups Programmatically]({%slug winforms/gridview/grouping/setting-groups-programmatically%})
+
+* [Sorting group rows]({%slug winforms/gridview/grouping/sorting-group-rows%})
+
+* [Using Grouping Expressions]({%slug winforms/gridview/grouping/using-grouping-expressions%})
+

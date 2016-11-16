@@ -1,19 +1,21 @@
 ---
-title: Resizing columns programatically
-page_title: Resizing columns programatically | UI for WinForms Documentation
-description: Resizing columns programatically
+title: Resizing columns programmatically
+page_title: Resizing columns programmatically | RadGridView
+description: Set the columns size either manually or use the API to size the columns according to their content.
 slug: winforms/gridview/columns/resizing-columns-programatically
-tags: resizing,columns,programatically
+tags: resizing,columns,programmatically
 published: True
-position: 4
+position: 6
 previous_url: gridview-columns-resizing-columns-programatically
 ---
 
-# Resizing columns programatically
+# Resizing columns programmatically
 
 ## Resizing columns
 
-The columns inside the RadGridView are resizable by default. The user is able to easily change the column width by positioning the mouse over the columns vertical grid line and dragging it until the desired size is achieved. <br>![](images/gridview-columns-rezise-columns001.png)
+The columns inside the RadGridView are resizable by default. The user is able to easily change the column width by positioning the mouse over the columns vertical grid line and dragging it until the desired size is achieved. 
+
+![gridview-columns-rezise-columns001](images/gridview-columns-rezise-columns001.gif)
 
 ## Disabling resizing
 
@@ -57,9 +59,9 @@ Me.RadGridView1.Columns("Photo").AllowResize = False
 
 ## Programatically resizing columns
 
-The width of columns can be set individually, per column. Note that the visible width will always include some amount of data even when set  to very small amounts. To resize the columns programmatically you can use the __Width__ property. For example: 
+The width of columns can be set individually, per column. Note that the visible width will always include some amount of data even when set to very small amounts. To resize the columns programmatically you can use the __Width__ property. For example: 
 
-#### Rezise a column programatically
+#### Resize a column programmatically
 
 {{source=..\SamplesCS\GridView\Columns\ResizingColumns.cs region=resizingColumn}} 
 {{source=..\SamplesVB\GridView\Columns\ResizingColumns.vb region=resizingColumn}} 
@@ -81,11 +83,11 @@ You can restrict the possible values of the __Width__ property by setting the __
 
 There are two ways to auto size the columns:
 
-__AutoSizeColumnsMode__
+### AutoSizeColumnsMode
 
-Here, columns can automatically fill the entire width of the grid. Just set the __AutoSizeColumnsMode__ property of the desired template to __GridViewAutoSizeColumnsMode.Fill__. <br>![](images/gridview-columns-rezise-columns002.png)
+Here, columns can automatically fill the entire width of the grid. Just set the __AutoSizeColumnsMode__ property of the desired template to __GridViewAutoSizeColumnsMode.Fill__.
 
-__Best fit__
+### Best fit
 
 The column widths can be set to fit its content by using the __GridViewTemplate.BestFitColumns__ or __GridViewDataColumn.BestFit__ methods. This mode distributes algorithm that attempts to fit in the header text and column data for all visible rows.
 
@@ -116,3 +118,20 @@ You can customize the execution of the algorithm of a concrete column by setting
 ## Resizing events
 
 When the user resizes the column the __ColumnWidthChanging__ event is fired and if it is not canceled the __ColumnWidthChanged__ event fires after the resize is completed.
+# See Also
+* [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
+
+* [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
+
+* [Overview]({%slug winforms/gridview/columns%})
+
+* [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
+
+* [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
+
+* [Generating Columns]({%slug winforms/gridview/columns/generating-columns%})
+
+* [GridViewColumn]({%slug winforms/gridview/columns/column-types/gridviewcolumn%})
+
+* [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
+

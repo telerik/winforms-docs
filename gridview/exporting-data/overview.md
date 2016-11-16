@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview | UI for WinForms Documentation
-description: Overview
+page_title: Overview | RadGridView
+description: RadGridView supports several built-in methods for exporting data and they are listed in this article.
 slug: winforms/gridview/exporting-data/overview
 tags: overview
 published: True
@@ -32,4 +32,6 @@ __RadGridView__ supports several built-in methods for exporting data:
 
 >note As of R1 2012 RadGridView natively supports printing. More information about this feature can be found [here]({%slug winforms/gridview/printing-support%}).
 >
+
+
 

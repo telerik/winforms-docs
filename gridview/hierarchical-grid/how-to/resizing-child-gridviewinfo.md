@@ -1,7 +1,7 @@
 ---
 title: Resizing child GridViewInfo
-page_title: Resizing child GridViewInfo | UI for WinForms Documentation
-description: Resizing child GridViewInfo
+page_title: Resizing child GridViewInfo | RadGridView
+description: This article shows how you can et the size of the child template rows with code.
 slug: winforms/gridview/hierarchical-grid/how-to/resizing-child-gridviewinfo
 tags: resizing,child,gridviewinfo
 published: True
@@ -11,9 +11,9 @@ previous_url: gridview-hirarchical-grid-resizing-child-gridviewinfo
 
 # Resizing child GridViewInfo
 
+RadGridView supports resizing child GridViewInfos at runtime by a mouse drag operation (only when __UseScrollbarsInHierarchy__ property is *true*). You should simply position your mouse pointer over the left part of the bottom line of the child GridViewInfo and then resize this GridViewInfo by a mouse drag operation:
 
-
-RadGridView supports resizing child GridViewInfos at runtime by a mouse drag operation. You should simply position your mouse pointer over the left part of the bottom line of the child GridViewInfo and then resize this GridViewInfo by a mouse drag operation:<br>![gridview-hirarchical-grid-resizing-child-gridviewinfo 001](images/gridview-hirarchical-grid-resizing-child-gridviewinfo001.png)
+![gridview-hirarchical-grid-resizing-child-gridviewinfo 001](images/gridview-hirarchical-grid-resizing-child-gridviewinfo001.gif)
 
 ## Resizing a child GridViewInfo programmatically
 
@@ -39,4 +39,13 @@ End Sub
 {{endregion}} 
 
 
+
+# See Also
+* [Accessing Child Templates]({%slug winforms/gridview/hierarchical-grid/how-to/accessing-child-templates%})
+
+* [Applying formatting only to cells in a child template]({%slug winforms/gridview/hierarchical-grid/how-to/applying-formatting-only-to-cells-in-a-child-template%})
+
+* [Expanding all rows]({%slug winforms/gridview/hierarchical-grid/how-to/expanding-all-rows%})
+
+* [Iterating the child rows collection of a chosen parent row in hierarchy RadGridView]({%slug winforms/gridview/hierarchical-grid/how-to/iterating-the-child-rows-collection-of-a-chosen-parent-row-in-hierarchy-radgridview%})
 

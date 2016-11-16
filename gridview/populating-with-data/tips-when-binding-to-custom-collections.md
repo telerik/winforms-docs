@@ -1,7 +1,7 @@
 ---
 title: Tips when Binding to Custom Collections
-page_title: Tips when Binding to Custom Collections | UI for WinForms Documentation
-description: Tips when Binding to Custom Collections
+page_title: Tips when Binding to Custom Collections | RadGridView
+description: Speed up the data processing when you do not need to display all fields presented in the business object.
 slug: winforms/gridview/populating-with-data/tips-when-binding-to-custom-collections
 tags: tips,when,binding,to,custom,collections
 published: True
@@ -10,8 +10,6 @@ previous_url: gridview-populating-with-data-tips-when-binding-to-custom-collecti
 ---
 
 # Tips when Binding to Custom Collections
-
-
 
 ## Reducing Column Processing
 
@@ -29,7 +27,7 @@ Currently RadGridView supports sorting, filtering and grouping natively. This is
 
 * GridViewInfo.FilterExpression
 
-These features are not tightly coupled with the column declarations of the grid but with the data that the grid is bound to. To clarify the idea, consider the following scenario. You want to display a list of all files in a directory. For this purpose you use __FileSystemInfo__ from the __System.IO.FileSystemInfo__ namespace. This collection has many properties: __Attributes__, __CreationTime__, __CreationTimeUtc__, __Exists__, __Extension__, __FullName__, __LastAccessTime__, __LastAccessTimeUtc__, __LastWriteTime__, __LastWriteTimeUtc__ and __Name__. This is a long list that you probably don't want to expose in the grid. Instead you define the columns to be displayed and supply the GridView DataSource with the files information:
+These features are not tightly coupled with the column declarations of the grid but with the data that the grid is bound to. To clarify the idea, consider the following scenario. You want to display a list of all files in a directory. For this purpose you use __FileSystemInfo__ from the __System.IO.FileSystemInfo__ namespace. This collection has many properties: __Attributes__, __CreationTime__, __CreationTimeUtc__, __Exists__, __Extension__, __FullName__, __LastAccessTime__, __LastAccessTimeUtc__, __LastWriteTime__, __LastWriteTimeUtc__ and __Name__. This is a long list that you probably don't want to expose in the grid. Instead you define the columns to be displayed and supply the GridView __DataSource__ with the files information:
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\TipsWhenBindingToCustomCollections.cs region=addingColumnsToTheColumnsCollection}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\TipsWhenBindingToCustomCollections.vb region=addingColumnsToTheColumnsCollection}} 
@@ -60,4 +58,21 @@ RadGridView1.DataSource = filesInDirectory
 {{endregion}} 
 
 
+
+# See Also
+* [Bind to XML]({%slug winforms/gridview/populating-with-data/bind-to-xml%})
+
+* [Bindable Types]({%slug winforms/gridview/populating-with-data/bindable-types%})
+
+* [Binding to a Collection of Interfaces]({%slug winforms/gridview/populating-with-data/binding-to-a-collection-of-interfaces%})
+
+* [Binding to Array and ArrayList]({%slug winforms/gridview/populating-with-data/binding-to-array-and-arraylist%})
+
+* [Binding to BindingList]({%slug winforms/gridview/populating-with-data/binding-to-bindinglist%})
+
+* [Binding to DataReader]({%slug winforms/gridview/populating-with-data/binding-to-datareader%})
+
+* [Binding to EntityFramework using Database first approach]({%slug winforms/gridview/populating-with-data/binding-to-entityframework-using-database-first-approach%})
+
+* [Binding to Generic Lists]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%})
 

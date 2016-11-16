@@ -1,7 +1,7 @@
 ---
 title: Events and Customization
-page_title: Events and Customization | UI for WinForms Documentation
-description: Events and Customization
+page_title: Events and Customization | RadGridView
+description: Use the PrintCellFormatting and PrintCellPaint vents to customize the printed document.
 slug: winforms/gridview/printing-support/events-and-customization
 tags: events,and,customization
 published: True
@@ -10,8 +10,6 @@ previous_url: gridview-printing-support-events
 ---
 
 # Events and Customization
-
-
 
 The print events in RadGridView allow the developer to customize the print output for each individual cell. There are two events namely __PrintCellFormatting__ and __PrintCellPaint__.
 
@@ -112,3 +110,10 @@ End Sub
 {{endregion}} 
 
 ![gridview-printing-support-events 002](images/gridview-printing-support-events002.png)
+# See Also
+* [GridPrintStyle]({%slug winforms/gridview/printing-support/gridprintstyle%})
+
+* [Printing Hierarchical Grid]({%slug winforms/gridview/printing-support/printing-hierarchical-grid%})
+
+* [Overview]({%slug winforms/gridview/printing-support%})
+

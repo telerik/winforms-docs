@@ -508,7 +508,8 @@ navigation:
         position: 3
     gridview/columns/column-types:
         title: Column Types
-        position: 1
+        position: 3
+     
     gridview/rows:
         title: Rows
         position: 4
@@ -518,6 +519,9 @@ navigation:
     gridview/cells:
         title: Cells
         position: 5
+    gridview/cells/formating-examples:
+        title: Formatting Examples
+        position: 10
     gridview/editors:
         title: Editors
         position: 6
@@ -573,8 +577,8 @@ navigation:
         title: How-To
         position: 21
     gridview/design-time-support:
-        title: Design-time Support
-        position: 22
+        title: Design-time
+        position: 2
     gridview/end-user-capabilities:
         title: End-user Capabilities
         position: 23

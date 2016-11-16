@@ -1,7 +1,7 @@
 ---
 title: GridViewDecimalColumn
-page_title: GridViewDecimalColumn | UI for WinForms Documentation
-description: GridViewDecimalColumn
+page_title: GridViewDecimalColumn | RadGridView
+description: GridViewDecimalColumn allows decimal data to be displayed and edited. GridViewDecimalColumn can be bound to fields of any numeric type. 
 slug: winforms/gridview/columns/column-types/gridviewdecimalcolumn
 tags: gridviewdecimalcolumn
 published: True
@@ -11,9 +11,11 @@ previous_url: gridview-columns-gridviewdecimalcolumn
 
 # GridViewDecimalColumn
 
+__GridViewDecimalColumn__ allows decimal data to be displayed and edited. __GridViewDecimalColumn__ can be bound to fields of any numeric type. 
 
+![gridview-columns-gridviewdecimalcolumn 001](images/gridview-columns-gridviewdecimalcolumn001.png)
 
-__GridViewDecimalColumn__ allows decimal data to be displayed and edited. __GridViewDecimalColumn__ can be bound to fields of any numeric type. <br>![gridview-columns-gridviewdecimalcolumn 001](images/gridview-columns-gridviewdecimalcolumn001.png)
+#### Add GridViewDecimalColumn to the grid.
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=addingDecimalColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=addingDecimalColumn}} 
@@ -101,17 +103,13 @@ End Sub
 
 {{endregion}} 
 
-
-
-
 ## Setting decimal places
 
 The rich API of RadGridView allows you to define one value for the decimal places that should be shown in the spin editor of the column and another value for the cells of the column.
-          
 
 __Setting decimal places to the spin editor__
 
-You can define how many places after the decimal point the value in the spin editor should have by setting the DecimalPlaces property of GridViewDecimalColumn:
+You can define how many places after the decimal point the value in the spin editor should have by setting the __DecimalPlaces__ property of GridViewDecimalColumn:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=decimalPlacesEditor}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=decimalPlacesEditor}} 
@@ -130,7 +128,7 @@ decimalColumn.DecimalPlaces = 3
 
 __Setting decimal places to the column cells__
 
-In order to define how the values should be displayed by the cellsof the GridViewDecimalColumn in the sense of their decimal places, we should set the FormatString property of the column:
+In order to define how the values should be displayed by the cells of the GridViewDecimalColumn in the sense of their decimal places, we should set the __FormatString__ property of the column:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDecimalColumn1.cs region=decimalPlacesCell}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDecimalColumn1.vb region=decimalPlacesCell}} 
@@ -146,11 +144,23 @@ decimalColumn.FormatString = "{0:N2}"
 
 {{endregion}} 
 
-
-
-
-Here is the result of setting the DecimalPlaces property to 3 and the FormatString property to {0:N2}: <br>![gridview-columns-gridviewdecimalcolumn 002](images/gridview-columns-gridviewdecimalcolumn002.png)
-
 >note For a list of the standard numeric format strings, see [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)
 >
+
+# See Also
+* [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
+
+* [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
+
+* [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%})
+
+* [GridViewColorColumn]({%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%})
+
+* [GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})
+
+* [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})
+
+* [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%})
+
+* [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 

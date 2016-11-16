@@ -1,7 +1,7 @@
 ---
 title: Export Data in a Group to Excel
-page_title: Export Data in a Group to Excel | UI for WinForms Documentation
-description: Export Data in a Group to Excel
+page_title: Export Data in a Group to Excel | RadGridView
+description: Export the data in the selected group to Excel using a custom context menu option.
 slug: winforms/gridview/exporting-data/export-data-in-a-group-to-excel
 tags: export,data,in,a,group,to,excel
 published: True
@@ -11,11 +11,7 @@ previous_url: gridview-exporting-data-export-data-in-a-group-to-excel
 
 # Export Data in a Group to Excel
 
-
-
-## 
-
-Sometimes you may need to export just the data in a group in a grouped RadGridView. This is possible by using the context menu and its API:
+Sometimes you may need to export just the data in a group in a grouped RadGridView. This is possible by using the context menu:
 
 1\. Create RadContextMenu and get the right-clicked group header row by using the __MouseDown__ event and the __GetGridGroupHeaderRowElement__ method. After determining the clicked group row, you can get its child rows. Then simply show the context menu:
 
@@ -175,9 +171,6 @@ End Sub
 
 {{endregion}} 
 
-
-
-
 4\. If you need to get the text from the GroupRowHeader, use the following snippet:
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportDataInAGroupToExcel.cs region=getTheGroupLineText}} 
@@ -202,4 +195,19 @@ End Function
 {{endregion}} 
 
 
+
+# See Also
+* [Export to CSV]({%slug winforms/gridview/exporting-data/export-to-csv%})
+
+* [Export to Excel via ExcelML Format]({%slug winforms/gridview/exporting-data/export-to-excel-via-excelml-format%})
+
+* [Export to PDF]({%slug winforms/gridview/exporting-data/export-to-pdf%})
+
+* [Export to HTML]({%slug winforms/gridview/exporting-data/export-to-html%})
+
+* [Overview]({%slug winforms/gridview/exporting-data/overview%})
+
+* [Export to Excel]({%slug winforms/gridview/exporting-data/spread-export%})
+
+* [Troubleshooting]({%slug winforms/gridview/exporting-data/troubleshooting%})
 

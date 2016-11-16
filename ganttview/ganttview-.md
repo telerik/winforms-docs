@@ -17,5 +17,5 @@ __RadGanttView__ is a data-visualization and editing control for project plannin
 
 # See Also
 
-
+* [Getting Started]({%slug winforms/ganttview/getting-started%})
 * [Properties]({%slug winforms/ganttview/properties%})

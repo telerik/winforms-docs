@@ -1,7 +1,7 @@
 ---
 title: Groups Collection
-page_title: Groups Collection | UI for WinForms Documentation
-description: Groups Collection
+page_title: Groups Collection | RadGridView
+description: Access all current groups using  
 slug: winforms/gridview/grouping/groups-collection
 tags: groups,collection
 published: True
@@ -29,7 +29,7 @@ Dim templateGroupCollection = Me.RadGridView1.MasterTemplate.Groups
 
 {{endregion}} 
 
-You can expand and collapse groups programmatically. The code blocks below demonstrate how you can expand and collapse the first group in the *Groups* collection.
+You can expand and collapse groups programmatically. The code blocks below demonstrates how you can expand and collapse the first group in the *Groups* collection.
 
 #### Expanding groups
 
@@ -125,4 +125,21 @@ Dim groupHeaderRow = Me.RadGridView1.Groups(0).GroupRow
 {{endregion}} 
 
 
+
+# See Also
+* [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
+
+* [Custom Grouping]({%slug winforms/gridview/grouping/custom-grouping%})
+
+* [Events]({%slug winforms/gridview/grouping/events%})
+
+* [Formatting Group Header Row]({%slug winforms/gridview/grouping/formatting-group-header-row%})
+
+* [Group Aggregates]({%slug winforms/gridview/grouping/group-aggregates%})
+
+* [Setting Groups Programmatically]({%slug winforms/gridview/grouping/setting-groups-programmatically%})
+
+* [Sorting group rows]({%slug winforms/gridview/grouping/sorting-group-rows%})
+
+* [Using Grouping Expressions]({%slug winforms/gridview/grouping/using-grouping-expressions%})
 

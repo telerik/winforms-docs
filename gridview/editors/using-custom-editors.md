@@ -1,7 +1,7 @@
 ---
 title: Using custom editors
-page_title: Using custom editors | UI for WinForms Documentation
-description: Using custom editors
+page_title: Using custom editors | RadGridView
+description: Change the default editor with a custom once containing a track bar.
 slug: winforms/gridview/editors/using-custom-editors
 tags: using,custom,editors
 published: True
@@ -10,10 +10,6 @@ previous_url: gridview-editors-using-custom-editors
 ---
 
 # Using custom editors
-
-
-
-## 
 
 This following snippet demonstrates how to replace the standard spin editor with a track bar.
 
@@ -105,11 +101,6 @@ End Class
 
 {{endregion}} 
 
-
-
-
-
-
 We use the standard __RadTrackBar__ element in this example with some modification to enable keyboard navigation:
 
 {{source=..\SamplesCS\GridView\Editors\UsingCustomEditors.cs region=trackBarEditorElement}} 
@@ -183,11 +174,6 @@ End Class
 
 {{endregion}} 
 
-
-
-
-
-
 The __EditorRequired__ event is the correct place to replace the default editor:
 
 {{source=..\SamplesCS\GridView\Editors\UsingCustomEditors.cs region=changingTheEditor}} 
@@ -217,4 +203,17 @@ End Sub
 
 >note You can find a working version of this sample in our Demo application ( *GridView -> Custom Editors* )
 >
+
+# See Also
+* [API]({%slug winforms/gridview/editors/api%})
+
+* [Customizing editor behavior]({%slug winforms/gridview/editors/customizing-editor-behavior%})
+
+* [Data validation]({%slug winforms/gridview/editors/data-validation%})
+
+* [Overview]({%slug winforms/gridview/editors/editors%})
+
+* [Events]({%slug winforms/gridview/editors/events%})
+
+* [Handling Editors' events]({%slug winforms/gridview/editors/handling-editors'-events%})
 

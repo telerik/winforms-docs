@@ -1,7 +1,7 @@
 ---
 title: GridViewCheckBoxColumn
-page_title: GridViewCheckBoxColumn | UI for WinForms Documentation
-description: GridViewCheckBoxColumn
+page_title: GridViewCheckBoxColumn | RadGridView
+description: GridViewCheckBoxColumn displays and allows editing of boolean data. The values are shown as check boxes.
 slug: winforms/gridview/columns/column-types/gridviewcheckboxcolumn
 tags: gridviewcheckboxcolumn
 published: True
@@ -11,9 +11,9 @@ previous_url: gridview-columns-gridviewcheckboxcolumn, gridview-editors-howto-ch
 
 # GridViewCheckBoxColumn
 
+__GridViewCheckBoxColumn__ displays and allows editing of boolean data. The values are shown as check boxes and allow the user to set or clear the check boxes to toggle the underlying boolean data values. __GridViewCheckBoxColumn__ inherits from __GridViewDataColumn.__
 
-
-__GridViewCheckBoxColumn__ displays and allows editing of boolean data. The values are shown as check boxes and allow the user to set or clear the check boxes to toggle the underlying boolean data values. __GridViewCheckBoxColumn__ inherits from __GridViewDataColumn.__![gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn001.png)
+![gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn001.png)
 
 #### Create and add GridViewCheckBoxColumn
 
@@ -41,7 +41,7 @@ RadGridView1.MasterTemplate.Columns.Add(checkBoxColumn)
 
 {{endregion}} 
 
-The column has also a built-in functionality for checking all check boxes in it, via check box placed in the column header cell. By setting the __EnableHeaderCheckBox__ property to *true* you will enable the embedded in header cell RadCheckBoxElement. ![gridview-columns-gridviewcheckboxcolumn 002](images/gridview-columns-gridviewcheckboxcolumn002.png)
+The column has also a built-in functionality for checking all check boxes in it, via check box placed in the column header cell. By setting the __EnableHeaderCheckBox__ property to *true* you will enable the embedded in the header cell RadCheckBoxElement. 
 
 {{source=..\SamplesCS\GridView\Columns\GridViewCheckBoxColumn1.cs region=EnableHeaderCheckBox}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=EnableHeaderCheckBox}} 
@@ -76,9 +76,6 @@ End Sub
 
 {{endregion}} 
 
-
-
-
 ## ValueChanged event
 
 __ValueChanged__ event can be used in particular about check box state change. You have to check the active editor type as in the example below:
@@ -108,9 +105,6 @@ End Sub
 ````
 
 {{endregion}} 
-
-
-
 
 ## HeaderCellToggleStateChanged event
 
@@ -145,12 +139,9 @@ End Sub
 
 {{endregion}} 
 
-
-
-
 ## EditMode
 
-The __EditMode__ property controls when the value of the editor will be submitted to the cell. By default, the current behavior is kept (OnValidate) and the value will  be submitted only when the current cell changes or the grid looses focus. The new value (OnValueChange) will submit the value immediately after the editor value changes.
+The __EditMode__ property controls when the value of the editor will be submitted to the cell. By default, the current behavior is kept (OnValidate) and the value will be submitted only when the current cell changes or the grid looses focus. The new value (OnValueChange) will submit the value immediately after the editor value changes.
 
 {{source=..\SamplesCS\GridView\Columns\GridViewCheckBoxColumn1.cs region=EditMode}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=EditMode}} 
@@ -183,4 +174,21 @@ End Sub
 {{endregion}} 
 
 
+
+# See Also
+* [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
+
+* [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
+
+* [GridViewColorColumn]({%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%})
+
+* [GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})
+
+* [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})
+
+* [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%})
+
+* [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
+
+* [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 

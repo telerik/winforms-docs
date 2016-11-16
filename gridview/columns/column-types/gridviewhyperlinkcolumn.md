@@ -1,7 +1,7 @@
 ---
 title: GridViewHyperlinkColumn
-page_title: GridViewHyperlinkColumn | UI for WinForms Documentation
-description: GridViewHyperlinkColumn
+page_title: GridViewHyperlinkColumn | RadGridView
+description: GridViewHyperlinkColumn allows RadGridView to display, format, edit and open hyperlinks as well as run executable files.
 slug: winforms/gridview/columns/column-types/gridviewhyperlinkcolumn
 tags: gridviewhyperlinkcolumn
 published: True
@@ -10,10 +10,6 @@ previous_url: gridview-columns-gridviewhyperlinkcolumn
 ---
 
 # GridViewHyperlinkColumn
-
-
-
-## 
 
 __GridViewHyperlinkColumn__ allows __RadGridView__ to display, format, edit and open hyperlinks as well as run executable files. The default editor of the column is __RadTextBoxEditor__.
 
@@ -50,19 +46,17 @@ Me.radGridView1.Rows.Add("http://www.wikipedia.com")
 
 {{endregion}} 
 
-
 ![gridview-columns-gridviewhyperlinkcolumn 001](images/gridview-columns-gridviewhyperlinkcolumn001.png)
 
 ## Behavior customization
 
 You can choose the action to open hyperlink or run executable using the __HyperlinkOpenAction__ property of the column. It is an enumeration with the following members:
-        
 
-* __SingleClick__ – opens the hyperlink on single mouse click
+* __SingleClick:__ opens the hyperlink on single mouse click
 
-* __DoubleClick__ – opens the hyperlink on double mouse click 
+* __DoubleClick:__ opens the hyperlink on double mouse click 
 
-* __None__ – the user cannot open the link.
+* __None:__ the user cannot open the link.
 
 The __HyperlinkOpenArea__ property of the column determines whether to execute the hyperlink upon click on the cell or upon click on the text of the cell.
         
@@ -81,12 +75,31 @@ The __RadGridView__ theme could define styles for the following __GridViewHyperl
 * __Visited__
 
 The mouse cursor transforms into ‘*hand*’ when hovering hyperlink from the column. 
-		
 
 ## Events
 
 Here are the __GridViewHyperlinkColumn__ specific events:
 
-* __HyperlinkOpening__ – cancelable event which is raised before opening the hyperlink
+* __HyperlinkOpening:__ cancelable event which is raised before opening the hyperlink
 
-* __HyperlinkOpened__ – event which is raised after opening the link.
+* __HyperlinkOpened:__ event which is raised after opening the link.
+
+
+# See Also
+
+* [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
+
+* [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
+
+* [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%})
+
+* [GridViewColorColumn]({%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%})
+
+* [GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})
+
+* [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})
+
+* [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%})
+
+* [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
+

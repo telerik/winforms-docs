@@ -1,7 +1,7 @@
 ---
 title: Put a filter cell into edit mode programmatically
-page_title: Put a filter cell into edit mode programmatically | UI for WinForms Documentation
-description: Put a filter cell into edit mode programmatically
+page_title: Put a filter cell into edit mode programmatically | RadGridView
+description: This article shows how you can put a filter cell into edit mode programmatically.
 slug: winforms/gridview/filtering/put-a-filter-cell-into-edit-mode-programmatically
 tags: put,a,filter,cell,into,edit,mode,programmatically
 published: True
@@ -11,11 +11,7 @@ previous_url: gridview-filtering-put-a-filter-cell-into-edit-mode-programmatical
 
 # Put a filter cell into edit mode programmatically
 
-
-
-## 
-
-You can easily put a filter cell into edit mode by code. You should simply call the BeginEdit method of the desired cell:
+You can easily put a filter cell into edit mode by code. You should simply call the __BeginEdit__ method of the desired cell:
 
 #### Put a filter cell in edit mode programmatically
 
@@ -33,4 +29,23 @@ Me.RadGridView1.MasterView.TableFilteringRow.Cells(0).BeginEdit()
 
 {{endregion}}
 
-![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 001](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically001.png)<br>![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 002](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically002.png)
+![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 001](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically001.png)
+
+![gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 002](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically002.png)
+# See Also
+* [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
+
+* [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})
+
+* [Custom Filtering]({%slug winforms/gridview/filtering/custom-filtering%})
+
+* [Events]({%slug winforms/gridview/filtering/events%})
+
+* [Excel-like filtering]({%slug winforms/gridview/filtering/excel-like-filtering%})
+
+* [FilterExpressionChanged Event]({%slug winforms/gridview/filtering/filterexpressionchanged-event%})
+
+* [Filtering Row]({%slug winforms/gridview/filtering/filtering-row%})
+
+* [Setting Filters Programmatically (composite descriptors)]({%slug winforms/gridview/filtering/setting-filters-programmatically-(composite-descriptors)%})
+

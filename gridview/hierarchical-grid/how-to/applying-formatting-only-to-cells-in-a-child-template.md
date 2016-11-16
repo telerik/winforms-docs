@@ -1,7 +1,7 @@
 ---
 title: Applying formatting only to cells in a child template
-page_title: Applying formatting only to cells in a child template | UI for WinForms Documentation
-description: Applying formatting only to cells in a child template
+page_title: Applying formatting only to cells in a child template | RadGridView
+description: This article shows how you can apply formatting only to cells in a child template.
 slug: winforms/gridview/hierarchical-grid/how-to/applying-formatting-only-to-cells-in-a-child-template
 tags: applying,formatting,only,to,cells,in,a,child,template
 published: True
@@ -11,15 +11,13 @@ previous_url: gridview-hirarchical-grid-how-to-applying-formatting-only-to-cells
 
 # Applying formatting only to cells in a child template
 
-
-
 If the parent of the *view template* is not null, the cell element is located in a child template. 
 
-## Example 1
+### Example 1
 
-This idea is used in the code snippet below so that the backcolor of the cells located only in the child templates is changed:
+This idea is used in the code snippet below so that the BackColor of the cells located only in the child templates is changed:
 
-#### Changing the cells backcolor for cells located in a child template 
+#### Changing the cells BackColor for cells located in a child template 
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=example1}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=example1}} 
@@ -49,10 +47,7 @@ End Sub
 
 {{endregion}} 
 
-
-
-
-##  Example 2
+###  Example 2
 
 You can use the following code snippet to change the header height of the first level child template:
 
@@ -83,4 +78,13 @@ End Sub
 {{endregion}} 
 
 
+
+# See Also
+* [Accessing Child Templates]({%slug winforms/gridview/hierarchical-grid/how-to/accessing-child-templates%})
+
+* [Expanding all rows]({%slug winforms/gridview/hierarchical-grid/how-to/expanding-all-rows%})
+
+* [Iterating the child rows collection of a chosen parent row in hierarchy RadGridView]({%slug winforms/gridview/hierarchical-grid/how-to/iterating-the-child-rows-collection-of-a-chosen-parent-row-in-hierarchy-radgridview%})
+
+* [Resizing child GridViewInfo]({%slug winforms/gridview/hierarchical-grid/how-to/resizing-child-gridviewinfo%})
 

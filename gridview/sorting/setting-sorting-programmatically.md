@@ -1,7 +1,7 @@
 ---
 title: Setting Sorting Programmatically
-page_title: Setting Sorting Programmatically | UI for WinForms Documentation
-description: Setting Sorting Programmatically
+page_title: Setting Sorting Programmatically | RadGridView
+description: This article shows how you can use SortDescriptors to sort the rows programmatically.
 slug: winforms/gridview/sorting/setting-sorting-programmatically
 tags: setting,sorting,programmatically
 published: True
@@ -11,15 +11,13 @@ previous_url: gridview-sorting-setting-sorting-programmatically
 
 # Setting Sorting Programmatically
 
-
-
 ## Overview
 
-The RadGridView control includes __SortDescriptors__ property at the GridViewTemplate level which is exposed in RadGridView class for MasterTemplate instance. This collection allows you to use descriptors which define the sorting property and the sorting direction for the data that is bound to the RadGridView. As this is a collection, you are able not only to add, but to remove or clear the its entries as well. When you add a new descriptor to the collection, the data is automatically sorted according to it.
+RadGridView includes __SortDescriptors__ property at the __GridViewTemplate__ level which is exposed in the RadGridView class for __MasterTemplate__ instance. This collection allows you to use descriptors which define the sorting property and the sorting direction for the data that is bound to the RadGridView. As this is a collection, you are able not only to add, but to remove or clear its entries as well. When you add a new descriptor to the collection, the data is automatically sorted according to it.
 
 ## Using SortDescriptor 
 
-To enable sorting you need to set the EnableSorting property of the desired template:
+To enable sorting you need to set the __EnableSorting__ property of the desired template.
 
 #### Enable sorting
 
@@ -37,7 +35,7 @@ Me.RadGridView1.MasterTemplate.EnableSorting = True
 
 {{endregion}} 
 
-Here is how to create and add new SortDescriptor
+Here is how to create and add new __SortDescriptor__.
 
 #### Using SortDescriptor
 
@@ -65,7 +63,7 @@ The __PropertyName__ property defines the property, by which the data will be so
 
 ## Sorting by two or more columns
 
-RadGridView supports sorting by one or more columns. Example of sorting by 2 columns:
+RadGridView supports sorting by one or more columns. The bellow example shows how you can sort by 2 columns.
 
 #### Sorting by two columns
 
@@ -97,9 +95,17 @@ Me.RadGridView1.SortDescriptors.Add(descriptorFreight)
 
 {{endregion}} 
 
-
 ![gridview-sorting-setting-sorting-programmatically 001](images/gridview-sorting-setting-sorting-programmatically001.png)
 
->note The order of adding the sort expressions to the SortDescriptors collections matters. In the example above, the grid will be first sorted by the ShipName column and then each group will be sorted according to the Freight column.
+>note The order of adding the sort expressions to the SortDescriptors collections matters. In the example above, the grid will be first sorted by the `ShipName` column and then each group will be sorted according to the `Freight` column.
 >
+
+# See Also
+* [Basic Sorting]({%slug winforms/gridview/sorting/basic-sorting%})
+
+* [Custom Sorting]({%slug winforms/gridview/sorting/custom-sorting%})
+
+* [Events]({%slug winforms/gridview/sorting/events%})
+
+* [Sorting Expressions]({%slug winforms/gridview/sorting/sorting-expressions%})
 

@@ -1,7 +1,7 @@
 ---
 title: Iterating Cells
-page_title: Iterating Cells | UI for WinForms Documentation
-description: Iterating Cells
+page_title: Iterating Cells | RadGridView
+description: You can iterate through the cells of each row using the __Cells__ collection of GridViewCellInfo.
 slug: winforms/gridview/cells/iterating-cells
 tags: iterating,cells
 published: True
@@ -10,8 +10,6 @@ previous_url: gridview-cells-iterating-cells
 ---
 
 # Iterating Cells
-
-
 
 You can iterate through the cells of each row using the __Cells__ collection of [GridViewCellInfo]({%slug winforms/gridview/cells/gridviewcellinfo%}). The example below firstly iterates the rows of the grid, then the cells for each row:
 
@@ -50,6 +48,20 @@ Next
 >
 
 
-Before<br>![gridview-cells-iterating-cells 001](images/gridview-cells-iterating-cells001.png)
+# See Also
+* [Accessing and Setting the CurrentCell]({%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%})
 
-After<br>![gridview-cells-iterating-cells 002](images/gridview-cells-iterating-cells002.png)
+* [Accessing Cells]({%slug winforms/gridview/cells/accessing-cells%})
+
+* [Conditional Formatting Cells]({%slug winforms/gridview/cells/conditional-formatting-cells%})
+
+* [Creating Custom Cells]({%slug winforms/gridview/cells/creating-custom-cells%})
+
+* [Formatting Cells]({%slug winforms/gridview/cells/formatting-cells%})
+
+* [GridViewCellInfo]({%slug winforms/gridview/cells/gridviewcellinfo%})
+
+* [Painting and Drawing in Cells]({%slug winforms/gridview/cells/painting-and-drawing-in-cells%})
+
+* [ToolTips]({%slug winforms/gridview/cells/tooltips%})
+

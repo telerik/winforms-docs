@@ -1,7 +1,7 @@
 ---
 title: Unbound Mode
-page_title: Unbound Mode | UI for WinForms Documentation
-description: Unbound Mode
+page_title: Unbound Mode | RadGridView
+description: This article shows you you can manually create a grid that is not bound to any data source.
 slug: winforms/gridview/populating-with-data/unbound-mode
 tags: unbound,mode
 published: True
@@ -10,8 +10,6 @@ previous_url: gridview-populating-with-data-unbound-mode
 ---
 
 # Unbound Mode
-
-
 
 When in unbound mode of RadGridView does not use a data source to generate its content. In this mode, you need to add/remove the grid columns and rows using the provided API or the __RadGridView__ user interface (in design-time). You can also have a spreadsheet-like grid with empty rows and columns, letting the user enter own data. This topic described the three possible scenarios for creating unbound grids:
 
@@ -48,7 +46,9 @@ Me.RadGridView1.MasterTemplate.AllowAddNewRow = False
 
 {{endregion}} 
 
-The result from the code above is on the screenshot below:<br>![gridview-populating-with-data-unbound-mode 001](images/gridview-populating-with-data-unbound-mode001.png)
+The result from the code above is on the screenshot below:
+
+![gridview-populating-with-data-unbound-mode 001](images/gridview-populating-with-data-unbound-mode001.png)
 
 ## Adding rows programmatically (through Cells collection)
 
@@ -85,13 +85,13 @@ End Sub
 
 {{endregion}} 
 
-The code above results in the following grid:<br>![gridview-populating-with-data-unbound-mode 002](images/gridview-populating-with-data-unbound-mode002.png)
+The code above results in the following grid:
 
-
+![gridview-populating-with-data-unbound-mode 002](images/gridview-populating-with-data-unbound-mode002.png)
 
 ## Adding rows programmatically (through Rows collection)
 
-You can have the same result as the picture above by adding the rows data using the Add method of the Rows collection: 
+You can have the same result as the picture above by adding the rows data using the __Add__ method of the __Rows__ collection: 
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\UnboundMode.cs region=addingRowsThroughRowsCollection}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\UnboundMode.vb region=addingRowsThroughRowsCollection}} 
@@ -294,4 +294,21 @@ End Function
 {{endregion}} 
 
 
+
+# See Also
+* [Bind to XML]({%slug winforms/gridview/populating-with-data/bind-to-xml%})
+
+* [Bindable Types]({%slug winforms/gridview/populating-with-data/bindable-types%})
+
+* [Binding to a Collection of Interfaces]({%slug winforms/gridview/populating-with-data/binding-to-a-collection-of-interfaces%})
+
+* [Binding to Array and ArrayList]({%slug winforms/gridview/populating-with-data/binding-to-array-and-arraylist%})
+
+* [Binding to BindingList]({%slug winforms/gridview/populating-with-data/binding-to-bindinglist%})
+
+* [Binding to DataReader]({%slug winforms/gridview/populating-with-data/binding-to-datareader%})
+
+* [Binding to EntityFramework using Database first approach]({%slug winforms/gridview/populating-with-data/binding-to-entityframework-using-database-first-approach%})
+
+* [Binding to Generic Lists]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%})
 

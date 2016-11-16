@@ -1,7 +1,7 @@
 ---
 title: Add Header and Footer to the Exported Document
-page_title: Add Header and Footer to the Exported Document | UI for WinForms Documentation
-description: Add Header and Footer to the Exported Document
+page_title: Add Header and Footer to the Exported Document | RadGridView
+description: This article will show how you can add header and footer to your exported document.
 slug: winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document
 tags: add,header,and,footer,to,the,exported,document
 published: True
@@ -111,7 +111,7 @@ header.SetValue("Nortwind Products Details")
 
 {{endregion}} 
 
-4\. The final part is adding the footer. For example you can select the left most and right most cells below the actual grid data and set styles and value. At the end you can set the fill for the entire row.
+4\. The final part is adding the footer. For example you can select the left most and right most cells below the actual grid data and set their styles and value. At the end you can set the fill for the entire row.
 
 #### Add footer
 

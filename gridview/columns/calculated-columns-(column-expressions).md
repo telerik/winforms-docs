@@ -1,11 +1,11 @@
 ---
 title: Calculated Columns (Column Expressions)
-page_title: Calculated Columns (Column Expressions) | UI for WinForms Documentation
-description: Calculated Columns (Column Expressions)
+page_title: Calculated Columns (Column Expressions) | RadGridView
+description: Set the expression of the columns to dynamically calculate the values shown in it.
 slug: winforms/gridview/columns/calculated-columns-(column-expressions)
 tags: calculated,columns,(column,expressions)
 published: True
-position: 8
+position: 10
 previous_url: gridview-columns-calculated-columns-(column-expressions)
 ---
 
@@ -13,7 +13,7 @@ previous_url: gridview-columns-calculated-columns-(column-expressions)
 
 A calculated column is identified by an expression. The only condition necessary to make a regular column behave like a calculated column is to set an expression to it. 
 
-The following code snippet demonstrates how the standard deviation of the *Consumption *column can be computed for each month in the *Deviation* column.
+The following code snippet demonstrates how the standard deviation of the *Consumption* column can be computed for each month in the *Deviation* column.
 
 #### Creating a calculated column
 
@@ -39,13 +39,15 @@ RadGridView1.Columns("Calculated Column").Expression = "UnitsOnOrder * UnitPrice
 
 {{endregion}} 
 
+>caption Figure 1: The last column values are calculated dynamically.
+ 
 ![gridview-columns-calculated-columns-column-expressions 001](images/gridview-columns-calculated-columns-column-expressions001.png)
 
 ## Expressions
 
 An expression is evaluated to a value by combining values from multiple cells of the same row and aggregates on the columns using the provided operators. 
 
-For decimal columns, you can use simple arithmetic operators like + and *. You can also use logical operators like '=' and '<'. 
+For decimal columns, you can use simple arithmetic operators like '+' and '*'. You can also use logical operators like '=' and '<'. 
 
 Boolean operators (AND, OR, NOT) are also allowed as well as more complex operators like IN, LIKE, and % (modulus). Operators take the usual precedence. You can alter this precedence using parentheses. 
 
@@ -76,3 +78,20 @@ __Example 3:__
 Refer to the following external resource about further information on the expressions syntax:
 
 [http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression%28VS.80%29.aspx](http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression%28VS.80%29.aspx)
+# See Also
+* [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
+
+* [Overview]({%slug winforms/gridview/columns%})
+
+* [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
+
+* [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
+
+* [Generating Columns]({%slug winforms/gridview/columns/generating-columns%})
+
+* [GridViewColumn]({%slug winforms/gridview/columns/column-types/gridviewcolumn%})
+
+* [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
+
+* [Pinning and Unpinning Columns]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%})
+

@@ -1,7 +1,7 @@
 ---
 title: Scrolling Programmatically
-page_title: Scrolling Programmatically | UI for WinForms Documentation
-description: Scrolling Programmatically
+page_title: Scrolling Programmatically | RadGridView
+description: This article shows how you can scroll to a particular row/column at run time.
 slug: winforms/gridview/scrolling/scrolling-programmatically
 tags: scrolling,programmatically
 published: True
@@ -10,8 +10,6 @@ previous_url: gridview-scrolling-scrolling-programmatically
 ---
 
 # Scrolling Programmatically
-
-## Scrolling programmatically
 
 You can scroll programmatically using the following functions:
 
@@ -69,13 +67,13 @@ RadGridView1.TableElement.ScrollToRow(100)
 
 The following properties are useful when you need to control the scrolling functionality:
 
-* __EnableFastScrolling__ - controls the fast scrolling mode.
+* __EnableFastScrolling:__ controls the fast scrolling mode.
             
 
-* __EnableKineticScrolling__ - controls the kinetic scrolling function.
+* __EnableKineticScrolling:__ controls the kinetic scrolling function.
             
 
-* __UseScrollbarsInHierarchy__ - enable or disable the dedicated vertical scrollbars in hierarchy.
+* __UseScrollbarsInHierarchy:__ enable or disable the dedicated vertical scrollbars in hierarchy.
             
 
 # See Also

@@ -1,7 +1,7 @@
 ---
 title: Adding and Inserting Rows
-page_title: Adding and Inserting Rows | UI for WinForms Documentation
-description: Adding and Inserting Rows
+page_title: Adding and Inserting Rows | RadGridView
+description: This article shows how you can add or insert rows in RadGridView at runtime. 
 slug: winforms/gridview/rows/adding-and-inserting-rows
 tags: adding,and,inserting,rows
 published: True
@@ -11,11 +11,9 @@ previous_url: gridview-rows-adding-and-inserting-rows
 
 # Adding and Inserting Rows
 
-
-
 ## Adding rows to RadGridView
 
-Adding new rows in the RadGridView can be achieved via the __Rows__ collection. For example if the grid control contains three columns – [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%}), [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%}), [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%}) and [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%}) you can add an empty row as follows:
+Adding new rows in the RadGridView can be achieved via the __Rows__ collection. For example if the grid control contains four columns – [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%}), [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%}), [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%}) and [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%}) you can add an empty row as follows:
       	
 
 __RadGridView.Rows.AddNew()__ adds an empty row and allows the user to enter a value for each column cells’
@@ -34,6 +32,7 @@ RadGridView1.Rows.AddNew()
 
 {{endregion}} 
 
+>caption Figure 1: Add blank new row.
 
 ![gridview-rows-adding-and-inserting-rows 001](images/gridview-rows-adding-and-inserting-rows001.png)
 
@@ -53,6 +52,7 @@ RadGridView1.Rows.Add("Adding New Row", 12.5, DateTime.Now, True)
 
 {{endregion}} 
 
+>caption Figure 2: Add new row with data in it.
 
 ![gridview-rows-adding-and-inserting-rows 002](images/gridview-rows-adding-and-inserting-rows002.png)
 
@@ -82,12 +82,13 @@ RadGridView1.Rows.Add(rowInfo)
 
 {{endregion}} 
 
+>caption Figure 3: Add new row by creating an instance first.
 
 ![gridview-rows-adding-and-inserting-rows 003](images/gridview-rows-adding-and-inserting-rows003.png)
 
 ## Inserting rows in RadGridView
 
-Rows can be inserted at a specified position by using the __Insert__ method of the __Rows__ collection of RadGridView. Below you can see an example of this functionality:
+Rows can be inserted at a specified position by using the __Insert__ method of the __Rows__ collection. Below you can see an example of this functionality:
 
 {{source=..\SamplesCS\GridView\Rows\AddingAndInsertingRows.cs region=insertRow}} 
 {{source=..\SamplesVB\GridView\Rows\AddingAndInsertingRows.vb region=insertRow}} 
@@ -111,5 +112,23 @@ RadGridView1.Rows.Insert(2, dataRowInfo)
 
 {{endregion}} 
 
+>caption Figure 4: Insert row to a specific position.
 
 ![gridview-rows-adding-and-inserting-rows 004](images/gridview-rows-adding-and-inserting-rows004.png)
+# See Also
+* [Conditional Formatting Rows]({%slug winforms/gridview/rows/conditional-formatting-rows%})
+
+* [Creating custom rows]({%slug winforms/gridview/rows/creating-custom-rows%})
+
+* [Drag and Drop]({%slug winforms/gridview/rows/drag-and-drop%})
+
+* [Formatting Rows]({%slug winforms/gridview/rows/formatting-rows%})
+
+* [GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%})
+
+* [Iterating Rows]({%slug winforms/gridview/rows/iterating-rows%})
+
+* [New Row]({%slug winforms/gridview/rows/new-row%})
+
+* [Painting Rows]({%slug winforms/gridview/rows/painting-rows%})
+

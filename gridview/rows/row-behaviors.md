@@ -1,7 +1,7 @@
 ---
 title: Row behaviors
-page_title: Row behaviors | UI for WinForms Documentation
-description: Row behaviors
+page_title: Row behaviors | RadGridView
+description: The RowBehavior allows you to override the actions of the mouse and keyboard performed on various row types.
 slug: winforms/gridview/rows/row-behaviors
 tags: row,behaviors
 published: True
@@ -11,7 +11,6 @@ previous_url: gridview-rows-row-behaviors
 
 # Row behaviors
 
-## 
 
 __RadGridView__ manages user *mouse* and *keyboard* input over its rows by __GridRowBehavior__. Depending on the row type, __RadGridView__ introduces different behaviors, listed on the table below: 
 
@@ -291,3 +290,20 @@ End Function
 {{endregion}} 
 
 Following the demonstrated approach, developers can customize not only the hierarchy rows, but the new row for example, implementing a custom __GridNewRowBehavior__ and registering it for the __GridViewNewRowInfo__.
+# See Also
+* [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
+
+* [Conditional Formatting Rows]({%slug winforms/gridview/rows/conditional-formatting-rows%})
+
+* [Creating custom rows]({%slug winforms/gridview/rows/creating-custom-rows%})
+
+* [Drag and Drop]({%slug winforms/gridview/rows/drag-and-drop%})
+
+* [Formatting Rows]({%slug winforms/gridview/rows/formatting-rows%})
+
+* [GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%})
+
+* [Iterating Rows]({%slug winforms/gridview/rows/iterating-rows%})
+
+* [New Row]({%slug winforms/gridview/rows/new-row%})
+
