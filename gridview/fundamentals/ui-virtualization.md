@@ -21,7 +21,60 @@ Because of the virtualization you cannot access UI elements at design time or di
 Here is a quick sample:
 
 {{source=..\SamplesCS\GridView\Fundamentials\UIVirtualization.cs region=cellFormatting}} 
-{{source=..\SamplesVB\GridView\Fundamentials\UIVirtualization.vb region=cellFormatting}} 
+{{source=..\SamplesVB\GridView\Fundamentials\UIVirtualization.vb region=cellFormatting}}
+````C#
+void radGridView1_CellFormatting(object sender, CellFormattingEventArgs e)
+{
+    if (e.CellElement.ColumnInfo.Name == "UnitsOnOrder" && e.CellElement.Value != null)
+    {
+        if ((short)e.CellElement.Value <= 0)
+        {
+            e.CellElement.DrawFill = true;
+            e.CellElement.GradientStyle = GradientStyles.Solid;
+            e.CellElement.BackColor = Color.Red;
+            e.CellElement.BorderBoxStyle = BorderBoxStyle.SingleBorder;
+        }
+        else
+        {
+            e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
+            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
+            e.CellElement.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local);
+            e.CellElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local);
+        }
+    }
+    else
+    {
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local);
+    }
+}
+
+````
+````VB.NET
+Private Sub radGridView1_CellFormatting(ByVal sender As Object, ByVal e As CellFormattingEventArgs)
+    If e.CellElement.ColumnInfo.Name = "UnitsOnOrder" AndAlso e.CellElement.Value IsNot Nothing Then
+        If CShort(Fix(e.CellElement.Value)) <= 0 Then
+            e.CellElement.DrawFill = True
+            e.CellElement.GradientStyle = GradientStyles.Solid
+            e.CellElement.BackColor = Color.Red
+            e.CellElement.BorderBoxStyle = BorderBoxStyle.SingleBorder
+        Else
+            e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
+            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
+            e.CellElement.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local)
+            e.CellElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
+        End If
+    Else
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
+    End If
+End Sub
+
+```` 
 
 
 {{endregion}} 

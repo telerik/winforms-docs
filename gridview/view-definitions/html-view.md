@@ -137,7 +137,15 @@ view.RowTemplate.ReadXml("..\..\GridView\ViewDefinitions\myViewDefinition.htm")
 At the end simply set the __ViewDefinitions__ property to the newly created __ViewDefinition__ instance.
 
 {{source=..\SamplesCS\GridView\ViewDefinitions\HTMLView1.cs region=setTheViewDefinition}} 
-{{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=setTheViewDefinition}} 
+{{source=..\SamplesVB\GridView\ViewDefinitions\HTMLView1.vb region=setTheViewDefinition}}
+````C#
+radGridView1.ViewDefinition = view;
+
+````
+````VB.NET
+RadGridView1.ViewDefinition = view
+
+```` 
 
 {{endregion}} 
 
