@@ -1,7 +1,7 @@
 ---
 title: Combining RadDragDropService and OLE drag-and-drop
-page_title: Combining RadDragDropService and OLE drag-and-drop | UI for WinForms Documentation
-description: Combining RadDragDropService and OLE drag-and-drop
+page_title: Combining RadDragDropService and OLE drag-and-drop | RadListView
+description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/drag-and-drop/combining-raddragdropservice-and-ole-drag-and-drop
 tags: combining,raddragdropservice,and,ole,drag-and-drop
 published: True
@@ -11,10 +11,11 @@ previous_url: listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-a
 
 # Combining RadDragDropService and OLE drag-and-drop
 
-This article demonstrates a sample approach how to achieve drag and drop functionality between __RadListView__ and __RadListControl__. For this purpose, we will use a combination between the __RadDragDropService__, supported by the __RadListView__ control, and the OLE drag-and-drop, which is supported by all controls from the Telerik UI for WinForms suite.
-      
+This article demonstrates a sample approach how to achieve drag and drop functionality between __RadListView__ and __RadListControl__. For this purpose, we will use a combination between the __RadDragDropService__, supported by the __RadListView__ control, and the OLE drag-and-drop, which is supported by all controls from the Telerik UI for WinForms suite.      
 
 Let’s assume that our __RadListView__ is in bound mode and its __ViewType__ property is set to *IconsView*. The __RadListControl__ is populated manually with items. Set the __AllowDrop__ property to *true*  for both of the controls. Additionally, you need to set the RadListView.__AllowDragDrop__ property to *true* as well.
+
+#### Populating with data
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropListViewListControl.cs region=PopulateWithData}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropListViewListControl.vb region=PopulateWithData}} 
@@ -54,9 +55,13 @@ Me.RadListView1.ViewType = Telerik.WinControls.UI.ListViewType.IconsView
 
 ## Drag and drop from RadListView to RadListControl using RadDragDropService
 
+>caption Figure 1: Drag and drop from RadListView to RadListControl using RadDragDropService
+
 ![listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop 001](images/listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop001.gif)
 
 To implement drag and drop functionality for this scenario, we will use the ListViewElement.__DragDropService__, which is a derivative of the In the __PreviewDragOver__ event allow dropping over a __RadListElement__. The __PreviewDragDrop__  event performs the actual inserting of the dragged item into the RadListControl.__Items__ collection:
+
+#### Handling the RadDragDropService's events
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropListViewListControl.cs region=ListViewToListControl}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropListViewListControl.vb region=ListViewToListControl}} 
@@ -126,9 +131,13 @@ End Sub
 
 ## Drag and drop from RadListControl to RadListView using the OLE drag-and-drop
 
+>caption Figure 2: Drag and drop from RadListControl to RadListView using the OLE drag-and-drop
+
 ![listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop 002](images/listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop002.gif)
 
 1\. Firstly, we should start the drag and drop operation using the RadListControl.__MouseMove__ event when the left mouse button is pressed. We should keep the mouse down location in the RadListControl.__MouseDown__ event. Afterwards, allow dragging over the __RadListView__ via the __Effect__ argument of the __DragEventArgs__  in the RadListView.__DragEnter__ event handler:
+
+#### Starting the drag and drop operation
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropListViewListControl.cs region=ListControlToListViewStart}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropListViewListControl.vb region=ListControlToListViewStart}} 
@@ -216,6 +225,8 @@ End Sub
 
 2\. In the RadListView.__DragDrop__ event you need to get the location of the mouse and convert it to a point that the __RadListView__ can use to get the element underneath the mouse. Afterwards, insert the dragged item on the specific position. We should reset the stored mouse down location as well:
 
+#### Handle the drop operation
+
 {{source=..\SamplesCS\ListView\DragDrop\DragDropListViewListControl.cs region=ListControlToListViewDragDrop}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropListViewListControl.vb region=ListControlToListViewDragDrop}} 
 
@@ -293,5 +304,10 @@ End Sub
 
 {{endregion}} 
 
+# See Also
+
+* [Drag and Drop in bound mode]({%slug winforms/listview/drag-and-drop/drag-and-drop-in-bound-mode%})
+* [Drag and Drop from another control]({%slug winforms/listview/drag-and-drop/drag-and-drop-from-another-control%})
+* [Drag and Drop using RadDragDropService]({%slug winforms/listview/drag-and-drop/drag-and-drop-using-raddragdropservice%})	
 
 
