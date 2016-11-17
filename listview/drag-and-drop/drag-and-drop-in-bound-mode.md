@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop in bound mode
-page_title: Drag and Drop in bound mode | UI for WinForms Documentation
-description: Drag and Drop in bound mode
+page_title: Drag and Drop in bound mode | RadListView
+description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/drag-and-drop/drag-and-drop-in-bound-mode
 tags: drag,and,drop,in,bound,mode
 published: True
@@ -11,13 +11,13 @@ previous_url: listview-drag-and-drop-drag-and-drop-in-bound-mode
 
 # Drag and Drop in bound mode
 
+When __RadListView__ is in bound mode, it does not support drag and drop functionality out of the box due to the specificity of the data source. However, this can be easily achieved by using the built-in __ListViewDragDropService__. You only need to handle events, emanating from this service.
 
+>caption Figure 1: Drag and drop in bound mode
 
-When the __RadListView__ is in bound mode, it does not support drag and drop functionality due to the specificity of the data source. However, this can be easily achieved using the built-in __ListViewDragDropService__. You only need to handle events, emanating from this service.<br>![listview-drag-and-drop-drag-and-drop-in-bound-mode 001](images/listview-drag-and-drop-drag-and-drop-in-bound-mode001.gif)
+![listview-drag-and-drop-drag-and-drop-in-bound-mode 001](images/listview-drag-and-drop-drag-and-drop-in-bound-mode001.gif)
 
-## 
-
-1\. Let’s start with populating the __RadListView__ with data. For this purpose we will create a class Item and fill a BindingList with items:
+1\. Let’s start with populating the __RadListView__ with data. For this purpose we will create a class **Item** and fill a **BindingList** with items:
 
 {{source=..\SamplesCS\ListView\DragDrop\DragDropInBoundMode.cs region=CreateItem}} 
 {{source=..\SamplesVB\ListView\DragDrop\DragDropInBoundMode.vb region=CreateItem}} 
@@ -266,6 +266,12 @@ End Sub
 ````
 
 {{endregion}} 
+
+# See Also
+
+* [Drag and Drop from another control]({%slug winforms/listview/drag-and-drop/drag-and-drop-from-another-control%})
+* [Drag and Drop using RadDragDropService]({%slug winforms/listview/drag-and-drop/drag-and-drop-using-raddragdropservice%})	
+* [Combining RadDragDropService and OLE drag-and-drop]({%slug winforms/listview/drag-and-drop/combining-raddragdropservice-and-ole-drag-and-drop%})	
 
 
 
