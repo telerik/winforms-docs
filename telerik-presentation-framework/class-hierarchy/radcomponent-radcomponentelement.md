@@ -11,6 +11,4 @@ previous_url: tpf-class-hierarchy-radcomponentelement
 
 # RadComponent, RadComponentElement
 
-## 
-
-RadComponent and RadComponentElement both implement IComponent, The IComponent interface introduces the ability to be contained. RadComponent descends from RadObject and RadComponentElement descends from VisualElement. RadComponent also implements the IBindableComponent to allow data binding behavior.
+__RadComponent__ and __RadComponentElement__ both implement __IComponent__, The __IComponent__ interface introduces the ability to be contained. __RadComponent__ descends from __RadObject__ and __RadComponentElement__ descends from __VisualElement__. RadComponent also implements the __IBindableComponent__ to allow data binding behavior.

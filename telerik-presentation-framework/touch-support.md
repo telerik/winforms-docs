@@ -11,14 +11,11 @@ previous_url: tpf-touch-support
 
 # Touch Support
 
-
-
-The Telerik UI for WinForms suite provide full multi-touch support. All controls in the suite are exposing several events which grant the developer the ability to easily handle gestures on a touch input device. This functionality is currently supported under Windows7 and Windows8 Developer Preview Some of the controls in our suite have built-in functionality that responds to touch gestures. For example, you can use the Pan gesture to scroll through the RadGridView’s rows, group by a column or change the order of its columns. Similar functionality is available out-of-the-box for RadTreeView, RadListView, RadPropertyGrid, RadListControl, RadCarousel and RadCommandBar. Additionally, the developer can use the gesture events to implement his custom logic.
-      
+The Telerik UI for WinForms suite provides full multi-touch support. All controls in the suite are exposing several events which grant the developer the ability to easily handle gestures on a touch devices. This functionality is currently supported under Windows7 or newer. Some of the controls in our suite have built-in functionality that responds to touch gestures. For example, you can use the __Pan__ gesture to scroll through the RadGridView’s rows, group by a column or change the order of its columns. Similar functionality is available out-of-the-box for RadTreeView, RadListView, RadPropertyGrid, RadListControl, RadCarousel and RadCommandBar. Additionally, the developer can use the gesture events to implement his custom logic.
 
 ## Touch Events in RadControls
 
-To enable or disable a gesture,use the __EnableGesture__ and __DisableGesture__ functions passing a member of the GestureType enumerator:
+To enable or disable a gesture,use the __EnableGesture__ and __DisableGesture__ functions passing a member of the __GestureType__ enumerator. This method should be executed in the constructor of a new control:
         
 * All
 
@@ -36,17 +33,6 @@ To enable or disable a gesture,use the __EnableGesture__ and __DisableGesture__ 
 
 {{source=..\SamplesCS\TPF\Touch\TouchGesturesForm.cs region=callingMethods}} 
 {{source=..\SamplesVB\TPF\Touch\TouchGesturesForm.vb region=callingMethods}} 
-
-````C#
-this.radButton1.EnableGesture(GestureType.All);
-this.radButton1.DisableGesture(GestureType.Zoom);
-
-````
-````VB.NET
-Me.radButton1.EnableGesture(GestureType.All)
-Me.radButton1.DisableGesture(GestureType.Zoom)
-
-````
 
 {{endregion}} 
 

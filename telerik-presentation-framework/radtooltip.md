@@ -11,12 +11,12 @@ previous_url: tpf-radtooltip
 
 # RadToolTip
 
-__RadToolTip__ is a class derived from the standard __ToolTip__ class in the __System.Windows.Forms__ namespace. The need of a derived class arisen from the fact that the ToolTips needs a Control in order to be shown. __RadToolTip__ encapsulates all that functionality inside of it, which makes it very flexible, requiring only the most basic parameters in order to be shown, even only the text is enough.
+__RadToolTip__ is a class derived from the standard __ToolTip__ class in the __System.Windows.Forms__ namespace. The need of a derived class arisen from the fact that the ToolTips needs a Control in order to be shown. __RadToolTip__ encapsulates all that functionality inside of it, which makes it very flexible, requiring only the most basic parameters in order to be shown (only the text is required).
       
 
 ## Usage
 
-__RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a __Show__ method, you can tell them apart by the fact that __RadToolTip__ does not require an __IWin32Window__ instance. Below are all overloads coming from __RadToolTip__:
+__RadToolTip__ has a __Show__ method with 6 overloads. The base class also has a __Show__ method, you can tell them apart by the fact that __RadToolTip__ does not require an __IWin32Window__ instance. The first example shows how you can create the tooltip. Below it are all overloads coming from __RadToolTip__:
 
 {{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=CreateToolTip}} 
 {{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=CreateToolTip}} 
@@ -128,15 +128,12 @@ toolTip.Show("Tooltip text", New Point(500, 500), 2000)
 
 {{endregion}} 
 
-You can also hide an active ToolTip at any time using the __Hide__ method. This method accepts no arguments, the base Hide method accepts an __IWin32Window__ instance.
-        
+>important You can also hide an active ToolTip at any time using the __Hide__ method. This method accepts no arguments, the base Hide method accepts an __IWin32Window__ instance.
+>
 
-## Example
+## Example: Show a RadToolTip on a RadForm.
 
-Below you will see how to show a RadToolTip on a RadForm.
-        
-
-Create a new RadForm and in the code behind subscribe to its Click event. Replace the automatically generated event handler code with the following:
+Create a new RadForm and in the code behind subscribe to its __Click__ event. Replace the automatically generated event handler code with the following:
 
 {{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=ClickHandler}} 
 {{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=ClickHandler}} 

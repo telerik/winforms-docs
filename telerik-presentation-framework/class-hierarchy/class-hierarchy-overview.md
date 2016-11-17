@@ -11,13 +11,13 @@ previous_url: tpf-class-hierarchy-overview
 
 # Class Hierarchy Overview
 
-The diagram below contains an abbreviated class diagram of the class inheritance starting with RadObject and building to RadControl. RadProperty and RadPropertyMetaData are not shown. See also the Choosing an Ancestor Class topic for information about selecting an ancestor for your TPF based control.
+The diagram below contains an abbreviated class diagram of the class inheritance starting with __RadObject__ and building up to __RadControl__. __RadProperty__ and __RadPropertyMetaData__ are not shown.
 
 ![tpf-class-hierarchy-overview 001](images/tpf-class-hierarchy-overview001.png)
 
-* [RadProperty]({%slug winforms/telerik-presentation-framework/class-hierarchy/radproperty%}) encapsulates properties used in RadObject and support [dependency properties]({%slug winforms/telerik-presentation-framework/dependency-properties%}). Each RadProperty has a name, type, owner and [metadata]({%slug winforms/telerik-presentation-framework/class-hierarchy/radpropertymetadata%}), i.e. information about the property..
+* [RadProperty]({%slug winforms/telerik-presentation-framework/class-hierarchy/radproperty%}) encapsulates properties used in __RadObject__ and support [dependency properties]({%slug winforms/telerik-presentation-framework/dependency-properties%}). Each RadProperty has a name, type, owner and [metadata]({%slug winforms/telerik-presentation-framework/class-hierarchy/radpropertymetadata%}), i.e. information about the property.
 
-* [RadPropertyMetadata]({%slug winforms/telerik-presentation-framework/class-hierarchy/radpropertymetadata%}) describes a property and de-couples the information about a property from the property itself.
+* [RadPropertyMetadata]({%slug winforms/telerik-presentation-framework/class-hierarchy/radpropertymetadata%}) describes a property and separates the information about a property from the property itself.
 
 * [RadObject]({%slug winforms/telerik-presentation-framework/class-hierarchy/radobject%}) represents the base class for all RadElement objects and has the ability to store all property values in a single structure.
 
@@ -27,7 +27,7 @@ The diagram below contains an abbreviated class diagram of the class inheritance
 
 * [LayoutPanel]({%slug winforms/telerik-presentation-framework/class-hierarchy/layoutpanel%}) an abstract class descending from RadElement. LayoutPanel descendants coordinate sizing and position for a number of elements.
 
-* [RadComponentElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcomponent,-radcomponentelement%})implements IComponent  and introduces the ability to be contained.[BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%}) is a VisualElement descendant that adds a virtual PaintPrimitive() method that draws a primitive to the screen.
+* [RadComponentElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcomponent,-radcomponentelement%}) implements __IComponent__  and introduces the ability to be contained. [BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%}) is a VisualElement descendant that adds a virtual PaintPrimitive() method that draws a primitive to the screen.
 
 * [RadItem]({%slug winforms/telerik-presentation-framework/class-hierarchy/raditem%}) represents a visual element which could be added to an ItemsCollection and can be selected, deleted or moved during Visual Studio at design time. By default this class knows how to  handle user input.[RadControl]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcontrol%}) is the abstract base class for  all RadControls. Each RadControl contains a tree of RadElements. The tree has a root, the __RadControl.RootElement__ (type  RootRadElement shown in the diagram) and children of the root element. RadControl acts as a bridge between the traditional Windows forms controls  and the RadElement tree. RadControl also defines properties common across all controls e.g. ThemeName, Style, ImageList, image scaling properties, minimum and maximum sizes.
 

@@ -11,15 +11,15 @@ previous_url: tpf-override-theme-settings-at-run-time
 
 # Override Theme Settings at Run Time
 
-
-
 This article demonstrates how to change the style for a specific element state without losing the applied style for the rest of the states. 
 
 ## 
 
 By default, when you set a certain __RadProperty__ in code, this setting will have a higher priority, called *Local*, than the setting introduced in the theme, which sets with *Style* priority (see [RadObject]({%slug winforms/telerik-presentation-framework/class-hierarchy/radobject%})). As a result, if you set the __BackColor__ of a button’s __FillPrimitive__ in code, even though the theme defines other colors for other states (hover, pressed), these will not be applied, as the *Local* setting has higher priority than the *Style* setting. With the API discussed in this article, you will be able to override the styles defined in the theme, and set the desired property value with priority *Style*.Hence, the rest of the defined styles in the theme will still work as expected.
 
-Here is an example. By default, __RadButton__, like most of the visual items in the UI for WinForms suite has hover state coming from the theme.<br>![tpf-override-theme-settings-at-run-time 001](images/tpf-override-theme-settings-at-run-time001.gif)
+Here is an example. By default, __RadButton__, like most of the visual items in the UI for WinForms suite has hover state coming from the theme.
+
+![tpf-override-theme-settings-at-run-time 001](images/tpf-override-theme-settings-at-run-time001.gif)
 
 Consider the case in which you should change the __BackColor__ for a __RadButton__. To achieve it, you will probably use the following code snippet:
 
@@ -40,7 +40,9 @@ Me.RadButton1.ButtonElement.ButtonFillElement.GradientStyle = GradientStyles.Sol
 
 {{endregion}}
 
-As a result, you will obtain the desired __BackColor__. However, the hover state will be lost.<br>![tpf-override-theme-settings-at-run-time 002](images/tpf-override-theme-settings-at-run-time002.gif)
+As a result, you will obtain the desired __BackColor__. However, the hover state will be lost.
+
+![tpf-override-theme-settings-at-run-time 002](images/tpf-override-theme-settings-at-run-time002.gif)
 
 The local value, applied to the __BackColor__ property, overrides the applied style coming from the theme.
 

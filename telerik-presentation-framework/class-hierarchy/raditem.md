@@ -11,9 +11,7 @@ previous_url: tpf-class-hierarchy-raditem
 
 # RadItem
 
-## 
-
-RadItem represents a visual element that can be added to an ItemsCollection and can be selected, deleted or moved in Visual Studio at design time. Other characteristics introduced by RadItem:
+__RadItem__ represents a visual element that can be added to an ItemsCollection and can be selected, deleted or moved in Visual Studio at design time. Other characteristics introduced by __RadItem__:
 
 * Handles mouse and keyboard input.
 

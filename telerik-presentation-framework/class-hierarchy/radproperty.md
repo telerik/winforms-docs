@@ -11,9 +11,8 @@ previous_url: tpf-class-hierarchy-radproperty
 
 # RadProperty
 
-## 
 
-RadProperty encapsulates properties used in RadObject and support [dependency properties]({%slug winforms/telerik-presentation-framework/dependency-properties%}). Each RadProperty has a name, type, owner and [metadata]({%slug winforms/telerik-presentation-framework/class-hierarchy/radpropertymetadata%}), i.e. information about the property. Each RadProperty has mechanisms for synchronizing with other properties in the system and for validating itself.
+RadProperty encapsulates properties used in RadObject and supports [dependency properties]({%slug winforms/telerik-presentation-framework/dependency-properties%}). Each RadProperty has a name, type, owner and [metadata]({%slug winforms/telerik-presentation-framework/class-hierarchy/radpropertymetadata%}), i.e. information about the property. Each RadProperty has mechanisms for synchronizing with other properties in the system and for validating itself.
 
 The RadProperty __AddOwner()__ method associates the owner's type and potentially merges the owners metadata. 
 
