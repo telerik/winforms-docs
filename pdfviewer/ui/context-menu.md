@@ -1,7 +1,7 @@
 ---
 title: Context Menu
-page_title: Context Menu | UI for WinForms Documentation
-description: Context Menu
+page_title: Context Menu | RadPdfViewer
+description: RadPdfViewer has a default context menu - __PdfViewerContextMenu__ which provides a quick way of performing a number of commands.
 slug: winforms/pdfviewer/ui/context-menu
 tags: context menu
 published: True
@@ -10,7 +10,9 @@ position: 0
 
 # Context Menu 
 
-__RadPdfViewer__ has a default context menu - __PdfViewerContextMenu__ which provides a quick way of performing a number of commands. However, you can replace this menu with any custom one by setting the __RadContextMenu__ property of the __RadPdfViewer__.
+__RadPdfViewer__ has a default context menu - __PdfViewerContextMenu__ which provides a quick way of performing a number of commands. However, you can replace this menu with a custom one by setting the __RadContextMenu__ property of the __RadPdfViewer__.
+
+#### New Context Menu
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ChangeContextMenu}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ChangeContextMenu}} 
@@ -27,6 +29,8 @@ Me.radPdfViewer1.RadContextMenu = Me.radContextMenu1
 {{endregion}}
 
 You can also use the __ShowMenu__ method to show the context menu programmatically at a specified location.
+
+#### Show Context Menu
 
 {{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ShowContextMenu}} 
 {{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ShowContextMenu}} 
@@ -54,6 +58,8 @@ The context menu can change dynamically. For example, when the Text Selection mo
 |![pdfviewer-overview 001](images/pdfviewer-ui-context-menu001.png)|![pdfviewer-overview 001](images/pdfviewer-ui-context-menu002.png)|
  
 Additionally, you can easily add a custom menu item to the context menu. You can find below a sample code snippet:
+
+#### Add New Menu Item
 
 {{source=..\SamplesCS\PdfViewer\PdfUI.cs region=CustomContextMenuItem}} 
 {{source=..\SamplesVB\PdfViewer\PdfUI.vb region=CustomContextMenuItem}} 
@@ -89,3 +95,9 @@ End Sub
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Document Modes]({%slug winforms/pdfviewer/ui/document-modes%})
+* [View Modes]({%slug winforms/pdfviewer/ui/viewer-modes%})

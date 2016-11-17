@@ -1,7 +1,7 @@
 ---
-title: Printing support
-page_title: Printing support | UI for WinForms Documentation
-description: Printing support
+title: Printing Support
+page_title: Printing Support | RadPdfViewer
+description: This article demonstrates how RadPdfViewer can be printed. 
 slug: winforms/pdfviewer/printing-support
 tags: printing,support
 published: True
@@ -9,23 +9,27 @@ position: 4
 previous_url: pdfviewer-printing-support
 ---
 
-# Printing support
+# Printing Support
 
-## 
+RadPdfViewer can be used with [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}) just as any other control that supports printing – drag a __RadPrintDocument__ to the form and set the __Printed Object__ to the desired viewer.
 
-RadPdfViewer can be used with [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}) just as any other control that supports printing – drag a __RadPrintDocument__ to the form and set the __Printed Object__ to the desired viewer. <br>![pdfviewer-printing-support](images/pdfviewer-printing-support.png)
+>caption Figure 1: Design Time
+![pdfviewer-printing-support](images/pdfviewer-printing-support001.png)
 
-As such, RadPdfViewer allows you to benefit from the features that RadPrintDocument provides: header, footer, watermark, preview and settings dialogs.
+As such, __RadPdfViewer__ allows you to benefit from the features that __RadPrintDocument__ provides: header, footer, watermark, preview and settings dialogs.
 
 ## Using UI
 
 __RadPdfViewerNavigator__ allows you to print the currently shown PDF document with a simple button click which opens the *Print Preview* dialog.
 
+>caption Figure 2: Using RadPdfViewerNavigator 
 ![pdfviewer-printing-support](images/pdfviewer-printing-support002.png)
 
-## Printing with code
+## Printing With Code
 
-RadPdfViewer also exposes the two known methods which allow you to easily print the document without involving any complicated settings:
+__RadPdfViewer__ also exposes the two known methods which allow you to easily print the document without involving any complicated settings:
+
+#### Printing
 
 {{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=PrintMethods}} 
 {{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=PrintMethods}} 
@@ -42,3 +46,10 @@ Me.RadPdfViewer1.PrintPreview()
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
+* [Properties, Methods and Events]({%slug winforms/pdfviewer/properties-methods-and-events%})

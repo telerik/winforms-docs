@@ -1,7 +1,7 @@
 ---
 title: Annotations
-page_title: Annotations | UI for WinForms Documentation
-description: Annotations
+page_title: Annotations | RadPdfViewer
+description: RadPdfViewer supports Link annotations, which means that if you open a PDF file that includes hyperlinks to absolute URIs, you can click them and have a window open, navigated to the respective address.
 slug: winforms/pdfviewer/annotations
 tags: annotations
 published: True
@@ -9,11 +9,13 @@ position: 0
 ---
 
 # Annotations
-__RadPdfViewer__ supports Link annotations, which means that if you open a PDF file that includes hyperlinks to absolute URIs, you can click them and have a window open, navigated to the respective address. In addition, if there are links pointing to bookmarks in the same document, the view port will be scrolled to the destination specified in the link.
+__RadPdfViewer__ supports link annotations, which means that if you open a PDF file that includes hyperlinks to absolute URIs, you can click them and have a window open, navigated to the respective address. In addition, if there are links pointing to bookmarks in the same document, the view port will be scrolled to the destination specified in the link.
 
 The current API includes the following members, which allow customization of the default behavior or implementing custom logic:
 
-* __AnnotationClicked__ event of __RadPdfViewer__:This event is fired when you click on an annotation such as a hyperlink. It comes handy when you want to detect or even cancel the opening of a web page. The __AnnotationEventArgs__ contain the Annotation as property and the Link itself has information of its Action, i.e. if it is a UriAction. Handling the event in the following manner will not only show the Uri of each clicked link as the text of a MessageBox, but will also cancel the default behavior.
+* __AnnotationClicked__ event of __RadPdfViewer__: This event is fired when you click on an annotation such as a hyperlink. It comes handy when you want to detect or even cancel the opening of a web page. The __AnnotationEventArgs__ contain the Annotation as property and the Link itself has information of its Action, i.e. if it is a UriAction. Handling the event in the following manner will not only show the Uri of each clicked link as the text of a MessageBox, but will also cancel the default behavior.
+
+#### AnnotationClicked Event Handler
 
 {{source=..\SamplesCS\PdfViewer\PdfAnnotations.cs region=AnnotationClicked}} 
 {{source=..\SamplesVB\PdfViewer\PdfAnnotations.vb region=AnnotationClicked}} 
@@ -55,7 +57,9 @@ End Sub
 
 {{endregion}}
 
-* __Annotations__ property of __RadFixedDocument__ – a collection which returns all annotations in the document. For example you can retrieve all links using the following code:
+* __Annotations__ property of __RadFixedDocument__ – A collection which returns all annotations in the document. For example you can retrieve all links using the following code:
+
+#### Get Annotation Links
 
 {{source=..\SamplesCS\PdfViewer\PdfAnnotations.cs region=GetAllLinks}} 
 {{source=..\SamplesVB\PdfViewer\PdfAnnotations.vb region=GetAllLinks}} 
@@ -91,6 +95,8 @@ End Function
 
 The bookmarks in terms of “docx bookmarks” are not explicitly saved in PDF files. They are persisted only if there are Link annotations to them, so you can use the snippet below to retrieve all destinations that have links to them:
 
+#### Get Annotation Bookmarks
+
 {{source=..\SamplesCS\PdfViewer\PdfAnnotations.cs region=Bookmarks}} 
 {{source=..\SamplesVB\PdfViewer\PdfAnnotations.vb region=Bookmarks}} 
 
@@ -125,6 +131,8 @@ End Function
 
 In this way it would be possible to create some UI that contains all bookmarks. Then, you could implement the same action as the one being executed when a hyperlink is clicked, i.e. scroll the document to the specific place in the document where the destination of the link is placed. The following code can be used for this purpose – navigating to a specific destination:
 
+#### Navigate to Destination
+
 {{source=..\SamplesCS\PdfViewer\PdfAnnotations.cs region=GoToDestination}} 
 {{source=..\SamplesVB\PdfViewer\PdfAnnotations.vb region=GoToDestination}} 
 
@@ -144,3 +152,10 @@ End Sub
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
+* [Properties, Methods and Events]({%slug winforms/pdfviewer/properties-methods-and-events%})

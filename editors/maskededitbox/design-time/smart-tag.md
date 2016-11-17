@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Design time | RadMaskedEditBox
+page_title: Smart Tag | RadMaskedEditBox
 description: In this article we will describe the design time abilities of RadMaskedEditBox provided by its Smart Tag.
 slug: winforms/editors/maskededitbox/design-time/smart-tag
 tags: design,time

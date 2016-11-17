@@ -252,8 +252,6 @@ dayView.RulerEndScaleMinutes = 45
 
 ![scheduler-views-day-view 003](images/scheduler-views-day-view003.png)
 
-![scheduler-views-day-view 004](images/scheduler-views-day-view004.png)
-
 ## Ruler Time Format (am/pm)
 
 The __RulerFormatStrings__ property changes the time format in the ruler between am and pm.   The properties of the __RulerFormatStrings__ class allow you to specify the hour and minute formats for both types of ticks (whole hour ticks and sub hour ticks). The following example demonstrates the usage of __RulerFormatStrings__:

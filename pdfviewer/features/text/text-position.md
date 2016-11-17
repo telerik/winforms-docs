@@ -1,6 +1,6 @@
 ---
 title: Text Position
-page_title: Text Position | UI for WinForms Documentation
+page_title: Text Position | RadPdfViewer
 description: Text Position
 slug: winforms/pdfviewer/text/text-position
 tags: text,position
@@ -17,13 +17,13 @@ __TextPosition__ is a position in the text of a __RadFixedDocument__. They enabl
 
 One can create a __TextPostion__ for a particular document, page and index using one of the constructors:
 
-* public TextPosition(RadFixedDocument document)
+* __TextPosition(RadFixedDocument document)__
 
-* public TextPosition(RadFixedPage page)
+* __TextPosition(RadFixedPage page)__
 
-* public TextPosition(RadFixedPage page, int index)
+* __TextPosition(RadFixedPage page, int index)__
 
-* public TextPosition(TextPosition position)
+* __TextPosition(TextPosition position)__
 
 The constructors that accept a __RadFixedPage__ as parameter create a __TextPosition__ for the particular page. The offset you specify will be the offset in the current page in terms of number of characters. If you pass only the __RadFixedDocument__ instance, a __TextPosition__ for the first page will be created. In case you want to make a copy of a __TextPosition__, you can opt for the constructor listed last.
 
@@ -31,47 +31,47 @@ The constructors that accept a __RadFixedPage__ as parameter create a __TextPosi
 
 The members that the __TextPosition__ class exposes are:
 
-* Properties
+* __Properties__
 
-  * __Index__: the integer offset of the text position into the page.
+  * __Index__: The integer offset of the text position into the page.
   
-  * __Page__: the __RadFixedPage__ that the position belongs to.
+  * __Page__: The __RadFixedPage__ that the position belongs to.
 
-* Methods: provide the means for navigation in the document and have self-explanatory names and arguments:
+* __Methods__: Provide the means for navigation in the document and have self-explanatory names and arguments:
 
-  * public bool MoveToNextPosition()
+  * __MoveToNextPosition()__
   
-  * public bool MoveToPreviousPosition()
+  * __MoveToPreviousPosition()__
   
-  * public bool MoveToPosition(TextPosition position)
+  * __MoveToPosition(TextPosition position)__
   
-  * public bool MoveToNextWord()
+  * __MoveToNextWord()__
   
-  * public bool MoveToPreviousWord()
+  * __MoveToPreviousWord()__
   
-  * public bool MoveToCurrentWordStart()
+  * __MoveToCurrentWordStart()__
   
-  * public bool MoveToCurrentWordEnd()
+  * __MoveToCurrentWordEnd()__
   
-  * public bool MoveToLineStart()
+  * __MoveToLineStart()__
   
-  * public bool MoveToLineEnd()
+  * __MoveToLineEnd()__
   
-  * public bool MoveLineUp()
+  * __MoveLineUp()__
   
-  * public bool MoveLineDown()
+  * __MoveLineDown()__
   
-  * public bool MoveToStartOfDocument()
+  * __MoveToStartOfDocument()__
   
-  * public bool MoveToEndOfDocument()
+  * __MoveToEndOfDocument()__
 
-* Events:
+* __Events__:
 
   * __PositionChanging__- occurs just before the position is moved;
   
   * __PositionChanged__ - occurs after the position has moved.
 
-The caret position of __RadFixedDocument__ is also a __TextPosition__ and all methods and properties listed above could be used with it as well. Here is an example:
+The caret position of __RadFixedDocument__ is also a __TextPosition__ object and all methods and properties listed above could be used with it as well. Here is an example:
 
 #### CaretPosition
 
@@ -91,3 +91,11 @@ Me.RadPdfViewer1.PdfViewerElement.Document.CaretPosition.MoveToEndOfDocument()
 {{endregion}}
 
 This will not only move the caret to the end of the document, but will also scroll the document to bring it into view, as the view port follows the caret.
+
+
+# See Also
+
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
+* [Properties, Methods and Events]({%slug winforms/pdfviewer/properties-methods-and-events%})
