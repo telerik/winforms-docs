@@ -612,6 +612,12 @@ navigation:
     listview/drag-and-drop:
         title: Drag and Drop
         position: 7
+    listview/editors:
+        title: Editors
+        position: 8
+    listview/customizing-appearance:
+        title: Customizing Appearance
+        position: 9
     listview/export-data:
         title: Export Data
         position: 10
