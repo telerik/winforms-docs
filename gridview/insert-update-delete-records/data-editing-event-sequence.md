@@ -1,7 +1,7 @@
 ---
 title: Data Editing Event Sequence
-page_title: Data Editing Event Sequence | UI for WinForms Documentation
-description: Data Editing Event Sequence
+page_title: Data Editing Event Sequence | RadGridView
+description: This article shows which event are fired when the end user performs data editing operation.
 slug: winforms/gridview/insert/update/delete-records/data-editing-event-sequence
 tags: data,editing,event,sequence
 published: True
@@ -10,8 +10,6 @@ previous_url: gridview-insert-update-delete-records-data-editing-event-sequence
 ---
 
 # Data Editing Event Sequence
-
-
 
 ## Grid editing follows a well defined sequence of events: 
 
@@ -29,7 +27,7 @@ previous_url: gridview-insert-update-delete-records-data-editing-event-sequence
 
 * Finally the editor is closed.
 
-Some of these events may be called multiple times.  Here is a sample log of events as a string cell was put into edit mode and the string " new" was typed, then the cell was tabbed away from:
+Some of these events may be called multiple times. Here is a sample log of events as a string cell was put into edit mode and the string "new" was typed, then the cell was tabbed away from:
 
 CellBeginEdit
 
@@ -56,3 +54,12 @@ Validated
 Validated
 
 CellEndEdit
+# See Also
+* [Data Editing Support]({%slug winforms/gridview/insert/update/delete-records/data-editing-support%})
+
+* [Insert/Update/Delete Using Controls API]({%slug winforms/gridview/insert/update/delete-records/insert/update/delete-using-controls-api%})
+
+* [Tracking changes in RadGridView]({%slug winforms/gridview/insert/update/delete-records/tracking-changes-in-radgridview%})
+
+* [Validation]({%slug winforms/gridview/insert/update/delete-records/validation%})
+

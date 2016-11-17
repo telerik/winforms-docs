@@ -1,7 +1,7 @@
 ---
 title: Basic Filtering
-page_title: Basic Filtering | UI for WinForms Documentation
-description: Basic Filtering
+page_title: Basic Filtering | RadGridView
+description: This article shows how you can enable the build in filtering functionality. 
 slug: winforms/gridview/filtering/basic-filtering
 tags: basic,filtering
 published: True
@@ -11,16 +11,11 @@ previous_url: gridview-filtering-basic-filtering
 
 # Basic Filtering
 
-
-
-## 
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Filtering and Expressions in RadGridView for WinForms](http://www.telerik.com/videos/winforms/filtering-and-expressions-in-radgridview-for-winforms)<br>In this video, you will learn how to enable three different types of filtering on RadGridView for WinForms.|![gridview-filtering-basic-filtering 001](images/gridview-filtering-basic-filtering001.png)|
 
-User filtering in RadGridView is enabled using RadGridView.__EnableFiltering__ or GridViewTemplate.__EnableFiltering__ properties. By default, filtering is disabled at all levels.
+User filtering in RadGridView is enabled by the __EnableFiltering__ property. By default, filtering is disabled at all levels.
 
 #### Enable filtering
 
@@ -42,6 +37,25 @@ Me.RadGridView1.MasterTemplate.EnableFiltering = True
 
 __GridViewDataColumn__
 
-When filtering is enabled, each __GridViewDataColumn__ column displays a filter box beneath the corresponding header.<br>![gridview-filtering-basic-filtering 002](images/gridview-filtering-basic-filtering002.png)
+When filtering is enabled, each __GridViewDataColumn__ column displays a filter box beneath the corresponding header.
+
+![gridview-filtering-basic-filtering 002](images/gridview-filtering-basic-filtering002.png)
 
 See [End-User capabilities - Filtering]({%slug winforms/gridview/end-user-capabilities/filtering%}) for more information about how the end-user experiences filtering.
+# See Also
+* [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})
+
+* [Custom Filtering]({%slug winforms/gridview/filtering/custom-filtering%})
+
+* [Events]({%slug winforms/gridview/filtering/events%})
+
+* [Excel-like filtering]({%slug winforms/gridview/filtering/excel-like-filtering%})
+
+* [FilterExpressionChanged Event]({%slug winforms/gridview/filtering/filterexpressionchanged-event%})
+
+* [Filtering Row]({%slug winforms/gridview/filtering/filtering-row%})
+
+* [Put a filter cell into edit mode programmatically]({%slug winforms/gridview/filtering/put-a-filter-cell-into-edit-mode-programmatically%})
+
+* [Setting Filters Programmatically (composite descriptors)]({%slug winforms/gridview/filtering/setting-filters-programmatically-(composite-descriptors)%})
+

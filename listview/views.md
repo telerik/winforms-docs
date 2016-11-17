@@ -34,9 +34,9 @@ The __IconView__ displays the list items in icons, a manner that you surely are 
 ![listview-views 004](images/listview-views004.png)
 
 
-## DetailView
+## DetailsView
 
-The __DetailView__ provides a grid-like interface for displaying items with more than one data fields. Interesting features in this view are the options to re-size columns (__AllowColumnResize__), to reorder columns  (__AllowColumnReorder__), set the columns sizes and to determine which columns will be visible and which aren’t.
+The __DetailsView__ provides a grid-like interface for displaying items with more than one data fields. Interesting features in this view are the options to re-size columns (__AllowColumnResize__), to reorder columns  (__AllowColumnReorder__), set the columns sizes and to determine which columns will be visible and which aren’t.
 
 >caption Figure 4: DetailView
 

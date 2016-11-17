@@ -1,7 +1,7 @@
 ---
 title: Column Groups View
-page_title: Column Groups View | UI for WinForms Documentation
-description: Column Groups View
+page_title: Column Groups View | RadGridView
+description: This article describes how you can use the ColumnGroupsViewDefinition in order to group columns and rows in one.
 slug: winforms/gridview/view-definitions/column-groups-view
 tags: column,groups,view
 published: True
@@ -13,7 +13,6 @@ previous_url: gridview-viewdefinitions-column-groups-view
 
 ## Add groups view definition by using the Property Builder
 
-
 Since R3 2015 you can add and configure the groups view definition in the [property builder]({%slug winforms/gridview/design-time-support/property-builder%}). This section will show you how you can use the property builder to setup the groups view definition.
 
 1. Before configuring the view definition you should add all regular columns to the grid. For example you can add some columns directly in the property builder window. Figure 2 shows how you can do that.
@@ -22,7 +21,7 @@ Since R3 2015 you can add and configure the groups view definition in the [prope
 
 ![gridview-viewdefinitions-column-groups-view 003](images/gridview-viewdefinitions-column-groups-view003.gif)
 
-1. The next step is to change the __ViewDefinition__ to __ColumnGroups View__. Figure 3 shows where you can find this property. Changing the view will add the default root group.
+1. The next step is to change the __ViewDefinition__ to __ColumnGroups View__. `Figure 3` shows where you can find this property. Changing the view will add the default root group.
             
 >caption Figure 3: Change the ViewDefinition
 
@@ -48,7 +47,9 @@ The property builder allows you to edit the groups properties as well. Once a pa
 
 ## 
 
-Just as its name says, this view enables grouping of columns. Every column group can have an unlimited number of subgroups or rows containing columns. In the following example, the grid is bound to the Customers table from the Northwind data base. First instantiate ColumnGroupsViewDefinition and add some groups first:
+Just as its name says, this view enables grouping of columns. Every column group can have an unlimited number of subgroups or rows containing columns. In the following example, the grid is bound to the `Customers` table from the Northwind data base. 
+
+First instantiate __ColumnGroupsViewDefinition__ and add some groups.
 
 #### Create groups
 
@@ -74,7 +75,7 @@ view.ColumnGroups(1).Groups.Add(New GridViewColumnGroup("Contact"))
 
 {{endregion}}
 
-Then add at least one row. This row will contain the desired columns: 
+Then add at least one row. This row will contain the desired columns.
 
 #### Add rows to groups
 
@@ -112,7 +113,7 @@ view.ColumnGroups(1).Groups(1).Rows(0).ColumnNames.Add("Fax")
 
 {{endregion}} 
 
-At the end simply set the ViewDefinitions property of RadGridView to the newly created ViewDefinition
+At the end simply set the __ViewDefinitions__ property to the newly created __ViewDefinition__ instance.
 
 #### Set the ViewDefinition property of RadGridView
 
@@ -134,6 +135,15 @@ The result is:
         
 >caption Figure 1: ColumnGroups ViewDefinition
 
-![gridview-viewdefinitions-column-groups-view 001](images/gridview-viewdefinitions-column-groups-view001.jpg)
+![gridview-viewdefinitions-column-groups-view 001](images/gridview-viewdefinitions-column-groups-view001.png)
 
->caution In order to pin a certain group, you should do it after the RadGridView.__ViewDefinition__ property is set and the grid is populated with data. 
+>caution In order to pin a certain group, you should do it after the RadGridView.__ViewDefinition__ property is set and the grid is populated with data.
+
+# See Also
+
+* [HTML View]({%slug winforms/gridview/view-definitions/html-view%})
+
+* [Overview]({%slug winforms/gridview/view-definitions/overview%})
+
+* [Table View]({%slug winforms/gridview/view-definitions/table-view%})
+

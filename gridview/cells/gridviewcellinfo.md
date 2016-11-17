@@ -1,7 +1,7 @@
 ---
 title: GridViewCellInfo
-page_title: GridViewCellInfo | UI for WinForms Documentation
-description: GridViewCellInfo
+page_title: GridViewCellInfo | RadGridView
+description: GridViewCellInfo class is the logical representation of a single grid cell.
 slug: winforms/gridview/cells/gridviewcellinfo
 tags: gridviewcellinfo
 published: True
@@ -11,23 +11,19 @@ previous_url: gridview-cells-gridviewcellinfo
 
 # GridViewCellInfo
 
-
-
-## 
-
 __GridViewCellInfo__ class is the logical representation of a single grid cell. __GridViewCellInfo__ properties include:
 
 * __Value:__ The value displayed in the cell.
 
-* __ColumnInfo__: The [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewcolumn%}) that the cell appears in.
+* __ColumnInfo:__ The [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewcolumn%}) that the cell appears in.
 
-* __RowInfo__: The [GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%}) that the cell appears in.
+* __RowInfo:__ The [GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%}) that the cell appears in.
 
 >note  __RadGridView__ uses virtualization for its visual elements. This means that only the rows that are currently visible have a visual element. When the grid is scrolled up and down the visual elements are reused. Because of the virtualization, it is safe to use the __CellElement__ only inside the __CellFormatting__ event and only for the current cell. The __CellFormatting__ event is fired every time when the cell's visual state needs to be updated.
 >
 
 
-GridViewCellInfo also includes an __EnsureVisible()__ method that scrolls the cell into view.
+__GridViewCellInfo__ also includes an __EnsureVisible()__ method that scrolls the cell into view.
 
 #### Using GridViewCellInfo 
 
@@ -59,4 +55,21 @@ If cell.ColumnInfo.GetType().Equals(GetType(GridViewCheckBoxColumn)) Then
 {{endregion}} 
 
 
+
+# See Also
+* [Accessing and Setting the CurrentCell]({%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%})
+
+* [Accessing Cells]({%slug winforms/gridview/cells/accessing-cells%})
+
+* [Conditional Formatting Cells]({%slug winforms/gridview/cells/conditional-formatting-cells%})
+
+* [Creating Custom Cells]({%slug winforms/gridview/cells/creating-custom-cells%})
+
+* [Formatting Cells]({%slug winforms/gridview/cells/formatting-cells%})
+
+* [Iterating Cells]({%slug winforms/gridview/cells/iterating-cells%})
+
+* [Painting and Drawing in Cells]({%slug winforms/gridview/cells/painting-and-drawing-in-cells%})
+
+* [ToolTips]({%slug winforms/gridview/cells/tooltips%})
 

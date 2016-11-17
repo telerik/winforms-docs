@@ -1,7 +1,7 @@
 ---
 title: Export to PDF
-page_title: Export to PDF | UI for WinForms Documentation
-description: Export to PDF
+page_title: Export to PDF | RadGridView
+description: This article shows how you can export your data to a PDF file. Two distinct methods are sported.
 slug: winforms/gridview/exporting-data/export-to-pdf
 tags: export,to,pdf
 published: True
@@ -11,16 +11,15 @@ previous_url: gridview-exporting-data-export-to-pdf
 
 # Export to PDF
 
-
-
 ## Overview
 
-__RadGridView__ can export its contents to PDF using two separate mecahnisms.
-        
+__RadGridView__ can export its contents to PDF using two separate mechanisms.
 
 * The __GridViewPdfExport__ object utilizes the powerful [RadPdfProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library and exports __RadGridView__`s data natively to the PDF format.
 
-* The __ExportToPdf__ object on the other hand first renders __RadGridView__ as an XHTML table and the export process will convert that table to a PDF document. That said, Export to PDF supports all of the ExportToHTML settings, but it also adds some PDF specific ones.
+* The __ExportToPdf__ object on the other hand first renders __RadGridView__ as an XHTML table and the export process will convert that table to a PDF document. That said, Export to PDF supports all of the __ExportToHTML__ settings, but it also adds some PDF specific ones.
+
+## Exporting Data using GridViewPdfExport object
 
 >note The __GridViewPdfExport__ functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in __TelerikExport__ :
 * Telerik.WinControls.Export
@@ -29,9 +28,7 @@ __RadGridView__ can export its contents to PDF using two separate mecahnisms.
 * Telerik.WinControls.UI.Export
 >
 
-## Exporting Data using GridViewPdfExport object
-
-__Initialization__
+### Initialization
 
 Before running export to PDF, you have to initialize the __GridViewPdfExport__ class. The constructor takes one parameter: __RadGridView__ which will be exported:
 
@@ -52,7 +49,7 @@ Dim pdfExporter As New Telerik.WinControls.Export.GridViewPdfExport(Me.RadGridVi
 
 {{endregion}} 
 
-__File Extension__
+### File Extension
 
 The __FileExtension__ property allows you to change the default (*.pdf) file extension of the exported file:
 
@@ -73,15 +70,15 @@ pdfExporter.FileExtension = ".pdf"
 
 {{endregion}} 
 
-__Hidden columns and rows option__
+### Hidden columns and rows option
 
-__GridViewPdfExport__ uses the default enumeration of hidden column and row settings. You can choose one of the three options by setting __HiddenColumnOption__ and __HiddenRowOption__ properties. However, PDF do not support real hidden columns, so choosing the ExportAsHidden will not behave the same as ExportAlways.
+__GridViewPdfExport__ uses the default enumeration of hidden column and row settings. You can choose one of the three options by setting __HiddenColumnOption__ and __HiddenRowOption__ properties. However, PDF do not support real hidden columns, so choosing the __ExportAsHidden__ will not behave the same as __ExportAlways__.
 
 * ExportAlways
 
 * DoNotExport (default)
 
-* ExportAsHidden  (brings the same result as ExportAlways option)
+* ExportAsHidden (brings the same result as ExportAlways option)
 
 
 ####  Setting the HiddenColumnOption
@@ -101,9 +98,9 @@ pdfExporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNo
 
 {{endregion}} 
 
-__Header and Footer__
+### Header and Footer
 
-Bofore applying customizations to the headers and footers we need to enable them:
+Before applying customizations to the headers and footers we need to enable them:
 
 ####  Enabling headers and footers
 
@@ -170,7 +167,7 @@ pdfExporter.ReverseFooterOnEvenPages = True
 
 {{endregion}} 
 
-__Summaries export option__
+### Summaries export option
 
 The __SummariesExportOption__ property to specifies how to export summary items. There are four options to choose:
 
@@ -199,7 +196,7 @@ pdfExporter.SummariesExportOption = SummariesOption.ExportAll
 
 {{endregion}} 
 
-__Fit to page__
+### Fit to page
 
 Use this property to make the grid fits to the PDF page width.
 
@@ -220,9 +217,9 @@ pdfExporter.FitToPageWidth = True
 
 {{endregion}} 
 
-__Scale__ 
+### Scale
 
-You can use __Scale__ to change the grid size on the pdf. For example if __Scale__ = 1.2f means the grid will be 20% bigger.
+You can use __Scale__ to change the grid size on the PDF. For example if __Scale__ = 1.2f means the grid will be 20% bigger.
 
 ####  Setting scale
 
@@ -282,7 +279,7 @@ __ChildViewExportMode__: Defines which child view of a hierarchy row to be expor
 
 * *SelectViewToExport*: In this mode the __ChildViewExporing__ event is fired. The event allows to choose the view to export in row by row basis.
 
-__PDF Export Settings__
+### PDF Export Settings
 
 The __PDFExportSettings__ property supports various settings on PDF file level. You can set the following:
 
@@ -309,13 +306,13 @@ pdfExporter.ExportSettings.Description = "Document Description"
 
 {{endregion}} 
 
-## Exporting to PDF
+### Exporting to PDF
 
 Two methods are responsible for exporting data to PDF. Both receive as a parameter the file name.     
 
 * RunExport: Runs synchronously.
 
-####  Running export synchronously
+####  Running export
 
 {{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=RunExport}} 
 {{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=RunExport}} 
@@ -475,7 +472,7 @@ Dim exporter As New ExportToPDF(Me.RadGridView1)
 
 {{endregion}} 
 
-__File Extension__
+### File Extension
 
 The __FileExtension__ property allows you to change the default (*.pdf) file extension of the exported file:
 
@@ -495,9 +492,9 @@ exporter.FileExtension = "pdf"
 
 {{endregion}} 
 
-__Hidden columns and rows option__
+### Hidden columns and rows option
 
-ExportToPDF uses the default enumeration of hidden column and row settings. You can choose one of the three options by setting __HiddenColumnOption__ and __HiddenRowOption__ properties. However, PDF do not support real hidden columns, so choosing the ExportAsHidden will not behave the same as ExportAlways.
+__ExportToPDF__ uses the default enumeration of hidden column and row settings. You can choose one of the three options by setting __HiddenColumnOption__ and __HiddenRowOption__ properties. However, PDF do not support real hidden columns, so choosing the ExportAsHidden will not behave the same as ExportAlways.
 
 * ExportAlways
 
@@ -521,9 +518,9 @@ exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotEx
 
 {{endregion}} 
 
-__Exporting Visual Settings__
+### Exporting Visual Settings
 
-Using the ExportToPDF class allows you to export the visual settings (themes) to the PDF file. ExportToPDF also provides a visual representation of the alternating row color. This feature works only if __EnableAlternatingRow__ property is set to *true*. Note that it does not transfer the alternating row settings that come from the theme of the control. RadGridView will also export the conditional formatting to the PDF file. You can enable exporting visual settings through the ExportVisualSettings property. The default value of this property is *false*. 
+Using the __ExportToPDF__ class allows you to export the visual settings (themes) to the PDF file. __ExportToPDF__ also provides a visual representation of the alternating row color. This feature works only if __EnableAlternatingRow__ property is set to *true*. Note that it does not transfer the alternating row settings that come from the theme of the control. RadGridView will also export the conditional formatting to the PDF file. You can enable exporting visual settings through the __ExportVisualSettings__ property. The default value of this property is *false*. 
 
 ####  Setting the ExportVisualSettings
 
@@ -541,7 +538,7 @@ exporter.ExportVisualSettings = True
 
 {{endregion}} 
 
-__Page Title__
+### Page Title 
 
 You can add a page title which will be presented on every page of the PDF document through __PageTitle__property.
 
@@ -561,7 +558,7 @@ exporter.PageTitle = "Title"
 
 {{endregion}} 
 
-__Summaries export option__
+### Summaries export option 
 
 You can use __SummariesExportOption__ property to specify how to export summary items. There are four options to choose:
 
@@ -589,7 +586,7 @@ exporter.SummariesExportOption = SummariesOption.ExportAll
 
 {{endregion}}
 
-__Fit to page__
+### Fit to page 
 
 Use this property to make the grid fits to the PDF page width.
 
@@ -609,9 +606,9 @@ exporter.FitToPageWidth = True
 
 {{endregion}} 
 
-__Scale__
+### Scale 
 
-You can use __Scale__ to change the grid size on the pdf. For example if __Scale__ = 1.2f means the grid will be 20% bigger.
+You can use __Scale__ to change the grid size on the PDF. For example if __Scale__ = 1.2f means the grid will be 20% bigger.
 
 ####  Setting the Scale
 
@@ -629,7 +626,7 @@ exporter.Scale = 1.2F
 
 {{endregion}} 
 
-__TableBorderThickness__
+### TableBorderThickness 
 
 This property controls the thickness of the table border. The default value is 0 and border is not drawn. 
 
@@ -649,7 +646,7 @@ exporter.TableBorderThickness = 1
 
 {{endregion}} 
 
-__PDF Export Settings__
+### PDF Export Settings 
 
 The __PDFExportSettings__ property supports various settings on PDF file level. You can set the following:       
 
@@ -725,7 +722,7 @@ Dim fileName As String = "c:\ExportedData.pdf"
 
 ## Events
 
-__HTMLCellFormating__ event: Since the the export process first renders RadGridView in XHTML format you can use the event which comes from ExportToHTML class: __HTMLCellFormatting__.  It gives access to a single cell’s  html element that allows you to make additional formatting for every html cell related to the exported RadGridView:
+__HTMLCellFormating__ event: Since the the export process first renders RadGridView in XHTML format you can use the event which comes from ExportToHTML class: __HTMLCellFormatting__.  It gives access to a single cell  HTML element that allows you to make additional formatting for every HTML cell related to the exported RadGridView:
 
 ####  Handling the HTMLCellFormatting event
 
@@ -757,7 +754,7 @@ Private Sub exporter_HTMLCellFormatting(ByVal sender As Object, ByVal e As Teler
 
 ## Fonts / Unicode support
 
-ExportToPDF supports all left-to-right languages when the appropriate Unicode font is set. The most common international font is [Arial Unicode MS](http://support.microsoft.com/kb/287247), because it covers all Unicode characters. Of course, you can use other-specific fonts such as [Batang](http://www.ascenderfonts.com/font/batang-korean.aspx) for Korean, [SimSun](http://www.ascenderfonts.com/font/simsun-simplified-chinese.aspx) for Chinese, [MS Mincho](http://www.ascenderfonts.com/font/ms-mincho-japanese.aspx) for Japanese, etc.
+__ExportToPDF__ supports all left-to-right languages when the appropriate Unicode font is set. The most common international font is [Arial Unicode MS](http://support.microsoft.com/kb/287247), because it covers all Unicode characters. Of course, you can use other-specific fonts such as [Batang](http://www.ascenderfonts.com/font/batang-korean.aspx) for Korean, [SimSun](http://www.ascenderfonts.com/font/simsun-simplified-chinese.aspx) for Chinese, [MS Mincho](http://www.ascenderfonts.com/font/ms-mincho-japanese.aspx) for Japanese, etc.
 
 {{source=..\SamplesCS\GridView\ExportingData\ExportToPDF1.cs region=htmlCellFormattingUnicode}} 
 {{source=..\SamplesVB\GridView\ExportingData\ExportToPDF1.vb region=htmlCellFormattingUnicode}} 
@@ -781,3 +778,18 @@ End Sub
 ````
 
 {{endregion}} 
+# See Also
+* [Export Data in a Group to Excel]({%slug winforms/gridview/exporting-data/export-data-in-a-group-to-excel%})
+
+* [Export to CSV]({%slug winforms/gridview/exporting-data/export-to-csv%})
+
+* [Export to Excel via ExcelML Format]({%slug winforms/gridview/exporting-data/export-to-excel-via-excelml-format%})
+
+* [Export to HTML]({%slug winforms/gridview/exporting-data/export-to-html%})
+
+* [Overview]({%slug winforms/gridview/exporting-data/overview%})
+
+* [Export to Excel]({%slug winforms/gridview/exporting-data/spread-export%})
+
+* [Troubleshooting]({%slug winforms/gridview/exporting-data/troubleshooting%})
+

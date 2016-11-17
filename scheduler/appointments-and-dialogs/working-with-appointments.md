@@ -29,14 +29,14 @@ Use one of many overloads to build a new Appointment instance. The example below
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=creatingAppointment}} 
 
 ````C#
-Appointment appointment = new Appointment(DateTime.Now, TimeSpan.FromMinutes(30), "Summary", "Description");
+Appointment appointment = new Appointment(DateTime.Now, TimeSpan.FromMinutes(60), "Summary", "Description");
 appointment.StatusId = 2;
 appointment.BackgroundId = 6;
 this.radScheduler1.Appointments.Add(appointment);
 
 ````
 ````VB.NET
-Dim appointment As New Appointment(Date.Now, TimeSpan.FromMinutes(30), "Summary", "Description")
+Dim appointment As New Appointment(Date.Now, TimeSpan.FromMinutes(60), "Summary", "Description")
 appointment.StatusId = 2
 appointment.BackgroundId = 6
 Me.RadScheduler1.Appointments.Add(appointment)

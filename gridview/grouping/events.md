@@ -1,7 +1,7 @@
 ---
 title: Events
-page_title: Events | UI for WinForms Documentation
-description: Events
+page_title: Events | RadGridView
+description: This article shows how one can use the GroupByChanged and GroupByChanging events to control the groping operation.
 slug: winforms/gridview/grouping/events
 tags: events
 published: True
@@ -10,10 +10,6 @@ previous_url: gridview-grouping-events
 ---
 
 # Events
-
-
-
-## 
 
 There are two events that are raised, when the data in the RadGridView is grouped. The first one is the __GroupByChanging__ event which is raised before the data is grouped and he second one is the __GroupByChanged__ event raised after the data is grouped.
 
@@ -38,9 +34,9 @@ End Sub
 
 From the event arguments of both events you can access the following data:
 
-* __Action__ - an enumeration with values: *Add*, *Remove*, *ItemChanged* and *Reset*.The __Action__ property notifies if a __GroupDescriptor__ is added, removed, modified or the __GroupDescriptors__ collection is cleared.
+* __Action:__ An enumeration with values: *Add*, *Remove*, *ItemChanged* and *Reset*.The __Action__ property notifies if a __GroupDescriptor__ is added, removed, modified or the __GroupDescriptors__ collection is cleared.
 		  
-* __NewItems__ - a List of *added*, *edited* or *removed*__GroupDescriptors__. For each __GroupDescriptor__ you can get its __GroupNames__, __Format__, __Aggregates__ and __Expression__.
+* __NewItems:__ A List of *added*, *edited* or *removed*__GroupDescriptors__. For each __GroupDescriptor__ you can get its __GroupNames__, __Format__, __Aggregates__ and __Expression__.
 
 You are also able to cancel the grouping operation by setting the __Cancel__ property to *True*
 
@@ -96,3 +92,20 @@ End Sub
 {{endregion}} 
 
 The arguments of this event provide the same data as the __GroupByChanged__ event.
+# See Also
+* [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
+
+* [Custom Grouping]({%slug winforms/gridview/grouping/custom-grouping%})
+
+* [Formatting Group Header Row]({%slug winforms/gridview/grouping/formatting-group-header-row%})
+
+* [Group Aggregates]({%slug winforms/gridview/grouping/group-aggregates%})
+
+* [Groups Collection]({%slug winforms/gridview/grouping/groups-collection%})
+
+* [Setting Groups Programmatically]({%slug winforms/gridview/grouping/setting-groups-programmatically%})
+
+* [Sorting group rows]({%slug winforms/gridview/grouping/sorting-group-rows%})
+
+* [Using Grouping Expressions]({%slug winforms/gridview/grouping/using-grouping-expressions%})
+

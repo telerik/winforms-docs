@@ -1,7 +1,7 @@
 ---
 title: GridViewBrowseColumn
-page_title: GridViewBrowseColumn | UI for WinForms Documentation
-description: GridViewBrowseColumn
+page_title: GridViewBrowseColumn | RadGridView
+description: GridViewBrowseColumn allows RadGridView to edit file paths using OpenFileDialog.
 slug: winforms/gridview/columns/column-types/gridviewbrowsecolumn
 tags: gridviewbrowsecolumn
 published: True
@@ -11,11 +11,11 @@ previous_url: gridview-columns-gridviewbrowsecolumn
 
 # GridViewBrowseColumn
 
+__GridViewBrowseColumn__ allows __RadGridView__ to edit file paths using __OpenFileDialog__. The default editor of the column is __GridBrowseEditor__. 
 
+![gridview-columns-gridviewbrowsecolumn 001](images/gridview-columns-gridviewbrowsecolumn001.png)
 
-__GridViewBrowseColumn__ allows __RadGridView__ to edit file paths using __OpenFileDialog__. The default editor of the column is __GridBrowseEditor__. ![gridview-columns-gridviewbrowsecolumn 001](images/gridview-columns-gridviewbrowsecolumn001.png)
-
-__GridViewBrowseColumn__ is never auto-generated. The following code snippet demonstrates how to create and add the column to RadGridView and also add some example data for it:
+__GridViewBrowseColumn__ is never auto-generated. The following code snippet demonstrates how to create and add the column to RadGridView and also add some sample data for it:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewBrowseColumn1.cs region=addBrowseColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewBrowseColumn1.vb region=addBrowseColumn}} 
@@ -48,4 +48,21 @@ Me.radGridView1.Rows.Add("C:\Music\Sheryl Crow\Strong Enough.wav")
 {{endregion}} 
 
 
+
+# See Also
+* [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
+
+* [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%})
+
+* [GridViewColorColumn]({%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%})
+
+* [GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})
+
+* [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})
+
+* [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%})
+
+* [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
+
+* [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 

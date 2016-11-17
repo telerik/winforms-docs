@@ -1,7 +1,7 @@
 ---
 title: Logical vs. Visual Grid Structure
-page_title: Logical vs. Visual Grid Structure | UI for WinForms Documentation
-description: Logical vs. Visual Grid Structure
+page_title: Logical vs. Visual Grid Structure | RadGridView
+description: RadGridView uses UI Virtualization and because of this the visual representation does not match the logical one.  
 slug: winforms/gridview/fundamentals/logical-vs.-visual-grid-structure
 tags: logical,vs.,visual,grid,structure
 published: True
@@ -11,8 +11,6 @@ previous_url: gridview-fundamentals-logical-vs-visual-grid-structure
 
 # Logical vs. Visual Grid Structure
 
-
-
 The grid can be thought of in terms of both logical and visual. The logical layer allows you to traverse grid meta data and data, i.e. templates, groups, columns, rows and cells. The visual aspect of the grid deals with the Telerik Presentation Foundation (TPF) elements that are drawn on the screen. __RadGridView__ events such as __CellFormatting__ allow you to manipulate the visual aspect of the grid.
 
 ## Logical Grid Structure
@@ -20,7 +18,7 @@ The grid can be thought of in terms of both logical and visual. The logical laye
 RadGridView has a logical structure that uses collections of objects such as [GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%}) and [GridViewCellinfo]({%slug winforms/gridview/cells/gridviewcellinfo%}) to represent elements of the grid. The outline below shows the general structure of the logical layer:
       	
 
-* GridViewTemplate (MasterGridViewTemplate)
+* GridViewTemplate (MasteTemplate)
 
    * RootGroup (RootGroups)
 
@@ -48,7 +46,7 @@ Where hierarchical data is shown in the grid, the structure changes slightly:
 
    * Rows ([GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%}))
 
-This logical tree structure allows you to traverse down through the cell level using RadGridView collections. For example, to traverse starting at the MasterGridViewTemplate rows and through every cell to perform some arbitrary operation:
+This logical tree structure allows you to traverse down through the cell level using RadGridView collections. For example, to traverse starting at the MasterTemplate rows and through every cell to perform some arbitrary operation:
 
 #### Iterate the MasterGridViewTemplate cells
 
@@ -111,33 +109,27 @@ Next
 
 ## Visual Grid
 
-__RadGridView__ uses virtualization for its visual elements. This means that only the rows that are currently visible have a visual element. When the grid is scrolled up and down the visual elements are reused. For example, because of the virtualization, the __CellElement__ can only be used inside the __CellFormatting__ event and only for the current cell. The __CellFormatting__ event is fired every time when the cell's visual state needs to be updated.
+__RadGridView__ uses virtualization for its visual elements. This means that only the rows that are currently visible have a visual element. When the grid is scrolled up and down the visual elements are reused. For example, because of the virtualization, the __CellElement__ can only be accessed inside the __CellFormatting__ event and only for the current cell. The __CellFormatting__ event is fired every time when the cell's visual state needs to be updated.
       	
 
-RadGridView has several events that allow you to access the visual elements of the grid: CreateCell, CellPaint, RowPaint, CellFormatting and RowFormatting. These events pass references to TPF elements that represent rows and cells. For example, the abbreviated example below adds a RadProgressBarElement to cell elements in the grid (see [Filtering]({%slug winforms/gridview/cells/creating-custom-cells%}) for the full example).
-
-#### Iterating all cells by using CellFormatting event
-
-{{source=..\SamplesCS\GridView\Fundamentials\LogicalVsVisualStructure.cs region=cellFormatting}} 
-{{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=cellFormatting}} 
-
-````C#
-void radGridView1_CellFormatting(object sender, CellFormattingEventArgs e)
-{
-    RadProgressBarElement element = new RadProgressBarElement();
-    e.CellElement.Children.Add(element);
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-    Dim element As New RadProgressBarElement()
-    e.CellElement.Children.Add(element)
-End Sub
-
-````
-
-{{endregion}} 
+RadGridView has several events that allow you to access the visual elements of the grid:__ CreateCell__, __CellPaint__, __RowPaint__, __CellFormatting__ and __RowFormatting__. These events pass references to TPF elements that represent rows and cells. 
 
 
+
+# See Also
+* [Binding the Grid]({%slug winforms/gridview/fundamentals/binding-the-grid%})
+
+* [Columns]({%slug winforms/gridview/fundamentals/columns%})
+
+* [Creating Hierarchical Grids]({%slug winforms/gridview/fundamentals/creating-hierarchical-grids%})
+
+* [Editing]({%slug winforms/gridview/fundamentals/editing%})
+
+* [Element Hierarchy]({%slug winforms/gridview/fundamentals/element-hierarchy%})
+
+* [Key Features]({%slug winforms/gridview/fundamentals/key-features%})
+
+* [Keyboard Support]({%slug winforms/gridview/fundamentals/keyboard-support%})
+
+* [Overview of RadGridView Structure]({%slug winforms/gridview/fundamentals/overview-of-radgridview-structure%})
 

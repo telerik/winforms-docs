@@ -1,7 +1,7 @@
 ---
 title: Setting Filters Programmatically (composite descriptors)
-page_title: Setting Filters Programmatically (composite descriptors) | UI for WinForms Documentation
-description: Setting Filters Programmatically (composite descriptors)
+page_title: Setting Filters Programmatically (composite descriptors) | RadGridView
+description: To filter a single data field by multiple values, you have to use the CompositeFilterDescriptor object.
 slug: winforms/gridview/filtering/setting-filters-programmatically-(composite-descriptors)
 tags: setting,filters,programmatically,(composite,descriptors)
 published: True
@@ -10,8 +10,6 @@ previous_url: gridview-filtering-setting-filters-programmatically-composite-desc
 ---
 
 # Setting Filters Programmatically (composite descriptors)
-
-
 
 ## Using CompositeFilterDescriptor
 
@@ -41,9 +39,13 @@ Me.RadGridView1.FilterDescriptors.Add(compositeFilter)
 
 {{endregion}} 
 
-The composite FilterDescriptors supports *__And__* and *__Or__* logical operators. Result of the above example using *__And__* logical operator:<BR>![gridview-filtering-setting-filters-programmatically-composite-descriptors 001](images/gridview-filtering-setting-filters-programmatically-composite-descriptors001.png)
+The __CompositeFilterDescriptors__ supports *__And__* and *__Or__* logical operators. Result of the above example using *__And__* logical operator:
 
-Result of the above example using *__Or__* logical operator:<br>![gridview-filtering-setting-filters-programmatically-composite-descriptors 002](images/gridview-filtering-setting-filters-programmatically-composite-descriptors002.png)
+![gridview-filtering-setting-filters-programmatically-composite-descriptors 001](images/gridview-filtering-setting-filters-programmatically-composite-descriptors001.png)
+
+Result of the above example using *__Or__* logical operator:
+
+![gridview-filtering-setting-filters-programmatically-composite-descriptors 002](images/gridview-filtering-setting-filters-programmatically-composite-descriptors002.png)
 
 ## More Complex Composite Filters
 
@@ -84,4 +86,21 @@ Me.RadGridView1.FilterDescriptors.Add(filterDescriptor2)
 {{endregion}} 
 
 
+
+# See Also
+* [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
+
+* [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})
+
+* [Custom Filtering]({%slug winforms/gridview/filtering/custom-filtering%})
+
+* [Events]({%slug winforms/gridview/filtering/events%})
+
+* [Excel-like filtering]({%slug winforms/gridview/filtering/excel-like-filtering%})
+
+* [FilterExpressionChanged Event]({%slug winforms/gridview/filtering/filterexpressionchanged-event%})
+
+* [Filtering Row]({%slug winforms/gridview/filtering/filtering-row%})
+
+* [Put a filter cell into edit mode programmatically]({%slug winforms/gridview/filtering/put-a-filter-cell-into-edit-mode-programmatically%})
 

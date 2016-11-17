@@ -1,7 +1,7 @@
 ---
 title: Hierarchy of one to many relations
-page_title: Hierarchy of one to many relations | UI for WinForms Documentation
-description: Hierarchy of one to many relations
+page_title: Hierarchy of one to many relations | RadGridView
+description: Bind RadgridView to a hierarchy containing one to many relations.
 slug: winforms/gridview/hierarchical-grid/hierarchy-of-one-to-many-relations
 tags: hierarchy,of,one,to,many,relations
 published: True
@@ -11,21 +11,19 @@ previous_url: gridview-hirarchical-grid-hierarchy-of-one-to-many-relations
 
 # Hierarchy of one to many relations
 
+__RadGridView__ supports binding to a hierarchy containing one to many relations. The result is presented in tabs inside child views.
 
-
-## 
-
-__RadGridView__ supports binding to a hierarchy containing one to many relations. The result is presented in tabs inside child views.<br>![grid-hierarchical-grid-hierarchy-of-one-to-many-relations 001](images/grid-hierarchical-grid-hierarchy-of-one-to-many-relations001.png)
+![grid-hierarchical-grid-hierarchy-of-one-to-many-relations 001](images/grid-hierarchical-grid-hierarchy-of-one-to-many-relations001.png)
 
 Follow these steps to setup the hierarchy:
 
-__1.__ Bind to a data source (e.g. DataTable)
+1. Bind to a data source (e.g. DataTable)
 
-__2.__ Add at least two child templates and set their data source.
+2. Add at least two child templates and set their data source.
 
-__3.__ Add relations to connect the child templates with the master template.
+3. Add relations to connect the child templates with the master template.
 
-__4.__ Run the project.
+4. Run the project.
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.cs region=HierarchyOfOneToManyRelation}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.vb region=HierarchyOfOneToManyRelation}} 
@@ -97,13 +95,14 @@ End Sub
 ````
 
 {{endregion}} 
+
 >note There is an example demonstrating how to build hierarchy containing one-to-many relations in the demo application.
 >
 
 
 ## Formatting tabs
 
-In some cases you may want to set custom text to the tabs of the child views different than the text of the template's caption. In this case, the solution is to use the [Formatting events]({%slug winforms/gridview/cells/formatting-cells%}) that RadGridView exposes, and more specifically, the ViewCellFormatting event. This event will give you access to the detail cell that contains the whole RadPageViewElement and from this element you will be able to set the text of each tab separately. For example, if we need to display the count of the rows in each view, we can use the following code snippet in order to apply our custom text:
+In some cases you may want to set custom text to the tabs of the child views different than the text of the template's caption. In this case, the solution is to use the [Formatting events]({%slug winforms/gridview/cells/formatting-cells%}) that RadGridView exposes, and more specifically, the __ViewCellFormatting__ event. This event will give you access to the detail cell that contains the whole `RadPageViewElement` and from this element you will be able to set the text of each tab separately. For example, if we need to display the count of the rows in each view, we can use the following code snippet in order to apply our custom text:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.cs region=formattingTabs}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HierarchyOfOneToManyRelation.vb region=formattingTabs}} 
@@ -142,4 +141,28 @@ End Sub
 
 {{endregion}} 
 
-The result is shown on the screenshot below:<br>![gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 002](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations002.png)
+The result is shown on the image below:
+
+![gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 002](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations002.png)
+
+>note The ChildViewTabsPosition property gets or sets the position to place tabs for child views related with this template.
+>
+
+
+# See Also
+* [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
+
+* [Binding to Hierarchical Data Programmatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically%})
+
+* [Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%})
+
+* [Creating hierarchy using an XML data source]({%slug winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source%})
+
+* [Load-On-Demand Hierarchy]({%slug winforms/gridview/hierarchical-grid/load-on-demand-hierarchy%})
+
+* [Object Relational Hierarchy Mode]({%slug winforms/gridview/hierarchical-grid/object-relational-hierarchy-mode%})
+
+* [Self-Referencing Hierarchy]({%slug winforms/gridview/hierarchical-grid/self-referencing-hierarchy%})
+
+* [Tutorial Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/tutorial-binding-to-hierarchical-data%})
+

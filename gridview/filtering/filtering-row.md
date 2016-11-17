@@ -1,7 +1,7 @@
 ---
 title: Filtering Row
-page_title: Filtering Row | UI for WinForms Documentation
-description: Filtering Row
+page_title: Filtering Row | RadGridView
+description: This article shows the properties that control the filtering row appearance.
 slug: winforms/gridview/filtering/filtering-row
 tags: filtering,row
 published: True
@@ -11,15 +11,13 @@ previous_url: gridview-filtering-filtering-row
 
 # Filtering Row
 
+The __GridFilterRowElement__ is the row that holds the filtering boxes. It appears automatically when you enable filtering (__EnableFiltering__ is __true__). __GridFilterRowElement__ could be pinned at the top or bottom as well as made scrollable.
 
-
-## 
-
-The __GridFilterRowElement__ is the row that holds the filtering boxes. It appears automatically when you enable filtering (__GridViewTemplate.EnableFiltering = true__). __GridFilterRowElement__ could be pinned at the top or bottom as well as made scrollable.<br>![gridview-filtering-filtering-row 001](images/gridview-filtering-filtering-row001.png)
+![gridview-filtering-filtering-row 001](images/gridview-filtering-filtering-row001.png)
 
 You can hide the operator text of the filter cells by setting the __ShowFilterCellOperator__ property to *false*:
 
-#### Hide filter row
+#### Hide operator text.
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=filterOperatorText}} 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=filterOperatorText}} 
@@ -61,5 +59,21 @@ Me.RadGridView1.ShowFilteringRow = False
 >caution Filtering strings not allowed are: " LIKE ", " AND ", " OR ", "\"", ">", "<", "<>", "%", " NULL ", " IS ". Note: the spaces are important (e.g. " LIKE " compared to "LIKE").
 >
 
+# See Also
 
-You can customize the __GridFilterRowElement__ by using the __Visual Style Builder__.<br>![gridview-filtering-filtering-row 003](images/gridview-filtering-filtering-row003.png)
+* [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
+
+* [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})
+
+* [Custom Filtering]({%slug winforms/gridview/filtering/custom-filtering%})
+
+* [Events]({%slug winforms/gridview/filtering/events%})
+
+* [Excel-like filtering]({%slug winforms/gridview/filtering/excel-like-filtering%})
+
+* [FilterExpressionChanged Event]({%slug winforms/gridview/filtering/filterexpressionchanged-event%})
+
+* [Put a filter cell into edit mode programmatically]({%slug winforms/gridview/filtering/put-a-filter-cell-into-edit-mode-programmatically%})
+
+* [Setting Filters Programmatically (composite descriptors)]({%slug winforms/gridview/filtering/setting-filters-programmatically-(composite-descriptors)%})
+

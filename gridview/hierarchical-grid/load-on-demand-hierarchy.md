@@ -1,7 +1,7 @@
 ---
 title: Load-On-Demand Hierarchy
-page_title: Load-On-Demand Hierarchy | UI for WinForms Documentation
-description: Load-On-Demand Hierarchy
+page_title: Load-On-Demand Hierarchy | RadGridView
+description: This article shows how you can dynamically load the data in the child levels. 
 slug: winforms/gridview/hierarchical-grid/load-on-demand-hierarchy
 tags: load-on-demand,hierarchy
 published: True
@@ -11,34 +11,32 @@ previous_url: gridview-hierarchical-grid-load-on-demand-hierarchy
 
 # Load-On-Demand Hierarchy
 
-
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Event Based Hierarchies with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/event-based-hierarchies-with-radgridview-for-winforms)<br>In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![gridview-hierarchical-grid-load-on-demand-hierarchy 001](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)|
 
 ## 
 
-In many cases you may need to load your data not when RadGridView is being initialized, but at a later moment, when you interact with RadGridView or with your application. For example, a child template can be loaded on demand to delay the initialization of a resource-demanding feature of the application until it is required. In order to load a GridViewTemplate on demand, you should follow these high-level steps:
+In many cases you may need to load your data not when RadGridView is being initialized, but at a later moment, when you interact with RadGridView or with your application. For example, a child template can be loaded on demand to delay the initialization of a resource-demanding feature of the application until it is required. In order to load a `GridViewTemplate` on demand, you should follow these high-level steps:
         
 
 1. Create and define a columns schema for the presented data at the first level of the hierarchy.
 
-1. Create and define a columns schema for the presented data  and a child GridViewTemplate.
+1. Create and define a columns schema for the presented data at the child `GridViewTemplate`.
 
-1. Create and associate a  GridViewEventDataProvider with the child GridViewTemplate.
+1. Create and associate a `GridViewEventDataProvider` with the child `GridViewTemplate`.
 
-1. Handle the RowSourceNeeded event to populate the data for each parent row.
+1. Handle the __RowSourceNeeded__ event to populate the data for each parent row.
 
 ## Sample load-on-demand scenario
 
-The following example shows a load-on-demand scenario using a typed DataSet.  Let have the following Products data from the AdventureWorks database:<br>![gridview-hierarchical-grid-load-on-demand-hierarchy 001](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)
+The following example shows a load-on-demand scenario using a typed DataSet. Let's load the following `Products` data from the AdventureWorks database:
+
+![gridview-hierarchical-grid-load-on-demand-hierarchy 001](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)
 
 Steps to create a Load-On-Demand hierarchy mode:
-        
 
-1\. First, create a columns schema for the first (parent) level of the hierarchy. If RadGridView is in a data-bound mode and we do not need to set a custom schema, we can just set the DataSource property of RadGridView which will set the schema and will populate the parent level with data. You can also set the AutoSizeColumnsMode to Fill to get a better view of the data:
+1\. First, create a columns schema for the first (parent) level of the hierarchy. If RadGridView is in a data-bound mode and we do not need to set a custom schema, we can just set the __DataSource__ property which will set the schema and will populate the parent level with data. You can also set the __AutoSizeColumnsMode__ to *Fill* to get a better view of the data:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\LoadOnDemandHierarchy.cs region=bindingRadGridView}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\LoadOnDemandHierarchy.vb region=bindingRadGridView}} 
@@ -135,9 +133,7 @@ End Sub
 {{endregion}} 
 
 
-
-
-4\. Load the data on demand for an expanded parent row by using the RowSourceNeeded event:
+4\. Load the data on demand for an expanded parent row by using the __RowSourceNeeded__ event:
 
 >important You should make sure that there is a relation between the tables in the dataset. In the bellow example the relation name is "ProductModel_Product" and the relation is between the ProductModelID field in both tables.
 
@@ -186,3 +182,20 @@ End Sub
 {{endregion}} 
 
 This new event based hierarchy mode can be used in different lazy loading scenarios including ORM frameworks, WCF services or complex business objects.
+# See Also
+* [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
+
+* [Binding to Hierarchical Data Programmatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically%})
+
+* [Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%})
+
+* [Creating hierarchy using an XML data source]({%slug winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source%})
+
+* [Hierarchy of one to many relations]({%slug winforms/gridview/hierarchical-grid/hierarchy-of-one-to-many-relations%})
+
+* [Object Relational Hierarchy Mode]({%slug winforms/gridview/hierarchical-grid/object-relational-hierarchy-mode%})
+
+* [Self-Referencing Hierarchy]({%slug winforms/gridview/hierarchical-grid/self-referencing-hierarchy%})
+
+* [Tutorial Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/tutorial-binding-to-hierarchical-data%})
+

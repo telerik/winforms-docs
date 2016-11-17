@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: GridView | UI for WinForms Documentation
-description: RadGridView is a grid component developed on top of Telerik Presentation Framework which provides a combination of performance, extensibility, customizability, and ease of use.
+page_title: GridView | RadGridView
+description: RadGridView is a grid component developed on top of Telerik Presentation Framework which provides a combination of performance, extensibility, and ease of use.
 slug: winforms/gridview
 tags: gridview
 published: True
@@ -11,67 +11,49 @@ previous_url: gridview-overview
 
 # GridView
 
+__RadGridView__ is a grid component developed on top of [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) which provides a combination of performance, extensibility and ease of use. Its flexible hierarchy model allows using different data providers and creating highly interactive interfaces for display and management of large data without performance lost.
 
-
-## 
-
-Thank you for choosing Telerik __RadGridView__ for WinForms.
-
-__RadGridView__ is a grid component developed on top of [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) which provides a combination of performance, extensibility, customizability, and ease of use. Its flexible hierarchy model allows for using different data providers and creating highly interactive interfaces for display and management of large data without performance lost. 
+>caption Figure 1: RadGridView layout. 
 
 ![gridview-overview 001](images/gridview-overview001.png)
 
 ## Key Features
 
 * Easily customizable appearance and theming mechanism
-            
 
 * Outstanding performance
-            
 
 * Binding to a wide set of binding sources
-            
 
 * Hierarchical data presentation
-            
 
 * Grouping
-            
 
 * Sorting
-            
 
 * Filtering
-            
+
+* Paging
+
+* Printing
 
 * Summary rows and totals row with Aggregate Functions
-            
 
 * Pinned (Frozen) columns and rows
-            
 
 * Row and column reordering
-            
 
 * Column grouping and HTML table like layouts
-            
 
 * In-place data editing with validation and error indication
-            
 
 * Selection and navigation
-            
 
 * Exporting data in different file formats
-            
 
-* Localization and right-to-left languages
-            
+* Localization and right-to-left support
 
 * Flexible API
-            
-
-__A complete list with all key features can be found here__
 
 
 | RELATED VIDEOS |  |
@@ -81,5 +63,5 @@ __A complete list with all key features can be found here__
 # See Also
 
  * [Getting started]({%slug winforms/gridview/getting-started%})
- * Key features
- * Visual Structure
+ * [Key features]({%slug winforms/gridview/fundamentals/key-features%})
+ * [Element Hierarchy]({%slug winforms/gridview/fundamentals/element-hierarchy%})

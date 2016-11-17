@@ -1,7 +1,7 @@
 ---
 title: GridViewImageColumn
-page_title: GridViewImageColumn | UI for WinForms Documentation
-description: GridViewImageColumn
+page_title: GridViewImageColumn | RadGridView
+description: GridViewImageColumn displays read-only images for database columns of image data. 
 slug: winforms/gridview/columns/column-types/gridviewimagecolumn
 tags: gridviewimagecolumn
 published: True
@@ -11,23 +11,19 @@ previous_url: gridview-columns-gridviewimagecolumn
 
 # GridViewImageColumn
 
-
-
 __GridViewImageColumn__ displays *read-only* images for database columns of image data (OLE container or BLOB). 
 
 >note RadGridView tries to convert data columns that contain unspecified binary data to an image.
 >
 
-
 >note Some databases such as Access use OLE image container. RadGridView automatically recognizes that and skips the added header.
 >
 
-
-Supported image formats are those supported by the Image class of .net framework. 
-
-
+Supported image formats are those supported by the `Image` class of the .NET Framework. 
 
 ![gridview-columns-gridviewimagecolumn 001](images/gridview-columns-gridviewimagecolumn001.png)
+
+### Add GridViewImageColumn to the grid.
 
 {{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=addImageColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=addImageColumn}} 
@@ -53,17 +49,11 @@ RadGridView1.MasterTemplate.Columns.Add(imageColumn)
 
 {{endregion}} 
 
-
-
-
 ## Image Layout
 
-GridViewImageColumn also implements resizing functionality where sizing is controlled by the __ImageLayout__ property. __ImageLayout__ can be set to one of the following: None, Tile, Center, Stretch and Zoom:
+__GridViewImageColumn__ also implements resizing functionality where sizing is controlled by the __ImageLayout__ property. __ImageLayout__ can be set to one of the following: *None*, *Tile*, *Center*, *Stretch* and *Zoom*:
 
-* __None__ - Image is positioned at the upper left corner of the cell. This value can be used in a combination
-  with the value of the ImageAlignment property to specify the position of an image in a cell:
-  
-  ![gridview-columns-gridviewimagecolumn 002](images/gridview-columns-gridviewimagecolumn002.png)
+* __None:__ The image is positioned at the top left corner of the cell. This value can be used in a combination with the value of the ImageAlignment property to specify the position of an image in a cell:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=none}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=none}} 
@@ -81,81 +71,29 @@ imageColumn.ImageAlignment = ContentAlignment.BottomRight
 
 {{endregion}} 
 
+* __Tile:__ The image is repeated.
+
+* __Center:__ The image is positioned at the cell center regardless of the ImageAlignment value.
+
+* __Stretch:__  The image is stretched in the cell.
+
+* __Zoom:__ The image is zoomed but the aspect ratio is preserved.
 
 
+# See Also
+* [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
 
-* __Tile__ - Image is repeated:<br>
- ![gridview-columns-gridviewimagecolumn 003](images/gridview-columns-gridviewimagecolumn003.png)
+* [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
 
-{{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=tile}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=tile}} 
+* [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%})
 
-````C#
-imageColumn.ImageLayout = ImageLayout.Tile;
+* [GridViewColorColumn]({%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%})
 
-````
-````VB.NET
-imageColumn.ImageLayout = ImageLayout.Tile
+* [GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})
 
-````
+* [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})
 
-{{endregion}} 
+* [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%})
 
-* __Center__ - Image is positioned at the cell center regardless of the ImageAlignment value: <br>![gridview-columns-gridviewimagecolumn 004](images/gridview-columns-gridviewimagecolumn004.png)
-
-	
-
-
-
-{{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=center}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=center}} 
-
-````C#
-imageColumn.ImageLayout = ImageLayout.Center;
-
-````
-````VB.NET
-imageColumn.ImageLayout = ImageLayout.Center
-
-````
-
-{{endregion}} 
-
-
-
-
-* __Stretch__ - Image is stretched in the cell: <br>![gridview-columns-gridviewimagecolumn 005](images/gridview-columns-gridviewimagecolumn005.png)
-
-{{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=stretch}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=stretch}} 
-
-````C#
-imageColumn.ImageLayout = ImageLayout.Stretch;
-
-````
-````VB.NET
-imageColumn.ImageLayout = ImageLayout.Stretch
-
-````
-
-{{endregion}} 
-
-
-* __Zoom__ - Image is zoomed but the aspect ratio is preserved: <br>![gridview-columns-gridviewimagecolumn 006](images/gridview-columns-gridviewimagecolumn006.png)
-
-{{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=zoom}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=zoom}} 
-
-````C#
-imageColumn.ImageLayout = ImageLayout.Zoom;
-
-````
-````VB.NET
-imageColumn.ImageLayout = ImageLayout.Zoom
-
-````
-
-{{endregion}} 
-
-
+* [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
 

@@ -1,7 +1,7 @@
 ---
 title: Iterating Rows
-page_title: Iterating Rows | UI for WinForms Documentation
-description: Iterating Rows
+page_title: Iterating Rows | RadGridView
+description: This article shows how you can iterate all rows in regular and hierarchical grid.
 slug: winforms/gridview/rows/iterating-rows
 tags: iterating,rows
 published: True
@@ -73,7 +73,7 @@ Next
 
 {{endregion}} 
 
-## Iterating all rows in a hierarchical RadGridView
+## Iterating all rows in a self-reference hierarchy
 
 When you have a hierarchical grid with many templates you can use a recursive method to iterate trough all rows:
 
@@ -108,51 +108,10 @@ End Sub
 
 {{endregion}}
 
-## Iterating all rows in a hierarchical RadGridView
 
-When you have a hierarchical grid with many templates you can use a recursive method to iterate trough all rows:#_[C#]_
-
-	
-
-
-
-{{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=hierarchy}} 
-{{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=hierarchy}} 
-
-````C#
-public void IterateAllRows(IEnumerable<GridViewRowInfo> rowsCollection)
-{
-    foreach (GridViewDataRowInfo row in rowsCollection)
-    {
-        Debug.WriteLine(row.Cells[0].Value);//This rows is used for demonstration only!
-        if (row.HasChildRows())
-        {
-            IterateAllRows(row.ChildRows);
-        }
-    }
-}
-
-````
-````VB.NET
-Public Sub IterateAllRows(rowsCollection As IEnumerable(Of GridViewRowInfo))
-    For Each row As GridViewDataRowInfo In rowsCollection
-        Debug.WriteLine(row.Cells(0).Value)
-        If row.HasChildRows() Then
-            IterateAllRows(row.ChildRows)
-        End If
-    Next
-End Sub
-
-````
-
-{{endregion}} 
-
-## Iterating hierarchical rows
+## Iterating hierarchical grid.
 
 You can iterate through grid rows using the __Rows__ collection of __RadGridView__ objects. The example below cycles through the rows of the grid, modifies the values for certain cells in the different hierarchy levels and counts the rows and cells in the whole RadGridView.
->caption Figure 1.RadGridView Rows Changed
-
-![gridview-iterating-hierarchy-rows 001](images/gridview-iterating-hierarchy-rows001.png)
 
 {{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=IteratingHierarchicalRows}} 
 {{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=IteratingHierarchicalRows}} 
@@ -222,3 +181,20 @@ End Function
 ````
 
 {{endregion}}
+# See Also
+* [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
+
+* [Conditional Formatting Rows]({%slug winforms/gridview/rows/conditional-formatting-rows%})
+
+* [Creating custom rows]({%slug winforms/gridview/rows/creating-custom-rows%})
+
+* [Drag and Drop]({%slug winforms/gridview/rows/drag-and-drop%})
+
+* [Formatting Rows]({%slug winforms/gridview/rows/formatting-rows%})
+
+* [GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%})
+
+* [New Row]({%slug winforms/gridview/rows/new-row%})
+
+* [Painting Rows]({%slug winforms/gridview/rows/painting-rows%})
+

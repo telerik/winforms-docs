@@ -1,7 +1,7 @@
 ---
 title: Using Grouping Expressions
-page_title: Using Grouping Expressions | UI for WinForms Documentation
-description: Using Grouping Expressions
+page_title: Using Grouping Expressions | RadGridView
+description: Use Expression pretty to customize the grouping and group by multiple columns.
 slug: winforms/gridview/grouping/using-grouping-expressions
 tags: using,grouping,expressions
 published: True
@@ -11,15 +11,12 @@ previous_url: gridview-grouping-using-grouping-expressions
 
 # Using Grouping Expressions
 
-
-
 ## Overview
 
 The __GroupDescriptorCollection__ contains __Expression__ property which is used to create flexible grouping conditions. Expression is a string that contains the column name followed by "ASC" (ascending) or "DESC" (descending). Columns are sorted ascending by default. Multiple columns can be separated by commas. Multiple grouping descriptors can be separated by semi column symbol.
 
-## Creating expressions
+## Creating expressions examples
 
-Creating a simple expression:
 
 #### Creating simple grouping expression
 
@@ -37,7 +34,7 @@ Me.RadGridView1.GroupDescriptors.Expression = "Country ASC"
 
 {{endregion}} 
 
-Grouping by two properties using an expression:
+
 
 #### Grouping by two columns, by using an expression
 
@@ -55,8 +52,6 @@ Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC"
 
 {{endregion}}
 
-Creating groups on two levels using an expression:
-
 #### Creating group on two levels, by using an expression
 
 {{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=creatingGroupsOnTwoLevelsUsingExpression}} 
@@ -71,9 +66,7 @@ Me.RadGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC"
 
 ````
 
-{{endregion}} 
-
-Grouping by two properties on the first level and by one on the second:
+{{endregion}}
 
 #### Complex grouping
 
@@ -92,4 +85,21 @@ Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle ASC; City D
 {{endregion}} 
 
 
+
+# See Also
+* [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
+
+* [Custom Grouping]({%slug winforms/gridview/grouping/custom-grouping%})
+
+* [Events]({%slug winforms/gridview/grouping/events%})
+
+* [Formatting Group Header Row]({%slug winforms/gridview/grouping/formatting-group-header-row%})
+
+* [Group Aggregates]({%slug winforms/gridview/grouping/group-aggregates%})
+
+* [Groups Collection]({%slug winforms/gridview/grouping/groups-collection%})
+
+* [Setting Groups Programmatically]({%slug winforms/gridview/grouping/setting-groups-programmatically%})
+
+* [Sorting group rows]({%slug winforms/gridview/grouping/sorting-group-rows%})
 

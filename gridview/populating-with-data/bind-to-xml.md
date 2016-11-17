@@ -1,7 +1,7 @@
 ---
 title: Bind to XML
-page_title: Bind to XML | UI for WinForms Documentation
-description: Bind to XML
+page_title: Bind to XML | RadGridView
+description: Import XML data to a DataSet and use it as data source for RadGridView. 
 slug: winforms/gridview/populating-with-data/bind-to-xml
 tags: bind,to,xml
 published: True
@@ -10,10 +10,6 @@ previous_url: gridview-populating-with-data-bind-to-xml
 ---
 
 # Bind to XML
-
-
-
-## 
 
 Binding to XML is not *directly *supported but DataTables are supported and a DataSet (containing DataTables) can be created from an XML document.
 
@@ -36,9 +32,9 @@ This is a simple xml file used in the examples below:
     </people>
 ````
 
-![gridview-populating-with-data-bind-to-xml 001](images/gridview-populating-with-data-bind-to-xml001.JPG)
+![gridview-populating-with-data-bind-to-xml 001](images/gridview-populating-with-data-bind-to-xml001.png)
 
-You have to create a DataSet instance from the xml file. For the sample xml file above, the created DataSet contains only __one__ DataTable which is set as RadGridView data source. Please refer to this [topic]({%slug winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source%}) if you want to create hierarchy.
+You have to create a DataSet instance from the XML file. For the sample XML file above, the created DataSet contains only __one__ DataTable which is set as RadGridView data source. Please refer to this [topic]({%slug winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source%}) if you want to create hierarchy.
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToXml.cs region=bindingToXML}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToXml.vb region=bindingToXML}}````C#
@@ -58,4 +54,21 @@ Me.RadGridView1.DataSource = xmlDataSet.Tables(0)
 {{endregion}} 
 
 
+
+# See Also
+* [Bindable Types]({%slug winforms/gridview/populating-with-data/bindable-types%})
+
+* [Binding to a Collection of Interfaces]({%slug winforms/gridview/populating-with-data/binding-to-a-collection-of-interfaces%})
+
+* [Binding to Array and ArrayList]({%slug winforms/gridview/populating-with-data/binding-to-array-and-arraylist%})
+
+* [Binding to BindingList]({%slug winforms/gridview/populating-with-data/binding-to-bindinglist%})
+
+* [Binding to DataReader]({%slug winforms/gridview/populating-with-data/binding-to-datareader%})
+
+* [Binding to EntityFramework using Database first approach]({%slug winforms/gridview/populating-with-data/binding-to-entityframework-using-database-first-approach%})
+
+* [Binding to Generic Lists]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%})
+
+* [Binding to ObservableCollection]({%slug winforms/gridview/populating-with-data/binding-to-observablecollection%})
 

@@ -1,7 +1,7 @@
 ---
 title: Binding to Array and ArrayList
-page_title: Binding to Array and ArrayList | UI for WinForms Documentation
-description: Binding to Array and ArrayList
+page_title: Binding to Array and ArrayList | RadGridView
+description: This article shows how you can bind radgridView to an Array or ArrayList.
 slug: winforms/gridview/populating-with-data/binding-to-array-and-arraylist
 tags: binding,to,array,and,arraylist
 published: True
@@ -11,18 +11,16 @@ previous_url: gridview-populating-with-data-binding-to-array-and-arraylist
 
 # Binding to Array and ArrayList
 
-
-
-The examples below demonstrate binding to a generic list, an arrays of custom objects, and an ArrayList of custom objects. This collections have limitations when used as a datasource in which case a __BindingList__ must be used. 
-      
+The examples below demonstrate binding to a generic list, an arrays of custom objects, and an `ArrayList` of custom objects. This collections have limitations when used as a data source in which case a __BindingList__ must be used. 
 
 >note Note: BindingList is the preferred collection since its changes are automatically reflected on the data-bound control.
 >
 
+## Binding to a Array List
 
-## Binding to a Generic List
+The example below creates an __ArrayList__ of generic objects initialized with five values and assigned as a __DataSource__ to the __RadGridView__.
 
-The example below creates an __ArrayList__ of generic objects initialized with five values and assigned as a __DataSource__ to the __RadGridView__.<br> ![gridview-populating-with-data-binding-to-array-and-arraylist 001](images/gridview-populating-with-data-binding-to-array-and-arraylist001.png)
+![gridview-populating-with-data-binding-to-array-and-arraylist 001](images/gridview-populating-with-data-binding-to-array-and-arraylist001.png)
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToSimpleArrayClass}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToSimpleArrayClass}} 
@@ -91,15 +89,14 @@ Me.RadGridView1.DataSource = list
 
 {{endregion}} 
 
-
-
-
 ## Binding to an Array of Objects
 
 Arrays of objects containing [bindable types]({%slug winforms/gridview/populating-with-data/bindable-types%}) can be bound to RadGridView by assigning the array to the __DataSource__ property of the grid. 
         
 
-The example below defines a "MyObject" class containing one integer and one string property. The snippet of code at end of the example creates an array of MyObject, initializes the array with two objects and assigns the array to the __DataSource__. The MyObject class would typically be placed in its own separate class file and the array creation, initialization and assignment code might be placed in a Form_Load event handler.<br> ![gridview-populating-with-data-binding-to-array-and-arraylist 002](images/gridview-populating-with-data-binding-to-array-and-arraylist002.png)
+The example below defines a "MyObject" class containing one integer and one string property. The snippet of code at end of the example creates an array of MyObject, initializes the array with two objects and assigns the array to the __DataSource__. The MyObject class would typically be placed in its own separate class file and the array creation, initialization and assignment code might be placed in a form's `Load` event handler.
+
+ ![gridview-populating-with-data-binding-to-array-and-arraylist 002](images/gridview-populating-with-data-binding-to-array-and-arraylist002.png)
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToArrayOfObjectsClass}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToArrayOfObjectsClass}} 
@@ -176,31 +173,21 @@ Dim myArray As MyObject() = New MyObject(1) {New MyObject(1, "object one"), New 
 
 
 
-## Binding to ArrayList
 
-The code below demonstrates how to use an __ArrayList__ for RadGridView structure generation(*note: the sample object is used from the previous example*):
+# See Also
+* [Bind to XML]({%slug winforms/gridview/populating-with-data/bind-to-xml%})
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=BindingToArrayList}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=BindingToArrayList}} 
+* [Bindable Types]({%slug winforms/gridview/populating-with-data/bindable-types%})
 
-````C#
-ArrayList arrayList = new System.Collections.ArrayList();
-arrayList.Add(new MyObject(1, "Object one"));
-arrayList.Add(new MyObject(2, "Object two"));
-arrayList.Add(new MyObject(3, "Object three"));
-radGridView1.DataSource = arrayList;
+* [Binding to a Collection of Interfaces]({%slug winforms/gridview/populating-with-data/binding-to-a-collection-of-interfaces%})
 
-````
-````VB.NET
-Dim arrayList As New System.Collections.ArrayList()
-arrayList.Add(New MyObject(1, "Object one"))
-arrayList.Add(New MyObject(2, "Object two"))
-arrayList.Add(New MyObject(3, "Object three"))
-RadGridView1.DataSource = arrayList
+* [Binding to BindingList]({%slug winforms/gridview/populating-with-data/binding-to-bindinglist%})
 
-````
+* [Binding to DataReader]({%slug winforms/gridview/populating-with-data/binding-to-datareader%})
 
-{{endregion}} 
+* [Binding to EntityFramework using Database first approach]({%slug winforms/gridview/populating-with-data/binding-to-entityframework-using-database-first-approach%})
 
+* [Binding to Generic Lists]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%})
 
+* [Binding to ObservableCollection]({%slug winforms/gridview/populating-with-data/binding-to-observablecollection%})
 

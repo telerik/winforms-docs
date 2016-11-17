@@ -32,7 +32,9 @@ To enable or disable the spell checking functionality (present as red wavy under
         
 
 You can customize the spell checker by using the __SpellChecker__ property of __RadRichTextEditor__. It’s of type __ISpellChecker__. By default an object of type DocumentSpellChecker that implements the interface, is used for this property. You can either use it or provide your custom class that implements the __ISpellChecker__ interface.
-        
+
+>note __RadRichTextEditor__ can also be configured to be used with a spell-checker using an OpenOffice dictionary and the NHunspell library: [RadRichTextEditor OpenOffice Spell Checking](http://www.telerik.com/support/code-library/radrichtexteditor-openoffice-spell-checking).
+>        
 
 ## Dictionaries
 
@@ -40,7 +42,6 @@ The dictionaries in __RadRichTextEditor__ implement the __IWordDictionary__ inte
         
 
 Here is an example of a __RadDictionary__ loaded from a TDF file.
-        
 
 >note When adding a __RadDictionary__ or similar object use the __AddDictionary(IWordDictionary dictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__ . You can also associate a dictionary with a specific culture. The method to remove this dictionary is __RemoveDictionary(CultureInfo culture)__ .
 >
@@ -116,7 +117,9 @@ End Sub
 {{endregion}} 
 
 If you want to have a temporary custom dictionary, that will only be available for a single application session, you can use the __RadNonPersistentCustomDictionary__ object.
-        
+
+
+If you want to have a temporary custom dictionary, that will only be available for a single application session, you can use the __RadNonPersistentCustomDictionary__ object.
 
 ## Adding a Word
 
@@ -182,7 +185,4 @@ End Sub
 
 ````
 
-{{endregion}} 
-
-
-
+{{endregion}}

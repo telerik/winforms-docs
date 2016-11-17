@@ -1,19 +1,18 @@
 ---
 title: Reordering Columns
-page_title: Reordering Columns | UI for WinForms Documentation
-description: Reordering Columns
+page_title: Reordering Columns | RadGridView
+description: RadGridView control supports column reordering by the user at run-time. 
 slug: winforms/gridview/columns/reordering-columns
 tags: reordering,columns
 published: True
-position: 3
+position: 5
 previous_url: gridview-columns-reordering-columns
 ---
 
 # Reordering Columns
 
-## Reordering columns
 
-The RadGridView control supports column reordering by the user at run-time. The user has just to drag the desired column's header at the desired position among the other headers and drop it there. In the RadGridView control, the __RadGridView.AllowColumnReorder__ property value determines whether users can move columns to different positions.
+RadGridView control supports column reordering by the user at run-time. The user has just to drag the desired column's header at the desired position among the other headers and drop it there. In the RadGridView control, the __AllowColumnReorder__ property value determines whether users can move columns to different positions.
 
 #### Allow or disallow column reordering
 
@@ -30,6 +29,8 @@ RadGridView1.AllowColumnReorder = True
 ````
 
 {{endregion}}
+
+>caption Figure 1: Reorder columns in RadGridView
 
 ![gridview-columns-reordering-columns 001](images/gridview-columns-reordering-columns001.png)
 
@@ -54,3 +55,20 @@ RadGridView1.Columns.Move(4, 1)
 ````
 
 {{endregion}}
+# See Also
+* [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
+
+* [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
+
+* [Overview]({%slug winforms/gridview/columns%})
+
+* [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
+
+* [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
+
+* [Generating Columns]({%slug winforms/gridview/columns/generating-columns%})
+
+* [GridViewColumn]({%slug winforms/gridview/columns/column-types/gridviewcolumn%})
+
+* [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
+

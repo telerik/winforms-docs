@@ -1,7 +1,7 @@
 ---
-title: Images
-page_title: Images | UI for WinForms Documentation
-description: Images
+title: Row Header Images
+page_title: Row Header Images | RadGridView
+description: This article shows how you can change the status images used in the header row.
 slug: winforms/gridview/styling-and-appearance/images
 tags: images
 published: True
@@ -11,17 +11,15 @@ previous_url: gridview-styling-and-appearance-changing-the-currentrow-indicator
 
 # Images
 
-
-
 RadGridView displays several images to indicate the status of a row:
 
-* __CurrentRowHeaderImage__ - image to indicate the current row
+* __CurrentRowHeaderImage:__ Image to indicate the current row.
 
-* __EditRowHeaderImage__ - image to indicate when RadGridView is in edit mode
+* __EditRowHeaderImage:__ Image to indicate when RadGridView is in edit mode.
 
-* __ErrorRowHeaderImage__ - image to indicate an error caused on validation
+* __ErrorRowHeaderImage:__ Image to indicate an error caused on validation.
 
-* __NewRowHeaderImage__  - image to indicate the new row
+* __NewRowHeaderImage:__ Image to indicate the new row.
 
 ## Changing the images programmatically
 
@@ -72,4 +70,13 @@ RadGridView1.Columns("Picture Name").TextImageRelation = TextImageRelation.Image
 {{endregion}} 
 
 
+
+# See Also
+* [Alternating Row Color]({%slug winforms/gridview/styling-and-appearance/alternating-row-color%})
+
+* [Four ways to customize RadGridView appearance]({%slug winforms/gridview/styling-and-appearance/four-ways-to-customize-radgridview-appearance%})
+
+* [HTML-like Text Formatting]({%slug winforms/gridview/styling-and-appearance/html-like-text-formatting%})
+
+* [Themes]({%slug winforms/gridview/styling-and-appearance/themes%})
 

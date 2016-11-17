@@ -1,7 +1,7 @@
 ---
 title: GridViewCalculatorColumn
-page_title: GridViewCalculatorColumn | UI for WinForms Documentation
-description: GridViewCalculatorColumn
+page_title: GridViewCalculatorColumn | RadGridView
+description: GridViewCalculatorColumn allows RadGridView to edit numbers using popup with calculator.
 slug: winforms/gridview/columns/column-types/gridviewcalculatorcolumn
 tags: gridviewcalculatorcolumn
 published: True
@@ -11,9 +11,9 @@ previous_url: gridview-columns-gridviewcalculatorcolumn
 
 # GridViewCalculatorColumn
 
+__GridViewCalculatorColumn__ allows RadGridView to edit numbers using popup with calculator. The default editor of the column is __RadCalculatorEditor__.
 
-
-__GridViewCalculatorColumn__ allows RadGridView to edit numbers using popup with calculator. The default editor of the column is __RadCalculatorEditor__. <br>![gridview-columns-gridviewcalculatorcolumn 001](images/gridview-columns-gridviewcalculatorcolumn001.png)
+![gridview-columns-gridviewcalculatorcolumn 001](images/gridview-columns-gridviewcalculatorcolumn001.png)
 
 __GridViewCalculatorColumn__ is never auto-generated. The following code snippet demonstrates how to create and add the column to RadGridView and also add some sample data in it:
 
@@ -48,4 +48,21 @@ Me.radGridView1.Rows.Add(0.56714)
 {{endregion}} 
 
 
+
+# See Also
+* [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
+
+* [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%})
+
+* [GridViewColorColumn]({%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%})
+
+* [GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})
+
+* [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})
+
+* [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%})
+
+* [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
+
+* [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 

@@ -1,7 +1,7 @@
 ---
 title: Binding to ObservableCollection
-page_title: Binding to ObservableCollection | UI for WinForms Documentation
-description: Binding to ObservableCollection
+page_title: Binding to ObservableCollection | RadGridView
+description: This article demonstrates how you can bind RadGridView to an ObservableCollection.
 slug: winforms/gridview/populating-with-data/binding-to-observablecollection
 tags: binding,to,observablecollection
 published: True
@@ -11,20 +11,20 @@ previous_url: gridview-populating-with-data-binding-to-%20observable-collection
 
 # Binding to ObservableCollection
 
-
-
-## 
-
-The example bellow demonstrates how to bind the __RadGridView__ to an ObservableCollection. This collection represents a dynamic data collection that provides notification when changes (add, move, remove) occur.
+The example bellow demonstrates how to bind __RadGridView__ to an `ObservableCollection`. This collection represents a dynamic data collection that provides notification when changes (add, move, remove) occur.
         
 
->note This collection is available in .NET version 4.0 and above. For this reason it is only supported in the .NET4.0 version of our assemblies (the ones with suffix .40), so please make sure you use those in order to take advantage of this functionality.
+>note This collection is available in .NET version 4.0 and above. For this reason it is only supported in the .NET4.0 version of our assemblies (the ones with suffix .40), so please make sure to use those in order to take advantage of this functionality.
 >
 
 
-The example creates an ObservableCollection of Person, initializes the collection and assigns it to the grid DataSource property. There are also three buttons allowing the user to add, remove and move items from and in the collection. The changes in the collection are automatically reflected by the grid.<br>![gridview-populating-with-data-binding-to- observable-collection 001](images/gridview-populating-with-data-binding-to- observable-collection001.png)
+The example creates an `ObservableCollection` of `Person`, initializes the collection and assigns it to the grid's __DataSource__ property. There are also three buttons allowing the user to add, remove and move items from and in the collection. The changes in the collection are automatically reflected by the grid.
 
-1\. First place a RadGridView and 3 buttons on a blank form. Name the buttons accordingly:<br>![gridview-populating-with-data-binding-to- observable-collection 002](images/gridview-populating-with-data-binding-to- observable-collection002.png)
+![gridview-populating-with-data-binding-to- observable-collection 001](images/gridview-populating-with-data-binding-to- observable-collection001.png)
+
+1\. First place a RadGridView and 3 buttons on a blank form. Name the buttons accordingly:
+
+![gridview-populating-with-data-binding-to- observable-collection 002](images/gridview-populating-with-data-binding-to- observable-collection002.png)
 
 2\. Add the following sample class to the project:
 
@@ -186,7 +186,7 @@ End Sub
 
 {{endregion}}
 
-5\. Finally just call the InitializeCollection method to populate the collection and bind the __RadGridView__ to it
+5\. Finally just call the __InitializeCollection__ method to populate the collection and bind the __RadGridView__ to it
 
 {{source=..\SamplesCS\GridView\PopulatingwithData\BindingToObservableCollection.cs region=Binding}} 
 {{source=..\SamplesVB\GridView\PopulatingwithData\BindingToObservableCollection.vb region=Binding}} 
@@ -211,3 +211,20 @@ End Sub
 
 Now each change you introduce to the collection by pressing the buttons will be automatically reflected in __RadGridView__.
         
+# See Also
+* [Bind to XML]({%slug winforms/gridview/populating-with-data/bind-to-xml%})
+
+* [Bindable Types]({%slug winforms/gridview/populating-with-data/bindable-types%})
+
+* [Binding to a Collection of Interfaces]({%slug winforms/gridview/populating-with-data/binding-to-a-collection-of-interfaces%})
+
+* [Binding to Array and ArrayList]({%slug winforms/gridview/populating-with-data/binding-to-array-and-arraylist%})
+
+* [Binding to BindingList]({%slug winforms/gridview/populating-with-data/binding-to-bindinglist%})
+
+* [Binding to DataReader]({%slug winforms/gridview/populating-with-data/binding-to-datareader%})
+
+* [Binding to EntityFramework using Database first approach]({%slug winforms/gridview/populating-with-data/binding-to-entityframework-using-database-first-approach%})
+
+* [Binding to Generic Lists]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%})
+

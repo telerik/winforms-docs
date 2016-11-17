@@ -1,7 +1,7 @@
 ---
-title: Creating custom cells
-page_title: Creating custom cells | UI for WinForms Documentation
-description: Creating custom cells
+title: Creating Custom Cells
+page_title: Creating Custom Cells | RadGridView
+description: Create custom cell with a progress bar and a custom column that uses it.
 slug: winforms/gridview/cells/creating-custom-cells
 tags: creating,custom,cells
 published: True
@@ -11,11 +11,9 @@ previous_url: gridview-cells-custom-cells
 
 # Creating custom cells
 
-
-
 ## Custom data cell example
 
-RadGridView provides a variety of visual cells (all inheriting from __GridCellElement__) with different functionality and purpose – header cells, indent cells, command cells, summary cells, group content cells, data cells, etc. All these cover the standard cases of the control usage. In case you need to implement more specific and custom scenario, you can create a custom cell. RadGridView provides powerful and flexible mechanism for creating cell types with custom content elements, functionality and properties.
+__RadGridView__ provides a variety of visual cells (all inheriting from __GridCellElement__) with different functionality and purpose – header cells, indent cells, command cells, summary cells, group content cells, data cells, etc. All these cover the standard cases of the control usage. In case you need to implement more specific and custom scenario, you can create a custom cell. __RadGridView__ provides powerful and flexible mechanism for creating cell types with custom content elements, functionality and properties.
 
 You can use the following approach to create a custom data cell with a progress bar in it:
 
@@ -139,7 +137,7 @@ End Property
 
 {{endregion}}
 
-5\. Thanks to the UI virtualization mechanism, of RadGridView only the currently visible cells are created and they are further reused when needed. A cell element is reused in other rows or columns if it is compatible for them. You can create a custom column and define that the custom cell __IsCompatible__ for that column only. This will prevent the cell from being unintentionally reused by other columns.
+5\. Thanks to the UI virtualization mechanism only the currently visible cells are created and they are further reused when needed. A cell element is reused in other rows or columns if it is compatible for them. You can create a custom column and define that the custom cell __IsCompatible__ for that column only. This will prevent the cell from being unintentionally reused by other columns.
 
 {{source=..\SamplesCS\GridView\Cells\CustomCells.cs region=compatibility}} 
 {{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=compatibility}}
@@ -201,7 +199,7 @@ End Class
 
 {{endregion}}  
 
-6\. Lastly, we need to add the custom column to our grid. The following screenshot demonstrates the usage of the custom column in RadGridView:
+6\. Lastly, we need to add the custom column to our grid. The following code snippet demonstrates the usage of the custom column:
 
 {{source=..\SamplesCS\GridView\Cells\CustomCells.cs region=addColumn}} 
 {{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=addColumn}}
@@ -219,6 +217,8 @@ Me.RadGridView1.Columns.Add(customColumn)
 
 
 {{endregion}} 
+
+>caption Figure 1: The custom column is now added to the grid.
 
 ![gridview-cells-custom-cell 001](images/gridview-cells-custom-cell001.png)
 
@@ -322,11 +322,17 @@ End Function
 
 {{endregion}} 
 
-The screen shot below demonstrates the usage of the custom cell in RadGridView:<br>![gridview-cells-custom-cell 002](images/gridview-cells-custom-cell002.png)
+>caption Figure 2: The new custom cell is shown in RadgridView.
+
+![gridview-cells-custom-cell 002](images/gridview-cells-custom-cell002.png)
 
 ## Custom group cell example
 
-When the RadGridView.__EnableGrouping__ property is set to *true* the __GroupPanelElement__ is displayed at the top of the grid. Thus, when the user drags a column and drops it onto the panel __GridGroupContentCellElements__ are created for the group rows. The following example demonstrates a sample approach how to customize the __GridGroupContentCellElement__ in order to add a drop-down with aggregate functions next to the group header and calculate the function considering the user selection.<br> ![gridview-cells-custom-cell 003](images/gridview-cells-custom-cell003.png)
+When the __EnableGrouping__ property is set to *true* the __GroupPanelElement__ is displayed at the top of the grid. Thus, when the user drags a column and drops it onto the panel __GridGroupContentCellElements__ are created for the group rows. The following example demonstrates a sample approach how to customize the __GridGroupContentCellElement__ in order to add a drop-down with aggregate functions next to the group header and calculate the function considering the user selection
+
+>caption Figure 3: The custom group cell contains a drop down list.
+
+![gridview-cells-custom-cell 003](images/gridview-cells-custom-cell003.png)
 
 1\. Create a class that inherits the __GridGroupContentCellElement__. In its __CreateChildElements__ method we will use a __RadDropDownListElement__ which contains the aggregate functions and a __LightVisualElement__ to display the calculated result. In the __SetContent__ method we should display the cell information considering for which row it is currently being used:
 
@@ -563,7 +569,7 @@ End Class
 
 {{endregion}} 
 
-2\. Subscribe to the RadGridView.__CreateCell__ event where we should replace the default __GridGroupContentCellElement__ with the custom one:
+2\. Subscribe to the __CreateCell__ event where we should replace the default __GridGroupContentCellElement__ with the custom one:
 
 {{source=..\SamplesCS\GridView\Cells\CustomCells.cs region=ReplaceCustomGroupCell}} 
 {{source=..\SamplesVB\GridView\Cells\CustomCells.vb region=ReplaceCustomGroupCell}}
@@ -591,4 +597,21 @@ End Sub
 
 {{endregion}}
 
+
+# See Also
+* [Accessing and Setting the CurrentCell]({%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%})
+
+* [Accessing Cells]({%slug winforms/gridview/cells/accessing-cells%})
+
+* [Conditional Formatting Cells]({%slug winforms/gridview/cells/conditional-formatting-cells%})
+
+* [Formatting Cells]({%slug winforms/gridview/cells/formatting-cells%})
+
+* [GridViewCellInfo]({%slug winforms/gridview/cells/gridviewcellinfo%})
+
+* [Iterating Cells]({%slug winforms/gridview/cells/iterating-cells%})
+
+* [Painting and Drawing in Cells]({%slug winforms/gridview/cells/painting-and-drawing-in-cells%})
+
+* [ToolTips]({%slug winforms/gridview/cells/tooltips%})
 
