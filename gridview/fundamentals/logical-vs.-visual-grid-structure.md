@@ -18,7 +18,7 @@ The grid can be thought of in terms of both logical and visual. The logical laye
 RadGridView has a logical structure that uses collections of objects such as [GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%}) and [GridViewCellinfo]({%slug winforms/gridview/cells/gridviewcellinfo%}) to represent elements of the grid. The outline below shows the general structure of the logical layer:
       	
 
-* GridViewTemplate (MasterGridViewTemplate)
+* GridViewTemplate (MasteTemplate)
 
    * RootGroup (RootGroups)
 
