@@ -1,11 +1,11 @@
 ---
 title: Exception Handling
-page_title: Exception Handling | UI for WinForms Documentation
-description: Exception Handling
+page_title: Exception Handling | RadPdfViewer
+description: RadPdfViewer provides an API for handling exceptions caused by documents which cannot be loaded correctly because of unsupported features of the control.
 slug: winforms/pdfviewer/exception-handling
 tags: exception,handling
 published: True
-position: 9
+position: 10
 previous_url: pdfviewer-exception-handling
 ---
 
@@ -15,7 +15,7 @@ __RadPdfViewer__ provides an API for handling exceptions caused by documents whi
 
 ## How to Handle Exceptions
 
-RadPdfViewer exposes an __DataError__ event.
+__RadPdfViewer__ exposes an __DataError__ event.
 
 #### Using the DateError event
 
@@ -73,3 +73,11 @@ The __PdfExceptionEventArgs__ argument exposed the following property:
 * __NotSupportedScanDecoderException:__ This exception is thrown if the document contains a scan decoder which is not supported by RadPdfViewer.
 
 * __NotSupportedXObjectTypeException:__ This exception is thrown if the document contains a XObject type which is not supported by RadPdfViewer.
+
+# See Also
+
+* [Unsupported Features]({%slug winforms/pdfviewer/unsupported-features%})
+* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
+* [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})
+* [Properties, Methods and Events]({%slug winforms/pdfviewer/properties-methods-and-events%})

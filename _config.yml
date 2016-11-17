@@ -483,19 +483,28 @@ navigation:
         title: Gauges
         position: 250
     gauges/bulletgraph:
-        title: BulletGraph
+        title: Bullet Graph
         position: 0
+    gauges/bulletgraph/design-time:
+        title: Design Time
+        position: 2		
     gauges/lineargauge:
-        title: LinearGauge
+        title: Linear Gauge
         position: 1
+    gauges/lineargauge/design-time:
+        title: Design Time
+        position: 2
     gauges/lineargauge/elements:
         title: Elements
         position: 4
     gauges/radialgauge:
-        title: RadialGauge
+        title: Radial Gauge
+        position: 2
+    gauges/radialgauge/design-time:
+        title: Design Time
         position: 2
     gauges/radialgauge/understanding-gauge-elements:
-        title: Understanding gauge elements
+        title: Understanding Gauge Elements
         position: 4
     gridview:
         title: GridView
@@ -723,21 +732,21 @@ navigation:
     pdfviewer:
         title: PdfViewer
         position: 350
+    pdfviewer/structure:
+        title: Structure
+        position: 1
     pdfviewer/features:
         title: Features
-        position: 3	
+        position: 5	
     pdfviewer/features/text:
         title: Text Manipulation
-        position: 3	
-    pdfviewer/text:
-        title: Text
-        position: 5	
+        position: 3
     pdfviewer/ui:
         title: UI
-        position: 6	
+        position: 8	
     pdfviewer/customize-and-extensibility:
         title: Customize and Extensibility
-        position: 7			
+        position: 9			
     pivotgrid:
         title: PivotGrid 
         position: 360

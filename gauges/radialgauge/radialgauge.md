@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: RadialGauge | UI for WinForms Documentation
-description: RadialGauge
+page_title: RadialGauge | RadRadialGauge
+description: The RadRadialGauge control is designed to display a simple value within a definite range. 
 slug: winforms/gauges/radialgauge
 tags: radialgauge
 published: True
@@ -10,8 +10,6 @@ previous_url: radialgauge-overview
 ---
 
 # RadialGauge
-
-
 
 The __RadRadialGauge__ control is designed to display a simple value within a definite range. This range is represented in a circular format similar to car speed gauge. The circular container contains a scale in it which controls the overall layout of ticks, tick labels, needles and ranges and renders an optional scale bar.
 

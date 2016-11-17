@@ -1,6 +1,6 @@
 ---
 title: Design Time
-page_title: Design Time | UI for WinForms Documentation
+page_title: Design Time | RadCardView
 description: At design time you can use the RadCardViews's Smart Tag to change the applied theme or navigate to the online documentation.
 slug: winforms/cardview/design-time
 tags: cardview, design-time
@@ -33,7 +33,7 @@ position: 2
 	
 	* __Customize Template__: Opens the CardTemplate Layout editor
 	
-	The short video below demonstrates how columns can be set up at design-time and later the layout modified using the Customize Dialog.
+The short video below demonstrates how columns can be set up at design-time and later the layout modified using the Customize Dialog.
 
 >caption Fig.2 Create Layout
 ![radcardview-design-time 002](images/radcardview-design-time002.gif)

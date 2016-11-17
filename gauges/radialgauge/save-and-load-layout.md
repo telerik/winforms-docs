@@ -1,7 +1,7 @@
 ---
 title: Save and Load layout
-page_title: Save and Load layout | UI for WinForms Documentation
-description: Save and Load layout
+page_title: Save and Load layout | RadRadialGauge
+description: RadRadialGauge supports Save/Load layout functionality which gives you the opportunity to preserve gauge elements' settings and restore them later.
 slug: winforms/gauges/radialgauge/save-and-load-layout
 tags: save,and,load,layout
 published: True
@@ -9,25 +9,47 @@ position: 5
 previous_url: radialgauge-save-and-load-layout
 ---
 
-# Save and Load layout
- 
+# Save and Load Layout
 
-__RadRadialGauge__ supports Save/Load layout functionality which gives you the opportunity to preserve user gauge elements' settings and restore them later. Those layout settings are written in a xml file.
-      
+__RadRadialGauge__ supports Save/Load layout functionality which gives you the opportunity to preserve gauge elements' settings and restore them later. The layout settings are written in XML file. You can save the layout at design or at run time.
 
-## Save layout
+## Design Time
 
-You can perform some modifications to the gauge elements at design time and save the constructed layout via the *Save Gauge Layout to XML* option in the Smart tag.
+You can easily save/load the layout with the smart tag.
 
+>caption Figure 1: Smart Tag
 ![radialgauge-save-and-load-layout 001](images/radialgauge-save-and-load-layout001.png)
 
-Additionally, you can save the layout at run time by using the RadRadialGauge.__SaveLayout__ method.
+## Run Time
 
-## Load layout
+You can save/load the layout in code as well. 
 
-You can load the preserved layout to a random __RadRadialGauge__ at design time by the *Load Gauge Layout from XML* option in the Smart tag.
-        
-![radialgauge-save-and-load-layout 002](images/radialgauge-save-and-load-layout002.png)
+#### Save/Load Layout
+	
+{{source=..\SamplesCS\Gauges\RadialGauge\RadialGaugePropertiesAndEvents.cs region=SaveLoadLayout}} 
+{{source=..\SamplesVB\Gauges\RadialGauge\RadialGaugePropertiesAndEvents.vb region=SaveLoadLayout}}
+````C#
+private void SaveLoadLayout()
+{
+    this.radRadialGauge1.SaveLayout(@"..\..\gauge-layout.xml");
+    this.radRadialGauge1.LoadLayout(@"..\..\gauge-layout.xml");
+}
 
-Additionally, you can load the layout at run time by using the RadRadialGauge.__LoadLayout__ method.
+````
+````VB.NET
+Private Sub SaveLoadLayout()
+    Me.RadRadialGauge1.SaveLayout("..\..\gauge-layout.xml")
+    Me.RadRadialGauge1.LoadLayout("..\..\gauge-layout.xml")
+End Sub
+
+```` 
+
+
+
+{{endregion}} 
+
+# See Also
+
+* [Design Time]({%slug winforms/gauges/radialgauge/design-time%})
+* [Getting Started]({%slug winforms/gauges/radialgauge/getting-started%})
         
