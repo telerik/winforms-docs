@@ -1,7 +1,7 @@
 ---
 title: Custom items
-page_title: Custom items | UI for WinForms Documentation
-description: Custom items
+page_title: Custom items | RadListView
+description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/custom-items
 tags: custom,items
 published: True
@@ -10,15 +10,17 @@ previous_url: listview-custom-items
 ---
 
 # Custom items
-
-
-
+ 
 __RadListView__ allows you to create and use your own custom visual items. This article demonstrates how to achieve it.
 	    
 
 ## Custom items in ListView ViewType
 
-This can be done by making use of the __VisualItemCreating__ event. The following example demonstrates creating a visual item with two buttons in it.<br>![listview-custom-items 001](images/listview-custom-items001.png)
+This can be done by making use of the __VisualItemCreating__ event. The following example demonstrates creating a visual item with two buttons in it.
+
+>caption Figure 1: Custom SimpleListViewVisualItem
+
+![listview-custom-items 001](images/listview-custom-items001.png)
 
 First let's create a custom visual item by inheriting from the __SimpleListViewVisualItem__ class:
 
@@ -162,6 +164,8 @@ End Sub
 
 ## Custom items in IconsView ViewType
 
+>caption Figure 2: Custom IconListViewVisualItem
+
 ![listview-custom-items 003](images/listview-custom-items003.png)
 
 We should create a custom visual item inheriting the __IconListViewVisualItem__. The following example demonstrates how to add custom elements to the IconListViewVisualItem.__Children__ collection:
@@ -274,9 +278,13 @@ End Sub
 
 ## Custom items in DetailsView ViewType
 
-Since the *DetailsView* provides a grid-like interface, it displays a cell for each data field. In order to create custom cells you need to subscribe to the __CellCreating__ event and replace the default __DetailListViewDataCellElement__ with your own cell implementation.<br>![listview-custom-items 002](images/listview-custom-items002.png)
+Since the *DetailsView* provides a grid-like interface, it displays a cell for each data field. In order to create custom cells you need to subscribe to the __CellCreating__ event and replace the default __DetailListViewDataCellElement__ with your own cell implementation.
 
-First let's populate the __RadListView__ with items and set its __ViewType__ property to *DetailsView*:
+>caption Figure 3: Custom DetailListViewDataCellElement
+
+![listview-custom-items 002](images/listview-custom-items002.png)
+
+First let's populate __RadListView__ with items and set its __ViewType__ property to *DetailsView*:
 
 {{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=FillData}} 
 {{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=FillData}} 
@@ -306,10 +314,7 @@ Me.RadListView1.DataSource = dt
 ````
 
 {{endregion}} 
-
-
-
-
+ 
 Now let`s create our custom cell element containing a __RadButtonElement__. Additionally, we should inherit the __DetailListViewDataCellElement__ class:
 
 {{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=CustomCell}} 

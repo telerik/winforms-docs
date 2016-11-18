@@ -1,7 +1,7 @@
 ---
 title: Spread Export
-page_title: Spread Export | UI for WinForms Documentation
-description: Spread Export
+page_title: Spread Export | RadListView
+description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/export-data/spread-export
 tags: spread,export
 published: True
@@ -11,7 +11,7 @@ previous_url: listview-export-data-spread-export
 
 # Spread Export
 
-__ListViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)  libraries to export the contents of __RadListView__ to *xlsx, csv, pdf* and *txt* formats. The list view is exported according to the current ViewType. All three view types can be exported. This article will explain in detail the SpreadExport abilities and will demonstrate how you can use it.
+__ListViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)  libraries to export the contents of __RadListView__ to *xlsx, csv, pdf* and *txt* formats. The list view is exported according to the current **ViewType**. All three view types can be exported. This article will explain in details the **SpreadExport**'s abilities and will demonstrate how you can use it.
 
 * [Exporting Data](#exporting-data)
 
@@ -40,7 +40,7 @@ Here is how the following __RadListView__, looks when it is exported.
 
 ## Exporting Data
 
-To use the spread export functionality, an instance of the __ListViewSpreadExport__ object should be created, passing as parameter the __RadListView__ instance to export. Afterwards, the __RunExport__ method will trigger the export process. The latter method accepts as parameter a filename of the file to be exported.
+To use the spread export functionality, an instance of the __ListViewSpreadExport__ object should be created, passing as a parameter the __RadListView__ instance to export. Afterwards, the __RunExport__ method will trigger the export process. The latter method accepts as parameter a filename of the file to be exported.
 
 You should pass an instance of a [SpreadExportRenderer]({%slug winforms/telerik-presentation-framework/export-renderers/spreadexportrenderer%}) to the export method as well.
 
@@ -102,9 +102,9 @@ End Using
 
 ## Properties
 
-* __ExportFormat__: Defines the format the ListView will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
+* __ExportFormat__: Defines the format the **RadListView** will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
 
-* __ExportVisualSettings__: Allows you to export the visual settings (themes) to the exported file. RadListView will also export all formatting to the Excel file.
+* __ExportVisualSettings__: Allows you to export the visual settings (themes) to the exported file. **RadListView** will also export all formatting to the Excel file.
 
 * __SheetMaxRows__: Тhe exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this __SheetMaxRows__ property. Available options are:
 
@@ -116,9 +116,9 @@ End Using
 
 * __FileExportMode__: This property determines whether the data will be exported into an existing or a new file. If new is chosen and such exists it will be overridden. Available options are:
 
-* __NewSheetInExistingFile__: This option will create a new sheet in an already existing file.
+	* __NewSheetInExistingFile__: This option will create a new sheet in an already existing file.
 
-* __CreateOrOverrideFile__: Creates new or overrides an existing file.
+	* __CreateOrOverrideFile__: Creates new or overrides an existing file.
 
 * __ExportImages:__ Gets or sets a value indicating whether to export images.
 
@@ -157,7 +157,7 @@ End Sub
 
 {{endregion}}
 
->caption Figure 2: Export using formating
+>caption Figure 2: Export using formatting
 
 ![listview-export-data-spread-export 003](images/listview-export-data-spread-export003.png)
 
@@ -174,7 +174,7 @@ The following example will demonstrate how the async spread export feature can b
         
 >caption Fig.3 Exporting Data Asynchronously
 
-![listview-export-data-spread-export 004](images/listview-export-data-spread-export004.png)
+![listview-export-data-spread-export 004](images/listview-export-data-spread-export004.gif)
 
 1\. The following code shows how you can subscribe to the notification events and start the async export operation.
 
