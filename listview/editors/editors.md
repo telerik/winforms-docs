@@ -29,6 +29,7 @@ The sample code below shows how to start editing using the API:
 {{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=startEdit}} 
 
 ````C#
+            
 radListView1.AllowEdit = true;
 // set the SelectedItem - this item will be edited  
 // in DetailsView you might also want to set the CurrentColumn property – the value of the selected item in this column will be edited in DetailsView
@@ -83,6 +84,7 @@ The following example demonstrates the usage of __ItemValidating__ event to edit
 {{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=ItemValidating}} 
 
 ````C#
+    
 void radListView1_ItemValidating(object sender, ListViewItemValidatingEventArgs e)
 {
     int newInt = 0;
@@ -95,6 +97,7 @@ void radListView1_ItemValidating(object sender, ListViewItemValidatingEventArgs 
         e.Cancel = true;
     }
 }
+        
 void radListView1_ValidationError(object sender, EventArgs e)
 {
     MessageBox.Show("Invalid Value");

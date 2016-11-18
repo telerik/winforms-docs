@@ -28,6 +28,7 @@ The following example shows how you can use the predefined editors:
 {{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=usePredefinedEditors}} 
 
 ````C#
+        
 void radListView1_EditorRequired(object sender, Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs e)
 {
     if (e.ListViewElement.CurrentColumn.FieldName == "CustomerName")
@@ -40,6 +41,7 @@ void radListView1_EditorRequired(object sender, Telerik.WinControls.UI.ListViewI
         (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product1");
         (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product2");
         (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product3");
+        
         e.Editor = editor;
     }
     else if (e.ListViewElement.CurrentColumn.FieldName == "Quantity")

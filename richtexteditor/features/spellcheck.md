@@ -54,7 +54,6 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}} 
 
 ````C#
-    
 private void LoadDictionary(Stream tdfFileStream)
 {
     RadDictionary dictionary = new RadDictionary();
@@ -96,7 +95,6 @@ Here is an example of a such dictionary which adds the words in the "CustomDicti
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=custom}} 
 
 ````C#
-        
 private void CreateCustomDictionary()
 {
     RadIsolatedStorageCustomDictionary dictionary = new RadIsolatedStorageCustomDictionary(IsolatedStorageScope.Site, "CustomDictionary.txt");
@@ -139,7 +137,6 @@ Here is an example.
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=addword}} 
 
 ````C#
-            
 this.radRichTextEditor1.SpellChecker.AddWord("RadRichTextEditor", CultureInfo.InvariantCulture);
 
 ````
@@ -167,7 +164,6 @@ Here is an example.
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}} 
 
 ````C#
-    
 private void LoadDictionary(Stream tdfFileStream)
 {
     RadDictionary dictionary = new RadDictionary();

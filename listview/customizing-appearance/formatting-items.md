@@ -29,9 +29,7 @@ Items appearance in __RadListView__ can be customized by making use of the __Vis
 {{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=VisualItemFormatting}} 
 
 ````C#
-        
 Font font = new Font("Consolas", 14, FontStyle.Bold);
-        
 void radListView1_VisualItemFormatting(object sender, Telerik.WinControls.UI.ListViewVisualItemEventArgs e)
 {
     if (e.VisualItem.Selected)
@@ -93,18 +91,16 @@ Let’s assume that the __RadListView__ is bound to the *Products* table from th
 {{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=CellFormatting}} 
 
 ````C#
-        
 private void ListViewFormattingItems_Load(object sender, EventArgs e)
 {
     this.productsTableAdapter.Fill(this.nwindDataSet.Products);
     this.radListView1.DataSource = this.productsBindingSource;
     this.radListView1.DisplayMember = "ProductName";
-    this.radListView1.ValueMember = "ProductID";     
-    this.radListView1.ViewType = ListViewType.DetailsView;  
+    this.radListView1.ValueMember = "ProductID";
+    this.radListView1.ViewType = ListViewType.DetailsView;
     this.radListView1.CellFormatting += radListView1_CellFormatting;
 }
 Font newFont = new Font("Arial", 12f, FontStyle.Bold);
-        
 private void radListView1_CellFormatting(object sender, ListViewCellFormattingEventArgs e)
 {
     DetailListViewDataCellElement cell = e.CellElement as DetailListViewDataCellElement;
@@ -119,7 +115,7 @@ private void radListView1_CellFormatting(object sender, ListViewCellFormattingEv
             e.CellElement.Font = newFont;
         }
         else
-        { 
+        {
             e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
             e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local);
             e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, Telerik.WinControls.ValueResetFlags.Local);

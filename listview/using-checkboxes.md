@@ -18,6 +18,7 @@ position: 9
 {{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=EnableCheckBoxes}} 
 
 ````C#
+            
 this.radListView1.ShowCheckBoxes = true;
 
 ````
@@ -47,7 +48,7 @@ When checkboxes are enabled, you have several options to handle the checked item
 ListViewDataItem checkedItem = new ListViewDataItem("Checked item");
 checkedItem.CheckState = Telerik.WinControls.Enumerations.ToggleState.On;
 this.radListView1.Items.Add(checkedItem);
-
+            
 ListViewDataItem uncheckedItem = new ListViewDataItem("Unchecked item");
 uncheckedItem.CheckState = Telerik.WinControls.Enumerations.ToggleState.Off;
 this.radListView1.Items.Add(uncheckedItem);
@@ -57,7 +58,6 @@ this.radListView1.Items.Add(uncheckedItem);
 Dim checkedItem As New ListViewDataItem("Checked item")
 checkedItem.CheckState = Telerik.WinControls.Enumerations.ToggleState.[On]
 Me.RadListView1.Items.Add(checkedItem)
-
 Dim uncheckedItem As New ListViewDataItem("Unchecked item")
 uncheckedItem.CheckState = Telerik.WinControls.Enumerations.ToggleState.Off
 Me.RadListView1.Items.Add(uncheckedItem)

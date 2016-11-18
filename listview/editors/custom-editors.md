@@ -22,6 +22,7 @@ This article demonstrates a sample approach how to create and replace the defaul
 {{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=MyEditor}} 
 
 ````C#
+        
 public class MyTrackBarEditor : BaseInputEditor
 {
     public override object Value
@@ -67,7 +68,7 @@ public class MyTrackBarEditor : BaseInputEditor
     {
         return new RadTrackBarElement();
     }
-
+        
     public override Type DataType
     {
         get
@@ -95,26 +96,21 @@ Public Class MyTrackBarEditor
             End If
         End Set
     End Property
-
     Public Overrides Sub BeginEdit()
         MyBase.BeginEdit()
         Me.EditorElement.Focus()
         AddHandler DirectCast(Me.EditorElement, RadTrackBarElement).ValueChanged, AddressOf TrackBarEditor_ValueChanged
     End Sub
-
     Private Sub TrackBarEditor_ValueChanged(sender As Object, e As EventArgs)
         Me.OnValueChanged()
     End Sub
-
     Public Overrides Function EndEdit() As Boolean
         RemoveHandler DirectCast(Me.EditorElement, RadTrackBarElement).ValueChanged, AddressOf TrackBarEditor_ValueChanged
         Return MyBase.EndEdit()
     End Function
-
     Protected Overrides Function CreateEditorElement() As RadElement
         Return New RadTrackBarElement()
     End Function
-
     Public Overrides ReadOnly Property DataType() As Type
         Get
             Return GetType(Integer)
