@@ -11,8 +11,6 @@ previous_url: tpf-elements-radtrackbar
 
 # RadTrackBarElement
 
-## 
-
 RadTrackBarElement contains the logic and user interface for RadTrackBar. 
 
 ![tpf-elements-radtrackbar 001](images/tpf-elements-radtrackbar001.png)

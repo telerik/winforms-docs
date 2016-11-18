@@ -11,8 +11,6 @@ previous_url: tpf-class-hierarchy-visualelement
 
 # VisualElement
 
-## 
-
 __VisualElement__ adds visual properties common to all elements that will be painted, e.g. back color, fore color, font, default size, smoothing mode, opacity.
 
 >note 

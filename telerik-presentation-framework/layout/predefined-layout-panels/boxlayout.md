@@ -14,15 +14,15 @@ previous_url: tpf-layout-predefined-layout-panels-boxlayout
 __BoxLayout__ is a panel that arranges its items according to three predefined settings:__Proportion__, __Orientation__ and __StripPosition__.
 	   
 
-__Methods and properties:__
+### __Methods and properties:__
 
-* __SetProportion(RadElement element, float proportion)__ - is a static method that sets the proportion of the total area each element will cover.
+* __SetProportion(RadElement element, float proportion):__ A static method that sets the proportion of the total area each element will cover.
 		  	
 
-* __Orientation__ - is a property that indicates whether the panel should stack its items horizontally (from left to right) or vertically (from top to bottom).
+* __Orientation:__ Is a property that indicates whether the panel should stack its items horizontally (from left to right) or vertically (from top to bottom).
 		  	
 
-* __StripPosition__ - is a static property that specifies whether each element will be treated as first or last child. When the Orientation is horizontal, a child with StripPosition First will be positioned to the most left, while a child with  StripPosition Last will be positioned to the most right. Respectively, when the Orientation is vertical, the First child is positioned at the top, while the Last child appears at the bottom.
+* __StripPosition:__ A static property that specifies whether each element will be treated as first or last child. When the Orientation is horizontal, a child with StripPosition First will be positioned to the most left, while a child with  StripPosition Last will be positioned to the most right. Respectively, when the Orientation is vertical, the First child is positioned at the top, while the Last child appears at the bottom.
 
 Here is how to create a element with BoxLayout and set the Proportion:
 
@@ -100,11 +100,11 @@ End Class
 
 ![tpf-layout-predefined-layout-panels-boxlayout 001](images/tpf-layout-predefined-layout-panels-boxlayout001.png)
 
-Because the proportion of button1 and button2 is 1:3, button1 covers exactly one quarter of the panel and button2 fills the remaining three quarters. Changing the proportion to 1:2 will make the two buttons become one third and two thirds respectively:
+Because the proportion of "button1" and "button2" is 1:3, "button1" covers exactly one quarter of the panel and "button2" fills the remaining three quarters. Changing the proportion to 1:2 will make the two buttons become one third and two thirds respectively:
 		
 ![tpf-layout-predefined-layout-panels-boxlayout 002](images/tpf-layout-predefined-layout-panels-boxlayout002.png)
 
-To arrange the elements in the panel vertically set the __Orientation__ of the BoxLayout to Vertical:
+To arrange the elements in the panel vertically set the __Orientation__ of the BoxLayout to *Vertical*:
 
 #### Set orientation
 

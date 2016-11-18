@@ -11,112 +11,110 @@ previous_url: tpf-layout-predefined-layout-panels-imageandtextlayoutpanel
 
 # ImageAndTextLayoutPanel
 
-The purpose of the ImageAndTextLayoutPanel is to arrange an image and a string in a box. The real holder of the image should be an ImagePrimitive and the holder of the string should be a TextPrimitive. When these two primitives are set as Children of the panel, you are able to control their position\visbility by a number of useful properties that the ImageAndTextLayoutPanel provides.
+The purpose of the ImageAndTextLayoutPanel is to arrange an image and a string in a box. The real holder of the image should be an ImagePrimitive and the holder of the string should be a TextPrimitive. When these two primitives are set as Children of the panel, you are able to control their position\visibility by a number of useful properties that the ImageAndTextLayoutPanel provides.
 
 ## ImageAndTextLayoutPanel Behavior
 
 ImageAndTextLayoutPanel defines two areas (or boxes) - one for the ImagePrimitive and one for the TextPrimitive. The layout of ImageAndTextLayoutPanel allow you to reposition the ImagePrimitive and the TextPrimitive boxes in relation to each other. At the same time, you can set the position of the image and text within their respective areas.
-        
 
 ## ImageAndTextLayoutPanel Properties
 
 Let’s assume that we have an ImageAndTextLayoutPanel that holds and ImagePrimitive and a TextPrimitive. The TextPrimitive has its Text property set to "Hard Drive" and the ImagePrimitive has its Image property set to an image of a hard drive. The following properties of the layout panel will allow you to control the position and the visibility of the text and image objects:
         
 
-__DisplayStyle__ – determines which of the objects (image\text) will be visible. You can choose from one of the following values:
+* __DisplayStyle:__ Determines which of the objects (image\text) will be visible. You can choose from one of the following values:
+
+    - __ImageAndText:__ Both objects (image and text) are being displayed. This is the default value.
+        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 001](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel001.png)
+
+    - __Image:__ Only the image is being displayed.
+        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 002](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel002.png)
+
+    - __Text:__ Only the text is being displayed.
+        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 003](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel003.png)
+
+    - __None:__ None of the objects (image and text) are being displayed.
+        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 004](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel004.png)
+
+* __TextImageRelation__ – determines the way in which the text and the image are positioned in relation to each other. You can choose from one of the following properties:
         
 
-* *ImageAndText* (default value) – both objects (image and text) are being displayed.
-    ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 001](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel001.png)
+    * *Overlay* (default value) – the text and the image are overlapping each other
+        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 005](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel005.png)
 
-* *Image* – only the image is being displayed.
-    ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 002](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel002.png)
+    * *ImageAboveText* – the image is positioned above the text.
+        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 006](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel006.png)
 
-* *Text* – only the text is being displayed.
-    ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 003](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel003.png)
+    * *ImageBeforeText* – the image is positioned on the left side of the text  (in RightToLeft = No).
+        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 007](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel007.png)
 
-* *None* – none of the objects (image and text) are being displayed.
-    ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 004](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel004.png)
+    * *TextAboveImage* – the text is positioned on top of the image.
+        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 008](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel008.png)
 
-__TextImageRelation__ – determines the way in which the text and the image are positioned in relation to each other. You can choose from one of the following properties:
-        
+    * *TextBeforeImage* – the text is positioned on the left side of the image (in RightToLeft = No).
+        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 009](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel009.png)
 
-* *Overlay* (default value) – the text and the image are overlapping each other
-    ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 005](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel005.png)
+    The next two properties also determine the position of the text and image within their respective areas.
 
-* *ImageAboveText* – the image is positioned above the text.
-    ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 006](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel006.png)
+* __ImageAlignment__ – determines the position of the image. It has the following values:
 
-* *ImageBeforeText* – the image is positioned on the left side of the text  (in RightToLeft = No).
-    ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 007](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel007.png)
+    - *TopCenter* - aligns the image top-center in the image box.
+                
 
-* *TextAboveImage* – the text is positioned on top of the image.
-    ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 008](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel008.png)
+    - *TopLeft* - aligns the image top-left in the image box.
+                
 
-* *TextBeforeImage* – the text is positioned on the left side of the image (in RightToLeft = No).
-    ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 009](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel009.png)
+    - *TopRight* - aligns the image top-right in the image box.
+                
 
-The next two properties also determine the position of the text and image within their respective areas.
+    - *MiddleCenter* - aligns the image middle-center in the image box.
+                
 
-__ImageAlignment__ – determines the position of the image. It has the following values:
+    - *MiddleLeft* (default value) - aligns the image middle-left in the image box.
+                
 
-* *TopCenter* - aligns the image top-center in the image box.
-            
+    - *MiddleRight* - aligns the image middle-right in the image box.
+                
 
-* *TopLeft* - aligns the image top-left in the image box.
-            
+    - *BottomCenter* - aligns the image bottom-center in the image box.
+                
 
-* *TopRight* - aligns the image top-right in the image box.
-            
+    - *BottomLeft* - aligns the image bottom-left in the image box.
+                
 
-* *MiddleCenter* - aligns the image middle-center in the image box.
-            
+    - *BottomRight* - aligns the image bottom-right in the image box.
 
-* *MiddleLeft* (default value) - aligns the image middle-left in the image box.
-            
+    |    |    |    |
+    |----|----|----|
+    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 010](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel010.png) *TopLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 011](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel011.png) *TopCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 012](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel012.png) *TopRight* |
+    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 013](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel013.png) *MiddleLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 014](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel014.png) *MiddleCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 015](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel015.png) *MiddleRight* |
+    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 016](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel016.png) *BottomLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 017](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel017.png) *BottomCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 018](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel018.png) *BottomLeft* |
 
-* *MiddleRight* - aligns the image middle-right in the image box.
-            
+* __TextAlignment__ - determines the position of the text.  It has the following values:
 
-* *BottomCenter* - aligns the image bottom-center in the image box.
-            
+    * *TopCenter* - aligns the text top-center in the text box
 
-* *BottomLeft* - aligns the image bottom-left in the image box.
-            
+    * *TopLeft* - aligns the text top-left in the text box
 
-* *BottomRight* - aligns the image bottom-right in the image box.
+    * *TopRight* - aligns the text top-right in the text box
 
-|    |    |    |
-|----|----|----|
-|![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 010](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel010.png) *TopLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 011](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel011.png) *TopCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 012](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel012.png) *TopRight* |
-|![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 013](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel013.png) *MiddleLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 014](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel014.png) *MiddleCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 015](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel015.png) *MiddleRight* |
-|![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 016](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel016.png) *BottomLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 017](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel017.png) *BottomCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 018](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel018.png) *BottomLeft* |
+    * *MiddleCenter* - aligns the text middle-center in the text box
 
-__TextAlignment__ - determines the position of the text.  It has the following values:
+    * *MiddleLeft* (default value) - aligns the text middle-left in the text box
 
-* *TopCenter* - aligns the text top-center in the text box
+    * *MiddleRight* - aligns the text middle-right in the text box
 
-* *TopLeft* - aligns the text top-left in the text box
+    * *BottomCenter* - aligns the text bottom-center in the text box
 
-* *TopRight* - aligns the text top-right in the text box
+    * *BottomLeft* - aligns the text bottom-left in the text box
 
-* *MiddleCenter* - aligns the text middle-center in the text box
+    * *BottomRight* - aligns the text bottom-right in the text box
 
-* *MiddleLeft* (default value) - aligns the text middle-left in the text box
-
-* *MiddleRight* - aligns the text middle-right in the text box
-
-* *BottomCenter* - aligns the text bottom-center in the text box
-
-* *BottomLeft* - aligns the text bottom-left in the text box
-
-* *BottomRight* - aligns the text bottom-right in the text box
-
-|    |    |    |
-|----|----|----|
-|![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 020](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel020.png) *TopLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 019](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel019.png) *TopCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 021](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel021.png) *TopRight* |
-|![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 023](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel023.png) *MiddleLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 022](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel022.png) *MiddleCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 024](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel024.png) *MiddleRight* |
-|![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 027](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel027.png) *BottomLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 025](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel025.png) *BottomCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 027](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel027.png) *BottomLeft* |
+    |    |    |    |
+    |----|----|----|
+    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 020](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel020.png) *TopLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 019](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel019.png) *TopCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 021](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel021.png) *TopRight* |
+    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 023](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel023.png) *MiddleLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 022](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel022.png) *MiddleCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 024](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel024.png) *MiddleRight* |
+    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 027](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel027.png) *BottomLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 025](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel025.png) *BottomCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 027](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel027.png) *BottomLeft* |
 
 
 ## Employing ImageAndTextLayoutPanel in RadControl

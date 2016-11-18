@@ -11,8 +11,6 @@ previous_url: tpf-elements-radradiobutton
 
 # RadRadioButtonElement
 
-## 
-
 __RadRadioButtonlElement__ contains the logic and user interface for a single RadRadioButton.
 
 ![tpf-elements-radradiobutton 001](images/tpf-elements-radradiobutton001.png)
