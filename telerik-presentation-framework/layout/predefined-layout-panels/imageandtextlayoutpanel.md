@@ -36,53 +36,53 @@ Let’s assume that we have an ImageAndTextLayoutPanel that holds and ImagePrimi
     - __None:__ None of the objects (image and text) are being displayed.
         ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 004](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel004.png)
 
-* __TextImageRelation__ – determines the way in which the text and the image are positioned in relation to each other. You can choose from one of the following properties:
+* __TextImageRelation:__ Determines the way in which the text and the image are positioned in relation to each other. You can choose from one of the following properties:
         
 
-    * *Overlay* (default value) – the text and the image are overlapping each other
+    * __Overlay:__ The text and the image are overlapping each other. This is the default value.
         ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 005](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel005.png)
 
-    * *ImageAboveText* – the image is positioned above the text.
+    * __ImageAboveText:__ The image is positioned above the text.
         ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 006](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel006.png)
 
-    * *ImageBeforeText* – the image is positioned on the left side of the text  (in RightToLeft = No).
+    * __ImageBeforeText:__ The image is positioned on the left side of the text  (in RightToLeft = No).
         ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 007](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel007.png)
 
-    * *TextAboveImage* – the text is positioned on top of the image.
+    * __TextAboveImage:__ The text is positioned on top of the image.
         ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 008](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel008.png)
 
-    * *TextBeforeImage* – the text is positioned on the left side of the image (in RightToLeft = No).
+    * __TextBeforeImage__ The text is positioned on the left side of the image (in RightToLeft = No).
         ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 009](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel009.png)
 
     The next two properties also determine the position of the text and image within their respective areas.
 
-* __ImageAlignment__ – determines the position of the image. It has the following values:
+* __ImageAlignment:__ determines the position of the image. It has the following values:
 
-    - *TopCenter* - aligns the image top-center in the image box.
+    - __TopCenter:__ Aligns the image top-center in the image box.
                 
 
-    - *TopLeft* - aligns the image top-left in the image box.
+    - __TopLeft:__ Aligns the image top-left in the image box.
                 
 
-    - *TopRight* - aligns the image top-right in the image box.
+    - __TopRight:__ Aligns the image top-right in the image box.
                 
 
-    - *MiddleCenter* - aligns the image middle-center in the image box.
+    - __MiddleCenter:__ Aligns the image middle-center in the image box.
                 
 
-    - *MiddleLeft* (default value) - aligns the image middle-left in the image box.
+    -  __MiddleLeft:__ The default value - aligns the image middle-left in the image box.
                 
 
-    - *MiddleRight* - aligns the image middle-right in the image box.
+    - __MiddleRight:__ Aligns the image middle-right in the image box.
                 
 
-    - *BottomCenter* - aligns the image bottom-center in the image box.
+    - __BottomCenter:__ Aligns the image bottom-center in the image box.
                 
 
-    - *BottomLeft* - aligns the image bottom-left in the image box.
+    - __BottomLeft:__ Aligns the image bottom-left in the image box.
                 
 
-    - *BottomRight* - aligns the image bottom-right in the image box.
+    - __BottomRight:__ Aligns the image bottom-right in the image box.
 
     |    |    |    |
     |----|----|----|
@@ -90,25 +90,25 @@ Let’s assume that we have an ImageAndTextLayoutPanel that holds and ImagePrimi
     |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 013](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel013.png) *MiddleLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 014](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel014.png) *MiddleCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 015](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel015.png) *MiddleRight* |
     |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 016](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel016.png) *BottomLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 017](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel017.png) *BottomCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 018](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel018.png) *BottomLeft* |
 
-* __TextAlignment__ - determines the position of the text.  It has the following values:
+* __TextAlignment:__ determines the position of the text. It has the following values:
 
-    * *TopCenter* - aligns the text top-center in the text box
+    - __TopCenter:__ Aligns the text top-center in the text box.
 
-    * *TopLeft* - aligns the text top-left in the text box
+    - __TopLeft:__ Aligns the text top-left in the text box.
 
-    * *TopRight* - aligns the text top-right in the text box
+    - __TopRight:__ Aligns the text top-right in the text box.
 
-    * *MiddleCenter* - aligns the text middle-center in the text box
+    - __MiddleCenter:__ Aligns the text middle-center in the text box.
 
-    * *MiddleLeft* (default value) - aligns the text middle-left in the text box
+    - __MiddleLeft:__ The default value - aligns the text middle-left in the text box.
 
-    * *MiddleRight* - aligns the text middle-right in the text box
+    - __MiddleRight:__ Aligns the text middle-right in the text box.
 
-    * *BottomCenter* - aligns the text bottom-center in the text box
+    - __BottomCenter:__ Aligns the text bottom-center in the text box.
 
-    * *BottomLeft* - aligns the text bottom-left in the text box
+    - __BottomLeft:__ Aligns the text bottom-left in the text box.
 
-    * *BottomRight* - aligns the text bottom-right in the text box
+    - __BottomRight:__ Aligns the text bottom-right in the text box.
 
     |    |    |    |
     |----|----|----|

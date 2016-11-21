@@ -11,13 +11,11 @@ previous_url: tpf-layout-sample-arrange-state-scenarios
 
 # Sample Arrange Stage Scenarios
 
-
-
-Element placement within the area allocated by the parent takes place during the arrange stage. Placement depends on a variety of properties including Alignment, StretchHorizontally, StretchVeritically and the ratio of the size allocated by the parent to the DesiredSize of the child.
+Element placement within the area allocated by the parent takes place during the arrange stage. Placement depends on a variety of properties including __Alignment__, __StretchHorizontally__, __StretchVeritically__ and the ratio of the size allocated by the parent to the DesiredSize of the child.
 
 ## Parent Allocates with Requested Size
 
-The layout scenario below shows two children with margins, borders, padding and an angle transformation for Child 1. In this case the parent has arranged  the children with exactly the requested *DesiredSize*.
+The layout scenario below shows two children with margins, borders, padding and an angle transformation for Child 1. In this case the parent has arranged  the children with exact requested *DesiredSize*.
 
 ![tpf-layout-sample-arrange-state-scenarios 001](images/tpf-layout-sample-arrange-state-scenarios001.png)
 

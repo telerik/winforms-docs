@@ -11,7 +11,7 @@ previous_url: tpf-layout-predefined-layout-panels-stacklayoutpanel
 
 # StackLayoutPanel
 
-StackLayoutPanel is a panel that handles the layout of multiple elements in a vertical or horizontal row. The following example demonstrate how you can easily emply this layout to work for you
+StackLayoutPanel is a panel that handles the layout of multiple elements in a vertical or horizontal row. The following example demonstrate how you can easily emply this layout to work for you.
 
 ## StackLayoutPanel example
 

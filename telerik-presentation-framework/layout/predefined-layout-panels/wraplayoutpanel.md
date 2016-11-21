@@ -9,9 +9,7 @@ position: 2
 previous_url: tpf-layout-predefined-layout-panels-wraplayoutpanel
 ---
 
-# WrapLayoutPanel
-
-## 
+# WrapLayoutPanel 
 
 WrapLayoutPanel is a panel that handles the layout of elements in a vertical or horizontal row and wraps to additional lines.
 

@@ -11,13 +11,11 @@ previous_url: tpf-layout-custom-layout
 
 # Custom Layouts
 
-## 
-
 To create a custom layout class, create a __LayoutPanel__ descendant class and override the __MeasureOverride()__ and __ArrangeOverride()__ methods. The example below demonstrates custom [layout logic]({%slug winforms/telerik-presentation-framework/layout/layout-logic%}):
 
-* __MeasureOverride()__: This implementation iterates and sums the width and height of each child in the Children collection. The Measure() method is called for each child. In this example ten TextBoxPrimitive items are added to the CascadeLayoutPanel Children collection (code for adding primitives not shown). The total width and height for all child items together far exceeds the space allocated by the parent, so that "Element3" is only partially visible and the remaining elements are completely clipped.
+* __MeasureOverride:__ This implementation iterates and sums the width and height of each child in the __Children__ collection. The __Measure__ method is called for each child. In this example ten `TextBoxPrimitive` items are added to the `CascadeLayoutPanel` Children collection (code for adding primitives not shown). The total width and height for all child items together far exceeds the space allocated by the parent, so that "Element3" is only partially visible and the remaining elements are completely clipped.
 
-* __ArrangeOverride()__: This __ArrangeOverride()__ implementation iterates the Children  collection and calls the child Arrange() method for each child instance. The local "leftTopCorner" __Point__  member is incremented by the width and height of each child, causing each child to be arranged down and to the right of the previous child. 
+* __ArrangeOverride:__ This implementation iterates the __Children__  collection and calls the __Arrange__ method for each child instance. The local "leftTopCorner" __Point__  member is incremented by the width and height of each child, causing each child to be arranged down and to the right of the previous child. 
 
 ![tpf-layout-custom-layout 001](images/tpf-layout-custom-layout001.png)
 

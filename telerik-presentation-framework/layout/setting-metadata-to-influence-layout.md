@@ -11,8 +11,6 @@ previous_url: tpf-layout-setting-metadata-to-influence-layout
 
 # Setting Metadata to Influence Layout
 
-## 
-
 When a property of an element has an effect on the size of the element or the ordering of its children, appropriate metadata has to be added to its declaration as a dependency property to trigger the appropriate stage of the layout process.
 
 * __AffectsLayout:__ Specifies that the property triggers a change in the ordering of child elements. Used to trigger a layout update whenever the property changes.
@@ -23,7 +21,7 @@ When a property of an element has an effect on the size of the element or the or
 
 * __AffectsArrange:__ Equivalent to AffectsLayout.
 
-The example code below shows a __RightToLeft__ dependency property with the __AffectsLayout__ and __InvalidatesLayout__ included in the call to __RadPropertyRegister()__. 
+The example code below shows a __RightToLeft__ dependency property with the __AffectsLayout__ and __InvalidatesLayout__ included in the call to __RadPropertyRegister__. 
 
 #### Adding metadata
 
