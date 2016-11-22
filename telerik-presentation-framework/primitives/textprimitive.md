@@ -11,24 +11,17 @@ previous_url: tpf-primitives-textprimitive
 
 # TextPrimitive
 
-
-Use the __TextPrimitive__ class whenever you need to display text as part of rendering a control. Color for the font in the primitive is set by the __ForeColor__ property. TextPrimitive also supplies other properties specific to displaying text, including:
-        
+Use the __TextPrimitive__ class whenever you need to display text as part of rendering a control. Color for the font in the primitive is set by the __ForeColor__ property. TextPrimitive also supplies other properties specific to displaying text, including:        
 
 * __Text:__ The actual text to display.
-            
 
 * __TextAlignment:__ An enumeration that controls the alignment of the text in the primitive.
-            
 
 * __TextFormatFlags:__ An enumeration that specifies special formatting such as trimming text and replacing long text with an ellipsis.
-            
 
 * __TextOrientation:__ An enumeration that specifies vertical or horizontal orientation relative to the primitive's baseline.
-            
 
 * __Shadow:__ An object that lets you set shadowing color, depth, and thickness.
-            
 
 * __TextRenderingHint:__ An enumeration defining the text antialiasing.
 

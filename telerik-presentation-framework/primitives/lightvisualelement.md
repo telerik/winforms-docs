@@ -11,123 +11,121 @@ previous_url: tpf-primitives-lightvisualelement
 
 # LightVisualElement
 
-
-
 __LightVisualElement__ is a lightweight element which is capable of displaying Text, Border and Images and can be easily customized. Here is a list of its properties allowing for fine tuning the element:
 
 
-* __ShouldPaint__ - Indicates whether the element should be painted. Children visibility would not be affected.
+* __ShouldPaint:__ Indicates whether the element should be painted. Children visibility would not be affected.
           
 
-* __CanFocus__ - Gets or sets value indicating whether an element can receive input focus.
+* __CanFocus:__ Gets or sets value indicating whether an element can receive input focus.
           
 
-* __DrawText__, __DrawFill__, __DrawBorder__ - Gets or sets value indicating whether an element can receive input focus.
+* __DrawText__, __DrawFill__, __DrawBorder__ Gets or sets value indicating whether an element can receive input focus.
           
 
-* __BorderBoxStyle__ - Defines the border rendering style – *SingleBorder*, *FourBorders*, *OuterInnerBorders*
+* __BorderBoxStyle:__ Defines the border rendering style – *SingleBorder*, *FourBorders*, *OuterInnerBorders*
 
-* __BorderDrawMode__ - Defines drawing border corners – *HorizontalOverVertical*, *LeftOverTop*, *RightOverTop*, *RightOverBotton*, *LeftOverBottom* etc.
+* __BorderDrawMode:__ Defines drawing border corners – *HorizontalOverVertical*, *LeftOverTop*, *RightOverTop*, *RightOverBotton*, *LeftOverBottom* etc.
           
 
-* __BorderWidth__ - Defines the width the border on each side
+* __BorderWidth:__ Defines the width the border on each side
           
 
-* __BorderLeftWidth__, __BorderLeftWidth__, __BorderRightWidth__, __BorderBottomWidth__  - Defines the width of the border on each side independently
+* __BorderLeftWidth__, __BorderLeftWidth__, __BorderRightWidth__, __BorderBottomWidth__  Defines the width of the border on each side independently
           
 
-* __BorderGradientAngle__ - Defines the angle of the gradient the border uses as background.
+* __BorderGradientAngle:__ Defines the angle of the gradient the border uses as background.
           
 
-* __BorderGradientStyle__ - Defines the gradient effects: *Solid*, *Linear*, *Radial*, *Glass*, *OfficeGlass*, *Gel*, and *Vista*.
+* __BorderGradientStyle:__ Defines the gradient effects: *Solid*, *Linear*, *Radial*, *Glass*, *OfficeGlass*, *Gel*, and *Vista*.
           
 
-* __BorderColor__, __BorderColor2__, __BorderColor3__, __BorderColor4__ - Defines the four colors used for making gradient border background
+* __BorderColor__, __BorderColor2__, __BorderColor3__, __BorderColor4__ Defines the four colors used for making gradient border background
           
 
-* __BorderInnerColor__, __BorderInnerColor2__, __BorderInnerColor3__, __BorderInnerColor4__ - Defines the four colors used for making the inner gradient border background
+* __BorderInnerColor__, __BorderInnerColor2__, __BorderInnerColor3__, __BorderInnerColor4__ Defines the four colors used for making the inner gradient border background
           
 
-* __BackColor__, __BackColor2__, __BackColor3__, __BackColor4__ - Defines the four colors used the element’s gradient background
+* __BackColor__, __BackColor2__, __BackColor3__, __BackColor4__ Defines the four colors used the element’s gradient background
           
 
-* __NumberOfColors__ - Defines how many colors will be used to make the background color. If the value is ‘1’ the other three colors are ignored
+* __NumberOfColors:__ Defines how many colors will be used to make the background color. If the value is ‘1’ the other three colors are ignored
           
 
-* __GradientStyle__ - Defines the gradient effects: *Solid*, *Linear*, *Radial*, *Glass*, *OfficeGlass*, *Gel*, and *Vista*.
+* __GradientStyle:__ Defines the gradient effects: *Solid*, *Linear*, *Radial*, *Glass*, *OfficeGlass*, *Gel*, and *Vista*.
           
 
-* __GradientAngle__ - Gets or sets the angle of the background gradient
+* __GradientAngle:__ Gets or sets the angle of the background gradient
           
 
-* __GradientPercentage__ - Defines how much of the available space the first gradient color will take
+* __GradientPercentage:__ Defines how much of the available space the first gradient color will take
           
 
-* __GradientPercentage2__ - Defines the space available for the the second gradient color
+* __GradientPercentage2:__ Defines the space available for the the second gradient color
           
 
-* __BackgroundImage__ - Gets or sets the BackgroundImage. This image fills up the entire element’s background
+* __BackgroundImage:__ Gets or sets the BackgroundImage. This image fills up the entire element’s background
           
 
-* __Image__ - Gets or sets the element’s image, the image can be resized inside the element.
+* __Image:__ Gets or sets the element’s image, the image can be resized inside the element.
           
 
-* __ImageLayout__ - Specifies the position of the image on the control. *None*, *Tile*, *Center*, *Stretch*, *Zoom*
+* __ImageLayout:__ Specifies the position of the image on the control. *None*, *Tile*, *Center*, *Stretch*, *Zoom*
 
-* __BackgroundImageLayout__ - Specifies the position of the BackgroundImage on the control. *None*, *Tile*, *Center*, *Stretch*, *Zoom*
+* __BackgroundImageLayout:__ Specifies the position of the BackgroundImage on the control. *None*, *Tile*, *Center*, *Stretch*, *Zoom*
 
-* __ImageOpacity__ - Specifies the opacity of the set image
+* __ImageOpacity:__ Specifies the opacity of the set image
           
 
-* __ImageAlignment__, __TextAlignment__ - Specifies alignment of content on the drawing surface. *TopLeft*, *TopCenter*, *TopRight*, *MiddleLeft*, *MiddleCenter*, *MiddleRight*, *BottomLeft*, *BottomCenter*, *BottomRight*
+* __ImageAlignment__, __TextAlignment__ Specifies alignment of content on the drawing surface. *TopLeft*, *TopCenter*, *TopRight*, *MiddleLeft*, *MiddleCenter*, *MiddleRight*, *BottomLeft*, *BottomCenter*, *BottomRight*
 
-* __TextImageRelation__ - Specifies the position of the text and image relative to each other on a control. *Overlay*, *ImageBeforeText*, *TextBeforeImage*, *ImageAboveText*, *TextAboveImage*
+* __TextImageRelation:__ Specifies the position of the text and image relative to each other on a control. *Overlay*, *ImageBeforeText*, *TextBeforeImage*, *ImageAboveText*, *TextAboveImage*
 
-* __ShowHorizontalLine__, __ShowHorizontalLineColor__, __ShowHorizontalLineWidth__ - These properties allow you to modify a horizontal line over the element
+* __ShowHorizontalLine__, __ShowHorizontalLineColor__, __ShowHorizontalLineWidth__ These properties allow you to modify a horizontal line over the element
           
 
-* __PaintTextFormat__ - An object which Encapsulates text layout information (such as alignment, orientation and tab stops) display manipulations (such as ellipsis insertion and national digit substitution) and OpenType features
+* __PaintTextFormat:__ An object which Encapsulates text layout information (such as alignment, orientation and tab stops) display manipulations (such as ellipsis insertion and national digit substitution) and OpenType features
           
 
-* __DisableHTMLRendering__ - Gets or sets the value indicating whether html tags will be rendered.
+* __DisableHTMLRendering:__ Gets or sets the value indicating whether html tags will be rendered.
           
 
-* __TextBlock__ - An object which contains the text and its styling.
+* __TextBlock:__ An object which contains the text and its styling.
           
 
-* __BorderLeftColor__, __BorderTopColor__, __BorderRightColor__, __BorderBottomColor__, __BorderLeftShadowColor__, __BorderTopShadowColor__, __BorderRightShadowColor__, __BorderBottomShadowColor__ - Defines border colors and shadows
+* __BorderLeftColor__, __BorderTopColor__, __BorderRightColor__, __BorderBottomColor__, __BorderLeftShadowColor__, __BorderTopShadowColor__, __BorderRightShadowColor__, __BorderBottomShadowColor__ Defines border colors and shadows
           
 
-* __ClipText__ - Determines whether text will be clipped within the calculated text paint rectangle.
+* __ClipText:__ Determines whether text will be clipped within the calculated text paint rectangle.
           
 
-* __Layout__ - Gets the LayoutManagerPart which is responsible for the layout
+* __Layout:__ Gets the LayoutManagerPart which is responsible for the layout
           
 
-* __ImageTransparentColor__ - Transparent color to be used for the image.
+* __ImageTransparentColor:__ Transparent color to be used for the image.
           
 
-* __BorderDashStyle__ - Specifies the style of dashed lines drawn with a border
+* __BorderDashStyle:__ Specifies the style of dashed lines drawn with a border
           
 
-* __EnableImageTransparency__ - Gets or sets a value indicating whether image transparency is supported.
+* __EnableImageTransparency:__ Gets or sets a value indicating whether image transparency is supported.
           
 
-* __Shadow__ - Gets or Sets the *ShadowSettings*
+* __Shadow:__ Gets or Sets the *ShadowSettings*
 
-* __AutoEllipsis__ - Determines whether character trimming will be automatically applied to the element if text cannot be fitted within the available space.
+* __AutoEllipsis:__ Determines whether character trimming will be automatically applied to the element if text cannot be fitted within the available space.
           
 
-* __UseMnemonic__ - Determines whether ampersand character will be treated as mnemonic or not.
+* __UseMnemonic:__ Determines whether ampersand character will be treated as mnemonic or not.
           
 
-* __TextWrap__ - Determines whether text wrap is enabled.
+* __TextWrap:__ Determines whether text wrap is enabled.
           
 
-* __MeasureTrailingSpaces__ - Indicates whether the trailing white spaces will be calculated by the layout logic
+* __MeasureTrailingSpaces:__ Indicates whether the trailing white spaces will be calculated by the layout logic
           
 
-* __TextParams__ - Gets the *TextParams* object which defines some text settings
+* __TextParams:__ Gets the *TextParams* object which defines some text settings
 
 The following example will show you how to make a simple image gallery with three LightVisualElements inside a DockLayoutPanel.
 

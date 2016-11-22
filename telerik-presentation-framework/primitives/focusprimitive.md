@@ -11,17 +11,11 @@ previous_url: tpf-primitives-focusprimitive
 
 # FocusPrimitive
 
-## 
-
-FocusPrimitive supplies user interface cues that an element has received focus. The constructor for FocusPrimitive takes a  BorderPrimitive that provides the basic dimensions. Fore colors and inner colors may be set explicitly or default control colors are used.
+FocusPrimitive supplies user interface cues that an element has received focus. The constructor for FocusPrimitive takes a BorderPrimitive that provides the basic dimensions. Fore colors and inner colors may be set explicitly or default control colors are used.
 
 ![tpf-primitives-focusprimitive 001](images/tpf-primitives-focusprimitive001.png)
 
 #### Creating a FocusPrimitive
-
-	
-
-
 
 {{source=..\SamplesCS\TPF\Primitives\FocusPrimitive1\MyFocusPrimitiveElement.cs region=myFocusPrimitiveElement}} 
 {{source=..\SamplesVB\TPF\Primitives\FocusPrimitive1\MyFocusPrimitiveElement.vb region=myFocusPrimitiveElement}} 

@@ -11,7 +11,6 @@ previous_url: tpf-primitives-imageshape
 
 # ImageShape
 
-
 __RadImageShape__ implements the so called “*Segmented Image*” semantic, which in general allows a small image (pattern) to be stretched to larger bounds without quality loss. This effect is achieved by dividing the image into 9 logical parts (segments) and providing advanced paint logic for each part.
 
 ![tpf-primitives-imageshape 001](images/tpf-primitives-imageshape001.png)
@@ -22,7 +21,7 @@ __RadImageShape__          
 
 ![tpf-primitives-imageshape 002](images/tpf-primitives-imageshape002.png)
 
-Using the Margins property, an image is divided into 9 segments. Following is a brief overview of each segment and how it is stretched:
+Using the __Margins__ property, an image is divided into 9 segments. Following is a brief overview of each segment and how it is stretched:
 
 1. TopLeft – not stretched
 

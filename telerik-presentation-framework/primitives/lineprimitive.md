@@ -12,7 +12,7 @@ previous_url: tpf-primitives-lineprimitive
 # LinePrimitive
 
 
-__LinePrimitive__ is actually a variation of a filled rectangle. The shadow of the fill is set by the __BackColor__, __BackColor2__, __BackColor3__ and __BackColor4__ properties. The way these four colors are used is determined by the __GradientStyle__ and __GradientAngle__ properties. LineWidth sets the thickness of the line. Some __GradientStyle__ settings will not be visible if the __LineWidth__ is too narrow. The example below iterates the possible __GradientStyle__ values and creates a __LinePrimitive__ for each. The __LinePrimitives__ each have a __LineWidth__ of 10, making it easier to see the __GradientStyle__ effect. The __AngleTransform__ property is used to spin the line 30 degrees.
+__LinePrimitive__ is actually a variation of a filled rectangle. The shadow of the fill is set by the __BackColor__, __BackColor2__, __BackColor3__ and __BackColor4__ properties. The way these four colors are used is determined by the __GradientStyle__ and __GradientAngle__ properties. The __LineWidth__ sets the thickness of the line. Some __GradientStyle__ settings will not be visible if the __LineWidth__ is too narrow. The example below iterates the possible __GradientStyle__ values and creates a __LinePrimitive__ for each. The __LinePrimitives__ each have a __LineWidth__ of 10, making it easier to see the __GradientStyle__ effect. The __AngleTransform__ property is used to spin the line 30 degrees.
 
 ![tpf-primitives-lineprimitive 001](images/tpf-primitives-lineprimitive001.png)
 
