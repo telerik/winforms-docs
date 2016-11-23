@@ -10,10 +10,7 @@ previous_url: tpf-primitives-trackbarprimitive
 ---
 
 # TrackBarPrimitive
-
-
-
-## 
+ 
 
 TrackBarPrimitive provides the basic visual layout of a trackbar background.  Typically you would use a higher level object, i.e. the [RadTrackBarElement]({%slug winforms/telerik-presentation-framework/elements/radtrackbarelement%}) to include in your control. [RadTrackBarElement]({%slug winforms/telerik-presentation-framework/elements/radtrackbarelement%}) handles the position of the track bar thumb and the various events that go into making the track bar useful.
 
