@@ -256,12 +256,8 @@ End Class
 ## Testing the Control
 
 1. Add a new __Windows Forms__ project to the solution to test the control library.
-          
 
 1. Add a reference to the control library.
-
-    ![tpf-getting-started 002](images/tpf-getting-started002.png) 
-          
 
 1. Drop the __MyPanel__ control from the __ToolBox__ to the form.
           
