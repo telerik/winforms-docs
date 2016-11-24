@@ -23,7 +23,7 @@ The extensions handle the following major points in the development with __UI fo
 
 * __Toolbox configuration__ – select what version of Telerik UI to be populated in the Toolbox.
 
-__Visual Studio Extensions__ for __UI for WinForms__ are distributed with the __UI for WinForms__ installer. They can be downloaded and installed as separate product from the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/) for Visual Studio 2010 and later. The extensions support Visual Studio 2008, 2010, 2012, 2013 and 2015, handling .NET 2.0+ applications.
+__Visual Studio Extensions__ for __UI for WinForms__ are distributed with the __UI for WinForms__ installer. They can be downloaded and installed as separate product from the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/) for Visual Studio 2012 and later. The extensions support Visual Studio 2008, 2010, 2012, 2013, 2015 and 2017, handling .NET 2.0+ applications.
 
 The __Visual Studio Extensions__ can be accessed through the __Telerik | UI for WinForms__ menu which has different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of a WinForms Application as well.
 
