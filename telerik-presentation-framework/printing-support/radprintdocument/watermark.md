@@ -11,12 +11,7 @@ previous_url: tpf-printing-support-radprintdocument-watermark
 
 # Watermark
 
-
-
-## 
-
 The RadPrintDocument has a build in watermark support. The RadPrintDocument supports both text watermark and image watermark.
-        
 
 To get the watermark to show you have to set it up using the __Watermark__ property:
 
@@ -41,7 +36,6 @@ document.Watermark.TextAngle = 300
 ````
 
 {{endregion}} 
-
 
 Alternatively you can create an instance of the __RadPrintWatermark__, set its properties and then assign it to the __Watermark__ property of RadPrintDocument(this is useful when you want to use the same watermark in multiple documents).
 

@@ -11,51 +11,33 @@ previous_url: tpf-printing-support-radprintdocument-header-and-footer
 
 # Header and Footer
 
-
-
-## 
-
 The RadPrintDocument has a build in header and footer print capabilities. Here is a list of the available properties which allow you to customize the header and footer:
-        
 
-* __HeaderHeight__ – the height of the header in pixels
-            
+* __HeaderHeight:__ the height of the header in pixels.
 
-* __HeaderFont__ – the font of the header text
-            
+* __HeaderFont:__ the font of the header text.
 
-* __LeftHeader__ – the text in the left part of the header
-            
+* __LeftHeader:__ the text in the left part of the header.
 
-* __MiddleHeader__ – the text in the middle of the header
-            
+* __MiddleHeader:__ the text in the middle of the header.
 
-* __RightHeader__ – the text in the right part of the header
-            
+* __RightHeader:__ the text in the right part of the header.
 
-* __ReverseHeaderOnEvenPages__ – swaps the places of the left and right header texts on even pages
-            
+* __ReverseHeaderOnEvenPages:__ swaps the places of the left and right header texts on even pages.
 
-* __FooterHeight__ – the height of the footer in pixels
-            
+* __FooterHeight:__ the height of the footer in pixels.
 
-* __FooterFont__ – the font of the footer text
-            
+* __FooterFont:__ the font of the footer text.
 
-* __LeftFooter__ – the text in the left part of the footer
-            
+* __LeftFooter:__ the text in the left part of the footer.
 
-* __MiddleFooter__ – the text in the middle of the footer
-            
+* __MiddleFooter:__ the text in the middle of the footer.
 
-* __RightFooter__ – the text in the right part of the footer
-            
+* __RightFooter:__ the text in the right part of the footer.
 
-* __ReverseFooterOnEvenPages__ - swaps the places of the left and right footer texts on even pages
-            
+* __ReverseFooterOnEvenPages:__ swaps the places of the left and right footer texts on even pages.
 
-* __Logo__ - allows you to add logo to the header or footer. Please note that the header/footer text should contain __"[Logo]"__ in its text in order the logo to appear.
-            
+* __Logo:__ allows you to add logo to the header or footer. Please note that the header/footer text should contain __"[Logo]"__ in its text in order the logo to appear.
 
 Is an example demonstrating how to customize the header and footer:
 
@@ -111,10 +93,10 @@ dialog.Show()
 The header and footer have some predefined special strings which can be set to any part of it and/or to make combinations of them.
         
 
-* __[Page #]__ – Prints the number of the current page
+* __[Page #]__ – Prints the number of the current page.
             
 
-* __[Total Pages]__ – Prints the total number of pages
+* __[Total Pages]__ – Prints the total number of pages.
             
 
 * __[Date Printed]__ – Prints the date when the printing was started.
@@ -123,7 +105,7 @@ The header and footer have some predefined special strings which can be set to a
 * __[Time Printed]__ – Prints the time when the printing was started.
             
 
-* __[User Name]__ – Prints the username associated with the current thread (the current Windows login))
+* __[User Name]__ – Prints the user-name associated with the current thread (the current Windows login)).
             
 
 Here is a sample:

@@ -11,17 +11,11 @@ previous_url: tpf-printing-support-localizing-printdialogs
 
 # Localize print dialogs
 
-
-
-## 
-
 To localize the print dialogs to display text and messages in a specific language:
-        
 
 *  All required classes for localization are defined in __Telerik.WinControls.UI.Localization__ namespace. 
 
 * All print settings dialogs display measurements in imperial or metric units depending on the current system regional info. You only have to take care for the string representation of the units.
-          
 
 * Start by creating a descendant of the __PrintDialogsLocalizationProvider__ class.
 
@@ -461,5 +455,5 @@ PrintDialogsLocalizationProvider.CurrentProvider = New MyPrintDialogsLocalizatio
 
 {{endregion}} 
 
-The code provided above illustrates the approach to be used to localize the __print dialogs__ and is not intended as a full translation.
+The code provided above illustrates the approach used to localize the __print dialogs__ and is not intended as a full translation.
         
