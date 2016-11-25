@@ -13,6 +13,7 @@ previous_url: tpf-printing-support-radprintdocument-design-time
 
 To start using RadPrintDocument at design time, drag it from the toolbox and drop it on the form. It will appear as a component, so you can select it and edit its properties either through the `Property` window of Visual Studio, or by using its smart tag menu.
         
+>caption Figure 1: The smart tag of RadPrintDocument.
 
 ![tpf-printing-support-radprintdocument-design-time](images/tpf-printing-support-radprintdocument-design-time.png)
 
