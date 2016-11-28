@@ -654,9 +654,12 @@ navigation:
     menus:
         title: Menus
         position: 290
+    menus/application-menu:
+        title: Application Menu
+        position: 0 
     menus/menu:
         title: Menu
-        position: 0
+        position: 1
     menus/contextmenu:
         title: ContextMenu
         position: 2
