@@ -665,10 +665,10 @@ navigation:
         position: 2
     menus/menu/usability:
         title: Usability
-        position: 2
+        position: 4
     menus/menu/design-time:
         title: Design Time
-        position: 3
+        position: 2
     menus/menu/working-with-radmenu-items:
         title: Working with RadMenu Items
         position: 4

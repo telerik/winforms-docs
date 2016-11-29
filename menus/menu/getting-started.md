@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/menus/menu/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: menus-menu-getting-started
 ---
 
@@ -146,3 +146,9 @@ End Sub
 34\. Return to the Design View of the form.
 
 35\. Press __F5__ to run the project. Notice the menu styling, the use of Ctrl+N to trigger the message box, and the combo box in the Help menu. </br>![menus-menu-getting-started 004](images/menus-menu-getting-started004.png)
+
+
+# See Also
+
+* []({%slug %})	
+* []({%slug %})	
