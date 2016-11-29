@@ -12,10 +12,7 @@ previous_url: themes-advanced-topics-adding-custom-creating-theme-component
 # Creating a theme component
 
 
-
-## Creating a theme component:
-
-This article demonstrates how to isolate a theme in a separate class library project. This class library project is actually the theme component,  which you can later use in your main project. This approach greatly simplifies the way of adding and removing themes to your project and helps in displaying the themes in design-time.
+This article demonstrates how to isolate a theme in a separate class library project. This class library project is actually the theme component, which you can later use in your main project. This approach greatly simplifies the way of adding and removing themes to your project and helps in displaying the themes in design-time.
 
 
 1. Add a new Class Library project to your current solution.
@@ -78,7 +75,7 @@ End Class
 
 {{endregion}} 
 
-Please note that your class should inherit RadThemeComponentBase. As to the path string, it is constructed as follows: *"ProjectDefaultNamespace.ContainingFolderName.CustomTheme.tssp"* . The ContainingFolderName is only needed if the tssp file is in folder in the project structure (C# only). Regarding VB.NET, even if the theme file is in a folder, you should not include the folder name in the path string.
+Please note that your class should inherit __RadThemeComponentBase__. As to the path string, it is constructed as follows: *"ProjectDefaultNamespace.ContainingFolderName.CustomTheme.tssp"* . The ContainingFolderName is only needed if the tssp file is in folder in the project structure (C# only). Regarding VB.NET, even if the theme file is in a folder, you should not include the folder name in the path string.
 
 When you compile the project, you will be able to drag this component to the forms in all the projects in you solution which will load the corresponding theme, both runtime and design time.
         

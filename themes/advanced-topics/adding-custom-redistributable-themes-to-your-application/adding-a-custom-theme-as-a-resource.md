@@ -13,7 +13,7 @@ previous_url: themes-advanced-topics-adding-custom-adding-as-resource
 
 1. Create a new Windows Application, drag a RadControl, i.e. RadButton, from your Toolbox to your form.
 
-1. Create a new custom theme and save it somewhere on your hard drive.
+1. Create a new custom theme and save it somewhere on your hard drive (save it as XML files). 
 
 1. Right-click the project node in the Solution Explorer, choose __Add >> Existing Item__ and add the custom theme file(s) together with the theme repository file. This will automatically copy the custom theme file in your project's directory. You can also add a new folder (__Add >> New Folder__) to place your theme files.
 
@@ -29,7 +29,7 @@ previous_url: themes-advanced-topics-adding-custom-adding-as-resource
 
   * In a VB.NET application, it does not matter whether the theme file is in a folder or not, the pattern is always the same: __ProjectRootNamespace.ThemeFileName.Extention__.
 
-1. Perform the same action for all theme files needed and also for the  __theme repository__
+1. Perform the same action for all theme files needed and also for the  __theme repository__.
 
 1. Build the application. This will include the custom theme file in your assemblies.
 
