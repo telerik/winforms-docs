@@ -27,3 +27,9 @@ The Telerik Presentation Framework (TPF) offers WPF-like features within classic
 * All elements in a control element tree inherit common property values from their parent elements unless these values are set locally. This feature helps each element use less memory while still providing fine-grained customization options. 
 
 The uniform nature of the [control architecture]({%slug winforms/telerik-presentation-framework/class-hierarchy/class-hierarchy-overview%}) makes it possible to nest controls within each other for more flexible and modern user interfaces. 
+
+# See Also
+
+* [Getting started]({%slug winforms/telerik-presentation-framework/getting-started/getting-started%})
+
+* [Building TPF Based Controls]({%slug winforms/telerik-presentation-framework/overview/building-tpf-based-controls%})

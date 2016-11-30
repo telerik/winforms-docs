@@ -31,3 +31,21 @@ The diagram below contains an abbreviated class diagram of the class inheritance
 
 * [RadItem]({%slug winforms/telerik-presentation-framework/class-hierarchy/raditem%}) represents a visual element which could be added to an ItemsCollection and can be selected, deleted or moved during Visual Studio at design time. By default this class knows how to  handle user input.[RadControl]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcontrol%}) is the abstract base class for  all RadControls. Each RadControl contains a tree of RadElements. The tree has a root, the __RadControl.RootElement__ (type  RootRadElement shown in the diagram) and children of the root element. RadControl acts as a bridge between the traditional Windows forms controls  and the RadElement tree. RadControl also defines properties common across all controls e.g. ThemeName, Style, ImageList, image scaling properties, minimum and maximum sizes.
 
+
+# See Also
+* [BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%})
+
+* [Choosing an Ancestor Class]({%slug winforms/telerik-presentation-framework/class-hierarchy/choosing-an-ancestor-class%})
+
+* [LayoutPanel]({%slug winforms/telerik-presentation-framework/class-hierarchy/layoutpanel%})
+
+* [RadComponent, RadComponentElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcomponent,-radcomponentelement%})
+
+* [RadControl]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcontrol%})
+
+* [RadElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radelement%})
+
+* [RadItem]({%slug winforms/telerik-presentation-framework/class-hierarchy/raditem%})
+
+* [RadObject]({%slug winforms/telerik-presentation-framework/class-hierarchy/radobject%})
+

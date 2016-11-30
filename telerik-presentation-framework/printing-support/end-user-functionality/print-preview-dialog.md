@@ -83,3 +83,9 @@ The RadPrintPreviewDialog can also be used for editing the print document. When 
 >note The RadPrintPreviewDialog is also used at design time to edit and serialize the properties of	RadPrintDocument. For more information refer to the[RadPrintDocument article.]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%})
 >
 
+
+# See Also
+* [Print Settings Dialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog%})
+
+* [Watermark Dialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/watermark-dialog%})
+

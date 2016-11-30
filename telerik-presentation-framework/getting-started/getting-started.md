@@ -268,3 +268,8 @@ End Class
 The control should now look like this:
 
 ![tpf-getting-started 003](images/tpf-getting-started003.png)
+
+# See Also
+* [Telerik Presentation Framework Overview]({%slug winforms/telerik-presentation-framework/overview%})
+
+* [Building TPF Based Controls]({%slug winforms/telerik-presentation-framework/overview/building-tpf-based-controls%})

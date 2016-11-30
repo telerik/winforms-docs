@@ -178,3 +178,16 @@ Thanks to the code above, the end-user will be able to do the following operatio
 >note Similar functionality is also used in the PhotoAlbum demo application
 >
 
+
+# See Also
+* [Animations]({%slug winforms/telerik-presentation-framework/animations%})
+
+* [Dependency Properties]({%slug winforms/telerik-presentation-framework/dependency-properties%})
+
+* [Handling User Input]({%slug winforms/telerik-presentation-framework/handling-user-input%})
+
+* [HTML-like Text Formatting]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%})
+
+* [Inherit themes from RadControls derivatives]({%slug winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives%})
+
+

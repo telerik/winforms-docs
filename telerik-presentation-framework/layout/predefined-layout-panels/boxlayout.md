@@ -171,3 +171,15 @@ boxPanel.Children.Add(button2)
 When the __Orientation__ is vertical the elements will be positioned in the following manner:
 
 ![tpf-layout-predefined-layout-panels-boxlayout 005](images/tpf-layout-predefined-layout-panels-boxlayout005.png)
+
+# See Also
+* [DockLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/docklayout%})
+
+* [GridLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/gridlayout%})
+
+* [ImageAndTextLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/imageandtextlayoutpanel%})
+
+* [StackLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/stacklayoutpanel%})
+
+* [WrapLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/wraplayoutpanel%})
+

@@ -33,3 +33,9 @@ The following example shows how you can use the __ToolTipTextNeeded__ event to s
 >caption Figure 2: The result from the above code.
 
 ![tpf-tooltips001](images/tpf-tooltips001.gif)
+
+# See Also
+* [RadToolTip]({%slug winforms/telerik-presentation-framework/radtooltip%})
+
+* [Screen Tips]({%slug winforms/telerik-presentation-framework/screen-tips%})
+

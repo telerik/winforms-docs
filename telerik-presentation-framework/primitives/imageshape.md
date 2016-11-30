@@ -62,3 +62,21 @@ __Editing RadImageShape in Visual Style Builder__
 Each RadElement exposes a property named __BackgroundShape__ which is of type __RadImageShape__. Complete __Visual Style Builder__ support is provided and you can either create a __RadImageShape__ repository item or edit the __BackgroundShape__ property directly in the advanced view of each element.
 
 ![tpf-primitives-imageshape 004](images/tpf-primitives-imageshape004.png)
+
+# See Also
+* [ArrowPrimitive]({%slug winforms/telerik-presentation-framework/primitives/arrowprimitive%})
+
+* [BorderPrimitive]({%slug winforms/telerik-presentation-framework/primitives/borderprimitive%})
+
+* [CheckPrimitive]({%slug winforms/telerik-presentation-framework/primitives/checkprimitive%})
+
+* [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%})
+
+* [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%})
+
+* [GripPrimitive]({%slug winforms/telerik-presentation-framework/primitives/gripprimitive%})
+
+* [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%})
+
+* [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%})
+

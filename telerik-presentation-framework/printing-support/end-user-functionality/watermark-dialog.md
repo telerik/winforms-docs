@@ -37,3 +37,9 @@ dialog.ShowDialog()
 
 The available common settings are placed in the two group boxes on the bottom part of the dialog. The position options determine whether the watermark will be drawn before the content of the page or over it. The second group determines the pages on which the watermark will be printed.
   		
+
+# See Also
+* [Print Preview Dialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})
+
+* [Print Settings Dialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog%})
+

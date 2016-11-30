@@ -63,3 +63,9 @@ You can use this element as the default screen tips.
 
 
 {{endregion}} 
+
+# See Also
+* [RadToolTip]({%slug winforms/telerik-presentation-framework/radtooltip%})
+
+* [ToolTips]({%slug winforms/telerik-presentation-framework/tooltips%})
+

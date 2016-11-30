@@ -40,3 +40,11 @@ document.Watermark.TextAngle = 300
 Alternatively you can create an instance of the __RadPrintWatermark__, set its properties and then assign it to the __Watermark__ property of RadPrintDocument(this is useful when you want to use the same watermark in multiple documents).
 
 ![tpf-printing-support-radprintdocument-watermark](images/tpf-printing-support-radprintdocument-watermark.png)
+
+# See Also
+* [Design Time]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/design-time%})
+
+* [Header and Footer]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/header-and-footer%})
+
+* [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%})
+

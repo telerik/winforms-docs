@@ -158,3 +158,9 @@ Private Sub RadToolTipExample_Click(sender As Object, e As EventArgs)
 
 Now, every time you click on the form you should see a ToolTip which will hide after 2 seconds.
         
+
+# See Also
+* [Screen Tips]({%slug winforms/telerik-presentation-framework/screen-tips%})
+
+* [ToolTips]({%slug winforms/telerik-presentation-framework/tooltips%})
+

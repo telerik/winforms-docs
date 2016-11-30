@@ -22,3 +22,9 @@ The __PdfExportRenderer__ API gives you the ability to manipulate the document. 
             
 
 * __PdfExporting:__ occurs before the export process is completed. This event gives you access to the exported document and at this point you can manipulate it using the [PdfProcessing Library](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview)
+
+# See Also
+* [SpreadExportRenderer]({%slug winforms/telerik-presentation-framework/export-renderers/spreadexportrenderer%})
+
+* [SpreadStreamExportRenderer]({%slug winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer%})
+

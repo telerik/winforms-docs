@@ -134,3 +134,15 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [BoxLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/boxlayout%})
+
+* [DockLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/docklayout%})
+
+* [ImageAndTextLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/imageandtextlayoutpanel%})
+
+* [StackLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/stacklayoutpanel%})
+
+* [WrapLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/wraplayoutpanel%})
+

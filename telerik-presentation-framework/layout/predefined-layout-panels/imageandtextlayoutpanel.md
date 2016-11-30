@@ -282,3 +282,15 @@ End Class
 
 This is it! In addition to the obligatory steps, as you can notice, we have added convenient API that will allow us to easily use the layout features of the ImageAndTextLayoutPanel.
         
+
+# See Also
+* [BoxLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/boxlayout%})
+
+* [DockLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/docklayout%})
+
+* [GridLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/gridlayout%})
+
+* [StackLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/stacklayoutpanel%})
+
+* [WrapLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/wraplayoutpanel%})
+

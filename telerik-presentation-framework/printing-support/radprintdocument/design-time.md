@@ -22,3 +22,11 @@ In the smart tag menu, you can associate the RadPrintDocument with an object tha
 
 To edit settings, specific for the selected printable object, click on the __Settings__	button in the smart tag menu. This will open the RadPrintSettingsDialog corresponding to the selected	printable object. You can use its full functionality to setup printing	settings at design time. More information about RadPrintSettingsDialog in [this article]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog%}).        	 
   		
+
+# See Also
+* [Header and Footer]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/header-and-footer%})
+
+* [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%})
+
+* [Watermark]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/watermark%})
+

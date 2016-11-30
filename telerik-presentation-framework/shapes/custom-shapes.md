@@ -61,3 +61,21 @@ Figure 1 shows the result from the above code. the shape is applied to a RadPane
 
 
 
+
+# See Also
+* [Diamond Shape]({%slug winforms/telerik-presentation-framework/diamond-shape%})
+
+* [Donut Shape]({%slug winforms/telerik-presentation-framework/donut-shape%})
+
+* [Ellipse Shape]({%slug winforms/telerik-presentation-framework/ellipse-shape%})
+
+* [Heart Shape]({%slug winforms/telerik-presentation-framework/heart-shape%})
+
+* [Media Shape]({%slug winforms/telerik-presentation-framework/media-shape%})
+
+* [Overview]({%slug winforms/telerik-presentation-framework/shapes%})
+
+* [RoundRect Shape]({%slug winforms/telerik-presentation-framework/roundrect-shape%})
+
+* [Star Shape]({%slug winforms/telerik-presentation-framework/star-shape%})
+

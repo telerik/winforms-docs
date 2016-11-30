@@ -21,3 +21,10 @@ MSAA it is also a great automation tool, which Microsoft included in Visual Stud
 
 Telerik UI for WinForms allows you to create a simple coded UI test using MSAA in a few mouse clicks. An example is available [here]({%slug winforms/codedui/getting-started%}).
         
+
+# See Also
+
+* [Coded UI]({%slug winforms/codedui%})
+
+
+

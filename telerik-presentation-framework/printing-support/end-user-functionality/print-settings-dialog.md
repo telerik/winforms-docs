@@ -25,3 +25,9 @@ The RadPrintSettingsDialog contains three tabs:
 
 * The __"Header/Footer"__ tab provides the means for editing the text that appears at the top and at the bottom of each page. You can use a set of predefined strings to display system dependent text like page number, page count, current date and time or current user. The command buttons at the bottom of this page allows you to insert these strings to the currently focused text field.
 		 	 
+
+# See Also
+* [Print Preview Dialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})
+
+* [Watermark Dialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/watermark-dialog%})
+

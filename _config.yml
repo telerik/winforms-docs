@@ -1050,7 +1050,7 @@ navigation:
     telerik-presentation-framework/overview:
         title: Overview
         position: 0
-    telerik-presentation-framework/tooltip-and-screentips:
+    telerik-presentation-framework/tooltips-and-screentips:
         title: Tooltips and ScreenTips
         position: 16
     telerik-presentation-framework/shapes:

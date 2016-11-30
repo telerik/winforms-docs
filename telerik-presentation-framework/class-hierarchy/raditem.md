@@ -24,3 +24,21 @@ __RadItem__ represents a visual element that can be added to an ItemsCollection 
 * Allows the item to be connected to command binding, i.e. allowing ShortCuts to fire actions in
 
 * Adds accessibility properties to aid navigation using the item.
+
+# See Also
+* [BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%})
+
+* [Choosing an Ancestor Class]({%slug winforms/telerik-presentation-framework/class-hierarchy/choosing-an-ancestor-class%})
+
+* [Class Hierarchy Overview]({%slug winforms/telerik-presentation-framework/class-hierarchy/class-hierarchy-overview%})
+
+* [LayoutPanel]({%slug winforms/telerik-presentation-framework/class-hierarchy/layoutpanel%})
+
+* [RadComponent, RadComponentElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcomponent,-radcomponentelement%})
+
+* [RadControl]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcontrol%})
+
+* [RadElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radelement%})
+
+* [RadObject]({%slug winforms/telerik-presentation-framework/class-hierarchy/radobject%})
+
