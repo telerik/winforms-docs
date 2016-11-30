@@ -176,5 +176,19 @@ CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).S
 
 {{endregion}} 
 
-
+>caption Figure 1: Resource Size
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource001.png)
+
+## Grouping By Resources In Different Views
+
+>caption Figure 2: Day View
+![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource002.png)
+
+>caption Figure 3: Week View
+![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource003.png)
+
+>caption Figure 4: Month View
+![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource004.png)
+
+>caption Figure 5: Timeline View
+![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource005.png)
