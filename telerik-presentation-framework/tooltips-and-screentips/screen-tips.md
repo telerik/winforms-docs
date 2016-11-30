@@ -5,7 +5,7 @@ description: Screen Tips
 slug: winforms/telerik-presentation-framework/screen-tips
 tags: screen tips
 published: True
-position: 16
+position: 3
 ---
 
 __Screen Tip__ is a UI feature in which a small window appears when the mouse cursor is hovered over a particular element. By default each control has a __ScreenTipNeeded__ event which is fired when the mouse hovers over the various elements inside the control. The screen tip extends the tooltips functionality because it can show many elements including images. 
@@ -34,4 +34,30 @@ The following example demonstrates how you can show a tooltip when a RadListView
 
 ![tpf-screen-tip003](images/tpf-screen-tip003.png)
 
+>tip To determine which are the exact elements type, just add the following statement to the ScreenTipNeeded event: `Console.WriteLine(e.Item)`, this way when you are hovering the elements, their types will be displayed in the console.
+>
+
+
 ## Custom Tooltips
+
+To create custom tooltips you need to create a class that inherits __RadScreenTipElement__. You can add any elements to this class. The following code shows how you can add a simple element which only shows image and text:
+
+#### Create custom screen tip
+
+{{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=customTip}} 
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=customTip}} 
+
+
+{{endregion}} 
+
+
+You can use this element as the default screen tips. 
+
+#### Use the custom screen tip
+
+
+{{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=useCustom}} 
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=useCustom}} 
+
+
+{{endregion}} 
