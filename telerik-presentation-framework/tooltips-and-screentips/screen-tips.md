@@ -8,7 +8,9 @@ published: True
 position: 3
 ---
 
-__Screen Tip__ is a UI feature in which a small window appears when the mouse cursor is hovered over a particular element. By default each control has a __ScreenTipNeeded__ event which is fired when the mouse hovers over the various elements inside the control. The screen tip extends the tooltips functionality because it can show many elements including images. 
+# Screen Tips
+
+__Screen Tip__ is a UI feature which consists of a small window that appears when the mouse cursor is hovered over a particular element. By default each control has a __ScreenTipNeeded__ event which is fired when the mouse hovers over the various elements inside the control. The screen tip extends the tooltips functionality because it can show many different elements including images. 
 
 >caption Figure 1: A ScreenTip in RadGridView. 
 
@@ -21,7 +23,7 @@ The __RadOffice2007ScreenTipElement__ is the screen tip that is currently availa
 ![tpf-screen-tip002](images/tpf-screen-tip002.png)
 
 
-The following example demonstrates how you can show a tooltip when a RadListView item is hovered. Please note that the __Item__ property contains the currently hovered element. 
+The following example demonstrates how you can show a tooltip when a `RadListView` item is hovered. Please note that the __Item__ property contains the currently hovered element. 
 
 {{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=screenTips}} 
 {{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=screenTips}} 
@@ -34,7 +36,7 @@ The following example demonstrates how you can show a tooltip when a RadListView
 
 ![tpf-screen-tip003](images/tpf-screen-tip003.png)
 
->tip To determine which are the exact elements type, just add the following statement to the ScreenTipNeeded event: `Console.WriteLine(e.Item)`, this way when you are hovering the elements, their types will be displayed in the console.
+>tip To determine which are the exact elements types, just add the following statement to the `ScreenTipNeeded` event: `Console.WriteLine(e.Item)`, this way when you are hovering the elements, their types will be displayed in the console.
 >
 
 
