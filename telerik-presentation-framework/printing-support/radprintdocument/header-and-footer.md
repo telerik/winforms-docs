@@ -1,6 +1,6 @@
 ---
 title: Header and Footer
-page_title: Header and Footer | UI for WinForms Documentation
+page_title: Header and Footer | Telerik Presentation Framework
 description: Header and Footer
 slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/header-and-footer
 tags: header,and,footer

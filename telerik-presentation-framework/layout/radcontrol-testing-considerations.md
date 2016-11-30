@@ -1,6 +1,6 @@
 ---
 title: RadControl Testing Considerations
-page_title: RadControl Testing Considerations | UI for WinForms Documentation
+page_title: RadControl Testing Considerations | Telerik Presentation Framework
 description: RadControl Testing Considerations
 slug: winforms/telerik-presentation-framework/layout/radcontrol-testing-considerations
 tags: radcontrol,testing,considerations

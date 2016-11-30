@@ -1,6 +1,6 @@
 ---
 title: ImageShape
-page_title: ImageShape | UI for WinForms Documentation
+page_title: ImageShape | Telerik Presentation Framework
 description: ImageShape
 slug: winforms/telerik-presentation-framework/primitives/imageshape
 tags: imageshape

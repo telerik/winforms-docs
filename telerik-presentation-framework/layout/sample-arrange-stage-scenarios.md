@@ -1,6 +1,6 @@
 ---
 title: Sample Arrange Stage Scenarios
-page_title: Sample Arrange Stage Scenarios | UI for WinForms Documentation
+page_title: Sample Arrange Stage Scenarios | Telerik Presentation Framework
 description: Sample Arrange Stage Scenarios
 slug: winforms/telerik-presentation-framework/layout/sample-arrange-stage-scenarios
 tags: sample,arrange,stage,scenarios

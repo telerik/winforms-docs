@@ -1,6 +1,6 @@
 ---
 title: Clipping
-page_title: Clipping | UI for WinForms Documentation
+page_title: Clipping | Telerik Presentation Framework
 description: Clipping
 slug: winforms/telerik-presentation-framework/layout/clipping
 tags: clipping

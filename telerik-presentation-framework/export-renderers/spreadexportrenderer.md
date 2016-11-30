@@ -1,6 +1,6 @@
 ---
 title: SpreadExportRenderer
-page_title: SpreadExportRenderer | UI for WinForms Documentation
+page_title: SpreadExportRenderer | Telerik Presentation Framework
 description: SpreadExportRenderer
 slug: winforms/telerik-presentation-framework/export-renderers/spreadexportrenderer
 tags: spreadexportrenderer

@@ -1,6 +1,6 @@
 ---
 title: BoxLayout
-page_title: BoxLayout | UI for WinForms Documentation
+page_title: BoxLayout | Telerik Presentation Framework
 description: BoxLayout
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/boxlayout
 tags: boxlayout

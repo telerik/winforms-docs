@@ -1,6 +1,6 @@
 ---
 title: WrapLayoutPanel
-page_title: WrapLayoutPanel | UI for WinForms Documentation
+page_title: WrapLayoutPanel | Telerik Presentation Framework
 description: WrapLayoutPanel
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/wraplayoutpanel
 tags: wraplayoutpanel

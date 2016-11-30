@@ -1,6 +1,6 @@
 ---
 title: Introducing the Telerik Presentation Framework
-page_title: Introducing the Telerik Presentation Framework | UI for WinForms Documentation
+page_title: Introducing the Telerik Presentation Framework | Telerik Presentation Framework
 description: Introducing the Telerik Presentation Framework
 slug: winforms/telerik-presentation-framework/overview/introducing-the-telerik-presentation-framework
 tags: introducing,the,telerik,presentation,framework

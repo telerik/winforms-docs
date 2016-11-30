@@ -1,6 +1,6 @@
 ---
 title: BasePrimitive
-page_title: BasePrimitive | UI for WinForms Documentation
+page_title: BasePrimitive | Telerik Presentation Framework
 description: BasePrimitive is a VisualElement descendant that Implements the IPrimitive interface. 
 slug: winforms/telerik-presentation-framework/class-hierarchy/baseprimitive
 tags: baseprimitive

@@ -1,6 +1,6 @@
 ---
 title: Custom Shapes
-page_title: Custom Shapes | UI for WinForms Documentation
+page_title: Custom Shapes | Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms/telerik-presentation-framework/diamond-shape
 tags: diamond-shape

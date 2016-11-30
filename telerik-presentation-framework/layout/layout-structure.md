@@ -1,6 +1,6 @@
 ---
 title: Layout Structure
-page_title: Layout Structure | UI for WinForms Documentation
+page_title: Layout Structure | Telerik Presentation Framework
 description: Layout Structure
 slug: winforms/telerik-presentation-framework/layout/layout-structure
 tags: layout,structure

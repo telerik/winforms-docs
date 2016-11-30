@@ -1,6 +1,6 @@
 ---
 title: BorderPrimitive
-page_title: BorderPrimitive | UI for WinForms Documentation
+page_title: BorderPrimitive | Telerik Presentation Framework
 description: BorderPrimitive
 slug: winforms/telerik-presentation-framework/primitives/borderprimitive
 tags: borderprimitive

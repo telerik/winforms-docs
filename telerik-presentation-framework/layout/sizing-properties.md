@@ -1,6 +1,6 @@
 ---
 title: Sizing Properties
-page_title: Sizing Properties | UI for WinForms Documentation
+page_title: Sizing Properties | Telerik Presentation Framework
 description: Sizing Properties
 slug: winforms/telerik-presentation-framework/layout/sizing-properties
 tags: sizing,properties

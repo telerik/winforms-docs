@@ -1,6 +1,6 @@
 ---
 title: RadTrackBarElement
-page_title: RadTrackBarElement | UI for WinForms Documentation
+page_title: RadTrackBarElement | Telerik Presentation Framework
 description: RadTrackBarElement
 slug: winforms/telerik-presentation-framework/elements/radtrackbarelement
 tags: radtrackbarelement

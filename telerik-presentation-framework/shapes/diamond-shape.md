@@ -1,6 +1,6 @@
 ---
 title: Diamond Shape
-page_title: Diamond Shape| UI for WinForms Documentation
+page_title: Diamond Shape| Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms/telerik-presentation-framework/diamond-shape
 tags: diamond-shape

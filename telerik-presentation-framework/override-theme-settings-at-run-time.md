@@ -1,6 +1,6 @@
 ---
 title: Override Theme Settings at Run Time
-page_title: Override Theme Settings at Run Time | UI for WinForms Documentation
+page_title: Override Theme Settings at Run Time | Telerik Presentation Framework
 description: Override Theme Settings at Run Time
 slug: winforms/telerik-presentation-framework/override-theme-settings-at-run-time
 tags: override,theme,settings,at,run,time

@@ -1,6 +1,6 @@
 ---
 title: Print Preview Dialog
-page_title: Print Preview Dialog | UI for WinForms Documentation
+page_title: Print Preview Dialog | Telerik Presentation Framework
 description: Print Preview Dialog
 slug: winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog
 tags: print,preview,dialog

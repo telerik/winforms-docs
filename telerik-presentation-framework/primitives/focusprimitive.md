@@ -1,6 +1,6 @@
 ---
 title: FocusPrimitive
-page_title: FocusPrimitive | UI for WinForms Documentation
+page_title: FocusPrimitive | Telerik Presentation Framework
 description: FocusPrimitive
 slug: winforms/telerik-presentation-framework/primitives/focusprimitive
 tags: focusprimitive

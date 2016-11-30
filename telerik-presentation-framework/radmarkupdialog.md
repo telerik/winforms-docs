@@ -1,6 +1,6 @@
 ---
 title: RadMarkupDialog
-page_title: RadMarkupDialog | UI for WinForms Documentation
+page_title: RadMarkupDialog | Telerik Presentation Framework
 description: RadMarkupDialog
 slug: winforms/telerik-presentation-framework/radmarkupdialog
 tags: radmarkupdialog

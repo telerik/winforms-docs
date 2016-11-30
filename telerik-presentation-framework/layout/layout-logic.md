@@ -1,6 +1,6 @@
 ---
 title: Layout Logic
-page_title: Layout Logic | UI for WinForms Documentation
+page_title: Layout Logic | Telerik Presentation Framework
 description: Layout Logic
 slug: winforms/telerik-presentation-framework/layout/layout-logic
 tags: layout,logic

@@ -1,6 +1,6 @@
 ---
 title: LinePrimitive
-page_title: LinePrimitive | UI for WinForms Documentation
+page_title: LinePrimitive | Telerik Presentation Framework
 description: LinePrimitive
 slug: winforms/telerik-presentation-framework/primitives/lineprimitive
 tags: lineprimitive

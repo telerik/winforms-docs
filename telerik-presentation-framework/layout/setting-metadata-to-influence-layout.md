@@ -1,6 +1,6 @@
 ---
 title: Setting Metadata to Influence Layout
-page_title: Setting Metadata to Influence Layout | UI for WinForms Documentation
+page_title: Setting Metadata to Influence Layout | Telerik Presentation Framework
 description: Setting Metadata to Influence Layout
 slug: winforms/telerik-presentation-framework/layout/setting-metadata-to-influence-layout
 tags: setting,metadata,to,influence,layout

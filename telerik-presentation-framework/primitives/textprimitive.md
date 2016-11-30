@@ -1,6 +1,6 @@
 ---
 title: TextPrimitive
-page_title: TextPrimitive | UI for WinForms Documentation
+page_title: TextPrimitive | Telerik Presentation Framework
 description: TextPrimitive
 slug: winforms/telerik-presentation-framework/primitives/textprimitive
 tags: textprimitive

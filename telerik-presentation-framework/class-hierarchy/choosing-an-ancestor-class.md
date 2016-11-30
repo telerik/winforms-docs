@@ -1,6 +1,6 @@
 ---
 title: Choosing an Ancestor Class
-page_title: Choosing an Ancestor Class | UI for WinForms Documentation
+page_title: Choosing an Ancestor Class | Telerik Presentation Framework
 description: Choosing an Ancestor Class
 slug: winforms/telerik-presentation-framework/class-hierarchy/choosing-an-ancestor-class
 tags: choosing,an,ancestor,class

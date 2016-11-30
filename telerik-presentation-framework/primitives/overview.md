@@ -1,6 +1,6 @@
 ---
 title: Primitives Overview
-page_title: Overview | UI for WinForms Documentation
+page_title: Overview | Telerik Presentation Framework
 description: Overview
 slug: winforms/telerik-presentation-framework/primitives/overview
 tags: overview

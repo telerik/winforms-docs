@@ -1,6 +1,6 @@
 ---
 title: Heart Shape
-page_title: Heart Shape| UI for WinForms Documentation
+page_title: Heart Shape| Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms/telerik-presentation-framework/heart-shape
 tags: heart-shape

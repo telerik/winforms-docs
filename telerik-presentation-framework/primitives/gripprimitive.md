@@ -1,6 +1,6 @@
 ---
 title: GripPrimitive
-page_title: GripPrimitive | UI for WinForms Documentation
+page_title: GripPrimitive | Telerik Presentation Framework
 description: GripPrimitive
 slug: winforms/telerik-presentation-framework/primitives/gripprimitive
 tags: gripprimitive

@@ -1,6 +1,6 @@
 ---
 title: RadioPrimitive
-page_title: RadioPrimitive | UI for WinForms Documentation
+page_title: RadioPrimitive | Telerik Presentation Framework
 description: RadioPrimitive
 slug: winforms/telerik-presentation-framework/primitives/radioprimitive
 tags: radioprimitive

@@ -1,6 +1,6 @@
 ---
 title: Print Settings Dialog
-page_title: Print Settings Dialog | UI for WinForms Documentation
+page_title: Print Settings Dialog | Telerik Presentation Framework
 description: Print Settings Dialog
 slug: winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog
 tags: print,settings,dialog

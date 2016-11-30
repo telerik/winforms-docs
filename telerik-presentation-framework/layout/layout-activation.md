@@ -1,6 +1,6 @@
 ---
 title: Layout Activation
-page_title: Layout Activation | UI for WinForms Documentation
+page_title: Layout Activation | Telerik Presentation Framework
 description: Layout Activation
 slug: winforms/telerik-presentation-framework/layout/layout-activation
 tags: layout,activation

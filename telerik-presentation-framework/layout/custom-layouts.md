@@ -1,6 +1,6 @@
 ---
 title: Custom Layouts
-page_title: Custom Layouts | UI for WinForms Documentation
+page_title: Custom Layouts | Telerik Presentation Framework
 description: Custom Layouts
 slug: winforms/telerik-presentation-framework/layout/custom-layouts
 tags: custom,layouts

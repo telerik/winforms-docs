@@ -1,6 +1,6 @@
 ---
 title: CheckPrimitive
-page_title: CheckPrimitive | UI for WinForms Documentation
+page_title: CheckPrimitive | Telerik Presentation Framework
 description: CheckPrimitive
 slug: winforms/telerik-presentation-framework/primitives/checkprimitive
 tags: checkprimitive

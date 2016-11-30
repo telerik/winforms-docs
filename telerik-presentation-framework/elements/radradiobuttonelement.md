@@ -1,6 +1,6 @@
 ---
 title: RadRadioButtonElement
-page_title: RadRadioButtonElement | UI for WinForms Documentation
+page_title: RadRadioButtonElement | Telerik Presentation Framework
 description: RadRadioButtonElement
 slug: winforms/telerik-presentation-framework/elements/radradiobuttonelement
 tags: radradiobuttonelement

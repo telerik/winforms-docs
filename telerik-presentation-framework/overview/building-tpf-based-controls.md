@@ -1,6 +1,6 @@
 ---
 title: Building TPF Based Controls
-page_title: Building TPF Based Controls | UI for WinForms Documentation
+page_title: Building TPF Based Controls | Telerik Presentation Framework
 description: Building TPF Based Controls
 slug: winforms/telerik-presentation-framework/overview/building-tpf-based-controls
 tags: building,tpf,based,controls

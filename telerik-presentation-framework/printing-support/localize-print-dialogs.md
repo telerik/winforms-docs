@@ -1,6 +1,6 @@
 ---
 title: Localize print dialogs
-page_title: Localize print dialogs | UI for WinForms Documentation
+page_title: Localize print dialogs | Telerik Presentation Framework
 description: Localize print dialogs
 slug: winforms/telerik-presentation-framework/printing-support/localize-print-dialogs
 tags: localize,print,dialogs

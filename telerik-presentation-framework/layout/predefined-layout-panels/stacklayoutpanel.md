@@ -1,6 +1,6 @@
 ---
 title: StackLayoutPanel
-page_title: StackLayoutPanel | UI for WinForms Documentation
+page_title: StackLayoutPanel | Telerik Presentation Framework
 description: StackLayoutPanel
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/stacklayoutpanel
 tags: stacklayoutpanel

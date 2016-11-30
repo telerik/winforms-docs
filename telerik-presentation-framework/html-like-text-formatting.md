@@ -1,6 +1,6 @@
 ---
 title: HTML-like Text Formatting
-page_title: HTML-like Text Formatting | UI for WinForms Documentation
+page_title: HTML-like Text Formatting | Telerik Presentation Framework
 description: HTML-like Text Formatting
 slug: winforms/telerik-presentation-framework/html-like-text-formatting
 tags: html-like,text,formatting

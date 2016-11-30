@@ -1,6 +1,6 @@
 ---
 title: ProgressBarPrimitive
-page_title: ProgressBarPrimitive | UI for WinForms Documentation
+page_title: ProgressBarPrimitive | Telerik Presentation Framework
 description: ProgressBarPrimitive
 slug: winforms/telerik-presentation-framework/primitives/progressbarprimitive
 tags: progressbarprimitive

@@ -1,6 +1,6 @@
 ---
 title: Customize RadPrintDocument
-page_title: Customize RadPrintDocument | UI for WinForms Documentation
+page_title: Customize RadPrintDocument | Telerik Presentation Framework
 description: Customize RadPrintDocument
 slug: winforms/telerik-presentation-framework/printing-support/how-to/customize-radprintdocument
 tags: customize, header, radprintdocument

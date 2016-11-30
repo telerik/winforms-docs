@@ -1,6 +1,6 @@
 ---
 title: RoundRect Shape
-page_title: RoundRect Shape| UI for WinForms Documentation
+page_title: RoundRect Shape| Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms/telerik-presentation-framework/roundrect-shape
 tags: roundrect-shape

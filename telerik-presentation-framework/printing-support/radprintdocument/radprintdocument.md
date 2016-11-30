@@ -1,6 +1,6 @@
 ---
 title: RadPrintDocument
-page_title: RadPrintDocument | UI for WinForms Documentation
+page_title: RadPrintDocument | Telerik Presentation Framework
 description: RadPrintDocument
 slug: winforms/telerik-presentation-framework/printing-support/radprintdocument
 tags: radprintdocument

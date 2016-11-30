@@ -1,6 +1,6 @@
 ---
 title: LayoutPanel
-page_title: LayoutPanel | UI for WinForms Documentation
+page_title: LayoutPanel | Telerik Presentation Framework
 description: LayoutPanel represents a base class for all layout panels. Layout panels are RadElements, exist in the control tree and are responsible for the layout of primitives.
 slug: winforms/telerik-presentation-framework/class-hierarchy/layoutpanel
 tags: layoutpanel

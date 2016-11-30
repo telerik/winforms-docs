@@ -1,6 +1,6 @@
 ---
 title: Handling User Input
-page_title: Handling User Input | UI for WinForms Documentation
+page_title: Handling User Input | Telerik Presentation Framework
 description: Handling User Input
 slug: winforms/telerik-presentation-framework/handling-user-input
 tags: handling,user,input

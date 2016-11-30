@@ -1,6 +1,6 @@
 ---
 title: Design Time
-page_title: Design Time | UI for WinForms Documentation
+page_title: Design Time | Telerik Presentation Framework
 description: Design Time
 slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/design-time
 tags: design,time

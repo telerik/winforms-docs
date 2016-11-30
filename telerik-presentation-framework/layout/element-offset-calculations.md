@@ -1,6 +1,6 @@
 ---
 title: Element Offset Calculations
-page_title: Element Offset Calculations | UI for WinForms Documentation
+page_title: Element Offset Calculations | Telerik Presentation Framework
 description: Element Offset Calculations
 slug: winforms/telerik-presentation-framework/layout/element-offset-calculations
 tags: element,offset,calculations

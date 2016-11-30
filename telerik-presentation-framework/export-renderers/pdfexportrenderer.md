@@ -1,6 +1,6 @@
 ---
 title: PdfExportRenderer
-page_title: PdfExportRenderer | UI for WinForms Documentation
+page_title: PdfExportRenderer | Telerik Presentation Framework
 description: PdfExportRenderer
 slug: winforms/telerik-presentation-framework/export-renderers/pdfexportrenderer
 tags: pdfexportrenderer

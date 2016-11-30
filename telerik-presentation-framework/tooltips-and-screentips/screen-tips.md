@@ -1,6 +1,6 @@
 ---
 title: Screen Tips
-page_title: Screen Tips | UI for WinForms Documentation
+page_title: Screen Tips | Telerik Presentation Framework
 description: Screen Tips
 slug: winforms/telerik-presentation-framework/screen-tips
 tags: screen tips

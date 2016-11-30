@@ -1,6 +1,6 @@
 ---
 title: OverflowPrimitive
-page_title: OverflowPrimitive | UI for WinForms Documentation
+page_title: OverflowPrimitive | Telerik Presentation Framework
 description: OverflowPrimitive
 slug: winforms/telerik-presentation-framework/primitives/overflowprimitive
 tags: overflowprimitive

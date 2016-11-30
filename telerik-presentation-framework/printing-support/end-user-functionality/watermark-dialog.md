@@ -1,6 +1,6 @@
 ---
 title: Watermark Dialog
-page_title: Watermark Dialog | UI for WinForms Documentation
+page_title: Watermark Dialog | Telerik Presentation Framework
 description: Watermark Dialog
 slug: winforms/telerik-presentation-framework/printing-support/end-user-functionality/watermark-dialog
 tags: watermark,dialog

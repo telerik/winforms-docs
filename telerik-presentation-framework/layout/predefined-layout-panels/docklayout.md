@@ -1,6 +1,6 @@
 ---
 title: DockLayout
-page_title: DockLayout | UI for WinForms Documentation
+page_title: DockLayout | Telerik Presentation Framework
 description: DockLayout
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/docklayout
 tags: docklayout

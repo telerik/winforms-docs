@@ -1,6 +1,6 @@
 ---
 title: TrackBarPrimitive
-page_title: TrackBarPrimitive | UI for WinForms Documentation
+page_title: TrackBarPrimitive | Telerik Presentation Framework
 description: TrackBarPrimitive
 slug: winforms/telerik-presentation-framework/primitives/trackbarprimitive
 tags: trackbarprimitive

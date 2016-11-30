@@ -1,6 +1,6 @@
 ---
 title: FillPrimitive
-page_title: FillPrimitive | UI for WinForms Documentation
+page_title: FillPrimitive | Telerik Presentation Framework
 description: FillPrimitive
 slug: winforms/telerik-presentation-framework/primitives/fillprimitive
 tags: fillprimitive

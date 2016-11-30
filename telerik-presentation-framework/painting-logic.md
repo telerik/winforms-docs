@@ -1,6 +1,6 @@
 ---
 title: Painting Logic
-page_title: Painting Logic | UI for WinForms Documentation
+page_title: Painting Logic | Telerik Presentation Framework
 description: Painting Logic
 slug: winforms/telerik-presentation-framework/painting-logic
 tags: painting,logic

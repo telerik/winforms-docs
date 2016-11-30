@@ -1,6 +1,6 @@
 ---
 title: Layout Overview
-page_title: Layout Overview | UI for WinForms Documentation
+page_title: Layout Overview | Telerik Presentation Framework
 description: Layout Overview
 slug: winforms/telerik-presentation-framework/layout/layout-overview
 tags: layout,overview

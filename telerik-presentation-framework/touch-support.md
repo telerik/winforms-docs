@@ -1,6 +1,6 @@
 ---
 title: Touch Support
-page_title: Touch Support | UI for WinForms Documentation
+page_title: Touch Support | Telerik Presentation Framework
 description: Touch Support
 slug: winforms/telerik-presentation-framework/touch-support
 tags: touch,support

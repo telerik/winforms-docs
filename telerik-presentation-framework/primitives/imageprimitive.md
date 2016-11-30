@@ -1,6 +1,6 @@
 ---
 title: ImagePrimitive
-page_title: ImagePrimitive | UI for WinForms Documentation
+page_title: ImagePrimitive | Telerik Presentation Framework
 description: ImagePrimitive
 slug: winforms/telerik-presentation-framework/primitives/imageprimitive
 tags: imageprimitive

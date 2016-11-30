@@ -1,6 +1,6 @@
 ---
 title: Watermark
-page_title: Watermark | UI for WinForms Documentation
+page_title: Watermark | Telerik Presentation Framework
 description: Watermark
 slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/watermark
 tags: watermark

@@ -1,6 +1,6 @@
 ---
 title: Inherit themes from RadControls derivatives
-page_title: Inherit themes from RadControls derivatives | UI for WinForms Documentation
+page_title: Inherit themes from RadControls derivatives | Telerik Presentation Framework
 description: Inherit themes from RadControls derivatives
 slug: winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives
 tags: inherit,themes,from,radcontrols,derivatives

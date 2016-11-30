@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | Telerik Presentation Framework
 description: Getting Started
 slug: winforms/telerik-presentation-framework/getting-started/getting-started
 tags: getting,started

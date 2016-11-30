@@ -1,6 +1,6 @@
 ---
 title: GridLayout
-page_title: GridLayout | UI for WinForms Documentation
+page_title: GridLayout | Telerik Presentation Framework
 description: GridLayout
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/gridlayout
 tags: gridlayout

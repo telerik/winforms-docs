@@ -1,6 +1,6 @@
 ---
 title: Animations
-page_title: Animations | UI for WinForms Documentation
+page_title: Animations | Telerik Presentation Framework
 description: Animations
 slug: winforms/telerik-presentation-framework/animations
 tags: animations

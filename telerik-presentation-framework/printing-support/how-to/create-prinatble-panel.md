@@ -1,6 +1,6 @@
 ---
 title: Create Prinatble Panel
-page_title: Create Prinatble Panel | UI for WinForms Documentation
+page_title: Create Prinatble Panel | Telerik Presentation Framework
 description: Create Prinatble Panel
 slug: winforms/telerik-presentation-framework/printing-support/how-to/create-prinatble-panel
 tags: create,prinatble,panel

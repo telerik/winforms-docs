@@ -1,6 +1,6 @@
 ---
 title: RadToolTip
-page_title: RadToolTip | UI for WinForms Documentation
+page_title: RadToolTip | Telerik Presentation Framework
 description: RadToolTip
 slug: winforms/telerik-presentation-framework/radtooltip
 tags: radtooltip

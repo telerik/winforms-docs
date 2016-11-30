@@ -1,6 +1,6 @@
 ---
 title: LightVisualElement
-page_title: LightVisualElement | UI for WinForms Documentation
+page_title: LightVisualElement | Telerik Presentation Framework
 description: LightVisualElement
 slug: winforms/telerik-presentation-framework/primitives/lightvisualelement
 tags: lightvisualelement

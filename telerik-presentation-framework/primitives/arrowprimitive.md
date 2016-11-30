@@ -1,6 +1,6 @@
 ---
 title: ArrowPrimitive
-page_title: ArrowPrimitive | UI for WinForms Documentation
+page_title: ArrowPrimitive | Telerik Presentation Framework
 description: ArrowPrimitive
 slug: winforms/telerik-presentation-framework/primitives/arrowprimitive
 tags: arrowprimitive

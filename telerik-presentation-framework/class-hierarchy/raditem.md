@@ -1,6 +1,6 @@
 ---
 title: RadItem
-page_title: RadItem | UI for WinForms Documentation
+page_title: RadItem | Telerik Presentation Framework
 description: RadItem represents a visual element that can be added to an ItemsCollection and can be selected, deleted or moved in Visual Studio at design time.
 slug: winforms/telerik-presentation-framework/class-hierarchy/raditem
 tags: raditem
