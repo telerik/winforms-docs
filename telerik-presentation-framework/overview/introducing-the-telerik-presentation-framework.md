@@ -1,7 +1,7 @@
 ---
 title: Introducing the Telerik Presentation Framework
 page_title: Introducing the Telerik Presentation Framework | Telerik Presentation Framework
-description: Introducing the Telerik Presentation Framework
+description: Controls in the Telerik UI for WinForms suite have both a general shared architecture and a specific internal structure.
 slug: winforms/telerik-presentation-framework/overview/introducing-the-telerik-presentation-framework
 tags: introducing,the,telerik,presentation,framework
 published: True

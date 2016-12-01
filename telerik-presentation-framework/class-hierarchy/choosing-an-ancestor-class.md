@@ -1,7 +1,7 @@
 ---
 title: Choosing an Ancestor Class
 page_title: Choosing an Ancestor Class | Telerik Presentation Framework
-description: Choosing an Ancestor Class
+description: When creating a new TPF based control you should select an ancestor class that already has as much of the functionality built-in as possible.
 slug: winforms/telerik-presentation-framework/class-hierarchy/choosing-an-ancestor-class
 tags: choosing,an,ancestor,class
 published: True

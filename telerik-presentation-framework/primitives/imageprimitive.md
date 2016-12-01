@@ -1,7 +1,7 @@
 ---
 title: ImagePrimitive
 page_title: ImagePrimitive | Telerik Presentation Framework
-description: ImagePrimitive
+description: Use the __ImagePrimitive__ class whenever you need to draw an image as part of a control.
 slug: winforms/telerik-presentation-framework/primitives/imageprimitive
 tags: imageprimitive
 published: True

@@ -1,7 +1,7 @@
 ---
 title: RadRadioButtonElement
 page_title: RadRadioButtonElement | Telerik Presentation Framework
-description: RadRadioButtonElement
+description: RadRadioButtonlElement contains the logic and user interface for a single RadRadioButton.
 slug: winforms/telerik-presentation-framework/elements/radradiobuttonelement
 tags: radradiobuttonelement
 published: True

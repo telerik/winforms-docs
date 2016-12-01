@@ -1,7 +1,7 @@
 ---
 title: OverflowPrimitive
 page_title: OverflowPrimitive | Telerik Presentation Framework
-description: OverflowPrimitive
+description: The OverflowPrimitive is a visual indicator and button that more choices are available.
 slug: winforms/telerik-presentation-framework/primitives/overflowprimitive
 tags: overflowprimitive
 published: True

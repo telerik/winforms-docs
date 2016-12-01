@@ -1,7 +1,7 @@
 ---
 title: Layout Activation
 page_title: Layout Activation | Telerik Presentation Framework
-description: Layout Activation
+description: This article shows when the layout is activated and how you can update it manually. 
 slug: winforms/telerik-presentation-framework/layout/layout-activation
 tags: layout,activation
 published: True

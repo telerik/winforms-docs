@@ -1,7 +1,7 @@
 ---
 title: Override Theme Settings at Run Time
 page_title: Override Theme Settings at Run Time | Telerik Presentation Framework
-description: Override Theme Settings at Run Time
+description: This article demonstrates how to change the style for a specific element state without losing the applied style for the rest of the states. 
 slug: winforms/telerik-presentation-framework/override-theme-settings-at-run-time
 tags: override,theme,settings,at,run,time
 published: True

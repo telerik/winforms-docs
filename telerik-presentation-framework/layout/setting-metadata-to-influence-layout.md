@@ -1,7 +1,7 @@
 ---
 title: Setting Metadata to Influence Layout
 page_title: Setting Metadata to Influence Layout | Telerik Presentation Framework
-description: Setting Metadata to Influence Layout
+description: With Telerik Presentation Framework you can use the RadProperties metadata to change the layout.
 slug: winforms/telerik-presentation-framework/layout/setting-metadata-to-influence-layout
 tags: setting,metadata,to,influence,layout
 published: True

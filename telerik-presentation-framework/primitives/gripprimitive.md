@@ -1,7 +1,7 @@
 ---
 title: GripPrimitive
 page_title: GripPrimitive | Telerik Presentation Framework
-description: GripPrimitive
+description: GripPrimitive displays a vertical row of dots as a visual cue to users that this is an area that can be gripped and dragged.
 slug: winforms/telerik-presentation-framework/primitives/gripprimitive
 tags: gripprimitive
 published: True

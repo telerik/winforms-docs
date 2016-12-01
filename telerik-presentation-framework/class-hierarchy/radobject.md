@@ -1,7 +1,7 @@
 ---
 title: RadObject
 page_title: RadObject | Telerik Presentation Framework
-description: RadObject represents a base class for all elements that need to interact with the dependency property system of Telerik Presentation Framework.
+description: RadObject represents a base class for all elements that need to interact with the dependency property system.
 slug: winforms/telerik-presentation-framework/class-hierarchy/radobject
 tags: radobject
 published: True

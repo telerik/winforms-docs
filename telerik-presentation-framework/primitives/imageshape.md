@@ -11,7 +11,7 @@ previous_url: tpf-primitives-imageshape
 
 # ImageShape
 
-__RadImageShape__ implements the so called “*Segmented Image*” semantic, which in general allows a small image (pattern) to be stretched to larger bounds without quality loss. This effect is achieved by dividing the image into 9 logical parts (segments) and providing advanced paint logic for each part.
+__RadImageShape__ implements the so called "Segmented Image" semantic, which in general allows a small image (pattern) to be stretched to larger bounds without quality loss. This effect is achieved by dividing the image into 9 logical parts (segments) and providing advanced paint logic for each part.
 
 ![tpf-primitives-imageshape 001](images/tpf-primitives-imageshape001.png)
 

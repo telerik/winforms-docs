@@ -1,7 +1,7 @@
 ---
 title: Microsoft Active Accessibility Support
 page_title: Microsoft Active Accessibility Support | Telerik Presentation Framework
-description: Microsoft Active Accessibility Support
+description: Telerik Presentation Framework supports Microsoft Active Accessibility.
 slug: winforms/telerik-presentation-framework/microsoft-active-accessibility-support
 tags: microsoft,active,accessibility,support
 published: True

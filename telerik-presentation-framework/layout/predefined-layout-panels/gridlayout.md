@@ -1,7 +1,7 @@
 ---
 title: GridLayout
 page_title: GridLayout | Telerik Presentation Framework
-description: GridLayout
+description: This panel that arranges its child controls in a tabular structure of rows and columns. 
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/gridlayout
 tags: gridlayout
 published: True

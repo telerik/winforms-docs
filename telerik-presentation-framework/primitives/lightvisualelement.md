@@ -1,7 +1,7 @@
 ---
 title: LightVisualElement
 page_title: LightVisualElement | Telerik Presentation Framework
-description: LightVisualElement
+description: LightVisualElement is a lightweight element which is capable of displaying Text, Border and Image.
 slug: winforms/telerik-presentation-framework/primitives/lightvisualelement
 tags: lightvisualelement
 published: True
@@ -11,7 +11,7 @@ previous_url: tpf-primitives-lightvisualelement
 
 # LightVisualElement
 
-__LightVisualElement__ is a lightweight element which is capable of displaying Text, Border and Images and can be easily customized. Here is a list of its properties allowing for fine tuning the element:
+__LightVisualElement__ is a lightweight element which is capable of displaying Text, Border and Image and can be easily customized. Here is a list of its properties allowing for fine tuning the element:
 
 
 * __ShouldPaint:__ Indicates whether the element should be painted. Children visibility would not be affected.

@@ -1,7 +1,7 @@
 ---
 title: Custom Layouts
 page_title: Custom Layouts | Telerik Presentation Framework
-description: Custom Layouts
+description: This article explains how one can create a Custom Layouts by inheriting the LayoutPanel class.
 slug: winforms/telerik-presentation-framework/layout/custom-layouts
 tags: custom,layouts
 published: True

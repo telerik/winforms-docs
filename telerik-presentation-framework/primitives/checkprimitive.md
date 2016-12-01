@@ -1,7 +1,7 @@
 ---
 title: CheckPrimitive
 page_title: CheckPrimitive | Telerik Presentation Framework
-description: CheckPrimitive
+description: The CheckPrimitive is painted as three sets of angled lines and can have different colors.
 slug: winforms/telerik-presentation-framework/primitives/checkprimitive
 tags: checkprimitive
 published: True

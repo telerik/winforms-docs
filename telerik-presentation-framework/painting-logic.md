@@ -1,7 +1,7 @@
 ---
 title: Painting Logic
 page_title: Painting Logic | Telerik Presentation Framework
-description: Painting Logic
+description: This article describes how the Telerik Presentation Framework elements are painted. 
 slug: winforms/telerik-presentation-framework/painting-logic
 tags: painting, logic
 published: False

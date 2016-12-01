@@ -1,7 +1,7 @@
 ---
 title: RadioPrimitive
 page_title: RadioPrimitive | Telerik Presentation Framework
-description: RadioPrimitive
+description: RadioPrimitive provides the basic visual layout of a radio button background. 
 slug: winforms/telerik-presentation-framework/primitives/radioprimitive
 tags: radioprimitive
 published: True

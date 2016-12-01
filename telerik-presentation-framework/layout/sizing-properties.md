@@ -1,7 +1,7 @@
 ---
 title: Sizing Properties
 page_title: Sizing Properties | Telerik Presentation Framework
-description: Sizing Properties
+description: This article shows the properties that can be used for changing or retrieving the layout size settings. 
 slug: winforms/telerik-presentation-framework/layout/sizing-properties
 tags: sizing,properties
 published: True

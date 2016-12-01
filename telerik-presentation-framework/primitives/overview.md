@@ -1,7 +1,7 @@
 ---
 title: Primitives Overview
 page_title: Overview | Telerik Presentation Framework
-description: Overview
+description: Primitives are the elements that are painted to the screen when Windows displays a form containing a Telerik RadControl. 
 slug: winforms/telerik-presentation-framework/primitives/overview
 tags: overview
 published: True

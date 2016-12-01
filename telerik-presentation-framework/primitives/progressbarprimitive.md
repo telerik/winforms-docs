@@ -1,7 +1,7 @@
 ---
 title: ProgressBarPrimitive
 page_title: ProgressBarPrimitive | Telerik Presentation Framework
-description: ProgressBarPrimitive
+description: ProgressBarPrimitive indicates the state of progress in a long running process.
 slug: winforms/telerik-presentation-framework/primitives/progressbarprimitive
 tags: progressbarprimitive
 published: True

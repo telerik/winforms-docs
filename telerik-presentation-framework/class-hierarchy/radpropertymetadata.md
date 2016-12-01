@@ -1,7 +1,7 @@
 ---
 title: RadPropertyMetadata
 page_title: RadPropertyMetadata | Telerik Presentation Framework
-description: RadPropertyMetadata describes a property and de-couples the information about a property from the property itself.
+description: RadPropertyMetadata describes a property and separates the information about a property from the property itself.
 slug: winforms/telerik-presentation-framework/class-hierarchy/radpropertymetadata
 tags: radpropertymetadata
 published: True
