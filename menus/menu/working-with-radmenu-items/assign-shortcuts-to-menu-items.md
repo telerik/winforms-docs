@@ -1,7 +1,7 @@
 ---
 title: Assign Shortcuts to Menu Items
-page_title: Assign Shortcuts to Menu Items | UI for WinForms Documentation
-description: Assign Shortcuts to Menu Items
+page_title: Assign Shortcuts to Menu Items | RadMenu
+description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 slug: winforms/menus/menu/working-with-radmenu-items/assign-shortcuts-to-menu-items
 tags: assign,shortcuts,to,menu,items
 published: True
@@ -11,19 +11,23 @@ previous_url: menus-menu-working-with-radmenu-items-assign-shorcut
 
 # Assign Shortcuts to Menu Items
 
+The following tutorial demonstrates how to assign a shortcut to a **RadMenuItem**:
 
+1\. In a new Windows Application add a **RadMenu** to the form.
 
-## 
+2\. On the **RadMenu** that reads "*Type here*" enter *New*. This will automatically create a menu item object "radMenuItem1":
 
-1\. In a new Windows Application add a RadMenu to the form.
+![menu-items-shortcut 001](images/menu-items-shortcut001.png)
 
-2\. On the RadMenu that reads "*Type here*" enter "*New*". This will automatically create a menu item object "radMenuItem1":<br>![shortcuts-getting-started-(radmenuitems)001](images/shortcuts-getting-started-(radmenuitems)001.png)
+3\. Click the newly created item to open the drop down menu and create a sub menu item. By default, the text of the new item will be set to *radMenuItem2*. Change it to *File*:
 
-3\. Click and the newly created item to open the dropdown menu and create a submenu item. By default, the text of the new item will be set to *radMenuItem2*. Change it to *File*:<br>![shortcuts-getting-started-(radmenuitems)002](images/shortcuts-getting-started-(radmenuitems)002.png)
+![menu-items-shortcut 002](images/menu-items-shortcut002.gif)
 
-4\. In the Properties Window locate the Click events for radMenuItem1 and radMenuItem2 and double-click them to create event handlers.
+4\. In the Properties Window locate the **Click** events for radMenuItem1 and radMenuItem2 and double-click them to create event handlers.
 
 5\. Inside the event handlers add the following code:
+
+#### RadMenuItems Click event handlers
 
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=handlingClickEvent}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=handlingClickEvent}} 
@@ -53,6 +57,8 @@ End Sub
 
 6\. Now all you have to do is to add the shortcuts to the desired items
 
+#### Adding shortcuts to menu items
+
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=menuShortcuts}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=menuShortcuts}} 
 
@@ -69,12 +75,16 @@ Me.RadMenuItem2.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.F, Keys.K))
 
 {{endregion}} 
 
->note In the constructor of RadShortcut, you should first pass the key modifier as a parameter and then an array of the key mappings.
+>note In the constructor of **RadShortcut**, you should first pass the key modifier as a parameter and then an array of the key mappings.
 >
 
-As a result, you will get this picture runtime. As you can see, the shortcuts are automatically displayed for the RadMenuItems:![shortcuts-getting-started-(radmenuitems)003](images/shortcuts-getting-started-(radmenuitems)003.png)
+As a result, you will get this picture runtime. As you can see, the shortcuts are automatically displayed for the **RadMenuItems**:
 
-Interesting functionality to mention is the ability to set your own custom text to describe the shortcut added. This can be achieved via the __HintText__ property of the menu item
+![menu-items-shortcut 003](images/menu-items-shortcut003.png)
+
+Interesting functionality to mention is the ability to set your own custom text to describe the shortcut added. This can be achieved via the __HintText__ property of the menu item:
+
+#### Assigning HintText
 
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=SetHintText}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=SetHintText}} 
@@ -90,4 +100,11 @@ RadMenuItem2.HintText = "Custom Text"
 
 {{endregion}} 
 
-![shortcuts-getting-started-(radmenuitems)004](images/shortcuts-getting-started-(radmenuitems)004.png)
+![menu-items-shortcut 004](images/menu-items-shortcut004.png)
+
+# See Also
+
+* [Adding and Removing Items]({%slug winforms/menus/menu/working-with-radmenu-items/adding-and-removing-items%})
+* [Nesting Controls in Menu Items]({%slug winforms/menus/menu/working-with-radmenu-items/nesting-controls-in-menu-items%})	
+* [RadMenuItem Events]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem-events%})	
+* [Multi-Line Menu Item Text]({%slug winforms/menus/menu/working-with-radmenu-items/multi-line-menu-item-text%})

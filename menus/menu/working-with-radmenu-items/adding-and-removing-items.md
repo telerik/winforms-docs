@@ -1,7 +1,7 @@
 ---
 title: Adding and Removing Items
-page_title: Adding and Removing Items | UI for WinForms Documentation
-description: Adding and Removing Items
+page_title: Adding and Removing Items | RadMenu
+description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 slug: winforms/menus/menu/working-with-radmenu-items/adding-and-removing-items
 tags: adding,and,removing,items
 published: True
@@ -11,11 +11,11 @@ previous_url: menus-menu-working-with-radmenu-items-adding-and-removing-items
 
 # Adding and Removing Items
 
-
-
 ## Adding Menu Items
 
-To add top level "main" menu items use the __RadMenu Items__ collection and the __RadMenuItem Items__ collection for sub menu items. Here are a few examples using overloads of the __RadMenuItem__. The first uses a parameter-less constructor, assigns the __RadMenuItem Text__ property and finally adds the menu item to the __RadMenu Items__ collection. The second example uses the easiest way to include and add menu items all at one time where a constructor that has a single string __Text__ parameter. The last example uses a constructor with a second object __Tag__ parameter that you can store any arbitrary data in.
+In order to add top level "main" menu items use the RadMenu.__Items__ collection and the RadMenuItem.__Items__ collection for sub menu items. Here are a few examples using overloads of the __RadMenuItem__. The first uses a parameter-less constructor, assigns the RadMenuItem.__Text__ property and finally adds the menu item to the RadMenu.__Items__ collection. The second example uses the easiest way to include and add menu items all at one time where a constructor that has a single string __Text__ parameter. The last example uses a constructor with a second object __Tag__ parameter that you can store any arbitrary data in.
+
+>caption Figure 1: Adding menu items
 
 ![menus-menu-working-with-radmenu-items-adding-and-removing-items 001](images/menus-menu-working-with-radmenu-items-adding-and-removing-items001.png)
 
@@ -49,7 +49,9 @@ RadMenu1.Items.Add(dvdItem)
 
 ## Adding Sub Menu Items
 
-Adding sub menu items plays by the same rules as adding items to the __RadMenu.Items__ collection except here we use the Items collection of another __RadMenuItem__. In the code example below a reference to the first menu item "Books" is retrieved and several __RadMenuItems__ are added to the "Books" menu __Items__ collection. Also notice that a Click event handler is attached to the last "Bargains" menu item.
+Adding sub menu items plays by the same rules as adding items to the RadMenu.__Items__ collection except here we use the **Items** collection of another __RadMenuItem__. In the code example below a reference to the first menu item *Books* is retrieved and several __RadMenuItems__ are added to the *Books* menu __Items__ collection. Also notice that a **Click** event handler is attached to the last *Bargains* menu item.
+
+>caption Figure 2: Adding sub menu items
 
 ![menus-menu-working-with-radmenu-items-adding-and-removing-items 002](images/menus-menu-working-with-radmenu-items-adding-and-removing-items002.png)
 
@@ -97,11 +99,13 @@ End Sub
 
 ## Adding a RadMenuComboItem
 
-RadMenuComboItems are constructed with no parameters and then the ComboBoxElement Items collection is used to populate the drop-down list.
+**RadMenuComboItems** are constructed with no parameters and then the ComboBoxElement.__Items__ collection is used to populate the drop-down list.
+
+>caption Figure 3: Adding combo item
 
 ![menus-menu-working-with-radmenu-items-adding-and-removing-items 003](images/menus-menu-working-with-radmenu-items-adding-and-removing-items003.png)
 
-#### Adding sub items
+#### Adding combo sub item
 
 {{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=comboItem}} 
 {{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=comboItem}} 
@@ -178,3 +182,8 @@ RadMenu1.Items.Remove(RadMenu1.Items(0))
 ````
 
 {{endregion}}
+
+# See Also
+
+* [RadMenuItem]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem%})
+* [Nesting Controls in Menu Items]({%slug winforms/menus/menu/working-with-radmenu-items/nesting-controls-in-menu-items%})	 
