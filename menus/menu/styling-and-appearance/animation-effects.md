@@ -1,7 +1,7 @@
 ---
 title: Animation Effects
-page_title: Animation Effects | UI for WinForms Documentation
-description: Animation Effects
+page_title: Animation Effects | RadMenu
+description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 slug: winforms/menus/menu/styling-and-appearance/animation-effects
 tags: animation,effects
 published: True
@@ -10,10 +10,6 @@ previous_url: menus-menu-styling-and-appearance-animation-effects
 ---
 
 # Animation Effects
-
-
-
-## 
 
 Three properties control the animation behavior for expand and collapse effects on drop-down menus:
 
