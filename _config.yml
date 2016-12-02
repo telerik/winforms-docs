@@ -861,17 +861,17 @@ navigation:
     scheduler:
         title: Scheduler
         position: 430
-    scheduler/appointments-and-dialogs:
-        title: Appointments and dialogs
-        position: 1
     scheduler/fundamentals:
         title: Fundamentals
-        position: 2
+        position: 1
     scheduler/views:
         title: Views
-        position: 3
+        position: 2
     scheduler/data-binding:
         title: Data Binding
+        position: 3
+    scheduler/appointments-and-dialogs:
+        title: Appointments and dialogs
         position: 4
     scheduler/drag-and-drop:
         title: Drag and Drop
