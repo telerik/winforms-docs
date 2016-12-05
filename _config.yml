@@ -263,6 +263,9 @@ navigation:
     diagram/diagram-tools:
         title: Diagram Tools
         position: 14
+    diagram/drag-and-drop:
+        title: Drag and Drop
+        position: 15
     dock:
         title: Dock
         position: 190
@@ -621,6 +624,12 @@ navigation:
     listview/drag-and-drop:
         title: Drag and Drop
         position: 7
+    listview/editors:
+        title: Editors
+        position: 8
+    listview/customizing-appearance:
+        title: Customizing Appearance
+        position: 9
     listview/export-data:
         title: Export Data
         position: 10
@@ -648,20 +657,23 @@ navigation:
     menus:
         title: Menus
         position: 290
+    menus/application-menu:
+        title: Application Menu
+        position: 0 
     menus/menu:
         title: Menu
-        position: 0
+        position: 1
     menus/contextmenu:
         title: ContextMenu
         position: 2
     menus/menu/usability:
         title: Usability
-        position: 2
+        position: 4
     menus/menu/design-time:
         title: Design Time
-        position: 3
+        position: 2
     menus/menu/working-with-radmenu-items:
-        title: Working with RadMenu Items
+        title: Working with Menu Items
         position: 4
     menus/menu/styling-and-appearance:
         title: Styling and Apppearance

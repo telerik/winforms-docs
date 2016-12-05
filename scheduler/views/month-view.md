@@ -69,7 +69,7 @@ By default the weekends are shown, but you can hide them by using the __ShowWee
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=showWeekend}} 
 
 ````C#
-monthView.ShowWeekend = false;
+monthView.ShowWeekend = true;
 
 ````
 ````VB.NET
@@ -104,7 +104,6 @@ The work days determine the start and end days for the work week. All days outsi
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=workDays}} 
 
 ````C#
-            
 monthView.WorkWeekStart = DayOfWeek.Wednesday;
 monthView.WorkWeekEnd = DayOfWeek.Saturday;
 
@@ -127,7 +126,6 @@ By default the Month view shows 3 weeks at a time, but this can be changed by 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=weekCount}} 
 
 ````C#
-            
 monthView.WeekCount = 5;
 
 ````
@@ -145,7 +143,6 @@ monthView.WeekCount = 5
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=weekDaysCount}} 
 
 ````C#
-            
 int weekDaysCount = monthView.WeekDaysCount;
 
 ````
@@ -164,7 +161,6 @@ It is possible to indicate whether the month view should always display exactly 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=showFullMonth}} 
 
 ````C#
-            
 monthView.ShowFullMonth = true;
 
 ````
@@ -184,7 +180,6 @@ monthView.ShowFullMonth = True
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=showVerticalNavigator}} 
 
 ````C#
-        
 monthView.ShowVerticalNavigator = false;
 
 ````
@@ -201,13 +196,13 @@ monthView.ShowVerticalNavigator = False
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=verticalNavigatorRange}} 
 
 ````C#
-monthView.RangeStartDate = new DateTime(2014, 6, 10);
-monthView.RangeEndDate = new DateTime(2014, 7, 20);
+monthView.RangeStartDate = new DateTime(2016, 6, 10);
+monthView.RangeEndDate = new DateTime(2016, 7, 20);
 
 ````
 ````VB.NET
-monthView.RangeStartDate = New DateTime(2014, 6, 10)
-monthView.RangeEndDate = New DateTime(2014, 7, 20)
+monthView.RangeStartDate = New DateTime(2016, 6, 10)
+monthView.RangeEndDate = New DateTime(2016, 7, 20)
 
 ````
 
@@ -262,7 +257,6 @@ You can set the __ShowFullMonth__ property to force the __SchedulerMonthView__ t
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=showFullMonth}} 
 
 ````C#
-            
 monthView.ShowFullMonth = true;
 
 ````

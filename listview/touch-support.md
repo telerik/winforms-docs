@@ -17,19 +17,29 @@ RadListView supports scrolling, column reorder and column resize operations via 
 
 ## Scrolling
 
-To scroll the control simply drag the whole control to the desired location (left, right, up, down).<br>![listview-touch-support 001](images/listview-touch-support001.png)
+To scroll the control simply drag the whole control to the desired location (left, right, up, down).
 
-Here is the result of scrolling the control down.<br>![listview-touch-support 002](images/listview-touch-support002.png)
+![listview-touch-support 001](images/listview-touch-support001.png)
+
+Here is the result of scrolling the control down.
+
+![listview-touch-support 002](images/listview-touch-support002.png)
 
 ## Column Reorder
 
-In order to reorder the columns, just drag the desired column title to its new location.<br>![listview-touch-support 003](images/listview-touch-support003.png)
+In order to reorder the columns, just drag the desired column title to its new location.
 
-Here you can see the dragged "*Picture*" column from the left of the control to the right of it.<br>![listview-touch-support 004](images/listview-touch-support004.png)
+![listview-touch-support 003](images/listview-touch-support003.png)
+
+Here you can see the dragged "*Picture*" column from the left of the control to the right of it.
+
+![listview-touch-support 004](images/listview-touch-support004.png)
 
 ## Column Resize
 
-Resizing the columns is achieved by the zoom gesture applied to the desired column title.<br>![listview-touch-support 005](images/listview-touch-support005.png)
+Resizing the columns is achieved by the zoom gesture applied to the desired column title.
+
+![listview-touch-support 005](images/listview-touch-support005.png)
 
 And the result is:<br>![listview-touch-support 006](images/listview-touch-support006.png)
 

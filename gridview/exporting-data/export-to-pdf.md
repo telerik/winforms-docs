@@ -320,12 +320,12 @@ Two methods are responsible for exporting data to PDF. Both receive as a paramet
 ````C#
             
 string fileName = "c:\\ExportedData.pdf";
-pdfExporter.RunExport(fileName);
+pdfExporter.RunExport(fileName, new Telerik.WinControls.Export.PdfExportRenderer());
 
 ````
 ````VB.NET
 Dim fileName As String = "c:\ExportedData.pdf"
-pdfExporter.RunExport(fileName)
+pdfExporter.RunExport(fileName, New Telerik.WinControls.Export.PdfExportRenderer())
 
 ````
 
@@ -381,12 +381,12 @@ End Using
 ````C#
             
 string fileNameAsync = "c:\\ExportedDataAsync.pdf";
-pdfExporter.RunExportAsync(fileNameAsync);
+pdfExporter.RunExportAsync(fileNameAsync, new Telerik.WinControls.Export.PdfExportRenderer());
 
 ````
 ````VB.NET
 Dim fileNameAsync As String = "c:\ExportedDataAsync.pdf"
-pdfExporter.RunExportAsync(fileNameAsync)
+pdfExporter.RunExportAsync(fileNameAsync, New Telerik.WinControls.Export.PdfExportRenderer())
 
 ````
 
