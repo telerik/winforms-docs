@@ -71,7 +71,6 @@ Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditor
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditorDialog}} 
 
 ````C#
-            
 this.radScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.EditorDialog;
 
 ````
@@ -90,7 +89,6 @@ Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditor
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=editorViewModeEditorNone}} 
 
 ````C#
-        
 this.radScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditorViewMode.None;
 
 ````

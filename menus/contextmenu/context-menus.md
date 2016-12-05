@@ -1,7 +1,7 @@
 ---
-title: Context Menus
-page_title: Context Menus | UI for WinForms Documentation
-description: Context Menus
+title: Overview
+page_title: Overview | RadContextMenu
+description: RadContextMenu is a non-visual component that sits in the component tray located below the form design surface.
 slug: winforms/menus/contextmenu/context-menus
 tags: context,menus
 published: True
@@ -11,15 +11,15 @@ previous_url: menus-context-menu-getting-started
 
 # Context Menus
 
+To implement context menus use __RadContextMenu__ in your application. __RadContextMenu__ is a non-visual component that sits in the component tray located below the form design surface. __RadContextMenu__, like __RadMenu__, can be themed and has an items collection that accepts __RadMenuItem__, __RadMenuComboBoxItem__, __RadMenuSeparatorItem__ and __RadMenuContextItem__. 
 
+>caption Figure 1: RadContextMenu
 
-## 
-
-To implement context menus use __RadContextMenu__ in your application. __RadContextMenu__ is a non-visual component that sits in the component tray located below the form design surface. __RadContextMenu__, like __RadMenu__, can be themed and has an items collection that accepts __RadMenuItem__, __RadMenuComboBoxItem__, __RadMenuSeparatorItem__ and __RadMenuContextItem__. <br>![menus-context-menu-getting-started 001](images/menus-context-menu-getting-started001.png)
+![menus-context-menu-getting-started 001](images/menus-context-menu-getting-started001.png)
 
 There are two ways to attach a context menu to a given control or portion of a control: 
 
-* For those Rad Controls that have a __ContextMenu__ or __RadContextMenu__ properties you can assign the __RadContextMenu__ in the designer or in code.
+* For those **RadControls** that have a __ContextMenu__ or __RadContextMenu__ properties you can assign the __RadContextMenu__ in the designer or in code.
 
 #### Assigning a RadContextMenu
 
@@ -37,11 +37,11 @@ RadTreeView1.Nodes(0).ContextMenu = RadContextMenu1
 
 {{endregion}} 
 
->note The __ContextMenuStrip__ property refers to a Windows standard control. This property drop down will not display __RadMenu__ or __RadContextMenu__ components that exist on the form.
+>important The __ContextMenuStrip__ property refers to a Windows standard control. This property drop down will not display __RadMenu__ or __RadContextMenu__ components that exist on the form.
 >
 
 
-* Handle the mouse down event for the control that requires the context menu and call the __RadContextMenu.Show()__ method.
+* Handle the mouse down event for the control that requires the context menu and call the RadContextMenu.__Show()__ method.
 
 #### Handling the MouseDown event
 
@@ -70,6 +70,10 @@ End Sub
 ````
 
 {{endregion}} 
+
+# See Also
+
+* [Assign RadContextMenu to Telerik and non-Telerik controls]({%slug winforms/menus/contextmenu/assign-radcontextmenu-to-telerik-and-non-telerik-controls%})
 
 
 
