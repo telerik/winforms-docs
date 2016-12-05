@@ -1,7 +1,7 @@
 ---
 title: Building TPF Based Controls
 page_title: Building TPF Based Controls | Telerik Presentation Framework
-description:RadControls are built by composing RadElement trees instead of overriding the OnPaint method.
+description: RadControls are built by composing RadElement trees instead of overriding the OnPaint method.
 slug: winforms/telerik-presentation-framework/overview/building-tpf-based-controls
 tags: building,tpf,based,controls
 published: True
