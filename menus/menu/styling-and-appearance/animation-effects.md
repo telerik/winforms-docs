@@ -13,7 +13,7 @@ previous_url: menus-menu-styling-and-appearance-animation-effects
 
 Three properties control the animation behavior for expand and collapse effects on drop-down menus:
 
-* The __DropDownAnimationEnabled__ property controls whether the expand and collapse will be animated at all. Set this property to __True__ to enable animation. 
+* The __DropDownAnimationEnabled__ property controls whether the expand and collapse will be animated at all. Set this property to *true* to enable animation. 
 
 * The __DropDownAnimationEasing__ property specifies the precise animation effect that will be applied. You can choose from a number of predefined effects including linear, exponential, elastic, and so on. 
 
@@ -21,7 +21,7 @@ Three properties control the animation behavior for expand and collapse effects 
 
 The example below demonstrates toggling animation on and off, changing animation type and altering the animation speed. 
 
-![menus-menu-styling-and-appearance-animation-effects 001](images/menus-menu-styling-and-appearance-animation-effects001.png)
+![menus-menu-styling-and-appearance-animation-effects 001](images/menus-menu-styling-and-appearance-animation-effects001.gif)
 
 The controls used in the example are:
 
@@ -36,6 +36,8 @@ The controls used in the example are:
 * __RadDropDownList__ named "ddlAnimation".  
 
 To load the __RadDropDownList__ with members of the __RadEasingType__ enumeration add the following code to a __Form Load__ event handler. This code iterations the enumeration and adds both the string representation and the enumerated value itself. 
+
+#### Animation effects
 
 {{source=..\SamplesCS\Menus\Menu\AnimationEffects.cs region=easingTypes}} 
 {{source=..\SamplesVB\Menus\Menu\AnimationEffects.vb region=easingTypes}} 
@@ -66,13 +68,13 @@ ddlAnimation.SelectedIndex = 0
 
 The example requires event handlers for: 
 
-* __RadDropDownList SelectedIndexChanged__ event.
+* RadDropDownList.__SelectedIndexChanged__ event.
 
-* __RadCheckBox ToggleStateChanged__ event.
+* RadCheckBox.__ToggleStateChanged__ event.
 
-* __RadTrackBar ValueChanged__ event.
+* RadTrackBar.__ValueChanged__ event.
 
-When the __RadDropDownList__ selection changes the __RadEasingType__ enumeration value is assigned to the __RadMenu__ __DropDownAnimationEasing__ property. The __RadCheckBox__ __Click__ event handler toggles the __DropDownAnimationEnabled__ property. The __RadTrackBar__ __ValueChanged__ event handler sets the __DropDownAnimationFrames__ property and displays the current value in the label. 
+When the __RadDropDownList__ selection changes, the __RadEasingType__ enumeration value is assigned to the RadMenu.__DropDownAnimationEasing__ property. The RadCheckBox.__Click__ event handler toggles the __DropDownAnimationEnabled__ property. The RadTrackBar.__ValueChanged__ event handler sets the __DropDownAnimationFrames__ property and displays the current value in the label. 
 
 {{source=..\SamplesCS\Menus\Menu\AnimationEffects.cs region=eventHandlers}} 
 {{source=..\SamplesVB\Menus\Menu\AnimationEffects.vb region=eventHandlers}} 
@@ -80,7 +82,12 @@ When the __RadDropDownList__ selection changes the __RadEasingType__ enumeration
 ````C#
 void ddlAnimation_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
 {
-    RadListDataItem item = (sender as RadDropDownListElement).SelectedItem as RadListDataItem;
+    RadDropDownList ddl = sender as RadDropDownList;
+    if (ddl.SelectedItem==null)
+    {
+        return;
+    }
+    RadListDataItem item = ddl.SelectedItem as RadListDataItem;
     radMenu1.DropDownAnimationEasing = (RadEasingType)item.Value;
 }
 void cbEnabled_ToggleStateChanged(object sender, StateChangedEventArgs args)
@@ -89,14 +96,19 @@ void cbEnabled_ToggleStateChanged(object sender, StateChangedEventArgs args)
 }
 void tbFrames_ValueChanged(object sender, EventArgs e)
 {
-    object trackBarValue = (sender as RadTrackBar).Value;
+    int trackBarValue = (int)(sender as RadTrackBar).Value;
     lblFrames.Text = "Frames: " + trackBarValue.ToString();
-    radMenu1.DropDownAnimationFrames = (int)trackBarValue;
+    radMenu1.DropDownAnimationFrames = trackBarValue;
 }
 
 ````
 ````VB.NET
 Private Sub ddlAnimation_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
+    Dim ddl As RadDropDownList = TryCast(sender, RadDropDownList)
+    If ddl.SelectedItem Is Nothing Then
+        Return
+    End If
+
     Dim item As RadListDataItem = TryCast((TryCast(sender, RadDropDownListElement)).SelectedItem, RadListDataItem)
     RadMenu1.DropDownAnimationEasing = CType(item.Value, RadEasingType)
 End Sub
@@ -104,11 +116,17 @@ Private Sub cbEnabled_ToggleStateChanged(ByVal sender As Object, ByVal e As Stat
     RadMenu1.DropDownAnimationEnabled = (TryCast(sender, RadCheckBox)).IsChecked
 End Sub
 Private Sub tbFrames_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-    Dim trackBarValue As Object = (TryCast(sender, RadTrackBar)).Value
+    Dim trackBarValue As Integer = (TryCast(sender, RadTrackBar)).Value
     lblFrames.Text = "Frames: " & trackBarValue.ToString()
-    RadMenu1.DropDownAnimationFrames = CInt(Fix(trackBarValue))
+    RadMenu1.DropDownAnimationFrames = trackBarValue
 End Sub
 
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Menu Item Images]({%slug winforms/menus/menu/styling-and-appearance/menu-item-images-%})	
+* [Menu Background  and Background Image]({%slug winforms/menus/menu/styling-and-appearance/menu-background--and-background-image%})	
+* [Animation Effects]({%slug winforms/menus/menu/styling-and-appearance/animation-effects%})	
