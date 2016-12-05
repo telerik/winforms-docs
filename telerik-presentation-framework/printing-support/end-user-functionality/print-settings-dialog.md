@@ -1,7 +1,7 @@
 ---
 title: Print Settings Dialog
 page_title: Print Settings Dialog | Telerik Presentation Framework
-description: Print Settings Dialog
+description: RadPrintSettingsDialog represents a base dialog for editing printing settings.
 slug: winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog
 tags: print,settings,dialog
 published: True

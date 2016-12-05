@@ -99,7 +99,7 @@ __LightVisualElement__ is a lightweight element which is capable of displaying T
 * __ClipText:__ Determines whether text will be clipped within the calculated text paint rectangle.
           
 
-* __Layout:__ Gets the LayoutManagerPart which is responsible for the layout
+* __Layout:__ Gets the LayoutManagerPart which is responsible for the layout. Use this property to set the margins of left, right parts separately.
           
 
 * __ImageTransparentColor:__ Transparent color to be used for the image.

@@ -1,7 +1,7 @@
 ---
 title: Watermark Dialog
 page_title: Watermark Dialog | Telerik Presentation Framework
-description: Watermark Dialog
+description: The watermark preview dialog allows the user to set up the watermark of the associated RadPrintDocument.
 slug: winforms/telerik-presentation-framework/printing-support/end-user-functionality/watermark-dialog
 tags: watermark,dialog
 published: True
