@@ -25,19 +25,18 @@ The __RadMenuContentItem__ is a container menu item that allows you to build up 
 ````C#
 void Form1_Load(object sender, EventArgs e)
 {
-RadMenuContentItem textBoxContentItem = new RadMenuContentItem();
-RadTextBoxElement textBox = new RadTextBoxElement();
-textBox.Text = "Enter text here";
-textBox.MinSize = new Size(100, 0);
-textBoxContentItem.ContentElement = textBox; 
-radMenu1.Items.Add(textBoxContentItem);
-RadMenuContentItem buttonContentItem = new RadMenuContentItem();
-RadButtonElement button = new RadButtonElement();
-button.Text = "OK";
-button.Click += new EventHandler(button_Click);
-buttonContentItem.ContentElement = button; 
-radMenu1.Items.Add(buttonContentItem);
-
+    RadMenuContentItem textBoxContentItem = new RadMenuContentItem();
+    RadTextBoxElement textBox = new RadTextBoxElement();
+    textBox.Text = "Enter text here";
+    textBox.MinSize = new Size(100, 0);
+    textBoxContentItem.ContentElement = textBox; 
+    radMenu1.Items.Add(textBoxContentItem);
+    RadMenuContentItem buttonContentItem = new RadMenuContentItem();
+    RadButtonElement button = new RadButtonElement();
+    button.Text = "OK";
+    button.Click += new EventHandler(button_Click);
+    buttonContentItem.ContentElement = button; 
+    radMenu1.Items.Add(buttonContentItem);
 }
 void button_Click(object sender, EventArgs e)
 {
@@ -48,18 +47,17 @@ void button_Click(object sender, EventArgs e)
 ````
 ````VB.NET
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-Dim textBoxContentItem As New RadMenuContentItem()
-Dim textBox As New RadTextBoxElement()
-textBox.Text = "Enter text here"
-textBox.MinSize = New Size(100, 0)
-textBoxContentItem.ContentElement = textBox
-RadMenu1.Items.Add(textBoxContentItem)
-Dim buttonContentItem As New RadMenuContentItem()
-Dim button As New RadButtonElement()
-button.Text = "OK"
-buttonContentItem.ContentElement = button
-RadMenu1.Items.Add(buttonContentItem)
-
+    Dim textBoxContentItem As New RadMenuContentItem()
+    Dim textBox As New RadTextBoxElement()
+    textBox.Text = "Enter text here"
+    textBox.MinSize = New Size(100, 0)
+    textBoxContentItem.ContentElement = textBox
+    RadMenu1.Items.Add(textBoxContentItem)
+    Dim buttonContentItem As New RadMenuContentItem()
+    Dim button As New RadButtonElement()
+    button.Text = "OK"
+    buttonContentItem.ContentElement = button
+    RadMenu1.Items.Add(buttonContentItem)
 End Sub
 Private Sub button_Click(ByVal sender As Object, ByVal e As EventArgs)
     Dim textBox As RadTextBoxElement = TryCast(RadMenu1.Items(0), RadTextBoxElement)

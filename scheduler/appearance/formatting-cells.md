@@ -161,6 +161,12 @@ void radScheduler1_CellFormatting3(object sender, Telerik.WinControls.UI.Schedul
                 e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
             }
         }
+        else
+        {
+            e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+            e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
+            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
+        }
     }
 }
 
@@ -182,6 +188,10 @@ Private Sub radScheduler1_CellFormatting3(ByVal sender As Object, ByVal e As Tel
                 e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
                 e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
             End If
+        Else
+            e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
+            e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
+            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
         End If
     End If
 End Sub
