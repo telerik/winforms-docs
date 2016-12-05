@@ -709,3 +709,5 @@ Go ahead and build and run the application. You are now able to use drag and dro
 
 * [Painting Rows]({%slug winforms/gridview/rows/painting-rows%})
 
+* [RadGridView to RadDiagram Drag and Drop]({%slug winforms/diagram/drag-and-drop/drag-and-drop-from-another-control%})
+
