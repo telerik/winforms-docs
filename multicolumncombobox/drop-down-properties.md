@@ -1,17 +1,23 @@
 ---
-title: Drop down properties
-page_title: Drop down properties | UI for WinForms Documentation
-description: Drop down properties
+title: Drop Down Properties
+page_title: Drop Down Properties | RadMultiColumnComboBox
+description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
 slug: winforms/multicolumncombobox/drop-down-properties
 tags: drop,down,properties
 published: True
-position: 1
+position: 7
 previous_url: multicolumncombobox-drop-down-properties
 ---
 
-# Drop down properties
+# Drop Down Properties
 
-## Drop down Width
+This article lists all important properties that are relevant for the drop down in **RadMultiColumnComboBox**.
+
+## DropDownWidth
+
+The **DropDownWidth** property gets or sets the width of the of the drop-down portion of **RadMultiColumnComboBox**.
+
+#### Setting the DropDownWidth property
 
 {{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=dropDownHeight}} 
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=dropDownHeight}} 
@@ -28,7 +34,15 @@ Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownWidth = 500
 
 {{endregion}}
 
-## Drop down Height
+>caption Figure 1: DropDownWidth
+
+![multicolumncombobox-drop-down-properties 001](images/multicolumncombobox-drop-down-properties001.png)
+
+## DropDownHeight
+
+The **DropDownHeight** property gets or sets the height in pixels of the drop-down portion of **RadMultiColumnComboBox**.
+
+#### Setting the DropDownHeight property
 
 {{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=dropDownWidth}} 
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=dropDownWidth}} 
@@ -45,14 +59,23 @@ Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500
 
 {{endregion}}
 
+>caption Figure 2: DropDownHeight
+
+![multicolumncombobox-drop-down-properties 002](images/multicolumncombobox-drop-down-properties002.png)
+
 ## AutoSizeDropDownToBestFit
 
 It determines whether the drop-down portion of the control will be auto-sized to best fit all columns. The __DropDownWidth__ property must be set to its default value (-1) to allow this setting to work properly.
->caption Fig.1 AutoSizeDropDownToBestFit
 
-![multicolumncombobox-drop-down-properties 001](images/multicolumncombobox-drop-down-properties001.png)
+>caption Figure 3: AutoSizeDropDownToBestFit
+
+![multicolumncombobox-drop-down-properties 003](images/multicolumncombobox-drop-down-properties003.png)
 
 #### AutoSizeDropDownToBestFit
+
+The **AutoSizeDropDownToBestFit** property determines whether the drop-down portion of the control will be auto-sized to best fit all columns. The DropDownWidth property must be set to its default value (-1) to allow this setting to work properly.
+
+#### Autosize the drop down and best-fitting columns
 
 {{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=AutoSizeDropDownToBestFit}} 
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=AutoSizeDropDownToBestFit}} 

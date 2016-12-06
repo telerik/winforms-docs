@@ -684,9 +684,15 @@ navigation:
     multicolumncombobox:
         title: MultiColumnComboBox
         position: 300
+    multicolumncombobox/populating-with-data:
+        title: Populating with data
+        position: 4
+    multicolumncombobox/features:
+        title: Features
+        position: 5
     multicolumncombobox/styling-and-appearance:
         title: Styling and Appearance
-        position: 6		
+        position: 8		
     pageview:
         title: PageView
         position: 310
