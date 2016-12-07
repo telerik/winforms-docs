@@ -58,7 +58,7 @@ public class MyPanelElement : RadElement
         base.CreateChildElements();
         this.text = new TextPrimitive();
         this.text.ZIndex = 2;
-        this.text.Margin = new Padding(39, 45, 0, 0);
+        this.text.Margin = new Padding(30);
         this.text.BindProperty(TextPrimitive.TextProperty, this,
         MyPanelElement.CurrentTimeProperty, PropertyBindingOptions.OneWay);
         this.background = new FillPrimitive();
@@ -112,7 +112,7 @@ Public Class MyPanelElement
         MyBase.CreateChildElements()
         Me.text_ = New TextPrimitive()
         Me.text_.ZIndex = 2
-        Me.text_.Margin = New Padding(39, 45, 0, 0)
+        Me.text_.Margin = New Padding(30)
         Me.text_.BindProperty(TextPrimitive.TextProperty, Me, MyPanelElement.CurrentTimeProperty, PropertyBindingOptions.OneWay)
         Me.background = New FillPrimitive()
         Me.background.GradientStyle = GradientStyles.OfficeGlass

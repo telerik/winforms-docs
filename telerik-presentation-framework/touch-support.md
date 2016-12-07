@@ -32,7 +32,31 @@ To enable or disable a gesture,use the __EnableGesture__ and __DisableGesture__ 
 #### Cascade layout example
 
 {{source=..\SamplesCS\TPF\Touch\TouchGesturesForm.cs region=callingMethods}} 
-{{source=..\SamplesVB\TPF\Touch\TouchGesturesForm.vb region=callingMethods}} 
+{{source=..\SamplesVB\TPF\Touch\TouchGesturesForm.vb region=callingMethods}}
+````C#
+public class MyButton : RadButton
+{
+   
+    public MyButton()
+    {
+      
+        this.EnableGesture(GestureType.All);
+        this.DisableGesture(GestureType.Zoom);
+      
+    }
+}
+
+````
+````VB.NET
+Public Class MyButton
+    Inherits RadButton
+    Public Sub New()
+        Me.EnableGesture(GestureType.All)
+        Me.DisableGesture(GestureType.Zoom)
+    End Sub
+End Class
+
+```` 
 
 {{endregion}} 
 

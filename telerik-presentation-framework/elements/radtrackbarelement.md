@@ -24,9 +24,7 @@ public class MyTrackBarControl : RadControl
     protected override void CreateChildItems(RadElement parent)
     {
         RadTrackBarElement radTrackBarElement = new RadTrackBarElement();
-        radTrackBarElement.ForeColor = Color.SkyBlue;
-        radTrackBarElement.TickColor = Color.Blue;
-        radTrackBarElement.BackColor = Color.LightSteelBlue;
+        radTrackBarElement.ShowTicks = true;
         radTrackBarElement.Minimum = 1;
         radTrackBarElement.Maximum = 100;
         radTrackBarElement.TickFrequency = 10;
@@ -42,9 +40,7 @@ Public Class MyTrackBarControl
     Inherits RadControl
     Protected Overrides Sub CreateChildItems(ByVal parent As RadElement)
         Dim radTrackBarElement As New RadTrackBarElement()
-        radTrackBarElement.ForeColor = Color.SkyBlue
-        radTrackBarElement.TickColor = Color.Blue
-        radTrackBarElement.BackColor = Color.LightSteelBlue
+        radTrackBarElement.ShowTicks = True
         radTrackBarElement.Minimum = 1
         radTrackBarElement.Maximum = 100
         radTrackBarElement.TickFrequency = 10

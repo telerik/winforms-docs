@@ -26,7 +26,37 @@ The __RadOffice2007ScreenTipElement__ is the screen tip that is currently availa
 The following example demonstrates how you can show a tooltip when a `RadListView` item is hovered. Please note that the __Item__ property contains the currently hovered element. 
 
 {{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=screenTips}} 
-{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=screenTips}} 
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=screenTips}}
+````C#
+RadOffice2007ScreenTipElement screenTip = new RadOffice2007ScreenTipElement();
+private void RadListView1_ScreenTipNeeded(object sender, Telerik.WinControls.ScreenTipNeededEventArgs e)
+{
+    var dataItem = e.Item as SimpleListViewVisualItem;
+    if (e.Item != null)
+    {
+        screenTip.CaptionLabel.Text = "Select Employee Name";
+        screenTip.MainTextLabel.Text = "Current: " + dataItem.Text;
+        screenTip.FooterTextLabel.Text = "Thank you!";
+        screenTip.FooterVisible = true;
+        dataItem.ScreenTip = screenTip;
+    }
+}
+
+````
+````VB.NET
+Private screenTip As New RadOffice2007ScreenTipElement()
+Private Sub RadListView1_ScreenTipNeeded(ByVal sender As Object, ByVal e As Telerik.WinControls.ScreenTipNeededEventArgs)
+    Dim dataItem = TryCast(e.Item, SimpleListViewVisualItem)
+    If e.Item IsNot Nothing Then
+        screenTip.CaptionLabel.Text = "Select Employee Name"
+        screenTip.MainTextLabel.Text = "Current: " & dataItem.Text
+        screenTip.FooterTextLabel.Text = "Thank you!"
+        screenTip.FooterVisible = True
+        dataItem.ScreenTip = screenTip
+    End If
+End Sub
+
+```` 
 
 
 {{endregion}} 
@@ -47,7 +77,50 @@ To create custom tooltips you need to create a class that inherits __RadScreenTi
 #### Create custom screen tip
 
 {{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=customTip}} 
-{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=customTip}} 
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=customTip}}
+````C#
+class MyScreenTip : RadScreenTipElement
+{
+    LightVisualElement contentElement = new LightVisualElement();
+    public LightVisualElement ContentElement
+    {
+        get
+        {
+            return contentElement;
+        }
+    }
+    protected override void CreateChildElements()
+    {
+        base.CreateChildElements();
+        contentElement.DrawFill = true;
+        contentElement.DrawText = true;
+        contentElement.GradientStyle = GradientStyles.Solid;
+        contentElement.TextImageRelation = TextImageRelation.ImageBeforeText;
+        this.Children.Add(contentElement);
+    }
+}
+
+````
+````VB.NET
+Friend Class MyScreenTip
+    Inherits RadScreenTipElement
+    Private _contentElement As New LightVisualElement()
+    Public ReadOnly Property ContentElement() As LightVisualElement
+        Get
+            Return _contentElement
+        End Get
+    End Property
+    Protected Overrides Sub CreateChildElements()
+        MyBase.CreateChildElements()
+        _contentElement.DrawFill = True
+        _contentElement.DrawText = True
+        _contentElement.GradientStyle = GradientStyles.Solid
+        _contentElement.TextImageRelation = TextImageRelation.ImageBeforeText
+        Me.Children.Add(_contentElement)
+    End Sub
+End Class
+
+```` 
 
 
 {{endregion}} 
@@ -59,7 +132,35 @@ You can use this element as the default screen tips.
 
 
 {{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=useCustom}} 
-{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=useCustom}} 
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=useCustom}}
+````C#
+MyScreenTip myScreenTip = new MyScreenTip();
+private void RadGridView1_ScreenTipNeeded(object sender, ScreenTipNeededEventArgs e)
+{
+    if (e.Item is GridDataCellElement)
+    {
+        var cell = e.Item as GridDataCellElement;
+        myScreenTip.ContentElement.Text = cell.Text;
+        myScreenTip.ContentElement.Image = img;
+        myScreenTip.ContentElement.BackColor = Color.LightBlue;
+        e.Item.ScreenTip = screenTip;
+    }
+}
+
+````
+````VB.NET
+Private myScreenTip As New MyScreenTip()
+Private Sub RadGridView1_ScreenTipNeeded(ByVal sender As Object, ByVal e As ScreenTipNeededEventArgs)
+    If TypeOf e.Item Is GridDataCellElement Then
+        Dim cell = TryCast(e.Item, GridDataCellElement)
+        myScreenTip.ContentElement.Text = cell.Text
+        myScreenTip.ContentElement.Image = img
+        myScreenTip.ContentElement.BackColor = Color.LightBlue
+        e.Item.ScreenTip = screenTip
+    End If
+End Sub
+
+```` 
 
 
 {{endregion}} 

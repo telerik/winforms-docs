@@ -18,10 +18,36 @@ The tiles are simple elements that can show image and text. The following code s
 
 #### Add Grid to a panorama tile.
 
-{{source=..\SamplesCS\TPF\Elements\MyTrackBarControl.cs region=}} 
-{{source=..\SamplesVB\TPF\Elements\MyTrackBarControl.vb region=}} 
+{{source=..\SamplesCS\TPF\Elements\GridInsidePanorama.cs region=AddGridToItem}} 
+{{source=..\SamplesVB\TPF\Elements\GridInsidePanorama.vb region=AddGridToItem}}
+````C#
+int col = 0;
+private void RadButton1_Click(object sender, EventArgs e)
+{
+    RadGridView grid = new RadGridView();
+    grid.DataSource = GetTable();
+    RadHostItem hostItem = new RadHostItem(grid);
+    RadTileElement panoramaItem = new RadTileElement();
+    panoramaItem.Column = col++;
+    panoramaItem.Children.Add(hostItem);
+    radPanorama1.Items.Add(panoramaItem);
+}
 
+````
+````VB.NET
+Private col As Integer = 0
+Private Sub RadButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim grid As New RadGridView()
+    grid.DataSource = GetTable()
+    Dim hostItem As New RadHostItem(grid)
+    Dim panoramaItem As New RadTileElement()
+    panoramaItem.Column = col
+    col += 1
+    panoramaItem.Children.Add(hostItem)
+    radPanorama1.Items.Add(panoramaItem)
+End Sub
 
+````
 
 {{endregion}}
 

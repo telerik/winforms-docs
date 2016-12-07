@@ -25,7 +25,29 @@ The following example shows how you can use the __ToolTipTextNeeded__ event to s
 #### Setting the tooltip text in the ToolTipTextNeeded event handler.
 
 {{source=..\SamplesCS\TPF\RadToolTip\RadToolTipExample.cs region=LitsViewToolTips}} 
-{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=LitsViewToolTips}} 
+{{source=..\SamplesVB\TPF\RadToolTip\RadToolTipExample.vb region=LitsViewToolTips}}
+````C#
+private void RadListControl1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
+{
+    var item = sender as RadListVisualItem;
+    if (item != null)
+    {
+        var dataItem = item.Data as RadListDataItem;
+        e.ToolTipText = dataItem.Value.ToString();
+    }
+}
+
+````
+````VB.NET
+Private Sub RadListControl1_ToolTipTextNeeded(ByVal sender As Object, ByVal e As Telerik.WinControls.ToolTipTextNeededEventArgs)
+    Dim item = TryCast(sender, RadListVisualItem)
+    If item IsNot Nothing Then
+        Dim dataItem = TryCast(item.Data, RadListDataItem)
+        e.ToolTipText = dataItem.Value.ToString()
+    End If
+End Sub
+
+```` 
 
 
 {{endregion}} 

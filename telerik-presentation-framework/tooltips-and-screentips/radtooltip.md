@@ -150,7 +150,7 @@ void RadToolTipExample_Click(object sender, EventArgs e)
 Private Sub RadToolTipExample_Click(sender As Object, e As EventArgs)
     Dim newToolTip As New RadToolTip()
     newToolTip.Show("A tooltip which appears at mouse position", 2000)
- End Sub
+End Sub
 
 ````
 
