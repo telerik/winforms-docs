@@ -1,11 +1,11 @@
 ---
-title: Using default themes 
+title: Using Themes 
 page_title: Using default themes  | UI for WinForms Documentation
 description: Using default themes 
 slug: winforms/themes/using-default-themes
 tags: using,default,themes,
 published: True
-position: 1
+position: 0
 previous_url: themes-using-default-themes
 ---
 
@@ -53,3 +53,9 @@ End Sub
 ````
 
 {{endregion}}
+
+## Applying theme to all controls in the current form.
+
+When you are working at design time you can change the theme of the form and apply it to all controls on the form. All you need to do is right-click the form and choose the following item:
+ 
+![thmes-using-thmes003](images/thmes-using-thmes003.png)

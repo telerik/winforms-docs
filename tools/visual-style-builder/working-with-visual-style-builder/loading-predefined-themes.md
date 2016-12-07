@@ -11,8 +11,6 @@ previous_url: tools-visual-style-builder-working-with-visual-style-builder-loadi
 
 # Loading Predefined Themes
 
-## 
-
 One of the most exciting features of RadCotnrols for WinForms is that their appearance can be easily customized. Visual Style Builder is the tool that makes the process of customization effortless and pleasant. It allows Telerik customers to create brand new themes from scratch and also modify existing themes. More specifically, VSB provides the opportunity to load and customize a default Telerik theme. This tutorial illustrates step-by-step how to load a default Telerik theme in the Visual Style Builder.
         
 
