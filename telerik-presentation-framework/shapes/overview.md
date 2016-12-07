@@ -29,20 +29,3 @@ The following list shows all shapes currently included in the suite:
 
 
 
-# See Also
-* [Custom Shapes]({%slug winforms/telerik-presentation-framework/diamond-shape%})
-
-* [Diamond Shape]({%slug winforms/telerik-presentation-framework/diamond-shape%})
-
-* [Donut Shape]({%slug winforms/telerik-presentation-framework/donut-shape%})
-
-* [Ellipse Shape]({%slug winforms/telerik-presentation-framework/ellipse-shape%})
-
-* [Heart Shape]({%slug winforms/telerik-presentation-framework/heart-shape%})
-
-* [Media Shape]({%slug winforms/telerik-presentation-framework/media-shape%})
-
-* [RoundRect Shape]({%slug winforms/telerik-presentation-framework/roundrect-shape%})
-
-* [Star Shape]({%slug winforms/telerik-presentation-framework/star-shape%})
-

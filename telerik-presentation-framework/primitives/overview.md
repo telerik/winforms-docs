@@ -53,20 +53,5 @@ Primitives are the elements in the control element tree that are painted to the 
 * [TrackBarPrimitive]({%slug winforms/telerik-presentation-framework/primitives/trackbarprimitive%}): Represents the basic UI of a trackbar, without the trackbar thumb.
           
 
-# See Also
-* [ArrowPrimitive]({%slug winforms/telerik-presentation-framework/primitives/arrowprimitive%})
 
-* [BorderPrimitive]({%slug winforms/telerik-presentation-framework/primitives/borderprimitive%})
-
-* [CheckPrimitive]({%slug winforms/telerik-presentation-framework/primitives/checkprimitive%})
-
-* [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%})
-
-* [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%})
-
-* [GripPrimitive]({%slug winforms/telerik-presentation-framework/primitives/gripprimitive%})
-
-* [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%})
-
-* [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})
 
