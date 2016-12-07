@@ -24,6 +24,7 @@ The following tutorial demonstrates how to setup **RadMultiColumnComboBox** and 
 {{source=..\SamplesVB\MultiColumnComboBox\MCCBgettingStarted.vb region=GettingStarted}} 
 
 ````C#
+        
 private void radMultiColumnComboBox1_SelectedIndexChanged(object sender, EventArgs e)
 {
     if (this.radMultiColumnComboBox1.SelectedIndex > -1)
@@ -33,7 +34,7 @@ private void radMultiColumnComboBox1_SelectedIndexChanged(object sender, EventAr
         this.radLabelElement1.Text = this.radMultiColumnComboBox1.Text;
     }
 }
-
+        
 private Image GetImageFromBytes(byte[] bytes)
 {
     Image result = null;
@@ -72,7 +73,6 @@ Private Sub RadMultiColumnComboBox1_SelectedIndexChanged(sender As Object, e As 
         Me.RadLabelElement1.Text = Me.RadMultiColumnComboBox1.Text
     End If
 End Sub
- 
 Private Function GetImageFromBytes(bytes As Byte()) As Image
     Dim result As Image = Nothing
     Dim stream As System.IO.MemoryStream = Nothing

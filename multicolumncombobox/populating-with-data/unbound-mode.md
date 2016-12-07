@@ -20,7 +20,7 @@ position: 1
 ````C#
 this.radMultiColumnComboBox1.MultiColumnComboBoxElement.Columns.Add("Name");
 this.radMultiColumnComboBox1.MultiColumnComboBoxElement.Columns.Add("Id");
-
+            
 for (int i = 0; i < 10; i++)
 {
     this.radMultiColumnComboBox1.EditorControl.Rows.Add("Item" + i, i);
@@ -30,7 +30,6 @@ for (int i = 0; i < 10; i++)
 ````VB.NET
 Me.radMultiColumnComboBox1.MultiColumnComboBoxElement.Columns.Add("Name")
 Me.radMultiColumnComboBox1.MultiColumnComboBoxElement.Columns.Add("Id")
-
 For i As Integer = 0 To 9
     Me.RadMultiColumnComboBox1.EditorControl.Rows.Add("Item" & i, i)
 Next

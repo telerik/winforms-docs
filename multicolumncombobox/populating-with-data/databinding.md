@@ -128,6 +128,7 @@ You can bind **RadMultiColumnComboBox** programmatically. It is necessary to set
 {{source=..\SamplesVB\MultiColumnComboBox\MCCBgettingStarted.vb region=Binding}} 
 
 ````C#
+            
 this.radMultiColumnComboBox1.DisplayMember = "LastName";
 this.radMultiColumnComboBox1.ValueMember = "EmployeeID";
 this.radMultiColumnComboBox1.DataSource = this.employeesBindingSource;
