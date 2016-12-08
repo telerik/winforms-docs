@@ -38,7 +38,7 @@ Me.RadVirtualGrid1.AllowColumnResize = False
 
 The width of columns can be set individually, per column. Note that the visible width will always include some amount of data even when set to very small amounts. To resize the columns programmatically you can use the following API:
 
->caption Fig.1 Resize a Colulm<br>
+>caption Fig.1 Resize a Column 
 ![virtualgrid-columns-resizing-columns001](images/virtualgrid-columns-resizing-columns001.png)
 
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=ResizeSingleColumn}} 

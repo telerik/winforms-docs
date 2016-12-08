@@ -18,6 +18,9 @@ The __RowFormatting__ event is used to add formatting to grid systems rows: head
 |-2|VirtualGridNewRowElement|
 |-3|VirtualGridFilterRowElement|
 
+>note This would not work properly if the styles of the cells are explicitly set in the theme. For example the TelerikMetro theme explicitly sets the styles of the HeaderRow cells. 
+
+
 ![virtualgrid-rows-formatting-system-rows001](images/virtualgrid-rows-formatting-system-rows001.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridFormattingRows.cs region=SystemRowsFormatting}} 
