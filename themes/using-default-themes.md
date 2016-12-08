@@ -21,9 +21,15 @@ All themes that come with Telerik UI for WinForms since version R2 2008 are avai
 
 If you have installed the suite from the provided installation files, you will see the themes loaded in the Visual Studio toolbox. If you do not see the themes in the toolbox, you will have to [add them manually to the toolbox.]({%slug winforms/installation-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox%})
 
+>caption Figure 1: The themes in the Visual Studio toolbox.
+
+![themes-using-themes001](images/themes-using-themes001.png)
+
 In order to use the Theme components, just drag and drop them from the VS Toolbox to the form. This will add a reference to the corresponding theme assembly in the project and will enable the theme in the ThemeName drop-down of all Telerik controls on the form. All you have to do afterwards is to set the needed theme from the __ThemeName__ drop-down (in the smart tag) or programmatically.
 
-![ThemesUsingTheDefaultThemes001](images/ThemesUsingTheDefaultThemes.png)
+>caption Figure 2: Set the theme at design time using the SmartTag.
+
+![themes-using-themes002](images/themes-using-themes002.png)
 
 ## Setting a default theme for a whole application programmatically
 
@@ -58,4 +64,6 @@ End Sub
 
 When you are working at design time you can change the theme of the form and apply it to all controls on the form. All you need to do is right-click the form and choose the following item:
  
-![thmes-using-thmes003](images/thmes-using-thmes003.png)
+>caption Figure 3: Apply the current form theme to all controls. 
+
+![themes-using-themes003](images/themes-using-themes003.png)
