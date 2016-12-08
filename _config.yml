@@ -873,6 +873,9 @@ navigation:
     scheduler:
         title: Scheduler
         position: 430
+    scheduler/design-time:
+        title: Design-Time
+        position: 1
     scheduler/fundamentals:
         title: Fundamentals
         position: 2

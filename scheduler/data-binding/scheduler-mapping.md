@@ -1,6 +1,6 @@
 ---
 title: Scheduler Mapping
-page_title: Scheduler Mapping | UI for WinForms Documentation
+page_title: Scheduler Mapping | RadScheduler
 description: Scheduler Mapping
 slug: winforms/scheduler/data-binding/scheduler-mapping
 tags: scheduler,mapping
@@ -15,7 +15,7 @@ The __SchedulerMapping__ class is responsible for mapping a single property from
       
 ## Overview
 
-To associate a field with a different type then the scheduler type, for example, a Background ID that is written as a string in the database:
+To associate a field with a different type than the scheduler type, for example, a background id that is written as a string in the database:
 
 1\. Create two methods with the following signatures:
 
@@ -100,7 +100,7 @@ End Function
 
 {{endregion}} 
 
-2\. Apply settings of the BackgroundId mapping in the AppointmentMappingInfo:
+2\. Apply settings of the __BackgroundId__ mapping in the __AppointmentMappingInfo__:
 
 {{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=background}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=background}} 
@@ -174,7 +174,7 @@ locationSchedulerMapping.ConvertToScheduler = New ConvertCallback(AddressOf Me.C
 
 {{endregion}} 
 
-## The ID field is not a Guid, or is not read only in the Data base
+## Not Read-Only Id Field Other than Guid
 
 If the Id field type is different than a Guid, and/or it is not read only in the data table, then you will need to add a converter to convert the type to a Guid. This case holds true for __Resources__ and __Appointments__.
 
@@ -241,5 +241,10 @@ uniqueIdSchedulerMapping.ConvertToDataSource = New ConvertCallback(AddressOf Me.
 
 {{endregion}} 
 
+# See Also
 
-
+* [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Scheduler Mapping]({%slug winforms/scheduler/data-binding/scheduler-mapping%})
+* [Working with Resources]({%slug winforms/scheduler/data-binding/working-with-resources%})
+* [setting Appointments and Resources Relations]({%slug winforms/scheduler/data-binding/setting-appointment-and-resource-relations%})

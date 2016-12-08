@@ -1,7 +1,7 @@
 ---
 title: Binding to Custom Fields
-page_title: Binding to Custom Fields | UI for WinForms Documentation
-description: Binding to Custom Fields
+page_title: Binding to Custom Fields | RadScheduler
+description: RadScheduler__ has full support for binding to custom fields i.e. RadScheduler can be bound to an email field in your data source.
 slug: winforms/scheduler/data-binding/binding-to-custom-fields
 tags: binding,to,custom,fields
 published: True
@@ -11,10 +11,7 @@ previous_url: scheduler-data-binding-binding-to-custom-fields
 
 # Binding to Custom Fields
 
-## 
-
-RadScheduler has full support for binding to custom fields i.e. RadScheduler can be bound to an email field in your data source. The process consists of five steps:
-      
+__RadScheduler__ has full support for binding to custom fields i.e. __RadScheduler__ can be bound to an email field in your data source. The process consists of five steps:      
 
 1. Add your custom field to your data source.
 
@@ -85,6 +82,7 @@ End Class
 
 3\. Implement a simple appointment factory and inherit from the default appointment dialog and add some input controls and logic for your custom field. The easiest way to do the latter is to create a form in Visual Studio that inherits from the standard *Edit Appointment *dialog, then open it in the designer, and add your custom UI. The extended form from the example is shown on the screenshot below (notice the Email field on it):
 
+>caption Figure 1: Appointment with a Custom Field
 ![scheduler-data-binding-binding-to-custom-fields 001](images/scheduler-data-binding-binding-to-custom-fields001.png)
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=customAppFactory}} 
@@ -254,5 +252,14 @@ appointmentMappingInfo.Mappings.Add(new SchedulerMapping("Email", "Email"));
 ````
 
 {{endregion}} 
+
+# See Also
+
+* [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Scheduler Mapping]({%slug winforms/scheduler/data-binding/scheduler-mapping%})
+* [Working with Resources]({%slug winforms/scheduler/data-binding/working-with-resources%})
+* [setting Appointments and Resources Relations]({%slug winforms/scheduler/data-binding/setting-appointment-and-resource-relations%})
+
 
 

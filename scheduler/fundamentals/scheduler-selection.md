@@ -1,7 +1,7 @@
 ---
 title: Scheduler Selection
-page_title: Scheduler Selection | UI for WinForms Documentation
-description: Scheduler Selection
+page_title: Scheduler Selection | RadScheduler
+description: This articles described the default selection behavior as well as how this behavior can be altered by using a custom class.
 slug: winforms/scheduler/fundamentals/scheduler-selection
 tags: scheduler,selection
 published: True
@@ -13,7 +13,7 @@ previous_url: scheduler-fundamentals-scheduler-selection
 
 ## Cell selection
 
-The end user is allowed to perform a single cell selection pressing the left/right mouse button. In order to select a range of cells, it is necessary to hold the Shift key pressed while pressing the mouse button over a specific cell or by dragging through a range of cells. The __CellSelectionChanging__ and the __CellSelectionChanged__ events are fired when the cell selection is altered. The __SchedulerCellSelectingEventArgs__ gives you additional information for the selection range.
+The end user is allowed to perform a single cell selection pressing the left/right mouse button. In order to select a range of cells, it is necessary to hold the *Shift* key pressed while pressing the mouse button over a specific cell or by dragging through a range of cells. The __CellSelectionChanging__ and the __CellSelectionChanged__ events are fired when the cell selection is altered. The __SchedulerCellSelectingEventArgs__ gives you additional information for the selection range.
 
 ## Appointment selection
 
@@ -23,10 +23,10 @@ The end user is allowed to perform a single appointment selection pressing the l
 
 __SchedulerSelectionBehavior__ performs selection operations and provides information about the current selection of cells and appointments in __RadScheduler__.
 
-* Getting the current cell selection: the SelectionBehavior.__CurrentCell__ and the SelectionBehavior. __CurrentCellElement__ properties return the current cell position and the currently  selected __SchedulerCellElement__ respectively. In addition, it is possible to access the range of the selected cells. The SelectionBehavior.__SelectionStartDate__ property returns the start date of the currently selected cell/cell range. The SelectionBehavior.__SelectionEndDate__ property returns the end date of the currently selected cell/cell range. In order to detect whether there are selected cells, use the __HasCellsSelected__ property.
+* Getting the current cell selection: The SelectionBehavior.__CurrentCell__ and the SelectionBehavior. __CurrentCellElement__ properties return the current cell position and the currently  selected __SchedulerCellElement__ respectively. In addition, it is possible to access the range of the selected cells. The SelectionBehavior.__SelectionStartDate__ property returns the start date of the currently selected cell/cell range. The SelectionBehavior.__SelectionEndDate__ property returns the end date of the currently selected cell/cell range. In order to detect whether there are selected cells, use the __HasCellsSelected__ property.
             
 
-* Getting the selected appointment and selected appointments: the SelectionBehavior.__SelectedAppointment__ property returns the currently selected appointment. If the __AllowAppointmentsMultiSelect__ property is set to *true*, you can use the SelectionBehavior.__SelectedAppointments__ property, which returns a collection the currently selected appointments. In order to detect whether there are selected appointments, use the __HasAppointmentsSelected__ property.
+* Getting the selected appointment and selected appointments: The SelectionBehavior.__SelectedAppointment__ property returns the currently selected appointment. If the __AllowAppointmentsMultiSelect__ property is set to *true*, you can use the SelectionBehavior.__SelectedAppointments__ property, which returns a collection the currently selected appointments. In order to detect whether there are selected appointments, use the __HasAppointmentsSelected__ property.
             
 * Programmatically selecting cells and appointments: there are several methods, which allows you to modify the selection.
 
@@ -52,6 +52,8 @@ The default behavior of the  __RadScheduler__ selection can be modified programm
         
 
 1\. This can be achieved by creating a derivative of the __SchedulerSelectionBehavior__:
+
+#### Custom Selection Class
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SchedulerSelectionBehavior}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SchedulerSelectionBehavior}} 
@@ -79,6 +81,8 @@ End Class
 {{endregion}} 
 
 2\. Override the __SelectAppointment__ method and allow selection only for appointments off work hours:
+
+#### Override Method
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SelectAppointment}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SelectAppointment}} 
@@ -112,6 +116,8 @@ End Sub
 
 3\. Apply this behavior to the __RadScheduler__:
 
+#### Set Behavior
+
 {{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=ReplaceSelectionBehavior}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=ReplaceSelectionBehavior}} 
 
@@ -127,5 +133,8 @@ Me.RadScheduler1.SelectionBehavior = New CustomSchedulerSelectionBehavior(Me.Rad
 
 {{endregion}} 
 
+# See Also
 
-
+* [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
+* [Data Binding]({%slug winforms/scheduler/data-binding/introduction%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})

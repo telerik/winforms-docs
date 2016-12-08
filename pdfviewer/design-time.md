@@ -10,7 +10,7 @@ position: 2
 
 # Design Time
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
 ![pdfviewer-design-time 001](images/pdfviewer-design-time001.png)
 
 * __Common Tasks__

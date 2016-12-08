@@ -1,7 +1,7 @@
 ---
 title: Data Binding Walkthrough
-page_title: Data Binding Walkthrough | UI for WinForms Documentation
-description: Data Binding Walkthrough
+page_title: Data Binding Walkthrough | RadScheduler
+description: This walkthrough will cover creating and binding RadScheduler to a data source in a step-by-step manner
 slug: winforms/scheduler/data-binding/data-binding-walkthrough
 tags: data,binding,walkthrough
 published: True
@@ -11,15 +11,14 @@ previous_url: scheduler-data-binding-data-binding-walkthrough
 
 # Data Binding Walkthrough
 
-This walkthrough will cover creating and binding RadScheduler to a data source in a step-by-step manner
+This walkthrough will cover creating and binding __RadScheduler__ to a data source in a step-by-step manner.
 
->note Another example of binding RadScheduler is available in our [Telerik UI for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)
+>note Another example of binding __RadScheduler__ is available in our [Telerik UI for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)
 >
 
+## The Database
 
-## The database
-
-RadScheduler has a very flexible binding system which can cover various binding scenarios. Most of them are covered in the next articles. Here we will cover the scenario with binding to a database in which appointments and resources are in a many-to-many relation. A sample database ships with our products and can be found under [Your installation directory]\Examples\QuickStart\DataSources\SchedulerData.mdb. By default the installation directory is *C:\Program Files\Telerik\UI for WinForms\Version\*
+__RadScheduler__ has a very flexible binding system which can cover various binding scenarios. Most of them are covered in the next articles. Here we will cover the scenario with binding to a database in which appointments and resources are in a many-to-many relation. A sample database ships with our products and can be found under [Your installation directory]\Examples\QuickStart\DataSources\SchedulerData.mdb. By default the installation directory is *C:\Program Files\Telerik\UI for WinForms\Version\*
 
 The following screen shot demonstrates the schema of the database.
 
@@ -27,13 +26,13 @@ The following screen shot demonstrates the schema of the database.
 
 ## Binding the Scheduler
 
-Let’s assume you have added a RadScheduler to your form and you want to bind it to a data source. To do so you must first create and set up a SchedulerBindingDataSource instance. SchedulerBindingDataSource is a component and is available in your toolbox. To setup a SchedulerBindingDataSource, follow these steps:
+Let’s assume you have added a __RadScheduler__ to your form and you want to bind it to a data source. To do so you must first create and set up a SchedulerBindingDataSource instance. SchedulerBindingDataSource is a component and is available in your toolbox. To setup a SchedulerBindingDataSource, follow these steps:
 
 1. Add a __SchedulerBindingDataSource__ from the Toolbox to the form.
 
 1. In the Properties window, open the __EventProvider__ property. Drop down the  __DataSource__ sub-property list and select __Add Project DataSource...__ This step will display the Data Source Configuration Wizard dialog.
 
-    ![scheduler-data-binding-data-binding-walkthrough 002](images/scheduler-data-binding-data-binding-walkthrough002.png)
+![scheduler-data-binding-data-binding-walkthrough 002](images/scheduler-data-binding-data-binding-walkthrough002.png)
 
 1. Complete this wizard by choosing __Access Database File__ connection and selecting the sample database located under the \Examples\DataSources directory. This will create a DataSet component and add it to the component tray below the form designer. ![scheduler-data-binding-data-binding-walkthrough 003](images/scheduler-data-binding-data-binding-walkthrough003.png)
 
@@ -43,29 +42,23 @@ Let’s assume you have added a RadScheduler to your form and you want to bind i
 
 1. Build the project. This step will create several useful adapter components that we will use later to fill the dataset.![scheduler-data-binding-data-binding-walkthrough 006](images/scheduler-data-binding-data-binding-walkthrough006.png)
 
-## Mapping the properties
+## Mapping the Properties
 
-In order to map the fields of your data source to the correct properties of scheduler’s objects,
-          you need to setup two mapping info instances: one of type AppointmentMappingInfo and one of type ResourceMappingInfo.
-          You can do this either through code or in the Visual Studio designer.
-        
+In order to map the fields of your data source to the correct properties of scheduler’s objects, you need to setup two mapping info instances: one of type AppointmentMappingInfo and one of type ResourceMappingInfo. You can do this either through code or in the Visual Studio designer.
 
-To setup appointment mapping at design time, click the Edit Appointment Mapping button in the smart tag menu
-          of your SchedulerBindingDataSource instance. To edit the resource mapping, click the Edit Resource Mapping button.
-        ![scheduler-data-binding-data-binding-walkthrough 007](images/scheduler-data-binding-data-binding-walkthrough007.png)
+To setup appointment mapping at design time, click the Edit Appointment Mapping button in the smart tag menu of your SchedulerBindingDataSource instance. To edit the resource mapping, click the Edit Resource Mapping button. 
+
+![scheduler-data-binding-data-binding-walkthrough 007](images/scheduler-data-binding-data-binding-walkthrough007.png)
 
 When you do so, a dialog will appear letting you choose the field of the data source which should be mapped to the corresponding appointment/resource property.
-        
 
 >note The data source fields should be set prior editing the mapping in order to get automatically populated with data source fields drop downs.
 >
 
-
 >note The Resources property of the AppointmentMappingInfo should be set with the name of the relationthat connects the Appointments and the AppointmentsResources tables. The ResourceId property shouldbe set with the name of the column in the AppointmentsResources table that holds the id of the resource.
 >
 
-
-## Programatically mapping
+## Programatically Mapping
 
 In order to programatically map the fields of your data source to the correct properties of scheduler’s objects, you need to setup two mapping info instances: one of type AppointmentMappingInfo and one of type ResourceMappingInfo and assign them to the SchedulerBindingDataSource instance as it is demonstrated below.
 
@@ -115,7 +108,7 @@ Me.SchedulerBindingDataSource1.ResourceProvider.Mapping = resourceMappingInfo
 
 {{endregion}} 
 
-## Retrieving the data
+## Retrieving the Data
 
 To retrieve the data, first we need to fill the data set:
 
@@ -137,7 +130,7 @@ Me.AppointmentsTableAdapter.Fill(Me.SchedulerDataDataSet.Appointments)
 
 {{endregion}} 
 
->note You should fill the tables in the exact same order if you have already set the DataSource property of RadScheduler. Alternatively, you can just call the DataBind method of RadScheduler after you fill the tables.
+>note You should fill the tables in the exact same order if you have already set the DataSource property of __RadScheduler__. Alternatively, you can just call the __DataBind__ method of __RadScheduler__ after you fill the tables.
 >
 
 Now we need to assign the Appointments and Resources tables from the data set to our SchedulerBindingDataSource (the following can also be set at design time through the Smart Tag of your SchedulerBindingDataSource instance as you can see on the previous image):
@@ -158,7 +151,7 @@ SchedulerBindingDataSource1.EventProvider.DataSource = SchedulerDataDataSet.Appo
 
 {{endregion}} 
 
-Finally, we assign our SchedulerBindingDataSource instance to RadScheduler as its DataSource. This can be achieved either through the Smart Tag of RadScheduler or via code:
+Finally, we assign our SchedulerBindingDataSource instance to __RadScheduler__ as its DataSource. This can be achieved either through the Smart Tag of __RadScheduler__ or via code:
 
 ![scheduler-data-binding-data-binding-walkthrough 008](images/scheduler-data-binding-data-binding-walkthrough008.png)
 
@@ -176,12 +169,12 @@ RadScheduler1.DataSource = SchedulerBindingDataSource1
 
 {{endregion}} 
 
->note If the above steps are not performed in the same order, RadScheduler might not display the appointments. In this case you can try calling the DataBind method of RadScheduler or the Rebind method of SchedulerBindingDataSource.
+>note If the above steps are not performed in the same order, __RadScheduler__ might not display the appointments. In this case you can try calling the __DataBind__ method of __RadScheduler__ or the __Rebind__ method of __SchedulerBindingDataSource__.
 >
 
-## Updating the database
+## Updating the Database
 
-Add the following code to the Click event handler for an "Update" button, which will update the data source. (for more information on saving data, see MSDN:[How to: Update Data by Using a TableAdapter](http://msdn.microsoft.com/en-us/library/ms171933.aspx)).Note that we need to update the added, modified and deleted records in a certain order because of the relations between our tables.We also need to use the two dictionaries to keep track of the automatically generated IDs before and after calling Update. This is due to a synchronization problem between the database and the dataset, where the data adapter could not update correctly the ID of the added row. This happens because the IDs generated locally might differ from the IDs generated from the database(for example when multiple users work simultaneously) and we use this IDs to store the relation between appointments and resources. (Here is an MSDN article which describes this limitation:[Retrieving Identity or Autonumber Values](http://msdn.microsoft.com/en-us/library/ks9f57t0%28VS.71%29.aspx))
+Add the following code to the Click event handler for an "Update" button, which will update the data source. (for more information on saving data, see MSDN:[How to: Update Data by Using a TableAdapter](http://msdn.microsoft.com/en-us/library/ms171933.aspx)).Note that we need to update the added, modified and deleted records in a certain order because of the relations between our tables.We also need to use the two dictionaries to keep track of the automatically generated IDs before and after calling Update. This is due to a synchronization problem between the database and the data set, where the data adapter could not update correctly the ID of the added row. This happens because the IDs generated locally might differ from the IDs generated from the database(for example when multiple users work simultaneously) and we use this IDs to store the relation between appointments and resources. (Here is an MSDN article which describes this limitation:[Retrieving Identity or Autonumber Values](http://msdn.microsoft.com/en-us/library/ks9f57t0%28VS.71%29.aspx))
 
 {{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=update}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=update}} 
@@ -335,4 +328,13 @@ End Sub
 
 {{endregion}} 
 
+>caption Figure 1: Data Bound RadScheduler
 ![scheduler-data-binding-data-binding-walkthrough 009](images/scheduler-data-binding-data-binding-walkthrough009.png)
+
+# See Also
+
+* [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Scheduler Mapping]({%slug winforms/scheduler/data-binding/scheduler-mapping%})
+* [Working with Resources]({%slug winforms/scheduler/data-binding/working-with-resources%})
+* [setting Appointments and Resources Relations]({%slug winforms/scheduler/data-binding/setting-appointment-and-resource-relations%})

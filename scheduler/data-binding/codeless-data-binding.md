@@ -1,7 +1,7 @@
 ---
 title: Codeless data binding
-page_title: Codeless data binding | UI for WinForms Documentation
-description: Codeless data binding
+page_title: Codeless data binding | RadScheduler
+description: This tutorial will show you how to bind RadScheduler from the Visual Studio design time surface, by only using the RadScheduler design-time support, and without writing any code. 
 slug: winforms/scheduler/data-binding/codeless-data-binding
 tags: codeless,data,binding
 published: True
@@ -11,14 +11,12 @@ previous_url: scheduler-data-binding-codeless-data-binding
 
 # Codeless data binding
 
-## 
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Codeless Data Binding with RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/codeless-data-binding-with-radscheduler-winforms)<br>In this video, you will learn how to use the SchedulerBindingDataSource with the RadScheduler for WinForms to quickly and codelessly data bind a RadScheduler. You will also be introduced to the RadSchedulerNavigator, a simple control that makes it easy for users navigate a RadScheduler. (Runtime: 07:04)|![scheduler-data-binding-codeless-data-binding 001](images/scheduler-data-binding-codeless-data-binding001.png)|
 |[Introduction to RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/introduction-radscheduler-winforms)<br>In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)|![scheduler-data-binding-codeless-data-binding 002](images/scheduler-data-binding-codeless-data-binding002.png)|
 
-This tutorial will show you how to bind RadScheduler from the Visual Studio design time surface, by only using the RadScheduler design-time support, and without writing any code. The tutorial uses the data base which comes with the installation of Telerik UI for WinForms.
+This tutorial will show you how to bind __RadScheduler__ from the Visual Studio design time surface, by only using the __RadScheduler__ design-time support, and without writing any code. The tutorial uses the data base which comes with the installation of Telerik UI for WinForms.
 
 1\. Open Visual Studio and start a new Windows Forms project. Open the form, created by the project.
 
@@ -26,7 +24,7 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 
 3\. Drag a __SchedulerBindingDataSource__ from the toolbox to your form.
 
-4\. Select RadScheduler and open its ActionList (smart tag). In it, there is a __DataSource__ property, which is used to specify the __SchedulerBindingDataSource__ component which will be used as a data source in RadScheduler. Select the instance of the __SchedulerBindingDataSource__ that we just added and close the smart tag:
+4\. Select __RadScheduler__ and open its action list (smart tag). In it, there is a __DataSource__ property, which is used to specify the __SchedulerBindingDataSource__ component which will be used as a data source in __RadScheduler__. Select the instance of the __SchedulerBindingDataSource__ that we just added and close the smart tag:
 
 ![scheduler-data-binding-codeless-data-binding 003](images/scheduler-data-binding-codeless-data-binding003.png) 
 
@@ -34,7 +32,7 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 
 ![scheduler-data-binding-codeless-data-binding 004](images/scheduler-data-binding-codeless-data-binding004.png)
 
-6\. Set the __Appointments__ and the __Resources__ data sources. To do that, in the Properties window, open the __EventProvider__ property. Drop down the __DataSource__ sub-property list and select __Add Project DataSource...__ This step will display the Data Source Configuration Wizard dialog. 
+6\. Set the __Appointments__ and the __Resources__ data sources. To do that, in the *Properties* window, open the __EventProvider__ property. Drop down the __DataSource__ sub-property list and select __Add Project DataSource...__ This step will display the Data Source Configuration Wizard dialog. 
 
 ![scheduler-data-binding-codeless-data-binding 005](images/scheduler-data-binding-codeless-data-binding005.png) 
 
@@ -56,37 +54,29 @@ This tutorial will show you how to bind RadScheduler from the Visual Studio desi
 
 11\. In the "Save the Connection String in the Application Configuration File" click the __Next__ button to continue.
 
-12\. In the "Choose Your Database Objects" page of the wizard, select the "Tables" checkbox to automatically select the Appointments, Resources and AppointmentsResources tables.
+12\. In the "Choose Your Database Objects" page of the wizard, select the "Tables" checkbox to automatically select the *Appointments*, *Resources* and *AppointmentsResources* tables.
 
 13\. Click __Finish__ to complete the wizard and close the dialog. This step will create a DataSet component and add it to the component tray below the form designer.
 
-14\. Then you need to edit the mappings between the objects used in RadScheduler and your data source objects. Open the __SchedulerBindingDataSource__ ActionList and specify the __DataSource__ for both the *EventProvider* and *ResourceProvider* to the binding source.
+14\. Then you need to edit the mappings between the objects used in __RadScheduler__ and your data source objects. Open the __SchedulerBindingDataSource__ ActionList and specify the __DataSource__ for both the *EventProvider* and *ResourceProvider* to the binding source.
             
+15\. While still in the __SchedulerBindingDataSource__ ActionList, set the __DataMember__ properties for both the *EventProvider* and *ResourceProvider* to the respective tables.            
 
-15\. While still in the __SchedulerBindingDataSource__ ActionList, set the __DataMember__ properties for both the *EventProvider* and *ResourceProvider* to the respective tables.
-            
+1. The *EventProvider* takes care of the data, related to the Appointments (Events) and has the following properties:                
 
-1. The *EventProvider* takes care of the data, related to the Appointments (Events) and has the following properties:
-                
+	1. Data Source, which should be a DataSet object;                    
 
-	1. Data Source, which should be a DataSet object;
-                    
-
-	1. Data Member, which usually is bound to Appointments (Appointments is the name of the data table in the Data set)
-                    
+	1. Data Member, which usually is bound to Appointments (Appointments is the name of the data table in the Data set)                    
 
 	1. Edit Appointment Mapping (see #16 below) 
 
-1. The *ResourceProvider* takes care of the data, related to Resources and has the following properties:
-                
+1. The *ResourceProvider* takes care of the data, related to Resources and has the following properties:                
 
-	1. Data Source, which should be a DataSet object;
-                    
+	1. Data Source, which should be a DataSet object;                    
 
-	1. Data Member which usually is bound to Resources (Resources is the name of the data table in the Data set)
-                    
+	1. Data Member which usually is bound to Resources (Resources is the name of the data table in the Data set)                    
 
-	1. Edit Resource Mapping (see #17 below) 
+	1. Edit Resource Mapping (see #17 below)
 
 In our case we should set the __DataMember__ properties for both the *EventProvider* and *ResourceProvider* to __Appointments__ and __Resources__ respectively: 
 
@@ -104,7 +94,7 @@ This will invoke the *Appointment Mapping Dialog* which provides you with an eas
 
   1. __[Exceptions]({%slug winforms/scheduler/data-binding/working-with-exceptions%})__ is a self-relation in the dataset, in this case __AppointmentsAppointments__. 
 
-At the end the *Appointment Mapping Dialog* should look like the following screenshot. Save and Close the dialog when done:
+At the end the *Appointment Mapping Dialog* should look like the following screen shot. Save and Close the dialog when done:
 
 ![scheduler-data-binding-codeless-data-binding 008](images/scheduler-data-binding-codeless-data-binding008.png)  
 
@@ -117,6 +107,8 @@ At the end the *Appointment Mapping Dialog* should look like the following scree
 ![scheduler-data-binding-codeless-data-binding 010](images/scheduler-data-binding-codeless-data-binding010.png)
 
 19\. Fill the data tables in the data set:
+
+#### Fill Data
 
 {{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=codelessDatabinding}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=codelessDatabinding}} 
@@ -142,7 +134,9 @@ appointmentsResourcesAdapter.Fill(Me.SchedulerDataDataSet.AppointmentsResources)
 
 {{endregion}} 
 
-20\. Use the __Rebind__ method of the SchedulerBindingDataSource object if the dataset is filled after applying the event provider data source:
+20\. Use the __Rebind__ method of the __SchedulerBindingDataSource__ object if the dataset is filled after applying the event provider data source:
+
+#### Rebind the Binding Source
 
 {{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=Rebind}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=Rebind}} 
@@ -159,3 +153,11 @@ SchedulerBindingDataSource1.Rebind()
 {{endregion}} 
 
 21\. Run the project.
+
+# See Also
+
+* [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Scheduler Mapping]({%slug winforms/scheduler/data-binding/scheduler-mapping%})
+* [Working with Resources]({%slug winforms/scheduler/data-binding/working-with-resources%})
+* [setting Appointments and Resources Relations]({%slug winforms/scheduler/data-binding/setting-appointment-and-resource-relations%})

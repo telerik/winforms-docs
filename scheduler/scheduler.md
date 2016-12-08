@@ -35,8 +35,7 @@ __RadScheduler__ is a highly-customizable appointment presentation component tha
 
 # See Also
 
-* [Design Time]({%slug winforms/scheduler/data-binding/codeless-data-binding%})
-* [Codeless Data Binding]({%slug winforms/scheduler/data-binding/codeless-data-binding%})
+* [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
+* [Data Binding]({%slug winforms/scheduler/data-binding/introduction%})
 * [Views]({%slug winforms/scheduler/views/overview-and-structure%})
-* [Design Time]({%slug winforms/pdfviewer/design-time%})
-* [Element Provider]({%slug winforms/scheduler/fundamentals/scheduler-ruler%})
+* [Element Provider]({%slug winforms/scheduler/fundamentals/scheduler-element-provider-%})
