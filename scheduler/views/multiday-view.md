@@ -14,7 +14,7 @@ previous_url: scheduler-views-multiday-view
 
 ## Overview
 
-MultidayView shows multiple date-time intervals with appointments arranged one next to another. In the screenshot below we have MultidayView with two intervals – the first one starts from July 03 with duration of two days and the second on starts from July 07 with duration of 3 days.![scheduler-views-multiday-view 001](images/scheduler-views-multiday-view001.png)
+MultidayView shows multiple date-time intervals with appointments arranged one next to another. In the screenshot below we have MultidayView with two intervals – the first one starts from November 07 with duration of two days and the second on starts from November 11 with duration of 3 days.![scheduler-views-multiday-view 001](images/scheduler-views-multiday-view001.png)
 
 ## Using MultidayView
 
