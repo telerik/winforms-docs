@@ -683,7 +683,7 @@ myAppointment.Resources.Add(New EventId(resources(i Mod 3).Id))
 
 {{endregion}} 
 
->caption Figure 2: One-to-Many Relation
+>caption Figure 3: Many-to-Many Relation
 ![scheduler-data-binding-binding-to-business-objects 003](images/scheduler-data-binding-binding-to-business-objects003.png)
 
 # See Also

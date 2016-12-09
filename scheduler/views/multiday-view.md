@@ -1,6 +1,6 @@
 ---
 title: MultiDay View
-page_title: MultiDay View | UI for WinForms Documentation
+page_title: MultiDay View | RadScheduler
 description: MultidayView shows multiple date-time intervals with appointments arranged one next to another.
 slug: winforms/scheduler/views/multiday-view
 tags: multiday,view
@@ -11,13 +11,14 @@ previous_url: scheduler-views-multiday-view
 
 # MultiDay View
 
-
 ## Overview
 
-MultidayView shows multiple date-time intervals with appointments arranged one next to another. In the screenshot below we have MultidayView with two intervals – the first one starts from November 07 with duration of two days and the second on starts from November 11 with duration of 3 days.![scheduler-views-multiday-view 001](images/scheduler-views-multiday-view001.png)
+MultidayView shows multiple date-time intervals with appointments arranged one next to another. In the screenshot below we have MultidayView with two intervals – the first one starts from November 07 with duration of two days and the second on starts from November 11 with duration of 3 days.
+
+>caption Figure 1: Multi Day View
+![scheduler-views-multiday-view 001](images/scheduler-views-multiday-view001.png)
 
 ## Using MultidayView
-
 
 1\. In order to set the current view of RadScheduler to MultidayView, use the ActiveViewType or ActiveView properties:
 
@@ -74,3 +75,10 @@ multiDayView.GetAppointmentsInInterval(interval)
 >note  __SchedulerMultiDayView__ inherits the rest of its properties from the base __SchedulerDayView__ and therefore you can refer to the [Day View]({%slug winforms/scheduler/views/day-view%}) article for additional options.
 >
 
+# See Also
+
+* [Common Visual Properties]({%slug winforms/scheduler/views/common-visual-properties%})
+* [Working with Views]({%slug winforms/scheduler/views/working-with-views%})
+* [Views Walkthrough]({%slug winforms/scheduler/views/views-walkthrough%})
+* [Grouping by Resources]({%slug winforms/scheduler/views/grouping-by-resources%})
+* [Exact Time Rendering]({%slug winforms/scheduler/views/exact-time-rendering%})

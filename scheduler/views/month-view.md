@@ -1,6 +1,6 @@
 ---
 title: Month View
-page_title: Month View | UI for WinForms Documentation
+page_title: Month View | RadScheduler
 description: The Month view shows one month at a time, or a preset number of weeks. To move to the next day or previous month, you can use the back and forward keyboard arrows, or the SchedulerNavigator.
 slug: winforms/scheduler/views/month-view
 tags: month,view
@@ -14,17 +14,19 @@ previous_url: scheduler-views-month-view
 ## Month View Overview
 
 The Month view shows one month at a time, or a preset number of weeks. To move to the next day or previous month, you can use the back and forward keyboard arrows, or the [SchedulerNavigator]({%slug winforms/scheduler/scheduler-navigator/overview%}) control.
-        
 
 ## Structure of Month View
 
 The [Month View]({%slug winforms/scheduler/views/month-view%}) of the scheduler simply has a __Header__, __Month Cells__ for every day in the month and zero or more __Appointment Cells__ in each month cell.
 
+>caption Figure 1: Month View
 ![scheduler-views-month-view 008](images/scheduler-views-month-view008.png)
 
-## Setting the Month View
+## Set the Month View
 
 The Week View can be set it to be the default view which the user sees:
+
+#### ActiveViewType Property
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=activeViewType}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=activeViewType}} 
@@ -40,11 +42,13 @@ Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Month
 
 {{endregion}} 
 
-## Getting Month View
+## Get  Month View
 
 To get the instance to the SchedulerMonthView from the RadScheduler object:
 
 * use the __GetMonthView__ method:
+
+#### GetMonthView Method
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=getMonthView}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=getMonthView}} 
@@ -61,9 +65,11 @@ Dim monthView As SchedulerMonthView = Me.RadScheduler1.GetMonthView()
 
 {{endregion}} 
 
-## Showing/hiding the weekend
+## Showing/Hiding The Weekend
 
 By default the weekends are shown, but you can hide them by using the __ShowWeekend__ property:
+
+#### Show Weekend
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=showWeekend}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=showWeekend}} 
@@ -78,7 +84,10 @@ monthView.ShowWeekend = False
 ````
 
 {{endregion}} 
+
 You can also specify which days to be considered weekends. The WorkWeekStart and WorkWeekEnd properties allow you to achieve this:
+
+#### Set Work Week Start
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=workWeek}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=workWeek}} 
@@ -96,9 +105,11 @@ monthView.WorkWeekEnd = DayOfWeek.Thursday
 
 {{endregion}} 
 
-## Changing the start/end work days 
+## Change The Start/End Work Days 
 
 The work days determine the start and end days for the work week. All days outside the work days range are part of the weekend.
+
+#### Start/End Work Days
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=workDays}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=workDays}} 
@@ -116,9 +127,10 @@ monthView.WorkWeekEnd = DayOfWeek.Saturday
 
 {{endregion}} 
 
+>caption Figure 1: Month View
 ![scheduler-views-month-view 001](images/scheduler-views-month-view001.png)![scheduler-views-month-view 002](images/scheduler-views-month-view002.png)
 
-## Setting the number of weeks
+## Setting The Number Of Weeks
 
 By default the Month view shows 3 weeks at a time, but this can be changed by using the __WeekCount__ property (the minimum value is 1 week): 
 

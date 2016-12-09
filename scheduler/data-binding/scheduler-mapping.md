@@ -247,4 +247,4 @@ uniqueIdSchedulerMapping.ConvertToDataSource = New ConvertCallback(AddressOf Me.
 * [Views]({%slug winforms/scheduler/views/overview-and-structure%})
 * [Scheduler Mapping]({%slug winforms/scheduler/data-binding/scheduler-mapping%})
 * [Working with Resources]({%slug winforms/scheduler/data-binding/working-with-resources%})
-* [setting Appointments and Resources Relations]({%slug winforms/scheduler/data-binding/setting-appointment-and-resource-relations%})
+* [Setting Appointments and Resources Relations]({%slug winforms/scheduler/data-binding/setting-appointment-and-resource-relations%})
