@@ -3,7 +3,7 @@ title: Self-Referencing Hierarchy
 page_title: Self-Referencing Hierarchy | RadGridView
 description: This article shows how you can bind RadGridView to self-referencing hierarchy data.
 slug: winforms/gridview/hierarchical-grid/self-referencing-hierarchy
-tags: self-referencing,hierarchy
+tags: self-referencing,hierarchy, treelist
 published: True
 position: 9
 previous_url: gridview-hierarchical-grid-self-referencing-hierarchy
@@ -15,7 +15,7 @@ previous_url: gridview-hierarchical-grid-self-referencing-hierarchy
 | ------ | ------ |
 |[Binding RadGridView to a Self Referencing Hierarchy](http://tv.telerik.com/watch/winforms/binding-radgridview-for-winforms-to-self-referencing-hierarchy)<br>In this video, you will learn how to display a self referencing hierarchy inside of RadGridView for WinForms.|![gridview-hierarchical-grid-self-referencing-hierarchy 002](images/gridview-hierarchical-grid-self-referencing-hierarchy002.png)|
 
-RadGridView allows you to define a relation that points back to the same table. In the cases when the hierarchical data is build from one type of items you can use a self-referencing RadGridView to display the data.
+RadGridView allows you to define a relation that points back to the same table. In the cases when the hierarchical data is build from one type of items you can use a self-referencing RadGridView to display the data. This modes gives you all the functionality a TreeList control would provide, with a lot more.
 
 ## Self-Referencing Example
 

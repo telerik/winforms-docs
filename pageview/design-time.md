@@ -1,7 +1,7 @@
 ---
-title: Design-time
-page_title: Design-time | UI for WinForms Documentation
-description: Design-time
+title: Design Time
+page_title: Design Time | RadPageView
+description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/design-time
 tags: design-time
 published: True
@@ -9,19 +9,19 @@ position: 3
 previous_url: pageview-design-time
 ---
 
-# Design-time
+# Design Time
 
 ## Common properties
 
-The Smart Tag for RadPageView lets you quickly access common tasks involved with building RadPageView elements and customizing its elements. There is a set of properties valid for each of the available view modes:
+The **Smart Tag** for **RadPageView** lets you quickly access common tasks involved with building **RadPageView** elements and customizing its elements. There is a set of properties valid for each of the available view modes:
 
 * __New Theme Manager__: Adds a new [RadThemeManager]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form%}).
 
-* __Edit UI Elements__: Opens a dialog that displays the [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%}). This editor lets you browse all the elements in the control, including the RadTreeView itself, tree nodes and the UI elements that make up each node (e.g. expand and collapse elements and their associated ImagePrimitives objects).
+* __Edit UI Elements__: Opens a dialog that displays the [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%}). This editor lets you browse all the elements in the control.
 
 * __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style at one time.
 
-* __View Mode__: Sets the view mode of RadPageView. The supported modes are *Strip, Stack* and *Outlook*.
+* __View Mode__: Sets the view mode of **RadPageView**. The supported modes are *Strip, Stack*, *Outlook*, *ExplorerBar* and *Backstage*.
 
 * __Item Size Mode__: Determines whether the items should have equal size. The supported modes are *EqualHeight, EqualWidth, EqualSize* and *Individual*.
 
@@ -31,9 +31,15 @@ The Smart Tag for RadPageView lets you quickly access common tasks involved wit
 
 * __Item Spacing__: Determines the spacing between the items in pixels.
 
-* __Add Page__: Clicking on this link will add a new page to RadPageView.Pages collection.
+* __Default Page__: Specifies the default page in **RadPageView**.
 
-* __Remove Page__: Clicking on this will remove the currently selected page in RadPageView.
+* __Add Page__: Clicking on this link will add a new page to RadPageView.**Pages** collection.
+
+* __Remove Page__: Clicking on this will remove the currently selected page in **RadPageView**.
+
+* __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
+
+* __Search__: Search the Telerik site for a given string.       
 
 There are also view-specific properties as shown below:
 
@@ -41,7 +47,7 @@ There are also view-specific properties as shown below:
 
 ![](images/pageview-design-time001.png)
 
-* __Strip Alignment__: Determines the position of the tab items in RadPageView in relation to the content area. It can be *Top*, *Left*, *Bottom* or *Right*.
+* __Strip Alignment__: Determines the position of the tab items in **RadPageView** in relation to the content area. It can be *Top*, *Left*, *Bottom* or *Right*.
 
 * __Item Alignment__: Determines the alignment of items within the strip layout.
 
@@ -62,8 +68,26 @@ There are also view-specific properties as shown below:
 
 ![](images/pageview-design-time003.png)
 
-There are no Outlook view related properties in the Action Menu of RadPageView.
+There are no Outlook view related properties in the Action Menu of **RadPageView**.
 
->caution In order to switch from one Action Menu to another, you should first close the menu by clicking on the Smart Tag and then reopen it again.
+## ExplorerBar
+
+![](images/pageview-design-time004.png)
+
+* **Content Size Mode**: Gets or sets a value that defines how the content areas for each item are sized. The available options are: *FixedLength, AutoSizeToBestFit, EqualLength*.
+
+## Backstage
+
+![](images/pageview-design-time005.png)
+
+* __Strip Alignment__: Determines the position of the tab items in **RadPageView** in relation to the content area. It can be *Top*, *Left*, *Bottom* or *Right*.
+
+* __Item Alignment__: Determines the alignment of items within the strip layout.
+
+* __Item Fit Mode__: Determines the fit mode of the items. The available modes are *None*, *Fill*, *Shrink* and *ShrinkAndFill*.
+
+* __Item Area Width__: Gets or sets the width of the items area.
+
+>caution In order to switch from one Action Menu to another, you should first close the menu by clicking on the **Smart Tag** and then reopen it again.
 >
 

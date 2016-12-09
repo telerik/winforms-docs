@@ -108,7 +108,6 @@ Private Sub ddlAnimation_SelectedIndexChanged(ByVal sender As Object, ByVal e As
     If ddl.SelectedItem Is Nothing Then
         Return
     End If
-
     Dim item As RadListDataItem = TryCast((TryCast(sender, RadDropDownListElement)).SelectedItem, RadListDataItem)
     RadMenu1.DropDownAnimationEasing = CType(item.Value, RadEasingType)
 End Sub

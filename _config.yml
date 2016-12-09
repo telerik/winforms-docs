@@ -684,33 +684,39 @@ navigation:
     multicolumncombobox:
         title: MultiColumnComboBox
         position: 300
+    multicolumncombobox/populating-with-data:
+        title: Populating with data
+        position: 4
+    multicolumncombobox/features:
+        title: Features
+        position: 5
     multicolumncombobox/styling-and-appearance:
         title: Styling and Appearance
-        position: 6		
+        position: 8		
     pageview:
         title: PageView
         position: 310
     pageview/stripview:
         title: StripView
-        position: 4
+        position: 5
     pageview/outlookview:
         title: OutlookView
-        position: 5
+        position: 6
     pageview/explorerbarview:
         title: ExplorerBarView
-        position: 6
+        position: 7
     pageview/stackview:
         title: StackView
-        position: 7
+        position: 8
     pageview/backstageview:
         title: BackStageView
-        position: 8
+        position: 9
     pageview/how-to:
         title: How-To
-        position: 9
+        position: 10
     pageview/localization:
         title: Localization
-        position: 10		
+        position: 11		
     panels-and-labels:
         title: Panels and Labels
         position: 320

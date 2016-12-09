@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: PageView | UI for WinForms Documentation
+page_title: Overview | RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview
 tags: pageview
@@ -11,39 +11,38 @@ previous_url: pageview-overview
 
 # PageView
 
-
-
-## Overview
-
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Getting Started With RadPageView](http://tv.telerik.com/watch/winforms/getting-started-with-radpageview)<br>In this video, you will learn what it takes to get started with RadPageView. You will also learn about its different view modes.|![pageview-overview 001](images/pageview-overview001.png)|
 
-RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views. Here are some of the key RadPageView aspects:
+**RadPageView** is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of sub controls in different views. 
+## RadPageView layout modes
 
-* Extensibility, scalability and ease of use. With the new semantic that lies behind RadPageView, it is very easy to create custom views over a collection of pages.
+**RadPageView** supports the following modes:
 
-* Well thought light element tree, which reduces both memory footprint and User Interaction response time and allows for easy and intuitive styling.
+![pageview-overview 002](images/pageview-overview002.gif)
 
-* Myriad of features in Strip View mode such as animated scrolling, item fit mode, item alignment, item size mode plus much more.
+## Key Features
 
-* Pixel-perfect look-and-feel.
+Here are some of the key **RadPageView** aspects:
+
+* Extensibility, scalability and ease of use. With the new semantic that lies behind **RadPageView**, it is very easy to create custom views over a collection of pages.
+
+* Well thought light element tree, which reduces both memory footprint and user interaction response time and allows for easy and intuitive styling.
+
+* Myriad of features in *Strip View* mode such as animated scrolling, items fit mode, items alignment, item size mode plus much more.
+
+* Pixel-perfect look and feel.
 
 * Polished and intuitive design-time support.
 
 * Optional Header and Footer visual elements to emphasize on each item’s role in the application.
 
-## RadPageView layout modes
+# See Also
 
-RadPageView supports the following modes:
+* [Upgrading to RadPageView]({%slug winforms/pageview/upgrading-to-radpageview%})	
+* [Design Time]({%slug winforms/pageview/design-time%})	
+* [Architecture]({%slug winforms/pageview/architecture%})	
 
-* Strip view mode:<br>![pageview-overview 002](images/pageview-overview002.png)
 
-* Stack view mode:<br>![pageview-overview 003](images/pageview-overview003.png)
-
-* Outlook view mode:<br>![pageview-overview 004](images/pageview-overview004.png)
-
->note The above three screens are made from one control, which __ViewMode__ property is altered accordingly.
->
 

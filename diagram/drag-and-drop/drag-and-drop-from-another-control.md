@@ -38,22 +38,6 @@ public DiagramDragAndDropGrid()
     svc.PreviewDragOver += svc_PreviewDragOver;
     svc.PreviewDragStart += svc_PreviewDragStart;
 }
-private BindingList<GridModel> GetData()
-{
-    Color[] colors = new Color[] { Color.LightBlue, Color.LightGreen, Color.LightYellow, Color.LightCoral, Color.LightGray, Color.LightCyan };
-    string[] shapes = new string[] { "RoundRect", "Diamond", "Star", "Heart", "Media", "Donut" };
-    BindingList<GridModel> data = new BindingList<GridModel>();
-    for (int i = 0; i < shapes.Length; i++)
-    {
-        data.Add(new GridModel
-        {
-            Id = i + 1,
-            Color = colors[i],
-            Shape = shapes[i]
-        });
-    }
-    return data;
-}
 
 ````
 ````VB.NET
@@ -69,19 +53,6 @@ Sub New()
     AddHandler svc.PreviewDragOver, AddressOf svc_PreviewDragOver
     AddHandler svc.PreviewDragStart, AddressOf svc_PreviewDragStart
 End Sub
-Private Function GetData() As BindingList(Of GridModel)
-    Dim colors As Color() = New Color() {Color.LightBlue, Color.LightGreen, Color.LightYellow, Color.LightCoral, Color.LightGray, Color.LightCyan}
-    Dim shapes As String() = New String() {"RoundRect", "Diamond", "Star", "Heart", "Media", "Donut"}
-    Dim data As New BindingList(Of GridModel)()
-    For i As Integer = 0 To shapes.Length - 1
-        data.Add(New GridModel() With {
-             .Id = i + 1,
-             .Color = colors(i),
-             .Shape = shapes(i)
-        })
-    Next
-    Return data
-End Function
 
 ```` 
 
@@ -89,7 +60,7 @@ End Function
 
 {{endregion}}
 
-For the purpose of the example we will define a grid model object holding information about the shapes.
+For the purpose of the example we will define a grid model object storing information about the shapes.
 
 #### Grid Helpers
 
@@ -165,11 +136,9 @@ End Class
 
 {{endregion}}
 
-## Drag and Drop Events
+## Handling Events
 
 __RadDiagram__ will accept the dragged data only if it is dropped on the diagram element. The __PreviewDragDrop__ event handler will be responsible for reading the data and transforming it to a shape.
-
-#### Handling Events
 
 {{source=..\SamplesCS\Diagram\DiagramDragAndDropGrid.cs region=HandleEvents}} 
 {{source=..\SamplesVB\Diagram\DiagramDragAndDropGrid.vb region=HandleEvents}}
@@ -232,6 +201,22 @@ private ElementShape GetShapeFromModel(GridModel data)
     }
     return shape;
 }
+private BindingList<GridModel> GetData()
+{
+    Color[] colors = new Color[] { Color.LightBlue, Color.LightGreen, Color.LightYellow, Color.LightCoral, Color.LightGray, Color.LightCyan };
+    string[] shapes = new string[] { "RoundRect", "Diamond", "Star", "Heart", "Media", "Donut" };
+    BindingList<GridModel> data = new BindingList<GridModel>();
+    for (int i = 0; i < shapes.Length; i++)
+    {
+        data.Add(new GridModel
+        {
+            Id = i + 1,
+            Color = colors[i],
+            Shape = shapes[i]
+        });
+    }
+    return data;
+}
 
 ````
 ````VB.NET
@@ -285,7 +270,19 @@ Private Function GetShapeFromModel(data As GridModel) As ElementShape
     End Select
     Return shape
 End Function
-    
+Private Function GetData() As BindingList(Of GridModel)
+    Dim colors As Color() = New Color() {Color.LightBlue, Color.LightGreen, Color.LightYellow, Color.LightCoral, Color.LightGray, Color.LightCyan}
+    Dim shapes As String() = New String() {"RoundRect", "Diamond", "Star", "Heart", "Media", "Donut"}
+    Dim data As New BindingList(Of GridModel)()
+    For i As Integer = 0 To shapes.Length - 1
+        data.Add(New GridModel() With {
+             .Id = i + 1,
+             .Color = colors(i),
+             .Shape = shapes(i)
+        })
+    Next
+    Return data
+End Function
 'endregion
 Class
 gion HelperClasses

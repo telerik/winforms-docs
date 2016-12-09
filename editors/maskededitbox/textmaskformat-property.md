@@ -11,7 +11,7 @@ previous_url: editors-maskededitbox-textmaskformat
 
 # TextMaskFormat Property
  
-While working with RadMaskedEditBox you may come to a case where you want to get a Value that differs from what the end-user sees in the editor, or, in other words, from what the Text property provides. In such cases the you will find the __TextMaskFormat__ property useful. It allows you to get variations of of the Text property value taking into account whether you want to get the prompt characters, and the literals used in the mask. The type of the TextMaskFormat property is the MaskFormat enum which provides the following values: 
+While working with RadMaskedEditBox you may come to a case where you want to get a Value that differs from what the end-user sees in the editor, or, in other words, from what the Text property provides. In such cases the you will find the __TextMaskFormat__ property useful. It allows you to get variations of the Text property value taking into account whether you want to get the prompt characters, and the literals used in the mask. The type of the TextMaskFormat property is the MaskFormat enum which provides the following values: 
 
 * __IncludePromptAndLiterals__ (default value): The Value property returns Return the text input by the user as well as any literal characters defined in the mask and any instances of the prompt character.
 
