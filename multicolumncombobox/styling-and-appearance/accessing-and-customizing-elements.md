@@ -37,7 +37,7 @@ You can customize the nested elements at run time as well:
 
 ````C#
 this.radMultiColumnComboBox1.MultiColumnComboBoxElement.ArrowButton.Fill.BackColor = Color.Aqua;
-this.radMultiColumnComboBox1.MultiColumnComboBoxElement.TextBoxElement.ForeColor = Color.Red;       
+this.radMultiColumnComboBox1.MultiColumnComboBoxElement.TextBoxElement.ForeColor = Color.Red;
 
 ````
 ````VB.NET
