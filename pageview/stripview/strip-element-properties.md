@@ -1,7 +1,7 @@
 ---
 title: Strip Element Properties
-page_title: Strip Element Properties | UI for WinForms Documentation
-description: Strip Element Properties
+page_title: Strip Element Properties | RadPageView
+description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/stripview/strip-element-properties
 tags: strip,element,properties
 published: True
@@ -10,22 +10,23 @@ previous_url: pageview-stripview-properties
 ---
 
 # Strip Element Properties
+ 
+You can use the following properties to change the behavior of the Strip View:
 
-## 
-
-You can use the following properties to change the behavior of the StripView
-
-* __ShowItemCloseButton:__ Shows/hides the tabs close button.
-
-* __ShowItemPinButton:__ Shows/hides the pin button. This button allows you to pin some of the tabs.
-
-* __StripButtons:__ Controls which strip button are currently visible. Detailed information is available here: [Scrolling and Overflow (strip buttons)]({%slug winforms/pageview/stripview/scrolling-and-overflow-(strip-buttons)%})
-
-* __ItemAlignment:__ Allows you to align the items.The possible values are: *Near, Center, Far*.
-
-* __StripAlignment:__ Allows you to align the entire strip. The possible values are: *Bottom, Left, Top, Right*.    
-
-* __PreviewItem:__ You can use this property to set the preview item. This item is opened for preview on the far side of the regular items. ![pageview-strip-view-properties 001](images/pageview-strip-view-properties001.png)
+|Property|Description|
+|----|----|
+|__ShowItemCloseButton__|Shows/hides the tabs close button.|
+|__ShowItemPinButton__|Shows/hides the pin button. This button allows you to pin some of the tabs.|
+|__StripButtons__|Controls which strip button are currently visible. Detailed information is available here: [Scrolling and Overflow (strip buttons)]({%slug winforms/pageview/stripview/scrolling-and-overflow-(strip-buttons)%})|
+|__ItemAlignment__|Allows you to align the items.The possible values are: *Near, Center, Far*.|
+|__PreviewItem__|You can use this property to set the preview item. This item is opened for preview on the far side of the regular items. <br>![pageview-strip-view-properties 001](images/pageview-strip-view-properties001.png)|
+|__StripAlignment__|Allows you to align the entire strip. The possible values are: *Bottom, Left, Top, Right*.|
+|**NewItemVisibility**|Gets or sets the visibility of the internal NewItem.|
+|**AnimatedStripScrolling**|Determines whether strip scrolling will be animated.|
+|**StripScrollingAnimation**|Gets or sets the easing type of the strip scroll animation.|
+|**ItemContainer**|Gets the container that holds item layout and strip buttons panel.|
+|**ItemFitMode**|Determines the fit mode to be applied when measuring child items.|
+|**MultiLineItemFitMode**|Gets or sets the MultiLineItemFitMode. This mode determines how the multiline layout will behave when control is resizing. |
 
 >important In order to be able to set the above properties you should cast the view element first:
 >
@@ -47,3 +48,10 @@ stripElement.StripButtons = StripViewButtons.All
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Fitting Items]({%slug winforms/pageview/stripview/fitting-items%})	
+* [Scrolling and Overflow (strip buttons)]({%slug winforms/pageview/stripview/scrolling-and-overflow-(strip-buttons)%})	
+* [New Item]({%slug winforms/pageview/stripview/new-item%})	
+* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radpageviewstripelement.htm)	

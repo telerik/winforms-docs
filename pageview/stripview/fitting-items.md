@@ -1,7 +1,7 @@
 ---
 title: Fitting Items
-page_title: Fitting Items | UI for WinForms Documentation
-description: Fitting Items
+page_title: Fitting Items | RadPageView
+description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/stripview/fitting-items
 tags: fitting,items
 published: True
@@ -10,13 +10,9 @@ previous_url: pageview-strip-view-fitting-items
 ---
 
 # Fitting Items
-
-
-
-RadPageView, when its ViewMode is set to Strip allows you to change the behavior of its tabs. Below you can see how.
-
-## 
-
+ 
+**RadPageView**, when its **ViewMode** property is set to *Strip*, it allows you to change the behavior of its tabs. Below you can see how.
+  
 The main property that controls the behavior of the tabs is the __ItemMode__ property of the __RadPageViewStripElement__.
 
 * *None* - Each item uses its desired size.
@@ -40,7 +36,7 @@ stripElement.ItemFitMode = StripViewItemFitMode.None
 
 ![pageview-strip-view-fitting-items 001](images/pageview-strip-view-fitting-items001.png)
 
-* *Shrink* - Items are shrinked if their size exceeds the available one.
+* *Shrink* - Items are shrunk if their size exceeds the available one.
 
 {{source=..\SamplesCS\PageView\StripViewFittingItems.cs region=ModeShrink}} 
 {{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeShrink}} 
@@ -57,8 +53,7 @@ stripElement1.ItemFitMode = StripViewItemFitMode.Shrink
 ````
 
 {{endregion}} 
-
-
+ 
 ![pageview-strip-view-fitting-items 002](images/pageview-strip-view-fitting-items002.gif)
 
 * *Fill* - Items are expanded if their size is less than the available one.
@@ -126,7 +121,7 @@ stripElement4.ItemContainer.MinSize = New System.Drawing.Size(0, 50)
 
 ![pageview-strip-view-fitting-items 005](images/pageview-strip-view-fitting-items005.png)
 
-* *MultiLine* - Items are arranged in multiLine layout. You can also set the *MultiLineItemFitMode* property to *None* or *Reflow*. If you set the __MultiLineItemFitMode__ to *None* you will manually need to set the Row of the items:
+* *MultiLine* - Items are arranged in multiLine layout. You can also set the __MultiLineItemFitMode__ property to *None* or *Reflow*. If you set the __MultiLineItemFitMode__ property to *None* you will manually need to set the **Row** property of the items:
 
 {{source=..\SamplesCS\PageView\PageViewMultiLine.cs region=PageViewMultiLineItemFitModeNone}} 
 {{source=..\SamplesVB\PageView\PageViewMultiLine.vb region=PageViewMultiLineItemFitModeNone}} 
@@ -155,7 +150,7 @@ Me.RadPageViewPage5.Item.Row = 3
 
 ![pageview-strip-view-fitting-items 006](images/pageview-strip-view-fitting-items006.gif)
 
-If the property is set to *Reflow*, the layout will automatically calculate these settings:
+If the **MultiLineItemFitMode** property is set to *Reflow*, the layout will automatically calculate these settings:
 
 {{source=..\SamplesCS\PageView\PageViewMultiLine.cs region=PageViewMultiLineItemFitModeReflow}} 
 {{source=..\SamplesVB\PageView\PageViewMultiLine.vb region=PageViewMultiLineItemFitModeReflow}} 
@@ -179,3 +174,9 @@ stripElement1.MultiLineItemFitMode = MultiLineItemFitMode.Reflow
 
 
 ![pageview-strip-view-fitting-items 007](images/pageview-strip-view-fitting-items007.gif)
+
+# See Also
+
+* [New Item]({%slug winforms/pageview/stripview/new-item%})	
+* [Scrolling and Overflow (strip buttons)]({%slug winforms/pageview/stripview/scrolling-and-overflow-(strip-buttons)%})	
+* [Strip Element Properties]({%slug winforms/pageview/stripview/strip-element-properties%})	

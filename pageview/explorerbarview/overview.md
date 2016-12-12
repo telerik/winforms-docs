@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: ExplorerBarView | UI for WinForms Documentation
-description: ExplorerBarView
+page_title: Overview | RadPageView
+description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/explorerbarview
 tags: explorerbarview
 published: True
@@ -11,10 +11,10 @@ previous_url: pageview-explorerbarview-overview
 
 # ExplorerBarView
 
-
-
-## 
-
-The ExplorerBar mode of the RadPageView control is designed to handle multiple visible pages at once by implementing a scrolling mechanism, as well as extended keyboard navigation. This mode introduces three types of content sizing - __FixedLenght__, __AutoSizeToBestFit__ and __EqualLenght__, as well as two types of stack position - __Top__ and __Left__.
+The PageViewMode.ExplorerBar of the **RadPageView** is designed to handle multiple visible pages at once by implementing a scrolling mechanism, as well as extended keyboard navigation. This mode introduces three types of content sizing - *FixedLenght, AutoSizeToBestFit* and *EqualLenght*, as well as two types of stack position - *Top* and *Left*.
 
 ![pageview-explorerbarview-overview 001](images/pageview-explorerbarview-overview001.png)
+
+# See Also
+
+* [Customizing the ExplorerBarView]({%slug winforms/pageview/explorerbarview/customizing-the-explorerbarview%})	
