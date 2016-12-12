@@ -127,12 +127,14 @@ monthView.WorkWeekEnd = DayOfWeek.Saturday
 
 {{endregion}} 
 
->caption Figure 1: Month View
+>caption Figure 2: Start/End Work Days
 ![scheduler-views-month-view 001](images/scheduler-views-month-view001.png)![scheduler-views-month-view 002](images/scheduler-views-month-view002.png)
 
 ## Setting The Number Of Weeks
 
 By default the Month view shows 3 weeks at a time, but this can be changed by using the __WeekCount__ property (the minimum value is 1 week): 
+
+#### Set Number of Weeks
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=weekCount}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=weekCount}} 
@@ -149,7 +151,9 @@ monthView.WeekCount = 5
 {{endregion}} 
 
 
-## Getting the week days displayed
+## Getting The Week Days Displayed
+
+#### Get Week Days
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=weekDaysCount}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=weekDaysCount}} 
@@ -165,9 +169,11 @@ Dim weekDaysCount As Integer = monthView.WeekDaysCount
 
 {{endregion}} 
 
-## Showing full month
+## Showing Full Month
 
 It is possible to indicate whether the month view should always display exactly one month with the respective number of weeks.
+
+#### Full Month
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=showFullMonth}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=showFullMonth}} 
@@ -183,10 +189,12 @@ monthView.ShowFullMonth = True
 
 {{endregion}} 
 
-
+>caption Figure 3: Show Full Month
 ![scheduler-views-month-view 003](images/scheduler-views-month-view003.png)
 
-## Showing/hiding the vertical navigator
+## Showing/Hiding The Vertical Navigator
+
+#### Hiding The Vertical Indicator
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=showVerticalNavigator}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=showVerticalNavigator}} 
@@ -202,7 +210,9 @@ monthView.ShowVerticalNavigator = False
 
 {{endregion}} 
 
-## Setting the vertical navigator range
+## Setting The Vertical Navigator Range
+
+#### Navigator Range
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=verticalNavigatorRange}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=verticalNavigatorRange}} 
@@ -220,12 +230,14 @@ monthView.RangeEndDate = New DateTime(2016, 7, 20)
 
 {{endregion}} 
 
-
+>caption Figure 4: Navigator Range
 ![scheduler-views-month-view 004](images/scheduler-views-month-view004.gif)
 
-## Showing and hiding the week (row) headers
+## Showing And Hiding The Week (Row) Headers
 
-The week (row) headers display the date range presented by the respective row. By clicking on them, the user can navigate to WeekView with the specified range. Showing/hiding the week (row) headers is done through the __ShowWeeksHeader__ property (the default setting is True). To allow or disallow navigating to WeekView  on click, you can set the __EnableWeeksHeader__ property (which also defaults to True)
+The week (row) headers display the date range presented by the respective row. By clicking on them, the user can navigate to WeekView with the specified range. Showing/hiding the week (row) headers is done through the __ShowWeeksHeader__ property (the default setting is True). To allow or disallow navigating to __WeekView__ on click, you can set the __EnableWeeksHeader__ property (which also defaults to True)
+
+#### Showing Weeks Headers
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=showWeeksHeader}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=showWeeksHeader}} 
@@ -243,9 +255,11 @@ monthView.EnableWeeksHeader = True
 
 {{endregion}} 
 
-## Customizing the week (row) header format
+## Customizing The Week (Row) Header Format
 
 RadScheduler uses the [.NET Standard DateTime Format Strings](http://msdn.microsoft.com/en-us/library/az4se3k1(VS.71).aspx), which can be set through the HeaderFormat property (either in design time or through code). The default value is "MMMM dd":
+
+#### Setting A Header Format
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=headerFormat}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=headerFormat}} 
@@ -261,9 +275,11 @@ RadScheduler1.HeaderFormat = "MMMM dd"
 
 {{endregion}}
 
-## Showing an exact month
+## Showing An Exact Month
 
 You can set the __ShowFullMonth__ property to force the __SchedulerMonthView__ to always display exactly one month no matter how many weeks it contains. When this property is enabled, the view will always navigate to the beginning of the previous/next month and the WeekCount will automatically be updated according to the number of weeks in the target month.
+
+#### Full Month
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=showFullMonth}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=showFullMonth}} 
@@ -281,7 +297,9 @@ monthView.ShowFullMonth = True
 
 ## Vertical Scrolling
 
-The vertical scrollbar in MonthView allows for quick navigation in large date ranges.  To show or hide the vertical scrollbar you can use the __ShowVerticalNavigator__ property. When the vertical scrollbar is displayed it can navigate through the date range defined by the __RangeStartDate__ and __RangeEndDate__ properties. These properties do not limit keyboard navigation outside this range but only stand for specifying the range of the vertical scrollbar.
+The vertical scrollbar in __MonthView__ allows for quick navigation in large date ranges.  To show or hide the vertical scrollbar you can use the __ShowVerticalNavigator__ property. When the vertical scrollbar is displayed it can navigate through the date range defined by the __RangeStartDate__ and __RangeEndDate__ properties. These properties do not limit keyboard navigation outside this range but only stand for specifying the range of the vertical scrollbar.
+
+#### Verical Scrolling Range
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=verticalScrolling}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=verticalScrolling}} 
@@ -301,9 +319,11 @@ monthView.RangeEndDate = DateTime.Today.AddYears(1)
 
 {{endregion}} 
 
-## Handling overflown cells
+## Handling Overflown Cells
 
 RadScheduler handles the overflown cells in month view in two ways. The first one is by displaying a cell overflow button at the bottom of each cell that has more appointments than it can display. Clicking on this button opens a DayView set to the same date the cell represents. This way the user can scroll through and preview all appointments. The second way to handle overflown cells is by displaying a scrollbar at the end of each row if this row contains overflown cells. Using the scrollbar the end user can scroll directly through the appointments. Both of these features can be disabled or enabled using the following properties:
+
+#### Appointments Scrolling
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=overflow}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=overflow}} 
@@ -321,11 +341,14 @@ monthView.EnableAppointmentsScrolling = True
 
 {{endregion}} 
 
+>caption Figure 5: Appointments Scrolling
 ![scheduler-views-month-view 005](images/scheduler-views-month-view005.png)
 
-## Modifying the size of rows and columns in MonthView
+## Modifying The Size Of Rows And Columns In MonthView
 
 The __SchedulerMonthViewElement__ allows you to specify different size for the different columns. To manipulate the size of the columns, you can use the __SetColumnWidth__, __GetColumnWidth__, __SetRowHeight__, __GetRowHeight__ methods. The values passed to the SetColumnWidth and SetRowHeight methods are proportional and the actual width of the columns is calculated based on them. By default all columns have a value of 1 and therefore if you set a value of 2 to any column, it will stay twice as bigger compared to the others.
+
+#### Setting Row Height
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=columnRowResize}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=columnRowResize}} 
@@ -345,11 +368,14 @@ monthViewElement.SetColumnWidth(1, 2)
 
 {{endregion}} 
 
+>caption Figure 6: Row Height
 ![scheduler-views-month-view 006](images/scheduler-views-month-view006.png)
 
-## Modifying the size of the headers in MonthView
+## Modifying The Size Of The Headers In MonthView
 
 The month view of RadScheduler contains two headers – the horizontal __MonthViewHeader__, which displays the weekdays on top of the columns, and the vertical __MonthViewVerticalHeader__, which displays the date ranges for each row. You can modify the size of these headers by accessing the respective element and its properties:
+
+#### Headers Size
 
 {{source=..\SamplesCS\Scheduler\Views\MonthView.cs region=headerResize}} 
 {{source=..\SamplesVB\Scheduler\Views\MonthView.vb region=headerResize}} 
@@ -367,5 +393,13 @@ monthViewElement.Header.HeaderHeight = 50
 
 {{endregion}} 
 
-
+>caption Figure 7: Headers Size
 ![scheduler-views-month-view 007](images/scheduler-views-month-view007.png)
+
+# See Also
+
+* [Common Visual Properties]({%slug winforms/scheduler/views/common-visual-properties%})
+* [Working with Views]({%slug winforms/scheduler/views/working-with-views%})
+* [Views Walkthrough]({%slug winforms/scheduler/views/views-walkthrough%})
+* [Grouping by Resources]({%slug winforms/scheduler/views/grouping-by-resources%})
+* [Exact Time Rendering]({%slug winforms/scheduler/views/exact-time-rendering%})

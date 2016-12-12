@@ -1,7 +1,7 @@
 ---
 title: Working with Appointments
-page_title: Working with Appointments | UI for WinForms Documentation
-description: Working with Appointments
+page_title: Working with Appointments | RadScheduler
+description: The article explains how scheduler appointments can be created and modified.
 slug: winforms/scheduler/appointments-and-dialogs/working-with-appointments
 tags: working,with,appointments
 published: True
@@ -21,9 +21,11 @@ previous_url: scheduler-appointments-and-dialogs-working-with-appointments
 | ------ | ------ |
 |Adding Custom Fields to RadScheduler AppointmentsWhen using RadScheduler for WinForms, it will almost always need to be customized in some way. This could come in the form of custom dialogs, context menus, or even custom appointments.In this blog entry, I am going to explain the steps required to add a custom field to RadScheduler. [Read full post ...]( http://blogs.telerik.com/winformsteam/posts/10-04-02/adding_custom_fields_to_radscheduler_for_winforms_appointments.aspx)||
 
-## Creating a new Appointment instance
+## Creating A New Appointment Instance
 
-Use one of many overloads to build a new Appointment instance. The example below creates an appointment that starts "Now", extends for one half hour and has summary and descriptions. You can use the __StatusId__ and __BackgroundId__ appointment properties to provide visual feedback in the left edge and background of each appointment.
+Use one of many overloads to build a new __Appointment__ instance. The example below creates an appointment that starts "Now", extends for one half hour and has summary and descriptions. You can use the __StatusId__ and __BackgroundId__ appointment properties to provide visual feedback in the left edge and background of each appointment.
+
+#### New Appointment
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=creatingAppointment}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=creatingAppointment}} 
@@ -45,7 +47,7 @@ Me.RadScheduler1.Appointments.Add(appointment)
 
 {{endregion}} 
 
-
+>Figure 1: Appointmennt Element
 ![scheduler-appointments-and-dialogs-working-with-appointments 003](images/scheduler-appointments-and-dialogs-working-with-appointments003.png)
 
 ## Customizing Appointments
@@ -60,11 +62,11 @@ Me.RadScheduler1.Appointments.Add(appointment)
 	
 	* 4 = Tentative
 	
-* To extend/replace the __Statuses__ collection, use the __AppointmentStatusInfo__ class:
-            
+* To extend/replace the __Statuses__ collection, use the __AppointmentStatusInfo__ class:            
 
 >note Make sure that the IDs of the statues are unique. It is good to add a new status with an ID bigger than the last filled status.
->
+
+#### Appointment Status
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=addStatus}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=addStatus}} 
@@ -80,8 +82,7 @@ Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple,
 
 {{endregion}} 
 
-* To add new a Background to an appointment, the __Backgrounds__ collection should be used. By default this collection is filled with the following statuses:
-            
+* To add new a Background to an appointment, the __Backgrounds__ collection should be used. By default this collection is filled with the following statuses:            
 
 	* 1 = None
 	
@@ -111,6 +112,7 @@ Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple,
 >note Make sure that the IDs of the Backgrounds are unique. It is good to add a new status with an ID bigger than the last filled status.
 >
 
+#### Appointment Background
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=addBackground}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=addBackground}} 
@@ -126,19 +128,17 @@ Me.RadScheduler1.Backgrounds.Add(New AppointmentBackgroundInfo(12, "test", Color
 
 {{endregion}} 
 
-* In order to change the background of an appointment, use the Appointment's __BackgroundId__ property and choose a value from a value list. 
-            
+* In order to change the background of an appointment, use the Appointment's __BackgroundId__ property and choose a value from a value list.
 
-* In order to change the status of an appointment, use the Appointment's __StatusId__ property and choose a value of the predefined values list. 
-            
+* In order to change the status of an appointment, use the Appointment's __StatusId__ property and choose a value of the predefined values list.
 
 * In order to hide/show an appointment, use the Appointment's __Visible__ property. The value of this property is true by default.
-            
 
 * In order to change Appointment's Summary, Description or Locations strings, use the __Summary__, __Description__ and __Location__ properties of Appointment class.
-            
 
 * In order to change Appointment's text formatting which will reflect on the Start, End, Summary, Location and Description strings, use the __AppointmentTitleFormat__ property:
+
+#### Appointment Title Format
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=appointmentFormat}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=appointmentFormat}} 
@@ -174,10 +174,11 @@ Here is a list with the different elements and their content:
 
 \* {8} – New line or empty string
 
-
 * In order to change Appointment's Start, End, Duration, use the __Start__, __End__, __Duration__ properties of Appointment class.
   
 * In order to change Appointment's tool-tip text, use the Appointment's __ToolTipText__ property:
+
+#### Appointment ToolTip Text
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=toolTipText}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=toolTipText}} 
@@ -195,3 +196,9 @@ appointment.ToolTipText = "Some text"
 
 * In order to enable/disable Appointment's editing and deleting operations, use the Appointment's __AllowEdit__ and __AllowDelete__ properties.
             
+# See Also
+
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Data Binding Introduction]({%slug winforms/scheduler/data-binding/introduction%})
+* [Formatting Appointments]({%slug winforms/scheduler/appearance/formatting-appointments%})
+* [Scheduler Element Provider]({%slug winforms/scheduler/fundamentals/scheduler-element-provider-%})

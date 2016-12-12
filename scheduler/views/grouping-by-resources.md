@@ -1,6 +1,6 @@
 ---
 title: Grouping by Resources
-page_title: Grouping by Resources | UI for WinForms Documentation
+page_title: Grouping by Resources | RadScheduler
 description: RadScheduler control allows you to define custom resources that can be assigned to the appointments.
 slug: winforms/scheduler/views/grouping-by-resources
 tags: grouping,by,resources
@@ -18,9 +18,11 @@ previous_url: scheduler-views-grouping-by-resources
 
 ## Setting up grouping
 
-RadScheduler control allows you to define custom resources that can be assigned to the appointments. Custom resources let you associate additional information with your appointments. Since custom resources have a limited number of values, RadScheduler can group appointments based on the resources associated with them. For example, you can book different facilities for a variety of events.
+The __RadScheduler__ control allows you to define custom resources that can be assigned to the appointments. Custom resources let you associate additional information with your appointments. Since custom resources have a limited number of values, RadScheduler can group appointments based on the resources associated with them. For example, you can book different facilities for a variety of events.
 
-If you want to group RadScheduler by resources you can use the GroupType property. It has two available values – None and Resources.
+If you want to group RadScheduler by resources you can use the __GroupType__ property. It has two available values – None and Resources.
+
+#### Group by Resources
 
 {{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=groupType}} 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=groupType}} 
@@ -36,7 +38,9 @@ Me.RadScheduler1.GroupType = GroupType.Resource
 
 {{endregion}} 
 
-You can add/remove resources using the RadScheduler’s Resources collection. The resources in RadScheduler for Winforms are represented by the Resource class and you can assign it text, color and image values.
+You can add/remove resources using the RadScheduler’s Resources collection. The resources in __RadScheduler__ for Winforms are represented by the Resource class and you can assign it text, color and image values.
+
+#### Resources Collection
 
 {{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=addingResources}} 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=addingResources}} 
@@ -75,7 +79,9 @@ Next i
 
 ## Setting the number of displayed resources
 
-You can use the SchedulerView’s ResourcesPerView property to change the number of visible resources.
+You can use the view’s __ResourcesPerView__ property to change the number of visible resources.
+
+#### Resources Count
 
 {{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=getDayView}} 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=getDayView}} 
@@ -95,6 +101,8 @@ Me.RadScheduler1.ActiveView.ResourcesPerView = 2
 
 Navigating through resources To navigate to a specific resource you can use the __ResourceStartIndex__ property. To access it, you first need to cast the ViewElement to the base type for all grouped views – __SchedulerViewGroupedByResourceElementBase__.
 
+#### Resource Start Index
+
 {{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=resourceNavigation}} 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceNavigation}} 
 
@@ -111,6 +119,8 @@ CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).R
 
 To track when the resource index is changed, you can use the ResourceStartIndexChanging and ResourceStartIndexChanged events. The first one is fired before the index is actually changed and allows you to cancel the action. The second one is fired when the index has changed and the view was updated.
 
+#### Track Index Changes
+
 {{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=resourceNavigationEvents}} 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceNavigationEvents}} 
 
@@ -126,6 +136,8 @@ AddHandler Me.RadScheduler1.ResourceStartIndexChanged, AddressOf radScheduler1_R
 ````
 
 {{endregion}}
+
+#### Handle Events
 
 {{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=resourceNavigationHandlers}} 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceNavigationHandlers}} 
@@ -160,7 +172,9 @@ End Sub
 
 ## Modifying the size of the resources
 
-RadScheduler allows you to specify different size for the different resources. To manipulate the size of the resources, you can use the SetResourceSize and GetResourceSize methods. The values passed to the SetResourceSize method are proportional and the actual size of the resources is calculated based on them. By default all resources have a value of 1 and therefore if you set a value of 2 to any resource, it will stay twice as bigger compared to the others.#_[C#]_
+__RadScheduler__ allows you to specify different size for the different resources. To manipulate the size of the resources, you can use the SetResourceSize and GetResourceSize methods. The values passed to the SetResourceSize method are proportional and the actual size of the resources is calculated based on them. By default all resources have a value of 1 and therefore if you set a value of 2 to any resource, it will stay twice as bigger compared to the others.
+
+#### Define Resource Size
 
 {{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=resourceResizing}} 
 {{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=resourceResizing}} 
@@ -192,3 +206,11 @@ CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).S
 
 >caption Figure 5: Timeline View
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource005.png)
+
+# See Also
+
+* [Common Visual Properties]({%slug winforms/scheduler/views/common-visual-properties%})
+* [Working with Views]({%slug winforms/scheduler/views/working-with-views%})
+* [Views Walkthrough]({%slug winforms/scheduler/views/views-walkthrough%})
+* [Grouping by Resources]({%slug winforms/scheduler/views/grouping-by-resources%})
+* [Exact Time Rendering]({%slug winforms/scheduler/views/exact-time-rendering%})

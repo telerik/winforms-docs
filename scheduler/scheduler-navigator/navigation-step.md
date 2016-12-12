@@ -1,7 +1,7 @@
 ---
 title: Navigation Step
-page_title: Navigation Step | UI for WinForms Documentation
-description: Navigation Step
+page_title: Navigation Step | RadScheduler
+description: RadScheduler offers the ability to navigate through dates by using day/week/month steps. The step is defined by the developer.
 slug: winforms/scheduler/scheduler-navigator/navigation-step
 tags: navigation,step
 published: True
@@ -11,20 +11,15 @@ previous_url: scheduler-scheduler-navigator-navigation-step
 
 # Navigation Step
 
-## 
-
 RadScheduler offers the ability to navigate through dates by using day/week/month steps. The step is defined by the developer.
 
 You can use the following properties to control the Navigation Step behavior:
 
 * __NavigationStepType__ – this property can take the following values: 
 
-
     - *Day* – one day navigation; 
 
-
     - *Week* – one week navigation; 
-
 
     - *Month* – one month navigation. 
 
@@ -51,3 +46,6 @@ You can use the following properties to control the Navigation Step behavior:
         + __NavigationStepType__ is *Month*, and __NavigationStep__ is 1 – in this case the view will be moved with number of days in the month (if the month has more than 28 days, then the view will be moved with 5 weeks instead of 4). When __NavigationStep__ is set to a value bigger than one then the view will move with the week count in the __NavigationStep__ months. This may lead to some date false positives (aka discrepancies) in the Week and Month views when navigating to PREV/NEXT month. 
 
 
+# See Also
+
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
