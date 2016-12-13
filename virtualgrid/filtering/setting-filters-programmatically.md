@@ -4,7 +4,7 @@ page_title: Filtering Overview | UI for WinForms Documentation
 description: Filtering Overview
 slug: winforms/virtualgrid/filtering/setting-filters-programmatically
 tags: virtualgrid, filtering
-published: false
+published: True
 position: 1
 ---
 

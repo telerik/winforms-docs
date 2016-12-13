@@ -52,7 +52,6 @@ It is necessary to handle the __SortChanged__ event which is fired once the __So
 
 >note Please refer to the [Populating with data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%}) help article which demonstrates how to extract the necessary data and fill the virtual grid with data.
 
-![virtualgrid-sorting 003](images/virtualgrid-sorting003.gif)
 
 The following example demonstrates how to achieve sorting functionality in __RadVirtualGrid__ filled with Northwind.Customers table:
 
