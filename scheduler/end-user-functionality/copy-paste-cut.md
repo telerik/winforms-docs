@@ -15,13 +15,13 @@ __RadScheduler__ supports built-in Copy/Paste/Cut functionality, which allows yo
 
 You can control which Clipboard operations are allowed via the RadScheduler.__AllowCopyPaste__ property. The possible values are listed below:
 
-* __Disallow__ The end user is not allowed to copy, paste and cut appointments.
+* __Disallow__:The end user is not allowed to copy, paste and cut appointments.
   
-* __AllowCopy__ The end user is only allowed to copy appointments.
+* __AllowCopy__: The end user is only allowed to copy appointments.
   
-* __AllowCut__ The end user is only allowed to cut appointments.
+* __AllowCut__: The end user is only allowed to cut appointments.
   
-* __AllowPaste__ The end user is only allowed to paste appointments.
+* __AllowPaste__: The end user is only allowed to paste appointments.
   
 * __AllowCopyPaste__: The end user is only allowed to copy and paste appointments.
   
@@ -37,7 +37,7 @@ Copying is a pretty simple operation. After an appointment is selected, press Ct
 
 __RadScheduler__ introduces __AppointmentsCopying__ event which occurs when the scheduler has prepared appropriate data formats that represent the copy selection. This event is fired once for each supported format: *Text*, *Csv*, *ICal*. You can cancel this event if the data is not allowed to be stored to Clipboard in a specific format.
 
->note Additionally, you can use the RadScheduler. __Copy__ method in order to perform programmatically copy functionality.
+>note Additionally, you can use the RadScheduler.__Copy__ method in order to perform programmatically copy functionality.
 >
 
 ## Pasting

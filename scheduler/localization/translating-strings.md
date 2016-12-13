@@ -1,6 +1,6 @@
 ---
-title: Translating Strings
-page_title: Translating Strings | UI for WinForms Documentation
+title: Localizing RadScheduler
+page_title: Localizing RadScheduler | RadScheduler
 description: To localize RadScheduler to display control text and messages in a specific language create a descendant of the RadSchedulerLocalizationProvider class.
 slug: winforms/scheduler/localization/translating-strings
 tags: translating,strings
@@ -9,9 +9,7 @@ position: 0
 previous_url: scheduler-localization-translating-strings
 ---
 
-# Translating Strings
-
-## 
+# Localizing RadScheduler
 
 To localize __RadScheduler__ to display control text and messages in a specific language:
 
@@ -22,6 +20,8 @@ To localize __RadScheduler__ to display control text and messages in a specific 
 * Override the __GetLocalizedString(string id)__ method and provide a translation for the messages. If a translation is not provided, the default value will be returned. This behavior is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement in the example.
 
 Below is a sample implementation of a custom localization provider:
+
+#### Custom Localization Provider
 
 {{source=..\SamplesCS\Scheduler\Localization\CustomSchedulerLocalizationProvider.cs region=schedulerProvider}} 
 {{source=..\SamplesVB\Scheduler\Localization\CustomSchedulerLocalizationProvider.vb region=schedulerProvider}} 
@@ -560,6 +560,8 @@ End Class
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
+#### Change the Current Provider
+
 {{source=..\SamplesCS\Scheduler\Localization\AssignProviders.cs region=assignSchedulerProvider}} 
 {{source=..\SamplesVB\Scheduler\Localization\AssignProviders.vb region=assignSchedulerProvider}} 
 
@@ -574,5 +576,9 @@ RadSchedulerLocalizationProvider.CurrentProvider = New CustomSchedulerLocalizati
 
 {{endregion}} 
 
+# See Also
 
+* [Right-to-Left Support]({%slug winforms/scheduler/localization/right-to-left-support%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Themes and Appearance]({%slug winforms/scheduler/appearance/themes-and-appearance%})
 

@@ -1,7 +1,7 @@
 ---
 title: Export to ICalendar
-page_title: Export to ICalendar | UI for WinForms Documentation
-description: Export to ICalendar
+page_title: Export to ICalendar | RadScheduler
+description: RadScheduler allows you to export appointments in the industry-standard ICalendar format. For that purpose you need to use the Export method of the RadScheduler class.
 slug: winforms/scheduler/importing-and-exporting-appointments/export-to-icalendar
 tags: export,to,icalendar
 published: True
@@ -17,7 +17,9 @@ previous_url: scheduler-importing-and-exporting-appointments-export-to-icalendar
 |-----|
 |Have you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs.[(Runtime: 32:46)](http://www.telerik.com/videos/winforms/using-radscheduler-for-winforms)|
 
-RadScheduler allows you to export appointments in the industry-standard ICalendar format. For that purpose you need to use the __Export__ method of the RadScheduler class. By using this method you can easily export the appointments in a given SchedulerICalendarExporter instance to a string:
+__RadScheduler__ allows you to export appointments in the industry-standard ICalendar format. For that purpose you need to use the __Export__ method of the RadScheduler class. By using this method you can easily export the appointments in a given SchedulerICalendarExporter instance to a string:
+
+#### Export to String
 
 {{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalExport}} 
 {{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalExport}} 
@@ -34,6 +36,8 @@ Dim exportResult As String = Me.RadScheduler1.Export(New SchedulerICalendarExpor
 {{endregion}} 
 
 Another override of the __Export__ method allows writing the appointment data to a Stream. The following example demonstrates how easy it is to export the appointment data contained in a RadScheduler instance to a file:
+
+#### Export to Stream
 
 {{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalEFile}} 
 {{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalEFile}} 
@@ -53,3 +57,9 @@ End Using
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})
+* [Data Binding]({%slug winforms/scheduler/data-binding/introduction%})

@@ -902,28 +902,28 @@ navigation:
         position: 7
     scheduler/end-user-functionality:
         title: End User Functionality
-        position: 8
+        position: 9
     scheduler/context-menu:
         title: Context Menu
-        position: 9
+        position: 10
     scheduler/importing-and-exporting-appointments:
         title: Importing and Exporting Appointments
-        position: 10
+        position: 11
     scheduler/localization:
         title: Localization
-        position: 11
+        position: 12
     scheduler/reminders:
         title: Reminders
-        position: 12
+        position: 13
     scheduler/appearance:
         title: Appearance
-        position: 13
+        position: 14
     scheduler/how-to:
         title: How-To
-        position: 14
+        position: 15
     scheduler/print-support:
         title: Print Support
-        position: 15
+        position: 16
     shortcuts:
         title: Shortcuts
         position: 440

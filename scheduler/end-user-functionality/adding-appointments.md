@@ -11,7 +11,7 @@ previous_url: scheduler-end-user-functionality-adding-appointments
 
 # Adding Appointments
 
-Much like Microsoft Outlook, RadScheduler for WinForms offers several ways of creating new appointments:
+Much like Microsoft Outlook, __RadScheduler__ for WinForms offers several ways of creating new appointments:
 
 * By double-clicking on the scheduler surface.
 

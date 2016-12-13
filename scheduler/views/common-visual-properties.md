@@ -93,7 +93,7 @@ Me.RadScheduler1.ViewElement.AppointmentMargin = New Padding(5, 0, 10, 0)
 
 {{endregion}}
 
->caption Figure 2: Appointments Spacing
+>caption Figure 3: Appointments Spacing
 ![scheduler-views-common-visual-properties 003](images/scheduler-views-common-visual-properties003.png)
 
 # See Also

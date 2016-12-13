@@ -21,7 +21,7 @@ Designed as a stand-alone component, __RadSchedulerNavigator__ can be bound to a
 >caption Figure 2: RadSchedulerNavigator Designer
 ![scheduler-scheduler-navigator-overview 002](images/scheduler-scheduler-navigator-overview002.png)
 
-RadSchedulerNavigator is built using *Telerik Presentation Framework *so it can be easily themed with the *Visual Style Builder*:
+__RadSchedulerNavigator__ is built using *Telerik Presentation Framework *so it can be easily themed with the *Visual Style Builder*:
 
 >caption Figure 3: RadSchedulerNavigator Themes
 ![scheduler-scheduler-navigator-overview 003](images/scheduler-scheduler-navigator-overview003.png)

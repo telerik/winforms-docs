@@ -13,6 +13,8 @@ previous_url: scheduler-appointments-and-dialogs-adding-tooltips-to-appointments
 
 You can create and associate a tooltip to an appointment in __RadScheduler__ by setting the __ToolTipText__ property to a string. The following example creates a new ToolTip with a custom text. This example uses the __ToolTipText__ property of the Appointment class:
 
+#### Add Appointment Tooltip
+
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=toolTips}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=toolTips}} 
 

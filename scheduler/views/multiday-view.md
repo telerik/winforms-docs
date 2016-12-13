@@ -13,14 +13,14 @@ previous_url: scheduler-views-multiday-view
 
 ## Overview
 
-MultidayView shows multiple date-time intervals with appointments arranged one next to another. In the screenshot below we have MultidayView with two intervals – the first one starts from November 07 with duration of two days and the second on starts from November 11 with duration of 3 days.
+__MultidayView__ shows multiple date-time intervals with appointments arranged one next to another. In the screenshot below we have __MultidayView__ with two intervals – the first one starts from November 07 with duration of two days and the second on starts from November 11 with duration of 3 days.
 
 >caption Figure 1: Multi Day View
 ![scheduler-views-multiday-view 001](images/scheduler-views-multiday-view001.png)
 
 ## Using MultidayView
 
-1\. In order to set the current view of RadScheduler to MultidayView, use the ActiveViewType or ActiveView properties:
+1\. In order to set the current view of __RadScheduler__ to __MultidayView__, use the __ActiveViewType__ or __ActiveView__ properties:
 
 {{source=..\SamplesCS\Scheduler\Views\MultiDayView.cs region=multiDay}} 
 {{source=..\SamplesVB\Scheduler\Views\MultiDayView.vb region=multiDay}} 

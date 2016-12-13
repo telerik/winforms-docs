@@ -41,7 +41,7 @@ dayView.RulerEndScale = 5
 
 After running the code, the day view for the scheduler looks like this screenshot:
 
->caption 1: Day View
+>caption Figure 1: Day View
 ![scheduler-views-working-with-views 001](images/scheduler-views-working-with-views001.png)
 
 Change between views by changing the __ActiveViewType__ property to one of the __SchedulerViewType__ enumeration members.

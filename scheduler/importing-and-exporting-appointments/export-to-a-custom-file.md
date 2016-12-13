@@ -1,7 +1,7 @@
 ---
 title: Import/Export to a Custom File
-page_title: Import/Export to a Custom File | UI for WinForms Documentation
-description: Import/Export to a Custom File
+page_title: Import/Export to a Custom File | RadScheduler
+description: The article describes how the RadScheduler appointments can be exported to a custom file.
 slug: winforms/scheduler/importing-and-exporting-appointments/import/export-to-a-custom-file
 tags: import/export,to,a,custom,file
 published: True
@@ -10,8 +10,6 @@ previous_url: scheduler-importing-and-exporting-appointments-import-export-to-a-
 ---
 
 # Import/Export to a Custom File
-
-## 
 
 In order to import/export the scheduler appointments to a custom file you should:
 
@@ -113,3 +111,8 @@ End Using
 
 {{endregion}} 
 
+# See Also
+
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})
+* [Data Binding]({%slug winforms/scheduler/data-binding/introduction%})

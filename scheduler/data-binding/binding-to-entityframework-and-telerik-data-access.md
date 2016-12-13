@@ -17,7 +17,7 @@ For the purpose of this tutorial you can download a sample database from the [ h
 
 After you have mapped your database to local entities your tables should look like this:
 
->caption Figure 1: Tables as Mapped by the ORM
+>caption Figure 1: Tables Mapped by the ORM
 ![scheduler data binding binding to entity framework and telerik data access001](images/scheduler-data-binding-binding-to-entity-framework-and-telerik-data-access001.png)
 
 Now, you need to create a form and add a RadScheduler, in this tutorial it is named *scheduler*. After this we will need to access out data from the database. For this we will need a [DbContext](http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext(v=vs.113).aspx) reference. In my case my DbContext is of type __SchedulerDataEntities1__, so we can create it as follows:
@@ -193,6 +193,7 @@ this.scheduler.GroupType = GroupType.Resource;
 ````
 ````VB.NET
 Me.scheduler.DataSource = schedulerBindingSource
+Me.scheduler.GroupType = GroupType.Resource
 
 ````
 

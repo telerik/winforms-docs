@@ -267,7 +267,7 @@ Public Class CustomAppointment
 
 {{endregion}} 
 
-To use your custom object, create CustomAppointment instances and place them in a generic list before mapping and binding to the SchedulerBindingDataSource component.
+To use your custom object, create CustomAppointment instances and place them in a generic list before mapping and binding to the __SchedulerBindingDataSource__ component.
 
 #### Create Appointments
 

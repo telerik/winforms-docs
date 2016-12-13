@@ -1,7 +1,7 @@
 ---
 title: Customize the ContextMenu
-page_title: Customize the ContextMenu | UI for WinForms Documentation
-description: Customize the ContextMenu
+page_title: Customize the ContextMenu | RadScheduler
+description: RadScheduler gives you the ability to easily customize its default context menu. This can be achieve by using the ContextMenuOppennig event.
 slug: winforms/scheduler/context-menu/customize-the-contextmenu
 tags: customize,the,contextmenu
 published: True
@@ -11,13 +11,12 @@ previous_url: scheduler-context-menu-customize-context-menu
 
 # Customize the ContextMenu
 
-
-
 __RadScheduler__ gives you the ability to easily customize its default context menu. This can be achieve by using the __ContextMenuOppennig__ event.
 
+>caption Figure 1: RadScheduler Context Menu
 ![scheduler-context-menu-customize-context-menu 001](images/scheduler-context-menu-customize-context-menu001.png)
 
-## Replace the default and the appointments context menu.
+## Replace the Default and the Appointments Context Menu.
 
 1. Create a __RadContextMenu__ and add the necessary items to it. Create another __RadContextMenu__ and fill it with items.
 
@@ -53,18 +52,21 @@ End Sub
 
 ````
 
-{{endregion}} 
-
+{{endregion}}
 
 As you can see in the screenshots below, we can set different context menus depending on the element that invokes the context menu creation.
 
+>caption Figure 1: RadScheduler Cell Context Menu
 ![scheduler-context-menu-customize-context-menu 002](images/scheduler-context-menu-customize-context-menu002.png)
 
+>caption Figure 1: RadScheduler Appointment Context Menu
 ![scheduler-context-menu-customize-context-menu 003](images/scheduler-context-menu-customize-context-menu003.png)
 
-## Change the default items or and disable the context menu.
+## Change the Default Items or and Disable the Context Menu.
 
 The __Menu__ property of the __SchedulerContextMenuOpeningEventArgs__ objects gives you the opportunity to change the existing items of the context menu. Also you can entirely disable the context menu by setting the *Cancel*  property to true.  For example you can change the context menu for the appointments and disable the default context menu as follows:
+
+#### Handle ContextMenuOpening
 
 {{source=..\SamplesCS\Scheduler\CustomizeContextMenu.cs region=contextMenuOpening1}} 
 {{source=..\SamplesVB\Scheduler\CustomizeContextMenu.vb region=contextMenuOpening1}} 
@@ -94,7 +96,11 @@ End Sub
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
+# See Also
 
-
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})
+* [Scheduler Navigator]({%slug winforms/scheduler/scheduler-navigator/overview%})
+* [Printing Overview]({%slug winforms/scheduler/print-support%})

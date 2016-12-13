@@ -21,7 +21,7 @@ previous_url: scheduler-appointments-and-dialogs-working-with-appointments
 | ------ | ------ |
 |Adding Custom Fields to RadScheduler AppointmentsWhen using RadScheduler for WinForms, it will almost always need to be customized in some way. This could come in the form of custom dialogs, context menus, or even custom appointments.In this blog entry, I am going to explain the steps required to add a custom field to RadScheduler. [Read full post ...]( http://blogs.telerik.com/winformsteam/posts/10-04-02/adding_custom_fields_to_radscheduler_for_winforms_appointments.aspx)||
 
-## Creating A New Appointment Instance
+## Creating a New Appointment Instance
 
 Use one of many overloads to build a new __Appointment__ instance. The example below creates an appointment that starts "Now", extends for one half hour and has summary and descriptions. You can use the __StatusId__ and __BackgroundId__ appointment properties to provide visual feedback in the left edge and background of each appointment.
 

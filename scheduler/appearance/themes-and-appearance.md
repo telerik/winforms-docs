@@ -1,6 +1,6 @@
 ---
 title: Themes and appearance
-page_title: Themes and appearance | UI for WinForms Documentation
+page_title: Themes and appearance | RadScheduler
 description: The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc.
 slug: winforms/scheduler/appearance/themes-and-appearance
 tags: themes,and,appearance
@@ -10,10 +10,6 @@ previous_url: scheduler-appearance-themes-and-appearance
 ---
 
 # Themes and appearance
-
-
-
-## 
 
 The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc. The themes can be easily switched using a single property:
         
@@ -31,3 +27,9 @@ The control is shipped with a rich set of themes that allow you to easily build 
 
 In addition to the built-in themes for the scheduler navigator, every single area do the Scheduler can be customized, including but not limited to appointments, status indicators (busy, tentative, etc), background (indicating the category it belongs to), text format and positioning, date/time indicators, headers, working time, etc. This is done by using the [Visual Style Builder productivity tool]({%slug winforms/tools/visual-style-builder%}).
         
+# See Also
+
+* [Visual Style Builder]({%slug winforms/themes/visual-style-builder%})
+* [Using Default Themes]({%slug winforms/themes/using-default-themes%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})

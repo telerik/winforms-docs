@@ -1,5 +1,5 @@
 ---
-title: Exact time rendering
+title: Exact Time Rendering
 page_title: Exact time rendering | RadScheduler
 description: RadScheduler supports functionality to arrange appointments according to their start time and duration.
 slug: winforms/scheduler/views/exact-time-rendering
@@ -9,7 +9,7 @@ position: 13
 previous_url: scheduler-views-exact-time-rendering
 ---
 
-# Exact time rendering
+# Exact Time Rendering
 
 __RadScheduler__ supports functionality to arrange appointments according to their start time and duration. The __EnableExactTimeRendering__ property should get or set a value, indicating whether the appointment start and end time should be rendered exactly. By default its value is *false*.
 

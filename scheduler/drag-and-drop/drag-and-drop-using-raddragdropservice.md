@@ -382,7 +382,7 @@ End Sub
 
 {{endregion}} 
 
->caption Figure 1: Drag and Drop from RadScheduler to RadGridView 
+>caption Figure 2: Drag and Drop from RadScheduler to RadGridView 
 ![scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice 002](images/scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice002.gif)
 
 # See Also

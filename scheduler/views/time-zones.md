@@ -290,21 +290,17 @@ Me.RadScheduler1.GetDayView().RulerWidth = 50
 
 After all these steps are performed, let's try to create an appointment starting at 10 o'clock on Jan 12 on a client machine where the local time zone is "(UTC +09:00) Osaka, Sapporo, Tokyo". Here is how this appointment will look like on client machines having different local time zones set:
 
+>caption Figure 1: RadScheduler started in Tokyo (or "(UTC +09:00) Osaka, Sapporo, Tokyo") 
 ![scheduler-views-time-zones 005](images/scheduler-views-time-zones005.png)
 
-*RadScheduler started in Tokyo (or "(UTC +09:00) Osaka, Sapporo, Tokyo")*
-
+>caption Figure 2: RadScheduler started in Paris (or "(UTC +01:00) Brussels, Copenhagen, Madrid, Paris")
 ![scheduler-views-time-zones 006](images/scheduler-views-time-zones006.png)
 
-*RadScheduler started in Paris (or "(UTC +01:00) Brussels, Copenhagen, Madrid, Paris")*
-
+>caption Figure 3: RadScheduler started in London (or "(UTC) Dublin, Edinburgh, Lisbon, London")
 ![scheduler-views-time-zones 007](images/scheduler-views-time-zones007.png)
 
-*RadScheduler started in London (or "(UTC) Dublin, Edinburgh, Lisbon, London")*
-
+>caption Figure 4: RadScheduler started in New York (or "(UTC -04:00) Eastern Time (US and Canada)")
 ![scheduler-views-time-zones 008](images/scheduler-views-time-zones008.png)
-
-*RadScheduler started in New York (or "(UTC -04:00) Eastern Time (US and Canada)")*
 
 # See Also
 
