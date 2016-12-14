@@ -709,7 +709,7 @@ navigation:
         title: StackView
         position: 8
     pageview/backstageview:
-        title: BackStageView
+        title: BackstageView
         position: 9
     pageview/how-to:
         title: How-To

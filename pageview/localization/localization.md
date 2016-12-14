@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
-description: Localization
+page_title: Localization | RadPageView
+description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/localization/localization
 tags: localization
 published: True
@@ -10,14 +10,10 @@ previous_url: pageview-localization
 ---
 
 # Localization
+ 
+To localize **RadPageView** to display control text and messages in a specific language:
 
-
-
-## 
-
-To localize RadPageView to display control text and messages in a specific language:
-
-* All required classes for localization are defined in __Telerik.WinControls.UI.Localization__ namespace.
+* All required classes for localization are defined in the __Telerik.WinControls.UI.Localization__ namespace.
 
 * Start by creating a descendant of the __RadPageViewLocalizationProvider__ class.
 
@@ -112,3 +108,7 @@ RadPageViewLocalizationProvider.CurrentProvider = New MyEnglishRadPageViewLocali
 {{endregion}}
 
 The code provided above illustrates the approach to be used to localize the __RadPageView__ and is not intended as a full translation.
+
+# See Also
+
+* [Right-to-left support]({%slug winforms/pageview/localization/right-to-left-support%})	

@@ -5,7 +5,7 @@ description: Use the Style property to change the styles of each cell separately
 slug: winforms/gridview/cells/style
 tags: formatting,cells
 published: True
-position: 1
+position: 4
 ---
 
 # Format cell with Style property

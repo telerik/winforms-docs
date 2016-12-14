@@ -5,7 +5,7 @@ description: Use the ViewCellFormatting event to change the styles of the group 
 slug: winforms/gridview/cells/formatting-group-rows
 tags: formatting,cells
 published: True
-position: 1
+position: 0
 ---
 
 # Change TextAlignment and BackColor of group rows

@@ -1,7 +1,7 @@
 ---
 title: Add ContextMenu to RadPageViewPage tabs
-page_title: Add ContextMenu to RadPageViewPage tabs | UI for WinForms Documentation
-description: Add ContextMenu to RadPageViewPage tabs
+page_title: Add ContextMenu to RadPageViewPage tabs | RadPageView
+description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/how-to/add-contextmenu-to-radpageviewpage-tabs
 tags: add,contextmenu,to,radpageviewpage,tabs
 published: True
@@ -11,13 +11,13 @@ previous_url: pageview-how-to-add-contextmenu-to-radpageviewpage-tabs
 
 # Add ContextMenu to RadPageViewPage tabs
 
+This help article will demonstrate you how to add custom __RadContextMenu__ to __RadPageViewPages'__ tabs, as shown in the following image.
 
+>caption Figure 1: Context menu
 
-## 
+![](images/pageview-how-to-add-contextmenu-to-radpageview-tabs001.png)
 
-This help article will demonstrate you how to add custom __RadContextMenu__ to __RadPageViewPages'__ tabs, as shown in the following image.![](images/pageview-how-to-add-contextmenu-to-radpageview-tabs001.png)
-
-To create your custom __RadContextMenu__, add its' __RadMenuItems__, set their properties and add them to the __RadContextMenu__*Items* collection:
+To create your custom __RadContextMenu__, add its' __RadMenuItems__, set their properties and add them to the RadContextMenu.**Items** collection:
 
 {{source=..\SamplesCS\PageView\HowTo.cs region=createContextMenu}} 
 {{source=..\SamplesVB\PageView\HowTo.vb region=createContextMenu}} 
@@ -156,3 +156,8 @@ End Sub
 ````
 
 {{endregion}} 
+
+
+# See Also
+
+* [Assign RadContextMenu to Telerik and non-Telerik controls]({%slug winforms/menus/contextmenu/assign-radcontextmenu-to-telerik-and-non-telerik-controls%})

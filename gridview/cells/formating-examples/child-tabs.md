@@ -5,7 +5,7 @@ description: Use the CellFormatting event to hide all child tabs when when there
 slug: winforms/gridview/cells/formatting-child-tabs
 tags: formatting,cells
 published: True
-position: 1
+position: 2
 ---
 
 # Hiding child tabs when no data is available
