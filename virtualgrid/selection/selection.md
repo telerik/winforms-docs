@@ -60,9 +60,9 @@ Using the __Selection__ property of the __VirtualGridElement__ you can perform v
 In addition, you can use the following properties to get the selected rows or cells:
 
 * __CurrentRowIndex:__ gets the current row index.
-	>caption Current row indication 
-	![virtualgrid-selection003](images/virtualgrid-selection003.png)
 
 * __CurrentColumnIndex:__ gets the current selected column index.
+
 * __SelectedRegion:__ returns the first selected region.
+
 * __SelectedRegions:__ returns all selected regions.

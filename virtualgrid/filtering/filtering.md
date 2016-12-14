@@ -43,9 +43,6 @@ It is necessary to handle the __FilterChanged__ event which is fired once the __
 
 >note Please refer to the [Populating with data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%}) help article which demonstrates how to extract the necessary data and fill the virtual grid with data.
 
-
-![virtualgrid-filtering 004](images/virtualgrid-filtering004.gif)
-
 The following example demonstrates how to achieve filtering functionality in __RadVirtualGrid__ filled with Northwind.Customers table:
 
 {{source=..\SamplesCS\VirtualGrid\Filtering\VirtualGridFiltering.cs region=Filtering}} 
@@ -307,4 +304,4 @@ End Class
 
 {{endregion}}
 
->note It is neccessary to specify the __FieldName__ property for the filter cells.
+>note It is necessary to specify the __FieldName__ property for the filter cells.
