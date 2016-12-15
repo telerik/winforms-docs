@@ -1,7 +1,7 @@
 ---
 title: Spell check as you type
-page_title: Spell check as you type | UI for WinForms Documentation
-description: Spell check as you type
+page_title: Spell check as you type | RadSpellChecker
+description: RadSpellChecker enables developers to add multilingual spell checking capabilities to their WinForms applications.
 slug: winforms/spellchecker/spell-check-as-you-type
 tags: spell,check,as,you,type
 published: True
@@ -11,19 +11,15 @@ previous_url: spellchecker-spell-check-as-you-type
 
 # Spell check as you type
 
-## 
-
-This article demonstrates the spell as you type functionality currently available for RadTextBox and RadTextBoxControls, as well as for any HostedTextBoxBase descendant.
+This article demonstrates the spell check as you type functionality currently available for **RadTextBox** and **RadTextBoxControls**, as well as for any **HostedTextBoxBase** descendant.
 
 As the user types in one of the supported controls a red underline indicates the spelling mistakes and right-clicking on the error shows a context menu with spelling suggestions.
 
 ![spellchecker-spell-check-as-you-type 001](images/spellchecker-spell-check-as-you-type001.png)
 
->note Supported controls are: __RadTextBox__ , __RadTextBoxControl__ and __TextBox__ 
->
+>important Supported controls are: __RadTextBox__ , __RadTextBoxControl__ and __TextBox__ 
 
-
-In order to enable this functionality you should set the __AutoSpellCheckControl__ property of RadSpellChecker to an instance of the supported controls:
+In order to enable this functionality you should set the __AutoSpellCheckControl__ property of **RadSpellChecker** to an instance of the supported controls:
 
 {{source=..\SamplesCS\SpellChecker\SpellCheckAsYouType.cs region=AutoSpellCheckControl}} 
 {{source=..\SamplesVB\SpellChecker\SpellCheckAsYouType.vb region=AutoSpellCheckControl}} 
@@ -41,13 +37,16 @@ Me.RadSpellChecker3.AutoSpellCheckControl = Me.RadTextBoxControl1
 
 ````
 
-{{endregion}} 
-
+{{endregion}}  
 
 This property can also be set at design time:
 
 ![spellchecker-spell-check-as-you-type 002](images/spellchecker-spell-check-as-you-type002.png)
 
->note If you set this property to *Null* you will turn off the spell check as you type functionality. Also every __RadSpellChecker__ can be used with only one of the supported controls. For example if you have five text boxes you will need five __RadSpellChecker__ instances for them.
->
+>important If you set this property to *null* you will turn off the spell check as you type functionality. Also every __RadSpellChecker__ can be used with only one of the supported controls. For example, if you have five text boxes you will need five __RadSpellChecker__ instances for them.
+
+# See Also
+
+* [Spellchecking Modes]({%slug winforms/spellchecker/spellchecking-modes%})	
+* [SpellChecking RadGridView]({%slug winforms/spellchecker/spellchecking-radgridview%})	
 

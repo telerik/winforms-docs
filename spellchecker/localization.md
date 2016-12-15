@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
-description: Localization
+page_title: Localization | RadSpellChecker
+description: RadSpellChecker enables developers to add multilingual spell checking capabilities to their WinForms applications.
 slug: winforms/spellchecker/localization
 tags: localization
 published: True
@@ -11,9 +11,7 @@ previous_url: spellchecker-localization
 
 # Localization
 
-## 
-
-To localize RadSpellChecker to display control text and messages in a specific language:
+To localize **RadSpellChecker** to display control text and messages in a specific language:
 
 * All required classes for localization are defined in __Telerik.WinControls.UI.Localization__ namespace.
 
