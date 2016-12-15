@@ -1,7 +1,7 @@
 ---
 title: Setting Filters Programmatically
 page_title: Filtering Overview | RadVirtualGrid
-description: Filtering Overview
+description: This article shows you can create and add simple and composite filter descriptors in the code. 
 slug: winforms/virtualgrid/filtering/setting-filters-programmatically
 tags: virtualgrid, filtering
 published: True
@@ -9,11 +9,11 @@ position: 1
 ---
 
 # Setting Filters Programmatically
-__RadVirtualGrid__  includes __FilterDescriptors__ property which stores filter descriptors used for filtering operation. The most important classes are:
+__RadVirtualGrid:__  Includes __FilterDescriptors__ property which stores filter descriptors used for filtering operation. The most important classes are:
 
-* __FilterDescriptor__ - implements filtering property (field) name, filtering operator and value. Used to define simple filtering expressions like Country = "Germany".
+* __FilterDescriptor:__ Implements filtering property (field) name, filtering operator and value. Used to define simple filtering expressions like Country = "Germany".
 
-* __CompositeFilterDescriptor__ - a collection of multiple filter descriptors with logical operator. Used to define complex filtering expressions like (Country = "Germany" AND (City = "Berlin" OR City = "Aachen")) .
+* __CompositeFilterDescriptor:__ A collection of multiple filter descriptors with logical operator. Used to define complex filtering expressions like (Country = "Germany" AND (City = "Berlin" OR City = "Aachen")) .
 
 >caution Before proceeding with this article, please refer to the [Filtering Overview]({%slug winforms/virtualgrid/filtering/filtering%}) help article which demonstrates how to achieve the filtering functionality in __RadVirtualGrid__.
 

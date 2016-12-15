@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events | RadVirtualGrid
-description: Editors events
+description: This article describes which events are fired while the user is editing a value in RadVirtualGrid.
 slug: winforms/virtualgrid/editing/events
 tags: virtualgrid, editors
 published: True
@@ -11,6 +11,7 @@ position: 2
 # Events
 
 The following events occur during the editing process:
+
 * __CellValuesPushed:__ This event will be fired when the user has edited a value in the grid. This event should be used for updating the data source. If it is not handled the cell value would not be updated. Detailed information about how you can use this event to update the data source is available [here]({%slug winforms/virtualgrid/working-with-data/handle-add-delete-update-of-rows%}).
 
 * __EditorRequired:__ This is the first event that fires when a cell becomes editable (edit mode). 

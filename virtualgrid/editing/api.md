@@ -1,7 +1,7 @@
 ---
 title: API
 page_title: API | RadVirtualGrid
-description: Formatting Data Cells
+description: This article shows which are the properties responsible for the editing behavior in RadVirtualGrid.
 slug: winforms/virtualgrid/cells/api
 tags: virtualgrid, editors, api
 published: True

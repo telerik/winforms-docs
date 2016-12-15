@@ -1,7 +1,7 @@
 ---
 title: Formatting System Cells
 page_title: Formatting System Cells | RadVirtualGrid
-description: Formatting System Cells
+description: This article describes how one can format the header, filter and new row cells. 
 slug: winforms/virtualgrid/cells/formatting-system-cells
 tags: virtualgrid, cells, system, formatting
 published: True

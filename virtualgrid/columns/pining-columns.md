@@ -1,7 +1,7 @@
 ---
 title: Pinned Columns
 page_title: Pinned Columns | RadVirtualGrid
-description: Pinned Columns
+description: RadVirtualGrid columns can be pinned so that the rows appear anchored to the left or right of the grid.
 slug: winforms/virtualgrid/columns/pinned-columns
 tags: virtualgrid, cells, formatting
 published: True

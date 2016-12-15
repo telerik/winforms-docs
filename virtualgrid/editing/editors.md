@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Editors | RadVirtualGrid
-description: Editors
+description: This article describes the editing functiality supported by RadVirtualGrid. 
 slug: winforms/virtualgrid/editing/editors
 tags: virtualgrid, editors
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Formatting Data Cells
 page_title: Formatting Data Cells | RadVirtualGrid
-description: Formatting Data Cells
+description: This article describes how one can use the CellFormatting event to change the cells styles. 
 slug: winforms/virtualgrid/cells/formatting-data-cells
 tags: virtualgrid, cells, formatting
 published: True

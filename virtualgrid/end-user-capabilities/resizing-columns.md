@@ -1,7 +1,7 @@
 ---
 title: Resizing Columns
 page_title: Resizing Columns | RadVirtualGrid
-description: Resizing Columns
+description: This article shows how you can resize columns in RadVirtualGrid at runtime. 
 slug: winforms/virtualgrid/end-user-capabilities/resizing-columns
 tags: resizing,columns
 published: True

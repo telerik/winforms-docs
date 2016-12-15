@@ -1,7 +1,7 @@
 ---
 title: Custom Context Menu
 page_title: Custom context Menu | RadVirtualGrid
-description: Custom context Menu
+description: This article shows how you can create and usea custom context menu in RadVirtualGrid.
 slug: winforms/virtualgrid/context-menu/custom-context-menu
 tags: virtualgrid, menu, custom
 published: True
