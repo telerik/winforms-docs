@@ -1,6 +1,6 @@
 ---
 title: Alternating Row Color
-page_title: Alternating Row Color | UI for WinForms Documentation
+page_title: Alternating Row Color | RadVirtualGrid
 description: Alternating Row Color
 slug: winforms/virtualgrid/rows/alternating-row-colors
 tags: virtualgrid, rows, alternating, color

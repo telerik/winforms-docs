@@ -1,6 +1,6 @@
 ---
 title: Setting Sorting Programmatically
-page_title: Setting Sorting Programmatically | UI for WinForms Documentation
+page_title: Setting Sorting Programmatically | RadVirtualGrid
 description: Setting Sorting Programmatically
 slug: winforms/virtualgrid/sorting/setting-sorting-programmatically
 tags: virtualgrid, sorting

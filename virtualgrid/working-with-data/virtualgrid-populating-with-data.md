@@ -1,6 +1,6 @@
 ---
 title: Populating with Data
-page_title: Populating with Data | UI for WinForms Documentation
+page_title: Populating with Data | RadVirtualGrid
 description: Populating with Data
 slug: winforms/virtualgrid/working-with-data/populating-with-data
 tags: virtualgrid, data

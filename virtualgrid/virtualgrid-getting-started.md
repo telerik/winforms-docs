@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadVirtualGrid
 description: Getting Started
 slug: winforms/virtualgrid/getting-started
 tags: virtualgrid, started

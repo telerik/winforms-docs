@@ -1,6 +1,6 @@
 ---
 title: API
-page_title: API | UI for WinForms Documentation
+page_title: API | RadVirtualGrid
 description: Formatting Data Cells
 slug: winforms/virtualgrid/cells/api
 tags: virtualgrid, editors, api

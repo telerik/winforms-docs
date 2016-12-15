@@ -1,6 +1,6 @@
 ---
 title: Scrolling
-page_title: Scrolling | UI for WinForms Documentation
+page_title: Scrolling | RadVirtualGrid
 description: VirtualGrid
 slug: winforms/virtualgrid/scrolling
 tags: virtualgrid, scrolling

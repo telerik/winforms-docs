@@ -1,6 +1,6 @@
 ---
 title: Modifying the Default Context Menu
-page_title: Modifying the Default Context Menu | UI for WinForms Documentation
+page_title: Modifying the Default Context Menu | RadVirtualGrid
 description: Modifying the Default Context Menu
 slug: winforms/virtualgrid/context-menu/modifying-the-default-context-menu
 tags: virtualgrid, menu, modify

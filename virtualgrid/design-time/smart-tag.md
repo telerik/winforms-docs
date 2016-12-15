@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | UI for WinForms Documentation
+page_title: Smart Tag | RadVirtualGrid
 description: Smart Tag
 slug: winforms/virtualgrid/design-time/smart-tag
 tags: smart tag

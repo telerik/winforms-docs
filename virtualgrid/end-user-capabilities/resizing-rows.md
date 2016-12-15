@@ -1,6 +1,6 @@
 ---
 title: Resizing Rows
-page_title: Resizing Rows | UI for WinForms Documentation
+page_title: Resizing Rows | RadVirtualGrid
 description: Resizing Rows
 slug: winforms/virtualgrid/end-user-capabilities/resizing-rows
 tags: resizing, rows

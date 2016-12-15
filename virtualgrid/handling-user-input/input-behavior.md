@@ -1,6 +1,6 @@
 ---
 title: InputBehavior
-page_title: InputBehavior | UI for WinForms Documentation
+page_title: InputBehavior | RadVirtualGrid
 description: InputBehavior
 slug: winforms/virtualgrid/handling-user-input/input-behavior
 tags: virtualgrid

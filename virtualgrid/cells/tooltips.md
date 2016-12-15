@@ -1,6 +1,6 @@
 ---
 title: ToolTips
-page_title: ToolTips | UI for WinForms Documentation
+page_title: ToolTips | RadVirtualGrid
 description: ToolTips
 slug: winforms/virtualgrid/cells/tooltips
 tags: virtualgrid, cells, tooltips

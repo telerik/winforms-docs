@@ -1,6 +1,6 @@
 ---
 title: Resizing Rows Programmatically
-page_title: Resizing Rows Programmatically| UI for WinForms Documentation
+page_title: Resizing Rows Programmatically| RadVirtualGrid
 description: Resizinng Rows Programmatically
 slug: winforms/virtualgrid/rows/resizing-rows-programmatically
 tags: virtualgrid, rows, resizing

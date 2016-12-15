@@ -1,6 +1,6 @@
 ---
 title:  Pinned Rows
-page_title:  Pinned Rows | UI for WinForms Documentation
+page_title:  Pinned Rows | RadVirtualGrid
 description:  Pinned Rows
 slug: winforms/virtualgrid/rows/pinned-rows
 tags: virtualgrid, rows

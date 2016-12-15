@@ -1,6 +1,6 @@
 ---
 title: Formatting Data Rows
-page_title: Formatting Data Rows | UI for WinForms Documentation
+page_title: Formatting Data Rows | RadVirtualGrid
 description: Formatting Data Rows
 slug: winforms/virtualgrid/rows/formatting-data-rows
 tags: virtualgrid, rows, formatting

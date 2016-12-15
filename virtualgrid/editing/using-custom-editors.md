@@ -1,6 +1,6 @@
 ---
 title: Using Custom Editors
-page_title: Using Custom Editors | UI for WinForms Documentation
+page_title: Using Custom Editors | RadVirtualGrid
 description: RadVirtualGrid allows you create custom editors and replace the default one.
 slug: winforms/virtualgrid/editing/using-custom-editors
 tags: virtualgrid, editors, properties

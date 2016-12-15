@@ -1,6 +1,6 @@
 ---
 title: Paging Panel
-page_title: Paging Panel | UI for WinForms Documentation
+page_title: Paging Panel | RadVirtualGrid
 description: Paging panel
 slug: winforms/virtualgrid/paging/paging-panel
 tags: paging,panel

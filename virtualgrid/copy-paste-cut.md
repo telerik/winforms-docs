@@ -1,6 +1,6 @@
 ---
 title: Copy/Paste/Cut
-page_title: Copy/Paste/Cut | UI for WinForms Documentation
+page_title: Copy/Paste/Cut | RadVirtualGrid
 description: Formatting Data Cells
 slug: winforms/virtualgrid/copy-paste-cut
 tags: virtualgrid, copy, paste, cut

@@ -1,6 +1,6 @@
 ---
 title: UI Virtualization
-page_title:  UI Virtualization | UI for WinForms Documentation
+page_title:  UI Virtualization | RadVirtualGrid
 description:  UI Virtualization
 slug: winforms/virtualgrid/ui-virtualization
 tags: virtualgrid, ui, virtualization

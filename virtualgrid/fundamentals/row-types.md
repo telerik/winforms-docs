@@ -1,6 +1,6 @@
 ---
 title: Row Types
-page_title: Row Types | UI for WinForms Documentation
+page_title: Row Types | RadVirtualGrid
 description: Row Types
 slug: winforms/virtualgrid/fundamentals/row-types
 tags: virtualgrid, row

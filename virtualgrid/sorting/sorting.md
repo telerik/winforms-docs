@@ -1,6 +1,6 @@
 ---
 title: Sorting Overview
-page_title: Sorting Overview | UI for WinForms Documentation
+page_title: Sorting Overview | RadVirtualGrid
 description: Sorting Overview
 slug: winforms/virtualgrid/sorting/sorting
 tags: virtualgrid, sorting

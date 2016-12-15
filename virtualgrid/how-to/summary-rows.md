@@ -1,6 +1,6 @@
 ---
 title: Summary Rows
-page_title: Summary Rows | UI for WinForms Documentation
+page_title: Summary Rows | RadVirtualGrid
 description: Summary Rows
 slug: winforms/virtualgrid/how-to/summary-rows
 tags: virtualgrid, summary rows

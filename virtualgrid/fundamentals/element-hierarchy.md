@@ -1,6 +1,6 @@
 ---
 title: Element Hierarchy
-page_title: Element Hierarchy | UI for WinForms Documentation
+page_title: Element Hierarchy | RadVirtualGrid
 description: Element Hierarchy
 slug: winforms/virtualgrid/cells/element-hierarchy
 tags: virtualgrid, element, hierarchy

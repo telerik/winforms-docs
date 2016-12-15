@@ -1,6 +1,6 @@
 ---
 title: Multiple Selection
-page_title: Multiple Selection | UI for WinForms Documentation
+page_title: Multiple Selection | RadVirtualGrid
 description: Formatting Data Cells
 slug: winforms/virtualgrid/selection/multiple-selection
 tags: virtualgrid, multiple selection

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Context Menu | UI for WinForms Documentation
+page_title: Context Menu | RadVirtualGrid
 description: Context Menu
 slug: winforms/virtualgrid/context-menu/context-menu
 tags: virtualgrid, menu

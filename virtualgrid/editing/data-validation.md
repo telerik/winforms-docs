@@ -1,6 +1,6 @@
 ---
 title: Data Validation
-page_title: Data Validation | UI for WinForms Documentation
+page_title: Data Validation | RadVirtualGrid
 description: Data Validation
 slug: winforms/virtualgrid/editing/data-validation
 tags: virtualgrid, editors

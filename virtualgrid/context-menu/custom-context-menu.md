@@ -1,6 +1,6 @@
 ---
 title: Custom Context Menu
-page_title: Custom context Menu | UI for WinForms Documentation
+page_title: Custom context Menu | RadVirtualGrid
 description: Custom context Menu
 slug: winforms/virtualgrid/context-menu/custom-context-menu
 tags: virtualgrid, menu, custom

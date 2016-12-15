@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
+page_title: Localization | RadVirtualGrid
 description: Localization
 slug: winforms/virtualgrid/localization/localization
 tags: localization

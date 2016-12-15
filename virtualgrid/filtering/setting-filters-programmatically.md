@@ -1,6 +1,6 @@
 ---
 title: Setting Filters Programmatically
-page_title: Filtering Overview | UI for WinForms Documentation
+page_title: Filtering Overview | RadVirtualGrid
 description: Filtering Overview
 slug: winforms/virtualgrid/filtering/setting-filters-programmatically
 tags: virtualgrid, filtering

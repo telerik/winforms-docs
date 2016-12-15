@@ -1,6 +1,6 @@
 ---
 title: Creating custom cells
-page_title: Creating custom cells | UI for WinForms Documentation
+page_title: Creating custom cells | RadVirtualGrid
 description: Creating custom cells
 slug: winforms/virtualgrid/cells/creating-custom-cells
 tags: virtualgrid, cells, custom

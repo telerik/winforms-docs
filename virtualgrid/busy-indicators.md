@@ -1,6 +1,6 @@
 ---
 title: Busy Indicators
-page_title: Busy Indicators | UI for WinForms Documentation
+page_title: Busy Indicators | RadVirtualGrid
 description: Busy Indicators
 slug: winforms/virtualgrid/busy-indicators
 tags: virtualgrid, busy, indicators

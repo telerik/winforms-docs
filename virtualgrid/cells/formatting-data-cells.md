@@ -1,6 +1,6 @@
 ---
 title: Formatting Data Cells
-page_title: Formatting Data Cells | UI for WinForms Documentation
+page_title: Formatting Data Cells | RadVirtualGrid
 description: Formatting Data Cells
 slug: winforms/virtualgrid/cells/formatting-data-cells
 tags: virtualgrid, cells, formatting

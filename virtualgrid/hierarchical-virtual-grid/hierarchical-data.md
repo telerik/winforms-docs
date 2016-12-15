@@ -1,6 +1,6 @@
 ---
 title: Hierarchical Data
-page_title: Hierarchical Data | UI for WinForms Documentation
+page_title: Hierarchical Data | RadVirtualGrid
 description: Hierarchical Data
 slug: winforms/virtualgrid/hierarchical-virtual-grid/hierarchical-data
 tags: virtualgrid, hierarchy

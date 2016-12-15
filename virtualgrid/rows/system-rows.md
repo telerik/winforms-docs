@@ -1,6 +1,6 @@
 ---
 title: System Rows
-page_title: System Rows | UI for WinForms Documentation
+page_title: System Rows | RadVirtualGrid
 description: System Rows
 slug: winforms/virtualgrid/rows/system-rows
 tags: virtualgrid, rows, system

@@ -1,6 +1,6 @@
 ---
 title: Advanced
-page_title: Advanced | UI for WinForms Documentation
+page_title: Advanced | RadVirtualGrid
 description: Advanced
 slug: winforms/virtualgrid/save-and-load-layout/advanced
 tags: save-and-load-layout, advanced

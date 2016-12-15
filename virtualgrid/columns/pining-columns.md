@@ -1,6 +1,6 @@
 ---
 title: Pinned Columns
-page_title: Pinned Columns | UI for WinForms Documentation
+page_title: Pinned Columns | RadVirtualGrid
 description: Pinned Columns
 slug: winforms/virtualgrid/columns/pinned-columns
 tags: virtualgrid, cells, formatting

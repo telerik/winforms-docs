@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events | UI for WinForms Documentation
+page_title: Events | RadVirtualGrid
 description: Editors events
 slug: winforms/virtualgrid/editing/events
 tags: virtualgrid, editors

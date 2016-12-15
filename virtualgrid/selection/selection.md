@@ -1,6 +1,6 @@
 ---
 title: Selection 
-page_title: Selection | UI for WinForms Documentation
+page_title: Selection | RadVirtualGrid
 description: Formatting Data Cells
 slug: winforms/virtualgrid/selection/selection
 tags: virtualgrid, selection

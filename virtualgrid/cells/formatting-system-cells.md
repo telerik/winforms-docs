@@ -1,6 +1,6 @@
 ---
 title: Formatting System Cells
-page_title: Formatting System Cells | UI for WinForms Documentation
+page_title: Formatting System Cells | RadVirtualGrid
 description: Formatting System Cells
 slug: winforms/virtualgrid/cells/formatting-system-cells
 tags: virtualgrid, cells, system, formatting

@@ -1,6 +1,6 @@
 ---
 title: Rigth-To-Left Support
-page_title: Rigth-To-Left Support | UI for WinForms Documentation
+page_title: Rigth-To-Left Support | RadVirtualGrid
 description: Rigth-To-Left Support
 slug: winforms/virtualgrid/localization/right-to-left-support
 tags: right-to-left-support

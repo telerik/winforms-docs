@@ -1,6 +1,6 @@
 ---
 title: Sorting
-page_title: Sorting | UI for WinForms Documentation
+page_title: Sorting | RadVirtualGrid
 description: Sorting
 slug: winforms/gridview/end-user-capabilities/sorting
 tags: sorting

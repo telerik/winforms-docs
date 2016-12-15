@@ -1,6 +1,6 @@
 ---
 title: Resizing Columns Programmatically
-page_title: Resizing Columns Programmatically | UI for WinForms Documentation
+page_title: Resizing Columns Programmatically | RadVirtualGrid
 description: Resizing Columns Programmatically
 slug: winforms/virtualgrid/columns/resizing-columns-programmatically
 tags: virtualgrid, columns, resizing

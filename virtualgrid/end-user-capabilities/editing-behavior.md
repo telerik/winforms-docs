@@ -1,6 +1,6 @@
 ---
 title: Editing Behavior
-page_title: Editing Behavior | UI for WinForms Documentation
+page_title: Editing Behavior | RadVirtualGrid
 description: Editing Behavior
 slug: winforms/gridview/end-user-capabilities/editing-behavior
 tags: editing,behavior

@@ -1,6 +1,6 @@
 ---
 title: Filtering
-page_title: Filtering | UI for WinForms Documentation
+page_title: Filtering | RadVirtualGrid
 description: Filtering
 slug: winforms/virtualgrid/end-user-capabilities/filtering
 tags: filtering

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Editors | UI for WinForms Documentation
+page_title: Editors | RadVirtualGrid
 description: Editors
 slug: winforms/virtualgrid/editing/editors
 tags: virtualgrid, editors

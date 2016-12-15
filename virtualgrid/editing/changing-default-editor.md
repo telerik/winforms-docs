@@ -1,6 +1,6 @@
 ---
 title: Changing the Default Editors
-page_title: Changing the Default Editors | UI for WinForms Documentation
+page_title: Changing the Default Editors | RadVirtualGrid
 description: Creating custom editors 
 slug: winforms/virtualgrid/cells/changing-default-editor
 tags: virtualgrid, custom, editor

@@ -1,6 +1,6 @@
 ---
 title: Filtering Overview
-page_title: Filtering Overview | UI for WinForms Documentation
+page_title: Filtering Overview | RadVirtualGrid
 description: Filtering Overview
 slug: winforms/virtualgrid/filtering/filtering
 tags: virtualgrid, filtering

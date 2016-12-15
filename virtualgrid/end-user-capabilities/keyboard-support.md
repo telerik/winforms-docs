@@ -1,6 +1,6 @@
 ---
 title: Keyboard Support
-page_title: Keyboard Support | UI for WinForms Documentation
+page_title: Keyboard Support | RadVirtualGrid
 description: Keyboard Support
 slug: winforms/virtualgrid/end-user-capabilities/keyboard-support
 tags: keyboard,support

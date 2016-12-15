@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | UI for WinForms Documentation
+page_title: Overview | RadVirtualGrid
 description: Paging overview
 slug: winforms/virtualgrid/paging/paging-overview
 tags: virtualgrid, paging

@@ -1,6 +1,6 @@
 ---
 title: Key Features
-page_title: Key Features | UI for WinForms Documentation
+page_title: Key Features | RadVirtualGrid
 description: Key Features
 slug: winforms/virtualgrid/cells/formatting-data-cells
 tags: virtualgrid, key, features

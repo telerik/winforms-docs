@@ -1,6 +1,6 @@
 ---
 title: Scrolling Support
-page_title: Scrolling Support | UI for WinForms Documentation
+page_title: Scrolling Support | RadVirtualGrid
 description: Scrolling Support
 slug: winforms/vitualgrid/end-user-capabilities/scrolling-support
 tags: scrolling,support
