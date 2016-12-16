@@ -1,7 +1,7 @@
 ---
 title: Multiple Selection
 page_title: Multiple Selection | RadVirtualGrid
-description: Formatting Data Cells
+description: RadVirtualGrid allows the user to select more than one item at a time from the displayed data.
 slug: winforms/virtualgrid/selection/multiple-selection
 tags: virtualgrid, multiple selection
 published: True

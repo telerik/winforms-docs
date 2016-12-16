@@ -1,7 +1,7 @@
 ---
 title: Paging Panel
 page_title: Paging Panel | RadVirtualGrid
-description: Paging panel
+description: This article describes the properties used for controlling the layout of the paging panel.
 slug: winforms/virtualgrid/paging/paging-panel
 tags: paging,panel
 published: True

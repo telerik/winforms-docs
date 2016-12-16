@@ -1,7 +1,7 @@
 ---
 title: Selection 
 page_title: Selection | RadVirtualGrid
-description: Formatting Data Cells
+description: RadVirtualGrid provides you with a selection functionality, which allows the user to select one or more items (rows or cells). 
 slug: winforms/virtualgrid/selection/selection
 tags: virtualgrid, selection
 published: True

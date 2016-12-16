@@ -1,7 +1,7 @@
 ---
 title: InputBehavior
 page_title: InputBehavior | RadVirtualGrid
-description: InputBehavior
+description: This article describes how one can create custom InputBehavior and intercept the default mouse and keyboard handling.
 slug: winforms/virtualgrid/handling-user-input/input-behavior
 tags: virtualgrid
 published: True

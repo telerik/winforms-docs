@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started | RadVirtualGrid
-description: Getting Started
+description: This article shows how you  can easily start using RadVirtualGrid.
 slug: winforms/virtualgrid/getting-started
 tags: virtualgrid, started
 published: True

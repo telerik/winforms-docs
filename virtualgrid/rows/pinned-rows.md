@@ -1,7 +1,7 @@
 ---
 title:  Pinned Rows
 page_title:  Pinned Rows | RadVirtualGrid
-description:  Pinned Rows
+description: RadVirtualGrid__ rows can be pinned so that the rows appear anchored to the top or bottom of the grid.
 slug: winforms/virtualgrid/rows/pinned-rows
 tags: virtualgrid, rows
 published: True

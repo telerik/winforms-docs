@@ -1,7 +1,7 @@
 ---
 title: Selecting Cells Programmatically
 page_title: Selecting Cells Programmatically | RadVirtualGrid
-description: Formatting Data Cells
+description: This article shows how you can manipulate the selection in the code behind.
 slug: winforms/virtualgrid/selection/selecting-cells-programmatically
 tags: virtualgrid, selecting, cells, programmatically
 published: True
