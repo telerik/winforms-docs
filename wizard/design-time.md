@@ -1,7 +1,7 @@
 ---
 title: Design Time
 page_title: Design Time | UI for WinForms Documentation
-description: Design Time
+description: RadWizard will help you differentiate a complex process into separate steps and provide your users with the ability to govern the process upon their decisions.
 slug: winforms/wizard/design-time
 tags: design,time
 published: True

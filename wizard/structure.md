@@ -1,7 +1,7 @@
 ---
 title: Structure
 page_title: Structure | UI for WinForms Documentation
-description: Structure
+description: RadWizard will help you differentiate a complex process into separate steps and provide your users with the ability to govern the process upon their decisions.
 slug: winforms/wizard/structure
 tags: structure
 published: True
