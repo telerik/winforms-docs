@@ -22,7 +22,8 @@ By default, **RadGridView** displays a current row indicator in the row header r
 {{source=..\SamplesVB\GridView\Cells\GridViewRowNumbers.vb region=RowNumbers}} 
 
 ````C#
- private void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
+    
+private void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
 {
     if (e.CellElement is GridRowHeaderCellElement && e.Row is GridViewDataRowInfo)
     {
@@ -33,7 +34,7 @@ By default, **RadGridView** displays a current row indicator in the row header r
     { 
         e.CellElement.ResetValue(LightVisualElement.TextImageRelationProperty, ValueResetFlags.Local);
     }
-}     
+}
 
 ````
 ````VB.NET
@@ -58,7 +59,8 @@ It is necessary to increase the header row's width in order to have enough space
 {{source=..\SamplesVB\GridView\Cells\GridViewRowNumbers.vb region=RowHeaderWidth}} 
 
 ````C#
- this.radGridView1.TableElement.RowHeaderColumnWidth = 50;          
+            
+this.radGridView1.TableElement.RowHeaderColumnWidth = 50;
 
 ````
 ````VB.NET

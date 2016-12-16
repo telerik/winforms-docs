@@ -25,7 +25,6 @@ The sample code below demonstrates how to start editing:
 {{source=..\SamplesVB\PageView\EditingRadPageViewElement\EditingRadPageViewElement.vb region=EnableEditing}} 
 
 ````C#
-            
 radPageView1.ViewElement.AllowEdit = true;
 // set the SelectedPage - this page tab will be edited  
 radPageView1.SelectedPage = radPageView1.Pages[1];
@@ -70,7 +69,6 @@ The sample code below demonstrates how to forbid the user to clear the text in t
 {{source=..\SamplesVB\PageView\EditingRadPageViewElement\EditingRadPageViewElement.vb region=Edit}} 
 
 ````C#
-            
 radPageView1.ViewElement.AllowEdit = true;
 radPageView1.ViewElement.EditorInitialized += ViewElement_EditorInitialized;
 
@@ -87,65 +85,61 @@ AddHandler RadPageView1.ViewElement.EditorInitialized, AddressOf ViewElement_Edi
 {{source=..\SamplesVB\PageView\EditingRadPageViewElement\EditingRadPageViewElement.vb region=EditContinuation}} 
 
 ````C#
-        private void ViewElement_EditorInitialized(object sender, RadPageViewEditorEventArgs e)
-        {
-            radPageView1.ViewElement.ActiveEditor.Validating -= ActiveEditor_Validating;
-            radPageView1.ViewElement.ActiveEditor.Validated -= ActiveEditor_Validated;
-            radPageView1.ViewElement.ActiveEditor.ValidationError -= ActiveEditor_ValidationError;
-            
-            radPageView1.ViewElement.ActiveEditor.Validating += ActiveEditor_Validating;
-            radPageView1.ViewElement.ActiveEditor.Validated += ActiveEditor_Validated;
-            radPageView1.ViewElement.ActiveEditor.ValidationError += ActiveEditor_ValidationError;
-        }
         
-        private void ActiveEditor_Validating(object sender, CancelEventArgs e)
-        {
-            RadPageViewElement.PageViewItemTextEditor editor =
-                sender as RadPageViewElement.PageViewItemTextEditor;
-            
-            if (editor != null && radPageView1.ViewElement.ActiveEditor.Value == string.Empty)
-            {
-                e.Cancel = true;
-            }
-        }
+private void ViewElement_EditorInitialized(object sender, RadPageViewEditorEventArgs e)
+{
+    radPageView1.ViewElement.ActiveEditor.Validating -= ActiveEditor_Validating;
+    radPageView1.ViewElement.ActiveEditor.Validated -= ActiveEditor_Validated;
+    radPageView1.ViewElement.ActiveEditor.ValidationError -= ActiveEditor_ValidationError;
+    
+    radPageView1.ViewElement.ActiveEditor.Validating += ActiveEditor_Validating;
+    radPageView1.ViewElement.ActiveEditor.Validated += ActiveEditor_Validated;
+    radPageView1.ViewElement.ActiveEditor.ValidationError += ActiveEditor_ValidationError;
+}
         
-        private void ActiveEditor_ValidationError(object sender, ValidationErrorEventArgs e)
-        {
-            RadMessageBox.Show("Page label can't be empty!", "Error", MessageBoxButtons.OK, RadMessageIcon.Error);
-        }
+private void ActiveEditor_Validating(object sender, CancelEventArgs e)
+{
+    RadPageViewElement.PageViewItemTextEditor editor =
+        sender as RadPageViewElement.PageViewItemTextEditor;
+    
+    if (editor != null && radPageView1.ViewElement.ActiveEditor.Value == string.Empty)
+    {
+        e.Cancel = true;
+    }
+}
         
-        private void ActiveEditor_Validated(object sender, EventArgs e)
-        {
-            RadMessageBox.Show("Page label has been successfully updated!", "Information", MessageBoxButtons.OK, RadMessageIcon.Info);
-        }
-  
+private void ActiveEditor_ValidationError(object sender, ValidationErrorEventArgs e)
+{
+    RadMessageBox.Show("Page label can't be empty!", "Error", MessageBoxButtons.OK, RadMessageIcon.Error);
+}
+        
+private void ActiveEditor_Validated(object sender, EventArgs e)
+{
+    RadMessageBox.Show("Page label has been successfully updated!", "Information", MessageBoxButtons.OK, RadMessageIcon.Info);
+}
+
 ````
 ````VB.NET
-    Private Sub ViewElement_EditorInitialized(sender As Object, e As RadPageViewEditorEventArgs)
-        RemoveHandler radPageView1.ViewElement.ActiveEditor.Validating, AddressOf ActiveEditor_Validating
-        RemoveHandler radPageView1.ViewElement.ActiveEditor.Validated, AddressOf ActiveEditor_Validated
-        RemoveHandler radPageView1.ViewElement.ActiveEditor.ValidationError, AddressOf ActiveEditor_ValidationError
-
-        AddHandler radPageView1.ViewElement.ActiveEditor.Validating, AddressOf ActiveEditor_Validating
-        AddHandler radPageView1.ViewElement.ActiveEditor.Validated, AddressOf ActiveEditor_Validated
-        AddHandler radPageView1.ViewElement.ActiveEditor.ValidationError, AddressOf ActiveEditor_ValidationError
-    End Sub
-
-    Private Sub ActiveEditor_Validating(sender As Object, e As CancelEventArgs)
-        Dim editor As RadPageViewElement.PageViewItemTextEditor = TryCast(sender, RadPageViewElement.PageViewItemTextEditor)
-
-        If editor IsNot Nothing AndAlso radPageView1.ViewElement.ActiveEditor.Value = String.Empty Then
-            e.Cancel = True
-        End If
-    End Sub
-
-    Private Sub ActiveEditor_ValidationError(sender As Object, e As ValidationErrorEventArgs)
-        RadMessageBox.Show("Page label can't be empty!", "Error", MessageBoxButtons.OK, RadMessageIcon.[Error])
-    End Sub
-
-    Private Sub ActiveEditor_Validated(sender As Object, e As EventArgs)
-        RadMessageBox.Show("Page label has been successfully updated!", "Information", MessageBoxButtons.OK, RadMessageIcon.Info)
-    End Sub
+Private Sub ViewElement_EditorInitialized(sender As Object, e As RadPageViewEditorEventArgs)
+    RemoveHandler radPageView1.ViewElement.ActiveEditor.Validating, AddressOf ActiveEditor_Validating
+    RemoveHandler radPageView1.ViewElement.ActiveEditor.Validated, AddressOf ActiveEditor_Validated
+    RemoveHandler radPageView1.ViewElement.ActiveEditor.ValidationError, AddressOf ActiveEditor_ValidationError
+    AddHandler radPageView1.ViewElement.ActiveEditor.Validating, AddressOf ActiveEditor_Validating
+    AddHandler radPageView1.ViewElement.ActiveEditor.Validated, AddressOf ActiveEditor_Validated
+    AddHandler radPageView1.ViewElement.ActiveEditor.ValidationError, AddressOf ActiveEditor_ValidationError
+End Sub
+Private Sub ActiveEditor_Validating(sender As Object, e As CancelEventArgs)
+    Dim editor As RadPageViewElement.PageViewItemTextEditor = TryCast(sender, RadPageViewElement.PageViewItemTextEditor)
+    If editor IsNot Nothing AndAlso radPageView1.ViewElement.ActiveEditor.Value = String.Empty Then
+        e.Cancel = True
+    End If
+End Sub
+Private Sub ActiveEditor_ValidationError(sender As Object, e As ValidationErrorEventArgs)
+    RadMessageBox.Show("Page label can't be empty!", "Error", MessageBoxButtons.OK, RadMessageIcon.[Error])
+End Sub
+Private Sub ActiveEditor_Validated(sender As Object, e As EventArgs)
+    RadMessageBox.Show("Page label has been successfully updated!", "Information", MessageBoxButtons.OK, RadMessageIcon.Info)
+End Sub
 
 ````
 

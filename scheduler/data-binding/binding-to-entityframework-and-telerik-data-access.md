@@ -186,6 +186,7 @@ this.scheduler.GroupType = GroupType.Resource;
 ````
 ````VB.NET
 Me.scheduler.DataSource = schedulerBindingSource
+Me.scheduler.GroupType = GroupType.Resource
 
 ````
 
