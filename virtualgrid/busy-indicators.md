@@ -16,6 +16,8 @@ There are two ways to indicate that the grid need time to perform a specific ope
 
 While this indicator is shown the entire grid is disabled. It is useful when the initial data loading requires more time.
 
+>caption Figure 1: WaitingBar in RadVirtualGrid enabled.
+
 ![virtualgrid-busy-indicators001](images/virtualgrid-busy-indicators001.gif)        
 
 The following snippet shows how you can show/hide the waiting bar:
@@ -39,6 +41,8 @@ radVirtualGrid1.MasterViewInfo.IsWaiting = False
 ## Waiting icon
 
 The waiting icon can be shown in each row header. With it you can indicate that the row data is still not loaded.
+
+>caption Figure 2: Busy indicators in RadVirtualGrid.
 
 ![virtualgrid-busy-indicators002](images/virtualgrid-busy-indicators002.gif)
 

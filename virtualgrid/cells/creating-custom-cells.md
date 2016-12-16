@@ -158,7 +158,7 @@ End Class
 
 {{endregion}}
 
-8\. Subscribe to the RadVirtualGrid.__CreateCellElement__ event where we should replace the default __VirtualGridCellElement__ with the custom one:
+8\. Subscribe to the __CreateCellElement__ event where we should replace the default __VirtualGridCellElement__ with the custom one:
 
 #### Apply the custom cell
 
@@ -208,7 +208,7 @@ Me.RadVirtualGrid1.MasterViewInfo.RegisterCustomColumn(3)
 
 >note Use the __UnregisterCustomColumn__ method if you need to unregister the custom cell for the specified column index. You can detect whether a custom cell is used for a certain column index by using the RadVirtualGrid.MasterViewInfo.__IsCustomColumn__ method.
 
-10\. The last thing we need to do, is to prevent entering edit mode for the custom cell. For this purpose, cancel the RadVirtualGrid.__EditorRequired__ event:
+10\. The last thing we need to do, is to prevent entering edit mode for the custom cell. For this purpose, cancel the __EditorRequired__ event:
 
 #### Prevent entering edit mode
 

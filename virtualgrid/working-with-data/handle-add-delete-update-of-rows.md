@@ -1,4 +1,4 @@
----
+ ---
 title: Handle Add, Delete and Update of Rows
 page_title: Handle Add, Delete and Update of Rows | RadVirtualGrid
 description: This article shows how you can handle Add, Delete and Update operations in RadVirtualGrid.

@@ -10,7 +10,7 @@ position: 1
 
 # Rigth-To-Left Support
 
-__RadVirtualGrid__ fully supports right-to-left (RTL) language locales. You can enable/disable the right-to-left support by setting the __RightToLeft__ property. The __RightToLeft__ enumeration has the following members:
+__RadVirtualGrid__ fully supports right-to-left (RTL) language locales. You can enable/disable the right-to-left layout by setting the __RightToLeft__ property. The __RightToLeft__ enumeration has the following members:
 
 * *Yes*: Content is aligned from right to left.
 

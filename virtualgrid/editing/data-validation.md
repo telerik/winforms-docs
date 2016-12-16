@@ -15,19 +15,20 @@ __RadVirtualGrid__ provides a convenient way to perform validation before data i
 
 Here is a list of all validation events: 
 
-* __CellValidating__ – Fires when a cell loses input focus, enabling content validation. 
+* __CellValidating:__ Fires when a cell loses input focus, enabling content validation. 
 
-* __RowValidating__ – Fires when a row is validating.
+* __RowValidating:__ Fires when a row is validating.
 
-* __RowValidated__ – Fires after a row has finished validating.
+* __RowValidated:__ Fires after a row has finished validating.
 
 The VirtualGridViewInfo.__SetRowErrorText__ method can be used to indicate validation errors. It will show an error indicator at the row header.
 
 The code snippet below demonstrates simple data validation scenario. It is enabled in the third column to enter only non-empty strings. When the string is empty, the validation fails and the error indicator at the row header is shown:
 
->caption Fig.1 Cell validation
+>caption Figure 1: Cell validation
+
 ![virtualgrid-editing-data-validation001](images/virtualgrid-editing-data-validation001.png)
->
+
 
 {{source=..\SamplesCS\VirtualGrid\Editing\EditorsProperties.cs region=CellValidating}} 
 {{source=..\SamplesVB\VirtualGrid\Editing\EditorsProperties.vb region=CellValidating}}

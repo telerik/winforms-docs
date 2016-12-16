@@ -16,7 +16,7 @@ __RadVirtualGrid__ supports built-in Copy/Paste functionality, which allows you 
 
 The copying functionality in __RadVirtualGrid__ is controlled via the __AllowCopy__ property. If this property is set to *false* the user would not be able to copy the cell values.
 
-Copying is a pretty simple operation. After cell/row is selected, right click over the data cell/row opens a context menu where the copy option exists. After selecting it, you can paste the content anywhere you need (in Notepad or Excel for example).
+Copying is a pretty simple operation. After cell/row is selected, right clicking over the data cell/row opens a context menu where the copy option exists. After selecting it, you can paste the content anywhere you need (in Notepad or Excel for example).
 
 __RadVirtualGrid__ introduces __Copying__ event which occurs when the grid has prepared appropriate data formats that represent the copy selection. This event is fired once for each supported format: DataFormats.Text, DataFormats.HTML, DataFormats.CommaSeparatedValue. You can cancel this event if the data is not allowed to be stored to Clipboard in a specific format, e.g. HTML format:
 

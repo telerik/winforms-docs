@@ -10,7 +10,9 @@ position: 0
 
 # Filtering Overview
 
-__RadVirtualGrid__  supports data filtering. Set the RadVirtualGrid.__AllowFiltering__ property to *true*.
+__RadVirtualGrid__ supports data filtering. Set the RadVirtualGrid.__AllowFiltering__ property to *true*.
+
+>caption Figure 1: Filtering is enabled.
 
 ![virtualgrid-filtering 001](images/virtualgrid-filtering001.png)
 

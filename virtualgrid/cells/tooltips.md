@@ -10,7 +10,7 @@ position: 2
 
 # ToolTips
 
-There are two ways to assign tooltips to cells in __RadVirtualGrid__, namely setting the __ToolTipText__ property of a __VirtualGridCellElement__ in the __CellFormatting__ event handler, or as in most of the RadControls by using the __ToolTipTextNeeded__ event of __RadVirtualGrid__.
+There are two ways to assign tooltips to cells in __RadVirtualGrid__, namely setting the __ToolTipText__ property of a __VirtualGridCellElement__ in the __CellFormatting__ event handler, or as in most of the RadControls by using the __ToolTipTextNeeded__ event.
 
 
 # Setting tooltips in the ToolTipTextNeeded event

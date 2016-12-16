@@ -33,4 +33,6 @@ The default behavior of the grid is to allow all views of the data to be sorted,
 
 ## Sorting Context Menus
 
-Sorting can be invoked through right clicking the column heading to display the context menu. The menu will allow you to choose from Sort Ascending, Sort Descending and to Clear Sorting.<br>![gridview-end-user-capabilities-sorting 006](images/virtualgrid-end-user-capabilities-sorting006.png)
+Sorting can be invoked through right clicking the column heading to display the context menu. The menu will allow you to choose from Sort Ascending, Sort Descending and to Clear Sorting.
+
+![gridview-end-user-capabilities-sorting 006](images/virtualgrid-end-user-capabilities-sorting006.png)

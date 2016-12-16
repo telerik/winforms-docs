@@ -31,7 +31,8 @@ Me.RadVirtualGrid1.AllowRowResize = True
 
 The __VirtualGridViewInfo__ object exposes properties for directly accessing its system rows and setting a desired height.
 
->caption Fig.1 Resizing System Rows<br>
+>caption Figure 1 Resizing System Rows.
+
 ![virtualgrid-rows-resizing-rows002](images/virtualgrid-rows-resizing-rows002.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=ResizingSystemRows}} 
@@ -57,7 +58,8 @@ Me.RadVirtualGrid1.MasterViewInfo.FilterRowHeight = 50
 
 The data rows can also be programmatically resized. __RadVirtualGrid.VirtualGridViewInfo__ provides a property for defining a uniform height to all rows and also methods for setting or retrieving the height of a single row.
 
->caption Fig.2 Resizing All Data Rows<br>
+>caption Figure 2 Resizing All Data Rows.
+
 ![virtualgrid-rows-resizing-rows003](images/virtualgrid-rows-resizing-rows003.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=ResizingDataRows}} 
@@ -75,7 +77,8 @@ Me.RadVirtualGrid1.MasterViewInfo.RowHeight = 60
 
 {{endregion}}
 
->caption Fig.3 Resizing A Single Data Row<br>
+>caption Figure 3 Resizing A Single Data Row.
+
 ![virtualgrid-rows-resizing-rows004](images/virtualgrid-rows-resizing-rows004.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=SetRowHeight}} 
@@ -101,21 +104,21 @@ The API exposes two events for notifications when a change in the height of a ro
 
 * __RowHeightChanging__: Raised before the operation starts, it can be canceled. The event arguments are:
 
- * __Cancel__: If set to *true* suspends the operation.
+     * __Cancel__: If set to *true* suspends the operation.
 
- * __NewHeight__: Value of the new row height.
+     * __NewHeight__: Value of the new row height.
 
- * __OldHeight__: Value of the old row height.
+     * __OldHeight__: Value of the old row height.
 
- * __RowIndex__: The index of the row which is about to be resized.
-  
- * __ViewInfo__: Reference to the __VirtualGridViewInfo__ object.
+     * __RowIndex__: The index of the row which is about to be resized.
+      
+     * __ViewInfo__: Reference to the __VirtualGridViewInfo__ object.
 
 * __RowHeightChanged__: Raised after the execution of the resizing operation. The event arguments are:
 
- * __RowIndex__: The index of the resized row.
-  
- * __ViewInfo__: Reference to the __VirtualGridViewInfo__ object.
+     * __RowIndex__: The index of the resized row.
+      
+     * __ViewInfo__: Reference to the __VirtualGridViewInfo__ object.
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=ResizingEvents}} 
 {{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=ResizingEvents}}

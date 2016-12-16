@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-The default __RadVirtualGrid__  context menu can be customized in the __ContextMenuOpening__ event.
+The default __RadVirtualGrid__ context menu can be customized in the __ContextMenuOpening__ event.
 
 # Removing an item from the default RadVirtualGrid context menu:
 
@@ -54,7 +54,7 @@ End Sub
 
 # Adding menu items to the default RadVirtualGrid context menu
  
-In order to add custom menu items to the default context menu, you should create menu item instances in the __ContextMenuOpening__ event handler and add them to the VirtualGridContextMenuOpeningEventArgs.ContextMenu.__Items__ collection:
+In order to add custom menu items to the default context menu, you should create menu item instances in the __ContextMenuOpening__ event handler and add them to the __VirtualGridContextMenuOpeningEventArgs.ContextMenu.Items__ collection:
 
 #### Adding items to the default RadVirtualGrid context menu:
 

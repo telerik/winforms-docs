@@ -11,13 +11,12 @@ position: 1
 
 # Resizing Columns Programmatically
 
-## Resizing Columns
 
 The columns inside the __RadVirtualGrid__ are resizable by default. The user is able to easily change the column width by positioning the mouse over the columns vertical grid line and dragging it until the desired size is achieved.
 
 ## Disable Resizing
 
-To restrict the resizing of all columns by the user set the __AllowColumnResize__ property of __RadVirtualGrid__ to *false*.
+To restrict the resizing of all columns by the user set the __AllowColumnResize__ property to *false*.
 
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=AllowColumnResize}} 
 {{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=AllowColumnResize}}
@@ -61,7 +60,8 @@ Me.RadVirtualGrid1.TableElement.ColumnsViewState.SetItemSize(0, 200)
 
 Columns can be auto-sized to a best fit value. The available API exposes methods for best-fitting all columns or just a single one:
 
->caption Fig.2 Best Fit All Columns<br>
+>caption Figure 2: Best fit all columns.
+
 ![virtualgrid-columns-resizing-columns002](images/virtualgrid-columns-resizing-columns002.png)
 
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=BestFitAllColumns}} 
@@ -78,7 +78,8 @@ Me.RadVirtualGrid1.BestFitColumns()
 
 {{endregion}}
 
->caption Fig.3 Best Fit a Column<br>
+>caption Figure 3: Best fit one column.
+
 ![virtualgrid-columns-resizing-columns003](images/virtualgrid-columns-resizing-columns003.png)
 
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=BestFitColumn}} 
@@ -96,7 +97,8 @@ Me.RadVirtualGrid1.VirtualGridElement.BestFitColumn(1)
 
 Columns can be auto-sized to fit the available space in __RadVirtualGrid__. It is necessary to set the __AutoSizeColumnsMode__ property to *VirtualGridAutoSizeColumnsMode.Fill*:
 
->caption Fig.4 AutoSizeColumnsMode.*Fill*
+>caption Figure 4: AutoSizeColumnsMode.*Fill*
+
 ![virtualgrid-columns-resizing-columns004](images/virtualgrid-columns-resizing-columns004.gif)
 
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=AutoSizeColumnsMode}} 
@@ -116,23 +118,23 @@ Me.RadVirtualGrid1.AutoSizeColumnsMode = VirtualGridAutoSizeColumnsMode.Fill
 
 The API exposes two events for notifications when a change in the height of a row is about to happen or has already happened.
 
-* __ColumnWidthChanging__: Raised before the operation starts, it can be canceled. The event arguments are:
+* __ColumnWidthChanging:__ Raised before the operation starts, it can be canceled. The event arguments are:
 
- * __Cancel__: If set to *true* suspends the operation.
+ * __Cancel:__ If set to *true* suspends the operation.
 
- * __NewWidth__: Value of the new column width.
+ * __NewWidth:__ Value of the new column width.
 
- * __OldWidth__: Value of the old column width.
+ * __OldWidth:__ Value of the old column width.
 
- * __ColumnIndex__: The index of the column which is about to be resized.
+ * __ColumnIndex:__ The index of the column which is about to be resized.
   
- * __ViewInfo__: Reference to the __VirtualGridViewInfo__ object.
+ * __ViewInfo:__ Reference to the __VirtualGridViewInfo__ object.
 
-* __ColumnWidthChanged__: Raised after the execution of the resizing operation. The event arguments are:
+* __ColumnWidthChanged:__ Raised after the execution of the resizing operation. The event arguments are:
 
- * __ColumnIndex__: The index of the resized column.
+ * __ColumnIndex:__ The index of the resized column.
   
- * __ViewInfo__: Reference to the __VirtualGridViewInfo__ object.
+ * __ViewInfo:__ Reference to the __VirtualGridViewInfo__ object.
 
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=ResizingEvents}} 
 {{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=ResizingEvents}}

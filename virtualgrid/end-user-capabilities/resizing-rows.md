@@ -29,7 +29,8 @@ Me.RadVirtualGrid1.AllowRowResize = True
 
 The grid rows can be resized by end users simply by positioning the mouse over the horizontal grid line and dragging it to a desired size.
 
->caption Fig.1 Mouse Resizing<br>
+>caption Figure 1: Mouse Resizing
+
 ![virtualgrid-end-user-capabilities-resizing-rows001](images/virtualgrid-end-user-capabilities-resizing-rows001.gif)
 
 See [this]({%slug winforms/virtualgrid/rows/resizing-rows-programmatically%}) topic for more information on how the columns can be resized programmatically.

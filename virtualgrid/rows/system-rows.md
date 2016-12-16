@@ -21,11 +21,11 @@ __RadVirtualGrid__ has three system rows.
 
 __RadVirtualGrid__ and its master view info expose properties defining whether or not a particular row will be displayed. The default value for each of the properties is *true*.
 
-* __RadVirtualGrid.ShowHeaderRow__
+* __ShowHeaderRow__
 
-* __RadVirtualGrid.AllowAddNewRow__
+* __AllowAddNewRow__
 
-* __RadVirtualGrid1.MasterViewInfo.ShowFilterRow__
+* __MasterViewInfo.ShowFilterRow__
 
 
 The system rows can be resized to a particular height: [Resizing Rows Programmatiacally]({%slug winforms/virtualgrid/rows/resizing-rows-programmatically%}).
