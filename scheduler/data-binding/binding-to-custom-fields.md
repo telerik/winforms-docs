@@ -1,7 +1,7 @@
 ---
 title: Binding to Custom Fields
-page_title: Binding to Custom Fields | UI for WinForms Documentation
-description: Binding to Custom Fields
+page_title: Binding to Custom Fields | RadScheduler
+description: RadScheduler__ has full support for binding to custom fields i.e. RadScheduler can be bound to an email field in your data source.
 slug: winforms/scheduler/data-binding/binding-to-custom-fields
 tags: binding,to,custom,fields
 published: True
@@ -11,10 +11,7 @@ previous_url: scheduler-data-binding-binding-to-custom-fields
 
 # Binding to Custom Fields
 
-## 
-
-RadScheduler has full support for binding to custom fields i.e. RadScheduler can be bound to an email field in your data source. The process consists of five steps:
-      
+__RadScheduler__ has full support for binding to custom fields i.e. __RadScheduler__ can be bound to an email field in your data source. The process consists of five steps:      
 
 1. Add your custom field to your data source.
 
@@ -85,6 +82,7 @@ End Class
 
 3\. Implement a simple appointment factory and inherit from the default appointment dialog and add some input controls and logic for your custom field. The easiest way to do the latter is to create a form in Visual Studio that inherits from the standard *Edit Appointment *dialog, then open it in the designer, and add your custom UI. The extended form from the example is shown on the screenshot below (notice the Email field on it):
 
+>caption Figure 1: Appointment with a Custom Field
 ![scheduler-data-binding-binding-to-custom-fields 001](images/scheduler-data-binding-binding-to-custom-fields001.png)
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=customAppFactory}} 
@@ -178,42 +176,27 @@ End Class
 {{endregion}} 
 
 4\. You should assign the custom AppointmentFactory to RadScheduler:
-                
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=customFactory}} 
-{{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=customFactory}} 
-````C#
-Me.RadScheduler1.AppointmentFactory = New CustomAppointmentFactory()
 
-````
-````VB.NET
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=customFactory}}                 
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=customFactory}}
+````C#
 this.radScheduler1.AppointmentFactory = new CustomAppointmentFactory();
 
 ````
+````VB.NET
+Me.RadScheduler1.AppointmentFactory = New CustomAppointmentFactory()
+
+```` 
+
+
 
 {{endregion}} 
 
-5\. You need to handle the AppointmentEditDialogShowing event of RadScheduler in order to replace the default appointment dialog with a custom one. You will also have to
-              give an instance of your appointment factory to the RadScheduler so it can create instances of your custom appointment class:
-            
+5\. You need to handle the AppointmentEditDialogShowing event of RadScheduler in order to replace the default appointment dialog with a custom one. You will also have to give an instance of your appointment factory to the RadScheduler so it can create instances of your custom appointment class:            
 
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=loadAndShowing}} 
-{{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=loadAndShowing}} 
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=loadAndShowing}}
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=loadAndShowing}}
 ````C#
-Private appointmentDialog As IEditAppointmentDialog = Nothing
-Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-    MyBase.OnLoad(e)
-    Me.RadScheduler1.AppointmentFactory = New CustomAppointmentFactory()
-    AddHandler RadScheduler1.AppointmentEditDialogShowing, AddressOf radSchedulerDemo_AppointmentEditDialogShowing
-End Sub
-Private Sub radSchedulerDemo_AppointmentEditDialogShowing(ByVal sender As Object, ByVal e As AppointmentEditDialogShowingEventArgs)
-    If Me.appointmentDialog Is Nothing Then
-        Me.appointmentDialog = New CustomAppointmentEditForm()
-    End If
-    e.AppointmentEditDialog = Me.appointmentDialog
-End Sub
-
-````
-````VB.NET
 private IEditAppointmentDialog appointmentDialog = null;  
 protected override void OnLoad(EventArgs e)
 {
@@ -231,28 +214,56 @@ void radSchedulerDemo_AppointmentEditDialogShowing(object sender, AppointmentEdi
 }
 
 ````
+````VB.NET
+Private appointmentDialog As IEditAppointmentDialog = Nothing
+Protected Overrides Sub OnLoad(ByVal e As EventArgs)
+    MyBase.OnLoad(e)
+    Me.RadScheduler1.AppointmentFactory = New CustomAppointmentFactory()
+    AddHandler RadScheduler1.AppointmentEditDialogShowing, AddressOf radSchedulerDemo_AppointmentEditDialogShowing
+End Sub
+Private Sub radSchedulerDemo_AppointmentEditDialogShowing(ByVal sender As Object, ByVal e As AppointmentEditDialogShowingEventArgs)
+    If Me.appointmentDialog Is Nothing Then
+        Me.appointmentDialog = New CustomAppointmentEditForm()
+    End If
+    e.AppointmentEditDialog = Me.appointmentDialog
+End Sub
+
+```` 
+ 
+
 
 {{endregion}} 
 
 6\. Finally, you have to add a mapping for your custom field to the appointment mapping info. Note that the same appointment factory instance is assigned to the event provider.
-            
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=mappings}} 
-{{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=mappings}} 
-````C#
-Dim dataSource As New SchedulerBindingDataSource()
-dataSource.EventProvider.AppointmentFactory = Me.RadScheduler1.AppointmentFactory
-Dim appointmentMappingInfo As AppointmentMappingInfo = DirectCast(dataSource.EventProvider.Mapping, AppointmentMappingInfo)
-appointmentMappingInfo.Mappings.Add(New SchedulerMapping("Email", "Email"))
 
-````
-````VB.NET
+{{source=..\SamplesCS\Scheduler\DataBinding\BindingToCustomFields.cs region=mappings}}             
+{{source=..\SamplesVB\Scheduler\DataBinding\BindingToCustomFields.vb region=mappings}}
+````C#
 SchedulerBindingDataSource dataSource = new SchedulerBindingDataSource(); 
 dataSource.EventProvider.AppointmentFactory = this.radScheduler1.AppointmentFactory;
 AppointmentMappingInfo appointmentMappingInfo = (AppointmentMappingInfo)dataSource.EventProvider.Mapping;
 appointmentMappingInfo.Mappings.Add(new SchedulerMapping("Email", "Email"));
 
 ````
+````VB.NET
+Dim dataSource As New SchedulerBindingDataSource()
+dataSource.EventProvider.AppointmentFactory = Me.RadScheduler1.AppointmentFactory
+Dim appointmentMappingInfo As AppointmentMappingInfo = DirectCast(dataSource.EventProvider.Mapping, AppointmentMappingInfo)
+appointmentMappingInfo.Mappings.Add(New SchedulerMapping("Email", "Email"))
+
+```` 
+ 
+
 
 {{endregion}} 
+
+# See Also
+
+* [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Scheduler Mapping]({%slug winforms/scheduler/data-binding/scheduler-mapping%})
+* [Working with Resources]({%slug winforms/scheduler/data-binding/working-with-resources%})
+* [setting Appointments and Resources Relations]({%slug winforms/scheduler/data-binding/setting-appointment-and-resource-relations%})
+
 
 

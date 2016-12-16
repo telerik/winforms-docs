@@ -1,7 +1,7 @@
 ---
 title: RadSchedulerReminder
-page_title: RadSchedulerReminder | UI for WinForms Documentation
-description: RadSchedulerReminder
+page_title: RadSchedulerReminder | RadScheduler
+description: RadSchedulerReminder represents a special reminder object for the appointments that are collected in RadScheduler.
 slug: winforms/scheduler/reminders/radschedulerreminder
 tags: radschedulerreminder
 published: True
@@ -10,8 +10,6 @@ previous_url: scheduler-reminders-radschedulerreminder
 ---
 
 # RadSchedulerReminder
-
-## Overview
 
 __RadSchedulerReminder__ represents a special reminder object for the appointments that are collected in __RadScheduler__. This component inherits from RadReminder.
 
@@ -101,7 +99,14 @@ appointment.Reminder = New TimeSpan(10000)
 
 Also you can set this in AppointmentEditDialog at runtime.
 
+>caption Figure 1: RadScheduler Reminder
 ![scheduler-reminders-radschedulerreminder 001](images/scheduler-reminders-radschedulerreminder001.png)
 
 When you start RadSchedulerReminder it will be filled with the appointment that starts in this interval. When you stop it all reminders will be cleared from the RadSchedulerReminder.
-        
+
+# See Also
+
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})
+* [Localizing RadScheduler]({%slug winforms/scheduler/localization/translating-strings%})
+* [Themes and Appearance]({%slug winforms/scheduler/appearance/themes-and-appearance%})

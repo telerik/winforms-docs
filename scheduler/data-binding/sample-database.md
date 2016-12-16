@@ -1,7 +1,7 @@
 ---
 title: Sample Database
-page_title: Sample Database | UI for WinForms Documentation
-description: Sample Database
+page_title: Sample Database | RadScheduler
+description: The article demonstrates how a sample data base can be accessed to kick start your development.
 slug: winforms/scheduler/data-binding/sample-database
 tags: sample,database
 published: True
@@ -11,21 +11,17 @@ previous_url: scheduler-data-binding-sample-database
 
 # Sample Database
 
-
-
-## Overview
-
 To kick start your development, a sample database for RadScheduler can be found in your installation folder of Telerik UI for WinForms (under the \Examples\DataSources folder).  The name of the file is SchedulerData.mdf. The sample database for RadScheduler contains the most simple scenario - two tables which can be used to bind the control to appointments and resources information.
 
-## Database structure
+## Database Structure
 
-Here is the structure of the Appointments table:
+Here is the structure of the __Appointments__ table:
 
 ![scheduler-data-binding-sample-database 001](images/scheduler-data-binding-sample-database001.png)
 
-Note that the mandatory fields for RadScheduler are ID, Summary, Start and End (those fields which do not allow null values to be stored in the database).
+Note that the mandatory fields for __RadScheduler__ are __ID__, __Summary__, __Start__ and __End__ (those fields which do not allow null values to be stored in the database).
 
-Here is the structure of the Resources table:
+Here is the structure of the __Resources__ table:
 
 ![scheduler-data-binding-sample-database 002](images/scheduler-data-binding-sample-database002.png)
 
@@ -37,11 +33,11 @@ The general overview of the database is on the following diagram:
 
 ![scheduler-data-binding-sample-database 004](images/scheduler-data-binding-sample-database004.png)
 
-The AppointmentsResources table has relations to the primary keys of the AppointmentsResources and Resources tables.
+The __AppointmentsResources__ table has relations to the primary keys of the AppointmentsResources and Resources tables.
 
 You can use schema script to automatically add the Scheduler data tables to an existing database. Here is the script that creates the __AppointmentsResources__ data table:
 
-````sql
+````SQL
 	
 	USE [SchedulerData]
 	
@@ -104,7 +100,7 @@ You can use schema script to automatically add the Scheduler data tables to an e
 
 Here is the script that creates the __Resources__ data table:
 
-````sql
+````SQL
 	
 	USE [SchedulerData]
 	
@@ -155,7 +151,7 @@ Here is the script that creates the __Resources__ data table:
 Here is the script that creates the __Appointments__ data table:
         
 
-````sql
+````SQL
 	
 	USE [SchedulerData]
 	
@@ -202,5 +198,12 @@ Here is the script that creates the __Appointments__ data table:
 	) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 	
 ````
+
+# See Also
+
+* [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Scheduler Mapping]({%slug winforms/scheduler/data-binding/scheduler-mapping%})
+* [Working with Resources]({%slug winforms/scheduler/data-binding/working-with-resources%})
 
 

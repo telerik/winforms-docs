@@ -1,7 +1,7 @@
 ---
 title: Copy/Paste/Cut
-page_title: Copy/Paste/Cut | UI for WinForms Documentation
-description: Copy/Paste/Cut
+page_title: Copy/Paste/Cut | RadScheduler
+description: RadScheduler supports built-in Copy/Paste/Cut functionality, which allows you to store appointments information in the Clipboard and then paste it in a different location.
 slug: winforms/scheduler/end-user-functionality/copy/paste/cut
 tags: copy/paste/cut
 published: True
@@ -13,25 +13,23 @@ previous_url: scheduler-end-user-functionality-copy-paste-cut
 
 __RadScheduler__ supports built-in Copy/Paste/Cut functionality, which allows you to store appointments information in the Clipboard and then paste it in a different location. Using "Copy", "Paste" and "Cut" options gets quite useful when you want to enter the same content repeatedly.
 
-## 
-
 You can control which Clipboard operations are allowed via the RadScheduler.__AllowCopyPaste__ property. The possible values are listed below:
 
-* *Disallow* - the end user is not allowed to copy, paste and cut appointments.
-
-* *AllowCopy* - the end user is only allowed to copy appointments.
-
-* *AllowCut* - the end user is only allowed to cut appointments.
-
-* *AllowPaste* - the end user is only allowed to paste appointments.
-
-* *AllowCopyPaste* - the end user is only allowed to copy and paste appointments.
-
-* *AllowCutPaste* - the end user is only allowed to cut and paste appointments.
-
-* *AllowCopyCut* - the end user is only allowed to copy and cut appointments.
-
-* *AllowAll* - all Clipboard operations are allowed.
+* __Disallow__:The end user is not allowed to copy, paste and cut appointments.
+  
+* __AllowCopy__: The end user is only allowed to copy appointments.
+  
+* __AllowCut__: The end user is only allowed to cut appointments.
+  
+* __AllowPaste__: The end user is only allowed to paste appointments.
+  
+* __AllowCopyPaste__: The end user is only allowed to copy and paste appointments.
+  
+* __AllowCutPaste__: The end user is only allowed to cut and paste appointments.
+  
+* __AllowCopyCut__: The end user is only allowed to copy and cut appointments.
+  
+* __AllowAll__: All Clipboard operations are allowed.
 
 ## Copying
 
@@ -39,12 +37,14 @@ Copying is a pretty simple operation. After an appointment is selected, press Ct
 
 __RadScheduler__ introduces __AppointmentsCopying__ event which occurs when the scheduler has prepared appropriate data formats that represent the copy selection. This event is fired once for each supported format: *Text*, *Csv*, *ICal*. You can cancel this event if the data is not allowed to be stored to Clipboard in a specific format.
 
->note Additionally, you can use the RadScheduler. __Copy__ method in order to perform programmatically copy functionality.
+>note Additionally, you can use the RadScheduler.__Copy__ method in order to perform programmatically copy functionality.
 >
 
 ## Pasting
 
 Ctrl+V is the key combination performing the paste behavior in scheduler. The RadScheduler.__Pasting__ event is appropriate for modifying the Clipboard data before pasting it in the scheduler. The following example demonstrates how to modified the copied string before inserting it in the scheduler:
+
+#### Pasting Appointment
 
 {{source=..\SamplesCS\Scheduler\EndUserFunctionality\EditingAppointments.cs region=Pasting}} 
 {{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=Pasting}} 
@@ -75,6 +75,7 @@ End Sub
 
 {{endregion}}
 
+>caption Figure 1: Pasting Appointment
 ![scheduler-end-user-functionality-copy-paste-cut 001](images/scheduler-end-user-functionality-copy-paste-cut001.gif)
 
 You can cancel this event as well in order to prevent pasting data in some cases.
@@ -86,3 +87,9 @@ You can cancel this event as well in order to prevent pasting data in some cases
 
 If the Cut operation is allowed, you can cut appointments by pressing Ctrl+X. Alternatively, you can use the RadScheduler.__Cut__ method.
       
+# See Also
+
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})
+* [Scheduler Navigator]({%slug winforms/scheduler/scheduler-navigator/overview%})
+* [Printing Overview]({%slug winforms/scheduler/print-support%})

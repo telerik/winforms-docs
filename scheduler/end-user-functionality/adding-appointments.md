@@ -1,7 +1,7 @@
 ---
 title: Adding Appointments
-page_title: Adding Appointments | UI for WinForms Documentation
-description: Adding Appointments
+page_title: Adding Appointments | RadScheduler
+description: The end user can add appointments either by using the context menu or by double clicking a cell.
 slug: winforms/scheduler/end-user-functionality/adding-appointments
 tags: adding,appointments
 published: True
@@ -11,7 +11,7 @@ previous_url: scheduler-end-user-functionality-adding-appointments
 
 # Adding Appointments
 
-Much like Microsoft Outlook, RadScheduler for WinForms offers several ways of creating new appointments:
+Much like Microsoft Outlook, __RadScheduler__ for WinForms offers several ways of creating new appointments:
 
 * By double-clicking on the scheduler surface.
 
@@ -20,11 +20,9 @@ Much like Microsoft Outlook, RadScheduler for WinForms offers several ways of cr
 >note You can prohibit end-users from creating, moving, resizing, and copying scheduled appointments.
 >
 
-
-## Adding an appointment by double-clicking on the scheduler surface
+## Adding an Appointment by Double-clicking on the Scheduler Surface
 
 1. In the scheduler surface, select the __start time__ when you want the appointment to occur.
-            
 
 1. Double-click on the time and an “Edit Appointment Dialog” will appear. 
     ![scheduler-end-user-functionality-adding-appointments 001](images/scheduler-end-user-functionality-adding-appointments001.png)
@@ -34,7 +32,6 @@ Much like Microsoft Outlook, RadScheduler for WinForms offers several ways of cr
     - Enter or change the appointment __Subject__
 
     - Enter or change the appointment __Location__ by typing in the edit control.
-                    
 
     - Change the appointment __Background__
 
@@ -71,7 +68,7 @@ Much like Microsoft Outlook, RadScheduler for WinForms offers several ways of cr
 
     - When you are ready press the Ok button to accept the changes or press the Cancel button to cancel them.
 
-## Adding an appointment by double-clicking on the scheduler surface
+## Adding an Appointment by Using the Context Menu
 
 1. In the scheduler surface, with the moust select the duration of the appointment (drag the selection from the starting time to the end time) when you want the appointment to occur.
 
@@ -79,7 +76,7 @@ Much like Microsoft Outlook, RadScheduler for WinForms offers several ways of cr
 
 ![scheduler-end-user-functionality-adding-appointments 006](images/scheduler-end-user-functionality-adding-appointments006.png)
 
-## Adding an appointment through inline editors
+## Adding an Appointment through Inline Editors
 
 The __RadScheduler__ supports inline editors. Their purpose is to create an appointment without using the EditAppointmentDialog form. When the user selects a cell or sequence of cells and start typing in them the __RadScheduler__ creates a temp appointment in the active view. This appointment will be added to __RadScheduler__ if the user presses button “Enter” or the active editor looses its focus.
 
@@ -89,3 +86,9 @@ The __RadScheduler__ supports inline editors. Their purpose is to create an appo
 
 The logical view functionality keeps the settings that are applied to the current view and applies the settings which are equal for the different views (for example DefaultTimeZone). The view state will be persisted automatically when switching to a different view.
         
+# See Also
+
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})
+* [Scheduler Navigator]({%slug winforms/scheduler/scheduler-navigator/overview%})
+* [Printing Overview]({%slug winforms/scheduler/print-support%})

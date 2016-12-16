@@ -1,6 +1,6 @@
 ---
 title: Working with Recurring Appointments
-page_title: Working with Recurring Appointments | UI for WinForms Documentation
+page_title: Working with Recurring Appointments | RadScheduler
 description: RadScheduler includes support for recurring events on minutely, hourly, weekly, daily, monthly and yearly basis. 
 slug: winforms/scheduler/appointments-and-dialogs/working-with-recurring-appointments
 tags: working,with,recurring,appointments
@@ -11,9 +11,7 @@ previous_url: scheduler-appointments-and-dialogs-working-with-recurring-appointm
 
 # Working with Recurring Appointments
 
-## Overview
-
-RadScheduler includes support for recurring events on minutely, hourly, weekly, daily, monthly and yearly basis. __Exceptions__ to the recurrence rules are also permitted. To support this recurrence behavior, the __IEvent__ interface (which the __Appointment__ class implements) includes the __RecurrenceRule__, __MasterEvent__, __Occurrences__ and __Exceptions__ properties. When an appointment is assigned a recurrence rule it becomes a recurring appointment.
+__RadScheduler__ includes support for recurring events on minutely, hourly, weekly, daily, monthly and yearly basis. __Exceptions__ to the recurrence rules are also permitted. To support this recurrence behavior, the __IEvent__ interface (which the __Appointment__ class implements) includes the __RecurrenceRule__, __MasterEvent__, __Occurrences__ and __Exceptions__ properties. When an appointment is assigned a recurrence rule it becomes a recurring appointment.
 
 If the user modifies an individual appointment occurrence, this creates an __exception__, sets its __MasterEvent__ property to the original recurring appointment and puts it in its __Exceptions__ collection so that no occurrence is generated for the exception occurrence. This way the exception is still linked to the original recurrence series.
 
@@ -37,6 +35,8 @@ Using the specialized classes makes it easier to define recurrence rules because
 
 One of several constructor overloads lets you set the start time, duration and number of occurences. Then the rule can be assigned to the appointments __RecurrenceRule__ property. The snippet below defines a rule that starts "now" and recurs every two hours and stops after the tenth occurence.
 
+#### RecurrenceRule Property
+
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=addingRecRule}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=addingRecRule}} 
 
@@ -52,6 +52,8 @@ RadScheduler1.Appointments(0).RecurrenceRule = New HourlyRecurrenceRule(Date.Now
 {{endregion}} 
 
 The Appointment __Occurrences__ property lets you iterate a list of __IEvent__ instances. To get only some occurrences between specific starting and stopping times, use the Appointment __GetOccurrences()__ method.
+
+#### Retrieving Occurrences
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=iterating}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=iterating}} 
@@ -88,6 +90,8 @@ Next ev
 
 When the user changes a specific occurrence and not the entire series, an "Exception" is created. "Exceptions" in this context refer to "Exceptions to a rule", not the .NET Exception class related to error handling. You can create exceptions programmatically by adding to the IEvent __MasterEvent.Exceptions__ collection. The snippet below changes the background and status of an IEvent instance and adds the IEvent to its own MasterEvent Exceptions collection.
 
+#### Recurrence Rule Exception
+
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=addingExceptions}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=addingExceptions}} 
 
@@ -109,6 +113,8 @@ myEvent.MasterEvent.Exceptions.Add(myEvent)
 ## Examples
 
 Here is an example using the __HourlyRecurrenceRule__ class:
+
+#### Setting HourlyReccurrenceRule
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\RecurringAppointments.cs region=console}} 
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\RecurringAppointments.vb region=console}} 
@@ -158,4 +164,13 @@ Next ev
 
 The __Occurrences__ property of the __Appointment__ class returns an enumerator that can be used to retrieve all the occurrences defined by the rule. Similarly the __GetOccurrences__ method of the __Appointment__ class can be used to retrieve all occurrences in a given interval. The example above produces the following output:
 
+>caption Figure 1: Appointment Occurrences 
 ![scheduler-appointments-and-dialogs-working-with-recurring-appointments 001](images/scheduler-appointments-and-dialogs-working-with-recurring-appointments001.jpg)
+
+# See Also
+
+* [Reccurrence Rule Walkthrough]({%slug winforms/scheduler/appointments-and-dialogs/recurrence-rule-walkthrough%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Data Binding Introduction]({%slug winforms/scheduler/data-binding/introduction%})
+* [Formatting Appointments]({%slug winforms/scheduler/appearance/formatting-appointments%})
+* [Scheduler Element Provider]({%slug winforms/scheduler/fundamentals/scheduler-element-provider-%})

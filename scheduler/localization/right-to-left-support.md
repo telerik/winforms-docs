@@ -1,7 +1,7 @@
 ---
 title: Right-to-Left support
-page_title: Right-to-Left support | UI for WinForms Documentation
-description: Right-to-Left support
+page_title: Right-to-Left support | RadScheduler
+description: RadScheduler supports Right-to-Left support layout and it can be enabled by setting the RightToLeft property to Yes.
 slug: winforms/scheduler/localization/right-to-left-support
 tags: right-to-left,support
 published: True
@@ -11,9 +11,9 @@ previous_url: scheduler-localization-right-to-left
 
 # Right-to-Left support
 
-## 
-
 Enabling the RightToLeft mode of RadScheduler is achieved by setting the __RightToLeft__ property to *Yes*:
+
+#### Right-to-Left Layout
 
 {{source=..\SamplesCS\Scheduler\Localization\SchedulerRightToLeft.cs region=RTL}} 
 {{source=..\SamplesVB\Scheduler\Localization\SchedulerRightToLeft.vb region=RTL}} 
@@ -31,4 +31,11 @@ RadScheduler1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 Here is how your scheduler will look like in this mode:
 
+>caption Figure 1: Right-to-Left Layout
 ![scheduler-localization-right-to-left](images/scheduler-localization-right-to-left.png)
+
+# See Also
+
+* [Localizing RadScheduler]({%slug winforms/scheduler/localization/translating-strings%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Themes and Appearance]({%slug winforms/scheduler/appearance/themes-and-appearance%})

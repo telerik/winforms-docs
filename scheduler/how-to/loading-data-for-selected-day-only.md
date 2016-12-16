@@ -1,7 +1,7 @@
 ---
 title: Loading Data for Selected Day Only
-page_title: Loading Data for Selected Day Only | UI for WinForms Documentation
-description: Loading Data for Selected Day Only
+page_title: Loading Data for Selected Day Only | RadScheduler
+description: The article provides an example how data can be loaded for a selected data only
 slug: winforms/scheduler/how-to/loading-data-for-selected-day-only
 tags: loading,data,for,selected,day,only
 published: True
@@ -11,10 +11,7 @@ previous_url: scheduler-how-to-loading-data-for-selected-day-only
 
 # Loading Data for Selected Day Only
 
-## How to load the data for the selected day when loading RadScheduler up from code, i.e. load the data when the user is switching days on the scheduler?
-
-The solution is to:
-
+The article provides an example how data for the selected day when loading RadScheduler up from code, i.e. load the data when the user is switching days on the scheduler.
 1. Listen for a change in the __StartDate__ property of the ActiveView
 
 1. Subscribe for the __PropertyChanged__ event of the ActiveView
@@ -52,4 +49,10 @@ End Sub
 
 ````
 
-{{endregion}} 
+{{endregion}}
+
+# See Also
+
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Data Binding]({%slug winforms/scheduler/data-binding/introduction%})
+* [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})

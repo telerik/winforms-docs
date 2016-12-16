@@ -1,7 +1,7 @@
 ---
 title: Save/Load reminders
-page_title: Save/Load reminders | UI for WinForms Documentation
-description: Save/Load reminders
+page_title: Save/Load reminders | RadScheduler
+description: RadScheduler allows you to save and load the reminders set for appointments. Reminders are saved into an xml file format to a user provider file path or stream.
 slug: winforms/scheduler/reminders/save/load-reminders
 tags: save/load,reminders
 published: True
@@ -11,10 +11,9 @@ previous_url: scheduler-reminders-save-load-reminders
 
 # Save/Load reminders
 
-## 
-
 __RadScheduler__ allows you to save and load the reminders set for appointments. Reminders are saved into an xml file format to a user provider file path or stream. To save the reminders for a given scheduler you should call the __SaveRemidners__ method of __RadScheduler__ and provide a path where the file should be saved:
 
+#### Save Reminders
 
 {{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=SaveReminders}} 
 {{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=SaveReminders}} 
@@ -33,7 +32,9 @@ Me.radScheduler1.SaveReminders(filePath)
 >note When you load reminders you should first have the appointments loaded in __RadScheduler__ so the load mechanism can identify them and restore their reminders.
 >
 
-You can load saved reminders into RadScheduler is by calling the LoadReminders method:
+You can load saved reminders into __RadScheduler__ is by calling the __LoadReminders__ method:
+
+#### Load Reminders
 
 {{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=LoadReminders}} 
 {{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=LoadReminders}} 
@@ -49,11 +50,14 @@ Me.radScheduler1.LoadReminders(filePath)
 
 {{endregion}} 
 
-
 __SchedulerSaveLoadRemindersBehavior__ is the class that handles the saving and loading of reminders inside __RadScheduler__. You can inherit this class and provide your own custom logic for saving and loading appointments. After you have your custom implementation all you have to do is assign it to the __SaveLoadRemindersBehavior__  property of __RadScheduler__:
 
+#### Custom Save/Load Behavior
+
 {{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=CustomSaveLoadRemindersBehavior}} 
-{{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=CustomSaveLoadRemindersBehavior}}````C#
+{{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=CustomSaveLoadRemindersBehavior}}
+
+````C#
 public class CustomSaveLoadRemindersBehavior : SchedulerSaveLoadRemindersBehavior
 {
     public CustomSaveLoadRemindersBehavior(RadScheduler scheduler)
@@ -88,6 +92,8 @@ End Class
 
 {{endregion}} 
 
+#### Change the Current Save/Load Behavior
+
 {{source=..\SamplesCS\Scheduler\Reminders\SaveLoadReminders.cs region=SetRemindersBehavior}} 
 {{source=..\SamplesVB\Scheduler\Reminders\SaveLoadReminders.vb region=SetRemindersBehavior}} 
 
@@ -102,5 +108,9 @@ Me.radScheduler1.SaveLoadRemindersBehavior = New CustomSaveLoadRemindersBehavior
 
 {{endregion}} 
 
+# See Also
 
-
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})
+* [Localizing RadScheduler]({%slug winforms/scheduler/localization/translating-strings%})
+* [Themes and Appearance]({%slug winforms/scheduler/appearance/themes-and-appearance%})

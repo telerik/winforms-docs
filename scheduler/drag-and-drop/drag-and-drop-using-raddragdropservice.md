@@ -1,7 +1,7 @@
 ---
-title: Drag and Drop using RadDragDropService
-page_title: Drag and Drop using RadDragDropService | UI for WinForms Documentation
-description: Drag and Drop using RadDragDropService
+title: Drag and Drop Using RadDragDropService
+page_title: Drag and Drop using RadDragDropService | RadScheduler
+description: This article will guide you through the process of achieving drag and drop functionality from RadScheduler to RadGridView and vice versa.
 slug: winforms/scheduler/drag-and-drop/drag-and-drop-using-raddragdropservice
 tags: drag,and,drop,using,raddragdropservice
 published: True
@@ -9,7 +9,7 @@ position: 1
 previous_url: scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice
 ---
 
-# Drag and Drop using RadDragDropService
+# Drag and Drop Using RadDragDropService
 
 This article will guide you through the process of achieving drag and drop functionality from __RadScheduler__ to __RadGridView__ and vice versa. For this purpose, we will use the __RadDragDropService__, supported by both of the controls.
 
@@ -223,6 +223,7 @@ End Sub
 >note The start date of the created appointment is in correspondence with the cell where the row is dropped. The appointment’s duration is relevant to the original duration.
 >
 
+>caption Figure 1: Drag and Drop from RadGridView to RadScheduler
 ![scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice 001](images/scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice001.gif)
 
 ## Drag and Drop from RadScheduler to RadGridView
@@ -381,4 +382,12 @@ End Sub
 
 {{endregion}} 
 
+>caption Figure 2: Drag and Drop from RadScheduler to RadGridView 
 ![scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice 002](images/scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice002.gif)
+
+# See Also
+
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})
+* [Formatting Appointments]({%slug winforms/scheduler/appearance/formatting-appointments%})
+* [Scheduler Element Provider]({%slug winforms/scheduler/fundamentals/scheduler-element-provider-%})

@@ -1,7 +1,7 @@
 ---
 title: Views Walkthrough
-page_title: Views Walkthrough | UI for WinForms Documentation
-description: Views Walkthrough
+page_title: Views Walkthrough | RadScheduler
+description: The tutorial demonstrates how the scheduler view can be changed dynamically.
 slug: winforms/scheduler/views/views-walkthrough
 tags: views,walkthrough
 published: True
@@ -11,10 +11,7 @@ previous_url: scheduler-views-views-walkthrough
 
 # Views Walkthrough
 
-
-
-In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)) you will dynamically change the view, change some of the view specific properties and handle the ActiveViewChanging event.
-      
+In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)) you will dynamically change the view, change some of the view specific properties and handle the __ActiveViewChanging__ event.
 
 ## Project Setup
 
@@ -231,4 +228,12 @@ End Sub
 
 16\. Run the application and test the various combinations of settings.
 
+>caption Figure 1: Views Walkthrough
 ![scheduler-views-views-walkthrough 001](images/scheduler-views-views-walkthrough001.png)
+
+# See Also
+
+* [Common Visual Properties]({%slug winforms/scheduler/views/common-visual-properties%})
+* [Working with Views]({%slug winforms/scheduler/views/working-with-views%})
+* [Grouping by Resources]({%slug winforms/scheduler/views/grouping-by-resources%})
+* [Exact Time Rendering]({%slug winforms/scheduler/views/exact-time-rendering%})

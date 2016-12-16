@@ -1,6 +1,6 @@
 ---
-title: Input behavior
-page_title: Input behavior | UI for WinForms Documentation
+title: Input Behavior
+page_title: Input Behavior | RadScheduler
 description: Input behavior
 slug: winforms/scheduler/fundamentals/input-behavior
 tags: input,behavior
@@ -9,37 +9,37 @@ position: 1
 previous_url: scheduler-fundamentals-input-behavior
 ---
 
-# Input behavior
+# Input Behavior
 
-The __SchedulerInputBehavior__ is responsible for processing the keyboard and mouse input in RadScheduler. 
-
-## 
+The __SchedulerInputBehavior__ is responsible for processing the keyboard and mouse input in __RadScheduler__.
 
 Below are the methods which handle the respective events:
 
-* HandleMouseDown
+* __HandleMouseDown__
+  
+* __HandleMouseMove__
+  
+* __HandleMouseUp__
+  
+* __HandleMouseDown__
+  
+* __HandleNavigationKey__
+  
+* __HandleMouseWheel__
+  
+* __HandleMouseEnter__
+  
+* __HandleMouseLeave__
+  
+* __HandleCellElementDoubleClick__
+  
+* __HandleAppointmentElementDoubleClick__
+  
+* __HandleCellElementKeyPress__
 
-* HandleMouseMove
+Each of these methods can be overridden and the instance of the __SchedulerInputBehavior__ used in __RadScheduler__ can be replaced with a custom one. This allows you to modify the default behavior of the control. The following example demonstrates how to alter the default behavior and allow moving appointments via CTRL + arrow keys. In order to accomplish this, we need to inherit the SchedulerInputBehavior class and override the __HandleKeyDown__ method:
 
-* HandleMouseUp
-
-* HandleMouseDown
-
-* HandleNavigationKey
-
-* HandleMouseWheel
-
-* HandleMouseEnter
-
-* HandleMouseLeave
-
-* HandleCellElementDoubleClick
-
-* HandleAppointmentElementDoubleClick
-
-* HandleCellElementKeyPress
-
-Every one of these methods can be overridden and the instance of the __SchedulerInputBehavior__ used in RadScheduler can be replaced with a custom one. This allows you to modify the default behavior of RadScheduler. The following example demonstrates how to modify the default behavior to allow moving appointments via CTRL + arrow keys. In order to accomplish this, we will need to create a descendant of SchedulerInputBehavior and override the HandleKeyDown method:
+#### Custom Input Behavior
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\InputBehavior.cs region=Behavior}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\InputBehavior.vb region=Behavior}} 
@@ -99,7 +99,9 @@ End Class
 
 {{endregion}} 
 
-Now we need to assign this new input behavior to the __SchedulerInputBehavior__ property of RadScheduler:
+Now we need to assign this new input behavior to the __SchedulerInputBehavior__ property of __RadScheduler__:
+
+#### Set Behavior
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\InputBehavior.cs region=SetBehavior}} 
 {{source=..\SamplesVB\Scheduler\Fundamentals\InputBehavior.vb region=SetBehavior}} 
@@ -117,4 +119,11 @@ scheduler.SchedulerInputBehavior = New MySchedulerInputBehavior(scheduler)
 
 You can see the result below:
 
+>caption Figure 1: Custom Input Behavior
 ![scheduler-fundamentals-input-behavior 001](images/scheduler-fundamentals-input-behavior001.gif)
+
+# See Also
+
+* [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
+* [Data Binding]({%slug winforms/scheduler/data-binding/introduction%})
+* [Views]({%slug winforms/scheduler/views/overview-and-structure%})
