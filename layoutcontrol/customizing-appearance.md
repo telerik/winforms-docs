@@ -38,7 +38,7 @@ radLayoutControl1.ContainerElement.PreviewRectangleStroke = ColorTranslator.From
 
 {{endregion}} 
 
->caption Figure 1: Changed PreviewRectangleFill and PreviewRectangleStroke.<br>![layoutcontrol-customize-appearance 001](images/layoutcontrol-customize-appearance001.png)
+>caption Figure 1: Changed PreviewRectangleFill and PreviewRectangleStroke.<br>![layoutcontrol-customize-appearance 001](images/layoutcontrol-customize-appearance001.gif)
 
 ## Customizing items
 
