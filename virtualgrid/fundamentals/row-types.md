@@ -32,3 +32,11 @@ The following list shows the most commonly used row properties and methods:
 * __TableElement.RowHeight:__ You can set the default row height by setting the property.
 * __AllowRowResize:__  You can allow the end user to resize rows by setting this property to *true*.
 * __TableElement.SetRowHeight:__ This method allows you to set the height of a specific row in he code behind.
+
+# See Also
+* [Element Hierarchy]({%slug winforms/virtualgrid/cells/element-hierarchy%})
+
+* [Key Features]({%slug winforms/virtualgrid/cells/formatting-data-cells%})
+
+* [UI Virtualization]({%slug winforms/virtualgrid/ui-virtualization%})
+

@@ -66,3 +66,9 @@ In addition, you can use the following properties to get the selected rows or ce
 * __SelectedRegion:__ returns the first selected region.
 
 * __SelectedRegions:__ returns all selected regions.
+
+# See Also
+* [Multiple Selection]({%slug winforms/virtualgrid/selection/multiple-selection%})
+
+* [Selecting Cells Programmatically]({%slug winforms/virtualgrid/selection/selecting-cells-programmatically%})
+

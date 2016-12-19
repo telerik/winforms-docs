@@ -242,3 +242,11 @@ End Sub
 >note The __RadCheckBoxElement__ can be replaced with any other __RadElement__ according to the user's requirement.
 
 
+
+# See Also
+* [Formatting Data Cells]({%slug winforms/virtualgrid/cells/formatting-data-cells%})
+
+* [Formatting System Cells]({%slug winforms/virtualgrid/cells/formatting-system-cells%})
+
+* [ToolTips]({%slug winforms/virtualgrid/cells/tooltips%})
+

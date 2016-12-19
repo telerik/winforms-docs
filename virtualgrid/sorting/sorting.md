@@ -313,3 +313,7 @@ End Class
  
 
  
+
+# See Also
+* [Setting Sorting Programmatically]({%slug winforms/virtualgrid/sorting/setting-sorting-programmatically%})
+

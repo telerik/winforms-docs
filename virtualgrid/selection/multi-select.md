@@ -67,3 +67,9 @@ Once you have applied these setting, the options for selection are:
 * In order to mark a block selection, mark the first cell of the desired selection, hold __Shift__ and click on the last cell of the desired selection. Please note that this will select all the cells in the rectangle between the first and the second selected cell.
 
 ![virtualgrid-multi-selection002](images/virtualgrid-multi-selection002.png)
+
+# See Also
+* [Selecting Cells Programmatically]({%slug winforms/virtualgrid/selection/selecting-cells-programmatically%})
+
+* [Selection]({%slug winforms/virtualgrid/selection/selection%})
+

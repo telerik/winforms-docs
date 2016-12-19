@@ -95,3 +95,7 @@ End Sub
 
 
 
+
+# See Also
+* [Advanced]({%slug winforms/virtualgrid/save-and-load-layout/advanced%})
+

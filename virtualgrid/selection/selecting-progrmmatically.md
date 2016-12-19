@@ -50,3 +50,9 @@ radVirtualGrid1.VirtualGridElement.Selection.ExtendCurrentRegion(6, 3)
 
 
 
+
+# See Also
+* [Multiple Selection]({%slug winforms/virtualgrid/selection/multiple-selection%})
+
+* [Selection]({%slug winforms/virtualgrid/selection/selection%})
+

@@ -307,3 +307,7 @@ End Class
 {{endregion}}
 
 >note It is necessary to specify the __FieldName__ property for the filter cells.
+
+# See Also
+* [Setting Filters Programmatically]({%slug winforms/virtualgrid/filtering/setting-filters-programmatically%})
+

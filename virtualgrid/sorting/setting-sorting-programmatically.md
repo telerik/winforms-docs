@@ -49,3 +49,7 @@ Me.RadVirtualGrid1.SortDescriptors.Add(descriptorContactName)
 {{endregion}}
 
 >note The RadVirtualGrid.__AllowMultiColumnSorting__ property should be set to *true* in order to achieve multiple columns sorting. Otherwise, __RadVirtualGrid__ will be sorted by a single column.
+
+# See Also
+* [Sorting Overview]({%slug winforms/virtualgrid/sorting/sorting%})
+

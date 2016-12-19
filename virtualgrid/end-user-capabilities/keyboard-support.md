@@ -28,3 +28,17 @@ A typical business application needs to support "heads-down" data entry that avo
 ||Esc|Deactivates cell editor and discards the changes|
 
 
+
+# See Also
+* [Editing Behavior]({%slug winforms/gridview/end-user-capabilities/editing-behavior%})
+
+* [Filtering]({%slug winforms/virtualgrid/end-user-capabilities/filtering%})
+
+* [Resizing Columns]({%slug winforms/virtualgrid/end-user-capabilities/resizing-columns%})
+
+* [Resizing Rows]({%slug winforms/virtualgrid/end-user-capabilities/resizing-rows%})
+
+* [Scrolling Support]({%slug winforms/vitualgrid/end-user-capabilities/scrolling-support%})
+
+* [Sorting]({%slug winforms/gridview/end-user-capabilities/sorting%})
+

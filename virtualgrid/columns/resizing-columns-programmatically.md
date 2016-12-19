@@ -167,3 +167,7 @@ End Sub
 
 
 {{endregion}}
+
+# See Also
+* [Pinned Columns]({%slug winforms/virtualgrid/columns/pinned-columns%})
+

@@ -34,3 +34,7 @@ To access the public API for paging you will use the __MasterViewInfo__ of __Rad
 * __MoveToNextPage:__ Sets RadGridView to the next page.
 
 * __MoveToLastPage:__ Sets RadGridView to its last page.
+
+# See Also
+* [Paging Panel]({%slug winforms/virtualgrid/paging/paging-panel%})
+

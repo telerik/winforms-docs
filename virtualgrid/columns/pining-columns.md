@@ -49,3 +49,7 @@ radVirtualGrid1.VirtualGridElement.SetColumnPinPosition(2, PinnedColumnPosition.
 {{endregion}}
 
 
+
+# See Also
+* [Resizing Columns Programmatically]({%slug winforms/virtualgrid/columns/resizing-columns-programmatically%})
+
