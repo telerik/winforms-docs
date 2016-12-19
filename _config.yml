@@ -1005,6 +1005,9 @@ navigation:
     virtualgrid/context-menu:
         title: Context Menu
         position: 13
+    virtualgrid/customizing-apearance:
+        title: Customizing Apearance
+        position: 13
     virtualgrid/hierarchical-virtual-grid:
         title: Hierarchical Virtual Grid
         position: 14
