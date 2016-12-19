@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | UI for WinForms Documentation
+page_title: Structure | RadWizard
 description: RadWizard will help you differentiate a complex process into separate steps and provide your users with the ability to govern the process upon their decisions.
 slug: winforms/wizard/structure
 tags: structure
@@ -11,16 +11,15 @@ previous_url: wizard-structure
 
 # Structure
 
-
 __RadWizardElement__ encapsulates the UI representation and functionality of __RadWizard__. This element initializes the view of the control:
 
-* __Wizard97View__ for the __Wizard 97 mode__.
+* __WizardMode.Wizard97__ for the __Wizard 97 mode__.
 
-* __WizardAeroView__ for __Wizard Aero mode__.
+* __WizardMode.Aero__ for __Wizard Aero mode__.
 
 The view contains the following elements:
 
-* __Pages collection__ – collection which contains *Internal*, *Welcome* and *Completion RadWizard* pages.
+* __Pages__ collection – collection which contains *Internal*, *Welcome* and *Completion RadWizard* pages.
 
 * __Page header__ – element which is located above each page and contains elements for *title text*, *header text* and *page icon*.
 
@@ -34,10 +33,27 @@ The view contains the following elements:
 
 On the screenshots below, you can see the Welcome pages for both wizard mode with the described elements in them:
 
-__Wizard97__
+>caption Figure 1: Wizard97
 
 ![wizard-structure 001](images/wizard-structure001.png)
 
-__Wizard Aero__
+>caption Figure 2: Wizard Aero
 
 ![wizard-structure 002](images/wizard-structure002.png)
+
+## 
+
+The following screenshots describe the inner structure and organization of the elements which build the **RadWizard** control.
+
+>caption Figure 3: RadWizard's elements hierarchy in WizardMode.Wizard97
+
+![wizard-structure 003](images/wizard-structure003.png) 
+        
+>caption Figure 4: RadWizard visual structure in WizardMode.Wizard97
+
+![wizard-structure 004](images/wizard-structure004.png) 
+
+# See Also
+
+* [Design Time]({%slug winforms/wizard/design-time%})	
+* [Mode]({%slug winforms/wizard/modes%})

@@ -1,7 +1,7 @@
 ---
 title: Modes
-page_title: Modes | UI for WinForms Documentation
-description: Modes
+page_title: Modes | RadWizard
+description: RadWizard will help you differentiate a complex process into separate steps and provide your users with the ability to govern the process upon their decisions.
 slug: winforms/wizard/modes
 tags: modes
 published: True
@@ -11,9 +11,7 @@ previous_url: wizard-modes
 
 # Modes
 
-
-__RadWizard__ supports both* Wizard 97* and* Wizard Aero* specifications..	You can set the mode of the control using its __Mode__ property:
-
+__RadWizard__ supports both *Wizard 97* and *Wizard Aero* specifications. You can set the mode of the control using its __Mode__ property:
 
 #### Setting modes
 
@@ -31,9 +29,11 @@ Me.RadWizard1.Mode = WizardMode.Wizard97
 
 {{endregion}} 
 
+>caption Figire 1: WizardMode.Wizard97
+
 ![wizard-mode 001](images/wizard-mode001.png)
 
-The __Aero style__ of __Wizard Aero mode__ can be enabled (for Windows Vista and later versions) or disabled. You can achieve it using the __EnableAeroStyle__ property of __RadWizard__.
+The aero style of WizardMode.*Aero* can be enabled (for Windows Vista and later versions) or disabled. You can achieve it using the **EnableAeroStyle**  property of __RadWizard__.
 
 #### Enabling aero style
 
@@ -53,7 +53,9 @@ Me.RadWizard1.EnableAeroStyle = True
 
 {{endregion}} 
 
-![wizard-mode 001](images/wizard-mode001.png)
+>caption Figure 2: WizardMode.Aero with enabled aero
+
+![wizard-mode 002](images/wizard-mode002.png)
 
 #### Disable __Aero Style__
 
@@ -73,6 +75,15 @@ Me.RadWizard1.EnableAeroStyle = False
 
 {{endregion}} 
 
+>caption Figure 3: WizardMode.Aero with disabled aero
+
+![wizard-mode 003](images/wizard-mode003.png)
+
 When __RadWizard__ is in __Aero mode__ with disabled __Aero style__, 
 the appearance of the control is defined by the styles in its theme.
+
+# See Also
+
+* [Design Time]({%slug winforms/wizard/design-time%})	
+* [Structure]({%slug winforms/wizard/structure%})
 		
