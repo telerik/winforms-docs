@@ -1,7 +1,7 @@
 ---
 title: Getting Started (RadMenuItems)
-page_title: Getting Started (RadMenuItems) | UI for WinForms Documentation
-description: Getting Started (RadMenuItems)
+page_title: Getting Started (RadMenuItems) | RadShortcut
+description: Almost each application uses the so called “Shortcuts” – a keyboard combination that triggers a specific action.
 slug: winforms/shortcuts/getting-started-(radmenuitems)
 tags: getting,started,(radmenuitems)
 published: True
@@ -11,21 +11,19 @@ previous_url: shortcuts-getting-started-(radmenuitems)
 
 # Getting Started (RadMenuItems)
 
-## 
+1\. In a new Windows Application add a **RadMenu** to the form.
 
-1. In a new Windows Application add a RadMenu to the form.
+2\. On the **RadMenu** that reads "*Type here*" enter "*New*". This will automatically create a menu item object "radMenuItem1":
 
-1. On the RadMenu that reads "*Type here*" enter "*New*". This will automatically create a menu item object "radMenuItem1":
+![shortcuts-getting-started-(radmenuitems)001](images/shortcuts-getting-started-(radmenuitems)001.png)
 
-    ![shortcuts-getting-started-(radmenuitems)001](images/shortcuts-getting-started-(radmenuitems)001.png)
+3\. Click and the newly created item to open the drop down menu and create a sub menu item. By default, the text of the new item will be set to *radMenuItem2*. Change it to *File*:
 
-1. Click and the newly created item to open the dropdown menu and create a submenu item. By default, the text of the new item will be set to *radMenuItem2*. Change it to *File*:
+![shortcuts-getting-started-(radmenuitems)002](images/shortcuts-getting-started-(radmenuitems)002.png)
 
-    ![shortcuts-getting-started-(radmenuitems)002](images/shortcuts-getting-started-(radmenuitems)002.png)
+4\. In the *Properties* Window locate the **Click** events for **radMenuItem1** and **radMenuItem2** and double-click them to create event handlers.
 
-1. In the Properties Window locate the Click events for radMenuItem1 and radMenuItem2 and double-click them to create event handlers.
-
-1. Inside the event handlers add the following code:
+5\. Inside the event handlers add the following code:
 
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=handlingClickEvent}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=handlingClickEvent}} 
@@ -53,7 +51,7 @@ End Sub
 
 {{endregion}} 
 
-6\. Now all you have to do is to add the shortcuts to the desired items
+6\. Now, all you have to do is to add the shortcuts to the desired items
 
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=menuShortcuts}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=menuShortcuts}} 
@@ -71,12 +69,16 @@ Me.RadMenuItem2.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.F, Keys.K))
 
 {{endregion}} 
 
->note In the constructor of RadShortcut, you should first pass the key modifier as a parameter and then an array of the key mappings.
+>note In the constructor of **RadShortcut**, you should first pass the key modifier as a parameter and then an array of the key mappings.
 >
 
-As a result, you will get this picture runtime. As you can see, the shortcuts are automatically displayed for the RadMenuItems:![shortcuts-getting-started-(radmenuitems)003](images/shortcuts-getting-started-(radmenuitems)003.png)
+As a result, you will get this picture at run time. As you can see, the shortcuts are automatically displayed for the **RadMenuItems**:
+
+![shortcuts-getting-started-(radmenuitems)003](images/shortcuts-getting-started-(radmenuitems)003.png)
 
 Interesting functionality to mention is the ability to set your own custom text to describe the shortcut added. This can be achieved via the __HintText__ property of the menu item:
+
+#### Specifying HintText
 
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=SetHintText}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=SetHintText}} 
@@ -93,3 +95,8 @@ RadMenuItem2.HintText = "Custom Text"
 {{endregion}} 
 
 ![shortcuts-getting-started-(radmenuitems)004](images/shortcuts-getting-started-(radmenuitems)004.png)
+
+# See Also
+
+* [Getting Started (RadButtons)]({%slug winforms/shortcuts/getting-started-(radbuttons)%})	
+* [Assigning Global RadShortcuts]({%slug winforms/shortcuts/assigning-global-radshortcuts%})	

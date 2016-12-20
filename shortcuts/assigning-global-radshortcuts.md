@@ -1,7 +1,7 @@
 ---
 title: Assigning Global RadShortcuts
-page_title: Assigning Global RadShortcuts | UI for WinForms Documentation
-description: Assigning Global RadShortcuts
+page_title: Assigning Global RadShortcuts | RadShortcut
+description: Almost each application uses the so called “Shortcuts” – a keyboard combination that triggers a specific action.
 slug: winforms/shortcuts/assigning-global-radshortcuts
 tags: assigning,global,radshortcuts
 published: True
@@ -11,11 +11,9 @@ previous_url: shortcuts-assigning-global-radshortcuts
 
 # Assigning Global RadShortcuts
 
-## 
+**RadItem** allows you to add shortcuts which will generate a **Click** event for that item, allowing you to perform specific action, associated with that item. This approach however has some requirements such as you need a **RadItem** instance and some restrictions such as each shortcut, registered with **RadItem** is processed only if the item resides on the currently active form within the application. In order to create a custom shortcuts behavior, you may provide your own **IShortcutProvider** implementation and to handle its callback methods to provide completely customized shortcut support for your application, including “Global” shortcuts – that is a shortcut which is not bound to the currently active form. The following code snippet demonstrates how this can be done:
 
-RadItem allows you to add shortcuts which will generate a Click event for that item, allowing you to perform specific action, associated with that item. This approach however has some requirements such as you need a RadItem instance and some restrictions such as each shortcut, registered with RadItem is processed only if the item resides on the currently active form within the Application. In order to create a custom shortcuts behavior, you may provide your own IShortcutProvider implementation and to handle its callback methods to provide completely customized shortcut support for your Application, including “Global” shortcuts – that is a shortcut which is not bound to the currently active form. The following code snippet demonstrates how this can be done:
-
-1\. Implement a custom IShortcutProvider: 
+1\. Implement a custom **IShortcutProvider**: 
 
 {{source=..\SamplesCS\Shortcuts\MyShortcutProvider.cs region=customProvider}} 
 {{source=..\SamplesVB\Shortcuts\MyShortcutProvider.vb region=customProvider}} 
@@ -156,6 +154,10 @@ End Sub
 
 {{endregion}}
 
->caution The shortcut providers that implement IShortcutProvider interface are registered as WeakReferences. So, if you declare the MyShortcutProvider variable in the scope of the constructor or in another method (for example Form_Load) the Garbage collection may collect the shortcut provider reference at a certain moment. To prevent this from happening, you need to declare the MyShortcutProvider variable globally.
->
+>caution The shortcut providers that implement **IShortcutProvider** interface are registered as WeakReferences. So, if you declare the **MyShortcutProvider** variable in the scope of the constructor or in another method (for example the Form.Load event) the Garbage collection may collect the shortcut provider reference at a certain moment. To prevent this from happening, you need to declare the **MyShortcutProvider** variable globally.
+
+# See Also
+
+* [Getting Started (RadMenuItems)]({%slug winforms/shortcuts/getting-started-(radmenuitems)%})	
+* [Getting Started (RadButtons)]({%slug winforms/shortcuts/getting-started-(radbuttons)%})	
 

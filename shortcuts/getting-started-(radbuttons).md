@@ -1,7 +1,7 @@
 ---
 title: Getting Started (RadButtons)
-page_title: Getting Started (RadButtons) | UI for WinForms Documentation
-description: Getting Started (RadButtons)
+page_title: Getting Started (RadButtons) | RadShortcut
+description: Almost each application uses the so called “Shortcuts” – a keyboard combination that triggers a specific action.
 slug: winforms/shortcuts/getting-started-(radbuttons)
 tags: getting,started,(radbuttons)
 published: True
@@ -11,9 +11,9 @@ previous_url: shortcuts-getting-started-(radbuttons)
 
 # Getting Started (RadButtons)
 
-## 
+As stated in the [Overview]({%slug winforms/shortcuts%}) article, **RadShortcuts** are assigned at **RadItem** level. That said, you can't assign a shortcut directly to a **RadControl** (**RadButton** for example). Instead, you should assign the shortcut to the main element of a **RadControl**. For example, considering our buttons, you can assign shortcuts to them as it is shown below:
 
-As stated in the [Overview]({%slug winforms/shortcuts%}) article, RadShortcuts are assigned at RadItem level. That said, you can't assign a shortcut directly to a RadControl (RadButton for example). Instead, you should assign the shortcut to the main element of a RadControl. For example, considering our buttons, you can assign shortcuts to them as it is shown below:
+#### Assigning shortcuts
 
 {{source=..\SamplesCS\Shortcuts\Form2.cs region=buttonsShortcuts}} 
 {{source=..\SamplesVB\Shortcuts\Form2.vb region=buttonsShortcuts}} 
@@ -34,6 +34,11 @@ Me.RadToggleButton1.ButtonElement.Shortcuts.Add(New RadShortcut(Keys.Control, Ke
 ````
 
 {{endregion}} 
+
+# See Also
+
+* [Getting Started (RadMenuItems)]({%slug winforms/shortcuts/getting-started-(radmenuitems)%})	
+* [Assigning Global RadShortcuts]({%slug winforms/shortcuts/assigning-global-radshortcuts%})	
 
 
 
