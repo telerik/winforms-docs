@@ -11,7 +11,7 @@ previous_url: tools-themeviewer
 
 # ThemeViewer
 
-ThemeViewer is a tool that gives you the ability to preview a custom or a predifined theme for all themable controls of the suite.
+ThemeViewer is a tool that gives you the ability to preview a custom or a predefined theme for all controls of the suite.
 
 ![tools-themeviewer 001](images/tools-themeviewer001.png)
 
@@ -23,4 +23,4 @@ Switching between the different themes and loading custom themes is available fr
 
 ![tools-themeviewer 003](images/tools-themeviewer003.png)
 
-Additionally, you have the opportunity to change a variaty of settings that concern the themeing of the control, such as RightToLeft, Disabled and Aero mode.
+Additionally, you have the opportunity to change a variety of settings that concern the theming of the controls, such as RightToLeft, Disabled and Aero mode.
