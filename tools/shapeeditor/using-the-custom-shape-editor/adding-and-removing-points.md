@@ -11,8 +11,6 @@ previous_url: tools-shapeeditor-using-the-custom-shape-editor-adding-and-removin
 
 # Adding and Removing Points
 
-
-
 ## Adding New Points
 
 To add new points, right-click to select the line to which your new point will be added, and then click __Add Point__. This action places a point on the selected line equidistant from the endpoints of that line, creating two separate lines. You can now manipulate this new point as described in [Moving and Locking Points]({%slug winforms/tools/shapeeditor/using-the-custom-shape-editor/moving-and-locking-points%}).

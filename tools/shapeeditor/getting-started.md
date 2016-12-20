@@ -19,14 +19,14 @@ This tutorial demonstrates modifying the shape of a __RadButton__.
 1. Select a __RadButton__ control.
           
 
-1. Open the __RadButton Smart Tag__ and select __Open Theme Builder__ to start __Visual Style Builder__.
+1. Open the __RadButton Smart Tag__ and select __Edit UI Elements__ which will open the Element Hierarchy Editor.
           
 
-1. Click on the fill area of the button in the Design view.
+1. Click on the RadButtonElement.
           
 
-1. In the __Expert Mode__ pane locate the __Shape__ property, and then select __Create new custom shape...__ from the drop down list. This step will launch the __Custom Shape Editor__ dialog. 
-          
+1. Navigate to the __Shape__ property, and then select __Create new custom shape...__ from the drop down list. This step will launch the __Custom Shape Editor__ dialog. 
+    ![tools-getting-started 003](images/tools-getting-started003.png)
 
 1. Right-click the upper line and select __Insert Point__.
           
@@ -47,18 +47,14 @@ This tutorial demonstrates modifying the shape of a __RadButton__.
           
 
 1.  Click __OK__ to close the __Custom Shape Editor__ dialog.
+
+
+1.  Click __Close__ to close the Element Hierarchy Editor.
           
 
-1.  In the Visual Style Builder Control Structure pane, select the Border Primitive from the control tree. 
-
-    ![tools-getting-started 003](images/tools-getting-started003.png)
-
-1.  In the Expert Mode pane, set the Visibility property to Hidden.
-          
-
-1.  The new shape for the button will be displayed in the __Visual Style Builder Preview__ pane.
+1.  The new shape will be applied to the button.
 
     ![tools-getting-started 004](images/tools-getting-started004.png)
 
-See the help for __Visual Style Builder__ for more information on saving and applying themes.
+ 
         
