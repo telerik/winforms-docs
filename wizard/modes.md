@@ -5,7 +5,7 @@ description: RadWizard will help you differentiate a complex process into separa
 slug: winforms/wizard/modes
 tags: modes
 published: True
-position: 2
+position: 3
 previous_url: wizard-modes
 ---
 

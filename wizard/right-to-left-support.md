@@ -1,7 +1,7 @@
 ---
-title: Right-to-Left support
-page_title: Right-to-Left support | UI for WinForms Documentation
-description: Right-to-Left support
+title: Right-to-Left Support
+page_title: Right-to-Left Support | RadWizard
+description: RadWizard will help you differentiate a complex process into separate steps and provide your users with the ability to govern the process upon their decisions.
 slug: winforms/wizard/right-to-left-support
 tags: right-to-left,support
 published: True
@@ -11,11 +11,11 @@ previous_url: wizard-right-to-left
 
 # Right-to-Left support
 
-The __RadWizard__ control also supports __RightToLeft__ alignment of its elements:
+__RadWizard__ also supports __RightToLeft__ alignment of its elements:
 
-![wizard-structure 003](images/wizard-structure003.png)
+![wizard-rtl 001](images/wizard-rtl001.png)
 
-You can enable the RightToLeft functionality, by setting the __RightToLeft__ property to *True*:
+You can enable the right-to-left functionality, by setting the __RightToLeft__ property to *True*:
 			
 #### Setting Right-to-Left mode
 
@@ -36,4 +36,8 @@ RadLabel1.Text = "Welcome page of RadWizard in RightToLeft mode."
 ````
 
 {{endregion}} 
+
+# See Also
+
+* [Localization]({%slug winforms/wizard/localization%})	
 

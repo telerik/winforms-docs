@@ -56,4 +56,4 @@ The following screenshots describe the inner structure and organization of the e
 # See Also
 
 * [Design Time]({%slug winforms/wizard/design-time%})	
-* [Mode]({%slug winforms/wizard/modes%})
+* [Modes]({%slug winforms/wizard/modes%})
