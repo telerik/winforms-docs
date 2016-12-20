@@ -11,18 +11,15 @@ previous_url: tools-visual-style-builder-getting-started
 
 # Getting Started
 
-
-
 ## Overview
 
-The purpose of this article is to introduce Telerik WinForms Visual Style Builder by describing the process of creating a simple theme for the RadButton control. This article emphasizes on all tricky moments that might occur while using the Visual Style Builder and explains them so that the user does not experience any issues when theming controls. The tutorial begins with the creation of all needed repository items for styling RadButton control and after that shows how apply them to the control.
+The purpose of this article is to introduce Telerik WinForms Visual Style Builder by describing the process of creating a simple theme for the RadButton control. This article emphasizes on all tricky moments that might occur while using the Visual Style Builder and explains them so that the user does not experience any issues when theming controls. The tutorial begins with the creation of all needed repository items for styling a RadButton control and after that shows how to apply them.
 
 ## Creating a new Theme
 
 ![tools-visual-style-builder-getting-started 001](images/tools-visual-style-builder-getting-started001.png)
 
 Below the Preview part of the form you can see the Elements Grid which displays the currently available elements for the current tree view selection that can be styled. In general, these are the elements which, once styled, sum up to the final appearance of the corresponding control. On the image above you can see the RootRadElement currently displayed. When selecting a control from the tree view on the left, normally its root element is displayed in the elements grid. You can use this element to apply common styles for the whole control that are inherited throughout the element hierarchy (the hierarchy that begins from the RootRadElement) like Font, ForeColor etc.
-        
 
 To apply a style to the RootRadElement you can choose two approaches:
 
@@ -34,7 +31,7 @@ In this article we are going to demonstrate how to create and apply a repository
 
 ## Creating a new Repository Item
 
->note For more information or repository items, check the [Theme Repository]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%}) topic.
+>note For more information on repository items, check the [Theme Repository]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%}) topic.
 >
 
 ![tools-visual-style-builder-getting-started 002](images/tools-visual-style-builder-getting-started002.png)
@@ -63,17 +60,19 @@ Now, we are going to create a few repository items that will define the styles f
 
 ![tools-visual-style-builder-getting-started 004](images/tools-visual-style-builder-getting-started004.png)
 
-Having selected the ButtonFill element in the Elements grid, click on the ‘Create New Repository Item’ button. You will see the Fill Repository Item Editor Dialog that allows you to create different styles of fills. In this dialog, select the ‘Office Glass Rect’ tab and from the combo box with predefined styles, choose ‘Orange’. The dialog should look the following way:
+Having selected the ButtonFill element in the Elements grid, click on the "Create New Repository Item" button. You will see the Fill Repository Item Editor Dialog that allows you to create different styles of fills. In this dialog, select the "Office Glass Rect" tab and from the combo box with predefined styles, choose *Orange*. The dialog should look the following way:
 
 ![tools-visual-style-builder-getting-started 005](images/tools-visual-style-builder-getting-started005.png)
 
-Give the repository item a key and a name as follows: ‘ButtonNormalFill’, ‘ButtonNormalFill‘, and check the ‘Animated State Transition’checkbox to enable animated style transition for this repository item. Save the repository item by clicking OK and click on the ‘Create New Repository Item’ button again. By following the same steps described above, crate another two fill repository items with office glass rect style and colors as follows: yellow and red. Name them ‘ButtonHoverFill’  and ‘ButtonPressedFill’. The repository should look as follows after creating all items:
+Give the repository item a key and a name as follows: `ButtonNormalFill`, `ButtonNormalFill`, and check the "Animated State Transition" checkbox to enable animated style transition for this repository item. Save the repository item by clicking OK and click on the "Create New Repository Item" button again. By following the same steps described above, crate another two fill repository items with office glass rect style and colors as follows: yellow and red. Name them `ButtonHoverFill ` and `ButtonPressedFill`. The repository should look as follows after creating all items:
 
 ![tools-visual-style-builder-getting-started 006](images/tools-visual-style-builder-getting-started006.png)
 
-Now we are going to create a few border repository items which we are going to use later for styling the button. To do this, select the ButtonBorder element in the Elements grid and click on the ‘Create New Repository Item’ button to display the Border Repository Item Editor dialog. In the dialog, give a key and a name for the repository item as follows: ‘ButtonNormalBorder’, ‘ButtonNormalBorder’. Set the ForeColor property to Orange and also the Width property to 2. The dialog should look as follows:![tools-visual-style-builder-getting-started 007](images/tools-visual-style-builder-getting-started007.png)
+Now we are going to create a few border repository items which we are going to use later for styling the button. To do this, select the ButtonBorder element in the Elements grid and click on the "Create New Repository Item" button to display the "Border Repository Item Editor" dialog. In the dialog, give a key and a name for the repository item as follows: `ButtonNormalBorder`, `ButtonNormalBorder`. Set the __ForeColor__ property to *Orange* and also the Width property to 2. The dialog should look as follows:
 
-Make sure the "Animated State Transition" checkbox is checked and save the new repository item by clicking on OK. The repository item will be created and added to the current repository. Now repeat the same steps to create two more repository items with the following colors: yellow, red. For the yellow repository item define key and name as follows:  "ButtonHoverBorder", "ButtonHoverBorder", and for the red item define key and name as follows: "ButtonPressedBorder", "ButtonPressedBorder". The repository tool window should look the following way after adding the new items:
+![tools-visual-style-builder-getting-started 007](images/tools-visual-style-builder-getting-started007.png)
+
+Make sure the "Animated State Transition" checkbox is checked and save the new repository item by clicking OK. The repository item will be created and added to the current repository. Now repeat the same steps to create two more repository items with the following colors: yellow and red. For the yellow repository item define key and name as follows: `ButtonHoverBorder`, `ButtonHoverBorder`, and for the red item define key and name as follows: `ButtonPressedBorder`, `ButtonPressedBorder`. The repository tool window should look the following way after adding the new items:
 
 ![tools-visual-style-builder-getting-started 008](images/tools-visual-style-builder-getting-started008.png)
 
@@ -87,7 +86,7 @@ As you can see on the picture, the button has acquired the Segoe UI 12 font and 
 
 ![tools-visual-style-builder-getting-started 010](images/tools-visual-style-builder-getting-started010.png)
 
-Repeat the steps above by associating the ButtonHoverFill item with the RadButtonElement.MouseOver state,  and the ButtonPressedFill with the RadButtonElement.Pressed state. At the end the Visual Style Builder’s main form should look the following way:
+Repeat the steps above by associating the ButtonHoverFill item with the RadButtonElement.MouseOver state, and the ButtonPressedFill with the RadButtonElement.Pressed state. At the end the Visual Style Builder’s main form should look the following way:
 
 ![tools-visual-style-builder-getting-started 011](images/tools-visual-style-builder-getting-started011.png)
 

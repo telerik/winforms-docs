@@ -13,7 +13,7 @@ previous_url: tools-visual-style-builder-architecture
 
 ## Anatomy of Visual Style Builder
 
-Visual Style Builder is an end-user application that allows for fast and intuitive styling of all controls in the Windows Forms suite. Application is divided into the following major parts:
+Visual Style Builder is an end-user application that allows fast and intuitive styling of all controls in the Windows Forms suite. The application is divided into the following major parts:
 
 ## Control Metadata Tree
 
@@ -21,21 +21,21 @@ Visual Style Builder is an end-user application that allows for fast and intuiti
 
 ## Element States
 
-![tools-visual-style-builder-architecture 002](images/tools-visual-style-builder-architecture002.png)
-
 This part lists all the VisualStates, visible as defined by the associated
 StateManager, for the currently selected metadata in the Metadata Tree.
 
+![tools-visual-style-builder-architecture 002](images/tools-visual-style-builder-architecture002.png)
+
 ## Elements Grid
 
-![tools-visual-style-builder-architecture 003](images/tools-visual-style-builder-architecture003.png)
-
 This part contains all the ElementMetadata instances, associated with an
-ItemMetadata. These are definitions for all the elements that may be styled. As
+ItemMetadata. These are definitions for all the elements that can be styled. As
 seen from the screen, this list contains definition for the RadButtonElement
 itself as well as for its primitive children that do not have own StateManager.
-An embedded PropertyGrid allows for editing of properties directly in the grid
+An embedded PropertyGrid allows editing of properties directly in the grid
 itself.
+
+![tools-visual-style-builder-architecture 003](images/tools-visual-style-builder-architecture003.png)
 
 ## Repository
 

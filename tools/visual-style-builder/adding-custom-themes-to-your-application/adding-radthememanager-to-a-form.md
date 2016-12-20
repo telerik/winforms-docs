@@ -11,18 +11,13 @@ previous_url: tools-visual-style-builder-adding-custom-themes-to-your-applicatio
 
 # Adding RadThemeManager to a Form
 
-
-
 __RadThemeManager__ is an non-visual component that manages the connection between themes (stored in XML files) and Telerik UI for WinForms controls on your form. To apply a theme to a control, the form containing the control must also contain a __RadThemeManager__.
-      
 
 There are two ways to add a __RadThemeManager__ to your form:
-      
 
 * From the toolbox.
 
 * From the __Smart Tag__ menu of any Telerik RadControl.
-          
 
 ## Adding a Theme Manager from the Toolbox
 

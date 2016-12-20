@@ -11,8 +11,7 @@ previous_url: tools-visual-style-builder-overview
 
 # Visual Style Builder
 
-
-VisualStyleBuilder provides the key flexibility behind the Telerik UI for WinForms. Visual Style Builder runs within the Visual Studio design environment or as a stand alone application. With Visual Style Builder you can:
+ Visual Style Builder is a stand alone application that allows you to create custom or edit the predefined themes. With Visual Style Builder you can:
 
 * Set properties
 
@@ -21,6 +20,8 @@ VisualStyleBuilder provides the key flexibility behind the Telerik UI for WinFor
 * Animate changes
 
 * Save themes 
+
+* Edit the predefined themes. 
 
 ## Set Properties
 
