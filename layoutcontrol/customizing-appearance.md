@@ -1,26 +1,23 @@
 ---
 title: Customizing Appearance
-page_title: Customizing Appearance | UI for WinForms Documentation
-description: Customizing Appearance
+page_title: Customizing Appearance | RadLayoutControl
+description: This article demonstrates how you can customize the appearance of the RadLayoutControl and its items.
 slug: winforms/layoutcontrol/customizing-appearance
 tags: customizing,appearance
 published: True
-position: 7
+position: 5
 previous_url: layoutcontrol-customizing-appearance
 ---
 
 # Customizing Appearance
 
-
-
 This article demonstrates how you can customize the appearance of the __RadLayoutControl__ and its items.
-      
 
 ## Customizing RadLayoutControl
 
 You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  properties to customize the drag and drop preview rectangle fill and stroke.
 
-#### Setting PreviewRectangleFill and PreviewRectangleStroke.
+#### Setting Fill and Stroke
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=FillStroke}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=FillStroke}} 
@@ -38,13 +35,14 @@ radLayoutControl1.ContainerElement.PreviewRectangleStroke = ColorTranslator.From
 
 {{endregion}} 
 
->caption Figure 1: Changed PreviewRectangleFill and PreviewRectangleStroke.<br>![layoutcontrol-customize-appearance 001](images/layoutcontrol-customize-appearance001.png)
+>caption Figure 1:Changed Fill and Stroke
+![layoutcontrol-customize-appearance 001](images/layoutcontrol-customize-appearance001.gif)
 
-## Customizing items
+## Customizing Items
 
 * __LayoutControlLabelItem:__ The following snipped shows how you can change the font and the __BackColor__ of this item.
 
-#### Change item BackColor and font.
+#### Change BackColor and Font
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=LabelItem}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=LabelItem}} 
@@ -68,7 +66,7 @@ layoutControlLabelItem5.Font = New Font("Segoe Script", 16, FontStyle.Regular)
 
 * __LayoutControlSeparatorItem:__ By default this item shows only a single line, however you can customize its __Thickness__ and __BackColor__.
 
-#### Customize separator item.
+#### Customize Separator Item
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=Separator}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Separator}} 
@@ -92,7 +90,7 @@ layoutControlSeparatorItem1.GradientStyle = Telerik.WinControls.GradientStyles.S
 
 * __LayoutControlSplitterItem:__ By default this element does not draw its fill. The following snippet shows how you can change its __BackColor__ and __Thickness__.
 
-#### Customize splitter item.
+#### Customize Splitter Item
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=Splitter}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Splitter}} 
@@ -116,7 +114,7 @@ layoutControlSplitterItem1.GradientStyle = Telerik.WinControls.GradientStyles.So
 
 * __LayoutControlGroupItem:__ The following code shows how you can access and customize the group item header.
 
-#### Customize group header.
+#### Customize Group Header
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=Group}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Group}} 
@@ -142,9 +140,9 @@ Me.layoutControlGroupItem1.ShowHeaderLine = False
 
 {{endregion}} 
 
-* __LayoutControlTabbedGroup:__ this item gives you access to the underlying TabStrip, this way you can customize its appearance.
+* __LayoutControlTabbedGroup:__ This item gives you access to the underlying TabStrip, this way you can customize its appearance.
 
-#### Customize tabs.
+#### Customize Tabs
 
 {{source=..\SamplesCS\LayoutControl\CustomizeLayoutControl.cs region=Tab}} 
 {{source=..\SamplesVB\LayoutControl\CustomizeLayoutControl.vb region=Tab}} 
@@ -168,4 +166,6 @@ Me.layoutControlTabbedGroup1.TabStrip.Items(1).ForeColor = ColorTranslator.FromH
 
 # See Also
 
- * [Properties, Events and Methods]({%slug winforms/layoutcontrol/properties,-events-and-methods%})
+* [Design Time]({%slug winforms/layoutcontrol/design-time%})
+* [Properties, Methods and Events]({%slug winforms/layoutcontrol/properties-methods-and-events%})
+* [Customize Layout Mode]({%slug winforms/layoutcontrol/customize-layout-mode%})

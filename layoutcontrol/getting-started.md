@@ -1,29 +1,27 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadLayoutControl
+description: In this article, you will learn how to use RadLayoutControl. The example below shows how you can create a layout that will fill the entire form and will be resized along with it.
 slug: winforms/layoutcontrol/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: layoutcontrol-getting-started
 ---
 
 # Getting Started
 
-
-
 In this article, you will learn how to use __RadLayoutControl__. The example below shows how you can create a layout that will fill the entire form and will be resized along with it.
-
-## 
 
 1\. First drag and drop the control on the form. Set its __Dock__ property to *Fill* (figure 1 shows how you can do that from the smart tag). The control will be responsible for the entire form layout and the other controls will be placed inside it.
             
->caption Figure 1: Dock in parent container.<br>![layoutcontrol-getting-started 001](images/layoutcontrol-getting-started001.png)
+>caption Figure 1: Dock In Parent Container
+![layoutcontrol-getting-started 001](images/layoutcontrol-getting-started001.png)
 
 2\. Add __RadListView__ to the layout control it will take the entire space because it is the only control in the layout panel, then add __RadDataEntry__ to the right part of the panel. The final step of the layout creation is to add a close button to the bottom of the form. Figure 3 shows the desired layout at this step.
             
->caption Figure 2: Sample layout.<br>![layoutcontrol-getting-started 002](images/layoutcontrol-getting-started002.png)
+>caption Figure 2: Sample Layout
+![layoutcontrol-getting-started 002](images/layoutcontrol-getting-started002.png)
 
 3\. Let’s add some functionality to our new form. The following snippet shows how you can bind the two controls and close the form when the button is clicked. Additionally you can show text above the __RadDataEntry__ and __RadListView__. For this purpose you can just use the items text. Detailed information about the used properties is available in the [Items]({%slug winforms/layoutcontrol/items%}) article. Figure 3 shows the final layout. If you now try to resize the form, you will see that the controls in __RadLayoutControl__ grow and shrink proportionally.
 
@@ -157,4 +155,11 @@ End Class
 
 {{endregion}} 
 
->caption Figure 3: The application final layout.<br>![layoutcontrol-getting-started 003](images/layoutcontrol-getting-started003.png)
+>caption Figure 3: Final Layout
+![layoutcontrol-getting-started 003](images/layoutcontrol-getting-started003.png)
+
+## See Also
+
+ * [Items]({%slug winforms/layoutcontrol/items%})
+ * [Properties, Methods and Events]({%slug winforms/layoutcontrol/properties-methods-and-events%})
+ * [Customizing Appearance]({%slug winforms/layoutcontrol/customizing-appearance%})

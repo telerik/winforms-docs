@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
+page_title: Localization | RadLayoutControl
 description: Localization
 slug: winforms/layoutcontrol/localization
 tags: localization
@@ -11,10 +11,6 @@ previous_url: layoutcontrol-localization
 
 # Localization
 
-
-
-## 
-
 To localize __RadLayoutControl__ to display any text and messages in a specific language:
 
 * Create a custom __LayoutControlLocalizationProvider__ class.        
@@ -23,7 +19,7 @@ To localize __RadLayoutControl__ to display any text and messages in a specific 
 
 Below is a sample implementation of an English localization provider:
 
-#### Localizing RadPivotGrid Strings.
+#### Localizing RadLayoutControl Strings.
 
 {{source=..\SamplesCS\LayoutControl\LayoutControlLocalization.cs region=Localization}} 
 {{source=..\SamplesVB\LayoutControl\LayoutControlLocalization.vb region=Localization}} 
@@ -189,4 +185,10 @@ LayoutControlLocalizationProvider.CurrentProvider = New DataLayoutEnglishLayoutC
 
 ````
 
-{{endregion}} 
+{{endregion}}
+
+# See Also
+
+* [Items]({%slug winforms/layoutcontrol/items%})
+* [Design Time]({%slug winforms/layoutcontrol/design-time%})
+* [Getting Started]({%slug winforms/layoutcontrol/getting-started%})
