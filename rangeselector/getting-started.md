@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/rangeselector-/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: rangeselector-getting-started
 ---
 
@@ -39,4 +39,4 @@ Me.radRangeSelector1.AssociatedControl = Me.radChartView1
 
 * Set it by using the control’s SmartTag at design time:<br>![rangeselector-getting-started 002](images/rangeselector-getting-started002.png)
 
-4\. Press F5 to run the project.<br>![rangeselector-getting-started 003](images/rangeselector-getting-started003.png)
+4\. Press F5 to run the project.<br>![rangeselector-getting-started 003](images/rangeselector-getting-started003.gif)

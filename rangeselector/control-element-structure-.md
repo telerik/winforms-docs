@@ -5,7 +5,7 @@ description: Control Element Structure
 slug: winforms/rangeselector-/control-element-structure-
 tags: control,element,structure,
 published: True
-position: 2
+position: 1
 previous_url: rangeselector-control-element-structure
 ---
 
