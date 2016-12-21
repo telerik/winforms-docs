@@ -1,25 +1,21 @@
 ---
 title: Building Advanced Layouts
-page_title: Building Advanced Layouts | UI for WinForms Documentation
-description: Building Advanced Layouts
+page_title: Building Advanced Layouts | RadSplitContainer
+description: RadSplitContainer is a layout control which allows you to add many container panels to a form, separated by splitter(s).
 slug: winforms/splitcontainer/building-advanced-layouts
 tags: building,advanced,layouts
 published: True
-position: 3
+position: 5
 previous_url: splitcontainer-building-advanced-layouts
 ---
 
 # Building Advanced Layouts
 
-
-## Building Advanced Layouts
+This tutorial demonstrates how to create a 5*5 grid of **SplitPanel** instances, with the center panel’s **SizeMode** set to SplitPanelSizeMode.*Fill*. The following screenshot illustrates the result.
 
 ![splitcontainer-building-advanced-layouts 001](images/splitcontainer-building-advanced-layouts001.png)
-
-A 5*5 Grid of SplitPanel instances, with the center panel’s SizeMode set to SplitPanelSizeMode.Fill
-          
-In order to achieve the layout on the top screen, refer to the code snippet
- below:
+           
+In order to achieve the layout on the top screen, refer to the code snippet below:
 
 {{source=..\SamplesCS\SplitContainer\BuildingLayout.cs region=advancedLayout}} 
 {{source=..\SamplesVB\SplitContainer\BuildingLayout.vb region=advancedLayout}} 
@@ -90,20 +86,17 @@ End Function
 
 {{endregion}} 
 
-
-What we are doing here is to create a number (specified by the "rows" parameter) of split containers and for each container to add the desired number(defined by the "cols" parameter) split panels. When we have a descendant split panel with Size Mode set to fill, then all other descendants are sized absolutely to allow the Fill panel occupy entire remaining size. The layout engine is smart enough to traverse the entire layout tree, thus allowing the fill panel to reside at any branch.
-        
-
-If we do not apply the Fill size mode to the center panel, then we have evenly auto-sized panels.
+What we are doing here is to create a number (specified by the "**rows**" parameter) of split containers and for each container to add the desired number(defined by the "**cols**" parameter) split panels. When we have a descendant split panel with **SizeMode** set to *Fill*, then all other descendants are sized absolutely to allow the *Fill* panel occupy entire remaining size. The layout engine is smart enough to traverse the entire layout tree, thus allowing the fill panel to reside at any branch.
+         
+If we do not apply the *Fill* size mode to the center panel, then we have evenly auto-sized panels.
 
 ![splitcontainer-building-advanced-layouts 002](images/splitcontainer-building-advanced-layouts002.png)
 
-*A 3*3 Grid of SplitPanel instances, all auto-sized*
-
 ## Size Restrictions
 
-Each SplitPanelSizeInfo instance has MinimumSize and MaximumSize members, which control the allowed size boundaries for the owning SplitPanel instance. The following code demonstrates how to utilize these features:
+Each **SplitPanelSizeInfo** instance has **MinimumSize** and **MaximumSize** members, which control the allowed size boundaries for the owning **SplitPanel** instance. The following code demonstrates how to utilize these features:
 
+#### Restricting panels
 
 {{source=..\SamplesCS\SplitContainer\BuildingLayout.cs region=panelRestrictions}} 
 {{source=..\SamplesVB\SplitContainer\BuildingLayout.vb region=panelRestrictions}} 
@@ -128,10 +121,12 @@ End Sub
 
 {{endregion}} 
 
+The panel in the center is with applied size restrictions.
 
-![splitcontainer-building-advanced-layouts 003](images/splitcontainer-building-advanced-layouts003.png)
-
-*The green panel in the center is with applied size restrictions.*
-         
-These settings are considered by both the layout engine and the splitterlogic, which will clamp the drag hint to visually emphasize on the restrictions.
+![splitcontainer-building-advanced-layouts 003](images/splitcontainer-building-advanced-layouts003.gif)
+       
+These settings are considered by both the layout engine and the splitter logic, which will clamp the drag hint to visually emphasize on the restrictions.
         
+# See Also
+
+* [Building a Layout of RadSplitContainers Programmatically]({%slug winforms/splitcontainer/building-a-layout-of-radsplitcontainers-programmatically%})	

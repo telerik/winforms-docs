@@ -933,6 +933,9 @@ navigation:
     splitcontainer:
         title: SplitContainer
         position: 460
+    splitcontainer/customizing-appearance:
+        title: Customizing Appearance
+        position: 4
     spreadprocessing:
         title: SpreadProcessing
         position: 470
