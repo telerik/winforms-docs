@@ -38,15 +38,10 @@ You can customize the nested elements at run time as well:
 this.radSplitContainer1.SplitPanels[0].BackColor = Color.Red;
 this.radSplitContainer1.Splitters[0].BackgroundFill.BackColor = Color.Yellow;
 this.radSplitContainer1.Splitters[0].Border.ForeColor = Color.Lime;
-this.radSplitContainer1.Splitters[0].Border.BoxStyle = BorderBoxStyle.SingleBorder;        
+this.radSplitContainer1.Splitters[0].Border.BoxStyle = BorderBoxStyle.SingleBorder;
 
 ````
 ````VB.NET
-Me.radSplitContainer1.SplitPanels(0).BackColor = Color.Red
-Me.radSplitContainer1.Splitters(0).BackgroundFill.BackColor = Color.Yellow
-Me.radSplitContainer1.Splitters(0).Border.ForeColor = Color.Lime
-Me.radSplitContainer1.Splitters(0).Border.BoxStyle = BorderBoxStyle.SingleBorder
-
 ````
 
 {{endregion}}  
