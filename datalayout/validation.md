@@ -125,7 +125,7 @@ Me.RadDataLayout1.DataSource = New Employee() With {
 
 {{endregion}} 
 
->caption Figure 1 RadDataLayout initialized.
+>caption Figure 1 RadDataLayout Initialized
 
 ![datalayout-validation 001](images/datalayout-validation001.png)
 
@@ -302,7 +302,7 @@ End Sub
 
 {{endregion}} 
 
->caption Figure 2. The validation panels shows the current validation errors.
+>caption Figure 2. Validaton Errors
 
 ![datalayout-validation 002](images/datalayout-validation002.png)
 
