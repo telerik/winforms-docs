@@ -19,6 +19,8 @@ In this article we are going to demonstrate how to create a new theme for the Ra
 
 Let’s start by opening the Visual Style Builder with the Windows 7 theme:
 
+>note The Following article shows how you can load the predefined themes: [Loadin Predefined Themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
+
 ![tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 001](images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar001.png)
 
 After selecting the RadRibbonBar control from the tree-view on the left, you will see a preview of the control with the opened theme applied. You can explore the hierarchy of the RadRibbonBar node which contains the items that can be styled. In general this hierarchy is divided into three main subtrees:

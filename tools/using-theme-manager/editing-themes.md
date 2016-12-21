@@ -1,6 +1,6 @@
 ---
-title: Editing Themes
-page_title: Editing Themes | UI for WinForms Documentation
+title: Add Remove Theme Files
+page_title: Add Remove Theme Files | UI for WinForms Documentation
 description: Editing Themes
 slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/editing-themes
 tags: editing,themes
