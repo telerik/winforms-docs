@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
-slug: winforms/rangeselector-/getting-started
+page_title: Getting Started | RadRangeSelector
+description: This tutorial demonstrates how to use RadRangeSelector to get a fine grain view of the data represented in RadChartView.
+slug: winforms/rangeselector/getting-started
 tags: getting,started
 published: True
 position: 3
@@ -35,8 +35,18 @@ Me.radRangeSelector1.AssociatedControl = Me.radChartView1
 
 {{endregion}}
 
-* Set in Property Builder at design time:<br>![rangeselector-getting-started 001](images/rangeselector-getting-started001.png)
+* Set in Property Builder at design time:
 
-* Set it by using the control’s SmartTag at design time:<br>![rangeselector-getting-started 002](images/rangeselector-getting-started002.png)
+    ![rangeselector-getting-started 001](images/rangeselector-getting-started001.png)
 
-4\. Press F5 to run the project.<br>![rangeselector-getting-started 003](images/rangeselector-getting-started003.gif)
+* Set it by using the control’s SmartTag at design time:
+    ![rangeselector-getting-started 002](images/rangeselector-getting-started002.png)
+
+4\. Press F5 to run the project.
+    ![rangeselector-getting-started 003](images/rangeselector-getting-started003.gif)
+
+# See Also
+
+* [Design Time]({%slug winforms/rangeselector/design-time%})
+* [Structure]({%slug winforms/rangeselector/structure%})
+* [Integration with RadChartView]({%slug winforms/rangeselector/integration-with-radchartview%})

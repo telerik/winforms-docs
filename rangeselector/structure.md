@@ -1,17 +1,25 @@
 ---
-title: Control Element Structure 
-page_title: Control Element Structure  | UI for WinForms Documentation
-description: Control Element Structure 
-slug: winforms/rangeselector-/control-element-structure-
+title: Structure
+page_title: Structure | RadRangeSelector
+description: This article describes the inner structure and organization of the elements which build the RadRangeSelector control.
+slug: winforms/rangeselector/structure
 tags: control,element,structure,
 published: True
 position: 1
 previous_url: rangeselector-control-element-structure
 ---
 
-# Control Element Structure
+# Structure
 
-__RadRangeSelector__ is built up of several levels of nested elements.  Images below demonstrate the element tree of __RandRangeSelector__. <br>![rangeselector-control-structure 001](images/rangeselector-control-structure001.png)<br>![rangeselector-control-structure 002](images/rangeselector-control-structure002.png)
+This article describes the inner structure and organization of the elements which build the __RadRangeSelector__ control.
+
+__RadRangeSelector__ is built up of several levels of nested elements.  Images below demonstrate the element tree of __RandRangeSelector__. 
+
+>caption Figure 1: RadRangeSelector`s Element Hierarchy
+![radrangeselector structure 001](images/radrangeselector-structure001.png)
+
+>caption Figure 2: RadRangeSelector`s Structure
+![radrangeselector structure 002](images/radrangeselector-structure002.png)
 
 Here is a brief explanation of the various elements in the tree:
 
@@ -26,3 +34,9 @@ Here is a brief explanation of the various elements in the tree:
 * __RangeSelectorViewContainer__ is the class that arranges the associated element, __RangeSelectorSelectionRectangle__ and __RangeSelectorTrackingElement__.
 
 * __RangeSelectorTrackingElement__ is container that contains all elements that are used by the tracking logic.
+
+# See Also
+
+* [Design Time]({%slug winforms/rangeselector/design-time%})
+* [Getting Started]({%slug winforms/rangeselector/getting-started%})
+* [Integration with RadChartView]({%slug winforms/rangeselector/integration-with-radchartview%})

@@ -13,7 +13,7 @@ previous_url: rangeselector-customizing-radrangeselector
 
 Each of the control's elements can be accessed and customized. Once you access the desired elements, you can tweak its properties in order to modify it. In this tutorial, we will take a look at code snippets, demonstrating how to access and modify different parts of the control:
 
-## Customize hover elements
+## Customize Hover Elements
 
 The following code snippet demonstrates how to access and customize the Range and Hover elements through element tree:
 
@@ -49,7 +49,7 @@ Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElem
 
 ![rangeselector-customizing-radrangeselector 001](images/rangeselector-customizing001.png)
 
-## Customize thumbs
+## Customize Thumbs
 
 {{source=..\SamplesCS\RangeSelector\CustomizingRadRangeSelector.cs region=CustomizeThumb}} 
 {{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeThumb}} 
@@ -77,7 +77,7 @@ Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElem
 
 ![rangeselector-customizing-radrangeselector 002](images/rangeselector-customizing002.png)
 
-## Customize scroll event
+## Customize Scroll Event
 
 This scroll element appears only when associated element implements IRangeSelectorElement interface.
 
@@ -109,7 +109,7 @@ Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.SellectionRange.
 
 ![rangeselector-customizing-radrangeselector 003](images/rangeselector-customizing003.png)
 
-## Customize scales
+## Customize Scales
 
 The scales are created dynamically according to the associated element and its look and feel can be customized through the __ScaleInitializing__ event.
 
@@ -190,3 +190,9 @@ End Sub
 {{endregion}}
 
 ![rangeselector-customizing-radrangeselector 005](images/rangeselector-customizing005.png)
+
+## See Also
+
+* [Structure]({%slug winforms/rangeselector/structure%})
+* [Integration with RadChartView]({%slug winforms/rangeselector/integration-with-radchartview%})
+* [Properties and Events]({%slug winforms/rangeselector/properties-and-events%})
