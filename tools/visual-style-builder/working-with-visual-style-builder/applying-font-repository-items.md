@@ -11,9 +11,6 @@ previous_url: tools-visual-style-builder-working-with-visual-style-builder-apply
 
 # Applying Font repository items
 
-## Overview
-
-
 It is a good practice to create and drag Text repository items to RootRadElement. The [Font property is an ambient property](http://msdn.microsoft.com/en-us/library/system.windows.forms.control.font.aspx), so when you have many TextPrimitives in one control, setting the Text repository item to RootRadElement will set the desired font to all TextPrimitives. Please note that you should create additional Text items defining only the text color in the cases where the text should have different appearance across different states. Let' take a look at the following example:
 
 Imagine that you have to create a theme for RadButton. The Font of the RadButton's TextPrimitive should be set by a Text repository item to RootRadElement while the colors of the RadButton's Text should be set by Text repository items set to the TextPrimitive:
@@ -26,8 +23,7 @@ Imagine that you have to create a theme for RadButton. The Font of the RadButton
 
     ![tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items 001](images/tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items001.png)
 
-4. Select Text and press the Create button to create the new repository.
-        
+4. Select Text and press the Create to create the new repository.
 
     ![tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items 002](images/tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items002.png)
 
@@ -56,11 +52,10 @@ Next, we should create Text repository items defining only the ForeColor. These 
     ![tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items 006](images/tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items006.png)
 
 As a result you get a RadButton with customized text. But what is the benefit of creating a separate Text repository item that sets only the Font? And why we should drop this Text item to RootRadElement?
+ 
+    1. A separate repository item which sets only the Font should be created, because if we decide to change the font of a TextPrimitive, we should do it only in one repository items (but not in three, for example NormalText, MouseOverText and MouseDownText).
+    2. In the cases where a control contains more than one TextPrimitive, setting a repository item at RootRadElement level will define to Font for all TextPrimitives, since the Font property is an ambient property.
 
->note 
-1. A separate repository item which sets only the Font should be created, because if we decide to change the font of a TextPrimitive, we should do it only in one repository items (but not in three, for example NormalText, MouseOverText and MouseDownText).
-2. In the cases where a control contains for than one TextPrimitive, setting a repository item at RootRadElement level will define to Font for all TextPrimitives, since the Font property is an ambient property.
->
 
 
  

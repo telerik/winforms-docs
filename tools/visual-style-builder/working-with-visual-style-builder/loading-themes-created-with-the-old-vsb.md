@@ -18,7 +18,7 @@ Some of you have probably created custom themes for Telerik UI for WinForms usin
 
 ## Loading an old theme
 
-In the following example we will demonstrate how repository items are created based on the style settings of an old theme. Let's say we have xml theme files created for the whole Telerik UI for WinForms suite and the ThemeName of the xml files is Desert. We should load these files by choosing. the Open Directory/Open option: 
+In the following example we will demonstrate how repository items are created based on the style settings of an old theme. Let's say we have XML theme files created for the whole Telerik UI for WinForms suite and the ThemeName of the XML files is Desert. We should load these files by choosing the Open Directory/Open option: 
 
 ![tools-visual-style-builder-working-with-visual-style-builder-loading-themes-created-with-the-old-vsb 001](images/tools-visual-style-builder-working-with-visual-style-builder-loading-themes-created-with-the-old-vsb001.png)
 
