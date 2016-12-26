@@ -948,6 +948,9 @@ navigation:
     track-and-status-controls/progressbar:
         title: ProgressBar
         position: 0
+    track-and-status-controls/progressbar/customizing-appearance:
+        title: Customizing Appearance
+        position: 4
     track-and-status-controls/scrollbar:
         title: ScrollBar
         position: 1

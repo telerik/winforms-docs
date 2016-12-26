@@ -1,19 +1,17 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadProgressBar
+description: RadProgressBar is designed to display progress information to the user during a long-running operation.  
 slug: winforms/track-and-status-controls/progressbar/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 2
 previous_url: track-and-status-controls-progressbar-getting-started
 ---
 
 # Getting Started
 
-## 
-
-In this tutorial, you will use a Telerik RadProgressBar to show the progress of a long-running operation. The long-running operation is simulated with a Timer control.
+In this tutorial, you will use a **RadProgressBar** to show the progress of a long-running operation. The long-running operation is simulated with a **Timer** control.
 
 1\. Place a __RadProgressBar__ control, a __RadButton__ control, and a standard __Timer__ control on a form.
 
@@ -108,4 +106,4 @@ End Sub
 
 20\. Click the __Go__ Button to see the Telerik RadProgressBar animation.
 
-![track-and-status-controls-progressbar-getting-started 001](images/track-and-status-controls-progressbar-getting-started001.png)
+![track-and-status-controls-progressbar-getting-started 001](images/track-and-status-controls-progressbar-getting-started001.gif)
