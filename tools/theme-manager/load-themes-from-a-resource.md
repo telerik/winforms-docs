@@ -11,13 +11,14 @@ previous_url: tools-visual-style-builder-adding-custom-themes-to-your-applicatio
 
 # Load Themes from a Resource
 
+>important RadThemeManager cannot load the theme if it is saved as package (tssp file). This is shown in the following article: [using custom themes]({%slug winforms/themes/using-custom-themes%})
+
+
 To load a theme from a resource into a Theme Manager, follow these steps:
 
 1. Add a __RadThemeManager__ control to your form.
-          
 
 1. Add the XML file containing the theme to your Microsoft Visual Studio project.
-          
 
 1. In the Properties window for the XML file, set the __Build Action__ to __Embedded Resource__.
 

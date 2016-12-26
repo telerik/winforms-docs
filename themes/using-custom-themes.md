@@ -12,7 +12,7 @@ previous_url: themes-using-custom-themes
 # Using custom themes
 
 Since version R1 2010, Visual Style Builder we have introduced a new theming mechanism, which allows you to create or modify one theme at a time, but for all RadControls simultaneously. The following part shows how you can save and use the custom theme in your application.
-      
+
 
 ## Saving a custom theme
 

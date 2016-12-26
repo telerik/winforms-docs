@@ -11,6 +11,8 @@ previous_url: tools-visual-style-builder-adding-custom-themes-to-your-applicatio
 
 # Load Themes from an External File
 
+>important RadThemeManager cannot load the theme if it is saved as package (tssp file). This is shown in the following article: [using custom themes]({%slug winforms/themes/using-custom-themes%})
+
 ## 
 
 |RELATED VIDEOS||

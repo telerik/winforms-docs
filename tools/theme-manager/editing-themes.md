@@ -9,7 +9,9 @@ position: 3
 previous_url: tools-visual-style-builder-adding-custom-themes-to-your-application-editing-themes
 ---
 
-# Editing Themes
+# Add Remove Theme Files
+
+>important RadThemeManager cannot load the theme if it is saved as package (tssp file). This is shown in the following article: [using custom themes]({%slug winforms/themes/using-custom-themes%})
 
 To edit the list of themes loaded into a Theme Manager, follow these steps:
 
