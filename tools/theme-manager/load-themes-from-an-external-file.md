@@ -1,11 +1,11 @@
 ---
 title: Load Themes from an External File
-page_title: Load Themes from an External File | UI for WinForms Documentation
-description: Load Themes from an External File
+page_title: Load Themes from an External File | RadThemeManager
+description: This article shows how you can load the XML files directly using RadThemeManager.
 slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-an-external-file
 tags: load,themes,from,an,external,file
 published: True
-position: 1
+position: 2
 previous_url: tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-an-external-file
 ---
 

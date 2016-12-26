@@ -1,11 +1,11 @@
 ---
 title: Load Themes from a Resource
-page_title: Load Themes from a Resource | UI for WinForms Documentation
-description: Load Themes from a Resource
+page_title: Load Themes from a Resource | RadThemeManager
+description: This article shows how you can load the XML files when they are embedded as resource using RadThemeManager.
 slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource
 tags: load,themes,from,a,resource
 published: True
-position: 2
+position: 3
 previous_url: tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-a-resource
 ---
 

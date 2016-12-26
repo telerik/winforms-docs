@@ -1126,6 +1126,9 @@ navigation:
     tools/shapeeditor/using-the-custom-shape-editor:
         title: Using the Custom Shape Editor
         position: 3
+    tools/theme-manager:
+         title: Theme Manager
+         position: 6		 
     telerik-analytics-integration:
         title: Telerik Analytics Intergration
         position: 600
