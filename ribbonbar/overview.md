@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: RibbonBar | UI for WinForms Documentation
+page_title: Overview | RadRibbonBar
 description: RadRibbonBar control provides a flexible way for organizing all the functionality of your application.
 slug: winforms/ribbonbar
 tags: ribbonbar
@@ -9,18 +9,17 @@ position: 0
 previous_url: ribbonbar-overview
 ---
 
-# RibbonBar
-
-
-
-## 
+# Overview
 
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadRibbonBar Overview](http://tv.telerik.com/watch/winforms/radribbonbar/radribbonbar-overview)<br>This video contains a brief overview of the RadRibbonBar. (Runtime: 02:15)|![overview-video 001](images/overview-video001.png)|
+|[RadRibbonBar Overview](http://tv.telerik.com/watch/winforms/radribbonbar/radribbonbar-overview)<br>This video contains a brief overview of the RadRibbonBar. (Runtime: 02:15)|![overview-video 001](images/ribbonbar-overview001.png)|
 
-With the __RadRibbonBar__ control you can build user interfaces similar to those used in Microsoft Office 2007. The figure below shows an example of a RadRibbonBar usage scenario: <br>![ribbonbar-overview 001](images/ribbonbar-overview001.jpg)
+With the __RadRibbonBar__ control you can build user interfaces similar to those used in Microsoft Office. The figure below shows an example of a __RadRibbonBar__ usage scenario: 
+
+>caption Figure 1: RadRibbonBar
+![ribbonbar-overview 001](images/ribbonbar-overview002.png)
 
 __RadRibbonBar__ control provides a flexible way for organizing all the functionality of your application:
         
@@ -33,7 +32,6 @@ __RadRibbonBar__ control provides a flexible way for organizing all the function
 * Each group can hold an unlimited number of controls including toolbars, combo boxes, galleries, and other Telerik controls.
 
 * The Application Menu Button in the upper left of the ribbon provides quick access to the most important commands listed in the Application Menu.
-            
 
 * An optional Quick Access Toolbar above or below the ribbon tabs an be used for customization or frequently-used commands.
 

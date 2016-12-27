@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadRibbonBar
+description: This section will help you in creating your first Telerik RadRibbonBar with some basic functionality.
 slug: winforms/ribbonbar/getting-started/getting-started
 tags: getting,started
 published: True
@@ -11,79 +11,83 @@ previous_url: ribbonbar-getting-started
 
 # Getting Started
 
+This section will help you in creating your first Telerik __RadRibbonBar__ with some basic functionality (test formatting).
 
-
-This section will help you in creating your first Telerik RadRibbonBar with some basic functionality (test formatting).
-
-## Adding a Telerik RadRibbonBar to your form
+## Adding a Ribbon Bar
 
 1. Add a new __RadRibbonForm__ to your project or create one by changing the base class of a standard __Form__ to __RadRibbonForm__.
 
-1. The __RadRibbonForm__'s designer automatically adds a __RadRibbonBar__ control on the form as shown below:<br>![ribbonbar-getting-started 001](images/ribbonbar-getting-started001.png)
+1. The __RadRibbonForm__'s designer automatically adds a __RadRibbonBar__ control on the form as shown below:
+![ribbonbar-getting-started 001](images/ribbonbar-getting-started001.png)
 
 >note By default, __RadRibbonBar__ shows minimize, mazimize and close buttons in its caption element. The __HelpButton__ is not shown. It is necessary to set the RibbonBarElement.RibbonCaption.HelpButton.__Visibility__ property to *ElementVisibility.Visible* in order to be displayed. The form's __HelpButtonClicked__ event is fired when Help button in the ribbon's caption element is clicked. It can be canceled. However, if it is not canceled, the __HelpRequested__ event will be fired when the Help cursor is clicked on any Control. 
 > 
 > ![ribbonbar-getting-started 013](images/ribbonbar-getting-started013.png)
 
-## Adding Tabs to the Telerik RadRibbonBar
+## Adding Tabs
 
 1. Click __Add New Tab...__
 
-1. Type __Edit__ and press __Enter__. A new __Add New Tab...__ button will be created to the right of the __Edit__ tab:<br>![ribbonbar-getting-started 002](images/ribbonbar-getting-started002.png)
+1. Type __Edit__ and press __Enter__. A new __Add New Tab...__ button will be created to the right of the __Edit__ tab:
+![ribbonbar-getting-started 002](images/ribbonbar-getting-started002.png)
 
-1. Add two more __TabItems__ with captions __Format__ and __Insert:__ <br>![ribbonbar-getting-started 003](images/ribbonbar-getting-started003.png)
+1. Add two more __TabItems__ with captions __Format__ and __Insert:__
+![ribbonbar-getting-started 003](images/ribbonbar-getting-started003.png)
 
-
-
-## Adding Groups to a RadRibbonBar Tab
+## Adding Groups
 
 1. Click the __Format__ tab.
 
 1. Click the __Add New Group...__ button to create a new __RadRibbonBarGroup__. You will be prompted to enter the __Text__ of the new group. Type *Font* and press Enter to confirm the typed __Text__. Do the whole operation again for another group, but set its __Text__ to *Paragraph*. These groups will become containers that you will use to group controls by the type of functionality they have in common:<br>![ribbonbar-getting-started 004](images/ribbonbar-getting-started004.png)<br>![ribbonbar-getting-started 005](images/ribbonbar-getting-started005.png)<br>![ribbonbar-getting-started 006](images/ribbonbar-getting-started006.png)
 
-##  Adding Controls to a Group
+##  Adding Elements
 
 1. Click the __Font__ group *smart tag*.
 
-1. Click on __Add Vertical Button Group__ link. This selection will place a red highlighted area inside of the __Font__ group:<br>![ribbonbar-getting-started 007](images/ribbonbar-getting-started007.png)
+1. Click on __Add Vertical Button Group__ link. This selection will place a red highlighted area inside of the __Font__ group:
+![ribbonbar-getting-started 007](images/ribbonbar-getting-started007.png)
 
-1. Click __RadRibbonBarButtonGroup1__ smart tag.
+1. Click __radRibbonBarButtonGroup1__ smart tag.
 
-1. Click on __Edit items__ link <br>![ribbonbar-getting-started 008](images/ribbonbar-getting-started008.png)
+1. Click on __Edit items__ link
+![ribbonbar-getting-started 008](images/ribbonbar-getting-started008.png)
 
-1. Select __RadButtonElement__ from the *drop down* list: <br>![ribbonbar-getting-started 009](images/ribbonbar-getting-started009.png)
+1. Select __RadButtonElement__ from the *drop down* list:
+![ribbonbar-getting-started 009](images/ribbonbar-getting-started009.png)
 
-Having done that a __RadButtonElement__ is added to the *button group* that you have just created in the previous steps.<br>![ribbonbar-getting-started 010](images/ribbonbar-getting-started010.png)
+Having done that a __RadButtonElement__ is added to the *button group* that you have just created in the previous steps.
+![ribbonbar-getting-started 010](images/ribbonbar-getting-started010.png)
 
-## Formatting a RadButtonElement
+## Formatting a Button
 
-1. Click __RadButtonElement1__, open its Smart Tag menu.
+1. Click __radButtonElement1__, open its Smart Tag menu.
 
 1. Open the drop-down menu of the __DisplayStyle__ property and select __Image__.
 
 1. Open the drop-down menu of the __ImageIndex__ property and select __Italic__.
 
-1. Close the Smart Tag menu.
+1. Close the *Smart Tag* menu.
 
-1. In the Properties window of RadButtonElement1, change the __Name__ property from __RadButtonElement1__ to __TextItalic__.
+1. In the Properties window of __radButtonElement1__, change the __Name__ property from __radButtonElement1__ to __TextItalic__.
 
-## Prepare an ImageList to be Used in the Telerik RadRibbonBar
+## Prepare an ImageList with RadRibbonBar
 
-1. Drag a __WinForms ImageList__ component from the Toolbox to the form.  In the area below the design surface, you will see __ImageList1__.
+1. Drag a WinForms ImageList component from the Toolbox to the form.  In the area below the design surface, you will see __imageList1__.
 
-1. Using the Images Collection Editor, add images to represent __Italic__ text and __Bold__ text to the ImageList. For more help with this task, see [How to: Add or Remove ImageList Images with the Designer in the Visual Studio 2005](http://msdn2.microsoft.com/en-us/library/ms233674.aspx) documentation.
+1. Using the Images Collection Editor, add images to represent __Italic__ text and __Bold__ text to the ImageList. For more help with this task, see [How to: Add or Remove ImageList Images with the Designer](https://msdn.microsoft.com/en-us/library/ms233674) documentation.
 
-1. In the Properties window of __RadRibbonBar1__, locate the ImageList property. Click the drop-down arrow and choose __ImageList1__ from the drop-down list.
+1. In the *Properties* window of __radRibbonBar1__, locate the __ImageList__ property. Click the drop-down arrow and choose __imageList1__ from the drop-down list.
 
-## Add a RichTextBox
+## Add a RadRichTextEditor
 
 1. Drag a standard __WinForms RichTextBox__ control onto the form.
 
-1. Open the __Smart Tag__ of the control and execute its __'Dock in parent container__:![ribbonbar-getting-started 011](images/ribbonbar-getting-started011.png)
+1. Open the __Smart Tag__ of the control and execute its __'Dock in parent container__:
+![ribbonbar-getting-started 011](images/ribbonbar-getting-started011.png)
 
 ## Add the Code 
 
-#### Make text bold or italic
+#### Toggle Bold or Italic
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\RibbonGettingStarted.cs region=BoldAndItalicText}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\RibbonGettingStarted.vb region=BoldAndItalicText}} 
@@ -134,7 +138,7 @@ Private Sub TextItalic_Click(ByVal sender As System.Object, ByVal e As System.Ev
 
 {{endregion}}
 
-## Additional C# Code Instructions
+## Additional Code Instructions
 
 It is necessary to link the Bold and Italic buttons to their event handler code.
 
@@ -146,10 +150,12 @@ It is necessary to link the Bold and Italic buttons to their event handler code.
 
 1. Set the Italic button's Click Action to __TextItalic_Click__ in the same manner.
 
-## Run the QuickStart
+## Run the Application
 
 1. Press __F5__ to run the QuickStart.
 
 1. Add some text into the text area.
 
 1. Highlight some words and click on the __B__ button to change their font to bold. Click the __B__ button again to remove the bold formatting.
+
+![ribbonbar-getting-started 012](images/ribbonbar-getting-started014.gif)
