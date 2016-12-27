@@ -954,6 +954,9 @@ navigation:
     track-and-status-controls/scrollbar:
         title: ScrollBar
         position: 1
+    track-and-status-controls/scrollbar/customizing-appearance:
+        title: Customizing Appearance
+        position: 4
     track-and-status-controls/trackbar:
         title: TrackBar
         position: 2
