@@ -2,10 +2,10 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events | RadSplitContainer
 description: RadSplitContainer is a layout control which allows you to add many container panels to a form, separated by splitter(s).
-slug: winforms/splitcontainer/properties-methods-events
+slug: winforms/splitcontainer/properties
 tags: properties
 published: True
-position: 6
+position: 7
 previous_url: splitcontainer-properties
 ---
 

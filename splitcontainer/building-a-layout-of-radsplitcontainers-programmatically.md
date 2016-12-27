@@ -5,7 +5,7 @@ description: RadSplitContainer is a layout control which allows you to add many 
 slug: winforms/splitcontainer/building-a-layout-of-radsplitcontainers-programmatically
 tags: building,a,layout,of,radsplitcontainers,programmatically
 published: True
-position: 4
+position: 5
 previous_url: splitcontainer-building-a-layout-of-radsplitcontainers-programmatically
 ---
 
