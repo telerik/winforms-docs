@@ -1,28 +1,29 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadRating
+description: RadRating is a flexible UI component that allows users to place their rating by selecting from a finite number of items (stars, diamonds and hearts).
 slug: winforms/track-and-status-controls/rating/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: track-and-status-controls-rating-getting-started
 ---
 
 # Getting Started
 
-
 Below are the basic steps needed to get started with __RadRating__ control in Visual Studio:
 
-1. Drag __RadRating__ from the Visual Studio Toolbox to the form.
+1\. Drag __RadRating__ from the Visual Studio Toolbox to the form.
 
-    ![rating-getting-started 001](images/rating-getting-started001.png)
+![rating-getting-started 001](images/rating-getting-started001.png)
 
-1. Set the *Caption* to “The best movie ever”.
+1. Set the *Caption* to *“The best movie ever”*.
 
-1. Set the *SelctionMode* to “HalfItem”.
+1. Set the **SelectionMode** property to *HalfItem*.
 
-1. In the code behind subscribe to the *ValueChanged* event, where you can calculate and display the average rating:
+1. In the code behind subscribe to the **ValueChanged** event, where you can calculate and display the average rating:
+
+#### Handling the ValueChanged event
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=GettingStarted}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=GettingStarted}} 
@@ -82,3 +83,8 @@ End Sub
 5\. Press F5 to run the application.
 
 ![rating-getting-started 002](images/rating-getting-started002.png)
+
+# See Also
+
+* [Structure]({%slug winforms/splitcontainer/structure%})	
+* [Design Time]({%slug winforms/track-and-status-controls/rating/design-time%})	

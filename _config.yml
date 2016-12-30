@@ -967,7 +967,7 @@ navigation:
         title: Customizing Appearance
         position: 7
     track-and-status-controls/rating:
-        title: Raiting
+        title: Rating
         position: 5
     treeview:
         title: TreeView

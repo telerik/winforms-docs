@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties and Methods | UI for WinForms Documentation
+page_title: Properties and Methods | RadWaitingBar
 description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
 slug: winforms/track-and-status-controls/waitingbar/properties-methods-events
 tags: properties,and,methods,events
@@ -41,3 +41,9 @@ previous_url: track-and-status-controls-waitingbar-programming-radwaitingbar
 |----|----|
 |__WaitingStarted__|Fires when the control starts waiting.|
 |__WaitingStopped__|Fires when the control stops waiting.|
+
+# See Also
+
+* [Properties]({%slug http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radwaitingbar.htm%})	
+* [Methods]({%slug http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_ui_radwaitingbar.htm%})	
+* [Events]({%slug http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radwaitingbar.htm%})	

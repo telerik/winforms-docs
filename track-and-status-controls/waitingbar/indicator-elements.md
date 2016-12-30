@@ -1,6 +1,6 @@
 ---
 title: Indicator Elements
-page_title: Indicator Elements | UI for WinForms Documentation
+page_title: Indicator Elements | RadWaitingBar
 description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
 slug: winforms/track-and-status-controls/waitingbar/indicator-elements
 tags: control,element,structure
@@ -89,3 +89,10 @@ All indicators inherit from __BaseWaitingBarIndicatorElement__ and define their 
 
 ![track-and-status-controls-waiting-bar-indicator-elements 006](images/track-and-status-controls-waiting-bar-indicator-elements006.gif)
    
+# See Also
+
+* [Structure]({%slug winforms/track-and-status-controls/waitingbar/structure%})	
+* [Design Time]({%slug winforms/track-and-status-controls/wiating-bar/design-time%})
+* [Getting Started]({%slug winforms/track-and-status-controls/waitingbar/getting-started%})	
+* [Waiting Styles]({%slug winforms/track-and-status-controls/waiting-styles%})	
+* [Properties, Methods and Events]({%slug winforms/track-and-status-controls/waitingbar/properties-methods-events%})	

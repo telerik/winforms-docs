@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: WaitingBar | UI for WinForms Documentation
+page_title: Overview | RadWaitingBar
 description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
 slug: winforms/track-and-status-controls/waitingbar
 tags: waitingbar
@@ -21,3 +21,9 @@ __RadWaitingBar__ is designed to indicate that a long-running operation with ind
 
 ![track-and-status-controls-waitingbar-overview 003](images/track-and-status-controls-waitingbar-overview003.gif)
 
+
+# See Also
+
+* [Structure]({%slug winforms/track-and-status-controls/waitingbar/structure%})	
+* [Design Time]({%slug winforms/track-and-status-controls/wiating-bar/design-time%})
+* [Getting Started]({%slug winforms/track-and-status-controls/waitingbar/getting-started%})	
