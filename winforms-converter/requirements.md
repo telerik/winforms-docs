@@ -18,6 +18,8 @@ The following article lists what is required in order to be able to use the cont
 
 * Solution that contains project with default .NET controls.
 
+* Starting with the __R1 2017__ release the WinForms Converter will also support __VS2017__.
+
 ## See Also
 
 * [Step-by-step tutorial]({%slug winforms/winforms-converter/step-by-step-tutorial%})
