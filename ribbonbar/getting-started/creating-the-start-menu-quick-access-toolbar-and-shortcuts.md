@@ -63,7 +63,9 @@ This tutorial is in three parts. First, you will create a Quick Access Toolbar 
 
 1. Drag a standard WinForms __RichTextBox__ control onto the form.
 
-1. Open the __Smart Tag__ of the control and execute the 'Dock in parent container' action.![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 005](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts005.png)![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 006](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts006.png)
+1. Open the __Smart Tag__ of the control and execute the 'Dock in parent container' action.
+
+![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 005](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts005.png)
 
 ## Add Code
 
