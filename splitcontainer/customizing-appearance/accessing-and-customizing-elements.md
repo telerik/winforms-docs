@@ -42,11 +42,6 @@ this.radSplitContainer1.Splitters[0].Border.BoxStyle = BorderBoxStyle.SingleBord
 
 ````
 ````VB.NET
-Me.radSplitContainer1.SplitPanels(0).BackColor = Color.Red
-Me.radSplitContainer1.Splitters(0).BackgroundFill.BackColor = Color.Yellow
-Me.radSplitContainer1.Splitters(0).Border.ForeColor = Color.Lime
-Me.radSplitContainer1.Splitters(0).Border.BoxStyle = BorderBoxStyle.SingleBorder
-
 ````
 
 {{endregion}}  

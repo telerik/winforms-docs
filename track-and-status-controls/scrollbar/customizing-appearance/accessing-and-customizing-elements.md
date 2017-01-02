@@ -38,12 +38,9 @@ this.radHScrollBar1.ScrollBarElement.ThumbElement.ThumbFill.BackColor = Color.Li
 this.radHScrollBar1.ScrollBarElement.ThumbElement.ThumbBorder.ForeColor = Color.Red;
 this.radHScrollBar1.ScrollBarElement.ThumbElement.ThumbFill.GradientStyle = GradientStyles.Solid;
 this.radHScrollBar1.ScrollBarElement.SecondButton.ArrowPrimitive.ForeColor = Color.Aqua;
+
 ````
 ````VB.NET
-Me.RadHScrollBar1.ScrollBarElement.ThumbElement.ThumbFill.BackColor = Color.Lime
-Me.RadHScrollBar1.ScrollBarElement.ThumbElement.ThumbBorder.ForeColor = Color.Red
-Me.RadHScrollBar1.ScrollBarElement.ThumbElement.ThumbFill.GradientStyle = GradientStyles.Solid
-Me.RadHScrollBar1.ScrollBarElement.SecondButton.ArrowPrimitive.ForeColor = Color.Aqua
 ````
 
 {{endregion}}  
