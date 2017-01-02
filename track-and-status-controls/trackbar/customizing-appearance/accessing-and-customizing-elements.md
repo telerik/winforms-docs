@@ -45,14 +45,6 @@ this.radTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TopScaleElem
 
 ````
 ````VB.NET
-Me.RadTrackBar1.ShowButtons = True
-Me.RadTrackBar1.TrackBarElement.LeftButton.ButtonFillElement.BackColor = Color.Lime
-Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BackColor = Color.Lime
-Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BorderColor = Color.Red
-Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.DrawBorder = True
-Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BorderGradientStyle = GradientStyles.Solid
-Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TopScaleElement.TickContainerElement.TickColor = Color.Aqua
-
 ````
 
 {{endregion}}  
