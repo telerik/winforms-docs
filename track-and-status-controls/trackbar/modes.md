@@ -57,6 +57,7 @@ float secondRangeValue = this.radTrackBar1.Ranges[1].End;
 ````
 ````VB.NET
 Dim fitstRangeValue As Single = Me.RadTrackBar1.Ranges(0).[End]
+Dim secondRangeValue As Single = Me.RadTrackBar1.Ranges(1).[End]
 
 ````
 
