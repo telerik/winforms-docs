@@ -2,7 +2,7 @@
 title: Localization
 page_title: Localization | UI for WinForms Documentation
 description: Localization
-slug: winforms/richtexteditor-/localization
+slug: winforms/richtexteditor/localization
 tags: localization
 published: True
 position: 12
