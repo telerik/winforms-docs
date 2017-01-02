@@ -960,6 +960,9 @@ navigation:
     track-and-status-controls/trackbar:
         title: TrackBar
         position: 2
+    track-and-status-controls/trackbar/customizing-appearance:
+        title: Customizing Appearance
+        position: 6
     track-and-status-controls/waitingbar:
         title: WaitingBar
         position: 4

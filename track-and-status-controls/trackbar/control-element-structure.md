@@ -1,39 +1,45 @@
 ---
-title: Control Element Structure
-page_title: Control Element Structure | UI for WinForms Documentation
-description: Control Element Structure
+title: Structure
+page_title: Structure | RadTrackBar
+description: RadTrackBar, sometimes called a slider control, can be used for navigating a large amount of information or for visually adjusting a numeric setting. 
 slug: winforms/track-and-status-controls/trackbar/control-element-structure
 tags: control,element,structure
 published: True
-position: 2
+position: 1
 previous_url: track-and-status-controls-trackbar-control-element-structure
 ---
 
-# Control Element Structure
+# Structure
 
-## 
+This article illustrates the inner structure and organization of the elements which build the **RadTrackBar** control.
 
-RadTrackbar is built up of several levels of nested elements. The image below shows its element tree.
+>caption Figure 1: RadTrackBar's elements hierarchy
 
-![track-and-status-controls-trackbar-control-element-structure 001](images/track-and-status-controls-trackbar-control-element-structure001.png)
+![trackbar-structure 001](images/trackbar-structure001.png)
 
-Here is a brief explanation of the various elements in the tree:
-        
+>caption Figure 2: RadTrackBar's visual structure
 
-* The __RadTrackBarElement__ represents the entire __RadTrackBar__ control.  It contains two instances of __RadTrackArrowButton__ that represent the handlers (buttons) and the __TrackBarBodyElement__.
-            
+![trackbar-structure 002](images/trackbar-structure002.png)
+ 
+Here is a brief explanation of the various elements in the tree:      
 
-* __TrackBarBodyElement__ wraps and arranges __TrackBarScaleContainerElement__ and  __TrackBarIndicatorContainerElement__. 
-            
+* The __RadTrackBarElement__ represents the entire __RadTrackBar__ control.  It contains two instances of __TrackArrowButtons__ that represent the handlers (buttons) and the __TrackBarBodyElement__.         
 
-* __TrackBarScaleContainerElement__ wraps and arranges __TrackBarScaleElement__ and __TrackBarLineElement__. 
-            
+* __TrackBarBodyElement__ wraps and arranges __TrackBarScaleContainerElement__ and  __TrackBarIndicatorContainerElement__.            
 
-* Each instance of __TrackBarScaleElement__ contains its own set of __TrackBarTickContainerElement__  and __TrackBarLabelContainerElement__ that generates and arranges the ticks and labels respectively.
-            
+* __TrackBarScaleContainerElement__ wraps and arranges the __TrackBarScaleElement__ and __TrackBarLineElement__.            
 
-* __TrackBarIndicatorContainerElement__ generates and arranges the __TrackbarIndicatorElements__ according the [mode]({%slug winforms/track-and-status-controls/trackbar/modes%}) of RadTrackBar and the content of the __Ranges__  collection. This class creates a connection between the logical __TrackBarRange__ and its visual representation - __TrackbarIndicatorElements__.
-            
+* Each instance of __TrackBarScaleElement__ contains its own set of __TrackBarTickContainerElement__  and __TrackBarLabelContainerElement__ that generates and arranges the ticks and labels respectively.          
 
-* __TrackbarIndicatorElements__ represent a set of __TrackBarThumbElement__ and __TrackbarRangeElement__. This set represents two thumbs and a line between them.
+* __TrackBarIndicatorContainerElement__ generates and arranges the __TrackbarIndicatorElements__ according the [mode]({%slug winforms/track-and-status-controls/trackbar/modes%}) of **RadTrackBar** and the content of the __Ranges__  collection. This class creates a connection between the logical __TrackBarRange__ and its visual representation - __TrackBarIndicatorElements__.           
+
+* __TrackBarIndicatorElements__ represent a set of __TrackBarThumbElement__ and __TrackBarRangeElement__. This set represents two thumbs and a line between them.
+
+# See Also
+
+* [RadControlSpy]({%slug winforms/tools/controlspy%})
+* [Getting Started]({%slug winforms/track-and-status-controls/trackbar/getting-started%})	
+* [Design Time]({%slug winforms/track-and-status-controls/trackbar/design-time%})
+
+
             
