@@ -121,11 +121,15 @@ RadExpressionEditorForm.ExpressionItemsList.LoadFromXML(stream_)
 
 {{endregion}} 
 
-# ExpressionEditorFormCreated event
+## ExpressionEditorFormCreated event
 
-This event allows you to easily access the expression editor form before it is shown to the user. The following example shows how you can change the text and the icon on the form: 
+This event allows you to easily access the expression editor form before it is shown to the user. The following example shows how you can change the BackColor and hide the icon in the title bar: 
+
+{{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=FormatingExpressionForm}} 
+{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=FormatingExpressionForm}} 
 
 
+{{endregion}} 
 
 
 # See Also
