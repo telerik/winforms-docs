@@ -15,7 +15,10 @@ previous_url: ribbonbar-creating-a-gallery
 
 RadGalleryElement allows the user to choose among large number of visual items. In its default collapsed view, a gallery shows a single row of its items, as well as an up arrow and a down arrow that scroll to other rows of items. Special properties allow you to specify the number of visible rows and columns of items in the collapsed view. <br>![ribbonbar-creating-a-gallery 001](images/ribbonbar-creating-a-gallery001.png)
 
-The gallery also has a drop-down arrow which sets the element into expanded view. In this view the gallery shows a popup containing all of its items, organized in groups.<br>![ribbonbar-creating-a-gallery 002](images/ribbonbar-creating-a-gallery002.png)
+The gallery also has a drop-down arrow which sets the element into expanded view. In this view the gallery shows a popup containing all of its items, organized in groups.
+
+![ribbonbar-creating-a-gallery 002](images/ribbonbar-creating-a-gallery002.png)
+![ribbonbar-creating-a-gallery 003](images/ribbonbar-creating-a-gallery003.png)
 
 ## Creating a Gallery
 
@@ -152,7 +155,7 @@ Me.RadGalleryElement1.Groups.Add(purpleGroup)
 
 A gallery filter is a set of groups. Filters appear as options of a drop-down list, docked at the top of the gallery popup. They allow the user to choose the combination of groups to be displayed in the popup. For example, the following screenshot contains three filters. The All filter displays all groups; the Red, Orange and Green Items filter shows the items in groups Red, Orange and Green; the Blue and Purple Items lists the items in the Blue and Purple groups.
 
-|![ribbonbar-creating-a-gallery 004](images/ribbonbar-creating-a-gallery004.png)|![ribbonbar-creating-a-gallery 005](images/ribbonbar-creating-a-gallery005.png)|![ribbonbar-creating-a-gallery 006](images/ribbonbar-creating-a-gallery006.png)|
+![ribbonbar-creating-a-gallery 004](images/ribbonbar-creating-a-gallery004.png)
 
 To create a filter, follow these steps:
 

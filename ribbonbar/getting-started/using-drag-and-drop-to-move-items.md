@@ -30,4 +30,6 @@ The image below shows the tab in its new position. Note that the dragged tab is
 
 Drag-and-drop can be used to rearrange other items (RibbonBar groups within a tab, button groups within a RibbonBar group, and so on). The steps are the same as those outlined for dragging-and-dropping tabs within the RibbonBar.
 
-For example, suppose you want to reposition the three RibbonBar groups of the Second Tab tab so that RibbonBar Group 1 is to the left of RibbonBar Group 3. The top image shows the mouse grabbing the group. The second image shows dragging the group and the last one shows the result of the operation.<br>![ribbonbar-using-drag-and-drop-to-move-items 003](images/ribbonbar-using-drag-and-drop-to-move-items003.png)<br>![ribbonbar-using-drag-and-drop-to-move-items 004](images/ribbonbar-using-drag-and-drop-to-move-items004.png)
+For example, suppose you want to reposition the three RibbonBar groups of the Second Tab tab so that RibbonBar Group 1 is to the left of RibbonBar Group 3. The top image shows the mouse grabbing the group. The second image shows dragging the group and the last one shows the result of the operation.
+
+![ribbonbar-using-drag-and-drop-to-move-items 003](images/ribbonbar-using-drag-and-drop-to-move-items003.gif)

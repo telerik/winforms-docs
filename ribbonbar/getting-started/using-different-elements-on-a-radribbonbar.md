@@ -65,7 +65,8 @@ You can build the user interface of a Telerik RadRibbonBar using a variety of di
 
 1. Set the __Text__ property to __Paste__ and the __TextAlignment__ property to __MiddleCenter__.
 
-With an appropriate __Image__ the __RadRibbonBar__ should look similarly:![ribbonbar-using-different-elements-on-a-radribbonbar 003](images/ribbonbar-using-different-elements-on-a-radribbonbar003.png)
+With an appropriate __Image__ the __RadRibbonBar__ should look similarly:
+    ![ribbonbar-using-different-elements-on-a-radribbonbar 003](images/ribbonbar-using-different-elements-on-a-radribbonbar003.png)
 
 ## Customize the RadButtonElements in the RadRibbonBarButtonGroup
 
@@ -77,7 +78,8 @@ With an appropriate __Image__ the __RadRibbonBar__ should look similarly:![ribbo
 
 1. Set the __Image__ property with an appropriate image
 
-1. Do the same for the rest elements in the __RadRibbonBarButtonGroup__ so that the result looks similar to this:![ribbonbar-using-different-elements-on-a-radribbonbar 004](images/ribbonbar-using-different-elements-on-a-radribbonbar004.png)
+1. Do the same for the rest elements in the __RadRibbonBarButtonGroup__ so that the result looks similar to this:
+    ![ribbonbar-using-different-elements-on-a-radribbonbar 004](images/ribbonbar-using-different-elements-on-a-radribbonbar004.png)
 
 ## Adding a RadGalleryElement
 

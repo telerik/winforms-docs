@@ -43,93 +43,31 @@ There are several options for Office 2007-like screen tips we introduced in 2008
 
 To completely customize the screen tips appearance, its size, text wrapping, etc you may handle the ScreenTipNeeded event of any RadControl (RadRibbonBar, RadGridView, etc) and customize the screen tip provided by the event arguments, or even assign a new ScreenTip object to the corresponding item. 
 
-## Using ScreenTipNeeded event(example 1):
-
-#### Adding screen tips programatically
+## Using ScreenTipNeeded
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=addingScreenTips}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=addingScreenTips}} 
 
 ````C#
-RadOffice2007ScreenTipElement screenTip = new RadOffice2007ScreenTipElement();
-private void radGridView1_ScreenTipNeeded(object sender, Telerik.WinControls.ScreenTipNeededEventArgs e)
+private void radRibbonBar1_ScreenTipNeeded(object sender, ScreenTipNeededEventArgs e)
 {
-    GridDataCellElement cell = e.Item as GridDataCellElement;
-    if (cell != null)
-    {
-        screenTip.MainTextLabel.Image = Image.FromFile("..\\..\\DataSources\\star.png");
-        screenTip.MainTextLabel.Padding = new Padding(2);
-        screenTip.CaptionLabel.Padding = new Padding(2);
-        screenTip.CaptionLabel.Text = cell.ColumnInfo.HeaderText;
-        screenTip.MainTextLabel.Text = cell.Text;
-        //The following line indicates that Office 2007 UI complient screen tip sizing should not be used.
-        screenTip.EnableCustomSize = true;
-        cell.ScreenTip = this.screenTip;
-    }
+    RadButtonElement buttonElement = e.Item as RadButtonElement;
+    if (buttonElement != null && buttonElement.Text == "Button 1")
+     {
+         screenTip.CaptionLabel.Text = "Paste (Ctrl + V)";
+         screenTip.MainTextLabel.Text = "Add content from the Clipboard to your document";
+         buttonElement.ScreenTip = this.screenTip;
+     }
 }
 
 ````
 ````VB.NET
-Dim screenTip As New RadOffice2007ScreenTipElement
-Private Sub RadGridView1_ScreenTipNeeded(ByVal sender As Object, ByVal e As Telerik.WinControls.ScreenTipNeededEventArgs) Handles RadGridView1.ScreenTipNeeded
-    Dim cell As GridDataCellElement = TryCast(e.Item, GridDataCellElement)
-    If Not cell Is Nothing Then
-        screenTip.MainTextLabel.Image = Image.FromFile("..\\..\\DataSources\\star.png")
-        screenTip.MainTextLabel.Padding = New Padding(2)
-        screenTip.CaptionLabel.Padding = New Padding(2)
-        screenTip.CaptionLabel.Text = cell.ColumnInfo.HeaderText
-        screenTip.MainTextLabel.Text = cell.Text
-        'The following line indicates that Office 2007 UI complient screen tip sizing should not be used.
-        screenTip.EnableCustomSize = True
-        cell.ScreenTip = Me.screenTip
-    End If
-End Sub
-
-````
-
-{{endregion}}
-
-## Using ScreenTipNeeded event(example 2):
-
-#### Modifing screen tips
-
-{{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=usingScreenTipEventExample2}} 
-{{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=usingScreenTipEventExample2}} 
-
-````C#
-private void radGridView1_ScreenTipNeeded2(object sender, Telerik.WinControls.ScreenTipNeededEventArgs e)
-{
-    RadOffice2007ScreenTipElement screenTip = e.Item.ScreenTip as RadOffice2007ScreenTipElement;
-    if (screenTip != null)
-    {
-        //Enable Custom sizing - if AutoSize is true (by default) the screen tip will size according to MainTextLabel size
-        screenTip.EnableCustomSize = true;
-        //Optionally set auto-size to false to specify exact size parameters
-        screenTip.AutoSize = false;
-        screenTip.Size = new Size(200, 150);
-        //optionally set the following properties to allow screen tip text to wrap
-        screenTip.MainTextLabel.AutoSize = false;
-        screenTip.MainTextLabel.AutoSizeMode = RadAutoSizeMode.FitToAvailableSize;
-        screenTip.MainTextLabel.Size = new Size(200, 150);
-        screenTip.MainTextLabel.TextWrap = true;
-    }
-}
-
-````
-````VB.NET
-Sub radRibbonBar1_ScreenTipNeeded2(ByVal sender As Object, ByVal e As ScreenTipNeededEventArgs) Handles RadGridView1.ScreenTipNeeded
-    Dim screenTip As RadOffice2007ScreenTipElement = TryCast(e.Item.ScreenTip, RadOffice2007ScreenTipElement)
-    If screenTip IsNot Nothing Then
-        'Enable Custom sizing - if AutoSize is true (by default) the screen tip will size according to MainTextLabel size
-        screenTip.EnableCustomSize = True
-        'Optionally set auto-size to false to specify exact size parameters
-        screenTip.AutoSize = False
-        screenTip.Size = New Size(200, 150)
-        'optionally set the following properties to allow screen tip text to wrap
-        screenTip.MainTextLabel.AutoSize = False
-        screenTip.MainTextLabel.AutoSizeMode = RadAutoSizeMode.FitToAvailableSize
-        screenTip.MainTextLabel.Size = New Size(200, 150)
-        screenTip.MainTextLabel.TextWrap = True
+Private Sub RadRibbonBar1_ScreenTipNeeded(sender As Object, e As ScreenTipNeededEventArgs)
+    Dim buttonElement As RadButtonElement = TryCast(e.Item, RadButtonElement)
+    If buttonElement IsNot Nothing AndAlso buttonElement.Text = "Button 1" Then
+        screenTip.CaptionLabel.Text = "Paste (Ctrl + V)"
+        screenTip.MainTextLabel.Text = "Add content from the Clipboard to your document"
+        buttonElement.ScreenTip = Me.screenTip
     End If
 End Sub
 
@@ -139,7 +77,7 @@ End Sub
 
 The code sample below adds screen tips to two button elements in the __RadRibbonBar__:
 
-#### Adding screen tips to button elements
+#### Directly Acess Elements
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=addScreenTipsToButtonElements}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=addScreenTipsToButtonElements}} 
