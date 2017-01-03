@@ -50,7 +50,8 @@ You can build the user interface of a Telerik RadRibbonBar using a variety of di
 
 1. Select the __Vertical Button Group__ and from its __SmartTag__ execute the __Edit Items__ action. 
 
-1. Add three __RadButtonElement__ instances in the button group:![ribbonbar-using-different-elements-on-a-radribbonbar 002](images/ribbonbar-using-different-elements-on-a-radribbonbar002.png)
+1. Add three __RadButtonElement__ instances in the button group:
+    ![ribbonbar-using-different-elements-on-a-radribbonbar 002](images/ribbonbar-using-different-elements-on-a-radribbonbar002.png)
 
 ## Customize the RadButtonElement
 
