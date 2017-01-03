@@ -11,7 +11,7 @@ previous_url: gridview-sorting-basic-sorting
 
 # Basic Sorting
 
-RadGridView supports data sorting. Set __EnableSorting__ or __GridViewTemplate.EnableSorting__ properties to *true* which will enable the *user sorting* feature:
+**RadGridView** supports data sorting. Set the __EnableSorting__ or GridViewTemplate.__EnableSorting__ properties to *true* which will enable the *user sorting* feature:
 
 #### Enabling the user sorting
 
@@ -29,7 +29,7 @@ Me.RadGridView1.MasterTemplate.EnableSorting = True
 
 {{endregion}} 
 
-When sorting is enabled, the user can click on the column headers to control the sorting order. RadGridView supports three orders: __Ascending__, __Descending__, and __None__ (no sort).
+When sorting is enabled, the user can click on the column headers to control the sorting order. **RadGridView** supports three orders: __Ascending__, __Descending__, and __None__ (no sort). Since R1 2017 columns have a property called **AllowNaturalSort** that defines whether the user will cycle through *no sort* when clicking on the header cell or whether once sorted the column cannot be "unsorted".
 
 ![gridview-sorting-basic-sorting 001](images/gridview-sorting-basic-sorting001.png)
 
