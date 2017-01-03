@@ -120,7 +120,16 @@ RadExpressionEditorForm.ExpressionItemsList.LoadFromXML(stream_)
 ````
 
 {{endregion}} 
+
+# ExpressionEditorFormCreated event
+
+This event allows you to easily access the expression editor form before it is shown to the user. The following example shows how you can change the text and the icon on the form: 
+
+
+
+
 # See Also
+
 * [Design-time]({%slug winforms/gridview/expression-editor/design-time%})
 
 * [End-user Support]({%slug winforms/gridview/expression-editor/end-user-support%})
