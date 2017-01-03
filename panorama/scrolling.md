@@ -1,7 +1,7 @@
 ---
 title: Scrolling
-page_title: Scrolling | UI for WinForms Documentation
-description: Scrolling
+page_title: Scrolling | RadPanorama
+description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
 slug: winforms/panorama/scrolling
 tags: scrolling
 published: True
@@ -11,7 +11,7 @@ previous_url: panorama-scrolling
 
 # Scrolling
 
-The scroll bar alignment is controlled by the __ScrollBarAlignment__ property:
+**RadPanorama** provides scrolling behavior. The scroll bar alignment is controlled by the __ScrollBarAlignment__ property:
 
 #### Set scroll bar alignment
 
@@ -47,7 +47,9 @@ Me.RadPanorama1.ScrollBarThickness = 16
 
 {{endregion}} 
 
-To change the background image of the view, set the __PanelImage__ property with the desired image. To enable scrolling the background image along with the view, set the __ScrollingBackground__ property to *true*. You will also need to set the __PanelImageSize__ property. Usually, to achieve smooth background scrolling, the width of the panel image should be larger than the client width of the control and smaller than the total width of the tile layout. To edit more properties of the image, you can access its element via the __PanoramaElement.BackgroundImagePrimitive__ property. The following code demonstrates how to setup a tiling background image and a background scrolling:
+To change the background image of the view, set the __PanelImage__ property with the desired image. To enable scrolling the background image along with the view, set the __ScrollingBackground__ property to *true*. You will also need to set the __PanelImageSize__ property. Usually, to achieve smooth background scrolling, the width of the panel image should be larger than the client width of the control and smaller than the total width of the tile layout. To edit more properties of the image, you can access its element via the PanoramaElement.__BackgroundImagePrimitive__ property. The following code demonstrates how to setup a tiling background image and a background scrolling:
+
+![panorama-scrolling 001](images/panorama-scrolling001.gif)   
 
 #### Set tiling backgroung image
 
@@ -116,3 +118,9 @@ End Sub
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Properties and Methods ]({%slug winforms/panorama/settings%})	
+* [Tiles]({%slug winforms/panorama/tiles%})	
+* [Custom Tiles]({%slug winforms/panorama/custom-tiles%})		

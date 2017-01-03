@@ -738,6 +738,9 @@ navigation:
     panorama:
         title: Panorama
         position: 330
+    panorama/customizing-appearance:
+        title: Customizing Appearance
+        position: 7
     pdfprocessing:
         title: PdfProcessing 
         position: 340

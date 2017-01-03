@@ -1,7 +1,8 @@
 ---
 title: Design Time
-page_title: Design Time | UI for WinForms Documentation
-description: Design Time
+page_title: Design Time | RadPanorama
+description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
+slug: winforms/panorama/structure
 slug: winforms/panorama/design-time
 tags: design,time
 published: True
@@ -11,64 +12,103 @@ previous_url: panorama-design-time
 
 # Design Time
 
-RadPanorama supports adding and customizing tiles and groups at design time. All customizations are introduced by the Smart Tag menu of the specified item.
+To start using **RadPanorama** just drag it from the toolbox and drop it at the form.
+ 
+## Smart Tag
 
-The items available in the control Smart Tag are:
+Select **RadPanorama** and click the small arrow on the top right position in order to open the __Smart Tag__. The __Smart Tag__ for **RadPanorama** lets you quickly access common tasks involved with building **RadPanorama** elements and customizing appearance through themes.
 
-* New Theme Manager – add new RadThemeManager component
+>caption Figure 1: Smart Tag
 
-* Edit UI Elements – allows you to modify the control elements and their properties
+![panorama-design-time 005](images/panorama-design-time005.png)
 
-* Theme Name – allows you to set the theme for the control
+* __New Theme Manager__: adds a new __RadThemeManager__ component to the form.
+            
+* __Edit UI Elements__: allows setting properties at multiple levels of the class hierarchy.
+            
+* __Theme Name__ – allows you to set the theme for the control.
+ 
+* __Rows__ – define the number of rows that the control will have.
 
-* Rows – define the number of rows that the control will have
+* __Cell Size__ – define the size of each cell.
 
-* Cell Size – define the size of each cell 
+* __Show Groups__ – shows the groups in the control (if any).
 
-* Show Groups – shows the groups in the control (if any)
+* __Edit Items__ – opens the *RadItem Collection Editor*, which allows you to add **RadTileElements** and **RadLiveTileElements**. 
 
-* Edit Items – opens an editor, which allows you to add RadTileElements and RadLiveTileElements 
+* __Edit Groups__ – opens the *RadItem Collection Editor*, which allows you to add groups to the control.
+           
+* __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 
-* Edit Groups – opens editor, which allows you to add groups to the control
-
+* __Search__: Search the Telerik site for a given string.    
+     
 ## Adding Tiles
 
-In order to add or remove tiles either click on the “*Edit items*” link in the smart tag menu or edit the __Items__ collection in the Properties window in Visual Studio. You can add two types of elements to the __Items__ collection: __RadTileElement__ and __RadLiveTileElement__.<br>![panorama-design-time 001](images/panorama-design-time001.png)
+In order to add or remove tiles either click on the “*Edit items*” link in the **Smart Tag** or edit the __Items__ collection in the Properties window in Visual Studio. This will open the *RadItem Collection Editor*. You can add two types of elements to the __Items__ collection: __RadTileElement__ and __RadLiveTileElement__.
+
+![panorama-design-time 001](images/panorama-design-time001.png)
 
 ## Adding Groups
 
-To add or remove groups click on the “*Edit Groups*” link in the smart tag menu or edit the __Groups__ collection in the Properties window in Visual Studio. To add tiles to a group, edit the __Items__ collection of the group itself. Switching between grouped or ungrouped view, is achieved by checking or unchecking the *ShowGroups* checkbox in the smart tag menu or setting the __ShowGroups__ property in the Properties window in Visual Studio.<br>![panorama-design-time 002](images/panorama-design-time002.png)
+To add or remove groups click on the “*Edit Groups*” link in the **Smart Tag** or edit the __Groups__ collection in the Properties window in Visual Studio. To add tiles to a group, edit the __Items__ collection of the group itself. Switching between grouped or ungrouped view, is achieved by checking or unchecking the **ShowGroups** check box in the **Smart Tag** or setting the __ShowGroups__ property in the Properties window in Visual Studio.
+
+![panorama-design-time 002](images/panorama-design-time002.png)
 
 ## Customizing tiles
 
-Each __RadTileElement__ properties can be customized via the properties window of Visual Studio, or via the Smart Tag menu. The available properties for customization in the Smart Tag menu are:
+Each __RadTileElement__'s properties can be customized via the Properties window of Visual Studio, or via the **Smart Tag**. The available properties for customization in the **Smart Tag** are:
 
-* Text – sets the text of the tile
+![panorama-design-time 003](images/panorama-design-time003.png)
 
-* Column – define in which column the item resides in
+* **Text** – sets the text of the tile.
 
-* Row – define in which row the item resides in
+* **Column** – defines in which column the item resides in.
 
-* Column Span – define the item lenght by specifying how many columns it should take
+* **Row** – defines in which row the item resides in.
 
-* Row Span – define the item height by specifying how many rows it should take
+* **Column Span** – defines the item's length by specifying how many columns it should take.
 
-* Edit UI elements – allows you to edit the element’s properties <br>![panorama-design-time 003](images/panorama-design-time003.png)
+* **Row Span** – defines the item's height by specifying how many rows it should take.
+
+* **Edit UI elements** – allows you to edit the element’s properties.
 
 ## Customizing Live Tiles
 
-Each __RadLiveTileElement__ properties can be customized via the properties window of Visual Studio, or via the Smart Tag menu. The available properties for customization in the Smart Tag menu are:
+Each __RadLiveTileElement__'s properties can be customized via the Properties window of Visual Studio, or via the **Smart Tag**. The available properties for customization in the **Smart Tag** are:
 
-* Text – sets the text of the tile
+![panorama-design-time 004](images/panorama-design-time004.png)
 
-* Column – define in which column the item resides in
+* **Text** – sets the text of the tile.
 
-* Row – define in which row the item resides in
+* **Column** – defines in which column the item resides in.
 
-* Column Span – define the item lenght by specifying how many columns it should take
+* **Row** – defines in which row the item resides in.
 
-* Row Span – define the item height by specifying how many rows it should take
+* **Column Span** – defines the item length by specifying how many columns it should take.
 
-* Open Live Tile Editor – opens the [Live Tile Editor]({%slug winforms/panorama/live-tile-editor%}), where you can customize the tile.
+* **Row Span** – defines the item height by specifying how many rows it should take.
 
-* Edit UI elements – allows you to edit the element’s properties <br>![panorama-design-time 004](images/panorama-design-time004.png)
+* **Open Live Tile Editor** – opens the [Live Tile Editor]({%slug winforms/panorama/live-tile-editor%}), where you can customize the tile. 
+
+![panorama-design-time 006](images/panorama-design-time006.png)
+
+* **Edit UI elements** – allows you to edit the element’s properties.
+ 
+# See Also
+
+* [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
+* [Using default themes]({%slug winforms/themes/using-default-themes%})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
