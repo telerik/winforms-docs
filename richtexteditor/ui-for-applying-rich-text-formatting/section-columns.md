@@ -17,14 +17,16 @@ With the Section Columns feature, **RadRichTextEditor** allows you arrange the t
 * [Changing the Width of a Section Column](#changing-the-width-of-a-section-column)
 
 
-#### __Figure 1: Text laid out in columns__
+>caption Figure 1: Text laid out in column
+
 ![RadRichTextEditor_Features_Section_Columns_01](images/RadRichTextEditor_Features_Section_Columns_01.png)
 
 ## Create Section Columns
 
 The Page Layout tab of [RadRichTextEditorRibbonUI]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}) allows you set different types of section columns.
 
-#### __Figure 2: Section columns menu__
+>caption Figure 2: Section columns menu
+
 ![RadRichTextEditor_Features_Section_Columns_03](images/RadRichTextEditor_Features_Section_Columns_03.png)
 
 * **One**: Represents a single text column.
@@ -37,15 +39,24 @@ The Page Layout tab of [RadRichTextEditorRibbonUI]({%slug winforms/richtextedito
 
 * **Right**: Represents two text columns where the right one has a smaller width than the left one.
 
-#### __Figure 3: Left option applied on a section__
+* **More Columns...**: Opens the Section Columns Dialog that allows you set columns with custom width and spacing. 
+
+>caption Figure 3: Left option applied on a section
+
 ![RadRichTextEditor_Features_Section_Columns_02](images/RadRichTextEditor_Features_Section_Columns_02.png)
 
 ## Changing the Width of a Section Column
 
 When the Section contains columns with equal width, you can customize the width of a column through the Document Ruler. When the caret is positioned on a column, a thumb appears that allows you change the width by dragging it.
 
-#### __Figure 3: Customizing the width of a column__
+>caption Figure 4: Customizing the width of a column
+
 ![RadRichTextEditor_Features_Section_Columns_04](images/RadRichTextEditor_Features_Section_Columns_04.png)
+
+Another approach for applying different settings to section columns is through the Columns dialog.
+>caption Figure 5: Customizing the width and spacing of columns using dialog
+
+![RadRichTextEditor_Features_Section_Columns_05](images/RadRichTextEditor_Features_Section_Columns_05.png)
 
 # See Also
 
