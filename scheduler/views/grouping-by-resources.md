@@ -16,7 +16,7 @@ previous_url: scheduler-views-grouping-by-resources
 |-----|-----|
 |Resource Grouping in the RadSchedulerIn this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization.[(Runtime: 55:58)](http://www.telerik.com/videos/winforms/resource-grouping-in-the-radscheduler)|Telerik UI for WinForms R3 2009 - RadScheduler Resource Grouping R3 marks the release of some fantastic new features in the Telerik UI for WinForms. I know many of you have been waiting for one feature in particular... resource grouping. Well, I'm happy to say, the wait is over, resource grouping is here! Today, I am going to take some time out to explain to you how it works.[Read full post ...](http://blogs.telerik.com/RobertShoemate/Posts/09-11-05/radcontrols_for_winforms_q3_2009_-_radscheduler_resource_grouping.aspx)|
 
-## Setting up grouping
+## Setting Up Grouping
 
 The __RadScheduler__ control allows you to define custom resources that can be assigned to the appointments. Custom resources let you associate additional information with your appointments. Since custom resources have a limited number of values, RadScheduler can group appointments based on the resources associated with them. For example, you can book different facilities for a variety of events.
 
@@ -77,7 +77,7 @@ Next i
 
 {{endregion}} 
 
-## Setting the number of displayed resources
+## Setting the Number of Displayed Resources
 
 You can use the view’s __ResourcesPerView__ property to change the number of visible resources.
 
@@ -97,7 +97,7 @@ Me.RadScheduler1.ActiveView.ResourcesPerView = 2
 
 {{endregion}} 
 
-## Navigating through resources
+## Navigating Through Resources
 
 Navigating through resources To navigate to a specific resource you can use the __ResourceStartIndex__ property. To access it, you first need to cast the ViewElement to the base type for all grouped views – __SchedulerViewGroupedByResourceElementBase__.
 
@@ -170,7 +170,58 @@ End Sub
 
 {{endregion}} 
 
-## Modifying the size of the resources
+## Setting a Header Width
+
+Depending on the currentlty active view the __SchedulerViewElement__ exposes a __ResourceHeaderHeight__ or __ResourceHeaderWidth__  properties which define the height or width of the header. A suitable place to listen to set these properties is the handler of the RadScheduler.__ActiveViewChanged__ event.
+
+{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=SetResourceHeader}} 
+{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=SetResourceHeader}}
+````C#
+private void radScheduler1_ActiveViewChanged(object sender, SchedulerViewChangedEventArgs e)
+{
+    switch (e.NewView.ViewType)
+    {
+        case SchedulerViewType.Day:
+        case SchedulerViewType.Week:
+            SchedulerDayViewGroupedByResourceElement dayView = this.radScheduler1.SchedulerElement.ViewElement as SchedulerDayViewGroupedByResourceElement;
+            dayView.ResourceHeaderHeight = 80;
+            break;
+        case SchedulerViewType.Month:
+            SchedulerMonthViewGroupedByResourceElement monthView = this.radScheduler1.SchedulerElement.ViewElement as SchedulerMonthViewGroupedByResourceElement;
+            monthView.ResourceHeaderHeight = 50;
+            break;
+        case SchedulerViewType.Timeline:
+            TimelineGroupingByResourcesElement timelineElement = this.radScheduler1.SchedulerElement.ViewElement as TimelineGroupingByResourcesElement;
+            timelineElement.ResourceHeaderWidth = 150;
+            break;
+    }
+}
+
+````
+````VB.NET
+Private Sub RadScheduler1_ActiveViewChanged(sender As Object, e As SchedulerViewChangedEventArgs)
+    Select Case e.NewView.ViewType
+        Case SchedulerViewType.Day, SchedulerViewType.Week
+            Dim dayView As SchedulerDayViewGroupedByResourceElement = TryCast(Me.RadScheduler1.SchedulerElement.ViewElement, SchedulerDayViewGroupedByResourceElement)
+            dayView.ResourceHeaderHeight = 80
+            Exit Select
+        Case SchedulerViewType.Month
+            Dim monthView As SchedulerMonthViewGroupedByResourceElement = TryCast(Me.RadScheduler1.SchedulerElement.ViewElement, SchedulerMonthViewGroupedByResourceElement)
+            monthView.ResourceHeaderHeight = 50
+            Exit Select
+        Case SchedulerViewType.Timeline
+            Dim timelineElement As TimelineGroupingByResourcesElement = TryCast(Me.RadScheduler1.SchedulerElement.ViewElement, TimelineGroupingByResourcesElement)
+            timelineElement.ResourceHeaderWidth = 150
+            Exit Select
+    End Select
+End Sub
+
+```` 
+
+
+{{endregion}} 
+
+## Modifying the Size of the Resources
 
 __RadScheduler__ allows you to specify different size for the different resources. To manipulate the size of the resources, you can use the SetResourceSize and GetResourceSize methods. The values passed to the SetResourceSize method are proportional and the actual size of the resources is calculated based on them. By default all resources have a value of 1 and therefore if you set a value of 2 to any resource, it will stay twice as bigger compared to the others.
 
