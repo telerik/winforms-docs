@@ -1,6 +1,6 @@
 ---
 title: Spellcheck
-page_title: Spellcheck | UI for WinForms Documentation
+page_title: Spellcheck | RadRichTextEditor
 description: Spellcheck
 slug: winforms/richtexteditor-/features/spellcheck
 tags: spellcheck
@@ -10,8 +10,6 @@ previous_url: richtexteditor-features-spellcheck
 ---
 
 # Spellcheck
-
-
 
 The __RadRichTextEditor__ control is designed to support "spell checking as you type" by setting a single property and specifying a proper dictionary to it. This topic will explain you the following:
       
@@ -39,7 +37,6 @@ You can customize the spell checker by using the __SpellChecker__ property of __
 ## Dictionaries
 
 The dictionaries in __RadRichTextEditor__ implement the __IWordDictionary__ interface. Easy interoperability with dictionaries from __RadSpell__ for ASP.NET is achieved through the __RadDictionary__ class, which supports the loading of a dictionary directly from the *.tdf files, used with __RadSpell__. You can find TDF dictionaries for some languages [here](http://www.telerik.com/support/code-library/dictionaries-for-radspellchecker).
-        
 
 Here is an example of a __RadDictionary__ loaded from a TDF file.
 
@@ -48,7 +45,6 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 
 >note The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
 >
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=load}} 
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}} 
@@ -73,6 +69,67 @@ End Sub
 
 {{endregion}} 
 
+## RadWordsDictionary
+
+__RadWordsDictionary__ implements the __IWordDictionary__ interface and is capable of reading words from text files that contain one word per line. An example of such files are the __.dic__ dictionaries.
+
+#### Load stream in RadWordsDictionary
+
+{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=LoadWordDictionaryStream}} 
+{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=LoadWordDictionaryStream}}
+````C#
+private void LoadWordDictionaryStream(Stream dictStrem)
+{
+    Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary dictionary = new Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary();
+    dictionary.Load(dictStrem);
+}
+
+````
+````VB.NET
+Private Sub LoadWordDictionaryStream(dictStrem As Stream)
+    Dim dictionary As New Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary()
+    dictionary.Load(dictStrem)
+End Sub
+
+```` 
+
+
+
+{{endregion}}
+
+One of the constructor overloads of the RadWordsDictionary class enables you to pass a parameter of type __IEnumerable&lt;string&gt;__, which can help you create your own dictionary with a custom set of words.
+
+#### Create RadWordsDictionary from strings
+
+{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=LoadWordDictionaryWords}} 
+{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=LoadWordDictionaryWords}}
+````C#
+private void LoadWordDictionaryStream()
+{
+    List<string> words = new List<string>();
+    words.Add("Test");
+    words.Add("Teacher");
+    words.Add("Sister");
+    Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary dictionary = new Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary();
+    dictionary.Load(words);
+}
+
+````
+````VB.NET
+Private Sub LoadWordDictionaryStream()
+    Dim words As New List(Of String)()
+    words.Add("Test")
+    words.Add("Teacher")
+    words.Add("Sister")
+    Dim dictionary As New Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary()
+    dictionary.Load(words)
+End Sub
+
+```` 
+
+
+
+{{endregion}}
 
 ## Custom Dictionaries
 
