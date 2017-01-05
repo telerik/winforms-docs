@@ -1128,6 +1128,9 @@ navigation:
     telerik-presentation-framework/export-renderers:
         title: Export Renderers
         position: 19
+    telerik-presentation-framework/shapes:
+        title: Shapes
+        position: 20
     themes:
         title: Themes
         position: 580
