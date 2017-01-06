@@ -15,16 +15,9 @@ The __SaveDocument__ method allows you to save the currently loaded document in 
 
 #### Using SaveDocument method.
 
-{{source=..\SamplesCS\PdfViewer\RotationAndExport.cs region=RotateMethod}} 
-{{source=..\SamplesVB\PdfViewer\RotationAndExport.vb region=RotateMethod}}
-````C#
-radPdfViewer1.Rotate(RotationAngle.Degrees180);
-
-````
-````VB.NET
-radPdfViewer1.Rotate(RotationAngle.Degrees180)
-
-```` 
+{{source=..\SamplesCS\PdfViewer\RotationAndExport.cs region=SaveAs}} 
+{{source=..\SamplesVB\PdfViewer\RotationAndExport.vb region=SaveAs}}
+ 
 
 
 {{endregion}}
@@ -33,17 +26,9 @@ You can use the __GetDocumentAsStream__ method to retrieve the document stream:
 
 #### Get the document stream
 
-{{source=..\SamplesCS\PdfViewer\RotationAndExport.cs region=RotateMethod}} 
-{{source=..\SamplesVB\PdfViewer\RotationAndExport.vb region=RotateMethod}}
-````C#
-radPdfViewer1.Rotate(RotationAngle.Degrees180);
-
-````
-````VB.NET
-radPdfViewer1.Rotate(RotationAngle.Degrees180)
-
-```` 
-
+{{source=..\SamplesCS\PdfViewer\RotationAndExport.cs region=SaveStream}} 
+{{source=..\SamplesVB\PdfViewer\RotationAndExport.vb region=SaveStream}}
+ 
 
 {{endregion}}
 
