@@ -233,6 +233,9 @@ navigation:
     dataentry/customizing-appearance:
         title: Customizing Appearance
         position: 8
+    datafilter:
+        title: DataFilter
+        position: 161
     datalayout:
         title: DataLayout
         position: 170

@@ -51,7 +51,10 @@ You need to add the Telerik package server (https://nuget.telerik.com/nuget) to 
 
   ![installation-deployment-and-distribution-install-using-nuget 005](images/installation-deployment-and-distribution-install-using-nuget005.png)
 
-1. then  you can just select and install the desired NuGet packages.
+1. Then you can just select and install the desired NuGet packages.
+
+    ![installation-deployment-and-distribution-install-using-nuget 006](images/installation-deployment-and-distribution-install-using-nuget006.png)
+
 
 # See Also
 
