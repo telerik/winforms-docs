@@ -151,7 +151,7 @@ End Using
 
 * __RadGridViewToExport:__ This property is used to set the instance of RadGridView to export.
 
-*__SheetMaxRows:__ Тhe exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this SheetMaxRows property. Available options are:
+* __SheetMaxRows:__ Тhe exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this SheetMaxRows property. Available options are:
 
     - *1048576*: Max rows for Excel 2007 and above
 
@@ -170,7 +170,7 @@ __ExportViewDefinition:__  Gets or sets a value indicating whether to export the
 ### Exported Cells Data Type
 
 >important
-Each column in RadGridView has __ExcelExportType__ property which can be used for explicitly setting the data type of the cells in the exported document. In order to change the format of the exported data, you can set the __ExcelExportType__ property of the specific column to *Custom* and specify the __ExcelExportFormatString__ property with the desired format.
+Each column in RadGridView has __ExcelExportType__ property which can be used for explicitly setting the data type of the cells in the exported document. In order to change the format of the exported data, you can set the __ExcelExportType__ property of the specific column to *Custom* and specify the __ExcelExportFormatString__ property with the desired format. The following help article is quite useful for specifying the desired format: [Format Codes](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes)
 >
 
 ## Events
