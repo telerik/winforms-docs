@@ -22,6 +22,7 @@ __RadTextBox__ shares most of the properties of the standard Windows Forms text 
 |__MaxLength__|sets the maximum number of characters that can be typed into the control. |
 |__MultiLine__|controls whether multiple lines of text can be displayed in the control. |
 |__UseSystemPasswordChar__|Gets or sets a value indicating whether the text should appear as the default password character.|
+|**ShowClearButton**|Gets or sets a value indicating whether the clear button is shown.|
 
 ## NullText
 
@@ -32,6 +33,10 @@ In addition, __RadTextBox__ has a new property not shared by the standard Window
 >caption Figure 1: Using the null text.
 
 ![editors-textbox-programming-radtextbox 001](images/editors-textbox-programming-radtextbox001.png)
+
+Since R1 2017 **RadTextBox** can show a clear button when there is some text in the editor. This is controlled by the **ShowClearButton** property.
+
+![editors-textbox-programming-radtextbox 002](images/editors-textbox-programming-radtextbox002.gif)
 
 # See Also
 

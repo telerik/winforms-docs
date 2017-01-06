@@ -32,7 +32,7 @@ You can customize the nested elements at run time as well:
 #### Customize elements 
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=CustomizeElements}} 
-{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=CustomizeElements}} 
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=CustomizeElements}} 
 
 ````C#
 this.radTrackBar1.ShowButtons = true;
@@ -45,6 +45,14 @@ this.radTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TopScaleElem
 
 ````
 ````VB.NET
+Me.RadTrackBar1.ShowButtons = True
+Me.RadTrackBar1.TrackBarElement.LeftButton.ButtonFillElement.BackColor = Color.Lime
+Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BackColor = Color.Lime
+Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BorderColor = Color.Red
+Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.DrawBorder = True
+Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BorderGradientStyle = GradientStyles.Solid
+Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TopScaleElement.TickContainerElement.TickColor = Color.Aqua
+
 ````
 
 {{endregion}}  

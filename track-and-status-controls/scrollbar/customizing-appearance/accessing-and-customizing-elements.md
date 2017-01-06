@@ -31,7 +31,7 @@ You can customize the nested elements at run time as well:
 #### Customize elements 
 
 {{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=CustomizeElements}} 
-{{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=CustomizeElements}} 
+{{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=CustomizeElements}} 
 
 ````C#
 this.radHScrollBar1.ScrollBarElement.ThumbElement.ThumbFill.BackColor = Color.Lime;
@@ -41,6 +41,11 @@ this.radHScrollBar1.ScrollBarElement.SecondButton.ArrowPrimitive.ForeColor = Col
 
 ````
 ````VB.NET
+Me.RadHScrollBar1.ScrollBarElement.ThumbElement.ThumbFill.BackColor = Color.Lime
+Me.RadHScrollBar1.ScrollBarElement.ThumbElement.ThumbBorder.ForeColor = Color.Red
+Me.RadHScrollBar1.ScrollBarElement.ThumbElement.ThumbFill.GradientStyle = GradientStyles.Solid
+Me.RadHScrollBar1.ScrollBarElement.SecondButton.ArrowPrimitive.ForeColor = Color.Aqua
+
 ````
 
 {{endregion}}  
