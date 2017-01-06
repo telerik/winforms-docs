@@ -85,7 +85,6 @@ public class MyStrategy : SmartLabelsStrategyBase
     {
         List<LabelElement> labels = new List<LabelElement>();
         List<int> overlaps = new List<int>();
-
         int x = 70;
         int y = 30;
         int spacing = 6;
@@ -95,28 +94,23 @@ public class MyStrategy : SmartLabelsStrategyBase
             {
                 continue;
             }
-
             foreach (DataPointElement point in chartSeries.Children)
             {
                 LabelElement label = (LabelElement)point.Children[0];
                 Rectangle labelRect = ChartRenderer.ToRectangle(label.GetLayoutSlot());
-
                 var newRect = new Rectangle(x, y, labelRect.Width, labelRect.Height);
-
                 x += spacing + labelRect.Width;
                 if (x + spacing + labelRect.Width > plotArea.Width - 100)
                 {
                     y += spacing + labelRect.Height;
                     x = 70;
                 }
-
                 label.SmartRectangle = newRect;
                 labels.Add(label);
             }
         }
     }
 }
-
 public class MySmartLabelsController : SmartLabelsController
 {
     public override void CalculateLabelsPositions(Telerik.WinControls.UI.ChartSeriesCollection series, Rectangle plotArea)
