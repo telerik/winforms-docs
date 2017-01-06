@@ -49,12 +49,6 @@ this.radTileElement1.ForeColor = Color.Aqua;
 
 ````
 ````VB.NET
-Me.RadPanorama1.BackColor = Color.Gray
-Me.RadTileElement1.BackColor = Color.DarkRed
-Me.RadTileElement1.BorderColor = Color.Yellow
-Me.RadTileElement1.TextWrap = True
-Me.RadTileElement1.ForeColor = Color.Aqua
-
 ````
 
 {{endregion}}  

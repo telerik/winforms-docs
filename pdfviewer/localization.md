@@ -53,6 +53,10 @@ public class MyLocalizationProvider : PdfViewerLocalizationProvider
                 return "Open";
             case PdfViewerStringId.NavigatorPrintButton:
                 return "Print";
+            case PdfViewerStringId.RotateCounterclockwiseButton:
+                return "Rotate Counterclockwise";
+            case PdfViewerStringId.RotateClockwiseButton:
+                return "Rotate Clockwise";
             case PdfViewerStringId.NavigatorPreviousPageButton:
                 return "Previous page";
             case PdfViewerStringId.NavigatorNextPageButton:
@@ -77,8 +81,52 @@ public class MyLocalizationProvider : PdfViewerLocalizationProvider
                 return "Find previous";
             case PdfViewerStringId.NavigatorSearchTextBox:
                 return "Search";
+            case PdfViewerStringId.NavigatorNoResultMessage:
+                return "No results found according to the specified criteria.";
+            case PdfViewerStringId.NavigatorNoResultMessageHeader:
+                return "Information";
             case PdfViewerStringId.NavigatorDefaultStrip:
                 return "Default strip";
+            case PdfViewerStringId.PrintPreviewGroupBoxPreview:
+                return "Preview";
+            case PdfViewerStringId.PrintPreviewGroupBoxOrientation:
+                return "Orientation";
+            case PdfViewerStringId.PrintPreviewGroupBoxSettings:
+                return "Settings";
+            case PdfViewerStringId.PrintPreviewButtonPrint:
+                return "Print";
+            case PdfViewerStringId.PrintPreviewButtonCancel:
+                return "Cancel";
+            case PdfViewerStringId.PrintPreviewButtonWatermark:
+                return "Watermark";
+            case PdfViewerStringId.PrintPreviewButtonSettings:
+                return "Print Settings";
+            case PdfViewerStringId.PrintPreviewLabelPageSizeInches:
+                return "{0:F2} x {1:F2} Inches";
+            case PdfViewerStringId.PrintPreviewLabelPageSizeCm:
+                return "{0:F2}cm x {1:F2}cm";
+            case PdfViewerStringId.PrintPreviewLabelScale:
+                return "Scale: {0}%";
+            case PdfViewerStringId.PrintPreviewLabelCurrentPage:
+                return "Page {0} of {1}";
+            case PdfViewerStringId.PrintPreviewFormTitle:
+                return "Print Preview";
+            case PdfViewerStringId.PrintPreviewPrintError:
+                return "Error printing the document!";
+            case PdfViewerStringId.PrintPreviewRadioPortrait:
+                return "Portrait";
+            case PdfViewerStringId.PrintPreviewRadioLandscape:
+                return "Landscape";
+            case PdfViewerStringId.PrintPreviewRadioAuto:
+                return "Auto";
+            case PdfViewerStringId.NavigatorFitToWidthButton:
+                return "Fit To Width";
+            case PdfViewerStringId.NavigatorFitToPageButton:
+                return "Fit Full Page";
+            case PdfViewerStringId.PageThumbnailsLabel:
+                return "Page Thumbnails";
+            case PdfViewerStringId.SaveButton:
+                return "Save As";
         }
         return base.GetLocalizedString(id);
     }
@@ -112,6 +160,10 @@ Public Class MyLocalizationProvider
                 Return "Open"
             Case PdfViewerStringId.NavigatorPrintButton
                 Return "Print"
+            Case PdfViewerStringId.RotateCounterclockwiseButton
+                Return "Rotate Counterclockwise"
+            Case PdfViewerStringId.RotateClockwiseButton
+                Return "Rotate Clockwise"
             Case PdfViewerStringId.NavigatorPreviousPageButton
                 Return "Previous page"
             Case PdfViewerStringId.NavigatorNextPageButton
@@ -136,8 +188,52 @@ Public Class MyLocalizationProvider
                 Return "Find previous"
             Case PdfViewerStringId.NavigatorSearchTextBox
                 Return "Search"
+            Case PdfViewerStringId.NavigatorNoResultMessage
+                Return "No results found according to the specified criteria."
+            Case PdfViewerStringId.NavigatorNoResultMessageHeader
+                Return "Information"
             Case PdfViewerStringId.NavigatorDefaultStrip
                 Return "Default strip"
+            Case PdfViewerStringId.PrintPreviewGroupBoxPreview
+                Return "Preview"
+            Case PdfViewerStringId.PrintPreviewGroupBoxOrientation
+                Return "Orientation"
+            Case PdfViewerStringId.PrintPreviewGroupBoxSettings
+                Return "Settings"
+            Case PdfViewerStringId.PrintPreviewButtonPrint
+                Return "Print"
+            Case PdfViewerStringId.PrintPreviewButtonCancel
+                Return "Cancel"
+            Case PdfViewerStringId.PrintPreviewButtonWatermark
+                Return "Watermark"
+            Case PdfViewerStringId.PrintPreviewButtonSettings
+                Return "Print Settings"
+            Case PdfViewerStringId.PrintPreviewLabelPageSizeInches
+                Return "{0:F2} x {1:F2} Inches"
+            Case PdfViewerStringId.PrintPreviewLabelPageSizeCm
+                Return "{0:F2}cm x {1:F2}cm"
+            Case PdfViewerStringId.PrintPreviewLabelScale
+                Return "Scale: {0}%"
+            Case PdfViewerStringId.PrintPreviewLabelCurrentPage
+                Return "Page {0} of {1}"
+            Case PdfViewerStringId.PrintPreviewFormTitle
+                Return "Print Preview"
+            Case PdfViewerStringId.PrintPreviewPrintError
+                Return "Error printing the document!"
+            Case PdfViewerStringId.PrintPreviewRadioPortrait
+                Return "Portrait"
+            Case PdfViewerStringId.PrintPreviewRadioLandscape
+                Return "Landscape"
+            Case PdfViewerStringId.PrintPreviewRadioAuto
+                Return "Auto"
+            Case PdfViewerStringId.NavigatorFitToWidthButton
+                Return "Fit To Width"
+            Case PdfViewerStringId.NavigatorFitToPageButton
+                Return "Fit Full Page"
+            Case PdfViewerStringId.PageThumbnailsLabel
+                Return "Page Thumbnails"
+            Case PdfViewerStringId.SaveButton
+                Return "Save As"
         End Select
         Return MyBase.GetLocalizedString(id)
     End Function

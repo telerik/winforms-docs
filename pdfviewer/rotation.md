@@ -19,7 +19,15 @@ The __Rotate__ method is intended to rotate the pages of the loaded document at 
 #### Using the Rotate method:
 
 {{source=..\SamplesCS\PdfViewer\RotationAndExport.cs region=RotateMethod}} 
-{{source=..\SamplesVB\PdfViewer\RotationAndExport.vb region=RotateMethod}} 
+{{source=..\SamplesVB\PdfViewer\RotationAndExport.vb region=RotateMethod}}
+````C#
+radPdfViewer1.Rotate(RotationAngle.Degrees180);
+
+````
+````VB.NET
+radPdfViewer1.Rotate(RotationAngle.Degrees180)
+
+```` 
 
 
 {{endregion}}
@@ -29,7 +37,15 @@ You can use the __RotationAngle__ property to rotate the pages or get the curren
 #### Using RotationAngle property
 
 {{source=..\SamplesCS\PdfViewer\RotationAndExport.cs region=RotationAngleProperty}} 
-{{source=..\SamplesVB\PdfViewer\RotationAndExport.vb region=RotationAngleProperty}} 
+{{source=..\SamplesVB\PdfViewer\RotationAndExport.vb region=RotationAngleProperty}}
+````C#
+radPdfViewer1.RotationAngle = RotationAngle.Degrees270;
+
+````
+````VB.NET
+radPdfViewer1.RotationAngle = RotationAngle.Degrees270
+
+```` 
 
 
 {{endregion}}

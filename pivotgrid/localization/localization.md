@@ -140,6 +140,7 @@ class MyEnglishPivotGridLoclizationProvider : PivotGridLocalizationProvider
             case PivotStringId.AggregateOptionsDialogLabelField: return "FieLabelld Name";
             case PivotStringId.AggregateOptionsDialogLabelSourceName: return "Source Name:";
             case PivotStringId.AggregateOptionsDialogText: return "AggregateOptionsDialog";
+            case PivotStringId.AggregateOptionsAggregateOptionsText: return "Aggregate Options";
             case PivotStringId.DialogButtonCancel: return "Cancel";
             case PivotStringId.DialogButtonOK: return "OK";
             case PivotStringId.CalculationOptionsDialogText: return "CalculationOptionsDialog";
@@ -150,9 +151,10 @@ class MyEnglishPivotGridLoclizationProvider : PivotGridLocalizationProvider
             case PivotStringId.LabelFilterOptionsDialogText: return "LabelFilterOptionsDialog";
             case PivotStringId.LabelFilterOptionsDialogLabelAnd: return "and";
             case PivotStringId.NumberFormatOptionsDialogFormat: return "Format";
-            case PivotStringId.NumberFormatOptionsDialogLabelDescription: return "The format should identify the measurement type of the value. ($, ¥, €, kg., lb.," +
-" m.) The format would be used for general computations such as Sum, Average, Min" +
-", Max and others.";
+            case PivotStringId.NumberFormatOptionsDialogLabelDescription:
+                return "The format should identify the measurement type of the value. ($, ¥, €, kg., lb.," +
+ The format would be used for general computations such as Sum, Average, Min" +
+ax and others.";
             case PivotStringId.NumberFormatOptionsDialogText: return "NumberFormatOptionsDialog";
             case PivotStringId.NumberFormatOptionsDialogGroupBoxText: return "General Format";
             case PivotStringId.SortOptionsDialogAscending: return "Sort Ascending (A-Z) by:";
@@ -171,7 +173,7 @@ class MyEnglishPivotGridLoclizationProvider : PivotGridLocalizationProvider
             case PivotStringId.DragRowItemsHere: return "Drag row items here";
             case PivotStringId.ResultItemFormat: return "Key: {0}; Aggregates: {1}";
             case PivotStringId.Error: return "Error";
-            case PivotStringId.KpiSchemaElementValidatorError: return "Should have at least one KPI member defined (Goal, Status, Treand, Value)";
+            case PivotStringId.KpiSchemaElementValidatorError: return "Should have at least one KPI member defined (Goal, Status, Trend, Value)";
             case PivotStringId.SchemaElementValidatorMissingPropertyFormat: return "Required property is missing: {0}";
             case PivotStringId.AdomdCellInfoToStringFormat: return "Ordinal: {0} | Value: {1}";
             case PivotStringId.Aggregates: return "Aggregates";
@@ -193,7 +195,7 @@ class MyEnglishPivotGridLoclizationProvider : PivotGridLocalizationProvider
             case PivotStringId.None: return "None";
             case PivotStringId.PrintSettingsFitWidth: return "Fit width";
             case PivotStringId.PrintSettingsFitHeight: return "Fit height";
-            case PivotStringId.PrintSettingsCompact: return "Comapact";
+            case PivotStringId.PrintSettingsCompact: return "Compact";
             case PivotStringId.PrintSettingsTabular: return "Tabular";
             case PivotStringId.PrintSettingsFitAll: return "Fit all";
             case PivotStringId.PrintSettingsPrintOrder: return "Print order";
@@ -218,12 +220,29 @@ class MyEnglishPivotGridLoclizationProvider : PivotGridLocalizationProvider
             case PivotStringId.CalcualtedFields: return "Calculated Fields";
             case PivotStringId.Max: return "Max";
             case PivotStringId.NullValue: return "(blank)";
+            case PivotStringId.PivotMoreFields: return "More fields";
             case PivotStringId.CellScreenTipValue: return "Value";
             case PivotStringId.CellScreenTipRow: return "Row";
             case PivotStringId.CellScreenTipColumn: return "Column";
-            default: return base.GetLocalizedString(id);                  
-        }           
+            case PivotStringId.SortOptionsContextFromAtoZMenuText: return "Sort from A to Z";
+            case PivotStringId.SortOptionsContextFromZtoAMenuText: return "Sort from Z to A";
+            case PivotStringId.SortOptionsContextMoreSortingOptionsMenuText: return "More Sorting Options ...";
+            case PivotStringId.ContextTop10FilterOptionsMenuText: return "Top10 Filter";
+            case PivotStringId.ContextNumberFormatrOptionsMenuText: return "Number Format...";
+            case PivotStringId.ContextClearCalculationsrOptionsMenuText: return "Clear Calculations";
+            case PivotStringId.ContextMoreCalculationOptionsOptionsMenuText: return "More Calculation Options...";
+            case PivotStringId.ContextPercentOfGrandTotalOptionsOptionsMenuText: return "% of GrandTotal";
+            case PivotStringId.ContextMoreAggregatOptionsOptionsMenuText: return "More Aggregate Options...";
+            case PivotStringId.ContextGroupByYearOptionsMenuText: return "Group by Year";
+            case PivotStringId.ContextGroupByQuaterOptionsMenuText: return "Group by Quater";
+            case PivotStringId.ContextGroupByMonthOptionsMenuText: return "Group by Month";
+            case PivotStringId.ContextGroupByDayhOptionsMenuText: return "Group by Day";
+            case PivotStringId.ContextStepText: return "Step";
+            case PivotStringId.FieldListDateText: return "Date";
+        }
+        return base.GetLocalizedString(id);
     }
+}
 }
 
 ````
@@ -450,6 +469,8 @@ Class MyEnglishPivotGridLoclizationProvider
                 Return "Source Name:"
             Case PivotStringId.AggregateOptionsDialogText
                 Return "AggregateOptionsDialog"
+            Case PivotStringId.AggregateOptionsAggregateOptionsText
+                Return "Aggregate Options"
             Case PivotStringId.DialogButtonCancel
                 Return "Cancel"
             Case PivotStringId.DialogButtonOK
@@ -471,7 +492,7 @@ Class MyEnglishPivotGridLoclizationProvider
             Case PivotStringId.NumberFormatOptionsDialogFormat
                 Return "Format"
             Case PivotStringId.NumberFormatOptionsDialogLabelDescription
-                Return "The format should identify the measurement type of the value. ($, ¥, €, kg., lb.," + " m.) The format would be used for general computations such as Sum, Average, Min" + ", Max and others."
+                Return "The format should identify the measurement type of the value. ($, ¥, €, kg., lb.," + "m.) The format would be used for general computations such as Sum, Average, Min" + ", Max and others."
             Case PivotStringId.NumberFormatOptionsDialogText
                 Return "NumberFormatOptionsDialog"
             Case PivotStringId.NumberFormatOptionsDialogGroupBoxText
@@ -509,7 +530,7 @@ Class MyEnglishPivotGridLoclizationProvider
             Case PivotStringId.[Error]
                 Return "Error"
             Case PivotStringId.KpiSchemaElementValidatorError
-                Return "Should have at least one KPI member defined (Goal, Status, Treand, Value)"
+                Return "Should have at least one KPI member defined (Goal, Status, Trend, Value)"
             Case PivotStringId.SchemaElementValidatorMissingPropertyFormat
                 Return "Required property is missing: {0}"
             Case PivotStringId.AdomdCellInfoToStringFormat
@@ -553,7 +574,7 @@ Class MyEnglishPivotGridLoclizationProvider
             Case PivotStringId.PrintSettingsFitHeight
                 Return "Fit height"
             Case PivotStringId.PrintSettingsCompact
-                Return "Comapact"
+                Return "Compact"
             Case PivotStringId.PrintSettingsTabular
                 Return "Tabular"
             Case PivotStringId.PrintSettingsFitAll
@@ -602,15 +623,46 @@ Class MyEnglishPivotGridLoclizationProvider
                 Return "Max"
             Case PivotStringId.NullValue
                 Return "(blank)"
+            Case PivotStringId.PivotMoreFields
+                Return "More fields"
             Case PivotStringId.CellScreenTipValue
                 Return "Value"
             Case PivotStringId.CellScreenTipRow
                 Return "Row"
             Case PivotStringId.CellScreenTipColumn
                 Return "Column"
-            Case Else
-                Return MyBase.GetLocalizedString(id)
+            Case PivotStringId.SortOptionsContextFromAtoZMenuText
+                Return "Sort from A to Z"
+            Case PivotStringId.SortOptionsContextFromZtoAMenuText
+                Return "Sort from Z to A"
+            Case PivotStringId.SortOptionsContextMoreSortingOptionsMenuText
+                Return "More Sorting Options ..."
+            Case PivotStringId.ContextTop10FilterOptionsMenuText
+                Return "Top10 Filter"
+            Case PivotStringId.ContextNumberFormatrOptionsMenuText
+                Return "Number Format..."
+            Case PivotStringId.ContextClearCalculationsrOptionsMenuText
+                Return "Clear Calculations"
+            Case PivotStringId.ContextMoreCalculationOptionsOptionsMenuText
+                Return "More Calculation Options..."
+            Case PivotStringId.ContextPercentOfGrandTotalOptionsOptionsMenuText
+                Return "% of GrandTotal"
+            Case PivotStringId.ContextMoreAggregatOptionsOptionsMenuText
+                Return "More Aggregate Options..."
+            Case PivotStringId.ContextGroupByYearOptionsMenuText
+                Return "Group by Year"
+            Case PivotStringId.ContextGroupByQuaterOptionsMenuText
+                Return "Group by Quater"
+            Case PivotStringId.ContextGroupByMonthOptionsMenuText
+                Return "Group by Month"
+            Case PivotStringId.ContextGroupByDayhOptionsMenuText
+                Return "Group by Day"
+            Case PivotStringId.ContextStepText
+                Return "Step"
+            Case PivotStringId.FieldListDateText
+                Return "Date"
         End Select
+        Return MyBase.GetLocalizedString(id)
     End Function
 End Class
 

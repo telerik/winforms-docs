@@ -27,10 +27,10 @@ public class CustomTileDragDropService : TileDragDropService
     public CustomTileDragDropService(RadPanoramaElement owner) : base(owner)
     {
     }
-
+ 
     RadPanoramaElement draggedParent;
     RadPanoramaElement targetParent;
-
+ 
     protected override void OnPreviewDragOver(RadDragOverEventArgs e)
     {
         RadTileElement draggedTile = e.DragInstance as RadTileElement;
@@ -55,7 +55,7 @@ public class CustomTileDragDropService : TileDragDropService
             }
         }
     }
-
+ 
     private RadPanoramaElement GetTileParent(RadTileElement tile)
     {
         RadElement current = tile.Parent;
@@ -70,7 +70,7 @@ public class CustomTileDragDropService : TileDragDropService
         }
         return current as RadPanoramaElement ;
     }
-
+ 
     protected override void OnPreviewDragDrop(RadDropEventArgs e)
     {
         e.Handled = true;
@@ -83,7 +83,7 @@ public class CustomTileDragDropService : TileDragDropService
             return;
         }
         draggedParent.Items.Remove(source);
-
+       
         if (target != null)
         {
             //groups are available
@@ -114,7 +114,7 @@ public class CustomTileDragDropService : TileDragDropService
         {
             targetParent.Items.Add(source);
         }
-
+ 
         if (targetGroup != null)
         {
             AdjustPosition(source, insertIndex, targetGroup.Items);
@@ -124,7 +124,7 @@ public class CustomTileDragDropService : TileDragDropService
             AdjustPosition(source, insertIndex, targetParent.Items);
         }
     }
-
+ 
     private void AdjustPosition(RadTileElement source, int insertIndex, RadItemOwnerCollection items)
     {
         for (int i = insertIndex + 1; i < items.Count; i++)
@@ -145,10 +145,8 @@ Public Class CustomTileDragDropService
     Public Sub New(owner As RadPanoramaElement)
         MyBase.New(owner)
     End Sub
-
     Private draggedParent As RadPanoramaElement
     Private targetParent As RadPanoramaElement
-
     Protected Overrides Sub OnPreviewDragOver(e As RadDragOverEventArgs)
         Dim draggedTile As RadTileElement = TryCast(e.DragInstance, RadTileElement)
         If draggedTile IsNot Nothing Then
@@ -165,7 +163,6 @@ Public Class CustomTileDragDropService
             End If
         End If
     End Sub
-
     Private Function GetTileParent(tile As RadTileElement) As RadPanoramaElement
         Dim current As RadElement = tile.Parent
         While current IsNot Nothing
@@ -177,7 +174,6 @@ Public Class CustomTileDragDropService
         End While
         Return TryCast(current, RadPanoramaElement)
     End Function
-
     Protected Overrides Sub OnPreviewDragDrop(e As RadDropEventArgs)
         e.Handled = True
         Dim source As RadTileElement = TryCast(Me.Context, RadTileElement)
@@ -188,7 +184,6 @@ Public Class CustomTileDragDropService
             Return
         End If
         draggedParent.Items.Remove(source)
-
         If target IsNot Nothing Then
             'groups are available
             If targetParent.Groups.Count > 0 Then
@@ -209,14 +204,12 @@ Public Class CustomTileDragDropService
         Else
             targetParent.Items.Add(source)
         End If
-
         If targetGroup IsNot Nothing Then
             AdjustPosition(source, insertIndex, targetGroup.Items)
         Else
             AdjustPosition(source, insertIndex, targetParent.Items)
         End If
     End Sub
-
     Private Sub AdjustPosition(source As RadTileElement, insertIndex As Integer, items As RadItemOwnerCollection)
         For i As Integer = insertIndex + 1 To items.Count - 1
             Dim tile As RadTileElement = TryCast(items(i), RadTileElement)

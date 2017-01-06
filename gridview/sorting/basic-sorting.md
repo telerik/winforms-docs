@@ -41,6 +41,7 @@ When sorting is enabled, the user can click on the column headers to control t
 {{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=BypassSorting}} 
 
 ````C#
+        
 DataTable dt = new DataTable();
     
 public void FillData()
@@ -53,7 +54,7 @@ public void FillData()
         dt.Rows.Add(i, "Item" + i);
     }
     this.radGridView1.DataSource = dt; 
-
+        
     this.radGridView1.MasterTemplate.DataView.BypassSort = true;
     this.radGridView1.SortChanged += radGridView1_SortChanged;
 }
@@ -83,20 +84,16 @@ private void radGridView1_SortChanged(object sender, Telerik.WinControls.UI.Grid
 ````
 ````VB.NET
 Private dt As New DataTable()
-
 Public Sub FillData()
     dt.Columns.Add("Id", GetType(Integer))
     dt.Columns.Add("Name", GetType(String))
-
     For i As Integer = 0 To 29
         dt.Rows.Add(i, "Item" & i)
     Next
     Me.RadGridView1.DataSource = dt
-
     Me.RadGridView1.MasterTemplate.DataView.BypassSort = True
     AddHandler Me.RadGridView1.SortChanged, AddressOf radGridView1_SortChanged
 End Sub
-
 Private Sub radGridView1_SortChanged(sender As Object, e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
     If e.Action = NotifyCollectionChangedAction.Add OrElse e.Action = NotifyCollectionChangedAction.ItemChanged Then
         Dim s As SortDescriptor = TryCast(e.NewItems(0), SortDescriptor)

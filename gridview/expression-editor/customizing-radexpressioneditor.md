@@ -20,16 +20,16 @@ Although Telerik provides a great number of predefined functions, there could be
 
 ````C#
 public class CustomExpressionContext : Telerik.Data.Expressions.ExpressionContext
-{
-    /// <summary>
-    /// My custom function, which returns Pi constant.
-    /// </summary>
-    /// <returns></returns>
-    public double Pi()
     {
-        return Math.PI;
-    }
+/// <summary>
+/// My custom function, which returns Pi constant.
+/// </summary>
+/// <returns></returns>
+public double Pi()
+{
+    return Math.PI;
 }
+    }
 
 ````
 ````VB.NET
@@ -126,7 +126,35 @@ RadExpressionEditorForm.ExpressionItemsList.LoadFromXML(stream_)
 This event allows you to easily access the expression editor form before it is shown to the user. The following example shows how you can change the BackColor and hide the icon in the title bar: 
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=FormatingExpressionForm}} 
-{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=FormatingExpressionForm}} 
+{{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=FormatingExpressionForm}}
+````C#
+private void RadGridView1_ExpressionEditorFormCreated(object sender, ExpressionEditorFormCreatedEventArgs e)
+{
+    e.ExpressionEditorForm.FormElement.TitleBar.FillPrimitive.BackColor = Color.LightSkyBlue;
+    e.ExpressionEditorForm.ShowIcon = false;
+}
+
+````
+````VB.NET
+Private Sub RadGridView1_ExpressionEditorFormCreated(ByVal sender As Object, ByVal e As ExpressionEditorFormCreatedEventArgs)
+    e.ExpressionEditorForm.FormElement.TitleBar.FillPrimitive.BackColor = Color.LightSkyBlue
+    e.ExpressionEditorForm.ShowIcon = False
+End Sub
+'#endgion
+Class
+gion customFunction
+ic Class CustomExpressionContext
+Inherits Telerik.Data.Expressions.ExpressionContext
+''' <summary>
+''' My custom function, which returns Pi constant.
+''' </summary>
+''' <returns></returns>
+Public Function Pi() As Double
+    Return Math.PI
+End Function
+Class
+
+```` 
 
 
 {{endregion}} 

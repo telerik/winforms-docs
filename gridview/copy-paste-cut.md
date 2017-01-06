@@ -35,7 +35,6 @@ __RadGridView__ introduces __Copying__ event which occurs when the grid has prep
 {{source=..\SamplesVB\GridView\CopyPasteBehavior\CopyPasteForm.vb region=Copying}} 
 
 ````C#
-        
 private void radGridView1_Copying(object sender, GridViewClipboardEventArgs e)
 {
     if (e.Format == DataFormats.Html)
@@ -67,7 +66,27 @@ The __CopyingCellClipboardContent__ event is fired before each cell is copied. I
 #### Copy only the time from a DateTime value.
 
 {{source=..\SamplesCS\GridView\CopyPasteBehavior\CopyPasteForm.cs region=CopyEvent}} 
-{{source=..\SamplesVB\GridView\CopyPasteBehavior\CopyPasteForm.vb region=CopyEvent}} 
+{{source=..\SamplesVB\GridView\CopyPasteBehavior\CopyPasteForm.vb region=CopyEvent}}
+````C#
+private void RadGridView1_CopyingCellClipboardContent(object sender, GridViewCellValueEventArgs e)
+{
+    if (e.Value is DateTime)
+    {
+        var value = (DateTime)e.Value;
+        e.Value = value.ToShortTimeString();
+    }
+}
+
+````
+````VB.NET
+Private Sub RadGridView1_CopyingCellClipboardContent(ByVal sender As Object, ByVal e As GridViewCellValueEventArgs)
+    If TypeOf e.Value Is Date Then
+        Dim value = CDate(e.Value)
+        e.Value = value.ToShortTimeString()
+    End If
+End Sub
+
+```` 
 
 {{endregion}} 
 
@@ -96,7 +115,6 @@ The following example demonstrates how to capitalize the copied string before in
 {{source=..\SamplesVB\GridView\CopyPasteBehavior\CopyPasteForm.vb region=Pasting}} 
 
 ````C#
-        
 private void radGridView1_Pasting(object sender, GridViewClipboardEventArgs e)
 {
     if (Clipboard.ContainsData(DataFormats.Text))
@@ -136,7 +154,36 @@ This event will be fired before the data is pasted in each cell. It allows you c
 #### Check the values when pasting
 
 {{source=..\SamplesCS\GridView\CopyPasteBehavior\CopyPasteForm.cs region=PasteEvent}} 
-{{source=..\SamplesVB\GridView\CopyPasteBehavior\CopyPasteForm.vb region=PasteEvent}} 
+{{source=..\SamplesVB\GridView\CopyPasteBehavior\CopyPasteForm.vb region=PasteEvent}}
+````C#
+private void RadGridView1_PastingCellClipboardContent(object sender, GridViewCellValueEventArgs e)
+{
+    if (e.Column.Name == "Date")
+    {
+        DateTime date;
+        var valid = DateTime.TryParse(e.Value.ToString(), out date);
+        if (!valid)
+        {
+            RadMessageBox.Show("Invalid Date format pasted in the Date column");
+            e.Value = DateTime.Now;
+        }
+    }
+}
+
+````
+````VB.NET
+Private Sub RadGridView1_PastingCellClipboardContent(ByVal sender As Object, ByVal e As GridViewCellValueEventArgs)
+    If e.Column.Name = "Date" Then
+        Dim [date] As Date = Nothing
+        Dim valid = Date.TryParse(e.Value.ToString(), [date])
+        If Not valid Then
+            RadMessageBox.Show("Invalid Date format pasted in the Date column")
+            e.Value = Date.Now
+        End If
+    End If
+End Sub
+
+```` 
 
 
 {{endregion}} 

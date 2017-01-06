@@ -21,6 +21,7 @@ To set the location of a tile, set its __Column__ and __Row__ properties either 
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=SetTilePosition}} 
 
 ````C#
+            
 this.radTileElement1.Row = 1;
 this.radTileElement1.Column = 0;
 
@@ -46,6 +47,7 @@ The __CellPadding__ property specifies the offset of the tile according to the b
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=Padding}} 
 
 ````C#
+            
 this.radTileElement1.RowSpan = 2;
 this.radTileElement1.CellPadding = new Padding(5);
 this.radTileElement2.ColSpan = 2;
@@ -84,6 +86,7 @@ To change the content element, you can edit the contents of the tiles' __Items__
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=LiveTiles}} 
 
 ````C#
+    
 radLiveTileElement1.Items.Add(new LightVisualElement()
 {
     Text = "Movie Idea: Pirates of the Carribean"
@@ -104,16 +107,16 @@ radLiveTileElement1.Items.Add(new LightVisualElement()
 ````
 ````VB.NET
 RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
- .Text = "Movie Idea: Pirates of the Carribean" _
+    .Text = "Movie Idea: Pirates of the Carribean" _
 })
 RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
- .Text = "Movie Idea: Inception" _
+    .Text = "Movie Idea: Inception" _
 })
 RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
- .Text = "Movie Idea: The Expendables" _
+    .Text = "Movie Idea: The Expendables" _
 })
 RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
- .Text = "Movie Idea: Harry Potter and the Deathly Hallows" _
+    .Text = "Movie Idea: Harry Potter and the Deathly Hallows" _
 })
 
 ````
@@ -128,6 +131,7 @@ The following properties are responsible for controlling the behavior of the tra
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=AnimationProperties}} 
 
 ````C#
+            
 this.radLiveTileElement1.AnimationFrames = 15; //sets the number of frames in a transition
 this.radLiveTileElement1.AnimationInterval = 30; //sets the interval between each frame in the transition in miliseconds
 this.radLiveTileElement1.ContentChangeInterval = 7000; //sets the interval between each content change
@@ -158,6 +162,7 @@ You can find below a sample code snippet demonstrating how to add groups to **Ra
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=PopulateWithData}} 
 
 ````C#
+            
 TileGroupElement group1 = new TileGroupElement();
 group1.Text = "Group 1";
 TileGroupElement group2 = new TileGroupElement();
@@ -165,17 +170,17 @@ group2.Text = "Group 2";
 radPanorama1.Groups.Add(group1);
 radPanorama1.Groups.Add(group2);
 radPanorama1.ShowGroups = true;
-
+            
 RadTileElement tile1 = new RadTileElement();
 tile1.Text = "Tile 1";
 tile1.ColSpan = 2;
 group1.Items.Add(tile1);
-
+            
 RadTileElement tile2 = new RadTileElement();
 tile2.Text = "Tile 2";
 tile2.ColSpan = 2;
 group2.Items.Add(tile2);
-
+            
 RadTileElement tile3 = new RadTileElement();
 tile3.Text = "Tile 3";
 group2.RowsCount = 3;
@@ -192,17 +197,14 @@ group2.Text = "Group 2"
 RadPanorama1.Groups.Add(group1)
 RadPanorama1.Groups.Add(group2)
 RadPanorama1.ShowGroups = True
-
 Dim tile1 As New RadTileElement()
 tile1.Text = "Tile 1"
 tile1.ColSpan = 2
 group1.Items.Add(tile1)
-
 Dim tile2 As New RadTileElement()
 tile2.Text = "Tile 2"
 tile2.ColSpan = 2
 group2.Items.Add(tile2)
-
 Dim tile3 As New RadTileElement()
 tile3.Text = "Tile 3"
 group2.RowsCount = 3

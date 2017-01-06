@@ -19,6 +19,7 @@ previous_url: panorama-scrolling
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=ScrollBarAlignment}} 
 
 ````C#
+            
 this.radPanorama1.ScrollBarAlignment = HorizontalScrollAlignment.Bottom;
 
 ````
@@ -57,15 +58,18 @@ To change the background image of the view, set the __PanelImage__ property with
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=SetTilingBackground}} 
 
 ````C#
+    
 void PanoramaGettingStarted_Load(object sender, EventArgs e)
 {
     radPanorama1.ScrollingBackground = true;
+    
     this.radPanorama1.PanelImage = Resources.bg_pattern;
     this.radPanorama1.PanoramaElement.BackgroundImagePrimitive.ImageLayout = ImageLayout.Tile;
     this.radPanorama1.SizeChanged += new EventHandler(radPanorama1_SizeChanged);
     this.radPanorama1.PanoramaElement.ScrollBar.PropertyChanged += new PropertyChangedEventHandler(ScrollBar_PropertyChanged);
     UpdateImageSize();
 }
+    
 void ScrollBar_PropertyChanged(object sender, PropertyChangedEventArgs e)
 {
     if (e.PropertyName == "Maximum")
@@ -73,10 +77,12 @@ void ScrollBar_PropertyChanged(object sender, PropertyChangedEventArgs e)
         UpdateImageSize();
     }
 }
+    
 void radPanorama1_SizeChanged(object sender, EventArgs e)
 {
     UpdateImageSize();
 }
+    
 private void UpdateImageSize()
 {
     int width = (this.radPanorama1.Width + this.radPanorama1.PanoramaElement.ScrollBar.Maximum) / 2;

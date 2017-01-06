@@ -22,32 +22,27 @@ You can find below a sample code snippet demonstrating how to use the **Nullable
 {{source=..\SamplesVB\Editors\SpinEditor1.vb region=NullableValue}} 
 
 ````C#
- public void InitializeNullableSpinEditor()
+public void InitializeNullableSpinEditor()
 { 
-
+        
     this.radSpinEditor1.EnableNullValueInput = true;
     this.radSpinEditor1.NullableValueChanged += radSpinEditor1_NullableValueChanged;
-
     Item item = new Item("Apple", 2);
     this.radSpinEditor1.DataBindings.Add("NullableValue", item, "Id", true, DataSourceUpdateMode.OnPropertyChanged);
 }
-
 private void radSpinEditor1_NullableValueChanged(object sender, EventArgs e)
 {
     RadMessageBox.Show("NullableValue is changed "+ this.radSpinEditor1.NullableValue);
 }
-
 public class Item : System.ComponentModel.INotifyPropertyChanged
 {
     private string _name;
     private int? _id;
-
     public Item(string name, int? id)
     {
         this._name = name;
         this._id = id;
     }
-
     public string Name
     {
         get
@@ -60,7 +55,6 @@ public class Item : System.ComponentModel.INotifyPropertyChanged
             OnPropertyChanged("Name");
         }
     }
-
     public int? Id
     {
         get
@@ -73,9 +67,7 @@ public class Item : System.ComponentModel.INotifyPropertyChanged
             OnPropertyChanged("Id");
         }
     }
-
     public event PropertyChangedEventHandler PropertyChanged;
-
     protected virtual void OnPropertyChanged(string propertyName)
     {
         if (PropertyChanged != null)
@@ -85,32 +77,25 @@ public class Item : System.ComponentModel.INotifyPropertyChanged
     }
 }
 
-
 ````
 ````VB.NET
- Public Sub InitializeNullableSpinEditor()
-
+Public Sub InitializeNullableSpinEditor()
     Me.RadSpinEditor1.EnableNullValueInput = True
     AddHandler Me.RadSpinEditor1.NullableValueChanged, AddressOf radSpinEditor1_NullableValueChanged
-
     Dim item As New Item("Apple", 2)
     Me.RadSpinEditor1.DataBindings.Add("NullableValue", item, "Id", True, Windows.Forms.DataSourceUpdateMode.OnPropertyChanged)
 End Sub
-
 Private Sub radSpinEditor1_NullableValueChanged(sender As Object, e As EventArgs)
     RadMessageBox.Show("NullableValue is changed " & Me.RadSpinEditor1.NullableValue)
 End Sub
-
 Public Class Item
     Implements System.ComponentModel.INotifyPropertyChanged
     Private _name As String
     Private _id As System.Nullable(Of Integer)
-
     Public Sub New(name As String, id As System.Nullable(Of Integer))
         Me._name = name
         Me._id = id
     End Sub
-
     Public Property Name() As String
         Get
             Return Me._name
@@ -120,7 +105,6 @@ Public Class Item
             OnPropertyChanged("Name")
         End Set
     End Property
-
     Public Property Id() As System.Nullable(Of Integer)
         Get
             Return Me._id
@@ -130,9 +114,7 @@ Public Class Item
             OnPropertyChanged("Id")
         End Set
     End Property
-
     Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-
     Protected Overridable Sub OnPropertyChanged(ByVal propertyName As String)
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
     End Sub

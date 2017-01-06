@@ -113,7 +113,7 @@ class CustomTileElement : RadTileElement
 ````
 ````VB.NET
 Friend Class CustomTileElement
-Inherits RadTileElement
+    Inherits RadTileElement
     Private subject As LightVisualElement
     Private startTime As LightVisualElement
     Private endTime As LightVisualElement
@@ -195,7 +195,7 @@ radPanorama1.Items.Add(tile);
 Dim tile As New CustomTileElement()
 tile.RowSpan = 2
 tile.ColSpan = 4
-radPanorama1.Items.Add(tile)
+RadPanorama1.Items.Add(tile)
 
 ````
 
