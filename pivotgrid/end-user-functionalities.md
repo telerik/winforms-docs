@@ -5,7 +5,7 @@ description: End-user functionalities
 slug: winforms/pivotgrid/end-user-functionalities
 tags: end-user,functionalities
 published: True
-position: 13
+position: 14
 previous_url: pivotgrid-end-user-functionalities
 ---
 

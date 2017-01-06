@@ -779,19 +779,19 @@ navigation:
         position: 8
     pivotgrid/printing-support:
         title: Printing Support
-        position: 15
+        position: 16
     pivotgrid/dialogs:
         title: Dialogs
-        position: 17
+        position: 18
     pivotgrid/localization:
         title: Localization
-        position: 18
+        position: 19
     pivotgrid/exporting-data:
         title: Exporting Data
-        position: 19
+        position: 20
     pivotgrid/save-and-load-layout:
         title: Save and Load Layout
-        position: 20		
+        position: 21		
     propertygrid:
         title: PropertyGrid
         position: 370

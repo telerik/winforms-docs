@@ -5,7 +5,7 @@ description: Iterating Cells
 slug: winforms/pivotgrid/iterating-cells
 tags: iterating,cells
 published: True
-position: 16
+position: 17
 previous_url: pivotgrid-iterating-cells
 ---
 
