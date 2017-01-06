@@ -70,6 +70,8 @@ spreadStreamExport.RunExport("D:\StreamExport.xlsx", New SpreadStreamExportRende
 |__ExportChildRowsGrouped__|Gets or sets a value indicating whether to export hierarchy and group child rows grouped.|
 |__ExportViewDefinition__|Gets or sets a value indicating whether to export [view definition]({%slug winforms/gridview/view-definitions/overview%}) |
 
+>important
+Each column in RadGridView has __ExcelExportType__ property which can be used for explicitly setting the data type of the cells in the exported document. In order to change the format of the exported data, you can set the __ExcelExportType__ property of the specific column to *Custom* and specify the __ExcelExportFormatString__ property with the desired format.
 
 ## Events
 
