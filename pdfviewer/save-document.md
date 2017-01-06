@@ -35,6 +35,6 @@ You can use the __GetDocumentAsStream__ method to retrieve the document stream:
 
 ## Save from the PdfViewerNavigator
 
-The PdfViewerNavigator has a save as button that can be used for saving the document as well.
+The PdfViewerNavigator has a __Save As__ button that can be used for saving the document as well.
 
 ![pdf-viewer-save-document001](images/pdf-viewer-save-document001.png)        
