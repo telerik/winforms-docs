@@ -80,14 +80,14 @@ __RadWordsDictionary__ implements the __IWordDictionary__ interface and is capab
 ````C#
 private void LoadWordDictionaryStream(Stream dictStrem)
 {
-    Telerik.WinControls.SpellChecker.Proofing.WordDictionary dictionary = new Telerik.WinControls.SpellChecker.Proofing.WordDictionary();
+    Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary dictionary = new Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary();
     dictionary.Load(dictStrem);
 }
 
 ````
 ````VB.NET
 Private Sub LoadWordDictionaryStream(dictStrem As Stream)
-    Dim dictionary As New Telerik.WinControls.SpellChecker.Proofing.WordDictionary()
+    Dim dictionary As New Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary()
     dictionary.Load(dictStrem)
 End Sub
 
@@ -110,8 +110,8 @@ private void LoadWordDictionaryStream()
     words.Add("Test");
     words.Add("Teacher");
     words.Add("Sister");
-    Telerik.WinControls.SpellChecker.Proofing.WordDictionary dictionary = new Telerik.WinControls.SpellChecker.Proofing.WordDictionary();
-    //dictionary.Load(words);
+    Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary dictionary = new Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary();
+    dictionary.Load(words);
 }
 
 ````
@@ -121,8 +121,8 @@ Private Sub LoadWordDictionaryStream()
     words.Add("Test")
     words.Add("Teacher")
     words.Add("Sister")
-    Dim dictionary As New Telerik.WinControls.SpellChecker.Proofing.WordDictionary()
-    'dictionary.Load(words);
+    Dim dictionary As New Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary()
+    dictionary.Load(words)
 End Sub
 
 ```` 
