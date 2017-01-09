@@ -1,7 +1,7 @@
 ---
 title: Design Time
 page_title: Design Time | RadDataFilter
-description: 
+description: RadDataFilter allows you to build complex filter expressions based on the data and collection type of the source fields. 
 slug: winforms/datafilter/design-time
 tags: data, filter
 published: True

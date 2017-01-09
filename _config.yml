@@ -236,6 +236,9 @@ navigation:
     datafilter:
         title: DataFilter
         position: 161
+    datafilter/localization:
+        title: Localization
+        position: 8
     datalayout:
         title: DataLayout
         position: 170
