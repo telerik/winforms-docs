@@ -696,6 +696,9 @@ navigation:
     multicolumncombobox/styling-and-appearance:
         title: Styling and Appearance
         position: 8		
+    multicolumncombobox/how-to:
+        title: How-To
+        position: 9	
     pageview:
         title: PageView
         position: 310
