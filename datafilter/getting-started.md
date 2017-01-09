@@ -16,9 +16,9 @@ __RadDataFilter__ is a control that allows you to filter your data. It allows yo
 
 2. Populate the grid using the Nwind database, use the __Orders__ table as a data Source. More information is available [here]({%slug  winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset%}). This way the binding source will be automatically created.
 
-At this point your form should look like this:
-
-    ![datafilter-getting-started001](images/datafilter-getting-started001.png)
+    At this point your form should look like this:
+    
+   ![datafilter-getting-started001](images/datafilter-getting-started001.png)
 
 
 3. Open the Smart Tag of the RadDataFilter control and select the "ordersBindingSource".
@@ -36,4 +36,4 @@ At this point your form should look like this:
 
 5. Start the application and add some filters.
 
-    ![datafilter-getting-started003](images/datafilter-getting-started003.png)
+    ![datafilter-getting-started003](images/datafilter-getting-started003.gif)
