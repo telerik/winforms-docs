@@ -52,7 +52,7 @@ The *RadItem Collection Editor* can be shown either via the **Smart Tag** or by 
 
 ![datafilter-design-time 003](images/datafilter-design-time003.png) 
 
-After you already have some **DataFilterDescriptorItems**, you can add a *Group* or an *Expression* for composing the desired filters. The logical operation is controlled by the *Any* or *All* root node.
+After you already have some **DataFilterDescriptorItems**, you can add a *Group* or an *Expression* for composing the desired filters by the *RadDataFilter Design Time Editor*. The logical operation is controlled by the *Any* or *All* root node.
 
 >caption Figure 5: Applied filters
 
