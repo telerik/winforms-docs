@@ -12,7 +12,7 @@ position: 0
 
 Building complex filter expressions in a breeze with __RadDataFilter__. The control allows specifying expressions based on the data and collection type of the source fields. The intuitive UI of the control is designed to facilitate the end-user while empowering the developer to create related expressions with a few clicks.
 
-![data-filter-overview 006](images/data-filter-overview001.png)
+![data-filter-overview 001](images/data-filter-overview001.png)
 
 ### Key features:
 
