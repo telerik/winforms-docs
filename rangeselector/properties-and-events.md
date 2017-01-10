@@ -13,6 +13,53 @@ previous_url: rangeselector-properties-and-events
 
 Here are the most important properties for changing the control appearance and behavior:
 
+* The __UpdateMode__ property determines how the associated chart control will be updated.
+  * __Immeadiate__: This is the default value, the chart is updated as the range selector element is being moved 
+  * __Deferred__ : The chat will be updated when the range selector element is released. 
+
+>note The *Deferred* update mode may be suitable for scenarios in which the chart has been loaded with extremely large data sets.
+
+>caption Figure 1: UpdateMode.Immediate
+![rangeselector-properties-and-events 001](images/rangeselector-properties-and-events001.gif)
+
+####  UpdateMode.Immediate
+
+{{source=..\SamplesCS\RangeSelector\RangeSelectorPropertiesAndEvents.cs region=UpdateModeImmediate}} 
+{{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=UpdateModeImmediate}}
+````C#
+this.radRangeSelector1.UpdateMode = UpdateMode.Immediate;
+
+````
+````VB.NET
+Me.radRangeSelector1.UpdateMode = UpdateMode.Immediate
+
+```` 
+
+
+
+{{endregion}}
+
+>caption Figure 2: UpdateMode.Deferred
+![rangeselector-properties-and-events 002](images/rangeselector-properties-and-events002.gif)
+
+####  UpdateMode.Defferred
+
+{{source=..\SamplesCS\RangeSelector\RangeSelectorPropertiesAndEvents.cs region=UpdateModeDeferred}} 
+{{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=UpdateModeDeferred}}
+````C#
+this.radRangeSelector1.UpdateMode = UpdateMode.Deferred;
+
+````
+````VB.NET
+Me.radRangeSelector1.UpdateMode = UpdateMode.Deferred
+
+```` 
+
+
+
+{{endregion}}
+
+
 * The __StartRange__ and __EndRange__ properties specify the range area. The values of these properties are from type double and should between 0 and 100.
 
 #### Start and End Range
@@ -137,15 +184,15 @@ There are several events that you will find useful in the context of RadRangeSel
 void radRangeSelector1_ScaleInitializing(object sender, ScaleInitializingEventArgs e)
 {
     RangeSelectorChartScaleContainerElement scaleElement = e.ScaleElement as RangeSelectorChartScaleContainerElement;
-    if (scaleElement == null) 
-    { 
-        return; 
+    if (scaleElement == null)
+    {
+        return;
     }
     if (scaleElement.Title == "axe1")
     {
         e.Cancel = true;
     }
-    else 
+    else
     {
         scaleElement.ScalePostion = ViewPosition.TopLeft;
     }
