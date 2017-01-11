@@ -1,7 +1,7 @@
 ---
 title: Unbound Mode
 page_title: Unbound Mode | RadDataFilter
-description: 
+description: RadDataFilter allows you to build complex filter expressions based on the data and collection type of the source fields. 
 slug: winforms/datafilter/populating-with-data/unbound-mode
 tags: data, filter
 published: True
@@ -20,7 +20,7 @@ You can add/remove/modify **DataFilterDescriptorItems** by the *RadItem Collecti
 
 **RadDataFilter** supports adding descriptor items manually at run time. The following example demonstrates how to add two different descriptor items to the RadDataFilter.**Desciriptors** collection and apply an expression. 
 
-#### Adding descriptor items programmatically and applyin an expression
+#### Adding descriptor items programmatically and applying an expression
 
 {{source=..\SamplesCS\DataFilter\DataFilterGettingStarted.cs region=UnboundMode}} 
 {{source=..\SamplesVB\DataFilter\DataFilterGettingStarted.vb region=UnboundMode}}
