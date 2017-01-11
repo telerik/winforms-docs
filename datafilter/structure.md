@@ -1,7 +1,7 @@
 ---
 title: Structure
 page_title: Structure | RadDataFilter
-description: 
+description: This article shows the items types and the describes the elements used inside them. 
 slug: winforms/datafilter/structure
 tags: data, filter, structure
 published: True

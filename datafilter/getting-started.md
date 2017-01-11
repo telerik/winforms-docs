@@ -1,11 +1,11 @@
 ---
 title: Getting Started
 page_title: Getting Started | RadDataFilter
-description: 
+description: This article shows how you can use RadDataFilter to filter the data inside RadGridView. 
 slug: winforms/datafilter/getting-started
 tags: data, filter, getting, started
 published: True
-position: 4
+position: 3
 ---
 
 # Getting Started

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview | RadDataFilter
-description: 
+description: This article show what RadDataFilter represents and its key features. 
 slug: winforms/datafilter/overview
 tags: data, filter
 published: True
