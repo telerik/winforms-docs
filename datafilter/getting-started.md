@@ -57,3 +57,7 @@ End Sub
 5. Start the application and add some filters.
 
     ![datafilter-getting-started003](images/datafilter-getting-started003.gif)
+
+# See Also 
+
+* [End-user functionality]({%slug winforms/datafilter/end-user-functionality%})

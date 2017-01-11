@@ -30,4 +30,6 @@ RadDataFilter contains two types of items:
 8. __Filter Operator:__ Represents a list with all of the available operators for the filter criteria.
 9. __Filter Value:__ Represents an input box, where the users can enter their filter input. The built-in filter editors will help the users to achieve this fast and easily.
 
+# Elements Hierarchy
+
 

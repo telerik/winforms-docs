@@ -37,15 +37,13 @@ The groups are allowing you to define the relation between the conditions  or gr
 By default the control always has one root group that can contain expressions or other groups. 
 
 The following example shows a single group with two filter expressions in it. If the firs OR the second condition are met the entry will fulfill the criteria. 
-    
-     ![datafilter-end-user-functionality 004](images/datafilter-end-user-functionality004.png)
-
+    ![datafilter-end-user-functionality 004](images/datafilter-end-user-functionality004.png)
 
 If you change the condition all the filter expressions must be fulfilled. Here is an example for this as well.
     ![datafilter-end-user-functionality 005](images/datafilter-end-user-functionality005.png)
 
 
 # See Also 
-
+* [Getting Started]({%slug winforms/datafilter/getting-started%})
 
 
