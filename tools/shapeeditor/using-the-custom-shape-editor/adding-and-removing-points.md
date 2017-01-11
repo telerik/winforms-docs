@@ -1,6 +1,6 @@
 ---
 title: Adding and Removing Points
-page_title: Adding and Removing Points | UI for WinForms Documentation
+page_title: Adding and Removing Points | UI for WinForms Tools
 description: Adding and Removing Points
 slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/adding-and-removing-points
 tags: adding,and,removing,points

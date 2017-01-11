@@ -1,6 +1,6 @@
 ---
 title: Saving and Loading Theme Files
-page_title: Saving and Loading Theme Files | UI for WinForms Documentation
+page_title: Saving and Loading Theme Files | UI for WinForms Tools
 description: Saving and Loading Theme Files
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files
 tags: saving,and,loading,theme,files

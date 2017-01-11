@@ -1,6 +1,6 @@
 ---
 title: Working With Repository Items
-page_title: Working With Repository Items | UI for WinForms Documentation
+page_title: Working With Repository Items | UI for WinForms Tools
 description: Working With Repository Items
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items
 tags: working,with,repository,items

@@ -1,6 +1,6 @@
 ---
 title: Launching the Shape Editor
-page_title: Launching the Shape Editor | UI for WinForms Documentation
+page_title: Launching the Shape Editor | UI for WinForms Tools
 description: Launching the Shape Editor
 slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/launching-the-shape-editor
 tags: launching,the,shape,editor

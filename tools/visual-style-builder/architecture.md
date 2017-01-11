@@ -1,6 +1,6 @@
 ---
 title: Architecture
-page_title: Architecture | UI for WinForms Documentation
+page_title: Architecture | UI for WinForms Tools
 description: Architecture
 slug: winforms/tools/visual-style-builder/architecture
 tags: architecture

@@ -1,6 +1,6 @@
 ---
 title: Starting VSB
-page_title: Starting VSB | UI for WinForms Documentation
+page_title: Starting VSB | UI for WinForms Tools
 description: Starting VSB
 slug: winforms/tools/visual-style-builder/starting-vsb
 tags: starting,vsb

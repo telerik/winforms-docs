@@ -1,6 +1,6 @@
 ---
 title: Styling RadRibbonBar
-page_title: Styling RadRibbonBar | UI for WinForms Documentation
+page_title: Styling RadRibbonBar | UI for WinForms Tools
 description: Styling RadRibbonBar
 slug: winforms/tools/visual-style-builder/control-specific-theme-tutorials/styling-radribbonbar
 tags: styling,radribbonbar

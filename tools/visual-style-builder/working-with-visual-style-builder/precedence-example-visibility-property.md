@@ -1,6 +1,6 @@
 ---
 title: Precedence Example Visibility Property
-page_title: Precedence Example Visibility Property | UI for WinForms Documentation
+page_title: Precedence Example Visibility Property | UI for WinForms Tools
 description: Precedence Example Visibility Property
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/precedence-example:-visibility-property
 tags: precedence,example,visibility,property

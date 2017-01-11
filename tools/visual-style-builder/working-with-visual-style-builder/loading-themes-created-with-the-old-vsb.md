@@ -1,6 +1,6 @@
 ---
 title: Loading themes created with the old VSB
-page_title: Loading themes created with the old VSB | UI for WinForms Documentation
+page_title: Loading themes created with the old VSB | UI for WinForms Tools
 description: Loading themes created with the old VSB
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-themes-created-with-the-old-vsb
 tags: loading,themes,created,with,the,old,vsb

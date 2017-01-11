@@ -1,6 +1,6 @@
 ---
 title: Concepts
-page_title: Concepts | UI for WinForms Documentation
+page_title: Concepts | UI for WinForms Tools
 description: Concepts
 slug: winforms/tools/visual-style-builder/concepts
 tags: concepts

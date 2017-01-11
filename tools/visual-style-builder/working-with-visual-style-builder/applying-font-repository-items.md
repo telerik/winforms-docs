@@ -1,6 +1,6 @@
 ---
 title: Applying Font repository items
-page_title: Applying Font repository items | UI for WinForms Documentation
+page_title: Applying Font repository items | UI for WinForms Tools
 description: Applying Font repository items
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/applying-font-repository-items
 tags: applying,font,repository,items

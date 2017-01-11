@@ -1,7 +1,7 @@
 ---
 title: Inspecting Properties
-page_title: Inspecting Properties | UI for WinForms Documentation
-description: Inspecting Properties
+page_title: Inspecting Properties | RadControlSpy
+description: This article shows how you can use the RadControlSpy to inspect 
 slug: winforms/tools/controlspy/inspecting-properties
 tags: inspecting,properties
 published: True

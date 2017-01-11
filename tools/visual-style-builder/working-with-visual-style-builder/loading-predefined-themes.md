@@ -1,6 +1,6 @@
 ---
 title: Loading Predefined Themes
-page_title: Loading Predefined Themes | UI for WinForms Documentation
+page_title: Loading Predefined Themes | UI for WinForms Tools
 description: Loading Predefined Themes
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes
 tags: loading,predefined,themes

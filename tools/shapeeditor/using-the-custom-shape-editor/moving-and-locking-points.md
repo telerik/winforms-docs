@@ -1,6 +1,6 @@
 ---
 title: Moving and Locking Points
-page_title: Moving and Locking Points | UI for WinForms Documentation
+page_title: Moving and Locking Points | UI for WinForms Tools
 description: Moving and Locking Points
 slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/moving-and-locking-points
 tags: moving,and,locking,points

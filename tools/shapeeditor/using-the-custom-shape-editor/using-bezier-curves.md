@@ -1,6 +1,6 @@
 ---
 title: Using Bezier Curves
-page_title: Using Bezier Curves | UI for WinForms Documentation
+page_title: Using Bezier Curves | UI for WinForms Tools
 description: Using Bezier Curves
 slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/using-bezier-curves
 tags: using,bezier,curves

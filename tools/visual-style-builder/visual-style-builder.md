@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Visual Style Builder | UI for WinForms Documentation
+page_title: Visual Style Builder | UI for WinForms Tools
 description: VisualStyleBuilder provides the key flexibility behind the Telerik UI for WinForms.
 slug: winforms/tools/visual-style-builder
 tags: visual,style,builder

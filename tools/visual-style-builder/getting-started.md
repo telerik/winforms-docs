@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | UI for WinForms Tools
 description: Getting Started
 slug: winforms/tools/visual-style-builder/getting-started
 tags: getting,started

@@ -1,6 +1,6 @@
 ---
 title: ThemeViewer
-page_title: ThemeViewer | UI for WinForms Documentation
+page_title: ThemeViewer | UI for WinForms Tools
 description: ThemeViewer
 slug: winforms/tools/themeviewer
 tags: themeviewer
