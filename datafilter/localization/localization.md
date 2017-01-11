@@ -25,6 +25,7 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesCS\DataFilter\DataFilterLocalization.cs  region=MyLocalizationProvider}}
 {{source=..\SamplesVB\DataFilter\DataFilterLocalization.vb  region=MyLocalizationProvider}}
 ````C#
+    
 public class EnglishDataFilterLocalizationProvider : Telerik.WinControls.UI.DataFilterLocalizationProvider
 {
     public override string GetLocalizedString(string id)
@@ -35,7 +36,6 @@ public class EnglishDataFilterLocalizationProvider : Telerik.WinControls.UI.Data
                 return "All";
             case DataFilterStringId.LogicalOperatorOr:
                 return "Any";
-
             case DataFilterStringId.LogicalOperatorDescription:
                 return " of the following are true";
             
@@ -115,22 +115,18 @@ Inherits Telerik.WinControls.UI.DataFilterLocalizationProvider
                 Return "All"
             Case DataFilterStringId.LogicalOperatorOr
                 Return "Any"
-
             Case DataFilterStringId.LogicalOperatorDescription
                 Return " of the following are true"
-
             Case DataFilterStringId.FieldNullText
                 Return "Choose field"
             Case DataFilterStringId.ValueNullText
                 Return "Enter a value"
-
             Case DataFilterStringId.AddNewButtonText
                 Return "Add"
             Case DataFilterStringId.AddNewButtonExpression
                 Return "Expression"
             Case DataFilterStringId.AddNewButtonGroup
                 Return "Group"
-
             Case DataFilterStringId.DialogTitle
                 Return "Data Filter"
             Case DataFilterStringId.DialogOKButton
@@ -139,12 +135,10 @@ Inherits Telerik.WinControls.UI.DataFilterLocalizationProvider
                 Return "Cancel"
             Case DataFilterStringId.DialogApplyButton
                 Return "Apply"
-
             Case DataFilterStringId.ErrorAddNodeDialogTitle
                 Return "RadDataFilter Error"
             Case DataFilterStringId.ErrorAddNodeDialogText
                 Return "Cannot add entries to the control - missing property descriptors. " & vbLf & "DataSource is not set and/or DataFilterDescriptorItems are not added to the Descriptors collection of the control."
-
             Case DataFilterStringId.FilterFunctionBetween
                 Return "Between"
             Case DataFilterStringId.FilterFunctionContains
@@ -196,10 +190,13 @@ To apply the custom localization provider, instantiate and assign it to the cur
 {{source=..\SamplesCS\DataFilter\DataFilterLocalization.cs  region=ApplyLocalizationProvider}} 
 {{source=..\SamplesVB\DataFilter\DataFilterLocalization.vb  region=ApplyLocalizationProvider}}
 ````C#
+            
 DataFilterLocalizationProvider.CurrentProvider = new EnglishDataFilterLocalizationProvider();
+
 ````
 ````VB.NET
 DataFilterLocalizationProvider.CurrentProvider = New EnglishDataFilterLocalizationProvider()
+
 ````
 
 {{endregion}} 
