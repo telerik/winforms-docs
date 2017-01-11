@@ -239,6 +239,9 @@ navigation:
     datafilter/populating-with-data:
         title: Populating with Data
         position: 4
+    datafilter/editing:
+        title: Editing
+        position: 5
     datafilter/localization:
         title: Localization
         position: 8
