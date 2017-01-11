@@ -20,8 +20,6 @@ Building complex filter expressions in a breeze with __RadDataFilter__. The cont
 
 * __Seamless Integration:__ RadDataFilter can communicate with __BidingSource__ (or any other class that implements IBindingListView), __DataTable__ and __DataView__. This allows you to pair the control with any ItemsControls (GridView, TreeView, ComboBox, etc.). 
 
-
-
 # See Also
 
 * [Getting Started]({%slug winforms/datafilter/getting-started%})

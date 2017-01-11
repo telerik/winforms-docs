@@ -32,4 +32,6 @@ RadDataFilter contains two types of items:
 
 # Elements Hierarchy
 
+>caption Figure 2: The Element structure of RadDataFilter
 
+![data-filter-structure 002](images/data-filter-structure002.png)
