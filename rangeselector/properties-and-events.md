@@ -27,8 +27,12 @@ Here are the most important properties for changing the control appearance and b
 {{source=..\SamplesCS\RangeSelector\RangeSelectorPropertiesAndEvents.cs region=UpdateModeImmediate}} 
 {{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=UpdateModeImmediate}}
 ````C#
+this.radRangeSelector1.UpdateMode = UpdateMode.Deferred;
+
 ````
 ````VB.NET
+Me.radRangeSelector1.UpdateMode = UpdateMode.Deferred
+
 ```` 
 
 
@@ -43,8 +47,12 @@ Here are the most important properties for changing the control appearance and b
 {{source=..\SamplesCS\RangeSelector\RangeSelectorPropertiesAndEvents.cs region=UpdateModeDeferred}} 
 {{source=..\SamplesVB\RangeSelector\RangeSelectorPropertiesAndEvents.vb region=UpdateModeDeferred}}
 ````C#
+this.radRangeSelector1.UpdateMode = UpdateMode.Deferred;
+
 ````
 ````VB.NET
+Me.radRangeSelector1.UpdateMode = UpdateMode.Deferred
+
 ```` 
 
 
@@ -176,15 +184,15 @@ There are several events that you will find useful in the context of RadRangeSel
 void radRangeSelector1_ScaleInitializing(object sender, ScaleInitializingEventArgs e)
 {
     RangeSelectorChartScaleContainerElement scaleElement = e.ScaleElement as RangeSelectorChartScaleContainerElement;
-    if (scaleElement == null) 
-    { 
-        return; 
+    if (scaleElement == null)
+    {
+        return;
     }
     if (scaleElement.Title == "axe1")
     {
         e.Cancel = true;
     }
-    else 
+    else
     {
         scaleElement.ScalePostion = ViewPosition.TopLeft;
     }
