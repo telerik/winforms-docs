@@ -14,7 +14,7 @@ The value of a particular __PivotCellElement__ is calculated depending on the ap
 
 As of __R1 2017__, __LocalDataSourceProvider__ exposes a __GetUnderlyingData__ method which allows extracting the records from the data source object responsible for accumulating the result for a particular row and column. The __GetUnderlyingData__ method is working with two parameters: __Row Group__ and __Column Group__.
 
-In the example below we will handle the event and use the retrieved IEnumerable object to bind [RadGridView]({%slug winforms/gridview%}) and display the result.
+In the example below we will handle RadPivotGrid.__MouseDoubleClick__ event and use the retrieved IEnumerable object to bind [RadGridView]({%slug winforms/gridview%}) and display the result.
 
 >caption Figure 1: RadPivotGrid Drill Down Data
 
