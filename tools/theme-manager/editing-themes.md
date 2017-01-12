@@ -53,3 +53,15 @@ To edit the list of themes loaded into a Theme Manager, follow these steps:
 >caution When setting the __ThemeLocation__ for a __Resource__ storage type be sure to include the project namespace. The naming convention for ThemeManager to find the resource is \<my project namespace\>.\<theme name\>.xml. In project "MyProject" with theme resource file "MyTheme.xml", the fully qualified resource name should be entered as "MyProject.MyTheme.XML".
 >
 
+
+# See Also
+* [Adding RadThemeManager to a Form]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form%})
+
+* [Applying a Theme to a Control]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/applying-a-theme-to-a-control%})
+
+* [Load Themes from a Resource]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource%})
+
+* [Load Themes from an External File]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-an-external-file%})
+
+
+

@@ -20,3 +20,6 @@ RadThememanger is a component which can be dragged from the toolbox. It purpose 
 * [Load Themes from a Resource]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource%})
 
 >important RadThemeManager cannot load the theme if it is saved as package (tssp file). This is shown in the following article: [using custom themes]({%slug winforms/themes/using-custom-themes%})
+
+ 
+

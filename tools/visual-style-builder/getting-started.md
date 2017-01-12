@@ -113,7 +113,7 @@ With this, you have finished styling the RadButton control. Now, you can save th
 >caution It is important to know that styles applied for a given state are not reset when the item goes to another state. This might confuse those who are not familiar with this behavior.
 __Scenario:__ We have a button with Normal, MouseOver and Pressed states. We also have a couple of repository items which we use to style the button for the different states. Let’s say that the first repository item we assign fill to the button for its Normal state, which sets its BackColor, BackColor2, BackColor3, GradientStyle  and NumberOfColors properties. The NumberOfColors property is set to 3 and the GradientStyle property is set to Linear. After associating the repository item to the Normal state of the button, the styles are applied correctly. Now, let’s say that we associate another repository item with the MouseOver state of the button that defines settings for the BackColor, BackColor2, BackColor3, BackColor4 properties, also for the GradientStyle (=Linear), but does not define setting for the NumberOfColors property. In this case, when we hover the button, the fill will not look as expected since its BackColor4 property value will not be visible. The reason for this will be that the NumberOfColors property will remain set to 3 as defined by the repository item assigned to the Normal state of the item.
 __The main conclusion that we should make here is that each state must be assigned a style that defines all properties needed for the expected appearance of the element.__ This is the general approach when styling items in order to avoid confusion.
-For more information see [Precedence Example: Visibility Property]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/precedence-example:-visibility-property%}) at the end of this tutorial.
+For more information see [Precedence Example: Visibility Property]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property%}) at the end of this tutorial.
 >
 
 
@@ -124,3 +124,13 @@ For more information see [Precedence Example: Visibility Property]({%slug winfor
 |[Styling Basics with Visual Style Builder for WinForms](http://tv.telerik.com/watch/winforms/visualstylebuilder/styling-basics-with-visual-style-builder-winforms)<br>In this video, you will learn how to create a basic theme using repositories in Visual Style Builder for WinForms. You will then learn how to use this theme in your Telerik UI for WinForms based applications. (Runtime: 09:12)|![tools-visual-style-builder-getting-started 0016](images/tools-visual-style-builder-getting-started0016.png)|
 |[Introduction to the Visual Style Builder for WinForms](http://tv.telerik.com/watch/winforms/visualstylebuilder/introduction-new-visual-style-builder-winforms)<br>In this recorded webinar, you will learn how to build themes using the latest version of Visual Style Builder. You will also learn what Theme Repositories are and how they make creating themes easier. (Runtime: 42:56)|![tools-visual-style-builder-getting-started 0015](images/tools-visual-style-builder-getting-started0015.png)|
 |[Changing Themes at Run Time with Telerik UI for WinForms](http://tv.telerik.com/watch/winforms/visualstylebuilder/changing-themes-at-run-time-with-radcontrols-winforms)<br>In this video, you will learn how to give your users the ability to choose between Telerik themes and custom themes at run time. (Runtime: 08:42)|![tools-visual-style-builder-getting-started 0014](images/tools-visual-style-builder-getting-started0014.png)|
+
+# See Also
+* [Architecture]({%slug winforms/tools/visual-style-builder/architecture%})
+
+* [Concepts]({%slug winforms/tools/visual-style-builder/concepts%})
+
+* [Starting VSB]({%slug winforms/tools/visual-style-builder/starting-vsb%})
+
+* [Overview]({%slug winforms/tools/visual-style-builder%})
+

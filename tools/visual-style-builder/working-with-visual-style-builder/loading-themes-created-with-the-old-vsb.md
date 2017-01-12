@@ -33,3 +33,17 @@ After you press OK to confirm, you will have to choose which of the possible rep
 Finally, the desired repository items are loaded in Visual Style Builder:
 
 ![tools-visual-style-builder-working-with-visual-style-builder-loading-themes-created-with-the-old-vsb 004](images/tools-visual-style-builder-working-with-visual-style-builder-loading-themes-created-with-the-old-vsb004.png)
+
+# See Also
+* [Applying Font repository items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/applying-font-repository-items%})
+
+* [Color Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%})
+
+* [Loading Predefined Themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
+
+* [Precedence Example Visibility Property]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property%})
+
+* [Property Precedence Rules]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules%})
+
+* [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})
+

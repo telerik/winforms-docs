@@ -63,3 +63,17 @@ However, since the properties of different VisualStates are set to one and the s
 For example, take the following case – we have a repository item applied to the IsMouseOver state and then we mouse hover and mouse leave the button. However, the button is still blue, even when the mouse pointer is not on the button. This is because the settings of the default visual state (RadButtonElement state) are default and they can’t override the settings provided by the repository item.
 
 ![tools-visual-style-builder-working-with-visual-style-builder-property-precedence-rules 002](images/tools-visual-style-builder-working-with-visual-style-builder-property-precedence-rules002.png)
+
+# See Also
+* [Applying Font repository items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/applying-font-repository-items%})
+
+* [Color Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%})
+
+* [Loading Predefined Themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
+
+* [Loading themes created with the old VSB]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-themes-created-with-the-old-vsb%})
+
+* [Precedence Example Visibility Property]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property%})
+
+* [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})
+

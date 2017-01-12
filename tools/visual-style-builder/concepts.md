@@ -47,3 +47,13 @@ stateSelector.ChildSelector = New TypeSelector(GetType(FillPrimitive))
 
 Entire theming mechanism is centralized and managed by a new StyleManager class, instantiated per RadControl instance. It is responsible for parsing a StyleSheet instance and mapping it to live elements, depending on the provided selectors. A parallel tree of StyleSheetTreeNode objects is built on top of the associated StyleSheet and each element on the element tree is mapped to such a style node, which provides all the defined visual settings. This approach allows fast and easy re-apply of element’s style, styling and animation suspension as well as straight forward way for retrieving each element’s style-defined property settings on a given element tree.
 
+
+# See Also
+* [Architecture]({%slug winforms/tools/visual-style-builder/architecture%})
+
+* [Getting Started]({%slug winforms/tools/visual-style-builder/getting-started%})
+
+* [Starting VSB]({%slug winforms/tools/visual-style-builder/starting-vsb%})
+
+* [Overview]({%slug winforms/tools/visual-style-builder%})
+

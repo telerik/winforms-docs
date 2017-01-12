@@ -16,3 +16,13 @@ Visual Style Builder can be started from:
 * Start menu (Start >> Programs >> Telerik >> UI for WinForms [version] >> Tools)
 
 * The installation folder (usually C:\Program Files\Telerik\UI for WinForms\Version\bin\VisualStyleBuilder.exe)
+
+# See Also
+* [Architecture]({%slug winforms/tools/visual-style-builder/architecture%})
+
+* [Concepts]({%slug winforms/tools/visual-style-builder/concepts%})
+
+* [Getting Started]({%slug winforms/tools/visual-style-builder/getting-started%})
+
+* [Overview]({%slug winforms/tools/visual-style-builder%})
+

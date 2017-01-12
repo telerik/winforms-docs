@@ -30,3 +30,17 @@ One of the most exciting features of RadCotnrols for WinForms is that their appe
 1. When the dialog opens, navigate the folder you chose in step 2 (i.e. navigate to MyThemesFolder). There you should be able to find all Telerik default themes. Select one of the themes and click Open.
 
     ![tools-visual-style-builder-working-with-visual-style-builder-loading-predefined-themes 004](images/tools-visual-style-builder-working-with-visual-style-builder-loading-predefined-themes004.png)
+
+# See Also
+* [Applying Font repository items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/applying-font-repository-items%})
+
+* [Color Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%})
+
+* [Loading themes created with the old VSB]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-themes-created-with-the-old-vsb%})
+
+* [Precedence Example Visibility Property]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property%})
+
+* [Property Precedence Rules]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules%})
+
+* [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})
+

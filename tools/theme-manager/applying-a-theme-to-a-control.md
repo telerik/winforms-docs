@@ -17,3 +17,14 @@ To apply a custom theme from __[RadThemeManager]({%slug winforms/tools/visual-st
 
 >important If your theme is saved as a package you can use the approach described [here]({%slug winforms/themes/using-custom-themes%}).
 
+
+# See Also
+* [Adding RadThemeManager to a Form]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form%})
+
+* [Add Remove Theme Files]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/editing-themes%})
+
+* [Load Themes from a Resource]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource%})
+
+* [Load Themes from an External File]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-an-external-file%})
+
+

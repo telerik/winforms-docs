@@ -61,3 +61,13 @@ Selection in Control Metadata Tree, Element States and Elements Grid
 completely defines all the conditions needed for an element to be styled. We
 have the selected item, its state and the actual element instance that will
 have the style settings applied. All operations in the Visual Style Builder are related to its current selection path.
+
+# See Also
+* [Concepts]({%slug winforms/tools/visual-style-builder/concepts%})
+
+* [Getting Started]({%slug winforms/tools/visual-style-builder/getting-started%})
+
+* [Starting VSB]({%slug winforms/tools/visual-style-builder/starting-vsb%})
+
+* [Overview]({%slug winforms/tools/visual-style-builder%})
+
