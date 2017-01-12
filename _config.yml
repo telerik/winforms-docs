@@ -239,12 +239,15 @@ navigation:
     datafilter/populating-with-data:
         title: Populating with Data
         position: 4
+    datafilter/working-with-filter-nodes:
+        title: Working with Filter Nodes
+        position: 5		
     datafilter/editing:
         title: Editing
-        position: 5
+        position: 6
     datafilter/localization:
         title: Localization
-        position: 8
+        position: 9
     datalayout:
         title: DataLayout
         position: 170
