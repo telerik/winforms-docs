@@ -11,9 +11,7 @@ previous_url: treeview-touch-support
 
 # Touch Support
 
-
-
-RadTreeView supports both scrolling and dragging operations via touch interface.
+RadTreeView supports both scrolling and dragging operations via touch device.
 
 ## Scrolling
 

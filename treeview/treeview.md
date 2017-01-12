@@ -11,8 +11,6 @@ previous_url: treeview-overview
 
 # TreeView
 
-
-
 Telerik RadTreeView is the supercharged tree view component for Windows Forms. It facilitates display, management, and navigation of hierarchical data structures. The product offers many advanced features like drag-and-drop, load on demand, context menus and data binding. RadTreeView features an extremely rich API, allowing you to achieve complex behavior in your applications. The skinning support nicely blends RadTreeView into the interface of your application.
 
 ## Drag & drop
