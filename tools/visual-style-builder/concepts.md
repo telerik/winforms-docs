@@ -1,7 +1,7 @@
 ---
 title: Concepts
 page_title: Concepts | UI for WinForms Tools
-description: Concepts
+description: Visual Style Builder is an end-user application that allows fast and intuitive styling of all controls in the Windows Forms suite.
 slug: winforms/tools/visual-style-builder/concepts
 tags: concepts
 published: True

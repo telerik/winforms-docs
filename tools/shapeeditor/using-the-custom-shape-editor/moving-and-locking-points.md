@@ -1,7 +1,7 @@
 ---
 title: Moving and Locking Points
 page_title: Moving and Locking Points | UI for WinForms Tools
-description: Moving and Locking Points
+description: This article shows how one can move or lock particular points with RadShapeEditor. 
 slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/moving-and-locking-points
 tags: moving,and,locking,points
 published: True

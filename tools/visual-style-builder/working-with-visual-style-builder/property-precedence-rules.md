@@ -1,7 +1,7 @@
 ---
 title: Property Precedence Rules
 page_title: Property Precedence Rules | UI for WinForms Tools
-description: Property Precedence Rules
+description: This article show the Property Precedence Rules used in Visual Style Builder. 
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules
 tags: property,precedence,rules
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Visual Style Builder | UI for WinForms Tools
-description: VisualStyleBuilder provides the key flexibility behind the Telerik UI for WinForms.
+description: Visual Style Builder is an end-user application that allows fast and intuitive styling of all controls in the Windows Forms suite.
 slug: winforms/tools/visual-style-builder
 tags: visual,style,builder
 published: True

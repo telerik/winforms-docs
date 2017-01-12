@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started | UI for WinForms Tools
-description: Getting Started
+description: Getting Started with RadShapeEditor. This tutorial demonstrates modifying the shape of a RadButton.
 slug: winforms/tools/shapeeditor/getting-started
 tags: getting,started
 published: True
@@ -11,19 +11,13 @@ previous_url: tools-getting-started
 
 # Getting Started
 
-## 
-
 This tutorial demonstrates modifying the shape of a __RadButton__.
-        
 
 1. Select a __RadButton__ control.
           
-
 1. Open the __RadButton Smart Tag__ and select __Edit UI Elements__ which will open the Element Hierarchy Editor.
           
-
 1. Click on the RadButtonElement.
-          
 
 1. Navigate to the __Shape__ property, and then select __Create new custom shape...__ from the drop down list. This step will launch the __Custom Shape Editor__ dialog. 
     ![tools-getting-started 003](images/tools-getting-started003.png)

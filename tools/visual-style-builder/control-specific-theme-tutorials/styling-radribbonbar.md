@@ -1,7 +1,7 @@
 ---
 title: Styling RadRibbonBar
 page_title: Styling RadRibbonBar | UI for WinForms Tools
-description: Styling RadRibbonBar
+description: Create a custom theme for the RadRibbonBar starting from an existing one.
 slug: winforms/tools/visual-style-builder/control-specific-theme-tutorials/styling-radribbonbar
 tags: styling,radribbonbar
 published: True
@@ -11,7 +11,7 @@ previous_url: tools-visual-style-builder-control-specific-theme-tutorials-stylin
 
 # Styling RadRibbonBar
 
-## Creating a custom Theme for the RadRibbonBar starting from an existing one
+## Creating a custom theme for the RadRibbonBar starting from an existing one
 
 After introducing the new Visual Style Builder a lot of our customers asked how to open an existing theme so that it can be modified achieving a new visual style. Indeed, this is the preferred way to create a new theme if you do not want to begin from scratch by creating an entirely new repository and applying the items throughout the controls set.
 
