@@ -40,3 +40,6 @@ End Sub
 {{endregion}}
 
 
+# See Also
+
+* [Inspecting Properties]({%slug winforms/tools/controlspy/inspecting-properties%})

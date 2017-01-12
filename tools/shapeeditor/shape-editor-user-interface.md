@@ -54,3 +54,7 @@ The task pane allows you to perform various actions. The bellow image shows the 
 ![tools-shapeeditor-the-custom-shape-editor-user-interface 006](images/tools-shapeeditor-the-custom-shape-editor-user-interface006.png)
 
 
+# See Also
+
+* [Getting Started]({%slug winforms/tools/shapeeditor/getting-started%})
+ 

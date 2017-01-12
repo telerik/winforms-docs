@@ -22,3 +22,9 @@ The ControlSpy is a tool that lets you examine the detailed internal structure o
 >caption Figure 1: RadControlSpyForm
 
 ![tools-controlspy-overview 002](images/tools-controlspy-overview002.png)
+
+
+# See Also
+
+* [Inspecting Properties]({%slug winforms/tools/controlspy/inspecting-properties%})
+* [ Adding the Control Spy to Your Application]({%slug winforms/tools/controlspy/adding-the-control-spy-to-your-application%})

@@ -22,3 +22,6 @@ Properties can be changed in real time and to control element appearance and beh
 >note Changes you make through the Control Spy will only affect the current running instance of the application. They are not persisted to the application or the application's theme.
 >
 
+# See Also
+ 
+* [ Adding the Control Spy to Your Application]({%slug winforms/tools/controlspy/adding-the-control-spy-to-your-application%})

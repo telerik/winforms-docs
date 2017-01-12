@@ -19,4 +19,7 @@ To add new points, right-click to select the line to which your new point will 
 
 To remove an existing point, right-click to select the point, and then click __Delete__ from the [context menu]({%slug winforms/tools/shapeeditor/shape-editor-user-interface%}). This action will remove the point and the two connecting lines, and will replace them with a new line connecting the points adjacent to the one removed.
 
+# See Also
 
+* [Moving and Locking Points]({%slug winforms/tools/shapeeditor/using-the-custom-shape-editor/moving-and-locking-points%})
+* [Using Bezier Curves]({%slug winforms/tools/shapeeditor/using-the-custom-shape-editor/using-bezier-curves%})

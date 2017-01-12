@@ -50,5 +50,6 @@ This tutorial demonstrates modifying the shape of a __RadButton__.
 
     ![tools-getting-started 004](images/tools-getting-started004.png)
 
- 
-        
+# See Also
+
+* [Shape Editor User Interface]({%slug winforms/tools/shapeeditor/shape-editor-user-interface%})

@@ -24,3 +24,8 @@ Points are the basic unit of functionality in the Shape Editor. Points on the dr
 Setting the locked property of a point to true will prevent you from using the mouse to drag points to new positions. Locking a point will not prevent you from using the Snap to menu or editing the X and Y properties to alter a point's position.
 
 To lock a point, select the point and right-click on it to access the shortcut menu. On the shortcut menu select __Locked__. This action will place a check beside the menu item and lock the point. Click __Locked__ again to unlock the point. You can also select *true* or *false* from the drop-down menu for the __Locked__ property in the [property pane]({%slug winforms/tools/shapeeditor/shape-editor-user-interface%}).
+
+# See Also
+
+* [Adding and Removing Points]({%slug  winforms/tools/shapeeditor/using-the-custom-shape-editor/adding-and-removing-points%})
+* [Using Bezier Curves]({%slug winforms/tools/shapeeditor/using-the-custom-shape-editor/using-bezier-curves%})
