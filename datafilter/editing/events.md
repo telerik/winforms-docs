@@ -22,6 +22,10 @@ The **EditorRequired** event is fired when a specific filter node's element is a
 
 This is the appropriate place to replace the default editor and specify what editor to be used.
 
+## Editing
+
+The RadDataFilter.**Editing** event occurs when initializing the active editor. If the event is canceled, no further action takes place.
+
 ## EditorInitialized
 
 The **EditorInitialized** event is fired when the editor has already been initialized. Here is the appropriate place if you need to customize the editor.
@@ -115,6 +119,10 @@ End Sub
 ```` 
 
 {{endregion}}
+
+## Edited
+
+The RadDataFilter.**Edited** event occurs after the filter node is edited.
 
 # See Also
 
