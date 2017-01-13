@@ -43,7 +43,17 @@ If you change the condition all the filter expressions must be fulfilled. Here i
     ![datafilter-end-user-functionality 005](images/datafilter-end-user-functionality005.png)
 
 
+## Drag and Drop
+
+__RadDataFilter__ natively supports drag and drop allowing the end users to perform easy modifications of the visual tree. The drag and drop operation will also change the control`s expression. 
+
+![datafilter-end-user-functionality 006](images/datafilter-end-user-functionality006.gif)
+
+>note __RadDataFilter__ extends the drag and drop functionality provided by __RadTreeView__. Detailed information on how the drag-drop service is working is available [here]({%slug winforms/treeview/drag-and-drop/modify-the-dragdropservice-behavior%}).
+>
+
 # See Also 
+
 * [Getting Started]({%slug winforms/datafilter/getting-started%})
 
 

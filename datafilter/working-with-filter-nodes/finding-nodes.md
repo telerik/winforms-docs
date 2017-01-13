@@ -36,7 +36,7 @@ Dim groups As RadTreeNode() = Me.radDataFilter1.FindNodes(match)
 
 {{endregion}}
 
-#### Find Criteria Nodes
+#### Find Expression Nodes
 
 {{source=..\SamplesCS\DataFilter\DataFilterWorkingWithNodes.cs region=FindChildren}} 
 {{source=..\SamplesVB\DataFilter\DataFilterWorkingWithNodes.vb region=FindChildren}}
@@ -45,12 +45,12 @@ Predicate<RadTreeNode> match = new Predicate<RadTreeNode>(delegate(RadTreeNode n
 {
     return node is DataFilterCriteriaNode;
 });
-RadTreeNode[] criteriaNodes = this.radDataFilter1.FindNodes(match);
+RadTreeNode[] expressionNodes = this.radDataFilter1.FindNodes(match);
 
 ````
 ````VB.NET
 Dim match As New Predicate(Of RadTreeNode)(Function(node As RadTreeNode) TypeOf node Is DataFilterCriteriaNode)
-Dim criteriaNodes As RadTreeNode() = Me.radDataFilter1.FindNodes(match)
+Dim expressionNodes As RadTreeNode() = Me.radDataFilter1.FindNodes(match)
 
 ````
 
@@ -60,5 +60,8 @@ Dim criteriaNodes As RadTreeNode() = Me.radDataFilter1.FindNodes(match)
 
 # See Also
 
-* [Unbound Mode]({%slug winforms/datafilter/populating-with-data/unbound-mode%})	
 * [Getting Started ]({%slug winforms/datafilter/getting-started%})
+* [Adding and Removing Filter Nodes]({%slug winforms/datafilter/working-with-descriptors/adding-and-removing-descriptors%})
+* [Finding Nodes]({%slug winforms/datafilter/working-with-descriptors/finding-nodes%})
+* [Unbound Mode]({%slug winforms/datafilter/populating-with-data/unbound-mode%})	
+* [Data Binding]({%slug winforms/datafilter/populating-with-data/data-binding%})
