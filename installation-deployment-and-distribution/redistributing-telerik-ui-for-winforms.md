@@ -400,6 +400,10 @@ Telerik.WinControls.UI.dll</td></tr><tr><td>
 
 Telerik.WinControls.RadChart.dll</td></tr><tr><td>
 
+<b>RadDataFilter</b></td><td>
+
+Telerik.WinControls.UI.dll</td></tr><tr><td>
+
 <b>RadDateTimePicker</b></td><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>

@@ -132,6 +132,10 @@ Telerik.WinControls.UI.dll</td></tr><tr><td>
 
 Telerik.WinControls.RadChart.dll</td></tr><tr><td>
 
+<b>RadDataFilter</b></td><td>
+
+Telerik.WinControls.UI.dll</td></tr><tr><td>
+
 <b>RadDateTimePicker</b></td><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>
@@ -488,11 +492,11 @@ Telerik.WinControls.Themes.VisualStudio2012Light.dll</td></tr><tr><td>
 
 Telerik.WinControls.Themes.Windows8.dll</td></tr>
 
-<tr><td>RadToggleSwitch</td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td>RadLayoutControl</td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td>RadPopupEditor</td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td>RadDataLayout</td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td>RadVirtualGrid</td><td>Telerik.WinControls.GridView.dll</td></tr>
+<tr><td><b>RadToggleSwitch</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadLayoutControl</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadPopupEditor</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadDataLayout</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadVirtualGrid</b></td><td>Telerik.WinControls.GridView.dll</td></tr>
 
 <tr><td><b>RadPanorama</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadBrowseEditor</b></td><td>Telerik.WinControls.UI.dll</td></tr>
