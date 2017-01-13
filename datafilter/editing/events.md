@@ -42,6 +42,7 @@ The following code snippet demonstrates how to replace the default editor with a
 {{source=..\SamplesVB\DataFilter\DataFilterEditing.vb region=CustomizeEditor}}
 
 ````C#
+        
 public DataFilterEditing()
 {
     InitializeComponent();
@@ -49,7 +50,7 @@ public DataFilterEditing()
     this.radDataFilter1.EditorRequired += radDataFilter1_EditorRequired;
     this.radDataFilter1.EditorInitialized += radDataFilter1_EditorInitialized;
 }
-
+        
 private void radDataFilter1_EditorInitialized(object sender, TreeNodeEditorInitializedEventArgs e)
 {
     TreeViewDropDownListEditor editor = e.Editor as TreeViewDropDownListEditor;
@@ -61,7 +62,7 @@ private void radDataFilter1_EditorInitialized(object sender, TreeNodeEditorIniti
         el.AutoCompleteMode = AutoCompleteMode.Suggest;
     }
 }
-
+        
 private void radDataFilter1_EditorRequired(object sender, TreeNodeEditorRequiredEventArgs e)
 {
     DataFilterCriteriaNode filterNode = e.Node as DataFilterCriteriaNode;
@@ -89,7 +90,6 @@ Public Sub New()
     AddHandler Me.RadDataFilter1.EditorRequired, AddressOf radDataFilter1_EditorRequired
     AddHandler Me.RadDataFilter1.EditorInitialized, AddressOf radDataFilter1_EditorInitialized
 End Sub
-
 Private Sub radDataFilter1_EditorInitialized(sender As Object, e As TreeNodeEditorInitializedEventArgs)
     Dim editor As TreeViewDropDownListEditor = TryCast(e.Editor, TreeViewDropDownListEditor)
     If editor IsNot Nothing Then
@@ -99,7 +99,6 @@ Private Sub radDataFilter1_EditorInitialized(sender As Object, e As TreeNodeEdit
         el.AutoCompleteMode = AutoCompleteMode.Suggest
     End If
 End Sub
-
 Private Sub radDataFilter1_EditorRequired(sender As Object, e As TreeNodeEditorRequiredEventArgs)
     Dim filterNode As DataFilterCriteriaNode = TryCast(e.Node, DataFilterCriteriaNode)
     If filterNode IsNot Nothing AndAlso filterNode.PropertyName = "CategoryID" Then
@@ -110,7 +109,6 @@ Private Sub radDataFilter1_EditorRequired(sender As Object, e As TreeNodeEditorR
             el.DataSource = Me.CategoriesBindingSource
             el.ValueMember = "CategoryID"
             el.DisplayMember = "CategoryName"
-
             e.Editor = editor
         End If
     End If

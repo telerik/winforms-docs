@@ -28,11 +28,11 @@ You can add/remove/modify **DataFilterDescriptorItems** by the *RadItem Collecti
 DataFilterDescriptorItem nameDescriptorItem = new DataFilterDescriptorItem();
 nameDescriptorItem.DescriptorName = "ProductName";
 nameDescriptorItem.DescriptorType = typeof(string);
-this.radDataFilter1.Desciriptors.Add(nameDescriptorItem);
+this.radDataFilter1.Descriptors.Add(nameDescriptorItem);
 DataFilterDescriptorItem priceDescriptorItem = new DataFilterDescriptorItem();
 priceDescriptorItem.DescriptorName = "UnitPrice";
 priceDescriptorItem.DescriptorType = typeof(decimal);
-this.radDataFilter1.Desciriptors.Add(priceDescriptorItem);
+this.radDataFilter1.Descriptors.Add(priceDescriptorItem);
 this.radDataFilter1.Expression = "([ProductName] LIKE '%ch%' OR [UnitPrice] > '15')";
 
 ````
@@ -40,11 +40,11 @@ this.radDataFilter1.Expression = "([ProductName] LIKE '%ch%' OR [UnitPrice] > '1
 Dim nameDescriptorItem As New DataFilterDescriptorItem()
 nameDescriptorItem.DescriptorName = "ProductName"
 nameDescriptorItem.DescriptorType = GetType(String)
-Me.RadDataFilter1.Desciriptors.Add(nameDescriptorItem)
+Me.RadDataFilter1.Descriptors.Add(nameDescriptorItem)
 Dim priceDescriptorItem As New DataFilterDescriptorItem()
 priceDescriptorItem.DescriptorName = "UnitPrice"
 priceDescriptorItem.DescriptorType = GetType(Decimal)
-Me.RadDataFilter1.Desciriptors.Add(priceDescriptorItem)
+Me.RadDataFilter1.Descriptors.Add(priceDescriptorItem)
 Me.RadDataFilter1.Expression = "([ProductName] LIKE '%ch%' OR [UnitPrice] > '15')"
 
 ```` 
