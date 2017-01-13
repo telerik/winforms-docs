@@ -10,11 +10,10 @@ position: 1
 
 # Structure
 
-RadDataFilter contains two types of items:
+**RadDataFilter** contains two types of items:
 
 * __Group:__ This item can contain other groups or expression items and sets the relation between them. 
 * __Expression:__ defines a single field filter criteria and can be added only to group nodes.
-
 
 >caption Figure 1: RadDataFilter structure
 
@@ -35,3 +34,9 @@ RadDataFilter contains two types of items:
 >caption Figure 2: The Element structure of RadDataFilter
 
 ![data-filter-structure 002](images/data-filter-structure002.png)
+
+
+# See Also
+
+* [Design Time]({%slug winforms/datafilter/design-time%})	
+* [Getting Started]({%slug winforms/datafilter/getting-started%})	

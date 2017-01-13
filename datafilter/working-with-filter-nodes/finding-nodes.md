@@ -12,7 +12,7 @@ position: 1
 
 __RadDataFilter__ exposes a convenient __Find__ and __FindNodes__ method accepting predicates to search for the tree nodes based on a condition.
 
-The examples below demonstrate how a all of the group and criteria nodes can be retrieved.   
+The examples below demonstrate how all of the group and criteria nodes can be retrieved.   
 
 #### Find Group Nodes
 

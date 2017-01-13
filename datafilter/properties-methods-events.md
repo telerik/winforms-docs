@@ -35,6 +35,19 @@ position: 7
 |----|----|
 |**ApplyFilter**|Forces the filter to be applied to the source collection.|
 
+# RadDataFilterElement's Methods
+
+|Method|Description|
+|----|----|
+|**AddChildNodes**|Adds a filter condition with the specified **FilterDescriptor** and node.|
+|**RemoveChildNode(RadTreeNode nodeToRemove)**|Removes the specified node.|
+|**RemoveChildNode(RadTreeNode node, RadTreeNode childNode)**|Removes the specified node by the given parent node.|
+|**ClearChildNodes**|Clears the filter nodes.|
+|**ValidateAddNewNode**|Returns whether it is possible to add new filter nodes.|
+|**GetFieldNames**|Returns a collection of the field names.|
+|**GetEditorType(Type valueType)**|Returns the relevant editor by the specified type.|
+|**GetFieldType(string propertyName)**|Returns the relevant editor for the specified field.|
+
 # Events
 
 |Event|Description|
@@ -44,7 +57,13 @@ position: 7
 |**EditorInitialized**|Fires when the editor has already been initialized. Here is the appropriate place if you need to customize the editor.|
 |**Edited**|Occurs after the filter node is edited.|
 |**NodeFormatting**|Occurs when the filter node changes its state and needs to be formatted.|
+|**NodeAdded**|Occurs when a filter node is added.|
+|**NodeAdding**|Occurs when a filter node is adding. It is cancelable.|
+|**NodeRemoved**|Occurs when a filter node is removed.|
+|**NodeRemoving**|Occurs when a filter node is being removed. It is cancelable.|
 
+
+>note Note that **RadDataFilter** is a derivative of **RadTreeView**. Properties, methods and events relevant for **RadTreeView** can be used in **RadDataFilter** as well.
 
 # See Also
 

@@ -10,11 +10,11 @@ position: 1
 
 # Events
 
-**RadDataFilter** provides two events for controlling the editing behavior. 
+**RadDataFilter** provides several events for controlling the editing behavior. 
 
 ## EditorRequired
 
-The **EditorRequired** event is fired when a specific filter node's element is about to be edited. In the **TreeNodeEditorRequiredEventArgs** you have information for the **EditorType** and the **Node** to be affected. The **Node** can be one of the following elements:
+The **EditorRequired** event is fired when a specific filter node's element is about to be edited and an editor is required. In the **TreeNodeEditorRequiredEventArgs** you have information for the **EditorType** and the **Node** to be affected. The **Node** can be one of the following elements:
 
 * **DataFilterCriteriaNode**: represents a simple filter condition.
 * **DataFilterGroupNode**: represents a composite filter condition composed of several simple conditions.
