@@ -107,11 +107,11 @@ A filter expression can be set depending on the available in the __Descriptors__
 {{source=..\SamplesCS\DataFilter\DataFilterWorkingWithNodes.cs region=SetExpression}} 
 {{source=..\SamplesVB\DataFilter\DataFilterWorkingWithNodes.vb region=SetExpression}}
 ````C#
-this.radDataFilter1.Expression = "([Name] LIKE '%jo%' OR [Id] > '10') AND [BirthDay] > '2005/01/01'";
+this.radDataFilter1.Expression = "([Name] LIKE '%jo%' OR [Id] > '15') AND [BirthDay] > '2005/01/01'";
 
 ````
 ````VB.NET
-Me.radDataFilter1.Expression = "([Name] LIKE '%jo%' OR [Id] > '10') AND [BirthDay] > '2005/01/01'"
+Me.radDataFilter1.Expression = "([Name] LIKE '%jo%' OR [Id] > '15') AND [BirthDay] > '2005/01/01'"
 
 ````
 
@@ -168,7 +168,7 @@ Dim childFilter1 As New FilterDescriptor() With {
 Dim childFilter2 As New FilterDescriptor() With {
      .PropertyName = "Id",
      .[Operator] = FilterOperator.IsGreaterThan,
-     .Value = 10
+     .Value = 15
 }
 compositeFilter.FilterDescriptors.AddRange(New FilterDescriptor() {childFilter1, childFilter2})
 Dim filter As New FilterDescriptor() With {
