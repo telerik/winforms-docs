@@ -12,7 +12,7 @@ position: 3
 
 __RadDataFilter__ is a virtualized control reusing its visual elements. It exposes a __NodeFormatting__ event with which its nodes can be easily accessed and customized. The arguments of this event also return the associated data node providing information about the applied descriptor.
 
->note The UI of RadDataFilter is virtualized and its visual elements are reused. An '*else*' clause is needed clause for each '*if*' statement in the implementation of the NodeFormatting event. Skipping this operation will lead to an incorrect styling.
+>note The UI of __RadDataFilter__ is virtualized and its visual elements are reused. An '*else*' clause is needed for each '*if*' statement in the implementation of the __NodeFormatting__ event. Skipping this operation will lead to an incorrect styling.
 >
 
 ## Formatting Group Nodes
