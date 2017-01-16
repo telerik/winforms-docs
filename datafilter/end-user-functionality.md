@@ -10,7 +10,7 @@ position: 8
 
 # End-user Functionality
 
-__RadDataFilter__ allows you to create complex filter criteria within unlimited number of filter conditions combined by logical operators. The following article will show you how to create filter expressions. Start with the first section which shows how you can add filter conditions. The second section explains how you can combine the conditions.
+__RadDataFilter__ allows you to create complex filter criteria with unlimited number of filter conditions combined by logical operators. The following article will show you how to create filter expressions. Start with the first section which shows how you can add filter conditions. The second section explains how you can combine the conditions.
 
 ## Adding Expressions
 
