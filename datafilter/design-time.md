@@ -14,13 +14,13 @@ To start using **RadDataFilter** just drag it from the toolbox and drop it at th
  
 ## Smart Tag
 
-Select **RadDataFilter** and click the small arrow on the top right position in order to open the __Smart Tag__. The __Smart Tag__ for **RadDataFilter** lets you quickly access common tasks involved with building **RadDataFilter** elements and customizing appearance through themes.
+Select **RadDataFilter** and click the small arrow on the top right position in order to open the __Smart Tag__. The __Smart Tag__ for **RadDataFilter** lets you quickly access common tasks involved with accessing **RadDataFilter** elements and customizing appearance through applying different themes.
 
 >caption Figure 1: Smart Tag
 
 ![datafilter-design-time 001](images/datafilter-design-time001.png)
 
-* __New Theme Manager__: adds a new __RadThemeManager__ component to the form.
+* __New Theme Manager__: adds a new [RadThemeManager]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form%}) component to the form.
             
 * __Edit UI Elements__: allows setting properties at multiple levels of the class hierarchy.
             
@@ -38,7 +38,7 @@ Select **RadDataFilter** and click the small arrow on the top right position in 
            
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 
-* __Search__: Search the Telerik site for a given string.    
+* __Search__: Search in the forum for a given string.    
 
 ## Adding DataFilterDescriptorItems
 
@@ -52,7 +52,7 @@ The *RadItem Collection Editor* can be shown either via the **Smart Tag** or by 
 
 ![datafilter-design-time 003](images/datafilter-design-time003.png) 
 
-After you already have some **DataFilterDescriptorItems**, you can add a *Group* or an *Expression* for composing the desired filters by the *RadDataFilter Design Time Editor*. The logical operation is controlled by the *Any* or *All* root node.
+After you already have some **DataFilterDescriptorItems**, you can add a *Group* or an *Expression* for composing the desired filters via the *RadDataFilter Design Time Editor*. The logical operation is controlled by the *Any* or *All* root node.
 
 >caption Figure 5: Applied filters
 

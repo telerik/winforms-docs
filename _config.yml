@@ -236,8 +236,8 @@ navigation:
     datafilter:
         title: DataFilter
         position: 161
-    datafilter/populating-with-data:
-        title: Populating with Data
+    datafilter/working-with-descriptor-items:
+        title: Working with Descriptor Items
         position: 4
     datafilter/working-with-filter-nodes:
         title: Working with Filter Nodes

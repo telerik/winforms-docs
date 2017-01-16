@@ -10,7 +10,7 @@ position: 1
 
 # Data Binding
 
-**RadDataFilter** allows you to populate automatically the descriptor items by specifying the **DataSource** property. It accepts **DataTable**, **DataSet** and **BindingSource**.
+**RadDataFilter** will read the properties of its **DataSource** and will automatically create the corresponding descriptor items for each of them. It accepts **DataTable**, **DataSet** and **BindingSource**.
 
 ## Design Time
 
