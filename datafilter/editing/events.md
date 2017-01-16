@@ -14,11 +14,20 @@ position: 1
 
 ## EditorRequired
 
-The **EditorRequired** event is fired when a specific filter node's element is about to be edited and an editor is required. In the **TreeNodeEditorRequiredEventArgs** you have information for the **EditorType** and the **Node** to be affected. The **Node** can be one of the following elements:
+The **EditorRequired** event is fired when a specific filter node's element is about to be edited and an editor is required. In the **TreeNodeEditorRequiredEventArgs** you have information for the **EditorType** and the **Node** to be affected. 
+
+The **Node** can be one of the following elements:
 
 * **DataFilterCriteriaNode**: represents a simple filter condition.
 * **DataFilterGroupNode**: represents a composite filter condition composed of several simple conditions.
 * **DataFilterRootNode**: represents the root filter node in **RadDataFilter**.
+
+The **sender** in the **EditorRequired** event can be one of the following elements in order to distinguish for which element the editor is required:
+
+* **DataFilterFieldEditorElement**: represents the field name element.
+* **DataFilterOperatorEditorElement**: represents the operator element.
+* **DataFilterValueEditorElement**: represents the value element. 
+* **DataFilterLogicalOperatorEditorElement**: represents the logical operator element.
 
 This is the appropriate place to replace the default editor and specify what editor to be used.
 
@@ -66,19 +75,15 @@ private void radDataFilter1_EditorInitialized(object sender, TreeNodeEditorIniti
 private void radDataFilter1_EditorRequired(object sender, TreeNodeEditorRequiredEventArgs e)
 {
     DataFilterCriteriaNode filterNode = e.Node as DataFilterCriteriaNode;
-    if (filterNode != null && filterNode.PropertyName == "CategoryID")
+    if (filterNode != null && filterNode.PropertyName == "CategoryID" && sender is DataFilterValueEditorElement)
     {
-        DataFilterCriteriaElement nodeElement = e.TreeElement.GetElement(e.Node) as DataFilterCriteriaElement;
-        if (nodeElement.EditingElement == nodeElement.ValueElement)
-        {
-            TreeViewDropDownListEditor editor = new TreeViewDropDownListEditor();
-            BaseDropDownListEditorElement el = editor.EditorElement as BaseDropDownListEditorElement;
-            el.DataSource = this.categoriesBindingSource;
-            el.ValueMember = "CategoryID";
-            el.DisplayMember = "CategoryName";
-            
-            e.Editor = editor;
-        }
+        TreeViewDropDownListEditor editor = new TreeViewDropDownListEditor();
+        BaseDropDownListEditorElement el = editor.EditorElement as BaseDropDownListEditorElement;
+        el.DataSource = this.categoriesBindingSource;
+        el.ValueMember = "CategoryID";
+        el.DisplayMember = "CategoryName";
+
+        e.Editor = editor;
     }
 }
 
@@ -101,16 +106,14 @@ Private Sub radDataFilter1_EditorInitialized(sender As Object, e As TreeNodeEdit
 End Sub
 Private Sub radDataFilter1_EditorRequired(sender As Object, e As TreeNodeEditorRequiredEventArgs)
     Dim filterNode As DataFilterCriteriaNode = TryCast(e.Node, DataFilterCriteriaNode)
-    If filterNode IsNot Nothing AndAlso filterNode.PropertyName = "CategoryID" Then
-        Dim nodeElement As DataFilterCriteriaElement = TryCast(e.TreeElement.GetElement(e.Node), DataFilterCriteriaElement)
-        If nodeElement.EditingElement.Equals(nodeElement.ValueElement) Then
-            Dim editor As New TreeViewDropDownListEditor()
-            Dim el As BaseDropDownListEditorElement = TryCast(editor.EditorElement, BaseDropDownListEditorElement)
-            el.DataSource = Me.CategoriesBindingSource
-            el.ValueMember = "CategoryID"
-            el.DisplayMember = "CategoryName"
-            e.Editor = editor
-        End If
+    If filterNode IsNot Nothing AndAlso filterNode.PropertyName = "CategoryID" AndAlso TypeOf sender Is DataFilterValueEditorElement Then
+        Dim editor As New TreeViewDropDownListEditor()
+        Dim el As BaseDropDownListEditorElement = TryCast(editor.EditorElement, BaseDropDownListEditorElement)
+        el.DataSource = Me.categoriesBindingSource
+        el.ValueMember = "CategoryID"
+        el.DisplayMember = "CategoryName"
+
+        e.Editor = editor
     End If
 End Sub
 

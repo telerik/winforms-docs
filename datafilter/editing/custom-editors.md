@@ -48,13 +48,9 @@ private void radDataFilter1_EditorInitialized(object sender, TreeNodeEditorIniti
 private void radDataFilter1_EditorRequired(object sender, TreeNodeEditorRequiredEventArgs e)
 {
     DataFilterCriteriaNode filterNode = e.Node as DataFilterCriteriaNode;
-    if (filterNode != null && filterNode.PropertyName == "ProductID")
+    if (filterNode != null && filterNode.PropertyName == "ProductID" && sender is DataFilterValueEditorElement)
     {
-        DataFilterCriteriaElement nodeElement = e.TreeElement.GetElement(e.Node) as DataFilterCriteriaElement;
-        if (nodeElement.EditingElement == nodeElement.ValueElement)
-        {
-            e.EditorType = typeof(TrackBarEditor);
-        }
+        e.EditorType = typeof(TrackBarEditor);
     }
 }
         
@@ -131,13 +127,10 @@ Private Sub radDataFilter1_EditorInitialized(sender As Object, e As TreeNodeEdit
     End If
 End Sub
 Private Sub radDataFilter1_EditorRequired(sender As Object, e As TreeNodeEditorRequiredEventArgs)
-    Dim filterNode As DataFilterCriteriaNode = TryCast(e.Node, DataFilterCriteriaNode)
-    If filterNode IsNot Nothing AndAlso filterNode.PropertyName = "ProductID" Then
-        Dim nodeElement As DataFilterCriteriaElement = TryCast(e.TreeElement.GetElement(e.Node), DataFilterCriteriaElement)
-        If nodeElement.EditingElement.Equals(nodeElement.ValueElement) Then
-            e.EditorType = GetType(TrackBarEditor)
-        End If
-    End If
+	Dim filterNode As DataFilterCriteriaNode = TryCast(e.Node, DataFilterCriteriaNode)
+	If filterNode IsNot Nothing AndAlso filterNode.PropertyName = "ProductID" AndAlso TypeOf sender Is DataFilterValueEditorElement Then
+		e.EditorType = GetType(TrackBarEditor)
+	End If
 End Sub
 Public Class TrackBarEditor
 Inherits BaseInputEditor
