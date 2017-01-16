@@ -24,7 +24,6 @@ All editors inherit from **BaseInputEditor**. So, you have to inherit from this 
 {{source=..\SamplesVB\DataFilter\DataFilterCustomEditor.vb region=CustomEditor}}
 
 ````C#
-        
 public DataFilterCustomEditor()
 {
     InitializeComponent();
@@ -33,7 +32,6 @@ public DataFilterCustomEditor()
     this.radDataFilter1.EditorInitialized += radDataFilter1_EditorInitialized;
     this.radDataFilter1.ItemHeight = 40;
 }
-        
 private void radDataFilter1_EditorInitialized(object sender, TreeNodeEditorInitializedEventArgs e)
 {
     TrackBarEditor editor = e.Editor as TrackBarEditor;
@@ -44,7 +42,6 @@ private void radDataFilter1_EditorInitialized(object sender, TreeNodeEditorIniti
         element.Maximum = 10;
     }
 }
-        
 private void radDataFilter1_EditorRequired(object sender, TreeNodeEditorRequiredEventArgs e)
 {
     DataFilterCriteriaNode filterNode = e.Node as DataFilterCriteriaNode;
@@ -53,7 +50,6 @@ private void radDataFilter1_EditorRequired(object sender, TreeNodeEditorRequired
         e.EditorType = typeof(TrackBarEditor);
     }
 }
-        
 public class TrackBarEditor : BaseInputEditor
 {
     public override object Value
@@ -76,30 +72,25 @@ public class TrackBarEditor : BaseInputEditor
             }
         }
     }
-    
     public override void BeginEdit()
     {
         base.BeginEdit();
         this.EditorElement.Focus();
         ((RadTrackBarElement)this.EditorElement).ValueChanged += new EventHandler(TrackBarEditor_ValueChanged);
     }
-    
     void TrackBarEditor_ValueChanged(object sender, EventArgs e)
     {
         this.OnValueChanged();
     }
-    
     public override bool EndEdit()
     {
         ((RadTrackBarElement)this.EditorElement).ValueChanged -= TrackBarEditor_ValueChanged;
         return base.EndEdit();
     }
-    
     protected override Telerik.WinControls.RadElement CreateEditorElement()
     {
         return new RadTrackBarElement();
     }
-    
     public override Type DataType
     {
         get
@@ -127,10 +118,10 @@ Private Sub radDataFilter1_EditorInitialized(sender As Object, e As TreeNodeEdit
     End If
 End Sub
 Private Sub radDataFilter1_EditorRequired(sender As Object, e As TreeNodeEditorRequiredEventArgs)
-	Dim filterNode As DataFilterCriteriaNode = TryCast(e.Node, DataFilterCriteriaNode)
-	If filterNode IsNot Nothing AndAlso filterNode.PropertyName = "ProductID" AndAlso TypeOf sender Is DataFilterValueEditorElement Then
-		e.EditorType = GetType(TrackBarEditor)
-	End If
+    Dim filterNode As DataFilterCriteriaNode = TryCast(e.Node, DataFilterCriteriaNode)
+    If filterNode IsNot Nothing AndAlso filterNode.PropertyName = "ProductID" AndAlso TypeOf sender Is DataFilterValueEditorElement Then
+        e.EditorType = GetType(TrackBarEditor)
+    End If
 End Sub
 Public Class TrackBarEditor
 Inherits BaseInputEditor
