@@ -1,7 +1,7 @@
 ---
 title: Upgrading to RadRichTextEditor
 page_title: Upgrading to RadRichTextEditor | UI for WinForms Documentation
-description: Upgrading to RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor-/upgrading-to-radrichtexteditor
 tags: upgrading,to,radrichtexteditor
 published: True
@@ -10,19 +10,14 @@ previous_url: richtexteditor-converting-from-radrichtextbox
 ---
 
 # Upgrading to RadRichTextEditor
-
-
-
-This article explains you can convert your applications that use the RadRichTextBox to use the new and improved __RadRichTextEditor__.
+ 
+This article explains how to convert your applications that use **RadRichTextBox** to use the new and improved __RadRichTextEditor__.
       
-
 ## Converting to RadRichTextEditor
 
-In order to convert the RadRichTextBox to __RadRichTextEditor__ you should take the following steps:     
+In order to convert **RadRichTextBox** to __RadRichTextEditor__ you should take the following steps:
         
-
-1\. Remove the references to *Telerik.WinControls.RichTextBox.dll* and then add the one for the new control: 
-            *Telerik.WinControls.RichTextEditor.dll*
+1\. Remove the references to *Telerik.WinControls.RichTextBox.dll* and then add the one for the new control: *Telerik.WinControls.RichTextEditor.dll*
 
 2\. Replace the __RadRichTextBox__ type with __RadRichTextEditor__ (you can change the name as well)
 
@@ -46,22 +41,18 @@ Private radRichTextEditor1 As New RadRichTextEditor()
 
 {{endregion}} 
 
-
-3\. __RadRichTextEditor__ supports all features that are supported in the RadRichTextBox (and much more), however some of them  may not be at the same place and some compile time errors may occur. The final step is to fix these errors, it can be achieved by  finding the new equivalents of the missing properties and method and replacing them. Should you have any issues finding a property or a method, feel free to submit a support ticket and we will help you find it.
+3\. __RadRichTextEditor__ supports all features that are supported by the **RadRichTextBox** (and much more). However, some of them  may not be at the same place and some compile time errors may occur. The final step is to fix these errors, it can be achieved by finding the new equivalents of the missing properties and methods and replacing them. Should you have any issues finding a property or a method, feel free to submit a support ticket and we will gladly assist you.
 
 >important  __RadRichTextEditor__ example provides you with a ribbon UI that can be easily used if you need a fully functional text editor.  Detailed information is available [here]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}).
 >
 
-
 ## Common conversion issues
 
-* __ChangeFontFamily__ method now takes *Telerik.WinControls.RichTextEditor.UI.FontFamily* as argument.
+* __ChangeFontFamily__ method now takes *Telerik.WinControls.RichTextEditor.UI.FontFamily* as an argument.
 
-* The __ChangeSectionMargin__ method is renamed to __ChangeSectionPageMargin__.
-            
+* The __ChangeSectionMargin__ method is renamed to __ChangeSectionPageMargin__.        
 
-* The __ChangePageSize__ method is renamed to __ChangeSectionPageSize__.
-            
+* The __ChangePageSize__ method is renamed to __ChangeSectionPageSize__.       
 
 * The __ShowInsertHyperlinkDialog__ method is moved to the control and now it can be used like this:
 
@@ -88,11 +79,11 @@ radRichTextEditor1.ShowInsertHyperlinkDialog()
 
 ````C#
             
-radRichTextEditor1.ShowInsertHyperlinkDialog();
+radRichTextEditor1.ShowManageBookmarksDialog();
 
 ````
 ````VB.NET
-radRichTextEditor1.ShowInsertHyperlinkDialog()
+radRichTextEditor1.ShowManageBookmarksDialog()
 
 ````
 
@@ -117,7 +108,7 @@ radRichTextEditor1.InsertImage(stream, extension)
 {{endregion}} 
 
 
-* Now you can insert table by using the built-in dialog rather than using InsertTableForm:
+* Now you can insert table by using the built-in dialog rather than using **InsertTableForm**:
 
 {{source=..\SamplesCS\RichTextEditor\ConvertToRadRichTextEditor.cs region=insertTable}} 
 {{source=..\SamplesVB\RichTextEditor\ConvertToRadRichTextEditor.vb region=insertTable}} 
