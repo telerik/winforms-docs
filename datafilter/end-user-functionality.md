@@ -5,7 +5,7 @@ description: This article shows how the end user can create filter expressions u
 slug: winforms/datafilter/end-user-functionality
 tags: data, filter
 published: True
-position: 8
+position: 9
 ---
 
 # End-user Functionality

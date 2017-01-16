@@ -5,7 +5,7 @@ description: This article show what RadDataFilter represents and its key feature
 slug: winforms/datafilter/overview
 tags: data, filter
 published: True
-position: 4
+position: 5
 ---
 
 # DataFilter Dialog

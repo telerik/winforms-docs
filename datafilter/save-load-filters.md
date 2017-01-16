@@ -5,7 +5,7 @@ description: This article shows how you can save or load the expression that you
 slug: winforms/datafilter/save-load-filters
 tags: data, filter, save, load
 published: True
-position: 9
+position: 11
 ---
 
 # Serialize/Deserialize Filters

@@ -5,7 +5,7 @@ description: This article show what RadDataFilter represents and its key feature
 slug: winforms/datafilter/properties-methods-events
 tags: data, filter
 published: True
-position: 7
+position: 8
 ---
 
 # Properties
