@@ -51,7 +51,6 @@ The following code snippet demonstrates how to replace the default editor with a
 {{source=..\SamplesVB\DataFilter\DataFilterEditing.vb region=CustomizeEditor}}
 
 ````C#
-        
 public DataFilterEditing()
 {
     InitializeComponent();
@@ -59,7 +58,6 @@ public DataFilterEditing()
     this.radDataFilter1.EditorRequired += radDataFilter1_EditorRequired;
     this.radDataFilter1.EditorInitialized += radDataFilter1_EditorInitialized;
 }
-        
 private void radDataFilter1_EditorInitialized(object sender, TreeNodeEditorInitializedEventArgs e)
 {
     TreeViewDropDownListEditor editor = e.Editor as TreeViewDropDownListEditor;
@@ -71,7 +69,6 @@ private void radDataFilter1_EditorInitialized(object sender, TreeNodeEditorIniti
         el.AutoCompleteMode = AutoCompleteMode.Suggest;
     }
 }
-        
 private void radDataFilter1_EditorRequired(object sender, TreeNodeEditorRequiredEventArgs e)
 {
     DataFilterCriteriaNode filterNode = e.Node as DataFilterCriteriaNode;
@@ -82,7 +79,6 @@ private void radDataFilter1_EditorRequired(object sender, TreeNodeEditorRequired
         el.DataSource = this.categoriesBindingSource;
         el.ValueMember = "CategoryID";
         el.DisplayMember = "CategoryName";
-
         e.Editor = editor;
     }
 }
@@ -112,7 +108,6 @@ Private Sub radDataFilter1_EditorRequired(sender As Object, e As TreeNodeEditorR
         el.DataSource = Me.categoriesBindingSource
         el.ValueMember = "CategoryID"
         el.DisplayMember = "CategoryName"
-
         e.Editor = editor
     End If
 End Sub
