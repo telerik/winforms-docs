@@ -11,7 +11,6 @@ previous_url: treeview-data-binding-serialize-deserialize-to-xml
 
 # Serialize/Deserialize to XML
 
-
 RadTreeView methods __LoadXML()__ and __SaveXML()__ serialize the contents and state of the entire RadTreeView and its nodes. These methods can be useful when you want to save the data locally and without needing to connect to a database for binding.
 
 ````xml

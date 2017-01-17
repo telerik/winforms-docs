@@ -11,24 +11,20 @@ previous_url: treeview-data-binding-load-on-demand
 
 # Load On Demand
 
-
-
-## 
-
-The Load On Demand feature helps reduce performance and memory costs incurred when all nodes are loaded at one time. To benefit from this feature, you just need to handle the __NodesNeeded__ event where you can fill the parent nodes with subnodes.
+The Load On Demand feature helps reduce performance and memory costs incurred when all nodes are loaded at once. To benefit from this feature, you just need to handle the __NodesNeeded__ event where you can fill the parent nodes with sub-nodes.
           
 RadTreeView supports two modes of lazy loading nodes:
 
-* Full lazy mode. In this mode, the NodesNeeded event is fired when you try to expand a node. Before expanding a node, RadTreeView is not aware whether this node has children or not. Therefore, you get expander signs for all nodes, regardless of whether these nodes will provide data when the end-user will try to expand them. To enable this feature, you should set the __LazyMode__ to *true*.
+* __Full lazy mode:__ In this mode, the __NodesNeeded__ event is fired when you try to expand a node. Before expanding a node, RadTreeView is not aware whether this node has children or not. Therefore, you get expander signs for all nodes, regardless of whether these nodes will provide data when the end-user will try to expand them. To enable this feature, you should set the __LazyMode__ to *true*.
             
 
-* Partial lazy mode. This is the default mode of RadTreeView. In this mode the NodesNeeded event is fired for all directly accessible nodes without any action required from the end-user. When the end-user expands a node, the NodesNeeded event is fired for the subnodes of this node. In short you are filling the first sub-level of a parent node in advance. Because of that, the parent nodes are aware of whether they have child nodes or not, and as a result, RadTreeView can determine whether an explander sign is required or not. To enable this feature, you should set the __LazyMode__ property to *false* (this is the default value).
+* __Partial lazy mode:__ This is the default mode of RadTreeView. In this mode the NodesNeeded event is fired for all directly accessible nodes without any action required from the end-user. When the end-user expands a node, the NodesNeeded event is fired for the sub-nodes of this node. In short you are filling the first sub-level of a parent node in advance. Because of that, the parent nodes are aware of whether they have child nodes or not, and as a result, RadTreeView can determine whether an expander sign is required or not. To enable this feature, you should set the __LazyMode__ property to *false* (this is the default value).
             
 
-The event arguments of the NodesNeeded event contain the __Parent__ node that you are trying to expand and the __Nodes__ collection that you should fill with subnodes. The code snippet below demonstrates how you can handle the NodesNeeded event and load 5 nodes to any expanded node, except to the child nodes of the root node. We will add sub-nodes only to some of the nodes at the first level. This will allow you to see the difference between the full and the partial lazy modes.
+The event arguments of the __NodesNeeded__ event contain the __Parent__ node that you are trying to expand and the __Nodes__ collection that you should fill with sub-nodes. The code snippet below demonstrates how you can handle the __NodesNeeded__ event and load 5 nodes to any expanded node, except to the child nodes of the root node. We will add sub-nodes only to some of the nodes at the first level. This will allow you to see the difference between the full and the partial lazy modes.
         
 
->warning Please note that the BeginUpdate/EndUpdate functions that are used to improve the performance in other scenarios should not be used in Load on demand scenario, since it might lead to undesirable consequences. The reason for this is that during the NodesNeeded event we are loading nodes for a certain parent and calling the EndUpdate method will force the tree to start over, while the nodes loading is not yet finished. This might lead to undesired infinite recursion.
+>warning Please note that the BeginUpdate/EndUpdate functions that are used to improve the performance in other scenarios should not be used in load on demand scenario, since it might lead to undesirable consequences. The reason for this is that during the NodesNeeded event we are loading nodes for a certain parent and calling the EndUpdate method will force the tree to start over, while the nodes loading is not yet finished. This might lead to undesired infinite recursion.
 >
 
 Here is the result of this code snippet in the context of different lazy modes:

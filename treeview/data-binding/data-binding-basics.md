@@ -11,17 +11,13 @@ previous_url: treeview-data-binding-data-binding-basics
 
 # Data Binding Basics
 
+RadTreeView binds to any object that implements `IList`, `IListSource` or `IBindingList` interface. This includes generic lists and `BindingSource` for example. To make data binding work, you must assign the __DataSource__ property of RadTreeView. 
 
+Set the __DisplayMember__ to the name of the field that you want visible in the tree-view and the __ValueMember__ to the name of a field that is stored in each node's __Value__ property.
 
-RadTreeView binds to any object that implements IList, IListSource or IBindingList. This includes generic lists and BindingSource for example. To make databinding work, you must assign the __DataSource__ property of the treeview. 
-      
+##
 
-Set the __DisplayMember__ to the name of the field that you want visible in the treeview and the __ValueMember__ to the name of a field that is stored in each node's __Value__ property.
-      
-
-## 
-
-The example below binds a generic list of "Product" objects and displays only a single level of data. "Product" has an integer field, a float field and a string field. In this example, we set the ValueMember to the int field and the DisplayMember to the string field:
+The example below binds a generic list of "Product" objects and displays only a single level of data. "Product" has an integer field, a float field and a string field. In this example, we set the __ValueMember__ to the int field and the __DisplayMember__ to the string field:
 
 
 {{source=..\SamplesCS\TreeView\DataBinding\Product.cs region=product}} 
@@ -194,14 +190,14 @@ End Sub
 
 ## Binding and Displaying Hierarchical data
 
-The great value of RadTreeView is the ability to display hierarchical data. It supports binding to and displaying Database hierarchy and hierarchy of custom objects which have member collections of related objects (ORM generated classes for example).
+The great value of RadTreeView is the ability to display hierarchical data. It supports binding to and displaying database hierarchy and hierarchy of custom objects which have member collections of related objects (ORM generated classes for example).
         
 
 The next example extends the previous examples to include a new "Category" parent level where each category contains multiple products. "Categories" has a single "Name" property and a list of products.
 
 ![treeview-data-binding-data-binding-basics 002](images/treeview-data-binding-data-binding-basics002.png)
 
-In order to display the hierarchy of business objects, we just need to set appropriate DisplayMember and ChildMember values. The DisplayMember value is built from the display members of the respective objects joined with the '\\' symbol ('\' for VB.NET). The ChildMember is built from the names of the properties that represent the collections of sub objects. Just like in the case of the DisplayMember, the names of these properties are joined with the '\\' symbol ('\' for VB.NET). The first member of the ChildMember string should represent the parent level of hierarchy and you can set it to a value of your choice. For example, in our case we set this member to "Categories", but we could also set it to "MyCategories":
+In order to display the hierarchy of business objects, we just need to set appropriate __DisplayMember__ and __ChildMember__ values. The __DisplayMember__ value is built from the display members of the respective objects joined with the '\\' symbol ('\' for VB.NET). The ChildMember is built from the names of the properties that represent the collections of sub objects. Just like in the case of the __DisplayMember__, the names of these properties are joined with the '\\' symbol ('\' for VB.NET). The first member of the __ChildMember__ string should represent the parent level of hierarchy and you can set it to a value of your choice. For example, in our case we set this member to "Categories", but we could also set it to "MyCategories":
 
 
 {{source=..\SamplesCS\TreeView\DataBinding\BasicsHierarchyForm.cs region=hierarchy}} 
@@ -393,7 +389,7 @@ End Class
 
 ## Binding check boxes
 
-Since R3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify   the RadTreeView. __CheckedMember__ property. The following code snippet demonstrates how to setup hierarchical tree by using two separate DataTables:
+Since R3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify the __CheckedMember__ property. The following code snippet demonstrates how to setup hierarchical tree by using two separate DataTables:
 
 ![treeview-data-binding-data-binding-basics 003](images/treeview-data-binding-data-binding-basics003.png)
 

@@ -11,57 +11,62 @@ previous_url: treeview-design-time-property-builder
 
 # Property Builder
 
-To quickly create and arrange node structure and appearance invoke the RadTreeView Property Builder from the context menu or the [Smart Tag]({%slug winforms/treeview/design-time/smart-tag%}).
+To quickly create and arrange node structure and appearance invoke the `Property Builder` from the context menu or the [Smart Tag]({%slug winforms/treeview/design-time/smart-tag%}).
 
 ![treeview-design-time-property-builder 001](images/treeview-design-time-property-builder001.png)
 
-__Node Commands__: The left panel of the dialog contains a button bar with commands to add, delete and arrange nodes. In order from left to right: 
+## Node Properties Tab
 
-* Add a new root node.
+By default you will see an empty tree view where the command buttons allow you to add and arrange nodes. The buttons perform the following actions (in order from left to right): 
 
-* Add a child node.
+- Add a new root node.
 
-* Delete the selected node.
+- Add a child node.
 
-* Make the selected child node a sibling of its parent.
+- Delete the selected node.
 
-* Make the selected node a child of the previous node in the list.
+- Make the selected child node a sibling of its parent.
 
-* Move the selected node up in the list.
+- Make the selected node a child of the previous node in the list.
 
-* Move the selected node down in the list.
+- Move the selected node up in the list.
 
-__Preview__: This area shows how the RadTreeView will look and act at run time. This includes styled behaviors such as mouse over effects. 
+- Move the selected node down in the list.
 
-__Structure tab__: The Structure tab on the right side of the dialog allows you to quickly edit significant properties. The properties correspond to the currently selected node or RadTreeView in the Preview area. 
+The __Settings__ pane contains the most commonly used properties for each node (Text, Name, Font, ForeColor and others). 
 
-The basic properties for RadTreeView are: 
-
-* __Item Height__ in pixels.
-
-* __Tree Indentation__ in pixels
-
-* __Context Menu__ can be associated with the RadTreeView as a whole. Any RadDropDownMenu components on the form will be displayed in the drop down list for selection. 
-
-* __TreeView Features__ lets you allow Drag & Drop, Load on Demand, Checkboxes, TriState Checkboxes and Label Editing.
-
-* __Save tree to XML__ allows you to save the already configured tree into an XML file.
-              
-
-* __Load tree from XML__ allows you to load tree nodes from an XML file.
+>caption Figure 2: The Settings pane.
 
 ![treeview-design-time-property-builder 002](images/treeview-design-time-property-builder002.png)
 
-The basic properties for each of the selected nodes in the preview are:
+The __Advanced__ tab contains more properties for each node:
 
-* __Text__ for the node.
+>caption Figure 3: The Advanced Pane
 
-* __Font__ that the node will be displayed in. Use the __Select Font__ button to set the font, font style, size, font effects and font script.
+![treeview-design-time-property-builder 003](images/treeview-design-time-property-builder003.png)
 
-* __Context Menu__ can be associated with each node in the RadTreeView. Any RadDropDownMenu controls on the form will be displayed in the drop down list for selection.
+## RadTreeView Properties Tab
 
-* __Image Index__ or __Image Key__ are used to select images from a  standard Windows forms ImageList component. To use these properties add a ImageList component from the "All Windows Forms" area of the Toolbox and add to the Images collection.
+This tab on the right side of the dialog allows you to quickly edit significant properties. 
 
-__Appearance tab__: This tab lets you set the visual style of the RadTreeView as a whole. The tab lets you choose the __Theme__. You can select the __Show Lines__ checkbox to display the lines that connect the nodes and set the line style and color.
+The available items are:
+
+* __Line Style:__ Controls the style of the line that connects the nodes. The possible values are: Dot, Dash, Solid, DotDash, and DotDashDot. You can set the color of the line by using the __ColorSelector__ button.
+
+* __Item Height:__ Controls the height of all items.
+
+* __Tree Indentation:__ Controls the step between the parent and child nodes.
+
+* __TreeView Features:__ Lets enable *Drag & Drop*, *Checkboxes*, *TriState Checkboxes* editing and others.
+
+* __Save tree to XML__ allows you to save the already configured tree into an XML file.
+
+* __Load tree from XML__ allows you to load tree nodes from an XML file.
+
+>caption Figure 2. The __RadTreeViewProperties__
+![treeview-design-time-property-builder 002](images/treeview-design-time-property-builder002.png)
+ 
+
+ 
 
 __Expert Mode / Basic Mode__: Expert mode displays all the properties of the RadTreeView or nodes as you would see them in the Properties window. The Expert mode provides the best control over the RadTreeView characteristics but it may take longer to find the relevant properties.

@@ -11,21 +11,15 @@ previous_url: treeview-data-binding-binding-to-object-relational-data
 
 # Binding to Object-relational Data
 
-
-
-## Binding RadTreeView to related data - custom objects
+## Custom objects
 
 RadTreeView has the ability to bind to related data of custom objects which have member collections of related objects (ORM generated classes for example).
-        
 
 Consider the following class diagram: 
 
 ![treeview-data-binding-binding-to-object-relational-data 004](images/treeview-data-binding-binding-to-object-relational-data004.png)
 
-There are three classes named __Customer__, __Order__ and __Order_Detail__. The __Customer__ class represents a custom.
-        
-
-The data relations in the case of custom objects are represented by properties which provide references to collections of related objects. In this case the __Customer__ class has a property named __Orders__ which is a collection of __Order__ objects. This is the first relation. The second relation is the __Order_Details__ property in the __Order__ class, it offers a reference to a collection of __Order_Details__. Once you have such class composition, it is trivial for RadTreeView to represent it visually in your application.
+There are three classes named __Customer__, __Order__ and __Order_Detail__. The data relations in the case of custom objects are represented by properties which provide references to collections of related objects. In this case the __Customer__ class has a property named __Orders__ which is a collection of __Order__ objects. This is the first relation. The second relation is the __Order_Details__ property in the __Order__ class, it offers a reference to a collection of __Order_Details__. Once you have such class composition, it is trivial for RadTreeView to represent it visually in your application.
         
 
 The two steps that must be done are these:
@@ -49,7 +43,7 @@ Me.RadTreeView1.DataSource = customers
 
 {{endregion}} 
 
-2\. Set DisplayMember corresponding to the DisplayMembers of the different types of objects and set the ChildMember corresponding to the names of the properties that represent the collections of sub objects.
+2\. Set the __DisplayMember__ corresponding to the DisplayMembers of the different types of objects and set the __ChildMember__ corresponding to the names of the properties that represent the collections of sub objects.
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=relationClasses}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=relationClasses}} 
@@ -78,7 +72,7 @@ Since R3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a
 
 Consider the following diagram which can be illustrated with the sample classes below: ![treeview-data-binding-binding-to-object-relational-data 002](images/treeview-data-binding-binding-to-object-relational-data002.png)
 
-Note that the *IsActive* and the *Status* properties represent boolean data. 
+Note that the __IsActive__ and the __Status__ properties represent boolean data. 
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=DataClasses}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=DataClasses}} 

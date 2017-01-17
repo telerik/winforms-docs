@@ -11,12 +11,9 @@ previous_url: treeview-data-binding-binding-to-self-referencing-data
 
 # Binding to Self Referencing Data
 
-
-
 Binding RadTreeView to self referencing data differs form [binding to related data]({%slug winforms/treeview/data-binding/binding-to-object-relational-data%}) in that RadTreeView is bound to a single list instead of multiple related lists.
-      
-
-In order to set the parent-child relation between the records of the data source,we should set the ParentMember and ChildMember properties to the respective fields this data source.If the parent ID for a record does not have a respective value in the child ID field of the records, then that record is considered to have no parents.
+ 
+In order to set the parent-child relation between the records of the data source, we should set the __ParentMember__ and __ChildMember__ properties to the respective fields in the data source. If the parent `ID` for a record does not have a respective value in the child `ID` field of the records, then that record is considered to have no parents.
 		
 
 ## Minimal example
@@ -173,7 +170,7 @@ As a result we get the hierarchy of nodes shown below:
 
 ## Binding check boxes
 
-Since R3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify the RadTreeView.__CheckedMember__ property. The following code snippet demonstrates how to setup a self referencing hierarchy in the tree and bind the check boxes:
+Since R3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify the __CheckedMember__ property. The following code snippet demonstrates how to setup a self referencing hierarchy in the tree and bind the check boxes:
 
 ![treeview-data-binding-binding-to-self-referencing-data 002](images/treeview-data-binding-binding-to-self-referencing-data002.png)
 

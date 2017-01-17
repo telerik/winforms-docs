@@ -11,9 +11,7 @@ previous_url: treeview-data-binding-load-on-demand-with-crud-operations
 
 # Load On Demand with CRUD operations
 
-
-
-If you have a complex hierarchy, which includes business objects of different types, some of them have children and some - do not and you need to visualize it using RadTreeView while keeping the __CRUD__ operations, then this article is for you.
+If you have a complex hierarchy, which includes business objects of different types, some of them have children and some do not, and you need to visualize it using RadTreeView while keeping the __CRUD__ operations, then this article is for you.
 
 ![treeview-data-binding-load-on-demand-with-crud-operations 001](images/treeview-data-binding-load-on-demand-with-crud-operations001.png)
 
