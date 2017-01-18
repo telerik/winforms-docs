@@ -1,7 +1,7 @@
 ---
 title: Layout Modes
 page_title: Layout Modes | UI for WinForms Documentation
-description: Layout Modes
+description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
 slug: winforms/richtexteditor-/getting-started/layout-modes
 tags: layout,modes
 published: True
@@ -11,8 +11,7 @@ previous_url: richtexteditor-getting-started-layout-modes
 
 # Layout Modes
 
-The __RadRichTextEditor__ allows you to choose between several layout modes.
-      
+The __RadRichTextEditor__ allows you to choose between several layout modes.   
 
 * [Paged](#paged)
 
@@ -22,13 +21,21 @@ The __RadRichTextEditor__ allows you to choose between several layout modes.
 
 ## Paged
 
+>caption Figure 1: DocumentLayoutMode.Paged
+
+![richtexteditor-layout-modes 001](images/richtexteditor-layout-modes001.png)
+
 When using the paged mode, the content of the edited document is divided into pages. The size and layout of each page are defined by the __DefaultPageLayoutSettings__ property of [RadDocument]({%slug winforms/richtexteditor-/document-elements/raddocument%}) and specifically - the __Width__ and __Height__ properties of the __PageLayoutSettings__ object.
         
 Next, the margins of the control in a page are specified by the __PageMargin__ property of each [Section]({%slug winforms/richtexteditor-/document-elements/section%}).
         
-In __Paged__ mode, resizing a __RadRichTextEditor__ will not affect the document layout but scrollbars will appear if the document does not fit in the view.
+In __Paged__ mode, resizing a __RadRichTextEditor__ will not affect the document layout but scroll bars will appear if the document does not fit in the view.
         
 ## Flow
+
+>caption Figure 2: DocumentLayoutMode.Flow
+
+![richtexteditor-layout-modes 002](images/richtexteditor-layout-modes002.png)
 
 In __Flow__ layout mode, the document content is not divided into pages. Instead the whole content is displayed as in a  TextBox or RichTextBox. This layout option resembles __MS Word’s Web-Layout__ mode. The width of the document is the same as that of the __RadRichTextEditor__ and changing the control’s width will also resize the content of the document.
 

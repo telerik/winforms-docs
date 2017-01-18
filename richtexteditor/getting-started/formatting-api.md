@@ -1,7 +1,7 @@
 ---
 title: Formatting API
 page_title: Formatting API | UI for WinForms Documentation
-description: Formatting API
+description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
 slug: winforms/richtexteditor-/getting-started/formatting-api
 tags: formatting,api
 published: True
@@ -15,9 +15,9 @@ If you want to format the content of __RadRichTextEditor__ at run time, you have
 
 ## Changing the text formatting
 
-The __RadRichTextEditor__ exposes methods that change the style of the selected text or the paragraph. When a method is called, the respective style is applied to the selected text. If there is no selection available, the style is applied to the word in which the caret is located.
+__RadRichTextEditor__ exposes methods that change the style of the selected text or the paragraph. When a method is called, the respective style is applied to the selected text. If there is no selection available, the style is applied to the word in which the caret is located.
 
-Here is an example of a toggle button that upon checking should make the selection or the current word bold. In the handler of the __Click__ event of the __RadToggleButton__, the __ToggleBold()__ method of __RadRichTextEditor__ is called.
+Here is an example of a toggle button that upon checking should make the selection or the current word bold. In the handler of the __Click__ event of __RadToggleButton__, the __ToggleBold()__ method of __RadRichTextEditor__ is called.
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=bold}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=bold}} 
@@ -44,11 +44,10 @@ End Sub
 
 __RadRichTextEditor__ supports headers and footers. They are represented through separate instances of __RadRichTextEditor__. When a document has headers and footers you can use the __ActiveDocumentEditor__ property of __RadRichTextEditor__ to get the editor instance where the caret is currently situated.
         
-
 >tip You can find more about the Header and Footer functionality in [this article]({%slug winforms/richtexteditor-/features/headers-and-footers%}).
 >
 
-The following example inserts the word "text" at the CaretPosition.
+The following example inserts the word "text" at the **CaretPosition**.
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=insert}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=insert}} 
@@ -67,7 +66,7 @@ Me.radRichTextEditor.Insert("text")
 
 ## Creating a DocumentFragment
 
-One of the common uses of the API is creating and inserting a __DocumentFragment__. Currently you can create a fragment in two ways:
+One of the common uses of the API is creating and inserting a __DocumentFragment__. Currently, you can create a fragment in two ways:
         
 * through __DocumentFragment__'s constructor;
             
@@ -90,9 +89,9 @@ Me.radRichTextEditor.InsertFragment(fragment)
 
 {{endregion}} 
 
-Using the constructor of DocumentFragment
+**Using the constructor of DocumentFragment**
 
-If you create a fragment in this way, it will end with a new paragraph. This is convenient when you want to separate the inserted fragment and  end it with a new line. Furthermore, in this way if the last paragraph is in a list, it will appear properly in the new document.
+If you create a fragment in this way, it will end with a new paragraph. This is convenient when you want to separate the inserted fragment and end it with a new line. Furthermore, in this way if the last paragraph is in a list, it will appear properly in the new document.
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=insert1}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=insert1}} 
@@ -108,8 +107,9 @@ Dim fragmentFromDocument As New DocumentFragment(Me.radRichTextEditor.Document)
 
 {{endregion}} 
 
+This is also the suggested approach when merging several documents into one.
 
-This is also the suggested approach when merging several documents into one.Using the selection
+**Using the selection**
 
 If you choose to use the document selection when creating a __DocumentFragment__, there will be no additional paragraph after the fragment.
 

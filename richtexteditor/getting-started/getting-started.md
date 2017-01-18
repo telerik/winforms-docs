@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
 slug: winforms/richtexteditor-/getting-started
 tags: getting,started
 published: True
@@ -11,7 +11,7 @@ previous_url: richtexteditor-getting-started
 
 # Getting Started
 
-__RadRichTexteditor__ is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:
+**RadRichTextEditor** is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:
 
 * [Creating a RadRichTextEditor](#creating-a-radrichtexteditor)
 
@@ -80,7 +80,7 @@ End Sub
 
 {{endregion}}
 
-The UI should also respond when the caret is on a document position where the text is modified. For example, the BoldButton should be toggled if the caret is on bolded text. This can be done by handling the ToggleStateChanged event. Here is an example:
+The UI should also respond when the caret is on a document position where the text is modified. For example, the BoldButton should be toggled if the caret is on bold text. This can be done by handling the **ToggleStateChanged** event. Here is an example:
 
 {{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=commands}} 
 {{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=commands}} 
@@ -145,7 +145,7 @@ One of the common uses of __RadRichTextEditor__ is to create a document programa
 
 * [Table]({%slug winforms/richtexteditor-/document-elements/table%})
 
-The whole hierarchy of the elements can be found [here]({%slug winforms/richtexteditor-/document-elements%})
+The whole hierarchy of the elements can be found [here]({%slug winforms/richtexteditor-/document-elements%}).
 
 Here is an example of a document created from code-behind:
 
@@ -265,7 +265,7 @@ Me.radRichTextEditor1.Document = document
 
 ![richtexteditor-getting-started 002](images/richtexteditor-getting-started002.png)
 
-This document is editable.  To make it read only you have to set the __IsReadOnly__ property of the __RadRichTextEditor__ to __True__.
+This document is editable. To make it read only you have to set the __IsReadOnly__ property of the __RadRichTextEditor__ to *true*.
 
 >tip To learn more about the read only feature read [this topic]({%slug winforms/richtexteditor-/getting-started/use-as-rich-content-viewer%}).
 >
