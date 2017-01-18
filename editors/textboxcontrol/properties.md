@@ -34,6 +34,11 @@ position: 8
 |__SelectionOpacity__|Gets or sets the selection opacity.|
 |__IsReadOnly__|Gets or sets a value indicating whether text in the text box is read-only.|
 |__IsReadOnlyCaretVisible__|Gets or sets a value indicating whether the caret is visible in read only mode.|
+|**ShowClearButton**|Gets or sets a value indicating whether the clear button is shown.|
+
+Since R1 2017 **RadTextBoxControl** can show a clear button when there is some text in the editor. This is controlled by the **ShowClearButton** property.
+
+![editors-textboxcontrol-properties 001](images/editors-textboxcontrol-properties001.gif)
 
 # Events
 

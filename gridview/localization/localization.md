@@ -130,8 +130,6 @@ public class MyEnglishRadGridLocalizationProvider : RadGridLocalizationProvider
             case RadGridStringId.CopyMenuItem: return "Copy";
             case RadGridStringId.CutMenuItem: return "Cut";
             case RadGridStringId.AddNewRowString: return "Click here to add a new row";
-            case RadGridStringId.SearchRowResultsOfLabel: return "of";
-            case RadGridStringId.SearchRowMatchCase: return "Match case";
             case RadGridStringId.ConditionalFormattingSortAlphabetically: return "Sort columns alphabetically";
             case RadGridStringId.ConditionalFormattingCaption: return "Conditional Formatting Rules Manager";
             case RadGridStringId.ConditionalFormattingLblColumn: return "Format only cells with";
@@ -225,6 +223,14 @@ public class MyEnglishRadGridLocalizationProvider : RadGridLocalizationProvider
             case RadGridStringId.ExpressionFormNotButton: return string.Empty; //if empty, default button image is used
             case RadGridStringId.ExpressionFormOKButton: return "OK";
             case RadGridStringId.ExpressionFormCancelButton: return "Cancel";
+            case RadGridStringId.SearchRowChooseColumns: return "SearchRowChooseColumns"; 
+            case RadGridStringId.SearchRowSearchFromCurrentPosition: return  "SearchRowSearchFromCurrentPosition";
+            case RadGridStringId.SearchRowMenuItemMasterTemplate: return "SearchRowMenuItemMasterTemplate";
+            case RadGridStringId.SearchRowMenuItemChildTemplates: return "SearchRowMenuItemChildTemplates";
+            case RadGridStringId.SearchRowMenuItemAllColumns:return  "SearchRowMenuItemAllColumns";
+            case RadGridStringId.SearchRowTextBoxNullText:return  "SearchRowTextBoxNullText";
+            case RadGridStringId.SearchRowResultsOfLabel:return  "SearchRowResultsOfLabel"; 
+            case RadGridStringId.SearchRowMatchCase: return "Match case";
         }
         return string.Empty;
     }
@@ -431,10 +437,6 @@ Public Class MyEnglishRadGridLocalizationProvider
                 Return "Cut"
             Case RadGridStringId.AddNewRowString
                 Return "Click here to add a new row"
-            Case RadGridStringId.SearchRowResultsOfLabel
-                Return "of"
-            Case RadGridStringId.SearchRowMatchCase
-                Return "Match case"
             Case RadGridStringId.ConditionalFormattingSortAlphabetically
                 Return "Sort columns alphabetically"
             Case RadGridStringId.ConditionalFormattingCaption
@@ -624,6 +626,22 @@ Public Class MyEnglishRadGridLocalizationProvider
                 Return "OK"
             Case RadGridStringId.ExpressionFormCancelButton
                 Return "Cancel"
+            Case RadGridStringId.SearchRowChooseColumns
+                Return "SearchRowChooseColumns"
+            Case RadGridStringId.SearchRowSearchFromCurrentPosition
+                Return "SearchRowSearchFromCurrentPosition"
+            Case RadGridStringId.SearchRowMenuItemMasterTemplate
+                Return "SearchRowMenuItemMasterTemplate"
+            Case RadGridStringId.SearchRowMenuItemChildTemplates
+                Return "SearchRowMenuItemChildTemplates"
+            Case RadGridStringId.SearchRowMenuItemAllColumns
+                Return "SearchRowMenuItemAllColumns"
+            Case RadGridStringId.SearchRowTextBoxNullText
+                Return "SearchRowTextBoxNullText"
+            Case RadGridStringId.SearchRowResultsOfLabel
+                Return "SearchRowResultsOfLabel"
+            Case RadGridStringId.SearchRowMatchCase
+                Return "Match case"
         End Select
         Return String.Empty
     End Function

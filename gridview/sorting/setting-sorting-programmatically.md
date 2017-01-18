@@ -43,6 +43,7 @@ Here is how to create and add new __SortDescriptor__.
 {{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=usingSortDescriptor}} 
 
 ````C#
+            
 SortDescriptor descriptor = new SortDescriptor();
 descriptor.PropertyName = "ShipCountry";
 descriptor.Direction = ListSortDirection.Ascending;
@@ -71,6 +72,7 @@ RadGridView supports sorting by one or more columns. The bellow example shows ho
 {{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=sortingByTwoOrMoreColumns}} 
 
 ````C#
+            
 SortDescriptor descriptorShipName = new SortDescriptor();
 descriptorShipName.PropertyName = "ShipName";
 descriptorShipName.Direction = ListSortDirection.Ascending;

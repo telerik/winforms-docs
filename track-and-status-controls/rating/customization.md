@@ -1,7 +1,7 @@
 ---
 title: Customization
-page_title: Customization | UI for WinForms Documentation
-description: Customization
+page_title: Customization | RadRating
+description: RadRating is a flexible UI component that allows users to place their rating by selecting from a finite number of items (stars, diamonds and hearts).
 slug: winforms/track-and-status-controls/rating/customization
 tags: customization
 published: True
@@ -13,7 +13,7 @@ previous_url: track-and-status-controls-rating-customization
 
 ## Hover, selected and selecting Background
 
-__RadRating__ introduces an easy way to customize the item’s BackColor when hovering, selecting, selected a value:
+__RadRating__ introduces an easy way to customize the item’s **BackColor** when hovering, selecting, selected a value:
 
 {{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Background}} 
 {{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Background}} 
@@ -49,7 +49,13 @@ Next
 
 {{endregion}} 
 
-![rating-customization 001](images/rating-customization001.png)![rating-customization 002](images/rating-customization002.png)
+>caption Figure 1: Default look
+
+![rating-customization 001](images/rating-customization001.png)
+
+>caption Figure 2: Customized look
+
+![rating-customization 002](images/rating-customization002.png)
 
 ## Custom Shape
 

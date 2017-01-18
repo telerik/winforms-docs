@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | UI for WinForms Documentation
+page_title: Themes | RadWaitingBar
 description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
 slug: winforms/track-and-status-controls/waitingbar/accessing-and-customizing-elements/themes
 tags: button, themes
@@ -29,3 +29,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 1. Save the theme by selecting *File >> Save As*.
 
 1. Now, you can apply your custom theme to __RadWaitingBar__ by using the demonstrated approach in the following link: [Using custom themes]({%slug winforms/themes/using-custom-themes%})
+
+# See Also
+
+* [Accessing and Customizing Elements]({%slug winforms/track-and-status-controls/waitingbar/accessing-and-customizing-elements%})	

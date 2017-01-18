@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started | RadWaitingBar
 description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
 slug: winforms/track-and-status-controls/waitingbar/getting-started
 tags: getting,started
@@ -185,3 +185,8 @@ radWaitingBar1.StartWaiting()
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Structure]({%slug winforms/track-and-status-controls/waitingbar/structure%})	
+* [Design Time]({%slug winforms/track-and-status-controls/wiating-bar/design-time%})

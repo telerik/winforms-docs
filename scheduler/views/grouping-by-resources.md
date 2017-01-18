@@ -16,7 +16,7 @@ previous_url: scheduler-views-grouping-by-resources
 |-----|-----|
 |Resource Grouping in the RadSchedulerIn this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization.[(Runtime: 55:58)](http://www.telerik.com/videos/winforms/resource-grouping-in-the-radscheduler)|Telerik UI for WinForms R3 2009 - RadScheduler Resource Grouping R3 marks the release of some fantastic new features in the Telerik UI for WinForms. I know many of you have been waiting for one feature in particular... resource grouping. Well, I'm happy to say, the wait is over, resource grouping is here! Today, I am going to take some time out to explain to you how it works.[Read full post ...](http://blogs.telerik.com/RobertShoemate/Posts/09-11-05/radcontrols_for_winforms_q3_2009_-_radscheduler_resource_grouping.aspx)|
 
-## Setting up grouping
+## Setting Up Grouping
 
 The __RadScheduler__ control allows you to define custom resources that can be assigned to the appointments. Custom resources let you associate additional information with your appointments. Since custom resources have a limited number of values, RadScheduler can group appointments based on the resources associated with them. For example, you can book different facilities for a variety of events.
 
@@ -77,7 +77,7 @@ Next i
 
 {{endregion}} 
 
-## Setting the number of displayed resources
+## Setting the Number of Displayed Resources
 
 You can use the view’s __ResourcesPerView__ property to change the number of visible resources.
 
@@ -97,7 +97,7 @@ Me.RadScheduler1.ActiveView.ResourcesPerView = 2
 
 {{endregion}} 
 
-## Navigating through resources
+## Navigating Through Resources
 
 Navigating through resources To navigate to a specific resource you can use the __ResourceStartIndex__ property. To access it, you first need to cast the ViewElement to the base type for all grouped views – __SchedulerViewGroupedByResourceElementBase__.
 
@@ -170,7 +170,58 @@ End Sub
 
 {{endregion}} 
 
-## Modifying the size of the resources
+## Setting a Header Width
+
+Depending on the currentlty active view the __SchedulerViewElement__ exposes a __ResourceHeaderHeight__ or __ResourceHeaderWidth__  properties which define the height or width of the header. A suitable place to listen to set these properties is the handler of the RadScheduler.__ActiveViewChanged__ event.
+
+{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=SetResourceHeader}} 
+{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=SetResourceHeader}}
+````C#
+private void radScheduler1_ActiveViewChanged(object sender, SchedulerViewChangedEventArgs e)
+{
+    switch (e.NewView.ViewType)
+    {
+        case SchedulerViewType.Day:
+        case SchedulerViewType.Week:
+            SchedulerDayViewGroupedByResourceElement dayView = this.radScheduler1.SchedulerElement.ViewElement as SchedulerDayViewGroupedByResourceElement;
+            dayView.ResourceHeaderHeight = 80;
+            break;
+        case SchedulerViewType.Month:
+            SchedulerMonthViewGroupedByResourceElement monthView = this.radScheduler1.SchedulerElement.ViewElement as SchedulerMonthViewGroupedByResourceElement;
+            monthView.ResourceHeaderHeight = 50;
+            break;
+        case SchedulerViewType.Timeline:
+            TimelineGroupingByResourcesElement timelineElement = this.radScheduler1.SchedulerElement.ViewElement as TimelineGroupingByResourcesElement;
+            timelineElement.ResourceHeaderWidth = 150;
+            break;
+    }
+}
+
+````
+````VB.NET
+Private Sub RadScheduler1_ActiveViewChanged(sender As Object, e As SchedulerViewChangedEventArgs)
+    Select Case e.NewView.ViewType
+        Case SchedulerViewType.Day, SchedulerViewType.Week
+            Dim dayView As SchedulerDayViewGroupedByResourceElement = TryCast(Me.RadScheduler1.SchedulerElement.ViewElement, SchedulerDayViewGroupedByResourceElement)
+            dayView.ResourceHeaderHeight = 80
+            Exit Select
+        Case SchedulerViewType.Month
+            Dim monthView As SchedulerMonthViewGroupedByResourceElement = TryCast(Me.RadScheduler1.SchedulerElement.ViewElement, SchedulerMonthViewGroupedByResourceElement)
+            monthView.ResourceHeaderHeight = 50
+            Exit Select
+        Case SchedulerViewType.Timeline
+            Dim timelineElement As TimelineGroupingByResourcesElement = TryCast(Me.RadScheduler1.SchedulerElement.ViewElement, TimelineGroupingByResourcesElement)
+            timelineElement.ResourceHeaderWidth = 150
+            Exit Select
+    End Select
+End Sub
+
+```` 
+
+
+{{endregion}} 
+
+## Modifying the Size of the Resources
 
 __RadScheduler__ allows you to specify different size for the different resources. To manipulate the size of the resources, you can use the SetResourceSize and GetResourceSize methods. The values passed to the SetResourceSize method are proportional and the actual size of the resources is calculated based on them. By default all resources have a value of 1 and therefore if you set a value of 2 to any resource, it will stay twice as bigger compared to the others.
 
@@ -193,18 +244,157 @@ CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).S
 >caption Figure 1: Resource Size
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource001.png)
 
+## Accessing Child Elements
+
+When grouped by resources the type of the RadScheduler.__ViewElement__ is a descendant of the __SchedulerViewGroupedByResourceElement__ class. This element is built of descendants of the base __SchedulerViewElement__ class and their count is determined by the count of the resources per view. The exact type of the child __SchedulerViewElement__ instances is determined by state of the currently chosen __SchedulerViewType__.
+
+>note Each of the child __SchedulerViewElement__ objects has a single associated resource when the control is grouped by resources.
+
+The example below demonstrates how each of the child view elements can be accessed, and has its own settings for a particular resource.
+
+>caption Figure 2: SchedulerViewElement Settings 
+![scheduler-views-grouping-by-resource 006](images/scheduler-views-grouping-by-resource006.gif)
+
+#### Customize Child Views
+
+{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=CustomizeChildViewElements}} 
+{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=CustomizeChildViewElements}}
+````C#
+private void CustomizeChildViewElements(RadScheduler radScheduler)
+{
+    if (radScheduler.GroupType != GroupType.Resource)
+    {
+        return;
+    }
+    switch (radScheduler.ActiveViewType)
+    {
+        case SchedulerViewType.Day:
+        case SchedulerViewType.Week:
+        case SchedulerViewType.WorkWeek:
+            SchedulerDayViewGroupedByResourceElement dayViewGroupedElement = (SchedulerDayViewGroupedByResourceElement)radScheduler.ViewElement;
+            IList<SchedulerDayViewElement> childDayElements = dayViewGroupedElement.GetChildViewElements();
+            foreach (SchedulerDayViewElement dayViewElement in childDayElements)
+            {
+                IResource resource = dayViewElement.View.GetResources()[0];
+                // Hide a particular day for a selected resource
+                int index = 2;
+                if (resource.Name == "Anne Dodsworth" && index < dayViewElement.GetDayViewBase().DayCount)
+                {
+                    dayViewElement.SetColumnWidth(index, 0);
+                }
+                else
+                {
+                    dayViewElement.SetColumnWidth(index, 1);
+                }
+            }
+            break;
+        case SchedulerViewType.Month:
+            SchedulerMonthViewGroupedByResourceElement monthViewGroupedElement = (SchedulerMonthViewGroupedByResourceElement)radScheduler.ViewElement;
+            IList<SchedulerMonthViewElement> childMonthElements = monthViewGroupedElement.GetChildViewElements();
+            foreach (SchedulerMonthViewElement monthViewElement in childMonthElements)
+            {
+                IResource resource = monthViewElement.View.GetResources()[0];
+                // Hide weekends for a particular resource
+                if (resource.Name == "Alan Smith")
+                {
+                    monthViewElement.GetMonthView().ShowWeekend = false;
+                }
+                else
+                {
+                    monthViewElement.GetMonthView().ShowWeekend = true;
+                }
+            }
+            break;
+        case SchedulerViewType.Timeline:
+            TimelineGroupingByResourcesElement timelineViewGroupedElement = (TimelineGroupingByResourcesElement)radScheduler.ViewElement;
+            IList<SchedulerTimelineViewElement> childTimelineElements = timelineViewGroupedElement.GetChildViewElements();
+            foreach (SchedulerTimelineViewElement timelineViewElement in childTimelineElements)
+            {
+                IResource resource = timelineViewElement.View.GetResources()[0];
+                // Change appointment height for a selected resource
+                if (resource.Name == "Boyan Mastoni")
+                {
+                    timelineViewElement.AppointmentHeight = 75;
+                }
+                else
+                {
+                    timelineViewElement.AppointmentHeight = 25;
+                }
+            }
+            break;
+    }
+}
+
+````
+````VB.NET
+Private Sub CustomizeChildViewElements(radScheduler As RadScheduler)
+    If radScheduler.GroupType <> GroupType.Resource Then
+        Return
+    End If
+    Select Case radScheduler.ActiveViewType
+        Case SchedulerViewType.Day, SchedulerViewType.Week, SchedulerViewType.WorkWeek
+            Dim dayViewGroupedElement As SchedulerDayViewGroupedByResourceElement = DirectCast(radScheduler.ViewElement, SchedulerDayViewGroupedByResourceElement)
+            Dim childDayElements As IList(Of SchedulerDayViewElement) = dayViewGroupedElement.GetChildViewElements()
+            For Each dayViewElement As SchedulerDayViewElement In childDayElements
+                Dim resource As IResource = dayViewElement.View.GetResources()(0)
+                ' Hide a particular day for a selected resource
+                Dim index As Integer = 2
+                If resource.Name = "Anne Dodsworth" AndAlso index < dayViewElement.GetDayViewBase().DayCount Then
+                    dayViewElement.SetColumnWidth(index, 0)
+                Else
+                    dayViewElement.SetColumnWidth(index, 1)
+                End If
+            Next
+            Exit Select
+        Case SchedulerViewType.Month
+            Dim monthViewGroupedElement As SchedulerMonthViewGroupedByResourceElement = DirectCast(radScheduler.ViewElement, SchedulerMonthViewGroupedByResourceElement)
+            Dim childMonthElements As IList(Of SchedulerMonthViewElement) = monthViewGroupedElement.GetChildViewElements()
+            For Each monthViewElement As SchedulerMonthViewElement In childMonthElements
+                Dim resource As IResource = monthViewElement.View.GetResources()(0)
+                ' Hide weekends for a particular resource
+                If resource.Name = "Alan Smith" Then
+                    monthViewElement.GetMonthView().ShowWeekend = False
+                Else
+                    monthViewElement.GetMonthView().ShowWeekend = True
+                End If
+            Next
+            Exit Select
+        Case SchedulerViewType.Timeline
+            Dim timelineViewGroupedElement As TimelineGroupingByResourcesElement = DirectCast(radScheduler.ViewElement, TimelineGroupingByResourcesElement)
+            Dim childTimelineElements As IList(Of SchedulerTimelineViewElement) = timelineViewGroupedElement.GetChildViewElements()
+            For Each timelineViewElement As SchedulerTimelineViewElement In childTimelineElements
+                Dim resource As IResource = timelineViewElement.View.GetResources()(0)
+                ' Change appointment height for a selected resource
+                If resource.Name = "Boyan Mastoni" Then
+                    timelineViewElement.AppointmentHeight = 75
+                Else
+                    timelineViewElement.AppointmentHeight = 25
+                End If
+            Next
+            Exit Select
+    End Select
+End Sub
+
+```` 
+
+
+
+{{endregion}} 
+
+>note Due to the UI virtualization the logic for accessing a particular view element associated with a resource needs to reapplied when the current resource or selected view type changes. This can be performed in the handlers of the __ActiveViewChanged__ and __ResourceStartIndexChanged__ events.
+
 ## Grouping By Resources In Different Views
 
->caption Figure 2: Day View
+>caption Figure 3: Day View
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource002.png)
 
->caption Figure 3: Week View
+>caption Figure 4: Week View
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource003.png)
 
->caption Figure 4: Month View
+>caption Figure 5: Month View
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource004.png)
 
->caption Figure 5: Timeline View
+>caption Figure 6: Timeline View
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource005.png)
 
 # See Also

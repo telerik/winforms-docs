@@ -30,19 +30,28 @@ Me.RadGridView1.AllowSearchRow = True
 
 ![gridview-rows-search-row 001](images/gridview-rows-search-row001.png)
 
+The end user can select in which columns to perform searching by the provided *Search in columns* drop down. Thus, the highlighted result will be displayed in the specified columns only. You can specify whether the search functionality is enabled for a given column by setting the column's **AllowSearching** property.
+
+![gridview-rows-search-row 002](images/gridview-rows-search-row002.png)
+
 ### Properties
 
 The available properties to tweak the search experience and performance and how to access them are outlined below. The API is in the __GridViewSearchRowInfo__ object which can be accessed through the grid view __MasterView__.
 
-* __CaseSensitive:__ This property defines whether searching will be case sensitive or case insensitive.
+|Property|Description|
+|----|----|
+|**CaseSensitive**|This property defines whether searching will be case sensitive or case insensitive.|
+|**Culture**|The culture which [CompareInfo](http://msdn.microsoft.com/en-us/library/System.Globalization.CompareInfo.IndexOf(v=vs.110).aspx) object will be used for searches when __CaseSensitive__ is set to *false*.|
+|**CompareOptions**|A __CompareOptions__ value that defines how search will be performed when __CaseSensitive__ is set to *false*.|
+|**HighlightResults**|Determines whether results will be highlighted with cells.|
+|**AutomaticallySelectFirstResult**|Determines if the first result found by the search mechanism will be selected and brought into view.|
+|**ShowClearButton**|Gets or sets a value indicating whether to show the clear button.|
+|**ShowCloseButton**|Gets or sets a value indicating whether to show the close button.|
+|**CloseOnEscape**|Gets or sets a value indicating whether to close the search row when escape key is pressed.|
 
-* __Culture:__ The culture which [CompareInfo](http://msdn.microsoft.com/en-us/library/System.Globalization.CompareInfo.IndexOf(v=vs.110).aspx) object will be used for searches when __CaseSensitive__ is set to *false*. 
+>note Pressing `Ctrl`+`F` will show the search row if it is hidden. The `Esc` key will close the search row.
 
-* __CompareOptions:__ A __CompareOptions__ value that defines how search will be performed when __CaseSensitive__ is set to *false*.        
-
-* __HighlightResults:__ Determines whether results will be highlighted with cells.
-
-* __AutomaticallySelectFirstResult:__ Determines if the first result found by the search mechanism will be selected and brought into view.
+>note The **ContextMenuOpening** event is fired when the settings drop down is about to be shown. The ContextMenuOpeningEventArgs.**ContextMenuProvider** is the **GridSearchCellElement** in this case.
 
 To change the highlight color you should use the __HighlightColor__ property of the TableElement.
 

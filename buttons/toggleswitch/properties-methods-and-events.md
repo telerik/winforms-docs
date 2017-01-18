@@ -47,6 +47,8 @@ previous_url: buttons-toggleswitch-properties-methods-events
 |----|----|
 |__ValueChanging__|It is a cancelable event which occurs when the __Value__ is about to change.|
 |__ValueChanged__|Occurs when the __Value__ has changed.|
+|__AnimationStarted__|Occurs when the animation starts.|
+|__AnimationFinished__|Occurs when the animation finishes.|
             
 # See Also 
 * [Properties](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadToggleSwitch.htm)

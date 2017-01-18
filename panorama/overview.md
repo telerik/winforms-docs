@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Panorama | UI for WinForms Documentation
+page_title: Overview | RadPanorama
 description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
 slug: winforms/panorama
 tags: panorama
@@ -11,11 +11,11 @@ previous_url: panorama-overview
 
 # Panorama
 
+**RadPanorama** is a control that displays elements of type **RadTileElement** in a mosaic manner. This control is inspired by the Metro Start Menu screen of Windows 8.
+ 
+![panorama-overview](images/panorama-overview001.gif)
 
-
-## 
-
-RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner. This control is inspired by the Metro Start Menu screen of Windows 8. Main features of the control are:
+Main features of the control are:
 
 * Grouped and ungrouped view
 
@@ -27,4 +27,9 @@ RadPanorama is a control that displays elements of type RadTileElement in a mosa
 
 * Live tiles
 
-![panorama-overview](images/panorama-overview.png)
+# See Also
+
+* [Structure]({%slug winforms/panorama/structure%})	
+* [Design Time]({%slug winforms/panorama/design-time%})	
+* [Getting Started]({%slug winforms/panorama/getting-started%})	
+

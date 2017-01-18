@@ -5,7 +5,7 @@ description: Expand Behavior
 slug: winforms/pivotgrid/expand-behavior
 tags: expand,behavior
 published: True
-position: 14
+position: 15
 previous_url: pivotgrid-expand-behavior
 ---
 

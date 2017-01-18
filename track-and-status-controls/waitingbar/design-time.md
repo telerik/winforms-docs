@@ -1,6 +1,6 @@
 ---
 title: Design Time
-page_title: Design Time | UI for WinForms Documentation
+page_title: Design Time | RadWaitingBar
 description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
 slug: winforms/track-and-status-controls/wiating-bar/design-time
 tags: button, design-time
@@ -39,5 +39,7 @@ When you drag a __RadWaitingBar__ from the Toolbox and drop it onto the form, th
 # See Also
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
+* [Structure]({%slug winforms/track-and-status-controls/waitingbar/structure%})	
+* [Getting Started]({%slug winforms/track-and-status-controls/waitingbar/getting-started%})	
 
 

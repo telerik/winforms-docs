@@ -1,3 +1,5 @@
+# This code block is used in the sitemap.xml template - it takes the file name as an argument (provided via other liquit tags) and returns the last commit date from git in YYYY-MM-DD format
+# Necesary for SEO optimization of the documentation so Google can get proper last modified dates of our articles and index them
 class TimeStampTag < Liquid::Block
     def initialize(tag_name, markup, tokens)
         @text = markup

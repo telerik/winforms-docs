@@ -46,6 +46,7 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 * [Rotator]({%slug winforms/rotator%})
 * [Scheduler]({%slug winforms/scheduler%})
 * [TreeView]({%slug winforms/treeview%})
+* [DataFilter]({%slug winforms/datafilter/overview%})
 * Track and Status Controls
 
 	* [ProgressBar]({%slug winforms/track-and-status-controls/progressbar%})

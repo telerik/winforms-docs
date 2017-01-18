@@ -1,7 +1,7 @@
 ---
 title: Custom Tiles
-page_title: Custom Tiles | UI for WinForms Documentation
-description: Custom Tiles
+page_title: Custom Tiles | RadPanorama
+description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
 slug: winforms/panorama/custom-tiles
 tags: custom,tiles
 published: True
@@ -11,12 +11,13 @@ previous_url: panorama-cutom-tiles
 
 # Custom Tiles
 
-This article demonstrates how you can create custom tiles. The bellow sample code adds four elements to the tile. The result is shown in figure 1.
->caption Figure 1: Custom Title.<br>![panorama-custom-tiles 001](images/panorama-custom-tiles001.png)
+This article demonstrates how you can create custom tiles. The bellow sample code adds four elements to the tile. The result is shown in following screenshot.
 
-## 
+>caption Figure 1: Custom Title.
 
-The code snippet bellow illustrates how the layout is achieved. There is a [GridLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/gridlayout%}) which is taking care of the items arrangement. Four [LightVisualElements]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}) LightVisualElements are added to the grid layout. The first is used for the subject, the second and third for the start/end dates and the forth is used for the icon. The back color is changed in the class constructor.
+![panorama-custom-tiles 001](images/panorama-custom-tiles001.png)
+
+The code snippet bellow illustrates how the layout is achieved. There is a [GridLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/gridlayout%}) which is taking care of the items arrangement. Four [LightVisualElements]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}) are added to the grid layout. The first is used for the subject, the second and third for the start/end dates and the forth is used for the icon. The back color is changed in the class constructor.
 
 #### Custom Tile Class
 
@@ -112,7 +113,7 @@ class CustomTileElement : RadTileElement
 ````
 ````VB.NET
 Friend Class CustomTileElement
-Inherits RadTileElement
+    Inherits RadTileElement
     Private subject As LightVisualElement
     Private startTime As LightVisualElement
     Private endTime As LightVisualElement
@@ -185,13 +186,22 @@ You can use the new tile with the following code:
 
 ````C#
 CustomTileElement tile = new CustomTileElement();
+tile.RowSpan = 2;
+tile.ColSpan = 4;
 radPanorama1.Items.Add(tile);
 
 ````
 ````VB.NET
 Dim tile As New CustomTileElement()
-radPanorama1.Items.Add(tile)
+tile.RowSpan = 2
+tile.ColSpan = 4
+RadPanorama1.Items.Add(tile)
 
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Properties and Methods ]({%slug winforms/panorama/settings%})	
+* [Tiles]({%slug winforms/panorama/tiles%})	

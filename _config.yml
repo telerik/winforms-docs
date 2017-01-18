@@ -233,6 +233,21 @@ navigation:
     dataentry/customizing-appearance:
         title: Customizing Appearance
         position: 8
+    datafilter:
+        title: DataFilter
+        position: 161
+    datafilter/working-with-descriptor-items:
+        title: Working with Descriptor Items
+        position: 4
+    datafilter/customizing-appearance:
+        title: Customizing Appearance
+        position: 5		
+    datafilter/editing:
+        title: Editing
+        position: 7
+    datafilter/localization:
+        title: Localization
+        position: 10
     datalayout:
         title: DataLayout
         position: 170
@@ -693,6 +708,9 @@ navigation:
     multicolumncombobox/styling-and-appearance:
         title: Styling and Appearance
         position: 8		
+    multicolumncombobox/how-to:
+        title: How-To
+        position: 9	
     pageview:
         title: PageView
         position: 310
@@ -738,6 +756,9 @@ navigation:
     panorama:
         title: Panorama
         position: 330
+    panorama/customizing-appearance:
+        title: Customizing Appearance
+        position: 7
     pdfprocessing:
         title: PdfProcessing 
         position: 340
@@ -773,19 +794,19 @@ navigation:
         position: 8
     pivotgrid/printing-support:
         title: Printing Support
-        position: 15
+        position: 16
     pivotgrid/dialogs:
         title: Dialogs
-        position: 17
+        position: 18
     pivotgrid/localization:
         title: Localization
-        position: 18
+        position: 19
     pivotgrid/exporting-data:
         title: Exporting Data
-        position: 19
+        position: 20
     pivotgrid/save-and-load-layout:
         title: Save and Load Layout
-        position: 20		
+        position: 21		
     propertygrid:
         title: PropertyGrid
         position: 370
@@ -954,9 +975,15 @@ navigation:
     track-and-status-controls/scrollbar:
         title: ScrollBar
         position: 1
+    track-and-status-controls/scrollbar/customizing-appearance:
+        title: Customizing Appearance
+        position: 4
     track-and-status-controls/trackbar:
         title: TrackBar
         position: 2
+    track-and-status-controls/trackbar/customizing-appearance:
+        title: Customizing Appearance
+        position: 6
     track-and-status-controls/waitingbar:
         title: WaitingBar
         position: 4
@@ -964,7 +991,7 @@ navigation:
         title: Customizing Appearance
         position: 7
     track-and-status-controls/rating:
-        title: Raiting
+        title: Rating
         position: 5
     treeview:
         title: TreeView
@@ -1122,6 +1149,9 @@ navigation:
     telerik-presentation-framework/export-renderers:
         title: Export Renderers
         position: 19
+    telerik-presentation-framework/shapes:
+        title: Shapes
+        position: 20
     themes:
         title: Themes
         position: 580

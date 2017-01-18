@@ -51,10 +51,10 @@ position: 10
 |------|------|
 |__ValueChanged__|Occurs when the editing value has been changed|
 |__ValueChanging__|Occurs when the editing value is changing|
-|__KeyDown__|Occurs when the RadItem has focus and the user pressees a key down|
-|__KeyPress__|Occurs when the RadItem has focus and the user pressees a key|
+|__KeyDown__|Occurs when the RadItem has focus and the user presses a key down|
+|__KeyPress__|Occurs when the RadItem has focus and the user presses a key|
 |__KeyUp__|Occurs when the RadItem has focus and the user releases the pressed key up|
-|__MultilineChanged__|Occurs when the value of the Multiline property has changed|
+|__MultilineChanged__|Occurs when the value of the __Multiline__ property has changed|
 |__TextAlignChanged__|Occurs when the value of the TextAlign property has changed|
 
 # See Also

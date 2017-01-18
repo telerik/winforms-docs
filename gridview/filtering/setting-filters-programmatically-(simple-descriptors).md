@@ -19,6 +19,10 @@ The RadGridView control includes __FilterDescriptors__ property of the GridViewT
 
 * __CompositeFilterDescriptor:__ a collection of multiple filter descriptors with logical operator. Used to define complex filtering expressions like __(Country = "Germany" AND (City = "Berlin" OR City = "Aachen"))__.
 
+
+>caution Filtering strings not allowed are: " LIKE ", " AND ", " OR ", "\"", ">", "<", "<>", "%", " NULL ", " IS ". Note: the spaces are important (e.g. " LIKE " compared to "LIKE").
+>
+
 ## Using simple FilterDescriptor:
 
 #### Using simple filter descriptor

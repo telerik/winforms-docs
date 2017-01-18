@@ -32,7 +32,7 @@ You can customize the nested elements at run time as well:
 #### Customize elements 
 
 {{source=..\SamplesCS\SplitContainer\BuildingLayout.cs region=CustomizeElements}} 
-{{source=..\SamplesCS\SplitContainer\BuildingLayout.vb region=CustomizeElements}} 
+{{source=..\SamplesVB\SplitContainer\BuildingLayout.vb region=CustomizeElements}} 
 
 ````C#
 this.radSplitContainer1.SplitPanels[0].BackColor = Color.Red;
@@ -42,6 +42,11 @@ this.radSplitContainer1.Splitters[0].Border.BoxStyle = BorderBoxStyle.SingleBord
 
 ````
 ````VB.NET
+Me.radSplitContainer1.SplitPanels(0).BackColor = Color.Red
+Me.radSplitContainer1.Splitters(0).BackgroundFill.BackColor = Color.Yellow
+Me.radSplitContainer1.Splitters(0).Border.ForeColor = Color.Lime
+Me.radSplitContainer1.Splitters(0).Border.BoxStyle = BorderBoxStyle.SingleBorder
+
 ````
 
 {{endregion}}  

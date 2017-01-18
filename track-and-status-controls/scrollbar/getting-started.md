@@ -1,34 +1,33 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Using Telerik scrollbars is a bit more intricate compared to using the standard scrollbars because you have to handle scroll event manually.
+page_title: Getting Started | RadScrollBar
+description: Using Telerik scrollbars is a bit more intricate compared to using the standard scroll bars because you have to handle scroll event manually.
 slug: winforms/track-and-status-controls/scrollbar/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 2
 previous_url: track-and-status-controls-scrollbar-getting-started
 ---
 
 # Getting Started
 
-## 
+Using Telerik scroll bars is a bit more intricate compared to using the standard scroll bars because you have to handle scroll event manually. The rest of this article demonstrates how you can use two panels to implement scrolling for the content of the second panel.
 
-Using Telerik scrollbars is a bit more intricate compared to using the standard scrollbars because you have to handle scroll event manually. The rest of this article demonstrates how you can use two panels to implement scrolling for the content of the second panel.
-
-Add a RadPanel to your form (Office2007Blue theme was used for both panels. This theme is contained in the Miscellaneous theme component):
+1\. Add a **RadPanel** to your form (*TelerikMetro* theme was used for both panels. This theme is contained in the Miscellaneous theme component):
 
 ![track-and-status-controls-scroll-bar-getting-started 001](images/track-and-status-controls-scroll-bar-getting-started001.png)
 
-Add a RadVScrollbar in the panel and dock it to the *Right*:
+2\. Add a **RadVScrollbar** in the panel and dock it to the *Right*:
 
 ![track-and-status-controls-scroll-bar-getting-started 002](images/track-and-status-controls-scroll-bar-getting-started002.png)
 
-Add another RadPanel in the already added one and set its height to the *total* height you want to be available upon scrolling. This value can be statics e.g. 1000 pixels or dynamic determined by the scrollable content. For the purpose, of this example it is set to 1000 pixels. 
+3\. Add another **RadPanel** in the already added one and set its height to the *total* height you want to be available upon scrolling. This value can be statics e.g. *1000* pixels or dynamic determined by the scrollable content. For the purpose, of this example it is set to *1000* pixels. 
 
 ![track-and-status-controls-scroll-bar-getting-started 003](images/track-and-status-controls-scroll-bar-getting-started003.png)
 
-The next step is to add controls to the second RadPanel (the controls which are to be scrolled):
+4\. The next step is to add controls to the second **RadPanel** (the controls which are to be scrolled):
 
+#### Adding controls to the panel
 
 {{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=buttons}} 
 {{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=buttons}} 
@@ -62,8 +61,9 @@ Next i
 
 ![track-and-status-controls-scroll-bar-getting-started 004](images/track-and-status-controls-scroll-bar-getting-started004.png)
 
-Then subscribe to the Scroll event of the vertical scrollbar and assign its negated value to the Top property of the second RadPanel:#_[C#]_
+5\. Then, subscribe to the **Scroll** event of the vertical scroll bar and assign its negated value to the **Top** property of the second **RadPanel**:
 
+#### Handling the Scroll event
 
 {{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=scroll}} 
 {{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=scroll}} 
@@ -84,9 +84,9 @@ End Sub
 
 {{endregion}} 
 
+6\. The last required step is to set the __Maximum__ property of the scroll bar to reflect the size of the __scrollable height__ which is the __total height__ of the scrollable content minus the __visible height__. For the example of this section in particular, that is the height of the second panel minus the height of the first panel.
 
-The last required step is to set the __Maximum__ property of the scrollbar to reflect the size of the __scrollable height__ which is the __total height__ of the scrollable content minus the __visible height__. For the example of this section in particular, that is the height of the second panel minus the height of the first panel.
-
+#### Specify RadVScrollBar's maximum
 
 {{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=maximum}} 
 {{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=maximum}} 
@@ -103,3 +103,7 @@ Me.RadVScrollBar1.Maximum = Me.RadPanel2.Size.Height - Me.RadPanel1.Size.Height
 {{endregion}} 
 
 ![track-and-status-controls-scroll-bar-getting-started 005](images/track-and-status-controls-scroll-bar-getting-started005.png)
+
+# See Also
+
+* [Properties, Methods and Events]({%slug winforms/track-and-status-controls/scrollbar/programming-radscrollbars%})	

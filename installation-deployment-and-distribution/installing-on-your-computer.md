@@ -11,10 +11,6 @@ previous_url: installation-deployment-and-distribution-installing-on-your-comput
 
 # Installing On Your Computer
 
-
-
-## 
-
 The Telerik WinForms setup performs the following actions during the installation process:
 
 * Copies the needed files and assemblies on your machine

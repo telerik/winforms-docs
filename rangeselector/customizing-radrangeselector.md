@@ -113,7 +113,8 @@ Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.SellectionRange.
 
 The scales are created dynamically according to the associated element and its look and feel can be customized through the __ScaleInitializing__ event.
 
-{{source=..\SamplesCS\RangeSelector\CustomizingRadRangeSelector.cs region=CustomizeScales}} 
+{{source=..\SamplesCS\RangeSelector\CustomizingRadRangeSelector.cs region=CustomizeScales}}
+{{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeScales}}
 ````C#
 this.radRangeSelector1.ScaleInitializing += new ScaleInitializingEventHandler(radRangeSelector1_ScaleInitializing);
 
@@ -121,18 +122,17 @@ this.radRangeSelector1.ScaleInitializing += new ScaleInitializingEventHandler(ra
 ````VB.NET
 AddHandler Me.radRangeSelector1.ScaleInitializing, AddressOf radRangeSelector1_ScaleInitializing
 
-````
+```` 
+
+
 
 {{endregion}}
 
 
 
-{{source=..\SamplesCS\RangeSelector\CustomizingRadRangeSelector.cs region=CustomizeScales1}} 
+{{source=..\SamplesCS\RangeSelector\CustomizingRadRangeSelector.cs region=CustomizeScales1}}
+{{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeScales1}}
 ````C#
-this.radRangeSelector1.ScaleInitializing += new ScaleInitializingEventHandler(radRangeSelector1_ScaleInitializing);
-
-````
-````VB.NET
 void radRangeSelector1_ScaleInitializing(object sender, ScaleInitializingEventArgs e)
 {
     e.ScaleElement.BackColor = Color.Blue;
@@ -142,6 +142,17 @@ void radRangeSelector1_ScaleInitializing(object sender, ScaleInitializingEventAr
 }
 
 ````
+````VB.NET
+Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
+    e.ScaleElement.BackColor = Color.Blue
+    e.ScaleElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
+    e.ScaleElement.ForeColor = Color.White
+    e.ScaleElement.ScalePostion = ViewPosition.TopLeft
+End Sub
+
+````  
+
+
 
 {{endregion}}
 
@@ -152,8 +163,7 @@ void radRangeSelector1_ScaleInitializing(object sender, ScaleInitializingEventAr
 In order to customize the chart that is drawn into __RadRangeSelector__ when it is associated with __RadChartView__, the associated element should be accessed. The following code snippet demonstrates how this can be achieved.
 
 {{source=..\SamplesCS\RangeSelector\CustomizingRadRangeSelector.cs region=CustomizeChartElement}} 
-{{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeChartElement}} 
-
+{{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeChartElement}}
 ````C#
 RangeSelectorViewElement chartElement = this.radRangeSelector1.RangeSelectorElement.AssociatedElement as RangeSelectorViewElement;
 chartElement.SeriesInitialized += new SeriesInitializedEventHandler(chartElement_SeriesInitialized);
@@ -161,8 +171,11 @@ chartElement.SeriesInitialized += new SeriesInitializedEventHandler(chartElement
 ````
 ````VB.NET
 Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
+AddHandler chartElement.SeriesInitialized, AddressOf chartElement_SeriesInitialized
 
-````
+```` 
+
+
 
 {{endregion}}
 
@@ -170,7 +183,6 @@ Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.Rang
 
 {{source=..\SamplesCS\RangeSelector\CustomizingRadRangeSelector.cs region=CustomizeChartElement1}} 
 {{source=..\SamplesVB\RangeSelector\CustomizingRadRangeSelector.vb region=CustomizeChartElement1}}
-
 ````C#
 void chartElement_SeriesInitialized(object sender, SeriesInitializedEventArgs e)
 {
@@ -185,7 +197,9 @@ Private Sub chartElement_SeriesInitialized(sender As Object, e As SeriesInitiali
     e.Series.BorderColor = Color.Red
 End Sub
 
-```` 
+````
+
+
 
 {{endregion}}
 

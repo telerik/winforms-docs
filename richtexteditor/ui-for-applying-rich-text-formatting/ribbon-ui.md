@@ -28,3 +28,8 @@ __RadRichTextEditorRibbonUI__ can be found in the Toolbox of Visual Studio, if y
 You can automatically add RadRichTextEditorRibbonUI by using the __RadRichTextEditor__ smart tag as well. 
 
 ![richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui 003](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui003.png)
+
+
+# See Also
+
+ * [Localization]({%slug winforms/richtexteditor/localization%})
