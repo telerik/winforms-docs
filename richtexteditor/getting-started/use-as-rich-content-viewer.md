@@ -1,6 +1,6 @@
 ---
 title: Use as Rich Content Viewer
-page_title: Use as Rich Content Viewer | UI for WinForms Documentation
+page_title: Use as Rich Content Viewer | RadRichTextEditor
 description:  RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
 slug: winforms/richtexteditor-/getting-started/use-as-rich-content-viewer
 tags: use,as,rich,content,viewer

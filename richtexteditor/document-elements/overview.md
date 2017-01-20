@@ -1,7 +1,7 @@
 ---
 title: Elements Hierarchy
-page_title: Document Elements | UI for WinForms Documentation
-description: Document Elements
+page_title: Document Elements | RadRichTextEditor
+description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
 slug: winforms/richtexteditor-/document-elements
 tags: document,elements
 published: True
@@ -11,7 +11,9 @@ previous_url: richtexteditor-document-elements
 
 # Document Elements
 
-There is an element hierarchy which you must consider when building your rich content manually. To become familiar with it, take a look at the diagram below.![richtexteditor-document-elements-elements-hierarchy 001](images/richtexteditor-document-elements-elements-hierarchy001.png)
+There is an element hierarchy which you must consider when building your rich content manually. To become familiar with it, take a look at the diagram below.
+
+![richtexteditor-document-elements-elements-hierarchy 001](images/richtexteditor-document-elements-elements-hierarchy001.png)
 
 ## See Also
 

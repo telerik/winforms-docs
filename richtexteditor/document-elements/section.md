@@ -1,7 +1,7 @@
 ---
 title: Section
-page_title: Section | UI for WinForms Documentation
-description: Section
+page_title: Section | RadRichTextEditor
+description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
 slug: winforms/richtexteditor-/document-elements/section
 tags: section
 published: True
@@ -9,16 +9,12 @@ position: 1
 previous_url: richtexteditor-document-elements-section
 ---
 
-# Section
+# Section 
 
-
-
-The __Section__ class allows you to separate the content into sections. __Sections__ are chunks of the document that can be displayed on one or several pages.
-      
+The __Section__ class allows you to separate the content into sections. __Sections__ are chunks of the document that can be displayed on one or several pages.      
 
 A __Section__ can contain only __Paragraph__ and __Table__ elements. You are also able to customize the section layout by setting its properties.
       
-
 This topic will explain you how to:
 
 * [Create and Add a Section to RadDocument](#create-and-add-a-section-to-raddocument)
@@ -31,8 +27,7 @@ This topic will explain you how to:
 
 As explained in the previous section, the state of the document is essential for the methods that can be used on it.
 
-For example, you can build a RadDocument from scratch and add Sections to it in the following way:
-
+For example, you can build a **RadDocument** from scratch and add **Sections** to it in the following way:
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=init}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=init}} 
@@ -68,26 +63,24 @@ Me.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage)
 
 {{endregion}} 
 
-The method accept a parameter of type SectionBreakType. The possible values are:
+The method accept a parameter of type **SectionBreakType**. The possible values are:
 
-* SectionBreakType.NextPage - the default value. The next section will start on the next page.
+* SectionBreakType.*NextPage* - the default value. The next section will start on the next page.
 
-* SectionBreakType.OddPage - the next section will start on the next odd page.
+* SectionBreakType.*OddPage* - the next section will start on the next odd page.
 
-* SectionBreakType.EvenPage - analogically, the next section will start on the next even page.
+* SectionBreakType.*EvenPage* - analogically, the next section will start on the next even page.
 
->note The distribution of the document content in sections is only visible when the document is in Paged layout mode. Furthermore, the sections and section breaks can be persisted in XAML, docx and RTF. If you export the document to HTML or plain text, the section breaks will be lost.
+>note The distribution of the document content in sections is only visible when the document is in *Paged* layout mode. Furthermore, the sections and section breaks can be persisted in XAML, docx and RTF. If you export the document to HTML or plain text, the section breaks will be lost.
 >
-
 
 ## Customize a Section
 
-The __Section__ exposes several properties that allow you to customize the layout of the elements placed underneath it.These properties can be set directly to the section when the document is created programmatically. If the changes should be applied to the document after it has been loaded in the editor, the respective methods and commands should be used.
+The __Section__ exposes several properties that allow you to customize the layout of the elements placed underneath it. These properties can be set directly to the section when the document is created programmatically. If the changes should be applied to the document after it has been loaded in the editor, the respective methods and commands should be used.
         
-
 Here is a list of these properties:
 
-* __PageMargin__ - represents the margin towards the edges of the page when in __Paged__ mode.
+* __PageMargin__ - represents the margin towards the edges of the page when in *Paged* mode.
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=margin}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=margin}} 
@@ -110,7 +103,7 @@ Me.radRichTextEditor1.ChangeSectionPageMargin(New Telerik.WinForms.Documents.Lay
 {{endregion}} 
 
 
-* __PageOrientation__ - specifies if the pages in the section should be in Portrait or Landscape mode.
+* __PageOrientation__ - specifies if the pages in the section should be in *Portrait* or *Landscape* mode.
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=orientation}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=orientation}} 
@@ -134,8 +127,7 @@ Me.radRichTextEditor1.ChangeSectionPageOrientation(PageOrientation.Landscape)
 
 {{endregion}} 
 
-
-* __PageSize__ - specifies the size of the pages in the section. The PapertTypeConverter class and the enum PaperTypes provide convenient API and predefined sizes out of the box.
+* __PageSize__ - specifies the size of the pages in the section. The **PapertTypeConverter** class and the enum **PaperTypes** provide a convenient API and predefined sizes out of the box.
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=page}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=page}} 
@@ -159,7 +151,7 @@ Me.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes
 
 {{endregion}} 
 
-* Add headers and footers to a Section.Each section has the following types of Headers and Footers - Default (used all through the section), First (used on the first page of the section) and Even (to be used on every even page; if set, overrides the default header/footer on all even pages of the section). Here is a how you can create a Header:
+* Add headers and footers to a **Section**. Each section has the following types of **Headers** and **Footers** - *Default* (used all through the section), *First* (used on the first page of the section) and *Even* (to be used on every even page; if set, overrides the default header/footer on all even pages of the section). Here is how you can create a **Header**:
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=body}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=body}} 
@@ -174,7 +166,6 @@ Dim header As New Telerik.WinForms.Documents.Model.Header() With {.Body = radDoc
 ````
 
 {{endregion}} 
-
 
 All header/footer types are set identically.
 
@@ -211,7 +202,7 @@ Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First
 
 {{endregion}} 
 
-Setting the Footers can be done in the same way.
+Setting the **Footers** can be done in the same way.
 
 ## Adding Paragraphs to a Section
 

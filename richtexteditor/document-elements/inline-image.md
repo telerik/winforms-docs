@@ -1,7 +1,7 @@
 ---
 title: Inline Image
-page_title: Inline Image | UI for WinForms Documentation
-description: Inline Image
+page_title: Inline Image | RadRichTextEditor
+description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
 slug: winforms/richtexteditor-/document-elements/inline-image
 tags: inline,image
 published: True
@@ -10,8 +10,6 @@ previous_url: richtexteditor-document-elements-inline-image
 ---
 
 # Inline Image
-
-
 
 The __ImageInline__ class allows images to be displayed inside the document. The __ImageInline__ can only be used  in the context of a __Paragraph__ class. As it is an inline element, it gets placed after the previous inline element until the end of the line. If there is no space left, the element will be wrapped on the next line.
       
@@ -60,7 +58,7 @@ Me.radRichTextEditor1.Document.Sections.Add(section)
 
 ## Add via UI
 
-Here is an example of how to allow the user to select an image and add it to the document. For that purpose a __RadButton__ and an __OpenFileDialog__ are used. When the file stream from the __OpenFileDialog__ gets obtained, it's passed to the __InsertImage()__ API method of the __RadRichTextEditor__. This method takes as an argument the extension of the image, which can be again obtained from the __FileInfo__ object. After calling the __InsertImage()__ method, the image will appear in the document with its default width and height.
+Here is an example of how to allow the user to select an image and add it to the document. For that purpose a __RadButton__ and an __OpenFileDialog__ are used. When the file stream from the __OpenFileDialog__ gets obtained, it's passed to the __InsertImage()__ API method of __RadRichTextEditor__. This method takes as an argument the extension of the image, which can be again obtained from the __FileInfo__ object. After calling the __InsertImage()__ method, the image will appear in the document with its default width and height.
    
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\InlineImageCode.cs region=insert}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\InlineImageCode.vb region=insert}} 

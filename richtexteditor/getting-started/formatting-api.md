@@ -1,6 +1,6 @@
 ---
 title: Formatting API
-page_title: Formatting API | UI for WinForms Documentation
+page_title: Formatting API | RadRichTextEditor
 description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
 slug: winforms/richtexteditor-/getting-started/formatting-api
 tags: formatting,api
