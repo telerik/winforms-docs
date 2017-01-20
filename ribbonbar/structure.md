@@ -1,7 +1,7 @@
 ---
-title: Structure of RadRibbonBar
-page_title: Structure of RadRibbonBar | UI for WinForms Documentation
-description: The Telerik RadRibbonBar control has a very complex structure. You can add a variety of constituent controls to customize the Telerik RadRibbonBar.
+title: Structure
+page_title: Structure| RadRibbonBar
+description: This article describes the inner structure and organization of the elements which build the RadRibbonBar control..
 slug: winforms/ribbonbar/getting-started/structure-of-radribbonbar
 tags: structure,of,radribbonbar
 published: True
@@ -11,9 +11,35 @@ previous_url: ribbonbar-structure-of-radribbonbar
 
 # Structure of RadRibbonBar
 
+This article describes the inner structure and organization of the elements which build the __RadRibbonBar__ control.
 
+## Element Hierarchy
 
-The Telerik RadRibbonBar control has a very complex structure. You can add a variety of constituent controls to customize the Telerik RadRibbonBar.
+__RadRibbonBar__ is a complex control. In order to customize the styles that determine the display of this control, you need to know its structure. Here is a brief explanation of some of the elements in the tree.
+
+This image shows the __RadRibbonBar__ control element structure as displayed by the [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%}):
+
+>caption Figure 1: RadRibbonBar`s Element Hierarchy
+
+![ribbonbar-styling-radribbonbar-radribbonbar-control-element-structure 001](images/ribbonbar-styling-radribbonbar-radribbonbar-control-element-structure001.png)
+
+* __RadRibbonBarElement__: Represents the entire RadRibbonBar. Any setting at this level are inherited by the elements down in the tree.
+
+* The __RadQuickAccessToolbar__: Represents the Quick Access Toolbar and any settings made to this element and its child nodes reflect on the visual appearance of the element. 
+
+* __RadRibbonBarCaption__: Contains the minimize, maximize and close buttons.
+
+* __RadItem__: Contains the RadTabStripElement used in RadRibbonBar.
+
+* __RadApplicationMenuButtonElement__: The button element of the application drop-down menu.
+
+* The __RadMDIControlsItem__: Represents the system buttons displayed when a MDI child is maximized in a Form which contains a __RadRibbonBar__ control.
+
+* The __RibbonBarCaptionFillPrimitive__: Represents the background fill of the RibbonBar's caption (title bar).
+
+* The __RadImageButtonElement__: Node represents the Help button which may be shown next to the MDI System Buttons
+
+You can add a variety of constituent controls to customize the Telerik RadRibbonBar.
 
 ## Quick Access Toolbar
 
