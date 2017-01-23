@@ -11,24 +11,18 @@ previous_url: treeview-drag-and-drop-enabling-drag-and-drop
 
 # Enabling Drag and Drop
 
-
-
 The key RadTreeView boolean properties enable Drag and Drop functionality: __AllowDragDrop__, and __AllowDrop__.
-      
 
 * __AllowDragDrop__ enables the drag and drop functionality for a tree view control. Drag and drop functionality can also be used to reorder nodes.
-          
 
-* __AllowDrop__ when true accepts data that the user drags onto it. This event is used to interact with drag and drop for standard Windows controls.
-          
+* __AllowDrop__ when true accepts data that the user drags onto it. This property is used to interact with drag and drop for standard Windows controls.
 
 >note Multiple nodes can be dragged if the RadTreeView __AllowMultiSelect__ property is true.
 >
 
-
 ## AllowDragDrop
 
-__AllowDragDrop__ when true enables fully automatic drag and drop. The selected node and child nodes are all moved to the target location with user interaction only.  No code is required. The following screenshots show drag and drop behaviors. Notice the visual cues that assist the user in navigating the tree.
+__AllowDragDrop__ when true enables fully automatic drag and drop. The selected node and child nodes are all moved to the target location with user interaction only. No code is required. The following screenshots show drag and drop behaviors. Notice the visual cues that assist the user in navigating the tree.
 
 
 | __Description__ | __User Action__ |
@@ -44,17 +38,18 @@ __AllowDrop__ when true enables RadTreeView to accept data dropped onto it. Thi
 
 To implement this functionality:
 
-* Set __AllowDrop__ for both RadTreeView and the RadTextBox control to true.
+* Set __AllowDrop__ for both RadTreeView and the RadTextBox control to *true*.
             
 
-* Code the MouseDown event handler of the RadTextBox HostedControl to call the control's __DoDragDrop()__ method.
+* Implement the __MouseDown__ event handler of the RadTextBox HostedControl to call the control's __DoDragDrop()__ method.
           
           
 
-* Code the RadTreeView DragEnter event handler to set the arguments __Effects__ property.
+* Implement the RadTreeView DragEnter event handler to set the arguments __Effects__ property.
             
 
-* Code the RadTreeView DragDrop event handler to react to the drop operation. In the code sample below the RadTreeView __PointToClient()__ and __GetNodeAt()__ methods are used to retrieve the dropped node.
+* Implement the RadTreeView DragDrop event handler to react to the drop operation. In the code sample below the RadTreeView __PointToClient()__ and __GetNodeAt()__ methods are used to retrieve the dropped node.
+
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\EnablingDragAndDrop.cs region=dragDrop}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\EnablingDragAndDrop.vb region=dragDrop}} 

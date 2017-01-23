@@ -11,10 +11,6 @@ previous_url: treeview-drag-and-drop-cancel-a-drag-and-drop-operation
 
 # Cancel a Drag and Drop Operation
 
-
-
-## 
-
 In some cases you may need to impose restrictions on the drag and drop behavior. For example you may want to disallow the dropping of a node to specific location, prevent node form being dropped at different level, or perhaps disable the auto expanding of the nodes while dragging.
 
 ![treeview-drag-and-drop-cancel-a-drag-and-drop-operation 001](images/treeview-drag-and-drop-cancel-a-drag-and-drop-operation001.jpg)
@@ -22,7 +18,7 @@ In some cases you may need to impose restrictions on the drag and drop behavior.
 ## Using AllowDrop property 
         
 
-You can interrupt a drag and drop operation by setting the __AllowDrop__ property of a specific RadTreeNode to false. This way you still can drag this particular node, by you cannot add other nodes to it with drag and drop operation. You can set this for any particular node you want.
+You can interrupt a drag and drop operation by setting the __AllowDrop__ property of a specific RadTreeNode to *false*. This way you still can drag this particular node, but you cannot add other nodes to it with drag and drop operation. You can set this for any particular node you want.
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\CancelDragAndDropOperation.cs region=AllowDrop}} 
 {{source=..\SamplesVB\TreeView\DragAndDrop\CancelDragAndDropOperation.vb region=AllowDrop}} 
