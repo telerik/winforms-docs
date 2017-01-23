@@ -1,7 +1,7 @@
 ---
 title: Footnotes and Endnotes
-page_title: Footnotes and Endnotes | UI for WinForms Documentation
-description: Footnotes and Endnotes
+page_title: Footnotes and Endnotes | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor-/features/references/footnotes-and-endnotes
 tags: footnotes,and,endnotes
 published: True
@@ -11,11 +11,8 @@ previous_url: richtexteditor-features-references-footnotes-and-endnotes
 
 # Footnotes and Endnotes
 
-
-
 Footnotes and endnotes (or just notes) are used in documents and books to show the source of borrowed material or to enter explanatory or supplementary information. Footnotes are positioned at the bottom of a page, containing the annotated text, and endnotes are placed at the end of a document or the section.
       
-
 This topic will explain:
 
 * [Note options](#note-options)
@@ -34,21 +31,15 @@ Here is the list of the available properties concerning footnotes:
 
 * __FootnotesNumberingFormat__ - Gets or sets the footnotes numbering format.
               
-
 * __FootnotesFirstNumber__ - Gets or sets the footnotes starting number.
               
-
-* __FootnotesNumberingRestartType__ - Represents the type of the footnotes numbering restart. The available types are :
-                
+* __FootnotesNumberingRestartType__ - Represents the type of the footnotes numbering restart. The available types are :                
 
 	* __Continuous__ - numbering is never restarted.
-                  
-
+                
 	* __EachPage__ - numbering is restarted on each page.
                   
-
-	* __EachSection__ - numbering is restarted on each section.
-                  
+	* __EachSection__ - numbering is restarted on each section.               
 
 * __FootnotesPosition__ - __PageBottom__ is the only available option.
              
@@ -58,31 +49,23 @@ Here is the list of the available properties concerning endnotes:
 
 * __EndnotesNumberingFormat__ - Gets or sets the endnotes numbering format.
               
-
 * __EndnotesFirstNumber__ - Gets or sets the endnotes starting number.
               
-
 * __EndnotesNumberingRestartType__ - Represents the type of the endnotes numbering restart. The available types are :
                 
-
 	* __Continuous__ - same numbering is used for all endnotes in the document.
                   
-
 	* __EachSection__ - numbering is restarted on each section.
                   
-
 * __EndnotesPosition__ - Available options are:
                 
-
 	* __DocumentEnd__ - all endnotes are shown at the end of the document.
                   
-
 	* __SectionEnd__ - there is a list of endnotes for each section.
                   
-
 ## Creating and Inserting
 
-Footnotes and endnotes all contain the __Note__ class which defines the note body and weather a special symbol should be used when  visualizing the note in the document. Notes can be inserted in __RadRichTextEditor__ using the following methods:
+Footnotes and endnotes all contain the __Note__ class which defines the note body and whether a special symbol should be used when visualizing the note in the document. Notes can be inserted in __RadRichTextEditor__ using the following methods:
 
 {{source=..\SamplesCS\RichTextEditor\Features\FootnotesAndEndnotes.cs region=insert}} 
 {{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=insert}} 
@@ -104,9 +87,8 @@ radRichTextEditor1.InsertEndnote(New Note())
 
 {{endregion}} 
 
-There is a set of document styles that are used inside notes content. It is recommended that when a note is created by code, these styles are used  in the note body, so the document styling is persistent. There are some static helper methods that make the task of creating notes, that have the necessary styles applied, easier:
+There is a set of document styles that are used inside notes content. It is recommended that when a note is created by code, these styles are used in the note body, so the document styling is persistent. There are some static helper methods that make the task of creating notes, that have the necessary styles applied, easier:
         
-
 {{source=..\SamplesCS\RichTextEditor\Features\FootnotesAndEndnotes.cs region=static}} 
 {{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=static}} 
 
@@ -127,7 +109,7 @@ note = note.CreateDefaultEndnote()
 
 {{endregion}} 
 
-Here is for example how to insert a footnote with a custom mark – dollar sign with Calibri font:
+Here is for example how to insert a footnote with a custom mark – dollar sign with *Calibri* font:
 
 {{source=..\SamplesCS\RichTextEditor\Features\FootnotesAndEndnotes.cs region=add}} 
 {{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=add}} 
@@ -171,7 +153,6 @@ radRichTextEditor1.GoToPreviousEndnote()
 {{endregion}} 
 
 You can use the __ScrollToNote()__ method to scroll the viewport so that a note content is visible. A reference to the note object can be obtained through the __FootnoteRangeStart__ and __EndnoteRangeStart__ annotations. These annotations are contained inside the document and mark the beginning of the note symbol that acts like a reference to the note. Here is an example of how to scroll to the content of the first endnote in the document:
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\FootnotesAndEndnotes.cs region=range}} 
 {{source=..\SamplesVB\RichTextEditor\Features\FootnotesAndEndnotes.vb region=range}} 
