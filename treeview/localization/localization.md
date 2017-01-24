@@ -39,15 +39,15 @@ public class MyEnglishTreeViewLocalizationProvider : TreeViewLocalizationProvide
         switch (id)
         {
             case TreeViewStringId.ContextMenuCollapse:
-                return "Collapse11";
+                return "Collapse";
             case TreeViewStringId.ContextMenuDelete:
-                return "Delete11";
+                return "Delete";
             case TreeViewStringId.ContextMenuEdit:
-                return "Edit11";
+                return "Edit";
             case TreeViewStringId.ContextMenuExpand:
-                return "Expand11";
+                return "Expand";
             case TreeViewStringId.ContextMenuNew:
-                return "New11";
+                return "New";
         }
         return "";
     }
