@@ -1,7 +1,7 @@
 ---
 title: Append Documents
 page_title: Append Documents | RadRichTextEditor
-description: Append Documents
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor/features/merge-documents/append
 tags: events
 published: True
@@ -14,7 +14,7 @@ The [RadDocumentMerger]({%slug winforms/richtexteditor/features/merge-documents/
 
 The overloads of the __AppendDocument()__ method allow you to pass a parameter of type **AppendDocumentOptions**. You can use this parameter to customize the way the merge conflicts are resolved and the new document is inserted. The available properties are as follows:
 
-* **ConflictingStylesResolutionMode**: Determines the mode of resolving conflicts between styles with same IDs. This property is of type ConflictingStylesResolutionMode and can have the following enum values:
+* **ConflictingStylesResolutionMode**: Determines the mode of resolving conflicts between styles with same IDs. This property is of type **ConflictingStylesResolutionMode** and can have the following enum values:
 
 	* **UseTargetStyle**: The style of the target document is used. For example, if the target and source documents have a style with the name "MyStyle", but with different properties, the one from the target document is used by the merged document and the one from the source document is not added to the style repository of the target document.
 	
@@ -24,7 +24,7 @@ The overloads of the __AppendDocument()__ method allow you to pass a parameter o
 
 	The property is of type **SectionPropertiesResolutionMode** and it can have the following enum values:
 
-	* **NoSectionBreak**: Append the document elements from the source RadDocument into the target without a preceding section break. Only the block elements from the first source section are inserted. The first section properties, headers and footers are omitted. 
+	* **NoSectionBreak**: Append the document elements from the source **RadDocument** into the target without a preceding section break. Only the block elements from the first source section are inserted. The first section properties, headers and footers are omitted. 
 	
 	* **Source**: Append the first source section as it is, with a preceding section break. The type of break is specified in the section properties of the first source section. The rest of the section properties, headers and footers are preserved. For example, if the source section has a *landscape* orientation and the target has *portrait*, the result section will have a *landscape* orientation.
 	
