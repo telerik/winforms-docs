@@ -1,7 +1,7 @@
 ---
 title: Commands
-page_title: Commands | UI for WinForms Documentation
-description: Commands
+page_title: Commands | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/features/commands
 tags: commands
 published: True
@@ -11,9 +11,7 @@ previous_url: richtexteditor-features-commands
 
 # Commands
 
-## 
-
-The __RadRichTextEditor__ control exposes a full set of commands that are exposed through its  __Commands__ property. For each of the [Formatting API]({%slug winforms/richtexteditor-/getting-started/formatting-api%}) methods there is a respective command.
+The __RadRichTextEditor__ control exposes a full set of commands that are exposed through its __Commands__ property. For each of the [Formatting API]({%slug winforms/richtexteditor-/getting-started/formatting-api%}) methods there is a respective command.
         
 Here is an example with a __RadToggleButton__ control.
 
@@ -58,8 +56,7 @@ End Sub
 
 {{endregion}} 
 
-
-Now every time the button is clicked it will toggle the boldness of the current selection. The thing it won't do is to response to the current state of the  selection. For example if the context of the caret is a bold text, the button won't get automatically toggled. In order to implement this behavior you have to handle the __ToggleStateChanged__ event of the __ToggleBoldCommand__. Here is an example.
+Now every time the button is clicked it will toggle the boldness of the current selection. The thing it won't do is to response to the current state of the selection. For example, if the context of the caret is a bold text, the button won't get automatically toggled. In order to implement this behavior you have to handle the __ToggleStateChanged__ event of the __ToggleBoldCommand__. Here is an example.
 
 {{source=..\SamplesCS\RichTextEditor\Features\Commands.cs region=event}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Commands.vb region=event}} 
@@ -89,6 +86,6 @@ End Sub
 
 {{endregion}}
 
-Now the button will respond to the current state of the selection.
+Now, the button will respond to the current state of the selection.
 
 ![richtexteditor-features-clipboard-support 001](images/richtexteditor-features-clipboard-support001.png)

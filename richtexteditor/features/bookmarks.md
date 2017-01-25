@@ -1,7 +1,7 @@
 ---
 title: Bookmarks
-page_title: Bookmarks | UI for WinForms Documentation
-description: Bookmarks
+page_title: Bookmarks | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor-/features/bookmarks
 tags: bookmarks
 published: True
@@ -11,43 +11,35 @@ previous_url: richtexteditor-features-bookmarks
 
 # Bookmarks
 
-
-
-__Bookmarks__ are a powerful tool for marking parts of the document, which can be later retrieved and reviewed. They can be added to the document both programmatically and via the UI.You can also have [hyperlinks]({%slug winforms/richtexteditor-/features/hyperlink%}) pointing to the annotations in the document. This is very convenient, as it provides the means for easier navigation in the document and enables features like table of contents.
+__Bookmarks__ are a powerful tool for marking parts of the document, which can be later retrieved and reviewed. They can be added to the document both programmatically and via the UI. You can also have [hyperlinks]({%slug winforms/richtexteditor-/features/hyperlink%}) pointing to the annotations in the document. This is very convenient, as it provides the means for easier navigation in the document and enables features like table of contents.
       
-
 ## Adding Bookmarks via the UI
 
-__Bookmarks__ can be inserted in the document and removed through the __ManageBookmarksDialog__, which is opened on pressing the Bookmark button in the Insert Tab of the default RadRichTextEditorRibbonUI.![richtexteditor-features-bookmarks 001](images/richtexteditor-features-bookmarks001.png)
+__Bookmarks__ can be inserted in the document and removed through the __ManageBookmarksDialog__, which is opened on pressing the **Bookmark** button in the **Insert** tab of the default **RadRichTextEditorRibbonUI**.
 
-As all pop-ups that RadRichTextEditor uses, the ManageBookmarksDialog can be completely replaced by another, user-defined dialog implementing an interface.
+![richtexteditor-features-bookmarks 001](images/richtexteditor-features-bookmarks001.png)
+
+As all pop-ups that **RadRichTextEditor** uses, the **ManageBookmarksDialog** can be completely replaced by another, user-defined dialog implementing an interface.
 
 ## Using Bookmarks Programmatically
 
-The document elements that encapsulate the bookmarks functionality are __BookmarkRangeStart__ and __BookMarkRangeEnd__, which are placed at the start and the end of the bookmark respectively. Some of the useful methods that RadRichTextEditor and RadDocument expose are:
+The document elements that encapsulate the bookmarks functionality are __BookmarkRangeStart__ and __BookMarkRangeEnd__, which are placed at the start and the end of the bookmark respectively. Some of the useful methods that **RadRichTextEditor** and **RadDocument** expose are:
         
-
-* this.editor.__InsertBookmark__(__string bookmarkName__) – inserts a Bookmark with the name specified. If there is selection in the document, the BookmarkRangeStart will be inserted just before the first selected element and the BookmarkRangeEnd will be added at the end of the first selection range.
+* __InsertBookmark__(__string bookmarkName__) – inserts a bookmark with the name specified. If there is selection in the document, the **BookmarkRangeStart** will be inserted just before the first selected element and the **BookmarkRangeEnd** will be added at the end of the first selection range.
             
-
-* this.editor.Document.__GoToBookmark__(__string bookmarkName__) this.editor.Document.__GoToBookmark__(__BookmarkRangeStart bookmarkStart__) Both methods move the caret to the bookmark specified. As bookmarks with the same name cannot be inserted in the same document, the name of the bookmark can be used as an identifier.
+* Document.__GoToBookmark__(__string bookmarkName__) / Document.__GoToBookmark__(__BookmarkRangeStart bookmarkStart__): Both methods move the caret to the bookmark specified. As bookmarks with the same name cannot be inserted in the same document, the name of the bookmark can be used as an identifier.
             
-
-* this.editor.Document.Selection.__SelectAnnotationRange__(__AnnotationRangeStart annotationStart__) – selects the annotation passed as parameter. Particularly useful, as most methods of RadRichTextEditor and RadDocument operate on the selection. For example, if you invoke this.editor.Delete(false), the text of the Bookmark along with the Bookmark itself will be erased.
+* Document.Selection.__SelectAnnotationRange__(__AnnotationRangeStart annotationStart__) – selects the annotation passed as parameter. Particularly useful, as most methods of **RadRichTextEditor** and **RadDocument** operate on the selection. For example, if you invoke Delete(false), the text of the bookmark along with the bookmark itself will be erased.
             
-
-* this.editor.__DeleteBookmark__(__string bookmarkName__) this.editor.__DeleteBookmark__(__BookmarkRangeStart bookmarkRangeStart__) These two methods remove the bookmark. The text in the document between the BookmarkRangeStart and BookmarkRangeEnd is __not__ deleted.
+* __DeleteBookmark__(__string bookmarkName__) / __DeleteBookmark__(__BookmarkRangeStart bookmarkRangeStart__): These two methods remove the bookmark. The text in the document between the **BookmarkRangeStart** and **BookmarkRangeEnd** is __not__ deleted.
             
-
-* this.editor.Document.__GetAllBookmarks__() – returns an IEnumerable<BookmarkRangeStart> containing all BookmarkRangeStarts.
+* Document.__GetAllBookmarks__() – returns an **IEnumerable<BookmarkRangeStart>** containing all **BookmarkRangeStarts**.
             
-
-* this.editor.Document.__EnumerateChildrenOfType__<__BookmarkRangeStart__>() – returns all Bookmarks in the document. This method can be used on document elements other than RadDocument, in case you want to detect all bookmarks in a limited part of the document, e.g. a Paragraph or a Table.
+* Document.__EnumerateChildrenOfType&lt;BookmarkRangeStart&gt;()__ – returns all bookmarks in the document. This method can be used on document elements other than **RadDocument**, in case you want to detect all bookmarks in a limited part of the document, e.g. a **Paragraph** or a **Table**.
             
-
-You can also add Bookmarks in a document you are creating manually. As both __BookmarkRangeStart__ and __BookMarkRangeEnd__ inherit from __Inline__, they can be added to the Inlines property of a Paragraph, just like any other Inline. You can also have document positions go to thestart or end of the Bookmark and perform non-standard operations.
+You can also add bookmarks in a document you are creating manually. As both __BookmarkRangeStart__ and __BookMarkRangeEnd__ inherit from __Inline__, they can be added to the **Inlines** property of a **Paragraph**, just like any other **Inline**. You can also have document positions go to the start or end of the bookmark and perform non-standard operations.
   
-For example, you can keep a Dictionary<string, string> mapping each bookmark name to another string and substitute a bookmark with the corresponding text using the following method:
+For example, you can keep a **Dictionary<string, string>** mapping each bookmark name to another string and substitute a bookmark with the corresponding text using the following method:
 
 {{source=..\SamplesCS\RichTextEditor\Features\Bookmarks.cs region=replace}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Bookmarks.vb region=replace}} 
@@ -75,7 +67,7 @@ End Sub
 
 {{endregion}} 
 
-If you want to preserve the bookmarks in the document and only change the text between the BookmarkRangeStart and BookmarkRangeEnd document elements, you can do so like this:
+If you want to preserve the bookmarks in the document and only change the text between the **BookmarkRangeStart** and **BookmarkRangeEnd** document elements, you can do so like this:
 
 {{source=..\SamplesCS\RichTextEditor\Features\Bookmarks.cs region=change}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Bookmarks.vb region=change}} 
