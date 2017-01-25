@@ -1,6 +1,6 @@
 ---
 title: Break
-page_title: Break | UI for WinForms Documentation
+page_title: Break | RadRichTextEditor
 description: Break element is an inline-level flow content element, which indicates that a break should be placed at the current position.
 slug: winforms/richtextEditor/break
 tags: properties,and,methods
@@ -20,7 +20,7 @@ Break element is an inline-level flow content element, which indicates that a br
 
 ## Inserting a Break
 
-The Break elements can be used only in the context of a Paragraph element. The [Paragraph]({%slug winforms/richtexteditor-/document-elements/paragraph%}) exposes a collection of __Inlines__, to which the breaks can be added. __Example 1__ shows how to achieve this.
+The Break elements can be used only in the context of a **Paragraph** element. The [Paragraph]({%slug winforms/richtexteditor-/document-elements/paragraph%}) exposes a collection of __Inlines__, to which the breaks can be added. __Example 1__ shows how to achieve this.
 
 #### Example 1: Insert a break
 
@@ -41,12 +41,10 @@ Dim br As New Break(BreakType.PageBreak)
 paragraph.Inlines.Add(br)
 section.Blocks.Add(paragraph)
 
-````
-
+```` 
 
 {{endregion}}
-
-
+ 
 ## Modifying a Break
 
 The __Break__ element exposes a __BreakType__ property, which specifies the type of the break. __Example 2__ demonstrates how to change it.
@@ -63,7 +61,6 @@ br.BreakType = BreakType.LineBreak;
 br.BreakType = BreakType.LineBreak
 
 ````
-
 
 {{endregion}}
 

@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Questions
-page_title: Frequently Asked Questions | UI for WinForms Documentation
-description: Frequently Asked Questions
+page_title: Frequently Asked Questions | RadRichTextEditor
+description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
 slug: winforms/richtexteditor-/frequently-asked-questions
 tags: frequently,asked,questions
 published: True
@@ -10,8 +10,6 @@ previous_url: richtexteditor-frequently-asked-questions
 ---
 
 # Frequently Asked Questions
-
-
 
 This topic aims to answer some of the frequently asked questions about the use of __RadRichTextEditor__ , namely:
 
@@ -25,15 +23,15 @@ This topic aims to answer some of the frequently asked questions about the use o
 
 ## Setting Default Style Settings on the Document
 
-__RadRichTextEditor__ has a Boolean property called __DocumentInheritsDefaultStyleSettings__, which must be set to *true*, if you want to set some default font properties. Otherwise your settings for the following properties would be disregarded:
+__RadRichTextEditor__ has a *Boolean* property called __DocumentInheritsDefaultStyleSettings__, which must be set to *true*, if you want to set some default font properties. Otherwise, your settings for the following properties would be disregarded:
         
-* FontFamily;
+* **FontFamily**;
 
-* FontSize;
+* **FontSize**;
 
-* FontStyle (Normal/Italic);
+* **FontStyle** (Normal/Italic);
 
-* FontWeight (Normal/Bold).
+* **FontWeight** (Normal/Bold).
 
 You can set these properties in code behind:       
 
@@ -66,26 +64,25 @@ End Sub
 
 {{endregion}} 
 
->note These settings will not be applied on text which is imported by a rich text FormatProvider, as the settings defined in the input file/string will be applied.
+>note These settings will not be applied on text which is imported by a rich text **FormatProvider**, as the settings defined in the input file/string will be applied.
 
-
->tip You can set the caret width with the CaretWidth property as well
+>tip You can set the caret width with the **CaretWidth** property as well.
 
 ## How to Get and Set the Text of RadRichTextEditor
 
-__RadRichTextEditor__ does not have a Text property because different formats for import and export of documents are supported – RTF, HTML, XAML, docX, plain text and PDF (export only). In order to set the contents of the document, it should be clear what format the data is in. For easier extensibility and separation of concerns, format providers that deal with the import and export of the documents are used. Here is a list of the currently available format providers and the namespaces they are included in:
+__RadRichTextEditor__ does not have a **Text** property because different formats for import and export of documents are supported – RTF, HTML, XAML, docX, plain text and PDF (export only). In order to set the contents of the document, it should be clear what format the data is in. For easier extensibility and separation of concerns, format providers that deal with the import and export of the documents are used. Here is a list of the currently available format providers and the namespaces they are included in:
 
-* TxtFormatProvider (plain text) – Telerik.WinForms.Documents.FormatProviders.Txt;
+* **TxtFormatProvider** (plain text) – Telerik.WinForms.Documents.FormatProviders.Txt;
 
-* DocxFormatProvider - Telerik.WinForms.Documents.FormatProviders.OpenXml.Docx and Telerik.Windows.Zip;
+* **DocxFormatProvider** - Telerik.WinForms.Documents.FormatProviders.OpenXml.Docx and Telerik.Windows.Zip;
 
-* HtmlFormatProvider - Telerik.WinForms.Documents.FormatProviders.Html;
+* **HtmlFormatProvider** - Telerik.WinForms.Documents.FormatProviders.Html;
 
-* XamlFormatProvider - Telerik.WinForms.Documents.FormatProviders.Xaml;
+* **XamlFormatProvider** - Telerik.WinForms.Documents.FormatProviders.Xaml;
 
-* RtfFormatProvider – Telerik.WinForms.Documents.FormatProviders.Rtf;
+* **RtfFormatProvider** – Telerik.WinForms.Documents.FormatProviders.Rtf;
 
-* PdfFormatProvider - Telerik.WinForms.Documents.FormatProviders.Pdf; and Telerik.Windows.Zip.
+* **PdfFormatProvider** - Telerik.WinForms.Documents.FormatProviders.Pdf; and Telerik.Windows.Zip.
 
 You can read more about the use of format providers [here]({%slug winforms/richtexteditor/import%}). Overall, what you need to do to get the content of the document in a specific format is to create an instance of the corresponding provider and export the document. An example is illustrated below:
 
@@ -111,7 +108,6 @@ End Function
 
 {{endregion}} 
 
-
 To get the text stripped of all formatting, you can use __TxtFormatProvider__. Setting the content of __RadRichTextEditor__ can  be done in the same manner, if you have the content in one of these formats. For example, importing an HTML string to __RadDocument__ can be done as follows:
 
 {{source=..\SamplesCS\RichTextEditor\FAQ.cs region=html}} 
@@ -135,11 +131,8 @@ End Function
 ````
 
 {{endregion}} 
-
-
-
-
-If you wish to preserve the initial content of the document and insert text at different positions in the document, you can use the __Insert~__ methods of __RadRichTextEditor__ or [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}). The Insert method of RadRichTextEditor uses the current span style of the document, i.e. the text is included in the document just as it would have been if you typed it at that position.
+ 
+If you wish to preserve the initial content of the document and insert text at different positions in the document, you can use the __Insert__ methods of __RadRichTextEditor__ or [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}). The **Insert** method of **RadRichTextEditor** uses the current span style of the document, i.e. the text is included in the document just as it would have been if you typed it at that position.
 
 {{source=..\SamplesCS\RichTextEditor\FAQ.cs region=text}} 
 {{source=..\SamplesVB\RichTextEditor\FAQ.vb region=text}} 
@@ -156,12 +149,11 @@ Me.radRichTextEditor1.Insert(textToInsert)
 
 {{endregion}} 
 
-You can manipulate the caret position before invoking the insert method in order to change the position where you wish the text to appear. You can find more information  on document positions and their usage [here]({%slug winforms/richtexteditor-/features/positioning%}).
+You can manipulate the caret position before invoking the insert method in order to change the position where you wish the text to appear. You can find more information on document positions and their usage [here]({%slug winforms/richtexteditor-/features/positioning%}).
         
-
 ## Setting the Margins of the Document
 
-If you are using a document in flow layout mode, the document respects the value you set to the Padding property that RadRichTextEditor inherits from Control.
+If you are using a document in flow layout mode, the document respects the value you set to the **Padding** property that **RadRichTextEditor** inherits from **Control**.
 
 {{source=..\SamplesCS\RichTextEditor\FAQ.cs region=padding}} 
 {{source=..\SamplesVB\RichTextEditor\FAQ.vb region=padding}} 
@@ -178,7 +170,7 @@ Me.radRichTextEditor1.Padding = New Telerik.WinControls.RichTextEditor.UI.Thickn
 
 {{endregion}} 
 
-With paged layout mode, you can set the margin of the document like this
+With paged layout mode, you can set the margin of the document like this:
 
 {{source=..\SamplesCS\RichTextEditor\FAQ.cs region=margin}} 
 {{source=..\SamplesVB\RichTextEditor\FAQ.vb region=margin}} 
@@ -197,13 +189,12 @@ Me.radRichTextEditor1.Document.SectionDefaultPageMargin = New Telerik.WinForms.D
 
 {{endregion}} 
 
-If you are using data providers to bind the content of the RichTextBox, a new document will be created for every change in the string property which is the binding source. In that case, setting these properties should be done on DocumentChanged.
+If you are using data providers to bind the content of the **RichTextBox**, a new document will be created for every change in the string property which is the binding source. In that case, setting these properties should be done on **DocumentChanged**.
         
-
->caution The value of the __SectionDefaultPageMarginProperty__ is respected when the __PageMargin__ property of a Section does not specify a value. When the document is measured,the value of the __SectionDefaultPageMarginProperty__ will be applied to the Section and further changes to the property will not affect the section.
+>caution The value of the __SectionDefaultPageMarginProperty__ is respected when the __PageMargin__ property of a **Section** does not specify a value. When the document is measured, the value of the __SectionDefaultPageMarginProperty__ will be applied to the **Section** and further changes to the property will not affect the section.
 >
 
-In order to change the margin of an already measured Section, you can use the following method:
+In order to change the margin of an already measured **Section**, you can use the following method:
 
 {{source=..\SamplesCS\RichTextEditor\FAQ.cs region=margin2}} 
 {{source=..\SamplesVB\RichTextEditor\FAQ.vb region=margin2}} 
@@ -219,14 +210,11 @@ radRichTextEditor1.Document.Sections.First.PageMargin = New Telerik.WinForms.Doc
 
 {{endregion}} 
 
-
 ## Inserting multiple consecutive tables
 
-Inserting multiple [Table]({%slug winforms/richtexteditor-/document-elements/table%}) elements in a RadDocument one after another results in them being separated by some space. This may also happen when importing a document from one of the supported formats.The additional space is caused by an empty paragraph appended between the tables and is expected as RadDocument's structure does not allow adjacent tables.
-        
+Inserting multiple [Table]({%slug winforms/richtexteditor-/document-elements/table%}) elements in a **RadDocument** one after another results in them being separated by some space. This may also happen when importing a document from one of the supported formats. The additional space is caused by an empty paragraph appended between the tables and is expected as **RadDocument**'s structure does not allow adjacent tables.       
 
-When [building a document from code]({%slug winforms/richtexteditor-/getting-started%}), you should also follow the same approach and add paragraphs between tables in order to prevent possible issues from arising.
-        
+When [building a document from code]({%slug winforms/richtexteditor-/getting-started%}), you should also follow the same approach and add paragraphs between tables in order to prevent possible issues from arising.        
 
 >warning Removing paragraphs separating tables manually is highly inadvisable and may cause unexpected crashes.
 >

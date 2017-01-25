@@ -1,7 +1,7 @@
 ---
 title: Document Variables
-page_title: Document Variables | UI for WinForms Documentation
-description: Document Variables
+page_title: Document Variables | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor-/features/fields-and-document-variables/document-variables
 tags: document,variables
 published: True
@@ -11,14 +11,9 @@ previous_url: richtexteditor-features-fields-and-document-variables-document-var
 
 # Document Variables
 
+Document variables provide a mechanism to store information in the document. They also provide a convenient way to define more complicated field constructions (nested fields) and can be used as the backbone of master-detail mail merge.     
 
-
-Document variables provide a mechanism to store information in the document. They also provide a convenient way to define more complicated field constructions (nested fields) and can be used as the backbone of master-detail mail merge.
-      
-
-## 
-
-Each RadDocument instance has a dictionary of variables exposed by the __DocumentVariables__ property:
+Each **RadDocument** instance has a dictionary of variables exposed by the __DocumentVariables__ property:
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentVariables.cs region=get}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentVariables.vb region=get}} 
@@ -35,9 +30,7 @@ Dim variables As Telerik.WinForms.Documents.Model.DocumentVariableCollection = M
 
 {{endregion}} 
 
-
 This collection maps string keys to object values (most often strings). The values of the fields most often are strings again and contain the text that will be inserted in the document when the variable is inserted in the document and is evaluated. Variables can be added to this collection in one of the following ways:
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentVariables.cs region=add}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentVariables.vb region=add}} 
@@ -55,14 +48,9 @@ Me.radRichTextEditor1.Document.DocumentVariables("Job") = "Software Engineer"
 
 {{endregion}} 
 
-
-
-
-This code will add two variables to the document – "Name", which will be evaluated to "Andrew Fuller" and "Job" with a value  "Software Engineer". The second syntax can also be used to modify the value of a variable that has already been added to the collection.
+This code will add two variables to the document – "**Name**", which will be evaluated to "*Andrew Fuller*" and "**Job**" with a value "*Software Engineer*". The second syntax can also be used to modify the value of a variable that has already been added to the collection.
         
-
 Removing variables from the collection can be done like this:
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentVariables.cs region=remove}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentVariables.vb region=remove}} 
@@ -79,9 +67,7 @@ Me.radRichTextEditor1.Document.DocumentVariables.Remove("Name")
 
 {{endregion}} 
 
-
-Document variables can be inserted in the document using DocumentVariableField. Here is an example how the above created Name variable can be inserted in the current document of the editor:
-
+Document variables can be inserted in the document using **DocumentVariableField**. Here is an example how the above created **Name** variable can be inserted in the current document of the editor:
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentVariables.cs region=field}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentVariables.vb region=field}} 

@@ -1,7 +1,7 @@
 ---
 title: Append Documents
 page_title: Append Documents | RadRichTextEditor
-description: Append Documents
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor/features/merge-documents/append
 tags: events
 published: True
@@ -14,7 +14,7 @@ The [RadDocumentMerger]({%slug winforms/richtexteditor/features/merge-documents/
 
 The overloads of the __AppendDocument()__ method allow you to pass a parameter of type **AppendDocumentOptions**. You can use this parameter to customize the way the merge conflicts are resolved and the new document is inserted. The available properties are as follows:
 
-* **ConflictingStylesResolutionMode**: Determines the mode of resolving conflicts between styles with same IDs. This property is of type ConflictingStylesResolutionMode and can have the following enum values:
+* **ConflictingStylesResolutionMode**: Determines the mode of resolving conflicts between styles with same IDs. This property is of type **ConflictingStylesResolutionMode** and can have the following enum values:
 
 	* **UseTargetStyle**: The style of the target document is used. For example, if the target and source documents have a style with the name "MyStyle", but with different properties, the one from the target document is used by the merged document and the one from the source document is not added to the style repository of the target document.
 	
@@ -24,7 +24,7 @@ The overloads of the __AppendDocument()__ method allow you to pass a parameter o
 
 	The property is of type **SectionPropertiesResolutionMode** and it can have the following enum values:
 
-	* **NoSectionBreak**: Append the document elements from the source RadDocument into the target without a preceding section break. Only the block elements from the first source section are inserted. The first section properties, headers and footers are omitted. 
+	* **NoSectionBreak**: Append the document elements from the source **RadDocument** into the target without a preceding section break. Only the block elements from the first source section are inserted. The first section properties, headers and footers are omitted. 
 	
 	* **Source**: Append the first source section as it is, with a preceding section break. The type of break is specified in the section properties of the first source section. The rest of the section properties, headers and footers are preserved. For example, if the source section has a *landscape* orientation and the target has *portrait*, the result section will have a *landscape* orientation.
 	
@@ -68,7 +68,7 @@ merger.InsertDocument(sourceDocument, insertOptions)
 '#End Region
 Me.radRichTextEditor1.Document = documentMerger.Document
 End Sub
-'#region commands
+'#Region commands
 Private Sub Main_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler radRichTextEditor1.Commands.ToggleBoldCommand.ToggleStateChanged, AddressOf ToggleBoldCommand_ToggleStateChanged
 AddHandler radRichTextEditor1.Commands.ToggleItalicCommand.ToggleStateChanged, AddressOf ToggleItalicCommand_ToggleStateChanged
@@ -83,6 +83,74 @@ End Sub
 Private Sub ToggleItalicCommand_ToggleStateChanged(ByVal sender As Object, ByVal e As Telerik.WinForms.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))
 Me.ItalicButton.IsChecked = e.NewValue
 End Sub
+'#End Region
+'#Region API
+Private Sub BoldButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+Me.radRichTextEditor1.ToggleBold()
+Me.radRichTextEditor1.Focus() 'return focus to the control
+End Sub
+Private Sub ItalicButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+Me.radRichTextEditor1.ToggleItalic()
+Me.radRichTextEditor1.Focus() 'return focus to the control
+End Sub
+Private Sub UnderlineButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+Me.radRichTextEditor1.ToggleUnderline()
+Me.radRichTextEditor1.Focus() 'return focus to the control
+End Sub
+'#End Region
+Public Sub CreteDocument()
+'#region code
+Dim document As New RadDocument()
+Dim section As New Section()
+Dim paragraph1 As New Paragraph()
+paragraph1.TextAlignment = Telerik.WinForms.Documents.Layout.RadTextAlignment.Center
+Dim span1 As New Span("Thank you for choosing Telerik")
+paragraph1.Inlines.Add(span1)
+Dim span2 As New Span()
+span2.Text = " radRichTextEditor1!"
+span2.FontWeight = Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold
+paragraph1.Inlines.Add(span2)
+section.Blocks.Add(paragraph1)
+Dim paragraph2 As New Paragraph()
+Dim span3 As New Span("radRichTextEditor1")
+span3.FontWeight = Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold
+paragraph2.Inlines.Add(span3)
+Dim span4 As New Span(" is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs) etc.")
+paragraph2.Inlines.Add(span4)
+section.Blocks.Add(paragraph2)
+Dim table As New Table()
+table.LayoutMode = TableLayoutMode.AutoFit
+table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
+Dim row1 As New TableRow()
+Dim cell1 As New TableCell()
+Dim p1 As New Paragraph()
+Dim s1 As New Span()
+s1.Text = "Cell 1"
+p1.Inlines.Add(s1)
+cell1.Blocks.Add(p1)
+row1.Cells.Add(cell1)
+Dim cell2 As New TableCell()
+Dim p2 As New Paragraph()
+Dim s2 As New Span()
+s2.Text = "Cell 2"
+p2.Inlines.Add(s2)
+cell2.Blocks.Add(p2)
+row1.Cells.Add(cell2)
+table.Rows.Add(row1)
+Dim row2 As New TableRow()
+Dim cell3 As New TableCell()
+cell3.ColumnSpan = 2
+Dim p3 As New Paragraph()
+Dim s3 As New Span()
+s3.Text = "Cell 3"
+p3.Inlines.Add(s3)
+cell3.Blocks.Add(p3)
+row2.Cells.Add(cell3)
+table.Rows.Add(row2)
+section.Blocks.Add(table)
+section.Blocks.Add(New Paragraph())
+document.Sections.Add(section)
+Me.radRichTextEditor1.Document = document
 
 ````
 

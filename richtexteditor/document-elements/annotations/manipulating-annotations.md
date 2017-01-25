@@ -1,7 +1,7 @@
 ---
 title: Manipulating Annotations
-page_title: Manipulating Annotations | UI for WinForms Documentation
-description: Manipulating Annotations
+page_title: Manipulating Annotations | RadRichTextEditor
+description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
 slug: winforms/richtexteditor-/document-elements/annotations/manipulating-annotations
 tags: manipulating,annotations
 published: True
@@ -11,9 +11,7 @@ previous_url: richtexteditor-document-elements-annotations-manipulating-annotati
 
 # Manipulating Annotations
 
-
-
-This article outlines the most commonly used manipulations with regard to Annotations.
+This article outlines the most commonly used manipulations with regard to **Annotations**.
 
 The types of manipulations that can be performed on annotations include:
 
@@ -29,12 +27,11 @@ The types of manipulations that can be performed on annotations include:
 
 ## Presentation
 
-By default all annotations are markup-only in the sense that they do not have any appearance. If you want to display a highlight, range brackets or anything else, you can use the UI layers feature of RadRichTextBox. You can read more about them in [this article]({%slug winforms/richtexteditor-/how-to/customize-presentation-through-ui-layers%}).
-        
+By default, all annotations are markup-only in the sense that they do not have any appearance. If you want to display a highlight, range brackets or anything else, you can use the UI layers feature of **RadRichTextEditor**. You can read more about them in [this article]({%slug winforms/richtexteditor-/how-to/customize-presentation-through-ui-layers%}).        
 
 ## Methods for Retrieving Annotations
 
-* RadDocument exposes the following general methods for retrieving annotation markers or checking if such exist in the document at all:
+* **RadDocument** exposes the following general methods for retrieving annotation markers or checking if such exist in the document at all:
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=contains}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=contains}} 
@@ -52,7 +49,7 @@ Dim markers As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Docume
 
 {{endregion}} 
 
-* Methods for retrieving the containing annotations around a particular inline. This is particularly convenient if you would like to perform checks against the position where the caret is at.First, you can obtain the current inline like this:
+* Methods for retrieving the containing annotations around a particular inline. This is particularly convenient if you would like to perform checks against the position where the caret is at. First, you can obtain the current inline like this:
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=inline}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inline}} 
@@ -83,11 +80,9 @@ Dim isInRange As Boolean = Me.radRichTextEditor1.Document.IsInAnnotationRange(Of
 Dim ranges As IEnumerable(Of BookmarkRangeStart) = Me.radRichTextEditor1.Document.GetContainingAnnotationRanges(Of BookmarkRangeStart)(inline)
 
 ````
-
 {{endregion}} 
 
-
-* More finely tuned methods that filter the annotation ranges at the time of their retrieval include:#_[C#] _
+* More finely tuned methods that filter the annotation ranges at the time of their retrieval include: 
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=inRange1}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=inRange1}} 
@@ -124,8 +119,7 @@ documentEditor.InsertAnnotationRange(New BookmarkRangeStart(), New BookmarkRange
 
 {{endregion}} 
 
-There are also some methods that insert specific types of annotations for the commonly used types, such as Hyperlinks, Comments, etc. 
-        For more information, check the respective article.
+There are also some methods that insert specific types of annotations for the commonly used types, such as Hyperlinks, Comments, etc. For more information, check the respective article.
 
 ## Deleting Annotations
 
@@ -145,7 +139,7 @@ documentEditor.DeleteAnnotationRange(start)
 
 {{endregion}} 
 
-Note that this method will remove the annotation, but will keep its contents. In order to delete the contents as well, you can select it and use the Delete method of the editor:
+Note that this method will remove the annotation, but will keep its contents. In order to delete the contents as well, you can select it and use the **Delete** method of the editor:
 
 {{source=..\SamplesCS\RichTextEditor\DocumentElements\ManipulatingAnnotations.cs region=delete1}} 
 {{source=..\SamplesVB\RichTextEditor\DocumentElements\ManipulatingAnnotations.vb region=delete1}} 
@@ -163,7 +157,7 @@ documentEditor.Delete(False)
 
 {{endregion}} 
 
-There are also some methods that remove specific types of annotations for the commonly used types, such as Hyperlinks, Comments, etc. For more  information, check the respective article.
+There are also some methods that remove specific types of annotations for the commonly used types, such as **Hyperlinks**, **Comments**, etc. For more information, check the respective article.
 
 ## Splitting Annotations
 
