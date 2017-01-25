@@ -11,10 +11,9 @@ previous_url: treeview-how-to-assign-radscreentip-to-nodes
 
 # Assign RadScreenTip to nodes
 
+In order to assign __RadScreenTip__ to the nodes of RadTreeView you should use the __ScreenTipNeeded__ event.
 
-In order to assign RadScreenTip to the nodes of RadTreeView you should use the ScreenTipNeeded event of RadTreeView.
-
-If the Item which needs a ScreenTip is a TreeNodeElement, you set the necessary properties of the globally instanciated RadOffice2007ScreenTip:
+If the item which needs a ScreenTip is a TreeNodeElement, you set the necessary properties of the globally instantiated __RadOffice2007ScreenTip__:
 
 ![treeview-how-to-assign-radscreentip-to-nodes 001](images/treeview-how-to-assign-radscreentip-to-nodes001.png)
 

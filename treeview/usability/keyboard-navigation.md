@@ -13,7 +13,7 @@ previous_url: treeview-usability-keyboard-navigation
 
 ## Keyboard Navigation
 
-The user can navigate __RadTreeView__ and control treeview modes using the following keyboard commands:  
+The user can navigate __RadTreeView__ and control TreeView modes using the following keyboard commands:  
 
 || __Key__ | __Description__ |
 |-----|-----|-----|

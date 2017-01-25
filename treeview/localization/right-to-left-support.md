@@ -12,7 +12,7 @@ previous_url: treeview-localization-rtl
 # Right-to-left support
 
 
-You can present the content of your treeview instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:
+You can present the content of your tree view instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:
 
 {{source=..\SamplesCS\TreeView\TreeLocalization.cs region=rtl}} 
 {{source=..\SamplesVB\TreeView\TreeLocalization.vb region=rtl}} 

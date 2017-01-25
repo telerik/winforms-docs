@@ -11,8 +11,7 @@ previous_url: treeview-styling-and-appearance-themes
 
 # Themes
 
-
-The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc. The themes can be easily switched using a single property:
+The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc. The themes can be easily switched using a single property.
 
 |    |    |
 |----|----|

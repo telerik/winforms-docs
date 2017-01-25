@@ -11,7 +11,7 @@ previous_url: treeview-export-data-spread-export
 
 # Spread Export
 
-__TreeViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadTreeView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how you can use it.
+__TreeViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadTreeView__ to *xlsx, csv, pdf* or *txt* formats. This article will explain in detail the SpreadExport capabilities and will demonstrate how you can use it.
  
 * [Exporting Data](#exporting-data)
 
@@ -35,7 +35,6 @@ Here is how the following RadTreeView, looks when it is exported.
 * Telerik.Windows.Documents.Spreadsheet
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf
-* Telerik.Windows.Maths
 * Telerik.Windows.Zip
 >
 
@@ -63,7 +62,7 @@ exporter.RunExport("C:\ExportedFile.xlsx", renderer)
 
 {{endregion}} 
 
-The __RunExport__ method has several overloads allowing the user to export using a stream as well:
+The __RunExport__ method has several overloads allowing the user to export using a stream as well.
 
 ####  Running export synchronously using a stream
 
@@ -102,30 +101,30 @@ End Using
 
 ## Properties
 
-* __ExportFormat__: Defines the format the TreeView will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
+* __ExportFormat:__ Defines the format the TreeView will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
 
-* __ExportVisualSettings__: Allows you to export the visual settings (themes) to the exported file. RadTreeView will also export all formatting to the Excel file.
+* __ExportVisualSettings:__ Allows you to export the visual settings (themes) to the exported file. RadTreeView will also export all formatting to the Excel file.
             
 
-* __SheetMaxRows__: Тhe exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this __SheetMaxRows__  property. Available options are:
+* __SheetMaxRows:__ The exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this __SheetMaxRows__  property. Available options are:
             
 
-  * __1048576__: Max rows for Excel 2007 and above
+      - __1048576:__ Max rows for Excel 2007 and above
+                    
+
+      - __65536 (default):__ Max rows for previous versions of Excel. This is the default setting.
                 
 
-  * __65536 (default)__: Max rows for previous versions of Excel. This is the default setting.
-                
-
-* __SheetName__: Defines the sheet name of the sheet to export to. If your data is large enough to be split on more than one sheets, then the export method adds index to the names of the next sheets.
+* __SheetName:__ Defines the sheet name of the sheet to export to. If your data is large enough to be split on more than one sheets, then the export method adds index to the names of the next sheets.
             
 
-* __FileExportMode__: This property determines whether the data will be exported into an existing or a new file. If new is chosen and such exists it will be overridden. Available options are:
+* __FileExportMode:__ This property determines whether the data will be exported into an existing or a new file. If new is chosen and such exists it will be overridden. Available options are:
             
 
-  * __NewSheetInExistingFile__: This option will create a new sheet in an already existing file.
-                
+      - __NewSheetInExistingFile:__ This option will create a new sheet in an already existing file.
+                    
 
-  * __CreateOrOverrideFile:__ Creates new or overrides an existing file.
+      - __CreateOrOverrideFile:__ Creates new or overrides an existing file.
                 
 
 * __ExportImages:__ Gets or sets a value indicating whether to export images.
@@ -142,16 +141,16 @@ End Using
 
 ## Events
 
-* __CellFormatting__: This event is used to format the cells to be exported. The event arguments provide:
+* __CellFormatting:__ This event is used to format the cells to be exported. The event arguments provide:
             
 
-  * __TreeNode__: Gives you access to the currently exported node.
-                
+      - __TreeNode:__ Gives you access to the currently exported node.
+                    
 
-  * __ExportCell__: Allows you to set the styles of the exported cell.
-                
+      - __ExportCell:__ Allows you to set the styles of the exported cell.
+                    
 
-  * __RowIndex__: The index of the currently exported row. Here is an example of formatting the exported TreeView: 
+      - __RowIndex:__ The index of the currently exported row. Here is an example of formatting the exported TreeView: 
 
 {{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=Formatting}} 
 {{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=Formatting}} 
@@ -309,18 +308,18 @@ End Sub
 
 ## Async Export Methods and Events
 
-__Methods__
+### Methods
 
 The following methods of the __TreeViewSpreadExport__ class are responsible for exporting the data.
         
 
-* __RunExportAsync__: Starts an export operation which runs in a background thread.
+* __RunExportAsync:__ Starts an export operation which runs in a background thread.
             
 
-* __CancelExportAsync__: Cancels an export operation.
+* __CancelExportAsync:__ Cancels an export operation.
             
 
-__Events__
+### Events 
 
 The following events provide information about the state of the export operation.
         
