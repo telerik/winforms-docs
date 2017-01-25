@@ -104,8 +104,6 @@ End Property
 
 3\. Now it is time to create our custom editor. For the purposes of our goal, we need to create a class that derives from __RadDropDownListEditor__ and override the __EndEdit__ method.
 
-We are going to replace the "TO DO" comment with the code snippets provided at 4) and 5).
-
 4\. In the __EndEdit__ method, we first need to check whether the value typed by the user exists or not in the datasource of the GridViewComboBoxColumn. If it exists, we should terminate the execution of the EndEdit method:
 
 {{source=..\SamplesCS\GridView\Editors\How-To\CustomDropDownEditor.cs region=checkValue}} 
