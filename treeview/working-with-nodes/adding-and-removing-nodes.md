@@ -102,7 +102,7 @@ End Sub
 
 ## Removing Nodes
 
-To remove a single node use the __Remove()__ method of the node. To remove *all *nodes of the RadTreeView use the __Nodes.Clear()__ method.
+To remove a single node use the __Remove()__ method of the node. To remove all nodes of the RadTreeView use the __Nodes.Clear()__ method.
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=removeNodes}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=removeNodes}} 

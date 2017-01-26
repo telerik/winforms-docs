@@ -11,8 +11,7 @@ previous_url: treeview-working-with-nodes-custom-filtering
 
 # Custom Filtering
 
-Custom filtering is a flexible mechanism for filtering RadTreeView nodes by using custom logic.It has a higher priority than the applied FilterDescriptors.
-        
+Custom filtering is a flexible mechanism for filtering RadTreeView nodes by using custom logic. It has a higher priority than the applied FilterDescriptors.
 
 In order to apply custom logic for filtering, you have to create a [Predicate](http://msdn.microsoft.com/en-us/library/bfcke1bz.aspx). Here is an example of a __Predicate__ which will return just the nodes which text is longer than one char:
         

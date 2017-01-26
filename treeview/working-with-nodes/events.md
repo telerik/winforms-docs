@@ -11,7 +11,6 @@ previous_url: treeview-working-with-nodes-events
 
 # Events
 
-
 __RadTreeView__ provides a large set of events which allows you to respond to node interactions. 
 
 * NodeAdded/NodeAdding - the events occur before and after node is added.

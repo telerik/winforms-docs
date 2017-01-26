@@ -74,7 +74,7 @@ RadTreeView1.TreeViewElement.Comparer = New MyComparer(Me.RadTreeView1.TreeViewE
 
 {{endregion}} 
 
-That is all that you have to do. To test this scenario, you can add a button and a label to the form, where you will change and print the sort order. This will allow you to check whether the sorting is reversed:
+To test this scenario, you can add a button and a label to the form, where you will change and print the sort order. This will allow you to check whether the sorting is reversed:
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomSorting.cs region=CustomSorting2}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomSorting.vb region=CustomSorting2}} 

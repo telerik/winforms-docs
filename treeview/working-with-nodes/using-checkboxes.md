@@ -11,11 +11,11 @@ previous_url: treeview-working-with-nodes-using-checkboxes
 
 # Using Checkboxes
 
-Enable checkboxes by setting the RadTreeView __CheckBoxes__ boolean property to true. By default all nodes display checkboxes if the __Checkboxes__ property is true. To suppress showing a checkbox next to a particular RadTreeNode set the node __CheckType__ property to *None*. To check a node programmatically, use the __Checked__ or __CheckState__ property of RadTreeNode. When the user clicks a checkbox the __NodeCheckChanged__ event fires passing in a RadTreeViewEventArgs that contains the checked Node.
+Enable the check boxes by setting the __CheckBoxes__ property to *true*. By default all nodes display check boxes when the __CheckBoxes__ property is *true*. To suppress showing a checkbox next to a particular RadTreeNode set the node __CheckType__ property to *None*. To check a node programmatically, use the __Checked__ or __CheckState__ properties of RadTreeNode. When the user clicks a checkbox the __NodeCheckChanged__ event fires passing a RadTreeViewEventArgs object that contains the checked Node.
 
-## Tri-State Checkboxes
+## Tri-State CheckBoxes
 
-Tri-state checkboxes in addition to having checked and unchecked states also have a "indeterminate" state. To enable this feature set the __TriStateMode__ property of RadTreeView to true. The screen shot below shows that "Node1" is in __Indeterminate__ state to indicate that its children are not all checked.
+Tri-state check boxes in addition to checked and unchecked states also have a "indeterminate" state. To enable this feature set the __TriStateMode__ property to *true*. The screen shot below shows that "Node1" is in __Indeterminate__ state to indicate that its children are not all checked.
 
 ![treeview-working-with-nodes-using-checkboxes 001](images/treeview-working-with-nodes-using-checkboxes001.png)
 
@@ -23,7 +23,7 @@ Tri-state checkboxes in addition to having checked and unchecked states also hav
 >
 
 
-To programmatically set the state when __TriStateMode__ is true assign the __CheckState__  property one of the __ToggleState__ enumeration values.
+To programmatically set the state when __TriStateMode__ is true assign the __CheckState__ property one of the __ToggleState__ enumeration values.
 
 ![treeview-working-with-nodes-using-checkboxes 002](images/treeview-working-with-nodes-using-checkboxes002.png)
 

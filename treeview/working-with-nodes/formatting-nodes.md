@@ -11,13 +11,11 @@ previous_url: treeview-working-with-nodes-formatting-nodes
 
 # Formatting Nodes
 
-
-
-Similar to RadGridView, RadTreeView is virtualized. Its visual nodes (TreeNodeElement) are reused by the data nodes (RadTreeNode) which bring increased performance and optimized memory footprint. You can easily format node element by handling the __NodeFormatting__ event. The arguments of this event return the visual Node (and the data Node that is currently assigned to it) that is currently formatted and which you can additionally style.
+Similar to RadGridView, RadTreeView uses UI Virtualization. Its visual nodes (TreeNodeElement) are reused by the data nodes (RadTreeNode) which bring increased performance and optimized memory footprint. You can easily format node element by handling the __NodeFormatting__ event. The arguments of this event return the visual Node (and the data Node that is currently assigned to it) that is currently formatted and which you can additionally style.
 
 ![treeview-working-with-nodes-formatting-nodes 001](images/treeview-working-with-nodes-formatting-nodes001.png)
 
-The purpose of the example that follows is to demonstrate how you can show different images for the RadTreeView nodes depending on their logical state. We are going to simulate a tree of files and folders displaying an image of a closed folder when a node that contains other nodes is collapsed and displaying an image of an opended folder when a node that contains other nodes is expanded.
+The purpose of the example that follows is to demonstrate how you can show different images for the RadTreeView nodes depending on their logical state. We are going to simulate a tree of files and folders displaying an image of a closed folder when a node that contains other nodes is collapsed and displaying an image of an opened folder when a node that contains other nodes is expanded.
         
 
 1. Let's fill RadTreeView with some sample nodes which represent files and folders:

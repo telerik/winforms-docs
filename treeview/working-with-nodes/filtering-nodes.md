@@ -11,14 +11,13 @@ previous_url: treeview-working-with-nodes-filtering
 
 # Filtering Nodes
 
-
-RadTreeView supports filtering of its nodes according to their __Text__ property. In order to apply a filter, you should set the __Filter__ property of RadTreeView to the desired text value. 
+RadTreeView supports filtering of its nodes according to their __Text__ property. In order to apply a filter, you should set the __Filter__ property to the desired text value. 
         
 For example, if we have this RadTreeView instance:
 
 ![treeview-working-with-nodes-filtering 001](images/treeview-working-with-nodes-filtering001.png)
 
-and we set the Filter property as shown below:
+and we set the __Filter__ property as shown below:
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=filter}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=filter}} 

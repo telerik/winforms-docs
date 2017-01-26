@@ -12,9 +12,6 @@ previous_url: treeview-working-with-nodes-custom-nodes
 # Custom Nodes
 
 
-
-## 
-
 With __RadTreeView__ you can create custom nodes and display them instead of the default ones. This can be done by creating a custom __TreeNodeElement__, which will replace the default one in the __CreateNodeElement__ event handler. This article demonstrates how this approach can be implemented.
 
 ![treeview-working-with-nodes-custom-nodes 001](images/treeview-working-with-nodes-custom-nodes001.png)
