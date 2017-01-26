@@ -1,7 +1,7 @@
 ---
 title: Selection 
-page_title: Selection | UI for WinForms Documentation
-description: Formatting Data Cells
+page_title: Selection | RadVirtualGrid
+description: RadVirtualGrid provides you with a selection functionality, which allows the user to select one or more items (rows or cells). 
 slug: winforms/virtualgrid/selection/selection
 tags: virtualgrid, selection
 published: True
@@ -60,9 +60,15 @@ Using the __Selection__ property of the __VirtualGridElement__ you can perform v
 In addition, you can use the following properties to get the selected rows or cells:
 
 * __CurrentRowIndex:__ gets the current row index.
-	>caption Current row indication 
-	![virtualgrid-selection003](images/virtualgrid-selection003.png)
 
 * __CurrentColumnIndex:__ gets the current selected column index.
+
 * __SelectedRegion:__ returns the first selected region.
+
 * __SelectedRegions:__ returns all selected regions.
+
+# See Also
+* [Multiple Selection]({%slug winforms/virtualgrid/selection/multiple-selection%})
+
+* [Selecting Cells Programmatically]({%slug winforms/virtualgrid/selection/selecting-cells-programmatically%})
+

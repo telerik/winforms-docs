@@ -5,15 +5,13 @@ description: Visual Style Builder
 slug: winforms/themes/visual-style-builder
 tags: visual,style,builder
 published: True
-position: 0
+position: 1
 previous_url: themes-visualstylebuilder
 ---
 
 # Visual Style Builder
 
-## 
-
-VisualStyleBuilder provides the key flexibility behind the Telerik UI for WinForms. Visual Style Builder runs within the Visual Studio design environment or as a stand alone application. With Visual Style Builder you can:
+[Visual Style Builder]({%slug winforms/tools/visual-style-builder%}) is a standalone application that comes with the Telerik UI for WinForms suite. This application allows you to create new or edit the predefined themes. With Visual Style Builder you can:
 
 * Set properties 
 
@@ -21,24 +19,15 @@ VisualStyleBuilder provides the key flexibility behind the Telerik UI for WinFor
 
 * Animate changes 
 
-* Save themes 
+* Save themes
 
-## Set Properties
+* [Extract and edit the predefined themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
 
-Using Visual Style Builder you can alter, at design-time or run time, a predefined set of properties of a control. Because all Telerik controls are composed of primitives, this customization can be applied at a very fine level of detail. For example, if you are working with a RadMenu control you can easily change the background color used for submenu items without changing the color used for main menu items.
 
-Run time changes to property values can be tied to the state of a control. For example, it is possible to have the font size used for the text on a tab change when the tab is selected, when the mouse passes over the tab, or when the user clicks on the tab (or in response to any combination of these events).
+For additional information about Visual Style Builder, please refer to [this documentation section]({%slug winforms/tools/visual-style-builder/getting-started%}). Bellow the image you can find some videos as well.
 
+>caption Figure 1: Visual Style Builder
 ![themes-visualstylebuilder 010](images/themes-visualstylebuilder010.png)
-
-## Inherit Properties
-
-When working with complex controls in Visual Style Builder, you can inherit property values (such as colors, or fonts) from parent elements to child elements, or override them at the child element level. Consider the Telerik RadRibbonBar control, which is composed of many individual elements including the tiny pieces that make up the tabs, groups, controls, menu items, and other parts of the user interface. If you want to change the overall color scheme for the Telerik RadRibbonBar, you can make a few property settings to the elements near the top of the *logical tree of elements* and let those settings be inherited by all the child elements. On the other hand, if you want the individual tabs to stand out from your overall color scheme, you can override the main colors for the tabs only, while still allowing everything else to continue to inherit the basic colors.
-        
-
-For additional information about Visual Style Builder, please refer to  [this documentation section]({%slug winforms/tools/visual-style-builder/getting-started%}).
-        
-
 
 | RELATED VIDEOS |  |
 | ------ | ------ |

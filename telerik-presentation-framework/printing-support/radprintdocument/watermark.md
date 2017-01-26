@@ -1,7 +1,7 @@
 ---
 title: Watermark
-page_title: Watermark | UI for WinForms Documentation
-description: Watermark
+page_title: Watermark | Telerik Presentation Framework
+description: The RadPrintDocument has a built in watermark support. The RadPrintDocument supports both text and image watermarks.
 slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/watermark
 tags: watermark
 published: True
@@ -11,12 +11,7 @@ previous_url: tpf-printing-support-radprintdocument-watermark
 
 # Watermark
 
-
-
-## 
-
-The RadPrintDocument has a build in watermark support. The RadPrintDocument supports both text watermark and image watermark.
-        
+The RadPrintDocument has a built in watermark support. The RadPrintDocument supports both text and image watermarks.
 
 To get the watermark to show you have to set it up using the __Watermark__ property:
 
@@ -42,7 +37,14 @@ document.Watermark.TextAngle = 300
 
 {{endregion}} 
 
-
 Alternatively you can create an instance of the __RadPrintWatermark__, set its properties and then assign it to the __Watermark__ property of RadPrintDocument(this is useful when you want to use the same watermark in multiple documents).
 
 ![tpf-printing-support-radprintdocument-watermark](images/tpf-printing-support-radprintdocument-watermark.png)
+
+# See Also
+* [Design Time]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/design-time%})
+
+* [Header and Footer]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/header-and-footer%})
+
+* [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%})
+

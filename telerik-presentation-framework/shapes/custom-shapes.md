@@ -1,6 +1,6 @@
 ---
 title: Custom Shapes
-page_title: Custom Shapes | UI for WinForms Documentation
+page_title: Custom Shapes | Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms/telerik-presentation-framework/diamond-shape
 tags: diamond-shape
@@ -60,4 +60,22 @@ Figure 1 shows the result from the above code. the shape is applied to a RadPane
 ![custom-shape001](images/custom-shape001.png)
 
 
+
+
+# See Also
+* [Diamond Shape]({%slug winforms/telerik-presentation-framework/diamond-shape%})
+
+* [Donut Shape]({%slug winforms/telerik-presentation-framework/donut-shape%})
+
+* [Ellipse Shape]({%slug winforms/telerik-presentation-framework/ellipse-shape%})
+
+* [Heart Shape]({%slug winforms/telerik-presentation-framework/heart-shape%})
+
+* [Media Shape]({%slug winforms/telerik-presentation-framework/media-shape%})
+
+* [Overview]({%slug winforms/telerik-presentation-framework/shapes%})
+
+* [RoundRect Shape]({%slug winforms/telerik-presentation-framework/roundrect-shape%})
+
+* [Star Shape]({%slug winforms/telerik-presentation-framework/star-shape%})
 

@@ -1,7 +1,7 @@
 ---
 title: ArrowPrimitive
-page_title: ArrowPrimitive | UI for WinForms Documentation
-description: ArrowPrimitive
+page_title: ArrowPrimitive | Telerik Presentation Framework
+description: The ArrowPrimitive draws a filled triangular polygon and you can control its orientation.
 slug: winforms/telerik-presentation-framework/primitives/arrowprimitive
 tags: arrowprimitive
 published: True
@@ -11,15 +11,11 @@ previous_url: tpf-primitives-arrowprimitive
 
 # ArrowPrimitive
 
-
-
-## 
-
-The __ArrowPrimitive__ draws a filled triangular polygon. Orientation is controlled by the __Direction__ property with possible __ArrowDirection__ enumeration values of __Up__, __Down__, __Left__ or __Right__. The arrow is filled with the __ForeColor__ property value. The example below draws a border primitive and an ArrowPrimitive.
+The __ArrowPrimitive__ draws a filled triangular polygon. Orientation is controlled by the __Direction__ property with possible __ArrowDirection__ enumeration values of __Up__, __Down__, __Left__ or __Right__. The arrow is filled with the __ForeColor__ property value. The example below draws a __BorderPrimitive__ and an __ArrowPrimitive__.
 
 ![tpf-primitives-arrowprimitive 001](images/tpf-primitives-arrowprimitive001.png)
 
-Creating an ArrowPrimitive
+#### Creating an ArrowPrimitive
 
 {{source=..\SamplesCS\TPF\Primitives\ArrowPrimitive1\MyArrowPrimitiveElement.cs region=myArrowPrimitiveElement}} 
 {{source=..\SamplesVB\TPF\Primitives\ArrowPrimitive1\MyArrowPrimitiveElement.vb region=myArrowPrimitiveElement}} 
@@ -75,3 +71,21 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [BorderPrimitive]({%slug winforms/telerik-presentation-framework/primitives/borderprimitive%})
+
+* [CheckPrimitive]({%slug winforms/telerik-presentation-framework/primitives/checkprimitive%})
+
+* [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%})
+
+* [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%})
+
+* [GripPrimitive]({%slug winforms/telerik-presentation-framework/primitives/gripprimitive%})
+
+* [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%})
+
+* [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})
+
+* [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%})
+

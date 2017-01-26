@@ -1,7 +1,7 @@
 ---
 title: Sorting Overview
-page_title: Sorting Overview | UI for WinForms Documentation
-description: Sorting Overview
+page_title: Sorting Overview | RadVirtualGrid
+description: This article shows how you can configure and use the built-in sorting functionality.
 slug: winforms/virtualgrid/sorting/sorting
 tags: virtualgrid, sorting
 published: True
@@ -52,7 +52,6 @@ It is necessary to handle the __SortChanged__ event which is fired once the __So
 
 >note Please refer to the [Populating with data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%}) help article which demonstrates how to extract the necessary data and fill the virtual grid with data.
 
-![virtualgrid-sorting 003](images/virtualgrid-sorting003.gif)
 
 The following example demonstrates how to achieve sorting functionality in __RadVirtualGrid__ filled with Northwind.Customers table:
 
@@ -314,3 +313,7 @@ End Class
  
 
  
+
+# See Also
+* [Setting Sorting Programmatically]({%slug winforms/virtualgrid/sorting/setting-sorting-programmatically%})
+

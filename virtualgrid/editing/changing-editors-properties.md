@@ -1,7 +1,7 @@
 ---
 title: Changing Editors Properties
-page_title: Changing Editors Properties | UI for WinForms Documentation
-description: Access and change the editors properties
+page_title: Changing Editors Properties | RadVirtualGrid
+description: This article shows how you can access and change the editors properties.
 slug: winforms/virtualgrid/editing/editors-properties
 tags: virtualgrid, edidtors, properties
 published: True
@@ -70,4 +70,18 @@ End Sub
 ```` 
 
 {{endregion}}
+
+
+# See Also
+* [API]({%slug winforms/virtualgrid/cells/api%})
+
+* [Changing the Default Editors]({%slug winforms/virtualgrid/cells/changing-default-editor%})
+
+* [Data Validation]({%slug winforms/virtualgrid/editing/data-validation%})
+
+* [Overview]({%slug winforms/virtualgrid/editing/editors%})
+
+* [Events]({%slug winforms/virtualgrid/editing/events%})
+
+* [Using Custom Editors]({%slug winforms/virtualgrid/editing/using-custom-editors%})
 

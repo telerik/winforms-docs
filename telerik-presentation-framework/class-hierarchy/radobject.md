@@ -1,7 +1,7 @@
 ---
 title: RadObject
-page_title: RadObject | UI for WinForms Documentation
-description: RadObject represents a base class for all elements that need to interact with the dependency property system of Telerik Presentation Framework.
+page_title: RadObject | Telerik Presentation Framework
+description: RadObject represents a base class for all elements that need to interact with the dependency property system.
 slug: winforms/telerik-presentation-framework/class-hierarchy/radobject
 tags: radobject
 published: True
@@ -11,19 +11,19 @@ previous_url: tpf-class-hierarchy-radobject
 
 # RadObject
 
-RadObject represents a base class for all elements that need to interact with the dependency property system of Telerik Presentation Framework. For instance, RadElement class derives from RadObject so it participates in that system. 
+__RadObject__ represents a base class for all elements that need to interact with the dependency property system of Telerik Presentation Framework. For instance, __RadElement__ class derives from RadObject so it participates in that system. 
 
 The main RadObject functionality is:
 
 |Method|Description|
 |-----|-----|
-|GetValue|Retrieves the stored value for a given dependency property.|
-|SetValue|Sets a value for a given dependency property.|
-|ResetValue|Resets the value of a given dependency property. There are several reset options specified in *ValueResetFlags* enumeration.|
-|UpdateValue|Forces a re-evaluation for a given property.|
-|GetValueSource|Indicates the source of change.|
-|BindProperty|Creates a binding between two properties.|
-|UnbindProperty|Destroys an existing binding between two properties.|
+|__GetValue__|Retrieves the stored value for a given dependency property.|
+|__SetValue__|Sets a value for a given dependency property.|
+|__ResetValue__|Resets the value of a given dependency property. There are several reset options specified in *ValueResetFlags* enumeration.|
+|__UpdateValue__|Forces a re-evaluation for a given property.|
+|__GetValueSource__|Indicates the source of change.|
+|__BindProperty__|Creates a binding between two properties.|
+|__UnbindProperty__|Destroys an existing binding between two properties.|
 
 >caution Dependency properties are registered using [RadProperty]({%slug winforms/telerik-presentation-framework/dependency-properties%}) class. Refer to this article if you need to create a dependency property but you need not create a custom object that will participate in the hierarchy of visual elements, i.e. custom fill primitive that does not derive from the existing one.
 >
@@ -136,7 +136,7 @@ End Enum
 
 ## Updating Values
 
-Re-evaluates the property specified as a parameter. In the example below, the HeightProperty is re-evaluated:
+Re-evaluates the property specified as a parameter. In the example below, the __HeightProperty__ is re-evaluated:
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadObjectForm.cs region=UpdateValue}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadObjectForm.vb region=UpdateValue}} 
@@ -276,13 +276,13 @@ Dependency properties are more advanced than the ordinary properties; they suppo
 
 |Value|Description|
 |------|--------|
-|Coercion|This is the final step when you can change the value of a given property. Please refer to the subsection below about implementing value coercion.|
-|Animation|When the animation is finished, you can either store the last value or remove it and therefore allow previous modifiers to participate in value composition. This behavior is controlled by __AnimatedPropertySetting.RemoveAfterApply__ property.Note: Animation in TPF is controlled by __AnimatedPropertySetting__ object which value has different meanings depending on whether it is specified through StyleSheet or not. If the latter is true, the animation is treated as *Style Setting* rather than animation.|
-|Binding|Properties can be bound either one-way or two way. Refer to the subsection about binding below.|
-|Local Value|The value that is set through a CLR Property Setter or the publicly exposed SetValue method.|
+|__Coercion__|This is the final step when you can change the value of a given property. Please refer to the subsection below about implementing value coercion.|
+|__Animation__|When the animation is finished, you can either store the last value or remove it and therefore allow previous modifiers to participate in value composition. This behavior is controlled by __AnimatedPropertySetting.RemoveAfterApply__ property. Note: Animation in TPF is controlled by __AnimatedPropertySetting__ object which value has different meanings depending on whether it is specified through __StyleSheet__ or not. If the latter is true, the animation is treated as *Style Setting* rather than animation.|
+|__Binding__|Properties can be bound either one-way or two way. Refer to the subsection about binding below.|
+|__Local Value__|The value that is set through a CLR Property Setter or the publicly exposed __SetValue__ method.|
 |Style Setting|A __PropertySetting__ which comes from a StyleSheet.Note: it can be __AnimatedPropertySetting__ which will be treated as a Style rather than Animation.|
-|Inherited Value|Value that comes from the current __InheritanceParent__ for the object. An inherited value is cached once retrieved and stored until caching is marked as Invalid.Note: Only properties, whose *metadata* object has the __IsInherited__ flag set, are target of inheritance.|
-|Default Value|A default value can be set either using the dependency property *metadata* or by overriding the method __GetDefaultValue__ . Refer to the subsection below about default values.|
+|__Inherited Value__|Value that comes from the current __InheritanceParent__ for the object. An inherited value is cached once retrieved and stored until caching is marked as Invalid. Note: Only properties, whose *metadata* object has the __IsInherited__ flag set, are target of inheritance.|
+|__Default Value__|A default value can be set either using the dependency property *metadata* or by overriding the method __GetDefaultValue__ . Refer to the subsection below about default values.|
 
 ## Coercion
 
@@ -317,7 +317,7 @@ End Function
 
 In the example above, the value of the Height property is coerced to 105 (Height is an integer property). 
 
-Note: Coercion is seldom used.
+>note Coercion is seldom used.
 
 ## Binding
 
@@ -325,8 +325,8 @@ A property of one RadObject instance can be bound to a property of another RadOb
 
 |||
 | ---- | ---- |
-| One way | Change in the source triggers change in the bound target property. The only exception to this case is that animation in progress can change the value of the bound property. |
-| Two ways | Value change in one of the properties triggers change in the other. |
+|__One way__| Change in the source triggers change in the bound target property. The only exception to this case is that animation in progress can change the value of the bound property. |
+|__Two ways__| Value change in one of the properties triggers change in the other. |
 
 ## Local Value
 
@@ -424,3 +424,21 @@ End Function
 ````
 
 {{endregion}}
+
+# See Also
+* [BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%})
+
+* [Choosing an Ancestor Class]({%slug winforms/telerik-presentation-framework/class-hierarchy/choosing-an-ancestor-class%})
+
+* [Class Hierarchy Overview]({%slug winforms/telerik-presentation-framework/class-hierarchy/class-hierarchy-overview%})
+
+* [LayoutPanel]({%slug winforms/telerik-presentation-framework/class-hierarchy/layoutpanel%})
+
+* [RadComponent, RadComponentElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcomponent,-radcomponentelement%})
+
+* [RadControl]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcontrol%})
+
+* [RadElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radelement%})
+
+* [RadItem]({%slug winforms/telerik-presentation-framework/class-hierarchy/raditem%})
+

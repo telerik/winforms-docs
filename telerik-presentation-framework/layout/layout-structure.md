@@ -1,7 +1,7 @@
 ---
 title: Layout Structure
-page_title: Layout Structure | UI for WinForms Documentation
-description: Layout Structure
+page_title: Layout Structure | Telerik Presentation Framework
+description: Telerik Presentation Foundation layout follows the W3C box model standard.
 slug: winforms/telerik-presentation-framework/layout/layout-structure
 tags: layout,structure
 published: True
@@ -13,7 +13,7 @@ previous_url: tpf-layout-structure
 
 Telerik Presentation Foundation layout follows the [W3C](http://www.w3.org/)[box model](http://www.w3.org/TR/REC-CSS2/box.html) standard. The diagram below shows the basic structure and naming conventions of the box model.
 
-![](images/Structure001.png)
+![Structure001](images/Structure001.png)
 
 ## Content Area
 
@@ -29,9 +29,9 @@ The border of an element is typically rendered by a [BorderPrimitive]({%slug win
 
 ## Margin
 
-Margin is the area outside an element. Margin affects the spacing between elements. For example, if an element with a non-zero left margin is next to an element with a non-zero right margin, the total margins the sum of the two fields as shown in the figure below. Margins are always transparent. The RadElement __Margin__property is a Padding type and represents the rectangle dimensions. In the example below the control on the left has no margins. The control on the right has ten pixel margins. 
+Margin is the area outside an element. Margin affects the spacing between elements. For example, if an element with a non-zero left margin is next to an element with a non-zero right margin, the total margins is the sum of the two fields as shown in the figure below. Margins are always transparent. The RadElement __Margin__property is a Padding type and represents the rectangle dimensions. In the example below the control on the left has no margins. The control on the right has ten pixel margins. 
 
-![](images/Structure002.png)
+![Structure002](images/Structure002.png)
 
 #### Two elements with margins
 
@@ -95,3 +95,21 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [Clipping]({%slug winforms/telerik-presentation-framework/layout/clipping%})
+
+* [Custom Layouts]({%slug winforms/telerik-presentation-framework/layout/custom-layouts%})
+
+* [Element Offset Calculations]({%slug winforms/telerik-presentation-framework/layout/element-offset-calculations%})
+
+* [Layout Activation]({%slug winforms/telerik-presentation-framework/layout/layout-activation%})
+
+* [Layout Logic]({%slug winforms/telerik-presentation-framework/layout/layout-logic%})
+
+* [Layout Overview]({%slug winforms/telerik-presentation-framework/layout/layout-overview%})
+
+* [RadControl Testing Considerations]({%slug winforms/telerik-presentation-framework/layout/radcontrol-testing-considerations%})
+
+* [Sample Arrange Stage Scenarios]({%slug winforms/telerik-presentation-framework/layout/sample-arrange-stage-scenarios%})
+

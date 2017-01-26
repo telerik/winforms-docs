@@ -1,7 +1,7 @@
 ---
 title: Building TPF Based Controls
-page_title: Building TPF Based Controls | UI for WinForms Documentation
-description: Building TPF Based Controls
+page_title: Building TPF Based Controls | Telerik Presentation Framework
+description: RadControls are built by composing RadElement trees instead of overriding the OnPaint method.
 slug: winforms/telerik-presentation-framework/overview/building-tpf-based-controls
 tags: building,tpf,based,controls
 published: True
@@ -10,8 +10,6 @@ previous_url: tpf-overview-building-tpf-controls
 ---
 
 # Building TPF Based Controls
-
-## 
 
 RadControls are built by composing RadElement trees instead of overriding the OnPaint method. [Elements]({%slug winforms/telerik-presentation-framework/elements/overview%}) can take the form of lightweight [primitive elements]({%slug winforms/telerik-presentation-framework/elements/overview%}) that draw the individual parts of a control to the form, [layout elements]({%slug winforms/telerik-presentation-framework/elements/overview%}) that are responsible for arranging primitives on the form, and [component elements]({%slug winforms/telerik-presentation-framework/elements/overview%}) that handle user input and are responsible for creating layout and primitive elements. Elements can be nested to any arbitrary level of complexity.
 
@@ -22,6 +20,10 @@ RadControls are built by composing RadElement trees instead of overriding the On
 * Layout elements descending from [LayoutPanel]({%slug winforms/telerik-presentation-framework/class-hierarchy/layoutpanel%}) manage the arrangement of child elements. For example, StackLayoutPanel arranges elements in a horizontal or vertical stack that may wrap to new lines. StripLayoutPanel orders elements in a single vertical or horizontal line. 
 
 * [RadControls]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcontrol%}) are typically thin wrappers around a component element, handle any direct communication with Windows and establish communication to the RadElement tree by creating a root element and adding elements to the root element. RadLabel for example simply creates a root element and then creates and adds a RadLabelElement to the root element.
-					
 
 
+# See Also
+
+* [Telerik Presentation Framework Overview]({%slug winforms/telerik-presentation-framework/overview%})
+
+* [Getting Started]({%slug winforms/telerik-presentation-framework/getting-started/getting-started%})

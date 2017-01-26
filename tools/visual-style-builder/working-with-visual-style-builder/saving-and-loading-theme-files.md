@@ -1,7 +1,7 @@
 ---
 title: Saving and Loading Theme Files
-page_title: Saving and Loading Theme Files | UI for WinForms Documentation
-description: Saving and Loading Theme Files
+page_title: Saving and Loading Theme Files | UI for WinForms Tools
+description: This article shows how the themes are stored and the reloaded in Visual Style Builder. 
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files
 tags: saving,and,loading,theme,files
 published: True
@@ -11,11 +11,9 @@ previous_url: tools-visual-style-builder-working-with-visual-style-builder-savin
 
 # Saving and Loading Theme Files
 
-
-
 ## Overview
 
-The styles for each separate control are situated in a single XML file, accompanied by the name of the theme to which these styles belong and some further information  needed by the mechanism to map the styles to the corresponding control. The following code snippet briefly demonstrates the common structure of a XML theme file:
+The styles for each separate control are situated in a single XML file, accompanied by the name of the theme which these styles belong to and some further information needed by the mechanism to map the styles to the corresponding control. The following code snippet briefly demonstrates the common structure of a XML theme file:
 
 ````XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -35,7 +33,7 @@ The styles for each separate control are situated in a single XML file, accompan
 </XmlTheme>
 ````
 
-In general, the XML theme file contains Property Setting Groups that represent the style settings, StyleSheet Relations that map the styles to an element/control, and a Theme Name attribute. One of the new concepts that are introduced is the Theme Repository. The idea behind it is to store common style property settings that can be easily reused throughout the whole theme. Modifying a single repository item will change the appearance of all elements/controls that use this repository item. In this way a theme can be created and modified in minutes. The repository can be reused throughout different themes. However, there can be only one repository associated with a specific theme. The association of a repository with a theme is made by giving assigning the same name to the repository and the theme. Each theme can have a repository containing items that can be reused throughout the theme. A theme and a repository are connected by using the same name both for the theme and for the repository. The repository is situated in a separate XML file that generally has the following structure:
+In general, the XML theme file contains __Property Setting Groups__ that represent the style settings, __StyleSheet Relations__ that map the styles to an element/control, and a __Theme Name__ attribute. One of the new concepts that are introduced is the Theme Repository. The idea behind it is to store common style property settings that can be easily reused throughout the whole theme. Modifying a single repository item will change the appearance of all elements/controls that use this repository item. In this way a theme can be created and modified in minutes. The repository can be reused throughout different themes. However, there can be only one repository associated with a specific theme. The association of a repository with a theme is made by giving assigning the same name to the repository and the theme. Each theme can have a repository containing items that can be reused throughout the theme. A theme and a repository are connected by using the same name both for the theme and for the repository. The repository is situated in a separate XML file that generally has the following structure:
 
 ````XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -53,7 +51,7 @@ In general, the XML theme file contains Property Setting Groups that represent t
 </XmlTheme>
 ````
 
-As you can see, the repository contains a collection of Repository Items which contain property settings. Each repository item is uniquely identified by a key and additionally described by a name which is displayed to the user. The key is important when reusing the same repository item for different elements/controls throughout the Visual Style Builder. The Theme Name here is ‘MyTheme’ which means that this repository is associated with all XML theme files that have the same ThemeName attribute value.
+As you can see, the repository contains a collection of __Repository Items__ which contain property settings. Each repository item is uniquely identified by a key and additionally described by a name which is displayed to the user. The key is important when reusing the same repository item for different elements/controls throughout the Visual Style Builder. The __Theme Name__ here is ‘MyTheme’ which means that this repository is associated with all XML theme files that have the same ThemeName attribute value.
         
 
 ## Loading Themes
@@ -76,7 +74,7 @@ and assume that the both
 
 * MyTheme_Telerik_WinControls_UI_RadMenu.xml
 
-have their ThemeName attribute set to ‘MyTheme’, whereas the *AnotherTheme_Telerik_WinControls_UI_RadDropDownButton.xml* file defines the ThemeName as ‘AnotherTheme’, upon loading of all three files, the Visual Style Builder will display a  dialog informing you that multiple themes are selected. In this dialog you can choose which of these  themes should be actually loaded in the application:
+have their ThemeName attribute set to ‘MyTheme’, whereas the *AnotherTheme_Telerik_WinControls_UI_RadDropDownButton.xml* file defines the ThemeName as ‘AnotherTheme’, upon loading of all three files, the Visual Style Builder will display a dialog informing you that multiple themes are selected. In this dialog you can choose which of these  themes should be actually loaded in the application:
 
 ![tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files 002](images/tools-visual-style-builder-working-with-visual-style-builder-saving-and-loading-theme-files002.png)
 
@@ -86,7 +84,7 @@ The upper part of the dialog contains a Grid View that displays a row for each u
 
 * If the theme being loaded has no repository but there are other repositories (with different names) found in the list of the loaded files, selecting this repositories by using the dialog above will merge them into one repository upon saving the theme.  
 
-After selecting a theme and pressing the Ok button,  the theme repositories found will be merged if needed and if there is already a loaded theme in the Visual Style Builder, the user will be prompted to safe their changes. After that, the old theme will be unloaded and the new theme will be loaded and applied to the controls accordingly. If the user clicks ‘Cancel’ on the save prompt, no action will be taken.
+After selecting a theme and pressing OK, the theme repositories found will be merged if needed and if there is already a loaded theme in the Visual Style Builder, the user will be prompted to safe their changes. After that, the old theme will be unloaded and the new theme will be loaded and applied to the controls accordingly. If the user clicks ‘Cancel’ on the save prompt, no action will be taken.
 
 
 >caution If you open the Visual Style Builder and load a single repository file, this file will be considered as a theme and the Visual Style Builder will display its name in the caption of the main form. After that, each time you load a new file that has the same theme name, it will be applied to the corresponding control. If you load another repository, it will be merged with the existing one.
@@ -200,4 +198,18 @@ The third option entirely ignores repository item conflicts. Items are overridde
 
 >note Generally, repository item conflicts within the same repository should not happen. Since the Visual Style Builder checks for key uniqueness each time you add/edit repository items, it is not possible to save a repository that contains items with the same key.
 >
+
+
+# See Also
+* [Applying Font repository items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/applying-font-repository-items%})
+
+* [Color Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%})
+
+* [Loading Predefined Themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
+
+* [Loading themes created with the old VSB]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-themes-created-with-the-old-vsb%})
+
+* [Precedence Example Visibility Property]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property%})
+
+* [Property Precedence Rules]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules%})
 

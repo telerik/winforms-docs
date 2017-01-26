@@ -1,7 +1,7 @@
 ---
 title: Custom Context Menu
-page_title: Custom context Menu | UI for WinForms Documentation
-description: Custom context Menu
+page_title: Custom context Menu | RadVirtualGrid
+description: This article shows how you can create and usea custom context menu in RadVirtualGrid.
 slug: winforms/virtualgrid/context-menu/custom-context-menu
 tags: virtualgrid, menu, custom
 published: True
@@ -220,3 +220,9 @@ End Sub
 |Data Cells Menu|Header Cells Menu|
 |----|----|
 |![virtualgrid-context-menu 002](images/virtualgrid-custom-context-menu002.png)|![virtualgrid-context-menu 003](images/virtualgrid-custom-context-menu003.png)|
+
+# See Also
+* [Overview]({%slug winforms/virtualgrid/context-menu/context-menu%})
+
+* [Modifying the Default Context Menu]({%slug winforms/virtualgrid/context-menu/modifying-the-default-context-menu%})
+

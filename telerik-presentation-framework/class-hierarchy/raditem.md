@@ -1,6 +1,6 @@
 ---
 title: RadItem
-page_title: RadItem | UI for WinForms Documentation
+page_title: RadItem | Telerik Presentation Framework
 description: RadItem represents a visual element that can be added to an ItemsCollection and can be selected, deleted or moved in Visual Studio at design time.
 slug: winforms/telerik-presentation-framework/class-hierarchy/raditem
 tags: raditem
@@ -11,9 +11,7 @@ previous_url: tpf-class-hierarchy-raditem
 
 # RadItem
 
-## 
-
-RadItem represents a visual element that can be added to an ItemsCollection and can be selected, deleted or moved in Visual Studio at design time. Other characteristics introduced by RadItem:
+__RadItem__ represents a visual element that can be added to an ItemsCollection and can be selected, deleted or moved in Visual Studio at design time. Other characteristics introduced by __RadItem__:
 
 * Handles mouse and keyboard input.
 
@@ -26,3 +24,21 @@ RadItem represents a visual element that can be added to an ItemsCollection and 
 * Allows the item to be connected to command binding, i.e. allowing ShortCuts to fire actions in
 
 * Adds accessibility properties to aid navigation using the item.
+
+# See Also
+* [BasePrimitive]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%})
+
+* [Choosing an Ancestor Class]({%slug winforms/telerik-presentation-framework/class-hierarchy/choosing-an-ancestor-class%})
+
+* [Class Hierarchy Overview]({%slug winforms/telerik-presentation-framework/class-hierarchy/class-hierarchy-overview%})
+
+* [LayoutPanel]({%slug winforms/telerik-presentation-framework/class-hierarchy/layoutpanel%})
+
+* [RadComponent, RadComponentElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcomponent,-radcomponentelement%})
+
+* [RadControl]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcontrol%})
+
+* [RadElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radelement%})
+
+* [RadObject]({%slug winforms/telerik-presentation-framework/class-hierarchy/radobject%})
+

@@ -1,7 +1,7 @@
 ---
 title: Customize RadPrintDocument
-page_title: Customize RadPrintDocument | UI for WinForms Documentation
-description: Customize RadPrintDocument
+page_title: Customize RadPrintDocument | Telerik Presentation Framework
+description: In this example we will modify the header of the print document by introducing new properties, defining fonts, color and a new layout.
 slug: winforms/telerik-presentation-framework/printing-support/how-to/customize-radprintdocument
 tags: customize, header, radprintdocument
 published: True
@@ -12,16 +12,16 @@ position: 1
 
 The __RadPrintDocument__ class can be easily customized through inheritance. The following methods are virtual and they can be overridden with a custom implementation:
 
-* __PrintHeader__: Defines how the header will be printed.
-* __PrintFooter__: Responsible for painting the footer.
-* __PrintWatermark__: Paints the watermark. 
-* __PrintLogo__: Paints the logo.
+* __PrintHeader:__ Defines how the header will be printed.
+* __PrintFooter:__ Responsible for painting the footer.
+* __PrintWatermark:__ Paints the watermark. 
+* __PrintLogo:__ Paints the logo.
 
 >caption Fig. 1 Custom Header<br>![telerik-presentation-frameworkprinting-support-how-to-customize-radprintdocument](images/telerik-presentation-frameworkprinting-support-how-to-customize-radprintdocument001.png)
 
-In this example we will modify the header of the print document by introducing new properties, defining fonts, color and a new layout. The control which we will be printing is going to be __RadGridView__ bound to the *Categories* table of the *Northwind* database. An example is availabe [here]({%slug winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset%}).         
+In this example we will modify the header of the print document by introducing new properties, defining fonts, color and a new layout. The control which we will be printing is going to be __RadGridView__ bound to the *Categories* table of the *Northwind* database. An example is available [here]({%slug winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset%}).         
 
-Let us first create a class extending __RadPrintDocument__ and define six new properties which will be used for painting a text with a speicific font and size. We are also going to override the __PrintHeader__ method and draw the contents of the newly introduced properties at specific locations:
+Let us first create a class extending __RadPrintDocument__ and define six new properties which will be used for painting a text with a specific font and size. We are also going to override the __PrintHeader__ method and draw the contents of the newly introduced properties at specific locations:
 
 #### Inheriting RadPrintDocument
 
@@ -163,3 +163,7 @@ dialog.Show()
 ````
 
 {{endregion}}
+
+# See Also
+* [Create Prinatble Panel]({%slug winforms/telerik-presentation-framework/printing-support/how-to/create-prinatble-panel%})
+

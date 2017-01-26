@@ -1,7 +1,7 @@
 ---
 title: API
-page_title: API | UI for WinForms Documentation
-description: Formatting Data Cells
+page_title: API | RadVirtualGrid
+description: This article shows which are the properties responsible for the editing behavior in RadVirtualGrid.
 slug: winforms/virtualgrid/cells/api
 tags: virtualgrid, editors, api
 published: True
@@ -28,3 +28,17 @@ The editing process can be controlled by using the following properties and meth
     - __BeginEditOnKeystroke__
     - __BeginEditOnKeystrokeOrF2__
     - __BeginEditProgrammatically__
+
+# See Also
+* [Changing the Default Editors]({%slug winforms/virtualgrid/cells/changing-default-editor%})
+
+* [Changing Editors Properties]({%slug winforms/virtualgrid/editing/editors-properties%})
+
+* [Data Validation]({%slug winforms/virtualgrid/editing/data-validation%})
+
+* [Overview]({%slug winforms/virtualgrid/editing/editors%})
+
+* [Events]({%slug winforms/virtualgrid/editing/events%})
+
+* [Using Custom Editors]({%slug winforms/virtualgrid/editing/using-custom-editors%})
+

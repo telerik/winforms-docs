@@ -1,7 +1,7 @@
 ---
 title: Styling RadRibbonBar
-page_title: Styling RadRibbonBar | UI for WinForms Documentation
-description: Styling RadRibbonBar
+page_title: Styling RadRibbonBar | UI for WinForms Tools
+description: Create a custom theme for the RadRibbonBar starting from an existing one.
 slug: winforms/tools/visual-style-builder/control-specific-theme-tutorials/styling-radribbonbar
 tags: styling,radribbonbar
 published: True
@@ -11,13 +11,15 @@ previous_url: tools-visual-style-builder-control-specific-theme-tutorials-stylin
 
 # Styling RadRibbonBar
 
-## Creating a custom Theme for the RadRibbonBar starting from an existing one
+## Creating a custom theme for the RadRibbonBar starting from an existing one
 
 After introducing the new Visual Style Builder a lot of our customers asked how to open an existing theme so that it can be modified achieving a new visual style. Indeed, this is the preferred way to create a new theme if you do not want to begin from scratch by creating an entirely new repository and applying the items throughout the controls set.
 
 In this article we are going to demonstrate how to create a new theme for the RadRibbonBar using the Windows 7 theme as a starting point. Many of the hints and approaches used here are also applicable when styling other controls. Please note that in this example the repository of the Windows 7 theme will be modified which will surely cause other controls to change their styles as well (remember that repository items are reused among controls). 
 
 Let’s start by opening the Visual Style Builder with the Windows 7 theme:
+
+>note The Following article shows how you can load the predefined themes: [Loadin Predefined Themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
 
 ![tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 001](images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar001.png)
 

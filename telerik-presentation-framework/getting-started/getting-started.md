@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | Telerik Presentation Framework
+description: This article demonstrates how you can create custom control using the Telerik Presentation Framework.
 slug: winforms/telerik-presentation-framework/getting-started/getting-started
 tags: getting,started
 published: True
@@ -27,9 +27,9 @@ The example control will contain a filled area and a centered text primitive. 
 
 1. In Visual Studio, create a new __Windows Controls Library__. In this example the library will be named "RadControlLib001".
 
-1. Add references to Telerik.WinControls.UI.dll, TelerikCommon.dll and Telerik.WinControls.dll
+1. Add references to __Telerik.WinControls.UI.dll__, __TelerikCommon.dll__ and __Telerik.WinControls.dll__.
 
-1. Delete the UserControl1, since we will not need it
+1. Delete "Class1", since we will not need it.
 
 1. In the controls library add a new class "MyPanelElement.cs".
 
@@ -37,9 +37,9 @@ The example control will contain a filled area and a centered text primitive. 
 
 >note Notice in the code below:
 * MyPanelElement descends from RadItem so that it can be used in the designer.
-* In the CreateChildElements() method the Class property of each primitive is assigned. This allows Telerik Presentation Foundation to apply themes to specific parts of the control.
-* In the CreateChildElements() method the TextPrimitive Text property is bound to the CurrentTimeProperty.
-* A standard CLR style property is defined for CurrentTime that wraps the Dependency property.>The effect of this configuration of properties is that when the CurrentTime property is changed, either by a timer or elsewhere in the code, the dependency property CurrentTimeProperty value changes, the bound TextPrimitive Text property is assigned the CurrentTimeProperty value and the display updates to show the new time.
+* In the CreateChildElements method the Class property of each primitive is assigned. This allows Telerik Presentation Foundation to apply themes to specific parts of the control.
+* In the CreateChildElements method the TextPrimitive Text property is bound to the CurrentTimeProperty.
+* A standard CLR style property is defined for CurrentTime that wraps the Dependency property. The effect of this configuration of properties is that when the CurrentTime property is changed, either by a timer or elsewhere in the code, the dependency property CurrentTimeProperty value is changed. Then the bound TextPrimitive Text property is assigned the CurrentTimeProperty value and the display updates to show the new time.
 >
 
 #### Creating MyPanelElement
@@ -165,7 +165,8 @@ End Class
 >
 * MyPanel descends from RadControl.
 * The PanelElement property surfaces the underlying element for general purpose uses. In this example the PanelElement property is used in the theme designer.
-* In the CreateChildItems() method, MyPanelElement is created and added to the root element Children collection.>
+* In the CreateChildItems() method, MyPanelElement is created and added to the root element Children collection.
+>
 
 #### Creating MyPanel control
 
@@ -255,12 +256,8 @@ End Class
 ## Testing the Control
 
 1. Add a new __Windows Forms__ project to the solution to test the control library.
-          
 
 1. Add a reference to the control library.
-
-    ![tpf-getting-started 002](images/tpf-getting-started002.png) 
-          
 
 1. Drop the __MyPanel__ control from the __ToolBox__ to the form.
           
@@ -268,6 +265,11 @@ End Class
 1. In the Properties Window set the __Active__ property for MyPanel to __True__.
           
 
-The control should now look something like this:
+The control should now look like this:
 
 ![tpf-getting-started 003](images/tpf-getting-started003.png)
+
+# See Also
+* [Telerik Presentation Framework Overview]({%slug winforms/telerik-presentation-framework/overview%})
+
+* [Building TPF Based Controls]({%slug winforms/telerik-presentation-framework/overview/building-tpf-based-controls%})

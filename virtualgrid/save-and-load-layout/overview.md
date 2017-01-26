@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Save and Load Layout | UI for WinForms Documentation
-description: Save and Load Layout
+page_title: Save and Load Layout | RadVirtualGrid
+description: Save/Load layout functionality gives your applications the opportunity to preserve user grid settings such as column order and restore them later. 
 slug: winforms/virtualgrid/save-and-load-layout/overview
 tags: save-and-load-layout
 published: True
@@ -10,7 +10,7 @@ position: 0
 
 # Save and Load Layout Overview
 
-Save/Load layout functionality gives your applications the opportunity to preserve user grid settings such as column order and restore them later. Those layout settings are written in a xml file.
+Save/Load layout functionality gives your applications the opportunity to preserve user grid settings such as column order and restore them later. Those layout settings are written in a XML file.
 
 Here is a sample demonstrating how you can implement a *Save Layout* button event handler:
 
@@ -94,4 +94,8 @@ End Sub
 
 
 
+
+
+# See Also
+* [Advanced]({%slug winforms/virtualgrid/save-and-load-layout/advanced%})
 

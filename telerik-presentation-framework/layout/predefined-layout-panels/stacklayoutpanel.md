@@ -1,7 +1,7 @@
 ---
 title: StackLayoutPanel
-page_title: StackLayoutPanel | UI for WinForms Documentation
-description: StackLayoutPanel
+page_title: StackLayoutPanel | Telerik Presentation Framework
+description: StackLayoutPanel is a panel that handles the layout of multiple elements in a vertical or horizontal row.
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/stacklayoutpanel
 tags: stacklayoutpanel
 published: True
@@ -11,7 +11,7 @@ previous_url: tpf-layout-predefined-layout-panels-stacklayoutpanel
 
 # StackLayoutPanel
 
-StackLayoutPanel is a panel that handles the layout of multiple elements in a vertical or horizontal row. The following example demonstrate how you can easily emply this layout to work for you
+StackLayoutPanel is a panel that handles the layout of multiple elements in a vertical or horizontal row. The following example demonstrate how you can easily emply this layout to work for you.
 
 ## StackLayoutPanel example
 
@@ -79,3 +79,15 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [BoxLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/boxlayout%})
+
+* [DockLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/docklayout%})
+
+* [GridLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/gridlayout%})
+
+* [ImageAndTextLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/imageandtextlayoutpanel%})
+
+* [WrapLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/wraplayoutpanel%})
+

@@ -1,7 +1,7 @@
 ---
 title: Animations
-page_title: Animations | UI for WinForms Documentation
-description: Animations
+page_title: Animations | Telerik Presentation Framework
+description: This article shows how you can animate any elements using the Telerik Presentation Framework.
 slug: winforms/telerik-presentation-framework/animations
 tags: animations
 published: True
@@ -11,22 +11,22 @@ previous_url: tpf-animations
 
 # Animations
 
-Using the [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) you can animate almost any element property. To do this you should use the __AnimatedPropertySetting__ class. The class constructors takes five arguments:
-        
+Using the [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) you can animate almost any element property. To achieve this you should use the __AnimatedPropertySetting__ class. The class constructors takes five arguments:
 
-* The first argument of the AnimatedPropertySetting is the __RadProperty__ to animate
+* The first argument of the __AnimatedPropertySetting__ is the __RadProperty__ to animate.
 
-* The second one is the __start value__
+* The second one is the __start value__.
 
-* Next is the __end value__
+* Next is the __end value__.
 
-* The forth argument takes the __number of frames__
+* The forth argument takes the __number of frames__.
 
-* And the last argument is the __time interwal between frames__ in miliseconds
+* And the last argument is the __time interval between frames__ in milliseconds
 
 ## Animate opacity
 
-The following example animates the __Opacity__ property of the RadButton's fill primitive, changing it from 1 to 0 (full transparent) and vice versa:
+The following example animates the __Opacity__ property of the RadButton's FillPrimitive, changing it from 1 to 0 (full transparent) and vice versa:
+
 ![tpf-animations 001](images/tpf-animations001.gif)
 
 #### Animate button's Opacity property
@@ -67,7 +67,7 @@ End Sub
 
 ## Animate margin
 
-Here is how to animate the __Margin__ property of the RadButton's fill primitive:
+Here is how to animate the __Margin__ property of the RadButton's FillPrimitive:
 
 ![tpf-animations 002](images/tpf-animations002.gif)
 
@@ -160,3 +160,14 @@ End Sub
 ````
 
 {{endregion}}
+
+# See Also
+* [Dependency Properties]({%slug winforms/telerik-presentation-framework/dependency-properties%})
+
+* [Handling User Input]({%slug winforms/telerik-presentation-framework/handling-user-input%})
+
+* [HTML-like Text Formatting]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%})
+
+* [Inherit themes from RadControls derivatives]({%slug winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives%})
+
+

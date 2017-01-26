@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Context Menu | UI for WinForms Documentation
-description: Context Menu
+page_title: Context Menu | RadVirtualGrid
+description: RadVirtualGrid provides default context menu for its cells. This context menu will appear every time the user right-clicks the RadVirtualGrid. 
 slug: winforms/virtualgrid/context-menu/context-menu
 tags: virtualgrid, menu
 published: True
@@ -12,15 +12,15 @@ position: 0
 
 __RadVirtualGrid__ provides default context menu for its cells. This context menu will appear every time the user right-clicks the __RadVirtualGrid__. Depending on the clicked cell element, a specific context menu is displayed:
 
-#### Default context menu for data cells
+>caption Figure 1: Default context menu for data cells
  
 ![virtualgrid-context-menu 001](images/virtualgrid-context-menu001.png)
 
-#### Default context menu for header cells
+>caption Figure 2: Default context menu for header cells
 
 ![virtualgrid-context-menu 002](images/virtualgrid-context-menu002.png)
 
-#### Default context menu for new row
+>caption Figure 3: Default context menu for new row
 
 ![virtualgrid-context-menu 003](images/virtualgrid-context-menu003.png)
 
@@ -64,3 +64,9 @@ Me.RadVirtualGrid1.AllowColumnHeaderContextMenu = False
 
 
  
+
+# See Also
+* [Custom Context Menu]({%slug winforms/virtualgrid/context-menu/custom-context-menu%})
+
+* [Modifying the Default Context Menu]({%slug winforms/virtualgrid/context-menu/modifying-the-default-context-menu%})
+

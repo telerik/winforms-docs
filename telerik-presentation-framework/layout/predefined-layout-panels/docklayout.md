@@ -1,7 +1,7 @@
 ---
 title: DockLayout
-page_title: DockLayout | UI for WinForms Documentation
-description: DockLayout
+page_title: DockLayout | Telerik Presentation Framework
+description: DockLayoutPanel is a panel that docks its child elements to a predefined-position.
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/docklayout
 tags: docklayout
 published: True
@@ -11,19 +11,15 @@ previous_url: tpf-layout-predefined-layout-panels-docklayout
 
 # DockLayout
 
-
-
-## 
-
 __DockLayoutPanel__ is a panel that docks its child elements to a predefined-position. The possible Dock positions are *Left*, *Top*, *Right* and *Bottom*.
 
 __Methods and properties:__
 
-* __SetDock(RadElement element, Dock dock)__ - is a static method that assigns an element a given docking position.
+* __SetDock(RadElement element, Dock dock):__ A static method that assigns an element a given docking position.
 
-* __LastChildFill__ - indicates whether the dock position of the last child should be ignored, so that the element stretches to fill the area left by the other children elements. When this property is set to	*false* the dock position of the last child is taken under consideration, thus leaving an empty area in the center of the panel.
+* __LastChildFill:__ - Indicates whether the dock position of the last child should be ignored, so that the element stretches to fill the area left by the other children elements. When this property is set to *false* the dock position of the last child is taken under consideration, thus leaving an empty area in the center of the panel.
 
-The Dock of each element is set through the static method of DockLayoutPanel __SetDock__.
+The Dock of each element is set through the static __SetDock__ method.
 
 {{source=..\SamplesCS\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.cs region=snippet1}} 
 {{source=..\SamplesVB\TPF\Layouts\PredefinedLayoutPanels\MyDockLayoutPanelElement.vb region=snippet1}} 
@@ -208,3 +204,15 @@ Public Class MyDockLayoutPanelElement
 ````
 
 {{endregion}}
+
+# See Also
+* [BoxLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/boxlayout%})
+
+* [GridLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/gridlayout%})
+
+* [ImageAndTextLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/imageandtextlayoutpanel%})
+
+* [StackLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/stacklayoutpanel%})
+
+* [WrapLayoutPanel]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/wraplayoutpanel%})
+

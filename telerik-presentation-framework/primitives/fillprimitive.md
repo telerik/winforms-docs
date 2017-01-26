@@ -1,7 +1,7 @@
 ---
 title: FillPrimitive
-page_title: FillPrimitive | UI for WinForms Documentation
-description: FillPrimitive
+page_title: FillPrimitive | Telerik Presentation Framework
+description: The FillPrimitive class is responsible for filling in an area on the screen.
 slug: winforms/telerik-presentation-framework/primitives/fillprimitive
 tags: fillprimitive
 published: True
@@ -11,46 +11,31 @@ previous_url: tpf-primitives-fillprimitive
 
 # FillPrimitive
 
-## 
-
 The __FillPrimitive__ class is responsible for filling in an area on the screen. It has a variety of properties that allow you to control the style of the fill:
-        
 
-* __GradientStyle__ allows you to select from solid, linear, radial, glass, office glass, office glass rectangle, gel, and vista styles.
-          
+* __GradientStyle:__ Allows you to select from solid, linear, radial, glass, office glass, office glass rectangle, gel, and vista styles.
 
-* __Solid__: The color of the fill is set by the __BackColor__ property.
-          
+* __Solid:__ The color of the fill is set by the __BackColor__ property.
 
-* __Linear__: The shading of the fill is set by the __BackColor__, __BackColor2__, __BackColor3__, and __BackColor4__ properties. The angle of the shading is set by the __GradientAngle__ property.
-          
+* __Linear:__ The shading of the fill is set by the __BackColor__, __BackColor2__, __BackColor3__, and __BackColor4__ properties. The angle of the shading is set by the __GradientAngle__ property.
 
-* __Radial__: The shading of the fill is set by the __BackColor__, __BackColor2__, and __BackColor3__ properties. The __GradientPercentage__ property controls the width of the outer color band and the __GradientPercentage2__ property controls the width of the middle color band.
-          
+* __Radial:__ The shading of the fill is set by the __BackColor__, __BackColor2__, and __BackColor3__ properties. The __GradientPercentage__ property controls the width of the outer color band and the __GradientPercentage2__ property controls the width of the middle color band.
 
 * __Glass:__ The shading of the fill is set by the __BackColor__,  __BackColor2__, __BackColor3__, and __BackColor4__ properties. The __GradientPercentage__ property controls the position of the horizontal dividing line in the fill.
-          
 
-* __OfficeGlass__: The shading of the fill is set by the __BackColor__,  __BackColor2__, __BackColor3__, and __BackColor4__ properties. The __GradientPercentage__ and __GradientPercentage2__ properties control the relative amounts of the different colors in the fill.
-          
+* __OfficeGlass:__ The shading of the fill is set by the __BackColor__,  __BackColor2__, __BackColor3__, and __BackColor4__ properties. The __GradientPercentage__ and __GradientPercentage2__ properties control the relative amounts of the different colors in the fill.
 
 * __OfficeGlassRect:__ The shading of the fill is set by the __BackColor__, __BackColor2__, __BackColor3__, and __BackColor4__  properties. The __GradientPercentage__ and __GradientPercentage2__ properties control the relative amounts of the different colors in the fill.
-          
 
-* __Gel__: The shading of the fill is set by the __BackColor__ and __BackColor2__ properties. The __GradientPercentage__ property controls the height of the highlight bubble.
-          
+* __Gel:__ The shading of the fill is set by the __BackColor__ and __BackColor2__ properties. The __GradientPercentage__ property controls the height of the highlight bubble.
 
-* __Vista__: The shading of the fill is set by the __BackColor__, __BackColor2__, __BackColor3__, and __BackColor4__ properties. The __GradientPercentage__ and __GradientPercentage2__ properties control the position of the horizontal lines in the fill.
-          
+* __Vista:__ The shading of the fill is set by the __BackColor__, __BackColor2__, __BackColor3__, and __BackColor4__ properties. The __GradientPercentage__ and __GradientPercentage2__ properties control the position of the horizontal lines in the fill.
 
 * __BackColor__, __BackColor2__, __BackColor3__, and  __BackColor4__ are combined in various ways depending on the gradient style that you have selected.
-          
 
-* __GradientAngle__ sets the angle of the linear gradient.
-          
+* __GradientAngle:__ Sets the angle of the linear gradient.
 
-* __GradientPercentage__ and __GradientPercentage2__ adjust drawing parameters for the various styles.
-          
+* __GradientPercentage, GradientPercentage2:__ Adjust drawing parameters for the various styles.
 
 The example below iterates the GradientStyles enumeration and creates a FillPrimitive sample for each value.
 
@@ -139,3 +124,21 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [ArrowPrimitive]({%slug winforms/telerik-presentation-framework/primitives/arrowprimitive%})
+
+* [BorderPrimitive]({%slug winforms/telerik-presentation-framework/primitives/borderprimitive%})
+
+* [CheckPrimitive]({%slug winforms/telerik-presentation-framework/primitives/checkprimitive%})
+
+* [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%})
+
+* [GripPrimitive]({%slug winforms/telerik-presentation-framework/primitives/gripprimitive%})
+
+* [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%})
+
+* [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})
+
+* [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%})
+

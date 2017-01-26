@@ -1,7 +1,7 @@
 ---
 title: ImagePrimitive
-page_title: ImagePrimitive | UI for WinForms Documentation
-description: ImagePrimitive
+page_title: ImagePrimitive | Telerik Presentation Framework
+description: Use the __ImagePrimitive__ class whenever you need to draw an image as part of a control.
 slug: winforms/telerik-presentation-framework/primitives/imageprimitive
 tags: imageprimitive
 published: True
@@ -11,17 +11,16 @@ previous_url: tpf-primitives-imageprimitive
 
 # ImagePrimitive
 
-
 Use the __ImagePrimitive__ class whenever you need to draw an image as part of rendering a control. The properties specific to displaying images are:
 
-* __Image:__ a Windows Forms standard __Image__ object.
+* __Image:__ A Windows Forms standard __Image__ object.
 
-* __ImageKey:__ the key of an image in an __ImageList__ control.
+* __ImageKey:__ The key of an image in an __ImageList__ control.
 
-* __ImageIndex:__ the index of an image in an __ImageList__ control.
+* __ImageIndex:__ The index of an image in an __ImageList__ control.
 
-* __ImageScaling:__ either __None__ or __ScaleToFit__ controls whether the image should be scaled to fit the available space.
-          
+* __ImageScaling:__ Either __None__ or __ScaleToFit__ controls whether the image should be scaled to fit the available space.
+
 
 >note The __ImageList__ property is introduced in the RadControl class.
 >
@@ -97,3 +96,21 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [ArrowPrimitive]({%slug winforms/telerik-presentation-framework/primitives/arrowprimitive%})
+
+* [BorderPrimitive]({%slug winforms/telerik-presentation-framework/primitives/borderprimitive%})
+
+* [CheckPrimitive]({%slug winforms/telerik-presentation-framework/primitives/checkprimitive%})
+
+* [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%})
+
+* [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%})
+
+* [GripPrimitive]({%slug winforms/telerik-presentation-framework/primitives/gripprimitive%})
+
+* [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})
+
+* [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%})
+

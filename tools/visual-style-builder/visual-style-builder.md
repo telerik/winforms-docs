@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Visual Style Builder | UI for WinForms Documentation
-description: VisualStyleBuilder provides the key flexibility behind the Telerik UI for WinForms.
+page_title: Visual Style Builder | UI for WinForms Tools
+description: Visual Style Builder is an end-user application that allows fast and intuitive styling of all controls in the Windows Forms suite.
 slug: winforms/tools/visual-style-builder
 tags: visual,style,builder
 published: True
@@ -11,8 +11,7 @@ previous_url: tools-visual-style-builder-overview
 
 # Visual Style Builder
 
-
-VisualStyleBuilder provides the key flexibility behind the Telerik UI for WinForms. Visual Style Builder runs within the Visual Studio design environment or as a stand alone application. With Visual Style Builder you can:
+ Visual Style Builder is a stand alone application that allows you to create custom or edit the predefined themes. With Visual Style Builder you can:
 
 * Set properties
 
@@ -21,6 +20,8 @@ VisualStyleBuilder provides the key flexibility behind the Telerik UI for WinFor
 * Animate changes
 
 * Save themes 
+
+* Edit the predefined themes. 
 
 ## Set Properties
 
@@ -42,3 +43,13 @@ When working with complex controls in Visual Style Builder, you can inherit prop
 |[Styling Basics with Visual Style Builder for WinForms](http://tv.telerik.com/watch/winforms/visualstylebuilder/styling-basics-with-visual-style-builder-winforms)<br>In this video, you will learn how to create a basic theme using repositories in Visual Style Builder for WinForms. You will then learn how to use this theme in your Telerik UI for WinForms based applications. (Runtime: 09:12)|![tools-visual-style-builder-overview 003](images/tools-visual-style-builder-overview003.png)|
 |[Introduction to the Visual Style Builder for WinForms](http://tv.telerik.com/watch/winforms/visualstylebuilder/introduction-new-visual-style-builder-winforms)<br>In this recorded webinar, you will learn how to build themes using the latest version of Visual Style Builder. You will also learn what Theme Repositories are and how they make creating themes easier. (Runtime: 42:56)|![tools-visual-style-builder-overview 002](images/tools-visual-style-builder-overview002.png)|
 |[Changing Themes at Run Time with Telerik UI for WinForms](http://tv.telerik.com/watch/winforms/visualstylebuilder/changing-themes-at-run-time-with-radcontrols-winforms)<br>In this video, you will learn how to give your users the ability to choose between Telerik themes and custom themes at run time. (Runtime: 08:42)|![tools-visual-style-builder-overview 001](images/tools-visual-style-builder-overview001.png)|
+
+# See Also
+* [Architecture]({%slug winforms/tools/visual-style-builder/architecture%})
+
+* [Concepts]({%slug winforms/tools/visual-style-builder/concepts%})
+
+* [Getting Started]({%slug winforms/tools/visual-style-builder/getting-started%})
+
+* [Starting VSB]({%slug winforms/tools/visual-style-builder/starting-vsb%})
+

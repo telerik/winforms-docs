@@ -1,7 +1,7 @@
 ---
 title: Advanced
-page_title: Advanced | UI for WinForms Documentation
-description: Advanced
+page_title: Advanced | RadVirtualGrid
+description: This article shows how you can customize the save layout operation.
 slug: winforms/virtualgrid/save-and-load-layout/advanced
 tags: save-and-load-layout, advanced
 published: True
@@ -16,11 +16,11 @@ This article demonstrates how to alter the default serialization procedure and e
 
 Here are several properties to have in mind:
 
-* __RadVirtualGrid.XmlSerializationInfo__ - this property of RadGridView gets the serialization information used by the SaveLayout and LoadLayout methods. It contains all RadGridView data that should persist between application states.
+* __RadVirtualGrid.XmlSerializationInfo:__ This property of RadGridView gets the serialization information used by the SaveLayout and LoadLayout methods. It contains all RadGridView data that should persist between application states.
 
-* __RadVirtualGrid.XmlSerializationInfo.DisregardOriginalSerializationVisibility__ - this property determines whether the serialization engine should take the default serialization attributes or the custom serialization metadata provided by the programmer. To define a custom collection of properties, set the property to true.
+* __RadVirtualGrid.XmlSerializationInfo.DisregardOriginalSerializationVisibility:__  This property determines whether the serialization engine should take the default serialization attributes or the custom serialization metadata provided by the programmer. To define a custom collection of properties, set the property to true.
 
-* __RadVirtualGrid.XmlSerializationInfo.SerializationMetadata__ - this property returns a collection of PropertySerializationMetadata objects, which contains information about the type, name and serialization method of the corresponding property. You need to clear the collection in order to be sure that only the serialization instructions will be considered.
+* __RadVirtualGrid.XmlSerializationInfo.SerializationMetadata:__ This property returns a collection of PropertySerializationMetadata objects, which contains information about the type, name and serialization method of the corresponding property. You need to clear the collection in order to be sure that only the serialization instructions will be considered.
 
 Here is a snippet clearing the default settings:
 
@@ -105,4 +105,8 @@ End Sub
 
 
 
+
+
+# See Also
+* [Overview]({%slug winforms/virtualgrid/save-and-load-layout/overview%})
 

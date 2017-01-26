@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Shapes | UI for WinForms Documentation
+page_title: Shapes | Telerik Presentation Framework
 description: This article lists all the shapes supported in the Telerik UI for Winforms
 slug: winforms/telerik-presentation-framework/shapes
 tags: shapes
@@ -25,6 +25,7 @@ The following list shows all shapes currently included in the suite:
 * [RoundRectShape]({%slug winforms/telerik-presentation-framework/roundrect-shape%})
 
 * [StarShape]({%slug winforms/telerik-presentation-framework/star-shape%})
+
 
 
 

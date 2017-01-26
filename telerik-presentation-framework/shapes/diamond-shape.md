@@ -1,6 +1,6 @@
 ---
 title: Diamond Shape
-page_title: Diamond Shape| UI for WinForms Documentation
+page_title: Diamond Shape| Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms/telerik-presentation-framework/diamond-shape
 tags: diamond-shape
@@ -31,4 +31,22 @@ radPanel1.PanelElement.Shape = diamondShape
 ````  
  
 {{endregion}} 
+
+
+# See Also
+* [Custom Shapes]({%slug winforms/telerik-presentation-framework/diamond-shape%})
+
+* [Donut Shape]({%slug winforms/telerik-presentation-framework/donut-shape%})
+
+* [Ellipse Shape]({%slug winforms/telerik-presentation-framework/ellipse-shape%})
+
+* [Heart Shape]({%slug winforms/telerik-presentation-framework/heart-shape%})
+
+* [Media Shape]({%slug winforms/telerik-presentation-framework/media-shape%})
+
+* [Overview]({%slug winforms/telerik-presentation-framework/shapes%})
+
+* [RoundRect Shape]({%slug winforms/telerik-presentation-framework/roundrect-shape%})
+
+* [Star Shape]({%slug winforms/telerik-presentation-framework/star-shape%})
 

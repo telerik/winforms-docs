@@ -1,6 +1,6 @@
 ---
 title: ImageShape
-page_title: ImageShape | UI for WinForms Documentation
+page_title: ImageShape | Telerik Presentation Framework
 description: ImageShape
 slug: winforms/telerik-presentation-framework/primitives/imageshape
 tags: imageshape
@@ -11,8 +11,7 @@ previous_url: tpf-primitives-imageshape
 
 # ImageShape
 
-
-__RadImageShape__ implements the so called “*Segmented Image*” semantic, which in general allows a small image (pattern) to be stretched to larger bounds without quality loss. This effect is achieved by dividing the image into 9 logical parts (segments) and providing advanced paint logic for each part.
+__RadImageShape__ implements the so called "Segmented Image" semantic, which in general allows a small image (pattern) to be stretched to larger bounds without quality loss. This effect is achieved by dividing the image into 9 logical parts (segments) and providing advanced paint logic for each part.
 
 ![tpf-primitives-imageshape 001](images/tpf-primitives-imageshape001.png)
 
@@ -22,7 +21,7 @@ __RadImageShape__          
 
 ![tpf-primitives-imageshape 002](images/tpf-primitives-imageshape002.png)
 
-Using the Margins property, an image is divided into 9 segments. Following is a brief overview of each segment and how it is stretched:
+Using the __Margins__ property, an image is divided into 9 segments. Following is a brief overview of each segment and how it is stretched:
 
 1. TopLeft – not stretched
 
@@ -63,3 +62,21 @@ __Editing RadImageShape in Visual Style Builder__
 Each RadElement exposes a property named __BackgroundShape__ which is of type __RadImageShape__. Complete __Visual Style Builder__ support is provided and you can either create a __RadImageShape__ repository item or edit the __BackgroundShape__ property directly in the advanced view of each element.
 
 ![tpf-primitives-imageshape 004](images/tpf-primitives-imageshape004.png)
+
+# See Also
+* [ArrowPrimitive]({%slug winforms/telerik-presentation-framework/primitives/arrowprimitive%})
+
+* [BorderPrimitive]({%slug winforms/telerik-presentation-framework/primitives/borderprimitive%})
+
+* [CheckPrimitive]({%slug winforms/telerik-presentation-framework/primitives/checkprimitive%})
+
+* [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%})
+
+* [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%})
+
+* [GripPrimitive]({%slug winforms/telerik-presentation-framework/primitives/gripprimitive%})
+
+* [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%})
+
+* [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%})
+

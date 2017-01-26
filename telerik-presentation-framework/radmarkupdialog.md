@@ -1,7 +1,7 @@
 ---
 title: RadMarkupDialog
-page_title: RadMarkupDialog | UI for WinForms Documentation
-description: RadMarkupDialog
+page_title: RadMarkupDialog | Telerik Presentation Framework
+description: RadMarkupEditor is a dialog used for creation of the formatted text supported by our WinForms suite.
 slug: winforms/telerik-presentation-framework/radmarkupdialog
 tags: radmarkupdialog
 published: True
@@ -11,19 +11,26 @@ previous_url: tpf-radmarkupdialog
 
 # RadMarkupDialog
 
-RadMarkupEditor is a *__dialog__* used at Design time and Run time for creation of the formatted text supported by Telerik Controls for WinForms. As any other standard dialog in WinForms, this dialog inherits from *CommonDialog* class.
+RadMarkupEditor is a dialog used at Design time and Run time for creation of the formatted text supported by our WinForms suite. As any other standard dialog in WinForms, this dialog inherits from *CommonDialog* class.
+
+>caption Figure 1: RadMarkupDialog
+
+![tpf-radmarkupdialog 002](images/tpf-radmarkupdialog002.png)
+
+### Design Time
 
 You can start the editor at Design Time by opening the drop down of some __Text__ property and then clicking on *Start MarkupEditor* button:
 
 ![tpf-radmarkupdialog 001](images/tpf-radmarkupdialog001.png)
 
-Alternatively you can edit the *Plain Text *field if you need not Html-like formatting. 
+Alternatively you can edit the *Plain Text* field if you need not HTML-like text formatting. 
 
->caution Please note that you can still use the *Plain Text* field to edit html tags manually.
+>caution Please note that you can still use the *Plain Text* field to edit HTML tags manually.
 >
-![tpf-radmarkupdialog 002](images/tpf-radmarkupdialog002.png)
 
 When started at Design Time, the font *size* and *name* are taken from the edited control or visual element e.g. RibbonTab. No tags are added for this font in the generated markup although the font name or size can be explicitly set as well.
+
+### Run Time
 
 To start the editor at Run Time, create a new instance of the dialog and use *ShowDialog* method:
 
@@ -51,13 +58,12 @@ End If
 {{endregion}} 
 
 
->caution In order to use RadMarkupDialog at RunTime, add reference to Telerik.WinControls.RadMarkupEditor.
+>caution In order to use RadMarkupDialog at RunTime, add reference to __Telerik.WinControls.RadMarkupEditor__.
 >
 
-*ShowDialog* returns the *DialogResult* enumeration. The returned value is *DialogResult.OK* if one of the Apply buttons is pressed and *DialogResult.Cancel* if the Close button is pressed. The *Value* property contains the edited html as a string. 
+*ShowDialog* returns the *DialogResult* enumeration. The returned value is *DialogResult.OK* if one of the Apply buttons is pressed and *DialogResult.Cancel* if the Close button is pressed. The *Value* property contains the edited HTML as a string. 
 
 The *Value* property can be set to the RadMarkupDialog before it is shown which will be the initial value of the dialog:
-
 
 {{source=..\SamplesCS\TPF\RadMarkupDialogForm.cs region=DialogSetValue}} 
 {{source=..\SamplesVB\TPF\RadMarkupDialogForm.vb region=DialogSetValue}} 
@@ -77,7 +83,7 @@ dialog.ShowDialog()
 
 {{endregion}} 
 
-You can also set the default font size and name before showing the dialog using the DefaultSize property:
+You can also set the default font size and name before showing the dialog using the __DefaultSize__ property:
 
 {{source=..\SamplesCS\TPF\RadMarkupDialogForm.cs region=DialogSetFont}} 
 {{source=..\SamplesVB\TPF\RadMarkupDialogForm.vb region=DialogSetFont}} 
@@ -123,3 +129,16 @@ The fifth RibbonBar group (Apply) contains the *Apply *command. You should click
 Markup view contains only the clipboard commands. 
 
 ![tpf-radmarkupdialog 003](images/tpf-radmarkupdialog003.png)
+
+# See Also
+* [Animations]({%slug winforms/telerik-presentation-framework/animations%})
+
+* [Dependency Properties]({%slug winforms/telerik-presentation-framework/dependency-properties%})
+
+* [Handling User Input]({%slug winforms/telerik-presentation-framework/handling-user-input%})
+
+* [HTML-like Text Formatting]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%})
+
+* [Inherit themes from RadControls derivatives]({%slug winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives%})
+
+

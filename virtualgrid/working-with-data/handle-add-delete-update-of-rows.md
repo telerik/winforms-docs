@@ -1,7 +1,7 @@
 ---
 title: Handle Add, Delete and Update of Rows
-page_title: Handle Add, Delete and Update of Rows | UI for WinForms Documentation
-description: Handle Add, Delete and Update of Rows
+page_title: Handle Add, Delete and Update of Rows | RadVirtualGrid
+description: This article shows how you can handle Add, Delete and Update operations in RadVirtualGrid.
 slug: winforms/virtualgrid/working-with-data/handle-add-delete-update-of-rows
 tags: virtualgrid, data, add, delete, update
 published: True
@@ -276,3 +276,7 @@ End Sub
 
 
  
+
+# See Also
+* [Populating with Data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%})
+

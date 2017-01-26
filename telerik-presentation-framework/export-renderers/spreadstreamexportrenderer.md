@@ -1,7 +1,7 @@
 ---
 title: SpreadStreamExportRenderer
 page_title: SpreadStreamExportRenderer | Telerik Presentation Framework
-description: SpreadStreamExportRenderer
+description: SpreadStreamExportRenderer class exposes methods and events that allow changing the exported document.
 slug: winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer
 tags: spreadexportrenderer
 published: True
@@ -12,9 +12,7 @@ position: 2
 
 This class exposes methods and events needed to export using the [SpreadStreamExport]({%slug winforms/gridview/exporting-data/stream-export%}).
 
-## Events
-
-### WorksheetCreated 
+## The WorksheetCreated event
 
 Occurs when a new worksheet is created. It is suitable to set the columns width, add rows at the document begging, or insert cells before the firs column.
 
@@ -67,7 +65,7 @@ End Sub
 
 {{endregion}} 
 
-### WorksheetExporting
+## The WorksheetExporting event
 
 Occurs when a worksheet is about to be exported. This is suitable place to add rows at the end of the document.
 
@@ -118,7 +116,7 @@ End Sub
 
 {{endregion}} 
 
-### WorkbookCreated
+## The WorkbookCreated event
 
 This is suitable place to add and/or modify Excel cell styles. Detailed information is available here: [CellStyles](http://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/features/cell-styles)
 

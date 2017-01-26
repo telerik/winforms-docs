@@ -1,7 +1,7 @@
 ---
 title: Working With Repository Items
-page_title: Working With Repository Items | UI for WinForms Documentation
-description: Working With Repository Items
+page_title: Working With Repository Items | UI for WinForms Tools
+description: This article shows how one can create or edit existing  repository items.
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items
 tags: working,with,repository,items
 published: True
@@ -17,8 +17,7 @@ previous_url: tools-visual-style-builder-working-with-visual-style-builder-worki
 
 ## Overview
 
-Repository and Repository Items are major concept in Visual Style Builder. These items allow you to quickly apply property settings per element basis and since repository items' settings are reused, the size of the generated XML files and the time needed to de-serialize them are optimized. Visual Style Builder allows for intuitive and straightforward Repository management through series of editors and User Experience tools such as drag-and-drop to an ItemState, on-the-fly drop-down of all available Repository Items, etc.
-        
+Repository and Repository Items are major concept in Visual Style Builder. These items allow you to quickly apply property settings per element basis and since repository items' settings are reused, the size of the generated XML files and the time needed to de-serialize them is optimized. Visual Style Builder allows for intuitive and straightforward Repository management through series of editors and User Experience tools such as drag-and-drop to an ItemState, on-the-fly drop-down of all available Repository Items, etc.
 
 ## Repository Item Types
 
@@ -45,7 +44,7 @@ You can also create new repository items for the currently loaded repository. Th
 The LightVisualElement is a special type of primitive class that supports the functionality of all other primitives without building an element tree. In other words, the LightVisualElement paints its Fill, Border, Text and Image on its own. Therefore, the LightVisualElement is type of element that supports all Repository Item Types (excluding Arrow type) and thus, when editing such elements in the Visual Style Builder, the repository is filtered appropriately to display all repository items available.
         
 
->caution It is important to understand the difference between different primitives (Border, Fill, Arrow etc.) and the LightVisualElement type. LightVisualElement supports multiple types of repository items since it basically encapsulates the functionality of a border, fill, text and image primitive. Therefore, when you select an  element in the Elements list that is actually an instance of the  LightVisualElement class (used in RadGridView, RadScheduler and RadCalendar), you simply need to assign to it the different types of repositories in order to style it according to your requirements, i.e. you can associate a border repository item, fill and image simultaneously and its appearance will be properly adjusted (the cells of a grid, scheduler, or calendar).
+>caution It is important to understand the difference between different primitives (Border, Fill, Arrow etc.) and the LightVisualElement type. LightVisualElement supports multiple types of repository items since it basically encapsulates the functionality of a border, fill, text and image primitive. Therefore, when you select an element in the Elements list that is actually an instance of the LightVisualElement class (used in RadGridView, RadScheduler and RadCalendar), you simply need to assign to it the different types of repositories in order to style it according to your requirements, i.e. you can associate a border repository item, fill and image simultaneously and its appearance will be properly adjusted (the cells of a grid, scheduler, or calendar).
 This is not the case with elements made up of different primitives as border, fill and image. You will need to separately select and style each primitive from the Elements grid for the different states in this case (a good example is RadButtonElement and its children).
 >
 
@@ -59,11 +58,11 @@ You can easily associate a repository item with a given element for a  specific 
 
 The picture above shows how a repository item with name ButtonNormalFill is associated with the ButtonFill element of the RadButton control for the default (RadButtonElement) state.
 
- Another way to associate a repository item with an element for a given state is to use the state’s Available Repository Items popup which is shown upon click on the drop-down button on the right side of the state visual representation:
+Another way to associate a repository item with an element for a given state is to use the state’s `Available Repository Items` popup which is shown upon click on the drop-down button on the right side of the state visual representation:
 
 ![tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 002](images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items002.png)
 
-The Available Repository Items popup contains a list of repository items that can be associated with the selected state of the current element. Repository items that are associated to a Visual State are highlighted in red and are initially checked.
+The `Available Repository Items` popup contains a list of repository items that can be associated with the selected state of the current element. Repository items that are associated to a Visual State are highlighted in red and are initially checked.
 
 ## Removing Repository Item Association
 
@@ -96,12 +95,26 @@ The ‘Edit Repository Item ‘ dialog is automatically adjusted to show specifi
 >
 
 
-The Animate State Transition checkbox determines whether the repository item’s property values will be animated when a state of the element, to which the item is associated, is activated. For instance,  all color properties of the repository item, displayed in the dialog above, will be animated from the values present when the corresponding element state occurs, to the values defined in the property grid on the right. After editing the repository item, you can either cancel the modifications by pressing the "Cancel" button, save the modifications by pressing the "OK" button, or save a new repository item by pressing the "Save As New" button. The "Save As New" button is only visible when an already existing repository item is opened for edit.
+The `Animate State Transition` checkbox determines whether the repository item’s property values will be animated when a state of the element, to which the item is associated, is activated. For instance, all color properties of the repository item, displayed in the dialog above, will be animated from the values present when the corresponding element state occurs, to the values defined in the property grid on the right. After editing the repository item, you can either cancel the modifications by pressing `Cancel`, save the modifications by pressing the `OK` , or save a new repository item by pressing the `Save As New`. The `Save As New` button is only visible when an already existing repository item is opened for edit.
         
 
->caution When changing a  repository item’s key it is important to know that each property setting  group (a group of style settings within a StyleSheet) that uses this repository item should be updated to reference the new key. The Visual Style Builder allows for renaming a repository item’s key and updates the references of all property setting groups that are currently __ *loaded* __ . However, imagine that you create a couple of themes that use the same repository and save them. After that reopen them by selecting the repository and some of the files saved (not all). If you now rename a repository item’s key, the Visual Style Builder will update all references in the loaded StyleSheets but those left unloaded will still continue using old keys which will break the stylesheet.
+>caution When changing a repository item’s key it is important to know that each property setting  group (a group of style settings within a StyleSheet) that uses this repository item should be updated to reference the new key. The Visual Style Builder allows for renaming a repository item’s key and updates the references of all property setting groups that are currently *loaded*. However, imagine that you create a couple of themes that use the same repository and save them. After that reopen them by selecting the repository and some of the files saved (not all). If you now rename a repository item’s key, the Visual Style Builder will update all references in the loaded StyleSheets but those left unloaded will still continue using old keys which will break the stylesheet.
 >
 
 ## Deleting Repository Items
 
-You can easily delete a repository item from the currently loaded repository  by clicking on the red "Delete" button which resides next to the "Edit" button. You will be asked to confirm the operation and in case you do so, the repository item will be removed from the repository.  All references to this repository item will be removed also.
+You can easily delete a repository item from the currently loaded repository  by clicking on the red "Delete" button which resides next to the "Edit" button. You will be asked to confirm the operation and in case you do so, the repository item will be removed from the repository. All references to this repository item will be removed as well.
+
+# See Also
+* [Applying Font repository items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/applying-font-repository-items%})
+
+* [Color Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%})
+
+* [Loading Predefined Themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
+
+* [Loading themes created with the old VSB]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-themes-created-with-the-old-vsb%})
+
+* [Precedence Example Visibility Property]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property%})
+
+* [Property Precedence Rules]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules%})
+

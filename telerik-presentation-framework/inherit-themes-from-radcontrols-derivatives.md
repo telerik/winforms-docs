@@ -1,7 +1,7 @@
 ---
 title: Inherit themes from RadControls derivatives
-page_title: Inherit themes from RadControls derivatives | UI for WinForms Documentation
-description: Inherit themes from RadControls derivatives
+page_title: Inherit themes from RadControls derivatives | Telerik Presentation Framework
+description: In order the themes to be applied to your custom controls you need to override the ThemeClassName and ThemeEffectiveType properties.
 slug: winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives
 tags: inherit,themes,from,radcontrols,derivatives
 published: True
@@ -86,3 +86,20 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [Animations]({%slug winforms/telerik-presentation-framework/animations%})
+
+* [Dependency Properties]({%slug winforms/telerik-presentation-framework/dependency-properties%})
+
+* [Handling User Input]({%slug winforms/telerik-presentation-framework/handling-user-input%})
+
+* [HTML-like Text Formatting]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%})
+
+* [Microsoft Active Accessibility Support]({%slug winforms/telerik-presentation-framework/microsoft-active-accessibility-support%})
+
+* [Override Theme Settings at Run Time]({%slug winforms/telerik-presentation-framework/override-theme-settings-at-run-time%})
+
+
+* [RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})
+

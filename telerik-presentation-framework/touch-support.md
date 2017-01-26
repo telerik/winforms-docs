@@ -1,7 +1,7 @@
 ---
 title: Touch Support
-page_title: Touch Support | UI for WinForms Documentation
-description: Touch Support
+page_title: Touch Support | Telerik Presentation Framework
+description: Telerik Presentation Framework supports touch gestures which can be handled with specific events.
 slug: winforms/telerik-presentation-framework/touch-support
 tags: touch,support
 published: True
@@ -11,14 +11,11 @@ previous_url: tpf-touch-support
 
 # Touch Support
 
-
-
-The Telerik UI for WinForms suite provide full multi-touch support. All controls in the suite are exposing several events which grant the developer the ability to easily handle gestures on a touch input device. This functionality is currently supported under Windows7 and Windows8 Developer Preview Some of the controls in our suite have built-in functionality that responds to touch gestures. For example, you can use the Pan gesture to scroll through the RadGridView’s rows, group by a column or change the order of its columns. Similar functionality is available out-of-the-box for RadTreeView, RadListView, RadPropertyGrid, RadListControl, RadCarousel and RadCommandBar. Additionally, the developer can use the gesture events to implement his custom logic.
-      
+The Telerik UI for WinForms suite provides full multi-touch support. All controls in the suite are exposing several events which grant the developer the ability to easily handle gestures on a touch devices. This functionality is currently supported under Windows7 or newer. Some of the controls in our suite have built-in functionality that responds to touch gestures. For example, you can use the __Pan__ gesture to scroll through the RadGridView’s rows, group by a column or change the order of its columns. Similar functionality is available out-of-the-box for RadTreeView, RadListView, RadPropertyGrid, RadListControl, RadCarousel and RadCommandBar. Additionally, the developer can use the gesture events to implement his custom logic.
 
 ## Touch Events in RadControls
 
-To enable or disable a gesture,use the __EnableGesture__ and __DisableGesture__ functions passing a member of the GestureType enumerator:
+To enable or disable a gesture,use the __EnableGesture__ and __DisableGesture__ functions passing a member of the __GestureType__ enumerator. This method should be executed in the constructor of a new control:
         
 * All
 
@@ -35,8 +32,7 @@ To enable or disable a gesture,use the __EnableGesture__ and __DisableGesture__ 
 #### Cascade layout example
 
 {{source=..\SamplesCS\TPF\Touch\TouchGesturesForm.cs region=callingMethods}} 
-{{source=..\SamplesVB\TPF\Touch\TouchGesturesForm.vb region=callingMethods}} 
-
+{{source=..\SamplesVB\TPF\Touch\TouchGesturesForm.vb region=callingMethods}}
 ````C#
 public class MyButton : RadButton
 {
@@ -60,7 +56,7 @@ Public Class MyButton
     End Sub
 End Class
 
-````
+```` 
 
 {{endregion}} 
 
@@ -205,4 +201,17 @@ Thanks to the code above, the end-user will be able to do the following operatio
 
 >note Similar functionality is also used in the PhotoAlbum demo application
 >
+
+
+# See Also
+* [Animations]({%slug winforms/telerik-presentation-framework/animations%})
+
+* [Dependency Properties]({%slug winforms/telerik-presentation-framework/dependency-properties%})
+
+* [Handling User Input]({%slug winforms/telerik-presentation-framework/handling-user-input%})
+
+* [HTML-like Text Formatting]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%})
+
+* [Inherit themes from RadControls derivatives]({%slug winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives%})
+
 

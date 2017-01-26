@@ -1,7 +1,7 @@
 ---
 title:  Pinned Rows
-page_title:  Pinned Rows | UI for WinForms Documentation
-description:  Pinned Rows
+page_title:  Pinned Rows | RadVirtualGrid
+description: RadVirtualGrid__ rows can be pinned so that the rows appear anchored to the top or bottom of the grid.
 slug: winforms/virtualgrid/rows/pinned-rows
 tags: virtualgrid, rows
 published: True
@@ -30,7 +30,7 @@ radVirtualGrid1.VirtualGridElement.SetRowPinPosition(2, PinnedRowPosition.Top)
 
 The result is that the row is pined bellow the filter row.
 
-![virtualgrid-rows-pinned-row001](images/virtualgrid-rows-pinned-row001.png)
+![virtualgrid-rows-pinned-row001](images/virtualgrid-rows-pinned-row001.gif)
 
 To unpin a row you just need to set its pin position to *none*.
 
@@ -49,3 +49,15 @@ radVirtualGrid1.VirtualGridElement.SetRowPinPosition(2, PinnedRowPosition.None)
 {{endregion}}
    
    
+
+# See Also
+* [Alternating Row Color]({%slug winforms/virtualgrid/rows/alternating-row-colors%})
+
+* [Formatting Data Rows]({%slug winforms/virtualgrid/rows/formatting-data-rows%})
+
+* [Formatting System Rows]({%slug winforms/virtualgrid/rows/formatting-system-rows%})
+
+* [Resizing Rows Programmatically]({%slug winforms/virtualgrid/rows/resizing-rows-programmatically%})
+
+* [System Rows]({%slug winforms/virtualgrid/rows/system-rows%})
+

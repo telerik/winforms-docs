@@ -1,6 +1,6 @@
 ---
 title: RoundRect Shape
-page_title: RoundRect Shape| UI for WinForms Documentation
+page_title: RoundRect Shape| Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms/telerik-presentation-framework/roundrect-shape
 tags: roundrect-shape
@@ -45,3 +45,21 @@ radPanel1.PanelElement.Shape = roundRectShape
 * __BottomLeftRounded:__ allows you to disable the rounding of the bottom left corner. 
 
 * __BottomRightRounded:__ allows you to disable the rounding of the bottom right corner. 
+
+# See Also
+* [Custom Shapes]({%slug winforms/telerik-presentation-framework/diamond-shape%})
+
+* [Diamond Shape]({%slug winforms/telerik-presentation-framework/diamond-shape%})
+
+* [Donut Shape]({%slug winforms/telerik-presentation-framework/donut-shape%})
+
+* [Ellipse Shape]({%slug winforms/telerik-presentation-framework/ellipse-shape%})
+
+* [Heart Shape]({%slug winforms/telerik-presentation-framework/heart-shape%})
+
+* [Media Shape]({%slug winforms/telerik-presentation-framework/media-shape%})
+
+* [Overview]({%slug winforms/telerik-presentation-framework/shapes%})
+
+* [Star Shape]({%slug winforms/telerik-presentation-framework/star-shape%})
+

@@ -1,7 +1,7 @@
 ---
 title: Copy/Paste/Cut
-page_title: Copy/Paste/Cut | UI for WinForms Documentation
-description: Formatting Data Cells
+page_title: Copy/Paste/Cut | RadVirtualGrid
+description: RadVirtualGrid supports built-in Copy/Paste functionality, which allows you to store text in the Clipboard and then paste it in a different location.
 slug: winforms/virtualgrid/copy-paste-cut
 tags: virtualgrid, copy, paste, cut
 published: True
@@ -16,7 +16,7 @@ __RadVirtualGrid__ supports built-in Copy/Paste functionality, which allows you 
 
 The copying functionality in __RadVirtualGrid__ is controlled via the __AllowCopy__ property. If this property is set to *false* the user would not be able to copy the cell values.
 
-Copying is a pretty simple operation. After cell/row is selected, right click over the data cell/row opens a context menu where the copy option exists. After selecting it, you can paste the content anywhere you need (in Notepad or Excel for example).
+Copying is a pretty simple operation. After cell/row is selected, right clicking over the data cell/row opens a context menu where the copy option exists. After selecting it, you can paste the content anywhere you need (in Notepad or Excel for example).
 
 __RadVirtualGrid__ introduces __Copying__ event which occurs when the grid has prepared appropriate data formats that represent the copy selection. This event is fired once for each supported format: DataFormats.Text, DataFormats.HTML, DataFormats.CommaSeparatedValue. You can cancel this event if the data is not allowed to be stored to Clipboard in a specific format, e.g. HTML format:
 
@@ -95,4 +95,14 @@ The cutting functionality in __RadVirtualGrid__ is controlled via the __AllowCut
 
 >note Additionally, you can use the __RadVirtualGrid.VirtualGridElement.CutSelection__ method in order to perform the cut operation programmatically.
 >
+
+
+# See Also
+* [Busy Indicators]({%slug winforms/virtualgrid/busy-indicators%})
+
+* [Scrolling]({%slug winforms/virtualgrid/scrolling%})
+
+* [Getting Started]({%slug winforms/virtualgrid/getting-started%})
+
+* [Overview]({%slug winforms/virtualgrid%})
 

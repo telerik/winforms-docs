@@ -1,7 +1,7 @@
 ---
 title: Creating custom cells
-page_title: Creating custom cells | UI for WinForms Documentation
-description: Creating custom cells
+page_title: Creating custom cells | RadVirtualGrid
+description: This article describes how one can create custom checkbox cell and add it to RadVirtualGrid.
 slug: winforms/virtualgrid/cells/creating-custom-cells
 tags: virtualgrid, cells, custom
 published: True
@@ -158,7 +158,7 @@ End Class
 
 {{endregion}}
 
-8\. Subscribe to the RadVirtualGrid.__CreateCellElement__ event where we should replace the default __VirtualGridCellElement__ with the custom one:
+8\. Subscribe to the __CreateCellElement__ event where we should replace the default __VirtualGridCellElement__ with the custom one:
 
 #### Apply the custom cell
 
@@ -208,7 +208,7 @@ Me.RadVirtualGrid1.MasterViewInfo.RegisterCustomColumn(3)
 
 >note Use the __UnregisterCustomColumn__ method if you need to unregister the custom cell for the specified column index. You can detect whether a custom cell is used for a certain column index by using the RadVirtualGrid.MasterViewInfo.__IsCustomColumn__ method.
 
-10\. The last thing we need to do, is to prevent entering edit mode for the custom cell. For this purpose, cancel the RadVirtualGrid.__EditorRequired__ event:
+10\. The last thing we need to do, is to prevent entering edit mode for the custom cell. For this purpose, cancel the __EditorRequired__ event:
 
 #### Prevent entering edit mode
 
@@ -241,4 +241,12 @@ End Sub
 
 >note The __RadCheckBoxElement__ can be replaced with any other __RadElement__ according to the user's requirement.
 
+
+
+# See Also
+* [Formatting Data Cells]({%slug winforms/virtualgrid/cells/formatting-data-cells%})
+
+* [Formatting System Cells]({%slug winforms/virtualgrid/cells/formatting-system-cells%})
+
+* [ToolTips]({%slug winforms/virtualgrid/cells/tooltips%})
 

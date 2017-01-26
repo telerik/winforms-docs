@@ -1,7 +1,7 @@
 ---
 title: ProgressBarPrimitive
-page_title: ProgressBarPrimitive | UI for WinForms Documentation
-description: ProgressBarPrimitive
+page_title: ProgressBarPrimitive | Telerik Presentation Framework
+description: ProgressBarPrimitive indicates the state of progress in a long running process.
 slug: winforms/telerik-presentation-framework/primitives/progressbarprimitive
 tags: progressbarprimitive
 published: True
@@ -11,9 +11,7 @@ previous_url: tpf-primitives-progressprimitive
 
 # ProgressBarPrimitive
 
-## 
-
-ProgressBarPrimitive is a specialized descendant of [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%}) that  indicates the state of progress in a long running process. The fill area is controlled by the __GradientStyle__ and the __BackColor..BackColor4__ properties. The fill covers the percentage area between __Minimum__ and __Maximum__ specified by the __Value1__ property. __Value1__ is rendered using up to all four colors. __Value2__ displays in the __BackColor__ at 25% opacity. __Orientation__ controls the starting point of the fill and can originate from __Left__,  __Right__, __Top__ or __Bottom__. The example below shows a Linear fill for  __Value1__(set to 20), and a pale Aqua for __Value2__(set to 70).
+__ProgressBarPrimitive__ is a specialized descendant of the [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%}) that  indicates the state of progress in a long running process. The fill area is controlled by the __GradientStyle__ and the __BackColor.BackColor4__ properties. The fill covers the percentage area between __Minimum__ and __Maximum__ specified by the __Value1__ property. __Value1__ is rendered using up to all four colors. __Value2__ displays in the __BackColor__ at 25% opacity. __Orientation__ controls the starting point of the fill and can originate from __Left__,  __Right__, __Top__ or __Bottom__. The example below shows a Linear fill for  __Value1__(set to 20), and a pale Aqua for __Value2__(set to 70).
 
 ![tpf-primitives-progressprimitive 001](images/tpf-primitives-progressprimitive001.png)
 
@@ -83,3 +81,21 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [ArrowPrimitive]({%slug winforms/telerik-presentation-framework/primitives/arrowprimitive%})
+
+* [BorderPrimitive]({%slug winforms/telerik-presentation-framework/primitives/borderprimitive%})
+
+* [CheckPrimitive]({%slug winforms/telerik-presentation-framework/primitives/checkprimitive%})
+
+* [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%})
+
+* [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%})
+
+* [GripPrimitive]({%slug winforms/telerik-presentation-framework/primitives/gripprimitive%})
+
+* [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%})
+
+* [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})
+

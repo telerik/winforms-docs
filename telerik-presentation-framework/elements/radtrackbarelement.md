@@ -1,7 +1,7 @@
 ---
 title: RadTrackBarElement
-page_title: RadTrackBarElement | UI for WinForms Documentation
-description: RadTrackBarElement
+page_title: RadTrackBarElement | Telerik Presentation Framework
+description: RadTrackBarElement contains the logic and user interface for RadTrackBar. 
 slug: winforms/telerik-presentation-framework/elements/radtrackbarelement
 tags: radtrackbarelement
 published: True
@@ -10,8 +10,6 @@ previous_url: tpf-elements-radtrackbar
 ---
 
 # RadTrackBarElement
-
-## 
 
 RadTrackBarElement contains the logic and user interface for RadTrackBar. 
 
@@ -55,3 +53,9 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [Elements Overview]({%slug winforms/telerik-presentation-framework/elements/overview%})
+
+* [RadRadioButtonElement]({%slug winforms/telerik-presentation-framework/elements/radradiobuttonelement%})
+

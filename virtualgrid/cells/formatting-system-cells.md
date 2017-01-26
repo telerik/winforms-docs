@@ -1,7 +1,7 @@
 ---
 title: Formatting System Cells
-page_title: Formatting System Cells | UI for WinForms Documentation
-description: Formatting System Cells
+page_title: Formatting System Cells | RadVirtualGrid
+description: This article describes how one can format the header, filter and new row cells. 
 slug: winforms/virtualgrid/cells/formatting-system-cells
 tags: virtualgrid, cells, system, formatting
 published: True
@@ -132,3 +132,11 @@ End Sub
 {{endregion}} 
 
 >caution Due to the UI virtualization in __RadVirtualGrid__, cell elements are created only for currently visible cells and are being reused during operations like scrolling, filtering, sorting and so on. In order to prevent applying the formatting to other columns' cell elements (because of the cell reuse) all customization should be reset for the rest of the cell elements.
+
+# See Also
+* [Creating custom cells]({%slug winforms/virtualgrid/cells/creating-custom-cells%})
+
+* [Formatting Data Cells]({%slug winforms/virtualgrid/cells/formatting-data-cells%})
+
+* [ToolTips]({%slug winforms/virtualgrid/cells/tooltips%})
+

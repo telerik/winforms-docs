@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview | UI for WinForms Documentation
-description: Paging overview
+page_title: Overview | RadVirtualGrid
+description: The data layer of RadVirtualGrid supports pagination of data natively.
 slug: winforms/virtualgrid/paging/paging-overview
 tags: virtualgrid, paging
 published: True
@@ -29,8 +29,12 @@ To access the public API for paging you will use the __MasterViewInfo__ of __Rad
 
 * __MoveToPreviousPage:__ Sets RadGridView to the previous page.
 
-* __MoveToPage( int pageIndex ):__ Sets RadGridView to a specific page.
+* __MoveToPage (int pageIndex):__ Sets RadGridView to a specific page.
 
 * __MoveToNextPage:__ Sets RadGridView to the next page.
 
 * __MoveToLastPage:__ Sets RadGridView to its last page.
+
+# See Also
+* [Paging Panel]({%slug winforms/virtualgrid/paging/paging-panel%})
+

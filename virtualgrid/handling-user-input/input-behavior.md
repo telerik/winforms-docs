@@ -1,7 +1,7 @@
 ---
 title: InputBehavior
-page_title: InputBehavior | UI for WinForms Documentation
-description: InputBehavior
+page_title: InputBehavior | RadVirtualGrid
+description: This article describes how one can create custom InputBehavior and intercept the default mouse and keyboard handling.
 slug: winforms/virtualgrid/handling-user-input/input-behavior
 tags: virtualgrid
 published: True
@@ -97,3 +97,4 @@ Me.RadVirtualGrid1.VirtualGridElement.InputBehavior = New CustomVirtualGridInput
 {{endregion}}
 
 >note You can follow a similar approach to customize any of the methods that handle the mouse and keyboard user input.
+

@@ -1,7 +1,7 @@
 ---
 title: Hierarchical Data
-page_title: Hierarchical Data | UI for WinForms Documentation
-description: Hierarchical Data
+page_title: Hierarchical Data | RadVirtualGrid
+description: RadVirtualGrid can display hierarchical, master-detail data to an arbitrary number of levels.
 slug: winforms/virtualgrid/hierarchical-virtual-grid/hierarchical-data
 tags: virtualgrid, hierarchy
 published: True
@@ -14,7 +14,7 @@ __RadVirtualGrid__ can display hierarchical, master-detail data to an arbitrary 
  
 ![virtualgrid-hierarchical-data 001](images/hierarchical-data.png)
 
->caution Before proceeding with this article, please refer to the [Populating with Data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%}) help article which demonstrates how to fill data in __RadVirtualGrid__.
+>caution Before proceeding with this article, please refer to the [Populating with Data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%}) article which demonstrates how to fill data in __RadVirtualGrid__.
 
 In order to fill the grid with hierarchical data, you should follow the steps below:
 
@@ -541,5 +541,3 @@ End Class
 
 {{endregion}}
 
-
- 

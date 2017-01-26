@@ -1,7 +1,7 @@
 ---
 title: Resizing Columns
-page_title: Resizing Columns | UI for WinForms Documentation
-description: Resizing Columns
+page_title: Resizing Columns | RadVirtualGrid
+description: This article shows how you can resize columns in RadVirtualGrid at runtime. 
 slug: winforms/virtualgrid/end-user-capabilities/resizing-columns
 tags: resizing,columns
 published: True
@@ -15,4 +15,18 @@ The columns inside __RadVirtualGrid__ are resizable by default. You can easily c
 ![virtualgrid-end-user-capabilities-resizing-columns001](images/virtualgrid-end-user-capabilities-resizing-columns001.gif)
 
 See [this]({%slug winforms/virtualgrid/columns/resizing-columns-programmatically%}) topic for more information on how the columns can be resized programmatically.
+
+
+# See Also
+* [Editing Behavior]({%slug winforms/gridview/end-user-capabilities/editing-behavior%})
+
+* [Filtering]({%slug winforms/virtualgrid/end-user-capabilities/filtering%})
+
+* [Keyboard Support]({%slug winforms/virtualgrid/end-user-capabilities/keyboard-support%})
+
+* [Resizing Rows]({%slug winforms/virtualgrid/end-user-capabilities/resizing-rows%})
+
+* [Scrolling Support]({%slug winforms/vitualgrid/end-user-capabilities/scrolling-support%})
+
+* [Sorting]({%slug winforms/gridview/end-user-capabilities/sorting%})
 

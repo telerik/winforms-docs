@@ -1,7 +1,7 @@
 ---
 title: CheckPrimitive
-page_title: CheckPrimitive | UI for WinForms Documentation
-description: CheckPrimitive
+page_title: CheckPrimitive | Telerik Presentation Framework
+description: The CheckPrimitive is painted as three sets of angled lines and can have different colors.
 slug: winforms/telerik-presentation-framework/primitives/checkprimitive
 tags: checkprimitive
 published: True
@@ -10,8 +10,6 @@ previous_url: tpf-primitives-checkprimitive
 ---
 
 # CheckPrimitive
-
-## 
 
 The __CheckPrimitive__ is painted as three sets of angled lines and is colored using the __ForeColor__ property. The three sets of lines are easier to see when the primitive is scaled up. The example below creates two CheckPrimitives, one at the default size and the second scaled up by a factor of 5.
 
@@ -71,3 +69,21 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [ArrowPrimitive]({%slug winforms/telerik-presentation-framework/primitives/arrowprimitive%})
+
+* [BorderPrimitive]({%slug winforms/telerik-presentation-framework/primitives/borderprimitive%})
+
+* [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%})
+
+* [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%})
+
+* [GripPrimitive]({%slug winforms/telerik-presentation-framework/primitives/gripprimitive%})
+
+* [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%})
+
+* [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})
+
+* [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%})
+

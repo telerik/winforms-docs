@@ -1,7 +1,7 @@
 ---
 title: Layout Overview
-page_title: Layout Overview | UI for WinForms Documentation
-description: Layout Overview
+page_title: Layout Overview | Telerik Presentation Framework
+description: This article explains how the layout system in Telerik Presentation Framework works. 
 slug: winforms/telerik-presentation-framework/layout/layout-overview
 tags: layout,overview
 published: True
@@ -11,9 +11,7 @@ previous_url: tpf-layout-overview
 
 # Layout Overview
 
-The layout system places elements and controls on
-the screen in the most optimal way for the user to see them. There are two
-layout systems that RadControls work with:
+The layout system places elements and controls on the screen in the most optimal way for the user to see them. There are two layout systems that RadControls work with:
 
 * Outer layout system: This is the Microsoft layout system for Winforms. This layout system arranges controls on the form and top-level windows on the desktop.
 
@@ -40,3 +38,21 @@ tasks:
 1. Allow customization via overrides. The logic of the overrides  calculate size and position of elements in the hierarchy. Note: The layout system must ensure that the calculation does not need to know about transformations in the elements (rotation, scaling, alignment, stretching, etc).
 
     
+
+# See Also
+* [Clipping]({%slug winforms/telerik-presentation-framework/layout/clipping%})
+
+* [Custom Layouts]({%slug winforms/telerik-presentation-framework/layout/custom-layouts%})
+
+* [Element Offset Calculations]({%slug winforms/telerik-presentation-framework/layout/element-offset-calculations%})
+
+* [Layout Activation]({%slug winforms/telerik-presentation-framework/layout/layout-activation%})
+
+* [Layout Logic]({%slug winforms/telerik-presentation-framework/layout/layout-logic%})
+
+* [Layout Structure]({%slug winforms/telerik-presentation-framework/layout/layout-structure%})
+
+* [RadControl Testing Considerations]({%slug winforms/telerik-presentation-framework/layout/radcontrol-testing-considerations%})
+
+* [Sample Arrange Stage Scenarios]({%slug winforms/telerik-presentation-framework/layout/sample-arrange-stage-scenarios%})
+

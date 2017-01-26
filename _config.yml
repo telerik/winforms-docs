@@ -1068,6 +1068,9 @@ navigation:
     virtualgrid/context-menu:
         title: Context Menu
         position: 13
+    virtualgrid/customizing-apearance:
+        title: Customizing Apearance
+        position: 13
     virtualgrid/hierarchical-virtual-grid:
         title: Hierarchical Virtual Grid
         position: 14
@@ -1113,6 +1116,12 @@ navigation:
     telerik-presentation-framework/overview:
         title: Overview
         position: 0
+    telerik-presentation-framework/tooltips-and-screentips:
+        title: Tooltips and ScreenTips
+        position: 16
+    telerik-presentation-framework/shapes:
+        title: Shapes
+        position: 100		
     telerik-presentation-framework/getting-started:
         title: Getting Started
         position: 1
@@ -1183,6 +1192,9 @@ navigation:
     tools/shapeeditor/using-the-custom-shape-editor:
         title: Using the Custom Shape Editor
         position: 3
+    tools/theme-manager:
+         title: Theme Manager
+         position: 6		 
     telerik-analytics-integration:
         title: Telerik Analytics Intergration
         position: 600

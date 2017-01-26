@@ -1,7 +1,7 @@
 ---
 title: Filtering Overview
-page_title: Filtering Overview | UI for WinForms Documentation
-description: Filtering Overview
+page_title: Filtering Overview | RadVirtualGrid
+description: This article shows how you can use the built in filtering functionality. 
 slug: winforms/virtualgrid/filtering/filtering
 tags: virtualgrid, filtering
 published: True
@@ -10,7 +10,9 @@ position: 0
 
 # Filtering Overview
 
-__RadVirtualGrid__  supports data filtering. Set the RadVirtualGrid.__AllowFiltering__ property to *true*.
+__RadVirtualGrid__ supports data filtering. Set the RadVirtualGrid.__AllowFiltering__ property to *true*.
+
+>caption Figure 1: Filtering is enabled.
 
 ![virtualgrid-filtering 001](images/virtualgrid-filtering001.png)
 
@@ -42,9 +44,6 @@ When clicking over the filter cell, the filter text box is activated:
 It is necessary to handle the __FilterChanged__ event which is fired once the __FilterDescriptors__ collection is changed. In the event handler you should extract the filtered data from the external data source.
 
 >note Please refer to the [Populating with data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%}) help article which demonstrates how to extract the necessary data and fill the virtual grid with data.
-
-
-![virtualgrid-filtering 004](images/virtualgrid-filtering004.gif)
 
 The following example demonstrates how to achieve filtering functionality in __RadVirtualGrid__ filled with Northwind.Customers table:
 
@@ -307,4 +306,8 @@ End Class
 
 {{endregion}}
 
->note It is neccessary to specify the __FieldName__ property for the filter cells.
+>note It is necessary to specify the __FieldName__ property for the filter cells.
+
+# See Also
+* [Setting Filters Programmatically]({%slug winforms/virtualgrid/filtering/setting-filters-programmatically%})
+

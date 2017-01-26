@@ -1,7 +1,7 @@
 ---
 title: Multiple Selection
-page_title: Multiple Selection | UI for WinForms Documentation
-description: Formatting Data Cells
+page_title: Multiple Selection | RadVirtualGrid
+description: RadVirtualGrid allows the user to select more than one item at a time from the displayed data.
 slug: winforms/virtualgrid/selection/multiple-selection
 tags: virtualgrid, multiple selection
 published: True
@@ -67,3 +67,9 @@ Once you have applied these setting, the options for selection are:
 * In order to mark a block selection, mark the first cell of the desired selection, hold __Shift__ and click on the last cell of the desired selection. Please note that this will select all the cells in the rectangle between the first and the second selected cell.
 
 ![virtualgrid-multi-selection002](images/virtualgrid-multi-selection002.png)
+
+# See Also
+* [Selecting Cells Programmatically]({%slug winforms/virtualgrid/selection/selecting-cells-programmatically%})
+
+* [Selection]({%slug winforms/virtualgrid/selection/selection%})
+

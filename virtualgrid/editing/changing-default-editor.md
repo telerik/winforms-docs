@@ -1,7 +1,7 @@
 ---
 title: Changing the Default Editors
-page_title: Changing the Default Editors | UI for WinForms Documentation
-description: Creating custom editors 
+page_title: Changing the Default Editors | RadVirtualGrid
+description: This article shows how you can replace the default editors used in RadVirtualGrid with custom ones.
 slug: winforms/virtualgrid/cells/changing-default-editor
 tags: virtualgrid, custom, editor
 published: True
@@ -45,4 +45,18 @@ Private Sub DefineColumnDataType()
 
 {{endregion}}
 
+
+
+# See Also
+* [API]({%slug winforms/virtualgrid/cells/api%})
+
+* [Changing Editors Properties]({%slug winforms/virtualgrid/editing/editors-properties%})
+
+* [Data Validation]({%slug winforms/virtualgrid/editing/data-validation%})
+
+* [Overview]({%slug winforms/virtualgrid/editing/editors%})
+
+* [Events]({%slug winforms/virtualgrid/editing/events%})
+
+* [Using Custom Editors]({%slug winforms/virtualgrid/editing/using-custom-editors%})
 

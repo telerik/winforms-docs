@@ -1,7 +1,7 @@
 ---
 title: Sizing Properties
-page_title: Sizing Properties | UI for WinForms Documentation
-description: Sizing Properties
+page_title: Sizing Properties | Telerik Presentation Framework
+description: This article shows the properties that can be used for changing or retrieving the layout size settings. 
 slug: winforms/telerik-presentation-framework/layout/sizing-properties
 tags: sizing,properties
 published: True
@@ -13,7 +13,7 @@ previous_url: tpf-layout-sizing-properties
 
 ## Stretching
 
-Arrange allocates a cell in which the item child be positioned. If the child is not stretchable there are two possible scenarios:
+Arrange allocates a cell in which the item child will be positioned. If the child is not stretchable there are two possible scenarios:
 
 * If the size of the child is smaller than the size of the cell, the child can be aligned within the cell
 
@@ -25,7 +25,10 @@ If the child is stretchable, it fills to the maximum the dimension of the cell i
 
 * In case stretching in a particular direction is turned on, the child element will size itself to fill the size allocated to it by the parent, taking into account its margin and padding properties.
 
-* In the case that a child is larger than its parent, the parent will only increase in size to accommodate the child in case all of the conditions below are fulfilled:1. Parent’s AutoSize property is set to true2. Parent’s StretchHorizontally and StretchVertically properties are set to false3. Child’s DesiredSize is non-zero
+* In the case that a child is larger than its parent, the parent will only increase in size to accommodate the child in case all of the conditions below are fulfilled:
+    1. Parent’s __AutoSize__ property is set to true.
+    2. Parent’s __StretchHorizontally__ and __StretchVertically__ properties are set to *false*.
+    3. Child’s __DesiredSize__ is non-zero.
 
 ## ZIndex
 
@@ -37,11 +40,10 @@ The __AutoSize__ property of an element controls whether it will have its size c
 
 ## ByPassLayoutPolicies
 
-The desired size returned by the measure stage of the layout process can be ignored by using the __BypassLayoutPolicies__ flag. If this flag is set to true, the size of the child is set to the size specified by the user in the call to the __Arrange()__ method.
+The desired size returned by the measure stage of the layout process can be ignored by using the __BypassLayoutPolicies__ flag. If this flag is set to true, the size of the child is set to the size specified by the user in the call to the __Arrange__ method.
 
 >caution When the __BypassLayoutPolicies__ flag is set to true, the transformation and constraint implementing logic is bypassed. Any transformation will therefore have to be implemented by the user.
 >
-
 
 ## FitToSizeMode
 
@@ -63,4 +65,22 @@ The __ConrolBoundingRectangle__ property stores the bounds of an element relativ
 
 ## DesiredSize
 
-The __DesiredSize__ property is the size returned by the MeasureOverride() method of an element.  It indicates how much space is needed by the children of the element to be ordered according to the logic implemented in the MeasureOverride() method. __DesiredSize__ is equal to __BoundingRectangle.Size__.
+The __DesiredSize__ property is the size returned by the __MeasureOverride__ method of an element. It indicates how much space is needed by the children of the element to be ordered according to the logic implemented in the MeasureOverride method. The __DesiredSize__ is equal to the __BoundingRectangle.Size__.
+
+# See Also
+* [Clipping]({%slug winforms/telerik-presentation-framework/layout/clipping%})
+
+* [Custom Layouts]({%slug winforms/telerik-presentation-framework/layout/custom-layouts%})
+
+* [Element Offset Calculations]({%slug winforms/telerik-presentation-framework/layout/element-offset-calculations%})
+
+* [Layout Activation]({%slug winforms/telerik-presentation-framework/layout/layout-activation%})
+
+* [Layout Logic]({%slug winforms/telerik-presentation-framework/layout/layout-logic%})
+
+* [Layout Overview]({%slug winforms/telerik-presentation-framework/layout/layout-overview%})
+
+* [Layout Structure]({%slug winforms/telerik-presentation-framework/layout/layout-structure%})
+
+* [RadControl Testing Considerations]({%slug winforms/telerik-presentation-framework/layout/radcontrol-testing-considerations%})
+

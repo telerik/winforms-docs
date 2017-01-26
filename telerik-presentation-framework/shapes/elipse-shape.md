@@ -1,6 +1,6 @@
 ---
 title: Ellipse Shape
-page_title: Ellipse Shape| UI for WinForms Documentation
+page_title: Ellipse Shape| Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms/telerik-presentation-framework/ellipse-shape
 tags: ellipse-shape
@@ -31,4 +31,22 @@ radPanel1.PanelElement.Shape = ellipseShape
 ````  
  
 {{endregion}} 
+
+
+# See Also
+* [Custom Shapes]({%slug winforms/telerik-presentation-framework/diamond-shape%})
+
+* [Diamond Shape]({%slug winforms/telerik-presentation-framework/diamond-shape%})
+
+* [Donut Shape]({%slug winforms/telerik-presentation-framework/donut-shape%})
+
+* [Heart Shape]({%slug winforms/telerik-presentation-framework/heart-shape%})
+
+* [Media Shape]({%slug winforms/telerik-presentation-framework/media-shape%})
+
+* [Overview]({%slug winforms/telerik-presentation-framework/shapes%})
+
+* [RoundRect Shape]({%slug winforms/telerik-presentation-framework/roundrect-shape%})
+
+* [Star Shape]({%slug winforms/telerik-presentation-framework/star-shape%})
 

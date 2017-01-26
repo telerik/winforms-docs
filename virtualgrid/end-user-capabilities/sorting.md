@@ -1,7 +1,7 @@
 ---
 title: Sorting
-page_title: Sorting | UI for WinForms Documentation
-description: Sorting
+page_title: Sorting | RadVirtualGrid
+description: This article shows how the end user can perform a sort operation at runtime. 
 slug: winforms/gridview/end-user-capabilities/sorting
 tags: sorting
 published: True
@@ -9,8 +9,6 @@ position: 2
 ---
 
 # Sorting
-
-
 
 ## Single Column Sorting
 
@@ -35,4 +33,20 @@ The default behavior of the grid is to allow all views of the data to be sorted,
 
 ## Sorting Context Menus
 
-Sorting can be invoked through right clicking the column heading to display the context menu. The menu will allow you to choose from Sort Ascending, Sort Descending and to Clear Sorting.<br>![gridview-end-user-capabilities-sorting 006](images/virtualgrid-end-user-capabilities-sorting006.png)
+Sorting can be invoked through right clicking the column heading to display the context menu. The menu will allow you to choose from Sort Ascending, Sort Descending and to Clear Sorting.
+
+![gridview-end-user-capabilities-sorting 006](images/virtualgrid-end-user-capabilities-sorting006.png)
+
+# See Also
+* [Editing Behavior]({%slug winforms/gridview/end-user-capabilities/editing-behavior%})
+
+* [Filtering]({%slug winforms/virtualgrid/end-user-capabilities/filtering%})
+
+* [Keyboard Support]({%slug winforms/virtualgrid/end-user-capabilities/keyboard-support%})
+
+* [Resizing Columns]({%slug winforms/virtualgrid/end-user-capabilities/resizing-columns%})
+
+* [Resizing Rows]({%slug winforms/virtualgrid/end-user-capabilities/resizing-rows%})
+
+* [Scrolling Support]({%slug winforms/vitualgrid/end-user-capabilities/scrolling-support%})
+

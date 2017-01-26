@@ -1,7 +1,7 @@
 ---
 title: HTML-like Text Formatting
-page_title: HTML-like Text Formatting | UI for WinForms Documentation
-description: HTML-like Text Formatting
+page_title: HTML-like Text Formatting | Telerik Presentation Framework
+description: Telerik Presentation Framework allow you to style the elements text using HTML-like Text Formatting.
 slug: winforms/telerik-presentation-framework/html-like-text-formatting
 tags: html-like,text,formatting
 published: True
@@ -13,14 +13,14 @@ previous_url: tpf-html-like-text-formatting
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Enhanced HTML-like Markup Support](http://tv.telerik.com/watch/winforms/utility/enhanced-html-like-markup-support) <br>This video goes over the new text rendering tags provided with the R3 2009 release. It also shows the RadMarkupEditor and gives an example of how to use it from within your own applications. (Runtime: 04:11)|![tpf-html-like-text-formatting 001](images/tpf-html-like-text-formatting001.png)|
+|[Enhanced HTML-like Markup Support](http://tv.telerik.com/watch/winforms/utility/enhanced-html-like-markup-support) <br>This video goes over the new text rendering tags provided with the R3 2009 release. It also shows the __RadMarkupEditor__ and gives an example of how to use it from within your own applications. (Runtime: 04:11)|![tpf-html-like-text-formatting 001](images/tpf-html-like-text-formatting001.png)|
 
 ## Introduction
 
-Telerik UI for WinForms provide an advance text styling mechanism which can be applied to all Telerik controls for WinForms and their elements, because it enhances one of the smallest element in Telerik Presentation Framework -- the text primitive. The new rich text formatting mechanism uses plain HTML tags to display formatted text such as font style, font color, font size, etc.
+Telerik UI for WinForms provide an advanced text styling mechanism which can be applied to all Telerik WinForms controls and their elements, because it enhances one of the smallest element in Telerik Presentation Framework - the text primitive. The new rich text formatting mechanism uses plain HTML tags to display formatted text such as font style, font color, font size, etc.
         
 
-Your text must start with the __<html>__ tag so that Html-like formatting is activated. The list of supported markup tags is given below:
+Your text must start with the __\<html\>__ tag so that HTML-like formatting is activated. The list of supported markup tags is given below:
 
 ## Supported Tags 
 
@@ -42,7 +42,7 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 | __\<a\>__ | __\</a\>__ |Link|
 | __\<img\>__ |N/A|Image|
 
-* __Bold, italic, and underline__ In the example below the first word is italic and the second one is both bold and italic. The third and the forth words are underlined.
+* __Bold, italic, and underline__ In the example below the first word is italic and the second one is both, bold and italic. The third and the forth words are underlined.
 
 ````HTML
 <html>
@@ -60,7 +60,7 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 ````
 
 
-* __Font color__ Font color using color name e.g. *red* or using hex color e.g. *0000FF*.
+* __Font color__ Set the ForeColor using color name e.g. *red* or using hex color e.g. *0000FF*.
 
 ````HTML
 <html>
@@ -71,10 +71,7 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 
 
 
-* __Font size__ Absolute and relative font sizes. The valid relative values are *larger* and *smaller*. The
-              absolute valid values are: xx-small, x-small, small, medium, large, x-large, and xx-large. The default value is *medium*.
-              Font size can also be set in pt(s). The default font size in Windows Forms on most computers is *8.25pt* i.e. the font
-              size returned by *SystemFonts.DefaultFont* property.
+* __Font size__ Absolute and relative font sizes. The valid relative values are *larger* and *smaller*. The absolute valid values are: xx-small, x-small, small, medium, large, x-large, and xx-large. The default value is *medium*.  Font size can also be set in pt(s). The default font size in Windows Forms on most computers is *8.25pt* i.e. the font size returned by *SystemFonts.DefaultFont* property.
 
 ````HTML
 <html>
@@ -83,8 +80,6 @@ Your text must start with the __<html>__ tag so that Html-like formatting is act
 	<span style="font-size:smaller">font size(absolute) </span>
 </html>
 ````
-
-
 
 * __Highlighted text__
 
@@ -124,12 +119,12 @@ The image path can be a resource or file on the disk.To specify a resource, you 
 <img src="res:Telerik.Examples.WinControls.SomeImage.jpg">
 ````
 
-To specify a file on the disk you have to specify the disk path e.g. src="C:\some path\image.png" or use the ~ to specify the current directory e.g. src= "~\some path\image.gif". All image types supported by .net framework class *Image* are supported as well by the img tag.
+To specify a file on the disk you have to specify the disk path e.g. src="C:\some path\image.png" or use the ~ to specify the current directory e.g. src= "~\some path\image.gif". All image types supported by .NET Framework class *Image* are supported by the "img" tag as well.
             
 
 ## RadMarkupEditor specifics
 
-You can also use some tags that are not present in Html but are currently supported by the TextPrimitive.
+You can also use some tags that are not present in HTML but are currently supported by the TextPrimitive.
         
 
 >note please refer to the[RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})article about the list of supported tags; *font* , *color* and *size* tags are not supported by RadMarkupDialog, but can be rendered by TextPrimitive.
@@ -249,3 +244,19 @@ End Function
 ````
 
 {{endregion}}
+
+# See Also
+* [Animations]({%slug winforms/telerik-presentation-framework/animations%})
+
+* [Dependency Properties]({%slug winforms/telerik-presentation-framework/dependency-properties%})
+
+* [Handling User Input]({%slug winforms/telerik-presentation-framework/handling-user-input%})
+
+* [Inherit themes from RadControls derivatives]({%slug winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives%})
+
+* [Microsoft Active Accessibility Support]({%slug winforms/telerik-presentation-framework/microsoft-active-accessibility-support%})
+
+* [Override Theme Settings at Run Time]({%slug winforms/telerik-presentation-framework/override-theme-settings-at-run-time%})
+
+* [RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})
+

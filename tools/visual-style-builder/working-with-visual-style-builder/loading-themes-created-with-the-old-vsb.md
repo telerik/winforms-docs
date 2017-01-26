@@ -1,7 +1,7 @@
 ---
 title: Loading themes created with the old VSB
-page_title: Loading themes created with the old VSB | UI for WinForms Documentation
-description: Loading themes created with the old VSB
+page_title: Loading themes created with the old VSB | UI for WinForms Tools
+description: This article shows how you can load themes created with the old VSB and convert them so they can be used with the new one. 
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-themes-created-with-the-old-vsb
 tags: loading,themes,created,with,the,old,vsb
 published: True
@@ -18,7 +18,7 @@ Some of you have probably created custom themes for Telerik UI for WinForms usin
 
 ## Loading an old theme
 
-In the following example we will demonstrate how repository items are created based on the style settings of an old theme. Let's say we have xml theme files created for the whole Telerik UI for WinForms suite and the ThemeName of the xml files is Desert. We should load these files by choosing. the Open Directory/Open option: 
+In the following example we will demonstrate how repository items are created based on the style settings of an old theme. Let's say we have XML theme files created for the whole Telerik UI for WinForms suite and the ThemeName of the XML files is Desert. We should load these files by choosing the Open Directory/Open option: 
 
 ![tools-visual-style-builder-working-with-visual-style-builder-loading-themes-created-with-the-old-vsb 001](images/tools-visual-style-builder-working-with-visual-style-builder-loading-themes-created-with-the-old-vsb001.png)
 
@@ -33,3 +33,17 @@ After you press OK to confirm, you will have to choose which of the possible rep
 Finally, the desired repository items are loaded in Visual Style Builder:
 
 ![tools-visual-style-builder-working-with-visual-style-builder-loading-themes-created-with-the-old-vsb 004](images/tools-visual-style-builder-working-with-visual-style-builder-loading-themes-created-with-the-old-vsb004.png)
+
+# See Also
+* [Applying Font repository items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/applying-font-repository-items%})
+
+* [Color Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%})
+
+* [Loading Predefined Themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
+
+* [Precedence Example Visibility Property]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property%})
+
+* [Property Precedence Rules]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules%})
+
+* [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})
+

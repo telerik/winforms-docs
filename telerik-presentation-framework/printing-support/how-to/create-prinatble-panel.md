@@ -1,7 +1,7 @@
 ---
 title: Create Prinatble Panel
-page_title: Create Prinatble Panel | UI for WinForms Documentation
-description: Create Prinatble Panel
+page_title: Create Prinatble Panel | Telerik Presentation Framework
+description: This example shows how you can implement printable panel which is useful when you want to print several controls at once.
 slug: winforms/telerik-presentation-framework/printing-support/how-to/create-prinatble-panel
 tags: create,prinatble,panel
 published: True
@@ -9,21 +9,21 @@ position: 0
 previous_url: tpf-printing-support-how-to-create-printable-panel
 ---
 
-# Create Prinatble Panel
+# Create Printable Panel
 
 This example shows how you can implement printable panel. This can be very useful when you want to print several controls at once. To achieve this you can create a custom panel that inherits from RadPanel and implements the __IPrintable__ interface. This interface contains four methods:
         
 
-* __BeginPrint__ - Called when the printing begins.
+* __BeginPrint:__ Called when the printing begins.
             
 
-* __EndPrint__ - Called when the printing ends.
+* __EndPrint:__ Called when the printing ends.
             
 
-* __PrintPage__ - Prints the page with the specified number.
+* __PrintPage:__ Prints the page with the specified number.
             
 
-* __GetSettingsDialog__ - Gets a print settings dialog that is specific for the printable object.
+* __GetSettingsDialog:__ Gets a print settings dialog that is specific for the printable object.
             
 
 The first step would be to just create the custom class:
@@ -96,7 +96,7 @@ End Function
 
 {{endregion}} 
 
-The __PrintPage__ method is the place where the panel actual would be converted to image and drawn:
+The __PrintPage__ method is the place where the panel would be converted to image and drawn:
 
 {{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=page}} 
 {{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=page}} 
@@ -164,10 +164,7 @@ End Sub
 
 {{endregion}} 
 
-
-
-
-The final method left is the __CreatePrintDocument__. It returns a new RadPrintDocument associated with the current instance:
+The final method is __CreatePrintDocument__. It returns a new RadPrintDocument associated with the current instance:
 
 {{source=..\SamplesCS\TPF\Printing support\CreatePrintablePanel.cs region=create}} 
 {{source=..\SamplesVB\TPF\Printing support\CreatePrintablePanel.vb region=create}} 
@@ -191,4 +188,8 @@ End Function
 ````
 
 {{endregion}}
+
+
+# See Also
+* [Customize RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/how-to/customize-radprintdocument%})
 

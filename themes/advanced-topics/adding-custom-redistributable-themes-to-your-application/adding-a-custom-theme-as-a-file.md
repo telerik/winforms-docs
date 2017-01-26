@@ -14,11 +14,11 @@ previous_url: themes-advanced-topics-adding-custom-adding-as-file
 
 1. Create a new Windows Application and drag a RadControl, i.e. RadButton, from your Toolbox to your form. 
 
-1. Create a new custom theme and save it somewhere on your hard drive. 
+1. Create a new custom theme and save it somewhere on your hard drive (save it as XML files). 
 
 1. Right-click the project node in the Solution Explorer, choose __Add >> Existing Item__ and add the custom theme file. This will automatically copy the custom theme file in your project's directory. 
 
-1. Add a RadThemeManager to the form. 
+1. Add __a RadThemeManager__ to the form. 
 
 1. From its Action Menu (click the Smart Tag to open it) choose __Load Theme from file__, then browse to the theme file in the project directory and select it, click Open. 
 

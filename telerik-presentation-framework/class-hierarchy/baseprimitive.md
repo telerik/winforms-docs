@@ -1,6 +1,6 @@
 ---
 title: BasePrimitive
-page_title: BasePrimitive | UI for WinForms Documentation
+page_title: BasePrimitive | Telerik Presentation Framework
 description: BasePrimitive is a VisualElement descendant that Implements the IPrimitive interface. 
 slug: winforms/telerik-presentation-framework/class-hierarchy/baseprimitive
 tags: baseprimitive
@@ -11,9 +11,7 @@ previous_url: tpf-class-hierarchy-baseprimitive
 
 # BasePrimitive
 
-## 
-
-BasePrimitive is a [VisualElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/visualelement%}) descendant that Implements the IPrimitive interface. IPrimitive adds a single boolean property ShouldPaint and a PaintPrimitive() method that draws a primitive to the screen. Descendants of BasePrimitive override the PaintPrimitive() method to represent some atomic visual component like text, fill, checkbox, arrows, etc. The following code is an example PaintPrimitive() method for the TextPrimitive class:
+__BasePrimitive__ is a [VisualElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/visualelement%}) descendant that implements the __IPrimitive__ interface. __IPrimitive__ adds a single boolean property __ShouldPaint__ and a __PaintPrimitive__ method that draws a primitive to the screen. Descendants __of BasePrimitive__ override the __PaintPrimitive__ method to represent some atomic visual component like text, fill, checkbox, arrows, etc. The following code is a sample __PaintPrimitive__ method implementation for the __TextPrimitive__ class:
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\BasePrimitiveForm.cs region=Paint}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\BasePrimitiveForm.vb region=Paint}} 
@@ -39,3 +37,21 @@ End Sub
 ````
 
 {{endregion}} 
+
+# See Also
+* [Choosing an Ancestor Class]({%slug winforms/telerik-presentation-framework/class-hierarchy/choosing-an-ancestor-class%})
+
+* [Class Hierarchy Overview]({%slug winforms/telerik-presentation-framework/class-hierarchy/class-hierarchy-overview%})
+
+* [LayoutPanel]({%slug winforms/telerik-presentation-framework/class-hierarchy/layoutpanel%})
+
+* [RadComponent, RadComponentElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcomponent,-radcomponentelement%})
+
+* [RadControl]({%slug winforms/telerik-presentation-framework/class-hierarchy/radcontrol%})
+
+* [RadElement]({%slug winforms/telerik-presentation-framework/class-hierarchy/radelement%})
+
+* [RadItem]({%slug winforms/telerik-presentation-framework/class-hierarchy/raditem%})
+
+* [RadObject]({%slug winforms/telerik-presentation-framework/class-hierarchy/radobject%})
+

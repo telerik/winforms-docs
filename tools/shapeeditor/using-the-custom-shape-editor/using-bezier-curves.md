@@ -1,7 +1,7 @@
 ---
 title: Using Bezier Curves
-page_title: Using Bezier Curves | UI for WinForms Documentation
-description: Using Bezier Curves
+page_title: Using Bezier Curves | UI for WinForms Tools
+description: This article describes how one can use Bezier Curves in RadShapeEditor.
 slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/using-bezier-curves
 tags: using,bezier,curves
 published: True
@@ -26,3 +26,8 @@ You can control the shape of the curve by setting the properties for the control
 ## Removing Bézier Curves
 
 To remove the Bézier curve, right-click on the curve, and then click __Convert__. This action will remove the two control points and restore a straight line between the two endpoints.
+
+# See Also
+
+* [Moving and Locking Points]({%slug winforms/tools/shapeeditor/using-the-custom-shape-editor/moving-and-locking-points%})
+* [Adding and Removing Points]({%slug  winforms/tools/shapeeditor/using-the-custom-shape-editor/adding-and-removing-points%})

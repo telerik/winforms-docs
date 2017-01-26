@@ -1,7 +1,7 @@
 ---
 title: TrackBarPrimitive
-page_title: TrackBarPrimitive | UI for WinForms Documentation
-description: TrackBarPrimitive
+page_title: TrackBarPrimitive | Telerik Presentation Framework
+description: TrackBarPrimitive provides the basic visual layout of a track-bar background.
 slug: winforms/telerik-presentation-framework/primitives/trackbarprimitive
 tags: trackbarprimitive
 published: True
@@ -10,10 +10,7 @@ previous_url: tpf-primitives-trackbarprimitive
 ---
 
 # TrackBarPrimitive
-
-
-
-## 
+ 
 
 TrackBarPrimitive provides the basic visual layout of a trackbar background.  Typically you would use a higher level object, i.e. the [RadTrackBarElement]({%slug winforms/telerik-presentation-framework/elements/radtrackbarelement%}) to include in your control. [RadTrackBarElement]({%slug winforms/telerik-presentation-framework/elements/radtrackbarelement%}) handles the position of the track bar thumb and the various events that go into making the track bar useful.
 
@@ -63,3 +60,21 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [ArrowPrimitive]({%slug winforms/telerik-presentation-framework/primitives/arrowprimitive%})
+
+* [BorderPrimitive]({%slug winforms/telerik-presentation-framework/primitives/borderprimitive%})
+
+* [CheckPrimitive]({%slug winforms/telerik-presentation-framework/primitives/checkprimitive%})
+
+* [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%})
+
+* [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%})
+
+* [GripPrimitive]({%slug winforms/telerik-presentation-framework/primitives/gripprimitive%})
+
+* [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%})
+
+* [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})
+

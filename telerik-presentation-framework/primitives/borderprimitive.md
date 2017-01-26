@@ -1,7 +1,7 @@
 ---
 title: BorderPrimitive
-page_title: BorderPrimitive | UI for WinForms Documentation
-description: BorderPrimitive
+page_title: BorderPrimitive | Telerik Presentation Framework
+description: The BorderPrimitive class is responsible for drawing a border around an area on the screen.
 slug: winforms/telerik-presentation-framework/primitives/borderprimitive
 tags: borderprimitive
 published: True
@@ -10,8 +10,6 @@ previous_url: tpf-primitives-borderprimitive
 ---
 
 # BorderPrimitive
-
-
 
 The __BorderPrimitive__ class is responsible for drawing the border around an area on the screen. __BorderPrimitive__ is automatically sized to the inner edges of the parent element. The __BoxStyle__ property controls display characteristics and can be set to __SingleBorder, FourBorders__ and __OuterInnerBorders__.
 
@@ -121,7 +119,9 @@ End Class
 
 ## OuterInnerBorders
 
-![tpf-primitives-borderprimitive 003](images/tpf-primitives-borderprimitive003.png)Inner and outer colors can be specified using the __ForeColor__ and __InnerColor__ property families. The __GradientStyle__ property determines how the primitive colors are displayed. A Solid __GradientStyle__ will only take the ForeColor and InnerColor properties into account. The code example below sets a 1 pixel width, sets the GradientStyle to Linear, sets the ForeColor related properties to blue and green colors and the InnerColor related properties to light blue and green colors
+![tpf-primitives-borderprimitive 003](images/tpf-primitives-borderprimitive003.png)
+
+Inner and outer colors can be specified using the __ForeColor__ and __InnerColor__ property families. The __GradientStyle__ property determines how the primitive colors are displayed. A Solid __GradientStyle__ will only take the __ForeColor__ and __InnerColor__ properties into account. The code example below sets a 1 pixel width, sets the __GradientStyle__ to *Linear*, sets the __ForeColor__ related properties to blue and green colors. The InnerColor related properties are set to light blue and green colors.
 
 #### Creating a BorderPrimitive with OuterInnerBorders
 
@@ -177,3 +177,21 @@ End Class
 ````
 
 {{endregion}}
+
+# See Also
+* [ArrowPrimitive]({%slug winforms/telerik-presentation-framework/primitives/arrowprimitive%})
+
+* [CheckPrimitive]({%slug winforms/telerik-presentation-framework/primitives/checkprimitive%})
+
+* [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%})
+
+* [FocusPrimitive]({%slug winforms/telerik-presentation-framework/primitives/focusprimitive%})
+
+* [GripPrimitive]({%slug winforms/telerik-presentation-framework/primitives/gripprimitive%})
+
+* [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%})
+
+* [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})
+
+* [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%})
+

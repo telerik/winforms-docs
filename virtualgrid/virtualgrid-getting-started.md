@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadVirtualGrid
+description: This article shows how you  can easily start using RadVirtualGrid.
 slug: winforms/virtualgrid/getting-started
 tags: virtualgrid, started
 published: True
@@ -19,7 +19,7 @@ The example bellow demonstrates how one can use __RadVirtualGrid__ with a list w
 
 ### Setting the form and adding data 
  
-1\. Add a __RadVirtualGrid__ to a form and set its __Dock__ property to __Fill__ .
+1\. Add a __RadVirtualGrid__ to a form and set its __Dock__ property to *Fill* .
 2\. Add the following sample class to the project.
 
 {{source=..\SamplesCS\VirtualGrid\VirtualGridGettingStarted.cs region=SampleClass}} 
@@ -281,4 +281,14 @@ End Sub
 ```` 
 
 {{endregion}}
+
+
+# See Also
+* [Busy Indicators]({%slug winforms/virtualgrid/busy-indicators%})
+
+* [Copy/Paste/Cut]({%slug winforms/virtualgrid/copy-paste-cut%})
+
+* [Scrolling]({%slug winforms/virtualgrid/scrolling%})
+
+* [Overview]({%slug winforms/virtualgrid%})
 
