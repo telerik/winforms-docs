@@ -1118,10 +1118,7 @@ navigation:
         position: 0
     telerik-presentation-framework/tooltips-and-screentips:
         title: Tooltips and ScreenTips
-        position: 16
-    telerik-presentation-framework/shapes:
-        title: Shapes
-        position: 100		
+        position: 16		
     telerik-presentation-framework/getting-started:
         title: Getting Started
         position: 1
