@@ -1,7 +1,7 @@
 ---
 title: Watermark
-page_title: Watermark | UI for WinForms Documentation
-description: Watermark
+page_title: Watermark | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/features/watermark
 tags: watermark
 published: True
@@ -11,11 +11,10 @@ previous_url: richtexteditor-features-watermark
 
 # Watermark
 
-Watermarks are text or pictures that appear behind document text. They often add interest or identify the document status. You can see watermarks in Paged layout mode; they can be printed and exported to all rich-text formats, except HTML.
+Watermarks are text or pictures that appear behind document's text. They often add interest or identify the document status. You can see watermarks in *Paged* layout mode. They can be printed and exported to all rich-text formats, except HTML.
 
 >tip More on the specifics of the format providers you can find [here]({%slug winforms/richtexteditor/import%}).
 >
-
 
 * [Uisng UI](#using-ui)
 
@@ -23,9 +22,13 @@ Watermarks are text or pictures that appear behind document text. They often add
 
 ## Using UI
 
-You ca easily insert bookmarks, for example you can use the __RichTextEditor__ and choose from several predefined watermarks: ![richtexteditor-features-watermark 001](images/richtexteditor-features-watermark001.png)
+You can easily insert bookmarks, for example you can use the __RichTextEditor__ and choose from several predefined watermarks: 
 
-Alternatively, you can create your custom watermark from text or picture through the *Insert custom watermark* option. ![richtexteditor-features-watermark 002](images/richtexteditor-features-watermark002.png)
+![richtexteditor-features-watermark 001](images/richtexteditor-features-watermark001.png)
+
+Alternatively, you can create your custom watermark from text or picture through the *Insert custom watermark* option. 
+
+![richtexteditor-features-watermark 002](images/richtexteditor-features-watermark002.png)
 
 ## Manipulating Watermarks Programatically
 
@@ -47,11 +50,9 @@ Me.radRichTextEditor1.SetWatermark(PredefinedWatermarkType.Confidential)
 
 {{endregion}} 
 
-
 You can create custom watermarks using the __WatermarkTextSettings__ and __WatermarkImageSettings__ classes and the respective methods of __RadRichTextEditor__ - __SetWatermarkText()__ and __SetWatermarkImage()__.
         
-
-The following example demonstrates how to crate a text watermark and apply it to the document in the editor:
+The following example demonstrates how to create a text watermark and apply it to the document in the editor:
 
 {{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=settings}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=settings}} 
@@ -76,7 +77,6 @@ Me.radRichTextEditor1.SetWatermarkText(textSettings)
 ````
 
 {{endregion}} 
-
 
 And this is how you create an image watermark and apply it: 
 

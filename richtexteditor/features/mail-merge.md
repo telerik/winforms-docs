@@ -1,7 +1,7 @@
 ---
 title: Mail Merge
-page_title: Mail Merge | UI for WinForms Documentation
-description: Mail Merge
+page_title: Mail Merge | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/features/mail-merge
 tags: mail,merge
 published: True
@@ -116,25 +116,24 @@ MailMerge can be done both [using the UI](#mailmerging-using-the-ui:) and [progr
 
 ### MailMerging using the UI:
 
-RadRichTextEditor comes with a predefined UI for inserting merge fields, previewing the results and fulfilling the merge. It is separated in the  Mailings tab:
+**RadRichTextEditor** comes with a predefined UI for inserting merge fields, previewing the results and fulfilling the merge. It is separated in the  Mailings tab:
+
 ![richtexteditor-features-mail-merge 001](images/richtexteditor-features-mail-merge001.png)
 
-The options in the drop down button InsertMergeField are automatically populated to match the properties of the objects which are used as data source. You can also switch the display mode of the merge fields from FieldCodes (as in the picture) to FieldNames (e.g. "<<FirstName>>") or preview the results.
+The options in the drop down button **InsertMergeField** are automatically populated to match the properties of the objects which are used as data source. You can also switch the display mode of the merge fields from *FieldCodes* (as in the picture) to *FieldNames* (e.g. "<<FirstName>>") or preview the results.
             
-
-If you click the "Preview Results" button, the fields will be replaced with the data from the current record, which by default is the first item from the data source. Then, you can further iterate through the records using the First, Last, Previous and Next buttons.
+If you click the "**Preview Results**" button, the fields will be replaced with the data from the current record, which by default is the first item from the data source. Then, you can further iterate through the records using the *First*, *Last*, *Previous* and *Next* buttons.
  
-If you wish to save the document as a template, you can do so by executing the SaveFileCommand from the application menu in the ribbon bar. 
+If you wish to save the document as a template, you can do so by executing the **SaveFileCommand** from the application menu in the ribbon bar. 
 
 >note The merge fields are persisted only in XAML and docx.
 >
 
-In the end, you can fulfill the mail merge from the MailMerge button, which executes the MailMergeCommand. A SaveFileDialog dialog will pop up prompting you to choose where you wish to save the document – result of mail merge and in what file format.
-
+In the end, you can fulfill the mail merge from the **MailMerge** button, which executes the **MailMergeCommand**. A **SaveFileDialog** dialog will pop up prompting you to choose where you wish to save the document – result of mail merge and in what file format.
 
 ### Programmatic Mail Merge
 
-This same scenario can be carried out programmatically just as easily. The methods that can be used are:
+The same scenario can be carried out programmatically just as easily. The methods that can be used are:
             
 ### Creating a MergeField:
 
@@ -153,7 +152,7 @@ Dim field As New MergeField() With {.PropertyPath = "FirstName"}
 
 {{endregion}} 
 
-This fields will look for the value of the FirstName property of the Employee objects.
+This fields will look for the value of the **FirstName** property of the Employee objects.
 
 ### Changing the display mode of merge fields:
 
@@ -260,4 +259,4 @@ Me.radRichTextEditor1.MailMerge(False) ' returns a RadDocument that is the resul
 
 {{endregion}} 
 
-You can further choose what you wish to do with the resulting RadDocument – assign it to a RadRichTextEditor’s Document property, export it, etc.
+You can further choose what you wish to do with the resulting **RadDocument** – assign it to a **RadRichTextEditor**’s Document property, export it, etc.

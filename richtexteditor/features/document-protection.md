@@ -1,7 +1,7 @@
 ---
 title: Document Protection
-page_title: Document Protection | UI for WinForms Documentation
-description: Document Protection
+page_title: Document Protection | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/features/document-protection
 tags: document,protection
 published: True
@@ -53,11 +53,11 @@ Me.radRichTextEditor1.Users = New PermissionInfoCollection() From {PermissionInf
 
 This code determines 3 users and two groups but does not specify the relationship between the users and the groups. This is so because users have the potential to change their groups.
 
-The collection kept in the Users property of __RadRichTextEditor__ is also used in the default   __ChangeEditingPermissionsDialog__ which creates the PermissionRangeInfos to be inserted in the document.
+The collection kept in the **Users** property of __RadRichTextEditor__ is also used in the default   __ChangeEditingPermissionsDialog__ which creates the **PermissionRangeInfos** to be inserted in the document.
 
 ## Changing the Current User
 
-The current user of the document is set using the __CurrentUser__ property of the editor.  It is of type UserInfo - here in addition to the name of the user, the group that the user belongs to can also be passed.
+The current user of the document is set using the __CurrentUser__ property of the editor.  It is of type **UserInfo** - here in addition to the name of the user, the group that the user belongs to can also be passed.
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=current}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=current}} 
@@ -74,7 +74,7 @@ Me.radRichTextEditor1.CurrentUser = New UserInfo("Users", "James Miller", "jmill
 
 {{endregion}} 
 
-You can also create a collection with the UserInfos that will be interracting with the document and wire it with   some UI of yours. For example, if you set-up the collection as follows:
+You can also create a collection with the **UserInfos** that will be interacting with the document and wire it with   some UI of yours. For example, if you set-up the collection as follows:
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=usersList}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=usersList}} 
@@ -142,7 +142,7 @@ dropdown1.DisplayMember = "Username"
 
 {{endregion}} 
 
-Then, when the selected item of the combo changes, the CurrentUser of the editor will be updated: 
+Then, when the selected item of the combo changes, the **CurrentUser** of the editor will be updated: 
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=combo3}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo3}} 
@@ -167,14 +167,11 @@ End Sub
 
 When document protection is enforced, the current user can modify the rights for editing the part of the document that he/she is entitled to editing. When the protection is disabled, the editing rights for the document can be freely modified by all users.
         
-
-The protection of the document can be turned on and off using the __ToggleDocumentProtectionCommand__ command of RadRichTextEditor.
+The protection of the document can be turned on and off using the __ToggleDocumentProtectionCommand__ command of **RadRichTextEditor**.
         
-
 The command opens a dialog that allows you to enter a password. By clicking OK, the document protection starts to be enforced.
         
-
-It is also possible to toggle document protection in code-behind, without showing a dialog:#_[C#] _
+It is also possible to toggle document protection in code-behind, without showing a dialog:
 
 {{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=password}} 
 {{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=password}} 
@@ -208,11 +205,11 @@ Me.radRichTextEditor1.Document.UnprotectDocument("password")
 
 {{endregion}}
 
-Note that the UnprotectDocument method will succeed only if the password you have passed as parameter matches the one used to protect the document.
+Note that the **UnprotectDocument** method will succeed only if the password you have passed as parameter matches the one used to protect the document.
 
 ## Creating and Modifying Document Protection Regions
 
-DocumentProtection regions can be most easily created and modified through the ChangeEditingPermissionsDialog which can be invoked through the  __ShowChangeEditingPermissionsDialogCommand__ of __RadRichTextEditor__. They can also be edited in code-behind, using the API of RadRichTextEditor and RadDocument.
+**DocumentProtection** regions can be most easily created and modified through the **ChangeEditingPermissionsDialog** which can be invoked through the  __ShowChangeEditingPermissionsDialogCommand__ of __RadRichTextEditor__. They can also be edited in code-behind, using the API of **RadRichTextEditor** and **RadDocument**.
 
 Here is an example:
 
@@ -238,7 +235,7 @@ Me.radRichTextEditor1.InsertPermissionRange(infos)
 
 {{endregion}} 
 
-This code will insert a permission range around the current selection in the document. The type of the permission is Individual - meaning that only the CurrentUser will be able to edit the region.
+This code will insert a permission range around the current selection in the document. The type of the permission is *Individual* - meaning that only the **CurrentUser** will be able to edit the region.
         
 # See Also
 

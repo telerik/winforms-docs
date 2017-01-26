@@ -1,6 +1,6 @@
 ---
 title: Repeat Table Header Row
-page_title: Repeat Table Header Row | RadRichtextEditor
+page_title: Repeat Table Header Row | RadRichTextEditor
 description: Header row repetition means that the header row(s) of a table will repeat at the top of each page on which the table spans.
 slug: radrichtextbox-features-repeat-table-header-row
 tags: table, header, row, repeat
@@ -12,14 +12,12 @@ position: 9
 
 When working with large tables, they are visualized in more than one page. Header row repetition means that the header row(s) of a table will repeat at the top of each page on which the table spans. This article will show you how to work with this feature.
 
-
 * [Overview](#overview)
 
 * [How to Use Repeat Table Header Row](#how-to-use-repeat-table-header-row)
 
     * [Programmatically via the RadRichTextBox API](#programmatically-via-the-radrichtextbox-api)
     * [Via the Built-in UI](#via-the-built-in-ui)
-
 
 ## Overview  
 
@@ -31,7 +29,7 @@ When the table header row is visible, a new (the same as the header row) row is 
 
 ![RadRichTextBox-Features_Repeat-Table-Header-Row001](images/RadRichTextBox-Features_Repeat-Table-Header-Row001.png)
 
->The feature is visible only in Paged layout mode and when printing (Print Preview). Repeating table rows was introduced in Q1 2016.
+>The feature is visible only in *Paged* layout mode and when printing (Print Preview). Repeating table rows was introduced in Q1 2016.
 
 ## How to Use a Repeat Table Header Row
 
@@ -41,8 +39,7 @@ You can set one or more rows as a repeat table header row(s) consecutively. In o
 
 ### Programmatically via the RadRichTextBox API 
 
-The __[TableRow class](http://docs.telerik.com/devtools/winforms/api/html/T_Telerik_Windows_Documents_Model_TableRow.htm)__ exposes a property called RepeatOnEveryPage of type *bool*. __Example 1__ shows how to set a row to repeat on each page the table appears on.
-
+The __[TableRow class](http://docs.telerik.com/devtools/winforms/api/html/T_Telerik_Windows_Documents_Model_TableRow.htm)__ exposes a property called **RepeatOnEveryPage** of type *bool*. __Example 1__ shows how to set a row to repeat on each page the table appears on.
 
 ####  Set a Repeat Table Header Row using the RepeatOnEveryPage property.
 
@@ -59,11 +56,9 @@ row.RepeatOnEveryPage = True
 
 ```` 
 
-
 {{endregion}} 
 
-
-Another option is to use the __ChangeTableRowRepeatOnEveryPage__ method of __RadRichTextBox__, which allows you to change whether a row will be repeated or not. The below demonstrates how to get the first __TableRow__ in a __[RadDocument]({%slug winforms/richtexteditor-/document-elements/raddocument%})__ and set it as a repeated header row.
+Another option is to use the __ChangeTableRowRepeatOnEveryPage__ method of __RadRichTextBox__, which allows you to change whether a row will be repeated or not. The below code snippet demonstrates how to get the first __TableRow__ in a __[RadDocument]({%slug winforms/richtexteditor-/document-elements/raddocument%})__ and set it as a repeated header row.
 
 #### Set a Repeat Table Header Row using the ChangeTableRowRepeatOnEveryPage method.
 
@@ -80,23 +75,19 @@ Me.radRichTextEditor1.RichTextBoxElement.ChangeTableRowRepeatOnEveryPage(firstRo
 
 ```` 
 
-
 {{endregion}} 
-
-
 
 ### Via the Built-in UI 
 
-Using the UI of __RadRichTextBox__, you have the ability to add or remove header rows.
+Using the UI of __RadRichTextEditor__, you have the ability to add or remove header rows.
 
-The `TableProperties` dialog gives you a simple UI to add or remove a repeating header row.
+The **TableProperties** dialog gives you a simple UI to add or remove a repeating header row.
 
->caption Figure 2: The RadRichTextBox Table Properties dialog
+>caption Figure 2: The RadRichTextEditor's Table Properties dialog
 
 ![RadRichTextBox-Features_Repeat-Table-Header-Row002](images/RadRichTextBox-Features_Repeat-Table-Header-Row002.png)
 
->note Through the dialog you can set only the first row from the table as a repeated header row. If another row is chosen (click on the next, previous row buttons), the checkbox is disabled. 
-
+>note Through the dialog you can set only the first row from the table as a repeated header row. If another row is chosen (click on the next, previous row buttons), the check box is disabled. 
 
 Repeating table header row(s) could be added or removed via the Table Tools’ contextual tab __Layout__, which contains a toggle button that sets the row as a repeating header row or not. To learn more about how to use the __RadRichTextBoxRibbonUI__, you could read [this topic]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}).
 

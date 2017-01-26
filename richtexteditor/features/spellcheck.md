@@ -1,7 +1,7 @@
 ---
 title: Spellcheck
 page_title: Spellcheck | RadRichTextEditor
-description: Spellcheck
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/features/spellcheck
 tags: spellcheck
 published: True
@@ -11,9 +11,8 @@ previous_url: richtexteditor-features-spellcheck
 
 # Spellcheck
 
-The __RadRichTextEditor__ control is designed to support "spell checking as you type" by setting a single property and specifying a proper dictionary to it. This topic will explain you the following:
+The __RadRichTextEditor__ control is designed to support "*spell checking as you type*" by setting a single property and specifying a proper dictionary to it. This topic will explain you the following:
       
-
 * [Enabling SpellCheck](#enabling-spellcheck)
 
 * [Dictionaries](#dictionaries)
@@ -26,10 +25,9 @@ The __RadRichTextEditor__ control is designed to support "spell checking as you 
 
 ## Enabling SpellCheck
 
-To enable or disable the spell checking functionality (present as red wavy underlines below unrecognized words), you can use the __IsSpellCheckingEnabled__ property on the __RadRichTextEditor__. When the property is *false*, no dictionaries are loaded and no overhead is incurred for spell checking.
-        
+To enable or disable the spell checking functionality (present as red wavy underlines below unrecognized words), you can use the __IsSpellCheckingEnabled__ property on __RadRichTextEditor__. When the property is *false*, no dictionaries are loaded and no overhead is incurred for spell checking.        
 
-You can customize the spell checker by using the __SpellChecker__ property of __RadRichTextEditor__. It’s of type __ISpellChecker__. By default an object of type DocumentSpellChecker that implements the interface, is used for this property. You can either use it or provide your custom class that implements the __ISpellChecker__ interface.
+You can customize the spell checker by using the __SpellChecker__ property of __RadRichTextEditor__. It’s of type __ISpellChecker__. By default, an object of type **DocumentSpellChecker** that implements the interface, is used for this property. You can either use it or provide your custom class that implements the __ISpellChecker__ interface.
 
 >note __RadRichTextEditor__ can also be configured to be used with a spell-checker using an OpenOffice dictionary and the NHunspell library: [RadRichTextEditor OpenOffice Spell Checking](http://www.telerik.com/support/code-library/radrichtexteditor-openoffice-spell-checking).
 >        
@@ -77,6 +75,7 @@ __RadWordsDictionary__ implements the __IWordDictionary__ interface and is capab
 
 {{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=LoadWordDictionaryStream}} 
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=LoadWordDictionaryStream}}
+
 ````C#
 private void LoadWordDictionaryStream(Stream dictStrem)
 {
@@ -93,11 +92,9 @@ End Sub
 
 ```` 
 
-
-
 {{endregion}}
 
-One of the constructor overloads of the RadWordsDictionary class enables you to pass a parameter of type __IEnumerable&lt;string&gt;__, which can help you create your own dictionary with a custom set of words.
+One of the constructor overloads of the **RadWordsDictionary** class enables you to pass a parameter of type __IEnumerable&lt;string&gt;__, which can help you create your own dictionary with a custom set of words.
 
 #### Create RadWordsDictionary from strings
 
@@ -127,26 +124,21 @@ End Sub
 
 ```` 
 
-
-
 {{endregion}}
 
 ## Custom Dictionaries
 
-One feature of the __SpellChecker__ in __RadRichTextEditor__ is to add a word to a user-defined custom dictionary toenable domain-specific applications. Such dictionary should implement the __IWordCustomDictionary__ interface. For that purpose the __RadRichTextEditor__ provides you with the __RadIsolatedStorageCustomDictionary__ class out of the box. It allows you to persist the word list in a file located in the Isolated Storage.
+One feature of the __SpellChecker__ in __RadRichTextEditor__ is to add a word to a user-defined custom dictionary to enable domain-specific applications. Such dictionary should implement the __IWordCustomDictionary__ interface. For that purpose the __RadRichTextEditor__ provides you with the __RadIsolatedStorageCustomDictionary__ class out of the box. It allows you to persist the word list in a file located in the Isolated Storage.
         
-
-Here is an example of a such dictionary which adds the words in the "CustomDictionary.txt" marked as a Site-scoped IsolatedSotrageFile.
+Here is an example of a such dictionary which adds the words in the "CustomDictionary.txt" marked as a Site-scoped **IsolatedSotrageFile**.
 
 >tip The __IsolatedStorageScope__ enumeration has the following values:
 >
 *  __Site__ - the dictionary defined in this scope is available for each application hosted on the same site.
 *  __Application__ - the dictionary is available only for the particular application.>
 
-
->note When adding a dictionary that implements the __ICustomWordDictionary__ interface object use __AddCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ method fo the __DocumentSpellChecker__ class. You can also associate a custom dictionary to a specific culture. The method to remove it is __RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ .
+>note When adding a dictionary that implements the __ICustomWordDictionary__ interface object use __AddCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ method for the __DocumentSpellChecker__ class. You can also associate a custom dictionary to a specific culture. The method to remove it is __RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ .
 >
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=custom}} 
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=custom}} 
@@ -173,21 +165,17 @@ End Sub
 
 If you want to have a temporary custom dictionary, that will only be available for a single application session, you can use the __RadNonPersistentCustomDictionary__ object.
 
-
 If you want to have a temporary custom dictionary, that will only be available for a single application session, you can use the __RadNonPersistentCustomDictionary__ object.
 
 ## Adding a Word
 
-To add a word to a dictionary you can either use the __AddWord__ method of the __DocumentSpellChecker__ or of the dictionary itself. Using the first one you can add a word to multiple dictionaries associated to the same culture. This done by passing the desired culture as parameter to the method.
+To add a word to a dictionary you can either use the __AddWord__ method of the __DocumentSpellChecker__ or of the dictionary itself. Using the first one you can add a word to multiple dictionaries associated to the same culture. This is done by passing the desired culture as parameter to the method.
         
-
 >note Using the overload of the __AddWord__ method that takes only the word as argument is equal to using the second overload and passing __CultureInfo.InvariantCulture__ as argument.
 >
 
-
 Using the __AddWord__ method of the dictionary itself will add the word only to the respective dictionary.
         
-
 Here is an example.
 
 {{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=addword}} 
@@ -209,13 +197,10 @@ Me.radRichTextEditor1.SpellChecker.AddWord("RadRichTextEditor", CultureInfo.Inva
 
 The spell checking component is designed to suit scenarios where different cultures take place in the same application. Internationalization is achieved through associating each dictionary and custom dictionary with a specific culture (or the __InvariantCulture__ as the default one).
         
-
 Here is an example.
 
 >note The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
 >
-
-
 
 {{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=load}} 
 {{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}} 

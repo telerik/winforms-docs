@@ -1,7 +1,7 @@
 ---
 title: Hyperlink
-page_title: Hyperlink | UI for WinForms Documentation
-description: Hyperlink
+page_title: Hyperlink | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/features/hyperlink
 tags: hyperlink
 published: True
@@ -11,9 +11,7 @@ previous_url: richtexteditor-features-hyperlink
 
 # Hyperlink
 
-
-
-Now the following functionality is supported in the __RadRichTextEditor__
+The following functionality is supported in the __RadRichTextEditor__:
 
 * having a hyperlink span several paragraphs;
 
@@ -21,24 +19,19 @@ Now the following functionality is supported in the __RadRichTextEditor__
 
 * making bookmarks in the document the targets of hyperlinks.
 
-The classes that encapsulate the functionality of hyperlinks are [HyperlinkInfo](#hyperlinkinfo),[HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend).
-        
-      
+The classes that encapsulate the functionality of hyperlinks are [HyperlinkInfo](#hyperlinkinfo),[HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend).      
 
 [Other customization options](#othercustomizationoptions) include setting the tool tip format and detecting the click of hyperlinks.
       
-
-
-
 ## HyperlinkInfo
 
-More often than not, you would only need to use objects of type HyperlinkInfo. HyperlinkInfo objects have the following properties:
+More often than not, you would only need to use objects of type **HyperlinkInfo**. **HyperlinkInfo** objects have the following properties:
 
-* IsAnchor - a boolean property determining if the hyperlink points to a URL or a bookmark;
+* **IsAnchor** - a Boolean property determining if the hyperlink points to a URL or a bookmark;
 
-* NavigateUri - the URI of the hyperlink;
+* **NavigateUri** - the URI of the hyperlink;
 
-* Target - determines if the link should be opened in another window (if set to HyperlinkTargets.Blank) or in the same frame (HyperlinkTargets.Self).
+* **Target** - determines if the link should be opened in another window (if set to HyperlinkTargets.*Blank*) or in the same frame (HyperlinkTargets.*Self*).
 
 For example, a link to our site can be inserted in the document programmatically as follows:
 
@@ -60,11 +53,9 @@ Dim info As New HyperlinkInfo() With {.NavigateUri = "http://www.telerik.com", .
 Me.radRichTextEditor1.InsertHyperlink(info, "RichTextBox demo")
 
 ````
-
 {{endregion}} 
 
-
-A link to a bookmark is inserted by specifying the bookmark's name as NavigateUri and setting the IsAnchor to true:
+A link to a bookmark is inserted by specifying the bookmark's name as **NavigateUri** and setting the **IsAnchor** property to *true*:
 
 {{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=remove}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=remove}} 
@@ -80,18 +71,14 @@ Me.radRichTextEditor1.RemoveHyperlink()
 
 {{endregion}} 
 
-
 You can also use the overloaded methods for inserting a hyperlink:
 
 * public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, string hyperlinkText, StyleDefinition hyperlinkStyle) - insert a hyperlink using a custom style, different from the default blue font color and single underline;
             
-
-* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, IEnumerable<Inline> inlines) - insert a hyperlink which spans several different adjacent inlines, e.g. part of the hyperlink text is Bold or there is an image inside the hyperlink;
-            
+* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, IEnumerable<Inline> inlines) - insert a hyperlink which spans several different adjacent inlines, e.g. part of the hyperlink text is bold or there is an image inside the hyperlink;            
 
 * public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo) - create a hyperlink from the currently selected part of the document;
             
-
 * public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, StyleDefinition hyperlinkStyle) - create a hyperlink from the currently selected part of the document and change the style of the text to the style passed as second argument.
 
 Removing a hyperlink (and keeping the part of the document that the hyperlink spanned) can be done by positioning the caret in the hyperlink and invoking.
@@ -110,12 +97,10 @@ Me.radRichTextEditor1.RemoveHyperlink()
 
 {{endregion}} 
 
-
 ## HyperlinkRangeStart and HyperlinkRangeEnd
 
-HyperlinkRangeStart and HyperlinkRangeEnd are Inline DocumentElements and can be added to the inlines of a document, if you are building the contents of a RadDocument in code-behind.
+**HyperlinkRangeStart** and **HyperlinkRangeEnd** are **Inline** DocumentElements and can be added to the inlines of a document, if you are building the contents of a **RadDocument** in code-behind.
         
-
 Here is an example that creates a document with a hyperlink spanning several paragraphs, including an image in one of the paragraphs:
 
 {{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=startend}} 
@@ -183,15 +168,13 @@ Me.radRichTextEditor1.Document = document
 
 {{endregion}} 
 
-The result (Ctrl + Click to follow):
+The result (`Ctrl` + `Click` to follow):
 
 ![richtexteditor-features-hyperlink 001](images/richtexteditor-features-hyperlink001.png)
 
-You will also need to use HyperlinkRangeStart and HyperlinkRangeEnd, if you are using hyperlinks for the implementation of a custom logic and want to get all hyperlinks from the document, manipulate the properties of the HyperlinkInfo or the whole part of the document that is included in the hyperlink.
+You will also need to use **HyperlinkRangeStart** and **HyperlinkRangeEnd**, if you are using hyperlinks for the implementation of a custom logic and want to get all hyperlinks from the document, manipulate the properties of the **HyperlinkInfo** or the whole part of the document that is included in the hyperlink.
         
-
-For instance, here is how you can delete all hyperlinks in the document and replace them with some text:#_[C#] _
-
+For instance, here is how you can delete all hyperlinks in the document and replace them with some text:
 
 {{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=delete}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=delete}} 
@@ -224,19 +207,17 @@ Next link
 
 __ToolTip__
 
-By default hyperlinks take a fixed string as a tool tip. The default format is:
+By default, hyperlinks take a fixed string as a tool tip. The default format is:
 
->note {0}
->{1} to follow link
+>note {0}{1} to follow link
 >
 
-
-You have control over it using the __HyperlinkToolTipFormatString__ of RadRichTextEditor, which will set the format for all hyperlinks in the document.
+You have control over it using the __HyperlinkToolTipFormatString__ of **RadRichTextEditor**, which will set the format for all hyperlinks in the document.
         
-
 __HyperlinkClicked__
 
-When you click on a hyperlink, the __HyperlinkClicked__ event of __RadRichTextEditor__ is fired. The sender of the event is the document element, which you have clicked, e.g. a Span, an Image, InlineUIContainer, etc. The event args on the other hand, provide the possibility to markthe event as handled and prevent the default action. Custom logic can also be implemented depending on the __HyperlinkTarget__ and __URL__, which are also visible as properties of the event args.
+When you click on a hyperlink, the __HyperlinkClicked__ event of __RadRichTextEditor__ is fired. The sender of the event is the document element, which you have clicked, e.g. a **Span**, an **Image**, **InlineUIContainer**, etc. The event args on the other hand, provide the possibility to mark the event as handled and prevent the default action. Custom logic can also be implemented depending on the __HyperlinkTarget__ and __URL__, which are also visible as properties of the event args.
+
 ![richtexteditor-features-hyperlink 002](images/richtexteditor-features-hyperlink002.png)
 
 # See Also
