@@ -11,7 +11,6 @@ previous_url: ribbonbar-overview
 
 # Overview
 
-
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[RadRibbonBar Overview](http://tv.telerik.com/watch/winforms/radribbonbar/radribbonbar-overview)<br>This video contains a brief overview of the RadRibbonBar. (Runtime: 02:15)|![overview-video 001](images/ribbonbar-overview001.png)|
