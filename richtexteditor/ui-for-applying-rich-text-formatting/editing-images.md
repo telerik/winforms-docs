@@ -1,7 +1,7 @@
 ---
 title: Editing Images
-page_title: Editing Images | UI for WinForms Documentation
-description: Editing Images
+page_title: Editing Images | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/editing-images
 tags: editing,images
 published: True
@@ -17,7 +17,7 @@ This topic contains the following sections:
 
 * [Disable Image Editing Capabilities](#disable-image-editing-capabilities)
 
-__RadRichTextEditor__ allow editing images that have been inserted in the editor. Currently you can resize, rotate and drag and drop images. The supported image formats are as follows:
+__RadRichTextEditor__ allow editing images that have been inserted in the editor. Currently, you can resize, rotate and drag and drop images. The supported image formats are as follows:
       
 * JPEG
 
@@ -62,7 +62,7 @@ End Class
 
 {{endregion}} 
 
-Alternatively, you can disable the capabilities of the image adorner by accessing it though RadRichTextEditor's __ImageSelectionAdornerSettings__ property. This allows you to set the bolean properties __CanDrag__,  __CanResize__ and __CanRotate__ which disable/enable respectively dragging of the image, resizing it or rotating it.
+Alternatively, you can disable the capabilities of the image adorner by accessing it though **RadRichTextEditor**'s __ImageSelectionAdornerSettings__ property. This allows you to set the Boolean properties __CanDrag__,  __CanResize__ and __CanRotate__ which disable/enable respectively dragging of the image, resizing it or rotating it.
 
 {{source=..\SamplesCS\RichTextEditor\UI\EditingImages.cs region=disable}} 
 {{source=..\SamplesVB\RichTextEditor\UI\EditingImages.vb region=disable}} 

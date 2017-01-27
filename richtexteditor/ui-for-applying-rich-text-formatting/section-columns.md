@@ -1,6 +1,6 @@
 ---
 title: Section Columns
-page_title: Section Columns
+page_title: Section Columns | RadRichTextEditor
 description: This article describes how one can add columns with the UI.
 slug: radrichtexteditor-ui-for-applying-rich-text-formatting-section-columns
 tags: section, column
@@ -15,7 +15,6 @@ With the Section Columns feature, **RadRichTextEditor** allows you arrange the t
 * [Create Section Columns](#create-section-columns)
 
 * [Changing the Width of a Section Column](#changing-the-width-of-a-section-column)
-
 
 >caption Figure 1: Text laid out in column
 
@@ -39,7 +38,7 @@ The Page Layout tab of [RadRichTextEditorRibbonUI]({%slug winforms/richtextedito
 
 * **Right**: Represents two text columns where the right one has a smaller width than the left one.
 
-* **More Columns...**: Opens the Section Columns Dialog that allows you set columns with custom width and spacing. 
+* **More Columns...**: Opens the *Section Columns Dialog* that allows you set columns with custom width and spacing. 
 
 >caption Figure 3: Left option applied on a section
 
@@ -54,6 +53,7 @@ When the Section contains columns with equal width, you can customize the width 
 ![RadRichTextEditor_Features_Section_Columns_04](images/RadRichTextEditor_Features_Section_Columns_04.png)
 
 Another approach for applying different settings to section columns is through the Columns dialog.
+
 >caption Figure 5: Customizing the width and spacing of columns using dialog
 
 ![RadRichTextEditor_Features_Section_Columns_05](images/RadRichTextEditor_Features_Section_Columns_05.png)

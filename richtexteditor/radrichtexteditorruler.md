@@ -1,7 +1,7 @@
 ---
 title: RadRichTextEditorRuler 
-page_title: RadRichTextEditorRuler  | UI for WinForms Documentation
-description: RadRichTextEditorRuler 
+page_title: RadRichTextEditorRuler  | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor-/radrichtexteditorruler-
 tags: radrichtexteditorruler,
 published: True
@@ -10,31 +10,31 @@ previous_url: richtexteditor-richtexteditorruler
 ---
 
 # RadRichTextEditorRuler 
+ 
+__RadRichTextEditorRuler__ is a control providing ruler functionality to [RadRichTextEditor]({%slug winforms/richtexteditor%}). The rulers allow you to change the paragraph, page margins or align the paragraphs in the document.
 
-
-
-__RadRichTextEditorRuler__ is a control providing ruler functionality to [RadRichTextEditor]({%slug winforms/richtexteditor%}). The rulers allow you to change the paragraph, page margins or align the paragraphs in the document.![richtexteditor-richtexteditorruler 001](images/richtexteditor-richtexteditorruler001.png)
+![richtexteditor-richtexteditorruler 001](images/richtexteditor-richtexteditorruler001.png)
 
 >note Rulers only apply to the [Paged]({%slug winforms/richtexteditor-/document-elements/raddocument%}) document layout mode of the __RadRichtextEditor.__ 
 >
-
 
 ## Using the RadRichTextEditorRuler at design time
 
 Since __RadRichTextEditorRuler__ is a separate control it is available in the toolbox. Here is how to put it in  action:
 
-1. Drag and drop __RadRichTextEditorRuler__ on the form.
+1\. Drag and drop __RadRichTextEditorRuler__ on the form.
 
-1. Drag and drop __RadRichTextEditor__ inside the __RadRichTextEditorRuler.__.
+2\. Drag and drop __RadRichTextEditor__ inside the __RadRichTextEditorRuler.__.
 
-1. Set the __AssociatedRichTextBox__ property in the properties window.![richtexteditor-richtexteditorruler 002](images/richtexteditor-richtexteditorruler002.png)
+3\. Set the __AssociatedRichTextBox__ property in the properties window.
 
-1. Set the LayoutMode of the __RadRichTextEditor__ to [Paged]({%slug winforms/richtexteditor-/document-elements/raddocument%}).
+![richtexteditor-richtexteditorruler 002](images/richtexteditor-richtexteditorruler002.png)
+
+4\. Set the LayoutMode of the __RadRichTextEditor__ to [Paged]({%slug winforms/richtexteditor-/document-elements/raddocument%}).
 
 ## Using the RadRichTextEditorRuler programmatically.
 
 You can add the control in code as well. The following snippet demonstrates how to add __RadRichTextEditorRuler__ and __RadRichTextEditor__ to a form:
-
 
 {{source=..\SamplesCS\RichTextEditor\RadRichTextEditorRulerCode.cs region=ruler}} 
 {{source=..\SamplesVB\RichTextEditor\RadRichTextEditorRulerCode.vb region=ruler}} 

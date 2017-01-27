@@ -1,7 +1,7 @@
 ---
 title: Context Menu
 page_title: Context Menu | RadRichTextEditor
-description: Context Menu
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/context-menu
 tags: context,menu
 published: True
@@ -17,12 +17,13 @@ The __RadRichTextEditor__ UI has a built-in context menu feature which can be us
 
 ![richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-context-menu 0001](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-context-menu0001.png)
 
-The context menu is enabled by default. You can control this with the __IsContextMenuEnabled__ property. If you set the property to False, the [Selection Mini Tool Bar]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/selection-mini-toolbar%}) will be displayed when you click the mouse right button.
+The context menu is enabled by default. You can control this with the __IsContextMenuEnabled__ property. If you set the property to *false*, the [Selection Mini Tool Bar]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/selection-mini-toolbar%}) will be displayed when you click the mouse right button.
 
 #### Disabling the context menu
 
 {{source=..\SamplesCS\RichTextEditor\UI\ContextMenuCode.cs region=DisableContextMenu}} 
 {{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=DisableContextMenu}}
+
 ````C#
 private void DisableContextMenu()
 {
@@ -37,17 +38,15 @@ End Sub
 
 ````
 
-
-
 {{endregion}} 
 
 The menu is accessible through the __ContextMenu__ property of __RadRichTextEditor__ control.
 
->note The context menu instance is cached and shared between all the instances of RadRichTextEditor in an application.
+>note The context menu instance is cached and shared between all the instances of **RadRichTextEditor** in an application.
 	
-The RadRichTextEditor default context menu can be fully replaced by an object that implements the __IContextMenu__ interface which is marked with __CustomContextMenuAttribute__. Additionally, the menu can be customized by adding, removing and modifying menu groups and items. You can do that by using the __Showing__ event of the menu or by creating a custom content builder and override its construction methods.
+The **RadRichTextEditor** default context menu can be fully replaced by an object that implements the __IContextMenu__ interface which is marked with __CustomContextMenuAttribute__. Additionally, the menu can be customized by adding, removing and modifying menu groups and items. You can do that by using the __Showing__ event of the menu or by creating a custom content builder and override its construction methods.
 
-You can customize the context menu bu using one of the following approaches
+You can customize the context menu bu using one of the following approaches:
       
 * [Using the Showing event](#using-the-showing-event)
 
@@ -72,14 +71,13 @@ AddHandler contextMenu.Showing, AddressOf Me.ContextMenu_Showing
 
 ```` 
 
-
-
 {{endregion}} 
 
 #### Handle Event
 
 {{source=..\SamplesCS\RichTextEditor\UI\ContextMenuCode.cs region=HandleShowingEvent}} 
 {{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=HandleShowingEvent}}
+
 ````C#
 private void ContextMenu_Showing(object sender, Telerik.WinForms.RichTextEditor.RichTextBoxUI.Menus.ContextMenuEventArgs e)
 {
@@ -119,8 +117,6 @@ End Sub
 
 ```` 
 
-
-
 {{endregion}} 
 
 >caption Figure 2: Changing Text Color
@@ -135,6 +131,7 @@ The second approach is more suitable when you need to reuse the customization ac
 
 {{source=..\SamplesCS\RichTextEditor\UI\ContextMenuCode.cs region=CustomContextMenuBuilderClass}} 
 {{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=CustomContextMenuBuilderClass}}
+
 ````C#
 public class CustomContextMenuContentBuilder : ContextMenuContentBuilder
 {
@@ -183,17 +180,15 @@ Public Class CustomContextMenuContentBuilder
 End Class
 
 ```` 
-
-
-
 {{endregion}}
 
-Now you can simply assign the instance of your class to the __ContentBuilder__ property of the context menu:
+No,w you can simply assign the instance of your class to the __ContentBuilder__ property of the context menu:
 
 #### Assinging Builder
 
 {{source=..\SamplesCS\RichTextEditor\UI\ContextMenuCode.cs region=AssignCustomContextMenuBuilder}} 
 {{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=AssignCustomContextMenuBuilder}}
+
 ````C#
 Telerik.WinControls.RichTextEditor.UI.ContextMenu contextMenu = (Telerik.WinControls.RichTextEditor.UI.ContextMenu)this.radRichTextEditor1.RichTextBoxElement.ContextMenu;
 contextMenu.ContentBuilder = new CustomContextMenuContentBuilder();
@@ -204,8 +199,6 @@ Dim contextMenu As Telerik.WinControls.RichTextEditor.UI.ContextMenu = DirectCas
 contextMenu.ContentBuilder = New CustomContextMenuContentBuilder()
 
 ```` 
-
-
 
 {{endregion}} 
 

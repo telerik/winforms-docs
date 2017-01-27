@@ -1,7 +1,7 @@
 ---
 title: Import/Export Overview
-page_title: Import/Export | UI for WinForms Documentation
-description: Import/Export
+page_title: Import/Export | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor/import
 tags: import/export
 published: True
@@ -11,36 +11,29 @@ previous_url: richtexteditor-import-export, richtexteditor-import-export-data-pr
 
 # Import/Export
 
-__RadRichTextEditor__ allows you to export and import its content. This is useful in case you want to save the user's input into a data base and then load it from there, or if you want to save/load the content of __RadRichTextEditor__ to/from a file. To import and export you have to use a specific class that implements the __IDocumentFormatProvider__. You can find built-in classes, that implement this interface, for each of the supported formats. Currently __RadRichTextEditor__ can export and import the following formats:
+__RadRichTextEditor__ allows you to export and import its content. This is useful in case you want to save the user's input into a data base and then load it from there, or if you want to save/load the content of __RadRichTextEditor__ to/from a file. To import and export you have to use a specific class that implements the __IDocumentFormatProvider__. You can find built-in classes, that implement this interface, for each of the supported formats. Currently, __RadRichTextEditor__ can export and import the following formats:
 
 * __XAML__ - to import/export __XAML__ documents you have to use the Telerik.WinForms.Documents.FormatProviders.Xaml.__XamlFormatProvider__ class.
           
-
 * __DOCX__ - to import/export __DOCX__ documents you have to use the Telerik.WinForms.Documents.FormatProviders.OpenXml.Docx.__DocxFormatProvider__ class.
           
-
 * __HTML__ - to import/export __HTML__ documents you have to use the Telerik.WinForms.Documents.FormatProviders.Html.__HtmlFormatProvider__ class.
           
-
 * __RTF__- to import/export __RTF__ documents you have to use the Telerik.WinForms.Documents.FormatProviders.Rtf.__RtfFormatProvider__ class.
           
-
 * __Plain text__- to import/export plain text documents you have to use the Telerik.WinForms.Documents.FormatProviders.Txt.__TxtFormatProvider__ class.
           
-
 * __PDF__ - to export documents to __PDF__ you have to use the Telerik.WinForms.Documents.FormatProviders.Pdf.__PdfFormatProvider__ class.
           
-
 ## Specifics
 
 __RadRichTextEditor__'s format providers can import/export a wide variety of features supported by the control. However, features which are not yet supported are stripped on import. Such examples are content controls like text boxes, check boxes, etc. which can be inserted in the document in some rich text editors such as Microsoft Word or can be included in the HTML.
         
-
-Overall, here are listed the specifics you need to know when choosing the appropriate format provider for you requirements:
+Overall, here are listed the specifics you need to know when choosing the appropriate format provider for you rrequirements:
 
 #### XamlFormatProvider
 
-As the XAML format is closest to __RadDocument__'s structure,all supported features are imported/exported without the need of additional handling.
+As the XAML format is the closest to __RadDocument__'s structure, all supported features are imported/exported without the need of additional handling.
 
 #### DocxFormatProvider and RtfFormatProvider
 
@@ -48,14 +41,15 @@ Content controls such as Text Box, Combo Box and Date Picker that can be include
 
 #### HtmlFormatProvider
 
-As HTML's concept of headers and footers is different, when exporting with __RadRichTextEditor__ headers and footers are ignored. When it comes to importing, the &lt;header&gt; and &lt;footer&gt; tags are included in the content of the imported document, but are not interpreted as __Header__ and __Footer__ of __RadDocument__.
-            
+As HTML's concept of headers and footers is different, when exporting with __RadRichTextEditor__ headers and footers are ignored. When it comes to importing, the &lt;header&gt; and &lt;footer&gt; tags are included in the content of the imported document, but are not interpreted as __Header__ and __Footer__ of __RadDocument__.   
 
-Moreover, the __HtmlFormatProvider__ ignores the concept of __Paged__ [layout mode]({%slug winforms/richtexteditor-/getting-started/layout-modes%}) as a whole. Page breaks inserted in HTML for printing purposes are also ignored.
+Moreover, the __HtmlFormatProvider__ ignores the concept of *Paged* [layout mode]({%slug winforms/richtexteditor-/getting-started/layout-modes%}) as a whole. Page breaks inserted in HTML for printing purposes are also ignored.
             
 #### TxtFormatProvider
 
-Imports and exports only plain text.PdfFormatProvider
+Imports and exports only plain text.
+
+#### PdfFormatProvider
 
 The current version of __RadRichTextEditor__ can only __export__ to PDF, but __not import__.
             
@@ -63,8 +57,8 @@ The current version of __RadRichTextEditor__ can only __export__ to PDF, but __n
 
 Here are some examples on how to export and import.
 
->note The "Export to String" and "Import from String" examples are only valid for the text-based format providers (Html, Xaml, Rtf and TxtFormatProvider).
->The "Export to File" and "Import from File" are applicable to each of the format providers (save for PDF import). To use them with the desired format just replace the format provider and change the settings of the __SaveFileDialog__ or the __OpenFileDialog__ .
+>note The "*Export to String*" and "*Import from String*" examples are only valid for the text-based format providers (Html, Xaml, Rtf and TxtFormatProvider).
+>The "*Export to File*" and "*Import from File*" are applicable to each of the format providers (save for PDF import). To use them with the desired format just replace the format provider and change the settings of the __SaveFileDialog__ or the __OpenFileDialog__ .
 >
 
 ## Export to String
@@ -201,7 +195,7 @@ End Function
 
 {{endregion}} 
 
->caution When importing a document, it is converted to RadDocument following the rules of the model that it defines. Content that has no parallel in RadDocument is ignored and can no longer be restored.
+>caution When importing a document, it is converted to **RadDocument** following the rules of the model that it defines. Content that has no parallel in **RadDocument** is ignored and can no longer be restored.
 >When exporting the same document, the resulting docx/HTML/XAML/RTF will be different than the initial one.
 >
 
