@@ -1,6 +1,6 @@
 ---
 title: Customizing RadRibbonBar
-page_title: Customizing RadRibbonBar | UI for WinForms Documentation
+page_title: Customizing RadRibbonBar | RadRibbonBar
 description: Customizing RadRibbonBar
 slug: winforms/ribbonbar/getting-started/customizing-radribbonbar
 tags: customizing,radribbonbar
@@ -11,11 +11,7 @@ previous_url: ribbonbar-customizing-radribbonbar
 
 # Customizing RadRibbonBar
 
-
-
-## 
-
-You can control several aspects of the overall Telerik RadRibbonBar presentation by setting the corresponding properties:
+You can control several aspects of the overall __RadRibbonBar__ presentation by setting the corresponding properties:
 
 * The __Expanded__ property controls whether the base of the control (the area beneath the tabs) will be visible initially. Set this property to __False__ to hide the base of the control.
 

@@ -17,8 +17,6 @@ In addition to [groups and buttons]({%slug winforms/ribbonbar/getting-started/ad
 
 * [RadCheckBoxElement](http://www.telerik.com/help/winforms/ui_radcheckboxoverview.html)
 
-* [RadComboBox](http://www.telerik.com/help/winforms/combo_overview.html)
-
 * [RadDropDownButtonElement](http://www.telerik.com/help/winforms/ui_raddropdownbuttonoverview.html)
 
 * [RadGalleryElement]({%slug winforms/ribbonbar/getting-started/creating-a-gallery%})

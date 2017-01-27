@@ -11,7 +11,7 @@ previous_url: ribbonbar-using-different-elements-on-a-radribbonbar
 
 # Using Different Elements on a RadRibbonBar
 
-You can build the user interface of a Telerik RadRibbonBar using a variety of different elements. In this tutorial, you will see how some of these elements can be placed and customized.
+You can build the user interface with a __RadRibbonBar__ using a variety of different elements. In this tutorial, you will see how some of these elements can be placed and customized.
 
 ## Prepare an ImageList to be Used in the Telerik RadRibbonBar
 
@@ -21,9 +21,9 @@ You can build the user interface of a Telerik RadRibbonBar using a variety of di
 
 1. Drag a WinForms __ImageList__ component from the Toolbox to the form. In the area below the design surface, you will see __imageList1__. 
 
-1. Using the Images Collection Editor, add the desired images to the ImageList. For more help with this task, see [How to: Add or Remove ImageList Images with the Designer in the Visual Studio 2005](http://msdn2.microsoft.com/en-us/library/ms233674.aspx) documentation. 
+1. Using the Images Collection Editor, add the desired images to the ImageList. For more help with this task, see [How to: Add or Remove ImageList Images with the Designer in Visual Studio](http://msdn2.microsoft.com/en-us/library/ms233674.aspx) documentation. 
 
->note A predefined list of images has been prepared for the purpose of this demonstration.
+>note A predefined list of images has been prepared for the purpose of this example.
 >
 
 ## Adding a Tab and a Group

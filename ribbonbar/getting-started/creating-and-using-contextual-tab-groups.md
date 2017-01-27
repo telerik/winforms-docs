@@ -15,7 +15,7 @@ The __Contextual Tab Groups__ can be used to group tabs in a context and thus im
 
 This topic demonstrates how __Contextual Tab Groups__ are created and how tabs are associated with them.
 
-## Creating a Contextual Tab Group and Associating Tabs with it
+## Creating a Contextual Tab Group and Associating Tabs
 
 1. Add a __RadRibbonForm__ to your project by either changing the base class of an existing form to __RadRibbonForm__, or using the 'Add New Item...' dialog for your project.
 
@@ -25,7 +25,9 @@ This topic demonstrates how __Contextual Tab Groups__ are created and how tabs a
 
 4. Create 2 __Contextual Tab Groups__ by clicking on 'Add Context...'. Call the __Contextual Tab Group__ 'Appearance' and press enter:![ribbonbar-creating-and-using-contextual-tab-groups 001](images/ribbonbar-creating-and-using-contextual-tab-groups001.png)
 
-5. Drag and drop the __Formatting__  tab onto the __Appearance__group and do the same with the __Layout__tab:![ribbonbar-creating-and-using-contextual-tab-groups 002](images/ribbonbar-creating-and-using-contextual-tab-groups002.png)
+5. Drag and drop the __Formatting__  tab onto the __Appearance__ group and do the same with the __Layout__ tab:
+
+![ribbonbar-creating-and-using-contextual-tab-groups 002](images/ribbonbar-creating-and-using-contextual-tab-groups002.png)
 
 The __Contextual Tab Group__ is positioned over both the __Formatting__ and __Layout__ tabs and sizes to fit the sum of the lengths of both tabs.
 

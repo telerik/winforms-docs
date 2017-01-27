@@ -11,7 +11,10 @@ previous_url: ribbonbar-customizing-the-start-menu
 
 # Customizing the Start Menu
 
-The Start Menu is a menu that is displayed when you click on the Office Button in the upper left corner of the Telerik RadRibbonBar:![ribbonbar-customizing-the-start-menu 002](images/ribbonbar-customizing-the-start-menu002.png)
+The Start Menu is is displayed when you click on the Office Button in the upper left corner of the __RadRibbonBar__:
+
+>caption Figure 1: RadRibbonBar Start Menu
+![ribbonbar-customizing-the-start-menu 002](images/ribbonbar-customizing-the-start-menu002.png)
 
 The Start Menu can contain the same elements as the [RadMenu]({%slug winforms/menus/menu%}):
 
@@ -33,9 +36,11 @@ To add an item to the Start Menu, follow these steps:
 
 1. Select the Smart Tags menu, click the __Edit StartMenuItems__ task to edit the items in the left column of the Start Menu, or click the __Edit StartMenuRightColumnItems__ task to edit the items in the right column of the Start Menu.
 
-1. In the RadElement Collection Editor dialog box, click the drop-down arrow next to the Add button to select the type of element you wish to add to the Start Menu.![ribbonbar-customizing-the-start-menu 001](images/ribbonbar-customizing-the-start-menu001.png)
+1. In the RadElement Collection Editor dialog box, click the drop-down arrow next to the Add button to select the type of element you wish to add to the Start Menu.
+![ribbonbar-customizing-the-start-menu 001](images/ribbonbar-customizing-the-start-menu001.png)
 
-1. In the RadElement Collection Editor dialog box use the Properties window to set the properties of the new Start Menu item.![ribbonbar-customizing-the-start-menu 003](images/ribbonbar-customizing-the-start-menu003.png)
+1. In the RadElement Collection Editor dialog box use the Properties window to set the properties of the new Start Menu item.
+![ribbonbar-customizing-the-start-menu 003](images/ribbonbar-customizing-the-start-menu003.png)
 
 1. Repeat steps 3 and 4 to add additional Start Menu items.
 
@@ -67,9 +72,9 @@ To handle events from a Start Menu item, follow these steps:
 
 ## Setting an Image to the RadRibbonBar Start Menu
 
-You can easily set an Image to the __RadRibbonBar__ Start Menu by accessing the __StartButtonImage__property of the __RadRibbonBar__ control:
+You can easily set an Image to the __RadRibbonBar__ Start Menu by accessing the __StartButtonImage__ property of the __RadRibbonBar__ control:
 
-#### Set RibbonBar start button image
+#### Set RibbonBar Start Button Image
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\CustomizingTheStartMenu.cs region=StartButtonImage}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\CustomizingTheStartMenu.vb region=StartButtonImage}} 

@@ -11,7 +11,13 @@ previous_url: ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcu
 
 # Creating the Start Menu, Quick Access Toolbar, and Shortcuts
 
-This tutorial is in three parts. First, you will create a Quick Access Toolbar with some functionality on a Telerik RadRibbonBar. Then, you will add a Start Menu to add more functionality. Last, you will create keyboard shortcuts to some of these functions.
+This tutorial is in three parts. First, you will create a Quick Access Toolbar with some functionality on a __RadRibbonBar__. Then, you will add a Start Menu to add more functionality. Last, you will create keyboard shortcuts to some of these functions.
+
+## Prepare an ImageList to be Used in the Telerik RadRibbonBar
+
+1. Drag a WinForms __ImageList__ component from the toolbox to the form. In the area below the design surface, you will see __imageList1__.
+
+1. Using the Images Collection Editor, add the desired images to the __ImageList__. You can use the existing images, or any similar sized images or icons that you have available. For more help with this task, see [How to: Add or Remove ImageList Images with the Designer in the Visual Studio](http://msdn2.microsoft.com/en-us/library/ms233674.aspx) documentation.
 
 ## Adding a Telerik RadRibbonBar
 
@@ -40,12 +46,6 @@ This tutorial is in three parts. First, you will create a Quick Access Toolbar 
     ![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 003](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts003.png)
 
 1. Repeat this step to add a __CommandBarSeparator__ and then another __RadButtonElement__.
-
-## Prepare an ImageList to be Used in the Telerik RadRibbonBar
-
-1. Drag a WinForms __ImageList__ component from the toolbox to the form. In the area below the design surface, you will see __imageList1__.
-
-1. Using the Images Collection Editor, add the desired images to the __ImageList__. You can use the existing images, or any similar sized images or icons that you have available. For more help with this task, see [How to: Add or Remove ImageList Images with the Designer in the Visual Studio](http://msdn2.microsoft.com/en-us/library/ms233674.aspx) documentation.
 
 ## Set Properties of the RadButtonElements
 
@@ -180,7 +180,7 @@ In C#, it is necessary to connect the controls to the methods you have copied in
 
 ## Add Items to the Start Menu
 
-1. Select the __RadRibbonBar__ control on your form and in the __Properties__window locate the __StartMenuItems__ property.
+1. Select the __RadRibbonBar__ control on your form and in the __Properties__ window locate the __StartMenuItems__ property.
 
 1. Open the Collection Editor for this property. 
 

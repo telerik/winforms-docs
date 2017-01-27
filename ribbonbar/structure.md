@@ -39,7 +39,7 @@ This image shows the __RadRibbonBar__ control element structure as displayed by 
 
 * The __RadImageButtonElement__: Node represents the Help button which may be shown next to the MDI System Buttons
 
-You can add a variety of constituent controls to customize the Telerik RadRibbonBar.
+You can add a variety of constituent controls to customize the Telerik __RadRibbonBar__.
 
 ## Quick Access Toolbar
 
@@ -71,7 +71,7 @@ The Start Menu includes two columns of items, each of which can contain the same
 
 ## Tabs
 
-The tabs are the first level of organization of the main part of the Telerik RadRibbonBar. Tabs are typically used to split the functionality of an application into major areas.
+The tabs are the first level of organization of the main part of the Telerik __RadRibbonBar__. Tabs are typically used to split the functionality of an application into major areas.
 
 ![ribbonbar-structure-of-radribbonbar 003](images/ribbonbar-structure-of-radribbonbar003.png)
 

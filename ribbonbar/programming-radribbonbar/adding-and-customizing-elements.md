@@ -1,6 +1,6 @@
 ---
 title: Adding and Customizing Elements
-page_title: Adding and Customizing Elements | UI for WinForms Documentation
+page_title: Adding and Customizing Elements | RadRibbonBar
 description: Adding and Customizing Elements
 slug: winforms/ribbonbar/programming-radribbonbar/adding-and-customizing-elements
 tags: adding,and,customizing,elements
@@ -17,17 +17,17 @@ A RibbonBar group may contain button groups or elements. Button groups in turn 
 
 To customize a __RadRibbonBarButtonGroup__ object, you can use these properties:
 
-* __Orientation__ property can be set to __System.Windows.Forms.Orientation.Horizontal__ or __System.Windows.Forms.Orientation.Vertical__. This determines how elements within the button group will be laid out. 
+* __Orientation__ property can be set to System.Windows.Forms.Orientation.*Horizontal* or System.Windows.Forms.Orientation.*Vertical*. This determines how elements within the button group will be laid out. 
 
-* __ShowBorder__ property can be set to __True__ or __False__ to turn the border of the button group to on or off.
+* __ShowBorder__ property can be set to *True* or *False* to turn the border of the button group to on or off.
 
 * __MinSize__ property determines the minimum size of the button group. 
 
-In order to add button groups or elements to a button group, use __RadRibbonBarButtonGroup.Items.Add__ or __RadRibbonBarButtonGroup.Items.AddRange__ methods.
+In order to add button groups or elements to a button group, use RadRibbonBarButtonGroup.Items.__Add__ or RadRibbonBarButtonGroup.Items.__AddRange__ methods.
 
 ## Customizing Elements
 
-You can add a variety of elements to __RadRibbonBarGroup.Items__ or __RadRibbonBarButtonGroup.Items__ collection:
+You can add a variety of elements to RadRibbonBarGroup.__Items__ or RadRibbonBarButtonGroup.__Items__ collection:
 
 * Button elements
 

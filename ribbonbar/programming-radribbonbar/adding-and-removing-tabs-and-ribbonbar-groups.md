@@ -17,9 +17,9 @@ You can manipulate __RadRibbonBar__ tabs and groups at run time by using the ap
 
 To add a tab to __RadRibbonBar__, follow the four steps below:
 
-1. Create a new __Telerik.WinControls.UI.RibbonTab__ object and set its properties.
+1. Create a new Telerik.WinControls.UI.__RibbonTab__ object and set its properties.
 
-1. Call the __Add__ method of the __RadRibbonBar.CommandTabs__ collection, passing the __Telerik.WinControls.UI.RibbonTab__ object.
+1. Call the __Add__ method of the RadRibbonBar.__CommandTabs__ collection, passing the Telerik.WinControls.UI.__RibbonTab__ object.
 
 #### Adding a tab to RadRibbonBar
 

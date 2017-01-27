@@ -11,13 +11,17 @@ previous_url: ribbonbar-creating-a-gallery
 
 # Creating a Gallery
 
+__RadGalleryElement__ allows the user to choose among large number of visual items. In its default collapsed view, a gallery shows a single row of its items, as well as an up arrow and a down arrow that scroll to other rows of items. Special properties allow you to specify the number of visible rows and columns of items in the collapsed view. 
 
-
-RadGalleryElement allows the user to choose among large number of visual items. In its default collapsed view, a gallery shows a single row of its items, as well as an up arrow and a down arrow that scroll to other rows of items. Special properties allow you to specify the number of visible rows and columns of items in the collapsed view. <br>![ribbonbar-creating-a-gallery 001](images/ribbonbar-creating-a-gallery001.png)
+>caption Figure 1: Collapsed Gallery 
+![ribbonbar-creating-a-gallery 001](images/ribbonbar-creating-a-gallery001.png)
 
 The gallery also has a drop-down arrow which sets the element into expanded view. In this view the gallery shows a popup containing all of its items, organized in groups.
 
+>caption Figure 2: Expanded Plain Tables
 ![ribbonbar-creating-a-gallery 002](images/ribbonbar-creating-a-gallery002.png)
+
+>caption Figure 3: Expanded Buil-In
 ![ribbonbar-creating-a-gallery 003](images/ribbonbar-creating-a-gallery003.png)
 
 ## Creating a Gallery
@@ -26,23 +30,23 @@ To create a gallery, first, select a RadRibbonbar group, click its smart tag, an
 
 ## Gallery properties
 
-* __MaxColumns__ – the property specifies the number of columns to appear in the gallery in its collapsed view.
+* __MaxColumns__: The property specifies the number of columns to appear in the gallery in its collapsed view.
 
-* __MaxRows__ – the property sets the number of rows to be shown in the gallery in its collapsed view
+* __MaxRows__: The property sets the number of rows to be shown in the gallery in its collapsed view
 
-* __MaxDropDownColumns__ – the property assigns the maximum number of columns that may appear in the gallery drop-down
+* __MaxDropDownColumns__: The property assigns the maximum number of columns that may appear in the gallery drop-down
 
-* __MinDropDownColumns__ – the property sets the minimum number of columns to be displayed in the gallery drop-down
+* __MinDropDownColumns__: The property sets the minimum number of columns to be displayed in the gallery drop-down
 
 ## Adding Items
 
 You can add items to the gallery at design-time using the following steps:
 
-1. Select the RadGalleryElement control.
+1. Select the **RadGalleryElement** control.
 
-1. Go to the Properties window and navigate to the Items property, then click the ellipsis button
+1. Go to the *Properties* window and navigate to the **Items** property, then click the ellipsis button
 
-1. In the RadItem Collection Editor, click the Add button and a RadGalleryItem will appear
+1. In the *RadItem Collection Editor*, click the **Add** button and a **RadGalleryItem** will appear
 
 1. Use the property sheet to set the text and image properties of the newly created RadGalleryItem
 
@@ -97,21 +101,21 @@ Groups organize the items within a gallery into distinct sections. Groups are no
 
 To add a group at design-time, please follow these steps:
 
-1. Select the RadGalleryElement
+1. Select the **RadGalleryElement**
 
-1. Go to the Properties windows and navigate to the Groups property, then click the ellipsis button
+1. Go to the *Properties* windows and navigate to the **Groups** property, then click the ellipsis button
 
-1. In the RadItem Collection Editor click the Add button and a new RadGalleryGroupItem will appear in the dialog
+1. In the *RadItem Collection Editor* click the **Add** button and a new **RadGalleryGroupItem** will appear in the dialog
 
-1. Set the Text property of the newly created group
+1. Set the **Text** property of the newly created group
 
-1. Navigate to its Items property and click the ellipsis button 
+1. Navigate to its **Items** property and click the ellipsis button 
 
-1. When the Items Collection Editor opens you can choose which RadGalleryItems to be associated with this group. Each time you click Add, one of the items that you already created will be added to the group. Click Remove to exclude items from the group.
+1. When the *Items Collection Editor* opens you can choose which **RadGalleryItems** to be associated with this group. Each time you click **Add**, one of the items that you already created will be added to the group. Click **Remove** to exclude items from the group.
 
-1. Click OK to save the group items
+1. Click **OK** to save the group items
 
-1. Click OK to save the group
+1. Click **OK** to save the group
 
 Alternatively, you can add the items at run-time. Here is a sample snippet:
 
@@ -159,17 +163,17 @@ A gallery filter is a set of groups. Filters appear as options of a drop-down li
 
 To create a filter, follow these steps:
 
-1. Select the RadGalleryElement
+1. Select the **RadGalleryElement**
 
-1. Go to the Properties window, navigate to the Filters property, and click the ellipsis button
+1. Go to the *Properties* window, navigate to the **Filters** property, and click the ellipsis button
 
-1. In the RadItem Collection Editor click the Add button and a new filter will appear in the dialog
+1. In the *RadItem Collection Editor* click the **Add** button and a new filter will appear in the dialog
 
-1. Set the Text property of the newly created filter
+1. Set the **Text** property of the newly created filter
 
-1. Navigate to the Items property of the RadGalleryGroupFilter, then click the ellipsis button
+1. Navigate to the **Items** property of the **RadGalleryGroupFilter**, then click the ellipsis button
 
-1. When the Items Collection Editor opens you can choose which RadGalleryGroupItems to be associated with this filter. Each time you click Add, one of the groups that you already created will be added to the filter. Click Remove to exclude groups from the filter. Note that one group can be assigned to more than one filters
+1. When the Items Collection Editor opens you can choose which **RadGalleryGroupItems** to be associated with this filter. Each time you click **Add**, one of the groups that you already created will be added to the filter. Click Remove to exclude groups from the filter. Note that one group can be assigned to more than one filters
 
 1. Click OK to save the filter items
 
@@ -223,15 +227,15 @@ Tools are items that appear in the popup beneath the groups. They do not belong 
 
 To add a Tool at design-time please follow these steps:
 
-1. Select the RadGalleryElement
+1. Select the **RadGalleryElement**
 
-1. Go to the Properties window, navigate to the Tools property, and click the ellipsis button
+1. Go to the *Properties* window, navigate to the **Tools** property, and click the ellipsis button
 
-1. In the RadItem Collection Editor click the Add button to add an item. Currently, you can add a RadMenuItem, RadMenuButtonItem and RadMenuComboItem
+1. In the *RadItem Collection Editor* click the Add button to add an item. Currently, you can add a **RadMenuItem**, **RadMenuButtonItem** and **RadMenuComboItem**
 
-1. Use the Properties window to set the properties of the new tool
+1. Use the *Properties* window to set the properties of the new tool
 
-1. Click OK to save the changes
+1. Click **OK** to save the changes
 
 You can also create tools at run-time. Here is a sample snippet:
 

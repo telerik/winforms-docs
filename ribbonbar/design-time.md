@@ -12,6 +12,9 @@ position: 2
 
 __RadRibbonBar__ has a very well developed Visual Studio designer allowing adding, removing and editing of its tabs, groups and item elements.
 
+>note Detailed examples on how __RadRibbonBar__ desing time capabilities can be utilized to their full extent are available in the [Getting Started]({%slug winforms/ribbonbar/getting-started/getting-started%}) section. 
+>
+
 >caption Figure 1: Smart Tag
 ![radribbonbar-design-time 001](images/radribbonbar-design-time001.png)
 
@@ -34,10 +37,7 @@ __RadRibbonBar__ has a very well developed Visual Studio designer allowing addin
 
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 
-* __Search__: Search the Telerik website for a given string.
-
->note Detailed examples on how __RadRibbonBar__ desing time capabilities can be utilized to their full extent are available in the [Getting Started]({%slug winforms/ribbonbar/getting-started/getting-started%}) section. 
-> 
+* __Search__: Search the Telerik website for a given string. 
 
 # See Also
 
