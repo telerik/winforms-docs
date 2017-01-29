@@ -1,11 +1,11 @@
 ---
 title: Creating the Start Menu, Quick Access Toolbar, and Shortcuts
 page_title: Creating the Start Menu, Quick Access Toolbar, and Shortcuts | RadRibbonBar
-description: Creating the Start Menu, Quick Access Toolbar, and Shortcuts
+description: This tutorial is in three parts. First, you will create a Quick Access Toolbar with some functionality on a RadRibbonBar. Then, you will add a Start Menu to add more functionality. Last, you will create keyboard shortcuts to some of these functions.
 slug: winforms/ribbonbar/getting-started/creating-the-start-menu,-quick-access-toolbar,-and-shortcuts
 tags: creating,the,start,menu,,quick,access,toolbar,,and,shortcuts
 published: True
-position: 3
+position: 0
 previous_url: ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts
 ---
 
@@ -404,3 +404,11 @@ RadMenuItem2.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Key
 1. Press __F5__ to run the form.
 
 1. Try out the new __Ctrl+O__ and __Ctrl+B__ keyboard shortcuts.
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%})

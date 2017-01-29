@@ -1,7 +1,7 @@
 ---
 title: Adding and Customizing Elements
 page_title: Adding and Customizing Elements | RadRibbonBar
-description: Adding and Customizing Elements
+description: A RibbonBar group may contain button groups or elements. Button groups in turn can contain other button groups or elements. You can add, remove, and customize any of these building blocks by code.
 slug: winforms/ribbonbar/programming-radribbonbar/adding-and-customizing-elements
 tags: adding,and,customizing,elements
 published: True
@@ -189,4 +189,12 @@ The image button element represents a button that displays multiple images. To c
 
 * The __TextAlignment__ property sets the alignment of the text displayed on the button. 
 
-* The __TextOrientation__ property can be set to __Horizontal__ or __Vertical__. 
+* The __TextOrientation__ property can be set to __Horizontal__ or __Vertical__.
+ 
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%}) 

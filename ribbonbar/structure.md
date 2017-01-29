@@ -1,8 +1,8 @@
 ---
 title: Structure
 page_title: Structure| RadRibbonBar
-description: This article describes the inner structure and organization of the elements which build the RadRibbonBar control..
-slug: winforms/ribbonbar/getting-started/structure-of-radribbonbar
+description: This article describes the inner structure and organization of the elements which build the RadRibbonBar control.
+slug: winforms/ribbonbar/structure
 tags: structure,of,radribbonbar
 published: True
 position: 1
@@ -128,3 +128,9 @@ In its default collapsed view, a gallery shows a single row of choices, as well 
 In its expanded view, a gallery shows all of its choices at one time, a filter selection bar at the top, and tools at the bottom.
 
 ![ribbonbar-structure-of-radribbonbar 008](images/ribbonbar-structure-of-radribbonbar008.png)
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})

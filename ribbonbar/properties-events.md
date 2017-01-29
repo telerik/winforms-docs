@@ -1,11 +1,11 @@
 ---
 title: Properties and Events
 page_title: Properties Methods and Events| RadRibbonBar
-description: This article describes the inner structure and organization of the elements which build the RadRibbonBar control..
+description: This article describes the more important properties and events of RadRibbonBar.
 slug: winforms/ribbonbar/properties-and-events
 tags: radribbonbar, properties, events
 published: True
-position: 4
+position: 5
 ---
 
 # Properties

@@ -12,7 +12,7 @@ position: 2
 
 __RadRibbonBar__ has a very well developed Visual Studio designer allowing adding, removing and editing of its tabs, groups and item elements.
 
->note Detailed examples on how __RadRibbonBar__ desing time capabilities can be utilized to their full extent are available in the [Getting Started]({%slug winforms/ribbonbar/getting-started/getting-started%}) section. 
+>note Detailed examples on how __RadRibbonBar__ desing time capabilities can be utilized to their full extent are available in the [Designing RadRibbonBar]({%slug winforms/ribbonbar/getting-started%}) section. 
 >
 
 >caption Figure 1: Smart Tag
@@ -41,7 +41,6 @@ __RadRibbonBar__ has a very well developed Visual Studio designer allowing addin
 
 # See Also
 
-* [Structure]({%slug winforms/ribbonbar/getting-started/structure-of-radribbonbar%})
-* [Getting Started]({%slug winforms/ribbonbar/getting-started/getting-started%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
-

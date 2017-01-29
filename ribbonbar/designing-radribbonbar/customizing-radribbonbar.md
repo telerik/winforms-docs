@@ -1,11 +1,11 @@
 ---
 title: Customizing RadRibbonBar
 page_title: Customizing RadRibbonBar | RadRibbonBar
-description: Customizing RadRibbonBar
+description: You can control several aspects of the overall RadRibbonBar presentation with properties.
 slug: winforms/ribbonbar/getting-started/customizing-radribbonbar
 tags: customizing,radribbonbar
 published: True
-position: 2
+position: 16
 previous_url: ribbonbar-customizing-radribbonbar
 ---
 
@@ -28,3 +28,11 @@ You can control several aspects of the overall __RadRibbonBar__ presentation by 
 >
 
 * The __Text__ property determines the text which is displayed in the Ribbon Bar's caption.
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%})

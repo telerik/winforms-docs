@@ -1,7 +1,7 @@
 ---
 title: Adding and Removing Groups and Buttons
-page_title: Adding and Removing Groups and Buttons | UI for WinForms Documentation
-description: Adding and Removing Groups and Buttons
+page_title: Adding and Removing Groups and Buttons | RadRibbonBar
+description: You can manipulate groups and buttons of RadRibbonBar at run time by using the appropriate objects and collections.
 slug: winforms/ribbonbar/programming-radribbonbar/adding-and-removing-groups-and-buttons
 tags: adding,and,removing,groups,and,buttons
 published: True
@@ -148,3 +148,11 @@ RadRibbonBarGroup1.Items.Add(RadRibbonBarButtonGroup1)
 ````
 
 {{endregion}}
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%}) 

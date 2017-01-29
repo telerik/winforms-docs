@@ -1,11 +1,11 @@
 ---
 title: Using Large and Small Images
-page_title: Using Large and Small Images | UI for WinForms Documentation
-description: Using Large and Small Images
+page_title: Using Large and Small Images | RadRibbonBar
+description: Elements on a RadRibbonBar (such as buttons, check boxes, and repeat buttons) can each be assigned two images.
 slug: winforms/ribbonbar/getting-started/using-large-and-small-images
 tags: using,large,and,small,images
 published: True
-position: 14
+position: 11
 previous_url: ribbonbar-using-large-and-small-images
 ---
 
@@ -27,3 +27,11 @@ Continued resizing switches the elements in the __Insert__ group from their larg
 
 >caption Figure 3: Collapsed Groups
 ![ribbonbar-using-large-and-small-images 003](images/ribbonbar-using-large-and-small-images003.png)
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%})

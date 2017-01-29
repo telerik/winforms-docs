@@ -1,11 +1,11 @@
 ---
 title: Adding Key Tips
-page_title: Adding Key Tips | UI for WinForms Documentation
-description: Adding Key Tips
+page_title: Adding Key Tips | RadRibbonBar
+description: Key tips provide a way to add discoverable keyboard shortcuts to the items on the Telerik RadRibbonBar.
 slug: winforms/ribbonbar/getting-started/adding-key-tips
 tags: adding,key,tips
 published: True
-position: 13
+position: 10
 previous_url: ribbonbar-adding-key-tips
 ---
 
@@ -22,3 +22,11 @@ Furthermore, pressing the __7__ key selects the __Write__ tab and displays the 
 
 >caption Figure 2: Text Tab Key Tips
 ![ribbonbar-adding-key-tips 002](images/ribbonbar-adding-key-tips002.png)
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%})

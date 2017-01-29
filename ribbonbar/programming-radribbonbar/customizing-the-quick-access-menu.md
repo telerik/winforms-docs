@@ -1,7 +1,7 @@
 ---
 title: Customizing the Quick Access Menu
-page_title: Customizing the Quick Access Menu | UI for WinForms Documentation
-description: Customizing the Quick Access Menu
+page_title: Customizing the Quick Access Menu | RadRibbonBar
+description: Quick Access Toolbar is an area of RadRibbonBar above the tabs.
 slug: winforms/ribbonbar/programming-radribbonbar/customizing-the-quick-access-menu
 tags: customizing,the,quick,access,menu
 published: True
@@ -11,7 +11,7 @@ previous_url: ribbonbar-programming-radribbonbar-customizing-the-quick-access-me
 
 # Customizing the Quick Access Menu
 
-__Quick Access Toolbar__ is an area of __RadRibbonBar__ above the tabs:
+__Quick Access Toolbar__ is an area of __RadRibbonBar__ above the tabs.
 
 >caption Figure 1: Quick Access Toolbar 
 ![ribbonbar-programming-radribbonbar-customizing-the-quick-access-menu 001](images/ribbonbar-programming-radribbonbar-customizing-the-quick-access-menu001.png)
@@ -61,3 +61,11 @@ RadRibbonBar1.QuickAccessToolBarItems.Add(mnuQAPrint)
 The Quick Access Toolbar can be positioned below the ribbon bar setting the value of __RadRibbonBar1.QuickAccessToolbarBelowRibbon__ to *true*.
 
 __Quick Access ToolBar__ supports mnemonics.
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%}) 

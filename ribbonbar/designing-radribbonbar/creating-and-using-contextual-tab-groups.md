@@ -1,11 +1,11 @@
 ---
 title: Creating and Using Contextual Tab Groups
-page_title: Creating and Using Contextual Tab Groups | UI for WinForms Documentation
-description: Creating and Using Contextual Tab Groups
+page_title: Creating and Using Contextual Tab Groups | RadRibbonBar
+description: The Contextual Tab Groups can be used to group tabs in a context and thus improve the usability of your UI.
 slug: winforms/ribbonbar/getting-started/creating-and-using-contextual-tab-groups
 tags: creating,and,using,contextual,tab,groups
 published: True
-position: 8
+position: 5
 previous_url: ribbonbar-creating-and-using-contextual-tab-groups
 ---
 
@@ -36,3 +36,11 @@ The __Contextual Tab Group__ is positioned over both the __Formatting__ and __La
 
 >note Contextual Tab Groups always extend to the sum of the lengths of the tabs associated with them.
 >
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%})

@@ -825,27 +825,30 @@ navigation:
     ribbonbar:
         title: RibbonBar
         position: 390
-    ribbonbar/getting-started:
-        title: Getting Started
-        position: 3
+    ribbonbar/designing-radribbonbar:
+        title: Designing RadRibbonBar
+        position: 4
     ribbonbar/styling-radribbonbar:
         title: Styling RadRibbonBar
-        position: 5
+        position: 6
     ribbonbar/programming-radribbonbar:
         title: Programming RadRibbonBar
-        position: 6
+        position: 7
     ribbonbar/backstage-view:
         title: Backstage View
-        position: 7
+        position: 8
+    ribbonbar/customizing-appearance:
+        title: Customizing Appearance
+        position: 9
     ribbonbar/end-user-capabilities:
         title: End-User Capabilities
-        position: 8
+        position: 10
     ribbonbar/how-to:
         title: How To
-        position: 9
+        position: 11
     ribbonbar/localization:
         title: Localization
-        position: 10		
+        position: 12
     richtextbox:
         title: RichTextBox (deprecated)
         position: 400

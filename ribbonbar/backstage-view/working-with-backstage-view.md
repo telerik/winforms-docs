@@ -1,6 +1,6 @@
 ---
 title: Working with Backstage View
-page_title: Working with Backstage View | UI for WinForms Documentation
+page_title: Working with Backstage View | RadRibbonBar
 description: Working with Backstage View
 slug: winforms/ribbonbar/overview/working-with-backstage-view
 tags: working,with,backstage,view
@@ -10,8 +10,6 @@ previous_url: ribbonbar-backstage-view-working-with-backstage-view
 ---
 
 # Working with Backstage View
-
-## 
 
 To enable the Backstage View in RadRibbonBar change the __ApplicationMenuStyle__ property to *BackstageView*.
 
@@ -80,3 +78,9 @@ RadRibbonBarBackstageView1.Items.Add(New RadDropDownListElement())
 When you add __BackstageTabItem__ to the backstage view’s left panel and select it, on the right side you have a __BackstageViewPage__ on which you can arrange any type of controls.
 
 ![ribbonbar-backstage-view-working-with-backstage-view 005](images/ribbonbar-backstage-view-working-with-backstage-view005.png)
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})

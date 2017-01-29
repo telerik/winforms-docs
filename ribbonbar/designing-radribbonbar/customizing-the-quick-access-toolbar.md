@@ -1,17 +1,21 @@
 ---
 title: Customizing the Quick Access Toolbar
-page_title: Customizing the Quick Access Toolbar | UI for WinForms Documentation
-description: Customizing the Quick Access Toolbar
+page_title: Customizing the Quick Access Toolbar | RadRibbonBar
+description: The Quick Access Toolbar is an area at the top of the Telerik RadRibbonBar, above the tabs.
 slug: winforms/ribbonbar/getting-started/customizing-the-quick-access-toolbar
 tags: customizing,the,quick,access,toolbar
 published: True
-position: 10
+position: 7
 previous_url: ribbonbar-customizing-the-quick-access-toolbar
 ---
 
 # Customizing the Quick Access Toolbar
 
-The Quick Access Toolbar is an area at the top of the Telerik RadRibbonBar, above the tabs:![ribbonbar-customizing-the-quick-access-toolbar 001](images/ribbonbar-customizing-the-quick-access-toolbar001.png)
+The Quick Access Toolbar is an area at the top of the Telerik RadRibbonBar, above the tabs.
+
+>caption Figure 1: Quick Access Toolbar
+
+![ribbonbar-customizing-the-quick-access-toolbar 001](images/ribbonbar-customizing-the-quick-access-toolbar001.png)
 
 The Quick Access Toolbar can contain the same elements as the [RadMenu]({%slug winforms/menus/menu%}):
 
@@ -64,3 +68,11 @@ To handle events from a Quick Access Toolbar item, follow these steps:
 1. Click the events toolbar button.
 
 1. Double-click the appropriate event to generate an event handler. Normally this event will be the __Click__ event.
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%})

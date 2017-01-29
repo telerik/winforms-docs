@@ -1,11 +1,11 @@
 ---
 title: Using Different Elements on a RadRibbonBar
-page_title: Using Different Elements on a RadRibbonBar | UI for WinForms Documentation
-description: Using Different Elements on a RadRibbonBar
+page_title: Using Different Elements on a RadRibbonBar | RadRibbonBar
+description: You can build the user interface with a RadRibbonBar using a variety of different elements. In this tutorial, you will see how some of these elements can be placed and customized.
 slug: winforms/ribbonbar/getting-started/using-different-elements-on-a-radribbonbar
 tags: using,different,elements,on,a,radribbonbar
 published: True
-position: 6
+position: 3
 previous_url: ribbonbar-using-different-elements-on-a-radribbonbar
 ---
 
@@ -99,3 +99,11 @@ With an appropriate __Image__ the __RadRibbonBar__ should look similarly:
 >
 
 ![ribbonbar-using-different-elements-on-a-radribbonbar 005](images/ribbonbar-using-different-elements-on-a-radribbonbar005.png)
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%})

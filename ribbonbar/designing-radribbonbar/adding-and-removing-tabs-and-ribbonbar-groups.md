@@ -1,19 +1,15 @@
 ---
 title: Adding and Removing Tabs and RibbonBar Groups
-page_title: Adding and Removing Tabs and RibbonBar Groups | UI for WinForms Documentation
-description: Adding and Removing Tabs and RibbonBar Groups
+page_title: Adding and Removing Tabs and RibbonBar Groups | RadRibbonBar
+description: Tabs and RibbonBar groups logically organize the functionality of your application.
 slug: winforms/ribbonbar/getting-started/adding-and-removing-tabs-and-ribbonbar-groups
 tags: adding,and,removing,tabs,and,ribbonbar,groups
 published: True
-position: 4
+position: 1
 previous_url: ribbonbar-adding-and-removing-tabs-and-ribbobbar-groups
 ---
 
 # Adding and Removing Tabs and RibbonBar Groups
-
-
-
-## Adding and Removing Tabs and RibbonBar groups
 
 When you are designing a new  __RadRibbonBar__, one of your first tasks will be adding tabs and RibbonBar groups to the control. Tabs and RibbonBar groups will logically organize the functionality of your application.
 
@@ -71,3 +67,11 @@ You can also add RibbonBar groups to a tab using the collection editor:
 6. Set the __Text__ property to the desired name for the RibbonBar group. The image above shows the Text property set to RibbonBar group 1.
 
 7. Click __OK__ to exit from the __RadItem Collection Editor__, and then click __OK__ to exit the  __RadRibbonBarCommandTab Collection Editor__ The image below shows the new RibbonBar group (with the caption, RibbonBar group 1) added to the __Second Tab__ tab.
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%})

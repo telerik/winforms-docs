@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview | RadRibbonBar
-description: RadRibbonBar control provides a flexible way for organizing all the functionality of your application.
+description: The RadRibbonBar control provides a flexible way for organizing all the functionality of your application.
 slug: winforms/ribbonbar
 tags: ribbonbar
 published: True
@@ -35,3 +35,9 @@ __RadRibbonBar__ control provides a flexible way for organizing all the function
 * An optional *Quick Access Toolbar* above or below the ribbon tabs an be used for customization or frequently-used commands.
 
 * Key tips can be used to help users learn the shortcut keys to activate individual controls.
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
