@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
-description: Localization
+page_title: Localization | RadRibbonBar
+description: RadRibbonBar provides the possibility to localize the strings of the Options and Exit buttons that belong to the application menu.
 slug: winforms/ribbonbar/localization/localization
 tags: localization
 published: True
@@ -11,7 +11,7 @@ previous_url: ribbonbar-localization-localization
 
 # Localization
 
-RadRibbonBar provides the possibility to localize the strings of the Options and Exit buttons that belong to the application menu. You just neet to set the __Text__ properties of the __OptionsButton__ and __ExitButton__:
+**RadRibbonBar** provides the possibility to localize the strings of the Options and Exit buttons that belong to the application menu. You just neet to set the __Text__ properties of the __OptionsButton__ and __ExitButton__:
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=localize}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=localize}} 
@@ -50,3 +50,7 @@ RadRibbonBar1.LocalizationSettings.MaximizeRibbonItemText = "ENG Maximize the ri
 ````
 
 {{endregion}}
+
+## See Also
+
+* [Right-to-left Support]({%slug winforms/ribbonbar/localization/right-to-left-support%})

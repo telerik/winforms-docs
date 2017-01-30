@@ -1,7 +1,7 @@
 ---
 title: Adding and Removing Tabs and RibbonBar Groups
-page_title: Adding and Removing Tabs and RibbonBar Groups | UI for WinForms Documentation
-description: Adding and Removing Tabs and RibbonBar Groups
+page_title: Adding and Removing Tabs and RibbonBar Groups | RadRibbonBar
+description: You can manipulate RadRibbonBar tabs and groups at run time by using the appropriate collections.
 slug: winforms/ribbonbar/programming-radribbonbar/adding-and-removing-tabs-and-ribbonbar-groups
 tags: adding,and,removing,tabs,and,ribbonbar,groups
 published: True
@@ -17,9 +17,9 @@ You can manipulate __RadRibbonBar__ tabs and groups at run time by using the ap
 
 To add a tab to __RadRibbonBar__, follow the four steps below:
 
-1. Create a new __Telerik.WinControls.UI.RibbonTab__ object and set its properties.
+1. Create a new Telerik.WinControls.UI.__RibbonTab__ object and set its properties.
 
-1. Call the __Add__ method of the __RadRibbonBar.CommandTabs__ collection, passing the __Telerik.WinControls.UI.RibbonTab__ object.
+1. Call the __Add__ method of the RadRibbonBar.__CommandTabs__ collection, passing the Telerik.WinControls.UI.__RibbonTab__ object.
 
 #### Adding a tab to RadRibbonBar
 
@@ -211,3 +211,11 @@ DirectCast(RadRibbonBar1.CommandTabs(0), RibbonTab).Items.RemoveAt(1)
 ````
 
 {{endregion}}
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%}) 

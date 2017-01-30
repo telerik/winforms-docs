@@ -1,6 +1,6 @@
 ---
 title: Managing Contextual Tab Groups
-page_title: Managing Contextual Tab Groups | UI for WinForms Documentation
+page_title: Managing Contextual Tab Groups | RadRibbonBar
 description: Managing Contextual Tab Groups
 slug: winforms/ribbonbar/programming-radribbonbar/managing-contextual-tab-groups
 tags: managing,contextual,tab,groups
@@ -11,7 +11,7 @@ previous_url: ribbonbar-programming-radribbonbar-managing-contextual-tab-groups
 
 # Managing Contextual Tab Groups
 
-
+The Contextual Tab Groups can be used to group tabs in a context and thus improve the usability of your UI.
 
 ## Using the Designer to Add Contextual Tab Groups
 
@@ -27,7 +27,11 @@ You can assign tabs to contextual tab groups using the designer in either of the
 
 1. Using drag-and-drop: Click on the tab that you want to be placed in a particular contextual tab group and then drag it to the desired contextual tab group.
 
-2. Select a Contextual Tab Group and open the __Properties__ window of Visual Studio. Find the __TabItems__ property and open its Collection Editor. You will see the available Ribbon Tabs which can be placed in the Contextual Tab Group. Use the controls on the dialog to place tabs in the group:<br>![ribbonbar-programming-radribbonbar-managing-contextual-tab-groups 001](images/ribbonbar-programming-radribbonbar-managing-contextual-tab-groups001.png)
+2. Select a Contextual Tab Group and open the __Properties__ window of Visual Studio. Find the __TabItems__ property and open its Collection Editor. You will see the available Ribbon Tabs which can be placed in the Contextual Tab Group. Use the controls on the dialog to place tabs in the group:
+
+>caption Figure 1: Contextual Tab Groups Editor
+
+![ribbonbar-programming-radribbonbar-managing-contextual-tab-groups 001](images/ribbonbar-programming-radribbonbar-managing-contextual-tab-groups001.png)
 
 ## Using Contextual Tabs programmatically
 
@@ -109,10 +113,13 @@ End Sub
 
 {{endregion}} 
 
+## See Also
 
-
-
-
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%}) 
 
 
 

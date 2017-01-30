@@ -19,7 +19,7 @@ What is more, at the end of the article you will find a link to a project which 
 
 ## Building RadRibbonBar UI
 
-Building the user interface of the RadRichTextBox-enabled is pretty simple. You can use the [design-time capabilities]({%slug winforms/ribbonbar/getting-started/getting-started%}) of RadRibbonBar to insert and arrange elements in it. The other option is to [insert elements through code]({%slug winforms/ribbonbar/programming-radribbonbar/adding-and-removing-tabs-and-ribbonbar-groups%}). The following code snippet demonstrates how to insert a 'Home' tab, a 'Font' group and a button which toggles the bold mode of the text:
+Building the user interface of the RadRichTextBox-enabled is pretty simple. You can use the [design-time capabilities]({%slug winforms/ribbonbar/getting-started%}) of RadRibbonBar to insert and arrange elements in it. The other option is to [insert elements through code]({%slug winforms/ribbonbar/programming-radribbonbar/adding-and-removing-tabs-and-ribbonbar-groups%}). The following code snippet demonstrates how to insert a 'Home' tab, a 'Font' group and a button which toggles the bold mode of the text:
 
 {{source=..\SamplesCS\RichTextBox\Features\RichTextBoxRibbonUI.cs region=ribbonui}} 
 {{source=..\SamplesVB\RichTextBox\Features\RichTextBoxRibbonUI.vb region=ribbonui}} 

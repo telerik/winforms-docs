@@ -1,7 +1,7 @@
 ---
 title: Adding and Removing Groups and Buttons
-page_title: Adding and Removing Groups and Buttons | UI for WinForms Documentation
-description: Adding and Removing Groups and Buttons
+page_title: Adding and Removing Groups and Buttons | RadRibbonBar
+description: You can manipulate groups and buttons of RadRibbonBar at run time by using the appropriate objects and collections.
 slug: winforms/ribbonbar/programming-radribbonbar/adding-and-removing-groups-and-buttons
 tags: adding,and,removing,groups,and,buttons
 published: True
@@ -11,7 +11,7 @@ previous_url: ribbonbar-programming-radribbonbar-adding-and-removing-groups-and-
 
 # Adding and Removing Groups and Buttons
 
-You can manipulate groups and buttons of RadRibbonBar at run time by using the appropriate objects and collections.
+You can manipulate groups and buttons of __RadRibbonBar__ at run time by using the appropriate objects and collections.
 
 ## Adding a Button
 
@@ -65,7 +65,7 @@ RadRibbonBarGroup1.Items.AddRange(New RadItem() {RadButtonElement1, RadButtonEle
 
 ## Removing a Button
 
-To remove a button, call the __Remove__ method of __RadRibbonBarGroup.Items__ collection, specifying the __RadButtonElement__ that you wish to be removed:
+To remove a button, call the __Remove__ method of RadRibbonBarGroup.__Items__ collection, specifying the __RadButtonElement__ that you wish to be removed:
 
 #### Remove a button from RadRibbonBarGroup
 
@@ -111,9 +111,9 @@ To add a new button group with buttons to a RibbonBar group of __RadRibbonBar__,
 
 1. Create a __RadButtonElement__ objects and set their properties. 
 
-1. Add the __RadButtonElement__ objects to the __RadButtonBarGroup.Items__ collection. 
+1. Add the __RadButtonElement__ objects to the RadButtonBarGroup.__Items__ collection. 
 
-1. Add the __RadButtonBarGroup__ object to the __RadRibbonBarGroup.Items__ collection. 
+1. Add the __RadButtonBarGroup__ object to the RadRibbonBarGroup.__Items__ collection. 
 
 #### Add button group with buttons
 
@@ -148,3 +148,11 @@ RadRibbonBarGroup1.Items.Add(RadRibbonBarButtonGroup1)
 ````
 
 {{endregion}}
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%}) 

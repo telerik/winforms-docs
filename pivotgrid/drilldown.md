@@ -1,7 +1,7 @@
 ---
 title: Drill Down
-page_title: Custom Aggregation | RadPivotGrid
-description: Custom Aggregation
+page_title: Drill Down | RadPivotGrid
+description: The LocalDataSourceProvider exposes a GetUnderlyingData method which allows extracting the records from the data source object responsible for accumulating the result for a particular row and column.
 slug: winforms/pivotgrid/drilldown
 tags: custom, aggregation
 published: True
@@ -12,7 +12,7 @@ position: 12
 
 The value of a particular __PivotCellElement__ is calculated depending on the applied row and column groups together with the aggregate descriptions.
 
-As of __R1 2017__, __LocalDataSourceProvider__ exposes a __GetUnderlyingData__ method which allows extracting the records from the data source object responsible for accumulating the result for a particular row and column. The __GetUnderlyingData__ method is working with two parameters: __Row Group__ and __Column Group__.
+The __LocalDataSourceProvider__ exposes a __GetUnderlyingData__ method which allows extracting the records from the data source object responsible for accumulating the result for a particular row and column. The __GetUnderlyingData__ method is working with two parameters: __Row Group__ and __Column Group__.
 
 In the example below we will handle RadPivotGrid.__MouseDoubleClick__ event and use the retrieved IEnumerable object to bind [RadGridView]({%slug winforms/gridview%}) and display the result.
 

@@ -1,7 +1,7 @@
 ---
 title: Collapsing the RibbonBar
-page_title: Collapsing the RibbonBar | UI for WinForms Documentation
-description: Collapsing the RibbonBar
+page_title: Collapsing the RibbonBar | RibbonBar
+description: RadRibbonBar can appear to take up a large amount of screen real estate, especially when compared to a menu application.
 slug: winforms/ribbonbar/end-user-capabilities/collapsing-the-ribbonbar
 tags: collapsing,the,ribbonbar
 published: True
@@ -20,3 +20,8 @@ As you resize horizontally a form containing a __RadRibbonBar__, the individual 
 ## Base Collapsing
 
 Double-clicking the selected main tab will collapse all of the groups and hide them from view. Double-clicking the selected main tab again will display the groups again<br>![ribbonbar-end-user-capabilities-collapsing-the-ribbonbar 005](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar005.png)
+
+## See Also
+
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})

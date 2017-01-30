@@ -1,7 +1,7 @@
 ---
 title: Customization
-page_title: Customization | UI for WinForms Documentation
-description: Customization
+page_title: Customization | RadRibbonBar
+description: The appearance of the Backstage View can be customized by using one of the predefined themes.
 slug: winforms/ribbonbar/overview/customization
 tags: customization
 published: True
@@ -11,9 +11,12 @@ previous_url: ribbonbar-backstage-view-customization
 
 # Customization
 
-The appearance of the BackstageView can be customized by using one of the predefined themes: Control Default, Office2010Blue, Office2010Black, Office2010Silver themes, modifying one of them in the Visual Style Builder, or creating a custom one by using the [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}). Additionally, appearance modifications can be introduced through code.
+The appearance of the Backstage View can be customized by using one of the predefined themes: Control Default, Office2010Blue, Office2010Black, Office2010Silver themes, modifying one of them in the Visual Style Builder, or creating a custom one by using the [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}). Additionally, appearance modifications can be introduced through code.
 
-The following image demonstrates the Backstage view Element tree, which can help you to access the desired elements.  ![ribbonbar-backstage-view-customization 001](images/ribbonbar-backstage-view-customization001.png)
+The following image demonstrates the Backstage view Element tree, which can help you to access the desired elements.
+
+>caption Figure 1: BackstageViewElement
+![ribbonbar-backstage-view-customization 001](images/ribbonbar-backstage-view-customization001.png)
 
 * __BackstageViewElement__ - main control element, which contains the UI and the logic of the control
 
@@ -79,3 +82,10 @@ RadRibbonBarBackstageView1.BackstageElement.ContentElement.BackgroundShape = ima
 
 >note BackstageTabItems, BackstageItemsPanelElement and BackstageContentPanelElement use[RadImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})for most of the predefinied themes.
 >
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%})

@@ -1,7 +1,7 @@
 ---
 title: Customizing the Application Menu
-page_title: Customizing the Application Menu | UI for WinForms Documentation
-description: Customizing the Application Menu
+page_title: Customizing the Application Menu | RadRibbonBar
+description: The Application Menu is a menu that is displayed when you click on the Office Button in the upper left corner of RadRibbonBar.
 slug: winforms/ribbonbar/programming-radribbonbar/customizing-the-application-menu
 tags: customizing,the,application,menu
 published: True
@@ -11,7 +11,10 @@ previous_url: ribbonbar-programming-radribbonbar-customizing-the-application-men
 
 # Customizing the Application Menu
 
-The *Application Menu* is a menu that is displayed when you click on the *Office Button *in the upper left corner of __RadRibbonBar__: <br>![ribbonbar-programming-radribbonbar-customizing-the-application-menu 000](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu000.png)
+The *Application Menu* is a menu that is displayed when you click on the *Office Button* in the upper left corner of __RadRibbonBar__:
+
+>caption Figure 1: RadRibbonBar Application Menu
+![ribbonbar-programming-radribbonbar-customizing-the-application-menu 000](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu000.png)
 
 The *Application Menu *can contain the same elements as __RadMenu__. Please refer to RadMenu section of the documentation for further a more comprehensive information about __RadMenu__. In contrast to __RadMenu__, menu items can be arranged in two columns.
 
@@ -216,3 +219,11 @@ The result in this case will be:<br>![ribbonbar-programming-radribbonbar-customi
 ## Keyboard Support
 
 The Application menu supports mnemonics and Arrows/Enter/Escape navigation.
+
+## See Also
+
+* [Design Time]({%slug winforms/ribbonbar/design-time%})
+* [Structure]({%slug winforms/ribbonbar/structure%})
+* [Getting Started]({%slug winforms/ribbonbar/getting-started%})
+* [Backstage View]({%slug winforms/ribbonbar/backstage-view/overview%})
+* [Themes]({%slug winforms/ribbonbar/customizing-appearance/themes%}) 
