@@ -118,4 +118,4 @@ End Sub
 
 {{endregion}} 
 
-![treeview-working-with-nodes-custom-sorting 001](images/treeview-working-with-nodes-custom-sorting001.png)![treeview-working-with-nodes-custom-sorting 002](images/treeview-working-with-nodes-custom-sorting002.png)
+![treeview-working-with-nodes-custom-sorting 001](images/treeview-working-with-nodes-custom-sorting001.png)
