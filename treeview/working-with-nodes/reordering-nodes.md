@@ -96,6 +96,7 @@ parentNode2.Nodes.Add(childNode3);
 parentNode2.Nodes.Add(childNode4);
 parentNode2.Nodes.Add(childNode5);
 // Insert the childNode instance to the parentNode2 nodes collection
+parentNode1.Nodes.Remove(childNode);
 parentNode2.Nodes.Insert(1, childNode);
 
 ````
@@ -120,6 +121,7 @@ parentNode2.Nodes.Add(childNode3)
 parentNode2.Nodes.Add(childNode4)
 parentNode2.Nodes.Add(childNode5)
 ' Insert the childNode instance to the parentNode2 nodes collection
+parentNode1.Nodes.Remove(childNode)
 parentNode2.Nodes.Insert(1, childNode)
 
 ````
