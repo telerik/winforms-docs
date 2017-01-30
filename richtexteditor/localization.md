@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
-description: Localization
+page_title: Localization | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor/localization
 tags: localization
 published: True
@@ -11,7 +11,7 @@ previous_url: richtexteditor-localization
 
 # Localization
 
-To change the default English localization provider you should use the __CurrentProvider__ static property of the          __RichTextBoxLocalizationProvider__ class. For example you can load the string from a xml file like this:
+To change the default English localization provider you should use the __CurrentProvider__ static property of the          __RichTextBoxLocalizationProvider__ class. For example, you can load the string from a XML file like this:
 
 {{source=..\SamplesCS\RichTextEditor\Localization.cs region=xml}} 
 {{source=..\SamplesVB\RichTextEditor\Localization.vb region=xml}} 
@@ -28,14 +28,13 @@ RichTextBoxLocalizationProvider.CurrentProvider = RichTextBoxLocalizationProvide
 
 {{endregion}} 
 
->important You can download a xml file that contains all the currently used strings from here:           [Strings file](http://www.telerik.com/docs/default-source/ui-for-winforms/richtextboxstrings.zip?sfvrsn=2)
+>important You can download a XML file that contains all the currently used strings from here: [Strings file](http://www.telerik.com/docs/default-source/ui-for-winforms/richtextboxstrings.zip?sfvrsn=2)
 >
 
 >note As of R2 2015 __RichTextBoxLocalizationProvider__ contains all strings related to the __RadRichTextEditorRibbonUI__ as well.
 >
 
 Another approach is to create a custom localization provider class which inherits __RichTextBoxLocalizationProvider__. In it you should just override the __GetLocalizedString__  method and return the localized string depending on current id.
-
 
 {{source=..\SamplesCS\RichTextEditor\Localization.cs region=custom}} 
 {{source=..\SamplesVB\RichTextEditor\Localization.vb region=custom}} 
@@ -124,8 +123,6 @@ InitializeComponent()
 ````
 
 {{endregion}} 
-
-
 
 
 >note It is necessary to specify the RichTextBoxLocalizationProvider. __CurrentProvider__ property before initializing the components.

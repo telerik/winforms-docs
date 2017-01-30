@@ -1,7 +1,7 @@
 ---
 title: Keyboard Support
-page_title: Keyboard Support | UI for WinForms Documentation
-description: Keyboard Support
+page_title: Keyboard Support | RadRichTextEditor
+description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor-/keyboard-support
 tags: keyboard,support
 published: True
@@ -11,8 +11,6 @@ previous_url: richtexteditor-keyboard-support
 
 # Keyboard Support
 Telerik __RadRichTextEditor__ for WinForms supports shortcuts. There are default key-bindings defined for the most widely used operations, namely:
-
->caption  
 
 |  __Action__  |  __Hotkey__  |
 | ------ | ------ |
@@ -53,7 +51,7 @@ Telerik __RadRichTextEditor__ for WinForms supports shortcuts. There are default
 |ShowFontPropertiesDialog|Ctrl+D|
 |ShowInsertHyperlinkDialog|Ctrl+K|
 
-Now these key shortcuts can be overridden and customized to the liking of the user. This can be achieved by creating a custom __RichTextEditorInputBehavior__ descendant:
+Now, these key shortcuts can be overridden and customized to the liking of the user. This can be achieved by creating a custom __RichTextEditorInputBehavior__ descendant:
 
 {{source=..\SamplesCS\RichTextEditor\KeyboardSupport.cs region=input}} 
 {{source=..\SamplesVB\RichTextEditor\KeyboardSupport.vb region=input}} 
@@ -104,7 +102,7 @@ radRichTextEditor1.InputHandler = New MyInputBehavior(radRichTextEditor1.RichTex
 
 {{endregion}} 
 
-Another way to customize the control behavior is to use the __PreviewEditorKeyDown__ event. For example,          pressing RightAlt causes Control and Alt to be sent as arguments to the PreviewKeyDown event. Thus, RightAlt+E triggers a formatting command for paragraph alignment instead of inputting the ę character. In that case, you can handle the PreviewEditorKeyDown event in the following way:
+Another way to customize the control behavior is to use the __PreviewEditorKeyDown__ event. For example,          pressing **RightAlt** causes **Control** and **Alt** to be sent as arguments to the **PreviewKeyDown** event. Thus, **RightAlt**+**E** triggers a formatting command for paragraph alignment instead of inputting the **ę** character. In that case, you can handle the **PreviewEditorKeyDown** event in the following way:
 
 {{source=..\SamplesCS\RichTextEditor\KeyboardSupport.cs region=keyDown}} 
 {{source=..\SamplesVB\RichTextEditor\KeyboardSupport.vb region=keyDown}} 

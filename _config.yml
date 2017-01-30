@@ -879,6 +879,9 @@ navigation:
     richtexteditor/features/merge-documents:
         title: Merge Documents
         position: 3
+    richtexteditor/features/mail-merge:
+        title: Mail Merge
+        position: 3
     richtexteditor/features/fields-and-document-variables:
         title: Fields and Document Variables
         position: 0
