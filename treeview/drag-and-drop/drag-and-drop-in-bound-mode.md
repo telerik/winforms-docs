@@ -13,9 +13,6 @@ previous_url: treeview-drag-and-drop-drag-and-drop-in-bound-mode
 
 When the __RadTreeView__ is in bound mode, it supports drag and drop behavior. In order to enable this functionality, you should set the __AllowDragDrop__ property to *true*. However, due to the specificity of  the __RadTreeView__’s [data binding]({%slug winforms/treeview/data-binding/data-binding-basics%})  and the set up hierarchical data structure, it is necessary to handle manually the drag and drop operation to obtain correct nodes order. For this purpose, it is necessary to create a custom __TreeViewDragDropService__. This article demonstrates a sample approach how to achieve it.
 
-![treeview-drag-and-drop-drag-and-drop-in-bound-mode 001](images/treeview-drag-and-drop-drag-and-drop-in-bound-mode001.gif)
-
-
 1\. Consider the __RadTreeView__ is bound to the following [self-referencing data]({%slug winforms/treeview/data-binding/binding-to-self-referencing-data%}).
 
 {{source=..\SamplesCS\TreeView\DragAndDrop\DragAndDropInBoundMode.cs region=SelfRefData}} 

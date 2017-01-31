@@ -1,6 +1,6 @@
 ---
-title: Context Menus
-page_title: Context Menus | UI for WinForms Documentation
+title: Custom Context Menus
+page_title: Custom Context Menus | UI for WinForms Documentation
 description: Context Menus
 slug: winforms/treeview/design-time/context-menus
 tags: context,menus
@@ -9,7 +9,7 @@ position: 2
 previous_url: treeview-design-time-context-menus
 ---
 
-# Context Menus
+# Custom Context Menus
 
 Context menus can be added to a RadTreeView or to each individual node. Context menus for nodes take precedence over the menu for the RadTreeView. To add a context menu to your RadTreeView, you should drag and drop RadContextMenu component on your form and then create a RadContextMenuManager. This will add a __RadContextMenu__ property for RadTreeView and you will be able to set the RadContextMenu instance to this property.
 

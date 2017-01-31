@@ -15,7 +15,7 @@ If you have a complex hierarchy, which includes business objects of different ty
 
 ![treeview-data-binding-load-on-demand-with-crud-operations 001](images/treeview-data-binding-load-on-demand-with-crud-operations001.png)
 
-In this example, we will use the following scenario: A hierarchy, which has __Teams__, each __Team__ has __TeamMembers__ and __Tasks__, and each __TeamMember__ has his own __Tasks__ Every __Team__, __TeamMember__ and __Task__ have names which will be displayed in the __RadTreeView__.
+In this example, we will use the following scenario: A hierarchy, which has __Teams__, each __Team__ has __TeamMembers__ and __Tasks__, and each __TeamMember__ has his own __Tasks__. Every __Team__, __TeamMember__ and __Task__ have names which will be displayed in the __RadTreeView__.
 
 Below you can see the implementation of these types. Note that their child collections are __BindingLists__ and that every type implements __INotifyPropertyChanged__. We will use this approach so that every property change will bubble up to the top-most collection which we will monitor:
 

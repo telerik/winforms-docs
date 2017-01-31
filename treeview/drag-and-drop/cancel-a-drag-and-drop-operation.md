@@ -13,7 +13,7 @@ previous_url: treeview-drag-and-drop-cancel-a-drag-and-drop-operation
 
 In some cases you may need to impose restrictions on the drag and drop behavior. For example you may want to disallow the dropping of a node to specific location, prevent node form being dropped at different level, or perhaps disable the auto expanding of the nodes while dragging.
 
-![treeview-drag-and-drop-cancel-a-drag-and-drop-operation 001](images/treeview-drag-and-drop-cancel-a-drag-and-drop-operation001.jpg)
+![treeview-drag-and-drop-cancel-a-drag-and-drop-operation 001](images/treeview-drag-and-drop-cancel-a-drag-and-drop-operation001.png)
 
 ## Using AllowDrop property 
         

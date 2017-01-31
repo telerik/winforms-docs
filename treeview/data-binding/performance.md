@@ -13,4 +13,3 @@ previous_url: treeview-data-binding-perfomance
 
 To improve performance in data loading and other long running operations use the RadTreeView __BeginUpdate__ and __EndUpdate__ methods. Place __BeginUpdate__ and __EndUpdate__ just before and after blocks of code that add, remove or reorder large numbers of nodes. 
 
-See the [Load On Demand]({%slug winforms/treeview/data-binding/load-on-demand%}) topic for an example.
