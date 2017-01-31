@@ -8,6 +8,10 @@ published: True
 position: 0
 ---
 
+# Themes
+
+This help article will demonstrate a step by step tutorial how to customize the **ControlDefault** theme for **RadRibbonBar**.
+
 1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder/starting-vsb%}).
 
 1. [Export the built-in themes] ({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%}). in a specific folder by selecting *File >> Export Built-in Themes*.

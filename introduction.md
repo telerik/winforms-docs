@@ -115,7 +115,7 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 * [SpellChecker]({%slug winforms/spellchecker%})
 * Panels and Labels
 
-	* [GroupBox]({%slug winforms/panels-and-labels/groupbox%})
+	* [GroupBox]({%slug winforms/panels-and-labels/groupbox/overview%})
 
 	* [Separator]({%slug winforms/panels-and-labels/separator%})
 

@@ -741,6 +741,9 @@ navigation:
     panels-and-labels/groupbox:
         title: GroupBox
         position: 0
+    panels-and-labels/groupbox/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     panels-and-labels/label:
         title: Label
         position: 1

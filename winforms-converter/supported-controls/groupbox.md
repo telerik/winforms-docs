@@ -10,7 +10,7 @@ position: 1
 
 # GroupBox
 
-This controls is converted to [RadGroupBox]({%slug winforms/panels-and-labels/groupbox%}). The following table describes which properties are removed and which are replaced with similar equivalents.
+This controls is converted to [RadGroupBox]({%slug winforms/panels-and-labels/groupbox/overview%}). The following table describes which properties are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
