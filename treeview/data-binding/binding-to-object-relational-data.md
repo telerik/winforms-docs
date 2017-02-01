@@ -1,6 +1,6 @@
 ---
 title: Binding to Object-relational Data
-page_title: Binding to Object-relational Data | UI for WinForms Documentation
+page_title: Binding to Object-relational Data | RadTreeView
 description: Binding to Object-relational Data
 slug: winforms/treeview/data-binding/binding-to-object-relational-data
 tags: binding,to,object-relational,data

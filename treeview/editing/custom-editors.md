@@ -1,6 +1,6 @@
 ---
 title: Custom Editors
-page_title: Custom Editors | UI for WinForms Documentation
+page_title: Custom Editors | RadTreeView
 description: Custom Editors
 slug: winforms/treeview/editing/custom-editors
 tags: custom,editors

@@ -1,6 +1,6 @@
 ---
 title: Tree Lines and Rows
-page_title: Tree Lines and Rows | UI for WinForms Documentation
+page_title: Tree Lines and Rows | RadTreeView
 description: Tree Lines and Rows
 slug: winforms/treeview/styling-and-appearance/tree-lines-and-rows
 tags: tree,lines,and,rows

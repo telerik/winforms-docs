@@ -1,6 +1,6 @@
 ---
 title: Finding Nodes
-page_title: Finding Nodes | UI for WinForms Documentation
+page_title: Finding Nodes | RadTreeView
 description: Finding Nodes
 slug: winforms/treeview/working-with-nodes/finding-nodes
 tags: finding,nodes

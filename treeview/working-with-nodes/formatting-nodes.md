@@ -1,6 +1,6 @@
 ---
 title: Formatting Nodes
-page_title: Formatting Nodes | UI for WinForms Documentation
+page_title: Formatting Nodes | RadTreeView
 description: Formatting Nodes
 slug: winforms/treeview/working-with-nodes/formatting-nodes
 tags: formatting,nodes

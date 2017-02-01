@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
+page_title: Localization | RadTreeView
 description: Localization
 slug: winforms/treeview/localization/localization
 tags: localization

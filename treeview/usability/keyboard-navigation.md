@@ -1,6 +1,6 @@
 ---
 title: Keyboard Navigation
-page_title: Keyboard Navigation | UI for WinForms Documentation
+page_title: Keyboard Navigation | RadTreeView
 description: Keyboard Navigation
 slug: winforms/treeview/usability/keyboard-navigation
 tags: keyboard,navigation

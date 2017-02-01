@@ -1,6 +1,6 @@
 ---
 title: Modify the DragDropService behavior
-page_title: Modify the DragDropService behavior | UI for WinForms Documentation
+page_title: Modify the DragDropService behavior | RadTreeView
 description: Modify the DragDropService behavior
 slug: winforms/treeview/drag-and-drop/modify-the-dragdropservice-behavior
 tags: modify,the,dragdropservice,behavior

@@ -1,6 +1,6 @@
 ---
 title: Drag and Drop in bound mode
-page_title: Drag and Drop in bound mode | UI for WinForms Documentation
+page_title: Drag and Drop in bound mode | RadTreeView
 description: Drag and Drop in bound mode
 slug: winforms/treeview/drag-and-drop/drag-and-drop-in-bound-mode
 tags: drag,and,drop,in,bound,mode

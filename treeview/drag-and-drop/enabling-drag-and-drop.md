@@ -1,6 +1,6 @@
 ---
 title: Enabling Drag and Drop
-page_title: Enabling Drag and Drop | UI for WinForms Documentation
+page_title: Enabling Drag and Drop | RadTreeView
 description: Enabling Drag and Drop
 slug: winforms/treeview/drag-and-drop/enabling-drag-and-drop
 tags: enabling,drag,and,drop

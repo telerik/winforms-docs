@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | UI for WinForms Documentation
+page_title: Themes | RadTreeView
 description: Themes
 slug: winforms/treeview/styling-and-appearance/themes
 tags: themes

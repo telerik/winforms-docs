@@ -1,6 +1,6 @@
 ---
 title: Assign RadScreenTip to nodes
-page_title: Assign RadScreenTip to nodes | UI for WinForms Documentation
+page_title: Assign RadScreenTip to nodes | RadTreeView
 description: Assign RadScreenTip to nodes
 slug: winforms/treeview/how-to/assign-radscreentip-to-nodes
 tags: assign,radscreentip,to,nodes

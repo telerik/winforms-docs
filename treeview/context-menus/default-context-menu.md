@@ -1,6 +1,6 @@
 ---
 title: Default Context Menu
-page_title: Default Context Menu | UI for WinForms Documentation
+page_title: Default Context Menu | RadTreeView
 description: Default Context Menu
 slug: winforms/treeview/context-menus/default-context-menu
 tags: default,context,menu

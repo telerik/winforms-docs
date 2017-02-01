@@ -1,6 +1,6 @@
 ---
 title: Sorting Nodes
-page_title: Sorting Nodes | UI for WinForms Documentation
+page_title: Sorting Nodes | RadTreeView
 description: Sorting Nodes
 slug: winforms/treeview/working-with-nodes/sorting-nodes
 tags: sorting,nodes

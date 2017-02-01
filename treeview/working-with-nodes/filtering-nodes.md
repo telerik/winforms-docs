@@ -1,6 +1,6 @@
 ---
 title: Filtering Nodes
-page_title: Filtering Nodes | UI for WinForms Documentation
+page_title: Filtering Nodes | RadTreeView
 description: Filtering Nodes
 slug: winforms/treeview/working-with-nodes/filtering-nodes
 tags: filtering,nodes

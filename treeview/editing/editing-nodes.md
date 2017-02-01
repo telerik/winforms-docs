@@ -1,6 +1,6 @@
 ---
 title: Editing Nodes
-page_title: Editing Nodes | UI for WinForms Documentation
+page_title: Editing Nodes | RadTreeView
 description: Editing Nodes
 slug: winforms/treeview/editing/editing-nodes
 tags: editing,nodes

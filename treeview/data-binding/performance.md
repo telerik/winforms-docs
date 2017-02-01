@@ -1,6 +1,6 @@
 ---
 title: Performance
-page_title: Performance | UI for WinForms Documentation
+page_title: Performance | RadTreeView
 description: Performance
 slug: winforms/treeview/data-binding/performance
 tags: performance

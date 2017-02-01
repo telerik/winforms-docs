@@ -1,6 +1,6 @@
 ---
 title: Binding to Database Data
-page_title: Binding to Database Data | UI for WinForms Documentation
+page_title: Binding to Database Data | RadTreeView
 description: Binding to Database Data
 slug: winforms/treeview/data-binding/binding-to-database-data
 tags: binding,to,database,data

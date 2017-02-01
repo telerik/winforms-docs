@@ -1,6 +1,6 @@
 ---
 title: Custom Context Menus
-page_title: Custom Context Menus | UI for WinForms Documentation
+page_title: Custom Context Menus | RadTreeView
 description: Context Menus
 slug: winforms/treeview/design-time/context-menus
 tags: context,menus

@@ -1,6 +1,6 @@
 ---
 title: Adding and Removing Nodes
-page_title: Adding and Removing Nodes | UI for WinForms Documentation
+page_title: Adding and Removing Nodes | RadTreeView
 description: Adding and Removing Nodes
 slug: winforms/treeview/working-with-nodes/adding-and-removing-nodes
 tags: adding,and,removing,nodes

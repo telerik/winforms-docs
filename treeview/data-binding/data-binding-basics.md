@@ -1,6 +1,6 @@
 ---
 title: Data Binding Basics
-page_title: Data Binding Basics | UI for WinForms Documentation
+page_title: Data Binding Basics | RadTreeView
 description: Data Binding Basics
 slug: winforms/treeview/data-binding/data-binding-basics
 tags: data,binding,basics

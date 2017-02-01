@@ -1,6 +1,6 @@
 ---
 title: Serialize/Deserialize to XML
-page_title: Serialize/Deserialize to XML | UI for WinForms Documentation
+page_title: Serialize/Deserialize to XML | RadTreeView
 description: Serialize/Deserialize to XML
 slug: winforms/treeview/data-binding/serialize/deserialize-to-xml
 tags: serialize/deserialize,to,xml

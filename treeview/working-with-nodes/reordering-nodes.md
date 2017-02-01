@@ -1,6 +1,6 @@
 ---
 title: Reordering Nodes
-page_title: Reordering Nodes | UI for WinForms Documentation
+page_title: Reordering Nodes | RadTreeView
 description: Reordering Nodes
 slug: winforms/treeview/working-with-nodes/reordering-nodes
 tags: reordering,nodes

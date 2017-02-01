@@ -1,6 +1,6 @@
 ---
 title: Selecting Nodes
-page_title: Selecting Nodes | UI for WinForms Documentation
+page_title: Selecting Nodes | RadTreeView
 description: Selecting Nodes
 slug: winforms/treeview/working-with-nodes/selecting-nodes
 tags: selecting,nodes

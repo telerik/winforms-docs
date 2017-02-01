@@ -1,6 +1,6 @@
 ---
 title: Binding to Self Referencing Data
-page_title: Binding to Self Referencing Data | UI for WinForms Documentation
+page_title: Binding to Self Referencing Data | RadTreeView
 description: Binding to Self Referencing Data
 slug: winforms/treeview/data-binding/binding-to-self-referencing-data
 tags: binding,to,self,referencing,data

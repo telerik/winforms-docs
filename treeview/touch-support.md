@@ -1,6 +1,6 @@
 ---
 title: Touch Support
-page_title: Touch Support | UI for WinForms Documentation
+page_title: Touch Support | RadTreeView
 description: Touch Support
 slug: winforms/treeview/touch-support
 tags: touch,support

@@ -1,6 +1,6 @@
 ---
 title: Using Checkboxes
-page_title: Using Checkboxes | UI for WinForms Documentation
+page_title: Using Checkboxes | RadTreeView
 description: Using Checkboxes
 slug: winforms/treeview/working-with-nodes/using-checkboxes
 tags: using,checkboxes

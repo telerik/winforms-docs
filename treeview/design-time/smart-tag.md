@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | UI for WinForms Documentation
+page_title: Smart Tag | RadTreeView
 description: Smart Tag
 slug: winforms/treeview/design-time/smart-tag
 tags: smart,tag

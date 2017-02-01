@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: TreeView | UI for WinForms Documentation
+page_title: TreeView | RadTreeView
 description: Telerik RadTreeView is the supercharged tree view component for Windows Forms.
 slug: winforms/treeview
 tags: treeview
@@ -47,7 +47,7 @@ RadTreeView allows multiple items to be selected using the Shift and Ctrl keys. 
 
 ![treeview-overview 004](images/treeview-overview004.png)
 
-### Three state check boxes
+### Tri state check boxes
 
 Check boxes can have a third "indeterminate" state to provide feedback to the user. For example the screenshot below shows "Node1" in an indeterminate state to show the user that not all child nodes are checked.
 

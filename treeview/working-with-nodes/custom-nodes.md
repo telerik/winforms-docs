@@ -1,6 +1,6 @@
 ---
 title: Custom Nodes
-page_title: Custom Nodes | UI for WinForms Documentation
+page_title: Custom Nodes | RadTreeView
 description: Custom Nodes
 slug: winforms/treeview/working-with-nodes/custom-nodes
 tags: custom,nodes

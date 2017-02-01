@@ -1,6 +1,6 @@
 ---
 title: Bring a Node into View
-page_title: Bring a Node into View | UI for WinForms Documentation
+page_title: Bring a Node into View | RadTreeView
 description: Bring a Node into View
 slug: winforms/treeview/working-with-nodes/bring-a-node-into-view
 tags: bring,a,node,into,view

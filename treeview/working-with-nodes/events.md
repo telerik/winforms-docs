@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events | UI for WinForms Documentation
+page_title: Events | RadTreeView
 description: Events
 slug: winforms/treeview/working-with-nodes/events
 tags: events

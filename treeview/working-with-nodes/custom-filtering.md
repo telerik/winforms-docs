@@ -1,6 +1,6 @@
 ---
 title: Custom Filtering
-page_title: Custom Filtering | UI for WinForms Documentation
+page_title: Custom Filtering | RadTreeView
 description: Custom Filtering
 slug: winforms/treeview/working-with-nodes/custom-filtering
 tags: custom,filtering

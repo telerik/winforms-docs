@@ -1,6 +1,6 @@
 ---
 title: Binding to XML Data
-page_title: Binding to XML Data | UI for WinForms Documentation
+page_title: Binding to XML Data | RadTreeView
 description: Binding to XML Data
 slug: winforms/treeview/data-binding/binding-to-xml-data
 tags: binding,to,xml,data

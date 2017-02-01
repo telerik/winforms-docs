@@ -1,6 +1,6 @@
 ---
 title: Keep RadTreeView states on reset
-page_title: Keep RadTreeView states on reset | UI for WinForms Documentation
+page_title: Keep RadTreeView states on reset | RadTreeView
 description: Keep RadTreeView states on reset
 slug: winforms/treeview/how-to/keep-radtreeview-states-on-reset
 tags: keep,radtreeview,states,on,reset

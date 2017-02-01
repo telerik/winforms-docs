@@ -1,6 +1,6 @@
 ---
 title: Custom Sorting
-page_title: Custom Sorting | UI for WinForms Documentation
+page_title: Custom Sorting | RadTreeView
 description: Custom Sorting
 slug: winforms/treeview/working-with-nodes/custom-sorting
 tags: custom,sorting
