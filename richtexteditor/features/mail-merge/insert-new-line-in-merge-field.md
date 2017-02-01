@@ -38,7 +38,7 @@ radDocumentEditor.Insert("\v");
 
 ````
 ````VB.NET
-radDocumentEditor.Insert("\v")
+radDocumentEditor.Insert(vbVerticalTab)
 
 ````
 
@@ -58,7 +58,7 @@ Span span = new Span("\v");
 
 ````
 ````VB.NET
-Dim span As New Span("\v")
+Dim span As New Span(vbVerticalTab)
 
 ````
 
@@ -91,11 +91,14 @@ You could handle a similar scenario using the vertical tab symbol in the **TextA
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_4}} 
 
 ````C#
-MergeField mergeField = new MergeField() { PropertyPath = "JobTitle", TextAfterIfNotEmpty="\v" };
+MergeField mergeField = new MergeField() { PropertyPath = "JobTitle", TextAfterIfNotEmpty = "\v" };
 
 ````
 ````VB.NET
-Dim mergeField As New MergeField() With {.PropertyPath = "JobTitle", .TextAfterIfNotEmpty = "\v"}
+Dim mergeField As New MergeField() With { _
+    .PropertyPath = "JobTitle", _
+    .TextAfterIfNotEmpty = vbVerticalTab _
+}
 
 ````
 
@@ -116,11 +119,14 @@ You could also use the *“\r\n”* in the **TextBeforeIfNotEmpty** or **TextAft
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_6}} 
 
 ````C#
-MergeField mergeField = new MergeField() { PropertyPath = "FirstName", TextAfterIfNotEmpty="\r\n" }; 
+MergeField mergeField = new MergeField() { PropertyPath = "FirstName", TextAfterIfNotEmpty = "\r\n" };
 
 ````
 ````VB.NET
-Dim mergeField As New MergeField() With {.PropertyPath = "FirstName", .TextAfterIfNotEmpty = "\r\n"}
+Dim mergeField As New MergeField() With { _
+     .PropertyPath = "FirstName", _
+     .TextAfterIfNotEmpty = vbCr & vbLf _
+}
 
 ````
 
@@ -139,31 +145,27 @@ The suggested approach in scenarios that include export is to use a [document va
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_8}} 
 
 ````C#
-    string verticalTabSymbol = "\v";
-	string verticalTabKey = "verticalTab";
-	this.radRichTextBox.Document.DocumentVariables.Add(verticalTabKey, verticalTabSymbol);
-	
-	DocumentVariableField documentVariableField = new DocumentVariableField();
-	documentVariableField.VariableName = verticalTabKey;
-	
-	var mergeField = new MergeField() { PropertyPath = "FirstName" };
-	mergeField.SetPropertyValue(MergeField.TextAfterIfNotEmptyProperty, documentVariableField);
-	
-	this.radRichTextBox.InsertField(mergeField, FieldDisplayMode.Result);  
+string verticalTabSymbol = "\v";
+string verticalTabKey = "verticalTab";
+radRichTextEditor.Document.DocumentVariables.Add(verticalTabKey, verticalTabSymbol);
+DocumentVariableField documentVariableField = new DocumentVariableField();
+documentVariableField.VariableName = verticalTabKey;
+var mergeField = new MergeField() { PropertyPath = "FirstName" };
+mergeField.SetPropertyValue(MergeField.TextAfterIfNotEmptyProperty, documentVariableField);
+radRichTextEditor.InsertField(mergeField, FieldDisplayMode.Result);
 
 ````
 ````VB.NET
-    Dim verticalTabSymbol As String = "\v"
-    Dim verticalTabKey As String = "verticalTab"
-    Me.radRichTextBox.Document.DocumentVariables.Add(verticalTabKey, verticalTabSymbol)
-
-    Dim documentVariableField As New DocumentVariableField()
-    documentVariableField.VariableName = verticalTabKey
-
-    Dim mergeField = New MergeField() With {.PropertyPath = "FirstName"}
-    mergeField.SetPropertyValue(MergeField.TextAfterIfNotEmptyProperty, documentVariableField)
-
-    Me.radRichTextBox.InsertField(mergeField, FieldDisplayMode.Result)
+Dim verticalTabSymbol As String = vbVerticalTab
+Dim verticalTabKey As String = "verticalTab"
+radRichTextEditor.Document.DocumentVariables.Add(verticalTabKey, verticalTabSymbol)
+Dim documentVariableField As New DocumentVariableField()
+documentVariableField.VariableName = verticalTabKey
+Dim mergeField__1 = New MergeField() With { _
+    .PropertyPath = "FirstName" _
+}
+mergeField__1.SetPropertyValue(MergeField.TextAfterIfNotEmptyProperty, documentVariableField)
+radRichTextEditor.InsertField(mergeField__1, FieldDisplayMode.Result)
 
 ````
 

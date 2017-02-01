@@ -21,7 +21,6 @@ The first thing you need to do is assign a value to the __ItemsSource__ property
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=data}} 
 
 ````C#
-        
 public class ExamplesDataContext
 {
     private List<Employee> employees = new List<Employee>()
@@ -51,7 +50,6 @@ public class ExamplesDataContext
             JobTitle = "Finance & Investments Officer",
         }
     };
-    
     public List<Employee> Employees
     {
         get
@@ -99,7 +97,6 @@ All that is left is to add the following line:
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=source}} 
 
 ````C#
-            
 this.radRichTextEditor1.Document.MailMergeDataSource.ItemsSource = new ExamplesDataContext().Employees;
 
 ````
@@ -141,7 +138,6 @@ The same scenario can be carried out programmatically just as easily. The method
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=field}} 
 
 ````C#
-            
 MergeField field = new MergeField() { PropertyPath = "FirstName" };
 
 ````
@@ -162,9 +158,7 @@ This fields will look for the value of the **FirstName** property of the Employe
 ````C#
 field.DisplayMode = FieldDisplayMode.Result;
 this.radRichTextEditor1.Document.ChangeFieldDisplayMode(field.FieldStart, FieldDisplayMode.Result);
-            
 this.radRichTextEditor1.ChangeFieldDisplayMode(field.FieldStart, FieldDisplayMode.Result);
-            
 this.radRichTextEditor1.Document.ChangeAllFieldsDisplayMode(FieldDisplayMode.Result);
 this.radRichTextEditor1.ChangeAllFieldsDisplayMode(FieldDisplayMode.Result);
 
@@ -204,9 +198,7 @@ Me.radRichTextEditor1.InsertField(field, FieldDisplayMode.DisplayName)
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=preview}} 
 
 ````C#
-            
 this.radRichTextEditor1.PreviewFirstMailMergeDataRecord();
-            
 this.radRichTextEditor1.PreviewLastMailMergeDataRecord();
 this.radRichTextEditor1.PreviewMailMergeDataRecordAtIndex(0);
 this.radRichTextEditor1.PreviewNextMailMergeDataRecord();
@@ -230,19 +222,12 @@ Me.radRichTextEditor1.PreviewPreviousMailMergeDataRecord()
 {{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=perform}} 
 
 ````C#
-            
 this.radRichTextEditor1.MailMergeCurrentRecord(); // returns a RadDocument that is the result of substituting the merge fields with the data from the current record. The current record can be specified through the MailMergeSource API:</para>
-    
 this.radRichTextEditor1.Document.MailMergeDataSource.MoveToFirst();
-    
 this.radRichTextEditor1.Document.MailMergeDataSource.MoveToLast();
-    
 this.radRichTextEditor1.Document.MailMergeDataSource.MoveToNext();
-        
 this.radRichTextEditor1.Document.MailMergeDataSource.MoveToPrevious();
-            
 this.radRichTextEditor1.Document.MailMergeDataSource.MoveToIndex(index);
-    
 this.radRichTextEditor1.MailMerge(false); // returns a RadDocument that is the result of Mail Merging all records. The parameter specifies if a page break should be inserted between the records (default value is true).
 
 ````

@@ -37,15 +37,19 @@ The code sample below access the **FillPrimitive** of the header, changes the fi
 {{source=..\SamplesVB\PanelsAndLabels\GroupBox\Advanced\TPFStructure.vb region=changeTheHeaderColor}} 
 
 ````C#
-((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).BackColor = Color.Red;
-((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).BackColor2 = Color.Yellow;
-((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
+FillPrimitive fill = ((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]);
+fill.ShouldPaint = true;
+fill.BackColor = Color.Red;
+fill.BackColor2 = Color.Yellow;
+fill.GradientStyle = Telerik.WinControls.GradientStyles.Linear;
 
 ````
 ````VB.NET
-DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).BackColor = Color.Red
-DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).BackColor2 = Color.Yellow
-DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive).GradientStyle = Telerik.WinControls.GradientStyles.Linear
+Dim fill As FillPrimitive = DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive)
+fill.ShouldPaint = True
+fill.BackColor = Color.Red
+fill.BackColor2 = Color.Yellow
+fill.GradientStyle = Telerik.WinControls.GradientStyles.Linear
 
 ````
 
