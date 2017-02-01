@@ -11,8 +11,6 @@ previous_url: treeview-localization-localization
 
 # Localization
 
-## Optional section title
-
 To localize RadTreeView to display control text and messages in a specific language:
 
 * All required classes for localization are defined in __Telerik.WinControls.UI__ namespace.
@@ -25,9 +23,49 @@ To localize RadTreeView to display control text and messages in a specific langu
 Below is a sample implementation of an English localization provider:
 
 #### Localizing RadTreeView Strings
+{{source=..\SamplesCS\TreeView\MyEnglishTreeViewLocalizationProvider.cs region=LocProvider}} 
+{{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=LocProvider}}
+````C#
+public class MyEnglishTreeViewLocalizationProvider : TreeViewLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
+    {
+        switch (id)
+        {
+            case TreeViewStringId.ContextMenuCollapse:
+                return "Collapse";
+            case TreeViewStringId.ContextMenuDelete:
+                return "Delete";
+            case TreeViewStringId.ContextMenuEdit:
+                return "Edit";
+            case TreeViewStringId.ContextMenuExpand:
+                return "Expand";
+            case TreeViewStringId.ContextMenuNew:
+                return "New";
+        }
+        return "";
+    }
+}
 
-{{source=..\SamplesCS\TreeView\MyEnglishTreeViewLocalizationProvider.cs region=provider}} 
-{{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=provider}} 
+````
+````VB.NET
+Public Overrides Function GetLocalizedString(ByVal id As String) As String
+    Select Case id
+        Case TreeViewStringId.ContextMenuCollapse
+            Return "Collapse"
+        Case TreeViewStringId.ContextMenuDelete
+            Return "Delete"
+        Case TreeViewStringId.ContextMenuEdit
+            Return "Edit"
+        Case TreeViewStringId.ContextMenuExpand
+            Return "Expand"
+        Case TreeViewStringId.ContextMenuNew
+            Return "New"
+    End Select
+    Return String.Empty
+End Function
+
+```` 
 
 
 

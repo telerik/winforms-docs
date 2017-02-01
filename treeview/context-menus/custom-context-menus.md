@@ -29,20 +29,6 @@ You can also assign a RadContextMenu instance to an individual node. However, yo
 
 7. Run the project. As you can notice below, when you right click on a RadTreeNode we get the second RadContextMenu instance shown and when we right click just on the RadTreeView, the first RadContextMenu instance is shown.
     
-    ![treeview-design-time-context-menus 001](images/treeview-design-time-context-menus001.png)![](images/treeview-design-time-context-menus002.png)
+    ![treeview-design-time-context-menus 001](images/treeview-design-time-context-menus001.png)
 
-In addition, __RadTreeView__ has a built-in context menu which is disabled by default. Enable the default menu by setting the __AllowDefaultContextMenu__ property to true. The built-in context menu has the following default items:
 
-1. Edit - starts the tree view editor for the current node. 
-
-1. Expand - expands the current node 
-
-1. Collapse - collapses the current node 
-
-1. New - create a new instance of the current node 
-
-1. Delete -  deletes the current node
-
-Add or remove "New" and "Delete from the context menu by setting the __AllowAddNewInContextMenu__ and __AllowDeleteInContextMenu__ properties of RadTreeView.
-
-![treeview-design-time-context-menus 003](images/treeview-design-time-context-menus003.png)
