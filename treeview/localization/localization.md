@@ -28,8 +28,8 @@ Below is a sample implementation of an English localization provider:
 
 #### Localizing RadTreeView Strings
 
-{{source=..\SamplesCS\TreeView\MyEnglishTreeViewLocalizationProvider.cs region=provider}} 
-{{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=provider}} 
+{{source=..\SamplesCS\TreeView\MyEnglishTreeViewLocalizationProvider.cs region=LocProvider}} 
+{{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=LocProvider}} 
 
 ````C#
 ````
