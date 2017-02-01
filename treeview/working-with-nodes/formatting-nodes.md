@@ -13,19 +13,15 @@ previous_url: treeview-working-with-nodes-formatting-nodes
 
 Similar to RadGridView, RadTreeView uses UI Virtualization. Its visual nodes (TreeNodeElement) are reused by the data nodes (RadTreeNode) which bring increased performance and optimized memory footprint. You can easily format node element by handling the __NodeFormatting__ event. The arguments of this event return the visual Node (and the data Node that is currently assigned to it) that is currently formatted and which you can additionally style.
 
-![treeview-working-with-nodes-formatting-nodes 001](images/treeview-working-with-nodes-formatting-nodes001.png)
+Each TreeNodeElement contains the following elements:
 
-The purpose of the example that follows is to demonstrate how you can show different images for the RadTreeView nodes depending on their logical state. We are going to simulate a tree of files and folders displaying an image of a closed folder when a node that contains other nodes is collapsed and displaying an image of an opened folder when a node that contains other nodes is expanded.
-        
+* __TreeNodeContentElement:__ Used for displaying the text.
+* __TreeNodeImageElement:__ Used for displaying image.
+* __TreeNodeExpanderItem:__ Displays the Expand/Collapse button
+* __TreeNodeLinesContainer:__ Displays the lined which are connecting the nodes.
 
-1. Let's fill RadTreeView with some sample nodes which represent files and folders:
+The bellow example shows how you can access and format the main node elements:
 
-    ![treeview-working-with-nodes-formatting-nodes 002](images/treeview-working-with-nodes-formatting-nodes002.png)
-
-1. Then, add three images as project resources. These images will indicate if a node is a file, an opened folder or a closed folder
-            
-
-1. Handle the NodeFormatting event implementing, setting the image to the Image property of the ImageElement.This element is responsible for containing the image of the visual NodeElement:
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\NodeFormatting.cs region=nodeFormatting}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}} 
@@ -73,8 +69,6 @@ End Sub
 ````
 
 {{endregion}} 
-
-
 
 
 >note Please note that you should always provide an 'else' clause for each 'if' clause that you have in the implementation of the NodeFormatting event. Skipping this operation will lead to incorrect images applied to the inappropriate nodes.
