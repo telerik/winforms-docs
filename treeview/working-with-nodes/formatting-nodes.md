@@ -33,42 +33,48 @@ The purpose of the example that follows is to demonstrate how you can show diffe
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}} 
 
 ````C#
-Bitmap folderOpen = SamplesCS.Properties.Resources.folder_open;
-Bitmap folderClose = SamplesCS.Properties.Resources.folder_close;
+        
 Bitmap file = SamplesCS.Properties.Resources.file;
-void radTreeView1_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
+private void radTreeView1_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
 {
-    if (e.Node.Nodes.Count > 0)
+    if (e.Node.Level > 0)
     {
-        if (e.Node.Expanded)
-        {
-            e.NodeElement.ImageElement.Image = folderOpen;
-        }
-        else
-        {
-            e.NodeElement.ImageElement.Image = folderClose;
-        }
+        e.NodeElement.BorderColor = Color.Blue;
+        e.NodeElement.BorderBoxStyle = Telerik.WinControls.BorderBoxStyle.SingleBorder;
+        e.NodeElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid;
+        e.NodeElement.BackColor = Color.LightBlue;
+        e.NodeElement.ContentElement.ForeColor = Color.White;
+        e.NodeElement.ImageElement.Image = file;
     }
     else
     {
-        e.NodeElement.ImageElement.Image = file;
+        e.NodeElement.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local);
+        e.NodeElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local);
+        e.NodeElement.ResetValue(LightVisualElement.BorderGradientStyleProperty, ValueResetFlags.Local);
+        e.NodeElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+        e.NodeElement.ContentElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
+        e.NodeElement.ImageElement.ResetValue(LightVisualElement.ImageProperty, ValueResetFlags.Local);
     }
 }
 
 ````
 ````VB.NET
-Private folderOpen As Bitmap = My.Resources.folder_open
-Private folderClose As Bitmap = My.Resources.folder_close
 Private file As Bitmap = My.Resources.file
 Private Sub radTreeView1_NodeFormatting(ByVal sender As Object, ByVal e As TreeNodeFormattingEventArgs)
-    If e.Node.Nodes.Count > 0 Then
-        If e.Node.Expanded Then
-            e.NodeElement.ImageElement.Image = folderOpen
-        Else
-            e.NodeElement.ImageElement.Image = folderClose
-        End If
-    Else
+    If e.Node.Level > 0 Then
+        e.NodeElement.BorderColor = Color.Blue
+        e.NodeElement.BorderBoxStyle = Telerik.WinControls.BorderBoxStyle.SingleBorder
+        e.NodeElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid
+        e.NodeElement.BackColor = Color.LightBlue
+        e.NodeElement.ContentElement.ForeColor = Color.White
         e.NodeElement.ImageElement.Image = file
+    Else
+        e.NodeElement.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local)
+        e.NodeElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
+        e.NodeElement.ResetValue(LightVisualElement.BorderGradientStyleProperty, ValueResetFlags.Local)
+        e.NodeElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
+        e.NodeElement.ContentElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
+        e.NodeElement.ImageElement.ResetValue(LightVisualElement.ImageProperty, ValueResetFlags.Local)
     End If
 End Sub
 
