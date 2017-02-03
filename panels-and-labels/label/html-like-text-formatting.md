@@ -1,17 +1,15 @@
 ---
 title: HTML-like Text Formatting
-page_title: HTML-like Text Formatting | UI for WinForms Documentation
-description: HTML-like Text Formatting
+page_title: HTML-like Text Formatting | RadLabel
+description: HTML-like Text Formatting is applied on the text primitive allowing the text to be styled with standard HTML tags.
 slug: winforms/panels-and-labels/label/html-like-text-formatting
 tags: html-like,text,formatting
 published: True
-position: 3
+position: 5
 previous_url: panels-and-labels-label-html-like-text-formatting
 ---
 
 # HTML-like Text Formatting
-
-
 
 ## Introduction
 
@@ -51,4 +49,10 @@ Me.RadLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, B
 
 {{endregion}} 
 
+>caption Figure 1: HTML-like Text
 ![panels-and-labels-label-html-like-text-formatting 001](images/panels-and-labels-label-html-like-text-formatting001.png)
+
+# See Also
+
+* [Getting Started]({%slug winforms/panels-and-labels/label/getting-started%})
+* [Themes]({%slug winforms/panels-and-labels/label/customizing-appearance/themes%})

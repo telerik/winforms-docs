@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Panel | UI for WinForms Documentation
+page_title: Overview | RadPanel
 description: RadPanel provides the features of a standard panel but adds advanced styling and text.
 slug: winforms/panels-and-labels/panel
 tags: panel
@@ -11,19 +11,18 @@ previous_url: panels-and-labels-panel-overview
 
 # Panel
 
+**RadPanel** provides the features of a standard panel but adds advanced styling and text:
 
-
-RadPanel provides the features of a standard panel but adds advanced styling and text:<br>![panels-and-labels-panel-overview 001](images/panels-and-labels-panel-overview001.png)
+>caption Figure 1: RadPanel
+![panels-and-labels-panel-overview 001](images/panels-and-labels-panel-overview001.png)
 
 The screenshot above demonstrates the use of a border, border width, background with a linear gradient, and Html-like formatted text. 
 
->note Please refer to Html-like formatting for further details about it.
+>note Please refer to [HTML-like Text Formatting]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}) article for further details about it.
 >
 
-## Themes
+# See Also
 
-Please refer to the themes section in the documentation about further details.
-
-*Edit UI Elements* dialog You can start the *Edit UI Elements* dialog by clicking on the link in the *smart tag*:<br>![panels-and-labels-panel-overview 002](images/panels-and-labels-panel-overview002.png)
-
-Changes are serialized in the Designer.cs file of your form. Furthermore, changes in *Edit UI Elements* dialog have higher precedence over the theme settings.
+* [Design Time]({%slug winforms/panels-and-labels/panel/design-time%})
+* [Structure]({%slug winforms/panels-and-labels/panel/structure%})
+* [Getting Started]({%slug winforms/panels-and-labels/panel/getting-started%})
