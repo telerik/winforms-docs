@@ -1,7 +1,7 @@
 ---
 title: Binding to Self Referencing Data
 page_title: Binding to Self Referencing Data | RadTreeView
-description: Binding to Self Referencing Data
+description: This article shows how you can bind RadTreeView to self referencing data.
 slug: winforms/treeview/data-binding/binding-to-self-referencing-data
 tags: binding,to,self,referencing,data
 published: True
@@ -11,7 +11,7 @@ previous_url: treeview-data-binding-binding-to-self-referencing-data
 
 # Binding to Self Referencing Data
 
-Binding RadTreeView to self referencing data differs form [binding to related data]({%slug winforms/treeview/data-binding/binding-to-object-relational-data%}) in that RadTreeView is bound to a single list instead of multiple related lists.
+Binding RadTreeView to self referencing data differs from [binding to related data]({%slug winforms/treeview/data-binding/binding-to-object-relational-data%}) in that RadTreeView is bound to a single list instead of multiple related lists.
  
 In order to set the parent-child relation between the records of the data source, we should set the __ParentMember__ and __ChildMember__ properties to the respective fields in the data source. If the parent `ID` for a record does not have a respective value in the child `ID` field of the records, then that record is considered to have no parents.
 		

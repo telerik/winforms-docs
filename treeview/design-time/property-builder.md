@@ -1,7 +1,7 @@
 ---
 title: Property Builder
 page_title: Property Builder | RadTreeView
-description: Property Builder
+description: This article shows how one can use the Property Builder to crete the hierarchy at design time.
 slug: winforms/treeview/design-time/property-builder
 tags: property,builder
 published: True

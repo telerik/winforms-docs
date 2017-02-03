@@ -1,7 +1,7 @@
 ---
 title: Modifying the Default Context Menu
 page_title: Modifying the Default Context Menu | RadTreeView
-description: Modifying the Default Context Menu
+description: RadTreeView provides a convenient API that will allow you to modify its context menu.
 slug: winforms/treeview/context-menus/modifying-the-default-context-menu
 tags: modifying,the,default,context,menu
 published: True

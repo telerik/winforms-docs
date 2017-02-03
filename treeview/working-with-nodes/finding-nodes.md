@@ -1,7 +1,7 @@
 ---
 title: Finding Nodes
 page_title: Finding Nodes | RadTreeView
-description: Finding Nodes
+description: This article shows how you can use the Find method to search for a nodes that meet specific criteria.
 slug: winforms/treeview/working-with-nodes/finding-nodes
 tags: finding,nodes
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Default Context Menu
 page_title: Default Context Menu | RadTreeView
-description: Default Context Menu
+description: RadTreeView displays a default context menu which appears when you right-click on a node.
 slug: winforms/treeview/context-menus/default-context-menu
 tags: default,context,menu
 published: True

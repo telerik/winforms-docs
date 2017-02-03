@@ -1,7 +1,7 @@
 ---
 title: Serialize/Deserialize to XML
 page_title: Serialize/Deserialize to XML | RadTreeView
-description: Serialize/Deserialize to XML
+description: With RadTreeView you can save all nodes, including the nodes states (expanded, selected).
 slug: winforms/treeview/data-binding/serialize/deserialize-to-xml
 tags: serialize/deserialize,to,xml
 published: True

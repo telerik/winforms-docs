@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started | RadTreeView
-description: Getting Started
+description: Start using RadTreeView by either adding nodes with the Property Builder or in the code behind. 
 slug: winforms/treeview/getting-started
 tags: getting,started
 published: True

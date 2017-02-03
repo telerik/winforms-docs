@@ -1,7 +1,7 @@
 ---
 title: Binding CheckBoxes
 page_title: Binding CheckBoxes | RadTreeView
-description: Binding CheckBoxes 
+description: RadTreeView now supports binding the check boxes to a data field. This article shows how you can use this feature.
 slug: winforms/treeview/data-binding/binding-checkboxes
 tags: data,binding,basics
 published: True

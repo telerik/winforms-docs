@@ -1,7 +1,7 @@
 ---
 title: Binding to Object-relational Data
 page_title: Binding to Object-relational Data | RadTreeView
-description: Binding to Object-relational Data
+description: RadTreeView has the ability to bind to related data of custom objects which have member collections of related objects.
 slug: winforms/treeview/data-binding/binding-to-object-relational-data
 tags: binding,to,object-relational,data
 published: True

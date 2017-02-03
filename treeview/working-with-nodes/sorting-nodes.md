@@ -1,7 +1,7 @@
 ---
 title: Sorting Nodes
 page_title: Sorting Nodes | RadTreeView
-description: Sorting Nodes
+description: RadTreeView support nodes sorting. The sorting operation is applied separately to each group of nodes at the the same level.
 slug: winforms/treeview/working-with-nodes/sorting-nodes
 tags: sorting,nodes
 published: True

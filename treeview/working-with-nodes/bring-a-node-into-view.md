@@ -1,7 +1,7 @@
 ---
 title: Bring a Node into View
 page_title: Bring a Node into View | RadTreeView
-description: Bring a Node into View
+description: This article shows how one can use the BringIntoView method in order to navigate to a particular node.
 slug: winforms/treeview/working-with-nodes/bring-a-node-into-view
 tags: bring,a,node,into,view
 published: True

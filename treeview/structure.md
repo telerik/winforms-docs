@@ -1,7 +1,7 @@
 ---
 title: Structure
 page_title: Structure | RadTreeView
-description: Telerik RadTreeView is the supercharged tree view component for Windows Forms.
+description: This article shows which are the elements used for the nodes in RadTreeView, it shows the elements hierarchy as well.
 slug: winforms/treeview/structure
 tags: treeview,structure
 published: True

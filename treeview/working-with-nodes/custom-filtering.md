@@ -1,7 +1,7 @@
 ---
 title: Custom Filtering
 page_title: Custom Filtering | RadTreeView
-description: Custom Filtering
+description: Custom filtering is a flexible mechanism for filtering RadTreeView nodes by using custom logic.
 slug: winforms/treeview/working-with-nodes/custom-filtering
 tags: custom,filtering
 published: True

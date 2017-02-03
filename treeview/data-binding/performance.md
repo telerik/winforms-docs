@@ -1,7 +1,7 @@
 ---
 title: Performance
 page_title: Performance | RadTreeView
-description: Performance
+description: This article shows how one can improve the performance while performing repeated orations on nodes. 
 slug: winforms/treeview/data-binding/performance
 tags: performance
 published: True

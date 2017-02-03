@@ -1,7 +1,7 @@
 ---
 title: Load On Demand with CRUD operations
 page_title: Load On Demand with CRUD operations | RadTreeView
-description: Load On Demand with CRUD operations
+description: This article shows how you can keep the CRUD operations working while loading the data on demand. 
 slug: winforms/treeview/data-binding/load-on-demand-with-crud-operations
 tags: load,on,demand,with,crud,operations
 published: True

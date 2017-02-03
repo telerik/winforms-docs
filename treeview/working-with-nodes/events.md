@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events | RadTreeView
-description: Events
+description: RadTreeView provides a large set of events which allows you to respond to node interactions. 
 slug: winforms/treeview/working-with-nodes/events
 tags: events
 published: True

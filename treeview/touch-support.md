@@ -1,7 +1,7 @@
 ---
 title: Touch Support
 page_title: Touch Support | RadTreeView
-description: Touch Support
+description: RadTreeView provides touch support for scrolling and dragging out of the box.
 slug: winforms/treeview/touch-support
 tags: touch,support
 published: True

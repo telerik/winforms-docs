@@ -1,7 +1,7 @@
 ---
 title: Load On Demand
 page_title: Load On Demand | RadTreeView
-description: Load On Demand
+description: The Load On Demand feature helps reduce performance and memory costs incurred when all nodes are loaded at once. 
 slug: winforms/treeview/data-binding/load-on-demand
 tags: load,on,demand
 published: True

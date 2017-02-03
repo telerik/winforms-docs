@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events | RadTreeView
-description: Telerik RadTreeView is the supercharged tree view component for Windows Forms.
+description: This article list the most commonly used methods, properties and events of RadTreeView.
 slug: winforms/treeview/properties-methods-events
 tags: treeview,properties,methods,events
 published: True

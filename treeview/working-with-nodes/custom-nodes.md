@@ -1,7 +1,7 @@
 ---
 title: Custom Nodes
 page_title: Custom Nodes | RadTreeView
-description: Custom Nodes
+description: With RadTreeView you can create custom nodes and display them instead of the default ones.
 slug: winforms/treeview/working-with-nodes/custom-nodes
 tags: custom,nodes
 published: True
