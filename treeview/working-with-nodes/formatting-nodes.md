@@ -13,60 +13,20 @@ previous_url: treeview-working-with-nodes-formatting-nodes
 
 Similar to RadGridView, RadTreeView uses UI Virtualization. Its visual nodes (TreeNodeElement) are reused by the data nodes (RadTreeNode) which bring increased performance and optimized memory footprint. You can easily format node element by handling the __NodeFormatting__ event. The arguments of this event return the visual Node (and the data Node that is currently assigned to it) that is currently formatted and which you can additionally style.
 
-Each TreeNodeElement contains the following elements:
+Each __TreeNodeElement__ contains the following elements:
 
 * __TreeNodeContentElement:__ Used for displaying the text.
 * __TreeNodeImageElement:__ Used for displaying image.
 * __TreeNodeExpanderItem:__ Displays the Expand/Collapse button
-* __TreeNodeLinesContainer:__ Displays the lined which are connecting the nodes.
+* __TreeNodeLinesContainer:__ Displays the lines which are connecting the nodes.
+
+>important __TreeNodeContentElement__ and __TreeNodeImageElement__ are inheriting [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}). This means that each of these can display separate image, text, fill and border. This allows you customize the node and for example add two images to a single node.
+
 
 The bellow example shows how you can access and format the main node elements:
 
-
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\NodeFormatting.cs region=nodeFormatting}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}} 
-
-````C#
-Bitmap folderOpen = SamplesCS.Properties.Resources.folder_open;
-Bitmap folderClose = SamplesCS.Properties.Resources.folder_close;
-Bitmap file = SamplesCS.Properties.Resources.file;
-void radTreeView1_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
-{
-    if (e.Node.Nodes.Count > 0)
-    {
-        if (e.Node.Expanded)
-        {
-            e.NodeElement.ImageElement.Image = folderOpen;
-        }
-        else
-        {
-            e.NodeElement.ImageElement.Image = folderClose;
-        }
-    }
-    else
-    {
-        e.NodeElement.ImageElement.Image = file;
-    }
-}
-
-````
-````VB.NET
-Private folderOpen As Bitmap = My.Resources.folder_open
-Private folderClose As Bitmap = My.Resources.folder_close
-Private file As Bitmap = My.Resources.file
-Private Sub radTreeView1_NodeFormatting(ByVal sender As Object, ByVal e As TreeNodeFormattingEventArgs)
-    If e.Node.Nodes.Count > 0 Then
-        If e.Node.Expanded Then
-            e.NodeElement.ImageElement.Image = folderOpen
-        Else
-            e.NodeElement.ImageElement.Image = folderClose
-        End If
-    Else
-        e.NodeElement.ImageElement.Image = file
-    End If
-End Sub
-
-````
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}}
 
 {{endregion}} 
 
