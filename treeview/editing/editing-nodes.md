@@ -43,7 +43,7 @@ RadTreeView1.BeginEdit()
 
 ## The Editing Lifecycle
 
-1. __A node enters edit mode__
+1\. __A node enters edit mode__
 
     - A node that is being displayed by the __RadTreeView__ control is selected and the user presses the F2 key to bring the node into edit mode.
 
@@ -53,7 +53,7 @@ RadTreeView1.BeginEdit()
 
     - A text box based editor appears for input. 
 
-2. __A node is brought out of edit mode__
+2\. __A node is brought out of edit mode__
 
     - The editor determines if it wants to handle the keystroke.
 
