@@ -432,3 +432,7 @@ Now, using these methods the tree states will be restored accordingly.
 |Initial state|After a change in the data source occurs|
 |------|------|
 |![treeview-how-to-keep-radtreeview-states-on-reset 003](images/treeview-how-to-keep-radtreeview-states-on-reset003.png)|![treeview-how-to-keep-radtreeview-states-on-reset 004](images/treeview-how-to-keep-radtreeview-states-on-reset004.png)|
+
+# See Also
+* [Assign RadScreenTip to nodes]({%slug winforms/treeview/how-to/assign-radscreentip-to-nodes%})
+

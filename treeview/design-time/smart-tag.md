@@ -47,3 +47,7 @@ The Smart Tag for RadTreeView lets you quickly access common tasks involved with
 
 
 * __Dock in parent container__: Docks RadTreeView into the parent container.
+
+# See Also
+* [Property Builder]({%slug winforms/treeview/design-time/property-builder%})
+

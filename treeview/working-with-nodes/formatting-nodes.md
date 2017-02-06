@@ -41,3 +41,17 @@ The bellow example shows how you can access and format the main node elements:
 >note It is also important that we are accessing the project resources outside the NodeFormatting event handler. Accessing project resources is a time consuming operation and since NodeFormatting is fired for every visible node, you may experience performance issues if you try to access such resources in the event handler.
 >
 
+
+# See Also
+* [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})
+
+* [Bring a Node into View]({%slug winforms/treeview/working-with-nodes/bring-a-node-into-view%})
+
+* [Custom Filtering]({%slug winforms/treeview/working-with-nodes/custom-filtering%})
+
+* [Custom Nodes]({%slug winforms/treeview/working-with-nodes/custom-nodes%})
+
+* [Custom Sorting]({%slug winforms/treeview/working-with-nodes/custom-sorting%})
+
+* [Events]({%slug winforms/treeview/working-with-nodes/events%})
+

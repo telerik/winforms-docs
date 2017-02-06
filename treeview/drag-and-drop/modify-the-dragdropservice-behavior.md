@@ -289,3 +289,11 @@ Next i
 {{endregion}} 
 
 The result can be observed at the screen shot at the top.
+
+# See Also
+* [Cancel a Drag and Drop Operation]({%slug winforms/treeview/drag-and-drop/cancel-a-drag-and-drop-operation%})
+
+* [Drag and Drop in bound mode]({%slug winforms/treeview/drag-and-drop/drag-and-drop-in-bound-mode%})
+
+* [Enabling Drag and Drop]({%slug winforms/treeview/drag-and-drop/enabling-drag-and-drop%})
+

@@ -45,25 +45,25 @@ RadTreeView1.BeginEdit()
 
 1\. __A node enters edit mode__
 
-    - A node that is being displayed by the __RadTreeView__ control is selected and the user presses the F2 key to bring the node into edit mode.
+* A node that is being displayed by the __RadTreeView__ control is selected and the user presses the F2 key to bring the node into edit mode.
 
-    - The RadTreeView control calls the __BeginEdit()__ method and a new editor instance is initialized. It is available publicly through the __ActiveEditor__ property and is associated with the node that is about to be edited.
+* The RadTreeView control calls the __BeginEdit()__ method and a new editor instance is initialized. It is available publicly through the __ActiveEditor__ property and is associated with the node that is about to be edited.
 
-    - The editor fires its __Editing__ event, which in turn triggers the firing of the RadTreeView __Editing__ event. If either event is canceled, no further action takes place.
+* The editor fires its __Editing__ event, which in turn triggers the firing of the RadTreeView __Editing__ event. If either event is canceled, no further action takes place.
 
-    - A text box based editor appears for input. 
+* A text box based editor appears for input. 
 
 2\. __A node is brought out of edit mode__
 
-    - The editor determines if it wants to handle the keystroke.
+- The editor determines if it wants to handle the keystroke.
 
-    - The editor instance performs the action it has defined for the Enter key. Typically this indicates that edit mode should be exited and any changes made during the edit session should be applied.
+- The editor instance performs the action it has defined for the Enter key. Typically this indicates that edit mode should be exited and any changes made during the edit session should be applied.
 
-    - In response to the action described in the previous step the __EndEdit()__ method is called and the __ValueChanged__ event is fired.
+- In response to the action described in the previous step the __EndEdit()__ method is called and the __ValueChanged__ event is fired.
 
-    - The RadTreeView fires the __ValueValidating__ event which allows the user to hook up custom logic for verification. If the __ValueValidating__ event does not succeed (e.Cancel is true), __ValidationError__ event is fired to notify all listeners that the validation has failed.
+- The RadTreeView fires the __ValueValidating__ event which allows the user to hook up custom logic for verification. If the __ValueValidating__ event does not succeed (e.Cancel is true), __ValidationError__ event is fired to notify all listeners that the validation has failed.
 
-    - The RadTreeView control sets the node __Text__ property to the string representation of the editor __Value__ property.
+- The RadTreeView control sets the node __Text__ property to the string representation of the editor __Value__ property.
 
 ## EditMode
 
@@ -79,4 +79,8 @@ The property has the following values:
 
 >note When __EditMode__ is set to __TextAndValue__ , editing either of the properties programmatically will result in changing both of them.
 >
+
+
+# See Also
+* [Custom Editors]({%slug winforms/treeview/editing/custom-editors%})
 

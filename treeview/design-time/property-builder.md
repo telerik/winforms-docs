@@ -84,3 +84,7 @@ The available items are:
 ![treeview-design-time-property-builder 006](images/treeview-design-time-property-builder006.png)
 
 The *Advanced* tab displays all the properties of the RadTreeView as you would see them in the `Properties` window. The Advanced tab provides the best control over the RadTreeView characteristics but it may take longer to find the relevant properties.
+
+# See Also
+* [Smart Tag]({%slug winforms/treeview/design-time/smart-tag%})
+
