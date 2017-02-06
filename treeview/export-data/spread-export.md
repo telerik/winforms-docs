@@ -1,7 +1,7 @@
 ---
 title: Spread Export
 page_title: Spread Export | RadTreeView
-description: Spread Export
+description: This article shows how you can export the contents of RadTreeView to excel, csv, pdf or txt formats.
 slug: winforms/treeview/export-data/spread-export
 tags: spread,export
 published: True

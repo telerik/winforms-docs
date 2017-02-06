@@ -1,7 +1,7 @@
 ---
 title: Enabling Drag and Drop
 page_title: Enabling Drag and Drop | RadTreeView
-description: Enabling Drag and Drop
+description: This article shows how you can use the built-in drag and drop functionality or the standard OLE drag drop. 
 slug: winforms/treeview/drag-and-drop/enabling-drag-and-drop
 tags: enabling,drag,and,drop
 published: True

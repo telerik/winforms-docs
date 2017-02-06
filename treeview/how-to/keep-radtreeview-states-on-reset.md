@@ -1,7 +1,7 @@
 ---
 title: Keep RadTreeView states on reset
 page_title: Keep RadTreeView states on reset | RadTreeView
-description: Keep RadTreeView states on reset
+description: This article shows how you can preserve the selection and expanded/collapsed states when the data is reset.
 slug: winforms/treeview/how-to/keep-radtreeview-states-on-reset
 tags: keep,radtreeview,states,on,reset
 published: True

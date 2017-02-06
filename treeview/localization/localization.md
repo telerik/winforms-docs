@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization | RadTreeView
-description: Localization
+description: This article shows how you can localize all strings used in RadTreeView.
 slug: winforms/treeview/localization/localization
 tags: localization
 published: True

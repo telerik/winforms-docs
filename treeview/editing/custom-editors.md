@@ -1,7 +1,7 @@
 ---
 title: Custom Editors
 page_title: Custom Editors | RadTreeView
-description: Custom Editors
+description: This article shows how you can replace the default text box editor with a custom one.
 slug: winforms/treeview/editing/custom-editors
 tags: custom,editors
 published: True

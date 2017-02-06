@@ -1,7 +1,7 @@
 ---
 title: Modify the DragDropService behavior
 page_title: Modify the DragDropService behavior | RadTreeView
-description: Modify the DragDropService behavior
+description: This article shows how you can modify the default DragDropService behavior in order to copy the nodes. 
 slug: winforms/treeview/drag-and-drop/modify-the-dragdropservice-behavior
 tags: modify,the,dragdropservice,behavior
 published: True

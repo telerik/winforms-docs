@@ -1,7 +1,7 @@
 ---
 title: Smart Tag
 page_title: Smart Tag | RadTreeView
-description: Smart Tag
+description: The Smart Tag of RadTreeView lets you quickly access common tasks involved with building RadTreeView elements and customizing appearance.
 slug: winforms/treeview/design-time/smart-tag
 tags: smart,tag
 published: True

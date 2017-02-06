@@ -1,7 +1,7 @@
 ---
 title: Tree Lines and Rows
 page_title: Tree Lines and Rows | RadTreeView
-description: Tree Lines and Rows
+description: This article shows how you can style RadTreeView using tree lines and alternating row color. 
 slug: winforms/treeview/styling-and-appearance/tree-lines-and-rows
 tags: tree,lines,and,rows
 published: True
