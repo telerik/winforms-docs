@@ -549,6 +549,9 @@ navigation:
     gridview/cells/formating-examples:
         title: Formatting Examples
         position: 10
+    gridview/drag-and-drop:
+        title: Drag and Drop
+        position: 5
     gridview/editors:
         title: Editors
         position: 6
