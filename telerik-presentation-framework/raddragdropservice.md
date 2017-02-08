@@ -10,7 +10,7 @@ position: 15
 
 # RadDragDropService
 
-**RadDragDropService** represents a service that manages drag and drop actions if the **AllowDragDrop** property for the respective control is set to *true*. It exposes the following properties:
+**RadDragDropService** represents a service that manages drag and drop actions if the **AllowDragDrop** property for the respective control is set to *true*. While the dragged object should implement the **ISupportDrag** interface, the drop object should implement the **ISupportDrop** interface. The service exposes the following properties:
 
 * **ValidCursor**: Gets or sets the cursor to be used when a valid drop target is hit-tested.
 
@@ -52,7 +52,7 @@ You can find in the table below the **RadDragDropService**'s derivatives and the
 |----|----|
 |**RadScheduler**|[AppointmentDraggingBehavior]({%slug winforms/scheduler/drag-and-drop/appointmentdraggingbehavior%})|
 |**RadListView**|[ListViewDragDropService]({%slug winforms/listview/drag-and-drop/listviewdragdropservice%})|
-|**RadListView** in DetailsView|DetailListViewDragDropService|
+|**RadListView** in DetailsView|[DetailListViewDragDropService]({%slug winforms/listview/drag-and-drop/detaillistviewdragdropservice%})|
 |**RadGanttView**|GanttViewDragDropService|
 |**RadLayoutControl**|LayoutControlDragDropService|
 |**RadListControl**|[ListControlDragDropService]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop/listcontroldragdropservice%})|

@@ -5,7 +5,7 @@ description: Telerik RadListView control is created as a result of the concord o
 slug: winforms/listview/drag-and-drop/drag-and-drop-from-another-control
 tags: drag,and,drop,from,another,control
 published: True
-position: 2
+position: 3
 previous_url: listview-drag-and-drop-drag-and-drop-from-another-control
 ---
 
