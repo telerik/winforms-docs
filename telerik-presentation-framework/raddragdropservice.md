@@ -10,7 +10,19 @@ position: 15
 
 # RadDragDropService
 
-**RadDragDropService** represents a service that manages drag and drop actions if the **AllowDragDrop** property for the respective control is set to *true*. There are several events that control the whole drag and drop operation:
+**RadDragDropService** represents a service that manages drag and drop actions if the **AllowDragDrop** property for the respective control is set to *true*. It exposes the following properties:
+
+* **ValidCursor**: Gets or sets the cursor to be used when a valid drop target is hit-tested.
+
+* **InvalidCursor**: Gets or sets the cursor to be used when a valid drop target is hit-tested.
+
+* **UseDefaultPreview**: Determines whether a default preview is generated for a **ISupportDrag** instance if its **GetPreview** method returns null.
+
+* **DropTarget**: Gets current drop target, where the mouse cursor points.
+
+* **DropLocation**: Gets the current drop location in the context of the current target.
+
+There are several events that control the whole drag and drop operation:
 
 * **PreviewDragStart**: Fires when the drag and drop operation is about to be started. In the **PreviewDragStartEventArgs** you have access to the **DragInstance**. You can control whether the service should be started by the **CanStart** argument.
 
@@ -39,7 +51,7 @@ You can find in the table below the **RadDragDropService**'s derivatives and the
 |RadControl|RadDragDropService|
 |----|----|
 |**RadScheduler**|[AppointmentDraggingBehavior]({%slug winforms/scheduler/drag-and-drop/appointmentdraggingbehavior%})|
-|**RadListView**|ListViewDragDropService|
+|**RadListView**|[ListViewDragDropService]({%slug winforms/listview/drag-and-drop/listviewdragdropservice%})|
 |**RadListView** in DetailsView|DetailListViewDragDropService|
 |**RadGanttView**|GanttViewDragDropService|
 |**RadLayoutControl**|LayoutControlDragDropService|
