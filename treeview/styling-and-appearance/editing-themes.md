@@ -24,7 +24,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Modify the applied *fill* repository item. 
 
-    ![treeview-customizing-appearance-themes 002](images/listview-customizing-appearance-themes002.png)
+    ![treeview-customizing-appearance-themes 002](images/treeview-customizing-appearance-themes002.png)
     The result is illustrated below. The new fill color is applied when hovering the item:
 
     ![treeview-customizing-appearance-themes 003](images/treeview-customizing-appearance-themes003.png)
