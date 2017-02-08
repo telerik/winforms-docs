@@ -38,7 +38,7 @@ You can find in the table below the **RadDragDropService**'s derivatives and the
 
 |RadControl|RadDragDropService|
 |----|----|
-|**RadScheduler**|AppointmentDraggingBehavior|
+|**RadScheduler**|[AppointmentDraggingBehavior]({%slug winforms/scheduler/drag-and-drop/appointmentdraggingbehavior%})|
 |**RadListView**|ListViewDragDropService|
 |**RadListView** in DetailsView|DetailListViewDragDropService|
 |**RadGanttView**|GanttViewDragDropService|

@@ -5,7 +5,7 @@ description: This article will guide you through the process of achieving drag a
 slug: winforms/scheduler/drag-and-drop/drag-and-drop-using-raddragdropservice
 tags: drag,and,drop,using,raddragdropservice
 published: True
-position: 1
+position: 2
 previous_url: scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice
 ---
 

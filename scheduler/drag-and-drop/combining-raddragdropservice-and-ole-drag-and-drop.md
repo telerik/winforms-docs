@@ -5,7 +5,7 @@ description: This article demonstrates a sample approach how to achieve drag and
 slug: winforms/scheduler/drag-and-drop/combining-raddragdropservice-and-ole-drag-and-drop
 tags: combining,raddragdropservice,and,ole,drag-and-drop
 published: True
-position: 2
+position: 3
 previous_url: scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop
 ---
 

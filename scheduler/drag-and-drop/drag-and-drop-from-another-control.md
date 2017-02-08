@@ -5,7 +5,7 @@ description: RadScheduler supports drag and drop and it can be implemented so th
 slug: winforms/scheduler/drag-and-drop/drag-and-drop-from-another-control
 tags: drag,and,drop,from,another,control
 published: True
-position: 0
+position: 1
 previous_url: scheduler-drag-and-drop-drag-and-drop-from-another-control
 ---
 
