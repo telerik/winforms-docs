@@ -35,6 +35,5 @@ This article describes the inner structure and organization of the elements whic
 
 # See Also
 
-* [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
-* [Design Time]({%slug winforms/pdfviewer/design-time%})
-* [Getting Started]({%slug winforms/pdfviewer/getting-started%})
+* [Design Time]({%slug winforms/panels-and-labels/collapsiblepanel/design-time%})
+* [Getting Started]({%slug winforms/panels-and-labels/collapsiblepanel/getting-started%})

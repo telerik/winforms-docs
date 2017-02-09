@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: CollapsiblePanel | UI for WinForms Documentation
-description: CollapsiblePanel
+page_title: Overview | RadCollapsiblePanel
+description: RadCollapsiblePanel is an expandable panel which can host controls in its content area.
 slug: winforms/panels-and-labels/collapsiblepanel
 tags: collapsiblepanel
 published: True
@@ -11,6 +11,13 @@ previous_url: panels-and-labels-collapsible-panel-overview
 
 # CollapsiblePanel
 
+**RadCollapsiblePanel** is an expandable panel which can host controls in its content area. The content area can be collapsed, which allows you to save space in your WinForms application. **RadCollapsiblePanel** also gives you control over its **ExpandDirection** for even greater flexibility.
 
+>caption Figure 1: RadCollapsiblePanel
+![panels-and-labels-collapsible-panel 001](images/panels-and-labels-collapsible-panel001.gif)
 
-__RadCollapsiblePanel__ is an expandable panel which can host controls in its content area. The content area can be collapsed, which allows you to save space in your WinForms application. __RadCollapsiblePanel__ also gives you control over its __ExpandDirection__ for even greater flexibility.<br>![panels-and-labels-collapsible-panel 001](images/panels-and-labels-collapsible-panel001.gif)
+# See Also
+
+* [Structure]({%slug winforms/panels-and-labels/collapsiblepanel/structure%})
+* [Design Time]({%slug winforms/panels-and-labels/collapsiblepanel/design-time%})
+* [Getting Started]({%slug winforms/panels-and-labels/collapsiblepanel/getting-started%})

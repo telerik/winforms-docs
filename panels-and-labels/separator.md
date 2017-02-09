@@ -1,6 +1,6 @@
 ---
 title: Separator
-page_title: Separator | UI for WinForms Documentation
+page_title: Separator Overview | RadSeparator
 description: RadSeparator is a control that gives you the ability to divide your forms into logical parts. 
 slug: winforms/panels-and-labels/separator
 tags: separator
@@ -11,13 +11,16 @@ previous_url: panels-and-labels-separator
 
 # Separator
 
-## 
+**RadSeparator** is a control that gives you the ability to divide your forms into logical parts. By default it contains of two lines.
 
-RadSeparator is a control that gives you the ability to divide your forms into logical parts. By default it contains of two lines.<br>![panels-and-labels-separator 001](images/panels-and-labels-separator001.png)
+>caption Figure 1: RadSeparator
+>
+![panels-and-labels-separator 001](images/panels-and-labels-separator001.png)
 
 The control have several properties that you might find interesting:
 
-* __Orientation__ - gets or sets the control orientation to Vertical or Horizontal<br>![panels-and-labels-separator 002](images/panels-and-labels-separator002.png)
+* __Orientation__ - gets or sets the control orientation to Vertical or Horizontal
+    ![panels-and-labels-separator 002](images/panels-and-labels-separator002.png)
 
 * __ShadowOffset__ - gets or sets the offset of the both lines, both horizontal and vertical
 
@@ -75,4 +78,14 @@ RadSeparator1.SeparatorElement.Line2.GradientAngle = 0
 
 {{endregion}} 
 
-Here is the result of the following code:<br>![panels-and-labels-separator 003](images/panels-and-labels-separator003.png)
+Here is the result of the following code:
+
+>caption Figure 2: RadSeparator Customization
+>
+![panels-and-labels-separator 003](images/panels-and-labels-separator003.png)
+
+# See Also
+
+* [Panel]({%slug winforms/panels-and-labels/panel%})
+* [Collapsible Panel]({%slug winforms/panels-and-labels/collapsiblepanel%})
+* [Scrollable Panel]({%slug winforms/panels-and-labels/radscrollablepanel%})
