@@ -747,12 +747,21 @@ navigation:
     panels-and-labels/label:
         title: Label
         position: 1
+    panels-and-labels/label/customizing-appearance:
+        title: Customizing Appearance
+        position: 6
     panels-and-labels/panel:
         title: Panel
         position: 2
+    panels-and-labels/panel/customizing-appearance:
+        title: Customizing Appearance
+        position: 5
     panels-and-labels/collapsiblepanel:
         title: Collapsible Panel
         position: 3
+    panels-and-labels/collapsiblepanel/customizing-appearance:
+        title: Customizing Appearance
+        position: 6
     panels-and-labels/groupbox/advanced:
         title: Advanced
         position: 4		
