@@ -5,7 +5,7 @@ description: Drag and Drop in bound mode
 slug: winforms/treeview/drag-and-drop/drag-and-drop-in-bound-mode
 tags: drag,and,drop,in,bound,mode
 published: True
-position: 3
+position: 4
 previous_url: treeview-drag-and-drop-drag-and-drop-in-bound-mode
 ---
 

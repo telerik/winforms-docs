@@ -61,4 +61,4 @@ You can find in the table below the **RadDragDropService**'s derivatives and the
 |**RadGridView**|[RadGridViewDragDropService]({%slug winforms/gridview/radgridviewdragdropservice%})|
 |**RadPageView**|RadPageViewDragDropService|
 |**RadPanorama**|TileDragDropService|
-|**RadTreeView**|TreeViewDragDropService|
+|**RadTreeView**|[TreeViewDragDropService]({%slug winforms/treeview/drag-and-drop/treeviewdragdropservice%})|
