@@ -38,6 +38,69 @@ The document elements that encapsulate the bookmarks functionality are __Bookmar
 * Document.__EnumerateChildrenOfType&lt;BookmarkRangeStart&gt;()__ – returns all bookmarks in the document. This method can be used on document elements other than **RadDocument**, in case you want to detect all bookmarks in a limited part of the document, e.g. a **Paragraph** or a **Table**.
             
 You can also add bookmarks in a document you are creating manually. As both __BookmarkRangeStart__ and __BookMarkRangeEnd__ inherit from __Inline__, they can be added to the **Inlines** property of a **Paragraph**, just like any other **Inline**. You can also have document positions go to the start or end of the bookmark and perform non-standard operations.
+
+{{source=..\SamplesCS\RichTextEditor\Features\Bookmarks.cs region=BookmarkRunTime}} 
+{{source=..\SamplesVB\RichTextEditor\Features\Bookmarks.vb region=BookmarkRunTime}}
+````C#
+private void GenerateBookmarksDocument()
+{
+    RadDocument document = new RadDocument();
+    
+    Section bmSection = new Section();
+    Paragraph bmParagraph = new Paragraph();
+    Span bmSpan = new Span("Content prior bookmark[");
+    Span bmSpan2 = new Span("]Content after bookmark");
+    Span bmContent = new Span("Content in Bookmark");
+    
+    BookmarkRangeEnd bmRangeEnd = new BookmarkRangeEnd();
+    BookmarkRangeStart bmRangeStart = (BookmarkRangeStart)bmRangeEnd.CreatePairedStart();
+    bmRangeStart.Name = System.Guid.NewGuid().ToString();
+    
+    bmParagraph.Inlines.Add(bmSpan);
+    bmParagraph.Inlines.Add(bmRangeStart);
+    bmParagraph.Inlines.Add(bmContent);
+    bmParagraph.Inlines.Add(bmRangeEnd);
+    bmParagraph.Inlines.Add(bmSpan2);
+    
+    bmSection.Blocks.Add(bmParagraph);
+    document.Sections.Add(bmSection);
+    
+    this.radRichTextEditor1.Document = document;
+}
+
+````
+````VB.NET
+Private Sub GenerateBookmarksDocument()
+    Dim document As New RadDocument()
+
+    Dim bmSection As New Section()
+    Dim bmParagraph As New Paragraph()
+    Dim bmSpan As New Span("Content prior bookmark[")
+    Dim bmSpan2 As New Span("]Content after bookmark")
+    Dim bmContent As New Span("Content in Bookmark")
+
+    Dim bmRangeEnd As New BookmarkRangeEnd()
+    Dim bmRangeStart = DirectCast(bmRangeEnd.CreatePairedStart(), BookmarkRangeStart)
+    bmRangeStart.Name = System.Guid.NewGuid().ToString()
+
+    bmParagraph.Inlines.Add(bmSpan)
+    bmParagraph.Inlines.Add(bmRangeStart)
+    bmParagraph.Inlines.Add(bmContent)
+    bmParagraph.Inlines.Add(bmRangeEnd)
+    bmParagraph.Inlines.Add(bmSpan2)
+
+    bmSection.Blocks.Add(bmParagraph)
+    document.Sections.Add(bmSection)
+
+    Me.radRichTextEditor1.Document = document
+End Sub
+
+```` 
+
+
+
+{{endregion}} 
+
   
 For example, you can keep a **Dictionary<string, string>** mapping each bookmark name to another string and substitute a bookmark with the corresponding text using the following method:
 
@@ -45,7 +108,6 @@ For example, you can keep a **Dictionary<string, string>** mapping each bookmark
 {{source=..\SamplesVB\RichTextEditor\Features\Bookmarks.vb region=replace}} 
 
 ````C#
-        
 private void ReplaceContentOfBookmark(string bookmarkName)
 {
     BookmarkRangeStart bookmark = this.radRichTextEditor1.Document.GetBookmarkByName(bookmarkName);
