@@ -717,6 +717,9 @@ navigation:
     pageview:
         title: PageView
         position: 310
+    pageview/drad-and-drop:
+        title: Drag and Drop
+        position: 4
     pageview/stripview:
         title: StripView
         position: 5
@@ -762,6 +765,9 @@ navigation:
     panorama:
         title: Panorama
         position: 330
+    panorama/drad-and-drop:
+        title: Drag and Drop
+        position: 10
     panorama/customizing-appearance:
         title: Customizing Appearance
         position: 7
