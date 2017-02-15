@@ -10,8 +10,7 @@ previous_url: installation-deployment-and-distribution-vsx-upgrade-wizard,/devto
 ---
 
 # Upgrade project
-
-## 
+ 
 
 An important feature in the Visual Studio Extensions is the __Project Upgrade Wizard__.
 
