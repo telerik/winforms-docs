@@ -72,26 +72,21 @@ private void GenerateBookmarksDocument()
 ````VB.NET
 Private Sub GenerateBookmarksDocument()
     Dim document As New RadDocument()
-
     Dim bmSection As New Section()
     Dim bmParagraph As New Paragraph()
     Dim bmSpan As New Span("Content prior bookmark[")
     Dim bmSpan2 As New Span("]Content after bookmark")
     Dim bmContent As New Span("Content in Bookmark")
-
     Dim bmRangeEnd As New BookmarkRangeEnd()
     Dim bmRangeStart = DirectCast(bmRangeEnd.CreatePairedStart(), BookmarkRangeStart)
     bmRangeStart.Name = System.Guid.NewGuid().ToString()
-
     bmParagraph.Inlines.Add(bmSpan)
     bmParagraph.Inlines.Add(bmRangeStart)
     bmParagraph.Inlines.Add(bmContent)
     bmParagraph.Inlines.Add(bmRangeEnd)
     bmParagraph.Inlines.Add(bmSpan2)
-
     bmSection.Blocks.Add(bmParagraph)
     document.Sections.Add(bmSection)
-
     Me.radRichTextEditor1.Document = document
 End Sub
 
