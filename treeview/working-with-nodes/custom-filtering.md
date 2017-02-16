@@ -5,7 +5,7 @@ description: Custom filtering is a flexible mechanism for filtering RadTreeView 
 slug: winforms/treeview/working-with-nodes/custom-filtering
 tags: custom,filtering
 published: True
-position: 11
+position: 9
 previous_url: treeview-working-with-nodes-custom-filtering
 ---
 

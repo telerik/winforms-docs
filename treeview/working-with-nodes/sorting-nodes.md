@@ -5,7 +5,7 @@ description: RadTreeView support nodes sorting. The sorting operation is applied
 slug: winforms/treeview/working-with-nodes/sorting-nodes
 tags: sorting,nodes
 published: True
-position: 8
+position: 10
 previous_url: treeview-working-with-nodes-sorting
 ---
 

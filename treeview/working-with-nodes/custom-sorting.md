@@ -5,7 +5,7 @@ description: Custom sorting is a flexible mechanism which allows you to replace 
 slug: winforms/treeview/working-with-nodes/custom-sorting
 tags: custom,sorting
 published: True
-position: 9
+position: 11
 previous_url: treeview-working-with-nodes-custom-sorting
 ---
 

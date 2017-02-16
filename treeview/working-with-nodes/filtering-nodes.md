@@ -5,7 +5,7 @@ description: RadTreeView supports filtering of its nodes according to their Text
 slug: winforms/treeview/working-with-nodes/filtering-nodes
 tags: filtering,nodes
 published: True
-position: 7
+position: 8
 previous_url: treeview-working-with-nodes-filtering
 ---
 

@@ -5,7 +5,7 @@ description: RadTreeView can display CheckBox in each node. This article shows h
 slug: winforms/treeview/working-with-nodes/using-checkboxes
 tags: using,checkboxes
 published: True
-position: 5
+position: 6
 previous_url: treeview-working-with-nodes-using-checkboxes
 ---
 

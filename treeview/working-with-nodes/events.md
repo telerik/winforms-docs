@@ -5,7 +5,7 @@ description: RadTreeView provides a large set of events which allows you to resp
 slug: winforms/treeview/working-with-nodes/events
 tags: events
 published: True
-position: 6
+position: 7
 previous_url: treeview-working-with-nodes-events
 ---
 

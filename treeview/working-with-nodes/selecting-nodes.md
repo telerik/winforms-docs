@@ -5,7 +5,7 @@ description: RadTreeView supports both selecting single or multiple nodes. This 
 slug: winforms/treeview/working-with-nodes/selecting-nodes
 tags: selecting,nodes
 published: True
-position: 4
+position: 5
 previous_url: treeview-working-with-nodes-selecting-nodes
 ---
 

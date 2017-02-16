@@ -5,7 +5,7 @@ description: This article shows how you can use the Find method to search for a 
 slug: winforms/treeview/working-with-nodes/finding-nodes
 tags: finding,nodes
 published: True
-position: 10
+position: 4
 previous_url: treeview-working-with-nodes-finding-nodes
 ---
 
