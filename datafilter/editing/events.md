@@ -105,7 +105,7 @@ Private Sub radDataFilter1_EditorRequired(sender As Object, e As TreeNodeEditorR
     If filterNode IsNot Nothing AndAlso filterNode.PropertyName = "CategoryID" AndAlso TypeOf sender Is DataFilterValueEditorElement Then
         Dim editor As New TreeViewDropDownListEditor()
         Dim el As BaseDropDownListEditorElement = TryCast(editor.EditorElement, BaseDropDownListEditorElement)
-        el.DataSource = Me.categoriesBindingSource
+        el.DataSource = Me.CategoriesBindingSource
         el.ValueMember = "CategoryID"
         el.DisplayMember = "CategoryName"
         e.Editor = editor
