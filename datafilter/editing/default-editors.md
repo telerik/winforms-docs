@@ -23,8 +23,10 @@ The default editor for the field name element and for the operator element is **
 |**TreeViewDateTimeEditor**|Relevant for *DateTime* values.|
 |**TreeViewSpinEditor**|Relevant for numeric values.|
 |**TreeViewTextBoxEditor**|Default editor for the rest of the value types.|
+ 
 
 # See Also
 
 * [Events]({%slug winforms/datafilter/editing/events%})	
-* [Custom Editors]({%slug winforms/datafilter/editing/custom-editors%})			
+* [Custom Editors]({%slug winforms/datafilter/editing/custom-editors%})	
+		
