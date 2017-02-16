@@ -2,7 +2,7 @@
 title: DataFilter Dialog
 page_title: DataFilter Dialog | RadDataFilter
 description: This article show what RadDataFilter represents and its key features. 
-slug: winforms/datafilter/overview
+slug: winforms/datafilter/datafilter-dialog
 tags: data, filter
 published: True
 position: 5
