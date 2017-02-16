@@ -27,6 +27,17 @@ This section shows the common descriptor items properties.
 |__DescriptorName__|Gets or sets the name of the descriptor|
 |__DescriptorType__|Indicates the data type used for this descriptor.|
 
+>caution The **DefaultFilterOperator** property accepts only valid operators for the specified type of the descriptor item. If an invalid operator is set, an exception will be thrown.
+
+You can find in the table below all available filter operators for the common types:
+
+|Type|Valid Operators|
+|----|----|
+|Numeric Types|Equals, Not equal to, Greater than, Less than, Greater than or equal to, Less than or equal to, Is null, Is not null|
+|String|Contains, Does not contain, Starts with, Ends with, Equals, Not equal to, Is null, Is not null|
+|DateTime|Equals, Not equal to, Greater than, Less than, Greater than or equal to, Less than or equal to, Is null, Is not null|
+|Bool|Equals, Not equal to, Is null, Is not null|
+
 The following article shows how you can manually add __DataFilterDescriptorItem__: [Unbound Mode]({%slug winforms/datafilter/populating-with-data/unbound-mode%})
 
 
