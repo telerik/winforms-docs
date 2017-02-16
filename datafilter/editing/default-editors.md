@@ -19,11 +19,12 @@ The default editor for the field name element and for the operator element is **
 |Editor|Description|
 |----|----|
 |**TreeViewDropDownListEditor**|Relevant for the field name element and for the operator element.|
-|**DataFilterCheckboxEditor**|Relevant for *Boolean* values.|
 |**TreeViewDateTimeEditor**|Relevant for *DateTime* values.|
 |**TreeViewSpinEditor**|Relevant for numeric values.|
+|**DataFilterColorPickerEditor**|Relevant for Color values.|
 |**TreeViewTextBoxEditor**|Default editor for the rest of the value types.|
- 
+
+>note In *R1 2017* **DataFilterCheckboxEditor** was used for Boolean properties. Now, a permanent check box is displayed and the value filter node element doesn't enter in edit mode. 
 
 # See Also
 
