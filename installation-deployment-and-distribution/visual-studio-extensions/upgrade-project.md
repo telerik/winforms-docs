@@ -11,7 +11,7 @@ previous_url: installation-deployment-and-distribution-vsx-upgrade-wizard,/devto
 
 # Upgrade project
 
-## 
+##
 
 An important feature in the Visual Studio Extensions is the __Project Upgrade Wizard__.
 
@@ -30,19 +30,19 @@ In addition to the pure assembly reference change, the upgrade wizard provides s
 * Current project backup.
 
 On the first step the wizard provides basic update process information:
- 
+
 ![installation-deployment-and-distribution-vsx-upgrade-project 001](images/installation-deployment-and-distribution-vsx-upgrade-project001.png)
 
-On the next step the wizard lists all projects from the solution, which use Telerik UI for WinForms. You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to:
+On the next step the wizard lists all projects from the solution, which use Telerik UI for WinForms. You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to. The Compatibility button will invoke the [Upgrade API Analyzer tool](http://docs.telerik.com/devtools/winforms/api-analyzer):
 
 ![installation-deployment-and-distribution-vsx-upgrade-project 002](images/installation-deployment-and-distribution-vsx-upgrade-project002.png)
 
 The next screen allows you to update the Visual Studio Toolbox with the newly selected controls, so that you avoid accidental reference change during a control drag and drop, as well as creating a backup of your project:
- 
+
 ![installation-deployment-and-distribution-vsx-upgrade-project 003](images/installation-deployment-and-distribution-vsx-upgrade-project003.png)
 
 Notes:
- 
+
 * The Telerik UI for WinForms distribution selection screen lists all the versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions, available in the GAC. Hotfixes, downloaded manually cannot be detected.
 
 * You can use the __GET LATEST__ button to access the Latest Version Acquirer and download the latest available version on our website.
