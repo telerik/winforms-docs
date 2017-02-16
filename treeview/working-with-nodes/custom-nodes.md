@@ -1,7 +1,7 @@
 ---
 title: Custom Nodes
-page_title: Custom Nodes | UI for WinForms Documentation
-description: Custom Nodes
+page_title: Custom Nodes | RadTreeView
+description: With RadTreeView you can create custom nodes and display them instead of the default ones.
 slug: winforms/treeview/working-with-nodes/custom-nodes
 tags: custom,nodes
 published: True
@@ -11,9 +11,6 @@ previous_url: treeview-working-with-nodes-custom-nodes
 
 # Custom Nodes
 
-
-
-## 
 
 With __RadTreeView__ you can create custom nodes and display them instead of the default ones. This can be done by creating a custom __TreeNodeElement__, which will replace the default one in the __CreateNodeElement__ event handler. This article demonstrates how this approach can be implemented.
 
@@ -379,3 +376,17 @@ End Sub
 ````
 
 {{endregion}}
+
+# See Also
+* [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})
+
+* [Bring a Node into View]({%slug winforms/treeview/working-with-nodes/bring-a-node-into-view%})
+
+* [Custom Filtering]({%slug winforms/treeview/working-with-nodes/custom-filtering%})
+
+* [Custom Sorting]({%slug winforms/treeview/working-with-nodes/custom-sorting%})
+
+* [Events]({%slug winforms/treeview/working-with-nodes/events%})
+
+* [Filtering Nodes]({%slug winforms/treeview/working-with-nodes/filtering-nodes%})
+

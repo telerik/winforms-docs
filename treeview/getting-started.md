@@ -1,11 +1,11 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadTreeView
+description: Start using RadTreeView by either adding nodes with the Property Builder or in the code behind. 
 slug: winforms/treeview/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 2
 previous_url: treeview-getting-started
 ---
 
@@ -26,14 +26,14 @@ The following tutorial will help you get started working with the __RadTreeView_
 1. Create a new Windows Forms Application.
 
 1. On the form add a __RadBreadCrumb__ and __RadTreeView__.
-            
 
-1. In the Properties Window  for the __RadBreadCrumb__. Set the __DefaultTreeView__ property to point to the __RadTreeView__. The design should now look something like this.
+1. In the `Properties` window  for the __RadBreadCrumb__ set the __DefaultTreeView__ property to point to the __RadTreeView__. The design should now look like this.
     
     ![treeview-getting-started 001](images/treeview-getting-started001.png)
 
-1. Right click the __RadTreeView__ and select __Open Property Builder__ from the context menu. You will see a set of buttons on the left side of the __RadTreeView__ Property Builder and a preview of the tree view below the buttons. See [Property Builder]({%slug winforms/treeview/design-time/property-builder%}) topic for a complete  tour of functionality.
-            
+1. Drop the __TelerikMetro__ theme form the tool box and set all controls __ThemeName__ property to __TelerikMetro__.
+
+1. Right click the __RadTreeView__ and select __Open Property Builder__ from the context menu. You will see a set of buttons on the left side of the __RadTreeView__ Property Builder and a preview of the tree view below the buttons. See [Property Builder]({%slug winforms/treeview/design-time/property-builder%}) topic for a complete tour of functionality.
 
 1. Click the far left button (a green "Plus" button that adds nodes) three times to add three nodes.
 
@@ -47,10 +47,10 @@ The following tutorial will help you get started working with the __RadTreeView_
 
 1. Click the RadTreeView Properties tab located in the left part of the Window.
 
-1. Check the __Show Lines__.
+1. Check __Show Lines__.
             
 
-1. Click OK to close the Property Builder.The design should now look something like the screenshot below.
+1. Click OK to close the Property Builder.The design should now look like the screenshot below.
 
     ![treeview-getting-started 002](images/treeview-getting-started002.png)
 
@@ -99,3 +99,12 @@ node = RadTreeView1.Nodes("Reports").Nodes.Add("Second Quarter Summary")
 14\. Run the application.
 
 ![treeview-getting-started 003](images/treeview-getting-started003.png)
+
+# See Also
+* [Breadcrumb]({%slug winforms/treeview/breadcrumb%})
+
+* [Properties, Methods and Events]({%slug winforms/treeview/properties-methods-events%})
+
+* [Structure]({%slug winforms/treeview/structure%})
+
+

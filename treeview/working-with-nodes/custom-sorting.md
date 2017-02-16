@@ -1,7 +1,7 @@
 ---
 title: Custom Sorting
-page_title: Custom Sorting | UI for WinForms Documentation
-description: Custom Sorting
+page_title: Custom Sorting | RadTreeView
+description: Custom sorting is a flexible mechanism which allows you to replace the default sorting logic with your own logic.
 slug: winforms/treeview/working-with-nodes/custom-sorting
 tags: custom,sorting
 published: True
@@ -74,7 +74,7 @@ RadTreeView1.TreeViewElement.Comparer = New MyComparer(Me.RadTreeView1.TreeViewE
 
 {{endregion}} 
 
-That is all that you have to do. To test this scenario, you can add a button and a label to the form, where you will change and print the sort order. This will allow you to check whether the sorting is reversed:
+To test this scenario, you can add a button and a label to the form, where you will change and print the sort order. This will allow you to check whether the sorting is reversed:
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\TreeCustomSorting.cs region=CustomSorting2}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\TreeCustomSorting.vb region=CustomSorting2}} 
@@ -118,4 +118,18 @@ End Sub
 
 {{endregion}} 
 
-![treeview-working-with-nodes-custom-sorting 001](images/treeview-working-with-nodes-custom-sorting001.png)![treeview-working-with-nodes-custom-sorting 002](images/treeview-working-with-nodes-custom-sorting002.png)
+![treeview-working-with-nodes-custom-sorting 001](images/treeview-working-with-nodes-custom-sorting001.png)
+
+# See Also
+* [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})
+
+* [Bring a Node into View]({%slug winforms/treeview/working-with-nodes/bring-a-node-into-view%})
+
+* [Custom Filtering]({%slug winforms/treeview/working-with-nodes/custom-filtering%})
+
+* [Custom Nodes]({%slug winforms/treeview/working-with-nodes/custom-nodes%})
+
+* [Events]({%slug winforms/treeview/working-with-nodes/events%})
+
+* [Filtering Nodes]({%slug winforms/treeview/working-with-nodes/filtering-nodes%})
+

@@ -1,7 +1,7 @@
 ---
 title: Load On Demand with CRUD operations
-page_title: Load On Demand with CRUD operations | UI for WinForms Documentation
-description: Load On Demand with CRUD operations
+page_title: Load On Demand with CRUD operations | RadTreeView
+description: This article shows how you can keep the CRUD operations working while loading the data on demand. 
 slug: winforms/treeview/data-binding/load-on-demand-with-crud-operations
 tags: load,on,demand,with,crud,operations
 published: True
@@ -11,13 +11,11 @@ previous_url: treeview-data-binding-load-on-demand-with-crud-operations
 
 # Load On Demand with CRUD operations
 
-
-
-If you have a complex hierarchy, which includes business objects of different types, some of them have children and some - do not and you need to visualize it using RadTreeView while keeping the __CRUD__ operations, then this article is for you.
+If you have a complex hierarchy, which includes business objects of different types, some of them have children and some do not, and you need to visualize it using RadTreeView while keeping the __CRUD__ operations, then this article is for you.
 
 ![treeview-data-binding-load-on-demand-with-crud-operations 001](images/treeview-data-binding-load-on-demand-with-crud-operations001.png)
 
-In this example, we will use the following scenario: A hierarchy, which has __Teams__, each __Team__ has __TeamMembers__ and __Tasks__, and each __TeamMember__ has his own __Tasks__ Every __Team__, __TeamMember__ and __Task__ have names which will be displayed in the __RadTreeView__.
+In this example, we will use the following scenario: A hierarchy, which has __Teams__, each __Team__ has __TeamMembers__ and __Tasks__, and each __TeamMember__ has his own __Tasks__. Every __Team__, __TeamMember__ and __Task__ have names which will be displayed in the __RadTreeView__.
 
 Below you can see the implementation of these types. Note that their child collections are __BindingLists__ and that every type implements __INotifyPropertyChanged__. We will use this approach so that every property change will bubble up to the top-most collection which we will monitor:
 
@@ -586,3 +584,17 @@ End Sub
 
  And to handle the case where something is modified in the data source, we will need to subscribe to the __ListChanged__ event of the __BindingList__ and rebuild the __RadTreeView__ by clearing the nodes and re-adding the first level nodes.  You can optionally save the expanded node’s state as per [this article](http://www.telerik.com/help/winforms/treeview-how-to-keep-radtreeview-states-on-reset.html). 
         
+
+# See Also
+* [Binding to Database Data]({%slug winforms/treeview/data-binding/binding-to-database-data%})
+
+* [Binding to Object-relational Data]({%slug winforms/treeview/data-binding/binding-to-object-relational-data%})
+
+* [Binding to Self Referencing Data]({%slug winforms/treeview/data-binding/binding-to-self-referencing-data%})
+
+* [Binding to XML Data]({%slug winforms/treeview/data-binding/binding-to-xml-data%})
+
+* [Data Binding]({%slug winforms/treeview/data-binding/data-binding-basics%})
+
+* [Binding CheckBoxes]({%slug winforms/treeview/data-binding/binding-checkboxes%})
+

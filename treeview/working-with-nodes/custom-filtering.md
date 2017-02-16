@@ -1,7 +1,7 @@
 ---
 title: Custom Filtering
-page_title: Custom Filtering | UI for WinForms Documentation
-description: Custom Filtering
+page_title: Custom Filtering | RadTreeView
+description: Custom filtering is a flexible mechanism for filtering RadTreeView nodes by using custom logic.
 slug: winforms/treeview/working-with-nodes/custom-filtering
 tags: custom,filtering
 published: True
@@ -11,8 +11,7 @@ previous_url: treeview-working-with-nodes-custom-filtering
 
 # Custom Filtering
 
-Custom filtering is a flexible mechanism for filtering RadTreeView nodes by using custom logic.It has a higher priority than the applied FilterDescriptors.
-        
+Custom filtering is a flexible mechanism for filtering RadTreeView nodes by using custom logic. It has a higher priority than the applied FilterDescriptors.
 
 In order to apply custom logic for filtering, you have to create a [Predicate](http://msdn.microsoft.com/en-us/library/bfcke1bz.aspx). Here is an example of a __Predicate__ which will return just the nodes which text is longer than one char:
         
@@ -89,3 +88,17 @@ End Sub
 | Here you have nodes from 1-100 | After the filtering the nodes are only from 10-100, since nodes 1-9 contain just one char as text |
 | ------ | ------ |
 |![treeview-working-with-nodes-custom-filtering 001](images/treeview-working-with-nodes-custom-filtering001.png)|![treeview-working-with-nodes-custom-filtering 002](images/treeview-working-with-nodes-custom-filtering002.png)|
+
+# See Also
+* [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})
+
+* [Bring a Node into View]({%slug winforms/treeview/working-with-nodes/bring-a-node-into-view%})
+
+* [Custom Nodes]({%slug winforms/treeview/working-with-nodes/custom-nodes%})
+
+* [Custom Sorting]({%slug winforms/treeview/working-with-nodes/custom-sorting%})
+
+* [Events]({%slug winforms/treeview/working-with-nodes/events%})
+
+* [Filtering Nodes]({%slug winforms/treeview/working-with-nodes/filtering-nodes%})
+

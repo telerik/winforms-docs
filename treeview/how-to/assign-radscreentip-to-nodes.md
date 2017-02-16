@@ -1,7 +1,7 @@
 ---
 title: Assign RadScreenTip to nodes
-page_title: Assign RadScreenTip to nodes | UI for WinForms Documentation
-description: Assign RadScreenTip to nodes
+page_title: Assign RadScreenTip to nodes | RadTreeView
+description: This article shows how you can show RadScreenTip when each node in RadTreeView is hovered. 
 slug: winforms/treeview/how-to/assign-radscreentip-to-nodes
 tags: assign,radscreentip,to,nodes
 published: True
@@ -11,10 +11,9 @@ previous_url: treeview-how-to-assign-radscreentip-to-nodes
 
 # Assign RadScreenTip to nodes
 
+In order to assign __RadScreenTip__ to the nodes of RadTreeView you should use the __ScreenTipNeeded__ event.
 
-In order to assign RadScreenTip to the nodes of RadTreeView you should use the ScreenTipNeeded event of RadTreeView.
-
-If the Item which needs a ScreenTip is a TreeNodeElement, you set the necessary properties of the globally instanciated RadOffice2007ScreenTip:
+If the item which needs a ScreenTip is a TreeNodeElement, you set the necessary properties of the globally instantiated __RadOffice2007ScreenTip__:
 
 ![treeview-how-to-assign-radscreentip-to-nodes 001](images/treeview-how-to-assign-radscreentip-to-nodes001.png)
 
@@ -69,4 +68,8 @@ End Sub
 ````
 
 {{endregion}} 
+
+
+# See Also
+* [Keep RadTreeView states on reset]({%slug winforms/treeview/how-to/keep-radtreeview-states-on-reset%})
 

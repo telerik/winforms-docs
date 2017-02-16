@@ -1,25 +1,36 @@
 ---
 title: Themes
-page_title: Themes | UI for WinForms Documentation
-description: Themes
+page_title: Themes | RadTreeView
+description: This article shows how RadTreeView looks like with each theme available in the WinForms suite. 
 slug: winforms/treeview/styling-and-appearance/themes
 tags: themes
 published: True
 position: 0
-previous_url: treeview-styling-and-appearance-themes
+previous_url: treeview-themes
 ---
 
 # Themes
 
+The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc. The themes can be easily switched using a single property.
 
-The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc. The themes can be easily switched using a single property:
+|   |   |
+|---|---|
+|TelerikMetro<br/>![treeview-themes 001](images/treeview-themes001.png)|Office2013Dark<br/>![treeview-themes 002](images/treeview-themes002.png)|
+|Office2013Light<br/>![treeview-themes 003](images/treeview-themes003.png)|Windows 8<br/>![treeview-themes 004](images/treeview-themes004.png)|
+|VisualStudio2012Dark<br/>![treeview-themes 005](images/treeview-themes005.png)|VisualStudio2012Light<br/>![treeview-themes 006](images/treeview-themes006.png)|
+|TelerikMetroBlue<br/>![treeview-themes 007](images/treeview-themes007.png)|Office2010Black<br/>![treeview-themes 008](images/treeview-themes008.png)|
+|Office2010Silver<br/>![treeview-themes 009](images/treeview-themes009.png)|ControlDefault<br/>![treeview-themes 010](images/treeview-themes010.png)|
+|Aqua<br/>![treeview-themes 011](images/treeview-themes011.png)|Breeze<br/>![treeview-themes 012](images/treeview-themes012.png)|
+|Desert<br/>![treeview-themes 013](images/treeview-themes013.png)|HighContrastBlack<br/>![treeview-themes 014](images/treeview-themes014.png)|
+|Office2007Black<br/>![treeview-themes 015](images/treeview-themes015.png)|Office2007Silver<br/>![treeview-themes 016](images/treeview-themes016.png)|
+|Windows7<br/>![treeview-themes 017](images/treeview-themes017.png)|Office2010Blue<br/>![treeview-themes 019](images/treeview-themes019.png)|
 
-|    |    |
-|----|----|
-|TelerikMetro<br/>![treeview-styling-and-appearance-themes 001](images/treeview-styling-and-appearance-themes001.png)|Office2013Dark<br/>![treeview-styling-and-appearance-themes 002](images/treeview-styling-and-appearance-themes002.png)|Office2013Light![treeview-styling-and-appearance-themes 003](images/treeview-styling-and-appearance-themes003.png)|
-|Windows 8<br/>![treeview-styling-and-appearance-themes 004](images/treeview-styling-and-appearance-themes004.png)|VisualStudio2012Dark<br/>![treeview-styling-and-appearance-themes 005](images/treeview-styling-and-appearance-themes005.png)|VisualStudio2012Light<br/>![treeview-styling-and-appearance-themes 006](images/treeview-styling-and-appearance-themes006.png)|
-|TelerikMetroBlue<br/>![treeview-styling-and-appearance-themes 007](images/treeview-styling-and-appearance-themes007.png)|Office2010Black<br/>![treeview-styling-and-appearance-themes 008](images/treeview-styling-and-appearance-themes008.png)|Office2010Silver<br/>![treeview-styling-and-appearance-themes 009](images/treeview-styling-and-appearance-themes009.png)|
-|ControlDefault<br/>![treeview-styling-and-appearance-themes 010](images/treeview-styling-and-appearance-themes010.png)|Aqua<br/>![treeview-styling-and-appearance-themes 011](images/treeview-styling-and-appearance-themes011.png)|Breeze<br/>![treeview-styling-and-appearance-themes 012](images/treeview-styling-and-appearance-themes012.png)|
-|Desert<br/>![treeview-styling-and-appearance-themes 013](images/treeview-styling-and-appearance-themes013.png)|HighContrastBlack<br/>![treeview-styling-and-appearance-themes 014](images/treeview-styling-and-appearance-themes014.png)|Office2007Black![treeview-styling-and-appearance-themes 015](images/treeview-styling-and-appearance-themes015.png)|
-|Office2007Silver<br/>![treeview-styling-and-appearance-themes 016](images/treeview-styling-and-appearance-themes016.png)|Windows7<br/>![treeview-styling-and-appearance-themes 017](images/treeview-styling-and-appearance-themes017.png)|Office2010Blue<br/>![treeview-styling-and-appearance-themes 019](images/treeview-styling-and-appearance-themes019.png)|
-|TelerikMetroTouch<br/>![treeview-styling-and-appearance-themes 018](images/treeview-styling-and-appearance-themes018.png)|||
+
+
+
+
+
+
+# See Also
+* [Tree Lines and Rows]({%slug winforms/treeview/styling-and-appearance/tree-lines-and-rows%})
+

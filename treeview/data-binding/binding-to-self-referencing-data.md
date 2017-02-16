@@ -1,7 +1,7 @@
 ---
 title: Binding to Self Referencing Data
-page_title: Binding to Self Referencing Data | UI for WinForms Documentation
-description: Binding to Self Referencing Data
+page_title: Binding to Self Referencing Data | RadTreeView
+description: This article shows how you can bind RadTreeView to self referencing data.
 slug: winforms/treeview/data-binding/binding-to-self-referencing-data
 tags: binding,to,self,referencing,data
 published: True
@@ -11,12 +11,9 @@ previous_url: treeview-data-binding-binding-to-self-referencing-data
 
 # Binding to Self Referencing Data
 
-
-
-Binding RadTreeView to self referencing data differs form [binding to related data]({%slug winforms/treeview/data-binding/binding-to-object-relational-data%}) in that RadTreeView is bound to a single list instead of multiple related lists.
-      
-
-In order to set the parent-child relation between the records of the data source,we should set the ParentMember and ChildMember properties to the respective fields this data source.If the parent ID for a record does not have a respective value in the child ID field of the records, then that record is considered to have no parents.
+Binding RadTreeView to self referencing data differs from [binding to related data]({%slug winforms/treeview/data-binding/binding-to-object-relational-data%}) in that RadTreeView is bound to a single list instead of multiple related lists.
+ 
+In order to set the parent-child relation between the records of the data source, we should set the __ParentMember__ and __ChildMember__ properties to the respective fields in the data source. If the parent `ID` for a record does not have a respective value in the child `ID` field of the records, then that record is considered to have no parents.
 		
 
 ## Minimal example
@@ -171,68 +168,16 @@ As a result we get the hierarchy of nodes shown below:
 
 ![treeview-data-binding-binding-to-self-referencing-data 001](images/treeview-data-binding-binding-to-self-referencing-data001.png)
 
-## Binding check boxes
+# See Also
+* [Binding to Database Data]({%slug winforms/treeview/data-binding/binding-to-database-data%})
 
-Since R3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify the RadTreeView.__CheckedMember__ property. The following code snippet demonstrates how to setup a self referencing hierarchy in the tree and bind the check boxes:
+* [Binding to Object-relational Data]({%slug winforms/treeview/data-binding/binding-to-object-relational-data%})
 
-![treeview-data-binding-binding-to-self-referencing-data 002](images/treeview-data-binding-binding-to-self-referencing-data002.png)
+* [Binding to XML Data]({%slug winforms/treeview/data-binding/binding-to-xml-data%})
 
-{{source=..\SamplesCS\TreeView\DataBinding\BindingToSelfRefData.cs region=CheckedMember}} 
-{{source=..\SamplesVB\TreeView\DataBinding\BindingToSelfRefData.vb region=CheckedMember}} 
+* [Data Binding]({%slug winforms/treeview/data-binding/data-binding-basics%})
 
-````C#
-            
-DataTable dt = new DataTable();
-dt.Columns.Add("Id", typeof(string));
-dt.Columns.Add("ParentId", typeof(string));
-dt.Columns.Add("Name", typeof(string));
-dt.Columns.Add("IsActive", typeof(bool));
-            
-string parentId = string.Empty;
-string childId = string.Empty;
-            
-for (int i = 1; i <= 5; i++)
-{
-    parentId = Guid.NewGuid().ToString();
-    dt.Rows.Add(parentId, null, "Node." + i, i % 2 == 0);
-    for (int j = 1; j <= 3; j++)
-    { 
-        childId = Guid.NewGuid().ToString();
-        dt.Rows.Add(childId, parentId, "Node." + i + "." + j, j % 2 == 0);
-    }
-}
-            
-radTreeView1.DisplayMember = "Name";
-radTreeView1.ParentMember = "ParentId";
-radTreeView1.ChildMember = "Id";
-radTreeView1.CheckedMember = "IsActive";
-radTreeView1.CheckBoxes = true;
-radTreeView1.DataSource = dt;
+* [Binding CheckBoxes]({%slug winforms/treeview/data-binding/binding-checkboxes%})
 
-````
-````VB.NET
-Dim dt As New DataTable()
-dt.Columns.Add("Id", GetType(String))
-dt.Columns.Add("ParentId", GetType(String))
-dt.Columns.Add("Name", GetType(String))
-dt.Columns.Add("IsActive", GetType(Boolean))
-Dim parentId As String = String.Empty
-Dim childId As String = String.Empty
-For i As Integer = 1 To 5
-    parentId = Guid.NewGuid().ToString()
-    dt.Rows.Add(parentId, Nothing, "Node." & i, i Mod 2 = 0)
-    For j As Integer = 1 To 3
-        childId = Guid.NewGuid().ToString()
-        dt.Rows.Add(childId, parentId, "Node." & i & "." & j, j Mod 2 = 0)
-    Next
-Next
-radTreeView1.DisplayMember = "Name"
-radTreeView1.ParentMember = "ParentId"
-radTreeView1.ChildMember = "Id"
-radTreeView1.CheckedMember = "IsActive"
-radTreeView1.CheckBoxes = True
-radTreeView1.DataSource = dt
+* [Serialize/Deserialize to XML]({%slug winforms/treeview/data-binding/serialize/deserialize-to-xml%})
 
-````
-
-{{endregion}}

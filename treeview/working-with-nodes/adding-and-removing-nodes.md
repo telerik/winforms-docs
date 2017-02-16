@@ -1,7 +1,7 @@
 ---
 title: Adding and Removing Nodes
-page_title: Adding and Removing Nodes | UI for WinForms Documentation
-description: Adding and Removing Nodes
+page_title: Adding and Removing Nodes | RadTreeView
+description: This article shows how you can add or remove nodes in code and the events that are fired when add/remove action is performed.
 slug: winforms/treeview/working-with-nodes/adding-and-removing-nodes
 tags: adding,and,removing,nodes
 published: True
@@ -10,8 +10,6 @@ previous_url: treeview-working-with-nodes-adding-and-removing-nodes
 ---
 
 # Adding and Removing Nodes
-
-
 
 ## Adding Nodes
 
@@ -102,7 +100,7 @@ End Sub
 
 ## Removing Nodes
 
-To remove a single node use the __Remove()__ method of the node. To remove *all *nodes of the RadTreeView use the __Nodes.Clear()__ method.
+To remove a single node use the __Remove()__ method of the node. To remove all nodes of the RadTreeView use the __Nodes.Clear()__ method.
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=removeNodes}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=removeNodes}} 
@@ -161,3 +159,17 @@ End Sub
 ````
 
 {{endregion}}
+
+# See Also
+* [Bring a Node into View]({%slug winforms/treeview/working-with-nodes/bring-a-node-into-view%})
+
+* [Custom Filtering]({%slug winforms/treeview/working-with-nodes/custom-filtering%})
+
+* [Custom Nodes]({%slug winforms/treeview/working-with-nodes/custom-nodes%})
+
+* [Custom Sorting]({%slug winforms/treeview/working-with-nodes/custom-sorting%})
+
+* [Events]({%slug winforms/treeview/working-with-nodes/events%})
+
+* [Filtering Nodes]({%slug winforms/treeview/working-with-nodes/filtering-nodes%})
+

@@ -1,7 +1,7 @@
 ---
 title: Selecting Nodes
-page_title: Selecting Nodes | UI for WinForms Documentation
-description: Selecting Nodes
+page_title: Selecting Nodes | RadTreeView
+description: RadTreeView supports both selecting single or multiple nodes. This article shows how you can select nodes in the code. 
 slug: winforms/treeview/working-with-nodes/selecting-nodes
 tags: selecting,nodes
 published: True
@@ -10,8 +10,6 @@ previous_url: treeview-working-with-nodes-selecting-nodes
 ---
 
 # Selecting Nodes
-
-
 
 ## Selecting a Single Node
 
@@ -33,14 +31,14 @@ RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
 
 ## Selecting Multiple Nodes
 
-To enable the multiple selection the __MultiSelect__ property of   __RadTreeView__ must be set to __true.__ The default value is __false__.
+To enable the multiple selection the __MultiSelect__ property must be set to *true*. The default value is *false*.
 
 
 | __Selection__ | __Example__ | __Description__ |
 |---------------|-------------|-----------------|
 | __Single Selection__ |![](images/treeview-working-with-nodes-selecting-nodes001.png)|The user can select a single node by clicking the node.|
-| __Multiple Selection using the Shift key__ |![](images/treeview-working-with-nodes-selecting-nodes002.png)|To select a continuous series of multiple nodes at one time hold the Shift key and click on a node using the mouse. That will select all nodes between the first selected node and the node that was just clicked. The screenshot shows nodes selected between "Deleted Items" and "Large Mail".|
-| __Multiple Selection using the Ctrl key__ |![treeview-working-with-nodes-selecting-nodes 003](images/treeview-working-with-nodes-selecting-nodes003.png)|To select multiple nodes in distributed throughout the RadTreeView, hold the Ctrl key and click on each node using the mouse. That will select the clicked node but not unselect the previously selected nodes. The screenshot shows the "Deleted Items" and "Send Items" nodes selected.|
+| __Multiple Selection using the Shift key__ |![](images/treeview-working-with-nodes-selecting-nodes002.png)|To select a continuous series of multiple nodes at one time hold __Shift__ and click on a node using the mouse. That will select all nodes between the first selected node and the node that was just clicked. The screenshot shows nodes selected between "Deleted Items" and "Large Mail".|
+| __Multiple Selection using the Ctrl key__ |![treeview-working-with-nodes-selecting-nodes 003](images/treeview-working-with-nodes-selecting-nodes003.png)|To select multiple nodes in distributed throughout, hold __Ctrl__ and click on each node using the mouse. That will select the clicked node or unselect the previously selected nodes. The screenshot shows the "Deleted Items" and "Send Items" nodes selected.|
 
 ## Selecting Multiple Nodes Programmatically
 
@@ -79,3 +77,17 @@ Node4.Selected = True
 ````
 
 {{endregion}}
+
+# See Also
+* [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})
+
+* [Bring a Node into View]({%slug winforms/treeview/working-with-nodes/bring-a-node-into-view%})
+
+* [Custom Filtering]({%slug winforms/treeview/working-with-nodes/custom-filtering%})
+
+* [Custom Nodes]({%slug winforms/treeview/working-with-nodes/custom-nodes%})
+
+* [Custom Sorting]({%slug winforms/treeview/working-with-nodes/custom-sorting%})
+
+* [Events]({%slug winforms/treeview/working-with-nodes/events%})
+

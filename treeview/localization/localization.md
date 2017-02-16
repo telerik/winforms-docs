@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
-description: Localization
+page_title: Localization | RadTreeView
+description: This article shows how you can localize all strings used in RadTreeView.
 slug: winforms/treeview/localization/localization
 tags: localization
 published: True
@@ -10,10 +10,6 @@ previous_url: treeview-localization-localization
 ---
 
 # Localization
-
-
-
-## Optional section title
 
 To localize RadTreeView to display control text and messages in a specific language:
 
@@ -27,10 +23,8 @@ To localize RadTreeView to display control text and messages in a specific langu
 Below is a sample implementation of an English localization provider:
 
 #### Localizing RadTreeView Strings
-
 {{source=..\SamplesCS\TreeView\MyEnglishTreeViewLocalizationProvider.cs region=LocProvider}} 
-{{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=LocProvider}} 
-
+{{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=LocProvider}}
 ````C#
 public class MyEnglishTreeViewLocalizationProvider : TreeViewLocalizationProvider
 {
@@ -76,7 +70,9 @@ Public Overrides Function GetLocalizedString(ByVal id As String) As String
     Return ""
 End Function
 
-````
+```` 
+
+
 
 {{endregion}} 
 
@@ -99,3 +95,7 @@ TreeViewLocalizationProvider.CurrentProvider = New MyEnglishTreeViewLocalization
 {{endregion}} 
 
 The code provided above illustrates the approach to be used to localize the __RadTreeView__ and is not intended as a full translation.
+
+# See Also
+* [Right-to-left support]({%slug winforms/treeview/localization/right-to-left-support%})
+

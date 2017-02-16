@@ -1,7 +1,7 @@
 ---
 title: Keyboard Navigation
-page_title: Keyboard Navigation | UI for WinForms Documentation
-description: Keyboard Navigation
+page_title: Keyboard Navigation | RadTreeView
+description: This article shows how you can use the built-in keyboard navigation and search.
 slug: winforms/treeview/usability/keyboard-navigation
 tags: keyboard,navigation
 published: True
@@ -9,11 +9,11 @@ position: 0
 previous_url: treeview-usability-keyboard-navigation
 ---
 
-# Keyboard Navigation
+# Keyboard Navigation and Search
 
 ## Keyboard Navigation
 
-The user can navigate __RadTreeView__ and control treeview modes using the following keyboard commands:  
+The user can navigate __RadTreeView__ and control TreeView modes using the following keyboard commands:  
 
 || __Key__ | __Description__ |
 |-----|-----|-----|
