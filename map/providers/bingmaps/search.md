@@ -126,6 +126,8 @@ End Sub
 
 >note Enter some text in the search box and press `Enter` to start searching.
 
+>note The **MapSearchBarElement** can be setup with no explicit search provider. In this case the search element will traverse the providers collection of **RadMapElement** for a **IMapSearchProvider** instance. The MapSearchBarElement.**ShowMessageBoxOnError** property determines whether a messagebox will be displayed upon error or not when the **SearchProvider** property of the element is not set. The default value of the property is set to *true*. 
+
 ## SearchRequest
 
 You can perform searching programmatically by using a __SearchRequest__:

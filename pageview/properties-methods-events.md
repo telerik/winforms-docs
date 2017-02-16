@@ -19,6 +19,7 @@ position: 10
 |**DefaultPage**|Gets or sets the default RadPageViewPage that will be loaded after EndInit of the control. If the DefaultPage is null the currently selected page will be loaded.|
 |**ItemSizeMode**|Gets or sets the text orientation of the item within the owning RadPageViewElement instance.|
 |**ItemSize**|Gets or sets the size of the items when ItemSizeMode of RadPageView is PageViewItemSizeMode.EqualSize.|
+|**SelectionWrap**|Gets or sets whether the pages will be wrapped around when performing selection using the arrow keys. If the property is set to true, pressing the right arrow key when the last page is selected will result in selecting the first page.|
 
 
 # Methods
