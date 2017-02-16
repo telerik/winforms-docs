@@ -86,4 +86,4 @@ When this is done you can add new expression item and choose from the list:
 
 # See Also
 
-* []({%slug winforms/datafilter/populating-with-data/data-binding%})
+* [winforms/datafilter/populating-with-data/data-binding]({%slug winforms/datafilter/populating-with-data/data-binding%})
