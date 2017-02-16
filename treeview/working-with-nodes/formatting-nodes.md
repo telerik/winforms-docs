@@ -28,22 +28,7 @@ The bellow example shows how you can access and format the main node elements:
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\NodeFormatting.cs region=nodeFormatting}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}}
 
-        e.NodeElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid;
-        e.NodeElement.BackColor = Color.LightBlue;
-        e.NodeElement.ContentElement.ForeColor = Color.White;
-        e.NodeElement.ImageElement.Image = file;
-        e.NodeElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local);
-        e.NodeElement.ResetValue(LightVisualElement.BorderGradientStyleProperty, ValueResetFlags.Local);
-        e.NodeElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
-        e.NodeElement.ContentElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
-        e.NodeElement.ImageElement.ResetValue(LightVisualElement.ImageProperty, ValueResetFlags.Local);
-    Else
-        e.NodeElement.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local)
-        e.NodeElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
-        e.NodeElement.ResetValue(LightVisualElement.BorderGradientStyleProperty, ValueResetFlags.Local)
-        e.NodeElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
-        e.NodeElement.ContentElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
-        e.NodeElement.ImageElement.ResetValue(LightVisualElement.ImageProperty, ValueResetFlags.Local)
+
 {{endregion}} 
 
 >caption Figure 1: Nodes formated with the above code.
