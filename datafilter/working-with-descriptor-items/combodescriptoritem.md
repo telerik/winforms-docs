@@ -32,6 +32,28 @@ The following snippet shows how you can add DataFilterComboDescriptorItem in the
 
 {{source=..\SamplesCS\DataFilter\DataFilterEditing.cs region=AddComboItem}} 
 {{source=..\SamplesVB\DataFilter\DataFilterEditing.vb region=AddComboItem}}
+````C#
+DataFilterComboDescriptorItem item1 = new DataFilterComboDescriptorItem();
+item1.DescriptorName = "Item Type";
+item1.DataSource = GetTable();
+item1.ValueMember = "ID";
+item1.DisplayMember = "Type";
+item1.DropDownStyle = RadDropDownStyle.DropDown;
+item1.AutoCompleteMode = AutoCompleteMode.Suggest;
+radDataFilter1.Descriptors.Add(item1);
+
+````
+````VB.NET
+Dim item1 As New DataFilterComboDescriptorItem()
+item1.DescriptorName = "Item Type"
+item1.DataSource = GetTable()
+item1.ValueMember = "ID"
+item1.DisplayMember = "Type"
+item1.DropDownStyle = RadDropDownStyle.DropDown
+item1.AutoCompleteMode = AutoCompleteMode.Suggest
+RadDataFilter1.Descriptors.Add(item1)
+
+````
 
 
 {{endregion}}
