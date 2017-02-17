@@ -21,7 +21,7 @@ The gallery also has a drop-down arrow which sets the element into expanded view
 >caption Figure 2: Expanded Plain Tables
 ![ribbonbar-creating-a-gallery 002](images/ribbonbar-creating-a-gallery002.png)
 
->caption Figure 3: Expanded Buil-In
+>caption Figure 3: Expanded Built-In
 ![ribbonbar-creating-a-gallery 003](images/ribbonbar-creating-a-gallery003.png)
 
 ## Creating a Gallery
