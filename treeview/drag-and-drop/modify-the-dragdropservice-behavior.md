@@ -5,7 +5,7 @@ description: This article shows how you can modify the default DragDropService b
 slug: winforms/treeview/drag-and-drop/modify-the-dragdropservice-behavior
 tags: modify,the,dragdropservice,behavior
 published: True
-position: 2
+position: 3
 previous_url: treeview-drag-and-drop-modify-the-drag-drop-service-behavior
 ---
 

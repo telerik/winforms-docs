@@ -5,7 +5,7 @@ description: This article describes how you can cancel a drag and drop operation
 slug: winforms/treeview/drag-and-drop/cancel-a-drag-and-drop-operation
 tags: cancel,a,drag,and,drop,operation
 published: True
-position: 1
+position: 2
 previous_url: treeview-drag-and-drop-cancel-a-drag-and-drop-operation
 ---
 

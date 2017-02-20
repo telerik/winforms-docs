@@ -5,7 +5,7 @@ description: RadSplitContainer is a layout control which allows you to add many 
 slug: winforms/splitcontainer/properties
 tags: properties
 published: True
-position: 7
+position: 8
 previous_url: splitcontainer-properties
 ---
 

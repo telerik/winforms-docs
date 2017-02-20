@@ -5,7 +5,7 @@ description: RadDataFilter allows you to build complex filter expressions based 
 slug: winforms/datafilter/populating-with-data/unbound-mode
 tags: data, filter
 published: True
-position: 0
+position: 2
 ---
 
 # Unbound Mode

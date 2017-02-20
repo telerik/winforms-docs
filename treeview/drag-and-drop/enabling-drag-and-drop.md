@@ -5,7 +5,7 @@ description: This article shows how you can use the built-in drag and drop funct
 slug: winforms/treeview/drag-and-drop/enabling-drag-and-drop
 tags: enabling,drag,and,drop
 published: True
-position: 0
+position: 1
 previous_url: treeview-drag-and-drop-enabling-drag-and-drop
 ---
 

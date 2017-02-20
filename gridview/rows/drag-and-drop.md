@@ -693,6 +693,8 @@ End Sub
 
 Go ahead and build and run the application. You are now able to use drag and drop functionality in bound and unbound modes. You are also able to select multiple rows using either the shift or control key, and holding the key down while you drag the rows between the grids.
 # See Also
+* [RadGridViewDragDropService]({%slug winforms/gridview/radgridviewdragdropservice%})
+
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
 
 * [Conditional Formatting Rows]({%slug winforms/gridview/rows/conditional-formatting-rows%})
