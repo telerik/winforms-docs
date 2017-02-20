@@ -720,7 +720,7 @@ navigation:
     pageview:
         title: PageView
         position: 310
-    pageview/drad-and-drop:
+    pageview/drag-and-drop:
         title: Drag and Drop
         position: 4
     pageview/stripview:
