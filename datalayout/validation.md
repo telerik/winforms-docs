@@ -11,9 +11,9 @@ previous_url: datalayout-validation
 
 # Validation
 
-For the need of validation process we made two events (__ItemValidating, ItemValidated__) that are firing when the __Validating__ and __Validated__ events occur in the editors. __RadDataLayout__ provides three different ways to show to the users that some editors do not match the validation criteria – `Validation Label`, `Error Provider` and `Validation Panel`. In the following tutorial we will demonstrate how to use a validation panel together with Error provider.
+For the need of the validation process we made two events (__ItemValidating, ItemValidated__) that are firing when the __Validating__ and __Validated__ events occur in the editors. __RadDataLayout__ provides three different ways to show to the users that some editors do not match the validation criteria – *Validation Label*, *Error Provider* and *Validation Panel*. In the following tutorial we will demonstrate how to use a validation panel together with Error provider.
 
-1\. For the purpose of this tutorial, we will create a new class `Employee` with a couple of exposed properties. By binding __RadDataLayout__ to object from this type we will generate several items:
+1\. For the purpose of this tutorial, we will create a new class **Employee** with a couple of exposed properties. By binding __RadDataLayout__ to object from this type we will generate several items:
 
 {{source=..\SamplesCS\DataLayout\DataLayoutValidation.cs region=DataLayoutEmployee}} 
 {{source=..\SamplesVB\DataLayout\DataLayoutValidation.vb region=DataLayoutEmployee}} 
@@ -125,7 +125,7 @@ Me.RadDataLayout1.DataSource = New Employee() With {
 
 {{endregion}} 
 
->caption Figure 1 RadDataLayout Initialized
+>caption Figure 1: RadDataLayout Initialized
 
 ![datalayout-validation 001](images/datalayout-validation001.png)
 
@@ -302,7 +302,7 @@ End Sub
 
 {{endregion}} 
 
->caption Figure 2. Validaton Errors
+>caption Figure 2: Validaton Errors
 
 ![datalayout-validation 002](images/datalayout-validation002.png)
 

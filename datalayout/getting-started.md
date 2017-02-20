@@ -112,7 +112,7 @@ End Class
 
 {{endregion}}
 
-4\. Once the `Employee` class is defined, you may use it to create an object of this type and bind it to the __RadDataLayout__ control:
+4\. Once the **Employee** class is defined, you may use it to create an object of this type and bind it to the __RadDataLayout__ control:
 
 {{source=..\SamplesCS\DataLayout\GettingStartedForm.cs region=BindSingleObject}} 
 {{source=..\SamplesVB\DataLayout\GettingStartedForm.vb region=BindSingleObject}} 
@@ -149,13 +149,13 @@ Me.RadDataLayout1.DataSource = New EmployeeModel() With {
 
 ## Binding RadDataLayout to multiple objects
 
-Besides a __RadDataLayout__ we are also going to need a __RadBindingNavigator__ on our form. In order to connect the two controls we are going to use a `BindingSource` component.
+Besides a __RadDataLayout__ we are also going to need a __RadBindingNavigator__ on our form. In order to connect the two controls we are going to use a **BindingSource** component.
         
 >caption Figure 3: Added RadBindingNavigator
 
 ![datalayout-getting-started 003](images/datalayout-getting-started003.png)
 
-Compared to the previously shown example only the data binding is different. This time we are going to bind the __RadDataLayout__ control to a list of our model objects. The same list will also provide data to the `BindingSource` component.
+Compared to the previously shown example only the data binding is different. This time we are going to bind the __RadDataLayout__ control to a list of our model objects. The same list will also provide data to the **BindingSource** component.
 
 {{source=..\SamplesCS\DataLayout\GettingStartedForm.cs region=BindMultipleObjects}} 
 {{source=..\SamplesVB\DataLayout\GettingStartedForm.vb region=BindMultipleObjects}} 

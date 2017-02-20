@@ -11,7 +11,7 @@ previous_url: datalayout-customize-layout-mode
 
 # Customize Layout Mode
 
-RadDataLayout's __Customize__ dialog enables a complete transformation of the control`s layout at runtime.
+**RadDataLayout**'s __Customize__ dialog enables a complete transformation of the control`s layout at run time.
 
 ## Customize Dialog
 

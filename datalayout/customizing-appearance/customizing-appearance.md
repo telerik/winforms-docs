@@ -10,15 +10,15 @@ position: 0
 
 # Customizing Appearance
 
-You can access and modify the style for different elements in __RadDataEntry__ by using the `Element Hierarchy Editor`.
+You can access and modify the style for different elements in __RadDataEntry__ by using the *Element Hierarchy Editor*.
 
->caption Figure 1 Element Hierarchy Editor
+>caption Figure 1: Element Hierarchy Editor
 
 ![datalayout-customizing-appearance001](images/datalayout-customizing-appearance001.png)   
 
 # Changing the styles of the underling items and controls
 
-The following snippet shows how you access the underlying controls and change the their styles:
+The following snippet shows how you access the underlying controls and change their style:
 
 
 {{source=..\SamplesCS\DataLayout\PropertiesEventsAttributesForm.cs region=FormatItems}} 
@@ -46,7 +46,7 @@ Next item
 
 {{endregion}}
 
->caption Figure 2 Change the items styles
+>caption Figure 2: Change the items styles
 
 ![datalayout-customizing-appearance002](images/datalayout-customizing-appearance002.png)   
 
