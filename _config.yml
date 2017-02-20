@@ -497,6 +497,9 @@ navigation:
     ganttview/timeline:
         title: Timeline
         position: 9
+    ganttview/drag-and-drop:
+        title: Drag and Drop
+        position: 10
     gauges:
         title: Gauges
         position: 250

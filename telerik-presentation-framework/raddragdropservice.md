@@ -53,8 +53,8 @@ You can find in the table below the **RadDragDropService**'s derivatives and the
 |**RadScheduler**|[AppointmentDraggingBehavior]({%slug winforms/scheduler/drag-and-drop/appointmentdraggingbehavior%})|
 |**RadListView**|[ListViewDragDropService]({%slug winforms/listview/drag-and-drop/listviewdragdropservice%})|
 |**RadListView** in DetailsView|[DetailListViewDragDropService]({%slug winforms/listview/drag-and-drop/detaillistviewdragdropservice%})|
-|**RadGanttView**|GanttViewDragDropService|
-|**RadLayoutControl**|LayoutControlDragDropService|
+|**RadGanttView**|[GanttViewDragDropService]({%slug winforms/ganttview/ganttviewdragdropservice%})|
+|**RadLayoutControl**|[LayoutControlDragDropService]({%slug winforms/layoutcontrol/layoutcontroldragdropservice%})|
 |**RadListControl**|[ListControlDragDropService]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop/listcontroldragdropservice%})|
 |**RadPivotFieldList**|PivotFieldListDragDropService|
 |**RadPivotGrid**|PivotGridDragDropService|
