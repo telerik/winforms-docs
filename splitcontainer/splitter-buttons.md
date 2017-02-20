@@ -15,7 +15,7 @@ The split panels can be collapsed to a particular direction via the splitter`s n
 >caption Figure 1: RadSplitContainer Splitter Buttons
 ![splitcontainer-splitter-buttons 001](images/splitcontainer-splitter-buttons001.gif)
 
-In order to use the splitter buttons the following properties need to set to true:
+In order to use the splitter buttons the following properties need to be set to true.
 
 #### Show Splitter Buttons
 
