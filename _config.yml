@@ -816,6 +816,9 @@ navigation:
     pivotgrid/filtering:
         title: Filtering
         position: 8
+    pivotgrid/drag-and-drop:
+        title: Drag and Drop
+        position: 15
     pivotgrid/printing-support:
         title: Printing Support
         position: 16

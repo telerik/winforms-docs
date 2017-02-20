@@ -56,8 +56,8 @@ You can find in the table below the **RadDragDropService**'s derivatives and the
 |**RadGanttView**|[GanttViewDragDropService]({%slug winforms/ganttview/ganttviewdragdropservice%})|
 |**RadLayoutControl**|[LayoutControlDragDropService]({%slug winforms/layoutcontrol/layoutcontroldragdropservice%})|
 |**RadListControl**|[ListControlDragDropService]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop/listcontroldragdropservice%})|
-|**RadPivotFieldList**|PivotFieldListDragDropService|
-|**RadPivotGrid**|PivotGridDragDropService|
+|**RadPivotFieldList**|[PivotFieldListDragDropService]({%slug winforms/pivotgrid/pivotfieldlistdragdropservice%})|
+|**RadPivotGrid**|[PivotGridDragDropService]({%slug winforms/pivotgrid/pivotgriddragdropservice%})|
 |**RadGridView**|[RadGridViewDragDropService]({%slug winforms/gridview/radgridviewdragdropservice%})|
 |**RadPageView**|[RadPageViewDragDropService]({%slug winforms/pageview/radpageviewdragdropservice%})|
 |**RadPanorama**|[TileDragDropService]({%slug winforms/panorama/tiledragdropservice%})|

@@ -20,7 +20,7 @@ position: 0
 
 ![radpageviewdragdropservice 002](images/radpageviewdragdropservice002.gif)
 
-This functionality is achieved by the **RadPageViewDragDropService** which can be accessed by the RadPageView.ViewElement.**ItemDragService** property. Similar to [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%}), **RadPageViewDragDropService** exposes public events which allows to handle the drag and drop operation and customize it according to your requiremenets, e.g. control which page tabs to be dragged or on what target to drop them.  
+This functionality is achieved by the **RadPageViewDragDropService** which can be accessed by the RadPageView.ViewElement.**ItemDragService** property. Similar to [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%}), **RadPageViewDragDropService** exposes public events which allows to handle the drag and drop operation and customize it according to your requirements, e.g. control which page tabs to be dragged or on what target to drop them.  
 
 # See Also
 
