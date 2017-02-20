@@ -36,6 +36,7 @@ The following steps demonstrates how to populate two **RadListControls** with it
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControlBoundDragDrop.vb region=BoundListControl}} 
 
 ````C#
+        
 public ListControlBoundDragDrop()
 {
     InitializeComponent();
@@ -54,9 +55,8 @@ public ListControlBoundDragDrop()
     this.radListControl2.DataSource = items2;
     this.radListControl2.DisplayMember = "Name";
     this.radListControl2.ValueMember = "Id";
-    
 }
-
+        
 public class Item
 {
     public int Id { get; set; }
@@ -69,8 +69,6 @@ public class Item
         this.Name = name;
     }
 }
-        
- 
 
 ````
 ````VB.NET
@@ -79,21 +77,16 @@ Public Sub New()
     Dim items As New BindingList(Of Item)()
     Dim items2 As New BindingList(Of Item)()
     For i As Integer = 0 To 19
-
         items.Add(New Item(i, "Item.1." & i))
         items2.Add(New Item(i, "Item.2." & i))
     Next
-    
     Me.RadListControl1.DataSource = items
     Me.RadListControl1.DisplayMember = "Name"
     Me.RadListControl1.ValueMember = "Id"
-
     Me.RadListControl2.DataSource = items2
     Me.RadListControl2.DisplayMember = "Name"
-
     Me.RadListControl2.ValueMember = "Id"
 End Sub
-
 Public Class Item
     Public Property Id() As Integer
         Get
@@ -104,7 +97,6 @@ Public Class Item
         End Set
     End Property
     Private m_Id As Integer
-
     Public Property Name() As String
         Get
             Return m_Name
@@ -114,13 +106,11 @@ Public Class Item
         End Set
     End Property
     Private m_Name As String
-
     Public Sub New(id As Integer, name As String)
         Me.Id = id
         Me.Name = name
     End Sub
 End Class
-
 
 ````
 
@@ -132,13 +122,14 @@ End Class
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControlBoundDragDrop.vb region=EnableDragDrop}} 
 
 ````C#
+            
 this.radListControl1.AllowDragDrop = true;
 this.radListControl2.AllowDragDrop = true;
 
 ````
 ````VB.NET
-Me.radListControl1.AllowDragDrop = True
-Me.radListControl2.AllowDragDrop = True
+Me.RadListControl1.AllowDragDrop = True
+Me.RadListControl2.AllowDragDrop = True
 
 ````
 
@@ -150,16 +141,17 @@ Me.radListControl2.AllowDragDrop = True
 {{source=..\SamplesCS\DropDownListControl\ListControl\ListControlBoundDragDrop.cs region=ListControlDragDrop}} 
 {{source=..\SamplesVB\DropDownListControl\ListControl\ListControlBoundDragDrop.vb region=ListControlDragDrop}} 
 
-````C# 
+````C#
+        
 private void ListControlBoundDragDrop_Shown(object sender, EventArgs e)
 {
     this.radListControl1.ListElement.DragDropService.PreviewDragStart += DragDropService_PreviewDragStart;
     this.radListControl1.ListElement.DragDropService.PreviewDragOver += DragDropService_PreviewDragOver;
     this.radListControl1.ListElement.DragDropService.PreviewDragDrop += DragDropService_PreviewDragDrop;
 }
-
+        
 RadListDataItem draggedItem = null;
-
+        
 private void DragDropService_PreviewDragStart(object sender, Telerik.WinControls.PreviewDragStartEventArgs e)
 {
     RadListVisualItem draggedVisualitem = e.DragInstance as RadListVisualItem;
@@ -173,7 +165,7 @@ private void DragDropService_PreviewDragStart(object sender, Telerik.WinControls
         e.CanStart = false;
     }
 }
-
+        
 private void DragDropService_PreviewDragOver(object sender, Telerik.WinControls.RadDragOverEventArgs e)
 {
     RadListVisualItem targetVisualItem = e.HitTarget as RadListVisualItem;
@@ -184,10 +176,10 @@ private void DragDropService_PreviewDragOver(object sender, Telerik.WinControls.
     }
     else
     {
-        e.CanDrop = true;
+        e.CanDrop = false;
     }
 }
-
+        
 private void DragDropService_PreviewDragDrop(object sender, Telerik.WinControls.RadDropEventArgs e)
 { 
     RadListVisualItem targetVisualItem = e.HitTarget as RadListVisualItem;
@@ -204,23 +196,21 @@ private void DragDropService_PreviewDragDrop(object sender, Telerik.WinControls.
     BindingList<Item> targetSourceItems = targetListElement.DataSource as BindingList<Item>;
     BindingList<Item> draggtedSourceItems = this.draggedItem.Owner.DataSource as BindingList<Item>;
     int draggedItemIndex = draggtedSourceItems.IndexOf(this.draggedItem.DataBoundItem as Item);
-    int targetItemIndex = targetVisualItem == null ? targetSourceItems.Count - 1 : targetSourceItems.IndexOf(targetVisualItem.Data.DataBoundItem as Item);
-    
+    int targetItemIndex = targetVisualItem == null ? targetSourceItems.Count-1 : targetSourceItems.IndexOf(targetVisualItem.Data.DataBoundItem as Item);
+     
     Item item = this.draggedItem.DataBoundItem as Item;
     targetSourceItems.RemoveAt(draggedItemIndex);
     targetSourceItems.Insert(targetItemIndex, new Item(item.Id, item.Name));
 }
 
 ````
-````VB.NET 
+````VB.NET
 Private Sub ListControlBoundDragDrop_Shown(sender As Object, e As EventArgs) Handles Me.Shown
     AddHandler Me.RadListControl1.ListElement.DragDropService.PreviewDragStart, AddressOf DragDropService_PreviewDragStart
     AddHandler Me.RadListControl1.ListElement.DragDropService.PreviewDragOver, AddressOf DragDropService_PreviewDragOver
     AddHandler Me.RadListControl1.ListElement.DragDropService.PreviewDragDrop, AddressOf DragDropService_PreviewDragDrop
 End Sub
-
 Private draggedItem As RadListDataItem = Nothing
-
 Private Sub DragDropService_PreviewDragStart(sender As Object, e As Telerik.WinControls.PreviewDragStartEventArgs)
     Dim draggedVisualitem As RadListVisualItem = TryCast(e.DragInstance, RadListVisualItem)
     If draggedVisualitem IsNot Nothing Then
@@ -230,17 +220,15 @@ Private Sub DragDropService_PreviewDragStart(sender As Object, e As Telerik.WinC
         e.CanStart = False
     End If
 End Sub
-
 Private Sub DragDropService_PreviewDragOver(sender As Object, e As Telerik.WinControls.RadDragOverEventArgs)
     Dim targetVisualItem As RadListVisualItem = TryCast(e.HitTarget, RadListVisualItem)
     Dim targetListElement As RadListElement = TryCast(e.HitTarget, RadListElement)
     If targetVisualItem IsNot Nothing OrElse targetListElement IsNot Nothing Then
         e.CanDrop = True
     Else
-        e.CanDrop = True
+        e.CanDrop = False
     End If
 End Sub
-
 Private Sub DragDropService_PreviewDragDrop(sender As Object, e As Telerik.WinControls.RadDropEventArgs)
     Dim targetVisualItem As RadListVisualItem = TryCast(e.HitTarget, RadListVisualItem)
     Dim targetListElement As RadListElement = TryCast(e.HitTarget, RadListElement)
@@ -255,12 +243,10 @@ Private Sub DragDropService_PreviewDragDrop(sender As Object, e As Telerik.WinCo
     Dim draggtedSourceItems As BindingList(Of Item) = TryCast(Me.draggedItem.Owner.DataSource, BindingList(Of Item))
     Dim draggedItemIndex As Integer = draggtedSourceItems.IndexOf(TryCast(Me.draggedItem.DataBoundItem, Item))
     Dim targetItemIndex As Integer = If(targetVisualItem Is Nothing, targetSourceItems.Count - 1, targetSourceItems.IndexOf(TryCast(targetVisualItem.Data.DataBoundItem, Item)))
-
     Dim item As Item = TryCast(Me.draggedItem.DataBoundItem, Item)
     targetSourceItems.RemoveAt(draggedItemIndex)
     targetSourceItems.Insert(targetItemIndex, New Item(item.Id, item.Name))
 End Sub
-
 
 ````
 
