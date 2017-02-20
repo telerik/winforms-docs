@@ -47,14 +47,6 @@ Private Sub radGridView1_CreateCompositeFilterDialog(sender As Object, e As Grid
     filterDialog.Font = f
     e.Dialog = filterDialog
 End Sub
-#End Region
-    
-Private Sub Filtering_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    'TODO: This line of code loads data into the 'NwindDataSet.Products' table. You can move, or remove it, as needed.
-    Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
-    '#region enableFiltering
-    Me.RadGridView1.EnableFiltering = True
-    Me.RadGridView1.MasterTemplate.EnableFiltering = True
 
 ````
 
