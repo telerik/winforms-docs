@@ -10,9 +10,9 @@ position: 0
 
 # Descriptor items
 
-There are two item types that are currently supported
+There are two item types that are currently supported:
 
-* __DataFilterDescriptorItem:__ The default item that uses filer value editor according to the data type of the filter field.
+* __DataFilterDescriptorItem:__ The default item that uses filter value editor according to the data type of the field.
 * __DataFilterComboDescriptorItem:__ Uses a RadDropDownList for setting the filter value and allows the user to choose from a predefined set of values. 
 
 ## Common Properties
