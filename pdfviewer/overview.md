@@ -17,7 +17,7 @@ previous_url: pdfviewer-overview, pdfviewer-manipulating-programatically
 
 __RadPdfViewer__ is a control that can natively visualize PDF documents straight in your application. It comes with a predefined UI that is intuitive and provides the means for utilizing the features of the control. The control utilizes virtualization and supports load on-demand mode in order to guarantee good performance with larger documents. 
 
->caption Figure 1 RadPdfViewer
+>caption Figure 1: RadPdfViewer
 ![pdfviewer-overview 001](images/pdfviewer-overview001.png)
 
 Here is a list of the supported features
