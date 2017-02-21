@@ -249,6 +249,5 @@ Press __F5__ to run the project and you should see the following:
  * [Structure]({%slug winforms/datalayout/control-element-structure%})
  * [Validation]({%slug winforms/datalayout/validation%})
  * [Properties, events and attributes]({%slug winforms/datalayout/properties,-events-and-attributes%})
- * [Validation]({%slug winforms/datalayout/validation%})
  * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})
  * [Customizing Appearance ]({%slug winforms/raddatalayout/customizing-appearance%})
