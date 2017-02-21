@@ -23,7 +23,7 @@ The smart tag allows you to open the layout editor, change the theme and open th
 
 ## Design Time Data Binding
 
-For the purpose of this example we will bind our data layout control to the `Cars` table of the Northwind database. After specifying the data source, the control will build the editors according to the properties of the data bound object.
+For the purpose of this example we will bind our data layout control to the **Cars** table of the Northwind database. After specifying the data source, the control will build the editors according to the properties of the data bound object.
         
 >caption Figure 2: Data Binding.
 

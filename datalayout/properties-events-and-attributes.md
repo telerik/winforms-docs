@@ -18,17 +18,17 @@ __RadDataLayout__ exposes properties and events which are similar to the ones pr
 
 * __DataSource__: Through this property user can set the business object or a collection of objects that should be edited. When this property is set __RadDataLayout__ generates editors for each public property which does not have its __Browsable__ attribute set to *false.*
 
-* __ColumnCount__: Controls the amount of columns that __RadDataLayout__ will use to arrange generated controls. Default value is one.
+* __ColumnCount__: Controls the amount of columns that __RadDataLayout__ will use to arrange the generated controls. Default value is one.
 
 * __FlowDirection__: Defines the direction the editors will be generated.
 
 * __ItemDefaultHeight__: Sets the height that generated items should have, the default value is *26*.
 
-* __AutoSizeLabels__: By default the property value is false and the labels width will equals the longest label width. If you set this property to true, the labels will be sized according to their content.
+* __AutoSizeLabels__: By default, the property value is *false* and the labels width will equals the longest label width. If you set this property to *true*, the labels will be sized according to their content.
 
 * __ShowValidationPanel:__ Gets or sets a value indicating whether the validation panel should appear.
 
-* __ItemDefaultHeight:__ sets the height that generated items should have.
+* __ItemDefaultHeight:__ Sets the height that generated items should have.
 
 ## Events
 
@@ -44,11 +44,11 @@ There are several events that you will find useful in the context of __RadDataLa
 
 * __ItemInitializing:__ This event is fired when the panel that contains the label, editor and validation label is about to be initialized. This event is cancelable.
 
-* __ItemInitialized:__ Fires the item is already initialized.
+* __ItemInitialized:__ Fires when the item is already initialized.
 
-* __ItemValidating:__ This event is raised when any of the generated editors fires its Validating event.
+* __ItemValidating:__ This event is raised when any of the generated editors fires its **Validating** event.
 
-* __ItemValidated:__ Occurs when any of the generated editors fires its `Validated` event.
+* __ItemValidated:__ Occurs when any of the generated editors fires its **Validated** event.
 
 ## Attributes
 

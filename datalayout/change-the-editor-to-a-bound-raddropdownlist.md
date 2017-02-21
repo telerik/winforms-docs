@@ -13,7 +13,7 @@ previous_url: datalayout-how-to-change-editor-to-drop-down-list
 
 This article will walk you through the process of changing the default editor to a bound drop down list, where the current value corresponds to a value within the drop down list data source. The case where the corresponding values are nullable is also handled.
       
->caption Figure 1: DrpopDownListEditor
+>caption Figure 1: DropDownListEditor
 
 ![datalayout-how-to-change-editor-to-drop-down-list 001](images/datalayout-how-to-change-editor-to-drop-down-list001.png)
 
