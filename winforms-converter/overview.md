@@ -10,7 +10,13 @@ position: 0
 
 # WinForms Converter
 
-This tool allows you to convert the standard .NET Windows Forms controls for all projects in a particular solution to their equivalent in Telerik UI for WinForms. It aims to speed up the conversion process and save time when such projects are modernized. The tool is built on top of the [Roslyn](https://roslyn.codeplex.com/) compiler platform. Here are the main capabilities:
+This tool allows you to convert the standard .NET Windows Forms controls for all projects in a particular solution to their equivalent in Telerik UI for WinForms. It aims to speed up the conversion process and save time when such projects are modernized. The tool is built on top of the [Roslyn](https://roslyn.codeplex.com/) compiler platform. 
+
+>caption Figure 1: Sample application converted to use the Telerik controls. 
+ 
+![winforms-converter-overview001](images/winforms-converter-overview001.png)
+
+Here are the main capabilities:
 
 * __Large number of supported controls__ - complete list of the converted controls is available here: [Supported Controls]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/supported-controls%}). You can chose which controls to convert as well.
 
