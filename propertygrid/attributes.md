@@ -48,6 +48,8 @@ Private m_FileLocation As String
 
 The range attribute allows you to set a minimum and maximum value to be used for a property that is edited with a RadSpinEditor.
 
+![propertygrid-attributes 001](images/propertygrid-attributes009.png)
+
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=RadRangeAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=RadRangeAttribute}} 
 

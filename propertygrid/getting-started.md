@@ -33,13 +33,16 @@ RadPropertyGrid1.SelectedObject = New PropertyGridElement()
 
 {{endregion}}
 
-It is all set and RadProperyGrid reads all public properties of the given object and displays them:<br>![propertygrid-getting-started 001](images/propertygrid-getting-started001.png)
+It is all set and **RadProperyGrid** reads all public properties of the given object and displays them:
+
+>caption Figure 1: Selected Object
+![propertygrid-getting-started 001](images/propertygrid-getting-started001.png)
 
 Now, let’s customize the example a bit and take advantage of some of its features. As you can see in the image above, on the bottom of the control a help section is displayed. This section reads the name and the content of the __Description__ attribute of the selected property. The section visibility is controlled by the __HelpVisible__ property and it is turned on by default.
 
 Next, we will add a predefined toolbox on the top of the control. This toolbox contains of two buttons – for alphabetical sorting and for grouping the items (grups are created by reading the __Category__ attribute of the __SelectedObject__ properties) – and also a text box used for filtering the property grid. All this functionality comes out of the box by simply setting the __ToolBarVisible__ property to *true*:
 
-#### Showing the tool box on the top of RadPropertyGrid
+#### ToolbarVisible
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=ToolBarVisible}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=ToolBarVisible}} 
@@ -57,7 +60,7 @@ RadPropertyGrid1.ToolbarVisible = True
 
 Additionally, since the toolbox consists of a __StackLayoutPanel__, is supports adding additional elements. Here is how to add a button that clears the filter text box:
 
-#### Add element to toolbox
+#### Add Element to Toolbox
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=AddElementToToolbox1}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=AddElementToToolbox1}}
@@ -81,7 +84,7 @@ AddHandler clearFiltering.Click, AddressOf clearFiltering_Click
 
 {{endregion}}
 
-#### Clear the filter
+#### Clear the Filter
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=AddElementToToolbox2}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=AddElementToToolbox2}} 
@@ -110,7 +113,7 @@ By default, opening the editor for editing is done by double clicking the editor
 
 * __BeginEditoProgramatically__ – the editor can be opened only programmatically (by calling BeginEdit() method)
 
-#### Selecting the begin edit mode
+#### Begin Edit Mode
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=BeginEditMode}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=BeginEditMode}} 
@@ -174,7 +177,10 @@ There are also four properties that allow you to control the expand/collapse ima
 
 The selection of the items is controlled by either setting a certain item to the __SelectedGridItem__ property, or by calling the __Select()__ method of an item.
 
-Accessing and modifying the default context menu, can be achieved by accessing the __RadContextMenu__ property of the control. For more information on how to work with menu items, please refer to our [Menu]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem%}) section. <br>![propertygrid-getting-started 002](images/propertygrid-getting-started002.png)
+Accessing and modifying the default context menu, can be achieved by accessing the __RadContextMenu__ property of the control. For more information on how to work with menu items, please refer to our [Menu]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem%}) section. 
+
+>caption Figure 1: Context Menu
+![propertygrid-getting-started 002](images/propertygrid-getting-started002.png)
 
 There are a few properties that you can set in order to change the item appearance:  
 
@@ -182,6 +188,30 @@ There are a few properties that you can set in order to change the item appearan
 
 * __ItemSpacing__ - sets the spacing between the items.
 
-* __ItemIndent__ - sets the indent space in the beginning of the items.<br>![propertygrid-getting-started 003](images/propertygrid-getting-started003.png)
+* __ItemIndent__ - sets the indent space in the beginning of the items.
+
+#### Item Settings
+
+{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=ItemProperties}} 
+{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=ItemProperties}}
+````C#
+this.radPropertyGrid1.ItemHeight = 30;
+this.radPropertyGrid1.ItemIndent = 25;
+this.radPropertyGrid1.ItemSpacing = 1;
+
+````
+````VB.NET
+Me.RadPropertyGrid1.ItemHeight = 30
+Me.RadPropertyGrid1.ItemIndent = 25
+Me.RadPropertyGrid1.ItemSpacing = 1
+
+```` 
+
+
+
+{{endregion}}
+
+>caption Figure 3: Selected Object
+![propertygrid-getting-started 003](images/propertygrid-getting-started003.png)
 
 At the end, if you want to expand all groups automatically, you can set the __AutoExpandGroups__ to *true* (which is also the default setting).
