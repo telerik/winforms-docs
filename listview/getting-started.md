@@ -23,7 +23,7 @@ For the sake of this example, we are going to use a DataTable containing data ab
 
 ![listview-getting-started 002](images/listview-getting-started002.png)
 
-First let’s create a form with [RadCommandBar]({%slug winforms/commandbar%}) docked *Top* and **RadListView** docked *Fill*. Add a __Strip__ to [RadCommandBar]({%slug winforms/commandbar%}) and populate it with the following items:
+1\. First let’s create a form with [RadCommandBar]({%slug winforms/commandbar%}) docked *Top* and **RadListView** docked *Fill*. Add a __Strip__ to [RadCommandBar]({%slug winforms/commandbar%}) and populate it with the following items:
 
 |   |   |
 |---|---|
@@ -43,7 +43,7 @@ At this point the form should like something similar to this:
 
 ![listview-getting-started 003](images/listview-getting-started003.png)
 
-Now, lets continue with setting the control __DataSource__, allow edit and remove operations and subscribe to the events that we are going to use in this example.
+2\. Now, lets continue with setting the control __DataSource__, allow edit and remove operations and subscribe to the events that we are going to use in this example.
 
 #### Initial settings
 
@@ -80,7 +80,7 @@ Me.RadListView1.ValueMember = "SongID"
 
 {{endregion}} 
 
-Now, lets handle those events. In the event handler for the __ItemDataBound__ event, we will take the corresponding item image from the data source and we will assign it to the **ListViewDataItem**.
+3\. Now, lets handle those events. In the event handler for the __ItemDataBound__ event, we will take the corresponding item image from the data source and we will assign it to the **ListViewDataItem**.
 
 #### Set the item image to the data item
 
@@ -107,7 +107,7 @@ End Sub
 
 {{endregion}} 
 
-Next, lets handle the __VisualItemFormatting__ event, where we will set the visual item image. Additionally, for *IconsView* we will set the visual item text to a html-like combination of the *AlbumName*, *ArtistName* and *SongName*.
+4\. Next, lets handle the __VisualItemFormatting__ event, where we will set the visual item image. Additionally, for *IconsView* we will set the visual item text to a html-like combination of the *AlbumName*, *ArtistName* and *SongName*.
 
 #### Customize visual item
 
@@ -227,7 +227,7 @@ End Sub
 
 {{endregion}} 
 
-The last event of **RadListView**, which we are going to handle is the **ViewTypeChanged** event - fired when the **ViewType** of the control is changed. This event is convenient to set view specific settings. To handle the event, we will create three helper methods:
+5\. The last event of **RadListView**, which we are going to handle is the **ViewTypeChanged** event - fired when the **ViewType** of the control is changed. This event is convenient to set view specific settings. To handle the event, we will create three helper methods:
 
 * __SetupDetailsView__ - here we will set the __AllowArbitraryItemHeight__,  property to *true*, in order to allow the items to size themselves in height, according to their content.
 
@@ -304,7 +304,7 @@ End Sub
 
 {{endregion}} 
  
-Now, we only need to fill up the __RadCommandBar__ elements functionality.  First, we are going to handle the view changing buttons. For this purpose, subscribe for the __ToggleStateChanged__ and __ToggleStateChanging__ events of all the __CommandBarToggleButtons__ that we have added earlier. In the **ToggleStateChanged** event handler, check which is the clicked button, and set the rest of the buttons to *Off*. Additionally, set the RadListView.**ViewType** according to the pressed button.
+6\. Now, we only need to fill up the __RadCommandBar__ elements functionality.  First, we are going to handle the view changing buttons. For this purpose, subscribe for the __ToggleStateChanged__ and __ToggleStateChanging__ events of all the __CommandBarToggleButtons__ that we have added earlier. In the **ToggleStateChanged** event handler, check which is the clicked button, and set the rest of the buttons to *Off*. Additionally, set the RadListView.**ViewType** according to the pressed button.
 
 #### Handle the toggle buttons
 
@@ -392,7 +392,7 @@ End Sub
 
 {{endregion}} 
 
-Next, subscribe to the __SelectedIndexChanged__ event of *commandBarDropDownSort*__CommandBarDropDownList__. In the event handler, we are going to add the desired __SortDescriptors__, according to the selected item in the drop down.
+7\. Next, subscribe to the __SelectedIndexChanged__ event of *commandBarDropDownSort*__CommandBarDropDownList__. In the event handler, we are going to add the desired __SortDescriptors__, according to the selected item in the drop down.
 
 #### Handle sorting functionality
 
@@ -502,7 +502,7 @@ End Sub
 
 {{endregion}} 
  
-Lastly, lets subscribe ot the __TextChanged__ event of *commandBarTextBoxFilter*__CommandBarTextBox__. Here we will  add __FilterDescriptor__ according to the text entered in the text box:
+8\. Lastly, lets subscribe ot the __TextChanged__ event of *commandBarTextBoxFilter*__CommandBarTextBox__. Here we will  add __FilterDescriptor__ according to the text entered in the text box:
 
 #### Handle filtering functionality
 
@@ -546,6 +546,6 @@ End Sub
 
 {{endregion}} 
 
-Run the application and try the different functionalties:<br>
+9\. Run the application and try the different functionalities: 
 
 ![listview-getting-started 005](images/listview-getting-started005.png)
