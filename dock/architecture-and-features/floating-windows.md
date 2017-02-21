@@ -21,10 +21,8 @@ There are multiple ways to float a __ToolWindow__:
 
 * Drag the __ToolWindow__ to any area within the __DockingAssistant__ other than a drop target icon, the __RadDock__ will create a new floating container with the __ToolWindow__ in it.
             
-
 * Right click the __ToolWindow__ title bar and select __Floating__ from the context menu.
-            
-
+           
 * Double-click the title bar.
 
 ## Moving a ToolWindow to an Existing Floating Window
@@ -106,7 +104,7 @@ This section describes the FloatinWindows specific properties.
 
 * [Customizing Floating Windows]({%slug winforms/dock/object-model/customizing-floating-windows%})
 * [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
-*[Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})
+* [Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})
 * [Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%}) 
 * [Document Manager]({%slug winforms/dock/architecture-and-features/document-manager%})   
 * [Understanding RadDock]({%slug winforms/dock/architecture-and-features/understanding-raddock%})

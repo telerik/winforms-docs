@@ -10,9 +10,10 @@ position: 2
 
 # Advanced Layout Designer
 
-This designer allows you to build your layout ad design-time. You can arrange the windows the same way as at-runtime.
+This designer allows you to build your layout ad design-time. You can arrange the windows the same way as at run time.
 
 >caption Figure 1: Advanced Layout Designer.
+
 ![raddock-advanced-layout-designer001](images/raddock-advanced-layout-designer001.png)  
 
 

@@ -8,6 +8,8 @@ published: True
 position: 1
 ---
 
+# Smart Tag
+
 The __Smart Tag__ of __RadDock__ lets you quickly access common tasks like adding windows to several positions. 
 
 >caption Figure 1: SmartTag 
@@ -21,8 +23,8 @@ The __Smart Tag__ of __RadDock__ lets you quickly access common tasks like addin
     - __Theme Name:__ Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style. The following article shows how you can add themes: [Using themes]({%slug winforms/themes/using-default-themes%}).
 
 * __RadDock Tasks__
-    - __Dock New Window to Left/Right/Top/Bottom:__ Adds new ToowWindow to the specified position.
-    - __Add Tabbed Document:__ Adds new DocumentWindow.
+    - __Dock New Window to Left/Right/Top/Bottom:__ Adds new **ToolWindow** to the specified position.
+    - __Add Tabbed Document:__ Adds new **DocumentWindow**.
     - __Show Advanced Layout Designer__ Opens the layout designer. 
 
 * __Learning Center:__

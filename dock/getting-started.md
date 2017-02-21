@@ -11,27 +11,28 @@ previous_url: dock-getting-started
 
 # Getting Started 
 
-This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on the left represents a list of reports. The right side of the form in __RadDock__ contains three __DocumentWindows__, each representing a report. This tutorial demonstrates the layout of __ToolWindow__ and __DocumentWindows__. It also demonstrates adding a RadTreeView control to one of the created windows and synchronizing the active DockWindow with the selection in the RadTreeView instance. 
+This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on the left represents a list of reports. The right side of the form in __RadDock__ contains three __DocumentWindows__, each representing a report. This tutorial demonstrates the layout of __ToolWindow__ and __DocumentWindows__. It also demonstrates adding a **RadTreeView** control to one of the created windows and synchronizing the active **DockWindow** with the selection in the **RadTreeView** instance. 
 
 >caption Figure 1: The final application layout.
+
 ![dock-getting-started 003](images/dock-getting-started003.png)
 
 ## Configure the RadDock
 
 1\. Drop a __RadDock__ control on the form.
 
-2\. Set the __RadDock Dock__ property to __Fill.__
+2\. Set the RadDock.__Dock__ property to *Fill*.
 
-3\. Open the `Smart Tag` and select __Show Advanced Layout Designer.__ This step will display the __RadDock Advanced Layout Designer__ dialog.
+3\. Open the **Smart Tag** and select __Show Advanced Layout Designer.__ This step will display the __RadDock Advanced Layout Designer__ dialog.
 
-4\. In the RadRibbonBar on top, click the left green arrow to dock a new __ToolWindow__ to the left.
+4\. In the **RadRibbonBar** on top, click the left green arrow to dock a new __ToolWindow__ to the left.
 
 ![dock-getting-started 001](images/dock-getting-started001.png)
 
->note The list on the left side of the preview displays all created windows. From this list you can set the __Visibility__ of the ToolWindows to *false*, if you do not need some of them visible at runtime initially.
+>note The list on the left side of the preview displays all created windows. From this list you can set the __Visibility__ of the **ToolWindows** to *false*, if you do not need some of them visible at run time initially.
 >
 
-5\. Again from the RadRibbonBar, click on the __Add DocumentWindow__ button three times to add three __DocumentWindows__ instances.
+5\. Again from the **RadRibbonBar**, click on the __Add DocumentWindow__ button three times to add three __DocumentWindows__ instances.
 
 6\. Click __Save and Close__ button to close the dialog and save the layout to the __RadDock__. 
 
@@ -39,24 +40,20 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on 
 
 For more complex scenarios the advanced layout designer provides full drag and drop and user interaction support in the preview __RadDock__ control.
 
->caution The real layout of __RadDock__ which is displayed at runtime is available only through `RadDock Advanced Layout Designer`. I.e. if you have hidden, auto-hidden or floating ToolWindows, they will be shown as such only in the advanced designer. In Visual Studio IDE we display ToolWindows in their docked state, which allows you to place and layout your controls in them.
+>caution The real layout of __RadDock__ which is displayed at run time is available only through **RadDock Advanced Layout Designer**. I.e. if you have hidden, auto-hidden or floating **ToolWindows**, they will be shown as such only in the advanced designer. In Visual Studio IDE we display **ToolWindows** in their docked state, which allows you to place and layout your controls in them.
 	
-
-7\. In the designer select the __ToolWindow__ on the left. You can verify this by checking that the currently selected component in the `Properties Window` of Visual Studio.
+7\. In the designer select the __ToolWindow__ on the left. You can verify this by checking that the currently selected component in the **Properties Window** of Visual Studio.
 
 8\. Set the __ToolWindow Text__ property to "Reports".
 
-9\. Select one of the __DocumentWindows__. To do this in the designer, select the tab (i.e. on "Document1"), then click inside the client area. Check the `Properties Window` that you have selected a __DocumentWindow__.
+9\. Select one of the __DocumentWindows__. To do this in the designer, select the tab (i.e. on "Document1"), then click inside the client area. Check the **Properties Window** that you have selected a __DocumentWindow__.
 
 10\. Set the __DocumentWindow Name__ property to "dwProductListing" and __Text__ property to "Product Listing".
             
-
-11\. Select the next __DocumentWindow,__ set the __Name__ property to "dwProductByCategory" and the __Text__ property to "Product By Category".
-            
+11\. Select the next __DocumentWindow,__ set the __Name__ property to "dwProductByCategory" and the __Text__ property to "Product By Category".      
 
 12\. Select the last __DocumentWindow,__ set the __Name__ property to "dwTop10Customers" and __Text__ property to "Top 10 Customers".
             
-
 13\. Drop a __RadTreeView__ control to the "Reports" __ToolWindow__, set the control's __Dock__ property to __Fill.__
 
 14\. Make sure that you have the __Telerik.Wincontrols.UI__ and __Telerik.Wincontrols.UI.Docking__ in the "using" (C#) or "Imports" (VB) section of the code.
@@ -79,7 +76,7 @@ Imports Telerik.WinControls.UI.Docking
 
 {{endregion}} 
  
-15\. Create a __Form Load__ event handler and copy the code below to it. This code builds the __TreeView__ node structure and links the __Name__ of each __DocumentWindow__ to the corresponding __Node Tag__ property. Each dockable object has a __Name__ property, a __String__ that uniquely identifies it. Later we use the __Name__ to locate the __DocumentWindow__ and activate it.
+15\. Create a Form.__Load__ event handler and copy the code below to it. This code builds the __TreeView__ node structure and links the __Name__ of each __DocumentWindow__ to the corresponding Node.__Tag__ property. Each dockable object has a __Name__ property, a __String__ that uniquely identifies it. Later, we use the __Name__ to locate the __DocumentWindow__ and activate it.
 
 #### Initializing RadTreeView 
  
@@ -122,13 +119,11 @@ End Sub
 
 ````
 
-{{endregion}} 
- 
+{{endregion}}  
 
-16\. Create an __SelectedNodeChanged__ event handler and add the following code to it. The code for this event handler verifies that the __Tag__ of the selected node has a value. Further, if this value corresponds to the name of an existing window in __RadDock__, the appropriate DocumentWindow gets activated.
+16\. Create a __SelectedNodeChanged__ event handler and add the following code to it. The code for this event handler verifies that the __Tag__ of the selected node has a value. Further, if this value corresponds to the name of an existing window in __RadDock__, the appropriate **DocumentWindow** gets activated.
 
-#### Handling the RadTreeView SelectedNodeChanged event 
- 
+#### Handling the RadTreeView SelectedNodeChanged event  
 
 {{source=..\SamplesCS\Dock\GettingStarted.cs region=handlingSelectedNodeChanged}} 
 {{source=..\SamplesVB\Dock\GettingStarted.vb region=handlingSelectedNodeChanged}} 

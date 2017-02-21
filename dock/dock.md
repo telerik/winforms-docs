@@ -20,29 +20,27 @@ __RadDock__ helps you manage multiple windows in your application with a docking
 * The __RadDock__ control provides a container that holds dockable windows. This container can fill the entire client area of a Form, or can be limited to any rectangular area you choose to manage.
             
 
-* Tool windows can be dragged outside their containers ("floating"), dragged to other containers, collapsed against the side of the RadDock and transformed to tabbed documents. Tool windows are supported by the ToolWindow control. You can place other controls within a ToolWindow.
+* Tool windows can be dragged outside their containers ("floating"), dragged to other containers, collapsed against the side of the **RadDock** and transformed to tabbed documents. Tool windows are supported by the **ToolWindow** control. You can place other controls within a **ToolWindow**.
 
 * Tabbed documents can be switched between, floated, resized, dragged, to arrange in various configurations and closed. Tabbed documents are supported by the DocumentWindow control. You can place other controls within a DocumentWnidow.
             
-* The `Advanced Layout Designer` gives you fully interactive design-time control over the number, position, and properties of DockWindows within a __RadDock__.
+* The *Advanced Layout Designer* gives you fully interactive design-time control over the number, position, and properties of **DockWindows** within a __RadDock__.
 
-* __RadDock__ collects and uses the information about the state of each DockWindow - FloatingSize, FloatingLocation, AutoHideSize, PreviousPosition, AutoHidePostion, etc. dynamically.
+* __RadDock__ collects and uses the information about the state of each **DockWindow** - **FloatingSize**, **FloatingLocation**, **AutoHideSize**, **PreviousPosition**, **AutoHidePostion**, etc. dynamically.
 
 * The __CloseAction__ property allows control over the window’s Close behavior.
 
-* Different sizing modes (Auto, Relative, Absolute, Fill) virtually any layout scenario can be easily achieved. The user has complete control over sizing and layout behavior.
+* Different sizing modes (*Auto*, *Relative*, *Absolute*, *Fill*) virtually any layout scenario can be easily achieved. The user has complete control over sizing and layout behavior.
 
-* RadSplitContainer composes a SplitContainerLayoutStrategy, which handles any layout request for this container. If the available size modes are not enough to fit into a layout scenario, then the entire layout strategy may be easily replaced/extended with a custom one.
+* **RadSplitContainer** composes a **SplitContainerLayoutStrategy**, which handles any layout request for this container. If the available size modes are not enough to fit into a layout scenario, then the entire layout strategy may be easily replaced/extended with a custom one.
 
-* __RadDock__ stores all sizing information per panel in a separate object allows for easy transition from one state to another and vice-versa without loosing the sizing information for each state.
+* __RadDock__ stores all sizing information per panel in a separate object, it allows easy transition from one state to another and vice-versa without loosing the sizing information for each state.            
+
+* **Load Layout** allows restoring previous scene at 100% - a layout persistence operation should now only serialize/deserialize the sizing info of each panel in order to completely store/restore its position on a split container.
+
+* Re-dock support (transition to previous docked or floating state of Dock Windows) has been completely revisited for the new **RadDock** implementation. A service-based semantic is introduced, which saves a window’s state just before any dock operation is about to occur, and this state can easily be restored later on, upon user request (such as double-clicking a window’s caption area). This allows for exact transition to previous state - floating to docked and vice-versa. Even more, if an application requires completely custom re-dock semantic, it may be easily replaced by registering a custom service, which handles internal Save/Restore requests, made by the framework.
             
-
-* `Load Layout` allows for restoring previous scene at 100% - a layout persistence operation should now only serialize/deserialize the sizing info of each panel in order to completely store/restore its position on a split container.
-
-* Re-dock support (transition to previous docked or floating state of Dock Windows) has been completely revisited for the new RadDock implementation. A service-based semantic is introduced, which saves a window’s state just before any dock operation is about to occur, and this state can easily be restored later on, upon user request (such as double-clicking a window’s caption area). This allows for exact transition to previous state - floating to docked and vice-versa. Even more, if an application requires completely custom redock semantic, it may be easily replaced by registering a custom service, which handles internal Save/Restore requests, made by the framework.
-            
-
-This sample RSS Reader implements __RadDock__ and several other Telerik UI for WinForms controls. Docked tool windows contain "Feed Subscriptions" and "Feed Items". A floating tool window contains the "Behavior" options. At bottom left, the "Output" tool window is shown collapsed against the bottom edge. The lower right side of the application displays tabbed documents containing articles.
+This sample RSS Reader implements __RadDock__ and several other Telerik UI for WinForms controls. Docked tool windows contain "*Feed Subscriptions*" and "*Feed Items*". A floating tool window contains the "*Behavior*" options. At bottom left, the "*Output*" tool window is shown collapsed against the bottom edge. The lower right side of the application displays tabbed documents containing articles.
 
 ![dock-overview 001](images/dock-overview001.png)
 
@@ -72,12 +70,11 @@ This sample RSS Reader implements __RadDock__ and several other Telerik UI for W
 
     ![dock-overview 007](images/dock-overview007.png)
 
-* Automatic MDI Support. As MDI children are added to a parent form the MDI children are added to the RadDock as tabbed documents.
+* Automatic MDI Support. As MDI children are added to a parent form the MDI children are added to the **RadDock** as tabbed documents.
 
-* Support for custom tool window and custom tabbed documents. These objects are like standard UserControl and Form objects in the designer but add docking support for free. 
+* Support for custom tool window and custom tabbed documents. These objects are like standard **UserControl** and **Form** objects in the designer but add docking support for free. 
 
 * Support for saving and loading panel layout.
-
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
