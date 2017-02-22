@@ -13,17 +13,16 @@ previous_url: dock-architecture-and-features-using-the-contextmenuservice
  
 ## Overview
  
-All context menu related operations are handled by a stand alone service, registered with RadDock - `ContextMenuService`. Each context menu request is passed to the service, which on its hand creates the appropriate menu items and raises several events, which allows users to modify existing items, add their own or even cancel the request.
+All context menu related operations are handled by a stand alone service, registered with **RadDock** - **ContextMenuService**. Each context menu request is passed to the service, which on its hand creates the appropriate menu items and raises several events, which allows users to modify existing items, add their own or even cancel the request.
  
 ## Modifying the existing context menus
  
-
-The following example demonstrates how you can hide the `Close` options from the DocumentWindow context menu. By default the menu looks like this:
+The following example demonstrates how you can hide the **Close** options from the **DocumentWindow** context menu. By default, the menu looks like this:
 
 ![dock-architecture-and-features-using-the-contextmenuservice 001](images/dock-architecture-and-features-using-the-contextmenuservice001.png)
 
  
-Let's get the ContextMenuService and subscribe to its `ContextMenuDisplaying` event:
+Let's get the **ContextMenuService** and subscribe to its **ContextMenuDisplaying** event:
 
 #### Getting the ContextMenuService 
 
@@ -43,7 +42,7 @@ AddHandler menuService.ContextMenuDisplaying, AddressOf menuService_ContextMenuD
 
 {{endregion}}  
 
-Then, hide the 'Close' options in the `ContextMenuDisplaying` event handler:
+Then, hide the 'Close' options in the **ContextMenuDisplaying** event handler:
 
 #### Hiding the 'close' menu items 
 
@@ -101,7 +100,7 @@ The result is shown on the screenshot below:
  
 ## Menu items' names 
 
-You can notice in the code snippet above that we are using the __Name__ property of the items instead of the __Text__ property. This allows you to handle the case even when a custom [RadDockLocalization]({%slug winforms/dock/localization/localization%}) provider is applied. The names for the menu items in RadDock are:
+You can notice in the code snippet above that we are using the __Name__ property of the items instead of the __Text__ property. This allows you to handle the case even when a custom [RadDockLocalization]({%slug winforms/dock/localization/localization%}) provider is applied. The names for the menu items in **RadDock** are:
  
 | __Text__ | __Name__ |
 |----|----|
@@ -120,7 +119,7 @@ You can notice in the code snippet above that we are using the __Name__ property
 # See Also
 
 [Getting Started]({%slug winforms/dock/getting-started%})
-[Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
+[Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%}) 
 [Understanding RadDock]({%slug winforms/dock/architecture-and-features/understanding-raddock%})
 [Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%}) 
 [Document Manager]({%slug winforms/dock/architecture-and-features/document-manager%})   

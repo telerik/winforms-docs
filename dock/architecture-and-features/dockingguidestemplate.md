@@ -50,7 +50,7 @@ Me.RadDock1.DockingGuidesTemplate = PredefinedDockingGuidesTemplate.VS2008
 
 __RadDock__ gives you the ability to create and use your own __DockingGuidesTemplates__. The following example explains what is contained in a DockingGuidesTemplate and how it should be set up.
           
-For our custom DockingGuidesTemplate we will use the following images (used in VS2008 template): 
+For our custom **DockingGuidesTemplate** we will use the following images (used in VS2008 template): 
 
 ||||||
 |----|----|----|----|----|
@@ -58,7 +58,7 @@ For our custom DockingGuidesTemplate we will use the following images (used in V
 | __Left Hot__ ![dock-architecture-and-features-docking-guides-template 008](images/dock-architecture-and-features-docking-guides-template008.png)| __Top Hot__ ![dock-architecture-and-features-docking-guides-template 009](images/dock-architecture-and-features-docking-guides-template009.png)| __Right Hot__ ![dock-architecture-and-features-docking-guides-template 011](images/dock-architecture-and-features-docking-guides-template011.png)| __Bottom Hot__ ![dock-architecture-and-features-docking-guides-template 012](images/dock-architecture-and-features-docking-guides-template012.png)| __Fill Hot__ ![dock-architecture-and-features-docking-guides-template 013](images/dock-architecture-and-features-docking-guides-template013.png)|
 | __Center Background__ ![dock-architecture-and-features-docking-guides-template 014](images/dock-architecture-and-features-docking-guides-template014.png)|||||
 
-We should first create a `DockingGuidesTemplate` object and then set the images and their locations on the center background image. RadDock will define its hot mouse areas on the `CenterBackground` image depending on the images' locations that we set. The left, top, right and bottom images are reused for the outer guides (outside the center "compass"): 
+We should first create a **DockingGuidesTemplate** object and then set the images and their locations on the center background image. **RadDock** will define its hot mouse areas on the **CenterBackground** image depending on the images' locations that we set. The left, top, right and bottom images are reused for the outer guides (outside the center "compass"): 
 
 {{source=..\SamplesCS\Dock\dock-architecture-and-features-docking-guides-template.cs region=Template}} 
 {{source=..\SamplesVB\Dock\dock-architecture-and-features-docking-guides-template.vb region=Template}} 
