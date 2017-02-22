@@ -5,7 +5,7 @@ description: Getting Started
 slug: winforms/propertygrid/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: propertygrid-getting-started
 ---
 
@@ -179,7 +179,7 @@ The selection of the items is controlled by either setting a certain item to the
 
 Accessing and modifying the default context menu, can be achieved by accessing the __RadContextMenu__ property of the control. For more information on how to work with menu items, please refer to our [Menu]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem%}) section. 
 
->caption Figure 1: Context Menu
+>caption Figure 2: Context Menu
 ![propertygrid-getting-started 002](images/propertygrid-getting-started002.png)
 
 There are a few properties that you can set in order to change the item appearance:  

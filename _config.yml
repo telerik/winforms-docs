@@ -822,15 +822,21 @@ navigation:
     propertygrid:
         title: PropertyGrid
         position: 370
-    propertygrid/editors:
-        title: Editors
-        position: 10
-    propertygrid/export-data:
-        title: Export Data
-        position: 11
+    propertygrid/populating-with-data:
+        title: Populating with Data
+        position: 4
+    propertygrid/customizing-apearance:
+        title: Customizing Appearance
+        position: 6
     propertygrid/features:
         title: Features
-        position: 13		
+        position: 7
+    propertygrid/editors:
+        title: Editors
+        position: 8
+    propertygrid/export-data:
+        title: Export Data
+        position: 16		
     rangeselector:
         title: RangeSelector
         position: 380

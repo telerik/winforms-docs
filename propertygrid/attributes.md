@@ -5,7 +5,7 @@ description: Attributes
 slug: winforms/propertygrid/attributes
 tags: attributes
 published: True
-position: 2
+position: 11
 previous_url: propertygrid-attributes
 ---
 

@@ -5,7 +5,7 @@ description: Custom items
 slug: winforms/propertygrid/custom-items
 tags: custom,items
 published: True
-position: 6
+position: 9
 previous_url: propertygrid-custom-items
 ---
 

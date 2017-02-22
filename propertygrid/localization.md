@@ -5,7 +5,7 @@ description: Localization
 slug: winforms/propertygrid/localization
 tags: localization
 published: True
-position: 8
+position: 15
 previous_url: propertygrid-localization
 ---
 
