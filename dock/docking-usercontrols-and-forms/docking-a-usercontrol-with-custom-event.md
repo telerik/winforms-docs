@@ -11,14 +11,13 @@ previous_url: dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-cus
 
 # Docking a UserControl with custom event
  
-
 This tutorial walks you through a real-world scenario that you can have in your application. At a high level, this scenario involves:
 
-1. Docking the user controls inside RadDock.
+1. Docking the user controls inside **RadDock**.
 
 1. Implementing events, methods and properties in the user controls which allow you to have communication between the forms/user controls.
 
-In our particular case we dock a user control instance inside a __RadDock__ instance. The user control itself contains a __RadCalendar__. When the user clicks the __RadCalendar_ a custom __DateChanged__ event for the `UserControl1` fires, showing a dialog with the selected date. Using this as a model you can create `UserControls` with custom properties, methods and events for more complex situations.
+In our particular case we dock a user control instance inside a __RadDock__ instance. The user control itself contains a __RadCalendar__. When the user clicks the __RadCalendar__ a custom __DateChanged__ event for the **UserControl1** fires, showing a dialog with the selected date. Using this as a model you can create **UserControls** with custom properties, methods and events for more complex situations.
 
 ![dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event 001](images/dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event001.png)
  
@@ -28,11 +27,11 @@ In our particular case we dock a user control instance inside a __RadDock__ inst
 
 3\. Drop a __RadCalendar__ on the __CalendarPanel__ design surface.
 
-4\. Set the RadCalendar __Dock__ property to *Fill*.
+4\. Set the RadCalendar.__Dock__ property to *Fill*.
 
-5\. In the `Property Window` locate the __SelectionChanged__ event and double-click it to create an event handler.
+5\. In the **Property Window** locate the __SelectionChanged__ event and double-click it to create an event handler.
 
-6\. Add a delegate and event to be surfaced by the CalendarPanel control when the date selection changes:
+6\. Add a delegate and event to be surfaced by the **CalendarPanel** control when the date selection changes:
 	
 #### Setting up DateChanged Event 
 
@@ -82,7 +81,7 @@ End Sub
 
 8\. Drop a __RadDock__ on the opened design surface. Set the __Dock__ property to *Fill.*
 
-9\. Dock the __CalendarPanel__ user control to __RadDock__ in the form's `Load` event handler using the following code snippet:
+9\. Dock the __CalendarPanel__ user control to __RadDock__ in the form's **Load** event handler using the following code snippet:
 	
 #### Docking CalendarPanel user control in RadDock 
 
@@ -106,7 +105,7 @@ AddHandler calendarPanel.DateChanged, AddressOf calendarPanel_DateChanged
 
 {{endregion}} 
  
-10\. Add an event handler for the CalendarPanel `DateChanged` event:
+10\. Add an event handler for the CalendarPanel **DateChanged** event:
 	
 #### Handling the Custom DateChanged event 
 

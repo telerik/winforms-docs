@@ -11,9 +11,9 @@ previous_url: dock-object-model-allowed-dock-states
 
 # AllowedDockStates
  
-__AllowedDockState__ property gives you the ability to determine the available dock states per ToolWindow. There are several options for this properties which can be combined by bitwise operations. For example:
+__AllowedDockState__ property gives you the ability to determine the available dock states per **ToolWindow**. There are several options for this properties which can be combined by bitwise operations. For example:
 
-#### Allow two stats only.
+#### Allow two states only.
 
 {{source=..\SamplesCS\Dock\CreatingRadDock.cs region=allowedDockState}} 
 {{source=..\SamplesVB\Dock\CreatingRadDock.vb region=allowedDockState}} 

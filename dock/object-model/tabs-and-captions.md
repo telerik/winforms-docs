@@ -15,8 +15,7 @@ previous_url: dock-object-model-tabs-and-captions
 | ------ | ------ |
 |[RadDock Tab Alignment/Visibility and Automation](http://tv.telerik.com/watch/winforms/raddock/raddock-tab-alignmentvisibility-automation)In this video, you will learn about some of the new features provided in the R3 2009 release of the RadDock. These features include tab alignment and visibility as well as drag and drop automation.|![dock-object-model-tabs-and-captions 007](images/dock-object-model-tabs-and-captions007.png)|
 
-
-### __RadDock__ exposes several properties which allow you to have full control over the visibility and the position of the tabs/captions:
+__RadDock__ exposes several properties which allow you to have full control over the visibility and the position of the tabs/captions:
 
 * __DocumentTabAlignment:__ defines the position of the tabs for all `DocumentTabStrip` instances in __RadDock__.
 
@@ -60,7 +59,7 @@ Me.RadDock1.DocumentTabsVisible = False
 
 ![dock-object-model-tabs-and-captions 002](images/dock-object-model-tabs-and-captions002.png)
 
-* __ToolTabAlignment:__ defines the position of the tabs for all ToolTabStrip instances in RadDock:
+* __ToolTabAlignment:__ defines the position of the tabs for all **ToolTabStrip** instances in **RadDock**:
 
 #### Setting the ToolTabsAlignment to Right 
 
@@ -101,7 +100,7 @@ Me.RadDock1.ToolTabsVisible = False
 
 ![dock-object-model-tabs-and-captions 004](images/dock-object-model-tabs-and-captions004.png)
 
-* __CaptionVisible:__ allows you to hide the caption of a single `ToolTabStrip`.
+* __CaptionVisible:__ allows you to hide the caption of a single **ToolTabStrip**.
 
 #### Hiding the caption of ToolTabStrip 
 
@@ -121,7 +120,7 @@ Me.ToolTabStrip1.CaptionVisible = False
 
 ![dock-object-model-tabs-and-captions 005](images/dock-object-model-tabs-and-captions005.png)
 
-* __ShowToolCloseButton and ShowDocumentCloseButton:__  displays/hides close buttons in the `ToolWindow/DocumentWindow` tabs.
+* __ShowToolCloseButton and ShowDocumentCloseButton:__  displays/hides close buttons in the **ToolWindow**/**DocumentWindow** tabs.
 
 #### Showing close buttons 
 

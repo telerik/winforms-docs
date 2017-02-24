@@ -11,13 +11,13 @@ previous_url: dock-object-model-accessing-dockwindows
 
 # Accessing DockWindows
 
-The __DockWindows__ property returns an array of all DockWindow in a __RadDock__ instance and gives you two useful properties and one method:
+The __DockWindows__ property returns an array of all **DockWindow** in a __RadDock__ instance and gives you two useful properties and one method:
 
-* __ToolWindows:__ Returns an array of ToolWindows.
+* __ToolWindows:__ Returns an array of **ToolWindows**.
 
-* __DocumentWindows:__ Returns an array of DocumentWindows.
+* __DocumentWindows:__ Returns an array of **DocumentWindows**.
 
-* __GetWindows(DockState state):__ Returns an array of DockWindows that are put in a specific DockState. For example, the following code snippet will return an array of DockWindows that are currently hidden: 
+* __GetWindows(DockState state):__ Returns an array of **DockWindows** that are put in a specific **DockState**. For example, the following code snippet will return an array of **DockWindows** that are currently hidden: 
 
 {{source=..\SamplesCS\Dock\CreatingWindows.cs region=gettingHiddenWindows}} 
 {{source=..\SamplesVB\Dock\CreatingWindows.vb region=gettingHiddenWindows}} 

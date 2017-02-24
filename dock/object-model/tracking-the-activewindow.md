@@ -11,7 +11,7 @@ previous_url: dock-object-model-tracking-the-activewindow
 
 # Tracking the ActiveWindow
 
-In certain scenarios you may need to track the moment the __ActiveWindow__ of __RadDock__ is being changed. For this purpose RadDock exposes two events:
+In certain scenarios you may need to track the moment the __ActiveWindow__ of __RadDock__ is being changed. For this purpose **RadDock** exposes two events:
       
 
 * __ActiveWindowChanging:__ This event is fired when the active window is about to be changed, but it is still not changed. This allows you to cancel the active window changing operation. Depending on the scenario, you may need to understand which the currently active window is and which is the window that is about to become active. For this purpose, the event arguments of `ActiveWindowChanging` expose two useful properties:
@@ -30,7 +30,7 @@ In certain scenarios you may need to track the moment the __ActiveWindow__ of __
     * __DockWindow__: returns the activated window.
             
 
-Considering the same scenario, where the currently active window is `toolWindow2`, activating the `toolWindow1` will first fire `ActiveWindowChanging` and if it is not canceled, `ActiveWindowChanged` will be fired. There, the __DockWindow__ property from the event arguments will return `toolWindow1`. In this case, you may also use __RadDock.ActiveWindow__ that will also return `toolWindow1`.
+Considering the same scenario, where the currently active window is `toolWindow2`, activating the `toolWindow1` will first fire **ActiveWindowChanging** and if it is not canceled, **ActiveWindowChanged** will be fired. There, the __DockWindow__ property from the event arguments will return `toolWindow1`. In this case, you may also use __RadDock.ActiveWindow__ that will also return `toolWindow1`.
         
 # See Also
 

@@ -11,7 +11,7 @@ previous_url: dock-docking-usercontrols-and-forms-getting-started
 
 # Getting Started
  
-In order to dock your UserControls and Forms in __RadDock__, you just need to use the DockControl method. This method will dock a Form, a UserControl, or simply any Control. A HostWindow with DockType ToolWindow will be created to host the Control.
+In order to dock your **UserControls** and **Forms** in __RadDock__, you just need to use the **DockControl** method. This method will dock a Form, a **UserControl**, or simply any **Control**. A **HostWindow** with **DockType** *ToolWindow* will be created to host the **Control**.
 
 For example, the following code snippet will result in the screenshot shown below:
 
@@ -38,7 +38,6 @@ form.Show()
 ````
 
 {{endregion}} 
-
 
 ![dock-docking-usercontrols-and-forms-getting-started 001](images/dock-docking-usercontrols-and-forms-getting-started001.png)
 

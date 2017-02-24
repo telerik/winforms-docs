@@ -15,17 +15,17 @@ In this tutorial we are going to create an advanced layout of __ToolWindows__ an
 
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 001](images/dock-object-model-example-building-an-advanced-layout-at-runtime001.png)
 
-We will have a floating window with two ToolWindows and dimensions of the floating window 150 height and 300 width. An interesting part of building the layout is using the __SizeInfo__ property of the TabStrip containers. This property gives you:
+We will have a floating window with two **ToolWindows** and dimensions of the floating window 150 height and 300 width. An interesting part of building the layout is using the __SizeInfo__ property of the **TabStrip** containers. This property gives you:
 
-* The ability to set a precise size of a TabStrip which will not be changed when a user resizes the whole __RadDock__ control. For example, the TabStrip of `window7` will not be resized when we resize the whole form. Its width will always be 150 unless we explicitly resize the TabStrip of the `window7` by using the splitter. 
+* The ability to set a precise size of a **TabStrip** which will not be changed when a user resizes the whole __RadDock__ control. For example, the **TabStrip** of `window7` will not be resized when we resize the whole form. Its width will always be 150 unless we explicitly resize the **TabStrip** of the `window7` by using the splitter. 
 
-* The ability to set a relative size of a TabStrip so to keep two TabStrips in a specific size ratio. When we resize the form, the TabStrips of `window1` and `window2` will keep the ration of 1:2 between them - the TabStrip of `window2` having 1/3 parts and the TabStrip of `window1` having 2/3 parts. 
+* The ability to set a relative size of a **TabStrip** so to keep two **TabStrips** in a specific size ratio. When we resize the form, the **TabStrips** of `window1` and `window2` will keep the ration of 1:2 between them - the **TabStrip** of `window2` having 1/3 parts and the **TabStrip** of `window1` having 2/3 parts. 
 
 So, let's start building the layout:
 
-1\. First, let's drag and drop a __RadDock__ instance on our form. Set the __Dock__ property to *Fill*. Subscribe to the `Load` event which we will use to implement our windows layout.
+1\. First, let's drag and drop a __RadDock__ instance on our form. Set the __Dock__ property to *Fill*. Subscribe to the **Load** event which we will use to implement our windows layout.
 
-2\. Next, we are going to make to ToolWindows. The first one will be docked left, and the other will be docked left-bottom. For this case we need to give the first ToolWindow as a target in the DockWindow method responsible for docking the second ToolWindow:
+2\. Next, we are going to make to **ToolWindows**. The first one will be docked left, and the other will be docked left-bottom. For this case we need to give the first **ToolWindow** as a target in the **DockWindow** method responsible for docking the second **ToolWindow**:
 
 #### Docking two ToolWindows 
 
@@ -79,7 +79,7 @@ The result is shown on the picture below:
 
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 003](images/dock-object-model-example-building-an-advanced-layout-at-runtime003.png)
 
-Now if we decide to resize the form, the ration of the TabStrips' height will be kept:
+Now, if we decide to resize the form, the ration of the **TabStrips**' height will be kept:
 
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 004](images/dock-object-model-example-building-an-advanced-layout-at-runtime004.png)
  
@@ -121,7 +121,7 @@ This time we set the __Width__ of the `window4` to an absolute value of 150 pixe
 
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 006](images/dock-object-model-example-building-an-advanced-layout-at-runtime006.png)
 
-5\. Add two more ToolWindows. The interesting thing here is that these ToolWindows will be in a __Floating__ *DockState*. Please note that you can give the size and location of the form that will host the ToolWindows.
+5\. Add two more **ToolWindows**. The interesting thing here is that these **ToolWindows** will be in a __Floating__ *DockState*. Please note that you can give the size and location of the form that will host the **ToolWindows**.
 
 #### Floating ToolWindows 
 
@@ -149,10 +149,9 @@ Me.RadDock1.DockWindow(window6, window5, DockPosition.Right)
 
 {{endregion}} 
 
-
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 007](images/dock-object-model-example-building-an-advanced-layout-at-runtime007.png) 
 
-6\. We will add one more ToolWindow. The specific thing here is that although the ToolWindow should be auto-hidden to `Bottom` if the user decides to click the `Pin` button, this window will be auto-hidden to top. This is done with the help of __AutoHidePosition__ property of the TabStrip which hosts the ToolWindow. In addition, this auto-hidden window will have a specific size of (200, 200). Since the __AutoHidePosition__ is set to *Top*, Height of the given size will be taken into consideration:
+6\. We will add one more **ToolWindow**. The specific thing here is that although the **ToolWindow** should be auto-hidden to `Bottom` if the user decides to click the `Pin` button, this window will be auto-hidden to top. This is done with the help of __AutoHidePosition__ property of the **TabStrip** which hosts the **ToolWindow**. In addition, this auto-hidden window will have a specific size of (200, 200). Since the __AutoHidePosition__ is set to *Top*, **Height** of the given size will be taken into consideration:
 
 #### Setting the AutoHidePosition and AutoHideSize properties 
 
@@ -186,7 +185,7 @@ If the user clicks the `Pin` button of `window7`, it will become auto-hidden to 
 
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 009](images/dock-object-model-example-building-an-advanced-layout-at-runtime009.png)
 
-7\. Finally, we should decide if we want to show several DocumentWindows. If yes, we can add them as shown below:
+7\. Finally, we should decide if we want to show several **DocumentWindows**. If yes, we can add them as shown below:
 
 #### Adding DocumentWindows 
 
@@ -217,7 +216,7 @@ Me.RadDock1.AddDocument(document2, document1, DockPosition.Bottom)
 
 ![dock-object-model-example-building-an-advanced-layout-at-runtime 010](images/dock-object-model-example-building-an-advanced-layout-at-runtime010.png)
 
-However, you may not want to have any documents. In this can set the __MainDocumentContainerVisible__ property to *false*:
+However, you may not want to have any documents. In this case, set the __MainDocumentContainerVisible__ property to *false*:
 
 #### Hiding the main DocumentContainer 
 

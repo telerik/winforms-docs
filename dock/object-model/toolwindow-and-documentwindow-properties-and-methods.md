@@ -21,7 +21,7 @@ __ToolWindow__ and __DocumentWindow__ both implement the same interfaces, such a
 * __DockState:__ Specifies the current state of the __DockWindow__. You can set __DockState__ to __Docked__, __Floating__, __AutoHide__, __Hidden__, __TabbedDocument__.
             
 
-* __DockType:__ This read-only property contains one of the __Telerik.WinControls.Dock.DockType__ enumeration members __ToolWindow__ (for ToolWindow) or __Document__ (for DocumentWindow).
+* __DockType:__ This read-only property contains one of the __Telerik.WinControls.Dock.DockType__ enumeration members __ToolWindow__ (for **ToolWindow**) or __Document__ (for **DocumentWindow**).
             
 
 * __Name:__ This property uniquely identifies each dock panel or tabbed document. Use this property when saving and restoring content. See [Loading and Saving Layouts]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%}) for more information.
@@ -35,9 +35,9 @@ __ToolWindow__ and __DocumentWindow__ both implement the same interfaces, such a
 
 ## Methods
 
-* __Close:__ Closes a ToolWindow or a DocumentWindow. The ToolWindow/DocumentWindow can be just hidden or directly disposed. This depends on its default behavior and the __CloseAction__ property. For additional information refer to [Removing ToolWindow and DocumentWindow at Runtime]({%slug winforms/dock/object-model/removing-toolwindow-and-documentwindow-at-runtime%}).
+* __Close:__ Closes a **ToolWindow** or a **DocumentWindow**. The **ToolWindow**/**DocumentWindow** can be just hidden or directly disposed. This depends on its default behavior and the __CloseAction__ property. For additional information refer to [Removing ToolWindow and DocumentWindow at Runtime]({%slug winforms/dock/object-model/removing-toolwindow-and-documentwindow-at-runtime%}).
 
-* __Show:__ Shows a hidden ToolWindow or DocumentWindow.
+* __Show:__ Shows a hidden **ToolWindow** or **DocumentWindow**.
 
 * __DockTo(DockWindow window, DockPosition dockPosition):__ Docks a window with another window in the same container. The example below docks "Bottom Window" to the container of "Top Window".
 

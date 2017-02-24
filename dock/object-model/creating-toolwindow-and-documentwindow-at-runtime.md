@@ -175,11 +175,11 @@ End Sub
 ````
 
 {{endregion}}  
-However, this API docks the windows to right of RadDock, not taking into consideration other right-docked windows:
+However, this API docks the windows to right of **RadDock**, not taking into consideration other right-docked windows:
 
 ![dock-object-model-creating-toolwindow-and-documentwindow-at-runtime 002](images/dock-object-model-creating-toolwindow-and-documentwindow-at-runtime002.png)
 
-So, we need to follow another approach. What we need to do is to globally define a `ToolTabStrip` variable that would be set the first time a window is right-docked. Then, the next time we dock a window, we will do it in the context of the already created ToolTabStrip. Here is what should be done in code on click of the menu items:
+So, we need to follow another approach. What we need to do is to globally define a **ToolTabStrip** variable that would be set the first time a window is right-docked. Then, the next time we dock a window, we will do it in the context of the already created **ToolTabStrip**. Here is what should be done in code on click of the menu items:
 
 
 {{source=..\SamplesCS\Dock\How-To\DockingWindowsToRight.cs region=menuItemsClick}} 

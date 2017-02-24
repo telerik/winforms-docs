@@ -128,6 +128,8 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 * Themes
 
 	* [ThemeManager]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form%})
+	
+	* ControlDefault
 
 	* AquaTheme
 
@@ -147,11 +149,23 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 
 	* Office2010BlueTheme
 	
+	* Office2013DarkTheme
+	
+	* Office2013LightTheme
+	
 	* TelerikMetroBlueTheme
 
 	* TelerikMetroTheme
+	
+	* TelerikMetroTouchTheme
 
 	* Windows7Theme
+	
+	* Windows8Theme
+	
+	* VisualStudio2012DarkTheme
+	
+	* VisualStudio2012Light
 
 * [Theme Color Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%}) 
 
