@@ -92,7 +92,33 @@ The following example shows how you can add descriptors that will be reflected i
 #### Setting filters for Excel-like filtering
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=Excel}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=Excel}} 
+{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=Excel}}
+````C#
+var filterDescriptor = new FilterDescriptor();
+filterDescriptor.PropertyName = "Title";
+filterDescriptor.Value = "Sales Representative";
+filterDescriptor.Operator = FilterOperator.IsNotEqualTo;
+var cfd = new CompositeFilterDescriptor();
+cfd.LogicalOperator = FilterLogicalOperator.And;
+cfd.FilterDescriptors.Add(filterDescriptor);
+cfd.IsFilterEditor = true;
+this.radGridView1.FilterDescriptors.Add(cfd);
+this.radGridView1.MasterTemplate.ExcelFilteredColumns.Add(this.radGridView1.Columns["Title"]);
+
+````
+````VB.NET
+Dim filterDescriptor As New FilterDescriptor()
+filterDescriptor.PropertyName = "Title"
+filterDescriptor.Value = "Sales Representative"
+filterDescriptor.Operator = FilterOperator.IsNotEqualTo
+Dim cfd As New CompositeFilterDescriptor()
+cfd.LogicalOperator = FilterLogicalOperator.And
+cfd.FilterDescriptors.Add(filterDescriptor)
+cfd.IsFilterEditor = True
+Me.RadGridView1.FilterDescriptors.Add(cfd)
+Me.RadGridView1.MasterTemplate.ExcelFilteredColumns.Add(Me.RadGridView1.Columns("Title"))
+
+```` 
 
 
 
