@@ -85,7 +85,18 @@ Me.RadGridView1.FilterDescriptors.Add(filterDescriptor2)
 
 {{endregion}} 
 
+## Setting Filters for Excel-like filtering
 
+The following example shows how you can add descriptors that will be reflected in the [Excel-like]({%slug winforms/gridview/filtering/excel-like-filtering%}) filter popup.
+
+#### Setting filters for Excel-like filtering
+
+{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=Excel}} 
+{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=Excel}} 
+
+
+
+{{endregion}} 
 
 # See Also
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
