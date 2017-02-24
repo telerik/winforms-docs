@@ -1,8 +1,8 @@
 ---
 title: Overview
-page_title: Editors | UI for WinForms Documentation
-description: Editors
-slug: winforms/propertygrid/editors
+page_title: Editors | RadPropertyGrid
+description: RadPropertyGrid allows the end users to edit the contents of the selected item.
+slug: winforms/propertygrid/editors/overview
 tags: editors
 published: True
 position: 0
@@ -32,7 +32,7 @@ You can configure RadPropertyGrid so that items enter edit mode directly when th
 There are a number of build-in ediotrs which are used for editing different data types. These editors can be customized or can be replaced by custom editors all together. Here is a list of the build-in ediotrs and the data types they are used for: 
 
 |   |   |
-|---|---|
+|---|------|
 |PropertyGridBrowseEditor|Used for editing of type image.|
 |PropertyGridColorEditor|Used for editing of type color.|
 |PropertyGridDateTimeEditor|Used for editing of type DateTime.|
@@ -42,10 +42,16 @@ There are a number of build-in ediotrs which are used for editing different data
 |PropertyGridUITypeEditor|Used for editing data types that have a UITypeEditor and are not covered by other editors.|
 
 |   |   |
-|---|---|
+|---|------|
 |[API]({%slug winforms/propertygrid/editors/api%})|Demonstrates how to control the editing process programmatically.|
 |[Events]({%slug winforms/propertygrid/editors/events%})|Demonstrates all events that occur during this process.|
 |[Data validation]({%slug winforms/propertygrid/editors/validation%})|Demonstrates how to validate data in RadPropertyGrid.|
 |[Customizing editor behavior]({%slug winforms/propertygrid/editors/customizing-editor-behavior%})|Demonstrates how to change editor behavior.|
 |[Using custom editors]({%slug winforms/propertygrid/editors/using-custom-editor%})|Demonstrates how to replace the standard editors with a custom one.|
-|[Handling editor events]({%slug winforms/propertygrid/editors/handling-editors'-events%})|Demonstrates how to handle editor events.|
+|[Handling editor events]({%slug winforms/propertygrid/editors/handling-editors-events%})|Demonstrates how to handle editor events.|
+
+# See Also
+
+* [Events]({%slug winforms/propertygrid/editors/events%})
+* [Validation]({%slug winforms/propertygrid/editors/validation%})
+* [Custom Editors]({%slug winforms/propertygrid/editors/using-custom-editor%})

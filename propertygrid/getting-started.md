@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started | RadPropertyGrid
+description: This documentation article will demonstrate the basic features of **RadPropertyGrid** control.
 slug: winforms/propertygrid/getting-started
 tags: getting,started
 published: True
@@ -15,9 +15,9 @@ previous_url: propertygrid-getting-started
 | ----- | --- |
 |RadPropertyGrid provides an easy and versatile approach to processing data objects' properties. Utilizing its autogeneration features and the intuitive custom editors apabilities, users would be able either to display data in a way that best fits their needs or modify it with minimal effort. RadPropertyGrid can be bound to an item with just a single line of code and you may start exploring or editing its properties. The property editor controls are auto generated - text fields for string properties, DateTimePickers for dates, ComboBoxes for enums and Booleans, RadColorPicker for colors. In addition, RadPropertyGrid allows flexible manual settings and customization of editors. RadPropertyGrid also supports scrolling operations via touch interface.|[ Getting started with RadPropertyGrid ](http://tv.telerik.com/watch/winforms/getting-started-with-teleriks-radpropertygrid)<br>![propertygrid-getting-started 000](images/propertygrid-getting-started000.png)|
 
-The following example will demonstrate the basic functionalities of RadPropertyGrid control. Let’s start with adding RadPropertyGrid control to a RadForm. In the code behind we will set the __SelectedObject__ property of the control to an object, which properties we  want to display. For the sake of this example we will use the element of the control – __PropertyGridElement__. 
+The following example will demonstrate the basic functionalities of **RadPropertyGrid** control. Let’s start with adding **RadPropertyGrid** control to a **RadForm**. In the code behind we will set the **SelectedObject** property of the control to an object, which properties we  want to display. For the sake of this example we will use the element of the control – **PropertyGridElement**. 
 
-#### Setting the SelectedObject of RadPropertyGrid
+#### RadPropertyGrid`s SelectedObject
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=SelectedObject}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=SelectedObject}} 
@@ -107,11 +107,11 @@ End Sub
 
 By default, opening the editor for editing is done by double clicking the editor. This behavior can be easily changed by selecting one of the predefined options of the __BeginEditMode__ property. The options to choose from are follows:
 
-* __BeginEditOnClick__ – the editor is opened on the first click
+* **BeginEditOnClick**: The editor is opened on the first click
 
-* __BeginEditOnDoubleClick__ – the editor is opened on double click
+* **BeginEditOnDoubleClick**: The editor is opened on double click
 
-* __BeginEditoProgramatically__ – the editor can be opened only programmatically (by calling BeginEdit() method)
+* **BeginEditoProgramatically**: The editor can be opened only programmatically (by calling BeginEdit() method)
 
 #### Begin Edit Mode
 
@@ -129,17 +129,17 @@ RadPropertyGrid1.BeginEditMode = RadPropertyGridBeginEditModes.BeginEditOnClick
 
 {{endregion}}
 
-To set the default sorting or grouping of the properties, just set the __PropertySort__ property, to one of the enumerated values: 
+To set the default sorting or grouping of the properties, just set the **PropertySort** property, to one of the enumerated values: 
 
-* __Alphabetical__ – sorts the properties according to the __SortOrder__ setting (*Ascending* or *Descending*)
+* **Alphabetical**: Sorts the properties according to the **SortOrder** setting (*Ascending* or *Descending*)
 
-* __Categorized__– groups the properties according to their __Category__ attribute
+* **Categorized**: Groups the properties according to their **Category** attribute
 
-* __CategorizedAlphabetical__– groups the properties according to their __Category__ attribute and sorts them Alphabetically, according to the __SortOrder__ setting (*Ascending* or *Descending*)
+* **CategorizedAlphabetical**: Groups the properties according to their __Category__ attribute and sorts them Alphabetically, according to the **SortOrder** setting (*Ascending* or *Descending*)
 
-* __None__ – removes sorting and grouping
+* **None**: Removes sorting and grouping
 
-#### Group by categories
+#### Group by Categories
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=PropertySort}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=PropertySort}} 
@@ -155,9 +155,9 @@ RadPropertyGrid1.PropertySort = PropertySort.Categorized
 
 {{endregion}}
 
-You can control the sort order, by setting the __SortOrder__ property of the control. Possible values are *Ascending*, *Descending* and *None*:
+You can control the sort order, by setting the **SortOrder** property of the control. Possible values are *Ascending*, *Descending* and *None*:
 
-#### Setting the sort order
+#### Setting the Sort Order
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=SortOrder}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=SortOrder}} 
@@ -184,11 +184,11 @@ Accessing and modifying the default context menu, can be achieved by accessing t
 
 There are a few properties that you can set in order to change the item appearance:  
 
-* __ItemHeight__ - sets the visible items height.
+* **ItemHeight**: Sets the visible items height.
 
-* __ItemSpacing__ - sets the spacing between the items.
+* **ItemSpacing**: Sets the spacing between the items.
 
-* __ItemIndent__ - sets the indent space in the beginning of the items.
+* **ItemIndent**: Sets the indent space in the beginning of the items.
 
 #### Item Settings
 
@@ -214,4 +214,9 @@ Me.RadPropertyGrid1.ItemSpacing = 1
 >caption Figure 3: Selected Object
 ![propertygrid-getting-started 003](images/propertygrid-getting-started003.png)
 
-At the end, if you want to expand all groups automatically, you can set the __AutoExpandGroups__ to *true* (which is also the default setting).
+At the end, if you want to expand all groups automatically, you can set the **AutoExpandGroups** to *true* (which is also the default setting).
+
+# See Also
+
+* [Structure]({%slug winforms/propertygrid/structure%})
+* [Design Time]({%slug winforms/propertygrid/design-time%})

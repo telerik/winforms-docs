@@ -20,7 +20,12 @@ previous_url: propertygrid-overview
 **RadPropertyGrid** also includes a help bar at the bottom where the name of the selected property is displayed along with the description from the DescriptionAttribute of the property. Both bars can be easily shown or hidden by setting a single property for each bar.
 
 For those of you who would like to additionally customize **RadPropertyGrid**, the good news is that this control can be easily extended by adding elements to it, such as your custom toolbars or another type of [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%})
-element. You can add elements to the RadPropertyGrid or the tool bar itself.
+element. You can add elements to the **RadPropertyGrid** or the tool bar itself.
 
 As to the editing capabilities, **RadPropertyGrid** allows you to control the process of editing all the way through - from the initialization and the type of editor used to validation and value changing events.
         
+# See Also
+
+* [Getting Started]({%slug winforms/propertygrid/getting-started%})
+* [Structure]({%slug winforms/propertygrid/structure%})
+* [Design Time]({%slug winforms/propertygrid/design-time%})

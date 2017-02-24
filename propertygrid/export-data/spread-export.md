@@ -1,6 +1,6 @@
 ---
 title: Spread Export
-page_title: Spread Export | UI for WinForms Documentation
+page_title: Spread Export | RadPropertyGrid
 description: Spread Export
 slug: winforms/propertygrid/export-data/spread-export
 tags: spread,export
@@ -19,7 +19,7 @@ __PropertyGridSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.tele
 
 Here is how the following __RadPropertyGrid__, looks when it is exported.
       
->caption Figure 1: Before and after export
+>caption Figure 1: Before and After Export
 
 ![propertygrid-export-data-spreadexport 001](images/propertygrid-export-data-spreadexport001.png)<br>![propertygrid-export-data-spreadexport 002](images/propertygrid-export-data-spreadexport002.png)
 
@@ -36,7 +36,6 @@ Here is how the following __RadPropertyGrid__, looks when it is exported.
 * Telerik.Windows.Maths
 * Telerik.Windows.Zip
 >
-
 
 ## Exporting Data
 
@@ -64,7 +63,7 @@ exporter.RunExport("C:\ExportedFile.xlsx", renderer)
 
 The __RunExport__ method has several overloads allowing the user to export using a stream as well:
 
-####  Running export synchronously using a stream
+####  Running Export Synchronously Using a Stream
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridExportCode.cs region=StreamRunExport}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridExportCode.vb region=StreamRunExport}} 
@@ -156,7 +155,7 @@ End Sub
 
 {{endregion}} 
 
->caption Figure 2: Export using formating
+>caption Figure 2: Export Using Formating
 
 ![propertygrid-export-data-spreadexport 004](images/propertygrid-export-data-spreadexport004.png)
 
@@ -237,7 +236,7 @@ End Sub
 
 The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
 
-####  Running export asynchronously using a stream
+####  Running Export Asynchronously Using a Stream
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridExportCode.cs region=StreamRunExportAsync}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridExportCode.vb region=StreamRunExportAsync}} 

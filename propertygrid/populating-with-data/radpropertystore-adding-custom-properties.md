@@ -1,23 +1,23 @@
 ---
-title: RadPropertyStore - adding custom properties
-page_title: RadPropertyStore - adding custom properties | UI for WinForms Documentation
-description: RadPropertyStore - adding custom properties
-slug: winforms/propertygrid/radpropertystore---adding-custom-properties
-tags: radpropertystore,-,adding,custom,properties
+title: RadPropertyStore - Adding Custom Properties
+page_title: RadPropertyStore - Adding Custom Properties | RadPropertyGrid
+description: The RadPropertyStore allow RadPropertyGrid to display and edit custom properties.
+slug: winforms/propertygrid/populating-with-data/radpropertystore-adding-custom-properties
+tags: radpropertystore,adding,custom,properties
 published: True
 position: 3
 previous_url: propertygrid-radpropertystore
 ---
 
-# RadPropertyStore - adding custom properties
+# RadPropertyStore - Adding Custom Properties
 
-To get started with the RadPropertyStore follow these three steps:
+To get started with the **RadPropertyStore** follow these three steps:
 
-* Create a new instance of the RadPropertyStore.
+* Create a new instance of the **RadPropertyStore**.
 
 * Fill it with PropertyStoreItems.
 
-* Set it as SelectedObject of RadPropertyGrid.
+* Set it as **SelectedObject** of **RadPropertyGrid**.
 
 #### Using RadPropertyStore
 
@@ -53,11 +53,13 @@ Me.RadPropertyGrid1.SelectedObject = store
 
 {{endregion}}
 
+>caption Figure 1: RadPropertyStore
+
 ![propertygrid-radpropertystore 001](images/propertygrid-radpropertystore001.png)
 
-You can then use the RadPropertyGrid to edit the PropertyStoreItems values as if they were properties of an object. You can also change the value of a given property in the RadPropertyStore and the change will be reflected immediately in the RadPropertyGrid. Additionally you can also add or remove items from the RadPropertyStore during runtime and again all changes will be reflected in the __RadPropertyGrid__.
+You can then use the **RadPropertyGrid** to edit the **PropertyStoreItems** values as if they were properties of an object. You can also change the value of a given property in the RadPropertyStore and the change will be reflected immediately in the RadPropertyGrid. Additionally you can also add or remove items from the RadPropertyStore during runtime and again all changes will be reflected in the **RadPropertyGrid**.
 
-#### Add/Remove/Edit PropertyStoreItems through code
+#### Add/Remove/Edit PropertyStoreItems
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridRadPropertyStore.cs region=modifyStore}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridRadPropertyStore.vb region=modifyStore}} 
@@ -83,4 +85,5 @@ You have to provide a value of the same type as the PropertyStoreItem or a value
 
 # See Also
 
- * [How to implement a TypeConverter](http://msdn.microsoft.com/en-us/library/ayybcxe5.aspx)
+* [Binding to Mutitple Objects]({%slug winforms/propertygrid/populating-with-data/binding-to-multiple-objects%})
+* [How to implement a TypeConverter](http://msdn.microsoft.com/en-us/library/ayybcxe5.aspx)

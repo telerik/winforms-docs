@@ -1,51 +1,98 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties Methods and Events | RadPropertyGrid
-description: This article describes the more important properties methods and events of RadCollapsiblePanel.
-slug: winforms/propertygrid/properties-methods-events
-tags: radcollapsiblepanel, properties, events
+page_title: Properties, Methods, Events | RadPropertyGrid
+description: RadPropertyGrid for WinForms displays the properties of a given object in a user-friendly way allowing the end-user to edit these properties using our editors..
+slug: winforms/propertygrid/properties-methods-and-events
+tags: propertygrid, properties, methods, events
 published: True
-position: 5
+position: 7
 ---
 
 # Properties
 
 |Property|Description|
 |------|------|
-|**ExpandDirection**|Gets or sets the expand direction.|
-|**EnableAnimation**|Gets or sets a value indicating whether to use animation to expand or collapse the control.|
-|**ContentSizingMode**|Gets or sets the content sizing mode.|
-|**IsExpanded**|Gets a or Sets value indicating whether the control is expanded.|
-|**IsAnimating**|Gets a value indicating whether the control is currently animating.|
-|**ShowHeaderLine**|Gets or sets a value indicating whether to show a line primitive in the header.|
-|**HorizontalHeaderAlignment**|Gets or sets the horizontal header alignment.|
-|**VerticalHeaderAlignment**|Gets or sets the vertical header alignment.|
-|**HeaderText**|Gets or sets the header text.|
-|**AnimationInterval**|Gets or sets the animation interval.|
-|**AnimationFrames**|Gets or sets the animation frames.|
-|**AnimationEasingType**|Gets or sets the easing type to be applied to the animation when expanding or collapsing|
-|**AnimationType**|Gets or sets the type of the expand or collapse animation.|
-|**BackColor**|Gets or sets the BackColor of the control. This is actually the BackColor property of the root element.|
+|**EnableKineticScrolling**|Gets or sets a value indicating whether the kinetic scrolling function is enabled.|
+|**EnableCustomGrouping**|Gets or sets a value indicating whether the data can be grouped programmatically.|
+|**IsEditing**|Gets a value indicating whether there are currently open editors.|
+|**ReadOnly**|Gets or sets a value indicating whether the user is allowed to edit the values of the properties.|
+|**ActiveEditor**|Gets the active editor.|
+|**BeginEditMode**|Gets or sets a value indicating how user begins editing a cell.|
+|**AutoExpandGroups**|Gets or sets a value indicating whether the groups will be expanded or collapsed upon creation.|
+|**RadContextMenu**|Gets or sets the shortcut menu associated with the control.|
+|**AllowDefaultContextMenu**|Gets or sets a value indicating whether the default context menu is enabled.|
+|**KeyboardSearchEnabled**|Gets or sets a value that determines whether the user can navigate to an item by typing when RadPropertyGrid is focused.|
+|**KeyboardSearchResetInterval**|Gets or sets a value that specifies how long the user must wait before searching with the keyboard is reset.|
+|**FindStringComparer**|Gets or sets the string comparer used by the keyboard navigation functionality.|
+|**SelectedGridItem**|Gets or sets the selected item.|
+|**SelectedObject**|Gets or sets the object which properties the is displaying.|
+|**SelectedObjects**|Gets or sets the objects which properties the is displaying.|
+|**Items**|Gets the Items collection.|
+|**Groups**|Gets the Groups collection.|
+|**EnableGrouping**|Gets or sets a value indicating whether grouping is enabled.|
+|**EnableSorting**|Gets or sets a value indicating whether sorting is enabled.|
+|**EnableFiltering**|Gets or sets a value indicating whether filtering is enabled.|
+|**GroupDescriptors**|Gets the group descriptors.|
+|**FilterDescriptors**|Gets the filter descriptors.|
+|**SortDescriptors**|Gets the sort descriptors.|
+|**SortOrder**|Gets or sets the sort order of items.|
+|**PropertySort**|Gets or sets the mode in which the properties will be displayed in the .|
+|**HelpVisible**|Gets or sets a value indicating whether the is visible.|
+|**HelpBarHeight**|Gets or sets the height of the .|
+|**ToolbarVisible**|Gets or sets a value indicating whether the search box of the should be visible|
+|**PropertyGridElement**|Gets the of this control.|
+|**ItemHeight**|Gets or sets the height of the items.|
+|**ItemSpacing**|Gets or sets the distance between items of the RadPropertyGridElement.|
+|**ItemIndent**|Gets or sets the width of the indentation of sub items.|
+|**BackColor**|RadPropertyGrid consists of multiple visual elements and separate settings are provided to customize their appearance. Current BackColor property might be ignored.|
+|**ForeColor**|RadPropertyGrid consists of multiple visual elements and separate settings are provided to customize their appearance. Current ForeColor property might be ignored.|
 
 # Methods
 
 |Method|Description|
 |------|------|
-|**Expand**|Expands the control. Will not have effect if the control is already expanded or is animating. Can be canceled from the Expanding event.|
-|**Collapse**|Collapses the control. Will not have effect if the control is already collapsed or is animating. Can be canceled from the Collapsing event.|
-|**ToggleExpandCollapse**|If the Control is expanded it will be collapsed and vice-versa.|
+|**BestFit**|Uses a mechanism to maximize the visible strings in both columns of RadPropertyGrid.|
+|**BestFit(PropertyGridBestFitMode mode)**|Best fits the column(s) of RadPropertyGrid using the given mode.|
+|**ExpandAllGridItems**|Expands all categories.|
+|**CollapseAllGridItems**|Collapses all categories.|
+|**ResetSelectedProperty**|Resets the selected property to its default value.|
+|**BeginEdit**|Puts the current item in edit mode.|
+|**EndEdit**|Commits any changes and ends the edit operation on the current item.|
+|**CancelEdit**|Close the currently active editor and discard changes.|
 
 # Events
 
 |Event|Description|
 |------|------|
-|**Expanded**|Occurs after the control is expanded.|
-|**Collapsed**|Occurs after the control is collapsed.|
-|**Expanding**|Occurs before the control is expanded.|
-|**Collapsing**|Occurs before the control is collapsed.|
+|**SelectedObjectChanging**|Occurs before the selected object is changed.|
+|**SelectedObjectChanged**|Occurs after the selected object is changed.|
+|**SelectedGridItemChanging**|Occurs before a property grid item is selected.|
+|**SelectedGridItemChanged**|Occurs after the property item is selected. For more information about handling events, see also SelectedItemChanging.|
+|**ContextMenuOpening**|Occurs when opening the context menu.|
+|**CustomGrouping**|Fires for custom grouping operation.|
+|**ItemMouseDown**|Occurs when the user presses a mouse button over a property grid item.|
+|**ItemMouseMove**|Occurs when the user moves the mouse in the area of a property grid item.|
+|**ItemMouseClick**|Occurs when a mouse button is clicked inside a|
+|**ItemMouseDoubleClick**|Occurs when a mouse button is double clicked inside a|
+|**ItemExpandedChanging**|Occurs before the value of the Expanded property of a property grid item is changed.|
+|**ItemExpandedChanged**|Occurs after the value of the Expanded property of a property grid item is changed.|
+|**ItemFormatting**|Occurs when the item changes its state and needs to be formatted.|
+|**CreateItem**|Occurs when a new item element is going to be created.|
+|**CreateItemElement**|Occurs when a new item element is going to be created.|
+|**EditorRequired**|Occurs when editor is required.|
+|**Editing**|Occurs when editing is started.|
+|**EditorInitialized**|Occurs when editor is initialized.|
+|**Edited**|Occurs when editing has been finished.|
+|**PropertyValueChanging**|Occurs when item's value is changing.|
+|**PropertyValueChanged**|Occurs when a property value changes.|
+|**PropertyValidating**|Fires when a property value is validating.|
+|**PropertyValidated**|Fires when a peoperty has finished validating.|
+|**ValueChanging**|Fires before the value in an editor is being changed. The action can be canceled.|
+|**ValueChanged**|Fires when the value of an editor changes.|
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radcollapsiblepanel.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_ui_radcollapsiblepanel.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radcollapsiblepanel.htm)
+* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radpropertygrid.htm)
+* [Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_ui_radpropertygrid.htm)
+* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radpropertygrid.htm)
+

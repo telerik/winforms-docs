@@ -1,17 +1,17 @@
 ---
 title: Type Converters
-page_title: Type Converters | UI for WinForms Documentation
-description: Type Converters
+page_title: Type Converters | RadPropertyGrid 
+description: RadPropertyGrid is commonly used to visualize custom object’s properties and values. A common case is when a certain property is of custom type, or there is no predefined editor for the specific type
 slug: winforms/propertygrid/type-converters
 tags: type,converters
 published: True
-position: 10
+position: 6
 previous_url: propertygrid-type-converters
 ---
 
 # Type Converters
 
-__RadPropertyGrid__ is commonly used to visualize custom object’s properties and values. A  common case is when a certain property is of custom type, or there is no predefined editor for the specific type. In this situation the control will only display the type as a string. This article demonstrates how you can modify the way a property is being displayed and edited by using custom TypeConverters.
+__RadPropertyGrid__ is commonly used to visualize custom object’s properties and values. A common case is when a certain property is of custom type, or there is no predefined editor for the specific type. In this situation the control will only display the type as a string. This article demonstrates how you can modify the way a property is being displayed and edited by using custom TypeConverters.
 A [Type Converter]( https://msdn.microsoft.com/en-us/library/ayybcxe5.aspx) is used to convert values between data types. Here are the four main methods that are usually used when implementing a custom __Type Converter__.
 
 * Override the __CanConvertFrom__ method that specifies which type the converter can convert from.
@@ -23,6 +23,8 @@ A [Type Converter]( https://msdn.microsoft.com/en-us/library/ayybcxe5.aspx) is u
 * Override the __ConvertTo__ method that implements the conversion. 
 
 Consider the __RadPropertyGrid__ is populated with a __Patient__ object contacting the following properties:
+
+#### Bind RadPropertyGrid
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=PopulateData}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=PopulateData}} 
@@ -166,13 +168,19 @@ End Enum
 
 {{endregion}}
 
-You will notice that the __BodyTemperature__ property displays the property type:<br>![propertygrid-type-converters 001](images/propertygrid-type-converters001.png)
+You will notice that the __BodyTemperature__ property displays the property type:
+
+>caption Figure 1: BodyTemperature Property
+
+![propertygrid-type-converters 001](images/propertygrid-type-converters001.png)
 
 In order to visualize the __BodyTemperature__ value with a custom formatted string you need to implement a __TypeConverter__ which should convert the *Temperature* value to the desired string.
 
 ## Display nested properties with ExpandableObjectConverter
 
 As the __BodyTemperature__ property is of complex type composed of two properties, we will use a custom type converter derived from the [ExpandableObjectConverter](https://msdn.microsoft.com/en-us/library/system.componentmodel.expandableobjectconverter%28v=vs.110%29.aspx):
+
+#### TemperatureTypeConverter
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=TemperatureTypeConverter}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=TemperatureTypeConverter}} 
@@ -349,6 +357,8 @@ End Class
 
 Apply a __TypeConverterAttribute__ that indicates the type of your type converter. The result is illustrated on the screenshot below:
 
+#### BodyTemperature Property
+
 {{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=ApplyTemparatureAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=ApplyTemparatureAttribute}} 
 
@@ -378,11 +388,15 @@ Private m_BodyTemperature As Temperature
 
 {{endregion}}
 
+>caption Figure 2: RadPropertyGrid TypeConverterAttribute
+
 ![propertygrid-type-converters 002](images/propertygrid-type-converters002.png)
 
 ## Display a predefined list of values for a property with TypeConverter 
 
 The __BloodType__ property is a string property which allows entering any string, even if it is not a valid blood type. To handle this case we can create a __TypeConverter__. In it we will override the __GetStandardValuesSupported__ method, which indicates whether the object supports a standard set of values that can be picked from a predefined list. Then we will override the __GetStandardValuesExclusive__ method which indicates whether the collection of standard values is exclusive or the user is allowed to add custom values. Lastly, in the __GetStandardValues__ method we should specify the predefined list. The property grid uses this collection to build a list and  provide it to the user for selection.
+
+#### BloodTypeConverter
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=BloodTypeConverter}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=BloodTypeConverter}} 
@@ -429,6 +443,8 @@ End Class
 
 After applying the __TypeConverterAttribute__, when you try to modify the __BloodType__ property __RadPropertyGrid__ will display a drop down list editor with the predefined set of values:
 
+#### BloodType Property
+
 {{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=ApplyBloodTypeAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=ApplyBloodTypeAttribute}} 
 
@@ -456,11 +472,15 @@ Private m_BloodType As String
 
 {{endregion}}
 
+>caption Figure 3: BloodTypeConverter
+
 ![propertygrid-type-converters 003](images/propertygrid-type-converters003.png)
 
-## Culture aware TypeConverter
+## Culture Aware TypeConverter
 
 This example demonstrates how to apply a culture aware __TypeConverter__ to the __TotalLungCapacity__ property which can convert input from Cubic Inches and Cubic Centimeters but when converting data for display it uses the current culture to determine which system of measurement to use (Imperial or Metric). The value is stored in Cubic Centimeters.
+
+#### VolumeTypeConverter
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=VolumeTypeConverter}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=VolumeTypeConverter}} 
@@ -591,6 +611,8 @@ End Class
 
 Do not forget to apply the __TypeConverterAttribute__. Additionally, we will specify the editor to be __PropertyGridTextBoxEditor__.
 
+#### ApplyVolumeTypeAttribute
+
 {{source=..\SamplesCS\PropertyGrid\PropertyGridTypeConverters.cs region=ApplyVolumeTypeAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridTypeConverters.vb region=ApplyVolumeTypeAttribute}} 
 
@@ -620,4 +642,12 @@ Private m_TotalLungCapacity As Double
 
 {{endregion}}
 
+>caption Figure 4: TotalLungCapacity Property
+
 ![propertygrid-type-converters 004](images/propertygrid-type-converters004.gif)
+
+# See Also
+
+* [Binding to Multiple Objects]({%slug winforms/propertygrid/populating-with-data/binding-to-multiple-objects%})
+* [RadPropertyStore - Adding Custom Properties]({%slug winforms/propertygrid/populating-with-data/radpropertystore-adding-custom-properties%})
+* [Attributes]({%slug winforms/propertygrid/attributes%})

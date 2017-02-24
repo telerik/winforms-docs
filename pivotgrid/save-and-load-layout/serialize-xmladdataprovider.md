@@ -10,7 +10,7 @@ position: 2
 
 # Serialize XmlaDataProvider
 
-In this article we will show you how to serialize and deserialize __XmlaDataProvider__ and all of its settings. You can use this feature to save the current state of the provider and load it next when time the application is started.
+In this article we will show you how to serialize and deserialize __XmlaDataProvider__ and all of its settings. You can use this feature to save the current state of the provider and load it next time when the application is started.
 
 ## Serialize XmlaDataProvider with DataContractSerializer
 

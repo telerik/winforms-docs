@@ -1,11 +1,11 @@
 ---
 title: Attributes
-page_title: Attributes | UI for WinForms Documentation
-description: Attributes
+page_title: Attributes | RadPropertyGrid
+description: This article contains a list of some of the more important and more commonly used attributes used with RadPropertyGrid
 slug: winforms/propertygrid/attributes
 tags: attributes
 published: True
-position: 11
+position: 5
 previous_url: propertygrid-attributes
 ---
 
@@ -15,7 +15,7 @@ This article contains a list of some of the more important and more commonly use
 
 ## EditorAttribute
 
-With the editor attribute you can specify __UITypeEditor__ as well as __BaseInputEditor__ (since R1 2013) to be used for a given property.
+With the editor attribute you can specify __UITypeEditor__ as well as __BaseInputEditor__ to be used for a given property.
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=EditorAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=EditorAttribute}} 
@@ -41,14 +41,13 @@ Private m_FileLocation As String
 
 {{endregion}} 
 
+>caption Figure 1: EditorAttribute
 
 ![propertygrid-attributes 001](images/propertygrid-attributes001.png)
 
 ## RadRangeAttribute 
 
 The range attribute allows you to set a minimum and maximum value to be used for a property that is edited with a RadSpinEditor.
-
-![propertygrid-attributes 001](images/propertygrid-attributes009.png)
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=RadRangeAttribute}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=RadRangeAttribute}} 
@@ -73,6 +72,10 @@ Private m_DoorsCount As Byte
 ````
 
 {{endregion}}
+
+>caption Figure 2: RadRangeAttribute
+
+![propertygrid-attributes 001](images/propertygrid-attributes009.png)
 
 ## BrowsableAttribute  
 
@@ -112,6 +115,7 @@ Private m_MyBrowsableProperty As Integer
 
 {{endregion}} 
 
+>caption Figure 3: BrowsableAttribute
 
 ![propertygrid-attributes 002](images/propertygrid-attributes002.png)
 
@@ -171,6 +175,7 @@ Private m_PropertyName As Double
 
 {{endregion}} 
 
+>caption Figure 4: DisplayNameAttribute
 
 ![propertygrid-attributes 003](images/propertygrid-attributes003.png)
 
@@ -202,6 +207,7 @@ Private m_Manufacturer As String
 
 {{endregion}} 
 
+>caption Figure 5: DisplayNameAttribute
 
 ![propertygrid-attributes 004](images/propertygrid-attributes004.png)
 
@@ -243,6 +249,7 @@ Private m_Password As String
 
 {{endregion}} 
 
+>caption Figure 6: PasswordPropertyTextAttribute
 
 ![propertygrid-attributes 005](images/propertygrid-attributes005.png)
 
@@ -273,6 +280,8 @@ Private m_Length As Decimal
 ````
 
 {{endregion}}
+
+>caption Figure 7: DefaultValueAttribute
 
 ![propertygrid-attributes 006](images/propertygrid-attributes006.png)
 
@@ -314,6 +323,7 @@ Private m_UncategorizedProperty As String
 
 {{endregion}} 
 
+>caption Figure 8: CategoryAttribute
 
 ![propertygrid-attributes 007](images/propertygrid-attributes007.png)
 
@@ -369,4 +379,12 @@ Private m_CProperty As String
 
 {{endregion}}
 
+>caption Figure 9: RadSortOrderAttribute
+
 ![propertygrid-attributes 008](images/propertygrid-attributes008.png)
+
+# See Also
+
+* [Binding to Multiple Objects]({%slug winforms/propertygrid/populating-with-data/binding-to-multiple-objects%})
+* [RadPropertyStore - Adding Custom Properties]({%slug winforms/propertygrid/populating-with-data/radpropertystore-adding-custom-properties%})
+* [Type Converters]({%slug winforms/propertygrid/type-converters%})
