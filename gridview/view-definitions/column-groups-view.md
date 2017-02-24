@@ -139,6 +139,18 @@ The result is:
 
 >caution In order to pin a certain group, you should do it after the RadGridView.__ViewDefinition__ property is set and the grid is populated with data.
 
+
+# Important properties
+
+* __GridViewColumnGroup__
+    - __ShowHeader:__ Gets or sets a value indicating whether group header is visible. Works only for top level groups.
+    - __RowSpan:__ Gets or set the vertical span of the group (the height) in pixels.
+
+* __GridViewColumnGroupRow__
+    - __MinHeight:__ Gets or sets the minimum height of the row. If the property is not set, the row height will be equal to the maximum RowSpan of the columns in that row.
+
+
+
 # See Also
 
 * [HTML View]({%slug winforms/gridview/view-definitions/html-view%})
