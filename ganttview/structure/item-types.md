@@ -11,9 +11,10 @@ previous_url: ganttview-structure-item-types
 
 # Item types
 
-There are total of three item types: summary item, task item and milestone item.
-
-![ganttview-structure-item-types 001](images/ganttview-structure-item-types001.png)
+There are total of three item types:
+* Summary item
+* Milestone item
+* Task item
 
 ## Summary item
 
