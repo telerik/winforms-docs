@@ -20,7 +20,7 @@ The Telerik WinForms setup performs the following actions during the installatio
 * Creates native images for all Telerik UI for WinForms assemblies
             
 
-* Checks the Visual Studio version(s) installed on the machine. We currently support Visual Studio 2005, 2008, 2010, 2012 and 2013 installations
+* Checks the Visual Studio version(s) installed on the machine. We currently support Visual Studio 2005, 2008, 2010, 2012, 2013, 2015 and 2017 installations
 
 * Installs/adds all Telerik WinForms controls in the toolbox of Visual Studio
 

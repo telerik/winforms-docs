@@ -11,9 +11,7 @@ previous_url: gridview-cells-formatting-cells
 
 # Formatting Cells
 
-Due to the UI virtualization in RadGridView, cell elements are created only for currently visible cells and are being reused during operations like scrolling, filtering, grouping and so on.
-
-In order to prevent applying the formatting to other columns' cell elements (because of the cell reuse) all customization should be reset for the rest of the cell elements. Please refer to the Fundamentals [topic]({%slug winforms/gridview/fundamentals/logical-vs.-visual-grid-structure%}) for more information.
+Due to the UI virtualization in **RadGridView**, cell elements are created only for currently visible cells and are being reused during operations like scrolling, filtering, grouping and so on. In order to prevent applying the formatting to other columns' cell elements (because of the cell reuse), all customization should be reset for the rest of the cell elements. Please refer to the Fundamentals [topic]({%slug winforms/gridview/fundamentals/logical-vs.-visual-grid-structure%}) for more information.
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
@@ -21,7 +19,7 @@ In order to prevent applying the formatting to other columns' cell elements (bec
 
 ## Formatting data cells.
 
-The __CellFormatting__ event is used to access and change the styles of the *data* cells including the *new row cells*. For example, the code sample below changes the ForeColor in a particular column:
+The __CellFormatting__ event is used to access and change the styles of the *data* cells including the *new row cells*. For example, the code sample below changes the **ForeColor** in a particular column:
 
 #### Changing the data cells font color
 
@@ -55,15 +53,15 @@ End Sub
 
 {{endregion}} 
 
->caption Figure 1 Changing the cells fore color. 
+>caption Figure 1: Changing the cells fore color. 
 
 ![gridview-cells-formatting-cells 001](images/gridview-cells-formatting-cells001.png)
 
 ## Cells background formatting
 
-This is an advanced example of using CellFormatting event to highlight certain cells in red color based on the values of cells in the same row but *different* column. In the example, the values in the first column are  highlighted if the value in the check box column returns true:
+This is an advanced example of using **CellFormatting** event to highlight certain cells in aqua color based on the values of cells in the same row but *different* column. In the example, the values in the first column are  highlighted if the value in the check box column returns *true*:
 
->caption Figure 2 Formating cell upon a condition. 
+>caption Figure 2: Formatting cell upon a condition. 
 
 ![gridview-cells-formatting-cells 002](images/gridview-cells-formatting-cells002.png)
 
@@ -135,7 +133,7 @@ End Sub
 
 ## Formatting non-data cells
 
-The __ViewCellFormatting__ is fired for all cells. So if you want to format the grouping row or the header cells, you should use this event.
+The __ViewCellFormatting__ event is fired for all cells. So if you want to format the grouping row or the header cells, you should use this event.
 
 ##  Change group and header cells font and removing the default filter operator text.
 
@@ -196,9 +194,9 @@ End Sub
 
 ## Formatting cells on demand   
 
-Sometimes you may need to format the cells on a specific user action, for example, on a button click. Let's take the following scenario: you have a search box (RadTextBox) above RadGridView and a RadButton. When you click the button, RadGridView should highlight the cells that match the text typed in the RadTextBox. Here is how you can implement this:
+Sometimes you may need to format the cells on a specific user action, for example, on a button click. Let's take the following scenario: you have a search box (**RadTextBox**) above **RadGridView** and a **RadButton**. When you click the button, **RadGridView** should highlight the cells that match the text typed in the **RadTextBox**. Here is how you can implement this:
 
-* First, you should handle the `CellFormatting` event and set the back color of the cells whose text matches the text in the RadTextBox.
+* First, you should handle the **CellFormatting** event and set the back color of the cells whose text matches the text in the **RadTextBox**.
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCellsOnDemand.cs region=cellFormatting}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCellsOnDemand.vb region=cellFormatting}} 
@@ -238,7 +236,7 @@ End Sub
 
 {{endregion}} 
 
-* The user types some text, but then you should somehow notify RadGridView that it needs to refresh itself. This is done by calling the __Update__ method of the `TableElement`, passing the *StateChanged* argument as a parameter.
+* The user types some text, but then you should somehow notify **RadGridView** that it needs to refresh itself. This is done by calling the __Update__ method of the **TableElement**, passing the *StateChanged* argument as a parameter.
 
 {{source=..\SamplesCS\GridView\Cells\FormattingCellsOnDemand.cs region=buttonClick}} 
 {{source=..\SamplesVB\GridView\Cells\FormattingCellsOnDemand.vb region=buttonClick}} 
@@ -259,7 +257,7 @@ End Sub
 
 {{endregion}} 
 
-As a result of the update call, the CellFormatting (and the other formatting events as well) will be triggered and you will get the following results:
+As a result of the update call, the **CellFormatting** event (and the other formatting events as well) will be triggered and you will get the following results:
 
 >caption Figure 4: Manually trigger the grid update. 
 

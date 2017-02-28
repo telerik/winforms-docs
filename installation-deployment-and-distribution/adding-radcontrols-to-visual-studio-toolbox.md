@@ -11,11 +11,11 @@ previous_url: installation-deployment-and-distribution-adding-radcontrols-to-vis
 
 # Adding RadControls to Visual Studio Toolbox
 
-Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/2012 Toolbox [during installation]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). If however they do not appear in the toolbox after the installation, you can do this manually. There are two ways to manually add Telerik UI for WinForms to the Toolbox in your Visual Studio.
+Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/2012/2013/2015/2017 Toolbox [during installation]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). If however they do not appear in the toolbox after the installation, you can do this manually. There are two ways to manually add Telerik UI for WinForms to the Toolbox in your Visual Studio.
       
 ## Using the Visual Studio menus
 
-1. Run Visual Studio 2005/2008/2010/2012/2013.
+1. Run Visual Studio 2005/2008/2010/2012/2013/2015/2017.
 
 1. Open any windows forms project/solution.
 
@@ -25,7 +25,7 @@ Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/
          
 1. Right-click in the empty space of the newly created tab and select __Choose Items__. A dialog will open, which lists all available controls from the assemblies in the GAC.
             
-    >If you do not see Telerik WinForms controls, please see the __Troubleshooting__ section below.
+    >note If you do not see Telerik WinForms controls, please see the __Troubleshooting__ section below.
               
 1. Sort the assemblies by name and navigate to Telerik assemblies. Select all corresponding Telerik Controls (except for FilteredPropertyGrid) and click __OK__ to finish the operation.
             
@@ -34,7 +34,7 @@ Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/
 
 ## Using the the drag-drop approach
 
-1. Run Visual Studio 2005/2008/2010/2012/2013.
+1. Run Visual Studio 2005/2008/2010/2012/2013/2015/2017.
 
 1. Open any windows forms project/solution.
 
@@ -45,12 +45,10 @@ Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/
 
 1. Open a Windows Explorer and locate the Telerik assemblies folder.             
             
-    >If you have installed the controls with the default settings then it would be this directory: "C:\Program Files\Telerik\UI for WinForms\Version\Bin" for most the .NET2.0 version of our assemblies and "C:\Program Files\Telerik\UI for WinForms\Version\Bin40" for the .NET4.0 version of the assemblies (note that currently RadRichTextBox and RadSpellChecker are only available in the .NET4.0 version).
+    >note If you have installed the controls with the default settings then it would be this directory: "C:\Program Files\Telerik\UI for WinForms\Version\Bin" for the .NET2.0 version of our assemblies and "C:\Program Files\Telerik\UI for WinForms\Version\Bin40" for the .NET4.0 version of the assemblies (note that currently RadRichTextEditor and RadSpellChecker are only available in the .NET4.0 version).
               
 1. Select the following assemblies and drag-drop them to the empty space in the newly created tab in Visual Studio:
             
- * Telerik.WinControls.RichTextBox.dll
-
  * Telerik.WinControls.SpellChecker.dll
 
  * Telerik.WinControls.dll
@@ -119,6 +117,7 @@ Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/
 >Resetting the toolbox through the __Reset__ context command will remove the tools from the toolbox. If you need to reset the toolbox, just add the controls as described above.
 
 ## Troubleshooting
+
 __Telerik assemblies do not appear in Visual Studio's Add reference dialog__
 
 Make sure that the Telerik WinForms controls are added in the Global Assembly Cache (GAC) as described in the [Add/Remove RadControls to the Global Assembly Cache (GAC)]({%slug winforms/installation-deployment-and-distribution/application-deploymentadd-remove-radcontrols-to-the-global-assembly-cache-(gac)%}) topic. 
@@ -131,7 +130,7 @@ To display your assembly in the __Add Reference__ dialog box, you can add a regi
               
 Change this according to your installation and version specifics. Restart Visual Studio .NET after you have added the key.
 
->You can create the this registry entry under the __HKEY_LOCAL_MACHINE__ hive. This will change the setting for all of the users on the system. If you create this registry entry under __HKEY_CURRENT_USER__, this entry will affect the setting for only the current user. 
+	> note You can create the this registry entry under the __HKEY_LOCAL_MACHINE__ hive. This will change the setting for all of the users on the system. If you create this registry entry under __HKEY_CURRENT_USER__, this entry will affect the setting for only the current user. 
                 
 
 More information about this topic you could find in Microsoft Support Center: [How to display an assembly in the "Add Reference" dialog box](http://support.microsoft.com/?kbid=306149) 
