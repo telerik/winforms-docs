@@ -5,7 +5,7 @@ description: Layout Settings
 slug: winforms/pivotgrid/layout-settings
 tags: layout,settings
 published: True
-position: 4
+position: 7
 previous_url: pivotgrid-layout-settings
 ---
 

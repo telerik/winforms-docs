@@ -5,7 +5,7 @@ description: Custom Aggregation
 slug: winforms/pivotgrid/custom-aggregation
 tags: custom, aggregation
 published: True
-position: 13
+position: 12
 ---
 
 # Custom Aggregation

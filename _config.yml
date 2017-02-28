@@ -795,30 +795,36 @@ navigation:
     pivotgrid:
         title: PivotGrid 
         position: 360
+    pivotgrid/design-time:
+        title: Design-Time
+        position: 2
     pivotgrid/populating-with-data:
         title: Populating with Data
-        position: 3
-    pivotgrid/pivot-field-list:
-        title: Pivot Field List
-        position: 7
+        position: 4
+    pivotgrid/customizing-appearance:
+        title: Customizing Appearance
+        position: 6	
     pivotgrid/filtering:
         title: Filtering
-        position: 8
+        position: 8	
     pivotgrid/printing-support:
         title: Printing Support
-        position: 16
+        position: 18
+    pivotgrid/pivot-field-list:
+        title: Pivot Field List
+        position: 19
     pivotgrid/dialogs:
         title: Dialogs
-        position: 18
+        position: 20
     pivotgrid/localization:
         title: Localization
-        position: 19
+        position: 21
     pivotgrid/exporting-data:
         title: Exporting Data
-        position: 20
+        position: 22
     pivotgrid/save-and-load-layout:
         title: Save and Load Layout
-        position: 21		
+        position: 23		
     propertygrid:
         title: PropertyGrid
         position: 370

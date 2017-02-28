@@ -5,7 +5,7 @@ description: The LocalDataSourceProvider exposes a GetUnderlyingData method whic
 slug: winforms/pivotgrid/drilldown
 tags: custom, aggregation
 published: True
-position: 12
+position: 13
 ---
 
 # Drill Down

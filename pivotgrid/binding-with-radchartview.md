@@ -5,7 +5,7 @@ description: Binding with RadChartView
 slug: winforms/pivotgrid/binding-with-radchartview
 tags: binding,with,radchartview
 published: True
-position: 6
+position: 14
 previous_url: pivotgrid-binding-with-radchartview
 ---
 
