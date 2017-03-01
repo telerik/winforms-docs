@@ -11,8 +11,7 @@ previous_url: themes-using-a-default-theme-for-the-entire-application
 
 # Using a default theme for the entire application
 
-
-When your application has many and different controls, you may find it inconvenient to go through all the controls in order to set their __ThemeName__ property. For such cases set the static __ThemeResolutionService.ApplicationThemeName__ property to a theme name:
+When your application has many and different controls, you may find it inconvenient to go through all the controls in order to set their __ThemeName__ property. For such cases, set the static ThemeResolutionService.__ApplicationThemeName__ property to a theme name:
 
 #### Setting a theme for the entire application
 
@@ -38,10 +37,9 @@ All your controls will use that specified theme which has precedence over the t
 
 ## Enable/Disable the globally set theme for a specific control
 
-This section describes how you can change the theme for the entire application and leave the default one (or use another) for one or several controls. This can be achieved by using the __EnableApplicationThemeName__ property.
-        
+This section describes how you can change the theme for the entire application and leave the default one (or use another) for one or several controls. This can be achieved by using the __EnableApplicationThemeName__ property.        
 
-This property indicates how the theme will be set to the control. If it is set to true (the default value) the control will have the theme that is globally set (with the __ApplicationThemeName__ property). If it is set to false, the theme, set with the __ThemeName__ property will be respected. For example you can set the theme for the entire application except for one RadGridView control as follows:
+This property indicates how the theme will be set to the control. If it is set to *true* (the default value) the control will have the theme that is globally set (with the __ApplicationThemeName__ property). If it is set to *false*, the theme, set with the __ThemeName__ property will be respected. For example, you can set the theme for the entire application except for one **RadGridView** control as follows:
 
 {{source=..\SamplesCS\Themes\UsingADefaultThemeForEntireApplication.cs region=setThemeForSpesificControl}} 
 {{source=..\SamplesVB\Themes\UsingADefaultThemeForEntireApplication.vb region=setThemeForSpesificControl}} 

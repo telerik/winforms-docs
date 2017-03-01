@@ -630,6 +630,9 @@ navigation:
     layoutcontrol:
         title: LayoutControl
         position: 270
+    layoutcontrol/drag-and-drop:
+        title: Drag and Drop
+        position: 9
     listview:
         title: ListView
         position: 280
