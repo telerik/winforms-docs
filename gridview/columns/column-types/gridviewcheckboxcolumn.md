@@ -41,7 +41,7 @@ RadGridView1.MasterTemplate.Columns.Add(checkBoxColumn)
 
 {{endregion}} 
 
-The column has also a built-in functionality for checking all check boxes in it, via check box placed in the column header cell. By setting the __EnableHeaderCheckBox__ property to *true* you will enable the embedded in the header cell RadCheckBoxElement. 
+The column has also a built-in functionality for checking all check boxes in it, via check box placed in the column header cell. By setting the __EnableHeaderCheckBox__ property to *true* you will enable the embedded in the header cell **RadCheckBoxElement**. 
 
 {{source=..\SamplesCS\GridView\Columns\GridViewCheckBoxColumn1.cs region=EnableHeaderCheckBox}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=EnableHeaderCheckBox}} 
@@ -126,14 +126,6 @@ Private Sub radGridView1_HeaderCellToggleStateChanged(sender As Object, e As Gri
     Console.WriteLine(e.Column.Name)
     Console.WriteLine(e.State)
 End Sub
- Region
-'#region valueChanged
-Private Sub RadGridView1_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadGridView1.ValueChanged
-    If TypeOf Me.RadGridView1.ActiveEditor Is RadCheckBoxEditor Then
-        Console.WriteLine(Me.RadGridView1.CurrentCell.RowIndex)
-        Console.WriteLine(Me.RadGridView1.ActiveEditor.Value)
-    End If
-End Sub
 
 ````
 
@@ -141,7 +133,7 @@ End Sub
 
 ## EditMode
 
-The __EditMode__ property controls when the value of the editor will be submitted to the cell. By default, the current behavior is kept (OnValidate) and the value will be submitted only when the current cell changes or the grid looses focus. The new value (OnValueChange) will submit the value immediately after the editor value changes.
+The __EditMode__ property controls when the value of the editor will be submitted to the cell. By default, the current behavior is kept (*OnValidate*) and the value will be submitted only when the current cell changes or the grid looses focus. The new value (*OnValueChange*) will submit the value immediately after the editor value changes.
 
 {{source=..\SamplesCS\GridView\Columns\GridViewCheckBoxColumn1.cs region=EditMode}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewCheckBoxColumn1.vb region=EditMode}} 
@@ -152,28 +144,21 @@ checkBoxColumn.EditMode = EditMode.OnValueChange;
 ````
 ````VB.NET
 checkBoxColumn.EditMode = EditMode.OnValueChange
-'#End Region
-AddHandler RadGridView1.HeaderCellToggleStateChanged, AddressOf radGridView1_HeaderCellToggleStateChanged
-End Sub
-"HeaderCellToggleStateChanged"
-Private Sub radGridView1_HeaderCellToggleStateChanged(sender As Object, e As GridViewHeaderCellEventArgs)
-Console.WriteLine(e.Column.Name)
-Console.WriteLine(e.State)
-End Sub
-ion
-'#region valueChanged
-Private Sub RadGridView1_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadGridView1.ValueChanged
-If TypeOf Me.RadGridView1.ActiveEditor Is RadCheckBoxEditor Then
-    Console.WriteLine(Me.RadGridView1.CurrentCell.RowIndex)
-    Console.WriteLine(Me.RadGridView1.ActiveEditor.Value)
-End If
-End Sub
 
 ````
 
 {{endregion}} 
 
+## GridViewCheckBoxColumn's Properties 
 
+|Property|Description|
+|----|----|
+|**ThreeState**|Gets or sets a value indicating whether to use a three state check-box.|
+|**DataType**|Gets or sets a value indicating the column's data type.|
+|**EnableHeaderCheckBox**|Gets or sets a value indicating whether to show embedded check-box in header cell.|
+|**Checked**|Gets a value indicating whether the check-box in header cell checked.|
+|**ShouldCheckDataRows**|This property determines whether the check-box in the header cell will be synced with the data cells.|
+|**EditMode**|This property determines whether changing a value of a check box will immediately be send to the cell (OnValueChange) or when the current cell is changed or the grid is being validated (OnCellChangeOrValidating).|
 
 # See Also
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})

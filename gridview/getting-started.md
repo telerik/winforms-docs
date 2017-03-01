@@ -27,18 +27,18 @@ The example below demonstrates creating a hierarchical grid presenting two table
             
 1. Drop a __RadGridView__ control on the form.
 
-1. Set RadGridView __Dock__ property to __Fill__ in the Properties window of Visual Studio.
+1. Set the RadGridView.__Dock__ property to *Fill* in the Properties window of Visual Studio.
 
 ## Connecting to Data
 
 1. Open the __DataSource__ property drop down in the *Properties* window of Visual Studio and select __Add Project Data Source__. This step will open the __Data Source Configuration Wizard__.
 
-1. In the Data Source Configuration Wizard, Choose a Data Source Type page, select the __Database__ icon, and click __Next__.
+1. In the **Data Source Configuration Wizard**, Choose a Data Source Type page, select the __Database__ icon, and click __Next__.
 ![grid-getting-started 002](images/grid-getting-started002.png)
 
 1. In the Choose Your Data Connection page of the wizard, click on the __New Connection...__ button. This page displays the `Add Connection` dialog.
 
-1. In the `Add Connection` dialog, click on the __Change...__ button. This will display the `Change Data Sourc`e dialog.
+1. In the `Add Connection` dialog, click on the __Change...__ button. This will display the `Change Data Source` dialog.
 
 1. In the `Change Data Source` dialog, select __Microsoft Access Data Base File__ from the data source list.
 

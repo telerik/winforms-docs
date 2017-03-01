@@ -13,16 +13,16 @@ previous_url: gridview-exporting-data-export-to-excel-via-excelml-format
 
 This method offers excellent performance and does not require MS Office installation on user machines. The __ExcelML__ format can be read by MS Excel 2002 (MS Office XP) and above. Direct export to the xlsx format is possible by utilizing our __RadSpreadProcessing__ libraries (see [Spread Export]({%slug winforms/gridview/exporting-data/spread-export%}) and Async Spread Export articles for detailed information and examples).
 
->note The HTML export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
+>note The export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
 * Telerik.WinControls.Data
-* Telerik.WinControls.UI.Export>
+* Telerik.WinControls.UI.Export
 >
 
 ## Exporting Data
 
 ### Initialize ExportToExcelML object
 
-Before running export to ExcelML, you have to initialize the `ExportToExcelML` class. The constructor takes one parameter, the RadGridView that will be exported:
+Before running export to **ExcelML**, you have to initialize the `ExportToExcelML` class. The constructor takes one parameter, the **RadGridView** that will be exported:
 
 ####  ExportToExcelIML initialization
 
@@ -50,7 +50,7 @@ You can choose one of the three options below which will allow you to have diffe
 
 * ExportAsHidden (default)
 
-MS Excel does not support other ways of hiding a column different from setting its width to zero. To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__ or __HiddenRowOption__  property to __DoNotExport__:
+MS Excel does not support other ways of hiding a column different from setting its width to zero. To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__ or __HiddenRowOption__  property to *DoNotExport*:
 
 ####  Setting the hidden column option
 
@@ -70,9 +70,9 @@ exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotEx
 
 __Exporting Visual Settings__
 
-Using the ExcelML method allows you to export the visual settings (themes) to the Excel file. ExcelML has also a visual representation of the alternating row color. This feature works only if __EnableAlternatingRow__ property is set to *true*. Note that it does not transfer the alternating row settings that come from control theme. RadGridView will also export all conditional formatting to the Excel file. The row height is exported with the default DPI transformation (60pixels = 72points).
+Using the **ExcelML** method allows you to export the visual settings (themes) to the Excel file. **ExcelML** has also a visual representation of the alternating row color. This feature works only if the __EnableAlternatingRow__ property is set to *true*. Note that it does not transfer the alternating row settings that come from control theme. **RadGridView** will also export all conditional formatting to the Excel file. The row height is exported with the default DPI transformation (60pixels = 72points).
 
-You can enable exporting visual settings through the ExportVisualSettings property. By default the value of this property is false. __ExportVisualSettings__*false*
+You can enable exporting visual settings through the **ExportVisualSettings** property. By default, the value of this property is *false*.
 
 #### Setting ExportVisualSettings
 
@@ -92,7 +92,7 @@ exporter.ExportVisualSettings = True
 
 __MS Excel Max Rows Settings__
 
-RadGridView splits data on separate sheets if the number of rows is greater than Excel maximum. You can control the maximum number of rows through a SheetMaxRows property:
+**RadGridView** splits data on separate sheets if the number of rows is greater than Excel maximum. You can control the maximum number of rows through the **SheetMaxRows** property:
 
 * 1048576 (Max rows for Excel 2007)
 
@@ -114,7 +114,9 @@ exporter.SheetMaxRows = ExcelMaxRows._1048576
 
 {{endregion}} 
 
-__MS Excel Sheet Name__ You can specify the sheet name through __SheetName__ property. If your data is large enough to be split on more than one sheets, then the export method adds index to the names of the next sheets.
+__MS Excel Sheet Name__ 
+
+You can specify the sheet name through __SheetName__ property. If your data is large enough to be split in more than one sheets, then the export method adds index to the names of the next sheets.
 
 #### Setting the SheetName
 
@@ -134,7 +136,7 @@ exporter.SheetName = "Sheet"
 
 __Summaries export option__
 
-You can use __SummariesExportOption__ property to specify how to export summary items. There are fourth option to chose:
+You can use the __SummariesExportOption__ property to specify how to export summary items. There are four option to chose:
 
 * ExportAll (default)
 
@@ -162,7 +164,7 @@ exporter.SummariesExportOption = SummariesOption.DoNotExport
 
 ## RunExport method
 
-Exporting data to Excel is done through the __RunExport__ method of __ExportToExcelML__ object. The RunExport method accepts the following parameter:
+Exporting data to Excel is done through the __RunExport__ method of __ExportToExcelML__ object. The **RunExport** method accepts the following parameter:
 
 * __fileName__ - the name of the exported file
 
@@ -188,7 +190,7 @@ exporter.RunExport(fileName)
 
 ## Format Codes
 
-There are two properties in GridViewDataColumn object: ExcelExportType and ExcelExportFormatString. You can use them to specify the format of the exported column in the result excel file. To get the desired formatting in Excel, the ExcelExportFormatString should be set to a valid Excel format code. A list of all format codes for Excel is available on the following link – [Microsoft Office Excel Format Codes](https://support.office.com/en-US/Article/Number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)
+There are two properties in **GridViewDataColumn** object: **ExcelExportType** and **ExcelExportFormatString**. You can use them to specify the format of the exported column in the result excel file. To get the desired formatting in Excel, the **ExcelExportFormatString** should be set to a valid Excel format code. A list of all format codes for Excel is available on the following link – [Microsoft Office Excel Format Codes](https://support.office.com/en-US/Article/Number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)
 
 Here is an example for a date time formatting:
 
@@ -212,10 +214,9 @@ Me.RadGridView1.Columns("Date").ExcelExportFormatString = " yyyy.MMMM.dd hh:mm:s
 
 ## Events
 
-__ExcelCellFormating__ event:
+The __ExcelCellFormating__ event:
         
-
-It gives an access to a single cell’s  __SingleStyleElement__ that allows you to make additional formatting (adding border, setting alignment, text font, colors, changing cell value, etc.) for every excel cell related to the exported RadGridView:
+It gives you access to a single cell’s  __SingleStyleElement__ that allows you to make additional formatting (adding border, setting alignment, text font, colors, changing cell value, etc.) for every excel cell related to the exported **RadGridView**:
 
 #### Handling the ExcelCellFormatting event
 
@@ -261,9 +262,9 @@ End Sub
 
 {{endregion}} 
 
-__ExcelTableCreated event:__
+The __ExcelTableCreated event:__
 
-It can be used in together with the public method __AddCustomExcelRow__. It allows adding and formatting new custom rows on the top of the every sheet (it could be specified as a header in the excel sheet):
+It can be used together with the public method __AddCustomExcelRow__. It allows adding and formatting new custom rows on the top of the every sheet (it could be specified as a header in the excel sheet):
 
 #### Handling the ExcelTableCreated event
 
