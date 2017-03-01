@@ -73,6 +73,10 @@ __Example 3:__
 
 "IIF(total > 1000, 'expensive', 'dear') 
 
+## Custom functions
+
+The following article shows how you can create custom functions: [Customizing RadExpressionEditor]({%slug winforms/gridview/expression-editor/customizing-radexpressioneditor%}).
+
 ## Advanced usage
 
 Refer to the following external resource about further information on the expressions syntax:
