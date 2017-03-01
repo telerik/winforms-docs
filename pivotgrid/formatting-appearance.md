@@ -25,12 +25,12 @@ void radPivotGrid1_CellFormatting(object sender, PivotCellEventArgs e)
 {
     if (e.CellElement.Row.Name == "August" && !e.CellElement.IsInGrandTotalColumn)
     {
-        e.CellElement.BackColor = Color.Lime;
+        e.CellElement.BackColor = Color.LightCyan;
         e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
     }
     else if (e.CellElement.Row.Name == "November" && !e.CellElement.IsInGrandTotalColumn)
     {
-        e.CellElement.BackColor = Color.Yellow;
+        e.CellElement.BackColor = Color.LightGreen;
         e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
     }
     else
@@ -44,10 +44,10 @@ void radPivotGrid1_CellFormatting(object sender, PivotCellEventArgs e)
 ````VB.NET
 Private Sub radPivotGrid1_CellFormatting(sender As Object, e As PivotCellEventArgs)
     If e.CellElement.Row.Name = "August" AndAlso Not e.CellElement.IsInGrandTotalColumn Then
-        e.CellElement.BackColor = Color.Lime
+        e.CellElement.BackColor = Color.LightCyan
         e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
     ElseIf e.CellElement.Row.Name = "November" AndAlso Not e.CellElement.IsInGrandTotalColumn Then
-        e.CellElement.BackColor = Color.Yellow
+        e.CellElement.BackColor = Color.LightGreen
         e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
     Else
         e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
@@ -71,13 +71,13 @@ The GroupElementFormatting event can be used for styling the group cells:
 ````C#
 void PivotGridElement_GroupElementFormatting(object sender, PivotGroupElementEventArgs e)
 {
-    if (e.GroupElement.Data.Name == "1994")
+    if (e.GroupElement.Data.Name == "1996")
     {
-        e.GroupElement.BackColor = Color.Lime;
+        e.GroupElement.BackColor = Color.LightCyan;
     }
-    else if (e.GroupElement.Data.Name == "1995")
+    else if (e.GroupElement.Data.Name == "1997")
     {
-        e.GroupElement.BackColor = Color.Yellow;
+        e.GroupElement.BackColor = Color.LightGreen;
     }
     else if (e.GroupElement.Data.Name.Contains("Total"))
     {
@@ -94,10 +94,10 @@ void PivotGridElement_GroupElementFormatting(object sender, PivotGroupElementEve
 ````
 ````VB.NET
 Private Sub PivotGridElement_GroupElementFormatting(ByVal sender As Object, ByVal e As PivotGroupElementEventArgs)
-    If e.GroupElement.Data.Name = "1994" Then
-        e.GroupElement.BackColor = Color.Lime
-    ElseIf e.GroupElement.Data.Name = "1995" Then
-        e.GroupElement.BackColor = Color.Yellow
+    If e.GroupElement.Data.Name = "1996" Then
+        e.GroupElement.BackColor = Color.LightCyan
+    ElseIf e.GroupElement.Data.Name = "1997" Then
+        e.GroupElement.BackColor = Color.LightGreen
     ElseIf e.GroupElement.Data.Name.Contains("Total") Then
         e.GroupElement.ForeColor = Color.DarkRed
         e.GroupElement.BackColor = Color.White

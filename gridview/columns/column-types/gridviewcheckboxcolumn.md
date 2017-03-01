@@ -52,25 +52,6 @@ checkBoxColumn.EnableHeaderCheckBox = true;
 ````
 ````VB.NET
 checkBoxColumn.EnableHeaderCheckBox = True
-'#End Region
-'#Region "EditMode"
-checkBoxColumn.EditMode = EditMode.OnValueChange
-'#End Region
-AddHandler RadGridView1.HeaderCellToggleStateChanged, AddressOf radGridView1_HeaderCellToggleStateChanged
-End Sub
-"HeaderCellToggleStateChanged"
-Private Sub radGridView1_HeaderCellToggleStateChanged(sender As Object, e As GridViewHeaderCellEventArgs)
-Console.WriteLine(e.Column.Name)
-Console.WriteLine(e.State)
-End Sub
-ion
-'#region valueChanged
-Private Sub RadGridView1_ValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadGridView1.ValueChanged
-If TypeOf Me.RadGridView1.ActiveEditor Is RadCheckBoxEditor Then
-    Console.WriteLine(Me.RadGridView1.CurrentCell.RowIndex)
-    Console.WriteLine(Me.RadGridView1.ActiveEditor.Value)
-End If
-End Sub
 
 ````
 

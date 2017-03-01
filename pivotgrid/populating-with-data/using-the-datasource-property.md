@@ -27,8 +27,10 @@ this.radPivotGrid1.FilterDescriptions.Add(new PropertyFilterDescription() { Prop
 NwindDataSet dataset = new NwindDataSet();
 SamplesCS.DataSources.NwindDataSetTableAdapters.OrdersTableAdapter adapter = new SamplesCS.DataSources.NwindDataSetTableAdapters.OrdersTableAdapter();
 adapter.Fill(dataset.Orders);
-this.radPivotGrid1.DataSource = dataset;
-this.radPivotGrid1.DataMember = "Orders";
+BindingSource bs = new BindingSource();
+bs.DataSource = dataset;
+bs.DataMember = "Orders";
+this.radPivotGrid1.DataSource = bs;
 
 ````
 ````VB.NET
@@ -66,8 +68,10 @@ Me.RadPivotGrid1.FilterDescriptions.Add(New PropertyFilterDescription() With { _
 Dim dataset As New NwindDataSet()
 Dim adapter As New NwindDataSetTableAdapters.OrdersTableAdapter()
 adapter.Fill(dataset.Orders)
-Me.RadPivotGrid1.DataSource = dataset
-Me.RadPivotGrid1.DataMember = "Orders"
+Dim bs As New BindingSource()
+bs.DataSource = dataset
+bs.DataMember = "Orders"
+Me.RadPivotGrid1.DataSource = bs
 
 ````
 
