@@ -74,3 +74,6 @@ radTreeView1.KeyboardSearchResetInterval = 500
 
 {{endregion}}
 
+# See Also
+
+* [Kinetic Scrolling]({%slug winforms/treeview/usability/kinetic-scrolling%})    

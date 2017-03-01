@@ -15,6 +15,15 @@ __RadGridView__ supports scrolling out of the box. Once there is not enough spac
 
 ![gridview-end-user-capabilities-printing-support-scrolling 001](images/gridview-end-user-capabilities-printing-support-scrolling001.png)
 
+
+## Kinetic Scrolling
+
+__RadGridView__ supports kinetic scrolling as well. The below image shows how you can use it.
+
+
+![gridview-end-user-capabilities-printing-support-scrolling 002](images/gridview-end-user-capabilities-printing-support-scrolling002.gif)
+
+
 # See Also
 
  * [Scrolling Programmatically]({%slug winforms/gridview/scrolling/scrolling-programmatically%})

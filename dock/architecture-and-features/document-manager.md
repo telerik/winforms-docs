@@ -15,7 +15,9 @@ The __DocumentManager__ object manages all **DockWindows** that are parented in 
  
 ## ActiveDocument
 
-This property allows you to get the currently active document among the documents in a __RadDock__ instance. This property is not equal to the __ActiveWindow__ property, because the currently active window can be a **ToolWindow**, but still there will be one document that is active among the rest of the documents. For example, in the screenshot below the ActiveWindow is *ToolWindow3*, but the **ActiveDocument** of **DocumentManager** is *DocumentWindow2*: 
+This property allows you to get the currently active document among the documents in a __RadDock__ instance. This property is not equal to the __ActiveWindow__ property, because the currently active window can be a **ToolWindow**, but still there will be one document that is active among the rest of the documents. For example, in the screenshot below the ActiveWindow is *ToolWindow1*, but the **ActiveDocument** of **DocumentManager** is *DocumentWindow3*: 
+
+![raddock-document-manager001](images/raddock-document-manager001.png)        
 
 #### Get the active DocumentWindow\ToolWindow 
 {{source=..\SamplesCS\Dock\DocumentManager1.cs region=activeWindows}} 

@@ -75,7 +75,10 @@ End Sub
 
 {{endregion}} 
 
+## Buttons Styles
+You can use the __Image__ and __TextImageRelation__ properties of the GridViewCommandColumn in order to set the image for all buttons in the grid. 
 
+The following article shows how you can access the buttons in the CellFormating event and change their styles: [Formatting GridViewCommandColumn]({%slug winforms/gridview/cells/formatting-command-column%}).
 
 # See Also
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
