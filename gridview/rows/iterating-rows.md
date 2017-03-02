@@ -11,7 +11,7 @@ previous_url: gridview-rows-iterating-rows
 
 # Iterating Rows
 
-You can iterate through grid rows using the __Rows__ collection of __GridViewRowInfo__ objects. The example below selects the last row, then iterates looking for selected rows. When the selected row is found, the __GridViewRowInfo.EnsureVisible()__ method scrolls the row into view:
+You can iterate through grid rows using the __Rows__ collection of __GridViewRowInfo__ objects. The example below selects the last row, then iterates looking for selected rows. When the selected row is found, the __GridViewRowInfo.EnsureVisible()__ method scrolls the row into the view:
 
 {{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=iteratingRows}} 
 {{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=iteratingRows}} 
@@ -43,7 +43,7 @@ Next
 
 ## Finding a grid row by a value of one of its cells
 
-You could search for specific value in __RadGridView__ by iterating through the rows and compare cells value. In the example below, you search for __searchedStr__ in __MyColumnName__ column:
+You could search for a specific value in __RadGridView__ by iterating through the rows and compare cells value. In the example below, you search for __searchedStr__ in __MyColumnName__ column:
 
 {{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=findAGridRowByCellValue}} 
 {{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=findAGridRowByCellValue}} 
@@ -111,7 +111,7 @@ End Sub
 
 ## Iterating hierarchical grid.
 
-You can iterate through grid rows using the __Rows__ collection of __RadGridView__ objects. The example below cycles through the rows of the grid, modifies the values for certain cells in the different hierarchy levels and counts the rows and cells in the whole RadGridView.
+You can iterate through grid rows using the __Rows__ collection of __RadGridView__ objects. The example below cycles through the rows of the grid, modifies the values for certain cells in the different hierarchy levels and counts the rows and cells in the whole **RadGridView**.
 
 {{source=..\SamplesCS\GridView\Rows\IteratingRows.cs region=IteratingHierarchicalRows}} 
 {{source=..\SamplesVB\GridView\Rows\IteratingRows.vb region=IteratingHierarchicalRows}} 

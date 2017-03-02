@@ -13,9 +13,9 @@ previous_url: gridview-rows-formatting-rows
 
 ## Customize the appearance of data rows
 
-Use __RowFormatting__ event to apply custom formatting to __RadGridView's__ data rows.
+Use the __RowFormatting__ event to apply custom formatting to __RadGridView's__ data rows.
 
-The code snippet below demonstrates changing the background color of rows, which *"BMP"* cell value is true:
+The code snippet below demonstrates changing the background color of rows, which *"BMP"* cell value is set to *true*:
 
 ![](images/grid-rows-formatting-rows001.png)
 
@@ -68,7 +68,7 @@ End Sub
 
 ## Customize the non-data rows appearance
 
-To customize the non-data rows (header row, new row, filtering row, etc) of RadGridView, you need to handle the __ViewRowFormatting__ event.
+To customize the non-data rows (header row, new row, filtering row, etc) of **RadGridView**, you need to handle the __ViewRowFormatting__ event.
 
 {{source=..\SamplesCS\GridView\Rows\FormattingRows.cs region=viewRowFormatting}} 
 {{source=..\SamplesVB\GridView\Rows\FormattingRows.vb region=viewRowFormatting}} 
