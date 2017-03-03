@@ -1,7 +1,7 @@
 ---
 title: Layout Settings
-page_title: Layout Settings | UI for WinForms Documentation
-description: Layout Settings
+page_title: Layout Settings | RadPivotGrid
+description: RadPivotGrid supports two types of layouts - Tabular and Compact. You can control the layout type of the column and row headers via the following properties.
 slug: winforms/pivotgrid/layout-settings
 tags: layout,settings
 published: True
@@ -11,9 +11,15 @@ previous_url: pivotgrid-layout-settings
 
 # Layout Settings
 
-RadPivotGrid supports two types of layouts - __Tabular__ and __Compact__. The Tabular layout displays each field in a separate rectangle - for row descriptors in a separate column, and for columns descriptors in a separate row. The Compact layout nests the field descriptors in one common rectangle to save up space which can be useful in the cases where a large number of fields is being used.
+**RadPivotGrid** supports two types of layouts - __Tabular__ and __Compact__. The Tabular layout displays each field in a separate rectangle - for row descriptors in a separate column, and for columns descriptors in a separate row. The Compact layout nests the field descriptors in one common rectangle to save up space which can be useful in the cases where a large number of fields is being used.
 
 You can control the layout type of the column and row headers via the following properties:
+
+>caption Figure 1: Row and Column Headers Layout
+
+![pivotgrid-layout-settings 001](images/pivotgrid-layout-settings001.png)
+
+#### Headers Layout
 
 {{source=..\SamplesCS\PivotGrid\PivotGridLayoutSettings.cs region=LayoutType}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridLayoutSettings.vb region=LayoutType}} 
@@ -31,10 +37,13 @@ Me.RadPivotGrid1.RowHeadersLayout = Telerik.WinControls.UI.PivotLayout.Compact
 
 {{endregion}} 
 
-
-![pivotgrid-layout-settings 001](images/pivotgrid-layout-settings001.png)
-
 You can also control where SubTotals and GrandTotals are displayed:
+
+>caption Figure 2: Totals Position
+
+![pivotgrid-layout-settings 002](images/pivotgrid-layout-settings002.png)
+
+#### Set Grand and Sub Totals Position
 
 {{source=..\SamplesCS\PivotGrid\PivotGridLayoutSettings.cs region=Totals}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridLayoutSettings.vb region=Totals}} 
@@ -54,11 +63,15 @@ Me.RadPivotGrid1.RowsSubTotalsPosition = Telerik.WinControls.UI.TotalsPos.Last
 
 ````
 
-{{endregion}} 
-
-![pivotgrid-layout-settings 002](images/pivotgrid-layout-settings002.png)
+{{endregion}}
 
 When you have added more than one aggregate description, there are special header cells for each aggregate. To control whether these cells  are displayed in the column headers area or in the row headers area, and also set the level of the aggregate descriptions in the group tree, you can use the following properties:
+
+>captions Figure 2: Aggregates Settings
+
+![pivotgrid-layout-settings 003](images/pivotgrid-layout-settings003.png)
+
+#### Set Aggregates Level and Position
 
 {{source=..\SamplesCS\PivotGrid\PivotGridLayoutSettings.cs region=Aggregates}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridLayoutSettings.vb region=Aggregates}} 
@@ -74,6 +87,9 @@ Me.RadPivotGrid1.AggregatesLevel = 1
 
 ````
 
-{{endregion}} 
+{{endregion}}
 
-![pivotgrid-layout-settings 003](images/pivotgrid-layout-settings003.png)
+# See Also
+
+* [Structure]({%slug winforms/pivotgrid/structure%})
+* [Formatting Cells]({%slug winforms/pivotgrid/formatting-appearance%})

@@ -12,10 +12,10 @@ position: 12
 
 __RadPivotGrid__ is designed to aggregate data and it provides an API for assigning special aggregation functions performing custom calculations. For the purpose of this example we will use a __LocalDataSourceProvider__ object and we will bind the pivot control to the *Orders* table from the *Northwind* database as explained [here]({%slug winforms/pivotgrid/populating-with-data/using-the-localsourcedataprovider%}).
 
->caption Fig.1 Using the Built-in *Sum* function
+>caption Figure 1: Using the Built-in *Sum* function
 >![pivotgrid-custom-aggregation 001](images/pivotgrid-custom-aggregation001.png)
 
->caption Fig.2 Using the Custom *Sqrt Of Sum* function
+>caption Figure 2: Using the Custom *Sqrt Of Sum* function
 >![pivotgrid-custom-aggregation 001](images/pivotgrid-custom-aggregation002.png)
 
 ## Defining a Custom Aggregation Funtion

@@ -1,6 +1,6 @@
 ---
 title: Sorting
-page_title: Sorting | UI for WinForms Documentation
+page_title: Sorting | RadPivotGrid
 description: Sorting
 slug: winforms/pivotgrid/sorting
 tags: sorting
@@ -11,15 +11,11 @@ previous_url: pivotgrid-sorting
 
 # Sorting
 
-
-
->note With the current release of RadPivotGrid sorting is available only for LocalDataSourceProvider.
->
-
+RadPivotGrid provides different sorting options. 
 
 ## Understanding Sorting Mechanism
 
-RadPivotGrid provides different sorting options. You can sort your RowGroupDescriptions and ColumnGroupDescriptions ascending (from A to Z) and descending (from Z to A) based on the names of the properties they are showing or based on the aggregated description. We will explain this with a simple RadPivotGrid:<br>![pivotgrid-sorting 001](images/pivotgrid-sorting001.png)
+The RowGroupDescriptions and ColumnGroupDescriptions can be sorted ascending (from A to Z) and descending (from Z to A) based on the names of the properties they are showing or based on the aggregated description. We will explain this with a simple RadPivotGrid:<br>![pivotgrid-sorting 001](images/pivotgrid-sorting001.png)
 
 The RowGroupDescription in this RadPivotGrid is the Product field. By default the sorting of the columns is ascending (from A to Z) based on the headers: Copy holder, Glare filter, Mouse pad, Printer stand. You can easily change the sorting of the Product description and set it to descending (from Z to A). One of the ways to achieve this is to simply click the “Product” element. This will lead to the result below. The row headers are reordered based on their names.<br>![pivotgrid-sorting 002](images/pivotgrid-sorting002.png)
 
