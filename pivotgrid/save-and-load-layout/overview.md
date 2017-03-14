@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | UI for WinForms Documentation
+page_title: Overview | RadPivotGrid
 description: Overview
 slug: winforms/pivotgrid/save-load-layout/overview
 tags: save,and,load,layout
@@ -13,7 +13,9 @@ previous_url: pivotgrid-save-and-load-layout
 
 __RadPivotGrid__ supports save and load layout functionality, which gives your applications the opportunity to preserve user  __RadPivotGrid__ settings such as group descriptors and restore them later. Those layout settings are written in a xml file.
 
-Here is a sample demonstrating how you can implement a Save Layout button event handler:
+Here is a sample demonstrating how you can implement a Save Layout button event handler.
+
+#### SaveLayout
 
 {{source=..\SamplesCS\PivotGrid\PivotGridSaveLoadLayout.cs region=SaveLayout}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridSaveLoadLayout.vb region=SaveLayout}} 
@@ -50,7 +52,9 @@ End Sub
 
 {{endregion}}
 
-The code snippet below demonstrates how you can implement a Load Layout button event handler: 
+The code snippet below demonstrates how you can implement a Load Layout button event handler. 
+
+#### LoadLayout
 
 {{source=..\SamplesCS\PivotGrid\PivotGridSaveLoadLayout.cs region=LoadLayout}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridSaveLoadLayout.vb region=LoadLayout}} 
@@ -90,4 +94,9 @@ End Sub
 >important This API should be used only if the data binding has been performed via the __DataSource__ property or using a __LocalSourceDataProvider__. The API also does not export custom aggregate functions. For SAAS cubes please refer to:
 * [Serialize AdomdDataProvider]({%slug winforms/pivotgrid/save-and-load-layout/serialize-adomddataprovider%})
 * [Serialize XmlaDataProvider]({%slug winforms/pivotgrid/save-and-load-layout/serialize-xmladataprovider%})
->
+
+
+# See Also
+
+* [Serialize AdomdDataProvider]({%slug winforms/pivotgrid/save-and-load-layout/serialize-adomddataprovider%})
+* [Serialize XmlaDataProvider]({%slug winforms/pivotgrid/save-and-load-layout/serialize-xmladataprovider%})

@@ -1,7 +1,7 @@
 ---
 title: Serialize AdomdDataProvider
-page_title: Serialize AdomdDataProvider | UI for WinForms Documentation
-description: Serialize AdomdDataProvider
+page_title: Serialize AdomdDataProvider | RadPivotGrid
+description: In this article we will show you how to serialize and deserialize AdomdDataProvider and all of its settings.
 slug: winforms/pivotgrid/save-and-load-layout/serialize-adomddataprovider
 tags: save,and,load,layout
 published: True
@@ -114,7 +114,7 @@ End Class
 
 {{endregion}}
 
-The next step is to implement the serializer. When serializing the provider, you have to create an instance of __DataProviderSettings__ class and set all of the properties. After that you can serialize the instance to a file or a stream. When using __DataContractSerializer__ you have to give a collection of *KnownTypes* to the serializer. That's why we've created a new __AdomdPivotSerializationHelper__ class which has a static member - __KnownTypes__. It consits of all types you'll need in order to serialize __AdomdDataProvider__. 
+The next step is to implement the serializer. When serializing the provider, you have to create an instance of the __DataProviderSettings__ class and set all of the properties. After that you can serialize the instance to a file or a stream. When using __DataContractSerializer__ you have to pass a collection of *KnownTypes* to the serializer. That's why we've created a new __AdomdPivotSerializationHelper__ class which has a static member - __KnownTypes__. It consits of all types you'll need in order to serialize __AdomdDataProvider__. 
 
 #### Data Provider Implementation
 
@@ -293,7 +293,7 @@ End Class
 
 So the last step is to serialize the provider and deserialize it.
 
-#### A Sample Usage
+#### Using the AdomdProviderSerializer
 
 {{source=..\SamplesCS\PivotGrid\PivotGridSerializeCubeDataProvider.cs region=SampleUsageAdomd}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridSerializeCubeDataProvider.vb region=SampleUsageAdomd}} 
@@ -330,5 +330,6 @@ End Sub
 
 {{endregion}}
 
+# See Also
 
-
+* [Serialize LocalDataSourceProvider]({%slug winforms/pivotgrid/save-load-layout/overview%})

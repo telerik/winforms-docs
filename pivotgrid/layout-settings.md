@@ -67,7 +67,7 @@ Me.RadPivotGrid1.RowsSubTotalsPosition = Telerik.WinControls.UI.TotalsPos.Last
 
 When you have added more than one aggregate description, there are special header cells for each aggregate. To control whether these cells  are displayed in the column headers area or in the row headers area, and also set the level of the aggregate descriptions in the group tree, you can use the following properties:
 
->captions Figure 2: Aggregates Settings
+>caption Figure 3: Aggregates Settings
 
 ![pivotgrid-layout-settings 003](images/pivotgrid-layout-settings003.png)
 

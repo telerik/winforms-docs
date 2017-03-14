@@ -124,6 +124,8 @@ End Sub
 
 Using the __ErrorString__ and __EmpltyValueString__ properties of RadPivotGrid, you can set the strings that will appears correspondingly if an error occurs during the calculation of a cell value or if there is no data for a given cell. An error can occur for example if you try to sum a text column.
 
+#### Error and Empty Value Strings
+
 {{source=..\SamplesCS\PivotGrid\PivotGridFormattingAppearance.cs region=SetFormatStrings}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridFormattingAppearance.vb region=SetFormatStrings}} 
 

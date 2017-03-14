@@ -1,7 +1,7 @@
 ---
 title: Spread Export
-page_title: Spread Export | UI for WinForms Documentation
-description: Spread Export
+page_title: Spread Export | RadPivotGrid
+description: This article will explain in detail the spread export abilities and will demonstrate how to use it.
 slug: winforms/pivotgrid/exporting-data/spread-export
 tags: spread,export
 published: True
@@ -11,7 +11,7 @@ previous_url: pivotgrid-export-srpead-export
 
 # Spread Export
 
-__PivotGridSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadPivotGrid__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how to use it.
+__PivotGridSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadPivotGrid__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the spread export abilities and will demonstrate how to use it.
 
 * [Exporting Data](#exporting-data)
 
@@ -21,7 +21,7 @@ __PivotGridSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik
 
 Here is how the following grid, looks when exported.
       
->caption Fig.1 Exporting RadPivotGrid
+>caption Figure 1: Exporting RadPivotGrid
 
 ![pivotgrid-export-srpead-export 001](images/pivotgrid-export-srpead-export001.png)
 
@@ -44,7 +44,7 @@ Here is how the following grid, looks when exported.
 
 To use the spread export functionality, an instance of the __PivotGridSpreadExport__ object should be created, passing as parameter the __RadPivotGrid__ instance to export. Afterwards, the __RunExport__ method will trigger the export process. Data can also be exported asynchronously, in order to take advantage of this feature, you should use the __RunExportAsync__ method instead. Both methods accepts as parameter a filename of the file to be exported and an instance of the __SpreadExportRenderer__ class.
 
-#### Running export synchronously
+#### Running Export Synchronously
 
 {{source=..\SamplesCS\PivotGrid\PivotSpreadExport.cs region=ExportingData}} 
 {{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=ExportingData}} 
@@ -65,7 +65,7 @@ spreadExport.RunExport("..\..\exported-file.xlsx", New SpreadExportRenderer())
 
 The __RunExport__ method has several overloads allowing the user to export using a stream as well:
 
-####  Running export synchronously using a stream
+####  Running Export Synchronously Using a Stream
 
 {{source=..\SamplesCS\PivotGrid\PivotSpreadExport.cs region=StreamRunExport}} 
 {{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=StreamRunExport}} 
@@ -101,7 +101,7 @@ End Using
 
 {{endregion}} 
 
-#### Running export asynchronously
+#### Running Export Asynchronously
 
 {{source=..\SamplesCS\PivotGrid\PivotSpreadExport.cs region=ExportingDataAsync}} 
 {{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=ExportingDataAsync}} 
@@ -120,6 +120,8 @@ spreadExport.RunExportAsync("..\..\exported-file.xlsx", New SpreadExportRenderer
 {{endregion}}
 
 The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
+
+#### Running Export Asynchronously Overloads
 
 {{source=..\SamplesCS\PivotGrid\PivotSpreadExport.cs region=StreamRunExportAsync}} 
 {{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=StreamRunExportAsync}} 
@@ -214,7 +216,10 @@ __CellFormatting__: This event is used to format the cells to be exported. The e
 
 This is how the displayed in Fig. 1 pivot grid looks after handling the __CellFormatting__ event.
         
->caption Fig.2 Applying styles<br>![pivotgrid-export-srpead-export 002](images/pivotgrid-export-srpead-export002.png)
+>caption Figure 2: Applying Styles
+![pivotgrid-export-srpead-export 002](images/pivotgrid-export-srpead-export002.png)
+
+#### CellFormatting Event
 
 {{source=..\SamplesCS\PivotGrid\PivotSpreadExport.cs region=Events}} 
 {{source=..\SamplesVB\PivotGrid\PivotSpreadExport.vb region=Events}} 
@@ -252,3 +257,7 @@ __WorkbookCreated__:  This event is triggered on the __SpreadExportRenderer__ ob
 __AsyncExportProgressChanged__: Occurs when the progress of an asynchronous export operation changes.
 
 __AsyncExportCompleted__: Occurs when an async export operation is completed.
+
+# See Also
+
+* [Export to PDF]({%slug winforms/pivotgrid/exporting-data/export-to-pdf%})
