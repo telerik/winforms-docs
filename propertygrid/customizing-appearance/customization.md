@@ -39,13 +39,13 @@ void radPropertyGrid1_ItemFormatting(object sender, PropertyGridItemFormattingEv
     //set the back color of all child items to yellow
     if (e.Item.Level > 0)
     {
-        e.VisualElement.BackColor = Color.Yellow;
+        e.VisualElement.BackColor = Color.LightCyan;
     }
     else
     {
         e.VisualElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
     }
-    //set the backcolor of items with value True to LightGreen and with value equal to False to Red
+    //set the back color of items with value True to LightGreen and with value equal to False to Red
     PropertyGridItem item = e.Item as PropertyGridItem;
     if (item != null && item.Value != null)
     {
@@ -55,7 +55,7 @@ void radPropertyGrid1_ItemFormatting(object sender, PropertyGridItemFormattingEv
         }
         else if (item.Value.ToString() == "False")
         {
-            e.VisualElement.BackColor = Color.Red;
+            e.VisualElement.BackColor = Color.LightCoral;
         }
     }
     else
@@ -69,17 +69,17 @@ void radPropertyGrid1_ItemFormatting(object sender, PropertyGridItemFormattingEv
 Private Sub radPropertyGrid1_ItemFormatting(ByVal sender As Object, ByVal e As PropertyGridItemFormattingEventArgs)
     'set the back color of all child items to yellow
     If e.Item.Level > 0 Then
-        e.VisualElement.BackColor = Color.Yellow
+        e.VisualElement.BackColor = Color.LightCyan
     Else
         e.VisualElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
     End If
-    'set the backcolor of items with value True to LightGreen and with value equal to False to Red
+    'set the back color of items with value True to LightGreen and with value equal to False to Red
     Dim item As PropertyGridItem = TryCast(e.Item, PropertyGridItem)
     If item IsNot Nothing AndAlso item.Value IsNot Nothing Then
         If item.Value.ToString() = "True" Then
             e.VisualElement.BackColor = Color.LightGreen
         ElseIf item.Value.ToString() = "False" Then
-            e.VisualElement.BackColor = Color.Red
+            e.VisualElement.BackColor = Color.LightCoral
         End If
     Else
         e.VisualElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
