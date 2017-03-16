@@ -1,7 +1,7 @@
 ---
-title: Export to Pdf
-page_title: Export to Pdf | UI for WinForms Documentation
-description: Export to Pdf
+title: Export to PDF
+page_title: Export to PDF | RadPivotGrid
+description: RadPivotGrid can export its contents to PDF. This is achieved with the help of the RadPdfProcessing library.
 slug: winforms/pivotgrid/exporting-data/export-to-pdf
 tags: export,to,pdf
 published: True
@@ -9,9 +9,13 @@ position: 2
 previous_url: pivotgrid-export-export-to-pdf
 ---
 
-# Export to Pdf
+# Export to PDF
 
-__RadPivotGrid__ can export its contents to PDF. This is achieved with the help of the [RadPdfProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library. <br>![pivotgrid-export-export-to-pdf 001](images/pivotgrid-export-export-to-pdf001.png)
+__RadPivotGrid__ can export its contents to PDF. This is achieved with the help of the [RadPdfProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library.
+
+>caption Figure 1: RadPivotGrid to PDF
+
+![pivotgrid-export-export-to-pdf 001](images/pivotgrid-export-export-to-pdf001.png)
 
 >note The PDF export functionality is located in the __TelerikExport.dll__ assembly and to use the functionality you need yo add reference to it.
 >
@@ -19,6 +23,8 @@ __RadPivotGrid__ can export its contents to PDF. This is achieved with the help 
 ## Execute the Exporter
 
 Before exporting to PDF, you have to initialize the __PivotGridPdfExport__ class. The constructor takes one parameter - __RadPivotGrid__ which will be exported. You need to create  __PdfExportRenderer__ instance as well:
+
+#### PivotGridPdfExport Class
 
 {{source=..\SamplesCS\Pivotgrid\PdfExportCode.cs region=RunExport}} 
 {{source=..\SamplesVB\Pivotgrid\PdfExportCode.vb region=Runexport}} 
@@ -40,7 +46,7 @@ exporter.RunExport("C:\PivotData.pdf", renderer)
 
 The __RunExport__ method has several overloads allowing the user to export using a stream as well:
 
-####  Running export synchronously using a stream
+####  Running Export Synchronously Using a Stream
 
 {{source=..\SamplesCS\Pivotgrid\PdfExportCode.cs region=StreamRunExport}} 
 {{source=..\SamplesVB\Pivotgrid\PdfExportCode.vb region=StreamRunExport}} 
@@ -112,6 +118,8 @@ The __PdfExportRenderer__ is exposing two events as well. Detailed information i
 
 The __PivotGrid__ can be exported asynchronously as well. The following example shows how you can run the exporter asynchronously.
 
+#### Running Export Asynchronously
+
 {{source=..\SamplesCS\Pivotgrid\PdfExportCode.cs region=Async}} 
 {{source=..\SamplesVB\Pivotgrid\PdfExportCode.vb region=Async}} 
 
@@ -132,6 +140,8 @@ exporter.RunExportAsync("C:\PivotData.pdf", renderer)
 {{endregion}}
 
 The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
+
+#### Running Export Asynchronously Overloads
 
 {{source=..\SamplesCS\Pivotgrid\PdfExportCode.cs region=StreamRunExportAsync}} 
 {{source=..\SamplesVB\Pivotgrid\PdfExportCode.vb region=StreamRunExportAsync}} 
@@ -187,3 +197,7 @@ There are two events that can be used with the asynchronous export:
 * __AsyncExportCompleted:__ Occurs when an asynchronous export operation is completed.
 
 * __AsyncExportProgressChanged:__ Occurs when the progress of an asynchronous export operation changes.
+
+# See Also
+
+* [Spread Export]({%slug winforms/pivotgrid/exporting-data/spread-export%})

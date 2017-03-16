@@ -5,7 +5,7 @@ description: The LocalDataSourceProvider exposes a GetUnderlyingData method whic
 slug: winforms/pivotgrid/drilldown
 tags: custom, aggregation
 published: True
-position: 12
+position: 13
 ---
 
 # Drill Down
@@ -62,7 +62,7 @@ End Sub
 
 {{endregion}}
 
-The underlying data can be retrieved by handling the newly-introduced __GetUnderlyingDataCompleted__ event and accessing the __DrillDownCompletedEventArgs__ arguments:
+The underlying data can be retrieved by handling the __GetUnderlyingDataCompleted__ event and accessing the __DrillDownCompletedEventArgs__ arguments:
 
 * __Result__: An IEnumerable representing the result of the underlying data extraction operation.
 * __InnerExceptions__: A *read-only* collection with the thrown exceptions during the underlying data extraction.

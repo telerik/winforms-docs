@@ -1,17 +1,17 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
-description: Localization
+page_title: Localization | RadPropertyGrid
+description: The article provides an example with a sample implementation of an English localization provider.
 slug: winforms/propertygrid/localization
 tags: localization
 published: True
-position: 8
+position: 14
 previous_url: propertygrid-localization
 ---
 
 # Localization
 
-To localize RadPropertyGrid to display control text and messages in a specific language, please consider the following:
+To localize **RadPropertyGrid** to display control text and messages in a specific language, please consider the following:
 
 * All required classes for localization are defined in __Telerik.WinConrtols.UI.Localization__ namespace.
 
@@ -21,7 +21,7 @@ To localize RadPropertyGrid to display control text and messages in a specific l
 
 Below is a sample implementation of an English localization provider:
 
-#### Creating English localization provider
+#### Creating English Localization Provider
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridLocalization.cs region=localizationProvider}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridLocalization.vb region=localizationProvider}} 
@@ -103,3 +103,7 @@ PropertyGridLocalizationProvider.CurrentProvider = New MyEnglishPropertyGridLoca
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Getting Started]({%slug winforms/propertygrid/getting-started%})

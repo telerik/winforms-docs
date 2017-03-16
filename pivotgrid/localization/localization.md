@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
-description: Localization
+page_title: Localization | RadPivotGrid
+description: RadPivotGrid can be localized to display any text and messages in a specific language by using a PivotGridLocalizationProvider
 slug: winforms/pivotgrid/localization/localization
 tags: localization
 published: True
@@ -672,7 +672,7 @@ End Class
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
->note RadPivotGrid`s localization provider needs to be loaded in the constructor of the form prior to calling the __InitializeComponent__ method.
+>note **RadPivotGrid**`s localization provider needs to be loaded in the constructor of the form prior to calling the __InitializeComponent__ method.
 >
 
 #### Assigning the Current Localization Provider

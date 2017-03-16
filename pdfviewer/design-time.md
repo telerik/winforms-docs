@@ -21,7 +21,7 @@ position: 2
 
 	* __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style at one time.
 
-* __Settings__:
+* __Settings__
 
 	* __Viewer Mode__: Specifies the behavior of __RadPdfViewer__ when you left-click in the document and drag across the document:
 	  *  *None*: The document can be scrolled only with the mouse wheel or directly using the scrollbars.

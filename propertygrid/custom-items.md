@@ -1,19 +1,24 @@
 ---
-title: Custom items
-page_title: Custom items | UI for WinForms Documentation
-description: Custom items
+title: Custom Items
+page_title: Custom Items | RadPropertyGrid
+description: RadPropertyGrid allows you to create and use your own custom value items, allowing you to add the desired editors to fit your business need.
 slug: winforms/propertygrid/custom-items
 tags: custom,items
 published: True
-position: 6
+position: 11
 previous_url: propertygrid-custom-items
 ---
 
-# Custom items
+# Custom Items
 
-__RadPropertyGrid__ allows you to create and use your own custom value items, allowing you to add the desired editors to fit your business need. In the following example, we will add two radio buttons as value editor for a property grid item.<br>![propertygrid-custom-items 001](images/propertygrid-custom-items001.gif)
+__RadPropertyGrid__ allows you to create and use your own custom value items, allowing you to add the desired editors to fit your business need. In the following example, we will add two radio buttons as value editor for a property grid item.
+
+>caption Figure 1: Custom Property Grid Item
+![propertygrid-custom-items 001](images/propertygrid-custom-items001.gif)
 
 Let’s start by specifying the RadPropertyGrid.__SelectedObject__ property, so out controls gets populated with some data. For this purpose, we will use the *Item* class which is defined below:
+
+#### Data Class
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=ClassItem}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=ClassItem}} 
@@ -88,6 +93,8 @@ End Enum
 {{endregion}}
 
 Next, we should create a custom __PropertyGridValueElement__ which is purposed to be used in a derived __PropertyGridItemElement__. Our custom implementation of the __PropertyGridValueElement__ will demonstrate how to insert radio buttons for the Item.__DeliveryType__ property.
+
+#### Custom PropertyGridValueElement
 
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=PropertyGridValueElement}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=PropertyGridValueElement}} 
@@ -179,6 +186,8 @@ End Class
 
 To put this value element in action, we will create a descendant of __PropertyGridItemElement__, and we will override its __CreatePropertyGridValueElement__ method:
 
+#### Custom PropertyGridItemElement
+
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=PropertyGridItemElement}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=PropertyGridItemElement}} 
 
@@ -220,6 +229,8 @@ End Class
 
 Back to the control, let’s subscribe to the RadPropertyGrid.__CreateItemElement__ event which gives you the opportunity to replace the item created for the __DeliveryType__ property with your custom one:
 
+#### Handle CreateItemElement Event
+
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=CreateItemElement}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=CreateItemElement}} 
 
@@ -251,6 +262,8 @@ End Sub
 
 The next thing we need to do is to stop entering edit mode when clicking over one of the radio buttons by using the RadPropertyGrid.__Editing__ event. Thus, the user will be allowed to select directly the preferred delivery type without necessity to enter edit mode.
 
+#### Handle Editing Event
+
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=Editing}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=Editing}} 
 
@@ -279,6 +292,8 @@ End Sub
 
 The last thing we should update is to adjust the PropertyGridElement.PropertyTableElement.__ItemHeight__ property with such a value to fit the available content:
 
+#### Set Item Height
+
 {{source=..\SamplesCS\PropertyGrid\PropertyGridCustomItems.cs region=ItemHeight}} 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=ItemHeight}} 
 
@@ -293,3 +308,9 @@ Me.radPropertyGrid1.PropertyGridElement.PropertyTableElement.ItemHeight = [Enum]
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Getting Started]({%slug winforms/propertygrid/getting-started%})
+* [Structure]({%slug winforms/propertygrid/structure%})
+* [Design Time]({%slug winforms/propertygrid/design-time%})

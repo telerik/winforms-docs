@@ -1,21 +1,21 @@
 ---
-title: Handling editors' events
-page_title: Handling editors' events | UI for WinForms Documentation
-description: Handling editors' events
-slug: winforms/propertygrid/editors/handling-editors'-events
+title: Handling Editors' Events
+page_title: Handling editors' events | RadPropertyGrid
+description: In some cases you may need to perform a specific operation depending on the user input in the editor while the editor is still opened.
+slug: winforms/propertygrid/editors/handling-editors-events
 tags: handling,editors',events
 published: True
 position: 6
 previous_url: propertygrid-editors-handling-editors-events
 ---
 
-# Handling editors' events
+# Handling Editors' Events
 
 In some cases you may need to perform a specific operation depending on the user input in the editor while the editor is still opened.
 
 For example, you may need to set specific text in the editor when the user presses __CTRL + D__. In this case, you should subscribe to the __KeyDown__ event of the __RadTextBoxElement__ in the __EditorInitialized__ event handler. The editors in RadPropertyGrid are reused, so we define a field which prevents us from subscribing to the __KeyDown__ more than once.
 
-#### How to handle events
+#### How to Handle Events
 
 {{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridHandlingEditorsEvents.cs region=handlingEvents}} 
 {{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridHandlingEditorsEvents.vb region=handlingEvents}} 
@@ -79,3 +79,9 @@ End Sub
 ````
 
 {{endregion}}
+
+# See Also
+
+* [Custom Editors]({%slug winforms/propertygrid/editors/using-custom-editor%})
+* [Customizing Editor Behavior]({%slug winforms/propertygrid/editors/using-custom-editor%})
+* [Validation]({%slug winforms/propertygrid/editors/customizing-editor-behavior%})

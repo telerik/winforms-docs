@@ -1,6 +1,6 @@
 ---
 title: ToolBar
-page_title: ToolBar | UI for WinForms Documentation
+page_title: ToolBar | RadPropertyGrid
 description: ToolBar
 slug: winforms/propertygrid/features/toolbar
 tags: toolbar
@@ -11,9 +11,9 @@ previous_url: propertygrid-features-toolbar
 
 # ToolBar
 
-RadPropertyGrid offers a toolbar with out of the box functionality, which appears on the top of the control. This toolbar contains predefined functions to sort the items, to group the items or to filter them by a string entered in the text box. You can enable this tool bar by setting the __ToolBarVisible__ property to *true*:
+**RadPropertyGrid** offers a toolbar with out of the box functionality, which appears on the top of the control. This toolbar contains predefined functions to sort the items, to group the items or to filter them by a string entered in the text box. You can enable this tool bar by setting the __ToolBarVisible__ property to *true*:
 
-#### Enabling the tool bar
+#### Enabling the Toolbar
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=ToolbarVisible}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=ToolbarVisible}} 
@@ -27,13 +27,15 @@ RadPropertyGrid1.ToolbarVisible = True
 
 ````
 
-{{endregion}} 
+{{endregion}}
+
+>caption Figure 1: RadPropertyGrid Toolbar
 
 ![propertygrid-features-toolbar 001](images/propertygrid-features-toolbar001.png)
 
 You can set the predefined filter operator and property by making use of the following properties:
 
-#### Customizing default filtering
+#### Customizing Default Filtering
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=FilterProperties}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=FilterProperties}} 
@@ -53,7 +55,7 @@ RadPropertyGrid1.PropertyGridElement.ToolbarElement.FilterPropertyName = "Name"
 
 The toolbar consists of a __StackLayoutPanel__, which allow you to easily add additional elements or modify the existing once. You can access the existing items as follows:
 
-#### Accessing toolbar elements
+#### Accessing Toolbar Elements
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=accessingItems}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=accessingItems}} 
@@ -75,7 +77,10 @@ Dim groupButton As RadToggleButtonElement = RadPropertyGrid1.PropertyGridElement
 
 If you want to add a new element in the toolbar, just add it to the __Children__ collection of __ToolbarElement__:
 
-#### Add element to toolbar
+#### Add Element to Toolbar
+
+>caption Figure 2: RadPropertyGrid Toolbar
+![propertygrid-features-toolbar 002](images/propertygrid-features-toolbar002.png)
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=addElement}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=addElement}} 
@@ -99,4 +104,8 @@ RadPropertyGrid1.PropertyGridElement.ToolbarElement.Children.Add(clearFiltering)
 
 {{endregion}}
 
-![propertygrid-features-toolbar 002](images/propertygrid-features-toolbar002.png)
+# See Also
+
+* [Grouping]({%slug winforms/propertygrid/features/grouping%})
+* [Sorting]({%slug winforms/propertygrid/features/sorting%})
+* [Help Bar]({%slug winforms/propertygrid/features/help-bar%})

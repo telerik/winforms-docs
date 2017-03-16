@@ -1,7 +1,7 @@
 ---
 title: Export to Excel via ExcelML Format
-page_title: Export to Excel via ExcelML Format | UI for WinForms Documentation
-description: Export to Excel via ExcelML Format
+page_title: Export to Excel via ExcelML Format | RadPivotGrid
+description: This method offers exporting functionality and does not require MS Office installation on users' machines. 
 slug: winforms/pivotgrid/exporting-data/export-to-excel
 tags: export,to,excel
 published: True
@@ -13,9 +13,13 @@ previous_url: pivotgrid-export-to-excel
 
 This method offers exporting functionality and does not require MS Office installation on users' machines. The __PivotExcelML__ format can be read by MS Excel 2002 (MS Office XP) and above.
 
+>caption Figure 1: RadPivotGrid Export to Excel
+
+![pivotgrid-export-to-excel 001](images/pivotgrid-export-to-excel001.png)
+
 ## Exporting Data
 
-Before running export to ExcelML, you have to initialize the PivotExportToExcelML class. The constructor takes one parameter: the RadPivotGrid that will be exported:
+Before running export to ExcelML, you have to initialize the PivotExportToExcelML class. The constructor takes one parameter: the **RadPivotGrid** that will be exported:
 
 {{source=..\SamplesCS\PivotGrid\PivotGridExport.cs region=ExportToExcelIMLInitialization}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridExport.vb region=ExportToExcelIMLInitialization}} 
@@ -125,4 +129,6 @@ End Sub
 
 {{endregion}}
 
-![pivotgrid-export-to-excel 001](images/pivotgrid-export-to-excel001.png)
+# See Also
+
+* [Spread Expot]({%slug winforms/pivotgrid/exporting-data/spread-export%})

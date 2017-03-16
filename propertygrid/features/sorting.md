@@ -1,7 +1,7 @@
 ---
 title: Sorting
-page_title: Sorting | UI for WinForms Documentation
-description: Sorting
+page_title: Sorting | RadPropertyGrid
+description: The sorting capabilities can be controlled either by using the predefined sorting options in the PropertySort property together with the SortOrder property
 slug: winforms/propertygrid/features/sorting
 tags: sorting
 published: True
@@ -11,9 +11,13 @@ previous_url: propertygrid-features-sorting
 
 # Sorting
 
-The sorting capabilities can be controlled either by using the predefined sorting options in the __PropertySort__ property together with the __SortOrder__ property, or you can use your own sorting by adding a predefined __SortDescriptor__ to the __SortDescriptor__ collection of RadPropertyGrid. The first code snippet demonstrates how to sort the items programmatically in a descending order:
+The sorting capabilities can be controlled either by using the predefined sorting options in the __PropertySort__ property together with the __SortOrder__ property, or you can use your own sorting by adding a predefined __SortDescriptor__ to the __SortDescriptor__ collection of **RadPropertyGrid**. The first code snippet demonstrates how to sort the items programmatically in a descending order.
 
-#### Default sorting
+>caption Figure 1: Default Sorting
+
+![propertygrid-features-sorting 001](images/propertygrid-features-sorting001.png)
+
+#### Default Sorting
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridSorting.cs region=Sorting}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridSorting.vb region=Sorting}} 
@@ -29,30 +33,31 @@ RadPropertyGrid1.SortOrder = SortOrder.Descending
 
 ````
 
-{{endregion}} 
-
-
-![propertygrid-features-sorting 001](images/propertygrid-features-sorting001.png)
+{{endregion}}
 
 Another way to sort the items is to create a __SortDescriptor__ and add it to the __SortDescriptors__ collection of the control. Additionally, to enable sorting with sort descriptors, you have to set the __EnableSorting__ property to *true*.
 
 You can sort by the following criteria’s:      
 
-* __Name__ - the property name.
+* __Name__: The property name.
 
-* __Value__ - the property value.
+* __Value__: The property value.
 
-* __Category__ - assigned from the __Category__ attrubute name.
+* __Category__: Assigned from the __Category__ attrubute name.
 
-* __FormattedValue__ - the value of the property converted to string.
+* __FormattedValue__: The value of the property converted to string.
 
-* __Label__ - by default this is identical to the property name, unless changed by setting the __Label__ property of the item.
+* __Label__: By default this is identical to the property name, unless changed by setting the __Label__ property of the item.
 
-* __Description__ - this is determined by the property __Description__ attribute/
+* __Description__: This is determined by the property __Description__ attribute/
 
-* __OriginalValue__ - the value used when the property is initialized.
+* __OriginalValue__: The value used when the property is initialized.
 
-Here is an example of sorting the items by their value in ascending order:
+Here is an example of sorting the items by their value in ascending order.
+
+>caption Figure 2: SortDescriptors
+
+![propertygrid-features-sorting 002](images/propertygrid-features-sorting002.png)
 
 #### Sorting with SortDescriptors
 
@@ -74,4 +79,8 @@ RadPropertyGrid1.SortDescriptors.Add(sort)
 
 {{endregion}}
 
-![propertygrid-features-sorting 002](images/propertygrid-features-sorting002.png)
+# See Also
+
+* [Filtering]({%slug winforms/propertygrid/features/filtering%})
+* [Grouping]({%slug winforms/propertygrid/features/grouping%})
+* [Editors]({%slug winforms/propertygrid/editors/overview%})

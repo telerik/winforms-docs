@@ -1,7 +1,7 @@
 ---
 title: Customizing RadPivotFieldList
-page_title: Customizing RadPivotFieldList | UI for WinForms Documentation
-description: Customizing RadPivotFieldList
+page_title: Customizing RadPivotFieldList | RadPivotFieldList
+description: RadPivotFieldList can be customized by accessing the elements building its controls or by handling events and define which fields to be extracted and displayed.
 slug: winforms/pivotgrid/pivot-field-list/customizing-radpivotfieldList
 tags: customizing,radpivotfieldlist 
 published: True
@@ -9,6 +9,8 @@ position: 1
 ---
 
 # Customizing RadPivotFieldList
+
+**RadPivotFieldList** can be customized by accessing the elements building its controls or by handling events and define which fields to be extracted and displayed.
 
 ## Visual Field Manipulation
 
@@ -184,3 +186,7 @@ End Sub
 
 
 {{endregion}}
+
+# See Also
+
+* [RadPivotFieldList Overview]({%slug winforms/pivotgrid/pivot-field-list/radpivotfieldlist%})
