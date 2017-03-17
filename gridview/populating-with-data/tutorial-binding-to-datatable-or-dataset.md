@@ -15,7 +15,7 @@ The following tutorial demonstrates binding to a single database table. For info
 
 ![gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset 001](images/gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset001.png)
 
-1\. Place a RadGridView component on a form. Set the __Dock__ property to *Fill*.
+1\. Place a **RadGridView** component on a form. Set the __Dock__ property to *Fill*.
 
 2\. In the Properties window locate the __DataSource__ property and click the arrow to open the list. Select the __Add Project Data Source...__ link. *This step will display the Data Source Configuration Wizard.*
 
@@ -27,7 +27,7 @@ The following tutorial demonstrates binding to a single database table. For info
 
 4\. In the `Choose Your data Connection` page click the __New Connection...__ button. *This step will display the Add Connection dialog.*![gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset 004](images/gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset004.png)
 
-5\. In the `Add Connection` dialog click the __Change...__ button. *This step will display the `Change Data Source dialog`.
+5\. In the `Add Connection` dialog click the __Change...__ button. This step will display the `Change Data Source dialog`.
 
 ![gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset 005](images/gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset005.png)
 
@@ -35,7 +35,7 @@ The following tutorial demonstrates binding to a single database table. For info
 
 ![gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset 006](images/gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset006.png)
 
-7\. The `Add Connection` dialog will appear. Click the Database File Name __Browse__button and locate the "NWind.mdb" file from the Telerik UI for WinForms directory in the "\Examples\DataSources" directory. Click the __OK__button to close the `Add Connection` dialog.
+7\. The `Add Connection` dialog will appear. Click the Database File Name __Browse__ button and locate the "NWind.mdb" file from the Telerik UI for WinForms directory in the "\Examples\DataSources" directory. Click the __OK__ button to close the `Add Connection` dialog.
             
 
 8\. In the `Choose Your Database Objects` page, select the __"Categories"__ table. Click the __Finish__ button to close the `Data Source Configuration Wizard`.
