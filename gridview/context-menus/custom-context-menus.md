@@ -19,6 +19,8 @@ __RadGridView__ provides a straightforward way to use custom context menus, inst
 
 Start by creating the context menu, initializing its items, and subscribing for the events that you want to handle to achieve the desired behavior. Note: You will need Telerik.WinControls.UI namespace added to your "Using" (C#) or "Imports" (VB).
 
+#### Setup the Context Menu
+
 {{source=..\SamplesCS\GridView\ContextMenus\CustomContextMenus.cs region=creatingContextMenu}} 
 {{source=..\SamplesVB\GridView\ContextMenus\CustomContextMenus.vb region=creatingContextMenu}} 
 
@@ -56,6 +58,8 @@ End Sub
 
 Once the menu object has been initialized and populated with menu items, it is ready to be attached to the __RadGridView__. To do that, subscribe to the __ContextMenuOpening__ event and set the context menu to be displayed:
 
+#### ContextMenuOpening Event
+
 {{source=..\SamplesCS\GridView\ContextMenus\CustomContextMenus.cs region=changeTheContextMenu}} 
 {{source=..\SamplesVB\GridView\ContextMenus\CustomContextMenus.vb region=changeTheContextMenu}} 
 
@@ -73,11 +77,10 @@ End Sub
 
 ````
 
-{{endregion}} 
-
-
+{{endregion}}
 
 # See Also
+
 * [Conditional Custom Context Menus]({%slug winforms/gridview/context-menus/conditional-custom-context-menus%})
 
 * [Modifying the Default Context Menu]({%slug winforms/gridview/context-menus/modifying-the-default-context-menu%})

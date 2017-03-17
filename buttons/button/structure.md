@@ -8,9 +8,9 @@ published: True
 position: 1 
 ---
 
-This article will show the internal elements structure of __RadButton__:
-
 # Structure
+
+This article will show the internal elements structure of __RadButton__.
 
 >caption Figure 1: RadButton's elements hierarchy
 

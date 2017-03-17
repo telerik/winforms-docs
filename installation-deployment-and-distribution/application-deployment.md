@@ -13,7 +13,7 @@ previous_url: installation-deployment-and-distribution-application-deployment
 
 When you use Telerik controls in your WinForms application, your application must have references to several of Telerik assemblies. These references are automatically added to your project when you drag and drop controls or component on your form. There are three assemblies required in general and the rest are added only if you are using a specific control that requires some other assembly. In sum, most of the time you will not have to add references to all Telerik assemblies. Also in general, the assembly references will be added automatically and they will refer to the assemblies installed in the GAC by Telerik WinForms installer.       
 
->*RadMarkupEditor* and *RadMarkupDialog* require a reference to *Microsoft.mshtml* assembly and if you need to use them at Run Time you will need to distribute this assembly to the end user computers as well. You can find further information about that in this *external* resource: [http://msdn.microsoft.com/en-us/library/w0dt2w20.aspx](http://msdn.microsoft.com/en-us/library/w0dt2w20.aspx) You do not need to do anything on your developer machine, because Visual Studio provides the required assembly. Also if your application does not use the editor or the dialog, you do not need a reference to this assembly.        
+>note *RadMarkupEditor* and *RadMarkupDialog* require a reference to *Microsoft.mshtml* assembly and if you need to use them at Run Time you will need to distribute this assembly to the end user computers as well. You can find further information about that in this *external* resource: [http://msdn.microsoft.com/en-us/library/w0dt2w20.aspx](http://msdn.microsoft.com/en-us/library/w0dt2w20.aspx) You do not need to do anything on your developer machine, because Visual Studio provides the required assembly. Also if your application does not use the editor or the dialog, you do not need a reference to this assembly.        
 
 ## Deployment Strategies
 
@@ -27,10 +27,9 @@ Thus these Telerik assemblies will be copied to your *Release/Bin*, *Debug/Bin* 
 
 ### GAC
 
-As noted above, Telerik assemblies are installed in the GAC by Telerik installer on the developer machines. You may choose to insert Telerik assemblies in the GAC of your client machines too by following the instructions in the [Add/Remove RadControls to the Global Assembly Cache (GAC)]({%slug winforms/installation-deployment-and-distribution/application-deploymentadd-remove-radcontrols-to-the-global-assembly-cache-(gac)%}) section. 
-              
+As noted above, Telerik assemblies are installed in the GAC by Telerik installer on the developer machines. You may choose to insert Telerik assemblies in the GAC of your client machines too by following the instructions in the [Add/Remove RadControls to the Global Assembly Cache (GAC)]({%slug winforms/installation-deployment-and-distribution/application-deploymentadd-remove-radcontrols-to-the-global-assembly-cache-(gac)%}) section.      
 
->Please do not use Telerik installer to install Telerik assemblies in the GACs of your clients' machines. Telerik installer should be used only for the developers' machines.
+>note Please do not use Telerik installer to install Telerik assemblies in the GACs of your clients' machines. Telerik installer should be used only for the developers' machines.
 
 
 ### ClickOnce 

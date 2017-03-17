@@ -10,6 +10,8 @@ previous_url: editors-maskededitbox-working-with-radmaskededitbox
 ---
 
 # Working with RadMaskedEditBox
+
+The behavior of the control can be defined by setting up some important properties as well as by handling events.
  
 ## Properties
 
@@ -17,27 +19,29 @@ __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, me
 
 * __MaskType:__ This property determines how masks are interpreted by the control. Valid values are.
 
-* __None:__ the control acts like a text box.
+* __None:__ The control acts like a text box.
 
-* [Numeric:]({%slug winforms/editors/maskededitbox/numeric-masks%}) you can define [standard](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) numeric masks.
+* [Numeric:]({%slug winforms/editors/maskededitbox/numeric-masks%}) You can define [standard](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) numeric masks.
 
-* [Standard:]({%slug winforms/editors/maskededitbox/standard-masks%}) you can define standard masks
+* [Standard:]({%slug winforms/editors/maskededitbox/standard-masks%}) You can define standard masks
 
-* __Regex:__ you can define [Regex expressions](http://msdn.microsoft.com/en-us/library/2k3te2cs%28v=vs.80%29.aspx) as masks.
+* __Regex:__ You can define [Regex expressions](http://msdn.microsoft.com/en-us/library/2k3te2cs%28v=vs.80%29.aspx) as masks.
 
-* __IP:__ predefined mask for IP input.
+* __IP:__ Predefined mask for IP input.
 
-* __Email:__ predefined mask for email validation.
+* __Email:__ Predefined mask for email validation.
 
-* __DateTime:__ predefined mask for DateTime input.
+* __DateTime:__ Predefined mask for DateTime input.
 
-* __FreeFormatDateTime:__ with that mask type end-users are able to enter a date and time in a wide range of formats without having to conform to a specific mask. In the following article you can find more information how this DateTime parsing logic works: [Pasing Dates]({%slug winforms/editors/maskededitbox/parsing-dates%})
+* __FreeFormatDateTime:__ With that mask type end-users are able to enter a date and time in a wide range of formats without having to conform to a specific mask. In the following article you can find more information how this DateTime parsing logic works: [Parsing Dates]({%slug winforms/editors/maskededitbox/parsing-dates%})
 
-* __Mask:__ A string of characters that constrain user input. The Mask property may contain literals and special mask characters. The MaskType determines how the mask characters are interpreted. Use the backslash "\" character to escape any mask characters so that they display as literals. At runtime, any blank space occupied by a Mask character is displayed as the PromptChar property character.
+* __Mask:__ A string of characters that constrain user input. The Mask property may contain literals and special mask characters. The MaskType determines how the mask characters are interpreted. Use the backslash "\" character to escape any mask characters so that they display as literals. At runtime, any blank space occupied by a Mask character is displayed as the **PromptChar** property character.
 
 * __PromptChar:__ This property represents the character displayed in any blank space defined by a Mask character.  By default the character is an underscore "_".
 
 * __Culture:__ This property allows you to set the current language and culture from a drop down list at design-time or assign a new  __CultureInfo__ instance at run-time.
+
+>caption Figure 1: RadMaskedEditBox German Culture
 
 ![editors-maskededitbox-properties-and-events 001](images/editors-maskededitbox-properties-and-events001.png) 
 
@@ -84,3 +88,4 @@ __RadMaskedEditBox__ allows you to handle __ValueChanging__ and __ValueChanged__
 * [Standard Masks]({%slug winforms/editors/maskededitbox/standard-masks%})
 * [Date and Time Masks]({%slug winforms/editors/maskededitbox/date-and-time-masks%})
 * [Numeric Masks]({%slug winforms/editors/maskededitbox/numeric-masks%})
+* [Properties, Methods and Events]({%slug winforms/editors/maskededitbox/properties-methods-and-events%})

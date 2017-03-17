@@ -105,7 +105,7 @@ Next, you should build your solution and then ILMerge the built application exec
 
 The MergedApplicationExecutable.exe is now a stand-alone application executable that does not need any additional references to the Telerik assemblies.
 
-## Building the Telerik assembles from source code - using the OemAssemblyName
+## Building the Telerik Assemblies from Source Code - Using the OemAssemblyName
 
 |RELATED VIDEOS||
 |----|----|
@@ -151,10 +151,9 @@ Protecting Telerik UI for WinForms requires the Telerik assemblies to be built f
 
 Once you finish these steps, and if you or someone else tries to use that assembly from another application the evaluation dialog will appear (randomly).
 
-    
 ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 005](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows005.png)
 
-## Building the Telerik assembles from source code - using the OemPublicKeyToken
+## Building the Telerik assemblies from Source Code - Using the OemPublicKeyToken
 
 |RELATED VIDEOS||
 |----|----|
@@ -210,7 +209,7 @@ This section demonstrates how to deploy a project with a public token key. We wi
 1. In your application replace the existing references to Telerik UI for WinForms assemblies with the ones built from source code and rebuild your project so it will use the newly build assemblies.
             
 
-## Using the Telerik Document Processing libraries in Your Solutions
+## Using the Telerik Document Processing Libraries in Your Solutions
 
 In order to include the Telerik Document Processing libraries in your application, you should build the source code as described below. The source code of the Document Processing libraries is distributed together with the Telerik UI for WinForms source code and installation and is available for downloading from the client accounts. For brevity this document assumes that the source distribution ZIP file is extracted in C:\WinFormsDPLSource
         
@@ -315,7 +314,7 @@ Friend Const ApplicationName As String = "Sample Application Name v2.0 (tm)"
 6\. If you run the application now you should get an exception with message “This version of Telerik UI for WinForms is licensed only for use by Sample Application Name v2.0 (tm)”. Note that “Sample Application Name v2.0 (tm)” will be replaced with the value of the ApplicationName constant.
             
 
-## Using the images from the suite in your solutions
+## Using the Images from the Suite in Your Solutions
 
 When you install the suite together with the installation we deploy a few different kinds of images - some come with the controls, others with the examples, with themes, etc. Following you can find information on which images can be reused in your applications and how this can be done.
         
@@ -345,10 +344,10 @@ __Assemblies that you should redistribute in all scenarios:__
 If you are using the [Telerik Analytics](http://www.telerik.com/analytics) functionality you will also need to reference the __EQATEC.Analytics.Monitor.dll__ assembly. For more information please check out the topic on [Getting Started with Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction)
 
 __Assemblies that you need to redistribute depending on which controls you use in your application__
-<table><th>Control Name</th><th>Assembly</th>
 
+<table><th>Control Name</th><th>Assembly</th><tr><td>
 
-<tr><td>CustomShape</td><td>
+<b>CustomShape</b></td><td>
 
 Telerik.WinControls.dll</td></tr><tr><td>
 

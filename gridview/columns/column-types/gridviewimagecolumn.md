@@ -16,14 +16,14 @@ __GridViewImageColumn__ displays *read-only* images for database columns of imag
 >note RadGridView tries to convert data columns that contain unspecified binary data to an image.
 >
 
->note Some databases such as Access use OLE image container. RadGridView automatically recognizes that and skips the added header.
+>note Some databases such as Access use OLE image container. **RadGridView** automatically recognizes that and skips the added header.
 >
 
 Supported image formats are those supported by the `Image` class of the .NET Framework. 
 
 ![gridview-columns-gridviewimagecolumn 001](images/gridview-columns-gridviewimagecolumn001.png)
 
-### Add GridViewImageColumn to the grid.
+#### Create GridViewImageColumn
 
 {{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=addImageColumn}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=addImageColumn}} 
@@ -53,6 +53,8 @@ RadGridView1.MasterTemplate.Columns.Add(imageColumn)
 
 __GridViewImageColumn__ also implements resizing functionality where sizing is controlled by the __ImageLayout__ property. __ImageLayout__ can be set to one of the following: *None*, *Tile*, *Center*, *Stretch* and *Zoom*:
 
+## Set Image Layout
+
 * __None:__ The image is positioned at the top left corner of the cell. This value can be used in a combination with the value of the ImageAlignment property to specify the position of an image in a cell:
 
 {{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=none}} 
@@ -81,6 +83,7 @@ imageColumn.ImageAlignment = ContentAlignment.BottomRight
 
 
 # See Also
+
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
 
 * [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})

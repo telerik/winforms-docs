@@ -27,6 +27,8 @@ The __GridViewDataRowInfo.ErrorText__ property can be used to indicate validatio
 
 The code snippet below demonstrates simple data validation scenario. It is enabled in a textbox column to enter only non-empty strings. When the string is empty, the validation fails and the error indicator at the row header is shown:
 
+#### Handling CellValidating Event
+
 {{source=..\SamplesCS\GridView\Editors\DataValidation1.cs region=dataValidation}} 
 {{source=..\SamplesVB\GridView\Editors\DataValidation1.vb region=dataValidation}} 
 
@@ -71,10 +73,11 @@ Private Sub RadGridView1_CellValidating(ByVal sender As Object, ByVal e As Teler
 
 The following properties are controlling the errors visibility:
 
-* ShowCellErrors
-* ShowRowErrors
+* **ShowCellErrors**
+* **ShowRowErrors**
 
 # See Also
+
 * [API]({%slug winforms/gridview/editors/api%})
 
 * [Customizing editor behavior]({%slug winforms/gridview/editors/customizing-editor-behavior%})

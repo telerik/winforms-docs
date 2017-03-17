@@ -12,13 +12,14 @@ previous_url: dock-overview
 # Dock
 
 __RadDock__ helps you manage multiple windows in your application with a docking system similar to Microsoft Visual Studio. __RadDock__ can contain both tool and tabbed document style windows. It includes fully interactive design-time layout management as well.
-        
+
+>caption Figure 1: RadDock 
+
 ![dock-overview 000](images/dock-overview000.png)
 
-### Features
+## Features
 
 * The __RadDock__ control provides a container that holds dockable windows. This container can fill the entire client area of a Form, or can be limited to any rectangular area you choose to manage.
-            
 
 * Tool windows can be dragged outside their containers ("floating"), dragged to other containers, collapsed against the side of the **RadDock** and transformed to tabbed documents. Tool windows are supported by the **ToolWindow** control. You can place other controls within a **ToolWindow**.
 
@@ -44,7 +45,7 @@ This sample RSS Reader implements __RadDock__ and several other Telerik UI for W
 
 ![dock-overview 001](images/dock-overview001.png)
 
-### Features of RadDock
+## Tool Windows and Tabbed Documents
 
 * Tool windows (DockPanels) can be floating, docked, pinned, unpinned and tabbed.  
 

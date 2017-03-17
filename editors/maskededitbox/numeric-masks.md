@@ -23,9 +23,7 @@ The purpose of this tutorial is to show you how to use __Numeric__ mask with Rad
 
 ## Standard Numeric Masks
 
-Full list of the supported masks (except "E" and "X") can be found in the following MSDN article:
-
-[Standard Numeric masks](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)
+Full list of the supported masks (except "E" and "X") can be found in the following MSDN article: [Standard Numeric masks](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)
 
 | Mask | Description |
 | ------ | ------ |
