@@ -41,7 +41,7 @@ Me.RadListView1.Items.Add("Item 2")
 
 ## Adding Columns
 
-When in [DetailsView]({%slug winforms/listview/views%}), **RadListView** displays columns. The columns are stored in a collection that is accessible through the __Columns__ property. Columns can be added to **RadListView** using one of the three overloads of the __Add__ method as it is shown below. Each column must have unique name because columns are distinguished by their __Name__ property. 
+When in [DetailsView]({%slug winforms/listview/views%}), **RadListView** displays columns. The columns are stored in a collection that is accessible through the __Columns__ property. Columns can be added to **RadListView** using one of the three overloads of the __Add__ method as it is shown below. Each column must have a unique name because columns are distinguished by their __Name__ property. 
 
 #### Adding columns
 
@@ -71,7 +71,7 @@ You can set cell values to the items of **RadListView** using their indexers. Th
 {{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=populateCells}} 
 
 ````C#
-ListViewDataItem item = this.radListView1.Items[0];
+ListViewDataItem item = new ListViewDataItem();
 //it is important that you add the item to the control prior assigning its cell's values, so it will have its cells schema
 radListView1.Items.Add(item);
             
@@ -81,7 +81,7 @@ item[radListView1.Columns[2]] = "CellValue3";
 
 ````
 ````VB.NET
-Dim item As ListViewDataItem = Me.RadListView1.Items(0)
+Dim item As ListViewDataItem = New ListViewDataItem()
 'it is important that you add the item to the control prior assigning its cell's values, so it will have its cells schema
 RadListView1.Items.Add(item)
 item(0) = "CellValue1"
@@ -92,7 +92,7 @@ item(RadListView1.Columns(2)) = "CellValue3"
 
 {{endregion}} 
 
->important To use these indexers, the item must have a valid owner e.g. it first has to be added to the __Items__ collection of the **RadListView**.
+>important To use these indexers, the item must have a valid owner e.g. it first has to be added to the __Items__ collection of **RadListView**.
  
 It is possible to add columns at design time as well by either using the **Smart Tag** or the **Columns** collection in the *Properties* section in Visual Studio. Further information is available in the [Adding Columns]({%slug winforms/listview/working-with-design-time/adding-columns%})  help article.		
  
@@ -142,12 +142,11 @@ Me.RadListView1.Items(3).Group = Me.RadListView1.Groups(1)
 
 {{endregion}} 
 
-In order to enable this kind of grouping the __EnableCustomGrouping__ property needs to be set to *true*. In order to display the groups, the __ShowGroups__ property needs to be set to *true*.
-		
+In order to enable this kind of grouping the __EnableCustomGrouping__ property needs to be set to *true*. In order to display the groups, the __ShowGroups__ property needs to be set to *true*.		
 
 You can check which items belong to a given group by iterating trough the __Items__ collection of a __ListViewDataItemGroup__.
 
-It is possible to add groups at design time as well by either using the **Smart Tag** or the **Groups** collection in the *Properties* section in Visual Studio. Further information is available in the [Adding Groups]({%slug winforms/listview/working-with-design-time/adding-groups%})  help article.
+It is possible to add groups at design time as well by either using the **Smart Tag** or the **Groups** collection in the *Properties* section in Visual Studio. Further information is available in the [Adding Groups]({%slug winforms/listview/working-with-design-time/adding-groups%}) help article.
 
 # See Also
 

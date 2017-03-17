@@ -11,7 +11,7 @@ previous_url: gridview-exporting-data-spread-export
 
 # Spread export 
 
-__GridViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadGridView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how to use it.
+__GridViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library to export the content of __RadGridView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the **SpreadExport** abilities and will demonstrate how to use it.
 
 * [Exporting Data](#exporting-data)
 
@@ -25,7 +25,7 @@ Here is how the following grid, looks when exported.<br>![gridview-exporting-dat
 * Telerik.WinControls.TelerikExport
 >
 
->important Since this functionality is using the [RadSpreadProcessingLibrary](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) you need to reference the following assemblies as well:
+>important Since this functionality is using the [RadSpreadProcessing Library](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) you need to reference the following assemblies as well:
 * Telerik.Windows.Documents.Core
 * Telerik.Windows.Documents.Fixed
 * Telerik.Windows.Documents.Spreadsheet
@@ -100,7 +100,7 @@ End Using
 
 * __ExportFormat__: Defines the format the grid will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
 
-* __ExportVisualSettings:__ Allows you to export the visual settings (themes) to the exported file. RadGridView will also export all formatting to the Excel file. The column width and row height will also be matched in the exported file.
+* __ExportVisualSettings:__ Allows you to export the visual settings (themes) to the exported file. **RadGridView** will also export all formatting to the Excel file. The column width and row height will also be matched in the exported file.
 
 * __ExportHierarchy:__ Defines whether the exporter will export hierarchical data or not.
 
@@ -109,7 +109,7 @@ End Using
     - *ExportFirstView*: The exporter exports the first view.
                 
 
-    - *ExportCurrentlyActiveView*: The exporter exports the view that is active in the grid.
+    - *ExportCurrentlyActiveView*: The exporter exports the view that is actived in the grid.
                 
 
     - *SelectViewToExport*: In this mode the __ChildViewExporing__ event is fired. The event allows to choose the view to export in row by row basis.
@@ -120,7 +120,7 @@ End Using
                 
     - *DoNotExport*: The exporter will not export hidden columns.
                 
-    - *ExportAsHidden*: The exporter will export hidden columns as hidden in excel*.
+    - *ExportAsHidden*: The exporter will export hidden columns as hidden in excel.
 
 * __HiddenRowOption:__ Defines whether hidden rows will be exported. Available options are:
 
@@ -128,18 +128,18 @@ End Using
                 
     - *DoNotExport*: The exporter will not export hidden rows.
                 
-    - *ExportAsHidden*: The exporter will export hidden rows as hidden in excel*.
+    - *ExportAsHidden*: The exporter will export hidden rows as hidden in excel.
 
     >note MS Excel does not support other ways of hiding a column/row different from setting its width to zero. To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__ or __HiddenRowOption__ property to *DoNotExport* :
     >
 
-* __PagingExportOption:__ Defines which pages to be exported, when paging is used in RadGridView.
+* __PagingExportOption:__ Defines which pages to be exported, when paging is used in **RadGridView**.
 
     - *CurrentPageOnly*: The exporter will export only the data on the current page.
 
     - *AllPAges*: The exporter will export the data from all pages.
 
-* __SummariesExportOption:__ Allows to specify how to export summary items. There are fourth option to chose:
+* __SummariesExportOption:__ Allows to specify how to export summary items. There are four options to choose:
 
     - *ExportAll (default)*: The exporter will export all summary rows. This is the default setting.
 
@@ -149,9 +149,9 @@ End Using
 
     - *DoNotExport*: The exporter will not export any summary rows.
 
-* __RadGridViewToExport:__ This property is used to set the instance of RadGridView to export.
+* __RadGridViewToExport:__ This property is used to set the instance of **RadGridView** to export.
 
-* __SheetMaxRows:__ Тhe exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this SheetMaxRows property. Available options are:
+* __SheetMaxRows:__ Тhe exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this **SheetMaxRows** property. Available options are:
 
     - *1048576*: Max rows for Excel 2007 and above
 
@@ -170,7 +170,7 @@ __ExportViewDefinition:__  Gets or sets a value indicating whether to export the
 ### Exported Cells Data Type
 
 >important
-Each column in RadGridView has __ExcelExportType__ property which can be used for explicitly setting the data type of the cells in the exported document. In order to change the format of the exported data, you can set the __ExcelExportType__ property of the specific column to *Custom* and specify the __ExcelExportFormatString__ property with the desired format. The following help article is quite useful for specifying the desired format: [Format Codes](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes)
+Each column in **RadGridView** has __ExcelExportType__ property which can be used for explicitly setting the data type of the cells in the exported document. In order to change the format of the exported data, you can set the __ExcelExportType__ property of the specific column to *Custom* and specify the __ExcelExportFormatString__ property with the desired format. The following help article is quite useful for specifying the desired format: [Format Codes](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes)
 >
 
 ## Events
@@ -179,9 +179,9 @@ Each column in RadGridView has __ExcelExportType__ property which can be used fo
 
 This event is used to format the cells to be exported. The event arguments provide:
 
-* *CellSelection*:  After casting to the __CellSelection__ class, provides access to the excel cells selection. More information about the abilities this object introduces, can be found here: [Get, Set and Clear Cell Properties](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-cells/get-set-clear-properties).
+* *CellSelection*:  After casting to the __CellSelection__ class, it provides access to the excel cells selection. More information about the abilities this object introduces, can be found here: [Get, Set and Clear Cell Properties](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-cells/get-set-clear-properties).
 
-* *CellStyleInfo*: This object is a wrapper of the CellSelection object, and allows to easier modification of the most common appearance settings.
+* *CellStyleInfo*: This object is a wrapper of the **CellSelection** object, and allows to easier modification of the most common appearance settings.
 
 * *GridCellInfo*: Provides access to the grid cell to be exported.
 
@@ -263,10 +263,9 @@ End Sub
 
 This event is triggered on the __SpreadExportRenderer__ object when the workbook is ready to be exported. Allows to introduce final customizations (for example you can add [header and footer]({%slug winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document%})). More information on how to work with Workbook is available here: [Working with Workbooks](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-workbooks/create-open-and-save-workbooks).
 
-
 ### ChildViewExporting
 
-This event is used to specify which child view to be exported, for each exported row, during the export. Will be triggered only when the __ChildViewExportMode__ is set to *SelectViewToExport*. The event arguments provide the __ParentRow__ which active view should be set via the __ActiveViewIndex__ property.
+This event is used to specify which child view to be exported, for each exported row, during the export. It will be triggered only when the __ChildViewExportMode__ is set to *SelectViewToExport*. The event arguments provide the __ParentRow__ which active view should be set via the __ActiveViewIndex__ property.
 
 ### ExportCompleted
 
@@ -275,7 +274,8 @@ This event is triggered when the export operation completes.
 ## Exporting Grouped Data
 
 __RadGridView__ can export its grouped content by simply setting the __ExportChildRowsGrouped__ property of the __GridViewSpreadExport__ object to *true*.
->caption Fig.2 Exporting Grouped Data
+
+>caption Figure: Exporting Grouped Data
 
 ![gridview-exporting-data-spread-export 005](images/gridview-exporting-data-spread-export005.png)
 
@@ -306,7 +306,7 @@ spreadExporter.RunExport("..\..\exportedFile.xlsx", exportRenderer)
 
 __RadGridView__ can export its contents asynchronously. This feature can be utilized by calling the  __RunExportAsync__ method on the __GridViewSpreadExport__ object.
 
->important Due to performance considerations and in order to decrease the consumed memory the visual settings and view defintions in __RadGridView__ are not exported when the operation is run async.
+>important Due to performance considerations and in order to decrease the consumed memory the visual settings and view definitions in __RadGridView__ are not exported when the operation is run async.
 >
 
 ## Methods
@@ -329,7 +329,9 @@ The following events provide information about the state of the export operation
 
 This example will demonstrate how the async spread export feature can be combined with a __RadProgressBar__ control to deliver better user experience.
         
->caption Fig.1 Exporting Data Asynchronously<br>![gridview-exporting-data-async-spread-export 001](images/gridview-exporting-data-async-spread-export001.gif)
+>caption Figure: Exporting Data Asynchronously
+
+![gridview-exporting-data-async-spread-export 001](images/gridview-exporting-data-async-spread-export001.gif)
 
 1\. Bind __RadGridView__ and define initial settings.
 
@@ -497,7 +499,6 @@ End Sub
 ````
 
 {{endregion}} 
-
 
 
 # See Also

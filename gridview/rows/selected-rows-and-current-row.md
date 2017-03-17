@@ -47,9 +47,9 @@ Me.RadGridView1.ClearSelection()
 
 ## IsCurrent
 
-The property __IsCurrent__ determines which row is the current one. There can be only one current row or no current row if __IsCurrent__ is set to *null*. 
+The __IsCurrent__ property determines which row is the current one. There can be only one current row or no current row if the __IsCurrent__ property is set to *null*. 
 
-Most themes visualizes the current and the selected rows with the same styles although technically __IsCurrent__ and __IsSelected__ are independent of one another. __IsCurrent__ functionality is related to the keyboard support.
+Most themes visualize the current and the selected rows with the same style although technically __IsCurrent__ and __IsSelected__ are independent of one another. The __IsCurrent__ functionality is related to the keyboard support.
 
 Use the following code snippet to remove the current row:
 
@@ -66,10 +66,6 @@ Me.RadGridView1.CurrentRow = Nothing
 ````
 
 {{endregion}} 
-
-
-
-
 
 # See Also
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})

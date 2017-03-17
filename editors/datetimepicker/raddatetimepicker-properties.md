@@ -9,11 +9,9 @@ position: 4
 previous_url: editors-datetimepicker-basics-raddatetimepicker-properties
 ---
 
-
 ## Properties
 
-The significant properties for __RadDateTimePicker__ are:
-        
+The significant properties for __RadDateTimePicker__ are:        
 
 * __Value:__ This is the date selected from the picker and can be set in code or from the drop down calendar in the `Properties` window.
 
@@ -33,8 +31,7 @@ Me.RadDateTimePicker1.Value = DateTime.Now.AddDays(1)
 
 {{endregion}} 
  
-
-* __MinDate, MaxDate:__ These two dates form the bounds that dates can be selected from in the picker. Attempts to select outside these bounds are ignored. The example below sets the __MinDate__ to be the first day of the current month.
+* __MinDate, MaxDate:__ These two dates form the bounds that dates can be selected from in the picker. Attempts to select outside these bounds are ignored. The example below sets the __MinDate__ property to be the first day of the current month.
 
 #### Setting the MinDate property of RadDateTimePicker 
 
@@ -52,7 +49,7 @@ Me.RadDateTimePicker1.MinDate = DateTime.Today.AddDays(-DateTime.Today.Day)
 
 {{endregion}} 
  
-* __NullText:__ This property defines the text that will be displayed in RadDateTimePicker when the __NullableValue__ property is set to null and RadDateTimePicker is not in focus. By default, __NullText__ is an empty string.
+* __NullText:__ This property defines the text that will be displayed in **RadDateTimePicker** when the __NullableValue__ property is set to *null* and **RadDateTimePicker** is not in focus. By default, __NullText__ is an empty string.
 
 #### Setting the NullText property of RadDateTimePicker 
 
@@ -70,7 +67,7 @@ Me.RadDateTimePicker1.NullText = "No date selected"
 
 {{endregion}} 
  
-* __ShowTimePicker:__ this properties determines the display of __TimePicker__ in popup element of __RadDateTimePicker__. 
+* __ShowTimePicker:__ this property determines the display of __TimePicker__ in popup element of __RadDateTimePicker__. 
 
 {{source=..\SamplesCS\Editors\DateTimePicker2.cs region=ShowTimePicker1}} 
 {{source=..\SamplesVB\Editors\DateTimePicker2.vb region=ShowTimePicker1}} 
@@ -95,13 +92,13 @@ Me.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = True
 * __Culture:__ Determines the language that the drop down calendar and text box will display.  See the [Internationalization]({%slug winforms/editors/datetimepicker/internationalization/internationalization%}) and [Date Formats]({%slug winforms/editors/datetimepicker/internationalization/date-formats%}) topic for more information.
           
 
-* __ThemeName:__ Sets the overall look of the control. Choose from a list of predefined themes or create your own using the __Visual Style Builder__ available from the __RadDateTimePicker Smart Tag__.
+* __ThemeName:__ Sets the overall look of the control. Choose from a list of predefined themes or create your own using the __Visual Style Builder__ available from the RadDateTimePicker's __Smart Tag__.
           
 
-* __CalendarSize:__ Gets or sets the size of the RadCalendar in the RadDateTimePicker drop-down.
+* __CalendarSize:__ Gets or sets the size of the **RadCalendar** in the **RadDateTimePicker** drop-down.
           
 
-* __NullableValue__ is same as the __Value__ property, but the __NullableValue__ property is of type *Nullable DateTime*. It can be null – in this case if RadDateTimePicker is not selected it will show its __NullText__. In case RadDateTimePicker is selected, it will show the last entered date – this allows the end-user to enter and edit the date.
+* __NullableValue__ is same as the __Value__ property, but the __NullableValue__ property is of type *Nullable DateTime*. It can be *null* – in this case if **RadDateTimePicker** is not selected, it will show its __NullText__. In case **RadDateTimePicker** is selected, it will show the last entered date – this allows the end-user to enter and edit the date.
 
 #### Setting the NullableValue property of RadDateTimePicker 
 
@@ -181,9 +178,9 @@ End Sub
 
 {{endregion}} 
  
-* __Editing Time in RadDateTimePicker.__
+* __Editing Time in RadDateTimePicker__
 
-To use RadDateTimePicker as date and time editor you need to enable the embedded __TimePicker__ and set the desired mask that shows the time parts. 
+To use **RadDateTimePicker** as date and time editor you need to enable the embedded __TimePicker__ and set the desired mask that shows the time parts. 
 
 #### Enable the time picker.
 
