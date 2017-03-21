@@ -11,52 +11,39 @@ previous_url: gridview-cells-conditional-formatting-cells
 
 # Conditional Formatting Cells
 
-Cells and rows can be styled based on data conditions using __ConditionalFormattingObjects__.The formatting objects could contain the following formatting properties for cell, row, and text alignment:
+Cells and rows can be styled based on data conditions using __ConditionalFormattingObjects__. The formatting objects could contain the following formatting properties for cell, row, and text alignment:
 
-* __CellBackColor:__ sets the background color of the cell
-          
+* __CellBackColor:__ sets the background color of the cell.        
 
-* __CellForeColor:__ sets the cell text color
-          
+* __CellForeColor:__ sets the cell text color.         
 
-* __CellFont:__ sets the font of the cell.
-          
+* __CellFont:__ sets the font of the cell.         
 
-* __TextAlignment:__ sets the alignment of the cell text
-          
+* __TextAlignment:__ sets the alignment of the cell text.         
 
-* __RowBackColor:__ sets the background color for the entire row that the cell appears in
-          
+* __RowBackColor:__ sets the background color for the entire row that the cell appears in.         
 
-* __RowForeColor:__ sets the cell text  color for the entire row that the cell appears in
-          
+* __RowForeColor:__ sets the cell text color for the entire row that the cell appears in.         
 
-* __RowFont:__ sets the font of the row’s cells text.
-          
+* __RowFont:__ sets the font of the row’s cells text.         
 
 * __RowTextAlignment:__ sets the alignment of the row’s cells text.
           
-
-The formatting properties of the rows apply if the __ApplyToRow__ property of the formatting object is set to *true*. The __ApplyOnSelectedRows__ property defines if the formatting properties of the object will apply also to the selected rows.
-      
+The formatting properties of the rows apply if the __ApplyToRow__ property of the formatting object is set to *true*. The __ApplyOnSelectedRows__ property defines if the formatting properties of the object will apply also to the selected rows.      
 
 The formatting objects are two different types depending on the mechanism for defining conditions - rule based and expression based.
       
-
 ## Rule based formatting objects
 
 The rule based formatting objects apply to the cells / rows according to the defined rules:
 
-* __ConditionType:__ sets conditions like *Equal*, *Contains*, etc.
-            
+* __ConditionType:__ sets conditions like *Equal*, *Contains*, etc.            
 
-* __TValue1:__ a string representing the first value used to test the condition
-            
+* __TValue1:__ a string representing the first value used to test the condition.            
 
-* __TValue2:__ a string representing the second value used to test the condition.
-            
+* __TValue2:__ a string representing the second value used to test the condition.            
 
-The example below detects when a value in the second column `UnitPrice` has a value __greater than 30__. When the condition is met the cell background color is set to SkyBlue, the text color is set to Red and the text alignment is set to MiddleRight.
+The example below detects when a value in the second column `UnitPrice` has a value __greater than 30__. When the condition is met the cell background color is set to *SkyBlue*, the text color is set to *Red* and the text alignment is set to *MiddleRight*.
 
 {{source=..\SamplesCS\GridView\Cells\ConditionalFormattingCells.cs region=conditionalFormattingCells}} 
 {{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=conditionalFormattingCells}} 
@@ -86,9 +73,8 @@ Me.RadGridView1.Columns("UnitPrice").ConditionalFormattingObjectList.Add(obj)
 
 ## Expression based formatting objects
 
-The expression based formatting objects apply to the cells / rows according to the defined __Expression__. It provides high flexibility to the formatting mechanism. The __Expression__ could refer to data from more than one column. Its result should be boolean.
+The expression based formatting objects apply to the cells / rows according to the defined __Expression__. It provides high flexibility to the formatting mechanism. The __Expression__ could refer to data from more than one column. Its result should be Boolean.
         
-
 The example below detects when a value in the second column `UnitPrice` has a value __greater than 30__ and sets styles to the `ProductName` column.
 
 {{source=..\SamplesCS\GridView\Cells\ConditionalFormattingCells.cs region=expression}} 
@@ -117,7 +103,7 @@ Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
 
 ## Customize ConditionalFormattingForm
 
-__RadGridView__ provides convenient form which the end user could use to create formatting objects:
+__RadGridView__ provides a convenient form which the end user could use to create formatting objects:
 
 >caption Figure 3: Conditional Formatting Form.
 

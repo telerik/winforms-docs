@@ -13,9 +13,9 @@ previous_url: gridview-grouping-setting-groups-programmatically
 
 ## Overview
 
-RadGridView has a __GroupDescriptors__ property at the GridViewTemplate level which is exposed in RadGridView class for MasterTemplate instance. This collection allows you to use descriptors which define the grouping criteria and the group's sorting direction for the data that is bound to the RadGridView.
+**RadGridView** has a __GroupDescriptors__ property at the **GridViewTemplate** level which is exposed in **RadGridView** class for **MasterTemplate** instance. This collection allows you to use descriptors which define the grouping criteria and the group's sorting direction for the data that is bound to the **RadGridView**.
 
-As this is a collection, you are able not only to add, but to remove or clear the its entries as well. Adding descriptors to the collection makes the current view display the items sorted and divided into groups. 
+As this is a collection, you are able not only to add, but to remove or clear its entries as well. Adding descriptors to the collection makes the current view display the items sorted and divided into groups. 
 
 ## Using GroupDescriptors
 
@@ -43,7 +43,7 @@ Me.RadGridView1.GroupDescriptors.Add(descriptor)
 
 The __GroupNames__ property defines the property, by which the data will be grouped. The __GroupNames__ is a __SortDescriptorCollection__ and defines group names for one grouping criteria.
 
-RadGridView supports grouping using one or more property names. The following example demonstrates how you can group by two properties:
+**RadGridView** supports grouping using one or more property names. The following example demonstrates how you can group by two properties:
 
 #### Grouping by more than one column name
 
@@ -70,7 +70,7 @@ Me.RadGridView1.GroupDescriptors.Add(descriptor1)
 
 ![gridview-grouping-setting-groups-programmatically 002](images/gridview-grouping-setting-groups-programmatically002.png)
 
-RadGridView supports grouping on one or more levels. The following example demonstrates how you can group on two levels:
+**RadGridView** supports grouping on one or more levels. The following example demonstrates how you can group on two levels:
 
 #### Grouping on one or more levels
 

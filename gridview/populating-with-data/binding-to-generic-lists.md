@@ -41,9 +41,9 @@ RadGridView1.DataSource = list
 
 ## Binding to Lists of Objects
 
-Generic Lists of objects containing [bindable types]({%slug winforms/gridview/populating-with-data/bindable-types%}) can be bound to RadGridView by assigning the List to the __DataSource__ property of the grid. 
+Generic Lists of objects containing [bindable types]({%slug winforms/gridview/populating-with-data/bindable-types%}) can be bound to **RadGridView** by assigning the List to the __DataSource__ property of the grid. 
 
-The example below defines a `MyObject` class containing one integer and one string property. The next set of code snippets "Creating an List of Objects" creates an array of MyObjects, initializes the array and assigns the array to the __DataSource__. The `MyObject` class would typically be placed in its own separate class file and the List creation, initialization and assignment code might be placed in a form's `Load` event handler.
+The example below defines a `MyObject` class containing one integer and one string property. The next set of code snippets "Creating an List of Objects" creates an array of MyObjects, initializes the array and assigns the array to the __DataSource__. The `MyObject` class would typically be placed in its own separate class file and the List creation, initialization and assignment code might be placed in a form's **Load** event handler.
 
 ![gridview-populating-with-data-binding-to-generic-list 002](images/gridview-populating-with-data-binding-to-generic-list002.png)
 
@@ -128,12 +128,6 @@ RadGridView1.DataSource = myList
 ````
 
 {{endregion}} 
-
-
-
-
-
-
 
 # See Also
 * [Bind to XML]({%slug winforms/gridview/populating-with-data/bind-to-xml%})
