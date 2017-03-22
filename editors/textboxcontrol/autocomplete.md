@@ -120,14 +120,39 @@ The bellow example shows how you can change the styles of the auto-complete drop
 
 First you need to subscribe to the __VisualItemFormatting__ event:
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Subscribe_ItemFormatting}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Subscribe_ItemFormatting}} 
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Subscribe_ItemFormatting}}
+````C#
+radTextBoxControl1.ListElement.VisualItemFormatting += ListElement_VisualItemFormatting;
+
+````
+````VB.NET
+AddHandler RadTextBoxControl1.ListElement.VisualItemFormatting, AddressOf ListElement_VisualItemFormatting
+
+```` 
 
 {{endregion}} 
 
 Then you can change the styles in the event handler:
 
 {{source=..\SamplesCS\Editors\TextBoxControl.cs region=Formatting_AutoComplete}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Formatting_AutoComplete}} 
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Formatting_AutoComplete}}
+````C#
+private void ListElement_VisualItemFormatting(object sender, VisualItemFormattingEventArgs args)
+{
+    args.VisualItem.BackColor = ColorTranslator.FromHtml("#91c930");
+    args.VisualItem.GradientStyle = GradientStyles.Solid;
+    args.VisualItem.ForeColor = ColorTranslator.FromHtml("#bb2525");
+}
+
+````
+````VB.NET
+Private Sub ListElement_VisualItemFormatting(ByVal sender As Object, ByVal args As VisualItemFormattingEventArgs)
+    args.VisualItem.BackColor = ColorTranslator.FromHtml("#91c930")
+    args.VisualItem.GradientStyle = GradientStyles.Solid
+    args.VisualItem.ForeColor = ColorTranslator.FromHtml("#bb2525")
+End Sub
+
+```` 
 
 {{endregion}} 
 

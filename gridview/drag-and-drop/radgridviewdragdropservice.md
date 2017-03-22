@@ -56,7 +56,6 @@ public class CustomDragDropService : RadGridViewDragDropService
         : base(gridViewElement)
     {
     }
-
     public override string Name
     {
         get
@@ -73,7 +72,6 @@ Public Class CustomDragDropService
     Public Sub New(gridViewElement As RadGridViewElement)
         MyBase.New(gridViewElement)
     End Sub
-
     Public Overrides ReadOnly Property Name() As String
         Get
             Return GetType(RadGridViewDragDropService).Name
