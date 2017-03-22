@@ -113,6 +113,28 @@ Here is the result of the above code:
 
 ![editors-textboxcontrol-autocomplete 002](images/editors-textboxcontrol-autocomplete002.png)
 
+
+## Accessing the auto-complete drop down and formating the items.
+
+The bellow example shows how you can change the styles of the auto-complete drop down.
+
+First you need to subscribe to the __VisualItemFormatting__ event:
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Subscribe_ItemFormatting}} 
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Subscribe_ItemFormatting}} 
+
+{{endregion}} 
+
+Then you can change the styles in the event handler:
+
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Formatting_AutoComplete}} 
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Formatting_AutoComplete}} 
+
+{{endregion}} 
+
+Here is the result of the above code:
+
+![editors-textboxcontrol-autocomplete 003](images/editors-textboxcontrol-autocomplete003.png)
+
 # See Also
 
 * [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
