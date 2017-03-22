@@ -40,6 +40,70 @@ When **RadGridView** is in bound mode, drag and drop functionality is not suppor
 
 As a descendant of [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%}), **RadGridViewDragDropService** handles the whole drag and drop operation. The **PreviewDragOver** event allows you to control on what targets the row being dragged can be dropped on. The **PreviewDragDrop** event allows you to get a handle on all the aspects of the drag and drop operation, the source (drag) grid, the destination (target) control, as well as the row being dragged. This is where we will initiate the actual physical move of the row(s) from one grid to the target control. A sample implementation is demonstrated in the [Rows >> Drag and drop]({%slug winforms/gridview/rows/drag-and-drop%}) help article.
 
+## Register a custom RadGridViewDragDropService
+
+**RadGridView** provides a convenient API to replace the default **RadGridViewDragDropService** instance with your custom one in case you need to introduce some custom logic. 
+
+1\. Create a class that inherits **RadGridViewDragDropService** and override its **Name** property:
+
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=CustomService}} 
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=CustomService}} 
+
+````C#
+public class CustomDragDropService : RadGridViewDragDropService
+{
+    public CustomDragDropService(RadGridViewElement gridViewElement)
+        : base(gridViewElement)
+    {
+    }
+
+    public override string Name
+    {
+        get
+        {
+            return typeof(RadGridViewDragDropService).Name;
+        }
+    }
+}
+
+````
+````VB.NET
+Public Class CustomDragDropService
+    Inherits RadGridViewDragDropService
+    Public Sub New(gridViewElement As RadGridViewElement)
+        MyBase.New(gridViewElement)
+    End Sub
+
+    Public Overrides ReadOnly Property Name() As String
+        Get
+            Return GetType(RadGridViewDragDropService).Name
+        End Get
+    End Property
+End Class
+
+
+````
+
+{{endregion}} 
+
+2\. After you have already overridden the desired methods in order to achieve the expected behavior register the custom service to **RadGridView**:
+
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=RegisterService}} 
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=RegisterService}} 
+
+````C#
+CustomDragDropService customService = new CustomDragDropService(radGridView1.GridViewElement);
+radGridView1.GridViewElement.RegisterService(customService);
+
+````
+````VB.NET
+Dim customService As New CustomDragDropService(radGridView1.GridViewElement)
+radGridView1.GridViewElement.RegisterService(customService)
+
+````
+
+{{endregion}} 
+
 # See Also
 
 * [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%})	
