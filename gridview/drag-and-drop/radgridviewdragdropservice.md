@@ -46,24 +46,59 @@ As a descendant of [RadDragDropService]({%slug winforms/telerik-presentation-fra
 
 1\. Create a class that inherits **RadGridViewDragDropService** and override its **Name** property:
 
-{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=CustomService}} 
-{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=CustomService}} 
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=CustomService}} 
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=CustomService}} 
 
 ````C#
+public class CustomDragDropService : RadGridViewDragDropService
+{
+    public CustomDragDropService(RadGridViewElement gridViewElement)
+        : base(gridViewElement)
+    {
+    }
+
+    public override string Name
+    {
+        get
+        {
+            return typeof(RadGridViewDragDropService).Name;
+        }
+    }
+}
+
 ````
 ````VB.NET
+Public Class CustomDragDropService
+    Inherits RadGridViewDragDropService
+    Public Sub New(gridViewElement As RadGridViewElement)
+        MyBase.New(gridViewElement)
+    End Sub
+
+    Public Overrides ReadOnly Property Name() As String
+        Get
+            Return GetType(RadGridViewDragDropService).Name
+        End Get
+    End Property
+End Class
+
 ````
 
 {{endregion}} 
 
 2\. After you have already overridden the desired methods in order to achieve the expected behavior register the custom service to **RadGridView**:
 
-{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=RegisterService}} 
-{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=RegisterService}} 
+{{source=..\SamplesCS\GridView\Rows\DragAndDropRadGridForm1.cs region=RegisterService}} 
+{{source=..\SamplesVB\GridView\Rows\DragAndDropRadGridForm1.vb region=RegisterService}} 
 
 ````C#
+CustomDragDropService customService = new CustomDragDropService(radGridView1.GridViewElement);
+radGridView1.GridViewElement.RegisterService(customService);
+
 ````
 ````VB.NET
+Dim customService As New CustomDragDropService(radGridView1.GridViewElement)
+radGridView1.GridViewElement.RegisterService(customService)
+
 ````
 
 {{endregion}} 
