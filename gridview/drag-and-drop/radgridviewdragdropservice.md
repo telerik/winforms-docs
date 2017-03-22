@@ -50,38 +50,8 @@ As a descendant of [RadDragDropService]({%slug winforms/telerik-presentation-fra
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=CustomService}} 
 
 ````C#
-public class CustomDragDropService : RadGridViewDragDropService
-{
-    public CustomDragDropService(RadGridViewElement gridViewElement)
-        : base(gridViewElement)
-    {
-    }
-
-    public override string Name
-    {
-        get
-        {
-            return typeof(RadGridViewDragDropService).Name;
-        }
-    }
-}
-
 ````
 ````VB.NET
-Public Class CustomDragDropService
-    Inherits RadGridViewDragDropService
-    Public Sub New(gridViewElement As RadGridViewElement)
-        MyBase.New(gridViewElement)
-    End Sub
-
-    Public Overrides ReadOnly Property Name() As String
-        Get
-            Return GetType(RadGridViewDragDropService).Name
-        End Get
-    End Property
-End Class
-
-
 ````
 
 {{endregion}} 
@@ -92,14 +62,8 @@ End Class
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=RegisterService}} 
 
 ````C#
-CustomDragDropService customService = new CustomDragDropService(radGridView1.GridViewElement);
-radGridView1.GridViewElement.RegisterService(customService);
-
 ````
 ````VB.NET
-Dim customService As New CustomDragDropService(radGridView1.GridViewElement)
-radGridView1.GridViewElement.RegisterService(customService)
-
 ````
 
 {{endregion}} 

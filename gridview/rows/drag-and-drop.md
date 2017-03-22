@@ -498,8 +498,7 @@ private void PrepareUnboundGrid(RadGridView grid)
     firstName.HeaderText = "First Name";
     GridViewTextBoxColumn lastName = new GridViewTextBoxColumn("LastName", "LastName");
     lastName.HeaderText = "Last Name";
-   
-    grid.Columns.AddRange(firstName,lastName);
+    grid.Columns.AddRange(firstName, lastName);
 }
 
 ````
@@ -544,8 +543,7 @@ private void btnBoundObjects_Click(object sender, EventArgs e)
     BindingList<Player> dataList2 = new BindingList<Player>();
     dataList2.Add(new Player() { FirstName = "Phil", LastName = "Japikse" });
     dataList2.Add(new Player() { FirstName = "Jesse", LastName = "Liberty" });
-    dataList2.Add(new Player() { FirstName = "Iris", LastName = "Classon"});
-   
+    dataList2.Add(new Player() { FirstName = "Iris", LastName = "Classon" });
     leftGrid.DataSource = dataList1;
     rightGrid.DataSource = dataList2;
 }
@@ -609,7 +607,7 @@ Public Class Player
             Return m_FirstName
         End Get
         Set(ByVal value As String)
-            m_FirstName = Value
+            m_FirstName = value
         End Set
     End Property
     Private m_FirstName As String
@@ -618,7 +616,7 @@ Public Class Player
             Return m_LastName
         End Get
         Set(ByVal value As String)
-            m_LastName = Value
+            m_LastName = value
         End Set
     End Property
     Private m_LastName As String
@@ -654,7 +652,6 @@ private void btnBoundDataSet_Click(object sender, EventArgs e)
     team2.Rows.Add("Jesse", "Liberty");
     team2.Rows.Add("Iris", "Classon");
     ds2.Tables.Add(team2);
-    
     leftGrid.DataSource = ds1;
     leftGrid.DataMember = "Table1";
     rightGrid.DataSource = ds2;
