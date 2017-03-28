@@ -12,7 +12,7 @@ previous_url: gridview-columns-reordering-columns
 # Reordering Columns
 
 
-RadGridView control supports column reordering by the user at run-time. The user has just to drag the desired column's header at the desired position among the other headers and drop it there. In the RadGridView control, the __AllowColumnReorder__ property value determines whether users can move columns to different positions.
+**RadGridView** control supports column reordering by the user at run-time. The user has just to drag the desired column's header at the desired position among the other headers and drop it there. In the RadGridView control, the __AllowColumnReorder__ property value determines whether users can move columns to different positions.
 
 #### Allow or disallow column reordering
 
@@ -34,7 +34,7 @@ RadGridView1.AllowColumnReorder = True
 
 ![gridview-columns-reordering-columns 001](images/gridview-columns-reordering-columns001.png)
 
-## Reordering columns programmatically
+## Reordering Columns Programmatically
 
 In order to reorder columns in RadGridView programmatically you should use the *Move* method of the RadGridView __Columns__ collection:
 
@@ -55,6 +55,7 @@ RadGridView1.Columns.Move(4, 1)
 ````
 
 {{endregion}}
+
 # See Also
 * [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
 

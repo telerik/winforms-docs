@@ -17,6 +17,8 @@ previous_url: desktopalert-overview
 
 __RadDesktopAlert__ component displays a small pop-up window on the screen to notify the user that a specific event has occurred in the application. The component exposes a convenient API for modifying its behavior, appearance and also can be easily styled in the Visual Style Builder. __RadDesktopAlert__ supports multi-monitor environments via __DesktopAlertManager__. __DesktopAlertManager__ takes care for the proper positioning of multiple __RadDesktopAlert__ instances on the screen estate so that it is optimally used. __RadDesktopAlert__ can be easily integrated in a Windows Forms application. It is available as a component in the Telerik UI for WinForms suite and can be dragged and dropped on a Windows Forms from the Visual Studio Toolbox.
 
+>caption Figure 1: RadDesktopAlert
+>
 ![desktopalert-overview 002](images/desktopalert-overview002.png)
 
 

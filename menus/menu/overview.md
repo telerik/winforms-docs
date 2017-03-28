@@ -13,6 +13,7 @@ previous_url: menus-menu-overview
 
 **RadMenu** enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 
+>caption Figure 1: RadMenu
 ![menus-menu-overview 001](images/menus-menu-overview001.png)
 
 In addition to all the capabilities of the standard Windows Forms MenuStrip control, **RadMenu** enables additional       advanced capabilities for your applications. 

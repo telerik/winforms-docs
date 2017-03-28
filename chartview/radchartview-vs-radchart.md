@@ -87,9 +87,8 @@ Below you may find the full list of series types available at present (R3 2012):
 |Range|yes|no|
 |Range Bar|yes|no|
 
-Notes:
 
-* You can use __RangeBarSeries__ instead of Gantt series or you can use [RadGanttView]({%slug winforms/ganttview%})
+>note You can use __RangeBarSeries__ instead of Gantt series or you can use [RadGanttView]({%slug winforms/ganttview%})
 
 # See Also
 
