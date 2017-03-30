@@ -22,6 +22,7 @@ position: 6
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentElement.vb region=CustomElement}}    
        
 ````C#
+        
 public class MyAppointmentElement : AppointmentElement
 {
     public MyAppointmentElement(RadScheduler scheduler, SchedulerView view, IEvent appointment) : base(scheduler, view, appointment)
@@ -76,20 +77,18 @@ public class MyAppointmentElement : AppointmentElement
 
 ````
 ````VB.NET
+    
 Public Class MyAppointmentElement
 Inherits AppointmentElement
     Public Sub New(scheduler As RadScheduler, view As SchedulerView, appointment As IEvent)
         MyBase.New(scheduler, view, appointment)
     End Sub
-
     Private panel As StackLayoutElement
     Private button As RadButtonElement
     Private timeInterval As LightVisualElement
     Private description As LightVisualElement
-
     Protected Overrides Sub CreateChildElements()
         MyBase.CreateChildElements()
-
         panel = New StackLayoutElement()
         button = New RadButtonElement()
         timeInterval = New LightVisualElement()
@@ -109,20 +108,16 @@ Inherits AppointmentElement
         description.ShouldHandleMouseInput = False
         description.NotifyParentOnMouseInput = True
         button.ShouldHandleMouseInput = True
-
         Me.Children.Add(panel)
     End Sub
-
     Private Sub button_Click(sender As Object, e As EventArgs)
         Me.Scheduler.Appointments.Remove(Me.Appointment)
     End Sub
-
     Public Overrides Sub Synchronize()
         MyBase.Synchronize()
         timeInterval.Text = Me.Appointment.Start.ToLongTimeString() + " - " + Me.Appointment.[End].ToLongTimeString()
         description.Text = Me.Appointment.Summary
     End Sub
-
     Public Overrides Sub DrawEventText(graphics As Telerik.WinControls.Paint.IGraphics)
     'leave the method empty to prevent the default appointment information to be drawn
     End Sub
@@ -138,11 +133,12 @@ End Class
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentElement.vb region=CustomProvider}}    
        
 ````C#
+        
 public class MyElementProvider : SchedulerElementProvider
 {
     public MyElementProvider(RadScheduler scheduler) : base(scheduler)
-            {
-            }
+    {
+    }
     
     protected override T CreateElement<T>(SchedulerView view, object context)
     {
@@ -157,6 +153,7 @@ public class MyElementProvider : SchedulerElementProvider
 
 ````
 ````VB.NET
+    
 Public Class MyElementProvider
 Inherits SchedulerElementProvider
     Public Sub New(scheduler As RadScheduler)
@@ -168,7 +165,6 @@ Inherits SchedulerElementProvider
         End If
         Return MyBase.CreateElement(Of T)(view, context)
     End Function
-
 End Class
 
 ````
@@ -181,11 +177,13 @@ End Class
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentElement.vb region=ReplaceElementProvider}}    
        
 ````C#
+            
 this.radScheduler1.ElementProvider = new MyElementProvider(this.radScheduler1);
 
 ````
 ````VB.NET
 Me.RadScheduler1.ElementProvider = New MyElementProvider(Me.RadScheduler1)
+
 ````
 
 {{endregion}}
