@@ -6,7 +6,7 @@ slug: winforms/scheduler
 tags: scheduler
 published: True
 position: 0
-previous_url: scheduler-introduction
+previous_url: scheduler-introduction,scheduler/scheduler
 ---
 
 # Scheduler
