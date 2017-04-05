@@ -46,7 +46,7 @@ The example below demonstrates creating a hierarchical grid presenting two table
 
 1. In the `Add Connection` dialog, click on the __Browse...__ button. This step will display the `Select Microsoft Access Database File` dialog.
 
-1. In the `Select Microsoft Access Database` File dialog, navigate to Telerik UI for WinForms installation directory and locate the Nwind.mdb file within the \Examples\QuickStart\Datasources directory. Select Nwind.mdb and click __OK__ to close the dialog.
+1. In the `Select Microsoft Access Database` File dialog, navigate to Progress&reg; Telerik&reg; UI for WinForms installation directory and locate the Nwind.mdb file within the \Examples\QuickStart\Datasources directory. Select Nwind.mdb and click __OK__ to close the dialog.
 
 1. Click __OK__ to close `Add Connection` dialog.
 

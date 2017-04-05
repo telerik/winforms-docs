@@ -15,5 +15,5 @@ previous_url: installation-deployment-and-distribution-system-requirements
 
 ## 
 
-The following page describes the system requirements needed by Telerik UI for WinForms: [Telerik UI for WinForms - System requirements](http://www.telerik.com/winforms/tech-sheets/system-requirements).
+The following page describes the system requirements needed by Progress&reg; Telerik&reg; UI for WinForms: [Progress&reg; Telerik&reg; UI for WinForms - System requirements](http://www.telerik.com/winforms/tech-sheets/system-requirements).
         

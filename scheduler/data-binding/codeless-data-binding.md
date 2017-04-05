@@ -16,7 +16,7 @@ previous_url: scheduler-data-binding-codeless-data-binding
 |[Codeless Data Binding with RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/codeless-data-binding-with-radscheduler-winforms)<br>In this video, you will learn how to use the SchedulerBindingDataSource with the RadScheduler for WinForms to quickly and codelessly data bind a RadScheduler. You will also be introduced to the RadSchedulerNavigator, a simple control that makes it easy for users navigate a RadScheduler. (Runtime: 07:04)|![scheduler-data-binding-codeless-data-binding 001](images/scheduler-data-binding-codeless-data-binding001.png)|
 |[Introduction to RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/introduction-radscheduler-winforms)<br>In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)|![scheduler-data-binding-codeless-data-binding 002](images/scheduler-data-binding-codeless-data-binding002.png)|
 
-This tutorial will show you how to bind __RadScheduler__ from the Visual Studio design time surface, by only using the __RadScheduler__ design-time support, and without writing any code. The tutorial uses the data base which comes with the installation of Telerik UI for WinForms.
+This tutorial will show you how to bind __RadScheduler__ from the Visual Studio design time surface, by only using the __RadScheduler__ design-time support, and without writing any code. The tutorial uses the data base which comes with the installation of Progress&reg; Telerik&reg; UI for WinForms.
 
 1\. Open Visual Studio and start a new Windows Forms project. Open the form, created by the project.
 
@@ -38,13 +38,13 @@ This tutorial will show you how to bind __RadScheduler__ from the Visual Studio 
 
 7\. In the "Choose a Data Source Type" page of the wizard, select the __Database__ type and click the __Next__ button to continue.
 
-8\. In the "Choose a Data Connection" page of the wizard, add a connection to the SchedulerData.mdf file supplied with Telerik UI for WinForms distribution.
+8\. In the "Choose a Data Connection" page of the wizard, add a connection to the SchedulerData.mdf file supplied with Progress&reg; Telerik&reg; UI for WinForms distribution.
 
   - Click the __New Connection...__ button to display the Add Connection dialog.
 
   - Click the __Change__ button and select the Access Database File option.
 
-  - Set the Database File Name to the Schedulerdata.mdb file located in the Telerik UI for WinForms installation directory under \Examples\DataSources.
+  - Set the Database File Name to the Schedulerdata.mdb file located in the Progress&reg; Telerik&reg; UI for WinForms installation directory under \Examples\DataSources.
 
   - Click __OK__ to close the Add Connection dialog.
 

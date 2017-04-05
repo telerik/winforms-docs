@@ -32,10 +32,10 @@ public DragDropRadDragDropService()
     
     List<string> products = new List<string>()
     {
-        "Telerik UI for WinForms",
-        "Telerik UI for Silverlight",
-        "Telerik UI for WPF",
-        "Telerik UI for ASP.NET AJAX"
+        "Progress&reg; Telerik&reg; UI for WinForms",
+        "Progress&reg; Telerik&reg; UI for Silverlight",
+        "Progress&reg; Telerik&reg; UI for WPF",
+        "Progress&reg; Telerik&reg; UI for ASP.NET AJAX"
     };
     for (int i = 0; i < products.Count; i++)
     {
@@ -48,9 +48,9 @@ public DragDropRadDragDropService()
     gridViewDataTable.Columns.Add("Id", typeof(string));
     gridViewDataTable.Columns.Add("Title", typeof(string));
     gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Kendo UI");
-    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Telerik UI for iOS");
-    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Telerik UI for Android");
-    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Telerik UI for Windows Phone");
+    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Progress&reg; Telerik&reg; UI for iOS");
+    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Progress&reg; Telerik&reg; UI for Android");
+    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Progress&reg; Telerik&reg; UI for Windows Phone");
     this.radGridView1.DataSource = gridViewDataTable;
 }
 
@@ -63,10 +63,10 @@ Sub New()
     Me.RadListView1.Columns.Add("Title")
     Me.RadListView1.ViewType = Telerik.WinControls.UI.ListViewType.DetailsView
     Dim products As New List(Of String)() From { _
-        "Telerik UI for WinForms", _
-        "Telerik UI for Silverlight", _
-        "Telerik UI for WPF", _
-        "Telerik UI for ASP.NET AJAX" _
+        "Progress&reg; Telerik&reg; UI for WinForms", _
+        "Progress&reg; Telerik&reg; UI for Silverlight", _
+        "Progress&reg; Telerik&reg; UI for WPF", _
+        "Progress&reg; Telerik&reg; UI for ASP.NET AJAX" _
     }
     For i As Integer = 0 To products.Count - 1
         Dim item As New ListViewDataItem()
@@ -77,9 +77,9 @@ Sub New()
     gridViewDataTable.Columns.Add("Id", GetType(String))
     gridViewDataTable.Columns.Add("Title", GetType(String))
     gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Kendo UI")
-    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Telerik UI for iOS")
-    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Telerik UI for Android")
-    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Telerik UI for Windows Phone")
+    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Progress&reg; Telerik&reg; UI for iOS")
+    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Progress&reg; Telerik&reg; UI for Android")
+    gridViewDataTable.Rows.Add(Guid.NewGuid().ToString(), "Progress&reg; Telerik&reg; UI for Windows Phone")
     Me.RadGridView1.DataSource = gridViewDataTable
 End Sub
 

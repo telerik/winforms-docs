@@ -12,7 +12,7 @@ previous_url: editors-textbox-adding-buttons-to-radtextbox
 # Adding Buttons to RadTextBox
  
 
-Telerik UI for WinForms are based on a special framework called [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}). This framework allows for great customizations in the element structure of a control. The purpose of this article is to demonstrate how you can easily add buttons to RadTextBox.
+Progress&reg; Telerik&reg; UI for WinForms are based on a special framework called [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}). This framework allows for great customizations in the element structure of a control. The purpose of this article is to demonstrate how you can easily add buttons to RadTextBox.
      
 >caption Figure 1: RadTextBox with buttons inside it.       
 

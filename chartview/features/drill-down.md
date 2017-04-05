@@ -408,7 +408,7 @@ End Function
 
 {{endregion}} 
  
->note Note that the data is loaded from external files. These files contain dates and values which are parsed and stored in out DrillDownDataInfo class objects. The files are included in __Telerik UI for WinForms__ suite (navigate to *Telerik\UI for WinForms Q3 2013\Examples\QuickStart\Resources* ).
+>note Note that the data is loaded from external files. These files contain dates and values which are parsed and stored in out DrillDownDataInfo class objects. The files are included in __Progress&reg; Telerik&reg; UI for WinForms__ suite (navigate to *Telerik\UI for WinForms Q3 2013\Examples\QuickStart\Resources* ).
 >
 
 3\. Finally you should initialize the chart by adding a series to it. Also the corresponding axes should be added. 

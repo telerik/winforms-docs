@@ -20,7 +20,7 @@ In addition to all the capabilities of the standard Windows Forms MenuStrip cont
 
 # Key Features       
 
-* Full support for the Telerik UI for WinForms theming engine allowing you to easily construct a variety of stunning visual effects. The drop down can be animated with a number of predefined effects.
+* Full support for the Progress&reg; Telerik&reg; UI for WinForms theming engine allowing you to easily construct a variety of stunning visual effects. The drop down can be animated with a number of predefined effects.
 
 ![menus-menu-overview 002](images/menus-menu-overview002.png)
 

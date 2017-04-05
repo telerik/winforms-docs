@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview | UI for WinForms Documentation
-description: Telerik UI for WinForms includes over 110 UI controls that you can use to easily build unique and visually stunning Line of Business applications.
+description: Progress&reg; Telerik&reg; UI for WinForms includes over 110 UI controls that you can use to easily build unique and visually stunning Line of Business applications.
 slug: winforms/overview
 tags: overview
 published: True
@@ -9,13 +9,13 @@ position: 0
 previous_url: overview, RadControlsForWinForms
 ---
 
-# Telerik UI for WinForms by Progress
+# Progress&reg; Telerik&reg; UI for WinForms by Progress
 
 ## Performance you demand, UI you can't believe
 
 ![overview](images/overview.png)
 
-Telerik UI for WinForms includes over 110 UI controls that you can use to easily build unique and visually stunning Line of Business applications. Boasting a well-designed architecture and CAB support, Telerik UI for WinForms controls are perfectly suited for your Enterprise desktop development. 
+Progress&reg; Telerik&reg; UI for WinForms includes over 110 UI controls that you can use to easily build unique and visually stunning Line of Business applications. Boasting a well-designed architecture and CAB support, Progress&reg; Telerik&reg; UI for WinForms controls are perfectly suited for your Enterprise desktop development. 
 
 * [ApplicationMenu]({%slug winforms/menus/applicationmenu%})  
 * BreadCrumb
@@ -171,4 +171,4 @@ Telerik UI for WinForms includes over 110 UI controls that you can use to easily
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Why choose Telerik UI for WinForms](http://www.telerik.com/videos/winforms/why-choose-telerik-ui-for-winforms)<br>See how you can easily build unique and visually stunning Line of Business Windows Forms applications with Telerik UI for WinForms. Boasting a well-designed architecture and CAB support, Telerik UI for WinForms are perfectly suited for your Enterprise desktop development.|![overview-video 001](images/overview-video001.png)|
+|[Why choose Progress&reg; Telerik&reg; UI for WinForms](http://www.telerik.com/videos/winforms/why-choose-telerik-ui-for-winforms)<br>See how you can easily build unique and visually stunning Line of Business Windows Forms applications with Progress&reg; Telerik&reg; UI for WinForms. Boasting a well-designed architecture and CAB support, Progress&reg; Telerik&reg; UI for WinForms are perfectly suited for your Enterprise desktop development.|![overview-video 001](images/overview-video001.png)|
