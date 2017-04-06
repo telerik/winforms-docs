@@ -9,7 +9,7 @@ position: 0
 previous_url: overview, RadControlsForWinForms
 ---
 
-# Progress&reg; Telerik&reg; UI for WinForms by Progress
+# Progress&reg; Telerik&reg; UI for WinForms
 
 ## Performance you demand, UI you can't believe
 
