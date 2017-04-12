@@ -22,7 +22,7 @@ __GridViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.
 Here is how the following grid, looks when exported.<br>![gridview-exporting-data-spread-export 001](images/gridview-exporting-data-spread-export001.png)![gridview-exporting-data-spread-export 002](images/gridview-exporting-data-spread-export002.png)
 
 >note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
-* Telerik.WinControls.TelerikExport
+* Telerik.WinControls.Export
 >
 
 >important Since this functionality is using the [RadSpreadProcessing Library](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) you need to reference the following assemblies as well:
