@@ -13,7 +13,7 @@ previous_url: scheduler-data-binding-data-binding-walkthrough
 
 This walkthrough will cover creating and binding __RadScheduler__ to a data source in a step-by-step manner.
 
->note Another example of binding __RadScheduler__ is available in our [Telerik UI for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)
+>note Another example of binding __RadScheduler__ is available in our [Progress&reg; Telerik&reg; UI for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)
 >
 
 ## The Database

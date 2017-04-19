@@ -25,7 +25,7 @@ More often than not, you would only need to use objects of type HyperlinkInfo. H
 
 * Target - determines if the link should be opened in another window (if set to HyperlinkTargets.Blank) or in the same frame (HyperlinkTargets.Self).
 
-For example, a link to our Telerik UI for WinForms demo page can be inserted in the document programmatically as follows:
+For example, a link to our Progress&reg; Telerik&reg; UI for WinForms demo page can be inserted in the document programmatically as follows:
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.cs region=AddLinkToSite}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxHyperlink.vb region=AddLinkToSite}}

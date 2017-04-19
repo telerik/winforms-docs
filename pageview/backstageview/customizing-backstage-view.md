@@ -1,7 +1,7 @@
 ---
 title: Customizing Backstage View
 page_title: Customizing Backstage View | RadPageView
-description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+description: RadPageView is yet another great addition to the Progress&reg; Telerik&reg; UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/getting-started/customizing-backstage-view
 tags: customizing,backstage,view
 published: True

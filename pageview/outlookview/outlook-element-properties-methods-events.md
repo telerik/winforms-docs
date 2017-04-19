@@ -1,7 +1,7 @@
 ---
 title: Outlook Element Properties, Methods and Events
 page_title: Outlook Element Properties, Methods and Events | RadPageView
-description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+description: RadPageView is yet another great addition to the Progress&reg; Telerik&reg; UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/outlookview/outlook-element-properties-methods-events
 tags: outlookview
 published: True

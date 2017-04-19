@@ -12,7 +12,7 @@ previous_url: telerik-cab-enabling-kit-overview
 # Telerik CAB Enabling Kit
 
 
-The [Telerik CAB Enabling Kit for WinForms](http://telerikcab.codeplex.com/) is part of the [Telerik UI for WinForms suite](http://www.telerik.com/products/winforms.aspx) since the R1 2008 release.  It provides seamless integration of Telerik UI for WinForms with the Composite UI Application Block (CAB). It is well suited for enterprise applications, and helps developers with using the best practices and patterns.
+The [Telerik CAB Enabling Kit for WinForms](http://telerikcab.codeplex.com/) is part of the [Progress&reg; Telerik&reg; UI for WinForms suite](http://www.telerik.com/products/winforms.aspx) since the R1 2008 release.  It provides seamless integration of Progress&reg; Telerik&reg; UI for WinForms with the Composite UI Application Block (CAB). It is well suited for enterprise applications, and helps developers with using the best practices and patterns.
       
 
 The Telerik CAB Enabling Kit (TCEK) for WinForms can be used to develop smart-client line-of-business applications such as OLTP (online transaction processing) front ends for data entry applications; rich client portals to back-end services like government or bank teller applications; UI-intensive stand-alone applications such as those used by call center staff, IT support desks or stock traders.
@@ -20,21 +20,21 @@ The Telerik CAB Enabling Kit (TCEK) for WinForms can be used to develop smart-cl
 
 ## The Telerik CAB Enabling Kit for WinForms advantages
 
-* Enterprise-grade components - Telerik UI for WinForms is a complete suite allowing development of enterprise-class smart client applications and featuring more than 50 components like grid view, tree view, calendar, chart, scheduler, etc.
+* Enterprise-grade components - Progress&reg; Telerik&reg; UI for WinForms is a complete suite allowing development of enterprise-class smart client applications and featuring more than 50 components like grid view, tree view, calendar, chart, scheduler, etc.
             
 
-* Rich Visual Styling - Telerik UI for WinForms provide WPF-like visual appearance, XML based themes, animations and effects. The most advanced visual styling on the market.
+* Rich Visual Styling - Progress&reg; Telerik&reg; UI for WinForms provide WPF-like visual appearance, XML based themes, animations and effects. The most advanced visual styling on the market.
             
 
-* Seamless integration - Easily develop smart client applications with a  top package like Telerik UI for WinForms, the Composite UI Application Block framework and Visual Studio 2010.
+* Seamless integration - Easily develop smart client applications with a  top package like Progress&reg; Telerik&reg; UI for WinForms, the Composite UI Application Block framework and Visual Studio 2010.
             
 
 ## With the Telerik CAB Enabling Kit you can
 
-* Easily develop smart client applications with renowned packages like Telerik UI for WinForms, the Composite UI Application Block framework, and Visual Studio 2010;
+* Easily develop smart client applications with renowned packages like Progress&reg; Telerik&reg; UI for WinForms, the Composite UI Application Block framework, and Visual Studio 2010;
             
 
-* Add enterprise-grade components with rich visual styling to your existing CAB applications by using Telerik UI for WinForms;
+* Add enterprise-grade components with rich visual styling to your existing CAB applications by using Progress&reg; Telerik&reg; UI for WinForms;
             
 
 * Build complex, enterprise-ready Windows Forms solutions, based on common patterns and practices found in line-of-business front-end applications.

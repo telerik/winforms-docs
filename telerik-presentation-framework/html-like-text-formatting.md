@@ -17,7 +17,7 @@ previous_url: tpf-html-like-text-formatting
 
 ## Introduction
 
-Telerik UI for WinForms provide an advanced text styling mechanism which can be applied to all Telerik WinForms controls and their elements, because it enhances one of the smallest element in Telerik Presentation Framework - the text primitive. The new rich text formatting mechanism uses plain HTML tags to display formatted text such as font style, font color, font size, etc.
+Progress&reg; Telerik&reg; UI for WinForms provide an advanced text styling mechanism which can be applied to all Telerik WinForms controls and their elements, because it enhances one of the smallest element in Telerik Presentation Framework - the text primitive. The new rich text formatting mechanism uses plain HTML tags to display formatted text such as font style, font color, font size, etc.
         
 
 Your text must start with the __\<html\>__ tag so that HTML-like formatting is activated. The list of supported markup tags is given below:

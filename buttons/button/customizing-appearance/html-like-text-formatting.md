@@ -1,7 +1,7 @@
 ---
 title: HTML-like Text Formatting
 page_title: HTML-like Text Formatting | UI for WinForms Documentation
-description: Telerik UI for WinForms provides an advanced text styling mechanism, which can be applied to all controls in the suite
+description: Progress&reg; Telerik&reg; UI for WinForms provides an advanced text styling mechanism, which can be applied to all controls in the suite
 slug: winforms/buttons/button/html-like-text-formatting
 tags: html-like,text,formatting
 published: True
@@ -13,7 +13,7 @@ previous_url: buttons-button-html-like-text-formatting
 
 ## Introduction
 
-Telerik UI for WinForms provides an advanced text styling mechanism, which can be applied to all controls in the suite, because it enhances one of the smallest elements in the *Telerik Presentation Framework* - the [TextPrimitive]({%slug winforms/telerik-presentation-framework/primitives/textprimitive%}). The new rich text formatting mechanism uses plain HTML tags to display formatted text such as font style, font color, font size, and simple layouts. The Html-like formatting the text must start with an __<html>__ tag; use __<size=[+|-]value>__ to set font size and to create a new line feed. To make the font bold, underlined, and italic use the corresponding opening and closing tags. Font family is set through __&lt;font=Family&gt;.__ 
+Progress&reg; Telerik&reg; UI for WinForms provides an advanced text styling mechanism, which can be applied to all controls in the suite, because it enhances one of the smallest elements in the *Telerik Presentation Framework* - the [TextPrimitive]({%slug winforms/telerik-presentation-framework/primitives/textprimitive%}). The new rich text formatting mechanism uses plain HTML tags to display formatted text such as font style, font color, font size, and simple layouts. The Html-like formatting the text must start with an __<html>__ tag; use __<size=[+|-]value>__ to set font size and to create a new line feed. To make the font bold, underlined, and italic use the corresponding opening and closing tags. Font family is set through __&lt;font=Family&gt;.__ 
   
 ## Supported Tags 
 

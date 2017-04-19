@@ -11,7 +11,7 @@ previous_url: scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-
 
 # Combining RadDragDropService and OLE Drag and Drop
 
-This article demonstrates a sample approach how to achieve drag and drop functionality between __RadScheduler__ and __RadListControl__. For this purpose, we will use a combination between the __RadDragDropService__, supported by the __RadScheduler__ control, and the OLE drag-and-drop, which is supported by all controls from the Telerik UI for WinForms suite.
+This article demonstrates a sample approach how to achieve drag and drop functionality between __RadScheduler__ and __RadListControl__. For this purpose, we will use a combination between the __RadDragDropService__, supported by the __RadScheduler__ control, and the OLE drag-and-drop, which is supported by all controls from the Progress&reg; Telerik&reg; UI for WinForms suite.
 
 Let’s assume that our __RadScheduler__ is in [bound mode]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}) and the __RadListControl__ is populated manually with items. Set the __AllowDrop__ property to *true* for both of the controls.
 

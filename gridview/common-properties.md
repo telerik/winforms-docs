@@ -25,7 +25,7 @@ position: 11
 
 ## GridViewTableElement
 
-The following table list the properties exposed by__ RadGridView.TableElement__:
+The following table list the properties exposed by __RadGridView.TableElement__:
 
 |Property|Description|
 |---|---|
@@ -51,6 +51,7 @@ The following table list the properties exposed by__ RadGridView.TableElement__:
 
 # Methods
 
-### Begin/End Update
+__Begin/End Update__
+
 The Begin/End Update block should be used when a repeated operation that affects grid layout is performed several times. This block will suspend the grid layout and it will be updated only once when the EndUpdate method is called. An example is available [here]({%slug winforms/gridview/cells/accessing-cells%})
 
