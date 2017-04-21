@@ -137,7 +137,9 @@ summaryRowItem.Add(summaryItem)
 Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 
 ````
+
 {{endregion}} 
+
 
 >caption Figure 3: Using AggregateExpression
 
@@ -177,8 +179,7 @@ Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 
 ## Summary rows in a hierarchical RadGridView
 
-You can add summary rows in hierarchical views. They are calculated for the child rows in the current view.        
-
+You can add summary rows in hierarchical views. They are calculated for the child rows in the current view.   
 The following example demonstrates how to add a summary row to the first level of **RadGridView** hierarchy:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=hierarchy}} 
@@ -200,6 +201,7 @@ Me.RadGridView1.MasterTemplate.Templates(0).SummaryRowsTop.Add(summaryRowItem)
 ````
 
 {{endregion}}
+
 
 ## Customizing the summary row
 
@@ -300,6 +302,20 @@ End Class
 {{endregion}}
 
 ![gridview-rows-summary-rows 007](images/gridview-rows-summary-rows007.png)
+
+## BottomPinnedRowsMode 
+
+You can control the location of the bottom summary rows by the **BottomPinnedRowsMode** property. The available options are:
+
+* *Float*: The bottom pinned rows will stay below the scrollable rows. If there are not enough rows to fill the viewport there will be no gap between the scrollable and pinned rows.
+* *Fixed*: The bottom pinned rows will remain at the bottom of the viewport no matter how many scrollable rows there are in the viewport.
+
+|GridViewBottomPinnedRowsMode.Fixed|GridViewBottomPinnedRowsMode.Float|
+|----|----|
+|![gridview-rows-summary-rows 008](images/gridview-rows-summary-rows008.png)|![gridview-rows-summary-rows 009](images/gridview-rows-summary-rows009.png)|
+
+>note When you use the *Fixed* mode, it is necessary to pin the summary row accessing them by the MasterView.SummaryRows collection.
+
 # See Also
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
 
