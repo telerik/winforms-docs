@@ -11,7 +11,7 @@ previous_url: gridview-editors-data-validation
 
 # Data validation
 
-__RadGridView__ provides a convenient way to perform validation before data is committed to the underlying data source. You can validate data by handling __CellValidating__ event which is raised by __RadGridView__ when the current cell changes or when the cell loses input focus (when pressing Enter key). Canceling this event prevents the user from exiting the cell until a valid editor value is entered or the edit process is canceled. The __RowValidating__ event can be used the same way to prevent the user from exiting the current row.
+__RadGridView__ provides a convenient way to perform validation before data is committed to the underlying data source. You can validate data by handling __CellValidating__ event which is raised by __RadGridView__ when the current cell changes or when the cell loses input focus (when pressing `Enter` key). Canceling this event prevents the user from exiting the cell until a valid editor value is entered or the edit process is canceled. The __RowValidating__ event can be used the same way to prevent the user from exiting the current row. However, the editor will be closed in this case and the value will be committed to the underlying data source.
 
 Here is a list of all validation events:
 
@@ -23,9 +23,17 @@ __RowValidating:__ Fires when a row is validating.
 
 __RowValidated:__ Fires after a row has finished validating.
 
+__DataError:__ Fires when an error on the **DataSource** side occurs, e.g. *ConstraintException*.
+
+>caption Figure 1: Data error.
+
+![gridview-editors-data-validation 001](images/gridview-editors-data-validation001.gif)
+
+You can handle this case by subscribing to the **DataError** event. In the **GridViewDataErrorEventArgs** you have access to the row/column index and the exception. The **ThrowException** argument controls whether the exception will be thrown or not.
+
 The __GridViewDataRowInfo.ErrorText__ property can be used to indicate validation errors. It will show an error indicator at the row header when you set this property to a non empty string.
 
-The code snippet below demonstrates simple data validation scenario. It is enabled in a textbox column to enter only non-empty strings. When the string is empty, the validation fails and the error indicator at the row header is shown:
+The code snippet below demonstrates simple data validation scenario. It is enabled in a text box column to enter only non-empty strings. When the string is empty, the validation fails and the error indicator at the row header is shown:
 
 #### Handling CellValidating Event
 
