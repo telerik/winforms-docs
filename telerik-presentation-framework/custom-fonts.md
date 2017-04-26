@@ -14,7 +14,7 @@ Since R2 2017 Progress Telerik UI for WinForms supports custom fonts. This means
 
 The following steps will show how you can load and use the new font:
 
-1. Load and get the font by using the following code: 
+1\. First you need to add the font as an embedded resource. Then you can load it with the following code: 
 
 {{source=..\SamplesCS\TPF\CustomFontsCode.cs region=LoadAndGetFont}} 
 {{source=..\SamplesVB\TPF\CustomFontsCode.vb region=LoadAndGetFont}} 
@@ -24,7 +24,7 @@ The following steps will show how you can load and use the new font:
 {{endregion}} 
 
 
-3. Use the following properties to set the font. 
+2\. Use the following properties to set the font. 
 
 {{source=..\SamplesCS\TPF\CustomFontsCode.cs region=SetCustomFont}} 
 {{source=..\SamplesVB\TPF\CustomFontsCode.vb region=SetCustomFont}} 
@@ -34,5 +34,9 @@ The following steps will show how you can load and use the new font:
 {{endregion}} 
 
 The important part here is that the above properties are available for the __VisualElement__ ancestors (which are most of our elements).
+
+The below image shows the result:
+
+![tpf-custom-fonts001](images/tpf-custom-fonts001.png)     
 
 # See Also

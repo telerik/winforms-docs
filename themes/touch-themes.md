@@ -17,6 +17,9 @@ The Progress Telerik UI for Winforms suite contains two themes that are optimize
 
 * __MaterialTheme:__ touch optimized theme which provides additional features such as custom fonts, built-in animations and shadows. 
 
+>note The touch themes are changing the layout of the existing controls and dialogs. This is why you need to restart your application if you want to switch from touch to a regular theme.
+
+
 The below images are showing the how the themes are looking with some of our controls.
 
 >caption Figure 1: The Material theme
