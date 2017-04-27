@@ -41,3 +41,13 @@ For additional information about Visual Style Builder, please refer to [this doc
 |[Episode 4: Creating a Custom Theme for the RadTextBox Component of RadScheduler](http://tv.telerik.com/watch/winforms/episode-4-creating-custom-skin-for-radscheduler-with-visual-style-builder-for-winforms)<br>This video is the fourth in a series of videos about creating a custom skin for RadScheduler using Visual Style Builder for WinForms. In this video, you will learn how to create a custom theme for the RadTextBox component contained within the EditAppointmentDialog.|![themes-visualstylebuilder 004](images/themes-visualstylebuilder004.png)|
 |[Episode 5: Creating a Custom Theme for the RadDropDownList Component of RadScheduler](http://tv.telerik.com/watch/winforms/episode-5-creating-custom-theme-for-raddropdownlist-component-radscheduler)<br>This video is the fifth in a series of videos about creating a custom skin for RadScheduler using Visual Style Builder for WinForms. In this video, you will learn how to create a custom theme for the RadDropDownList component contained within the EditAppointmentDialog.|![themes-visualstylebuilder 005](images/themes-visualstylebuilder005.png)|
 |[Episode 6: Creating a Custom Theme for the RadSpinEditor, RadButton, and RadSeparator Components of RadScheduler](http://tv.telerik.com/watch/winforms/episode-7-creating-custom-theme-for-radspineditor-radbutton-radseparator-components-radscheduler)<br>This video is the seventh in a series of videos about creating a custom skin for RadScheduler using Visual Style Builder for WinForms. In this video, you will learn how to create a custom theme for the RadSpinEditor, RadButton, and RadSeparator components contained within the EditAppointmentDialog.|![themes-visualstylebuilder 007](images/themes-visualstylebuilder007.png)|
+
+# See Also
+* [Touch Enabled Themes]({%slug winforms/themes/touch-enabled-themes%})
+
+* [Using a Default Theme for the Entire Application]({%slug winforms/themes/using-a-default-theme-for-the-entire-application%})
+
+* [Using custom themes]({%slug winforms/themes/using-custom-themes%})
+
+* [Using Themes]({%slug winforms/themes/using-default-themes%})
+

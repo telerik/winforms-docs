@@ -25,3 +25,9 @@ previous_url: themes-advanced-topics-adding-custom-adding-as-file
 1. Again from the RadThemeManager's Action Menu, choose __Edit Themes__, set the __ThemeLocation__ property according to the following pattern: "~__..\\..\ThemeFileName.Extention__", assuming that the theme file is in the project directory. 
 
 1. Now apply the theme to the RadButton. 
+
+# See Also
+* [Adding a custom theme as a resource]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/adding-a-custom-theme-as-a-resource%})
+
+* [Creating a theme component]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/creating-a-theme-component%})
+

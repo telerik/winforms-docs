@@ -38,3 +38,9 @@ previous_url: themes-advanced-topics-adding-custom-adding-as-resource
 >note To be sure about the theme resource location in step 7, you can use Reflector. After building the project simply reflect the built assembly/executable and you will see it.
 >
 
+
+# See Also
+* [Adding a custom theme as a file]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/adding-a-custom-theme-as-a-file%})
+
+* [Creating a theme component]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/creating-a-theme-component%})
+

@@ -79,3 +79,9 @@ Please note that your class should inherit __RadThemeComponentBase__. As to the 
 
 When you compile the project, you will be able to drag this component to the forms in all the projects in you solution which will load the corresponding theme, both runtime and design time.
         
+
+# See Also
+* [Adding a custom theme as a file]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/adding-a-custom-theme-as-a-file%})
+
+* [Adding a custom theme as a resource]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/adding-a-custom-theme-as-a-resource%})
+
