@@ -5,7 +5,7 @@ description:
 slug: winforms/tpf/shadows
 tags: touch, themes
 published: True
-position: 17
+position: 28
 ---
 
 # Shadows
