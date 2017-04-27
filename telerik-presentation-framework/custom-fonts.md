@@ -17,7 +17,22 @@ The following steps will show how you can load and use the new font:
 1\. First you need to add the font as an embedded resource. Then you can load it with the following code: 
 
 {{source=..\SamplesCS\TPF\CustomFontsCode.cs region=LoadAndGetFont}} 
-{{source=..\SamplesVB\TPF\CustomFontsCode.vb region=LoadAndGetFont}} 
+{{source=..\SamplesVB\TPF\CustomFontsCode.vb region=LoadAndGetFont}}
+````C#
+var fontStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(@"SamplesCS.Resources.Roboto-Medium.ttf");
+var names = Assembly.GetExecutingAssembly().GetManifestResourceNames();
+          
+ThemeResolutionService.LoadFont(fontStream);
+var font = ThemeResolutionService.GetCustomFont("Roboto Medium");
+
+````
+````VB.NET
+Dim fontStream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("SamplesCS.Resources.Roboto-Medium.ttf")
+Dim names = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames()
+ThemeResolutionService.LoadFont(fontStream)
+Dim font = ThemeResolutionService.GetCustomFont("Roboto Medium")
+
+```` 
 
 
 
@@ -27,7 +42,19 @@ The following steps will show how you can load and use the new font:
 2\. Use the following properties to set the font. 
 
 {{source=..\SamplesCS\TPF\CustomFontsCode.cs region=SetCustomFont}} 
-{{source=..\SamplesVB\TPF\CustomFontsCode.vb region=SetCustomFont}} 
+{{source=..\SamplesVB\TPF\CustomFontsCode.vb region=SetCustomFont}}
+````C#
+radLabel1.LabelElement.CustomFont = font.Name;
+radLabel1.LabelElement.CustomFontSize = 42;
+radLabel1.LabelElement.CustomFontStyle = FontStyle.Regular;
+
+````
+````VB.NET
+radLabel1.LabelElement.CustomFont = font.Name
+radLabel1.LabelElement.CustomFontSize = 42
+radLabel1.LabelElement.CustomFontStyle = FontStyle.Regular
+
+```` 
 
 
 
