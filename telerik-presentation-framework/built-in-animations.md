@@ -30,7 +30,15 @@ The following properties can used for enabling the shadows and controlling their
 The following example demonstrates how one can enable the shadow of a RadDropDownList using the TelerikMetro theme.
 
 {{source=..\SamplesCS\TPF\Shadows.cs region=EnableShadows}} 
-{{source=..\SamplesVB\TPF\_Shadows.vb region=EnableShadows}} 
+{{source=..\SamplesVB\TPF\_Shadows.vb region=EnableShadows}}
+````C#
+raddropDownList1.RootElement.EnableElementShadow = true;
+raddropDownList1.RootElement.ShadowColor = Color.LightGreen;
+raddropDownList1.DropDownListElement.ShadowDepth = 3;
+
+````
+````VB.NET
+```` 
 
 
 
