@@ -67,6 +67,8 @@ When you are working at design time you can change the theme of the form and app
 >caption Figure 3: Apply the current form theme to all controls. 
 
 ![themes-using-themes003](images/themes-using-themes003.png)
+
+
 # See Also
 * [Touch Enabled Themes]({%slug winforms/themes/touch-enabled-themes%})
 

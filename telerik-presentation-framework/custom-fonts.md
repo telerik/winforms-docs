@@ -1,7 +1,7 @@
 ---
 title: Custom Fonts
 page_title: Custom Fonts | Telerik Presentation Framework
-description: Shows the themes which should be used on touch enabled devices and the features available in them.  
+description: Shows how one cal load and use custom fonts without installing them on the client machine. 
 slug: winforms/tpf/custom-fonts
 tags: touch, themes
 published: True
@@ -67,3 +67,5 @@ The below image shows the result:
 ![tpf-custom-fonts001](images/tpf-custom-fonts001.png)     
 
 # See Also
+
+* [Shadows]({%slug winforms/tpf/shadows%})

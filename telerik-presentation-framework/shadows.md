@@ -2,7 +2,7 @@
 title: Shadows
 page_title: Shadows | Telerik Presentation Framework
 description:  
-slug: winforms/themes/touch-enabled-themes
+slug: winforms/tpf/shadows
 tags: touch, themes
 published: True
 position: 17
@@ -50,3 +50,5 @@ The below image shows the result:
 ![tpf-shadows001](images/tpf-shadows001.png)    
 
 # See Also
+
+* [Custom Fonts]({%slug winforms/tpf/custom-fonts%})
