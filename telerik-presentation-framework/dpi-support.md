@@ -45,6 +45,8 @@ The first way is to add an app.manifest file to your project. In that manifest f
 
 ````
 
+>important Applications not manifested for Windows 8.1 or Windows 10 will return the Windows 8 OS version value (6.2). To manifest your applications for Windows 8.1 or Windows 10, refer to [Targeting your application for Windows](https://msdn.microsoft.com/bg-bg/library/windows/desktop/dn481241.aspx).
+
 Note that declaring DPI awareness in the app.manifest file breaks ClickOnce applications. The suggested way to avoid this brings us to the second option, which is only available if your project's target framework is **.NET 4.7** and requires you to have an app.manifest and an app.config files added to your project. Inside the config file you should have the following settings:
 
 ````XML
