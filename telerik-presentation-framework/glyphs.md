@@ -54,4 +54,8 @@ The bellow image shows the results:
 
 ![tpf-glyphs001](images/tpf-glyphs001.png)    
 
-The following article lists all available glyphs from the TelerikWebUI font along with their names, number and string values: [Glyphs Reference](http://localhost/devtools/winforms/telerik-presentation-framework/glyphs).
+>important The following article lists all available glyphs from the TelerikWebUI font along with their names, number and string values: [Glyphs Reference](http://docs.telerik.com/devtools/wpf/styling-and-appearance/glyphs/common-styles-appearance-glyphs-reference-sheet).
+
+# See Also
+
+* [Custom Fonts]({%slug winforms/tpf/custom-fonts%})
