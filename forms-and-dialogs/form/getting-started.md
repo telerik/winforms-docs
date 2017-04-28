@@ -64,7 +64,7 @@ Return to the __Design View__ of the form. Visual Studio will repaint the form a
 
 ## Applying a Theme to your Form
 
-To apply a theme to RadForm, you should first drag-and-drop the desired Theme Component from the Visual Studio Toolbox onto your form. By doing this, the new theme will automatically become available for all Progress&reg; Telerik&reg; UI for WinForms controls including __RadForm:__
+To apply a theme to RadForm, you should first drag-and-drop the desired Theme Component from the Visual Studio Toolbox onto your form. By doing this, the new theme will automatically become available for all Telerik UI for for WinForms controls including __RadForm:__
 
 1. From the Visual Studio Toolbox drag the __Office2007Black__ component and drop it on your __RadForm__ 
 	

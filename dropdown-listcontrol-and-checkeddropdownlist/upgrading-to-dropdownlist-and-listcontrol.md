@@ -18,7 +18,7 @@ previous_url: dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol
 
 ## 
 
->note This article is valid for Progress&reg; Telerik&reg; UI for WinForms versions prior to __R2 2011 SP1__ inclusive. The Upgrade Tool can be used only if started from the Smart Tag of the obsolete controls. Since these controls have been removed in __R3 2011__, their respective Upgrade Tools are not available as well. In case you want to use the tools, please upgrade/downgrade to __R2 2011 SP1__ (v2011.2.11.831)
+>note This article is valid for Telerik UI for for WinForms versions prior to __R2 2011 SP1__ inclusive. The Upgrade Tool can be used only if started from the Smart Tag of the obsolete controls. Since these controls have been removed in __R3 2011__, their respective Upgrade Tools are not available as well. In case you want to use the tools, please upgrade/downgrade to __R2 2011 SP1__ (v2011.2.11.831)
 >
  
 Since Q2 2010 several brand new controls were released, as successors of older and not that optimized controls. These are:

@@ -1,7 +1,7 @@
 ---
 title: Requirements
 page_title: Requirements | CodedUI
-description: The CodedUI Extension for Progress&reg; Telerik&reg; UI for WinForms controls is an extension for Microsoft Visual Studio, which runs in the Visual Studio Coded UI Test process and captures information about the Rad Controls that it encounters during a test recording and then generates code to replay that test session.
+description: The CodedUI Extension for Telerik UI for for WinForms controls is an extension for Microsoft Visual Studio, which runs in the Visual Studio Coded UI Test process and captures information about the Rad Controls that it encounters during a test recording and then generates code to replay that test session.
 slug: winforms/codedui/requirements
 tags: requirements
 published: True

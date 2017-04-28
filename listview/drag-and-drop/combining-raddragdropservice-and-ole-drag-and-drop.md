@@ -11,7 +11,7 @@ previous_url: listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-a
 
 # Combining RadDragDropService and OLE drag-and-drop
 
-This article demonstrates a sample approach how to achieve drag and drop functionality between __RadListView__ and __RadListControl__. For this purpose, we will use a combination between the __RadDragDropService__, supported by the __RadListView__ control, and the OLE drag-and-drop, which is supported by all controls from the Progress&reg; Telerik&reg; UI for WinForms suite.      
+This article demonstrates a sample approach how to achieve drag and drop functionality between __RadListView__ and __RadListControl__. For this purpose, we will use a combination between the __RadDragDropService__, supported by the __RadListView__ control, and the OLE drag-and-drop, which is supported by all controls from the Telerik UI for for WinForms suite.      
 
 Let’s assume that our __RadListView__ is in bound mode and its __ViewType__ property is set to *IconsView*. The __RadListControl__ is populated manually with items. Set the __AllowDrop__ property to *true*  for both of the controls. Additionally, you need to set the RadListView.__AllowDragDrop__ property to *true* as well.
 

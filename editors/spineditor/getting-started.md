@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started | RadSpinEditor
-description: Start using RadSpinEditor from the Progress&reg; Telerik&reg; UI for WinForms suite.
+description: Start using RadSpinEditor from the Telerik UI for for WinForms suite.
 slug: winforms/editors/spineditor/getting-started
 tags: getting,started
 published: True

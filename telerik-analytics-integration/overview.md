@@ -61,7 +61,7 @@ Me.RadButton1.AnalyticsName = "Save Button"
 
 To trace features please follow the next steps:
 
-* Create Progress&reg; Telerik&reg; UI for WinForms project called AnalyticsTestApp and add a RadButton to the form.
+* Create Telerik UI for for WinForms project called AnalyticsTestApp and add a RadButton to the form.
           
 
 * Make sure you reference the EQATEC.Analytics.Monitor.dll assembly and use the code from the above section

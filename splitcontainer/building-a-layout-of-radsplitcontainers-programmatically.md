@@ -100,7 +100,7 @@ The result is shown on the screenshot below. Note that the *TelerikMetro* theme 
 
 ![splitcontainer-building-a-layout-of-radsplitcontainers-programmatically 001](images/splitcontainer-building-a-layout-of-radsplitcontainers-programmatically001.png)
 
->tip You can find advanced layouts created with **RadSplitContainers** in the Progress&reg; Telerik&reg; UI for WinForms Demo application, section *SplitContainer >> Layout* . You can find it at *Start >> Programs >> Telerik >> UI for WinForms [version] >> Run Demos* (Please note that you should have the Progress&reg; Telerik&reg; UI for WinForms suite installed).
+>tip You can find advanced layouts created with **RadSplitContainers** in the Telerik UI for for WinForms Demo application, section *SplitContainer >> Layout* . You can find it at *Start >> Programs >> Telerik >> UI for WinForms [version] >> Run Demos* (Please note that you should have the Telerik UI for for WinForms suite installed).
 >
 
 # See Also

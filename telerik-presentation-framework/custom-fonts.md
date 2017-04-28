@@ -10,7 +10,7 @@ position: 26
 
 # Custom Fonts
 
-Since R2 2017 Progress Telerik UI for WinForms supports custom fonts. This means that you can use your own fonts without installing them on the local machine. 
+Since R2 2017 Telerik UI for WinForms supports custom fonts. This means that you can use your own fonts without installing them on the local machine. 
 
 The following steps will show how you can load and use the new font:
 
