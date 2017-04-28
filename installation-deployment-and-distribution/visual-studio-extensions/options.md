@@ -17,7 +17,7 @@ It can be accessed through the __Visual Studio | Telerik | VSExtensions Options�
 
 ![installation-deployment-and-distribution-vsx-options-dialog 001](images/installation-deployment-and-distribution-vsx-options-dialog001.png)
 
-The __Options__ dialog contains two sets of options that affect the __Progress&reg; Telerik&reg; UI for WinForms__ Visual Studio Extensions.
+The __Options__ dialog contains two sets of options that affect the __Telerik UI for for WinForms__ Visual Studio Extensions.
 
 ![installation-deployment-and-distribution-vsx-options-dialog 002](images/installation-deployment-and-distribution-vsx-options-dialog002.png)
 
@@ -29,13 +29,13 @@ __Copy referenced assemblies to solution and integrate with source control__ - W
 
 ## Project Upgrade Notifications for Detected Local Distributions
 
-__Suggest project upgrades for Telerik product version available on my computer__  – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Progress&reg; Telerik&reg; UI for WinForms installed on your system
+__Suggest project upgrades for Telerik product version available on my computer__  – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI for for WinForms installed on your system
 
-__Suggest upgrades when an equal Dev release is detected on projects using a Trial__ – When enabled, you will be prompted to upgrade if a licensed version of Progress&reg; Telerik&reg; UI for WinForms is available on your system, but the current project uses a trial version
+__Suggest upgrades when an equal Dev release is detected on projects using a Trial__ – When enabled, you will be prompted to upgrade if a licensed version of Telerik UI for for WinForms is available on your system, but the current project uses a trial version
 
 ![installation-deployment-and-distribution-vsx-options-dialog 003](images/installation-deployment-and-distribution-vsx-options-dialog003.png)
 
-All settings under the WinForms category affect only the Progress&reg; Telerik&reg; UI for WinForms Visual Studio Extensions.
+All settings under the WinForms category affect only the Telerik UI for for WinForms Visual Studio Extensions.
 
 ## Select a folder for downloads
 
@@ -49,4 +49,4 @@ __Include internal builds in Latest Version update and retrieval__ – When enab
 
 ## Notifications
 
-__Show me a message when a newer version is available on__ [www.telerik.com](http://www.telerik.com). When enabled and solution containing an UI for WinForms project is loaded, you will receive notification if a new version of __Progress&reg; Telerik&reg; UI for WinForms__ is available on the Telerik website.
+__Show me a message when a newer version is available on__ [www.telerik.com](http://www.telerik.com). When enabled and solution containing an UI for WinForms project is loaded, you will receive notification if a new version of __Telerik UI for for WinForms__ is available on the Telerik website.

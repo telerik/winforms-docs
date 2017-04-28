@@ -48,7 +48,7 @@ Me.radMap1.Providers.Add(bingProvider)
 
 {{endregion}} 
 
->note If you use __RadMap__ with .Net Framework 2.0 and you don't have an installation of the Progress&reg; Telerik&reg; UI for WinForms suite on the current machine, it is necessary to add a reference to the Newtonsoft.Json assembly which can be found in the \Bin folder of the *Telerik_UI_For_WinForms_[version]_Dev_dlls.zip*. If you are using .Net Framework 4.0 this is not requried.
+>note If you use __RadMap__ with .Net Framework 2.0 and you don't have an installation of the Telerik UI for for WinForms suite on the current machine, it is necessary to add a reference to the Newtonsoft.Json assembly which can be found in the \Bin folder of the *Telerik_UI_For_WinForms_[version]_Dev_dlls.zip*. If you are using .Net Framework 4.0 this is not requried.
 
 # Properties
 

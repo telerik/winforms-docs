@@ -11,7 +11,7 @@ previous_url: installation-deployment-and-distribution-adding-radcontrols-to-vis
 
 # Adding RadControls to Visual Studio Toolbox
 
-Progress&reg; Telerik&reg; UI for WinForms are automatically added to Visual Studio 2005/2008/2010/2012/2013/2015/2017 Toolbox [during installation]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). If however they do not appear in the toolbox after the installation, you can do this manually. There are two ways to manually add Progress&reg; Telerik&reg; UI for WinForms to the Toolbox in your Visual Studio.
+Telerik UI for for WinForms are automatically added to Visual Studio 2005/2008/2010/2012/2013/2015/2017 Toolbox [during installation]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). If however they do not appear in the toolbox after the installation, you can do this manually. There are two ways to manually add Telerik UI for for WinForms to the Toolbox in your Visual Studio.
       
 ## Using the Visual Studio menus
 
@@ -21,7 +21,7 @@ Progress&reg; Telerik&reg; UI for WinForms are automatically added to Visual Stu
 
 1. Expand the Toolbox.
 
-1. Right-click the Toolbox in the empty area underneath and choose __Add Tab__ to create a new tab. Name the tab "__Progress&reg; Telerik&reg; UI for WinForms__".
+1. Right-click the Toolbox in the empty area underneath and choose __Add Tab__ to create a new tab. Name the tab "__Telerik UI for for WinForms__".
          
 1. Right-click in the empty space of the newly created tab and select __Choose Items__. A dialog will open, which lists all available controls from the assemblies in the GAC.
             
@@ -30,7 +30,7 @@ Progress&reg; Telerik&reg; UI for WinForms are automatically added to Visual Stu
 1. Sort the assemblies by name and navigate to Telerik assemblies. Select all corresponding Telerik Controls (except for FilteredPropertyGrid) and click __OK__ to finish the operation.
             
 
-1. All Progress&reg; Telerik&reg; UI for WinForms should appear in the toolbox and you can start using them right away.
+1. All Telerik UI for for WinForms should appear in the toolbox and you can start using them right away.
 
 ## Using the the drag-drop approach
 
@@ -40,7 +40,7 @@ Progress&reg; Telerik&reg; UI for WinForms are automatically added to Visual Stu
 
 1. Expand the Toolbox.
 
-1. Right-click the Toolbox in the empty area underneath and choose __Add Tab__ to create a new tab. Name the tab "__Progress&reg; Telerik&reg; UI for WinForms__".
+1. Right-click the Toolbox in the empty area underneath and choose __Add Tab__ to create a new tab. Name the tab "__Telerik UI for for WinForms__".
             
 
 1. Open a Windows Explorer and locate the Telerik assemblies folder.             
@@ -126,7 +126,7 @@ __Telerik assemblies do not appear in Visual Studio's Add reference dialog altho
 
 To display your assembly in the __Add Reference__ dialog box, you can add a registry key, such as the following, which points to the location of the assembly:
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\AssemblyFolders\Progress&reg; Telerik&reg; UI for WinForms Q1 2014]@="C:\Program Files\Telerik\UI for WinForms\Q1 2014\bin\"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\AssemblyFolders\Telerik UI for for WinForms Q1 2014]@="C:\Program Files\Telerik\UI for WinForms\Q1 2014\bin\"
               
 Change this according to your installation and version specifics. Restart Visual Studio .NET after you have added the key.
 
@@ -143,13 +143,13 @@ Below are the different kinds of occurrences and their possible fixes:
 
 * Duplicate Toolbox items, remaining two entries per control:
                 
- * this could be a result of having parallel Progress&reg; Telerik&reg; UI for WinForms installations, which is the correct behavior (Visual Studio 2008 only)
+ * this could be a result of having parallel Telerik UI for for WinForms installations, which is the correct behavior (Visual Studio 2008 only)
 
- * this could be the result of an improper underregistration of an older Progress&reg; Telerik&reg; UI for WinForms distribution, followed by the registration of the newer one. Usually either of the two approaches below helps fixing the problem:
+ * this could be the result of an improper underregistration of an older Telerik UI for for WinForms distribution, followed by the registration of the newer one. Usually either of the two approaches below helps fixing the problem:
                       
 
      * Close Visual Studio instances, start Windows Explorer, navigate to %localappdata%\Microsoft\VisualStudio\10.0 and delete the *.tbd files
 
      * Right-click the Toolbox inside Visual Studio and click Reset
 
-* Multiple entries per control, number increasing with each start of the IDE: this is the worst scenario we have come across. All the registry entries and files on the customer machine seemed fine in this case. The only fix we were able to apply was a complete uninstall of Progress&reg; Telerik&reg; UI for WinForms and Visual Studio 2010, followed by a clean install of the IDE and the suite.
+* Multiple entries per control, number increasing with each start of the IDE: this is the worst scenario we have come across. All the registry entries and files on the customer machine seemed fine in this case. The only fix we were able to apply was a complete uninstall of Telerik UI for for WinForms and Visual Studio 2010, followed by a clean install of the IDE and the suite.

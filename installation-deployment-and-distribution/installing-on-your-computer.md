@@ -17,28 +17,28 @@ The Telerik WinForms setup performs the following actions during the installatio
 
 * Installs all Telerik WinForms assemblies in the Global Assembly Cache (GAC)
 
-* Creates native images for all Progress&reg; Telerik&reg; UI for WinForms assemblies
+* Creates native images for all Telerik UI for for WinForms assemblies
             
 
 * Checks the Visual Studio version(s) installed on the machine. We currently support Visual Studio 2005, 2008, 2010, 2012, 2013, 2015 and 2017 installations
 
 * Installs/adds all Telerik WinForms controls in the toolbox of Visual Studio
 
-* Installs Progress&reg; Telerik&reg; UI for WinForms Visual Studio templates
+* Installs Telerik UI for for WinForms Visual Studio templates
 
-* Installs [Progress&reg; Telerik&reg; UI for WinForms Visual Studio Extensions](http://www.telerik.com/products/winforms/visual-studio-extensions.aspx) add-on
+* Installs [Telerik UI for for WinForms Visual Studio Extensions](http://www.telerik.com/products/winforms/visual-studio-extensions.aspx) add-on
             
 
-* Installs Progress&reg; Telerik&reg; UI for WinForms Examples
+* Installs Telerik UI for for WinForms Examples
 
-* Installs Progress&reg; Telerik&reg; UI for WinForms Coded UI support for Visual Studio 2010 and 2012
+* Installs Telerik UI for for WinForms Coded UI support for Visual Studio 2010 and 2012
             
 
-Please follow the steps below to install Progress&reg; Telerik&reg; UI for WinForms:
+Please follow the steps below to install Telerik UI for for WinForms:
 
 1. Close all running instances of Visual Studio.
 
-1. Run the Progress&reg; Telerik&reg; UI for WinForms setup as __Administrator__ (right-click on the installer and select Run As Administrator).
+1. Run the Telerik UI for for WinForms setup as __Administrator__ (right-click on the installer and select Run As Administrator).
             
 
 1. The installer will display the Welcome screen. Click __Next__ to continue.You can use the __Read License Agreement__ button to display the license agreement. Review the License Agreement carefully as it contains important information about the tools, the source code, and support. Click __OK__ afterwards, or use the __Print__ button to print the agreement. Once you are done, select the __I agree - Continue__ in order to continue.          

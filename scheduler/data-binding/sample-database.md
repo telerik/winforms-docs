@@ -11,7 +11,7 @@ previous_url: scheduler-data-binding-sample-database
 
 # Sample Database
 
-To kick start your development, a sample database for RadScheduler can be found in your installation folder of Progress&reg; Telerik&reg; UI for WinForms (under the \Examples\DataSources folder).  The name of the file is SchedulerData.mdf. The sample database for RadScheduler contains the most simple scenario - two tables which can be used to bind the control to appointments and resources information.
+To kick start your development, a sample database for RadScheduler can be found in your installation folder of Telerik UI for for WinForms (under the \Examples\DataSources folder).  The name of the file is SchedulerData.mdf. The sample database for RadScheduler contains the most simple scenario - two tables which can be used to bind the control to appointments and resources information.
 
 ## Database Structure
 

@@ -45,6 +45,19 @@ The glyphs are basically text shapes, so they need to be hosted in a control wit
 
 {{source=..\SamplesCS\TPF\CustomFontsCode.cs region=GetWebUIFont}} 
 {{source=..\SamplesVB\TPF\CustomFontsCode.vb region=GetWebUIFont}}
+````C#
+var font1 = ThemeResolutionService.GetCustomFont("TelerikWebUI");
+radLabel1.LabelElement.CustomFont = font1.Name;
+           
+radLabel1.Text = "\ue920 | \ue812 | \ue13A";
+
+````
+````VB.NET
+Dim font1 = ThemeResolutionService.GetCustomFont("TelerikWebUI")
+radLabel1.LabelElement.CustomFont = font1.Name
+radLabel1.Text = ChrW(&HE920).ToString() & " | " & ChrW(&HE812).ToString() & " | " & ChrW(&HE13A).ToString()
+
+````
 
 
 

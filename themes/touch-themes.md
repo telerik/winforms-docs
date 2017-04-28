@@ -10,7 +10,7 @@ position: 7
 
 # Touch Enabled Themes
 
-The Progress Telerik UI for Winforms suite contains two themes that are optimized for a touch devices:
+Telerik UI for Winforms suite contains two themes that are optimized for a touch devices:
 
 * __TelerikMetroTouch:__ the design is similar to the TelerikMetro theme however the controls sizes are increased.
 

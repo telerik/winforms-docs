@@ -33,14 +33,14 @@ When creating new project, select the needed template as seen on __Figure 1__.
 
 ## Word-Inspired Template
 
-The __Word-Inspired Template__ implements Word-like editing experience represented with the __Progress&reg; Telerik&reg; UI for WinForms__ controls. It provides a complex integration of controls like __RichTextEditorRibbonBar__, __RadRichTextEditor__ in an already set up example. It also demonstrates the broad range of editing and formatting capabilities as well as built in specific features of these controls. In fact the __Word-Inspired Template__ is almost identical to the __RadRichTextEditor__'s First Look example in our demo application.
+The __Word-Inspired Template__ implements Word-like editing experience represented with the __Telerik UI for for WinForms__ controls. It provides a complex integration of controls like __RichTextEditorRibbonBar__, __RadRichTextEditor__ in an already set up example. It also demonstrates the broad range of editing and formatting capabilities as well as built in specific features of these controls. In fact the __Word-Inspired Template__ is almost identical to the __RadRichTextEditor__'s First Look example in our demo application.
 
 >caption Figure 2: Word-Inspired Template
 ![visual studio templates 002](images/visual-studio-templates002.png)
 
 ## Outlook-Inspired Template
 
-In this template we joined the powers of some of the most prominent controls in __Progress&reg; Telerik&reg; UI for WinForms__ to create one of the most recognizable applications in the world – Microsoft Outlook. You can easily spot __RadGridView__, __RadRichTextEditor__, __RadScheduler__, __RadDock__ and __RadCalendar__ how blend seamlessly. The Visual Studio template can be used for a quick start of any other business application. The __Outlook-Inspired Template__ is built from two separate templates available in Visual Studio – __Outlook-Inspired Mail Template__ and __Outlook-Inspired Calendar Template__. They are separated so you can use only the needed functionality in the cases in which you need only the email interface or the calendar one.
+In this template we joined the powers of some of the most prominent controls in __Telerik UI for for WinForms__ to create one of the most recognizable applications in the world – Microsoft Outlook. You can easily spot __RadGridView__, __RadRichTextEditor__, __RadScheduler__, __RadDock__ and __RadCalendar__ how blend seamlessly. The Visual Studio template can be used for a quick start of any other business application. The __Outlook-Inspired Template__ is built from two separate templates available in Visual Studio – __Outlook-Inspired Mail Template__ and __Outlook-Inspired Calendar Template__. They are separated so you can use only the needed functionality in the cases in which you need only the email interface or the calendar one.
 
 Full list of controls used in the __Outlook-Inspired Template__ can be found below:
 

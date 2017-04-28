@@ -11,7 +11,7 @@ previous_url: editors-spineditor-overview
 
 # SpinEditor
 
-RadSpinEditor is a themable alternative to the standard Windows Numeric Up Down control. It allows users to set/edit a number in a text box by using up and down buttons however extends this functionality by providing skinning and consistent look and feel with the other controls in the Progress&reg; Telerik&reg; UI for WinForms suite.
+RadSpinEditor is a themable alternative to the standard Windows Numeric Up Down control. It allows users to set/edit a number in a text box by using up and down buttons however extends this functionality by providing skinning and consistent look and feel with the other controls in the Telerik UI for for WinForms suite.
 
 >caption Figure 1: RadSpinEditor
 

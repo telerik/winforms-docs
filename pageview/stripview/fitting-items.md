@@ -1,7 +1,7 @@
 ---
 title: Fitting Items
 page_title: Fitting Items | RadPageView
-description: RadPageView is yet another great addition to the Progress&reg; Telerik&reg; UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+description: RadPageView is yet another great addition to the Telerik UI for for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/stripview/fitting-items
 tags: fitting,items
 published: True

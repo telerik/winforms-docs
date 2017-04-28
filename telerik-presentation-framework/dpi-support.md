@@ -18,7 +18,7 @@ All you will have to do is declare your application as DPI aware and RadControls
 
 With the changes we are introducing, the common problem of bad scaling when your applications run on high resolution monitors goes away, so your app will ship with higher quality on more systems instantly. The problem with the blurry fonts and unreadable texts will be eliminated and the potential of modern hardware will be utilized fully.
 
-Although it is a bit tricky to demonstrate HDPI support with a single image, here is an example with screenshots of the same application on two different monitors. You will notice that the second image will become blurry unlike the first one.
+Although it is a bit tricky to demonstrate HDPI support with a single image, here is an example with screenshots of the same application on two different monitors. You will notice that the first image will become blurry unlike the second one.
 
 |Resolution: 3840 x 2160 - Scaling: 250%|
 |----|

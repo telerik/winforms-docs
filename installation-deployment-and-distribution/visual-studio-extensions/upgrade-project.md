@@ -33,7 +33,7 @@ On the first step the wizard provides basic update process information:
 
 ![installation-deployment-and-distribution-vsx-upgrade-project 001](images/installation-deployment-and-distribution-vsx-upgrade-project001.png)
 
-On the next step the wizard lists all projects from the solution, which use Progress&reg; Telerik&reg; UI for WinForms. You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to. The Compatibility button will invoke the [Upgrade API Analyzer tool](http://docs.telerik.com/devtools/winforms/api-analyzer):
+On the next step the wizard lists all projects from the solution, which use Telerik UI for for WinForms. You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to. The Compatibility button will invoke the [Upgrade API Analyzer tool](http://docs.telerik.com/devtools/winforms/api-analyzer):
 
 ![installation-deployment-and-distribution-vsx-upgrade-project 002](images/installation-deployment-and-distribution-vsx-upgrade-project002.png)
 
@@ -43,7 +43,7 @@ The next screen allows you to update the Visual Studio Toolbox with the newly se
 
 Notes:
 
-* The Progress&reg; Telerik&reg; UI for WinForms distribution selection screen lists all the versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions, available in the GAC. Hotfixes, downloaded manually cannot be detected.
+* The Telerik UI for for WinForms distribution selection screen lists all the versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions, available in the GAC. Hotfixes, downloaded manually cannot be detected.
 
 * You can use the __GET LATEST__ button to access the Latest Version Acquirer and download the latest available version on our website.
 

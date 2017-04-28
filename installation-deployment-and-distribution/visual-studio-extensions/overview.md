@@ -11,7 +11,7 @@ previous_url: installation-deployment-and-distribution-vsx-overview
 
 # Visual Studio Extensions
 
-__Visual Studio Extensions__ for __UI for WinForms__ aim to help developers when creating WinForms Application with __Progress&reg; Telerik&reg; UI for WinForms__.
+__Visual Studio Extensions__ for __UI for WinForms__ aim to help developers when creating WinForms Application with __Telerik UI for for WinForms__.
 
 The extensions handle the following major points in the development with __UI for WinForms__:
 

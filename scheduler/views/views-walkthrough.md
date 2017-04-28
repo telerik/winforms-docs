@@ -11,7 +11,7 @@ previous_url: scheduler-views-views-walkthrough
 
 # Views Walkthrough
 
-In this walkthrough (part of the [Progress&reg; Telerik&reg; UI for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)) you will dynamically change the view, change some of the view specific properties and handle the __ActiveViewChanging__ event.
+In this walkthrough (part of the [Telerik UI for for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)) you will dynamically change the view, change some of the view specific properties and handle the __ActiveViewChanging__ event.
 
 ## Project Setup
 
