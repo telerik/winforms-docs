@@ -5,7 +5,7 @@ description: This article demonstrates how to change the style for a specific el
 slug: winforms/telerik-presentation-framework/override-theme-settings-at-run-time
 tags: override,theme,settings,at,run,time
 published: True
-position: 18
+position: 20
 previous_url: tpf-override-theme-settings-at-run-time
 ---
 

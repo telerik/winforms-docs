@@ -5,7 +5,7 @@ description: Shows how one cal load and use custom fonts without installing them
 slug: winforms/tpf/custom-fonts
 tags: touch, themes
 published: True
-position: 26
+position: 23
 ---
 
 # Custom Fonts

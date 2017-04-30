@@ -5,7 +5,7 @@ description: RadDragDropService
 slug: winforms/telerik-presentation-framework/raddragdropservice
 tags: animations
 published: True
-position: 15
+position: 16
 ---
 
 # RadDragDropService

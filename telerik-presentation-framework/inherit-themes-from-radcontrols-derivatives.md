@@ -5,7 +5,7 @@ description: In order the themes to be applied to your custom controls you need 
 slug: winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives
 tags: inherit,themes,from,radcontrols,derivatives
 published: True
-position: 17
+position: 18
 previous_url: tpf-inherit-themes-from-radcontrols-derivatives
 ---
 

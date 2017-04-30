@@ -1166,7 +1166,7 @@ navigation:
         position: 0
     telerik-presentation-framework/tooltips-and-screentips:
         title: Tooltips and ScreenTips
-        position: 16		
+        position: 17		
     telerik-presentation-framework/getting-started:
         title: Getting Started
         position: 1
@@ -1202,10 +1202,10 @@ navigation:
         position: 2
     telerik-presentation-framework/export-renderers:
         title: Export Renderers
-        position: 19
+        position: 21
     telerik-presentation-framework/shapes:
         title: Shapes
-        position: 20
+        position: 22
     themes:
         title: Themes
         position: 580
