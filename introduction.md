@@ -158,6 +158,8 @@ Telerik UI for for WinForms includes over 110 UI controls that you can use to ea
 	* TelerikMetroTheme
 	
 	* TelerikMetroTouchTheme
+	
+	* MaterialTheme
 
 	* Windows7Theme
 	

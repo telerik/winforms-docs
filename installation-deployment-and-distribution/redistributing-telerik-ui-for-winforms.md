@@ -738,6 +738,8 @@ Telerik.WinControls.Themes.TelerikMetroBlue.dll</td></tr><tr><td>
 <b>TelerikMetroTouch</b></td><td>
 
 Telerik.WinControls.Themes.TelerikMetroTouch.dll</td></tr><tr><td>
+<b>Material</b></td><td>
+Telerik.WinControls.Themes.Material.dll</td></tr><tr><td>
 
 <b>VisualStudio2012Dark</b></td><td>
 

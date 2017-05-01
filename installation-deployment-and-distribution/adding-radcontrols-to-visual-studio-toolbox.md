@@ -98,6 +98,8 @@ Telerik UI for for WinForms are automatically added to Visual Studio 2005/2008/2
  * Telerik.WinControls.Themes.TelerikMetroBlue.dll
 
  * Telerik.WinControls.Themes.TelerikMetroTouch.dll
+ 
+ * Telerik.WinControls.Themes.Material.dll
 
  * Telerik.WinControls.Themes.VisualStudio2012Dark.dll
 
