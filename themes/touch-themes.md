@@ -32,8 +32,6 @@ The below images are showing the how the themes are looking with some of our con
 
 # See Also
 
-* [Touch Enabled Themes]({%slug winforms/themes/touch-enabled-themes%})
-
 * [Using a Default Theme for the Entire Application]({%slug winforms/themes/using-a-default-theme-for-the-entire-application%})
 
 * [Using custom themes]({%slug winforms/themes/using-custom-themes%})
