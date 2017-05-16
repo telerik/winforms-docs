@@ -678,6 +678,9 @@ navigation:
     map/features/layers:
         title: Layers
         position: 0
+    map/drag-and-drop:
+        title: Drag and Drop
+        position: 8
     menus:
         title: Menus
         position: 290
