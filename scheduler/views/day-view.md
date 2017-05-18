@@ -181,11 +181,11 @@ RadScheduler uses the [.NET Standard DateTime Format Strings](http://msdn.micros
 {{source=..\SamplesVB\Scheduler\Views\DayView.vb region=headerFormat}} 
 
 ````C#
-dayView.HeaderFormat = "MMMM dd";
+dayView.Scheduler.HeaderFormat = "MMMM dd";
 
 ````
 ````VB.NET
-dayView.HeaderFormat = "MMMM dd"
+dayView.Scheduler.HeaderFormat = "MMMM dd"
 
 ````
 
