@@ -340,9 +340,6 @@ __Assemblies that you should redistribute in all scenarios:__
 
 * Telerik.WinControls.dll
             
-
-If you are using the [Telerik Analytics](http://www.telerik.com/analytics) functionality you will also need to reference the __EQATEC.Analytics.Monitor.dll__ assembly. For more information please check out the topic on [Getting Started with Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction)
-
 __Assemblies that you need to redistribute depending on which controls you use in your application__
 
 <table><th>Control Name</th><th>Assembly</th><tr><td>

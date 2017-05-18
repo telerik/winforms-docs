@@ -70,10 +70,6 @@ If your WinForms application is using Telerik controls and is located on a *netw
 
 * Telerik.WinControls.dll
 
-## Assemblies that you should redistribute if using Telerik Analytics 
-
-If you are using the [Telerik Analytics](http://www.telerik.com/analytics) functionality you will also need to reference the __EQATEC.Analytics.Monitor.dll__ assembly.For more information please check out the topic on [Getting Started with Telerik Analytics](http://docs.telerik.com/platform/analytics/getting-started/introduction)
-
 ## Assemblies that you need to redistribute depending on which controls you use in your application
       
 <table><tr><th>Control Name</th><th>Assembly</th></tr>
