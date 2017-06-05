@@ -157,6 +157,16 @@ As a result, when the end-user clicks the new row, the following values will be 
 
 ![gridview-rows-new-row 001](images/gridview-rows-new-row001.png)
 
+### Adding with default values only
+
+It is possible to add default values in all of the fields. However by default you cannot add the row if no cells are changed. This can achieved bu setting the AddWithDefaultValues property. The following code snippet demonstrates how you can access and set this property:
+
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=AddOnlyDefault}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=AddOnlyDefault}} 
+
+ 
+{{endregion}} 
+
 ## Adding rows to the underlying data source
 
 In some cases, you may need RadGridView to create a record in the underlying data source after the end-user commits the new row. In other cases, you may want to have a new record created immediately after the end-user starts editing the new row. RadGridView supports both modes. The behavior of RadGridView in this situation is determined by the __AddNewBoundRowBeforeEdit__property:
