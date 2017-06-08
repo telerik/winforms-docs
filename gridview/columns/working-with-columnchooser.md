@@ -69,7 +69,7 @@ RadGridView1.Columns("Picture").VisibleInColumnChooser = False
 
 __ColumnChooserSortOrder:__ Gets or sets the column chooser sort order.
 
-#### Accessing the column chooser instance
+### Accessing the column chooser instance
 
 In order to customize the Column Chooser you can access it directly from the instance of RadGridView, as shown in the following example:
 
@@ -90,6 +90,20 @@ RadGridView1.ColumnChooser.Font = New Font("Segoe", 15, FontStyle.Bold)
 ````
 
 {{endregion}}
+
+### Enable the filtering functionality
+
+If the grid contains many hidden columns it is convenient to filter them so you can easily find the desired column. This is supported out of the box and can be enabled by setting the EnableFilter property in the ColumnChooserCreated event handler.
+
+#### Enabling Filtering
+
+{{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=EnableChooserFiltering}} 
+{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=EnableChooserFiltering}} 
+
+ 
+
+{{endregion}}
+
 
 # See Also
 

@@ -71,6 +71,8 @@ You can add these item types to the __CommandBarStripElement__ from the context 
 |CommandBarDropDownButton|![commandbar-item-types 007](images/commandbar-item-types007.png)|Displays a button with a drop-down arrow. Clicking the drop-down arrow displays a menu of choices. Use the Items property to populate the menu. Attach event handlers for individual element events in code to respond to user actions.|
 |CommandBarSplitButton|![commandbar-item-types 008](images/commandbar-item-types008.png)|Displays a button with a drop-down arrow. Clicking the drop-down arrow displays a menu of choices. Clicking the button has the same effect as clicking the default item from the menu.|
 |CommandBarHostItem|![commandbar-item-types 009](images/commandbar-item-types009.png)|Item that can host any RadElement. Use the HostedElement property to get/set the element that you are hosting.|
+|CommandBarMaskedEditBox|![commandbar-item-types 010](images/commandbar-item-types010.png)|Displays [RadMaskedEditBox]({%slug winforms/editors/maskededitbox%}).|
+
 
 >caption Fig.5 RadCommandBarBaseItem 
 
