@@ -55,6 +55,9 @@ The empty X value is skipped from drawing. NullValues is supported only for Cart
 >Empty values for pie chart are unsupported as well. Pie slices should always make up to 360 degrees when combined.
 >
 
+>caution In VB.NET one should be careful when using the *nullable* value types. Unless the object is not explicitly set as *nullable* its value will be implicitly cast to the default value for the data type. 
+>
+
 # See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
