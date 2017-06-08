@@ -61,6 +61,15 @@ End Using
 
 {{endregion}} 
 
+
+# Using local images
+
+The __KmlReader__ supports loading images from a local folder. The KmlReader class has two static properties that controls this functionality:
+
+* __UseLocalImages:__ A boolean property which enables the local image loading.
+* __LocalImagesFolder:__ The folder that contains all images. 
+
+
 # See Also
 * [KML](https://developers.google.com/kml/documentation/?csw=1)
 
