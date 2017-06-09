@@ -5,7 +5,7 @@ description: RadPdfViewer provides an API for handling exceptions caused by docu
 slug: winforms/pdfviewer/exception-handling
 tags: exception,handling
 published: True
-position: 10
+position: 11
 previous_url: pdfviewer-exception-handling
 ---
 

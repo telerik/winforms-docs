@@ -5,7 +5,7 @@ description: RadPdfViewer support page rotation out of the box. This article des
 slug: winforms/pdfviewer/rotation
 tags: pdfviewer, rotation
 published: True
-position: 11
+position: 13
 ---
 
 # Rotation

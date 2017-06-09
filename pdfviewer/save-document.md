@@ -5,7 +5,7 @@ description: This article shows how you can use the built-in methods to save the
 slug: winforms/pdfviewer/save-as 
 tags: save, image
 published: True
-position: 17
+position: 16
 ---
 
 

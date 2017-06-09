@@ -5,7 +5,7 @@ description: This article shows how you can use the built-in methods to export s
 slug: winforms/pdfviewer/export-to-image
 tags: export, image
 published: True
-position: 16
+position: 15
 ---
 
 # Export to image

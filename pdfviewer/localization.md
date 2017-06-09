@@ -5,7 +5,7 @@ description: RadPdfViewer can be fully localized to display text messages in a s
 slug: winforms/pdfviewer/localization
 tags: localization
 published: True
-position: 11
+position: 12
 previous_url: pdfviewer-localization
 ---
 

@@ -809,7 +809,10 @@ navigation:
         position: 8	
     pdfviewer/customize-and-extensibility:
         title: Customize and Extensibility
-        position: 9			
+        position: 9
+    pdfviewer/how-to:
+        title: How-To
+        position: 10	
     pivotgrid:
         title: PivotGrid 
         position: 360
