@@ -98,7 +98,20 @@ If the grid contains many hidden columns it is convenient to filter them so you 
 #### Enabling Filtering
 
 {{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=EnableChooserFiltering}} 
-{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=EnableChooserFiltering}} 
+{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=EnableChooserFiltering}}
+````C#
+private void RadGridView1_ColumnChooserCreated(object sender, ColumnChooserCreatedEventArgs e)
+{
+    e.ColumnChooser.EnableFilter = true;
+}
+
+````
+````VB.NET
+Private Sub RadGridView1_ColumnChooserCreated(ByVal sender As Object, ByVal e As ColumnChooserCreatedEventArgs)
+    e.ColumnChooser.EnableFilter = True
+End Sub
+
+```` 
 
  
 

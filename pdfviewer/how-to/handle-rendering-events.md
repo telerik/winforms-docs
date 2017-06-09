@@ -33,7 +33,7 @@ public WaitingBarForm()
 protected override void OnShown(EventArgs e)
 {
     base.OnShown(e);
-    this.radPdfViewer1.LoadDocument(@"..\..\..\PdfViewer\ObjectiveC.pdf");
+    this.radPdfViewer1.LoadDocument(@"..\..\PdfViewer\ObjectiveC.pdf");
 }
 private void RadPdfViewer1_DocumentLoaded(object sender, EventArgs e)
 {
@@ -51,7 +51,7 @@ Public Sub New()
 End Sub
 Protected Overrides Sub OnShown(e As EventArgs)
     MyBase.OnShown(e)
-    Me.radPdfViewer1.LoadDocument("..\..\ObjectiveC.pdf")
+    Me.radPdfViewer1.LoadDocument("..\..\PdfViewer\ObjectiveC.pdf")
 End Sub
 Private Sub RadPdfViewer1_DocumentLoaded(sender As Object, e As EventArgs)
     AddHandler Me.radPdfViewer1.PageRenderStarted, AddressOf OnPageRenderStarted
