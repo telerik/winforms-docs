@@ -25,9 +25,21 @@ The __RadRichTextEditor__ control is designed to support "*spell checking as you
 
 ## Enabling SpellCheck
 
-To enable or disable the spell checking functionality (present as red wavy underlines below unrecognized words), you can use the __IsSpellCheckingEnabled__ property on __RadRichTextEditor__. When the property is *false*, no dictionaries are loaded and no overhead is incurred for spell checking.        
+To enable or disable the spell checking functionality (present as red wavy underlines below unrecognized words), you can use the __IsSpellCheckingEnabled__ property on __RadRichTextEditor__. When the property is *false*, no dictionaries are loaded and no overhead is incurred for spell checking.    
+    
+>caption Figure 1: Spell checking as you type
+
+![richtexteditor-features-spellcheck 001](images/richtexteditor-features-spellcheck001.png)
 
 You can customize the spell checker by using the __SpellChecker__ property of __RadRichTextEditor__. It’s of type __ISpellChecker__. By default, an object of type **DocumentSpellChecker** that implements the interface, is used for this property. You can either use it or provide your custom class that implements the __ISpellChecker__ interface.
+
+When you right click a misspelled word, the context menu gives you the opportunity to open a **SpellCheckingDialog**. Thus, the user can correct the word, add it to the dictionary or ignore it.
+
+>note Since R2 2017 SP the SpellCheckingDialog allows the user to enter some custom text by using a RadTextBox if no appropriate word exist in the offered list.
+
+>caption Figure 2: Spell checking dialog
+
+![richtexteditor-features-spellcheck 002](images/richtexteditor-features-spellcheck002.png)
 
 >note __RadRichTextEditor__ can also be configured to be used with a spell-checker using an OpenOffice dictionary and the NHunspell library: [RadRichTextEditor OpenOffice Spell Checking](http://www.telerik.com/support/code-library/radrichtexteditor-openoffice-spell-checking).
 >        
