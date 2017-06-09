@@ -48,7 +48,7 @@ Me.radMap1.Providers.Add(bingProvider)
 
 {{endregion}} 
 
->note If you use __RadMap__ with .Net Framework 2.0 and you don't have an installation of the Telerik UI for for WinForms suite on the current machine, it is necessary to add a reference to the Newtonsoft.Json assembly which can be found in the \Bin folder of the *Telerik_UI_For_WinForms_[version]_Dev_dlls.zip*. If you are using .Net Framework 4.0 this is not requried.
+>note If you use __RadMap__ with .Net Framework 2.0 and you don't have an installation of the Telerik UI for for WinForms suite on the current machine, it is necessary to add a reference to the Newtonsoft.Json assembly which can be found in the \Bin folder of the *Telerik_UI_For_WinForms_[version]_Dev_dlls.zip*. If you are using .Net Framework 4.0 this is not required.
 
 # Properties
 
@@ -57,7 +57,7 @@ Me.radMap1.Providers.Add(bingProvider)
 |__BingKey__|Gets or sets the Bing key.|
 |__UseSession__|Gets or sets a value indicating whether to use session key.|
 |__SessionId__|Gets the session identifier.|
-|__ImagerySet__|Gets or sets the imagery set.|
+|__ImagerySet__|Gets or sets the imagery set. The possible values are: *Aerial*, *AerialWithLabels*, *Road*, *CanvasDark*, *CanvasLight*, *CanvasGray*.|
 |__Initializing__|Gets or sets a value indicating whether this __BingRestMapProvider__ is currently in the initialization process.|
 |__Initialized__|Gets or sets a value indicating whether this __BingRestMapProvider__ is initialized.|
 |__MaxZoomLevel__|Gets or sets the maximum zoom level.|
