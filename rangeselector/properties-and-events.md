@@ -216,6 +216,73 @@ End Sub
 
 {{endregion}}
 
+# Custom Rendering
+
+**RadRangeSelector** can also be setup to use a custom renderer just as the stand-alone **RadChartView** control. In order to utilize this feature, one needs to subscribe to the **CreateRenderer** event of the **RangeSelectorViewElement** instance.
+
+>caption Figure 3: Custom Rendering
+![rangeselector-properties-and-events 003](images/rangeselector-properties-and-events003.gif)
+
+{{source=..\SamplesCS\RangeSelector\RadRangeSelectorCustomRenderer.cs region=CustomRendering}} 
+{{source=..\SamplesVB\RangeSelector\RadRangeSelectorCustomRenderer.vb region=CustomRendering}}
+````C#
+public RadRangeSelectorCustomRenderer()
+{
+    InitializeComponent();
+    this.radChartView1.CreateRenderer += OnCreateRenderer;
+    this.radChartView1.ShowPanZoom = true;
+    LineSeries series = new LineSeries();
+    Random rnd = new Random();
+    for (int i = 0; i < 30; i++)
+    {
+        series.DataPoints.Add(new CategoricalDataPoint(rnd.Next(0, 30), DateTime.Now.AddDays(i)));
+    }
+    this.radChartView1.Series.Add(series);
+    series.VerticalAxis.LabelFormat = "{0}°";
+    series.HorizontalAxis.LabelFormat = "{0:M}";
+    series.HorizontalAxis.LabelFitMode = AxisLabelFitMode.MultiLine;
+    this.radChartView1.ShowGrid = true;
+    this.radRangeSelector1.AssociatedControl = this.radChartView1;
+    RangeSelectorViewElement chartElement = this.radRangeSelector1.RangeSelectorElement.AssociatedElement as RangeSelectorViewElement;
+    chartElement.CreateRenderer += OnCreateRenderer;
+}
+private void OnCreateRenderer(object sender, ChartViewCreateRendererEventArgs e)
+{
+    e.Renderer = new CustomCartesianRenderer((CartesianArea)e.Area);
+}
+
+````
+````VB.NET
+Public Sub New()
+    InitializeComponent()
+    AddHandler Me.radChartView1.CreateRenderer, AddressOf OnCreateRenderer
+    Me.radChartView1.ShowPanZoom = True
+    Dim series As New LineSeries()
+    Dim rnd As New Random()
+    For i As Integer = 0 To 29
+        series.DataPoints.Add(New CategoricalDataPoint(rnd.[Next](0, 30), DateTime.Now.AddDays(i)))
+    Next
+    Me.radChartView1.Series.Add(series)
+    series.VerticalAxis.LabelFormat = "{0}°"
+    series.HorizontalAxis.LabelFormat = "{0:M}"
+    series.HorizontalAxis.LabelFitMode = AxisLabelFitMode.MultiLine
+    Me.radChartView1.ShowGrid = True
+    Me.radRangeSelector1.AssociatedControl = Me.radChartView1
+    Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
+    AddHandler chartElement.CreateRenderer, AddressOf OnCreateRenderer
+End Sub
+Private Sub OnCreateRenderer(sender As Object, e As ChartViewCreateRendererEventArgs)
+    e.Renderer = New CustomCartesianRenderer(DirectCast(e.Area, CartesianArea))
+End Sub
+
+```` 
+
+
+
+{{endregion}}
+
+>note The example above is using the the custom implementation as suggested [here]({%slug winforms/chartview-/customization/custom-rendering%}).
+
 ## See Also
 
 * [Design Time]({%slug winforms/rangeselector/design-time%})
