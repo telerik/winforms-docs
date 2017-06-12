@@ -159,7 +159,7 @@ As a result, when the end-user clicks the new row, the following values will be 
 
 ### Adding with default values only
 
-It is possible to add default values in all of the fields. However by default you cannot add the row if no cells are changed. This can achieved by setting the __AddWithDefaultValues__ property. The following code snippet demonstrates how you can access and set this property:
+It is possible to add default values in all of the fields. However, by default you cannot add the row if no cells are changed. This can be achieved by setting the __AddWithDefaultValues__ property. The following code snippet demonstrates how you can access and set this property:
 
 {{source=..\SamplesCS\GridView\Rows\NewRow.cs region=AddOnlyDefault}} 
 {{source=..\SamplesVB\GridView\Rows\NewRow.vb region=AddOnlyDefault}}

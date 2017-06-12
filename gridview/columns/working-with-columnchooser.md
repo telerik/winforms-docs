@@ -93,7 +93,7 @@ RadGridView1.ColumnChooser.Font = New Font("Segoe", 15, FontStyle.Bold)
 
 ### Enable the filtering functionality
 
-If the grid contains many hidden columns it is convenient to filter them so you can easily find the desired column. This is supported out of the box and can be enabled by setting the EnableFilter property in the ColumnChooserCreated event handler.
+If the grid contains many hidden columns it is convenient to filter them so you can easily find the desired column. This is supported out of the box and can be enabled by setting the **EnableFilter** property to *true* in the **ColumnChooserCreated** event handler.
 
 #### Enabling Filtering
 
