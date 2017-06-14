@@ -25,6 +25,8 @@ The copying functionality in __RadGridView__ is controlled via the __ClipboardCo
 
 Copying is a pretty simple operation. After cell/row is selected, right click over the data cell/row opens a context menu where the copy option exists. After selecting it, you can paste the content anywhere you need to (in Notepad or Excel for example).
 
+>important Since **R1 2017** when you press `Ctrl+C` **RadGridView** copies the selected data considering the **SelectionMode**. If the **SelectionMode** property is set to *FullRowSelect*, pressing `Ctrl+C` will copy the entire row. If it is set to *CellSelect* only the selected cell will be copied when pressing `Ctrl+C`. Note that you can still copy just a single cell when the **SelectionMode** is set to *FullRowSelect*. It is necessary to select the desired cell and right click to open the context menu where you have "Copy" option.
+
 >caption Figure 1: Copy rows from RadGridView.
 
 ![gridview-copy-paste 001](images/gridview-copy-paste001.gif)
