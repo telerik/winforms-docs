@@ -44,61 +44,13 @@ public class PlatformInfoProvider : IPlatformInfoProvider
 Public Class PlatformInfoProvider
     Implements IPlatformInfoProvider
     Public Property AnonymousClientId() As String Implements IPlatformInfoProvider.AnonymousClientId
-        Get
-            Return m_AnonymousClientId
-        End Get
-        Set
-            m_AnonymousClientId = Value
-        End Set
-    End Property
-    Private m_AnonymousClientId As String
-    Public Property ScreenColors() As System.Nullable(Of Integer) Implements IPlatformInfoProvider.ScreenColors
-        Get
-            Return m_ScreenColors
-        End Get
-        Set
-            m_ScreenColors = Value
-        End Set
-    End Property
-    Private m_ScreenColors As System.Nullable(Of Integer)
+    Public Property ScreenColors() As Integer? Implements IPlatformInfoProvider.ScreenColors
     Public Property ScreenResolution() As Dimensions
-        Get
-            Return m_ScreenResolution
-        End Get
-        Set
-            m_ScreenResolution = Value
-        End Set
-    End Property
-    Private m_ScreenResolution As Dimensions
     Public Property UserAgent() As String Implements IPlatformInfoProvider.UserAgent
-        Get
-            Return m_UserAgent
-        End Get
-        Set
-            m_UserAgent = Value
-        End Set
-    End Property
-    Private m_UserAgent As String
     Public Property UserLanguage() As String Implements IPlatformInfoProvider.UserLanguage
-        Get
-            Return m_UserLanguage
-        End Get
-        Set
-            m_UserLanguage = Value
-        End Set
-    End Property
-    Private m_UserLanguage As String
     Public Property ViewPortResolution() As Dimensions
-        Get
-            Return m_ViewPortResolution
-        End Get
-        Set
-            m_ViewPortResolution = Value
-        End Set
-    End Property
-    Private m_ViewPortResolution As Dimensions
-    Private ReadOnly Property IPlatformInfoProvider_ScreenResolution() As System.Nullable(Of Dimensions) Implements IPlatformInfoProvider.ScreenResolution
-    Private ReadOnly Property IPlatformInfoProvider_ViewPortResolution() As System.Nullable(Of Dimensions) Implements IPlatformInfoProvider.ViewPortResolution
+    Private ReadOnly Property IPlatformInfoProvider_ScreenResolution() As Dimensions? Implements IPlatformInfoProvider.ScreenResolution
+    Private ReadOnly Property IPlatformInfoProvider_ViewPortResolution() As Dimensions? Implements IPlatformInfoProvider.ViewPortResolution
     Public Event ScreenResolutionChanged As EventHandler Implements IPlatformInfoProvider.ScreenResolutionChanged
     Public Event ViewPortResolutionChanged As EventHandler Implements IPlatformInfoProvider.ViewPortResolutionChanged
     Public Sub OnTracking() Implements IPlatformInfoProvider.OnTracking
