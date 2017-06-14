@@ -21,7 +21,7 @@ This article demonstrates a simple implementation according to the API provided 
 {{source=..\SamplesCS\Analytics\AnalyticsForm.cs region=IPlatformInfoProviderImplementation}} 
 {{source=..\SamplesVB\Analytics\AnalyticsForm.vb region=IPlatformInfoProviderImplementation}}
 ````C#
-internal class PlatformInfoProvider : IPlatformInfoProvider
+public class PlatformInfoProvider : IPlatformInfoProvider
 {
     public string AnonymousClientId { get; set; }
     public int? ScreenColors { get; set; }
@@ -41,7 +41,7 @@ internal class PlatformInfoProvider : IPlatformInfoProvider
 
 ````
 ````VB.NET
-Friend Class PlatformInfoProvider
+Public Class PlatformInfoProvider
     Implements IPlatformInfoProvider
     Public Property AnonymousClientId() As String Implements IPlatformInfoProvider.AnonymousClientId
         Get
