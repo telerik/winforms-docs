@@ -14,6 +14,9 @@ navigation:
     installation-deployment-and-distribution:
         title: Installation, Deployment and Distribution
         position: 40
+    analytics:
+        title: Analytics
+        position: 45
     installation-deployment-and-distribution/visual-studio-extensions:
         title: Visual Studio Extensions
         position: 6
