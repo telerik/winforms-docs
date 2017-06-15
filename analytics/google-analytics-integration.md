@@ -23,19 +23,98 @@ This article demonstrates a simple implementation according to the API provided 
 ````C#
 public class PlatformInfoProvider : IPlatformInfoProvider
 {
-    public string AnonymousClientId { get; set; }
-    public int? ScreenColors { get; set; }
-    public Dimensions ScreenResolution { get; set; }
-    public string UserAgent { get; set; }
-    public string UserLanguage { get; set; }
-    public Dimensions ViewPortResolution { get; set; }
-    Dimensions? IPlatformInfoProvider.ScreenResolution { get; }
-    Dimensions? IPlatformInfoProvider.ViewPortResolution { get; }
+    private string anonymousClientId;
+    private int? screenColors;
+    private Dimensions? screenResolution;
+    private string userAgent;
+    private string userLanguage;
+    private Dimensions? viewPortResolution;
+    public PlatformInfoProvider()
+    {
+        InitializeWindow();
+    }
+    public string AnonymousClientId
+    {
+        get
+        {
+            return this.anonymousClientId;
+        }
+        private set
+        {
+            this.anonymousClientId = value;
+        }
+    }
+    public int? ScreenColors
+    {
+        get
+        {
+            return this.screenColors;
+        }
+        private set
+        {
+            this.screenColors = value;
+        }
+    }
+    public Dimensions? ScreenResolution
+    {
+        get
+        {
+            return this.screenResolution;
+        }
+        private set
+        {
+            this.screenResolution = value;
+            if (ScreenResolutionChanged != null)
+            {
+                ScreenResolutionChanged(this, EventArgs.Empty);
+            }
+        }
+    }
+    public string UserAgent
+    {
+        get
+        {
+            return this.userAgent;
+        }
+        private set
+        {
+            this.userAgent = value;
+        }
+    }
+    public string UserLanguage
+    {
+        get
+        {
+            return this.userLanguage;
+        }
+        private set
+        {
+            this.userLanguage = value;
+        }
+    }
+    public Dimensions? ViewPortResolution
+    {
+        get { return this.viewPortResolution; }
+        private set
+        {
+            this.viewPortResolution = value;
+            if (ViewPortResolutionChanged != null)
+            {
+                ViewPortResolutionChanged(this, EventArgs.Empty);
+            }
+        }
+    }
     public event EventHandler ScreenResolutionChanged;
     public event EventHandler ViewPortResolutionChanged;
     public void OnTracking()
+    { }
+    private void InitializeWindow()
     {
-        throw new NotImplementedException();
+        this.AnonymousClientId = "b597d28a-0d6c-42ed-9dcb-f89e98006b37"; // Random UUID
+        this.ScreenResolution = new Dimensions(1920, 1080);
+        this.UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko";
+        this.UserLanguage = "en-us";
+        this.ViewPortResolution = new Dimensions(1920, 1080);
     }
 }
 
@@ -43,18 +122,56 @@ public class PlatformInfoProvider : IPlatformInfoProvider
 ````VB.NET
 Public Class PlatformInfoProvider
     Implements IPlatformInfoProvider
-    Public Property AnonymousClientId() As String Implements IPlatformInfoProvider.AnonymousClientId
-    Public Property ScreenColors() As Integer? Implements IPlatformInfoProvider.ScreenColors
-    Public Property ScreenResolution() As Dimensions
-    Public Property UserAgent() As String Implements IPlatformInfoProvider.UserAgent
-    Public Property UserLanguage() As String Implements IPlatformInfoProvider.UserLanguage
-    Public Property ViewPortResolution() As Dimensions
-    Private ReadOnly Property IPlatformInfoProvider_ScreenResolution() As Dimensions? Implements IPlatformInfoProvider.ScreenResolution
-    Private ReadOnly Property IPlatformInfoProvider_ViewPortResolution() As Dimensions? Implements IPlatformInfoProvider.ViewPortResolution
+    Private m_anonymousClientId As String
+    Private m_screenColors As System.Nullable(Of Integer)
+    Private m_screenResolution As System.Nullable(Of Dimensions)
+    Private m_userAgent As String
+    Private m_userLanguage As String
+    Private m_viewPortResolution As System.Nullable(Of Dimensions)
+    Public Sub New()
+        InitializeWindow()
+    End Sub
+    Public ReadOnly Property AnonymousClientId() As String Implements IPlatformInfoProvider.AnonymousClientId
+        Get
+            Return Me.m_anonymousClientId
+        End Get
+    End Property
+    Public ReadOnly Property ScreenColors() As System.Nullable(Of Integer) Implements IPlatformInfoProvider.ScreenColors
+        Get
+            Return Me.m_screenColors
+        End Get
+    End Property
+    Public ReadOnly Property ScreenResolution() As System.Nullable(Of Dimensions) Implements IPlatformInfoProvider.ScreenResolution
+        Get
+            Return Me.m_screenResolution
+        End Get
+    End Property
+    Public ReadOnly Property UserAgent() As String Implements IPlatformInfoProvider.UserAgent
+        Get
+            Return Me.m_userAgent
+        End Get
+    End Property
+    Public ReadOnly Property UserLanguage() As String Implements IPlatformInfoProvider.UserLanguage
+        Get
+            Return Me.m_userLanguage
+        End Get
+    End Property
+    Public ReadOnly Property ViewPortResolution() As System.Nullable(Of Dimensions) Implements IPlatformInfoProvider.ViewPortResolution
+        Get
+            Return Me.m_viewPortResolution
+        End Get
+    End Property
     Public Event ScreenResolutionChanged As EventHandler Implements IPlatformInfoProvider.ScreenResolutionChanged
     Public Event ViewPortResolutionChanged As EventHandler Implements IPlatformInfoProvider.ViewPortResolutionChanged
     Public Sub OnTracking() Implements IPlatformInfoProvider.OnTracking
-        Throw New NotImplementedException()
+    End Sub
+    Private Sub InitializeWindow()
+        Me.m_anonymousClientId = "b597d28a-0d6c-42ed-9dcb-f89e98006b37"
+        ' Random UUID
+        Me.m_screenResolution = New Dimensions(1920, 1080)
+        Me.m_userAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko"
+        Me.m_userLanguage = "en-us"
+        Me.m_viewPortResolution = New Dimensions(1920, 1080)
     End Sub
 End Class
 
@@ -80,22 +197,12 @@ public class CustomAnalitycsMonitor : ITraceMonitor
     }
     public void CreateGoogleTracker()
     {
-        var trackerManager = new TrackerManager(new PlatformInfoProvider()
-        {
-            AnonymousClientId = "b597d28a-0d6c-42ed-9dcb-f89e98006b37", // Random UUID
-            ScreenResolution = new Dimensions(1920, 1080),
-            UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
-            UserLanguage = "en-us",
-            ViewPortResolution = new Dimensions(1920, 1080)
-        });
+        var trackerManager = new TrackerManager(new PlatformInfoProvider());
         tracker = trackerManager.CreateTracker("YOUR_PROPERTY_ID"); // your GoogleAnalytics property ID goes here
-        tracker.AppName = "Winforms App";
+        tracker.AppName = "WinForms App";
     }
     public void TrackAtomicFeature(string feature)
     {
-        // The value of the "feature" string consists of the whole name of the tracked feature,
-        // for example : "MyGridView.Sorted.Name.Ascending", if we have performed a sorting operation in RadGridView.
-        // So, we can split this string in order to pass friendlier names to the parameters of the CreateCustomEvent method which will be used in your reports.
         string category;
         string eventAction;
         this.SplitFeatureName(feature, out category, out eventAction);
@@ -155,21 +262,12 @@ Public Class CustomAnalitycsMonitor
     End Sub
     Public Sub CreateGoogleTracker()
         ' Random UUID
-        Dim trackerManager = New TrackerManager(New PlatformInfoProvider() With {
-            .AnonymousClientId = "b597d28a-0d6c-42ed-9dcb-f89e98006b37",
-            .ScreenResolution = New Dimensions(1920, 1080),
-            .UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
-            .UserLanguage = "en-us",
-            .ViewPortResolution = New Dimensions(1920, 1080)
-        })
+        Dim trackerManager = New TrackerManager(New PlatformInfoProvider())
         tracker = trackerManager.CreateTracker("YOUR_PROPERTY_ID")
         ' your GoogleAnalytics property ID goes here
-        tracker.AppName = "Winforms App"
+        tracker.AppName = "WinForms App"
     End Sub
     Public Sub TrackAtomicFeature(feature As String) Implements ITraceMonitor.TrackAtomicFeature
-        ' The value of the "feature" string consists of the whole name of the tracked feature,
-        ' for example : "MyGridView.Sorted.Name.Ascending", if we have performed a sorting operation in RadGridView.
-        ' So, we can split this string in order to pass friendlier names to the parameters of the CreateCustomEvent method which will be used in your reports.
         Dim category As String
         Dim eventAction As String
         Me.SplitFeatureName(feature, category, eventAction)
