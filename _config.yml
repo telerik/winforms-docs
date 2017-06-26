@@ -969,6 +969,9 @@ navigation:
     scheduler/views:
         title: Views
         position: 4
+    scheduler/dialogs:
+        title: Dialogs
+        position: 4
     scheduler/appointments-and-dialogs:
         title: Appointments and dialogs
         position: 5
