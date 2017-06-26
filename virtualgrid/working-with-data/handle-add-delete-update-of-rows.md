@@ -17,7 +17,46 @@ When the user adds new rows, updates or deletes the existing ones, the external 
 #### Push value to the data source
 
 {{source=..\SamplesCS\VirtualGrid\VirtualGridPopulatingWithData.cs region=PushValue}} 
-{{source=..\SamplesVB\VirtualGrid\VirtualGridPopulatingWithData.vb region=PushValue}} 
+{{source=..\SamplesVB\VirtualGrid\VirtualGridPopulatingWithData.vb region=PushValue}}
+````C#
+    
+private void radVirtualGrid1_CellValuePushed(object sender, VirtualGridCellValuePushedEventArgs e)
+{
+    this.UpdateCellValue(data[e.RowIndex].CustomerId, columnNames[e.ColumnIndex], Convert.ToString(e.Value));
+}
+    
+private void UpdateCellValue(string id, string columnName, string value)
+{
+    using (System.Data.OleDb.OleDbCommand command = new System.Data.OleDb.OleDbCommand(@"UPDATE Customers SET " + columnName + " = ? WHERE CustomerID = ?"))
+    {
+        command.Parameters.Add(new System.Data.OleDb.OleDbParameter("@columnValue", value));
+        command.Parameters.Add(new System.Data.OleDb.OleDbParameter("@customerId", id));
+        command.Connection = new System.Data.OleDb.OleDbConnection(connectionString);
+        command.Connection.Open();
+        command.ExecuteNonQuery();
+        command.Connection.Close();
+    }
+    SelectData();
+}
+
+````
+````VB.NET
+Private Sub radVirtualGrid1_CellValuePushed(sender As Object, e As VirtualGridCellValuePushedEventArgs)
+    Me.UpdateCellValue(data(e.RowIndex).CustomerId, columnNames(e.ColumnIndex), Convert.ToString(e.Value))
+End Sub
+Private Sub UpdateCellValue(id As String, columnName As String, value As String)
+    Using command As New System.Data.OleDb.OleDbCommand((Convert.ToString("UPDATE Customers SET ") & columnName) + " = ? WHERE CustomerID = ?")
+        command.Parameters.Add(New System.Data.OleDb.OleDbParameter("@columnValue", value))
+        command.Parameters.Add(New System.Data.OleDb.OleDbParameter("@customerId", id))
+        command.Connection = New System.Data.OleDb.OleDbConnection(connectionString)
+        command.Connection.Open()
+        command.ExecuteNonQuery()
+        command.Connection.Close()
+    End Using
+    SelectData()
+End Sub
+
+```` 
 
 
 
