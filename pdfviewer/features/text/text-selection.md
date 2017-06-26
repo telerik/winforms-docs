@@ -74,18 +74,18 @@ Their names show clearly the action they execute.Here is an example showing how 
 
 ````C#
             
-Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition start = new Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document.CaretPosition);
+Telerik.Windows.Documents.Fixed.Text.TextPosition start = new Telerik.Windows.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document.CaretPosition);
 start.MoveToCurrentWordStart();
-Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition end = new Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document.CaretPosition);
+Telerik.Windows.Documents.Fixed.Text.TextPosition end = new Telerik.Windows.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document.CaretPosition);
 end.MoveToCurrentWordEnd();
 this.radPdfViewer1.Document.Selection.SetSelection(start, end);
 RadMessageBox.Show(this.radPdfViewer1.Document.Selection.GetSelectedText());
 
 ````
 ````VB.NET
-Dim start As New Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(Me.RadPdfViewer1.Document.CaretPosition)
+Dim start As New Telerik.Windows.Documents.Fixed.Text.TextPosition(Me.RadPdfViewer1.Document.CaretPosition)
 start.MoveToCurrentWordStart()
-Dim [end] As New Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(Me.RadPdfViewer1.Document.CaretPosition)
+Dim [end] As New Telerik.Windows.Documents.Fixed.Text.TextPosition(Me.RadPdfViewer1.Document.CaretPosition)
 [end].MoveToCurrentWordEnd()
 Me.RadPdfViewer1.Document.Selection.SetSelection(start, [end])
 RadMessageBox.Show(Me.RadPdfViewer1.Document.Selection.GetSelectedText())
@@ -114,8 +114,8 @@ private void buttonDeselectAll_Click(object sender, EventArgs e)
 }
 private void buttonSelect_Click(object sender, EventArgs e)
 {
-    Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition startPosition = new Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document);
-    Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition endPosition = new Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document);
+    Telerik.Windows.Documents.Fixed.Text.TextPosition startPosition = new Telerik.Windows.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document);
+    Telerik.Windows.Documents.Fixed.Text.TextPosition endPosition = new Telerik.Windows.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document);
     startPosition.MoveToLineStart();
     endPosition.MoveToLineEnd();
     //Select the first line in the document
@@ -131,8 +131,8 @@ Private Sub buttonDeselectAll_Click(sender As Object, e As EventArgs) Handles bu
     Me.radPdfViewer1.PdfViewerElement.DeselectAll()
 End Sub
 Private Sub buttonSelect_Click(sender As Object, e As EventArgs) Handles buttonSelect.Click
-    Dim startPosition As New Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
-    Dim endPosition As New Telerik.Windows.Pdf.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
+    Dim startPosition As New Telerik.Windows.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
+    Dim endPosition As New Telerik.Windows.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
     startPosition.MoveToLineStart()
     endPosition.MoveToLineEnd()
     'Select the first line in the document
@@ -192,7 +192,7 @@ The __Find__ and __FindPrevious__ methods are used to perform text search forwar
 ````C#
 private void buttonFindNext_Click(object sender, EventArgs e)
 {
-    Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult res;
+    Telerik.Windows.Documents.Fixed.Search.SearchResult res;
     if (this.checkSearchBackwards.IsChecked)
     {
         res = this.radPdfViewer1.PdfViewerElement.FindPrevious("WinForms");
@@ -201,7 +201,7 @@ private void buttonFindNext_Click(object sender, EventArgs e)
     {
         res = this.radPdfViewer1.PdfViewerElement.Find("WinForms");
     }
-    if (res == Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult.NotFound)
+    if (res == Telerik.Windows.Documents.Fixed.Search.SearchResult.NotFound)
     {
         RadMessageBox.Show("String not found");
     }
@@ -214,13 +214,13 @@ private void buttonFindNext_Click(object sender, EventArgs e)
 ````
 ````VB.NET
 Private Sub buttonFindNext_Click(sender As Object, e As EventArgs) Handles buttonFindNext.Click
-    Dim res As Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult
+    Dim res As Telerik.Windows.Documents.Fixed.Search.SearchResult
     If Me.checkSearchBackwards.IsChecked Then
         res = Me.radPdfViewer1.PdfViewerElement.FindPrevious("WinForms")
     Else
         res = Me.radPdfViewer1.PdfViewerElement.Find("WinForms")
     End If
-    If res Is Telerik.Windows.Pdf.Documents.Fixed.Search.SearchResult.NotFound Then
+    If res Is Telerik.Windows.Documents.Fixed.Search.SearchResult.NotFound Then
         RadMessageBox.Show("String not found")
     Else
         RadMessageBox.Show("Result found on page " & res.Range.StartPosition.Page.PageNo)

@@ -58,7 +58,7 @@ Inheriting from __IPdfFilter__ will result in the following:
 
 ````C#
         
-public class CustomFilter : Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.Pdf.Filters.IPdfFilter
+public class CustomFilter : Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Filters.IPdfFilter
 {
     public byte[] Encode(PdfObject encodedObject, byte[] inputData)
     {
@@ -82,7 +82,7 @@ public class CustomFilter : Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.
 ````
 ````VB.NET
 Public Class CustomFilter
-    Implements Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.Pdf.Filters.IPdfFilter
+    Implements Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Filters.IPdfFilter
     Public Function Encode(encodedObject As PdfObject, inputData As Byte()) As Byte() Implements IPdfFilter.Encode
         ' TODO: Implement this method
         Throw New NotImplementedException()
@@ -120,7 +120,7 @@ public PdfDecoder()
     InitializeComponent();
     
     _filter = new CustomFilter();
-    Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.Old.Pdf.Filters.FiltersManager.RegisterFilter(_filter);
+    FiltersManager.RegisterFilter(_filter );
 }
 
 ````
@@ -129,7 +129,7 @@ Private _filter As CustomFilter
 Public Sub New()
     InitializeComponent()
     _filter = New CustomFilter()
-    Telerik.Windows.Pdf.Documents.Fixed.FormatProviders.Old.Pdf.Filters.FiltersManager.RegisterFilter(_filter)
+    FiltersManager.RegisterFilter(_filter)
 End Sub
 
 ````

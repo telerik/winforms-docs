@@ -38,6 +38,7 @@ As a derivative of **RadSchedulerDialog** which inherits **RadForm**, the **Show
 {{source=..\SamplesVB\Scheduler\Dialogs\CustomEditForm.vb region=CustomEditDialog}}    
        
 ````C#
+    
 public partial class CustomEditForm : RadSchedulerDialog, IEditAppointmentDialog
 {
     public CustomEditForm()
@@ -209,48 +210,39 @@ Public Class CustomEditForm
     Sub New()
         InitializeComponent()
     End Sub
-
     Private editOccurrence As Boolean = False
     Private openRecurringAppointmentDialog As IOpenRecurringAppointmentDialog = Nothing
     Private appointment As IEvent
     Private schedulerData As ISchedulerData
     Private recurringAppointment As IEvent
     Public Event Shown As EventHandler Implements IEditAppointmentDialog.Shown
-
     Private saveRecurringAppointment As Boolean = False
-
     Public Function EditAppointment(appointment As Telerik.WinControls.UI.IEvent, schedulerData As Telerik.WinControls.UI.ISchedulerData) As Boolean _
         Implements IEditAppointmentDialog.EditAppointment
         Me.editOccurrence = False
         Me.schedulerData = schedulerData
         Me.appointment = appointment
-
         If appointment IsNot Nothing AndAlso appointment.MasterEvent IsNot Nothing Then
             If Me.openRecurringAppointmentDialog Is Nothing Then
                 Me.openRecurringAppointmentDialog = New OpenRecurringAppointmentDialog()
             End If
             Me.openRecurringAppointmentDialog.ThemeName = Me.ThemeName
             Me.openRecurringAppointmentDialog.EventName = appointment.Summary
-
             Dim result As DialogResult = Me.openRecurringAppointmentDialog.ShowDialog()
             If result <> DialogResult.OK Then
                 Return False
             End If
-
             Me.editOccurrence = Me.openRecurringAppointmentDialog.EditOccurrence
             If Not Me.editOccurrence Then
                 'if you edit the entire series, modify the master event, not the occurence
                 Me.appointment = appointment.MasterEvent
             End If
         End If
-
         Return True
     End Function
-
     Private Function RecurrenceSettingsShouldBeSaved() As Boolean
         Return Me.saveRecurringAppointment AndAlso Me.recurringAppointment IsNot Nothing
     End Function
-
     Protected Overrides Sub OnLoad(e As EventArgs)
         MyBase.OnLoad(e)
         'load the data to the respective controls
@@ -262,25 +254,20 @@ Public Class CustomEditForm
         Me.timeEnd.Value = appointment.[End]
         Me.summaryTextBox.Text = Me.appointment.Summary
     End Sub
-
     Public Sub ShowRecurrenceDialog() Implements IEditAppointmentDialog.ShowRecurrenceDialog
         Dim scheduler As RadScheduler = TryCast(Me.schedulerData, RadScheduler)
         If Me.recurringAppointment Is Nothing Then
             Me.recurringAppointment = If(scheduler IsNot Nothing, scheduler.AppointmentFactory.CreateNewAppointment(), New Appointment())
         End If
-
         Dim targetEventStart As DateTime = Me.GetAppointmentStart()
         Dim targetEventEnd As DateTime = Me.GetAppointmentEnd()
-
         If scheduler IsNot Nothing Then
             targetEventStart = scheduler.SystemTimeZone.OffsetTime(targetEventStart, scheduler.ActiveView.DefaultTimeZone)
             targetEventEnd = scheduler.SystemTimeZone.OffsetTime(targetEventEnd, scheduler.ActiveView.DefaultTimeZone)
         End If
-
         Me.recurringAppointment.Start = targetEventStart
         Me.recurringAppointment.[End] = targetEventEnd
         Me.recurringAppointment.AllDay = Me.appointment.AllDay
-
         If Not Me.RecurrenceSettingsShouldBeSaved() AndAlso Me.appointment.RecurrenceRule IsNot Nothing Then
             Me.recurringAppointment.RecurrenceRule = Me.appointment.RecurrenceRule.Clone()
         End If
@@ -296,33 +283,26 @@ Public Class CustomEditForm
             End If
         End If
     End Sub
-
     Public Function ShowDialog() As DialogResult Implements IEditAppointmentDialog.ShowDialog
         Return MyBase.ShowDialog()
     End Function
-
     Private Function GetAppointmentStart() As DateTime
         Dim startDate As DateTime = Me.dateStart.Value.[Date]
-
         If Not (Me.appointment.AllDay) Then
             Dim startTime As TimeSpan = Me.timeStart.Value.Value.TimeOfDay
             startDate = startDate.Add(startTime)
         End If
-
         Return startDate
     End Function
-
     Private Function GetAppointmentEnd() As DateTime
         Dim endDate As DateTime = Me.dateEnd.Value.[Date]
         Dim endTime As TimeSpan = If(Not Me.appointment.AllDay, Me.timeEnd.Value.Value.TimeOfDay, TimeSpan.Zero)
         endDate = endDate.Add(endTime)
         Return endDate
     End Function
-
     Private Sub recurrenceButton_Click(sender As Object, e As EventArgs)
         Me.ShowRecurrenceDialog()
     End Sub
-
     Private Sub okButton_Click(sender As Object, e As EventArgs)
         If Me.RecurrenceSettingsShouldBeSaved() Then
             Me.appointment.RecurrenceRule = Me.recurringAppointment.RecurrenceRule
@@ -330,20 +310,17 @@ Public Class CustomEditForm
                 Me.appointment.Exceptions.Clear()
             End If
         End If
-
         If Me.editOccurrence Then
             If Me.appointment.MasterEvent IsNot Nothing Then
                 Me.appointment.MasterEvent.AddOccurrenceException(appointment, True)
             End If
         End If
-
         Me.appointment.Summary = Me.summaryTextBox.Text
         Me.appointment.Start = GetAppointmentStart()
         Me.appointment.[End] = GetAppointmentEnd()
         Me.DialogResult = DialogResult.OK
         Me.Close()
     End Sub
-
     Private Sub cancelButton_Click(sender As Object, e As EventArgs)
         Me.DialogResult = DialogResult.Cancel
         Me.Close()
@@ -359,8 +336,9 @@ Now, you can replace the default edit dialog with the custom one by using the Ra
 {{source=..\SamplesVB\Scheduler\Dialogs\SchedulerCustomDialogs.vb region=ReplaceDefaultDialog}}    
        
 ````C#
+        
 CustomEditForm editDialog = null;
-
+        
 private void radScheduler1_AppointmentEditDialogShowing(object sender, AppointmentEditDialogShowingEventArgs e)
 {
     if (editDialog == null)
@@ -373,7 +351,6 @@ private void radScheduler1_AppointmentEditDialogShowing(object sender, Appointme
 ````
 ````VB.NET
 Private editDialog As CustomEditForm = Nothing
-
 Private Sub radScheduler1_AppointmentEditDialogShowing(sender As Object, e As Telerik.WinControls.UI.AppointmentEditDialogShowingEventArgs)
     If editDialog Is Nothing Then
         editDialog = New CustomEditForm()
