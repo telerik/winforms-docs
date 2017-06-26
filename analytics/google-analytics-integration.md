@@ -12,7 +12,7 @@ position: 1
 
 If you wish to analyze the usage data of the application using **Google Analytics**, you can check the [Windows SDK for Google Analytics GitHub repository](https://github.com/dotnet/windows-sdk-for-google-analytics) and build the project located in **GoogleAnalytics.Core**. You then need to add a reference to the generated assembly (**GoogleAnalytics.Core.dll**) to your custom project.
 
->important The GoogleAnalytics.Core.dll assembly has a dependency against .NET Framework 4.5.1 which should be targeted in the client`s application.
+>important The GoogleAnalytics.Core.dll assembly has a dependency against .NET Framework 4.5.1 which should be targeted in the client`s application. 
 
 This article demonstrates a simple implementation according to the API provided by the Windows SDK for Google Analytics.
 
