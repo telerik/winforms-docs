@@ -243,12 +243,14 @@ Public MustInherit Class DataProviderSerializer
                 dataProvider.Settings.FilterDescriptions.Add(filterDescription)
             Next
             dataProvider.Settings.RowGroupDescriptions.Clear()
-            For Each rowDescription As OlapGroupDescription In TryCast(result, DataProviderSettings).Rows
-                dataProvider.Settings.RowGroupDescriptions.Add(rowDescription)
+            Dim rows = TryCast(result, DataProviderSettings).Rows
+            For index = 0 To rows.Count - 1
+                dataProvider.Settings.RowGroupDescriptions.Add(rows(index))
             Next
             dataProvider.Settings.ColumnGroupDescriptions.Clear()
-            For Each columnDescription As OlapGroupDescription In TryCast(result, DataProviderSettings).Columns
-                dataProvider.Settings.ColumnGroupDescriptions.Add(columnDescription)
+            Dim columns = TryCast(result, DataProviderSettings).Columns
+            For index = 0 To columns.Count - 1
+                dataProvider.Settings.ColumnGroupDescriptions.Add(columns(index))
             Next
             dataProvider.Settings.AggregatesPosition = TryCast(result, DataProviderSettings).AggregatesPosition
             dataProvider.Settings.AggregatesLevel = TryCast(result, DataProviderSettings).AggregatesLevel

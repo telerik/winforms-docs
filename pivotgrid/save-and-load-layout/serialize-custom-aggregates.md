@@ -246,12 +246,14 @@ Public MustInherit Class DataProviderSerializer
                 dataProvider.Settings.FilterDescriptions.Add(filterDescription)
             Next
             dataProvider.Settings.RowGroupDescriptions.Clear()
-            For Each rowDescription As OlapGroupDescription In TryCast(result, DataProviderSettings).Rows
-                dataProvider.Settings.RowGroupDescriptions.Add(rowDescription)
+            Dim rows = TryCast(result, DataProviderSettings).Rows
+            For index = 0 To rows.Count - 1
+                dataProvider.Settings.RowGroupDescriptions.Add(rows(index))
             Next
             dataProvider.Settings.ColumnGroupDescriptions.Clear()
-            For Each columnDescription As OlapGroupDescription In TryCast(result, DataProviderSettings).Columns
-                dataProvider.Settings.ColumnGroupDescriptions.Add(columnDescription)
+            Dim columns = TryCast(result, DataProviderSettings).Columns
+            For index = 0 To columns.Count - 1
+                dataProvider.Settings.ColumnGroupDescriptions.Add(columns(index))
             Next
             dataProvider.Settings.AggregatesPosition = TryCast(result, DataProviderSettings).AggregatesPosition
             dataProvider.Settings.AggregatesLevel = TryCast(result, DataProviderSettings).AggregatesLevel
@@ -289,7 +291,7 @@ public class LocalDataSourceSerializer : DataProviderSerializer
 ````VB.NET
 Public Class LocalDataSourceSerializer
     Inherits DataProviderSerializer
-    Private myKnownTypes As IEnumerable(Of Type) = PivotSerializationHelper.KnownTypes.Concat(Of Type)(New List(Of Type)() From {
+    Private myKnownTypes As IEnumerable(Of Type) = PivotSerializationHelper.KnownTypes.Concat(New List(Of Type)() From {
         GetType(SqrtSumAggregateFunction)
     })
     Public Overrides ReadOnly Property KnownTypes() As IEnumerable(Of Type)
