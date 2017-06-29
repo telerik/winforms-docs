@@ -1,0 +1,351 @@
+---
+title: Serialize Custom Aggregates
+page_title: Serialize Custom Aggregates | RadPivotGrid
+description: Serialize Custom Aggregates
+slug: winforms/pivotgrid/save-and-load-layout/serialize-custom-aggregates
+tags: save,and,load,layout,aggregates
+published: True
+position: 3
+---
+
+# Serialize Serialize Custom Aggregates
+
+**RadPivotGrid** can persist its layout together with the applied custom aggregations. In this example we will use the function defined in the [custom aggregation article]({%slug winforms/pivotgrid/custom-aggregation%}).
+
+>important The DataContractSerializer class requires the .NET 40 version of the assemblies. The suggested approach is also valid serializing when the custom aggregations functions with the other data providers.
+
+
+## Serialize LocalDataSourceProvider with DataContractSerializer
+
+We've added the DataContract attribute to all classes used by __LocalDataSourceProvider__. So you can easily serialize it by using a DataContractSerializer. Below you will find out how to create a serializer and use it with __RadPivotGrid__.
+
+#### Define Members
+
+{{source=..\SamplesCS\PivotGrid\PivotGridSerializeCubeDataProvider.cs region=DataProviderSettings}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridSerializeCubeDataProvider.vb region=DataProviderSettings}}
+````C#
+    
+[DataContract]
+public class DataProviderSettings
+{
+    [DataMember]
+    public object[] Aggregates { get; set; }
+    
+    [DataMember]
+    public object[] Filters { get; set; }
+    
+    [DataMember]
+    public object[] Rows { get; set; }
+    
+    [DataMember]
+    public object[] Columns { get; set; }
+    
+    [DataMember]
+    public int AggregatesLevel { get; set; }
+    [DataMember]
+    public PivotAxis AggregatesPosition { get; set; }
+}
+
+````
+````VB.NET
+<DataContract> _
+Public Class DataProviderSettings
+    <DataMember> _
+    Public Property Aggregates() As Object()
+        Get
+            Return m_Aggregates
+        End Get
+        Set(value As Object())
+            m_Aggregates = value
+        End Set
+    End Property
+    Private m_Aggregates As Object()
+    <DataMember> _
+    Public Property Filters() As Object()
+        Get
+            Return m_Filters
+        End Get
+        Set(value As Object())
+            m_Filters = value
+        End Set
+    End Property
+    Private m_Filters As Object()
+    <DataMember> _
+    Public Property Rows() As Object()
+        Get
+            Return m_Rows
+        End Get
+        Set(value As Object())
+            m_Rows = value
+        End Set
+    End Property
+    Private m_Rows As Object()
+    <DataMember> _
+    Public Property Columns() As Object()
+        Get
+            Return m_Columns
+        End Get
+        Set(value As Object())
+            m_Columns = value
+        End Set
+    End Property
+    Private m_Columns As Object()
+    <DataMember> _
+    Public Property AggregatesLevel() As Integer
+        Get
+            Return m_AggregatesLevel
+        End Get
+        Set(value As Integer)
+            m_AggregatesLevel = value
+        End Set
+    End Property
+    Private m_AggregatesLevel As Integer
+    <DataMember> _
+    Public Property AggregatesPosition() As PivotAxis
+        Get
+            Return m_AggregatesPosition
+        End Get
+        Set(value As PivotAxis)
+            m_AggregatesPosition = value
+        End Set
+    End Property
+    Private m_AggregatesPosition As PivotAxis
+End Class
+
+```` 
+
+
+
+{{endregion}}
+
+The next step is to implement the serializer. When serializing the provider, you have to create an instance of the __DataProviderSettings__ class and set all of the properties. After that you can serialize the instance to a file or a stream. When using __DataContractSerializer__ you have to pass a collection of *KnownTypes* to the serializer. That's why we've created a new __PivotSerializationHelper__ class which has a static member - __KnownTypes__. It consits of all types you'll need in order to serialize __LocalDataSourceProvider__. 
+
+#### Data Provider Implementation
+
+{{source=..\SamplesCS\PivotGrid\PivotGridSerializeCubeDataProvider.cs region=DataProviderSerializer}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridSerializeCubeDataProvider.vb region=DataProviderSerializer}}
+````C#
+    
+public abstract class DataProviderSerializer
+{
+    public abstract IEnumerable<Type> KnownTypes { get; }
+        
+    public string Serialize(object context)
+    {
+        string serialized = string.Empty;
+        IDataProvider dataProvider = context as IDataProvider;
+        if (dataProvider != null)
+        {
+            MemoryStream stream = new MemoryStream();
+                
+            DataProviderSettings settings = new DataProviderSettings()
+            {
+                Aggregates = dataProvider.Settings.AggregateDescriptions.OfType<object>().ToArray(),
+                Filters = dataProvider.Settings.FilterDescriptions.OfType<object>().ToArray(),
+                Rows = dataProvider.Settings.RowGroupDescriptions.OfType<object>().ToArray(),
+                Columns = dataProvider.Settings.ColumnGroupDescriptions.OfType<object>().ToArray(),
+                AggregatesLevel = dataProvider.Settings.AggregatesLevel,
+                AggregatesPosition = dataProvider.Settings.AggregatesPosition
+            };
+            
+            DataContractSerializer serializer = new DataContractSerializer(typeof(DataProviderSettings), KnownTypes);
+            serializer.WriteObject(stream, settings);
+            stream.Position = 0;
+            var streamReader = new StreamReader(stream);
+            serialized += streamReader.ReadToEnd();
+        }
+    
+        return serialized;
+    }
+        
+    public void Deserialize(object context, string savedValue)
+    {
+        IDataProvider dataProvider = context as IDataProvider;
+        if (dataProvider != null)
+        {
+            var stream = new MemoryStream();
+            var tw = new StreamWriter(stream);
+            tw.Write(savedValue);
+            tw.Flush();
+            stream.Position = 0;
+            
+            DataContractSerializer serializer = new DataContractSerializer(typeof(DataProviderSettings), KnownTypes);
+            var result = serializer.ReadObject(stream);
+            
+            dataProvider.Settings.AggregateDescriptions.Clear();
+            foreach (var aggregateDescription in (result as DataProviderSettings).Aggregates)
+            {
+                dataProvider.Settings.AggregateDescriptions.Add(aggregateDescription);
+            }
+            
+            dataProvider.Settings.FilterDescriptions.Clear();
+            foreach (var filterDescription in (result as DataProviderSettings).Filters)
+            {
+                dataProvider.Settings.FilterDescriptions.Add(filterDescription);
+            }
+            
+            dataProvider.Settings.RowGroupDescriptions.Clear();
+            foreach (var rowDescription in (result as DataProviderSettings).Rows)
+            {
+                dataProvider.Settings.RowGroupDescriptions.Add(rowDescription);
+            }
+            
+            dataProvider.Settings.ColumnGroupDescriptions.Clear();
+            foreach (var columnDescription in (result as DataProviderSettings).Columns)
+            {
+                dataProvider.Settings.ColumnGroupDescriptions.Add(columnDescription);
+            }
+    
+            dataProvider.Settings.AggregatesPosition = (result as DataProviderSettings).AggregatesPosition;
+            dataProvider.Settings.AggregatesLevel = (result as DataProviderSettings).AggregatesLevel;
+        }
+    }
+}
+
+````
+````VB.NET
+Public MustInherit Class DataProviderSerializer
+    Public MustOverride ReadOnly Property KnownTypes() As IEnumerable(Of Type)
+    Public Function Serialize(context As Object) As String
+        Dim serialized As String = String.Empty
+        Dim dataProvider As IDataProvider = TryCast(context, IDataProvider)
+        If dataProvider IsNot Nothing Then
+            Dim stream As New MemoryStream()
+            Dim settings As New DataProviderSettings() With {
+                 .Aggregates = dataProvider.Settings.AggregateDescriptions.OfType(Of Object)().ToArray(),
+                 .Filters = dataProvider.Settings.FilterDescriptions.OfType(Of Object)().ToArray(),
+                 .Rows = dataProvider.Settings.RowGroupDescriptions.OfType(Of Object)().ToArray(),
+                 .Columns = dataProvider.Settings.ColumnGroupDescriptions.OfType(Of Object)().ToArray(),
+                 .AggregatesLevel = dataProvider.Settings.AggregatesLevel,
+                 .AggregatesPosition = dataProvider.Settings.AggregatesPosition
+            }
+            Dim serializer As New DataContractSerializer(GetType(DataProviderSettings), KnownTypes)
+            serializer.WriteObject(stream, settings)
+            stream.Position = 0
+            Dim streamReader = New StreamReader(stream)
+            serialized += streamReader.ReadToEnd()
+        End If
+        Return serialized
+    End Function
+    Public Sub Deserialize(context As Object, savedValue As String)
+        Dim dataProvider As IDataProvider = TryCast(context, IDataProvider)
+        If dataProvider IsNot Nothing Then
+            Dim stream = New MemoryStream()
+            Dim tw = New StreamWriter(stream)
+            tw.Write(savedValue)
+            tw.Flush()
+            stream.Position = 0
+            Dim serializer As New DataContractSerializer(GetType(DataProviderSettings), KnownTypes)
+            Dim result = serializer.ReadObject(stream)
+            dataProvider.Settings.AggregateDescriptions.Clear()
+            For Each aggregateDescription As AggregateDescriptionBase In TryCast(result, DataProviderSettings).Aggregates
+                dataProvider.Settings.AggregateDescriptions.Add(aggregateDescription)
+            Next
+            dataProvider.Settings.FilterDescriptions.Clear()
+            For Each filterDescription As FilterDescription In TryCast(result, DataProviderSettings).Filters
+                dataProvider.Settings.FilterDescriptions.Add(filterDescription)
+            Next
+            dataProvider.Settings.RowGroupDescriptions.Clear()
+            For Each rowDescription As OlapGroupDescription In TryCast(result, DataProviderSettings).Rows
+                dataProvider.Settings.RowGroupDescriptions.Add(rowDescription)
+            Next
+            dataProvider.Settings.ColumnGroupDescriptions.Clear()
+            For Each columnDescription As OlapGroupDescription In TryCast(result, DataProviderSettings).Columns
+                dataProvider.Settings.ColumnGroupDescriptions.Add(columnDescription)
+            Next
+            dataProvider.Settings.AggregatesPosition = TryCast(result, DataProviderSettings).AggregatesPosition
+            dataProvider.Settings.AggregatesLevel = TryCast(result, DataProviderSettings).AggregatesLevel
+        End If
+    End Sub
+End Class
+
+```` 
+
+
+
+{{endregion}}
+
+>important The custom function needs to be added the collection already containing the known types.
+
+{{source=..\SamplesCS\PivotGrid\PivotGridSerializeCustomAggregate.cs region=LocalDataSourceSerializer}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridSerializeCustomAggregate.vb region=LocalDataSourceSerializer}}
+````C#
+public class LocalDataSourceSerializer : DataProviderSerializer
+{
+    private IEnumerable<Type> myKnownTypes = PivotSerializationHelper.KnownTypes.Concat<Type>(new List<Type>()
+    {
+        typeof(SqrtSumAggregateFunction)
+    });
+    public override IEnumerable<Type> KnownTypes
+    {
+        get
+        {
+            return myKnownTypes;
+        }
+    }
+}
+
+````
+````VB.NET
+Public Class LocalDataSourceSerializer
+    Inherits DataProviderSerializer
+    Private myKnownTypes As IEnumerable(Of Type) = PivotSerializationHelper.KnownTypes.Concat(Of Type)(New List(Of Type)() From {
+        GetType(SqrtSumAggregateFunction)
+    })
+    Public Overrides ReadOnly Property KnownTypes() As IEnumerable(Of Type)
+        Get
+            Return myKnownTypes
+        End Get
+    End Property
+End Class
+
+```` 
+
+
+
+{{endregion}}
+
+So the last step is to serialize the provider and deserialize it.
+
+#### Using the Custom Serializer
+
+{{source=..\SamplesCS\PivotGrid\PivotGridSerializeCustomAggregate.cs region=SampleUsageCustomAggregation}} 
+{{source=..\SamplesVB\PivotGrid\PivotGridSerializeCustomAggregate.vb region=SampleUsageCustomAggregation}}
+````C#
+private string s = @"..\..\custom.xml";
+private void serializeBtnClick(object sender, EventArgs e)
+{
+    //Serialzie
+    this.lastSerializadProvider = serializer.Serialize(this.radPivotGrid1.DataProvider);
+    File.WriteAllText(s, this.lastSerializadProvider);
+}
+private void deserializeBtnClick(object sender, EventArgs e)
+{
+    //Deserialzie
+    this.lastSerializadProvider = File.ReadAllText(s);
+    serializer.Deserialize(this.radPivotGrid1.DataProvider, this.lastSerializadProvider);
+}
+
+````
+````VB.NET
+Private s As String = "..\..\custom.xml"
+Private Sub serializeBtnClick(sender As Object, e As EventArgs)
+    'Serialzie
+    Me.lastSerializadProvider = serializer.Serialize(Me.radPivotGrid1.DataProvider)
+    File.WriteAllText(s, Me.lastSerializadProvider)
+End Sub
+Private Sub deserializeBtnClick(sender As Object, e As EventArgs)
+    'Deserialzie
+    Me.lastSerializadProvider = File.ReadAllText(s)
+    serializer.Deserialize(Me.radPivotGrid1.DataProvider, Me.lastSerializadProvider)
+End Sub
+
+```` 
+
+
+
+{{endregion}}
+
+# See Also
+
+*  [Custom Aggregation]({%slug winforms/pivotgrid/custom-aggregation%})

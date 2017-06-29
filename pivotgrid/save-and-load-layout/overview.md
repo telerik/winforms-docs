@@ -91,9 +91,12 @@ End Sub
 
 {{endregion}}
 
->important This API should be used only if the data binding has been performed via the __DataSource__ property or using a __LocalSourceDataProvider__. The API also does not export custom aggregate functions. For SAAS cubes please refer to:
+>important This API should be used only if the data binding has been performed via the __DataSource__ property or using a __LocalSourceDataProvider__. The API also does not export custom aggregate functions. 
+For SAAS cubes please refer to:
 * [Serialize AdomdDataProvider]({%slug winforms/pivotgrid/save-and-load-layout/serialize-adomddataprovider%})
-* [Serialize XmlaDataProvider]({%slug winforms/pivotgrid/save-and-load-layout/serialize-xmladataprovider%})
+* [Serialize XmlaDataProvider]({%slug winforms/pivotgrid/save-and-load-layout/serialize-xmladataprovider%})<br/
+For custom aggregation please refer to:
+* [Serialize Custom Aggregates]({%slug winforms/pivotgrid/save-and-load-layout/serialize-xmladataprovider%})
 
 
 # See Also
