@@ -24,8 +24,8 @@ Our new function will be almost the same as the already available __AggregateFun
 
 #### Custom Function Logic
 
-{{source=..\SamplesCS\PivotGrid\PivotGridCustomAggregation.cs region=AggregateFunction}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridCustomAggregation.vb region=AggregateFunction}}
+{{source=..\SamplesCS\PivotGrid\SqrtSumAggregateFunction.cs region=AggregateFunction}} 
+{{source=..\SamplesVB\PivotGrid\SqrtSumAggregateFunction.vb region=AggregateFunction}}
 ````C#
 public class SqrtSumAggregateFunction : Telerik.Pivot.Core.Aggregates.AggregateFunction
 {
@@ -68,6 +68,9 @@ public class SqrtSumAggregateFunction : Telerik.Pivot.Core.Aggregates.AggregateF
 
 ````
 ````VB.NET
+Imports System.Globalization
+Imports Telerik.Pivot.Core
+Imports Telerik.Pivot.Core.Aggregates
 Public Class SqrtSumAggregateFunction
     Inherits Telerik.Pivot.Core.Aggregates.AggregateFunction
     Public Overrides ReadOnly Property DisplayName() As String
@@ -102,6 +105,8 @@ End Class
 
 ````
 
+
+
 {{endregion}}
 
 ## Defining a Custom Aggregate Value
@@ -110,8 +115,8 @@ We also need to create a custom aggregate value class which will be used by our 
 
 #### Custom Aggregate Logic
 
-{{source=..\SamplesCS\PivotGrid\PivotGridCustomAggregation.cs region=AggregateValue}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridCustomAggregation.vb region=AggregateValue}}
+{{source=..\SamplesCS\PivotGrid\SqrtSumAggregateFunction.cs region=AggregateValue}} 
+{{source=..\SamplesVB\PivotGrid\SqrtSumAggregateFunction.vb region=AggregateValue}}
 ````C#
 public sealed class SqrtSumAggregate : AggregateValue, IConvertibleAggregateValue<double>
 {
@@ -196,6 +201,8 @@ Public NotInheritable Class SqrtSumAggregate
 End Class
 
 ````
+
+
 
 {{endregion}}
 
