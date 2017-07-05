@@ -122,8 +122,8 @@ a img {
 #logo-bar a img,
 #logo-bar-sl a img {
 	display: inline-block;
-	height: auto;
-	width: 100%;
+	height: 40px;
+	width: 323px;
  }
 
 .nav-buttons {
