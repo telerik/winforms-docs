@@ -26,6 +26,7 @@ Here is how the following grid, looks when exported.<br>![gridview-exporting-dat
 >
 
 >important Since this functionality is using the [RadSpreadProcessing Library](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) you need to reference the following assemblies as well:
+* TelerikExport
 * Telerik.Windows.Documents.Core
 * Telerik.Windows.Documents.Fixed
 * Telerik.Windows.Documents.Spreadsheet
