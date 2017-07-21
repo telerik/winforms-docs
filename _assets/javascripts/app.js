@@ -172,6 +172,7 @@ $(function(){
 $(function(){
     $(".toggle-nav").click(function() {
         $("#page-search").removeClass("search-visibility");
+        $("#logo-bar").removeClass("logo-visibility");
         $("#page-inner-content").removeClass("move-inner-content");
         $("#page-nav").toggleClass("nav-visibility");
     });
@@ -181,6 +182,7 @@ $(function(){
     $(".show-search").click(function() {
         $("#page-nav").removeClass("nav-visibility");
         $("#page-search").toggleClass("search-visibility");
+        $("#logo-bar").toggleClass("logo-visibility");
         $("#page-inner-content").toggleClass("move-inner-content");
     });
 });
