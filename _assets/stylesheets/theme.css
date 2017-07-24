@@ -64,67 +64,12 @@
     font-weight: normal;
     font-style: normal;
 }
-#page-tabs .active {
-    padding-bottom: 0;
-    border-bottom: 3px solid #00b312;
-}
-#page-tabs a {
-    display: inline-block;
-    color: #2d3e50;
-    text-decoration: none;
-    font-size: 14px;
-}
-.btn {
-    color: #fff;
-    background-color: #2a2d33;
-    border: 1px solid #505156;
-    background-clip: padding-box;
-    position: relative;
-    display: inline-block;    
-    line-height: 1.33334;
-    margin: 0 4px;
-    padding: 6px 30px;
-    transition-property: background-color, color;
-    transition-duration: 0.2s;
-    transition-timing-function: ease;
-    border-radius: 2px;
-    -webkit-appearance: none;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-}
-.btn:hover {
-    color: #fff;
-    background-color: #505156;
-}
-.btn-primary {
-    background-color: #ee5315;
-    border-color: #ee5315;
-    margin-right: 1.200em;
-}
 @font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot');
     src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff') format('woff'),url('../fonts/fontawesome-webfont.ttf') format('truetype'),url('../fonts/fontawesome-webfont.svg#svgfontawesome-webfont') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-
-#page-inner-content {
-    bottom: 44px;
-    position: absolute;
-    top: 120px;
-    width: 100%;
-	overflow: hidden !important;
-}
-
-#page-inner-content.move-inner-content {
-    top: 120px;
-}
-.btn-primary:hover {
-    background-color: #c2410e;
-    border-color: #c2410e;
 }
 
 .btn-action {
