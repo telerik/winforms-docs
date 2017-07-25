@@ -731,7 +731,7 @@ navigation:
         position: 310
     pageview/drag-and-drop:
         title: Drag and Drop
-        position: 4
+        position: 5
     pageview/stripview:
         title: StripView
         position: 5
