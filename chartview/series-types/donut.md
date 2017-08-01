@@ -1,9 +1,9 @@
 ---
 title: Donut
 page_title: Donut | ChartView
-description: DonutSeries visualize each data point as a slice with arc size directly proportional to the magnitude of the raw data point’s value.
+description: DonutSeries [Doughnut series] visualize each data point as a slice with arc size directly proportional to the magnitude of the raw data point’s value.
 slug: winforms/chartview-/series-types/donut
-tags: donut
+tags: donut, doughnut 
 published: True
 position: 11
 previous_url: chartview-series-types-donut
