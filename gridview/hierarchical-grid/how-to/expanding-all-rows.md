@@ -11,8 +11,7 @@ previous_url: gridview-hirarchical-grid-how-to-expading-all-rows
 
 # Expanding all rows
 
-
-In order to expand all rows in __RadGridView__ you have to iterate through them and set the __IsExpanded__ property to __true__:
+In order to expand all rows in __RadGridView__ you have to iterate through them and set the __IsExpanded__ property to __true__. The following code snippet demonstrates how to achieve it. You can call the method when the grid is loaded or when you click a button :
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=expandAllRows}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=expandAllRows}} 

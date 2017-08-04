@@ -18,3 +18,9 @@ previous_url: carousel-overview, carousel-how-to-implement-keyboard-navigation
 __RadCarousel__ is a navigation control that animates a series of elements either by the user clicking a particular element or by clicking the forward and back arrows. Based on top of the Telerik Presentation Framework (TPF), __RadCarousel__ supports data binding, smooth animations and transitions, automatic generation of image reflections and dynamic addition and removal of items. 
 
 ![carousel-overview 002](images/carousel-overview002.png)
+
+# See Also
+
+ * [Structure]({%slug winforms/carousel/structure%})
+ * [Getting Started]({%slug winforms/carousel/getting-started%})
+ * [Data Binding]({%slug winforms/carousel/using-radcarousel/data-binding%})
