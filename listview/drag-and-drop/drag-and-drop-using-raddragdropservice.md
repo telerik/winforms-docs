@@ -262,6 +262,26 @@ End Sub
 
 1\. In order to enable dragging an item from the __RadListView__ and dropping it onto the __RadGridView__, it is necessary to set the RadListView.__AllowDragDrop__ property to *true*.
 
+#### Subscribing to the RadDragDropService's events
+
+{{source=..\SamplesCS\ListView\DragDrop\DragDropRadDragDropService.cs region=WireListViewServiceEvents}} 
+{{source=..\SamplesVB\ListView\DragDrop\DragDropRadDragDropService.vb region=WireListViewServiceEvents}}
+````C#
+            
+this.radListView1.ListViewElement.DragDropService.PreviewDragOver += DragDropService_PreviewDragOver;
+this.radListView1.ListViewElement.DragDropService.PreviewDragDrop += DragDropService_PreviewDragDrop;
+
+````
+````VB.NET
+AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragOver, AddressOf DragDropService_PreviewDragOver
+AddHandler Me.RadListView1.ListViewElement.DragDropService.PreviewDragDrop, AddressOf DragDropService_PreviewDragDrop
+
+```` 
+
+
+
+{{endregion}} 
+
 2\. To implement drag and drop functionality for this scenario, we will use the ListViewElement.__DragDropService__, which is a derivative of the __RadDragDropService__ . Subscribe to its __PreviewDragOver__  and __PreviewDragDrop__ events. In the __PreviewDragOver__ event allow dropping over a row element or over the table element. The __PreviewDragDrop__ event performs the actual inserting of the dragged item into the __RadGridView__’s data source:
 
 #### Handling the RadDragDropService's events
