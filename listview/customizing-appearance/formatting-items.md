@@ -157,6 +157,7 @@ End Sub
 
 {{endregion}} 
 
+>note In order to customize the header cells they should be cast to the DetailListViewHeaderCellElement type.
  
 # See Also
 
