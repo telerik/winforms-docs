@@ -18,6 +18,9 @@ __RadGridView__ supports the standard Windows Forms data binding model, so it wi
 If the __DataSource__ is set to a dataset object with multiple tables, you can set the the __DataMember__ property to the name of the table that the control should display. See [Databinding RadGridView]({%slug winforms/gridview/populating-with-data/databinding-radgridview%}) for an overview of binding to many popular data types.
 
 # See Also
+
+* [DataBinding RadGridView]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})
+
 * [Columns]({%slug winforms/gridview/fundamentals/columns%})
 
 * [Creating Hierarchical Grids]({%slug winforms/gridview/fundamentals/creating-hierarchical-grids%})

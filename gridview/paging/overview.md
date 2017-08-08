@@ -15,7 +15,7 @@ The data layer of __RadGridView__ now supports pagination of data natively. You 
 
 ![gridview-paging-overview 001](images/gridview-paging-overview001.png)
 
-To access the public API for paging you will use the __MasterTemplate__ property. Here are the more important properties and methods:
+To access the public API for paging you need to use the RadGridView.__MasterTemplate__ property exposing the __MasterGridViewTemplate__ object. Here are the more important properties and methods:
 
 * __EnablePaging:__ Gets or sets a value indicating whether paging is enabled.
 

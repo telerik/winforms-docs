@@ -193,3 +193,4 @@ RadGridView1.AutoGenerateColumns = False
 # See Also
 
  * [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
+ * [Property Builder]({%slug winforms/gridview/design-time-support/property-builder%})
