@@ -190,6 +190,12 @@ RadGridView1.AutoGenerateColumns = False
 
 {{endregion}} 
 
+#### Adding Columns at Design time
+
+Select **RadGridView** and click the small arrow at the top right position in order to open the *Smart Tag*. Click the Columns' browse button which opens a dialog that displays **GridViewDataColumn Collection Editor**. This editor lets you add different kind of columns to your table.
+
+![gridview-auto-generate-columns 002](images/gridview-auto-generate-columns002.png)
+
 # See Also
 
  * [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
