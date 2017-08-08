@@ -263,13 +263,13 @@ Here is how style properties for different styles are inherited:
 
 **Paragraph** styles can be based on other paragraph styles or on linked styles.
 
-* When a paragraph style is based on another paragraph style the inheritance of the properties is as follows:
+When a paragraph style is based on another paragraph style the inheritance of the properties is as follows:
 
 * Paragraph properties are inherited from the base paragraph style.
 
 * Span properties are inherited from the base paragraph style.
 
-* When a paragraph style is based on a linked style the inheritance of the properties is as follows:
+When a paragraph style is based on a linked style the inheritance of the properties is as follows:
 
 * Paragraph properties are inherited from the paragraph style part in its base linked style.
 

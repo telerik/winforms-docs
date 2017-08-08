@@ -11,6 +11,9 @@ previous_url: tools-controlspy-adding-the-control-spy-to-your-application
 
 # Adding the Control Spy to Your Application
 
+| RELATED VIDEOS |  |
+| ------ | ------:|
+|[Introduction to RadControlSpyForm](http://www.telerik.com/videos/winforms/introduction-to-radcontrolspyform)|![tools-controlspy-overview 001](images/tools-controlspy-overview001.png)|
 
 To add the Control Spy to your application, you must add a reference to the __RadControlSpy.dll__ library, which is installed by default at: *C:\Program Files\Telerik\UI for WinForms\Version\bin*
 

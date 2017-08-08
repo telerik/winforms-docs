@@ -199,3 +199,4 @@ Select **RadGridView** and click the small arrow at the top right position in or
 # See Also
 
  * [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
+ * [Property Builder]({%slug winforms/gridview/design-time-support/property-builder%})
