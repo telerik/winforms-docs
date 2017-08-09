@@ -5,7 +5,7 @@ description: This articles describes the end-user functionalities provided by Ra
 slug: winforms/pivotgrid/end-user-functionalities
 tags: end-user,functionalities
 published: True
-position: 17
+position: 18
 previous_url: pivotgrid-end-user-functionalities
 ---
 

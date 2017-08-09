@@ -836,22 +836,22 @@ navigation:
         position: 15
     pivotgrid/printing-support:
         title: Printing Support
-        position: 18
+        position: 19
     pivotgrid/pivot-field-list:
         title: Pivot Field List
-        position: 19
+        position: 20
     pivotgrid/dialogs:
         title: Dialogs
-        position: 20
+        position: 21
     pivotgrid/localization:
         title: Localization
-        position: 21
+        position: 22
     pivotgrid/exporting-data:
         title: Exporting Data
-        position: 22
+        position: 23
     pivotgrid/save-and-load-layout:
         title: Save and Load Layout
-        position: 23		
+        position: 24		
     propertygrid:
         title: PropertyGrid
         position: 370
