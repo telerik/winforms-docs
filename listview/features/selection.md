@@ -20,6 +20,7 @@ Multiple items can be selected in code as well. This can be achieved by using th
 {{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=itemSelect}} 
 
 ````C#
+radListView1.MultiSelect = true;
 ListViewDataItem[] itemsToSlelct = new ListViewDataItem[3];
 itemsToSlelct[0] = radListView1.Items[1];
 itemsToSlelct[1] = radListView1.Items[3];
@@ -28,6 +29,7 @@ radListView1.Select(itemsToSlelct);
 
 ````
 ````VB.NET
+RadListView1.MultiSelect = True
 Dim itemsToSlelct(2) As ListViewDataItem
 itemsToSlelct(0) = RadListView1.Items(1)
 itemsToSlelct(1) = RadListView1.Items(3)
