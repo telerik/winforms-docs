@@ -84,7 +84,7 @@ PageViewMode.*Strip* supports the following __StripButtons__ modes:
 
 * __None__. Displays no strip buttons:
 
->caption Figure 9: StripViewButtons.VS2008Style
+>caption Figure 9: StripViewButtons.None
 
 ![](images/pageview-stripview-scrolling-and-overflow009.png)
 
