@@ -18,6 +18,10 @@ A common scenario is to hide the "Save As" button and override the functionality
 
 {{source=..\SamplesCS\RichTextEditor\UI\CustomRibbonCode.cs region=DisableContextMenu}} 
 {{source=..\SamplesVB\RichTextEditor\UI\CustomRibbonCode.vb region=DisableContextMenu}}
+````C#
+````
+````VB.NET
+````
 
 
 
