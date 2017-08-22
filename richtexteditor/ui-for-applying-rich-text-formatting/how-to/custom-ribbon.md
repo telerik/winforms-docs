@@ -6,7 +6,6 @@ slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/custom-ribbo
 tags: ribbon,ui
 published: True
 position: 0
-previous_url: richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui
 ---
 
 # Create Custom RichTextEditorRibbonBar
@@ -24,6 +23,9 @@ A common scenario is to hide the "Save As" button and override the functionality
 
 {{endregion}} 
 
+|Default|Custom|
+|---|---|
+|![richtexteditor-ui-for-applying-rich-text-formatting-custom-ribbon001](images/richtexteditor-ui-for-applying-rich-text-formatting-custom-ribbon001.png)|![richtexteditor-ui-for-applying-rich-text-formatting-custom-ribbon002](images/richtexteditor-ui-for-applying-rich-text-formatting-custom-ribbon002.png)|
 
 
 # See Also
