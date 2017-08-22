@@ -314,7 +314,7 @@ You can control the location of the bottom summary rows by the **BottomPinnedRow
 |----|----|
 |![gridview-rows-summary-rows 008](images/gridview-rows-summary-rows008.png)|![gridview-rows-summary-rows 009](images/gridview-rows-summary-rows009.png)|
 
->note When you use the *Fixed* mode, it is necessary to pin the summary row accessing them by the MasterView.SummaryRows collection.
+>note When you use the *Fixed* mode, it is necessary to pin the summary row accessing them by the MasterView.SummaryRows collection. Make sure to set the __IsPinned__ property before setting the __PinPosition__.
 
 # See Also
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
