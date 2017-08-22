@@ -16,14 +16,8 @@ A common scenario is to hide the "Save As" button and override the functionality
 
 #### Create custom RichTextEditorRibbonBar class
 
-{{source=..\SamplesCS\RichTextEditor\UI\CustomRibbonCode.cs region=DisableContextMenu}} 
-{{source=..\SamplesVB\RichTextEditor\UI\CustomRibbonCode.vb region=DisableContextMenu}}
-````C#
-````
-````VB.NET
-````
-
-
+{{source=..\SamplesCS\RichTextEditor\UI\CustomRichTextEditorRibbonBar.cs region=CustomRibbonCode}} 
+{{source=..\SamplesVB\RichTextEditor\UI\CustomRichTextEditorRibbonBar.vb region=CustomRibbonCode}}
 
 {{endregion}} 
 

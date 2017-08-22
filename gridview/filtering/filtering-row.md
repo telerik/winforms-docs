@@ -56,6 +56,10 @@ Me.RadGridView1.ShowFilteringRow = False
 >note You can still add [FilterDescriptors]({%slug winforms/gridview/filtering/setting-filters-programmatically-(simple-descriptors)%}) programmatically when the __GridFilterRowElement__ is hidden.
 
 
+### Filter Menu
+
+The menu with the filter operators is actually a context menu. So if you want to modify it you need to use the ContextMenuOpening event. Detailed information is available here: [Modifying the Default Context Menu]({%slug winforms/gridview/context-menus/modifying-the-default-context-menu%})
+
 # See Also
 
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
