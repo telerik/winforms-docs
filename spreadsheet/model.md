@@ -1,6 +1,6 @@
 ---
 title: Model
-page_title: Model
+page_title: Model | RadSpreadsheet
 description: Model
 slug: radspreadsheet-model
 tags: model
@@ -10,8 +10,6 @@ position: 6
 
 # Model
 
-
-
 >important__RadSpreadsheet__ operates with a rich document model that is completely decoupled from UI. The documentation of the model can be found in the RadSpreadProcessing section of the documentation for Telerik Document Processing [here](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview).
         
 
@@ -20,9 +18,9 @@ The primary document that the model uses to manipulate and store data is called 
 
 The following diagram illustrates how different parts of the document model fit together:
 
-![Rad Spreadsheet Model 02](images/RadSpreadsheet_Model_02.png)
+![Rad Spreadsheet Model 02](images/radspreadsheet-model-002.png)
 
-The documentation of RadSpreadsheet's document model contains several *Working with ** sections that illustrate general concepts about Workbooks, Worksheets, Cells, and Rows and Columns respectively. Each of these folders covers the fundaments of the class and provides examples about the CRUD operations of the object.
+The documentation of RadSpreadsheet's document model contains several *Working with ** sections that illustrate general concepts about Workbooks, Worksheets, Cells, and Rows and Columns respectively. Each of these folders covers the fundamentals of the class and provides examples about the CRUD operations of the object.
       
 
 The documentation also includes a Features folder that contains information about all features currently supported by the model of RadSpreadsheet.
