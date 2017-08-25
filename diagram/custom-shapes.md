@@ -11,8 +11,6 @@ previous_url: diagram-custom-shapes
 
 # Custom shapes
 
-
-
 This tutorial will guide you through the task of creating a custom shape.
 
 ## Creating custom shapes programmatically
@@ -101,3 +99,7 @@ When you open the RadDiagram Property Builder from the Smart Tag and drag a shap
 This will display the [Custom Shape Editor]({%slug winforms/tools/shapeeditor/using-the-custom-shape-editor/launching-the-shape-editor%}).
         
 ![diagram-custom-shapes 003](images/diagram-custom-shapes003.png)
+
+# See Also
+
+* [ShapeEditor Tool]({%slug winforms/tools/shapeeditor%})
