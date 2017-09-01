@@ -42,7 +42,7 @@ The first way is to add an app.manifest file to your project. In that manifest f
 
   <asmv3:application>
     <asmv3:windowsSettings xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">
-      <dpiAware>true</dpiAware>
+      <dpiAware>true/PM</dpiAware>
     </asmv3:windowsSettings>
   </asmv3:application>
 
