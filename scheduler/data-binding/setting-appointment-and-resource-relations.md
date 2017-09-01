@@ -114,9 +114,9 @@ End Function
 
 ## Many to Many Relations
 
-This covers the case of assigning many resources to many appointments. When you have relations between three tables (many to many) then you should have three tables: *Appointments*, *Resources *and  *AppointmentsResources*. *AppointmentResouces *should have two field names: one for the id of the appointment (__AppointmentId__), and one for id of the resource (__ResourceId__). Here we should have two relations: one between *Appointments *and *AppointmentsResources, * and one between *Resources *and *AppointmentsResources*.
+This covers the case of assigning many resources to many appointments. When you have relations between three tables (many to many) then you should have three tables: *Appointments*, *Resources* and  *AppointmentsResources*. *AppointmentResouces* should have two field names: one for the id of the appointment (__AppointmentId__), and one for id of the resource (__ResourceId__). Here we should have two relations: one between *Appointments* and *AppointmentsResources*, and one between *Resources* and *AppointmentsResources*.
 
-For the __AppointmentMappingInfo__ you should set the __ResourceId__ property to the __ResourceId__ field name in the *AppointmentsResources *table, and for the __Resources__ you should set the name of the relation between *AppointmentsResources *and *Appointments*. When you associate the resource to the appointment, a new record will be added to *AppointmentsResources *if there is not such.
+For the __AppointmentMappingInfo__ you should set the __ResourceId__ property to the __ResourceId__ field name in the *AppointmentsResources* table, and for the __Resources__ you should set the name of the relation between *AppointmentsResources *and *Appointments*. When you associate the resource to the appointment, a new record will be added to *AppointmentsResources* if there is not such.
 
 This scenario is also demonstrated in the [Data Binding Walkthrough article]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}).
 
