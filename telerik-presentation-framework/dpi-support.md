@@ -27,6 +27,8 @@ Although it is a bit tricky to demonstrate HDPI support with a single image, her
 
 ## How to Enable HDPI Support in Your Application
 
+>important In R2 2017 we introduced the __EnableDpiScaling__ property that allows you to enable/disable this on a global level. This is a static property of __RadControl__ and must set before any controls are initialized. For example in the form's constructor. 
+
 Here are the two ways you can make your application DPI aware:
 
 The first way is to add an app.manifest file to your project. In that manifest file add the following XML:

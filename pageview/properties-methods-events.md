@@ -20,6 +20,8 @@ position: 10
 |**ItemSizeMode**|Gets or sets the text orientation of the item within the owning RadPageViewElement instance.|
 |**ItemSize**|Gets or sets the size of the items when ItemSizeMode of RadPageView is PageViewItemSizeMode.EqualSize.|
 |**SelectionWrap**|Gets or sets whether the pages will be wrapped around when performing selection using the arrow keys. If the property is set to true, pressing the right arrow key when the last page is selected will result in selecting the first page.|
+|**AllowShowFocusCues**|Indicates the focus cues visibility when available, based on the corresponding control type and the current UI state.|
+|**ViewElement.UseMnemonic**|Determines whether ampersand character will be treated as mnemonic or not.|
 
 
 # Methods
