@@ -10,7 +10,6 @@ position: 0
 
 # Overview
 
-
 Thank you for choosing Telerik __RadSpreadsheet__!
 
 __RadSpreadsheet__ is a control that allows editing tabular data utilizing a variety of cell formatting options, styles and themes. 
