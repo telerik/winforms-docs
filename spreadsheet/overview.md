@@ -15,7 +15,7 @@ Thank you for choosing Telerik __RadSpreadsheet__!
 
 __RadSpreadsheet__ is a control that allows editing tabular data utilizing a variety of cell formatting options, styles and themes. 
 
-![Rad Spreadsheet Overview small](images/RadSpreadsheet_Overview_small.png)
+![Rad Spreadsheet Overview small](images/spreadsheet-overview001.png)
 
 Some of its features are:
 
@@ -26,8 +26,6 @@ Some of its features are:
 * Images
 
 * Freeze panes
-
-* Printing
 
 * Create and use multiple sheets, each one with its own history stack
 
@@ -41,8 +39,6 @@ Some of its features are:
 * Merge cells, merge cells across columns and unmerge
 
 * Resize rows and columns, auto fit
-
-* Zoom in and out each sheet separately
 
 * Use different cell formatting
 

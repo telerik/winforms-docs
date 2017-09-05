@@ -34,6 +34,8 @@ Here is a list of the supported features
 * Context menu
 * Printing
 
+>note **RadPdfViewer** requires **.NET Framework 4.0** and cannot be used with an older version. 
+
 # See Also
 
 * [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})

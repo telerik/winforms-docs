@@ -46,18 +46,13 @@ To export a document to PDF, you will need to add a reference to the correspondi
 
 ## Spreadsheet and RibbonView
 
-Now add the __RadSpreadsheet__ control to the form.
+Now add the __RadSpreadsheet__ control to the form.After that add __RadSpreadsheetRibbonBar__ to the form. Dock it to the top and then Dock the __RadSpreadsheet__ to fill the remaining space. Your layout should look like this.
 
 ![spreadsheet-getting-started001](images/spreadsheet-getting-started001.png) 
 
-After that add __RadSpreadsheetRibbonBar__ to the form. Dock it to the top and then Dock the __RadSpreadsheet__ to fill the remaining space.
-
-![spreadsheet-getting-started002](images/spreadsheet-getting-started002.png) 
-
-
 Open the Smart Tag of the ribbon and set the associated control. 
 
-![spreadsheet-getting-started003](images/spreadsheet-getting-started003.png) 
+![spreadsheet-getting-started002](images/spreadsheet-getting-started002.png) 
 
 That is all. You are ready to start the application and examine the control features.
 

@@ -69,6 +69,7 @@ spreadStreamExport.RunExport("D:\StreamExport.xlsx", New SpreadStreamExportRende
 |__FreezePinnedColumns__|Gets or sets a value indicating whether to freeze pinned columns.|
 |__ExportChildRowsGrouped__|Gets or sets a value indicating whether to export hierarchy and group child rows grouped.|
 |__ExportViewDefinition__|Gets or sets a value indicating whether to export [view definition]({%slug winforms/gridview/view-definitions/overview%}) |
+|__FileExportMode__ |This property determines whether the data will be exported into an existing or a new file. Available options are: __NewSheetInExistingFile__(this option will create a new sheet in an already existing file) and __CreateOrOverrideFile__ which creates new or overrides the existing file.|
 
 >important
 Each column in RadGridView has __ExcelExportType__ property which can be used for explicitly setting the data type of the cells in the exported document. In order to change the format of the exported data, you can set the __ExcelExportType__ property of the specific column to *Custom* and specify the __ExcelExportFormatString__ property with the desired format. Examples of such formats are available here: <https://support.office.com/en-us/article/Format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e?ui=en-US&rs=en-US&ad=US>
