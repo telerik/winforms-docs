@@ -9,7 +9,7 @@ position: 0
 ---
 
 # Overview
- 
+
 
 Thank you for choosing Telerik __RadSpreadsheet__!
 
