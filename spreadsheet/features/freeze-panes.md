@@ -1,6 +1,6 @@
 ---
 title: Freeze Panes
-page_title: Freeze Panes| UI for WinForms Documentation
+page_title: Freeze Panes | UI for WinForms Documentation
 description: Freeze Panes
 slug: radspreadsheet-features-freeze-panes
 tags: freeze,panes
