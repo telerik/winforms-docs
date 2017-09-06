@@ -3,7 +3,7 @@ title: Data Validation
 page_title: Data Validation | UI for WinForms Documentation
 description: Data Validation
 slug: radspreadsheet-features-data-validation
-tags: freeze,panes
+tags: data,validation
 published: True
 position: 4
 ---
