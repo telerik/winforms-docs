@@ -1023,6 +1023,12 @@ navigation:
     spreadsheet:
         title: Spreadsheet
         position: 471
+    spreadsheet/features:
+        title: Features
+        position: 4 
+    spreadsheet/how-to:
+        title: How-To
+        position: 5 
     spreadstreamprocessing:
         title: SpreadStreamProcessing
         position: 475
