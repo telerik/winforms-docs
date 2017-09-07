@@ -19,7 +19,7 @@ It will be useful if you can set the column heading name when the first row is n
 
 ## Change the Row and Column Headings
 
-Each worksheet has a property called __RenderNameConverter__, which provides a mechanism for changing the row and column headings for UI purposes, including PDF export and [Printing]({%slug radspreadsheet-ui-printing%}). All you need to do is create a custom name converter and assign an instance of it to the RenderNameConverter property. The converter class must inherit from __HeaderNameRenderingConverterBase__.
+Each worksheet has a property called __RenderNameConverter__, which provides a mechanism for changing the row and column headings for UI purposes, including the PDF export. All you need to do is create a custom name converter and assign an instance of it to the RenderNameConverter property. The converter class must inherit from __HeaderNameRenderingConverterBase__.
         
 
 __Example 1__ shows a simple implementation for the converter class used for creating the snapshots above.

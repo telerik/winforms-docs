@@ -45,6 +45,7 @@ Telerik UI for for WinForms includes over 110 UI controls that you can use to ea
 * [RibbonBar]({%slug winforms/ribbonbar%})
 * [Rotator]({%slug winforms/rotator%})
 * [Scheduler]({%slug winforms/scheduler%})
+* [Spreadsheet]({%slug radspreadsheet-overview%})
 * [TreeView]({%slug winforms/treeview%})
 * [DataFilter]({%slug winforms/datafilter/overview%})
 * Track and Status Controls
@@ -78,8 +79,8 @@ Telerik UI for for WinForms includes over 110 UI controls that you can use to ea
 	* [RibbonForm + VS template]({%slug winforms/forms-and-dialogs/ribbonform%})
 	
 * [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%})[Shortcuts]({%slug winforms/shortcuts%})
-* ScreenTips
-* ToolTips
+* [ScreenTips]({%slug winforms/telerik-presentation-framework/screen-tips%})
+* [ToolTips]({%slug winforms/telerik-presentation-framework/tooltips%})
 * Tools included
 
 	* [ControlSpy]({%slug winforms/tools/controlspy%})
