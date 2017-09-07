@@ -1020,9 +1020,18 @@ navigation:
     spreadprocessing:
         title: SpreadProcessing
         position: 470
+    spreadsheet:
+        title: Spreadsheet
+        position: 471
+    spreadsheet/features:
+        title: Features
+        position: 4 
+    spreadsheet/how-to:
+        title: How-To
+        position: 5 
     spreadstreamprocessing:
         title: SpreadStreamProcessing
-        position: 471
+        position: 475
     track-and-status-controls:
         title: Track and Status controls
         position: 480
