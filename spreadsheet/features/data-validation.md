@@ -42,6 +42,7 @@ Example 1 shows the use of the two methods that toggle this functionality - **Ci
 {{source=..\SamplesVB\Spreadsheet\FreezePanes.vb region=DataValidation}}
 
 ````C#
+            
 if (showCircles)
 {
     this.radSpreadsheet1.SpreadsheetElement.ActiveWorksheetEditor.CircleInvalidData();

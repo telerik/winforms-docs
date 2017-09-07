@@ -31,28 +31,6 @@ __Example 1__ shows a simple implementation for the converter class used for cre
 {{source=..\SamplesCS\Spreadsheet\NameConverter.cs region=name_canverter_0}} 
 {{source=..\SamplesVB\Spreadsheet\NameConverter.vb region=name_canverter_0}}
 ````C#
-this.radSpreadsheet.SpreadsheetElement.Workbook.Worksheets[0].HeaderNameRenderingConverter = new CustomNameConverter();
-
-````
-````VB.NET
-Me.radSpreadsheet.SpreadsheetElement.Workbook.Worksheets(0).HeaderNameRenderingConverter = New CustomNameConverter()
-
-```` 
-
- 
-{{endregion}} 
- 
-
-
-
-After implementing your custom name converter you need to instantiate it and assign it to the worksheet __RenderNameConverter__ property. __Example 2__ sets a new instance of the CustomNameConverter created in __Example 1__ to a __RadSpreadsheet__'s worksheet.
-        
-
->caption Example 2: Instantiate and assign a custom converter
-
-{{source=..\SamplesCS\Spreadsheet\NameConverter.cs region=name_canverter_1}} 
-{{source=..\SamplesVB\Spreadsheet\NameConverter.vb region=name_canverter_1}}
-````C#
 public class CustomNameConverter : HeaderNameRenderingConverterBase
 {
     protected override string ConvertColumnIndexToNameOverride(HeaderNameRenderingConverterContext context, int columnIndex)
@@ -71,12 +49,34 @@ public class CustomNameConverter : HeaderNameRenderingConverterBase
 Public Class CustomNameConverter
     Inherits HeaderNameRenderingConverterBase
     Protected Overrides Function ConvertColumnIndexToNameOverride(ByVal context As HeaderNameRenderingConverterContext, ByVal columnIndex As Integer) As String
-        If columnIndex = 0 AndAlso context.VisibleRange.FromIndex.RowIndex >= 1 AndAlso context.VisibleRange.FromIndex.RowIndex <= 5 Then
+        If columnIndex = 0 Then
             Return "First Name"
         End If
         Return MyBase.ConvertColumnIndexToNameOverride(context, columnIndex)
     End Function
 End Class
+
+```` 
+
+ 
+{{endregion}} 
+ 
+
+
+
+After implementing your custom name converter you need to instantiate it and assign it to the worksheet __RenderNameConverter__ property. __Example 2__ sets a new instance of the CustomNameConverter created in __Example 1__ to a __RadSpreadsheet__'s worksheet.
+        
+
+>caption Example 2: Instantiate and assign a custom converter
+
+{{source=..\SamplesCS\Spreadsheet\NameConverter.cs region=name_canverter_1}} 
+{{source=..\SamplesVB\Spreadsheet\NameConverter.vb region=name_canverter_1}}
+````C#
+this.radSpreadsheet.SpreadsheetElement.Workbook.Worksheets[0].HeaderNameRenderingConverter = new CustomNameConverter();
+
+````
+````VB.NET
+Me.radSpreadsheet.SpreadsheetElement.Workbook.Worksheets(0).HeaderNameRenderingConverter = New CustomNameConverter()
 
 ```` 
 
