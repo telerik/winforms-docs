@@ -127,6 +127,44 @@ public class MyLocalizationProvider : PdfViewerLocalizationProvider
                 return "Page Thumbnails";
             case PdfViewerStringId.SaveButton:
                 return "Save As";
+            case PdfViewerStringId.CloseButton:
+                return "Close";
+            case PdfViewerStringId.NavigatorShowSignatureButton:
+                return "Signature Panel";
+            case PdfViewerStringId.SignatureDialogTitle:
+                return "Signature Validation Status";
+            case PdfViewerStringId.SignaturePanel_Invalid:
+                return "At least one signature is invalid.";
+            case PdfViewerStringId.SignaturePanel_Unknown:
+                return "At least one signature has problems.";
+            case PdfViewerStringId.SignaturePanel_Valid:
+                return "Signed and all signatures are valid.";
+            case PdfViewerStringId.SignaturePropertiesDialogHeader:
+                return "Signature Validation Status";
+            case PdfViewerStringId.SignaturePropertiesDialogViewModel_IsDocumentModified_False:
+                return "The document is not modified since this signature was applied.";
+            case PdfViewerStringId.SignaturePropertiesDialogViewModel_IsDocumentModified_True:
+                return "The document has been altered or corrupted since the Signature was applied.";
+            case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignatureIsInvalid:
+                return "Signature is Invalid.";
+            case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignatureIsUnknown:
+                return "Signature validity is Unknown.";
+            case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignatureIsValid:
+                return "Signature is Valid, signed by ";
+            case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignerValidity_Unknown:
+                return "The signer's identity is unknown.";
+            case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignerValidity_UntrustedRoot:
+                return "The signer's identity is unknown because it has not been included in your list of trusted certificates and none of its parent certificates are trusted.";
+            case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignerValidity_Valid:
+                return "The signer's identity is valid.";
+            case PdfViewerStringId.SelectCertButton:
+                return "Select";
+            case PdfViewerStringId.SignButton:
+                return "Sign";
+            case PdfViewerStringId.EnterAPassTextBox:
+                return "Enter a password";
+            case PdfViewerStringId.SelectCertTextBox:
+                return "Select certificate";
         }
         return base.GetLocalizedString(id);
     }
@@ -234,6 +272,44 @@ Public Class MyLocalizationProvider
                 Return "Page Thumbnails"
             Case PdfViewerStringId.SaveButton
                 Return "Save As"
+            Case PdfViewerStringId.CloseButton
+                Return "Close"
+            Case PdfViewerStringId.NavigatorShowSignatureButton
+                Return "Signature Panel"
+            Case PdfViewerStringId.SignatureDialogTitle
+                Return "Signature Validation Status"
+            Case PdfViewerStringId.SignaturePanel_Invalid
+                Return "At least one signature is invalid."
+            Case PdfViewerStringId.SignaturePanel_Unknown
+                Return "At least one signature has problems."
+            Case PdfViewerStringId.SignaturePanel_Valid
+                Return "Signed and all signatures are valid."
+            Case PdfViewerStringId.SignaturePropertiesDialogHeader
+                Return "Signature Validation Status"
+            Case PdfViewerStringId.SignaturePropertiesDialogViewModel_IsDocumentModified_False
+                Return "The document is not modified since this signature was applied."
+            Case PdfViewerStringId.SignaturePropertiesDialogViewModel_IsDocumentModified_True
+                Return "The document has been altered or corrupted since the Signature was applied."
+            Case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignatureIsInvalid
+                Return "Signature is Invalid."
+            Case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignatureIsUnknown
+                Return "Signature validity is Unknown."
+            Case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignatureIsValid
+                Return "Signature is Valid, signed by "
+            Case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignerValidity_Unknown
+                Return "The signer's identity is unknown."
+            Case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignerValidity_UntrustedRoot
+                Return "The signer's identity is unknown because it has not been included in your list of trusted certificates and none of its parent certificates are trusted."
+            Case PdfViewerStringId.SignaturePropertiesDialogViewModel_SignerValidity_Valid
+                Return "The signer's identity is valid."
+            Case PdfViewerStringId.SelectCertButton
+                Return "Select"
+            Case PdfViewerStringId.SignButton
+                Return "Sign"
+            Case PdfViewerStringId.EnterAPassTextBox
+                Return "Enter a password"
+            Case PdfViewerStringId.SelectCertTextBox
+                Return "Select certificate"
         End Select
         Return MyBase.GetLocalizedString(id)
     End Function

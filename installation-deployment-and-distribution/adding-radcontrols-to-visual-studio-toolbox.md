@@ -101,6 +101,12 @@ Telerik UI for for WinForms are automatically added to Visual Studio 2005/2008/2
  
  * Telerik.WinControls.Themes.Material.dll
 
+ * Telerik.WinControls.Themes.MaterialPink.dll
+
+ * Telerik.WinControls.Themes.MaterialBlueGrey.dll
+
+ * Telerik.WinControls.Themes.MaterialTeal.dll
+
  * Telerik.WinControls.Themes.VisualStudio2012Dark.dll
 
  * Telerik.WinControls.Themes.VisualStudio2012Light.dll
@@ -114,6 +120,8 @@ Telerik UI for for WinForms are automatically added to Visual Studio 2005/2008/2
  * Telerik.WinControls.RichTextEditor.dll
  
  * Telerik.WinControls.RadMap.dll
+ 
+ * Telerik.WinControls.RadSpreadsheet.dll
 
 
 >Resetting the toolbox through the __Reset__ context command will remove the tools from the toolbox. If you need to reset the toolbox, just add the controls as described above.

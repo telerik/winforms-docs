@@ -477,8 +477,14 @@ Telerik.WinControls.Themes.TelerikMetroTouch.dll</td></tr><tr><td>
 <b>Material</b></td><td>
 
 Telerik.WinControls.Themes.Material.dll</td></tr><tr><td>
+<b>MaterialPink</b></td><td>
+Telerik.WinControls.Themes.MaterialPink.dll</td></tr><tr><td>
+<b>MaterialTeal</b></td><td>
+Telerik.WinControls.Themes.MaterialTeal.dll</td></tr><tr><td>
+<b>MaterialBlueGray</b></td><td>
+Telerik.WinControls.Themes.MaterialBlueGray.dll</td></tr>
 
-<b>VisualStudio2012Dark</b></td><td>
+<tr><td><b>VisualStudio2012Dark</b></td><td>
 
 Telerik.WinControls.Themes.VisualStudio2012Dark.dll</td></tr><tr><td>
 
@@ -505,4 +511,5 @@ Telerik.WinControls.Themes.Windows8.dll</td></tr>
 <tr><td><b>RadPdfViewerNavigator</b></td><td>Telerik.WinControls.PdfViewer.dll</td></tr>
 <tr><td><b>RadCardView</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadMap</b></td><td>Telerik.WinControls.RadMap.dll</td></tr>
+<tr><td><b>RadSpreadsheet</b></td><td>Telerik.WinControls.RadSpreadsheet.dll</td></tr>
 </table>

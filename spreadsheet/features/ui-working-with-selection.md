@@ -188,7 +188,7 @@ selection.ActiveCellMode = ActiveCellMode.Edit
  
 {{endregion}} 
 
-A similar logic applies to the Select() methods which take shapes as their parameters.
+<!--- A similar logic applies to the Select() methods which take shapes as their parameters.
 
 The following result can be achieved with the sample code below:
 
@@ -242,6 +242,7 @@ The result will be the following:
 ![Rad Spreadsheet UI Selection 06](images/RadSpreadsheet_UI_Selection_06.png)
 
 Note that even though the clearSelection parameter is set to true, this will clear only the shape selection. The underlying cell selection will remain intact and will become visible in its previous state if the shape selection becomes empty.
+-->
 
 ## Selecting All Cells in a Worksheet
 

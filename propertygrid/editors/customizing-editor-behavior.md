@@ -47,6 +47,16 @@ End Sub
 
 {{endregion}}
 
+# PropertyGridSpinEditor null values support.
+
+The following snippet shows how you can enable the null values support in the spin editor:
+
+{{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.cs region=CustomizeEditor}} 
+{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.vb region=CustomizeEditor}} 
+
+{{endregion}}
+
+
 # See Also
 
 * [Custom Editors]({%slug winforms/propertygrid/editors/using-custom-editor%})

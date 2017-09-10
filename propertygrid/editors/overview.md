@@ -41,7 +41,7 @@ There are a number of build-in ediotrs which are used for editing different data
 |PropertyGridTextBoxEditor|Used for editing all data types that are not covered by other editors.|
 |PropertyGridUITypeEditor|Used for editing data types that have a UITypeEditor and are not covered by other editors.|
 
->note Since R3 2017 PropertyGridSpinEditor supports null values.
+>note Since R3 2017 PropertyGridSpinEditor supports null values. Detailed information is available [here]({%slug winforms/propertygrid/editors/customizing-editor-behavior%}).
 
 |   |   |
 |---|------|

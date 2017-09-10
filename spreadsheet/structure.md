@@ -65,32 +65,23 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
 
 ![Rad Spreadsheet Visual Structure 04](images/radspreadsheet-structure004.png)
 
-* __Worksheet__: A grid or table composed of columns and rows that make it convenient to enter, organize, calculate and consolidate data. It is composed of cells where you actually keep and manipulate data.
-            
+1. __Select All Control__: Allows you to quickly select all cells in a worksheet. It is located in the top left corner of the worksheet where the row header and column header meet.
 
-* __Rows__: Rows run horizontally in a worksheet. Each row is identified by a number in the row header. There are more than one million rows in each worksheet.
+2. __Worksheet__: A grid or table composed of columns and rows that make it convenient to enter, organize, calculate and consolidate data. It is composed of cells where you actually keep and manipulate data.
             
+3. __Merged Cell__: Multiple adjacent cells combined into a single larger cell. When merging multiple cells, only the value of the top-left cell is preserved.
 
-* __Row Header__: It is the left-most column containing the numbers used to identify each row in a worksheet. It is located to the left of column A in the worksheet.
-            
+4. __Column Header__: It is the top-most row containing the letters used to identify each column in a worksheet. It is located above row 1 in the worksheet.
 
-* __Column__: Columns run vertically in a worksheet. Each column is identified by a letter in the column header starting with A and running through to XFD.
-            
+5. __Row Header__: It is the left-most column containing the numbers used to identify each row in a worksheet. It is located to the left of column A in the worksheet.
+        
+6. __Cell__: Cell is the intersection point between a row and a column. It is the basic storage unit for data in RadSpreadsheet. In a cell name the row numbers always comes after the column letter.
 
-* __Column Header__: It is the top-most row containing the letters used to identify each column in a worksheet. It is located above row 1 in the worksheet.
-            
+7. __Rows__: Rows run horizontally in a worksheet. Each row is identified by a number in the row header. There are more than one million rows in each worksheet.
 
-* __Cell__: Cell is the intersection point between a row and a column. It is the basic storage unit for data in RadSpreadsheet. In a cell name the row numbers always comes after the column letter.
-            
+8. __Column__: Columns run vertically in a worksheet. Each column is identified by a letter in the column header starting with A and running through to XFD.
 
-* __Merged Cell__: Multiple adjacent cells combined into a single larger cell. When merging multiple cells, only the value of the top-left cell is preserved.
-            
+9. __Selection__: can occur either using the mouse pointer or through code behind. All actions performed on data, including formatting must be executed using selection.
 
-* __Selection__: can occur either using the mouse pointer or through code behind. All actions performed on data, including formatting must be executed using selection.
-            
-
-* __Select All Control__: Allows you to quickly select all cells in a worksheet. It is located in the top left corner of the worksheet where the row header and column header meet.
-            
-
-* __Sheet Selector__: Allows you to change the currently selected sheet or create a new one. In addition you can change the name of a given worksheet or the color of the corresponding tab.
+10. __Sheet Selector__: Allows you to change the currently selected sheet or create a new one. In addition you can change the name of a given worksheet or the color of the corresponding tab.
        
