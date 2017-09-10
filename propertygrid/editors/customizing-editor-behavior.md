@@ -52,7 +52,27 @@ End Sub
 The following snippet shows how you can enable the null values support in the spin editor:
 
 {{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.cs region=CustomizeEditor}} 
-{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.vb region=CustomizeEditor}} 
+{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.vb region=CustomizeEditor}}
+````C#
+void radPropertyGrid1_EditorInitialized(object sender, Telerik.WinControls.UI.PropertyGridItemEditorInitializedEventArgs e)
+{
+    PropertyGridTextBoxEditor editor = e.Editor as PropertyGridTextBoxEditor;
+    if (editor != null)
+    {
+        ((RadTextBoxElement)editor.EditorElement).Font = new Font(FontFamily.Families[12], 10, FontStyle.Bold);
+    }
+}
+
+````
+````VB.NET
+Private Sub radPropertyGrid1_EditorInitialized(ByVal sender As Object, ByVal e As PropertyGridItemEditorInitializedEventArgs)
+    Dim editor As PropertyGridTextBoxEditor = TryCast(e.Editor, PropertyGridTextBoxEditor)
+    If Not editor Is Nothing Then
+        CType(editor.EditorElement, RadTextBoxElement).Font = New Font(FontFamily.Families(12), 10, FontStyle.Bold)
+    End If
+End Sub
+
+```` 
 
 {{endregion}}
 
