@@ -1230,10 +1230,15 @@ navigation:
     themes:
         title: Themes
         position: 580
+    themes/theme-tutorials:
+        title: Theme Tutorials
+        position: 5
     themes/advanced-topics:
         title: Advanced Topics
+        position: 6
     themes/advanced-topics/adding-custom-redistributable-themes-to-your-application:
         title: Adding Custom Redistributable Themes to your Application
+        position: 0
     tools:
         title: Tools
         position: 590
