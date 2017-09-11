@@ -14,7 +14,9 @@ Thank you for choosing Telerik __RadSpreadsheet__!
 
 __RadSpreadsheet__ is a control that allows editing tabular data utilizing a variety of cell formatting options, styles and themes. 
 
-![Rad Spreadsheet Overview small](images/spreadsheet-overview001.png)
+![RadSpreadsheet Overview small](images/spreadsheet-overview001.png)
+
+>note **RadSpreadsheet** requires **.NET Framework 4.0** and cannot be used with an older version. 
 
 Some of its features are:
 
