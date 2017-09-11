@@ -1,4 +1,4 @@
-http://www.telerik.com/docs/default-source/ui-for-winforms/spreadsheetstrings7a5a46b014b44fc6b5926a6d366a26c0.zip---
+---
 title: Localization
 page_title: Localization
 description: Localization
@@ -32,6 +32,7 @@ End Sub
 {{endregion}} 
 
  
+>important You can download a XML file that contains all the currently used strings from here: [Strings file](http://www.telerik.com/docs/default-source/ui-for-winforms/spreadsheetstrings7a5a46b014b44fc6b5926a6d366a26c0.zip)
 >
 
 >note __SpreadsheetLocalizationProvider__ contains all strings related to the __RadSpreadsheetRibbonBar__ as well.
