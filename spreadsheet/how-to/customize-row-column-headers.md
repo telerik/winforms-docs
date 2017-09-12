@@ -35,8 +35,7 @@ public class CustomNameConverter : HeaderNameRenderingConverterBase
 {
     protected override string ConvertColumnIndexToNameOverride(HeaderNameRenderingConverterContext context, int columnIndex)
     {
-        if (columnIndex == 0 &&
-            context.VisibleRange.FromIndex.RowIndex >= 1 && context.VisibleRange.FromIndex.RowIndex <= 5)
+        if (columnIndex == 0)
         {
             return "First Name";
         }
