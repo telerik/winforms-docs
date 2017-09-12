@@ -1021,7 +1021,7 @@ navigation:
         title: SpreadProcessing
         position: 470
     spreadsheet:
-        title: Spreadsheet
+        title: Spreadsheet (Beta 
         position: 471
     spreadsheet/features:
         title: Features
