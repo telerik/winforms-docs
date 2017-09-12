@@ -44,7 +44,7 @@ private void radGridView1_RowPaint(object sender, GridViewRowPaintEventArgs e)
     if (dataRow != null)
     {
         double value = Convert.ToDouble(dataRow.RowInfo.Cells["UnitsInStock"].Value);
-        if (value < 20)
+        if (value > 20)
         {
             return;
         }
@@ -62,7 +62,7 @@ Private Sub radGridView1_RowPaint(ByVal sender As Object, ByVal e As GridViewRow
     Dim dataRow As GridDataRowElement = TryCast(e.Row, GridDataRowElement)
     If dataRow IsNot Nothing Then
         Dim value As Integer = Convert.ToInt32(dataRow.RowInfo.Cells("UnitsInStock").Value)
-        If value < 20 Then
+        If value > 20 Then
             Return
         End If
         Dim pen As Pen = If(value < 0, Pens.Purple, Pens.RoyalBlue)
