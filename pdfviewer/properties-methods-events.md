@@ -31,7 +31,8 @@ position: 4
 |__ThumbnailListWidth__|Get or Set the width of the Thumbnail list|
 |__PrintScalePageToPaperSize__|Scale page when printing to fit the paper size without keeping the aspect ratio.|
 |__PrintOrientation__|Set or get the page orientation when printing.|
-|__PdfViewerElement.AllowSignatureDialog__|Allows you to disable the SignatureDialog.|
+|__PdfViewerElement.AllowSignatureDialog__|Allows you to disable the SignatureDialog and SingSignatureDialog|
+|__PdfViewerElement.AllowSignSignatureDialog__|Allows you to disable the document signing.|
 
 # Methods
 
