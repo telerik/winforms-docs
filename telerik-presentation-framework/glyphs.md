@@ -2,7 +2,7 @@
 title:  Glyphs
 page_title:  Glyphs | Telerik Presentation Framework
 description: This article shows how one ca use the Glyphs from the TelerikWebUI font. 
-slug: winforms/themes/touch-enabled-themes
+slug: winforms/telerik-presentation-framework/glyphs
 tags: touch, themes
 published: True
 position: 27
