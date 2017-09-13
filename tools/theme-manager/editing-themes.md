@@ -19,7 +19,7 @@ To edit the list of themes loaded into a Theme Manager, follow these steps:
 
     ![tools-visual-style-builder-adding-custom-themes-to-your-application-editing-themes 001](images/tools-visual-style-builder-adding-custom-themes-to-your-application-editing-themes001.png)
 
-1. Select __Edit Themes__to open the __ThemeSource Collection Editor__.
+1. Select __Edit Themes__ to open the __ThemeSource Collection Editor__.
 
     ![tools-visual-style-builder-adding-custom-themes-to-your-application-editing-themes 002](images/tools-visual-style-builder-adding-custom-themes-to-your-application-editing-themes002.png)
 

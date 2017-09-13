@@ -29,15 +29,15 @@ To access the public API for paging you need to use the RadGridView.__MasterTemp
 
 * __IsPageChanging:__ Gets a value indicating whether a page change operation is underway.
 
-* __MoveToFirstPage:__ Sets RadGridView to its first page.
+* __MoveToFirstPage:__ Moves RadGridView to its first page.
 
-* __MoveToPreviousPage:__ Sets RadGridView to the previous page.
+* __MoveToPreviousPage:__ Moves RadGridView to the previous page.
 
-* __MoveToPage(int pageIndex):__ Sets RadGridView to a specific page.
+* __MoveToPage(int pageIndex):__ Moves RadGridView to a specific page.
 
-* __MoveToNextPage:__ Sets RadGridView to the next page.
+* __MoveToNextPage:__ Moves RadGridView to the next page.
 
-* __MoveToLastPage:__ Sets RadGridView to its last page.
+* __MoveToLastPage:__ Moves RadGridView to its last page.
 
 * __PagingBeforeGrouping:__ Gets or sets a value indicating whether paging is performed before grouping or vice versa.
             
