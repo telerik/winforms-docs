@@ -684,6 +684,9 @@ navigation:
     map/drag-and-drop:
         title: Drag and Drop
         position: 8
+    map/how-to:
+        title: How-To
+        position: 9
     menus:
         title: Menus
         position: 290
