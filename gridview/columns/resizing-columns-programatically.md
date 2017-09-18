@@ -79,6 +79,8 @@ Me.RadGridView1.Columns("Photo").Width = 100
 
 You can restrict the possible values of the __Width__ property by setting the __MinWidth__ and __MaxWidth__ properties. The __MinWidth__ property sets a limit on how narrow the column can be resized. The __MaxWidth__ property determines the limit on how the column width can grow.
 
+>note The **DpiScale** property gives the effective Dpi scaling of the control. The **Width** property of the columns returns a value considering the **DpiScale**.
+
 ## Column Auto-Sizing
 
 There are two ways to auto size the columns:
