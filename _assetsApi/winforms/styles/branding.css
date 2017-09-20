@@ -234,10 +234,6 @@ pre {
     text-decoration: none;
 } 
 
-.pageBody {
-	padding: 0px;
-	position: relative;
-}
 .topicContent {
 	padding: 10px 10px 15px 10px;
 	border-left: 1px solid #ebecee;
@@ -661,5 +657,6 @@ sup.citation a:link a:visited a:active {
 @media (max-width:800px) {
 	#SearchForm {
 		display: none;
+
 	}
 }
