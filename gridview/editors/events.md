@@ -18,7 +18,7 @@ __EditorRequired:__  This is the first event that fires when a cell is to become
 >note This is the right place to replace the editor with a custom one.[Here]({%slug winforms/gridview/editors/using-custom-editors%}) is an example of this behavior.
 >
 
-__CellBeginEdit:__ Fires when the cell is about to enter edit mode. You can cancel edit mode at this stage by  setting the __Cancel__ property to *false*.
+__CellBeginEdit:__ Fires when the cell is about to enter edit mode. You can cancel edit mode at this stage by  setting the __Cancel__ property to *true*.
 
 __CellEditorInitialized:__ Fires when the editor is initialized and visible.
 
