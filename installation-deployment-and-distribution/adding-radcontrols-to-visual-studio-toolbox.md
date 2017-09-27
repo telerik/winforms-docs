@@ -21,7 +21,7 @@ Telerik UI for for WinForms are automatically added to Visual Studio 2005/2008/2
 
 1. Expand the Toolbox.
 
-1. Right-click the Toolbox in the empty area underneath and choose __Add Tab__ to create a new tab. Name the tab "__Telerik UI for for WinForms__".
+1. Right-click the Toolbox in the empty area underneath and choose __Add Tab__ to create a new tab. Name the tab "__Telerik UI for WinForms__".
          
 1. Right-click in the empty space of the newly created tab and select __Choose Items__. A dialog will open, which lists all available controls from the assemblies in the GAC.
             
