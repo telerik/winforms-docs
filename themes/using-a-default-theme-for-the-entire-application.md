@@ -29,7 +29,7 @@ ThemeResolutionService.ApplicationThemeName = "Office2007Black"
 
 {{endregion}} 
 
->important You still have to drop the theme component on the form (e.g. *Office2007Black* in the code samples above) or create an instance of the desired theme programmatically.
+>important You still have to drop the theme component on the form (e.g. *Office2007Black* in the code samples above) or create an instance of the desired theme programmatically. As the static **ApplicationThemeName** property affects the whole application this needs to be done only once. A suitable place is the constructor of the first form used in the application. 
 >
 
 All your controls will use that specified theme which has precedence over the theme set locally to the control using __ThemeName__ property.

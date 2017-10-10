@@ -45,13 +45,13 @@ The event fires after one or more grid rows are changed. __GridViewCollectionCha
 
 ## CollectionChanging
 
-__CollectionChanging__ event is a generic event. It can be used for __Collumns__ and __Rows__. The events are accessible from the __Collumns__ and __Rows__ collection respectively. 
+__CollectionChanging__ event is a generic event. It can be used for __Columns__ and __Rows__. The events are accessible from the __Columns__ and __Rows__ collection respectively. 
 
 __CollectionChanging__ is equivalent to __RowsChanging__ event.
 
 ## CollectionChanged
 
-__CollectionChanged__ event is a generic event. It can be used for both __Collumns__ and __Rows__.The events are accessible from the __Collumns__ and __Rows__ collection respectively. 
+__CollectionChanged__ event is a generic event. It can be used for both __Columns__ and __Rows__.The events are accessible from the __Columns__ and __Rows__ collection respectively. 
 
 __CollectionChanged__ is equivalent to __RowsChanged__ event.
 # See Also
