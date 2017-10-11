@@ -8,6 +8,8 @@
 		
         <link href="{{site.baseurl}}/favicon.ico?Version=2016" rel="shortcut icon" />
 		
+		<link rel="canonical" href="{{ site.url }}{{ page.url | replace: '.html','' }}" />
+		
         {% if page.description %}<meta name="description" content="{{page.description}}">{% endif %}
 		<meta name="page-position" content="{{page.position}}">        
         <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
