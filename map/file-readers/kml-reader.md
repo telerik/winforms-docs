@@ -18,8 +18,6 @@ __RadMap__ provides support for stunning map overlays through its KML-import fea
 
 To read your data you have to use a __KmlReader__.
 
->note The KML reader is available only when using .NET Framework 4.0 or higher versions.
-
 #### Using KmlReader
 
 {{source=..\SamplesCS\Map\MapFileReaders.cs region=SetupKMLReader}} 
