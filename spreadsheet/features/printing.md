@@ -41,6 +41,22 @@ Depending on whether you want to show a print preview before printing you may us
 
 {{source=..\SamplesCS\Spreadsheet\SpreadsheetPrinting.cs region=PrintMethod}} 
 {{source=..\SamplesVB\Spreadsheet\SpreadsheetPrinting.vb region=PrintMethod}}
+````C#
+// Prints silently to the default printer without showing the print dialog.
+var settings = new PrintWhatSettings(ExportWhat.ActiveSheet, false);
+radSpreadsheet1.SpreadsheetElement.Print(settings);
+// Prints showing the print dialog.
+radSpreadsheet1.SpreadsheetElement.PrintPreview();
+
+````
+````VB.NET
+'Prints silently to the default printer without showing the print dialog.
+Dim settings = New PrintWhatSettings(ExportWhat.ActiveSheet, False)
+radSpreadsheet1.SpreadsheetElement.Print(settings)
+'Prints showing the print dialog.
+radSpreadsheet1.SpreadsheetElement.PrintPreview()
+
+````
 
 
 
