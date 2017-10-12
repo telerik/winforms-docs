@@ -22,6 +22,8 @@ The following tutorial demonstrates configuring __RadStatusStrip__ at design-tim
 3\. In the designer click the __RadStatusStrip__ label *Type here* and enter *Current:*. This step is one way to create a __RadLabelElement__ in __RadStatusStrip__ and populate it.
 
 4\. Using the downward arrow of the __RadStatusStrip__ add a __RadLabelElement__. In the __Properties Window__ set the __Name__ property to be *lblStatus* and the __Spring__ property to __true__.
+
+>note Setting the **Spring** property to *true* will stretch horizontally the respective element. Thus, this element will occupy the free space and the rest of the elements will be positioned on the right most side when resizing the **RadStatusStrip**. 
             
 ![forms-and-dialogs-statusstrip-getting-started 002](images/forms-and-dialogs-statusstrip-getting-started002.png)
 
