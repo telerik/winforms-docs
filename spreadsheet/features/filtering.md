@@ -3,7 +3,7 @@ title: Filtering
 page_title: Filtering | UI for WinForms Documentation
 description: Filtering
 slug: radspreadsheet-features-filtering
-tags: freeze,panes
+tags: filtering
 published: True
 position: 4
 ---
