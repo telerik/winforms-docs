@@ -14,7 +14,9 @@ With every release of UI for WinForms, we try to avoid introducing changes that 
 
 Telerik Upgrade API Analyzer could be used when upgrading your desktop application such as WPF or WinForms as well as your Silverlight or ASP.NET Web application.
 
-**Telerik Upgrade API Analyzer** currently supports Telerik releases from R1 2015 up to R1 2017. Additional releases can be added upon request. 
+**Telerik Upgrade API Analyzer** currently supports Telerik releases from R1 2015 up to current version. Additional releases can be added upon request. 
+
+>note If you get a message saying that the DataFlow assmbly cannot be found you may need to install the [Microsoft build tools](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
 
 ## Why Do You Need This Tool?
 
