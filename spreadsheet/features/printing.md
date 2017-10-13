@@ -74,7 +74,7 @@ The bellow image shows the options available in the PrintPreview dialog.
 When you need to set different print option such as page size, page orientation or when you want to print the spreadsheet grid lines you may set this options using the worksheet's page setup. For more detailed information you may follow [this link](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/worksheetpagesetup) to __WorksheetPageSetup__ documentation article.
         
 
->You can apply headers and footers to the printed document. For more details on how to achieve this, refer to the [Headers and Footers topic]({%slug radspreadsheet-features-headers-and-footers%}).
+>note You can apply headers and footers to the printed document. For more details on how to achieve this, refer to the [Headers and Footers topic]({%slug radspreadsheet-features-headers-and-footers%}).
 
 ## Ribbon UI
 

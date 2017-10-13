@@ -26,5 +26,5 @@ The documentation of RadSpreadsheet's document model contains several *Working w
 The documentation also includes a Features folder that contains information about all features currently supported by the model of RadSpreadsheet.
       
 
-In the Import/Export section you will find detailed information and multiple examples for using all format providers.
+In the [Import/Export](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/general-information) section you will find detailed information and multiple examples for using all format providers.
       
