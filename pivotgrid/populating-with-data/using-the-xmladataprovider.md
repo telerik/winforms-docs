@@ -56,7 +56,7 @@ XmlaDataProvider provider = new XmlaDataProvider();
 XmlaConnectionSettings settings = new XmlaConnectionSettings();
 settings.Cube = "Adventure Works";
 settings.Database = "Adventure Works DW 2008R2";
-settings.ServerAddress = "http://demos.telerik.com/olap/msmdpump.dll";
+settings.ServerAddress = "https://demos.telerik.com/olap/msmdpump.dll";
 provider.ConnectionSettings = settings;
 
 ````
@@ -65,7 +65,7 @@ Dim provider As New XmlaDataProvider()
 Dim settings As New XmlaConnectionSettings()
 settings.Cube = "Adventure Works"
 settings.Database = "Adventure Works DW 2008R2"
-settings.ServerAddress = "http://demos.telerik.com/olap/msmdpump.dll"
+settings.ServerAddress = "https://demos.telerik.com/olap/msmdpump.dll"
 provider.ConnectionSettings = settings
 
 ````

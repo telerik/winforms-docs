@@ -58,7 +58,7 @@ AdomdDataProvider provider = new AdomdDataProvider();
 AdomdConnectionSettings settings = new AdomdConnectionSettings();
 settings.Cube = "Adventure Works";
 settings.Database = "Adventure Works DW 2008R2";
-settings.ConnectionString = "Data Source=http://demos.telerik.com/olap/msmdpump.dll;Catalog=Adventure Works DW 2008R2";
+settings.ConnectionString = "Data Source=https://demos.telerik.com/olap/msmdpump.dll;Catalog=Adventure Works DW 2008R2";
 provider.ConnectionSettings = settings;
 
 ````
@@ -67,7 +67,7 @@ Dim provider As New AdomdDataProvider()
 Dim settings As New AdomdConnectionSettings()
 settings.Cube = "Adventure Works"
 settings.Database = "Adventure Works DW 2008R2"
-settings.ConnectionString = "Data Source=http://demos.telerik.com/olap/msmdpump.dll;Catalog=Adventure Works DW 2008R2"
+settings.ConnectionString = "Data Source=https://demos.telerik.com/olap/msmdpump.dll;Catalog=Adventure Works DW 2008R2"
 provider.ConnectionSettings = settings
 
 ````
