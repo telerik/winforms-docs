@@ -91,6 +91,17 @@ You can add a fill or fore color sort condition through the sorting dialog by fo
 * Use the second of the drop down menus to specify whether rows with this color should be ordered on the top or on the bottom of the sort order.
 * Press OK.
 
+The other way to add a sort condition is through the filtering popup. When you open the filtering popup, you will find a *Sort by Color* option shown on Figure 5 , which will be enabled if you have different fore colors or fill colors in the column of the filtered range. Choosing a color will automatically set the rows with this fill color or fore color on the top of the sort order.
+
+>caption Figure 5: Filtering Popus Sorting by Color
+
+![spreadsheet-features-sorting 005](images/spreadsheet-features-sorting005.png)
+
+## See Also
+
+* [Model Filtering](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/filtering)
+* [Filtering]({%slug radspreadsheet-features-filtering%})
+
 
 
 
