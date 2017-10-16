@@ -34,6 +34,8 @@ Figure 2 shows hot to turn the option on and the result when invalid data is pre
 
 ![spreadsheet-features-data-validation 002](images/spreadsheet-features-data-validation002.png)
 
+![spreadsheet-features-data-validation 003](images/spreadsheet-features-data-validation003.png)
+
 Example 1 shows the use of the two methods that toggle this functionality - **CircleInvalidData**() and **ClearInvalidDataCircles**().
 
 #### Example 1: Turn on and off Invalid Data Circles.
