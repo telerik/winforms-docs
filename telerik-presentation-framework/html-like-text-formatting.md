@@ -172,6 +172,11 @@ Me.RadLabel1.Text = "<html><size=12><a href=www.telerik.com>Telerik</a>" & Envir
 
 {{endregion}} 
 
+The hyperlink colors can be controlled by the following static properties: 
+
+* TinyHTMLParsers.**LinkColor** : defaul color of the hyperlink
+* TinyHTMLParsers.**LinkClickedColor** : visited color of the hyperlink
+
 ![tpf-html-like-text-formatting 003](images/tpf-html-like-text-formatting003.png)
 
 It is possible to detect which link among several ones is clicked within the __RadLabel__. For this purpose we will use the TextPrimitiveHtmlImpl.TextBlock.__Lines__ collection, which represents the available text lines in the __RadLabel__. Each __TextLine__ consists of __FormattedText__  parts. This __FormattedText__ containing the mouse is associated with the clicked hyperlink:

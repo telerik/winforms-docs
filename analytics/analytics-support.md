@@ -143,11 +143,12 @@ Currently only few controls support analytics out of the box. Note that only use
 |**RadRichTextEditor**|New, Open, Save, Print, PrintPreview|
 |**RadScheduler**|ViewChanged, Import, Export, Editing, Creating, DragAndDrop, Resize, ShowDialog|
 |**RadSpinEditor**|SelectionChanged|
+|**RadSpreadSheet**|Open Document, Save Document, Hyperlink Click|
 |**RadTimePicker**|ValueChanged|
 |**RadToggleButton**|Checked,  Unchecked|
 |**RadToggleSwitch**|Checked, Unchecked|
 |**RadTrackBar**|SelectionChanged|
-|**RadTreeView**|SelectExpand, Collapse, SelectionChanged, Edit, RemoveionChanged|
+|**RadTreeView**|Select, Expand/Collapse, SelectionChanged, Edit, NodeRemoved|
 |**RadWaitingBar**|StartWaiting, EndWaiting|
 |**Exporting features in controls**|All export providers(including async exports) - when export operation is completed|
 
