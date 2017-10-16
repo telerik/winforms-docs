@@ -93,10 +93,20 @@ Some of its features are:
 
     - Math and Trigonometry
 
+* Filtering
+
+* Printing
+
 * Easy integration with __RadSpreadSheetRibbonBar__
 
 ## See Also
 
  * [Getting Started]({%slug radspreadsheet-getting-started%})
+ 
+ * [Spread Processing Features]({%slug radspreadsheet-features-spreadprocessing-features%})
+ 
+ * [Working with UI Selection]({%slug radspreadsheet-features-ui-working-with-selection%})
+
+ * [Printing]({%slug radspreadsheet-features-printing%})
 
  * [Unsupported Features]({%slug radspreadsheet-unsupported-features%})

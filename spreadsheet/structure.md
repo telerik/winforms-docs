@@ -59,11 +59,18 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
             
 
 * __Formula Box__: Displays the data or formula stored in the active cell. It can be used to enter or edit a formula, a function, or data in a cell.
+
+## RadSpreadsheet's Status Bar Visual Structure
+
+![Rad Spreadsheet Visual Structure 05](images/radspreadsheet-structure004.png)
+
+* __Label__: Indicates the current status of the loaded document.
             
+* __Zoom Control__: Zooms in and out the document. The control consists of a button opening a dialog with the zoom percentage and a track bar.
 
 ## RadSpreadsheet Visual Structure
 
-![Rad Spreadsheet Visual Structure 04](images/radspreadsheet-structure004.png)
+![Rad Spreadsheet Visual Structure 04](images/radspreadsheet-structure005.png)
 
 1. __Select All Control__: Allows you to quickly select all cells in a worksheet. It is located in the top left corner of the worksheet where the row header and column header meet.
 
