@@ -78,7 +78,7 @@ When you need to set different print option such as page size, page orientation 
 
 ## Ribbon UI
 
-Our RadSpreadsheetRibbonBar allow you to print the current document as well. The print option is accessible from the application menu. In this case you have exactly the same options like in the PrintPreviw dialog. 
+Our **RadSpreadsheetRibbonBar** allows you to print the current document as well. The print option is accessible from the application menu. In this case you have exactly the same options like in the **PrintPreview** dialog. 
 
 >caption Printing from RadSpreadsheetRibbonBar
 ![RadSpreadsheet Printing ](images/radspreadsheet-features-printing002.png)

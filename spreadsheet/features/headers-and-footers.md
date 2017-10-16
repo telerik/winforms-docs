@@ -15,7 +15,7 @@ The Headers and Footers functionality enables you to add rich text content in th
 
 ## Overview
 
-RadSpreadsheet enables you to add headers and footers in a spreadsheet’s worksheet. The headers and footers appear when you print the worksheet or export it to a PDF document; they are not displayed on the worksheet when the document is visualized when you work with it in the application.
+**RadSpreadsheet** enables you to add headers and footers in a spreadsheet’s worksheet. The headers and footers appear when you print the worksheet or export it to a PDF document; they are not displayed on the worksheet when the document is visualized when you work with it in the application.
 
 >caption Figure 1: Headers and footers in a spreadsheet
 ![radspreadsheet-features-headers-footers](images/radspreadsheet-features-headers-footers-001.png)
