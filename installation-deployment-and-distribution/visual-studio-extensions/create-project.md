@@ -13,13 +13,13 @@ previous_url: installation-deployment-and-distribution-vsx-creation-and-configur
 
 ## 
 
-With the new Visual Studio Extensions for WinForms you can quickly create an application pre-configured to use Telerik UI for for WinForms. The quickest way to have such a project is using the Visual Studio New Project Wizard. Under the Telerik node there is a new node – Windows, where two project templates exist: 
+With the new Visual Studio Extensions for WinForms you can quickly create an application pre-configured to use Telerik UI for WinForms. The quickest way to have such a project is using the Visual Studio New Project Wizard. Under the Telerik node there is a new node – Windows, where two project templates exist: 
 
 ![installation-deployment-and-distribution-vsx-create-project 001](images/installation-deployment-and-distribution-vsx-overview004.png)
 
 For convenience the same project templates could be found under the __Visual C# -> Windows__  and __Visual Basic -> Windows__ nodes.
 
-After you click the __OK__ button, you get the Create New Project Wizard, provided by the Telerik UI for for WinForms Visual Studio Extensions. The wizard detects all the installed distributions of Telerik UI for for WinForms and lists them in a combo box. You can select a version which you want to be applied to your project. You can select what type of project to be created: Standard, Word-Inspired or Outlook-Inspired. You can access the Create New Project Wizard through the Telerik menu when you need to create a new Telerik WinForms application: 
+After you click the __OK__ button, you get the Create New Project Wizard, provided by the Telerik UI for WinForms Visual Studio Extensions. The wizard detects all the installed distributions of Telerik UI for WinForms and lists them in a combo box. You can select a version which you want to be applied to your project. You can select what type of project to be created: Standard, Word-Inspired or Outlook-Inspired. You can access the Create New Project Wizard through the Telerik menu when you need to create a new Telerik WinForms application: 
 
 The Create New Project Wizard lets you:
 

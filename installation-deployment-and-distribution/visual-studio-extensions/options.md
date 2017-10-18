@@ -17,7 +17,7 @@ It can be accessed through the __Visual Studio | Telerik | VSExtensions Options�
 
 ![installation-deployment-and-distribution-vsx-options-dialog 001](images/installation-deployment-and-distribution-vsx-options-dialog001.png)
 
-The __Options__ dialog contains two sets of options that affect the __Telerik UI for for WinForms__ Visual Studio Extensions.
+The __Options__ dialog contains two sets of options that affect the __Telerik UI for WinForms__ Visual Studio Extensions.
 
 ![installation-deployment-and-distribution-vsx-options-dialog 002](images/installation-deployment-and-distribution-vsx-options-dialog002.png)
 
@@ -29,9 +29,9 @@ __Copy referenced assemblies to solution and integrate with source control__ - W
 
 ## Project Upgrade Notifications for Detected Local Distributions
 
-__Suggest project upgrades for Telerik product version available on my computer__  – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI for for WinForms installed on your system
+__Suggest project upgrades for Telerik product version available on my computer__  – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI for WinForms installed on your system
 
-__Suggest upgrades when an equal Dev release is detected on projects using a Trial__ – When enabled, you will be prompted to upgrade if a licensed version of Telerik UI for for WinForms is available on your system, but the current project uses a trial version
+__Suggest upgrades when an equal Dev release is detected on projects using a Trial__ – When enabled, you will be prompted to upgrade if a licensed version of Telerik UI for WinForms is available on your system, but the current project uses a trial version
 
 ![installation-deployment-and-distribution-vsx-options-dialog 003](images/installation-deployment-and-distribution-vsx-options-dialog003.png)
 

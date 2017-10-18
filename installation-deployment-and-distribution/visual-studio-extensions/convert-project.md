@@ -19,7 +19,7 @@ Telerik Visual Studio extensions Convert Project Wizard could be accessed throug
 
 The wizard could be also reached through the context menu counterparts accessed by right clicking on the project you want to convert.
 
-The Convert Project Wizard lets you tune your project's use of UI for WinForms.
+The Convert Project Wizard lets you tune your project's use of Telerik UI for WinForms.
 
 ![installation-deployment-and-distribution-vsx-convert-project 001](images/installation-deployment-and-distribution-vsx-convert-project001.png)
 
@@ -29,7 +29,7 @@ The wizard’s first page lets you:
 
 * Download the latest versions available on our website using the __GET LATEST__ button
 
-* Specify which assemblies your project would use. When selecting a UI for WinForms assembly all dependent controls are selected automatically and vice-versa.
+* Specify which assemblies your project would use. When selecting a Telerik UI for WinForms assembly all dependent controls are selected automatically and vice-versa.
 
 >note GET LATEST button is available only when there is a newer version released on our web site.
 >
