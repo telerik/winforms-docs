@@ -28,6 +28,7 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
 
 * __RadSpreadsheet:__  A control that has a number of built-in features and tools, such as functions, formulas and data analysis tools that make it easier to work with large amounts of data.
             
+* __StatusBar:__  A control displaying the current status of the document and allowing zooming the content.
 
 ## RadSpradsheet's Ribbon View Visual Structure
 

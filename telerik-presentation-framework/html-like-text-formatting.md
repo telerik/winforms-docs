@@ -174,8 +174,8 @@ Me.RadLabel1.Text = "<html><size=12><a href=www.telerik.com>Telerik</a>" & Envir
 
 The hyperlink colors can be controlled by the following static properties: 
 
-* TinyHTMLParsers.**LinkColor** : defaul color of the hyperlink
-* TinyHTMLParsers.**LinkClickedColor** : visited color of the hyperlink
+* TinyHTMLParsers.**LinkColor**: defaul color of the hyperlink
+* TinyHTMLParsers.**LinkClickedColor**: visited color of the hyperlink
 
 ![tpf-html-like-text-formatting 003](images/tpf-html-like-text-formatting003.png)
 
