@@ -13,7 +13,7 @@ previous_url: installation-deployment-and-distribution-vsx-toolbox-configurator
 
 ## 
 
-Starting with __Q3 2010__ we introduced the __Toolbox Configuration__ utility. Its purpose is to choose which version of __UI for WinForms__ to be populated in the Visual Studio’s Toolbox. The user can select among all versions of the suite that are currently on the machine and have been either installed or downloaded using the __VS Extensions__.
+Starting with __Q3 2010__ we introduced the __Toolbox Configuration__ utility. Its purpose is to choose which version of __Telerik UI for WinForms__ to be populated in the Visual Studio’s Toolbox. The user can select among all versions of the suite that are currently on the machine and have been either installed or downloaded using the __VS Extensions__.
         
 
 The Toolbox Configurator can be launched from the Telerik menu:
