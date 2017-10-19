@@ -141,6 +141,8 @@ Me.RadToggleButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Prim
 
 ![tpf-override-theme-settings-at-run-time 005](images/tpf-override-theme-settings-at-run-time005.gif)
 
+>note You can use the **ResetThemeValueOverrides** method if you need to reset the applied style for a specific state of the element.
+
 # See Also
 
 * [Inherit themes from RadControls derivatives]({%slug winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives%})
