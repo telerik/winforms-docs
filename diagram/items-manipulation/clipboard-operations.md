@@ -38,8 +38,6 @@ You can use the __DiagramCommands__ "Cut", "Copy" and "Paste" in order to perfor
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=ClipboardCommands}} 
 
 ````C#
- 
-            
 this.radDiagram1.SelectedItem = shape1;
 this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Copy, "");
 this.radDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "");

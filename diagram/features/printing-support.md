@@ -22,7 +22,6 @@ __RadDiagram__ has two public methods available for printing - __Print()__ and _
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=Print}} 
 
 ````C#
-            
 this.radDiagram1.Print();
 this.radDiagram1.Print(true);
 
@@ -42,7 +41,6 @@ The other available method is __PrintPreview()__, which opens  [RadPrintPreviewD
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=PrintPreview}} 
 
 ````C#
-            
 this.radDiagram1.PrintPreview();
 
 ````

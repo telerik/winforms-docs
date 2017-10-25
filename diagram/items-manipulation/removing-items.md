@@ -29,7 +29,6 @@ You can remove __RadDiagramItems__ in code behind by using the RadDiagram.__Item
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=RemoveItems}} 
 
 ````C#
-            
 this.radDiagram1.Items.RemoveAt(2);
 this.radDiagram1.Items.Remove(shape1);
 
@@ -51,7 +50,6 @@ You can use the __DiagramCommand__ "Delete" in order to remove the selected __Ra
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=DeleteCommands}} 
 
 ````C#
-            
 this.radDiagram1.SelectedItem = shape1;
 this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Delete, "");
 

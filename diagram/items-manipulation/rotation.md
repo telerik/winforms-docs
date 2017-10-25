@@ -23,7 +23,6 @@ By default, the __RadDiagram__ is enabled for rotation manipulation. In order to
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EnableRotation}} 
 
 ````C#
-            
 this.radDiagram1.IsRotationEnabled = false;
 
 ````
@@ -45,7 +44,6 @@ You can rotate shapes by using their __RotationAngle__ property:
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=RotationAngle}} 
 
 ````C#
-            
 RadDiagramShape sourceShape = new RadDiagramShape()
 {
     Text = "Text",

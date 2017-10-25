@@ -25,7 +25,6 @@ By default, the __RadDiagramItems__ are enabled for editing. In order to disable
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=IsEditable}} 
 
 ````C#
-            
 this.radDiagram1.IsEditable = true;
 
 ````
@@ -61,6 +60,7 @@ In the code snippet below it is demonstrated how to access the editor element:
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=GetEditor}} 
 
 ````C#
+        
 private void shape_BeginEdit(object sender, EventArgs e)
 {
     RadDiagramShape shape = sender as RadDiagramShape;
@@ -97,17 +97,16 @@ __RadDiagram__ provides three predefined commands for editing the selected item 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EditCommands}} 
 
 ````C#
-    
+        
 private void radButtonEdit_Click(object sender, EventArgs e)
 {
     this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.BeginEdit);
 }
-    
+        
 private void radButtonConfirm_Click(object sender, EventArgs e)
 {
     this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CommitEdit);
 }
-        
 private void radButtonCancel_Click(object sender, EventArgs e)
 {
     this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CancelEdit);

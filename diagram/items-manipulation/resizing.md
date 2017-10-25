@@ -23,7 +23,6 @@ By default, the __RadDiagram__ is enabled for resizing manipulation. In order to
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EnableResizing}} 
 
 ````C#
-            
 this.radDiagram1.IsResizingEnabled = false;
 
 ````
@@ -50,7 +49,6 @@ You can resize shapes by using their __Width__ and __Height__ properties:
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=ResizeShape}} 
 
 ````C#
-            
 RadDiagramShape resizedShape = new RadDiagramShape()
 {
     Text = "",

@@ -108,17 +108,16 @@ Below is shown a sample code snippet how you can use some of the Diagram Command
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=CommandsExample}} 
 
 ````C#
-    
+        
 private void radButton1_Click(object sender, EventArgs e)
 {
     this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy);
 }
-    
+        
 private void radButton2_Click(object sender, EventArgs e)
 {
     this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste);
 }
-        
 private void radButton3_Click(object sender, EventArgs e)
 {
     this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left");

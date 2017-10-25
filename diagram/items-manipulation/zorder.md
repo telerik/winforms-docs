@@ -128,7 +128,7 @@ shape3.Position = new Telerik.Windows.Diagrams.Core.Point(60, 80);
 radDiagram1.AddShape(shape3);
             
 RadDiagramConnection connection1 = new RadDiagramConnection() { Name = "connection1" };
-connection1.Source = shape1; 
+connection1.Source = shape1;
 connection1.Target = shape2;
 connection1.ZIndex = 2;
 connection1.SourceConnectorPosition = "Right";

@@ -22,7 +22,6 @@ The __SettingsPane__ control allows the users to examine and modify the settings
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SettingsPane}} 
 
 ````C#
-            
 this.radDiagram1.IsSettingsPaneEnabled = true;
 
 ````
@@ -55,7 +54,6 @@ In order to display the DiagramElement.__SettingsPane__ in your application, you
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=AdditionalContent}} 
 
 ````C#
-    
 RadButtonElement additionalContent = Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner.GetAdditionalContent(
     this.radDiagram1.DiagramElement.ItemInformationAdorner) as RadButtonElement;
 
@@ -81,7 +79,6 @@ The __SettingsPane__ has a default view that can be used out-of-the-box in scena
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=AddRemoveTabs}} 
 
 ````C#
-            
 this.radDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Remove(this.radDiagram1.DiagramElement.SettingsPane.RadPageViewPageHome);
 RadPageViewPage toolsPage = new RadPageViewPage();
 toolsPage.Text = "Tools";
@@ -126,12 +123,11 @@ Me.RadDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Add(toolsPage)
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EditTabs}} 
 
 ````C#
-            
 RadButton myButton = new RadButton();
 myButton.Text = "New";
 myButton.Size = this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Size;
 myButton.Location = this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Location;
-this.radDiagram1.DiagramElement.SettingsPane.PanelCopyCutPaste.Controls.Add(myButton);        
+this.radDiagram1.DiagramElement.SettingsPane.PanelCopyCutPaste.Controls.Add(myButton);
 this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Visible = false;
 
 ````

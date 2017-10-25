@@ -19,8 +19,6 @@ __RadDiagram__ uses the __ItemInformationAdorner__ to visualize information rega
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EnableInformationAdorner}} 
 
 ````C#
-           
-            
 this.radDiagram1.IsInformationAdornerVisible = true;
 
 ````
@@ -52,7 +50,7 @@ class MyItemInformationAdorner : Telerik.WinControls.UI.Diagrams.Primitives.Item
 {
     public MyItemInformationAdorner(RadDiagramElement diagram)
     {
-        this.Diagram = diagram;                 
+        this.Diagram = diagram;
     }
         
     protected override void CreateChildElements()
@@ -110,7 +108,6 @@ Now, you should apply the custom __ItemInformationAdorner__ to __DiagramElement_
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=AssignCustomItemInformationAdorner}} 
 
 ````C#
-            
 this.radDiagram1.DiagramElement.ItemInformationAdorner = new MyItemInformationAdorner(this.radDiagram1.DiagramElement);
 Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner item = this.radDiagram1.DiagramElement.ItemInformationAdorner;
 item.Width = 100;

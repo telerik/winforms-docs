@@ -50,7 +50,6 @@ In order to select items programmatically, you only need to set their __IsSelect
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=IsSelected}} 
 
 ````C#
-            
 RadDiagramShape shape1 = new RadDiagramShape()
 {
     Text = "",
@@ -60,7 +59,6 @@ RadDiagramShape shape1 = new RadDiagramShape()
 };
 shape1.Position = new Telerik.Windows.Diagrams.Core.Point(10, 10);
 radDiagram1.AddShape(shape1);
-            
 RadDiagramShape shape2 = new RadDiagramShape()
 {
     Text = "",
@@ -157,7 +155,6 @@ You may also want to use the __SelectedIndex__ or the __SelectedItem__ property 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SelectedIndex}} 
 
 ````C#
-            
 this.radDiagram1.SelectedIndex = 1;
 
 ````
