@@ -105,7 +105,7 @@ Some of its features are:
  
  * [Spread Processing Features]({%slug radspreadsheet-features-spreadprocessing-features%})
  
- * [Working with UI Selection]({%slug radspreadsheet-features-ui-working-with-selection%})
+ * [Working with UI Selection]({%slug radspreadsheet-ui-working-with-selection%})
 
  * [Printing]({%slug radspreadsheet-features-printing%})
 
