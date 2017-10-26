@@ -112,6 +112,8 @@ End Function
 
 {{endregion}} 
 
+>important A common case is that the resource_id field is stored as an integer field in your DataSource. But **RadScheduler** needs **EventId** type. You can have a look at the Appointment.**ResourceId** property which expects **EventId** value, not an integer. That is why it is necessary to use a **SchedulerMapping** in this case and convert the integer value to **EventId** used by **RadScheduler** and convert the **EventId** to an integer used by your **DataSource**. This conversion is performed by the **ConvertToDataSource** and **ConvertToScheduler** callbacks. Additional information for the **SchedulerMapping** is available [here]({%slug winforms/scheduler/data-binding/scheduler-mapping%})
+
 ## Many to Many Relations
 
 This covers the case of assigning many resources to many appointments. When you have relations between three tables (many to many) then you should have three tables: *Appointments*, *Resources* and  *AppointmentsResources*. *AppointmentResouces* should have two field names: one for the id of the appointment (__AppointmentId__), and one for id of the resource (__ResourceId__). Here we should have two relations: one between *Appointments* and *AppointmentsResources*, and one between *Resources* and *AppointmentsResources*.
