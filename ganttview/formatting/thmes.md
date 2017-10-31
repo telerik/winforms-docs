@@ -5,7 +5,7 @@ description: This article shows how you can change the styles of RadGanttView in
 slug: winforms/ganttview/themes
 tags: themes
 published: True
-position: 7
+position: 6
 ---
 
 # Themes
