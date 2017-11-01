@@ -10,7 +10,7 @@ position: 5
 
 # Creating Custom Cells
 
-__RadGanttView__ allows you to replace the standard cells displayed in the text view with custom ones. The following example demonstrates how to add a custom cell element having a check box.
+__RadGanttView__ allows you to replace the standard cells displayed in the text view with custom ones. The following examples demonstrates how to add a custom cell element having a check box.
 
 >caption Figure 1: Checkbox Cell 
 
