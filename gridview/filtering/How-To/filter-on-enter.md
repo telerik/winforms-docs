@@ -6,7 +6,6 @@ slug: winforms/gridview/filtering/basic-filtering
 tags: basic,filtering
 published: True
 position: 0
-previous_url: gridview-filtering-basic-filtering
 ---
 
 # Filter when Enter is pressed
