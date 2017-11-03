@@ -12,7 +12,7 @@ position: 0
 
 By default the filtering operation is performed on every keystroke. However a common case is to perform the filtering operation after the value is entered, for example when Enter is pressed. To achieve this you need to cancel the filtering operation until Enter is pressed. This is demonstrated in the following code snippet.
 
-# Cancel filtering until Enter is pressed. 
+#### Cancel filtering until Enter is pressed. 
 
 {{source=..\SamplesCS\GridView\Filtering\FilterOnEnter.cs region=FilterCode}} 
 {{source=..\SamplesVB\GridView\Filtering\FilterOnEnter.vb region=FilterCode}}
