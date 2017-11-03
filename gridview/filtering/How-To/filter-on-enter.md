@@ -16,7 +16,59 @@ By default the filtering operation is performed on every keystroke. However a co
 # Cancel filtering until Enter is pressed. 
 
 {{source=..\SamplesCS\GridView\Filtering\FilterOnEnter.cs region=FilterCode}} 
-{{source=..\SamplesVB\GridView\Filtering\FilterOnEnter.vb region=FilterCode}} 
+{{source=..\SamplesVB\GridView\Filtering\FilterOnEnter.vb region=FilterCode}}
+````C#
+private bool EnterPress = false;
+private void radGridView1_FilterChanging(object sender, GridViewCollectionChangingEventArgs e)
+{
+    if (!EnterPress)
+    {
+        e.Cancel = true;
+    }
+    EnterPress = false;
+}
+private void radGridView1_CellBeginEdit(object sender, GridViewCellCancelEventArgs e)
+{
+    if (e.Row is GridViewFilteringRowInfo)
+    {
+        RadTextBoxEditor ed = e.ActiveEditor as RadTextBoxEditor;
+        RadTextBoxEditorElement el = ed.EditorElement as RadTextBoxEditorElement;
+        el.KeyDown -= el_KeyDown;
+        el.KeyDown += el_KeyDown;
+    }
+}
+private void el_KeyDown(object sender, KeyEventArgs e)
+{
+    if (e.KeyCode == Keys.Enter)
+    {
+        EnterPress = true;
+    }
+}
+
+````
+````VB.NET
+Private EnterPress As Boolean = False
+Private Sub radGridView1_FilterChanging(ByVal sender As Object, ByVal e As GridViewCollectionChangingEventArgs)
+    If Not EnterPress Then
+        e.Cancel = True
+    End If
+    EnterPress = False
+End Sub
+Private Sub radGridView1_CellBeginEdit(ByVal sender As Object, ByVal e As GridViewCellCancelEventArgs)
+    If TypeOf e.Row Is GridViewFilteringRowInfo Then
+        Dim ed As RadTextBoxEditor = TryCast(e.ActiveEditor, RadTextBoxEditor)
+        Dim el As RadTextBoxEditorElement = TryCast(ed.EditorElement, RadTextBoxEditorElement)
+        RemoveHandler el.KeyDown, AddressOf el_KeyDown
+        AddHandler el.KeyDown, AddressOf el_KeyDown
+    End If
+End Sub
+Private Sub el_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
+    If e.KeyCode = Keys.Enter Then
+        EnterPress = True
+    End If
+End Sub
+
+```` 
 
 
 {{endregion}} 
