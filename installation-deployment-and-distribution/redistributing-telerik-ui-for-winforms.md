@@ -211,12 +211,12 @@ This section demonstrates how to deploy a project with a public token key. We wi
 
 ## Using the Telerik Document Processing Libraries in Your Solutions
 
-In order to include the Telerik Document Processing libraries in your application, you should build the source code as described below. The source code of the Document Processing libraries is distributed together with the Telerik UI for for WinForms source code and installation and is available for downloading from the client accounts. For brevity this document assumes that the source distribution ZIP file is extracted in C:\WinFormsDPLSource
-        
+In order to include the Telerik Document Processing libraries in your application, you should build the source code as described below. The source code of the Document Processing libraries is distributed together with the Telerik UI for for WinForms source code and installation and is available for downloading from the client accounts. For brevity this document assumes that the source distribution ZIP file is extracted in C:\DPL.
+         		         
+ 		 
+ __Instructions__
 
-__Instructions__
-
-1\. Open C:\WinFormsDPLSource\Documents\Core\Core\Licensing\AssemblyProtection.cs in a text editor (notepad, Visual Studio, etc.)
+1\. Open `C:\DPL\Documents\Licensing\AssemblyProtection.cs` in a text editor (notepad, Visual Studio, etc.). In versions of the suite prior to R2 2016, the path is `C:\DPL\Documents\Core\Core\Licensing\AssemblyProtection.cs`.   
             
 
 2\. Uncomment the following line:
