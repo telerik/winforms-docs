@@ -226,7 +226,7 @@ Dim dataProvider As New LocalDataSourceProvider()
 dataProvider.ItemsSource = dataset.Orders
 dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
 .PropertyName = "Freight", _
-.AggregateFunction = AggregateFunctions.Sum _
+.AggregateFunction = New SqrtSumAggregateFunction() _
 })
 Me.RadPivotGrid1.DataProvider = dataProvider
 
