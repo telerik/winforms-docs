@@ -30,41 +30,71 @@ public class ToggleStateConverter : TypeConverter
 {
     public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
     {
-        return destinationType == typeof(ToggleState);
+        return destinationType == typeof(ToggleState) || destinationType == typeof(bool);
     }
     public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
     {
-        char charValue = (char)value;
-                
-        switch (charValue)
+        if (value is char && destinationType == typeof(ToggleState))
         {
-            case 'Y':
-                return ToggleState.On;
-            case 'N':
-                return ToggleState.Off;
-            case 'M':
-                return ToggleState.Indeterminate;
+            char charValue = (char)value;
+            switch (charValue)
+            {
+                case 'Y':
+                    return ToggleState.On;
+                case 'N':
+                    return ToggleState.Off;
+                default:
+                    return ToggleState.Indeterminate; 
+            }
         }
-    
+        else if (value is bool && destinationType == typeof(char))
+        {
+            bool boolValue = (bool)value;
+            switch (boolValue)
+            {
+                case true:
+                    return 'Y';
+                case false:
+                    return 'N';
+                default:
+                    return 'M';
+            }
+        }
         return base.ConvertTo(context, culture, value, destinationType);
     }
-    
     public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
     {
-        return sourceType == typeof(ToggleState);
+        return sourceType == typeof(ToggleState) || sourceType == typeof(bool);
     }
     public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
     {
-        ToggleState state = (ToggleState)value;
-                
-        switch (state)
+        ToggleState state;
+        bool boolValue;
+        if (value is ToggleState)
         {
-            case ToggleState.On:
-                return 'Y';
-            case ToggleState.Off:
-                return 'N';
-            case ToggleState.Indeterminate:
-                return 'M';
+            state = (ToggleState)value;
+            switch (state)
+            {
+                case ToggleState.On:
+                    return 'Y';
+                case ToggleState.Off:
+                    return 'N';
+                default:
+                    return 'M';
+            }
+        }
+        else if (value is bool)
+        {
+            boolValue = (bool)value;
+            switch (boolValue)
+            {
+                case true:
+                    return 'Y';
+                case false:
+                    return 'N';
+                default:
+                    return 'M';
+            }
         }
         return base.ConvertFrom(context, culture, value);
     }
@@ -74,34 +104,60 @@ public class ToggleStateConverter : TypeConverter
 ````VB.NET
 Public Class ToggleStateConverter
     Inherits TypeConverter
-    Public Overrides Function CanConvertTo(ByVal context As ITypeDescriptorContext, ByVal destinationType As Type) As Boolean
-        Return destinationType.Equals(GetType(ToggleState))
+    Public Overrides Function CanConvertTo(context As ITypeDescriptorContext, destinationType As Type) As Boolean
+        Return destinationType Is GetType(ToggleState) OrElse destinationType Is GetType(Boolean)
     End Function
-    Public Overrides Function ConvertTo(ByVal context As ITypeDescriptorContext, ByVal culture As CultureInfo, ByVal value As Object, ByVal destinationType As Type) As Object
-        Dim charValue As Char = CChar(value)
-        Select Case charValue
-            Case "Y"
-                Return ToggleState.[On]
-            Case "N"
-                Return ToggleState.Off
-            Case "M"
-                Return ToggleState.Indeterminate
-        End Select
+    Public Overrides Function ConvertTo(context As ITypeDescriptorContext, culture As CultureInfo, value As Object, destinationType As Type) As Object
+        If TypeOf value Is Char AndAlso destinationType Is GetType(ToggleState) Then
+            Dim charValue As Char = CChar(value)
+            Select Case charValue
+                Case "Y"c
+                    Return ToggleState.On
+                Case "N"c
+                    Return ToggleState.Off
+                Case Else
+                    Return ToggleState.Indeterminate
+            End Select
+        ElseIf TypeOf value Is Boolean AndAlso destinationType Is GetType(Char) Then
+            Dim boolValue As Boolean = CBool(value)
+            Select Case boolValue
+                Case True
+                    Return "Y"c
+                Case False
+                    Return "N"c
+                Case Else
+                    Return "M"c
+            End Select
+        End If
         Return MyBase.ConvertTo(context, culture, value, destinationType)
     End Function
-    Public Overrides Function CanConvertFrom(ByVal context As ITypeDescriptorContext, ByVal sourceType As Type) As Boolean
-        Return sourceType.Equals(GetType(ToggleState))
+    Public Overrides Function CanConvertFrom(context As ITypeDescriptorContext, sourceType As Type) As Boolean
+        Return sourceType Is GetType(ToggleState) OrElse sourceType Is GetType(Boolean)
     End Function
-    Public Overrides Function ConvertFrom(ByVal context As ITypeDescriptorContext, ByVal culture As CultureInfo, ByVal value As Object) As Object
-        Dim state As ToggleState = DirectCast(value, ToggleState)
-        Select Case state
-            Case ToggleState.[On]
-                Return "Y"
-            Case ToggleState.Off
-                Return "N"
-            Case ToggleState.Indeterminate
-                Return "M"
-        End Select
+    Public Overrides Function ConvertFrom(context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object
+        Dim state As ToggleState
+        Dim boolValue As Boolean
+        If TypeOf value Is ToggleState Then
+            state = CType(value, ToggleState)
+            Select Case state
+                Case ToggleState.On
+                    Return "Y"c
+                Case ToggleState.Off
+                    Return "N"c
+                Case Else
+                    Return "M"c
+            End Select
+        ElseIf TypeOf value Is Boolean Then
+            boolValue = CBool(value)
+            Select Case boolValue
+                Case True
+                    Return "Y"c
+                Case False
+                    Return "N"c
+                Case Else
+                    Return "M"c
+            End Select
+        End If
         Return MyBase.ConvertFrom(context, culture, value)
     End Function
 End Class
@@ -179,7 +235,7 @@ Public Class Product
             Return m_ProductID
         End Get
         Set(ByVal value As Integer)
-            m_ProductID = Value
+            m_ProductID = value
         End Set
     End Property
     Private m_ProductID As Integer
@@ -188,7 +244,7 @@ Public Class Product
             Return m_ProductName
         End Get
         Set(ByVal value As String)
-            m_ProductName = Value
+            m_ProductName = value
         End Set
     End Property
     Private m_ProductName As String
@@ -197,7 +253,7 @@ Public Class Product
             Return m_Category
         End Get
         Set(ByVal value As String)
-            m_Category = Value
+            m_Category = value
         End Set
     End Property
     Private m_Category As String
@@ -206,7 +262,7 @@ Public Class Product
             Return m_UnitsInStock
         End Get
         Set(ByVal value As Integer)
-            m_UnitsInStock = Value
+            m_UnitsInStock = value
         End Set
     End Property
     Private m_UnitsInStock As Integer
@@ -215,7 +271,7 @@ Public Class Product
             Return m_UnitPrice
         End Get
         Set(ByVal value As Double)
-            m_UnitPrice = Value
+            m_UnitPrice = value
         End Set
     End Property
     Private m_UnitPrice As Double
@@ -225,7 +281,7 @@ Public Class Product
             Return m_IsOrganic
         End Get
         Set(ByVal value As Char)
-            m_IsOrganic = Value
+            m_IsOrganic = value
         End Set
     End Property
     Private m_IsOrganic As Char
@@ -234,7 +290,7 @@ Public Class Product
             Return m_DeliveryDate
         End Get
         Set(ByVal value As Double)
-            m_DeliveryDate = Value
+            m_DeliveryDate = value
         End Set
     End Property
     Private m_DeliveryDate As Double

@@ -24,15 +24,11 @@ Let’s start by specifying the RadPropertyGrid.__SelectedObject__ property, so 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=ClassItem}} 
 
 ````C#
-        
 public class Item
 {
     public int Id { get; set; }
-    
     public string Title { get; set; }
-    
     public DeliveryType DeliveryType { get; set; }
-    
     public Item(int id, string title, DeliveryType deliveryType)
     {
         this.Id = id;
@@ -40,7 +36,6 @@ public class Item
         this.DeliveryType = deliveryType;
     }
 }
-        
 public enum DeliveryType
 {
     Delivery,
@@ -100,15 +95,12 @@ Next, we should create a custom __PropertyGridValueElement__ which is purposed t
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=PropertyGridValueElement}} 
 
 ````C#
-        
 public class CustomPropertyGridValueElement : PropertyGridValueElement
 {
     StackLayoutElement stackPanel;
-    
     protected override void CreateChildElements()
     {
         base.CreateChildElements();
-        
         stackPanel = new StackLayoutElement();
         stackPanel.Orientation = Orientation.Vertical;
         foreach (var enumItem in Enum.GetValues(typeof(DeliveryType)))
@@ -120,7 +112,6 @@ public class CustomPropertyGridValueElement : PropertyGridValueElement
         }
         this.Children.Add(stackPanel);
     }
-    
     private void rb_ToggleStateChanged(object sender, StateChangedEventArgs args)
     {
         RadRadioButtonElement rb = sender as RadRadioButtonElement;
@@ -130,15 +121,14 @@ public class CustomPropertyGridValueElement : PropertyGridValueElement
             item.Value = rb.Text;
         }
     }
-    
     public override void Synchronize()
-    { 
+    {
         PropertyGridItem item = this.VisualItem.Data as PropertyGridItem;
         foreach (RadRadioButtonElement rb in stackPanel.Children)
         {
             if (rb.Text == item.FormattedValue)
             {
-                rb.ToggleState = ToggleState.On;  
+                rb.ToggleState = ToggleState.On;
                 break;
             }
         }
@@ -192,20 +182,36 @@ To put this value element in action, we will create a descendant of __PropertyGr
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=PropertyGridItemElement}} 
 
 ````C#
-        
 public class CustomItemElement : PropertyGridItemElement
 {
     protected override PropertyGridValueElement CreatePropertyGridValueElement()
     {
         return new CustomPropertyGridValueElement();
     }
-    
     protected override Type ThemeEffectiveType
     {
         get
         {
             return typeof(PropertyGridItemElement);
         }
+    }
+    public override bool IsCompatible(PropertyGridItemBase data, object context)
+    {
+        return data.Label == "DeliveryType";
+    }
+}
+public class DefaultPropertyGridItemElement : PropertyGridItemElement
+{
+    protected override Type ThemeEffectiveType
+    {
+        get
+        {
+            return typeof(PropertyGridItemElement);
+        }
+    }
+    public override bool IsCompatible(PropertyGridItemBase data, object context)
+    {
+        return data.Label != "DeliveryType";
     }
 }
 
@@ -221,6 +227,20 @@ Inherits PropertyGridItemElement
             Return GetType(PropertyGridItemElement)
         End Get
     End Property
+    Public Overrides Function IsCompatible(data As PropertyGridItemBase, context As Object) As Boolean
+        Return data.Label = "DeliveryType"
+    End Function
+End Class
+Public Class DefaultPropertyGridItemElement
+    Inherits PropertyGridItemElement
+    Protected Overrides ReadOnly Property ThemeEffectiveType() As Type
+        Get
+            Return GetType(PropertyGridItemElement)
+        End Get
+    End Property
+    Public Overrides Function IsCompatible(data As PropertyGridItemBase, context As Object) As Boolean
+        Return data.Label <> "DeliveryType"
+    End Function
 End Class
 
 ````
@@ -235,21 +255,31 @@ Back to the control, let’s subscribe to the RadPropertyGrid.__CreateItemElemen
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=CreateItemElement}} 
 
 ````C#
-        
 private void radPropertyGrid1_CreateItemElement(object sender,
-    CreatePropertyGridItemElementEventArgs e)
+CreatePropertyGridItemElementEventArgs e)
 {
-    if (e.Item.Name == "DeliveryType")
+    if (e.ItemElementType == typeof(PropertyGridItemElement))
     {
-        e.ItemElementType = typeof(CustomItemElement);
+        if (e.Item.Name == "DeliveryType")
+        {
+            e.ItemElementType = typeof(CustomItemElement);
+        }
+        else
+        {
+            e.ItemElementType = typeof(DefaultPropertyGridItemElement);
+        }
     }
 }
 
 ````
 ````VB.NET
 Private Sub radPropertyGrid1_CreateItemElement(sender As Object, e As CreatePropertyGridItemElementEventArgs)
-    If e.Item.Name = "DeliveryType" Then
-        e.ItemElementType = GetType(CustomItemElement)
+    If e.ItemElementType = GetType(PropertyGridItemElement) Then
+        If e.Item.Name = "DeliveryType" Then
+            e.ItemElementType = GetType(CustomItemElement)
+        Else
+            e.ItemElementType = GetType(DefaultPropertyGridItemElement)
+        End If
     End If
 End Sub
 
@@ -265,7 +295,6 @@ The next thing we need to do is to stop entering edit mode when clicking over on
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=Editing}} 
 
 ````C#
-        
 private void radPropertyGrid1_Editing(object sender,
     PropertyGridItemEditingEventArgs e)
 {
@@ -295,7 +324,6 @@ The last thing we should update is to adjust the PropertyGridElement.PropertyTab
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomItems.vb region=ItemHeight}} 
 
 ````C#
-            
 this.radPropertyGrid1.PropertyGridElement.PropertyTableElement.ItemHeight = Enum.GetValues(typeof(DeliveryType)).Length * 20;
 
 ````
