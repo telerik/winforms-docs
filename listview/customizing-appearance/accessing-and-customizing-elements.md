@@ -14,7 +14,7 @@ Accessing and customizing elements can be performed either at design time, or at
 
 ## Design time
 
-You can access and modify the style for different elements in __RadListView__ by using the *Element hierarchy editor*.
+You can access and modify the style for different elements in __RadListView__ by using the *Element hierarchy editor*, which can accessed by clicking Edit UI Elements link.
 >caption Fig.1 Element hierarchy editor
 
 ![listview-accessing-and-customizing-elements 001](images/listview-accessing-and-customizing-elements001.png)
