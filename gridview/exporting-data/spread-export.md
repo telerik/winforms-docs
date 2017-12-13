@@ -114,7 +114,8 @@ End Using
                 
 
     - *SelectViewToExport*: In this mode the __ChildViewExporing__ event is fired. The event allows to choose the view to export in row by row basis.
-            
+
+    - *ExportAllViews*: In this mode all child views are exported. Available in GridViewSpreadExport and GridViewPdfExport.            
 
 * __HiddenColumnOption:__ Defines whether hidden columns will be exported. Available options are:
     - *ExportAlways*: The exporter will export hidden columns as well.
