@@ -25,11 +25,13 @@ You can save the loaded document programmatically by using the **SaveDocument** 
 {{source=..\SamplesCS\PdfViewer\PdfUI.cs region=SaveAs}} 
 {{source=..\SamplesVB\PdfViewer\PdfUI.vb region=SaveAs}} 
 
-````C#  
+````C#
 this.radPdfViewer1.SaveDocument(filePath);
+
 ````
-````VB.NET  
+````VB.NET
 Me.RadPdfViewer1.SaveDocument(filePath)
+
 ````
 
 {{endregion}}

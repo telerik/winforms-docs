@@ -65,16 +65,13 @@ Additionally, you can easily add a custom menu item to the context menu. You can
 {{source=..\SamplesVB\PdfViewer\PdfUI.vb region=CustomContextMenuItem}} 
 
 ````C#
-        
 public PdfUI()
 {
     InitializeComponent();
-    
     RadMenuItem item = new RadMenuItem("MyItem");
     item.Click += item_Click;
     this.radPdfViewer1.PdfViewerElement.ContextMenu.Items.Add(item);
 }
-        
 private void item_Click(object sender, EventArgs e)
 {
     RadMessageBox.Show("Perform your custom action here");
