@@ -1,127 +1,391 @@
-//Default FeedBack Values
-var ratings = 3;
-var title = document.title;
-var URL = location.href.replace(location.hash, "");
-var version = 2007;
+$(document).ready(function () {
 
-/*************************************************************************
-* Methods ********************************************************
-*************************************************************************/
+  var Feedback = {};
 
-function DeliveryType()
-{
-    if (URL.indexOf("ms-help://") != -1) { return ("h"); }
-    else if (URL.indexOf(".chm::/") != -1) { return ("c"); }
-    else if (URL.indexOf("http://") != -1) { return ("w"); }
-    else if (URL.indexOf("file:") != -1) { return ("f"); }
-    else return ("0");
-}
+  var $window = $(window);
 
-function DeliverableValue(deliverable)
-{
-    if (URL.indexOf("ms-help://") != -1)
-    {
-        delvalue = location.href.slice(0, location.href.lastIndexOf("/html/"));
-        delvalue = delvalue.slice(delvalue.lastIndexOf("/") + 1);
-        return delvalue;
+  var cookieVariablesNames = ['feedbackSubmitted', 'path', 'uuid'];
+  var defaultFormValues = {
+    email: "",
+    inaccurateContent: false,
+    inaccurateOutdatedContentText: "",
+    otherMoreInformation: false,
+    otherMoreInformationText: "",
+    textErrors: false,
+    typosLinksElementsText: "",
+    outdatedSample: false,
+    inaccurateOutdatedCodeSamplesText: "",
+    otherFeedback: false,
+    textFeedback: ""
+  };
+
+  $("#feedback-checkbox-area").click(function (e) {
+    $("span.k-tooltip-validation").remove();
+  });
+
+  var formIsProcessing = false;
+  //Util functions
+  var generateUUID = function () {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+  };
+
+  var getCookieByName = function (name) {
+    //This is very crude, but necessary because currently there is some kind of url rewriting going on
+    //so the cookies are set for a base path but then additional navigation is done with url rewriting
+    //so we set the cookie name as complete path to avoid a problem where the cookie is set for multiple pages.
+    if (name === "yesNoFeedback") {
+      name = currentPath;
     }
-    else return (deliverable);
-}
+    var match = document.cookie.match(new RegExp(name + '=([^;]+)'));
+    if (match) return match[1];
+  };
 
-function URLValue()
-{
-    if (URL.indexOf(".chm::") != -1)
-    {
-        a = URL;
-        while (a.indexOf("\\") < a.indexOf(".chm::") || a.indexOf("//") > a.indexOf(".chm::"))
-        {
-            if (a.indexOf("\\") == -1)
-            {
-                break;
-            }
-            a = a.substring(a.indexOf("\\") + 1, a.length);
+  //Init utility variables
+  var rawLocationObject = $(location);
+  var currentPath = rawLocationObject[0].origin + rawLocationObject[0].pathname;
+
+  var setCookieByName = function (name, value) {
+    var cookieUUID = getCookieByName("uuid");
+    if (!cookieUUID) {
+      document.cookie = "uuid=" + generateUUID() + "; path=/";
+    }
+    //This is very crude, but necessary because currently there is some kind of url rewriting going on
+    //so the cookies are set for a base path but then additional navigation is done with url rewriting
+    //so we set the cookie name as complete path to avoid a problem where the cookie is set for multiple pages.
+    if (name === "yesNoFeedback") {
+      name = currentPath;
+    }
+    document.cookie = name + "=" + value + ";";
+  };
+
+  //Feedback menu controls
+  var feedbackButtonsContainer = $("#helpful-buttons-container");
+  var feedbackSubmittedContainer = $("#feedback-submitted-container");
+  var toggleFeedbackButtons = function (toggle) {
+    if (toggle) {
+      feedbackButtonsContainer.show();
+      feedbackSubmittedContainer.hide();
+    } else {
+      feedbackButtonsContainer.hide();
+      feedbackSubmittedContainer.show();
+    }
+  };
+
+  var hideFeedback = function () {
+    $("#feedback-container").hide();
+  };
+
+  if (getCookieByName("yesNoFeedback")) {
+    hideFeedback();
+  } else {
+    toggleFeedbackButtons(true);
+  }
+
+  //FORM
+  //Init the form popup window
+  var win = $("#feedback-form-window").kendoWindow({
+    actions: ["Close"],
+    draggable: true,
+    modal: true,
+    pinned: false,
+    visible: false,
+    title: false,
+    resizable: false,
+    width: "500px"
+  }).data("kendoWindow");
+  //Init form
+  var feedbackForm = $("#feedback-form");
+  var formModel = kendo.observable(defaultFormValues);
+  var isFormModelEmpty = function () {
+    var isModelDefault = true;
+    for (var key in defaultFormValues) {
+      if (key === 'email') {
+        continue;
+      }
+      var isValueEqual = formModel[key] === defaultFormValues[key];
+      if (!isValueEqual) {
+        isModelDefault = false;
+        break;
+      }
+    }
+    return isModelDefault;
+  };
+
+  var isFormModelSatisfied = function (key, formValue) {
+    var value = formModel[key];
+    if (value) {
+      return formValue && formValue.length > 0;
+    } else {
+      return true;
+    }
+  }
+  //Bind model to form
+  kendo.bind($("div#feedback-form-window"), formModel);
+  //Attach to form submit to adjust variables and send request
+  var emptyFormValidator = $("#feedback-checkbox-area").kendoValidator({
+    validateOnBlur: false,
+    messages: {
+      // defines a message for the custom validation rule
+      emptyForm: "You need to provide some feedback before submitting the form."
+    },
+    rules: {
+      emptyForm: function (input) {
+        return !isFormModelEmpty();
+      }
+    }
+
+  }).data("kendoValidator");
+
+  var emailValidator = $("#feedback-email-input").kendoValidator({
+    validateOnBlur: false,
+    messages: {
+      email: "Invalid email address."
+    },
+    rules: {
+      email: function (input) {
+        if (input.val().length > 0) {
+          var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(input.val());
         }
-        return ("ms-its:" + a)
+        return true;
+      }
     }
-    else if (URL.indexOf("file:///") != -1)
-    {
-        a = URL;
+  }).data("kendoValidator");
 
-        b = a.substring(a.lastIndexOf("html") + 5, a.length);
-        return ("file:///" + b);
-    }
-    else return (URL);
-}
-
-function GetLanguage()
-{
-    var langauge;
-    if (navigator.userAgent.indexOf("Firefox") != -1)
-    {
-        var index = navigator.userAgent.indexOf('(');
-        var string = navigator.userAgent.substring(navigator.userAgent.indexOf('('), navigator.userAgent.length);
-        var splitString = string.split(';');
-        language = splitString[3].substring(1, splitString[3].length);
-    }
-    else language = navigator.systemLanguage;
-    return (language);
-}
-
-
-//---Gets topic rating.---
-function GetRating()
-{
-
-    sRating = "0";
-    for (var x = 0; x < 5; x++)
-    {
-        if (document.formRating)
-        {
-            if (document.formRating.fbRating[x].checked) { sRating = x + 1; } 
+  var textAreaValidator = function (selector, formModelKey) {
+    return $(selector).kendoValidator({
+      validateOnBlur: false,
+      messages: {
+        emptyValidation: "Provide some additional information.",
+        htmlValidation: "HTML tags are not allowed in this field.",
+        messageLength: "The message length must not exceed 2500 characters.",
+        whiteSpaces: "Using only white spaces is not allowed in this field.",
+        feedbackValidation: "Select a category and provide some additional information."
+      },
+      rules: {
+        emptyValidation: function (input) {
+          var text = input.val();
+          return isFormModelSatisfied(formModelKey, text);
+        },
+        htmlValidation: function (input) {
+          var text = input.val();
+          var matches = text.match(/(<([^>]+)>)/ig);
+          if (matches != null) {
+            return false;
+          }
+          return true;
+        },
+        messageLength: function (input) {
+          var text = input.val();
+          if (text.length > 2500) {
+            return false;
+          }
+          return true;
+        },
+        whiteSpaces: function (input) {
+          var text = input.val();
+          if (text.length > 0) {
+            return $.trim(text) !== "";
+          }
+          return true;
+        },
+        feedbackValidation: function (input) {
+          var text = input.val();
+          if (text.length > 0) {
+            return formModel[formModelKey];
+          }
+          return true;
         }
-        else return sRating;
+      }
+    }).data("kendoValidator");
+  };
+
+  var canSubmitForm = function () {
+    return textAreaValidator("#feedback-code-sample-text-input", "outdatedSample").validate() &&
+      textAreaValidator("#feedback-more-information-text-input", "otherMoreInformation").validate() &&
+      textAreaValidator("#feedback-text-errors-text-input", "textErrors").validate() &&
+      textAreaValidator("#feedback-inaccurate-content-text-input", "inaccurateContent").validate() &&
+      textAreaValidator("#feedback-other-text-input", "otherFeedback").validate() &&
+      emptyFormValidator.validate() &&
+      emailValidator.validate();
+  };
+
+  feedbackForm.submit(function (e) {
+    e.preventDefault();
+    if (formIsProcessing) {
+      return;
     }
-    return sRating;
-}
+    formIsProcessing = true;
 
-function submitfeedback(alias, product, deliverable, productVersion, documentationVersion, defaultBody, defaultSubject)
-{
-    SubmitFeedback(alias, product, deliverable, productVersion, documentationVersion, defaultBody, defaultSubject);
-}
+    if (canSubmitForm()) {
+      win.close();
+      setCookieByName("submittingFeedback")
+      formModel.yesNoFeedback = getCookieByName("yesNoFeedback") || "Not submitted";
+      formModel.uuid = getCookieByName("uuid");
+      formModel.path = currentPath;
+      formModel.sheetId = $("#hidden-sheet-id").val();
+      $.post("https://api.everlive.com/v1/lzrla9wpuk636rdd/functions/saveFeedback", formModel.toJSON(), function () {
+        formIsProcessing = false;
+      });
+    } else {
+      formIsProcessing = false;
+    }
+  });
 
-function SubmitFeedback(alias, product, deliverable, productVersion, documentationVersion, defaultBody, defaultSubject)
-{
-    extractURL = URL
-    extractURL = extractURL.substring(extractURL.indexOf("html/") + 5, extractURL.length);
-    var subject = product + ". Article name: " + document.title;
-    // + " ("
-    // + "/1:"
-    // + product 
-    // + "/2:"
-    // + productVersion
-    // + "/3:"
-    // + documentationVersion
-    // + "/4:"
-    // + DeliverableValue(deliverable)
-    // + "/5:"
-    //+ URLValue()
-    // + "/6:"
-    // + GetRating() 
-    // + "/7:"
-    // + DeliveryType()
-    // + "/8:"
-    // + GetLanguage()
-    // + "/9:"
-    // + version
-    // + ")"; 
+  //Attach to close button inside form window
+  $("#form-close-button").click(function () {
+    win.close();
+  });
 
-    var customBody = "***\r\nArticle: " + window.location + "\r\nPlease do not change the subject of this e-mail as it helps us handle the inquiry accordingly. \r\nYour feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue, you may be contacted via e-mail to get further details or clarification on the feedback you've sent. After the issue has been addressed, you may receive an e-mail to let you know of its status.\r\n***";
+  //Attach to submit button inside form window
+  $("#form-submit-button").click(function () {
+    feedbackForm.submit();
+  });
 
-    location.href = "mailto:" + alias + "?subject=" + subject + "&body=" + encodeURIComponent(customBody);
-}
+  //Init buttons
+  $("#yesButton").click(function () {
+    setCookieByName("yesNoFeedback", "Yes");
+    toggleFeedbackButtons(false);
+    Feedback.closeFeedback();
+    Feedback.hideFeedbackForm();
+    Feedback.adjustNavigationPosition();
+  });
+  $("#noButton").click(function () {
+    setCookieByName("yesNoFeedback", "No");
+    toggleFeedbackButtons(false);
+    Feedback.closeFeedback();
+    Feedback.hideFeedbackForm();
+    Feedback.adjustNavigationPosition();
+    win.center().open();
+  });
+  $("#additional-feedback-button").click(function () {
+    win.center().open();
+  });
 
-function AltFeedback(src, title)
-{
-    src.title = title;
-    return;
-}
+  var windowHeight = $window.height();
+  var headerHeight = $(".TK-Hat").outerHeight() + $("#page-header").outerHeight();
+  var footerHeight = $("#feedback-section").outerHeight() + $("footer").outerHeight();
+  var articleHeight = windowHeight - (headerHeight + footerHeight);
+  var feedbackOffsetTop = document.body.scrollHeight - footerHeight;
+  var shouldOverlayFeedback = !getCookieByName("yesNoFeedback") && !getCookieByName("yesNoFeedbackClosed");
+  var showingFeedbackBar = false;
+  var scrollFold = $window.scrollTop() + windowHeight;
+  var feedbackPinned = false;
+
+  function updateVariables() {
+    windowHeight = $window.height();
+    headerHeight = $(".TK-Hat").outerHeight() + $("#page-header").outerHeight();
+    footerHeight = $("#feedback-section").outerHeight() + $("footer").outerHeight();
+    articleHeight = windowHeight - (headerHeight + footerHeight);
+    feedbackOffsetTop = document.body.scrollHeight - footerHeight;
+    scrollFold = $window.scrollTop() + windowHeight;
+  }
+
+  Feedback = $.extend(Feedback, {
+
+    init: function () {
+
+      Feedback._events();
+
+      Feedback.adjustArticleHeight();
+      Feedback.adjustNavigationPosition();
+
+      if (shouldOverlayFeedback) {
+
+        showingFeedbackBar = true;
+
+        window.setTimeout(function () {
+          showingFeedbackBar = false;
+          Feedback.adjustFeedbackPoistion();
+          Feedback.adjustNavigationPosition();
+        }, 10000);
+      }
+
+    },
+
+
+    // #region events
+    _events: function () {
+      $window.scroll(Feedback._window_scroll);
+      $window.resize(Feedback._window_resize);
+      $("#close-button").click(Feedback._button_click);
+    },
+    _window_scroll: function () {
+      updateVariables();
+
+      scrollFold = $window.scrollTop() + windowHeight;
+
+      Feedback.adjustFeedbackPoistion();
+      Feedback.adjustNavigationPosition();
+    },
+    _window_resize: function () {
+      updateVariables();
+
+      Feedback.adjustArticleHeight();
+      Feedback.adjustFeedbackPoistion();
+      Feedback.adjustNavigationPosition();
+    },
+    _button_click: function () {
+      Feedback.closeFeedback();
+      Feedback.adjustNavigationPosition();
+    },
+    // #endregion
+
+
+    // #region adjusters
+    adjustNavigationPosition: function Feedback_adjustNavigationPosition() {
+      var bottom = 0;
+
+      if (!window.matchMedia('(max-width: 1200px)').matches) {
+        bottom = Math.max(feedbackPinned ? $("#feedback-section").outerHeight() : 0, scrollFold - feedbackOffsetTop);
+      }
+
+      $("#page-nav").css("bottom", bottom);
+    },
+    adjustArticleHeight: function Feedback_adjustArticleHeight() {
+      $("#page-article").css("min-height", articleHeight);
+    },
+    adjustFeedbackPoistion: function Feedback_adjustFeedbackPosition() {
+      if (!shouldOverlayFeedback || showingFeedbackBar) {
+        return;
+      }
+
+      if (scrollFold - $("#feedback-section").outerHeight() < feedbackOffsetTop) {
+        Feedback.pinFeedback();
+      }
+      else {
+        Feedback.unpinFeedback();
+      }
+    },
+    // #endregion
+
+
+    // #region feedback bar
+    pinFeedback: function Feedback_pinFeedback() {
+      feedbackPinned = true;
+      $("#feedback-section").addClass("fixed");
+      $("#feedback-section-dummy").show();
+    },
+    unpinFeedback: function Feedback_unpinFeedback() {
+      feedbackPinned = false;
+      $("#feedback-section").removeClass("fixed");
+      $("#feedback-section-dummy").hide();
+    },
+    closeFeedback: function Feedback_closeFeedback() {
+      shouldOverlayFeedback = false;
+      setCookieByName("yesNoFeedbackClosed");
+      Feedback.unpinFeedback();
+    },
+    hideFeedbackForm: function Feedback_hideFeedbackForm() {
+      $("#feedback-section").addClass("hide-feedback-form");
+    }
+    // #endregion
+
+  });
+
+  Feedback.init();
+
+});
