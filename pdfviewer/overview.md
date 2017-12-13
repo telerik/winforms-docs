@@ -21,18 +21,23 @@ __RadPdfViewer__ is a control that can natively visualize PDF documents straight
 ![pdfviewer-overview 001](images/pdfviewer-overview001.png)
 
 Here is a list of the supported features
-
-* Open PDF document from file or stream
-* Pan
-* Zoom
-* Selection
-* Annotations
-* Copy to clipboard
-* Find
-* Keyboard navigation
-* Navigation toolbar
-* Context menu
-* Printing
+* [Interactive Forms]({%slug radpdfviewer-features-interactive-forms%}): The control supports different types of interactive forms and enables the end user to modify their values.
+* [Digital Signatures]({%slug radpdfviewer-features-digital-signature%}): The user can show digitally signed documents and validate the signatures inside. Signing a document is supported as well.
+* [Saving a Document]({%slug radpdfviewer-features-save-as%}): When the user modifies the forms in a document or signs it, or just want to create another file from the document, they can use the Save As functionality of the viewer.
+* [Annotations]({%slug winforms/pdfviewer/annotations%}): Full support for Widget and Link annotations. RadPdfViewer provides a read-only support for all other types of annotations.
+* Fonts: Built-in support for TrueType, Type1 and CID fonts.
+* [Create an Image from a PDF Page]({%slug winforms/pdfviewer/export-to-image%}): An API for exporting a PDF document page to an image.
+* Working with [positions]({%slug winforms/pdfviewer/text/text-position%}) and modifying the [selection]({%slug winforms/pdfviewer/text/text-selection%}) in the document.
+* The control comes with a predefined UI that is intuitive and provides the means for utilizing the features of the control. Different dialogs are available as well.
+* Using the UI you can easily zoom in and out.
+* Scroll the document in the viewer.
+* You can also use pan and text selection by specifying a different [viewer mode]({%slug winforms/pdfviewer/ui/viewer-modes%}).
+* The control utilizes virtualization in order to guarantee good performance with larger documents as well.
+* RadPdfViewer allows [printing]({%slug winforms/pdfviewer/printing-support%}) of the document loaded in it.
+* You can [rotate]({%slug winforms/pdfviewer/ui/rotation%}) the document as well.
+* [Context Menu]({%slug winforms/pdfviewer/ui/context-menu%}) to provide easy access to several of the features of the control.
+* Extensible support for different stream compression filters. [Read more]({%slug winforms/pdfviewer/customize-and-extensibility/customize-pdf-rendering%})
+* The API provides different options for extending and customizing the control.
 
 >note **RadPdfViewer** requires **.NET Framework 4.0** and cannot be used with an older version. 
 
