@@ -241,6 +241,67 @@ uniqueIdSchedulerMapping.ConvertToDataSource = New ConvertCallback(AddressOf Me.
 
 {{endregion}} 
 
+## ConvertValueToScheduler and ConvertValueToDataSource Events
+
+Similar to the **ConvertToScheduler** and **ConvertToDataSource** callbacks of the **SchedulerMapping**, in **R1 2018** we introduced the **ConvertValueToScheduler** and **ConvertValueToDataSource** events to handle the conversion from a value coming from the DataSource to the **RadScheduler**'s respective type and vice versa.
+
+#### Conversion Events
+
+{{source=..\SamplesCS\Scheduler\DataBinding\SchedulerMapping1.cs region=EventsMapping}} 
+{{source=..\SamplesVB\Scheduler\DataBinding\SchedulerMapping1.vb region=EventsMapping}} 
+
+````C#
+        public void EventSubscriptions()
+        {
+            AppointmentMappingInfo appointmentMapping = new AppointmentMappingInfo();
+            //other code for the AppointmentMappingInfo setup
+            appointmentMapping.FindBySchedulerProperty("ResourceId").ConvertValueToScheduler += ConvertValueToScheduler;
+            appointmentMapping.FindBySchedulerProperty("ResourceId").ConvertValueToDataSource += ConvertValueToDataSource;
+        }
+
+        private void ConvertValueToDataSource(object sender, ConvertFromToSchedulerEventArgs e)
+        {
+            if (e.PropertyName == "ResourceId")
+            {
+                e.Value = (int)((EventId)e.Value).KeyValue;
+            }
+        }
+
+        private void ConvertValueToScheduler(object sender, ConvertFromToSchedulerEventArgs e)
+        {
+            if (e.PropertyName == "ResourceId")
+            {
+                e.Value = new EventId((int)e.Value);
+            }
+        }
+
+````
+````VB.NET
+    Public Sub EventSubscriptions()
+        Dim appointmentMapping As AppointmentMappingInfo = New AppointmentMappingInfo
+        'other code for the AppointmentMappingInfo setup
+        AddHandler appointmentMapping.FindBySchedulerProperty("ResourceId").ConvertValueToScheduler, AddressOf ConvertValueToScheduler
+        AddHandler appointmentMapping.FindBySchedulerProperty("ResourceId").ConvertValueToDataSource, AddressOf ConvertValueToDataSource
+    End Sub
+
+    Private Sub ConvertValueToDataSource(ByVal sender As Object, ByVal e As ConvertFromToSchedulerEventArgs)
+        If (e.PropertyName = "ResourceId") Then
+            e.Value = CType(CType(e.Value, EventId).KeyValue, Integer)
+        End If
+
+    End Sub
+
+    Private Sub ConvertValueToScheduler(ByVal sender As Object, ByVal e As ConvertFromToSchedulerEventArgs)
+        If (e.PropertyName = "ResourceId") Then
+            e.Value = New EventId(CType(e.Value, Integer))
+        End If
+
+    End Sub
+
+````
+
+{{endregion}} 
+
 # See Also
 
 * [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
