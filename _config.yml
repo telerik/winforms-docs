@@ -873,6 +873,9 @@ navigation:
     propertygrid/export-data:
         title: Export Data
         position: 15		
+    propertygrid/how-to:
+        title: How-To
+        position: 16	
     rangeselector:
         title: RangeSelector
         position: 380
