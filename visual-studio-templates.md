@@ -10,7 +10,7 @@ position: 4
 
 # Visual Studio Templates
 
-The [Visual Studio Extensions]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions%}) for __UI for WinForms__ provide an easy way to create a Telerik project from a number of predefined templates. With just a few clicks you can start building a Windows inspired application. Currently, you have the option to choose from the following templates:
+The [Visual Studio Templates]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions%}) for __UI for WinForms__ provide an easy way to create a Telerik project from a number of predefined templates. With just a few clicks you can start building a Windows inspired application. Currently, you have the option to choose from the following templates:
 
 * [Word-Inspired Template](#word-inspired-template) (available with Q1 2015 release version)
 
