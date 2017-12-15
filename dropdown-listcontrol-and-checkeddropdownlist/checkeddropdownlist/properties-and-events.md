@@ -35,6 +35,8 @@ previous_url: dropdown-and-listcontrol-checkedropdownlist-properties-and-events
 |__CreateTextBlock__|Occurs when an instance of __ITextBlock__ is created.|
 |__ItemCheckedChanging__|Occurs when a __ListViewDataItem__ is about to be checked. Cancelable.|
 |__ItemCheckedChanged__|Occurs when a __ListViewDataItem__ is checked.| 
+|**CheckAllItemCheckedChanged**|Occurs when the CheckAllItem is checked.|
+|**CheckAllItemCheckedChanging**|Occurs when the CheckAllItem is about to be checked. Cancelable.|
      
 
 ## RadCheckedListDataItem
