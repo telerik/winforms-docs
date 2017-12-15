@@ -11,7 +11,7 @@ previous_url: propertygrid-features-sorting
 
 # Sorting
 
-The sorting capabilities can be controlled either by using the predefined sorting options in the __PropertySort__ property together with the __SortOrder__ property, or you can use your own sorting by adding a predefined __SortDescriptor__ to the __SortDescriptor__ collection of **RadPropertyGrid**. The first code snippet demonstrates how to sort the items programmatically in a descending order.
+The sorting capabilities can be controlled either by using the predefined sorting options in the __PropertySort__ property together with the __SortOrder__ property, or you can use your own sorting by adding a predefined __SortDescriptor__ to the __SortDescriptors__ collection of **RadPropertyGrid**. The first code snippet demonstrates how to sort the items programmatically in a descending order.
 
 >caption Figure 1: Default Sorting
 
@@ -78,6 +78,8 @@ RadPropertyGrid1.SortDescriptors.Add(sort)
 ````
 
 {{endregion}}
+
+>important The user should clear programmatically the **SortDescriptors** collection first because there is a default sort order (*Ascending*) for the properties in the object.
 
 # See Also
 
