@@ -20,6 +20,8 @@ The [Visual Studio Extensions]({%slug winforms/installation-deployment-and-distr
 
 * [Outlook-Inspired Calendar Template](#outlook-inspired-calendar-template) (available with Q2 2015 release version)
 
+* [Excel-Inspired Template](#excel-inspired-template) (available with Q3 2017 SP1 release version)
+
 >note The [Word-Inspired Template](#word-inspired-template) uses the __TelerikMetro__ theme. The outlook inspired templates make use of the __TelerikMetroBlue__ theme.
 
 In this article you will find more information on how to create a project from one of the available templates as well as more details regarding what controls each template contains.
@@ -29,6 +31,7 @@ In this article you will find more information on how to create a project from o
 When creating new project, select the needed template as seen on __Figure 1__.
 
 >caption Figure 1: Select Template
+
 ![visual studio templates 001](images/visual-studio-templates001.png)
 
 ## Word-Inspired Template
@@ -77,6 +80,13 @@ The Outlook-Inspired Calendar Template can be used separately and it has been in
 
 >caption Figure 4: Outlook-Inspired Calendar Template
 ![visual studio templates 004](images/visual-studio-templates004.png)
+
+## Excel-Inspired Template
+
+The Excel-Inspired Template implements Excel-like editing experience represented with the Telerik UI for WinForms controls. It provides a complex integration of controls like **RadSpreadsheetRibbonBar** and **RadSpreadsheet** in an already set up example.You can see how the template looks like on __Figure 5__.
+
+>caption Figure 5: Excel-Inspired Template
+![visual studio templates 005](images/visual-studio-templates005.png)
 
 # See Also
 
