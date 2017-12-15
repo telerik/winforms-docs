@@ -29,31 +29,35 @@ class MyEnglishSpellCheckerLocalizationProvider : RadSpellCheckerLocalizationPro
 {
     public override string GetLocalizedString(string id)
     {
-        switch (id)
-        {
-            case RadSpellCheckerStringId.Title:
-                return "Spell Checking";
-            case RadSpellCheckerStringId.OK:
-                return "OK";
-            case RadSpellCheckerStringId.Cancel:
-                return "Cancel";
-            case RadSpellCheckerStringId.Close:
-                return "Close";
-            case RadSpellCheckerStringId.Change:
-                return "Change";
-            case RadSpellCheckerStringId.Complete:
-                return "The spelling check is complete.";
-            case RadSpellCheckerStringId.AddToDictionary:
-                return "Add to Dictionary";
-            case RadSpellCheckerStringId.IngoreAll:
-                return "Ignore All";
-            case RadSpellCheckerStringId.Suggestions:
-                return "Suggestions:";
-            case RadSpellCheckerStringId.ChangeTo:
-                return "Change To:";
-            case RadSpellCheckerStringId.NotInDictionary:
-                return "Not in Dicitionary:";
-        }
+            switch (id)
+            {
+                case RadSpellCheckerStringId.Title:
+                    return "Spell Checking";
+                case RadSpellCheckerStringId.OK:
+                    return "OK";
+                case RadSpellCheckerStringId.Cancel:
+                    return "Cancel";
+                case RadSpellCheckerStringId.Close:
+                    return "Close";
+                case RadSpellCheckerStringId.ChangeAll:
+                    return "Change All";
+                case RadSpellCheckerStringId.Change:
+                    return "Change";
+                case RadSpellCheckerStringId.Complete:
+                    return "The spelling check is complete.";
+                case RadSpellCheckerStringId.AddToDictionary:
+                    return "Add to Dictionary";
+                case RadSpellCheckerStringId.Ingore :
+                    return "Ignore";
+                case RadSpellCheckerStringId.IngoreAll:
+                    return "Ignore All";
+                case RadSpellCheckerStringId.Suggestions:
+                    return "Suggestions:";
+                case RadSpellCheckerStringId.ChangeTo:
+                    return "Change To:";
+                case RadSpellCheckerStringId.NotInDictionary:
+                    return "Not in Dicitionary:";
+            }
         return null;
     }
 }
@@ -72,12 +76,16 @@ Class MyEnglishSpellCheckerLocalizationProvider
                 Return "Cancel"
             Case RadSpellCheckerStringId.Close
                 Return "Close"
+            Case RadSpellCheckerStringId.ChangeAll
+                Return "Change All"
             Case RadSpellCheckerStringId.Change
                 Return "Change"
             Case RadSpellCheckerStringId.Complete
                 Return "The spelling check is complete."
             Case RadSpellCheckerStringId.AddToDictionary
                 Return "Add to Dictionary"
+            Case RadSpellCheckerStringId.Ingore
+                Return "Ignore"
             Case RadSpellCheckerStringId.IngoreAll
                 Return "Ignore All"
             Case RadSpellCheckerStringId.Suggestions
