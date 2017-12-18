@@ -11,7 +11,7 @@ previous_url: themes-using-a-default-theme-for-the-entire-application
 
 # Using a default theme for the entire application
 
-When your application has many and different controls, you may find it inconvenient to go through all the controls in order to set their __ThemeName__ property. For such cases, set the static ThemeResolutionService.__ApplicationThemeName__ property to a theme name:
+When your application has many and different controls, you may find it inconvenient to go through all the controls in order to set their __ThemeName__ property. For such cases, set the static ThemeResolutionService.__ApplicationThemeName__ property to a theme name in the form's constructor:
 
 #### Setting a theme for the entire application
 
