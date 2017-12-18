@@ -234,4 +234,4 @@ End Class
 # See Also
 
 * [Keyboard Navigation]({%slug winforms/propertygrid/keyboard-navigation%})
-* [Inherit Themes]({%slug winforms/propertygrid/keyboard-navigation%})
+* [Inherit Themes]({%slug winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives%})
