@@ -57,6 +57,10 @@ public class CustomSchedulerNavigatorLocalizationProvider : SchedulerNavigatorLo
                 {
                     return "This month";
                 }
+            case SchedulerNavigatorStringId.SearchInAppointments:
+                    {
+                        return "Search In Appointments";
+                    }
         }
         return String.Empty;
     }
@@ -84,6 +88,8 @@ Public Class CustomSchedulerNavigatorLocalizationProvider
                 Return "This week"
             Case SchedulerNavigatorStringId.TodayButtonCaptionThisMonth
                 Return "This month"
+            Case SchedulerNavigatorStringId.SearchInAppointments
+                Return "Search In Appointments"
         End Select
         Return String.Empty
     End Function
