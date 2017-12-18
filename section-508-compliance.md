@@ -5,7 +5,7 @@ description: Section 508 Compliance
 slug: winforms/section-508-compliance
 tags: section,508,compliance
 published: True
-position: 55
+position: 54
 ---
 
 # Section 508 Compliance

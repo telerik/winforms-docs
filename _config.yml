@@ -23,6 +23,9 @@ navigation:
     licensing:
         title: Licensing
         position: 50
+    barcode: 
+        title: Barcode
+        position: 55
     buttons:
         title: Buttons
         position: 60
