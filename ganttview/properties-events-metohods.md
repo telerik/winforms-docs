@@ -26,6 +26,7 @@ position: 10
 |__DataSource__|Gets or sets the data source that the RadGanttView is displaying data for.|
 |__ShowTimelineTodayIndicator__|Gets or sets a value indicating whether to show the timeline today indicator.|
 |__ShowTodayIndicator__|Gets or sets a value indicating whether to show the today indicator.|
+|__SelectedLink__|Gets or sets the selected link.|
 
 # Events
 
@@ -58,6 +59,8 @@ position: 10
 |__GraphicalViewItemFormatting__|Occurs when the state of an item in the GanttViewGraphicalViewElement changes and it needs to be formatted.|
 |__PrintElementFormatting__|Occurs when an element will be printed. Allows formatting of the element.|
 |__PrintElementPaint__|Occurs after an element is printed. Allows for custom painting over the element.|
+|__SelectedLinkChanging__|Occurs when the selected link is about to be changed.|
+|__SelectedLinkChanged__|Occurs when selected link has been changed.|
 
 # Methods
 
