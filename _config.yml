@@ -26,6 +26,15 @@ navigation:
     barcode: 
         title: Barcode
         position: 55
+    barcode/barcode-types: 
+        title: Barcode Types
+        position: 3
+    barcode/barcode-types/1d-barcodes:
+        title: 1D Barcodes
+        position: 1
+    barcode/barcode-types/2d-barcodes:
+        title: 2D Barcodes
+        position: 2
     buttons:
         title: Buttons
         position: 60
