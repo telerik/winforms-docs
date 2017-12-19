@@ -10,7 +10,7 @@ position: 0
 
 # Barcode
 
-**RadBarcode** is a set of components that can be used to create, show and read barcodes. You can generate and visualize barcodes in a machine-readable format via the **RadBarcode** controls by providing numeric or character data. 
+**RadBarcode** is a set of components that can be used to create and show barcodes. You can generate and visualize barcodes in a machine-readable format via the **RadBarcode** control by providing numeric or character data. 
 
 >caption Figure 1: RadBarcode
 
