@@ -130,6 +130,10 @@ If you add the __RadPdfViewer__ at run time you need to add references to the fo
 
 * TelerikCommon
 
+* Telerik.Windows.Documents.Fixed
+
+* Telerik.Windows.Documents.Core
+
 # See Also
 
 * [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})

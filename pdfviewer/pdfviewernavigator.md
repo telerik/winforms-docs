@@ -37,6 +37,23 @@ This control can be used with __RadPdfViewer__. It provides predefined UI for th
 
 * __Search:__ You can search for a particular string and navigate among the results.
 
+
+## Assembly References
+
+If you add the __PdfViewerNavigator__ at run time you need to add references to the following assemblies:
+
+* Telerik.WinControls.PdfViewer
+
+* Telerik.WinControls
+
+* Telerik.WinControls.UI
+
+* TelerikCommon
+
+* Telerik.Windows.Documents.Fixed
+
+* Telerik.Windows.Documents.Core
+
 # See Also
 
 * [Design Time]({%slug winforms/pdfviewer/design-time%})
