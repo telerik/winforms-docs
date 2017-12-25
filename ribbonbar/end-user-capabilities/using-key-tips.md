@@ -25,5 +25,6 @@ Furthermore, pressing the __7__ key selects the __Write__ tab and displays the 
 
 ## See Also
 
+* [Customizing the Key Tips]({%slug winforms/ribbonbar/programming-radribbonbar/customizing-the-keytips%})
 * [Structure]({%slug winforms/ribbonbar/structure%})
 * [Getting Started]({%slug winforms/ribbonbar/getting-started%})
