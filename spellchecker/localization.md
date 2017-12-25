@@ -25,6 +25,7 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesVB\SpellChecker\SpellCheckerLocalization.vb region=myEnglishLocalizationProvider}} 
 
 ````C#
+    
 class MyEnglishSpellCheckerLocalizationProvider : RadSpellCheckerLocalizationProvider
 {
     public override string GetLocalizedString(string id)
@@ -39,12 +40,16 @@ class MyEnglishSpellCheckerLocalizationProvider : RadSpellCheckerLocalizationPro
                 return "Cancel";
             case RadSpellCheckerStringId.Close:
                 return "Close";
+            case RadSpellCheckerStringId.ChangeAll:
+                return "Change All";
             case RadSpellCheckerStringId.Change:
                 return "Change";
             case RadSpellCheckerStringId.Complete:
                 return "The spelling check is complete.";
             case RadSpellCheckerStringId.AddToDictionary:
                 return "Add to Dictionary";
+            case RadSpellCheckerStringId.Ingore:
+                return "Ignore";
             case RadSpellCheckerStringId.IngoreAll:
                 return "Ignore All";
             case RadSpellCheckerStringId.Suggestions:
@@ -54,6 +59,7 @@ class MyEnglishSpellCheckerLocalizationProvider : RadSpellCheckerLocalizationPro
             case RadSpellCheckerStringId.NotInDictionary:
                 return "Not in Dicitionary:";
         }
+        
         return null;
     }
 }
@@ -72,12 +78,16 @@ Class MyEnglishSpellCheckerLocalizationProvider
                 Return "Cancel"
             Case RadSpellCheckerStringId.Close
                 Return "Close"
+            Case RadSpellCheckerStringId.ChangeAll
+                Return "Change All"
             Case RadSpellCheckerStringId.Change
                 Return "Change"
             Case RadSpellCheckerStringId.Complete
                 Return "The spelling check is complete."
             Case RadSpellCheckerStringId.AddToDictionary
                 Return "Add to Dictionary"
+            Case RadSpellCheckerStringId.Ingore
+                Return "Ignore"
             Case RadSpellCheckerStringId.IngoreAll
                 Return "Ignore All"
             Case RadSpellCheckerStringId.Suggestions
@@ -103,6 +113,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 {{source=..\SamplesVB\SpellChecker\SpellCheckerLocalization.vb region=localizeSpellChecker}} 
 
 ````C#
+            
 RadSpellCheckerLocalizationProvider.CurrentProvider = new MyEnglishSpellCheckerLocalizationProvider();
 
 ````

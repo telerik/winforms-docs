@@ -28,7 +28,7 @@ A common requirement for applications utilizing a map control is to allow the en
 BingRestMapProvider bingProvider = new BingRestMapProvider();
 bingProvider.ImagerySet = ImagerySet.Road;
 bingProvider.UseSession = true;
-bingProvider.BingKey = "Au8AX-T4JbhfO2rctuV7QaRL4OLIdaDuWi_eboTegWHl_L1U3ZoOgw5VvddfuJAy";
+bingProvider.BingKey = this.bingKey;
 bingProvider.InitializationComplete += delegate (object sender, EventArgs e)
 {
     this.radMap1.BringIntoView(new PointG(40d, -99d), 4);
@@ -45,7 +45,7 @@ this.radMap1.InputBehavior = new CustomMapInputBehavior();
 Dim bingProvider As New BingRestMapProvider()
 bingProvider.ImagerySet = ImagerySet.Road
 bingProvider.UseSession = True
-bingProvider.BingKey = "Au8AX-T4JbhfO2rctuV7QaRL4OLIdaDuWi_eboTegWHl_L1U3ZoOgw5VvddfuJAy"
+bingProvider.BingKey = Me.bingKey
 AddHandler bingProvider.InitializationComplete, Sub(sender As Object, e As EventArgs) Me.radMap1.BringIntoView(New PointG(40.0, -99.0), 4)
 Dim cache As New LocalFileCacheProvider(Path.Combine(Path.GetTempPath(), "cache"))
 bingProvider.CacheProvider = cache

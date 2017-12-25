@@ -31,16 +31,6 @@ this.radDiagram1.IsPanEnabled = true;
 ````
 ````VB.NET
 Me.RadDiagram1.IsPanEnabled = True
-'#End Region
-'#Region "IsZoomEnabled"
-Me.RadDiagram1.IsZoomEnabled = True
-'#End Region
-'#Region "MinMaxZoom"
-Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5
-Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10
-'#End Region
-'#Region "ZoomIn"
-Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
 
 ````
 
@@ -87,13 +77,6 @@ this.radDiagram1.IsZoomEnabled = true;
 ````
 ````VB.NET
 Me.RadDiagram1.IsZoomEnabled = True
-'#End Region
-'#Region "MinMaxZoom"
-Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5
-Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10
-'#End Region
-'#Region "ZoomIn"
-Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
 
 ````
 
@@ -124,9 +107,6 @@ Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10;
 ````VB.NET
 Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5
 Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10
-'#End Region
-'#Region "ZoomIn"
-Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
 
 ````
 
@@ -198,7 +178,6 @@ Me.RadDiagram1.DiagramElement.ZoomOut(3.5)
 {{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=BringIntoView}} 
 {{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=BringIntoView}}
 ````C#
-        
 private void radButton1_Click(object sender, EventArgs e)
 {
     var enclosingBounds = ((IGraph)this.radDiagram1.DiagramElement).CalculateEnclosingBoundsWithoutTransform();

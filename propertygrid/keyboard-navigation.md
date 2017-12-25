@@ -23,12 +23,8 @@ To enable this functionality a single property setting is needed:
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomKeyboardNavigation.vb region=KeyboardSearchEnabled}} 
 
 ````C#
-radPropertyGrid1.KeyboardSearchEnabled = true;
-
 ````
 ````VB.NET
-radPropertyGrid1.KeyboardSearchEnabled = True
-
 ````
 
 {{endregion}}
@@ -39,12 +35,8 @@ Another property of interest is the __KeyboardSearchResetInterval__. It is used 
 {{source=..\SamplesVB\PropertyGrid\PropertyGridCustomKeyboardNavigation.vb region=KeyboardSearchResetInterval}} 
 
 ````C#
-radPropertyGrid1.KeyboardSearchResetInterval = 200;
-
 ````
 ````VB.NET
-radPropertyGrid1.KeyboardSearchResetInterval = 200
-
 ````
 
 {{endregion}}
