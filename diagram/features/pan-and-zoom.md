@@ -24,25 +24,7 @@ You can also activate the Pan [MouseTool]({%slug winforms/diagram-(beta)/diagram
 {{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=IsPanEnabled}} 
 {{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=IsPanEnabled}} 
 
-````C#
-            
-this.radDiagram1.IsPanEnabled = true;
 
-````
-````VB.NET
-Me.RadDiagram1.IsPanEnabled = True
-'#End Region
-'#Region "IsZoomEnabled"
-Me.RadDiagram1.IsZoomEnabled = True
-'#End Region
-'#Region "MinMaxZoom"
-Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5
-Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10
-'#End Region
-'#Region "ZoomIn"
-Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
-
-````
 
 {{endregion}} 
 
@@ -51,6 +33,18 @@ Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
 >caption Figure.1 Pan
 
 ![diagram-features-pan-and-zoom 001](images/diagram-features-pan-and-zoom001.gif)
+
+
+## Pan Methods
+
+You can use the __PanToPosition__ method in order to programmatically pan to a specific position:
+{{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=PanMethod}} 
+{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=PanMethod}} 
+
+
+
+{{endregion}} 
+
 
 ## Pan events
 
@@ -79,23 +73,9 @@ __RadDiagram__ exposes two panning events:
 __RadDiagram__ supports zooming out-of-the-box. The feature is controlled through the RadDiagram. __IsZoomEnabled__ property which default value is *true*. The user can initiate a zoom using the mouse wheel. 
 
 {{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=IsZoomEnabled}} 
-{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=IsZoomEnabled}} 
+{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=IsZoomEnabled1}} 
 
-````C#
-this.radDiagram1.IsZoomEnabled = true;
 
-````
-````VB.NET
-Me.RadDiagram1.IsZoomEnabled = True
-'#End Region
-'#Region "MinMaxZoom"
-Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5
-Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10
-'#End Region
-'#Region "ZoomIn"
-Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
-
-````
 
 {{endregion}} 
 
@@ -115,20 +95,6 @@ The zoom range is controlled through two __DiagramConstants__:
 {{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=MinMaxZoom}} 
 {{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=MinMaxZoom}} 
 
-````C#
-            
-Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5;
-Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10;
-
-````
-````VB.NET
-Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5
-Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10
-'#End Region
-'#Region "ZoomIn"
-Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
-
-````
 
 {{endregion}} 
  
