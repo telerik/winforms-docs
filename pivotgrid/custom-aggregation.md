@@ -210,6 +210,8 @@ End Class
 
 We can make use of our new function by assigning it to the __AggregateFunction__ property of a __PropertyAggregateDescription__ object before setting it to our pivot.
 
+>note The [Custom Dialogs]({%slug winforms/pivotgrid/dialogs/custom-dialogs%}) article demonstrates how the custom function can be added to the *Aggregate Options Dialog*.
+
 #### Using the Custom Aggregate Function
 
 {{source=..\SamplesCS\PivotGrid\PivotGridCustomAggregation.cs region=CustomFunctionUsage}} 
@@ -236,3 +238,4 @@ Me.RadPivotGrid1.DataProvider = dataProvider
 
 * [Calculated Fields]({%slug winforms/pivotgrid/calculated-fields%})
 * [Calculated Items]({%slug winforms/pivotgrid/calculated-items%})
+* [Custom Dialogs]({%slug winforms/pivotgrid/dialogs/custom-dialogs%})
