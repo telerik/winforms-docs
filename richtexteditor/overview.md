@@ -41,7 +41,7 @@ __RadRichTextEditor__ is a control that is able to display and edit rich-text co
 
 * __Table support__ – including nested tables, merging cells, setting different __RowSpan__ and __ColumnSpan__, tables with auto width and more. [Read more]({%slug winforms/richtexteditor-/document-elements/table%})
 
-* __Section Columns__ You can arrange the text into columns with equal or different width and set a separator between them. Find more information on how to use this feature in the [Section Columns]({%radrichtexteditor-ui-for-applying-rich-text-formatting-section-columns%}) UI and [Section Columns API]({%slug winforms/richtextEditor/section-columns%}) articles.
+* __Section Columns__ You can arrange the text into columns with equal or different width and set a separator between them. Find more information on how to use this feature in the [Section Columns]({%slug radrichtexteditor-ui-for-applying-rich-text-formatting-section-columns%}) UI and [Section Columns API]({%slug winforms/richtextEditor/section-columns%}) articles.
 
 * __ContextMenu__ - a standard one is provided out of the box, but it can be easily customized or substituted for a user-defined one. [Read more]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/context-menu%})
 
