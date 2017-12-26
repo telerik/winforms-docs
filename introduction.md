@@ -137,6 +137,8 @@ Telerik UI for for WinForms includes over 120 UI controls that you can use to ea
 	* BreezeTheme
 
 	* DesertTheme
+	
+	* Fluent Theme
 
 	* HighContrastBlackTheme
 
