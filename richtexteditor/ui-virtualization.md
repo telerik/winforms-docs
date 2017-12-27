@@ -15,6 +15,6 @@ __RadRichTextEditor__ supports __UI Virtualization__, which enables it to proces
 
 # See Also
 
- * [Import/Export]({%slug winforms/richtexteditor/import%})
+ * [Import/Export]({%slug winforms/richtexteditor/import-export/overview%})
 
  * [Formatting API]({%slug winforms/richtexteditor-/getting-started/formatting-api%})

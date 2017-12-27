@@ -957,8 +957,26 @@ navigation:
     richtexteditor/features/references:
         title: References
         position: 1
-    richtexteditor/import:
+    richtexteditor/import-export:
         title: Import/Export
+        position: 6
+    richtexteditor/import-export/docx:
+        title: Docx
+        position: 1
+    richtexteditor/import-export/html:
+        title: Html
+        position: 2
+    richtexteditor/import-export/pdf:
+        title: Pdf
+        position: 3
+    richtexteditor/import-export/rtf:
+        title: Rtf
+        position: 4
+    richtexteditor/import-export/xaml:
+        title: Xaml
+        position: 5
+    richtexteditor/import-export/plain-text:
+        title: Plain Text
         position: 6
     richtexteditor/ui-for-applying-rich-text-formatting:
         title: UI for Applying Rich Text Formatting

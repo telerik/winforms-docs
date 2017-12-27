@@ -272,7 +272,7 @@ This document is editable. To make it read only you have to set the __IsReadOnly
 
 # See Also
 
- * [Import/Export]({%slug  winforms/richtexteditor/import%})
+ * [Import/Export]({%slug  winforms/richtexteditor/import-export/overview%})
 
  * [Events]({%slug winforms/richtexteditor/events%})
 

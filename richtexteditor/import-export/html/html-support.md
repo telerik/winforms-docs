@@ -5,13 +5,13 @@ description: RadRichTextEditor is a control that is able to display and edit ric
 slug: winforms/richtexteditor-/import/export/html-support
 tags: html,support
 published: True
-position: 2
+position: 3
 previous_url: richtexteditor-import-export-html-support
 ---
 
 # HTML support
 
-A major requirement for providing rich text editing capabilities is support for HTML. The __RadRichTextEditor__ control is designed to offer [import/export]({%slug winforms/richtexteditor/import%}) functionality for __HTML__ out of the box – through the __HtmlFormatProvider__. However, as __HTML__ is a diverse and complicated standard, supporting it comes with certain limitations. __HtmlFormatProvider__ is designed to handle slightly malformed __HTML__ (missing closing tags, missing quotes around attributes), however in this case correct parsing cannot be guaranteed. For best results we recommend importing valid __XHTML__ content.
+A major requirement for providing rich text editing capabilities is support for HTML. The __RadRichTextEditor__ control is designed to offer [import/export]({%slug winforms/richtexteditor/import-export/overview%}) functionality for __HTML__ out of the box – through the __HtmlFormatProvider__. However, as __HTML__ is a diverse and complicated standard, supporting it comes with certain limitations. __HtmlFormatProvider__ is designed to handle slightly malformed __HTML__ (missing closing tags, missing quotes around attributes), however in this case correct parsing cannot be guaranteed. For best results we recommend importing valid __XHTML__ content.
       
 The purpose of this article is to outline which parts of the __HTML__ are supported.
       
