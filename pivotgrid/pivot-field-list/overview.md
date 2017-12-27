@@ -23,6 +23,8 @@ __RadPivotFieldList__ is a standalone control that can be associated with RadPiv
 
 __RadPivotFieldList__ also provides you the option to defer the update of RadPivotGrid’s layout until you have pressed the __Update__  button or to update the layout immediately after you change the contents of its lists. This feature can be controlled by the checkbox at the bottom of the control, or via the __DeferUpdates__ property.
 
+>note The OLAP data providers (AdomdDataProvider and XmlaDataProvider) have a default distinct values limit of 1000 records. In case you have more distinct values in your database you won't see them all in the pivot field list control. To alter this number set the **DistinctValuesLimit** property of the provider.
+
 ## Value Options
 
 By using the drop-down menu of the items in the __Value__s list, you can modify settings related to the aggregate descriptors. For example, you can choose between the available aggregate functions (Sum, Count, Average, etc.) or you can modify the way that the values are calculated and displayed (% of total, % of another field, index, rank, etc…). Additionally, you can change the number format of the calculated values. 
