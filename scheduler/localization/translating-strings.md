@@ -152,6 +152,13 @@ public class CustomSchedulerLocalizationProvider : RadSchedulerLocalizationProvi
             case RadSchedulerStringId.StatusTentative: return "Tentative";
             case RadSchedulerStringId.StatusUnavailable: return "Unavailable";
             case RadSchedulerStringId.ReminderNone: return "None";
+            case RadSchedulerStringId.ReminderOneMinute: return "1 minute";
+            case RadSchedulerStringId.ReminderMinutes: return " minutes";
+            case RadSchedulerStringId.ReminderOneSecond: return "1 second";
+            case RadSchedulerStringId.ReminderSeconds: return " seconds";
+            case RadSchedulerStringId.ReminderDays: return " days";
+            case RadSchedulerStringId.ReminderWeeks: return " weeks";
+            case RadSchedulerStringId.ReminderHours: return " hours";
             case RadSchedulerStringId.ReminderZeroMinutes: return "0 minutes";
             case RadSchedulerStringId.ReminderFiveMinutes: return "5 minutes";
             case RadSchedulerStringId.ReminderTenMinutes: return "10 minutes";
@@ -451,6 +458,20 @@ Public Class CustomSchedulerLocalizationProvider
                 Return "Unavailable"
             Case RadSchedulerStringId.ReminderNone
                 Return "None"
+            Case RadSchedulerStringId.ReminderOneMinute
+                Return "1 minute"
+            Case RadSchedulerStringId.ReminderMinutes
+                Return " minutes"
+            Case RadSchedulerStringId.ReminderOneSecond
+                Return "1 second"
+            Case RadSchedulerStringId.ReminderSeconds
+                Return " seconds"
+            Case RadSchedulerStringId.ReminderDays
+                Return " days"
+            Case RadSchedulerStringId.ReminderWeeks
+                Return " weeks"
+            Case RadSchedulerStringId.ReminderHours
+                Return " hours"
             Case RadSchedulerStringId.ReminderZeroMinutes
                 Return "0 minutes"
             Case RadSchedulerStringId.ReminderFiveMinutes

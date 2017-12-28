@@ -336,9 +336,7 @@ Now, you can replace the default edit dialog with the custom one by using the Ra
 {{source=..\SamplesVB\Scheduler\Dialogs\SchedulerCustomDialogs.vb region=ReplaceDefaultDialog}}    
        
 ````C#
-        
 CustomEditForm editDialog = null;
-        
 private void radScheduler1_AppointmentEditDialogShowing(object sender, AppointmentEditDialogShowingEventArgs e)
 {
     if (editDialog == null)

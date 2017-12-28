@@ -30,6 +30,12 @@ class MyAggregateOptionsDialog : AggregateOptionsDialog
         base.LoadSettings(aggregateDescription);
         this.Text = "This is a custom dialog";
     }
+    protected override IEnumerable<object> GetDefaultAggregateFunctions(AggregateDescriptionBase aggregateDescription)
+    {
+        IEnumerable<object> functions = base.GetDefaultAggregateFunctions(aggregateDescription);
+        IEnumerable<object> customFunctions = functions.Concat(new List<object> { new SqrtSumAggregateFunction() });
+        return customFunctions;
+    }
 }
 
 ````
@@ -40,6 +46,11 @@ Class MyAggregateOptionsDialog
         MyBase.LoadSettings(aggregateDescription)
         Me.Text = "This is a custom dialog"
     End Sub
+    Protected Overrides Function GetDefaultAggregateFunctions(ByVal aggregateDescription As AggregateDescriptionBase) As IEnumerable(Of Object)
+        Dim functions As IEnumerable(Of Object) = MyBase.GetDefaultAggregateFunctions(aggregateDescription)
+        Dim customFunctions As IEnumerable(Of Object) = functions.Concat(New List(Of Object) From {New SqrtSumAggregateFunction()})
+        Return customFunctions
+    End Function
 End Class
 
 ````
