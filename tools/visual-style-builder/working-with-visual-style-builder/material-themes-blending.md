@@ -22,11 +22,17 @@ Telerik UI for WinForms suite offers a touch optimized theme which provides addi
 
 ## Generate Material Variation
 
-[Visual Style Builder]({%slug winforms/tools/visual-style-builder%}) provides an easy way to generate different color variations of the **Material** theme. Select *Tools >> Generate Material Variation* menu item:
+[Visual Style Builder]({%slug winforms/tools/visual-style-builder%}) provides an easy way to generate different color variations of the **Material** theme. Material theme blending uses the basic Material theme by executing a series of predefined commands. 
+
+Select *Tools >> Generate Material Variation* menu item:
 
 >caption Figure 2: Generate Material Variation
 
 ![tools-visual-style-builder-working-with-visual-style-builder-material-themes-blending 002](images/tools-visual-style-builder-material-themes-blending002.png)
+
+![tools-visual-style-builder-working-with-visual-style-builder-material-themes-blending 006](images/tools-visual-style-builder-material-themes-blending006.png) 
+
+>note If you already have loaded a customized Material theme (but not a Material variation) it will remain loaded when generating a Material variation.
 
 This will open the **Material Blend Dialog** from which you can choose the **Primary color** and the **Accent color**:
 
@@ -49,3 +55,4 @@ After loading the custom theme in [Theme Viewer]({%slug winforms/tools/themeview
 # See Also
 
 * [Touch Enabled Themes]({%slug winforms/themes/touch-enabled-themes%})
+* [Customizing the Material Theme]({%slug winforms/themes/theme-tutorials/customizing-material-theme%})
