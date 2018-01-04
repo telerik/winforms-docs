@@ -12,10 +12,9 @@ position: 2
 
 __DocxFormatProvider__ makes it easy to import and export **RadRichTextEditor** to/from DOCX format, preserving the entire document structure and formatting.
 
-All you have to do in order to use DocxFormatProvider is to add references to the assemblies listed below:
+All you have to do in order to use DocxFormatProvider is to reference the **Telerik.WinControls.RichTextEditor.dll** assembly and add the following namespace:
 
-* __Telerik.Windows.Documents.FormatProviders.OpenXml.dll__
-* __Telerik.Windows.Zip.dll__
+* __Telerik.Windows.Documents.FormatProviders.OpenXml__
 
 ## Import
 In order to import a __.docx__ file, you need to use the Import() method of DocxFormatProvider. The code example shows how to use __DocxFormatProvider__ to import a Docx document from a file.

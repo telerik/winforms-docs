@@ -1,7 +1,7 @@
 ---
 title: Settings
 page_title: Settings | RadRichTextEditor
-description: PdfFormatProvider allows for export of PDF documents and respectively export of RadRichTextBox to Pdf. The export settings provide modification options
+description: PdfFormatProvider allows for export of PDF documents and respectively export of RadRichTextEditor to Pdf. The export settings provide modification options
 slug: winforms/richtexteditor/import-export/pdf/settings
 tags: import/export
 published: True
@@ -10,7 +10,7 @@ position: 1
 
 # Settings
 
-__PdfFormatProvider__ allows for export of PDF documents and respectively export of RadRichTextBox to Pdf. Additionally, the export settings provide modification options. The current article outlines the available settings.
+__PdfFormatProvider__ allows for export of PDF documents and respectively export of RadRichTextEditor to Pdf. Additionally, the export settings provide modification options. The current article outlines the available settings.
 
 ## Export Settings
 

@@ -10,11 +10,11 @@ position: 1
 
 # Settings
 
-__HtmlFormatProvider__ allows for import of HTML documents and respectively export of RadRichTextBox to HTML. Additionally, the import/export settings provide modification options. The current article outlines the available settings.
+__HtmlFormatProvider__ allows for import of HTML documents and respectively export of RadRichTextEditor to HTML. Additionally, the import/export settings provide modification options. The current article outlines the available settings.
 
 ## Export Settings
 
-__HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control the export of the RadRichTextBox document.
+__HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control the export of the RadRichTextEditor document.
 
 ### ExportSettings Properties
 
@@ -158,7 +158,7 @@ htmlFormatProvider.ExportSettings = htmlExportSettings
 __HtmlFormatProvider__ exposes __ImportSettings__, which allow you to control the import of the HTML file.
 
 ### ImportSettings Properties
-* __UseDefaultStylesheetForFontProperties__: A property of type __bool__ that indicates whether the default font properties of RadRichTextBox or the defaults in the HTML specification should be used for the elements that do not set their FontSize, FontFamily, FontWeight and FontStyle explicitly.
+* __UseDefaultStylesheetForFontProperties__: A property of type __bool__ that indicates whether the default font properties of RadRichTextEditor or the defaults in the HTML specification should be used for the elements that do not set their FontSize, FontFamily, FontWeight and FontStyle explicitly.
 * __UseHtmlHeadingStyles__: A property of type __bool__ that indicates whether the heading style of the imported HTML should be imported or not.
 
 ### ImportSettings Events

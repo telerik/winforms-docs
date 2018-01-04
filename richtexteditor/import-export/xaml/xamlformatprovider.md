@@ -12,9 +12,9 @@ position: 2
 
 __XamlFormatProvider__ makes it easy to import and export RadDocument to/from XAML format, preserving as much as possible of the document structure and formatting. 
 
-To use __XamlFormatProvider__, you should add a reference to:
-
-* __Telerik.Windows.Documents.FormatProviders.Xaml.dll__
+To use __XamlFormatProvider__, you should reference the **Telerik.WinControls.RichTextEditor.dll** and add the following namespace: 
+	
+* __Telerik.WinForms.Documents.FormatProviders.Xaml__
 
 ## Import Settings
 In order to import a XAML document you can use the overloads of the __Import()__ method.

@@ -12,18 +12,15 @@ position: 2
 
 __PdfFormatProvider__ makes it easy to export __RadDocument__ to PDF format, preserving the entire document structure and formatting.
   
-All you have to do in order to use __PdfFormatProvider__ is add references to the assemblies listed below:
+All you have to do in order to use __PdfFormatProvider__ is reference the **Telerik.WinControls.RichTextEditor.dll** assembly and add the following namespace:
  
-* __Telerik.Windows.Documents.FormatProviders.Pdf.dll__
-* __Telerik.Windows.Zip.dll__
+* __Telerik.WinForms.Documents.FormatProviders.Pdf__
 
 ## Export
 
 In order to export a document to PDF you need to use the __Export()__ method of __PdfFormatProvider__.
 
 The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ instance and use it to export the document to PDF.
-        
->note The PdfFormatProvider class of RadRichTextBox is located in the **Telerik.Windows.Documents.FormatProviders.Pdf namespace**.
 
 #### Export to Pdf File
 {{source=..\SamplesCS\RichTextEditor\ImportExport\PdfFormatProviderForm.cs region=SetupPdfExportSettings}} 

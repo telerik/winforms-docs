@@ -12,12 +12,10 @@ position: 1
 
 __TxtFormatProvider__ makes it easy to import and export __RadDocument__ to/from plain text format, preserving the document structure. 
 
-To use __TxtFormatProvider__, you should add references to: 
+To use __TxtFormatProvider__, you should reference the **Telerik.WinControls.RichTextEditor.dll** and add the following namespace: 
 	
-* __Telerik.Windows.Documents.dll__
+* __Telerik.WinForms.Documents.FormatProviders.Txt__
         
->note The TxtFormatProvider of RadRichTextEditor resides in the **Telerik.Windows.Documents.FormatProviders.Txt** namespace, so you will need to add a *using* statement for it.	
-	
 ## Import
 
 In order to import a plain text document, you need to use the __Import()__ method of __TxtFormatProvider__. The first example shows how to use __TxtFormatProvider__ to import a document from a file.

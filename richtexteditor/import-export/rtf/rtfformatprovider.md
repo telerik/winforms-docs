@@ -12,13 +12,13 @@ position: 2
 
 __RtfFormatProvider__ makes it easy to import and export __RadDocument__ to/from RTF format, preserving the entire document structure and formatting.
 
-All you have to do in order to use __RtfFormatProvider__ is to add references to:
+To use __RtfFormatProvider__, you should reference the **Telerik.WinControls.RichTextEditor.dll** assembly and add the following namespace: 
       
-* __Telerik.Windows.Documents.FormatProviders.Rtf.dll__
+* __Telerik.WinForms.Documents.FormatProviders.Rtf__
   
 ## Import
 
-In order to import an RTF document, you need to use the __Import()__ method of __RtfFormatProvider__.
+In order to import an RTF document, you need to use the __Import__ method of __RtfFormatProvider__.
     
 The code from __Example 1__ shows how to use __RtfFormatProvider__ to import an RTF document from a file.
      
@@ -70,7 +70,7 @@ The resulting __RadDocument__ can be used like any code-generated document.
  
 ## Export
 
-In order to export a document to RTF, you need to use the __Export()__ method of __RtfFormatProvider__.
+In order to export a document to RTF, you need to use the __Export__ method of __RtfFormatProvider__.
         
 The example below shows how to use __RtfFormatProvider__ to export __RadDocument__ to a file.
 
