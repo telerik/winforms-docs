@@ -2,10 +2,10 @@
 title: Major and Minor releases
 page_title: Major and Minor releases
 description: Major and Minor releases
-slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/major-and-minor-releases
+slug: winforms/installation-deployment-and-distribution/major-and-minor-releases
 tags: major,and,minor,releases
 published: True
-position: 10
+position: 6
 previous_url: installation-deployment-and-distribution-vsx-major-and-minor-releases
 ---
 

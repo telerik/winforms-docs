@@ -29,6 +29,9 @@ navigation:
     barcode/barcode-types: 
         title: Barcode Types
         position: 3
+    barcode/how-to: 
+        title: How To
+        position: 4
     barcode/barcode-types/1d-barcodes:
         title: 1D Barcodes
         position: 1
