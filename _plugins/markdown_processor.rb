@@ -83,7 +83,8 @@ module Jekyll
                 end
 
                 node['id'] = id
-
+				node['class'] = "anchor"
+				
                 a = Nokogiri::XML::Node.new('a', doc)
                 a['href'] = "##{id}"
                 a.children = node.children

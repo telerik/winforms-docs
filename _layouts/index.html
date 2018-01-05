@@ -2,29 +2,36 @@
 <html>
     <head>
         <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="X-UA-Compatible" content="IE=9">
-        <title>{{ page.page_title || page.title }}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="page-position" content="{{page.position}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ page.page_title || page.title }} | UI for {{site.site_name}} Documentation by Progress</title>
 		
         <link href="{{site.baseurl}}/favicon.ico?Version=2016" rel="shortcut icon" />
-		
-		<link rel="canonical" href="{{ site.url }}{{ page.url | replace: '.html','' }}" />
-		
+        
+        <link rel="canonical" href="{{ site.url }}{{ page.url | replace: '.html','' }}" />
+
+        {% if page.page_title %}<meta name="title" content="{{page.page_title}}">{% endif %}
         {% if page.description %}<meta name="description" content="{{page.description}}">{% endif %}
-		<meta name="page-position" content="{{page.position}}">        
+        
         <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700' rel='stylesheet' type='text/css'>
-		{% stylesheet 2014_2_716_styleskendo.common.min.css %}
+		{% if page.glyphs_refence_sheet %}
+			{% stylesheet telerikwebui-glyph-styles %}
+		{% endif %}
+        <link rel="stylesheet" href="//kendo.cdn.telerik.com/2017.3.1026/styles/kendo.common.min.css" />
         {% stylesheet styles %}
         {% stylesheet theme %}
         {% stylesheet branding %}
         {% stylesheet highlight %}
-        {% javascript jquery-1.12.0.min.js %}
-		{% javascript kendo %}    
+        {% stylesheet icon-font %}
+        <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+         <script src="//kendo.cdn.telerik.com/2017.3.1026/js/kendo.web.min.js"></script>
+        {% javascript prettify %}
         {% javascript app %}
 		{% javascript prettify %}
         {% javascript branding %}
-		{% javascript feedback %}
+        {% javascript matchMedia %}
 		
 		<!--[if lt IE 9]>
 		<script>
@@ -45,9 +52,8 @@
         </noscript>
         <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', '{{site.google_tag_manager}}');</script>
         <!-- End Google Tag Manager -->
-            {% include header.html %}
+        {% include header.html %}
 
         {{ content }}
     </body>
 </html>
-
