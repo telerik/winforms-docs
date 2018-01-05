@@ -128,12 +128,14 @@ Now, you can replace the default **DeleteRecurringAppointmentDialog** with the c
        
 ````C#
 CustomDeleteRecurringAppointmentDialog myDialog;
+        
 private void radScheduler1_RecurrenceDeleteDialogShowing(object sender, RecurrenceDeleteDialogShowingEventArgs e)
 {
     if (myDialog == null)
     {
         myDialog = new CustomDeleteRecurringAppointmentDialog();
     }
+    myDialog.EventName = e.Appointment.Summary;
     e.DeleteDialog = myDialog;
 }
 
@@ -144,6 +146,7 @@ Private Sub RadScheduler1_RecurrenceDeleteDialogShowing(sender As Object, e As T
     If myDialog Is Nothing Then
         myDialog = New CustomDeleteRecurringAppointmentDialog()
     End If
+    myDialog.EventName = e.Appointment.Summary
     e.DeleteDialog = myDialog
 End Sub
 

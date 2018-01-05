@@ -337,6 +337,7 @@ Now, you can replace the default edit dialog with the custom one by using the Ra
        
 ````C#
 CustomEditForm editDialog = null;
+        
 private void radScheduler1_AppointmentEditDialogShowing(object sender, AppointmentEditDialogShowingEventArgs e)
 {
     if (editDialog == null)
