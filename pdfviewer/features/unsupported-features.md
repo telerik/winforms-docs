@@ -21,7 +21,7 @@ The unsupported features include:
 
 * Lab, ICCBased color spaces;
 
-* Encrypted documents when a non-standard encryption method is used, or the document is password-protected;
+* Password protection.
 
 * JPXDecode filters. We have provided API to plug-in custom user-defined filters, but the filters do not work out of the box;
 
