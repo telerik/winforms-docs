@@ -15,6 +15,7 @@ Binding RadTreeView to self referencing data differs from [binding to related da
  
 In order to set the parent-child relation between the records of the data source, we should set the __ParentMember__ and __ChildMember__ properties to the respective fields in the data source. If the parent `ID` for a record does not have a respective value in the child `ID` field of the records, then that record is considered to have no parents.
 		
+>important All parent identifiers must be positive numbers.
 
 ## Minimal example
 

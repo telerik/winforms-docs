@@ -41,6 +41,7 @@ The __FieldResultMode__ property of the __DocxExportSettings__ is an enumeration
 * __Code__: Shows all fields codes in the current document.
 * __DisplayName__: Shows all fields names in the current document.
 * __Result__: Replaces the merge fields in your document with actual data from your recipient list.
+* __Null__: When the **FieldResultMode** is set to *null*, fields' display mode is not changed. This can provide a better performance and lower memory usage while exporting.
 	
 ## See Also
 

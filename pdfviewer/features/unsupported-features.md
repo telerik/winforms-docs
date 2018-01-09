@@ -23,13 +23,11 @@ The unsupported features include:
 
 * Password protection.
 
-* JPXDecode filters. We have provided API to plug-in custom user-defined filters, but the filters do not work out of the box;
+* JPXDecode filter: This filter does not work out of the box. However, there is API allowing to plug-in custom user-defined filters. This API is described in the [Customize PDF Rendering]({%slug winforms/pdfviewer/customize-and-extensibility/customize-pdf-rendering%}) article.
 
-* Annotations - of all annotations, only link is supported;
+* Annotations: Full support for Widget and Link annotations. All other types of annotations are supported in read-only mode.
 
-* Structured content: There are several ways to define structured content in a PDF file. RadPdfViewer does not support document outline and article threads. The interactive forms are currently read-only.
-
-When a PDF file contains some of these items, it may be shown incorrectly or not shown at all.
+* Structured content: There are several ways to define structured content in a PDF file. **RadPdfViewer** does not support document outline and article threads.
 
 When a PDF file contains some of these items, it may be shown incorrectly or not shown at all.
 
