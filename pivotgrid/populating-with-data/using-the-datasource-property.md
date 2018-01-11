@@ -13,7 +13,7 @@ previous_url: pivotgrid-populating-with-data-using-the-datasource-property
 
 Similarly to other WinForms data controls, **RadPivotGrid** can be populated with data by setting its **DataSource** and **DataMember** properties. However, you also need to add the appropriate descriptions in order to define the structure of the data that is going to be displayed. More information about the different types of descriptions can be found in the [Using LocalDataSourceProvider article]({%slug winforms/pivotgrid/populating-with-data/using-the-localsourcedataprovider%})
 
-#### Setting DataSource and DataMeber
+#### Setting DataSource and DataMember
 
 {{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheDataSourceProperty.cs region=FillWithData}} 
 {{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheDataSourceProperty.vb region=FillWithData}} 
@@ -36,36 +36,36 @@ this.radPivotGrid1.DataSource = bs;
 
 ````
 ````VB.NET
-Me.RadPivotGrid1.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
- .PropertyName = "OrderDate", _
- .[Step] = DateTimeStep.Year, _
- .GroupComparer = New GroupNameComparer() _
+Me.RadPivotGrid1.RowGroupDescriptions.Add(New DateTimeGroupDescription() With {
+ .PropertyName = "OrderDate",
+ .[Step] = DateTimeStep.Year,
+ .GroupComparer = New GroupNameComparer()
 })
-Me.RadPivotGrid1.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
- .PropertyName = "OrderDate", _
- .[Step] = DateTimeStep.Quarter, _
- .GroupComparer = New GroupNameComparer() _
+Me.RadPivotGrid1.RowGroupDescriptions.Add(New DateTimeGroupDescription() With {
+ .PropertyName = "OrderDate",
+ .[Step] = DateTimeStep.Quarter,
+ .GroupComparer = New GroupNameComparer()
 })
-Me.RadPivotGrid1.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
- .PropertyName = "OrderDate", _
- .[Step] = DateTimeStep.Month, _
- .GroupComparer = New GroupNameComparer() _
+Me.RadPivotGrid1.RowGroupDescriptions.Add(New DateTimeGroupDescription() With {
+ .PropertyName = "OrderDate",
+ .[Step] = DateTimeStep.Month,
+ .GroupComparer = New GroupNameComparer()
 })
-Me.RadPivotGrid1.ColumnGroupDescriptions.Add(New PropertyGroupDescription() With { _
- .PropertyName = "EmployeeID", _
- .GroupComparer = New GrandTotalComparer() _
+Me.RadPivotGrid1.ColumnGroupDescriptions.Add(New PropertyGroupDescription() With {
+ .PropertyName = "EmployeeID",
+ .GroupComparer = New GrandTotalComparer()
 })
-Me.RadPivotGrid1.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
- .PropertyName = "Freight", _
- .AggregateFunction = AggregateFunctions.Sum _
+Me.RadPivotGrid1.AggregateDescriptions.Add(New PropertyAggregateDescription() With {
+ .PropertyName = "Freight",
+ .AggregateFunction = AggregateFunctions.Sum
 })
-Me.RadPivotGrid1.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
- .PropertyName = "Freight", _
- .AggregateFunction = AggregateFunctions.Average _
+Me.RadPivotGrid1.AggregateDescriptions.Add(New PropertyAggregateDescription() With {
+ .PropertyName = "Freight",
+ .AggregateFunction = AggregateFunctions.Average
 })
-Me.RadPivotGrid1.FilterDescriptions.Add(New PropertyFilterDescription() With { _
- .PropertyName = "ShipCountry", _
- .CustomName = "Country" _
+Me.RadPivotGrid1.FilterDescriptions.Add(New PropertyFilterDescription() With {
+ .PropertyName = "ShipCountry",
+ .CustomName = "Country"
 })
 Dim dataset As New NwindDataSet()
 Dim adapter As New NwindDataSetTableAdapters.OrdersTableAdapter()
@@ -85,6 +85,55 @@ Me.RadPivotGrid1.DataSource = bs
 >caption Figure 1: RadPivot Data Binding
 
 ![pivotgrid-populating-with-datausing-the-datasource-property](images/pivotgrid-populating-with-datausing-the-datasource-property.png)
+
+# Localizing the Data Provider
+
+The local data source provider is built dynamically while binding **RadPivotGrid** through its **DataSource** property. The data provider can be [localized](https://docs.telerik.com/devtools/winforms/pivotgrid/populating-with-data/using-the-localsourcedataprovider#the-culture-property) by setting its **Culture** property. Since the provider is created on the go, a suitable place to do this job is the handler of the RadPivotGrid.**UpdatedCompleted** event.
+
+#### Setting Culture
+
+{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheDataSourceProperty.cs region=LocalizingDataProvider}} 
+{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheDataSourceProperty.vb region=LocalizingDataProvider}}
+````C#
+public PivotGridUsingTheDataSourceProperty()
+{
+    InitializeComponent();
+    FillWithData();
+    this.radPivotGrid1.UpdateCompleted += RadPivotGrid1_UpdateCompleted;
+}
+private void RadPivotGrid1_UpdateCompleted(object sender, EventArgs e)
+{
+    this.radPivotGrid1.UpdateCompleted -= RadPivotGrid1_UpdateCompleted;
+    LocalDataSourceProvider dataProvider = this.radPivotGrid1.DataProvider as LocalDataSourceProvider;
+    if (dataProvider != null)
+    {
+        dataProvider.Culture = new System.Globalization.CultureInfo("de-DE");
+        dataProvider.Refresh();
+    }
+}
+
+````
+````VB.NET
+Public Sub New()
+    InitializeComponent()
+    FillWithData()
+    AddHandler Me.RadPivotGrid1.UpdateCompleted, AddressOf RadPivotGrid1_UpdateCompleted
+End Sub
+Private Sub RadPivotGrid1_UpdateCompleted(sender As Object, e As EventArgs)
+    RemoveHandler Me.RadPivotGrid1.UpdateCompleted, AddressOf RadPivotGrid1_UpdateCompleted
+    Dim dataProvider = TryCast(Me.RadPivotGrid1.DataProvider, LocalDataSourceProvider)
+    If dataProvider IsNot Nothing Then
+        dataProvider.Culture = New System.Globalization.CultureInfo("de-DE")
+        dataProvider.Refresh()
+    End If
+End Sub
+
+```` 
+
+
+
+{{endregion}} 
+
 
 # See Also
 
