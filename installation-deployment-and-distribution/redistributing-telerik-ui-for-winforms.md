@@ -352,6 +352,10 @@ Telerik.WinControls.dll</td></tr><tr><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>
 
+<b>RadBarcode</b></td><td>
+
+Telerik.WinControls.UI.dll</td></tr><tr><td>
+
 <b>RadBreadCrumb</b></td><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>

@@ -17,7 +17,8 @@ previous_url: overview, RadControlsForWinForms
 
 Telerik UI for for WinForms includes over 120 UI controls that you can use to easily build unique and visually stunning Line of Business applications. Boasting a well-designed architecture and CAB support, Telerik UI for for WinForms controls are perfectly suited for your Enterprise desktop development. 
 
-* [ApplicationMenu]({%slug winforms/menus/applicationmenu%})  
+* [ApplicationMenu]({%slug winforms/menus/applicationmenu%})
+* [Barcode]({%slug winforms/barcode/overview%})  
 * BreadCrumb
 * [BulletGraph]({%slug winforms/gauges/bulletgraph%})
 * [Calendar]({%slug winforms/calendar%})
