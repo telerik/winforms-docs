@@ -41,6 +41,8 @@ __RadRichTextEditor__ is a control that is able to display and edit rich-text co
 
 * __Table support__ – including nested tables, merging cells, setting different __RowSpan__ and __ColumnSpan__, tables with auto width and more. [Read more]({%slug winforms/richtexteditor-/document-elements/table%})
 
+* __Section Columns__ You can arrange the text into columns with equal or different width and set a separator between them. Find more information on how to use this feature in the [Section Columns]({%slug radrichtexteditor-ui-for-applying-rich-text-formatting-section-columns%}) UI and [Section Columns API]({%slug winforms/richtextEditor/section-columns%}) articles.
+
 * __ContextMenu__ - a standard one is provided out of the box, but it can be easily customized or substituted for a user-defined one. [Read more]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/context-menu%})
 
 * __SelectionMiniToolbar__ - very similar to the one in MS Word, but can also be replaced with another. [Read more]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/selection-mini-toolbar%})
@@ -57,7 +59,7 @@ __RadRichTextEditor__ is a control that is able to display and edit rich-text co
 
 * __Rich-text clipboard__ - allows rich text copy/paste from Word, OpenOffice etc. [Read more]({%slug winforms/richtexteditor-/features/clipboard-support%})
 
-* __Import/export__ - with Telerik __RadRichTextEditor__ control you can load XAML, HTML, RTF, DocX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats or PDF. [Read more]({%slug winforms/richtexteditor/import%})
+* __Import/export__ - with Telerik __RadRichTextEditor__ control you can load XAML, HTML, RTF, DocX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats or PDF. [Read more]({%slug winforms/richtexteditor/import-export/overview%})
 
 * __Headers and Footers__ - __RadRichTextEditor__ supports headers and footers in its document. [Read more]({%slug winforms/richtexteditor-/features/headers-and-footers%})
 

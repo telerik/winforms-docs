@@ -23,7 +23,7 @@ It will pop up when you press the `Delete` key while a recurring appointment is 
 
 ![scheduler-winforms-scheduler-dialogs-deleterecurringappointmentdialog 002](images/scheduler-winforms-scheduler-dialogs-deleterecurringappointmentdialog002.png)
 
-## Create custom DeleteRecurringAppointmentDialog
+## Create a custom DeleteRecurringAppointmentDialog
 
 You can extend the default **DeleteRecurringAppointmentDialog** and add custom fields or replace some of the existing ones. Alternatively, you can create a completely new dialog according to any specific requirements. For this purpose, it is necessary to create a class that inherits **RadSchedulerDialog** and implements the **IDeleteRecurringAppointmentDialog** interface. The **IDeleteRecurringAppointmentDialog** interface requires implementing the following methods and properties:
 *  DialogResult **ShowDialog**() 
@@ -43,55 +43,65 @@ In the following example, we will create a derivative of the **DeleteRecurringAp
 {{source=..\SamplesVB\Scheduler\Dialogs\CustomDeleteRecurringAppointmentDialog.vb region=MyDeleteRecurringAppointmentDialog}}    
        
 ````C#
-public partial class CustomDeleteRecurringAppointmentDialog : DeleteRecurringAppointmentDialog
-{
-    Telerik.WinControls.UI.Localization.RadSchedulerLocalizationProvider localizationProvider;
-    RadDropDownList deleteSelection;
-    public CustomDeleteRecurringAppointmentDialog()
+    public partial class CustomDeleteRecurringAppointmentDialog : DeleteRecurringAppointmentDialog
     {
-        InitializeComponent();
-        this.Text = localizationProvider.GetLocalizedString(Telerik.WinControls.UI.Localization.RadSchedulerStringId.DeleteRecurrenceDialogTitle);
-    }
-    protected override void OnLoad(EventArgs e)
-    {
-        base.OnLoad(e);
-        this.radioDeleteOccurrence.Visible = false;
-        this.radioDeleteSeries.Visible = false;
-        if (deleteSelection == null)
+        Telerik.WinControls.UI.Localization.RadSchedulerLocalizationProvider localizationProvider;
+        RadDropDownList deleteSelection;
+
+        public CustomDeleteRecurringAppointmentDialog()
         {
-            deleteSelection = new RadDropDownList();
-            deleteSelection.Width = 150;
-            this.Controls.Add(deleteSelection);
-            deleteSelection.Items.Add(this.radioDeleteOccurrence.Text);
-            deleteSelection.Items.Add(this.radioDeleteSeries.Text);
-            deleteSelection.SelectedIndex = 0;
-            deleteSelection.Location = this.radioDeleteOccurrence.Location;
+            InitializeComponent();
+
+            this.Text = localizationProvider.GetLocalizedString(Telerik.WinControls.UI.Localization.RadSchedulerStringId.DeleteRecurrenceDialogTitle);
+        }
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            this.radioDeleteOccurrence.Visible = false;
+            this.radioDeleteSeries.Visible = false;
+
+            if (deleteSelection == null)
+            {
+                deleteSelection = new RadDropDownList();
+                deleteSelection.Width = 150;
+                this.Controls.Add(deleteSelection);
+                deleteSelection.Items.Add(this.radioDeleteOccurrence.Text);
+                deleteSelection.Items.Add(this.radioDeleteSeries.Text);
+                deleteSelection.SelectedIndex = 0;
+                deleteSelection.Location = this.radioDeleteOccurrence.Location;
+            }
+        }
+
+        public override bool DeleteSeries
+        {
+            get
+            {
+                return this.deleteSelection.SelectedIndex == 1;
+            }
+        }
+
+        protected override void LocalizeDialog(Telerik.WinControls.UI.Localization.RadSchedulerLocalizationProvider localizationProvider)
+        {
+            base.LocalizeDialog(localizationProvider);
+            this.localizationProvider = localizationProvider;
         }
     }
-    public override bool DeleteSeries
-    {
-        get
-        {
-            return this.deleteSelection.SelectedIndex == 1;
-        }
-    }
-    protected override void LocalizeDialog(Telerik.WinControls.UI.Localization.RadSchedulerLocalizationProvider localizationProvider)
-    {
-        base.LocalizeDialog(localizationProvider);
-        this.localizationProvider = localizationProvider;
-    }
-}
+    
 
 ````
 ````VB.NET
 Partial Public Class CustomDeleteRecurringAppointmentDialog
     Inherits DeleteRecurringAppointmentDialog
+
     Private localizationProvider As Telerik.WinControls.UI.Localization.RadSchedulerLocalizationProvider
+
     Private deleteSelection As RadDropDownList
+
     Public Sub New()
         InitializeComponent()
         Me.Text = localizationProvider.GetLocalizedString(Telerik.WinControls.UI.Localization.RadSchedulerStringId.DeleteRecurrenceDialogTitle)
     End Sub
+
     Protected Overrides Sub OnLoad(ByVal e As EventArgs)
         MyBase.OnLoad(e)
         Me.radioDeleteOccurrence.Visible = False
@@ -106,11 +116,13 @@ Partial Public Class CustomDeleteRecurringAppointmentDialog
             deleteSelection.Location = Me.radioDeleteOccurrence.Location
         End If
     End Sub
+
     Public Overrides ReadOnly Property DeleteSeries As Boolean
         Get
             Return Me.deleteSelection.SelectedIndex = 1
         End Get
     End Property
+
     Protected Overrides Sub LocalizeDialog(ByVal localizationProvider As Telerik.WinControls.UI.Localization.RadSchedulerLocalizationProvider)
         MyBase.LocalizeDialog(localizationProvider)
         Me.localizationProvider = localizationProvider
@@ -127,29 +139,27 @@ Now, you can replace the default **DeleteRecurringAppointmentDialog** with the c
 {{source=..\SamplesVB\Scheduler\Dialogs\SchedulerCustomDialogs.vb region=ReplaceDefaultDeleteRecurringAppointmentDialog}}    
        
 ````C#
-CustomDeleteRecurringAppointmentDialog myDialog;
-        
-private void radScheduler1_RecurrenceDeleteDialogShowing(object sender, RecurrenceDeleteDialogShowingEventArgs e)
-{
-    if (myDialog == null)
-    {
-        myDialog = new CustomDeleteRecurringAppointmentDialog();
-    }
-    myDialog.EventName = e.Appointment.Summary;
-    e.DeleteDialog = myDialog;
-}
-
+        CustomDeleteRecurringAppointmentDialog myDialog;
+        private void radScheduler1_RecurrenceDeleteDialogShowing(object sender, RecurrenceDeleteDialogShowingEventArgs e)
+        {
+            if (myDialog == null)
+            {
+                myDialog = new CustomDeleteRecurringAppointmentDialog();
+            }
+            myDialog.EventName = e.Appointment.Summary;
+            e.DeleteDialog = myDialog;
+        }        
 ````
 ````VB.NET
-Private myDialog As CustomDeleteRecurringAppointmentDialog
-Private Sub RadScheduler1_RecurrenceDeleteDialogShowing(sender As Object, e As Telerik.WinControls.UI.RecurrenceDeleteDialogShowingEventArgs)
-    If myDialog Is Nothing Then
-        myDialog = New CustomDeleteRecurringAppointmentDialog()
-    End If
-    myDialog.EventName = e.Appointment.Summary
-    e.DeleteDialog = myDialog
-End Sub
+    Private myDialog As CustomDeleteRecurringAppointmentDialog
 
+    Private Sub RadScheduler1_RecurrenceDeleteDialogShowing(sender As Object, e As Telerik.WinControls.UI.RecurrenceDeleteDialogShowingEventArgs)
+        If myDialog Is Nothing Then
+            myDialog = New CustomDeleteRecurringAppointmentDialog()
+        End If
+        myDialog.EventName = e.Appointment.Summary
+        e.DeleteDialog = myDialog
+    End Sub
 ````
 
 {{endregion}}

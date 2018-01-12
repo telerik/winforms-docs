@@ -23,6 +23,21 @@ navigation:
     licensing:
         title: Licensing
         position: 50
+    barcode: 
+        title: Barcode
+        position: 55
+    barcode/barcode-types: 
+        title: Barcode Types
+        position: 3
+    barcode/how-to: 
+        title: How To
+        position: 4
+    barcode/barcode-types/1d-barcodes:
+        title: 1D Barcodes
+        position: 1
+    barcode/barcode-types/2d-barcodes:
+        title: 2D Barcodes
+        position: 2
     buttons:
         title: Buttons
         position: 60
@@ -948,8 +963,26 @@ navigation:
     richtexteditor/features/references:
         title: References
         position: 1
-    richtexteditor/import:
+    richtexteditor/import-export:
         title: Import/Export
+        position: 6
+    richtexteditor/import-export/docx:
+        title: Docx
+        position: 1
+    richtexteditor/import-export/html:
+        title: Html
+        position: 2
+    richtexteditor/import-export/pdf:
+        title: Pdf
+        position: 3
+    richtexteditor/import-export/rtf:
+        title: Rtf
+        position: 4
+    richtexteditor/import-export/xaml:
+        title: Xaml
+        position: 5
+    richtexteditor/import-export/plain-text:
+        title: Plain Text
         position: 6
     richtexteditor/ui-for-applying-rich-text-formatting:
         title: UI for Applying Rich Text Formatting

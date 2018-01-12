@@ -60,7 +60,7 @@ spreadStreamExport.RunExport("D:\StreamExport.xlsx", New SpreadStreamExportRende
 |__HiddenColumnOption__|Gets or sets a value indicating how hidden columns are exported.|
 |__HiddenRowOption__|Gets or sets a value indicating how hidden rows are exported.|
 |__PagingExportOption__|Gets or sets a value indicating how the export behaves when paging is enabled.|
-|__ChildViewExportMode__|Gets or sets the child view export mode.|
+|__ChildViewExportMode__|Defines which child view of a hierarchy row to be exported. Available modes are: - *ExportFirstView*: The exporter exports the first view. - *ExportCurrentlyActiveView*: The exporter exports the view that is actived in the grid. - *SelectViewToExport*: In this mode the __ChildViewExporing__ event is fired. The event allows to choose the view to export in row by row basis. - *ExportAllViews*: In this mode all child views are exported. Available in GridViewSpreadExport and GridViewPdfExport.    |
 |__RadGridViewToExport__|Gets or sets the RadGridView to export.|
 |__ExportFormat__|Gets or sets the format of the exported file - XLSX or CSV.|
 |__ExportGroupedColumns__|Gets or sets a value indicating whether to export grouped columns.|

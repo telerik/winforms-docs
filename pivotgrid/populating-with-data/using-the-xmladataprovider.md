@@ -138,6 +138,10 @@ Me.RadPivotGrid1.PivotGridElement.DataProvider = provider
 
 {{endregion}}
 
+## Distinct Values Limit
+
+The **XmlaDataProvider** has a default limit of 1000 distinct values that will be fetched from the database. This limit is set on purpose to avoid accidental performance hits. You can alter this limit by setting the **DistinctValuesLimit** property of the provider.
+
 # See Also
 
 * [Using the AdomdDataProvider]({%slug winforms/pivotgrid/populating-with-data/using-the-adomddataprovider%})

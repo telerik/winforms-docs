@@ -34,7 +34,7 @@ You can find in the table below all available filter operators for the common ty
 |Type|Valid Operators|
 |----|----|
 |Numeric Types|Equals, Not equal to, Greater than, Less than, Greater than or equal to, Less than or equal to, Is null, Is not null|
-|String|Contains, Does not contain, Starts with, Ends with, Equals, Not equal to, Is null, Is not null|
+|String|Contains, Does not contain, Starts with, Ends with, Is in list, Not in list, Equals, Not equal to, Is null, Is not null|
 |DateTime|Equals, Not equal to, Greater than, Less than, Greater than or equal to, Less than or equal to, Is null, Is not null|
 |Bool|Equals, Not equal to, Is null, Is not null|
 

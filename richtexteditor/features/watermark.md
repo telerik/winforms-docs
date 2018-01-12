@@ -13,7 +13,7 @@ previous_url: richtexteditor-features-watermark
 
 Watermarks are text or pictures that appear behind document's text. They often add interest or identify the document status. You can see watermarks in *Paged* layout mode. They can be printed and exported to all rich-text formats, except HTML.
 
->tip More on the specifics of the format providers you can find [here]({%slug winforms/richtexteditor/import%}).
+>tip More on the specifics of the format providers you can find [here]({%slug winforms/richtexteditor/import-export/overview%}).
 >
 
 * [Uisng UI](#using-ui)

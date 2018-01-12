@@ -56,7 +56,40 @@ Open the Smart Tag of the ribbon and set the associated control.
 
 That is all. You are ready to start the application and examine the control features.
 
+### Programmatically loading documents
+
+In some cases you may need to load the document in the code behind, not by using the UI. The following snippet demonstrates how you can load the document directly from file.
+
+#### Load document with code.
+
+{{source=..\SamplesCS\Spreadsheet\GettingStartedCode.cs region=LoadFile}} 
+{{source=..\SamplesVB\Spreadsheet\GettingStartedCode.vb region=LoadFile}}
+
+````C#
+string fileName = @"C:\Test.xlsx";
+var formatProvider = new XlsxFormatProvider();
+using (Stream input = new FileStream(fileName, FileMode.Open))
+{
+    radSpreadsheet1.Workbook = formatProvider.Import(input);
+}
+
+````
+````VB.NET
+Dim fileName As String = "C:\Test.xlsx"
+Dim formatProvider = New XlsxFormatProvider()
+Using input As Stream = New FileStream(fileName, FileMode.Open)
+    radSpreadsheet1.Workbook = formatProvider.Import(input)
+End Using
+
+````
+
+
+
+{{endregion}} 
+
+>note Detailed information about the format providers is available [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/general-information).
+
 ## See Also
 
-* [SpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)
+* [SpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)
 

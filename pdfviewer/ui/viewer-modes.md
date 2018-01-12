@@ -36,15 +36,15 @@ The mode of the viewer is set using the __ViewerMode__ property:
 
 #### With Code
 
-{{source=..\SamplesCS\PdfViewer\PdfUI.cs region=FitFullPage}} 
-{{source=..\SamplesVB\PdfViewer\PdfUI.vb region=FitFullPage}} 
+{{source=..\SamplesCS\PdfViewer\PdfUI.cs region=ViewerMode}} 
+{{source=..\SamplesVB\PdfViewer\PdfUI.vb region=ViewerMode}} 
 
 ````C#
-this.radPdfViewer1.FitFullPage = true;
+this.radPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection;
 
 ````
 ````VB.NET
-Me.RadPdfViewer1.FitFullPage = True
+Me.RadPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection
 
 ````
 

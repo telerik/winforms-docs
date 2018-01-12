@@ -57,7 +57,7 @@ Me.radMap1.Providers.Add(bingProvider)
 |__BingKey__|Gets or sets the Bing key.|
 |__UseSession__|Gets or sets a value indicating whether to use session key.|
 |__SessionId__|Gets the session identifier.|
-|__ImagerySet__|Gets or sets the imagery set. The possible values are: *Aerial*, *AerialWithLabels*, *Road*, *CanvasDark*, *CanvasLight*, *CanvasGray*. ![map-bingrestmapprovider 001](images/map-bingrestmapprovider002.png)|
+|__ImagerySet__|Gets or sets the imagery set. The possible values are: *Aerial*, *AerialWithLabels*, *AerialWithLabelsOnDemand*,*Road*, *RoadOnDemand*, *CanvasDark*, *CanvasLight*, *CanvasGray*, *OrdnanceSurvey*. ![map-bingrestmapprovider 001](images/map-bingrestmapprovider002.png)|
 |__Initializing__|Gets or sets a value indicating whether this __BingRestMapProvider__ is currently in the initialization process.|
 |__Initialized__|Gets or sets a value indicating whether this __BingRestMapProvider__ is initialized.|
 |__MaxZoomLevel__|Gets or sets the maximum zoom level.|
@@ -66,6 +66,8 @@ Me.radMap1.Providers.Add(bingProvider)
 |__CacheProvider__|Gets or sets the provider used for data caching.|
 |__EnableCaching__|Gets or set a value whether the caching is enabled.|
 |__TileDownloader__|Gets or sets the tile downloader.|
+
+>note The **ImagerySet**.*OrdnanceSurvey* is only visible in the Great Britain area and in between zoom levels of 10 and 17. 
 
 # Methods 
 

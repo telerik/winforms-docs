@@ -22,11 +22,13 @@ Some of its features are:
 
 * Named Ranges
 
-* Protection
+* Protection: Different options available for protecting the workbook and its worksheets from modifications.
 
-* Images
+* Shapes and Images: The UI enables you to work with images. [API](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/shapes-and-images) for insertion, positioning and deletion of images in worksheets.
 
-* Freeze panes
+* Document themes
+
+* [Freeze panes]({%slug radspreadsheet-features-freeze-panes%})
 
 * Create and use multiple sheets, each one with its own history stack
 
@@ -43,19 +45,19 @@ Some of its features are:
 
 * Use different cell formatting
 
-* Various fonts and font sizes
+	* Various fonts and font sizes
 
-* ForeColor and background color
+	* ForeColor and background color
 
-* Bold, italics and underline
+	* Bold, italics and underline
 
-* Vertical and horizontal cell alignment
+	* Vertical and horizontal cell alignment
 
-* Text wrapping
+	* Text wrapping
 
-* Cell borders
+	* Cell borders
 
-* Use cell styles and themes for a more consistent look.
+	* Use cell styles and themes for a more consistent look.
 
 * A battery of data formatting options:
 
@@ -83,21 +85,37 @@ Some of its features are:
 
 * Auto fill and Series - fill cells automatically with data following a specific pattern
 
-* A broad range of formulas in different categories:
+* [Data Validation]({%slug radspreadsheet-features-data-validation%}): Enables you to control the type of data or the values that users enter into a cell. Different data validation rules are available, including list, number, date, text length or custom rules.
 
-    - Logical
+* A broad range of formulas in different categories: Logical, Text, Date and Time, Math and Trigonometry. **RadSpreadsheet** comes with more than 200 built-in functions. The API enables you to easily plug custom ones as well. For more information, refer to the [Formulas](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/formulas/formulas) section for SpreadProcessing. 
 
-    - Text
+* [Filtering]({%slug radspreadsheet-features-filtering%}) worksheet data.
 
-    - Date and Time
+* [Sorting]({%slug radspreadsheet-features-sorting%}) the data in the worksheet.
 
-    - Math and Trigonometry
+* [Find and replace data](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/find-and-replace).
 
-* Filtering
+* Copy/Paste: Add or copy worksheets within or across workbooks. Of course, copying and pasting of cells is supported as well.
 
-* Printing
+* Customize row/column headings.
+
+* Show/Hide grid lines and headers.
+
+* Zoom in and out each sheet separately.
+
+* Named Ranges: You can use the named ranges on workbook and worksheet levels.
+
+* [Printing]({%slug radspreadsheet-features-printing%})
+
+* [Headers and Footers]({%slug radspreadsheet-features-headers-and-footers%}): The functionality enables you to add rich text content in the page margins when laying out a worksheet to pages.
+
+* [Selection]({%slug radspreadsheet-ui-working-with-selection%}) and active cell
+
+* [Customizing the selection appearance]({%slug radspreadsheet-howto-customize-selection%})
 
 * Easy integration with __RadSpreadSheetRibbonBar__
+
+* [Localization]({%slug radspreadsheet-localization%}): You can easily translate the string resources of RadSpreadsheet.
 
 ## See Also
 

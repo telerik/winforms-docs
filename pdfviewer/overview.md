@@ -37,6 +37,7 @@ Here is a list of the supported features
 * You can [rotate]({%slug winforms/pdfviewer/ui/rotation%}) the document as well.
 * [Context Menu]({%slug winforms/pdfviewer/ui/context-menu%}) to provide easy access to several of the features of the control.
 * Extensible support for different stream compression filters. [Read more]({%slug winforms/pdfviewer/customize-and-extensibility/customize-pdf-rendering%})
+* Support for documents encrypted with Encryption Algorithm 4 (RC4/AES-128).
 * The API provides different options for extending and customizing the control.
 
 >note **RadPdfViewer** requires **.NET Framework 4.0** and cannot be used with an older version. 
