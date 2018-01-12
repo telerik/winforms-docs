@@ -31,28 +31,29 @@ ExportToImage(int width, int height) 	Layouts the barcode using the provided dim
 {{source=..\SamplesVB\Barcode\BarcodeSettings.vb region=ExportToImage}} 
 
 ````C#
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
-            {
-                saveFileDialog.Filter = "Png (*.png)|*.png";
-                saveFileDialog.FileName = "QRCode";
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    Image img = this.radBarcode1.ExportToImage();
-                    img.Save(saveFileDialog.FileName, System.Drawing.Imaging.ImageFormat.Png);
-                }
-            }  
+            
+using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+{
+    saveFileDialog.Filter = "Png (*.png)|*.png";
+    saveFileDialog.FileName = "QRCode";
+    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+    {
+        Image img = this.radBarcode1.ExportToImage();
+        img.Save(saveFileDialog.FileName, System.Drawing.Imaging.ImageFormat.Png);
+    }
+}
 
 ````
 ````VB.NET
-        Using saveFileDialog As SaveFileDialog = New SaveFileDialog()
-            saveFileDialog.Filter = "Png (*.png)|*.png"
-            saveFileDialog.FileName = "QRCode"
-            If saveFileDialog.ShowDialog() = DialogResult.OK Then
-                Dim img As Image = Me.radBarcode1.ExportToImage()
-                img.Save(saveFileDialog.FileName, System.Drawing.Imaging.ImageFormat.Png)
-            End If
-        End Using
-    End Sub
+Using saveFileDialog As SaveFileDialog = New SaveFileDialog()
+    saveFileDialog.Filter = "Png (*.png)|*.png"
+    saveFileDialog.FileName = "QRCode"
+    If saveFileDialog.ShowDialog() = DialogResult.OK Then
+        Dim img As Image = Me.radBarcode1.ExportToImage()
+        img.Save(saveFileDialog.FileName, System.Drawing.Imaging.ImageFormat.Png)
+    End If
+End Using
+End Sub
 
 ````
 

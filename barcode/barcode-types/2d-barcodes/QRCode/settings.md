@@ -46,6 +46,7 @@ Essentially, both the FNC1 property and the ApplicationIndicator data is applied
 {{source=..\SamplesVB\Barcode\BarcodeSettings.vb region=QRCode}}
 
 ````C#
+            
 Telerik.WinControls.UI.Barcode.Symbology.QRCode encoder = new Telerik.WinControls.UI.Barcode.Symbology.QRCode();
 encoder.Version = 0;
 encoder.ErrorCorrectionLevel = Telerik.WinControls.UI.Barcode.Symbology.ErrorCorrectionLevel.M;
@@ -53,9 +54,8 @@ encoder.ECIMode = Telerik.WinControls.UI.Barcode.Symbology.ECIMode.CP437;
 encoder.CodeMode = Telerik.WinControls.UI.Barcode.Symbology.CodeMode.Alphanumeric;
 encoder.FNC1Mode = Telerik.WinControls.UI.Barcode.Symbology.FNC1Mode.SecondPosition;
 encoder.ApplicationIndicator = "00";
-
 this.radBarcode1.Symbology = encoder;
-          
+
 ````
 ````VB.NET
 Dim encoder As Telerik.WinControls.UI.Barcode.Symbology.QRCode = New Telerik.WinControls.UI.Barcode.Symbology.QRCode()
@@ -65,7 +65,7 @@ encoder.ECIMode = Telerik.WinControls.UI.Barcode.Symbology.ECIMode.CP437
 encoder.CodeMode = Telerik.WinControls.UI.Barcode.Symbology.CodeMode.Alphanumeric
 encoder.FNC1Mode = Telerik.WinControls.UI.Barcode.Symbology.FNC1Mode.SecondPosition
 encoder.ApplicationIndicator = "00"
-Me.radBarcode1.Symbology = encoder    
+Me.radBarcode1.Symbology = encoder
 
 ```` 
 {{endregion}}

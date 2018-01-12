@@ -26,7 +26,7 @@ The first example shows how to use XamlFormatProvider to import XAML document fr
 {{source=..\SamplesVB\RichTextEditor\ImportExport\XamlFormatProviderForm.vb region=ImportDocumentFromFile}}
 ````C#
 XamlFormatProvider xamlformatProvider = new XamlFormatProvider();
-using (Stream stream = File.OpenRead(@"..\..\RichTextEditor\ImportExport\Sample.xml"))
+using (Stream stream = File.OpenRead(@"..\..\RichTextEditor\ImportExport\Sample.xaml"))
 {
     this.radRichTextEditor1.Document = xamlformatProvider.Import(stream);
 }

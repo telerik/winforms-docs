@@ -38,28 +38,23 @@ public partial class MyEditRecurrenceDialog : RadSchedulerDialog, IEditRecurrenc
 {
     private IEvent Appointment;
     RecurrenceRule recurrenceRule = null;
-
     public MyEditRecurrenceDialog()
     {
         InitializeComponent();
-
         this.radButton1.Click += radButton1_Click;
         this.radButton2.Click += radButton2_Click;
         this.radButton3.Click += radButton3_Click;
     }
-
     public MyEditRecurrenceDialog(IEvent targetEvent)
         : this()
     {
         this.Appointment = targetEvent;
-
         this.radDropDownList1.DropDownStyle = RadDropDownStyle.DropDownList;
         this.radDropDownList1.Items.Add(new RadListDataItem()
         {
             Text = "Hourly",
             Value = new HourlyRecurrenceRule(this.Appointment.Start, 1)
         });
-
         this.radDropDownList1.Items.Add(new RadListDataItem()
         {
             Text = "Daily",
@@ -67,14 +62,11 @@ public partial class MyEditRecurrenceDialog : RadSchedulerDialog, IEditRecurrenc
         });
         this.radDropDownList1.SelectedIndexChanged += radDropDownList1_SelectedIndexChanged;
         this.radDropDownList1.SelectedIndex = 0;
-
         this.radSpinEditor1.ValueChanged += radSpinEditor1_ValueChanged;
         this.radSpinEditor2.ValueChanged += radSpinEditor2_ValueChanged;
-
         this.radSpinEditor1.Maximum = this.radSpinEditor2.Maximum = int.MaxValue;
         this.LoadSettingsFromEvent(this.Appointment);
     }
-
     private void radButton3_Click(object sender, EventArgs e)
     {
         if (this.Appointment.RecurrenceRule != null)
@@ -85,32 +77,26 @@ public partial class MyEditRecurrenceDialog : RadSchedulerDialog, IEditRecurrenc
         {
             this.Appointment.MasterEvent.RecurrenceRule = null;
         }
-
         this.DialogResult = DialogResult.OK;
         this.Close();
     }
-
     private void radButton2_Click(object sender, EventArgs e)
     {
         this.DialogResult = DialogResult.Cancel;
         this.Close();
     }
-
     private void radSpinEditor2_ValueChanged(object sender, EventArgs e)
     {
         this.recurrenceRule.Count = (int)this.radSpinEditor2.Value;
     }
-
     private void radSpinEditor1_ValueChanged(object sender, EventArgs e)
     {
         this.recurrenceRule.Interval = (int)this.radSpinEditor1.Value;
     }
-
     private void radDropDownList1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
     {
         this.recurrenceRule = this.radDropDownList1.SelectedItem.Value as RecurrenceRule;
     }
-
     private void LoadSettingsFromEvent(IEvent targetEvent)
     {
         if (targetEvent.RecurrenceRule != null)
@@ -130,19 +116,15 @@ public partial class MyEditRecurrenceDialog : RadSchedulerDialog, IEditRecurrenc
             this.radSpinEditor2.Value = targetEvent.RecurrenceRule.Count;
         }
     }
-
     private void radButton1_Click(object sender, EventArgs e)
     {
         this.ApplySettingsToEvent(this.Appointment);
-
         this.DialogResult = DialogResult.OK;
         this.Close();
     }
-
     protected override void LocalizeDialog(Telerik.WinControls.UI.Localization.RadSchedulerLocalizationProvider localizationProvider)
     {
         base.LocalizeDialog(localizationProvider);
-
         this.Text = localizationProvider.GetLocalizedString(Telerik.WinControls.UI.Localization.RadSchedulerStringId.RecurrenceDialogTitle);
         this.radButton1.Text = localizationProvider.GetLocalizedString(Telerik.WinControls.UI.Localization.RadSchedulerStringId.RecurrenceDialogOK);
         this.radButton2.Text = localizationProvider.GetLocalizedString(Telerik.WinControls.UI.Localization.RadSchedulerStringId.RecurrenceDialogCancel);
@@ -150,7 +132,6 @@ public partial class MyEditRecurrenceDialog : RadSchedulerDialog, IEditRecurrenc
         this.radLabel1.Text = "Interval:";
         this.radLabel2.Text = "Count:";
     }
-
     public void ApplySettingsToEvent(IEvent targetEvent)
     {
         this.recurrenceRule.Interval = (int)this.radSpinEditor1.Value;
@@ -158,24 +139,20 @@ public partial class MyEditRecurrenceDialog : RadSchedulerDialog, IEditRecurrenc
         this.Appointment.RecurrenceRule = this.recurrenceRule;
     }
 }
-        
+
 ````
 ````VB.NET
 Public Class MyEditRecurrenceDialog
 Inherits RadSchedulerDialog
 Implements IEditRecurrenceDialog
-
     Private Appointment As IEvent
-
     Private recurrenceRule As RecurrenceRule = Nothing
-
     Public Sub New()
         InitializeComponent()
         AddHandler Me.radButton1.Click, AddressOf radButton1_Click
         AddHandler Me.radButton2.Click, AddressOf radButton2_Click
         AddHandler Me.radButton3.Click, AddressOf radButton3_Click
     End Sub
-
     Public Property ThemeName() As String Implements IEditRecurrenceDialog.ThemeName
         Get
             Return MyBase.ThemeName
@@ -184,11 +161,9 @@ Implements IEditRecurrenceDialog
             MyBase.ThemeName = Value
         End Set
     End Property
-
     Public Function ShowDialog() As DialogResult Implements IEditRecurrenceDialog.ShowDialog
         Return MyBase.ShowDialog()
     End Function
-
     Public Sub New(ByVal targetEvent As IEvent)
         Me.New()
         Me.Appointment = targetEvent
@@ -203,35 +178,28 @@ Implements IEditRecurrenceDialog
         Me.radSpinEditor2.Maximum = Integer.MaxValue
         Me.LoadSettingsFromEvent(Me.Appointment)
     End Sub
-
     Private Sub radButton3_Click(ByVal sender As Object, ByVal e As EventArgs)
         If Me.Appointment.RecurrenceRule IsNot Nothing Then
             Me.Appointment.RecurrenceRule = Nothing
         ElseIf Me.Appointment.MasterEvent IsNot Nothing Then
             Me.Appointment.MasterEvent.RecurrenceRule = Nothing
         End If
-
         Me.DialogResult = Windows.Forms.DialogResult.OK
         Me.Close()
     End Sub
-
     Private Sub radButton2_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.DialogResult = Windows.Forms.DialogResult.Cancel
         Me.Close()
     End Sub
-
     Private Sub radSpinEditor2_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
         Me.recurrenceRule.Count = CInt(Me.radSpinEditor2.Value)
     End Sub
-
     Private Sub radSpinEditor1_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
         Me.recurrenceRule.Interval = CInt(Me.radSpinEditor1.Value)
     End Sub
-
     Private Sub radDropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
         Me.recurrenceRule = TryCast(Me.radDropDownList1.SelectedItem.Value, RecurrenceRule)
     End Sub
-
     Private Sub LoadSettingsFromEvent(ByVal targetEvent As IEvent)
         If targetEvent.RecurrenceRule IsNot Nothing Then
             Me.recurrenceRule = targetEvent.RecurrenceRule
@@ -242,18 +210,15 @@ Implements IEditRecurrenceDialog
             ElseIf dailyRecurrenceRule IsNot Nothing Then
                 Me.radDropDownList1.SelectedIndex = 1
             End If
-
             Me.radSpinEditor1.Value = targetEvent.RecurrenceRule.Interval
             Me.radSpinEditor2.Value = targetEvent.RecurrenceRule.Count
         End If
     End Sub
-
     Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.ApplySettingsToEvent(Me.Appointment)
         Me.DialogResult = Windows.Forms.DialogResult.OK
         Me.Close()
     End Sub
-
     Protected Overrides Sub LocalizeDialog(ByVal localizationProvider As Telerik.WinControls.UI.Localization.RadSchedulerLocalizationProvider)
         MyBase.LocalizeDialog(localizationProvider)
         Me.Text = localizationProvider.GetLocalizedString(Telerik.WinControls.UI.Localization.RadSchedulerStringId.RecurrenceDialogTitle)
@@ -263,13 +228,13 @@ Implements IEditRecurrenceDialog
         Me.radLabel1.Text = "Interval:"
         Me.radLabel2.Text = "Count:"
     End Sub
-
     Public Sub ApplySettingsToEvent(ByVal targetEvent As IEvent)
         Me.recurrenceRule.Interval = CInt(Me.radSpinEditor1.Value)
         Me.recurrenceRule.Count = CInt(Me.radSpinEditor2.Value)
         Me.Appointment.RecurrenceRule = Me.recurrenceRule
     End Sub
 End Class
+
 ````
 
 {{endregion}}
@@ -280,16 +245,18 @@ End Class
 {{source=..\SamplesVB\Scheduler\Dialogs\SchedulerCustomDialogs.vb region=ReplaceDefaultRecurrenceEditDialog}}    
        
 ````C#
- private void radScheduler1_RecurrenceEditDialogShowing(object sender, RecurrenceEditDialogShowingEventArgs e)
+        
+private void radScheduler1_RecurrenceEditDialogShowing(object sender, RecurrenceEditDialogShowingEventArgs e)
 {
     e.RecurrenceEditDialog = new MyEditRecurrenceDialog(e.Appointment);
 }
-       
+
 ````
 ````VB.NET
-    Private Sub radScheduler1_RecurrenceEditDialogShowing(ByVal sender As Object, ByVal e As RecurrenceEditDialogShowingEventArgs)
-        e.RecurrenceEditDialog = New MyEditRecurrenceDialog(e.Appointment)
-    End Sub
+Private Sub radScheduler1_RecurrenceEditDialogShowing(ByVal sender As Object, ByVal e As RecurrenceEditDialogShowingEventArgs)
+    e.RecurrenceEditDialog = New MyEditRecurrenceDialog(e.Appointment)
+End Sub
+
 ````
 
 {{endregion}}

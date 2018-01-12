@@ -24,7 +24,7 @@ In order to import a __.docx__ file, you need to use the Import() method of Docx
 {{source=..\SamplesVB\RichTextEditor\ImportExport\DocxFormatProviderForm.vb region=ImportDocumentFromFile}}
 ````C#
 DocxFormatProvider provider = new DocxFormatProvider();
-using (FileStream inputStream = new FileStream(@"..\..\RichTextEditor\ImportExport\Sample.docx", FileMode.Open))
+using (FileStream inputStream = File.OpenRead(@"..\..\RichTextEditor\ImportExport\Sample.docx"))
 {
     this.radRichTextEditor1.Document = provider.Import(inputStream);
 }
@@ -32,7 +32,7 @@ using (FileStream inputStream = new FileStream(@"..\..\RichTextEditor\ImportExpo
 ````
 ````VB.NET
 Dim provider As DocxFormatProvider = New DocxFormatProvider()
-Using inputStream As FileStream = New FileStream("..\..\RichTextEditor\ImportExport\Sample.docx", FileMode.Open)
+Using inputStream As FileStream = File.OpenRead("..\..\RichTextEditor\ImportExport\Sample.docx")
     Me.radRichTextEditor1.Document = provider.Import(inputStream)
 End Using
 
@@ -73,7 +73,7 @@ In order to export a document to DOCX, you need to use the Export() method of Do
 {{source=..\SamplesVB\RichTextEditor\ImportExport\DocxFormatProviderForm.vb region=ExportDocumentToFile}}
 ````C#
 DocxFormatProvider provider = new DocxFormatProvider();
-using (FileStream output = new FileStream("Sample.docx", FileMode.OpenOrCreate))
+using (FileStream output = File.OpenWrite("Sample.docx"))
 {
     RadDocument document = this.radRichTextEditor1.Document;
     provider.Export(document, output);
@@ -82,7 +82,7 @@ using (FileStream output = new FileStream("Sample.docx", FileMode.OpenOrCreate))
 ````
 ````VB.NET
 Dim provider As DocxFormatProvider = New DocxFormatProvider()
-Using output As FileStream = New FileStream("Sample.docx", FileMode.OpenOrCreate)
+Using output As FileStream = File.OpenWrite("Sample.docx")
     Dim document As RadDocument = Me.radRichTextEditor1.Document
     provider.Export(document, output)
 End Using

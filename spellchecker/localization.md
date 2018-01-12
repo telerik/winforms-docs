@@ -30,35 +30,36 @@ class MyEnglishSpellCheckerLocalizationProvider : RadSpellCheckerLocalizationPro
 {
     public override string GetLocalizedString(string id)
     {
-            switch (id)
-            {
-                case RadSpellCheckerStringId.Title:
-                    return "Spell Checking";
-                case RadSpellCheckerStringId.OK:
-                    return "OK";
-                case RadSpellCheckerStringId.Cancel:
-                    return "Cancel";
-                case RadSpellCheckerStringId.Close:
-                    return "Close";
-                case RadSpellCheckerStringId.ChangeAll:
-                    return "Change All";
-                case RadSpellCheckerStringId.Change:
-                    return "Change";
-                case RadSpellCheckerStringId.Complete:
-                    return "The spelling check is complete.";
-                case RadSpellCheckerStringId.AddToDictionary:
-                    return "Add to Dictionary";
-                case RadSpellCheckerStringId.Ingore :
-                    return "Ignore";
-                case RadSpellCheckerStringId.IngoreAll:
-                    return "Ignore All";
-                case RadSpellCheckerStringId.Suggestions:
-                    return "Suggestions:";
-                case RadSpellCheckerStringId.ChangeTo:
-                    return "Change To:";
-                case RadSpellCheckerStringId.NotInDictionary:
-                    return "Not in Dicitionary:";
-            }
+        switch (id)
+        {
+            case RadSpellCheckerStringId.Title:
+                return "Spell Checking";
+            case RadSpellCheckerStringId.OK:
+                return "OK";
+            case RadSpellCheckerStringId.Cancel:
+                return "Cancel";
+            case RadSpellCheckerStringId.Close:
+                return "Close";
+            case RadSpellCheckerStringId.ChangeAll:
+                return "Change All";
+            case RadSpellCheckerStringId.Change:
+                return "Change";
+            case RadSpellCheckerStringId.Complete:
+                return "The spelling check is complete.";
+            case RadSpellCheckerStringId.AddToDictionary:
+                return "Add to Dictionary";
+            case RadSpellCheckerStringId.Ingore:
+                return "Ignore";
+            case RadSpellCheckerStringId.IngoreAll:
+                return "Ignore All";
+            case RadSpellCheckerStringId.Suggestions:
+                return "Suggestions:";
+            case RadSpellCheckerStringId.ChangeTo:
+                return "Change To:";
+            case RadSpellCheckerStringId.NotInDictionary:
+                return "Not in Dicitionary:";
+        }
+        
         return null;
     }
 }

@@ -48,23 +48,24 @@ One thing to keep in mind is that these properties are related to the data, whic
 {{source=..\SamplesVB\Barcode\BarcodeSettings.vb region=PDF417}}
 
 ````C#
-            Telerik.WinControls.UI.Barcode.Symbology.PDF417 encoder = new Telerik.WinControls.UI.Barcode.Symbology.PDF417();
-            encoder.Columns = 3;
-            encoder.Rows = 3;
-            encoder.EncodingMode = Telerik.WinControls.UI.Barcode.Symbology.EncodingMode.Auto;
-            encoder.ECLevel = 2;
-            this.radBarcode1.Value = "123456Sofia";
-            this.radBarcode1.Symbology = encoder;
+            
+Telerik.WinControls.UI.Barcode.Symbology.PDF417 encoder = new Telerik.WinControls.UI.Barcode.Symbology.PDF417();
+encoder.Columns = 3;
+encoder.Rows = 3;
+encoder.EncodingMode = Telerik.WinControls.UI.Barcode.Symbology.EncodingMode.Auto;
+encoder.ECLevel = 2;
+this.radBarcode1.Value = "123456Sofia";
+this.radBarcode1.Symbology = encoder;
 
 ````
 ````VB.NET
-        Dim encoder As Telerik.WinControls.UI.Barcode.Symbology.PDF417 = New Telerik.WinControls.UI.Barcode.Symbology.PDF417()
-        encoder.Columns = 3
-        encoder.Rows = 3
-        encoder.EncodingMode = Telerik.WinControls.UI.Barcode.Symbology.EncodingMode.Auto
-        encoder.ECLevel = 2
-        Me.radBarcode1.Value = "123456Sofia"
-        Me.radBarcode1.Symbology = encoder
+Dim encoder As Telerik.WinControls.UI.Barcode.Symbology.PDF417 = New Telerik.WinControls.UI.Barcode.Symbology.PDF417()
+encoder.Columns = 3
+encoder.Rows = 3
+encoder.EncodingMode = Telerik.WinControls.UI.Barcode.Symbology.EncodingMode.Auto
+encoder.ECLevel = 2
+Me.radBarcode1.Value = "123456Sofia"
+Me.radBarcode1.Symbology = encoder
 
 ```` 
 {{endregion}}
