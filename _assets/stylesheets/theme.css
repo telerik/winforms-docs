@@ -72,12 +72,6 @@
     font-style: normal;
 }
 
-.btn-action {
-    background-color: #015991;
-    color: #fff;
-    border-width: 0;
-}
-
 .btn-action:hover {
     background-color: #013a5e;
 }
