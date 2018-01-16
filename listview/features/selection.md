@@ -10,7 +10,7 @@ position: 1
 
 # Selection
 
-**RadListView** supports both *single* and *multiple* selection. The selection mode is determined by the **MiltiSelect** property of the control. The selected item in single selection mode can be accessed from the **SelectedItem** property and in multiple selection mode from the **SelectedItems** collection of **RadListView**.
+**RadListView** supports both *single* and *multiple* selection. The selection mode is determined by the **MultiSelect** property of the control. The selected item in single selection mode can be accessed from the **SelectedItem** property and in multiple selection mode from the **SelectedItems** collection of **RadListView**.
 
 Multiple items can be selected in code as well. This can be achieved by using the **Select** method. This method takes an array of **ListViewDataItem** as parameter.
 
