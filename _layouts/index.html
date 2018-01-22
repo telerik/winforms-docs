@@ -19,14 +19,14 @@
 		{% if page.glyphs_refence_sheet %}
 			{% stylesheet telerikwebui-glyph-styles %}
 		{% endif %}
-        <link rel="stylesheet" href="//kendo.cdn.telerik.com/2017.3.1026/styles/kendo.common.min.css" />
+        {% stylesheet 2017_3_1026_styleskendo.common.min.css %}
         {% stylesheet styles %}
         {% stylesheet theme %}
         {% stylesheet branding %}
         {% stylesheet highlight %}
         {% stylesheet icon-font %}
-        <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
-         <script src="//kendo.cdn.telerik.com/2017.3.1026/js/kendo.web.min.js"></script>
+        {% javascript jquery-1.12.3.min.js %}
+         {% javascript kendo.web.min.js %}   
         {% javascript prettify %}
         {% javascript app %}
 		{% javascript prettify %}
