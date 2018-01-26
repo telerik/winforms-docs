@@ -5,7 +5,7 @@ description: This example will demonstrate how RadGanttView integrates with RadS
 slug: winforms/ganttview-/integration
 tags: integration
 published: True
-position: 11
+position: 13
 previous_url: ganttview-integration
 ---
 

@@ -518,6 +518,9 @@ navigation:
     ganttview/drag-and-drop:
         title: Drag and Drop
         position: 10
+    ganttview/custom-items:
+        title: Custom Items
+        position: 11
     gauges:
         title: Gauges
         position: 250

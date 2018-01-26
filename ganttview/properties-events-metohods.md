@@ -5,7 +5,7 @@ description: This article list the most important properties of RadGanttView.
 slug: winforms/ganttview/properties
 tags: properties,events,methods
 published: True
-position: 10
+position: 12
 ---
 
 # Properties

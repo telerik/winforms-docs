@@ -5,7 +5,7 @@ description: The today indicator represents the current date and time in the gra
 slug: winforms/ganttview-/today-indicator
 tags: today,indicator
 published: True
-position: 12
+position: 14
 previous_url: ganttview-today-indicator
 ---
 
