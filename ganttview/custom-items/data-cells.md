@@ -1,8 +1,8 @@
 ---
-title: Custom Data Cells
-page_title: Custom Data Cells | RadGanttView
+title: Data Cells
+page_title: Data Cells | RadGanttView
 description: RadGanttView allows you to replace the standard cells with a custom ones.
-slug: winforms/ganttview/formatting/creating-custom-cells
+slug: winforms/ganttview/custom-items/data-cells
 tags: creating,custom,cells
 published: True
 position: 1
@@ -236,6 +236,8 @@ End Sub
 
 # See Also
 
+* [Custom Data Items]({%slug winforms/ganttview/custom-items/data-items%})
+* [Custom Task Elements]({%slug winforms/ganttview/custom-items/task-elements%})
 * [Customizing editor]({%slug winforms/ganttview-/editing/customizing-editor%})
 * [Editing Graphical View]({%slug winforms/ganttview-/editing/editing-graphical-view%})
 * [Editing Text View]({%slug winforms/ganttview-/editing/editing-text-view%})

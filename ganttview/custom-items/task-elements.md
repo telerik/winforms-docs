@@ -1,8 +1,8 @@
 ---
-title: Custom Task Elements
-page_title: Custom Task Elements | RadGanttView
+title: Task Elements
+page_title: Task Elements | RadGanttView
 description: RadGanttView allows you to replace the standard task elements with a custom ones.
-slug: winforms/ganttview/formatting/creating-custom-task-elements
+slug: winforms/ganttview/custom-items/task-elements
 tags: creating,custom,task,elements
 published: True
 position: 3
@@ -214,7 +214,7 @@ End Sub
 
 # See Also
 
-* [Creating Custom Cells]({%slug winforms/ganttview/formatting/creating-custom-cells%})
+* [Creating Custom Cells]({%slug winforms/ganttview/custom-items/data-cells%})
 * [Customizing editor]({%slug winforms/ganttview-/editing/customizing-editor%})
 * [Editing Graphical View]({%slug winforms/ganttview-/editing/editing-graphical-view%})
 * [Editing Text View]({%slug winforms/ganttview-/editing/editing-text-view%})
