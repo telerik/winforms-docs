@@ -97,6 +97,14 @@ End Using
 
 {{endregion}} 
 
+>note As of **R1 2018 SP1** **GridViewSpreadExport** supports image exporting. The **ImageAlignment** property of the column is respected. However, have in mind that the ImageLayout.*Tile* is not supported.
+
+
+>caption Figure: Image export
+
+![gridview-exporting-data-spread-export 006](images/gridview-exporting-data-spread-export006.png)
+
+
 ## Properties
 
 * __ExportFormat__: Defines the format the grid will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
