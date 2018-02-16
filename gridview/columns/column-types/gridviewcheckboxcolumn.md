@@ -140,6 +140,9 @@ checkBoxColumn.EditMode = EditMode.OnValueChange
 |**Checked**|Gets a value indicating whether the check-box in header cell checked.|
 |**ShouldCheckDataRows**|This property determines whether the check-box in the header cell will be synced with the data cells.|
 |**EditMode**|This property determines whether changing a value of a check box will immediately be send to the cell (OnValueChange) or when the current cell is changed or the grid is being validated (OnCellChangeOrValidating).|
+|**HeaderCheckBoxPosition**|Controls the position of the checkbox and the text, possible values are Left, Right and Center.|
+|**HeaderCheckBoxAlignmentProperty**|Controls the alignment of the checkbox to the Text.|
+
 
 # See Also
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
