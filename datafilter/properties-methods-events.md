@@ -28,6 +28,8 @@ position: 8
 |**LineColor**|Gets or sets the color of the line.|
 |**LineStyle**|Gets or sets the line style.|
 |**ToggleMode**|Gets or sets a value indicating the default tree view toggle mode.|
+|**SortFieldNames**|Gets or sets a value indicating whether the names of the fields in the drop down should be sorted.|
+|**FieldNamesSortStyle**|Gets or sets a value indicating how the field names are sorted when SortFieldNames is true.|
 
 # Methods
 
