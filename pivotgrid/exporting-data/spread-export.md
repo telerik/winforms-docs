@@ -35,7 +35,6 @@ Here is how the following grid, looks when exported.
 * Telerik.Windows.Documents.Spreadsheet
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf
-* Telerik.Windows.Maths
 * Telerik.Windows.Zip
 >
 
