@@ -15,6 +15,8 @@ Printing in __RadScheduler__ is performed by objects of type __SchedulerPrintSty
 
 __SchedulerPrintStyle__ is an abstract class and cannot be instantiated directly. You should use one of the following implementations: __SchedulerDailyPrintStyle__,__SchedulerWeeklyPrintStyle__, __SchedulerMonthlyPrintStyle__, __SchedulerDetailsPrintStyle__.
 
+>note When applying a specific **PrintStyle** make sure that you set the relevant **ActiveViewType** for **RadScheduler**.
+
 To set a __RadScheduler__ with a print style:
 
 #### Daily Print Style
