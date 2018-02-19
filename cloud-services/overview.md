@@ -2,8 +2,8 @@
 title: Overview 
 page_title: Cloud Services | Telerik UI For WinForms
 description: This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite.
-slug: winforms/chartview/overview
-tags: chartview,
+slug: cloud-services/overview
+tags: cloud,google,amazon,azure
 published: True
 position: 0
 ---
@@ -11,8 +11,6 @@ position: 0
 # Cloud Services
 
 This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite. The following list contains the topics discussed here:
-
-
  
 * Azure
 
