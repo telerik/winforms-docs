@@ -14,7 +14,7 @@ previous_url: gridview-columns-data-formatting
 |   |
 |---|
 |RELATED VIDEOS|
-|[Formatting Data In RadGridView for WinForms. ](http://tv.telerik.com/watch/radtips/radgrid/formatting-data-in-radgridview)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|
+|[Formatting Data In RadGridView for WinForms. ](https://www.youtube.com/watch?v=LmIHjRHudIw)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|
 
 [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%}) allows you to format the data displayed in it. You can control that by setting the __FormatString__, __FormatInfo__ and __NullValue__ properties of the column.
 
