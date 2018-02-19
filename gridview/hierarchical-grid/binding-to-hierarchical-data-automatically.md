@@ -15,7 +15,7 @@ previous_url: gridview-hierarchical-grid-binding-to-hierarchical-data-automatica
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com//watch/winforms/radgrid/radgridview-winforms-hierarchy-overview)<br>In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|![gridview-hierarchical-grid-binding-to-hierarchical-data 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data001.png)|
+|[RadGridView for WinForms Hierarchy Overview](https://www.youtube.com/watch?v=t3cR7A5VjdY&index=11&list=PLvmaC-XMqeBaRgdM2nVNSM-0SSG_xbjSN)<br>In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|![gridview-hierarchical-grid-binding-to-hierarchical-data 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data001.png)|
 
 At runtime, if the data source for the grid is a __System.Data.DataSet__ type and there are relations defined in it, the hierarchy can be created automatically. Set the __AutoGenerateHierarchy__ property	*true* to get this behavior. In the example below, the Northwind dataset has `Categories` and `Products` joined by `CategoryID`.
 
