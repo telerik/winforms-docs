@@ -22,58 +22,32 @@ Consider the case you have a bound **RadGridView** with self-reference hierarchi
 {{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.vb region=FillData}} 
 
 ````C#
-        DataTable dt;
-        
-        private void RadForm_Load(object sender, EventArgs e)
+DataTable dt;
+private void RadForm_Load(object sender, EventArgs e)
+{
+    dt = new DataTable();
+    dt.Columns.Add("Id");
+    dt.Columns.Add("Name");
+    dt.Columns.Add("ParentId");
+    FillData();
+}
+private void FillData()
+{
+    this.radGridView1.Relations.AddSelfReference(this.radGridView1.MasterTemplate, "Id", "ParentId");
+    for (int i = 1; i <= 3; i++)
+    {
+        dt.Rows.Add(i, "Parent" + i, 0);
+        for (int j = 4; j <= 9; j++)
         {
-            dt = new DataTable();
-            dt.Columns.Add("Id");
-            dt.Columns.Add("Name");
-            dt.Columns.Add("ParentId");
-            FillData();
+            int childIndex = ((i - 1) * 9 + j + i);
+            dt.Rows.Add(childIndex, "Child" + childIndex, i);
         }
-        
-        private void FillData()
-        {
-            this.radGridView1.Relations.AddSelfReference(this.radGridView1.MasterTemplate, "Id", "ParentId");
-            
-            for (int i = 1; i <= 3; i++)
-            {
-                dt.Rows.Add(i, "Parent" + i, 0);
-                for (int j = 4; j <= 9; j++)
-                {
-                    int childIndex = ((i - 1) * 9 + j + i);
-                    dt.Rows.Add(childIndex, "Child" + childIndex, i);
-                }
-            }
-            this.radGridView1.DataSource = dt;
-        } 
+    }
+    this.radGridView1.DataSource = dt;
+}
 
 ````
 ````VB.NET
-     Private dt As DataTable
-
-    Private Sub RadForm_Load(ByVal sender As Object, ByVal e As EventArgs)
-        dt = New DataTable()
-        dt.Columns.Add("Id")
-        dt.Columns.Add("Name")
-        dt.Columns.Add("ParentId")
-        FillData()
-    End Sub
-
-    Private Sub FillData()
-        Me.radGridView1.Relations.AddSelfReference(Me.radGridView1.MasterTemplate, "Id", "ParentId")
-        For i As Integer = 1 To 3
-            dt.Rows.Add(i, "Parent" & i, 0)
-            For j As Integer = 4 To 9
-                Dim childIndex As Integer = ((i - 1) * 9 + j + i)
-                dt.Rows.Add(childIndex, "Child" & childIndex, i)
-            Next
-        Next
-
-        Me.radGridView1.DataSource = dt
-    End Sub
-
 ````
 
 {{endregion}} 
@@ -86,16 +60,12 @@ Consider the case you have a bound **RadGridView** with self-reference hierarchi
 {{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.vb region=RegisterRowBehavior}} 
 
 ````C#
-            BaseGridBehavior gridBehavior = this.radGridView1.GridBehavior as BaseGridBehavior;
-            gridBehavior.UnregisterBehavior(typeof(GridViewHierarchyRowInfo));
-            gridBehavior.RegisterBehavior(typeof(GridViewHierarchyRowInfo), new RowSelectionGridBehavior());
+BaseGridBehavior gridBehavior = this.radGridView1.GridBehavior as BaseGridBehavior;
+gridBehavior.UnregisterBehavior(typeof(GridViewHierarchyRowInfo));
+gridBehavior.RegisterBehavior(typeof(GridViewHierarchyRowInfo), new RowSelectionGridBehavior());
 
 ````
 ````VB.NET
-         Dim gridBehavior As BaseGridBehavior = TryCast(Me.radGridView1.GridBehavior, BaseGridBehavior)
-        gridBehavior.UnregisterBehavior(GetType(GridViewHierarchyRowInfo))
-        gridBehavior.RegisterBehavior(GetType(GridViewHierarchyRowInfo), New RowSelectionGridBehavior())
-
 ````
 
 {{endregion}} 
@@ -106,37 +76,22 @@ Override the **OnMouseDownLeft** method of the **GridHierarchyRowBehavior** and 
 {{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.vb region=StartService}} 
 
 ````C#
-
-         public class RowSelectionGridBehavior : GridHierarchyRowBehavior
+public class RowSelectionGridBehavior : GridHierarchyRowBehavior
+{
+    protected override bool OnMouseDownLeft(MouseEventArgs e)
+    {
+        GridDataRowElement row = this.GetRowAtPoint(e.Location) as GridDataRowElement;
+        if (row != null)
         {
-            protected override bool OnMouseDownLeft(MouseEventArgs e)
-            {
-                GridDataRowElement row = this.GetRowAtPoint(e.Location) as GridDataRowElement;
-                if (row != null)
-                {
-                    RadGridViewDragDropService svc = this.GridViewElement.GetService<RadGridViewDragDropService>();
-                    svc.Start(row);
-                }
-                return base.OnMouseDownLeft(e);
-            }
+            RadGridViewDragDropService svc = this.GridViewElement.GetService<RadGridViewDragDropService>();
+            svc.Start(row);
         }
+        return base.OnMouseDownLeft(e);
+    }
+}
 
 ````
 ````VB.NET
-     Public Class RowSelectionGridBehavior
-        Inherits GridHierarchyRowBehavior
-
-        Protected Overrides Function OnMouseDownLeft(ByVal e As MouseEventArgs) As Boolean
-            Dim row As GridDataRowElement = TryCast(Me.GetRowAtPoint(e.Location), GridDataRowElement)
-            If row IsNot Nothing Then
-                Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
-                svc.Start(row)
-            End If
-
-            Return MyBase.OnMouseDownLeft(e)
-        End Function
-    End Class
-
 ````
 
 {{endregion}} 
@@ -148,100 +103,53 @@ Override the **OnMouseDownLeft** method of the **GridHierarchyRowBehavior** and 
 {{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.vb region=DoDragDrop}} 
 
 ````C#
-
-        private void SubscribeToDragDropEvents()
-        {
-            RadDragDropService svc = this.radGridView1.GridViewElement.GetService<RadDragDropService>();
-            svc.PreviewDragStart += svc_PreviewDragStart;
-            svc.PreviewDragOver += svc_PreviewDragOver;
-            svc.PreviewDragDrop += svc_PreviewDragDrop;
-        }
-
-        private void svc_PreviewDragStart(object sender, PreviewDragStartEventArgs e)
-        {
-            e.CanStart = true;
-        }
-
-        private void svc_PreviewDragOver(object sender, RadDragOverEventArgs e)
-        {
-            GridDataRowElement draggedRowElement = e.DragInstance as GridDataRowElement;
-            if (draggedRowElement == null)
-            {
-                return;
-            }
-            draggedRowElement.Visibility = ElementVisibility.Hidden;
-        }
-
-        private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
-        {
-            GridDataRowElement draggedRowElement = e.DragInstance as GridDataRowElement;
-            GridDataRowElement targetRowElement = e.HitTarget as GridDataRowElement;
-
-            if (draggedRowElement == null)
-            {
-                return;
-            }
-            DataRowView sourceRowView = draggedRowElement.RowInfo.DataBoundItem as DataRowView;
-            DataRowView targetRowView = targetRowElement.RowInfo.DataBoundItem as DataRowView;
-            if (!(targetRowElement.RowInfo.Cells["ParentId"].Equals(draggedRowElement.RowInfo.Cells["ParentId"])))
-            {
-                e.Handled = true;
-                int targetIndex = dt.Rows.IndexOf(targetRowView.Row);
-
-                DataRow newRow = dt.NewRow();
-                newRow["ParentId"] = targetRowView.Row["ParentId"];
-                newRow["Name"] = sourceRowView.Row["Name"];
-                newRow["Id"] = sourceRowView.Row["Id"];
-                dt.Rows.Remove(sourceRowView.Row);
-                dt.Rows.InsertAt(newRow, targetIndex);
-            }
-        } 
+private void SubscribeToDragDropEvents()
+{
+    RadDragDropService svc = this.radGridView1.GridViewElement.GetService<RadDragDropService>();
+    svc.PreviewDragStart += svc_PreviewDragStart;
+    svc.PreviewDragOver += svc_PreviewDragOver;
+    svc.PreviewDragDrop += svc_PreviewDragDrop;
+}
+private void svc_PreviewDragStart(object sender, PreviewDragStartEventArgs e)
+{
+    e.CanStart = true;
+}
+private void svc_PreviewDragOver(object sender, RadDragOverEventArgs e)
+{
+    GridDataRowElement draggedRowElement = e.DragInstance as GridDataRowElement;
+    if (draggedRowElement == null)
+    {
+        e.CanDrop = false;
+        return;
+    }
+    e.CanDrop = true;
+    draggedRowElement.Visibility = ElementVisibility.Hidden;
+}
+private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
+{
+    GridDataRowElement draggedRowElement = e.DragInstance as GridDataRowElement;
+    GridDataRowElement targetRowElement = e.HitTarget as GridDataRowElement;
+    if (draggedRowElement == null)
+    {
+        return;
+    }
+    DataRowView sourceRowView = draggedRowElement.RowInfo.DataBoundItem as DataRowView;
+    DataRowView targetRowView = targetRowElement.RowInfo.DataBoundItem as DataRowView;
+    if (!(targetRowElement.RowInfo.Cells["ParentId"].Equals(draggedRowElement.RowInfo.Cells["ParentId"])))
+    {
+        e.Handled = true;
+        int targetIndex = dt.Rows.IndexOf(targetRowView.Row);
+        DataRow newRow = dt.NewRow();
+        newRow["ParentId"] = targetRowView.Row["ParentId"];
+        newRow["Name"] = sourceRowView.Row["Name"];
+        newRow["Id"] = sourceRowView.Row["Id"];
+        dt.Rows.Remove(sourceRowView.Row);
+        dt.Rows.InsertAt(newRow, targetIndex);
+    }
+}
 
 ````
 ````VB.NET
-     Private Sub SubscribeToDragDropEvents()
-        Dim svc As RadDragDropService = Me.radGridView1.GridViewElement.GetService(Of RadDragDropService)()
-        AddHandler svc.PreviewDragStart, AddressOf svc_PreviewDragStart
-        AddHandler svc.PreviewDragOver, AddressOf svc_PreviewDragOver
-        AddHandler svc.PreviewDragDrop, AddressOf svc_PreviewDragDrop
-    End Sub
-
-    Private Sub svc_PreviewDragStart(ByVal sender As Object, ByVal e As PreviewDragStartEventArgs)
-        e.CanStart = True
-    End Sub
-
-    Private Sub svc_PreviewDragOver(ByVal sender As Object, ByVal e As RadDragOverEventArgs)
-        Dim draggedRowElement As GridDataRowElement = TryCast(e.DragInstance, GridDataRowElement)
-        If draggedRowElement Is Nothing Then
-            e.CanDrop = False
-            Return
-        End If
-
-        e.CanDrop = True
-        draggedRowElement.Visibility = ElementVisibility.Hidden
-    End Sub
-
-    Private Sub svc_PreviewDragDrop(ByVal sender As Object, ByVal e As RadDropEventArgs)
-        Dim draggedRowElement As GridDataRowElement = TryCast(e.DragInstance, GridDataRowElement)
-        Dim targetRowElement As GridDataRowElement = TryCast(e.HitTarget, GridDataRowElement)
-        If draggedRowElement Is Nothing Then
-            Return
-        End If
-
-        Dim sourceRowView As DataRowView = TryCast(draggedRowElement.RowInfo.DataBoundItem, DataRowView)
-        Dim targetRowView As DataRowView = TryCast(targetRowElement.RowInfo.DataBoundItem, DataRowView)
-        If Not (targetRowElement.RowInfo.Cells("ParentId").Equals(draggedRowElement.RowInfo.Cells("ParentId"))) Then
-            e.Handled = True
-            Dim targetIndex As Integer = dt.Rows.IndexOf(targetRowView.Row)
-            Dim newRow As DataRow = dt.NewRow()
-            newRow("ParentId") = targetRowView.Row("ParentId")
-            newRow("Name") = sourceRowView.Row("Name")
-            newRow("Id") = sourceRowView.Row("Id")
-            dt.Rows.Remove(sourceRowView.Row)
-            dt.Rows.InsertAt(newRow, targetIndex)
-        End If
-    End Sub
-
 ````
 
 {{endregion}} 
