@@ -48,6 +48,26 @@ private void FillData()
 
 ````
 ````VB.NET
+Private dt As DataTable
+Private Sub RadForm_Load(ByVal sender As Object, ByVal e As EventArgs)
+    dt = New DataTable()
+    dt.Columns.Add("Id")
+    dt.Columns.Add("Name")
+    dt.Columns.Add("ParentId")
+    FillData()
+End Sub
+Private Sub FillData()
+    Me.radGridView1.Relations.AddSelfReference(Me.radGridView1.MasterTemplate, "Id", "ParentId")
+    For i As Integer = 1 To 3
+        dt.Rows.Add(i, "Parent" & i, 0)
+        For j As Integer = 4 To 9
+            Dim childIndex As Integer = ((i - 1) * 9 + j + i)
+            dt.Rows.Add(childIndex, "Child" & childIndex, i)
+        Next
+    Next
+    Me.radGridView1.DataSource = dt
+End Sub
+
 ````
 
 {{endregion}} 
@@ -66,6 +86,10 @@ gridBehavior.RegisterBehavior(typeof(GridViewHierarchyRowInfo), new RowSelection
 
 ````
 ````VB.NET
+Dim gridBehavior As BaseGridBehavior = TryCast(Me.radGridView1.GridBehavior, BaseGridBehavior)
+gridBehavior.UnregisterBehavior(GetType(GridViewHierarchyRowInfo))
+gridBehavior.RegisterBehavior(GetType(GridViewHierarchyRowInfo), New RowSelectionGridBehavior())
+
 ````
 
 {{endregion}} 
@@ -92,6 +116,18 @@ public class RowSelectionGridBehavior : GridHierarchyRowBehavior
 
 ````
 ````VB.NET
+Public Class RowSelectionGridBehavior
+    Inherits GridHierarchyRowBehavior
+    Protected Overrides Function OnMouseDownLeft(ByVal e As MouseEventArgs) As Boolean
+        Dim row As GridDataRowElement = TryCast(Me.GetRowAtPoint(e.Location), GridDataRowElement)
+        If row IsNot Nothing Then
+            Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
+            svc.Start(row)
+        End If
+        Return MyBase.OnMouseDownLeft(e)
+    End Function
+End Class
+
 ````
 
 {{endregion}} 
@@ -150,6 +186,44 @@ private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
 
 ````
 ````VB.NET
+Private Sub SubscribeToDragDropEvents()
+    Dim svc As RadDragDropService = Me.radGridView1.GridViewElement.GetService(Of RadDragDropService)()
+    AddHandler svc.PreviewDragStart, AddressOf svc_PreviewDragStart
+    AddHandler svc.PreviewDragOver, AddressOf svc_PreviewDragOver
+    AddHandler svc.PreviewDragDrop, AddressOf svc_PreviewDragDrop
+End Sub
+Private Sub svc_PreviewDragStart(ByVal sender As Object, ByVal e As PreviewDragStartEventArgs)
+    e.CanStart = True
+End Sub
+Private Sub svc_PreviewDragOver(ByVal sender As Object, ByVal e As RadDragOverEventArgs)
+    Dim draggedRowElement As GridDataRowElement = TryCast(e.DragInstance, GridDataRowElement)
+    If draggedRowElement Is Nothing Then
+        e.CanDrop = False
+        Return
+    End If
+    e.CanDrop = True
+    draggedRowElement.Visibility = ElementVisibility.Hidden
+End Sub
+Private Sub svc_PreviewDragDrop(ByVal sender As Object, ByVal e As RadDropEventArgs)
+    Dim draggedRowElement As GridDataRowElement = TryCast(e.DragInstance, GridDataRowElement)
+    Dim targetRowElement As GridDataRowElement = TryCast(e.HitTarget, GridDataRowElement)
+    If draggedRowElement Is Nothing Then
+        Return
+    End If
+    Dim sourceRowView As DataRowView = TryCast(draggedRowElement.RowInfo.DataBoundItem, DataRowView)
+    Dim targetRowView As DataRowView = TryCast(targetRowElement.RowInfo.DataBoundItem, DataRowView)
+    If Not (targetRowElement.RowInfo.Cells("ParentId").Equals(draggedRowElement.RowInfo.Cells("ParentId"))) Then
+        e.Handled = True
+        Dim targetIndex As Integer = dt.Rows.IndexOf(targetRowView.Row)
+        Dim newRow As DataRow = dt.NewRow()
+        newRow("ParentId") = targetRowView.Row("ParentId")
+        newRow("Name") = sourceRowView.Row("Name")
+        newRow("Id") = sourceRowView.Row("Id")
+        dt.Rows.Remove(sourceRowView.Row)
+        dt.Rows.InsertAt(newRow, targetIndex)
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
