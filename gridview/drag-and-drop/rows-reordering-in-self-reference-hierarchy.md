@@ -19,7 +19,7 @@ Consider the case you have a bound **RadGridView** with self-reference hierarchi
 1\. Populate **RadGridView** with self-reference hierarchical data:
 
 {{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.cs region=FillData}} 
-{{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.vb region=FillData}} 
+{{source=..\SamplesVB\GridView\DragDrop\RowsReorderInSelfReference.vb region=FillData}} 
 
 ````C#
 DataTable dt;
@@ -57,7 +57,7 @@ private void FillData()
 #### Register the custom row behavior
 
 {{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.cs region=RegisterRowBehavior}} 
-{{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.vb region=RegisterRowBehavior}} 
+{{source=..\SamplesVB\GridView\DragDrop\RowsReorderInSelfReference.vb region=RegisterRowBehavior}} 
 
 ````C#
 BaseGridBehavior gridBehavior = this.radGridView1.GridBehavior as BaseGridBehavior;
@@ -73,7 +73,7 @@ gridBehavior.RegisterBehavior(typeof(GridViewHierarchyRowInfo), new RowSelection
 Override the **OnMouseDownLeft** method of the **GridHierarchyRowBehavior** and start the service: 
 
 {{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.cs region=StartService}} 
-{{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.vb region=StartService}} 
+{{source=..\SamplesVB\GridView\DragDrop\RowsReorderInSelfReference.vb region=StartService}} 
 
 ````C#
 public class RowSelectionGridBehavior : GridHierarchyRowBehavior
@@ -100,7 +100,7 @@ public class RowSelectionGridBehavior : GridHierarchyRowBehavior
 
 
 {{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.cs region=DoDragDrop}} 
-{{source=..\SamplesCS\GridView\DragDrop\RowsReorderInSelfReference.vb region=DoDragDrop}} 
+{{source=..\SamplesVB\GridView\DragDrop\RowsReorderInSelfReference.vb region=DoDragDrop}} 
 
 ````C#
 private void SubscribeToDragDropEvents()
