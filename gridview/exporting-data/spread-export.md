@@ -97,6 +97,14 @@ End Using
 
 {{endregion}} 
 
+>note As of **R1 2018 SP1** **GridViewSpreadExport** supports image exporting. The **ImageAlignment** property of the column is respected. However, have in mind that the ImageLayout.*Tile* is not supported.
+
+
+>caption Figure: Image export
+
+![gridview-exporting-data-spread-export 006](images/gridview-exporting-data-spread-export006.png)
+
+
 ## Properties
 
 * __ExportFormat__: Defines the format the grid will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
@@ -115,7 +123,9 @@ End Using
 
     - *SelectViewToExport*: In this mode the __ChildViewExporing__ event is fired. The event allows to choose the view to export in row by row basis.
 
-    - *ExportAllViews*: In this mode all child views are exported. Available in GridViewSpreadExport and GridViewPdfExport.            
+    - *ExportAllViews*: In this mode all child views are exported. Available in GridViewSpreadExport and GridViewPdfExport.   
+
+>caution You can either export all child views or just one. You can't export some specific child views.      
 
 * __HiddenColumnOption:__ Defines whether hidden columns will be exported. Available options are:
     - *ExportAlways*: The exporter will export hidden columns as well.
@@ -168,6 +178,9 @@ End Using
     - *CreateOrOverrideFile*: Creates new or overrides an existing file.
 
 __ExportViewDefinition:__  Gets or sets a value indicating whether to export the [view definition.]({%slug winforms/gridview/view-definitions/overview%})
+
+>caution View definition is currently exported only for the master level. It is not supported for child templates in a hierarchical grid.
+
 
 ### Exported Cells Data Type
 

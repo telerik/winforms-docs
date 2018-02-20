@@ -250,6 +250,8 @@ __RadDataEntry__ has support for several attributes that can be used to change t
 
 With the __Browsable__ attribute users can easily control which properties should be displayed 
 
+>note The **Browsable** attribute set to *false* will make the property on which it is used not bindable. This will prevent other controls which use the [CurrencyManager](https://msdn.microsoft.com/en-us/library/system.windows.forms.currencymanager(v=vs.110).aspx) for extracting properties to bind to such a class. A suitable solution for this scenario is to leave the property **Browsable** set to *true* and handle the **RadDataEntry**.*ItemInitializing* setting the e.Cancel property to *true* for items which need to hidden in **RadDataEntry**.  
+
 #### Set The Browsable Attribute. 
 
 {{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=Browsable}} 
