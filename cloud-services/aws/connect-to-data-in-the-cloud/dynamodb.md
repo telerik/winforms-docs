@@ -9,3 +9,6 @@ position: 0
 ---
 
 # Dynamo DB
+
+This article will show you to create a Winforms application and access data stored in a DynamoDB table. It shows how you can connect to the AWS from a blank Winforms project as well.
+
