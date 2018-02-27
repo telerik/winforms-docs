@@ -3,7 +3,7 @@ title: Dynamo DB
 page_title: Dynamo DB | Telerik UI For WinForms
 description: This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite.
 slug: cloud-services/aws/dynamodb
-tags: cloud,aws
+tags: cloud,aws,dynamodb
 published: True
 position: 0
 ---
@@ -12,7 +12,7 @@ position: 0
 
 ## Overview
 
-This article will show you to create a Winforms application and access data stored in a DynamoDB table. It shows how you can connect to the AWS from a blank Winforms project as well. 
+This article will show you to create a Winforms application and access data stored in a DynamoDB table. It shows how you can connect to the AWS DynamoDB service from a blank Winforms project as well. 
 
 Please note that you can use the local version of DynamoDB to setup and test your application. This article shows a real example.  
 
@@ -158,4 +158,119 @@ If you run the code at this point you will be able to see the data in your AWS c
 
 ![aws-dynamo-db003](images/aws-dynamo-db003.png)
 
+## Step: 4
+
+Now you are ready to populate the grid with the data. Although you ca directly populate the grid from the data I believe that is better to have a local business object to store the local data. 
+
+### Get the Data from DynamoDb
+
+First you need to get the data. The following method will return a  `List<Document>`, each document represents an entry from the database.
+
+````C#
+public List<Document> GetData()
+{
+    Table table = Table.LoadTable(client, "Customers");
+    ScanFilter scanFilter = new ScanFilter();
+    ScanOperationConfig config = new ScanOperationConfig()
+    {
+        Filter = scanFilter,
+        Select = SelectValues.AllAttributes,
+    };
+    Search search = table.Scan(config);
+
+    List<Document> documentList = new List<Document>();
+    do
+    {
+        documentList.AddRange(search.GetNextSet());
+
+    } while (!search.IsDone);
+
+    return documentList;
+}
+`````
+
+We can use the above method to iterated the documents and get the data. Here is the code along with the business object.
+
+````C#
+private void radButton1_Click(object sender, EventArgs e)
+{
+    var data = manager.GetData();
+    var gridData = new List<Customer>();
+
+    foreach (Document doc in data)
+    {
+        var customer = new Customer();
+        foreach (var attribute in doc.GetAttributeNames())
+        {
+            var value = doc[attribute];
+            if (attribute == "Id")
+            {
+                customer.Id = Convert.ToInt32(value.AsPrimitive().Value);
+            }
+            else if (attribute == "Name")
+            {
+                customer.Name = value.AsPrimitive().Value.ToString();
+            }
+            else if (attribute == "Employees")
+            {
+                customer.Employees = Convert.ToInt32(value.AsPrimitive().Value);
+            }
+            else if (attribute == "State")
+            {
+                customer.State = value.AsPrimitive().Value.ToString();
+            }
+        }
+        gridData.Add(customer);
+    }
+    radGridView1.DataSource = gridData;
+}
+class Customer
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+
+    public int Employees { get; set; }
+
+    public string State { get; set; }
+}
+
+````
+
+The grid is now populated with the data:
+
+
+![aws-dynamo-db004](images/aws-dynamo-db004.png)
+
+## Step: 5 Save the changes
+
+The final steps is to save the changes. Upon a button click we will iterate all rows and update the items in the database. We will need a function that updates an item in the manager class. Here is the code.
+
+````C#
+
+// Main form class
+private void radButton2_Click(object sender, EventArgs e)
+{
+    foreach (GridViewDataRowInfo item in radGridView1.Rows)
+    {
+        manager.UpdateCustomerEntry(item.DataBoundItem as Customer);
+    }
+}
+
+// AWS_Manager class
+public void UpdateCustomerEntry(Customer customer)
+{
+    Table table = Table.LoadTable(client, "Customers");
+    var entry = new Document();
+    entry["Id"] = customer.Id;
+    entry["Name"] = customer.Name;
+    entry["Employees"] = customer.Employees;
+    entry["State"] = customer.State;
+    table.UpdateItem(entry);
+}
+`````
+
+
+# See also
+
+* [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
 
