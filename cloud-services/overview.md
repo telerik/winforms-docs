@@ -48,17 +48,19 @@ This section shows how one can use various cloud services like GoogleCloud, AWS,
 
 * AWS
 
-    * Overview
+    * [Overview]({%slug cloud-services/aws/overview%})
+    
+    * [Getting Started]({%slug cloud-services/aws/getting-started%})
 
     * Connect to data in the cloud
 
-        * DynamoDB / SimpleDB
+        * [DynamoDB]({%slug cloud-services/aws/dynamodb%})
 
-        * RDS
+        * [RDS]({%slug cloud-services/aws/rds%})
 
-    * Storage (S3)
+    * [Storage (S3)]({%slug cloud-services/aws/storage%})
 
-    * Cognitive services
+    * [Cognitive services]({%slug  cloud-services/aws/cognitive-services%})
 
 
 

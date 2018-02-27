@@ -16,11 +16,19 @@ Amazon Web Services is a cloud platform that provides a wide range of cloud serv
 
 Here are the currently available topics:
 
-* Connect to data in the cloud
-    * DynamoDB
-    * RDS (Relational Data Services)
-* Storage (S3)
-* Cognitive Services
++ [Overview]({%slug cloud-services/aws/overview%})
+
++ [Getting Started]({%slug cloud-services/aws/getting-started%})
+
++ Connect to data in the cloud
+
+    + [DynamoDB]({%slug cloud-services/aws/dynamodb%})
+
+    + [RDS]({%slug cloud-services/aws/rds%})
+
++ [Storage (S3)]({%slug cloud-services/aws/storage%})
+
++ [Cognitive services]({%slug  cloud-services/aws/cognitive-services%})
 
 
 ## Prerequisites

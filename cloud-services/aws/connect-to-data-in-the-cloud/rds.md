@@ -10,7 +10,7 @@ position: 1
 
 # Relational Database Service (RDS)
 
-# Overview
+## Overview
 
 This article will show you to create a Winforms application and access data stored in the cloud. 
 
@@ -52,22 +52,96 @@ In Visual Studio open the NuGet package manager and install the RDS module:
 
 ![aws-rds005](images/aws-rds005.png)
 
-In addition you need to add the following to your App.config file:
+## Step 4: Connect from the application
 
-````XML
+In this example we will use __Entity Framework__. In order to download Entity Framework you can follow this MSDN article - [Get Entity Framework](https://msdn.microsoft.com/en-us/data/ee712906.aspx)  
 
-<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
-  <appSettings>
-    <add key="AWSProfileName" value="Telerik"/>
-    <add key="AWSRegion" value="eu-west-3" />
-  </appSettings>
-</configuration>
+
+Now you will need a business object. In this example we will use the following class:
+
+````C#
+
+public class MoviesModel
+{
+    public int Id { get; set; }
+
+    public string Name{ get; set; }
+
+    public string Director { get; set; }
+
+    public string YearOut { get; set; }
+}
+````
+
+The main part is creating a DbContext class. For this example you need to inherit the class and create a method that returns the connection string and a property that resembles the data. Here is a sample implementation:
+
+````C#
+
+public class RadGridViewMoviesContext : DbContext
+{
+    public RadGridViewMoviesContext() : base(GetRDSConnectionString())
+    {
+       
+    }
+
+    public static string GetRDSConnectionString()
+    {
+        string dbname = "Movies";
+        if (string.IsNullOrEmpty(dbname)) return null;
+
+        string username = "user";
+        string password = "pass";
+        string hostname = "sample-instance.************rds.amazonaws.com";
+        string port = "1433";
+
+        return "Data Source=" + hostname + ";Initial Catalog=" + dbname + ";User ID=" + username + ";Password=" + password + ";";
+    }
+
+    public IDbSet<MoviesModel> Movies { get; set; }
+    public new IDbSet<T> Set<T>() where T : class
+    {
+        return base.Set<T>();
+    }
+}
 
 ````
 
->note If you do not have a AWS account in Visual Studio please check [Getting Started]({%slug  cloud-services/aws/getting-started%})
+Now you are ready to add some data:
 
-## Step 4: 
+````C#
+
+RadGridViewMoviesContext dbContext = new RadGridViewMoviesContext();
+
+dbContext.Movies.Add(new MoviesModel() { Director = "John Francis Daley", Id = 0, Name = "Game Night", YearOut = "2018" });
+dbContext.Movies.Add(new MoviesModel() { Director = "Will Gluck", Id = 0, Name = "Peter Rabbit", YearOut = "2018" });
 
 
+dbContext.SaveChanges();
+
+````
+
+
+Once this is done you can bind the grid.
+
+````C#
+private void loadDataButton_Click(object sender, EventArgs e)
+{
+    RadGridViewMoviesContext dbContext = new RadGridViewMoviesContext();
+    dbContext.Movies.Load();
+    this.radGridView1.DataSource = dbContext.Movies.Local.ToBindingList();
+}
+
+````
+
+Saving the data is easy just call the __SaveChanges__ method:
+
+````C#
+private void saveDataButton_Click(object sender, EventArgs e)
+{
+    dbContext.SaveChanges();
+}
+````
+
+You can now view and edit the data from the grid:
+
+![aws-rds008](images/aws-rds008.png)
