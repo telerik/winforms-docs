@@ -20,7 +20,7 @@ This article will help you to setup your environment and start using AWS. Here a
 
 ## Create an AWS account
 
-To create an account go to the [AWS website](https://aws.amazon.com/) and create new account. The process is straightforward and easy. You will be promoted for a credit card number despite that there is a free option. There is short automatic verification via phone as well. The whole process should not take more than 15 minutes. 
+To create an account go to the [AWS website](https://aws.amazon.com/) and create new account. The process is straightforward and easy. You will be prompted for a credit card number despite that there is a free option. There is short automatic verification via phone as well. The whole process should not take more than 15 minutes. 
 
 ## Install the AWS SDK
 
@@ -34,7 +34,7 @@ Now you should see the AWS start page:
 
 ## Creating a user
 
-In order to access the AWS services you need a user. The user management is actually a service. So navigate to the **Security, Identity & Compliance** and click the IAM link.
+In order to access the AWS services you need a user. The user management is actually a service. So navigate to the **Security, Identity & Compliance** and click the **IAM** link.
 
 ![aws-getting-started002](images/aws-getting-started002.png)
 
@@ -49,7 +49,7 @@ Click add new user and follow the instructions on the screen. There are 4 steps:
 
 ## Enter credentials in Visual Studio
 
-This is the final step. If you do not see the AWS start page (see the first image) go to View - AWS Explorer. Click Add New User and import the csv file.
+This is the final step. If you do not see the AWS start page (see the first image) go to View - AWS Explorer. Click **Add New User** and import the csv file.
 
 
 ![aws-getting-started004](images/aws-getting-started004.png)

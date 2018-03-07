@@ -12,21 +12,21 @@ position: 0
 
 ## Overview
 
-This article will show you to create a Winforms application and access data stored in a DynamoDB table. It shows how you can connect to the AWS DynamoDB service from a blank Winforms project as well. 
+This article will show you to create a WinForms application and access data stored in a DynamoDB table. It shows how you can connect to the **AWS DynamoDB** service from a blank WinForms project as well. 
 
 Please note that you can use the local version of DynamoDB to setup and test your application. This article shows a real example.  
 
 
 ## Step 1: Create a WinForms project.
 
-First create the WinForms project, to do that create a blank Telerik UI for WinForms and add a grid and two buttons to it. The application design should look like this:
+First create the WinForms project, to do that create a blank [Telerik UI for WinForms]({%slug winforms/visual-studio-templates%}) project and add a [RadGridView]({%slug winforms/gridview%}) and two buttons to it. The application design should look like this:
 
 ![aws-dynamo-db001](images/aws-dynamo-db001.png)
 
 
 ## Step 2: Install the NuGet package
 
-In Visual Studio open the NuGet package manager and install the DynamoDB module:
+In Visual Studio open the NuGet package manager and install the **DynamoDB** module:
 
 ![aws-dynamo-db002](images/aws-dynamo-db002.png)
 
@@ -46,11 +46,11 @@ In addition you need to add the following to your App.config file:
 
 ````
 
->note If you do not have a account in Visual Studio please check [Getting Started]({%slug  cloud-services/aws/getting-started%})
+>note If you do not have a AWS account in Visual Studio please check the[Getting Started]({%slug  cloud-services/aws/getting-started%}) article.
 
 ## Step 3: Create the AWS manager class
 
-Add a class called AWS_Manager to the example. You will use this class to add all functionality for managing the DynomeDB database. For now you can create the method that crates the table:
+Add a class called **AWS_Manager** to the example. You will use this class to add all functionality for managing the DynamoDB database. For now you can create the method that crates the table:
 
 ````C#
 
@@ -125,7 +125,7 @@ class AWS_Manager
 ````
 
 
-Now when the table is ready you can add some data add the following method to the AWS_Manager class
+Now when the table is ready you can add some data, add the following method to the **AWS_Manager** class
 
 ````C#
 
@@ -160,7 +160,7 @@ If you run the code at this point you will be able to see the data in your AWS c
 
 ## Step: 4
 
-Now you are ready to populate the grid with the data. Although you ca directly populate the grid from the data I believe that is better to have a local business object to store the local data. 
+Now you are ready to populate the grid with the data. Although you ca directly populate the grid from the data I believe that is better to have a local business object to store data. 
 
 ### Get the Data from DynamoDb
 
@@ -236,8 +236,7 @@ class Customer
 
 ````
 
-The grid is now populated with the data:
-
+The grid is now populated with the data.
 
 ![aws-dynamo-db004](images/aws-dynamo-db004.png)
 
@@ -270,7 +269,8 @@ public void UpdateCustomerEntry(Customer customer)
 `````
 
 
-# See also
+# See Also
 
-* [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+* [Storage (S3)]({%slug cloud-services/aws/storage%})
+* [Relational Database Service]({%slug cloud-services/aws/rds%})
 

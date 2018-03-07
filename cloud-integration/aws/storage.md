@@ -10,11 +10,11 @@ position: 3
 
 # Storage (S3) 
 
-Amazon Simple Storage Service (Amazon S3) is storage service that allows you to upload any kind of data at any time, from anywhere. This article will demonstrate how one cam use this service from a winforms application and manage the uploaded files.
+The **Amazon Simple Storage Service** (Amazon S3) is storage service that allows you to upload any kind of data at any time, from anywhere. This article will demonstrate how one can use this service from a WinForms application and manage the uploaded files.
 
-## Step 1: Create the Winforms Application
+## Step 1: Create the WinForms Application
 
-Create a standard Telerik Winforms application and add 3 buttons and a list view to it. The layout should look like this:
+Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) application and add 3 buttons and a [RadListView]({%slug winforms/listview%}) to it. The layout should look like this:
 
 ![aws-s3-001](images/aws-s3-001.png)
 
@@ -38,11 +38,11 @@ In addition you need to add the following to your App.config file:
 
 ````
 
->note If you do not have a account in Visual Studio please check [Getting Started]({%slug cloud-services/aws/getting-started%})
+>note If you do not have an AWS account in Visual Studio please check the[Getting Started]({%slug cloud-services/aws/getting-started%}) article.
 
 ## Step 3: Create the IAmazonS3 client
 
-Now you are ready to create the IAmazonS3 client object. This object will be used later as well.
+Now you are ready to create the *IAmazonS3* client object. This object will be used later form managing the data.
 
 ````C#
 
@@ -113,9 +113,14 @@ private void deleteFileButton_Click(object sender, EventArgs e)
 }
 ````
 
-That is all, you are ready to start using the application.
+That is all, now you are ready to start using the application.
 
 ![aws-s3-003](images/aws-s3-003.png)
+
+# See Also
+
+* [DynamoDB]({%slug cloud-services/aws/dynamodb%})
+* [Relational Database Service]({%slug cloud-services/aws/rds%})
 
 
 
