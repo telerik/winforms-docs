@@ -10,8 +10,6 @@ position: 1
 
 # Relational Database Service (RDS)
 
-## Overview
-
 This article will show you to create a WinForms application and access data stored in the cloud. 
 
 It shows how you can connect to the AWS RDS instance from a blank WinForms project as well. 
@@ -40,7 +38,7 @@ At this point you are ready to connect to the instance using Microsoft SQL Serve
 
 ## Step 2: Create a WinForms project.
 
-First create the WinForms project, to do that create a blank Telerik UI for WinForms project and add a [RadGridView]({%slug winforms/gridview%}) and two buttons to it. The application design should look like this:
+First create the WinForms project, to do that create a blank [Telerik UI for WinForms]({%slug winforms/visual-studio-templates%}) project and add a [RadGridView]({%slug winforms/gridview%}) and two buttons to it. The application design should look like this:
 
 ![aws-rds001](images/aws-rds001.png)
 
@@ -68,6 +66,17 @@ public class MoviesModel
 
     public string YearOut { get; set; }
 }
+````
+````VB
+Public Class MoviesModel
+    Public Property Id() As Integer
+
+    Public Property Name() As String
+
+    Public Property Director() As String
+
+    Public Property YearOut() As String
+End Class
 ````
 
 The main part is creating a DbContext class. For this example you need to inherit the class and create a method that returns the connection string and a property that resembles the data. Here is a sample implementation:
@@ -102,6 +111,35 @@ public class RadGridViewMoviesContext : DbContext
 }
 
 ````
+````VB.NET
+Public Class RadGridViewMoviesContext
+    Inherits DbContext
+
+    Public Sub New()
+        MyBase.New(GetRDSConnectionString())
+
+    End Sub
+
+    Public Shared Function GetRDSConnectionString() As String
+        Dim dbname As String = "Movies"
+        If String.IsNullOrEmpty(dbname) Then
+            Return Nothing
+        End If
+
+        Dim username As String = "user"
+        Dim password As String = "pass"
+        Dim hostname As String = "sample-instance.************rds.amazonaws.com"
+        Dim port As String = "1433"
+
+        Return "Data Source=" & hostname & ";Initial Catalog=" & dbname & ";User ID=" & username & ";Password=" & password & ";"
+    End Function
+
+    Public Property Movies() As IDbSet(Of MoviesModel)
+    Public Shadows Function [Set](Of T As Class)() As IDbSet(Of T)
+        Return MyBase.Set(Of T)()
+    End Function
+End Class
+````
 
 Now you are ready to add some data:
 
@@ -116,6 +154,25 @@ dbContext.Movies.Add(new MoviesModel() { Director = "Will Gluck", Id = 0, Name =
 dbContext.SaveChanges();
 
 ````
+````VB.NET
+Dim dbContext As New RadGridViewMoviesContext()
+
+dbContext.Movies.Add(New MoviesModel() With {
+    .Director = "John Francis Daley",
+    .Id = 0,
+    .Name = "Game Night",
+    .YearOut = "2018"
+})
+dbContext.Movies.Add(New MoviesModel() With {
+    .Director = "Will Gluck",
+    .Id = 0,
+    .Name = "Peter Rabbit",
+    .YearOut = "2018"
+})
+
+
+dbContext.SaveChanges()
+````
 
 
 Once this is done you can bind the grid.
@@ -129,6 +186,13 @@ private void loadDataButton_Click(object sender, EventArgs e)
 }
 
 ````
+````VB.NET
+Private Sub loadDataButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim dbContext As New RadGridViewMoviesContext()
+    dbContext.Movies.Load()
+    Me.radGridView1.DataSource = dbContext.Movies.Local.ToBindingList()
+End Sub
+````
 
 Saving the data is easy just call the __SaveChanges__ method:
 
@@ -137,6 +201,11 @@ private void saveDataButton_Click(object sender, EventArgs e)
 {
     dbContext.SaveChanges();
 }
+````
+````VB.NET
+Private Sub saveDataButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+    dbContext.SaveChanges()
+End Sub
 ````
 
 You can now view and edit the data from the grid:

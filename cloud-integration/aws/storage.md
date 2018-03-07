@@ -55,6 +55,15 @@ public RadForm1()
 }
 
 ````
+````VB.NET
+Private bucketName As String = "telerik1"
+Private client As IAmazonS3
+
+Public Sub New()
+    InitializeComponent()
+    client = New AmazonS3Client()
+End Sub
+````
 
 The S3 API is intuitive and you just need to create a proper request. The following spinet shows the event handlers of all buttons.
 
@@ -111,6 +120,51 @@ private void deleteFileButton_Click(object sender, EventArgs e)
     client.DeleteObject(request);
 
 }
+````
+````VB.NET
+Private Sub listItems_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim objects = client.ListObjects(bucketName)
+
+    radListView1.Items.Clear()
+
+    For Each item As S3Object In objects.S3Objects
+        radListView1.Items.Add(item.Key)
+    Next item
+End Sub
+
+Private Sub UploadFileButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim choofdlog As New OpenFileDialog()
+    choofdlog.Filter = "All Files (*.*)|*.*"
+    choofdlog.FilterIndex = 1
+    choofdlog.Multiselect = False
+
+    If choofdlog.ShowDialog() = DialogResult.OK Then
+        Dim sFileName As String = choofdlog.FileName
+        Dim request As New PutObjectRequest() With {
+            .BucketName = bucketName,
+            .Key = sFileName
+        }
+
+        Dim response As PutObjectResponse = client.PutObject(request)
+    End If
+
+End Sub
+
+Private Sub deleteFileButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+    If radListView1.SelectedIndex <0 Then
+        RadMessageBox.Show("Please select an Item")
+        Return
+    End If
+
+    Dim keyName As String = radListView1.SelectedItem.Text
+    Dim request As New DeleteObjectRequest() With {
+        .BucketName = bucketName,
+        .Key = keyName
+    }
+
+    client.DeleteObject(request)
+
+End Sub
 ````
 
 That is all, now you are ready to start using the application.

@@ -10,8 +10,6 @@ position: 0
 
 # Dynamo DB
 
-## Overview
-
 This article will show you to create a WinForms application and access data stored in a DynamoDB table. It shows how you can connect to the **AWS DynamoDB** service from a blank WinForms project as well. 
 
 Please note that you can use the local version of DynamoDB to setup and test your application. This article shows a real example.  
@@ -123,12 +121,62 @@ class AWS_Manager
     }
 }
 ````
+````VB.NET
+Friend Class AWS_Manager
+    Private client As AmazonDynamoDBClient
+    Public Sub New()
+        Try
+            client = New AmazonDynamoDBClient()
+        Catch ex As Exception
+            RadMessageBox.Show("Error: failed to create a DynamoDB client; " & ex.Message)
+        End Try
+    End Sub
+
+    Public Sub CreateTable()
+        Dim currentTables As List(Of String) = client.ListTables().TableNames
+
+        If Not currentTables.Contains("Customers") Then
+            Dim createRequest As CreateTableRequest = New CreateTableRequest With {.TableName = "Customers", .AttributeDefinitions = New List(Of AttributeDefinition)() _
+                From {
+                    New AttributeDefinition With {
+                        .AttributeName = "Id",
+                        .AttributeType = "N"
+                    },
+                    New AttributeDefinition With {
+                        .AttributeName = "Name",
+                        .AttributeType = "S"
+                    }
+                }, .KeySchema = New List(Of KeySchemaElement)()
+                From {
+                    New KeySchemaElement With {
+                        .AttributeName = "Id",
+                        .KeyType = "HASH"
+                    },
+                    New KeySchemaElement With {
+                        .AttributeName = "Name",
+                        .KeyType = "RANGE"
+                    }
+                }}
+
+            createRequest.ProvisionedThroughput = New ProvisionedThroughput(1, 1)
+
+            Dim createResponse As CreateTableResponse
+            Try
+                createResponse = client.CreateTable(createRequest)
+            Catch ex As Exception
+                RadMessageBox.Show("Error: failed to create the new table; " & ex.Message)
+
+                Return
+            End Try
+        End If
+    End Sub
+End Class
+````
 
 
 Now when the table is ready you can add some data, add the following method to the **AWS_Manager** class
 
 ````C#
-
 public void AddData()
 {
     Table table = Table.LoadTable(client, "Customers");
@@ -149,9 +197,29 @@ public void AddData()
         table.PutItem(dataObj2);
     }
 }
+````
+````VB.NET
+Public Sub AddData()
+    Dim table As Table = Table.LoadTable(client, "Customers")
+    If table.Keys.Count = 0 Then
+        Dim dataObj1 As New Document()
+        dataObj1("Name") = "Telerik"
+        dataObj1("Id") = 2
+        dataObj1("Employees") = 46
+        dataObj1("State") = "NY"
+        table.PutItem(dataObj1)
 
+        Dim dataObj2 As New Document()
+        dataObj2("Name") = "Progress"
+        dataObj2("Id") = 13
+        dataObj2("Employees") = 54
+        dataObj2("State") = "IL"
+        table.PutItem(dataObj2)
+    End If
+End Sub
 
 ````
+
 
 
 If you run the code at this point you will be able to see the data in your AWS console:
@@ -187,7 +255,26 @@ public List<Document> GetData()
 
     return documentList;
 }
-`````
+````
+````VB.NET
+Public Function GetData() As List(Of Document)
+    Dim table As Table = Table.LoadTable(client, "Customers")
+    Dim scanFilter As New ScanFilter()
+    Dim config As New ScanOperationConfig() With {
+        .Filter = scanFilter,
+        .Select = SelectValues.AllAttributes
+    }
+    Dim search As Search = table.Scan(config)
+
+    Dim documentList As New List(Of Document)()
+    Do
+        documentList.AddRange(search.GetNextSet())
+
+    Loop While Not search.IsDone
+
+    Return documentList
+End Function
+````
 
 We can use the above method to iterated the documents and get the data. Here is the code along with the business object.
 
@@ -235,6 +322,38 @@ class Customer
 }
 
 ````
+````VB.NET
+Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim data = manager.GetData()
+    Dim gridData = New List(Of Customer)()
+
+    For Each doc As Document In data
+        Dim customer = New Customer()
+        For Each attribute In doc.GetAttributeNames()
+            Dim value = doc(attribute)
+            If attribute Is "Id" Then
+                customer.Id = Convert.ToInt32(value.AsPrimitive().Value)
+            ElseIf attribute Is "Name" Then
+                customer.Name = value.AsPrimitive().Value.ToString()
+            ElseIf attribute Is "Employees" Then
+                customer.Employees = Convert.ToInt32(value.AsPrimitive().Value)
+            ElseIf attribute Is "State" Then
+                customer.State = value.AsPrimitive().Value.ToString()
+            End If
+        Next attribute
+        gridData.Add(customer)
+    Next doc
+    radGridView1.DataSource = gridData
+End Sub
+Friend Class Customer
+    Public Property Id() As Integer
+    Public Property Name() As String
+
+    Public Property Employees() As Integer
+
+    Public Property State() As String
+End Class
+````
 
 The grid is now populated with the data.
 
@@ -266,7 +385,26 @@ public void UpdateCustomerEntry(Customer customer)
     entry["State"] = customer.State;
     table.UpdateItem(entry);
 }
-`````
+````
+````VB.NET
+' Main form class
+Private Sub radButton2_Click(ByVal sender As Object, ByVal e As EventArgs)
+    For Each item As GridViewDataRowInfo In radGridView1.Rows
+        manager.UpdateCustomerEntry(TryCast(item.DataBoundItem, Customer))
+    Next item
+End Sub
+
+' AWS_Manager class
+Public Sub UpdateCustomerEntry(ByVal customer As Customer)
+    Dim table As Table = Table.LoadTable(client, "Customers")
+    Dim entry = New Document()
+    entry("Id") = customer.Id
+    entry("Name") = customer.Name
+    entry("Employees") = customer.Employees
+    entry("State") = customer.State
+    table.UpdateItem(entry)
+End Sub
+````
 
 
 # See Also
