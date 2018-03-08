@@ -162,6 +162,6 @@ End Sub
 
 # See Also
 
-* [RadListView]({%slug winforms/gridview%})
+* [RadListView]({%slug winforms/listview%})
 * [Map Providers]({%slug winforms/map/providers%})
 * [Layers]({%slug winforms/map/features/layers/overview%})
