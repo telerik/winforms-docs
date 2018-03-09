@@ -28,7 +28,7 @@ void radGridView1_CellBeginEdit(object sender, Telerik.WinControls.UI.GridViewCe
     GridSpinEditor editor = this.radGridView1.ActiveEditor as GridSpinEditor;
     if (editor != null)
     {
-        ((GridSpinEditorElement)editor.EditorElement).ForeColor = Color.Red;
+        ((RadSpinEditorElement)editor.EditorElement).ForeColor = Color.Red;
     }
 }
 
@@ -37,7 +37,7 @@ void radGridView1_CellBeginEdit(object sender, Telerik.WinControls.UI.GridViewCe
 Private Sub RadGridView1_CellBeginEdit(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellCancelEventArgs) Handles RadGridView1.CellBeginEdit
     Dim editor As GridSpinEditor = TryCast(Me.RadGridView1.ActiveEditor, GridSpinEditor)
     If editor IsNot Nothing Then
-        CType(editor.EditorElement, GridSpinEditorElement).ForeColor = Color.Red
+        CType(editor.EditorElement, RadSpinEditorElement).ForeColor = Color.Red
     End If
 End Sub
 

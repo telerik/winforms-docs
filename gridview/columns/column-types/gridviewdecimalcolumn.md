@@ -86,7 +86,7 @@ The code below demonstrates how you can disable the up and down arrow buttons. U
 void radGridView1_CellEditorInitialized1(object sender, GridViewCellEventArgs e)
 {
     GridSpinEditor spinEditor = this.radGridView1.ActiveEditor as GridSpinEditor;
-    ((GridSpinEditorElement)spinEditor.EditorElement).ShowUpDownButtons = false;
+    ((RadSpinEditorElement)spinEditor.EditorElement).ShowUpDownButtons = false;
 }
 
 ````
@@ -94,7 +94,7 @@ void radGridView1_CellEditorInitialized1(object sender, GridViewCellEventArgs e)
 Private Sub RadGridView1_CellEditorInitialized1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs)
     Dim spinEditor As GridSpinEditor = TryCast(Me.RadGridView1.ActiveEditor, GridSpinEditor)
     If spinEditor IsNot Nothing Then
-        Dim element As GridSpinEditorElement = spinEditor.EditorElement
+        Dim element As RadSpinEditorElement = spinEditor.EditorElement
         element.ShowUpDownButtons = False
     End If
 End Sub

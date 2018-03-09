@@ -91,7 +91,6 @@ class MyPrintDialogsLocalizationProvider : Telerik.WinControls.UI.PrintDialogsLo
             case PrintDialogsStringId.SettingDialogButtonCurrentDate: return "Current Date";
             case PrintDialogsStringId.SettingDialogButtonCurrentTime: return "Current Time";
             case PrintDialogsStringId.SettingDialogButtonUserName: return "User Name";
-            case PrintDialogsStringId.SettingDialogButtonFont: return "Font...";
             case PrintDialogsStringId.SettingDialogLabelHeader: return "Header";
             case PrintDialogsStringId.SettingDialogLabelFooter: return "Footer";
             case PrintDialogsStringId.SettingDialogCheckboxReverse: return "Reverse on even pages";
@@ -112,7 +111,6 @@ class MyPrintDialogsLocalizationProvider : Telerik.WinControls.UI.PrintDialogsLo
             case PrintDialogsStringId.SchedulerSettingsMonthlyStyle: return "Monthly Style";
             case PrintDialogsStringId.SchedulerSettingsDetailStyle: return "Details Style";
             case PrintDialogsStringId.SchedulerSettingsButtonWatermark: return "Watermark...";
-            case PrintDialogsStringId.SchedulerSettingsButtonFont: return "Font...";
             case PrintDialogsStringId.SchedulerSettingsLabelPrintRange: return "Print range";
             case PrintDialogsStringId.SchedulerSettingsLabelStyleSettings: return "Style settings";
             case PrintDialogsStringId.SchedulerSettingsLabelPrintSettings: return "Print settings";
@@ -158,7 +156,6 @@ class MyPrintDialogsLocalizationProvider : Telerik.WinControls.UI.PrintDialogsLo
             case PrintDialogsStringId.GridSettingsPrintHiddenColumns: return "Print hidden columns";
             case PrintDialogsStringId.GridSettingsPrintHeader: return "Print header on each page";
             case PrintDialogsStringId.GridSettingsButtonWatermark: return "Watermark...";
-            case PrintDialogsStringId.GridSettingsButtonFont: return "Font...";
             case PrintDialogsStringId.GridSettingsFitPageWidth: return "FitPageWidth";
             case PrintDialogsStringId.GridSettingsNoFit: return "NoFit";
             case PrintDialogsStringId.GridSettingsNoFitCentered: return "NoFitCentered";
@@ -284,8 +281,6 @@ Class MyPrintDialogsLocalizationProvider
                 Return "Current Time"
             Case PrintDialogsStringId.SettingDialogButtonUserName
                 Return "User Name"
-            Case PrintDialogsStringId.SettingDialogButtonFont
-                Return "Font..."
             Case PrintDialogsStringId.SettingDialogLabelHeader
                 Return "Header"
             Case PrintDialogsStringId.SettingDialogLabelFooter
@@ -326,8 +321,6 @@ Class MyPrintDialogsLocalizationProvider
                 Return "Details Style"
             Case PrintDialogsStringId.SchedulerSettingsButtonWatermark
                 Return "Watermark..."
-            Case PrintDialogsStringId.SchedulerSettingsButtonFont
-                Return "Font..."
             Case PrintDialogsStringId.SchedulerSettingsLabelPrintRange
                 Return "Print range"
             Case PrintDialogsStringId.SchedulerSettingsLabelStyleSettings
@@ -418,8 +411,6 @@ Class MyPrintDialogsLocalizationProvider
                 Return "Print header on each page"
             Case PrintDialogsStringId.GridSettingsButtonWatermark
                 Return "Watermark..."
-            Case PrintDialogsStringId.GridSettingsButtonFont
-                Return "Font..."
             Case PrintDialogsStringId.GridSettingsFitPageWidth
                 Return "FitPageWidth"
             Case PrintDialogsStringId.GridSettingsNoFit
