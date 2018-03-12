@@ -60,7 +60,7 @@ This section shows how one can use various cloud services like GoogleCloud, AWS,
 
     * [Storage (S3)]({%slug cloud-services/aws/storage%})
 
-    * [Cognitive services]({%slug  cloud-services/aws/cognitive-services%})
+    * [Simple Email Service]({%slug cloud-services/aws/ses%})
 
 
 

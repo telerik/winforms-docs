@@ -28,7 +28,7 @@ Here are the currently available topics:
 
 + [Storage (S3)]({%slug cloud-services/aws/storage%})
 
-+ [Cognitive services]({%slug  cloud-services/aws/cognitive-services%})
++ [Simple Email Service]({%slug cloud-services/aws/ses%})
 
 
 ## Prerequisites
