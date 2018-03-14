@@ -78,7 +78,7 @@ this.client.CreateDatabaseIfNotExistsAsync(new Database { Id = "EmployeeDB" });
 
 Documents are user defined (arbitrary) JSON content. We can now insert one or more documents. First, we need to create a the class that will represent the business object:
 
-`````C#
+````C#
 public class Employee
 {
     [JsonProperty(PropertyName = "id")]
@@ -90,8 +90,6 @@ public class Employee
         return JsonConvert.SerializeObject(this);
     }
 }
-
-
 ````
 
 Now we are ready to add some data. For this we need to add a collection first. Call the following code once from your application (from the add event handler for example): 
