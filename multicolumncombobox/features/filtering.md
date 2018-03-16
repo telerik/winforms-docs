@@ -13,6 +13,9 @@ previous_url: multicolumncombobox-filtering
 
 **RadMultiColumnComboBox** supports auto-complete option with suggesting the available result records. This is achieved by the [filtering]({%slug winforms/gridview/filtering/basic-filtering%}) functionality that **RadGridView** supports.
 
+>important The built-in filtering mechanism relies on the field names of the columns in the underlying grid. The property name of an applied filter descriptor needs to match the **FieldName** property of an existing column in the grid.
+>
+
 ## Using simple FilterDescriptors
 
 Filtering operation in __RadMultiColumnComboBox__ is controlled by the Boolean __AutoFilter__ property. The data is filtered by the field specified as __DisplayMember__. In addition, you should set the filter expression (notifying the control about the rules it should use to filter the data) and add that expression to the __MasterTemplate__.
