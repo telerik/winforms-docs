@@ -86,5 +86,58 @@ public async void CreateAccountObjects()
 
 ## Step 5: Add the handlers to manage the data.
 
+There is nothing complex in this example and the API is really intuitive. You just need to call the appropriate methods and you will easily get the results.
 
+````C#
+private void radButtonListItems_Click(object sender, EventArgs e)
+{
+    ListItems();
+}
+public void ListItems()
+{
+    radListView1.Items.Clear();
 
+    BlobContinuationToken blobContinuationToken = null;
+    do
+    {
+        var results = cloudBlobContainer.ListBlobsSegmented(null, blobContinuationToken);
+
+        blobContinuationToken = results.ContinuationToken;
+        foreach (IListBlobItem item in results.Results)
+        {
+            radListView1.Items.Add(item.Uri);
+        }
+    } while (blobContinuationToken != null);
+}
+private async void radButtonUpload_ClickAsync(object sender, EventArgs e)
+{
+    OpenFileDialog dlg = new OpenFileDialog();
+    if (dlg.ShowDialog() == DialogResult.OK)
+    {
+        string file = dlg.FileName;
+        CloudBlockBlob cloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(Path.GetFileName(file));
+        await cloudBlockBlob.UploadFromFileAsync(file);
+        ListItems();
+    }
+}
+
+private void radButtonDelete_Click(object sender, EventArgs e)
+{
+    if (radListView1.SelectedIndex != -1)
+    {
+        var fileName = radListView1.SelectedItem.Text;
+        var blob = this.cloudBlobContainer.GetBlockBlobReference(Path.GetFileName(fileName));
+        var result = blob.DeleteIfExists();
+        if (result == false)
+        {
+            RadMessageBox.Show("Cannot Find File");
+        }
+        ListItems();
+    }
+
+}
+````
+
+You are now ready to manage the files in the cloud.
+
+![azure-blob-storage-004](images/azure-blob-storage-004.png)
