@@ -1163,8 +1163,8 @@ footer p a#send-feedback:hover  {
 }
 
 #page-article table {
-	border: 1px solid #2CB144;
-	border-collapse: collapse;
+  /* border: 1px solid #e1e5ea; */
+  border-collapse: collapse;
   border-spacing: 0;
 }
 
