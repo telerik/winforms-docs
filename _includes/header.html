@@ -16,14 +16,15 @@
 		<image class="logo" src="/devtools/winforms/images/winforms-logo.svg" alt="Telerik UI for WinForms by Progress" />
 	</a>
 </div> 
-<div id="page-search">
-	{% include search.html %}
-</div>
+    {% if page.slug != 'knowledge_base' %}
+    {% include search.html %}
+    {% endif %}
 
+{% if page.slug != 'knowledge_base' %}
 <span class="show-search">
 	<span class="k-icon k-i-search"></span>
 </span>
-
+{% endif %}
 <div class="nav-buttons">
 	<a href="http://www.telerik.com/products/winforms.aspx#GeneralContent_C084_Col00" title="WinForms Demos" target="_blank" class="btn demos-btn">Demos</a>	
 	<a href="http://www.telerik.com/products/winforms.aspx" title="About UI for WinForms" target="_blank" class="btn about-btn">About</a>

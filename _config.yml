@@ -1323,6 +1323,11 @@ defaults:
     values:
         layout: "page"
         category: "default"
+-
+    scope:
+        path: "knowledge-base"
+    values:
+        layout: "kb-page"
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
 
@@ -1333,6 +1338,8 @@ ff-sheet-id: 14RypVB61J1Zbq7JjxBay2Pf3seiLOlwrK08jbfNL64M
 google_analytics: UA-1119090:eblhnfskwrk'
 google_tag_manager: GTM-6X92
 google_custom_search: '001595215763381649090:j4fvrr1zs78'
+google_custom_kb_search: '001595215763381649090:khqr-sbzlmq'
+
 ## Do not edit below this line
 safe: false
 markdown: MarkdownProcessor

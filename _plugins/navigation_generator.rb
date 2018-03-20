@@ -21,7 +21,7 @@ module Jekyll
                 end
 
                 url = page.url.sub('/', '')
-				
+				next if url.include? "knowledge-base/"
 				#exclude MOSS 2007 documentation from the TOC until it is deleted
 				next if url.include? "sharepoint/2007/"
 				
@@ -37,7 +37,7 @@ module Jekyll
                         if index == segments.size - 1
                             item['position'] = page.data['position'] if page.data['position']
                             item['text'] = page.data['title']
-                            item['spriteCssClass'] = 'article'
+                            item['spriteCssClass'] = 'article'                        
                         else
                             path = segments[0..index].join('/')
                             navigation_entry =  @navigation.find { |key, value| path =~ key }

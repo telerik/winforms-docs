@@ -38,9 +38,9 @@ layout: index
 </div>
 <div id="page-inner-content">
 	<a id="page-edit-link" class="btn btn-action" href="https://github.com/telerik/winforms-docs/edit/master{{ page.url | replace: '.html','' }}.md">Edit this page</a>
-    <div id="page-article">       
+    <div id="page-article">      
         <article>
-            {{ content }}
+            {% if page.slug == 'knowledge_base' %}{% include kb-last-updated-articles.html %} {% else %} {{ content }} {% endif %} 
         </article>
 	</div>	
 	{% if site.ff-sheet-id %}{% include feedback-form.html %}{% endif %}
