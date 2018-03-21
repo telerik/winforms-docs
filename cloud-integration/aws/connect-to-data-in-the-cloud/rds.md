@@ -12,7 +12,7 @@ position: 1
 
 This article will show you to create a WinForms application and access data stored in the cloud. 
 
-It shows how you can connect to the AWS RDS instance from a blank WinForms project as well. 
+It shows how you can connect to the __AWS RDS__ instance from a blank WinForms project as well. 
 
 ## Step 1: Setup a Database
 
