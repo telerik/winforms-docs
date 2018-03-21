@@ -9,8 +9,6 @@ position: 0
 res_type: kb
 ---
 
-# Hosting Windows Forms in MFC/COM client applications
-
 ## How To
  
 Host Windows Forms in MFC/COM client applications 

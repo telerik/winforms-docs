@@ -9,8 +9,6 @@ position: 1
 res_type: kb
 ---
 
-# Resources in resx files are lost when the form is modified
-
 ## Problem
 
 Custom resources (such as strings) that are saved in a form's resx file get lost when the form is modified. 
