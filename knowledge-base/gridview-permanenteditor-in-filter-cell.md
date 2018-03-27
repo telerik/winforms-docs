@@ -4,7 +4,7 @@ description: How to embed a permanent drop down list editor in the filter cell
 type: how-to
 page_title: Permanent editor in a filter cell
 slug: gridview-permaneneditor-in-filter-cell
-position: 
+position: 2
 tags: grid
 res_type: kb
 ---
