@@ -42,3 +42,96 @@ CREATE TABLE Movies (
 );
 ````
 
+## Step 3: Creating the Winforms Application
+
+First create the WinForms project, to do that create a blank [Telerik UI for WinForms]({%slug winforms/visual-studio-templates%}) project and add a [RadGridView]({%slug winforms/gridview%}) and two buttons to it. The application design should look like this:
+
+![](images/azure-sql0032.png)
+
+## Step 4: Create Entity Framework Model.
+
+1. Install the Entity Framework from the Nuget manager.  
+    ![](images/azure-sql004.png)
+
+1. Add a new item to your project and choose **ADO.NET Entity Data Model** from the list of available items.
+    ![](images/azure-sql005.png)
+
+1. Choose __Code First__ from database from the __Choose Model Contents__ dialog.
+    ![](images/azure-sql006.png).
+
+1. Click on New Connection... and input the server name and credentials which you can obtain from the Azure portal. Choose the SQL Server Authentication option to log on to the server.
+
+1. Choose whether or not to include the sensitive data in the connection string, choose a name for it and click Next.
+
+1. Pick the database object you wish to include and click Finish.
+    ![](images/azure-sql007.png).
+
+## Step 5: Define the Context Object
+
+Entity Framework will create the context object but you need to modify it and include the business object. Your code should look like this:
+
+````C#
+public partial class MoviesModel : DbContext
+{
+    public MoviesModel()
+        : base("name=MoviesModel")
+    {
+    }
+
+
+    protected override void OnModelCreating(DbModelBuilder modelBuilder)
+    {
+    }
+    public IDbSet<Movie> Movies { get; set; }
+    public new IDbSet<T> Set<T>() where T : class
+    {
+        return base.Set<T>();
+    }
+}
+public class Movie 
+{
+    public int ID { get; set; }
+
+    public string Name { get; set; }
+
+    public string Director { get; set; }
+
+    public string YearOut { get; set; }
+}
+````
+
+The final step is to create a context object which will allow you to load and save the data.
+
+````C#
+MoviesModel dbContext;
+public RadForm1()
+{
+    InitializeComponent();
+    dbContext = new MoviesModel();
+}
+
+private void radButtonLoad_Click(object sender, EventArgs e)
+{
+    dbContext.Movies.Load();
+    radGridView1.DataSource = dbContext.Movies.Local.ToBindingList();
+}
+
+private void radButtonSave_Click(object sender, EventArgs e)
+{
+    dbContext.SaveChanges();
+}
+
+````
+
+Now you can manage the data directly in the grid. 
+
+![](images/azure-sql008.png)
+
+
+
+# See Also
+ 
+* [Cosmos DB]({%slug cloud-services/azure/cosmosdb%})
+* [Image Analysis]({%slug cloud-services/azure/image-analysis%})
+* [Text Analysis]({%slug cloud-services/azure/text-analysis%})
+* [Blob Storage]({%slug cloud-services/azure/blob-storage%})

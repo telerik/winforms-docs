@@ -38,4 +38,4 @@ In order to build and run the examples from the articles you will need an active
 The [Getting Started]({%slug cloud-services/aws/getting-started%}) article shows how you can setup your environment.
 
 
-
+>note In order to see the codes of each region, please check out the [Amazon API Gateway](https://docs.aws.amazon.com/general/latest/gr/rande.html#apigateway_region)

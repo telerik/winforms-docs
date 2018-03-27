@@ -14,23 +14,21 @@ This section shows how one can use various cloud services like GoogleCloud, AWS,
  
 * Azure
 
-    * Overview  
+    - [Getting Started]({%slug cloud-services/azure/getting-started%})
 
-    * Connect to data in the cloud
+    - Connect to Data in the Cloud
 
-         * CosmosDb
+         - [Cosmos DB]({%slug cloud-services/azure/cosmosdb%})
 
-         * SQL (with or without EF)
+         - [SQL Database]({%slug cloud-services/azure/sql-database%})
 
-    * Cognitive services  
+    - [Blob Storage]({%slug cloud-services/azure/blob-storage%})
 
-    * Storage – Azure Files
+    - Cognitive Services
 
-    * Bing Autosuggest API,
-
-    * Azure Search (Bing search)
-
-    * Optional – Citrix XenApp Essentials
+        - [Image Analysis]({%slug cloud-services/azure/image-analysis%})
+        
+        - [Text Analysis]({%slug cloud-services/azure/text-analysis%})
 
 * Google Cloud
 

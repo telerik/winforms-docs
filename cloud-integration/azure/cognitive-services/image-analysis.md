@@ -2,7 +2,7 @@
 title: Image Analysis
 page_title: Image Analysis | Cloud Services
 description: This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite.
-slug: cloud-services/azure/cognitive-services
+slug: cloud-services/azure/image-analysis
 tags: cloud,azure
 published: True
 position: 5
@@ -137,3 +137,8 @@ private async void radButtonUpload_Click(object sender, EventArgs e)
 That is all, you are ready to start and test the application.
 
 ![](images/azure-cognitive-services-image-analysis003.png)
+
+* [Cosmos DB]({%slug cloud-services/azure/cosmosdb%})
+* [SQL Database]({%slug cloud-services/azure/sql-database%})
+* [Text Analysis]({%slug cloud-services/azure/text-analysis%})
+* [Blob Storage]({%slug cloud-services/azure/blob-storage%})

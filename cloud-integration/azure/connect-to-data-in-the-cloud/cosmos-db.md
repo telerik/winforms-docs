@@ -154,6 +154,6 @@ Now the changes made in the grid will be automatically reflected in the database
 # See Also
 
 * [SQL Database]({%slug cloud-services/azure/sql-database%})
-* [Cognitive Services]({%slug cloud-services/azure/cognitive-services%})
+* [Image Analysis]({%slug cloud-services/azure/blob-storage%})
+* [Text Analysis]({%slug cloud-services/azure/text-analysis%})
 * [Blob Storage]({%slug cloud-services/azure/blob-storage%})
-

@@ -29,4 +29,8 @@ Here are the currently available topics:
 
 * [Blob Storage]({%slug cloud-services/azure/blob-storage%})
 
-* [Cognitive Services]({%slug cloud-services/azure/cognitive-services%})
+* Cognitive Services
+
+    * [Image Analysis]({%slug cloud-services/azure/image-analysis%})
+    
+    * [Text Analysis]({%slug cloud-services/azure/text-analysis%})
