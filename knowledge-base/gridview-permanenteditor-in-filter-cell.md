@@ -1,7 +1,7 @@
 ---
 title: Permanent editor in a filter cell
-description: This article demonstrates how to embed a permanent drop down list editor in the filter cell
-type: troubleshooting
+description: How to embed a permanent drop down list editor in the filter cell
+type: how-to
 page_title: Permanent editor in a filter cell
 slug: gridview-permaneneditor-in-filter-cell
 position: 
@@ -28,9 +28,11 @@ By design, **RadGridView** uses editing mechanism. Thus, only one cell can be ed
 
 ## Solution
 
-This article shows in detailed steps how to create a custom filter cell and embed a permanent **RadDropDownListElement** to manage filtering.
+At the end of this solution the illustrated result in the following video will be achieved:
 
 ![gridview-permanenteditor-in-filter-cell 001](images/gridview-permanenteditor-in-filter-cell001.gif)
+
+Follow the detailed steps in order to create a custom filter cell and embed a permanent **RadDropDownListElement** to manage filtering.
 
 1\. Create a derivative of **GridFilterCellElement**. 
 
