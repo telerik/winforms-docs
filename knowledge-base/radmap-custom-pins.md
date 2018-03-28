@@ -173,10 +173,9 @@ End Class
 
 {{endregion}} 
 
+The code snippet below demonstrates how the newly created pin object can be instantiated and added to the map.
 
 #### Initial Setup
-
-The code snippet below demonstrates how the newly created pin object can be instantiated and added to the map.
 
 {{source=..\SamplesCS\KnowledgeBase\RadMapCustomPin.cs region=InitialSetup}}
 {{source=..\SamplesVB\KnowledgeBase\RadMapCustomPin.vb region=InitialSetup}}
