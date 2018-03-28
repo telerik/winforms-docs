@@ -15,6 +15,8 @@ __RadGanttView__ offers a number of built-in timeline views which allow you to s
 
 All built-in views can be found in the *TimeRange* enumeration. Here are the different views offered by __RadGanttView__ out-of-the-box:
 
+>important The RadGanttView.GanttViewElement.**GraphicalViewElement** exposes the **OnePixelTime** property. This property determines how much time a single pixel represents. The time line views vary from years to quarter hours and depending on the chosen view one needs to set an appropriate **OnePixelTime**.
+
 * __TimeRange.Week__ : Each element of the upper row represents one week. The elements on the lower row represent days.
 
 {{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeWeek}} 
