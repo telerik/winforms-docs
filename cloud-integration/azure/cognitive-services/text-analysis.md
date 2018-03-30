@@ -15,11 +15,11 @@ This article will guide you through the process of integrating Azure's [Text Ana
 
 ## Step 1: Create a Text Analytics API Account
 
-Before you start, you need to create a new Text Analytics API account through the Azure portal. This has been explained in great detail in [this article](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account).
+Before you start, you need to create a new Text Analytics API account through the Azure portal. This is explained in great detail [here](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account).
 
 ![](images/azure-text-analysis001.png)
 
-Once you've created the account, you have to obtain the subscription keys that have been generated for you. You will require them later on in order to make API calls from your application.
+Once you've created the account, you have to obtain the subscription keys that were generated for you. You will require them later on in order to make API calls from your application.
 
 ## Step 2: Create the Application
 
@@ -39,7 +39,7 @@ You can now add the **Microsoft.Azure.CognitiveServices.Language** NuGet package
 
 ## Step 4: Use the Text Analytics API
 
-**Example 3** demonstrates how to handle the button's **Click** event and use the Text Analytics API to analyze the text input in the RadWatermarkBox.
+The following code demonstrates how to handle the button's **Click** event and use the Text Analytics API to analyze the text input in the RadWatermarkBox.
 
 
 ````C#

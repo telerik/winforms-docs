@@ -13,7 +13,7 @@ position: 1
 
 To get started using **Microsoft Azure**, you will need to create a new account. You can choose to get a free trial account the benefits of which are listed [here](https://azure.microsoft.com/en-us/free/). Then, based on your needs, you need to create a separate account for the different services. 
 
->note You will need to enter a credit card number event for free account. 
+>note You will need to enter a credit card number even for free account. 
 
 # See Also
 

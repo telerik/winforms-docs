@@ -34,6 +34,10 @@ We will use the following objects in order to manage the storage. Add tre the fo
 CloudStorageAccount storageAccount = null;
 CloudBlobContainer cloudBlobContainer = null;
 ````
+```` VB.NET
+Dim storageAccount As CloudStorageAccount = Nothing
+Dim cloudBlobContainer As CloudBlobContainer = Nothing
+````
 
 >tip You can add the necessary namespaces by pressing __Ctrl + .__
 
@@ -50,7 +54,9 @@ When you have a connection string copy it to your application:
 ````C#
 string connectionString "your connection string form the account goes here";
 ````
-
+```` VB.NET
+String connectionString "your connection string form the account goes here"
+````
 
 You are ready to create a storage container and initialize the storage container. Add the following code.
 
@@ -82,6 +88,29 @@ public async void CreateAccountObjects()
         await cloudBlobContainer.SetPermissionsAsync(permissions);
     }
 }
+````
+```` VB.NET
+Public Sub New()
+    InitializeComponent()
+    Me.CreateAccountObjects()
+End Sub
+Public Async Sub CreateAccountObjects()
+    If CloudStorageAccount.TryParse(connectionString, storageAccount) Then
+        Dim cloudBlobClient As CloudBlobClient = storageAccount.CreateCloudBlobClient()
+
+        cloudBlobContainer = cloudBlobClient.GetContainerReference("myFiles")
+        If cloudBlobContainer IsNot Nothing Then
+            Return
+        End If
+        'if the container do not exists create it. 
+        cloudBlobContainer = cloudBlobClient.GetContainerReference("myFiles" & Guid.NewGuid().ToString())
+        Await cloudBlobContainer.CreateAsync()
+
+        Dim permissions As BlobContainerPermissions = New BlobContainerPermissions With {.PublicAccess = BlobContainerPublicAccessType.Blob}
+        Await cloudBlobContainer.SetPermissionsAsync(permissions)
+    End If
+End Sub
+
 ````
 
 ## Step 5: Add the handlers to manage the data.
@@ -136,6 +165,46 @@ private void radButtonDelete_Click(object sender, EventArgs e)
     }
 
 }
+````
+```` VB.NET
+Private Sub radButtonListItems_Click(ByVal sender As Object, ByVal e As EventArgs)
+    ListItems()
+End Sub
+Public Sub ListItems()
+    radListView1.Items.Clear()
+
+    Dim blobContinuationToken As BlobContinuationToken = Nothing
+    Do
+        Dim results = cloudBlobContainer.ListBlobsSegmented(Nothing, blobContinuationToken)
+
+        blobContinuationToken = results.ContinuationToken
+        For Each item As IListBlobItem In results.Results
+            radListView1.Items.Add(item.Uri)
+        Next item
+    Loop While blobContinuationToken IsNot Nothing
+End Sub
+Private Async Sub radButtonUpload_ClickAsync(ByVal sender As Object, ByVal e As EventArgs)
+    Dim dlg As New OpenFileDialog()
+    If dlg.ShowDialog() = DialogResult.OK Then
+        Dim file As String = dlg.FileName
+        Dim cloudBlockBlob As CloudBlockBlob = cloudBlobContainer.GetBlockBlobReference(Path.GetFileName(file))
+        Await cloudBlockBlob.UploadFromFileAsync(file)
+        ListItems()
+    End If
+End Sub
+
+Private Sub radButtonDelete_Click(ByVal sender As Object, ByVal e As EventArgs)
+    If radListView1.SelectedIndex <> -1 Then
+        Dim fileName = radListView1.SelectedItem.Text
+        Dim blob = Me.cloudBlobContainer.GetBlockBlobReference(Path.GetFileName(fileName))
+        Dim result = blob.DeleteIfExists()
+        If result = False Then
+            RadMessageBox.Show("Cannot Find File")
+        End If
+        ListItems()
+    End If
+
+End Sub
 ````
 
 You are now ready to manage the files in the cloud.

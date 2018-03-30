@@ -99,6 +99,33 @@ public class Movie
     public string YearOut { get; set; }
 }
 ````
+```` VB.NET
+Partial Public Class MoviesModel
+    Inherits DbContext
+
+    Public Sub New()
+        MyBase.New("name=MoviesModel")
+    End Sub
+
+
+    Protected Overrides Sub OnModelCreating(ByVal modelBuilder As DbModelBuilder)
+    End Sub
+    Public Property Movies() As IDbSet(Of Movie)
+    Public Shadows Function [Set](Of T As Class)() As IDbSet(Of T)
+        Return MyBase.Set(Of T)()
+    End Function
+End Class
+Public Class Movie
+    Public Property ID() As Integer
+
+    Public Property Name() As String
+
+    Public Property Director() As String
+
+    Public Property YearOut() As String
+End Class
+
+````
 
 The final step is to create a context object which will allow you to load and save the data.
 
@@ -120,6 +147,24 @@ private void radButtonSave_Click(object sender, EventArgs e)
 {
     dbContext.SaveChanges();
 }
+
+````
+```` VB.NET
+Private dbContext As MoviesModel
+ 
+Public Sub New()
+    InitializeComponent()
+    dbContext = New MoviesModel()
+End Sub
+
+Private Sub radButtonLoad_Click(ByVal sender As Object, ByVal e As EventArgs)
+    dbContext.Movies.Load()
+    radGridView1.DataSource = dbContext.Movies.Local.ToBindingList()
+End Sub
+
+Private Sub radButtonSave_Click(ByVal sender As Object, ByVal e As EventArgs)
+    dbContext.SaveChanges()
+End Sub
 
 ````
 

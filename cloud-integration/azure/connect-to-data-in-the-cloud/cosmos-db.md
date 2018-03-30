@@ -51,6 +51,12 @@ using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
 using Newtonsoft.Json;
 ````
+```` VB.NET
+Imports System.Net
+Imports Microsoft.Azure.Documents
+Imports Microsoft.Azure.Documents.Client
+Imports Newtonsoft.Json
+````
 
 Add the following variables to the form's class:
 
@@ -58,6 +64,11 @@ Add the following variables to the form's class:
 private const string EndpointUrl = "<your endpoint URL>";
 private const string PrimaryKey = "<your primary key>";
 private DocumentClient client;
+````
+```` VB.NET
+Private Const EndpointUrl As String = "<your endpoint URL>"
+Private Const PrimaryKey As String = "<your primary key>"
+Private client As DocumentClient
 ````
 
 You need to take the endpoint URL and primary key from the Azure Portal. In the Azure portal, navigate to your Azure Cosmos DB account, and then click Keys:
@@ -70,6 +81,10 @@ Initialize the client in the and create the database. This can be done in the fo
 ````C#
 this.client = new DocumentClient(new Uri(EndpointUrl), PrimaryKey);
 this.client.CreateDatabaseIfNotExistsAsync(new Database { Id = "EmployeeDB" });
+````
+```` VB.NET
+Me.client = New DocumentClient(New Uri(EndpointUrl), PrimaryKey)
+Me.client.CreateDatabaseIfNotExistsAsync(New Database With {.Id = "EmployeeDB"})
 ````
 
 >important CreateDocumentCollectionIfNotExistsAsync will create a new collection with reserved throughput, which has pricing implications. 
@@ -91,6 +106,17 @@ public class Employee
     }
 }
 ````
+```` VB.NET
+Public Class Employee
+    <JsonProperty(PropertyName := "id")>
+    Public Property Id() As String
+    Public Property Name() As String
+    Public Property Company() As String
+    Public Overrides Function ToString() As String
+        Return JsonConvert.SerializeObject(Me)
+    End Function
+End Class
+````
 
 Now we are ready to add some data. For this we need to add a collection first. Call the following code once from your application (from the add event handler for example): 
 
@@ -105,6 +131,25 @@ private async void AddData()
     await this.client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri("EmployeeDB", "EmployeeCollection"), employee1);
     await this.client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri("EmployeeDB", "EmployeeCollection"), employee2);
 }
+
+````
+```` VB.NET
+Private Async Sub AddData()
+    Dim employee1 = New Employee() With {
+        .Id = "1",
+        .Name = "John Smith",
+        .Company = "Progress"
+    }
+    Dim employee2 = New Employee() With {
+        .Id = "2",
+        .Name = "Melanie Miller",
+        .Company = "Microsoft"
+    }
+
+    Await Me.client.CreateDocumentCollectionIfNotExistsAsync(UriFactory.CreateDatabaseUri("EmployeeDB"), New DocumentCollection With {.Id = "EmployeeCollection"})
+    Await Me.client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri("EmployeeDB", "EmployeeCollection"), employee1)
+    Await Me.client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri("EmployeeDB", "EmployeeCollection"), employee2)
+End Sub
 
 ````
 
@@ -129,6 +174,16 @@ private void radButtonLoad_Click(object sender, EventArgs e)
 }
 
 ```` 
+```` VB.NET
+Private Sub radButtonLoad_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim queryOptions As FeedOptions = New FeedOptions With {.MaxItemCount = -1}
+
+    Dim query As IQueryable(Of Employee) = Me.client.CreateDocumentQuery(Of Employee)(UriFactory.CreateDocumentCollectionUri("EmployeeDB", "EmployeeCollection"), queryOptions)
+
+    radGridView1.DataSource = query.ToList()
+End Sub
+````
+
 Now you can see the data in the grid:
 
 ![azure-cosmosdb006](images/azure-cosmosdb006.png)
@@ -147,6 +202,15 @@ private void RadGridView1_RowsChanged(object sender, Telerik.WinControls.UI.Grid
         this.client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri("EmployeeDB", "EmployeeCollection", employee.Id), employee);
     }
 }
+````
+```` VB.NET
+Private Sub RadGridView1_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
+    If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
+        Dim item = TryCast(e.NewItems(0), GridViewDataRowInfo)
+        Dim employee = TryCast(item.DataBoundItem, Employee)
+        Me.client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri("EmployeeDB", "EmployeeCollection", employee.Id), employee)
+    End If
+End Sub
 ````
 
 Now the changes made in the grid will be automatically reflected in the database.

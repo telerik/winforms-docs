@@ -15,7 +15,7 @@ This article will guide you through the process of integrating Azure's [Computer
 
 ## Step 1: Create a Computer Vision API Account
 
-Before creating the application, you need to create a new Computer Vision API account through the Azure portal. This is explained in great detail [here]](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account).
+Before creating the application, you need to create a new Computer Vision API account through the Azure portal. This is explained in great detail [here](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account).
 
 ![](images/azure-cognitive-services-image-analysis001.png)
 
@@ -137,6 +137,8 @@ private async void radButtonUpload_Click(object sender, EventArgs e)
 That is all, you are ready to start and test the application.
 
 ![](images/azure-cognitive-services-image-analysis003.png)
+
+# See Also
 
 * [Cosmos DB]({%slug cloud-services/azure/cosmosdb%})
 * [SQL Database]({%slug cloud-services/azure/sql-database%})

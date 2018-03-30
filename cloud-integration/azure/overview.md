@@ -20,14 +20,13 @@ You can create a free account and take advantage of a number of free services su
 Here are the currently available topics:
 
 * [Getting Started]({%slug cloud-services/azure/getting-started%})
+* [Blob Storage]({%slug cloud-services/azure/blob-storage%})
 
 * Connect to Data in the Cloud
 
      * [Cosmos DB]({%slug cloud-services/azure/cosmosdb%})
 
      * [SQL Database]({%slug cloud-services/azure/sql-database%})
-
-* [Blob Storage]({%slug cloud-services/azure/blob-storage%})
 
 * Cognitive Services
 
