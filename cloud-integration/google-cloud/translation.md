@@ -56,5 +56,3 @@ Here is the result of the operation:
 ## See Also
 
 - [Google Cloud Overview]({%slug common-google-cloud-overview%})
-- [Google Cloud Functions]({%slug common-google-cloud-functions%})
-- [Google Cloud MySQL DataBase]({%slug common-google-cloud-mysql%})

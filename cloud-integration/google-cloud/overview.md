@@ -25,6 +25,4 @@ You can find out more detailed information by navigating to the desired service 
 
 ## See Also
 
-- [Google Cloud Functions]({%slug common-google-cloud-functions%})
 - [Google Cloud Translation API]({%slug common-google-cloud-translation%})
-- [Google Cloud MySQL DataBase]({%slug common-google-cloud-mysql%})
