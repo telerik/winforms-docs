@@ -5,7 +5,7 @@ slug: common-google-cloud-datastore-nosql
 position: 4
 ---
 
-# Google Cloud Datastore(NoSQL database)
+# Google Cloud Datastore (NoSQL database)
 
 Cloud Datastore is a highly-scalable NoSQL database which Google promotes for scenarios that require high-availability and durability, and is capable of multiple features such as ACID transactions, SQL-like queries, indexes and many more. This in combination with the characteristic for the NoSQL database solutions of being able to handle different data types, great scalability and the great performance makes it a choice you should have in mind when considering the architecture of your application. 
 
@@ -45,7 +45,7 @@ public RadForm1()
 }
 ````
 
->important This would not work if you have not added the GOOGLE_APPLICATION_CREDENTIALS environment variable. This variable should point to your JSON credential file.   
+>important This would not work if you have not added the __GOOGLE_APPLICATION_CREDENTIALS__ environment variable. This variable should point to your JSON credential file.   
 
 As a first step, you need to create the business object. Here is an example: 
 
@@ -61,7 +61,7 @@ public class Book
 
 ````
 
-Now you you can use the above object to store the data from the database. the following code shows how you can retrieve the data:
+Now you you can use the above object to store the data from the database. The following code shows how you can retrieve the data:
 
 ````C#
 private void radButtonLoad_Click(object sender, EventArgs e)
@@ -89,11 +89,11 @@ public List<Book> GetBooks()
 
 ````
 
-Now you can view the data in your application
+Now you can view the data in your application:
 
 ![](images/google_cloud_nosql004.png)
 
-## Step 5: ## Update the database.
+## Step 5: Update the database.
 
 A proper place to handle and save any changes is the RpwsChanged event. This way you will be able to handle the add, remove and edit operations. The main part is that you need to keep the key of the entity object in order to get the existing items from the database.  
 

@@ -16,39 +16,19 @@ Google Cloud Storage allows world-wide storage and retrieval of any amount of da
 
 For the purposes of this article, you will have to enable the Google Cloud Storage API and Google Cloud Storage JSON API. Please read the [Getting Started]({%slug cloud-integration-google-getting-started%}) for more information on how you can achieve that.
 
-## Step 1: Create the WPF Application
+## Step 1: Create the  WinForms Application
 
-Create a standard WPF application and add 3 [RadButtons]({%slug radbuttons-getting-started%}) and a [RadListBox]({%slug radlistbox-getting-started%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file in the RadListBox.
+Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) application and add 3 [RadButtons]({%slug winforms/buttons/button%}) and a [RadListView]({%slug winforms/listview%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file in the RadListBox.
 
-#### __[XAML] Example 1: Defining the view__
-{{region xaml-cloud-integration-google-cloud-storage-0}}
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250" />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
+The layout should look like this. 
 
-        <telerik:RadListBox x:Name="radListBox" ItemsSource="{Binding FileNames}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}" />
-
-        <Grid Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-
-            <telerik:RadButton Command="{Binding ListItemsCommand}"  Content="List Items"/>
-            <telerik:RadButton Command="{Binding UploadItemCommand}" Content="Upload Item" Grid.Row="1"/>
-            <telerik:RadButton Command="{Binding DeleteItemCommand}" Content="Delete item" Grid.Row="2"/>
-        </Grid>
-    </Grid>
-{{endregion}}
+![Google Cloud Storage Upload](images/google-cloud-storage001.png)
 
 ## Step 2: Install the NuGet package
 
 Open the NuGet Package Manager and install the **Google.Cloud.Storage.V1** package.
 
-![Google Cloud Storage Nuget](images/google-cloud-storage-nuget.png)
+![Google Cloud Storage Nuget](images/google-cloud-storage002.png)
 
 ## Step 3: Define the ViewModel
 

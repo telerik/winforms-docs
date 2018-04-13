@@ -27,7 +27,7 @@ Once you have done so, you can add the **Google.Cloud.Translation.V2 NuGet** pac
 
 Once you have all the required packages installed, you can use it within your application by utilizing the **TranslationClient** class.
 
-## Using the Translation API 
+## Step 3: Using the Translation API 
 
 The typed message will be translated on a click of a RadButton. The following snippet shows how to access the translation API and translate the specific text:
 
