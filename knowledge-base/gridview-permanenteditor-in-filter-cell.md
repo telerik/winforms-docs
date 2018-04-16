@@ -392,6 +392,13 @@ End Sub
 
 {{endregion}}
 
+>note A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/PermanentDropDownListEditorInFilterCell).
+
+# See Also
+
+ * [Custom cells]({%slug winforms/gridview/cells/creating-custom-cells%})
+ * [Setting Filters Programmatically (simple descriptors)]({%slug winforms/gridview/filtering/setting-filters-programmatically-(simple-descriptors)%})
+
 
 
 
