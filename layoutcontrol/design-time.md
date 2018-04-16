@@ -13,6 +13,8 @@ previous_url: layoutcontrol-design-time
 
 This article describes what the user can do with __RadLayoutControl__ at design time.
 
+>important Copying and Pasting of an entire layout control, with added items in it, is not supported in the Visual Studio designer.
+
 ## Smart Tag
 
 The smart tag allows you to open the layout editor, change the theme and open the on-line resources. You can dock the control in its parent container as well. The following section describes the layout editor.

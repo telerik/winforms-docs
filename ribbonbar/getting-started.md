@@ -24,6 +24,8 @@ This section will help you in creating your first Telerik __RadRibbonBar__ with 
 > 
 > ![ribbonbar-getting-started 013](images/ribbonbar-getting-started013.png)
 
+>important Copying/Cutting and Pasting of [tabs](#adding-tabs), [groups](#adding-groups), and [elements](#adding-elements) are not supported in the Visual Studio designer.
+
 ## Adding Tabs
 
 1. Click __Add New Tab...__
@@ -56,7 +58,7 @@ This section will help you in creating your first Telerik __RadRibbonBar__ with 
 ![ribbonbar-getting-started 009](images/ribbonbar-getting-started009.png)
 
 Having done that a __RadButtonElement__ is added to the *button group* that you have just created in the previous steps.
-![ribbonbar-getting-started 010](images/ribbonbar-getting-started010.png)
+![ribbonbar-getting-started 010](images/ribbonbar-getting-started010.png)  
 
 ## Formatting a Button
 
