@@ -37,7 +37,7 @@ The image below demonstrates the end result utilizing the custom pin.
 
 The **MapPin** object will be extended with a new Image property. The actual rendering of the image will happen in the virtual Paint method, preserving the default implementation if no image is specified for a particular pin.
 
-1\. Inherit the MapPin class and add a new Image property to it.
+1\. Inherit the **MapPin** class and add a new Image property to it.
 * Override the **Paint** method and use the Graphics.DrawImage method.
 * Override the **ViewPortChanged** and **HitTest** methods so that the pin`s location is validated. This way we will ensure that the pin is inside the visible portion of the map when the image will be painted.
 

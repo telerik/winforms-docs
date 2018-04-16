@@ -89,6 +89,10 @@ public class EnglishDataFilterLocalizationProvider : Telerik.WinControls.UI.Data
                 return "Less than or equal to";
             case DataFilterStringId.FilterFunctionNoFilter:
                 return "No filter";
+            case DataFilterStringId.FilterFunctionIsContainedIn:
+                return "Is in list";
+            case DataFilterStringId.FilterFunctionIsNotContainedIn:
+                return "Not in list";
             case DataFilterStringId.FilterFunctionNotBetween:
                 return "Not between";
             case DataFilterStringId.FilterFunctionNotEqualTo:
@@ -163,6 +167,10 @@ Inherits Telerik.WinControls.UI.DataFilterLocalizationProvider
                 Return "Less than or equal to"
             Case DataFilterStringId.FilterFunctionNoFilter
                 Return "No filter"
+            Case DataFilterStringId.FilterFunctionIsContainedIn
+                Return "Is in list"
+            Case DataFilterStringId.FilterFunctionIsNotContainedIn
+                Return "Not in list"
             Case DataFilterStringId.FilterFunctionNotBetween
                 Return "Not between"
             Case DataFilterStringId.FilterFunctionNotEqualTo
