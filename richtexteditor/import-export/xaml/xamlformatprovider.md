@@ -33,10 +33,9 @@ using (Stream stream = File.OpenRead(@"..\..\RichTextEditor\ImportExport\Sample.
 
 ````
 ````VB.NET
-Dim provider As XamlFormatProvider = New XamlFormatProvider()
-Using output As FileStream = File.OpenWrite("Sample.xaml")
-    Dim document As RadDocument = Me.radRichTextEditor1.Document
-    provider.Export(document, output)
+Dim xamlformatProvider As XamlFormatProvider = New XamlFormatProvider()
+Using inputStream As FileStream = File.OpenRead("..\..\RichTextEditor\ImportExport\Sample.xml")
+    Me.radRichTextEditor1.Document = xamlformatProvider.Import(inputStream)
 End Using
 
 ````
@@ -64,9 +63,10 @@ using (FileStream output = File.OpenWrite("Sample.xaml"))
 
 ````
 ````VB.NET
-Dim xamlformatProvider As XamlFormatProvider = New XamlFormatProvider()
-Using inputStream As FileStream = File.OpenRead("..\..\RichTextEditor\ImportExport\Sample.xml")
-    Me.radRichTextEditor1.Document = xamlformatProvider.Import(inputStream)
+Dim provider As XamlFormatProvider = New XamlFormatProvider()
+Using output As FileStream = File.OpenWrite("Sample.xaml")
+    Dim document As RadDocument = Me.radRichTextEditor1.Document
+    provider.Export(document, output)
 End Using
 
 ````
