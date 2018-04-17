@@ -5,7 +5,7 @@ description: Getting Started
 slug: cloud-integration-google-getting-started
 tags: cloud,integration,google,getting,started
 published: True
-position: 2
+position: 1
 ---
 
 # Getting Started
@@ -30,5 +30,6 @@ In order to access all of the provided APIs, first you have to enable them from 
 
 ## See Also
 
-* [Cloud Storage]({%slug common-google-cloud-storage%})
+* [Datastore]({%slug common-google-cloud-datastore-nosql%})
+* [Storage]({%slug common-google-cloud-storage%})
 * [Translation]({%slug common-google-cloud-translation%})

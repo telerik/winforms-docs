@@ -1,11 +1,11 @@
 ---
-title: Google Cloud Datastore(NoSQL database)
-page_title: Google Cloud Datastore(NoSQL database)
+title: Datastore(NoSQL database)
+page_title: Datastore(NoSQL database)
 slug: common-google-cloud-datastore-nosql
-position: 4
+position: 2
 ---
 
-# Google Cloud Datastore (NoSQL database)
+# Datastore (NoSQL database)
 
 Cloud Datastore is a highly-scalable NoSQL database which Google promotes for scenarios that require high-availability and durability, and is capable of multiple features such as ACID transactions, SQL-like queries, indexes and many more. This in combination with the characteristic for the NoSQL database solutions of being able to handle different data types, great scalability and the great performance makes it a choice you should have in mind when considering the architecture of your application. 
 
@@ -44,6 +44,17 @@ public RadForm1()
     db = DatastoreDb.Create(projectId);
 }
 ````
+````VB.NET
+Private db As DatastoreDb
+
+Public Sub New()
+    InitializeComponent()
+
+    Dim projectId As String = "natural-oxygen-200712"
+    db = DatastoreDb.Create(projectId)
+End Sub
+
+````
 
 >important This would not work if you have not added the __GOOGLE_APPLICATION_CREDENTIALS__ environment variable. This variable should point to your JSON credential file.   
 
@@ -60,7 +71,15 @@ public class Book
 }
 
 ````
+````VB.NET
+Public Class Book
+    Public Property Key() As Key
+    Public Property Name() As String
+    Public Property Author() As String
+    Public Property Published() As Date
 
+End Class
+````
 Now you you can use the above object to store the data from the database. The following code shows how you can retrieve the data:
 
 ````C#
@@ -88,7 +107,27 @@ public List<Book> GetBooks()
 }
 
 ````
+````VB.NET
+Private Sub radButtonLoad_Click(ByVal sender As Object, ByVal e As EventArgs)
+    radGridView1.DataSource = GetBooks()
+End Sub
+Public Function GetBooks() As List(Of Book)
+    Dim books As New List(Of Book)()
+    Dim query As New Query("Books")
 
+    Dim tasks As DatastoreQueryResults = db.RunQuery(query)
+
+    For Each entity In tasks.Entities
+        Dim book As New Book()
+        book.Author = CStr(entity("Author"))
+        book.Name = CStr(entity("Name"))
+        book.Published = CDate(entity("Published"))
+        book.Key = entity.Key
+        books.Add(book)
+    Next entity
+    Return books
+End Function
+````
 Now you can view the data in your application:
 
 ![](images/google_cloud_nosql004.png)
@@ -150,10 +189,53 @@ private void RadGridView1_RowsChanged(object sender, Telerik.WinControls.UI.Grid
 }
 
 ````
+````VB.NET
+Private Sub RadGridView1_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
+    If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Add Then
+        Dim newBook As Book = TryCast(CType(e.NewItems(0), GridViewDataRowInfo).DataBoundItem, Book)
 
+        Dim kind As String = "Books"
+        Dim name As String = "samplebook1"
+        Dim keyFactory As KeyFactory = db.CreateKeyFactory(kind)
+        Dim key As Key = keyFactory.CreateKey(name)
+
+        Dim item = New Entity With {
+            .Key = key,
+            ("Author") = newBook.Author,
+            ("Published") = newBook.Published.ToUniversalTime(),
+            ("Name") = newBook.Name
+        }
+        Using transaction As DatastoreTransaction = db.BeginTransaction()
+            transaction.Upsert(item)
+            transaction.Commit()
+        End Using
+    ElseIf e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
+        Dim query As New Query("Books")
+
+        Dim tasks As DatastoreQueryResults = db.RunQuery(query)
+        Dim book = TryCast(CType(e.NewItems(0), GridViewDataRowInfo).DataBoundItem, Book)
+
+        Dim itemToDelete As Entity = db.Lookup(book.Key)
+
+        If itemToDelete IsNot Nothing Then
+            db.Delete(itemToDelete)
+        End If
+    ElseIf e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
+        Dim book = TryCast(CType(e.NewItems(0), GridViewDataRowInfo).DataBoundItem, Book)
+        Dim editedItem As Entity = db.Lookup(book.Key)
+
+        editedItem("Author") = book.Author
+        editedItem("Published") = book.Published.ToUniversalTime()
+        editedItem("Name") = book.Name
+        db.Update(editedItem)
+    End If
+End Sub
+````
  
 
 ## See Also
 
-- [Google Cloud Overview]({%slug common-google-cloud-overview%})
-- [Google Cloud Translation API]({%slug common-google-cloud-translation%})
+* [Getting Started]({%slug cloud-integration-google-getting-started%})
+* [Storage]({%slug common-google-cloud-storage%})
+* [Translation]({%slug common-google-cloud-translation%})
+ 

@@ -1,14 +1,14 @@
 ---
-title: Cloud Storage
-page_title: Cloud Storage
-description: Cloud Storage
+title: Storage
+page_title: Storage
+description: Storage
 slug:  common-google-cloud-storage
 tags: cloud,integration,google,storage
 published: True
 position: 3
 ---
 
-# Cloud Storage
+# Storage
 
 Google Cloud Storage allows world-wide storage and retrieval of any amount of data at any time. It can be used for a range of scenarios including serving website content, storing data for archival and disaster recovery, or distributing large data objects to users via direct download.
 
@@ -30,298 +30,116 @@ Open the NuGet Package Manager and install the **Google.Cloud.Storage.V1** packa
 
 ![Google Cloud Storage Nuget](images/google-cloud-storage002.png)
 
-## Step 3: Define the ViewModel
+## Step 3: Connect the Application to the Storage
 
-The next step is to create the ViewModel. It will need an [StorageClient](https://googlecloudplatform.github.io/google-cloud-dotnet/docs/Google.Cloud.Storage.V1/api/Google.Cloud.Storage.V1.StorageClient.html) object which will be used for uploading, deleting and listing files. We also need to implement all of the commands that the RadButtons are bound to.
+The next step is to create the [StorageClient](https://googlecloudplatform.github.io/google-cloud-dotnet/docs/Google.Cloud.Storage.V1/api/Google.Cloud.Storage.V1.StorageClient.html) object which will be used for uploading, deleting and listing files. You also need to implement all of the commands that the RadButtons are bound to.
 
-#### __[C#] Example 2: Defining the ViewModel __
+````C#
+private StorageClient storageClient;
 
-{{region cs-cloud-integration-google-cloud-storage-1}}
-    public class ViewModel
+private const string BucketName =  "telerik-bucket";
+
+public RadForm1()
+{
+    InitializeComponent();
+    this.storageClient = StorageClient.Create();
+}
+
+````
+````VB.NET
+Private storageClient As StorageClient
+
+Private Const BucketName As String = "telerik-bucket"
+
+Public Sub New()
+    InitializeComponent()
+    Me.storageClient = StorageClient.Create()
+End Sub
+
+````
+
+>note In order this to work you need to add the __GOOGLE_APPLICATION_CREDENTIALS__ environment variable. It must point to the JSSON file that contains the license information. This file is can be obtained by creating a [service account](https://cloud.google.com/docs/authentication/). 
+
+Now you can use the above object to mange the files. Here is how you can handle the buttons Click events and perform the respective operations:
+
+````C#
+private void radButtonListFiles_Click(object sender, EventArgs e)
+{
+    var items = storageClient.ListObjects(BucketName);
+
+    this.radListView1.Items.Clear();
+
+    foreach (Google.Apis.Storage.v1.Data.Object item in items)
     {
-        private StorageClient storageClient;
-
-        private const string ProjectId = "myprojectId";
-        private const string BucketName = ProjectId + "-test-bucket";
-
-        private object selectedItem;
-        private ObservableCollection<string> fileNames;
-        private IFileDialogService fileDialogService;
-
-        public ViewModel(IFileDialogService fileDialogService)
-        {
-            this.storageClient = StorageClient.Create();
-            storageClient.CreateBucket(ProjectId, BucketName);
-
-            this.fileNames = new ObservableCollection<string>();
-            this.ListItemsCommand = new DelegateCommand(OnListItems);
-            this.UploadItemCommand = new DelegateCommand(OnUploadItem);
-            this.DeleteItemCommand = new DelegateCommand(OnDeleteItem);
-            this.fileDialogService = fileDialogService;
-        }
-
-        public object SelectedItem
-        {
-            get { return this.selectedItem; }
-            set { this.selectedItem = value; }
-        }
-
-        public ObservableCollection<string> FileNames
-        {
-            get { return this.fileNames; }
-            set { this.fileNames = value; }
-        }
-
-        private ICommand listItemsCommand;
-
-        public ICommand ListItemsCommand
-        {
-            get { return this.listItemsCommand; }
-            set { this.listItemsCommand = value; }
-        }
-
-        private ICommand deleteItemCommand;
-
-        public ICommand DeleteItemCommand
-        {
-            get { return this.deleteItemCommand; }
-            set { this.deleteItemCommand = value; }
-        }
-
-        private ICommand uploadItemCommand;
-
-        public ICommand UploadItemCommand
-        {
-            get { return this.uploadItemCommand; }
-            set { this.uploadItemCommand = value; }
-        }
-
-        private void OnDeleteItem(object obj)
-        {
-            if (this.SelectedItem == null)
-            {
-                MessageBox.Show("Please select an Item");
-                return;
-            }
-
-            storageClient.DeleteObject(BucketName, this.SelectedItem.ToString());
-        }
-
-        private void OnUploadItem(object obj)
-        {
-            var fileName = fileDialogService.OpenFileDialog();
-
-            Stream fileStream = File.OpenRead(fileName);
-            
-            var test = storageClient.UploadObject(BucketName, fileName, null, fileStream);
-        }
-
-        private void OnListItems(object obj)
-        {
-            var items = storageClient.ListObjects(BucketName);
-
-            this.FileNames.Clear();
-
-            foreach (Google.Apis.Storage.v1.Data.Object item in items)
-            {
-                this.FileNames.Add(item.Name);
-            }
-        }
+        this.radListView1.Items.Add(item.Name);
     }
-{{endregion}}
+}
 
-#### __[VB.NET] Example 2: Defining the ViewModel__
-{{region vb-cloud-integration-google-cloud-storage-2}}
-    Public Class ViewModel
-        Private storageClient As StorageClient
-
-        Private Const ProjectId As String = "myprojectId"
-        Private Const BucketName As String = ProjectId & "-test-bucket"
-
-
-        Private _selectedItem As Object
-        Private _fileNames As ObservableCollection(Of String)
-        Private fileDialogService As IFileDialogService
-
-        Public Sub New(ByVal fileDialogService As IFileDialogService)
-            Me.storageClient = StorageClient.Create()
-            storageClient.CreateBucket(ProjectId, BucketName)
-
-            Me._fileNames = New ObservableCollection(Of String)()
-            Me.ListItemsCommand = New DelegateCommand(AddressOf OnListItems)
-            Me.UploadItemCommand = New DelegateCommand(AddressOf OnUploadItem)
-            Me.DeleteItemCommand = New DelegateCommand(AddressOf OnDeleteItem)
-            Me.fileDialogService = fileDialogService
-        End Sub
-
-        Public Property SelectedItem() As Object
-            Get
-                Return Me._selectedItem
-            End Get
-            Set(ByVal value As Object)
-                Me._selectedItem = value
-            End Set
-        End Property
-
-        Public Property FileNames() As ObservableCollection(Of String)
-            Get
-                Return Me._fileNames
-            End Get
-            Set(ByVal value As ObservableCollection(Of String))
-                Me._fileNames = value
-            End Set
-        End Property
-
-
-        Private _listItemsCommand As ICommand
-
-        Public Property ListItemsCommand() As ICommand
-            Get
-                Return Me._listItemsCommand
-            End Get
-            Set(ByVal value As ICommand)
-                Me._listItemsCommand = value
-            End Set
-        End Property
-
-
-        Private _deleteItemCommand As ICommand
-
-        Public Property DeleteItemCommand() As ICommand
-            Get
-                Return Me._deleteItemCommand
-            End Get
-            Set(ByVal value As ICommand)
-                Me._deleteItemCommand = value
-            End Set
-        End Property
-
-
-        Private _uploadItemCommand As ICommand
-
-        Public Property UploadItemCommand() As ICommand
-            Get
-                Return Me._uploadItemCommand
-            End Get
-            Set(ByVal value As ICommand)
-                Me._uploadItemCommand = value
-            End Set
-        End Property
-
-        Private Sub OnDeleteItem(ByVal obj As Object)
-            If Me.SelectedItem Is Nothing Then
-                MessageBox.Show("Please select an Item")
-                Return
-            End If
-
-            storageClient.DeleteObject(BucketName, Me.SelectedItem.ToString())
-        End Sub
-
-        Private Sub OnUploadItem(ByVal obj As Object)
-            Dim fileName = fileDialogService.OpenFileDialog()
-
-            Dim fileStream As Stream = File.OpenRead(fileName)
-
-            Dim test = storageClient.UploadObject(BucketName, fileName, Nothing, fileStream)
-        End Sub
-
-        Private Sub OnListItems(ByVal obj As Object)
-            Dim items = storageClient.ListObjects(BucketName)
-
-            Me.FileNames.Clear()
-
-            For Each item As Google.Apis.Storage.v1.Data.Object In items
-                Me.FileNames.Add(item.Name)
-            Next item
-        End Sub
-    End Class
-{{endregion}}
-
-> In order to locate your project id, please read the [Locate the project ID](https://support.google.com/cloud/answer/6158840?hl=en) help article.
-
-## Step 4: Define the OpenFileDialogService
-
-The only thing left is to define the interface through which we are opening the [RadOpenFileDialog]({%slug radfiledialogs-radopenfiledialog%}). We also need to define the implementation of that interface which will simply open a RadOpenFileDialog and return the path of the opened file.
-
-#### __[C#] Example 3: Defining the OpenFileDialogService and IFileDialogService__
-
-{{region cs-cloud-integration-google-getting-started-3}}
-    public interface IFileDialogService
+private void radButtonUpload_Click(object sender, EventArgs e)
+{
+    OpenFileDialog dlg = new OpenFileDialog();
+    if (dlg.ShowDialog() == DialogResult.OK)
     {
-        string OpenFileDialog();
+        var fileName = Path.GetFileName(dlg.FileName);
+
+        Stream fileStream = File.OpenRead(dlg.FileName);
+
+        var test = storageClient.UploadObject(BucketName, fileName, null, fileStream);
+        this.radListView1.Items.Add(fileName);
     }
 
-    public class OpenFileDialogService : IFileDialogService
-    {
-        public string OpenFileDialog()
-        {
-            RadOpenFileDialog choosefiledialog = new RadOpenFileDialog();
-            choosefiledialog.Filter = "All Files (*.*)|*.*";
-            choosefiledialog.FilterIndex = 1;
-            choosefiledialog.Multiselect = false;
-            choosefiledialog.ShowDialog();
+}
 
-            if (choosefiledialog.DialogResult == true)
-            {
-                return choosefiledialog.FileName;
-            }
+private void radButtonDelete_Click(object sender, EventArgs e)
+{
+    var item = this.radListView1.SelectedItem.Text;
+    storageClient.DeleteObject(BucketName, item);
 
-            return string.Empty;
-        }
-    }
-{{endregion}}
+    radListView1.Items.Remove(radListView1.SelectedItem);
+}
 
-#### __[VB.NET] Example 3: Defining the OpenFileDialogService and FileDialogService__
+````
+````VB.NET
 
-{{region cs-cloud-integration-google-getting-started-4}}
-    Interface IFileDialogService
-        Function OpenFileDialog() As String
-    End Interface
+Private Sub radButtonListFiles_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim items = storageClient.ListObjects(BucketName)
 
-    Public Class OpenFileDialogService
-    Inherits IFileDialogService
+    Me.radListView1.Items.Clear()
 
-        Public Function OpenFileDialog() As String
-            Dim choosefiledialog As RadOpenFileDialog = New RadOpenFileDialog()
-            choosefiledialog.Filter = "All Files (*.*)|*.*"
-            choosefiledialog.FilterIndex = 1
-            choosefiledialog.Multiselect = False
-            choosefiledialog.ShowDialog()
-            If choosefiledialog.DialogResult = True Then
-                Return choosefiledialog.FileName
-            End If
+    For Each item As Google.Apis.Storage.v1.Data.Object In items
+        Me.radListView1.Items.Add(item.Name)
+    Next item
+End Sub
 
-            Return String.Empty
-        End Function
-    End Class
-{{endregion}}
+Private Sub radButtonUpload_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim dlg As New OpenFileDialog()
+    If dlg.ShowDialog() = DialogResult.OK Then
+        Dim fileName = Path.GetFileName(dlg.FileName)
 
-All that is left is to set the DataContext to our ViewModel and pass an instance of the OpenFileDialogService.
+        Dim fileStream As Stream = File.OpenRead(dlg.FileName)
 
-#### __[C#] Example 4: Set the DataContext__
+        Dim test = storageClient.UploadObject(BucketName, fileName, Nothing, fileStream)
+        Me.radListView1.Items.Add(fileName)
+    End If
 
-{{region cs-cloud-integration-google-getting-started-5}}
-    public MainWindow()
-    {
-        InitializeComponent();
-            
-        this.DataContext = new ViewModel(new OpenFileDialogService());
-    }
-{{endregion}}
+End Sub
 
-#### __[VB.NET] Example 4: Set the DataContext__
+Private Sub radButtonDelete_Click(ByVal sender As Object, ByVal e As EventArgs)
+    Dim item = Me.radListView1.SelectedItem.Text
+    storageClient.DeleteObject(BucketName, item)
 
-{{region vb-cloud-integration-google-getting-started-6}}
-    Public Sub New()
-        InitializeComponent()
+    radListView1.Items.Remove(radListView1.SelectedItem)
+End Sub
 
-        Me.DataContext = New ViewModel(New OpenFileDialogService())
-    End Sub
-{{endregion}}
+````
 
-#### Figure 1: Example after uploading a file and listing it in the Office2016 theme
+Now you are ready to start using the application:
 
-![Google Cloud Storage Upload](images/google-cloud-storage-listitems.png)
+![Google Cloud Storage Upload](images/google-cloud-storage003.png)
 
 
 ## See Also
+
+* [Getting Started]({%slug cloud-integration-google-getting-started%})
+* [Datastore]({%slug common-google-cloud-datastore-nosql%})
+* [Translation]({%slug common-google-cloud-translation%})

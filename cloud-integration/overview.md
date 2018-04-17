@@ -32,17 +32,15 @@ This section shows how one can use various cloud services like GoogleCloud, AWS,
 
 * Google Cloud
 
-    * Overview
+    * [Getting Started]({%slug cloud-integration-google-getting-started%})
 
     * Connect to data in the cloud
+ 
+        - [Datastore]({%slug common-google-cloud-datastore-nosql%})
 
-        * Cloud SQL
+    * [Storage]({%slug common-google-cloud-storage%})
 
-        * Cloud DataStore
-
-    * Storage
-
-    * Cognitive services 
+    * [Translation]({%slug common-google-cloud-translation%})
 
 * AWS
 

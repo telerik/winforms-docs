@@ -1,11 +1,11 @@
 ---
-title: Google Cloud Translation API
-page_title: Google Cloud Translation API
+title: Translation API
+page_title: Translation API
 slug: common-google-cloud-translation
 position: 4
 ---
 
-# Google Cloud Cognitive Services
+# Cognitive Services
 
 Cognitive computing or cognitive services are platforms that are powered by artificial intelligence and signal processing. These services provide you with the possibility to directly use different scientific breakthroughs such as machine learning, natural language processing and speech/vision recognition. 
 
@@ -46,6 +46,20 @@ private async void TranslateMessage(object sender, EventArgs e)
     }
 }
 ````
+````VB.NET
+Private Async Sub TranslateMessage(ByVal sender As Object, ByVal e As EventArgs)
+    Dim textToTranslate As String = Me.inputEntry.Text
+
+    If Not String.IsNullOrEmpty(textToTranslate) Then
+        'authJson represents the unique json issue by Google Cloud used for authentication
+        Dim credentials = GoogleCredential.FromJson(authJson)
+        Dim client As TranslationClient = TranslationClient.Create(credentials)
+        Dim response = TryCast(client.TranslateText(textToTranslate, "ru"), TranslationResult)
+        Me.outputLabel.Text = response.TranslatedText
+    End If
+End Sub
+
+````
 
 >note The example shows how to create the TranslationClient by feeding it with your credentials. However, you can also set up the authentication on your machine and there will be no need of such steps. You can refer to Google's [Authentication Overview](https://cloud.google.com/docs/authentication/) section.
 
@@ -55,4 +69,6 @@ Here is the result of the operation:
 
 ## See Also
 
-- [Google Cloud Overview]({%slug common-google-cloud-overview%})
+* [Getting Started]({%slug cloud-integration-google-getting-started%})
+* [Datastore]({%slug common-google-cloud-datastore-nosql%})
+* [Storage]({%slug common-google-cloud-storage%})
