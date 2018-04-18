@@ -5,7 +5,7 @@ type: how-to
 page_title: How to snap tasks to full day, while resizing or dragging in RadGanttView
 slug: snapping-per-day-in-radganttview
 position: 4
-tags: radmap, pins
+tags: ganttview, snap, timeline
 ticketid: 114688, 847905, 1150789, 1106468
 res_type: kb
 ---
@@ -30,7 +30,7 @@ res_type: kb
 
 ## Solution
 
-The image below demonstrates the end result with the snapping tasks.
+The animation below demonstrates the end result with the snapping tasks.
 
 >caption Figure 1: Snapping Task Element
 ![ganttview-timeline-snapping 001](images/ganttview-timeline-snapping001.gif)
