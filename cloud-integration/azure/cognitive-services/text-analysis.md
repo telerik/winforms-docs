@@ -11,7 +11,7 @@ position: 5
 
 # Text Analysis
 
-This article will guide you through the process of integrating Azure's [Text Analytics API](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) with the controls from the Telerik UI for WinForm suite.  
+This article will guide you through the process of integrating Azure's [Text Analytics API](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) with the controls from the Telerik UI for WinForms suite.  
 
 ## Step 1: Create a Text Analytics API Account
 
@@ -39,7 +39,7 @@ You can now add the **Microsoft.Azure.CognitiveServices.Language** NuGet package
 
 ## Step 4: Use the Text Analytics API
 
-The following code demonstrates how to handle the button's **Click** event and use the Text Analytics API to analyze the text input in the RadWatermarkBox.
+The following code demonstrates how to handle the button's **Click** event and use the Text Analytics API to analyze the text input in the RadTextBox.
 
 
 ````C#

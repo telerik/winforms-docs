@@ -116,4 +116,5 @@ After the addresses are added you are ready to test your application.
 # See Also
 
 * [DynamoDB]({%slug cloud-services/aws/dynamodb%})
-* [Relational Database Service]({%slug cloud-services/aws/rds%}) 
+* [Relational Database Service]({%slug cloud-services/aws/rds%})
+* [Storage]({%slug cloud-services/aws/storage%}) 

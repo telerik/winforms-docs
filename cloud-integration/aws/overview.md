@@ -16,8 +16,6 @@ Amazon Web Services is a cloud platform that provides a wide range of cloud serv
 
 Here are the currently available topics:
 
-+ [Overview]({%slug cloud-services/aws/overview%})
-
 + [Getting Started]({%slug cloud-services/aws/getting-started%})
 
 + Connect to data in the cloud

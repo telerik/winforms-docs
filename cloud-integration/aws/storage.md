@@ -175,6 +175,7 @@ That is all, now you are ready to start using the application.
 
 * [DynamoDB]({%slug cloud-services/aws/dynamodb%})
 * [Relational Database Service]({%slug cloud-services/aws/rds%})
+* [Simple Email Service]({%slug cloud-services/aws/ses%})
 
 
 

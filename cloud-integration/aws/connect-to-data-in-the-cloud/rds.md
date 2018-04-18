@@ -28,7 +28,7 @@ On the next screen choose any options you want. For this example we are using th
 
 ![aws-rds004](images/aws-rds004.png)
 
-Click next and choose any options. Then click __Launch DB Instance__ and wait until the database is created. Detailed information is available [here](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.SQLServer.html).
+Click next and choose any options. Then click __Launch DB Instance__ and wait until the database is created. More information can be found [here](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.SQLServer.html).
 
 
 At this point you are ready to connect to the instance using Microsoft SQL Server Management Studio. Detailed information is available [here](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToMicrosoftSQLServerInstance.html). 

@@ -10,7 +10,7 @@ position: 0
 
 # Dynamo DB
 
-This article will show you to create a WinForms application and access data stored in a DynamoDB table. It shows how you can connect to the **AWS DynamoDB** service from a blank WinForms project as well. 
+This article will show you how to create a WinForms application and access data stored in a DynamoDB table. It shows how you can connect to the **AWS DynamoDB** service from a blank WinForms project as well. 
 
 Please note that you can use the local version of DynamoDB to setup and test your application. This article shows a real example.  
 
@@ -44,7 +44,7 @@ In addition you need to add the following to your App.config file:
 
 ````
 
->note If you do not have a AWS account in Visual Studio please check the[Getting Started]({%slug  cloud-services/aws/getting-started%}) article.
+>note If you do not have a AWS account in Visual Studio please check the [Getting Started]({%slug cloud-services/aws/getting-started%}) article.
 
 ## Step 3: Create the AWS manager class
 
@@ -174,7 +174,7 @@ End Class
 ````
 
 
-Now when the table is ready you can add some data, add the following method to the **AWS_Manager** class
+Now when the table is ready you can add some data, add the following method to the **AWS_Manager** class:
 
 ````C#
 public void AddData()
@@ -226,11 +226,9 @@ If you run the code at this point you will be able to see the data in your AWS c
 
 ![aws-dynamo-db003](images/aws-dynamo-db003.png)
 
-## Step: 4
+## Step 4: Get the Data from DynamoDb
 
-Now you are ready to populate the grid with the data. Although you ca directly populate the grid from the data I believe that is better to have a local business object to store data. 
-
-### Get the Data from DynamoDb
+Now you are ready to populate the grid with the data. Although you can directly populate the grid from the data I believe that is better to have a local business object to store the data.
 
 First you need to get the data. The following method will return a  `List<Document>`, each document represents an entry from the database.
 
@@ -276,7 +274,7 @@ Public Function GetData() As List(Of Document)
 End Function
 ````
 
-We can use the above method to iterated the documents and get the data. Here is the code along with the business object.
+We can use the above method to iterate the documents and get the data. Here is the code along with the business object.
 
 ````C#
 private void radButton1_Click(object sender, EventArgs e)
@@ -355,11 +353,11 @@ Friend Class Customer
 End Class
 ````
 
-The grid is now populated with the data.
+The grid is now populated.
 
 ![aws-dynamo-db004](images/aws-dynamo-db004.png)
 
-## Step: 5 Save the changes
+## Step: 5 Save the Changes
 
 The final steps is to save the changes. Upon a button click we will iterate all rows and update the items in the database. We will need a function that updates an item in the manager class. Here is the code.
 
@@ -409,6 +407,6 @@ End Sub
 
 # See Also
 
-* [Storage (S3)]({%slug cloud-services/aws/storage%})
 * [Relational Database Service]({%slug cloud-services/aws/rds%})
-
+* [Storage]({%slug cloud-services/aws/storage%}) 
+* [Simple Email Service]({%slug cloud-services/aws/ses%})

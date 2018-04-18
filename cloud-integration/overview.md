@@ -10,7 +10,7 @@ position: 0
 
 # Cloud Services
 
-This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite. The following list contains the topics discussed here:
+This section shows how one can use various cloud services like __GoogleCloud__, __AWS__, and __Azure__ with the __Telerik UI For WinForms__ suite. The following list contains the topics discussed here:
  
 * Azure
 

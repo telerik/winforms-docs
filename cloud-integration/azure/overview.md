@@ -14,7 +14,7 @@ position: 0
 
 ![azure-overview001](images/azure-overview001.png)
 
-You can create a free account and take advantage of a number of free services such as CosmosDB, Blob/File Storage, serverless functions and many more. This section show how you can integrate them with the controls from the  Telerik UI for WinForms suite.
+You can create a free account and take advantage of a number of free services such as CosmosDB, Blob/File Storage, serverless functions and many more. This section shows how you can integrate them with the controls from the __Telerik UI for WinForms__ suite.
 
 
 Here are the currently available topics:

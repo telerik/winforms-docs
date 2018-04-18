@@ -36,7 +36,7 @@ Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) 
 
 ## Step 4: Add the Code Behind
 
-First as the following variables to the form:
+First add the following variables to the form:
 
 ````C#
 private static string subscriptionKey = "your own code";

@@ -45,7 +45,7 @@ Dim cloudBlobContainer As CloudBlobContainer = Nothing
 
 The following article explains how you can create a storage account: [Create a Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account#create-a-storage-account).
 
-THe process is straightforward and easy it should take no more than 10 minutes. Once this is completed you need to get the connection string. You can find it under the __Access Keys__ page.
+The process is straightforward and easy it should take no more than 10 minutes. Once this is completed you need to get the connection string. You can find it under the __Access Keys__ page.
 
 ![azure-blob-storage-003](images/azure-blob-storage-003.png)
 

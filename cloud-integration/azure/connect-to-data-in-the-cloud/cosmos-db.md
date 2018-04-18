@@ -11,7 +11,7 @@ position: 0
 
 # CosmosDB
 
-Azure Cosmos DB is a globally distributed, multi-model database service which enables you to develop document, key-value, wide-column, and graph databases by using popular APIs and programming models. This article will show you how to integrate the RadGridView control to work with your remote database.
+Azure Cosmos DB is a globally distributed, multi-model database service which enables you to develop document, key-value, wide-column, and graph databases by using popular APIs and programming models. This article will show you how to integrate the [RadGridView]({%slug winforms/visual-studio-templates%}) control to work with your remote database.
 
 This article shows the steps for creating a database along with the application that uses it. More detailed information about creating the database is available in the following tutorial: [SQL API Getting Started Tutorial](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-get-started).
 
@@ -51,7 +51,7 @@ using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
 using Newtonsoft.Json;
 ````
-```` VB.NET
+````VB.NET
 Imports System.Net
 Imports Microsoft.Azure.Documents
 Imports Microsoft.Azure.Documents.Client
@@ -65,7 +65,7 @@ private const string EndpointUrl = "<your endpoint URL>";
 private const string PrimaryKey = "<your primary key>";
 private DocumentClient client;
 ````
-```` VB.NET
+````VB.NET
 Private Const EndpointUrl As String = "<your endpoint URL>"
 Private Const PrimaryKey As String = "<your primary key>"
 Private client As DocumentClient
@@ -82,7 +82,7 @@ Initialize the client in the and create the database. This can be done in the fo
 this.client = new DocumentClient(new Uri(EndpointUrl), PrimaryKey);
 this.client.CreateDatabaseIfNotExistsAsync(new Database { Id = "EmployeeDB" });
 ````
-```` VB.NET
+````VB.NET
 Me.client = New DocumentClient(New Uri(EndpointUrl), PrimaryKey)
 Me.client.CreateDatabaseIfNotExistsAsync(New Database With {.Id = "EmployeeDB"})
 ````
@@ -106,7 +106,7 @@ public class Employee
     }
 }
 ````
-```` VB.NET
+````VB.NET
 Public Class Employee
     <JsonProperty(PropertyName := "id")>
     Public Property Id() As String
@@ -121,7 +121,6 @@ End Class
 Now we are ready to add some data. For this we need to add a collection first. Call the following code once from your application (from the add event handler for example): 
 
 ````C#
-
 private async void AddData()
 {
     var employee1 = new Employee() { Id = "1", Name = "John Smith", Company = "Progress" };
@@ -133,7 +132,7 @@ private async void AddData()
 }
 
 ````
-```` VB.NET
+````VB.NET
 Private Async Sub AddData()
     Dim employee1 = New Employee() With {
         .Id = "1",
@@ -160,7 +159,7 @@ You should be able to see the data in the Azure console:
 
 ## Step 6: Load the data in the grid
 
-The following snippet show how you can get a list of object that can be used as data source for the grid:
+The following snippet shows how you can get a list of object that can be used as data source for the grid:
 
 ````C#
 private void radButtonLoad_Click(object sender, EventArgs e)
@@ -172,9 +171,8 @@ private void radButtonLoad_Click(object sender, EventArgs e)
 
     radGridView1.DataSource = query.ToList();          
 }
-
-```` 
-```` VB.NET
+````
+````VB.NET
 Private Sub radButtonLoad_Click(ByVal sender As Object, ByVal e As EventArgs)
     Dim queryOptions As FeedOptions = New FeedOptions With {.MaxItemCount = -1}
 
@@ -190,7 +188,7 @@ Now you can see the data in the grid:
 
 ## Step 7: Save the data
 
-Our grid allows us to track any changes an this is why we can save them directly. In this case we will use the **RowsChanged** event to update the records in the database:
+Our grid allows us to track any changes an this is why we can save them directly. In this case you will use the **RowsChanged** event to update the records in the database:
 
 ````C#
 private void RadGridView1_RowsChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
@@ -203,7 +201,7 @@ private void RadGridView1_RowsChanged(object sender, Telerik.WinControls.UI.Grid
     }
 }
 ````
-```` VB.NET
+````VB.NET
 Private Sub RadGridView1_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
     If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
         Dim item = TryCast(e.NewItems(0), GridViewDataRowInfo)
