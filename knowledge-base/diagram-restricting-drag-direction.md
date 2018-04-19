@@ -149,7 +149,7 @@ End Class
 
 {{endregion}} 
 
-3\. Instantiate the custom drag-drop service and mouse behavior classes and use them with your **RadGanttView** control.
+3\. Instantiate the custom dragging service class.
 
 #### Use the Custom Solution
 
