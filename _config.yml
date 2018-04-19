@@ -648,6 +648,9 @@ navigation:
     gridview/printing-support:
         title: Printing Support
         position: 27
+    image-editor:
+        title: Image Editor
+        position: 269		
     layoutcontrol:
         title: LayoutControl
         position: 270
