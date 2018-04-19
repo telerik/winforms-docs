@@ -317,48 +317,49 @@ public partial class RadGanttViewTimelineSnapping : Telerik.WinControls.UI.RadFo
 
 ````
 ````VB.NET
-Public Sub New()
-    InitializeComponent()
-    Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineStart = New DateTime(2010, 10, 7)
-    Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineEnd = New DateTime(2010, 12, 10)
-    Dim tasks As DataTable = New DataTable("Tasks")
-    tasks.Columns.Add("Id", GetType(Integer))
-    tasks.Columns.Add("ParentId", GetType(Integer))
-    tasks.Columns.Add("Title", GetType(String))
-    tasks.Columns.Add("Start", GetType(DateTime))
-    tasks.Columns.Add("End", GetType(DateTime))
-    tasks.Columns.Add("Progress", GetType(Decimal))
-    Dim links As DataTable = New DataTable("Links")
-    links.Columns.Add("StartId", GetType(Integer))
-    links.Columns.Add("EndId", GetType(Integer))
-    links.Columns.Add("LinkType", GetType(Integer))
-    Dim data As DataSet = New DataSet()
-    data.Tables.Add(tasks)
-    data.Tables.Add(links)
-    tasks.Rows.Add(1, 0, "Summary task title", New DateTime(2010, 10, 10), New DateTime(2010, 10, 15), 30D)
-    tasks.Rows.Add(2, 1, "First child task title", New DateTime(2010, 10, 10), New DateTime(2010, 10, 12), 10)
-    tasks.Rows.Add(3, 1, "Second child task title", New DateTime(2010, 10, 12), New DateTime(2010, 10, 15), 20D)
-    tasks.Rows.Add(4, 1, "Milestone", New DateTime(2010, 10, 15), New DateTime(2010, 10, 15), 0D)
-    links.Rows.Add(2, 3, 1)
-    links.Rows.Add(3, 4, 1)
-    Me.radGanttView1.GanttViewElement.TaskDataMember = "Tasks"
-    Me.radGanttView1.GanttViewElement.ChildMember = "Id"
-    Me.radGanttView1.GanttViewElement.ParentMember = "ParentId"
-    Me.radGanttView1.GanttViewElement.TitleMember = "Title"
-    Me.radGanttView1.GanttViewElement.StartMember = "Start"
-    Me.radGanttView1.GanttViewElement.EndMember = "End"
-    Me.radGanttView1.GanttViewElement.ProgressMember = "Progress"
-    Me.radGanttView1.GanttViewElement.LinkDataMember = "Links"
-    Me.radGanttView1.GanttViewElement.LinkStartMember = "StartId"
-    Me.radGanttView1.GanttViewElement.LinkEndMember = "EndId"
-    Me.radGanttView1.GanttViewElement.LinkTypeMember = "LinkType"
-    Me.radGanttView1.GanttViewElement.DataSource = data
-    Me.radGanttView1.Columns.Add("Start")
-    Me.radGanttView1.Columns.Add("End")
-    Me.radGanttView1.GanttViewBehavior = New CustomGanttViewBehavior()
-    Me.radGanttView1.GanttViewElement.DragDropService = New MyGanttViewDragDropService(Me.radGanttView1.GanttViewElement)
-End Sub
-Class
+Public Class RadGanttViewTimelineSnapping
+    Public Sub New()
+        InitializeComponent()
+        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineStart = New DateTime(2010, 10, 7)
+        Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineEnd = New DateTime(2010, 12, 10)
+        Dim tasks As DataTable = New DataTable("Tasks")
+        tasks.Columns.Add("Id", GetType(Integer))
+        tasks.Columns.Add("ParentId", GetType(Integer))
+        tasks.Columns.Add("Title", GetType(String))
+        tasks.Columns.Add("Start", GetType(DateTime))
+        tasks.Columns.Add("End", GetType(DateTime))
+        tasks.Columns.Add("Progress", GetType(Decimal))
+        Dim links As DataTable = New DataTable("Links")
+        links.Columns.Add("StartId", GetType(Integer))
+        links.Columns.Add("EndId", GetType(Integer))
+        links.Columns.Add("LinkType", GetType(Integer))
+        Dim data As DataSet = New DataSet()
+        data.Tables.Add(tasks)
+        data.Tables.Add(links)
+        tasks.Rows.Add(1, 0, "Summary task title", New DateTime(2010, 10, 10), New DateTime(2010, 10, 15), 30D)
+        tasks.Rows.Add(2, 1, "First child task title", New DateTime(2010, 10, 10), New DateTime(2010, 10, 12), 10)
+        tasks.Rows.Add(3, 1, "Second child task title", New DateTime(2010, 10, 12), New DateTime(2010, 10, 15), 20D)
+        tasks.Rows.Add(4, 1, "Milestone", New DateTime(2010, 10, 15), New DateTime(2010, 10, 15), 0D)
+        links.Rows.Add(2, 3, 1)
+        links.Rows.Add(3, 4, 1)
+        Me.radGanttView1.GanttViewElement.TaskDataMember = "Tasks"
+        Me.radGanttView1.GanttViewElement.ChildMember = "Id"
+        Me.radGanttView1.GanttViewElement.ParentMember = "ParentId"
+        Me.radGanttView1.GanttViewElement.TitleMember = "Title"
+        Me.radGanttView1.GanttViewElement.StartMember = "Start"
+        Me.radGanttView1.GanttViewElement.EndMember = "End"
+        Me.radGanttView1.GanttViewElement.ProgressMember = "Progress"
+        Me.radGanttView1.GanttViewElement.LinkDataMember = "Links"
+        Me.radGanttView1.GanttViewElement.LinkStartMember = "StartId"
+        Me.radGanttView1.GanttViewElement.LinkEndMember = "EndId"
+        Me.radGanttView1.GanttViewElement.LinkTypeMember = "LinkType"
+        Me.radGanttView1.GanttViewElement.DataSource = data
+        Me.radGanttView1.Columns.Add("Start")
+        Me.radGanttView1.Columns.Add("End")
+        Me.radGanttView1.GanttViewBehavior = New CustomGanttViewBehavior()
+        Me.radGanttView1.GanttViewElement.DragDropService = New MyGanttViewDragDropService(Me.radGanttView1.GanttViewElement)
+    End Sub
+End Class
 
 ````
 
