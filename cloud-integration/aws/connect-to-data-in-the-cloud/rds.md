@@ -215,4 +215,5 @@ You can now view and edit the data from the grid:
 # See Also
 
 * [DynamoDB]({%slug cloud-services/aws/dynamodb%})
-* [Storage (S3)]({%slug cloud-services/aws/storage%})
+* [Storage]({%slug cloud-services/aws/storage%}) 
+* [Simple Email Service]({%slug cloud-services/aws/ses%})

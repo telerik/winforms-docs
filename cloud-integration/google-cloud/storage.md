@@ -18,9 +18,7 @@ For the purposes of this article, you will have to enable the Google Cloud Stora
 
 ## Step 1: Create the  WinForms Application
 
-Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) application and add 3 [RadButtons]({%slug winforms/buttons/button%}) and a [RadListView]({%slug winforms/listview%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file in the RadListBox.
-
-The layout should look like this. 
+Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) application and add 3 [RadButtons]({%slug winforms/buttons/button%}) and a [RadListView]({%slug winforms/listview%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file. The layout should look like this:
 
 ![Google Cloud Storage Upload](images/google-cloud-storage001.png)
 
@@ -32,7 +30,7 @@ Open the NuGet Package Manager and install the **Google.Cloud.Storage.V1** packa
 
 ## Step 3: Connect the Application to the Storage
 
-The next step is to create the [StorageClient](https://googlecloudplatform.github.io/google-cloud-dotnet/docs/Google.Cloud.Storage.V1/api/Google.Cloud.Storage.V1.StorageClient.html) object which will be used for uploading, deleting and listing files. You also need to implement all of the commands that the RadButtons are bound to.
+The next step is to create the [StorageClient](https://googlecloudplatform.github.io/google-cloud-dotnet/docs/Google.Cloud.Storage.V1/api/Google.Cloud.Storage.V1.StorageClient.html) object which will be used for uploading, deleting and listing files.
 
 ````C#
 private StorageClient storageClient;
@@ -60,7 +58,7 @@ End Sub
 
 >note In order this to work you need to add the __GOOGLE_APPLICATION_CREDENTIALS__ environment variable. It must point to the JSSON file that contains the license information. This file is can be obtained by creating a [service account](https://cloud.google.com/docs/authentication/). 
 
-Now you can use the above object to mange the files. Here is how you can handle the buttons Click events and perform the respective operations:
+Now you can use the above object to mange the files. Here is how you can handle the buttons' Click events and perform the respective operations:
 
 ````C#
 private void radButtonListFiles_Click(object sender, EventArgs e)

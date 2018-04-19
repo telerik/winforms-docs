@@ -18,7 +18,7 @@ This article will demonstrate how one can use this service from a WinForms appli
 
 ## Step 1: Create the WinForms Application
 
-First create a new [Telerik UI for WinForms]({%slug winforms/visual-studio-templates%}) application using the default template. Drop a two labels, two text-boxes, a button, and a [RadRichTextBox]({%slug winforms/richtexteditor%}) editor on the form. Your layout should look like this:
+First create a new [Telerik UI for WinForms]({%slug winforms/visual-studio-templates%}) application using the default template. Drop two labels, two text-boxes, a button, and a [RadRichTextBox]({%slug winforms/richtexteditor%}) editor on the form. Your layout should look like this:
 
 ![aws-ses001](images/aws-ses001.png)
 
@@ -47,7 +47,7 @@ In addition you need to add the following to your App.config file:
 
 ## Step 3: Add the code to the application
 
-THe following spinet shows how you can use send a mail using the content from the previously added controls:
+The following spinet shows how you can use send a mail using the content from the previously added controls:
 
 ````C#
 private void radButton1_Click(object sender, EventArgs e)
@@ -78,7 +78,7 @@ private void radButton1_Click(object sender, EventArgs e)
     }
 }
 ````
-````VB .NET
+````VB.NET
 Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
     Using client = New AmazonSimpleEmailServiceClient()
         Dim provider = New HtmlFormatProvider()

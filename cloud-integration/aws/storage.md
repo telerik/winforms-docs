@@ -38,7 +38,7 @@ In addition you need to add the following to your App.config file:
 
 ````
 
->note If you do not have an AWS account in Visual Studio please check the[Getting Started]({%slug cloud-services/aws/getting-started%}) article.
+>note If you do not have an AWS account in Visual Studio please check the [Getting Started]({%slug cloud-services/aws/getting-started%}) article.
 
 ## Step 3: Create the IAmazonS3 client
 

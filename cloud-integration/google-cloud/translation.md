@@ -5,11 +5,9 @@ slug: common-google-cloud-translation
 position: 4
 ---
 
-# Cognitive Services
+# Translation API
 
-Cognitive computing or cognitive services are platforms that are powered by artificial intelligence and signal processing. These services provide you with the possibility to directly use different scientific breakthroughs such as machine learning, natural language processing and speech/vision recognition. 
-
-In this article we are going to show you how to use Google's Translation API. The process  of embedding the functionality in your .NET application is very easy once you have enabled the feature from your GCP console.
+In this article we are going to show you how to use Google's Translation API. The process of embedding the functionality in your .NET application is very easy once you have enabled the feature from your GCP console.
 
 ## Step 1: Create the WinForms Application
  
@@ -17,7 +15,7 @@ Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) 
 
 ![](images/google-cloud-translation-api000.png)
 
-## Step 2: Adding the Nuget Package
+## Step 2: Adding the NuGet Package
 
 In order to proceed with adding the functionality in your application, you should first enable the feature from your GCP console.
 

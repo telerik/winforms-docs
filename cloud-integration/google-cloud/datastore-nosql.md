@@ -18,7 +18,7 @@ First create the WinForms project, to do that create a blank [Telerik UI for Win
 
 # Step 2: Create the Database
 
-The following tutorial show how you can create the **Datastore** instance - [Datastore Quickstart](https://cloud.google.com/datastore/docs/quickstart). 
+The following tutorial shows how you can create the **Datastore** instance - [Datastore Quickstart](https://cloud.google.com/datastore/docs/quickstart). 
 
 The process is strait forward and easy. You need to add some data as well. When ready your database should look like this.
 
@@ -80,6 +80,7 @@ Public Class Book
 
 End Class
 ````
+
 Now you you can use the above object to store the data from the database. The following code shows how you can retrieve the data:
 
 ````C#
@@ -128,13 +129,14 @@ Public Function GetBooks() As List(Of Book)
     Return books
 End Function
 ````
+
 Now you can view the data in your application:
 
 ![](images/google_cloud_nosql004.png)
 
 ## Step 5: Update the database.
 
-A proper place to handle and save any changes is the RpwsChanged event. This way you will be able to handle the add, remove and edit operations. The main part is that you need to keep the key of the entity object in order to get the existing items from the database.  
+A proper place to handle and save any changes is the __RowsChanged__ event. This way you will be able to handle the add, remove and edit operations. The main part is that you need to keep the key of the entity object in order to get the existing items from the database.  
 
 ````C#
 private void RadGridView1_RowsChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
