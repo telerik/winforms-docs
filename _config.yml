@@ -650,7 +650,10 @@ navigation:
         position: 27
     image-editor:
         title: Image Editor
-        position: 269		
+        position: 269	
+    image-editor/features:
+        title: Features
+        position: 3			
     layoutcontrol:
         title: LayoutControl
         position: 270
