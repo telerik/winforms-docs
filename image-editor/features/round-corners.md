@@ -13,7 +13,7 @@ position: 5
 You round the corners by showing the round corners dialog and set the __Radius__, the __Border Thickness__ and their colors. 
 
 ![](images/image-editor-round-corners001.png)
-![](images/image-editor-round-corners001.png)
+![](images/image-editor-round-corners002.png)
 
 # Round Corners Programmatically
 
@@ -24,10 +24,12 @@ The following snippet shows how you can round the corners with the RoundCorners 
 {{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Corners}} 
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Corners}}
 ````C#
-radIamgeEditor1.ImageEditorElement.RoundCorners(100, Color.Red, 2, Color.Green);
+radImageEditor1.ImageEditorElement.RoundCorners(100, Color.Red, 2, Color.Green);
 
 ````
 ````VB.NET
+radImageEditor1.ImageEditorElement.RoundCorners(100, Color.Red, 2, Color.Green)
+
 ```` 
 
 

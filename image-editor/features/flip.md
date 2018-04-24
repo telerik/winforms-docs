@@ -13,7 +13,7 @@ position: 5
 
 You can use the rotate buttons to directly rotate the image. No dialog is shown in this case.
 
-![](images/image-editor-rotate001.png)
+![](images/image-editor-flip001.png)
 
 # Flip Programmatically
 
@@ -24,10 +24,12 @@ The following spinet shows how you can access and use the __RotateFlip__ method.
 {{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Flip}} 
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Flip}}
 ````C#
-radIamgeEditor1.ImageEditorElement.RotateFlip(RotateFlipType.RotateNoneFlipX);
+radImageEditor1.ImageEditorElement.RotateFlip(RotateFlipType.RotateNoneFlipX);
 
 ````
 ````VB.NET
+radImageEditor1.ImageEditorElement.RotateFlip(RotateFlipType.RotateNoneFlipX)
+
 ```` 
 
 

@@ -24,10 +24,12 @@ The following spinet shows how you can access and use the __RotateFlip__ method.
 {{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Rotate}} 
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Rotate}}
 ````C#
-radIamgeEditor1.ImageEditorElement.RotateFlip(RotateFlipType.Rotate270FlipNone);
+radImageEditor1.ImageEditorElement.RotateFlip(RotateFlipType.Rotate270FlipNone);
 
 ````
 ````VB.NET
+radImageEditor1.ImageEditorElement.RotateFlip(RotateFlipType.Rotate270FlipNone)
+
 ```` 
 
 
