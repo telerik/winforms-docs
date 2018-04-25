@@ -340,3 +340,6 @@ ImageEditorLocalizationProvider.CurrentProvider = New MyImageEditorLocalizationP
 
 
 # See Also
+
+* [Structure]({%slug radimageeditor-structure%})
+* [Properties and Events]({%slug radimageeditor-properties-and-events%})

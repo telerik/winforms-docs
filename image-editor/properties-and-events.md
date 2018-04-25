@@ -10,7 +10,7 @@ position: 7
 
 # Properties and Methods 
 
-This article contains the most important properties methods and events of RadIamgeEditor.
+This article contains the most important properties methods and events of __RadImageEditor__.
 
 ## Properties
 
@@ -28,8 +28,12 @@ This article contains the most important properties methods and events of RadIam
 |Method|Description|
 |---|---|
 |__OpenImage__|Opens an image for editing, the method can take a bitmap or file path as parameter.|
-|__SaveImage__|Saves the currently opened image. Optionally you can pass a path or ImageFormat as parameters.|
+|__SaveImage__|Saves the currently opened image. Optionally you can pass a path or ImageFormat as parameter.|
+|__SaveImageAs__|Opens the SaveFileDialog and allows you to save the image to a specific location.|
 
 
 # See Also
 
+* [Getting Started]({%slug radimageeditor-getting-started%})
+* [Structure]({%slug radimageeditor-structure%})
+ 

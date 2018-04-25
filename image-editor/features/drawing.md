@@ -12,9 +12,11 @@ position: 7
 
 There are 3 options that you can use to draw on the image.
 
-* Draw Text
-* Draw Shape
-* Draw with a Pen
+* [Draw Text](#draw-text)
+* [Draw Shape](#draw-shape)
+* [Draw with a Pen](#draw-with-a-pen)
+
+>caption Figure 1: Draw Buttons
 
 ![](images/image-editor-draw001.png)
 
@@ -22,6 +24,8 @@ There are 3 options that you can use to draw on the image.
 ## Draw Text
 
 To draw text click the button and the DrawText dialog will be shown. In it you need to provide the text and set various other options.
+
+>caption Figure 2: DrawText Dialog
 
 ![](images/image-editor-draw002.png)
 
@@ -49,9 +53,13 @@ radImageEditor1.ImageEditorElement.DrawString("Test", 12, Color.Red, 200, 200, 1
 
 When the Draw Shape button is pressed the DrawShape dialog appears. In this dialog you can specify the type and the size of the shape. You can set its colors as well. 
 
+>caption Figure 3: DrawShape Dialog
+
 ![](images/image-editor-draw002.png)
 
 Once you are ready with the settings you can draw your shape with the mouse.
+
+>caption Figure 4: Drawing Shapes
 
 ![](images/image-editor-draw003.png)
 
@@ -80,11 +88,17 @@ radImageEditor1.ImageEditorElement.DrawShape(path, Color.Red, Color.Green, 3)
 
 {{endregion}}
 
-# Draw with a Pen
+## Draw with a Pen
 
 When the Draw button is pressed the Draw dialog appears. In this dialog you can specify the size and the color of the brush. One you are done you can directly star drawing on the image surface. 
+
+>caption Figure 1: Draw Dialog
 
 ![](images/image-editor-draw004.png)
 
 
 # See Also
+
+* [Getting Started]({%slug radimageeditor-getting-started%})
+* [Structure]({%slug radimageeditor-structure%})
+* [Properties and Events]({%slug radimageeditor-properties-and-events%})

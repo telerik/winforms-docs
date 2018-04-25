@@ -13,11 +13,12 @@ position: 9
 
 RadImageEditor supports the following image adjustments.
 
-* Hue
-* Saturation
-* Contrast
-* Invert Colors 
+* [Hue](#hue-adjusment)
+* [Saturation](#saturation-adjusment)
+* [Contrast](#contrast-and-brightness-adjusment)
+* [Invert Colors](#invert-colors) 
 
+>caption Figure 1: Adjust section
 
 ![](images/image-editor-adjustments001.png)
 
@@ -25,6 +26,8 @@ RadImageEditor supports the following image adjustments.
 # Hue adjustment
 
 The Hue can be adjusted with the respective dialog, the values can be from 0 to 360.
+
+>caption Figure 2: Hue Dialog
 
 ![](images/image-editor-adjustments002.png)
 
@@ -41,20 +44,21 @@ radImageEditor1.ImageEditorElement.SetHue(200)
 
 ````
 
-
-
 {{endregion}}
 
 # Saturation adjustment
 
-The Hue can be adjusted with the respective dialog the values can be from -100 to 100.
+The Saturation can be adjusted with the respective dialog the values can be from -100 to 100.
+
+>caption Figure 3: Saturation Dialog
 
 ![](images/image-editor-adjustments003.png)
 
-To do this programmatically use the SetSaturation method.
+To do this programmatically use the __SetSaturation__ method.
 
 {{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Sat}} 
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Sat}}
+
 ````C#
 radImageEditor1.ImageEditorElement.SetSaturation(-50);
 
@@ -64,16 +68,17 @@ radImageEditor1.ImageEditorElement.SetSaturation(-50)
 
 ````
 
-
-
 {{endregion}}
 
 # Contrast and Brightness adjustment
 
 The Contrast and Brightness can be adjusted with the respective dialog the values can be from -100 to 100.
 
+>caption Figure 4: Brightness and Contrast Dialog
+
 ![](images/image-editor-adjustments004.png)
 
+This can be done in the code behind as well.
 
 {{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Contrast}} 
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Contrast}}
@@ -93,12 +98,15 @@ radImageEditor1.ImageEditorElement.SetContrastAndBrightness(100, 10)
 
 The Invert Color button just inverts the colors in the image pixel by pixel.
  
+>caption Figure 5: Inverted Colors
+
 ![](images/image-editor-adjustments005.png)
 
 This action can be performed in code with the following method.
 
 {{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Invert}} 
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Invert}}
+
 ````C#
 radImageEditor1.ImageEditorElement.InvertColors();
 
@@ -108,8 +116,10 @@ radImageEditor1.ImageEditorElement.InvertColors()
 
 ````
 
-
-
 {{endregion}}
 
 # See Also
+
+* [Getting Started]({%slug radimageeditor-getting-started%})
+* [Structure]({%slug radimageeditor-structure%})
+* [Properties and Events]({%slug radimageeditor-properties-and-events%})

@@ -12,8 +12,8 @@ position: 10
 
 Currently, RadImageEditor supports the following effects.
 
-* Sharpen
-* Blur
+* [Sharpen](#sharpen)
+* [Blur](#blur)
 
 ![](images/image-editor-effects001.png)
 
@@ -23,7 +23,7 @@ Once you click the Sharpen button the sharpen dialog will appear and you will be
 
 ![](images/image-editor-effects002.png)
 
-This can be performed programmatically as well. The following snippet shows how you can apply the Blur effect.
+This can be performed programmatically as well. The following snippet shows how you can apply the Sharpen effect.
 
 {{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Sharp}} 
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Sharp}}
@@ -35,8 +35,6 @@ radImageEditor1.ImageEditorElement.Sharpen(100);
 radImageEditor1.ImageEditorElement.Sharpen(100)
 
 ````
-
-
 
 {{endregion}}
 
@@ -59,8 +57,10 @@ radImageEditor1.ImageEditorElement.Blur(100)
 
 ````
 
-
-
 {{endregion}}
 
 # See Also
+
+* [Getting Started]({%slug radimageeditor-getting-started%})
+* [Structure]({%slug radimageeditor-structure%})
+* [Properties and Events]({%slug radimageeditor-properties-and-events%})
