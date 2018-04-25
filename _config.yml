@@ -221,6 +221,9 @@ navigation:
     chartview/printing-support:
         title: Printing Support
         position: 12
+    chat:
+        title: Chat
+        position: 125
     checkedlistbox:
         title: CheckedListBox
         position: 130
