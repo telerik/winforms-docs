@@ -65,7 +65,7 @@ End Enum
 
 2\. Inherit the **DraggingService** class.
 * Add two fields to be used for saving the drag start point and the currently selected drag mode.
-* Override the **InitializeDrag** method set the initial drag start point.
+* Override the **InitializeDrag** method and set the initial drag start point.
 * Override the **Drag** method and depending on the current **DragMode** create a new drag point. 
 
 #### CustomDraggingService Implementation
@@ -193,6 +193,8 @@ End Class
 
 
 {{endregion}} 
+
+>note A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/Diagram/CustomDraggingService).
 
 # See Also
 * [Drag and Drop from Another Control]({%slug winforms/diagram/drag-and-drop/drag-and-drop-from-another-control%})
