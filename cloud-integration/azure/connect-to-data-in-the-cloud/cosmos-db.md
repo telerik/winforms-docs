@@ -199,7 +199,22 @@ private void RadGridView1_RowsChanged(object sender, Telerik.WinControls.UI.Grid
         var employee = item.DataBoundItem as Employee;
         this.client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri("EmployeeDB", "EmployeeCollection", employee.Id), employee);
     }
+    else if (e.Action == Telerik.WinControls.Data.NotifyCollectionChangedAction.Add)
+    {
+        var item = e.NewItems[0] as GridViewDataRowInfo;
+        var employee = item.DataBoundItem as Employee;
+       
+        this.client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri("EmployeeDB", "EmployeeCollection"), employee);
+    }
+    else if (e.Action == Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove)
+    {
+        var item = e.NewItems[0] as GridViewDataRowInfo;
+        var employee = item.DataBoundItem as Employee;
+        this.client.DeleteDocumentAsync(UriFactory.CreateDocumentUri("EmployeeDB", "EmployeeCollection", employee.Id));
+    }
 }
+
+
 ````
 ````VB.NET
 Private Sub RadGridView1_RowsChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs)
@@ -207,6 +222,15 @@ Private Sub RadGridView1_RowsChanged(ByVal sender As Object, ByVal e As Telerik.
         Dim item = TryCast(e.NewItems(0), GridViewDataRowInfo)
         Dim employee = TryCast(item.DataBoundItem, Employee)
         Me.client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri("EmployeeDB", "EmployeeCollection", employee.Id), employee)
+    ElseIf e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Add Then
+        Dim item = TryCast(e.NewItems(0), GridViewDataRowInfo)
+        Dim employee = TryCast(item.DataBoundItem, Employee)
+
+        Me.client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri("EmployeeDB", "EmployeeCollection"), employee)
+    ElseIf e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.Remove Then
+        Dim item = TryCast(e.NewItems(0), GridViewDataRowInfo)
+        Dim employee = TryCast(item.DataBoundItem, Employee)
+        Me.client.DeleteDocumentAsync(UriFactory.CreateDocumentUri("EmployeeDB", "EmployeeCollection", employee.Id))
     End If
 End Sub
 ````
