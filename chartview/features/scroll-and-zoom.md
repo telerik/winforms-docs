@@ -101,6 +101,33 @@ RadChartView1.Pan(-300, 0)
 
 The zoom factor can be controlled using __Ctrl+MouseWheel__ for zoom in and zoom out functionality. Left Button MouseDown+Move for pan/scroll functionality.
 
+>note The currently applied *Zoom* and *Pan* factors can be obtained from the **IChartView** object.
+
+#### Current Zoom and Pan
+
+{{source=..\SamplesCS\ChartView\Features\ScrollAndZoom.cs region=CurrentZoomPan}} 
+{{source=..\SamplesVB\ChartView\Features\ScrollAndZoom.vb region=CurrentZoomPan}}
+````C#
+IChartView view = this.radChartView1.ChartElement.View;
+double zoomX = view.ZoomWidth;
+double zoomY = view.ZoomHeight;
+double panX = view.PlotOriginX;
+double panY = view.PlotOriginY;
+
+````
+````VB.NET
+Dim view As IChartView = Me.RadChartView1.ChartElement.View
+Dim zoomX = view.ZoomWidth
+Dim zoomY = view.ZoomHeight
+Dim panX = view.PlotOriginX
+Dim panY = view.PlotOriginY
+
+```` 
+
+
+
+{{endregion}} 
+
 # See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})

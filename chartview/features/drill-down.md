@@ -169,6 +169,9 @@ End Sub
 
 {{endregion}}
 
+>important If your chart is being oriented horizontally, please make sure that in the **Drill** event you are setting the correct axes as **First** and **Second**. In the example above, for a horizontally oriented view, the horizontal axis should be set as **Second** and the vertical axis should be set as **First**. 
+>
+
 >note The navigation element’s text is taken from __TitleElement.Text__ property by default, so every time you drill, you have to change this text accordingly. If this text is empty, it will be taken from the __RadChartView.View.ViewName__ property.
 >
 
