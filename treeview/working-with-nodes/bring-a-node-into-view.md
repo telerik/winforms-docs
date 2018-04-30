@@ -30,9 +30,11 @@ RadTreeView1.BringIntoView(lastRootNode.Nodes(lastRootNode.Nodes.Count - 1))
 
 {{endregion}}
 
->note Note that the BringIntoView method does not select the node!
+>important The **BringIntoView** method does not select the node!
 >
 
+>note The **RadTreeViewElement** class defines an **AutoScrollOnClick** property which is by default set to *true*. This property determines whether to scroll horizontally the control ensuring that the clicked node is visible.
+> 
 
 # See Also
 * [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})
@@ -47,3 +49,4 @@ RadTreeView1.BringIntoView(lastRootNode.Nodes(lastRootNode.Nodes.Count - 1))
 
 * [Filtering Nodes]({%slug winforms/treeview/working-with-nodes/filtering-nodes%})
 
+ 
