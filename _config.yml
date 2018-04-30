@@ -224,6 +224,9 @@ navigation:
     chat:
         title: Chat
         position: 125
+    chat/chat-items:
+        title: Chat Items
+        position: 2
     checkedlistbox:
         title: CheckedListBox
         position: 130
