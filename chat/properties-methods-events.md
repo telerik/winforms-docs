@@ -23,16 +23,16 @@ position: 9
 |------|------|
 |**ShowOverlay**|Shows the provided overlay in the control.|
 |**HideOverlay**|Hides any overlays that are currently displayed by the control.|
-|**AddMessage**|Adds a new message to the chat. Typical messages are , , , and|
+|**AddMessage**|Adds a new message to the chat. Typical messages are ChatTextMessage, ChatSuggestedActionsMessage, ChatMediaMessage, ChatCardMessage, and ChatOverlayMessage.|
 
 # Events
 
 |Event|Description|
 |------|------|
 |**SendMessage**|Occurs when the user performs an action e.g hits the Enter key, clicks the Send message button, clicks on a Suggested Action or a Card Action, clicks OK on an overlay.|
-|**SuggestedActionClicked**|Occurs when the user clicks on a Suggested Action|
-|**CardActionClicked**|Occurs when the user clicks on a Card Action|
-|**ToolbarActionClicked**|Occurs when the user clicks on a Toolbar Action|
+|**SuggestedActionClicked**|Occurs when the user clicks on a Suggested Action.|
+|**CardActionClicked**|Occurs when the user clicks on a Card Action.|
+|**ToolbarActionClicked**|Occurs when the user clicks on a Toolbar Action.|
 |**TimeSeparatorAdding**|Occurs after a new message is added. Allows you to decide whether a time separator should be inserted before the currently added message.|
 |**ItemFormatting**|Occurs when the data item of a visual element is changed and the element is prepared for visualization.|
 
