@@ -227,6 +227,9 @@ navigation:
     chat/chat-items:
         title: Chat Items
         position: 2
+    chat/customizing-appearance:
+        title: Customizing Appearance
+        position: 6
     checkedlistbox:
         title: CheckedListBox
         position: 130
