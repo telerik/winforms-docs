@@ -10,7 +10,9 @@ position: 2
 
 # Messages
 
-**ChatMessage** is the basic message unit in **RadChat**. It contains information about the author and time of message. Depending on the specific information that a message stores, the available message types are listed below:
+**ChatMessage** is the basic message unit in **RadChat**. It contains information about the author and time of message. Depending on the specific information that a message stores, the available message types are listed below. 
+
+By default, when you type in the text box and confirm the message, it is automatically added to **RadChat**. This behavior can be controlled by the **AutoAddUserMessages** property. In addition, the **SendMessage** is fired each time a new message is about to be added to the chat UI. It is allowed to modify the message itself. 
 
 ## ChatTimeSeparatorMessage
 
@@ -226,7 +228,7 @@ A **ChatOverlayMessage** represents a **ChatMessage** that displays an [overlay 
              ChatListOverlay chatListOverlay = new ChatListOverlay("List overlay");
             for (int i = 0; i < 10; i++)
             {
-                chatListOverlay.ListViewElement.Items.Add("Item " + i);
+                chatListOverlay.ListView.Items.Add("Item " + i);
             }
             bool showAsPopup = false;
             Author author = new Author(Properties.Resources.andrew1, "Andrew");
@@ -237,7 +239,7 @@ A **ChatOverlayMessage** represents a **ChatMessage** that displays an [overlay 
 ````VB.NET
            Dim chatListOverlay As ChatListOverlay = New ChatListOverlay("List overlay")
         For i As Integer = 0 To 10 - 1
-            chatListOverlay.ListViewElement.Items.Add("Item " & i)
+            chatListOverlay.ListView.Items.Add("Item " & i)
         Next
 
         Dim showAsPopup As Boolean = False

@@ -226,10 +226,10 @@ navigation:
         position: 125
     chat/chat-items:
         title: Chat Items
-        position: 2
+        position: 3
     chat/customizing-appearance:
         title: Customizing Appearance
-        position: 6
+        position: 7
     checkedlistbox:
         title: CheckedListBox
         position: 130
