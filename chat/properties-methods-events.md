@@ -15,6 +15,9 @@ position: 9
 |**ChatElement**|Gets the main chat element.|
 |**Author**|Gets or sets the current author. This instance is used when is set to true as well as to determine the messages alignment and styling.|
 |**AutoAddUserMessages**|Gets or sets a value indicating whether messages typed by the user will automatically be added as to the chat.|
+|**AvatarSize**|Gets or sets the size of the avatar images.|
+|**ShowAvatars**|Gets or sets whether avatar images will be displayed in the chat window next to messages.|
+|**ShowMessagesOnOneSide**|Gets or sets whether messages will be displayed aligned to only one side of the chat window or on both.|
 |**TimeSeparatorInterval**|Gets or sets the time interval between messages that will trigger the automatic addition of a Time separator. If set to no Time separators will be added.|
 
 # Methods
