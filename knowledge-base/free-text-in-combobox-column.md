@@ -35,6 +35,68 @@ Firs you need to add a custom editor, this way you can override the __Value__ pr
 
 {{source=..\SamplesCS\KnowledgeBase\CustomComboBoxColumn.cs region=CustomEditor}} 
 {{source=..\SamplesVB\KnowledgeBase\CustomComboBoxColumn.vb region=CustomEditor}}
+````C#
+class CustomDropDownListEditor : RadDropDownListEditor
+{
+    public override object Value
+    {
+        get
+        {
+            object result = base.Value;
+            if (result == null || string.IsNullOrEmpty(result.ToString()))
+            {
+                var editor = this.EditorElement as RadDropDownListElement;
+                return editor.Text;
+            }
+            return result;
+        }
+        set
+        {
+            base.Value = value;
+            var editor = this.EditorElement as RadDropDownListElement;
+            if (editor.SelectedValue == null)
+            {
+                editor.Text = value.ToString();
+            }
+        }
+    }
+    public override void BeginEdit()
+    {
+        base.BeginEdit();
+        var editor = this.EditorElement as RadDropDownListElement;
+        editor.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown;
+    }
+}
+
+````
+````VB.NET
+Friend Class CustomDropDownListEditor
+    Inherits RadDropDownListEditor
+    Public Overrides Property Value() As Object
+        Get
+            Dim result As Object = MyBase.Value
+            If result Is Nothing OrElse String.IsNullOrEmpty(result.ToString()) Then
+                Dim editor = TryCast(Me.EditorElement, RadDropDownListElement)
+                Return editor.Text
+            End If
+            Return result
+        End Get
+        Set(ByVal value As Object)
+            MyBase.Value = value
+            Dim editor = TryCast(Me.EditorElement, RadDropDownListElement)
+            If editor.SelectedValue Is Nothing Then
+                editor.Text = value.ToString()
+            End If
+        End Set
+    End Property
+    Public Overrides Sub BeginEdit()
+        MyBase.BeginEdit()
+        Dim editor = TryCast(Me.EditorElement, RadDropDownListElement)
+        editor.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown
+    End Sub
+End Class
+
+````
 
 
 
@@ -46,6 +108,24 @@ Once the editor is ready you can change it by using the __EditorRequired__ event
 
 {{source=..\SamplesCS\KnowledgeBase\CustomComboBoxColumn.cs region=ChangeEditor}} 
 {{source=..\SamplesVB\KnowledgeBase\CustomComboBoxColumn.vb region=ChangeEditor}}
+````C#
+private void RadGridView1_EditorRequired(object sender, EditorRequiredEventArgs e)
+{
+    if (e.EditorType == typeof(RadDropDownListEditor))
+    {
+        e.EditorType = typeof(CustomDropDownListEditor);
+    }
+}
+
+````
+````VB.NET
+Private Sub RadGridView1_EditorRequired(ByVal sender As Object, ByVal e As EditorRequiredEventArgs)
+    If e.EditorType Is GetType(RadDropDownListEditor) Then
+        e.EditorType = GetType(CustomDropDownListEditor)
+    End If
+End Sub
+
+````
 
 
 
@@ -57,6 +137,34 @@ The final step is to create a custom column. This is necessary because the text 
 
 {{source=..\SamplesCS\KnowledgeBase\CustomComboBoxColumn.cs region=CustomColumn}} 
 {{source=..\SamplesVB\KnowledgeBase\CustomComboBoxColumn.vb region=CustomColumn}}
+````C#
+class CustomGridViewComboBoxColumn : GridViewComboBoxColumn
+{
+    public override object GetLookupValue(object cellValue)
+    {
+        object result = base.GetLookupValue(cellValue);
+        if (result == null)
+        {
+            return cellValue;
+        }
+        return result;
+    }
+}
+
+````
+````VB.NET
+Friend Class CustomGridViewComboBoxColumn
+    Inherits GridViewComboBoxColumn
+    Public Overrides Function GetLookupValue(ByVal cellValue As Object) As Object
+        Dim result As Object = MyBase.GetLookupValue(cellValue)
+        If result Is Nothing Then
+            Return cellValue
+        End If
+        Return result
+    End Function
+End Class
+
+````
 
 
 
