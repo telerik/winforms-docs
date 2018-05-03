@@ -15,6 +15,21 @@ To get started using **Microsoft Azure**, you will need to create a new account.
 
 >note You will need to enter a credit card number even for free account. 
 
+
+# Choose the Desired Service
+
+Here are the services that will be demonstrated in combination with the controls from the UI for WPF suite in this section:
+
+* [Blob storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account) service demonstrated in the [Blob Storage]({%slug cloud-services/azure/blob-storage%}) article.
+ 
+* [Image Analysis](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/) service demonstrated in the [Image Analysis]({%slug cloud-services/azure/image-analysis%}) article.
+
+* [Text Analysis](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/) service demonstrated in the [Image Analysis]({%slug cloud-services/azure/text-analysis%}) article.
+
+* [SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/) service demonstrated in the [SQL Database]({%slug cloud-services/azure/sql-database%}) article.
+
+* [Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction) service demonstrated in the [Cosmos DB]({%slug cloud-services/azure/cosmosdb%}) article.
+
 # See Also
 
 * [Cosmos DB]({%slug cloud-services/azure/cosmosdb%})
