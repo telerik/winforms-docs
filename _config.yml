@@ -11,6 +11,27 @@ navigation:
     winforms-converter/supported-controls:
         title: Supported Controls
         position: 3
+    cloud-integration:
+        title: Cloud Integration
+        position: 35
+    cloud-integration/aws:
+        title: Amanzon Web Services (AWS)
+        position: 3
+    cloud-integration/aws/connect-to-data-in-the-cloud:
+        title: Connect to Data in the Cloud
+        position: 2
+    cloud-integration/azure:
+        title: Azure
+        position: 1
+    cloud-integration/azure/connect-to-data-in-the-cloud:
+        title: Connect to Data in the Cloud
+        position: 2
+    cloud-integration/azure/cognitive-services:
+        title: Cognitive Services
+        position: 5
+    cloud-integration/google-cloud:
+        title: Google Cloud
+        position: 2
     installation-deployment-and-distribution:
         title: Installation, Deployment and Distribution
         position: 40
