@@ -12,6 +12,8 @@ position: 3
 
 **RadChat** offers different overlays to present the user a selection of choices either as a pop up, or over the messages' view. The overlay is visible until the user selects a certain choice. 
 
+![winforms/chat-overview 004](images/chat-overview004.gif)
+
 Depending on the information that is presented and the choice that should be made, the overlays can be one of the types listed below. 
 
 When you press the `OK` button, a new message will be automatically added with the selected option. The **SendMessage** event will be fired with the respective message as well. In the event handler you can change the message itself, e.g. modify its text.

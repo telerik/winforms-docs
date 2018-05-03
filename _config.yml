@@ -222,7 +222,7 @@ navigation:
         title: Printing Support
         position: 12
     chat:
-        title: Chat
+        title: Chat UI
         position: 125
     chat/chat-items:
         title: Chat Items
