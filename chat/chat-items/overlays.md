@@ -67,18 +67,18 @@ You have access to the calendar itself by the ChatCalendarOverlay.**Calendar** p
 {{source=..\SamplesVB\Chat\ChatOverlaysActions.vb region=AddDateTimeOverlay}}
 
 ````C#
-            ChatDateTimeOverlay calendarOverlay = new ChatDateTimeOverlay("Select a date and time",DateTime.Now); 
+            ChatDateTimeOverlay dateTimerOverlay = new ChatDateTimeOverlay("Select a date and time",DateTime.Now); 
             bool showAsPopup = false;
             Author author = new Author(Properties.Resources.andrew1, "Andrew");
-            ChatOverlayMessage overlayMessage = new ChatOverlayMessage(calendarOverlay, showAsPopup, author, DateTime.Now);
+            ChatOverlayMessage overlayMessage = new ChatOverlayMessage(dateTimerOverlay, showAsPopup, author, DateTime.Now);
             this.radChat1.AddMessage(overlayMessage);     
 
 ````
 ````VB.NET
-        Dim calendarOverlay As ChatDateTimeOverlay = New ChatDateTimeOverlay("Select a date and time", DateTime.Now)
+        Dim dateTimerOverlay As ChatDateTimeOverlay = New ChatDateTimeOverlay("Select a date and time", DateTime.Now)
         Dim showAsPopup As Boolean = False
         Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
-        Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(calendarOverlay, showAsPopup, author, DateTime.Now)
+        Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(dateTimerOverlay, showAsPopup, author, DateTime.Now)
         Me.radChat1.AddMessage(overlayMessage)
 
 ```` 

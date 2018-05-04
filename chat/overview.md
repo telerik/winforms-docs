@@ -16,7 +16,7 @@ Since **R2 2018** Telerik UI for WinForms suite offers **RadChat** control. This
 
 ## Key Features
 
-- Integration with all the major conversational UI APIs or services available today – Microsoft Bot, Google’s API.AI, Amazon LEX, and more. 
+- Integration with all the major conversational UI APIs or services available today – Microsoft Bot, Google’s API.AI, Amazon LEX, and more. You can refer to our Demo Application >> Chat UI examples. 
 - A variety of chat items for better user experience:
 	* [Messages]({%slug winforms/chat/chat-items/messages%}): simple message, media message, carousel messages, time separator
 	* [Cards]({%slug winforms/chat/chat-items/cards%}): product cards, flight cards, weather cards, etc.

@@ -81,7 +81,7 @@ The below sample code demonstrates how to add a toolbar action that inserts an i
 
 {{endregion}}
 
->caption Figure 2. Inserting image from a toolbar action
+>caption Figure 2. Inserting an image from a toolbar action
 
 ![winforms/chat-items-toolbar 001](images/chat-items-toolbar001.gif) 
 

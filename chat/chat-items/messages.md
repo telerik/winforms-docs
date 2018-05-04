@@ -39,7 +39,7 @@ Me.radChat1.ChatElement.MessagesViewElement.TimeSeparatorInterval = TimeSpan.Fro
 
 {{endregion}}
 
-When a new message is added, the **TimeSeparatorAdding** event is fired. It gives you the opportunity to control whether to add a time separator or not no matter the already specified **TimeSeparatorInterval**. The following example adds a time separator if the interval between messages is more than 20 secods:
+When a new message is added, the **TimeSeparatorAdding** event is fired. It gives you the opportunity to control whether to add a time separator or not no matter the already specified **TimeSeparatorInterval**. The following example adds a time separator if the interval between messages is more than 20 seconds:
 
 #### Handling TimeSeparatorAdding
 
@@ -74,7 +74,7 @@ When a new message is added, the **TimeSeparatorAdding** event is fired. It give
 
 ## ChatTextMessage
 
-A **ChatTextMessage** represents a single text message by a certain author and at a certain time.
+A **ChatTextMessage** represents a single text message by a certain author and sent at certain time.
 
 >caption Figure 3: ChatTextMessages
 
@@ -117,7 +117,7 @@ A **ChatTextMessage** represents a single text message by a certain author and a
 
 ## ChatMediaMessage
 
-A **ChatMediaMessage** represents an image message by a certain author and at a certain time.
+A **ChatMediaMessage** represents an image message by a certain author and sent at certain time.
 
 
 >caption Figure 4: ChatMediaMessage
@@ -213,7 +213,7 @@ A **ChatCarouselMessage** allows adding and visualizing multiple [card elements]
 
 ## ChatOverlayMessage
 
-A **ChatOverlayMessage** represents a **ChatMessage** that displays an [overlay element]() either as a popup, or over the messages container. It requires some action by the user, e.g. pick a date or select an item. Once the action is performed, a message is inserted in the chat view .
+A **ChatOverlayMessage** represents a **ChatMessage** that displays an [overlay element]() either as a popup, or over the messages container. It requires some action by the user, e.g. pick a date or select an item. Once the action is performed, a message is inserted in the chat view.
 
 >caption Figure 6: ChatOverlayMessage
 

@@ -25,7 +25,7 @@ This article will get you familiar with the internal elements structure of **Rad
 2. **ChatMessagesViewElement** - the main container that hosts the messages.
 3. **RadTextBoxElement** - the text box which handles user's input.
 4. **ChatMessageNameElement** - represents the author's name and time of the message. 
-5. **ChatMessageBubbleElement** - contains the message's content
+5. **ChatMessageBubbleElement** - contains the message's content.
 6. **ChatMessageAvatarElement** - represents the author's avatar. 
 7. **TextMessageItemElement** - represents a single text message.
 8. **MediaMessageItemElement** - represents a single image message.
@@ -39,7 +39,7 @@ This article will get you familiar with the internal elements structure of **Rad
 2. **StackLayoutPanel** - the container that host all information elements.
 3. **LightVisualElement** - represents a single text/image element in the card.
 
-**ChatProductCardElement** and **ChatWeatherCardElement** have identical visual structure: one **StackLayoutPanel** that hosts several **LightVisualElement**s.
+**ChatProductCardElement** and **ChatWeatherCardElement** have identical visual structure: one **StackLayoutPanel** that hosts several **LightVisualElement** s.
 
 >caption Figure 4: ChatProductCardElement's visual structure
 

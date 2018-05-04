@@ -15,7 +15,7 @@ position: 4
 
 >caption Figure 1: Suggested Actions
 
-![winforms/chat-items-suggested-actions 001](images/chat-items-suggested-actions004.gif) 
+![winforms/chat-items-suggested-actions 001](images/chat-items-suggested-actions001.gif) 
 
 **SuggestedActionDataItem** is single action unit that can be added to a [ChatSuggestedActionsMessage]({%slug winforms/chat/chat-items/messages%})
 
