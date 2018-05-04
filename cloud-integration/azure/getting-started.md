@@ -18,7 +18,7 @@ To get started using **Microsoft Azure**, you will need to create a new account.
 
 # Choose the Desired Service
 
-Here are the services that will be demonstrated in combination with the controls from the UI for WPF suite in this section:
+Here are the services that will be demonstrated in combination with the controls from the UI for WinForms suite in this section:
 
 * [Blob storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account) service demonstrated in the [Blob Storage]({%slug cloud-services/azure/blob-storage%}) article.
  
