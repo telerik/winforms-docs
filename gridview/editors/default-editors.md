@@ -38,7 +38,114 @@ In some cases you will need to set the properties of the editor element. The fol
 #### Accessing Editors
 
 {{source=..\SamplesCS\GridView\Editors\HandlingEditorsEvents.cs region=EditorsExamples}} 
-{{source=..\SamplesVB\GridView\Editors\HandlingEditorsEvents.vb region=EditorsExamples}} 
+{{source=..\SamplesVB\GridView\Editors\HandlingEditorsEvents.vb region=EditorsExamples}}
+````C#
+private void RadGridView1_CellEditorInitialized(object sender, Telerik.WinControls.UI.GridViewCellEventArgs e)
+{
+    var textboxEditor = e.ActiveEditor as RadTextBoxEditor;
+    if (textboxEditor != null)
+    {
+        var element = textboxEditor.EditorElement as RadTextBoxEditorElement;
+        element.TextBoxItem.MaxLength = 10;
+    }
+    var spinEditor = e.ActiveEditor as GridSpinEditor;
+    if (spinEditor != null)
+    {
+        var element = spinEditor.EditorElement as RadSpinEditorElement;
+        element.MaxValue = 10;
+        element.MinValue = -10;
+        element.ShowUpDownButtons = true;
+    }
+    var mccbEditor = e.ActiveEditor as RadMultiColumnComboBoxElement;
+    if (mccbEditor != null)
+    {
+        mccbEditor.AutoSizeDropDownHeight = true;
+        mccbEditor.AutoSizeDropDownToBestFit = true;
+    }
+    var maskedEditBoxEditor = e.ActiveEditor as RadMaskedEditBoxEditor;
+    if (maskedEditBoxEditor != null)
+    {
+        var element = maskedEditBoxEditor.EditorElement as RadMaskedEditBoxEditorElement;
+        element.TextBoxItem.TextBoxControl.BackColor = Color.Black;
+        element.TextBoxItem.BackColor = Color.Black;
+    }
+    var dateTimeEditor = e.ActiveEditor as RadDateTimeEditor;
+    if (dateTimeEditor != null)
+    {
+        var element = dateTimeEditor.EditorElement as RadDateTimeEditorElement;
+        element.MinDate = DateTime.Now;
+    }
+    var timeEditor = e.ActiveEditor as GridTimePickerEditor;
+    if (timeEditor != null)
+    {
+        var element = timeEditor.EditorElement as RadTimePickerElement;
+        element.ClockPosition = ClockPosition.HideClock;
+    }
+    var ddlEditor = e.ActiveEditor as RadDropDownListEditor;
+    if (ddlEditor != null)
+    {
+        var element = ddlEditor.EditorElement as RadDropDownListEditorElement;
+        element.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown;
+        element.AutoCompleteMode = AutoCompleteMode.Suggest;
+    }
+    var browseEditor = e.ActiveEditor as GridBrowseEditor;
+    if (browseEditor != null)
+    {
+        var element = browseEditor.EditorElement as RadBrowseEditorElement;
+        element.ReadOnly = true;
+    }
+}
+
+````
+````VB.NET
+Private Sub RadGridView1_CellEditorInitialized1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellEventArgs)
+    Dim textboxEditor = TryCast(e.ActiveEditor, RadTextBoxEditor)
+    If textboxEditor IsNot Nothing Then
+        Dim element = TryCast(textboxEditor.EditorElement, RadTextBoxEditorElement)
+        element.TextBoxItem.MaxLength = 10
+    End If
+    Dim spinEditor = TryCast(e.ActiveEditor, GridSpinEditor)
+    If spinEditor IsNot Nothing Then
+        Dim element = TryCast(spinEditor.EditorElement, RadSpinEditorElement)
+        element.MaxValue = 10
+        element.MinValue = -10
+        element.ShowUpDownButtons = True
+    End If
+    Dim mccbEditor = TryCast(e.ActiveEditor, RadMultiColumnComboBoxElement)
+    If mccbEditor IsNot Nothing Then
+        mccbEditor.AutoSizeDropDownHeight = True
+        mccbEditor.AutoSizeDropDownToBestFit = True
+    End If
+    Dim maskedEditBoxEditor = TryCast(e.ActiveEditor, RadMaskedEditBoxEditor)
+    If maskedEditBoxEditor IsNot Nothing Then
+        Dim element = TryCast(maskedEditBoxEditor.EditorElement, RadMaskedEditBoxEditorElement)
+        element.TextBoxItem.TextBoxControl.BackColor = Color.Black
+        element.TextBoxItem.BackColor = Color.Black
+    End If
+    Dim dateTimeEditor = TryCast(e.ActiveEditor, RadDateTimeEditor)
+    If dateTimeEditor IsNot Nothing Then
+        Dim element = TryCast(dateTimeEditor.EditorElement, RadDateTimeEditorElement)
+        element.MinDate = Date.Now
+    End If
+    Dim timeEditor = TryCast(e.ActiveEditor, GridTimePickerEditor)
+    If timeEditor IsNot Nothing Then
+        Dim element = TryCast(timeEditor.EditorElement, RadTimePickerElement)
+        element.ClockPosition = ClockPosition.HideClock
+    End If
+    Dim ddlEditor = TryCast(e.ActiveEditor, RadDropDownListEditor)
+    If ddlEditor IsNot Nothing Then
+        Dim element = TryCast(ddlEditor.EditorElement, RadDropDownListEditorElement)
+        element.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown
+        element.AutoCompleteMode = AutoCompleteMode.Suggest
+    End If
+    Dim browseEditor = TryCast(e.ActiveEditor, GridBrowseEditor)
+    If browseEditor IsNot Nothing Then
+        Dim element = TryCast(browseEditor.EditorElement, RadBrowseEditorElement)
+        element.ReadOnly = True
+    End If
+End Sub
+
+```` 
 
 
 {{endregion}}
