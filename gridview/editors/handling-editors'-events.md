@@ -76,7 +76,10 @@ End Sub
 
 ````
 
-{{endregion}}# See Also
+{{endregion}}
+
+# See Also
+
 * [API]({%slug winforms/gridview/editors/api%})
 
 * [Customizing editor behavior]({%slug winforms/gridview/editors/customizing-editor-behavior%})

@@ -29,6 +29,20 @@ Depending on the column's type, **RadGridView** activates an appropriate editor 
 
 The default editor can easily be replaced by using the **EditorRequired** event and specifying either the **EditorType** or the **Editor** property in the **EditorRequiredEventArgs**. This is the appropriate place to assign a [custom editor]({%slug winforms/gridview/editors/using-custom-editors%}) as well. If you need to apply some settings to the editor, the **CellEditorInitialized** event is the right place to do it.
  
+
+## Accessing editors and setting their properties. 
+
+In some cases you will need to set the properties of the editor element. The following examples will illustrate how you can get the elements of the most used editors in the __CellEditorInitialized__ event handler. 
+
+
+#### Accessing Editors
+
+{{source=..\SamplesCS\GridView\Editors\HandlingEditorsEvents.cs region=EditorsExamples}} 
+{{source=..\SamplesVB\GridView\Editors\HandlingEditorsEvents.vb region=EditorsExamples}} 
+
+
+{{endregion}}
+
 # See Also
 
 * [API]({%slug winforms/gridview/editors/api%})
