@@ -203,13 +203,13 @@ Next link
 
 {{endregion}} 
 
-## OtherCustomizationOptions
+## Other Customization Options
 
 __ToolTip__
 
 By default, hyperlinks take a fixed string as a tool tip. The default format is:
 
->note {0}{1} to follow link
+>note "{0}{1} to follow link" - The first parameter is the URL, the second is "Ctrl + Click" which is taken from the localization file.  
 >
 
 You have control over it using the __HyperlinkToolTipFormatString__ of **RadRichTextEditor**, which will set the format for all hyperlinks in the document.
