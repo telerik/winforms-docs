@@ -25,7 +25,7 @@ __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, me
 
 * [Standard:]({%slug winforms/editors/maskededitbox/standard-masks%}) You can define standard masks
 
-* __Regex:__ You can define [Regex expressions](http://msdn.microsoft.com/en-us/library/2k3te2cs%28v=vs.80%29.aspx) as masks.
+* __Regex:__ You can define [Regex expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions) as masks.
 
 * __IP:__ Predefined mask for IP input.
 

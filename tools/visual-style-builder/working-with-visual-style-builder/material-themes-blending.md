@@ -56,3 +56,5 @@ After loading the custom theme in [Theme Viewer]({%slug winforms/tools/themeview
 
 * [Touch Enabled Themes]({%slug winforms/themes/touch-enabled-themes%})
 * [Customizing the Material Theme]({%slug winforms/themes/theme-tutorials/customizing-material-theme%})
+* [Color Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%})
+* [Fluent Theme Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/fluent-themes-blending%})

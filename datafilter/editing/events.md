@@ -116,6 +116,19 @@ End Sub
 
 {{endregion}}
 
+
+### Check which element is being edited.
+
+Both editors, field and filter type are TreeViewDropDownListEditor and if you need to customize only one of them you need to know which is edited. This can be achieved the using the DataFilterCriteriaElement.__EditingElement__ property. This is demonstrated in the following example. 
+
+#### Determine which item is edited. 
+
+{{source=..\SamplesCS\DataFilter\DataFilterEditing.cs region=EditorType}} 
+{{source=..\SamplesVB\DataFilter\DataFilterEditing.vb region=EditorType}}
+
+
+{{endregion}}
+
 ## Edited
 
 The RadDataFilter.**Edited** event occurs after the filter node is edited.

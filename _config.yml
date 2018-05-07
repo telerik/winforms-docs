@@ -242,6 +242,15 @@ navigation:
     chartview/printing-support:
         title: Printing Support
         position: 12
+    chat:
+        title: Chat UI
+        position: 125
+    chat/chat-items:
+        title: Chat Items
+        position: 3
+    chat/customizing-appearance:
+        title: Customizing Appearance
+        position: 7
     checkedlistbox:
         title: CheckedListBox
         position: 130
@@ -669,6 +678,12 @@ navigation:
     gridview/printing-support:
         title: Printing Support
         position: 27
+    image-editor:
+        title: Image Editor
+        position: 269	
+    image-editor/features:
+        title: Features
+        position: 3			
     layoutcontrol:
         title: LayoutControl
         position: 270
