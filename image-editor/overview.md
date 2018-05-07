@@ -14,7 +14,7 @@ __RadImageEditor__ is a control that can be used to preview and edit images in d
 
 ![](images/image-editor-overview001.png)
 
-The operations it can perform on an image are: 
+## Key Features
 
 * Crop 
 * Canvas Resize
@@ -28,25 +28,25 @@ The operations it can perform on an image are:
 * Drawing
 * Panning
 
-The image formats it supports are: 
+## Supported Formats
 
 For import: 
 
-* JPEG; 
-* PNG; 
+* JPEG 
+* PNG 
 * BMP
-* TIFF;
-* GIF;
-* ICO.
+* TIFF
+* GIF
+* ICO
 
 
 For export: 
 
-* JPEG;
-* PNG; 
+* JPEG
+* PNG
 * BMP
-* TIFF;
-* GIF.
+* TIFF
+* GIF
 
 
 # See Also

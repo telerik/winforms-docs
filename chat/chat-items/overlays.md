@@ -12,6 +12,8 @@ position: 3
 
 **RadChat** offers different overlays to present the user a selection of choices either as a pop up, or over the messages' view. The overlay is visible until the user selects a certain choice. 
 
+![winforms/chat-overview 004](images/chat-overview004.gif)
+
 Depending on the information that is presented and the choice that should be made, the overlays can be one of the types listed below. 
 
 When you press the `OK` button, a new message will be automatically added with the selected option. The **SendMessage** event will be fired with the respective message as well. In the event handler you can change the message itself, e.g. modify its text.
@@ -65,18 +67,18 @@ You have access to the calendar itself by the ChatCalendarOverlay.**Calendar** p
 {{source=..\SamplesVB\Chat\ChatOverlaysActions.vb region=AddDateTimeOverlay}}
 
 ````C#
-            ChatDateTimeOverlay calendarOverlay = new ChatDateTimeOverlay("Select a date and time",DateTime.Now); 
+            ChatDateTimeOverlay dateTimerOverlay = new ChatDateTimeOverlay("Select a date and time",DateTime.Now); 
             bool showAsPopup = false;
             Author author = new Author(Properties.Resources.andrew1, "Andrew");
-            ChatOverlayMessage overlayMessage = new ChatOverlayMessage(calendarOverlay, showAsPopup, author, DateTime.Now);
+            ChatOverlayMessage overlayMessage = new ChatOverlayMessage(dateTimerOverlay, showAsPopup, author, DateTime.Now);
             this.radChat1.AddMessage(overlayMessage);     
 
 ````
 ````VB.NET
-        Dim calendarOverlay As ChatDateTimeOverlay = New ChatDateTimeOverlay("Select a date and time", DateTime.Now)
+        Dim dateTimerOverlay As ChatDateTimeOverlay = New ChatDateTimeOverlay("Select a date and time", DateTime.Now)
         Dim showAsPopup As Boolean = False
         Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
-        Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(calendarOverlay, showAsPopup, author, DateTime.Now)
+        Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(dateTimerOverlay, showAsPopup, author, DateTime.Now)
         Me.radChat1.AddMessage(overlayMessage)
 
 ```` 

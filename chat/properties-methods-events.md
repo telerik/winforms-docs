@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Properties
+# RadChat's Properties
 
 |Property|Description|
 |------|------|
@@ -19,6 +19,25 @@ position: 9
 |**ShowAvatars**|Gets or sets whether avatar images will be displayed in the chat window next to messages.|
 |**ShowMessagesOnOneSide**|Gets or sets whether messages will be displayed aligned to only one side of the chat window or on both.|
 |**TimeSeparatorInterval**|Gets or sets the time interval between messages that will trigger the automatic addition of a Time separator. If set to no Time separators will be added.|
+|**AvatarSize**|Gets or sets the size of the avatar images.|
+|**ShowAvatars**|Gets or sets whether avatar images will be displayed in the chat window next to messages.|
+|**ShowMessagesOnOneSide**|Gets or sets whether messages will be displayed aligned to only one side of the chat window or on both.|
+
+# RadChatElement's Properties
+
+|Property|Description|
+|------|------|
+|**MessagesViewElement**|Gets the messages view element.|
+|**SuggestedActionsElement**|Gets the actions element.|
+|**ToolbarElement**|Gets the toolbar element.|
+|**InputTextBox**|Gets the input box.|
+|**ShowToolbarButtonElement**|Gets the toolbar button element in the input box.|
+|**SendButtonElement**|Gets the send button element in the input box.|
+|**OverlayElement**|Gets the overlay element.|
+|**OverlayPopupElement**|Gets the overlay popup element.|
+|**IsOverlayShown**|Indicates whether the overlay is shown.|
+|**IsPopupOverlayShown**|Indicates whether the popup overlay is shown.|
+|**ChatFactory**|Gets or sets the chat factory.|
 
 # Methods
 

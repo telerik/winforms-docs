@@ -22,7 +22,7 @@ position: 0
 
 * **CardMessageItemElement**: A single message item presented in a card. The card item can have:
 
-  * **ChatImageCardElement**: A card element with an image
+  * **ChatImageCardElement**: A card element with an image.
   
   * **ChatFlightCardElement**: Predefined card element providing flight information.
 

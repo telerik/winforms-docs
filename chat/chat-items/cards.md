@@ -12,6 +12,8 @@ position: 0
 
 **RadChat** offers different cards to display data in a structured layout. Thus, the visually ordered information is easier to digest for the user. In addition, it may respond to users' action.
 
+![winforms/chat-overview 003](images/chat-overview003.gif) 
+
 Depending on the information that is presented, the cards can be one of the following types:
 
 ## ChatImageCardElement
