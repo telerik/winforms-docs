@@ -20,7 +20,7 @@ When you press the `OK` button, a new message will be automatically added with t
 
 ## ChatCalendarOverlay
 
-**ChatCalendarOverlay** offers to the user the opportunity to select a date from the calendar. 
+**ChatCalendarOverlay** offers to the user the ability to select a date from the calendar. 
 
 >caption Figure 1: ChatCalendarOverlay
 
@@ -50,7 +50,7 @@ You have access to the calendar itself by the ChatCalendarOverlay.**Calendar** p
 
 ## ChatDateTimeOverlay
 
-**ChatDateTimeOverlay** offers to the user the opportunity to select date and time from the picker. 
+**ChatDateTimeOverlay** offers to the user the ability to select date and time from the picker. 
 
 >caption Figure 2: ChatDateTimeOverlay
 
@@ -78,7 +78,7 @@ this.radChat1.AddMessage(overlayMessage);
 
 ## ChatListOverlay
 
-**ChatListOverlay** offers to the user the opportunity to select an item from a predefined list of choices.
+**ChatListOverlay** offers to the user the ability to select an item from a predefined list of choices.
 
 >caption Figure 3: ChatListOverlay
 
@@ -112,7 +112,7 @@ You have access to the list view by the ChatListOverlay.**ListView** property.
 
 ## ChatTimeOverlay
 
-**ChatTimeOverlay** offers to the user the opportunity to select time from the picker. 
+**ChatTimeOverlay** offers to the user the ability to select time from the picker. 
 
 >caption Figure 4: ChatListOverlay
 
