@@ -23,7 +23,7 @@ There are 3 options that you can use to draw on the image.
 
 ## Draw Text
 
-To draw text click the button and the DrawText dialog will be shown. In it you need to provide the text and set various other options.
+To draw text click the button and the __DrawText__ dialog will be shown. In it you need to provide the text and set various other options.
 
 >caption Figure 2: DrawText Dialog
 
@@ -32,7 +32,7 @@ To draw text click the button and the DrawText dialog will be shown. In it you n
 
 ### Drawing text programmatically
 
-The following snippet shows how you can add text using the RadIamgeEditor API.
+The following snippet shows how you can add text using the RadImageEditor API.
 
 {{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=DrawText}} 
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=DrawText}}
@@ -65,7 +65,7 @@ Once you are ready with the settings you can draw your shape with the mouse.
 
 ### Draw Shape Programmatically
 
-To draw a shape in the code behind you need to provide a a path. The bellow code demonstrates how you ca create a RoundRectShape  
+To draw a shape in the code behind you need to provide a path. The bellow code demonstrates how you ca create a RoundRectShape: 
 
 {{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=DrawShape}} 
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=DrawShape}}

@@ -11,7 +11,7 @@ position: 9
 
 # Adjustments
 
-RadImageEditor supports the following image adjustments.
+__RadImageEditor__ supports the following image adjustments.
 
 * [Hue](#hue-adjusment)
 * [Saturation](#saturation-adjusment)

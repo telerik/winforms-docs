@@ -16,17 +16,17 @@ __RadImageEditor__ is a control that can be used to preview and edit images in d
 
 ## Key Features
 
-* Crop 
-* Canvas Resize
-* Round Corners (including border)
-* Hue Shift
-* Saturation
-* Contrast (and brightness) 
-* Sharpen and Blur
-* Rotating and Flipping
-* Typing
-* Drawing
-* Panning
+* [Crop]({%slug radimageeditor-tools-crop%}) 
+* [Canvas Resize]({%slug radimageeditor-canvas-resize%}) 
+* [Round Corners (including border)]({%slug radimageeditor-round-corners%}) 
+* [Hue Shift]({%slug radimageeditor-features-adjustments%}) 
+* [Saturation]({%slug radimageeditor-features-adjustments%}) 
+* [Contrast (and brightness)]({%slug radimageeditor-features-adjustments%})  
+* [Sharpen and Blur]({%slug radimageeditor-features-effects%}) 
+* [Rotating and Flipping]({%slug radimageeditor-rotate%}) 
+* [Typing]({%slug radimageeditor-tools-drawing%}) 
+* [Drawing]({%slug radimageeditor-tools-drawing%}) 
+* [Panning]({%slug radimageeditor-tools-pan%}) 
 
 ## Supported Formats
 

@@ -10,13 +10,13 @@ position: 6
 
 # Crop via the UI
 
-When pressing the crop button a red border will appear on the image. You can adjust the size and and then pressing Accept will confirm the operation.
+When pressing the crop button a red border will appear on the image. You can adjust the size and then pressing __Accept__ will confirm the operation.
 
 ![](images/image-editor-crop001.png)
 
 # Crop Programmatically
 
-To perform a Crop operation use the Crop method. You need to pass a rectangle to it.
+To perform a Crop operation use the __Crop__ method. You need to pass a rectangle to it.
 
 #### Crop Programmatically
 

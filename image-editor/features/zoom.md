@@ -10,7 +10,7 @@ position: 11
 
 # Zoom
 
-The Zoom tool allows you to set zoom the image. You can use the track bar or select specific value from the drop-down list. 
+The Zoom tool allows you to set zoom to the image. You can use the track bar or select specific value from the drop-down list. 
 
 ![](images/image-editor-zoom001.gif)
 

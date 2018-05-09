@@ -11,14 +11,14 @@ position: 1
 
 # Canvas Resize via UI
 
-You can use the __Canvas Resize__ button which will open the canvas resize dialog. In the dialog you can set the alignment, the size, and the BackColor/
+You can use the __Canvas Resize__ button which will open the canvas resize dialog. In the dialog you can set the alignment, the size, and the BackColor.
 
 ![](images/image-editor-canvas-resize001.png)
 ![](images/image-editor-canvas-resize002.png)
 
 # Canvas Resize Programmatically
 
-The following snippet shows how you can use the __ResizeCanvas__ method. You will need to specify the size the alignment and the BackColor.
+The following snippet shows how you can use the __ResizeCanvas__ method. You will need to specify the size, the alignment, and the BackColor.
 
 #### Use the ResizeCanvas method
 

@@ -11,6 +11,8 @@ position: 1
 
 # Element Structure
 
+This article shows the ImageEditor structure and elements hierarchy.
+
 >caption Figure 1: RadImageEditor structure
 
 ![](images/image-editor-structure002.png)

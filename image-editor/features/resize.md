@@ -10,7 +10,7 @@ position: 0
 
 # Resize using the UI
 
-You can use the __Resize__ button which will open the resize dialog. The resize dialog where you can enter the desired size.
+You can use the __Resize__ button which will open the resize dialog. In this dialog you can enter the new size of the image.
 
 ![](images/image-editor-resize002.png)
 ![](images/image-editor-resize001.png)

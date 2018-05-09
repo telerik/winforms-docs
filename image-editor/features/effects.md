@@ -40,7 +40,7 @@ radImageEditor1.ImageEditorElement.Sharpen(100)
 
 # Blur
 
-Once you click the Blur button the sharpen dialog will appear and you will be able to apply the effect.
+Once you click the Blur button the blur dialog will appear and you will be able to apply the effect.
 
 ![](images/image-editor-effects003.png)
 
