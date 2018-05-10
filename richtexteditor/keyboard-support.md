@@ -28,6 +28,9 @@ Telerik __RadRichTextEditor__ for WinForms supports shortcuts. There are default
 |ToggleSubscript|Ctrl+Shift+'+'|
 |ToggleUnderline|Ctrl+U|
 |ClearFormatting|Ctrl+Space|
+|Copy Formatting|Ctrl+Shift+C|
+|Paste Formatting|Ctrl+Shift+V|
+|Cancel Format Painter|Esc|
 |ChangeTextAlignment with parameter RadTextAlignment.Justify|Ctrl+J|
 |ChangeTextAlignment with parameter RadTextAlignment.Right|Ctrl+R|
 |ChangeTextAlignment with parameter RadTextAlignment.Left|Ctrl+L|
