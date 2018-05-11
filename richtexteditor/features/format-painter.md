@@ -10,7 +10,7 @@ position: 11
 
 # Format Painter
 
-The Format Painter feature in **RadRichTextBox** enables you to copy the formatting of a document element and apply it to other elements. the functionality can be used programmatically through the methods of the [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}) class or you can use the UI.
+The Format Painter feature in **RadRichTextEditor** enables you to copy the formatting of a document element and apply it to other elements. the functionality can be used programmatically through the methods of the [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}) class or you can use the UI.
       
 * [UI and Commands](#ui-and-commands)
 * [Using Format Painter Programmatically](#using-format-painter-programmatically)
