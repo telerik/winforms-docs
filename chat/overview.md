@@ -22,8 +22,9 @@ Since **R2 2018** Telerik UI for WinForms suite offers **RadChat** control. This
 	* [Cards]({%slug winforms/chat/chat-items/cards%}): product cards, flight cards, weather cards, etc.
 	* [Overlays]({%slug winforms/chat/chat-items/overlays%}): calendar, time picker, list, etc.
 	* [Suggested Actions]({%slug winforms/chat/chat-items/suggested-actions%})
-- Highly customizable message and card content
-- Predefined themes
+- Highly customizable message and card content.
+- [Toolbar]({%slug winforms/chat/toolbar%}) which allows adding custom actions (adding an image for example).
+- Predefined themes.
 
 	![winforms/chat-overview 006](images/chat-overview006.png) 	
 
