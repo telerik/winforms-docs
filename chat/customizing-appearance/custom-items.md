@@ -134,7 +134,6 @@ public class MyTextMessageItemElement : TextMessageItemElement
 
 ````
 ````VB.NET
-
 ```` 
 
 

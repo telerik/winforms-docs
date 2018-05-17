@@ -127,7 +127,6 @@ public class CustomChatFactory : ChatFactory
 
 ````
 ````VB.NET
-
 ```` 
 
 
