@@ -127,6 +127,64 @@ public class CustomChatFactory : ChatFactory
 
 ````
 ````VB.NET
+Public Sub SetCustomFactory()
+    Me.radChat1.ChatElement.ChatFactory = New CustomChatFactory()
+End Sub
+Public Class CustomChatFactory
+    Inherits ChatFactory
+    Public Overrides Function CreateItemElement(ByVal item As BaseChatDataItem) As BaseChatItemElement
+        If item.[GetType]() = GetType(TextMessageDataItem) Then
+            Return New TextMessageItemElement()
+        ElseIf item.[GetType]() = GetType(CardMessageDataItem) Then
+            Return New CardMessageItemElement()
+        ElseIf item.[GetType]() = GetType(CarouselMessageDataItem) Then
+            Return New CarouselMessageItemElement()
+        ElseIf item.[GetType]() = GetType(MediaMessageDataItem) Then
+            Return New MediaMessageItemElement()
+        ElseIf item.[GetType]() = GetType(ChatTimeSeparatorDataItem) Then
+            Return New ChatTimeSeparatorItemElement()
+        End If
+        Return MyBase.CreateItemElement(item)
+    End Function
+    Public Overrides Function CreateCardElement(ByVal cardDataItem As BaseChatCardDataItem) As BaseChatCardElement
+        If cardDataItem.[GetType]() = GetType(ChatFlightCardDataItem) Then
+            Return New ChatFlightCardElement(TryCast(cardDataItem, ChatFlightCardDataItem))
+        ElseIf cardDataItem.[GetType]() = GetType(ChatImageCardDataItem) Then
+            Return New ChatImageCardElement(TryCast(cardDataItem, ChatImageCardDataItem))
+        ElseIf cardDataItem.[GetType]() = GetType(ChatProductCardDataItem) Then
+            Return New ChatProductCardElement(TryCast(cardDataItem, ChatProductCardDataItem))
+        ElseIf cardDataItem.[GetType]() = GetType(ChatWeatherCardDataItem) Then
+            Return New ChatWeatherCardElement(TryCast(cardDataItem, ChatWeatherCardDataItem))
+        End If
+        Return MyBase.CreateCardElement(cardDataItem)
+    End Function
+    Public Overrides Function CreateToolbarActionElement(ByVal item As ToolbarActionDataItem) As ToolbarActionElement
+        Return New ToolbarActionElement(item)
+    End Function
+    Public Overrides Function CreateSuggestedActionElement(ByVal item As SuggestedActionDataItem) As SuggestedActionElement
+        Return New SuggestedActionElement(item)
+    End Function
+    Public Overrides Function CreateDataItem(ByVal message As ChatMessage) As BaseChatDataItem
+        Dim textMessage As ChatTextMessage = TryCast(message, ChatTextMessage)
+        If textMessage IsNot Nothing Then
+            Return New TextMessageDataItem(textMessage)
+        End If
+        Dim mediaMessage As ChatMediaMessage = TryCast(message, ChatMediaMessage)
+        If mediaMessage IsNot Nothing Then
+            Return New MediaMessageDataItem(mediaMessage)
+        End If
+        Dim cardMessage As ChatCardMessage = TryCast(message, ChatCardMessage)
+        If cardMessage IsNot Nothing Then
+            Return New CardMessageDataItem(cardMessage)
+        End If
+        Dim carouselMessage As ChatCarouselMessage = TryCast(message, ChatCarouselMessage)
+        If carouselMessage IsNot Nothing Then
+            Return New CarouselMessageDataItem(carouselMessage)
+        End If
+        Return MyBase.CreateDataItem(message)
+    End Function
+End Class
+
 ```` 
 
 

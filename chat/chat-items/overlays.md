@@ -41,6 +41,12 @@ this.radChat1.AddMessage(overlayMessage);
 
 ````
 ````VB.NET
+Dim calendarOverlay As ChatCalendarOverlay = New ChatCalendarOverlay("Select a date") 
+Dim showAsPopup As Boolean = False
+Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
+Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(calendarOverlay, showAsPopup, author, DateTime.Now)
+Me.radChat1.AddMessage(overlayMessage)
+
 ```` 
 
 
@@ -71,6 +77,12 @@ this.radChat1.AddMessage(overlayMessage);
 
 ````
 ````VB.NET
+Dim dateTimerOverlay As ChatDateTimeOverlay = New ChatDateTimeOverlay("Select a date and time", DateTime.Now)
+Dim showAsPopup As Boolean = False
+Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
+Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(dateTimerOverlay, showAsPopup, author, DateTime.Now)
+Me.radChat1.AddMessage(overlayMessage)
+
 ```` 
 
 
@@ -103,6 +115,15 @@ this.radChat1.AddMessage(overlayMessage);
 
 ````
 ````VB.NET
+Dim listOverlay As ChatListOverlay = New ChatListOverlay("List overlay")
+For i As Integer = 0 To 10 - 1
+    listOverlay.ListView.Items.Add("Item " & i)
+Next
+Dim showAsPopup As Boolean = False
+Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
+Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(listOverlay, showAsPopup, author, DateTime.Now)
+Me.radChat1.AddMessage(overlayMessage)
+
 ```` 
 
 
@@ -133,6 +154,12 @@ this.radChat1.AddMessage(overlayMessage);
 
 ````
 ````VB.NET
+Dim calendarOverlay As ChatTimeOverlay = New ChatTimeOverlay("Select a date and time", DateTime.Now)
+Dim showAsPopup As Boolean = False
+Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
+Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(calendarOverlay, showAsPopup, author, DateTime.Now)
+Me.radChat1.AddMessage(overlayMessage)
+
 ```` 
 
 

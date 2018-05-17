@@ -40,6 +40,13 @@ this.radChat1.AddMessage(message);
 
 ````
 ````VB.NET
+Dim imageCard As Telerik.WinControls.UI.ChatImageCardDataItem = New ChatImageCardDataItem(My.Resources.architect, "Benjamin Vilanders", _
+                                                                                          "Senior Architect", "As a Senior Architect his experience in the industry allows him to take on increased responsibility. Like other architects, he design buildings " & _
+                                                                                          "and makes sure they are structurally sound. Due to his track record of quality performance, Benjamin also serves as a manager, a mentor, an advisor and coordinator.", Nothing, Nothing)
+Dim author As Author = New Author(My.Resources.architect, "Ben")
+Dim message As ChatCardMessage = New ChatCardMessage(imageCard, author, DateTime.Now)
+Me.radChat1.AddMessage(message)
+
 ```` 
 
 
@@ -68,6 +75,13 @@ this.radChat1.AddMessage(message);
 
 ````
 ````VB.NET
+Dim productCard As ChatProductCardDataItem = New ChatProductCardDataItem(My.Resources.TV_car1, "Arrive & Drive", "Rating 7/10", _
+                                                                         "With our Arrive & Drive Packages, the only thing you will have to think about is driving. We make it simple for you to get more of what you love. We streamline the " & _
+                                                                         "entire process and have everything ready for you when you arrive at the track so you can get straight to racing.", "Packages from $340", Nothing, Nothing)
+Dim author As Author = New Author(My.Resources.architect, "Ben")
+Dim message As ChatCardMessage = New ChatCardMessage(productCard, author, DateTime.Now)
+Me.radChat1.AddMessage(message)
+
 ```` 
 
 
@@ -95,6 +109,11 @@ this.radChat1.AddMessage(message);
 
 ````
 ````VB.NET
+Dim weatherCard As ChatWeatherCardDataItem = New ChatWeatherCardDataItem("Florence", My.Resources.sunny, "33°C", "Humidity: 76%", "Dew: 31°C", "Pressure: 1031 mb", "Wind Speed: 15 km/h NW")
+Dim author As Author = New Author(My.Resources.nancy1, "Nancy")
+Dim message As ChatCardMessage = New ChatCardMessage(weatherCard, author, DateTime.Now)
+Me.radChat1.AddMessage(message)
+
 ```` 
 
 
@@ -124,6 +143,14 @@ this.radChat1.AddMessage(message);
 
 ````
 ````VB.NET
+Dim flights As List(Of FlightInfo) = New List(Of FlightInfo)()
+flights.Add(New FlightInfo("Los Angelis", "LAX", DateTime.Now.AddDays(7), "New York", "JFK", DateTime.Now.AddDays(7).AddHours(5.5)))
+flights.Add(New FlightInfo("New York", "JFK", DateTime.Now.AddDays(14).AddHours(3), "Los Angelis", "LAX", DateTime.Now.AddDays(14).AddHours(9.1)))
+Dim flightCard As ChatFlightCardDataItem = New ChatFlightCardDataItem("Andrew Fuller", flights, My.Resources.CardPlane, "$341", Nothing)
+Dim author As Author = New Author(My.Resources.nancy1, "Nancy")
+Dim message As ChatCardMessage = New ChatCardMessage(flightCard, author, DateTime.Now)
+Me.radChat1.AddMessage(message)
+
 ```` 
 
 
@@ -158,6 +185,14 @@ this.radChat1.AddMessage(message);
 
 ````
 ````VB.NET
+Dim actions As List(Of ChatCardAction) = New List(Of ChatCardAction)()
+actions.Add(New ChatCardAction("IM"))
+actions.Add(New ChatCardAction("Call"))
+Dim imageCard As Telerik.WinControls.UI.ChatImageCardDataItem = New ChatImageCardDataItem(My.Resources.architect, "Benjamin Vilanders", "Senior Architect", "As a Senior Architect his experience in the industry allows him to take on increased responsibility. Like other architects, he design buildings " & "and makes sure they are structurally sound. Due to his track record of quality performance, Benjamin also serves as a manager, a mentor, an advisor and coordinator.", actions, Nothing)
+Dim author As Author = New Author(My.Resources.architect, "Ben")
+Dim message As ChatCardMessage = New ChatCardMessage(imageCard, author, DateTime.Now)
+Me.radChat1.AddMessage(message)
+
 ```` 
 
 
@@ -185,6 +220,14 @@ private void radChat1_CardActionClicked(object sender, CardActionEventArgs e)
 
 ````
 ````VB.NET
+Private Sub radChat1_CardActionClicked(ByVal sender As Object, ByVal e As CardActionEventArgs)
+    If e.Action.Text = "IM" Then
+        RadMessageBox.Show("IM is clicked.")
+    ElseIf e.Action.Text = "Call" Then
+        RadMessageBox.Show("Call is clicked")
+    End If
+End Sub
+
 ```` 
 
 

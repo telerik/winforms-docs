@@ -33,6 +33,8 @@ this.radChat1.ChatElement.MessagesViewElement.TimeSeparatorInterval = TimeSpan.F
 
 ````
 ````VB.NET
+Me.radChat1.ChatElement.MessagesViewElement.TimeSeparatorInterval = TimeSpan.FromHours(1)
+
 ```` 
 
 
@@ -57,6 +59,12 @@ private void radChat1_TimeSeparatorAdding(object sender, TimeSeparatorEventArgs 
 
 ````
 ````VB.NET
+Private Sub radChat1_TimeSeparatorAdding(ByVal sender As Object, ByVal e As TimeSeparatorEventArgs)
+    If e.Item IsNot Nothing AndAlso e.PreviousItem IsNot Nothing Then
+        e.ShouldAddSeparator = e.Item.Message.TimeStamp - e.PreviousItem.Message.TimeStamp > New TimeSpan(0, 0, 20)
+    End If
+End Sub
+
 ```` 
 
 
@@ -96,6 +104,15 @@ this.radChat1.AddMessage(message3);
 
 ````
 ````VB.NET
+Me.radChat1.Author = New Author(My.Resources.nancy1, "Nancy")
+Dim author2 As Author = New Author(My.Resources.andrew1, "Andrew")
+Dim message1 As ChatTextMessage = New ChatTextMessage("Hello", author2, DateTime.Now.AddHours(1))
+Me.radChat1.AddMessage(message1)
+Dim message2 As ChatTextMessage = New ChatTextMessage("Hi", Me.radChat1.Author, DateTime.Now.AddHours(1).AddMinutes(10))
+Me.radChat1.AddMessage(message2)
+Dim message3 As ChatTextMessage = New ChatTextMessage("How are you?", author2, DateTime.Now.AddHours(3))
+Me.radChat1.AddMessage(message3)
+
 ```` 
 
 
@@ -123,6 +140,9 @@ this.radChat1.AddMessage(mediaMessage);
 
 ````
 ````VB.NET
+Dim mediaMessage As ChatMediaMessage = New ChatMediaMessage(My.Resources.TV_car1, New Size(300, 200), Nothing, Me.radChat1.Author, DateTime.Now)
+Me.radChat1.AddMessage(mediaMessage)
+
 ```` 
 
 
@@ -177,6 +197,22 @@ this.radChat1.AddMessage(carouselMessage);
 
 ````
 ````VB.NET
+Dim imageCard As Telerik.WinControls.UI.ChatImageCardDataItem = New ChatImageCardDataItem(My.Resources.architect, "Benjamin Vilanders", "Senior Architect", "As a Senior Architect his experience in the industry allows him to take on increased responsibility. Like other architects, he design buildings " & "and makes sure they are structurally sound. Due to his track record of quality performance, Benjamin also serves as a manager, a mentor, an advisor and coordinator.", Nothing, Nothing)
+Dim productCard As ChatProductCardDataItem = New ChatProductCardDataItem(My.Resources.TV_car1, "Arrive & Drive", "Rating 7/10", "With our Arrive & Drive Packages, the only thing you will have to think about is driving. We make it simple for you to get more of what you love. We streamline the " & "entire process and have everything ready for you when you arrive at the track so you can get straight to racing.", "Packages from $340", Nothing, Nothing)
+Dim weatherCard As ChatWeatherCardDataItem = New ChatWeatherCardDataItem("Florence", My.Resources.sunny, "33°C", "Humidity: 76%", "Dew: 31°C", "Pressure: 1031 mb", "Wind Speed: 15 km/h NW")
+Dim flights As List(Of FlightInfo) = New List(Of FlightInfo)()
+flights.Add(New FlightInfo("Los Angelis", "LAX", DateTime.Now.AddDays(7), "New York", "JFK", DateTime.Now.AddDays(7).AddHours(5.5)))
+flights.Add(New FlightInfo("New York", "JFK", DateTime.Now.AddDays(14).AddHours(3), "Los Angelis", "LAX", DateTime.Now.AddDays(14).AddHours(9.1)))
+Dim flightCard As ChatFlightCardDataItem = New ChatFlightCardDataItem("Andrew Fuller", flights, My.Resources.CardPlane, "$341", Nothing)
+Dim cards As List(Of BaseChatCardDataItem) = New List(Of BaseChatCardDataItem)()
+cards.Add(imageCard)
+cards.Add(productCard)
+cards.Add(weatherCard)
+cards.Add(flightCard)
+Dim author As Author = New Author(My.Resources.architect, "Ben")
+Dim carouselMessage As ChatCarouselMessage = New ChatCarouselMessage(cards, author, DateTime.Now)
+Me.radChat1.AddMessage(carouselMessage)
+
 ```` 
 
 
@@ -209,6 +245,15 @@ this.radChat1.AddMessage(overlayMessage);
 
 ````
 ````VB.NET
+Dim chatListOverlay As ChatListOverlay = New ChatListOverlay("List overlay")
+For i As Integer = 0 To 10 - 1
+    chatListOverlay.ListView.Items.Add("Item " & i)
+Next
+Dim showAsPopup As Boolean = False
+Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
+Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(chatListOverlay, showAsPopup, author, DateTime.Now)
+Me.radChat1.AddMessage(overlayMessage)
+
 ```` 
 
 
@@ -257,6 +302,21 @@ private void radChat1_SuggestedActionClicked(object sender, SuggestedActionEvent
 
 ````
 ````VB.NET
+Private Sub AddSuggestedActions()
+    Me.radChat1.AddMessage(New ChatTextMessage("Hello, here are the choices", Me.radChat1.Author, DateTime.Now))
+    Dim actions As List(Of SuggestedActionDataItem) = New List(Of SuggestedActionDataItem)()
+    For i As Integer = 0 To 7 - 1
+        actions.Add(New SuggestedActionDataItem("Option " & (i + 1)))
+    Next
+    Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
+    Dim suggestionActionsMessage As ChatSuggestedActionsMessage = New ChatSuggestedActionsMessage(actions, author, DateTime.Now)
+    Me.radChat1.AddMessage(suggestionActionsMessage)
+    AddHandler  Me.radChat1.SuggestedActionClicked , AddressOf  radChat1_SuggestedActionClicked
+End Sub
+Private Sub radChat1_SuggestedActionClicked(ByVal sender As Object, ByVal e As SuggestedActionEventArgs)
+    Me.radChat1.AddMessage(New ChatTextMessage("You have chosen " & e.Action.Text, Me.radChat1.Author, DateTime.Now))
+End Sub
+
 ```` 
 
 

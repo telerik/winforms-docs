@@ -49,6 +49,21 @@ private void radChat1_SuggestedActionClicked(object sender, SuggestedActionEvent
 
 ````
 ````VB.NET
+Private Sub AddSuggstedActions()
+    Me.radChat1.AddMessage(New ChatTextMessage("Hello, what kind of a vacation do you need?", Me.radChat1.Author, DateTime.Now))
+    Dim actions As List(Of SuggestedActionDataItem) = New List(Of SuggestedActionDataItem)()
+    actions.Add(New SuggestedActionDataItem("Family trip"))
+    actions.Add(New SuggestedActionDataItem("Summer holiday with friends"))
+    actions.Add(New SuggestedActionDataItem("Business trip"))
+    Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
+    Dim suggestionActionsMessage As ChatSuggestedActionsMessage = New ChatSuggestedActionsMessage(actions, author, DateTime.Now)
+    Me.radChat1.AddMessage(suggestionActionsMessage)
+    AddHandler   Me.radChat1.SuggestedActionClicked, AddressOf radChat1_SuggestedActionClicked
+End Sub
+Private Sub radChat1_SuggestedActionClicked(ByVal sender As Object, ByVal e As SuggestedActionEventArgs)
+    Me.radChat1.AddMessage(New ChatTextMessage("You have chosen " & e.Action.Text, Me.radChat1.Author, DateTime.Now))
+End Sub
+
 ```` 
 
 

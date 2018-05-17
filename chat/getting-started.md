@@ -28,6 +28,8 @@ this.radChat1.Author = new Author(Properties.Resources.architect, "Ben");
 
 ````
 ````VB.NET
+Me.radChat1.Author = New Author(My.Resources.architect, "Ben")
+
 ```` 
 
 
@@ -64,6 +66,16 @@ private void radChat1_SendMessage(object sender, SendMessageEventArgs e)
 
 ````
 ````VB.NET
+Private Sub AddMessageProgrammatically()
+    Me.radChat1.AutoAddUserMessages = False
+    AddHandler Me.radChat1.SendMessage, AddressOf radChat1_SendMessage
+End Sub
+Private Sub radChat1_SendMessage(ByVal sender As Object, ByVal e As SendMessageEventArgs)
+    Dim textMessage As ChatTextMessage = TryCast(e.Message, ChatTextMessage)
+    textMessage.Message = "[Slightly changed message] " & textMessage.Message
+    Me.radChat1.AddMessage(textMessage)
+End Sub
+
 ```` 
 
 

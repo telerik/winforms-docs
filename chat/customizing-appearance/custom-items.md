@@ -134,6 +134,77 @@ public class MyTextMessageItemElement : TextMessageItemElement
 
 ````
 ````VB.NET
+Private Sub CustomMessage()
+    Me.radChat1.ChatElement.ChatFactory = New MyChatFactory()
+    Me.radChat1.Author = New Author(My.Resources.nancy1, "Nancy")
+    Dim author2 As Author = New Author(My.Resources.andrew1, "Andrew")
+    Dim message1 As ChatTextMessage = New ChatTextMessage("Hello", author2, DateTime.Now.AddHours(1))
+    Me.radChat1.AddMessage(message1)
+    Dim message2 As ChatTextMessage = New ChatTextMessage("Hi", Me.radChat1.Author, DateTime.Now.AddHours(1).AddMinutes(10))
+    Me.radChat1.AddMessage(message2)
+    Dim message3 As ChatTextMessage = New ChatTextMessage("We would like to announce that in the R2 2018 release we introduced Conversational UI", author2, DateTime.Now.AddHours(3))
+    Me.radChat1.AddMessage(message3)
+End Sub
+Public Class MyChatFactory
+    Inherits ChatFactory
+    Public Overrides Function CreateItemElement(ByVal item As BaseChatDataItem) As BaseChatItemElement
+        If item.[GetType]() = GetType(TextMessageDataItem) Then
+            Return New MyTextMessageItemElement()
+        End If
+        Return MyBase.CreateItemElement(item)
+    End Function
+End Class
+Public Class MyTextMessageItemElement
+    Inherits TextMessageItemElement
+    Private likeButton As LightVisualButtonElement
+    Protected Overrides Sub CreateChildElements()
+        MyBase.CreateChildElements()
+        likeButton = New LightVisualButtonElement()
+        likeButton.NotifyParentOnMouseInput = True
+        likeButton.Image = My.Resources.heart_empty
+        AddHandler likeButton.Click, AddressOf likeButton_Click
+        likeButton.EnableElementShadow = False
+        likeButton.Margin = New Padding(10, 0, 10, 0)
+        Me.Children.Add(likeButton)
+    End Sub
+    Private Sub likeButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+        If Me.Data.Tag Is Nothing Then
+            Me.Data.Tag = True
+        Else
+            Dim isLiked As Boolean = CBool(Me.Data.Tag)
+            Me.Data.Tag = Not isLiked
+        End If
+    End Sub
+    Public Overrides Sub Synchronize()
+        MyBase.Synchronize()
+        If Me.Data.Tag IsNot Nothing AndAlso CBool(Me.Data.Tag) = True Then
+            Me.likeButton.Image = My.Resources.heart_filled
+        Else
+            Me.likeButton.Image = My.Resources.heart_empty
+        End If
+    End Sub
+    Protected Overrides Function ArrangeOverride(ByVal finalSize As SizeF) As SizeF
+        Dim baseSize As SizeF = MyBase.ArrangeOverride(finalSize)
+        Dim likeButtonRect As RectangleF
+        Dim clientRect As RectangleF = Me.GetClientRectangle(finalSize)
+        If Me.Data.ChatMessagesViewElement.ShowAvatars Then
+            If Me.Data.ChatMessagesViewElement.ShowMessagesOnOneSide OrElse Not Me.Data.IsOwnMessage Then
+                likeButtonRect = New RectangleF(clientRect.X + Me.AvatarPictureElement.DesiredSize.Width + Me.MainMessageElement.DesiredSize.Width, clientRect.Y + Me.NameLabelElement.DesiredSize.Height + Me.MainMessageElement.DesiredSize.Height / 3, Me.likeButton.Image.Width, Me.likeButton.Image.Height)
+            Else
+                likeButtonRect = New RectangleF(clientRect.Right - likeButton.DesiredSize.Width - Me.AvatarPictureElement.DesiredSize.Width - Me.MainMessageElement.DesiredSize.Width, clientRect.Y + Me.NameLabelElement.DesiredSize.Height + Me.MainMessageElement.DesiredSize.Height / 3, Me.likeButton.Image.Width, Me.likeButton.Image.Height)
+            End If
+        Else
+            If Me.Data.ChatMessagesViewElement.ShowMessagesOnOneSide OrElse Not Me.Data.IsOwnMessage Then
+                likeButtonRect = New RectangleF(clientRect.X + Me.MainMessageElement.DesiredSize.Width, clientRect.Y + Me.NameLabelElement.DesiredSize.Height + Me.MainMessageElement.DesiredSize.Height / 3, Me.likeButton.Image.Width, Me.likeButton.Image.Height)
+            Else
+                likeButtonRect = New RectangleF(clientRect.Right - likeButton.DesiredSize.Width - Me.MainMessageElement.DesiredSize.Width, clientRect.Y + Me.NameLabelElement.DesiredSize.Height + Me.MainMessageElement.DesiredSize.Height / 3, Me.likeButton.Image.Width, Me.likeButton.Image.Height)
+            End If
+        End If
+        Me.likeButton.Arrange(likeButtonRect)
+        Return baseSize
+    End Function
+End Class
+
 ```` 
 
 

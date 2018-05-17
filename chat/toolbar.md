@@ -52,6 +52,26 @@ private void radChat1_ToolbarActionClicked(object sender, ToolbarActionEventArgs
 
 ````
 ````VB.NET
+Private Sub Toolbar()
+    Dim imageAction As ToolbarActionDataItem = New ToolbarActionDataItem(My.Resources.file, "image")
+    Me.radChat1.ChatElement.ToolbarElement.AddToolbarAction(imageAction)
+    AddHandler Me.radChat1.ToolbarActionClicked, AddressOf radChat1_ToolbarActionClicked
+End Sub
+Private Sub radChat1_ToolbarActionClicked(ByVal sender As Object, ByVal e As ToolbarActionEventArgs)
+    Dim action As ToolbarActionDataItem = e.DataItem
+    If action.UserData & "" = "image" Then
+        Dim dlg As OpenFileDialog = New OpenFileDialog()
+        dlg.Title = "Open Image"
+        dlg.Filter = "png files (*.png)|*.png"
+        If dlg.ShowDialog() = Windows.Forms.DialogResult.OK Then
+            Dim img As Image = Image.FromFile(dlg.FileName)
+            Dim mediaMessage As ChatMediaMessage = New ChatMediaMessage(img, New Size(300, 200), Nothing, Me.radChat1.Author, DateTime.Now)
+            Me.radChat1.AddMessage(mediaMessage)
+        End If
+        dlg.Dispose()
+    End If
+End Sub
+
 ```` 
 
 
