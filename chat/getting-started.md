@@ -24,11 +24,14 @@ This article will give you getting started experience with **RadChat**.
 {{source=..\SamplesVB\Chat\ChatGettingStarted.vb region=SetAuthor}}
 
 ````C#
-this.radChat1.Author = new Author(Properties.Resources.architect, "Ben");
+
 
 ````
 ````VB.NET
+
+
 ```` 
+
 
 
 {{endregion}}
@@ -47,22 +50,14 @@ If the RadChat.**AutoAddUserMessages** property is set to *false* the message fr
 {{source=..\SamplesVB\Chat\ChatGettingStarted.vb region=AddMessage}}
 
 ````C#
-        
-private void AddMessageProgrammatically()
-{
-    this.radChat1.AutoAddUserMessages = false;
-    this.radChat1.SendMessage += radChat1_SendMessage;
-}
-        
-private void radChat1_SendMessage(object sender, SendMessageEventArgs e)
-{
-    ChatTextMessage textMessage = e.Message as ChatTextMessage;
-    textMessage.Message = "[Slightly changed message] " + textMessage.Message;
-    this.radChat1.AddMessage(textMessage);
-}
+
+
 
 ````
 ````VB.NET
+
+
+
 ```` 
 
 
