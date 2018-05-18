@@ -41,8 +41,81 @@ The animation below demonstrates the end result in **RadVirtualGrid**.
 {{source=..\SamplesCS\KnowledgeBase\ServerSidePagingVirtualGrid.cs region=PageIndexChangingEvent}} 
 {{source=..\SamplesVB\KnowledgeBase\ServerSidePagingVirtualGrid.vb region=PageIndexChangingEvent}}
 ````C#
+public class OrderDataModel
+{
+    public int OrderId { get; set; }
+    public string OrderDetails { get; set; }
+    public int ProductId { get; set; }
+    public int ClientId { get; set; }
+    public string ShipAddress { get; set; }
+    public ShippingType ShippingType { get; set; }
+    public object this[int i]
+    {
+        get
+        {
+            switch (i)
+            {
+                case 0:
+                    return OrderId;
+                case 1:
+                    return OrderDetails;
+                case 2:
+                    return ProductId;
+                case 3:
+                    return ClientId;
+                case 4:
+                    return ShipAddress;
+                case 5:
+                    return ShippingType;
+                default:
+                    return string.Empty;
+            }
+        }
+    }
+}
+public enum ShippingType
+{
+    None,
+    Plane,
+    Truck
+}
+
 ````
 ````VB.NET
+Public Class OrderDataModel
+    Public Property OrderId As Integer
+    Public Property OrderDetails As String
+    Public Property ProductId As Integer
+    Public Property ClientId As Integer
+    Public Property ShipAddress As String
+    Public Property ShippingType As ShippingType
+    Default Public ReadOnly Property Item(ByVal i As Integer) As Object
+        Get
+            Select Case i
+                Case 0
+                    Return OrderId
+                Case 1
+                    Return OrderDetails
+                Case 2
+                    Return ProductId
+                Case 3
+                    Return ClientId
+                Case 4
+                    Return ShipAddress
+                Case 5
+                    Return ShippingType
+                Case Else
+                    Return String.Empty
+            End Select
+        End Get
+    End Property
+End Class
+Public Enum ShippingType
+    None
+    Plane
+    Truck
+End Enum
+
 ````
 
 
@@ -54,8 +127,81 @@ The animation below demonstrates the end result in **RadVirtualGrid**.
 {{source=..\SamplesCS\KnowledgeBase\ServerSidePagingVirtualGrid.cs region=MockRepository}} 
 {{source=..\SamplesVB\KnowledgeBase\ServerSidePagingVirtualGrid.vb region=MockRepository}}
 ````C#
+public class OrderDataModel
+{
+    public int OrderId { get; set; }
+    public string OrderDetails { get; set; }
+    public int ProductId { get; set; }
+    public int ClientId { get; set; }
+    public string ShipAddress { get; set; }
+    public ShippingType ShippingType { get; set; }
+    public object this[int i]
+    {
+        get
+        {
+            switch (i)
+            {
+                case 0:
+                    return OrderId;
+                case 1:
+                    return OrderDetails;
+                case 2:
+                    return ProductId;
+                case 3:
+                    return ClientId;
+                case 4:
+                    return ShipAddress;
+                case 5:
+                    return ShippingType;
+                default:
+                    return string.Empty;
+            }
+        }
+    }
+}
+public enum ShippingType
+{
+    None,
+    Plane,
+    Truck
+}
+
 ````
 ````VB.NET
+Public Class OrderDataModel
+    Public Property OrderId As Integer
+    Public Property OrderDetails As String
+    Public Property ProductId As Integer
+    Public Property ClientId As Integer
+    Public Property ShipAddress As String
+    Public Property ShippingType As ShippingType
+    Default Public ReadOnly Property Item(ByVal i As Integer) As Object
+        Get
+            Select Case i
+                Case 0
+                    Return OrderId
+                Case 1
+                    Return OrderDetails
+                Case 2
+                    Return ProductId
+                Case 3
+                    Return ClientId
+                Case 4
+                    Return ShipAddress
+                Case 5
+                    Return ShippingType
+                Case Else
+                    Return String.Empty
+            End Select
+        End Get
+    End Property
+End Class
+Public Enum ShippingType
+    None
+    Plane
+    Truck
+End Enum
+
 ````
 
 
@@ -67,8 +213,81 @@ The animation below demonstrates the end result in **RadVirtualGrid**.
 {{source=..\SamplesCS\KnowledgeBase\ServerSidePagingVirtualGrid.cs region=DataModel}}
 {{source=..\SamplesVB\KnowledgeBase\ServerSidePagingVirtualGrid.vb region=DataModel}}
 ````C#
+public class OrderDataModel
+{
+    public int OrderId { get; set; }
+    public string OrderDetails { get; set; }
+    public int ProductId { get; set; }
+    public int ClientId { get; set; }
+    public string ShipAddress { get; set; }
+    public ShippingType ShippingType { get; set; }
+    public object this[int i]
+    {
+        get
+        {
+            switch (i)
+            {
+                case 0:
+                    return OrderId;
+                case 1:
+                    return OrderDetails;
+                case 2:
+                    return ProductId;
+                case 3:
+                    return ClientId;
+                case 4:
+                    return ShipAddress;
+                case 5:
+                    return ShippingType;
+                default:
+                    return string.Empty;
+            }
+        }
+    }
+}
+public enum ShippingType
+{
+    None,
+    Plane,
+    Truck
+}
+
 ````
 ````VB.NET
+Public Class OrderDataModel
+    Public Property OrderId As Integer
+    Public Property OrderDetails As String
+    Public Property ProductId As Integer
+    Public Property ClientId As Integer
+    Public Property ShipAddress As String
+    Public Property ShippingType As ShippingType
+    Default Public ReadOnly Property Item(ByVal i As Integer) As Object
+        Get
+            Select Case i
+                Case 0
+                    Return OrderId
+                Case 1
+                    Return OrderDetails
+                Case 2
+                    Return ProductId
+                Case 3
+                    Return ClientId
+                Case 4
+                    Return ShipAddress
+                Case 5
+                    Return ShippingType
+                Case Else
+                    Return String.Empty
+            End Select
+        End Get
+    End Property
+End Class
+Public Enum ShippingType
+    None
+    Plane
+    Truck
+End Enum
+
 ````
 
 
