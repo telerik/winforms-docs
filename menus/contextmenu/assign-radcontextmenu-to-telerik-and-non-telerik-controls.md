@@ -30,3 +30,6 @@ In the example below we are assigning __RadContextMenu__ to __RadListControl__ a
 1. Run the project. When you right click on the __ListBox__ or __RadListControl__ the __RadContextMenu__ instance will be displayed.
 
 	![menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls 003](images/menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls003.png)
+
+# See Also
+* [Distinguishing the Source Control of RadContextMenu]({%slug distinguishing-the-source-control-of-radcontextmenu%})

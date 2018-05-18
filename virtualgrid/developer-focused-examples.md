@@ -10,7 +10,7 @@ position: 2
 
 # Developer Focused Examples
 
-Additional demos for some of the Telerik UI for Winforms controls are available in the [WinForms SDK](https://github.com/telerik/xaml-sdk/tree/master/) repository. The examples demonstrate various specific user case scenarios. In this article you can find the complete list of all KB resources and SDK examples of **RadVirtualGrid**.
+Additional demos for some of the Telerik UI for Winforms controls are available in the [WinForms SDK](https://github.com/telerik/winforms-sdk) repository. The examples demonstrate various specific user case scenarios. In this article you can find the complete list of all KB resources and SDK examples of **RadVirtualGrid**.
 
 |KB Article|SDK Example|
 |------|------|
