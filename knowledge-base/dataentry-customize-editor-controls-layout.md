@@ -27,10 +27,12 @@ res_type: kb
 An example on how to programmatically rearrange the DataEntry item child controls.
 
 ### Before
-![image](https://user-images.githubusercontent.com/3520532/40328052-049db63e-5d13-11e8-9ae8-f7d9983654ab.png)
+
+![dataentry-customize-editor-controls-layout 001](images/dataentry-customize-editor-controls-layout001.png)
 
 ### After
-![image](https://user-images.githubusercontent.com/3520532/40328093-2fb7258a-5d13-11e8-9178-dadc9b379e7a.png)
+
+![dataentry-customize-editor-controls-layout 002](images/dataentry-customize-editor-controls-layout002.png)
 
 ## Solution
 
