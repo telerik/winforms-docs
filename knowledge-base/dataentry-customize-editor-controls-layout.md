@@ -36,7 +36,7 @@ An example on how to programmatically rearrange the DataEntry item child control
 
 ## Solution
 
-The RadDataEntry **[ItemInitialized](https://docs.telerik.com/devtools/winforms/api/html/e_telerik_wincontrols_ui_raddataentry_iteminitialized.htm)** event is appropriate for adjusting the position of the whole panel that holds the label and editor per field.  
+The **RadDataEntry** `ItemInitialized` event is appropriate for adjusting the position of the whole panel that holds the label and editor per field.
 
 ```
 void radDataEntry1_ItemInitialized(object sender, Telerik.WinControls.UI.ItemInitializedEventArgs e)
@@ -53,9 +53,9 @@ void radDataEntry1_ItemInitialized(object sender, Telerik.WinControls.UI.ItemIni
 }
 ```
 
-However, when the **DataSource** is set, the item's Label and Editor will be automatically arranged horizontally. 
+However, when the `DataSource` is set, the item's RadLabel and Editor will be automatically arranged horizontally. 
 
-To override this automatic arrangement, subscribe to the **LocationChanged** event of the respective control(s) in order to override the automatically set location of the layout arrangement. If you change the editor, you can subscribe to the LocationChanged event in the event handler where you specify the editor.
+To override this automatic arrangement, subscribe to the **LocationChanged** event of the respective control in order to override the automatically set location of the layout arrangement. 
 
 
 ```
@@ -94,10 +94,14 @@ private void RadForm2_LocationChanged(object sender, EventArgs e)
 
 ```
 
+Note
+If you change the editor, you can subscribe to the LocationChanged event in the event handler where you specify the editor.
+
 
 ## See Also
 - [RadDataEntry - Overview](https://docs.telerik.com/devtools/winforms/dataentry/dataentry)
 - [RadDataEntry - Structure](https://docs.telerik.com/devtools/winforms/dataentry/control-element-structure-)
 - [RadDataEntry - Programmatically Arrange Items](https://docs.telerik.com/devtools/winforms/dataentry/programmatically-arrange-items-)
+- [RadDataEntry ItemInitialized API Reference](https://docs.telerik.com/devtools/winforms/api/html/e_telerik_wincontrols_ui_raddataentry_iteminitialized.htm)
 
 
