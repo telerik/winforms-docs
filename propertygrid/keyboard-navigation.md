@@ -19,8 +19,8 @@ __RadPropertyGrid__ allows navigation through its item by using keyboard. Two sc
 
 To enable this functionality a single property setting is needed:
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridKeyboardNavigation.cs region=KeyboardSearchEnabled}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridKeyboardNavigation.vb region=KeyboardSearchEnabled}} 
+{{source=..\SamplesCS\PropertyGrid\PropertyGridKeyboardNavigation.cs region=SetKeyboardSearchEnabled}} 
+{{source=..\SamplesVB\PropertyGrid\PropertyGridKeyboardNavigation.vb region=SetKeyboardSearchEnabled}} 
 
 ````C#
 radPropertyGrid1.KeyboardSearchResetInterval = 200;
