@@ -53,4 +53,4 @@ radPropertyGrid1.KeyboardSearchResetInterval = 200
 
 # See Also
 
-* [Custom Keyboard Handling]({%slug winforms/telerik-presentatio
+* [Custom Keyboard Handling]({%slug winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives%})
