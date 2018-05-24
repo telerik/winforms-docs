@@ -3,8 +3,8 @@ title: How to customize DataEntry Item Controls Layout
 description: An example on how to programmatically rearrange a DataEntry item's child controls.
 type: how-to
 page_title: How to customize DataEntry Item Label and Editor controls
-slug: 
-position: 
+slug: dataentry-customize-editor-controls-layout
+position: 0
 tags: RadDataentry, DataEntry, Editor, UI for Winforms, Winforms, Customize Editor, Customize Layout
 ticketid: 1167646
 res_type: kb
@@ -38,7 +38,7 @@ An example on how to programmatically rearrange the DataEntry item child control
 
 The **RadDataEntry** `ItemInitialized` event is appropriate for adjusting the position of the whole panel that holds the label and editor per field.
 
-```
+````C#
 void radDataEntry1_ItemInitialized(object sender, Telerik.WinControls.UI.ItemInitializedEventArgs e)
 {
     if (e.Panel.Controls[1].Text == "FirstName")
@@ -51,14 +51,14 @@ void radDataEntry1_ItemInitialized(object sender, Telerik.WinControls.UI.ItemIni
         e.Panel.Location = new Point(e.Panel.Location.X, e.Panel.Location.Y - 25);
     }
 }
-```
+````
 
 However, when the `DataSource` is set, the item's RadLabel and Editor will be automatically arranged horizontally. 
 
 To override this automatic arrangement, subscribe to the **LocationChanged** event of the respective control in order to override the automatically set location of the layout arrangement. 
 
 
-```
+````C#
 int y = 70;
 
 private void RadDataEntry1_ItemInitialized(object sender, Telerik.WinControls.UI.ItemInitializedEventArgs e)
@@ -92,7 +92,7 @@ private void RadForm2_LocationChanged(object sender, EventArgs e)
     }
 }
 
-```
+````
 
 Note
 If you change the editor, you can subscribe to the LocationChanged event in the event handler where you specify the editor.
