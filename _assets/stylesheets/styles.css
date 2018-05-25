@@ -206,16 +206,16 @@ footer {
     margin: 6px 0 0 0;
 }
 
-#page-search {
-    margin: 0 0 0 85px;
-    position: absolute;
-    background-color: transparent;
-    padding: 0;
-    right: 514px;
-    text-align: right;
-    left: 18%;
-    max-width: 930px;
-}
+/* #page-search { */
+    /* margin: 0 0 0 85px; */
+    /* position: absolute; */
+    /* background-color: transparent; */
+    /* padding: 0; */
+    /* right: 514px; */
+    /* text-align: right; */
+    /* left: 18%; */
+    /* max-width: 930px; */
+/* } */
 
 #page-search.search-visibility {
     display: block;
@@ -603,6 +603,7 @@ footer {
     margin-top: 112px;
 	top: 0;
     left: 0;
+	bottom: 0;
     overflow: auto;
     position: fixed;
 	background: none repeat scroll 0 0 #f5f7f8;
