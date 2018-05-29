@@ -4,7 +4,7 @@ description: How to manually populate the data source of the PropertyGridDropDow
 type: troubleshooting
 page_title: How to populate a PropertyGridDropDownListEditor data source
 slug: propertygrid-dropdown-editor
-position: 
+position: 0 
 tags: Customize Editor, PropertyGrid, PropertyGridDropDownListEditor, PropertyGrid Editor Cusomtization
 ticketid: 1168968
 res_type: kb
