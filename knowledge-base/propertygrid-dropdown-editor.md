@@ -96,8 +96,8 @@ You can specify the [EditorAttribute](https://msdn.microsoft.com/en-us/library/s
 {{source=..\SamplesVB\KnowledgeBase\PropertyGridDropDownEditor.vb region=Attribute}}
 
 ````C#
-    
-   // [Editor(typeof(PropertyGridDropDownListEditor), typeof(BaseInputEditor))]
+          
+[Editor(typeof(PropertyGridDropDownListEditor), typeof(BaseInputEditor))]
 
 ````
 ````VB.NET
