@@ -12,6 +12,8 @@ position: 24
 
 Additional demos for some of the Telerik UI for Winforms controls are available in the [WinForms SDK](https://github.com/telerik/winforms-sdk) repository. The examples demonstrate various specific user case scenarios. A full list of the controls that provide additional SDK examples can be found below:
 
+* [RadDataEntry]({%slug winforms/dataentry/developer-focused-examples%})
+
 * [RadGridView]({%slug winforms/gridview/developer-focused-examples%})
 
 * [RadGanttView]({%slug winforms/ganttview/developer-focused-examples%})
