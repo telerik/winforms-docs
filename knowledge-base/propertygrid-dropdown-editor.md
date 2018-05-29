@@ -92,18 +92,14 @@ End Function
 You can specify the [EditorAttribute](https://msdn.microsoft.com/en-us/library/system.componentmodel.editorattribute(v=vs.110).aspx) in the Person.**OriginCountry** property indicating that the **PropertyGridDropDownListEditor** will be used:
 
 
-{{source=..\SamplesCS\KnowledgeBase\PropertyGridDropDownEditor.cs region=Attribute}} 
-{{source=..\SamplesVB\KnowledgeBase\PropertyGridDropDownEditor.vb region=Attribute}}
-
 ````C#
           
 [Editor(typeof(PropertyGridDropDownListEditor), typeof(BaseInputEditor))]
 
 ````
 ````VB.NET
+ <Editor(GetType(PropertyGridDropDownListEditor), GetType(BaseInputEditor))> _
 ````
-
-{{endregion}}
 
 Then, subscribe to the RadPropertyGrid.[EditorInitialized]({%slug winforms/propertygrid/editors/events%}) event where you can set the editor's **DataSource** property:
 
