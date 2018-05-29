@@ -40,48 +40,48 @@ Subscribe to the RadPropertyGrid.[EditorRequired]({%slug winforms/propertygrid/e
 {{source=..\SamplesVB\KnowledgeBase\PropertyGridDropDownEditor.vb region=EditorRequired}}
 
 ````C#
-        private void radPropertyGrid1_EditorRequired(object sender, Telerik.WinControls.UI.PropertyGridEditorRequiredEventArgs e)
-        {
-            if (e.Item.Name == "OriginCountry")
-            {
-                PropertyGridDropDownListEditor ddl = new PropertyGridDropDownListEditor();
-                BaseDropDownListEditorElement el = ddl.EditorElement as BaseDropDownListEditorElement;
-                el.DataSource = GetCountries();
-                e.Editor = ddl;
-            }
-        }
         
-        private object GetCountries()
-        {
-            List<string> countries = new List<string>();
-            countries.Add("USA");
-            countries.Add("France");
-            countries.Add("UK");
-            countries.Add("Germany");
-            countries.Add("Australia");
-            return countries;
-        }
+private void radPropertyGrid1_EditorRequired(object sender, Telerik.WinControls.UI.PropertyGridEditorRequiredEventArgs e)
+{
+    if (e.Item.Name == "OriginCountry")
+    {
+        PropertyGridDropDownListEditor ddl = new PropertyGridDropDownListEditor();
+        BaseDropDownListEditorElement el = ddl.EditorElement as BaseDropDownListEditorElement;
+        el.DataSource = GetCountries();
+        e.Editor = ddl;
+    }
+}
+        
+private object GetCountries()
+{
+    List<string> countries = new List<string>();
+    countries.Add("USA");
+    countries.Add("France");
+    countries.Add("UK");
+    countries.Add("Germany");
+    countries.Add("Australia");
+    return countries;
+}
 
 ````
 ````VB.NET
-    Private Sub radPropertyGrid1_EditorRequired(sender As Object, e As Telerik.WinControls.UI.PropertyGridEditorRequiredEventArgs)
-        If e.Item.Name = "OriginCountry" Then
-            Dim ddl As PropertyGridDropDownListEditor = New PropertyGridDropDownListEditor()
-            Dim el As BaseDropDownListEditorElement = TryCast(ddl.EditorElement, BaseDropDownListEditorElement)
-            el.DataSource = GetCountries()
-            e.Editor = ddl
-        End If
-    End Sub
-
-    Private Function GetCountries() As Object
-        Dim countries As List(Of String) = New List(Of String)()
-        countries.Add("USA")
-        countries.Add("France")
-        countries.Add("UK")
-        countries.Add("Germany")
-        countries.Add("Australia")
-        Return countries
-    End Function
+Private Sub radPropertyGrid1_EditorRequired(sender As Object, e As Telerik.WinControls.UI.PropertyGridEditorRequiredEventArgs)
+    If e.Item.Name = "OriginCountry" Then
+        Dim ddl As PropertyGridDropDownListEditor = New PropertyGridDropDownListEditor()
+        Dim el As BaseDropDownListEditorElement = TryCast(ddl.EditorElement, BaseDropDownListEditorElement)
+        el.DataSource = GetCountries()
+        e.Editor = ddl
+    End If
+End Sub
+Private Function GetCountries() As Object
+    Dim countries As List(Of String) = New List(Of String)()
+    countries.Add("USA")
+    countries.Add("France")
+    countries.Add("UK")
+    countries.Add("Germany")
+    countries.Add("Australia")
+    Return countries
+End Function
 
 ````
 
@@ -96,14 +96,11 @@ You can specify the [EditorAttribute](https://msdn.microsoft.com/en-us/library/s
 {{source=..\SamplesVB\KnowledgeBase\PropertyGridDropDownEditor.vb region=Attribute}}
 
 ````C#
-            
- [Editor(typeof(PropertyGridDropDownListEditor), typeof(BaseInputEditor))]
-
+    
+   // [Editor(typeof(PropertyGridDropDownListEditor), typeof(BaseInputEditor))]
 
 ````
 ````VB.NET
-<Editor(GetType(PropertyGridDropDownListEditor), GetType(BaseInputEditor))>
-
 ````
 
 {{endregion}}
@@ -114,28 +111,28 @@ Then, subscribe to the RadPropertyGrid.[EditorInitialized]({%slug winforms/prope
 {{source=..\SamplesVB\KnowledgeBase\PropertyGridDropDownEditor.vb region=Initialized}}
 
 ````C#
-           private void radPropertyGrid1_EditorInitialized(object sender, PropertyGridItemEditorInitializedEventArgs e)
-        {
-            PropertyGridDropDownListEditor ddl = e.Editor as  PropertyGridDropDownListEditor;
-            if (ddl != null)
-            {
-                BaseDropDownListEditorElement el = ddl.EditorElement as BaseDropDownListEditorElement;
-                el.DataSource = GetCountries();
-                el.Text = ((PropertyGridItem)e.Item).Value + "";
-            }
-        }      
+        
+private void radPropertyGrid1_EditorInitialized(object sender, PropertyGridItemEditorInitializedEventArgs e)
+{
+    PropertyGridDropDownListEditor ddl = e.Editor as  PropertyGridDropDownListEditor;
+    if (ddl != null)
+    {
+        BaseDropDownListEditorElement el = ddl.EditorElement as BaseDropDownListEditorElement;
+        el.DataSource = GetCountries();
+        el.Text = ((PropertyGridItem)e.Item).Value + "";
+    }
+}
 
 ````
 ````VB.NET
-    Private Sub EditorInitialized(sender As Object, e As PropertyGridItemEditorInitializedEventArgs)
-        Dim ddl As PropertyGridDropDownListEditor = TryCast(e.Editor, PropertyGridDropDownListEditor)
-
-        If ddl IsNot Nothing Then
-            Dim el As BaseDropDownListEditorElement = TryCast(ddl.EditorElement, BaseDropDownListEditorElement)
-            el.DataSource = GetCountries()
-            el.Text = (CType(e.Item, PropertyGridItem)).Value & ""
-        End If
-    End Sub
+Private Sub EditorInitialized(sender As Object, e As PropertyGridItemEditorInitializedEventArgs)
+    Dim ddl As PropertyGridDropDownListEditor = TryCast(e.Editor, PropertyGridDropDownListEditor)
+    If ddl IsNot Nothing Then
+        Dim el As BaseDropDownListEditorElement = TryCast(ddl.EditorElement, BaseDropDownListEditorElement)
+        el.DataSource = GetCountries()
+        el.Text = (CType(e.Item, PropertyGridItem)).Value & ""
+    End If
+End Sub
 
 ````
 
@@ -149,41 +146,36 @@ You can also create a [TypeConverter](https://msdn.microsoft.com/en-us/library/a
 {{source=..\SamplesVB\KnowledgeBase\PropertyGridDropDownEditor.vb region=TypeConverter}}
 
 ````C#
-         public class CustomTypeConverter : TypeConverter
-        {
-            public override bool GetStandardValuesSupported(ITypeDescriptorContext context)
-            {
-                return true;
-            }
-
-            public override bool GetStandardValuesExclusive(ITypeDescriptorContext context)
-            {
-                return true;
-            }
-
-            public override StandardValuesCollection GetStandardValues(ITypeDescriptorContext context)
-            {
-                return new StandardValuesCollection(new string[] { "USA", "France", "UK", "Germany", "Australia" });
-            }
-        }    
+public class CustomTypeConverter : TypeConverter
+{
+    public override bool GetStandardValuesSupported(ITypeDescriptorContext context)
+    {
+        return true;
+    }
+    public override bool GetStandardValuesExclusive(ITypeDescriptorContext context)
+    {
+        return true;
+    }
+    public override StandardValuesCollection GetStandardValues(ITypeDescriptorContext context)
+    {
+        return new StandardValuesCollection(new string[] { "USA", "France", "UK", "Germany", "Australia" });
+    }
+}
 
 ````
 ````VB.NET
-    Public Class CustomTypeConverter
-        Inherits TypeConverter
-
-        Public Overrides Function GetStandardValuesSupported(ByVal context As ITypeDescriptorContext) As Boolean
-            Return True
-        End Function
-
-        Public Overrides Function GetStandardValuesExclusive(ByVal context As ITypeDescriptorContext) As Boolean
-            Return True
-        End Function
-
-        Public Overrides Function GetStandardValues(ByVal context As ITypeDescriptorContext) As StandardValuesCollection
-            Return New StandardValuesCollection(New String() {"USA", "France", "UK", "Germany", "Australia"})
-        End Function
-    End Class
+Public Class CustomTypeConverter
+    Inherits TypeConverter
+    Public Overrides Function GetStandardValuesSupported(ByVal context As ITypeDescriptorContext) As Boolean
+        Return True
+    End Function
+    Public Overrides Function GetStandardValuesExclusive(ByVal context As ITypeDescriptorContext) As Boolean
+        Return True
+    End Function
+    Public Overrides Function GetStandardValues(ByVal context As ITypeDescriptorContext) As StandardValuesCollection
+        Return New StandardValuesCollection(New String() {"USA", "France", "UK", "Germany", "Australia"})
+    End Function
+End Class
 
 ````
 
