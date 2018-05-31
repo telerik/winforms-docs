@@ -24,9 +24,11 @@ Additional demos for some of the Telerik UI for Winforms controls are available 
 
 * [RadChartView]({%slug winforms/chartview/developer-focused-examples%})
 
-* [RadVirtualGrid]({%slug winforms/virtualgrid/developer-focused-examples%})
-
 * [RadListView]({%slug winforms/listview/developer-focused-examples%})
+
+* [RadSpinEditor]({%slug winforms/editors/spineditor/developer-focused-examples%})
+
+* [RadVirtualGrid]({%slug winforms/virtualgrid/developer-focused-examples%})
 
 >note We are committed to updating the GitHub repository on regular basis. Everyone is also welcome to contribute to it.
 
