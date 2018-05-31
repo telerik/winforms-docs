@@ -135,7 +135,7 @@ You have access to the list view by the ChatListOverlay.**ListView** property.
 
 **ChatTimeOverlay** offers to the user the ability to select time from the picker. 
 
->caption Figure 4: ChatListOverlay
+>caption Figure 4: ChatTimeOverlay
 
 ![winforms/chat-items-overlays 004](images/chat-items-overlays004.gif) 
 
