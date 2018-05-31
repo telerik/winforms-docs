@@ -212,7 +212,7 @@ public class MyRadSpinElement : RadSpinElement
     protected override void SetSpinValue(decimal value, bool fromValue)
     {
         base.SetSpinValue(value, fromValue);
-        this.TextBoxControl.Text = GetNumberText(this.Value);
+        this.TextBoxControl.Text = GetNumberText(this.internalValue);
     }
     protected override string GetNumberText(decimal num)
     {
@@ -281,7 +281,7 @@ Public Class MyRadSpinElement
     End Function
     Protected Overrides Sub SetSpinValue(ByVal value As Decimal, ByVal fromValue As Boolean)
         MyBase.SetSpinValue(value, fromValue)
-        Me.TextBoxControl.Text = GetNumberText(Me.Value)
+        Me.TextBoxControl.Text = GetNumberText(Me.internalValue)
     End Sub
     Protected Overrides Function GetNumberText(ByVal num As Decimal) As String
         If Me.Hexadecimal Then
