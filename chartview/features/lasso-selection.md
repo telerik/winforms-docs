@@ -10,7 +10,7 @@ position: 2
 
 # Lasso Selection
 
-**RadChartView** provides lasso selection functionality allowing data points to be selected upon creating a lasso rectangle with the mouse. The functionality is defined in the LassoSelectionController class and it is only supported in the *Cartesian Area*.
+**RadChartView** provides lasso selection functionality allowing data points to be selected upon creating a lasso rectangle with the mouse. The functionality is defined in the **LassoSelectionController** class and it is only supported in the *Cartesian Area*.
 
 >caption Figure 1: Selecting Data Points
 ![chartview-features-lasso-selection 001](images/chartview-features-lasso-selection003.gif)
@@ -73,7 +73,7 @@ End Sub
 
 {{endregion}}
 
-The **LassoSelectionController** exposes a **LassoSelectedPointsChanged** providing access to the data points within the bounds of the selection rectangle. In a scenario with multiple series each of the series can be extracted from the **Presenter** property of the data point object   
+The **LassoSelectionController** exposes a **LassoSelectedPointsChanged** event providing access to the data points within the bounds of the selection rectangle. In a scenario with multiple series, each of the series can be extracted from the **Presenter** property of the data point object   
 
 #### The LassoSelectedPointsChanged Event
 
