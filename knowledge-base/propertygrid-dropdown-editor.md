@@ -193,5 +193,5 @@ After applying the [TypeConverterAttribute](https://msdn.microsoft.com/en-us/lib
 # See Also
 
  * [PropertyGrid Overview]({%slug winforms/propertygrid%})
- * [ProeprtyGrid Events ]({%slug winforms/propertygrid/editors/events%})
+ * [PropertyGrid Events ]({%slug winforms/propertygrid/editors/events%})
 
