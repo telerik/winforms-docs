@@ -2,7 +2,7 @@
 title: How to give PropertyGrid Label more width than the Editor
 description: An example showing how to give the PropertyGrid Label more width than the Editor
 type: how-to
-page_title: How to give PropertyGrid Label wider than the Editor
+page_title: How to give PropertyGrid Label more width than the Editor
 slug: 
 position: 
 tags: PropertyGrid, Customize Layout, UI for Winforms, Winforms
