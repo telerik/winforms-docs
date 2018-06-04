@@ -1,7 +1,7 @@
 ---
 title: How to use a drop down list editor and populate it with data 
 description: How to manually populate the data source of the PropertyGridDropDownListEditor data source.
-type: troubleshooting
+type: how-to
 page_title: How to populate a PropertyGridDropDownListEditor data source
 slug: propertygrid-dropdown-editor
 position: 0 
