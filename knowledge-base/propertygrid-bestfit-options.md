@@ -20,15 +20,15 @@ res_type: kb
 
 
 ## Description
-An example showing how to give the PropertyGrid's Label column more width than the Value column. By default, the PropertyGrid will use equal spacing for both sides. When the SelectedObject model has long property names or values, it may be desired to have one side wider than the other.
+An example showing how to give the PropertyGrid's Label column more width to show longer property names. By default, the PropertyGrid will use equal spacing for both sides, which may trim the end of a long property name.
 
 ## Solution
 
 The RadPropertyGrid has a `BestFit` method that, by default, provides equal spacing to both the Label and the Value columns. The `BestFit` method has one overload that takes a **PropertyGridBestFitMode** parameter that allows you to choose a side to best fit; **MaximizeLabelColumnVisibility** and **MaximizeValueColumnVisibility**.
 
-The example below has boolean properties with long property names, these names will be trimmed if the PropertyGrid isn't wide enough and the Label & Value columns are equally spaced. 
+The example below has boolean properties with long property names, these names will be trimmed if the PropertyGrid's Label & Value columns are equally spaced.  Since the editor control for a bool (CheckBox) requires very little width, you may want the Label side to be wider. 
 
-Since the editor control for a bool (CheckBox) requires very little width, you may want the Label side to have more space. Let's use the following example `UserOptions` model for the RadPropertyGrid's `SelectedObject` property:
+Let's use the following example `UserOptions` model for the RadPropertyGrid's `SelectedObject` property:
 
 ```c#
 public class UserOptions
@@ -44,7 +44,7 @@ Public Class UserOptions
 End Class
 ```
 
-In the form's Load event handler, assign the `SelectedObject` to an instance of `MyModel` and pass `PropertyGridBestFitMode.MaximizeLabelColumnVisibility` as the parameter value into the `BestFit` method.
+In the form's Load event handler, assign the `SelectedObject` to an instance of `UserOptions` and execute `BestFit` with **PropertyGridBestFitMode.MaximizeLabelColumnVisibility** as the parameter value.
 
 
 ```C#
@@ -87,6 +87,6 @@ End Class
 
 ## See Also
 
-- [RadPropertyGrid Overview] (https://docs.telerik.com/devtools/winforms/propertygrid/overview)
+- [RadPropertyGrid Overview](https://docs.telerik.com/devtools/winforms/propertygrid/overview)
 - [RadPropertyGrid Properties, Methods and Events](https://docs.telerik.com/devtools/winforms/propertygrid/properties-methods-events)
 
