@@ -20,63 +20,69 @@ res_type: kb
 
 
 ## Description
-An example showing how to give the PropertyGrid's Label more width than the Editor and vice-versa. By default, the PropertyGrid will use equal spacing for both sides. When the SelectedObject model has long property names or values, it is desired to have one side wider than the other.
+An example showing how to give the PropertyGrid's Label column more width than the Value column. By default, the PropertyGrid will use equal spacing for both sides. When the SelectedObject model has long property names or values, it may be desired to have one side wider than the other.
 
 ## Solution
 
-The RadPropertyGrid has a `BestFit` that by default provides equal spacing to both the Label and the Value. BestFit has one overload that takes a `PropertyGridBestFitMode` parameter that allows you to choose 
+The RadPropertyGrid has a `BestFit` method that, by default, provides equal spacing to both the Label and the Value columns. The `BestFit` method has one overload that takes a **PropertyGridBestFitMode** parameter that allows you to choose a side to best fit; **MaximizeLabelColumnVisibility** and **MaximizeValueColumnVisibility**.
 
-Let's use the following example model for the SelectedObject:
+The example below has boolean properties with long property names, these names will be trimmed if the PropertyGrid isn't wide enough and the Label & Value columns are equally spaced. 
+
+Since the editor control for a bool (CheckBox) requires very little width, you may want the Label side to have more space. Let's use the following example `UserOptions` model for the RadPropertyGrid's `SelectedObject` property:
 
 ```c#
-public class MyModel
+public class UserOptions
 {
-   public bool ReallyLongPropertyNameThatNeedsMoreSpace { get; set; }
+    public bool CanUserTurnOnTheThingInTheCorner { get; set; }
+    public bool NotifyUserWhenThingInCornerIsTurnedOnOrOff { get; set; }
 }
 ```
 ```VB
-Public Class MyModel
-    Public Property ReallyLongPropertyNameThatNeedsMoreSpace As Boolean
+Public Class UserOptions
+    Public Property CanUserTurnOnTheThingInTheCorner As Boolean
+    Public Property NotifyUserWhenThingInCornerIsTurnedOnOrOff As Boolean
 End Class
 ```
 
-In the form's Load event handler, assign the `SelectedObject` to an instance of `MyModel`.
+In the form's Load event handler, assign the `SelectedObject` to an instance of `MyModel` and pass `PropertyGridBestFitMode.MaximizeLabelColumnVisibility` as the parameter value into the `BestFit` method.
 
 
 ```C#
-private void RadForm1_Load(object sender, EventArgs e)
+public partial class RadForm1 : Telerik.WinControls.UI.RadForm
 {
-    radPropertyGrid1.SelectedObject = new MyModel();
-
-    // Option 1 - Provide the Label with more width
-    radPropertyGrid1.BestFit(PropertyGridBestFitMode.MaximizeLabelColumnVisibility);
-
-    // Option 2 - Provide the Value/Editor side with more width
-    // radPropertyGrid1.BestFit(PropertyGridBestFitMode.MaximizeValueColumnVisibility);
+    public RadForm1()
+    {
+        InitializeComponent();
+        Load += RadForm1_Load;
+    }
+ 
+    private void RadForm1_Load(object sender, EventArgs e)
+    {
+        radPropertyGrid1.SelectedObject = new UserOptions();
+        radPropertyGrid1.BestFit(PropertyGridBestFitMode.MaximizeLabelColumnVisibility);
+    }
 }
 ```
 ```VB
-Private Sub RadForm1_Load(ByVal sender As Object, ByVal e As EventArgs)
-    radPropertyGrid1.SelectedObject = New MyModel()
-	
-	'Option 1 - Provide the Label with more width
-    radPropertyGrid1.BestFit(PropertyGridBestFitMode.MaximizeLabelColumnVisibility)
-	
-	'Option 2 - Provide the Value/Editor side with more width
-	'radPropertyGrid1.BestFit(PropertyGridBestFitMode.MaximizeValueColumnVisibility)
-End Sub
+Public Partial Class RadForm1
+    Inherits Telerik.WinControls.UI.RadForm
+
+    Public Sub New()
+        InitializeComponent()
+        Load += AddressOf RadForm1_Load
+    End Sub
+
+    Private Sub RadForm1_Load(ByVal sender As Object, ByVal e As EventArgs)
+        radPropertyGrid1.SelectedObject = New UserOptions()
+        radPropertyGrid1.BestFit(PropertyGridBestFitMode.MaximizeLabelColumnVisibility)
+    End Sub
+End Class
 ```
 
 
-To get  which has one overload that allows you to give more width to one of the sides of the property.
-
-### Default
+### Result
 
 ![dataentry-customize-editor-controls-layout 001](images/propertygrid-bestfit001.png)
-
-### Maximize LabelColumn Visibility
-
-![dataentry-customize-editor-controls-layout 002](images/propertygrid-bestfit002.png)
 
 
 ## See Also
