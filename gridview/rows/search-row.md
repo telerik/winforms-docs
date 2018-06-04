@@ -34,8 +34,6 @@ The end user can select in which columns to perform searching by the provided *S
 
 ![gridview-rows-search-row 002](images/gridview-rows-search-row002.png)
 
->important Since **R2 2018 SP1** RadGridView has a property **IsSearchAsync** which controls whether the search will be performed on a background thread [*true*] or on the main thread [*false*].
-
 ### Properties
 
 The available properties to tweak the search experience and performance and how to access them are outlined below. The API is in the __GridViewSearchRowInfo__ object which can be accessed through the grid view __MasterView__.
