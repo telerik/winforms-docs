@@ -34,8 +34,8 @@ public void RunRouteRequest()
     request.Options.Optimization = RouteOptimization.Time;
     request.Options.RouteAttributes = RouteAttributes.RoutePath;
     request.Options.RouteAvoidance = RouteAvoidance.None;
-    request.RoutePoints.Add(new Waypoint("Paris, France"));
-    request.RoutePoints.Add(new Waypoint("Madrid, Spain"));
+    request.Waypoints.Add("Paris, France");
+    request.Waypoints.Add("Madrid, Spain");
     BingRestMapProvider bingProvider = this.radMap1.Providers[0] as BingRestMapProvider;
     bingProvider.CalculateRouteCompleted += BingProvider_RoutingCompleted;
     bingProvider.CalculateRouteAsync(request);
@@ -79,8 +79,8 @@ Public Sub RunRouteRequest()
     request.Options.Optimization = RouteOptimization.Time
     request.Options.RouteAttributes = RouteAttributes.RoutePath
     request.Options.RouteAvoidance = RouteAvoidance.None
-    request.RoutePoints.Add(New Waypoint("Paris, France"))
-    request.RoutePoints.Add(New Waypoint("Madrid, Spain"))
+    request.Waypoints.Add("Paris, France")
+    request.Waypoints.Add("Madrid, Spain")
     Dim bingProvider As BingRestMapProvider = TryCast(Me.radMap1.Providers(0), BingRestMapProvider)
     AddHandler bingProvider.CalculateRouteCompleted, AddressOf BingProvider_RoutingCompleted
     bingProvider.CalculateRouteAsync(request)
