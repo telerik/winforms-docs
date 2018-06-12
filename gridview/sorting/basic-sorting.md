@@ -33,6 +33,17 @@ When sorting is enabled, the user can click on the column headers to control t
 
 ![gridview-sorting-basic-sorting 001](images/gridview-sorting-basic-sorting001.png)
 
+>important By default if the rows count is less than 10 000 we use quick sort to order the items. If there are more items we use Red-Black tree. This is controlled by the __UseHybridIndex__ property.
+
+#### Change UseHybridIndex
+
+````C#
+(radGridView.MasterTemplate.ListSource.CollectionView as GridDataView).UseHybridIndex = false;
+````
+````VB
+TryCast(radGridView.MasterTemplate.ListSource.CollectionView, GridDataView).UseHybridIndex = False
+````
+
 **RadGridView** allows you to prevent the built-in data sorting operation but keep the sorting life cycle as it is, e.g. UI indication, **SortDescriptors** and events remain. This is controlled by the MasterTemplate.DataView.**BypassSort** property which default value is *false*. This means that **RadGridView** won't perform the sorting if you set it to *true*. This may be suitable for cases in which you bound the grid to a **DataTable** and you want to apply the sort direction to the **DataTable**, not to the grid itself. You can find below a sample code snippet:
 
 #### Bypass default sorting
