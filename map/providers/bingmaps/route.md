@@ -34,8 +34,8 @@ public void RunRouteRequest()
     request.Options.Optimization = RouteOptimization.Time;
     request.Options.RouteAttributes = RouteAttributes.RoutePath;
     request.Options.RouteAvoidance = RouteAvoidance.None;
-    request.Waypoints.Add("Paris, France");
-    request.Waypoints.Add("Madrid, Spain");
+    request.RoutePoints.Add(new Waypoint("Paris, France"));
+    request.RoutePoints.Add(new Waypoint("Madrid, Spain"));
     BingRestMapProvider bingProvider = this.radMap1.Providers[0] as BingRestMapProvider;
     bingProvider.CalculateRouteCompleted += BingProvider_RoutingCompleted;
     bingProvider.CalculateRouteAsync(request);
@@ -79,8 +79,8 @@ Public Sub RunRouteRequest()
     request.Options.Optimization = RouteOptimization.Time
     request.Options.RouteAttributes = RouteAttributes.RoutePath
     request.Options.RouteAvoidance = RouteAvoidance.None
-    request.Waypoints.Add("Paris, France")
-    request.Waypoints.Add("Madrid, Spain")
+    request.RoutePoints.Add(New Waypoint("Paris, France"))
+    request.RoutePoints.Add(New Waypoint("Madrid, Spain"))
     Dim bingProvider As BingRestMapProvider = TryCast(Me.radMap1.Providers(0), BingRestMapProvider)
     AddHandler bingProvider.CalculateRouteCompleted, AddressOf BingProvider_RoutingCompleted
     bingProvider.CalculateRouteAsync(request)
@@ -112,6 +112,45 @@ End Sub
 ````
 
 {{endregion}} 
+
+The **RouteRequest** class also supports *ViaWayPoints* objects. These route points allow a particular leg to be divided into separate sub legs. The [Bing REST Serivices documentation](https://msdn.microsoft.com/en-us/library/ff701717.aspx) provides additional information what a *waypoint* and a *viaWayPoint* represents.
+
+#### Creating a Route with ViaWayPoints
+
+{{source=..\SamplesCS\Map\BingProvider.cs region=ViaWayPointsExample}} 
+{{source=..\SamplesVB\Map\BingProvider.vb region=ViaWayPointsExample}}
+````C#
+RouteRequest viaWayPointsRequest = new RouteRequest();
+viaWayPointsRequest.DistanceUnit = DistanceUnit.Kilometer;
+viaWayPointsRequest.Options.Mode = TravelMode.Driving;
+viaWayPointsRequest.Options.Optimization = RouteOptimization.Time;
+viaWayPointsRequest.Options.RouteAttributes = RouteAttributes.RoutePath;
+viaWayPointsRequest.Options.RouteAvoidance = RouteAvoidance.None;
+viaWayPointsRequest.RoutePoints.Add(new Waypoint("47.6062, -122.3321")); //Seattle
+viaWayPointsRequest.RoutePoints.Add(new ViaWaypoint("40.7306, -73.9352")); //New York
+viaWayPointsRequest.RoutePoints.Add(new Waypoint("25.789, -80.2264")); //Miami
+BingRestMapProvider bingProvider = this.radMap1.Providers[0] as BingRestMapProvider;
+bingProvider.CalculateRouteAsync(viaWayPointsRequest);
+
+````
+````VB.NET
+Dim viaWayPointsRequest As RouteRequest = New RouteRequest()
+viaWayPointsRequest.DistanceUnit = DistanceUnit.Kilometer
+viaWayPointsRequest.Options.Mode = TravelMode.Driving
+viaWayPointsRequest.Options.Optimization = RouteOptimization.Time
+viaWayPointsRequest.Options.RouteAttributes = RouteAttributes.RoutePath
+viaWayPointsRequest.Options.RouteAvoidance = RouteAvoidance.None
+viaWayPointsRequest.RoutePoints.Add(New Waypoint("47.6062, -122.3321"))
+viaWayPointsRequest.RoutePoints.Add(New ViaWaypoint("40.7306, -73.9352"))
+viaWayPointsRequest.RoutePoints.Add(New Waypoint("25.789, -80.2264"))
+Dim bingProvider As BingRestMapProvider = TryCast(Me.radMap1.Providers(0), BingRestMapProvider)
+bingProvider.CalculateRouteAsync(viaWayPointsRequest)
+
+````
+
+
+
+{{endregion}}
 
 # See Also
 * [BingRestMapProvider]({%slug winforms/map/providers/bingrestmapprovider%})
