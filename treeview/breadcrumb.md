@@ -22,11 +22,11 @@ Use __DefaultTreeView__ property of __RadBreadCrumb__ to associate the bread cr
 {{source=..\SamplesVB\TreeView\BreadCrumb.vb region=defaultTreeView}} 
 
 ````C#
-radBreadCrumb1.DefaultTreeView = radTreeView1;
+this.radBreadCrumb1.DefaultTreeView = radTreeView1;
 
 ````
 ````VB.NET
-RadBreadCrumb1.DefaultTreeView = RadTreeView1
+Me.RadBreadCrumb1.DefaultTreeView = Me.RadTreeView1
 
 ````
 

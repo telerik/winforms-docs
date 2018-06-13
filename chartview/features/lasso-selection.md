@@ -93,7 +93,6 @@ __LassoZoomController__ supports zoom and pan functionality programmatically via
 {{source=..\SamplesVB\ChartView\Features\LassoSelection.vb region=ZoomFirst}} 
 
 ````C#
-        
 private void LassoSelection_Load(object sender, EventArgs e)
 {
     LassoZoomController lassoZoomController = radChartView1.Controllers[1] as LassoZoomController;
