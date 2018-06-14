@@ -1305,6 +1305,9 @@ navigation:
     telerik-presentation-framework/shapes:
         title: Shapes
         position: 22
+    telerik-presentation-framework/markup-dialog:
+        title: Markup Dialog
+        position: 10
     themes:
         title: Themes
         position: 580
