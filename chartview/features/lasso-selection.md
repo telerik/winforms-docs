@@ -141,11 +141,12 @@ private void AddLassoZoomControllers()
 
 ````
 ````VB.NET
-Private Sub LassoSelection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    Dim lassoZoomController As LassoZoomController = TryCast(RadChartView1.Controllers(1), LassoZoomController)
-    If lassoZoomController IsNot Nothing Then
-        lassoZoomController.ZoomAndPan(0, 50)
-    End If
+Private Sub AddLassoZoomControllers()
+    Dim lassoSelectionController As LassoSelectionController = New LassoSelectionController()
+    AddHandler lassoSelectionController.LassoSelectedPointsChanged, AddressOf LassoSelectionController_LassoSelectedPointsChanged
+    Me.RadChartView1.Controllers.Add(lassoSelectionController)
+    Dim lassoZoomController As LassoZoomController = New LassoZoomController()
+    Me.RadChartView1.Controllers.Add(lassoZoomController)
 End Sub
 
 ````
