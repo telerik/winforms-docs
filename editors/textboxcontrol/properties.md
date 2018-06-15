@@ -35,10 +35,16 @@ position: 8
 |__IsReadOnly__|Gets or sets a value indicating whether text in the text box is read-only.|
 |__IsReadOnlyCaretVisible__|Gets or sets a value indicating whether the caret is visible in read only mode.|
 |**ShowClearButton**|Gets or sets a value indicating whether the clear button is shown.|
+|**ShowNullText**|Gets or sets a value indicating whether the null text will be shown when the control is focused and the text is empty.|
+
 
 Since R1 2017 **RadTextBoxControl** can show a clear button when there is some text in the editor. This is controlled by the **ShowClearButton** property.
 
 ![editors-textboxcontrol-properties 001](images/editors-textboxcontrol-properties001.gif)
+
+## NullText
+
+__RadTextBoxControl__ has a **NullText** property that is not shared by the standard Windows Forms text box. This property specifies what text to be displayed when the control has no __Text__ value. By default, when the control receives  focus, this text is automatically removed. This behavior can be controlled by the **ShowNullText** property. If it is set to *true* the **NullText** will be shown even when the text box is focused until you enter some text in the editor.
 
 # Events
 

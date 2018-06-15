@@ -1,7 +1,7 @@
 ---
 title: How to use a drop down list editor and populate it with data 
 description: How to manually populate the data source of the PropertyGridDropDownListEditor data source.
-type: troubleshooting
+type: how-to
 page_title: How to populate a PropertyGridDropDownListEditor data source
 slug: propertygrid-dropdown-editor
 position: 0 
@@ -193,5 +193,5 @@ After applying the [TypeConverterAttribute](https://msdn.microsoft.com/en-us/lib
 # See Also
 
  * [PropertyGrid Overview]({%slug winforms/propertygrid%})
- * [ProeprtyGrid Events ]({%slug winforms/propertygrid/editors/events%})
+ * [PropertyGrid Events ]({%slug winforms/propertygrid/editors/events%})
 
