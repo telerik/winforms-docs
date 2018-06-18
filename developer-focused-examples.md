@@ -30,6 +30,8 @@ Additional demos for some of the Telerik UI for Winforms controls are available 
 
 * [RadSpinEditor]({%slug winforms/editors/spineditor/developer-focused-examples%})
 
+* [RadTreeView]({%slug winforms/treeview/developer-focused-examples%})
+
 * [RadVirtualGrid]({%slug winforms/virtualgrid/developer-focused-examples%})
 
 >note We are committed to updating the [GitHub repository](https://github.com/telerik/winforms-sdk) on regular basis. Everyone is also welcome to contribute to it.
