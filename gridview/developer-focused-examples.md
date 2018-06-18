@@ -16,6 +16,7 @@ Additional demos for some of the Telerik UI for Winforms controls are available 
 |------|------|
 |[Custom Values in GridViewComboBoxColumn]({%slug free-text-in-combobox-column%})|https://github.com/telerik/winforms-sdk/tree/master/GridView/CustomValuesInGridViewComboBoxColumn|
 |[Permanent Editor in a Filter Cell]({%slug gridview-permaneneditor-in-filter-cell%})|https://github.com/telerik/winforms-sdk/tree/master/GridView/PermanentDropDownListEditorInFilterCell|
+|[Filtering Indicators in GridView]({%slug filtering-indicators-in-gridview%})|https://github.com/telerik/winforms-sdk/tree/master/GridView/FilterinIngIndicatorsInGridView|
 
 ## See Also
 
