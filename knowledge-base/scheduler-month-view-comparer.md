@@ -53,49 +53,48 @@ The following code snippet demonstrates how to order the appointments alphabetic
 {{source=..\SamplesVB\KnowledgeBase\SchedulerMonthViewComparer.vb region=MonthViewComparer}}
 
 ````C#
-        public SchedulerMonthViewComparer()
-        {
-            InitializeComponent();
-            
-            this.radScheduler1.ActiveViewType = SchedulerViewType.Month;
-            
-            SchedulerMonthViewElement monthViewElement = this.radScheduler1.SchedulerElement.ViewElement as SchedulerMonthViewElement;
-            monthViewElement.MonthViewAreaElement.AppointmentsComparer = new MyComparer();
-            
-            this.radScheduler1.Appointments.Add(new Appointment(DateTime.Today.AddHours(12), TimeSpan.FromHours(1), "A1"));
-            this.radScheduler1.Appointments.Add(new Appointment(DateTime.Today.AddHours(8), TimeSpan.FromHours(1), "A2"));
-            this.radScheduler1.Appointments.Add(new Appointment(DateTime.Today.AddHours(10), TimeSpan.FromHours(1), "A3"));
-        }
         
-        public class MyComparer : IComparer<AppointmentElement>
-        {
-            public int Compare(AppointmentElement x, AppointmentElement y)
-            {
-                return x.Appointment.Summary.CompareTo(y.Appointment.Summary);
-            }
-        }
+public SchedulerMonthViewComparer()
+{
+    InitializeComponent();
+    
+    this.radScheduler1.ActiveViewType = SchedulerViewType.Month;
+    
+    SchedulerMonthViewElement monthViewElement = this.radScheduler1.SchedulerElement.ViewElement as SchedulerMonthViewElement;
+    monthViewElement.MonthViewAreaElement.AppointmentsComparer = new MyComparer();
+    
+    this.radScheduler1.Appointments.Add(new Appointment(DateTime.Today.AddHours(12), TimeSpan.FromHours(1), "A1"));
+    this.radScheduler1.Appointments.Add(new Appointment(DateTime.Today.AddHours(8), TimeSpan.FromHours(1), "A2"));
+    this.radScheduler1.Appointments.Add(new Appointment(DateTime.Today.AddHours(10), TimeSpan.FromHours(1), "A3"));
+}
+        
+public class MyComparer : IComparer<AppointmentElement>
+{
+    public int Compare(AppointmentElement x, AppointmentElement y)
+    {
+        return x.Appointment.Summary.CompareTo(y.Appointment.Summary);
+    }
+}
 
 ````
 ````VB.NET
-    Sub New()
-
-        InitializeComponent()
-        Me.RadScheduler1.ActiveViewType = SchedulerViewType.Month
-        Dim monthViewElement As SchedulerMonthViewElement = TryCast(Me.RadScheduler1.SchedulerElement.ViewElement, SchedulerMonthViewElement)
-        monthViewElement.MonthViewAreaElement.AppointmentsComparer = New MyComparer()
-        Me.RadScheduler1.Appointments.Add(New Appointment(DateTime.Today.AddHours(12), TimeSpan.FromHours(1), "A1"))
-        Me.RadScheduler1.Appointments.Add(New Appointment(DateTime.Today.AddHours(8), TimeSpan.FromHours(1), "A2"))
-        Me.RadScheduler1.Appointments.Add(New Appointment(DateTime.Today.AddHours(10), TimeSpan.FromHours(1), "A3"))
-
-    End Sub
+Sub New()
+    InitializeComponent()
+    Me.RadScheduler1.ActiveViewType = SchedulerViewType.Month
+    Dim monthViewElement As SchedulerMonthViewElement = TryCast(Me.RadScheduler1.SchedulerElement.ViewElement, SchedulerMonthViewElement)
+    monthViewElement.MonthViewAreaElement.AppointmentsComparer = New MyComparer()
+    Me.RadScheduler1.Appointments.Add(New Appointment(DateTime.Today.AddHours(12), TimeSpan.FromHours(1), "A1"))
+    Me.RadScheduler1.Appointments.Add(New Appointment(DateTime.Today.AddHours(8), TimeSpan.FromHours(1), "A2"))
+    Me.RadScheduler1.Appointments.Add(New Appointment(DateTime.Today.AddHours(10), TimeSpan.FromHours(1), "A3"))
+End Sub
     
-    Public Class MyComparer
-    Implements IComparer(Of AppointmentElement)
-        Public Function [Compare](x As AppointmentElement, y As AppointmentElement) As Integer _
-        Implements IComparer(Of AppointmentElement).[Compare]
-            Return x.Appointment.Summary.CompareTo(y.Appointment.Summary)
-        End Function
-    End Class
+Public Class MyComparer
+Implements IComparer(Of AppointmentElement)
+    Public Function [Compare](x As AppointmentElement, y As AppointmentElement) As Integer _
+    Implements IComparer(Of AppointmentElement).[Compare]
+        Return x.Appointment.Summary.CompareTo(y.Appointment.Summary)
+    End Function
+End Class
 
 ````
 
