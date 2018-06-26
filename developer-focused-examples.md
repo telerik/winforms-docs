@@ -30,6 +30,8 @@ Additional demos for some of the Telerik UI for Winforms controls are available 
 
 * [RadSpinEditor]({%slug winforms/editors/spineditor/developer-focused-examples%})
 
+* [RadScheduler]({%slug winforms/scheduler/developer-focused-examples%})
+
 * [RadTreeView]({%slug winforms/treeview/developer-focused-examples%})
 
 * [RadVirtualGrid]({%slug winforms/virtualgrid/developer-focused-examples%})
