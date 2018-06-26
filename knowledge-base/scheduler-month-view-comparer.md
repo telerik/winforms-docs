@@ -102,7 +102,7 @@ End Class
 
 
 >note A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/Scheduler/SchedulerMonthViewComparer).
->
+
 # See Also
 
 * [RadScheduler]({%slug winforms/scheduler%})
