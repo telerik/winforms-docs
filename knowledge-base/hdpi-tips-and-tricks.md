@@ -19,7 +19,7 @@ res_type: kb
     </tr>
     <tr>
         <td>Product</td>
-        <td>RadChartView for WinForms</td>
+        <td>UI for WinForms</td>
     </tr>
 </table>
 
