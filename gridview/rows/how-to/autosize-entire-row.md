@@ -151,3 +151,5 @@ End Sub
 
 {{endregion}} 
 
+
+A complete solution which add cached height is available in our [SDK repository](https://github.com/telerik/winforms-sdk/tree/master/GridView/AutoSizeEntireRow).
