@@ -18,6 +18,7 @@ The ESRI Shapefiles or simply the shapefiles are popular format for storing geog
 
 To read your data you have to use a __ShapeFileReader__ which reads __ShapeFileReaderParameters__ where the __ShapeStream__ and __DbfStream__ are stored.
 
+>note You can find the shape file for this example in our [demo application]({%slug winforms/installation-deployment-and-distribution/getting-started%).
 
 #### Using ShapeFileReader
 
