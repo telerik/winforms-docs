@@ -1250,6 +1250,8 @@ header, nav, section, article, aside, footer {
         right: 15px; 
         margin: 0px; 
     }
+	
+	button.gsc-search-button-v2 {
 		display: none !important;
 		border: none;
 		background: none;
