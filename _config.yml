@@ -248,6 +248,9 @@ navigation:
     chat/chat-items:
         title: Chat Items
         position: 3
+    chat/integration:
+        title: Integration
+        position: 4
     chat/customizing-appearance:
         title: Customizing Appearance
         position: 7
