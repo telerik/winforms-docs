@@ -22,8 +22,8 @@ The following snippet shows how you can use the __ResizeCanvas__ method. You wil
 
 #### Use the ResizeCanvas method
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Resize}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Resize}}
+{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Canvas}} 
+{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Canvas}}
 ````C#
 radImageEditor1.ImageEditorElement.Resize(500, 500);
 
