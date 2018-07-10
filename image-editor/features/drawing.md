@@ -38,10 +38,12 @@ The following snippet shows how you can add text using the RadImageEditor API.
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=DrawText}}
 ````C#
 radImageEditor1.ImageEditorElement.DrawString("Test", 12, Color.Red, 200, 200, 120);
+radImageEditor1.ImageEditorElement.SaveState();
 
 ````
 ````VB.NET
 radImageEditor1.ImageEditorElement.DrawString("Test", 12, Color.Red, 200, 200, 120)
+radImageEditor1.ImageEditorElement.SaveState()
 
 ````
 
@@ -74,6 +76,7 @@ RoundRectShape shape = new RoundRectShape();
 Rectangle rect = new Rectangle(0, 0, 100, 100);
 var path = shape.CreatePath(rect);
 radImageEditor1.ImageEditorElement.DrawShape(path, Color.Red, Color.Green, 3);
+radImageEditor1.ImageEditorElement.SaveState();
 
 ````
 ````VB.NET
@@ -81,6 +84,7 @@ Dim shape As New RoundRectShape()
 Dim rect As New Rectangle(0, 0, 100, 100)
 Dim path = shape.CreatePath(rect)
 radImageEditor1.ImageEditorElement.DrawShape(path, Color.Red, Color.Green, 3)
+radImageEditor1.ImageEditorElement.SaveState()
 
 ````
 

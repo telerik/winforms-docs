@@ -37,10 +37,12 @@ This can be done in the code behind as well.
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Hue}}
 ````C#
 radImageEditor1.ImageEditorElement.SetHue(200);
+radImageEditor1.ImageEditorElement.SaveState();
 
 ````
 ````VB.NET
 radImageEditor1.ImageEditorElement.SetHue(200)
+radImageEditor1.ImageEditorElement.SaveState()
 
 ````
 
@@ -61,10 +63,12 @@ To do this programmatically use the __SetSaturation__ method.
 
 ````C#
 radImageEditor1.ImageEditorElement.SetSaturation(-50);
+radImageEditor1.ImageEditorElement.SaveState();
 
 ````
 ````VB.NET
 radImageEditor1.ImageEditorElement.SetSaturation(-50)
+radImageEditor1.ImageEditorElement.SaveState()
 
 ````
 
@@ -85,10 +89,12 @@ This can be done in the code behind as well.
 
 ````C#
 radImageEditor1.ImageEditorElement.SetContrastAndBrightness(100, 10);
+radImageEditor1.ImageEditorElement.SaveState();
 
 ````
 ````VB.NET
 radImageEditor1.ImageEditorElement.SetContrastAndBrightness(100, 10)
+radImageEditor1.ImageEditorElement.SaveState()
 
 ````
 
@@ -109,10 +115,12 @@ This action can be performed in code with the following method.
 
 ````C#
 radImageEditor1.ImageEditorElement.InvertColors();
+radImageEditor1.ImageEditorElement.SaveState();
 
 ````
 ````VB.NET
 radImageEditor1.ImageEditorElement.InvertColors()
+radImageEditor1.ImageEditorElement.SaveState()
 
 ````
 

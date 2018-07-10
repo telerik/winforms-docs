@@ -29,10 +29,12 @@ This can be performed programmatically as well. The following snippet shows how 
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Sharp}}
 ````C#
 radImageEditor1.ImageEditorElement.Sharpen(100);
+radImageEditor1.ImageEditorElement.SaveState();
 
 ````
 ````VB.NET
 radImageEditor1.ImageEditorElement.Sharpen(100)
+radImageEditor1.ImageEditorElement.SaveState()
 
 ````
 
@@ -50,10 +52,12 @@ This can be performed programmatically as well. The following snippet shows how 
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Blur}}
 ````C#
 radImageEditor1.ImageEditorElement.Blur(100);
+radImageEditor1.ImageEditorElement.SaveState();
 
 ````
 ````VB.NET
 radImageEditor1.ImageEditorElement.Blur(100)
+radImageEditor1.ImageEditorElement.SaveState()
 
 ````
 

@@ -24,10 +24,12 @@ To perform a Crop operation use the __Crop__ method. You need to pass a rectangl
 {{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Crop}}
 ````C#
 radImageEditor1.ImageEditorElement.Crop(new Rectangle(0, 0, 20, 20));
+radImageEditor1.ImageEditorElement.SaveState();
 
 ````
 ````VB.NET
 radImageEditor1.ImageEditorElement.Crop(New Rectangle(0, 0, 20, 20))
+radImageEditor1.ImageEditorElement.SaveState()
 
 ````
 
