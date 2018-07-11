@@ -19,9 +19,6 @@ position: 9
 |**ShowAvatars**|Gets or sets whether avatar images will be displayed in the chat window next to messages.|
 |**ShowMessagesOnOneSide**|Gets or sets whether messages will be displayed aligned to only one side of the chat window or on both.|
 |**TimeSeparatorInterval**|Gets or sets the time interval between messages that will trigger the automatic addition of a Time separator. If set to no Time separators will be added.|
-|**AvatarSize**|Gets or sets the size of the avatar images.|
-|**ShowAvatars**|Gets or sets whether avatar images will be displayed in the chat window next to messages.|
-|**ShowMessagesOnOneSide**|Gets or sets whether messages will be displayed aligned to only one side of the chat window or on both.|
 
 # RadChatElement's Properties
 
