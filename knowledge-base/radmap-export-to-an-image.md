@@ -30,8 +30,9 @@ An article demonstrating how the currently visible part of map control can be ex
 
 ## Solution
 
+**RadMap** will be exported with the help of the **Graphics** and **RadGdiGraphics** classes.
+
 >caption Figure 1: Exporting RadMap
->
 
 |Control|Exported Image|
 |----|----|
@@ -39,7 +40,7 @@ An article demonstrating how the currently visible part of map control can be ex
 
 The control will be set up with the **OpenStreetMapProvider** including a layer with pins.
 
-#### InitialSetup
+#### Initial Setup
 
 {{source=..\SamplesCS\KnowledgeBase\RadMapExportImageForm.cs region=InitialSetup}} 
 {{source=..\SamplesVB\KnowledgeBase\RadMapExportImageForm.vb region=InitialSetup}}
