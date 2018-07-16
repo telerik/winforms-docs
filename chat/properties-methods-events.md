@@ -48,7 +48,7 @@ position: 9
 
 |Event|Description|
 |------|------|
-|**SendMessage**|Occurs when the user performs an action e.g hits the Enter key, clicks the Send message button, clicks on a Suggested Action or a Card Action, clicks OK on an overlay.|
+|**SendMessage**|Occurs when the user performs an action e.g hits the Enter key, clicks the Send message button, clicks OK on an overlay.|
 |**SuggestedActionClicked**|Occurs when the user clicks on a Suggested Action.|
 |**CardActionClicked**|Occurs when the user clicks on a Card Action.|
 |**ToolbarActionClicked**|Occurs when the user clicks on a Toolbar Action.|
