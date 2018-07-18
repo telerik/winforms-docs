@@ -10,7 +10,7 @@ position: 0
 
 # Digital Signature
 
-With __RadPdfViewer__ you are able to both display and verify documents within your application and make sure that it has not been tampered with.
+With __RadPdfViewer__ you are able to both display,sign and verify documents within your application and make sure that it has not been tampered with.
 
 This article contains the following sections:
 
@@ -47,6 +47,11 @@ For all other formats you might need, there is a flexible API enabling you to im
 
 The information about a digital signature in a document is stored in a signature field, which can be obtained through the **AcroForm** property of the document. This field exposes a property called __Signature__, which is responsible for validating.
 
+## Signing 
+
+When a document containing a signature field is loaded in **RadPdfViewer**, you can apply a signature to it. This is done through the **SignSignatureDialog**. This dialog gives you the ability to choose a .pfx file representing the certificate and enter the password for it. Clicking the Sign button prompts you to save the signed document to a new file. The newly saved file then opens in **RadPdfViewer**.
+
+![pdfviewer-digital-signature003](images/pdfviewer-digital-signature003.gif)
 
 ## Validation
 
