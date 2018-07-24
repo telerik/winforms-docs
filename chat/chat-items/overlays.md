@@ -32,7 +32,6 @@ When you press the `OK` button, a new message will be automatically added with t
 {{source=..\SamplesVB\Chat\ChatOverlaysActions.vb region=AddCalendarOverlay}}
 
 ````C#
-            
 ChatCalendarOverlay calendarOverlay = new ChatCalendarOverlay("Select a date");
 bool showAsPopup = false;
 Author author = new Author(Properties.Resources.andrew1, "Andrew");
@@ -41,7 +40,7 @@ this.radChat1.AddMessage(overlayMessage);
 
 ````
 ````VB.NET
-Dim calendarOverlay As ChatCalendarOverlay = New ChatCalendarOverlay("Select a date") 
+Dim calendarOverlay As ChatCalendarOverlay = New ChatCalendarOverlay("Select a date")
 Dim showAsPopup As Boolean = False
 Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
 Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(calendarOverlay, showAsPopup, author, DateTime.Now)
@@ -68,7 +67,6 @@ You have access to the calendar itself by the ChatCalendarOverlay.**Calendar** p
 {{source=..\SamplesVB\Chat\ChatOverlaysActions.vb region=AddDateTimeOverlay}}
 
 ````C#
-            
 ChatDateTimeOverlay dateTimerOverlay = new ChatDateTimeOverlay("Select a date and time", DateTime.Now);
 bool showAsPopup = false;
 Author author = new Author(Properties.Resources.andrew1, "Andrew");
@@ -102,7 +100,6 @@ Me.radChat1.AddMessage(overlayMessage)
 {{source=..\SamplesVB\Chat\ChatOverlaysActions.vb region=AddListOverlay}}
 
 ````C#
-            
 ChatListOverlay listOverlay = new ChatListOverlay("List overlay");
 for (int i = 0; i < 10; i++)
 {
@@ -145,7 +142,6 @@ You have access to the list view by the ChatListOverlay.**ListView** property.
 {{source=..\SamplesVB\Chat\ChatOverlaysActions.vb region=AddTimeOverlay}}
 
 ````C#
-            
 ChatTimeOverlay calendarOverlay = new ChatTimeOverlay("Select a date and time", DateTime.Now);
 bool showAsPopup = false;
 Author author = new Author(Properties.Resources.andrew1, "Andrew");
