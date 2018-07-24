@@ -44,21 +44,20 @@ private void radChat1_SuggestedActionClicked(object sender, SuggestedActionEvent
 
 ````
 ````VB.NET
-Dim customOverlay As CustomBaseChatItemOverlay = New CustomBaseChatItemOverlay("Custom overlay")
-Dim dt As DataTable = New DataTable()
-dt.Columns.Add("Id", GetType(Integer))
-dt.Columns.Add("Name", GetType(String))
-For i As Integer = 0 To 10 - 1
-    dt.Rows.Add(i, "Item" & i)
-Next
-customOverlay.Mccb.DisplayMember = "Name"
-customOverlay.Mccb.ValueMember = "Id"
-customOverlay.Mccb.DataSource = dt
-Dim showAsPopup As Boolean = False
-Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
-Me.radChat1.Author = author
-Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(customOverlay, showAsPopup, author, DateTime.Now)
-Me.radChat1.AddMessage(overlayMessage)
+Private Sub AddSuggstedActions()
+    Me.radChat1.AddMessage(New ChatTextMessage("Hello, what kind of a vacation do you need?", Me.radChat1.Author, DateTime.Now))
+    Dim actions As List(Of SuggestedActionDataItem) = New List(Of SuggestedActionDataItem)()
+    actions.Add(New SuggestedActionDataItem("Family trip"))
+    actions.Add(New SuggestedActionDataItem("Summer holiday with friends"))
+    actions.Add(New SuggestedActionDataItem("Business trip"))
+    Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
+    Dim suggestionActionsMessage As ChatSuggestedActionsMessage = New ChatSuggestedActionsMessage(actions, author, DateTime.Now)
+    Me.radChat1.AddMessage(suggestionActionsMessage)
+    AddHandler Me.radChat1.SuggestedActionClicked, AddressOf radChat1_SuggestedActionClicked
+End Sub
+Private Sub radChat1_SuggestedActionClicked(ByVal sender As Object, ByVal e As SuggestedActionEventArgs)
+    Me.radChat1.AddMessage(New ChatTextMessage("You have chosen " & e.Action.Text, Me.radChat1.Author, DateTime.Now))
+End Sub
 
 ```` 
 

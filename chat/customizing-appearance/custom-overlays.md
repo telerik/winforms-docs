@@ -121,6 +121,22 @@ this.radChat1.AddMessage(overlayMessage);
 
 ````
 ````VB.NET
+Dim customOverlay As CustomBaseChatItemOverlay = New CustomBaseChatItemOverlay("Custom overlay")
+Dim dt As DataTable = New DataTable()
+dt.Columns.Add("Id", GetType(Integer))
+dt.Columns.Add("Name", GetType(String))
+For i As Integer = 0 To 10 - 1
+    dt.Rows.Add(i, "Item" & i)
+Next
+customOverlay.Mccb.DisplayMember = "Name"
+customOverlay.Mccb.ValueMember = "Id"
+customOverlay.Mccb.DataSource = dt
+Dim showAsPopup As Boolean = False
+Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
+Me.radChat1.Author = author
+Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(customOverlay, showAsPopup, author, DateTime.Now)
+Me.radChat1.AddMessage(overlayMessage)
+
 ```` 
 
 
