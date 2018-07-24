@@ -12,7 +12,7 @@ position: 3
 
 **RadChat** presents a selection of choices to the user via overlays which are displayed until the user selects a certain choice. Depending on the information that is displayed (date, date and time, time, list options), different overlays can be used. It is possible to construct your own overlay hosting the control which is most appropriate for your custom scenario. 
 
-This article demonstrates a sample approach how to host a [RadMultiColumnComboBox]({%slug winforms/winforms/multicolumncombobox%}) in a custom overlay item. 
+This article demonstrates a sample approach how to host a [RadMultiColumnComboBox]({%slug winforms/multicolumncombobox%}) in a custom overlay item. 
 
 >caption Figure 1: Custom overlay with a RadMultiColumnComboBox
 
