@@ -32,7 +32,7 @@ Telerik UI for for WinForms are automatically added to Visual Studio 2005/2008/2
 
 1. All Telerik UI for for WinForms should appear in the toolbox and you can start using them right away.
 
-## Using the the drag-drop approach
+## Using the drag-drop approach
 
 1. Run Visual Studio 2005/2008/2010/2012/2013/2015/2017.
 
