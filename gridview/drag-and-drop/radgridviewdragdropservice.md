@@ -105,3 +105,4 @@ radGridView1.GridViewElement.RegisterService(customService)
 
 * [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%})	
 * [Rows >> Drag and Drop]({%slug winforms/gridview/rows/drag-and-drop%})	
+* [How to reorder rows in bound RadGridView]({%slug gridview-drag-drop-bound-mode%})

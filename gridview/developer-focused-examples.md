@@ -19,6 +19,7 @@ Additional demos for some of the Telerik UI for Winforms controls are available 
 |[Filtering Indicators in GridView]({%slug filtering-indicators-in-gridview%})|https://github.com/telerik/winforms-sdk/tree/master/GridView/FilterinIngIndicatorsInGridView|
 |AutoSizeEntireRow|https://github.com/telerik/winforms-sdk/tree/master/GridView/AutoSizeEntireRow|
 |Custom Checkbox Header Cell|https://github.com/telerik/winforms-sdk/tree/master/GridView/GridCustomHeaderCheckox|
+|[How to reorder rows in bound RadGridView]({%slug gridview-drag-drop-bound-mode%})|https://github.com/telerik/winforms-sdk/tree/master/GridView/BoundGridReorderRows|
 
 ## See Also
 
