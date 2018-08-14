@@ -19,7 +19,7 @@ See [Keyboard Navigation]({%slug winforms/calendar/customizing-behavior/keyboard
 
 ## Selecting with the mouse
 
-Select a single date by clicking on it. If __AllowMultipleSelect__ is true, you can select multiple dates by holding the `Ctrl` key and clicking each date.
+Select a single date by clicking on it. If __AllowMultipleSelect__ is true, you can select multiple dates by clicking each date. Then, clicking a selected cell will de-select it.
 
 See the [Column and Row Headers]({%slug winforms/calendar/customizing-behavior/column-and-row-headers%}) topic for how to select entire columns and rows at once.
 
