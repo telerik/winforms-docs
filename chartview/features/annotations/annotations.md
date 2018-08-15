@@ -32,6 +32,14 @@ __RadChartView__ provides the following types of annotations:
 >caption Figure 1: Chart Annotations
 ![chartview-annotations 001](images/chartview-annotations001.png)
 
+# Common Properties
+
+|Property|Description|
+|----|----|
+|**ClipToPlotArea**|Gets or sets a value indicating whether this instance will be clipped to the bounds of the plot area.|
+|**DrawMode**|Gets or sets a value indicating the position of the annotation in the chart draw stack.|
+|**PositonOffset**|Gets or sets the offset of the label of the annotations in pixels.|
+
 # See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
