@@ -106,3 +106,4 @@ and inside the manifest file you should declare your app is compatible with Wind
 
 # See Also 
 * [WinForms Scaling at Large DPI Settings–Is It Even Possible?](http://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-)
+* [HDPI Tips and Tricks]({%slug hdpi-tips-and-tricks%})

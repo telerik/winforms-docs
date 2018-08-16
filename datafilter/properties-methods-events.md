@@ -31,6 +31,11 @@ position: 8
 |**SortFieldNames**|Gets or sets a value indicating whether the names of the fields in the drop down should be sorted.|
 |**FieldNamesSortStyle**|Gets or sets a value indicating how the field names are sorted when SortFieldNames is true.|
 
+The **DataFilterCriteriaElement** class also defines three static properties responsible for defining the default sizes of its inner elements:
+* DataFilterCriteriaElement.**DefaultFieldWidth**: default width of the field element.  
+* DataFilterCriteriaElement.**DefaultOperatorWidth**: default width of the operator element. 
+* DataFilterCriteriaElement.**DefaultValueWidth**: default width of the value element.
+
 # Methods
 
 |Method|Description|
