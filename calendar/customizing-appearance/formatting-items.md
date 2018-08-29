@@ -24,6 +24,11 @@ private void RadCalendar1_ElementRender(object sender, RenderElementEventArgs e)
         e.Element.DrawBorder = true;
         e.Element.BorderColor = ColorTranslator.FromHtml("#51ab2e");
     }
+    else
+    {
+        e.Element.ResetValue(LightVisualElement.DrawBorderProperty, ValueResetFlags.Local);
+        e.Element.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local);
+    }
 }
 
 ````
@@ -32,6 +37,9 @@ Private Sub RadCalendar1_ElementRender(ByVal sender As Object, ByVal e As Render
     If e.Day.Date.DayOfWeek = DayOfWeek.Monday OrElse e.Day.Date.DayOfWeek = DayOfWeek.Thursday Then
         e.Element.DrawBorder = True
         e.Element.BorderColor = ColorTranslator.FromHtml("#51ab2e ")
+    Else
+        e.Element.ResetValue(LightVisualElement.DrawBorderProperty, ValueResetFlags.Local)
+        e.Element.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local)
     End If
 End Sub
 
