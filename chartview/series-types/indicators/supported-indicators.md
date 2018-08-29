@@ -13,6 +13,8 @@ previous_url: chartview-series-types-indicators-supported-indicators
 
 The article provides a brief description and a list of the important properties of each indicator supported by __RadChartView__. The indicators are divided in the following groups: Moving Average, Bands, Momentum and Volatility.
 
+>note The **StochasticSlowIndicator**, **StochasticFastIndicator**, **MacdIndicator**, and **BollingerBandsIndicator** consist of two lines visually representing the result of the calculations. Each of these indicators exposes the **ChildIndicator** property providing means for accessing the second series line. 
+
 ## Moving Average Indicators
 
 * __Moving Average (MA), aka Simple Moving Average (SMA)__, provides an average value of the past N-days data. Its __Period__ property defines __N__ – the number of past days it uses to calculate its current value.
