@@ -804,12 +804,15 @@ navigation:
     pageview/backstageview:
         title: BackstageView
         position: 9
+    pageview/navigationview:
+        title: NavigationView
+        position: 10
     pageview/how-to:
         title: How-To
-        position: 10
+        position: 11
     pageview/localization:
         title: Localization
-        position: 11		
+        position: 12		
     panels-and-labels:
         title: Panels and Labels
         position: 320
