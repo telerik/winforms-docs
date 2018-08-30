@@ -130,3 +130,4 @@ This approach is used in the [ERP demo application](https://www.telerik.com/blog
 * [DPI-support]({%slug winforms/telerik-presentation-framework/dpi-support%})
 * [WinForms Scaling at Large DPI Settings–Is It Even Possible?](https://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-)
 * [High DPI support in Windows Forms](https://docs.microsoft.com/en-us/dotnet/framework/winforms/high-dpi-support-in-windows-forms)
+* [DoubleBufferedTableLayoutPanel]({%slug double-Buffered-table-layout-panel%})
