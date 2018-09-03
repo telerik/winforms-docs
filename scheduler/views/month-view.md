@@ -20,6 +20,7 @@ The Month view shows one month at a time, or a preset number of weeks. To move t
 The [Month View]({%slug winforms/scheduler/views/month-view%}) of the scheduler simply has a __Header__, __Month Cells__ for every day in the month and zero or more __Appointment Cells__ in each month cell.
 
 >caption Figure 1: Month View
+
 ![scheduler-views-month-view 008](images/scheduler-views-month-view008.png)
 
 ## Set the Month View
@@ -127,8 +128,10 @@ monthView.WorkWeekEnd = DayOfWeek.Saturday
 
 {{endregion}} 
 
->caption Figure 2: Start/End Work Days
-![scheduler-views-month-view 001](images/scheduler-views-month-view001.png)![scheduler-views-month-view 002](images/scheduler-views-month-view002.png)
+>caption Figure 2: Shown Weekends
+
+![scheduler-views-month-view 001](images/scheduler-views-month-view001.png)
+![scheduler-views-month-view 002](images/scheduler-views-month-view002.png)
 
 ## Setting The Number Of Weeks
 
