@@ -42,7 +42,7 @@ public class DoubleBufferedTableLayoutPanel : TableLayoutPanel
 }
 
 ````
-````VB
+````VB.NET
 Public Class DoubleBufferedTableLayoutPanel
     Inherits TableLayoutPanel
 
@@ -52,3 +52,5 @@ Public Class DoubleBufferedTableLayoutPanel
     End Sub
 End Class
 ````
+
+

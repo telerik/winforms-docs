@@ -48,7 +48,7 @@ private void RadRibbonBar1_MouseMove(object sender, MouseEventArgs e)
     }           
 }
 ````
-````VB
+````VB.NET
 Private toolTip As New RadToolTip()
 Private prevElement As RadButtonElement = Nothing
 Private Sub RadRibbonBar1_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)
