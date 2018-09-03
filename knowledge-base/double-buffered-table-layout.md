@@ -29,7 +29,7 @@ You are using a __TableLayoutPanels__ in your application but there is a flicker
 
 ## Solution
 
-Use the following inherited class and which set the Style:
+Use the following inherited class and which sets the Style:
 
 ````C#
 public class DoubleBufferedTableLayoutPanel : TableLayoutPanel
