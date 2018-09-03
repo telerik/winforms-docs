@@ -7,3 +7,5 @@ tags: navigation, view, hamburger
 published: True
 position: 5
 ---
+
+# Properties Methods and Events
