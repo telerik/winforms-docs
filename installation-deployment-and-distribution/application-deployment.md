@@ -275,6 +275,18 @@ Telerik.WinControls.dll</td></tr><tr><td>
 
 Telerik.WinControls.Themes.Aqua.dll</td></tr><tr><td>
 
+<b>FluentTheme</b></td><td>
+
+Telerik.WinControls.Themes.Fluent.dll</td></tr><tr><td>
+
+<b>FluentDarkTheme</b></td><td>
+
+Telerik.WinControls.Themes.FluentDark.dll</td></tr><tr><td>
+
+<b>CrystalTheme</b></td><td>
+
+Telerik.WinControls.Themes.Crystal.dll</td></tr><tr><td>
+
 <b>DesertTheme</b></td><td>
 
 Telerik.WinControls.Themes.Desert.dll</td></tr><tr><td>
