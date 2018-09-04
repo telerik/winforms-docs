@@ -251,6 +251,9 @@ navigation:
     chat/customizing-appearance:
         title: Customizing Appearance
         position: 7
+    chat/localization:
+        title: Localization
+        position: 8
     checkedlistbox:
         title: CheckedListBox
         position: 130
