@@ -91,3 +91,17 @@ There are no Outlook view related properties in the Action Menu of **RadPageView
 >caution In order to switch from one Action Menu to another, you should first close the menu by clicking on the **Smart Tag** and then reopen it again.
 >
 
+## NavigationView
+
+![](images/pageview-design-time006.png)
+
+* __Item Alignment__: Determines the alignment of items within the items container.
+* __Item Fit Mode__:Determines the fit mode of the items. The available modes are *None*, *Fill*, *Shrink*, *ShrinkAndFill*, *FullHeight* and *MultiLine*.
+* __DisplayMode__: Sets the display mode. The possible values are - *Auto*, *Compact*, *Expanded*, *Minimal*.
+* __Header Height__: Sets the header height.
+* __Expanded Pane Width__: Sets the pages panel width when the mode is set to *Expanded*.
+* __Collapsed Pane Width__: Sets the pages panel width when the mode is set to *Compact*.
+* __Compact Mode Threshold Width__: This property determines when the DisplayMode will be switched from Compact to Minimal. The DisplayMode should be set to Auto in order this to work.
+* __Expanded Mode Threshold Width__:This property determines when the DisplayMode will be switched from Expanded to Compact. The DisplayMode should be set to Auto in order this to work.
+
+

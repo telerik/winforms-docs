@@ -5,7 +5,7 @@ description: The navigation view control provides a collapsible navigation pane 
 slug: winforms/pageview/navigationview-getting-started
 tags: navigation, view, hamburger
 published: True
-position: 3
+position: 1
 ---
 
 # Getting Started
@@ -26,6 +26,7 @@ In this tutorial you are going to create a simple RadPageView by using the __Nav
 
 
 4.The final step concerns the process of adding some content in the content areas of the pages. To do so, again from the drop down list of the Visual Studio Property Window, select each of the created RadPageViewPages and drag the appropriate controls in the content area of the currently selected page.
+    ![](images/pageview-navigation-view-getting-started004.gif)
 
-     ![](images/pageview-navigation-view-getting-started004.gif)
+# See Also
 
