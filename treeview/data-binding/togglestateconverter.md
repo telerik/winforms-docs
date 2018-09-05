@@ -33,7 +33,7 @@ A [Type Converter]( https://msdn.microsoft.com/en-us/library/ayybcxe5.aspx) is u
 
 * Override the __ConvertTo__ method that implements the conversion. 
 
-Consider the **RadTreeView** is populated with **Item**s object having the following properties:
+Consider the **RadTreeView** is populated with **Item** objects having the following properties:
 
 #### Item class
 
