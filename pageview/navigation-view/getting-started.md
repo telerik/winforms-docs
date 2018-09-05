@@ -12,11 +12,11 @@ position: 1
 
 In this tutorial you are going to create a simple RadPageView by using the __NavigationView__.
 
-1. Create a new WinForms application using the standard template and drag RadPageView on your form. Dock it for Fill and add some pages by selection the pages collection in the Properties window.
+1. Create a new WinForms application using the [standard template]({%slug winforms/visual-studio-templates%}) and drag RadPageView on your form. Set its __Dock__ property to *Fill* and add some pages by selecting the pages collection in the Properties window.
 
     ![](images/pageview-navigation-view-getting-started001.png)
 
-2. Change the test and set an image to each page. The layout should look like this:
+2. Change the text and set an image to each page. The layout should look like this:
 
     ![](images/pageview-navigation-view-getting-started002.png)
  
@@ -29,4 +29,5 @@ In this tutorial you are going to create a simple RadPageView by using the __Nav
     ![](images/pageview-navigation-view-getting-started004.gif)
 
 # See Also
-
+* [Display Modes]({%slug winforms/pageview/navigationview/displaymode%})
+* [Properties]({%slug winforms/pageview/navigationview-properties%})
