@@ -254,6 +254,9 @@ navigation:
     chat/customizing-appearance:
         title: Customizing Appearance
         position: 7
+    chat/localization:
+        title: Localization
+        position: 8
     checkedlistbox:
         title: CheckedListBox
         position: 130
@@ -807,12 +810,15 @@ navigation:
     pageview/backstageview:
         title: BackstageView
         position: 9
+    pageview/navigation-view:
+        title: NavigationView
+        position: 10
     pageview/how-to:
         title: How-To
-        position: 10
+        position: 11
     pageview/localization:
         title: Localization
-        position: 11		
+        position: 12		
     panels-and-labels:
         title: Panels and Labels
         position: 320

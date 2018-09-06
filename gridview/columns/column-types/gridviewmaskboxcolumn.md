@@ -17,7 +17,7 @@ __GridViewMaskBoxColumn__ allows *restricted* editing of text data. Each cell in
 
 You can set a *mask* to GridViewMaskBoxColumn using its __Mask__ and __MaskType__ properties. You can find further information about the possible values for these properties in RadMaskEditBox documentation section.
 
->note You can use *FormatString* property to format the values of GridViewMaskBoxColumn cells not currently opened for editing.
+>note You can use **FormatString** property to format the values of **GridViewMaskBoxColumn** cells not currently opened for editing.
 
 #### Add GridViewMaskBoxColumn to the grid.
 
@@ -53,7 +53,7 @@ RadGridView1.MasterTemplate.Columns.Add(maskBoxColumn)
 
 {{endregion}} 
 
-
+>note The **GridViewMaskBoxColumn** also supports null values and this functionality can be enabled by setting the **EnableNullValueInput** property of the column to *true*. The default value of the property is set to *false*. Once this is enabled you can use `Ctrl + Delete` or `Ctrl + 0` to clear the value in the editor.
 
 # See Also
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})

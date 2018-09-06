@@ -5,7 +5,7 @@ description: The nodes building the tree of descriptor items can be customized b
 slug: winforms/datafilter/customizing-appearance/formatting-nodes
 tags: data, filter
 published: True
-position: 3
+position: 1
 ---
 
 # Formatting Nodes

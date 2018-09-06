@@ -83,6 +83,7 @@ The supported __scales__ can be set to any of the predefined values, or the user
 A [Scheduler Navigator]({%slug winforms/scheduler/scheduler-navigator/overview%}) control can be placed at the top of the scheduler for easy navigation between the different views and dates;
 
 >caption Figure 5: Scheduler Navigator 
+
 ![scheduler-views-overview-and-structure 006](images/scheduler-views-overview-and-structure006.png)
 
 # See Also

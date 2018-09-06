@@ -28,6 +28,7 @@ Currently, we ship the following modes of this control which implement different
 * *Outlook Mode*: equivalent to the **RadPanelBar**’s *OutlookNavPane* mode.
 * *Explorer Mode*: designed to display multiple visible pages at once.
 * *Backstage Mode*: designed after the Office 2010 backstage mode.
+* *Navigation Mode*: designed to change the strip width depending of the available space. 
 
 The following tables show the internal elements hierarchy and structure of **RadPageView** considering the view mode:
 
@@ -40,6 +41,7 @@ The following tables show the internal elements hierarchy and structure of **Rad
 |**Outlook**|![pageview-architecture004](images/pageview-architecture004.png)|
 |**ExplorerBar**|![pageview-architecture005](images/pageview-architecture005.png)|
 |**Backstage**|![pageview-architecture006](images/pageview-architecture006.png)|
+|**NavigationView**|![pageview-architecture013](images/pageview-architecture013.png)|
 
 >caption Structure
 
@@ -50,6 +52,7 @@ The following tables show the internal elements hierarchy and structure of **Rad
 |**Outlook**|![pageview-architecture009](images/pageview-architecture009.png)|
 |**ExplorerBar**|![pageview-architecture010](images/pageview-architecture010.png)|
 |**Backstage**|![pageview-architecture011](images/pageview-architecture011.png)|
+|**NavigationView**|![pageview-architecture012](images/pageview-architecture012.png)|
 
 # See Also
 

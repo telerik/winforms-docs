@@ -11,7 +11,7 @@ previous_url: gridview-rows-rows-vs-childrows
 
 # Rows vs ChildRows
 
-RadGridView exposes two collections that contains data rows:
+RadGridView exposes two collections that contain data rows:
 
 * __Rows__. This collections contains all data rows that belong to RadGridView. Data operations such as grouping, sorting, filtering, etc. do not change the content of the collection or the order in which the row objects exist in the collection.
 

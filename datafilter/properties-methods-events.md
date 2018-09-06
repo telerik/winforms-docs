@@ -68,6 +68,7 @@ The **DataFilterCriteriaElement** class also defines three static properties res
 |**NodeAdding**|Occurs when a filter node is adding. It is cancelable.|
 |**NodeRemoved**|Occurs when a filter node is removed.|
 |**NodeRemoving**|Occurs when a filter node is being removed. It is cancelable.|
+|**PropertyDisplayNameNeeded**|Occurs when a property text is about to be displayed on the screen. Allows the developer to substitute property names with user-friendly display strings.|
 
 
 >note Note that **RadDataFilter** is a derivative of **RadTreeView**. Properties, methods and events relevant for **RadTreeView** can be used in **RadDataFilter** as well.

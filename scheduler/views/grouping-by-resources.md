@@ -242,6 +242,7 @@ CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).S
 {{endregion}} 
 
 >caption Figure 1: Resource Size
+
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource001.png)
 
 ## Accessing Child Elements
@@ -253,6 +254,7 @@ When grouped by resources the type of the RadScheduler.__ViewElement__ is a desc
 The example below demonstrates how each of the child view elements can be accessed, and has its own settings for a particular resource.
 
 >caption Figure 2: SchedulerViewElement Settings 
+
 ![scheduler-views-grouping-by-resource 006](images/scheduler-views-grouping-by-resource006.gif)
 
 #### Customize Child Views
@@ -386,16 +388,24 @@ End Sub
 ## Grouping By Resources In Different Views
 
 >caption Figure 3: Day View
+
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource002.png)
 
 >caption Figure 4: Week View
+
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource003.png)
 
 >caption Figure 5: Month View
+
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource004.png)
 
 >caption Figure 6: Timeline View
+
 ![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource005.png)
+
+>caption Figure 7: Agenda View
+
+![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource006.png)
 
 # See Also
 
