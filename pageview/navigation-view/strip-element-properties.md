@@ -30,6 +30,16 @@ You can use the following properties to change the behavior of the Navigation Vi
 
 {{source=..\SamplesCS\PageView\NavigationView.cs region=GetView}}
 {{source=..\SamplesVB\PageView\NavigationView.vb region=GetView}}
+````C#
+var navigationElement = this.radPageView1.ViewElement as RadPageViewNavigationViewElement;
+navigationElement.DisplayMode = NavigationViewDisplayModes.Auto;
+
+````
+````VB.NET
+Dim navigationElement = TryCast(Me.radPageView1.ViewElement, RadPageViewNavigationViewElement)
+navigationElement.DisplayMode = NavigationViewDisplayModes.Auto
+
+````
  
 {{endregion}}
 

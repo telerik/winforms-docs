@@ -26,53 +26,51 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesVB\Chat\ChatLocalization.vb region=myEnglishLocalizationProvider}} 
 
 ````C#
-        public class MyEnglishChatLocalizationProvider : Telerik.WinControls.Localization.ChatLocalizationProvider
+public class MyEnglishChatLocalizationProvider : Telerik.WinControls.Localization.ChatLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
+    {
+        switch (id)
         {
-            public override string GetLocalizedString(string id)
-            {
-                switch (id)
-                {
-                    case ChatStringId.TypeAMessage: return "Type a message";
-                    case ChatStringId.OverlayOK: return "OK";
-                    case ChatStringId.OverlayCancel: return "Cancel";
-                    case ChatStringId.FlightCardDeparture: return "Departure";
-                    case ChatStringId.FlightCardArrival: return "Arrival";
-                    case ChatStringId.FlightCardPassenger: return "Passenger";
-                    case ChatStringId.FlightCardTotal: return "Total";
-                    default:
-                        break;
-                }
-                return base.GetLocalizedString(id);
-            }
+            case ChatStringId.TypeAMessage: return "Type a message";
+            case ChatStringId.OverlayOK: return "OK";
+            case ChatStringId.OverlayCancel: return "Cancel";
+            case ChatStringId.FlightCardDeparture: return "Departure";
+            case ChatStringId.FlightCardArrival: return "Arrival";
+            case ChatStringId.FlightCardPassenger: return "Passenger";
+            case ChatStringId.FlightCardTotal: return "Total";
+            default:
+                break;
         }
+        return base.GetLocalizedString(id);
+    }
+}
 
 ````
 ````VB.NET
-	    Public Class MyEnglishChatLocalizationProvider
-        Inherits Telerik.WinControls.Localization.ChatLocalizationProvider
-
-        Public Overrides Function GetLocalizedString(ByVal id As String) As String
-            Select Case id
-                Case ChatStringId.TypeAMessage
-                    Return "Type a message"
-                Case ChatStringId.OverlayOK
-                    Return "OK"
-                Case ChatStringId.OverlayCancel
-                    Return "Cancel"
-                Case ChatStringId.FlightCardDeparture
-                    Return "Departure"
-                Case ChatStringId.FlightCardArrival
-                    Return "Arrival"
-                Case ChatStringId.FlightCardPassenger
-                    Return "Passenger"
-                Case ChatStringId.FlightCardTotal
-                    Return "Total"
-                Case Else
-            End Select
-
-            Return MyBase.GetLocalizedString(id)
-        End Function
-    End Class
+Public Class MyEnglishChatLocalizationProvider
+    Inherits Telerik.WinControls.Localization.ChatLocalizationProvider
+    Public Overrides Function GetLocalizedString(ByVal id As String) As String
+        Select Case id
+            Case ChatStringId.TypeAMessage
+                Return "Type a message"
+            Case ChatStringId.OverlayOK
+                Return "OK"
+            Case ChatStringId.OverlayCancel
+                Return "Cancel"
+            Case ChatStringId.FlightCardDeparture
+                Return "Departure"
+            Case ChatStringId.FlightCardArrival
+                Return "Arrival"
+            Case ChatStringId.FlightCardPassenger
+                Return "Passenger"
+            Case ChatStringId.FlightCardTotal
+                Return "Total"
+            Case Else
+        End Select
+        Return MyBase.GetLocalizedString(id)
+    End Function
+End Class
 
 ````
 
@@ -86,11 +84,11 @@ To apply the custom localization provider, instantiate and assign it to the cur
 {{source=..\SamplesVB\Chat\ChatLocalization.vb region=localizeChat}} 
 
 ````C#
-	ChatLocalizationProvider.CurrentProvider = new MyEnglishChatLocalizationProvider();
+ChatLocalizationProvider.CurrentProvider = new MyEnglishChatLocalizationProvider();
 
 ````
 ````VB.NET
-	ChatLocalizationProvider.CurrentProvider = New MyEnglishChatLocalizationProvider()
+ChatLocalizationProvider.CurrentProvider = New MyEnglishChatLocalizationProvider()
 
 ````
 

@@ -24,11 +24,12 @@ The Agenda View can be set to be the default view which the user sees by setting
 {{source=..\SamplesVB\Scheduler\Views\AgendaView.vb region=SetView}} 
 
 ````C#
-	this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Agenda;
+this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Agenda;
 
 ````
 ````VB.NET
-    Me.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Agenda
+Me.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Agenda
+
 ````
 
 {{endregion}} 
@@ -42,14 +43,16 @@ To get the instance of the **SchedulerAgendaView** from the **RadScheduler** obj
 {{source=..\SamplesVB\Scheduler\Views\AgendaView.vb region=GetAgendaView}} 
 
 ````C#
-    SchedulerAgendaView agendaView = this.radScheduler1.ActiveView as SchedulerAgendaView;
-    //or 
-    agendaView = this.radScheduler1.GetAgendaView();	 
+SchedulerAgendaView agendaView = this.radScheduler1.ActiveView as SchedulerAgendaView;
+//or 
+agendaView = this.radScheduler1.GetAgendaView();
+
 ````
 ````VB.NET
-    Dim agendaView As SchedulerAgendaView = TryCast(Me.radScheduler1.ActiveView, SchedulerAgendaView)
-    'or
-    agendaView = Me.radScheduler1.GetAgendaView()
+Dim agendaView As SchedulerAgendaView = TryCast(Me.radScheduler1.ActiveView, SchedulerAgendaView)
+'or
+agendaView = Me.radScheduler1.GetAgendaView()
+
 ````
 
 {{endregion}} 
@@ -64,12 +67,14 @@ To get the instance of the **SchedulerAgendaView** from the **RadScheduler** obj
 {{source=..\SamplesVB\Scheduler\Views\AgendaView.vb region=GetGrid}} 
 
 ````C#
-	SchedulerAgendaViewElement agendaViewElement = this.radScheduler1.SchedulerElement.ViewElement as SchedulerAgendaViewElement;
-	RadGridView agendaGrid = agendaViewElement.Grid;
+SchedulerAgendaViewElement agendaViewElement = this.radScheduler1.SchedulerElement.ViewElement as SchedulerAgendaViewElement;
+RadGridView agendaGrid = agendaViewElement.Grid;
+
 ````
 ````VB.NET
-	Dim agendaViewElement As SchedulerAgendaViewElement = TryCast(Me.radScheduler1.SchedulerElement.ViewElement, SchedulerAgendaViewElement)
-	Dim agendaGrid As RadGridView = agendaViewElement.Grid
+Dim agendaViewElement As SchedulerAgendaViewElement = TryCast(Me.radScheduler1.SchedulerElement.ViewElement, SchedulerAgendaViewElement)
+Dim agendaGrid As RadGridView = agendaViewElement.Grid
+
 ````
 
 {{endregion}} 
@@ -103,14 +108,16 @@ In order to group the **SchedulerAgendaView** by resources programmatically it i
 {{source=..\SamplesVB\Scheduler\Views\AgendaView.vb region=GroupByResources}} 
 
 ````C#
-	GroupDescriptor descriptor = new GroupDescriptor();
-	descriptor.GroupNames.Add("Resource", ListSortDirection.Ascending);
-	agendaViewElement.Grid.GroupDescriptors.Add(descriptor);	 
+GroupDescriptor descriptor = new GroupDescriptor();
+descriptor.GroupNames.Add("Resource", ListSortDirection.Ascending);
+agendaViewElement.Grid.GroupDescriptors.Add(descriptor);
+
 ````
 ````VB.NET
-	Dim descriptor As GroupDescriptor = New GroupDescriptor()
-	descriptor.GroupNames.Add("Resource", ListSortDirection.Ascending)
-	agendaViewElement.Grid.GroupDescriptors.Add(descriptor)
+Dim descriptor As GroupDescriptor = New GroupDescriptor()
+descriptor.GroupNames.Add("Resource", ListSortDirection.Ascending)
+agendaViewElement.Grid.GroupDescriptors.Add(descriptor)
+
 ````
 
 {{endregion}}
