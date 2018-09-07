@@ -53,6 +53,13 @@ this.radScheduler1.Holidays.AddHoliday(holiday, generateAppointment);
 
 ````
 ````VB.NET
+Dim holiday As Holiday = New Holiday()
+holiday.Date = New DateTime(2018, 5, 24)
+holiday.HolidayName = "Saints Cyril and Methodius Day"
+holiday.Location = "Bulgaria"
+Dim generateAppointment As Boolean = True
+Me.radScheduler1.Holidays.AddHoliday(holiday, generateAppointment)
+
 ````
 
 {{endregion}} 
@@ -70,6 +77,10 @@ this.radScheduler1.Holidays.ReadHolidays(fileName, createAppointment);
 
 ````
 ````VB.NET
+Dim fileName As String = ".hol file location"
+Dim createAppointment As Boolean = True
+Me.radScheduler1.Holidays.ReadHolidays(fileName, createAppointment)
+
 ````
 
 {{endregion}} 
@@ -90,6 +101,12 @@ using (System.IO.Stream fileStream = File.OpenRead(fileToRead))
 
 ````
 ````VB.NET
+Dim fileToRead As String = ".hol file location"
+Dim generateAppointment As Boolean = True
+Using fileStream As System.IO.Stream = File.OpenRead(fileToRead)
+    Me.radScheduler1.Holidays.ReadHolidays(fileStream, generateAppointment)
+End Using
+
 ````
 
 {{endregion}} 
@@ -143,6 +160,28 @@ private void radScheduler1_CellFormatting(object sender, SchedulerCellEventArgs 
 
 ````
 ````VB.NET
+Private Sub radScheduler1_CellFormatting(ByVal sender As Object, ByVal e As SchedulerCellEventArgs)
+    If Not (TypeOf e.CellElement Is SchedulerHeaderCellElement) Then
+        If Me.radScheduler1.Holidays.IsHoliday(e.CellElement.Date) Then
+            Dim s As String = String.Empty
+            For Each item In radScheduler1.Holidays.GetHolidays(e.CellElement.Date).OrderBy(Function(ae) ae.HolidayName)
+                If Not s.Contains(item.HolidayName) Then s += item.HolidayName + Environment.NewLine
+            Next
+            e.CellElement.DrawText = True
+            e.CellElement.Text = s.ToString()
+            e.CellElement.TextWrap = True
+            e.CellElement.TextAlignment = ContentAlignment.BottomCenter
+            Dim padding As Padding = e.CellElement.Padding
+            If Me.radScheduler1.ActiveViewType = SchedulerViewType.Month Then padding.Bottom = 22
+            e.CellElement.Padding = padding
+            If radScheduler1.Holidays.GetHolidays(e.CellElement.Date).Where(Function(l) l.Location = "Bulgaria").Any() Then e.CellElement.BackColor = Color.LightGreen Else e.CellElement.BackColor = Color.Orange
+        Else
+            e.CellElement.DrawText = False
+            e.CellElement.ResetValue(RadItem.BackColorProperty, ValueResetFlags.Local)
+        End If
+    End If
+End Sub
+
 ````
 
 {{endregion}} 
