@@ -19,7 +19,7 @@ Telerik UI for for WinForms includes over 120 UI controls that you can use to ea
 
 * [ApplicationMenu]({%slug winforms/menus/applicationmenu%})
 * [Barcode]({%slug winforms/barcode/overview%})  
-* BreadCrumb
+* [BreadCrumb]({%slug winforms/treeview/breadcrumb%})
 * [BulletGraph]({%slug winforms/gauges/bulletgraph%})
 * [Calendar]({%slug winforms/calendar%})
 * [Carousel]({%slug winforms/carousel%})
