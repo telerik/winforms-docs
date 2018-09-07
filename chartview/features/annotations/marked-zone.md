@@ -138,7 +138,7 @@ Me.radChartView1.Annotations.Add(annotation)
 
 ## Polar Marked Zone Annotation
 
-The **PolarMarkedZoneAnnotation** defines a pie arc segment painted on a *Polar* area. This annotation is compatible for series using a *Polar* coordinate system: **RadColumnSeries**, **RadarPointSeries**, and **PolarPointSeries**.
+The **PolarMarkedZoneAnnotation** defines a pie arc segment painted on a *Polar* area. This annotation is compatible for series using a *Polar* coordinate system: **RadarColumnSeries**, **RadarPointSeries**, and **PolarPointSeries**.
 
 >caption Figure 4: Polar Marked Zone Annotation in Combination with a RadarColumnSeries
 ![chartview-annotations-markedzone-annotations 004](images/chartview-annotations-markedzone-annotations004.png)
