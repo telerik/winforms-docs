@@ -20,7 +20,7 @@ This mode switches between the other modes depending on the available free space
 
 ## Minimal
 
-With this mode the pages items are displayed in popup, only the header and the hamburger button are viable. This is the default view when the overall width of the control is less than or equal to 640 pixels.  
+With this mode the pages items are displayed in popup, only the header and the hamburger button are visible. This is the default view when the overall width of the control is less than or equal to 640 pixels.  
 
 ![](images/pageview-navigation-view-display-modes002.gif)
 
