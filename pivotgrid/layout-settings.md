@@ -28,7 +28,7 @@ You can control the layout type of the column and row headers via the following 
 
 ````C#
 this.radPivotGrid1.ColumnHeadersLayout = Telerik.WinControls.UI.PivotLayout.Tabular;
-this.radpivotgrid1.rowheaderslayout = telerik.wincontrols.ui.pivotlayout.compact;
+this.radPivotGrid1.RowHeadersLayout = Telerik.WinControls.UI.PivotLayout.Compact;
 
 ````
 ````VB.NET
