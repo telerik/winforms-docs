@@ -81,6 +81,8 @@ Telerik UI for for WinForms includes over 120 UI controls that you can use to ea
 
 	* [RibbonForm + VS template]({%slug winforms/forms-and-dialogs/ribbonform%})
 	
+	* [Form Converter]({%slug winforms/forms-and-dialogs/form-converter%})
+	
 * [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%})[Shortcuts]({%slug winforms/shortcuts%})
 * [ScreenTips]({%slug winforms/telerik-presentation-framework/screen-tips%})
 * [ToolTips]({%slug winforms/telerik-presentation-framework/tooltips%})
