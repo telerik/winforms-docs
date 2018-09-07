@@ -84,7 +84,7 @@ Dim agendaGrid As RadGridView = agendaViewElement.Grid
 |Property|Description|
 |----|----|
 |**ViewType**|Returns *SchedulerViewType.Agenda*.|
-|**GroupByDate**|Gets or sets a value indicating whether the agenda is grouped by date. Its default value is *true*.|
+|**GroupByDate**|Gets or sets a value indicating whether the agenda is grouped by date. Its default value is *false*.|
 |**DayCount**|Gets or sets the number of days displayed in the view. Its default value is *1*.|
 
 ## SchedulerAgendaViewElement Properties
