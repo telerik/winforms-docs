@@ -25,7 +25,7 @@ You can use the following properties to change the behavior of the Navigation Vi
 |__CompactModeThresholdWidth__|This property determines when the DisplayMode will be switched from Compact to Minimal. The DisplayMode should be set to Auto in order this to work. The default value is 641. |
 |__ExpandedModeThresholdWidth__|This property determines when the DisplayMode will be switched from Expanded to Compact. The DisplayMode should be set to Auto in order this to work. THe default value is 1008.|
  
-#### Accessing the RadPageViewStripElement Properties
+#### Accessing the RadPageViewNavigationViewElement Properties
 
 
 {{source=..\SamplesCS\PageView\NavigationView.cs region=GetView}}
