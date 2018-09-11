@@ -36,6 +36,8 @@ RadListView1.KeyboardSearchEnabled = True
 
 {{endregion}}
 
+>note Considering the **Text** of each data item, the search behavior is performed. So if you populate **RadListView** with data by using data binding, don't miss to set the **DisplayMember** property which will fill the **Text** for each item.
+
 Another property of interest is the __KeyboardSearchResetInterval__ property. It is used to determine what time between keystrokes will be considered as typing. Consequent keystrokes with performed faster than the specified interval will be considered typing and once the time elapses, the matching item (if such) will be selected. Here is how to access this property to change the value of the timer:
 
 #### Specify the KeyboardSearchResetInterval
