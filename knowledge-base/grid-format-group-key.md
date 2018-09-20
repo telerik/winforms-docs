@@ -1,9 +1,9 @@
 ---
-title: Format the group key of a DateTime valuer in RadGridView
+title: Format the group key of a DateTime value in RadGridView
 description:  Format the group key of a DateTime valuer in RadGridView
 type: how-to
 page_title: How to format the group key of a DateTime valuer in RadGridView
-slug: pivotgrid-changing-default-aggregate-function
+slug: grid-format-group-key
 position: 30
 tags: radgridview, grouping, key, datetime
 res_type: kb
@@ -24,7 +24,7 @@ res_type: kb
 
 ## Description
  
-When performing a groping operation you may need to format or change the group value. For example if you want to group only by date and ignore the time part of a DateTime value. The bellow solution shows how you can use a custom predicate method to change the key values.
+When performing a grouping operation you may need to format or change the group value. For example if you want to group only by date and ignore the time part of a DateTime value. The bellow solution shows how you can use a custom predicate method to change the key values.
 
 ## Solution
 
