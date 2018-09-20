@@ -5,7 +5,7 @@ type: how-to
 page_title: How to change the Default Aggregate Function  
 slug: pivotgrid-changing-default-aggregate-function
 position: 28
-tags: radpivotgrid, field list, agregate, function
+tags: pivotgrid, field list, aggregate, function
 res_type: kb
 ---
 
@@ -24,7 +24,7 @@ res_type: kb
 
 ## Description
 
-An example demonstrating how the default aggreagate function of a node dragged in the **RadPivodFieldList** control to the aggregate descriptions area can be changed.
+An example demonstrating how the default aggregate function of a node dragged in the **RadPivodFieldList** control to the aggregate descriptions area can be changed.
 
 ## Solution
 
