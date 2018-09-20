@@ -4,7 +4,7 @@ description: An example demonstrating how the default aggregate function of a no
 type: how-to
 page_title: How to change the Default Aggregate Function  
 slug: pivotgrid-changing-default-aggregate-function
-position: 28
+position: 29
 tags: pivotgrid, field list, aggregate, function
 res_type: kb
 ---

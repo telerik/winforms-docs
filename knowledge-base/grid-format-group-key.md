@@ -4,7 +4,7 @@ description:  Format the group key of a DateTime valuer in RadGridView
 type: how-to
 page_title: How to format the group key of a DateTime valuer in RadGridView
 slug: pivotgrid-changing-default-aggregate-function
-position: 28
+position: 30
 tags: radgridview, grouping, key, datetime
 res_type: kb
 ---
