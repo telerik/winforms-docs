@@ -24,6 +24,10 @@ You can use the following properties to change the behavior of the Navigation Vi
 |__CollapsedPaneWidth__|Gets/Sets the pages panel width when the mode is set to Compact|
 |__CompactModeThresholdWidth__|This property determines when the DisplayMode will be switched from Compact to Minimal. The DisplayMode should be set to Auto in order this to work. The default value is 641. |
 |__ExpandedModeThresholdWidth__|This property determines when the DisplayMode will be switched from Expanded to Compact. The DisplayMode should be set to Auto in order this to work. THe default value is 1008.|
+|**AllowAnimation**|Gets or sets a value indicating whether to use animation when collapsing and expanding the menu.|
+|**AnimationInterval**|Gets or sets the animation interval.|
+|**AnimationFrames**|Gets or sets the animation frames.|
+|**IsAnimating**|Gets a value indicating whether the control is currently animating.|
  
 #### Accessing the RadPageViewNavigationViewElement Properties
 
