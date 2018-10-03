@@ -2,7 +2,7 @@
 title: Specifying a Radius for a MapPoint
 description: An example demonstrating how the MapPoint element can be customized to paint a circle with a predefined radius.  
 type: how-to
-page_title: How to paint a circle specifying its radius in meters. 
+page_title: How to paint a circle specifying its radius in meters
 slug: map-point-with-radius
 position: 34
 tags: map, point, circle
