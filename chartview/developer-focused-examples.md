@@ -15,6 +15,7 @@ Additional demos for some of the Telerik UI for Winforms controls are available 
 |KB Article|SDK Example|
 |------|------|
 |[Negative Area Chart]({%slug chartview-negetive-area%})|https://github.com/telerik/winforms-sdk/tree/master/ChartView/NegativeAreaChart|
+|[Summary Labels on Stacked Bars]({%slug chartview-summary-labels-stacked-bars%})||
 
 ## See Also
 

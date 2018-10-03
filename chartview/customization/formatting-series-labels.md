@@ -84,6 +84,7 @@ End Sub
 
 # See Also
 
+* [Summary Labels on Stacked Bars]({%slug chartview-summary-labels-stacked-bars%})
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Axes]({%slug winforms/chartview-/axes%})
 

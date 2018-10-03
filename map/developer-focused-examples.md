@@ -16,6 +16,7 @@ Additional demos for some of the Telerik UI for Winforms controls are available 
 |------|------|
 |[Adding an Image to a Map Pin]({%slug radmap-custom-pins%})|https://github.com/telerik/winforms-sdk/tree/master/Map/RadMapCustomPins|
 |[Exporting RadMap to an Image]({%slug radmap-export-image%})|https://github.com/telerik/winforms-sdk/tree/master/Map/RadMapToAnImage|
+|[Specifying a Radius for a MapPoint]({%slug map-point-with-radius%})||
 
 ## See Also
 
