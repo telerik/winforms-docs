@@ -84,7 +84,7 @@ public partial class Form1 : Form
         activeTimelineView.SchedulerTimescales.Add(scale);
         scale.Visible = true;
 
-		this.radScheduler1.GetTimelineView().GetScaling().DisplayedCellsCount = 25;
+		this.radScheduler1.GetTimelineView().GetScaling().DisplayedCellsCount = 20;
 
     }
 }
@@ -108,7 +108,7 @@ Public Partial Class Form1
         activeTimelineView.SchedulerTimescales.Add(scale)
         scale.Visible = True
 		
-		Me.radScheduler1.GetTimelineView().GetScaling().DisplayedCellsCount = 25
+		Me.radScheduler1.GetTimelineView().GetScaling().DisplayedCellsCount = 20
 
     End Sub
 End Class
