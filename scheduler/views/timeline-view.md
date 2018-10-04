@@ -272,4 +272,5 @@ The following picture demonstrates the result of setting the header sizes and re
 * [Views Walkthrough]({%slug winforms/scheduler/views/views-walkthrough%})
 * [Grouping by Resources]({%slug winforms/scheduler/views/grouping-by-resources%})
 * [Exact Time Rendering]({%slug winforms/scheduler/views/exact-time-rendering%})
+* [Custom Time Scale]({%slug scheduler-custom-time-scale%})
 
