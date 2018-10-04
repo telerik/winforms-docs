@@ -54,7 +54,7 @@ class CustomDropDownListEditor : RadDropDownListEditor
         {
             base.Value = value;
             var editor = this.EditorElement as RadDropDownListElement;
-            if (editor.SelectedValue == null)
+            if (editor != null && editor.SelectedValue == null && value != null)
             {
                 editor.TextBox.TextBoxItem.Text = value.ToString();
             }
@@ -84,7 +84,7 @@ Friend Class CustomDropDownListEditor
         Set(ByVal value As Object)
             MyBase.Value = value
             Dim editor = TryCast(Me.EditorElement, RadDropDownListElement)
-            If editor.SelectedValue Is Nothing Then
+			If editor IsNot Nothing AndAlso editor.SelectedValue Is Nothing AndAlso value IsNot Nothing Then
                 editor.TextBox.TextBoxItem.Text = value.ToString()
             End If
         End Set
