@@ -45,7 +45,7 @@ This is an open source font consisting of close to 1400 icons. The Font Awesome 
 * __Awesome-Regular__
 * __Awesome-Solid__
 
->note The available Font Awesome icons are listed here: https://fontawesome.com/cheatsheet
+>note The available Font Awesome icons are listed here: [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free) 
 
 # Using Glyphs
 
