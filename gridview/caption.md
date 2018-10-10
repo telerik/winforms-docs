@@ -39,8 +39,7 @@ radGridView1.GridViewElement.TitleLabelElement.Font = New Font("Consolas", 12, F
 
 ## Changing the Position of the Title
 
-To change the position you can use the __TitlePosition__ property. In addition you can set the __FlipText__ property. The TitleLabelElement property allows you to access the actual label element. This element is a [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%})
-
+To change the position you can use the __TitlePosition__ property. In addition you can set the __FlipText__ property. The TitleLabelElement property allows you to access the actual label element. This element is a [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}) which is capable of displaying text and image.
 
 
 {{source=..\SamplesCS\GridView\GridTitle\GridTitle.cs region=Position}} 
