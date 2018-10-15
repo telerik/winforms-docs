@@ -150,7 +150,6 @@ Public Class MyStrategy
             Next
         Next
     End Sub
-  
 End Class
 Public Class MySmartLabelsController
     Inherits SmartLabelsController
@@ -180,11 +179,36 @@ this.radChartView1.Controllers.Add(controler);
 
 ````
 ````VB.NET
-Dim controler As New MySmartLabelsController()
-controler.Strategy = New MyStrategy()
-Me.radChartView1.Controllers.Add(controler)
+roperty
+        Dim controler As SmartLabelsController = New SmartLabelsController()
+        controler.Strategy = New MyStrategy()
+        controler.RegisterCustomStrategyWithSeries(GetType(MyStrategy), New List(Of Type)() From {GetType(BarSeries)})
+        Me.radChartView1.Controllers.Add(controler)
 
 ````
+
+{{endregion}} 
+
+After the **R3 2018 SP1** the custom strategy can be applied after setting the Strategy property of the control and after regsitering it with all compatible series: 
+
+{{source=..\SamplesCS\ChartView\Features\SmartLabels.cs region=ApplyCustomStrategyProperty}} 
+{{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=ApplyCustomStrategyProperty}}
+````C#
+SmartLabelsController controler = new SmartLabelsController();
+controler.Strategy = new MyStrategy();
+controler.RegisterCustomStrategyWithSeries(typeof(MyStrategy), new List<Type>() { typeof(BarSeries) });
+this.radChartView1.Controllers.Add(controler);
+
+````
+````VB.NET
+Dim controler As SmartLabelsController = New SmartLabelsController()
+controler.Strategy = New MyStrategy()
+controler.RegisterCustomStrategyWithSeries(GetType(MyStrategy), New List(Of Type)() From {GetType(BarSeries)})
+Me.radChartView1.Controllers.Add(controler)
+
+```` 
+
+
 
 {{endregion}} 
 
