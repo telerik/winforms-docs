@@ -189,7 +189,7 @@ roperty
 
 {{endregion}} 
 
-After the **R3 2018 SP1** the custom strategy can be applied after setting the Strategy property of the control and after regsitering it with all compatible series: 
+After the **R3 2018 SP1** release, the custom strategy can be applied after setting the Strategy property of the control and after regsitering it with all compatible series: 
 
 {{source=..\SamplesCS\ChartView\Features\SmartLabels.cs region=ApplyCustomStrategyProperty}} 
 {{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=ApplyCustomStrategyProperty}}
