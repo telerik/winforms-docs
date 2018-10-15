@@ -10,12 +10,9 @@ position: 0
 
 # Overview
 
-
->note **RadPdfProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview).
-            
-__RadPdfProcessing__ is a processing library that allows to create, import and export PDF documents.
-
-![RadPdfProcessing Overview image](images/RadPdfProcessing_Overview_01.PNG)
+__RadPdfProcessing__ is a processing library that allows to create, import and export PDF documents. **RadPdfProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview).
+         
+![pdf-processing-overview 001](images/pdf-processing-overview001.png)   
 
 The API of RadPdfProcessing contains two different editors, enabling you to choose between editing in a flow-like manner, or using the much more powerful and flexible fixed document structure and drawing on the page.
             

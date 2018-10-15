@@ -394,6 +394,52 @@ Private m_CProperty As String
 
 ![propertygrid-attributes 008](images/propertygrid-attributes008.png)
 
+## RadCheckBoxThreeStateAttribute
+
+The **RadCheckBoxThreeStateAttribute** determines whether properties inside **RadPropertyGrid**, for which a **PropertyGridCheckBoxItemElement** is created, will have a three state check box editor or a two state one.
+
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=RadCheckBoxThreeStateAttribute}} 
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=RadCheckBoxThreeStateAttribute}} 
+
+````C#
+        [RadCheckBoxThreeState(true)]
+        public bool? AProperty { get; set; }
+
+        [RadCheckBoxThreeState(false)]
+        public ToggleState BProperty { get; set; }
+
+````
+````VB.NET
+    <RadCheckBoxThreeState(True)>
+    Public Property AProperty() As Nullable(Of Boolean)
+        Get
+            Return m_AProperty
+        End Get
+        Set(value As Nullable(Of Boolean))
+            m_AProperty = value
+        End Set
+    End Property
+    Private m_AProperty As Nullable(Of Boolean)
+
+    <RadCheckBoxThreeState(False)>
+    Public Property BProperty() As ToggleState
+        Get
+            Return m_BProperty
+        End Get
+        Set(value As ToggleState)
+            m_BProperty = value
+        End Set
+    End Property
+    Private m_BProperty As ToggleState
+
+````
+
+{{endregion}}
+
+>caption Figure 10: RadCheckBoxThreeStateAttribute
+
+![propertygrid-attributes 010](images/propertygrid-attributes010.gif)
+
 # See Also
 
 * [Binding to Multiple Objects]({%slug winforms/propertygrid/populating-with-data/binding-to-multiple-objects%})
