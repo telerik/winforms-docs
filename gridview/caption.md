@@ -10,7 +10,7 @@ position: 12
 
 ## Title
 
-Since R3 2018 SP1 RadgridView supports displaying a Title(Caption). By default the is displayed on top. The position and the alignment of the title text can be easily changed. 
+Since R3 2018 SP1 RadgridView supports displaying a Title(Caption). By default the Title is displayed on top. The position and the alignment of the title text can be easily changed. 
 
 ![gridview-caption 001](images/gridview-caption001.png)
 
@@ -20,6 +20,7 @@ To show the title just set the __TitleText__ property. In addition the following
 
 {{source=..\SamplesCS\GridView\GridTitle\GridTitle.cs region=ShowTitle}} 
 {{source=..\SamplesVB\GridView\GridTitle\GridTitle.vb region=ShowTitle}}
+
 ````C#
 radGridView1.TitleText = "Customers";
 radGridView1.GridViewElement.TitleLabelElement.ForeColor = Color.DarkRed;
@@ -33,13 +34,11 @@ radGridView1.GridViewElement.TitleLabelElement.Font = New Font("Consolas", 12, F
 
 ```` 
 
- 
-
 {{endregion}} 
 
 ## Changing the Position of the Title
 
-To change the position you can use the __TitlePosition__ property. In addition you can set the __FlipText__ property. The TitleLabelElement property allows you to access the actual label element. This element is a [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}) which is capable of displaying text and image.
+To change the position you can use the __TitlePosition__ property. In addition you can set the __FlipText__ property. The __TitleLabelElement__ property allows you to access the actual label element. This element is a [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}) which is capable of displaying text and image.
 
 
 {{source=..\SamplesCS\GridView\GridTitle\GridTitle.cs region=Position}} 
