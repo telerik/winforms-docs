@@ -37,6 +37,8 @@ The available glyphs are separated in several groups, based on their usage:
 * __Social__
 * __File__
 
+>note The following article lists all available glyphs from the TelerikWebUI font along with their names, number and string values: [Glyphs Reference](http://docs.telerik.com/devtools/wpf/styling-and-appearance/glyphs/common-styles-appearance-glyphs-reference-sheet).
+
 # Font Awesome 
 
 This is an open source font consisting of close to 1400 icons. The Font Awesome pack has three different types.
@@ -116,9 +118,7 @@ Me.radLabel1.LabelElement.LabelText.TextRenderingHint = Me.radLabel2.LabelElemen
 
 The bellow image shows the results:
 
-![tpf-glyphs002](images/tpf-glyphs002.png)    
-
->important The following article lists all available glyphs from the TelerikWebUI font along with their names, number and string values: [Glyphs Reference](http://docs.telerik.com/devtools/wpf/styling-and-appearance/glyphs/common-styles-appearance-glyphs-reference-sheet).
+![tpf-glyphs002](images/tpf-glyphs002.png) 
 
 # See Also
 
