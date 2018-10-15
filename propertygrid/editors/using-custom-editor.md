@@ -55,7 +55,11 @@ public class PropertyGridTrackBarEditor : BaseInputEditor
     }
     void TrackBarEditor_ValueChanged(object sender, EventArgs e)
     {
-        this.OnValueChanged();
+        PropertyGridItemElement owner = this.OwnerElement as PropertyGridItemElement;
+        if (owner != null)
+        {
+            owner.PropertyTableElement.RaiseValueChanged(EventArgs.Empty);
+        }
     }
     public override bool EndEdit()
     {
@@ -96,7 +100,10 @@ Public Class PropertyGridTrackBarEditor
         AddHandler (CType(EditorElement, RadTrackBarElement)).ValueChanged, AddressOf TrackBarEditor_ValueChanged
     End Sub
     Private Sub TrackBarEditor_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-        Me.OnValueChanged()
+        Dim owner As PropertyGridItemElement = TryCast(Me.OwnerElement, PropertyGridItemElement)
+        If owner IsNot Nothing Then
+            owner.PropertyTableElement.RaiseValueChanged(EventArgs.Empty)
+        End If
     End Sub
     Public Overrides Function EndEdit() As Boolean
         RemoveHandler (CType(Me.EditorElement, RadTrackBarElement)).ValueChanged, AddressOf TrackBarEditor_ValueChanged

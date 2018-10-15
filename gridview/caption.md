@@ -54,9 +54,7 @@ radGridView1.TitlePosition = Telerik.WinControls.Layouts.Dock.Left
 radGridView1.GridViewElement.TitleLabelElement.TextOrientation = Orientation.Vertical
 radGridView1.GridViewElement.TitleLabelElement.FlipText = True
 
-```` 
-
-![gridview-caption 002](images/gridview-caption002.png)
+````
 
 {{endregion}} 
 

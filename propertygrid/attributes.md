@@ -402,35 +402,33 @@ The **RadCheckBoxThreeStateAttribute** determines whether properties inside **Ra
 {{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=RadCheckBoxThreeStateAttribute}} 
 
 ````C#
-        [RadCheckBoxThreeState(true)]
-        public bool? AProperty { get; set; }
-
-        [RadCheckBoxThreeState(false)]
-        public ToggleState BProperty { get; set; }
+[RadCheckBoxThreeState(true)]
+public bool? AProperty { get; set; }
+[RadCheckBoxThreeState(false)]
+public ToggleState BProperty { get; set; }
 
 ````
 ````VB.NET
-    <RadCheckBoxThreeState(True)>
-    Public Property AProperty() As Nullable(Of Boolean)
-        Get
-            Return m_AProperty
-        End Get
-        Set(value As Nullable(Of Boolean))
-            m_AProperty = value
-        End Set
-    End Property
-    Private m_AProperty As Nullable(Of Boolean)
-
-    <RadCheckBoxThreeState(False)>
-    Public Property BProperty() As ToggleState
-        Get
-            Return m_BProperty
-        End Get
-        Set(value As ToggleState)
-            m_BProperty = value
-        End Set
-    End Property
-    Private m_BProperty As ToggleState
+<RadCheckBoxThreeState(True)>
+Public Property AProperty() As Nullable(Of Boolean)
+    Get
+        Return m_AProperty
+    End Get
+    Set(value As Nullable(Of Boolean))
+        m_AProperty = value
+    End Set
+End Property
+Private m_AProperty As Nullable(Of Boolean)
+<RadCheckBoxThreeState(False)>
+Public Property BProperty() As ToggleState
+    Get
+        Return m_BProperty
+    End Get
+    Set(value As ToggleState)
+        m_BProperty = value
+    End Set
+End Property
+Private m_BProperty As ToggleState
 
 ````
 
