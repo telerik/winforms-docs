@@ -39,6 +39,15 @@ previous_url: layoutcontrol-properties-events-and-methods
 |------|------|
 |__StructureChanged__|Fires when the item position in the control is changed.|
 
+## RadLayoutControlGroupItem Events
+
+|Event|Description|
+|------|------|
+|Expanded|Occurs when the group item is expanded.|
+|Collapsed|Occurs when the group item is collapsed.|
+|Expanding|Occurs when the group item is about to be expanded.|
+|Collapsing|Occurs when the group item is about to be collapsed.|
+
 # See Also
 
 * [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radlayoutcontrol.htm)
