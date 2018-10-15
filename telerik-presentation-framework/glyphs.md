@@ -51,6 +51,8 @@ This is an open source font consisting of close to 1400 icons. The Font Awesome 
 
 The glyphs are basically text shapes, so they need to be hosted in a control with a text contents. The following example shows how you can use the Glyphs with RadLabel
 
+#### TelerikWebUI Example
+
 {{source=..\SamplesCS\TPF\CustomFontsCode.cs region=GetWebUIFont}} 
 {{source=..\SamplesVB\TPF\CustomFontsCode.vb region=GetWebUIFont}}
 ````C#
@@ -74,6 +76,47 @@ radLabel1.Text = ChrW(&HE920).ToString() & " | " & ChrW(&HE812).ToString() & " |
 The bellow image shows the results:
 
 ![tpf-glyphs001](images/tpf-glyphs001.png)    
+
+#### Font Awesome Example
+
+{{source=..\SamplesCS\TPF\CustomFontsCode.cs region=GetFontAwesome}} 
+{{source=..\SamplesVB\TPF\CustomFontsCode.vb region=GetFontAwesome}}
+````C#
+this.radLabel1.LabelElement.CustomFont = "Font Awesome 5 Free Regular";
+this.radLabel2.LabelElement.CustomFont = "Font Awesome 5 Free Solid";
+this.radLabel3.LabelElement.CustomFont = "Font Awesome 5 Brands Regular";
+// The text below consists of Unicode glyphs which can be copied from the Font Awesome website:
+// https://fontawesome.com/icons?d=gallery&m=free
+this.radLabel1.Text = "\uF017 \uF4AD \uF0A4";
+this.radLabel2.Text = "\uF1EB \uF0AD \uF19C";
+this.radLabel3.Text = "\uF26B \uF293 \uF3B8";
+this.radLabel1.LabelElement.CustomFontSize =
+    this.radLabel2.LabelElement.CustomFontSize =
+    this.radLabel3.LabelElement.CustomFontSize = 30;
+this.radLabel1.LabelElement.LabelText.TextRenderingHint =
+    this.radLabel2.LabelElement.LabelText.TextRenderingHint =
+    this.radLabel3.LabelElement.LabelText.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+
+````
+````VB.NET
+Me.radLabel1.LabelElement.CustomFont = "Font Awesome 5 Free Regular"
+Me.radLabel2.LabelElement.CustomFont = "Font Awesome 5 Free Solid"
+Me.radLabel3.LabelElement.CustomFont = "Font Awesome 5 Brands Regular"
+Me.radLabel1.Text = "\uF017 \uF4AD \uF0A4"
+Me.radLabel2.Text = "\uF1EB \uF0AD \uF19C"
+Me.radLabel3.Text = "\uF26B \uF293 \uF3B8"
+Me.radLabel1.LabelElement.CustomFontSize = Me.radLabel2.LabelElement.CustomFontSize = Me.radLabel3.LabelElement.CustomFontSize = 30
+Me.radLabel1.LabelElement.LabelText.TextRenderingHint = Me.radLabel2.LabelElement.LabelText.TextRenderingHint = Me.radLabel3.LabelElement.LabelText.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias
+
+````
+
+
+
+{{endregion}} 
+
+The bellow image shows the results:
+
+![tpf-glyphs002](images/tpf-glyphs002.png)    
 
 >important The following article lists all available glyphs from the TelerikWebUI font along with their names, number and string values: [Glyphs Reference](http://docs.telerik.com/devtools/wpf/styling-and-appearance/glyphs/common-styles-appearance-glyphs-reference-sheet).
 
