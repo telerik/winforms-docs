@@ -14,7 +14,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product Version</td>
-		<td>2019.3.911</td>
+		<td>2019.3.1016</td>
 	</tr>
 	<tr>
 		<td>Product</td>
@@ -67,12 +67,11 @@ public class CustomMapPoint : MapPoint
 
         var scale = -1.0F;
         scale = this.RadiusInMeters * 2 / (double)onePixelInMeters;
-        var newSize = Size.Empty;
+        Size newSize = Size.Empty;
         if (scale > 1)
             newSize = new Size(scale, scale);
 
-        this.GetType().BaseType.GetField("size", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).SetValue(this, newSize);
-
+        this.Size = newSize;
 
         base.ViewportChanged(viewport, action);
     }
@@ -112,8 +111,7 @@ Public Class CustomMapPoint
 
         End If
 
-        Me.GetType().BaseType.GetField("size", Reflection.BindingFlags.Instance Or Reflection.BindingFlags.NonPublic).SetValue(Me, newSize)
-
+		Me.Size = newSize
 
         MyBase.ViewportChanged(viewport, action)
     End Sub
