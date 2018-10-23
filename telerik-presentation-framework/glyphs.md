@@ -125,3 +125,4 @@ The bellow image shows the results:
 * [Custom Fonts]({%slug winforms/tpf/custom-fonts%})
 * [Font Awesome on GitHub](https://github.com/FortAwesome/Font-Awesome)
 * [Font Awesome Cheatsheet](https://fontawesome.com/cheatsheet)
+* [How to insert glyphs easily at design time]({%slug insert-glyphs-easily%})
