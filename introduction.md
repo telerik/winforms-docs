@@ -31,7 +31,7 @@ Telerik UI for for WinForms includes over 120 UI controls that you can use to ea
 * [ContextMenu + ContextMenuManager]({%slug winforms/menus/menu%})[Diagram]({%slug winforms/diagram%})
 * [Dock]({%slug winforms/dock%})
 * [GridView]({%slug winforms/gridview%})
-* [Hamburger Menu]({slug winforms/pageview/navigationview%})
+* [Hamburger Menu]({%slug winforms/pageview/navigationview%})
 * [Image Editor]({%slug radimageeditor-overview%})
 * [VirtualGrid]({%slug winforms/virtualgrid%})
 * [ListControl]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol%})
