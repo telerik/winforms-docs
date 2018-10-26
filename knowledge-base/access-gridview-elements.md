@@ -20,6 +20,10 @@ res_type: kb
         <td>Product</td>
         <td>RadGridView for WinForms</td>
     </tr>
+    <tr>
+        <td>Author</td>
+        <td>Desislava Yordanova</td>
+    </tr>
 </table>
 
 ## Description
