@@ -54,5 +54,5 @@ End Sub
 
 ![buttons-radibutton-tooltips 002](images/buttons-radibutton-tooltips002.png)
 
->note The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set in the __ToolTipText__ property.
+>tip The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set in the __ToolTipText__ property.
 

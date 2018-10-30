@@ -56,7 +56,7 @@ RadRibbonBar1.QuickAccessToolBarItems.Add(mnuQAPrint)
 
 {{endregion}}
 
->note The **RadQuickAccessToolBar** exposes the **SetItemVisibility** method which can be used at run-time to toggle the visible state of its items.
+>tip The **RadQuickAccessToolBar** exposes the **SetItemVisibility** method which can be used at run-time to toggle the visible state of its items.
 
 ## Relocating the Quick Access Toolbar
 

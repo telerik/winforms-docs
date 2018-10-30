@@ -57,7 +57,7 @@ End Sub
 
 The Object-Relational hierarchy mode can be setup manually by creating the child `GridViewTemplate` and adding `GridViewRelation` between `GridViewTemplates`. This special relation should contain the name of the property that belongs to the parent object and that returns an `IList` (IEnumerable) of sub-objects. RadGridView uses the name of the property to load the necessary data for the child `GridViewTemplate` when the user expands a parent row.
 
->note In this mode only the DataSource of parent GridViewTemplate or RadGridView control must be set to a collection of custom business object or ORM data objects.
+>tip In this mode only the DataSource of parent GridViewTemplate or RadGridView control must be set to a collection of custom business object or ORM data objects.
 >
 
 
@@ -139,7 +139,7 @@ End Function
 >important As you can notice, we can perform all data operations on the child templates – grouping, sorting and filtering. RadGridView processes only the amount of data required for a particular data operation (lazy data loading). This provides us with better performance and small memory footprint.
 >
 
->note Since the R3 2015 SP1 release __RadGridView__ supports CRUD operations for its inner levels. The __AutoUpdateObjectRelationalSource__ defines whether CRUD should be managed by the API or not, by default its value is set to *true* . In case one needs to handle these operations manually the property needs to be set to *false* .
+>tip Since the R3 2015 SP1 release __RadGridView__ supports CRUD operations for its inner levels. The __AutoUpdateObjectRelationalSource__ defines whether CRUD should be managed by the API or not, by default its value is set to *true* . In case one needs to handle these operations manually the property needs to be set to *false* .
 >
 
 # See Also

@@ -31,7 +31,7 @@ The RadRichTextBox allows you to export and import its content. This is useful i
 
 Here are some examples on how to export and import.
 
->note The "Export to String" and "Import from String" examples are only valid for the text-based format providers (Html, Xaml, Rtf and TxtFormatProvider). The "Export to File" and "Import from File" are applicable to each of the format providers (save for PDF import). To use them with the desired format just replace the format provider and change the settings of the __SaveFileDialog__ or the __OpenFileDialog__ When importing, simply set the returned document to the __RadRichTextBox1.Document__ .
+>tip The "Export to String" and "Import from String" examples are only valid for the text-based format providers (Html, Xaml, Rtf and TxtFormatProvider). The "Export to File" and "Import from File" are applicable to each of the format providers (save for PDF import). To use them with the desired format just replace the format provider and change the settings of the __SaveFileDialog__ or the __OpenFileDialog__ When importing, simply set the returned document to the __RadRichTextBox1.Document__ .
 >
 
 __Export to String__

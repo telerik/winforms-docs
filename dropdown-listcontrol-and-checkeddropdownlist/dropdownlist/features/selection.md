@@ -100,6 +100,6 @@ Items can be programmatically selected either by their value or by their logical
 * __SelectedItems__: Returns a collection of the currently selected items
             
 
->note Setting these properties will result in raising the selection events.
+>tip Setting these properties will result in raising the selection events.
 >
 

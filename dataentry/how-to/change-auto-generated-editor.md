@@ -21,7 +21,7 @@ By default __RadDataEntry__ generates several different editors according to the
 |Image|PictureBox|
 |string|RadTextBox|
 
->note For any type that is not represented in this table  __RadDataEntry__  generates  __RadTextBox__ .
+>tip For any type that is not represented in this table  __RadDataEntry__  generates  __RadTextBox__ .
 
 In the following example it will be demonstrated how to change default editor with the custom one.
 

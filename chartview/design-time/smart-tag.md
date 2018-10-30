@@ -13,7 +13,7 @@ previous_url: chartview-designtime
 
 In this article we will describe the design time abilities of __RadChartView__. 
 
->note A step by step tutorial for design-time data binding is available in the [Getting Started]({%slug winforms/chartview/getting-started%}) article. Advanced design-time editing and customization can be achieved by utilizing the [Property Builder]({%slug winforms/chartview/design-time/property-builder%}) of __RadChartView__.
+>tip A step by step tutorial for design-time data binding is available in the [Getting Started]({%slug winforms/chartview/getting-started%}) article. Advanced design-time editing and customization can be achieved by utilizing the [Property Builder]({%slug winforms/chartview/design-time/property-builder%}) of __RadChartView__.
 >
 
 Here is how the control's Smart Tag looks like:

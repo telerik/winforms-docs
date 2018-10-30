@@ -14,7 +14,7 @@ This article explains the specific PDF417 code settings.
 
 ![winforms/barcode-2d-barcodes-pdf417-settings 001](images/barcode-2d-barcodes-pdf417-settings001.png)
 
->note Depending on the mode and error correction levels, any invalid characters, entered by the user, as well as any characters, which surpass the maximum number of symbols, which can be accommodated, will be discarded.
+>tip Depending on the mode and error correction levels, any invalid characters, entered by the user, as well as any characters, which surpass the maximum number of symbols, which can be accommodated, will be discarded.
 
 ## Encoding Mode
 

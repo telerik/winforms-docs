@@ -14,7 +14,7 @@ previous_url: docking-usercontrols-and-forms-docking-singleton-forms
 A typical scenario for an application showing many forms is to allow the end-users to get each type of form displayed only once. In addition, if the end-user tries to close a form it should become hidden instead of really closed and disposed, because this allows the developer to easily save the state (entered data) of the 'closed' forms. In this article we are going to demonstrate how you can implement that type of behavior with forms and __RadDock__.
         
 
->note The forms used in this article are standard forms that do not follow the real singleton pattern. The word 'singleton' in the approach is used only to describe the behavior of the form from the end-user's point of view.
+>tip The forms used in this article are standard forms that do not follow the real singleton pattern. The word 'singleton' in the approach is used only to describe the behavior of the form from the end-user's point of view.
 >
  
 ## Docking 'Singleton' forms in RadDock

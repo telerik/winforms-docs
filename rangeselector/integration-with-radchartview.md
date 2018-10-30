@@ -13,7 +13,7 @@ previous_url: rangeselector-integration-with-chartview
 
 __RadChartView__ has full __RadRangeSelector__ integration support, through implementation of the __IRangeSelectorControl__ and __IRangeSelectorElement__ interfaces by __RadChartView__ and __RangeSelectorViewElement__ classes respectively.
 
->note  __RangeSelectorViewElement__ supports only Cartesian series.
+>tip  __RangeSelectorViewElement__ supports only Cartesian series.
 >
 
 __RangeSelectorViewElement__ extends the __RadChartElement__, draws the chart into __RadRangeSelector__ and generates the scales according to its Axes collection. By accessing the __RangeSelectorViewElement__ you can take advantage of some additional controlling mechanisms like __SeriesInitializing__,  __SeriesInitialized__ and __LabelInitializng__ events. With the first two events you can control the series that should draw into RadRangeSelector and their types, while with the __LabelInitializng__ event, you can control the labels that are going to be drawn on the scales.

@@ -14,7 +14,7 @@ The example bellow demonstrates how one can use __RadVirtualGrid__ with a list w
 
 ![virtualgrid-getting-started001](images/virtualgrid-getting-started001.png)
 
->note In order to use __RadVirtualGrid__ you should add reference to the __Telerik.WinControls.GridView__ assembly.
+>tip In order to use __RadVirtualGrid__ you should add reference to the __Telerik.WinControls.GridView__ assembly.
 >
 
 ### Setting the form and adding data 
@@ -235,7 +235,7 @@ End Sub
 
 By default the end user can add or remove rows with the UI. When such operation is performed the __UserAddedRow__ or __UserDeletingRow__ events will fire. 
 
->note The user can delete multiple rows at once.
+>tip The user can delete multiple rows at once.
 >
 
 The following example shows how you can handle the above events and properly update the data source.

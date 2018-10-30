@@ -39,7 +39,7 @@ Tags mapped to spans are:
 
 * __formatting tags, \<span\>, \<font\>__
 
->note Additionally, line breaks are inserted between consequent block elements ( __\<div\>__ ).
+>tip Additionally, line breaks are inserted between consequent block elements ( __\<div\>__ ).
 >
 
 ## Styling

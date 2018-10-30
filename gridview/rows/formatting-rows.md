@@ -57,13 +57,13 @@ End Sub
 
 {{endregion}} 
 
->note An *if-else* statement is used to reset the value of __BackColorProperty__ if no drawing is required.
+>tip An *if-else* statement is used to reset the value of __BackColorProperty__ if no drawing is required.
 >
 
->note You should set __DrawFill__ to *true* to turn on the fill for the row (depends on the used theme).
+>tip You should set __DrawFill__ to *true* to turn on the fill for the row (depends on the used theme).
 >
 
->note Please refer to the Fundamentals [topic]({%slug winforms/gridview/fundamentals/logical-vs.-visual-grid-structure%}) for more information about the UI Virtualization.
+>tip Please refer to the Fundamentals [topic]({%slug winforms/gridview/fundamentals/logical-vs.-visual-grid-structure%}) for more information about the UI Virtualization.
 >  
 
 ## Customize the non-data rows appearance

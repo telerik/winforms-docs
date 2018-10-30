@@ -21,7 +21,7 @@ __GridViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.
 
 Here is how the following grid, looks when exported.<br>![gridview-exporting-data-spread-export 001](images/gridview-exporting-data-spread-export001.png)![gridview-exporting-data-spread-export 002](images/gridview-exporting-data-spread-export002.png)
 
->note The spread export functionality is located in the __TelerikExport.dll__ assembly which must be added to your project. You need to include the following namespace in order to access the types contained in TelerikExport:
+>tip The spread export functionality is located in the __TelerikExport.dll__ assembly which must be added to your project. You need to include the following namespace in order to access the types contained in TelerikExport:
 * Telerik.WinControls.Export
 >
 
@@ -97,7 +97,7 @@ End Using
 
 {{endregion}} 
 
->note As of **R1 2018 SP1** **GridViewSpreadExport** supports image exporting. The **ImageAlignment** property of the column is respected. However, have in mind that the ImageLayout.*Tile* is not supported.
+>tip As of **R1 2018 SP1** **GridViewSpreadExport** supports image exporting. The **ImageAlignment** property of the column is respected. However, have in mind that the ImageLayout.*Tile* is not supported.
 
 
 >caption Figure: Image export
@@ -142,7 +142,7 @@ End Using
                 
     - *ExportAsHidden*: The exporter will export hidden rows as hidden in excel.
 
-    >note MS Excel does not support other ways of hiding a column/row different from setting its width to zero. To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__ or __HiddenRowOption__ property to *DoNotExport* :
+    >tip MS Excel does not support other ways of hiding a column/row different from setting its width to zero. To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__ or __HiddenRowOption__ property to *DoNotExport* :
     >
 
 * __PagingExportOption:__ Defines which pages to be exported, when paging is used in **RadGridView**.

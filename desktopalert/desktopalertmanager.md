@@ -16,5 +16,5 @@ You can easily display multiple alerts on the screen thanks to the __DesktopAler
 
 __RadDesktopAlert__ is designed to support multi-monitor environments. Currently, you can set the active monitor and all desktop alerts will be displayed on it. To do so, you need to specify which of your screens will be used as an active screen when positioning desktop alert pop ups. To do so, you can use the __SetActiveScreen__ method of the __DesktopAlertManager__ class. This way all desktop alerts will be positioned on the specified screen regarding their __ScreenPosition__.
 
->note When calling the __SetActiveScreen__ method all currently visible alerts are relocated to the newly specified screen whereby their __ScreenPosition__ setting is considered.
+>tip When calling the __SetActiveScreen__ method all currently visible alerts are relocated to the newly specified screen whereby their __ScreenPosition__ setting is considered.
 >

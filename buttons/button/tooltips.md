@@ -54,7 +54,7 @@ End Sub
 
 ![buttons-button-tooltips 002](images/buttons-button-tooltips002.gif)
 
->note The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set in  the __ToolTipText__ property.
+>tip The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set in  the __ToolTipText__ property.
 
         
 

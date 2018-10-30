@@ -124,9 +124,9 @@ End Sub
 
 {{endregion}} 
 
->note Enter some text in the search box and press `Enter` to start searching.
+>tip Enter some text in the search box and press `Enter` to start searching.
 
->note The **MapSearchBarElement** can be setup with no explicit search provider. In this case the search element will traverse the providers collection of **RadMapElement** for a **IMapSearchProvider** instance. The MapSearchBarElement.**ShowMessageBoxOnError** property determines whether a messagebox will be displayed upon error or not when the **SearchProvider** property of the element is not set. The default value of the property is set to *true*. 
+>tip The **MapSearchBarElement** can be setup with no explicit search provider. In this case the search element will traverse the providers collection of **RadMapElement** for a **IMapSearchProvider** instance. The MapSearchBarElement.**ShowMessageBoxOnError** property determines whether a messagebox will be displayed upon error or not when the **SearchProvider** property of the element is not set. The default value of the property is set to *true*. 
 
 ## SearchRequest
 
@@ -159,7 +159,7 @@ bingProvider.SearchAsync(request)
 
 {{endregion}} 
 
->note It is necessary to handle the __SearchProvider__'s __SearchCompleted__ and __SearchError__ events as it is demonstrated above.
+>tip It is necessary to handle the __SearchProvider__'s __SearchCompleted__ and __SearchError__ events as it is demonstrated above.
 
 # See Also
 * [BingRestMapProvider]({%slug winforms/map/providers/bingrestmapprovider%})

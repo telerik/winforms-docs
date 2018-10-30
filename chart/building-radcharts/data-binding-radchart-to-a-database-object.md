@@ -30,7 +30,7 @@ The figure above shows a running example that starts with a default __RadChart__
 
 * Displays database column data in the X axis labels by assigning the column name to the __DataLabelsColumn__. The example assigns "CategoryName" to the __DataLabelsColumn__ property.
 
->note Also note how the example sets the PlotArea.Appearance.Dimensions.Margins.Bottom to 30% and the PlotArea.XAxis.Appearance.LabelAppearance.RotationAngle to 300 in order to provide room for the axis labels.
+>tip Also note how the example sets the PlotArea.Appearance.Dimensions.Margins.Bottom to 30% and the PlotArea.XAxis.Appearance.LabelAppearance.RotationAngle to 300 in order to provide room for the axis labels.
 
 
 {{source=..\SamplesCS\Chart\DataBindingToDataBaseObject.cs region=bindToDataBase}} 

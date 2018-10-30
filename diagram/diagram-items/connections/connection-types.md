@@ -41,7 +41,7 @@ RadDiagram1.Items.Add(connection1)
 
 ![diagram-diagram-items-connections 002](images/diagram-diagram-items-connections002.png)
 
->note You can refer to the [Shapes]({%slug winforms/diagram/diagram-items/shapes%}) article where the shapes are defined.
+>tip You can refer to the [Shapes]({%slug winforms/diagram/diagram-items/shapes%}) article where the shapes are defined.
 >
 
 
@@ -180,7 +180,7 @@ By default, when you create a Bezier connection and attach its endpoints to __Ra
 
 The offset between a Bezier connection handle point and its corresponding endpoint is controlled thorough the __BezierAutoOffset__ DiagramConstants. Its default value is *30px*, but you can change it to better fit your needs.When attaching a Bezier connection to a RadDiagramShape you need to consider if it is attached to a built-in connector or to a custom connector. If the connection is attached to a custom connector, then you will have to manually set the position of the Bezier handle points. You can change the position of the points after you access them from the RadDiagramConnection. __ConnectionPoints__ collection, but you will also have to set the RadDiagramConnection. __IsModified__ property to True to apply the changes. If you don't want to manually traverse the __ConnectionPoints__ collection and then set the __IsModified__ property, you can use the RadDiagramConnection. __SetBezierHandles(Point,Point)__ method. It facilitates the definition of custom coordinates for the two handle points of a Bezier connection.
 
->note Please note that if you create custom connectors which names include any of the following strings:
+>tip Please note that if you create custom connectors which names include any of the following strings:
 >
 * "right"
 * "left"

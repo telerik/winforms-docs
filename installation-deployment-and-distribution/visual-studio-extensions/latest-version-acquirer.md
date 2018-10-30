@@ -17,7 +17,7 @@ When a solution containing an Telerik UI for WinForms project is loaded in Visua
 
 ![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 001](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer001.png)
 
->note If you've disabled the notifications, you can use the [Options Dialog]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/options%}) to activate them again.
+>tip If you've disabled the notifications, you can use the [Options Dialog]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/options%}) to activate them again.
 >
 
 
@@ -43,6 +43,6 @@ Once the download succeeds, the latest version of the Telerik UI for WinForms wi
 >tip The Download buttons of the [Upgrade Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%}) and the [New Project Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation%}) launch the Latest Version Acquirer tool too.
 >
 
->note The Latest Version Acquirer tool actually downloads the hotfix zip files, containing the latest Telerik binaries and any resources vital for the Telerik WinForms project creation. These get unpacked to the %appdata%\Telerik\Updates folder.
+>tip The Latest Version Acquirer tool actually downloads the hotfix zip files, containing the latest Telerik binaries and any resources vital for the Telerik WinForms project creation. These get unpacked to the %appdata%\Telerik\Updates folder.
 >If you find the list of packages offered too long and you don't need the older versions, you can close Visual Studio and use Windows Explorer to delete these distributions.
 >

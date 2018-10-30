@@ -17,7 +17,7 @@ The key RadTreeView boolean properties enable Drag and Drop functionality: __All
 
 * __AllowDrop__ when true accepts data that the user drags onto it. This property is used to interact with drag and drop for standard Windows controls.
 
->note Multiple nodes can be dragged if the RadTreeView __AllowMultiSelect__ property is true.
+>tip Multiple nodes can be dragged if the RadTreeView __AllowMultiSelect__ property is true.
 >
 
 ## AllowDragDrop
@@ -36,7 +36,7 @@ __AllowDrop__ when true enables RadTreeView to accept data dropped onto it. Thi
 
 ![treeview-drag-and-drop-enabling-drag-and-drop 005](images/treeview-drag-and-drop-enabling-drag-and-drop005.gif)
 
->note In order to use the standard OLE drag drop you need to disable the built-in drag and drop functionality (set AllowDragDrop to false).
+>tip In order to use the standard OLE drag drop you need to disable the built-in drag and drop functionality (set AllowDragDrop to false).
 
 To implement this functionality:
 

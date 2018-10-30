@@ -17,7 +17,7 @@ Depending on the **ViewType**, **RadListView** provides a convenient way for cus
 
 Items appearance in __RadListView__ can be customized by making use of the __VisualItemFormatting__ event. The following example, demonstrates how you can change the color of an item which is being selected.
 
->note By using this event to customize the items appearance, you should always provide an else clause,  where you reset the appearance settings which you have introduced. This is necessary since __RadListView__ uses data virtualization, which might lead to unpredicted appearance results when items are being reused.
+>tip By using this event to customize the items appearance, you should always provide an else clause,  where you reset the appearance settings which you have introduced. This is necessary since __RadListView__ uses data virtualization, which might lead to unpredicted appearance results when items are being reused.
 
 >caption Figure 1: Customizing items in the VisualItemFormatting event
 
@@ -77,7 +77,7 @@ End Sub
 
 The __DetailsView__ of __RadListView__ provides a grid-like interface for displaying items with more than one data field. It is possible to customize each cell element, using the __CellFormatting__ event.
 
->note Cell elements are created only for currently visible cells and they are being reused, when scrolling. In order to prevent applying the formatting to other cell elements, all applied styles should be reset for the rest of the cell elements.
+>tip Cell elements are created only for currently visible cells and they are being reused, when scrolling. In order to prevent applying the formatting to other cell elements, all applied styles should be reset for the rest of the cell elements.
 
 Let’s assume that the __RadListView__ is bound to the *Products* table from the *Northwind* database. The code snippet below demonstrates how to apply different colors and font for the data cells in the control, considering the *“Discontinued”* cell’s value:
 
@@ -157,7 +157,7 @@ End Sub
 
 {{endregion}} 
 
->note In order to customize the header cells they should be cast to the **DetailListViewHeaderCellElement** type.
+>tip In order to customize the header cells they should be cast to the **DetailListViewHeaderCellElement** type.
  
 # See Also
 

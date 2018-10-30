@@ -16,7 +16,7 @@ This class exposes methods and events needed to export using the [SpreadStreamEx
 
 Occurs when a new worksheet is created. It is suitable to set the columns width, add rows at the document begging, or insert cells before the firs column.
 
->note If this event is used the columns width would not be taken from the grid and you may want to explicitly set it. 
+>tip If this event is used the columns width would not be taken from the grid and you may want to explicitly set it. 
 
 #### Adding a Header Row.
  

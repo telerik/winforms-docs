@@ -19,7 +19,7 @@ In bar charts with multiple series __BarOverlapPercent__ governs to what degree 
 
 __BarWidthPercent__ controls how much space each bar takes up so that a __BarWidthPercent__ of 100 will have all the bars in the chart taking exactly all the available width. 
 
->note The maximum bar width is calculated as follows: *bar width* = *axis length* / *bars*  *count* .
+>tip The maximum bar width is calculated as follows: *bar width* = *axis length* / *bars*  *count* .
 >
 
 

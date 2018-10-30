@@ -15,7 +15,7 @@ __RadClock__ is a control which allows the developers to use it in their applica
 
 ![clock-overview 001](images/clock-overview001.gif)
 
->note The control cannot be resized since it uses a bitmap for its background.
+>tip The control cannot be resized since it uses a bitmap for its background.
 >
 
 

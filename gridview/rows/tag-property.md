@@ -91,7 +91,7 @@ Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Tele
 
 {{endregion}}
 
->note Cells also have Tag property but it differs substantially from rows one because of the UI Virtualization. Cells are reused and when you scroll the tag value remains unchanged while cell data value is updated.
+>tip Cells also have Tag property but it differs substantially from rows one because of the UI Virtualization. Cells are reused and when you scroll the tag value remains unchanged while cell data value is updated.
 >
 
 # See Also

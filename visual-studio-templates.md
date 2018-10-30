@@ -22,7 +22,7 @@ The [Visual Studio Templates]({%slug winforms/installation-deployment-and-distri
 
 * [Excel-Inspired Template](#excel-inspired-template) (available with Q3 2017 SP1 release version)
 
->note The [Word-Inspired Template](#word-inspired-template) uses the __TelerikMetro__ theme. The outlook inspired templates make use of the __TelerikMetroBlue__ theme.
+>tip The [Word-Inspired Template](#word-inspired-template) uses the __TelerikMetro__ theme. The outlook inspired templates make use of the __TelerikMetroBlue__ theme.
 
 In this article you will find more information on how to create a project from one of the available templates as well as more details regarding what controls each template contains.
 

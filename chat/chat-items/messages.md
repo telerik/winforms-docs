@@ -14,7 +14,7 @@ position: 2
 
 By default, when you type in the text box and confirm the message, it is automatically added to **RadChat**. This behavior can be controlled by the **AutoAddUserMessages** property. In addition, the **SendMessage** is fired each time a new message is about to be added to the chat UI. It is allowed to modify the message itself. 
 
->note Since **R3 2018** it is exposed a **UserData** property in all message types. Thus, along with all other parameters when adding a message, you can pass some useful data that can store any information.
+>tip Since **R3 2018** it is exposed a **UserData** property in all message types. Thus, along with all other parameters when adding a message, you can pass some useful data that can store any information.
 
 ## ChatTimeSeparatorMessage
 

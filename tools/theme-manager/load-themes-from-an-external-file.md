@@ -19,7 +19,7 @@ previous_url: tools-visual-style-builder-adding-custom-themes-to-your-applicatio
 |----|----|
 |[Changing Themes at Run Time with Telerik UI for for WinForms](http://tv.telerik.com/watch/winforms/visualstylebuilder/changing-themes-at-run-time-with-radcontrols-winforms)<br>In this video, you will learn how to give your users the ability to choose between Telerik themes and custom themes at run time. (Runtime: 08:42)|![tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-an-external-file 003](images/tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-an-external-file003.png)|
 
->note Themes can be saved as XML files using the VisualStyleBuilder tool: [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})
+>tip Themes can be saved as XML files using the VisualStyleBuilder tool: [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})
 
 To load a theme from an external file into a Theme Manager, follow these steps:
         

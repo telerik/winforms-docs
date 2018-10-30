@@ -47,13 +47,13 @@ End Sub
 
 {{endregion}} 
 
->note In order to enlarge the new row's height, you can set the TableElement.ViewInfo.TableAddNewRow. __Height__ property.
+>tip In order to enlarge the new row's height, you can set the TableElement.ViewInfo.TableAddNewRow. __Height__ property.
 >
 
 
 On the new row we will display a __RadChartViewElement__ visualizing the Products data. For this purpose we should follow the steps below:
 
->note You can replace the __RadChartViewElement__ with any __RadElement__ or a set of elements.
+>tip You can replace the __RadChartViewElement__ with any __RadElement__ or a set of elements.
 >
 
 >caption Figure 1: The new row is replaced with the custom one. 

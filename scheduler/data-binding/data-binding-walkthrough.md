@@ -13,7 +13,7 @@ previous_url: scheduler-data-binding-data-binding-walkthrough
 
 This walkthrough will cover creating and binding __RadScheduler__ to a data source in a step-by-step manner.
 
->note Another example of binding __RadScheduler__ is available in our [Telerik UI for for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)
+>tip Another example of binding __RadScheduler__ is available in our [Telerik UI for for WinForms Step-by-step Tutorial](http://www.telerik.com/support/documentation-and-tutorials/step-by-step-tutorial-for-winforms.aspx)
 >
 
 ## The Database
@@ -52,10 +52,10 @@ To setup appointment mapping at design time, click the Edit Appointment Mapping 
 
 When you do so, a dialog will appear letting you choose the field of the data source which should be mapped to the corresponding appointment/resource property.
 
->note The data source fields should be set prior editing the mapping in order to get automatically populated with data source fields drop downs.
+>tip The data source fields should be set prior editing the mapping in order to get automatically populated with data source fields drop downs.
 >
 
->note The Resources property of the AppointmentMappingInfo should be set with the name of the relationthat connects the Appointments and the AppointmentsResources tables. The ResourceId property shouldbe set with the name of the column in the AppointmentsResources table that holds the id of the resource.
+>tip The Resources property of the AppointmentMappingInfo should be set with the name of the relationthat connects the Appointments and the AppointmentsResources tables. The ResourceId property shouldbe set with the name of the column in the AppointmentsResources table that holds the id of the resource.
 >
 
 ## Programatically Mapping
@@ -130,7 +130,7 @@ Me.AppointmentsTableAdapter.Fill(Me.SchedulerDataDataSet.Appointments)
 
 {{endregion}} 
 
->note You should fill the tables in the exact same order if you have already set the DataSource property of __RadScheduler__. Alternatively, you can just call the __DataBind__ method of __RadScheduler__ after you fill the tables.
+>tip You should fill the tables in the exact same order if you have already set the DataSource property of __RadScheduler__. Alternatively, you can just call the __DataBind__ method of __RadScheduler__ after you fill the tables.
 >
 
 Now we need to assign the Appointments and Resources tables from the data set to our SchedulerBindingDataSource (the following can also be set at design time through the Smart Tag of your SchedulerBindingDataSource instance as you can see on the previous image):
@@ -169,7 +169,7 @@ RadScheduler1.DataSource = SchedulerBindingDataSource1
 
 {{endregion}} 
 
->note If the above steps are not performed in the same order, __RadScheduler__ might not display the appointments. In this case you can try calling the __DataBind__ method of __RadScheduler__ or the __Rebind__ method of __SchedulerBindingDataSource__.
+>tip If the above steps are not performed in the same order, __RadScheduler__ might not display the appointments. In this case you can try calling the __DataBind__ method of __RadScheduler__ or the __Rebind__ method of __SchedulerBindingDataSource__.
 >
 
 ## Updating the Database

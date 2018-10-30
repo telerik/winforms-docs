@@ -16,7 +16,7 @@ The following events occur during the editing process:
 
 * __EditorRequired:__ This is the first event that fires when a cell becomes editable (edit mode). 
 
->note This is the right place to change the editor type. Detailed information is available [here]({%slug winforms/virtualgrid/cells/changing-default-editor%}).
+>tip This is the right place to change the editor type. Detailed information is available [here]({%slug winforms/virtualgrid/cells/changing-default-editor%}).
 >
 
 * __CellEditorInitialized:__ Fires when the editor is initialized and visible. This event can be used for accessing the active editor and changing its appearance. More information about this is available [here]({%slug winforms/virtualgrid/editing/editors-properties%}) 

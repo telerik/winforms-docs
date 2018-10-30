@@ -20,7 +20,7 @@ This section will help you in creating your first Telerik __RadRibbonBar__ with 
 1. The __RadRibbonForm__'s designer automatically adds a __RadRibbonBar__ control on the form as shown below:
 ![ribbonbar-getting-started 001](images/ribbonbar-getting-started001.png)
 
->note By default, __RadRibbonBar__ shows minimize, mazimize and close buttons in its caption element. The __HelpButton__ is not shown. It is necessary to set the RibbonBarElement.RibbonCaption.HelpButton.__Visibility__ property to *ElementVisibility.Visible* in order to be displayed. The form's __HelpButtonClicked__ event is fired when Help button in the ribbon's caption element is clicked. It can be canceled. However, if it is not canceled, the __HelpRequested__ event will be fired when the Help cursor is clicked on any Control. 
+>tip By default, __RadRibbonBar__ shows minimize, mazimize and close buttons in its caption element. The __HelpButton__ is not shown. It is necessary to set the RibbonBarElement.RibbonCaption.HelpButton.__Visibility__ property to *ElementVisibility.Visible* in order to be displayed. The form's __HelpButtonClicked__ event is fired when Help button in the ribbon's caption element is clicked. It can be canceled. However, if it is not canceled, the __HelpRequested__ event will be fired when the Help cursor is clicked on any Control. 
 > 
 > ![ribbonbar-getting-started 013](images/ribbonbar-getting-started013.png)
 

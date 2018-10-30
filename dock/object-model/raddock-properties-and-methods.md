@@ -29,7 +29,7 @@ __RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindo
 |__SplitterWidth__|Gets or sets the width of all splitters.|
  
 
->note The tabs and captions properties are listed in the following article: [Tabs and Captions]({%slug winforms/dock/object-model/tabs-and-captions%})
+>tip The tabs and captions properties are listed in the following article: [Tabs and Captions]({%slug winforms/dock/object-model/tabs-and-captions%})
 
 |Methods|Description|
 |---|---|

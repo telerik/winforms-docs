@@ -24,7 +24,7 @@ ThePageViewMode.*Stack* supports the following types of selection modes which de
 
 Regardless the stack position, the content of the selected item is displayed at one place: where the content area resides.
 
->note It is important to consider both the size of the control and the count of the pages added to maintain a reasonable amount of space for the content area.
+>tip It is important to consider both the size of the control and the count of the pages added to maintain a reasonable amount of space for the content area.
 >
 
 #### StackPosition
@@ -45,7 +45,7 @@ stackElement.StackPosition = StackViewPosition.Right
 
 {{endregion}} 
 
->note The **ViewElement** property of the **RadPageView** control returns a reference to the main element of the currently active view in the control. So, to cast the **ViewElement** to any an element representing a specific view type, you should make sure that you have set the **ViewMode** of the **RadPageView** control to this view type.
+>tip The **ViewElement** property of the **RadPageView** control returns a reference to the main element of the currently active view in the control. So, to cast the **ViewElement** to any an element representing a specific view type, you should make sure that you have set the **ViewMode** of the **RadPageView** control to this view type.
 >
 
 # See Also

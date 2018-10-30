@@ -13,7 +13,7 @@ previous_url: gridview-exporting-data-export-to-excel-via-excelml-format
 
 This method offers excellent performance and does not require MS Office installation on user machines. The __ExcelML__ format can be read by MS Excel 2002 (MS Office XP) and above. Direct export to the xlsx format is possible by utilizing our __RadSpreadProcessing__ libraries (see [Spread Export]({%slug winforms/gridview/exporting-data/spread-export%}) and Async Spread Export articles for detailed information and examples).
 
->note The export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
+>tip The export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
 * Telerik.WinControls.Data
 * Telerik.WinControls.UI.Export
 >

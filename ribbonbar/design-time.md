@@ -12,7 +12,7 @@ position: 2
 
 __RadRibbonBar__ has a very well developed Visual Studio designer allowing adding, removing and editing of its tabs, groups and item elements.
 
->note Detailed examples on how __RadRibbonBar__ desing time capabilities can be utilized to their full extent are available in the [Getting Started]({%slug winforms/ribbonbar/getting-started%}) section. 
+>tip Detailed examples on how __RadRibbonBar__ desing time capabilities can be utilized to their full extent are available in the [Getting Started]({%slug winforms/ribbonbar/getting-started%}) section. 
 
 >important Copying/Cutting and Pasting of [tabs](https://docs.telerik.com/devtools/winforms/ribbonbar/getting-started#adding-tabs), [groups](https://docs.telerik.com/devtools/winforms/ribbonbar/getting-started#adding-groups), and [elements](https://docs.telerik.com/devtools/winforms/ribbonbar/getting-started#adding-elements) are not supported in the Visual Studio designer.
 

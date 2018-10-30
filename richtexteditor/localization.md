@@ -31,7 +31,7 @@ RichTextBoxLocalizationProvider.CurrentProvider = RichTextBoxLocalizationProvide
 >important You can download a XML file that contains all the currently used strings from here: [Strings file](https://www.telerik.com/docs/default-source/ui-for-winforms/richtextboxstrings36cb1b5c87da4ce5a48c2e4d74e54e1b.zip?sfvrsn=78271f3d_2)
 >
 
->note As of R2 2015 __RichTextBoxLocalizationProvider__ contains all strings related to the __RadRichTextEditorRibbonUI__ as well.
+>tip As of R2 2015 __RichTextBoxLocalizationProvider__ contains all strings related to the __RadRichTextEditorRibbonUI__ as well.
 >
 
 Another approach is to create a custom localization provider class which inherits __RichTextBoxLocalizationProvider__. In it you should just override the __GetLocalizedString__  method and return the localized string depending on current id.
@@ -125,7 +125,7 @@ InitializeComponent()
 {{endregion}} 
 
 
->note It is necessary to specify the RichTextBoxLocalizationProvider. __CurrentProvider__ property before initializing the components.
+>tip It is necessary to specify the RichTextBoxLocalizationProvider. __CurrentProvider__ property before initializing the components.
 >
 
 >caption Fig.1 RichTextBoxLocalizationProvider

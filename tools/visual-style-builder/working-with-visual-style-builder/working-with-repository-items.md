@@ -91,7 +91,7 @@ The ‘Edit Repository Item ‘ dialog is automatically adjusted to show specifi
 >caution The properties in bold have values defined in the repository item while the others have their default values.
 >
 
->note When defining repository item key you should make sure that the key is unique in order to create/save the item.
+>tip When defining repository item key you should make sure that the key is unique in order to create/save the item.
 >
 
 

@@ -119,7 +119,7 @@ End Sub
 
 {{endregion}}
 
->note The controllers added in **RadChartView** are invoked in the order at which they have been added. In case a **LassoZoomController** is to be used together with a **LassoSelectionController**, the selection controller needs to be added first. 
+>tip The controllers added in **RadChartView** are invoked in the order at which they have been added. In case a **LassoZoomController** is to be used together with a **LassoSelectionController**, the selection controller needs to be added first. 
 
 >caption Figure 2: Lasso and Zoom
 ![chartview-features-lasso-selection 002](images/chartview-features-lasso-selection004.gif)

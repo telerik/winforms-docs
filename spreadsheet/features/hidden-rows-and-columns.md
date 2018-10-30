@@ -28,7 +28,7 @@ There are several methods to hide rows and columns.
 
 ![spreadsheet-features-hidden-rows-and-columns 001](images/spreadsheet-features-hidden-rows-and-columns001.png) 
 
->note While the option of the ribbon menu is always available, for the context menu it will appear only when an entire row or column is selected.
+>tip While the option of the ribbon menu is always available, for the context menu it will appear only when an entire row or column is selected.
 
 ### Setting the Size to Zero
 
@@ -54,4 +54,4 @@ Following this, the ribbon and context menu options items can be used.
 
 Similarly to hiding rows and columns, you can unhide them by dragging the thumb which has appeared on the place of their heading. In addition, you can also apply auto fit to them. This is done by double-clicking the thumb.
 
->note The autofit behavior of the columns is different from the behavior of the columns. An empty column will not expand when autofitted, unlike an empty row.
+>tip The autofit behavior of the columns is different from the behavior of the columns. An empty column will not expand when autofitted, unlike an empty row.

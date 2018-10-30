@@ -41,7 +41,7 @@ Me.RadGridView1.XmlSerializationInfo.SerializationMetadata.Clear()
 
 {{endregion}}
 
->note Clearing the default settings would require all the serialization meta data to be loaded manually.
+>tip Clearing the default settings would require all the serialization meta data to be loaded manually.
 >
 
 The first property to add for serialization is the MasterGridViewTemplate, which contains RadGridView’s data and its structure. Please note that the MasterGridViewTemplate property is of type GridViewTemplate and that the __DesignerSerializationVisibilityAttribute__ works exactly as the standard Microsoft .NET Framework attribute.

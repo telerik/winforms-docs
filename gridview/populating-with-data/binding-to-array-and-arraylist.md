@@ -13,7 +13,7 @@ previous_url: gridview-populating-with-data-binding-to-array-and-arraylist
 
 The examples below demonstrate binding to a generic list, an arrays of custom objects, and an `ArrayList` of custom objects. This collections have limitations when used as a data source in which case a __BindingList__ must be used. 
 
->note Note: BindingList is the preferred collection since its changes are automatically reflected on the data-bound control.
+>tip Note: BindingList is the preferred collection since its changes are automatically reflected on the data-bound control.
 >
 
 ## Binding to a Array List

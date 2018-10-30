@@ -13,7 +13,7 @@ previous_url: gridview-cells-painting-and-drawing-in-cells
 
 There are cases when you need to manually draw in a cell in order to extend the cell appearance and/or provide additional information to the user about the cell data. RadGridView supports this case via the CellPaint event. To enable the event firing just set __EnableCustomDrawing__ to *true*.
 
->note When handling this event, you should access the cell through the parameters of the event handler, rather than access the cell directly.
+>tip When handling this event, you should access the cell through the parameters of the event handler, rather than access the cell directly.
 >
 
 The following example demonstrates how to use the __CellPaint__ event to change the appearance of the cells in a "UnitPrice" column. We would like to add a custom drawn red asterisk to values less than 20, a green asterisk to values higher than 20, and no asterisk when the cell's value is zero:

@@ -27,10 +27,10 @@ The dictionaries in RadRichTextBox implement the __IWordDictionary__ interface. 
 
 Here is an example of a __WordDictionary__ loaded from a __TDF__ file.
 
->note When adding a __WordDictionary__ or similar object use the __AddDictionary(IWordDictionary dictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__ . You can also associate a dictionary with a specific culture. The method to remove this dictionary is __RemoveDictionary(CultureInfo culture)__ .
+>tip When adding a __WordDictionary__ or similar object use the __AddDictionary(IWordDictionary dictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__ . You can also associate a dictionary with a specific culture. The method to remove this dictionary is __RemoveDictionary(CultureInfo culture)__ .
 >
 
->note The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
+>tip The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
 >
 
 #### Load dictionary
@@ -62,7 +62,7 @@ End Sub
 
 To add a word to a dictionary you can either use the __AddWord()__ method of the __DocumentSpellChecker__ or of the dictionary itself. Using the first one you can add a word to multiple dictionaries associated to the same culture. This done done by passing the desired culture as parameter to the method.
 
->note Using the overload of the __AddWord()__ method that takes only the word as argument is equal to using the second overload and passing __CultureInfo.InvariantCulture__ as argument.
+>tip Using the overload of the __AddWord()__ method that takes only the word as argument is equal to using the second overload and passing __CultureInfo.InvariantCulture__ as argument.
 >
 
 Using the __AddWord()__ method of the dictionary itself will add the word only to the respective dictionary.
@@ -89,7 +89,7 @@ Me.RadRichTextBox1.SpellChecker.AddWord("RadRichTextBox", CultureInfo.InvariantC
 
 The spell checking component is designed to suit scenarios where different cultures take place in the same application. Internationalization is achieved through associating each dictionary and custom dictionary with a specific culture (or the __InvariantCulture__ as the default one).
 
->note The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
+>tip The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
 >
 
 #### Load international dictionary

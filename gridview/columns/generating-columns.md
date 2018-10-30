@@ -128,7 +128,7 @@ Public Class Employee
 
 {{endregion}}
 
->note Ensure that your property is browsable in order to show the respective bound data. The **Browsable** attribute set to *false* will make the property on which it is used not bindable. This will prevent other controls which use the [CurrencyManager](https://msdn.microsoft.com/en-us/library/system.windows.forms.currencymanager(v=vs.110).aspx) for extracting properties to bind to such a class.
+>tip Ensure that your property is browsable in order to show the respective bound data. The **Browsable** attribute set to *false* will make the property on which it is used not bindable. This will prevent other controls which use the [CurrencyManager](https://msdn.microsoft.com/en-us/library/system.windows.forms.currencymanager(v=vs.110).aspx) for extracting properties to bind to such a class.
 
 And here is the result:
 

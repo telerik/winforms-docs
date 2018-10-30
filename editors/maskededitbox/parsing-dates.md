@@ -77,10 +77,10 @@ Besides the regular date parsing rules and heuristics described above, __RadMask
 
 * "012010" - __OK__. Parsed as January 20th 2010. However, if both numbers are less than 12, the format will be considered during the parsing. For example if the current culture has format like "MM/YY", "5 9"" will be parsed as "5 2009". And if the current culture has format "YY/MM" the same input will be parsed as "2009 5". If one of the numbers is greater than 12, it will be considered as year, and the other one as month. If the both are greater than 12, the __RadMaskedEditBox__ will fail to parse the input string.
 
->note If the current culture was __fr-CA__ (with short date format "yyyy-MM-dd" where the year slot is first) the input entry "20070507" would be evaluated properly as May 7th, 2007.
+>tip If the current culture was __fr-CA__ (with short date format "yyyy-MM-dd" where the year slot is first) the input entry "20070507" would be evaluated properly as May 7th, 2007.
 >
 
->note 
+>tip 
 * •	"moh-CA" culture has ‘’:" symbols in the MonthNames and DayNames which is used also as time separator symbol, which leads to incorrect parsing.
 * •	"gd-GB", "vi-VN", "so-SO" cultures have " "(white space) symbols in the MonthNames collection which is recognized as separator from parse logic and month cannot be found correctly in some cases.
 * •	"ja-JP","ko-KR","mn-MN"," ug-CN"," zh-CN"- in these cultures the MonthNames  or AbbreviatedMonthNames represent combination from digits and chars for example:"1月". The parse logic recognize this as two tokens which leads to incorrect result.

@@ -43,9 +43,9 @@ __PdfExportSettings__ include the following options:
 
 * __ImagesDeflaterCompressionLevel__ – same as __ContentsDeflaterCompressionLevel__, but applied to the images in the document. This property is respected when an image is compressed with __Deflate__.
 
->note __PDF import__ is currently __not__ supported, so there are not any import settings.
+>tip __PDF import__ is currently __not__ supported, so there are not any import settings.
 >
 
->note There are not any __Import__ or __ExportSettings__ for __XAML__ either, as the __XAML__ serialization is lossless and all elements are imported and exported as they would appear  if declared in a __XAML__ page in the application. __DocxFormatProvider__ does not currently provide any settings as the document content is matched as closely as possible to the Word document.
+>tip There are not any __Import__ or __ExportSettings__ for __XAML__ either, as the __XAML__ serialization is lossless and all elements are imported and exported as they would appear  if declared in a __XAML__ page in the application. __DocxFormatProvider__ does not currently provide any settings as the document content is matched as closely as possible to the Word document.
 >
 

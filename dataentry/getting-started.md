@@ -183,7 +183,7 @@ Me.radDataEntry1.DataSource = New Employee() With { _
  
 ![dataentry-overview-getting-started 002](images/dataentry-overview-getting-started002.png)
 
->note  In case you want to be notified for changes made on the data item, the class Employee should implement [INotifyPropertyChanged ]( http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged%28v=vs.110%29.aspx ) Interface and raise the  __PropertyChanged__  event every time a property value changes.
+>tip  In case you want to be notified for changes made on the data item, the class Employee should implement [INotifyPropertyChanged ]( http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged%28v=vs.110%29.aspx ) Interface and raise the  __PropertyChanged__  event every time a property value changes.
  
 ##  Binding RadDataEntry to collection from objects
       

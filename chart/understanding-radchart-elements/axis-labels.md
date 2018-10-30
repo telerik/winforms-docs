@@ -66,7 +66,7 @@ By turning off the Position.__Auto__ property and setting Position.AlignedPositi
 
 The YAxis.AxisLabel.Appearance.RotationAngle = 325. 
 
->note This isn't a recommended or usual approach but serves to illustrate the flexibility of the object model.
+>tip This isn't a recommended or usual approach but serves to illustrate the flexibility of the object model.
 >
 
 

@@ -231,7 +231,7 @@ End Sub
 
 {{endregion}}
 
->note There are no genuine words in PDF, so the viewer uses a greedy text recognition method. That is why it is not guaranteed that it would find the exact start and end position of a word.
+>tip There are no genuine words in PDF, so the viewer uses a greedy text recognition method. That is why it is not guaranteed that it would find the exact start and end position of a word.
 >
 
 * __Events__: 

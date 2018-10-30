@@ -268,7 +268,7 @@ The properties are ordered according to the specified **RadSortOrder** attribute
 
 ![dataentry-properties-order 002](images/dataentry-properties-order002.png)
 
->note A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/DataEntry/DataEntryPropertiesOrder).
+>tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/DataEntry/DataEntryPropertiesOrder).
 
 # See Also
 

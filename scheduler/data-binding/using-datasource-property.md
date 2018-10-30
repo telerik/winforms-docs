@@ -21,7 +21,7 @@ To have the data source make any sense to the SchedulerBindingDataSource you als
 
 Here's a dataset design view for the SchedulerData.mdf database file that ships with Telerik UI for for WinForms. You can see all the fields that can be defined for appointments and resources. Also notice a "join table" named "TransientAppointmentsResources" that assigns a particular resource to an appointment.
 
->note Notice that while the database structure allows for multiple resources, the built-in scheduler dialog only allows a single resource to be selected at a time.
+>tip Notice that while the database structure allows for multiple resources, the built-in scheduler dialog only allows a single resource to be selected at a time.
 
 ![scheduler-data-binding-using-datasource-property 001](images/scheduler-data-binding-using-datasource-property001.png)
 
@@ -29,14 +29,14 @@ The foreign key relationship between "TransientAppointmentsResources" and the "A
 
 ![scheduler-data-binding-using-datasource-property 002](images/scheduler-data-binding-using-datasource-property002.png)
 
->note You can find SchedulerData.mdb (Access) in the installation directory under \Examples\QuickStart\DataSources. You can find SchedulerData.mdf (MS SQL database file) [here](http://www.telerik.com/docs/default-source/ui-for-winforms/schedulerdatasql.zip)
+>tip You can find SchedulerData.mdb (Access) in the installation directory under \Examples\QuickStart\DataSources. You can find SchedulerData.mdf (MS SQL database file) [here](http://www.telerik.com/docs/default-source/ui-for-winforms/schedulerdatasql.zip)
 >
 
 Here's some example code that demonstrates loading the AppointmentMappingInfo fields with column names in a database table. The __Resources__ property is assigned the name of the foreign key that joins the Appointments and the "join table' that sits between the appointments and resources table. The __ResourceID__ property is assigned to the column in the "join table" of a unique resource identifier.
 
 RadScheduler works from a provider model so that in the future, custom appointment and resource providers can be plugged in to replace the built-in providers. The AppointmentMappingInfo is assigned to the __Mapping__ property of the schedulers datasource event provider. Review the code below to see how this is done when binding to a database tables.
 
->note The __Exceptions__ and __Resources__ properties in the __AppointmentMappingInfo__ should be set to the names of the relations that are represented in the dataset.
+>tip The __Exceptions__ and __Resources__ properties in the __AppointmentMappingInfo__ should be set to the names of the relations that are represented in the dataset.
 >
 
 #### Create Mapping

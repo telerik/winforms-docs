@@ -32,7 +32,7 @@ Here are some of the other helpful properties that can be set at design time:
 
 ![scheduler-data-binding-introduction 001](images/scheduler-data-binding-introduction001.png)
 
->note The active view cannot be changed if the new view is not in the accessible interval.
+>tip The active view cannot be changed if the new view is not in the accessible interval.
 >
 
 * __AppointmentTitleFormat__ is fed to a String.Format() call and supplies parameters for Start, End, Subject and Location in that order. So for example you could assign a string with a format like this: Starts: {0} Ends: {1} Subject: {2} Location: {3}

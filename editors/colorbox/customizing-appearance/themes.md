@@ -24,7 +24,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 6. The Margin is now changed, the result is that the color box is smaller:
    ![colorbox-themes003](images/colorbox-themes003.png)
 
->note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
+>tip The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
 
 # See Also
 

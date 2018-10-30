@@ -43,7 +43,7 @@ In addition you need to add the following to your App.config file:
 
 ````
 
->note If you do not have an AWS account in Visual Studio please check the[Getting Started]({%slug cloud-services/aws/getting-started%}) article.
+>tip If you do not have an AWS account in Visual Studio please check the[Getting Started]({%slug cloud-services/aws/getting-started%}) article.
 
 ## Step 3: Add the code to the application
 
@@ -109,7 +109,7 @@ Before using the application you must verify some email addresses. If you are us
 
 ![aws-ses003](images/aws-ses003.png)
 
->note Please note that the addresses are verified for each region and the regions in the console and the application must be the same. 
+>tip Please note that the addresses are verified for each region and the regions in the console and the application must be the same. 
 
 After the addresses are added you are ready to test your application. 
 

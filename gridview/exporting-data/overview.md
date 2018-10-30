@@ -30,7 +30,7 @@ __RadGridView__ supports several built-in methods for exporting data:
 * [Export to PDF]({%slug winforms/gridview/exporting-data/export-to-pdf%})
 
 
->note As of R1 2012 RadGridView natively supports printing. More information about this feature can be found [here]({%slug winforms/gridview/printing-support%}).
+>tip As of R1 2012 RadGridView natively supports printing. More information about this feature can be found [here]({%slug winforms/gridview/printing-support%}).
 >
 
 

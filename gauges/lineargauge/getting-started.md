@@ -20,7 +20,7 @@ When you drag a __RadLinearGauge__ from the Toolbox and then drop it on the form
 >caption Figure 1: Gallery Types
 ![lineargauge-getting-started 001](images/lineargauge-getting-started001.png)
 
->note If you do not choose a gauge's style and just close the gallery, an empty __RadRadialGauge__ will be created.
+>tip If you do not choose a gauge's style and just close the gallery, an empty __RadRadialGauge__ will be created.
 >
 
 You can open the gallery from the smart tag as well.

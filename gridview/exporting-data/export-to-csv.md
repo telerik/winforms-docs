@@ -20,7 +20,7 @@ previous_url: gridview-exporting-data-export-to-csv
 
 This method offers excellent export performance. It creates a csv file and supports formatting events to allow customizing exported data.
 
->note The CSV export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
+>tip The CSV export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
 * Telerik.WinControls.Data
 * Telerik.WinControls.UI.Export>
 >

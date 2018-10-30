@@ -20,7 +20,7 @@ The following properties allow you to modify the ticks' look:
 
 * __TicksCount:__ Specifies how many ticks will be displayed. On the following picture the black ticks are 24, but the red ticks are 72.
 
->note  __RadRadialGauge__ always displays one additional tick to the __TicksCount__ in order to distribute the ticks correctly on the arc.
+>tip  __RadRadialGauge__ always displays one additional tick to the __TicksCount__ in order to distribute the ticks correctly on the arc.
 
 >caption Figure 2: Ticks Count
 ![radialgauge-understanding-gauge-elements-working-with-ticks 002](images/radialgauge-understanding-gauge-elements-working-with-ticks002.png)

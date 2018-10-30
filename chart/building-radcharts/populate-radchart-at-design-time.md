@@ -31,7 +31,7 @@ There are two basic steps to populate the RadChart with data:
 
 The running application shows __ChartSeries__ members in the Legend and __ChartSeriesItem__ as bars in the plot area.  
 
->note This chart example also displays customization in the legend and axis labels. See [Legends]({%slug winforms/chart/understanding-radchart-elements/legends%}) and [Axis Labels]({%slug winforms/chart/understanding-radchart-elements/axis-labels%}) for more information.
+>tip This chart example also displays customization in the legend and axis labels. See [Legends]({%slug winforms/chart/understanding-radchart-elements/legends%}) and [Axis Labels]({%slug winforms/chart/understanding-radchart-elements/axis-labels%}) for more information.
 	
 
 >caption ![chart-building-radcharts-populate-radchart-at-design-time 003](images/chart-building-radcharts-populate-radchart-at-design-time003.png)

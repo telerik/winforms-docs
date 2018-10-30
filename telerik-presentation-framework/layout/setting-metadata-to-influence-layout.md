@@ -41,7 +41,7 @@ Public Shared RTLProperty As RadProperty = RadProperty.Register("RTL", GetType(B
 
 {{endregion}} 
 
->note The metadata is consumed when the RadElement __OnPropertyChanged__ method is fired, the RadElement __RadPropertyMetaData__ is evaluated and methods are called based on the type of metadata present.
+>tip The metadata is consumed when the RadElement __OnPropertyChanged__ method is fired, the RadElement __RadPropertyMetaData__ is evaluated and methods are called based on the type of metadata present.
 >
 
 

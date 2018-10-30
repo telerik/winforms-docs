@@ -82,7 +82,7 @@ End Sub
 
 {{endregion}}
 
->note Key tips can also be displayed by the backstage view. The **KeyTipShowing** event needs to be subscribed on the **RadRibbonBarBackstageView** object. 
+>tip Key tips can also be displayed by the backstage view. The **KeyTipShowing** event needs to be subscribed on the **RadRibbonBarBackstageView** object. 
 
 ## See Also
 

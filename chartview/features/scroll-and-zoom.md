@@ -33,7 +33,7 @@ RadChartView1.Controllers.Add(panZoomController)
 
 {{endregion}}  
 
->note When adding a new __ChartPanZoomController__ all other pan and zoom controllers are removed if such exists.
+>tip When adding a new __ChartPanZoomController__ all other pan and zoom controllers are removed if such exists.
 >
 
 The __ChartPanAndZoomController__ will be added automatically if the __ShowPanZoom__ property of RadChartView control is set to *true*. In this case the PanZoomMode is Horizontal (by default): 
@@ -101,7 +101,7 @@ RadChartView1.Pan(-300, 0)
 
 The zoom factor can be controlled using __Ctrl+MouseWheel__ for zoom in and zoom out functionality. Left Button MouseDown+Move for pan/scroll functionality.
 
->note The currently applied *Zoom* and *Pan* factors can be obtained from the **IChartView** object.
+>tip The currently applied *Zoom* and *Pan* factors can be obtained from the **IChartView** object.
 
 #### Current Zoom and Pan
 

@@ -27,7 +27,7 @@ There are multiple methods for building menus using the RadItem Collection Edit
 
 ![menus-menu-design-time-menu-designer 003](images/menus-menu-design-time-menu-designer003.png)
 
->note The menu designer is decorated with rightward and downward pointing arrow buttons. Right-pointing arrows  indicate [Smart Tags]({%slug winforms/menus/menu/design-time/smart-tag%}) for the __RadMenu__ and the Down-pointing arrows let you add a particular menu item type, i.e. __RadMenuItem__ , __RadMenuComboItem__ or __RadMenuSeparatorItem__ .
+>tip The menu designer is decorated with rightward and downward pointing arrow buttons. Right-pointing arrows  indicate [Smart Tags]({%slug winforms/menus/menu/design-time/smart-tag%}) for the __RadMenu__ and the Down-pointing arrows let you add a particular menu item type, i.e. __RadMenuItem__ , __RadMenuComboItem__ or __RadMenuSeparatorItem__ .
 >
 
 ## Adding Sub Menu Items

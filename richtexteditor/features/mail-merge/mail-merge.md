@@ -123,7 +123,7 @@ If you click the "**Preview Results**" button, the fields will be replaced with 
  
 If you wish to save the document as a template, you can do so by executing the **SaveFileCommand** from the application menu in the ribbon bar. 
 
->note The merge fields are persisted only in XAML and docx.
+>tip The merge fields are persisted only in XAML and docx.
 >
 
 In the end, you can fulfill the mail merge from the **MailMerge** button, which executes the **MailMergeCommand**. A **SaveFileDialog** dialog will pop up prompting you to choose where you wish to save the document – result of mail merge and in what file format.

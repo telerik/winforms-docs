@@ -42,7 +42,7 @@ End Sub
 
 The menu is accessible through the __ContextMenu__ property of __RadRichTextEditor__ control.
 
->note The context menu instance is cached and shared between all the instances of **RadRichTextEditor** in an application.
+>tip The context menu instance is cached and shared between all the instances of **RadRichTextEditor** in an application.
 	
 The **RadRichTextEditor** default context menu can be fully replaced by an object that implements the __IContextMenu__ interface which is marked with __CustomContextMenuAttribute__. Additionally, the menu can be customized by adding, removing and modifying menu groups and items. You can do that by using the __Showing__ event of the menu or by creating a custom content builder and override its construction methods.
 

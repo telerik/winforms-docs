@@ -52,7 +52,7 @@ Dim unitPriceColumn As GridViewDecimalColumn = TryCast(Me.RadGridView1.Columns("
 
 ![gridview-columns-data-formatting 001](images/gridview-columns-data-formatting001.png)
 
->note Note that the value of the NullValue property should be the same as its column data type.
+>tip Note that the value of the NullValue property should be the same as its column data type.
 >
 
 The __WrapText__ property wraps text if the text is wider than the column width.

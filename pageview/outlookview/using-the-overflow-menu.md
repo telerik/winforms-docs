@@ -41,7 +41,7 @@ outlookElement.DragGripUp()
 
 {{endregion}} 
 
->note The **CheckItem**/**UncheckItem** methods accept an instance of the **RadPageViewOutlookItem** class. Since the **Item** property of the **RadPageViewPage** class is of the **RadPageViewItem** type, you should cast the returned result to the required type.
+>tip The **CheckItem**/**UncheckItem** methods accept an instance of the **RadPageViewOutlookItem** class. Since the **Item** property of the **RadPageViewPage** class is of the **RadPageViewItem** type, you should cast the returned result to the required type.
 >
 
 ## Using the Overflow Menu’s Events

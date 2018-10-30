@@ -22,7 +22,7 @@ There are two main row types in RadGridView:
 Each data row in the grid represents a record from the specified __DataSource__. Each __RadGridView__ has a row collection of type [GridViewRowInfo]({%slug winforms/gridview/rows/gridviewrowinfo%}). The collection provides methods to add or remove items.
       	
 
->note Note that only Rows bound to the data source are kept in the Rows collection. The header, search, filter and new rows are not included in this collection.
+>tip Note that only Rows bound to the data source are kept in the Rows collection. The header, search, filter and new rows are not included in this collection.
 
 __Selected row__
 

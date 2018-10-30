@@ -88,7 +88,7 @@ End Sub
 
 The UI should also response, when the caret is on a position where the text is modified. For example, the __boldButton__ should be toggled if the caret is on a bold text. This can be done by handling the __CurrentSpanStyleChanged__ event. It is raised every time when the span, over which the caret is, gets changed. In the event handler you can use the __CurrentEditingStyle__ property in order to get the desired information for the style of the current Span. This property is of type __StyleDefinition__ and by using its __GetPropertyValue()__ method and passing the appropriate DependancyProperty, you can get the desired information. This makes the __StylesDefinition__ class universal for __Span__ and __Paragraph__ elements. Here is an example:
 
->note The same approach can be used for the __CurrentParagraphStyleChanged__ event
+>tip The same approach can be used for the __CurrentParagraphStyleChanged__ event
 >
 
 #### CurrentSpanStyleChanged and CurrentParagraphStyleChanged event handling

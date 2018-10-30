@@ -18,7 +18,7 @@ To add a __ShapedForm__ to your project:
 2\. Make sure your project includes a reference to __Telerik.WinControls__ and __Telerik.WinControls.UI__ libraries.
 			
 
->note You can add these references automatically by adding any RadControl to the form.
+>tip You can add these references automatically by adding any RadControl to the form.
 >
 
 

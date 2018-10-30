@@ -103,7 +103,7 @@ dialog.ShowDialog()
 
 {{endregion}} 
 
->note RadMarkupDialog depends on Microsoft.mshtml assembly. Please refer to the Deployment section for further details.
+>tip RadMarkupDialog depends on Microsoft.mshtml assembly. Please refer to the Deployment section for further details.
 >
 
 ## RadMarkupDialog user interface

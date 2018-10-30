@@ -47,7 +47,7 @@ End Sub
 
 {{endregion}} 
 
->note Clearing the default settings would require all the serialization meta data to be loaded manually.
+>tip Clearing the default settings would require all the serialization meta data to be loaded manually.
 >
 
 The code snippets below demonstrates how you can hide a particular information to be serialized: 
@@ -99,7 +99,7 @@ End Sub
 
 {{endregion}} 
 
->note Once the layout is being loaded the __LayoutLoaded__ event is being thrown in order to notify that the load process is being finished.
+>tip Once the layout is being loaded the __LayoutLoaded__ event is being thrown in order to notify that the load process is being finished.
 >
 
 

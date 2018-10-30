@@ -13,7 +13,7 @@ previous_url: diagram-diagram-items-connections
 
 This tutorial will walk you through the functionality and the main features of __RadDiagramConnection__.
 
->note Before proceeding with this topic, it is recommended to get familiar with the [visual structure]({%slug winforms/diagram/structure%}) of the __RadDiagram__.
+>tip Before proceeding with this topic, it is recommended to get familiar with the [visual structure]({%slug winforms/diagram/structure%}) of the __RadDiagram__.
 >
 
 
@@ -180,7 +180,7 @@ connection1.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollecti
 You can set the __RadDiagramConnection__ in edit mode by using the __IsInEditMode__ property. By default, when an item enters edit mode, the RadDiagramConnection.__Content__ is displayed inside a TextBox control so that you can change its value.
 ![diagram-diagram-items-connections 028](images/diagram-diagram-items-connections028.png)
 
->note Apart from setting the __IsInEditMode__ property to *true*, you can also enter edit mode by pressing F2 or double-clicking on the connection. For more information please refer to the [Editing]({%slug winforms/diagram/items-manipulation/editing%}) article.
+>tip Apart from setting the __IsInEditMode__ property to *true*, you can also enter edit mode by pressing F2 or double-clicking on the connection. For more information please refer to the [Editing]({%slug winforms/diagram/items-manipulation/editing%}) article.
 >
 
 

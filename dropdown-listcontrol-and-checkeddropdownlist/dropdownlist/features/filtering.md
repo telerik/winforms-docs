@@ -86,6 +86,6 @@ Me.radDropDownList1.FilterExpression = "Country LIKE 'Argentina'"
 
 ![dropdown-and-listcontrol-dropdownlist-filtering 002](images/dropdown-and-listcontrol-dropdownlist-filtering002.png)
 
->note The __IsFilterActive__ property gets a value indicating whether there is a __Filter__ or __FilterExpression__ set.
+>tip The __IsFilterActive__ property gets a value indicating whether there is a __Filter__ or __FilterExpression__ set.
 >
 

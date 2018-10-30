@@ -87,7 +87,7 @@ The **TableProperties** dialog gives you a simple UI to add or remove a repeatin
 
 ![RadRichTextBox-Features_Repeat-Table-Header-Row002](images/RadRichTextBox-Features_Repeat-Table-Header-Row002.png)
 
->note Through the dialog you can set only the first row from the table as a repeated header row. If another row is chosen (click on the next, previous row buttons), the check box is disabled. 
+>tip Through the dialog you can set only the first row from the table as a repeated header row. If another row is chosen (click on the next, previous row buttons), the check box is disabled. 
 
 Repeating table header row(s) could be added or removed via the Table Tools’ contextual tab __Layout__, which contains a toggle button that sets the row as a repeating header row or not. To learn more about how to use the __RadRichTextBoxRibbonUI__, you could read [this topic]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}).
 

@@ -22,7 +22,7 @@ Use the __ImagePrimitive__ class whenever you need to draw an image as part of r
 * __ImageScaling:__ Either __None__ or __ScaleToFit__ controls whether the image should be scaled to fit the available space.
 
 
->note The __ImageList__ property is introduced in the RadControl class.
+>tip The __ImageList__ property is introduced in the RadControl class.
 >
 
 The example below loads a series of images from a directory and creates an ImagePrimitive for each.

@@ -49,7 +49,7 @@ Each __RadChartView__ area type uses a different set of axes to plot its data po
 
 * __EnableElementCache:__ Determines whether the axis labels will be cached or not.
 
->note The EnableElementCache property is by default set to *true*. In scenarios requiring frequent updates in the chart`s data points it is recommended to set the property to *false*.
+>tip The EnableElementCache property is by default set to *true*. In scenarios requiring frequent updates in the chart`s data points it is recommended to set the property to *false*.
 
 >caption Figure 1: Axes Types
 ![chartview-axes 001](images/chartview-axes001.png)

@@ -17,7 +17,7 @@ __RadPivotGrid__ can export its contents to PDF. This is achieved with the help 
 
 ![pivotgrid-export-export-to-pdf 001](images/pivotgrid-export-export-to-pdf001.png)
 
->note The PDF export functionality is located in the __TelerikExport.dll__ assembly and to use the functionality you need yo add reference to it.
+>tip The PDF export functionality is located in the __TelerikExport.dll__ assembly and to use the functionality you need yo add reference to it.
 >
 
 ## Execute the Exporter

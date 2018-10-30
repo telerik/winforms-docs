@@ -13,10 +13,10 @@ previous_url: richtextbox-overview
 
 RadRichTextBox is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), etc.
 
->note RadRichTextBox and RadSpellChecker require .NET Framework 4.0.
+>tip RadRichTextBox and RadSpellChecker require .NET Framework 4.0.
 >
 
->note As a .NET 4.0 component, in order to be able to theme it in Visual Style Builder, you need to use the .NET 4.0 version of the tool, available in: *C:\Program Files (x86)\Telerik\UI for WinForms\Version\Bin40* 
+>tip As a .NET 4.0 component, in order to be able to theme it in Visual Style Builder, you need to use the .NET 4.0 version of the tool, available in: *C:\Program Files (x86)\Telerik\UI for WinForms\Version\Bin40* 
 >
 
 * __Rich Text Formatting__ - Telerik RadRichTextBox control allows you to edit text and apply rich formatting options, like:

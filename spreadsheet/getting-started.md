@@ -87,7 +87,7 @@ End Using
 
 {{endregion}} 
 
->note Detailed information about the format providers is available [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/general-information).
+>tip Detailed information about the format providers is available [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/general-information).
 
 ## See Also
 

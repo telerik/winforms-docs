@@ -43,7 +43,7 @@ You can add new labels by using the __New Label…__ dialog and of course delete
 
 ![richtexteditor-features-references-caption-for-tables-and-figures 004](images/richtexteditor-features-references-caption-for-tables-and-figures004.png)
 
->note You cannot delete the two default labels - __Figure__ and __Table__ 
+>tip You cannot delete the two default labels - __Figure__ and __Table__ 
 >
 
 When __Exclude label from caption__ checkbox is checked the label text will be removed and only the number will be left.

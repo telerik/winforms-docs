@@ -37,7 +37,7 @@ The available glyphs are separated in several groups, based on their usage:
 * __Social__
 * __File__
 
->note The following article lists all available glyphs from the TelerikWebUI font along with their names, number and string values: [Glyphs Reference](http://docs.telerik.com/devtools/wpf/styling-and-appearance/glyphs/common-styles-appearance-glyphs-reference-sheet).
+>tip The following article lists all available glyphs from the TelerikWebUI font along with their names, number and string values: [Glyphs Reference](http://docs.telerik.com/devtools/wpf/styling-and-appearance/glyphs/common-styles-appearance-glyphs-reference-sheet).
 
 # Font Awesome 
 
@@ -47,7 +47,7 @@ This is an open source font consisting of close to 1400 icons. The Font Awesome 
 * __Awesome-Regular__
 * __Awesome-Solid__
 
->note The available Font Awesome icons are listed here: [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free) 
+>tip The available Font Awesome icons are listed here: [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free) 
 
 # Using Glyphs
 

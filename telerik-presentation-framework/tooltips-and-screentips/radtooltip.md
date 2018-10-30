@@ -158,7 +158,7 @@ End Sub
 
 Now, every time you click on the form you should see a ToolTip which will hide after 2 seconds.
 
->note **RadToolTip** is a derivative of MS **Tooltip**. In order to customize its style, you can handle the **Draw** event. Additional information is available here: [ToolTip.Draw](https://msdn.microsoft.com/en-us/library/system.windows.forms.tooltip.draw(v=vs.110).aspx).
+>tip **RadToolTip** is a derivative of MS **Tooltip**. In order to customize its style, you can handle the **Draw** event. Additional information is available here: [ToolTip.Draw](https://msdn.microsoft.com/en-us/library/system.windows.forms.tooltip.draw(v=vs.110).aspx).
         
 
 # See Also

@@ -24,7 +24,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 6. Select `RadTextBoxElement` and change the __BackColor__, then save the theme. (you can press Ctrl+H to open the [Spy]({%slug winforms/tools/controlspy%}) and disable the text box to see the results):
    ![radtextbox-themes002](images/radtextbox-themes002.png)
 
->note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
+>tip The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
 
 # See Also 
 

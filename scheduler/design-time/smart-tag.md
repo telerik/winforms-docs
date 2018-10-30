@@ -54,7 +54,7 @@ The __SchedulerBindingDataSource__ object can be dragged onto the form straight 
 >caption Figure 2: SchedulerBindingDataSource Smart Tag
 ![radscheduler design time 002](images/radscheduler-design-time002.png)
 
->note Complete tutorials on how data binding can be setup at design time are availalble in the following articles:[Data Binding Walkthrough]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}) and [Codeless Data Binding]({%slug winforms/scheduler/data-binding/codeless-data-binding%}) 
+>tip Complete tutorials on how data binding can be setup at design time are availalble in the following articles:[Data Binding Walkthrough]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}) and [Codeless Data Binding]({%slug winforms/scheduler/data-binding/codeless-data-binding%}) 
 >
 
 # See Also

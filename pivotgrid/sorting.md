@@ -33,7 +33,7 @@ You can also apply sorting based on some of the **PropertyAggregateDescription**
 
 ![pivotgrid-sorting 003](images/pivotgrid-sorting003.png)
 
->note The sorting is set on the **ColumnGroupDescriptions** or **RowGroupDescriptions**. You cannot set sorting on the **AggregateDescriptions**, but you can sort the columns or rows based on the aggregated values.
+>tip The sorting is set on the **ColumnGroupDescriptions** or **RowGroupDescriptions**. You cannot set sorting on the **AggregateDescriptions**, but you can sort the columns or rows based on the aggregated values.
 >
 
 ## Applying Sort Rules
@@ -88,7 +88,7 @@ Me.radPivotGrid1.ReloadData()
 
 {{endregion}}
 
->note The **AggregateIndex** property is set based on the count of your aggregate descriptions. If you have two aggregates the first one will have **AggregateIndex** = 0 and the second - **AggregateIndex** = 1.
+>tip The **AggregateIndex** property is set based on the count of your aggregate descriptions. If you have two aggregates the first one will have **AggregateIndex** = 0 and the second - **AggregateIndex** = 1.
 >
 
 ## Changing the Sorting at runtime

@@ -57,7 +57,7 @@ The table below shows a list of patterns that can be combined to create custo
 <tr><td>tt</td><td>The AM/PM designator defined in AMDesignator or PMDesignator, if any.</td></tr>
 </table>
 
->note  __RadCalendar__ uses the __DayNameFormat__ enumeration to represents the formats for the days of the week.
+>tip  __RadCalendar__ uses the __DayNameFormat__ enumeration to represents the formats for the days of the week.
 >
 
 ## See Also

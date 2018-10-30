@@ -75,7 +75,7 @@ Me.RadMenuItem2.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.F, Keys.K))
 
 {{endregion}} 
 
->note In the constructor of **RadShortcut**, you should first pass the key modifier as a parameter and then an array of the key mappings.
+>tip In the constructor of **RadShortcut**, you should first pass the key modifier as a parameter and then an array of the key mappings.
 >
 
 As a result, you will get this picture runtime. As you can see, the shortcuts are automatically displayed for the **RadMenuItems**:

@@ -35,13 +35,13 @@ You can customize the spell checker by using the __SpellChecker__ property of __
 
 When you right click a misspelled word, the context menu gives you the opportunity to open a **SpellCheckingDialog**. Thus, the user can correct the word, add it to the dictionary or ignore it.
 
->note Since R2 2017 SP the SpellCheckingDialog allows the user to enter some custom text by using a RadTextBox if no appropriate word exist in the offered list.
+>tip Since R2 2017 SP the SpellCheckingDialog allows the user to enter some custom text by using a RadTextBox if no appropriate word exist in the offered list.
 
 >caption Figure 2: Spell checking dialog
 
 ![richtexteditor-features-spellcheck 002](images/richtexteditor-features-spellcheck002.png)
 
->note __RadRichTextEditor__ can also be configured to be used with a spell-checker using an OpenOffice dictionary and the NHunspell library: [RadRichTextEditor OpenOffice Spell Checking](http://www.telerik.com/support/code-library/radrichtexteditor-openoffice-spell-checking).
+>tip __RadRichTextEditor__ can also be configured to be used with a spell-checker using an OpenOffice dictionary and the NHunspell library: [RadRichTextEditor OpenOffice Spell Checking](http://www.telerik.com/support/code-library/radrichtexteditor-openoffice-spell-checking).
 >        
 
 ## Dictionaries
@@ -50,10 +50,10 @@ The dictionaries in __RadRichTextEditor__ implement the __IWordDictionary__ inte
 
 Here is an example of a __RadDictionary__ loaded from a TDF file.
 
->note When adding a __RadDictionary__ or similar object use the __AddDictionary(IWordDictionary dictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__ . You can also associate a dictionary with a specific culture. The method to remove this dictionary is __RemoveDictionary(CultureInfo culture)__ .
+>tip When adding a __RadDictionary__ or similar object use the __AddDictionary(IWordDictionary dictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__ . You can also associate a dictionary with a specific culture. The method to remove this dictionary is __RemoveDictionary(CultureInfo culture)__ .
 >
 
->note The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
+>tip The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
 >
 
 {{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=load}} 
@@ -149,7 +149,7 @@ Here is an example of a such dictionary which adds the words in the "CustomDicti
 *  __Site__ - the dictionary defined in this scope is available for each application hosted on the same site.
 *  __Application__ - the dictionary is available only for the particular application.>
 
->note When adding a dictionary that implements the __ICustomWordDictionary__ interface object use __AddCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ method for the __DocumentSpellChecker__ class. You can also associate a custom dictionary to a specific culture. The method to remove it is __RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ .
+>tip When adding a dictionary that implements the __ICustomWordDictionary__ interface object use __AddCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ method for the __DocumentSpellChecker__ class. You can also associate a custom dictionary to a specific culture. The method to remove it is __RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ .
 >
 
 {{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=custom}} 
@@ -183,7 +183,7 @@ If you want to have a temporary custom dictionary, that will only be available f
 
 To add a word to a dictionary you can either use the __AddWord__ method of the __DocumentSpellChecker__ or of the dictionary itself. Using the first one you can add a word to multiple dictionaries associated to the same culture. This is done by passing the desired culture as parameter to the method.
         
->note Using the overload of the __AddWord__ method that takes only the word as argument is equal to using the second overload and passing __CultureInfo.InvariantCulture__ as argument.
+>tip Using the overload of the __AddWord__ method that takes only the word as argument is equal to using the second overload and passing __CultureInfo.InvariantCulture__ as argument.
 >
 
 Using the __AddWord__ method of the dictionary itself will add the word only to the respective dictionary.
@@ -211,7 +211,7 @@ The spell checking component is designed to suit scenarios where different cultu
         
 Here is an example.
 
->note The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
+>tip The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
 >
 
 {{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=load}} 

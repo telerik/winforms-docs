@@ -58,7 +58,7 @@ End Sub
 {{endregion}} 
 
 
->note Additionally, you can use the __RadGridView__.__Copy__ method in order to perform programmatically copy functionality.
+>tip Additionally, you can use the __RadGridView__.__Copy__ method in order to perform programmatically copy functionality.
 >
 
 ### The CopyingCellClipboardContent event
@@ -146,7 +146,7 @@ End Sub
 
 You can cancel this event as well in order to prevent pasting data in some cases.
 
->note Additionally, you can use the __RadGridView__.__Paste__ method in order to perform programmatically paste functionality.
+>tip Additionally, you can use the __RadGridView__.__Paste__ method in order to perform programmatically paste functionality.
 >
 
 ### PastingCellClipboardContent event
@@ -206,7 +206,7 @@ The cutting functionality in __RadGridView__ is controlled via the __ClipboardCu
 
 *Ctrl+X* is the key combination, replacing Cut behavior.
 
->note Additionally, you can use the __RadGridView__.__Cut__ method in order to perform programmatically cut functionality.
+>tip Additionally, you can use the __RadGridView__.__Cut__ method in order to perform programmatically cut functionality.
 >
 
 # See Also

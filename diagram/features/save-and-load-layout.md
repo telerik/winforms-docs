@@ -48,7 +48,7 @@ Me.radDiagram1.SaveToFile(s)
 
 {{endregion}} 
 
->note You can use the RadDiagram.**Save** method in case you need just the string representation of the XML data.
+>tip You can use the RadDiagram.**Save** method in case you need just the string representation of the XML data.
 
 ## Load Layout
 
@@ -85,4 +85,4 @@ Me.radDiagram1.LoadFromFile(s)
 
 {{endregion}} 
 
->note You can use the RadDiagram.**Load** method in order to load data from a string representation of the XML data.
+>tip You can use the RadDiagram.**Load** method in order to load data from a string representation of the XML data.

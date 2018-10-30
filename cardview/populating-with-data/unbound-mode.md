@@ -104,7 +104,7 @@ item("Address") = "908 W. Capital Way"
 
 {{endregion}} 
 
->note To use these indexers the item must have a valid owner e.g. it first has to be added to the __Items__ collection of the __RadCardView__.
+>tip To use these indexers the item must have a valid owner e.g. it first has to be added to the __Items__ collection of the __RadCardView__.
 >
 
 ## Adding Groups

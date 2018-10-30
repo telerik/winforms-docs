@@ -13,7 +13,7 @@ previous_url: carousel-using-radcarousel-carousel-path
 
 The __CarouselPath__ property defines the route that the carousel items will be animated along. Assign a CarouselParameterPath descendant instance to the  __CarouselPath__ property.
 
->note When the Z (depth) component of the points in the path are all zero, i.e. the points are in a plane, the carousel automatically sets higher Z indexes for items next to the selected item. This puts the selected item in the foreground, with the other items in the list layered in the background.
+>tip When the Z (depth) component of the points in the path are all zero, i.e. the points are in a plane, the carousel automatically sets higher Z indexes for items next to the selected item. This puts the selected item in the foreground, with the other items in the list layered in the background.
 >
 
 

@@ -12,7 +12,7 @@ position: 1
 
 This article will guide you through the process of converting the Microsoft Windows Forms controls in your application to Telerik UI for for Winforms counterparts. 
 
->note We strongly recommend you using a source control system like TFS or Git. This will allow you to review the changes and restore to previous version if needed. 
+>tip We strongly recommend you using a source control system like TFS or Git. This will allow you to review the changes and restore to previous version if needed. 
 
 1\. Before starting you need to open a solution which contains a project that is using standard Microsoft Winforms controls. This will enable the converter option in the `UI for WinForms menu` item.
 
@@ -53,7 +53,7 @@ At this step you can compare the old and the converted files. To do that just cl
 5\. The final step is to resolve any compile time errors. There are properties and methods which do not have analogs in our implementation. Since the converter does not remove the code for these, you will get a compile time error:
     ![winforms-converter-step-by-step-tutorial006](images/winforms-converter-step-by-step-tutorial006.png)
 
->note After the conversion process is completed, you should check if all existing functionality is working as before.
+>tip After the conversion process is completed, you should check if all existing functionality is working as before.
 
 ## See Also
 

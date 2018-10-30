@@ -41,7 +41,7 @@ Me.RadTreeView1.DataSource = customers
 
 {{endregion}} 
 
->note The above context object is created by binding the project to the NorthWind database using [LINQ to SQl](https://msdn.microsoft.com/en-us/library/bb386976(v=vs.110).aspx)
+>tip The above context object is created by binding the project to the NorthWind database using [LINQ to SQl](https://msdn.microsoft.com/en-us/library/bb386976(v=vs.110).aspx)
 
 2\. Set the __DisplayMember__ corresponding to the DisplayMembers of the different types of objects and set the __ChildMember__ corresponding to the names of the properties that represent the collections of sub objects.
 

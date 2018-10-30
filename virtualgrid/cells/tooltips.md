@@ -78,7 +78,7 @@ End Sub
 
 {{endregion}}
 
->note The __ToolTipTextNeeded__ event has higher priority and overrides the tooltips set in the __CellFormatting__ event handler.
+>tip The __ToolTipTextNeeded__ event has higher priority and overrides the tooltips set in the __CellFormatting__ event handler.
 
 # See Also
 * [Creating custom cells]({%slug winforms/virtualgrid/cells/creating-custom-cells%})

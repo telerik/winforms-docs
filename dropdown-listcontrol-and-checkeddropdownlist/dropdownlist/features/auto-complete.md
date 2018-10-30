@@ -18,7 +18,7 @@ __RadDropDownList__ provides flexible auto-completion options that suggest and  
 
 The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavior and can be set to *None, Suggest, Append* and *SuggestAppend*:
          
->note All auto-complete modes depend on the value of the Boolean __CaseSensitive__ property.
+>tip All auto-complete modes depend on the value of the Boolean __CaseSensitive__ property.
 >
 
 * __None__: Nothing happens when a user begins to type into the text box part of the control. If the user types the whole text of an item and presses Enter, the item is selected. 

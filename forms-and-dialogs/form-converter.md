@@ -22,7 +22,7 @@ The actual conversion process is executed after selecting an item from the compo
 * **Convert to RadForm**: Converts a standard or ribbon form to a **RadForm**.
 * **Convert to RadRibbonForm**: Converts a standard or **RadForm** to a **RadRibbonForm**.
 
->note Any controls added in the Controls collection of the form will not be influenced by the conversion process.
+>tip Any controls added in the Controls collection of the form will not be influenced by the conversion process.
 
 # See Also 
 

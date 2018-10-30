@@ -25,7 +25,7 @@ The programmatic selection gets implemented via the __DocumentSelection__ class.
 
 Here is an example of how to select the current word.
 
->note To learn more about the __DocumentPosition__ read the Positioning topic.
+>tip To learn more about the __DocumentPosition__ read the Positioning topic.
 >
 
 #### Select the current word

@@ -17,7 +17,7 @@ The __GridViewSpreadStreamExport__ uses the [__RadSpreadStreamProcessing__](http
 ![gridview-exporting-data-spreadstream-export 001](images/gridview-exporting-data-spreadstream-export001.png)
 
 
->note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
+>tip The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
 * Telerik.WinControls.TelerikExport
 >
 
@@ -202,7 +202,7 @@ This feature can be utilized by calling the __RunExportAsync__ method on the __G
 * __AsyncExportCompleted:__ Fires when the export operation is completed.
 * __AsyncExportProgressChanged:__ Fires repeatedly and passes the current export progress.
 
->note When you are exporting with visual settings the UI would be friezed for some time. This is necessary because the exporter need to retrieve all grid styles and this operation is executed on the UI thread. 
+>tip When you are exporting with visual settings the UI would be friezed for some time. This is necessary because the exporter need to retrieve all grid styles and this operation is executed on the UI thread. 
 >
 
 >caption Figure 2: The asynchronous export.

@@ -46,9 +46,9 @@ When using this mode, **RadSpellChecker** will check every word in a separate wi
         
 You are presented with a list of all possible suggestions, from which you can choose a word to replace the wrong one. Alternatively, you can ignore the word or add it to a custom dictionary.    
 
->note This dialog will be called on every word considered wrong.
+>tip This dialog will be called on every word considered wrong.
 
->note SpellCheckMode.WordByWord is the default value of the SpellCheckMode property so unless you have a complex scenario where you need to go from *WordByWord* to *AllAtOnce* and back, you do not need to set the property.
+>tip SpellCheckMode.WordByWord is the default value of the SpellCheckMode property so unless you have a complex scenario where you need to go from *WordByWord* to *AllAtOnce* and back, you do not need to set the property.
 
 ### Check All Words at Once  
 

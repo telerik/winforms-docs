@@ -44,7 +44,7 @@ worksheetEditor.FreezePanes(New Telerik.Windows.Documents.Spreadsheet.Model.Cell
 ````  
 {{endregion}} 
 
->note Note that the cell you want to freeze have to be visible at the moment you freeze.
+>tip Note that the cell you want to freeze have to be visible at the moment you freeze.
 
 If you want to freeze panes so there are only two panes you have to freeze using a cell index located at the top or left edge of the visible area. For example if you want to split visible area vertically like shown on the image below you have to freeze on cell F1:
 

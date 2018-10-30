@@ -88,7 +88,7 @@ Me.RadChartView1.ChartElement.LegendPosition = LegendPosition.Bottom
 
 Alternatively, you can set it to float over the chart view. Here is how to set the legend to stay at position  *200 , 0* over the chart area.
 
->note The __LegendOffset__ property is only taken into consideration when the __LegendPosition__ is set to *“Float”*.
+>tip The __LegendOffset__ property is only taken into consideration when the __LegendPosition__ is set to *“Float”*.
 > 
 
 #### Float Legend

@@ -47,7 +47,7 @@ End Sub
 ![forms-and-dialogs-accessing-radform-elements 001](images/forms-and-dialogs-accessing-radform-elements001.png)
 
 
->note By default, the __HelpButton__ is not shown. Set the __HelpButton__ property to *true* to display a Help button in the form's caption bar.The value of the __HelpButton__ property is ignored if the Maximize or Minimize buttons are shown.
+>tip By default, the __HelpButton__ is not shown. Set the __HelpButton__ property to *true* to display a Help button in the form's caption bar.The value of the __HelpButton__ property is ignored if the Maximize or Minimize buttons are shown.
 > An alternative solution is to set its __Visibility__ property to *ElementVisibility.Visible* in order to be displayed. The __HelpButtonClicked__ event is fired when Help button in the title bar is clicked. It can be canceled. However, if it is not canceled, the __HelpRequested__ event will be fired when the Help cursor is clicked on any Control. 
 
 
@@ -106,7 +106,7 @@ Me.FormElement.Border.ForeColor = System.Drawing.Color.Green
 {{endregion}} 
 
 
->note The visual appearance of the border and also for the whole RadForm control can be designed in the Visual Style Builder.
+>tip The visual appearance of the border and also for the whole RadForm control can be designed in the Visual Style Builder.
 >
 
 
@@ -133,7 +133,7 @@ Me.FormElement.ImageBorder.BackColor = Color.Lime
 {{endregion}} 
 
  
->note More information on how to use the __FormImageBorderPrimitive__ can be found in the separate topic: [Using the FormImageBorderPrimitive]({%slug winforms/forms-and-dialogs/form/using-the-formimageborderprimitive%}).
+>tip More information on how to use the __FormImageBorderPrimitive__ can be found in the separate topic: [Using the FormImageBorderPrimitive]({%slug winforms/forms-and-dialogs/form/using-the-formimageborderprimitive%}).
 >
 
 

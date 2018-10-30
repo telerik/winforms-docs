@@ -60,7 +60,7 @@ Dim weekView As SchedulerWeekView = Me.RadScheduler1.GetWeekView()
 
 {{endregion}} 
 
->note This method returns null if the active view of the scheduler is not SchedulerWeekView.
+>tip This method returns null if the active view of the scheduler is not SchedulerWeekView.
 >
 
 * use the RadScheduler __ActiveView__ property:             

@@ -16,9 +16,9 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 
 ![map-bingrestmapprovider 001](images/map-bingrestmapprovider001.png)
 
->note You must provide a Bing Maps Key to the provider for it to work. To get your free Bing Maps Key, please refer to the following link: [Getting a Bing Maps Key](https://msdn.microsoft.com/en-us/library/ff428642.aspx).
+>tip You must provide a Bing Maps Key to the provider for it to work. To get your free Bing Maps Key, please refer to the following link: [Getting a Bing Maps Key](https://msdn.microsoft.com/en-us/library/ff428642.aspx).
 
->note Only billable transactions count towards the free-use limits for Basic keys, and Enterprise keys are only charged for billable transactions. Non-billable transactions do not incur charges and do not count towards free-use limits. You can find additional information in the following link:  [Billable versus non-billable transactions](https://msdn.microsoft.com/en-us/library/ff859477.aspx).
+>tip Only billable transactions count towards the free-use limits for Basic keys, and Enterprise keys are only charged for billable transactions. Non-billable transactions do not incur charges and do not count towards free-use limits. You can find additional information in the following link:  [Billable versus non-billable transactions](https://msdn.microsoft.com/en-us/library/ff859477.aspx).
 
 #### Using BingRestMapProvider
 
@@ -48,7 +48,7 @@ Me.radMap1.Providers.Add(bingProvider)
 
 {{endregion}} 
 
->note If you use __RadMap__ with .Net Framework 2.0 and you don't have an installation of the Telerik UI for for WinForms suite on the current machine, it is necessary to add a reference to the Newtonsoft.Json assembly which can be found in the \Bin folder of the *Telerik_UI_For_WinForms_[version]_Dev_dlls.zip*. If you are using .Net Framework 4.0 this is not required.
+>tip If you use __RadMap__ with .Net Framework 2.0 and you don't have an installation of the Telerik UI for for WinForms suite on the current machine, it is necessary to add a reference to the Newtonsoft.Json assembly which can be found in the \Bin folder of the *Telerik_UI_For_WinForms_[version]_Dev_dlls.zip*. If you are using .Net Framework 4.0 this is not required.
 
 # Properties
 
@@ -67,7 +67,7 @@ Me.radMap1.Providers.Add(bingProvider)
 |__EnableCaching__|Gets or set a value whether the caching is enabled.|
 |__TileDownloader__|Gets or sets the tile downloader.|
 
->note The **ImagerySet**.*OrdnanceSurvey* is only visible in the Great Britain area and in between zoom levels of 10 and 17. 
+>tip The **ImagerySet**.*OrdnanceSurvey* is only visible in the Great Britain area and in between zoom levels of 10 and 17. 
 
 # Methods 
 

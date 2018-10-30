@@ -206,7 +206,7 @@ The tabs will look like in the following image:
 The tab items of the __DocumentWindows__ in __RadDock__ have a predefined shape applied (*TabVsShape*). The following example will demonstrate how the default layout can be modified so the tabs are displayed in a multi row layout and how a custom shape can be applied to the tab items. For the purpose we have to subscribe to the static __TabStripItemCreating__ event (where we will change the __Shape__ property) and access the __DocumentTabStrip__ in order to set the desired __StripViewItemFitMode__.
         
 
->note Since the __TabStripItemCreating__ event is static the event subscription have to be defined before the call to the InitializeComponent method.
+>tip Since the __TabStripItemCreating__ event is static the event subscription have to be defined before the call to the InitializeComponent method.
 > 
 
 {{source=..\SamplesCS\Dock\CustomizingTabStripItemsForm.cs region=MultiLineRowLayoutInit}} 
@@ -250,7 +250,7 @@ End Sub
 
 {{endregion}}  
 
->note Because we are subscribing to a static event, we need to take care of the unscibription as well. Otherwise the form would not be disposed properly.
+>tip Because we are subscribing to a static event, we need to take care of the unscibription as well. Otherwise the form would not be disposed properly.
 > 
 
 {{source=..\SamplesCS\Dock\CustomizingTabStripItems.cs region=closed}} 

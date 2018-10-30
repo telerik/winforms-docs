@@ -55,7 +55,7 @@ End Sub
 
 ![buttons-repeatbutton-tooltips 002](images/buttons-repeatbutton-tooltips002.png)
 
->note The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set in the __ToolTipText__ property.
+>tip The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set in the __ToolTipText__ property.
 
 
  

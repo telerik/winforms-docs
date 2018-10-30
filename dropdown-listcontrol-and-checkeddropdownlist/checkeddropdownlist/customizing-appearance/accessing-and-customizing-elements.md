@@ -17,7 +17,7 @@ Accessing and customizing elements can be performed either at design time, or at
 
 You can access and modify the style for different elements in __RadCheckedDropDownList__ by using the *Element hierarchy editor*.
 
->note In order to access the *Element hierarchy editor* select RadCheckedDropDownList and click the small arrow on the top right position in order to open the Smart Tag. Then, click the *Edit UI Elements*.
+>tip In order to access the *Element hierarchy editor* select RadCheckedDropDownList and click the small arrow on the top right position in order to open the Smart Tag. Then, click the *Edit UI Elements*.
 
 >caption Figure 1: Element hierarchy editor
 

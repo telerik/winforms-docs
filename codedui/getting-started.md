@@ -34,7 +34,7 @@ This article will demonstrate how to create a simple test with **RadListControl*
 
 ![codedui-getting-started 002](images/codedui-getting-started002.png)
 
->note It is necessary to set **EnableCodedUITests** property to *true* for each control that is contained in the form for which you record a CodedUI test. In R2 2017 we introduced the static RadControl.**EnableCodedUITestsDefaultValue** property which controls the default value for enabling CodedUI for all controls from UI for WinForms suite. It is recommended to set the property before calling **InitializeComponent** method. 
+>tip It is necessary to set **EnableCodedUITests** property to *true* for each control that is contained in the form for which you record a CodedUI test. In R2 2017 we introduced the static RadControl.**EnableCodedUITestsDefaultValue** property which controls the default value for enabling CodedUI for all controls from UI for WinForms suite. It is recommended to set the property before calling **InitializeComponent** method. 
 
 5\. Then, start an application created with Telerik UI for for WinForms - in our case this is a form with **RadListControl**.
 

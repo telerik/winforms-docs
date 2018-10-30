@@ -63,7 +63,7 @@ Me.radPivotGrid1.ChartDataProvider.IncludeRowSubTotals = False
 
 You can change the type of the generated series to one of the categorical types: __Bar, Line,  Area__. Additionally, you can choose which of the pivot axes will be used for generating series:
 
->note __RadChartView__ provides out of the box support for data points having [null values]({%slug winforms/chartview-/null-values-support-%}). In order to enable it when associated with __RadPivotGrid__ the __EnableNulls__ property of the provider should be set to *true*. 
+>tip __RadChartView__ provides out of the box support for data points having [null values]({%slug winforms/chartview-/null-values-support-%}). In order to enable it when associated with __RadPivotGrid__ the __EnableNulls__ property of the provider should be set to *true*. 
 >
 
 >caption Figure 2: Line Series with Null Values

@@ -21,7 +21,7 @@ The drag and drop functionality is achieved with the help of four events: __Mous
 
 1\. Handling the __MouseDown__ and __MouseMove__ events: The __MouseDown__ event is used for saving the position of the clicked element. It will be used later for getting the element under the mouse. The __MouseMove__ event can be used to start the drag and drop operation. It is started with the __DoDragDrop__ method only if the left mouse button is used and a valid item is clicked.
             
->note The __IsRealDrag__ method returns *true* only if the mouse have moved certain amount of pixels (determined by the operating system).
+>tip The __IsRealDrag__ method returns *true* only if the mouse have moved certain amount of pixels (determined by the operating system).
 >
 
 #### MouseDown and MouseMove 

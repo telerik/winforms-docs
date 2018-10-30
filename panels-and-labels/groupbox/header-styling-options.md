@@ -63,7 +63,7 @@ The **HeaderPosition** can be set to *Top*, *Right*, *Bottom*, and *Left*:<br>!
 
 **HeaderAlignment** takes *Near*, *Center*, and *Far *values:<br>![panels-and-labels-groupbox-header-styling-options 002](images/panels-and-labels-groupbox-header-styling-options002.png)
 
->note **HeaderAlignment** is not taken into consideration when the **GroupBoxStyle** is set to *Office*. In this case the header occupies the whole width or height of the control. You may use **HeaderTextAlignment** and **HeaderImageAlignment** properties in this case.
+>tip **HeaderAlignment** is not taken into consideration when the **GroupBoxStyle** is set to *Office*. In this case the header occupies the whole width or height of the control. You may use **HeaderTextAlignment** and **HeaderImageAlignment** properties in this case.
 >
 
 ## Group Box Style

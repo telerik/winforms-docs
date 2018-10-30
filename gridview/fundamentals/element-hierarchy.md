@@ -25,7 +25,7 @@ __RadGridView__ uses the [Telerik Presentation Framework]({%slug winforms/teleri
 
 * __GridRowElement__ is the base visual element for presenting rows. It contains three different layouts enabling presenting frozen columns. It references a __GridViewRowInfo__ object in its __RowInfo__ property.
 
->note Please note that all cell and row elements are virtualized. Visual elements are created only for rows and cells that are currently visible. [Read More]({%slug winforms/gridview/fundamentals/ui-virtualization%})
+>tip Please note that all cell and row elements are virtualized. Visual elements are created only for rows and cells that are currently visible. [Read More]({%slug winforms/gridview/fundamentals/ui-virtualization%})
 >
 
 * __GridCellElement:__ The base visual element for presenting cells. It references __GridViewColumn__ and __GridRowElement__ objects to represent cell text using its __Value__ property.

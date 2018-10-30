@@ -18,7 +18,7 @@ __RadVirtualGrid__ allows the users to edit the cells values. Usually this proce
 ![virtualgrid-editing-editors001](images/virtualgrid-editing-editors001.png)
 
 
->note RadVirtualGrid can be made read-only by setting the __AllowEdit__ property to *false*. In this case the editors would not appear.
+>tip RadVirtualGrid can be made read-only by setting the __AllowEdit__ property to *false*. In this case the editors would not appear.
 >
 
 Currently, __RadVirtualGrid__ supports the following editors out of the box:

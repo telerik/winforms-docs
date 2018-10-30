@@ -18,7 +18,7 @@ A common requirement for applications utilizing a map control is to allow the en
 
 **RadMap** is handling the mouse, keyboard, and gestures by a special input behavior class. This class can be inherited and further extended to handle custom scenarios. In our example we will override its **OnDoubleClick** method and execute our special logic for adding the pins and the regions. The custom provider class can be assigned to the map by simply setting its **InputBehavior** property.
 
->note This example uses the **BingRestMapProvider** and the control is initially setup according to [this]({%slug winforms/map/providers/bingrestmapprovider%}) article.
+>tip This example uses the **BingRestMapProvider** and the control is initially setup according to [this]({%slug winforms/map/providers/bingrestmapprovider%}) article.
 
 #### Setup Provider
 

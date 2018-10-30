@@ -548,7 +548,7 @@ appointmentMappingInfo.ResourceId = "ResourceId"
 {{endregion}} 
 
 
->note In this scenario you should __not__ set the __Resources__ property of the __AppointmentMappingInfo__ 
+>tip In this scenario you should __not__ set the __Resources__ property of the __AppointmentMappingInfo__ 
 >
 
 #### Set Resource

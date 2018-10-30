@@ -45,7 +45,7 @@ The __MaskType__ property defines what type of mask would be used in the masked 
 ![editors-maskededitbox-overview 005](images/editors-maskededitbox-overview005.png)
 
 
->note The **RegexMaskTextBoxProvider**, **EMailMaskTextBoxProvider**, and **IPMaskTextBoxProvider** have an **ErrorMessage** property which can be set so that the displayed text with the message is localized.
+>tip The **RegexMaskTextBoxProvider**, **EMailMaskTextBoxProvider**, and **IPMaskTextBoxProvider** have an **ErrorMessage** property which can be set so that the displayed text with the message is localized.
 
 Additional features supported by __RadMaskedEditoBox__ are:
 

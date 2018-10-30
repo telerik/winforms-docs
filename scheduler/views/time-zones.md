@@ -40,7 +40,7 @@ Dim allTimeZones As List(Of SchedulerTimeZone) = SchedulerTimeZone.GetSchedulerT
 
 {{endregion}} 
 
->note The *bias* property represents the difference between the "UTC" time zone and the time zone that you want to set to RadScheduler in minutes multiplied by minus 1. For example, if the time zone that you want to set is "(UTC -05:00) Eastern Time (US and Canada)" the *bias* value would be -5 * 60 * -1 = 300
+>tip The *bias* property represents the difference between the "UTC" time zone and the time zone that you want to set to RadScheduler in minutes multiplied by minus 1. For example, if the time zone that you want to set is "(UTC -05:00) Eastern Time (US and Canada)" the *bias* value would be -5 * 60 * -1 = 300
 >
 
 ### SystemTimeZone Property

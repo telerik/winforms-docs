@@ -53,7 +53,7 @@ Me.RadGridView1.GridViewElement.TableElement.UpdateLayout()
 
 {{endregion}}
 
->note The layout needs to be invalidated and updated in order to reflect the changes.
+>tip The layout needs to be invalidated and updated in order to reflect the changes.
 >
 
 

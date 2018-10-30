@@ -155,7 +155,7 @@ Four properties need to be set for a polar marked zone annotation.
           
 * **RadialTo**: Gets or sets the ending point on the Radial axis.
 
->note The values set to the **RadialFrom** and **RadialTo** properties need to correspond to the type of the series. In the case of Radar series, one needs to use categories as values and in the case of a Polar series one needs to use angles.  
+>tip The values set to the **RadialFrom** and **RadialTo** properties need to correspond to the type of the series. In the case of Radar series, one needs to use categories as values and in the case of a Polar series one needs to use angles.  
 
 ### Example
 

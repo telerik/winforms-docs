@@ -15,7 +15,7 @@ The __RadRichTextBox__ is capable of displaying tables. To add a table to the do
 
 The tables inside the __RadRichTextBox__ are constructed using the __Table__, __TableRow__ and __TableCell__ classes. The defining of a table is very similar to the one in HTML. The __Table__ class define the table itself and it accepts __TableRow__ objects as children. The __TableRow__ on its hand accepts __TableCell__ objects as children. The __TableCell__ accepts Block elements as children, so to specify its contents of a cell use such one (e.g. a Paragraph) to wrap it.
 
->note  __Tables__ are block elements.
+>tip  __Tables__ are block elements.
 >
 
 Here is a simple example.
@@ -128,7 +128,7 @@ The __RadRichTextBox__ exposes a rich API, which allows you to use various metho
 
 You can use the __InsertTableDialog__, which comes out of the box. To show it upon a user action just call the __ShowInsertTableDialog()__ method of the __RadRichTextBox__. Here is a snapshot of it.
 
->note The __RadRichTextBoxUI__ also uses this dialog.
+>tip The __RadRichTextBoxUI__ also uses this dialog.
 >
 
 ![richtextbox-features-document-elements-tables 002](images/richtextbox-features-document-elements-tables002.png)

@@ -19,7 +19,7 @@ For the end-user, __RadScheduler__ resources can be company resources, such as c
 
 See the [Using DataSource property]({%slug winforms/scheduler/data-binding/using-datasource-property%}) and [Binding to Business Objects]({%slug winforms/scheduler/data-binding/binding-to-business-objects%}) topics on how to bind the Resources Collection.
 
->note If the data bound object is a list of appointments, set the __Resources__ property of the AppointmentMappingInfo object to "Resources".
+>tip If the data bound object is a list of appointments, set the __Resources__ property of the AppointmentMappingInfo object to "Resources".
 >Do not set the __Resources__ property of the AppointmentMappingInfo object to "Resources" if the data bound object has a property that has no Resources collection, but has only a __ResourceId__ property.
 >
 
@@ -27,7 +27,7 @@ See the [Using DataSource property]({%slug winforms/scheduler/data-binding/using
 
 To add resources to RadScheduler's Resource drop down (visible in the appointment dialog by default), you need to use the __Resources__ collection's __Add__ method and to pass a new __Resource__ instance. Pass a unique ID and a description in the constructor:
 
->note A Resource object also has an __Image__ property that is not displayed as of this writing. In the near future, resource images will be displayed by the scheduler in the resource selection control.
+>tip A Resource object also has an __Image__ property that is not displayed as of this writing. In the near future, resource images will be displayed by the scheduler in the resource selection control.
 >
 
 #### Adding Resources

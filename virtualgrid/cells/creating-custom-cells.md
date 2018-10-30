@@ -206,7 +206,7 @@ Me.RadVirtualGrid1.MasterViewInfo.RegisterCustomColumn(3)
 
 {{endregion}}
 
->note Use the __UnregisterCustomColumn__ method if you need to unregister the custom cell for the specified column index. You can detect whether a custom cell is used for a certain column index by using the RadVirtualGrid.MasterViewInfo.__IsCustomColumn__ method.
+>tip Use the __UnregisterCustomColumn__ method if you need to unregister the custom cell for the specified column index. You can detect whether a custom cell is used for a certain column index by using the RadVirtualGrid.MasterViewInfo.__IsCustomColumn__ method.
 
 10\. The last thing we need to do, is to prevent entering edit mode for the custom cell. For this purpose, cancel the __EditorRequired__ event:
 
@@ -239,7 +239,7 @@ End Sub
 {{endregion}}
 
 
->note The __RadCheckBoxElement__ can be replaced with any other __RadElement__ according to the user's requirement.
+>tip The __RadCheckBoxElement__ can be replaced with any other __RadElement__ according to the user's requirement.
 
 
 

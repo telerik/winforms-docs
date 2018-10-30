@@ -17,7 +17,7 @@ previous_url: richtextbox-features-search
 
 RadRichTextBox supports searching the contents of the document along with providing some methods for manipulating the selection. Used in combination, they become quite a powerful tool enabling scenarios like highlighting of specific parts of the document or replacing words and collocations.
 
->note To learn more about the selection API read the[Selection]({%slug winforms/richtextbox-(obsolete)/features/selection%})topic.
+>tip To learn more about the selection API read the[Selection]({%slug winforms/richtextbox-(obsolete)/features/selection%})topic.
 >
 
 The simplest scenario – finding a string in the content of the document can be implemented with the following code:
@@ -54,7 +54,7 @@ End Sub
 
 {{endregion}}
 
->note Note that the __FindAll()__ method of the __DocumentTextSearch__ class takes a string as an argument, but regards it as a regular expression. For example, searching “ __[a-z]*control[a-z]*__ ”will find all words that contain the word “ __control__ ” as a substring. Thus, if you have the word “ __RadControls__ ” in the document, executing the __SelectAllMatches(“control”)__ will result in only these six letters being selected, as opposed to the whole word “ __RadControls__ ” being selected when __SelectAllMatches(“[a-z]*control[a-z]*”)__ .
+>tip Note that the __FindAll()__ method of the __DocumentTextSearch__ class takes a string as an argument, but regards it as a regular expression. For example, searching “ __[a-z]*control[a-z]*__ ”will find all words that contain the word “ __control__ ” as a substring. Thus, if you have the word “ __RadControls__ ” in the document, executing the __SelectAllMatches(“control”)__ will result in only these six letters being selected, as opposed to the whole word “ __RadControls__ ” being selected when __SelectAllMatches(“[a-z]*control[a-z]*”)__ .
 >
 
 You can use all kind of regular expressions, such as “__(asp|silverlight)\s*control(s)?__” (which would match both “__ASP Controls__” and “__SilverlightControl__”), __[a-z]*(.)\1[a-z]*__ (which finds all words that have a doubled letter), and basically everything else you can come up with. Make sure to use correct expressions if you want to utilize this functionality, or escape the string in case you want a simple search for a word that can contain special symbols like “__?__”, “__+__”, “__{__“ etc. This can be automatically done by invoking the following code before proceeding with the search.
@@ -115,7 +115,7 @@ Me.RadRichTextBox1.Document.Selection.Clear()
 
 {{endregion}}
 
->warning You should have in mind that performing these actions in __DocumentContentChanged__ event handler will not only raise performance issues, but will also produce an infinite loop, as the changes of the formatting are also considered document changes.
+>caution You should have in mind that performing these actions in __DocumentContentChanged__ event handler will not only raise performance issues, but will also produce an infinite loop, as the changes of the formatting are also considered document changes.
 >
 
 On a side note, the find and select functionality can be extended in order to implement a replace of all occurrences matching the searched string with another string. Here is a sample code:

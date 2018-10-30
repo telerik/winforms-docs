@@ -59,7 +59,7 @@ Dim dayView As SchedulerDayView = Me.RadScheduler1.GetDayView()
 
 {{endregion}} 
 
->note This method returns null if the active view of the scheduler is not SchedulerDayView.
+>tip This method returns null if the active view of the scheduler is not SchedulerDayView.
 >
 
 * use the the RadScheduler __ActiveView__ property:

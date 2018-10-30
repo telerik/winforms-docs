@@ -35,7 +35,7 @@ End Sub
 >important You can download a XML file that contains all the currently used strings from here: [Strings file](http://www.telerik.com/docs/default-source/ui-for-winforms/spreadsheetstrings16eded384d99475988400b01e5b61d9d.zip?sfvrsn=3a887a8e_0)
 >
 
->note __SpreadsheetLocalizationProvider__ contains all strings related to the __RadSpreadsheetRibbonBar__ as well.
+>tip __SpreadsheetLocalizationProvider__ contains all strings related to the __RadSpreadsheetRibbonBar__ as well.
 >
 
 Another approach is to create a custom localization provider class which inherits __SpreadsheetLocalizationProvider__. In it you should just override the __GetLocalizedString__  method and return the localized string depending on current id.
@@ -101,5 +101,5 @@ End Sub
  
 {{endregion}} 
 
->note It is necessary to set the SpreadsheetLocalizationProvider. __CurrentProvider__ property before initializing the components.
+>tip It is necessary to set the SpreadsheetLocalizationProvider. __CurrentProvider__ property before initializing the components.
 >

@@ -31,7 +31,7 @@ There are three levels at which the properties can be applied:
 </PropertySettingGroups>
 ````
 
->note The properties that are not set in the repository item property grid (i.e. they do not have the square indicator) should not be considered as default property values. Only the property grid of the element itself shows the default values.
+>tip The properties that are not set in the repository item property grid (i.e. they do not have the square indicator) should not be considered as default property values. Only the property grid of the element itself shows the default values.
 >
 
 3. Additional level allowing you to tweak an element overriding the default values and the values set by a repository item. In some cases you may want to tweak an element that has an assigned repository item without creating a new repository item. In such situations, you should click on the element and directly tweak its properties. These settings will override the repository item’s settings. The the XML code in this case looks like this (assuming that the Red color is set directly on the element):

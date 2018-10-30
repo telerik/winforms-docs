@@ -18,7 +18,7 @@ position: 10
 
 In order to utilize this functionality, one needs to load the font carried with the application and then register it with the editor.
 
->note The Ribbon UI initializes prior to the associated **RadRichTextEditor** and one needs to load and register any in memory fonts before calling the InitializeComponent method of the form
+>tip The Ribbon UI initializes prior to the associated **RadRichTextEditor** and one needs to load and register any in memory fonts before calling the InitializeComponent method of the form
 
 #### Custom Fonts
 

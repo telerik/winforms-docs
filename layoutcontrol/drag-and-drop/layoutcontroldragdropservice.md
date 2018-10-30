@@ -12,7 +12,7 @@ position: 0
 
 **RadLayoutControl** allows you quickly design and arrange your controls in complex layouts. This behavior is achieved by the **LayoutControlDragDropService**. It can be accessed by the RadLayoutControl.DragOverlay.**DragDropService** property. 
 
->note The **DragOverlay** property is not accessible until you show the customize dialog by calling the RadLayoutControl.**ShowCustomizeDialog** method.
+>tip The **DragOverlay** property is not accessible until you show the customize dialog by calling the RadLayoutControl.**ShowCustomizeDialog** method.
 
 >caption Figure 1: LayoutControlDragDropService
 

@@ -23,7 +23,7 @@ You can set the bezier path for the carousel using the Visual Studio designer.
 
 	![carousel-design-time-setting-bezier-path-design-time 002](images/carousel-design-time-setting-bezier-path-design-time002.png)
 
->note  __Note__ : You can arrange the points only in 2D. The Z coordinate (if needed) should be set programmatically.
+>tip  __Note__ : You can arrange the points only in 2D. The Z coordinate (if needed) should be set programmatically.
 >You can drag the bezier points over the whole designer area, i.e. you are not limited to the form only.
 >
 

@@ -15,7 +15,7 @@ __RadRichTextEditorRuler__ is a control providing ruler functionality to [RadRic
 
 ![richtexteditor-richtexteditorruler 001](images/richtexteditor-richtexteditorruler001.png)
 
->note Rulers only apply to the [Paged]({%slug winforms/richtexteditor-/document-elements/raddocument%}) document layout mode of the __RadRichtextEditor.__ 
+>tip Rulers only apply to the [Paged]({%slug winforms/richtexteditor-/document-elements/raddocument%}) document layout mode of the __RadRichtextEditor.__ 
 >
 
 ## Using the RadRichTextEditorRuler at design time

@@ -19,7 +19,7 @@ As many other RadControls, __RadCheckedDropDownList__ can also be used as [edito
 
 1\. Add a __RadGridView__ to a Form and add a regular text box column which will use the new editor. You can bind the grid to a list of sample data and create the data source for __RadCheckedDropDownList__:
         
->note The "MyPart" class contains a singe public property named "CurrentParts" and a constructor that sets this property.
+>tip The "MyPart" class contains a singe public property named "CurrentParts" and a constructor that sets this property.
 >
 
 #### Initialize 

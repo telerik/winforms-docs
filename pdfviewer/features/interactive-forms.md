@@ -18,13 +18,13 @@ The control renders each field according to its type and provides an easy way fo
 ![pdfviewer-interactive-forms001](images/pdfviewer-interactive-forms001.png)
 
 
->note In the versions between R1 and R3 2017, the content of the interactive forms is visualized read-only. The interactions with the form fields are supported since R3 2017. 
+>tip In the versions between R1 and R3 2017, the content of the interactive forms is visualized read-only. The interactions with the form fields are supported since R3 2017. 
 
 ## Working with Interactive Forms in Code-Behind
 
 The form fields in a document are preserved in its **AcroForm** property. You can obtain a form field value through the **FormFields** collection of the **AcroForm**.
 
->note The UI of RadPdfViewer responds to interactive changes in field values (through mouse interaction with the UI) and it is not recommended to change the field collection in code. If you change the field values from your code, this may lead to unpredictable UI behavior and the applied changes will not be saved when using the **SaveAs** command.
+>tip The UI of RadPdfViewer responds to interactive changes in field values (through mouse interaction with the UI) and it is not recommended to change the field collection in code. If you change the field values from your code, this may lead to unpredictable UI behavior and the applied changes will not be saved when using the **SaveAs** command.
 
 After filling the forms, you can save the document using the Save As command.  
 

@@ -181,7 +181,7 @@ End Sub
 >caption Figure 1: Using RadDragDropService
 ![scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop 001](images/scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop001.gif)
 
->note As we remove the dragged appointment,it is necessary to save the performed changes in the data source.Please refer to [Data Binding Walkthrough]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}) article.
+>tip As we remove the dragged appointment,it is necessary to save the performed changes in the data source.Please refer to [Data Binding Walkthrough]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}) article.
 >
 
 ## Drag and Drop from RadListControl to RadScheduler Using the OLE Drag and Drop

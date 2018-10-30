@@ -35,7 +35,7 @@ Select *Tools >> Generate Fluent Variation* menu item:
 
 ![tools-visual-style-builder-working-with-visual-style-builder-fluent-themes-blending 006](images/tools-visual-style-builder-fluent-themes-blending004.png) 
 
->note If you already have loaded a customized Fluent theme (but not a Fluent variation) it will remain loaded when generating a Fluent variation.
+>tip If you already have loaded a customized Fluent theme (but not a Fluent variation) it will remain loaded when generating a Fluent variation.
 
 This will open the **Fluent Blend Dialog** from which you can create a new palette or modify the selected one.
 

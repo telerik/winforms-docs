@@ -43,14 +43,14 @@ Tags generating table content:
 
 * __\<td\>__
 
->note The content of the __\<th\>__ tags will be bold, as they are treated as table headers.
+>tip The content of the __\<th\>__ tags will be bold, as they are treated as table headers.
 >
 
 Tags mapped to spans are:
         
 * __formatting tags, \<span\>, \<font\>__
 
->note Additionally, line breaks are inserted between consequent block elements ( __\<div\>__ ).
+>tip Additionally, line breaks are inserted between consequent block elements ( __\<div\>__ ).
 >
 
 ## Styling

@@ -55,7 +55,7 @@ fill.GradientStyle = Telerik.WinControls.GradientStyles.Linear
 
 {{endregion}} 
 
->note The code samples below are just a demonstration of how you can set node properties programmatically. You will probably prefer to use the Visual Style Builder to create your themes using no code.
+>tip The code samples below are just a demonstration of how you can set node properties programmatically. You will probably prefer to use the Visual Style Builder to create your themes using no code.
 >
 
 # See Also

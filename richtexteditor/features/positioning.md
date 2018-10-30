@@ -19,7 +19,7 @@ __DocumentPosition__ also redefines equality and comparison operators for more c
 
 You can manage the caret position for a specific __RadDocument__ by either accessing its __CaretPosition__    property, which is of type __DocumentPosition__, or by creating a new instance of the __DocumentPosition__  class and associating it with the desired __RadDocument__.
       
->note When using the __CaretPosition__ property you are directly managing the caret position in the __RadDocument__. By using the __DocumentPosition__ class you can create instances of several positions inside the document without changing the current caret position.
+>tip When using the __CaretPosition__ property you are directly managing the caret position in the __RadDocument__. By using the __DocumentPosition__ class you can create instances of several positions inside the document without changing the current caret position.
 >
 
 ## CaretPosition property

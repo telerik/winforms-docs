@@ -31,10 +31,10 @@ This topic demonstrates how __Contextual Tab Groups__ are created and how tabs a
 
 The __Contextual Tab Group__ is positioned over both the __Formatting__ and __Layout__ tabs and sizes to fit the sum of the lengths of both tabs.
 
->note Tabs that are associated with a Contextual Tab Group are always positioned at the end of the TabStrip.
+>tip Tabs that are associated with a Contextual Tab Group are always positioned at the end of the TabStrip.
 >
 
->note Contextual Tab Groups always extend to the sum of the lengths of the tabs associated with them.
+>tip Contextual Tab Groups always extend to the sum of the lengths of the tabs associated with them.
 >
 
 ## See Also

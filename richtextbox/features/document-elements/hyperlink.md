@@ -213,7 +213,7 @@ __ToolTip__
 
 By default hyperlinks take a fixed string as a tool tip. The default format is:
 
->note {0}
+>tip {0}
 >{1} to follow link
 >
 

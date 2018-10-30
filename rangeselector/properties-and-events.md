@@ -17,7 +17,7 @@ Here are the most important properties for changing the control appearance and b
   * __Immeadiate__: This is the default value, the chart is updated as the range selector element is being moved 
   * __Deferred__ : The chat will be updated when the range selector element is released. 
 
->note The *Deferred* update mode may be suitable for scenarios in which the chart has been loaded with extremely large data sets.
+>tip The *Deferred* update mode may be suitable for scenarios in which the chart has been loaded with extremely large data sets.
 
 >caption Figure 1: UpdateMode.Immediate
 ![rangeselector-properties-and-events 001](images/rangeselector-properties-and-events001.gif)
@@ -136,7 +136,7 @@ Me.radRangeSelector1.AssociatedControl = Me.radChartView1
 
 {{endregion}}
 
->note To take all advantages of __RadRangeSelector__ - like scales, track bar and controlling the associated control without any additional implementation, the element of associated control should implement the __IRangeSelectorElement__ interface. By design if the associated control implements the __IRangeSelectorControl__ the returned element should implement the __IRangeSelectorElement__ interface as well. For all controls that not implement the __IRangeSelectorControl__ interface the associated elements will be their RootElement.
+>tip To take all advantages of __RadRangeSelector__ - like scales, track bar and controlling the associated control without any additional implementation, the element of associated control should implement the __IRangeSelectorElement__ interface. By design if the associated control implements the __IRangeSelectorControl__ the returned element should implement the __IRangeSelectorElement__ interface as well. For all controls that not implement the __IRangeSelectorControl__ interface the associated elements will be their RootElement.
 >
 
 If you want to associate only element without control you can use the following approach:
@@ -281,7 +281,7 @@ End Sub
 
 {{endregion}}
 
->note The example above is using the the custom implementation as suggested [here]({%slug winforms/chartview-/customization/custom-rendering%}).
+>tip The example above is using the the custom implementation as suggested [here]({%slug winforms/chartview-/customization/custom-rendering%}).
 
 ## See Also
 

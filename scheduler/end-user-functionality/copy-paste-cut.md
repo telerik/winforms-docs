@@ -37,7 +37,7 @@ Copying is a pretty simple operation. After an appointment is selected, press Ct
 
 __RadScheduler__ introduces __AppointmentsCopying__ event which occurs when the scheduler has prepared appropriate data formats that represent the copy selection. This event is fired once for each supported format: *Text*, *Csv*, *ICal*. You can cancel this event if the data is not allowed to be stored to Clipboard in a specific format.
 
->note Additionally, you can use the RadScheduler.__Copy__ method in order to perform programmatically copy functionality.
+>tip Additionally, you can use the RadScheduler.__Copy__ method in order to perform programmatically copy functionality.
 >
 
 ## Pasting
@@ -80,7 +80,7 @@ End Sub
 
 You can cancel this event as well in order to prevent pasting data in some cases.
 
->note Additionally, you can use the RadScheduler. __Paste__ method in order to perform programmatically paste functionality.
+>tip Additionally, you can use the RadScheduler. __Paste__ method in order to perform programmatically paste functionality.
 >
 
 ## Cutting

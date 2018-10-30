@@ -64,7 +64,7 @@ The signature panel of RadPdfViewer detects when the imported document contains 
 >caption Figure 1: SignaturePanel showing signature status
 ![pdfviewer-digital-signature001](images/pdfviewer-digital-signature001.png)
 
->note You can use the __PdfViewerElement.AllowSignatureDialog__ property to enable/disable the dialog.
+>tip You can use the __PdfViewerElement.AllowSignatureDialog__ property to enable/disable the dialog.
 
 ### Using SignaturePropertiesDialog
 

@@ -18,9 +18,9 @@ position: 1
 
 In order to achieve the desired result the MouseMove, MouseUp, and DragEnter events need to be handled by **RadMap**. The drag operation will be started in the handler of the MouseMove event. **RadListView** needs to be subscribed to the DragEnter and DragDrop events.
 
->note This example uses the [OpenStreetMapProvider]({%slug winforms/map/providers/openstreetmapprovider%}) and utilizes the MapPin objects added to a predefined [layer]({%slug winforms/map/features/layers/overview%}).
+>tip This example uses the [OpenStreetMapProvider]({%slug winforms/map/providers/openstreetmapprovider%}) and utilizes the MapPin objects added to a predefined [layer]({%slug winforms/map/features/layers/overview%}).
 
->note RadMap allows panning out of the box. The built-in panning functionality will interfere with the custom drag and drop behavior and it needs to be disabled for the duration of the drag and drop operation.
+>tip RadMap allows panning out of the box. The built-in panning functionality will interfere with the custom drag and drop behavior and it needs to be disabled for the duration of the drag and drop operation.
 
 #### Subscribe to Events
 

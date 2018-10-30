@@ -25,7 +25,7 @@ __RadGridView__ allows data entry, data edit, and validation. The data can be ed
 
 In addition to these default editors listed above, __RadGridView__ provides behavior for editors customizations. You can create a custom editor by deriving from __BaseGridEditor__ or any existing editor if none of the standard editors meet your requirements.
 
->note You can find more information about editors in [Editors]({%slug winforms/gridview/editors/editors%}) section.
+>tip You can find more information about editors in [Editors]({%slug winforms/gridview/editors/editors%}) section.
 >
 
 # See Also

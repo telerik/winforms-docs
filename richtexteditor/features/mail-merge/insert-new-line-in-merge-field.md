@@ -46,7 +46,7 @@ radDocumentEditor.Insert(vbVerticalTab)
 
 Another option is to create a [Span]({%slug winforms/richtexteditor-/document-elements/span%}) and assign the vertical tab character to it. 
 
->note This option is suitable only when the document is still not measured. For more information on the measured and not measured states of **RadDocument**, see [this topic]({%slug winforms/richtexteditor-/document-elements/raddocument%}#specifics).
+>tip This option is suitable only when the document is still not measured. For more information on the measured and not measured states of **RadDocument**, see [this topic]({%slug winforms/richtexteditor-/document-elements/raddocument%}#specifics).
 
 #### Example 2: Create vertical tab through document model 
 

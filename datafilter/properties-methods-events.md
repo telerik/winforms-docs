@@ -71,7 +71,7 @@ The **DataFilterCriteriaElement** class also defines three static properties res
 |**PropertyDisplayNameNeeded**|Occurs when a property text is about to be displayed on the screen. Allows the developer to substitute property names with user-friendly display strings.|
 
 
->note Note that **RadDataFilter** is a derivative of **RadTreeView**. Properties, methods and events relevant for **RadTreeView** can be used in **RadDataFilter** as well.
+>tip Note that **RadDataFilter** is a derivative of **RadTreeView**. Properties, methods and events relevant for **RadTreeView** can be used in **RadDataFilter** as well.
 
 # See Also
 

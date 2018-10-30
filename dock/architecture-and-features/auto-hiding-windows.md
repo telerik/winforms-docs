@@ -38,7 +38,7 @@ However, this is just the default behavior. If you set the __AutoHidePosition__ 
 
 When a **ToolWindow** is auto-hidden, it has a default size of (200, 200). However, if you initially set a different size by the __AutoHideSize__ property, your **ToolWindow** will have a different size when it goes in auto-hidden mode. If a **ToolWindow** is auto-hidden to top, bottom, the **Height** of this size will be taken into consideration. If a **ToolWindow** is auto-hidden to left, right, the width of this size will be taken into consideration. If the user resizes an auto-hidden window, the __AutoHideSize__ property will have a new value and the programmatically set value will be lost. 
  
->note RadDock memorizes the size of an Auto-hide window set by the user at run time. I.e. when a user sets a ToolWindow to Auto-hide, then re-sizes the Auto-hide window by a mouse drag and drop operation, then docks and then sets the ToolWindow back to Auto-hide, the new Auto-hide window will have the size set by the user's mouse drag and drop operation.
+>tip RadDock memorizes the size of an Auto-hide window set by the user at run time. I.e. when a user sets a ToolWindow to Auto-hide, then re-sizes the Auto-hide window by a mouse drag and drop operation, then docks and then sets the ToolWindow back to Auto-hide, the new Auto-hide window will have the size set by the user's mouse drag and drop operation.
 >
 
 # See Also

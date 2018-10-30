@@ -87,7 +87,7 @@ If you wish to preserve the initial content of the document and insert text at d
 
 Here are some examples:
 
->note The Insert method will work after the document object model is created. Please note that the DOM will be created only after RadRichTextBox is being measured. Simply said, The insert command will not work in the form constructor.
+>tip The Insert method will work after the document object model is created. Please note that the DOM will be created only after RadRichTextBox is being measured. Simply said, The insert command will not work in the form constructor.
 >
 
 1. Inserting text in RadRichTextBox at caret position:
@@ -168,7 +168,7 @@ End Sub
 
 {{endregion}} 
 
->note Using methods from RadDocument's API to apply changes to the document clears the history stack and the undo function will not be able to restore the document before this change.
+>tip Using methods from RadDocument's API to apply changes to the document clears the history stack and the undo function will not be able to restore the document before this change.
 >
 
 ## Setting the Margins of the Document

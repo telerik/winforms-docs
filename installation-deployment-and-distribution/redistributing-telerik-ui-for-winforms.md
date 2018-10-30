@@ -91,7 +91,7 @@ Next, you should build your solution and then ILMerge the built application exec
 1. ILMerge the assemblies using the following command in the command prompt: 
             
 
->Note: This commands will work in case the application executable and the Telerik assemblies are contained in the ILMerge tool folder. In any other case, you will need to include the full path to the assemblies/executables. In addition, the Telerik assemblies that should be given as parameters, should be those referenced by your application.
+>tip: This commands will work in case the application executable and the Telerik assemblies are contained in the ILMerge tool folder. In any other case, you will need to include the full path to the assemblies/executables. In addition, the Telerik assemblies that should be given as parameters, should be those referenced by your application.
 
     ilmerge /target:winexe /out:MergedApplicationExecutable.exe ApplicationExecutable.exe TelerikCommon.dll Telerik.WinControls.UI.dll Telerik.WinControls.dll
             
@@ -129,7 +129,7 @@ Protecting Telerik UI for for WinForms requires the Telerik assemblies to be bui
 
 	![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 002](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows002.png)
 
-	>Note: If you are building the .NET4.0 version of the assemblies, you need to use the Release40 build configuration. In this case, when you add the "OEM" symbol, you need to keep the existing NET4 symbol - "OEM; NET4".
+	>tip: If you are building the .NET4.0 version of the assemblies, you need to use the Release40 build configuration. In this case, when you add the "OEM" symbol, you need to keep the existing NET4 symbol - "OEM; NET4".
 
 1. Open C:\Telerik UI for for WinForms Source\RadControl\TPF\Control\RadControl.cs in a text editor (notepad, Visual Studio etc).
             

@@ -11,7 +11,7 @@ previous_url: scheduler-drag-and-drop-drag-and-drop-from-another-control
 
 # Drag and Drop from Another Control
 
->note Similar approach is demonstrated in the *Demos, section Scheduler >> Drag&Drop.* 
+>tip Similar approach is demonstrated in the *Demos, section Scheduler >> Drag&Drop.* 
 >
 
 __RadScheduler__ supports drag and drop and it can be implemented so that appointments are dragged from another control, in our case a ListBox. It is necessary to set the __AllowDrop__ property to *true*.

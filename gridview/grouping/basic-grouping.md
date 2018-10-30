@@ -27,7 +27,7 @@ Once grouped, you can additionally sort the grid data, using the default sorting
 
 The example below allows GroupDescriptors to be added programmatically, but does not allow the user to group via drag and drop. The groups are automatically expanded.
 
->note When there are more that one groups on the same level the information in the group header row is separated by the "," character. This character is taken for the current culture settings: `Thread.CurrentThread.CurrentCulture.TextInfo.ListSeparator`.
+>tip When there are more that one groups on the same level the information in the group header row is separated by the "," character. This character is taken for the current culture settings: `Thread.CurrentThread.CurrentCulture.TextInfo.ListSeparator`.
 
 >caption Figure 1: The grid is grouped by several fields.
  

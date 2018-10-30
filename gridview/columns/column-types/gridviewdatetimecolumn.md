@@ -41,7 +41,7 @@ dateTimeColumn.FormatString = "{0:D}"
 
 {{endregion}} 
 
->note The formatting for date and time values also responds to globalization settings.
+>tip The formatting for date and time values also responds to globalization settings.
 
 {{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn2.cs region=settingCurrentCulture}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn2.vb region=settingCurrentCulture}} 

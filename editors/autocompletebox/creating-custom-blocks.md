@@ -93,7 +93,7 @@ End Sub
  
 Finally, the text property should be set:
 
->note The subscription to the event, should be introduced before setting the text of the control.
+>tip The subscription to the event, should be introduced before setting the text of the control.
 >
  
 

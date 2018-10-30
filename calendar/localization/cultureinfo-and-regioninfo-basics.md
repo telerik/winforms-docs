@@ -53,7 +53,7 @@ Me.RadCalendar1.Culture = New System.Globalization.CultureInfo("ps-AF")
 
 {{endregion}} 
 
->note There is a known issue in the .NET Framework considering the "fa-IR" culture. Please refer to the following MSDN resource for a solution: [Fixing Persian Locale for Persian Calendar and Month Names](https://code.msdn.microsoft.com/Fixing-Persian-Locale-for-6e66e044)
+>tip There is a known issue in the .NET Framework considering the "fa-IR" culture. Please refer to the following MSDN resource for a solution: [Fixing Persian Locale for Persian Calendar and Month Names](https://code.msdn.microsoft.com/Fixing-Persian-Locale-for-6e66e044)
 
 
 ## RegionInfo

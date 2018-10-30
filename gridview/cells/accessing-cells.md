@@ -13,10 +13,10 @@ previous_url: gridview-cells-accessing-cells
 
 Cells can be accessed by index or the column __Name__ property.
 
->note RadGridView uses virtualization for its visual elements. This means that only the rows that are currently visible have a visual element. When the grid is scrolled up and down the visual elements are reused. Because of the virtualization, it is safe to use the __CellElement__ only inside the __CellFormatting__ event and only for the current cell.
+>tip RadGridView uses virtualization for its visual elements. This means that only the rows that are currently visible have a visual element. When the grid is scrolled up and down the visual elements are reused. Because of the virtualization, it is safe to use the __CellElement__ only inside the __CellFormatting__ event and only for the current cell.
 >
 
->note When assigning values to several cells subsequently, the RadGridView should be placed between __BeginUpdate()__ and __EndUpdate()__ method invocations of the desired template. See section "Multiple assignments of cell values" below for more information.
+>tip When assigning values to several cells subsequently, the RadGridView should be placed between __BeginUpdate()__ and __EndUpdate()__ method invocations of the desired template. See section "Multiple assignments of cell values" below for more information.
 >
 
 

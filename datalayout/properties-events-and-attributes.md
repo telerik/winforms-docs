@@ -51,7 +51,7 @@ __RadDataLayout__ has support for several attributes that can be used to change 
 |__DisplayName__|Determines what text should be displayed in the label that is associated with the editor.|
 |__RadRangeAttribute__|Defines a range that can be used into validation process. This attribute is provided in validation events.|
 
->note The **Browsable** attribute set to *false* will make the property on which it is used not bindable. This will prevent other controls which use the [CurrencyManager](https://msdn.microsoft.com/en-us/library/system.windows.forms.currencymanager(v=vs.110).aspx) object for extracting properties to bind to such a class. A suitable solution for this scenario is to leave the property **Browsable** set to *true* and handle the **RadDataLayout**.*ItemInitializing* setting the e.Cancel property to *true* for items which need to hidden in **RadDataLayout**.  
+>tip The **Browsable** attribute set to *false* will make the property on which it is used not bindable. This will prevent other controls which use the [CurrencyManager](https://msdn.microsoft.com/en-us/library/system.windows.forms.currencymanager(v=vs.110).aspx) object for extracting properties to bind to such a class. A suitable solution for this scenario is to leave the property **Browsable** set to *true* and handle the **RadDataLayout**.*ItemInitializing* setting the e.Cancel property to *true* for items which need to hidden in **RadDataLayout**.  
 
 >caption Figure 1: Model With Attributes
 

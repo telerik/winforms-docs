@@ -19,7 +19,7 @@ previous_url: gridview-exporting-data-export-to-html
 
 This method offers excellent export performance and creates an HTML formatted file, which can be opened in a browser or MS Word.
 
->note The HTML export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
+>tip The HTML export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
 * Telerik.WinControls.Data
 * Telerik.WinControls.UI.Export>
 >

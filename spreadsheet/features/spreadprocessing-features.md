@@ -26,7 +26,7 @@ Hyperlinks enable quick access to web pages, places in the workbook or email add
 
 Additional information how to manipulate hyperlinks is available [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/hyperlink). 
 
->note The Hyperlink dialog can be triggered by the **RadSpreadsheetRibbonBar** as well. It is necessary to select the **Insert** tab and press the **Hyperlink** button.
+>tip The Hyperlink dialog can be triggered by the **RadSpreadsheetRibbonBar** as well. It is necessary to select the **Insert** tab and press the **Hyperlink** button.
 
 ## Images
 

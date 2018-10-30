@@ -30,7 +30,7 @@ You can set the ellipse path for the carousel using the Visual Studio designer.
 
 	![carousel-design-time-setting-ellipse-path-design-time 002](images/carousel-design-time-setting-ellipse-path-design-time002.png)
 
->note  __Note__ : You can arrange the points only in 2D. The Z coordinate (if needed) should be set programmatically.
+>tip  __Note__ : You can arrange the points only in 2D. The Z coordinate (if needed) should be set programmatically.
 >
 
 

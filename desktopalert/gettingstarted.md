@@ -56,7 +56,7 @@ End Sub
  
 This way you will display an alert window at the bottom right part of the screen just the same way Microsoft Outlook does.
 
->note You can also set caption text, content text etc. by using the Property Grid in the Visual Studio designer.
+>tip You can also set caption text, content text etc. by using the Property Grid in the Visual Studio designer.
 >
 	
 By default, the desktop alert will remain visible for 10 seconds. The __AutoClose__ property determines whether __RadDesktopAlert__ will disappear after the period of time defined by the __AutoCloseDelay__ property.

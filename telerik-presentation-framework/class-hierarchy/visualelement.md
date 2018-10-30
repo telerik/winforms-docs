@@ -13,7 +13,7 @@ previous_url: tpf-class-hierarchy-visualelement
 
 __VisualElement__ adds visual properties common to all elements that will be painted, e.g. back color, fore color, font, default size, smoothing mode, opacity.
 
->note 
+>tip 
 Not every element derived from VisualElement is painted to the screen. Only primitives are painted. Other elements (such as RadDropDownButtonElement) are subclasses of VisualElement so that they can be assigned color and font properties that will be inherited by elements further down in the control element tree.
 >
 

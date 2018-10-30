@@ -12,7 +12,7 @@ position: 4
 
 The GridViewCellInfo.__Style__ property gives direct access to the cell’s visual properties. It makes it possible to set styles to cells in runtime without using events like __CellFormatting__ or the __ConditionalFormattingObject__.
 
->note This approach lets you customize visual properties which are defined by the theme. All changes set this way will have a greater priority than the theme.
+>tip This approach lets you customize visual properties which are defined by the theme. All changes set this way will have a greater priority than the theme.
 >
 
 The first thing to do for using the cell’s __Style__ is to define what custom visual properties will use this cell. You can define that the cell will:  

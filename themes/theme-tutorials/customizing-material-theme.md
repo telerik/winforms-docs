@@ -44,7 +44,7 @@ The number on the right is the color ID and can be found in the links mentioned 
 
 As a foundation we are going to use the first Material theme, so we can open Material.tssp for modification. Now using the ColorBlending dialog the new theme will be ready in a dozen of steps. 
 
->note One should use the Visual Style Builder from the R3 2017 release onward as it brings major improvements in how the source and destination colors are being blended.
+>tip One should use the Visual Style Builder from the R3 2017 release onward as it brings major improvements in how the source and destination colors are being blended.
 
 Open ColorBlending dialog and use the following settings for all color modifications:
 
@@ -80,7 +80,7 @@ Open ColorBlending dialog and use the following settings for all color modificat
 
 14\. **Grid Alternating Row Color - PrimaryFocus with 51opacity(20%)(white background)**: Source – 234, 236, 246; Destination – 245, 233, 247
 
->note **RadCheckmark/RadCheckbox** uses images for its different states and the Color Blending wizard may not convert all the pixels correctly. So you can replace these images with your custom ones.
+>tip **RadCheckmark/RadCheckbox** uses images for its different states and the Color Blending wizard may not convert all the pixels correctly. So you can replace these images with your custom ones.
 
 # See Also
 

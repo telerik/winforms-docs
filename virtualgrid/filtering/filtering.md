@@ -43,7 +43,7 @@ When clicking over the filter cell, the filter text box is activated:
 
 It is necessary to handle the __FilterChanged__ event which is fired once the __FilterDescriptors__ collection is changed. In the event handler you should extract the filtered data from the external data source.
 
->note Please refer to the [Populating with data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%}) help article which demonstrates how to extract the necessary data and fill the virtual grid with data.
+>tip Please refer to the [Populating with data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%}) help article which demonstrates how to extract the necessary data and fill the virtual grid with data.
 
 The following example demonstrates how to achieve filtering functionality in __RadVirtualGrid__ filled with Northwind.Customers table:
 
@@ -306,7 +306,7 @@ End Class
 
 {{endregion}}
 
->note It is necessary to specify the __FieldName__ property for the filter cells.
+>tip It is necessary to specify the __FieldName__ property for the filter cells.
 
 # See Also
 * [Setting Filters Programmatically]({%slug winforms/virtualgrid/filtering/setting-filters-programmatically%})

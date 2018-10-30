@@ -81,7 +81,7 @@ __RadDiagram__ exposes two panning events:
 
     * A __PositionChangedRoutedEventArgs__ object that provides information regarding the current and the next position of the diagram through the __OldPosition__ and __NewPosition__ properties.
 
->note Please note that if you handle the __PreviewPan__ event, the __Pan__ event will not be fired at all.
+>tip Please note that if you handle the __PreviewPan__ event, the __Pan__ event will not be fired at all.
 >
 
 
@@ -136,7 +136,7 @@ Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10
  
 The current zoom value in a __RadDiagram__ instance is controlled through the __Zoom__ property. It represents a double value which cannot be null, infinity or NaN. Additionally, this value is coerced to be within the range defined by the __MinimumZoom__ and __MaximumZoom__ constants. The default __Zoom__ value is 1.
 
->note Please note that in the diagramming framework we talk about "zooming out" when the __Zoom__ value is less than 1. Alternatively, a __Zoom__ value greater than 1 is considered a "zoom in".
+>tip Please note that in the diagramming framework we talk about "zooming out" when the __Zoom__ value is less than 1. Alternatively, a __Zoom__ value greater than 1 is considered a "zoom in".
 >
 
 
@@ -153,7 +153,7 @@ If you need to initiate a zoom through code-behind, __RadDiagram__ provides two 
 
     * a Point value which indicates the coordinates of the point that should be used as a center of the zoom operation. Please note that if you decide to use this parameter, then you have to make sure the coordinates you provide are in the context of the current view port.
 
->note Please note that both of the parameters described above are optional.
+>tip Please note that both of the parameters described above are optional.
 > 
 
 {{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=ZoomIn}} 
@@ -178,7 +178,7 @@ Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
 
     * a Point value which indicates the coordinates of the point that should be used as a center of the zoom operation. Please note that if you decide to use this parameter, then you have to make sure the coordinates you provide are in the context of the current view port.
 
->note Please note that both of the parameters described above are optional.
+>tip Please note that both of the parameters described above are optional.
 > 
 
 {{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=ZoomOut}} 
@@ -252,5 +252,5 @@ __RadDiagram__ exposes two zooming events:
     * A __RadRoutedPropertyChangedEventArgs__ object that provides information regarding the old and the new value of the diagram zoom through the __OldValue__ and __NewValue__ properties.
                 
 
->note Please note that if you handle the __PreviewZoom__ event, the __ZoomChanged__ event will not be fired at all.
+>tip Please note that if you handle the __PreviewZoom__ event, the __ZoomChanged__ event will not be fired at all.
 >

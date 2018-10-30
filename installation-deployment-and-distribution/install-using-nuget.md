@@ -29,7 +29,7 @@ This article describes how you can install the WinForms suite using a NuGet pack
 
   ![installation-deployment-and-distribution-install-using-nuget 001](images/installation-deployment-and-distribution-install-using-nuget001.png)
 
-  >note The following article shows where you can find the downloads section [Download Product Files]({%Slug winforms/installation-deployment-and-distribution/download-product-files})
+  >tip The following article shows where you can find the downloads section [Download Product Files]({%Slug winforms/installation-deployment-and-distribution/download-product-files})
 
 1. Then you need to add packages to Visual Studio. Open the NuGet manager and then click the options button:
 

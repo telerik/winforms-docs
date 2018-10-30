@@ -45,7 +45,7 @@ Me.RadGridView1.Columns(0).DisableHTMLRendering = False
 
 {{endregion}} 
 
->note Please refer to *HTML-like Text formatting* topic in *Telerik Presentation Framework* section for the list of support tags.
+>tip Please refer to *HTML-like Text formatting* topic in *Telerik Presentation Framework* section for the list of support tags.
 >
 
 # See Also

@@ -33,7 +33,7 @@ __RadDocument__ exposes several properties that allow you to customize the layou
 
 	* __Width__ - represents the width of the page.              
 
->note The __DefaultPageLayoutSettings__ get applied only when Paged layout mode is used.
+>tip The __DefaultPageLayoutSettings__ get applied only when Paged layout mode is used.
 >
 
 
@@ -109,7 +109,7 @@ The method accept a parameter of type **SectionBreakType**. The possible values 
 
 * SectionBreakType.*EvenPage* - analogically, the next section will start on the next even page.
 
->note The distribution of the document content in sections is only visible when the document is in *Paged* layout mode. Furthermore, the sections and section breaks can be persisted in XAML, docx and RTF. If you export the document to HTML or plain text, the section breaks will be lost.
+>tip The distribution of the document content in sections is only visible when the document is in *Paged* layout mode. Furthermore, the sections and section breaks can be persisted in XAML, docx and RTF. If you export the document to HTML or plain text, the section breaks will be lost.
 >
 
 # See Also

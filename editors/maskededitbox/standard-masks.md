@@ -35,7 +35,7 @@ The table below describe the mask characters that can be used when the __MaskTyp
 |\|Escape. Escapes a mask character, turning it into a literal. "\\" is the escape sequence for a backslash.|
 |All other characters|All non-mask elements will appear as themselves within __RadMaskedEditBox__ . Literals always occupy a static position in the mask at run time, and cannot be moved or deleted by the user|
 
->note By default, when the user is typing before already typed text, the text is overridden. If the *Insert* key is pressed you can insert characters instead of replacing them.
+>tip By default, when the user is typing before already typed text, the text is overridden. If the *Insert* key is pressed you can insert characters instead of replacing them.
 >
 
 ## See Also

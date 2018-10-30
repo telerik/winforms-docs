@@ -23,7 +23,7 @@ Here is how the following __RadPropertyGrid__, looks when it is exported.
 
 ![propertygrid-export-data-spreadexport 001](images/propertygrid-export-data-spreadexport001.png)<br>![propertygrid-export-data-spreadexport 002](images/propertygrid-export-data-spreadexport002.png)
 
->note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
+>tip The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
 * Telerik.WinControls.TelerikExport
 >
 

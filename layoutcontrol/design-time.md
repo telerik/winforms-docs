@@ -35,7 +35,7 @@ This editor allows you to add items to the layout. To do this just drag and drop
 
 At design time you will be able to add and arrange any underlying controls you want. To achieve that just drag a control on the layout panel. The drag hint will show you where the control will be positioned. Once you are ready you should just drop the control in the desired position.
 
->note To position the controls in different location at least one item should be added to the layout panel. It could be an empty space item.
+>tip To position the controls in different location at least one item should be added to the layout panel. It could be an empty space item.
 >
 
 >caption Figure 3: Adding Control at Design Time

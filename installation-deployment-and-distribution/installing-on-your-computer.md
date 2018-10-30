@@ -33,7 +33,7 @@ The Telerik WinForms setup performs the following actions during the installatio
 
 * Installs Telerik UI for for WinForms Coded UI support for Visual Studio 2010 and 2012
 
->note You can download the setup from your account: [Download product files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
+>tip You can download the setup from your account: [Download product files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
 
 Please follow the steps below to install Telerik UI for for WinForms:
 

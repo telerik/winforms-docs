@@ -23,7 +23,7 @@ You can build the user interface with a __RadRibbonBar__ using a variety of diff
 
 1. Using the Images Collection Editor, add the desired images to the ImageList. For more help with this task, see [How to: Add or Remove ImageList Images with the Designer in Visual Studio](http://msdn2.microsoft.com/en-us/library/ms233674.aspx) documentation. 
 
->note A predefined list of images has been prepared for the purpose of this example.
+>tip A predefined list of images has been prepared for the purpose of this example.
 >
 
 ## Adding a Tab and a Group
@@ -95,7 +95,7 @@ With an appropriate __Image__ the __RadRibbonBar__ should look similarly:
 
 1. Find the __MaxColumns__ and __MaxRows__ properties of the __RadGalleryElement__ and set their values to 2 and 5 respectively. The result should be similar to this:
 
->note For the purpose of this demonstration Office 2007 like images for the gallery have been used.
+>tip For the purpose of this demonstration Office 2007 like images for the gallery have been used.
 >
 
 ![ribbonbar-using-different-elements-on-a-radribbonbar 005](images/ribbonbar-using-different-elements-on-a-radribbonbar005.png)

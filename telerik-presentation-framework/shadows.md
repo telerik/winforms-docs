@@ -15,7 +15,7 @@ Since R2 2017 RadControls are supporting shadows. Each element that inherits __R
 On a control level the magic happens in RootRadElement, where we are subscribing to the __Paint__ event of the current control parent and call __PaintShadowCore__ method. When the size, location, bounds or visibility of the control are changed we need to invalidate a region in parent control where the shadow is painted.
 
 
->note Even if an item has transparent background its shadow will be painted.
+>tip Even if an item has transparent background its shadow will be painted.
 
 
 The following properties can used for enabling the shadows and controlling their appearance:

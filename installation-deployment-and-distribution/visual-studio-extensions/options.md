@@ -41,7 +41,7 @@ All settings under the WinForms category affect only the Telerik UI for for WinF
 
 Configures the path where the extensions look for and store distributions.
 
->note Changing the folder path will not move existing folder contents from your previous path. Please, move your previous folder contents manually in case you still want to use them.
+>tip Changing the folder path will not move existing folder contents from your previous path. Please, move your previous folder contents manually in case you still want to use them.
 
 ## Latest version retrieval
 

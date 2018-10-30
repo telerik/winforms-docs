@@ -116,7 +116,7 @@ Me.RadDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Add(toolsPage)
 * __RadPageViewPageText__ - representing the content of the Text tab
                 
 
->note You have access to each control in every of the default content pages. Hence, you can add, remove, edit controls:
+>tip You have access to each control in every of the default content pages. Hence, you can add, remove, edit controls:
 > 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EditTabs}} 
@@ -162,7 +162,7 @@ __RadDiagram__ exposes two events that come in handy while working with the defa
 
 	* An __AdditionalContentActivatedEventArgs__ object, that gives you access to a __ContextItems__ collection. This collection of __IDiagramItem__ objects represents the items that have activated the additional content. In most cases it contains a single item - the __RadDiagramItem__ that has activated the __SettingsPane__.
 
->note Please note that you can handle this event in order to disable the __SettingsPane__ from displaying on certain __RadDiagramItems__ .
+>tip Please note that you can handle this event in order to disable the __SettingsPane__ from displaying on certain __RadDiagramItems__ .
 >
 
 

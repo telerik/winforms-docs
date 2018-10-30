@@ -98,7 +98,7 @@ Dim selectedRow As GridViewRowInfo = RadGridView1.SelectedRows(0)
 
 {{endregion}} 
 
->note The rows are added to the __SelectedRows__ collection in the same order as the order in which you have set the selected rows.
+>tip The rows are added to the __SelectedRows__ collection in the same order as the order in which you have set the selected rows.
 
 ## Selecting a single cell
 

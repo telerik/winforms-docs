@@ -21,7 +21,7 @@ You can access and modify the style for different elements in __RadClock__ by us
 
 ![clock-customizing-appearance-accessing-and-customizing-elements 001](images/clock-customizing-appearance-accessing-and-customizing-elements001.png)
 
->note The background for __RadClockElement__ and the __ArrowElement__ use images to introduce the style for a given theme. If you need to customize the arrows for example, it is necessary to apply the desired image to the respective __ArrowPrimitive__.
+>tip The background for __RadClockElement__ and the __ArrowElement__ use images to introduce the style for a given theme. If you need to customize the arrows for example, it is necessary to apply the desired image to the respective __ArrowPrimitive__.
 
 ## Programmatically
 

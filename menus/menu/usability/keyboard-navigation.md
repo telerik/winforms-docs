@@ -39,7 +39,7 @@ radMenuItem1.Text = "&New"
 
 {{endregion}} 
 
->note Mnemonics and accelerators are different features. For example, you need the accelerator Alt+F to open the file menu and the mnemonic N to invoke the event handler associated with the *New* menu item.
+>tip Mnemonics and accelerators are different features. For example, you need the accelerator Alt+F to open the file menu and the mnemonic N to invoke the event handler associated with the *New* menu item.
 >
 
 ## F10

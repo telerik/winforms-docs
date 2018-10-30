@@ -21,7 +21,7 @@ To draw a Bezier chart series you add (1 + 3 x N) items to a series.  So you ca
 
 To create a simple vertical Bezier Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Bezier__. Create a series and add four chart items with X and Y values.
 
->note The second chart series labeled "Data Points" is included to emphasize the location of the end and control points in the Bezier series.
+>tip The second chart series labeled "Data Points" is included to emphasize the location of the end and control points in the Bezier series.
 >
 
 >caption 

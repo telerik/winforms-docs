@@ -21,7 +21,7 @@ Extensible Markup Language for Analysis (XMLA) is a standard that allows client 
 
 **RadPivotGrid** provides XMLA access to OLAP data sources. You can use the **XmlaDataProvider** in your application to connect to your OLAP data source.
 
->note The **XmlaDataProvider** is only available in the .NET 4.0 version of Telerik.WinControls.PivotGrid.dll
+>tip The **XmlaDataProvider** is only available in the .NET 4.0 version of Telerik.WinControls.PivotGrid.dll
 >
 
 **XmlaDataProvider** has several important properties that have to be defined: 
@@ -76,7 +76,7 @@ You can set credentials if your connection requires username and password. The C
 
 ## Defining Group Descriptions
 
->note When initializing the XmlaDataProvider in the code behind it is a good idea to wrap all modifications in **BeginInit/EndInit** section. This will cause only one refresh of the data provider and it will be when the EndInit is called. If you are applying only modifications (more than one) on already initialized **XmlaDataProvider** you should use the **DeferRefresh** method which will cause delay of the Refresh and this way all your changes will be applied simultaneously.
+>tip When initializing the XmlaDataProvider in the code behind it is a good idea to wrap all modifications in **BeginInit/EndInit** section. This will cause only one refresh of the data provider and it will be when the EndInit is called. If you are applying only modifications (more than one) on already initialized **XmlaDataProvider** you should use the **DeferRefresh** method which will cause delay of the Refresh and this way all your changes will be applied simultaneously.
 >
 
 The **XmlaDataProvider** is using three collections that are reflecting the visual representation of RadPivotGrid and RadPivotFieldList:
@@ -91,9 +91,9 @@ The **XmlaGroupDescription** is used to define the data that will show as Rows a
 
 The **XmlaAggregateDescription** is used to define data that has to be aggregated and that will show as Cells in RadPivotGrid. You should set the MemberName property.
 
->note The MemberName property must have the following syntax:
+>tip The MemberName property must have the following syntax:
 * For XmlaAggregateDescription: "[Measures].[MEASURE_NAME]".
-* For XmlaGroupDescription  there are two ways (based on the data that will be used): "[DIMENSION].[HIERARCHY]" or "[SET_NAME]".<br>Note that the brackets are mandatory.
+* For XmlaGroupDescription  there are two ways (based on the data that will be used): "[DIMENSION].[HIERARCHY]" or "[SET_NAME]".<br>tip that the brackets are mandatory.
 >
 
 Here is how to define these decriptors:

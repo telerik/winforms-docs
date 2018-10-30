@@ -67,7 +67,7 @@ pdfFormatProvider.ExportSettings = pdfExportSettings
 
 {{endregion}}
 
->note __Pdf import__ is currently __not__ supported, so there are no import settings.
+>tip __Pdf import__ is currently __not__ supported, so there are no import settings.
 
 ## See Also
 

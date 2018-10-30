@@ -23,7 +23,7 @@ You can control several aspects of the overall __RadRibbonBar__ presentation by 
 
 ![ribbonbar-getting-started-customizing-radribbonbar 002](images/ribbonbar-getting-started-customizing-radribbonbar002.png)
 
->note The Expanded property also indicates whether the Ribbon Bar is expanded or collapsed. For instance, the end-user can collapse the control by double-clicking on any of the tabs
+>tip The Expanded property also indicates whether the Ribbon Bar is expanded or collapsed. For instance, the end-user can collapse the control by double-clicking on any of the tabs
 >
 
 * The __ShowExpandButton__ property controls whether the expand/collapse button will shown in RadRibbonBar. Set this property to __True__ to show the button.
@@ -38,7 +38,7 @@ You can control several aspects of the overall __RadRibbonBar__ presentation by 
 * 
 ![ribbonbar-getting-started-customizing-radribbonbar 005](images/ribbonbar-getting-started-customizing-radribbonbar005.png)
 
->note The size of the Start Button is determined by the size of the image set.
+>tip The size of the Start Button is determined by the size of the image set.
 
 * The __Text__ property determines the text which is displayed in the Ribbon Bar's caption.
 

@@ -57,7 +57,7 @@ agendaView = Me.radScheduler1.GetAgendaView()
 
 {{endregion}} 
 
->note This method returns *null* if the active view of the **RadScheduler** is not **SchedulerAgendaView**.
+>tip This method returns *null* if the active view of the **RadScheduler** is not **SchedulerAgendaView**.
 
 ## Get the Content Grid
 

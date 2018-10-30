@@ -19,7 +19,7 @@ In this article we are going to demonstrate how to create a new theme for the Ra
 
 Let’s start by opening the Visual Style Builder with the Windows 7 theme:
 
->note The Following article shows how you can load the predefined themes: [Loadin Predefined Themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
+>tip The Following article shows how you can load the predefined themes: [Loadin Predefined Themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%})
 
 ![tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 001](images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar001.png)
 
@@ -45,7 +45,7 @@ You will see that the RadRibbonBarElement and RadRibbonBarElement.IsRibbonFormAc
 
 ![tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar 004](images/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar004.png)
 
->note The RadRibbonBarElement.IsRibbonFormActive state is applied to the RadRibbonBar control when it is in a RadRibbonForm and the form is active. Otherwise the RadRibbonBarElement state is applied since it is the default state.
+>tip The RadRibbonBarElement.IsRibbonFormActive state is applied to the RadRibbonBar control when it is in a RadRibbonForm and the form is active. Otherwise the RadRibbonBarElement state is applied since it is the default state.
 >
 
 

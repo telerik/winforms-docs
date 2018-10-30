@@ -15,7 +15,7 @@ previous_url: spellchecker-dictionaries
 
 ## Loading a custom dictionary
 
->note To access the **RadSpellChecker** related types, you need to include the __Telerik.WinControls.SpellChecker.Proofing__ namespace
+>tip To access the **RadSpellChecker** related types, you need to include the __Telerik.WinControls.SpellChecker.Proofing__ namespace
 >
 
 1. Let's say that you have chosen one of the dictionary files provided in [this article](http://www.telerik.com/community/code-library/winforms/localization-providers/dictionaries-for-radspellchecker.aspx), for example, the German (Germany) (de-DE) dictionary.

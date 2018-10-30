@@ -33,6 +33,6 @@ This article describes the inner structure and organization of the elements whic
 1. __ToggleSwitchPartElement__: visual representation of the RadToggleSwitchElement.__OffElement__.
             
 
->note Depending on the __Value__ only one of the __ToggleSwitchPartElement__ s is shown.
+>tip Depending on the __Value__ only one of the __ToggleSwitchPartElement__ s is shown.
 >
 

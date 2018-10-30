@@ -40,7 +40,7 @@ previous_url: /devtools/winforms/desktopalert/desktopalert-customizations
 |__OptionItems__|Gets the collection that holds the option items added to the alert's options button.|
 |__Popup__|Gets an instance of the __DesktopAlertPopup__ that represents the pop up of the desktop alert.|
 
->note Since R1 2017 **RadDesktopAlert** supports auto sizing. Hence, if the **AutoSize** property is set to *true* and the alert's content requires more space, **RadDesktopAlert** will be automatically resized to fit the text.
+>tip Since R1 2017 **RadDesktopAlert** supports auto sizing. Hence, if the **AutoSize** property is set to *true* and the alert's content requires more space, **RadDesktopAlert** will be automatically resized to fit the text.
 
 ![desktopalert-properties-methods-events 001](images/desktopalert-properties-methods-events001.png)
  

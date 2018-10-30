@@ -161,7 +161,7 @@ End If
 
 
 
->note  __RadDiagramRibbonBar__ introduces UI for save to XML and load from XML functionality. In the code behind you can use the DiagramElement. __Load__ and DiagramElement. __Save__ methods.
+>tip  __RadDiagramRibbonBar__ introduces UI for save to XML and load from XML functionality. In the code behind you can use the DiagramElement. __Load__ and DiagramElement. __Save__ methods.
 >
 
 

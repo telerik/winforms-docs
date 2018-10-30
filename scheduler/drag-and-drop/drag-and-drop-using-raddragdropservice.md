@@ -220,7 +220,7 @@ End Sub
 
 {{endregion}} 
 
->note The start date of the created appointment is in correspondence with the cell where the row is dropped. The appointment’s duration is relevant to the original duration.
+>tip The start date of the created appointment is in correspondence with the cell where the row is dropped. The appointment’s duration is relevant to the original duration.
 >
 
 >caption Figure 1: Drag and Drop from RadGridView to RadScheduler

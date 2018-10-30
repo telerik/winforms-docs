@@ -38,7 +38,7 @@ You can find in the table below all available filter operators for the common ty
 |DateTime|Equals, Not equal to, Greater than, Less than, Greater than or equal to, Less than or equal to, Is null, Is not null|
 |Bool|Equals, Not equal to, Is null, Is not null|
 
->note **RadDataFilter** also exposes the **PropertyDisplayNameNeeded** event which allows a user-friendly name to be specified instead of the default names which are extracted from the fields. 
+>tip **RadDataFilter** also exposes the **PropertyDisplayNameNeeded** event which allows a user-friendly name to be specified instead of the default names which are extracted from the fields. 
 
 The following article shows how you can manually add __DataFilterDescriptorItem__: [Unbound Mode]({%slug winforms/datafilter/populating-with-data/unbound-mode%})
 

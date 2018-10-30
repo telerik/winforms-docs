@@ -13,7 +13,7 @@ previous_url: gridview-context-menus-conditional-custom-context-menus
 
 Applications may need to provide specific individual context menus depending on the element that was clicked. Context menus make a great amount of functionality available without burdening the user with additional screen transitions or extra controls on the screen. The example below demonstrates how to dynamically add different custom context menus, depending on the part of the grid that was clicked.
 
->note To set a custom context menu to appear every time the user right-clicks the __RadGridView__, regardless of the element of the control they click, see [Custom Context Menus]({%slug winforms/gridview/context-menus/custom-context-menus%}).
+>tip To set a custom context menu to appear every time the user right-clicks the __RadGridView__, regardless of the element of the control they click, see [Custom Context Menus]({%slug winforms/gridview/context-menus/custom-context-menus%}).
 >
 
 ## Example

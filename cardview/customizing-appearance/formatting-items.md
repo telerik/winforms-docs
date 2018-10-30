@@ -12,7 +12,7 @@ position: 0
 
 Items appearance in __RadCardView__ can be customized by making use of the __CardViewItemFormatting__ event. The following example, demonstrates how you can change the color of an item which is being selected.
 
->note By using this event to customize the items appearance, you should always provide an else clause,  where you reset the appearance settings which you have introduced. This is necessary since __RadCardView__ uses data virtualization, which might lead to unpredicted appearance results when items are being reused.
+>tip By using this event to customize the items appearance, you should always provide an else clause,  where you reset the appearance settings which you have introduced. This is necessary since __RadCardView__ uses data virtualization, which might lead to unpredicted appearance results when items are being reused.
 
 ## Formatting the Visual Item
 

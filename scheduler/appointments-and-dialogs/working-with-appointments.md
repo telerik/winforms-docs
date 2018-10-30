@@ -64,7 +64,7 @@ Me.RadScheduler1.Appointments.Add(appointment)
 	
 * To extend/replace the __Statuses__ collection, use the __AppointmentStatusInfo__ class:            
 
->note Make sure that the IDs of the statues are unique. It is good to add a new status with an ID bigger than the last filled status.
+>tip Make sure that the IDs of the statues are unique. It is good to add a new status with an ID bigger than the last filled status.
 
 #### Appointment Status
 
@@ -109,7 +109,7 @@ Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple,
 * To extend/replace the __Backgrounds__ collection, use the __AppointmentBackgroundInfo__ class:
             
 
->note Make sure that the IDs of the Backgrounds are unique. It is good to add a new status with an ID bigger than the last filled status.
+>tip Make sure that the IDs of the Backgrounds are unique. It is good to add a new status with an ID bigger than the last filled status.
 >
 
 #### Appointment Background

@@ -45,7 +45,7 @@ radMap1.Providers.Add(provider)
 
 {{endregion}} 
 
->note The __FileFormat__ property specifies what is the exact format of the image files stored in the local folder. The parameters needed are the tile X *{0}* and Y *{1}* numbers and the Zoom level *{2}*. In the code snippet above, each file image's name is built by using x,y,z values: "os_X_Y_Z.png".
+>tip The __FileFormat__ property specifies what is the exact format of the image files stored in the local folder. The parameters needed are the tile X *{0}* and Y *{1}* numbers and the Zoom level *{2}*. In the code snippet above, each file image's name is built by using x,y,z values: "os_X_Y_Z.png".
 
 # Properties
 

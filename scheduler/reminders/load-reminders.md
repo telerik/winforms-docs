@@ -29,7 +29,7 @@ Me.radScheduler1.SaveReminders(filePath)
 
 {{endregion}} 
 
->note When you load reminders you should first have the appointments loaded in __RadScheduler__ so the load mechanism can identify them and restore their reminders.
+>tip When you load reminders you should first have the appointments loaded in __RadScheduler__ so the load mechanism can identify them and restore their reminders.
 >
 
 You can load saved reminders into __RadScheduler__ is by calling the __LoadReminders__ method:

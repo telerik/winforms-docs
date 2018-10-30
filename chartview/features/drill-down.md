@@ -172,7 +172,7 @@ End Sub
 >important If your chart is being oriented horizontally, please make sure that in the **Drill** event you are setting the correct axes as **First** and **Second**. In the example above, for a horizontally oriented view, the horizontal axis should be set as **Second** and the vertical axis should be set as **First**. 
 >
 
->note The navigation element’s text is taken from __TitleElement.Text__ property by default, so every time you drill, you have to change this text accordingly. If this text is empty, it will be taken from the __RadChartView.View.ViewName__ property.
+>tip The navigation element’s text is taken from __TitleElement.Text__ property by default, so every time you drill, you have to change this text accordingly. If this text is empty, it will be taken from the __RadChartView.View.ViewName__ property.
 >
 
 To make the example complete you should make few more steps:
@@ -411,7 +411,7 @@ End Function
 
 {{endregion}} 
  
->note Note that the data is loaded from external files. These files contain dates and values which are parsed and stored in out DrillDownDataInfo class objects. The files are included in __Telerik UI for for WinForms__ suite (navigate to *Telerik\UI for WinForms Q3 2013\Examples\QuickStart\Resources* ).
+>tip Note that the data is loaded from external files. These files contain dates and values which are parsed and stored in out DrillDownDataInfo class objects. The files are included in __Telerik UI for for WinForms__ suite (navigate to *Telerik\UI for WinForms Q3 2013\Examples\QuickStart\Resources* ).
 >
 
 3\. Finally you should initialize the chart by adding a series to it. Also the corresponding axes should be added. 

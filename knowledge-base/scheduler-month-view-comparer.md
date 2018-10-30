@@ -41,7 +41,7 @@ You can control how the appointments are ordered in the [Month View]({%slug winf
 
 Then, set the SchedulerMonthViewElement..MonthViewAreaElement.**AppointmentsComparer** property to your custom comparer.
 
->note Additional information about the **IComparer<T&gt; Interface** is available in [this](https://msdn.microsoft.com/en-us/library/8ehhxeaf(v=vs.110).aspx) MSDN article.
+>tip Additional information about the **IComparer<T&gt; Interface** is available in [this](https://msdn.microsoft.com/en-us/library/8ehhxeaf(v=vs.110).aspx) MSDN article.
 
 The following code snippet demonstrates how to order the appointments alphabetically considering their subject:
 
@@ -101,7 +101,7 @@ End Class
 {{endregion}} 
 
 
->note A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/Scheduler/SchedulerMonthViewComparer).
+>tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/Scheduler/SchedulerMonthViewComparer).
 
 # See Also
 

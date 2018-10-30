@@ -19,7 +19,7 @@ Tri-state check boxes in addition to checked and unchecked states also have a "i
 
 ![treeview-working-with-nodes-using-checkboxes 001](images/treeview-working-with-nodes-using-checkboxes001.png)
 
->note When __TriStateMode__ is set to true, the __CheckBoxes__ property is also set to true automatically.
+>tip When __TriStateMode__ is set to true, the __CheckBoxes__ property is also set to true automatically.
 >
 
 

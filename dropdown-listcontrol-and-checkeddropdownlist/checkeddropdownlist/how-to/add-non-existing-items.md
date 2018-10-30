@@ -67,7 +67,7 @@ End Sub
 
 {{endregion}} 
 
->note In order to make the custom text a valid token, it is necessary to enter the delimeter which is __;__ by default.
+>tip In order to make the custom text a valid token, it is necessary to enter the delimeter which is __;__ by default.
 
 >caption Figure 1: Tokens Validating
 

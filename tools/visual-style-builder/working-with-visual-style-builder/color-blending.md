@@ -19,7 +19,7 @@ Visual Style Builder provides a color blending functionality making it easy to c
 |----|----|
 ![tools-visual-style-builder-working-with-visual-style-builder-color-blending 001](images/tools-visual-style-builder-working-with-visual-style-builder-color-blending001.png)|![tools-visual-style-builder-working-with-visual-style-builder-color-blending 002](images/tools-visual-style-builder-working-with-visual-style-builder-color-blending002.png)|
 
->note In order to access the ColorBlendDialog, you should open Visual Style Builder, select the Tools menu item and click the Blend Color item.
+>tip In order to access the ColorBlendDialog, you should open Visual Style Builder, select the Tools menu item and click the Blend Color item.
 >
 
 ## Color Settings

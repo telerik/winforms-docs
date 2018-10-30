@@ -56,7 +56,7 @@ Next i
 
 {{endregion}} 
 
->note You can add controls by drag and drop at design time as well.
+>tip You can add controls by drag and drop at design time as well.
 >
 
 ![track-and-status-controls-scroll-bar-getting-started 004](images/track-and-status-controls-scroll-bar-getting-started004.png)

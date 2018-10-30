@@ -77,7 +77,7 @@ In order to modify it, you can change some or all of the following properties:
 * __PageSize__ - controls the size of the DiagramElement.__BackgroundPageGrid__.
             
 
->note By default, the __PageSize__ property is set to *Size(1092, 763)* . Note that the default printer may have different page size applied.
+>tip By default, the __PageSize__ property is set to *Size(1092, 763)* . Note that the default printer may have different page size applied.
 >
 
 

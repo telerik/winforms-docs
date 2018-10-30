@@ -28,7 +28,7 @@ Click the ellipses in the `Property Window` to edit the __SelecteDates DateTime_
 
 * Click cancel to close the dialog without persisting your changes. Click the OK button to save your changes and close the dialog. 
 
->note If you close the DateTime Collection Editor, reopen and see that only the last date has persisted in the collection, verify that __AllowMultipleSelect__ is set to true. If __AllowMultipleSelect__ is *false* the expected behavior is that only the last date in the collection is used.
+>tip If you close the DateTime Collection Editor, reopen and see that only the last date has persisted in the collection, verify that __AllowMultipleSelect__ is set to true. If __AllowMultipleSelect__ is *false* the expected behavior is that only the last date in the collection is used.
 >
 
 >caption Figure 1: Add selected dates.

@@ -25,7 +25,7 @@ The process of customizing the PageViewMode.*Backstage* mode of **RadPageView** 
 
 All customizations are possible both through code and by creating/modifying a theme in [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}) except the customization of the items (**RadPageViewPage** items or simply called tabs) since they use [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%}) for their appearance.
       
->note The items in PageViewMode.*Backstage* can be styled only through [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}), since they use the [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%}) functionality of our Telerik Presentation Framework in order to achieve their default view.
+>tip The items in PageViewMode.*Backstage* can be styled only through [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}), since they use the [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%}) functionality of our Telerik Presentation Framework in order to achieve their default view.
 >
 
 ## Customizing the content area

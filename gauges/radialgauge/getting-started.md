@@ -20,7 +20,7 @@ When you drag a __RadRadialGauge__ from the Toolbox and drop it onto the form, t
 >caption Figure 1: Gallery Types
 ![radialgauge-getting-started 001](images/radialgauge-getting-started001.png)
 
->note If you do not choose a gauge's style and just close the gallery, an empty __RadRadialGauge__ will be created.
+>tip If you do not choose a gauge's style and just close the gallery, an empty __RadRadialGauge__ will be created.
 >
 
 You can change the gauge's style via the Smart tag's option *Open Gallery* as well.

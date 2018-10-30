@@ -13,7 +13,7 @@ previous_url: diagram-diagram-items-shapes
 
 This tutorial will walk you through the functionality and the main features of __RadDiagramShape__.
 
->note Before proceeding with this topic, it is recommended to get familiar with the [visual structure]({%slug winforms/diagram/structure%}) of the __RadDiagram__ .
+>tip Before proceeding with this topic, it is recommended to get familiar with the [visual structure]({%slug winforms/diagram/structure%}) of the __RadDiagram__ .
 >
 
 ## RadDiagramShape

@@ -267,7 +267,7 @@ End Class
 
 {{endregion}} 
 
->note A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/BoundGridReorderRows).
+>tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/BoundGridReorderRows).
 
 # See Also
 

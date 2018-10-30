@@ -51,7 +51,7 @@ The RadChart __PlotArea__ property has sub properties __XAxis__, __YAxis__ and
 
 * __TextAppearance__ handles the axis item label text, most notably TextAppearance.TextProperties controls font properties and color.
 
->note Axis properties can be set from the Properties Window of Visual Studio, in the XML configuration file, or through the API. Properties for the X and Y axis are identical except where noted.
+>tip Axis properties can be set from the Properties Window of Visual Studio, in the XML configuration file, or through the API. Properties for the X and Y axis are identical except where noted.
 >
 
 

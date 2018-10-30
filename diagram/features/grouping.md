@@ -140,7 +140,7 @@ Below you can see how the grouping works:
 
 ![diagram-features-grouping 001](images/diagram-features-grouping001.gif)
 
->note The shapes' positions are not changed after grouping. If you click shape 3, this selects every odd shape. Dragging a single shape from group, drags the whole group.
+>tip The shapes' positions are not changed after grouping. If you click shape 3, this selects every odd shape. Dragging a single shape from group, drags the whole group.
 >
 
 
@@ -225,7 +225,7 @@ Dim parentGroup As IGroup = Me.RadDiagram1.Group("1-2-3-4", groupA, groupB)
 Below you can see how consecutive clicks on a shape reflects the selection of groups. First click selects the outermost (the biggest group), second click selects the smaller group and the third selects only the shape.The forth click will select the biggest group and so on.
         
 
->note If you need to select particular items without selecting the whole group, you can use Rectangular Selection.
+>tip If you need to select particular items without selecting the whole group, you can use Rectangular Selection.
 >
 
 
@@ -250,7 +250,7 @@ Me.RadDiagram1.Group("1-2", Me.RadDiagram1.Shapes(1), Me.RadDiagram1.Shapes(2))
  
 This will create two separate groups - "1-2-3-4" with items {Shapes[3], Shapes[4]} and "1-2" with items {Shapes[1], Shapes[2]}.
 
->note Creating a parent group then creating its subgroup is not possible.
+>tip Creating a parent group then creating its subgroup is not possible.
 >
 
 

@@ -13,7 +13,7 @@ previous_url: scheduler-appearance-formatting-appointments
 
 Appointments appearance in __RadScheduler__ can be customized using the __AppointmentFormatting__ event.
 
->note Appointment elements are created only for the currently visible cells and are being reused when scrolling or navigating backwards/forwards in the __RadScheduler__ . In order to prevent applying the formatting to other appointment elements, all styles should be reset for the rest of the appointment elements.
+>tip Appointment elements are created only for the currently visible cells and are being reused when scrolling or navigating backwards/forwards in the __RadScheduler__ . In order to prevent applying the formatting to other appointment elements, all styles should be reset for the rest of the appointment elements.
 >
 
 The code snippet below demonstrates how to change the font, fore color, border color and text alignment for the selected appointment element: 

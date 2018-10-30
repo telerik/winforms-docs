@@ -52,9 +52,9 @@ The available properties to tweak the search experience and performance and how 
 |**CloseOnEscape**|Gets or sets a value indicating whether to close the search row when escape key is pressed.|
 |**IsSearchAsync**|Gets or sets a value indicating whether the search will be performed on a background thread [true] or on the main thread [false].|
 
->note Pressing `Ctrl`+`F` will show the search row if it is hidden. The `Esc` key will close the search row.
+>tip Pressing `Ctrl`+`F` will show the search row if it is hidden. The `Esc` key will close the search row.
 
->note The **ContextMenuOpening** event is fired when the settings drop down is about to be shown. The ContextMenuOpeningEventArgs.**ContextMenuProvider** is the **GridSearchCellElement** in this case.
+>tip The **ContextMenuOpening** event is fired when the settings drop down is about to be shown. The ContextMenuOpeningEventArgs.**ContextMenuProvider** is the **GridSearchCellElement** in this case.
 
 To change the highlight color you should use the __HighlightColor__ property of the TableElement.
 

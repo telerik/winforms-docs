@@ -35,7 +35,7 @@ The example control will contain a filled area and a centered text primitive. 
 
 1. Replace the MyPanelElement.cs code with the code below.
 
->note Notice in the code below:
+>tip Notice in the code below:
 * MyPanelElement descends from RadItem so that it can be used in the designer.
 * In the CreateChildElements method the Class property of each primitive is assigned. This allows Telerik Presentation Foundation to apply themes to specific parts of the control.
 * In the CreateChildElements method the TextPrimitive Text property is bound to the CurrentTimeProperty.
@@ -161,7 +161,7 @@ End Class
 
 1. Replace the MyPanel.cs code with the code below.
 
->note Notice in the code below:
+>tip Notice in the code below:
 >
 * MyPanel descends from RadControl.
 * The PanelElement property surfaces the underlying element for general purpose uses. In this example the PanelElement property is used in the theme designer.

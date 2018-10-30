@@ -81,7 +81,7 @@ Along with text, you can insert several fields in a header or footer as shown in
 
 7. **Insert Sheet Name**: Allows you to insert a Sheet name field. This field is evaluated as the Sheet Name property value.
 
->note You can format the text of each section using the *Format Text* button.
+>tip You can format the text of each section using the *Format Text* button.
 
 ## See Also
 

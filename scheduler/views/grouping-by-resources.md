@@ -249,7 +249,7 @@ CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).S
 
 When grouped by resources the type of the RadScheduler.__ViewElement__ is a descendant of the __SchedulerViewGroupedByResourceElement__ class. This element is built of descendants of the base __SchedulerViewElement__ class and their count is determined by the count of the resources per view. The exact type of the child __SchedulerViewElement__ instances is determined by state of the currently chosen __SchedulerViewType__.
 
->note Each of the child __SchedulerViewElement__ objects has a single associated resource when the control is grouped by resources.
+>tip Each of the child __SchedulerViewElement__ objects has a single associated resource when the control is grouped by resources.
 
 The example below demonstrates how each of the child view elements can be accessed, and has its own settings for a particular resource.
 
@@ -383,7 +383,7 @@ End Sub
 
 {{endregion}} 
 
->note Due to the UI virtualization the logic for accessing a particular view element associated with a resource needs to reapplied when the current resource or selected view type changes. This can be performed in the handlers of the __ActiveViewChanged__ and __ResourceStartIndexChanged__ events.
+>tip Due to the UI virtualization the logic for accessing a particular view element associated with a resource needs to reapplied when the current resource or selected view type changes. This can be performed in the handlers of the __ActiveViewChanged__ and __ResourceStartIndexChanged__ events.
 
 ## Grouping By Resources In Different Views
 

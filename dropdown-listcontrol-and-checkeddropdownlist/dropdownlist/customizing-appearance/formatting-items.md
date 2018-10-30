@@ -16,7 +16,7 @@ previous_url: dropdown-and-listcontrol-dropdownlist-formatting-items
 Items appearance in __RadDropDownList__ can be customized by making use of the __VisualListItemFormatting__ event. The following example demonstrates how you can change the color of an item which is being selected.
         
 
->note By using this event to customize the items appearance, you should always provide an *else* clause, where you reset the appearance settings which you have introduced. This is necessary since __RadDropDownList__ uses data virtualization, which might lead to unpredicted appearance results when items are being reused.
+>tip By using this event to customize the items appearance, you should always provide an *else* clause, where you reset the appearance settings which you have introduced. This is necessary since __RadDropDownList__ uses data virtualization, which might lead to unpredicted appearance results when items are being reused.
 
 >caption Figure 1: Formatting items in drop down
 
@@ -107,7 +107,7 @@ End Sub
 {{endregion}} 
 
 
->note Here we do not reset the style because we do want the Font for all items to be changed not only on certain one.
+>tip Here we do not reset the style because we do want the Font for all items to be changed not only on certain one.
 
 >caption Figure 2: Formatting auto-complete items
 

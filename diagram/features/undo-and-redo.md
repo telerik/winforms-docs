@@ -61,7 +61,7 @@ End Sub
 
 Telerik Diagramming Framework exposes a set of commands that allow you to easily implement __RadDiagram__ interaction logic in MVVM solutions. In order to trigger the Undo/Redo functionality you can use the __DiagramCommands.Undo__ and __DiagramCommands.Redo__ commands. Please keep in mind that in order to use those commands for reverting back and forward __RadDiagram__ operations, you need to explicitly set the diagram as the target of the commands.
 
->note For a full list of the __DiagramCommands__ , please refer to the [Commands]({%slug winforms/diagram/features/commands%}) tutorial.
+>tip For a full list of the __DiagramCommands__ , please refer to the [Commands]({%slug winforms/diagram/features/commands%}) tutorial.
 >
  
 

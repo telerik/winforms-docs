@@ -51,6 +51,6 @@ Minor releases from different major releases
         Result: R3 2011 SP1 and R1 2012 SP1 are installed on the machine
                 
 
->note Part of the Telerik UI for for WinForms are the Visual Studio Extensions. Since the Visual Studio Extensions integrate into the Visual Studio IDE they don't support parallel versions. When newer version is installed regardless of its type (major/minor) the Visual Studio Extensions get updated to the newer version.
+>tip Part of the Telerik UI for for WinForms are the Visual Studio Extensions. Since the Visual Studio Extensions integrate into the Visual Studio IDE they don't support parallel versions. When newer version is installed regardless of its type (major/minor) the Visual Studio Extensions get updated to the newer version.
 >
 

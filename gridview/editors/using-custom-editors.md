@@ -201,7 +201,7 @@ End Sub
 {{endregion}} 
 
 
->note You can find a working version of this sample in our Demo application ( *GridView -> Custom Editors* )
+>tip You can find a working version of this sample in our Demo application ( *GridView -> Custom Editors* )
 >
 
 # See Also

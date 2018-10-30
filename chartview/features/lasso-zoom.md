@@ -120,7 +120,7 @@ End Sub
 
 Using this approach you can zoom any area in the chart using the 0-100 percentage scale.
 
->note The controllers added in **RadChartView** are invoked in the order at which they have been added. In case a **LassoZoomController** is to be used together with a **LassoSelectionController**, the selection controller needs to be added first. 
+>tip The controllers added in **RadChartView** are invoked in the order at which they have been added. In case a **LassoZoomController** is to be used together with a **LassoSelectionController**, the selection controller needs to be added first. 
 
 # See Also
 

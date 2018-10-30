@@ -17,7 +17,7 @@ Much like Microsoft Outlook, __RadScheduler__ for WinForms offers several ways o
 
 * By using the context menu.
 
->note You can prohibit end-users from creating, moving, resizing, and copying scheduled appointments.
+>tip You can prohibit end-users from creating, moving, resizing, and copying scheduled appointments.
 >
 
 ## Adding an Appointment by Double-clicking on the Scheduler Surface

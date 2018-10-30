@@ -21,7 +21,7 @@ however, is to optimize the performance when interacting with large amounts of d
 
 You attach the RadGridView control to a cache that you manage, and your code controls when data rows are pushed and pulled. To keep the memory footprint small, the cache should be similar in size to the number of rows currently displayed. When the user scrolls new rows into view, your code requests new data from the cache and optionally flushes old data from memory.
 
->note The following data operations are not supported in Virtual Mode:
+>tip The following data operations are not supported in Virtual Mode:
 * Grouping
 * Sorting
 * Filtering
@@ -119,7 +119,7 @@ the __VirtualMode__ property is set to *true*):
 | __CellValueNeeded__ |Used by the control to retrieve a cell value from the data cache for display. This event occurs only for cells in unbound columns.
 | __CellValuePushed__ |Used by the control to commit user input for a cell to the data cache. This event occurs only for cells in unbound columns.Call the __UpdateCellValue__ method when changing a cached value outside of a __CellValuePushed__ event handler to ensure that the current value is displayed in the control and to apply any automatic sizing modes currently in effect.|
 
->note When implementing the __CellValueNeeded__ event you should have in mind that the __ColumnIndex__ parameter depends on the current order of the columns as set by the user – reordering columns would change the column index.
+>tip When implementing the __CellValueNeeded__ event you should have in mind that the __ColumnIndex__ parameter depends on the current order of the columns as set by the user – reordering columns would change the column index.
 >
 
 # See Also

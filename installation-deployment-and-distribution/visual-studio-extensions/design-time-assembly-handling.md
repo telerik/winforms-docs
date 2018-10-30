@@ -39,7 +39,7 @@ When the Telerik Project Wizard offers you available distributions to choose it 
 
 ![installation-deployment-and-distribution-vsx-design-time-assembly-handling 002](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling002.png)
 
->note __Elevated privileges__ are required to add an assembly to the GAC. In case your machine has __User Account Control__ enabled a permission dialog will appear later in the wizard and must be confirmed.
+>tip __Elevated privileges__ are required to add an assembly to the GAC. In case your machine has __User Account Control__ enabled a permission dialog will appear later in the wizard and must be confirmed.
 >  
 
 ##  Location of Telerik.WinControls.UI.Design assembly

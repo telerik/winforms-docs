@@ -127,7 +127,7 @@ To specify a file on the disk you have to specify the disk path e.g. src="C:\som
 You can also use some tags that are not present in HTML but are currently supported by the TextPrimitive.
         
 
->note please refer to the[RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})article about the list of supported tags; *font* , *color* and *size* tags are not supported by RadMarkupDialog, but can be rendered by TextPrimitive.
+>tip please refer to the[RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})article about the list of supported tags; *font* , *color* and *size* tags are not supported by RadMarkupDialog, but can be rendered by TextPrimitive.
 >
 
 You can use \<size=[+|-]value\> to set font size use, and __\<br\>__ to create new line feed. To set bold, underline, and italic text use the corresponding opening and closing tags. Font family is set through __\<font=Family\>__. 

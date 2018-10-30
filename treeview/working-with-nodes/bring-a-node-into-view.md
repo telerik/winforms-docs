@@ -33,7 +33,7 @@ RadTreeView1.BringIntoView(lastRootNode.Nodes(lastRootNode.Nodes.Count - 1))
 >important The **BringIntoView** method does not select the node!
 >
 
->note The **RadTreeViewElement** class defines an **AutoScrollOnClick** property which is by default set to *true*. This property determines whether to scroll horizontally the control ensuring that the clicked node is visible.
+>tip The **RadTreeViewElement** class defines an **AutoScrollOnClick** property which is by default set to *true*. This property determines whether to scroll horizontally the control ensuring that the clicked node is visible.
 > 
 
 # See Also

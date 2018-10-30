@@ -63,7 +63,7 @@ Dim timelineView As SchedulerTimelineView = Me.RadScheduler1.GetTimelineView()
 
 {{endregion}} 
 
->note This method returns null if the active view of the scheduler is not SchedulerTimelineView.
+>tip This method returns null if the active view of the scheduler is not SchedulerTimelineView.
 >
 
 * use the the RadScheduler __ActiveView__ property:

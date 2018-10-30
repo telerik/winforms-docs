@@ -15,7 +15,7 @@ Thank you for choosing Telerik __RadRichTextEditor__!
         
 __RadRichTextEditor__ is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
         
->note **RadRichTextEditor** requires **.NET Framework 4.0** and cannot be used with an older version. 
+>tip **RadRichTextEditor** requires **.NET Framework 4.0** and cannot be used with an older version. 
 
 ![richtexteditor 001](images/richtexteditor001.png)
 

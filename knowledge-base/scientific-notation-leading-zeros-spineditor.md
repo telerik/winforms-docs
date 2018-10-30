@@ -305,4 +305,4 @@ End Class
 
 3\. Build the project. The custom control should be displayed in the toolbox in Visual Studio. The newly introduced properties can be set straight from the designer.
 
->note A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/SpinEditor/CustomDisplayText).
+>tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/SpinEditor/CustomDisplayText).

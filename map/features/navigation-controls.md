@@ -72,7 +72,7 @@ The location of the __MapNavigationBarElement__ is controlled by the RadMap.MapE
 
 The navigation control allows an easy selection of the currently displayed view.
 
->note The views which will be displayed in the drop-down will vary depending on the chosen map provider: [Providers Overview]({%slug winforms/map/providers%}).
+>tip The views which will be displayed in the drop-down will vary depending on the chosen map provider: [Providers Overview]({%slug winforms/map/providers%}).
 
 >caption Figure 7: BingRestMapProvider Views
 

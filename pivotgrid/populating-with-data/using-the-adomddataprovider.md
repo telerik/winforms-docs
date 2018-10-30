@@ -34,7 +34,7 @@ ADOMD.NET is a Microsoft .NET Framework data provider that is designed to commun
 
   * __ConnectionString__: String property used to open a database. It is in OLE DB connection string format.
 
->note The OLE DB connection string format has several keys and values connected with equal sign. The different key-value pairs are separated by semicolon characters. Some of the important properties are Provider, Data Source, Integrated Security, etc. Here are some examples for different OLE DB connection strings:
+>tip The OLE DB connection string format has several keys and values connected with equal sign. The different key-value pairs are separated by semicolon characters. Some of the important properties are Provider, Data Source, Integrated Security, etc. Here are some examples for different OLE DB connection strings:
 >
 * "Provider=MSDAORA; Data Source=ORACLE8i7;Persist Security Info=False;Integrated Security=Yes"
 * "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=c:\bin\LocalAccess40.mdb"
@@ -76,7 +76,7 @@ provider.ConnectionSettings = settings
 
 ## Defining Group Descriptions
 
->note When initializing the **AdomdDataProvider** in the code behind it is a good idea to wrap all modifications in **BeginInit/EndInit** section. This will cause only one refresh of the data provider and it will be when the EndInit is called. If you are applying only modifications (more than one) on already initialized **AdomdDataProvider** you should use the **DeferRefresh** method which will cause delay of the Refresh and this way all your changes will be applied simultaneously.
+>tip When initializing the **AdomdDataProvider** in the code behind it is a good idea to wrap all modifications in **BeginInit/EndInit** section. This will cause only one refresh of the data provider and it will be when the EndInit is called. If you are applying only modifications (more than one) on already initialized **AdomdDataProvider** you should use the **DeferRefresh** method which will cause delay of the Refresh and this way all your changes will be applied simultaneously.
 >
 
 The **AdomdDataProvider** is using three collections that are reflecting the visual representation of **RadPivotGrid** and **RadPivotFieldList**:
@@ -91,9 +91,9 @@ The **AdomdGroupDescription** is used to define the data that will show as Rows 
 
 The **AdomdAggregateDescription** is used to define data that has to be aggregated and that will show as Cells in RadPivotGrid. The data that should be aggregated is defined with the **MemberName** property.
 
->note The MemberName property must have the following syntax:
+>tip The MemberName property must have the following syntax:
 * For AdomdAggregateDescription: "[Measures].[MEASURE_NAME]".
-* For AdomdGroupDescription there are two ways (based on the data that will be used): "[DIMENSION].[HIERARCHY]" or "[SET_NAME]".<br>Note that the brackets are mandatory.
+* For AdomdGroupDescription there are two ways (based on the data that will be used): "[DIMENSION].[HIERARCHY]" or "[SET_NAME]".<br>tip that the brackets are mandatory.
 >
 
 #### Adding Adomd Descriptions

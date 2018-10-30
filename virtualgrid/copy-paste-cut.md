@@ -44,7 +44,7 @@ End Sub
 
 {{endregion}}
 
->note Additionally, you can use the __RadVirtualGrid.VirtualGridElement.CopySelection__ method in order to perform the copy operation programmatically.
+>tip Additionally, you can use the __RadVirtualGrid.VirtualGridElement.CopySelection__ method in order to perform the copy operation programmatically.
 >
 
 ## Pasting
@@ -86,14 +86,14 @@ End Sub
 
 {{endregion}}
 
->note Additionally, you can use the __RadVirtualGrid.VirtualGridElement.Paste__ method in order to perform the paste operation programmatically.
+>tip Additionally, you can use the __RadVirtualGrid.VirtualGridElement.Paste__ method in order to perform the paste operation programmatically.
 >
 
 ## Cutting
 
 The cutting functionality in __RadVirtualGrid__ is controlled via the __AllowCut__ property. If this property is set to *false* the user would not be able to cut the values.
 
->note Additionally, you can use the __RadVirtualGrid.VirtualGridElement.CutSelection__ method in order to perform the cut operation programmatically.
+>tip Additionally, you can use the __RadVirtualGrid.VirtualGridElement.CutSelection__ method in order to perform the cut operation programmatically.
 >
 
 

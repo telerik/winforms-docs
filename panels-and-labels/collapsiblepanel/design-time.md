@@ -41,7 +41,7 @@ Select **RadCollapsiblePanel** and click the small arrow on the top right positi
 * **Search**: Search the Telerik website for a given string.
 * **Dock in Parent Container**: Sets the control **Dock** property to *Fill*.
 
->note Setting the **IsExpanded** property in at design time expands or collapses the control without animations.
+>tip Setting the **IsExpanded** property in at design time expands or collapses the control without animations.
 >
 
 # See Also

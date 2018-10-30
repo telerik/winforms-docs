@@ -25,7 +25,7 @@ __RadDocument__ exposes several properties that allow you to customize the layou
 
   * __Width__ - represents the width of the page.
 
->note The __DefaultPageLayoutSettings__ get applied only when Paged layout mode is used.
+>tip The __DefaultPageLayoutSettings__ get applied only when Paged layout mode is used.
 >
 
 * __LayoutMode__ - specifies whether the page should be in __Paged__ or __Flow__ layout mode. To learn more about layout modes read [here.]({%slug winforms/richtextbox-(obsolete)/features/layout-modes%})

@@ -24,7 +24,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 6. The BackColor of the bot buttons is chenged because the same repository item is applied to them:
    ![spineditor-themes003](images/spineditor-themes003.png)
 
->note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
+>tip The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
 
 # See Also 
 

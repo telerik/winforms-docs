@@ -29,7 +29,7 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on 
 
 ![dock-getting-started 001](images/dock-getting-started001.png)
 
->note The list on the left side of the preview displays all created windows. From this list you can set the __Visibility__ of the **ToolWindows** to *false*, if you do not need some of them visible at run time initially.
+>tip The list on the left side of the preview displays all created windows. From this list you can set the __Visibility__ of the **ToolWindows** to *false*, if you do not need some of them visible at run time initially.
 >
 
 5\. Again from the **RadRibbonBar**, click on the __Add DocumentWindow__ button three times to add three __DocumentWindows__ instances.

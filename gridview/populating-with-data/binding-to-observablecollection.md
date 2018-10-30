@@ -14,7 +14,7 @@ previous_url: gridview-populating-with-data-binding-to-%20observable-collection
 The example bellow demonstrates how to bind __RadGridView__ to an `ObservableCollection`. This collection represents a dynamic data collection that provides notification when changes (add, move, remove) occur.
         
 
->note This collection is available in .NET version 4.0 and above. For this reason it is only supported in the .NET4.0 version of our assemblies (the ones with suffix .40), so please make sure to use those in order to take advantage of this functionality.
+>tip This collection is available in .NET version 4.0 and above. For this reason it is only supported in the .NET4.0 version of our assemblies (the ones with suffix .40), so please make sure to use those in order to take advantage of this functionality.
 >
 
 

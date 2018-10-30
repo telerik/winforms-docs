@@ -13,7 +13,7 @@ previous_url: listview-features
 
 Since **RadListView** uses the powerful data layer used also by [RadGridView]({%slug winforms/gridview%}) and [RadListControl]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol%}), it supports out of the box sorting, filtering and grouping operations. Every operation is achieved by adding the appropriate descriptor (__FilterDescriptor__, __SortDescriptor__ or __GroupDescriptor__) to the respective descriptors collection of **RadListView** (__FilterDescriptors__ and __GroupDescriptors__).
 
->note When a descriptor is created, the first required argument is a __PropertyName__ . This property name is used to find a column in the __Columns__ collection of **RadListView** and execute the desired operation over this column. If such does not exists,the operation is executed for the __Value__ property of the items.
+>tip When a descriptor is created, the first required argument is a __PropertyName__ . This property name is used to find a column in the __Columns__ collection of **RadListView** and execute the desired operation over this column. If such does not exists,the operation is executed for the __Value__ property of the items.
 >
 
 ![listview-features](images/listview-features.png)

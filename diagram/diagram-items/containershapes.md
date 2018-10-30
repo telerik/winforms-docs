@@ -24,7 +24,7 @@ __RadDiagramContainerShape__ allows you to place multiple shapes into one contai
 
 A container can be connected and handled like other shapes.
 
->note  __RadDiagramContainerShape__ derives from the __RadDiagramShapeBase__ class and that is why it exposes similar properties to those of the __RadDiagramShape__ . To get familiar with the __RadDiagramShape__ features and properties, please refer to the [Shapes]({%slug winforms/diagram/diagram-items/shapes%}) article.
+>tip  __RadDiagramContainerShape__ derives from the __RadDiagramShapeBase__ class and that is why it exposes similar properties to those of the __RadDiagramShape__ . To get familiar with the __RadDiagramShape__ features and properties, please refer to the [Shapes]({%slug winforms/diagram/diagram-items/shapes%}) article.
 >
 
 
@@ -150,7 +150,7 @@ Below you can find a list of the interactions supported by the __RadDiagramConta
 * __Cut and Copy__ - these clipboard operations work only on the __RadDiagramContainerShape__. The shapes inside the container won't be cut or copied. You can find more information about the clipboard operations supported in the __RadDiagram__ in the [Clipboard operations]({%slug winforms/diagram/items-manipulation/clipboard-operations%}).
             
 
->note If you do wish to resize and cut or copy both the container and its children simultaneously, you can do so by dragging a selection rectangle around the container (instead of just clicking-selecting the container). This selection will contain both the container and the children thus allowing you to perform the aforementioned actions on all items at the same time.
+>tip If you do wish to resize and cut or copy both the container and its children simultaneously, you can do so by dragging a selection rectangle around the container (instead of just clicking-selecting the container). This selection will contain both the container and the children thus allowing you to perform the aforementioned actions on all items at the same time.
 >
 
 

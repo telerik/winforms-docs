@@ -48,7 +48,7 @@ Upon loading, the tool will loop through all the components registered with the 
 >important **RadPageView** does not support adding elements directly to a **RadPageViewPage**. Hence, a conversion from **RadPanelBar** will create empty pages for element-based groups; only groups that are used as control hosts will be completely converted. Old controls will be DELETED upon conversion, so make sure that you have backed-up your projects first.
 >
 
->note Events are not converted. When you convert an obsolete control, your event handler methods will remain intact, but it is important to note that the event subscriptions will be cleared.
+>tip Events are not converted. When you convert an obsolete control, your event handler methods will remain intact, but it is important to note that the event subscriptions will be cleared.
 >
 
 # See Also

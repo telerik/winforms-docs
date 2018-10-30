@@ -452,7 +452,7 @@ extender.AssociatedRadMultiColumnComboBox = Me.RadMultiColumnComboBox1
 
 {{endregion}} 
 
->note A fully functional example is available in our *Demo aplication >> MultiColumnComboBox* section.
+>tip A fully functional example is available in our *Demo aplication >> MultiColumnComboBox* section.
 
 # See Also
 

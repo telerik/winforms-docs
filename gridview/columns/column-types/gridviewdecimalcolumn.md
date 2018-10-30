@@ -144,7 +144,7 @@ decimalColumn.FormatString = "{0:N2}"
 
 {{endregion}} 
 
->note For a list of the standard numeric format strings, see [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)
+>tip For a list of the standard numeric format strings, see [Standard Numeric Format Strings](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)
 >
 
 # See Also

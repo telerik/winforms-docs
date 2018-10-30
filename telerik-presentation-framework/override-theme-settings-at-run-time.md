@@ -88,7 +88,7 @@ Dim visualStates As List(Of String) = Me.RadButton1.ButtonElement.GetAvailableVi
 
 {{endregion}}
 
->note Note that the normal state is represented by an empty string.
+>tip Note that the normal state is represented by an empty string.
 >
 
 In case you need to change the hover color, you can use a similar approach:
@@ -141,7 +141,7 @@ Me.RadToggleButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Prim
 
 ![tpf-override-theme-settings-at-run-time 005](images/tpf-override-theme-settings-at-run-time005.gif)
 
->note You can use the **ResetThemeValueOverrides** method if you need to reset the applied style for a specific state of the element.
+>tip You can use the **ResetThemeValueOverrides** method if you need to reset the applied style for a specific state of the element.
 
 # See Also
 

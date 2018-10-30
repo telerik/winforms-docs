@@ -67,7 +67,7 @@ The underlying data can be retrieved by handling the __GetUnderlyingDataComplete
 * __Result__: An IEnumerable representing the result of the underlying data extraction operation.
 * __InnerExceptions__: A *read-only* collection with the thrown exceptions during the underlying data extraction.
 
->note If the __DeferUpdates__ property of the __LocalDataSourceProvider__ is set to *true*, calling the __GetUnderlyingData__ method without first updating the provider will result in an __InvalidOperationException__.
+>tip If the __DeferUpdates__ property of the __LocalDataSourceProvider__ is set to *true*, calling the __GetUnderlyingData__ method without first updating the provider will result in an __InvalidOperationException__.
 
 >important The underlying data is extracted asynchronously when using the assemblies built for .NET 4.0. In this respect it is necessary to use [BeginInvoke](https://msdn.microsoft.com/en-us/library/a06c0dc2(v=vs.110).aspx) if the retrieved data will be used on the UI thread.
 

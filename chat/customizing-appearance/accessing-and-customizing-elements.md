@@ -12,7 +12,7 @@ position: 0
 
 **RadChat** is virtualized and the displayed messages can be accessed in the RadChat.**ItemFormatting** event.    
 
->note The [structure]({%slug winforms/chat/structure%}) articles provides detailed information about the element hierarchy building the visual tree of the control.
+>tip The [structure]({%slug winforms/chat/structure%}) articles provides detailed information about the element hierarchy building the visual tree of the control.
 
 **RadChat** is working with four different elements visually representing a message:
 
@@ -38,7 +38,7 @@ The chat toolbar and input text box are exposed as properties and they can be ac
 
 The **ItemFormatting** event can be used to access and change the styling of the message item elements.
 
->note Due to the UI virtualization, the event needs to be handled with an *if-else* statement so that the applied settings are reset for elements which will not be customized. 
+>tip Due to the UI virtualization, the event needs to be handled with an *if-else* statement so that the applied settings are reset for elements which will not be customized. 
 >
 
 #### Customizing The Main Item Elements

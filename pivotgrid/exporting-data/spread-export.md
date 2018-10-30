@@ -25,7 +25,7 @@ Here is how the following grid, looks when exported.
 
 ![pivotgrid-export-srpead-export 001](images/pivotgrid-export-srpead-export001.png)
 
->note The spread export functionality is located in the __TelerikExport.dll__ assembly.You need to include the following namespace in order to access the types contained in TelerikExport:
+>tip The spread export functionality is located in the __TelerikExport.dll__ assembly.You need to include the following namespace in order to access the types contained in TelerikExport:
 * Telerik.WinControls.TelerikExport
 >
 

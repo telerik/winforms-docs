@@ -25,7 +25,7 @@ Telerik UI for for WinForms are automatically added to Visual Studio 2005/2008/2
          
 1. Right-click in the empty space of the newly created tab and select __Choose Items__. A dialog will open, which lists all available controls from the assemblies in the GAC.
             
-    >note If you do not see Telerik WinForms controls, please see the __Troubleshooting__ section below.
+    >tip If you do not see Telerik WinForms controls, please see the __Troubleshooting__ section below.
               
 1. Sort the assemblies by name and navigate to Telerik assemblies. Select all corresponding Telerik Controls (except for FilteredPropertyGrid) and click __OK__ to finish the operation.
             
@@ -45,7 +45,7 @@ Telerik UI for for WinForms are automatically added to Visual Studio 2005/2008/2
 
 1. Open a Windows Explorer and locate the Telerik assemblies folder.             
             
-    >note If you have installed the controls with the default settings then it would be this directory: "C:\Program Files\Telerik\UI for WinForms\Version\Bin" for the .NET2.0 version of our assemblies and "C:\Program Files\Telerik\UI for WinForms\Version\Bin40" for the .NET4.0 version of the assemblies (note that currently RadRichTextEditor and RadSpellChecker are only available in the .NET4.0 version).
+    >tip If you have installed the controls with the default settings then it would be this directory: "C:\Program Files\Telerik\UI for WinForms\Version\Bin" for the .NET2.0 version of our assemblies and "C:\Program Files\Telerik\UI for WinForms\Version\Bin40" for the .NET4.0 version of the assemblies (note that currently RadRichTextEditor and RadSpellChecker are only available in the .NET4.0 version).
               
 1. Select the following assemblies and drag-drop them to the empty space in the newly created tab in Visual Studio:
             

@@ -21,10 +21,10 @@ __RadGridView__ can export its contents to PDF using two separate mechanisms.
 
 ## Exporting Data using GridViewPdfExport object
 
->note The __GridViewPdfExport__ functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in __TelerikExport__ :
+>tip The __GridViewPdfExport__ functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in __TelerikExport__ :
 * Telerik.WinControls.Export
 
->note The __ExportToPdf__ functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespace in order to access the types contained in __TelerikData__ :
+>tip The __ExportToPdf__ functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespace in order to access the types contained in __TelerikData__ :
 * Telerik.WinControls.UI.Export
 >
 

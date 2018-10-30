@@ -108,7 +108,7 @@ After you download the project, please follow the steps below:
 
 10\. The following properties will allow you to control the visibility of the tabs of the customized RadRibbonBar implementation:
 
->note In case you are using RadRibbonForm, you can substitute  the Telerik.WinControls.UI.RadRibbonBar type with TelerikEditor.RichRibbonBar type in the Designer code file of the RadRibbonForm.
+>tip In case you are using RadRibbonForm, you can substitute  the Telerik.WinControls.UI.RadRibbonBar type with TelerikEditor.RichRibbonBar type in the Designer code file of the RadRibbonForm.
 >
 
 Feel free to add more properties that will be suitable for your scenario.

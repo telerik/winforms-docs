@@ -116,7 +116,7 @@ When you click on the OK button all selected files will be saved. The repository
 
 *\<ThemeName\>_Repository.xml*
 
->note If you chose *not* to save certain files, you should keep in mind that the Visual Style Builder does not currently keep track of changes in separate theme files and therefore if you close the Visual Style Builder after saving, any unchecked files will not be saved.
+>tip If you chose *not* to save certain files, you should keep in mind that the Visual Style Builder does not currently keep track of changes in separate theme files and therefore if you close the Visual Style Builder after saving, any unchecked files will not be saved.
 >
 
 __Save as a theme package__
@@ -196,7 +196,7 @@ The second option means that destination (existing) items that have the same key
 The third option entirely ignores repository item conflicts. Items are overridden based on their position in the list as they are loaded from the XML file – the last item found with a conflicting key wins.
         
 
->note Generally, repository item conflicts within the same repository should not happen. Since the Visual Style Builder checks for key uniqueness each time you add/edit repository items, it is not possible to save a repository that contains items with the same key.
+>tip Generally, repository item conflicts within the same repository should not happen. Since the Visual Style Builder checks for key uniqueness each time you add/edit repository items, it is not possible to save a repository that contains items with the same key.
 >
 
 

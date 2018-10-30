@@ -16,7 +16,7 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
 
 ![RadSpreadsheet Overview small](images/spreadsheet-overview001.png)
 
->note **RadSpreadsheet** requires **.NET Framework 4.0** and cannot be used with an older version. 
+>tip **RadSpreadsheet** requires **.NET Framework 4.0** and cannot be used with an older version. 
 
 Some of its features are:
 

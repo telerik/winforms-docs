@@ -50,7 +50,7 @@ Me.RadVirtualGrid1.AllowMultiColumnSorting = True
 
 It is necessary to handle the __SortChanged__ event which is fired once the __SortDescriptors__ collection is changed. In the event handler you should extract the sorted data from the external data source.
 
->note Please refer to the [Populating with data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%}) help article which demonstrates how to extract the necessary data and fill the virtual grid with data.
+>tip Please refer to the [Populating with data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%}) help article which demonstrates how to extract the necessary data and fill the virtual grid with data.
 
 
 The following example demonstrates how to achieve sorting functionality in __RadVirtualGrid__ filled with Northwind.Customers table:

@@ -35,12 +35,12 @@ dataProvider.ItemsSource = dataset.Orders
 
 {{endregion}} 
 
->note The **ItemSource** can be any collection that implements IEnumerable interface or even a DataTable.
+>tip The **ItemSource** can be any collection that implements IEnumerable interface or even a DataTable.
 >
 
 ## Adding Group Descriptions Collections
 
->note When initializing the LocalDataSourceProvider it is a good idea to wrap all modifications in **BeginInit/EndInit** section. This will refresh the data provider only once when the EndInit is called. If you are applying only modifications (more than one) on already initialized **LocalDataSourceProvider** you need use the **DeferRefresh** method which will cause delay of the Refresh and this way all changes will be applied simultaneously.
+>tip When initializing the LocalDataSourceProvider it is a good idea to wrap all modifications in **BeginInit/EndInit** section. This will refresh the data provider only once when the EndInit is called. If you are applying only modifications (more than one) on already initialized **LocalDataSourceProvider** you need use the **DeferRefresh** method which will cause delay of the Refresh and this way all changes will be applied simultaneously.
 >
 
 The **LocalDataSourceProvider** is using four different collections for the data that it holds:
@@ -106,7 +106,7 @@ dataProvider.ColumnGroupDescriptions.Add(New PropertyGroupDescription() With { _
 
 * __AggregateDescriptions__: The data added to this description will be aggregated and included in RadPivotGrid as cells. The properties can be defined as **PropertyAggregateDescription** or you can create custom implementation of **PropertyAggregateDescriptionBase** class. 
 
->note The __PropertyAggregateDescriptionBase__ defines an __IgnoreNullValues__ property determining whether the aggregate function will ignore *null* values when calculating the result. The default value of the property is __false__.
+>tip The __PropertyAggregateDescriptionBase__ defines an __IgnoreNullValues__ property determining whether the aggregate function will ignore *null* values when calculating the result. The default value of the property is __false__.
 >
 
 Here's how to define the aggregate descriptions in your application:

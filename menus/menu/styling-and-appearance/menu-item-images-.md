@@ -33,7 +33,7 @@ For consistent management of multiple images that can be used by more than one
 
 * Sizing all images at one time, so you can increase the __Image Size__ from the default 16 x 16 pixels up to 256 x 256. The example at the beginning of this topic shows a 64 x 64 image.
 
->note At increased image sizes the images will scale, but may not be attractive depending on the original resolution of the image.
+>tip At increased image sizes the images will scale, but may not be attractive depending on the original resolution of the image.
 >
 
 * Increase the __Image Bit Depth__ up to 32 bit.

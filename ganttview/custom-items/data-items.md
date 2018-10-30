@@ -12,7 +12,7 @@ position: 2
 
 The data items displayed in **RadGanttView** have a predefined set of properties allowing each of the items to have defined **Start**, **End**, and **Title** values. In certain cases, one may need to display an additional column in the Gantt control and map this column to a custom field defined in the data item class. This can be easily achieved by extending the **GanttViewDataItem** class with additional properties.
 
->note The new properties added to an inherited **GanttViewDataItem** class must have property setters.  
+>tip The new properties added to an inherited **GanttViewDataItem** class must have property setters.  
 
 The example in this article will handle a scenario of a *Duration* column displaying how many days each of the tasks takes.
 

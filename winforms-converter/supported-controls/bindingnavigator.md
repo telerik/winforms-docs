@@ -52,7 +52,7 @@ The BindingNavigator control in your application will be converted to [RadBindin
 Standard __BindingNavigator__ and our __RadBindingNavigator__ have different mapping of items' name. That's why the navigation will not work after the conversion process is finished. In order to resolve the issue, you need to change the __Name__ properties of each item manually in the `Designer` file. Each name should starts with BindingNavigator's name plus item's name. For example: 
 `this.bindingNavigator1.Name = "bindingNavigator1";`
 
->note We strongly recommend you to change the __Name__ properties of each item manually after opening the form at design time. 
+>tip We strongly recommend you to change the __Name__ properties of each item manually after opening the form at design time. 
 
 In addition, if there are other items added to the navigator, they will be converted as well, their properties, events and methods are listed [here]({%slug winforms/winforms-converter/supported-controls/toolstrip%}).
 

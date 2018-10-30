@@ -13,10 +13,10 @@ previous_url: gridview-columns-gridviewimagecolumn
 
 __GridViewImageColumn__ displays *read-only* images for database columns of image data (OLE container or BLOB). 
 
->note RadGridView tries to convert data columns that contain unspecified binary data to an image.
+>tip RadGridView tries to convert data columns that contain unspecified binary data to an image.
 >
 
->note Some databases such as Access use OLE image container. **RadGridView** automatically recognizes that and skips the added header.
+>tip Some databases such as Access use OLE image container. **RadGridView** automatically recognizes that and skips the added header.
 >
 
 Supported image formats are those supported by the `Image` class of the .NET Framework. 

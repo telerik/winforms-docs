@@ -22,7 +22,7 @@ Read only ranges are a convenient way to restrict some of the content of a parti
 
 A read only annotation range is represented in __RadDocument__'s structure by two paired annotation markers – a  __ReadOnlyRangeStart__ instance and a __ReadOnlyRangeEnd__ instance. Both are inline elements, thus users are able to edit the document prior and after the annotation markers. More on Annotations you can find [here]({%slug winforms/richtexteditor-/document-elements/annotations%}).
 
->note As read only ranges do not have a proper equivalent in most of the supported export formats (like DOCX or HTML), they are only exported to __RadDocument__ 's native format – XAML.
+>tip As read only ranges do not have a proper equivalent in most of the supported export formats (like DOCX or HTML), they are only exported to __RadDocument__ 's native format – XAML.
 >
 
 ## Insert Read Only Range

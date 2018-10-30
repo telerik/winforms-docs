@@ -49,7 +49,7 @@ __RadDataFilter__ natively supports drag and drop allowing the end users to perf
 
 ![datafilter-end-user-functionality 006](images/datafilter-end-user-functionality006.gif)
 
->note __RadDataFilter__ extends the drag and drop functionality provided by __RadTreeView__. Detailed information on how the drag-drop service is working is available [here]({%slug winforms/treeview/drag-and-drop/modify-the-dragdropservice-behavior%}).
+>tip __RadDataFilter__ extends the drag and drop functionality provided by __RadTreeView__. Detailed information on how the drag-drop service is working is available [here]({%slug winforms/treeview/drag-and-drop/modify-the-dragdropservice-behavior%}).
 >
 
 # See Also 

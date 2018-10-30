@@ -44,7 +44,7 @@ In addition you need to add the following to your App.config file:
 
 ````
 
->note If you do not have a AWS account in Visual Studio please check the [Getting Started]({%slug cloud-services/aws/getting-started%}) article.
+>tip If you do not have a AWS account in Visual Studio please check the [Getting Started]({%slug cloud-services/aws/getting-started%}) article.
 
 ## Step 3: Create the AWS manager class
 

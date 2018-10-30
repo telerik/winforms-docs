@@ -79,7 +79,7 @@ Me.RadPivotGrid1.DataSource = bs
 
 {{endregion}} 
 
->note When you set the DataSource and DataMember properties, RadPivotGrid will automatically prepare a **LocalDataSourceProvider** and use it internally.
+>tip When you set the DataSource and DataMember properties, RadPivotGrid will automatically prepare a **LocalDataSourceProvider** and use it internally.
 >
 
 >caption Figure 1: RadPivot Data Binding

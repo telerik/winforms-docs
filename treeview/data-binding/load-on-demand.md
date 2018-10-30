@@ -24,7 +24,7 @@ RadTreeView supports two modes of lazy loading nodes:
 The event arguments of the __NodesNeeded__ event contain the __Parent__ node that you are trying to expand and the __Nodes__ collection that you should fill with sub-nodes. The code snippet below demonstrates how you can handle the __NodesNeeded__ event and load 5 nodes to any expanded node, except to the child nodes of the root node. We will add sub-nodes only to some of the nodes at the first level. This will allow you to see the difference between the full and the partial lazy modes.
         
 
->warning Please note that the BeginUpdate/EndUpdate functions that are used to improve the performance in other scenarios should not be used in load on demand scenario, since it might lead to undesirable consequences. The reason for this is that during the NodesNeeded event we are loading nodes for a certain parent and calling the EndUpdate method will force the tree to start over, while the nodes loading is not yet finished. This might lead to undesired infinite recursion.
+>caution Please note that the BeginUpdate/EndUpdate functions that are used to improve the performance in other scenarios should not be used in load on demand scenario, since it might lead to undesirable consequences. The reason for this is that during the NodesNeeded event we are loading nodes for a certain parent and calling the EndUpdate method will force the tree to start over, while the nodes loading is not yet finished. This might lead to undesired infinite recursion.
 >
 
 Here is the result of this code snippet in the context of different lazy modes:

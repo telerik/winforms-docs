@@ -19,7 +19,7 @@ __GridViewComboBoxColumn__ displays a set of predefined text values in a drop d
 
 * Set the __ValueMember__ property to the column of the __DataSource__ that should be used to update the cell within the grid represented by the __FieldName__ property.
 
->note Values will display in the column only if the value in __FieldName__ is within the range of values provided by the __ValueMember__ field values.
+>tip Values will display in the column only if the value in __FieldName__ is within the range of values provided by the __ValueMember__ field values.
 >
 
 Other important properties for __GridViewComboBoxColumn__ are:
@@ -33,7 +33,7 @@ Other important properties for __GridViewComboBoxColumn__ are:
 |**DropDownStyle**|Gets or sets a value specifying the style of the **RadDropDownListEditor**.|
 |**HasLookupValue**|Gets a value indicating whether this column has look-up value.|
 
->note By default, when sorting is executed on **GridViewComboBoxColumn** it is sorted according to its __ValueMember__ setting. However, if you need to perform the sorting according to the **DisplayMember** instead, you should set the __DisplayMemberSort__ property of the column.
+>tip By default, when sorting is executed on **GridViewComboBoxColumn** it is sorted according to its __ValueMember__ setting. However, if you need to perform the sorting according to the **DisplayMember** instead, you should set the __DisplayMemberSort__ property of the column.
 
 The useful methods for **GridViewComboBoxColumn** are:
 

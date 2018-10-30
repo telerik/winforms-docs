@@ -130,7 +130,7 @@ FieldsUpdateManager.RegisterFieldUpdatePriority(GetType(ReferenceField), 1000)
 
 {{endregion}} 
 
->warning Having many different values for field priory is not recommended and may lead to performance degradation of the **UpdateAllFields()** method. The reason for this is that all fields with the same priority are updated in a batch update. Having more priority groups leads to execution of more batch updates.
+>caution Having many different values for field priory is not recommended and may lead to performance degradation of the **UpdateAllFields()** method. The reason for this is that all fields with the same priority are updated in a batch update. Having more priority groups leads to execution of more batch updates.
 >
 
 # See Also

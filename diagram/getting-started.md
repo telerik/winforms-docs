@@ -41,7 +41,7 @@ The graph object model is the main concept behind the diagramming framework. It 
 * __connection__ - the connection describes the edges of the graph and it is basically an object that connects zero, one or two shapes. In the Telerik Diagramming Framework the connection is represented by the __RadDiagramConnection__ class.
             
 
->note The __RadDiagram__ items are represented by the __RadDiagramItem__ class. Therefore both __RadDiagramConnection__ and __RadDiagramShape__ classes derive from the __RadDiagramItem__ class.
+>tip The __RadDiagram__ items are represented by the __RadDiagramItem__ class. Therefore both __RadDiagramConnection__ and __RadDiagramShape__ classes derive from the __RadDiagramItem__ class.
  
 In order to populate __RadDiagram__ with __RadDiagramItems__ you can add __RadDiagramShapes__ and __RadDiagramConnections__ by using the Property Builder.
 
@@ -54,7 +54,7 @@ The Property Builder allows you to drag a shapes from the [RadDiagramToolbox]({%
 
 In order to create a diagram describing the flow of an "if-else" operator, you will need 4 shapes - two will represent the statements, one will describe the condition and one will represent the final result of the operator.
 
->note The __RadDiagramShape__ exposes an __ElementShape__ property that allows you to create a custom geometry or use predefined shape geometry.
+>tip The __RadDiagramShape__ exposes an __ElementShape__ property that allows you to create a custom geometry or use predefined shape geometry.
  
 ![diagram-getting-started 004](images/diagram-getting-started004.png)
 

@@ -23,7 +23,7 @@ Here is how the following __RadListView__, looks when it is exported.
 
 ![listview-export-data-spread-export 001](images/listview-export-data-spread-export001.png)![listview-export-data-spread-export 002](images/listview-export-data-spread-export002.png)
 
->note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
+>tip The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
 * Telerik.WinControls.TelerikExport
 >
 

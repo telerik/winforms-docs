@@ -279,7 +279,7 @@ The __RadDiagram__’s methods related with the Layout feature are the following
 * __LayoutAsync__:  just like the __SetLayout__ but acts asynchronously. This is why you should be careful when using this method. Keep in mind that it waits until all shapes, containers and connections are already generated and then gets executed within the following layout pass.
             
 
->note Choosing which method should be used depends on your custom scenario and requirements this is why no specific rule can be made. A good practice is to first evaluate how the __SetLayout__ method works and then to move to the __LayoutAsync__ if needed.
+>tip Choosing which method should be used depends on your custom scenario and requirements this is why no specific rule can be made. A good practice is to first evaluate how the __SetLayout__ method works and then to move to the __LayoutAsync__ if needed.
 >
 
 
@@ -288,6 +288,6 @@ The properties that are related with the same feature are:
 * __AutoLayout__: a boolean property that controls whether the __RadDiagram__ should automatically layout the items hosted in it whenever a new item is added or removed.
             
 
->note If you need to change the settings that are used when the automatic layout is triggered you should ones call the __LayoutAsync__ method with the new settings. In other words, the automatic layout uses the last settings that are used in the context of the __RadDiagram__ . By default, this feature is disabled.
+>tip If you need to change the settings that are used when the automatic layout is triggered you should ones call the __LayoutAsync__ method with the new settings. In other words, the automatic layout uses the last settings that are used in the context of the __RadDiagram__ . By default, this feature is disabled.
 >
 

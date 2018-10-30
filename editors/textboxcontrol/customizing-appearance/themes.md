@@ -27,7 +27,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 7. Go back to RadTextBoxControlElement and change the __UseDefaultDisabledPaint__ for it as well.
    ![radtextboxcontrol-themes003](images/radtextboxcontrol-themes003.png)
 
->note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
+>tip The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
 
 # See Also 
 

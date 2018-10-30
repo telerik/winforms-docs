@@ -46,7 +46,7 @@ __RadGanttView__ binds to any object that implements `IList`, `IListSource` or `
 * __LinkTypeMember **__ Set this to the name of the field that will be used to define the type of a link.
         
 
->note \* - Marks the members that are the bare minimum to show a gantt with tasks.
+>tip \* - Marks the members that are the bare minimum to show a gantt with tasks.
 >** - Marks the members that are required to show links.
 
 The following example demonstrates a sample data with all the code needed to bind and show this data in __RadGanttView__:

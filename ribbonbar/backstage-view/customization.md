@@ -80,7 +80,7 @@ RadRibbonBarBackstageView1.BackstageElement.ContentElement.BackgroundShape = ima
 
 {{endregion}}
 
->note BackstageTabItems, BackstageItemsPanelElement and BackstageContentPanelElement use[RadImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})for most of the predefinied themes.
+>tip BackstageTabItems, BackstageItemsPanelElement and BackstageContentPanelElement use[RadImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})for most of the predefinied themes.
 >
 
 ## See Also

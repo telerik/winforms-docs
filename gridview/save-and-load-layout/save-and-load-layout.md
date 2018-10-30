@@ -89,7 +89,7 @@ End Sub
 
 {{endregion}} 
 
->note Once the layout is being loaded the __LayoutLoaded__ event is being thrown in order to notify that the load process is being finished.
+>tip Once the layout is being loaded the __LayoutLoaded__ event is being thrown in order to notify that the load process is being finished.
 >
 
 

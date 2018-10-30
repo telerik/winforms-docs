@@ -45,7 +45,7 @@ The following properties allow you to modify the labels' look:
 
 * __LabelsCount__ - controls how many labels will be displayed next ticks for the specified range.
 
->note  __RadRadialGauge__ always displays one additional label to the __LabelsCount__ in order to distribute the labels correctly on the arc.
+>tip  __RadRadialGauge__ always displays one additional label to the __LabelsCount__ in order to distribute the labels correctly on the arc.
 >
 
 # See Also

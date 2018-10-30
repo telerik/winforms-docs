@@ -169,7 +169,7 @@ dateTimeAxis.LabelFormatProvider = New DateTimeFormatProvider()
 >caption Figure 2: DateTime Format Provider
 ![chartview-customization-custom-labels 002](images/chartview-customization-custom-labels002.png)
 
->note The above provider implementation is applicable only to axes working with __DateTime__ objects  ( __DateTimeContinuousAxis__ and __DateTimeCategoricalAxis__ ).
+>tip The above provider implementation is applicable only to axes working with __DateTime__ objects  ( __DateTimeContinuousAxis__ and __DateTimeCategoricalAxis__ ).
 >
 
 # See Also

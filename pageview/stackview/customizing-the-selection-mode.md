@@ -46,7 +46,7 @@ stackElement.ItemSelectionMode = StackViewItemSelectionMode.ContentWithSelected
 {{endregion}} 
 
 
->note The **ViewElement** property of the **RadPageView** control returns a reference to the main element of the currently active view in the control. So, to cast the **ViewElement** to any an element representing a specific view type, you should make sure that you have set the **ViewMode** of the **RadPageView** control to this view type.
+>tip The **ViewElement** property of the **RadPageView** control returns a reference to the main element of the currently active view in the control. So, to cast the **ViewElement** to any an element representing a specific view type, you should make sure that you have set the **ViewMode** of the **RadPageView** control to this view type.
 
 # See Also
 

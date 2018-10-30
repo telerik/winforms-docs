@@ -25,7 +25,7 @@ Here is how the following RadTreeView, looks when it is exported.
 
 ![treeview-export-data-spread-export 002](images/treeview-export-data-spread-export002.png)
 
->note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
+>tip The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
 * Telerik.WinControls.TelerikExport
 >
 

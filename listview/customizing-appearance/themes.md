@@ -33,7 +33,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Now, you can apply your custom theme to __RadListView__ by using the demonstrated approach in the following link: [Using custom themes]({%slug winforms/themes/using-custom-themes%})
 
->note If you need to customize the elements in some of the other views, you can switch the view by right click on **RadListView**:
+>tip If you need to customize the elements in some of the other views, you can switch the view by right click on **RadListView**:
 
 
 ![listview-customizing-appearance-themes 003](images/listview-customizing-appearance-themes003.png)

@@ -97,7 +97,7 @@ This section describes the FloatinWindows specific properties.
 * __SnapOnResize__: Indicates whether this window should snap while resizing.
 * __SnapOnMove__: Indicates whether this window should snap while dragging.
 
->note The snapping functionality can be enabled/disabled by using the __EnableFloatingWindowSnapping__ property of __RadDock__.
+>tip The snapping functionality can be enabled/disabled by using the __EnableFloatingWindowSnapping__ property of __RadDock__.
 >
 
 # See Also

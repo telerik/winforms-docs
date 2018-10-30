@@ -18,7 +18,7 @@ This article describes the inner structure and organization of the elements whic
 
 * [Pie Area](#pie-area)
 
->note The element hierarchy and structure will vary depending on the area and series types displayed in __RadChartView__.
+>tip The element hierarchy and structure will vary depending on the area and series types displayed in __RadChartView__.
 >
 
 ## Cartesian Area

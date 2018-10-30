@@ -16,7 +16,7 @@ previous_url: codedui-supported-controls-and-actions
 All controls in the suite support Level 1 and Level 2. The list below shows the elements and the supported properties/actions.
       
 
->note If you need a property/action that is missing, feel free to open a new support ticket with a request for it and we will do our best to implement it.
+>tip If you need a property/action that is missing, feel free to open a new support ticket with a request for it and we will do our best to implement it.
 >
 
 

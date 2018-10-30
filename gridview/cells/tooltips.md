@@ -79,7 +79,7 @@ End Sub
 
 ![gridview-cells-tooltips 002](images/gridview-cells-tooltips002.png)
 
->note The *ToolTipTextNeeded* event has higher priority and overrides the tooltips set in CellFormatting event handler.
+>tip The *ToolTipTextNeeded* event has higher priority and overrides the tooltips set in CellFormatting event handler.
 >
 
 # See Also

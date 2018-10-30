@@ -157,7 +157,7 @@ You can enable the user to create a table via the built-in UI of __RadRichTextEd
 
 You can also use the __InsertTableDialog__, which comes out of the box. To show it upon a user action just call the __ShowInsertTableDialog()__ method of the __RadRichTextEditor__. Here is a snapshot of it.
         
->note **RichTextEditorRibbonBar** also uses this dialog.
+>tip **RichTextEditorRibbonBar** also uses this dialog.
 
 ![richtexteditor-document-elements-table 003](images/richtexteditor-document-elements-table003.png)
 

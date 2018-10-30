@@ -77,7 +77,7 @@ The property has the following values:
 
 * __TextAndValue:__ When the user performs edit, both the Text and the Value will be changed.
 
->note When __EditMode__ is set to __TextAndValue__ , editing either of the properties programmatically will result in changing both of them.
+>tip When __EditMode__ is set to __TextAndValue__ , editing either of the properties programmatically will result in changing both of them.
 >
 
 

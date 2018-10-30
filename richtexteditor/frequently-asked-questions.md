@@ -64,7 +64,7 @@ End Sub
 
 {{endregion}} 
 
->note These settings will not be applied on text which is imported by a rich text **FormatProvider**, as the settings defined in the input file/string will be applied.
+>tip These settings will not be applied on text which is imported by a rich text **FormatProvider**, as the settings defined in the input file/string will be applied.
 
 >tip You can set the caret width with the **CaretWidth** property as well.
 
@@ -216,6 +216,6 @@ Inserting multiple [Table]({%slug winforms/richtexteditor-/document-elements/tab
 
 When [building a document from code]({%slug winforms/richtexteditor-/getting-started%}), you should also follow the same approach and add paragraphs between tables in order to prevent possible issues from arising.        
 
->warning Removing paragraphs separating tables manually is highly inadvisable and may cause unexpected crashes.
+>caution Removing paragraphs separating tables manually is highly inadvisable and may cause unexpected crashes.
 >
 

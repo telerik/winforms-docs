@@ -317,7 +317,7 @@ End Function
 
 In the example above, the value of the Height property is coerced to 105 (Height is an integer property). 
 
->note Coercion is seldom used.
+>tip Coercion is seldom used.
 
 ## Binding
 

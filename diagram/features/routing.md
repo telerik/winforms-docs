@@ -161,7 +161,7 @@ As the name suggests, this is a connection router that uses a version of the A* 
 \* __GetSiblingNodes__ - this method receives the current state and the end target and should return the next possible nodes
                 
 
->note The order in which the steps are returned is important - if you have two steps with the same price we'll choose the first one.
+>tip The order in which the steps are returned is important - if you have two steps with the same price we'll choose the first one.
 >
 
 
@@ -171,7 +171,7 @@ As the name suggests, this is a connection router that uses a version of the A* 
 \* __CalculateBendAlteration__ - this method calculates the bend alteration. By default the result value can be positive - a penalty for changing the direction or negative - a bonus for keeping the direction.
                 
 
->note If the source and target positions of your connections are Auto this router will adjust them so that the path is minimal.
+>tip If the source and target positions of your connections are Auto this router will adjust them so that the path is minimal.
 >
 
 

@@ -60,7 +60,7 @@ Dim dbContext As New NorthwindEntities
 
 {{endregion}} 
 
->note When binding **RadGridView** we will be using the Local property of **DbSet**. The Local property provides access to the data without a query being sent to the database. It is also synchronized with the **DbSet**. For example, if an entry is deleted from the Local property, the next time a query is executed it will be deleted from the database.
+>tip When binding **RadGridView** we will be using the Local property of **DbSet**. The Local property provides access to the data without a query being sent to the database. It is also synchronized with the **DbSet**. For example, if an entry is deleted from the Local property, the next time a query is executed it will be deleted from the database.
 >
 
 2\. Add the following code to your Form’s constructor:
@@ -83,7 +83,7 @@ Me.radGridView1.DataSource = Me.dbContext.Customers.Local.ToBindingList()
  
 These extension methods are located in the __System.Data.Entity__ namespace. As the **Local** property represents the local data, we need to first load the data from the database. Then, by calling __ToBindingList__ method we make sure that our **RadGridView** and the **Local** data will be synchronized.
 
->note When adding new rows in **RadGridView** by default the *Id* cell of the new rows will be *0* since the data was not send to the database, therefore no *UniqueId* has been assigned yet.
+>tip When adding new rows in **RadGridView** by default the *Id* cell of the new rows will be *0* since the data was not send to the database, therefore no *UniqueId* has been assigned yet.
 >
 
 

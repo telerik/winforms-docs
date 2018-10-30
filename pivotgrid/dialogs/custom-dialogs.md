@@ -21,7 +21,7 @@ To customize the dialogs in **RadPivotGrid**/**RadPivotFieldList**, you can eith
 
 The functions list displayed in the dialog can be modified. It can also be extended with custom aggregate functions. The example below adds the sample *SqrtSumAggregateFunction* to the list with the default functions.
 
->note The [Custom Aggregation]({%slug winforms/pivotgrid/custom-aggregation%}) article discusses in details the API for creating custom functions as well as it includes the source code of the custom function used below.
+>tip The [Custom Aggregation]({%slug winforms/pivotgrid/custom-aggregation%}) article discusses in details the API for creating custom functions as well as it includes the source code of the custom function used below.
 
 {{source=..\SamplesCS\PivotGrid\PivotGridDialogs.cs region=MyAggregateOptionsDialog}} 
 {{source=..\SamplesVB\PivotGrid\PivotGridDialogs.vb region=MyAggregateOptionsDialog}}

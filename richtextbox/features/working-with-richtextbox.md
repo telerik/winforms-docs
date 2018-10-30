@@ -25,7 +25,7 @@ When the available size for the control becomes less than the size of the conten
 
 The __CurrentEditingStyle__ property returns an instance of the __StyleDefinition__ class, which allows you to get information about the current element. You can combine the usage of this property with the usage of the __CurrentSpanStyleChanged__ event in order to update the UI (if any) when the text style changes.
 
->note The same approach can be used for the __CurrentParagraphStyleChanged__ event.
+>tip The same approach can be used for the __CurrentParagraphStyleChanged__ event.
 >
 
 For example, you have a button that makes the text bold:

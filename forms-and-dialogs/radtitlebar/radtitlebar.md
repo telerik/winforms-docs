@@ -19,7 +19,7 @@ To customize the help, minimize, maximize and close buttons, use the __RadTitleB
 
 ![forms-and-dialogs-radtitlebar-overview 001](images/forms-and-dialogs-radtitlebar-overview001.png)
 
->note By default, the __HelpButton__ is not shown. It is necessary to set its __Visibility__ property to *ElementVisibility.Visible* in order to be displayed. 
+>tip By default, the __HelpButton__ is not shown. It is necessary to set its __Visibility__ property to *ElementVisibility.Visible* in order to be displayed. 
 
 # See Also
 

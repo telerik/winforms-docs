@@ -39,7 +39,7 @@ Select **RadGroupBox** and click the small arrow on the top right position in or
 
 * __Search__: Search the Telerik website for a given string.
 
->note The [Header Styling Options]({%slug winforms/panels-and-labels/groupbox/styling-options%}) article provides additional information about the behavior of each of the **RadGroupBox** specific properties available in the Smart Tag.
+>tip The [Header Styling Options]({%slug winforms/panels-and-labels/groupbox/styling-options%}) article provides additional information about the behavior of each of the **RadGroupBox** specific properties available in the Smart Tag.
 
 # See Also
 

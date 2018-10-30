@@ -32,7 +32,7 @@ Select *Tools >> Generate Material Variation* menu item:
 
 ![tools-visual-style-builder-working-with-visual-style-builder-material-themes-blending 006](images/tools-visual-style-builder-material-themes-blending006.png) 
 
->note If you already have loaded a customized Material theme (but not a Material variation) it will remain loaded when generating a Material variation.
+>tip If you already have loaded a customized Material theme (but not a Material variation) it will remain loaded when generating a Material variation.
 
 This will open the **Material Blend Dialog** from which you can choose the **Primary color** and the **Accent color**:
 

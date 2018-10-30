@@ -169,7 +169,7 @@ End Sub
 >important The __Ranges__ collection of **RadTrackBar** contains one default range that is used to display a default range for all modes. This collection should always contain at least one range, so if you execute the *Clear* method of the collection all ranges except the first one will be removed.
 >
 
->note When the mode is changed from __StartFromTheBeginning__ to something else, the __Radnges__ collection will be reset to prevent overlappings that are not allowed in the other modes.
+>tip When the mode is changed from __StartFromTheBeginning__ to something else, the __Radnges__ collection will be reset to prevent overlappings that are not allowed in the other modes.
 >
 
 # See Also

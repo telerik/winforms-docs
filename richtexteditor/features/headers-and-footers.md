@@ -13,7 +13,7 @@ previous_url: richtexteditor-features-headers-and-footers
 
 __RadRichTextEditor__ supports **Headers** and **Footers** in its document when in *Paged* [layout mode]({%slug winforms/richtexteditor-/document-elements/raddocument%}).
       
->note Note that **Headers** and **Footers** are not persisted when exporting with **HtmlFormatProvider**. You can read more about this [here]({%slug winforms/richtexteditor/import-export/overview%})
+>tip Note that **Headers** and **Footers** are not persisted when exporting with **HtmlFormatProvider**. You can read more about this [here]({%slug winforms/richtexteditor/import-export/overview%})
 >
 
 The topic contains the following sections:
