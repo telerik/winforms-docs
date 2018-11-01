@@ -18,7 +18,7 @@ The __GridViewSpreadStreamExport__ uses the [__RadSpreadStreamProcessing__](http
 
 
 >note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
-* Telerik.WinControls.TelerikExport
+* Telerik.WinControls.Export
 >
 
 >important Since this functionality is using the __RadSpreadStreamProcessing__ library you need to reference the following assembly as well:
