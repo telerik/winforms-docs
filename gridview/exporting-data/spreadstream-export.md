@@ -23,6 +23,8 @@ The __GridViewSpreadStreamExport__ uses the [__RadSpreadStreamProcessing__](http
 
 >important Since this functionality is using the __RadSpreadStreamProcessing__ library you need to reference the following assembly as well:
 * Telerik.Documents.SpreadsheetStreaming
+
+The __TelerikExport.dll__ must be the same version as the rest of the Assemblies. `<Progress installation folder>\Bin` folder holds the assemblies targetting .NET 2.0, while the ones in `<Progress installation folder>\Bin40` are for .NET 4.0.
 >
 
 # Exporting
