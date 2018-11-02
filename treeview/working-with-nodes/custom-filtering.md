@@ -44,6 +44,10 @@ End Function
 
 {{endregion}} 
 
+| Here you have nodes from 1-100 | After the filtering the nodes are only from 10-100, since nodes 1-9 contain just one char as text |
+| ------ | ------ |
+|![treeview-working-with-nodes-custom-filtering 001](images/treeview-working-with-nodes-custom-filtering001.png)|![treeview-working-with-nodes-custom-filtering 002](images/treeview-working-with-nodes-custom-filtering002.png)|
+
 To set the __Predicate__ to RadTreeView, use the __FilterPredicate__ property of the control:
     	
 #### Applying predicate
@@ -85,9 +89,7 @@ End Sub
 
 {{endregion}} 
 
-| Here you have nodes from 1-100 | After the filtering the nodes are only from 10-100, since nodes 1-9 contain just one char as text |
-| ------ | ------ |
-|![treeview-working-with-nodes-custom-filtering 001](images/treeview-working-with-nodes-custom-filtering001.png)|![treeview-working-with-nodes-custom-filtering 002](images/treeview-working-with-nodes-custom-filtering002.png)|
+
 
 # See Also
 * [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})
