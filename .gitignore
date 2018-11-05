@@ -2,6 +2,7 @@
 .bundle/
 .dockerignore
 .editorconfig
+.jekyll-metadata
 .ruby-version
 /_assets/
 /_common/root/

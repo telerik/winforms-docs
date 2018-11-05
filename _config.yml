@@ -1408,6 +1408,7 @@ footer:
     "Demos": https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe
     "Step-by-Step Tutorial": https://www.telerik.com/winforms/winforms-guide
     "Sample Applications": https://www.telerik.com/winforms/sample-applications
+    "SDK Samples": https://github.com/telerik/winforms-sdk
     "Visual Studio Extensions": https://www.telerik.com/winforms/visual-studio-extensions
 -
   title: "Support Resources"
