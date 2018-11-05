@@ -3,6 +3,8 @@ url: "http://docs.telerik.com/devtools/winforms"
 site_name: WinForms
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock]
+exclude_navigation: [knowledge-base/*]
+
 navigation:
 ## List your directory names and order here, like this:
     winforms-converter:
@@ -1369,13 +1371,9 @@ defaults:
     scope:
         path: ""
     values:
-        layout: "page"
+        layout: "documentation"
         category: "default"
--
-    scope:
-        path: "knowledge-base"
-    values:
-        layout: "kb-page"
+
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
 
@@ -1385,8 +1383,53 @@ ff-sheet-id: 14RypVB61J1Zbq7JjxBay2Pf3seiLOlwrK08jbfNL64M
 # The google services configuration
 google_analytics: UA-1119090:eblhnfskwrk'
 google_tag_manager: GTM-6X92
-google_custom_search: '001595215763381649090:j4fvrr1zs78'
-google_custom_kb_search: '001595215763381649090:khqr-sbzlmq'
+gcs_engine: '001595215763381649090:j4fvrr1zs78'
+gcs_kb_engine: '001595215763381649090:khqr-sbzlmq'
+gcs_api_key: 'AIzaSyBZzxQ7Ee4qogDASZ_D0uVnVlepiz_PbsM'
+
+old_kb_portal_link: https://www.telerik.com/support/kb/winforms
+has_kb_portal: true
+
+edit_repo_url: https://github.com/telerik/winforms-docs/edit/master
+product: "Telerik UI for WinForms"
+platform: winforms
+download: https://www.telerik.com/download-trial-file/v2-b/ui-for-winforms
+nav:
+  "Demos": https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe
+  "Release History": https://www.telerik.com/support/whats-new/winforms/release-history
+  "About": https://www.telerik.com/products/winforms.aspx
+  "Pricing": https://www.telerik.com/purchase/individual/winforms.aspx
+
+footer:
+-
+  title: "Getting Started"
+  links:
+    "Install Now": https://www.telerik.com/download-trial-file/v2-b/ui-for-winforms
+    "Demos": https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe
+    "Step-by-Step Tutorial": https://www.telerik.com/winforms/winforms-guide
+    "Sample Applications": https://www.telerik.com/winforms/sample-applications
+    "Visual Studio Extensions": https://www.telerik.com/winforms/visual-studio-extensions
+-
+  title: "Support Resources"
+  links: 
+    "Code Library": https://www.telerik.com/support/code-library/winforms
+    "Knowledge Base": https://docs.telerik.com/devtools/winforms/knowledge-base
+    "Videos": https://www.telerik.com/videos/winforms
+-
+  title: "Community"
+  links:
+    "Forums": https://www.telerik.com/forums/winforms
+    "Blogs": https://www.telerik.com/blogs/.net
+    "Feedback Portal": https://feedback.telerik.com/Project/154
+    "Document Processing Feedback Portal": http://feedback.telerik.com/Project/184
+  
+footer_social: 
+    facebook: https://www.facebook.com/Telerik/
+    youtube: https://www.youtube.com/user/TelerikInc
+    linkedin: https://www.linkedin.com/showcase/telerik/ 
+    twitter: https://twitter.com/Telerik/ 
+
+api_reference_url: "api/"
 
 ## Do not edit below this line
 safe: false
