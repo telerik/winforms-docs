@@ -430,6 +430,7 @@ After you compile the project, you should get a result similar to the screenshot
 
 # See Also
 
+* [3D Bar Chart]({%slug chartview-3d-bar-chart%})
 * [Summary Labels on Stacked Bars]({%slug chartview-summary-labels-stacked-bars%})
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Axes]({%slug winforms/chartview-/axes%})
