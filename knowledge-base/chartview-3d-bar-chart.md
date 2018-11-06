@@ -10,16 +10,6 @@ res_type: kb
 ---
 
 ## Environment
-<table>
-	<tr>
-		<td>Product Version</td>
-		<td>2018.3.1016</td>
-	</tr>
-	<tr>
-		<td>Product</td>
-		<td>RadChartView for WinForms</td>
-	</tr>
-</table>
 
 |Product Version|Product|Author|
 |----|----|----|
