@@ -21,6 +21,10 @@ res_type: kb
 	</tr>
 </table>
 
+|Product Version|Product|Author|
+|----|----|----|
+|2018.3.1016|RadChartView for WinForms|[Hristo Merdjanov](https://www.telerik.com/blogs/author/hristo-merdjanov)|
+
 
 ## Description
 
