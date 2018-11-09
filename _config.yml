@@ -37,6 +37,12 @@ navigation:
     installation-deployment-and-distribution:
         title: Installation, Deployment and Distribution
         position: 40
+    controls:
+        title: "Controls"
+        position: 3     
+    "knowledge-base":
+        title: "Knowledge Base"
+        position: 10
     controls/analytics:
         title: Analytics
         position: 45
