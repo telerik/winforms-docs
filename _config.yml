@@ -1367,9 +1367,6 @@ navigation:
     controls/tools/theme-manager:
          title: Theme Manager
          position: 6		 
-    for-more-help:
-        title: For More Help
-        position: 600
     
 ## Api Reference End
 ## The application virtual path
