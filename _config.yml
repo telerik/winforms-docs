@@ -10,10 +10,10 @@ navigation:
     getting-started:
         title: Getting Started
         position: 20
-    winforms-converter:
+    getting-started/winforms-converter:
         title: Convert your application to UI for WinForms 
         position: 30
-    winforms-converter/supported-controls:
+    getting-started/winforms-converter/supported-controls:
         title: Supported Controls
         position: 3
     cloud-integration:
@@ -37,7 +37,7 @@ navigation:
     cloud-integration/google-cloud:
         title: Google Cloud
         position: 2
-    installation-deployment-and-distribution:
+    getting-started/installation-deployment-and-distribution:
         title: Installation, Deployment and Distribution
         position: 40
     controls:
@@ -49,7 +49,7 @@ navigation:
     controls/analytics:
         title: Analytics
         position: 45
-    installation-deployment-and-distribution/visual-studio-extensions:
+    getting-started/installation-deployment-and-distribution/visual-studio-extensions:
         title: Visual Studio Extensions
         position: 6
     licensing:
