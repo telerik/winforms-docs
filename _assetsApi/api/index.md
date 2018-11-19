@@ -3,6 +3,10 @@
   background: transparent !important;
 }
 
+article div.contribution-panel {
+  display: none;
+}
+
 blockquote {
   border: 0;
   margin: 20px 0;
