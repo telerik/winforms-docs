@@ -7,18 +7,27 @@ exclude_navigation: [knowledge-base/*]
 
 navigation:
 ## List your directory names and order here, like this:
-    getting-started:
-        title: Getting Started
-        position: 20
-    getting-started/winforms-converter:
-        title: Convert your application to UI for WinForms 
-        position: 30
-    getting-started/winforms-converter/supported-controls:
+    installation-and-upgrades:
+        title: Installation and Upgrades 
+        position: 3
+    visual-studio-integration:
+        title: Visual Studio Integration 
+        position: 4
+    visual-studio-integration/visual-studio-extensions:
+        title: Visual Studio Extensions 
+        position: 4
+    deployment-and-distribution:
+        title: Deployment and Distribution 
+        position: 11
+    winforms-converter:
+        title: WinForms application modernization wizard
+        position: 5
+    winforms-converter/supported-controls:
         title: Supported Controls
         position: 3
     cloud-integration:
         title: Cloud Integration
-        position: 35
+        position: 15
     cloud-integration/aws:
         title: Amanzon Web Services (AWS)
         position: 3
@@ -37,24 +46,18 @@ navigation:
     cloud-integration/google-cloud:
         title: Google Cloud
         position: 2
-    getting-started/installation-deployment-and-distribution:
-        title: Installation, Deployment and Distribution
-        position: 40
     controls:
         title: "Controls"
-        position: 3     
+        position: 6     
     "knowledge-base":
         title: "Knowledge Base"
         position: 10
     controls/analytics:
         title: Analytics
-        position: 45
-    getting-started/installation-deployment-and-distribution/visual-studio-extensions:
-        title: Visual Studio Extensions
-        position: 6
+        position: 14
     licensing:
         title: Licensing
-        position: 50
+        position: 12
     controls/barcode: 
         title: Barcode
         position: 55
@@ -1277,96 +1280,102 @@ navigation:
     controls/codedui:
         title: CodedUI 
         position: 560
-    controls/telerik-presentation-framework:
+    telerik-presentation-framework:
         title: Telerik Presentation Framework
-        position: 570
-    controls/telerik-presentation-framework/overview:
+        position: 7
+    telerik-presentation-framework/overview:
         title: Overview
         position: 0
-    controls/telerik-presentation-framework/tooltips-and-screentips:
+    telerik-presentation-framework/tooltips-and-screentips:
         title: Tooltips and ScreenTips
         position: 17		
-    controls/telerik-presentation-framework/getting-started:
+    telerik-presentation-framework/getting-started:
         title: Getting Started
         position: 1
-    controls/telerik-presentation-framework/class-hierarchy:
+    telerik-presentation-framework/class-hierarchy:
         title: Class Hierarchy
         position: 2
-    controls/telerik-presentation-framework/elements:
+    telerik-presentation-framework/elements:
         title: Elements
         position: 3
-    controls/telerik-presentation-framework/primitives:
+    telerik-presentation-framework/primitives:
         title: Primitives
         position: 4
-    controls/telerik-presentation-framework/layout:
+    telerik-presentation-framework/layout:
         title: Layout
         position: 5
-    controls/telerik-presentation-framework/events:
+    telerik-presentation-framework/events:
         title: Events
         position: 6
-    controls/telerik-presentation-framework/printing-support:
+    ctelerik-presentation-framework/printing-support:
         title: Printing Support
         position: 13
-    controls/telerik-presentation-framework/layout/predefined-layout-panels:
+    telerik-presentation-framework/layout/predefined-layout-panels:
         title: Predefined Layout Panels
         position: 5
-    controls/telerik-presentation-framework/printing-support/radprintdocument:
+    telerik-presentation-framework/printing-support/radprintdocument:
         title: RadPrintDocument
         position: 0
-    controls/telerik-presentation-framework/printing-support/end-user-functionality:
+    telerik-presentation-framework/printing-support/end-user-functionality:
         title: End-User Functionality
         position: 1
-    controls/telerik-presentation-framework/printing-support/how-to:
+    telerik-presentation-framework/printing-support/how-to:
         title: How-To
         position: 2
-    controls/telerik-presentation-framework/export-renderers:
+    telerik-presentation-framework/export-renderers:
         title: Export Renderers
         position: 21
-    controls/telerik-presentation-framework/shapes:
+    telerik-presentation-framework/shapes:
         title: Shapes
         position: 22
-    controls/telerik-presentation-framework/markup-dialog:
+    telerik-presentation-framework/markup-dialog:
         title: Markup Dialog
         position: 10
-    controls/themes:
-        title: Themes
-        position: 580
-    controls/themes/theme-tutorials:
+    styling-and-appearance:
+        title: Styling and Appearance
+        position: 8
+    styling-and-appearance/theme-tutorials:
         title: Theme Tutorials
         position: 5
-    controls/themes/advanced-topics:
+    styling-and-appearance/advanced-topics:
         title: Advanced Topics
         position: 6
-    controls/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application:
+    styling-and-appearance/advanced-topics/adding-custom-redistributable-themes-to-your-application:
         title: Adding Custom Redistributable Themes to your Application
         position: 0
-    controls/tools:
+    tools:
         title: Tools
-        position: 590
-    controls/tools/controlspy:
+        position: 9
+    tools/controlspy:
         title: ControlSpy
         position: 0
-    controls/tools/shapeeditor:
+    tools/shapeeditor:
         title: ShapeEditor
         position: 1
-    controls/tools/visual-style-builder:
+    tools/visual-style-builder:
         title: Visual Style Builder
         position: 2
-    controls/tools/visual-style-builder/working-with-visual-style-builder:
+    tools/visual-style-builder/working-with-visual-style-builder:
         title: Working With Visual Style Builder
         position: 5
-    controls/tools/visual-style-builder/adding-custom-themes-to-your-application:
+    tools/visual-style-builder/adding-custom-themes-to-your-application:
         title: Adding Custom Themes to your Application
         position: 6
-    controls/tools/visual-style-builder/control-specific-theme-tutorials:
+    tools/visual-style-builder/control-specific-theme-tutorials:
         title: Control Specific Theme Tutorials
         position: 7
-    controls/tools/shapeeditor/using-the-custom-shape-editor:
+    tools/shapeeditor/using-the-custom-shape-editor:
         title: Using the Custom Shape Editor
         position: 3
-    controls/tools/theme-manager:
+    tools/theme-manager:
          title: Theme Manager
-         position: 6		 
+         position: 6
+    testing:
+         title: Testing
+         position: 10
+    testing/codedui:
+         title: CodedUI
+         position: 2			 
     
 ## Api Reference End
 ## The application virtual path

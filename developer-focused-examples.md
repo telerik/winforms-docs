@@ -5,7 +5,7 @@ description: Additional examples built on top the Telerik UI for for WinForms co
 slug: winforms/developer-focused-examples
 tags: developer, sdk, examples
 published: True
-position: 24
+position: 16
 ---
 
 # Developer Focused Examples
