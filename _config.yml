@@ -52,7 +52,7 @@ navigation:
     "knowledge-base":
         title: "Knowledge Base"
         position: 10
-    controls/analytics:
+    analytics:
         title: Analytics
         position: 14
     licensing:

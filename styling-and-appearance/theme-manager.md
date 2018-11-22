@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Theme Manager
 page_title: Theme Manager | RadThemeManager
 description: This article shows what is RadThemeMenager and when it should be used.
 slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource
