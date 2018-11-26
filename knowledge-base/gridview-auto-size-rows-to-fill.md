@@ -121,5 +121,5 @@ The TableElement.**RowHeight** property controls the height of the rows in the g
 
 ````
 
->note If some of the system rows are displayed as well, their height should participate in the calculation. You can access a system row by the  respective property exposed in the **MasterView**.
+>tip If some of the system rows are displayed as well, their height should participate in the calculation. You can access a system row by the  respective property exposed in the **MasterView**.
 

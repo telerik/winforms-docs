@@ -2,10 +2,10 @@
 title: Getting Started
 page_title: Getting Started
 description: Getting Started with Telerik UI for for WinForms
-slug: winforms/installation-deployment-and-distribution/getting-started
+slug: winforms/getting-started
 tags: getting, started
 published: True
-position: 2
+position: 1
 ---
 
 # Getting Started with Telerik UI for for WinForms

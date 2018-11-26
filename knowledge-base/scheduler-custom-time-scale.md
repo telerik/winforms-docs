@@ -30,7 +30,7 @@ When set up in *timeline view*, **RadScheduler** can work with a time scale of p
 
 Create a custom scale inheriting the **MinutesTimescale** class and override its **ScalingFactor** property.
 
->note A small time scale will create more elements inside the header. In some cases the available space might not be enough and these elements may be squeezed. The [DisplayedCellsCount](https://docs.telerik.com/devtools/winforms/scheduler/views/timeline-view#getting-the-scale) property of the scale object determines how many elements will be simultaneously visible. The screen shot below shows 20 cells and the rest of cells can be seen using the scrollbar at the bottom.
+>tip A small time scale will create more elements inside the header. In some cases the available space might not be enough and these elements may be squeezed. The [DisplayedCellsCount](https://docs.telerik.com/devtools/winforms/scheduler/views/timeline-view#getting-the-scale) property of the scale object determines how many elements will be simultaneously visible. The screen shot below shows 20 cells and the rest of cells can be seen using the scrollbar at the bottom.
 
 >caption Figure 1: Custom Time Scale
 ![scheduler-custom-time-scale 001](images/scheduler-custom-time-scale001.png)

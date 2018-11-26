@@ -76,7 +76,7 @@ There is a feature request for this as well: [WinForms Designer DPI Lock](https:
 
 ### Application becomes DPI aware at runtime.
 
->note An indicator for this is that there are dots after the strings in the application, despite that there is enough space. 
+>tip An indicator for this is that there are dots after the strings in the application, despite that there is enough space. 
 
 Telerik’s document processing library (RadSpreadProcessing, RadWordProecessing or RadPdfProcessing) is referencing assemblies which are used in WPF. All WPF-based applications are DPI-aware by default and this is declared in the manifests of the WPF assemblies. Therefore, if you use the document processing library in WinForms applications that are not DPI-aware, they might suddenly become DPI-aware at run time when you instantiate a type from the DPL assemblies (when the DPL assemblies are loaded by the CLR, this will also load the WPF assemblies which they depend on, which in turn will make the application DPI-aware). If you intend to use your application on machines where the DPI scaling is larger than 100 percent, you should explicitly set the application to be DPI-unaware:
 

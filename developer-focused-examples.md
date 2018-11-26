@@ -5,7 +5,7 @@ description: Additional examples built on top the Telerik UI for for WinForms co
 slug: winforms/developer-focused-examples
 tags: developer, sdk, examples
 published: True
-position: 24
+position: 16
 ---
 
 # Developer Focused Examples
@@ -36,7 +36,7 @@ Additional demos for some of the Telerik UI for Winforms controls are available 
 
 * [RadVirtualGrid]({%slug winforms/virtualgrid/developer-focused-examples%})
 
->note We are committed to updating the [GitHub repository](https://github.com/telerik/winforms-sdk) on regular basis. Everyone is also welcome to contribute to it.
+>tip We are committed to updating the [GitHub repository](https://github.com/telerik/winforms-sdk) on regular basis. Everyone is also welcome to contribute to it.
 
 ## See Also
 

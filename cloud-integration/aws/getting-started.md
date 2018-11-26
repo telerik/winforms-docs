@@ -26,7 +26,7 @@ To create an account go to the [AWS website](https://aws.amazon.com/) and create
 
 This is straightforward as well. Just [download the installer](https://aws.amazon.com/visualstudio/) and follow the instructions. Once this is done open Visual Studio.
 
->note There are 2 versions of the SDK for VS2013/VS2015 and VS2017.
+>tip There are 2 versions of the SDK for VS2013/VS2015 and VS2017.
 
 Now you should see the AWS start page:
 

@@ -31,7 +31,7 @@ The aforementioned help article explains detailed steps how to create a custom n
 
 Thanks to the UI virtualization mechanism only the currently visible node elements are created and they are further reused when needed. A node element is reused in other nodes if they are compatible with them. The important part here is to override the **IsCompatible** method of the **TreeNodeElement**. This method expects a Boolean result indicating whether the visual node element is applicable to the passed **RadTreeNode**. Thus, you can check the RadTreeNode.**Level** property indicating the hierarchical level of the node and determine which visual node element to use.  
 
->note A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/TreeView/TreeViewDifferentCustomNodes).
+>tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/TreeView/TreeViewDifferentCustomNodes).
 
 # See Also
 

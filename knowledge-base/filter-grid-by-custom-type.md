@@ -488,7 +488,7 @@ Now, you can filter by your custom property as if it is a numeric field:
 
 ![filter-grid-by-custom-type 002](images/filter-grid-by-custom-type002.gif)
 
->note This article demonstrates just a sample approach how you can handle filtering by custom types. You can extend this example and cover any custom scenario that you have.
+>tip This article demonstrates just a sample approach how you can handle filtering by custom types. You can extend this example and cover any custom scenario that you have.
 
 # See Also
 

@@ -194,7 +194,7 @@ End Class
 
 {{endregion}} 
 
->note A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/Diagram/CustomDraggingService).
+>tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/Diagram/CustomDraggingService).
 
 # See Also
 * [Drag and Drop from Another Control]({%slug winforms/diagram/drag-and-drop/drag-and-drop-from-another-control%})

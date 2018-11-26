@@ -30,7 +30,7 @@ An example demonstrating how the default aggregate function of a node dragged in
 
 The data provider used in **RadPivotGrid** exposes the **PrepareDescriptionForField** event. The event arguments provide access to the aggregate description and its function. 
 
->note Not all aggregate functions are suitable for all of the fields and this depends on their type. For example, applying the *Average* function to a string field this will cause an error.
+>tip Not all aggregate functions are suitable for all of the fields and this depends on their type. For example, applying the *Average* function to a string field this will cause an error.
  
 The example demonstrates how the event can be handled by also performing an additional check for the data type of the field.
 

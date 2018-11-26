@@ -367,7 +367,7 @@ End Class
 
 {{endregion}}
 
->note A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/GanttView/RadGanttViewSnapping). 
+>tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/GanttView/RadGanttViewSnapping). 
 
 # See Also
 * [Indicate Special Days in RadGanttView](https://www.telerik.com/support/kb/winforms/ganttview-/details/indicate-special-days-in-radganttview)

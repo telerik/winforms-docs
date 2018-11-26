@@ -31,9 +31,9 @@ Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) 
 
 You can now add the **Microsoft.Azure.CognitiveServices.Language** NuGet package corresponding which provides access to the Microsoft Cognitive Services Language APIs.
 
->note Mark the __Include Prerelease__ checkbox.
+>tip Mark the __Include Prerelease__ checkbox.
 
->note The package requires a .NET Framework version equal or higher than **4.5.2**. If you're using a lower version, you will need to call the HTTP endpoints directly from C# and serialize and deserialize the requests and responses similarly to the example found in the [Image Analysis]({%slug cloud-services/azure/image-analysis%}) article.
+>tip The package requires a .NET Framework version equal or higher than **4.5.2**. If you're using a lower version, you will need to call the HTTP endpoints directly from C# and serialize and deserialize the requests and responses similarly to the example found in the [Image Analysis]({%slug cloud-services/azure/image-analysis%}) article.
 
 ![](images/azure-text-analysis003.png)
 

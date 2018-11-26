@@ -3,17 +3,31 @@ url: "http://docs.telerik.com/devtools/winforms"
 site_name: WinForms
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock]
+exclude_navigation: [knowledge-base/*]
+
 navigation:
 ## List your directory names and order here, like this:
+    installation-and-upgrades:
+        title: Installation and Upgrades 
+        position: 3
+    visual-studio-integration:
+        title: Visual Studio Integration 
+        position: 4
+    visual-studio-integration/visual-studio-extensions:
+        title: Visual Studio Extensions 
+        position: 4
+    deployment-and-distribution:
+        title: Deployment and Distribution 
+        position: 11
     winforms-converter:
-        title: Convert your application to UI for WinForms 
-        position: 30
+        title: WinForms application modernization wizard
+        position: 5
     winforms-converter/supported-controls:
         title: Supported Controls
         position: 3
     cloud-integration:
         title: Cloud Integration
-        position: 35
+        position: 15
     cloud-integration/aws:
         title: Amanzon Web Services (AWS)
         position: 3
@@ -32,1243 +46,1243 @@ navigation:
     cloud-integration/google-cloud:
         title: Google Cloud
         position: 2
-    installation-deployment-and-distribution:
-        title: Installation, Deployment and Distribution
-        position: 40
+    controls:
+        title: "Controls"
+        position: 6     
+    "knowledge-base":
+        title: "Knowledge Base"
+        position: 10
     analytics:
         title: Analytics
-        position: 45
-    installation-deployment-and-distribution/visual-studio-extensions:
-        title: Visual Studio Extensions
-        position: 6
+        position: 14
     licensing:
         title: Licensing
-        position: 50
-    barcode: 
+        position: 12
+    controls/barcode: 
         title: Barcode
         position: 55
-    barcode/barcode-types: 
+    controls/barcode/barcode-types: 
         title: Barcode Types
         position: 3
-    barcode/how-to: 
+    controls/barcode/how-to: 
         title: How To
         position: 4
-    barcode/barcode-types/1d-barcodes:
+    controls/barcode/barcode-types/1d-barcodes:
         title: 1D Barcodes
         position: 1
-    barcode/barcode-types/2d-barcodes:
+    controls/barcode/barcode-types/2d-barcodes:
         title: 2D Barcodes
         position: 2
-    buttons:
+    controls/buttons:
         title: Buttons
         position: 60
-    buttons/button: 
+    controls/buttons/button: 
         title: Button
         position: 0
-    buttons/button/customizing-appearance:
+    controls/buttons/button/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    buttons/checkbox:
+    controls/buttons/checkbox:
         title: CheckBox
         position: 1    
-    buttons/checkbox/customizing-appearance:
+    controls/buttons/checkbox/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    buttons/dropdownbutton:
+    controls/buttons/dropdownbutton:
         title: DropDownButton
         position: 2
-    buttons/dropdownbutton/customizing-appearance:
+    controls/buttons/dropdownbutton/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    buttons/radiobutton:
+    controls/buttons/radiobutton:
         title: RadioButton
         position: 3
-    buttons/radiobutton/customizing-appearance:
+    controls/buttons/radiobutton/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    buttons/repeatbutton:
+    controls/buttons/repeatbutton:
         title: RepeatButton
         position: 4
-    buttons/repeatbutton/customizing-appearance:
+    controls/buttons/repeatbutton/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    buttons/splitbutton:
+    controls/buttons/splitbutton:
         title: SplitButton
         position: 5
-    buttons/splitbutton/customizing-appearance:
+    controls/buttons/splitbutton/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    buttons/togglebutton:
+    controls/buttons/togglebutton:
         title: ToggleButton
         position: 6
-    buttons/togglebutton/customizing-appearance:
+    controls/buttons/togglebutton/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    buttons/toggleswitch:
+    controls/buttons/toggleswitch:
         title: ToggleSwitch
         position: 8
-    buttons/toggleswitch/customizing-appearance:
+    controls/buttons/toggleswitch/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    bindingnavigator:
+    controls/bindingnavigator:
         title: BindingNavigator
         position: 70
-    bindingnavigator/design-time:
+    controls/bindingnavigator/design-time:
         title: Design Time
         position: 3
-    bindingnavigator/customizing-appearance:
+    controls/bindingnavigator/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    calendar:
+    controls/calendar:
         title: Calendar
         position: 80
-    calendar/customizing-appearance:
+    controls/calendar/customizing-appearance:
         title: Customizing Appearance
         position: 6
-    calendar/customizing-behavior:
+    controls/calendar/customizing-behavior:
         title: Customizing Behavior
         position: 7
-    calendar/features:
+    controls/calendar/features:
         title: Features
         position: 5
-    calendar/design-time:
+    controls/calendar/design-time:
         title: Design Time
         position: 2
-    calendar/localization:
+    controls/calendar/localization:
         title: Localization
         position: 8
-    cardview:
+    controls/cardview:
         title: CardView
         position: 90
-    cardview/populating-with-data:
+    controls/cardview/populating-with-data:
         title: Populating with Data
         position: 4
-    cardview/features:
+    controls/cardview/features:
         title: Features
         position: 5
-    cardview/customizing-appearance:
+    controls/cardview/customizing-appearance:
         title: Customzing Appearance
         position: 6
-    cardview/editors:
+    controls/cardview/editors:
         title: Editors
         position: 7
-    carousel:
+    controls/carousel:
         title: Carousel
         position: 100
-    carousel/using-radcarousel:
+    controls/carousel/using-radcarousel:
         title: Using RadCarousel
         position: 5
-    carousel/customizing-appearance:
+    controls/carousel/customizing-appearance:
         title: Customizing Appearance
         position: 6
-    carousel/design-time:
+    controls/carousel/design-time:
         title: Design-time
         position: 2
-    chart:
+    controls/chart:
         title: Chart (obsolete)
         position: 110
-    chart/getting-started:
+    controls/chart/getting-started:
         title: Getting Started
         position: 0
-    chart/changes-and-backward-compatibility:
+    controls/chart/changes-and-backward-compatibility:
         title: Changes And Backward Compatibility
         position: 1
-    chart/features:
+    controls/chart/features:
         title: Features
         position: 2
-    chart/understanding-radchart-types:
+    controls/chart/understanding-radchart-types:
         title: Understanding RadChart Types
         position: 3
-    chart/understanding-radchart-elements:
+    controls/chart/understanding-radchart-elements:
         title: Understanding RadChart Elements
         position: 4
-    chart/understanding-radchart-ui:
+    controls/chart/understanding-radchart-ui:
         title: Understanding RadChart UI
         position: 5
-    chart/building-radcharts:
+    controls/chart/building-radcharts:
         title: Binding RadCharts
         position: 6
-    chart/styling-radcharts:
+    controls/chart/styling-radcharts:
         title: Styling RadCharts
         position: 7
-    chart/advanced-topics:
+    controls/chart/advanced-topics:
         title: Advanced Topics
         position: 8
-    chart/how-to:
+    controls/chart/how-to:
         title: How To
         position: 8
-    chartview:
+    controls/chartview:
         title: ChartView
         position: 120
-    chartview/design-time:
+    controls/chartview/design-time:
         title: Design Time
         position: 3
-    chartview/series-types:
+    controls/chartview/series-types:
         title: Series Types
         position: 6
-    chartview/series-types/series-types:
+    controls/chartview/series-types/series-types:
         title: Overview
         position: 0		
-    chartview/series-types/indicators:
+    controls/chartview/series-types/indicators:
         title: Indicators
         position: 20
-    chartview/series-types/indicators/indicators:
+    controls/chartview/series-types/indicators/indicators:
         title: Overview
         position: 0
-    chartview/axes:
+    controls/chartview/axes:
         title: Axes
         position: 7
-    chartview/axes/axes:
+    controls/chartview/axes/axes:
         title: Overview
         position: 0
-    chartview/features:
+    controls/chartview/features:
         title: Features
         position: 8			
-    chartview/features/annotations:
+    controls/chartview/features/annotations:
         title: Annotations
         position: 11	
-    chartview/features/annotations/annotations:
+    controls/chartview/features/annotations/annotations:
         title: Overview
         position: 0
-    chartview/populating-with-data:
+    controls/chartview/populating-with-data:
         title: Populating with Data
         position: 9		
-    chartview/customization:
+    controls/chartview/customization:
         title: Customization
         position: 10
-    chartview/context-menu:
+    controls/chartview/context-menu:
         title: Context Menu
         position: 11		
-    chartview/printing-support:
+    controls/chartview/printing-support:
         title: Printing Support
         position: 12
-    chat:
+    controls/chat:
         title: Chat UI
         position: 125
-    chat/chat-items:
+    controls/chat/chat-items:
         title: Chat Items
         position: 3
-    chat/integration:
+    controls/chat/integration:
         title: Integration
         position: 4
-    chat/customizing-appearance:
+    controls/chat/customizing-appearance:
         title: Customizing Appearance
         position: 7
-    chat/localization:
+    controls/chat/localization:
         title: Localization
         position: 8
-    checkedlistbox:
+    controls/checkedlistbox:
         title: CheckedListBox
         position: 130
-    clock:
+    controls/clock:
         title: Clock
         position: 140
-    clock/customizing-appearance:
+    controls/clock/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    commandbar:
+    controls/commandbar:
         title: CommandBar
         position: 150
-    commandbar/customizing-appearance:
+    controls/commandbar/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    commandbar/how-to:
+    controls/commandbar/how-to:
         title: How To
         position: 6
-    commandbar/localization:
+    controls/commandbar/localization:
         title: Localization
         position: 7
-    dataentry:
+    controls/dataentry:
         title: DataEntry
         position: 160
-    dataentry/how-to:
+    controls/dataentry/how-to:
         title: How To
         position: 7
-    dataentry/customizing-appearance:
+    controls/dataentry/customizing-appearance:
         title: Customizing Appearance
         position: 8
-    datafilter:
+    controls/datafilter:
         title: DataFilter
         position: 161
-    datafilter/working-with-descriptor-items:
+    controls/datafilter/working-with-descriptor-items:
         title: Working with Descriptor Items
         position: 4
-    datafilter/customizing-appearance:
+    controls/datafilter/customizing-appearance:
         title: Customizing Appearance
         position: 5		
-    datafilter/editing:
+    controls/datafilter/editing:
         title: Editing
         position: 7
-    datafilter/localization:
+    controls/datafilter/localization:
         title: Localization
         position: 10
-    datalayout:
+    controls/datalayout:
         title: DataLayout
         position: 170
-    datalayout/customizing-appearance:
+    controls/datalayout/customizing-appearance:
         title: Customizing Appearance
         position: 10
-    diagram:
+    controls/diagram:
         title: Diagram
         position: 180
-    diagram/diagram-items:
+    controls/diagram/diagram-items:
         title: Diagram Items
         position: 8
-    diagram/diagram-items/connections:
+    controls/diagram/diagram-items/connections:
         title: Connections
         position: 1
-    diagram/data-binding:
+    controls/diagram/data-binding:
         title: Data Binding
         position: 10 
-    diagram/items-manipulation:
+    controls/diagram/items-manipulation:
         title: Items Manipulation
         position: 11
-    diagram/features:
+    controls/diagram/features:
         title: Features
         position: 12
-    diagram/events:
+    controls/diagram/events:
         title: Events
         position: 13
-    diagram/diagram-tools:
+    controls/diagram/diagram-tools:
         title: Diagram Tools
         position: 14
-    diagram/drag-and-drop:
+    controls/diagram/drag-and-drop:
         title: Drag and Drop
         position: 15
-    dock:
+    controls/dock:
         title: Dock
         position: 190
-    dock/design-time:
+    controls/dock/design-time:
         title: Design-Time
         position: 2
-    dock/architecture-and-features:
+    controls/dock/architecture-and-features:
         title: Architecture and Features
         position: 3
-    dock/object-model:
+    controls/dock/object-model:
         title: Object Model
         position: 4
-    dock/docking-usercontrols-and-forms:
+    controls/dock/docking-usercontrols-and-forms:
         title: Docking UserControls and Forms
         position: 5
-    dock/mdi-mode:
+    controls/dock/mdi-mode:
         title: MDI Mode
         position: 6
-    dock/loading-and-saving-layouts:
+    controls/dock/loading-and-saving-layouts:
         title: Loading and Saving Layouts
         position: 7		
-    dock/localization:
+    controls/dock/localization:
         title: Localization
         position: 9
-    dock/customizing-appearance:
+    controls/dock/customizing-appearance:
         title: Customizing Appearance
         position: 8
-    desktopalert:
+    controls/desktopalert:
         title: DesktopAlert
         position: 200
-    desktopalert/customizing-appearance:
+    controls/desktopalert/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    dropdown-listcontrol-and-checkeddropdownlist:
+    controls/dropdown-listcontrol-and-checkeddropdownlist:
         title: DropDown and ListControl
         position: 210
-    dropdown-listcontrol-and-checkeddropdownlist/dropdownlist:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist:
         title: DropDownList
         position: 1
-    dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data:
         title: Populating with Data
         position: 5
-    dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/customizing-appearance:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/customizing-appearance:
         title: Customizing Appearance
         position: 4
-    dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/features:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/features:
         title: Features
         position: 6
-    dropdown-listcontrol-and-checkeddropdownlist/listcontrol:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/listcontrol:
         title: ListControl
         position: 2
-    dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop:
         title: Drag and Drop
         position: 7
-    dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data:
         title: Populating with Data
         position: 4
-    dropdown-listcontrol-and-checkeddropdownlist/listcontrol/customizing-appearance:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/customizing-appearance:
         title: Customizing Appearance
         position: 8
-    dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features:
         title: Features
         position: 9
-    dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist:
         title: CheckedDropDownList
         position: 3
-    dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/populating-with-data:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/populating-with-data:
         title: Populating with Data
         position: 4
-    dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/customizing-appearance:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to:
+    controls/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to:
         title: How-To
         position: 7
-    editors:
+    controls/editors:
         title: Editors
         position: 220	
-    editors/autocompletebox:
+    controls/editors/autocompletebox:
         title: AutoCompleteBox
         position: 0
-    editors/autocompletebox/customizing-appearance:
+    controls/editors/autocompletebox/customizing-appearance:
         title: Customizing Appearance
         position: 10				
-    editors/browseeditor:
+    controls/editors/browseeditor:
         title: BrowseEditor
         position: 1
-    editors/browseeditor/customizing-appearance:
+    controls/editors/browseeditor/customizing-appearance:
         title: Customizing Appearance
         position: 7
-    editors/browseeditor/design-time:
+    controls/editors/browseeditor/design-time:
         title: Design Time
         position: 2
-    editors/calculatordropdown:
+    controls/editors/calculatordropdown:
         title: CalculatorDropDown
         position: 2
-    editors/calculatordropdown/design-time:
+    controls/editors/calculatordropdown/design-time:
         title: Design Time
         position: 2
-    editors/calculatordropdown/customizing-appearance:
+    controls/editors/calculatordropdown/customizing-appearance:
         title: Customizing Appearance
         position: 4
-    editors/colorbox:
+    controls/editors/colorbox:
         title: ColorBox 
         position: 3
-    editors/colorbox/customizing-appearance:
+    controls/editors/colorbox/customizing-appearance:
         title: Customizing Appearance
         position: 6		
-    editors/datetimepicker:
+    controls/editors/datetimepicker:
         title: DateTimePicker 
         position: 4
-    editors/datetimepicker/internationalization:
+    controls/editors/datetimepicker/internationalization:
         title: Internationalization 
         position: 8
-    editors/datetimepicker/how-to:
+    controls/editors/datetimepicker/how-to:
         title: How-to 
         position: 9
-    editors/datetimepicker/customizing-appearance:
+    controls/editors/datetimepicker/customizing-appearance:
         title: Customzing Appearance
         position: 10
-    editors/maskededitbox:
+    controls/editors/maskededitbox:
         title: MaskedEditBox
         position: 5
-    editors/maskededitbox/design-time:
+    controls/editors/maskededitbox/design-time:
         title: Design Time
         position: 2
-    editors/maskededitbox/customizing-appearance:
+    controls/editors/maskededitbox/customizing-appearance:
         title: Customizing Appearance
         position: 11
-    editors/spineditor:
+    controls/editors/spineditor:
         title: SpinEditor
         position: 6
-    editors/spineditor/customizing-appearance:
+    controls/editors/spineditor/customizing-appearance:
         title: Customzing Appearance
         position: 5
-    editors/textbox:
+    controls/editors/textbox:
         title: TextBox
         position: 7
-    editors/textbox/customizing-appearance:
+    controls/editors/textbox/customizing-appearance:
         title: Customizing Appearance
         position: 6		
-    editors/textboxcontrol:
+    controls/editors/textboxcontrol:
         title: TextBoxControl
         position: 8
-    editors/textboxcontrol/customizing-appearance:
+    controls/editors/textboxcontrol/customizing-appearance:
         title: Customizing Appearance
         position: 10
-    editors/timepicker:
+    controls/editors/timepicker:
         title: TimePicker
         position: 9
-    editors/timepicker/customizing-appearance:
+    controls/editors/timepicker/customizing-appearance:
         title: Customizing Appearance
         position: 8
-    editors/popupeditor:
+    controls/editors/popupeditor:
         title: PopupEditor 
         position: 10
-    forms-and-dialogs:
+    controls/forms-and-dialogs:
         title: Forms and Dialogs
         position: 230
-    forms-and-dialogs/form:
+    controls/forms-and-dialogs/form:
         title: Form
         position: 1
-    forms-and-dialogs/ribbonform:
+    controls/forms-and-dialogs/ribbonform:
         title: RibbonForm
         position: 2
-    forms-and-dialogs/ribbonform/customizing-appearance:
+    controls/forms-and-dialogs/ribbonform/customizing-appearance:
         title: Customizing Appearance
         position: 4
-    forms-and-dialogs/shapedform:
+    controls/forms-and-dialogs/shapedform:
         title: ShapedForm
         position: 3
-    forms-and-dialogs/colordialog:
+    controls/forms-and-dialogs/colordialog:
         title: ColorDialog
         position: 4
-    forms-and-dialogs/messagebox:
+    controls/forms-and-dialogs/messagebox:
         title:  MessageBox
         position: 5
-    forms-and-dialogs/statusstrip:
+    controls/forms-and-dialogs/statusstrip:
         title:  StatusStrip
         position: 6
-    forms-and-dialogs/templates:
+    controls/forms-and-dialogs/templates:
         title:  Templates
         position: 7
-    forms-and-dialogs/radtitlebar:
+    controls/forms-and-dialogs/radtitlebar:
         title:  RadTitleBar
         position: 8
-    ganttview:
+    controls/ganttview:
         title: GanttView
         position: 240
-    ganttview/structure:
+    controls/ganttview/structure:
         title: Structure
         position: 1
-    ganttview/working-with-data:
+    controls/ganttview/working-with-data:
         title: Working with Data
         position: 3
-    ganttview/design-time:
+    controls/ganttview/design-time:
         title: Design time
         position: 2
-    ganttview/context-menu:
+    controls/ganttview/context-menu:
         title: Context Menu
         position: 4
-    ganttview/formatting:
+    controls/ganttview/formatting:
         title: Customizing Appearance
         position: 5
-    ganttview/editing:
+    controls/ganttview/editing:
         title: Editing
         position: 6
-    ganttview/usability:
+    controls/ganttview/usability:
         title: Usability
         position: 7
-    ganttview/printing-support:
+    controls/ganttview/printing-support:
         title: Printing Support
         position: 8
-    ganttview/timeline:
+    controls/ganttview/timeline:
         title: Timeline
         position: 9
-    ganttview/drag-and-drop:
+    controls/ganttview/drag-and-drop:
         title: Drag and Drop
         position: 10
-    ganttview/custom-items:
+    controls/ganttview/custom-items:
         title: Custom Items
         position: 11
-    gauges:
+    controls/gauges:
         title: Gauges
         position: 250
-    gauges/bulletgraph:
+    controls/gauges/bulletgraph:
         title: Bullet Graph
         position: 0
-    gauges/bulletgraph/design-time:
+    controls/gauges/bulletgraph/design-time:
         title: Design Time
         position: 2		
-    gauges/lineargauge:
+    controls/gauges/lineargauge:
         title: Linear Gauge
         position: 1
-    gauges/lineargauge/design-time:
+    controls/gauges/lineargauge/design-time:
         title: Design Time
         position: 2
-    gauges/lineargauge/elements:
+    controls/gauges/lineargauge/elements:
         title: Elements
         position: 4
-    gauges/radialgauge:
+    controls/gauges/radialgauge:
         title: Radial Gauge
         position: 2
-    gauges/radialgauge/design-time:
+    controls/gauges/radialgauge/design-time:
         title: Design Time
         position: 2
-    gauges/radialgauge/understanding-gauge-elements:
+    controls/gauges/radialgauge/understanding-gauge-elements:
         title: Understanding Gauge Elements
         position: 4
-    gridview:
+    controls/gridview:
         title: GridView
         position: 260
-    gridview/fundamentals:
+    controls/gridview/fundamentals:
         title: Fundamentals
         position: 2
-    gridview/columns:
+    controls/gridview/columns:
         title: Columns
         position: 3
-    gridview/columns/column-types:
+    controls/gridview/columns/column-types:
         title: Column Types
         position: 3
      
-    gridview/rows:
+    controls/gridview/rows:
         title: Rows
         position: 4
-    gridview/rows/how-to:
+    controls/gridview/rows/how-to:
         title: How To
         position: 19  
-    gridview/cells:
+    controls/gridview/cells:
         title: Cells
         position: 5
-    gridview/cells/formating-examples:
+    controls/gridview/cells/formating-examples:
         title: Formatting Examples
         position: 10
-    gridview/drag-and-drop:
+    controls/gridview/drag-and-drop:
         title: Drag and Drop
         position: 5
-    gridview/editors:
+    controls/gridview/editors:
         title: Editors
         position: 6
-    gridview/editors/how-to:
+    controls/gridview/editors/how-to:
         title: How-To
         position: 7
-    gridview/context-menus:
+    controls/gridview/context-menus:
         title: Context Menus
         position: 7
-    gridview/populating-with-data:
+    controls/gridview/populating-with-data:
         title: Populating with Data
         position: 8
-    gridview/hierarchical-grid:
+    controls/gridview/hierarchical-grid:
         title: Hierarchical Grid
         position: 9
-    gridview/hierarchical-grid/how-to:
+    controls/gridview/hierarchical-grid/how-to:
         title: How-To
         position: 10
-    gridview/selection:
+    controls/gridview/selection:
         title: Selection
         position: 10
-    gridview/scrolling:
+    controls/gridview/scrolling:
         title: Scrolling
         position: 12
-    gridview/sorting:
+    controls/gridview/sorting:
         title: Sorting
         position: 13
-    gridview/grouping:
+    controls/gridview/grouping:
         title: Grouping
         position: 14
-    gridview/filtering:
+    controls/gridview/filtering:
         title: Filtering
         position: 15
-    gridview/paging:
+    controls/gridview/paging:
         title: Paging
         position: 16
-    gridview/expression-editor:
+    controls/gridview/expression-editor:
         title: Expression Editor
         position: 17
-    gridview/insert-update-delete-records:
+    controls/gridview/insert-update-delete-records:
         title: Insert/Update/Delete Records
         position: 18
-    gridview/view-definitions:
+    controls/gridview/view-definitions:
         title: View Definitions
         position: 19
-    gridview/virtual-mode:
+    controls/gridview/virtual-mode:
         title: Virtual Mode
         position: 20
-    gridview/exporting-data:
+    controls/gridview/exporting-data:
         title: Exporting Data
         position: 21
-    gridview/exporting-data/how-to:
+    controls/gridview/exporting-data/how-to:
         title: How-To
         position: 21
-    gridview/design-time-support:
+    controls/gridview/design-time-support:
         title: Design-time
         position: 2
-    gridview/end-user-capabilities:
+    controls/gridview/end-user-capabilities:
         title: End-user Capabilities
         position: 23
-    gridview/styling-and-appearance:
+    controls/gridview/styling-and-appearance:
         title: Styling and Appearance
         position: 24
-    gridview/localization:
+    controls/gridview/localization:
         title: Localization
         position: 25
-    gridview/save-and-load-layout:
+    controls/gridview/save-and-load-layout:
         title: Save and Load Layout
         position: 26
-    gridview/printing-support:
+    controls/gridview/printing-support:
         title: Printing Support
         position: 27
-    image-editor:
+    controls/image-editor:
         title: Image Editor
         position: 269	
-    image-editor/features:
+    controls/image-editor/features:
         title: Features
         position: 3			
-    layoutcontrol:
+    controls/layoutcontrol:
         title: LayoutControl
         position: 270
-    layoutcontrol/drag-and-drop:
+    controls/layoutcontrol/drag-and-drop:
         title: Drag and Drop
         position: 9
-    listview:
+    controls/listview:
         title: ListView
         position: 280
-    listview/working-with-design-time:
+    controls/listview/working-with-design-time:
         title: Design Time
         position: 3
-    listview/features:
+    controls/listview/features:
         title: Features
         position: 5
-    listview/populating-with-data:
+    controls/listview/populating-with-data:
         title: Populating with Data
         position: 6
-    listview/drag-and-drop:
+    controls/listview/drag-and-drop:
         title: Drag and Drop
         position: 7
-    listview/editors:
+    controls/listview/editors:
         title: Editors
         position: 8
-    listview/customizing-appearance:
+    controls/listview/customizing-appearance:
         title: Customizing Appearance
         position: 9
-    listview/export-data:
+    controls/listview/export-data:
         title: Export Data
         position: 10
-    map:
+    controls/map:
         title: Map
         position: 285
-    map/providers:
+    controls/map/providers:
         title: Providers
         position: 3
-    map/providers/bingmaps:
+    controls/map/providers/bingmaps:
         title: Bing Maps
         position: 1
-    map/providers/bingmaps/elevation:
+    controls/map/providers/bingmaps/elevation:
         title: Elevation
         position: 4
-    map/file-readers:
+    controls/map/file-readers:
         title: File Readers
         position: 4
-    map/features:
+    controls/map/features:
         title: Features
         position: 5
-    map/features/layers:
+    controls/map/features/layers:
         title: Layers
         position: 0
-    map/drag-and-drop:
+    controls/map/drag-and-drop:
         title: Drag and Drop
         position: 8
-    map/how-to:
+    controls/map/how-to:
         title: How-To
         position: 9
-    menus:
+    controls/menus:
         title: Menus
         position: 290
-    menus/application-menu:
+    controls/menus/application-menu:
         title: Application Menu
         position: 0 
-    menus/menu:
+    controls/menus/menu:
         title: Menu
         position: 1
-    menus/contextmenu:
+    controls/menus/contextmenu:
         title: ContextMenu
         position: 2
-    menus/menu/usability:
+    controls/menus/menu/usability:
         title: Usability
         position: 4
-    menus/menu/design-time:
+    controls/menus/menu/design-time:
         title: Design Time
         position: 2
-    menus/menu/working-with-radmenu-items:
+    controls/menus/menu/working-with-radmenu-items:
         title: Working with Menu Items
         position: 4
-    menus/menu/styling-and-appearance:
+    controls/menus/menu/styling-and-appearance:
         title: Styling and Apppearance
         position: 5
-    menus/menu/menu-merge:
+    controls/menus/menu/menu-merge:
         title: Menu Merge
         position: 6
-    multicolumncombobox:
+    controls/multicolumncombobox:
         title: MultiColumnComboBox
         position: 300
-    multicolumncombobox/populating-with-data:
+    controls/multicolumncombobox/populating-with-data:
         title: Populating with data
         position: 4
-    multicolumncombobox/features:
+    controls/multicolumncombobox/features:
         title: Features
         position: 5
-    multicolumncombobox/styling-and-appearance:
+    controls/multicolumncombobox/styling-and-appearance:
         title: Styling and Appearance
         position: 8		
-    multicolumncombobox/how-to:
+    controls/multicolumncombobox/how-to:
         title: How-To
         position: 9	
-    pageview:
+    controls/pageview:
         title: PageView
         position: 310
-    pageview/drag-and-drop:
+    controls/pageview/drag-and-drop:
         title: Drag and Drop
         position: 5
-    pageview/stripview:
+    controls/pageview/stripview:
         title: StripView
         position: 5
-    pageview/outlookview:
+    controls/pageview/outlookview:
         title: OutlookView
         position: 6
-    pageview/explorerbarview:
+    controls/pageview/explorerbarview:
         title: ExplorerBarView
         position: 7
-    pageview/stackview:
+    controls/pageview/stackview:
         title: StackView
         position: 8
-    pageview/backstageview:
+    controls/pageview/backstageview:
         title: BackstageView
         position: 9
-    pageview/navigation-view:
+    controls/pageview/navigation-view:
         title: NavigationView
         position: 10
-    pageview/how-to:
+    controls/pageview/how-to:
         title: How-To
         position: 11
-    pageview/localization:
+    controls/pageview/localization:
         title: Localization
         position: 12		
-    panels-and-labels:
+    controls/panels-and-labels:
         title: Panels and Labels
         position: 320
-    panels-and-labels/groupbox:
+    controls/panels-and-labels/groupbox:
         title: GroupBox
         position: 0
-    panels-and-labels/groupbox/customizing-appearance:
+    controls/panels-and-labels/groupbox/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    panels-and-labels/label:
+    controls/panels-and-labels/label:
         title: Label
         position: 1
-    panels-and-labels/label/customizing-appearance:
+    controls/panels-and-labels/label/customizing-appearance:
         title: Customizing Appearance
         position: 6
-    panels-and-labels/panel:
+    controls/panels-and-labels/panel:
         title: Panel
         position: 2
-    panels-and-labels/panel/customizing-appearance:
+    controls/panels-and-labels/panel/customizing-appearance:
         title: Customizing Appearance
         position: 5
-    panels-and-labels/collapsiblepanel:
+    controls/panels-and-labels/collapsiblepanel:
         title: Collapsible Panel
         position: 3
-    panels-and-labels/collapsiblepanel/customizing-appearance:
+    controls/panels-and-labels/collapsiblepanel/customizing-appearance:
         title: Customizing Appearance
         position: 6
-    panels-and-labels/groupbox/advanced:
+    controls/panels-and-labels/groupbox/advanced:
         title: Advanced
         position: 4		
-    panorama:
+    controls/panorama:
         title: Panorama
         position: 330
-    panorama/drad-and-drop:
+    controls/panorama/drad-and-drop:
         title: Drag and Drop
         position: 10
-    panorama/customizing-appearance:
+    controls/panorama/customizing-appearance:
         title: Customizing Appearance
         position: 7
-    pdfprocessing:
+    controls/pdfprocessing:
         title: PdfProcessing 
         position: 340
-    pdfviewer:
+    controls/pdfviewer:
         title: PdfViewer
         position: 350
-    pdfviewer/structure:
+    controls/pdfviewer/structure:
         title: Structure
         position: 1
-    pdfviewer/features:
+    controls/pdfviewer/features:
         title: Features
         position: 5	
-    pdfviewer/features/text:
+    controls/pdfviewer/features/text:
         title: Text Manipulation
         position: 3
-    pdfviewer/ui:
+    controls/pdfviewer/ui:
         title: UI
         position: 8	
-    pdfviewer/customize-and-extensibility:
+    controls/pdfviewer/customize-and-extensibility:
         title: Customize and Extensibility
         position: 9
-    pdfviewer/how-to:
+    controls/pdfviewer/how-to:
         title: How-To
         position: 10	
-    pivotgrid:
+    controls/pivotgrid:
         title: PivotGrid 
         position: 360
-    pivotgrid/design-time:
+    controls/pivotgrid/design-time:
         title: Design-Time
         position: 2
-    pivotgrid/populating-with-data:
+    controls/pivotgrid/populating-with-data:
         title: Populating with Data
         position: 4
-    pivotgrid/customizing-appearance:
+    controls/pivotgrid/customizing-appearance:
         title: Customizing Appearance
         position: 6	
-    pivotgrid/filtering:
+    controls/pivotgrid/filtering:
         title: Filtering
         position: 8
-    pivotgrid/drag-and-drop:
+    controls/pivotgrid/drag-and-drop:
         title: Drag and Drop
         position: 15
-    pivotgrid/printing-support:
+    controls/pivotgrid/printing-support:
         title: Printing Support
         position: 19
-    pivotgrid/pivot-field-list:
+    controls/pivotgrid/pivot-field-list:
         title: Pivot Field List
         position: 20
-    pivotgrid/dialogs:
+    controls/pivotgrid/dialogs:
         title: Dialogs
         position: 21
-    pivotgrid/localization:
+    controls/pivotgrid/localization:
         title: Localization
         position: 22
-    pivotgrid/exporting-data:
+    controls/pivotgrid/exporting-data:
         title: Exporting Data
         position: 23
-    pivotgrid/save-and-load-layout:
+    controls/pivotgrid/save-and-load-layout:
         title: Save and Load Layout
         position: 24		
-    propertygrid:
+    controls/propertygrid:
         title: PropertyGrid
         position: 370
-    propertygrid/populating-with-data:
+    controls/propertygrid/populating-with-data:
         title: Populating with Data
         position: 4
-    propertygrid/customizing-appearance:
+    controls/propertygrid/customizing-appearance:
         title: Customizing Appearance
         position: 8
-    propertygrid/features:
+    controls/propertygrid/features:
         title: Features
         position: 9
-    propertygrid/editors:
+    controls/propertygrid/editors:
         title: Editors
         position: 10
-    propertygrid/export-data:
+    controls/propertygrid/export-data:
         title: Export Data
         position: 15		
-    propertygrid/how-to:
+    controls/propertygrid/how-to:
         title: How-To
         position: 16	
-    rangeselector:
+    controls/rangeselector:
         title: RangeSelector
         position: 380
-    ribbonbar:
+    controls/ribbonbar:
         title: RibbonBar
         position: 390
-    ribbonbar/designing-radribbonbar:
+    controls/ribbonbar/designing-radribbonbar:
         title: Designing RadRibbonBar
         position: 4
-    ribbonbar/styling-radribbonbar:
+    controls/ribbonbar/styling-radribbonbar:
         title: Styling RadRibbonBar
         position: 6
-    ribbonbar/programming-radribbonbar:
+    controls/ribbonbar/programming-radribbonbar:
         title: Programming RadRibbonBar
         position: 7
-    ribbonbar/backstage-view:
+    controls/ribbonbar/backstage-view:
         title: Backstage View
         position: 8
-    ribbonbar/customizing-appearance:
+    controls/ribbonbar/customizing-appearance:
         title: Customizing Appearance
         position: 9
-    ribbonbar/end-user-capabilities:
+    controls/ribbonbar/end-user-capabilities:
         title: End-User Capabilities
         position: 10
-    ribbonbar/how-to:
+    controls/ribbonbar/how-to:
         title: How To
         position: 11
-    ribbonbar/localization:
+    controls/ribbonbar/localization:
         title: Localization
         position: 12
-    richtextbox:
+    controls/richtextbox:
         title: RichTextBox (deprecated)
         position: 400
-    richtextbox/features:
+    controls/richtextbox/features:
         title: Features
         position: 3
-    richtextbox/features/document-elements:
+    controls/richtextbox/features/document-elements:
         title: Document Elements
         position: 1
-    richtextbox/features/import-export:
+    controls/richtextbox/features/import-export:
         title: Import/Export
         position: 10	
-    richtexteditor:
+    controls/richtexteditor:
         title: RichTextEditor
         position: 410	
-    richtexteditor/getting-started:
+    controls/richtexteditor/getting-started:
         title: Getting Started
         position: 2   
-    richtexteditor/document-elements:
+    controls/richtexteditor/document-elements:
         title: Document Elements
         position: 4
-    richtexteditor/document-elements/annotations:		
+    controls/richtexteditor/document-elements/annotations:		
         title: Annotations
         position: 8
-    richtexteditor/features:
+    controls/richtexteditor/features:
         title: Features
         position: 5
-    richtexteditor/features/styles:
+    controls/richtexteditor/features/styles:
         title: Styles
         position: 4
-    richtexteditor/features/merge-documents:
+    controls/richtexteditor/features/merge-documents:
         title: Merge Documents
         position: 3
-    richtexteditor/features/mail-merge:
+    controls/richtexteditor/features/mail-merge:
         title: Mail Merge
         position: 3
-    richtexteditor/features/fields-and-document-variables:
+    controls/richtexteditor/features/fields-and-document-variables:
         title: Fields and Document Variables
         position: 0
-    richtexteditor/features/references:
+    controls/richtexteditor/features/references:
         title: References
         position: 1
-    richtexteditor/import-export:
+    controls/richtexteditor/import-export:
         title: Import/Export
         position: 6
-    richtexteditor/import-export/docx:
+    controls/richtexteditor/import-export/docx:
         title: Docx
         position: 1
-    richtexteditor/import-export/html:
+    controls/richtexteditor/import-export/html:
         title: Html
         position: 2
-    richtexteditor/import-export/pdf:
+    controls/richtexteditor/import-export/pdf:
         title: Pdf
         position: 3
-    richtexteditor/import-export/rtf:
+    controls/richtexteditor/import-export/rtf:
         title: Rtf
         position: 4
-    richtexteditor/import-export/xaml:
+    controls/richtexteditor/import-export/xaml:
         title: Xaml
         position: 5
-    richtexteditor/import-export/plain-text:
+    controls/richtexteditor/import-export/plain-text:
         title: Plain Text
         position: 6
-    richtexteditor/ui-for-applying-rich-text-formatting:
+    controls/richtexteditor/ui-for-applying-rich-text-formatting:
         title: UI for Applying Rich Text Formatting
         position: 7
-    richtexteditor/how-to:
+    controls/richtexteditor/how-to:
         title: How-To
         position: 14
-    rotator:
+    controls/rotator:
         title: Rotator
         position: 420
-    scheduler:
+    controls/scheduler:
         title: Scheduler
         position: 430
-    scheduler/design-time:
+    controls/scheduler/design-time:
         title: Design-Time
         position: 1
-    scheduler/fundamentals:
+    controls/scheduler/fundamentals:
         title: Fundamentals
         position: 2
-    scheduler/data-binding:
+    controls/scheduler/data-binding:
         title: Data Binding
         position: 3
-    scheduler/views:
+    controls/scheduler/views:
         title: Views
         position: 4
-    scheduler/dialogs:
+    controls/scheduler/dialogs:
         title: Dialogs
         position: 4
-    scheduler/appointments-and-dialogs:
+    controls/scheduler/appointments-and-dialogs:
         title: Appointments and dialogs
         position: 5
-    scheduler/drag-and-drop:
+    controls/scheduler/drag-and-drop:
         title: Drag and Drop
         position: 6
-    scheduler/scheduler-navigator:
+    controls/scheduler/scheduler-navigator:
         title: Scheduler Navigator
         position: 7
-    scheduler/end-user-functionality:
+    controls/scheduler/end-user-functionality:
         title: End User Functionality
         position: 9
-    scheduler/context-menu:
+    controls/scheduler/context-menu:
         title: Context Menu
         position: 10
-    scheduler/importing-and-exporting-appointments:
+    controls/scheduler/importing-and-exporting-appointments:
         title: Importing and Exporting Appointments
         position: 11
-    scheduler/localization:
+    controls/scheduler/localization:
         title: Localization
         position: 12
-    scheduler/reminders:
+    controls/scheduler/reminders:
         title: Reminders
         position: 13
-    scheduler/appearance:
+    controls/scheduler/appearance:
         title: Appearance
         position: 14
-    scheduler/how-to:
+    controls/scheduler/how-to:
         title: How-To
         position: 15
-    scheduler/print-support:
+    controls/scheduler/print-support:
         title: Print Support
         position: 16
-    shortcuts:
+    controls/shortcuts:
         title: Shortcuts
         position: 440
-    spellchecker:
+    controls/spellchecker:
         title: SpellChecker
         position: 450
-    splitcontainer:
+    controls/splitcontainer:
         title: SplitContainer
         position: 460
-    splitcontainer/customizing-appearance:
+    controls/splitcontainer/customizing-appearance:
         title: Customizing Appearance
         position: 4
-    spreadprocessing:
+    controls/spreadprocessing:
         title: SpreadProcessing
         position: 470
-    spreadsheet:
+    controls/spreadsheet:
         title: Spreadsheet
         position: 471
-    spreadsheet/features:
+    controls/spreadsheet/features:
         title: Features
         position: 4 
-    spreadsheet/how-to:
+    controls/spreadsheet/how-to:
         title: How-To
         position: 5 
-    spreadstreamprocessing:
+    controls/spreadstreamprocessing:
         title: SpreadStreamProcessing
         position: 475
-    track-and-status-controls:
+    controls/track-and-status-controls:
         title: Track and Status controls
         position: 480
-    track-and-status-controls/progressbar:
+    controls/track-and-status-controls/progressbar:
         title: ProgressBar
         position: 0
-    track-and-status-controls/progressbar/customizing-appearance:
+    controls/track-and-status-controls/progressbar/customizing-appearance:
         title: Customizing Appearance
         position: 4
-    track-and-status-controls/scrollbar:
+    controls/track-and-status-controls/scrollbar:
         title: ScrollBar
         position: 1
-    track-and-status-controls/scrollbar/customizing-appearance:
+    controls/track-and-status-controls/scrollbar/customizing-appearance:
         title: Customizing Appearance
         position: 4
-    track-and-status-controls/trackbar:
+    controls/track-and-status-controls/trackbar:
         title: TrackBar
         position: 2
-    track-and-status-controls/trackbar/customizing-appearance:
+    controls/track-and-status-controls/trackbar/customizing-appearance:
         title: Customizing Appearance
         position: 6
-    track-and-status-controls/waitingbar:
+    controls/track-and-status-controls/waitingbar:
         title: WaitingBar
         position: 4
-    track-and-status-controls/waitingbar/customizing-appearance:
+    controls/track-and-status-controls/waitingbar/customizing-appearance:
         title: Customizing Appearance
         position: 7
-    track-and-status-controls/rating:
+    controls/track-and-status-controls/rating:
         title: Rating
         position: 5
-    treeview:
+    controls/treeview:
         title: TreeView
         position: 490
-    treeview/design-time:
+    controls/treeview/design-time:
         title: Design-Time
         position: 2
-    treeview/working-with-nodes:
+    controls/treeview/working-with-nodes:
         title: Working with Nodes
         position: 3
-    treeview/editing:
+    controls/treeview/editing:
         title: Editing
         position: 4
-    treeview/data-binding:
+    controls/treeview/data-binding:
         title: Data Binding
         position: 5
-    treeview/drag-and-drop:
+    controls/treeview/drag-and-drop:
         title: Drag and Drop
         position: 6
-    treeview/context-menus:
+    controls/treeview/context-menus:
         title: Context Menus
         position: 7
-    treeview/styling-and-appearance:
+    controls/treeview/styling-and-appearance:
         title: Styling and Appearance
         position: 8
-    treeview/export-data:
+    controls/treeview/export-data:
         title: Export Data
         position: 9
-    treeview/how-to:
+    controls/treeview/how-to:
         title: How-To
         position: 10
-    treeview/localization:
+    controls/treeview/localization:
         title: Localization
         position: 11
-    treeview/usability:
+    controls/treeview/usability:
         title: Usability
         position: 12
-    virtualgrid:
+    controls/virtualgrid:
         title: VirtualGrid
         position: 500 
-    virtualgrid/design-time:
+    controls/virtualgrid/design-time:
         title: Design Time
         position: 1
-    virtualgrid/fundamentals:
+    controls/virtualgrid/fundamentals:
         title: Fundamentals
         position: 3
-    virtualgrid/working-with-data:
+    controls/virtualgrid/working-with-data:
         title: Working with Data
         position: 4
-    virtualgrid/columns:
+    controls/virtualgrid/columns:
         title: Columns
         position: 5
-    virtualgrid/rows:
+    controls/virtualgrid/rows:
         title: Rows
         position: 6
-    virtualgrid/cells:
+    controls/virtualgrid/cells:
         title: Cells
         position: 7
-    virtualgrid/editing:
+    controls/virtualgrid/editing:
         title: Editing
         position: 8
-    virtualgrid/sorting:
+    controls/virtualgrid/sorting:
         title: Sorting
         position: 9	
-    virtualgrid/filtering:
+    controls/virtualgrid/filtering:
         title: Filtering
         position: 10
-    virtualgrid/paging:
+    controls/virtualgrid/paging:
         title: Paging
         position: 11
-    virtualgrid/selection:
+    controls/virtualgrid/selection:
         title: Selection
         position: 12
-    virtualgrid/context-menu:
+    controls/virtualgrid/context-menu:
         title: Context Menu
         position: 13
-    virtualgrid/customizing-apearance:
+    controls/virtualgrid/customizing-apearance:
         title: Customizing Apearance
         position: 13
-    virtualgrid/hierarchical-virtual-grid:
+    controls/virtualgrid/hierarchical-virtual-grid:
         title: Hierarchical Virtual Grid
         position: 14
-    virtualgrid/handling-user-input:
+    controls/virtualgrid/handling-user-input:
         title: Handling User Input
         position: 18
-    virtualgrid/how-to:
+    controls/virtualgrid/how-to:
         title: How-To
         position: 19	 
-    virtualgrid/end-user-capabilities:
+    controls/virtualgrid/end-user-capabilities:
         title: End User Capabilities
         position: 20
-    virtualgrid/localization:
+    controls/virtualgrid/localization:
         title: Localization
         position: 20
-    virtualgrid/save-and-load-layout:
+    controls/virtualgrid/save-and-load-layout:
         title: Save and Load Layout
         position: 21
-    wizard:
+    controls/wizard:
         title: Wizard
         position: 510
-    wordsprocessing:
+    controls/wordsprocessing:
         title: WordsProcessing
         position: 520    
-    ziplibrary:
+    controls/ziplibrary:
         title: ZipLibrary
         position: 530
-    telerik-cab-enabling-kit: 
+    controls/telerik-cab-enabling-kit: 
         title: Telerik Cab Enabling Kit
         position: 540
-    telerik-cab-enabling-kit/getting-started:
+    controls/telerik-cab-enabling-kit/getting-started:
         title: Getting Started
         position: 3
-    telerik-cab-enabling-kit/telerik-cab-enabling-kit:
+    controls/telerik-cab-enabling-kit/telerik-cab-enabling-kit:
         title: Telerik Cab Enabling Kit
         position: 4
-    codedui:
+    controls/codedui:
         title: CodedUI 
         position: 560
     telerik-presentation-framework:
         title: Telerik Presentation Framework
-        position: 570
+        position: 7
     telerik-presentation-framework/overview:
         title: Overview
         position: 0
@@ -1293,7 +1307,7 @@ navigation:
     telerik-presentation-framework/events:
         title: Events
         position: 6
-    telerik-presentation-framework/printing-support:
+    ctelerik-presentation-framework/printing-support:
         title: Printing Support
         position: 13
     telerik-presentation-framework/layout/predefined-layout-panels:
@@ -1317,21 +1331,21 @@ navigation:
     telerik-presentation-framework/markup-dialog:
         title: Markup Dialog
         position: 10
-    themes:
-        title: Themes
-        position: 580
-    themes/theme-tutorials:
+    styling-and-appearance:
+        title: Styling and Appearance
+        position: 8
+    styling-and-appearance/theme-tutorials:
         title: Theme Tutorials
         position: 5
-    themes/advanced-topics:
+    styling-and-appearance/advanced-topics:
         title: Advanced Topics
         position: 6
-    themes/advanced-topics/adding-custom-redistributable-themes-to-your-application:
+    styling-and-appearance/advanced-topics/adding-custom-redistributable-themes-to-your-application:
         title: Adding Custom Redistributable Themes to your Application
         position: 0
     tools:
         title: Tools
-        position: 590
+        position: 9
     tools/controlspy:
         title: ControlSpy
         position: 0
@@ -1355,10 +1369,13 @@ navigation:
         position: 3
     tools/theme-manager:
          title: Theme Manager
-         position: 6		 
-    for-more-help:
-        title: For More Help
-        position: 600
+         position: 6
+    testing:
+         title: Testing
+         position: 10
+    testing/codedui:
+         title: CodedUI
+         position: 2			 
     
 ## Api Reference End
 ## The application virtual path
@@ -1369,13 +1386,9 @@ defaults:
     scope:
         path: ""
     values:
-        layout: "page"
+        layout: "documentation"
         category: "default"
--
-    scope:
-        path: "knowledge-base"
-    values:
-        layout: "kb-page"
+
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
 
@@ -1385,8 +1398,195 @@ ff-sheet-id: 14RypVB61J1Zbq7JjxBay2Pf3seiLOlwrK08jbfNL64M
 # The google services configuration
 google_analytics: UA-1119090:eblhnfskwrk'
 google_tag_manager: GTM-6X92
-google_custom_search: '001595215763381649090:j4fvrr1zs78'
-google_custom_kb_search: '001595215763381649090:khqr-sbzlmq'
+gcs_engine: '001595215763381649090:j4fvrr1zs78'
+gcs_kb_engine: '001595215763381649090:khqr-sbzlmq'
+gcs_api_key: 'AIzaSyBZzxQ7Ee4qogDASZ_D0uVnVlepiz_PbsM'
+
+old_kb_portal_link: https://www.telerik.com/support/kb/winforms
+has_kb_portal: true
+
+edit_repo_url: https://github.com/telerik/winforms-docs/edit/master
+product: "Telerik UI for WinForms"
+platform: winforms
+download: https://www.telerik.com/download-trial-file/v2-b/ui-for-winforms
+nav:
+  "Demos": https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe
+  "Release History": https://www.telerik.com/support/whats-new/winforms/release-history
+  "About": https://www.telerik.com/products/winforms.aspx
+  "Pricing": https://www.telerik.com/purchase/individual/winforms.aspx
+
+footer:
+-
+  title: "Getting Started"
+  links:
+    "Install Now": https://www.telerik.com/download-trial-file/v2-b/ui-for-winforms
+    "Demos": https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe
+    "Step-by-Step Tutorial": https://www.telerik.com/winforms/winforms-guide
+    "Sample Applications": https://www.telerik.com/winforms/sample-applications
+    "SDK Samples": https://github.com/telerik/winforms-sdk
+    "Visual Studio Extensions": https://www.telerik.com/winforms/visual-studio-extensions
+-
+  title: "Support Resources"
+  links: 
+    "Code Library": https://www.telerik.com/support/code-library/winforms
+    "Knowledge Base": https://docs.telerik.com/devtools/winforms/knowledge-base
+    "Videos": https://www.telerik.com/videos/winforms
+-
+  title: "Community"
+  links:
+    "Forums": https://www.telerik.com/forums/winforms
+    "Blogs": https://www.telerik.com/blogs/.net
+    "Feedback Portal": https://feedback.telerik.com/Project/154
+    "Document Processing Feedback Portal": http://feedback.telerik.com/Project/184
+  
+footer_social: 
+    facebook: https://www.facebook.com/Telerik/
+    youtube: https://www.youtube.com/user/TelerikInc
+    linkedin: https://www.linkedin.com/showcase/telerik/ 
+    twitter: https://twitter.com/Telerik/ 
+
+api_reference_url: "api/"
+
+
+intro_columns:
+-
+  categories:
+  -
+    title: "Data Management"  
+    items:
+      "CardView": "winforms/cardview/overview"
+      "CheckedListBox": "winforms/checkedlistbox"
+      "DataEntry": "winforms/dataentry"
+      "DataLayout": "winforms/datalayout/overview"
+      "GridView": "winforms/gridview"
+      "ListControl": "winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol"
+      "ListView": "winforms/listview"
+      "PivotGrid": "winforms/pivotgrid"
+      "PropertyGrid": "winforms/propertygrid"
+      "TreeView": "winforms/treeview"
+      "VirtualGrid": "winforms/virtualgrid"
+      "DataFilter": "winforms/datafilter/overview"
+  -
+    title: "Tools"
+    items:
+      "ControlSpy": "winforms/tools/controlspy"
+      "Form Converter": "winforms/forms-and-dialogs/form-converter"
+      "Element Hierarchy Editor": "winforms/tools/element-hierarchy-editor"
+      "Shape Editor": "winforms/tools/shapeeditor"
+      "Visual Style Builder": "winforms/tools/visual-style-builder"
+      "Zip library": "radziplibrary-overview"
+-
+  categories:
+  -
+    title: "Interactivity & UX"
+    items:
+      "Buttons": "winforms/buttons/button"
+      "Carousel": "winforms/carousel"
+      "Chat UI": "winforms/chat/overview"
+      "Label": "winforms/panels-and-labels/label"
+      "ProgressBar": "winforms/track-and-status-controls/progressbar"
+      "Rating": "winforms/track-and-status-controls/rating"
+      "Rotator": "winforms/rotator"
+      "TrackBar": "winforms/track-and-status-controls/trackbar"
+      "WaitingBar": "winforms/track-and-status-controls/waitingbar"
+  -
+    title: "Forms & Dialogs"
+    items:
+      "AboutBox": "winforms/forms-and-dialogs/templates"
+      "ColorDialog": "winforms/forms-and-dialogs/colordialog"
+      "DesktopAlert": "winforms/desktopalert"
+      "Form": "winforms/forms-and-dialogs/form"
+      "MarkupDialog": "winforms/telerik-presentation-framework/radmarkupdialog"
+      "MessageBox": "winforms/forms-and-dialogs/messagebox"
+      "RadScrollBar": "winforms/track-and-status-controls/scrollbar"
+      "RibbonForm": "winforms/forms-and-dialogs/ribbonform"
+      "ShapedForm": "winforms/forms-and-dialogs/shapedform"
+      "StatusStrip": "winforms/forms-and-dialogs/statusstrip"
+      "TitleBar": "winforms/forms-and-dialogs/statusstrip"
+-
+  categories:
+  -
+    title: "Scheduling"
+    items:
+      "Calendar": "winforms/calendar"
+      "GanttView": "winforms/ganttview"
+      "Scheduler": "winforms/scheduler"
+  -
+    title: "Editors"
+    items:
+      "AutoCompleteBox": "winforms/editors/autocompletebox"
+      "BrowseEditor": "winforms/editors/browseeditor"
+      "CalculatorDropDown": "winforms/editors/calculatordropdown"
+      "CheckedDropDownList": "winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist"
+      "Clock": "winforms/clock"
+      "ColorBox": "winforms/editors/colorbox"
+      "DateTimePicker": "winforms/editors/datetimepicker"
+      "DropDownList": "winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist"
+      "ImageEditor": "radimageeditor-overview"
+      "MaskedEditBox": "winforms/editors/maskededitbox"
+      "MultiColumnComboBox": "winforms/multicolumncombobox"
+      "PopupEditor": "winforms/editors/popupeditor"
+      "SpinEditor": "winforms/editors/spineditor"
+      "Spreadsheet": "radspreadsheet-overview"
+      "TextBox": "winforms/editors/textbox"
+      "TimePicker": "winforms/editors/timepicker"
+-
+  categories:
+  -
+    title: "Navigation"
+    items:
+      "ApplicationMenu": "winforms/menus/applicationmenu"
+      "BreadCrumb": "winforms/treeview/breadcrumb"
+      "CommandBar": "winforms/commandbar"
+      "ContextMenu": "winforms/menus/menu"
+      "Menu": "winforms/menus/menu"
+      "PageView": "winforms/pageview"
+      "Panorama": "winforms/panorama"
+      "RibbonBar": "winforms/ribbonbar"
+  -
+    title: "Layout"
+    items:
+      "CollapsiblePanel": "winforms/panels-and-labels/collapsiblepanel"
+      "Dock": "winforms/dock"
+      "GroupBox": "winforms/panels-and-labels/groupbox/overview"
+      "LayoutControl": "winforms/layoutcontrol" 
+      "Panel": "winforms/panels-and-labels/panels"
+      "ScrollablePanel": "winforms/panels-and-labels/radscrollablepanel"
+      "Separator": "winforms/panels-and-labels/separator"
+      "SplitContainer": "winforms/splitcontainer"
+  -
+    title: "Framework"
+    items:
+      "UI Framework": "winforms/telerik-presentation-framework/overview"
+-
+  categories:
+  -
+    title: "Document Processing"
+    items:
+      "PdfProcessing": "radpdfprocessing-overview"
+      "SpreadProcessing": "radspreadprocessing-overview"
+      "SpreadStreamProcessing": "radspreadstreamprocessing-overview"
+      "WordsProcessing": "radwordsprocessing-overview"
+  -
+    title: "Office"
+    items:
+      "PDFViewer": "winforms/pdfviewer"
+      "RichTextEditor": "winforms/richtexteditor"
+      "SpellChecker": "winforms/spellchecker"
+  -
+    title: "Data Visualization"
+    items:
+      "Barcode": "winforms/barcode/overview"
+      "BindingNavigator": "winforms/bindingnavigator"
+      "BulletGraph": "winforms/gauges/bulletgraph"
+      "ChartView": "winforms/chartview/overview"
+      "Diagram": "winforms/diagram"
+      "LinearGauge": "winforms/gauges/lineargauge"
+      "Map": "winforms/map"
+      "RadialGauge": "winforms/gauges/radialgauge"
+      "RangeSelector": "winforms/rangeselector/overview"
+
+
 
 ## Do not edit below this line
 safe: false
