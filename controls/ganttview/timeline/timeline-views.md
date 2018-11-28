@@ -188,4 +188,5 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 # See Also
 
+* [Zoom to Date Range]({%slug winforms/ganttview-/timeline/custom-timeline%})
 * [Custom Timeline]({%slug winforms/ganttview-/timeline/custom-timeline%})

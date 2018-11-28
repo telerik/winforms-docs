@@ -10,7 +10,7 @@ position: 12
 
 # Input Behavior
  
-The user input in **RadGanttView** is controlled by a special behavior class. The **BaseGanttViewBehavior** class is responsible for handling the keyboard, mouse, and context menu. It defines a number of methods which are virtual and custom implementations are easy to achieve as all of the base logic can be overridden. The behavior class is exposed by the RadGanttView.**GanttViewBehavior** properties.
+The user input in **RadGanttView** is controlled by a special behavior class. The **BaseGanttViewBehavior** class is responsible for handling the keyboard, mouse, and context menu. It defines a number of methods which are virtual and custom implementations are easy to achieve as all of the base logic can be overridden. The behavior class is exposed by the RadGanttView.**GanttViewBehavior** property.
 
 >note The following [KB article]({%slug ganttview-custom-input-behavior%}) features an example for creating a *CustomGanttViewBehavior* with custom logic handling the mouse and keyboard.
 

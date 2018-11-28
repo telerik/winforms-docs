@@ -165,7 +165,7 @@ End Class
 
 ````
 
-The behavior class is exposed by the RadGanttView.**GanttViewBehavior** properties.
+The behavior class is exposed by the RadGanttView.**GanttViewBehavior** property.
 
 #### Generating Sample Data and assigning the CustomGanttViewBehavior instance
 
