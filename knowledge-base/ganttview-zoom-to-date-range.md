@@ -37,7 +37,7 @@ The gif file below demonstrates the end result.
 
 The desired behavior can be achieved by calculating the total seconds between the two dates and by dividing the result to the actual width of the of the graphical view. This way we will know how much time a single pixel will represent so that the segment between the the two dates can fit the screen.
 
->note Depending on the actual local setup it may also be necessary to change the [TimelineRange]({%slug winforms/ganttview-/timeline/timeline-views%}) 
+>note Depending on the actual local setup it may also be necessary to change the [TimelineRange]({%slug winforms/ganttview-/timeline/timeline-views%}).  
 
 #### OnePixelTime Calculation
 

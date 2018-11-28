@@ -15,6 +15,8 @@ Additional demos for some of the Telerik UI for Winforms controls are available 
 |KB Article|SDK Example|
 |------|------|
 |[Snapping per Day in RadGanttView]({%slug snapping-per-day-in-radganttview%})|https://github.com/telerik/winforms-sdk/tree/master/GanttView/RadGanttViewSnapping|
+|[Zoom to Date Range]({%slug ganttview-zoom-to-date-range%})||
+|[Custom GanttView Behavior]({%slug ganttview-custom-input-behavior%})||
 
 ## See Also
 
