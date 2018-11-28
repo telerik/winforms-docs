@@ -5,7 +5,7 @@ description: This article shows how  you can localize RadGanttView to display co
 slug: winforms/ganttview-/localization
 tags: localization
 published: True
-position: 16
+position: 15
 previous_url: ganttview-localizaton
 ---
 
