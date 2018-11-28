@@ -1,11 +1,11 @@
 ---
-title: Properties, events and methods.
-page_title: Properties Events and methods| RadGanttView
+title: Properties, Events and Methods.
+page_title: Properties Events and Methods| RadGanttView
 description: This article list the most important properties of RadGanttView. 
 slug: winforms/ganttview/properties
 tags: properties,events,methods
 published: True
-position: 12
+position: 13
 ---
 
 # Properties
