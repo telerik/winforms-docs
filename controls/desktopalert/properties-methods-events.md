@@ -64,7 +64,7 @@ previous_url: /devtools/winforms/desktopalert/desktopalert-customizations
 
 
 # See Also 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadDesktopAlert.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/Methods_T_Telerik_WinControls_UI_RadDesktopAlert.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/Events_T_Telerik_WinControls_UI_RadDesktopAlert.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.raddesktopalert.html#properties)
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.raddesktopalert.html#methods)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.raddesktopalert.html#events)
 

@@ -46,6 +46,6 @@ position: 2
         
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radbarcode.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_ui_radbarcode.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radbarcode.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radbarcode.html#properties)
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radbarcode.html#methods)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radbarcode.html#events)

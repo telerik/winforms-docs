@@ -29,7 +29,7 @@ position: 2
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radtitlebar.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radtitlebar.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radtitlebar.html#properties)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radtitlebar.html#events)
  
            

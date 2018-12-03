@@ -73,7 +73,7 @@ End Sub
 
 * **WorkbookChanged**: Occurs when the workbook is changed.
 
-* **WorkbookCommandExecuting**: Occurs when workbook command starts executing. The arguments are of type [CommandExecutingEventArgs](http://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_spreadsheet_commands_commandexecutingeventargs.htm) and allow you to cancel the execution of the command.  
+* **WorkbookCommandExecuting**: Occurs when workbook command starts executing. The arguments are of type [CommandExecutingEventArgs](https://docs.telerik.com/devtools/winforms/api/telerik.windows.documents.spreadsheet.commands.commandexecutingeventargs.html) and allow you to cancel the execution of the command.  
 
 #### Example 2: Cancel a command through WorkbookCommandExecuting
 

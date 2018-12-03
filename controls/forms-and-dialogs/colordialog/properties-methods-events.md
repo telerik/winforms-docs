@@ -94,11 +94,11 @@ End Sub
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_radcolordialog.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_radcolordialog.htm)
-* [RadColorDialogForm's Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radcolordialogform.htm)
-* [RadColorDialogForm's Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_ui_radcolordialogform.htm)
-* [RadColorDialogForm's Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radcolordialogform.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.radcolordialog.html#properties)
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.radcolordialog.html#methods)
+* [RadColorDialogForm's Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcolordialogform.html#properties)
+* [RadColorDialogForm's Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcolordialogform.html#methods)
+* [RadColorDialogForm's Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcolordialogform.html#events)
 
 
 

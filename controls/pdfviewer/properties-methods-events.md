@@ -69,7 +69,7 @@ position: 4
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radpdfviewer.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_ui_radpdfviewer.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radpdfviewer.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpdfviewer.html#properties)
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpdfviewer.html#methods)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpdfviewer.html#events)
 

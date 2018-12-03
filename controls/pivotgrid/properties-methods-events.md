@@ -91,7 +91,7 @@ position: 5
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radpivotgrid.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_ui_radpivotgrid.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radpivotgrid.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpivotgrid.html#properties)
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpivotgrid.html#methods)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpivotgrid.html#events)
 

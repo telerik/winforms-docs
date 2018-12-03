@@ -26,4 +26,4 @@ previous_url: bulletgraph-properties
 # See Also
 
 * [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_gauges_radbulletgraph.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_gauges_radbulletgraph.htm)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.gauges.radbulletgraph.html#properties)

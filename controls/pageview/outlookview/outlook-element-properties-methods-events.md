@@ -48,6 +48,6 @@ You can use the following properties, methods and events to change the behavior 
 
 * [Using The Overflow Grip]({%slug winforms/pageview/outlookview/using-the-overflow-grip%})	
 * [Using The Overflow Menu]({%slug winforms/pageview/outlookview/using-the-overflow-menu%})	
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radpageviewoutlookelement.htm)	
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_ui_radpageviewoutlookelement.htm)	
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radpageviewoutlookelement.htm)	
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpageviewoutlookelement.html#properties)	
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpageviewoutlookelement.html#methods)	
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpageviewoutlookelement.html#events)	

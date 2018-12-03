@@ -78,8 +78,8 @@ position: 5
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadListControl.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/Methods_T_Telerik_WinControls_UI_RadListControl.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/Events_T_Telerik_WinControls_UI_RadListControl.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radlistcontrol.html#properties)
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radlistcontrol.html#methods)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radlistcontrol.html#events)
  
             

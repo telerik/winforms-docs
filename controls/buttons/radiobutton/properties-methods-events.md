@@ -43,6 +43,6 @@ position: 4
 >
 
 # See Also 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/Events_T_Telerik_WinControls_UI_RadRadioButton.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/Methods_T_Telerik_WinControls_UI_RadRadioButton.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/Events_T_Telerik_WinControls_UI_RadRadioButton.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radradiobutton.html#properties)
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radradiobutton.html#methods)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radtogglebutton.html#events)

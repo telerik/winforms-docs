@@ -61,11 +61,9 @@ position: 4
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_radmessagebox.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_radmessagebox.htm)
-* [RadMessageBoxForm.Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_radmessageboxform.htm)
-* [RadMessageBoxForm.Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_radmessageboxform.htm)
-* [RadMessageBoxForm.Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_radmessageboxform.htm)
-
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.radmessagebox.html#properties)
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.radmessagebox.html#methods)
+* [RadMessageBoxForm.Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.radmessageboxform.html#properties)
+* [RadMessageBoxForm.Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.radmessageboxform.html#methods) 
  
 

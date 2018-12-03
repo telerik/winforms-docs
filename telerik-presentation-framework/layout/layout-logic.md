@@ -25,7 +25,7 @@ The measure stage calculates the RadElement __DesiredSize__ property. __DesiredS
 
 >note  __DesiredSize__ 
 * By default [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%}) can be drawn without clipping even with empty size. DesiredSize for FillPrimitive is (0, 0) by default.
-* The DesiredSize for a [HostItem](http://docs.telerik.com/devtools/winforms/api/html/t_telerik_wincontrols_radhostitem.htm) (and indirectly for RadTextBoxElement) is determined by the size of the hosted control. By default the DesiredSize of a RadTextBoxElement is determined by the default size of the hosted TextBox.
+* The DesiredSize for a [HostItem](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.radhostitem.html) (and indirectly for RadTextBoxElement) is determined by the size of the hosted control. By default the DesiredSize of a RadTextBoxElement is determined by the default size of the hosted TextBox.
 * The DesiredSize of RadLabel is determined by the Font and the Text property.
 >
 

@@ -49,6 +49,6 @@ previous_url: dropdown-and-listcontrol-checkedropdownlist-properties-and-events
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadCheckedDropDownList.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/Methods_T_Telerik_WinControls_UI_RadCheckedDropDownList.htm)
-* [Properties | RadCheckedListDataItem ](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadCheckedListDataItem.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcheckeddropdownlist.html#properties)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcheckeddropdownlist.html#events)
+* [Properties | RadCheckedListDataItem ](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcheckedlistdataitem.html#properties)

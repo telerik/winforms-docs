@@ -102,6 +102,6 @@ If you change the editor, you can subscribe to the LocationChanged event in the 
 - [RadDataEntry - Overview](https://docs.telerik.com/devtools/winforms/dataentry/dataentry)
 - [RadDataEntry - Structure](https://docs.telerik.com/devtools/winforms/dataentry/control-element-structure-)
 - [RadDataEntry - Programmatically Arrange Items](https://docs.telerik.com/devtools/winforms/dataentry/programmatically-arrange-items-)
-- [RadDataEntry ItemInitialized API Reference](https://docs.telerik.com/devtools/winforms/api/html/e_telerik_wincontrols_ui_raddataentry_iteminitialized.htm)
+- [RadDataEntry ItemInitialized API Reference](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.raddataentry.html#Telerik_WinControls_UI_RadDataEntry_ItemInitialized)
 
 

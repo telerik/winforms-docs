@@ -51,6 +51,6 @@ previous_url: buttons-toggleswitch-properties-methods-events
 |__AnimationFinished__|Occurs when the animation finishes.|
             
 # See Also 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/Properties_T_Telerik_WinControls_UI_RadToggleSwitch.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/Methods_T_Telerik_WinControls_UI_RadToggleSwitch.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/Events_T_Telerik_WinControls_UI_RadToggleSwitch.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radtoggleswitch.html#properties)
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radtoggleswitch.html#methods)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radtoggleswitch.html#events)

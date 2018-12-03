@@ -57,5 +57,5 @@ position: 5
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radribbonbar.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radribbonbar.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radribbonbar.html#properties)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radribbonbar.html#events)

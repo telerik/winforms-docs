@@ -33,6 +33,6 @@ previous_url: forms-and-dialogs-statusstrip-radstatusbar-properties, winforms/fo
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radstatusstrip.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radstatusstrip.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radstatusstrip.html#properties)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radstatusstrip.html#events)
 

@@ -40,7 +40,7 @@ RadPdfViewer enables you to validate signature fields using standard  Cryptograp
 
 * adbe.pkcs7.detached (PKCS #7 Detached)
 
-For all other formats you might need, there is a flexible API enabling you to implement them. To do so, you should inherit the [SignatureValidationHandlerBase](http://docs.telerik.com/devtools/winforms/api/html/t_telerik_windows_pdf_documents_fixed_model_digitalsignatures_signaturevalidationhandlerbase.htm) and register the new handler in the [SignatureValidationHandlersManager](http://docs.telerik.com/devtools/winforms/api/html/t_telerik_windows_pdf_documents_fixed_model_digitalsignatures_signaturevalidationhandlersmanager.htm). The base class exposes the __ValidationOverride__ method, so you can implement the logic for validating any type of signature. Once the validation is done in the body of this method, an instance of the [SignatureValidationResult](http://docs.telerik.com/devtools/winforms/api/html/t_telerik_windows_pdf_documents_fixed_model_digitalsignatures_signaturevalidationresultbuilder.htm) class will be returned containing data for the signature status.
+For all other formats you might need, there is a flexible API enabling you to implement them. To do so, you should inherit the [SignatureValidationHandlerBase](https://docs.telerik.com/devtools/winforms/api/telerik.windows.documents.fixed.model.digitalsignatures.signaturevalidationhandlerbase.html) and register the new handler in the [SignatureValidationHandlersManager](https://docs.telerik.com/devtools/winforms/api/telerik.windows.documents.fixed.model.digitalsignatures.signaturevalidationhandlersmanager.html). The base class exposes the __ValidationOverride__ method, so you can implement the logic for validating any type of signature. Once the validation is done in the body of this method, an instance of the [SignatureValidationResult](https://docs.telerik.com/devtools/winforms/api/telerik.windows.documents.fixed.model.digitalsignatures.signaturevalidationresultbuilder.html) class will be returned containing data for the signature status.
 
 
 ## Signature Field
@@ -86,7 +86,7 @@ The **Signature** class exposes two methods allowing you to validate a signature
     
     Validate() returns object of type [SignatureValidationResult](http://docs.telerik.com/devtools/winforms/api/html/t_telerik_windows_pdf_documents_fixed_model_digitalsignatures_signaturevalidationresult.htm).
 
-* **TryValidate()**: This method returns a boolean value indicating whether the validation succeeded or not. There are two overloads of this method. The first one accepts an out parameter containing a [SignatureValidationResult](http://docs.telerik.com/devtools/winforms/api/html/t_telerik_windows_pdf_documents_fixed_model_digitalsignatures_signaturevalidationresult.htm) object and the second one allows you to also pass **SignatureValidationProperties**.
+* **TryValidate()**: This method returns a boolean value indicating whether the validation succeeded or not. There are two overloads of this method. The first one accepts an out parameter containing a [SignatureValidationResult](https://docs.telerik.com/devtools/winforms/api/telerik.windows.documents.fixed.model.digitalsignatures.signaturevalidationresult.html) object and the second one allows you to also pass **SignatureValidationProperties**.
 
 >The Validate() method throws an exception if there is a problem with the signature, while TryValidate() returns false in similar cases.
 

@@ -122,5 +122,5 @@ End Sub
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_gauges_radradialgauge.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_gauges_radradialgauge.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.gauges.radradialgauge.html#properties)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.gauges.radradialgauge.html#events)

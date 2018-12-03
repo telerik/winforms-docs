@@ -33,8 +33,8 @@ You can find listed below all properties and methods related to **RadShortcut**.
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_radshortcut.htm)
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_radshortcut.htm)
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.radshortcut.html#properties)
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.radshortcut.html#methods)
 
 
 

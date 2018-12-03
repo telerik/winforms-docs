@@ -44,6 +44,6 @@ previous_url: track-and-status-controls-waitingbar-programming-radwaitingbar
 
 # See Also
 
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radwaitingbar.htm)	
-* [Methods](http://docs.telerik.com/devtools/winforms/api/html/methods_t_telerik_wincontrols_ui_radwaitingbar.htm)
-* [Events](http://docs.telerik.com/devtools/winforms/api/html/events_t_telerik_wincontrols_ui_radwaitingbar.htm)	
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radwaitingbar.html#properties)	
+* [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radwaitingbar.html#methods)
+* [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radwaitingbar.html#events)	

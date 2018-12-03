@@ -69,7 +69,7 @@ position: 13
 |__BeginUpdate__|Disables all notifications in the RadGanttView.|
 |__EndUpdate__|Ends the update.|
 
-Complete list of Properties events and methods can be found in the API Reference: [RadGanttView](http://docs.telerik.com/devtools/winforms/api/html/t_telerik_wincontrols_ui_radganttview.htm) 
+Complete list of Properties events and methods can be found in the API Reference: [RadGanttView](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radganttview.html) 
 
 # See Also
 

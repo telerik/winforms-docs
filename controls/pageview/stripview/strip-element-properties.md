@@ -54,4 +54,4 @@ stripElement.StripButtons = StripViewButtons.All
 * [Fitting Items]({%slug winforms/pageview/stripview/fitting-items%})	
 * [Scrolling and Overflow (strip buttons)]({%slug winforms/pageview/stripview/scrolling-and-overflow-(strip-buttons)%})	
 * [New Item]({%slug winforms/pageview/stripview/new-item%})	
-* [Properties](http://docs.telerik.com/devtools/winforms/api/html/properties_t_telerik_wincontrols_ui_radpageviewstripelement.htm)	
+* [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpageviewstripelement.html#properties)	
