@@ -2,7 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events | RadContextMenu
 description: RadContextMenu is a non-visual component that sits in the component tray located below the form design surface.
-slug: winforms/menus/contextmenu/context-menus
+slug: winforms/menus/contextmenu/properties
 tags: context,menus
 published: True
 position: 2 

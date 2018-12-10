@@ -1538,7 +1538,7 @@ intro_columns:
       "ApplicationMenu": "winforms/menus/applicationmenu"
       "BreadCrumb": "winforms/treeview/breadcrumb"
       "CommandBar": "winforms/commandbar"
-      "ContextMenu": "winforms/menus/menu"
+      "ContextMenu": "winforms/menus/contextmenu/context-menus"
       "Menu": "winforms/menus/menu"
       "PageView": "winforms/pageview"
       "Panorama": "winforms/panorama"
