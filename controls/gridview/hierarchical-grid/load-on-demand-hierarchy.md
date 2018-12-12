@@ -28,6 +28,8 @@ In many cases you may need to load your data not when RadGridView is being initi
 
 1. Handle the __RowSourceNeeded__ event to populate the data for each parent row.
 
+>note Calling the the __BestFitColumns__ method may cause the grid to load all the data explicitly. Call this method with the for the visual cells only.
+
 ## Sample load-on-demand scenario
 
 The following example shows a load-on-demand scenario using a typed DataSet. Let's load the following `Products` data from the AdventureWorks database:
