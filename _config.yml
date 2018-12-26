@@ -505,6 +505,12 @@ navigation:
     controls/editors/popupeditor:
         title: PopupEditor 
         position: 10
+    controls/editors/fontdropdownlist:
+        title: FontDropDownList 
+        position: 11
+    controls/editors/fontdropdownlist/customizing-appearance:
+        title: Customizing Appearance
+        position: 3
     controls/forms-and-dialogs:
         title: Forms and Dialogs
         position: 230
