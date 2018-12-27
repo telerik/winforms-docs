@@ -16,8 +16,7 @@ This article describes the inner structure and organization of the elements whic
         
 >caption Figure 1: RadFontDropDownList's elements hierarchy
 
-![editors-fontdropdownlist-structure 001](images/editors-fontdropdownlist-structure001.png)
-![editors-fontdropdownlist-structure 003](images/editors-fontdropdownlist-structure003.png)
+![editors-fontdropdownlist-structure 001](images/editors-fontdropdownlist-structure001.png)![editors-fontdropdownlist-structure 003](images/editors-fontdropdownlist-structure003.png)
 
 >caption Figure 2: RadFontDropDownList's structure
 
