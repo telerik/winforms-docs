@@ -12,7 +12,7 @@ position: 1
 
 This article describes the inner structure and organization of the elements which build the **RadFontDropDownList** control. 
 
-**RadFontDropDownList** internally uses a grouped **RadListViewElement** with default **ViewType** set to *DetailsView*. Two columns are displayed in the pop up list - while the first column stores the font name, the second column shows a preview of the respective font.
+**RadFontDropDownList** is a derivative of [RadPopupEditor]({%slug winforms/editors/popupeditor%}) and it internally uses a grouped **RadListView** with default **ViewType** set to *DetailsView*. Two columns are displayed in the pop up list - while the first column stores the font name, the second column shows a preview of the respective font.
         
 >caption Figure 1: RadFontDropDownList's elements hierarchy
 
