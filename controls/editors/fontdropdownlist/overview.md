@@ -14,6 +14,14 @@ position: 0
 
 ![editors-fontdropdownlist-overview 001](images/editors-fontdropdownlist-overview001.png)
 
+## Key Features
+
+- Font selection
+- Auto-complete functionality
+- Recently used fonts
+- Select on hover
+- Customizing items' appearance
+
 ## See Also
 
 * [Structure]({%slug winforms/editors/fontdropdownlist/structure%})
