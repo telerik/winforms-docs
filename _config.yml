@@ -511,6 +511,12 @@ navigation:
     controls/editors/fontdropdownlist/customizing-appearance:
         title: Customizing Appearance
         position: 4
+    controls/editors/buttontextbox:
+        title: ButtonTextBox
+        position: 4
+    controls/editors/buttontextbox/populating-with-data:
+        title: Populating with Data
+        position: 5
     controls/forms-and-dialogs:
         title: Forms and Dialogs
         position: 230
