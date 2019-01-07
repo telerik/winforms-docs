@@ -1,5 +1,5 @@
 # The public documentation URL, used for sitemap.xml
-url: "http://docs.telerik.com/devtools/winforms"
+url: "https://docs.telerik.com/devtools/winforms"
 site_name: WinForms
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock]
