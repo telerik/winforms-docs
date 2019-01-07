@@ -517,6 +517,9 @@ navigation:
     controls/editors/buttontextbox/populating-with-data:
         title: Populating with Data
         position: 5
+    controls/editors/timespanpicker:
+        title: TimeSpanPicker
+        position: 6		
     controls/forms-and-dialogs:
         title: Forms and Dialogs
         position: 230
@@ -547,6 +550,9 @@ navigation:
     controls/forms-and-dialogs/radtitlebar:
         title:  RadTitleBar
         position: 8
+    controls/forms-and-dialogs/tabbedform:
+        title: TabbedForm
+        position: 9
     controls/ganttview:
         title: GanttView
         position: 240
