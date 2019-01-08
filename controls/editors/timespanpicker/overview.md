@@ -29,6 +29,5 @@ __RadTimeSpanPicker__ is a UI component that provides a full control over pickin
 
 ## See Also
 
- * [Getting Started]({%slug radtimespanpicker-getting-started%})
-
- * [Structure]({%slug radtimespanpicker-structure%})
+* [Getting Started]({%slug radtimespanpicker-getting-started%})
+* [Structure]({%slug radtimespanpicker-structure%})

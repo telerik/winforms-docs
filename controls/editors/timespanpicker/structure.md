@@ -5,7 +5,7 @@ description:
 slug: radtimespanpicker-structure
 tags: radtimespanpicker
 published: True
-position: 2
+position: 1
 ---
 
 # Structure
@@ -24,5 +24,4 @@ This article describes all the visual elements and terms used in __RadTimeSpanPi
 # See Also
 
  * [Getting Started]({%slug radtimespanpicker-getting-started%})
-
  * [Properties Methods and Events]({%slug radtimespanpicker-properties%})

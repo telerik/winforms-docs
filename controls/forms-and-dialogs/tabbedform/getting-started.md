@@ -5,10 +5,10 @@ description:  RadTabbedForm allows to display tab items directly in the title ba
 slug: radtabbedform-getting-started
 tags: radtabbedform
 published: True
-position: 1
+position: 2
 ---
 
-# Getting Started
+## Getting Started
 
 This topic will walk you through the creating of __RadTabbedForm__.
 
@@ -17,7 +17,7 @@ This topic will walk you through the creating of __RadTabbedForm__.
 
 2\. Add a new Tabbed form from Visual Studio. Go to __Project -> Add Windows Form__ and then select TabbedForm
 
-![radtabbedform-getting-started001](images/radtabbedform-getting-started001.png)
+![radtabbedform-getting-started001](images/radtabbedform-getting-started001.jpg)
 
 3\. Add some tabs from the Smart Tag.
 
@@ -34,3 +34,9 @@ In Vb this can be do from the project properties.
 5\. Start the application. 
 
 ![radtabbedform-getting-started005](images/radtabbedform-getting-started005.png)
+
+
+# See Also
+
+* [Structure]({%slug radtabbedform-structure%})
+* [Design Time]({%slug  radtabbedform-design-time%})

@@ -5,7 +5,7 @@ description: RadTimeSpanPicker is a UI component that provides a full control ov
 slug: radtimespanpicker-design-time
 tags: radtimespanpicker
 published: True
-position: 1
+position: 2
 ---
 
 # Smart Tag
@@ -24,8 +24,6 @@ position: 1
 
 # See Also
 
- * [Structure]({%slug radtimespanpicker-structure%})
- 
- * [Properties Methods and Events]({%slug radtimespanpicker-properties%})
-
- * [Getting Started]({%slug radtimespanpicker-getting-started%}) 
+* [Structure]({%slug radtimespanpicker-structure%})
+* [Properties Methods and Events]({%slug radtimespanpicker-properties%})
+* [Getting Started]({%slug radtimespanpicker-getting-started%}) 
