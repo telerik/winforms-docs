@@ -514,9 +514,12 @@ navigation:
     controls/editors/buttontextbox:
         title: ButtonTextBox
         position: 4
-    controls/editors/buttontextbox/populating-with-data:
-        title: Populating with Data
+    controls/editors/buttontextbox/populating-with-items:
+        title: Populating with Items
         position: 5
+    controls/editors/buttontextbox/customizing-appearance:
+        title: Customizing Appearance
+        position: 6
     controls/editors/timespanpicker:
         title: TimeSpanPicker
         position: 6		
