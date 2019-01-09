@@ -522,7 +522,10 @@ navigation:
         position: 6
     controls/editors/timespanpicker:
         title: TimeSpanPicker
-        position: 6		
+        position: 7
+    controls/editors/timespanpicker/customizing-appearance:
+        title: Customizing Appearance
+        position: 9		
     controls/forms-and-dialogs:
         title: Forms and Dialogs
         position: 230
