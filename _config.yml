@@ -397,6 +397,12 @@ navigation:
     controls/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/features:
         title: Features
         position: 6
+    controls/dropdown-listcontrol-and-checkeddropdownlist/fontdropdownlist:
+        title: FontDropDownList 
+        position: 2
+    controls/dropdown-listcontrol-and-checkeddropdownlist/fontdropdownlist/customizing-appearance:
+        title: Customizing Appearance
+        position: 4
     controls/dropdown-listcontrol-and-checkeddropdownlist/listcontrol:
         title: ListControl
         position: 2
@@ -505,15 +511,9 @@ navigation:
     controls/editors/popupeditor:
         title: PopupEditor 
         position: 10
-    controls/editors/fontdropdownlist:
-        title: FontDropDownList 
-        position: 11
-    controls/editors/fontdropdownlist/customizing-appearance:
-        title: Customizing Appearance
-        position: 4
     controls/editors/buttontextbox:
         title: ButtonTextBox
-        position: 4
+        position: 2
     controls/editors/buttontextbox/populating-with-items:
         title: Populating with Items
         position: 5

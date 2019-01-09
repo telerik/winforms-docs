@@ -26,6 +26,7 @@ Depending on the column's type, **RadGridView** activates an appropriate editor 
 |[GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%})|RadCheckBoxEditor|
 |[GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})|RadCalculatorEditor|
 |[GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})|GridBrowseEditor|
+|[GridViewTimeSpanColumn]({%slug winforms/gridview/columns/column-types/gridviewtimespancolumn%})|GridTimeSpanPickerEditor|
 
 The default editor can easily be replaced by using the **EditorRequired** event and specifying either the **EditorType** or the **Editor** property in the **EditorRequiredEventArgs**. This is the appropriate place to assign a [custom editor]({%slug winforms/gridview/editors/using-custom-editors%}) as well. If you need to apply some settings to the editor, the **CellEditorInitialized** event is the right place to do it.
  
