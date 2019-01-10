@@ -37,25 +37,23 @@ You can customize the nested elements at run time as well:
 {{source=..\SamplesVB\Editors\FontDropDownList.vb region=CustomizeElements}} 
 
 ````C#
-                       
-            this.radFontDropDownList1.BackColor = Color.Yellow; 
-            this.radFontDropDownList1.PopupEditorElement.ArrowButtonElement.Fill.BackColor = Color.Aqua;
-            this.radFontDropDownList1.PopupEditorElement.ArrowButtonElement.Fill.GradientStyle = GradientStyles.Solid;
-            this.radFontDropDownList1.EditableAreaElement.ForeColor = Color.Red;
-            this.radFontDropDownList1.EditableAreaElement.DrawBorder = true;
-            this.radFontDropDownList1.EditableAreaElement.BorderColor = Color.Red;
-            this.radFontDropDownList1.EditableAreaElement.BorderGradientStyle = GradientStyles.Solid;
+this.radFontDropDownList1.BackColor = Color.Yellow;
+this.radFontDropDownList1.PopupEditorElement.ArrowButtonElement.Fill.BackColor = Color.Aqua;
+this.radFontDropDownList1.PopupEditorElement.ArrowButtonElement.Fill.GradientStyle = GradientStyles.Solid;
+this.radFontDropDownList1.EditableAreaElement.ForeColor = Color.Red;
+this.radFontDropDownList1.EditableAreaElement.DrawBorder = true;
+this.radFontDropDownList1.EditableAreaElement.BorderColor = Color.Red;
+this.radFontDropDownList1.EditableAreaElement.BorderGradientStyle = GradientStyles.Solid;
 
 ````
 ````VB.NET
-
-        Me.RadFontDropDownList1.BackColor = Color.Yellow
-        Me.RadFontDropDownList1.PopupEditorElement.ArrowButtonElement.Fill.BackColor = Color.Aqua
-        Me.RadFontDropDownList1.PopupEditorElement.ArrowButtonElement.Fill.GradientStyle = GradientStyles.Solid
-        Me.RadFontDropDownList1.EditableAreaElement.ForeColor = Color.Red
-        Me.RadFontDropDownList1.EditableAreaElement.DrawBorder = True
-        Me.RadFontDropDownList1.EditableAreaElement.BorderColor = Color.Red
-        Me.RadFontDropDownList1.EditableAreaElement.BorderGradientStyle = GradientStyles.Solid
+Me.RadFontDropDownList1.BackColor = Color.Yellow
+Me.RadFontDropDownList1.PopupEditorElement.ArrowButtonElement.Fill.BackColor = Color.Aqua
+Me.RadFontDropDownList1.PopupEditorElement.ArrowButtonElement.Fill.GradientStyle = GradientStyles.Solid
+Me.RadFontDropDownList1.EditableAreaElement.ForeColor = Color.Red
+Me.RadFontDropDownList1.EditableAreaElement.DrawBorder = True
+Me.RadFontDropDownList1.EditableAreaElement.BorderColor = Color.Red
+Me.RadFontDropDownList1.EditableAreaElement.BorderGradientStyle = GradientStyles.Solid
 
 ````
 

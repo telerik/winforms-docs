@@ -175,6 +175,8 @@ public class MyEnglishRadGridLocalizationProvider : RadGridLocalizationProvider
             case RadGridStringId.ConditionalFormattingPropertyGridRowForeColor: return "RowForeColor";
             case RadGridStringId.ConditionalFormattingPropertyGridRowTextAlignment: return "RowTextAlignment";
             case RadGridStringId.ConditionalFormattingPropertyGridTextAlignment: return "TextAlignment";
+            case RadGridStringId.ConditionalFormattingPropertyGridCellFont: return "My Cell Font";
+            case RadGridStringId.ConditionalFormattingPropertyGridCellFontDescription: return "My Font Description";  
             case RadGridStringId.ConditionalFormattingPropertyGridCaseSensitiveDescription: return "Determines whether case-sensitive comparisons will be made when evaluating string values.";
             case RadGridStringId.ConditionalFormattingPropertyGridCellBackColorDescription: return "Enter the background color to be used for the cell.";
             case RadGridStringId.ConditionalFormattingPropertyGridCellForeColorDescription: return "Enter the foreground color to be used for the cell.";
@@ -525,6 +527,10 @@ Public Class MyEnglishRadGridLocalizationProvider
                 Return "RowTextAlignment"
             Case RadGridStringId.ConditionalFormattingPropertyGridTextAlignment
                 Return "TextAlignment"
+            Case RadGridStringId.ConditionalFormattingPropertyGridCellFont
+                Return "My Cell Font"
+            Case RadGridStringId.ConditionalFormattingPropertyGridCellFontDescription
+                Return "My Font Description"
             Case RadGridStringId.ConditionalFormattingPropertyGridCaseSensitiveDescription
                 Return "Determines whether case-sensitive comparisons will be made when evaluating string values."
             Case RadGridStringId.ConditionalFormattingPropertyGridCellBackColorDescription

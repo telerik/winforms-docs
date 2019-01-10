@@ -24,19 +24,17 @@ The __FormatString__ property sets the format of the TimeSpan when the cell is n
 {{source=..\SamplesVB\GridView\Columns\GridViewTimeSpanColumn1.vb region=addTimeSpanColumn}} 
 
 ````C#
-
-            GridViewTimeSpanColumn gridViewTimeSpanColumn1 = new GridViewTimeSpanColumn();
-            gridViewTimeSpanColumn1.FormatString = "hh-mm-ss";
-            gridViewTimeSpanColumn1.Format = "mm:ss";
-            this.radGridView1.Columns.Add(gridViewTimeSpanColumn1);
+GridViewTimeSpanColumn gridViewTimeSpanColumn1 = new GridViewTimeSpanColumn();
+gridViewTimeSpanColumn1.FormatString = "hh-mm-ss";
+gridViewTimeSpanColumn1.Format = "mm:ss";
+this.radGridView1.Columns.Add(gridViewTimeSpanColumn1);
 
 ````
 ````VB.NET
-
-        Dim gridViewTimeSpanColumn1 As GridViewTimeSpanColumn = New GridViewTimeSpanColumn()
-        gridViewTimeSpanColumn1.FormatString = "hh-mm-ss"
-        gridViewTimeSpanColumn1.Format = "mm:ss"
-        Me.RadGridView1.Columns.Add(gridViewTimeSpanColumn1)
+Dim gridViewTimeSpanColumn1 As GridViewTimeSpanColumn = New GridViewTimeSpanColumn()
+gridViewTimeSpanColumn1.FormatString = "hh-mm-ss"
+gridViewTimeSpanColumn1.Format = "mm:ss"
+Me.RadGridView1.Columns.Add(gridViewTimeSpanColumn1)
 
 ````
 
@@ -52,28 +50,26 @@ There are two ways to change the TimeSpan format when the cell enters edit mode 
 {{source=..\SamplesVB\GridView\Columns\GridViewTimeSpanColumn1.vb region=changeEditorFormat}} 
 
 ````C#
-        private void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
-        {
-            GridTimeSpanPickerEditor editor = e.ActiveEditor as GridTimeSpanPickerEditor;
-            if (editor != null)
-            {
-                RadTimeSpanPickerElement element = editor.EditorElement as RadTimeSpanPickerElement;
-                element.Format = "mm:ss";
-            }
-        }
+        
+private void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
+{
+    GridTimeSpanPickerEditor editor = e.ActiveEditor as GridTimeSpanPickerEditor;
+    if (editor != null)
+    {
+        RadTimeSpanPickerElement element = editor.EditorElement as RadTimeSpanPickerElement;
+        element.Format = "mm:ss";
+    }
+}
 
 ````
 ````VB.NET
-
-    Private Sub radGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
-        Dim editor As GridTimeSpanPickerEditor = TryCast(e.ActiveEditor, GridTimeSpanPickerEditor)
-
-        If editor IsNot Nothing Then
-            Dim element As RadTimeSpanPickerElement = TryCast(editor.EditorElement, RadTimeSpanPickerElement)
-            element.Format = "mm:ss"
-        End If
-    End Sub
-
+Private Sub radGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
+    Dim editor As GridTimeSpanPickerEditor = TryCast(e.ActiveEditor, GridTimeSpanPickerEditor)
+    If editor IsNot Nothing Then
+        Dim element As RadTimeSpanPickerElement = TryCast(editor.EditorElement, RadTimeSpanPickerElement)
+        element.Format = "mm:ss"
+    End If
+End Sub
 
 ````
 
