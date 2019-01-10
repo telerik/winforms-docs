@@ -559,6 +559,12 @@ navigation:
     controls/forms-and-dialogs/tabbedform:
         title: TabbedForm
         position: 9
+    controls/forms-and-dialogs/tabbedform/features:
+        title: Features
+        position: 6
+    controls/forms-and-dialogs/tabbedform/customizing-appearance:
+        title: Customizing Apearance
+        position: 7
     controls/ganttview:
         title: GanttView
         position: 240
