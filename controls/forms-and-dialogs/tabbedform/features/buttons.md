@@ -25,8 +25,14 @@ You can the buttons in the code behind as well. This is demonstrated in the foll
 {{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Buttons}} 
 {{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Buttons}}
 ````C#
+this.TabbedFormControl.LeftItems.Add(new RadButtonElement { Text = "button1" });
+this.TabbedFormControl.RightItems.Add(new RadButtonElement { Text = "button2" });
+
 ````
 ````VB.NET
+Me.TabbedFormControl.LeftItems.Add(New RadButtonElement With {.Text = "button1"})
+Me.TabbedFormControl.RightItems.Add(New RadButtonElement With {.Text = "button2"})
+
 ```` 
 
 {{endregion}} 

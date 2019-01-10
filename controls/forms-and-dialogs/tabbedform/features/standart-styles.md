@@ -16,8 +16,12 @@ The tabs can shown when the form is showing the standard windows window styles. 
 {{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Aero}} 
 {{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Aero}}
 ````C#
+this.AllowAero = false;
+
 ````
 ````VB.NET
+Me.AllowAero = False
+
 ```` 
 
 {{endregion}} 
