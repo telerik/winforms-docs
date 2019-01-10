@@ -46,7 +46,11 @@ There are three drag modes that are currently supported:
 #### Setting the Drag Drop Mode
 
 {{source=..\SamplesCS\Forms_And_Dialogs\TabbedFormCode.cs region=DragDropMode}} 
-{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=DragDropMode}} 
+{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=DragDropMode}}
+````C#
+````
+````VB.NET
+```` 
 
 {{endregion}} 
 
