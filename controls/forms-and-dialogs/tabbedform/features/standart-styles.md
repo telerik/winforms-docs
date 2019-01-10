@@ -5,7 +5,7 @@ description:  RadTabbedForm allows to display tab items directly in the title ba
 slug: radtabbedform-standard-styles
 tags: radtabbedform
 published: True
-position: 5
+position: 0
 ---
 
 # Standard Styles

@@ -5,7 +5,7 @@ description:  RadTabbedForm allows to display tab items directly in the title ba
 slug: radtabbedform-drag-drop
 tags: radtabbedform
 published: True
-position: 3
+position: 0
 ---
 
 # Drag and Drop
