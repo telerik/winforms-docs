@@ -18,6 +18,7 @@ position: 3
 |__DefaultSize__|Gets the default size of the control.|
 |__CausesValidation__|Gets or sets a value indicating whether the control causes validation to be performed on any controls that require validation when it receives focus.|
 
+>note Since **R1 2019** the RadPanel.**Text** property is empty. If you already have a serialized text, it will be stored in the designer file and shown when running the application. However, for any new **RadPanel** controls added to the form, no text will be displayed.
 
 # See Also
 
