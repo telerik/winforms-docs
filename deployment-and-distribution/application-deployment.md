@@ -287,6 +287,10 @@ Telerik.WinControls.Themes.FluentDark.dll</td></tr><tr><td>
 
 Telerik.WinControls.Themes.Crystal.dll</td></tr><tr><td>
 
+<b>CrystalDarkTheme</b></td><td>
+
+Telerik.WinControls.Themes.CrystalDark.dll</td></tr><tr><td>
+
 <b>DesertTheme</b></td><td>
 
 Telerik.WinControls.Themes.Desert.dll</td></tr><tr><td>

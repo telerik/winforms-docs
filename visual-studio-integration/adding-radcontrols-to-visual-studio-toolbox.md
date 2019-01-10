@@ -119,6 +119,8 @@ Telerik UI for for WinForms are automatically added to Visual Studio 2005/2008/2
  
  * Telerik.WinControls.Themes.Crystal.dll
 
+ * Telerik.WinControls.Themes.CrystalDark.dll
+
  * Telerik.WinControls.PdfViewer.dll
 
  * Telerik.WinControls.PivotGrid.dll
