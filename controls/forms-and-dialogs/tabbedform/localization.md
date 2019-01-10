@@ -5,7 +5,7 @@ description:  RadTabbedForm allows to display tab items directly in the title ba
 slug: radtabbedform-localization
 tags: radtabbedform
 published: True
-position: 0
+position: 17
 ---
 
 # Localization
