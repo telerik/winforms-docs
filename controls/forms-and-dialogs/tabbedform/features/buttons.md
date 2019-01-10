@@ -23,7 +23,11 @@ You can the buttons in the code behind as well. This is demonstrated in the foll
 #### Adding Buttons Programmatically
 
 {{source=..\SamplesCS\Forms_And_Dialogs\TabbedFormCode.cs region=Buttons}} 
-{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=Buttons}} 
+{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=Buttons}}
+````C#
+````
+````VB.NET
+```` 
 
 {{endregion}} 
 
