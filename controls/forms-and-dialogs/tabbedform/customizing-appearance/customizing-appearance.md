@@ -24,8 +24,12 @@ The following example demonstrates how you can aces the visual item of the tab a
 {{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Appearance}} 
 {{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Appearance}}
 ````C#
+this.TabbedFormControl.Tabs[0].Item.BackColor = Color.Red;
+
 ````
 ````VB.NET
+Me.TabbedFormControl.Tabs(0).Item.BackColor = Color.Red
+
 ```` 
 
 {{endregion}}  
