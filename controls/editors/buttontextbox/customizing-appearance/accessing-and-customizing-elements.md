@@ -38,26 +38,23 @@ You can customize the nested elements at run time as well:
 {{source=..\SamplesVB\Editors\ButtonTextBox.vb region=CustomizeElements}} 
 
 ````C#
-
-            this.radButtonTextBox1.TextBoxElement.ForeColor = Color.Red;
-            this.radButtonTextBox1.TextBoxElement.BackColor = Color.Yellow;
-            RadButtonElement button = this.radButtonTextBox1.LeftButtonItems[0] as RadButtonElement;
-            button.Text = "BUL";
-            button.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button.ButtonFillElement.BackColor = Color.Fuchsia;
-            button.ShowBorder = false;                      
-           
+this.radButtonTextBox1.TextBoxElement.ForeColor = Color.Red;
+this.radButtonTextBox1.TextBoxElement.BackColor = Color.Yellow;
+RadButtonElement button = this.radButtonTextBox1.LeftButtonItems[0] as RadButtonElement;
+button.Text = "BUL";
+button.TextImageRelation = TextImageRelation.ImageBeforeText;
+button.ButtonFillElement.BackColor = Color.Fuchsia;
+button.ShowBorder = false;
 
 ````
 ````VB.NET
-
-        Me.RadButtonTextBox1.TextBoxElement.ForeColor = Color.Red
-        Me.RadButtonTextBox1.TextBoxElement.BackColor = Color.Yellow
-        Dim button As RadButtonElement = TryCast(Me.RadButtonTextBox1.LeftButtonItems(0), RadButtonElement)
-        button.Text = "BUL"
-        button.TextImageRelation = TextImageRelation.ImageBeforeText
-        button.ButtonFillElement.BackColor = Color.Fuchsia
-        button.ShowBorder = False
+Me.RadButtonTextBox1.TextBoxElement.ForeColor = Color.Red
+Me.RadButtonTextBox1.TextBoxElement.BackColor = Color.Yellow
+Dim button As RadButtonElement = TryCast(Me.RadButtonTextBox1.LeftButtonItems(0), RadButtonElement)
+button.Text = "BUL"
+button.TextImageRelation = TextImageRelation.ImageBeforeText
+button.ButtonFillElement.BackColor = Color.Fuchsia
+button.ShowBorder = False
 
 ````
 

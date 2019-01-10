@@ -22,7 +22,11 @@ The following example demonstrates how you can aces the visual item of the tab a
 ### Access the tab visual element
 
 {{source=..\SamplesCS\Forms_And_Dialogs\TabbedFormCode.cs region=Appearance}} 
-{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=Appearance}} 
+{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=Appearance}}
+````C#
+````
+````VB.NET
+```` 
 
 {{endregion}}  
 

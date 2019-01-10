@@ -20,7 +20,15 @@ This topic will walk you through the creating of __RadTimeSpanPicker__.
 2\. In the code behind set the value of the control. 
 
 {{source=..\SamplesCS\Editors\TimeSpanCode.cs region=getting-started}} 
-{{source=..\SamplesVB\Editors\TimeSpanCode.vb region=getting-started}} 
+{{source=..\SamplesVB\Editors\TimeSpanCode.vb region=getting-started}}
+````C#
+this.radTimeSpanPicker1.Value = TimeSpan.FromDays(5);
+
+````
+````VB.NET
+Me.radTimeSpanPicker1.Value = TimeSpan.FromDays(5)
+
+```` 
 
 {{endregion}} 
 
