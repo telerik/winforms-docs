@@ -48,8 +48,8 @@ You can use the following code to pin a tab.
 #### Pin with code
 
 
-{{source=..\SamplesCS\Forms_And_Dialogs\TabbedFormCode.cs region=PinTab}} 
-{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=PinTab}}
+{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=PinTab}} 
+{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=PinTab}}
 ````C#
 ````
 ````VB.NET

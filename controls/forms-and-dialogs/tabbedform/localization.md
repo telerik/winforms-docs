@@ -20,8 +20,8 @@ To localize __RadTabbedForm__ to display any text and messages in a specific lan
 
 Below is a sample implementation of an English localization provider:
 
-{{source=..\SamplesCS\Forms_And_Dialogs\TabbedFormCode.cs region=Localization}} 
-{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=Localization}}
+{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Localization}} 
+{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Localization}}
 ````C#
 ````
 ````VB.NET

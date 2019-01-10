@@ -13,8 +13,8 @@ position: 0
 The tabs can shown when the form is showing the standard windows window styles. This is controlled by the __AllowAero__ property. 
 
 
-{{source=..\SamplesCS\Forms_And_Dialogs\TabbedFormCode.cs region=Aero}} 
-{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=Aero}}
+{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Aero}} 
+{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Aero}}
 ````C#
 ````
 ````VB.NET

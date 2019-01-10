@@ -20,8 +20,8 @@ The following example demonstrates how one ca use the __ContextMenuOpening__ eve
 
 #### Using the ContextMenuOpening event
 
-{{source=..\SamplesCS\Forms_And_Dialogs\TabbedFormCode.cs region=ModifyContextMenu}} 
-{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=ModifyContextMenu}}
+{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=ModifyContextMenu}} 
+{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=ModifyContextMenu}}
 ````C#
 ````
 ````VB.NET
