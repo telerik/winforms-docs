@@ -33,8 +33,8 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\Forms_And_Dialogs\TabbedFormCode.cs region=ChangeProvider}} 
-{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=ChangeProvider}}
+{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=ChangeProvider}} 
+{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=ChangeProvider}}
 ````C#
 ````
 ````VB.NET
