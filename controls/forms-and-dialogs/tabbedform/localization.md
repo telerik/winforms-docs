@@ -23,8 +23,12 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Localization}} 
 {{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Localization}}
 ````C#
+RadTabbedFormControlLocalizationProvider.CurrentProvider = new MyRadTabbedFormControlLocalizationProvider();
+
 ````
 ````VB.NET
+RadTabbedFormControlLocalizationProvider.CurrentProvider = New MyRadTabbedFormControlLocalizationProvider()
+
 ```` 
 
 {{endregion}} 
@@ -36,8 +40,12 @@ To apply the custom localization provider, instantiate and assign it to the curr
 {{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=ChangeProvider}} 
 {{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=ChangeProvider}}
 ````C#
+RadTabbedFormControlLocalizationProvider.CurrentProvider = new MyRadTabbedFormControlLocalizationProvider();
+
 ````
 ````VB.NET
+RadTabbedFormControlLocalizationProvider.CurrentProvider = New MyRadTabbedFormControlLocalizationProvider()
+
 ```` 
 
 {{endregion}} 

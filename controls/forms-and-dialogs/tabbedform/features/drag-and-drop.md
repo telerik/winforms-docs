@@ -23,6 +23,18 @@ The **RadTabbedFormControl** is working with a drag-drop service which manages t
 
 {{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=DragDropService}} 
 {{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=DragDropService}}
+````C#
+RadTabbedFormDragDropService dragDropService = this.TabbedFormControl.TabbedFormControlElement.ItemDragService;
+dragDropService.TabbedFormCreating += DragDropService_TabbedFormCreating;
+dragDropService.TabbedFormShown += DragDropService_TabbedFormShown;
+
+````
+````VB.NET
+Dim dragDropService As RadTabbedFormDragDropService = Me.TabbedFormControl.TabbedFormControlElement.ItemDragService
+AddHandler dragDropService.TabbedFormCreating, AddressOf DragDropService_TabbedFormCreating
+AddHandler dragDropService.TabbedFormShown, AddressOf DragDropService_TabbedFormShown
+
+````
 
 
 
