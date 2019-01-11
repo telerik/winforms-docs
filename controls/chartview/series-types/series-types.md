@@ -15,6 +15,8 @@ Chart series have two primary functions: (1) they contain a collection of specif
 
 * __Cartesian Area__: Supports __Bar__, __Line__, __Area__, __Ohlc__, __Candlestick__ and __Scatter__ series. This area sets a standard Cartesian coordinate system where the position of each point on the plane is identified through a pair of values. Series supported in RadChartView’s Cartesian area can be classified in two groups – scatter and categorical. While the former positions its point using two numerical values and, therefore, requires two numerical axes, the latter uses one numerical and one categorical value to plot its data points. The Categorical series you will be able to use with __RadChartView__ are __Bar__, __Line__ (__Spline__), __Area__ (__Spline Area__), Ohlc, Candlestick. Currently the control supports only Scatter point series.
 
+>note The **CartesianSeries** also defines the **ClipLabels** property which is by default set to *false*. This property determines whether the series labels will be clipped according to the viewport`s width and height.
+
 * __Pie Area__: Supports __Pie__, __Donut__ series. Unlike all other areas, __Pie__ area does not use axes. It displays each data point as slices with arc size directly proportional to the magnitude of the raw data point’s value. The supported series types are __Pie__ and __Donut__.
 
 * __Polar Area__: Supports __Polar__ (__Point__, __Line__, __Area__) and __Radar__ (__Point__, __Line__, __Area__) series. This area setups a polar coordinate system, where each value is positioned using a value-angle couple. Additionally, the __Polar__ area renders __Radar__ series, which splits the polar area into equal-size category sectors.
