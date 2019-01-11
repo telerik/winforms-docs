@@ -23,7 +23,15 @@ If you set the __MinimumTabWidth__ it will affect when the navigation buttons ap
 #### Set MinTabWidth
 
 {{source=..\SamplesCS\Forms And Dialogs\TabbedFormCode.cs region=SetMinWidth}} 
-{{source=..\SamplesVB\Forms And Dialogs\TabbedFormCode.vb region=SetMinWidth}} 
+{{source=..\SamplesVB\Forms And Dialogs\TabbedFormCode.vb region=SetMinWidth}}
+````C#
+this.TabbedFormControl.MinimumTabWidth = 150;
+
+````
+````VB.NET
+Me.TabbedFormControl.MinimumTabWidth = 150
+
+```` 
 
 
 {{endregion}} 
