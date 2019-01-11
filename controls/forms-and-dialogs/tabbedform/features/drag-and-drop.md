@@ -12,7 +12,7 @@ position: 0
 
 ## Drag Drop Service
 
-The **RadTabbedFormControl** is working with a drag-drop service which manages the entire drag-drop operation. The service is exposed by the main element of the control. The **RadTabbedFormDragDropService ** inherits the base [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%}) and also exposes two important events providing information when dragging a tab outside of their form results in creating a new form. 
+The **RadTabbedFormControl** is working with a drag-drop service which manages the entire drag-drop operation. The service is exposed by the main element of the control. The **RadTabbedFormDragDropService** inherits the base [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%}) and also exposes two important events providing information when dragging a tab outside of their form results in creating a new form. 
 
 * **TabbedFormCreating**: Gets or Sets the new form which is about to be shown and it also exposes the dragged tab. The event can be canceled.
 * **TabbedFormShown**: Gets the tabbed form which also exposes the added **RadTabbedFormControl**.
