@@ -58,5 +58,12 @@ Please follow the steps below to install Telerik UI for for WinForms:
              
             ![installation-deployment-and-distribution-installing-on-your-computer 004](images/installation-deployment-and-distribution-installing-on-your-computer004.png)
 
-1. The installer will display the completion screen when the controls are installed. Select the __Launch Examples__ check box to launch the examples when the installer is closed. Click __Finish__ to complete the installation.              
-            ![installation-deployment-and-distribution-installing-on-your-computer 005](images/installation-deployment-and-distribution-installing-on-your-computer005.png)
+1. The installer will display the completion screen when the controls are installed. Select the __Launch Examples__ check box to launch the examples when the installer is closed. Click __Finish__ to complete the installation. 
+
+![installation-deployment-and-distribution-installing-on-your-computer 005](images/installation-deployment-and-distribution-installing-on-your-computer005.png)
+
+
+
+
+
+
