@@ -25,6 +25,9 @@ navigation:
     winforms-converter/supported-controls:
         title: Supported Controls
         position: 3
+    core:
+        title: NET Core
+        position: 5
     cloud-integration:
         title: Cloud Integration
         position: 15
