@@ -8,9 +8,9 @@ published: True
 position: 3
 ---
 
-The **RadTabbedForm** is internally working with a tabbed form control which is interacting with the tabs. Most of the functionality of the form is defined and exposed by the **RadTabbedFormControl**.
+**RadTabbedForm** is internally working with a tabbed form control which is interacting with the tabs. Most of the functionality of the form is defined and exposed by the **RadTabbedFormControl**.
 
-#RadTabbedForm
+# RadTabbedForm
 
 ## Properties
 

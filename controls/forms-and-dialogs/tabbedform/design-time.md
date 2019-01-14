@@ -10,7 +10,7 @@ position: 2
 
 ## Design Time
 
-At-design time you can directly type on the left or right part to add a buttons.
+At design time you can directly type on the left or right part to add buttons.
 
 >caption Figure 1: RadTabbedForm add buttons to the left or right.
 

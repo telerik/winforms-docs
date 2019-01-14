@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-The **RadTabbedForm** is a wrapper of the **RadTabbedFormControl**. The tabbed control is docked to *Fill* and it is the sole child control of the **RadTabbedForm**. This article explains the inner structure of the **RadTabbedFormControl**.    
+**RadTabbedForm** is a wrapper of the **RadTabbedFormControl**. The tabbed control is docked to *Fill* and it is the sole child control of the **RadTabbedForm**. This article explains the inner structure of the **RadTabbedFormControl**.    
 
 ## Structure
 

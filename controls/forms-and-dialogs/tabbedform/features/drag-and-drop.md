@@ -12,12 +12,12 @@ position: 0
 
 ## Drag Drop Service
 
-The **RadTabbedFormControl** is working with a drag-drop service which manages the entire drag-drop operation. The service is exposed by the main element of the control. The **RadTabbedFormDragDropService** inherits the base [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%}) and also exposes two important events providing information when dragging a tab outside of their form results in creating a new form. 
+**RadTabbedFormControl** is working with a drag-drop service which manages the entire drag-drop operation. The service is exposed by the main element of the control. The **RadTabbedFormDragDropService** inherits the base [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%}) and also exposes two important events providing information when dragging a tab outside of their form results in creating a new form. 
 
 * **TabbedFormCreating**: Gets or Sets the new form which is about to be shown and it also exposes the dragged tab. The event can be canceled.
 * **TabbedFormShown**: Gets the tabbed form which also exposes the added **RadTabbedFormControl**.
 
->important The tabbed control is added to the form in its **Shown** event. If the **TabbedFormControl** property of the form is accessed before showing it, it will return *null*;
+>important The tabbed control is added to the form in its **Shown** event. If the **TabbedFormControl** property of the form is accessed before showing it, it will return *null*.
 
 #### RadTabbedFormDragDropService
 
@@ -58,7 +58,7 @@ By default you can popup any tab in a standalone window.
 
 ![radtabbedform-drag-drop002](images/radtabbedform-drag-drop002.gif)
 
-## Attach a to the main form
+## Attach a tab to the main form
 
 You can attach any stand alone tabbed form to the main form as well.
 

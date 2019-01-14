@@ -31,6 +31,6 @@ Me.AllowAero = False
 
 ![radtabbedform-standard-styles001](images/radtabbedform-standard-styles001.png)
 
->caption Figure 1: AllowAero = true
+>caption Figure 2: AllowAero = true
 
 ![radtabbedform-standard-styles002](images/radtabbedform-standard-styles002.png)

@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
-__RadTabbedForm__ allows you to display a tabs in the title bar, just like in most modern Web browsers. You can place buttons or other elements in front or after the tabs. You can pin the tabs or reorder the via drag drop. You can open any tab in a standalone window as well.   
+__RadTabbedForm__ allows you to display tabs in the title bar, just like in most modern Web browsers. You can place buttons or other elements in front or after the tabs. You can pin the tabs or reorder them via drag drop. You can open any tab in a standalone window as well.   
 
 ![radtabbedform-overview001](images/radtabbedform-overview001.png)
 

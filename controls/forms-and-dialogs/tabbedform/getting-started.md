@@ -10,7 +10,7 @@ position: 2
 
 ## Getting Started
 
-This topic will walk you through the creating of __RadTabbedForm__.
+This topic will walk you through the creating process of __RadTabbedForm__.
 
 
 1\. Create a blank new Telerik Winforms application using the standard template. 
@@ -27,7 +27,7 @@ This topic will walk you through the creating of __RadTabbedForm__.
 
 ![radtabbedform-getting-started003](images/radtabbedform-getting-started003.png)
 
-In Vb this can be do from the project properties.
+In VB.NET this can be done from the project properties.
 
 ![radtabbedform-getting-started004](images/radtabbedform-getting-started004.png)
 

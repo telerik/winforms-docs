@@ -11,7 +11,7 @@ position: 0
 
 # Pinned Tabs
 
-The tabs can be pinned to the left or right. This will freeze them an the will be always visible. The tabs can be pinned from the context menu or by using the pin button.
+The tabs can be pinned to the left or right. This will freeze them and they will be always visible. The tabs can be pinned from the context menu or by using the pin button.
 
 ## Pin using Context Menu
 
@@ -23,7 +23,7 @@ The tabs can be pinned to the left or right. This will freeze them an the will b
 
 ## Pin using the Button
 
-First you need to show the pin button. Set the ShowTabPinButton property. Set the pin position as well.
+First you need to show the pin button. Set the **ShowTabPinButton** property. Set the pin position as well.
 
 #### Show Pin Button
 

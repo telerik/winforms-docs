@@ -11,14 +11,14 @@ position: 0
 # Buttons
 
 
-By default you can add buttons to the in front of or after the tabs. This can be done at design time by directly typing the button text. 
+By default you can add buttons in front of or after the tabs. This can be done at design time by directly typing the button text. 
 
 >caption Figure 1: Add buttons at design time.
 
 ![radtabbedform-buttons001](images/radtabbedform-buttons001.gif)
 
 
-You can the buttons in the code behind as well. This is demonstrated in the following example.
+You can add the buttons in the code behind as well. This is demonstrated in the following example.
 
 #### Adding Buttons Programmatically
 

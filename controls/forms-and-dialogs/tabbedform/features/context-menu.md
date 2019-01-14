@@ -16,7 +16,7 @@ The default context menu allows you to perform various actions.The menu is opene
 
 # Accessing and Modifying the Context Menu
 
-The following example demonstrates how one ca use the __ContextMenuOpening__ event in order to modify or disable the default context menu.
+The following example demonstrates how one can use the __ContextMenuOpening__ event in order to modify or disable the default context menu.
 
 #### Using the ContextMenuOpening event
 
