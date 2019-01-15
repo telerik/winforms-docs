@@ -23,7 +23,7 @@ The tabs can be pinned to the left or right. This will freeze them and they will
 
 ## Pin using the Button
 
-First you need to show the pin button. Set the **ShowTabPinButton** property. Set the pin position as well.
+First you need to show the pin button. Set the **ShowTabPinButton** property to *true*. Set the pin position as well.
 
 #### Show Pin Button
 

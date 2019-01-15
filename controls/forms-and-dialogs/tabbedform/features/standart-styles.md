@@ -10,7 +10,7 @@ position: 0
 
 # Standard Styles
 
-The tabs can shown when the form is showing the standard windows window styles. This is controlled by the __AllowAero__ property. 
+The tabs can be displayed when the form is showing the standard windows window styles. This is controlled by the __AllowAero__ property. 
 
 
 {{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Aero}} 

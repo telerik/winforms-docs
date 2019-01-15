@@ -10,13 +10,13 @@ position: 0
 
 # Tab Settings
 
-The **RadTabbedForm** and the associated tabbed control expose several properties affecting the layout of the tabs in the title bar. The heights of the title bar and the tabs can vary so is the width of the tabs. The tabbed form also exposes properties controlling the visibility of the of elements holding the icon and the text. The title bar can be also customized so that it will not be themed at all, this will result in displaying the default Windows caption.
+**RadTabbedForm** and the associated tabbed control expose several properties affecting the layout of the tabs in the title bar. The heights of the title bar and the tabs can vary so is the width of the tabs. The tabbed form also exposes properties controlling the visibility of the elements holding the icon and the text. The title bar can be also customized so that it will not be themed at all, this will result in displaying the default Windows caption.
 
 >caption Figure 1: Tab Settings
 
 ![radtabbedform-tab-settings001](images/radtabbedform-tab-settings001.gif)
 
-**RadTabbedFormControl** properties:
+**RadTabbedFormControl**'s properties:
 
 * **CaptionHeight**: Gets or sets the height of the extended title bar.
 
@@ -40,7 +40,7 @@ The **RadTabbedForm** and the associated tabbed control expose several propertie
 
 * **ItemDragMode**: Defines two modes for dragging, *Immediate* and *Preview*.
 
-**RadTabbedForm** properties:
+**RadTabbedForm**'s properties:
 
 * **AllowAero**: Gets or sets a boolean value that determines whether the standard title bar will be painted.
 

@@ -17,7 +17,7 @@ You can access and modify the style for the different elements in the editable a
 
 # Programmatically
 
-The following example demonstrates how you can aces the visual item of the tab and change it back color. 
+The following example demonstrates how you can access the visual item of the tab and change its back color. 
 
 ### Access the tab visual element
 

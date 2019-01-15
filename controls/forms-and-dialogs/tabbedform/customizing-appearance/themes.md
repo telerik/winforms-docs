@@ -14,7 +14,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 ## Styling RadTabbedFormControl
 
-The RadTabbedFormControl item in Visual Style Builder gives you access to the title bar, the tabs and all the default buttons. 
+The **RadTabbedFormControl** item in Visual Style Builder gives you access to the title bar, the tabs and all the default buttons. 
 
 1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder%}): Start menu (Start >> Programs >> Telerik >> UI for WinForms [version] >> Tools).
 
@@ -26,7 +26,7 @@ The RadTabbedFormControl item in Visual Style Builder gives you access to the ti
 
     ![radtabbedform-themes001](images/radtabbedform-themes001.png)
 
-1. Modify the *BackColor* and the *Gradient Style* of the item. Now when a tab is hovered it back color will be red.
+1. Modify the *BackColor* and the *Gradient Style* of the item. Now, when a tab is hovered its back color will be red.
     
     ![radtabbedform-themes002](images/radtabbedform-themes002.png)
 

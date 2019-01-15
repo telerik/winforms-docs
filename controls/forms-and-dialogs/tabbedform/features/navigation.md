@@ -10,7 +10,7 @@ position: 3
 
 ## Navigation
 
-When there is no enough space and not all tabs are visible, two buttons will appear. They will allow you to navigate trough the tabs and select the desired one. 
+When there is no enough space and not all tabs are visible, two buttons will appear. They will allow you to navigate through the tabs and select the desired one. 
 
 >caption Figure 1: Tabs Navigation.
 
@@ -18,7 +18,7 @@ When there is no enough space and not all tabs are visible, two buttons will app
 
 >tip The navigation appearance depends of the tabs count, their width and the available space.
 
-If you set the __MinimumTabWidth__ it will affect when the navigation buttons appear as well.
+If you set the __MinimumTabWidth__ property,  it will affect when the navigation buttons appear as well.
 
 #### Set MinTabWidth
 
