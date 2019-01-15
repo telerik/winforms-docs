@@ -23,7 +23,7 @@ Before proceeding with this article please make sure that the following requirem
 
 ## Example 
 
-1. Create a new WinForms application using one of our [templates]({%slug winforms/visual-studio-templates%}). This way you will have a fully functional application that you will migrate to .NET core (at this point the .NET Core does not provide a designer and this is why you cannot start by creating a new application). You can use any application that uses the Telerik UI for Winforms controls as well.  
+1\. Create a new WinForms application using one of our [templates]({%slug winforms/visual-studio-templates%}). This way you will have a fully functional application that you will migrate to .NET core (at this point the .NET Core does not provide a designer and this is why you cannot start by creating a new application). You can use any application that uses the Telerik UI for Winforms controls as well.  
 
 In this case I am using the excel inspired template.
 
@@ -36,31 +36,29 @@ In this case I am using the excel inspired template.
 
 
 
-2. You need to create a WinForms .NET Core project. Currently this can be done from the Conosle. Open a new *Development Command Prompt for VS2017* and type the following command (you can use any preferred directory). 
+2\. You need to create a WinForms .NET Core project. Currently this can be done from the Conosle. Open a new *Development Command Prompt for VS2017* and type the following command (you can use any preferred directory). 
 
 #### Creating WinForms project from the Command Prompt
 
-````xml
-C:\core_projects>dotnet new WinForms -o MyWinformsApp1
-````
-
+`C:\core_projects>dotnet new WinForms -o MyWinformsApp1`
 
 Once this is done you will see the following message.
 
 ![core-migration002](images/core-migration002.png)
 
 
-3. Once this is done open the project in Visual Studio 2019. Go to the Solution Explorer and right click dependencies the click Add Reference. Navigate to the install folder of the winforms suite and choose the __NetCore__ folder. Select all required assemblies (you can see them in the standard project).  
+3\. Once this is done open the project in Visual Studio 2019. Go to the Solution Explorer and right click dependencies the click Add Reference. Navigate to the install folder of the winforms suite and choose the __NetCore__ folder. Select all required assemblies (you can see them in the standard project).  
 
 ![core-migration003](images/core-migration003.png)
 
-4. In Visual Studio 2019 go to Project -> Add Existing Item. Navigate to the standard application and and select the form files. 
+4\. In Visual Studio 2019 go to Project -> Add Existing Item. Navigate to the standard application and and select the form files. 
 
 
 ![core-migration004](images/core-migration004.png)
 
 
-5.Change the namespace in the newly added files to __MyWinformsApp1__ and the change the startup form in the Program.cs file. That is all now you can start the new application.
+5\.Change the namespace in the newly added files to __MyWinformsApp1__ and the change the startup form in the Program.cs file. That is all now you can start the new application.
 
 
 ![core-migration005](images/core-migration005.png)
+
