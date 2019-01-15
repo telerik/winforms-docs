@@ -29,6 +29,6 @@ radTimeSpanPicker1.Format = "dd'days 'hh'hours 'mm'minutes 'ss'seconds 'fff'mill
 
 {{endregion}} 
 
-Here is the result.
+You can find in the screenshot below the obtained result.
 
 ![radtimespanpicker-format-string001](images/radtimespanpicker-format-string001.png)

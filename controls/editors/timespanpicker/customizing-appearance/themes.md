@@ -10,7 +10,7 @@ position: 1
 
 # Themes
 
-__RadTimeSpanPicker__ does not have dedicated theming because it built from existing elements (RadTimePicker and RadListControl). In order to modify its appearance you need to modify the styles of RadTimePicker and RadListControl in Visual Style Builder. More information is available in the following articles:
+__RadTimeSpanPicker__ does not have dedicated theming because it is built from existing elements (**RadTimePicker** and **RadListControl**). In order to modify its appearance you need to modify the styles of **RadTimePicker** and **RadListControl** in Visual Style Builder. More information is available in the following articles:
 
 * [RadTimePicker Themes]({%slug editors/timepicker/themes%})
 * [RadListControl Themes]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/accessing-and-customizing-elements/themes%})

@@ -10,7 +10,7 @@ position: 3
 
 # Getting Started
 
-This topic will walk you through the creating of __RadTimeSpanPicker__.
+This topic will walk you through the process of creating of __RadTimeSpanPicker__.
 
 
 1\. Create a blank new application and drop __RadTimeSpanPicker__ on the form. The layout should look like this.
