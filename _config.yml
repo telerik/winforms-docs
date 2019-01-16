@@ -1529,12 +1529,14 @@ intro_columns:
       "ColorDialog": "winforms/forms-and-dialogs/colordialog"
       "DesktopAlert": "winforms/desktopalert"
       "Form": "winforms/forms-and-dialogs/form"
+      "FormConverter": "winforms/forms-and-dialogs/form-converter"	  
       "MarkupDialog": "winforms/telerik-presentation-framework/radmarkupdialog"
       "MessageBox": "winforms/forms-and-dialogs/messagebox"
       "RadScrollBar": "winforms/track-and-status-controls/scrollbar"
       "RibbonForm": "winforms/forms-and-dialogs/ribbonform"
       "ShapedForm": "winforms/forms-and-dialogs/shapedform"
       "StatusStrip": "winforms/forms-and-dialogs/statusstrip"
+      "TabbedForm": "radtabbedform-overview"
       "TitleBar": "winforms/forms-and-dialogs/statusstrip"
 -
   categories:
@@ -1549,12 +1551,14 @@ intro_columns:
     items:
       "AutoCompleteBox": "winforms/editors/autocompletebox"
       "BrowseEditor": "winforms/editors/browseeditor"
+      "ButtonTextBox": "winforms/editors/buttontextbox"
       "CalculatorDropDown": "winforms/editors/calculatordropdown"
       "CheckedDropDownList": "winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist"
       "Clock": "winforms/clock"
       "ColorBox": "winforms/editors/colorbox"
       "DateTimePicker": "winforms/editors/datetimepicker"
       "DropDownList": "winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist"
+      "FontDropDownList": "winforms/editors/fontdropdownlist"
       "ImageEditor": "radimageeditor-overview"
       "MaskedEditBox": "winforms/editors/maskededitbox"
       "MultiColumnComboBox": "winforms/multicolumncombobox"
@@ -1563,6 +1567,7 @@ intro_columns:
       "Spreadsheet": "radspreadsheet-overview"
       "TextBox": "winforms/editors/textbox"
       "TimePicker": "winforms/editors/timepicker"
+      "TimeSpanPicker": "radtimespanpicker-overview"
 -
   categories:
   -
