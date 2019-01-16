@@ -14,6 +14,9 @@ position: 3
 |---|---|
 |__Culture__|Gets or sets the current culture associated to the RadTimeSpanPicker|
 |__EditMode__|Gets or sets a value indicating how the users will edit the TimeSpan value.|
+|__EditMode__.*Mask*|The value will be edited in masked edit box.|
+|__EditMode__.*Popup*|The value will be edited only in pop-up.|
+|__EditMode__.*Combined*|The value is modified both in masked edit box and pop-up.|
 |__DaysStep__|Gets or sets the days step used when modifying the value.|
 |__HoursStep__|Gets or sets the hours step used when modifying the value.|
 |__MinutesStep__|Gets or sets the minutes step used when modifying the value.|
