@@ -4,7 +4,7 @@ description: An example demonstrating how the RadMaskedEditBox control can be cu
 type: how-to
 page_title: Validate Input and Play Error Sound
 slug: masked-edit-box-play-sound
-position: 34
+position: 35
 tags: mask, edit-box, error, sound
 ticketid: 1380388
 res_type: kb
