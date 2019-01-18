@@ -31,6 +31,10 @@ An example demonstrating how zooming in the **RadChartView** control can be rest
 
 The example features a **DateTimeContinuousAxis** and suggests a solution how zooming can be restricted to an interval no less than ten minutes. The key in the suggested approach is to handle the **ZoomChanging** event and to cancel it when the time span between the first and last visible point in the view port is about to become less than the predefined interval, in this case - 10 minutes.
 
+>caption Figure 1: Restricting Zoom
+
+![radchartview-restrict-zoom-interval](images/radchartview-restrict-zoom-interval.gif)
+
 >note  A similar approach can be also used with other types of axes.
 
 #### Implementation
