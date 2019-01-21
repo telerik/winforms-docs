@@ -44,7 +44,7 @@ Private Sub RadPdfViewer1_DocumentLoaded(ByVal sender As Object, ByVal e As Even
 End Sub
 ````
 
-2. Use the __ElementPainted__ event to paint the border. You will need to consider the scroll and the zoom as well. Here is the code:
+2\. Use the __ElementPainted__ event to paint the border. You will need to consider the scroll and the zoom as well. Here is the code:
 
 ````C#
 private void PdfViewerElement_ElementPainted(object sender, PaintEventArgs e)
