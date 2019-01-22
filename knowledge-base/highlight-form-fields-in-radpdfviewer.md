@@ -9,6 +9,11 @@ tags: pdfviewer, highlight, form, fields
 res_type: kb
 ---
 
+|Product Version|Product|Author|
+|----|----|----|
+|2019.1.117|RadPdfViewer for WinForms|[Dimitar](https://www.telerik.com/blogs/author/dimitar-karamfilov)|
+
+
 Highlight form fields in RadPdfViewer
 
 This article demonstrates how you can use the custom painting functionality in order to highlight the editable fields in PDF document. 
