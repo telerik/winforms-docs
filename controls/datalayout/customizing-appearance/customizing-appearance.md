@@ -16,7 +16,7 @@ You can access and modify the style for different elements in __RadDataEntry__ b
 
 ![datalayout-customizing-appearance001](images/datalayout-customizing-appearance001.png)   
 
-# Changing the styles of the underling items and controls
+# Changing the styles of the underlying items and controls
 
 The following snippet shows how you access the underlying controls and change their style:
 

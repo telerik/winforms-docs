@@ -23,28 +23,27 @@ Below is a sample implementation of an English localization provider:
 {{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Localization}} 
 {{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Localization}}
 ````C#
-    class MyRadTabbedFormControlLocalizationProvider : RadTabbedFormControlLocalizationProvider
+class MyRadTabbedFormControlLocalizationProvider : RadTabbedFormControlLocalizationProvider
+{
+    public override string GetLocalizedString(string id)
     {
-        public override string GetLocalizedString(string id)
+        switch (id)
         {
-            switch (id)
-            {
-                case RadTabbedFormControlStringId.NewTabMenuTtem: return "New tab";
-                case RadTabbedFormControlStringId.PinTabMenuTtem: return "Pin tab";
-                case RadTabbedFormControlStringId.CloseTabMenuTtem: return "Close tab";
-                case RadTabbedFormControlStringId.CloseOtherTabsMenuTtem: return "Close other tabs";
-                case RadTabbedFormControlStringId.CloseRightTabsMenuTtem: return "Close tabs to the right";
-                case RadTabbedFormControlStringId.UnpinTabMenuTtem: return "Unpin tab";
-            }
-            return base.GetLocalizedString(id);
+            case RadTabbedFormControlStringId.NewTabMenuTtem: return "New tab";
+            case RadTabbedFormControlStringId.PinTabMenuTtem: return "Pin tab";
+            case RadTabbedFormControlStringId.CloseTabMenuTtem: return "Close tab";
+            case RadTabbedFormControlStringId.CloseOtherTabsMenuTtem: return "Close other tabs";
+            case RadTabbedFormControlStringId.CloseRightTabsMenuTtem: return "Close tabs to the right";
+            case RadTabbedFormControlStringId.UnpinTabMenuTtem: return "Unpin tab";
         }
+        return base.GetLocalizedString(id);
     }
+}
 
 ````
 ````VB.NET
 Friend Class MyRadTabbedFormControlLocalizationProvider
     Inherits RadTabbedFormControlLocalizationProvider
-
     Public Overrides Function GetLocalizedString(ByVal id As String) As String
         Select Case id
             Case RadTabbedFormControlStringId.NewTabMenuTtem

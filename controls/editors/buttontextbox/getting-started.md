@@ -10,11 +10,11 @@ position: 3
 
 # Getting Started
 
-**RadButtonTextBox** is used to get input from the user or to display text. It exposes left/right **StackLayoutPanel**s which host button elements on the left/right side of the text box.
+**RadButtonTextBox** is used to get input from the user or to display text. It exposes left/right **StackLayoutPanels** which host button elements on the left/right side of the text box.
          
 The text displayed by the control resides in the __Text__ property. It can be set at design time via the **Properties** window in Visual Studio, at run time in code, or by the user's input at run time. The current contents of a text box can be retrieved at run time by the __Text__ property.
 
-The following tutorial demonstrates how to add items and images to a **RadButtonTextBox** and how to handle clicking the added button elements.
+The following tutorial demonstrates how to add buttons with images to a **RadButtonTextBox** and how to handle the clicking of the button elements.
 
 1. Add a **RadButtonTextBox**  to a form.
 2. Add three images to the project as resources.
@@ -22,7 +22,7 @@ The following tutorial demonstrates how to add items and images to a **RadButton
 
 	![editors-buttontextbox-getting-started 001](images/editors-buttontextbox-getting-started001.png)
 
-4.  Click the **Add** button three times to create three **RadButtonElement**s. Clear the text of the first, second and third button element respectively. Set the resource images to the **Image** property of the items.
+4.  Click the **Add** button three times to create three **RadButtonElement**s. Clear the text of the first, second and third button elements respectively. Set the resource images to the **Image** property of the items.
 
 	![editors-buttontextbox-getting-started 002](images/editors-buttontextbox-getting-started002.png)
 
@@ -30,8 +30,8 @@ The following tutorial demonstrates how to add items and images to a **RadButton
 
 6. In the **Properties** Window select the **Events** button.
 
-7. Locate and double-click the RadButtonElement.**Click** event to create an event handler.
+7. Locate and double-click the RadButtonElement. Click the event to create an event handler.
 	
 	![editors-buttontextbox-getting-started 003](images/editors-buttontextbox-getting-started003.png)
 
-You can place any custom code that you wish to be performed when the user click the first button element in **RadButtonTextBox**.
+You can place any custom code that you wish to be performed when the user clicks the first button element in **RadButtonTextBox**.

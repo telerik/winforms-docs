@@ -54,6 +54,7 @@ End Sub
 
 {{endregion}} 
 
+>note If your grid is localized you can get the item text from the localization provider - `if (e.ContextMenu.Items[i].Text == RadGridLocalizationProvider.CurrentProvider.GetLocalizedString(RadGridStringId.ConditionalFormattingMenuItem))'
 
 ## Adding menu items to the default RadGridView context menu
 

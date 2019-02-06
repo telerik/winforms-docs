@@ -25,9 +25,9 @@ Select **RadButtonTextBox** and click the small arrow on the top right position 
 
 * __Edit UI Elements__: allows setting properties at multiple levels of the class hierarchy.
             
->caption Figure 2: Element hierarchy editor
+    >caption Figure 2: Element hierarchy editor
 
-![editors-buttontextbox-design-time 002](images/editors-buttontextbox-design-time002.png)
+    ![editors-buttontextbox-design-time 002](images/editors-buttontextbox-design-time002.png)
 
 * __Theme Name__: select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the control's visual style at one time.
             

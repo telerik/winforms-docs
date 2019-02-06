@@ -368,6 +368,10 @@ Telerik.WinControls.UI.dll</td></tr><tr><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>
 
+<b>RadButtonTextBox </b></td><td>
+
+Telerik.WinControls.UI.dll</td></tr><tr><td>
+
 <b>RadCalendar</b></td><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>
@@ -420,6 +424,10 @@ Telerik.WinControls.RadDock.dll</td></tr><tr><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>
 
+<b>RadFontDropDownList </b></td><td>
+
+Telerik.WinControls.UI.dll</td></tr><tr><td>
+
 <b>RadForm</b></td><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>
@@ -469,6 +477,10 @@ Telerik.WinControls.UI.dll</td></tr><tr><td>
 Telerik.WinControls.UI.dll</td></tr><tr><td>
 
 <b>RadRibbonForm</b></td><td>
+
+Telerik.WinControls.UI.dll</td></tr><tr><td>
+
+<b>RadTabbedForm</b></td><td>
 
 Telerik.WinControls.UI.dll</td></tr><tr><td>
 
@@ -683,6 +695,10 @@ Telerik.WinControls.Scheduler.dll</td></tr><tr><td>
 <b>RadSchedulerNavigator</b></td><td>
 
 Telerik.WinControls.Scheduler.dll</td></tr><tr><td>
+
+<b>RadTimeSpanPicker</b></td><td>
+
+Telerik.WinControls.UI.dll</td></tr><tr><td>
 
 <b>RadCommandBar</b></td><td>
 

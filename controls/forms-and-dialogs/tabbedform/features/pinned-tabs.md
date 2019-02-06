@@ -13,13 +13,13 @@ position: 0
 
 The tabs can be pinned to the left or right. This will freeze them and they will be always visible. The tabs can be pinned from the context menu or by using the pin button.
 
+>note The left or right position of the pinned tabs is controlled by the [RadTabbedFormControl.PinnedItemsPosition]({%slug tab-settings%}) property.
+
 ## Pin using Context Menu
 
 >caption Figure 1: Pin Tabs from the Context Menu.
 
 ![radtabbedform-pinned-tabs001](images/radtabbedform-pinned-tabs001.gif)
-
-
 
 ## Pin using the Button
 

@@ -14,7 +14,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product Version</td>
-		<td>2019.3.1016</td>
+		<td>2018.3.1016</td>
 	</tr>
 	<tr>
 		<td>Product</td>
@@ -39,15 +39,14 @@ The **MapPoint** class accepts a System.Drawing.Size object in its constructor a
 ````C#
 public class CustomMapPoint : MapPoint
 {
-	private int radiusInMeters;
+    private int radiusInMeters;
 
     public CustomMapPoint(PointG location) : base(location)
-    {
-    }
+    { }
 
-    public CustomMapPoint(PointG location, Size size) : base(location, size)
-    {
-    }
+    public CustomMapPoint(PointG location, Size size) 
+        : base(location, size)
+    { }
 
     public int RadiusInMeters
     {
@@ -57,16 +56,16 @@ public class CustomMapPoint : MapPoint
         }
         set
         {
-            this.radius = radiusInMeters;
+            this.radiusInMeters = value;
         }
     }
 
     public override void ViewportChanged(IMapViewport viewport, ViewportChangeAction action)
     {
-        var onePixelInMeters = MapTileSystemHelper.GroundResolution(this.Location.Latitude, viewport.ZoomLevel);
+        double onePixelInMeters = MapTileSystemHelper.GroundResolution(this.Location.Latitude, viewport.ZoomLevel);
 
-        var scale = -1.0F;
-        scale = this.RadiusInMeters * 2 / (double)onePixelInMeters;
+        int scale = -1;
+        scale = (int)(this.RadiusInMeters * 2 / onePixelInMeters);
         Size newSize = Size.Empty;
         if (scale > 1)
             newSize = new Size(scale, scale);
@@ -76,6 +75,7 @@ public class CustomMapPoint : MapPoint
         base.ViewportChanged(viewport, action);
     }
 }
+
 
 ````
 ````VB.NET
@@ -132,7 +132,7 @@ public RadForm1()
     element.RadiusInMeters = 100;
     element.BackColor = Color.FromArgb(125, Color.LightBlue);
     element.BorderColor = Color.Red;
-    this.radMap1.Layers("PointG").Add(element);
+    this.radMap1.Layers["PointG"].Add(element);
 }
 
 ````

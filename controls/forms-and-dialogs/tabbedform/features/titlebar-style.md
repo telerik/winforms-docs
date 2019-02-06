@@ -1,17 +1,16 @@
 ---
-title: Standard Styles
-page_title: Standard Styles | RadTabbedForm
+title: Title Bar Style
+page_title: Title Bar Style | RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
-slug: radtabbedform-standard-styles
+slug: radtabbedform-titlebar-styles
 tags: radtabbedform
 published: True
 position: 0
 ---
 
-# Standard Styles
+# Title Bar Style
 
-The tabs can be displayed when the form is showing the standard windows window styles. This is controlled by the __AllowAero__ property. 
-
+The Tabbed Form supports the standard Windows title bar style. This setting is controlled by the __AllowAero__ property.
 
 {{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Aero}} 
 {{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Aero}}
@@ -27,10 +26,10 @@ Me.AllowAero = False
 {{endregion}} 
 
 
->caption Figure 1: AllowAero = false
+>caption Figure 1: AllowAero = false on Windows 10
 
 ![radtabbedform-standard-styles001](images/radtabbedform-standard-styles001.png)
 
->caption Figure 2: AllowAero = true
+>caption Figure 2: AllowAero = true on Windows 10
 
 ![radtabbedform-standard-styles002](images/radtabbedform-standard-styles002.png)
