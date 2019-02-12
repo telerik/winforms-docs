@@ -1,7 +1,7 @@
 ---
-title: Redistributing Telerik UI for for WinForms
-page_title: Redistributing Telerik UI for for WinForms
-description: Redistributing Telerik UI for for WinForms
+title: Redistributing Telerik UI for WinForms
+page_title: Redistributing Telerik UI for WinForms
+description: Redistributing Telerik UI for WinForms
 slug: installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows
 tags: redistributing,telerik,ui,for,winforms
 published: True
@@ -9,9 +9,9 @@ position: 5
 previous_url: installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows
 ---
 
-# Redistributing Telerik UI for for WinForms
+# Redistributing Telerik UI for WinForms
 
-The Telerik UI for for WinForms suite includes a limited run time royalty-free license to redistribute the controls in your own solutions subject to the License Agreement. You can use the components in the suite to build your own solutions, and redistribute your solutions to and your end users who are not required to purchase a license from Telerik to access your solution.
+The Telerik UI for WinForms suite includes a limited run time royalty-free license to redistribute the controls in your own solutions subject to the License Agreement. You can use the components in the suite to build your own solutions, and redistribute your solutions to and your end users who are not required to purchase a license from Telerik to access your solution.
 
 ## Examples of Permitted Uses
 
@@ -29,7 +29,7 @@ The Telerik UI for for WinForms suite includes a limited run time royalty-free l
             
 * Open source products.
 
-For additional usage requirements, development restrictions and, defined term definitions, please refer to the WinForms [license agreement]({%slug winforms/licensing/license-agreement%}). For uses that require additional review, please send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
+For additional usage requirements, development restrictions and, defined term definitions, please refer to the WinForms [license agreement]({%slug winforms/licensing/license-agreement%}). For uses that require additional review, please send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
         
 
 ## ILMerge Telerik WinForms assemblies
@@ -111,12 +111,12 @@ The MergedApplicationExecutable.exe is now a stand-alone application executable 
 |----|----|
 |[Redistribute OEM](http://www.telerik.com/videos/winforms/redistribute-oem)<br>This video demonstrates how to build the Telerik assemblies, so they are locked to your application and cannot be reused outside of it. (Runtime: 5:49)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows016.png)|
 
-This method requires modifications to the source files, which are distributed as part of the Subscription license. If you have purchased a Subscription license for Telerik UI for for WinForms, and would like to explore this method, the following information will allow you to do so.
+This method requires modifications to the source files, which are distributed as part of the Subscription license. If you have purchased a Subscription license for Telerik UI for WinForms, and would like to explore this method, the following information will allow you to do so.
         
 
-Protecting Telerik UI for for WinForms requires the Telerik assemblies to be built from source code. The essential part of this approach is that you need to introduce a small modification to the Telerik.WinControls project. For brevity this document assumes that the source distribution ZIP file is extracted in C:\Telerik UI for for WinForms Source:
+Protecting Telerik UI for WinForms requires the Telerik assemblies to be built from source code. The essential part of this approach is that you need to introduce a small modification to the Telerik.WinControls project. For brevity this document assumes that the source distribution ZIP file is extracted in C:\Telerik UI for WinForms Source:
         
-1. Open the following solution file: C:\Telerik UI for for WinForms Source\RadControlsVS2010.sln
+1. Open the following solution file: C:\Telerik UI for WinForms Source\RadControlsVS2010.sln
             
 
 1. In the properties for the Telerik.WinControls project, open the Build tab and add an OEM conditional compilation symbol, as shown below:
@@ -131,7 +131,7 @@ Protecting Telerik UI for for WinForms requires the Telerik assemblies to be bui
 
 	>tip: If you are building the .NET4.0 version of the assemblies, you need to use the Release40 build configuration. In this case, when you add the "OEM" symbol, you need to keep the existing NET4 symbol - "OEM; NET4".
 
-1. Open C:\Telerik UI for for WinForms Source\RadControl\TPF\Control\RadControl.cs in a text editor (notepad, Visual Studio etc).
+1. Open C:\Telerik UI for WinForms Source\RadControl\TPF\Control\RadControl.cs in a text editor (notepad, Visual Studio etc).
             
 
 1. Uncomment the following line and change the string to you application’s assembly name:
@@ -146,7 +146,7 @@ Protecting Telerik UI for for WinForms requires the Telerik assemblies to be bui
 
 1. Save RadControl.cs and rebuild the solution.
 
-1. In your application replace the __existing__ references to Telerik UI for for WinForms assemblies with the ones built from source code __and rebuild your project so it will use the newly build assemblies__.
+1. In your application replace the __existing__ references to Telerik UI for WinForms assemblies with the ones built from source code __and rebuild your project so it will use the newly build assemblies__.
             
 
 Once you finish these steps, and if you or someone else tries to use that assembly from another application the evaluation dialog will appear (randomly).
@@ -159,10 +159,10 @@ Once you finish these steps, and if you or someone else tries to use that assemb
 |----|----|
 |[Redistribute OEMKEY](http://www.telerik.com/videos/winforms/redistribute-oemkey)<br>This video demonstrates how to build the Telerik assemblies, so they are locked to your application public token key and cannot be reused outside of it. (Runtime: 7:19)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows017.png)|
 
-This section demonstrates how to deploy a project with a public token key. We will assume that you have downloaded and extracted your source code distribution in C:\Telerik UI for for WinForms Source\RadControlsVS2010.sln:
+This section demonstrates how to deploy a project with a public token key. We will assume that you have downloaded and extracted your source code distribution in C:\Telerik UI for WinForms Source\RadControlsVS2010.sln:
         
 
-1. Open the following solution file: C:\Telerik UI for for WinForms Source\RadControlsVS2010.sln
+1. Open the following solution file: C:\Telerik UI for WinForms Source\RadControlsVS2010.sln
             
 
 1. In the properties for the Telerik.WinControls project, open the Build tab and add an OEMKEY conditional compilation symbol, as shown below:
@@ -174,7 +174,7 @@ This section demonstrates how to deploy a project with a public token key. We wi
     After: 
     ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 007](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows007.png)
 
-1. Open C:\Telerik UI for for WinForms Source\RadControl\TPF\Control\ RadControl.cs in a text editor (notepad, Visual Studio etc).
+1. Open C:\Telerik UI for WinForms Source\RadControl\TPF\Control\ RadControl.cs in a text editor (notepad, Visual Studio etc).
             
 
 1. Delete the value of the OemPublicKeyToken:
@@ -206,12 +206,12 @@ This section demonstrates how to deploy a project with a public token key. We wi
 1. Build the solution.
             
 
-1. In your application replace the existing references to Telerik UI for for WinForms assemblies with the ones built from source code and rebuild your project so it will use the newly build assemblies.
+1. In your application replace the existing references to Telerik UI for WinForms assemblies with the ones built from source code and rebuild your project so it will use the newly build assemblies.
             
 
 ## Using the Telerik Document Processing Libraries in Your Solutions
 
-In order to include the Telerik Document Processing libraries in your application, you should build the source code as described below. The source code of the Document Processing libraries is distributed together with the Telerik UI for for WinForms source code and installation and is available for downloading from the client accounts. For brevity this document assumes that the source distribution ZIP file is extracted in C:\DPL.
+In order to include the Telerik Document Processing libraries in your application, you should build the source code as described below. The source code of the Document Processing libraries is distributed together with the Telerik UI for WinForms source code and installation and is available for downloading from the client accounts. For brevity this document assumes that the source distribution ZIP file is extracted in C:\DPL.
          		         
  		 
  __Instructions__
@@ -311,7 +311,7 @@ Friend Const ApplicationName As String = "Sample Application Name v2.0 (tm)"
 
 5\. In your application replace the existing references to the Telerik assemblies with the ones built from the source code.
 
-6\. If you run the application now you should get an exception with message “This version of Telerik UI for for WinForms is licensed only for use by Sample Application Name v2.0 (tm)”. Note that “Sample Application Name v2.0 (tm)” will be replaced with the value of the ApplicationName constant.
+6\. If you run the application now you should get an exception with message “This version of Telerik UI for WinForms is licensed only for use by Sample Application Name v2.0 (tm)”. Note that “Sample Application Name v2.0 (tm)” will be replaced with the value of the ApplicationName constant.
             
 
 ## Using the Images from the Suite in Your Solutions
@@ -328,7 +328,7 @@ When you install the suite together with the installation we deploy a few differ
 * Images from one Telerik control __can be reused in another Telerik control__ as long as the customer has obtained licenses for both Telerik products.
             
 
-## Telerik UI for for WinForms Assemblies
+## Telerik UI for WinForms Assemblies
 
 When deploying your application on customer machines, you should make sure that the following assemblies are included in the distribution, being merged with the application executable or being recompiled with the special symbol set:
         
