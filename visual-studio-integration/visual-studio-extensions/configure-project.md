@@ -30,11 +30,21 @@ Through the Project Configuration Wizard’s second page you can:
 
 * Select which theme will be applied to your project. Check the content of each theme or see the preview of it when select it into the Project Configuration Wizard.
 
+Through the Project Configuration Wizard’s third page you can:
+
+![installation-deployment-and-distribution-vsx-configure-project 003](images/installation-deployment-and-distribution-vsx-configure-project003.png)
+
+* Select the "Enable HDPI" option in order to add support for high DPI awareness in your application.
+
+>important Note that the "Enable HDPI" option is availaible from version 2019.1
+
 When you click the Finish button:
 
 * The selected assembly references get added to your project
 
 * A default application-wide theme gets set according to the selected theme.
+
+* An app.manifest file is included to your project if you have selected the "Enable HDPI" option.
 
 # See Also
 

@@ -23,9 +23,11 @@ After you click the __OK__ button, you get the Create New Project Wizard, provid
 
 The Create New Project Wizard lets you:
 
-![installation-deployment-and-distribution-vsx-create-project 002](images/installation-deployment-and-distribution-vsx-create-project001.png)
+![installation-deployment-and-distribution-vsx-create-project 002](images/installation-deployment-and-distribution-vsx-create-project002.png)
 
 * Select a Telerik UI version from the list of versions detected on your system
+
+* Select the Enable HDPI option in order to add support for high DPI awareness in your application
 
 * Download the latest versions available on our website using the __GET LATEST__ button
 
@@ -35,11 +37,15 @@ The Create New Project Wizard lets you:
 >
 >If you prefer the Telerik assemblies to be copied into your solution folder, the __Copy referenced assemblies to solution and source control__ option could be selected only into the [Visual Studio Extensions Options]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/options%}).
 
+>important Note that the "Enable HDPI" option is availaible from version 2019.1
+
 When you click the Finish button:
 
 * The selected assembly references get added to your project
 
 * A default application-wide theme gets set according to the selected project type.
+
+* An app.manifest file is included to the project if you have selected the "Enable HDPI" option.
 
 # See Also
 
