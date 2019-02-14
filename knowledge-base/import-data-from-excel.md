@@ -27,6 +27,7 @@ Use the RadSpreadProcessing library to read the file and import the data from it
 #### Create Data table from an Excel file
 
 ````C#
+
 private void radButton1_Click(object sender, EventArgs e)
 {
     XlsxFormatProvider formatProvider = new XlsxFormatProvider();
@@ -67,4 +68,6 @@ private void radButton1_Click(object sender, EventArgs e)
     radGridView1.DataSource = table;
 
 }
+
 ````
+

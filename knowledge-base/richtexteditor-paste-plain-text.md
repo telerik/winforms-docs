@@ -28,6 +28,7 @@ The code below shows how you can intercept the paste command and replace the con
 #### Paste plain text
 
 ````C#
+
 public RadForm1()
 {
     InitializeComponent();
@@ -91,3 +92,4 @@ public void PasteNewText()
 }
 
 ````
+

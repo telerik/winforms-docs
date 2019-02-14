@@ -26,17 +26,24 @@ Manually force the layout update. This way you can be sure that the proper value
 
 #### Update RadLabel Layout
 
+
 ````C#
+
 this.radLabel1.LayoutManager.UpdateLayout();
 
 ````
+
 
 If you are using a label inside a status strip use the following code.
 
 #### Update Status SStrip Layout
 
 ````C#
+
 radStatusStrip1.LayoutManager.UpdateLayout();
 radStatusStrip1.Refresh();
 
 ````
+
+
+
