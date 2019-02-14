@@ -22,10 +22,12 @@ __GridViewDataColumn__ descends from __GridViewColumn__ and is the base class fo
 * __Index__ is the position of the column within the __Columns__ collection.
 
 * __FormatString__ allows you to tailor the output of strings, numbers and dates using standard formatting strings. 
+* __AutoFilterDelay__ property gets or sets a value in milliseconds that indicates the delay between the last key press and the filtering operation (available since R1 2019 SP1).
 
 See [Iterating Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%}) for an example of using __GridViewDataColumn__.
 
 See [Data Formatting]({%slug winforms/gridview/columns/data-formatting%}) for an example of formatting __GridViewDataColumns__.
+
 # See Also
 * [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
 
