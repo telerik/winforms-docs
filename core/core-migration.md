@@ -47,17 +47,17 @@ Once this is done you will see the following message.
 ![core-migration002](images/core-migration002.png)
 
 
-3\. Once this is done open the project in Visual Studio 2019. Go to the Solution Explorer and right click dependencies the click Add Reference. Navigate to the install folder of the winforms suite and choose the __NetCore__ folder. Select all required assemblies (you can see them in the standard project).  
+3\. Now open the project in Visual Studio 2019. Go to the Solution Explorer and right click dependencies and then click Add Reference. Navigate to the install folder of the winforms suite and choose the __NetCore__ folder. Select all required assemblies (you can see them in the standard project).  
 
 ![core-migration003](images/core-migration003.png)
 
-4\. In Visual Studio 2019 go to Project -> Add Existing Item. Navigate to the standard application and and select the form files. 
+4\. In Visual Studio 2019 go to Project -> Add Existing Item. Navigate to the standard application and select the form files. 
 
 
 ![core-migration004](images/core-migration004.png)
 
 
-5\.Change the namespace in the newly added files to __MyWinformsApp1__ and the change the startup form in the Program.cs file. That is all now you can start the new application.
+5\.Change the namespace in the newly added files to __MyWinformsApp1__ and then change the startup form in the Program.cs file. That is all, now you can start the new application.
 
 
 ![core-migration005](images/core-migration005.png)
