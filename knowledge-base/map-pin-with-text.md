@@ -1,8 +1,8 @@
 ---
-title: How to create a pin with an image in RadMap
+title: How to create a pin with text in RadMap
 description: An example demonstrating the MapPin class can be customized to support text.  
 type: how-to
-page_title: How to create a pin with an image in RadMap
+page_title: How to create a pin with text in RadMap
 slug: map-pin-with-text
 position: 62
 tags: map, pin, text
@@ -11,10 +11,9 @@ res_type: kb
 ---
 
 ## Environment
-## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2019.1.117|RadMap for WinForms|[Hristo Merdjanov](https://www.telerik.com/blogs/author/hristo-merdjanov)|
+|2019.1.219|RadMap for WinForms|[Hristo Merdjanov](https://www.telerik.com/blogs/author/hristo-merdjanov)|
 
 
 ## Description
