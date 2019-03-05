@@ -9,7 +9,7 @@ position: 0
 previous_url: overview, RadControlsForWinForms
 ---
 
-# Telerik UI for for WinForms
+# Telerik UI for WinForms
 
 ## Performance you demand, UI you can't believe
 
