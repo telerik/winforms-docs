@@ -15,10 +15,14 @@ res_type: kb
 
 ## Problem
 
-The Winforms converter crashes when converting a project. This happens with Visual Studio 2017 18.7 or newer. This is caused because in the latest version of Visual Studio a type used in the converter was moved. Detailed information can be found here: [Version used in VS 15.8 not available on NuGet (Breaks VS extension using MSBuildWorkspace) Issue #29334](https://github.com/dotnet/roslyn/issues/29334)
+The WinForms converter crashes when converting a project. This happens with Visual Studio 2017 18.7 or newer. This is caused because in the latest version of Visual Studio a type used in the converter was moved. Detailed information can be found here: [Version used in VS 15.8 not available on NuGet (Breaks VS extension using MSBuildWorkspace) Issue #29334](https://github.com/dotnet/roslyn/issues/29334)
 
 ## Solution
 
-This is an issue that Microsoft should provide a fix for and at this point, there is nothing we can do but wait. 
+We have a new custom build of the converter extension. This version will work on Visual Studio 18.7 or newer. You can download it form here: [Converter Extension](https://www.telerik.com/docs/default-source/ui-for-winforms/telerik-wincontrols-converter-vspackage-vsix.zip?sfvrsn=f91dc85c_2).  
 
-As a workaround, I can suggest using version 15.7 where the converter is working (the converter works well with Visual Studio 2015 as well). 
+You need to uninstall the converter extension if it is already installed.
+
+![converter-exception 001](images/converter-exception001.png)
+
+Another approach is using version 15.7 where the converter is working (the converter works well with Visual Studio 2015 as well). 
