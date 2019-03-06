@@ -13,7 +13,7 @@ previous_url: panels-and-labels-label-html-like-text-formatting
 
 ## Introduction
 
-Telerik UI for for WinForms provide an advanced text styling mechanism, which can be applied to all Telerik products, because it enhances the smallest element in the Telerik Presentation Framework - the text primitive. The new rich text formatting mechanism uses plain HTML tags to display formatted text such as font style, font color, font size options and simple layouts. To turn on Html-like formatting the text must start with an __\<html\>__ tag; use __\<size=[+|-]value\>__ to set font size use, and __\<br\>__ to create new line feed. To bold, underline and italic text, use the corresponding opening and closing tags. Font family is set through __\<font=Family\>.__
+Telerik UI for WinForms provide an advanced text styling mechanism, which can be applied to all Telerik products, because it enhances the smallest element in the Telerik Presentation Framework - the text primitive. The new rich text formatting mechanism uses plain HTML tags to display formatted text such as font style, font color, font size options and simple layouts. To turn on Html-like formatting the text must start with an __\<html\>__ tag; use __\<size=[+|-]value\>__ to set font size use, and __\<br\>__ to create new line feed. To bold, underline and italic text, use the corresponding opening and closing tags. Font family is set through __\<font=Family\>.__
 
 ## Supported Tags 
 

@@ -37,7 +37,7 @@ The example below demonstrates setting up __RadCardView__ to display data from t
 
 1. In the __Add Connection__ dialog, click on the *Browse* button. This step will display the __Select Microsoft Access Database File__ dialog.
 
-1. In the __Select Microsoft Access Database File__ dialog, navigate to Telerik UI for for WinForms installation directory and locate the `Nwind.mdb` file within the \Examples\QuickStart\Datasources directory. Select `Nwind.mdb` and click *OK* to close the __Select Microsoft Access Database File__ dialog.
+1. In the __Select Microsoft Access Database File__ dialog, navigate to Telerik UI for WinForms installation directory and locate the `Nwind.mdb` file within the \Examples\QuickStart\Datasources directory. Select `Nwind.mdb` and click *OK* to close the __Select Microsoft Access Database File__ dialog.
 
 1. Click *OK* to close __Add Connection__ dialog.
 

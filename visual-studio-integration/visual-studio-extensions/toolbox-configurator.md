@@ -26,7 +26,7 @@ The user can make his selection using the dropdown menu which lists all versions
 
 The __Toolbox Configurator__ is supported in Visual Studio 2008, 2010, 2012, 2013 and 2015.
 
->tip The Toolbox Configurator will overwrite the toolbox registration performed during installation. Additionally, the Toolbox Configurator registers the selected version of Telerik UI for for WinForms in AssemblyFoldersEx. This makes them visible in the Add Reference dialog and Choose Toolbox Items dialog (accessible from the toolbox context menu).
+>tip The Toolbox Configurator will overwrite the toolbox registration performed during installation. Additionally, the Toolbox Configurator registers the selected version of Telerik UI for WinForms in AssemblyFoldersEx. This makes them visible in the Add Reference dialog and Choose Toolbox Items dialog (accessible from the toolbox context menu).
 >
 
 ![installation-deployment-and-distribution-vsx-toolbox-configurator 003](images/installation-deployment-and-distribution-vsx-toolbox-configurator003.png)

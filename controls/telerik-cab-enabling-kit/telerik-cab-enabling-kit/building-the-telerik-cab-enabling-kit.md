@@ -33,5 +33,5 @@ In order to build the Telerik CAB Enabling Kit you will need:
 	
 	* TelerikCommon
 
-After building the project it will output the Telerik.WinControls.CompositeUI assembly, which you can add as reference in your application and start building CAB applications empowered by the Telerik UI for for WinForms suite.
+After building the project it will output the Telerik.WinControls.CompositeUI assembly, which you can add as reference in your application and start building CAB applications empowered by the Telerik UI for WinForms suite.
         

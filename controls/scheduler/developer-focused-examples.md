@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
 page_title: Developer Focused Examples | RadTreeView
-description: Additional examples built on top the Telerik UI for for WinForms RadScheduler control.
+description: Additional examples built on top the Telerik UI for WinForms RadScheduler control.
 slug: winforms/scheduler/developer-focused-examples
 tags: developer, sdk, examples
 published: True

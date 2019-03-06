@@ -1,7 +1,7 @@
 ---
 title: Upgrading to RadPageView
 page_title: Upgrading to RadPageView | RadPageView
-description: RadPageView is yet another great addition to the Telerik UI for for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/upgrading-to-radpageview
 tags: upgrading,to,radpageview
 published: True
@@ -18,7 +18,7 @@ previous_url: pageview-upgrading-to-radpageview
 
 ## 
 
->important This article is valid for Telerik UI for for WinForms versions prior to **R2 2011 SP1** version inclusive. The *Upgrade Tool* can be used only if started from the **Smart Tag** of the obsolete controls. Since these controls have been removed in **R3 2011** version, their respective **Upgrade Tools** are not available as well. In case you want to use the tools, please upgrade/downgrade to **R2 2011 SP1 (v2011.2.11.831)** version.
+>important This article is valid for Telerik UI for WinForms versions prior to **R2 2011 SP1** version inclusive. The *Upgrade Tool* can be used only if started from the **Smart Tag** of the obsolete controls. Since these controls have been removed in **R3 2011** version, their respective **Upgrade Tools** are not available as well. In case you want to use the tools, please upgrade/downgrade to **R2 2011 SP1 (v2011.2.11.831)** version.
 >
 
 Since **R2 2010** several brand new controls were released, as successors of older and not that optimized controls. These are:

@@ -11,7 +11,7 @@ previous_url: tpf-touch-support
 
 # Touch Support
 
-The Telerik UI for for WinForms suite provides full multi-touch support. All controls in the suite are exposing several events which grant the developer the ability to easily handle gestures on a touch devices. This functionality is currently supported under Windows7 or newer. Some of the controls in our suite have built-in functionality that responds to touch gestures. For example, you can use the __Pan__ gesture to scroll through the RadGridView’s rows, group by a column or change the order of its columns. Similar functionality is available out-of-the-box for RadTreeView, RadListView, RadPropertyGrid, RadListControl, RadCarousel and RadCommandBar. Additionally, the developer can use the gesture events to implement his custom logic.
+The Telerik UI for WinForms suite provides full multi-touch support. All controls in the suite are exposing several events which grant the developer the ability to easily handle gestures on a touch devices. This functionality is currently supported under Windows7 or newer. Some of the controls in our suite have built-in functionality that responds to touch gestures. For example, you can use the __Pan__ gesture to scroll through the RadGridView’s rows, group by a column or change the order of its columns. Similar functionality is available out-of-the-box for RadTreeView, RadListView, RadPropertyGrid, RadListControl, RadCarousel and RadCommandBar. Additionally, the developer can use the gesture events to implement his custom logic.
 
 ## Touch Events in RadControls
 
