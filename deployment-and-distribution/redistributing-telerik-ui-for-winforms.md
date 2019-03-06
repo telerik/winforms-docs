@@ -11,7 +11,7 @@ previous_url: installation-deployment-and-distribution-redestributing-telerik-ra
 
 # Redistributing Telerik UI for WinForms
 
-The Telerik UI for WinForms suite includes a limited run time royalty-free license to redistribute the controls in your own solutions subject to the License Agreement. You can use the components in the suite to build your own solutions, and redistribute your solutions to and your end users who are not required to purchase a license from Telerik to access your solution.
+The Telerik UI for WinForms suite includes a limited run time royalty-free license to redistribute the controls in your own solutions subject to the License Agreement. You can use the components in the suite to build your own solutions, and redistribute your solutions to your end users who are not required to purchase a license from Telerik to access your solution.
 
 ## Examples of Permitted Uses
 
