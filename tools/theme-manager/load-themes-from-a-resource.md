@@ -36,7 +36,8 @@ To load a theme from a resource into a Theme Manager, follow these steps:
 
 1. Using the same approach, load the  __theme repository file__ and all other theme files that you need.
 
-
+>important If the form with the theme manager will be opened multiple time in the life cycle of the application, the theme manager needs to be diposed explicitly. A suitable place to call its Dispose method is the Closing event of the form.
+>
 
 # See Also
 * [Adding RadThemeManager to a Form]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form%})

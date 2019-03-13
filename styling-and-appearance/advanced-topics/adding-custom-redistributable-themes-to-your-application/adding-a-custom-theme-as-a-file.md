@@ -26,6 +26,9 @@ previous_url: themes-advanced-topics-adding-custom-adding-as-file
 
 1. Now apply the theme to the RadButton. 
 
+>important If the form with the theme manager will be opened multiple time in the life cycle of the application, the theme manager needs to be diposed explicitly. A suitable place to call its Dispose method is the Closing event of the form.
+>
+
 # See Also
 * [Adding a custom theme as a resource]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/adding-a-custom-theme-as-a-resource%})
 

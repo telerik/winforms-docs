@@ -37,6 +37,9 @@ To load a theme from an external file into a Theme Manager, follow these steps:
 
     ![tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-an-external-file 002](images/tools-visual-style-builder-adding-custom-themes-to-your-application-load-themes-from-an-external-file002.png)
 
+>important If the form with the theme manager will be opened multiple time in the life cycle of the application, the theme manager needs to be diposed explicitly. A suitable place to call its Dispose method is the Closing event of the form.
+>
+
 >caution It is up to you to choose a theme that makes sense for the controls on the form that you are customizing. Theme Manager does not check the theme to make sure that its customizations apply to the controls currently on the form.
 >
 
