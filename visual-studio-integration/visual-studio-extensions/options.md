@@ -35,7 +35,7 @@ __Suggest upgrades when an equal Dev release is detected on projects using a Tri
 
 ![installation-deployment-and-distribution-vsx-options-dialog 003](images/installation-deployment-and-distribution-vsx-options-dialog003.png)
 
-All settings under the WinForms category affect only the Telerik UI for for WinForms Visual Studio Extensions.
+All settings under the WinForms category affect only the Telerik UI for WinForms Visual Studio Extensions.
 
 ## Select a folder for downloads
 
@@ -49,4 +49,4 @@ __Include internal builds in Latest Version update and retrieval__ – When enab
 
 ## Notifications
 
-__Show me a message when a newer version is available on__ [www.telerik.com](http://www.telerik.com). When enabled and solution containing an UI for WinForms project is loaded, you will receive notification if a new version of __Telerik UI for for WinForms__ is available on the Telerik website.
+__Show me a message when a newer version is available on__ [www.telerik.com](http://www.telerik.com). When enabled and solution containing an UI for WinForms project is loaded, you will receive notification if a new version of __Telerik UI for WinForms__ is available on the Telerik website.

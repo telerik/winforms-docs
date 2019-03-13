@@ -11,7 +11,7 @@ previous_url: telerik-cab-enabling-kit-what-is-in-the-package
 
 # What is in the package
 
-The CAB kit contains all needed wrappers to start using Telerik UI for for WinForms with the CAB framework right away. It also comes with documentation and a reference application to decrease the learning curve and to help you quickly get you up to speed.
+The CAB kit contains all needed wrappers to start using Telerik UI for WinForms with the CAB framework right away. It also comes with documentation and a reference application to decrease the learning curve and to help you quickly get you up to speed.
       
 
 ## Supported Telerik WinForms components:
@@ -75,7 +75,7 @@ The CAB kit contains all needed wrappers to start using Telerik UI for for WinFo
 
 
 
-## Sample application with Telerik UI for for WinForms and CAB
+## Sample application with Telerik UI for WinForms and CAB
 
 The Telerik CAB Enabling Kit for WinForms comes with a sample app modeled after the famous WPF WoodGrove Finance Application. It uses the CAB framework and Telerik controls.
 

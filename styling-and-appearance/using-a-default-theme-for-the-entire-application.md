@@ -63,7 +63,7 @@ RadGridView1.ThemeName = "Office2010Silver"
 
 ![themes-using-a-default-theme-for-the-entire-application 001](images/themes-using-a-default-theme-for-the-entire-application001.png)
 
-You can watch the video [Telerik UI for for WinForms Theme](http://www.telerik.com/videos/winforms/theme-for-telerik-ui-for-winforms) regarding the usage of theme components and __ApplicationThemeName__ property.
+You can watch the video [Telerik UI for WinForms Theme](http://www.telerik.com/videos/winforms/theme-for-telerik-ui-for-winforms) regarding the usage of theme components and __ApplicationThemeName__ property.
 # See Also
 * [Touch Enabled Themes]({%slug winforms/themes/touch-enabled-themes%})
 

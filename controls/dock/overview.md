@@ -41,7 +41,7 @@ __RadDock__ helps you manage multiple windows in your application with a docking
 
 * Re-dock support (transition to previous docked or floating state of Dock Windows) has been completely revisited for the new **RadDock** implementation. A service-based semantic is introduced, which saves a window’s state just before any dock operation is about to occur, and this state can easily be restored later on, upon user request (such as double-clicking a window’s caption area). This allows for exact transition to previous state - floating to docked and vice-versa. Even more, if an application requires completely custom re-dock semantic, it may be easily replaced by registering a custom service, which handles internal Save/Restore requests, made by the framework.
             
-This sample RSS Reader implements __RadDock__ and several other Telerik UI for for WinForms controls. Docked tool windows contain "*Feed Subscriptions*" and "*Feed Items*". A floating tool window contains the "*Behavior*" options. At bottom left, the "*Output*" tool window is shown collapsed against the bottom edge. The lower right side of the application displays tabbed documents containing articles.
+This sample RSS Reader implements __RadDock__ and several other Telerik UI for WinForms controls. Docked tool windows contain "*Feed Subscriptions*" and "*Feed Items*". A floating tool window contains the "*Behavior*" options. At bottom left, the "*Output*" tool window is shown collapsed against the bottom edge. The lower right side of the application displays tabbed documents containing articles.
 
 ![dock-overview 001](images/dock-overview001.png)
 

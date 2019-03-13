@@ -21,7 +21,7 @@ This help article demonstrates how to extend the RadGridView control to enable d
 
 To get started:
 
-1. Open Visual Studio 2012 and create a new Telerik UI for for WinForms project.
+1. Open Visual Studio 2012 and create a new Telerik UI for WinForms project.
 
 1. Add a new class called “DragAndDropRadGrid.cs”.
 

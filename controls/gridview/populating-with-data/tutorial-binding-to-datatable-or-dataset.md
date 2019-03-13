@@ -35,7 +35,7 @@ The following tutorial demonstrates binding to a single database table. For info
 
 ![gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset 006](images/gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset006.png)
 
-7\. The `Add Connection` dialog will appear. Click the Database File Name __Browse__ button and locate the "NWind.mdb" file from the Telerik UI for for WinForms directory in the "\Examples\DataSources" directory. Click the __OK__ button to close the `Add Connection` dialog.
+7\. The `Add Connection` dialog will appear. Click the Database File Name __Browse__ button and locate the "NWind.mdb" file from the Telerik UI for WinForms directory in the "\Examples\DataSources" directory. Click the __OK__ button to close the `Add Connection` dialog.
             
 
 8\. In the `Choose Your Database Objects` page, select the __"Categories"__ table. Click the __Finish__ button to close the `Data Source Configuration Wizard`.

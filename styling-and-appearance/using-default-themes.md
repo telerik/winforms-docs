@@ -17,7 +17,7 @@ previous_url: themes-using-default-themes
 
 ## 
 
-All themes that come with Telerik UI for for WinForms since version R2 2008 are available as standalone components, apart from the control's assemblies. This improvement has been added in order to simplify the way themes are added to the application and to improve the application’s loading time.
+All themes that come with Telerik UI for WinForms since version R2 2008 are available as standalone components, apart from the control's assemblies. This improvement has been added in order to simplify the way themes are added to the application and to improve the application’s loading time.
 
 If you have installed the suite from the provided installation files, you will see the themes loaded in the Visual Studio toolbox. If you do not see the themes in the toolbox, you will have to [add them manually to the toolbox.]({%slug winforms/installation-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox%})
 

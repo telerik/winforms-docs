@@ -16,7 +16,7 @@ previous_url: installation-deployment-and-distribution-vsx-design-time-assembly-
 ## Significance of the Design Assembly
       
 
-__Telerik.WinControls.UI.Design__ is the design-time assembly responsible for the proper rendering of Telerik UI for for WinForms in the Designer.
+__Telerik.WinControls.UI.Design__ is the design-time assembly responsible for the proper rendering of Telerik UI for WinForms in the Designer.
         
 
 When viewing controls from the designer, Visual Studio tries to resolve the corresponding  __Telerik.WinControls.UI.Design__. If the assembly is not in the __GAC__, controls dependent on it will not be visible when added from the __toolbox__.
@@ -26,7 +26,7 @@ When viewing controls from the designer, Visual Studio tries to resolve the corr
 Designer in __Visual Studio 2010 SP1__ showing errors when a design assembly is missing.
         
 
-## Actions taken during the Telerik UI for for WinForms Setup
+## Actions taken during the Telerik UI for WinForms Setup
       
 
 To ensure __proper design time support__ the design assembly is added to the __Global Assembly Cache__ during installation from where Visual Studio can later resolve it.

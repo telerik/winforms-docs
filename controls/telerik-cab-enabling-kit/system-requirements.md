@@ -23,6 +23,6 @@ To use the Telerik CAB Enabling Kit in your development environment, you need th
 
 * Microsoft Composite UI Application Block Framework [http://smartclient.codeplex.com/](http://smartclient.codeplex.com/)
 
-* [Telerik UI for for WinForms](http://www.telerik.com/products/winforms.aspx)
+* [Telerik UI for WinForms](http://www.telerik.com/products/winforms.aspx)
 
 * Microsoft Visual Studio 2010 or higher

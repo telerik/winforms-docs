@@ -8,9 +8,9 @@ published: True
 position: 1
 ---
 
-# Convert your existing application to Telerik UI for for Winforms
+# Convert your existing application to Telerik UI for Winforms
 
-This article will guide you through the process of converting the Microsoft Windows Forms controls in your application to Telerik UI for for Winforms counterparts. 
+This article will guide you through the process of converting the Microsoft Windows Forms controls in your application to Telerik UI for Winforms counterparts. 
 
 >tip We strongly recommend you using a source control system like TFS or Git. This will allow you to review the changes and restore to previous version if needed. 
 
