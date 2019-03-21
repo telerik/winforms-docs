@@ -47,3 +47,6 @@ In order to download these you need to take the following steps:
 
 	>important Please note that if you do not see the desired version you can contact our sales team and they will enable the version for download: [sales@telerik.com](mailto:sales@telerik.co)
 
+# See Also
+
+* [Latest Internal Builds]({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%})

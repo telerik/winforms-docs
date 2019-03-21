@@ -1,0 +1,23 @@
+---
+title: Latest Internal Builds
+page_title: Latest Internal Builds
+description: Latest Internal Builds
+slug: winforms/installation-deployment-and-distribution/latest-internal-builds
+tags: download,product, lib, latest
+published: True
+position: 3 
+---
+
+# Latest Internal Builds
+
+We have recently released a new page on our website which will give you access to our latest internal builds. These are the distributions built automatically from our source repository and include all latest fixes (*new features are usually not included*). 
+
+![latest-internal-builds 001](images/latest-internal-builds001.png)
+
+Regular builds are an integral part of our development process and based on the continuous quality assurance and feedback, we strive to produce the most stable releases possible. If you have experienced any problem with the current official distributions there is a possibility that the issue has already been addressed in the latest internal build. 
+
+>important IMPORTANT NOTE: The Latest Internal Builds are intended to be used for development purposes only and they are not recommended for production purposes as these distributions have not gone through the complete QA process.
+
+# See Also
+
+* [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
