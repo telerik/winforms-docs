@@ -21,3 +21,4 @@ Regular builds are an integral part of our development process and based on the 
 # See Also
 
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
+* [Updating Assemblies in a Project]({%slug winforms/installation-deployment-and-distribution/updating-assemblies-in-a-project%})
