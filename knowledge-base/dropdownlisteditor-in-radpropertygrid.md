@@ -20,7 +20,7 @@ res_type: kb
 
  You want to use RadDropDownList as editor for a specific property in RadPropertyGrid. In addition the a proper value should be displayed when the user is not editing as well. The below image shows how this will look when ready.
 
- ![dropdownlisteditor-in-radpropertygrid001](images/dropdownlisteditor-in-radpropertygrid001)
+ ![dropdownlisteditor-in-radpropertygrid001](images/dropdownlisteditor-in-radpropertygrid001.png)
 
 ## Solution 
 
