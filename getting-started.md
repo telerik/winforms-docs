@@ -24,7 +24,7 @@ At the following link you can find more information about the [Telerik UI for Wi
 ## Predefined Template Applications
 In addition, there are several predefined application templates one can use to get started with variety of application scenarions. More information is available at the following article : [Predefined Templates](http://docs.telerik.com/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/create-project)
 
-## Comprehansive step-by-step guide
+## Comprehensive step-by-step guide
 If you are new to the Windows Forms world and/or the Telerik UI for WinForms product, a good place to start is our [step-by-step pdf tutorial](http://www.telerik.com/winforms/winforms-guide), which contains over 750 pages of training material, as well as plenty of code samples.
 
 ## Getting started articles
