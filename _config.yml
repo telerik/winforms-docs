@@ -478,6 +478,15 @@ navigation:
     controls/editors/datetimepicker/customizing-appearance:
         title: Customzing Appearance
         position: 10
+    controls/editors/domainupdown:
+        title: DomainUpDown 
+        position: 5
+    controls/editors/domainupdown/populating-with-data:
+        title: Populating with Data 
+        position: 4
+    controls/editors/domainupdown/customizing-appearance:
+        title: Customizing Appearance 
+        position: 5
     controls/editors/maskededitbox:
         title: MaskedEditBox
         position: 5
