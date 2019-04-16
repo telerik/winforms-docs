@@ -124,6 +124,56 @@ RadChartView1.ShowTrackBall = True
 >caption Figure 1: Trackball
 ![chartview-features-trackball 001](images/chartview-features-trackball001.png)
 
+## Customizing the Trackball
+
+**RadChartView** provides a convenient way to control how the trackball is rendered. You can handle the **PenInitialized** event and customize the **Pen** object as follows:
+
+
+````C#
+
+            ChartTrackballController trackballController = new ChartTrackballController();
+            trackballController.PenInitialized += trackballController_PenInitialized;
+            radChartView1.Controllers.Add(trackballController);
+
+
+        private void trackballController_PenInitialized(object sender, PenInitializedEventArgs e)
+        {
+            e.Pen.Width = 6;
+            e.Pen.DashCap = System.Drawing.Drawing2D.DashCap.Triangle;
+            e.Pen.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            e.Pen.DashOffset = 50;
+            e.Pen.StartCap = System.Drawing.Drawing2D.LineCap.DiamondAnchor;
+            e.Pen.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor;
+        }
+
+
+````
+````VB.NET
+
+        Dim trackballController As ChartTrackballController = New ChartTrackballController()
+        AddHandler trackballController.PenInitialized, AddressOf trackballController_PenInitialized
+        radChartView1.Controllers.Add(trackballController)
+
+
+    Private Sub trackballController_PenInitialized(ByVal sender As Object, ByVal e As PenInitializedEventArgs)
+        e.Pen.Width = 6
+        e.Pen.DashCap = System.Drawing.Drawing2D.DashCap.Triangle
+        e.Pen.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
+        e.Pen.DashOffset = 50
+        e.Pen.StartCap = System.Drawing.Drawing2D.LineCap.DiamondAnchor
+        e.Pen.EndCap = System.Drawing.Drawing2D.LineCap.ArrowAnchor
+    End Sub
+
+
+````
+
+{{endregion}} 
+
+>caption Figure 2: Customizing the Trackball
+
+![chartview-features-trackball 002](images/chartview-features-trackball002.png)
+
+
 # See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
