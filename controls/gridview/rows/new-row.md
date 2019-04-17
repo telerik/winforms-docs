@@ -11,7 +11,7 @@ previous_url: gridview-rows-new-row
 
 # New Row
 
-RadGridView provides the end-users with a special row that allows them to add a new data row. For brevity, we will call this row "new row". The following sections describe useful events and properties which will allow you to achieve different scenarios related to the new row.
+**RadGridView** provides the end-users with a special row that allows them to add a new data row. For brevity, we will call this row "new row". The following sections describe useful events and properties which will allow you to achieve different scenarios related to the new row.
 
 ![gridview-rows-new-row 005](images/gridview-rows-new-row005.png)
 
@@ -49,6 +49,8 @@ Me.RadGridView1.AllowAddNewRow = False
 
 {{endregion}} 
 
+
+>note The GridViewTemplate.**SelectNewRowAsCurrent** property controls if the new row will be made current if there are no other rows in the grid.
 
 ## Setting the new row text
 
