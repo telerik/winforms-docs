@@ -33,6 +33,8 @@ position: 4
 |__PrintOrientation__|Set or get the page orientation when printing.|
 |__PdfViewerElement.AllowSignatureDialog__|Allows you to disable the SignatureDialog and SingSignatureDialog|
 |__PdfViewerElement.AllowSignSignatureDialog__|Allows you to disable the document signing.|
+|RadPdfViewerElement.**AsyncRender**|Enable or disable the async rendering of pages.|
+|RadPdfViewerElement.**CachePaint**|Enable or disable the cached painting of pages.|
 
 # Methods
 
