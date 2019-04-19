@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Properties and Methods 
+# Properties, Methods and Events 
 
 This article contains the most important properties methods and events of __RadImageEditor__.
 
@@ -30,6 +30,13 @@ This article contains the most important properties methods and events of __RadI
 |__OpenImage__|Opens an image for editing, the method can take a bitmap or file path as parameter.|
 |__SaveImage__|Saves the currently opened image. Optionally you can pass a path or ImageFormat as parameter.|
 |__SaveImageAs__|Opens the SaveFileDialog and allows you to save the image to a specific location.|
+
+## Events
+
+|Method|Description|
+|---|---|
+|__ImageSaved__|Occurs after the image is saved.|
+|__CurrentImageChanged__|Occurs after a specific operation is performed over the image.|
 
 
 # See Also
