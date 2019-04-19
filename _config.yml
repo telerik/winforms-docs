@@ -538,6 +538,9 @@ navigation:
     controls/editors/timespanpicker/customizing-appearance:
         title: Customizing Appearance
         position: 9		
+    controls/file-dialogs:
+        title: File Dialogs
+        position: 225
     controls/forms-and-dialogs:
         title: Forms and Dialogs
         position: 230
