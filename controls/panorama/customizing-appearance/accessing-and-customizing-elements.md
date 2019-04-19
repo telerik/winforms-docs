@@ -38,7 +38,7 @@ You can customize the nested elements at run time as well:
 #### Customize elements 
 
 {{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=CustomizeElements}} 
-{{source=..\SamplesCS\Panorama\PanoramaGettingStarted.vb region=CustomizeElements}} 
+{{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=CustomizeElements}} 
 
 ````C#
 this.radPanorama1.BackColor=Color.Gray;

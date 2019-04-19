@@ -27,8 +27,8 @@ First you need to show the pin button. Set the **ShowTabPinButton** property to 
 
 #### Show Pin Button
 
-{{source=..\SamplesCS\Forms_And_Dialogs\TabbedFormCode.cs region=PinProp}} 
-{{source=..\SamplesVB\Forms_And_Dialogs\TabbedFormCode.vb region=PinProp}}
+{{source=..\SamplesCS\Forms And Dialogs\TabbedFormCode.cs region=PinProp}} 
+{{source=..\SamplesVB\Forms And Dialogs\TabbedFormCode.vb region=PinProp}}
 ````C#
 this.TabbedFormControl.Tabs[0].Item.IsPinned = true;
 

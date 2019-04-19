@@ -13,6 +13,8 @@
 .ruby-version
 /_assets/
 /_assets/
+/_build/
+/_buildApi/
 /_common/root/
 /_common/root/
 /_data/
@@ -62,6 +64,7 @@ install-npm.sh
 install-npm.sh
 knowledge-base.html
 knowledge-base.html
+modify-config.sh
 robots.txt
 robots.txt
 search.html

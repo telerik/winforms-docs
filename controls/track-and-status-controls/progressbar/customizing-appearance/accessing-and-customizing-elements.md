@@ -28,7 +28,7 @@ You can customize the nested elements at run time as well:
 #### Customize elements 
 
 {{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=CustomizeElements}} 
-{{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=CustomizeElements}} 
+{{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=CustomizeElements}} 
 
 ````C#
 this.radProgressBar1.ForeColor = Color.Red;
