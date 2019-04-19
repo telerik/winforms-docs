@@ -98,41 +98,12 @@ Me.RadTrackBar1.Ranges.Add(New TrackBarRange(10, 15))
 
 ![track-and-status-controls-trackbar-modes 003](images/track-and-status-controls-trackbar-modes003.png)
 
-To receive notification when the **Value** is changed in this mode, you should use the __CollectionChanged__ event of the __Ranges__ collection:
+To receive notification when the **Value** is changed in this mode, you should use the __RangeValueChanged__ event of the RadTrackBar:
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=Ranges_CollectionChangedEvent}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=Ranges_CollectionChangedEvent}} 
 
-````C#
-void Ranges_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
-{
-    if (e.Action == Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged) 
-    {
-        foreach (object item in e.NewItems)
-        {
-            TrackBarRange range = item as TrackBarRange;
-            if (range != null)
-            {
-                Console.WriteLine("Range {0} value {1}",range.Text, range.End);
-            }
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub Ranges_CollectionChanged(sender As Object, e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
-    If e.Action = Telerik.WinControls.Data.NotifyCollectionChangedAction.ItemChanged Then
-        For Each item As Object In e.NewItems
-            Dim range As TrackBarRange = TryCast(item, TrackBarRange)
-            If range IsNot Nothing Then
-                Console.WriteLine("Range {0} value {1}", range.Text, range.[End])
-            End If
-        Next
-    End If
-End Sub
-
-````
+ 
 
 {{endregion}} 
 
