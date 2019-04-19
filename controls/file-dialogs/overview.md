@@ -40,8 +40,6 @@ Here are a few of the controls' main features:
 
 * Drive/Directory Filtering: You can filter all drives and directories with the **DirectoryRequesting** event.
 
-* Environment variables: The dialogs support the usage of all system and user-defined environment variables.
-
 * Network Locations: The controls allow you to display network locations by setting the ShowNetworkLocations property.
 
 The file dialogs also support many other features of the native Windows file dialogs.
