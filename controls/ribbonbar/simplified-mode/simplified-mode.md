@@ -110,5 +110,32 @@ There are 3 events that will be fired when the LayoutMode is changed:
 * __ItemStyleChanging__: this event will be fired before a property of a ribbon item is changed, allows you change properties when the LayoutMode is changed. 
 
 
-Some of the ribbon items are changed when the simplified mode is turned on. The properties will be restored when switching to the default mode. The following table shows what is changed by default.
+Some of the ribbon items are changed when the simplified mode is turned on or when there is no enough space and the items are shown in a popup. The properties will be restored when switching to the default mode. The following table shows what is changed by default.
 
+|Item|Property|Default to Simplified|Simplified to DropDown|
+|---|---|---|---|
+| RadItem (all)  | Alignment  |MiddleCenter| - |
+| RadItem (all)  | Margin  |2, 0, 2, 0| - |
+| RadItem (all)  | MaxSize  |Size.Empty| - |
+| RadItem (all)  | Text  |Removed new lines| - |
+| RadButtonItem  | MinSize  |Size.Empty| - |   
+| RadButtonItem  | Padding  |2, 0, 2, 0| 2, 3, 2, 3 |   
+| RadButtonItem  | ImageAlignment  |MiddleLeft| - |
+| RadButtonItem  | TextAlignment  |MiddleLeft| - |
+| RadButtonItem  | TextImageRelation  |ImageBeforeText| - |
+| RadButtonItem  | Image  | The image is resized to 16x16| - |
+| RadButtonItem  | DisplayStill  | - | ImageAndText |
+| RadDropDownButtonElement  | MinSize  |Size.Empty| - |   
+| RadDropDownButtonElement  | Padding  |2, 0, 2, 0| 2, 3, 2, 3 |   
+| RadDropDownButtonElement  | ImageAlignment  |MiddleLeft| - |
+| RadDropDownButtonElement  | TextAlignment  |MiddleLeft| - |
+| RadDropDownButtonElement  | TextImageRelation  |ImageBeforeText| - |
+| RadDropDownButtonElement  | Image  | The image is resized to 16x16| - |
+| RadDropDownButtonElement  | DisplayStill  | - | ImageAndText |
+| RadGalleryElement  | Padding  | Top and bottom padding is removed | - |
+| RadGalleryElement  | MaxSize  | 24 | - |
+| RadGalleryItem  | DisplayStyle  | Text | - |
+| RadGalleryElement  | Padding  | Top and bottom padding is removed | - |
+| RadGalleryItem  | TextAlignment  | MiddleCenter | - |
+| RadGalleryItem  | AutoSize  | false | - |
+| RadGalleryItem  | Margin  | Top and bottom set to 1px | - |
