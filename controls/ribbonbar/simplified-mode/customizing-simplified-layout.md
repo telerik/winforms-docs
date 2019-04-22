@@ -23,7 +23,6 @@ In this example you will use the __ItemStyleChanging__ event to change the displ
 {{source=..\SamplesCS\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.cs region=EventExample}} 
 {{source=..\SamplesVB\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.vb region=EventExample}}
  
- 
 ````C#
 private void RibbonBarElement_ItemStyleChanging(object sender, Telerik.WinControls.UI.ItemStyleChangingEventArgs args)
 {
@@ -47,13 +46,15 @@ Private Sub RibbonBarElement_ItemStyleChanging(ByVal sender As Object, ByVal arg
 End Sub
 
 ````
+
+
 {{endregion}}
 
 
 The bellow image shows the difference.
 
-![](images/customizing-simplified-layout001)
+![](images/customizing-simplified-layout001.png)
 
 # See Also
 
-*[Simplified Mode]({%slug %})
+* [Simplified Mode]({%slug winforms/ribbonbar/simplified-mode%})

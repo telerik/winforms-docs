@@ -124,14 +124,14 @@ Some of the ribbon items are changed when the simplified mode is turned on or wh
 | RadButtonItem  | TextAlignment  |MiddleLeft| - |
 | RadButtonItem  | TextImageRelation  |ImageBeforeText| - |
 | RadButtonItem  | Image  | The image is resized to 16x16| - |
-| RadButtonItem  | DisplayStill  | - | ImageAndText |
+| RadButtonItem  | DisplayStyle  | - | ImageAndText |
 | RadDropDownButtonElement  | MinSize  |Size.Empty| - |   
 | RadDropDownButtonElement  | Padding  |2, 0, 2, 0| 2, 3, 2, 3 |   
 | RadDropDownButtonElement  | ImageAlignment  |MiddleLeft| - |
 | RadDropDownButtonElement  | TextAlignment  |MiddleLeft| - |
 | RadDropDownButtonElement  | TextImageRelation  |ImageBeforeText| - |
 | RadDropDownButtonElement  | Image  | The image is resized to 16x16| - |
-| RadDropDownButtonElement  | DisplayStill  | - | ImageAndText |
+| RadDropDownButtonElement  | DisplayStyle  | - | ImageAndText |
 | RadGalleryElement  | Padding  | Top and bottom padding is removed | - |
 | RadGalleryElement  | MaxSize  | 24 | - |
 | RadGalleryItem  | DisplayStyle  | Text | - |
@@ -139,3 +139,8 @@ Some of the ribbon items are changed when the simplified mode is turned on or wh
 | RadGalleryItem  | TextAlignment  | MiddleCenter | - |
 | RadGalleryItem  | AutoSize  | false | - |
 | RadGalleryItem  | Margin  | Top and bottom set to 1px | - |
+
+
+# See Also
+
+* [Simplified Mode]({%slug winforms/ribbonbar/customizing-simplified-layout%})
