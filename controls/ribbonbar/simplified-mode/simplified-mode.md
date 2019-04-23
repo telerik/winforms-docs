@@ -10,7 +10,7 @@ position: 0
 
 # Simplified mode
 
-When the simplified layout is switched on all elements in the RibbonBar are automatically arranged on a single line. This aims provide the user with a compact layout which is taking half the heigh of the standard ribbon. This functionality can be used with new or existing ribbon bars. It automatically changes the items properties in order to fit them on a single line. The process can be customized as well. If the width is not enought the items are shown in a popup just link in the default ribbon layout.  
+When the simplified layout is switched on all elements in the RibbonBar are automatically arranged on a single line. This aims to provide the user with a compact layout which is taking half the height of the standard ribbon. This functionality can be used with new or existing ribbon bars ([RichTextEditorRibbonBar]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}), SpreadSheetRibbonBar, and [DiagramRibbonBar]({%slug winforms/diagram/ribbonui%}) are supported out of the box). It automatically changes the items' properties in order to fit them on a single line. The process can be customized as well. If the width is not enough the items are shown in a popup just link in the default ribbon layout.  
 
 ![](images/simplified-mode001.gif)
 
@@ -105,12 +105,12 @@ Me.radRibbonBar1.RibbonBarElement.LayoutModeTextElement.Text = "Compact Mode"
 
 There are 3 events that will be fired when the LayoutMode is changed:
 
-* __LayoutModeChanged__: fired when end user is changing the layout mode with the button. 
-* __ItemStyleChanged__: this event will be fired each time a property of an ribbon item is changed during the layout change operation.
-* __ItemStyleChanging__: this event will be fired before a property of a ribbon item is changed, allows you change properties when the LayoutMode is changed. 
+* __LayoutModeChanged__: fired when the end user is changing the layout mode with the button. 
+* __ItemStyleChanged__: this event will be fired each time a property of a ribbon item is changed during the layout change operation. The event arguments are specifying the previous and current layout modes. 
+* __ItemStyleChanging__: this event will be fired before a property of a ribbon item is changed, allows you to change properties when the LayoutMode is changed. The event arguments are specifying the previous and current layout modes. 
 
 
-Some of the ribbon items are changed when the simplified mode is turned on or when there is no enough space and the items are shown in a popup. The properties will be restored when switching to the default mode. The following table shows what is changed by default.
+Some of the ribbon items are changed when the simplified mode is turned on or when there is not enough space and the items are shown in a popup. The properties will be restored when switching to the default mode. The following table shows what is changed when switching to the simplified layout and when the items are in a popup.
 
 |Item|Property|Default to Simplified|Simplified to DropDown|
 |---|---|---|---|
