@@ -1013,6 +1013,9 @@ navigation:
     controls/ribbonbar/programming-radribbonbar:
         title: Programming RadRibbonBar
         position: 7
+    controls/ribbonbar/simplified-mode:
+        title: Symplified Mode 
+        position: 8        
     controls/ribbonbar/backstage-view:
         title: Backstage View
         position: 8
@@ -1169,6 +1172,9 @@ navigation:
     controls/spreadsheet:
         title: Spreadsheet
         position: 471
+    controls/spreadsheet/getting-started:
+        title: Getting Started
+        position: 3
     controls/spreadsheet/features:
         title: Features
         position: 4 
