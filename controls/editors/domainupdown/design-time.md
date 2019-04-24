@@ -40,5 +40,5 @@ Select **RadDomainUpDown** and click the small arrow on the top right position i
 
 # See Also
 
-* [Design Time]({%slug winforms/editors/domainupdown/structure%}) 
+* [Structure]({%slug winforms/editors/domainupdown/structure%}) 
 * [Getting Started]({%slug winforms/editors/domainupdown/getting-started%}) 

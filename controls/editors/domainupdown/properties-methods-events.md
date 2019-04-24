@@ -25,7 +25,7 @@ position: 6
 |Method|Description|
 |----|----|
 |**MoveUp**|Selects the previous item in the list.|
-|**MoveUp(bool wrap)**|elects the previous item in the list. The wrap argument specifies whether the navigation will be wrapped.|
+|**MoveUp(bool wrap)**|Selects the previous item in the list. The wrap argument specifies whether the navigation will be wrapped.|
 |**MoveDown**|Selects the next item in the list.|
 |**MoveDown(bool wrap)**|Selects the next item in the list. The wrap argument specifies whether the navigation will be wrapped.|
 
@@ -37,7 +37,7 @@ position: 6
 |**SelectedIndexChanged**|This event fires when the selected index property changes.|
 |**SelectedValueChanged**|This event fires only if the **SelectedValue** has really changed. For example it will not fire if the previously selected item has the same value as the newly selected item.|
 |**ItemDataBinding**|This event fires before a **RadListDataItem** is data bound. This happens when the **DataSource** property is assigned and the event fires for every item provided by the data source. This event allows a custom **RadListDataItem** to be provided by the user.|
-|**ItemDataBound**|	This event fires after a RadListDataItem is data bound. This happens when the DataSource property is assigned and the event is fired for every item provided by the data source.|
+|**ItemDataBound**|	This event fires after a **RadListDataItem** is data bound. This happens when the **DataSource** property is assigned and the event is fired for every item provided by the data source.|
 |**DataBindingComplete**|Fires after data binding operation has finished.|
 
 

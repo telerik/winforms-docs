@@ -69,5 +69,5 @@ This is it! Now the change in the selection of the **RadDomainUpDown** instance 
 
 # See Also
 
-* [Design Time]({%slug winforms/editors/domainupdown/structure%}) 
-* [Getting Started]({%slug winforms/editors/domainupdown/getting-started%}) 
+* [Structure]({%slug winforms/editors/domainupdown/structure%}) 
+* [Design Time]({%slug winforms/editors/domainupdown/design-time%}) 
