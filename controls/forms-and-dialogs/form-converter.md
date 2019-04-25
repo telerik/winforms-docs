@@ -24,6 +24,12 @@ The actual conversion process is executed after selecting an item from the compo
 
 >note Any controls added in the Controls collection of the form will not be influenced by the conversion process.
 
+If you have at least one control from the Telerik UI for WinForms suite on the standard MS Form, you can also use the Form's smart tag in order to convert it to a **RadForm** or **RadRibbonForm**. 
+
+>caption Figure 2: Form's smart tag
+
+![forms-and-dialogs-form-converter 002](images/forms-and-dialogs-form-converter002.png)
+
 # See Also 
 
 * [RadForm]({%slug winforms/forms-and-dialogs/form%})
