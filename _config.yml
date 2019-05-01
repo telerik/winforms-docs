@@ -541,6 +541,15 @@ navigation:
     controls/file-dialogs:
         title: File Dialogs
         position: 225
+    controls/file-dialogs/dialog-controls:
+        title: Dialog Controls
+        position: 3
+    controls/file-dialogs/features:
+        title: Features
+        position: 4
+    controls/file-dialogs/how-to:
+        title: How To
+        position: 7
     controls/forms-and-dialogs:
         title: Forms and Dialogs
         position: 230
