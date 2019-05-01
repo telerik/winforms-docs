@@ -37,6 +37,23 @@ position: 10
 |__CharacterCasing__|Gets or sets a value indicating whether the RadTextBox control modifies the case of characters as they are typed|
 |__Culture__|Gets or sets the current culture associated to the RadMasedkEditBox|
 
+# RadMaskedEditBoxElement's Properties
+
+|Property|Description|
+|------|------|
+|**EnableClickSelectionStart**|Enables the SelectionStartMouseClick functionality.|
+|**SelectionStartOnMouseClick**|The selection start will be moved to this position when EnableClickSelectionStart is enabled.|
+|**SelectionLengthOnMouseClick**|The selection length will be set to this value when EnableClickSelectionStart is enabled.|
+|**ContextMenu**|Represent the RadMaskedEditBox ContextMenu.|
+|**Provider**|Represents the provider that handles the applied MaskType functionality.|
+|**AllowPromptAsInput**|Indicates whether the prompt char is allowed as input.|
+|**ResultHint**|This returns the result hint for the last assignment to the property. If the assigned text could not be properly formatted, this will contain a hint as to why not. Positive values indicate success.  Negative values indicate failure.|
+|**HintPosition**|This returns the result hint position for the last assignment to the property.|
+|**UnmaskedText**|This read-only property returns the unmasked copy of the text.|
+|**PromptChar**|This is used to set or get the prompt character for display in the label text.|
+|**IncludePrompt**|Gets or sets whether or not prompt characters are displayed in the label text.|
+|**EnableNullValueInput**|Gets or set a value indicating whether end users can set the value to NULL. This can be achieved by pressing Ctrl + Del or Ctrl + 0 key combinations.|
+
 # Methods
 
 |Method|Description|

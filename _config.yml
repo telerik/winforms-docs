@@ -478,6 +478,15 @@ navigation:
     controls/editors/datetimepicker/customizing-appearance:
         title: Customzing Appearance
         position: 10
+    controls/editors/domainupdown:
+        title: DomainUpDown 
+        position: 5
+    controls/editors/domainupdown/populating-with-data:
+        title: Populating with Data 
+        position: 4
+    controls/editors/domainupdown/customizing-appearance:
+        title: Customizing Appearance 
+        position: 5
     controls/editors/maskededitbox:
         title: MaskedEditBox
         position: 5
@@ -529,6 +538,18 @@ navigation:
     controls/editors/timespanpicker/customizing-appearance:
         title: Customizing Appearance
         position: 9		
+    controls/file-dialogs:
+        title: File Dialogs
+        position: 225
+    controls/file-dialogs/dialog-controls:
+        title: Dialog Controls
+        position: 3
+    controls/file-dialogs/features:
+        title: Features
+        position: 4
+    controls/file-dialogs/how-to:
+        title: How To
+        position: 7
     controls/forms-and-dialogs:
         title: Forms and Dialogs
         position: 230
@@ -1001,6 +1022,9 @@ navigation:
     controls/ribbonbar/programming-radribbonbar:
         title: Programming RadRibbonBar
         position: 7
+    controls/ribbonbar/simplified-mode:
+        title: Symplified Mode 
+        position: 8        
     controls/ribbonbar/backstage-view:
         title: Backstage View
         position: 8
@@ -1157,6 +1181,9 @@ navigation:
     controls/spreadsheet:
         title: Spreadsheet
         position: 471
+    controls/spreadsheet/getting-started:
+        title: Getting Started
+        position: 3
     controls/spreadsheet/features:
         title: Features
         position: 4 
