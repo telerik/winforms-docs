@@ -10,14 +10,15 @@ position: 0
 
 # Simplified mode
 
-When the simplified layout is switched on all elements in the RibbonBar are automatically arranged on a single line. This aims to provide the user with a compact layout which is taking half the height of the standard ribbon. This functionality can be used with new or existing ribbon bars ([RichTextEditorRibbonBar]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}), [SpreadSheetRibbonBar]({%slug radspreadsheet-getting-started-spreadsheet-ui%}), and [DiagramRibbonBar]({%slug winforms/diagram/ribbonui%}) are supported out of the box). It automatically changes the items' properties in order to fit them on a single line. The process can be customized as well. If the width is not enough the items are shown in a popup just link in the default ribbon layout.  
+
+When the simplified layout is switched on all elements in the RibbonBar are automatically arranged on a single row. This aims to provide the user with a compact layout which is taking half the height of the standard ribbon. This functionality can be used with new or existing ribbon bars ([RichTextEditorRibbonBar]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}), [SpreadSheetRibbonBar]({%slug radspreadsheet-getting-started-spreadsheet-ui%}), and [DiagramRibbonBar]({%slug winforms/diagram/ribbonui%}) are supported out of the box). It automatically changes the items' properties in order to fit them on a single line. The process can be customized as well. If the width is not enough the items are shown in a popup just link in the default ribbon layout.  
 
 ![](images/simplified-mode001.gif)
 
 
 ## Enabling the simplified mode
 
-To enable the simplified mode set the __LayoutMode___ property: 
+To enable the simplified mode set the __LayoutMode__ property: 
 
 {{source=..\SamplesCS\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.cs region=EnableRibbon}} 
 {{source=..\SamplesVB\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.vb region=EnableRibbon}}
@@ -143,4 +144,4 @@ Some of the ribbon items are changed when the simplified mode is turned on or wh
 
 # See Also
 
-* [Simplified Mode]({%slug winforms/ribbonbar/customizing-simplified-layout%})
+* [Customizing Simplified Layout]({%slug winforms/ribbonbar/customizing-simplified-layout%})
