@@ -2,7 +2,7 @@
 title: Filtering
 page_title: Filtering | File Dialogs
 description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
-slug: winforms/file-dialogs/features/error-handling
+slug: winforms/file-dialogs/features/filtering
 tags: filedialogs, features, error
 published: True
 position: 2 

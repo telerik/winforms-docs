@@ -37,3 +37,8 @@ This article describes the inner structure and organization of the elements whic
 * **Operations Pane**: Consist of a **RadAutoCompleteBox** where the currently selected item(s) are displayed and can be set and the operation buttons for the given dialog.
 
 * **Extensions Filter DropDown**: Displays all file extensions added with the **Filter** property to the **RadOpenFileDialog** and **RadSaveFileDialog** controls in order to indicate to the user which types of files should be opened or saved.
+
+# See Also
+
+* [Overview]({%slug winforms/file-dialogs/overview%}) 
+* [Getting Started]({%slug winforms/file-dialogs/getting-started%})

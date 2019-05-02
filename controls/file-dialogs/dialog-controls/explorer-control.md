@@ -162,6 +162,11 @@ explorerControl.FilterIndex = 1
 
 The control exposes the following events: **DirectoryRequesting** and **ExceptionRaised**. The first event can be used to filter the navigation. The second event occurs when an exception is raised. It could be raised in different occasions, for example - if the selected folder cannot be accessed or if the file path is too long, or when there is an error while searching, etc.
 
-
+# See Also
+ 
+* [Error Handling]({%slug winforms/file-dialogs/features/error-handling%})
+* [RadOpenFileDialog]({%slug winforms/file-dialogs/dialog-controls/radopenfiledialog%})
+* [RadOpenFolderDialog]({%slug winforms/file-dialogs/dialog-controls/radopenfolderdialog%})
+* [RadSaveFileDialog]({%slug winforms/file-dialogs/dialog-controls/radsavefiledialog%})
 
 

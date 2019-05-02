@@ -43,5 +43,10 @@ Here are a few of the controls' main features:
 * **Network Locations**: The controls allow you to display network locations by setting the **ShowNetworkLocations** property.
 
 The file dialogs also support many other features of the native Windows file dialogs.
+
+# See Also
+
+* [Getting Started]({%slug winforms/file-dialogs/getting-started%})
+* [Structure]({%slug winforms/file-dialogs/structure%})
  
         

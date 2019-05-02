@@ -215,3 +215,10 @@ if (dr == System.Windows.Forms.DialogResult.OK)
 ````
 
 >important If in multiple or single selection the first selected item is a link to a directory and **DereferenceLinks** is set to *True*, clicking the `Open` button will actually navigate to this directory.
+
+# See Also
+
+* [Error Handling]({%slug winforms/file-dialogs/features/error-handling%})
+* [Explorer Control]({%slug winforms/file-dialogs/dialog-controls/explorer-control%})
+* [RadOpenFolderDialog]({%slug winforms/file-dialogs/dialog-controls/radopenfolderdialog%})
+* [RadSaveFileDialog]({%slug winforms/file-dialogs/dialog-controls/radsavefiledialog%})

@@ -125,3 +125,10 @@ openFolderDialog.RestoreDirectory = True
 ````
 
 After setting this property to *True* and opening a folder the **InitialDirectory** of this **RadOpenFolderDialog** instance will be set to the parent of the opened folder.
+
+# See Also
+
+* [Error Handling]({%slug winforms/file-dialogs/features/error-handling%})
+* [Explorer Control]({%slug winforms/file-dialogs/dialog-controls/explorer-control%})
+* [RadOpenFileDialog]({%slug winforms/file-dialogs/dialog-controls/radopenfiledialog%})
+* [RadSaveFileDialog]({%slug winforms/file-dialogs/dialog-controls/radsavefiledialog%})
