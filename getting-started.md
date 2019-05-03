@@ -48,6 +48,7 @@ Below are listed the *Getting Started* help articles for most of the controls in
 |[RadRangeSelector]({%slug winforms/rangeselector/getting-started%})|[RadRibbonBar]({%slug winforms/ribbonbar/getting-started%})|[RadRichTextEditor]({%slug winforms/richtexteditor-/getting-started%})|[RadRotator]({%slug winforms/rotator/getting-started%})|
 |[RadSpellChecker]({%slug winforms/spellchecker/getting-started%})|[RadSplitContainer]({%slug winforms/splitcontainer/getting-started%})|[RadProgressBar]({%slug winforms/track-and-status-controls/progressbar/getting-started%})|[RadRating]({%slug winforms/track-and-status-controls/rating/getting-started%})|[RadScrollBar]({%slug winforms/track-and-status-controls/scrollbar/getting-started%})|[RadTrackBar]({%slug winforms/track-and-status-controls/trackbar/getting-started%})|[RadWaitingBar]({%slug winforms/track-and-status-controls/waitingbar/getting-started%})
 |[RadTreeView]({%slug winforms/treeview/getting-started%})|[RadVirtualGrid]({%slug winforms/virtualgrid/getting-started%})|[RadChartView]({%slug winforms/chartview/getting-started%})|[RadCheckedListBox]({%slug winforms/checkedlistbox/getting-started%})|
+[FileDialogs]({%slug winforms/file-dialogs/overview%})|[RadDomainUpDown]({%slug winforms/editors/domainupdown/overview%})
 
 
 ## Convert your existing Windows Forms applications to Telerik UI for WinForms
