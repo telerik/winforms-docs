@@ -1023,7 +1023,7 @@ navigation:
         title: Programming RadRibbonBar
         position: 7
     controls/ribbonbar/simplified-mode:
-        title: Symplified Mode 
+        title: Simplified Mode 
         position: 8        
     controls/ribbonbar/backstage-view:
         title: Backstage View
