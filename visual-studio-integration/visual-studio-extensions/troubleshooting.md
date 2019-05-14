@@ -28,7 +28,7 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 
 * Open the Installed tab on the left​
 
-* Search for Telerik UI for WinForms VSExtensions and make sure they are Enabled
+* Search for Telerik WinForms VSExtensions and make sure they are Enabled
 
 ![vsextensions-disabled](images/vsextensions-disabled.png)
 
@@ -40,7 +40,7 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 
 * Open the Online tab on the left​
 
-* Search for Telerik UI for WinForms VSExtensions
+* Search for Telerik WinForms VSExtensions
 
 * Download and install the extensions
 
