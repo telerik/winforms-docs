@@ -548,4 +548,9 @@ Telerik.WinControls.Themes.Windows8.dll</td></tr>
 <tr><td><b>RadCardView</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadMap</b></td><td>Telerik.WinControls.RadMap.dll</td></tr>
 <tr><td><b>RadSpreadsheet</b></td><td>Telerik.WinControls.RadSpreadsheet.dll</td></tr>
+<tr><td><b>RadDomainUpDown</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>ExplorerControl</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadOpenFileDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadOpenFolderDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadSaveFileDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 </table>

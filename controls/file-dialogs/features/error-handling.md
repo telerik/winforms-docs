@@ -29,7 +29,7 @@ The file dialogs come with their own error handling mechanism so that you can de
 * **PathTooLongException**: The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
 
 * **SecurityException**: The caller does not have the required permission.
-* 
+ 
 * **UnauthorizedAccessException**: The access requested is not permitted by the operating system for the specified path, such as when access is *Write* or *ReadWrite* and the file or directory is set for read-only access.
  
 >important When calling the **OpenFile** method of the **RadOpenFileDialog** and **RadSaveFileDialog** you need to manually handle the exceptions raised when creating a stream for the specified file(s).

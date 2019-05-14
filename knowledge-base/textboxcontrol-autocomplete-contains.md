@@ -27,7 +27,7 @@ res_type: kb
 
 **RadTextBoxControl** supports [auto-complete]({%slug winforms/editors/textboxcontrol/autocomplete%}) functionality which can automatically complete the input string by comparing the prefix being entered to the prefix of all strings in the maintained source. You just should set the **AutoCompleteMode** property to the desired mode.However, a common scenario is to show not only the items which text starts with the specified input but to display these ones that contain the text. This article shows how to complete the items that contain the entered text.
 
->caption Default "Starts With" Auto-complete functionality
+>caption Default Starts With Auto-complete functionality
 
 ![textboxcontrol-autocomplete-contains001](images/textboxcontrol-autocomplete-contains001.gif)
 
