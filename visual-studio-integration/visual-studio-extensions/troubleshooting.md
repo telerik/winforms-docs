@@ -12,13 +12,6 @@ position: 10
 
 ## 
 
->important If the following article does not help solving your problem, please follow these steps before contacting our support:
->* Generate Visual Studio [ActivityLog](https://docs.microsoft.com/en-us/visualstudio/ide/reference/log-devenv-exe?view=vs-2019) file.
->* Open [Developer Command prompt](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs) for Visual Studio 20xx under **Administrative rights**.
->* Execute the command - devenv /log %userprofile%\desktop\ActivityLog.xml . This will start Visual Studio and create logs on your Desktop.
->* Reproduce the problem
->* Attach the **Activitylog** files when you contact our support.
-
 *Problem:*
 
 **Missing Telerik menu in Visual Studio**
@@ -52,5 +45,8 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 * Download and install the extensions
 
 
-
-
+>important If the article does not help solving your problem, please follow these steps to generate Visual Studio [ActivityLog](https://docs.microsoft.com/en-us/visualstudio/ide/reference/log-devenv-exe?view=vs-2019) file before contacting our support:
+>* Open [Developer Command prompt](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs) for Visual Studio 20xx under **Administrative rights**.
+>* Execute the command - devenv /log %userprofile%\desktop\ActivityLog.xml . This will start Visual Studio and create logs on your Desktop.
+>* Reproduce the problem
+>* Attach the **Activitylog** files when you contact our support.
