@@ -6,7 +6,6 @@ slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
 tags: troubleshooting 
 published: True
 position: 10
-previous_url: installation-deployment-and-distribution-vsx-options-dialog,/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/options-dialog
 ---
 
 # Troubleshooting
