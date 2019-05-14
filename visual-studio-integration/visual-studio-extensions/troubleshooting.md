@@ -22,7 +22,7 @@ position: 10
 
 *Problem:*
 
-*Missing **Telerik** menu in Visual Studio
+**Missing Telerik menu in Visual Studio**
 
 *Reason:*
 
