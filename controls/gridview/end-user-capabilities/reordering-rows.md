@@ -17,6 +17,9 @@ RadGridView supports row reordering and it can be done by the user at runtime. T
 * Row reordering is only available for grids in unbound mode.
 * After row reordering is enabled any sorting, grouping and filtering operations will be cleared and will not be available
 
+>note The __RowsChanged__ event will be fired when reorder operation is performed.
+
+
 ![gridview-rows-reordering-rows 001](images/gridview-rows-reordering-rows001.gif)
 # See Also
 * [Column Chooser]({%slug winforms/gridview/end-user-capabilities/column-chooser%})

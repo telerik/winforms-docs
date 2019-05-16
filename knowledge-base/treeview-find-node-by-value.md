@@ -25,7 +25,16 @@ res_type: kb
 
 ## Description
 
-**RadTreeView** supports searching for nodes by the **Text** of the node. It is also possible to search by a **Predicate** which returns an array of all nodes that match the search criteria. A common case is to look for nodes by a certain value. The following approach gives you an easy way to search the nodes by the **Value** property.
+**RadTreeView** supports searching for nodes by the **Text** of the node:
+
+````C#
+radTreeView1.Find("Test");
+````
+````VB
+radTreeView1.Find("Test")
+````
+
+It is also possible to search by a **Predicate** which returns an array of all nodes that match the search criteria. A common case is to look for nodes by a certain value. The following approach gives you an easy way to search the nodes by the **Value** property.
 
 >caption Search nodes by Value
 
