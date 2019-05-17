@@ -51,6 +51,7 @@ The available properties to tweak the search experience and performance and how 
 |**ShowCloseButton**|Gets or sets a value indicating whether to show the close button.|
 |**CloseOnEscape**|Gets or sets a value indicating whether to close the search row when escape key is pressed.|
 |**IsSearchAsync**|Gets or sets a value indicating whether the search will be performed on a background thread [true] or on the main thread [false].|
+|**SearchDelay**|Gets or sets a value indicating how long the grid will wait after a key is pressed until it starts a search.|
 
 >note Pressing `Ctrl`+`F` will show the search row if it is hidden. The `Esc` key will close the search row.
 
