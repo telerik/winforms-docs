@@ -4,9 +4,10 @@ description: An example demonstrating how a m line can be painted following the 
 type: how-to
 page_title: How to Draw a Moving Line Under the Mouse in RadChartView
 slug: chartview-moving-marker
-position: 76
+position: 0
 tags: mouse, annotation, chartview
 res_type: kb
+---
 
 ## Environment
  
@@ -123,5 +124,8 @@ End Class
 
 # See Also
 
-* [RadChartView Annotations]({% winforms/chartview-/features/annotations%}) 
+* [RadChartView Annotations]({%slug winforms/chartview-/features/annotations%}) 
+
+
+
 
