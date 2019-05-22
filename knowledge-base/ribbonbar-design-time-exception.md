@@ -13,7 +13,7 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2019.2.508|RadRibbonBar for WinForms|[Dimitar karamfilov](https://www.telerik.com/blogs/author/dimitar-karamfilov)|
+|2019.2.508|RadRibbonBar for WinForms|[Dimitar Karamfilov](https://www.telerik.com/blogs/author/dimitar-karamfilov)|
 
 ## Description
  
@@ -25,7 +25,7 @@ Open the designer and change the index of the last child element.
 
 ![](images/ribbonbar-design-time-exception.png)
 
-Here are the other example of this:
+Here are the other examples of this:
 
 If you have edited any of the elements listed above in design time and you get Designer exception you should edit Designer.cs manually.
 For example if you had changed FillPrimitive BackColor of RibbonBarExpandButton you will have similar code in Design.cs as:
