@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
 
-In R2 2019 we introduced the [Simplified Layout]({%slug %}), this functionality adds two elements in the upper right corner of the ribbon bar. If you have made customization to other elements in the same container (expand button,help button) you will get the following exception: 'Unable to cast object of type Telerik.WinControls.UI.RadToggleSwitchElement to type Telerik.WinControls.UI.RadToggleButtonElement'.
+In R2 2019 we introduced the [Simplified Layout]({%slug winforms/ribbonbar/simplified-mode%}), this functionality adds two elements in the upper right corner of the ribbon bar. If you have made customization to other elements in the same container (expand button,help button) you will get the following exception: 'Unable to cast object of type Telerik.WinControls.UI.RadToggleSwitchElement to type Telerik.WinControls.UI.RadToggleButtonElement'.
 
 ## Solution
 
