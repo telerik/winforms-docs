@@ -23,4 +23,4 @@ In R2 2019 we introduced the [Simplified Layout]({%slug winforms/ribbonbar/simpl
 
 Open the designer and change the index of the child element.
 
-![](ribbonbar-design-time-exception.png)
+![](images\ribbonbar-design-time-exception.png)
