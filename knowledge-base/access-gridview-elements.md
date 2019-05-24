@@ -46,19 +46,27 @@ This causes exception because the index of the GroupPanelElement is no longer va
 Another solution is to use the property to access the element. For example:
 
 ````C#
+
 var groupPanel = this.radGridView1.GridViewElement.GroupPanelElement;
+
 ````
 ````VB.NET
+
 Dim groupPanel = this.radGridView1.GridViewElement.GroupPanelElement
+
 ````
 
 If the is no property you can get the element by type by using the following method:
 
 ````C#
+
 var groupPanel = this.radGridView1.GridViewElement.GetChildrenByType(typeof(GroupPanelElement)).FirstOrDefault();
+
 ````
 ````VB.NET
+
 Dim groupPanel = Me.radGridView1.GridViewElement.GetChildrenByType(GetType(GroupPanelElement)).FirstOrDefault()
+
 
 ````
 
