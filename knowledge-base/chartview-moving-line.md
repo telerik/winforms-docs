@@ -13,12 +13,12 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2019.2.508|RadRichTextEditor for WinForms|[Hristo Merdjanov](https://www.telerik.com/blogs/author/hristo-merdjanov)|
+|2019.2.508|RadChartView for WinForms|[Hristo Merdjanov](https://www.telerik.com/blogs/author/hristo-merdjanov)|
  
 
 ## Description
 
-An example demonstrating how a line can be pointed in **RadChartView** following the mouse position.
+An example demonstrating how a line can be painted in **RadChartView** following the mouse position.
 
 ## Solution 
 
