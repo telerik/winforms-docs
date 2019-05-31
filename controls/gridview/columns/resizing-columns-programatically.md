@@ -93,6 +93,8 @@ Columns can automatically fill the entire width of the grid. Just set the __Auto
 
 The column widths can be set to fit its content by using the GridViewTemplate.__BestFitColumns__ or GridViewDataColumn.__BestFit__ methods. This mode distributes algorithm that attempts to fit in the header text and column data for all visible rows.
 
+>note Before using one of the best-fit methods, make sure that the grid is populated with data. Considering the content in the data rows, the columns' width will be calculated.
+
 The user can perform the best fit operation:
 
 * By using the context menu of the header cell
@@ -105,7 +107,7 @@ You can customize the execution of the algorithm of a concrete column by setting
 
 * BestFitColumnMode.__None__ - The column's width does not automatically adjust.
 
-* BestFitColumnMode.__AllCells__ - The column's width adjusts to fit the contents ofall cells in the control.
+* BestFitColumnMode.__AllCells__ - The column's width adjusts to fit the contents of all cells in the control.
 
 * BestFitColumnMode.__DisplayedDataCells__ - The column's width adjusts to fit the contents of the displayed data cells.
 
