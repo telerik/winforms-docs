@@ -63,7 +63,7 @@ compositeFilter1.FilterDescriptors.Add(new FilterDescriptor("ProductName", Filte
 compositeFilter1.LogicalOperator = FilterLogicalOperator.Or;
 FilterDescriptor filter2 = new FilterDescriptor("UnitsOnOrder", FilterOperator.IsEqualTo, 0);
 CompositeFilterDescriptor filterDescriptor2 = new CompositeFilterDescriptor();
-filterDescriptor2.FilterDescriptors.Add(compositeFilter);
+filterDescriptor2.FilterDescriptors.Add(compositeFilter1);
 filterDescriptor2.FilterDescriptors.Add(filter2);
 filterDescriptor2.LogicalOperator = FilterLogicalOperator.And;
 this.radGridView1.FilterDescriptors.Add(filterDescriptor2);
@@ -76,7 +76,7 @@ compositeFilter1.FilterDescriptors.Add(New FilterDescriptor("ProductName", Filte
 compositeFilter1.LogicalOperator = FilterLogicalOperator.[Or]
 Dim filter2 As New FilterDescriptor("UnitsOnOrder", FilterOperator.IsEqualTo, 0)
 Dim filterDescriptor2 As New CompositeFilterDescriptor()
-filterDescriptor2.FilterDescriptors.Add(compositeFilter)
+filterDescriptor2.FilterDescriptors.Add(compositeFilter1)
 filterDescriptor2.FilterDescriptors.Add(filter2)
 filterDescriptor2.LogicalOperator = FilterLogicalOperator.[And]
 Me.RadGridView1.FilterDescriptors.Add(filterDescriptor2)
