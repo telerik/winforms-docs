@@ -15,7 +15,19 @@ RadFontDropDownList has only two string that can be localized and these are the 
 #### Localizing RadFontDropDownList
 
 {{source=..\SamplesCS\Editors\FontDropDownList.cs region=Localize}} 
-{{source=..\SamplesVB\Editors\FontDropDownList.vb region=Localize}} 
+{{source=..\SamplesVB\Editors\FontDropDownList.vb region=Localize}}
+````C#
+var element = radFontDropDownList1.PopupEditorElement as RadFontPopupEditorElement;
+element.AllFontsItemText = "All Fonts";
+element.RecentlyUsedItemText = "Recently Used Fonts";
+
+````
+````VB.NET
+Dim element = TryCast(RadFontDropDownList1.PopupEditorElement, RadFontPopupEditorElement)
+element.AllFontsItemText = "All Fonts"
+element.RecentlyUsedItemText = "Recently Used Fonts"
+
+```` 
 
 
 

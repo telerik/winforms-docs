@@ -67,7 +67,20 @@ Dim secondRangeValue As Single = Me.RadTrackBar1.Ranges(1).[End]
 To receive notification when the **Value** is changed in this mode, you should use the __RangeValueChanged__ event of the __RadTrackBar__:
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=Ranges_CollectionChangedEvent}} 
-{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=Ranges_CollectionChangedEvent}} 
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=Ranges_CollectionChangedEvent}}
+````C#
+private void RadTrackBar1_RangeValueChanged(object sender, RangeChangedEventArgs e)
+{
+    Console.WriteLine("Radge {0} Start {1}, End {2}", e.ChangedRange.Text, e.ChangedRange.Start, e.ChangedRange.End);
+}
+
+````
+````VB.NET
+Private Sub RadTrackBar1_RangeValueChanged(ByVal sender As Object, ByVal e As RangeChangedEventArgs)
+    Console.WriteLine("Radge {0} Start {1}, End {2}", e.ChangedRange.Text, e.ChangedRange.Start, e.ChangedRange.End)
+End Sub
+
+```` 
  
 
 {{endregion}} 
@@ -101,7 +114,20 @@ Me.RadTrackBar1.Ranges.Add(New TrackBarRange(10, 15))
 To receive notification when the **Value** is changed in this mode, you should use the __RangeValueChanged__ event of the RadTrackBar:
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=Ranges_CollectionChangedEvent}} 
-{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=Ranges_CollectionChangedEvent}} 
+{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=Ranges_CollectionChangedEvent}}
+````C#
+private void RadTrackBar1_RangeValueChanged(object sender, RangeChangedEventArgs e)
+{
+    Console.WriteLine("Radge {0} Start {1}, End {2}", e.ChangedRange.Text, e.ChangedRange.Start, e.ChangedRange.End);
+}
+
+````
+````VB.NET
+Private Sub RadTrackBar1_RangeValueChanged(ByVal sender As Object, ByVal e As RangeChangedEventArgs)
+    Console.WriteLine("Radge {0} Start {1}, End {2}", e.ChangedRange.Text, e.ChangedRange.Start, e.ChangedRange.End)
+End Sub
+
+```` 
 
  
 

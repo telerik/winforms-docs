@@ -39,6 +39,12 @@ this.radProgressBar1.ProgressBarElement.IndicatorElement1.BorderGradientStyle = 
 
 ````
 ````VB.NET
+Me.RadProgressBar1.ForeColor = Color.Red
+Me.RadProgressBar1.ProgressBarElement.IndicatorElement1.BackColor = Color.Lime
+Me.RadProgressBar1.ProgressBarElement.IndicatorElement1.DrawBorder = True
+Me.RadProgressBar1.ProgressBarElement.IndicatorElement1.BorderColor = Color.Fuchsia
+Me.RadProgressBar1.ProgressBarElement.IndicatorElement1.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid
+
 ````
 
 {{endregion}}  

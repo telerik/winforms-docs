@@ -26,6 +26,8 @@ This property allows you to get the currently active document among the document
 ````C#
 DockWindow activeDocument = this.radDock1.DocumentManager.ActiveDocument; //documentWindow2
 DockWindow activeWindow = this.radDock1.ActiveWindow; //toolWindow2
+//set active window/document
+this.radDock1.ActiveWindow = activeDocument;
 
 ````
 ````VB.NET
