@@ -11,7 +11,7 @@ position: 4
 
 # Add Context menu in the code
 
-This article demostrates how yu can add RadContextMenu in the code and attach it to a spesific control. 
+This article demonstrates how you can add RadContextMenu in the code and attach it to a specific control. 
 
 1\.	Adding a RadContextMenu at runtime. To programmatically add a RadContextMenu to a form, create a new instance of a RadContextMenu
 
