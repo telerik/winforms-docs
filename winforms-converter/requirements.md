@@ -18,6 +18,10 @@ The following article lists what is required in order to be able to use the cont
 
 * Solution that contains project with default .NET controls.
 
+>important The WinForms converter crashes when converting a project with Visual Studio 2017 18.7 or newer. This is caused because in the latest version of Visual Studio a type used in the converter was moved. Additional information is available here: [WinForms Converter crashes with Visual Studio 15.8](https://docs.telerik.com/devtools/winforms/knowledge-base/converter-exception)
+
+>important WinForms Converter is not available for VS 2019 yet because of breaking changes in Roslyn.
+
 ## See Also
 
 * [Step-by-step tutorial]({%slug winforms/winforms-converter/step-by-step-tutorial%})
