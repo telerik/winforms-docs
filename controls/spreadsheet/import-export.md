@@ -38,19 +38,15 @@ To open or save a document with RadSpreadsheet, you can use the **Import()** and
 {{source=..\SamplesVB\Spreadsheet\Events.vb region=FormatProviderImport}}
 
 ````C#
- XlsxFormatProvider formatProvider = new XlsxFormatProvider();
-
+XlsxFormatProvider formatProvider = new XlsxFormatProvider();
 using (Stream input = new FileStream(fileName, FileMode.Open))
 {
     this.radSpreadsheet.Workbook = formatProvider.Import(input);
 }
 
-
 ````
 ````VB.NET
-
 Dim formatProvider As New XlsxFormatProvider()
-
 Using input As Stream = New FileStream(fileName, FileMode.Open)
     Me.radSpreadsheet.Workbook = formatProvider.Import(input)
 End Using
@@ -66,22 +62,18 @@ End Using
 {{source=..\SamplesVB\Spreadsheet\Events.vb region=FormatProviderExport}}
 
 ````C#
- XlsxFormatProvider formatProvider = new XlsxFormatProvider();
-
+XlsxFormatProvider formatProvider = new XlsxFormatProvider();
 using (Stream output = new FileStream(fileName, FileMode.Create))
 {
     formatProvider.Export(this.radSpreadsheet.Workbook, output);
 }
 
-
 ````
 ````VB.NET
 Dim formatProvider As New XlsxFormatProvider()
-
 Using output As Stream = New FileStream(fileName, FileMode.Create)
     formatProvider.Export(Me.radSpreadsheet.Workbook, output)
 End Using
-
 
 ```` 
 

@@ -102,9 +102,9 @@ class MyScreenTip : RadScreenTipElement
 
 ````
 ````VB.NET
-Friend Class MyScreenTip
+Public Class MyScreenTip
     Inherits RadScreenTipElement
-    Private _contentElement As New LightVisualElement()
+    Private _contentElement As LightVisualElement
     Public ReadOnly Property ContentElement() As LightVisualElement
         Get
             Return _contentElement
@@ -112,6 +112,7 @@ Friend Class MyScreenTip
     End Property
     Protected Overrides Sub CreateChildElements()
         MyBase.CreateChildElements()
+        _contentElement = New LightVisualElement()
         _contentElement.DrawFill = True
         _contentElement.DrawText = True
         _contentElement.GradientStyle = GradientStyles.Solid

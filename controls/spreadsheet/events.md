@@ -43,7 +43,7 @@ public void AttachToMessageShowingEvent()
 {
     this.radSpreadsheet.SpreadsheetElement.MessageShowing += radSpreadsheet_MessageShowing;
 }
-private void radSpreadsheet_MessageShowing(object sender,  MessageShowingEventArgs e)
+private void radSpreadsheet_MessageShowing(object sender, MessageShowingEventArgs e)
 {
     if (e.NotificationType == Telerik.WinForms.Controls.Spreadsheet.Dialogs.MessageBoxNotificationType.ProtectedWorksheetError)
     {
