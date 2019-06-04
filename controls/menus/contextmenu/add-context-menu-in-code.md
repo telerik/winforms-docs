@@ -11,9 +11,9 @@ position: 4
 
 # Add Context menu in the code
 
-This article demonstrates how you can add RadContextMenu in the code and attach it to a specific control. 
+This article demonstrates how you can add __RadContextMenu__ in the code and attach it to a specific control. 
 
-1\.	Adding a RadContextMenu at runtime. To programmatically add a RadContextMenu to a form, create a new instance of a RadContextMenu
+1\.	Adding a __RadContextMenu__ at runtime. To programmatically add a __RadContextMenu__ to a form, create a new instance of a __RadContextMenu__.
 
 {{source=..\SamplesCS\Menus\ContextMenu\ContextMenuCode2.cs region=AddMenu}} 
 {{source=..\SamplesVB\Menus\ContextMenu\ContextMenuCode2.vb region=AddMenu}}
@@ -27,7 +27,7 @@ RadContextMenu radContextmenu = new RadContextMenu();
 
 {{endregion}} 
 
-2\. Add  RadMenuItems to RadContextMenu.
+2\. Add  __RadMenuItems__ to __RadContextMenu__.
 
 
 {{source=..\SamplesCS\Menus\ContextMenu\ContextMenuCode2.cs region=AddItems}} 
@@ -48,7 +48,7 @@ radContextmenu.Items.Add(menuItem2);
 
 {{endregion}} 
 
-3\.	Subscribe to МouseClick event of the control and call the RadContextMenu.Show() method:
+3\.	Subscribe to МouseClick event of the control and call the RadContextMenu.__Show()__ method:
 
 
 {{source=..\SamplesCS\Menus\ContextMenu\ContextMenuCode2.cs region=AttachToControl}} 
