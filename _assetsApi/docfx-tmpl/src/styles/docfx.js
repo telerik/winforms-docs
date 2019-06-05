@@ -434,7 +434,6 @@ $(function () {
           setSideNavPosition();
       }
 
-      var delayFunction;
       function registerTocEvents() {
           $('.toc .nav > li > .expand-stub').click(function (e) {
               $(e.target).parent().toggleClass(expanded);
@@ -442,61 +441,53 @@ $(function () {
           $('.toc .nav > li > .expand-stub + a:not([href])').click(function (e) {
               $(e.target).parent().toggleClass(expanded);
           });
-          
-
-          function filterNavItem(name, text) {
-            if (!text) return true;
-            if (name && name.toLowerCase().indexOf(text.toLowerCase()) > -1) return true;
-            return false;
-        }
-
           $('#toc_filter_input').on('input', function (e) {
-            if (delayFunction) {
-                clearTimeout(delayFunction);
-            }
-            
-            var val = this.value;
-            delayFunction = setTimeout(function() {
-                if (val === '') {
-                    // Clear 'filtered' class
-                    $('#toc li').removeClass(filtered).removeClass(hide);
-                    return;
-                }
-  
-                // Get leaf nodes
-                $('#toc li>a').filter(function (i, e) {
-                    return $(e).siblings().length === 0;
-                }).each(function (i, anchor) {
-                    var text = $(anchor).attr('title');
-                    var parent = $(anchor).parent();
-                    var parentNodes = parent.parents('ul>li');
-                    for (var i = 0; i < parentNodes.length; i++) {
-                        var parentText = $(parentNodes[i]).children('a').attr('title');
-                        if (parentText) text = parentText + '.' + text;
-                    }
-                    if (filterNavItem(text, val)) {
-                        parent.addClass(show);
-                        parent.removeClass(hide);
-                    } else {
-                        parent.addClass(hide);
-                        parent.removeClass(show);
-                    }
-                });
-                $('#toc li>a').filter(function (i, e) {
-                    return $(e).siblings().length > 0;
-                }).each(function (i, anchor) {
-                    var parent = $(anchor).parent();
-                    if (parent.find('li.show').length > 0) {
-                        parent.addClass(show);
-                        parent.addClass(filtered);
-                        parent.removeClass(hide);
-                    } else {
-                        parent.addClass(hide);
-                        parent.removeClass(show);
-                        parent.removeClass(filtered);
-                    }
-                });
-            }, 500);
+              var val = this.value;
+              if (val === '') {
+                  // Clear 'filtered' class
+                  $('#toc li').removeClass(filtered).removeClass(hide);
+                  return;
+              }
+
+              // Get leaf nodes
+              $('#toc li>a').filter(function (i, e) {
+                  return $(e).siblings().length === 0
+              }).each(function (i, anchor) {
+                  var text = $(anchor).attr('title');
+                  var parent = $(anchor).parent();
+                  var parentNodes = parent.parents('ul>li');
+                  for (var i = 0; i < parentNodes.length; i++) {
+                      var parentText = $(parentNodes[i]).children('a').attr('title');
+                      if (parentText) text = parentText + '.' + text;
+                  };
+                  if (filterNavItem(text, val)) {
+                      parent.addClass(show);
+                      parent.removeClass(hide);
+                  } else {
+                      parent.addClass(hide);
+                      parent.removeClass(show);
+                  }
+              });
+              $('#toc li>a').filter(function (i, e) {
+                  return $(e).siblings().length > 0
+              }).each(function (i, anchor) {
+                  var parent = $(anchor).parent();
+                  if (parent.find('li.show').length > 0) {
+                      parent.addClass(show);
+                      parent.addClass(filtered);
+                      parent.removeClass(hide);
+                  } else {
+                      parent.addClass(hide);
+                      parent.removeClass(show);
+                      parent.removeClass(filtered);
+                  }
+              })
+
+              function filterNavItem(name, text) {
+                  if (!text) return true;
+                  if (name && name.toLowerCase().indexOf(text.toLowerCase()) > -1) return true;
+                  return false;
+              }
           });
       }
 

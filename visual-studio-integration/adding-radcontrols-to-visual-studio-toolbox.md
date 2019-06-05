@@ -45,9 +45,9 @@ Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/
 
 1. Open a Windows Explorer and locate the Telerik assemblies folder.             
             
-    >tip If you have installed the controls with the default settings then it would be this directory: 'C:\Program Files\Telerik\UI for WinForms\Version\Bin' or 'C:\Program Files (x86)\Progress\Telerik UI for WinForms R2 2019'. For the .NET2.0 version the assemblies are in the 'Bin' folder, for the .NET4.0 version the assemblies are in the 'Bin40' folder (note that currently RadRichTextEditor and RadSpellChecker are only available in the .NET4.0 version).
+    >tip If you have installed the controls with the default settings then it would be this directory: "C:\Program Files\Telerik\UI for WinForms\Version\Bin" for the .NET2.0 version of our assemblies and "C:\Program Files\Telerik\UI for WinForms\Version\Bin40" for the .NET4.0 version of the assemblies (note that currently RadRichTextEditor and RadSpellChecker are only available in the .NET4.0 version).
               
-2. Select the following assemblies and drag-drop them to the empty space in the newly created tab in Visual Studio:
+1. Select the following assemblies and drag-drop them to the empty space in the newly created tab in Visual Studio:
             
  * Telerik.WinControls.SpellChecker.dll
 
