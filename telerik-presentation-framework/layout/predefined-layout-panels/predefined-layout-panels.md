@@ -25,4 +25,3 @@ Telerik UI for WinForms comes with a set of stock layout panels that handle most
 * __[BoxLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/boxlayout%})__
 
 * __[DockLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/docklayout%})__
-

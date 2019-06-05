@@ -13,13 +13,10 @@ position: 1
 __RichTextBox__ is converted to [RadRichTextEditor]({%slug winforms/richtexteditor%}). The following tables describe which properties, methods and events are removed and which are replaced with similar equivalents.
 
 >important When the project that is being converted has target framework less than 4.0 and the user selects UI for WinForms[Version].__20__ the following message box will appear:
-
 >caption Figure 1: Converting System.Windows.Forms.RichTextBox
 ![winforms-converter-supported-control-richtextbox001](images/winforms-converter-supported-control-richtextbox001.png)
-
 >important Since __RadRichTextEditor__ is available only for .NET 4.0, the conversion tool requires WinForms[Version].__40__. If you press `Return` you will be allowed to select another target version. If you press `Continue`, the conversion tool will proceed, but the System.Windows.Forms.RichTextBox won't be converted.
 >
-
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
 |AutoWordSelection|Produces Error||
@@ -80,4 +77,4 @@ __RichTextBox__ is converted to [RadRichTextEditor]({%slug winforms/richtextedit
 ## See Also
 
 * [Step-by-step tutorial]({%slug winforms/winforms-converter/step-by-step-tutorial%})
-* [Requirements] ({%slug winforms/winforms-converter/requirements%})
+* [Requirements]({%slug winforms/winforms-converter/requirements%})

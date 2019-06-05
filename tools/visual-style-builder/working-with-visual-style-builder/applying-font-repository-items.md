@@ -31,7 +31,7 @@ Imagine that you have to create a theme for RadButton. The Font of the RadButton
 
     ![tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items 003](images/tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items003.png)
 
-6. Set the name of the Text repository item SegoeUIDefault and save it.
+6. Set the name of the Text repository item SegoeUIDefault and save it.
 
 7. Apply the newly created Text repository item to the RootRadElement.
 
@@ -52,7 +52,7 @@ Next, we should create Text repository items defining only the ForeColor. These 
     ![tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items 006](images/tools-visual-style-builder-working-with-visual-style-builder-applying-font-repository-items006.png)
 
 As a result you get a RadButton with customized text. But what is the benefit of creating a separate Text repository item that sets only the Font? And why we should drop this Text item to RootRadElement?
- 
+
 1. A separate repository item which sets only the Font should be created, because if we decide to change the font of a TextPrimitive, we should do it only in one repository items (but not in three, for example NormalText, MouseOverText and MouseDownText).
 2. In the cases where a control contains more than one TextPrimitive, setting a repository item at RootRadElement level will define to Font for all TextPrimitives, since the Font property is an ambient property.
 
@@ -68,4 +68,3 @@ As a result you get a RadButton with customized text. But what is the benefit of
 * [Property Precedence Rules]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules%})
 
 * [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})
-

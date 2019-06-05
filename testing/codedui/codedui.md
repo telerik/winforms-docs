@@ -17,7 +17,7 @@ previous_url: codedui
 |[Getting Started with Coded UI for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-coded-ui-for-winforms)<br>RadControls for WinForms R3 2012 introduces full support for Coded UI Tests implementing all four Coded UI Test levels. These enhancements are available not only in Visual Studio 2010, but also in the new Visual Studio 2012. Today, we will take a look at Getting started with CodedUI testing using RadControls for WinForms.|![codedui 001](images/codedui001.png)|
 
 The CodedUI Extension for Telerik UI for WinForms controls is an extension for Microsoft Visual Studio, which runs in the Visual Studio Coded UI Test process and captures information about the **RadControls** that it encounters during a test recording and then generates code to replay that test session.
-        
+
 CodedUI tests can test your application through the user interface (UI). Coded UI Tests are particularly useful where there is validation of the control properties or other logic in the user interface. If the control property value is invalid, the test fails.
 
 Creating a coded UI test is easy. You simply perform the test manually while the CUIT Test Builder runs in the background. You can also specify what values should appear in specific control properties. The CUIT Test Builder records your actions and generates code from them. You can add an assertion during the recording. After the test is created, you can edit it in a Visual Studio editor and modify the sequence of the actions.

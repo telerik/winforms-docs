@@ -42,7 +42,6 @@ All settings under the WinForms category affect only the Telerik UI for WinForms
 Configures the path where the extensions look for and store distributions.
 
 >tip Changing the folder path will not move existing folder contents from your previous path. Please, move your previous folder contents manually in case you still want to use them.
-
 ## Latest version retrieval
 
 __Include internal builds in Latest Version update and retrieval__ – When enabled, the __[Latest Version Acquirer]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})__ tool will retrieve internal builds as well as official releases when checking for a new version.

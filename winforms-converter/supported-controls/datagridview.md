@@ -234,7 +234,7 @@ The DataGridView is converted to [RadGridView]({%slug winforms/gridview%}). The 
 |FlatStyle|Removed|   | 
 |IndeterminateValue|Produces Error|   | 
 |TrueValue|Produces Error|   | 
- 
+
 ## ComboColumn
 
 |Properties|Action|RadControls Equivalent|
@@ -277,7 +277,7 @@ The DataGridView is converted to [RadGridView]({%slug winforms/gridview%}). The 
 |TrackVisitedState|Removed|   | 
 |UseColumnTextForLinkValue |Removed|   | 
 |VisitedLinkColor|Removed|   | 
- 
+
 ## ImageColumn
 
 |Properties|Action|RadControls Equivalent|
@@ -299,4 +299,4 @@ The DataGridView is converted to [RadGridView]({%slug winforms/gridview%}). The 
 ## See Also
 
 * [Step-by-step tutorial]({%slug winforms/winforms-converter/step-by-step-tutorial%})
-* [Requirements] ({%slug winforms/winforms-converter/requirements%})
+* [Requirements]({%slug winforms/winforms-converter/requirements%})

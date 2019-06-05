@@ -17,7 +17,7 @@ Arrange allocates a cell in which the item child will be positioned. If the chil
 
 * If the size of the child is smaller than the size of the cell, the child can be aligned within the cell
 
-* If the size of the child is bigger than the size of the cell, the child is cut by the cell in accordance with the [clipping]({%slug winforms/telerik-presentation-framework/layout/clipping%}) behavior.
+* If the size of the child is bigger than the size of the cell, the child is cut by the cell in accordance with the [clipping]({%slug winforms/telerik-presentation-framework/layout/clipping%}) behavior.
 
 If the child is stretchable, it fills to the maximum the dimension of the cell in the stretching direction. Furthermore, stretching is only applied in case of stretching up. There is no shrinking of element dimensions to make them fit in size less than the requested DesiredSize.
 
@@ -26,9 +26,9 @@ If the child is stretchable, it fills to the maximum the dimension of the cell i
 * In case stretching in a particular direction is turned on, the child element will size itself to fill the size allocated to it by the parent, taking into account its margin and padding properties.
 
 * In the case that a child is larger than its parent, the parent will only increase in size to accommodate the child in case all of the conditions below are fulfilled:
-    1. Parent’s __AutoSize__ property is set to true.
-    2. Parent’s __StretchHorizontally__ and __StretchVertically__ properties are set to *false*.
-    3. Child’s __DesiredSize__ is non-zero.
+    1. Parent’s __AutoSize__ property is set to true.
+    2. Parent’s __StretchHorizontally__ and __StretchVertically__ properties are set to *false*.
+    3. Child’s __DesiredSize__ is non-zero.
 
 ## ZIndex
 
@@ -44,7 +44,6 @@ The desired size returned by the measure stage of the layout process can be igno
 
 >caution When the __BypassLayoutPolicies__ flag is set to true, the transformation and constraint implementing logic is bypassed. Any transformation will therefore have to be implemented by the user.
 >
-
 ## FitToSizeMode
 
 The RadElement __FitToSizeMode__ property controls the area that a child element may paint itself. By default all children are placed in the parent content area and can paint in that area only. __FitToSizeMode__ is taken into account when measuring and arranging elements during layout.
@@ -65,7 +64,7 @@ The __ConrolBoundingRectangle__ property stores the bounds of an element relativ
 
 ## DesiredSize
 
-The __DesiredSize__ property is the size returned by the __MeasureOverride__ method of an element. It indicates how much space is needed by the children of the element to be ordered according to the logic implemented in the MeasureOverride method. The __DesiredSize__ is equal to the __BoundingRectangle.Size__.
+The __DesiredSize__ property is the size returned by the __MeasureOverride__ method of an element. It indicates how much space is needed by the children of the element to be ordered according to the logic implemented in the MeasureOverride method. The __DesiredSize__ is equal to the __BoundingRectangle.Size__.
 
 # See Also
 * [Clipping]({%slug winforms/telerik-presentation-framework/layout/clipping%})
@@ -83,4 +82,3 @@ The __DesiredSize__ property is the size returned by the __MeasureOverride__ met
 * [Layout Structure]({%slug winforms/telerik-presentation-framework/layout/layout-structure%})
 
 * [RadControl Testing Considerations]({%slug winforms/telerik-presentation-framework/layout/radcontrol-testing-considerations%})
-

@@ -33,7 +33,6 @@ There are several events that control the whole drag and drop operation:
 * **PreviewDragHint**: Fires when the drag and drop operation is successfully started and the drag hint is going to be created. The PreviewDragHintEventArgs.**UseDefaultHint** property controls whether the default hint will be displayed. If you set this argument to *false* you can specify the drag hint by setting the **DragHint** property to the desired image. You have access to the **DragInstance** as well.
 
 >caption Figure 1: Custom DragHint
-
 ![tpf-raddragdropservice 001](images/tpf-raddragdropservice001.png)
 
 * **PreviewDropTarget**: Fires when you have a drop target. In the **PreviewDropTargetEventArgs** you have access to the **DragInstance** and **HitTarget**. It is possible to change the drop target by the PreviewDropTargetEventArgs.**DropTarget** property. This target will be used for the **PreviewDragOver** event.

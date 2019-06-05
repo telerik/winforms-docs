@@ -22,13 +22,13 @@ The StatusStrip is converted to [RadStatusBar]({%slug winforms/forms-and-dialogs
 |RenderMode|Removed|   | 
 |Stretch|Removed|   | 
 |TextDirection|Produces Error|   | 
- 
+
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
 |GetNextItem()|Produces Error|   | 
 |GetItemAt()|Produces Error|   | 
- 
+
 
 |Events|Action|RadControls Equivalent|
 |---|---|---|
@@ -67,7 +67,7 @@ The StatusStrip is converted to [RadStatusBar]({%slug winforms/forms-and-dialogs
 |GetLifetimeService|Produces Error|   | 
 |Increment|Replaced with|IncrementValue1()| 
 |PerformStep|Replaced with|PerformStepValue1()| 
- 
+
 
 |Events|Action|RadControls Equivalent|
 |---|---|---|
@@ -78,7 +78,7 @@ The StatusStrip is converted to [RadStatusBar]({%slug winforms/forms-and-dialogs
 |Paint|Produces Error|   | 
 |RightToLeftLayoutChanged|Produces Error|   | 
 |VisibleChanged|Produces Error|   | 
- 
+
 ## ToolTabStripLabel
 
 |Properties|Action|RadControls Equivalent|
@@ -107,7 +107,7 @@ The StatusStrip is converted to [RadStatusBar]({%slug winforms/forms-and-dialogs
 |TextDirection|Produces Error|| 
 |Visible|Replaced with|Visibility| 
 |VisitedLinkColor|Removed|   | 
- 
+
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
@@ -115,7 +115,7 @@ The StatusStrip is converted to [RadStatusBar]({%slug winforms/forms-and-dialogs
 |GetLifetimeService|Produces Error|   | 
 |GetPreferredSize|Produces Error|   | 
 |GetCurrentParent|Produces Error|   | 
- 
+
 |Events|Action|RadControls Equivalent|
 |---|---|---|
 |BackgroundImageLayout|Produces Error|   | 
@@ -204,7 +204,7 @@ The StatusStrip is converted to [RadStatusBar]({%slug winforms/forms-and-dialogs
 |OwnerChanged|Produces Error|   | 
 |Paint|Produces Error|   | 
 |RightToLeftChanged|Produces Error|   | 
- 
+
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|

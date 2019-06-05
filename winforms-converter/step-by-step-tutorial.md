@@ -13,7 +13,6 @@ position: 1
 This article will guide you through the process of converting the Microsoft Windows Forms controls in your application to Telerik UI for Winforms counterparts. 
 
 >tip We strongly recommend you using a source control system like TFS or Git. This will allow you to review the changes and restore to previous version if needed. 
-
 1\. Before starting you need to open a solution which contains a project that is using standard Microsoft Winforms controls. This will enable the converter option in the `UI for WinForms menu` item.
 
 ![winforms-converter-step-by-step-tutorial001](images/winforms-converter-step-by-step-tutorial001.png)
@@ -31,7 +30,7 @@ This article will guide you through the process of converting the Microsoft Wind
 ![winforms-converter-step-by-step-tutorial002](images/winforms-converter-step-by-step-tutorial002.png)
 
 3\.1 If you choose the *Convert specific files* option, press `Next`.
-	
+
 ![winforms-converter-step-by-step-tutorial007](images/winforms-converter-step-by-step-tutorial007.png)
 
 You will be navigated to a step to choose which files to be converted. Then press `Convert`:
@@ -43,7 +42,7 @@ You will be navigated to a step to choose which files to be converted. Then pres
 ![winforms-converter-step-by-step-tutorial003](images/winforms-converter-step-by-step-tutorial003.png)
 
 At this step you can compare the old and the converted files. To do that just click the __`What's Changed`__ link in the file list. This will open the files tabs in Visual Studio and you will be able to review the changed code.
-    
+
 ![winforms-converter-step-by-step-tutorial004](images/winforms-converter-step-by-step-tutorial004.png)
 
 4\. Click `Close` and open the designer in the converted project. You will see that the project and the controls are now converted. The following image shows the application before and after the conversion process.
@@ -54,7 +53,6 @@ At this step you can compare the old and the converted files. To do that just cl
     ![winforms-converter-step-by-step-tutorial006](images/winforms-converter-step-by-step-tutorial006.png)
 
 >tip After the conversion process is completed, you should check if all existing functionality is working as before.
-
 ## See Also
 
-* [Requirements] ({%slug winforms/winforms-converter/requirements%})
+* [Requirements]({%slug winforms/winforms-converter/requirements%})

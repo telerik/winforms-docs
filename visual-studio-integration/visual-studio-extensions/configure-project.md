@@ -37,7 +37,6 @@ Through the Project Configuration Wizard’s third page you can:
 * Select the "Enable HDPI" option in order to add support for high DPI awareness in your application.
 
 >important Note that the "Enable HDPI" option is availaible from version 2019.1
-
 When you click the Finish button:
 
 * The selected assembly references get added to your project

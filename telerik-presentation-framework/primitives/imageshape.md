@@ -17,7 +17,7 @@ __RadImageShape__ implements the so called "Segmented Image" semantic, which in 
 
 __RadImageShape.Margins__
 
-__RadImageShape__          
+__RadImageShape__          
 
 ![tpf-primitives-imageshape 002](images/tpf-primitives-imageshape002.png)
 
@@ -52,10 +52,10 @@ RadImageShape exposes some advanced settings that allow any complex rendering lo
 *PaintMode.StretchYTileX*
 
 * *InterpolationMode* – defines the interpolation passed to the underlying GDI+ Graphics used to paint the each image part.
-            
+
 
 * *RotateFlip* – additional option, which allows the source image to be rotated/flipped before segmentation.
-            
+
 
 __Editing RadImageShape in Visual Style Builder__
 
@@ -79,4 +79,3 @@ Each RadElement exposes a property named __BackgroundShape__ which is of type __
 * [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%})
 
 * [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%})
-

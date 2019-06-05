@@ -53,7 +53,6 @@ Standard __BindingNavigator__ and our __RadBindingNavigator__ have different map
 `this.bindingNavigator1.Name = "bindingNavigator1";`
 
 >tip We strongly recommend you to change the __Name__ properties of each item manually after opening the form at design time. 
-
 In addition, if there are other items added to the navigator, they will be converted as well, their properties, events and methods are listed [here]({%slug winforms/winforms-converter/supported-controls/toolstrip%}).
 
 

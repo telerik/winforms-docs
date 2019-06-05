@@ -20,7 +20,6 @@ previous_url: tools-controlspy-overview
 The ControlSpy is a tool that lets you examine the detailed internal structure of any RadControl. It is not a stand-alone tool. Rather, the Control Spy is supplied as part of a library that you compile into your application. After adding this library, you can start the ControlSpy and use it to examine and alter properties of any RadControl which is currently running.
 
 >caption Figure 1: RadControlSpyForm
-
 ![tools-controlspy-overview 002](images/tools-controlspy-overview002.png)
 
 

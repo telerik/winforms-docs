@@ -31,7 +31,7 @@ RadElement's __Paint__ performs the following:
 
 Transformations are changes to:
 
-* Position (also called translation). In RadElements, these changes take the form of offsets, e.g. padding, margin, border. 
+* Position (also called translation). In RadElements, these changes take the form of offsets, e.g. padding, margin, border. 
 
 * Size (also called scaling) is controlled by the RadElement __ScaleTransform__ property. 
 
@@ -61,4 +61,3 @@ Transformation uses the context of the parent:
 * [Override Theme Settings at Run Time]({%slug winforms/telerik-presentation-framework/override-theme-settings-at-run-time%})
 
 * [RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})
-

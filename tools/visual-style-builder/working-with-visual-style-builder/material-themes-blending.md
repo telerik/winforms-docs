@@ -15,9 +15,8 @@ Telerik UI for WinForms suite offers a touch optimized theme which provides addi
 * MaterialBlueGray
 * MaterialPink
 * MaterialTeal
-     
->caption Figure 1: Material Themes
 
+>caption Figure 1: Material Themes
 ![tools-visual-style-builder-working-with-visual-style-builder-material-themes-blending 001](images/tools-visual-style-builder-material-themes-blending001.png)
 
 ## Generate Material Variation
@@ -27,29 +26,24 @@ Telerik UI for WinForms suite offers a touch optimized theme which provides addi
 Select *Tools >> Generate Material Variation* menu item:
 
 >caption Figure 2: Generate Material Variation
-
 ![tools-visual-style-builder-working-with-visual-style-builder-material-themes-blending 002](images/tools-visual-style-builder-material-themes-blending002.png)
 
 ![tools-visual-style-builder-working-with-visual-style-builder-material-themes-blending 006](images/tools-visual-style-builder-material-themes-blending006.png) 
 
 >note If you already have loaded a customized Material theme (but not a Material variation) it will remain loaded when generating a Material variation.
-
 This will open the **Material Blend Dialog** from which you can choose the **Primary color** and the **Accent color**:
 
 >caption Figure 3: Material Blend Dialog
-
 ![tools-visual-style-builder-working-with-visual-style-builder-material-themes-blending 003](images/tools-visual-style-builder-material-themes-blending003.png)
 
 If you click the **Generate theme** button, a new variation of the Material theme will be exported using the selected colors.
 
 >caption Figure 4: Save the Theme
-
 ![tools-visual-style-builder-working-with-visual-style-builder-material-themes-blending 004](images/tools-visual-style-builder-material-themes-blending004.png) 
 
 After loading the custom theme in [Theme Viewer]({%slug winforms/tools/themeviewer%}) the primary/accent colors are replaced:
 
 >caption Figure 5: Load Material theme's variation
-
 ![tools-visual-style-builder-working-with-visual-style-builder-material-themes-blending 005](images/tools-visual-style-builder-material-themes-blending005.png) 
 
 # See Also

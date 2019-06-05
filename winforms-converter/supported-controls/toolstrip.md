@@ -22,7 +22,7 @@ The ToolStrip is converted to [RadCommandBar]({%slug winforms/commandbar%}). The
 |RenderMode |Removed |   | 
 |Stretch|Removed|   | 
 |TextDirection|Produces Error|   | 
- 
+
 
 |Methods|Action|RadControls Equivalent|
 |---|---|---|
@@ -120,7 +120,7 @@ The ToolStrip is converted to [RadCommandBar]({%slug winforms/commandbar%}). The
 |GetLifetimeService|Produces Error|   | 
 |GetPreferredSize|Produces Error|   | 
 |InitializeLifetimeService|Produces Error|   | 
- 
+
 ## ToolStripSplitButton
 
 |Properties|Action|RadControls Equivalent|
@@ -296,7 +296,7 @@ The ToolStrip is converted to [RadCommandBar]({%slug winforms/commandbar%}). The
 |ImageAlign|Replaced with|ImageAlignment| 
 |TextAlign|Replaced with|TextAlignment| 
 |Visible|Replaced with|Visibility| 
- 
+
 |Events|Action|RadControls Equivalent|
 |---|---|---|
 |AcceptsTabChanged|Produces Error|   | 

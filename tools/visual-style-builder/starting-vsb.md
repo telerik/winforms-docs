@@ -30,4 +30,3 @@ Older Versions can be found in:
 * [Getting Started]({%slug winforms/tools/visual-style-builder/getting-started%})
 
 * [Overview]({%slug winforms/tools/visual-style-builder%})
-

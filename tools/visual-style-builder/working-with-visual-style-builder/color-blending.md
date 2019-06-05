@@ -21,37 +21,34 @@ Visual Style Builder provides a color blending functionality making it easy to c
 
 >note In order to access the ColorBlendDialog, you should open Visual Style Builder, select the Tools menu item and click the Blend Color item.
 >
-
 ## Color Settings
 
 This group defines the colors to be blended.
-        
->caption Figure 3: Color Settings
 
+>caption Figure 3: Color Settings
 ![tools-visual-style-builder-working-with-visual-style-builder-color-blending 003](images/tools-visual-style-builder-working-with-visual-style-builder-color-blending003.png)
 
 * __Source Color:__ The color which is currently being used.
-            
+
 
 * __Destination Color:__ Target color with which the source color is going to be blended.
-            
+
 
 ## Threshold/Mix Settings
 
 The items in this group specifies how exactly the blending process will be performed.
-        
->caption Figure 4: Threshold/Mix Settings
 
+>caption Figure 4: Threshold/Mix Settings
 ![tools-visual-style-builder-working-with-visual-style-builder-color-blending 004](images/tools-visual-style-builder-working-with-visual-style-builder-color-blending004.png)
 
 * __Image Threshold:__ Blends the destination color to images used in the themes having the source color as background.
-   
+
 
 * __Color Mix:__ Specifies the weight with which the destination color will be blended to the source color.
-  
+
 
 * __Color Sensitivity:__ Defines a factor determining how colors different than the source and destination will be affected by the blending operation.
-            
+
 
 # See Also
 * [Applying Font repository items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/applying-font-repository-items%})
@@ -65,4 +62,3 @@ The items in this group specifies how exactly the blending process will be perfo
 * [Property Precedence Rules]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules%})
 
 * [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})
-

@@ -13,7 +13,7 @@ previous_url: tools-visual-style-builder-getting-started
 
 ## Overview
 
-The purpose of this article is to introduce Telerik WinForms Visual Style Builder by describing the process of creating a simple theme for the RadButton control. This article emphasizes on all tricky moments that might occur while using the Visual Style Builder and explains them so that the user does not experience any issues when theming controls. The tutorial begins with the creation of all needed repository items for styling a RadButton control and after that shows how to apply them.
+The purpose of this article is to introduce Telerik WinForms Visual Style Builder by describing the process of creating a simple theme for the RadButton control. This article emphasizes on all tricky moments that might occur while using the Visual Style Builder and explains them so that the user does not experience any issues when theming controls. The tutorial begins with the creation of all needed repository items for styling a RadButton control and after that shows how to apply them.
 
 ## Creating a new Theme
 
@@ -33,7 +33,6 @@ In this article we are going to demonstrate how to create and apply a repository
 
 >note For more information on repository items, check the [Theme Repository]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%}) topic.
 >
-
 ![tools-visual-style-builder-getting-started 002](images/tools-visual-style-builder-getting-started002.png)
 
 This is the Text Repository Item editor dialog. As discussed in the Theme Repository article, each repository item has a unique key and a display name. You can edit these properties by using the corresponding text boxes at the upper part of the form. In this demonstration, the repository item is called ‘WhiteSegoeUI12’. Its key is given the same value.
@@ -43,7 +42,6 @@ This is the Text Repository Item editor dialog. As discussed in the Theme Reposi
 * OrangeLinearFill
 * TransparentFill
 >
-
 In this way you will be able to quickly associate the repository item with the appearance it will give to the element or the case it is used in (pressed/hovered button etc.). In our case, the name of the Repository Item is ‘WhiteSegoeUI12’ and, obviously, it describes the settings contained in this item:
 
 * Font is set to Segoe UI with size 12
@@ -64,7 +62,7 @@ Having selected the ButtonFill element in the Elements grid, click on the "Creat
 
 ![tools-visual-style-builder-getting-started 005](images/tools-visual-style-builder-getting-started005.png)
 
-Give the repository item a key and a name as follows: `ButtonNormalFill`, `ButtonNormalFill`, and check the "Animated State Transition" checkbox to enable animated style transition for this repository item. Save the repository item by clicking OK and click on the "Create New Repository Item" button again. By following the same steps described above, crate another two fill repository items with office glass rect style and colors as follows: yellow and red. Name them `ButtonHoverFill ` and `ButtonPressedFill`. The repository should look as follows after creating all items:
+Give the repository item a key and a name as follows: `ButtonNormalFill`, `ButtonNormalFill`, and check the "Animated State Transition" checkbox to enable animated style transition for this repository item. Save the repository item by clicking OK and click on the "Create New Repository Item" button again. By following the same steps described above, crate another two fill repository items with office glass rect style and colors as follows: yellow and red. Name them `ButtonHoverFill ` and `ButtonPressedFill`. The repository should look as follows after creating all items:
 
 ![tools-visual-style-builder-getting-started 006](images/tools-visual-style-builder-getting-started006.png)
 
@@ -111,11 +109,10 @@ At the end, the Visual Style Builder main form should look the following way (th
 With this, you have finished styling the RadButton control. Now, you can save the theme and use it throughout your application. For further information on how to handle loading/saving themes, read the Handling Themes help article.
 
 >caution It is important to know that styles applied for a given state are not reset when the item goes to another state. This might confuse those who are not familiar with this behavior.
-__Scenario:__ We have a button with Normal, MouseOver and Pressed states. We also have a couple of repository items which we use to style the button for the different states. Let’s say that the first repository item we assign fill to the button for its Normal state, which sets its BackColor, BackColor2, BackColor3, GradientStyle  and NumberOfColors properties. The NumberOfColors property is set to 3 and the GradientStyle property is set to Linear. After associating the repository item to the Normal state of the button, the styles are applied correctly. Now, let’s say that we associate another repository item with the MouseOver state of the button that defines settings for the BackColor, BackColor2, BackColor3, BackColor4 properties, also for the GradientStyle (=Linear), but does not define setting for the NumberOfColors property. In this case, when we hover the button, the fill will not look as expected since its BackColor4 property value will not be visible. The reason for this will be that the NumberOfColors property will remain set to 3 as defined by the repository item assigned to the Normal state of the item.
+__Scenario:__ We have a button with Normal, MouseOver and Pressed states. We also have a couple of repository items which we use to style the button for the different states. Let’s say that the first repository item we assign fill to the button for its Normal state, which sets its BackColor, BackColor2, BackColor3, GradientStyle  and NumberOfColors properties. The NumberOfColors property is set to 3 and the GradientStyle property is set to Linear. After associating the repository item to the Normal state of the button, the styles are applied correctly. Now, let’s say that we associate another repository item with the MouseOver state of the button that defines settings for the BackColor, BackColor2, BackColor3, BackColor4 properties, also for the GradientStyle (=Linear), but does not define setting for the NumberOfColors property. In this case, when we hover the button, the fill will not look as expected since its BackColor4 property value will not be visible. The reason for this will be that the NumberOfColors property will remain set to 3 as defined by the repository item assigned to the Normal state of the item.
 __The main conclusion that we should make here is that each state must be assigned a style that defines all properties needed for the expected appearance of the element.__ This is the general approach when styling items in order to avoid confusion.
 For more information see [Precedence Example: Visibility Property]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property%}) at the end of this tutorial.
 >
-
 
 
 | RELATED VIDEOS |  |
@@ -133,4 +130,3 @@ For more information see [Precedence Example: Visibility Property]({%slug winfor
 * [Starting VSB]({%slug winforms/tools/visual-style-builder/starting-vsb%})
 
 * [Overview]({%slug winforms/tools/visual-style-builder%})
-

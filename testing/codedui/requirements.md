@@ -17,4 +17,3 @@ previous_url: codedui-requirements
 |Microsoft Visual Studio 2012 Premium/Ultimate edition|None|R3 2012|
 |Microsoft Visual Studio 2015 Enterprise edition|[Update 1](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update1-vs)|R1 2016|
 |Microsoft Visual Studio 2019 Enterprise edition|None|R1 2019|
-            

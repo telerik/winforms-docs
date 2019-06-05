@@ -31,7 +31,7 @@ The TreeView is converted to [RadTreeView]({%slug winforms/treeview%}). The foll
 |---|---|---|
 |HitTest(Point pt)|Produces Error|   | 
 |Sort()|Produces Error|   | 
- 
+
 |Events|Action|RadControls Equivalent|
 |---|---|---|
 |AfterCheck|Replaced with|NodeCheckedChanged| 
@@ -57,4 +57,4 @@ The TreeView is converted to [RadTreeView]({%slug winforms/treeview%}). The foll
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
 |Bounds|Removed|   | 
-|NodeFont|Removed|   |  
+|NodeFont|Removed|   | 

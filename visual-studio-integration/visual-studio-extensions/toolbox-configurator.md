@@ -14,7 +14,7 @@ previous_url: installation-deployment-and-distribution-vsx-toolbox-configurator
 ## 
 
 Starting with __Q3 2010__ we introduced the __Toolbox Configuration__ utility. Its purpose is to choose which version of __Telerik UI for WinForms__ to be populated in the Visual Studio’s Toolbox. The user can select among all versions of the suite that are currently on the machine and have been either installed or downloaded using the __VS Extensions__.
-        
+
 
 The Toolbox Configurator can be launched from the Telerik menu:
 
@@ -28,5 +28,4 @@ The __Toolbox Configurator__ is supported in Visual Studio 2008, 2010, 2012, 201
 
 >tip The Toolbox Configurator will overwrite the toolbox registration performed during installation. Additionally, the Toolbox Configurator registers the selected version of Telerik UI for WinForms in AssemblyFoldersEx. This makes them visible in the Add Reference dialog and Choose Toolbox Items dialog (accessible from the toolbox context menu).
 >
-
 ![installation-deployment-and-distribution-vsx-toolbox-configurator 003](images/installation-deployment-and-distribution-vsx-toolbox-configurator003.png)

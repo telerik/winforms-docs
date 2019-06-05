@@ -70,4 +70,3 @@ have the style settings applied. All operations in the Visual Style Builder are 
 * [Starting VSB]({%slug winforms/tools/visual-style-builder/starting-vsb%})
 
 * [Overview]({%slug winforms/tools/visual-style-builder%})
-

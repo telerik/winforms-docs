@@ -16,17 +16,14 @@ There are cases in which you apply a repository item to an element, but this ele
 ![tools-visual-style-builder-working-with-visual-style-builder-precedence-example-visibility-property 001](images/tools-visual-style-builder-working-with-visual-style-builder-precedence-example-visibility-property001.png)
 
 >note Border1 repository item is applied to the default RadLabelElement state, but the default Visibility value is Hidden, and since it is not overridden, the fill is not visible.
-
 In order to display the BorderPrimitive of the RadLabelElement, you should alter this property directly in the property grid of the BorderPrimitive.
 
 ![tools-visual-style-builder-working-with-visual-style-builder-precedence-example-visibility-property 002](images/tools-visual-style-builder-working-with-visual-style-builder-precedence-example-visibility-property002.png)
 
 >note When we set the Visibility property to Visible, we override the default value and the repository item colors become visible.
-
 >note 
 This example concerns the Visibility property, but the rules described here are general and they are in force for all the properties that can be set by Visual Style Builder.
 >
-
 
 
 
@@ -42,4 +39,3 @@ This example concerns the Visibility property, but the rules described here are 
 * [Property Precedence Rules]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules%})
 
 * [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})
-

@@ -26,5 +26,5 @@ The VSExtensions assembly list control is controlled by the dependency analyzer,
 * Selecting a Telerik UI for WinForms assembly will automatically select the additional assemblies it depends on as well.
 
 * Deselecting a Telerik UI for WinForms assembly will deselect assemblies depending on it along with it.
-            
+
 >tip Note that not all assemblies are listed.

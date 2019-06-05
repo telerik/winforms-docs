@@ -31,4 +31,4 @@ The ProgressBars in your application will be converted to [RadProgressBar]({%slu
 ## See Also
 
 * [Step-by-step tutorial]({%slug winforms/winforms-converter/step-by-step-tutorial%})
-* [Requirements] ({%slug winforms/winforms-converter/requirements%})
+* [Requirements]({%slug winforms/winforms-converter/requirements%})

@@ -34,7 +34,6 @@ The wizard’s first page lets you:
 >tip GET LATEST button is available only when there is a newer version released on our web site.
 >
 > If you prefer the Telerik assemblies to be copied into your solution folder, the __Copy referenced assemblies to solution and source control__ option could be selected only into the [Visual Studio Extensions Options]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/options%}).
-
 Through the Convert Project Wizard’s second page you can:
 
 ![installation-deployment-and-distribution-vsx-convert-project 002](images/installation-deployment-and-distribution-vsx-convert-project002.png)
@@ -48,7 +47,6 @@ Through the Convert Project Wizard’s third page you can:
 * Select the "Enable HDPI" option in order to add support for high DPI awareness in your application.
 
 >important Note that the "Enable HDPI" option is availaible from version 2019.1
-
 When you click the Finish button:
 
 * The selected assembly references get added to your project

@@ -29,4 +29,3 @@ RadioPrimitive provides the basic visual layout of a radio button background. Ty
 * [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%})
 
 * [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})
-

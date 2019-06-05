@@ -19,15 +19,15 @@ There are two ways to add a __RadThemeManager__ to your form:
 
 * From the __Smart Tag__ menu of any Telerik RadControl.
 
-## Adding a Theme Manager from the Toolbox
+## Adding a Theme Manager from the Toolbox
 
-From the __Telerik UI for WinForms__ tab of the toolbox, drag a __RadThemeManager__ component and drop it anywhere on your form. This action will create a __RadThemeManager__ control in the form component tray area.
+From the __Telerik UI for WinForms__ tab of the toolbox, drag a __RadThemeManager__ component and drop it anywhere on your form. This action will create a __RadThemeManager__ control in the form component tray area.
 
 ![tools-visual-style-builder-adding-custom-themes-to-your-application-adding-radthememanager-to-a-form 001](images/tools-visual-style-builder-adding-custom-themes-to-your-application-adding-radthememanager-to-a-form001.png)
 
 ## Adding a Theme Manager from the Smart Tag Menu
 
-Select any RadControl on your form. Open the __Smart Tag__ menu, and then click __New Theme Manager__.
+Select any RadControl on your form. Open the __Smart Tag__ menu, and then click __New Theme Manager__.
 
 ![tools-visual-style-builder-adding-custom-themes-to-your-application-adding-radthememanager-to-a-form 002](images/tools-visual-style-builder-adding-custom-themes-to-your-application-adding-radthememanager-to-a-form002.png)
 
@@ -39,5 +39,3 @@ Select any RadControl on your form. Open the __Smart Tag__ menu, and then cli
 * [Load Themes from a Resource]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource%})
 
 * [Load Themes from an External File]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-an-external-file%})
-
-

@@ -29,4 +29,3 @@ When writing unit tests it's often convenient to use a RadControl, not as a chil
 * [Layout Structure]({%slug winforms/telerik-presentation-framework/layout/layout-structure%})
 
 * [Sample Arrange Stage Scenarios]({%slug winforms/telerik-presentation-framework/layout/sample-arrange-stage-scenarios%})
-

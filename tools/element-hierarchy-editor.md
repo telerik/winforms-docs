@@ -42,4 +42,3 @@ To demonstrate setting multiple properties of multiple elements and persisting t
 ## Editing UI Elements for Complex Control Hierarchies
 
 When you open the Element Hierarchy Editor from a nested element of a control (such as a RadRibbonBar RadTabStripElement), the corresponding element in the element tree on the left is automatically selected. The tree displays only the selected element and descendants. You will also be able to navigate the element tree for the control and view and set its properties. 
-        
