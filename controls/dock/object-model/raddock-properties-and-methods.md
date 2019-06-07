@@ -1,6 +1,6 @@
 ---
-title: RadDock Properties and Methods
-page_title: RadDock Properties and Methods | RadDock
+title: RadDock Properties, Methods and Events
+page_title: RadDock Properties, Methods and Events
 description: Describes the most used RadDock properties and methods
 slug: winforms/dock/object-model/raddock-properties-and-methods
 tags: raddock,properties,and,methods
@@ -13,7 +13,7 @@ previous_url: dock-object-model-raddock-properties-and-methods
 
 __RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindows__ that it manages. This includes enabling basic capabilities of docking, floating and hiding, handling tabbed document behavior, serialization of layout and providing access to collections of managed dockable objects.
  
-|Properties|Description|
+|__Properties__|Description|
 |---|---|
 |__ActiveWindow__|Sets or gets the currently active DockWindow (ToolWindow or DocumentWindow)|
 |__AutoDetectMdiChildren__|Allows RadDock to automatically control MDI child windows of a parent form.|
@@ -31,7 +31,7 @@ __RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindo
 
 >note The tabs and captions properties are listed in the following article: [Tabs and Captions]({%slug winforms/dock/object-model/tabs-and-captions%})
 
-|Methods|Description|
+|__Methods__|Description|
 |---|---|
 |__ActivateWindow(DockWindow window)__| Activates a DockWindow.|
 |__AddDocument(DockWindow window)__| Adds a DockWindow as a DocumentWindow.|
@@ -45,7 +45,7 @@ __RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindo
 | __FloatWindow(DockWindow window)__|Floats the specified DockWindow in a new form.|
 |__RemoveWindow(DockWindow window)__|Removes a __ToolWindow__ or __DocumentWindow__ from the list of managed windows.|
 
-|Events|Description|
+|__Events__|Description|
 |---|---|
 |__DockTabStripNeeded__|Raised whenever a new DockTabStrip instance is needed internally by the framework.|
 |__PageViewInstanceCreated__|Fires after `RadPageViewElement` is created.|
