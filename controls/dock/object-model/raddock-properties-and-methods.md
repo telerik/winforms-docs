@@ -9,7 +9,7 @@ position: 0
 previous_url: dock-object-model-raddock-properties-and-methods
 ---
 
-# RadDock Properties and Methods
+# RadDock Properties, Methods and Events
 
 __RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindows__ that it manages. This includes enabling basic capabilities of docking, floating and hiding, handling tabbed document behavior, serialization of layout and providing access to collections of managed dockable objects.
  
