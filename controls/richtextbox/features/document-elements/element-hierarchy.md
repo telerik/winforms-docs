@@ -13,6 +13,8 @@ previous_url: richtextbox-features-document-elements-elements-hierarchy
 
 There is an element hierarchy which you must consider when building your rich content manually. To become familiar with it, take a look at the diagram below.
 
+![](images/richtextbox-document-elements-elements-hierarchy001.png)
+
 # See Also
 
  * [RadDocument]({%slug winforms/richtextbox-(obsolete)/features/document-elements/raddocument%})
