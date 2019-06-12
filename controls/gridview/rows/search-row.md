@@ -30,6 +30,8 @@ Me.RadGridView1.AllowSearchRow = True
 
 ![gridview-rows-search-row 001](images/gridview-rows-search-row001.png)
 
+>note As of **R2 2019 SP** **GridViewSearchRowInfo** offers the **DeferredSearch** property which indicates whether the grid control will wait until the `Enter` key is pressed before a new search operation is started. Its default value is *false*.
+
 The end user can select in which columns to perform searching by the provided *Search in columns* drop down. Thus, the highlighted result will be displayed in the specified columns only. You can specify whether the search functionality is enabled for a given column by setting the column's **AllowSearching** property.
 
 ![gridview-rows-search-row 002](images/gridview-rows-search-row002.png)
@@ -52,6 +54,7 @@ The available properties to tweak the search experience and performance and how 
 |**CloseOnEscape**|Gets or sets a value indicating whether to close the search row when escape key is pressed.|
 |**IsSearchAsync**|Gets or sets a value indicating whether the search will be performed on a background thread [true] or on the main thread [false].|
 |**SearchDelay**|Gets or sets a value indicating how long the grid will wait after a key is pressed until it starts a search.|
+|**DeferredSearch**|Gets or sets a value indicating whether grid will wait until Enter key is pressed before it starts a search.|
 
 >note Pressing `Ctrl`+`F` will show the search row if it is hidden. The `Esc` key will close the search row.
 
