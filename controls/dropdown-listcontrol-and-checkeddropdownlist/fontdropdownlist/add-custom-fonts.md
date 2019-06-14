@@ -8,7 +8,9 @@ published: True
 position: 6
 ---
 
-Since R2 2019 SP1 (version) __RadFontDropDownList__ supports adding custom fonts (fonts that are not currently installed on the local machine). THe bellow example shows how you can add the custom font.
+# Add Custom Fonts
+
+Since R2 2019 SP1 (version 2019.2.618) __RadFontDropDownList__ supports adding custom fonts (fonts that are not currently installed on the local machine). The bellow example shows how you can add the custom font.
 
 #### Add Custom Font to RadFontDropDownList
 
