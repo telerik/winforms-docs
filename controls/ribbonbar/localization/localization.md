@@ -29,7 +29,7 @@ RadRibbonBar1.RibbonBarElement.ExitButton.Text = "Exit"
 
 {{endregion}}
 
-Additionally, you can customize the __QuickAccessToolbar__, drop down menu, by setting the following properties of the __LocalizationSettings__ property of __RibbonBarElement__:
+Additionally, you can customize the text for the **LayoutMode**, __QuickAccessToolbar__, drop down menu, by setting the following properties of the __LocalizationSettings__ property of __RibbonBarElement__:
 
 {{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=localize2}} 
 {{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=localize2}} 
