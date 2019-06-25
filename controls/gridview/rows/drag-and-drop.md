@@ -17,15 +17,17 @@ Sometimes applications need to allow users to split items up into separate group
 
 This help article demonstrates how to extend the RadGridView control to enable drag and drop functionality between two grids, whether it be an unbound grid, bound to a binding list of objects, or bound to a DataSet. It supports the ability to drag and drop multiple rows at a time.
 
+>tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/DragAndDropBetweenGrids).
+
 ## Getting started
 
 To get started:
 
 1. Open Visual Studio 2012 and create a new Telerik UI for WinForms project.
 
-1. Add a new class called “DragAndDropRadGrid.cs”.
+2. Add a new class called “DragAndDropRadGrid.cs”.
 
-1. Modify the class to extend the RadGridView control through inheritance.
+3. Modify the class to extend the RadGridView control through inheritance.
 
 {{source=..\SamplesCS\GridView\Rows\DragAndDropRadGrid.cs region=Definition}} 
 {{source=..\SamplesVB\GridView\Rows\DragAndDropRadGrid.vb region=Definition}} 
