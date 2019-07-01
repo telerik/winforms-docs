@@ -19,7 +19,6 @@ The following example demonstrates how to draw an image which appears exactly 12
          
 {{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingEventSubscribe1}} 
 {{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingEventSubscribe1}} 
-
 ````C#
 this.radGanttView1.EnableCustomPainting = true;
 this.radGanttView1.ItemPaint += radGanttView1_ItemPaint1;
@@ -30,11 +29,11 @@ Me.radGanttView1.EnableCustomPainting = True
 AddHandler Me.radGanttView1.ItemPaint, AddressOf radGanttView1_ItemPaint1
 
 ````
+
 {{endregion}} 
 
 {{source=..\SamplesCS\GanttView\Formatting\CustomPainting.cs region=FormattingPaintEvent1}} 
 {{source=..\SamplesVB\GanttView\Formatting\CustomPainting.vb region=FormattingPaintEvent1}} 
-
 ````C#
 private void radGanttView1_ItemPaint1(object sender, GanttViewItemPaintEventArgs e)
 {
