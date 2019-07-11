@@ -16,12 +16,16 @@ Elements on a **RadRibbonBar** (such as buttons, check boxes, and repeat buttons
 For example, here is a **RadRibbonBar** control with adequate space to display all of its default images.
 
 >caption Figure 1: RibbonBar with Enough Space
+
 ![ribbonbar-using-large-and-small-images 001](images/ribbonbar-using-large-and-small-images001.png)
 
 As the user resizes the form containing the control, the labels in the __Text__ group are first eliminated to save space.
 
 >caption Figure 2: RibbonBar with Smaller Width
+
 ![ribbonbar-using-large-and-small-images 002](images/ribbonbar-using-large-and-small-images002.png)
+
+>note Usually, the small images are with size 16x16, while the bigger images are at least 32x32.
 
 Continued resizing switches the elements in the __Insert__ group from their large images to their small images (in addition to eliminating their labels):
 
