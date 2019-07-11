@@ -338,6 +338,8 @@ End Class
 
 Now, you need to apply the custom **TypeConverter** to the RadTreeView.**ToggleStateConverter** property:
 
+>important The property was introduced in **R3 2018 (version 2018.3.911)**.
+
 #### Set the ToggleStateConverter
 
 {{source=..\SamplesCS\TreeView\TreeViewToggleStateConverter.cs region=SetCustomToggleConverter}} 
