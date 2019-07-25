@@ -72,7 +72,7 @@ When you are using UserControl its contents may be scaled twice. In this case pl
 
 Your development machine has HDPI monitor and the scaling setting are larger than 100%. This can cause issues with the layout because opening the designer on such machines will set the __AutoScaleDimensions__ property (the default value is SizeF(6F, 13F)) This property is used when a scaling factor is calculated and passed to your application. And if a wrong factor is passed the application can look smaller or larger then it should be. Please make sure that this property has its default value (__SizeF(6F, 13F)__).
 
-There is a feature request for this as well: [WinForms Designer DPI Lock](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide/suggestions/7373263-winforms-designer-dpi-lock)
+There is a warning in Visual Studio that recommends developing on 100%: [DPI-awareness in Visual Studio](https://docs.microsoft.com/en-us/dotnet/framework/winforms/disable-dpi-awareness-visual-studio)
 
 ### Application becomes DPI aware at runtime.
 
