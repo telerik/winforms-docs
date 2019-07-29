@@ -1322,6 +1322,9 @@ navigation:
     controls/virtualgrid/save-and-load-layout:
         title: Save and Load Layout
         position: 21
+    controls/webcam:
+        title: WebCam
+        position: 505
     controls/wizard:
         title: Wizard
         position: 510
