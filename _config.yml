@@ -10,6 +10,9 @@ navigation:
     installation-and-upgrades:
         title: Installation and Upgrades 
         position: 3
+    getting-started:
+        title: Getting Started 
+        position: 2    
     visual-studio-integration:
         title: Visual Studio Integration 
         position: 4
