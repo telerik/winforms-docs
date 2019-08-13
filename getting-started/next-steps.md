@@ -1,35 +1,52 @@
 ---
-title: Getting Started
-page_title: Getting Started
-description: Getting Started with Telerik UI for WinForms
-slug: winforms/getting-started
-tags: getting, started
+title: Next Steps
+page_title: Next Steps
+description: Next Steps
+slug: winforms/getting-started/next-steps
+tags: get,started,next,steps
 published: True
-position: 1
+position: 3
 ---
 
-# Getting Started with Telerik UI for WinForms
+# Next Steps
 
-## Installing Telerik UI for WinForms
-The following article provides step-by-step instructions how to install Telerik UI for WinForms on your computer: [Installing UI for WinForms](http://docs.telerik.com/devtools/winforms/installation-deployment-and-distribution/installing-on-your-computer)
+Now that you have the Telerik UI for WinForms controls running in your project, the list of resources below can help you get a better understanding of how they work and help you get the most of them.
 
-## Demo application
-When installing the suite, unless otherwise chosen, our Demo Application will be installed on your machine as well. It can be started either from the desktop icon created or from *Start Menu > Programs > Telerik > UI for WinForms [version] > Demo Application*
+If you are just getting started, you can find guidance in the following articles:
 
-![overview](images/overview.png)
+* [First Steps]({% slug winforms/getting-started/first-steps %})
+* [Explore control features]({% slug winforms/getting-started/explore-control-features %})
+* [Change control appearance]({%slug winforms/getting-started/change-control-appearance%})
 
-## Visual Studio Extensions
-At the following link you can find more information about the [Telerik UI for WinForms integration with Visual Studio] (http://docs.telerik.com/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/overview)
+### More Learning Resources
 
-## Predefined Template Applications
-In addition, there are several predefined application templates one can use to get started with variety of application scenarions. More information is available at the following article : [Predefined Templates](http://docs.telerik.com/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/create-project)
+You don't need all of this immediately, but you can use this list as a starting point for future reference. 
 
-## Comprehensive step-by-step guide
-If you are new to the Windows Forms world and/or the Telerik UI for WinForms product, a good place to start is our [step-by-step pdf tutorial](http://www.telerik.com/winforms/winforms-guide), which contains over 750 pages of training material, as well as plenty of code samples.
+Video Tutorials
+* [Progress Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)
 
-## Getting started articles
+Installation
+* [Installing On Your Computer]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%})
+* [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
+* [Major and Minor releases]({%slug winforms/getting-started/next-steps%})
+* [Latest Internal Builds]({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%})
+* [Updating Assemblies in a Project]({%slug winforms/installation-deployment-and-distribution/updating-assemblies-in-a-project%})
+* [Versions Upgrade]({%slug winforms/installation-deployment-and-distribution/versions-upgrade%})
+* [Upgrade API Analyzer tool]({%slug upgrade-api-analyzer%})
 
-Below are listed the *Getting Started* help articles for most of the controls in the Telerik UI for WinForms suite:
+Appearance
+* [Change Control Appearance]({% slug winforms/tools/visual-style-builder %})
+* [Preview Custom Theme]({% slug winforms/tools/themeviewer %})
+* [Custom Shape Editor]({% slug winforms/tools/shapeeditor %})
+
+Additional Tools and Resources
+* [Theme Manager]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource%})
+* [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
+* [Control Spy]({%slug winforms/tools/controlspy%})
+* [Cloud Integration]({%slug cloud-services/overview%})
+* [Developer Focused Examples]({%slug winforms/developer-focused-examples%})
+
+Getting started articles
 
 |||||
 |----|----|----|----|
@@ -49,16 +66,3 @@ Below are listed the *Getting Started* help articles for most of the controls in
 |[RadSpellChecker]({%slug winforms/spellchecker/getting-started%})|[RadSplitContainer]({%slug winforms/splitcontainer/getting-started%})|[RadProgressBar]({%slug winforms/track-and-status-controls/progressbar/getting-started%})|[RadRating]({%slug winforms/track-and-status-controls/rating/getting-started%})|[RadScrollBar]({%slug winforms/track-and-status-controls/scrollbar/getting-started%})|[RadTrackBar]({%slug winforms/track-and-status-controls/trackbar/getting-started%})|[RadWaitingBar]({%slug winforms/track-and-status-controls/waitingbar/getting-started%})
 |[RadTreeView]({%slug winforms/treeview/getting-started%})|[RadVirtualGrid]({%slug winforms/virtualgrid/getting-started%})|[RadChartView]({%slug winforms/chartview/getting-started%})|[RadCheckedListBox]({%slug winforms/checkedlistbox/getting-started%})|
 [FileDialogs]({%slug winforms/file-dialogs/overview%})|[RadDomainUpDown]({%slug winforms/editors/domainupdown/overview%})
-
-
-## Convert your existing Windows Forms applications to Telerik UI for WinForms
-The product also features a tool that aids the conversion process of applications using the standard Microsoft Windows Forms controls to their Telerik UI for WinForms counterparts. See [Converter Tool page](http://docs.telerik.com/devtools/winforms/winforms-converter/overview) for more information.
-
-## Product blog 
-In our blog you can follow interesting topics concerning our product as well as product update information: [UI for WinForms blog](http://www.telerik.com/blogs/tag/winforms)
-
-## Product pages
-Here you can find the [Telerik UI for WinForms](http://www.telerik.com/products/winforms) product pages.
-
-## Roadmap 
-At the following link you can find what's cooking for our next release: [Roadmap](http://www.telerik.com/support/whats-new/winforms/roadmap)
