@@ -49,7 +49,7 @@ Me.radGridView1.Rows.Add("Violet")
 
 ## GridColorPickerEditor
 
-The default editor of the **GridViewColorColumn** is __GridColorPickerEditor__ which can be accessed in the **CellEditorInitialized** event. The **GridColorPickerElement** gives you full access to the **RadColorDialogForm** by accessing the GridColorPickerElement.ColorDialog.**ColorDialogForm** property.
+The default editor of the **GridViewColorColumn** is __GridColorPickerEditor__ which can be accessed in the **CellEditorInitialized** event. The **RadColorPickerEditorElement** gives you full access to the **RadColorDialogForm** by accessing the GridColorPickerElement.ColorDialog.**ColorDialogForm** property.
 
 ![gridview-columns-gridviewcolorcolumn 002](images/gridview-columns-gridviewcolorcolumn002.png)
 
