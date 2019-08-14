@@ -1169,6 +1169,12 @@ navigation:
     controls/shortcuts:
         title: Shortcuts
         position: 440
+    controls/sparkline:
+        title: SparkLine
+        position: 445
+    controls/sparkline/series:
+        title: Series
+        position: 5
     controls/spellchecker:
         title: SpellChecker
         position: 450
