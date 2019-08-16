@@ -15,7 +15,20 @@ __RadSparkline__ supports printing out of the box. You can use the __Print__ or 
 #### Example 1: Use the PrintPreview Method.
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=Print}} 
-{{source=..\SamplesCS\Sparkline\SparklineCode.vb region=Print}}
+{{source=..\SamplesVB\Sparkline\SparklineCode.vb region=Print}}
+````C#
+private void radButton2_Click(object sender, EventArgs e)
+{
+    radSparkline1.PrintPreview();
+}
+
+````
+````VB.NET
+Private Sub RadButton2_Click(ByVal sender As Object, ByVal e As EventArgs)
+    radSparkline1.PrintPreview()
+End Sub
+
+````
  
 
 {{endregion}} 

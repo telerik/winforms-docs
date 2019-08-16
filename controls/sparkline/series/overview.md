@@ -10,8 +10,6 @@ position: 0
 
 # Series Overview
 
-#### Create SparkBarSeries
-
 >caption Figure 1: Supported Series
 
 ![](images/series-overview001.png)

@@ -15,7 +15,40 @@ __SparkBarSeries__ are used to visualize data points as bar blocks where the hei
 #### Create SparkBarSeries
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=BarSeries}} 
-{{source=..\SamplesCS\Sparkline\SparklineCode.vb region=BarSeries}}
+{{source=..\SamplesVB\Sparkline\SparklineCode.vb region=BarSeries}}
+````C#
+public void CreateBarSeries()
+{
+    var barSeries = new SparkBarSeries();
+    barSeries.DataPoints.Add(new CategoricalSparkDataPoint(13));
+    barSeries.DataPoints.Add(new CategoricalSparkDataPoint(20));
+    barSeries.DataPoints.Add(new CategoricalSparkDataPoint(15));
+    barSeries.DataPoints.Add(new CategoricalSparkDataPoint(5));
+    barSeries.DataPoints.Add(new CategoricalSparkDataPoint(29));
+    barSeries.DataPoints.Add(new CategoricalSparkDataPoint(8));
+    barSeries.DataPoints.Add(new CategoricalSparkDataPoint(22));
+    barSeries.ShowHighPointIndicator = true;
+    barSeries.ShowLowPointIndicator = true;
+    this.radSparkline1.Series = barSeries;
+}
+
+````
+````VB.NET
+Public Sub CreateBarSeries()
+    Dim barSeries = New SparkBarSeries()
+    barSeries.DataPoints.Add(New CategoricalSparkDataPoint(13))
+    barSeries.DataPoints.Add(New CategoricalSparkDataPoint(20))
+    barSeries.DataPoints.Add(New CategoricalSparkDataPoint(15))
+    barSeries.DataPoints.Add(New CategoricalSparkDataPoint(5))
+    barSeries.DataPoints.Add(New CategoricalSparkDataPoint(29))
+    barSeries.DataPoints.Add(New CategoricalSparkDataPoint(8))
+    barSeries.DataPoints.Add(New CategoricalSparkDataPoint(22))
+    barSeries.ShowHighPointIndicator = True
+    barSeries.ShowLowPointIndicator = True
+    Me.radSparkline1.Series = barSeries
+End Sub
+
+````
  
 
 {{endregion}} 

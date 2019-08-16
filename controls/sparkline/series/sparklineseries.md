@@ -14,8 +14,43 @@ __SparkLineSeries__ plot their CategoricalSparkDataPoint on Cartesian Area. The 
 
 #### Create SparkLineSeries
 
-{{source=..\SamplesCS\Sparkline\SparklineCode.cs region=LineSerires}} 
-{{source=..\SamplesCS\Sparkline\SparklineCode.vb region=LineSerires}}
+{{source=..\SamplesCS\Sparkline\SparklineCode.cs region=LineSeries}} 
+{{source=..\SamplesVB\Sparkline\SparklineCode.vb region=LineSeries}}
+````C#
+public void CreateLineSeries()
+{
+    var lineSeries = new SparkLineSeries();
+    lineSeries.DataPoints.Add(new CategoricalSparkDataPoint(13));
+    lineSeries.DataPoints.Add(new CategoricalSparkDataPoint(20));
+    lineSeries.DataPoints.Add(new CategoricalSparkDataPoint(15));
+    lineSeries.DataPoints.Add(new CategoricalSparkDataPoint(5));
+    lineSeries.DataPoints.Add(new CategoricalSparkDataPoint(29));
+    lineSeries.DataPoints.Add(new CategoricalSparkDataPoint(8));
+    lineSeries.DataPoints.Add(new CategoricalSparkDataPoint(22));
+    lineSeries.ShowHighPointIndicator = true;
+    lineSeries.ShowLowPointIndicator = true;
+    lineSeries.HighPointShape = new StarShape(5, 3);
+    this.radSparkline1.Series = lineSeries;
+}
+
+````
+````VB.NET
+Public Sub CreateLineSeries()
+    Dim lineSeries = New SparkLineSeries()
+    lineSeries.DataPoints.Add(New CategoricalSparkDataPoint(13))
+    lineSeries.DataPoints.Add(New CategoricalSparkDataPoint(20))
+    lineSeries.DataPoints.Add(New CategoricalSparkDataPoint(15))
+    lineSeries.DataPoints.Add(New CategoricalSparkDataPoint(5))
+    lineSeries.DataPoints.Add(New CategoricalSparkDataPoint(29))
+    lineSeries.DataPoints.Add(New CategoricalSparkDataPoint(8))
+    lineSeries.DataPoints.Add(New CategoricalSparkDataPoint(22))
+    lineSeries.ShowHighPointIndicator = True
+    lineSeries.ShowLowPointIndicator = True
+    lineSeries.HighPointShape = New StarShape(5, 3)
+    Me.radSparkline1.Series = lineSeries
+End Sub
+
+````
  
 
 {{endregion}} 

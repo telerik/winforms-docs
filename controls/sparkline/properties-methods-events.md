@@ -5,7 +5,7 @@ description: The Sparkline control is an information graphic, which is character
 slug: radsparkline-properties-methods-and-events
 tags: sparkline
 published: True
-position: 7
+position: 6
 ---
 
 # Properties

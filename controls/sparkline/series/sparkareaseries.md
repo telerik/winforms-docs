@@ -15,7 +15,42 @@ As a derivative of Categorical series, SparkAreaSeries plot their data points us
 #### Create SparkAreaSeries
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=AreaSeries}} 
-{{source=..\SamplesCS\Sparkline\SparklineCode.vb region=AreaSeries}}
+{{source=..\SamplesVB\Sparkline\SparklineCode.vb region=AreaSeries}}
+````C#
+public void CreateAreaSeries()
+{
+    var areaSeries = new SparkAreaSeries();
+    areaSeries.DataPoints.Add(new CategoricalSparkDataPoint(13));
+    areaSeries.DataPoints.Add(new CategoricalSparkDataPoint(20));
+    areaSeries.DataPoints.Add(new CategoricalSparkDataPoint(15));
+    areaSeries.DataPoints.Add(new CategoricalSparkDataPoint(5));
+    areaSeries.DataPoints.Add(new CategoricalSparkDataPoint(29));
+    areaSeries.DataPoints.Add(new CategoricalSparkDataPoint(8));
+    areaSeries.DataPoints.Add(new CategoricalSparkDataPoint(22));
+    areaSeries.ShowHighPointIndicator = true;
+    areaSeries.ShowLowPointIndicator = true;
+    areaSeries.HighPointShape = new StarShape(5, 3);
+    this.radSparkline1.Series = areaSeries;
+}
+
+````
+````VB.NET
+Public Sub CreateAreaSeries()
+    Dim areaSeries = New SparkAreaSeries()
+    areaSeries.DataPoints.Add(New CategoricalSparkDataPoint(13))
+    areaSeries.DataPoints.Add(New CategoricalSparkDataPoint(20))
+    areaSeries.DataPoints.Add(New CategoricalSparkDataPoint(15))
+    areaSeries.DataPoints.Add(New CategoricalSparkDataPoint(5))
+    areaSeries.DataPoints.Add(New CategoricalSparkDataPoint(29))
+    areaSeries.DataPoints.Add(New CategoricalSparkDataPoint(8))
+    areaSeries.DataPoints.Add(New CategoricalSparkDataPoint(22))
+    areaSeries.ShowHighPointIndicator = True
+    areaSeries.ShowLowPointIndicator = True
+    areaSeries.HighPointShape = New StarShape(5, 3)
+    Me.radSparkline1.Series = areaSeries
+End Sub
+
+````
  
 
 {{endregion}} 

@@ -17,5 +17,15 @@ The Sparkline control is an information graphic, which is characterized by small
 
 # Features
 
+* Series Types
+    * SparkAreaSeries
+    * SparkBarSeries
+    * SparkLineSeries
+    * SparkScatterSeries
+    * SparkWinLossSeries
+* Data Binding
+* Annotations
+* Indicators
 * Export To Image
 * Printing
+* Null Values Support

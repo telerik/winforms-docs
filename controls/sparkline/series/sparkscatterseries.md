@@ -15,7 +15,40 @@ Unlike Categorical series, ScatterSeries plots its data upon two numerical axes.
 #### Create SparkScatterSeries
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=ScatterSeries}} 
-{{source=..\SamplesCS\Sparkline\SparklineCode.vb region=ScatterSeries}}
+{{source=..\SamplesVB\Sparkline\SparklineCode.vb region=ScatterSeries}}
+````C#
+public void CreateScatterSeries()
+{
+    var scatterSeries = new SparkScatterSeries();
+    scatterSeries.DataPoints.Add(new ScatterSparkDataPoint(13,1));
+    scatterSeries.DataPoints.Add(new ScatterSparkDataPoint(20,2));
+    scatterSeries.DataPoints.Add(new ScatterSparkDataPoint(15,3));
+    scatterSeries.DataPoints.Add(new ScatterSparkDataPoint(5,4));
+    scatterSeries.DataPoints.Add(new ScatterSparkDataPoint(29,5));
+    scatterSeries.DataPoints.Add(new ScatterSparkDataPoint(8,6));
+    scatterSeries.DataPoints.Add(new ScatterSparkDataPoint(22,71));
+    scatterSeries.ShowHighPointIndicator = true;
+    scatterSeries.ShowLowPointIndicator = true;
+    this.radSparkline1.Series = scatterSeries;
+}
+
+````
+````VB.NET
+Public Sub CreateScatterSeries()
+    Dim scatterSeries = New SparkScatterSeries()
+    scatterSeries.DataPoints.Add(New ScatterSparkDataPoint(13, 1))
+    scatterSeries.DataPoints.Add(New ScatterSparkDataPoint(20, 2))
+    scatterSeries.DataPoints.Add(New ScatterSparkDataPoint(15, 3))
+    scatterSeries.DataPoints.Add(New ScatterSparkDataPoint(5, 4))
+    scatterSeries.DataPoints.Add(New ScatterSparkDataPoint(29, 5))
+    scatterSeries.DataPoints.Add(New ScatterSparkDataPoint(8, 6))
+    scatterSeries.DataPoints.Add(New ScatterSparkDataPoint(22, 71))
+    scatterSeries.ShowHighPointIndicator = True
+    scatterSeries.ShowLowPointIndicator = True
+    Me.radSparkline1.Series = scatterSeries
+End Sub
+
+````
  
 
 {{endregion}} 
