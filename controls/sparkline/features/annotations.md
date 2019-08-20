@@ -1,0 +1,77 @@
+---
+title: Annotations
+page_title: RadSparkline Annotations
+description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+slug: radsparkline-annotations
+tags: sparkline, annotations
+published: True
+position: 0
+---
+
+# Annotations
+
+ Annotations are visual elements that can be used to highlight certain areas on the plot area and denote significant values. The currently supported annotations are __Grid Line__ and __Plot Band__. This article shows examples for both.
+
+
+## Grid Line Annotation
+
+Grid line annotations are lines or circles that cross the chart grid at location on the axis, specified by their Value property.
+
+Here is how the GridLine annotation looks like.
+
+>caption Figure 1: CartesianSparkGridLineAnnotation
+
+ ![](images/sparkline-annotations001.png)
+
+ The following example shows how you can create a Grid Line annotation.
+
+ #### Add Plot Band Annotation 
+
+{{source=..\SamplesCS\Sparkline\SparklineCode.cs region=GridLineAnnotation}} 
+{{source=..\SamplesVB\Sparkline\SparklineCode.vb region=GridLineAnnotation}}
+ 
+
+{{endregion}} 
+
+Properties specific to the Grid Line Annotations are:
+
+* __BorderDashStyle:__ Defines the dash style of the border of the annotation
+
+* __BorderColor:__ Sets the color of the border of the annotation
+
+* __BorderWidth:__ Specifies the width of the border of the annotation
+
+
+
+## Plot Band Annotation
+
+Cartesian plot band annotation is either a horizontal or a vertical stripe that crosses from start to end the vertical or the horizontal axis respectively.
+
+Here is how the Plot Band annotation looks like.
+
+>caption Figure 2: CartesianSparkPlotBandAnnotation
+
+ ![](images/sparkline-annotations002.png)
+
+ The following example shows how you can create a Plot Band annotation.
+
+ #### Add Plot Band Annotation 
+
+{{source=..\SamplesCS\Sparkline\SparklineCode.cs region=PlotBandAnnotation}} 
+{{source=..\SamplesVB\Sparkline\SparklineCode.vb region=PlotBandAnnotation}}
+ 
+
+{{endregion}} 
+ 
+ 
+Properties specific to the Plot Band Annotations are:
+
+* __Axis:__ The Cartesian plotBand annotation needs to be associated with horizontal or vertical axis explicitly.
+
+* __From__ (of type object): The starting point for the plot band. When the associated axis is numerical (Linear or Logarithmic) a numeric value is expected and when it is a  __CategoricalAxis__ - a category.
+
+* __To__ (of type object): The ending point for the plot band. When the associated axis is numerical (Linear or Logarithmic) a numeric value is expected and when it is a __CategoricalAxis__ - a category.
+
+* __Label:__ This property allows you to display text near the annotation and indicate what it is for.
+
+
