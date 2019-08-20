@@ -12,6 +12,13 @@ position: 0
 
  Annotations are visual elements that can be used to highlight certain areas on the plot area and denote significant values. The currently supported annotations are __Grid Line__ and __Plot Band__. This article shows examples for both.
 
+Common properties to the all types of annotations are:
+
+* __BorderDashStyle:__ Defines the dash style of the border of the annotation
+
+* __BorderColor:__ Sets the color of the border of the annotation
+
+* __BorderWidth:__ Specifies the width of the border of the annotation
 
 ## Grid Line Annotation
 
@@ -35,12 +42,11 @@ Here is how the GridLine annotation looks like.
 
 Properties specific to the Grid Line Annotations are:
 
-* __BorderDashStyle:__ Defines the dash style of the border of the annotation
+* __Axis:__ The Cartesian grid line annotation needs to be associated with horizontal or vertical axis explicitly
+            
+* __Value__ (of type object): The place on the associated axis where the annotation crosses it. When the associated axis is numerical (linear or logarithmic) a numeric value is expected and when it is a categorical - a category
 
-* __BorderColor:__ Sets the color of the border of the annotation
-
-* __BorderWidth:__ Specifies the width of the border of the annotation
-
+* __Label:__ This property allows you to display text near the annotation and indicate what it is for.
 
 
 ## Plot Band Annotation
