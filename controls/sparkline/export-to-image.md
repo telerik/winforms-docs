@@ -11,7 +11,7 @@ position: 8
 # Export to Image
 __RadSparkline__ supports exporting to image out of the box. This can be achieved by the __ExportToImage__ method. This method allows to export the image directly to an file or a stream. You an specify the image size as well.
 
-# Example 1: Export to a File
+#### Example 1: Export to a File
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=Export}} 
 {{source=..\SamplesVB\Sparkline\SparklineCode.vb region=Export}}
