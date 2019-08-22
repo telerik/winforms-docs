@@ -26,6 +26,35 @@ To bind the series you need to set theValueMember property. The following exampl
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=Bind}} 
 {{source=..\SamplesVB\Sparkline\SparklineCode.vb region=Bind}}
+````C#
+oTable
+        DataTable table;
+        public void AddBoundSeries()
+        {
+            table = new DataTable();
+            table.Columns.Add("Value", typeof(double));
+            table.Rows.Add(1);
+            table.Rows.Add(-3);
+            table.Rows.Add(5);
+            table.Rows.Add(1);
+            table.Rows.Add(6);
+            table.Rows.Add(-1);
+            table.Rows.Add(3);
+            table.Rows.Add(-5);
+            table.Rows.Add(1);
+            table.Rows.Add(6);
+            SparkLineSeries lineSeries = new SparkLineSeries();
+            lineSeries.ValueMember = "Value";
+            lineSeries.DataSource = table;
+            lineSeries.ShowMarkers = true;
+            lineSeries.ShowHighPointIndicator = true;
+            lineSeries.ShowLowPointIndicator = true;
+            radSparkline1.Series = lineSeries;
+        }
+
+````
+````VB.NET
+````
  
 
 {{endregion}} 

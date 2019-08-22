@@ -1172,9 +1172,18 @@ navigation:
     controls/sparkline:
         title: SparkLine
         position: 445
+    controls/sparkline/populating-with-data:
+        title: Populating with Data
+        position: 4
     controls/sparkline/series:
         title: Series
         position: 5
+    controls/sparkline/features:
+        title: Features
+        position: 6
+    controls/sparkline/customizing-appearance:
+        title: Customizing Appearance
+        position: 7
     controls/spellchecker:
         title: SpellChecker
         position: 450

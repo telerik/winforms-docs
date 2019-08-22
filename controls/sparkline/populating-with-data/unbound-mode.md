@@ -14,10 +14,51 @@ When using the unbound mode you need to create the series and manually add data 
 
 #### Create series manually
 
-#### Create SparkBarSeries
-
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=Unbound}} 
 {{source=..\SamplesVB\Sparkline\SparklineCode.vb region=Unbound}}
+````C#
+var barSeries = new SparkBarSeries();
+barSeries.DataPoints.Add(new CategoricalSparkDataPoint(13));
+barSeries.DataPoints.Add(new CategoricalSparkDataPoint(20));
+barSeries.DataPoints.Add(new CategoricalSparkDataPoint(15));
+barSeries.DataPoints.Add(new CategoricalSparkDataPoint(-5));
+barSeries.DataPoints.Add(new CategoricalSparkDataPoint(29));
+barSeries.DataPoints.Add(new CategoricalSparkDataPoint(8));
+barSeries.DataPoints.Add(new CategoricalSparkDataPoint(-22));
+barSeries.DataPoints.Add(new CategoricalSparkDataPoint(22));
+barSeries.DataPoints.Add(new CategoricalSparkDataPoint(12));
+barSeries.ShowHighPointIndicator = true;
+barSeries.ShowLowPointIndicator = true;
+barSeries.ShowFirstPointIndicator = true;
+barSeries.ShowLastPointIndicator = true;
+barSeries.ShowNegativePointIndicators = true;
+ 
+this.radSparkline1.ShowAxis = true;
+this.radSparkline1.AxisDrawMode = AxisDrawMode.AboveSeries;
+this.radSparkline1.Series = barSeries;
+
+````
+````VB.NET
+Dim barSeries = New SparkBarSeries()
+barSeries.DataPoints.Add(New CategoricalSparkDataPoint(13))
+barSeries.DataPoints.Add(New CategoricalSparkDataPoint(20))
+barSeries.DataPoints.Add(New CategoricalSparkDataPoint(15))
+barSeries.DataPoints.Add(New CategoricalSparkDataPoint(-5))
+barSeries.DataPoints.Add(New CategoricalSparkDataPoint(29))
+barSeries.DataPoints.Add(New CategoricalSparkDataPoint(8))
+barSeries.DataPoints.Add(New CategoricalSparkDataPoint(-22))
+barSeries.DataPoints.Add(New CategoricalSparkDataPoint(22))
+barSeries.DataPoints.Add(New CategoricalSparkDataPoint(12))
+barSeries.ShowHighPointIndicator = True
+barSeries.ShowLowPointIndicator = True
+barSeries.ShowFirstPointIndicator = True
+barSeries.ShowLastPointIndicator = True
+barSeries.ShowNegativePointIndicators = True
+Me.radSparkline1.ShowAxis = True
+Me.radSparkline1.AxisDrawMode = AxisDrawMode.AboveSeries
+Me.radSparkline1.Series = barSeries
+
+````
  
 
 {{endregion}}
@@ -25,3 +66,6 @@ When using the unbound mode you need to create the series and manually add data 
 You can see the result in the following image.
 
  ![](images/sparkline-unbound-mode001.png)
+
+
+ 

@@ -36,6 +36,45 @@ Here is how the GridLine annotation looks like.
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=GridLineAnnotation}} 
 {{source=..\SamplesVB\Sparkline\SparklineCode.vb region=GridLineAnnotation}}
+````C#
+public void AddGridLineAnnotation()
+{
+    CartesianSparkGridLineAnnotation annotation1 = new CartesianSparkGridLineAnnotation();
+    annotation1.Axis = this.radSparkline1.Axes[1] as SparkCartesianAxis;
+    annotation1.Value = 3;
+    annotation1.BorderColor = Color.Red;
+    annotation1.BorderDashStyle = DashStyle.Solid;
+    annotation1.BorderWidth = 1;
+    this.radSparkline1.Annotations.Add(annotation1);
+    CartesianSparkGridLineAnnotation annotation2 = new CartesianSparkGridLineAnnotation();
+    annotation2.Axis = this.radSparkline1.Axes[0] as SparkCartesianAxis;
+    annotation2.Value = "Test";
+    annotation2.BorderColor = Color.Blue;
+    annotation2.BorderDashStyle = DashStyle.Solid;
+    annotation2.BorderWidth = 1;
+    this.radSparkline1.Annotations.Add(annotation2);
+}
+
+````
+````VB.NET
+Public Sub AddGridLineAnnotation()
+    Dim annotation1 As New CartesianSparkGridLineAnnotation()
+    annotation1.Axis = TryCast(Me.radSparkline1.Axes(1), SparkCartesianAxis)
+    annotation1.Value = 3
+    annotation1.BorderColor = Color.Red
+    annotation1.BorderDashStyle = DashStyle.Solid
+    annotation1.BorderWidth = 1
+    Me.radSparkline1.Annotations.Add(annotation1)
+    Dim annotation2 As New CartesianSparkGridLineAnnotation()
+    annotation2.Axis = TryCast(Me.radSparkline1.Axes(0), SparkCartesianAxis)
+    annotation2.Value = "Test"
+    annotation2.BorderColor = Color.Blue
+    annotation2.BorderDashStyle = DashStyle.Solid
+    annotation2.BorderWidth = 1
+    Me.radSparkline1.Annotations.Add(annotation2)
+End Sub
+
+````
  
 
 {{endregion}} 
@@ -65,6 +104,33 @@ Here is how the Plot Band annotation looks like.
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=PlotBandAnnotation}} 
 {{source=..\SamplesVB\Sparkline\SparklineCode.vb region=PlotBandAnnotation}}
+````C#
+public void AddPlotBandAnottation()
+{
+    CartesianSparkPlotBandAnnotation annotation1 = new CartesianSparkPlotBandAnnotation();
+    annotation1.Axis = this.radSparkline1.Axes[1] as SparkCartesianAxis;
+    annotation1.From = -2;
+    annotation1.To = 2;
+    annotation1.BackColor = Color.FromArgb(100, Color.LightBlue);
+    annotation1.BorderColor = Color.Black;
+    annotation1.BorderWidth = 1;
+    this.radSparkline1.Annotations.Add(annotation1);
+}
+
+````
+````VB.NET
+Public Sub AddPlotBandAnottation()
+    Dim annotation1 As New CartesianSparkPlotBandAnnotation()
+    annotation1.Axis = TryCast(Me.radSparkline1.Axes(1), SparkCartesianAxis)
+    annotation1.From = -2
+    annotation1.To = 2
+    annotation1.BackColor = Color.FromArgb(100, Color.LightBlue)
+    annotation1.BorderColor = Color.Black
+    annotation1.BorderWidth = 1
+    Me.radSparkline1.Annotations.Add(annotation1)
+End Sub
+
+````
  
 
 {{endregion}} 
