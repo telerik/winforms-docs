@@ -39,43 +39,121 @@ If you **do not have a project**, run the [Create Project Wizard]({% slug winfor
 This will also automatically add 3 of the most common Telerik dll references - **Telerik.WinControls, Telerik.WinControls.UI and Telerik.Common**.
 		
 ## Add Telerik Control to a Form
-The final step is to add a Telerik control to your application.
+The final step is to add a Telerik control to your application. As an example we will use a [RadGridView]({% slug winforms/gridview/getting-started %}) control with auto generated coumns.
 
-1. **Add a Telerik control** to a form. As an example we will use a [RadDropDownButton]({% slug winforms/buttons/dropdownbutton/getting-started %}) control.
+We will add the __RadGridView__ control from the Toolbox. To do that simply search for __RadGridView__ in the __Toolbox__ and drag it to the surface of the form designer. If you do not see the Toolbox, go to View > Toolbox. Using this method will also automatically add any missing dlls to your project.
 
-To programmatically add a __RadDropDownButton__ to a form, create a new instance of a __RadDropDownButton__, and add it to the form __Controls__ collection.
+>caption Figure 3: Add RadGridView from the Toolbox
 
-#### Adding a RadDropDownButton at runtime 
+![Add RadGridView control from the toolbox](images/add-radgridview01.gif)
+
+#### Binding to Lists of Objects
+The example below defines a MyObject class containing one integer and two string properties. The next set of code snippets "Creating an List of Objects" creates an array of MyObjects, initializes the array and assigns the array to the DataSource. The MyObject class would typically be placed in its own separate class file and the List creation, initialization and assignment code might be placed at the bottom of the form's Load event handler. 
 
 ````C#
-RadDropDownButton radDropDownButton = new RadDropDownButton();
-radDropDownButton.Text = "Fruits";
-RadMenuItem item1 = new RadMenuItem("Orange");
-radDropDownButton.Items.Add(item1);
-RadMenuItem item2 = new RadMenuItem("Lemon");
-radDropDownButton.Items.Add(item2);
-RadMenuItem item3 = new RadMenuItem("Banana");
-radDropDownButton.Items.Add(item3);
-this.Controls.Add(radDropDownButton);
+public class MyObject
+    {
+        private int id;
+        private string items;
+        private string serial;
+        
+		public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        public string Items
+        {
+            get { return items; }
+            set { items = value; }
+        }
+        public string Serial
+        {
+            get { return serial; }
+            set { serial = value; }
+        }
+        public MyObject()
+        {
 
+        }
+    }
 ````
 ````VB.NET
-Dim radDropDownButton As New RadDropDownButton()
-radDropDownButton.Text = "Fruits"
-Dim item1 As New RadMenuItem("Orange")
-radDropDownButton.Items.Add(item1)
-Dim item2 As New RadMenuItem("Lemon")
-radDropDownButton.Items.Add(item2)
-Dim item3 As New RadMenuItem("Banana")
-radDropDownButton.Items.Add(item3)
-Me.Controls.Add(radDropDownButton)
+Public Class MyObject
+    Private id As Integer
+    Private items As String
+    Private serial As String
 
+    Public Property ID As Integer
+        Get
+            Return id
+        End Get
+        Set(ByVal value As Integer)
+            id = value
+        End Set
+    End Property
+
+    Public Property Items As String
+        Get
+            Return items
+        End Get
+        Set(ByVal value As String)
+            items = value
+        End Set
+    End Property
+
+    Public Property Serial As String
+        Get
+            Return serial
+        End Get
+        Set(ByVal value As String)
+            serial = value
+        End Set
+    End Property
+
+    Public Sub New()
+    End Sub
+End Class
 ````
 
-![buttons-dropdownbutton-overview 001](images/buttons-dropdownbutton-overview001.png)
+````C#
+List<MyObject> myList = new List<MyObject>();
+myList.Add(new MyObject() { ID = 1, Items = "Monitor", Serial = Guid.NewGuid().ToString() });
+myList.Add(new MyObject() { ID = 2, Items = "Keyboard", Serial = Guid.NewGuid().ToString() });
+myList.Add(new MyObject() { ID = 3, Items = "Mouse", Serial = Guid.NewGuid().ToString() });
+myList.Add(new MyObject() { ID = 4, Items = "System Unit", Serial = Guid.NewGuid().ToString() });
+radGridView1.DataSource = myList;
+radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
+````
+````VB.NET
+Dim myList As List(Of MyObject) = New List(Of MyObject)()
+myList.Add(New MyObject() With {
+        .ID = 1,
+        .Items = "Monitor",
+        .Serial = Guid.NewGuid().ToString()
+})
+myList.Add(New MyObject() With {
+        .ID = 2,
+        .Items = "Keyboard",
+        .Serial = Guid.NewGuid().ToString()
+})
+myList.Add(New MyObject() With {
+        .ID = 3,
+        .Items = "Mouse",
+        .Serial = Guid.NewGuid().ToString()
+})
+myList.Add(New MyObject() With {
+        .ID = 4,
+        .Items = "System Unit",
+        .Serial = Guid.NewGuid().ToString()
+})
+radGridView1.DataSource = myList
+radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
+````
 
-> You can also add a __RadDropDownButton__ control from the Toolbox. To do that simply drag it from the toolbox to the surface of the form designer. If you do not see the Toolbox, go to **View** > **Toolbox**.
-Using this method will also add automatically any missing dlls to your project.
+> For this example we also need to ensure we have reference for __System__; __System.Collections.Generic__ and __Telerik.WinControls.UI__ dlls in the RadForm1.Designer.cs.
+
+![buttons-dropdownbutton-overview 001](images/gridview-overview.png)
 
 ## Next Steps
 
