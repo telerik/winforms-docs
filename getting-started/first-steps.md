@@ -13,7 +13,7 @@ This article explains how to get the Telerik UI for WinForms controls in your pr
 The process consists of the following steps:
 
 1. [Download the Controls](#download-the-controls)
-1. [Add the Controls to Your Project](#add-the-controls-to-your-project)
+1. [Create a new WinForms Telerik Project](#create-a-new-winforms-telerik-project)
 1. [Add Telerik Control to a Form](#add-telerik-control-to-a-form)
 
 Once you have your first simple control up and running, take a look at the [next steps](#next-steps) section to start exploring the control functionality in more detail.
@@ -29,77 +29,140 @@ The easiest way to get the controls to your development machine is to use the [P
 
 >tip The following article provides step-by-step instructions how to install Telerik UI for WinForms on your computer: [Installing UI for WinForms](http://docs.telerik.com/devtools/winforms/installation-deployment-and-distribution/installing-on-your-computer)
 
-## Add the Controls to Your Project
+## Create a new WinForms Telerik Project
+If you **do not have a project**, run the [Create Project Wizard]({% slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation %}).
 
-The easiest way to get the Telerik UI for WinForms controls in your project is to:
+>caption Figure 2: Go to Telerik > UI for WinForms > Create new Telerik Project
 
-1. Install the [Telerik WinForms Visual Studio Extensions](https://marketplace.visualstudio.com/items?itemName=TelerikInc.TelerikWinFormsVSExtensions) or open Visual Studio and go to **Tools** > **Extensions and Updates** >  **search** the **Online** Visual Studio Marketplace for "**telerik winforms vsextensions**". If you are running Visual Studion 2019 you will need to go to **Extentions** > **Manage Extensions**.
+![Run Create Project Wizard](images/installation-deployment-and-distribution-vsx-overview001.png "Run Create Project Wizard")
 
-    Make sure that you restart VS to allow it to install the extensions.
-
-    >caption Figure 2: Get the Telerik WinForms VS Extensions
-
-    ![Install Telerik WinForms VS Extensions](images/get-vs-extensions.png "Install Telerik WinForms VS Extensions")
-
-1. Reference the controls in your project:
-
-    * If you **do not have a project**, run the [Create Project Wizard]({% slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation %}).
-
-        >caption Figure 4: Go to Telerik > UI for WinForms > Create new Telerik Project
-
-        ![Run Create Project Wizard](images/installation-deployment-and-distribution-vsx-overview001.png "Run Create Project Wizard")
-
-	* If you already **have a WebForms project**, run the [Convert Project Wizard]({% slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-convert %}).
-    
-        >caption Figure 3: Start with going to Telerik > UI for WinForms > Add Reference
-
-        ![Add Reference](images/installation-deployment-and-distribution-vsx-overview002.png "Add Reference")
+This will also automatically add 3 of the most common Telerik dll references - **Telerik.WinControls, Telerik.WinControls.UI and Telerik.Common**.
 		
 ## Add Telerik Control to a Form
+The final step is to add a Telerik control to your application. As an example we will use a [RadGridView]({% slug winforms/gridview/getting-started %}) control with auto generated coumns.
 
-The final step is to add a Telerik control to your application.
+We will add the __RadGridView__ control from the Toolbox. To do that simply search for __RadGridView__ in the __Toolbox__ and drag it to the surface of the form designer. If you do not see the Toolbox, go to View > Toolbox. Using this method will also automatically add any missing dlls to your project.
 
-1. **Add a Telerik control** to a form. As an example we will use a [RadDropDownButton]({% slug winforms/buttons/dropdownbutton/getting-started %}) control.
+>caption Figure 3: Add RadGridView from the Toolbox
 
-To programmatically add a __RadDropDownButton__ to a form, create a new instance of a __RadDropDownButton__, and add it to the form __Controls__ collection.
+![Add RadGridView control from the toolbox](images/add-radgridview01.gif)
 
-#### Adding a RadDropDownButton at runtime 
+#### Binding to Lists of Objects
+The example below defines a MyObject class containing one integer and two string properties. The next set of code snippets "Creating an List of Objects" creates an array of MyObjects, initializes the array and assigns the array to the DataSource. The MyObject class would typically be placed in its own separate class file and the List creation, initialization and assignment code might be placed at the bottom of the form's Load event handler. 
 
 ````C#
-RadDropDownButton radDropDownButton = new RadDropDownButton();
-radDropDownButton1.Text = "Fruits";
-RadMenuItem item1 = new RadMenuItem("Orange");
-radDropDownButton1.Items.Add(item1);
-RadMenuItem item2 = new RadMenuItem("Lemon");
-radDropDownButton1.Items.Add(item2);
-RadMenuItem item3 = new RadMenuItem("Banana");
-radDropDownButton1.Items.Add(item3);
-this.Controls.Add(radDropDownButton);
+public class MyObject
+    {
+        private int id;
+        private string items;
+        private string serial;
+        
+		public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        public string Items
+        {
+            get { return items; }
+            set { items = value; }
+        }
+        public string Serial
+        {
+            get { return serial; }
+            set { serial = value; }
+        }
+        public MyObject()
+        {
 
+        }
+    }
 ````
 ````VB.NET
-Dim radDropDownButton As New RadDropDownButton()
-radDropDownButton1.Text = "Fruits"
-Dim item1 As New RadMenuItem("Orange")
-radDropDownButton1.Items.Add(item1)
-Dim item2 As New RadMenuItem("Lemon")
-radDropDownButton1.Items.Add(item2)
-Dim item3 As New RadMenuItem("Banana")
-radDropDownButton1.Items.Add(item3)
-Me.Controls.Add(radDropDownButton)
+Public Class MyObject
+    Private id As Integer
+    Private items As String
+    Private serial As String
 
+    Public Property ID As Integer
+        Get
+            Return id
+        End Get
+        Set(ByVal value As Integer)
+            id = value
+        End Set
+    End Property
+
+    Public Property Items As String
+        Get
+            Return items
+        End Get
+        Set(ByVal value As String)
+            items = value
+        End Set
+    End Property
+
+    Public Property Serial As String
+        Get
+            Return serial
+        End Get
+        Set(ByVal value As String)
+            serial = value
+        End Set
+    End Property
+
+    Public Sub New()
+    End Sub
+End Class
 ````
 
-![buttons-dropdownbutton-overview 001](images/buttons-dropdownbutton-overview001.png)
+````C#
+List<MyObject> myList = new List<MyObject>();
+myList.Add(new MyObject() { ID = 1, Items = "Monitor", Serial = Guid.NewGuid().ToString() });
+myList.Add(new MyObject() { ID = 2, Items = "Keyboard", Serial = Guid.NewGuid().ToString() });
+myList.Add(new MyObject() { ID = 3, Items = "Mouse", Serial = Guid.NewGuid().ToString() });
+myList.Add(new MyObject() { ID = 4, Items = "System Unit", Serial = Guid.NewGuid().ToString() });
+radGridView1.DataSource = myList;
+radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
+````
+````VB.NET
+Dim myList As List(Of MyObject) = New List(Of MyObject)()
+myList.Add(New MyObject() With {
+        .ID = 1,
+        .Items = "Monitor",
+        .Serial = Guid.NewGuid().ToString()
+})
+myList.Add(New MyObject() With {
+        .ID = 2,
+        .Items = "Keyboard",
+        .Serial = Guid.NewGuid().ToString()
+})
+myList.Add(New MyObject() With {
+        .ID = 3,
+        .Items = "Mouse",
+        .Serial = Guid.NewGuid().ToString()
+})
+myList.Add(New MyObject() With {
+        .ID = 4,
+        .Items = "System Unit",
+        .Serial = Guid.NewGuid().ToString()
+})
+radGridView1.DataSource = myList
+radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
+````
 
-> You can also add a __RadDropDownButton__ control from the Toolbox. To do that simply drag it from the toolbox to the surface of the form designer. If you do not see the Toolbox, go to **View** > **Toolbox**
+> For this example we also need to ensure we have reference for __System__; __System.Collections.Generic__ and __Telerik.WinControls.UI__ dlls in the RadForm1.Designer.cs.
+
+>caption Figure 3: Final result should look like this:
+
+![buttons-dropdownbutton-overview 001](images/gridview-overview.png)
 
 ## Next Steps
 
 Now that you have the Telerik UI for WinForms controls running in your project, you may want to explore their features, customize their behavior or change their appearance. Below you can find guidance on getting started with such tasks:
 
 * [Explore control features]({%slug winforms/getting-started/explore-control-features%})
-* [Change control appearance]({%slug winforms/getting-started/change-control-appearance%})
+* [Preview and Change control appearance]({%slug winforms/getting-started/preview-and-change-control-appearance%})
 * [Further information]({%slug winforms/getting-started/next-steps%})
 
 ## See Also
