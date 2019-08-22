@@ -1340,6 +1340,12 @@ navigation:
     controls/webcam:
         title: WebCam
         position: 505
+    controls/webcam/features:
+        title: Features
+        position: 6
+    controls/webcam/how-to:
+        title: How To
+        position: 7
     controls/wizard:
         title: Wizard
         position: 510
