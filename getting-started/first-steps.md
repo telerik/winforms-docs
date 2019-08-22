@@ -153,7 +153,7 @@ radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
 
 > For this example we also need to ensure we have reference for __System__; __System.Collections.Generic__ and __Telerik.WinControls.UI__ dlls in the RadForm1.Designer.cs.
 
-Final result should look like this:
+>caption Figure 3: Final result should look like this:
 
 ![buttons-dropdownbutton-overview 001](images/gridview-overview.png)
 
