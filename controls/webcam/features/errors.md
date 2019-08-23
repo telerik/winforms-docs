@@ -28,6 +28,10 @@ There are few expected errors that could appear using the control:
 
 >caution **RadWebCam** can be used by a single application. Once a second application tries to access it, **CameraIsBusy** error will be shown. 
 
+* CameraErrorState.**CameraAccessDenied**: This error appears when the access to the camera is denied.
+
+	![webcam-errors 004](images/webcam-errors004.png)
+
 ## Replacing the Error Message
 
 To replace the error message use the **CameraError** event of **RadWebCam**. The **CameraErrorEventArgs** give access to an **ErrorInfo** object, which contains information about the error state and message. Use the event to replace the default message with a custom one.

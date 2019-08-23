@@ -14,8 +14,6 @@ position: 1
 
 ![webcam-snapshots 001](images/webcam-snapshots001.png)
 
-To enable video recording set the **RecordingFilePath** property of the control. This is the path to the video where the recording will be stored.
-
 #### Taking a snapshot in code
 
 {{source=..\SamplesCS\WebCam\WebCamFeatures.cs region=TakeSnapshots}} 
