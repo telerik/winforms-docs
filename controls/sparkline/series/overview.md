@@ -15,11 +15,11 @@ position: 0
 ![](images/series-overview001.png)
 
 The currently supported series are:
-* SparkAreaSeries
-* SparkBarSeries
-* SparkLineSeries
-* SparkScatterSeries
-* SparkWinLossSeries
+* [SparkAreaSeries]({%slug radsparkline-sparkareaseries%})
+* [SparkBarSeries]({%slug radsparkline-sparkbarseries%})
+* [SparkLineSeries]({%slug radsparkline-sparklineseries%})
+* [SparkScatterSeries]({%slug radsparkline-sparkscatterseries%})
+* [SparkWinLossSeries]({%slug radsparkline-sparkwinlossseries%})
 
 
 ## Common properties

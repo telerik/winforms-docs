@@ -18,14 +18,14 @@ The Sparkline control is an information graphic, which is characterized by small
 # Features
 
 * Series Types
-    * SparkAreaSeries
-    * SparkBarSeries
-    * SparkLineSeries
-    * SparkScatterSeries
-    * SparkWinLossSeries
-* Data Binding
-* Annotations
-* Indicators
-* Export To Image
-* Printing
-* Null Values Support
+    * [SparkAreaSeries]({%slug radsparkline-sparkareaseries%})
+    * [SparkBarSeries]({%slug radsparkline-sparkbarseries%})
+    * [SparkLineSeries]({%slug radsparkline-sparklineseries%})
+    * [SparkScatterSeries]({%slug radsparkline-sparkscatterseries%})
+    * [SparkWinLossSeries]({%slug radsparkline-sparkwinlossseries%})
+* [Data Binding]({%slug radsparkline-data-binding%})
+* [Annotations]({%slug radsparkline-annotations%})
+* [Indicators]({%slug radsparkline-indicators%})
+* [Export To Image]({%slug radsparkline-export-to-image%})
+* [Printing]({%slug radsparkline-printing%})
+* [Null Values Support]({%slug radsparkline-null-values%})
