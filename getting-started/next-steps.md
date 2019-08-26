@@ -16,7 +16,7 @@ If you are just getting started, you can find guidance in the following articles
 
 * [First Steps]({% slug winforms/getting-started/first-steps %})
 * [Explore control features]({% slug winforms/getting-started/explore-control-features %})
-* [Preview and Change control appearance]({%slug winforms/getting-started/preview-and-change-control-appearance%})
+* [Change control appearance]({%slug winforms/getting-started/change-control-appearance%})
 
 ### More Learning Resources
 
@@ -40,7 +40,7 @@ Appearance
 * [Custom Shape Editor]({% slug winforms/tools/shapeeditor %})
 
 Additional Tools and Resources
-* [WinForms SDK](https://github.com/telerik/winforms-sdk)
+* [Theme Manager]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource%})
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
 * [Control Spy]({%slug winforms/tools/controlspy%})
 * [Cloud Integration]({%slug cloud-services/overview%})

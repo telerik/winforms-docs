@@ -19,7 +19,7 @@ The WinForms converter crashes when converting a project. This happens with Visu
 
 ## Solution
 
-We have a new custom build of the converter extension. This version will work on Visual Studio 15.8 and newer. You can download it from here: [Converter Extension](https://www.telerik.com/docs/default-source/ui-for-winforms/telerik-wincontrols-converter-vspackage-vsix.zip?sfvrsn=f91dc85c_2).  
+We have a new custom build of the converter extension. This version will work on Visual Studio 15.8 and newer. You can download it form here: [Converter Extension](https://www.telerik.com/docs/default-source/ui-for-winforms/telerik-wincontrols-converter-vspackage-vsix.zip?sfvrsn=f91dc85c_2).  
 
 You need to uninstall the converter extension if it is already installed.
 

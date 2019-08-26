@@ -12,10 +12,7 @@ position: 1
 Once you have the controls [working in your project] ({%slug winforms/getting-started/first-steps%}), it's time to see what they can do. This article provides a short overview of how to get started with finding control functionality and use them.
 
 ## Demos
-To access the **Live Demos** simply click on the Windows Start button and type WinForms Demo.
-If you are not able to find the Live Demos using that approach you can also download it directly from [here](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe).
-![Explore Live Demos](images/overview.png "Explore Live Demos")
-
+To get an overview of what each control offers, the fastest approach is to go to our [Live Demos](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe).
 
 ## Explore properties and tags
 You can **explore** the available properties, events and inner tags of any control through the VS **intellisense** to get a quick glimpse of their concepts and availability.
@@ -44,7 +41,7 @@ Last, but not least, some most common tasks and configuration options are availa
 
 Below you can find guidance on changing the control appearance as well as next steps:
 
-* [Preview and Change control appearance]({% slug winforms/getting-started/preview-and-change-control-appearance %})
+* [Change control appearance]({% slug winforms/getting-started/change-control-appearance %})
 * [Further information]({% slug winforms/getting-started/next-steps %})
 
 ## See Also
