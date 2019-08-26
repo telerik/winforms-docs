@@ -14,17 +14,17 @@ res_type: kb
 |Product Version|Product|Author|
 |----|----|----|
 |2019.2.618|RadGridView for WinForms|[Nadya Karaivanova]|
- 
+
 
 ## Description
 
-A common requirement is to copy selected cell value or to copy selected row value in **RadGridView**. This article shows how to achieve this funcionality in custom context menu, so when Right click in the **RadGridView**, the context menu opens and you have copy cell/row functionality implemented. After selecting one of these, you can paste the content anywhere you need to (in Notepad or Excel for example).
+A common requirement is to copy the selected cell value or to copy the selected row value in **RadGridView**. This article shows how to achieve this funcionality in a custom context menu, so when right click in the **RadGridView**, the context menu opens, and you have copy cell/row functionality implemented. After selecting one of these, you can paste the content anywhere you need to (in Notepad or Excel, for example).
 
 ![radgridview-copy-cell-row](images/radgridview-copy-cell-row.gif)
 
 ## Solution 
 
-In order to achieve this functionality you should create a [custom context menu]({%slug winforms/gridview/context-menus/custom-context-menus%}) in the **RadGridView** and add two **RadMenuItems**. Once the menu object has been initialized and populated with menu items, it is ready to be attached to the RadGridView. To do that, you should subscribe to the **ContextMenuOpening** event and set the custom context menu to be displayed instead of the default one.
+To achieve this functionality, you should create a [custom context menu]({%slug winforms/gridview/context-menus/custom-context-menus%}) in **RadGridView** and add two **RadMenuItems**. Once the menu object has been initialized and populated with menu items, it is ready to be attached to the **RadGridView**. To do that, you should subscribe to the **ContextMenuOpening** event and set the custom context menu to be displayed instead of the default one.
 
 ####  Setup the Context Menu
 
@@ -48,9 +48,8 @@ In order to achieve this functionality you should create a [custom context menu]
  private void RadGridView1_ContextMenuOpening(object sender, ContextMenuOpeningEventArgs e)
  {
      e.ContextMenu = contextMenu.DropDown;
- }
-                
-       
+ }          
+
 ````
 ````VB.NET
 Private contextMenu As RadContextMenu
@@ -73,11 +72,11 @@ End Sub
     
 ````
 
-Thanks to the build-in [Copy/Paste functionality]({%slug winforms/controls/gridview/copy-paste-cut%}) which **RadGridView** supports, you are allowed to store text in the Clipboard and then paste it in a different location. **RadGridView** copies the selected data considering the **SelectionMode**. If the **SelectionMode** property is set to *FullRowSelect*, the entire row will be copied. If it is set to *CellSelect* only the selected cell will be copied. 
+Thanks to the build-in [Copy/Paste functionality]({%slug winforms/controls/gridview/copy-paste-cut%}) which **RadGridView** supports, you can store the text in the Clipboard and then paste it in a different location. **RadGridView** copies the selected data considering the **SelectionMode**. If the **SelectionMode** property is set to *FullRowSelect*, the entire row will be copied. If it is set to *CellSelect* only the selected cell will be copied. 
 
-In the **CopyCellItem_Click** event you should first store the **GridViewSelectionMode**, set the **SelectionMode** property to *CellSelect*, execute the **Copy** method and then restore the SelectionMode. 
+In the *CopyCellItem_Click* event handler you should first store the **GridViewSelectionMode**, set the **SelectionMode** to *CellSelect*, execute the **Copy** method, and then restore the **SelectionMode**. 
 
-In the **CopyRowItem_Click** event you should do the same, but set the **SelectionMode** property to *FullRowSelect*. Here is the code snippet:
+In the *CopyRowItem_Click* event handler you should do the same, but set the **SelectionMode** to *FullRowSelect*. Here is the code snippet:
 
 ####  Copy cell/row functionality
 
@@ -102,7 +101,7 @@ private void CopyRowItem_Click(object sender, EventArgs e)
     this.radGridView1.SelectionMode = selecionMode;
     this.radGridView1.CurrentRow.IsSelected = true; 
 }
-     
+
 ````
 ````VB.NET
 Private Sub CopyCellItem_Click(ByVal sender As Object, ByVal e As EventArgs)
