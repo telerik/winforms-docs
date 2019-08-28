@@ -16,9 +16,7 @@ The process consists of the following steps:
   - [Download the Controls](#download-the-controls)
   - [Create a new WinForms Telerik Project](#create-a-new-winforms-telerik-project)
   - [Add Telerik Control to a Form](#add-telerik-control-to-a-form)
-      - [Binding to Lists of Objects](#binding-to-lists-of-objects)
   - [Next Steps](#next-steps)
-  - [See Also](#see-also)
 
 Once you have your first simple control up and running, take a look at the [next steps](#next-steps) section to start exploring the control functionality in more detail.
 
