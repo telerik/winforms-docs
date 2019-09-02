@@ -24,7 +24,7 @@ position: 0
 
 * **Camera settings support**: Allows you to control the settings of the connected camera.
 
-* **Support for audio**
+* **Support for audio**: Allows recording audio along with recording the video.
  
 
 ## See Also
