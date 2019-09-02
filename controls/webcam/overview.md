@@ -21,6 +21,10 @@ position: 0
 * **Snapshot support**: You can take a snapshot of the current moment of the camera stream, and save it for later. [Read more]({%slug webcam-snapshots%})
 
 * **Errors handling**: You can customize the content shown when there is no camera or the camera is unavailable using the **CameraError** event. Read more about this in the [Errors]({%slug webcam-errors%}) article.
+
+* **Camera settings support**: Allows you to control the settings of the connected camera.
+
+* **Support for audio**
  
 
 ## See Also

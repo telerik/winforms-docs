@@ -34,7 +34,6 @@ Similar to **RadTreeView**, **RadBreadCrumb** can also be bound to a collection 
         {
             InitializeComponent();
 
-            this.radBreadCrumb1.BreadCrumbElement.DefaultTreeViewElement.BindingContext = new BindingContext();
             this.radBreadCrumb1.DisplayMember = "name";
             this.radBreadCrumb1.ParentMember = "pid";
             this.radBreadCrumb1.ChildMember = "id";
@@ -111,7 +110,6 @@ Similar to **RadTreeView**, **RadBreadCrumb** can also be bound to a collection 
 ````VB.NET
     Public Sub New()
         InitializeComponent()
-        Me.radBreadCrumb1.BreadCrumbElement.DefaultTreeViewElement.BindingContext = New BindingContext()
         Me.radBreadCrumb1.DisplayMember = "name"
         Me.radBreadCrumb1.ParentMember = "pid"
         Me.radBreadCrumb1.ChildMember = "id"
@@ -176,6 +174,8 @@ Similar to **RadTreeView**, **RadBreadCrumb** can also be bound to a collection 
 >caption RadBreadCrumb used as a standalone control
 
 ![breadcrumb-getting-started 003](images/breadcrumb-getting-started003.png) 
+
+>important Please avoid using the character set as a PathSeparator in the Header of the items, because this can lead to an unexpected behavior when you try to expand a path. Also, keep in mind that the '**&#92;**' character is the default **PathSeparator**.
 
 ## See Also
 * [Structure]({%slug breadcrumb-structure%})  

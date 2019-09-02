@@ -1346,9 +1346,12 @@ navigation:
     controls/webcam/features:
         title: Features
         position: 6
+    controls/webcam/localization:
+        title: Localization
+        position: 7
     controls/webcam/how-to:
         title: How To
-        position: 7
+        position: 8
     controls/wizard:
         title: Wizard
         position: 510

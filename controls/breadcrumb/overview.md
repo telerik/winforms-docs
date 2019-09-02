@@ -20,7 +20,7 @@ As of **R3 2019** Telerik UI for WinForms suite offers an improved **RadBreadCru
 
 * **Text editing and Parse mechanism** – this will allow the users to manually type/edit/paste the path to the desired node and when edit mode ends the parse logic will convert the input text to a valid selected node. 
 
-	>important The default **PathSeparator** is **'&#92;'**.
+	>important The default **PathSeparator** is '**&#92;**'.
 
 * **AutoComplete** – this will allow auto completion when the user types.
 
@@ -37,7 +37,6 @@ As of **R3 2019** Telerik UI for WinForms suite offers an improved **RadBreadCru
 * **Custom items/favorites** – this will give the users an option to add custom/default items with associated path(**RadTreeNode**) allowing fast navigation to a set of predefined places. 
 
 * **Multiple root nodes** - this allows users to choose between the different root nodes in the tree view. 
-* 
 
 ## See Also
 * [Structure]({%slug breadcrumb-structure%}) 
