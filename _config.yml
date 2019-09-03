@@ -277,6 +277,9 @@ navigation:
     controls/chat/localization:
         title: Localization
         position: 8
+    controls/chat/how-to:
+        title: How-To
+        position: 9
     controls/checkedlistbox:
         title: CheckedListBox
         position: 130
