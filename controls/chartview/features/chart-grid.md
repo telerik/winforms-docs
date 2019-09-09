@@ -82,6 +82,8 @@ The essential properties of CartesianGrid are the following:
 
 * __AlternatingBackColor2:__ The property sets the color of the fill of the alternating horizontal sectors. The property takes effect only when the AlternatingHorizontalColor and DrawHorizontalFills properties are set to true.
 
+* __BorderWidth:__ The property sets the width of the grid lines. 
+
 ## Polar Grid 
 
 {{source=..\SamplesCS\ChartView\ChartGrid.cs region=polar}} 

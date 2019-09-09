@@ -11,9 +11,10 @@ previous_url: treeview-breadcrumb
 
 # Breadcrumb
 
-__RadBreadCrumb__ control is specifically designed to help users with __RadTreeView__ navigation. Breadcrumbs are most appropriate when your data has a deep hierarchical structure with many levels. When you select a node in __RadTreeView__  the breadcrumb component will show the path to the node as a sequence of drop down buttons. It will also allow you to navigate in the tree view by selecting specific item. 
+[RadBreadCrumb]({%slug breadcrumb-overview%}) control is specifically designed to help users with __RadTreeView__ navigation. Breadcrumbs are most appropriate when your data has a deep hierarchical structure with many levels. When you select a node in __RadTreeView__  the breadcrumb component will show the path to the node as a sequence of drop down buttons. It will also allow you to navigate in the tree view by selecting specific item. 
 
 >caption Figure 1: BreadCrumb Drop-down 
+
 ![treeview-breadcrumb 003](images/treeview-breadcrumb003.png)
 
 Use __DefaultTreeView__ property of __RadBreadCrumb__ to associate the bread crumb with an instance of __RadTreeView__. 
@@ -37,6 +38,7 @@ Me.RadBreadCrumb1.DefaultTreeView = Me.RadTreeView1
 The **SelectTreeNodeOnClick** property determines whether the nodes in the tree will be selected upon clicking on the action part of the split buttons in the breadcrumb. By default the property is set to *false*.
 
 >caption Figure 2: Selecting Nodes
+
 ![treeview-breadcrumb 004](images/treeview-breadcrumb004.gif)
 
 {{source=..\SamplesCS\TreeView\BreadCrumb.cs region=SelectingNodes}} 
@@ -49,12 +51,12 @@ this.radBreadCrumb1.SelectTreeNodeOnClick = true;
 Me.RadBreadCrumb1.SelectTreeNodeOnClick = True
 
 ```` 
-
-
-
+ 
 {{endregion}}
 
 # See Also
+* [RadBreadCrumb]({%slug breadcrumb-overview%})
+
 * [Getting Started]({%slug winforms/treeview/getting-started%})
 
 * [Properties, Methods and Events]({%slug winforms/treeview/properties-methods-events%})

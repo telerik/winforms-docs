@@ -5,7 +5,7 @@ description: File Dialogs represent the three most commonly used file and folder
 slug: winforms/file-dialogs/features/filtering
 tags: filedialogs, features, error
 published: True
-position: 2 
+position: 4 
 ---
 
 # Filtering

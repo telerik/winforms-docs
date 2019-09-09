@@ -156,7 +156,7 @@ A **ChatCardMessage** stores a message that visualizes a card element, a descend
 
 ## ChatCarouselMessage
 
-A **ChatCarouselMessage** allows adding and visualizing multiple [card elements]({%slug winforms/chat/chat-items/cards%}). You can also add different actions to the cards. 
+A **ChatCarouselMessage** allows adding and visualizing multiple [card elements]({%slug winforms/chat/chat-items/cards%}). You can also add different actions to the cards. Since R3 2019 you can use the __ShowScrollBar__ property in order to show the horizontal scrollbar.
 
 >caption Figure 5: ChatCarouselMessage
 
@@ -269,7 +269,7 @@ The **ChatOverlayMessage** can host any **BaseChatOverlay**: **ChatCalendarOverl
 
 ## ChatSuggestedActionsMessage
 
-A **ChatSuggestedActionsMessage** represents a message offering a list of **SuggestedActionDataItem** to the user. Once an action is selected, the **SuggestedActionClicked** event is fired. Then, you can choose how to proceed further, e.g. adding a message with the user's choice.
+A **ChatSuggestedActionsMessage** represents a message offering a list of **SuggestedActionDataItem** to the user. Once an action is selected, the **SuggestedActionClicked** event is fired. Then, you can choose how to proceed further, e.g. adding a message with the user's choice. Since R3 2019 you can use the __ShowScrollBar__ property in order to show the horizontal scrollbar.
 
 >caption Figure 8: ChatSuggestedActionsMessage
 

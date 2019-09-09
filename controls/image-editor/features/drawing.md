@@ -57,13 +57,21 @@ When the Draw Shape button is pressed the DrawShape dialog appears. In this dial
 
 >caption Figure 3: DrawShape Dialog
 
-![](images/image-editor-draw002.png)
+![](images/image-editor-draw005.png)
 
 Once you are ready with the settings you can draw your shape with the mouse.
 
 >caption Figure 4: Drawing Shapes
 
 ![](images/image-editor-draw003.png)
+
+The currently supported shapes are:
+* FreeFlow
+* Rectangle
+* Square
+* Ellipse
+* Circle
+* Arrow 
 
 ### Draw Shape Programmatically
 

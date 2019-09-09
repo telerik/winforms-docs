@@ -83,7 +83,7 @@ The **FileName** property can be set manually. This will change the value displa
 ````C#
 RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
 saveFileDialog.InitialDirectory = @"C:\Program Files\Internet Explorer\";
-saveFileDialog.FileName = @"C:\Program Files\Internet Explorer\F12Resources.dll";
+saveFileDialog.FileName = @"C:\Program Files\Internet Explorer\iexplore.exe";
 DialogResult dr = saveFileDialog.ShowDialog();
 
 ````
@@ -91,7 +91,7 @@ DialogResult dr = saveFileDialog.ShowDialog();
 
 Dim saveFileDialog As RadSaveFileDialog = New RadSaveFileDialog()
 saveFileDialog.InitialDirectory = "C:\Program Files\Internet Explorer\"
-saveFileDialog.FileName = "C:\Program Files\Internet Explorer\F12Resources.dll"
+saveFileDialog.FileName = "C:\Program Files\Internet Explorer\iexplore.exe"
 Dim dr As DialogResult = saveFileDialog.ShowDialog()
 
 ````

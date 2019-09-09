@@ -47,6 +47,7 @@ position: 5
 |__TopNode__|Gets the first visible tree node in the tree view.|
 |__LineColor__|Gets or sets the color of the lines connecting the nodes in the tree view.|
 |__LineStyle__|Gets or sets the line style.|
+|__LineWidth__|Gets or sets a value determining the width of the link lines.|
 |__VisibleCount__| Gets the number of tree nodes that are visible in the tree view.|
 |__Nodes__|Gets the nodes collection.|
 |__TreeIndent__|Gets or sets the indent of nodes, applied to each tree level|
