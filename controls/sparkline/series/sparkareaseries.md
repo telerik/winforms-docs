@@ -10,7 +10,7 @@ position: 1
 
 # SparkAreaSeries
 
-As a derivative of Categorical series, SparkAreaSeries plot their data points using CategoricalSparkDataPoints. Once positioned on a plane the points are connected to form a line. Further, the area enclosed by this line and the categorical axis is filled. Below is a sample snippet that demonstrates how to set up SparkAreaSeries:
+As a derivative of Categorical series, SparkAreaSeries plot their data points using __CategoricalSparkDataPoints__. Once positioned on a plane the points are connected to form a line. Further, the area enclosed by this line and the categorical axis is filled. Below is a sample snippet that demonstrates how to set up __SparkAreaSeries__:
 
 #### Create SparkAreaSeries
 
@@ -59,7 +59,7 @@ End Sub
 
 ![](images/sparkareaseries001.png)
 
-### The essential properties of SparkAreaSeries coincide with these of SparkLineSeries:
+ The essential properties of SparkAreaSeries coincide with these of SparkLineSeries:
 
 |__Property__|__Description__|
 |---|---|

@@ -10,7 +10,7 @@ position: 1
 
 # SparkScatterSeries
 
-Unlike Categorical series, ScatterSeries plots its data upon two numerical axes. Scatter series identify the position of each ScatterDataPoint using two numerical values - XValue and YValue for the horizontal and vertical axes respectively, just like in the typical Cartesian coordinate system. Here is how to create two ScatterSeries and populate them manually:
+Unlike Categorical series, ScatterSeries plots its data upon two numerical axes. Scatter series identify the position of each __ScatterDataPoint__ using two numerical values - __XValue__ and __YValue__ for the horizontal and vertical axes respectively, just like in the typical Cartesian coordinate system. Here is how to create two __SparkScatterSeries__ and populate them manually:
 
 #### Create SparkScatterSeries
 

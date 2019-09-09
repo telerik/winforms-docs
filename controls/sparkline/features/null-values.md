@@ -10,7 +10,7 @@ position: 11
 
 # Null Values Support
 
-In __RadSparkline__ the __EmptyPointBehavior__ property controls what happens with null points. the possible values are: 
+In __RadSparkline__ the __EmptyPointBehavior__ property controls what happens with null points. The possible values are: 
 * __ShowAsBlank:__ the null points would not be painted on the chart.
 * __ShowAsZero:__ the null point will be considered as 0 on the Y axis.
 

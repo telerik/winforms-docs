@@ -22,17 +22,17 @@ Common properties to the all types of annotations are:
 
 ## Grid Line Annotation
 
-Grid line annotations are lines or circles that cross the chart grid at location on the axis, specified by their Value property.
+Grid line annotations are lines or circles that cross the chart grid at location on the axis, specified by their __Value__ property.
 
 Here is how the GridLine annotation looks like.
 
 >caption Figure 1: CartesianSparkGridLineAnnotation
 
- ![](images/sparkline-annotations001.png)
+![](images/sparkline-annotations001.png)
 
- The following example shows how you can create a Grid Line annotation.
+The following example shows how you can create a Grid Line annotation.
 
- #### Add Plot Band Annotation 
+#### Add Plot Band Annotation 
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=GridLineAnnotation}} 
 {{source=..\SamplesVB\Sparkline\SparklineCode.vb region=GridLineAnnotation}}
@@ -81,9 +81,9 @@ End Sub
 
 Properties specific to the Grid Line Annotations are:
 
-* __Axis:__ The Cartesian grid line annotation needs to be associated with horizontal or vertical axis explicitly
+* __Axis:__ The Cartesian grid line annotation needs to be associated with horizontal or vertical axis explicitly.
             
-* __Value__ (of type object): The place on the associated axis where the annotation crosses it. When the associated axis is numerical (linear or logarithmic) a numeric value is expected and when it is a categorical - a category
+* __Value__ (of type object): The place on the associated axis where the annotation crosses it. When the associated axis is numerical (linear or logarithmic) a numeric value is expected and when it is a categorical - a category.
 
 * __Label:__ This property allows you to display text near the annotation and indicate what it is for.
 
@@ -96,11 +96,11 @@ Here is how the Plot Band annotation looks like.
 
 >caption Figure 2: CartesianSparkPlotBandAnnotation
 
- ![](images/sparkline-annotations002.png)
+![](images/sparkline-annotations002.png)
 
- The following example shows how you can create a Plot Band annotation.
+The following example shows how you can create a Plot Band annotation.
 
- #### Add Plot Band Annotation 
+#### Add Plot Band Annotation 
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=PlotBandAnnotation}} 
 {{source=..\SamplesVB\Sparkline\SparklineCode.vb region=PlotBandAnnotation}}

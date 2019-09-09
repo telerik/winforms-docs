@@ -20,7 +20,7 @@ You can directly bind your preferred series to your data, the currently supporte
 
 * __IBindingListView__ interface. For example BindingSource class.
 
-To bind the series you need to set theValueMember property. The following example demonstrates this.
+To bind the series you need to set the __ValueMember__ property. The following example demonstrates this.
 
 #### Bind Series to a DataTable
 

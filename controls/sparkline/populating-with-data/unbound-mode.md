@@ -10,7 +10,7 @@ position: 1
 
 # Unbound Mode
 
-When using the unbound mode you need to create the series and manually add data points. The you need to set the __Series__ property of the RadSparkline. This is demonstrated in the following example. 
+When using the unbound mode you need to create the series and manually add data points. Then you need to set the __Series__ property of the RadSparkline. This is demonstrated in the following example. 
 
 #### Create series manually
 

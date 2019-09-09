@@ -14,9 +14,9 @@ __RadSparkline__ provides you with two event that allows to style any of the pai
 * __Cancel:__ Allows you to cancel the current element painting.
 * __Graphics:__ The Graphics object that allows you to paint. 
 * __Path:__ The path of the current element. 
-* __Context__ The currently painted element.
-* __StrokePen__ The default Pen used for the current element (PaintSparkStroke event only).
-* __FillBrush__ The default Brush used for the current element (PaintSparkFill event only).
+* __Context:__ The currently painted element.
+* __StrokePen:__ The default Pen used for the current element (PaintSparkStroke event only).
+* __FillBrush:__ The default Brush used for the current element (PaintSparkFill event only).
 
 
 The following examples demonstrates how you can use the above events.

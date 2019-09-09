@@ -24,7 +24,7 @@ The following image show how the indicator look with different kind of series.
 
 ![](images/sparkline-indicators001.png)
 
-When the indicators are enabled the color of the respected point will be changed. You can customize the style of the indicators. The indicators properties are listed in the following article [Series Overview]({%slug radsparkline-series-overview%})
+When the indicators are enabled the color of the respected point will be changed. You can customize the style of the indicators. The indicators properties are listed in the following article [Series Overview]({%slug radsparkline-series-overview%}).
 
 
 The below example shows how you can customize the indicators by setting some properties. 
