@@ -11,7 +11,8 @@ position: 0
 
 # Overview
 
-The Sparkline control is an information graphic, which is characterized by small size, excellent performance, and lightweight. The Sparkline is mainly used to outline trends, however, it is very flexible in terms of data points generation and can contain from just a few points, to as many as thousands of data points.  
+The __RadSparkline__ control is lightweight chart that aims to present key information, the control is compact and provides excellent performance. __RadSparkline__ supports many features and can easily used in a grid view to summarize large amount of data.
+
 
  ![](images/sparkline-overview001.png)
 
