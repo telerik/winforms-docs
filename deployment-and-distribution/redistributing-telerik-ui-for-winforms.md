@@ -811,6 +811,8 @@ Telerik.WinControls.Themes.Windows8.dll</td></tr>
 <tr><td><b>RadOpenFileDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadOpenFolderDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadSaveFileDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadWebCam</b></td><td>Telerik.WinControls.RadWebCam.dll</td></tr>
+<tr><td><b>radSparkline</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 </table>
 
 You can find all these assemblies in the __/bin__ folder of your installation.

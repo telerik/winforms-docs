@@ -675,8 +675,7 @@ navigation:
         position: 3
     controls/gridview/columns/column-types:
         title: Column Types
-        position: 3
-     
+        position: 3     
     controls/gridview/rows:
         title: Rows
         position: 4
@@ -1179,7 +1178,7 @@ navigation:
         title: Shortcuts
         position: 440
     controls/sparkline:
-        title: SparkLine
+        title: Sparkline
         position: 445
     controls/sparkline/populating-with-data:
         title: Populating with Data
