@@ -80,3 +80,5 @@ __GridViewRatingColumn__ exposes properties that allow the user to control the b
 
 * [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

@@ -72,3 +72,5 @@ RadGridView1.MasterTemplate.Columns.Add(maskBoxColumn)
 
 * [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

@@ -120,3 +120,5 @@ Other important properties for __GridViewMultiComboBoxColumn__ are:
 
 * [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

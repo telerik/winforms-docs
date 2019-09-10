@@ -10,7 +10,7 @@ position: 0
 
 # Custom Painting
 
-__RadSparkline__ provides you with two event that allows to style any of the painted elements. The events are __PaintSparkStroke__ and __PaintSparkFill__. The events will be fired for each element and allow you to change its properties or directly paint on the sparkline surface. THe event arguments are providing the following properties:
+__RadSparkline__ provides you with two event that allows to style any of the painted elements. The events are __PaintSparkStroke__ and __PaintSparkFill__. The events will be fired for each element and allow you to change its properties or directly paint on the sparkline surface. The event arguments are providing the following properties:
 * __Cancel:__ Allows you to cancel the current element painting.
 * __Graphics:__ The Graphics object that allows you to paint. 
 * __Path:__ The path of the current element. 
@@ -21,10 +21,7 @@ __RadSparkline__ provides you with two event that allows to style any of the pai
 
 The following examples demonstrates how you can use the above events.
 
-#### Using the PaintEvents
-
- The following example shows how you can create a Plot Band annotation.
- 
+#### Using the Paint Events 
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=CustomPaint}} 
 {{source=..\SamplesVB\Sparkline\SparklineCode.vb region=CustomPaint}}

@@ -161,3 +161,5 @@ checkBoxColumn.EditMode = EditMode.OnValueChange
 
 * [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

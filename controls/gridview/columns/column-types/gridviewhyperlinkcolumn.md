@@ -103,3 +103,5 @@ Here are the __GridViewHyperlinkColumn__ specific events:
 
 * [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

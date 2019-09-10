@@ -164,3 +164,5 @@ decimalColumn.FormatString = "{0:N2}"
 
 * [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

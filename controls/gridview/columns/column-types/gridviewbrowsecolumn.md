@@ -66,3 +66,5 @@ Me.radGridView1.Rows.Add("C:\Music\Sheryl Crow\Strong Enough.wav")
 
 * [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

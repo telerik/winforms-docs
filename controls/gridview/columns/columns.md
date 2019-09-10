@@ -45,6 +45,8 @@ This chapter gives you detailed information about the RadGridView columns. The c
   
   * [GridViewMultiComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmulticomboboxcolumn%})
   
+  * [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+
   * [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%})
   
   * [GridViewRatingColumn]({%slug winforms/gridview/columns/column-types/gridviewratingcolumn%})

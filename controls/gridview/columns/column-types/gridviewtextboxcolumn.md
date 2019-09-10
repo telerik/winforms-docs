@@ -84,3 +84,5 @@ DirectCast(Me.RadGridView1.Columns(0), GridViewTextBoxColumn).ColumnCharacterCas
 
 * [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

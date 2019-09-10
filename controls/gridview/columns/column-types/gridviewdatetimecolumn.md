@@ -188,3 +188,5 @@ The __EditorType__ allows you to easily change the editor type. It could be set 
 
 * [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

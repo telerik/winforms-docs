@@ -96,3 +96,5 @@ The following article shows how you can access the buttons in the **CellFormatin
 
 * [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

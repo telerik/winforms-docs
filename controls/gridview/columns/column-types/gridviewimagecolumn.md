@@ -100,3 +100,5 @@ imageColumn.ImageAlignment = ContentAlignment.BottomRight
 
 * [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

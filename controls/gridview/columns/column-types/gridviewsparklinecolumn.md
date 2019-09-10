@@ -2,7 +2,7 @@
 title: GridViewSparklineColumn
 page_title: GridViewSparklineColumn | RadGridView
 description: GridViewSparklineColumn allows a Sparkline chart to be displayed and edited in the RadGridView
-slug: winforms/gridview/columns/column-types/gridviewdecimalcolumn
+slug: gridview-columntypes-sparklinecolumn
 tags: gridviewsparklinecolumn
 published: True
 position: 16
@@ -120,7 +120,7 @@ Dim row As GridViewRowInfo = Me.radGridView1.Rows.AddNew()
 
 ## SparkDataNeeded event
 
-**SparkDataNeeded** event can be used to populate **GridViewSparklineColumn** with data. This event can be used to dinamically populate data at run-time. It is fired right before the cell will be filled with data.
+The **SparkDataNeeded** event can be used to dinamically populate or change data at run-time. It is fired right before creating the data points inside the sparkline element in the cell.
 
 ````C#
  private void SparkLineColumn_SparkDataNeeded(object sender, SparkDataNeededEventArgs e)

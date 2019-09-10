@@ -70,3 +70,5 @@ The default editor of the **GridViewColorColumn** is __GridColorPickerEditor__ w
 
 * [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+

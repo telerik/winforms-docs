@@ -120,3 +120,5 @@ The **EditorType** value indicating how the users will edit the TimeSpan value. 
 
 * [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 
+* [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+
