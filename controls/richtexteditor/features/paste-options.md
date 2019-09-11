@@ -53,8 +53,6 @@ The **RadRichTextEditor** class exposes the **PasteSettings** property to enable
 
 In addition to enabling or disabling the functionality, the members of this class enable you to set how the paste options should behave depending on the source the content has been copied from.
 
-- **EnablePasteOptions**: This property turns the feature on and off. If you would like to stick to the legacy paste mode and disable the paste options, you can set it to `false`. With this setting, the old paste functionality which doesn't provide different options will be used and the popup in the UI will be disabled. The default value of EnablePasteOptions is `true`.
-
 - **GetDefaultPasteOptionForPasteSource(PasteSource pasteSource)**: Gets the default PasteOption which will be executed when content from a given PasteSource is pasted.
 
 - **SetDefaultPasteOptionForPasteSource(PasteSource pasteSource, PasteOption pasteOption)**: Enables you to set the default PasteOptions for a given PasteSource.

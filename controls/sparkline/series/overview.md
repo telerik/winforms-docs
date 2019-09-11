@@ -21,7 +21,7 @@ The currently supported series are:
 * [SparkScatterSeries]({%slug radsparkline-sparkscatterseries%})
 * [SparkWinLossSeries]({%slug radsparkline-sparkwinlossseries%})
 
-> note The **SparkAreaSeries**, **SparkBarSeries**, and **SparkWinLossSeries** expose the **BaselineValue** property defining a value on the vertical axis determining how the view will be divided into top and bottom halves. By default *0* is considered as the base line. The property is extremely useful in the **SparkWinLoss** series where one can define a threshold different than *0* to indicate wins and losses.   
+>note The **SparkAreaSeries**, **SparkBarSeries**, and **SparkWinLossSeries** expose the **BaselineValue** property defining a value on the vertical axis determining how the view will be divided into top and bottom halves. By default *0* is considered as the base line. The property is extremely useful in the **SparkWinLoss** series where one can define a threshold different than *0* to indicate wins and losses.   
 
 ## Common properties
 
