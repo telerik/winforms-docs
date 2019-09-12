@@ -209,8 +209,8 @@ The following example demonstrates how to use a custom grouping mechanism to gro
 
 ![gridview-grouping-custom-grouping 002](images/gridview-grouping-custom-grouping002.png)
 
-{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=usingGroupPredicate}} 
-{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=usingGroupPredicate}} 
+{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=applyPredicate}} 
+{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=applyPredicate}} 
 
 ````C#
 private object PerformGrouping(GridViewRowInfo row, int level)
