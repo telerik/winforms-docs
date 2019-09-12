@@ -167,6 +167,15 @@ pdfExporter.ReverseFooterOnEvenPages = True
 
 {{endregion}} 
 
+The __HeaderExported__ event can be used to perform custom drawing in the header. The following example shows how you can draw a two line header.
+
+#### Using the HeaderExported event
+
+{{source=..\SamplesCS\GridView\ExportingData\GridViewPdfExport.cs region=HeaderExportedEvent}} 
+{{source=..\SamplesVB\GridView\ExportingData\GridViewPdfExport.vb region=HeaderExportedEvent}} 
+
+{{endregion}} 
+
 ### Summaries export option
 
 The __SummariesExportOption__ property to specifies how to export summary items. There are four options to choose:
