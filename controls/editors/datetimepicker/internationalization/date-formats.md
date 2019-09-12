@@ -37,7 +37,7 @@ The table below shows a list of patterns that can be combined to create custo
 |----|----|
 |dd|The day of the month. Single-digit days will have a leading zero.|
 |ddd|The abbreviated name of the day of the week, as defined in AbbreviatedDayNames.|
-|M|The full name of the day of the week, as defined in DayNames.|
+|M|The month, from 1 through 12.|
 |MM|The numeric month. Single-digit months will have a leading zero.|
 |MMM|The abbreviated name of the month, as defined in AbbreviatedMonthNames.|
 |MMMM|The full name of the month, as defined in MonthNames.|
