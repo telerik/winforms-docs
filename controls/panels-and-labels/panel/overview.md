@@ -18,8 +18,8 @@ previous_url: panels-and-labels-panel-overview
 
 The screenshot above demonstrates the use of a border, border width, background with a linear gradient, and Html-like formatted text. 
 
->note Please refer to [HTML-like Text Formatting]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}) article for further details about it.
->
+Please refer to [HTML-like Text Formatting]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}) article for further details about it.
+
 
 # See Also
 
