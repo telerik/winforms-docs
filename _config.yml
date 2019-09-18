@@ -1587,6 +1587,7 @@ intro_columns:
       "Rotator": "winforms/rotator"
       "TrackBar": "winforms/track-and-status-controls/trackbar"
       "WaitingBar": "winforms/track-and-status-controls/waitingbar"
+      "WebCam": "winforms/controls/webcam/overview"
   -
     title: "Forms & Dialogs"
     items:
@@ -1690,7 +1691,7 @@ intro_columns:
       "Map": "winforms/map"
       "RadialGauge": "winforms/gauges/radialgauge"
       "RangeSelector": "winforms/rangeselector/overview"
-
+      "Sparkline": "winforms/controls/sparkline/overview"
 
 
 ## Do not edit below this line
