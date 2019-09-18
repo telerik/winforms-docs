@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview
 description: Overview
-slug: winforms/installation-deployment-and-distribution/visual-studio-extensions
+slug: winforms-installation-deployment-and-distribution-visual-studio-extensions
 tags: overview
 published: True
 position: 0
