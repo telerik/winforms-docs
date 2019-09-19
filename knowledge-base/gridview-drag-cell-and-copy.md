@@ -187,10 +187,7 @@ You can enable the multiple cell selection in **RadGridView** by setting the [Mu
         Next
     End Sub      
 
-````
-
-{{endregion}} 
-
+```` 
 
 # See Also
 
