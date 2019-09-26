@@ -277,7 +277,7 @@ Me.radBindingNavigator1.BindingSource = Me.bindingSource1
  
 ![dataentry-overview-getting-started 004](images/dataentry-overview-getting-started004.png)
 
->note **RadDataEntry** allows you to set the **DataSource** property at design time as well, e.g. to a BindingSource that is available. Thus, the respective editors will be generated inside **RadDataEntry**.
+>note **RadDataEntry** allows you to set the **DataSource** property at design time as well, e.g. to a **BindingSource** that is available. Thus, the respective editors will be generated inside **RadDataEntry**.
 
 # See Also
 
