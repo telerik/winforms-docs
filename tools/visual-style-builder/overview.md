@@ -23,6 +23,8 @@ previous_url: tools-visual-style-builder-overview
 
 * Edit the predefined themes. 
 
+>note Visual Style Builder comes with the installation of the Telerik UI for WinForms suite. It is usually located in the installation folder of the suite (e.g. "*C:\Program Files (x86)\Progress\Telerik UI for WinForms R3 2019*"). The easiest way to start it is to click the Windows button and type 'Visual Style Builder'.
+
 ## Set Properties
 
 Using Visual Style Builder you can alter, at design-time or run time, a predefined set of properties of a control. Because all Telerik controls are composed of primitives, this customization can be applied at a very fine level of detail. For example, if you are working with a **RadMenu** control you can easily change the background color used for submenu items without changing the color used for main menu items.
