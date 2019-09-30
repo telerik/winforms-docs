@@ -10,7 +10,7 @@ position: 2
 
 # Structure
 
-The below image shows the structure of RadDateTiemPicker.
+The below image shows the structure of RadDateTimePicker.
 
 >caption Figure 1: RadDateTimePicker structure.
 
