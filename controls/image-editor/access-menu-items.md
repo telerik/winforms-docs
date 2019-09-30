@@ -19,7 +19,7 @@ The following snippet shows how you can hide the top menu which contains the Ope
 ````C#
 radImageEditor1.ImageEditorElement.CommandsElement.TopCommandsStackElement.Visibility = ElementVisibility.Collapsed;
 ````
-````VBNET
+````VB.NET
 radImageEditor1.ImageEditorElement.CommandsElement.TopCommandsStackElement.Visibility = ElementVisibility.Collapsed
 ````
 
