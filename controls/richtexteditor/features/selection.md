@@ -31,8 +31,7 @@ The programmatic selection gets implemented via the __DocumentSelection__ class.
         
 Here is an example of how to select the current word.
 
->tip To learn more about the __DocumentPosition__ read the [Positioning]({%slug winforms/richtexteditor-/features/positioning%}) topic.
->
+To learn more about the __DocumentPosition__ read the [Positioning]({%slug winforms/richtexteditor-/features/positioning%}) topic.
 
 {{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=position}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=position}} 
