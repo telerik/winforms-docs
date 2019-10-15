@@ -160,6 +160,68 @@ End Sub
 
 {{endregion}} 
 
+## Binding GridViewSparklineColumn
+
+You can bind the **GridViewSparklineColumn** to any IEnumerable collection of numeric data types. To do this, you should set the **FieldName** of the **GridViewSparklineColumn** to be the same as the name of the appopriate existing column in the data source. The example below binds the grid to DataTable via the **DataSource** property. To prevent the grid from traversing all data fields in that collection, I set the **GridViewTemplate.AutoGenerateColumns** property to *False*. 
+
+````C#
+DataTable dt = new DataTable();
+dt.Columns.Add("Id",typeof(int));
+dt.Columns.Add("Name",typeof(string));
+dt.Columns.Add("Points", typeof(double[]));
+
+Random rand = new Random();
+for (int i = 0; i < 5; i++)
+{
+    double[] pointsValues = new double[12];
+    for (int j = 0; j < pointsValues.Length; j++)
+    {
+        pointsValues[j]=rand.Next(-100, 100);
+    }
+   
+    dt.Rows.Add(i,"Row"+i, pointsValues);
+}
+
+this.radGridView1.MasterTemplate.AutoGenerateColumns = false;
+this.radGridView1.DataSource = dt;
+
+GridViewSparklineColumn sparkLineColumn = new GridViewSparklineColumn("Points");
+sparkLineColumn.SeriesType = SparkSeriesType.Line;
+sparkLineColumn.FieldName = "Points";
+sparkLineColumn.HeaderText = "Points";
+this.radGridView1.Columns.Add(sparkLineColumn);
+
+````
+````VB.NET
+
+    Dim dt As DataTable = New DataTable()
+    dt.Columns.Add("Id", GetType(Integer))
+    dt.Columns.Add("Name", GetType(String))
+    dt.Columns.Add("Points", GetType(Double()))
+
+    Dim rand As Random = New Random()
+    For i As Integer = 0 To 5 - 1
+        Dim pointsValues As Double() = New Double(11) {}
+
+        For j As Integer = 0 To pointsValues.Length - 1
+            pointsValues(j) = rand.[Next](-100, 100)
+        Next
+
+        dt.Rows.Add(i, "Row" & i, pointsValues)
+    Next
+
+    Ме.RadGridView1.MasterTemplate.AutoGenerateColumns = False
+    Me.RadGridView1.DataSource = dt
+    Dim sparkLineColumn As GridViewSparklineColumn = New GridViewSparklineColumn("Points")
+    sparkLineColumn.SeriesType = SparkSeriesType.Line
+    sparkLineColumn.FieldName = "Points"
+    sparkLineColumn.HeaderText = "Points"
+    Me.RadGridView1.Columns.Add(sparkLineColumn)
+
+````
+
+{{endregion}} 
+
 
 ## Customize GridViewSparklineColumn
 
