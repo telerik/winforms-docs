@@ -1405,7 +1405,7 @@ navigation:
     telerik-presentation-framework/events:
         title: Events
         position: 6
-    ctelerik-presentation-framework/printing-support:
+    telerik-presentation-framework/printing-support:
         title: Printing Support
         position: 13
     telerik-presentation-framework/layout/predefined-layout-panels:
