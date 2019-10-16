@@ -25,7 +25,7 @@ __RadChartView__ uses Categorical axes to plot data that contains categorical va
 
 * __ClipLabels:__ This property controls whether labels will be clipped to the size of the axes (width/height). 
 
-#### Categroical Axes Setup
+#### Categоrical Axes Setup
 
 {{source=..\SamplesCS\ChartView\Axes\CategoricalAxisForm.cs region=catAxis}} 
 {{source=..\SamplesVB\ChartView\Axes\CategoricalAxisForm.vb region=catAxis}} 
