@@ -16,7 +16,7 @@ To use __XamlFormatProvider__, you should reference the **Telerik.WinControls.Ri
 	
 * __Telerik.WinForms.Documents.FormatProviders.Xaml__
 
-## Import Settings
+## Import
 In order to import a XAML document you can use the overloads of the __Import()__ method.
 
 The first example shows how to use XamlFormatProvider to import XAML document from a file.
@@ -45,7 +45,7 @@ End Using
 {{endregion}}
 
 
-## Export Settings
+## Export
 In order to export a document to XAML, you need to use the __Export()__ method of XamlFormatProvider. 
 
 This example shows how to use __XamlFormatProvider__ to export __RadDocument__ to a file.
