@@ -9,13 +9,13 @@ res_type: kb
 position: 0
 ---
 
-# Description
+## Description
 
 You need to manually scale the controls. This is needed when you are using the standard .NET form which is not scaling the Telerik UI for WinForms controls. Or you want to use the build-in scaling mechanism to enlarge the controls dynamically. 
 
-# Solution
+## Solution
 
-Use the __Scale__ method to scale the controls. You can check the current DPI settings in the code as well 
+Use the __Scale__ method to scale the controls. You can check the current DPI settings in the code as well.
 
 
 ````C#
