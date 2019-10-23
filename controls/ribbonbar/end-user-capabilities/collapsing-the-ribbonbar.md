@@ -21,6 +21,22 @@ As you resize horizontally a form containing a __RadRibbonBar__, the individual 
 
 Double-clicking the selected main tab will collapse all of the groups and hide them from view. Double-clicking the selected main tab again will display the groups again<br>![ribbonbar-end-user-capabilities-collapsing-the-ribbonbar 005](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar005.png)
 
+## Skipping the No-Text Mode
+
+The **RibbonBarElement** offers the **ItemVisiblityStateChanging** event that gives you the opportunity to control whether a certain collapsing state is allowed or not. The **ItemVisiblityStateChangingEventArgs** gives you access to the **NextVisibilityState**. The available states are:
+ * Expanded  
+ 
+ * SmallImages 
+
+ * NoText 
+ 
+ * Collapsed 
+ 
+ * ItemCollapsed 
+
+You can cancel the event if the next state is restricted. 
+ 
+
 ## See Also
 
 * [Structure]({%slug winforms/ribbonbar/structure%})
