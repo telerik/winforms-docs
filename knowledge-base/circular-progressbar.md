@@ -13,7 +13,7 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2019.2.917|RadProgressBar for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
+|2019.3.917|RadProgressBar for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
  
 ## Description
 
