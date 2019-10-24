@@ -30,6 +30,10 @@ position: 5
 |**ThumbSize**|Gets or Sets TrackBar's Size.|![track-and-status-controls-trackbar-programming-radtrackbar 021](images/track-and-status-controls-trackbar-programming-radtrackbar021.png)|
 |**ShowSlideArea**|Controls whether the line down the middle of the control where the slider rides is drawn. The default value is *true*.|![track-and-status-controls-trackbar-programming-radtrackbar 022](images/track-and-status-controls-trackbar-programming-radtrackbar022.png)|
 
+>important As of **R3 2019 SP1** **RadTrackBar** offers the **SnapFrequency** property. Its default value is *TrackBarSnapFrequency.Default* in order to keep the existing behavior unchanged. The other possible value  is *TrackBarSnapFrequency.Ticks* aiming to provide snap-to-ticks behavior if the **SnapMode** property is set to *SnapToTicks*. Thus, you can slide the thumb smoothly snapping to the small/large ticks.
+
+![trackbar-snap-to-ticks 001](images/trackbar-snap-to-ticks001.gif)
+
 # Events
 
 |Event|Description|
