@@ -34,10 +34,21 @@ Dim font = ThemeResolutionService.GetCustomFont("Roboto Medium")
 
 ```` 
 
-
-
 {{endregion}} 
 
+Telerik UI for WinForms suite offers the following custom fonts that are embedded in the Telerik.WinControls assembly and they do not need to be loaded explicitly if you want to use some of them:
+
+|.ttf file name| font name|
+|----|----|
+|Roboto-Medium|"Roboto"|
+|Roboto-Regular|"Roboto Medium"|
+|TelerikWebUI|"TelerikWebUI"|
+|WebComponentsIcons|"WebComponentsIcons"|
+|Awesome-Brands-Regular|"Font Awesome 5 Brands Regular"|
+|Awesome-Regular|"Font Awesome 5 Free Regular"|
+|Awesome-Solid|"Font Awesome 5 Free Solid"|
+
+>note The ThemeResolutionService.**GetCustomFont** method accepts a font name as a string input parameter and returns a **FontFamily** instance. Then, it can be used for creating a **Font** instance and apply it to the **Font** property of any control.
 
 2\. Use the following properties to set the font. 
 
