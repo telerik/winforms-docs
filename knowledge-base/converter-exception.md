@@ -26,3 +26,6 @@ You need to uninstall the converter extension if it is already installed.
 ![converter-exception 001](images/converter-exception001.png)
 
 Another approach is using version 15.7 where the converter is working (the converter works well with Visual Studio 2015 as well). 
+
+>note Please note that this installs only the converter extension. The main Telerik UI for WinForms extension should be installed as well. It provides the menu in Visual Studio.
+
