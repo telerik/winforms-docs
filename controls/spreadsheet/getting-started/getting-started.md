@@ -17,7 +17,7 @@ It contains the following sections:
 
 * [Assembly References](#assembly-references)
 
-* [Spreadsheet and Ribbon UI](#spreadsheet-and-ribbonview)
+* [Spreadsheet and Ribbon UI](#spreadsheet-and-ribbonbar)
 
 ## Assembly References
 
