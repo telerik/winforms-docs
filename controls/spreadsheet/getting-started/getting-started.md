@@ -44,7 +44,7 @@ To export a document to PDF, you will need to add a reference to the correspondi
 
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
 
-## Spreadsheet and RibbonView
+## Spreadsheet and RibbonBar
 
 Now add the __RadSpreadsheet__ control to the form.After that add __RadSpreadsheetRibbonBar__ to the form. Dock it to the top and then Dock the __RadSpreadsheet__ to fill the remaining space. Your layout should look like this.
 
