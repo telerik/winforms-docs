@@ -25,6 +25,8 @@ All controls that contain a **TextPrimitive** in its internal structure can spec
 * **ClearTypeGridFit**: Each character is drawn using its glyph ClearType bitmap with hinting. The highest quality setting. Used to take advantage of ClearType font features.
 
 >note [HTML-like text formatting]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}) functionality is supported only when using GDI+.
+
+
 # See Also
 
 * [GDI+](https://msdn.microsoft.com/en-us/library/windows/desktop/ms533798(v=vs.85).aspx)
