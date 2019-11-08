@@ -89,7 +89,7 @@ public class CardViewModel : INotifyPropertyChanged
             if (this.id != value)
             {
                 this.id = value;
-                OnPropertyChanged("ID");
+                OnPropertyChanged("Id");
             }
         }
     }
@@ -169,7 +169,7 @@ Public Class CardViewModel
         Set(value As String)
             If Me.m_id <> value Then
                 Me.m_id = value
-                OnPropertyChanged("ID")
+                OnPropertyChanged("Id")
             End If
         End Set
     End Property
