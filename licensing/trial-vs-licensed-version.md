@@ -24,5 +24,6 @@ There are 2 versions of the assemblies (trial and licensed). This is why to upgr
 * The following article show where you can find the licensed version: [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
 
 * To check if your current version is trial you can examine the assemblies properties.
-    ![trial-vs-licensed-version002](images/trial-vs-licensed-version002.png) 
+
+	![trial-vs-licensed-version002](images/trial-vs-licensed-version002.png) 
 
