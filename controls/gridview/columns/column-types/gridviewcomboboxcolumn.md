@@ -472,6 +472,9 @@ End Class
 
 ![gridview-columns-gridviewcomboboxcolumn 004](images/gridview-columns-gridviewcomboboxcolumn004.png)
 # See Also
+
+* [How to Filter a GridViewComboBoxColumn by DisplayMember]({%slug filter-gridviewcomboboxcolumn-by-display-member%})
+
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
 
 * [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
