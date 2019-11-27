@@ -11,12 +11,19 @@ previous_url: forms-and-dialogs-messagebox-overview
 
 # MessageBox
 
-__RadMessageBox__ displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message, such as status or error information.  You cannot create a new instance of the __RadMessageBox__ class. To display a message box, call the static method RadMessageBox.__Show__. The title, message, buttons, and icons displayed in the message box are determined by parameters that you pass to this method. 
+__RadMessageBox__ displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message, such as status or error information. To display a message box, call the static method RadMessageBox.Show. The title, message, buttons, and icons displayed in the message box are determined by [parameters]({%slug winforms/forms-and-dialogs/messagebox/parameters%}) that you pass to the [method]({%slug winforms/forms-and-dialogs/messagebox/properties-methods-events%}). 
 
 ![forms-and-dialogs-messagebox-overview 001](images/forms-and-dialogs-messagebox-overview001.png)
+
+>tip In the related [Getting Started](https://docs.telerik.com/devtools/winforms/controls/forms-and-dialogs/messagebox/getting-started) article you can find how to use the control with a sample scenario.
+
+> Download and check out the online demo at [demos.telerik.com](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe)
 
 # See Also
 
 * [Getting Started]({%slug winforms/forms-and-dialogs/messagebox/getting-started%})
 * [Structure]({%slug winforms/forms-and-dialogs/messagebox/structure%})
+* [Parameters]({%slug winforms/forms-and-dialogs/messagebox/parameters%})
+* [Properties, Methods and Events]({%slug winforms/forms-and-dialogs/messagebox/properties-methods-events%})
+* [Localization]({%slug winforms/forms-and-dialogs/messagebox/localization%})
 
