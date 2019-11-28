@@ -154,3 +154,4 @@ bingProvider.CalculateRouteAsync(viaWayPointsRequest)
 
 # See Also
 * [BingRestMapProvider]({%slug winforms/map/providers/bingrestmapprovider%})
+* [Truck Route]({%slug map-bing-truck-route%})
