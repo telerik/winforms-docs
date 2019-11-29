@@ -11,7 +11,7 @@ previous_url: radialgauge-overview
 
 # RadialGauge
 
-The __RadRadialGauge__ control is designed to display a simple value within a definite range. This range is represented in a circular format similar to car speed gauge. The circular container contains a scale in it which controls the overall layout of ticks, tick labels, needles and ranges and renders an optional scale bar.
+The __RadRadialGauge__ control is designed to display a simple value within a definite range. This range is represented in a circular format similar to car speed gauge. The circular container contains a scale in it which controls the overall layout of [ticks]({%slug winforms/gauges/radialgauge/understanding-gauge-elements/working-with-ticks%}), [tick labels]({%slug winforms/gauges/radialgauge/understanding-gauge-elements/working-with-labels%}), [needles]({%slug winforms/gauges/radialgauge/understanding-gauge-elements/working-with-needles%}) and [ranges]({%slug winforms/gauges/radialgauge/understanding-gauge-elements/working-with-arcs%}) and renders an optional scale bar.
 
 ![radialgauge-overview 001](images/radialgauge-overview001.gif)
 
@@ -23,4 +23,15 @@ The __RadRadialGauge__ control is designed to display a simple value within a de
 
 * Animation effects when the value is changed
 
-* Abundant in gauges style![radialgauge-overview 002](images/radialgauge-overview002.png)![radialgauge-overview 003](images/radialgauge-overview003.png)![radialgauge-overview 004](images/radialgauge-overview004.png)
+* Abundant in gauges style
+
+>tip In the related [Getting Started](https://docs.telerik.com/devtools/winforms/controls/gauges/radialgauge/getting-started) article you can find how to use the control with a sample scenario.
+
+> Download and check out the online demo at [demos.telerik.com](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe)
+
+# See Also
+
+* [Getting Started]({%slug winforms/gauges/radialgauge/getting-started%})
+* [Structure]({%slug winforms/gauges/radialgauge/structure%})
+* [Properties, Methods and Events]({%slug winforms/gauges/radialgauge/properties-and-events%})
+* [Save and Load layout]({%slug winforms/gauges/radialgauge/save-and-load-layout%})

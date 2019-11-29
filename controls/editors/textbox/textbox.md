@@ -11,11 +11,13 @@ previous_url: editors-textbox-overview
 
 # TextBox
 
-RadTextBox is a themeable alternative to the standard Windows Forms text box control. It allows you to include a text box in your applications that is consistent in look and feel with the other Telerik UI for WinForms controls you use. In addition, it allows the developer to set a default text to be displayed when there is no actual data in the text box. 
+__RadTextBox__ is a [themeable]({%slug winforms/editors/textbox/themes%}) alternative to the standard Windows Forms text box control. It allows you to include a text box in your applications that is consistent in look and feel with the other Telerik UI for WinForms controls you use. In addition, it allows you to set a default text to be displayed when there is no actual data in the text box. You can also use [Smart Tags]({%slug winforms/editors/textbox/designtime%}), set [Properties]({%slug winforms/editors/textbox/programming-radtextbox%}) and [Customize its Appearance]({%slug winforms/editors/textbox/customizing-appearance%}).
 
 >caption Figure: 1 RadTextBox
 
 ![editors-textbox-overview 001](images/editors-textbox-overview001.png)
+
+> Download and check out the online demo at [demos.telerik.com](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe)
 
 # See Also
 
