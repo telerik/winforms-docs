@@ -162,6 +162,7 @@ Me.RadGanttView1.Columns.Add("End")
 
 {{endregion}} 
 
+>important If you don't see the tasks, it is most probably because the graphical view is not scrolled to the tasks' date. Feel free to set the **TimelineStart** and **TimelineEnd** properties of the GanttViewElement.**GraphicalViewElement**.
 
 ![ganttview-working-with-data-data-binding-basics 001](images/ganttview-working-with-data-data-binding-basics001.png)
 
