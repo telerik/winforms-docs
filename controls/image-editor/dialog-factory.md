@@ -12,6 +12,9 @@ position: 10
 
 **RadImageEditor** uses **ImageEditorDialogFactory** to create objects that represent the dialogs. It requires only the **CreateDialog** method's implementation.
 
+>note Make sure that a reference to **Telerik.WinControls.UI.ImageEditor.Dialogs** library is included in your project.
+>
+
 This factory is very useful when you want to create a custom dialog. You just need to create a custom factory that inherits from the **ImageEditorDialogFactory** and override the **CreateDialog** method in order to customize the default look of the dialog. For example, if you want to customize the **ResizeDialog** and set the checked state of the Preserve Aspect Ratio checkbox which by default is unchecked. 
 
 ````C#
