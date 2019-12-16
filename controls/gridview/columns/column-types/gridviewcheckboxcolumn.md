@@ -142,6 +142,7 @@ checkBoxColumn.EditMode = EditMode.OnValueChange
 |**EditMode**|This property determines whether changing a value of a check box will immediately be send to the cell (OnValueChange) or when the current cell is changed or the grid is being validated (OnCellChangeOrValidating).|
 |**HeaderCheckBoxPosition**|Controls the position of the checkbox and the text, possible values are Left, Right and Center.|
 |**HeaderCheckBoxAlignmentProperty**|Controls the alignment of the checkbox to the Text.|
+|**CheckFilteredRows**|Gets or sets a value indicating if the hidden rows will be checked by the header check-box.|
 
 
 # See Also
