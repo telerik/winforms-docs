@@ -1117,6 +1117,9 @@ navigation:
     controls/richtexteditor/ui-for-applying-rich-text-formatting:
         title: UI for Applying Rich Text Formatting
         position: 7
+    controls/richtexteditor/ui-for-applying-rich-text-formatting/how-to:
+        title: How-To
+        position: 7
     controls/richtexteditor/how-to:
         title: How-To
         position: 14
