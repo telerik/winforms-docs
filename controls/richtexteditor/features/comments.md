@@ -5,7 +5,7 @@ description: RadRichTextEditor is a control that is able to display and edit ric
 slug: winforms/richtexteditor-/features/comments
 tags: comments
 published: True
-position: 9
+position: 8
 previous_url: richtexteditor-features-comments
 ---
 
