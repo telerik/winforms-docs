@@ -5,7 +5,7 @@ description: This article describes which content controls are supported in RadR
 slug: radrichtexteditor-features-content-controls
 tags: content controls, richtexteditor
 published: True
-position: 9
+position: 0
 ---
 
 # Content Controls (Structured Document Tags)

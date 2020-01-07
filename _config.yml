@@ -1078,6 +1078,9 @@ navigation:
     controls/richtexteditor/features:
         title: Features
         position: 5
+    controls/richtexteditor/features/content-controls:
+        title: Content Controls
+        position: 5
     controls/richtexteditor/features/styles:
         title: Styles
         position: 4

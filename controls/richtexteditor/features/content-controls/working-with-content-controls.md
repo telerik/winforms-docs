@@ -5,7 +5,7 @@ description: This article show you you can access the content controls in code
 slug: radrichtexteditor-features-working-with-content-controls
 tags: content controls, richtexteditor
 published: True
-position: 9
+position: 1
 ---
 
 # Working with Content Controls
