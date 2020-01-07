@@ -1078,6 +1078,9 @@ navigation:
     controls/richtexteditor/features:
         title: Features
         position: 5
+    controls/richtexteditor/features/content-controls:
+        title: Content Controls
+        position: 5
     controls/richtexteditor/features/styles:
         title: Styles
         position: 4
@@ -1351,6 +1354,12 @@ navigation:
     controls/virtualgrid/save-and-load-layout:
         title: Save and Load Layout
         position: 21
+    controls/virtual-keyboard:
+        title: Virtual Keyboard
+        position: 503 
+    controls/virtual-keyboard/customizing-appearance:
+        title: Customizing Appearance
+        position: 9 
     controls/webcam:
         title: WebCam
         position: 505

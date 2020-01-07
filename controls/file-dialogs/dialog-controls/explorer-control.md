@@ -71,6 +71,8 @@ Here are some of the key properties that the **ExplorerControl** exposes:
 
 * **ShowNetworkLocations** - Gets or sets a value indicating whether the dialog shows network computers in the navigation tree.
 
+* **ShowSystemCustomPlaces** - Gets or sets a value indicating whether the QuickAccess/Favorites items from the Windows FileExplorer will be shown as child nodes in the CustomPlacesTreeNode. Only applicable for Windows 10 and .NET 4.0
+
 ## Setting the Layout
 
 The **ExplorerControl** exposes a **LayoutType** property that determines the layout of the list with the files. This property is similar to the **InitialSelectedLayout** property of the file dialogs.
