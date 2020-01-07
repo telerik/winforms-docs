@@ -147,7 +147,9 @@ Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 
 ## Summary rows in a grouped RadGridView
 
-When you use grouping, the summary rows are calculated for each group's child rows and displayed as top or bottom pinned rows in each group. Using the template's property __ShowTotals__ you can define if total summary rows will be shown. They are calculated for the child rows of all groups and pinned at the top or bottom of all groups.
+When you use grouping, the summary rows are calculated for each group's child rows and displayed as top or bottom pinned rows in each group. Using the template's property __ShowTotals__ you can define if total summary rows will be shown. They are calculated for the child rows of all groups and pinned at the top or bottom of all groups. 
+
+As of **R1 2020** the template in **RadGridView** offers the **ShowSubTotals** property. Its value indicates whether summary rows will be shown for each group. The property is only relevant when the grid is grouped.
 
 The next example demonstrates how to use summary rows in grouping:
 
