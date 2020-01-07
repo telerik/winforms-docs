@@ -1219,6 +1219,12 @@ navigation:
     controls/spreadstreamprocessing:
         title: SpreadStreamProcessing
         position: 475
+    controls/syntax-editor:
+        title: Syntax Editor
+        position: 478
+    controls/syntax-editor/features:
+        title: Features
+        position: 6
     controls/track-and-status-controls:
         title: Track and Status controls
         position: 480
