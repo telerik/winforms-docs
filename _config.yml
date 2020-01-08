@@ -1228,6 +1228,9 @@ navigation:
     controls/syntax-editor/features:
         title: Features
         position: 6
+    controls/syntax-editor/features/taggers:
+        title: Taggers
+        position: 8
     controls/track-and-status-controls:
         title: Track and Status controls
         position: 480
