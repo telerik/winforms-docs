@@ -23,7 +23,7 @@ The folding taggers are used when you want to create collapsible (foldable) sect
 
 #### Adding FoldingRegionDefinitions
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= RegionDefinition }}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= RegionDefinition}}
 {{source=..\SamplesVB\SyntaxEditor\SyntaxEditorTaggers.vb region= RegionDefinition}}
 
 ````C#

@@ -161,7 +161,7 @@ We can then register the custom tagger in **RadSyntaxEditor**'s **TaggersRegistr
 
 #### Registering the custom tagger
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= RegisterTagger }}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= RegisterTagger}}
 {{source=..\SamplesVB\SyntaxEditor\SyntaxEditorTaggers.vb region= RegisterTagger}}
 
 ````C#

@@ -50,7 +50,7 @@ If you need to handle a key combination which is not listed above, you can do so
 
 
 {{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= Keyboard}}
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.vb region= Keyboard}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region= Keyboard}}
 
 ````C#
 private void radSyntaxEditor1_PreviewSyntaxEditorKeyDown(object sender, PreviewSyntaxEditorKeyEventArgs e)

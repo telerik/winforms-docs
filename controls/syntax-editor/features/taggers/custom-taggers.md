@@ -16,7 +16,7 @@ To demonstrate this we will create the following class which shows a tool-tip on
 
 #### Registering taggers
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= DefineCustomTagger }}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= DefineCustomTagger}}
 {{source=..\SamplesVB\SyntaxEditor\SyntaxEditorTaggers.vb region= DefineCustomTagger}}
 
 ````C#
@@ -105,7 +105,7 @@ To use the tagger you need to register it in the **TaggersRegistry** as you woul
 
 #### Using the custom tagger
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= RegisterTooltipTagger }}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= RegisterTooltipTagger}}
 {{source=..\SamplesVB\SyntaxEditor\SyntaxEditorTaggers.vb region= RegisterTooltipTagger}}
 
 ````C#
