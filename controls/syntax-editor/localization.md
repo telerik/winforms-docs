@@ -20,61 +20,22 @@ To localize **RadSyntaxEditor** to display control text and messages in a specif
 
 #### Localizing RadSyntaxEditor Strings
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLocalizing.cs region=Provider}}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLocalizing.cs region=Provider}} 
 {{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLocalizing.vb region=Provider}}
 
 ````C#
-public class EnglishRadSyntaxEditorLocalizationProvider : RadSyntaxEditorLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case RadSyntaxEditorStringId.FindTextBox: return "Find...";
-            case RadSyntaxEditorStringId.ReplaceTextBox: return "Replace...";
-            case RadSyntaxEditorStringId.FindPrevious: return "Find Previous (Shift + F3)";
-            case RadSyntaxEditorStringId.FindNext: return "Find Next (F3)";
-            case RadSyntaxEditorStringId.FindAll: return "Find All";
-            case RadSyntaxEditorStringId.Replace: return "Replace";
-            case RadSyntaxEditorStringId.ReplaceAll: return "Replace All";
-        }
-        return base.GetLocalizedString(id);
-    }
-} 
-    
+
+
 
 ````
 ````VB.NET
 
-Public Class EnglishRadSyntaxEditorLocalizationProvider
-    Inherits RadSyntaxEditorLocalizationProvider
-
-    Public Overrides Function GetLocalizedString(ByVal id As String) As String
-        Select Case id
-            Case RadSyntaxEditorStringId.FindTextBox
-                Return "Find..."
-            Case RadSyntaxEditorStringId.ReplaceTextBox
-                Return "Replace..."
-            Case RadSyntaxEditorStringId.FindPrevious
-                Return "Find Previous (Shift + F3)"
-            Case RadSyntaxEditorStringId.FindNext
-                Return "Find Next (F3)"
-            Case RadSyntaxEditorStringId.FindAll
-                Return "Find All"
-            Case RadSyntaxEditorStringId.Replace
-                Return "Replace"
-            Case RadSyntaxEditorStringId.ReplaceAll
-                Return "Replace All"
-        End Select
-
-        Return MyBase.GetLocalizedString(id)
-    End Function
-End Class
 
 
-````
+```` 
 
 {{endregion}}
+
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
