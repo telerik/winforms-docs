@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview | RadSyntaxEditor
-description:   
+description: RadSyntaxEditor is a useful text editor control which provides built-in syntax highlighting and code editing experience
 slug: syntax-editor-overview
 tags: syntax-editor
 published: True

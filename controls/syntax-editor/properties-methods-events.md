@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events | RadSyntaxEditor
-description:   
+description: RadSyntaxEditor is a useful text editor control which provides built-in syntax highlighting and code editing experience
 slug: syntax-editor-properties-methods-events
 tags: syntax-editor
 published: True
@@ -36,8 +36,8 @@ position: 3
 |----|----|
 |**EditorFontFamily**|Gets or sets a value indicating the font family of the text editor.|
 |**EditorFontStyle**|Gets or sets a value indicating the font style of the text editor.|
-|**EditorFontWeight**||
-|**EditorFontStretch**||
+|**EditorFontWeight**|Gets or sets a value indicating the font weight of the text editor.|
+|**EditorFontStretch**|Gets or sets a value indicating the font stretch of the text editor.|
 |**CaretPosition**|Gets the caret position.|
 |**EditorPresenter**|Gets the editor presenter.|
 |**FoldingManager**|Gets the folding manager.|
