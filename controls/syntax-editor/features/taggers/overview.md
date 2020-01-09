@@ -39,8 +39,8 @@ To be able to use these taggers in the **RadSyntaxEditor** control, you first ne
 
 #### Registering taggers
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= AddTaggers}}
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.vb region= AddTaggers}}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region=AddTaggers}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region=AddTaggers}}
 
 ````C#
             CSharpTagger currentLanguageTagger = new Telerik.WinForms.Controls.SyntaxEditor.Tagging.Taggers.CSharpTagger(this.radSyntaxEditor1.SyntaxEditorElement);

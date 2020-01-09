@@ -28,8 +28,8 @@ We will now create a custom layer which will be responsible for highlighting any
 
 #### Creating a custom layer
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= CustomLayer}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region= CustomLayer}}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region=CustomLayer}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region=CustomLayer}}
 
 ````C#
 public class CommentsUILayer : LineBasedUILayer<Telerik.WinForms.SyntaxEditor.Core.Tagging.ClassificationTag>
@@ -117,8 +117,8 @@ For our custom layer to be recognized by the **RadSyntaxEditor** we need to add 
 
 #### Using the custom layer in a custom layers builder
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= Builder}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region= Builder}}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region=Builder}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region=Builder}}
 
 ````C#
             
@@ -171,8 +171,8 @@ Finally, we need to set the **UILayersBuilder** to an instance of the custom lay
 
 #### Using the custom layers builder
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= Apply}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region= Apply}}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region=Apply}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region=Apply}}
 
 ````C#
             
@@ -188,8 +188,8 @@ Me.RadSyntaxEditor1.SyntaxEditorElement.UILayersBuilder = New CustomUILayersBuil
 
 Consider that we have the following taggers applied to **RadSyntaxEditor**:
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= AddTaggers}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region= AddTaggers}}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region=AddTaggers}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region=AddTaggers}}
 
 ````C#
             CSharpTagger currentLanguageTagger = new Telerik.WinForms.Controls.SyntaxEditor.Tagging.Taggers.CSharpTagger(this.radSyntaxEditor1.SyntaxEditorElement);
