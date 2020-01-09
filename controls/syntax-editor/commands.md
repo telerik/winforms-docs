@@ -5,7 +5,7 @@ description: RadSyntaxEditor is a useful text editor control which provides buil
 slug: syntax-editor-commands
 tags: syntax-editor
 published: True
-position: 4
+position: 5
 ---
 
 # Commands

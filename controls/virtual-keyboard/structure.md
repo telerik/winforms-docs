@@ -8,7 +8,7 @@ published: True
 position: 3 
 ---
 
-# RadVirtualKeyboardForm
+# Structure
 
 This article shows the inner structure and organization of the elements which build the **RadVirtualKeyboard** control.
 

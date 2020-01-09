@@ -169,7 +169,7 @@ radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
 Now that you have the Telerik UI for WinForms controls running in your project, you may want to explore their features, customize their behavior or change their appearance. Below you can find guidance on getting started with such tasks:
 
 * [Explore control features]({%slug winforms/getting-started/explore-control-features%})
-* [Preview and Change control appearance]({%slug winforms/getting-started/preview-and-change-control-appearance%})
+* [Preview and Change control appearance]({%slug winforms/getting-started/change-control-appearance%})
 * [Further information]({%slug winforms/getting-started/next-steps%})
 
 ## See Also
