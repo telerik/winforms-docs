@@ -51,7 +51,7 @@ If you want to customize the colors shown in your **RadSyntaxEditor** control, y
 
 >important It is not possible to edit the colors of the currently applied palette at run time.
 
-### Modify a Default Pallete
+### Modify a Default Palette
 
 Here is an example how to modify specific elements og the **NeutralDark** palette:
 
