@@ -422,7 +422,16 @@ $(function () {
           $('#toc a.active').parents('li').each(function (i, e) {
               $(e).addClass(active).addClass(expanded);
               $(e).children('a').addClass(active);
+              var selectedChild = $(e).children('ul').children('li.active.in');
+              var childTop = 0;
+              if (selectedChild.length) {
+                childTop = selectedChild.position().top;
+              }
+              
               top += $(e).position().top;
+              if (childTop - $(e).position().top > $('.sidetoc').height()){
+                  top += childTop;
+              }
           })
           $('.sidetoc').scrollTop(top - 50);
 
