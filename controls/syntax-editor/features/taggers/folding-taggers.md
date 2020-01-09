@@ -24,7 +24,7 @@ The folding taggers are used when you want to create collapsible (foldable) sect
 #### Adding FoldingRegionDefinitions
 
 {{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= RegionDefinition }}
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.vb region= RegionDefinition}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorTaggers.vb region= RegionDefinition}}
 
 ````C#
  public CustomFoldingTagger(Telerik.WinForms.SyntaxEditor.Core.Editor.ITextDocumentEditor editor)
@@ -53,7 +53,7 @@ In addition, you may also want to override the **BuildStartRegionBlockPattern** 
 #### Default implementation of the BuildStartRegionBlockPattern and BuildEndRegionBlockPattern methods of the VisualBasicFoldingTagger
 
 {{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= DefaultStartEndTagger }}
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.vb region= DefaultStartEndTagger}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorTaggers.vb region= DefaultStartEndTagger}}
 
 ````C#
 protected override string BuildStartRegionBlockPattern(Dictionary<string, string> startToEndMap)

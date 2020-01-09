@@ -17,7 +17,7 @@ Let's define the following class which will be responsible for classifying the w
 #### The custom tagger
 
 {{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= PythonTagger}}
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.vb region= PythonTagger}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorTaggers.vb region= PythonTagger}}
 
 ````C#
         public class PythonTagger : WordTaggerBase
@@ -162,7 +162,7 @@ We can then register the custom tagger in **RadSyntaxEditor**'s **TaggersRegistr
 #### Registering the custom tagger
 
 {{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region= RegisterTagger }}
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.vb region= RegisterTagger}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorTaggers.vb region= RegisterTagger}}
 
 ````C#
 PythonTagger pythonTagger = new PythonTagger(this.radSyntaxEditor1.SyntaxEditorElement);
