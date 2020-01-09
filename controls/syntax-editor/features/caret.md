@@ -57,7 +57,7 @@ Me.RadSyntaxEditor1.SyntaxEditorElement.IsReadOnly = True
 
 {{endregion}} 
 
-## Caret Brush
+## Caret Color
 
 Through the **CaretColor** property, you can change the caret's color to a color of your liking. The default color is Black.
 
