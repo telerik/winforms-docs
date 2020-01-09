@@ -23,6 +23,10 @@ To create a Bézier curve, right-click on a line, and then click __Convert__. Tw
 
 You can control the shape of the curve by setting the properties for the control points in the property grid of the line. To set the properties, select the Bézier curve line. There are two properties in the property grid that pertain to the control points: ControlPoint1 and ControlPoint2. The properties of the control points are similar to the properties of a regular point. Each of the control points can be expanded by clicking the + symbol to the left of the property name. To set the location, enter the numeric values of the desired coordinates into the X and Y properties of each control point. For more information about setting the location, see [Moving and Locking Points]({%slug winforms/tools/shapeeditor/using-the-custom-shape-editor/moving-and-locking-points%}).
 
+>caption Make rounded corners
+
+![tools-shapeeditor-using-bezier-curves 001](images/tools-shapeeditor-using-bezier-curves001.gif)
+
 ## Removing Bézier Curves
 
 To remove the Bézier curve, right-click on the curve, and then click __Convert__. This action will remove the two control points and restore a straight line between the two endpoints.
