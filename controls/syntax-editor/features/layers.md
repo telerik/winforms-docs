@@ -32,6 +32,7 @@ We will now create a custom layer which will be responsible for highlighting any
 {{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region=CustomLayer}}
 
 ````C#
+
 public class CommentsUILayer : LineBasedUILayer<Telerik.WinForms.SyntaxEditor.Core.Tagging.ClassificationTag>
 {
     public override string Name
@@ -74,6 +75,7 @@ public class CommentsUILayer : LineBasedUILayer<Telerik.WinForms.SyntaxEditor.Co
 
 ````
 ````VB.NET
+
 Public Class CommentsUILayer
     Inherits LineBasedUILayer(Of Telerik.WinForms.SyntaxEditor.Core.Tagging.ClassificationTag)
 
@@ -108,10 +110,10 @@ Public Class CommentsUILayer
     End Sub
 End Class
 
-
 ````
 
 {{endregion}} 
+
 
 For our custom layer to be recognized by the **RadSyntaxEditor** we need to add it to the **UILayerStack**. We can do so by creating a custom **UILayersBuilder** and overriding its **BuildUILayers** method.
 

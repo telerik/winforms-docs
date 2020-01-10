@@ -52,7 +52,7 @@ In addition, you may also want to override the **BuildStartRegionBlockPattern** 
 
 #### Default implementation of the BuildStartRegionBlockPattern and BuildEndRegionBlockPattern methods of the VisualBasicFoldingTagger
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region=DefaultStartEndTagger }}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorTaggers.cs region=DefaultStartEndTagger}}
 {{source=..\SamplesVB\SyntaxEditor\SyntaxEditorTaggers.vb region=DefaultStartEndTagger}}
 
 ````C#
