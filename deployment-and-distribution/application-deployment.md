@@ -553,4 +553,6 @@ Telerik.WinControls.Themes.Windows8.dll</td></tr>
 <tr><td><b>RadOpenFileDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadOpenFolderDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
 <tr><td><b>RadSaveFileDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadVirtualKeyboard</b></td><td>Telerik.WinControls.UI.dll</td></tr>
+<tr><td><b>RadSyntaxEditor</b></td><td>Telerik.WinControls.SyntaxEditor.dll</td></tr>
 </table>

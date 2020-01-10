@@ -1609,6 +1609,7 @@ intro_columns:
       "TrackBar": "winforms/track-and-status-controls/trackbar"
       "WaitingBar": "winforms/track-and-status-controls/waitingbar"
       "WebCam": "webcam-overview"
+      "VirtualKeyboard": "winforms-virtual-keyboard-overview"
   -
     title: "Forms & Dialogs"
     items:
@@ -1657,6 +1658,7 @@ intro_columns:
       "TextBox": "winforms/editors/textbox"
       "TimePicker": "winforms/editors/timepicker"
       "TimeSpanPicker": "radtimespanpicker-overview"
+      "SyntaxEditor": "syntax-editor-overview"
 -
   categories:
   -
