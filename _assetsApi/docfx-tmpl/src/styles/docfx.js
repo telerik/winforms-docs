@@ -429,7 +429,7 @@ $(function () {
               }
               
               top += $(e).position().top;
-              if (childTop - $(e).position().top > $('.sidetoc').height()){
+              if (selectedChild.offset().top - $(e).position().top > $('.sidetoc').height()) {
                   top += childTop;
               }
           })
