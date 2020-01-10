@@ -426,12 +426,12 @@ $(function () {
               var childTop = 0;
               if (selectedChild.length) {
                 childTop = selectedChild.position().top;
+                if (selectedChild.offset().top - $(e).position().top > $('.sidetoc').height()) {
+                    top += childTop;
+                }
               }
               
               top += $(e).position().top;
-              if (selectedChild.offset().top - $(e).position().top > $('.sidetoc').height()) {
-                  top += childTop;
-              }
           })
           $('.sidetoc').scrollTop(top - 50);
 
