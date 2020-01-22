@@ -38,7 +38,7 @@ For additional usage requirements, development restrictions and, defined term de
 |----|----|
 |[ILMerge](http://www.telerik.com/videos/winforms/ilmerge)<br>This video demonstrates how to merge your application exe with the Telerik assemblies, so they cannot be reused. (Runtime: 1:57)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows015.png)|
 
-When you deploy your application, you may prefer to do it as a single executable rather than an executable referencing many external assemblies. In this case, you need to ILMerge the assemblies with the executable. Here is a link to MSDN from where you can download the ILMerge executable: [Download ILMerge](http://www.microsoft.com/download/en/details.aspx?id=17630)
+When you deploy your application, you may prefer to do it as a single executable rather than an executable referencing many external assemblies. In this case, you need to ILMerge the assemblies with the executable. Here is a link to MSDN from where you can download the ILMerge executable: [Download ILMerge](https://github.com/dotnet/ILMerge)
 
 In order to use this approach you need to set the __ResolverTypesInCurrentAssembly__ property to *true* in the __static__ constructor of the first form that is created and loaded when your application starts:
         
