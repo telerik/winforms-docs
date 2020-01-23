@@ -13,7 +13,12 @@ previous_url: richtextbox-overview
 
 RadRichTextBox is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), etc.
 
->important **RadRichTextBox** has been replaced by **RadRichTextEditor**. Plese refer to the following help article demonstraing how to upgrade: [Upgrading to RadRichTextEditor](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/overview)
+>important EmbeddedLINK!!! **RadRichTextBox** has been replaced by **RadRichTextEditor**. Plese refer to the following help article demonstraing how to upgrade: [Upgrading to RadRichTextEditor](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/overview)
+>
+
+>important Slug with a slash!!! [Upgrading to RadRichTextEditor]({%slug winforms/richtexteditor%})
+
+>important Slug withOUT a slash!!! [Virtual Keyboard]({%slug winforms-virtual-keyboard-overview%})
 >
 
 >note RadRichTextBox and RadSpellChecker require .NET Framework 4.0.
