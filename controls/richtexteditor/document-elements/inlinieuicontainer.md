@@ -122,6 +122,6 @@ Most features that __RadRichTextEditor__ provides are also supported in the form
 
 	![richtexteditor-document-elements-inlineuicontainer 002](images/richtexteditor-document-elements-inlineuicontainer002.png)
             
->tip For more information on Import/Export, please refer to [this topic]({%slug winforms/richtexteditor/import-export/overview%}).
+>tip For more information on Import/Export, please refer to [this topic](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/import-export/overview).
 >
 
