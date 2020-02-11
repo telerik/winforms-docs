@@ -63,6 +63,11 @@ position: 3
 |**ZoomIn**|Zooms in.|
 |**ZoomOut**|Zooms out.|
 |**ZoomTo**|Zooms to particular zoom level.|
+|**GetWordToLeft**|Gets the text within the current word which is to the left of the caret.|
+|**GetWordToRight**|Gets the text within the current word which is to the right of the caret.|
+|**GetText**|Gets the text between the specified start and end positions.|
+|**DeleteWordToRight**|Deletes the word to right.|
+|**DeleteWordToLeft**|Deletes the word to left.|
 
 
 ## RadSyntaxEditor's Events
