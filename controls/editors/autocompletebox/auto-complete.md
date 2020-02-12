@@ -118,6 +118,41 @@ End Sub
 
 ![editors-autocompletebox-autocomplete 002](images/editors-autocompletebox-autocomplete002.png)
 
+## Allow Duplicates
+
+As of **R1 2020 SP1** **RadAutoCompleteBox** offers the **AllowDuplicates** property. It controls whether already selected items can be suggested.
+
+|AllowDuplicates=true|AllowDuplicates=false|
+|----|----|
+|![editors-autocompletebox-autocomplete 004](images/editors-autocompletebox-autocomplete004.png)|![editors-autocompletebox-autocomplete 003](images/editors-autocompletebox-autocomplete003.png)|
+
+Note that you can still add duplicated tokens in the editor if you type them manually. In order to avoid that you can subscribe to **TokenValidating** event and if the existing text in **RadAutoCompleteBox** contains the new text, set the **IsValidToken** property to *false*.  
+
+{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=InvalidToken}}
+{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=InvalidToken}}
+
+````C#
+              private void RadAutoCompleteBox1_TokenValidating(object sender, TokenValidatingEventArgs e)
+        {
+            if (this.radAutoCompleteBox1.Text.Contains(e.Text))
+            {
+                e.IsValidToken = false;
+            }
+        }    
+
+````
+````VB.NET
+	      Private Sub RadAutoCompleteBox1_TokenValidating(ByVal sender As Object, ByVal e As TokenValidatingEventArgs)
+        If Me.radAutoCompleteBox1.Text.Contains(e.Text) Then
+            e.IsValidToken = False
+        End If
+    End Sub   
+
+````
+
+{{endregion}}
+
+
 # See Also
 
 * [Caret Positioning and Selection]({%slug winforms/editors/autocompletebox/caret-positioning-and-selection%})
