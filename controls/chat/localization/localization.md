@@ -39,6 +39,8 @@ public class MyEnglishChatLocalizationProvider : Telerik.WinControls.Localizatio
             case ChatStringId.FlightCardArrival: return "Arrival";
             case ChatStringId.FlightCardPassenger: return "Passenger";
             case ChatStringId.FlightCardTotal: return "Total";
+            case ChatStringId.TodayStamp: return "TODAY";
+            case ChatStringId.YesterdayStamp: return "YESTERDAY";
             default:
                 break;
         }
@@ -66,6 +68,10 @@ Public Class MyEnglishChatLocalizationProvider
                 Return "Passenger"
             Case ChatStringId.FlightCardTotal
                 Return "Total"
+            Case ChatStringId.TodayStamp
+                Return "TODAY"
+            Case ChatStringId.YesterdayStamp
+                Return "YESTERDAY"
             Case Else
         End Select
         Return MyBase.GetLocalizedString(id)
