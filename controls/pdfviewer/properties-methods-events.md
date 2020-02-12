@@ -58,7 +58,6 @@ position: 4
 
 |Event|Description|
 |------|------|
-|__CurrentPageChanged__|Fires after the current page has been changed.|
 |__DocumentLoaded__|Fires when the document has finished loading.|
 |__DataError__|Fires when an internal exception in during loading parts of the document occurs. If the event is not handled, a default error message box will be shown, otherwise the message box will not show and handling the error should be done in the event handler.|
 |__AnnotationClicked__|Fires when a link or a bookmark was clicked.|
@@ -67,7 +66,7 @@ position: 4
 |__ScaleFactorChanged__|Fires when the ScaleFactor property has changed.|
 |__CaretPositionChanged__|Fires when the caret changes its position.|
 |__SelectionChanged__|Fires when the text selection has changed.|
-|__PageElementCreating__|Fires when a page is being created. Allows for replacing it with custom page element.|
+|__PageElementCreating__|Fires when a is being created. Allows for replacing it with custom page element.|
 |__ViewerModeChanged__|Fires when the ViewerMode property has changed.|
 
 # See Also
