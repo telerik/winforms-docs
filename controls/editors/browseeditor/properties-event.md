@@ -12,7 +12,8 @@ position: 6
 
 |Property|Description|
 |----|----|
-|Dialog|Gets the dialog of the control|
+|Dialog (Obsolete)|Gets the dialog of the control. Use the **BrowseDialog** property and cast it to the actual dialog type.|
+|BrowseDialog|Gets the browse dialog that will open upon pressing the browse button.|
 |DialogType|Gets or sets the type of dialog to be opened when the browse button is pressed|
 |Value|Gets or sets the value of the editor|
 |ReadOnly|Determines if users can input text directly into the text field|
