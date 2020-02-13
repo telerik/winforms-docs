@@ -164,6 +164,8 @@ explorerControl.FilterIndex = 1
 
 The control exposes the following events: **DirectoryRequesting** and **ExceptionRaised**. The first event can be used to filter the navigation. The second event occurs when an exception is raised. It could be raised in different occasions, for example - if the selected folder cannot be accessed or if the file path is too long, or when there is an error while searching, etc.
 
+As of **R1 2020 SP1**, the **ExplorerControl** offers the **DirectoryNavigating** event. It occurs when the current folder is about to change. In the **DirectoryNavigatingEventArgs** you have access to the new directory path to be navigated via the **DirectoryPath** property. This event is cancelable. Hence, if the end-user doesn't have permissions for a specific folder, set the **Cancel** argument to *true*. 
+
 # See Also
  
 * [Error Handling]({%slug winforms/file-dialogs/features/error-handling%})
