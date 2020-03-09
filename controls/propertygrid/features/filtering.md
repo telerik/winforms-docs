@@ -39,6 +39,8 @@ You can filter by the following criteria’s:
 
 ![propertygrid-features-filtering 002](images/propertygrid-features-filtering002.png)
 
+>note If you need to filter by the category value, not the property name, in addition to the added **FilterDescriptor**, it is necessary to set the PropertyGridElement.ToolbarElement.**FilterPropertyName** property to "**Category**". 
+
 #### Adding a Filter Descriptor
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridFiltering.cs region=Filtering}} 
