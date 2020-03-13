@@ -63,7 +63,7 @@ End Sub
 
 ![barcode-how-to-export-to-image 001](images/barcode-how-to-export-to-image001.png)
 
->note If you need to export the barcode data to a document, you can use a __RadDocument__ and [insert the exported image]({%slug winforms/richtexteditor-/document-elements/inline-image%}) into it. Afterwards, you can use the __RadRichTextEditor__ 's [export]({%slug winforms/richtexteditor/import-export/overview%}) functionality.
->
+If you need to export the barcode data to a document, you can use a __RadDocument__ and [insert the exported image]({%slug winforms/richtexteditor-/document-elements/inline-image%}) into it. Afterwards, you can use the __RadRichTextEditor__ 's [export]({%slug winforms/richtexteditor/import-export/overview%}) functionality.
+
  
         
