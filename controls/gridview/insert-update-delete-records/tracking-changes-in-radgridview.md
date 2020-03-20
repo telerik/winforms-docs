@@ -17,7 +17,7 @@ You can track cell changes in __RadGridView__ by using __CellValueChanged__ eve
 
 You can track column changes with __CollectionChanging__, __CollectionChanged__ events which can be accessed from the __Columns__ collection.
 
->caution RadGridView supports another two editor related events __ValueChanging__ and __ValueChanged__. Please refer to RadGridView [editors]({%slug winforms/gridview/editors/events%}) section for further details.
+>caution RadGridView supports another two editor related events __ValueChanging__ and __ValueChanged__. Please refer to RadGridView [editors](https://docs.telerik.com/devtools/winforms/controls/gridview/editors/events) section for further details.
 >
 
 
