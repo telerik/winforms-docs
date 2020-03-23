@@ -25,7 +25,7 @@ One **Appointment** may refer to one or many resources. Each **Appoinment** offe
 * **ResourceId** - represents the **EventId** of the resource to which this appointment is associated.
 * **ResourceIds** - represents an ObservableCollection of **EventId**s to which this appointment is associated.
 
->note Using the **EditAppointmentDialog** allows you to assign only a single resource for the appointment. If you want to specify which multiple resources exactly are applied, it can be set programmically to the Appointment via the **ResourcesIds** property. However, selecting *Any* from the dialog, will generate an event for all existing resources in **RadScheduler. **
+>note Using the **EditAppointmentDialog** allows you to assign only a single resource for the appointment. If you want to specify which multiple resources exactly are applied, it can be set programmically to the Appointment via the **ResourcesIds** property. However, selecting *Any* from the dialog, will generate an event for all existing resources in **RadScheduler**.
 
 #### Apply a single resource to an appointment
 
