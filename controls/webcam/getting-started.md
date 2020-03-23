@@ -31,6 +31,11 @@ You can download the required assemblies for each control from your Telerik acco
 
 To start using the control you only need to add a **RadWebCam** control to the form either at design time by dragging it from toolbox and dropping it onto the form or via code.
 
+>important **RadWebCam** video recording relies on USB web cams being able to use **MJPEG** or **H264** encoded streams.
+On August 2nd, 2016, Microsoft released the Anniversary Update for Windows 10 (1607) which [has broken millions of Web cams](https://www.thurrott.com/windows/windows-10/76719/microsoft-broken-millions-webcams-windows-10-anniversary-update). In this update Windows no longer allowed USB web cams to use **MJPEG** or **H264** encoded streams and was only allowing **YUY2** encoding. 
+According to a comment in [this discussion](https://social.msdn.microsoft.com/Forums/windowsdesktop/en-US/9d6a8704-764f-46df-a41c-8e9d84f7f0f3/mjpg-encoded-media-type-is-not-available-for-usbuvc-webcameras-after-windows-10-version-1607-os?forum=mediafoundationdevelopment) the bug was fixed in April 2017 (version 1703, 10.0.15063).
+>
+
 #### Adding a RadWebCam at runtime 
 
 {{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=CreatingWebCam}} 
