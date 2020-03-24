@@ -30,56 +30,120 @@ Subscribe to the RadGridView.**CreateCell** event and replace the default **Grid
 
 ````C#
 
-        private void radGridView1_CreateCell(object sender, Telerik.WinControls.UI.GridViewCreateCellEventArgs e)
+private void radGridView1_CreateCell(object sender, Telerik.WinControls.UI.GridViewCreateCellEventArgs e)
+{
+    if (e.CellType == typeof(GridFilterCellElement))
+    {
+        if (e.Column.Name == "ProductName")
         {
-            if (e.CellType == typeof(GridFilterCellElement) && e.Column.Name == "ProductName")
-            {
-                e.CellElement = new CustomGridFilterCellElement(e.Column as GridViewDataColumn,e.Row);
-            }
+            e.CellElement = new CustomGridFilterCellElement(e.Column as GridViewDataColumn, e.Row);
         }
-
-        public class CustomGridFilterCellElement : GridFilterCellElement
+        else
         {
-            protected override Type ThemeEffectiveType    
-            {
-                get   
-                {
-                    return typeof(GridFilterCellElement);    
-                }
-            }
- 
-            public CustomGridFilterCellElement(GridViewDataColumn column, GridRowElement row) : base(column, row)
-            {
-                this.FilteringRowInfo.SuspendPropertyNotifications();
-                this.SetFilterOperator(Telerik.WinControls.Data.FilterOperator.StartsWith);
-                this.FilteringRowInfo.ResumePropertyNotifications();
-            }
-        }      
+            e.CellElement = new DefaultGridFilterCellElement(e.Column as GridViewDataColumn, e.Row);
+        }
+    }
+}
+
+public class DefaultGridFilterCellElement : GridFilterCellElement
+{
+    public DefaultGridFilterCellElement(GridViewDataColumn column, GridRowElement row)
+        : base(column, row)
+    {
+    }
+
+    protected override Type ThemeEffectiveType
+    {
+        get
+        {
+            return typeof(GridFilterCellElement);
+        }
+    }
+
+    public override bool IsCompatible(GridViewColumn data, object context)
+    {
+        return data.Name != "ProductName";
+    }
+}
+
+public class CustomGridFilterCellElement : GridFilterCellElement
+{
+    protected override Type ThemeEffectiveType
+    {
+        get
+        {
+            return typeof(GridFilterCellElement);
+        }
+    }
+
+    public CustomGridFilterCellElement(GridViewDataColumn column, GridRowElement row)
+        : base(column, row)
+    {
+        this.FilteringRowInfo.SuspendPropertyNotifications();
+        this.SetFilterOperator(Telerik.WinControls.Data.FilterOperator.StartsWith);
+        this.FilteringRowInfo.ResumePropertyNotifications();
+    }
+
+    public override bool IsCompatible(GridViewColumn data, object context)
+    {
+        return data.Name == "ProductName";
+    }
+}
+    
 
 ````
 ````VB.NET
-    Private Sub radGridView1_CreateCell(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCreateCellEventArgs)
-        If e.CellType = GetType(GridFilterCellElement) AndAlso e.Column.Name = "ProductName" Then
-            e.CellElement = New CustomGridFilterCellElement(TryCast(e.Column, GridViewDataColumn), e.Row)
-        End If
-    End Sub
 
-    Public Class CustomGridFilterCellElement
+Private Sub radGridView1_CreateCell(ByVal sender As Object, _
+    ByVal e As Telerik.WinControls.UI.GridViewCreateCellEventArgs) Handles RadGridView1.CreateCell
+    If e.CellType = GetType(GridFilterCellElement) Then
+
+        If e.Column.Name = "ProductName" Then
+            e.CellElement = New CustomGridFilterCellElement(TryCast(e.Column, GridViewDataColumn), e.Row)
+        Else
+            e.CellElement = New DefaultGridFilterCellElement(TryCast(e.Column, GridViewDataColumn), e.Row)
+        End If
+    End If
+End Sub
+
+Public Class DefaultGridFilterCellElement
     Inherits GridFilterCellElement
 
-        Protected Overrides ReadOnly Property ThemeEffectiveType As Type
-            Get
-                Return GetType(GridFilterCellElement)
-            End Get
-        End Property
+    Public Sub New(ByVal column As GridViewDataColumn, ByVal row As GridRowElement)
+        MyBase.New(column, row)
+    End Sub
 
-        Public Sub New(ByVal column As GridViewDataColumn, ByVal row As GridRowElement)
-            MyBase.New(column, row)
-            Me.FilteringRowInfo.SuspendPropertyNotifications()
-            Me.SetFilterOperator(Telerik.WinControls.Data.FilterOperator.StartsWith)
-            Me.FilteringRowInfo.ResumePropertyNotifications()
-        End Sub
-    End Class
+    Protected Overrides ReadOnly Property ThemeEffectiveType As Type
+        Get
+            Return GetType(GridFilterCellElement)
+        End Get
+    End Property
+
+    Public Overrides Function IsCompatible(ByVal data As GridViewColumn, ByVal context As Object) As Boolean
+        Return data.Name <> "ProductName"
+    End Function
+End Class
+
+Public Class CustomGridFilterCellElement
+    Inherits GridFilterCellElement
+
+    Protected Overrides ReadOnly Property ThemeEffectiveType As Type
+        Get
+            Return GetType(GridFilterCellElement)
+        End Get
+    End Property
+
+    Public Sub New(ByVal column As GridViewDataColumn, ByVal row As GridRowElement)
+        MyBase.New(column, row)
+        Me.FilteringRowInfo.SuspendPropertyNotifications()
+        Me.SetFilterOperator(Telerik.WinControls.Data.FilterOperator.StartsWith)
+        Me.FilteringRowInfo.ResumePropertyNotifications()
+    End Sub
+
+    Public Overrides Function IsCompatible(ByVal data As GridViewColumn, ByVal context As Object) As Boolean
+        Return data.Name = "ProductName"
+    End Function
+End Class
     
 
 ````
