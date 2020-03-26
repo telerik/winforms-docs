@@ -30,9 +30,9 @@ In this walkthrough (part of the [Telerik UI for WinForms Step-by-step Tutorial
 1. Add a __RadStatusStrip__ to the form. Set the __ThemeName__ to __Desert__. Add a RadLabelElement to the status strip. Set the __Name__ property to "lblStatus" and the __Text__ to "".     
 
 1. Add a RadCommandBar to the form. Add elements to the bar:
-    - Add a __RadCommandBarDropDownListItem__. Set the  __Name__ to "ddlActiveViewType" and __Text__ to "".
-    - Add a __RadCommandBarDropDownListItem__. Set the __Name__ to "ddlRange" and __Text__ to "".
-    - Add a __RadCommandBarDropDownListItem__. Set the __Name__ to "ddlACount" and __Text__ to "".              
+    - Add a __RadCommandBarDropDownList__. Set the  __Name__ to "ddlActiveViewType" and __Text__ to "".
+    - Add a __RadCommandBarDropDownList__. Set the __Name__ to "ddlRange" and __Text__ to "".
+    - Add a __RadCommandBarDropDownList__. Set the __Name__ to "ddlACount" and __Text__ to "".              
 1. Change the new RadForm1 to be the startup form.
 
 1. From the Toolbox, add a __RadScheduler__ to the form and set the __Dock__ property to "Fill" and the __ThemeName__ to __Desert__.
@@ -62,7 +62,7 @@ for (int i = 1; i < 10; i++)
     RadListDataItem item = new RadListDataItem();
     item.Text = i.ToString();
     item.Value = i;
-    ddlCount.Items.Add(item);
+    ddlACount.Items.Add(item);
 }
 
 ````
