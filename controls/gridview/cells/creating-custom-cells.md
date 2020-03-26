@@ -599,6 +599,9 @@ End Sub
 
 
 # See Also
+
+* [How to Create Custom Cells with Input Elements]({%slug custom-gridview-cells-with-input-elements%})
+
 * [Accessing and Setting the CurrentCell]({%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%})
 
 * [Accessing Cells]({%slug winforms/gridview/cells/accessing-cells%})
