@@ -37,6 +37,8 @@ Here is the result of the explained operations:
 
 ![listview-working-with-design-time-adding-columns 005](images/listview-working-with-design-time-adding-columns005.png)
 
+> Note if you assign a DataSource programmatically, this will use the default column widths. To handle this scenario, use the **ColumnCreating** event to access column by field name and set the desired width there.
+
 
 # See Also
 
