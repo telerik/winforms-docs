@@ -30,6 +30,7 @@ position: 3
 |**ParentMember**|Gets or sets the parent member. Note that this property is ignored when **DefaultTreeView** is set.|
 |**RelationBindings**|Contains data binding settings for related data. Note that this property is ignored when **DefaultTreeView** is set.|
 |**Nodes**|Gets the collection of tree nodes that are assigned to the bread crumb control. A System.Windows.Forms.TreeNodeCollection that represents the tree nodes assigned to the tree view control.|
+|**ShowHiddenNodes**|Gets or sets a value indicating whether to display a hidden tree node. A hidden node is a node which **Visible** property is set to *false*. Default value is *false*.|
 |**Path**|Get or sets the path to a **RadTreeNode** and selects it. Different elements in the node hierarchy must be separated by the **PathSeparator**.|
 
 ## RadBreadCrumbElement's Properties
