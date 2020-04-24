@@ -8,7 +8,7 @@ published: True
 position: 8 
 ---
 
-# Properties
+## RadMenu Properties
 
 |Property|Description|
 |----|----|
@@ -24,7 +24,7 @@ position: 8
 |**DropDownAnimationFrames**|Gets or sets the number of frames that will be used when the Drop Down is being animated.|
 |**IsMainMenu**|Defines whether RadMenu handles the MDI menu functionality.|
 
-The **RadMenuElement's** properties are listed below:
+## RadMenuElement properties
 
 |Property|Description|
 |----|----|
@@ -32,20 +32,32 @@ The **RadMenuElement's** properties are listed below:
 |**MenuFill**|Gets an instance of the FillPrimitive class that represents the menu background fill.|
 |**MenuBorder**|Gets an instance of the **BorderPrimitive** class that represents the border of the menu.|
 
-# Methods
+## RadMenu Methods
 
 |Method|Description|
 |----|----|
 |**MergeMenu**|Merges the menu with the passed RadMenu as a parameter.|
 |**UnmergeMenu**|Unmerges the menu with the passed RadMenu as a parameter.|
 
-# Events
+## RadMenu Events
 
 |Event|Description|
 |----|----|
 |**OrientationChanged**|Fires when the **Orientation** is changed.|
 |**AllItemsEqualHeightChanged**|Fires when the **AllItemsEqualHeight** is changed.|
 |**TextOrientationChanged**|Fires when the MenuElement.**TextOrientation** is changed.|
+
+## RadMenuItem events
+
+|Event|Description|
+|----|----|
+|**DropDownOpening**|Occurs before the menu item dropdown opens.|
+|**DropDownOpened**|Occurs after the menu item dropdown opens.|
+|**DropDownCreating**|Occurs before the popup is creating. It allows the drop down menu to be replaced or customized. Through its arguments you have access to the **MenuItem** and the **DropDownMenu** that is about to be shown.|
+|**DropDownClosing**|Occurs before the popup is closed.|
+|**DropDownClosed**|Occurs after the menu item dropdown closes.|
+|**ToggleStateChanging**|Occurs before the item's toggle state changes.|
+|**ToggleStateChanged**|Occurs when the item's toggle state changes.|
 
 
 # See Also
