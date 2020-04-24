@@ -47,7 +47,7 @@ position: 8
 |**AllItemsEqualHeightChanged**|Fires when the **AllItemsEqualHeight** is changed.|
 |**TextOrientationChanged**|Fires when the MenuElement.**TextOrientation** is changed.|
 
-## RadMenuItem events
+## RadMenuItem Events
 
 |Event|Description|
 |----|----|
