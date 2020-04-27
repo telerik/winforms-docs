@@ -1267,6 +1267,9 @@ navigation:
     controls/treeview:
         title: TreeView
         position: 490
+    controls/validation-provider:
+        title: Validation Provider
+        position: 495
     controls/treeview/design-time:
         title: Design-Time
         position: 2
