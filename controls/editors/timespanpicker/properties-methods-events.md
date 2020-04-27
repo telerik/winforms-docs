@@ -30,6 +30,7 @@ position: 3
 |__MaxValue__|Gets or sets the Maximal TimeSpan value assigned to the control.|
 |__Format__|Gets or sets the format string.|
 |__ShowSpinButtons__|Gets or sets a value indicating whether the spin buttons will be shown.|
+|**TextAlign**|Gets or sets the horizontal alignment of the text.|
  
 
 # Events 
