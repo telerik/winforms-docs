@@ -61,6 +61,6 @@ In a similar way you can add a rule to validate that the second **RadDateTimePic
 # See Also
 
 * [Getting Started]({%slug validation-provider-getting-started%})
-* [Design Time]({%slug validation-provider-designtime%})
+* [Design Time]({%slug validation-provider-design-time%})
  
         

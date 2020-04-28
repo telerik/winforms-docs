@@ -33,6 +33,6 @@ The main features are listed below:
 # See Also
 
 * [Getting Started]({%slug validation-provider-getting-started%})
-* [Design Time]({%slug validation-provider-designtime%})
+* [Design Time]({%slug validation-provider-design-time%})
  
         
