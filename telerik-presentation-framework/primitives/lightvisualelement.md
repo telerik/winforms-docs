@@ -68,8 +68,9 @@ __LightVisualElement__ is a lightweight element which is capable of displaying T
           
 
 * __Image:__ Gets or sets the element’s image, the image can be resized inside the element.
+  
+* __SvgImage:__ Gets or sets the SVG image.
           
-
 * __ImageLayout:__ Specifies the position of the image on the control. *None*, *Tile*, *Center*, *Stretch*, *Zoom*
 
 * __BackgroundImageLayout:__ Specifies the position of the BackgroundImage on the control. *None*, *Tile*, *Center*, *Stretch*, *Zoom*

@@ -20,6 +20,8 @@ Use the __ImagePrimitive__ class whenever you need to draw an image as part of r
 * __ImageIndex:__ The index of an image in an __ImageList__ control.
 
 * __ImageScaling:__ Either __None__ or __ScaleToFit__ controls whether the image should be scaled to fit the available space.
+  
+* __SvgImage:__ Gets or sets the SVG image.
 
 
 >note The __ImageList__ property is introduced in the RadControl class.
@@ -113,4 +115,4 @@ End Class
 * [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})
 
 * [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%})
-
+  
