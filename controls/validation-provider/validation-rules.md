@@ -159,7 +159,7 @@ In order to cover the case that the second **RadDateTimePicker** is greater than
 The following code snippet demonstrates how to define a **RadCompositeValidationRule** composed of two **RadValidationRuleWithTargetControls** and one **RadValidationRule** ensuring that **Car Price** (radSpinEditor1) is greater than **Minimum Price** (radSpinEditor2) and less than **Maximum Price** (radSpinEditor3). In addition, the price cannot be equal to *10 000*:
  
 >caution
-None of the associated controls (e.g. radSpinEditor1) of a composite rule shouldn't be added as a target in any the nested rules!
+None of the associated controls (e.g. radSpinEditor1) of a composite rule should be added as a target in any the nested rules!
 >
 
 {{source=..\SamplesCS\ValidationProvider\ValidationProviderGettingStarted.cs region=CompositeRule}} 
