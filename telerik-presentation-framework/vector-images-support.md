@@ -10,11 +10,11 @@ position: 12
 
 # Support for vector images
 
-**RadControls** support displaying vector graphics for building high DPI applications and providing excellent end user experience. Scalable Vector Graphics (SVG) defines vector-based graphics in XML format. SVG file can be scaled to different sizes without loоsing quality so they scale appropriately on all DPI settings. You can apply SVG image on a control just by using the **SvgImage** property that is integrated in [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}) and [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%}). The **SvgImage** property acts the same way as the Image property, so TextImageAlignment, ImageLayout and other image related properties are respected by **RadSvgImage**.
+**RadControls** support displaying vector graphics for building high DPI applications and providing excellent end user experience. Scalable Vector Graphics (SVG) defines vector-based graphics in XML format. SVG file can be scaled to different sizes without loоsing quality so they scale appropriately on all DPI settings. You can apply SVG image on a control just by using the **SvgImage** property that is integrated in [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}) and [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%}). The **SvgImage** property acts the same way as the **Image** property, so **TextImageAlignment**, **ImageLayout** and other image related properties are respected by **RadSvgImage**.
 
 >note SVG image support is available only in .NET 4.0 and above.
 
-Here is an example with screenshots on different scalling monitors with **RadGridView** that contains two **GridViewImageColumns** : one column is with SVG image, the other with png image. You can notice that the second image column becomes blurry unlike the SVG column which looks fine even on high scalling:
+Here is an example with screenshots on different scaling monitors with **RadGridView** that contains two **GridViewImageColumns**: one column is with SVG image, the other with png image. You can notice that the second image column becomes blurry unlike the SVG column which looks fine even on high scaling:
 
 ![svg-vs-image.png](images/svg-vs-image2.png)
 
@@ -22,7 +22,7 @@ Here is an example with screenshots on different scalling monitors with **RadGri
 
 >important In R2 2020 we introduced the **EnableSvgImages** property that indicates whether SVG images will be drawn in **ImagePrimitive** and **LightVisualElement** objects. This property allows you to enable/disable SVG images on a global level. It is a static property of **RadControl** and should be set before any controls are initialized. For example in the form's constructor. 
 
-If you set **EnableSvgImages** to *false* it will draw the corresponding Image property if applicable.
+If you set **EnableSvgImages** to *false* it will draw the corresponding **Image** property if applicable.
 
 #### Enable SVG images
 
@@ -39,9 +39,9 @@ RadControl.EnableSvgImages = True
 
 {{endregion}} 
 
-You can control whether Image or SvgImage will be painted on an element level as well. This can be done via the the **ImageDrawType** enumeration that offers two options: Svg or Image. Note that if there is no SvgImage set, this property will return ImageDrawType.Image.
+You can control whether Image or SvgImage will be painted on an element level as well. This can be done via the the **ImageDrawType** enumeration that offers two options: Svg or Image. Note that if there is no SvgImage set, this property will return **ImageDrawType.Image**.
 
-For example you may prefer to use bitmap images for your application but use SVG images for specific element:
+For example you may prefer to use bitmap images for your application but use SVG image for а specific element:
 
 {{source=..\SamplesCS\TPF\SvgSupport\SVGSupport.cs region=EnableSvgForSpecificElement}} 
 {{source=..\SamplesVB\TPF\SvgSupport\SVGSupport.vb region=EnableSvgForSpecificElement}}
@@ -61,7 +61,7 @@ Me.radButton1.ButtonElement.ImagePrimitive.ImageDrawType = ImageDrawType.Svg
 
 ### Assign SVG image programmatically
 
-**RadSvgImage** offers three ways to load an SVG image to a control from different resources:
+**RadSvgImage** offers three ways to load SVG image to a control from different resources:
 
 * **FromFile** – creates a **RadSvgImage** from the specified file name.
 
@@ -104,7 +104,6 @@ End Using
 {{endregion}} 
 
 * **FromXml** - creates a **RadSvgImage** from the specified XML string.
-[example C#/VB]
 
 {{source=..\SamplesCS\TPF\SvgSupport\SVGSupport.cs region=FromXml}} 
 {{source=..\SamplesVB\TPF\SvgSupport\SVGSupport.vb region=FromXml}}
@@ -121,13 +120,13 @@ Me.RadButton1.SvgImage = RadSvgImage.FromXml(xml)
 
 {{endregion}} 
 
-Here is the result when using custom xml string:
+Here is the result when using custom xml string for creating SVG:
 
 ![button-image](images/xml-button.png)
 
 ### Assign SVG image at design time
 
-You can easily assign SVG image through the Smart Tag at the upper right corner of the controls. For example, lets add a **RadButton** from the Toolbox and open its Smart tag. Then, click the *Edit UI Elements*. From the *Element Hierarchy Editor* you can find the **SvgImage** property and assign a SVG image to **RadButton**.
+You can easily assign SVG image through the Smart Tag at the upper right corner of the controls. For example, let's add a **RadButton** from the Toolbox and open its Smart tag. Then, click the *Edit UI Elements*. From the *Element Hierarchy Editor* you can find the **SvgImage** property and assign a SVG image to **RadButton**.
 
 ![smart-tag](images/smart-tag.png)
 
