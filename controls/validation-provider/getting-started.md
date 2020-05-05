@@ -38,17 +38,17 @@ This article will give you getting started experience with **RadValidationProvid
 
 	![validation-provider-getting-started 007](images/validation-provider-getting-started007.png) 
 
-	>note The data type of the **Value** can be specified after entering a value from drop down. 
+	>note The data type of the **Value** can be specified after entering a value from the drop down. 
 
 7. If you start the application now, focus the **RadTextBox** control, leave it empty and try to navigate to another control, the validation will fail. It would be necessary to enter some text before proceeding further:
 
 	![validation-provider-getting-started 006](images/validation-provider-getting-started006.png) 
 
-8. Add a second validation rule. But this time add a **RadValidationRuleWithSecondControl**:
+8. Add a second validation rule. But this time add a **RadValidationRuleWithTargetControl**:
 
 	![validation-provider-getting-started 008](images/validation-provider-getting-started008.png) 
 
-9. In the **Controls** drop down list, select **radDateTimePicker1**. In the **SecondControl** drop down list, select **radDateTimePicker2**. Set the **Operator** to *IsLessThan*. Specify the **PropertyName** and **SecondControlPropertyName** to *Value* and what **ToolTipText** to be displayed when the validation failed. 
+9. In the **Controls** drop down list, select **radDateTimePicker1**. In the **TargetControl** drop down list, select **radDateTimePicker2**. Set the **Operator** to *IsLessThan*. Specify the **PropertyName** and **TargetControlPropertyName** to *Value* and what **ToolTipText** to be displayed when the validation failed. 
 
 	![validation-provider-getting-started 009](images/validation-provider-getting-started009.png) 
 
