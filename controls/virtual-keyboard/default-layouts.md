@@ -14,17 +14,28 @@ The **LayoutType** property of **RadVirtualKeyboard** controls the keyboard layo
 
 The available options in the **KeyboardLayoutType** enumeration are:
 
-* **Extended** - A keyboard layout that includes the functions keys, main keys, home buttons and numpad keyboard groups.
+### **Extended** 
+A keyboard layout that includes the functions keys, main keys, home buttons and numpad keyboard groups. This layout is of **ExtendedVirtualKeyboardLayoutPanel** type and offers the following useful properties:
 
-	![winforms/virtual-keabord-default-layouts 001](images/virtual-keabord-default-layouts001.png) 
+* **FunctionButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all function keys of the keyboard.
+* **MainButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all keys from the main group of the keyboard.
+* **HomeButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all buttons from the home keys group of the keyboard.
+* **NumpadButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all buttons from the numpad keys group of the keyboard.
 
-* **Simplified** - A keyboard layout that includes the main buttons group with escape key and arrow keys included.
+![winforms/virtual-keabord-default-layouts 001](images/virtual-keabord-default-layouts001.png) 
 
-	![winforms/virtual-keabord-default-layouts 002](images/virtual-keabord-default-layouts002.png) 
+### **Simplified**
+A keyboard layout that includes the main buttons group with escape key and arrow keys included. This layout is of **SimplifiedVirtualKeyboardLayoutPanel** type and offers the following useful properties:
+* **MainButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all keys from the main group of the keyboard.
+* **HomeButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all buttons from the home keys group of the keyboard.
 
-* **Numpad** - A keyboard layout that includes the numpad buttons group.
+![winforms/virtual-keabord-default-layouts 002](images/virtual-keabord-default-layouts002.png) 
 
-	![winforms/virtual-keabord-default-layouts 003](images/virtual-keabord-default-layouts003.png) 
+### **Numpad**
+A keyboard layout that includes the numpad buttons group. This layout is of **NumpadVirtualKeyboardLayoutPanel** type and offers:
+* **NumpadButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all buttons from the numpad keys group of the keyboard.
+
+![winforms/virtual-keabord-default-layouts 003](images/virtual-keabord-default-layouts003.png) 
 
 ## Customizing default layouts
 
@@ -41,28 +52,23 @@ The following code snippet demonstrates how to add a **Z** button in the *Home* 
 {{source=..\SamplesVB\VirtualKeyboard\KeyboardGettingStarted.vb region=AddKeyToHome}}
 
 ````C#
-
-this.radVirtualKeyboard1.LayoutType = Telerik.WinControls.VirtualKeyboard.KeyboardLayoutType.Extended;
-VirtualKeyboardLayoutPanel mainLayoutPanel = this.radVirtualKeyboard1.MainLayoutPanel.KeyboardLayouts[1] as VirtualKeyboardLayoutPanel;
-VirtualKeyboardLayout homeLayout = mainLayoutPanel.KeyboardLayouts[1] as VirtualKeyboardLayout;
+radVirtualKeyboard1.LayoutType = Telerik.WinControls.VirtualKeyboard.KeyboardLayoutType.Extended;
+ExtendedVirtualKeyboardLayoutPanel extendedLayoutPanel = radVirtualKeyboard1.MainLayoutPanel as ExtendedVirtualKeyboardLayoutPanel;
 int keysRowIndex = 2;
 int keyColSpan = 3;
 int KeyRowSpan = 1;
-homeLayout.Rows[keysRowIndex].Keys.Add(new Key((int)Keys.Z, KeyType.Normal, keyColSpan, KeyRowSpan));
-this.radVirtualKeyboard1.MainLayoutPanel.ResetLayout();
-
+extendedLayoutPanel.HomeButtonsLayout.Rows[keysRowIndex].Keys.Add(new Key((int)Keys.Z, KeyType.Normal, keyColSpan, KeyRowSpan));
+extendedLayoutPanel.ResetLayout();
 
 ````
 ````VB.NET
 Me.radVirtualKeyboard1.LayoutType = Telerik.WinControls.VirtualKeyboard.KeyboardLayoutType.Extended
-Dim mainLayoutPanel As VirtualKeyboardLayoutPanel = TryCast(Me.radVirtualKeyboard1.MainLayoutPanel.KeyboardLayouts(1), VirtualKeyboardLayoutPanel)
-Dim homeLayout As VirtualKeyboardLayout = TryCast(mainLayoutPanel.KeyboardLayouts(1), VirtualKeyboardLayout)
+Dim extendedLayoutPanel As ExtendedVirtualKeyboardLayoutPanel = TryCast(radVirtualKeyboard1.MainLayoutPanel, ExtendedVirtualKeyboardLayoutPanel)
 Dim keysRowIndex As Integer = 2
 Dim keyColSpan As Integer = 3
 Dim KeyRowSpan As Integer = 1
-homeLayout.Rows(keysRowIndex).Keys.Add(New Key(CInt(Windows.Forms.Keys.Z), KeyType.Normal, keyColSpan, KeyRowSpan))
-Me.radVirtualKeyboard1.MainLayoutPanel.ResetLayout()
-
+extendedLayoutPanel.HomeButtonsLayout.Rows(keysRowIndex).Keys.Add(New Key(CInt(Keys.Z), KeyType.Normal, keyColSpan, KeyRowSpan))
+extendedLayoutPanel.ResetLayout()
 
 ```` 
 
