@@ -13,7 +13,7 @@ position: 4
 **RadValidationProvider** supports three types of validation rules all of which implements the **IRadValidationRule** interface:
 
 * **RadValidationRule**: allows you to define validation logic for a single control considering a validation operator and a value.
-* **RadValidationRuleWithSecondControl**: allows you to define validation logic of a control against a second control, e.g. if you have two **RadDateTimePicker** controls for selecting start/end date and you need to ensure that start date is less than end date. 
+* **RadValidationRuleWithTargetControl**: allows you to define validation logic of a control against a second control, e.g. if you have two **RadDateTimePicker** controls for selecting start/end date and you need to ensure that start date is less than end date. 
 * **RadCompositeValidationRule**: allows defining more complex validation logic by adding multiple simpler **RadValidationRules**.
 
 ## RadValidationRule
