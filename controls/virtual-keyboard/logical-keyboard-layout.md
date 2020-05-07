@@ -27,52 +27,44 @@ The **VirtualKeyboardLayout** offers a public **Rows** property which is an **Ob
 {{source=..\SamplesVB\VirtualKeyboard\KeyboardGettingStarted.vb region=LogicalLayouts}}
 
 ````C#
-
 this.radVirtualKeyboard1.LayoutType = Telerik.WinControls.VirtualKeyboard.KeyboardLayoutType.Extended;
-VirtualKeyboardLayout functionsLayout = this.radVirtualKeyboard1.MainLayoutPanel.KeyboardLayouts[0] as VirtualKeyboardLayout;
-VirtualKeyboardLayoutPanel mainLayoutPanel = this.radVirtualKeyboard1.MainLayoutPanel.KeyboardLayouts[1] as VirtualKeyboardLayoutPanel;
-VirtualKeyboardLayout simplifiedLayout = mainLayoutPanel.KeyboardLayouts[0] as VirtualKeyboardLayout;
-VirtualKeyboardLayout homeLayout = mainLayoutPanel.KeyboardLayouts[1] as VirtualKeyboardLayout;
-VirtualKeyboardLayout numpadLayout = mainLayoutPanel.KeyboardLayouts[2] as VirtualKeyboardLayout;
+ExtendedVirtualKeyboardLayoutPanel extendedKeyboard = radVirtualKeyboard1.MainLayoutPanel as ExtendedVirtualKeyboardLayoutPanel;
+VirtualKeyboardLayout simplifiedLayout = extendedKeyboard.MainButtonsLayout;
+VirtualKeyboardLayout homeLayout = extendedKeyboard.HomeButtonsLayout;
+VirtualKeyboardLayout numpadLayout = extendedKeyboard.NumpadButtonsLayout;
 StringBuilder homeKeys = new StringBuilder();
 foreach (Row rows in homeLayout.Rows)
-{
+ {
     foreach (IKey key in rows.Keys)
-    {
+     {
         Key k = key as Key;
         if (k != null)
         {
-            homeKeys.AppendLine(k.Name);
-        } 
-    }
-}
-RadMessageBox.Show(homeKeys.ToString());
+        homeKeys.AppendLine(k.Text);
+        }
+     }
+ }
 
+RadMessageBox.Show(homeKeys.ToString());
 
 ````
 ````VB.NET
-
 Me.radVirtualKeyboard1.LayoutType = Telerik.WinControls.VirtualKeyboard.KeyboardLayoutType.Extended
-Dim functionsLayout As VirtualKeyboardLayout = TryCast(Me.radVirtualKeyboard1.MainLayoutPanel.KeyboardLayouts(0), VirtualKeyboardLayout)
-Dim mainLayoutPanel As VirtualKeyboardLayoutPanel = TryCast(Me.radVirtualKeyboard1.MainLayoutPanel.KeyboardLayouts(1), VirtualKeyboardLayoutPanel)
-Dim simplifiedLayout As VirtualKeyboardLayout = TryCast(mainLayoutPanel.KeyboardLayouts(0), VirtualKeyboardLayout)
-Dim homeLayout As VirtualKeyboardLayout = TryCast(mainLayoutPanel.KeyboardLayouts(1), VirtualKeyboardLayout)
-Dim numpadLayout As VirtualKeyboardLayout = TryCast(mainLayoutPanel.KeyboardLayouts(2), VirtualKeyboardLayout)
+Dim extendedKeyboard As ExtendedVirtualKeyboardLayoutPanel = TryCast(radVirtualKeyboard1.MainLayoutPanel, ExtendedVirtualKeyboardLayoutPanel)
+Dim simplifiedLayout As VirtualKeyboardLayout = extendedKeyboard.MainButtonsLayout
+Dim homeLayout As VirtualKeyboardLayout = extendedKeyboard.HomeButtonsLayout
+Dim numpadLayout As VirtualKeyboardLayout = extendedKeyboard.NumpadButtonsLayout
 Dim homeKeys As StringBuilder = New StringBuilder()
-
 For Each rows As Row In homeLayout.Rows
-
     For Each key As IKey In rows.Keys
         Dim k As Key = TryCast(key, Key)
-
         If k IsNot Nothing Then
             homeKeys.AppendLine(k.Name)
         End If
     Next
 Next
 
-Telerik.WinControls.RadMessageBox.Show(homeKeys.ToString())
-
+RadMessageBox.Show(homeKeys.ToString())
 
 ```` 
 
