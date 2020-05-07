@@ -2,7 +2,7 @@
 title: Customizing Error Indication
 page_title: Customizing Error Indication | Validation Provider
 description:  
-slug: customizing-error-indication
+slug: validation-provider-customizing-error-indication
 tags: validation, provider
 published: True
 position: 5 
@@ -10,9 +10,28 @@ position: 5
 
 # Customizing Error Indication
 
- 
+When a control is being validated and some of the validation rules fails, a tool tip indicating the error occurs:
 
-![customizing-error-indication 001](images/customizing-error-indication001.png) 
+![validation-provider-customizing-error-indication 001](images/validation-provider-customizing-error-indication001.png) 
+
+In addition, the **ControlValidation** event is fired. The **RadValidationEventArgs** offers the following information:
+
+* **ValidationHelperElement**: stores the styling information of the error indication. 
+* **IsValid**: determines whether the controls is validated or not. Even though the validation may fail according to the defined rules, you can determine that the situation is valid in certain cases and set it to *true*. *
+* **Control**: returns the control being validated. 
+* **ErrorImage**: specifies the error image that is being shown when the validation fails.  
+* **ErrorSvgImage**: specifies the error vector image that is being shown when the validation fails. 
+* **ToolTip**: gives you access to the error tooltip.
+* **ToolTipX** and **ToolTipY**: specifies the location of the tooltip. 
+* **ToolTipDuration**: specifies the duration how long the tooltip is being shown. 
+* **ValidationRule**: returns the rule that fails. 
+* **ErrorText**: specifies the error message. 
+* **ErrorTitle**: specifies the error title.
+* **DisplayIconAndToolTip**: controls whether to display icon and tooltip.
+* **EnableToolTipShadow**: controls whether the tooltip's shadow will be rendered.
+
+The **ToolTip** argument is represented by System.Windows.Forms.[ToolTip](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip?view=netcore-3.1). Hence, in order to change its font, fill color, etc, we will follow a standard approach with enabling the [OwnerDraw](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.ownerdraw?view=netcore-3.1) property:
+
 
 {{source=..\SamplesCS\ValidationProvider\ValidationProviderGettingStarted.cs region=CustomizingErrorIndication}} 
 {{source=..\SamplesVB\ValidationProvider\ValidationProviderGettingStarted.vb region=CustomizingErrorIndication}}
@@ -30,6 +49,7 @@ position: 5
 
 {{endregion}} 
 
+![validation-provider-customizing-error-indication 002](images/validation-provider-customizing-error-indication002.png) 
 
 
 # See Also
