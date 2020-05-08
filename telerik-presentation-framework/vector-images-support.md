@@ -149,3 +149,4 @@ You can easily change the default size of the SVG image by setting the following
 - **GetRasterImage()** - Returns a raster bitmap with the default width and height for the loaded SVG document.
 - **GetRasterImage(Size size)** - Returns a raster bitmap with a given width and height for the loaded SVG document.
 
+>note Since R2 2020 **ControlDefault** theme comes with SVG images by default.
