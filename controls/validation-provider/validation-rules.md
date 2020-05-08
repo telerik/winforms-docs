@@ -1,7 +1,7 @@
 ---
 title: Validation Rules
 page_title: Validation Rules | Validation Provider
-description:  
+description: RadValidationProvider supports three types of validation rules all of which implements the IRadValidationRule interface. 
 slug: validation-provider-validation-rules
 tags: validation, provider
 published: True
@@ -258,7 +258,7 @@ None of the associated controls (e.g. radSpinEditor1) of a composite rule should
 
 When the validation fails, the **ControlValidation** event is fired. The **RadValidationEventArgs** offers the following information:
 * **ValidationHelperElement**: stores the styling information of the error indication. 
-* **IsValid**: determines whether the controls is validated or not. Even though the validation may fail according to the defined rules, you can determine that the situation is valid in certain cases and set it to *true*. *
+* **IsValid**: determines whether the controls is validated or not. Even though the validation may fail according to the defined rules, you can determine that the situation is valid in certain cases and set it to *true*.
 * **Control**: returns the control being validated. 
 * **ErrorImage**: specifies the error image that is being shown when the validation fails.  
 * **ErrorSvgImage**: specifies the error vector image that is being shown when the validation fails. 
@@ -276,5 +276,6 @@ When the validation fails, the **ControlValidation** event is fired. The **RadVa
 
 * [Getting Started]({%slug validation-provider-getting-started%})
 * [Design Time]({%slug validation-provider-design-time%})
+* [Customizing Error Indication]({%slug validation-provider-customizing-error-indication%})
  
         

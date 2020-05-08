@@ -41,7 +41,11 @@ The **TruckRouteOptions** class offers the following settings:
 * **DateTime** - When specified and the route is optimized for timeWithTraffic, predictive traffic data is used to calculate the best route for the specified date time of departure.
 * **Tolerances** - A set of double values. Each value specifies a tolerance that is used to reduce the number of points needed to display a route on a map and still maintain the route shape. If a point is removed and the new route still falls within the specified tolerance of the old route, then the point is not included in the subset of points returned for that tolerance.
 * **VehicleSpec** - The attributes that describe a vehicle.
- 
+
+>note Since **R2 2020** the **TruckRouteOptions** offer specifying multiple **HazardousMaterials** and multiple **HazardousPermits** in the BingRestTruckRouteRequest.
+**VehicleHazardousPermits** = HazardousPermit.Gas | HazardousPermit.Explosive | HazardousPermit.Corrosive;
+**VehicleHazardousMaterials** = HazardousMaterial.Gas | HazardousMaterial.Explosive | HazardousMaterial.Corrosive
+> 
 
 ## Calculating the Truck route
 

@@ -1,7 +1,7 @@
 ---
 title: Customizing Error Indication
 page_title: Customizing Error Indication | Validation Provider
-description:  
+description: When a control is being validated and some of the validation rules fails, a tool tip indicating the error occurs. 
 slug: validation-provider-customizing-error-indication
 tags: validation, provider
 published: True
@@ -17,10 +17,10 @@ When a control is being validated and some of the validation rules fails, a tool
 In addition, the **ControlValidation** event is fired. The **RadValidationEventArgs** offers the following information:
 
 * **ValidationHelperElement**: stores the styling information of the error indication. 
-* **IsValid**: determines whether the controls is validated or not. Even though the validation may fail according to the defined rules, you can determine that the situation is valid in certain cases and set it to *true*. *
+* **IsValid**: determines whether the controls is validated or not. Even though the validation may fail according to the defined rules, you can determine that the situation is valid in certain cases and set it to *true*. 
 * **Control**: returns the control being validated. 
 * **ErrorImage**: specifies the error image that is being shown when the validation fails.  
-* **ErrorSvgImage**: specifies the error vector image that is being shown when the validation fails. 
+* **ErrorSvgImage**: specifies the error vector image that is being shown when the validation fails. It is recommended to set the **ImageLayout** property to *Stretch* to fit the image in an appropriate way. 
 * **ToolTip**: gives you access to the error tooltip.
 * **ToolTipX** and **ToolTipY**: specifies the location of the tooltip. 
 * **ToolTipDuration**: specifies the duration how long the tooltip is being shown. 
@@ -55,6 +55,7 @@ The **ToolTip** argument is represented by System.Windows.Forms.[ToolTip](https:
 # See Also
 
 * [Getting Started]({%slug validation-provider-getting-started%})
+* [Validation Rules]({%slug validation-provider-validation-rules%})
 * [Design Time]({%slug validation-provider-design-time%})
  
         

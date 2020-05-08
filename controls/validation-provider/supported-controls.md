@@ -37,11 +37,11 @@ The supported controls are:
 * **RadMultiColumnComboBox**
 * **DurationEditBox**
 
-
-
 # See Also
 
 * [Getting Started]({%slug validation-provider-getting-started%})
+* [Validation Rules]({%slug validation-provider-validation-rules%})
 * [Design Time]({%slug validation-provider-design-time%})
+* [Customizing Error Indication]({%slug validation-provider-customizing-error-indication%})
  
         

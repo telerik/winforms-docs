@@ -62,6 +62,8 @@ ThemeResolutionService.LoadPackageFile("C:\CustomTheme.tssp")
 
 {{endregion}} 
 
+>important Our **TelerikHelper** class has a static method that determines whether a theme is dark: TelerikHelper.**IsDarkTheme**(themeName). This method is used when an editor in grid activates (if theme is not dark, a white back color is applied to the editor) and the ribbon bars (RichTextEditor, Spreadsheet, Diagram), where different icons set is applied if the theme is dark. So, if you saved a custom theme with a name different from our predefined dark themes, this method, TelerikHelper.**IsDarkTheme**(themeName) will consider the theme as light. This is why in **R2 2020** we introduced a way to register a dark theme and to act as a dark theme everywhere: ThemeResolutionService.**RegisterDarkTheme**(string themeName).
+
 ## Applying a theme to an entire application
 
 {{source=..\SamplesCS\Themes\UsingCustomThemes.cs region=setting a theme for the whole application}} 

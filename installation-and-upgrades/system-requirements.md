@@ -16,3 +16,5 @@ The following page describes the system requirements needed by Telerik UI for Wi
 >tip Since R1 2019, .NET Core 3 is also supported. Download it from [here](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
 >important Since R1 2020, .NET Core 3.1 is also supported. Download it from [here](https://dotnet.microsoft.com/download/dotnet-core/3.1)       
+
+>important Since R2 2020, .NET Core 5 is also supported. Download it from [here](https://dotnet.microsoft.com/download/dotnet/5.0)   

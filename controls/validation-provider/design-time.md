@@ -1,7 +1,7 @@
 ---
 title: Design Time
 page_title: Design Time | Validation Provider
-description:  
+description: RadValidationProvider is a component which provides data validation management for editors in bound and unbound mode. 
 slug: validation-provider-design-time
 tags: validation, design time
 published: True
@@ -110,5 +110,5 @@ When you start the application and enter a price that doesn't meet the validatio
 
 * [Getting Started]({%slug validation-provider-getting-started%})
 * [Validation Rules]({%slug validation-provider-validation-rules%})
- 
+* [Customizing Error Indication]({%slug validation-provider-customizing-error-indication%})
         
