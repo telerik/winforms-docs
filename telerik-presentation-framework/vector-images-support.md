@@ -2,7 +2,7 @@
 title: Vector Images Support
 page_title: Support for vector graphics | Telerik Presentation Framework
 description: RadControls now support displaying vector graphics for building high DPI applications
-slug: winforms/tpf/vector/images
+slug: winforms-tpf-vector-images
 tags: vector, images
 published: True
 position: 12
@@ -14,7 +14,7 @@ position: 12
 
 >note SVG image support is available only in .NET 4.0 and above.
 
-Here is an example with screenshots on different scaling monitors with **RadGridView** that contains two **GridViewImageColumns**: one column is with SVG image, the other with png image. You can notice that the second image column becomes blurry unlike the SVG column which looks fine even on high scaling:
+Here is an example with screenshots on different scaling monitors with **RadGridView** that contains two **GridViewImageColumns**: one column is with SVG image, the other with png image. You can notice that the second image column becomes blurry unlike the SVG column which looks crisp and clear even on high scaling:
 
 ![svg-vs-image.png](images/svg-vs-image2.png)
 

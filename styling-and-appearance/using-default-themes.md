@@ -25,7 +25,7 @@ If you have installed the suite from the provided installation files, you will s
 
 ![themes-using-themes001](images/themes-using-themes001.png)
 
->note Since R2 2020 **ControlDefault** theme offers additional set of images - SVG images. Clients now are able to choose whether to display SVG or Raster Images in **ControlDefault** theme. By default, SVG images are displayed. More information is available [here]({%slug winforms/tpf/vector/images%}).
+>note Since R2 2020 **ControlDefault** theme offers additional set of images - SVG images. Clients now are able to choose whether to display SVG or Raster Images in **ControlDefault** theme. By default, SVG images are displayed. More information is available [here]({%slug winforms-tpf-vector-images%}).
 
 In order to use the Theme components, just drag and drop them from the VS Toolbox to the form. This will add a reference to the corresponding theme assembly in the project and will enable the theme in the ThemeName drop-down of all Telerik controls on the form. All you have to do afterwards is to set the needed theme from the __ThemeName__ drop-down (in the smart tag) or programmatically.
 
