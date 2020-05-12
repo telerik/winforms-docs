@@ -38,12 +38,62 @@ The **ToolTip** argument is represented by System.Windows.Forms.[ToolTip](https:
 
 ````C#
 
+private void radValidationProvider1_ControlValidation(object sender, RadValidationEventArgs e)
+{
+    e.ToolTip = new ToolTip();
+    e.ToolTip.OwnerDraw = true;
+    e.ToolTip.Draw += ToolTip_Draw;
+    e.ToolTip.Popup += ToolTip_Popup;
+    toolTipText = e.ValidationRule.ToolTipText;
+}
+
+private void ToolTip_Popup(object sender, PopupEventArgs e)
+{
+    Graphics g = e.AssociatedControl.CreateGraphics();
+    Size preferredSize = g.MeasureString(toolTipText, f).ToSize();
+    e.ToolTipSize = preferredSize;
+    g.Dispose(); 
+}
+
+Font f = new Font("Arial", 16.0f);
+string toolTipText = string.Empty;
+private void ToolTip_Draw(object sender, DrawToolTipEventArgs e)
+{
+    ToolTip toolTip = sender as ToolTip;
+    toolTip.BackColor = System.Drawing.Color.Green;
+    e.DrawBackground();
+    e.DrawBorder();
+    e.Graphics.DrawString(e.ToolTipText, f, Brushes.Pink, new PointF(1, 1)); 
+}
 
 
 ````
 ````VB.NET
+Private Sub radValidationProvider1_ControlValidation(ByVal sender As Object, ByVal e As RadValidationEventArgs)
+    e.ToolTip = New ToolTip()
+    e.ToolTip.OwnerDraw = True
+    AddHandler e.ToolTip.Draw, AddressOf ToolTip_Draw
+    AddHandler e.ToolTip.Popup, AddressOf ToolTip_Popup
+    toolTipText = e.ValidationRule.ToolTipText
+End Sub
 
+Private Sub ToolTip_Popup(ByVal sender As Object, ByVal e As PopupEventArgs)
+    Dim g As Graphics = e.AssociatedControl.CreateGraphics()
+    Dim preferredSize As Size = g.MeasureString(toolTipText, f).ToSize()
+    e.ToolTipSize = preferredSize
+    g.Dispose()
+End Sub
 
+Private f As Font = New Font("Arial", 16.0F)
+Private toolTipText As String = String.Empty
+
+Private Sub ToolTip_Draw(ByVal sender As Object, ByVal e As DrawToolTipEventArgs)
+    Dim toolTip As ToolTip = TryCast(sender, ToolTip)
+    toolTip.BackColor = System.Drawing.Color.Green
+    e.DrawBackground()
+    e.DrawBorder()
+    e.Graphics.DrawString(e.ToolTipText, f, Brushes.Pink, New PointF(1, 1))
+End Sub
 
 ````
 
