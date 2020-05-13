@@ -22,6 +22,8 @@ The Telerik WinForms setup performs the following actions during the installatio
 
 * Checks the Visual Studio version(s) installed on the machine. We currently support Visual Studio 2005, 2008, 2010, 2012, 2013, 2015 and 2017 installations
 
+	>note R3 2018 SP1 (2018.3.1016) is the latest version where the installer handles VS 2005 and VS 2008. After this version, Telerik integration is installed on newer versions of Visual Studio.
+
 * Installs/adds all Telerik WinForms controls in the toolbox of Visual Studio
 
 * Installs Telerik UI for WinForms Visual Studio templates
