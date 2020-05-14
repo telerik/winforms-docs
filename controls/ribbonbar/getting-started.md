@@ -66,7 +66,7 @@ Having done that a __RadButtonElement__ is added to the *button group* that you
 
 1. Open the drop-down menu of the __DisplayStyle__ property and select __Image__.
 
-1. Open the drop-down menu of the __ImageIndex__ property and select __Italic__.
+1. Open the drop-down menu of the __ImageIndex__ property and select an image.
 
 1. Close the *Smart Tag* menu.
 
