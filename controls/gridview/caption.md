@@ -10,7 +10,7 @@ position: 12
 
 ## Title
 
-Since R3 2018 SP1 RadgridView supports displaying a Title(Caption). By default the Title is displayed on top. The position and the alignment of the title text can be easily changed. 
+Since R3 2018 SP1 RadGridView supports displaying a Title(Caption). By default the Title is displayed on top. The position and the alignment of the title text can be easily changed. 
 
 ![gridview-caption 001](images/gridview-caption001.png)
 
@@ -35,6 +35,8 @@ radGridView1.GridViewElement.TitleLabelElement.Font = New Font("Consolas", 12, F
 ```` 
 
 {{endregion}} 
+
+>note If the **TitleText** is set to an empty string, the GridViewElement.**TitleLabelElement** is collapsed. Otherwise, it is always shown and if you need to hide it, it is necessary to manage the GridViewElement.TitleLabelElement.**Visibility** property. 
 
 ## Changing the Position of the Title
 
