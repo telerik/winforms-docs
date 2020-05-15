@@ -35,7 +35,7 @@ The Create New Project Wizard lets you:
 
 >tip GET LATEST button is available only when there is a newer version released on our web site.
 >
->If you prefer the Telerik assemblies to be copied into your solution folder, the __Copy referenced assemblies to solution and source control__ option could be selected only into the [Visual Studio Extensions Options]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/options%}).
+>If you prefer the Telerik assemblies to be copied into your solution folder, the __Copy referenced assemblies to solution and source control__ option could be selected only into the [Visual Studio Extensions Options](https://docs.telerik.com/devtools/winforms/visual-studio-integration/visual-studio-extensions/options).
 >important Note that the "Enable HDPI" option is availaible from version 2019.1
 When you click the Finish button:
 
