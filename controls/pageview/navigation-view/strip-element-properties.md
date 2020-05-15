@@ -17,7 +17,7 @@ You can use the following properties to change the behavior of the Navigation Vi
 |__HamburgerButton__|Gives access to the menu button at the top|
 |__HeaderElement__|Gives access to the header element and the page title|
 |__Popup__|Gives access to the popup that contains all pages (shown in Minimal mode)|
-|__IsCollapsed__|Gets/sets the current state of the pages popup|
+|__IsCollapsed__|Gets the current state of the pages popup|
 |__DisplayMode__|Gets/Sets the display mode. The possible values are - *Auto*, *Compact*, *Expanded*and *Minimal*|
 |__HeaderHeight__|Gets/Sets the header height|
 |__ExpandedPaneWidth__|Gets/Sets the pages panel width when the mode is set to Expanded|
