@@ -153,4 +153,5 @@ It is possible to add groups at design time as well by either using the **Smart 
 * [Data Binding]({%slug winforms/listview/data-binding%})	
 * [Adding Groups]({%slug winforms/listview/working-with-design-time/adding-groups%})	
 * [Adding Columns]({%slug winforms/listview/working-with-design-time/adding-columns%})
+* [Selection]({%slug winforms/listview/features/selection%})	 
 		
