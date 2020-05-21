@@ -142,8 +142,8 @@ End Using
                 
     - *ExportAsHidden*: The exporter will export hidden rows as hidden in excel.
 
-    >note MS Excel does not support other ways of hiding a column/row different from setting its width to zero. To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__ or __HiddenRowOption__ property to *DoNotExport* :
-    >
+    >note MS Excel does not support other ways of hiding a column/row different from setting its width to zero. To avoid including hidden columns or rows in the exported excel file you could set __HiddenColumnOption__ or __HiddenRowOption__ property to *DoNotExport*.
+    
 
 * __PagingExportOption:__ Defines which pages to be exported, when paging is used in **RadGridView**.
 
