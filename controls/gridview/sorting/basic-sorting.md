@@ -46,6 +46,8 @@ TryCast(radGridView.MasterTemplate.ListSource.CollectionView, GridDataView).UseH
 
 **RadGridView** allows you to prevent the built-in data sorting operation but keep the sorting life cycle as it is, e.g. UI indication, **SortDescriptors** and events remain. This is controlled by the MasterTemplate.DataView.**BypassSort** property which default value is *false*. This means that **RadGridView** won't perform the sorting if you set it to *true*. This may be suitable for cases in which you bound the grid to a **DataTable** and you want to apply the sort direction to the **DataTable**, not to the grid itself. You can find below a sample code snippet:
 
+>caution In case you set the **BypassSort** property to **true** please ensure that the **BypassFilter** property is also set to the same value.
+
 #### Bypass default sorting
 
 {{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=BypassSorting}} 
