@@ -13,7 +13,7 @@ previous_url: richtexteditor-features-headers-and-footers
 
 __RadRichTextEditor__ supports **Headers** and **Footers** in its document when in *Paged* [layout mode]({%slug winforms/richtexteditor-/document-elements/raddocument%}).
       
->note Note that **Headers** and **Footers** are not persisted when exporting with **HtmlFormatProvider**. You can read more about this [here]({%slug winforms/richtexteditor/import-export/overview%})
+>note Note that **Headers** and **Footers** are not persisted when exporting with **HtmlFormatProvider**. You can read more about this [here](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/import-export/overview)
 >
 
 The topic contains the following sections:
@@ -186,7 +186,7 @@ Me.radRichTextEditor1.Document.HasDifferentEvenAndOddHeadersFooters = True
 
 **Headers** and **Footers** are only present in *Paged* layout mode, so the easiest way to remove them is to change the layout mode. In case you wish to show documents in paged mode and still disable headers and footers, you can do so by removing the UI layer responsible for their visualization - __HeaderFooterLayer__.
         
->tip The concept of UI layers and their usage are explained in [this article]({%slug winforms/richtexteditor-/how-to/customize-presentation-through-ui-layers%}).
+>tip The concept of UI layers and their usage are explained in [this article](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/how-to/customize-presentation-through-ui-layers).
 >
 
 {{source=..\SamplesCS\RichTextEditor\Features\HeadersAndFooters.cs region=custom}} 
