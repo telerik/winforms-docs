@@ -15,7 +15,7 @@ Thank you for choosing Telerik® UI for for WinForms!
 
 The Telerik® UI for WinForms controls suite includes over 140 UI controls that you can use to easily build unique and visually stunning Line of Business applications. Boasting a well-designed architecture and CAB support, Telerik UI for WinForms controls are perfectly suited for your Enterprise desktop development
 
-To read more about the benefits of using Telerik® UI for WinForms, please visit the [product overview page](https://www.telerik.com/products/winforms.aspx).
+To read more please visit the [Telerik® UI for WinForms](https://www.telerik.com/products/winforms.aspx) product overview page. 
 
 ## Getting Started
 
