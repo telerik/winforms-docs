@@ -15,7 +15,37 @@ Thank you for choosing Telerik UI for for WinForms!
 
 The Telerik UI for WinForms controls suite includes over 140 UI controls that you can use to easily build unique and visually stunning Line of Business applications. Boasting a well-designed architecture and CAB support, Telerik UI for WinForms controls are perfectly suited for your Enterprise desktop development
 
-To read more please visit the [Telerik UI for WinForms](https://www.telerik.com/products/winforms.aspx) product overview page. 
+To read more please visit the [Telerik UI for WinForms](https://www.telerik.com/products/winforms.aspx) product overview page.
+<style>
+/* download trial button */
+
+div#trial_button {
+    text-align: center !important;
+}
+
+div#trial_button .trialLink {	
+	color: #fff;
+	background-color: #e74b3c;
+	padding:.44em .9em .52em;
+	font-size: 20px;
+	font-weight:400;
+	letter-spacing:-.025em;
+	position:relative;
+	display:inline-block;
+	line-height:1.2;
+	-webkit-transition:color .2s ease,background-color .2s ease;
+	transition:color .2s ease,background-color .2s ease;
+	border-radius:2px;
+	-webkit-appearance:none;
+	font-family:Metric,Arial,Gadget,sans-serif;
+	text-align:center	
+}
+</style>
+
+<div id="trial_button">
+<br />
+<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-winforms" class="trialLink">Download Free Trial</a>
+</div> 
 
 ## Getting Started
 
@@ -26,10 +56,24 @@ If you are a new user, we recommend that you follow the [First Steps]({% slug wi
 Here are quick links to the control-specific sections of our documentation:
 
 {% include intro-page-table.html %}
-	
-## Licensing
 
-License agreement and detailed information about different licenses and which one you should purchase is explained in the [Licensing](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s) section.			
+## Trial Version and Commercial License
+
+Telerik UI for WinForms suite is a commercial UI library. You are welcome to explore its full functionality and get technical support from the team when you register for a free 30-day trial. To use it commercially, you need to [purchase a license](https://www.telerik.com/purchase.aspx). Feel free to review the Telerik UI for WinForm [License Agreement](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s) to get acquainted with the full terms of use.  
+
+## Support Options		
+
+For any issues you might encounter while working with UI for WinForms, use any of the available support channels:
+
+* License holders and active trialists can take advantage of our outstanding customer support delivered by the developers building the library. To submit a support ticket, use the [dedicated support system](https://www.telerik.com/account/support-tickets?pid=523&supcId=daf62541-57e0-b84c-8b5e-da9851c61873&fbp=false).
+* Our [forums](https://www.telerik.com/forums/winforms) are part of the free support you can get from the community and from the team on all kinds of general issues.
+* Our [feedback portal](https://feedback.telerik.com/winforms) provides information on the features/bugs in discussion and also the planned ones for release.
+* You may still need a tailor-made solution for your project. In such cases, go straight to [Progress Services](https://www.progress.com/services).
+
+## Learning Resources
+
+* [Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+* [Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)
 
 ## Installation and Deployment
 
@@ -40,6 +84,14 @@ To learn how to install Telerik UI for WinForms and for comprehensive list of ou
 To find how to customize the look of Telerik UI for WinForms and information on how to use our predefined themes visit the [Styling and Appearance]({%slug winforms/themes/using-default-themes%}) section.
 
 If you need further assistance you can post your question in the [WinForms forum] (https://www.telerik.com/forums/winforms) or use the [online ticketing system](https://www.telerik.com/account/login.aspx?ReturnUrl=%2faccount%2fsupport-tickets%2favailable-support-list.aspx).
+
+## Related Links
+
+* Telerik UI for WinForms product page - http://www.telerik.com/products/winforms/overview.aspx
+* Telerik UI for WinForms demos - https://demos.telerik.com/winforms/
+* Latest news for Telerik UI for WinForms - http://www.telerik.com/support/whats-new/winforms
+* Essential support - http://www.telerik.com/support
+* Creative ideas – https://www.telerik.com/blogs/tag/winforms
 
 ## Help us Improve the Telerik UI for WinForms Documentation
 
