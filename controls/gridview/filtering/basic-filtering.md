@@ -46,7 +46,8 @@ When filtering is enabled, each __GridViewDataColumn__ column displays a filte
 See [End-User capabilities - Filtering]({%slug winforms/gridview/end-user-capabilities/filtering%}) for more information about how the end-user experiences filtering.
 
 **RadGridView** allows you to prevent the built-in data filtering operation but keep the filtering life cycle as it is, e.g. UI indication, **FilterDescriptors** and events remain. This is controlled by the MasterTemplate.DataView.**BypassFilter** property which default value is *false*. This means that **RadGridView** won't perform the filtering. This may be suitable for cases in which you bound the grid to a DataTable and you want to apply the filter to the DataTable, not to the grid itself. You can find below a sample code snippet:
-#### Bypass default fitering
+
+#### Bypass default filtering
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=BypassFiltering}} 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=BypassFiltering}} 
