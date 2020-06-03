@@ -100,8 +100,13 @@ Next, you should build your solution and then ILMerge the built application exec
 
 >If the referenced assemblies are .NET 4.0 assemblies, you need to specify the targetplatform also:
    
-    ILMerge.exe /target:winexe /targetplatform:"v4, C:\Windows\Microsoft.NET\Framework\v4.0.30319"/out:MergedApplicationExecutable.exe AppliocationExecutable.exe Telerik.WinControls.dll Telerik.WinControls.UI.dll TelerikCommon.dll
+    ILMerge.exe /target:winexe /targetplatform:"v4, C:\Windows\Microsoft.NET\Framework\v4.0.30319" /out:MergedApplicationExecutable.exe AppliocationExecutable.exe Telerik.WinControls.dll Telerik.WinControls.UI.dll TelerikCommon.dll
             
+>note In case you encounter an error for duplicated types, please use the **/allowDup** flag:
+>
+>*ILMerge.exe /target:winexe /targetplatform:"v4, C:\Windows\Microsoft.NET\Framework\v4.0.30319" /out:MergedApplicationExecutable.exe /allowDup 1469949TestILMerge.exe Telerik.WinControls.dll Telerik.WinControls.UI.dll TelerikCommon.dll Telerik.WinControls.SpellChecker.dll* 
+
+![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows.gif)
 
 The MergedApplicationExecutable.exe is now a stand-alone application executable that does not need any additional references to the Telerik assemblies.
 
