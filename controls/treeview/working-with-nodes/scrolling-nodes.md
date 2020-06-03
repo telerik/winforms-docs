@@ -95,7 +95,7 @@ Me.RadTreeView1.EnableKineticScrolling = True
 
 ## Programmatically Scrolling
 
-__RadDropDownList__ provides out of the box functionality for programmatically scrolling its content. The available method is __ScrollToItem__ which scrolls to a specific item.
+__RadTreeView__ provides out of the box functionality for programmatically scrolling its content. The available method is __ScrollToItem__ which scrolls to a specific item.
           
 >caption Figure 2: Scroll to Item
 
