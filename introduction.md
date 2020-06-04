@@ -9,13 +9,13 @@ position: 0
 previous_url: overview, RadControlsForWinForms
 ---
 
-# Welcome to UI for WinForms
+# Welcome to Telerik UI for WinForms
 
 Thank you for choosing Telerik UI for for WinForms!
 
 The Telerik UI for WinForms controls suite includes over 140 UI controls that you can use to easily build unique and visually stunning Line of Business applications. Boasting a well-designed architecture and CAB support, Telerik UI for WinForms controls are perfectly suited for your Enterprise desktop development
 
-To read more please visit the [Telerik UI for WinForms](https://www.telerik.com/products/winforms.aspx) product overview page.
+To learn more please visit the [Telerik UI for WinForms](https://www.telerik.com/products/winforms.aspx) product overview page.
 <style>
 /* download trial button */
 
