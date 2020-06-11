@@ -75,7 +75,11 @@ Me.RadGridView1.Columns("Unit Price").ConditionalFormattingObjectList.Add(obj)
 >caution The declarative nature of Conditional Formatting limits the situations in which it can be used. While the provided functionality covers most scenarios, there are situations in which you will need to use [events]({%slug winforms/gridview/rows/formatting-rows%}).
 >
 
+**RadGridView** provides a convenient form which the end user could use to create formatting objects. You can show the form by using the header cells' context menu. To access and customize the dialog, you can use the **ConditionalFormattingFormShown** event. :
 
+![gridview-rows-conditional-formatting-rows 002](images/gridview-rows-conditional-formatting-rows002.png)
+
+![gridview-rows-conditional-formatting-rows 003](images/gridview-rows-conditional-formatting-rows003.png)
 
 # See Also
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})

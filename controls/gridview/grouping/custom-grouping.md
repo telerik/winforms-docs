@@ -209,10 +209,11 @@ The following example demonstrates how to use a custom grouping mechanism to gro
 
 ![gridview-grouping-custom-grouping 002](images/gridview-grouping-custom-grouping002.png)
 
-{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=applyPredicate}} 
-{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=applyPredicate}} 
+{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=PerformGrouping}} 
+{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=PerformGrouping}} 
 
 ````C#
+
 private object PerformGrouping(GridViewRowInfo row, int level)
 {
     string title = row.Cells["ContactTitle"].Value.ToString();
@@ -245,6 +246,7 @@ private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvalua
 
 ````
 ````VB.NET
+
 Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As Integer) As Object
     Dim title As String = row.Cells("ContactTitle").Value.ToString()
     Dim groupKey As String
@@ -270,10 +272,15 @@ End Sub
 {{endregion}} 
 
 
-{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=usingGroupPredicate1}} 
-{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=usingGroupPredicate1}} 
+You can apply the predicate as it is demonstrated in the following code snippet:
+
+
+{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=ApplyPredicate}} 
+{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=ApplyPredicate}} 
+
 
 ````C#
+
 private object PerformGrouping(GridViewRowInfo row, int level)
 {
     string title = row.Cells["ContactTitle"].Value.ToString();
@@ -306,6 +313,7 @@ private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvalua
 
 ````
 ````VB.NET
+
 Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As Integer) As Object
     Dim title As String = row.Cells("ContactTitle").Value.ToString()
     Dim groupKey As String
@@ -329,6 +337,7 @@ End Sub
 ````
 
 {{endregion}}
+
 # See Also
 * [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
 
