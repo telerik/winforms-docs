@@ -83,6 +83,8 @@ dialog.ShowDialog()
 
 {{endregion}} 
 
+>important As of **R2 2020 SP1** RadMarkupDialog offers the **RawValue** property. It returns the value as HTML of the underlying WebBrowser control.
+
 You can also set the default font size and name before showing the dialog using the __DefaultSize__ property:
 
 {{source=..\SamplesCS\TPF\RadMarkupDialogForm.cs region=DialogSetFont}} 

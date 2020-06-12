@@ -244,6 +244,8 @@ The result will be the following:
 Note that even though the clearSelection parameter is set to true, this will clear only the shape selection. The underlying cell selection will remain intact and will become visible in its previous state if the shape selection becomes empty.
 -->
 
+>important The static class [NameConverter}(https://docs.telerik.com/devtools/document-processing/api/telerik.windows.documents.spreadsheet.utilities.nameconverter) provides some methods for converting cell names to indexes and vice versa. You could use the method NameConverter.**ConvertCellNameToIndex** which takes the cell name (e.g. "a3") and returns the row and column index of the cell. 
+
 ## Selecting All Cells in a Worksheet
 
 The __Selection__ class also exposes a __SelectAll__ method that selects all cells in the worksheet. Keep in mind, though, that each worksheet contains over 16 000 columns and 1 000 000 rows. That said, performing a computationally intensive task on all cells may slow down the performance of RadSpreadsheet. To avoid such issues in performance crucial scenarios we highly recommend you to select only the __UsedCellRange__ of the worksheet. This is a property of Worksheet class that returns a CellRange starting from A1 to the bottom-right cell that comprises all cells containing a value.
