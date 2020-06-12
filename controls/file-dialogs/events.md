@@ -90,6 +90,31 @@ End Sub
 
 ![winforms/file-dialogs-eventss 002](images/file-dialogs-events002.png) 
 
+* **OpenFileDialogForm.DirectoryNavigating**: As of R1 2020 SP1, **RadFileDialogs** offer the **DirectoryNavigating** event. It occurs when the current folder is about to change. In the **DirectoryNavigatingEventArgs** you have access to the new directory path to be navigated via the **DirectoryPath** property. This event can be canceled. Hence, if the end-user doesn't have permissions for a specific folder, set the Cancel argument to *true*.
+
+####  Example 4: Cancel navigating to a specific directory
+
+````C#
+
+private void OpenFileDialog_DirectoryNavigating(object sender, Telerik.WinControls.FileDialogs.DirectoryNavigatingEventArgs e)
+{
+    if (e.DirectoryPath == @"C:\Program Files")
+    {
+        e.Cancel = true;
+    }
+}       
+           
+````
+````VB.NET
+
+Private Sub OpenFileDialog_DirectoryNavigating(ByVal sender As Object, ByVal e As Telerik.WinControls.FileDialogs.DirectoryNavigatingEventArgs)
+    If e.DirectoryPath = "C:\Program Files" Then
+        e.Cancel = True
+    End If
+End Sub
+
+````
+
 # See Also
 
 * [Network Locations]({%slug winforms/file-dialogs/features/network-locations%})
