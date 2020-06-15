@@ -244,7 +244,7 @@ The result will be the following:
 Note that even though the clearSelection parameter is set to true, this will clear only the shape selection. The underlying cell selection will remain intact and will become visible in its previous state if the shape selection becomes empty.
 -->
 
->important The static class [NameConverter}(https://docs.telerik.com/devtools/document-processing/api/telerik.windows.documents.spreadsheet.utilities.nameconverter) provides some methods for converting cell names to indexes and vice versa. You could use the method NameConverter.**ConvertCellNameToIndex** which takes the cell name (e.g. "a3") and returns the row and column index of the cell. 
+>important The static class [NameConverter](https://docs.telerik.com/devtools/document-processing/api/telerik.windows.documents.spreadsheet.utilities.nameconverter) provides some methods for converting cell names to indexes and vice versa. You could use the method NameConverter.**ConvertCellNameToIndex** which takes the cell name (e.g. "a3") and returns the row and column index of the cell. 
 
 ## Selecting All Cells in a Worksheet
 
