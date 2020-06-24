@@ -2,7 +2,7 @@
 title: How to Achieve Shadow Effect for BarSeries in ChartView
 description: This article demonstrates how to achieve shadow effect for BarSeries in ChartView
 type: how-to
-page_title:  
+page_title: How to Achieve Shadow Effect for BarSeries in ChartView  
 slug: shadow-effect-for-barseries-in-chartview
 position: 0
 tags: shadow, barseries, chartview
