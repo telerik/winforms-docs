@@ -87,7 +87,7 @@ End Sub
 
 ## Range
 
-This mode allows you to define one or more __Ranges__ with __Start__ and __End__ values.  In this mode there is a limitation that prevents the __Ranges__ to overlap each other. To display a second range, you should add the desired __Range (TrackBarRange)__ in the __Ranges__ collection of the control. For example:
+This mode allows you to define one or more __Ranges__ with __Start__ and __End__ values.  In this mode there the __Ranges__ cannot to overlap each other. To display a second range, you should add the desired __Range (TrackBarRange)__ in the __Ranges__ collection of the control. For example:
 
 {{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TrackBarModeRange}} 
 {{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TrackBarModeRange}} 
@@ -136,7 +136,7 @@ End Sub
 >important The __Ranges__ collection of **RadTrackBar** contains one default range that is used to display a default range for all modes. This collection should always contain at least one range, so if you execute the *Clear* method of the collection all ranges except the first one will be removed.
 >
 
->note When the mode is changed from __StartFromTheBeginning__ to something else, the __Radnges__ collection will be reset to prevent overlappings that are not allowed in the other modes.
+>note When the mode is changed from __StartFromTheBeginning__ to something else, the __Ranges__ collection will be reset to prevent overlappings that are not allowed in the other modes.
 >
 
 # See Also
