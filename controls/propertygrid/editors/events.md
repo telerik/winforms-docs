@@ -15,7 +15,7 @@ The following events occur during the editing process:
 
 * __EditorRequired__: This is the first event that fires when a cell is to become editable (in edit mode).
 
->note This is the right place to replace the editor with a custom one.[Here]({%slug winforms/propertygrid/editors/using-custom-editor%})is an example of this behavior.
+>note This is the right place to replace the editor with a custom one. [Here](https://docs.telerik.com/devtools/winforms/controls/propertygrid/editors/using-custom-editor) is an example of this behavior.
 >
 
 * __Editing__: Fires when the item is about to enter edit mode. You can cancel edit mode at this stage by setting the __Cancel__ property to *true*.
