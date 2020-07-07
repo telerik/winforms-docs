@@ -11,7 +11,7 @@ previous_url: gridview-columns-gridviewdatacolumn, /devtools/winforms/gridview/c
 
 # GridViewDataColumn
 
-**GridViewDataColumn** inherits from [GridViewColumn]({%slug winforms/gridview/columns/column-types/gridviewcolumn%}) and is the base class for all column types. Below is a list of the column types that **RadGridView** offers. All of them inherit from the **GridViewDataColumn** and enhance its capabilities:
+**GridViewDataColumn** inherits from [GridViewColumn]({%slug winforms/gridview/columns/column-types/gridviewcolumn%}) and is the base class for all column types. **GridViewDataColumn** is an abstract class and you can not use it in its pure form. Below is a list of the column types that **RadGridView** offers. All of them inherit from the **GridViewDataColumn** and enhance its capabilities:
 
 
 |Column's type|Data type|
@@ -34,9 +34,11 @@ previous_url: gridview-columns-gridviewdatacolumn, /devtools/winforms/gridview/c
 |[GridViewMultiComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmulticomboboxcolumn%})|represents a column that contain multi column combo boxes|
 
 
-By default, **RadGridView** will generate its columns automatically based on the underlying data source. For example if the column contains string values, **RadGridView** will create a **GridViewTextBoxColumn**, etc. Then, depending on the column's type, **RadGridView** activates an appropriate editor to handle cell's value changes. If you have a **GridViewTextBoxColumn** the editor is **RadTextBoxEditor**. A list with all supported editors is available [here]({%slug winforms/gridview/editors/default-editors%}).
+By default, **RadGridView** will generate its columns automatically based on the underlying data source. For example, if the column contains string values, **RadGridView** will create a **GridViewTextBoxColumn**, etc. Then, depending on the column's type, **RadGridView** activates an appropriate editor to handle the cell's value changes. If you have a **GridViewTextBoxColumn**, the editor is **RadTextBoxEditor**. A list with all supported editors is available [here]({%slug winforms/gridview/editors/default-editors%}).
 
->note **GridViewDataColumn** doesn't have associated editor. Each of the above mentioned column types have a default editor.
+>note **GridViewDataColumn** doesn't have associated editor. Each of the above mentioned column types has a default editor.
+
+The following table shows the properties that **GridViewDataColumn** offers:
 
 |Property|Description|
 |---|---|
