@@ -111,3 +111,5 @@ Me.RadGridView1.ShowGroupPanelScrollbars = True
 
 * [Using Grouping Expressions]({%slug winforms/gridview/grouping/using-grouping-expressions%})
 
+* [Show Summary Values for Collapsed Groups in RadGridView ]({%slug group-rows-with-summary-values%})
+

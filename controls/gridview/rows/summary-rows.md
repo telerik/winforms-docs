@@ -335,3 +335,5 @@ You can control the location of the bottom summary rows by the **BottomPinnedRow
 
 * [New Row]({%slug winforms/gridview/rows/new-row%})
 
+* [Show Summary Values for Collapsed Groups in RadGridView ]({%slug group-rows-with-summary-values%})
+
