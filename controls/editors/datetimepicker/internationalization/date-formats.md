@@ -43,7 +43,7 @@ The table below shows a list of patterns that can be combined to create custo
 |MMMM|The full name of the month, as defined in MonthNames.|
 |y|The year without the century. If the year without the century is less than 10, the year is displayed with no leading zero.|
 |yy|The year without the century. If the year without the century is less than 10, the year is displayed with a leading zero.|
-|yyy|The year in four digits, including the century.|
+|yyyy|The year in four digits, including the century.|
 |gg|The period or era. This pattern is ignored if the date to be formatted does not have an associated period or era string.|
 |h|The hour in a 12-hour clock. Single-digit hours will not have a leading zero.|
 |hh|The hour in a 12-hour clock. Single-digit hours will have a leading zero.|
