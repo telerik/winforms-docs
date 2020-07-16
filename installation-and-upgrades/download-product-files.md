@@ -50,3 +50,4 @@ In order to download these you need to take the following steps:
 # See Also
 
 * [Latest Internal Builds]({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%})
+* [How to Attach the Telerik Source Code to Your Project]({%slug attach-telerik-source-code-to-your-project%}) 
