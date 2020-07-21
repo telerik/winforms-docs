@@ -99,3 +99,5 @@ End Sub
 
 * [Painting and Drawing in Cells]({%slug winforms/gridview/cells/painting-and-drawing-in-cells%})
 
+* [Show Tooltips for Clipped Cell's Text]({%slug show-tooltips-for-clipped-cell-text%})
+
