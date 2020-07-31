@@ -33,3 +33,23 @@ position: 5
 - **UndoCommand**: Undoes the last action.
 - **SelectAllCommand**: Selects all the text.
 - **ToggleInsertModeCommand**: Toggles the insert mode.
+
+The following example demonstrates how you can use commands to navigate and delete the first occurrence of the "Telerik" word from the loaded text in code-behind.
+
+#### Example 1: Using commands in code-behind
+
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=Commands}} 
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=Commands}}
+
+````C#
+this.radSyntaxEditor1.Commands.NavigateNextMatchCommand.Execute("Telerik");
+this.radSyntaxEditor1.Commands.DeleteCommand.Execute(null);
+
+````
+````VB.NET
+Me.radSyntaxEditor1.Commands.NavigateNextMatchCommand.Execute("Telerik")
+Me.radSyntaxEditor1.Commands.DeleteCommand.Execute(Nothing)
+
+````
+
+{{endregion}}
