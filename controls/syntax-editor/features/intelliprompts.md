@@ -51,6 +51,8 @@ Me.RadSyntaxEditor1.SyntaxEditorElement.IntelliPrompts.CompletionListWindow.Pres
 #### Figure 1: Code completion
 ![features-intellipropmpts001](images/intelliprompts001.png)
 
+>note **CodeCompletionCommand** is being executed by **RadSyntaxEditor** when pressing `Space`+`Control` keys. It shows the **CompletionListWindow**. An alternative solution is to display the dialog programmatically by simply calling the SyntaxEditorElement.IntelliPrompts.CompletionListWindow.**Show** method.
+
 ## Overload List
 
 Through the **OverloadListWindow** you can show a collection of overloads when the user tries to invoke a certain method. To do so, you need to first populate its presenter's **OverloadListItems** collection. Thanks to the [HTML-like text formatting]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}) that Telerik Presentation Framework provides it is possible to apply advanced styling mechanism to display formatted text as font style, font color, font size, etc.

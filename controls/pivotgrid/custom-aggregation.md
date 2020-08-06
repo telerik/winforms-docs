@@ -13,10 +13,12 @@ position: 12
 __RadPivotGrid__ is designed to aggregate data and it provides an API for assigning special aggregation functions performing custom calculations. For the purpose of this example we will use a __LocalDataSourceProvider__ object and we will bind the pivot control to the *Orders* table from the *Northwind* database as explained [here]({%slug winforms/pivotgrid/populating-with-data/using-the-localsourcedataprovider%}).
 
 >caption Figure 1: Using the Built-in *Sum* function
->![pivotgrid-custom-aggregation 001](images/pivotgrid-custom-aggregation001.png)
+
+![pivotgrid-custom-aggregation 001](images/pivotgrid-custom-aggregation001.png)
 
 >caption Figure 2: Using the Custom *Sqrt Of Sum* function
->![pivotgrid-custom-aggregation 001](images/pivotgrid-custom-aggregation002.png)
+
+![pivotgrid-custom-aggregation 001](images/pivotgrid-custom-aggregation002.png)
 
 ## Defining a Custom Aggregation Function
 
@@ -236,6 +238,20 @@ Me.RadPivotGrid1.DataProvider = dataProvider
 
 {{endregion}}
 
+
+{{endregion}}
+
+>important If you add calculated fields in code behind, you have to set the __ItemsSource__ of __LocalDataSourceProvider__ after  you have added all calculated fields or to wrap the code between (including setting the __ItemsSource__ ) __BeginInit/EndInit__ methods (or inside __using DeferRefresh() { ... }__ section ).
+>
+
+>caption Figure 2: Calculated Field in RadPivotGrid
+
+![pivotgrid-calculated-fields 002](images/pivotgrid-calculated-fields002.png)
+
+
+# See Also
+
 * [Calculated Fields]({%slug winforms/pivotgrid/calculated-fields%})
 * [Calculated Items]({%slug winforms/pivotgrid/calculated-items%})
 * [Custom Dialogs]({%slug winforms/pivotgrid/dialogs/custom-dialogs%})
+* [How to Add Weighted Average in RadPivotGrid]({%slug add-weighted-average-in-pivotgrid%})
