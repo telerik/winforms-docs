@@ -28,9 +28,9 @@ For simplicity of the calculations, this article will introduce an approach how 
 
 The default options in the **AggregateFunctions** enumeration allows you to define min, max, average, etc. Usually, custom aggregations are used to specify your own logic how exactly the aggregate value is calculated. The following help article demonstrates how to define a custom function which is not available in the built-in functions: [Custom Aggregation]({%slug winforms/pivotgrid/custom-aggregation%}). 
 
-The **AccumulateOverride** method is expected to accumulate the values, e.g. to sum the values. The **AccumulateOverride** in the aggregate class will be called asynchronously for each of the values extracted from the data source. Then, the **MergeOverride** method is responsible for merging the accumulated value with the values for any child aggregates they be should present.  
+The **AccumulateOverride** method is expected to accumulate the values, e.g. to sum the values. The **AccumulateOverride** in the aggregate class will be called asynchronously for each of the values extracted from the data source. Then, the **MergeOverride** method is responsible for merging the accumulated value with the values for any child aggregates they present should be.  
 
-To achieve a custom aggregate for **Sum(A)/Sum(B)**, we will need an empty [Calculated Fields]({%slug winforms/pivotgrid/calculated-fields%})  in order to have access to the entire DataRow in the **AccumulateOverride** method of the custom **AggregateValue** which is necessary to achieve the desired result.
+To achieve a custom aggregate for **Sum(A)/Sum(B)**, we will need an empty [Calculated Field]({%slug winforms/pivotgrid/calculated-fields%})  in order to have access to the entire DataRow in the **AccumulateOverride** method of the custom **AggregateValue** which is necessary to achieve the desired result.
  
 
 ````C#
