@@ -119,6 +119,17 @@ You can customize the execution of the algorithm of a concrete column by setting
 
 * BestFitColumnMode.*HeaderCells* - The column width adjusts to fit the contents of the header cell.
 
+## AutoSizeColumnsMode
+
+As of **R3 2020** RadListView offers the **AutoSizeColumnsMode** property which controls how the column widths in DetailsView are determined. The available options are:
+
+* ListViewAutoSizeColumnsMode.None: The column widths do not automatically adjust.
+* ListViewAutoSizeColumnsMode.Fill: The column widths adjust so that the widths of all columns exactly fill the display area of the control.
+
+|ListViewAutoSizeColumnsMode.None|ListViewAutoSizeColumnsMode.Fill|
+|----|----|
+|![listview-features-working-with-items 008](images/listview-features-working-with-items008.png)|![listview-features-working-with-items 009](images/listview-features-working-with-items009.png)|
+
          
 # See Also
 
