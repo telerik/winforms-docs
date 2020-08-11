@@ -38,7 +38,8 @@
       var gcsInstance = '001595215763381649090:j4fvrr1zs78';
       var gcsKey = 'AIzaSyBZzxQ7Ee4qogDASZ_D0uVnVlepiz_PbsM';
       isKbPage =  false ;
-      siteHasKbPortal = 'true'
+      siteHasKbPortal = 'true';
+         showSearchPopup = false;
    </script>
    <script type="text/javascript" src="/devtools/winforms/assets/search-results.js"></script>
   </div>
