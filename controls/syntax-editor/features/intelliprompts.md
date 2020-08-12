@@ -90,3 +90,7 @@ Me.RadSyntaxEditor1.SyntaxEditorElement.IntelliPrompts.OverloadListWindow.Show()
 
 #### Figure 2: Code completion
 ![features-intellipropmpts001](images/intelliprompts002.png) 
+
+# See Also
+
+* [Conditional Intelliprompts in SyntaxEditor]({%slug conditional-intelliprompts-in-syntaxeditor%}) 
