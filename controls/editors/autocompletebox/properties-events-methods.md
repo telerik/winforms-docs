@@ -20,6 +20,7 @@ position: 8
 |__AutoCompleteDataSource__|Gets or sets a value specifying the source of complete items used for automatic completion.|
 |__AutoCompleteDisplayMember__| Gets or sets the auto complete display member.|
 |__Multiline__|Gets or sets a value indicating whether this is a multi-line text box.|
+|**AllowDuplicates**|Gets or sets whether already selected items can be suggested.|
 
 |__Event__|__Description__|
 |---|---|
@@ -27,6 +28,7 @@ position: 8
 |__CreateTextBlock__|Occurs when an instance of ITextBlock is created.|
 |__TextBlockFormatting__|Allows you to change the styles if the text blocks.|
 |__TextChanging__|Occurs when the text is changing.|
+|** **||
 
 
 
