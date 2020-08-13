@@ -11,7 +11,7 @@ previous_url: menus-context-menu-getting-started
 
 # Context Menus
 
-To implement context menus use __RadContextMenu__ in your application. __RadContextMenu__ is a non-visual component that sits in the component tray located below the form design surface. __RadContextMenu__, like __RadMenu__, can be themed and has an items collection that accepts __RadMenuItem__, __RadMenuComboBoxItem__, __RadMenuSeparatorItem__ and __RadMenuContextItem__. 
+To implement context menus use __RadContextMenu__ in your application. __RadContextMenu__ is a non-visual component that sits in the component tray located below the form design surface. __RadContextMenu__, like __RadMenu__, can be themed and has **Items** collection that accepts __RadMenuItem__, __RadMenuComboBoxItem__, __RadMenuSeparatorItem__ and __RadMenuContextItem__. You can subscribe to the **Click** event of each menu item and execute the desired logic.
 
 >caption Figure 1: RadContextMenu
 
