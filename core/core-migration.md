@@ -2,7 +2,7 @@
 title: Migrating to .NET Core 
 page_title: Migrating to .NET Core  | RadTabbedForm
 description:   
-slug: core-getting-started
+slug: core-migration
 tags: core, getting, started
 published: True
 position: 3
