@@ -16,6 +16,8 @@ position: 4
 * **RadValidationRuleWithTargetControl**: allows you to define validation logic of a control against a second control, e.g. if you have two **RadDateTimePicker** controls for selecting start/end date and you need to ensure that start date is less than end date. 
 * **RadCompositeValidationRule**: allows defining more complex validation logic by adding multiple simpler **RadValidationRules**.
 
+>note As of **R3 2020** RadValidationProvider supports nested PropertyNames to validate, e.g. **Text.Length**.
+
 ## RadValidationRule
 
 **RadValidationRule** requires the following properties to be set in order to define a validation logic for a single control:

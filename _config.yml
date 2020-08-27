@@ -1234,6 +1234,9 @@ navigation:
     controls/syntax-editor/features/taggers:
         title: Taggers
         position: 8
+    controls/task-dialog:
+        title: Task Dialog
+        position: 479
     controls/track-and-status-controls:
         title: Track and Status controls
         position: 480

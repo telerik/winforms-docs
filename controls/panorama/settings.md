@@ -22,6 +22,7 @@ previous_url: panorama-settings
 |**ScrollingBackground**|Gets or sets a value indicating whether the background image should be scrolled along with the tiles.|
 |**ScrollBarAlignment**|Gets or sets the position on which the scroll bar should be aligned.|
 |**ScrollBarThickness**|Gets or sets the thickness of the scroll bar.|
+|**MouseWheelScrollStep**|Gets or sets the step size that is used, when scrolling with the mouse wheel. The default value is 30.|
 |**PanoramaElement**|Gets the RadPanoramaElement that represents the main element of the control.|
 |**PanelImage**|Gets or sets the image that is displayed in the background.|
 |**PanelImageSize**|Gets or sets the size of the image that is displayed in the background.|

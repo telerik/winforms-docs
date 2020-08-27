@@ -40,6 +40,8 @@ This article will give you getting started experience with **RadValidationProvid
 
 	>note The data type of the **Value** can be specified after entering a value first and then selecting the type from the drop down. 
 
+	>note As of **R3 2020** RadValidationProvider supports nested PropertyNames to validate, e.g. **Text.Length**.
+
 7. If you start the application now, focus the **RadTextBox** control, leave it empty and try to navigate to another control, the validation will fail. It would be necessary to enter some text before proceeding further:
 
 	![validation-provider-getting-started 006](images/validation-provider-getting-started006.png) 
