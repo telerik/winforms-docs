@@ -10,8 +10,7 @@ position: 2
 
 # Getting Started
 
-**RadTaskDialog** is the component used by the developers. It contains a **RadTaskDialogForm** and shows it using a predefined API. It also exposes the most used properties, methods and events of the **RadTaskDialogForm**. **RadTaskDialogForm** has a single control on it called **RadTaskDialogControl**, which is docked and occupies the whole space. The **RadTaskDialogControl** contains one main element, **RadTaksDialogControlElement**. This
-**RadTaskDialogControlElement** consists of one single child – a page that simulates paging (something like a very simple [RadWizard]({%slug winforms/wizard%}) control). The **RadTaskDialogPage** contains the main UI elements and defines the layout logic. 
+Before proceeding further with this article, it is recommended to get familiar with the internal structure of **RadTaskDialog** and how the elements are being organized: [Task Dialog's Structure]({%slug task-dialog-structure%})
 
 This article will walk you through the creation of a sample task dialog that contains a link button, several radio buttons, a progress bar and collapsible information in the footer via code.
 
