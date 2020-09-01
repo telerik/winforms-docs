@@ -22,5 +22,6 @@ The picture below illustrates the inner structure and organization of the elemen
 
 * [Getting Started]({%slug task-dialog-getting-started%})
 * [Overview]({%slug task-dialog-overview%})
+* [Element Types]({%slug task-dialog-element-types%})
  
         

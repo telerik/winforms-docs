@@ -162,5 +162,6 @@ AddHandler linkButton.Click, New EventHandler(Function(sender As Object, e As Ev
 # See Also
 
 * [Structure]({%slug task-dialog-structure%})
+* [Element Types]({%slug task-dialog-element-types%})
  
         
