@@ -82,6 +82,8 @@ The **State** property is of type **RadTaskDialogProgressBarState** which offers
 
 ````
 
+{{endregion}}
+
 ## RadTaskDialogVerificationCheckBox
 
 **RadTaskDialogVerificationCheckBox** represents a check box shown in the collapsible command area of a **RadTaskDialog**. Appropriate for simple choices such as *"Do not show this dialog again"*.
@@ -126,6 +128,8 @@ The **State** property is of type **RadTaskDialogProgressBarState** which offers
 
 ````
 
+{{endregion}}
+
 ## RadTaskDialogCommandLinkButton
 
 **RadTaskDialogCommandLinkButton** represents a flat button positioned in the content area of the page.
@@ -167,6 +171,8 @@ The **State** property is of type **RadTaskDialogProgressBarState** which offers
        
 
 ````
+
+{{endregion}}
 
 ## RadTaskDialogRadioButton
 
@@ -215,6 +221,8 @@ Adding multiple **RadTaskDialogRadioButtons** allows users to choose from differ
        
 
 ````
+
+{{endregion}} 
 
 ## RadTaskDialogButton
 
@@ -272,6 +280,8 @@ Adding multiple **RadTaskDialogRadioButtons** allows users to choose from differ
         RadTaskDialog.ShowDialog(page)    
 
 ````
+
+{{endregion}}
 
 # See Also
 

@@ -37,6 +37,8 @@ position: 4
 
 ````
 
+{{endregion}}
+
 You can find listed below the available built-in icons:
 
 * RadTaskDialogIcon.**None** - no icon is displayed
@@ -108,6 +110,8 @@ If none of the built-in icons fits your needs, it is possible to construct your 
         RadTaskDialog.Show(page)  
 
 ````
+
+{{endregion}}
 
 # See Also
 

@@ -127,6 +127,8 @@ RadTaskDialog.ShowDialog(page)
 
 ````
 
+{{endregion}}
+
 ## Multiple Pages
 
 **RadTaskDialogPage** offers the **Navigate** method which allows you to navigate from the current page to another page and thus simulate a simple wizard. 
@@ -158,6 +160,8 @@ AddHandler linkButton.Click, New EventHandler(Function(sender As Object, e As Ev
 
 
 ````
+
+{{endregion}}
 
 # See Also
 
