@@ -22,10 +22,6 @@ Below is a sample implementation of an English localization provider:
 
 #### Localizing Task Dialog
 
-{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=myEnglishLocalizationProvider}} 
-{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=myEnglishLocalizationProvider}}
-
-
 ````C#
  public class EnglishRadTaskDialogLocalizationProvider : RadTaskDialogLocalizationProvider
 {
@@ -98,20 +94,15 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=SetProvider}} 
-{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=SetProvider}}
-
 
 ````C#
-     
+ RadTaskDialogLocalizationProvider.CurrentProvider = new EnglishRadTaskDialogLocalizationProvider();    
 
 ````
 ````VB.NET
-  
+ RadTaskDialogLocalizationProvider.CurrentProvider = New EnglishRadTaskDialogLocalizationProvider() 
 
 ````
-
-{{endregion}}
 
 # See Also
 
