@@ -22,8 +22,8 @@ Below is a sample implementation of an English localization provider:
 
 #### Localizing Task Dialog
 
-{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=Localization}} 
-{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=Localization}}
+{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=myEnglishLocalizationProvider}} 
+{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=myEnglishLocalizationProvider}}
 
 ````C#
      
