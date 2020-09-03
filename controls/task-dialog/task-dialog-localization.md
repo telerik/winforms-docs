@@ -40,8 +40,8 @@ To apply the custom localization provider, instantiate and assign it to the curr
 
 #### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=ApplyProvider}} 
-{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=ApplyProvider}}
+{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=SetProvider}} 
+{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=SetProvider}}
 
 ````C#
      
