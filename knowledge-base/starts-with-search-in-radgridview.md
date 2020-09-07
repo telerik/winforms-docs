@@ -32,6 +32,23 @@ All you need to do, is to create a custom **GridViewSearchRowInfo**. Subscribe t
 
 
 ````C#
+public RadForm1()
+{
+    InitializeComponent();
+
+    this.radGridView1.AllowSearchRow = true;
+
+    this.radGridView1.CurrentRowChanging += RadGridView1_CurrentRowChanging;
+}
+
+private void RadGridView1_CurrentRowChanging(object sender, CurrentRowChangingEventArgs e)
+{
+    if (e.NewRow is GridViewSearchRowInfo)
+    {
+        e.Cancel = true;
+    }
+}
+
 
 private void radGridView1_CreateRowInfo(object sender, GridViewCreateRowInfoEventArgs e)
 {
@@ -56,6 +73,22 @@ public class CustomSearchRow : GridViewSearchRowInfo
 
 ````
 ````VB.NET
+
+Sub New()
+
+    InitializeComponent()
+
+    Me.RadGridView1.AllowSearchRow = True
+
+    AddHandler Me.RadGridView1.CurrentRowChanging, AddressOf RadGridView1_CurrentRowChanging
+End Sub
+
+Private Sub RadGridView1_CurrentRowChanging(sender As Object, e As CurrentRowChangingEventArgs)
+    If TypeOf e.NewRow Is GridViewSearchRowInfo Then
+        e.Cancel = True
+    End If
+End Sub
+    
 
  Private Sub RadGridView1_CreateRowInfo(sender As Object, e As Telerik.WinControls.UI.GridViewCreateRowInfoEventArgs) _
     Handles RadGridView1.CreateRowInfo
