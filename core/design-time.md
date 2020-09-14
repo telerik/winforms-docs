@@ -23,10 +23,11 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 * **Target .NET 5.0 in your project**
 
 RadGridView .NET Core Designer
+
 ![core-designer001](images/core-designer001.png)
 
 
->note The toolbox is populated according the UI controls added to the referenced NuGet package/s.  
+>note The toolbox is populated from the UI controls added to the referenced NuGet package/s.  
 >
 
 >important As the *AllControls* package contains all UI controls it should not be mixed with other packages containing the same UI controls.
