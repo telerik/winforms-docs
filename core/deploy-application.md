@@ -1,6 +1,6 @@
 ---
 title: Deploying WinForms .NET Core Application
-page_title: Deploying WinForms .NET Core Application  | RadTabbedForm
+page_title: Deploying WinForms .NET Core Application  | NET Core
 description:   
 slug: core-getting-started
 tags: deploy, WinForms application, .NET Core

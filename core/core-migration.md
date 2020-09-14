@@ -1,6 +1,6 @@
 ---
 title: Migrating to .NET Core 
-page_title: Migrating to .NET Core  | RadTabbedForm
+page_title: Migrating to .NET Core  | NET Core
 description:   
 slug: core-migration
 tags: core, getting, started

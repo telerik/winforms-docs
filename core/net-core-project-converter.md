@@ -1,6 +1,6 @@
 ---
 title: .NET Core Project Converter
-page_title: .NET Core Project Converter | UI for WinForms
+page_title: .NET Core Project Converter | NET Core
 description:   
 slug: net-core-project-converter
 tags: convert, WinForms application, .NET Core
