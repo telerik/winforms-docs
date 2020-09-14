@@ -23,7 +23,18 @@ To create your custom __RadContextMenu__, add its' __RadMenuItems__, set their p
 {{source=..\SamplesVB\PageView\HowTo.vb region=createContextMenu}} 
 
 ````C#
- 
+private RadContextMenu contextMenu;
+
+public MyForm()
+{
+    InitializeComponent();
+    
+    ...
+    
+    contextMenu = new RadContextMenu();
+    CreateContextMenu();
+}
+
 private void CreateContextMenu()
 {
     RadMenuItem addNewTabMenuItem = new RadMenuItem();
@@ -48,6 +59,15 @@ private void CreateContextMenu()
 
 ````
 ````VB.NET
+Private contextMenu As RadContextMenu
+
+Public Sub New()
+    InitializeComponent()
+    ...
+    contextMenu = New RadContextMenu()
+    CreateContextMenu()
+End Sub
+
 Private Sub CreateContextMenu()
     Dim addNewTabMenuItem As New RadMenuItem()
     addNewTabMenuItem.Text = "Add New Tab"
