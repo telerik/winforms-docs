@@ -22,7 +22,7 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
      - Telerik UI for Winforms R3 2020 or newer and it should contain a UI control
 * Target .NET 5.0 in your project
 
->caption Figure 1: .NET Core Designer
+>caption Figure 1: RadGridView .NET Core Designer
 
 ![core-designer001](images/core-designer001.png)
 
