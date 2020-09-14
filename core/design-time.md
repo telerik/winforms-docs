@@ -18,7 +18,7 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 
 *  **Visual Studio 2019 Preview, version 16.8 Preview 3 or newer**: [https://visualstudio.microsoft.com/vs/preview](https://visualstudio.microsoft.com/vs/preview/)
     - Don’t forget to enable the designer in *Tools > Options > Environment > Preview Features*.
-* **Telerik UI for WinForms NuGet installed in the project**: [https://docs.telerik.com/devtools/aspnet-ajax/installation/installing-the-telerik-controls-from-nuget-package](https://docs.telerik.com/devtools/aspnet-ajax/installation/installing-the-telerik-controls-from-nuget-package)
+* **Telerik UI for WinForms NuGet installed in the project**: [https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-using-nuget](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-using-nuget)
      - Telerik UI for Winforms R3 2020 or newer and it should contain a UI control
 * **Target .NET 5.0 in your project**
 
