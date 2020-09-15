@@ -33,7 +33,7 @@ RadGridView .NET Core Designer
 >important As the *AllControls* package contains all UI controls it should not be mixed with other packages containing the same UI controls.
 >
 
-### What`s coming next 
+## What`s coming next 
 
 * Support for .NET Core 3.1
 * Custom glyphs
