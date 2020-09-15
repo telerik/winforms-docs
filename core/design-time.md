@@ -17,10 +17,10 @@ Telerik UI for WinForms supports the Visual Studio .NET Core WinForms designer. 
 The design time assemblies in .NET Core are resolved via the installed in the project NuGet packages. In order use the new designers, please make sure that the following requirements are met:
 
 *  **Visual Studio 2019 Preview, version 16.8 Preview 3 or newer**: [https://visualstudio.microsoft.com/vs/preview](https://visualstudio.microsoft.com/vs/preview/)
-    - Don’t forget to enable the designer in *Tools > Options > Environment > Preview Features*.
+    - Don’t forget to enable the designer in *Tools > Options > Environment > Preview Features*
 * **Telerik UI for WinForms NuGet installed in the project**: [https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-using-nuget](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-using-nuget)
      - Telerik UI for Winforms R3 2020 or newer and it should contain a UI control
-* **Target .NET 5.0 in your project**
+* **Target .NET 5.0 in your project**: [https://docs.microsoft.com/en-us/dotnet/standard/frameworks#net-5-os-specific-tfms](https://docs.microsoft.com/en-us/dotnet/standard/frameworks#net-5-os-specific-tfms)
 
 RadGridView .NET Core Designer
 
