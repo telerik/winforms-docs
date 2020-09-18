@@ -30,8 +30,6 @@ Me.RadSyntaxEditor1.SyntaxEditorElement.EditorFontFamily = New Telerik.WinContro
 
 ````
 
-{{endregion}}
-
 These properties, however, will be applied to the line numbers, editor presenter and intelliprompt parts of the control.
 
 ![syntax-editor-features-fonts001](images/syntax-editor-features-fonts001.png)
@@ -55,6 +53,8 @@ Me.RadSyntaxEditor1.SyntaxEditorElement.UseMonospacedFontOptimization = True
 
 ````
 
-{{endregion}}
+
+
+
 
  
