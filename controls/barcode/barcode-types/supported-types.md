@@ -35,6 +35,8 @@ The linear (one dimensional) barcodes are made up of lines and spaces of various
 |**EAN 13**|Used with consumer products internationally, 13 characters|
 |**GS1-128**|Formerly known as UCC-128 and EAN-128. Used to encode shipping/product information  *(more info in 1D Barcodes)|
 |**Postnet**|Printed by U.S. Post Office on envelopes|
+|**Planet** |The Postal Alpha Numeric Encoding Technique (PLANET) barcode was used by the United States Postal Service to identify and track pieces of mail during delivery - the Post Office's "CONFIRM" services. It was fully superseded by Intelligent Mail Barcode by January 28, 2013.|
+|**Intelligent Mail**|The Intelligent Mail Barcode (IM barcode) is a 65-bar barcode for use on mail in the United States. The IM barcode is intended to provide greater information and functionality than its predecessors POSTNET and PLANET.|
 |**UPC A**|Used with consumer products in U.S., 12 characters|
 |**UPC E**|Short version of UPC symbol, 6 characters|
 |**UPC Supplement 2**|Used to indicate magazines and newspaper issue numbers|
