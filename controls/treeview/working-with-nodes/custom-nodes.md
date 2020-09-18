@@ -17,7 +17,6 @@ With __RadTreeView__ you can create custom nodes and display them instead of the
 ![treeview-working-with-nodes-custom-nodes 001](images/treeview-working-with-nodes-custom-nodes001.png)
 
 To create this example you can first prepare a project by following the steps in [this article]({%slug winforms/treeview/data-binding/binding-to-database-data%})
->
 
 
 1\. First we can create a custom __TreeNodeContentElement__ class which contains the main elements for the custom node. These elements are created and initialized in the __CreateChildElements__ method. Also the __Synchronize__ method is overridden for setting the elements properties in accordance with the corresponding data:
