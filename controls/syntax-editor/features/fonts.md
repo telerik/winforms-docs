@@ -14,7 +14,7 @@ position: 7
 
 #### Example 1: Setting font properties
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= Font }}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= Font}}
 {{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.vb region= Font}}
 
 ````C#
@@ -42,7 +42,7 @@ When the used font is **Consolas**, **Courier New** or **Lucida Console**, you c
 
 #### Example 2: Enabling monospaced font optimization
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= Optimization }}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= Optimization}}
 {{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.vb region= Optimization}}
 
 ````C#
