@@ -25,7 +25,7 @@ The same approaches can be adopted when formatting the table:
 
 ## Creating a Table Programmatically via RadRichTextEditor's API
 
->tip To learn more about the __Formatting API__ of the __RadRichTextEditor__ , read [this topic]({%slug winforms/richtexteditor-/getting-started/formatting-api%}).
+>tip To learn more about the __Formatting API__ of the __RadRichTextEditor__ , read [this topic](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/getting-started/formatting-api).
 >
 
 __RadRichTextEditor__ exposes a rich API, which allows you to use various methods to add, modify or delete elements from the __RadDocument__. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI.
