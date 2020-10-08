@@ -22,9 +22,20 @@ This article shows how to deploy a WinForms .NET Core Application using Visual S
    
 ![create-new-project-001](images/deploy-application001.png)
 
-2\. Select one of the application templates from the New Project Wizard. For this example, I use the excel-inspired template.
+2\. Select one of the application templates from the New Project Wizard. For this example, I use the Excel-Inspired template.
+Currently, Telerik WinForms .NET Core project templates support both .NET Core assembly references (2020.3.915.310) and .NET Core package references (2020.3.915.310 NuGet). 
 
 ![choose-template](images/deploy-application002.png)
+
+2a\. Choosing **2020.915.310** option and finishing the wizard will create a new Telerik WinForms Excel-Inspired project template with assembly references:
+
+![choose-template](images/deploy-application002a.png)
+![choose-template](images/deploy-application0021a.png)
+
+2b\. Choosing **2020.3.915.310 NuGet** distribution, the Telerik WinForms Excel-Inspired project template will use a package reference to the UI.for.WinForms.AllControls.NetCore.2020.3.915 NuGet package.
+
+![choose-template](images/deploy-application002b.png)
+![choose-template](images/deploy-application0021b.png)
 
 >caption Figure 1: Spreadsheet application created with the New Project Wizard
 
