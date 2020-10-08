@@ -22,7 +22,7 @@ While there are several ways to export the data from RadGridView, there is no di
 
 ## Solution 
 
-Use the RadSpreadProcessing library to read the file and import the data from it. The example assumes that the first line contains the column names and below them is the data. 
+Use the [RadSpreadProcessing]({%slug radspreadprocessing-overview%}) library to read the file and import the data from it. The example assumes that the first line contains the column names and below them is the data. 
 
 #### Create Data table from an Excel file
 
