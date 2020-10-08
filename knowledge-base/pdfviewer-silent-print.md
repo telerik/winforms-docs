@@ -74,6 +74,7 @@ Private Shared Sub RViewer_DocumentLoaded(ByVal sender As Object, ByVal e As Eve
     document.Print()
 End Sub
 ````
+>note If you don't assign the RadPrintDocument.PrintController property, then you get a default print controller. An instance of **PrintControllerWithStatusDialog** which displays the progress dialog, counting pages. If you don't want to show the small printing dialog counting the pages, you can initialize the RadPrintDocument.**PrintController** property to a new System.Drawing.Printing.**StandardPrintController** instance.
 
 # See Also
 
