@@ -79,6 +79,9 @@ navigation:
     controls/barcode/barcode-types/2d-barcodes:
         title: 2D Barcodes
         position: 2
+    controls/barcode/barcode-types/2d-barcodes/datamatrix:
+        title: Data Matrix
+        position: 2
     controls/breadcrumb:
         title: BreadCrumb
         position: 58
