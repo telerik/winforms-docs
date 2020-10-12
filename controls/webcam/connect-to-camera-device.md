@@ -12,6 +12,8 @@ position: 5
 
 If you have more than one camera devices, you can specify which device to use. The code snippet below demonstrates how to get the video and audio devices and initialize the camera with them.
 
+>important The RadWebCam.**AutoStart** property should be set to *false* if you want to initialize it with a specific camera device.
+
 To connect to a web cam manually, execute the following steps:
 
 1. Get the camera device. To do this, use the RadWebCam.**GetVideoCaptureDevices** static method.
