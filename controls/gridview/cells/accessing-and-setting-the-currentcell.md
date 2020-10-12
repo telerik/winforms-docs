@@ -56,7 +56,7 @@ Dim cell As GridDataCellElement = Me.RadGridView1.CurrentCell
 
 {{endregion}} 
 
-
+>note The **CurrentCell** property can be *null* when you don't have **CurrentRow** or **CurrentColumn.**
 
 # See Also
 * [Accessing Cells]({%slug winforms/gridview/cells/accessing-cells%})
