@@ -87,6 +87,8 @@ End Sub
 
 {{endregion}} 
 
+>note You can subscribe to the **Click** event of the newly added menu items and thus execute the desired action when a **RadMenuItem** is clicked.
+
 
 The result of combining the approaches from this article is shown on the screenshot below:
 
