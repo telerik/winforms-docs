@@ -28,6 +28,8 @@ Me.RadGridView1.TableElement.RowHeight = 50
 
 ![gridview-rows-adding-and-inserting-rows 002](images/row-resizing001.png)
 
+>note **GridViewRowInfo** offers three properties that allow you specifying the height of an individual data row: **Height**, **MinHeight**, **MaxHeight**. It controls the current height of the row, its minimum and maximum height respectively.
+
 #### Search Row Height
 
 ````C#
