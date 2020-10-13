@@ -11,7 +11,11 @@ previous_url: listview-export-data-spread-export
 
 # Spread Export
 
-__ListViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)  libraries to export the contents of __RadListView__ to *xlsx, csv, pdf* and *txt* formats. The list view is exported according to the current **ViewType**. All three view types can be exported. This article will explain in details the **SpreadExport**'s abilities and will demonstrate how you can use it.
+__ListViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview)  libraries to export the contents of __RadListView__ to *xlsx, csv, pdf* and *txt* formats. 
+
+>note As of **R3 2020 SP1** ListViewSpreadExport also supports exporting to *xls*.
+
+The list view is exported according to the current **ViewType**. All three view types can be exported. This article will explain in details the **SpreadExport**'s abilities and will demonstrate how you can use it.
 
 * [Exporting Data](#exporting-data)
 

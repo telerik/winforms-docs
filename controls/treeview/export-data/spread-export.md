@@ -11,7 +11,11 @@ previous_url: treeview-export-data-spread-export
 
 # Spread Export
 
-__TreeViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadTreeView__ to *xlsx, csv, pdf* or *txt* formats. This article will explain in detail the SpreadExport capabilities and will demonstrate how you can use it.
+__TreeViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadTreeView__ to *xlsx, csv, pdf* or *txt* formats. 
+
+>note As of **R3 2020 SP1** TreeViewSpreadExport also supports exporting to *xls*.
+
+This article will explain in detail the SpreadExport capabilities and will demonstrate how you can use it.
  
 * [Exporting Data](#exporting-data)
 

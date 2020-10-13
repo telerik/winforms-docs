@@ -11,7 +11,11 @@ previous_url: propertygrid-export-data-spreadexport
 
 # Spread Export
 
-__PropertyGridSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadPropertyGrid__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the SpreadExport abilities and will demonstrate how you can use it.
+__PropertyGridSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadPropertyGrid__ to *xlsx, csv, pdf* and *txt* formats. 
+
+>note As of **R3 2020 SP1** PropertyGridSpreadExport also supports exporting to *xls*.
+
+This article will explain in detail the SpreadExport abilities and will demonstrate how you can use it.
 
 * [Exporting Data](#exporting-data)
 

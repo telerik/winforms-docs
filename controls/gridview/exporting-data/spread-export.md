@@ -11,7 +11,11 @@ previous_url: gridview-exporting-data-spread-export
 
 # Spread export 
 
-__GridViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library to export the content of __RadGridView__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the **SpreadExport** abilities and will demonstrate how to use it.
+__GridViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library to export the content of __RadGridView__ to *xlsx, csv, pdf* and *txt* formats. 
+
+>note As of **R3 2020 SP1** GridViewSpreadExport also supports exporting to *xls*.
+
+This article will explain in detail the **SpreadExport** abilities and will demonstrate how to use it.
 
 * [Exporting Data](#exporting-data)
 
@@ -98,6 +102,10 @@ End Using
 {{endregion}} 
 
 >note As of **R1 2018 SP1** **GridViewSpreadExport** supports image exporting. The **ImageAlignment** property of the column is respected. However, have in mind that the ImageLayout.*Tile* is not supported.
+>
+
+>important Image export is not available in XLS format provider: [Xls Features](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/import-and-export-to-excel-file-formats/xls/features)
+>
 
 
 >caption Figure: Image export

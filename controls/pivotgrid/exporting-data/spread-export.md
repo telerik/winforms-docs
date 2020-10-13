@@ -11,7 +11,11 @@ previous_url: pivotgrid-export-srpead-export
 
 # Spread Export
 
-__PivotGridSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadPivotGrid__ to *xlsx, csv, pdf* and *txt* formats. This article will explain in detail the spread export abilities and will demonstrate how to use it.
+__PivotGridSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) libraries to export the contents of __RadPivotGrid__ to *xlsx, csv, pdf* and *txt* formats. 
+
+>note As of **R3 2020 SP1** PivotGridSpreadExport also supports exporting to *xls*.
+
+This article will explain in detail the spread export abilities and will demonstrate how to use it.
 
 * [Exporting Data](#exporting-data)
 
