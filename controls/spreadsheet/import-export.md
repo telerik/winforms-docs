@@ -19,6 +19,8 @@ Here is a list of all the formats supported in **RadSpreadsheet**:
 
 * **Xlsx**: Rich text format, which exports the whole content of a workbook: worksheets, formula values, formatting, hyperlinks etc.
 
+* **Xls**: Supported as of **R3 2020 SP1**. Rich text format, which exports the content of a workbook: worksheets, formula values, formatting, hyperlinks etc. Supported in older applications.
+
 * **Pdf**: Fixed format, which preserves the content of a workbook in independent from software or hardware manner.
 
 * **Csv** (comma separated): Plain text format that saves the content of the cells in the *active* worksheet. The format strips all formatting and keeps only the result values of cells. These values are separated by a *culture dependent* delimiter.
