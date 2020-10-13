@@ -46,4 +46,4 @@ The linear (one dimensional) barcodes are made up of lines and spaces of various
 
 The matrix code is a two-dimensional way for representing information. It can also be referred to as a 2D barcode or simply a 2D code. It is similar to the linear (one dimensional) barcode, but can represent more data per unit area.
 
-Currently, **RadBarcode** supports *QR Code* and *PDF417* matrix barcode types.
+Currently, **RadBarcode** supports *DataMatrix*, *QR Code* and *PDF417* matrix barcode types.
