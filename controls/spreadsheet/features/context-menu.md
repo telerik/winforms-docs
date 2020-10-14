@@ -64,7 +64,7 @@ End Sub
 
 **RadSpreadsheet** offers a separate menu for manipulating the sheet's tab. It is possible to insert, delete, rename or color a tab.
 
->note As of **R3 2020 SP1** RadSpreadsheet allows hiding/unhiding a sheet. It utilizies the [Sheets Visibility](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-worksheets/sheets-visiblility)  functionality in RadSpreadProcessing.
+>note As of **R3 2020 SP1** RadSpreadsheet allows hiding/unhiding a sheet. It utilizes the [Sheets Visibility](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-worksheets/sheets-visiblility)  functionality in RadSpreadProcessing.
 >
 * "**Hide**" - hides the selected sheet. If this is the last visible sheet, an alert is shown that it is not possible to hide it.
 * "**Unhide...**" - enabled if there is at least one hidden sheet. Shows a dialog when clicked. In the dialog the user can select, which sheets to unhide.
