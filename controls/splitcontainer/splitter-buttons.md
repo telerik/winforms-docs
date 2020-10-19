@@ -72,9 +72,12 @@ Me.RadSplitContainer1.RestoreSplitterPosition(Me.RadSplitContainer1.Splitters(0)
 
 ```` 
 
->note Since **R3 2020 SP1** RadSplitContainer offers **DefaultColapseDirection** property that indicates the default colapse direction when performing a double click on SplitterElement to colapse a SplitPanel. 
+{{endregion}}
 
-For horizontal splitters you can set **RadDirection.Up** or **RadDirection.Down**. For vertical splitters you can set **RadDirection.Left** or **RadDirection.Right**. Here is an example how you can change the colapse direction to right when you have vertical splitters which direction by default is left:
+>note Since **R3 2020 SP1** RadSplitContainer offers **DefaultCollapseDirection** property that indicates the default collapse direction when performing a double click on SplitterElement to collapse a SplitPanel. 
+
+
+For horizontal splitters you can set **RadDirection.Up** or **RadDirection.Down**. For vertical splitters you can set **RadDirection.Left** or **RadDirection.Right**. Here is an example how you can change the collapse direction to right when you have vertical splitters which direction by default is left:
 
 {{source=..\SamplesCS\SplitContainer\SplitterButtons.cs region=DefaultColapseDirection}} 
 {{source=..\SamplesVB\SplitContainer\SplitterButtons.vb region=DefaultColapseDirection}}
@@ -87,6 +90,7 @@ Me.RadSplitContainer1.Splitters(0).DefaultColapseDirection = RadDirection.Right
 
 ```` 
 
+
 {{endregion}}
 
 
@@ -96,7 +100,6 @@ Me.RadSplitContainer1.Splitters(0).DefaultColapseDirection = RadDirection.Right
 >caution If you set **RadDirection.Up**/**RadDirection.Down** on vertical splitters or **RadDirection.Left**/**RadDirection.Right** on horizontal splitters an InvalidEnumArgumentException will be thrown.
 
 
-{{endregion}}
 
 # See Also
 
