@@ -10,7 +10,11 @@ position: 1
 
 # Design Time
 
-Telerik UI for WinForms supports the Visual Studio .NET Core WinForms designer. All of the Telerik designers are migrated and the controls are populated in the toolbox. We have special control designers, action lists, property builders and editors matching the design time experience you see on the full .NET framework. 
+Telerik UI for WinForms supports the Visual Studio .NET Core WinForms designer. All of the Telerik designers are migrated and the controls are populated in the toolbox. We have special control designers, action lists, property builders and editors achieving a design time experience similar to the one seen on the full .NET framework. 
+
+>caption Figure 1: RadGridView .NET Core Designer
+
+![core-designer001](images/core-designer001.png)
 
 ## Requirements
 
@@ -20,11 +24,16 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
     - Don’t forget to enable the designer in *Tools > Options > Environment > Preview Features*
 * **Telerik UI for WinForms NuGet installed in the project**: [https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-using-nuget](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-using-nuget)
      - Telerik UI for Winforms R3 2020 or newer and it should contain a UI control
-* **Target .NET 5.0 in your project**: [https://docs.microsoft.com/en-us/dotnet/standard/frameworks#net-5-os-specific-tfms](https://docs.microsoft.com/en-us/dotnet/standard/frameworks#net-5-os-specific-tfms)
+* **Target .NET Core 3.1/.NET 5.0 in your project**: [https://docs.microsoft.com/en-us/dotnet/standard/frameworks#supported-target-frameworks](https://docs.microsoft.com/en-us/dotnet/standard/frameworks#supported-target-frameworks)
 
-RadGridView .NET Core Designer
+>important Our designers target a specific version of the WinForms Designer SDK and this SDK is also inserted into Visual Studio. Sometimes there might be breaking changes in the WinForms Designer SDK and as it is part of Visual Studio itself this will break our designers. As things are dynamically changing one needs to pay attention of the Telerik NuGet version and the Visual Studio version. The table below is a mapping between the Telerik and the Visual Studio versions.
+>
 
-![core-designer001](images/core-designer001.png)
+|Telerik Version|Visual Studio Version|
+|----|----|
+|R3 2020 SP1 (version 2020.3.1020)|16.8 Preview 4|
+|R3 2020 (version 2020.3.915)|16.8 Preview 3|
+
 
 
 >note The toolbox is populated from the UI controls added to the referenced NuGet package/s.  
@@ -35,7 +44,6 @@ RadGridView .NET Core Designer
 
 ## What`s coming next 
 
-* Support for .NET Core 3.1
 * Custom glyphs
 * Embedded in the designer editors
 
