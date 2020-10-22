@@ -84,7 +84,7 @@ imageColumn.ImageAlignment = ContentAlignment.BottomRight
 
 # See Also
 
-* []({%slug display-images-in-gridview-cells-from-url%})
+* [Display Images in GridView Cells from URL]({%slug display-images-in-gridview-cells-from-url%})
 
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
 
