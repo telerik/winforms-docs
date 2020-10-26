@@ -82,11 +82,11 @@ For horizontal splitters you can set **RadDirection.Up** or **RadDirection.Down*
 {{source=..\SamplesCS\SplitContainer\SplitterButtons.cs region=DefaultColapseDirection}} 
 {{source=..\SamplesVB\SplitContainer\SplitterButtons.vb region=DefaultColapseDirection}}
 ````C#
-this.radSplitContainer1.Splitters[0].DefaultColapseDirection = RadDirection.Right;
+this.radSplitContainer1.Splitters[0].DefaultCollapseDirection = RadDirection.Right;
 
 ````
 ````VB.NET
-Me.RadSplitContainer1.Splitters(0).DefaultColapseDirection = RadDirection.Right
+Me.RadSplitContainer1.Splitters(0).DefaultCollapseDirection = RadDirection.Right
 
 ```` 
 
