@@ -151,3 +151,4 @@ The call must be done at the application entry point. If you have used a manifes
 # See Also 
 * [WinForms Scaling at Large DPI Settings–Is It Even Possible?](http://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-)
 * [HDPI Tips and Tricks]({%slug hdpi-tips-and-tricks%})
+* [App becomes DPI-aware at runtime]({%slug app-becomes-dpi-aware%})

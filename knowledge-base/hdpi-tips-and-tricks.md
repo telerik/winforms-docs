@@ -21,113 +21,58 @@ res_type: kb
         <td>Product</td>
         <td>UI for WinForms</td>
     </tr>
+    <tr>
+        <td>Last Update</td>
+        <td>2020.3.1020</td>
+    </tr>
 </table>
 
 
 ## HDPI Tips and Tricks
 
-Telerik UI for WinForms has built-in supports for HDPI. This means that when your application is executed on a system where the scaling settings are different that 100% it will be scaled.
-
+Telerik UI for WinForms has built-in supports for High DPI. This means that when your application is run on a system where the scaling settings are different that 100%, it will be scaled.
 
 ### Enabling the scaling
 
-There are more than one way to enable/disable the scaling. They are discusses here: [DPI support]({%slug winforms/telerik-presentation-framework/dpi-support%}). The important part is that enabling the DPI awareness in the manifest file will break the ClickOnce installer. This can be avoided by using .NET 4.7 and setting this in the app.config file. 
-
-### Disabling the scaling
-
-When you have an existing application which is DPI aware and this already handled. Or if you do not want to use the build in scaling you can disable it. This can be achieved by setting the static __EnableDpiScaling__ property. You should set it in your main form before calling the __InitializeComponent__ method:
-
-````C#
-public partial class RadForm1 : Telerik.WinControls.UI.RadForm
-{
-    public RadForm1()
-    {
-        RadControl.EnableDpiScaling = false;
-        InitializeComponent();
-    }
-}
-
-````
-````VB.NET
-Partial Public Class RadForm1
-    Inherits Telerik.WinControls.UI.RadForm
-
-    Public Sub New()
-        RadControl.EnableDpiScaling = False
-        InitializeComponent()
-    End Sub
-End Class
-
-````
-
-### Standard Form vs RadForm
-
-When using the standard form some controls may not be scaled properly. [RadForm]({%slug winforms/forms-and-dialogs/form%}) however handles the scaling and will scale the child controls.  
-
-### Using UserControls in your application
-
-When you are using UserControl its contents may be scaled twice. In this case please set the __AutoScaleMode__ of the user control to __None__.
+There are more than one ways to enable/disable the scaling. They are discusses here: [DPI support]({%slug winforms/telerik-presentation-framework/dpi-support%}). The important part is that enabling the DPI awareness in the **app.manifest** file will break the ClickOnce installer. The following KB article demonstrates how to deal with this problem: [ClickOnce Application is Broken]({%slug clickonce-application-is-broken%}).
 
 ### Developing on HDPI 
 
-Your development machine has HDPI monitor and the scaling setting are larger than 100%. This can cause issues with the layout because opening the designer on such machines will set the __AutoScaleDimensions__ property (the default value is SizeF(6F, 13F)) This property is used when a scaling factor is calculated and passed to your application. And if a wrong factor is passed the application can look smaller or larger then it should be. Please make sure that this property has its default value (__SizeF(6F, 13F)__).
+If your development machine has HDPI monitor and the scaling settings are larger than 100%, this can cause issues with the layout because opening the designer on such machines will set the __AutoScaleDimensions__ property (the default value in Designer.cs is **SizeF(6F, 13F)**). In the **AutoScaleDimensions** property the Visual Studio designer will serialize the dimensions of the unit used for comparison (either Font or DPI). These are the dimensions of the unit on the system the form is being designed on. When you run the form on a system with different settings, its dimensions are obtained and compared against the serialized dimensions. The scaling factor is computed based on that and then it is applied. And if a wrong factor is passed, the application can look smaller or larger than it should be. Please make sure that this property has its default value (__SizeF(6F, 13F)__).
+
+The **AutoScaleMode** property indicates the method of calculating the scale factor. Depending on it, the scaling mechanism will calculate the scale factor according to the dimensions of the system font or the system DPI. If you set it to **None**, no scaling will be performed at all.
 
 There is a warning in Visual Studio that recommends developing on 100%: [DPI-awareness in Visual Studio](https://docs.microsoft.com/en-us/dotnet/framework/winforms/disable-dpi-awareness-visual-studio)
 
-### Application becomes DPI aware at runtime.
+![hdpi-tips-and-tricks 001](images/hdpi-tips-and-tricks001.png)
+
+When the scale factor is calculated, the framework calls the **Scale** method of the form which basically recalculates the **Size** and the **Location** of all child controls on it. Then their **Scale** method is also called so they can properly scale.
+
+Unfortunately, this mechanism does not work as seamlessly as the one in WPF where you don’t even have to worry about scaling. But with the improvements that started with .NET Framework 4.5.1 the scaling has been improved. For more information check out [this](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/automatic-scaling-in-windows-forms?view=netframeworkdesktop-4.8) article.
+
+### General Tips for Designing Scalable WinForms
+
+If you are designing a scalable application there are few simple guidelines that will help a lot:
+
+* Design your forms under 96 DPI (100%) – as mentioned above, Visual Studio will serialize the scaling size of the form at design time and there are often problems when the form has been designed under higher DPI.
+* Consider using [TableLayoutPanel](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tablelayoutpanel?view=netcore-3.1) when creating a DPI-aware application. Thus, the controls do not have specific location and size. This way when the form is resized the controls will fit in the available space. You can easily set Margin between the controls instead of using anchoring. The application will look better when it is scaled.   
+* Always test different scenarios – running the application at different DPI settings; changing the DPI while it is running; moving the application to another monitor with different DPI.
+* Design the interface of your forms so that it can “reflow” – use Anchored, Docked, AutoSized controls where possible.
+* All containers must use the same AutoScaleMode.
+* Use default font size (8.25 px) on all containers. If you need custom font size for a specific control, set it on that control instead on the container class.
+* Pay special attention to whether the font size scales correctly. If not, you will have to manually scale the font size for specific controls.
+* If you have some custom layout logic, always keep in mind that the sizes and the locations of the controls will be different if the form is scaled. Also keep in mind that you should manually scale any constants you use if they denote pixels.
+
+### Application Becomes DPI Aware at RunTime.
 
 >tip An indicator for this is that there are dots after the strings in the application, despite that there is enough space. 
 
-Telerik’s document processing library (RadSpreadProcessing, RadWordProecessing or RadPdfProcessing) is referencing assemblies which are used in WPF. All WPF-based applications are DPI-aware by default and this is declared in the manifests of the WPF assemblies. Therefore, if you use the document processing library in WinForms applications that are not DPI-aware, they might suddenly become DPI-aware at run time when you instantiate a type from the DPL assemblies (when the DPL assemblies are loaded by the CLR, this will also load the WPF assemblies which they depend on, which in turn will make the application DPI-aware). If you intend to use your application on machines where the DPI scaling is larger than 100 percent, you should explicitly set the application to be DPI-unaware:
-
-````C#
-private void workbookTestButton_Click(object sender, EventArgs e)
-{
-    SetProcessDpiAwareness(_Process_DPI_Awareness.Process_DPI_Unaware);
-    Workbook wb = new Workbook();
-}
-  
-[DllImport("shcore.dll")]
-static extern int SetProcessDpiAwareness(_Process_DPI_Awareness value);
-  
-enum _Process_DPI_Awareness
-{
-    Process_DPI_Unaware = 0,
-    Process_System_DPI_Aware = 1,
-    Process_Per_Monitor_DPI_Aware = 2
-}
-````
-````VB.NET
-Private Sub workbookTestButton_Click(ByVal sender As Object, ByVal e As EventArgs)
-    SetProcessDpiAwareness(_Process_DPI_Awareness.Process_DPI_Unaware)
-    Dim wb As New Workbook()
-End Sub
-
-<DllImport("shcore.dll")>
-Shared Function SetProcessDpiAwareness(ByVal value As _Process_DPI_Awareness) As Integer
-End Function
-
-Friend Enum _Process_DPI_Awareness
-    Process_DPI_Unaware = 0
-    Process_System_DPI_Aware = 1
-    Process_Per_Monitor_DPI_Aware = 2
-End Enum
-
-````
-
-### Using TableLayoutPanel
-
-Consider using TableLayoutPanel when creating a DPI-aware application. Here is why:
-* The controls do not have specific location and size. This way when the form is resized the controls will fit in the available space. 
-* You can easily set Margin between the controls instead of using anchoring.
-* THe application will look better when it is scaled.   
-
-This approach is used in the [ERP demo application](https://www.telerik.com/blogs/new-erp-demo-app-available-telerik-ui-for-winforms).
-
+Telerik’s Document Processing library (**RadSpreadProcessing**, **RadWordProecessing** or **RadPdfProcessing**) is referencing assemblies which are used in WPF. All WPF-based applications are DPI aware by default and this is declared in the manifest files of the WPF assemblies. Therefore, if you use the document processing library in WinForms applications that are not DPI-aware, they might suddenly become DPI-aware at run time when you instantiate a type from the DPL assemblies (when the DPL assemblies are loaded by the CLR, this will also load the WPF assemblies which they depend on, which in turn will make the application DPI aware). The following KB article lists the available options for handling this situation: [App becomes DPI-aware at runtime]({%slug app-becomes-dpi-aware%})
 
 ## See Also
 
 * [DPI-support]({%slug winforms/telerik-presentation-framework/dpi-support%})
+* [App becomes DPI-aware at runtime]({%slug app-becomes-dpi-aware%})
 * [WinForms Scaling at Large DPI Settings–Is It Even Possible?](https://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-)
 * [High DPI support in Windows Forms](https://docs.microsoft.com/en-us/dotnet/framework/winforms/high-dpi-support-in-windows-forms)
 * [DoubleBufferedTableLayoutPanel]({%slug double-Buffered-table-layout-panel%})
