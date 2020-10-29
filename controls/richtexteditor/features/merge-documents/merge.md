@@ -8,7 +8,7 @@ published: True
 position: 2 
 ---
 
-# Insert Document at Caret Position aaaa
+# Insert Document at Caret Position
 
 The [RadDocumentMerger]({%slug winforms/richtexteditor/features/merge-documents/raddocumentmerger%}) class exposes the **InsertDocument()** method that enables you to merge two [RadDocument]({%slug winforms/richtexteditor-/document-elements/raddocument%}) instances. The documents will be merged at the caret position of the targeted instance.
 
