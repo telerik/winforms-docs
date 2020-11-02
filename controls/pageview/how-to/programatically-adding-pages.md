@@ -45,6 +45,8 @@ radPageView1.Pages.Add(pageTwo)
 
 {{endregion}} 
 
+>note In case you need to add a page at a certain position, feel free to use the Pages.**Insert** method passing the desired position index and the **RadPageViewPage** instance you want to add. 
+
 ## Adding Controls to RadPageViewPage
 
 Additionally, adding other controls to a specified __RadPageViewPage__ programmatically, can be achieved by simply adding the desired control to the **Controls** collection of the desired page, as shown in the next example:

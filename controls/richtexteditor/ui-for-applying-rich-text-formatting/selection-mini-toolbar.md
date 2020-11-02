@@ -11,7 +11,7 @@ previous_url: richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-sele
 
 # Selection Mini Toolbar
 
-__SelectionMiniToolBar__ is a floating toolbar that appears next to the current position after making a selection with the mouse in the document. It contains some useful commands for formatting text.
+__SelectionMiniToolBar__ is a floating toolbar that appears next to the current position after making a selection with the mouse in the document. It contains some useful commands for formatting text. You can access it via the RadRichTextEditor.RichTextBoxElement.**SelectionMiniToolBar** property.
 
 ![richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-context-menu 001](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-context-menu001.png)
 

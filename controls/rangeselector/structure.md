@@ -13,7 +13,7 @@ previous_url: rangeselector-control-element-structure
 
 This article describes the inner structure and organization of the elements which build the __RadRangeSelector__ control.
 
-__RadRangeSelector__ is built up of several levels of nested elements.  Images below demonstrate the element tree of __RandRangeSelector__. 
+__RadRangeSelector__ is built up of several levels of nested elements.  Images below demonstrate the element tree of __RadRangeSelector__. 
 
 >caption Figure 1: RadRangeSelector`s Element Hierarchy
 ![radrangeselector structure 001](images/radrangeselector-structure001.png)
