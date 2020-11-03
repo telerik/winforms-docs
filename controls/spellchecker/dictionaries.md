@@ -114,4 +114,5 @@ If this property is not set, **RadSpellChecker** will try check if there is a di
 
 * [Spellchecking Modes]({%slug winforms/spellchecker/spellchecking-modes%})	
 * [SpellChecking RadGridView]({%slug winforms/spellchecker/spellchecking-radgridview%})	
+* [How to Extract the Words Added to the Dictionary in RadSpellChecker]({%slug extract-words-added-to-dictionary%})
             
