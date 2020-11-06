@@ -69,6 +69,7 @@ For any issues you might encounter while working with UI for WinForms, use any o
 * Our [forums](https://www.telerik.com/forums/winforms) are part of the free support you can get from the community and from the team on all kinds of general issues.
 * Our [feedback portal](https://feedback.telerik.com/winforms) provides information on the features/bugs in discussion and also the planned ones for release.
 * You may still need a tailor-made solution for your project. In such cases, go straight to [Progress Services](https://www.progress.com/services).
+* [How to get the most out of the Telerik UI for WinForms support]({%slug submit-support-tickets%})
 
 ## Learning Resources
 
