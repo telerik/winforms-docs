@@ -46,3 +46,4 @@ Here are some of the other helpful properties that can be set at design time:
 * [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
 * [Element Provider]({%slug winforms/scheduler/fundamentals/scheduler-element-provider-%})
 * [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [Scheduler Data Binding Tutorial]({%slug scheduler-databinding-tutorial%})

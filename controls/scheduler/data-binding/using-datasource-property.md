@@ -116,4 +116,5 @@ SchedulerBindingDataSource1.ResourceProvider.DataSource = Me.schedulerDataDataSe
 * [Scheduler Mapping]({%slug winforms/scheduler/data-binding/scheduler-mapping%})
 * [Working with Resources]({%slug winforms/scheduler/data-binding/working-with-resources%})
 * [setting Appointments and Resources Relations]({%slug winforms/scheduler/data-binding/setting-appointment-and-resource-relations%})
+* [Scheduler Data Binding Tutorial]({%slug scheduler-databinding-tutorial%})
 
