@@ -34,7 +34,7 @@ position: 5
 |**DropDownOpened**|Fires when the drop down is opened.|
 |**DropDownClosed**|Fires when the drop down is closed.|
 
->note **RadApplicationMenu** is a derivative of **RadDropDownButton**. Hence, the properties, methods and events applicable for **RadDropDownButton** are applicable for **RadApplicationMenu**. Additional information is available in the [DropDownButton >> Properties, Methods and Events]({%slug winforms/buttons/dropdownbutton/properties-methods-events%}) help article.
+>note **RadApplicationMenu** is a derivative of **RadDropDownButton**. Hence, the properties, methods and events applicable for **RadDropDownButton** are applicable for **RadApplicationMenu**. Additional information is available in the [DropDownButton >> Properties, Methods and Events](https://docs.telerik.com/devtools/winforms/controls/buttons/dropdownbutton/properties-methods-events) help article.
  
 # See Also
 

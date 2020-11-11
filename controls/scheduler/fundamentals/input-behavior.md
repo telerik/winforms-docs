@@ -19,9 +19,7 @@ Below are the methods which handle the respective events:
   
 * __HandleMouseMove__
   
-* __HandleMouseUp__
-  
-* __HandleMouseDown__
+* __HandleMouseUp__ 
   
 * __HandleNavigationKey__
   
