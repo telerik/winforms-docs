@@ -79,3 +79,31 @@ Me.RadSyntaxEditor1.CaretColor = Color.Red
 
 #### Figure 2: RadSyntaxEditor caret with red color
 ![features-caret001](images/caret005.png)
+
+## Caret Position
+
+**CaretPosition** property provides information about the position of the caret and gives opportunity to manage it. For example, by default the caret is displayed at the beggining of the document. You can change its position so that it shows at the end of the document by using the **MoveToEndOfDocument** method:
+
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=CaretPosition}} 
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=CaretPosition}}
+
+````C#
+this.radSyntaxEditor1.SyntaxEditorElement.CaretPosition.MoveToEndOfDocument();
+
+````
+````VB.NET
+Me.RadSyntaxEditor1.SyntaxEditorElement.CaretPosition.MoveToEndOfDocument()
+
+````
+
+{{endregion}} 
+
+Another useful methods are listed below:
+
+- **MoveToStartOfDocument** - Moves to start of document.
+- **MoveToCurrentWordEnd** - Moves to current word end.
+- **MoveToCurrentWordStart** -  Moves to current word start.
+- **MoveToPosition** - Moves to specified position.
+- **MoveToLine** - Moves to line.
+- **MoveToNextWord** - Moves to next word.
+- **MoveToPreviousWord** - Moves to previous word.
