@@ -162,7 +162,7 @@ position: 8
 |__ContextMenuOpening__|Occurs before the context menu is opened.|
 |__ActiveViewChanging__|Occurs when the ActiveView is about to change.|
 |__ActiveViewChanged__|Occurs when the ActiveView has changed.|
-|__AppointmentFormatting__|Occurs when an appointment element is prepared to be displayed. Use this event to modify visual properties of the . Modifying data properties on the formatting events can result in exceptions.|
+|__AppointmentFormatting__|Occurs when an appointment element is prepared to be displayed. Use this event to modify visual properties of the appointment element. Modifying data properties on the formatting events can result in exceptions.|
 |__EditorRequired__|Occurs when an inline appointment editor is required.|
 |__ViewNavigating__|Occurs when the view is about to change and this is caused by a click on the ViewNavigationElement.|
 |__ViewNavigated__|Occurs when the view has changed and this is caused by a click on the ViewNavigationElement.|
