@@ -6,6 +6,7 @@ slug: winforms/editors/colorbox
 tags: colorbox
 published: True
 position: 0
+CTAControlName: RadColorBox
 previous_url: editors-color-box-overview
 ---
 
@@ -16,6 +17,10 @@ The main purpose of the control is to allow the user to select a color from a [c
 * RGB – (203, 252, 12)
 * Name – Red
 * Hex - #CBFC0C
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 >caption Figure 1: RadColorBox
 

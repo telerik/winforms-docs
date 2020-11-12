@@ -6,14 +6,19 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol
 tags: listcontrol
 published: True
 position: 0
+CTAControlName: RadListControl
 previous_url: dropdown-and-listcontrol-listcontrol-overview
 ---
 
 # ListControl
 
-![dropdown-and-listcontrol-listcontrol-overview 001](images/dropdown-and-listcontrol-listcontrol-overview001.png)
-
 __RadListControl__ is the an alternative to the Microsoft ListBox control. Due to the innovative and specially designed architecture of __RadListControl__, this control allows for superior data binding speed and a visual (GUI) representation that allows for a responsive control even when working with huge data sets.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
+
+![dropdown-and-listcontrol-listcontrol-overview 001](images/dropdown-and-listcontrol-listcontrol-overview001.png)
    
 ## RadListDataItem
      

@@ -6,12 +6,17 @@ slug: winforms/buttons/dropdownbutton
 tags: dropdownbutton
 published: True
 position: 0
+CTAControlName: RadDropDownButton
 previous_url: buttons-dropdownbutton-overview
 ---
 
 # DropDownButton
 
 __RadDropDownButton__ provides a menu-like interface opened from a button.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![buttons-dropdownbutton-overview 001](images/buttons-dropdownbutton-overview001.png)
 

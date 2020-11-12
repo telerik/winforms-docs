@@ -6,11 +6,16 @@ slug: winforms/datafilter/overview
 tags: data, filter
 published: True
 position: 0
+CTAControlName: RadDataFilter
 ---
 
 # RadDataFilter
 
 Building complex filter expressions is a breeze with __RadDataFilter__. The control allows specifying expressions based on the fields.properties available in the data source. The intuitive UI of the control is designed to facilitate the end-user while empowering the developer to create related expressions with a few clicks.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![data-filter-overview 001](images/data-filter-overview001.png)
 

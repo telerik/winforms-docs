@@ -6,11 +6,16 @@ slug: webcam-overview
 tags: webcam
 published: True
 position: 0
+CTAControlName: RadWebCam
 ---
 
 # WebCam
 
 **RadWebCam** allows you to display the stream provided by a web camera. You can easily start recording or take snapshot of the stream and save it to a file.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![webcam-overview 001](images/webcam-overview001.png)
 

@@ -6,12 +6,17 @@ slug: winforms/track-and-status-controls/progressbar
 tags: progressbar
 published: True
 position: 0
+CTAControlName: RadProgressBar
 previous_url: track-and-status-controls-progressbar-overview
 ---
 
 # ProgressBar
 
 __RadProgressBar__ is designed to display progress information to the user during a long-running operation. It uses Telerik Presentation Framework for [theming]({%slug winforms/track-and-status-controls/progressbar/themes%}) which alllows several advantages over the standard Windows Forms ProgressBar control. It supports displaying text and images within the body of the progress bar, dashed and cross-hatched indicator styles as well as two values on a single progress bar. The second value being indicated by a change in shade in the unfilled portion of the progress bar.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![track-and-status-controls-progressbar-overview 001](images/track-and-status-controls-progressbar-overview001.gif)
 

@@ -6,11 +6,16 @@ slug: winforms/map
 tags: map, overview
 published: True
 position: 0 
+CTAControlName: RadMap
 ---
 
 # Map
 
 __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsportal.com/) and the [OpenStreetMaps](http://wiki.openstreetmap.org/wiki/API) REST services as well as from the local file system. 
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![map-overview 001](images/map-overview001.png)
 

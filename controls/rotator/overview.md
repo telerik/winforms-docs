@@ -6,6 +6,7 @@ slug: winforms/rotator
 tags: rotator
 published: True
 position: 0
+CTAControlName: RadRotator
 previous_url: rotator-overview
 ---
 
@@ -14,6 +15,10 @@ previous_url: rotator-overview
 ## 
 
 RadRotator is a multipurpose component for content rotation and personalization. Highly customizable, it delivers high interactivity and user involvement. You can display a series of images, web URLs or any collection of rad elements.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![rotator-overview 001](images/rotator-overview001.png)
 

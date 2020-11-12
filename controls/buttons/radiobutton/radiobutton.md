@@ -6,13 +6,17 @@ slug: winforms/buttons/radiobutton
 tags: radiobutton
 published: True
 position: 0
+CTAControlName: RadRadioButton
 previous_url: buttons-radiobutton-overview
 ---
 
 # RadioButton
 
-
 __RadRadioButton__ replaces the WinForms RadioButton control and adds robust data binding, state management, and design options. 
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![buttons-radiobutton-overview 001](images/buttons-radiobutton-overview001.png)
 

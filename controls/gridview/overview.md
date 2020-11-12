@@ -6,12 +6,17 @@ slug: winforms/gridview
 tags: gridview
 published: True
 position: 0
+CTAControlName: RadGridView
 previous_url: gridview-overview
 ---
 
 # GridView
 
 __RadGridView__ is a grid component developed on top of [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) which provides a combination of performance, extensibility and ease of use. Its flexible hierarchy model allows using different data providers and creating highly interactive interfaces for display and management of large data without performance lost.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 >caption Figure 1: RadGridView layout. 
 

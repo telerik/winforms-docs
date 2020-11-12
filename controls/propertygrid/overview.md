@@ -6,12 +6,17 @@ slug: winforms/propertygrid
 tags: propertygrid
 published: True
 position: 0
+CTAControlName: RadPropertyGrid
 previous_url: propertygrid-overview
 ---
 
 # PropertyGrid
 
 **RadPropertyGrid** for WinForms displays the properties of a given object in a user-friendly way allowing the end-user to edit these properties using our editors. Now you can concentrate all the settings in one place instead of scattering them all over your forms. RadPropertyGrid gives the end-user the ability to filter, group and sort its items thanks to our data processing engine used also by controls like RadGridView, RadListView etc. RadPropertyGrid takes full advantage of the virtualization mechanism, so even if you load an object with hundreds of properties, no problem, RadPropertyGrid will handle these cases.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![propertygrid-overview](images/propertygrid-overview.png)
 

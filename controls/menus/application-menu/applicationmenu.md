@@ -6,12 +6,17 @@ slug: winforms/menus/applicationmenu
 tags: applicationmenu
 published: True
 position: 0
+CTAControlName: RadApplicationMenu
 previous_url: menus-application-menu-overview
 ---
 
 # ApplicationMenu
 
 **RadRibbonBar** combines the functions of menus, tab strips and tool bars to make an interface similar to those introduced in Microsoft Office 2007. With **RadRibbonBar** you can organize all of the functionality of your application into a single compact ribbon. When it is resized, the ribbon bar efficiently shows more or less details as space becomes available. If you use a Multiple Document Interface (MDI) layout, the ribbon bar will automatically manage the child forms.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 **RadApplicationMenu** is the Telerik counterpart of the *application menu* that displays controls used to perform actions on entire documents and forms, such as `Save` and `Print`. It also provides a list of recent documents, access to form options, and the ability to exit the form or application.
 

@@ -6,12 +6,17 @@ slug: winforms/richtextbox-obsolete
 tags: richtextbox,(obsolete)
 published: True
 position: 0
+CTAControlName: RichTextBox
 previous_url: richtextbox-overview
 ---
 
 # RichTextBox (Obsolete)
 
 RadRichTextBox is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), etc.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 >important **RadRichTextBox** has been replaced by **RadRichTextEditor**. Plese refer to the following help article demonstraing how to upgrade: [Upgrading to RadRichTextEditor](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/overview)
 >

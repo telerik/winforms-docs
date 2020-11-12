@@ -6,11 +6,16 @@ slug: radtimespanpicker-overview
 tags: radtimespanpicker
 published: True
 position: 0
+CTAControlName: RadTimeSpanPicker
 ---
 
 # RadTimeSpanPicker
 
 __RadTimeSpanPicker__ is a UI component that provides a full control over picking a specific time span and duration using the built-in components for days, hours, minutes, seconds and milliseconds. You can easily define some minimum/maximum ranges and specific value step for the components. **RadTimeSpanPicker** also provides the ability to create custom components to meet any specific user scenarios.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![radtimespanpicker-overview001](images/radtimespanpicker-overview001.png)        
 ## Key Features

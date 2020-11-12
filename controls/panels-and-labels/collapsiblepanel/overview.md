@@ -6,12 +6,17 @@ slug: winforms/panels-and-labels/collapsiblepanel
 tags: collapsiblepanel
 published: True
 position: 0
+CTAControlName: RadCollapsiblePanel
 previous_url: panels-and-labels-collapsible-panel-overview
 ---
 
 # CollapsiblePanel
 
 **RadCollapsiblePanel** is an expandable panel which can host controls in its content area. The content area can be collapsed, which allows you to save space in your WinForms application. **RadCollapsiblePanel** also gives you control over its **ExpandDirection** for even greater flexibility.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 >caption Figure 1: RadCollapsiblePanel
 ![panels-and-labels-collapsible-panel 001](images/panels-and-labels-collapsible-panel001.gif)

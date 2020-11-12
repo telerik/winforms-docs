@@ -6,12 +6,17 @@ slug: validation-provider-overview
 tags: validation, provider
 published: True
 position: 0 
+CTAControlName: RadValidationProvider
 ---
 
 #  Validation Provider
 
 **RadValidationProvider** is a component which provides data validation management for editors in bound and unbound mode. 
 It allows users to create various validation rules and associate them with editors derived from the **RadEditorControl** class. With **RadValidationProvider** users are not required to write any code for validation. 
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![validation-provider-overview 001](images/validation-provider-overview001.png) 
 

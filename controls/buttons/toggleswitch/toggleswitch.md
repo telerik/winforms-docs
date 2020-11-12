@@ -7,6 +7,7 @@ slug: winforms/buttons/toggleswitch
 tags: toggleswitch
 published: True
 position: 0
+CTAControlName: RadToggleSwitch
 previous_url: buttons-toggleswitch-overview
 ---
 
@@ -14,5 +15,9 @@ previous_url: buttons-toggleswitch-overview
 
 __RadToggleSwitch__ is a control designed to represent two states: e.g. *true*/*false*, *On*/*Off*, etc.
 >caption Figure 1: RadToggleSwitch
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![buttons-toggleswitch-overview 001](images/buttons-toggleswitch-overview001.gif)
