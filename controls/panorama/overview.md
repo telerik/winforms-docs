@@ -6,17 +6,12 @@ slug: winforms/panorama
 tags: panorama
 published: True
 position: 0
-CTAControlName: Panorama
 previous_url: panorama-overview
 ---
 
 # Panorama
 
 **RadPanorama** is a control that displays elements of type **RadTileElement** in a mosaic manner. This control is inspired by the Metro Start Menu screen of Windows 8.
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
  
 ![panorama-overview](images/panorama-overview001.gif)
 

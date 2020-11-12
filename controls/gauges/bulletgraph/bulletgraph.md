@@ -6,17 +6,12 @@ slug: winforms/gauges/bulletgraph
 tags: bulletgraph
 published: True
 position: 0
-CTAControlName: BulletGraph
 previous_url: bulletgraph-overview
 ---
 
 # Overview
 
 The __RadBulletGraph__ control is a variation of linear gauge. It combines a number of indicators into one control making it light-weight, customizable, and straightforward to setup and use. The control is a great tool for dashboards as it is the optimal way to present a lot of information in relatively small size.
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 >caption Figure 1: RadBulletGraph
 ![bulletgraph-overview 001](images/bulletgraph-overview001.png)

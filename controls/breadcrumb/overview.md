@@ -6,16 +6,11 @@ slug: breadcrumb-overview
 tags: breadcrumb
 published: True
 position: 0
-CTAControlName: BreadCrumb
 ---
 
 # RadBreadCrumb
 
 As of **R3 2019** Telerik UI for WinForms suite offers an improved **RadBreadCrumb** control. It offers you to build complicated navigation systems that allow you to track the navigation history. With its powerful data-binding mechanism, the control lets you display hierarchical structures, such as directories and relational data. With its auto-complete functionality and other advanced capabilities, **RadBreadCrumb** significantly improves the navigation and performance of your application.
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 ![breadcrumb-overview 002](images/breadcrumb-overview002.png)
 

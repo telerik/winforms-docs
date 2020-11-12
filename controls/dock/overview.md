@@ -6,17 +6,12 @@ slug: winforms/dock
 tags: dock
 published: True
 position: 0
-CTAControlName: Dock
 previous_url: dock-overview,dock/dock
 ---
 
 # Dock
 
 __RadDock__ helps you manage multiple windows in your application with a docking system similar to Microsoft Visual Studio. __RadDock__ can contain both tool and tabbed document style windows. It includes fully interactive design-time layout management as well.
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 >caption Figure 1: RadDock 
 

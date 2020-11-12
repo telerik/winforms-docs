@@ -16,7 +16,36 @@ Thank you for choosing Telerik UI for for WinForms!
 The Telerik UI for WinForms controls suite includes over 140 UI controls that you can use to easily build unique and visually stunning Line of Business applications. Boasting a well-designed architecture and CAB support, Telerik UI for WinForms controls are perfectly suited for your Enterprise desktop development
 
 To learn more please visit the [Telerik UI for WinForms](https://www.telerik.com/products/winforms.aspx) product overview page.
+<style>
+/* download trial button */
 
+div#trial_button {
+    text-align: center !important;
+}
+
+div#trial_button .trialLink {	
+	color: #fff;
+	background-color: #e74b3c;
+	padding:.44em .9em .52em;
+	font-size: 20px;
+	font-weight:400;
+	letter-spacing:-.025em;
+	position:relative;
+	display:inline-block;
+	line-height:1.2;
+	-webkit-transition:color .2s ease,background-color .2s ease;
+	transition:color .2s ease,background-color .2s ease;
+	border-radius:2px;
+	-webkit-appearance:none;
+	font-family:Metric,Arial,Gadget,sans-serif;
+	text-align:center	
+}
+</style>
+
+<div id="trial_button">
+<br />
+<a href="https://www.telerik.com/download-trial-file/v2-b/ui-for-winforms" class="trialLink">Download Free Trial</a>
+</div> 
 
 ## Getting Started
 

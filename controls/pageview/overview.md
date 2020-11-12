@@ -6,7 +6,6 @@ slug: winforms/pageview
 tags: pageview
 published: True
 position: 0
-CTAControlName: PageView
 previous_url: pageview-overview
 ---
 
@@ -17,10 +16,6 @@ previous_url: pageview-overview
 |[Getting Started With RadPageView](http://tv.telerik.com/watch/winforms/getting-started-with-radpageview)<br>In this video, you will learn what it takes to get started with RadPageView. You will also learn about its different view modes.|![pageview-overview 001](images/pageview-overview001.png)|
 
 **RadPageView** is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of sub controls in different views. 
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 ## RadPageView layout modes
 

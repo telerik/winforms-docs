@@ -6,16 +6,11 @@ slug: syntax-editor-overview
 tags: syntax-editor
 published: True
 position: 0
-CTAControlName: SyntaxEditor
 ---
 
 # RadSyntaxEditor
 
 As of **R1 2020** Telerik UI for WinForms suite offers a **RadSyntaxEditor** control. **RadSyntaxEditor** is a useful text editor control which provides built-in syntax highlighting and code editing experience for popular languages. It allows users to create custom syntax highlighting of keywords and operators of their own language.
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 ![syntax-editor-overview001](images/syntax-editor-overview001.png)
 

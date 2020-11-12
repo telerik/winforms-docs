@@ -6,16 +6,11 @@ slug: winforms/file-dialogs/overview
 tags: filedialogs
 published: True
 position: 0 
-CTAControlName: FileDialogs
 ---
 
 #  File Dialogs
 
 Telerik UI for WinForms features the three most commonly used file and folder manipulation dialogs — Open File Dialog, Save File Dialog and Open Folder Dialog, all of which are fully themable delivering consistent look and feel across the application. They can come really handy if you are looking for a more appealing UI and want to replace the standard MS file dialogs with a modern design and user experience.
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 ![winforms/file-dialogs-overview 001](images/file-dialogs-overview001.png) 
 

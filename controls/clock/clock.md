@@ -6,17 +6,12 @@ slug: winforms/clock
 tags: clock
 published: True
 position: 0
-CTAControlName: Clock
 previous_url: clock-overview
 ---
 
 # Clock
 
 __RadClock__ is a control which allows the developers to use it in their applications to display time to the users. 
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 ![clock-overview 001](images/clock-overview001.gif)
 

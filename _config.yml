@@ -1532,7 +1532,6 @@ gcs_api_key: 'AIzaSyBZzxQ7Ee4qogDASZ_D0uVnVlepiz_PbsM'
 
 old_kb_portal_link: https://www.telerik.com/support/kb/winforms
 has_kb_portal: true
-has_cta_panels: true
 
 edit_repo_url: https://github.com/telerik/winforms-docs/edit/master
 product: "Telerik UI for WinForms"

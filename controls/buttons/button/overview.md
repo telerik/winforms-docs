@@ -6,17 +6,12 @@ slug: winforms/buttons/button
 tags: button
 published: True
 position: 0
-CTAControlName: Button
 previous_url: buttons-button-overview
 ---
 
 # Button
 
 __RadButton__ is a [themable] ({%slug winforms/buttons/button/customizing-appearance/themes%}) replacement of the standard WinForms Button. It can be clicked by using the mouse, *Enter* key, or *Spacebar*, if the button has focus. You can also use [Smart Tags]({%slug winforms/buttons/button/design-time%}), set [Properties]({%slug winforms/buttons/button/properties,methods, events%}), [Customize its Appearance]({%slug winforms/buttons/button/customizing-appearance/accessing-and-customizing-elements%}) and assign [Tooltips]({%slug winforms/buttons/button/tooltips%}).
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 >caption Figure 1: RadButton
 

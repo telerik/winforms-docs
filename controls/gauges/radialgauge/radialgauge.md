@@ -6,17 +6,12 @@ slug: winforms/gauges/radialgauge
 tags: radialgauge
 published: True
 position: 0
-CTAControlName: RadialGauge
 previous_url: radialgauge-overview
 ---
 
 # RadialGauge
 
 The __RadRadialGauge__ control is designed to display a simple value within a definite range. This range is represented in a circular format similar to car speed gauge. The circular container contains a scale in it which controls the overall layout of [ticks]({%slug winforms/gauges/radialgauge/understanding-gauge-elements/working-with-ticks%}), [tick labels]({%slug winforms/gauges/radialgauge/understanding-gauge-elements/working-with-labels%}), [needles]({%slug winforms/gauges/radialgauge/understanding-gauge-elements/working-with-needles%}) and [ranges]({%slug winforms/gauges/radialgauge/understanding-gauge-elements/working-with-arcs%}) and renders an optional scale bar.
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 ![radialgauge-overview 001](images/radialgauge-overview001.gif)
 

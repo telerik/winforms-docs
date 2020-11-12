@@ -6,16 +6,11 @@ slug: radimageeditor-overview
 tags: overview
 published: True
 position: 0
-CTAControlName: ImageEditor
 ---
 
 # Overview
 
 __RadImageEditor__ is a control that can be used to preview and edit images in different file formats. It is meant to be used as a stand-alone control, but has also been integrated in __RadRichTextBox__.
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 ![](images/image-editor-overview001.png)
 

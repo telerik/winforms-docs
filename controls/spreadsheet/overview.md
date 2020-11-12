@@ -6,7 +6,6 @@ slug: radspreadsheet-overview
 tags: spreadsheet
 published: True
 position: 0
-CTAControlName: Spreadsheet
 ---
 
 # Overview
@@ -14,10 +13,6 @@ CTAControlName: Spreadsheet
 Thank you for choosing Telerik __RadSpreadsheet__!
 
 __RadSpreadsheet__ is a control that allows editing tabular data utilizing a variety of cell formatting options, styles and themes. 
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 ![RadSpreadsheet Overview small](images/spreadsheet-overview001.png)
 

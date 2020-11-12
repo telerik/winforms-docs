@@ -6,16 +6,11 @@ slug: winforms/cardview/overview
 tags: cardview
 published: True
 position: 0
-CTAControlName: CardView
 ---
 
 # CardView
 
 __RadCardView__ is a powerful control providing means for displaying and editing text data organized in a card layout. It incorporates a __RadLayoutControl__ allowing modifications of the layout in the Visual Studio designer as well as at run-time.
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-overview.html %}
-{% endif %}
 
 >caption Fig.1 RadCardView
 ![cardview-overview 001](images/radcardview-overview001.png)
