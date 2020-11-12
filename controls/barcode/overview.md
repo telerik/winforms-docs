@@ -6,11 +6,16 @@ slug: winforms/barcode/overview
 tags: barcode
 published: True
 position: 0 
+CTAControlName: Barcode
 ---
 
 # Barcode
 
 **RadBarcode** can be used to create and show barcodes. You can generate and visualize barcodes in a machine-readable format via the **RadBarcode** control by providing numeric or character data. 
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![winforms/barcode-overview 001](images/barcode-overview001.png)
 

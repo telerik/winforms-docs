@@ -6,12 +6,17 @@ slug: winforms/forms-and-dialogs/messagebox
 tags: messagebox
 published: True
 position: 0
+CTAControlName: MessageBox
 previous_url: forms-and-dialogs-messagebox-overview 
 ---
 
 # MessageBox
 
 __RadMessageBox__ displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message, such as status or error information. To display a message box, call the static method RadMessageBox.Show. The title, message, buttons, and icons displayed in the message box are determined by [parameters]({%slug winforms/forms-and-dialogs/messagebox/parameters%}) that you pass to the [method]({%slug winforms/forms-and-dialogs/messagebox/properties-methods-events%}). 
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![forms-and-dialogs-messagebox-overview 001](images/forms-and-dialogs-messagebox-overview001.png)
 

@@ -6,12 +6,17 @@ slug: winforms/track-and-status-controls/waitingbar
 tags: waitingbar
 published: True
 position: 0
+CTAControlName: WaitingBar
 previous_url: track-and-status-controls-waitingbar-overview
 ---
 
 # WaitingBar
 
 __RadWaitingBar__ is designed to indicate that a long-running operation with indeterminate length is undergoing. The control supports [waiting animation]({%slug winforms/track-and-status-controls/waitingbar/properties-methods-events%}) in four directions as well as different [waiting styles]({%slug winforms/track-and-status-controls/waiting-styles%}). It also allows you to [associate]({%slug winforms/track-and-status-controls/waitingbar/associated-control%}) it to any control indicating its load time.      
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![track-and-status-controls-waitingbar-overview 001](images/track-and-status-controls-waitingbar-overview001.gif)
 

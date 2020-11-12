@@ -6,6 +6,7 @@ slug: winforms/pivotgrid
 tags: pivotgrid
 published: True
 position: 0
+CTAControlName: PivotGrid
 previous_url: pivotgrid-overview
 ---
 
@@ -18,6 +19,10 @@ previous_url: pivotgrid-overview
 |[Visualizing KPIs with RadPivotGrid for WinForms](http://www.telerik.com/videos/winforms/visualizing-kpis-with-radpivotgrid-for-winforms)<br>RadPivotGrid for WinForms gives you the ability to visualize and monitor your measured KPI data directly from your OLAP Cube. This video shows you how to define an interface so users can define their own visualization, then dives deeper in demonstrating how to initialize the state of your RadPivotGrid in code.|![pivotgrid-overview 002](images/pivotgrid-overview002.png)|
 
 **RadPivotGrid** for WinForms is a control which provides functionality similar to the functionality of PivotTables in MS Excel. It takes large chunks of data and summarizes it in a human readable way by the help of aggregates and field descriptors. The end-user can easily get an aggregated view of the data that would best suit their needs by dragging and dropping the items of the field descriptors and the aggregates. **RadPivotGrid** can also sort the data and show subtotals and grand totals at the end or at the beginning of the summarized data. It supports the UI virtualization available in **RadGridView**, so it can easily handle large data sets bringing to you top performance and low memory footprint even in such scenarios. As a control based on the Telerik Presentation Framework, **RadPivotGrid** also supports themes that you can quickly personalize with the help of Visual Style Builder.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 >caption Figure 1: RadPivotGrid
 ![pivotgrid-overview 001](images/pivotgrid-overview001.png)

@@ -6,6 +6,7 @@ slug: winforms/chartview/overview
 tags: chartview,
 published: True
 position: 0
+CTAControlName: ChartView
 previous_url: chartview-overview
 ---
 
@@ -31,6 +32,10 @@ previous_url: chartview-overview
 ## Overview
 
 __RadChartView__ is a versatile charting component that offers drawing capabilities, user interaction and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in design-time or through code. The control is completely data aware and may work in bound or unbound mode, depending on the requirements. Chart types (or series) are organized in hierarchies, depending on the coordinate system, used to plot data points – for example we have __CartesianArea__ (using Cartesian coordinate system) and __PolarArea__ (using  polar or radial coordinate system) and __PieArea__.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ## Architecture
 A charting component in general is used to visualize (or plot) some data in a human-readable way through different representations like lines, areas, bars, pies, etc. Each series has a collection of data points – the data equivalent of a 2D point – and knows how to visualize them. Different series types may process certain types of data points – for example categorical series may contain categorical data points. Data points may be added directly to series or a data binding mechanism may be used to create the appropriate data points from the raw data.

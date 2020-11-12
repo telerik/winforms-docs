@@ -6,6 +6,7 @@ slug: winforms/forms-and-dialogs/form
 tags: form
 published: True
 position: 0
+CTAControlName: Form
 previous_url: forms-and-dialogs-form-overview
 ---
 
@@ -15,6 +16,10 @@ The __RadForm__ control is an extended standard Windows Form that fully supports
 
 >note RadForm supports just one shape. If you need more advance shapes please refer to [ShapedForm]({%slug winforms/forms-and-dialogs/shapedform%}).
 >
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
  
 >caption 
 
