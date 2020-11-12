@@ -6,7 +6,7 @@ slug: winforms/buttons/dropdownbutton
 tags: dropdownbutton
 published: True
 position: 0
-CTAControlName: RadDropDownButton
+CTAControlName: DropDownButton
 previous_url: buttons-dropdownbutton-overview
 ---
 

@@ -6,7 +6,7 @@ slug: validation-provider-overview
 tags: validation, provider
 published: True
 position: 0 
-CTAControlName: RadValidationProvider
+CTAControlName: ValidationProvider
 ---
 
 #  Validation Provider

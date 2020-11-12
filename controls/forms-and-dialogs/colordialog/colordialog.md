@@ -6,7 +6,7 @@ slug: winforms/forms-and-dialogs/colordialog
 tags: colordialog
 published: True
 position: 0
-CTAControlName: RadColorDialog
+CTAControlName: ColorDialog
 previous_url: forms-and-dialogs-colordialog-overview
 ---
 

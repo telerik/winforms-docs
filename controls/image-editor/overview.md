@@ -6,7 +6,7 @@ slug: radimageeditor-overview
 tags: overview
 published: True
 position: 0
-CTAControlName: RadImageEditor
+CTAControlName: ImageEditor
 ---
 
 # Overview

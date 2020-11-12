@@ -6,7 +6,7 @@ slug: winforms/barcode/overview
 tags: barcode
 published: True
 position: 0 
-CTAControlName: RadBarcode
+CTAControlName: Barcode
 ---
 
 # Barcode

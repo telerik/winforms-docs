@@ -6,7 +6,7 @@ slug: winforms/menus/contextmenu/context-menus
 tags: context,menus
 published: True
 position: 0
-CTAControlName: RadContextMenu
+CTAControlName: ContextMenu
 previous_url: menus-context-menu-getting-started
 ---
 

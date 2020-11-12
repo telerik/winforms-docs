@@ -6,7 +6,7 @@ slug: radtabbedform-overview
 tags: radtabbedform
 published: True
 position: 0
-CTAControlName: RadTabbedForm
+CTAControlName: TabbedForm
 ---
 
 # Overview

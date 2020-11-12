@@ -6,7 +6,7 @@ slug: winforms/panels-and-labels/collapsiblepanel
 tags: collapsiblepanel
 published: True
 position: 0
-CTAControlName: RadCollapsiblePanel
+CTAControlName: CollapsiblePanel
 previous_url: panels-and-labels-collapsible-panel-overview
 ---
 

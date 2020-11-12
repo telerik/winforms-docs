@@ -6,7 +6,7 @@ slug: winforms/buttons/button
 tags: button
 published: True
 position: 0
-CTAControlName: RadButton
+CTAControlName: Button
 previous_url: buttons-button-overview
 ---
 

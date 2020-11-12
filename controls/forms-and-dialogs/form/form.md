@@ -6,7 +6,7 @@ slug: winforms/forms-and-dialogs/form
 tags: form
 published: True
 position: 0
-CTAControlName: RadForm
+CTAControlName: Form
 previous_url: forms-and-dialogs-form-overview
 ---
 

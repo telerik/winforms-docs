@@ -6,7 +6,7 @@ slug: winforms/datalayout/overview
 tags: design,time
 published: True
 position: 0
-CTAControlName: RadDataLayout
+CTAControlName: DataLayout
 previous_url: datalayout-overview
 ---
 

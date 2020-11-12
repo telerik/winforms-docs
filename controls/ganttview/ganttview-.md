@@ -6,7 +6,7 @@ slug: winforms/ganttview
 tags: ganttview,
 published: True
 position: 0
-CTAControlName: RadGanttView
+CTAControlName: GanttView
 previous_url: ganttview-overview 
 ---
 

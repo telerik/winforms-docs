@@ -6,7 +6,7 @@ slug: winforms/ribbonbar
 tags: ribbonbar
 published: True
 position: 0
-CTAControlName: RadRibbonBar
+CTAControlName: RibbonBar
 previous_url: ribbonbar-overview
 ---
 

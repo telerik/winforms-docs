@@ -6,7 +6,7 @@ slug: winforms/datafilter/overview
 tags: data, filter
 published: True
 position: 0
-CTAControlName: RadDataFilter
+CTAControlName: DataFilter
 ---
 
 # RadDataFilter

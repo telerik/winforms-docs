@@ -6,7 +6,7 @@ slug: winforms/editors/calculatordropdown
 tags: calculatordropdown
 published: True
 position: 0
-CTAControlName: RadCalculatorDropDown
+CTAControlName: CalculatorDropDown
 previous_url: editors-calculatordropdown-overview
 ---
 

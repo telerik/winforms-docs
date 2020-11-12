@@ -6,7 +6,7 @@ slug: winforms/listview
 tags: listview
 published: True
 position: 0
-CTAControlName: RadListView
+CTAControlName: ListView
 previous_url: listview-overview
 ---
 

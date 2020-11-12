@@ -6,7 +6,7 @@ slug: winforms/forms-and-dialogs/statusstrip
 tags: statusstrip
 published: True
 position: 0
-CTAControlName: RadStatusStrip
+CTAControlName: StatusStrip
 previous_url: forms-and-dialogs-statusstrip-overview
 ---
 

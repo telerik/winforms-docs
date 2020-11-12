@@ -6,7 +6,7 @@ slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist
 tags: dropdownlist
 published: True
 position: 0
-CTAControlName: RadDropDownList
+CTAControlName: DropDownList
 previous_url: dropdown-and-listcontrol-dropdownlist-overview
 ---
 

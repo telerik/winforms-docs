@@ -6,7 +6,7 @@ slug: winforms/gauges/lineargauge
 tags: lineargauge
 published: True
 position: 0
-CTAControlName: RadLinearGauge
+CTAControlName: LinearGauge
 previous_url: lineargauge-overview
 ---
 

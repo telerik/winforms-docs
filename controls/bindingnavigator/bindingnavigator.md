@@ -6,7 +6,7 @@ slug: winforms/bindingnavigator
 tags: bindingnavigator
 published: True
 position: 0
-CTAControlName: RadBindingNavigator
+CTAControlName: BindingNavigator
 previous_url: bindingnavigator-overview
 ---
 

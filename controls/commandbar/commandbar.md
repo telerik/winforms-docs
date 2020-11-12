@@ -6,7 +6,7 @@ slug: winforms/commandbar
 tags: commandbar
 published: True
 position: 0
-CTAControlName: RadCommandBar
+CTAControlName: CommandBar
 previous_url: commandbar-overview
 ---
 

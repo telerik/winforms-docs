@@ -6,7 +6,7 @@ slug: winforms/splitcontainer
 tags: splitcontainer
 published: True
 position: 0
-CTAControlName: RadSplitContainer
+CTAControlName: SplitContainer
 previous_url: splitcontainer-overview
 ---
 

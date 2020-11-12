@@ -6,7 +6,7 @@ slug: winforms/rangeselector/overview
 tags: rangeselector,
 published: True
 position: 0
-CTAControlName: RadRangeSelector
+CTAControlName: RangeSelector
 previous_url: rangeselector
 ---
 

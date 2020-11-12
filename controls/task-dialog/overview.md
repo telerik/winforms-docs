@@ -6,7 +6,7 @@ slug: task-dialog-overview
 tags: task dialog
 published: True
 position: 0 
-CTAControlName: RadTaskDialog
+CTAControlName: TaskDialog
 ---
 
 # Task Dialog

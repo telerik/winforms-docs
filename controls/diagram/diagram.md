@@ -6,7 +6,7 @@ slug: winforms/diagram
 tags: diagram,(beta)
 published: True
 position: 0
-CTAControlName: RadDiagram
+CTAControlName: Diagram
 previous_url: diagram-overview
 ---
 

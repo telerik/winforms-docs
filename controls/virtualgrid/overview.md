@@ -6,7 +6,7 @@ slug: winforms/virtualgrid
 tags: virtualgrid
 published: True
 position: 0
-CTAControlName: RadVirtualGrid
+CTAControlName: VirtualGrid
 ---
 
 # RadVirtualGrid

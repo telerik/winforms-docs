@@ -6,7 +6,7 @@ slug: radspreadsheet-overview
 tags: spreadsheet
 published: True
 position: 0
-CTAControlName: RadSpreadsheet
+CTAControlName: Spreadsheet
 ---
 
 # Overview

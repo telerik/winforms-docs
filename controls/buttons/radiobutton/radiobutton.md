@@ -6,7 +6,7 @@ slug: winforms/buttons/radiobutton
 tags: radiobutton
 published: True
 position: 0
-CTAControlName: RadRadioButton
+CTAControlName: RadioButton
 previous_url: buttons-radiobutton-overview
 ---
 

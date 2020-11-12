@@ -6,7 +6,7 @@ slug: winforms/carousel
 tags: carousel
 published: True
 position: 0
-CTAControlName: RadCarousel
+CTAControlName: Carousel
 previous_url: carousel-overview, carousel-how-to-implement-keyboard-navigation
 ---
 

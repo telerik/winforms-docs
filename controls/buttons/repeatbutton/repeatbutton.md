@@ -6,7 +6,7 @@ slug: winforms/buttons/repeatbutton
 tags: repeatbutton
 published: True
 position: 0
-CTAControlName: RadRepeatButton
+CTAControlName: RepeatButton
 previous_url: buttons-repeatbutton-overview
 ---
 

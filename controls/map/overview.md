@@ -6,7 +6,7 @@ slug: winforms/map
 tags: map, overview
 published: True
 position: 0 
-CTAControlName: RadMap
+CTAControlName: Map
 ---
 
 # Map

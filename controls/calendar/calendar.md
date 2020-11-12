@@ -6,7 +6,7 @@ slug: winforms/calendar
 tags: calendar
 published: True
 position: 0
-CTAControlName: RadCalendar
+CTAControlName: Calendar
 previous_url: calendar-overview, calendar-customizing-appearance-how-to-hiding-weekends, calendar-customizing-behavior-customizing-dates
 ---
 

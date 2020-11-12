@@ -6,7 +6,7 @@ slug: webcam-overview
 tags: webcam
 published: True
 position: 0
-CTAControlName: RadWebCam
+CTAControlName: WebCam
 ---
 
 # WebCam

@@ -6,7 +6,7 @@ slug: winforms/editors/buttontextbox
 tags: textbox
 published: True
 position: 0
-CTAControlName: RadButtonTextBox
+CTAControlName: ButtonTextBox
 ---
 
 # RadButtonTextBox

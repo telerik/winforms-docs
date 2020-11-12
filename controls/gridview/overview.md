@@ -6,7 +6,7 @@ slug: winforms/gridview
 tags: gridview
 published: True
 position: 0
-CTAControlName: RadGridView
+CTAControlName: GridView
 previous_url: gridview-overview
 ---
 

@@ -6,7 +6,7 @@ slug: winforms/editors/maskededitbox
 tags: maskededitbox
 published: True
 position: 0
-CTAControlName: RadMaskedEditBox
+CTAControlName: MaskedEditBox
 previous_url: editors-maskededitbox-overview
 ---
 

@@ -6,7 +6,7 @@ slug: winforms/clock
 tags: clock
 published: True
 position: 0
-CTAControlName: RadClock
+CTAControlName: Clock
 previous_url: clock-overview
 ---
 

@@ -6,7 +6,7 @@ slug: winforms/layoutcontrol
 tags: layoutcontrol
 published: True
 position: 0
-CTAControlName: RadLayoutControl
+CTAControlName: LayoutControl
 previous_url: layoutcontrol-overview
 ---
 

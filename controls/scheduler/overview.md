@@ -6,7 +6,7 @@ slug: winforms/scheduler
 tags: scheduler
 published: True
 position: 0
-CTAControlName: RadScheduler
+CTAControlName: Scheduler
 previous_url: scheduler-introduction,scheduler/scheduler
 ---
 

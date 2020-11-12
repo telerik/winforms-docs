@@ -6,7 +6,7 @@ slug: winforms/panels-and-labels/radscrollablepanel
 tags: radscrollablepanel
 published: True
 position: 5
-CTAControlName: RadScrollablePanel
+CTAControlName: ScrollablePanel
 previous_url: panels-and-labels-radscrollablepanel-overview
 ---
 

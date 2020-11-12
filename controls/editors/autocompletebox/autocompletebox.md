@@ -6,7 +6,7 @@ slug: winforms/editors/autocompletebox
 tags: autocompletebox
 published: True
 position: 0
-CTAControlName: RadAutoCompleteBox
+CTAControlName: AutoCompleteBox
 previous_url: editors-autocompletebox-overview
 ---
 

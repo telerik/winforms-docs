@@ -6,7 +6,7 @@ slug: winforms/editors/spineditor
 tags: spineditor
 published: True
 position: 0
-CTAControlName: RadSpinEditor
+CTAControlName: SpinEditor
 previous_url: editors-spineditor-overview
 ---
 

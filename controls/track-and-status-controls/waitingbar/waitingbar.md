@@ -6,7 +6,7 @@ slug: winforms/track-and-status-controls/waitingbar
 tags: waitingbar
 published: True
 position: 0
-CTAControlName: RadWaitingBar
+CTAControlName: WaitingBar
 previous_url: track-and-status-controls-waitingbar-overview
 ---
 

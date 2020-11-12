@@ -6,7 +6,7 @@ slug: winforms/chartview/overview
 tags: chartview,
 published: True
 position: 0
-CTAControlName: RadChartView
+CTAControlName: ChartView
 previous_url: chartview-overview
 ---
 

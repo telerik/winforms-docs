@@ -6,7 +6,7 @@ slug: winforms/desktopalert
 tags: desktopalert
 published: True
 position: 0
-CTAControlName: RadDesktopAlert
+CTAControlName: DesktopAlert
 previous_url: desktopalert-overview,desktopalert/desktopalert
 ---
 

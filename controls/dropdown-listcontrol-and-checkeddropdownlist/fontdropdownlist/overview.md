@@ -6,7 +6,7 @@ slug: winforms/editors/fontdropdownlist
 tags: font,editor
 published: True
 position: 0
-CTAControlName: RadFontDropDownList
+CTAControlName: FontDropDownList
 ---
 
 # FontDropDownList

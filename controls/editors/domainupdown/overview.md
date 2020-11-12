@@ -6,7 +6,7 @@ slug: winforms/editors/domainupdown/overview
 tags: domainupdown
 published: True
 position: 0 
-CTAControlName: RadDomainUpDown
+CTAControlName: DomainUpDown
 ---
 
 # DomainUpDown

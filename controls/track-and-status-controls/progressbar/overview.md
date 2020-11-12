@@ -6,7 +6,7 @@ slug: winforms/track-and-status-controls/progressbar
 tags: progressbar
 published: True
 position: 0
-CTAControlName: RadProgressBar
+CTAControlName: ProgressBar
 previous_url: track-and-status-controls-progressbar-overview
 ---
 

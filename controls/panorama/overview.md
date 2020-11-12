@@ -6,7 +6,7 @@ slug: winforms/panorama
 tags: panorama
 published: True
 position: 0
-CTAControlName: RadPanorama
+CTAControlName: Panorama
 previous_url: panorama-overview
 ---
 

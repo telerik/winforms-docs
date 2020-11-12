@@ -6,7 +6,7 @@ slug: winforms-virtual-keyboard-overview
 tags: virtual, keyboard
 published: True
 position: 0 
-CTAControlName: RadVirtualKeyboard
+CTAControlName: VirtualKeyboard
 ---
 
 # Virtual Keyboard

@@ -6,7 +6,7 @@ slug: winforms/shortcuts
 tags: shortcuts
 published: True
 position: 0
-CTAControlName: RadShortcut
+CTAControlName: Shortcut
 previous_url: shortcuts-overview
 ---
 

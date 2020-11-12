@@ -6,7 +6,7 @@ slug: winforms/dock
 tags: dock
 published: True
 position: 0
-CTAControlName: RadDock
+CTAControlName: Dock
 previous_url: dock-overview,dock/dock
 ---
 

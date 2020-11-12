@@ -6,7 +6,7 @@ slug: winforms/checkedlistbox
 tags: checkedlistbox
 published: True
 position: 0
-CTAControlName: RadCheckedListBox
+CTAControlName: CheckedListBox
 previous_url: checkedlistbox-overview
 ---
 

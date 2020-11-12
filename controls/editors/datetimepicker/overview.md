@@ -6,7 +6,7 @@ slug: winforms/editors/datetimepicker
 tags: datetimepicker
 published: True
 position: 0
-CTAControlName: RadDateTimePicker
+CTAControlName: DateTimePicker
 previous_url: editors-datetimepicker-overview
 ---
 

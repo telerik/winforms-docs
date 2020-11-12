@@ -6,7 +6,7 @@ slug: syntax-editor-overview
 tags: syntax-editor
 published: True
 position: 0
-CTAControlName: RadSyntaxEditor
+CTAControlName: SyntaxEditor
 ---
 
 # RadSyntaxEditor

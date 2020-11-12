@@ -6,7 +6,7 @@ slug: winforms/editors/textbox
 tags: textbox
 published: True
 position: 0
-CTAControlName: RadTextBox
+CTAControlName: TextBox
 previous_url: editors-textbox-overview
 ---
 

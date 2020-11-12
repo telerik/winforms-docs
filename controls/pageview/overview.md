@@ -6,7 +6,7 @@ slug: winforms/pageview
 tags: pageview
 published: True
 position: 0
-CTAControlName: RadPageView
+CTAControlName: PageView
 previous_url: pageview-overview
 ---
 

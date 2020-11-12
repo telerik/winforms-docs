@@ -6,7 +6,7 @@ slug: winforms/panels-and-labels/panel
 tags: panel
 published: True
 position: 0
-CTAControlName: RadPanel
+CTAControlName: Panel
 previous_url: panels-and-labels-panel-overview
 ---
 

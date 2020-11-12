@@ -6,7 +6,7 @@ slug: winforms/editors/colorbox
 tags: colorbox
 published: True
 position: 0
-CTAControlName: RadColorBox
+CTAControlName: ColorBox
 previous_url: editors-color-box-overview
 ---
 

@@ -6,7 +6,7 @@ slug: radsparkline-overview
 tags: sparkline
 published: True
 position: 0
-CTAControlName: RadSparkline
+CTAControlName: Sparkline
 ---
 
 

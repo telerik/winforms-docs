@@ -6,7 +6,7 @@ slug: winforms/pdfviewer
 tags: pdfviewer
 published: True
 position: 0
-CTAControlName: RadPdfViewer
+CTAControlName: PdfViewer
 previous_url: pdfviewer-overview, pdfviewer-manipulating-programatically
 ---
 

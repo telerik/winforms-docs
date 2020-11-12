@@ -6,7 +6,7 @@ slug: winforms/editors/timepicker
 tags: time,picker
 published: True
 position: 0
-CTAControlName: RadTimePicker
+CTAControlName: TimePicker
 previous_url: editors-timepicker-overview
 ---
 

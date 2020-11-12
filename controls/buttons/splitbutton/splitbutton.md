@@ -6,7 +6,7 @@ slug: winforms/buttons/splitbutton
 tags: splitbutton
 published: True
 position: 0
-CTAControlName: RadSplitButton
+CTAControlName: SplitButton
 previous_url: buttons-splitbutton-overview
 ---
 

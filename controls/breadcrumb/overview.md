@@ -6,7 +6,7 @@ slug: breadcrumb-overview
 tags: breadcrumb
 published: True
 position: 0
-CTAControlName: RadBreadCrumb
+CTAControlName: BreadCrumb
 ---
 
 # RadBreadCrumb

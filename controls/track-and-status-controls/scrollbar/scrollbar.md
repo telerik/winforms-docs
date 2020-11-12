@@ -6,7 +6,7 @@ slug: winforms/track-and-status-controls/scrollbar
 tags: scrollbar
 published: True
 position: 0
-CTAControlName: RadScrollBar
+CTAControlName: ScrollBar
 previous_url: track-and-status-controls-scrollbar-overview
 ---
 

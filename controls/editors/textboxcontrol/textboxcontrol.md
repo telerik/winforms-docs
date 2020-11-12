@@ -6,7 +6,7 @@ slug: winforms/editors/textboxcontrol
 tags: textboxcontrol
 published: True
 position: 0
-CTAControlName: RadTextBoxControl
+CTAControlName: TextBoxControl
 previous_url: editors-textboxcontrol-overview
 ---
 

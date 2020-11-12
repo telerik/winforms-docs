@@ -6,7 +6,7 @@ slug: winforms/gauges/bulletgraph
 tags: bulletgraph
 published: True
 position: 0
-CTAControlName: RadBulletGraph
+CTAControlName: BulletGraph
 previous_url: bulletgraph-overview
 ---
 

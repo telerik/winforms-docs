@@ -6,7 +6,7 @@ slug: winforms/editors/popupeditor
 tags: popupeditor
 published: True
 position: 0
-CTAControlName: RadPopupEditor
+CTAControlName: PopupEditor
 previous_url: editors-popupeditor
 ---
 

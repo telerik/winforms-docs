@@ -6,7 +6,7 @@ slug: winforms/treeview
 tags: treeview
 published: True
 position: 0
-CTAControlName: RadTreeView
+CTAControlName: TreeView
 previous_url: treeview-overview
 ---
 

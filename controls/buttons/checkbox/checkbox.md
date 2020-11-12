@@ -6,7 +6,7 @@ slug: winforms/buttons/checkbox
 tags: checkbox
 published: True
 position: 0
-CTAControlName: RadCheckBox
+CTAControlName: CheckBox
 previous_url: buttons-checkbox-overview
 ---
 

@@ -6,7 +6,7 @@ slug: winforms/multicolumncombobox
 tags: multicolumncombobox
 published: True
 position: 0
-CTAControlName: RadMultiColumnComboBox
+CTAControlName: MultiColumnComboBox
 previous_url: multicolumncombobox-overview
 ---
 

@@ -6,7 +6,7 @@ slug: winforms/file-dialogs/overview
 tags: filedialogs
 published: True
 position: 0 
-CTAControlName: File Dialogs
+CTAControlName: FileDialogs
 ---
 
 #  File Dialogs

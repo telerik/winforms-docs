@@ -6,7 +6,7 @@ slug: radspreadstreamprocessing-overview
 tags: overview
 published: True
 position: 0
-CTAControlName: RadSpreadStreamProcessing
+CTAControlName: SpreadStreamProcessing
 ---
 
 # Overview

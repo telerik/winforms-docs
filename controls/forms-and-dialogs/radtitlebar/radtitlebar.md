@@ -6,7 +6,7 @@ slug: winforms/forms-and-dialogs/radtitlebar
 tags: radtitlebar
 published: True
 position: 0
-CTAControlName: RadTitleBar
+CTAControlName: TitleBar
 previous_url: forms-and-dialogs-radtitlebar-overview
 ---
 

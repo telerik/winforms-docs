@@ -6,7 +6,7 @@ slug: winforms/spellchecker
 tags: spellchecker
 published: True
 position: 0
-CTAControlName: RadSpellChecker
+CTAControlName: SpellChecker
 previous_url: spellchecker-overview
 ---
 

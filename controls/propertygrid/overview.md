@@ -6,7 +6,7 @@ slug: winforms/propertygrid
 tags: propertygrid
 published: True
 position: 0
-CTAControlName: RadPropertyGrid
+CTAControlName: PropertyGrid
 previous_url: propertygrid-overview
 ---
 

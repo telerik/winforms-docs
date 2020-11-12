@@ -6,7 +6,7 @@ slug: winforms/rotator
 tags: rotator
 published: True
 position: 0
-CTAControlName: RadRotator
+CTAControlName: Rotator
 previous_url: rotator-overview
 ---
 

@@ -6,7 +6,7 @@ slug: winforms/menus/menu
 tags: menu
 published: True
 position: 0
-CTAControlName: RadMenu
+CTAControlName: Menu
 previous_url: menus-menu-overview
 ---
 

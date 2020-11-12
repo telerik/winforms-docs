@@ -6,7 +6,7 @@ slug: winforms/dataentry
 tags: dataentry
 published: True
 position: 0
-CTAControlName: RadDataEntry
+CTAControlName: DataEntry
 previous_url: dataentry-overview
 ---
 

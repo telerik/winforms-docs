@@ -6,7 +6,7 @@ slug: winforms/panels-and-labels/groupbox/overview
 tags: groupbox
 published: True
 position: 0
-CTAControlName: RadGroupBox
+CTAControlName: GroupBox
 previous_url: panels-and-labels-groupbox-overview
 ---
 

@@ -6,7 +6,7 @@ slug: winforms/forms-and-dialogs/messagebox
 tags: messagebox
 published: True
 position: 0
-CTAControlName: RadMessageBox
+CTAControlName: MessageBox
 previous_url: forms-and-dialogs-messagebox-overview 
 ---
 

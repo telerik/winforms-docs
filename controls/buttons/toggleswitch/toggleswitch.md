@@ -7,7 +7,7 @@ slug: winforms/buttons/toggleswitch
 tags: toggleswitch
 published: True
 position: 0
-CTAControlName: RadToggleSwitch
+CTAControlName: ToggleSwitch
 previous_url: buttons-toggleswitch-overview
 ---
 

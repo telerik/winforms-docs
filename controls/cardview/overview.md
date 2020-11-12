@@ -6,7 +6,7 @@ slug: winforms/cardview/overview
 tags: cardview
 published: True
 position: 0
-CTAControlName: RadCardView
+CTAControlName: CardView
 ---
 
 # CardView

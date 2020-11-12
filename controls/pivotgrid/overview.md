@@ -6,7 +6,7 @@ slug: winforms/pivotgrid
 tags: pivotgrid
 published: True
 position: 0
-CTAControlName: RadPivotGrid
+CTAControlName: PivotGrid
 previous_url: pivotgrid-overview
 ---
 
