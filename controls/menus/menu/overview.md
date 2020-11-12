@@ -6,12 +6,17 @@ slug: winforms/menus/menu
 tags: menu
 published: True
 position: 0
+CTAControlName: Menu
 previous_url: menus-menu-overview
 ---
 
 # Menu
 
 **RadMenu** enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 >caption Figure 1: RadMenu
 ![menus-menu-overview 001](images/menus-menu-overview001.png)

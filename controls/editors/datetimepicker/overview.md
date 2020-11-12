@@ -6,6 +6,7 @@ slug: winforms/editors/datetimepicker
 tags: datetimepicker
 published: True
 position: 0
+CTAControlName: DateTimePicker
 previous_url: editors-datetimepicker-overview
 ---
 
@@ -19,6 +20,10 @@ __RadDateTimePicker__ allows interactive selection of dates using a drop down ca
 * Support for theming via pre-defined themes that ship with the product.
 
 * Supports multiple built-in date formats or custom formats.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 >caption Figure 1: RadDateTimePicker.
 ![editors-datetimepicker-overview 001](images/editors-datetimepicker-overview001.png)

@@ -6,12 +6,17 @@ slug: winforms/editors/autocompletebox
 tags: autocompletebox
 published: True
 position: 0
+CTAControlName: AutoCompleteBox
 previous_url: editors-autocompletebox-overview
 ---
 
 # AutoCompleteBox
 
 __RadAutoCompleteBox__ allows the end-user to easily fill-in text thanks to auto-complete functionality and tokens of text. This behavior is similar to the "To" field of Outlook and Facebook where you are filling-in the recipients to which you are going to send a message:
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
      
 >caption Figure 1: RadAutoCompleteBox 
 ![editors-autocompletebox-overview 001](images/editors-autocompletebox-overview001.png)

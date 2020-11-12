@@ -6,12 +6,17 @@ slug: winforms/buttons/splitbutton
 tags: splitbutton
 published: True
 position: 0
+CTAControlName: SplitButton
 previous_url: buttons-splitbutton-overview
 ---
 
 # SplitButton
 
 __RadSplitButton__ provides a menu-like interface contained within a button that can be placed anywhere on a form.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![buttons-splitbutton-overview 001](images/buttons-splitbutton-overview001.png)
 

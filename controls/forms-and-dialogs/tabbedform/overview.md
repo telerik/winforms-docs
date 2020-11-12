@@ -6,11 +6,16 @@ slug: radtabbedform-overview
 tags: radtabbedform
 published: True
 position: 0
+CTAControlName: TabbedForm
 ---
 
 # Overview
 
 __RadTabbedForm__ allows you to display tabs in the title bar, just like in most modern Web browsers. You can place buttons or other elements in front or after the tabs. You can pin the tabs or reorder them via drag drop. You can open any tab in a standalone window as well.   
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![radtabbedform-overview001](images/radtabbedform-overview001.png)
 

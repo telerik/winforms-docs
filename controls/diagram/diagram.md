@@ -6,6 +6,7 @@ slug: winforms/diagram
 tags: diagram,(beta)
 published: True
 position: 0
+CTAControlName: Diagram
 previous_url: diagram-overview
 ---
 
@@ -20,6 +21,10 @@ __RadDiagram__ offers flexible and interactive diagramming layouts for your rich
 * Architect data-visualization and data analysis diagramming structures
 
 * Further enhance and customize your geographic maps solutions
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![diagram-overview 001](images/diagram-overview001.png)
 ![diagram-overview 002](images/diagram-overview002.png)

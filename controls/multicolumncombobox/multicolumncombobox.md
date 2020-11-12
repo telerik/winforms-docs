@@ -6,12 +6,17 @@ slug: winforms/multicolumncombobox
 tags: multicolumncombobox
 published: True
 position: 0
+CTAControlName: MultiColumnComboBox
 previous_url: multicolumncombobox-overview
 ---
 
 # MultiColumnComboBox
 
 **RadMultiColumnComboBox** is a special case of combo box control with **RadGridView** integrated in its drop-down. The control combines the functionality and features of [RadDropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist%}) and [RadGridView]({%slug winforms/gridview%}). 
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 ![multicolumncombobox-overview 001](images/multicolumncombobox-overview001.png)
 

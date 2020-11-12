@@ -6,12 +6,17 @@ slug: winforms/panels-and-labels/separator
 tags: separator
 published: True
 position: 4
+CTAControlName: Separator
 previous_url: panels-and-labels-separator
 ---
 
 # Separator
 
 **RadSeparator** is a control that gives you the ability to divide your forms into logical parts. By default it contains of two lines.
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-overview.html %}
+{% endif %}
 
 >caption Figure 1: RadSeparator
 >
