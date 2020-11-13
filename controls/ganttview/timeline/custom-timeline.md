@@ -289,4 +289,5 @@ End Function
 # See Also
 
 * [Timeline views]({%slug winforms/ganttview-/timeline/timeline-views%})
+* [Working Hours in GanttView]({%slug working-hours-in-ganttview%})
 

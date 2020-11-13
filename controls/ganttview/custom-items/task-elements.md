@@ -218,3 +218,4 @@ End Sub
 * [Customizing editor]({%slug winforms/ganttview-/editing/customizing-editor%})
 * [Editing Graphical View]({%slug winforms/ganttview-/editing/editing-graphical-view%})
 * [Editing Text View]({%slug winforms/ganttview-/editing/editing-text-view%})
+* [Working Hours in GanttView]({%slug working-hours-in-ganttview%})
