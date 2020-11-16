@@ -15,7 +15,7 @@ When paging is enabled in __RadVirtualGrid__, a panel is added to the bottom of 
 
 ![gridview-paging-panel 001](images/gridview-paging-panel001.png)
 
-There are a number of properties, which allow you to customize the paging panel to your specific needs. You can access these properties through the __RadVirtualGrid.TableElement.PagingPanelElement__. Here is what options you have:
+There are a number of properties, which allow you to customize the paging panel to your specific needs. You can access these properties through the RadVirtualGrid.TableElement.[PagingPanelElement](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.virtualgridpagingpanelelement#properties). Here is what options you have:
 
 * __NumericButtonsCount:__ Controls how many buttons for navigation to concrete pages there are on the panel.
  
