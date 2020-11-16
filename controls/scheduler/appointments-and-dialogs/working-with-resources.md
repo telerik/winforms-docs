@@ -84,3 +84,4 @@ When multiple resources are associated with an appointment, the **Resource** fie
 
 * [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})
 * [Grouping by Resources]({%slug winforms/scheduler/views/grouping-by-resources%})
+* [How to Display Multiple Resources in EditAppointmentDialog]({%slug scheduler-multiple-resource-in-edit-dialog%})

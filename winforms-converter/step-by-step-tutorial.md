@@ -57,6 +57,8 @@ At this step you can compare the old and the converted files. To do that just cl
     ![winforms-converter-step-by-step-tutorial006](images/winforms-converter-step-by-step-tutorial006.png)
 
 >tip After the conversion process is completed, you should check if all existing functionality is working as before.
+
+
 ## See Also
 
 * [Requirements]({%slug winforms/winforms-converter/requirements%})
