@@ -193,3 +193,4 @@ The following __RadSheduler__ elements can be substituted in the __CreateElement
 * [Design Time]({%slug winforms/scheduler/design-time/smart-tag%})
 * [Data Binding]({%slug winforms/scheduler/data-binding/introduction%})
 * [Views]({%slug winforms/scheduler/views/overview-and-structure%})
+* [How to Show Columns in Resource Headers]({%slug resource-columns-in-radscheduler%})
