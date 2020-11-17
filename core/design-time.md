@@ -21,7 +21,7 @@ Telerik UI for WinForms supports the Visual Studio .NET Core WinForms designer. 
 The design time assemblies in .NET Core are resolved via the installed in the project NuGet packages. In order use the new designers, please make sure that the following requirements are met:
 
 *  **Visual Studio 2019 v16.8 or newer**
-    - The VS 2019 Preview [versions](https://visualstudio.microsoft.com/vs/preview/) versions are also supported. Check the compatiblity table below with details about matching Telerik and Visual Studio versions.
+    - The VS 2019 Preview [versions](https://visualstudio.microsoft.com/vs/preview/) are also supported. Check the compatiblity table below with details about matching Telerik and Visual Studio versions.
     - Don’t forget to enable the designer in *Tools > Options > Environment > Preview Features*.
 * **Telerik UI for WinForms NuGet installed in the project**: [https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-using-nuget](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-using-nuget)
      - Telerik UI for Winforms R3 2020 or newer.
@@ -32,10 +32,10 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 
 |Telerik Version|Visual Studio Version|
 |----|----|
-|HotFix v2020.3.1116-hotfix|Visual Studio 2019 Preview v16.9 Preview 1|
+|HotFix v2020.3.1116-hotfix|Visual Studio 2019 v16.9 Preview 1|
 |R3 2020 SP1 v2020.3.1020|Visual Studio 2019 v16.8|
-|R3 2020 SP1 v2020.3.1020|Visual Studio 2019 Preview v16.8 Preview 4|
-|R3 2020 v2020.3.915|Visual Studio 2019 Preview v16.8 Preview 3|
+|R3 2020 SP1 v2020.3.1020|Visual Studio 2019 v16.8 Preview 4|
+|R3 2020 v2020.3.915|Visual Studio 2019 v16.8 Preview 3|
 
 >note The HotFix NuGet packages are uploaded to the Telerik NuGet server as part of our [Latest Internal Builds](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/latest-internal-builds#latest-internal-builds).  
 >
