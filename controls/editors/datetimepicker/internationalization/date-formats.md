@@ -56,6 +56,8 @@ The table below shows a list of patterns that can be combined to create custo
 |t|The first character in the AM/PM designator defined in AMDesignator or PMDesignator, if any.|
 |tt|The AM/PM designator defined in AMDesignator or PMDesignator, if any.|
 
+>note It is possible to define your own format and set the RadDateTimePicker.**Format** property to **Custom** . Then, specify the desired **CustomFormat**, e.g. "**dd/MM/yyyy**".
+
 # See Also
 
 * [CultureInfo and RegionInfo Basics]({%slug winforms/editors/datetimepicker/internationalization/cultureinfo-and-regioninfo-basics%})
