@@ -64,7 +64,7 @@ DirectCast(Me.RadGridView1.Columns(0), GridViewTextBoxColumn).ColumnCharacterCas
 {{endregion}} 
 
 
->note ColumnCarecterCasing property affects only the editor and does not change the values in your data base. For instance, if your data base contains text which is lower case or partially lower case and you set the ColumnCharecterCasing to upper case the data will not be change, but if the user starts editing a cell, the editor will only allow upper case symbols and all lower case symbols will be converted to upper case ones.
+>note ColumnCarecterCasing property affects only the editor and does not change the values in your data base. For instance, if your data base contains text which is lower case or partially lower case, and you set the **ColumnCharacterCasing** to upper case, the data will not be change. However, if the user starts editing a cell, the editor will only allow upper case symbols and all lower case symbols will be converted to upper case ones.
 >
 
 # See Also
