@@ -64,10 +64,14 @@ Me.RadGridView1.PrintPreview()
 {{endregion}} 
 
 ![gridview-printing-support 002](images/gridview-printing-support002.png)
+
 # See Also
+
 * [Events and Customization]({%slug winforms/gridview/printing-support/events-and-customization%})
 
 * [GridPrintStyle]({%slug winforms/gridview/printing-support/gridprintstyle%})
 
 * [Printing Hierarchical Grid]({%slug winforms/gridview/printing-support/printing-hierarchical-grid%})
+
+* [Print Header in RadGridView Only on the First Page]({%slug gridview-print-header-on-first-page%})
 

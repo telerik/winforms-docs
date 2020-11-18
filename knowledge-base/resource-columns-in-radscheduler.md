@@ -1,6 +1,6 @@
 ---
 title: How to Show Columns in Resource Headers  
-description: This article demonstrates how to  
+description: This article demonstrates how to simulate columns in resources header.  
 type: how-to
 page_title: How to Show Columns in Resource Headers    
 slug: resource-columns-in-radscheduler
