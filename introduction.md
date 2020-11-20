@@ -1,7 +1,7 @@
 ---
 title: Introduction
 page_title: Overview | UI for WinForms Documentation
-description: Telerik UI for WinForms includes over 130 UI controls that you can use to easily build unique and visually stunning Line of Business applications.
+description: Telerik UI for WinForms includes over 140 UI controls that you can use to easily build unique and visually stunning Line of Business applications.
 slug: winforms/overview
 tags: overview
 published: True
