@@ -178,7 +178,9 @@ End Class
 
 {{endregion}} 
 
-3\. The last step is to subscribe to the __CreateRowInfo__ event at design time and replace the default __GridViewNewRowInfo__ with your custom one.
+3\. The last step is to subscribe to the __CreateRowInfo__ event and replace the default __GridViewNewRowInfo__ with your custom one.
+
+>important You should subscribe to the **CreateRowInfo** event at design time in order to ensure that the event will be fired when a data row have to be created.
 
 {{source=..\SamplesCS\GridView\Rows\CreateCustomNewRow.cs region=ReplaceRow}} 
 {{source=..\SamplesVB\GridView\Rows\CreateCustomNewRow.vb region=ReplaceRow}} 
