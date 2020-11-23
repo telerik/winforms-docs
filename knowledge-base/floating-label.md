@@ -25,7 +25,7 @@ This tutorial demonstrates how you can create such a floating label in **RadText
 
 ## Solution 
 
-You can create a floating label by by using **RadLabel** and [animations]({%slug winforms/telerik-presentation-framework/animations%}) that **Telerik Presentation Framework** provides. We will animate the **Margin** property by using the **AnimatedPropertySetting** class. The **TextChanging** event will fire every time when a text is changing.
+You can create a floating label by using **RadLabel** and [animations]({%slug winforms/telerik-presentation-framework/animations%}) that **Telerik Presentation Framework** provides. We will animate the **Margin** property by using the **AnimatedPropertySetting** class. The **TextChanging** event will fire every time when a text is changing.
 
 A full code snippet is illustrated below:
  
