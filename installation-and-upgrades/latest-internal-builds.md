@@ -18,6 +18,14 @@ Regular builds are an integral part of our development process and based on the 
 
 >important IMPORTANT NOTE: The Latest Internal Builds are intended to be used for development purposes only and they are not recommended for production purposes as these distributions have not gone through the complete QA process.
 
+## Installing LIB from NuGet
+
+Latest Internal Builds are available for [installing as a NuGet package]({%slug winforms/nuget%}) as well:  
+
+![latest-internal-builds 002](images/latest-internal-builds002.png)
+
+>caution Don't forget to check the **Include prerelease** option next to the search box.
+
 # See Also
 
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
