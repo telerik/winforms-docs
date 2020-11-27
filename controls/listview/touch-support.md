@@ -21,6 +21,8 @@ To scroll the control simply drag the whole control to the desired location (lef
 
 ![listview-touch-support 001](images/listview-touch-support001.png)
 
+>note By default, the **EnableKineticScrolling** property is set to **false**.Set it to **true** in order to benefit from the scrolling option.
+
 Here is the result of scrolling the control down.
 
 ![listview-touch-support 002](images/listview-touch-support002.png)
