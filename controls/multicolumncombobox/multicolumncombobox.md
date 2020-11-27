@@ -39,4 +39,5 @@ The current version has some limitations that you should consider:
 
 * [Structure]({%slug winforms/multicolumncombobox/structure%})	
 * [Getting Started]({%slug winforms/multicolumncombobox/getting-started%})	
+* [How to Achieve Checked RadMultiColumnComboBox]({%slug checked-multicolumncombobox%})
 

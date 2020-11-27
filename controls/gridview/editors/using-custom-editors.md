@@ -217,3 +217,5 @@ End Sub
 
 * [Handling Editors' events]({%slug winforms/gridview/editors/handling-editors'-events%})
 
+* [How to Achieve Checked RadMultiColumnComboBox]({%slug checked-multicolumncombobox%})
+

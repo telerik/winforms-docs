@@ -24,3 +24,4 @@ __RadCheckedDropDownList__ combines [RadDropDownList]({%slug winforms/dropdown-l
 
 * [Getting Started]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/getting-started%})
 * [Design Time]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/design-time%})
+* [How to Achieve Checked RadMultiColumnComboBox]({%slug checked-multicolumncombobox%})

@@ -454,8 +454,11 @@ extender.AssociatedRadMultiColumnComboBox = Me.RadMultiColumnComboBox1
 
 >note A fully functional example is available in our *Demo aplication >> MultiColumnComboBox* section.
 
+>note Another approach is demonstrated in the [How to Achieve Checked RadMultiColumnComboBox]({%slug checked-multicolumncombobox%}) KB article.
+
 # See Also
 
 * [Structure]({%slug winforms/multicolumncombobox/structure%})	
 * [Getting Started]({%slug winforms/multicolumncombobox/getting-started%})	
+* [How to Achieve Checked RadMultiColumnComboBox]({%slug checked-multicolumncombobox%})
 
