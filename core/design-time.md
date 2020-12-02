@@ -21,7 +21,10 @@ Telerik UI for WinForms supports the Visual Studio .NET Core WinForms designer. 
 The design time assemblies in .NET Core are resolved via the installed in the project NuGet packages. In order use the new designers, please make sure that the following requirements are met:
 
 *  **Visual Studio 2019 v16.8 or newer**
-    - The VS 2019 Preview [versions](https://visualstudio.microsoft.com/vs/preview/) are also supported. Check the compatibility table below with details about matching Telerik and Visual Studio versions.
+    - The VS 2019 Preview [versions](https://visualstudio.microsoft.com/vs/preview/) are also supported. 
+    
+	>caution Check the compatibility table below with details about matching Telerik and Visual Studio versions.
+	
     - Don’t forget to enable the designer in *Tools > Options > Environment > Preview Features*.
 * **Telerik UI for WinForms NuGet installed in the project**: [Install using NuGet Packages]({%slug winforms/nuget%})
      - Telerik UI for Winforms R3 2020 or newer.

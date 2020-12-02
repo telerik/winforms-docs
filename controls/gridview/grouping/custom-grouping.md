@@ -209,8 +209,6 @@ The following example demonstrates how to use a custom grouping mechanism to gro
 
 ![gridview-grouping-custom-grouping 002](images/gridview-grouping-custom-grouping002.png)
 
-{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=PerformGrouping}} 
-{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=PerformGrouping}} 
 
 ````C#
 
@@ -268,75 +266,31 @@ Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As
 End Sub
 
 ````
-
-{{endregion}} 
+ 
 
 
 You can apply the predicate as it is demonstrated in the following code snippet:
 
 
-{{source=..\SamplesCS\GridView\Grouping\CustomGrouping1.cs region=ApplyPredicate}} 
-{{source=..\SamplesVB\GridView\Grouping\CustomGrouping1.vb region=ApplyPredicate}} 
-
-
 ````C#
 
-private object PerformGrouping(GridViewRowInfo row, int level)
-{
-    string title = row.Cells["ContactTitle"].Value.ToString();
-    string groupKey;
-    if (title.StartsWith("Sales"))
-    {
-        groupKey = "1. Sales contacts";
-    }
-    else if (title.StartsWith("Marketing"))
-    {
-        groupKey = "2. Marketing contacts";
-    }
-    else if (title.StartsWith("Accounting"))
-    {
-        groupKey = "3. Accounting contacts";
-    }
-    else
-    {
-        groupKey = "Other contacts";
-    }
-    return groupKey;
-}
-private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
-{
-    if (e.Value == null)
-    {
-        e.FormatString = e.Group.Key.ToString();
-    }
-}
+GroupDescriptor descriptor = new GroupDescriptor("ContactTitle");
+this.radGridView1.GroupDescriptors.Add(descriptor);
+
+this.radGridView1.MasterTemplate.GroupPredicate = new GroupPredicate<GridViewRowInfo>(PerformGrouping);
+this.radGridView1.GroupSummaryEvaluate += new GroupSummaryEvaluateEventHandler(radGridView1_GroupSummaryEvaluate);
+
 
 ````
 ````VB.NET
 
-Private Function PerformGrouping(ByVal row As GridViewRowInfo, ByVal level As Integer) As Object
-    Dim title As String = row.Cells("ContactTitle").Value.ToString()
-    Dim groupKey As String
-    If title.StartsWith("Sales") Then
-        groupKey = "1. Sales contacts"
-    ElseIf title.StartsWith("Marketing") Then
-        groupKey = "2. Marketing contacts"
-    ElseIf title.StartsWith("Accounting") Then
-        groupKey = "3. Accounting contacts"
-    Else
-        groupKey = "Other contacts"
-    End If
-    Return groupKey
-End Function
-Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
-    If e.Value Is Nothing Then
-        e.FormatString = e.Group.Key.ToString()
-    End If
-End Sub
+Dim descriptor As New GroupDescriptor("ContactTitle")
+Me.RadGridView1.GroupDescriptors.Add(descriptor)
+Me.RadGridView1.MasterTemplate.GroupPredicate = New GroupPredicate(Of GridViewRowInfo)(AddressOf PerformGrouping)
+
 
 ````
 
-{{endregion}}
 
 # See Also
 * [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
