@@ -223,4 +223,8 @@ Once you run the application, the comments are expected to be colored as it is i
 >caption Figure 2: Custom layer for comments
 
 ![syntax-editor-features-layers002](images/syntax-editor-features-layers002.png)
+
+# See Also
+
+* [How to Achieve Underline Text in RadSyntaxEditor]({%slug underline-text-in-syntax-editor%})
  

@@ -133,6 +133,10 @@ simpleToolTipTagger.UpdateSearchWord("Telerik")
 
 ![syntax-editor-custom-taggers001](images/syntax-editor-custom-taggers001.png)
 
+# See Also
+
+* [How to Achieve Underline Text in RadSyntaxEditor]({%slug underline-text-in-syntax-editor%})
+
 
 
  
