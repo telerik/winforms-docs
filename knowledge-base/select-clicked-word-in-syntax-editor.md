@@ -1,11 +1,11 @@
 ---
 title: How to Select the Clicked Word in RadSyntaxEditor 
-description: This article demonstrates how to 
+description: This article demonstrates how to select the clicked word in RadSyntaxEditor.
 type: how-to
-page_title:     
+page_title: How to Select the Clicked Word in RadSyntaxEditor     
 slug: select-clicked-word-in-syntax-editor
 position: 0
-tags: checkdropdown, autocomplete, custom
+tags: syntaxeditor, click, word
 res_type: kb
 ---
 
@@ -64,4 +64,5 @@ End Sub
 
 * [RadSyntaxEditor]({%slug syntax-editor-overview%})
 * [Selection]({%slug syntax-editor-features-selection%})
+* [How to Detect Mouse Input for a Word in RadSyntaxEditor]({%slug detect-mouse-input-for-a-word-in-syntax-editor%})
 
