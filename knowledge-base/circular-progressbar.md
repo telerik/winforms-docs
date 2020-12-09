@@ -121,6 +121,9 @@ Create a derivative of **RadWaitingBar** and manipulate the **InitialStartElemen
             this.Controls.Add(circularProgressBar);
             circularProgressBar.ProgressValue = 50;
             circularProgressBar.ProgressColor = Color.DarkRed;
+			circularProgressBar.BackColor = Color.Transparent;
+			circularProgressBar.WaitingBarElement.DrawBorder = false;
+
         }
 
         
@@ -209,6 +212,9 @@ Create a derivative of **RadWaitingBar** and manipulate the **InitialStartElemen
         Me.Controls.Add(_circularProgressBar)
         _circularProgressBar.ProgressValue = 50
         _circularProgressBar.ProgressColor = Color.DarkRed
+		_circularProgressBar.BackColor = Color.Transparent
+		_circularProgressBar.WaitingBarElement.DrawBorder = False
+
     End Sub
 
 ```` 
