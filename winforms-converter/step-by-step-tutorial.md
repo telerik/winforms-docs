@@ -17,7 +17,7 @@ This article will guide you through the process of converting the Microsoft Wind
 
 1\. Before starting you need to open a solution which contains a project that is using standard Microsoft Winforms controls. This will enable the converter option in the `UI for WinForms menu` item.
 
->note Make sure that you meet the [Requirements]({%slug winforms/winforms-converter/requirements%}) for the Converter Tool.
+>note Make sure that you meet the [Requirements](https://docs.telerik.com/devtools/winforms/winforms-converter/requirements) for the Converter Tool.
 
 ![winforms-converter-step-by-step-tutorial001](images/winforms-converter-step-by-step-tutorial001.png)
 
