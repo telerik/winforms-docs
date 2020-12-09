@@ -17,7 +17,7 @@ previous_url: richtextbox-features-search
 
 RadRichTextBox supports searching the contents of the document along with providing some methods for manipulating the selection. Used in combination, they become quite a powerful tool enabling scenarios like highlighting of specific parts of the document or replacing words and collocations.
 
->note To learn more about the selection API read the[Selection]({%slug winforms/richtextbox-(obsolete)/features/selection%})topic.
+>note To learn more about the selection API read the [Selection](https://docs.telerik.com/devtools/winforms/controls/richtextbox/features/selection) topic.
 >
 
 The simplest scenario – finding a string in the content of the document can be implemented with the following code:
