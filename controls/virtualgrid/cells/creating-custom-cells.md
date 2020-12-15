@@ -250,3 +250,5 @@ End Sub
 
 * [ToolTips]({%slug winforms/virtualgrid/cells/tooltips%})
 
+* [Filter by using a CheckBox in RadVirtualGrid]({%slug filter-by-checkbox-in-virtualgrid%})
+

@@ -310,4 +310,5 @@ End Class
 
 # See Also
 * [Setting Filters Programmatically]({%slug winforms/virtualgrid/filtering/setting-filters-programmatically%})
+* [Filter by using a CheckBox in RadVirtualGrid]({%slug filter-by-checkbox-in-virtualgrid%})
 
