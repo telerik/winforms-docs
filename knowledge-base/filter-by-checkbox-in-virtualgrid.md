@@ -25,9 +25,9 @@ However, once the [filtering]({%slug winforms/virtualgrid/filtering/filtering%})
 
 ## Solution 
 
-The above illustrated result can be accomplished by following the steps below:
+First, make sure that you have already implemented the custom data cells with check boxes: [Creating custom cells]({%slug winforms/virtualgrid/cells/creating-custom-cells%}).
 
->note Make sure that you have already implemented the custom data cells with check boxes: [Creating custom cells]({%slug winforms/virtualgrid/cells/creating-custom-cells%})
+The above illustrated result can be accomplished by following the steps below:
 
 1\. Create a derivative of **VirtualGridFilterCellElement** and add a **RadCheckBoxElement** to it in order to filter the data by its **ToggleState**.
 
