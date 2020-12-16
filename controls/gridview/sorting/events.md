@@ -94,6 +94,14 @@ End Sub
 
 {{endregion}} 
 
+>note As of **R1 2021** RadGridView offers two new events: 
+>
+* **GroupSortChanging**: Fires when the user changes the sorting of the group. The action can be canceled.
+* **GroupSortChanged**: Fires after the user has changed the sorting of the group.
+>
+The **GridViewGroupSortChangingEventArgs** gives you access to the GridViewTemplate, GroupDescriptor and the new ListSortDirection.
+>
+
 
 # See Also
 * [Basic Sorting]({%slug winforms/gridview/sorting/basic-sorting%})
