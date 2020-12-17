@@ -18,7 +18,8 @@ previous_url: tpf-html-like-text-formatting
 ## Introduction
 
 Telerik UI for WinForms provide an advanced text styling mechanism which can be applied to all Telerik WinForms controls and their elements, because it enhances one of the smallest element in Telerik Presentation Framework - the text primitive. The new rich text formatting mechanism uses plain HTML tags to display formatted text such as font style, font color, font size, etc.
-        
+
+>note  As of R1 2021 HTML-like formatting supports [custom fonts](https://docs.telerik.com/devtools/winforms/telerik-presentation-framework/custom-fonts).    
 
 Your text must start with the __\<html\>__ tag so that HTML-like formatting is activated. The list of supported markup tags is given below:
 
@@ -127,7 +128,7 @@ To specify a file on the disk you have to specify the disk path e.g. src="C:\som
 You can also use some tags that are not present in HTML but are currently supported by the TextPrimitive.
         
 
->note please refer to the[RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})article about the list of supported tags; *font* , *color* and *size* tags are not supported by RadMarkupDialog, but can be rendered by TextPrimitive.
+>note Please refer to the [RadMarkupDialog](https://docs.telerik.com/devtools/winforms/telerik-presentation-framework/markup-dialog/radmarkupdialog) article about the list of supported tags; *font* , *color* and *size* tags are not supported by RadMarkupDialog, but can be rendered by TextPrimitive.
 >
 
 You can use \<size=[+|-]value\> to set font size use, and __\<br\>__ to create new line feed. To set bold, underline, and italic text use the corresponding opening and closing tags. Font family is set through __\<font=Family\>__. 
