@@ -112,6 +112,9 @@ Imagine a client creates a theme with name **LightCoral**. Besides the theme nam
 
 ````
 
+Thus, if you drag a new **RadButton** from the Toolbox, it will be with the LightCoral theme applied.
+
+![default-theme007](images/default-theme007.png)
 
 # See Also
 
