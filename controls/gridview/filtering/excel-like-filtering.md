@@ -106,9 +106,9 @@ Here is how the customized popup looks like
 
 ![gridview-filtering-excel-like-filtering 005](images/gridview-filtering-excel-like-filtering005.png)
 
-__Simple list filter popup__
+### Simple list filter popup
 
-This popup allows easy and fast filtering based on simple list and one-click filter apply. It can be set up through __FilterPopupRequired__ event
+This popup allows easy and fast filtering based on simple list and one-click filter apply. It can be set up through __FilterPopupRequired__ event:
 
 {{source=..\SamplesCS\GridView\Filtering\Excel-like Filtering2.cs region=SimpleListPopup}} 
 {{source=..\SamplesVB\GridView\Filtering\Excel-like Filtering2.vb region=SimpleListPopup}} 
@@ -132,11 +132,14 @@ End Sub
 
 ````
 
+> note As of R1 2021 **RadSimpleListFilterPopup** can filter the time part more precisely. It is possible through GridViewDateTimeColumn.**FilteringTimePrecision** property that allows to specify how the time part of the DateTime value will be evaluated while filtering. The possible values are *Hour*, *Minute*, *Second*, and *All*. **FilteringTimePrecision** property works with **FilteringMode** property of the column set to GridViewTimeFilteringMode.**DateTime** or GridViewTimeFilteringMode.**Time**.
+>
+
 {{endregion}} 
 
 ![gridview-filtering-excel-like-filtering 006](images/gridview-filtering-excel-like-filtering006.png)
 
-__Grouped dates popup__
+### Grouped dates popup
 
 This pop allows representation of date values grouped by year and month in a list. This simplifies the process of selecting more than one filtering criteria based on month or year.
 
