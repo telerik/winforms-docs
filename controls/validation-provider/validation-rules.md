@@ -273,7 +273,7 @@ When the validation fails, the **ControlValidation** event is fired. The **RadVa
 * **DisplayIconAndToolTip**: controls whether to display icon and tooltip.
 * **EnableToolTipShadow**: controls whether the tooltip's shadow will be rendered.
 
->note As of R1 2021 offers the **ClearErrorStatus** method which allows you to clear the visual indication for the validation error.
+>note As of R1 2021 RadValidationProvider offers the **ClearErrorStatus** method which allows you to clear the visual indication for the validation error.
 
 # See Also
 
