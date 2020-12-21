@@ -18,6 +18,8 @@ The **EditAppointmentDialog** is shown when you try to add a new appointment or 
 
 It will pop up when you double click an empty cell or an existing appointment. Alternatively, you can show it by using the default context menu. 
 
+>important As of **R1 2021** the EditAppointmentDialog provides UI for selecting multiple resources per appointment. The **Resource** RadDropDownList is now changed to RadCheckedDropDownList.
+
 # Create a custom EditAppointmentDialog
 
 You can extend the default **EditAppointmentDialog** and add custom fields following the approach in this help article: [Adding a Custom Field to the EditAppointment Dialog]({%slug winforms/scheduler/appointments-and-dialogs/adding-a-custom-field-to-the-editappointment-dialog%}).

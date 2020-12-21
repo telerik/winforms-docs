@@ -86,6 +86,8 @@ Once the necessary assembly is referred, the designer loads with the correct des
 
 ![default-theme005](images/default-theme005.png)
 
+>note In order to use the Theme components, just drag and drop them from the VS Toolbox to the form. This will add a reference to the corresponding theme assembly in the project and will enable the theme in the **ThemeName** drop-down of all Telerik controls on the form. 
+
 ## Custom theme as Default
 
 Since it is possible to build your own [custom style]({%slug winforms/themes/using-custom-themes%}), it is possible to specify this theme as default. We will use the same API to load client's themes defined in their own assemblies:[Creating a theme component]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/creating-a-theme-component-%}) 

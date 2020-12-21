@@ -62,6 +62,16 @@ End Sub
 
 {{endregion}}
 
+As of **R1 2021** the ThemeResolutionService.**ControlDefaultThemeName** forces an update at runtime. It is possible to define the control default theme name for the entire application. The property works similarly to the ThemeResolutionService.**ApplicationThemeName** but it has lower priority. 
+
+When setting a theme, the priority is as follows, starting with the lowest:
+
+1\. ThemeResolutionService.**ControlDefaultThemeName** - globally sets default theme
+
+2\. RadControl.**ThemeName** - locally sets theme for a control
+
+3\. ThemeResolutionService.**ApplicationThemeName** - globally sets theme for the entire application, overrides all other settings.
+
 ## Applying theme to all controls in the current form.
 
 When you are working at design time you can change the theme of the form and apply it to all controls on the form. All you need to do is right-click the form and choose the following item:
