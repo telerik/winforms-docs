@@ -132,7 +132,7 @@ End Sub
 
 ````
 
-> note As of R1 2021 **RadSimpleListFilterPopup** can filter the time part more precisely. It is possible through GridViewDateTimeColumn.**FilteringTimePrecision** property that allows to specify how the time part of the DateTime value will be evaluated while filtering. The possible values are *Hour*, *Minute*, *Second*, and *All*. **FilteringTimePrecision** property works with **FilteringMode** property of the column set to GridViewTimeFilteringMode.**DateTime** or GridViewTimeFilteringMode.**Time**.
+>note As of R1 2021 **RadSimpleListFilterPopup** can filter the time part more precisely. It is possible through GridViewDateTimeColumn.**FilteringTimePrecision** property that allows to specify how the time part of the DateTime value will be evaluated while filtering. The possible values are *Hour*, *Minute*, *Second*, and *All*. **FilteringTimePrecision** property works with **FilteringMode** property of the column set to GridViewTimeFilteringMode.**DateTime** or GridViewTimeFilteringMode.**Time**.
 >
 
 {{endregion}} 
