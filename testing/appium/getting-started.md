@@ -5,7 +5,7 @@ description: We will explore how to use Appium, the Microsoft recommended open s
 slug: geting-started
 tags: appium
 published: True
-position: 1 
+position: 2 
 ---
 
 # Getting Started 
