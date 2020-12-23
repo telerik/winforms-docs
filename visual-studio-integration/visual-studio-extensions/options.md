@@ -29,9 +29,11 @@ __Copy referenced assemblies to solution and integrate with source control__ - W
 
 ## Project Upgrade Notifications for Detected Local Distributions
 
-__Suggest project upgrades for Telerik product version available on my computer__  – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI for WinForms installed on your system
+* **Show me a message when a newer version is available on www.telerik.com**  – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI for WinForms installed on your system.
 
-__Suggest upgrades when an equal Dev release is detected on projects using a Trial__ – When enabled, you will be prompted to upgrade if a licensed version of Telerik UI for WinForms is available on your system, but the current project uses a trial version
+	![installation-deployment-and-distribution-vsx-options-dialog 004](images/installation-deployment-and-distribution-vsx-options-dialog004.png)
+
+* **Include Internal builds in Latest Version update and retrieval** - When enabled, the [Latest Internal Builds] ({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%}) will also be included when prompting to upgrade upon opening a project, which is not using the latest version of Telerik UI for WinForms installed on your system.
 
 ![installation-deployment-and-distribution-vsx-options-dialog 003](images/installation-deployment-and-distribution-vsx-options-dialog003.png)
 
@@ -42,6 +44,7 @@ All settings under the WinForms category affect only the Telerik UI for WinForms
 Configures the path where the extensions look for and store distributions.
 
 >tip Changing the folder path will not move existing folder contents from your previous path. Please, move your previous folder contents manually in case you still want to use them.
+
 ## Latest version retrieval
 
 __Include internal builds in Latest Version update and retrieval__ – When enabled, the __[Latest Version Acquirer]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})__ tool will retrieve internal builds as well as official releases when checking for a new version.
