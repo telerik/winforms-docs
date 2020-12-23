@@ -1503,7 +1503,10 @@ navigation:
          position: 10
     testing/codedui:
          title: CodedUI
-         position: 2			 
+         position: 2
+    testing/appium:
+         title: Appium
+         position: 3         
     
 ## Api Reference End
 ## The application virtual path
