@@ -16,6 +16,7 @@ previous_url: scheduler-data-binding-setting-appointment-and-resource-relations
 This covers the case of assigning a single resource to many appointments. When you have a two table relation (one to many) then you should have an *Appointments* and a *Resources* tables. *Appointments* should have a field name that relates to the *Resources* table id (for example __ResourceId__). If you set a resource to the appointment, the __ResourceId__ field should be updated with the correct value. For __AppointmentMappingInfo__ you should set the __ResourceId__ field with the column name that contains the resosurce id (the __ResourceId__ column in the picture below). The *Resources* field of the __AppointmentMappingInfo__ should NOT be set to anything.
 
 >caption Figure 1: One to Many Relation
+
 ![scheduler-data-binding-setting-appointment-and-resource-relations 001](images/scheduler-data-binding-setting-appointment-and-resource-relations001.png)
 
 Additionally, since the type of the __ResourceId__ property in the __Appointment__ class is of type __EventId__ but in the database it is stored as an integer, you should create the following convert methods:
@@ -123,7 +124,15 @@ For the __AppointmentMappingInfo__ you should set the __ResourceId__ property to
 This scenario is also demonstrated in the [Data Binding Walkthrough article]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}).
 
 >caption Figure 2: Many to Many Relation
+
 ![scheduler-data-binding-setting-appointment-and-resource-relations 002](images/scheduler-data-binding-setting-appointment-and-resource-relations002.png)
+
+>important As of **R1 2021** the EditAppointmentDialog provides UI for selecting multiple resources per appointment. In certain cases (e.g. unbound mode), the *Resource* **RadDropDownList** is replaced with a **RadCheckedDropDownList**. Otherwise, the default drop down with single selection for resources is shown. To enable the multiple resources selection in bound mode, it is necessary to specify the AppointmentMappingInfo. **Resources** property. The **Resources** property should be set to the name of the relation that connects the **Appointments** and the **AppointmentsResources** tables. 
+
+#### EditAppointmentDialog with multiple resources
+
+![scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+
 
 # See Also
 

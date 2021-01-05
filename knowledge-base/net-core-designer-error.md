@@ -19,6 +19,8 @@ res_type: kb
 
 Opening a RadForm's designer with Telerik controls in a project that targets .NET Core will bring errors and the designer won't be loaded.
 
+>important Resolved with releasing the [NET Core Design Time]({%slug core-design-time%}).
+
 ## Solution
 
 The WinForms designer in .NET Core is still in its preview and currently it misses key features like support for libraries of third-party vendors. We are closely working with Microsoft to determine the best possible implementation approach. At the moment, we cannot provide you with a time estimate for a possible release or preview of the feature. I would recommend you to have a look at the following blog post that Microsoft released on this topic: [Windows Forms Designer for .NET Core Released](https://devblogs.microsoft.com/dotnet/windows-forms-designer-for-net-core-released/?fbclid=IwAR2q7fHPZ4RgS8bZwQSnTPjWqpKPOpxzc3j5PmPA-U4qbpF9xk0Iet4h_NE). 
@@ -30,7 +32,7 @@ Since **R2 2020** Telerik UI for WinForms suite provides tooling in Visual Studi
 As for the designer, please note that even the Microsoft implementation is still limited and only available as a preview in Visual Studio. If you need to target .NET Core and have complex designers you may consider trying the workaround as explained here: [Windows Forms .NET Core Designer](https://github.com/dotnet/winforms/blob/master/docs/winforms-designer.md). With this approach you can still target .NET Core and at the same time achieve the design-time experience you are already used to. 
 
 # See Also
-
+* [NET Core Design Time]({%slug core-design-time%})
 * [Migrating to .NET Core]({%slug core-migration%})
 * [Deploying WinForms .NET Core Application]({%slug core-getting-started%})
 * [3 Ways to Deploy a WinForms or WPF .NET Core Application](https://www.telerik.com/blogs/3-ways-to-deploy-a-winforms-or-wpf-net-core-application )  

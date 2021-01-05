@@ -38,6 +38,13 @@ The EditAppointmentDialog allows for editing all the properties that an appointm
 1. To change the recurrence rules press the Recurrence button in the "Editor Appointment Dialog" and the "Edit Recurrence Dialog" will appear. Make the desired changes to the appointment and click OK to save the changes or Cancel to cancel them.
             
 1. Exceptions to recurring appointments When you edit a single instance of a recurring appointment, you create an exception. This indicates that the appointment is still part of a recurring sequence, but that it differs in some details from the master recurring appointment. Exceptions can reflect any change to the appointment including its subject, time, duration, or any custom resources or attributes.
+
+>important As of **R1 2021** the EditAppointmentDialog provides UI for selecting multiple resources per appointment. In certain cases (e.g. unbound mode), the *Resource* **RadDropDownList** is replaced with a **RadCheckedDropDownList**. Otherwise, the default drop down with single selection for resources is shown. To enable the multiple resources selection in bound mode, it is necessary to specify the AppointmentMappingInfo. **Resources** property. The **Resources** property should be set to the name of the relation that connects the **Appointments** and the **AppointmentsResources** tables. 
+
+#### EditAppointmentDialog with multiple resources
+
+![scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+
             
 ## Using In-place editors      
 

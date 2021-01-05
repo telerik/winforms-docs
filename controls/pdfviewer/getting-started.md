@@ -15,7 +15,13 @@ previous_url: pdfviewer-getting-started
 | ------ | ------ |
 |[Getting Started with the WinForms RadPdfViewer](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-the-winforms-radpdfviewer)<br>__RadPdfViewer__ enables you to easily load and display PDF documents natively in your app without using any third-party tools except Telerik’s WinForms toolbox. Thanks to its built-in UI virtualization, RadPdfViewer delivers a performant solution in every scenario. This component will come as a nice addition to your Content Management Systems and Reporting applications, let’s see what __RadPdfViewer__ provides as a feature set.|![pdfviewer-getting-started 003](images/pdfviewer-getting-started003.png)|
 
-This article will help you quickly get started with __RadPdfViewer__. To start off, drag and drop a the control from the toolbox to your form. Set the __ViewerMode__ option to a desired value.
+This article will help you quickly get started with __RadPdfViewer__. To start off, drag and drop __RadPdfViewer__ the control from the toolbox to your form. 
+
+> As of R1 2021 __RadPdfViewer__ is optimized to work together with [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library model. The idea is to unify the underlying architecture of __RadPdfViewer__ and __PdfProcessing__ to allow feature parity. __RadPdfViewer__ uses the new model by default. However, the user can easily switch to the old model by using the __UsePdfProcessingModel__ and __UsePdfProcessingModelDefaultValue__  boolean properties. They should be set before loading a PDF document.
+* __UsePdfProcessingModel__ property: Gets or sets a value indicating weather the __RadPdfViewer__ should use the new __RadPdfProcessing__ rendering model on document import. The default value is _true_. If this property is set to _false_ the __RadPdfViewer__ will fall-back internally to use the old model.
+* __UsePdfProcessingModelDefaultValue__ property: Gets or sets a default value for __UsePdfProcessingModel__ property. The default value is _true_. When __RadPdfViewer.UseOldRenderingDefaultValue__ is set all __RadPdfViewer__ instances will use the specified model.
+
+Once you have __RadPdfViewer__, you can set the __ViewerMode__ option to a desired value.
 
 >caption Figure 1: Visual Studio Designer
 ![pdfviewer-getting-started 001](images/pdfviewer-getting-started001.png)

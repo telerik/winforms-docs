@@ -141,6 +141,10 @@ End Using
             
 
 * __CollapsedNodeOption:__ Gets or sets a value indicating how children of collapsed nodes are exported.
+
+* __ExportCheckBoxes:__ Gets or sets a value indicating whether to export the check box values, when they are shown in tree nodes.
+
+>note  __ExportCheckBoxes__ property is available since R1 2021. 
             
 
 ## Events

@@ -68,6 +68,12 @@ Much like Microsoft Outlook, __RadScheduler__ for WinForms offers several ways o
 
     - When you are ready press the Ok button to accept the changes or press the Cancel button to cancel them.
 
+>important As of **R1 2021** the EditAppointmentDialog provides UI for selecting multiple resources per appointment. In certain cases (e.g. unbound mode), the *Resource* **RadDropDownList** is replaced with a **RadCheckedDropDownList**. Otherwise, the default drop down with single selection for resources is shown. To enable the multiple resources selection in bound mode, it is necessary to specify the AppointmentMappingInfo. **Resources** property. The **Resources** property should be set to the name of the relation that connects the **Appointments** and the **AppointmentsResources** tables. 
+
+#### EditAppointmentDialog with multiple resources
+
+![scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+
 ## Adding an Appointment by Using the Context Menu
 
 1. In the scheduler surface, with the moust select the duration of the appointment (drag the selection from the starting time to the end time) when you want the appointment to occur.

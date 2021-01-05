@@ -69,6 +69,43 @@ position: 3
 |**DeleteWordToRight**|Deletes the word to right.|
 |**DeleteWordToLeft**|Deletes the word to left.|
 
+>note As of **R1 2021** RadSyntaxEditor offers a new method: **GetPositionFromControlPoint**. It expects a point relative to the control. 
+
+#### Selecting the word under the mouse on a single click
+
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=MouseDownDetection}} 
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=MouseDownDetection}}
+
+````C#
+private void RadSyntaxEditor1_MouseDown(object sender, MouseEventArgs e)
+{
+    CaretPosition clickPosition = this.radSyntaxEditor1.GetPositionFromControlPoint(e.Location);
+
+    CaretPosition start = new CaretPosition(clickPosition);
+    start.MoveToCurrentWordStart();
+
+    CaretPosition end = new CaretPosition(clickPosition);
+    end.MoveToCurrentWordEnd();
+
+    this.radSyntaxEditor1.SyntaxEditorElement.CaretPosition.MoveToPosition(end);
+    this.radSyntaxEditor1.SyntaxEditorElement.Selection.Select(start, end);
+}
+
+````
+````VB.NET
+
+    Private Sub RadSyntaxEditor1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
+        Dim clickPosition As CaretPosition = Me.RadSyntaxEditor1.GetPositionFromControlPoint(e.Location)
+        Dim start As CaretPosition = New CaretPosition(clickPosition)
+        start.MoveToCurrentWordStart()
+        Dim [end] As CaretPosition = New CaretPosition(clickPosition)
+        [end].MoveToCurrentWordEnd()
+        Me.RadSyntaxEditor1.SyntaxEditorElement.CaretPosition.MoveToPosition([end])
+        Me.RadSyntaxEditor1.SyntaxEditorElement.Selection.[Select](start, [end])
+    End Sub
+
+````
+
 
 ## RadSyntaxEditor's Events
 

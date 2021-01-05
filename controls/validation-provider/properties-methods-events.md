@@ -28,6 +28,8 @@ position: 6
 |**SetIconPadding**|Set the amount of extra space to leave between the specified control and the error icon.|
 |**GetIconPadding**|Return the amount of extra space to leave next to the error icon.|
 |**RemoveRules**|Remove the validation rules associated with the specified RadEditorControl.|
+|**ClearErrorStatus()**|Clear the visual indication for the validation error.(* Available as of R1 2021)|
+|**ClearErrorStatus(RadControl associatedControl)**|Clear the visual indication for the validation error for the particular control.(* Available as of R1 2021)|
 
 ## Events 
 

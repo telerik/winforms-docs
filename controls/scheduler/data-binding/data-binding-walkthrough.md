@@ -108,6 +108,12 @@ Me.SchedulerBindingDataSource1.ResourceProvider.Mapping = resourceMappingInfo
 
 {{endregion}} 
 
+>important As of **R1 2021** the EditAppointmentDialog provides UI for selecting multiple resources per appointment. In certain cases (e.g. unbound mode), the *Resource* **RadDropDownList** is replaced with a **RadCheckedDropDownList**. Otherwise, the default drop down with single selection for resources is shown. To enable the multiple resources selection in bound mode, it is necessary to specify the AppointmentMappingInfo. **Resources** property. The **Resources** property should be set to the name of the relation that connects the **Appointments** and the **AppointmentsResources** tables. 
+
+#### EditAppointmentDialog with multiple resources
+
+![scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+
 ## Retrieving the Data
 
 To retrieve the data, first we need to fill the data set:

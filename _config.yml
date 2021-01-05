@@ -1230,7 +1230,7 @@ navigation:
         position: 475
     controls/syntax-editor:
         title: Syntax Editor
-        position: 478
+        position: 477
     controls/syntax-editor/features:
         title: Features
         position: 6
@@ -1239,6 +1239,9 @@ navigation:
         position: 8
     controls/task-dialog:
         title: Task Dialog
+        position: 478
+    controls/toast-notification:
+        title: Toast Notification
         position: 479
     controls/track-and-status-controls:
         title: Track and Status controls
@@ -1503,7 +1506,10 @@ navigation:
          position: 10
     testing/codedui:
          title: CodedUI
-         position: 2			 
+         position: 2
+    testing/appium:
+         title: Appium
+         position: 3         
     
 ## Api Reference End
 ## The application virtual path
