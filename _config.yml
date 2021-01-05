@@ -964,6 +964,12 @@ navigation:
     controls/pdfviewer/how-to:
         title: How-To
         position: 10	
+    controls/picturebox:
+        title: PictureBox 
+        position: 355
+    controls/picturebox/overview:
+        title: Overview 
+        position: 1   
     controls/pivotgrid:
         title: PivotGrid 
         position: 360
