@@ -30,7 +30,7 @@ Here are the main capabilities:
 
 * Visual Basic and C# projects are supported. 
 
->note Before proceeding further, make sure that you meet the [Requirements]({%slug winforms/winforms-converter/requirements%}) for the Converter Tool.
+Before proceeding further, make sure that you meet the [Requirements]({%slug winforms/winforms-converter/requirements%}) for the Converter Tool.
 
 ## See Also
 
