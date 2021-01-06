@@ -11,13 +11,15 @@ CTAControlName: ToastNotification
 
 # Toast Notification 
 
-With Windows 8 Microsoft introduced [Toast Notifications](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/toast-ux-guidance) - a notification system like the one in a mobile OS. **RadToastNotificationManager** builds notifications on that notification system and expand it, making it easier for our customers to create and manage notifications.  
+With Windows 8 Microsoft introduced [Toast Notifications](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/toast-ux-guidance) - a notification system like the one in a mobile OS. The **RadToastNotificationManager** component builds notifications on that notification system and expand it, making it easier for our customers to create and manage notifications.  
 
->caption Toast Notification's Preview
+Toast Notifications are accessed either via the Windows' Action Center or they pop up at the bottom right corner of the monitor. 
+
+#### Toast Notification's Preview
 
 ![winforms/toast-notification-overview 001](images/toast-notification-overview001.png) 
 
->caption Toast Notification in Windows' Action Center
+#### Toast Notifications in Windows' Action Center
 
 ![winforms/toast-notification-overview 002](images/toast-notification-overview002.png) 
 
@@ -44,5 +46,6 @@ Here are a few of the **RadToastNotificationManager**'s main features:
 
 * [Getting Started]({%slug toast-notification-getting-started%})
 * [Design Time]({%slug toast-notification-design-time%})
+* [Notification Templates]({%slug toast-notification-templates%})
  
         
