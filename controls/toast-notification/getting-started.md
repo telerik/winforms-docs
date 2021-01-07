@@ -29,7 +29,7 @@ You can find listed below the required references for using a **RadToastNotifica
 
 >important RadToastNotificationManager requires .NET Framework 4.6.1 or higher.
 
->important Toast notifications can only be displayed in Windows 8.0 or higher. For older Windows versions, use RadDesktopAler instead.
+>important Toast notifications can only be displayed in Windows 8.0 or higher. For older Windows versions, use RadDesktopAlert instead.
 
 By using the [RadToastNotifications Editor]({%slug toast-notification-design-time%}) you can add different toast notifications to the manager at design time. They are serialized as Telerik toasts which generate Windows system toasts. 
 
@@ -83,7 +83,7 @@ End Sub
 
 ````
 
-As a result, the toast notification is successfully shown when you click teh button:
+As a result, the toast notification is successfully shown when you click the button:
 
 ![winforms/toast-notification-getting-started001](images/toast-notification-getting-started001.png) 
 
