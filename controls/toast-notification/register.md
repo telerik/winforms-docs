@@ -13,7 +13,7 @@ CTAControlName: ToastNotification
 
 Before showing a toast notification, it is important to register the manager first. The appropriate place to do it is the form's constructor. Don't forget to unregister the manager while closing the application.
 
->important There are several overloads for the **Register** and **Unregister** methods. It is essential to use the correspnding **Unregister** method considering which of the **Register** method overloads are used. 
+>important There are several overloads for the **Register** and **Unregister** methods. It is essential to use the corresponding **Unregister** method considering which of the **Register** method overloads are used. 
 
 Here are listed the available **Register** method overloads:
 
