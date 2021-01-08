@@ -30,7 +30,7 @@ It is possible to build a **RadToastNotification** at run time, passing the [Rad
 
 
 ````
-
+{{endregion}}
 
 ![winforms/toast-notification-adding-toast-notifications-programmatically001](images/toast-notification-adding-toast-notifications-programmatically001.png)
 
