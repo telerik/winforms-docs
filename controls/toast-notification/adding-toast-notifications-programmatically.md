@@ -17,8 +17,8 @@ It is possible to build a **RadToastNotification** at run time, passing the [Rad
 
 #### Adding RadToastNotification at RunTime
 
-{{source=..\SamplesCS\ToastNotification\ProgrammaticallyAddedToasts.cs region=RunTimeNotifications}} 
-{{source=..\SamplesVB\ToastNotification\ProgrammaticallyAddedToasts.vb region=RunTimeNotifications}}
+{{source=..\SamplesCS\ToastNotification\ProgrammaticallyAddedToasts.cs region=ProgrammaticallyAddedNotifications}} 
+{{source=..\SamplesVB\ToastNotification\ProgrammaticallyAddedToasts.vb region=ProgrammaticallyAddedNotifications}}
 
 ````C#
 
