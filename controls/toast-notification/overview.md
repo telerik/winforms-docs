@@ -33,13 +33,13 @@ Here are a few of the **RadToastNotificationManager**'s main features:
 
 * Ability to respond after the application has been closed. The toasts stay in the action center until removed and the user can interact with them, even if the application is already closed. 
 
-* Gallery with predefined notification templates.
+* Gallery with predefined notification templates. The design is dependent on the operating system (and its style theme) that shows the notification.
 
 * Preview at design time for the notification templates.
 
 * Ability to customize the default templates and build custom toast notifications. 
 
-* If a user is using Windows 10 Anniversary Update (Redstone 1, build 1607) or later, we can make use of the Generic Template, which is a powerful template for creating rich toasts. 
+* If a user is using Windows 10 Anniversary Update (Redstone 1, build 1607) or later, we can make use of the Generic Template, which is a powerful template for creating rich toasts. [Read more](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts?tabs=builder-syntax) 
  
 
 # See Also

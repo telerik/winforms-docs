@@ -13,6 +13,8 @@ CTAControlName: ToastNotification
 
 **RadToastNotificationManager** offers the following built-in toast notification templates:
 
+>important The screenshots below are captured under OS Windows 10. The toast notification templates may differ according to the operating system (and OS style theme) that shows them.  
+
 ### ToastGeneric
 
 Generic template used in Windows 10.
@@ -29,24 +31,6 @@ Generic template used in Windows 10.
 
 ![winforms/toast-notification-templates001](images/toast-notification-templates001.png) 
 
-### ToastLegacy
-
-Legacy template, used in Windows 8.
-
-````XML
-<toast>
-  <visual>
-    <binding template="ToastImageAndText04">
-      <text id="1">Enter text here</text>
-      <text id="1">Enter text here</text>
-      <text id="1">Enter text here</text>
-      <image id="1" src="C:\Users\dyordano\AppData\Local\Temp\Telerik\Toast\TA_EmilySmile.png" alt="Alternative text"/>
-    </binding>
-  </visual>
-</toast>
-````
-
-![winforms/toast-notification-templates002](images/toast-notification-templates002.png) 
 
 ### ToastNews
 
@@ -232,6 +216,25 @@ Download template.
 ````
 
 ![winforms/toast-notification-templates009](images/toast-notification-templates009.png) 
+
+### ToastLegacy
+
+Legacy template, used in Windows 8. It is not recommended to use it in Windows 10. 
+
+````XML
+<toast>
+  <visual>
+    <binding template="ToastImageAndText04">
+      <text id="1">Enter text here</text>
+      <text id="1">Enter text here</text>
+      <text id="1">Enter text here</text>
+      <image id="1" src="C:\Users\dyordano\AppData\Local\Temp\Telerik\Toast\TA_EmilySmile.png" alt="Alternative text"/>
+    </binding>
+  </visual>
+</toast>
+````
+
+![winforms/toast-notification-templates002](images/toast-notification-templates002.png) 
 
 ### Customizing Default Templates
 

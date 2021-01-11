@@ -83,9 +83,13 @@ End Sub
 
 ````
 
+>important The screenshot below is captured under OS Windows 10. The toast notification templates may differ according to the operating system (and OS style theme) that shows them.
+  
 As a result, the toast notification is successfully shown when you click the button:
 
 ![winforms/toast-notification-getting-started001](images/toast-notification-getting-started001.png) 
+
+
 
 # See Also
 
