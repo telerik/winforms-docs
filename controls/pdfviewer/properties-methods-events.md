@@ -56,6 +56,8 @@ position: 4
 
 # Events
 
+>note As of **R1 2021** **RadPdfViewerElement** offers the cancelable **SignatureDialogShowing** and **SignSignatureDialogShowing** events. They allow customizing or changing the signature dialogs in RadPdfViewer.
+
 |Event|Description|
 |------|------|
 |__DocumentLoaded__|Fires when the document has finished loading.|
