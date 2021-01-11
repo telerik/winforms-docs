@@ -35,6 +35,8 @@ We will extend the example for building log-in toast notification in the [Adding
 
 ````
 
+{{endregion}}
+
 Toast notifications remains in the Windows Action Center until removed and the user can interact with them, even if the application is already closed. Thus, they provide the ability to respond after the application has been closed. The following code snippet demonstrates a sample approach how to detect when a toast has been clicked in this case:
 
 >important In order to detect when a toast notification is clicked after the application has been closed, do not [unregister]({%slug toast-notification-register%}) it manager.
