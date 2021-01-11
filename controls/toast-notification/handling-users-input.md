@@ -26,12 +26,57 @@ We will extend the example for building log-in toast notification in the [Adding
 
 ````C#
 
+protected override void OnLoad(EventArgs e)
+{
+    base.OnLoad(e);
 
+    RadToastNotificationManager.RadToastActivated+=RadToastNotificationManager_RadToastActivated;
+}
 
+private void RadToastNotificationManager_RadToastActivated(RadToastActivatedEventArgs e)
+{
+    Dictionary<string, string> userInput = e.UserInput;
+    string userName = userInput["UserNameInput"];
+    string password = userInput["PasswordInput"];
+    if (userName == string.Empty)
+    {
+        RadMessageBox.Show("UserName is empty!");
+    }
+
+    if (password == string.Empty)
+    {
+        RadMessageBox.Show("Password is empty!");
+    }
+
+    this.Invoke((MethodInvoker)delegate { this.Text = "UserName: " + userName + "Password: " + password; });
+
+}
 
 ````
 ````VB.NET
 
+Protected Overrides Sub OnLoad(ByVal e As EventArgs)
+    MyBase.OnLoad(e)
+    AddHandler RadToastNotificationManager.RadToastActivated, AddressOf RadToastNotificationManager_RadToastActivated
+End Sub
+
+Private Sub RadToastNotificationManager_RadToastActivated(ByVal e As RadToastActivatedEventArgs)
+    Dim userInput As Dictionary(Of String, String) = e.UserInput
+    Dim userName As String = userInput("UserNameInput")
+    Dim password As String = userInput("PasswordInput")
+
+    If userName = String.Empty Then
+        RadMessageBox.Show("UserName is empty!")
+    End If
+
+    If password = String.Empty Then
+        RadMessageBox.Show("Password is empty!")
+    End If
+
+    Me.Invoke(CType(Function()
+                        Me.Text = "UserName: " & userName & "Password: " & password
+                    End Function, Windows.Forms.MethodInvoker))
+End Sub
 
 ````
 
