@@ -47,7 +47,7 @@ You can change these settings using the [PasteSettings](#pastesettings-members) 
 
 ## Turning Paste Options On/Off and Setting Default Behavior
 
-The **RadRichTextEditor** class exposes the **PasteSettings** property to enable you specify whether you would like to use the Paste Options functionality and how you would like it to behave. The property is of type **PasteSettings** and you can use the members of the class to adjust the settings according to your needs.
+RadRichTextEditor.**RichTextBoxElement** exposes the **PasteSettings** property to enable you specify whether you would like to use the Paste Options functionality and how you would like it to behave. The property is of type **PasteSettings** and you can use the members of the class to adjust the settings according to your needs.
 
 ### PasteSettings Members
 
