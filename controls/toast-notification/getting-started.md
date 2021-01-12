@@ -17,15 +17,9 @@ To start using **RadToastNotificationManager** just drag it from the toolbox and
 
 You can find listed below the required references for using a **RadToastNotificationManager** which are automatically added after you drag the **RadToastNotificationManager** from the toolbox:
 
-* Telerik.WinControls
-
-* Telerik.WinControls.UI
-
-* TelerikCommon
-
 * Telerik.WinControls.RadToastNotification
 
-* Microsoft.Toolkit.Uwp.Notifications
+* Microsoft.Toolkit.Uwp.Notifications * (necessary for using a custom activator)
 
 >important RadToastNotificationManager requires .NET Framework 4.6.1 or higher.
 
