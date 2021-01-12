@@ -21,8 +21,8 @@ CTAControlName: ToastNotification
  
 We will extend the example for building log-in toast notification in the [Adding Toast Notifications Programmatically  ]({%slug toast-notification-adding-toast-notifications-programmatically%}) article and check the user name and password.
 
-{{source=..\SamplesCS\ToastNotification\ToastNotificationGettingsStarted.cs region=Activated}} 
-{{source=..\SamplesVB\ToastNotification\ToastNotificationGettingsStarted.vb region=Activated}}
+{{source=..\SamplesCS\ToastNotification\ToastNotificationGettingStarted.cs region=Activated}} 
+{{source=..\SamplesVB\ToastNotification\ToastNotificationGettingStarted.vb region=Activated}}
 
 ````C#
 
