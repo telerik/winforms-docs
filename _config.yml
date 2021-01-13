@@ -970,9 +970,12 @@ navigation:
     controls/picturebox/overview:
         title: Overview 
         position: 1   
-        controls/picturebox/features:
+    controls/picturebox/features:
         title: Features 
-        position: 5
+        position: 4
+    controls/picturebox/localization:
+        title: Localization
+        position: 10    
     controls/pivotgrid:
         title: PivotGrid 
         position: 360
