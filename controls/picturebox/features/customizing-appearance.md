@@ -5,7 +5,7 @@ description: Customizing appearance
 slug: radpicturebox-customizing-appearance
 tags: customizin-appearance
 published: True
-position: 3
+position: 4
 ---
 
 # Customizing appearance
