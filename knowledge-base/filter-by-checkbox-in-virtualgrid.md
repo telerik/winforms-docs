@@ -173,7 +173,7 @@ public class MyFilterVirtualGridCheckBoxCellElement : VirtualGridFilterCellEleme
     {
         VirtualGridRowElement rowElement = context as VirtualGridRowElement;
 
-        return data == 3 && rowElement.RowIndex >= 0;
+        return data == 3 && rowElement.RowIndex == -3;
     }
 
     public override void Attach(int data, object context)
@@ -335,7 +335,7 @@ Public Class MyFilterVirtualGridCheckBoxCellElement
 
     Public Overrides Function IsCompatible(ByVal data As Integer, ByVal context As Object) As Boolean
         Dim rowElement As VirtualGridRowElement = TryCast(context, VirtualGridRowElement)
-        Return data = 3 AndAlso rowElement.RowIndex >= 0
+        Return data = 3 AndAlso rowElement.RowIndex = -3
     End Function
 
     Public Overrides Sub Attach(ByVal data As Integer, ByVal context As Object)
