@@ -21,11 +21,11 @@ In order to start a panning operation you can drag the view port with the mouse.
 {{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=EnableZoom}} 
 
 ````C#
-this.radPictureBox1.ZoomProperties.AllowZoom = true;
+
 
 ````
 ````VB.NET
-Me.RadPictureBox1.ZoomProperties.AllowZoom = True
+
 
 ````
 
@@ -41,15 +41,16 @@ If you do not what the scrollbars to be displayed you can disable them. Thus, th
 {{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=DisableScrollbars}} 
 
 ````C#
-this.radPictureBox1.ShowScrollBars = false;
+
 
 ````
 ````VB.NET
-Me.RadPictureBox1.ShowScrollBars = False
+
 
 ````
 
 {{endregion}}
+
 
 #### Zoom properties
 
@@ -83,6 +84,7 @@ Me.RadPictureBox1.ZoomProperties.Zoom(5)
 
 {{endregion}}
 
+
 * The **ZoomIn** method performs a zoom-in operation with one step, according to the **ZoomStep** value. This method has an overload that performs a zoom-in according to the **ZoomStep** value operation with a specified count of steps:
 
 {{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=ZoomIn}} 
@@ -101,6 +103,7 @@ Me.RadPictureBox1.ZoomProperties.ZoomIn(5)
 
 {{endregion}}
 
+
 * The **ZoomOut** method performs a zoom-out operation with one step, according to the **ZoomStep** value. This method has an overload that performs a zoom-out according to the **ZoomStep** value operation with a specified count of steps:
 
 {{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=ZoomOut}} 
@@ -118,6 +121,7 @@ Me.RadPictureBox1.ZoomProperties.ZoomOut(5)
 ````
 
 {{endregion}}
+
 
 You can also reset all the zoom settings by calling the **ResetZoom** method. 
 

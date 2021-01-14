@@ -125,3 +125,4 @@ RadPictureBoxLocalizationProvider.CurrentProvider = new EnglishPictureBoxLocaliz
 
 {{endregion}}
 
+
