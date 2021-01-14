@@ -89,8 +89,9 @@ If you have horizontal as well as vertical panel displayed in **RadPictureBox** 
 
 #### Setting PanelOverflowMode
 
-{{source=..\SamplesCS\RadPictureBox\PictureBoxGettingStarted.cs region=PanelOverflowMode}} 
-{{source=..\SamplesVB\RadPictureBox\PictureBoxGettingStarted.vb region=PanelOverflowMode}} 
+{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=PanelOverflowMode}} 
+{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=PanelOverflowMode}} 
+
 ````C#
 this.radPictureBox1.PanelOverflowMode = PictureBoxPanelOverflowMode.HorizontalOverVertical;
 
@@ -105,4 +106,7 @@ Me.RadPictureBox1.PanelOverflowMode = PictureBoxPanelOverflowMode.HorizontalOver
 
 # See Also
 
-* [Structure]({%slug radpicturebox-structure%})
+* [Edit]({%slug radpicturebox-edit%})
+* [Pan and Zoom]({%slug radpicturebox-pan-and-zoom%})
+* [Context Menu]({%slug radpicturebox-context-menu%})
+

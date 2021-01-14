@@ -17,8 +17,9 @@ The context menu will appear every time the user right-clicks on the **RadPictur
 The context menu is enabled by default. If you want to disable it you can use the **ContextMenuEnabled** property:
 
 #### Disable context menu
-{{source=..\SamplesCS\RadPictureBox\PictureBoxGettingStarted.cs region=DisableContextMenu}} 
-{{source=..\SamplesVB\RadPictureBox\PictureBoxGettingStarted.vb region=DisableContextMenu}} 
+{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=DisableContextMenu}} 
+{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=DisableContextMenu}} 
+
 ````C#
 this.radPictureBox1.ContextMenuEnabled = false;
 
@@ -48,8 +49,9 @@ The default context menu in **RadPictureBox** can be customized in the **Context
 
 In order to remove an item you can use the Items.**Remove** method and pass the desired item as a parameter in the **ContextMenuOpening** event:
 
-{{source=..\SamplesCS\RadPictureBox\PictureBoxGettingStarted.cs region=RemoveItem}} 
-{{source=..\SamplesVB\RadPictureBox\PictureBoxGettingStarted.vb region=RemoveItem}} 
+{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=RemoveItem}} 
+{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=RemoveItem}} 
+
 ````C#
 private void RadPictureBox1_ContextMenuOpening(object sender, CancelEventArgs e)
 {
@@ -70,8 +72,9 @@ End Sub
 
 In order to add a new item to the context menu you you should create new menu item instance and add it to the Items collection:
 
-{{source=..\SamplesCS\RadPictureBox\PictureBoxGettingStarted.cs region=AddItem}} 
-{{source=..\SamplesVB\RadPictureBox\PictureBoxGettingStarted.vb region=AddItem}} 
+{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=AddItem}} 
+{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=AddItem}} 
+
 ````C#
 RadMenuItem customMenuItem = new RadMenuItem();
 private void RadPictureBox1_ContextMenuOpening1(object sender, CancelEventArgs e)
@@ -119,4 +122,7 @@ The result of adding and removing items from this article is shown on the screen
 
 # See Also
 
-* [Structure]({%slug radpicturebox-structure%})
+* [Edit]({%slug radpicturebox-edit%})
+* [Customizing appearance]({%slug radpicturebox-customizing-appearance%})
+* [Pan and Zoom]({%slug radpicturebox-pan-and-zoom%})
+

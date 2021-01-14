@@ -39,8 +39,9 @@ If you are trying to edit SVG image you will get the following warning message:
 
 Below is demonstrated how to customize the ResizeDialog and set the checked state of the Preserve Aspect Ratio checkbox which by default is unchecked.
 
-{{source=..\SamplesCS\RadPictureBox\PictureBoxGettingStarted.cs region=CustomizeDialog}} 
-{{source=..\SamplesVB\RadPictureBox\PictureBoxGettingStarted.vb region=CustomizeDialog}} 
+{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=CustomizeDialog}} 
+{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=CustomizeDialog}} 
+
 ````C#
 public class CustomImageEditorDialogFactory : ImageEditorDialogFactory
 {
@@ -69,24 +70,30 @@ Public Class CustomImageEditorDialogFactory
         Return dialog
     End Function
 End Class
+
 ````
 
 {{endregion}}
 
 Finally, you need to apply this custom factory to your **PictureBoxImageEditorDialog**:
 
-{{source=..\SamplesCS\RadPictureBox\PictureBoxGettingStarted.cs region=ApplyCustomFactory}} 
-{{source=..\SamplesVB\RadPictureBox\PictureBoxGettingStarted.vb region=ApplyCustomFactory}} 
+{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=ApplyCustomFactory}} 
+{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=ApplyCustomFactory}} 
+
 ````C#
 this.radPictureBox1.ImageEditorDialog.ImageEditor.ImageEditorElement.DialogFactory = new CustomImageEditorDialogFactory();
 
 ````
 ````VB.NET
 Me.RadPictureBox1.ImageEditorDialog.ImageEditor.ImageEditorElement.DialogFactory = New CustomImageEditorDialogFactory()
+
 ````
 
 {{endregion}}
 
 # See Also
 
-* [Structure]({%slug radpicturebox-structure%})
+* [Customizing appearance]({%slug radpicturebox-customizing-appearance%})
+* [Pan and Zoom]({%slug radpicturebox-pan-and-zoom%})
+* [Context Menu]({%slug radpicturebox-context-menu%})
+

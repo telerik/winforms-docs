@@ -20,8 +20,9 @@ Override the **GetLocalizedString(string id)** method and provide a translation 
 
 Below is a sample implementation of an English localization provider:
 
-{{source=..\SamplesCS\RadPictureBox\PictureBoxLocalizationProvider.cs region=LocalizationProvider}} 
-{{source=..\SamplesVB\RadPictureBox\PictureBoxLocalizationProvider.vb region=LocalizationProvider}} 
+{{source=..\SamplesCS\PictureBox\PictureBoxLocalizationProvider.cs region=LocalizationProvider}} 
+{{source=..\SamplesVB\PictureBox\PictureBoxLocalizationProvider.vb region=LocalizationProvider}}
+
 ````C#
 public class EnglishPictureBoxLocalizationProvider : RadPictureBoxLocalizationProvider
 {
@@ -110,8 +111,9 @@ End Class
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 ### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\RadPictureBox\PictureBoxLocalizationProvider.cs region=AssignLocalizationProvider}} 
-{{source=..\SamplesVB\RadPictureBox\PictureBoxLocalizationProvider.vb region=AssignLocalizationProvider}} 
+{{source=..\SamplesCS\PictureBox\PictureBoxLocalizationProvider.cs region=AssignLocalizationProvider}} 
+{{source=..\SamplesVB\PictureBox\PictureBoxLocalizationProvider.vb region=AssignLocalizationProvider}} 
+
 ````C#
 RadPictureBoxLocalizationProvider.CurrentProvider = new EnglishPictureBoxLocalizationProvider();
 

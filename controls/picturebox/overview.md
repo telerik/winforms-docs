@@ -29,3 +29,4 @@ __RadPictureBox__ is a control used to display images in different formats. The 
 # See Also
 
 * [Structure]({%slug radpicturebox-structure%})
+* [Getting Started]({%slug radpicturebox-getting-started%})

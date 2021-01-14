@@ -33,3 +33,5 @@ Figure 2: RadPictureBox elements hierarchy
 # See Also
 
 * [Overview]({%slug radpicturebox-overview%})
+* [Getting Started]({%slug radpicturebox-getting-started%})
+
