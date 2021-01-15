@@ -70,7 +70,7 @@ End Sub
 
 ### Adding new item to the context menu
 
-In order to add a new item to the context menu you you should create new menu item instance and add it to the Items collection:
+In order to add a new item to the context menu you should create new menu item instance and add it to the Items collection:
 
 {{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=AddItem}} 
 {{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=AddItem}} 
