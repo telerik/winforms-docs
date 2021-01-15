@@ -53,6 +53,8 @@ When a document containing a signature field is loaded in **RadPdfViewer**, you 
 
 ![pdfviewer-digital-signature003](images/pdfviewer-digital-signature003.gif)
 
+>note As of R1 2021 RadPdfViewerElement offers the cancelable **SignatureDialogShowing** and **SignSignatureDialogShowing** events. They allow customizing or changing the signature dialogs in **RadPdfViewer**.
+
 ## Validation
 
 In the PDF document model, the validation is performed per signature. For a valid signed document is considered one that has not been changed after the signing and all of its certificates have valid trusted root certificate.
