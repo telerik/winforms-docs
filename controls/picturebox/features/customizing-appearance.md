@@ -86,6 +86,7 @@ Me.RadPictureBox1.PanelDisplayMode = PictureBoxPanelDisplayMode.Always
 
 {{endregion}}
 
+>note When **PanelDisplayMode** is set to *OnMouseHover*, the **AllowPanelAnimations** property indicates whether to show animations when showing and hiding panels.
 
 ### Panel Overflow Mode 
 
