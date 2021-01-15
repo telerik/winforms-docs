@@ -18,8 +18,9 @@ position: 4
 
 #### Adding buttons to panels
 
-{{source=..\SamplesCS\RadPictureBox\PictureBoxGettingStarted.cs region=Panels}} 
-{{source=..\SamplesVB\RadPictureBox\PictureBoxGettingStarted.vb region=Panels}} 
+{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=Panels}} 
+{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=Panels}} 
+
 ````C#
 RadButtonElement button = new RadButtonElement("Add New");
 button.SvgImage = RadSvgImage.FromFile(@"..//..//PictureBox//symbol-add.svg");
@@ -57,6 +58,7 @@ Me.RadPictureBox1.TopPanel.CenterItems.Add(button)
 
 {{endregion}}
 
+
 ![picturebox-getting-started3](images/customizing-appearance001.png)
 
 ### Panel Display Mode
@@ -70,8 +72,9 @@ The display mode can be changed through **PanelDisplayMode** property.
 
 #### Setting PanelDisplayMode to be always visible
 
-{{source=..\SamplesCS\RadPictureBox\PictureBoxGettingStarted.cs region=PanelDisplayMode}} 
-{{source=..\SamplesVB\RadPictureBox\PictureBoxGettingStarted.vb region=PanelDisplayMode}} 
+{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=PanelDisplayMode}} 
+{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=PanelDisplayMode}} 
+
 ````C#
 this.radPictureBox1.PanelDisplayMode = PictureBoxPanelDisplayMode.Always;
 
@@ -82,6 +85,7 @@ Me.RadPictureBox1.PanelDisplayMode = PictureBoxPanelDisplayMode.Always
 ````
 
 {{endregion}}
+
 
 ### Panel Overflow Mode 
 
