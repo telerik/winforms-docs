@@ -33,8 +33,8 @@ Then, if you want to show a toast notification at run time, e.g. when clicking a
 
 #### Register RadToastNotificationManager and Show a Notification
 
-{{source=..\SamplesCS\ToastNotification\ToastNotificationGettingsStarted.cs region=RegisterGettingStarted}} 
-{{source=..\SamplesVB\ToastNotification\ToastNotificationGettingsStarted.vb region=RegisterGettingStarted}}
+{{source=..\SamplesCS\ToastNotification\ToastNotificationGettingStarted.cs region=RegisterGettingStarted}} 
+{{source=..\SamplesVB\ToastNotification\ToastNotificationGettingStarted.vb region=RegisterGettingStarted}}
 
 ````C#
 
