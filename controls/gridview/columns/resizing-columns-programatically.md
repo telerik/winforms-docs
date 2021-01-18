@@ -99,7 +99,7 @@ The GridViewTemplate.**BestFitColumns** method offers two overloads:
 
 * **BestFitColumns(BestFitColumnMode.)**: the **BestFitColumnMode** controls which cells participate in the calculations for the space required to fit the text. These are the available modes:
 
-  * BestFitColumnMode.__None__ - The column's width does not automatically adjust.
+  * BestFitColumnMode.__None__ - The column's width does not adjust automatically.
 
   * BestFitColumnMode.__AllCells__ - The column's width adjusts to fit the contents of all cells in the control.
 
@@ -115,7 +115,7 @@ The GridViewTemplate.**BestFitColumns** method offers two overloads:
 
   * BestFitColumnMode.__DisplayedCells__ - The column's width adjusts to fit the contents of the displayed cells.
 
-You can customize the execution of the algorithm for concrete column by setting the __AutoSizeMode__ property on the desired column.
+You can customize the execution of the algorithm for a concrete column by setting the __AutoSizeMode__ property on the desired column.
 
 When you configure the desired best fit method, users can execute the best fit operation by:
 
