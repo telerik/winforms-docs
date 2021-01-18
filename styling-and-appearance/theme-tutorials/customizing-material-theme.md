@@ -12,6 +12,8 @@ position: 7
 
 As of the R2 2017 the **Material**, **MaterialBlueGray**, **MaterialPink**, and the **MaterialTeal** themes are built-in and redistributed with our suite. This tutorial will provide the necessary steps to create a new Material inspired theme. We are going to use the **Material** theme as our source and based on it build a new **MaterialPurple** theme.
 
+Feel free to use the [Material Themes Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/material-themes-blending%}) dialog to save all the below described steps which were applicable for versions prior to releasing the dialog.
+
 |Material|MaterialPurple|
 |----|----|
 ![themes-theme-tutorials-customizing-material-theme 001](images/themes-theme-tutorials-customizing-material-theme001.png)|![themes-theme-tutorials-customizing-material-theme 002](images/themes-theme-tutorials-customizing-material-theme002.png)|
@@ -42,11 +44,11 @@ Each palette has a wide range of colors and we need to say which colors we are g
 
 The number on the right is the color ID and can be found in the links mentioned above. Now we know the exact colors that we are going to use and we can start creating new material theme. First we need to open VisualStyleBuilder.
 
-As a foundation we are going to use the first Material theme, so we can open Material.tssp for modification. Now using the ColorBlending dialog the new theme will be ready in a dozen of steps. 
+As a foundation we are going to use the first Material theme, so we can open Material.tssp for modification. Now using the [ColorBlending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%}) dialog the new theme will be ready in a dozen of steps. 
 
 >note One should use the Visual Style Builder from the R3 2017 release onward as it brings major improvements in how the source and destination colors are being blended.
 
-Open ColorBlending dialog and use the following settings for all color modifications:
+Open [ColorBlending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%}) dialog and use the following settings for all color modifications:
 
 1\. **Uniform Color Blending**: Image Treshold – 10; Color Mix – 1.00; Color Sensitivity – 0.00
 
