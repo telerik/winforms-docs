@@ -13,78 +13,101 @@ previous_url: gridview-getting-started
 
 | RELATED VIDEOS |  
 | ------ |
-|[RadGridView for WinForms Webinar](http://tv.telerik.com/watch/winforms/webinar/radgridview-for-winforms-webinar)<br>Lino Tadros from Falalel provides an in-depth overview of Telerik's RadGridView for WinForms (Runtime: 01:45:11)|
+|[RadGridView for WinForms Webinar](https://www.telerik.com/videos/winforms/radgridview-for-winforms-webinar)<br>Lino Tadros from Falalel provides an in-depth overview of Telerik's RadGridView for WinForms (Runtime: 01:45:11)|
 
-The example below demonstrates creating a hierarchical grid presenting two tables *Product Category* and *Product Information*.
+The following tutorial demonstrates how to create a hierarchical grid that presents two tables: *Product Category* and *Product Information*.
 
->caption Figure 1: The final result from the tutorial.
+>caption Figure 1: The final result
 
 ![grid-getting-started 001](images/grid-getting-started001.png)
 
-## Setting up the Form 
+## Setting up the Form
 
-1. Create a new __Windows Application__ project.
-            
+1. Create a new __Windows Forms Application__ project.
+
 1. Drop a __RadGridView__ control on the form.
 
-1. Set the RadGridView.__Dock__ property to *Fill* in the Properties window of Visual Studio.
+1. In the __Properties__ window for __RadGridView__, set the `RadGridView.Dock` property to *Fill*.
 
 ## Connecting to Data
 
-1. Open the __DataSource__ property drop down in the *Properties* window of Visual Studio and select __Add Project Data Source__. This step will open the __Data Source Configuration Wizard__.
+1. In the __Properties__ window for __RadGridView__, locate the `DataSource` property drop-down.
 
-1. In the **Data Source Configuration Wizard**, Choose a Data Source Type page, select the __Database__ icon, and click __Next__.
+1. Select __Add Project Data Source__. This step will open the __Data Source Configuration Wizard__.
+
+1. On the __Choose a Data Source Type__ page, select __Database__ and click __Next__.
 ![grid-getting-started 002](images/grid-getting-started002.png)
 
-1. In the Choose Your Data Connection page of the wizard, click on the __New Connection...__ button. This page displays the `Add Connection` dialog.
+1. On the __Choose a Database Model__ page, select __Dataset__.
 
-1. In the `Add Connection` dialog, click on the __Change...__ button. This will display the `Change Data Source` dialog.
+1. On the __Choose Your Data Connection__ page, select __New Connection...__. This page displays the __Choose Data Source__ dialog.
 
-1. In the `Change Data Source` dialog, select __Microsoft Access Data Base File__ from the data source list.
+1. In the __Choose Data Source__ dialog, select __Microsoft Access Data Base File__.
 
-1. Click __OK__ to close the dialog.
+1. Click __Continue__.
 
-1. In the `Add Connection` dialog, click on the __Browse...__ button. This step will display the `Select Microsoft Access Database File` dialog.
+1. In the __Add Connection__ dialog, click the __Browse...__ button. This step will display the __Select Microsoft Access Database File__ dialog.
 
-1. In the `Select Microsoft Access Database` File dialog, navigate to Telerik UI for WinForms installation directory and locate the Nwind.mdb file within the \Examples\QuickStart\Datasources directory. Select Nwind.mdb and click __OK__ to close the dialog.
+1. In the __Select Microsoft Access Database File__ dialog, navigate to the Telerik UI for WinForms installation directory and locate the `Nwind.mdb` file within the `\Examples\QuickStart\Datasources` directory. Select `Nwind.mdb` and click __OK__.
 
-1. Click __OK__ to close `Add Connection` dialog.
+1. Click __OK__ again to close the __Add Connection__ dialog.
 
-1. In *Choose Your Data Connection* page of the wizard, click __Next__. This step will display a Microsoft Visual Studio dialog that prompts to ask if you want to copy the file to your project. Click __Yes__ to close the dialog.
+1. On the  __Choose Your Data Connection__ page, click __Next__. Visual Studio shows a dialog that asks if you want to copy the file to your project.
 
-1. In `Save the Connection String to the Application Configuration File` page of the wizard, click the __Next__ button.
+1. Click __Yes__ to close the Visual Studio dialog.
 
-1. In `Choose Database Objects` page of the dialog, select columns from the Categories table: "CategoryID", "CategoryName" and "Description". Select columns from the Products table: "ProductName", "CategoryID", "UnitsOnOrder" and "Discontinued".
+1. On the __Save the Connection String to the Application Configuration File__ page, click __Next__.
+
+1. On the __Choose Your Database Objects__ page, expand the `Categories` table.
+
+1. Select the following columns in the `Categories` table: `CategoryID`, `CategoryName` and `Description`.
+
+1. Expand the `Products` table and select the following columns: `ProductName`, `CategoryID`, `UnitsOnOrder` and `Discontinued`.
 
     ![grid-getting-started 003](images/grid-getting-started003.png)
 
-1. Click the __Finish__ button to close the `Data Source Configuration Wizard`.
+1. Click __Finish__ to close the __Data Source Configuration Wizard__.
 
-1. In the `Properties` window of Visual Studio, open the __DataSource__ property drop down and select __Categories__ from the NwindDataSet data source. This step will create *categoriesBindingSource* and *categoriesTableAdapter* components.
-![grid-getting-started 004](images/grid-getting-started004.png)
+1. In the __Properties__ window for __RadGridView__, select the `DataSource` property drop-down.
 
-1. Select the __DataSource__ property drop down a second time and select *Products* from *NwindDataSet* data source. This step will create *productsBindingSource* and *productsTableAdapter* components.
+1. Locate the `NwindDataSet` data source.
 
-1. Select the __DataSource__ property drop down for the third time and select *NwindDataSet*. This step will assign the entire dataset to the grid.
+1. Select `Categories` from the `NwindDataSet` data source. This step will create the `categoriesBindingSource` and `categoriesTableAdapter` components.
+
+    ![grid-getting-started 004](images/grid-getting-started004.png)
+
+1. Select the `DataSource` property drop-down for a second time.
+
+1. Select `Products` from the `NwindDataSet` data source. This step will create the `productsBindingSource` and `productsTableAdapter` components.
+
+1. Select the `DataSource` property drop-down for a third time.
+
+1. Select `NwindDataSet`. This step will assign the entire data set to the grid.
+
     ![grid-getting-started 005](images/grid-getting-started005.png)
 
 ## Setting Properties
 
-1. In the *Properties* window of Visual Studio, set the __DataMember__ property - select *Categories* from the drop down list. This step will assign categories as a top level table for the grid.
+1. In the __Properties__ window for __RadGridView__, select the `DataMember` property.
 
-1. In the *Properties* window, set __AutoGenerateHierarchy__ to __True__.
+1. Select `Categories` from the drop-down list. This step will assign `Categories` as a top level table for the grid.
 
-1. From *RadGridView* smart tag, select __Open Property Builder__.
+1. In the __Properties__ window for __RadGridView__, select the `AutoGenerateHierarchy` property.
 
-1. In *Property Builder Structure* pane, de-select *CategoryID* checkboxes.
+1. Select `True` from the drop-down list.
 
-1. Close the *Property Builder* window.
+1. Click the __RadGridView__ smart tag in the form.
 
-1. Press __F5__ to run the application. Notice that the grid first displays product categories. Each category has an icon that can be clicked to expand that category and show a child template with the corresponding products.
-            
-# See Also
+1. Select __Open Property Builder__ from the smart tag menu.
+
+1. Select the `CategoryID` column in the navigation tree and clear the checkbox.
+
+1. Click __OK__ to close the __Property Builder__.
+
+1. Press __F5__ to run the application. Notice that the grid displays the product categories first. Each category has an icon that you can click to expand that category and show a child template with the corresponding products.
+
+## See Also
 
 * [Property Builder]({%slug winforms/gridview/design-time-support/property-builder%})
 
 * [Smart tag]({%slug winforms/gridview/design-time-support/smart-tag%})
-
