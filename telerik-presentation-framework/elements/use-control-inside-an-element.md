@@ -10,7 +10,7 @@ position: 3
 
 # Use Controls inside an Element
 
-Please note that when you are creating custom controls you can use all of the predefined elements your create custom ones. Most of the controls in the suite have a corresponding elements which can be used in the custom controls. However in cases with complex controls, the respective elements cannot be used instead. In such cases you can use the __RadHostItem__  class which allows you to add controls to elements. 
+Please note that when you are creating custom controls, you can use the predefined elements that the control offers. Most of the controls in the suite have a corresponding element which can be used in the custom controls. However, in cases with complex controls, the respective elements cannot be used instead. In such cases you can use the __RadHostItem__  class which allows you to add controls to elements. 
 
 ### Example add RadgridView to a panorama tile.
 
