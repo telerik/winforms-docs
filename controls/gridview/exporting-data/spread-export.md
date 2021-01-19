@@ -15,7 +15,7 @@ __GridViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.
 
 >note As of **R3 2020 SP1** GridViewSpreadExport also supports exporting to *xls*.
 
-This article will explain in detail the **SpreadExport** abilities and will demonstrate how to use it.
+This article explains in detail the **SpreadExport** abilities and demonstrates how to use it for:
 
 * [Exporting Data](#exporting-data)
 
@@ -23,25 +23,35 @@ This article will explain in detail the **SpreadExport** abilities and will demo
 
 * [Async Spread Export](#async-spread-export)
 
-Here is how the following grid, looks when exported.<br>![gridview-exporting-data-spread-export 001](images/gridview-exporting-data-spread-export001.png)![gridview-exporting-data-spread-export 002](images/gridview-exporting-data-spread-export002.png)
+The following images show how a grid looks when you export it:<br>![gridview-exporting-data-spread-export 001](images/gridview-exporting-data-spread-export001.png)![gridview-exporting-data-spread-export 002](images/gridview-exporting-data-spread-export002.png)
 
->note The spread export functionality is located in the __TelerikExport.dll__ assembly which must be added to your project. You need to include the following namespace in order to access the types contained in TelerikExport:
-* Telerik.WinControls.Export
->
+>note The spread export functionality requires the __TelerikExport.dll__ assembly. To access the types in TelerikExport, you must include the assembly in your project and reference the __Telerik.WinControls.Export__ namespace.
 
->important Since this functionality is using the [RadSpreadProcessing Library](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) you need to reference the following assemblies as well:
+The spread export functionality also requires the [RadSpreadProcessing Library](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview). To use this Library, you must reference the following assemblies:
+
 * TelerikExport
+
 * Telerik.Windows.Documents.Core
+
 * Telerik.Windows.Documents.Fixed
+
 * Telerik.Windows.Documents.Spreadsheet
+
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml
+
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf
+
 * Telerik.Windows.Zip
->
 
 ## Exporting
 
-To use the spread export functionality, an instance of the __GridViewSpreadExport__ object should be created, passing as parameter the __RadGridView__ instance to export. Afterwards, the __RunExport__ method will trigger the export process. The latter method accepts as parameter a filename of the file to be exported.
+To use the spread export functionality:
+
+1. Create an instance of the __GridViewSpreadExport__ object.
+
+1. Pass the __RadGridView__ instance that you want to export as a parameter.
+
+1. Use the __RunExport__ method to trigger the export process. __RunExport__ accepts a filename as a parameter for the exported file.
 
 {{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=Export}} 
 {{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=Export}} 
@@ -62,9 +72,9 @@ spreadExporter.RunExport("D:\exportedFile.xlsx", exportRenderer)
 
 {{endregion}} 
 
-The __RunExport__ method has several overloads allowing the user to export using a stream as well:
+### Running export synchronously using a stream
 
-####  Running export synchronously using a stream
+The __RunExport__ method has several overloads that allow the user to export using a stream as well:
 
 {{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=StreamRunExport}} 
 {{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=StreamRunExport}} 
@@ -101,10 +111,17 @@ End Using
 
 {{endregion}} 
 
->note As of **R1 2018 SP1** **GridViewSpreadExport** supports image exporting. The **ImageAlignment** property of the column is respected. However, have in mind that the ImageLayout.*Tile* is not supported.
->
+### Image exporting
 
->important Image export is not available in XLS format provider: [Xls Features](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/import-and-export-to-excel-file-formats/xls/features)
+**GridViewSpreadExport** allows you to export images. Observe the following specifics when you use **GridViewSpreadExport**:
+
+* Image exporting requires __GridViewSpreadExport R1 2018 SP1__ or later.
+
+* The **ImageAlignment** property of the column is respected. 
+
+* ImageLayout.*Tile* is not supported.
+
+>important Image export is not available in the XLS format provider. See the [Xls Features](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/import-and-export-to-excel-file-formats/xls/features) article for a list of all supported features.
 >
 
 
@@ -192,9 +209,13 @@ __ExportViewDefinition:__  Gets or sets a value indicating whether to export the
 
 ### Exported Cells Data Type
 
->important
-Each column in **RadGridView** has __ExcelExportType__ property which can be used for explicitly setting the data type of the cells in the exported document. In order to change the format of the exported data, you can set the __ExcelExportType__ property of the specific column to *Custom* and specify the __ExcelExportFormatString__ property with the desired format. The following help article is quite useful for specifying the desired format: [Format Codes](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes)
->
+Each column in **RadGridView** has an __ExcelExportType__ property that you can use to explicitly set the data type of the cells in the exported document. To change the format of the exported data:
+
+1. Set the __ExcelExportType__ property of the specific column to *Custom*.
+
+1. Specify the __ExcelExportFormatString__ property with the desired format.
+
+For more details on specifying the desired format, see [Format Codes](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes).
 
 ## Events
 
@@ -327,14 +348,14 @@ spreadExporter.RunExport("..\..\exportedFile.xlsx", exportRenderer)
 
 ## Async Spread Export
 
-__RadGridView__ can export its contents asynchronously. This feature can be utilized by calling the  __RunExportAsync__ method on the __GridViewSpreadExport__ object.
+__RadGridView__ can export its content asynchronously. This feature can be utilized by calling the  __RunExportAsync__ method on the __GridViewSpreadExport__ object.
 
->important Due to performance considerations and in order to decrease the consumed memory the visual settings and view definitions in __RadGridView__ are not exported when the operation is run async.
+>important To achieve optimal performance and to decrease the consumed memory, the visual settings and view definitions in __RadGridView__ are not exported when the operation is run asynchronously.
 >
 
 ## Methods
 
-The following methods of the __GridViewSpreadExport__ class are responsible for exporting the data.
+The following methods of the __GridViewSpreadExport__ class are responsible for exporting the data:
 
 * __RunExportAsync__: Starts an export operation which runs in a background thread.
 
@@ -342,7 +363,7 @@ The following methods of the __GridViewSpreadExport__ class are responsible for 
 
 ## Events
 
-The following events provide information about the state of the export operation.
+The following events provide information about the state of the export operation:
 
 * __AsyncExportProgressChanged__: Occurs when the progress of an asynchronous export operation changes.
 
@@ -350,13 +371,13 @@ The following events provide information about the state of the export operation
 
 ## Exporting Data Asynchronously
 
-This example will demonstrate how the async spread export feature can be combined with a __RadProgressBar__ control to deliver better user experience.
+This example demonstrates how to combine the async spread export feature with a __RadProgressBar__ control to deliver better user experience.
         
 >caption Figure: Exporting Data Asynchronously
 
 ![gridview-exporting-data-async-spread-export 001](images/gridview-exporting-data-async-spread-export001.gif)
 
-1\. Bind __RadGridView__ and define initial settings.
+1\. Bind __RadGridView__ and define the initial settings.
 
 {{source=..\SamplesCS\GridView\ExportingData\AsyncSpreadExport.cs region=BindAndDefineSettings}} 
 {{source=..\SamplesVB\GridView\ExportingData\AsyncSpreadExport.vb region=BindAndDefineSettings}} 

@@ -8,7 +8,11 @@ published: True
 position: 10 
 ---
 
-# Properties
+# Properties, Methods and Events
+
+This article provides reference tables with the [Properties](#properties), [Methods](#methods) and [Events](#events) in RadListView.
+
+## Properties
 
 |Property|Description|
 |----|----| 
@@ -72,7 +76,7 @@ position: 10
 |**FindStringComparer**|Gets or sets the string comparer used by the keyboard navigation functionality.|
 |**CheckOnClickMode**|Gets or sets a value indicating whether the item's check state changes whenever the item is clicked.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----| 
@@ -91,7 +95,7 @@ position: 10
 |**CheckAllItems**|Checks all of the items.|
 |**UncheckAllItems**|Unchecks all of the items.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----| 

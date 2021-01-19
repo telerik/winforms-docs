@@ -10,11 +10,11 @@ CTAControlName: RichTextEditor
 previous_url: richtexteditor, richtexteditor-troubleshooting, richtexteditor-styles-and-templates-template-structure, richtexteditor-styles-and-templates-styling-the-richtexteditor, richtexteditor-styles-and-templates   
 ---
 
-# RichTextEditor 
- 
-Thank you for choosing Telerik __RadRichTextEditor__!
-        
-__RadRichTextEditor__ is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+# RichTextEditor
+
+__RadRichTextEditor__ is a control that allows you to bring word-processing to your applications. It can display and edit rich-text content, including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+
+If you are new to this control, see the [Getting Started]({%slug winforms/richtexteditor-/getting-started%}) tutorial.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
@@ -23,6 +23,10 @@ __RadRichTextEditor__ is a control that is able to display and edit rich-text co
 >note **RadRichTextEditor** requires **.NET Framework 4.0** and cannot be used with an older version. 
 
 ![richtexteditor 001](images/richtexteditor001.png)
+
+## Features
+
+The __RadRichTextEditor__ provides an abundance of features that allow it to handle even highly complex documents:
 
 * __Rich Text Formatting__ - Telerik __RadRichTextEditor__ control allows you to edit text and apply rich formatting options, like:
 

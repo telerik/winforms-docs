@@ -11,11 +11,13 @@ previous_url: gridview-rows-summary-rows
 
 # Summary Rows
 
-Summary rows are **RadGridView**'s rows which allow you to display information about the data in the control such as first item, last item, count of items, etc. The summary rows are top and bottom pinned rows. They can be used in a flat **RadGridView** or in groups and hierarchical views.
+You can use summary rows to show summary information about the displayed data, such as first item, last item, count, etc. The summary rows can be top and bottom pinned. You can use them in a flat **RadGridView**, or in groups and hierarchical views.
       
 ## Basic Example
 
-The following example demonstrates how to create a top pinned summary row, showing the count of the **RadGridView** rows:
+To add summary rows to your application, start by initializing a new instance of **GridViewSummaryItem**.
+
+The following example demonstrates the steps to create a top pinned summary row that shows the count of the **RadGridView** rows:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=addingSummaryRow}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=addingSummaryRow}} 
@@ -43,25 +45,25 @@ Me.RadGridView1.SummaryRowsBottom.Add(summaryRowItem)
 
 {{endregion}} 
 
->caption Figure 1: Top summary row
+>caption Figure 1: Top pinned summary row
 
 ![gridview-rows-summary-rows 001](images/gridview-rows-summary-rows001.png)
 
 ## SummaryItem properties
 
-Summary item's major properties are:
+The following list represents the most used SummaryItem properties:
 
-* __Name:__ The name of the column which the summary item refers to.
+* __Name:__ The name of the column for which you display summary information.
 
-* __Aggregate:__ The function which will be evaluated.
+* __Aggregate:__ The function that will be evaluated, for example, __Sum__, __Count__, __Max__, etc.
 
-* __AggregateExpression:__ The final expression to evaluate.
+* __AggregateExpression:__ The expression that will be evaluated. This property allows you to use advanced expressions instead of a simple __Aggregate__ function.
 
-* __FormatString:__ Formatting string which is applied to the calculated value of the summary item.
+* __FormatString:__ The formatting string that is applied to the calculated value of the summary item.
 
 ## Predefined aggregates
 
-The predefined aggregates are:
+You can use the following predefined aggregates for the __Aggregate__ property:
 
 * __None:__ No expression is evaluated.
 
@@ -85,7 +87,7 @@ The predefined aggregates are:
 
 ## Using the FormatString
 
-The following example demonstrates how to add several summary items in a summary row and how the __FormatString__ is used:
+The following example demonstrates how to add several summary items to a summary row and how to use the __FormatString__:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=formatString}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=formatString}} 
@@ -114,7 +116,7 @@ Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 
 ## Using an AggregateExpression
 
-The next example demonstrates how to use __AggregateExpression__ to calculate an average value excluding the __Max__ and __Min__ values:
+The next example demonstrates how to use __AggregateExpression__ to calculate an average value by excluding the __Max__ and __Min__ values:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=aggregateExpression}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=aggregateExpression}} 
@@ -147,9 +149,9 @@ Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 
 ## Summary rows in a grouped RadGridView
 
-When you use grouping, the summary rows are calculated for each group's child rows and displayed as top or bottom pinned rows in each group. Using the template's property __ShowTotals__ you can define if total summary rows will be shown. They are calculated for the child rows of all groups and pinned at the top or bottom of all groups. 
+When you use grouping, SummaryItem calculates the aggregate values individually for each group and then displays the summary rows for each group. To show a total summary for all groups, you can use the __ShowTotals__ template property. The totals are calculated for the child rows of all groups. You can control if the summary rows are top or bottom pinned even in grouped RadGridView.
 
-As of **R1 2020** the template in **RadGridView** offers the **ShowSubTotals** property. Its value indicates whether summary rows will be shown for each group. The property is only relevant when the grid is grouped.
+As of the **R1 2020** version, the template in **RadGridView** offers the **ShowSubTotals** property. Its value indicates whether summary rows will be shown for each group. The property is only relevant when the grid is grouped.
 
 The next example demonstrates how to use summary rows in grouping:
 
@@ -182,7 +184,7 @@ Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 ## Summary rows in a hierarchical RadGridView
 
 You can add summary rows in hierarchical views. They are calculated for the child rows in the current view.   
-The following example demonstrates how to add a summary row to the first level of **RadGridView** hierarchy:
+The following example demonstrates how to add a summary row to the first level of a **RadGridView** hierarchy:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=hierarchy}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=hierarchy}} 
@@ -207,7 +209,8 @@ Me.RadGridView1.MasterTemplate.Templates(0).SummaryRowsTop.Add(summaryRowItem)
 
 ## Customizing the summary row
 
-The **GroupSummaryEvaluate** event is fired after a summary item is calculated and before the summary row is displayed. You can use it to apply custom formatting to the summary row:
+The **GroupSummaryEvaluate** event is fired after a summary item is calculated and before the summary row is displayed. You can use this event to apply custom formatting to the summary row. The same event is used to format the group header, so it is important to check the __Parent__ in the event arguments, as shown in the example:
+
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=customFormatting}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=customFormatting}}
@@ -237,13 +240,12 @@ End Sub
 
 ![gridview-rows-summary-rows 006](images/gridview-rows-summary-rows006.png)
 
-The same event is used to format the group header so it is important to check the __Parent__ in the event arguments, as shown in the above example.
         
-## Extending the GridViewSummaryItem
+## Extending the SummaryItem
 
 You can write your own logic for summary items evaluation by inheriting the **GridViewSummaryItem** class and overriding the __Evaluate__ method.
 
-The following example demonstrates how to create a custom summary item which calculates the orders count with *Freight* less than *50*:
+The following example demonstrates how to create a custom summary item that calculates the orders count with *Freight* less than *50*:
 
 {{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=customSummaryItemUsage}} 
 {{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=customSummaryItemUsage}}
@@ -307,9 +309,9 @@ End Class
 
 ## BottomPinnedRowsMode 
 
-You can control the location of the bottom summary rows by the **BottomPinnedRowsMode** property. The available options are:
+You can control the location of the bottom summary rows through the **BottomPinnedRowsMode** property. The available options are:
 
-* *Float*: The bottom pinned rows will stay below the scrollable rows. If there are not enough rows to fill the viewport there will be no gap between the scrollable and pinned rows.
+* *Float*: The bottom pinned rows will stay below the scrollable rows. If there are not enough rows to fill the viewport, there will be no gap between the scrollable and pinned rows.
 * *Fixed*: The bottom pinned rows will remain at the bottom of the viewport no matter how many scrollable rows there are in the viewport.
 
 |GridViewBottomPinnedRowsMode.Fixed|GridViewBottomPinnedRowsMode.Float|
