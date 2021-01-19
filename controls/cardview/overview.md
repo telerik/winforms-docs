@@ -18,7 +18,16 @@ With __RadCardView__, users can display and edit text data organized in a card l
 {% endif %}
 
 >caption Fig.1 RadCardView
+
 ![cardview-overview 001](images/radcardview-overview001.png)
+
+The below list shows the main features of the control:
+
+* Create complex layouts where the controls are automatically resized according to the current available size.
+* Arrange the controls in the form at runtime - your users will be able to rearrange the controls according to their needs.
+* Save and load the layout.
+* Group the underlying controls in tabs.
+* Expand/Collapse groups.
 
 To help you get up to speed with __RadCardView__, we prepared a short [Getting Started]({%slug winforms/cardview/getting-started%}) guide.
 
