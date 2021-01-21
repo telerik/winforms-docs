@@ -1655,6 +1655,7 @@ intro_columns:
       "StatusStrip": "winforms/forms-and-dialogs/statusstrip"
       "TabbedForm": "radtabbedform-overview"
       "TitleBar": "winforms/forms-and-dialogs/statusstrip"
+      "ToastNotification": "toast-notification-overview"
 -
   categories:
   -
