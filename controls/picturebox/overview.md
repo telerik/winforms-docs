@@ -24,6 +24,14 @@ __RadPictureBox__ is a control used to display images in different formats. The 
 * GIF 
 * ICO
 
+## Key features:
+
+* Edit images
+* Pan and zoom
+* Context menu
+* Customizing elements
+* Panel animations
+
 >note SVG image support is available only in .NET 4.0 and above.
 
 # See Also
