@@ -74,6 +74,8 @@ Me.RadGridView1.Columns("UnitPrice").ConditionalFormattingObjectList.Add(obj)
 ## Expression based formatting objects
 
 The expression based formatting objects apply to the cells / rows according to the defined __Expression__. It provides high flexibility to the formatting mechanism. The __Expression__ could refer to data from more than one column. Its result should be Boolean.
+
+In order to validate an expression, it is suitable to use the [Expression editor]({%slug winforms/gridview/expression-editor%}).
         
 The example below detects when a value in the second column `UnitPrice` has a value __greater than 30__ and sets styles to the `ProductName` column.
 
