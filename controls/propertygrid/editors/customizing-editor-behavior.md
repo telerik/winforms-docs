@@ -25,23 +25,24 @@ The following sample demonstrates how to change the default font of __PropertyGr
 {{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridCustomizingEditorBehavior.vb region=CustomizeEditor}} 
 
 ````C#
-void radPropertyGrid_EditorInitialized(object sender, Telerik.WinControls.UI.PropertyGridItemEditorInitializedEventArgs e)
+void radPropertyGrid1_EditorInitialized(object sender, Telerik.WinControls.UI.PropertyGridItemEditorInitializedEventArgs e)
 {
-    PropertyGridSpinEditor editor = e.Editor as PropertyGridSpinEditor;
+    PropertyGridTextBoxEditor editor = e.Editor as PropertyGridTextBoxEditor;
+
     if (editor != null)
     {
-        BaseSpinEditorElement el = editor.EditorElement as BaseSpinEditorElement;
-        el.EnableNullValueInput = true;
+        ((RadTextBoxElement)editor.EditorElement).Font = new Font(FontFamily.Families[12], 10, FontStyle.Bold);
     }
+
 }
 
 ````
 ````VB.NET
-Private Sub radPropertyGrid_EditorInitialized(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.PropertyGridItemEditorInitializedEventArgs)
-    Dim editor As PropertyGridSpinEditor = TryCast(e.Editor, PropertyGridSpinEditor)
-    If editor IsNot Nothing Then
-        Dim el As BaseSpinEditorElement = TryCast(editor.EditorElement, BaseSpinEditorElement)
-        el.EnableNullValueInput = True
+Private Sub radPropertyGrid1_EditorInitialized(ByVal sender As Object, ByVal e As PropertyGridItemEditorInitializedEventArgs)
+    Dim editor As PropertyGridTextBoxEditor = TryCast(e.Editor, PropertyGridTextBoxEditor)
+
+    If Not editor Is Nothing Then
+        CType(editor.EditorElement, RadTextBoxElement).Font = New Font(FontFamily.Families(12), 10, FontStyle.Bold)
     End If
 End Sub
 
