@@ -1521,7 +1521,10 @@ navigation:
          position: 2
     testing/appium:
          title: Appium
-         position: 3         
+         position: 3  
+    testing/just-mock:
+         title: JustMock
+         position: 4           
     
 ## Api Reference End
 ## The application virtual path
