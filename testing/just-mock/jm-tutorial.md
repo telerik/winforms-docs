@@ -1,9 +1,9 @@
 ---
 title: Unit Testing Tutorial
 page_title: Unit Testing Tutorial | JusMock
-description: JustMock is the fastest, most flexible and complete mocking solution for crafting unit tests.  
+description: Step by step tutorial on how to unit test your WinForms application by isolating the tested code from its dependencies with a mocking tool like JustMock. 
 slug: just-mock-tutorial
-tags: justmock
+tags: unit test, tutorial, JustMock, mock, mocking, mocking tool, mocking solution, mocking software, mocking framework, WinForms, Win Forms
 published: True
 position: 2 
 ---
@@ -17,6 +17,8 @@ In addition to this, if a unit test has to read a database each time it is run a
 Code that has to interact with an external resource like a database or a web service will run slower due to the latency in the communication with these external resources. The mocks of these external resources respond much faster than the actual external resources, meaning that the entire suite of unit test can run in seconds, not minutes.
 
 This tutorial will walk you through the process of creating unit tests with [JustMock](https://www.telerik.com/products/mocking.aspx) for a project that uses the most commonly used control from the Telerik UI for WinForms suite, a.k.a. **RadGridView**.
+
+>note The complete sample project from this tutorial is available in our SDK repository [here](https://github.com/telerik/winforms-sdk/tree/master/Testing/JustMock). 
 
 Let's start with details about the project's setup and what we have implemented:
 
@@ -252,7 +254,7 @@ Pay attention to the Mock.**Arrange** method call which will force the **GetData
 
 ## Future Mocking of Methods that Depend on Other Methods
 
-In the above example, the **SelectOrdersByProduct** method internally calls the **ContainsProduct** method of the **Order** class which returns a boolean result indicating whether a product name is contained in an order or not. In other words, we are dependent on the retured result of another method. In order to control our unit test to follow a strict path in its execution, we can mock the result to be always **false** so no rows will be selected in the grid. Thus, we can again test the quality of our **SelectOrdersByProduct** method but eliminate the dependency to the **ContainsProduct** method result.    
+In the above example, the **SelectOrdersByProduct** method internally calls the **ContainsProduct** method of the **Order** class which returns a boolean result indicating whether a product name is contained in an order or not. In other words, we are dependent on the retured result of another method. In order to control our unit test to follow a strict path in its execution, we can mock the result to be always **false** so no rows will be selected in the grid. Thus, we can again test the quality of our **SelectOrdersByProduct** method but eliminate the dependency on the **ContainsProduct** method result.    
 
 ````C#
 [TestMethod]
@@ -425,5 +427,11 @@ public void TestMethodSelectionChanged()
 The **visualRowElement** variable represents the visual element for the middle row in **RadGridView**. We don't want to bother at what coordinates it is located exactly according to the current resolution, row's height, records count, etc. We just want to ensure that when the grid is clicked, the middle row gets selected and the **actual** variable is assigned with a value. If you click the header row or the new row, the **actual** variable will remain empty. Hence, we should eliminate this path of execution in the test. The BaseGridBehavior.**OnMouseDown** method may fork its execution path according to the coordinates as it was illustrated in the above schema. That is why we will future mock the GridRowBehavior.**GetBehavior** method to always return the data GridRowBehavior. Thus, we make the first direction in the test path. We will control the path as if a data row is clicked no matter the passed X,Y. Then, the mouse input will be handled by the **GridRowBehavior** and its internal methods **GetCellAtPoint** and  **GetRowAtPoint** will detect what visual elements are placed under the mouse location. This is also a dependency on the coordinates. That is why we will mock them to always return the middle row element. As a result, when in the Act section the BaseGridBehavior.**OnMouseDown** method is called, you will ensure that the middle row get selected and the **actual** value has a value. Thus, with a few lines of code, you have controlled the path of your unit test without bothering about coordinates, resolution and other settings that may vary on different machines.
 
 With all this demonstrated in this tutorial we only hint at the possibilities that [JustMock](https://www.telerik.com/products/mocking.aspx) offers. It definitely can add a value to any testing project. Happy Mocking!
+
+## See Also
+
+* [Overview]({%slug just-mock-overview%})
+
+* [Requirements]({%slug justmock-requirements%})
 
 

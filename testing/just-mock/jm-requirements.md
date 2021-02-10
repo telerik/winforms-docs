@@ -1,9 +1,9 @@
 ---
 title: Requirements
 page_title: Requirements | JustMock
-description: JustMock is the fastest, most flexible and complete mocking solution for crafting unit tests.  
-slug: appium-requirements
-tags: appium
+description: System requirements for writing unit tests with JustMock for your WinForms application. 
+slug: justmock-requirements
+tags: System requirements, requirements, JustMock, unit testing, mock, mocking, mocking tool, mocking software, mocking solution, mocking framework, WinForms, Win Forms
 published: True
 position: 1 
 ---
@@ -37,7 +37,15 @@ In order to use JustMock the following additional development tools must be inst
 Go to [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/) page to see the available download options.
 
 |IDE|Version|
+|----|----|
 |Visual Studio|2019, 2017, 2015, 2013, 2012|
+
+## See Also
+
+* [Overview]({%slug just-mock-overview%})
+
+* [Unit Testing Tutorial with JustMock]({%slug just-mock-tutorial%})
+
 
 
  
