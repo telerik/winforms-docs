@@ -158,6 +158,6 @@ End Class
 
 # See Also
 
-* [CartesiaGrid]({%slug winforms/chartview/features/chart-grid%}) 
+* [CartesianGrid]({%slug winforms/chartview/features/chart-grid%}) 
 * [CartesianRenderer]({%slug winforms/chartview-/customization/custom-rendering%})
 
