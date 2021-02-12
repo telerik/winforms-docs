@@ -173,3 +173,4 @@ The essential properties of PolarGrid are the following:
 
 * [Getting Started]({%slug winforms/chartview/getting-started%})
 * [Series Types]({%slug winforms/chartview-/series-types%})
+* [How to Add Background Image to the Plot Area in ChartView]({%slug add-background-image-to-plot-area-in-chartview%})

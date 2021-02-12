@@ -433,3 +433,4 @@ After you compile the project, you should get a result similar to the screenshot
 * [Summary Labels on Stacked Bars]({%slug chartview-summary-labels-stacked-bars%})
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Axes]({%slug winforms/chartview-/axes%})
+* [How to Add Background Image to the Plot Area in ChartView]({%slug add-background-image-to-plot-area-in-chartview%})
