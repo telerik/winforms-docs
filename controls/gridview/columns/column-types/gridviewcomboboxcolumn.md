@@ -37,6 +37,8 @@ Other important properties for __GridViewComboBoxColumn__ are:
 
 The useful methods for **GridViewComboBoxColumn** are:
 
+|Method|Description|
+|----|----|
 |**GetLookupValue**|Returns the look-up value for the specified cell value.|
 |**GetDefaultEditorType**|Returns the default editor type.|
 |**GetDefaultEditor**|Returns the default editor. |
