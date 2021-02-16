@@ -29,6 +29,7 @@ position: 3
 |**TaggersRegistry**|Gets the taggers registry.|
 |**UseShiftKeyInSelection**| Gets or sets a value indicating whether using shift key in selection.|
 |**IsSelectionEnabled**|Gets or sets a value indicating whether this instance is selection enabled.|
+|**ShowLineNumbers**|Gets or sets a value indicating whether the line numbers are shown. (introduced in R1 2021 SP2)|
 
 ## RadSyntaxEditorElement's Properties
 
