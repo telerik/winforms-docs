@@ -85,6 +85,13 @@ As a result, the toast notification is successfully shown when you click the but
 
 ![winforms/toast-notification-getting-started001](images/toast-notification-getting-started001.png) 
 
+>important Windows has "Focus Assist' settings where you can choose which notifications you would like to see and hear. The possible options are:
+>
+* Off - Get all notifications from your apps and contacts.
+* Priority only - See only selected notifications from the priority list. The rest will go straight to the action center.
+* Alarms only - Hide all notifications, except alarms.
+>
+If a user has Focus Assist set to Alarms only, he will only see and hear Alarm notifications.
 
 
 # See Also
