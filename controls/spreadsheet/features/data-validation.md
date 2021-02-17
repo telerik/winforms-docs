@@ -24,6 +24,8 @@ You can easily set data validation rules using the data validation dialog which 
 
 The dialog contains two other tabs - one allowing to customize the input message that is shown when the cell is selected, and one allowing to change the alert shown when there is an error in the cell.
 
+>important As of **R1 2021 SP2** the [ListDataValidation](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/data-validation#listdatavalidationrulecontext) rule is respected in RadSpreadsheet and a drop down list editor is expected to be shown for the respective cells.
+
 ## Circle Invalid Data
 
 Data Validation allows you to turn on the option to circle invalid data. This way you can always see if there is any invalid data in your document. You can toggle this option using the ribbon or through code.
