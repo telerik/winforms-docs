@@ -187,6 +187,76 @@ End Sub
 
 {{endregion}}
 
+## Formatting nodes
+
+The nodes within the **RadPivotFieldList** can be formatted. You can easily format node elements by handling the **NodeFormatting** event as follows:
+
+{{source=..\SamplesCS\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.cs region=SubscribeToNodeFormatting}} 
+{{source=..\SamplesVB\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.vb region=SubscribeToNodeFormatting}}
+````C#
+this.radPivotFieldList1.FieldsControl.NodeFormatting += this.FieldsControl_NodeFormatting;
+
+````
+````VB.NET
+AddHandler Me.RadPivotFieldList1.FieldsControl.NodeFormatting, AddressOf FieldsControl_NodeFormatting
+
+````
+
+{{endregion}}
+
+Then, introduce the desired customizations to NodeElements:
+
+{{source=..\SamplesCS\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.cs region=NodeFormatting}} 
+{{source=..\SamplesVB\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.vb region=NodeFormatting}}
+````C#
+private void FieldsControl_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
+{
+    if (e.Node.Text == "Product")
+    {
+        e.NodeElement.ContentElement.Text = "Custom Product";
+    }
+    if (e.Node.CheckState == Telerik.WinControls.Enumerations.ToggleState.On)
+    {
+        e.NodeElement.ContentElement.ForeColor = Color.Red;
+        e.Node.BackColor = Color.LightGray;
+        e.Node.GradientStyle = GradientStyles.Solid;
+    }
+    else
+    {
+        e.NodeElement.ContentElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
+        e.NodeElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+        e.NodeElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
+    }
+}
+
+````
+````VB.NET
+Private Sub FieldsControl_NodeFormatting(sender As Object, e As TreeNodeFormattingEventArgs)
+    If e.Node.Text = "Product" Then
+        e.NodeElement.ContentElement.Text = "Custom Product"
+    End If
+
+    If e.Node.CheckState = Telerik.WinControls.Enumerations.ToggleState.[On] Then
+        e.NodeElement.ContentElement.ForeColor = Color.Red
+        e.Node.BackColor = Color.LightGray
+        e.Node.GradientStyle = GradientStyles.Solid
+    Else
+        e.NodeElement.ContentElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
+        e.NodeElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
+        e.NodeElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
+    End If
+End Sub
+
+````
+
+{{endregion}}
+
+|![pivotgrid-radpivotfieldlist 010](images/pivotgrid-radpivotfieldlist010.png)
+
+>note Please note that you should always provide an 'else' clause in the **NodeFormatting** event where you should reset all of the introduced customizations. More information is available [here](https://docs.telerik.com/devtools/winforms/controls/treeview/working-with-nodes/formatting-nodes). 
+>
+
+
 # See Also
 
 * [RadPivotFieldList Overview]({%slug winforms/pivotgrid/pivot-field-list/radpivotfieldlist%})
