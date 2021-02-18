@@ -41,7 +41,7 @@ When these settings are applied, you have several options to make a multiple sel
 
 * In order to mark a block selection, mark the first row of the desired selection, hold Shift and click on the last row of the desired selection.<br>![gridview-selection-multiple-selection 001](images/gridview-selection-multiple-selection001.png)
 
-All the selected rows are available in the RadGridView.SelectedRows collection
+>note When using GridViewSelectionMode.**FullRowSelect**, all the selected rows are available in the RadGridView.**SelectedRows** collection.
 
 ## Multiple cell selection
 
@@ -73,7 +73,7 @@ Once you have applied these setting, the options for selection are:
  
 ![gridview-selection-multiple-selection 002](images/gridview-selection-multiple-selection002.png)
 
-All the selected cells are available in the RadGridView.SelectedCells collection
+>note When using GridViewSelectionMode.**CellSelect**, all the selected cells are available in the RadGridView.**SelectedCells** collection.
 
 If the __MultiSelect__ property is enabled, you can make a multiple selection by holding the left mouse button down and moving the mouse making a rectangle. This will select all rows (cells) in the created rectangle.
 ![gridview-selection-multiple-selection 003](images/gridview-selection-multiple-selection003.gif)
