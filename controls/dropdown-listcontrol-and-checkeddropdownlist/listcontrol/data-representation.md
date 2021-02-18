@@ -11,9 +11,9 @@ previous_url: dropdown-and-listcontrol-listcontrol-data-representation
 
 # Data Representation
 
-This article requires that readers are familiar with the workings of the TPF property system.
+This article requires that readers are familiar with the workings of the [TPF]({%slug winforms/telerik-presentation-framework/overview%}) property system.
 
-__RadListControl__  represents a data source by creating an internal logical item that is associated with every data record. This logical item is of type __RadListDataItem__ and it inherits from __RadObject__ which means that it offers the full power and flexibility that the TPF property system provides.
+__RadListControl__  represents a data source by creating an internal logical item that is associated with every data record. This logical item is of type __RadListDataItem__ and it inherits from [RadObject]({%slug winforms/telerik-presentation-framework/class-hierarchy/radobject%}) which means that it offers the full power and flexibility that the TPF property system provides.
 
 __RadListDataItem__ initially has the most basic visual properties required which are used for synchronization between the visuals and the data when a __RadListVisualItem__ is mapped to the data item.  These properties are __TextImageRelation__, __ImageAlignment__, __TextAlignment__, __TextOrientation__, __Image__, __Font__ and __ForeColor__. Users can add additional properties by inheriting from __RadListDataItem__ declaring them in the custom data item. For example: 
 
