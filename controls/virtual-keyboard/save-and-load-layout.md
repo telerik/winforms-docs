@@ -53,7 +53,7 @@ Me.radVirtualKeyboard1.SaveLayout(s)
 
 The code snippets below demonstrates how you can implement a Load Layout button event handler: 
 
-#### Save custom defined layout
+#### Load custom defined layout
 
 {{source=..\SamplesCS\VirtualKeyboard\KeyboardGettingStarted.cs region=Load}} 
 {{source=..\SamplesVB\VirtualKeyboard\KeyboardGettingStarted.vb region=Load}}
