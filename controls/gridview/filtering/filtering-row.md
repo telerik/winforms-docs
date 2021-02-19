@@ -53,7 +53,7 @@ Me.RadGridView1.ShowFilteringRow = False
 
 {{endregion}} 
 
-You can still add [FilterDescriptors]({%slug winforms/gridview/filtering/setting-filters-programmatically-(simple-descriptors)%}) programmatically when the __GridFilterRowElement__ is hidden.
+>note You can still add [FilterDescriptors]({%slug winforms/gridview/filtering/setting-filters-programmatically-(simple-descriptors)%}) programmatically when the __GridFilterRowElement__ is hidden.
 
 
 ### Filter Menu
