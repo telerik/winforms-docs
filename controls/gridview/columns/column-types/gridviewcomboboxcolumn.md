@@ -103,6 +103,8 @@ Dim text As String = DirectCast(comboBoxColumn.GetLookupValue(value), String)
 
 {{endregion}} 
 
+>important The stored values inside the cells belonging to this column corresponds to the **ValueMember** field that is specified. In the above example, **SupplierID** is applied as ValueMember. Hence, the cells stores the numeric IDs of the suppliers. In case you are using unbound mode for the grid and the grid rows are programmatically added, you have to specify again a value that corresponds to the specified **ValueMember**.
+
 In order to access the __RadDropDownListEditor__, you should subscribe to the __CellEditorInitialized__ event of __RadGridView__. This event is fired when the initialization of an editor is done. The __EditorElement__ property of the __RadDropDownListEditor__ gives you access to the __RadDropDownListEditorElement__ which allows you to apply various customizations to the editor's element:
 
 #### Modify the DropDownList editor
