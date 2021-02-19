@@ -9,7 +9,7 @@ position: 0
 CTAControlName: Spreadsheet
 ---
 
-# Overview
+# RadSpreadsheet
 
 Thank you for choosing Telerik __RadSpreadsheet__!
 

@@ -10,7 +10,7 @@ CTAControlName: Sparkline
 ---
 
 
-# Overview
+# RadSparkline
 
 The __RadSparkline__ control is lightweight chart that aims to present key information, the control is compact and provides excellent performance. __RadSparkline__ supports many features and can easily be used in a grid view to summarize large amount of data.
 
