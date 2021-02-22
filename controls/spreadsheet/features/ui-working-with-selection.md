@@ -394,3 +394,7 @@ This mode of the selection can be also used when entering the arguments of a fun
 If a formula is already entered and you would like to see the references used in it, enter edit mode and they will be selected automatically.
 
 ![Rad Spreadsheet UI Selection 10](images/RadSpreadsheet_UI_Selection_12.png)
+
+# See Also
+
+* [How to Access RadSpreadsheet's Editor]({%slug access-editor-in-spreadsheet%}) 
