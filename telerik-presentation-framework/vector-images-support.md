@@ -134,6 +134,8 @@ Another way is to find the **SvgImage** property in the drop down list of the Vi
 
 ![smart-tag](images/property-window.png)
 
+### Useful properties and methods
+
 #### Sizing SVG image 
 
 You can easily change the default size of the SVG image by setting the following properties:
@@ -148,5 +150,23 @@ You can easily change the default size of the SVG image by setting the following
 
 - **GetRasterImage()** - Returns a raster bitmap with the default width and height for the loaded SVG document.
 - **GetRasterImage(Size size)** - Returns a raster bitmap with a given width and height for the loaded SVG document.
+
+#### ClearCache method
+
+**RadSvgImage** has a built-in caching mechanism that caches the displayed raster image. If you need to clear it you can call the **ClearCache** method that clears all cached raster images. 
+
+````C#
+RadSvgImage svg = this.radButton1.SvgImage;
+svg.ClearCache();
+
+````
+````VB.NET
+RadSvgImage svg = Me.RadButton1.SvgImage
+svg.ClearCache()
+
+````
+
+{{endregion}} 
+
 
 >note Since R2 2020 **ControlDefault** theme comes with SVG images by default.
