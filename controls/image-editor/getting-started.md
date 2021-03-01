@@ -31,3 +31,4 @@ To use the __RadImageEditor__ just drop it from the toolbox on your form. The co
 
 * [Structure]({%slug radimageeditor-structure%})
 * [Properties and Events]({%slug radimageeditor-properties-and-events%})
+* [How to Get Click Coordinates Relative to the Image]({%slug get-clicked-image-coordinates%})
