@@ -41,6 +41,10 @@ public class CustomSchedulerNavigatorLocalizationProvider : SchedulerNavigatorLo
                 {
                     return "Timeline View";
                 }
+            case SchedulerNavigatorStringId.AgendaViewButtonCaption:
+                {
+                    return "Agenda View";
+                }
             case SchedulerNavigatorStringId.ShowWeekendCheckboxCaption:
                 {
                     return "Show Weekend";
@@ -80,6 +84,8 @@ Public Class CustomSchedulerNavigatorLocalizationProvider
                 Return "Month View"
             Case SchedulerNavigatorStringId.TimelineViewButtonCaption
                 Return "Timeline View"
+            Case SchedulerNavigatorStringId.AgendaViewButtonCaption
+                Return "Agenda View"
             Case SchedulerNavigatorStringId.ShowWeekendCheckboxCaption
                 Return "Show Weekend"
             Case SchedulerNavigatorStringId.TodayButtonCaptionToday
