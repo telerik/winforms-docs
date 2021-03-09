@@ -146,3 +146,5 @@ When the user resizes the column, the __ColumnWidthChanging__ event is fired, an
 
 * [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
 
+* [Mixing BestFit and Fill Modes for the GridView's Columns]({%slug mixing-bestfit-and-fill-mode-in-gridview%})
+
