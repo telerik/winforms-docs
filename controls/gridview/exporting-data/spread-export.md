@@ -231,7 +231,7 @@ This event is used to format the cells to be exported. The event arguments provi
 
 * *GridColumnIndex*: Returns the index of the column to be exported.
 
-* *GridColumnIndex*: Returns the index of the row to be exported.
+* *GridRowIndex*: Returns the index of the row to be exported.
 
 * *GridRowInfoType*: Returns the type of the row to be exported.
 
