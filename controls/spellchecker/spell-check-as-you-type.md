@@ -49,4 +49,7 @@ This property can also be set at design time:
 
 * [Spellchecking Modes]({%slug winforms/spellchecker/spellchecking-modes%})	
 * [SpellChecking RadGridView]({%slug winforms/spellchecker/spellchecking-radgridview%})	
+* [Extract the Words Added to the Dictionary in RadSpellChecker]({%slug extract-words-added-to-dictionary%})
+* [How to Hide the 'Add to dictionary' Context Menu Item]({%slug hide-add-to-dictionary-context-menu-item%})
+* [How to Check Incorrect Words in RadTextBox]({%slug how-to-check-incorrect-words-in-radtextbox%})
 

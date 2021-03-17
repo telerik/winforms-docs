@@ -1,5 +1,5 @@
 ---
-title: How to Hide the 'Add to dictionary" Context Menu Item
+title: How to Hide the 'Add to dictionary' Context Menu Item
 description: This article demonstrates how to hide the 'Add to dictionary' option in the spell-check menu
 type: how-to
 page_title: How to Hide the 'Add to dictionary" Context Menu Item 
