@@ -47,6 +47,8 @@ When you purchase a UI for WinForms license, you can download the following file
 
 	>important If you are looking for a specific version, but it isn't listed, contact our sales team, and they will enable the version for download: [sales@telerik.com](mailto:sales@telerik.com)
 
+1. You can access the [latest internal builds]({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%}). These are the distributions built automatically from our source repository and include all latest fixes (new features are usually not included).
+
 # See Also
 
 * [Latest Internal Builds]({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%})
