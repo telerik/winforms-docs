@@ -166,7 +166,7 @@ RadMarkupEditorLocalizationProvider.CurrentProvider = New MyRadMarkupEditorLocal
 
 {{endregion}}
 
-The code provided above illustrates the approach to be used to localize the __RadGridView__ and is not intended as a full translation.
+The code provided above illustrates the approach to be used to localize the __RadMarkupDialog__ and is not intended as a full translation.
         
 # See Also
 * [Markup Dialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})
