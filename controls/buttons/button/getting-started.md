@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadButton
+page_title: Getting Started with Button
 description: To add a RadButton to your form, drag a RadButton from the toolbox onto the surface of the form designer.
 slug: winforms/buttons/button/getting-started
 tags: button, getting-started
