@@ -1,6 +1,6 @@
 ---
 title: Overview 
-page_title: Overview | Cloud Services
+page_title: AWS (Amazon Web Services) Overview | Cloud Services
 description:  This section describes how one can use the AWS in a Telerik UI for WinForms application.
 slug: cloud-services/aws/overview
 tags: aws,cloud

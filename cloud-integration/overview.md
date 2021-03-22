@@ -1,6 +1,6 @@
 ---
 title: Overview 
-page_title: Cloud Services | Telerik UI For WinForms
+page_title: Cloud Services | Cloud Integration
 description: This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite.
 slug: cloud-services/overview
 tags: cloud,google,amazon,azure
