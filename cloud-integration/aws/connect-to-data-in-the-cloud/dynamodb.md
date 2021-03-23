@@ -1,7 +1,7 @@
 ---
 title: Dynamo DB 
 page_title: Dynamo DB - WinForms Cloud Integration
-description: This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite.
+description: Learn how you can use Dynamo DB with the Telerik UI For WinForms suite. Other cloud services like GoogleCloud, AWS, and Azure are also available. 
 slug: cloud-services/aws/dynamodb
 tags: cloud,aws,dynamodb
 published: True

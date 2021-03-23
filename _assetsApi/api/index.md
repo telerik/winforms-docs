@@ -82,7 +82,7 @@ article:not(.api-reference)>p:first-child, article:not(.api-reference) h1+p {
 
 </style>
 
-# Telerik UI for WinForms API Reference
+## Telerik UI for WinForms API Reference
 The API reference section of the documentation contains a list and descriptions of all public available classes, methods and properties of the Telerik UI for WinForms product.
 
 > This documentation refers to the latest version of Telerik UI for WinForms.

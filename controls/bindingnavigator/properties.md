@@ -1,7 +1,7 @@
 ---
 title: Properties  
 page_title: Properties | RadBindingNavigator 
-description: This articles list the most important properties of RadBindingNavigator. 
+description: This article contains the most important properties of RadBindingNavigator.
 slug: winforms/bindingnavigator/properties 
 tags:  bindingnavigator, properties
 published: True 

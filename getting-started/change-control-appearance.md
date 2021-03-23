@@ -1,7 +1,7 @@
 ---
 title: Preview and Change Control Appearance
 page_title: Preview and Change Control Appearance
-description: Preview and Change Control Appearance
+description: Read the Preview and Change Control Appearance article and learn how to get started with Telerik UI for WinForms. 
 slug: winforms/getting-started/change-control-appearance
 tags: get,started,change,control,appearance, preview
 published: True

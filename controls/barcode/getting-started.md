@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 page_title: Getting Started | Barcode
-description: RadBarcode is a set of components that can be used to create, show and read barcodes. 
+description: WinForms Barcode is a set of components that can be used to create, show and read barcodes. Learn how to get started with it.  
 slug: winforms/barcode/getting-started
 tags: barcode, getting started
 published: True

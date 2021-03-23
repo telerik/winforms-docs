@@ -1,7 +1,7 @@
 ---
 title: Download Product Files
 page_title: Download Product Files
-description: Download Product Files
+description: Learn how to download the source code, pdf documentation, different versions from your Telerik account. 
 slug: winforms/installation-deployment-and-distribution/download-product-files
 tags: download,product,files
 published: True

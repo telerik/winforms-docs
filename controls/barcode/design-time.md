@@ -1,7 +1,7 @@
 ---
 title: Design Time
 page_title: Design Time | Barcode
-description: RadBarcode is a set of components that can be used to create, show and read barcodes. 
+description: WinForms Barcode is a set of components that can be used to create, show and read barcodes. Learn how to use its Design Time feature. 
 slug: winforms/barcode/design-time 
 tags: barcode, designtime
 published: True
