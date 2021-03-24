@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview | RadDataFilter
-description: This article show what RadDataFilter represents and its key features. 
+description: The RadDataFilter control allows specifying expressions based on the fields.properties available in the data source.
 slug: winforms/datafilter/overview
 tags: data, filter
 published: True

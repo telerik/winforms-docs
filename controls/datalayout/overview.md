@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Design Time | RadDataLayout
-description: This article shows what represents RadDataLayout control and it features.
+description: The RadDataLayout control provides means for displaying data in a highly customizable layout by automatically creating the items and editors.
 slug: winforms/datalayout/overview
 tags: design,time
 published: True

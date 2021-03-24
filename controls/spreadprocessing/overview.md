@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview | RadSpreadProcessing
-description: Overview
+description: This library enables you to work with spreadsheet documents – create ones from scratch, modify existing documents or convert between the most common spreadsheet formats.
 slug: radspreadprocessing-overview
 tags: overview
 published: True

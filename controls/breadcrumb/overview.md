@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview | RadBreadCrumb
-description:   
+description: The RadBreadCrumb control offers you to build complicated navigation systems that allow you to track the navigation history. With powerful data-binding mechanism.  
 slug: breadcrumb-overview
 tags: breadcrumb
 published: True

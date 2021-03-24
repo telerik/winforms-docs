@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview
-description: Overview
+page_title: Overview | RadPictureBox
+description: RadPictureBox is a control used to display images in different formats. Powered by Telerik UI for WinForms vector images engine and supports both raster & vector (SVG) images.
 slug: radpicturebox-overview
 tags: overview
 published: True

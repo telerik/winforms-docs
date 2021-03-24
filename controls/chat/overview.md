@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview | Chat
-description: RadChat is a control that provides conversational experience
+description: The RadChat control provides rich conversational experience that goes beyond the natural language understanding and personality of your chatbot. 
 slug: winforms/chat/overview 
 tags: chat
 published: True

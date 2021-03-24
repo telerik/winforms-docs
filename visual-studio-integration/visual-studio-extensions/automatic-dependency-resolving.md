@@ -1,7 +1,7 @@
 ---
 title: Automatic dependency resolving
 page_title: Automatic dependency resolving
-description: Automatic dependency resolving
+description: Learn how to automatically resolve assemblies dependencies.
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-dependency-resolving
 tags: automatic,dependency,resolving
 published: True

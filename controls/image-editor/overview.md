@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview
-description: Overview
+page_title: Overview | RadImageEditor
+description: RadImageEditor is a control that can be used to preview and edit images in different file formats. It can be used as a stand-alone control, but has also been integrated in RadRichTextBox.
 slug: radimageeditor-overview
 tags: overview
 published: True

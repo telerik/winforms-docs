@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Label | RadLabel
+page_title: Overview | RadLabel
 description: RadLabel is a themeable alternative to the standard Windows Forms label control.
 slug: winforms/panels-and-labels/label
 tags: label
@@ -19,6 +19,7 @@ __RadLabel__ is a themeable alternative to the standard Windows Forms label cont
 {% endif %}
 
 >caption Figure: 1 RadLabel
+
 ![panels-and-labels-label-overview 001](images/panels-and-labels-label-overview001.png)
 
 # See Also

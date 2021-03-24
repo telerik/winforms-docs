@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview | RadPdfProcessing
-description: Overview
+description: RadPdfProcessing is a processing library that allows to create, import and export PDF documents. It is part of the Telerik Document Processing libraries. 
 slug: radpdfprocessing-overview
 tags: overview
 published: True
