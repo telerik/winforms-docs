@@ -618,3 +618,5 @@ End Sub
 
 * [ToolTips]({%slug winforms/gridview/cells/tooltips%})
 
+* [Create Custom Header Cells in RadGridView]({%slug custom-header-cell-in-gridview%})
+
