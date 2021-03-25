@@ -143,6 +143,8 @@ End Function
 
 {{endregion}} 
 
+>note If you want to interupt the long-lasting operation, you can click the **Cancel** button where the BackgroundWorker.**CancelAsync** method is called.
+
 4\. When the long-running operation has completed, you should stop the __RadWaitingBar__ control waiting process through the __StopWaiting__ method. Additionally, you should display the result to the user.
 
 {{source=..\SamplesCS\TrackAndStatus\WaitingBar\BGWorkerForm.cs region=workCompleted}} 

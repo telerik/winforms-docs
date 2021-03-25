@@ -11,7 +11,7 @@ previous_url: diagram-toolbox
 
 # Toolbox
 
-__RadDiagramToolbox__  introduces a set of shapes that can be dragged to a __RadDiagram__.
+__RadDiagramToolbox__  introduces a set of shapes that can be dragged to a __RadDiagram__. Internally, this control is a derivative of **RadListView** in ListViewType.**IconsView** which is grouped by shape types.
 
 ![diagram-toolbox 001](images/diagram-toolbox001.png)
 

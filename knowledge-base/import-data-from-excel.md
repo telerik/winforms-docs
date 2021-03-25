@@ -24,6 +24,8 @@ While there are several ways to export the data from RadGridView, there is no di
 
 Use the [RadSpreadProcessing]({%slug radspreadprocessing-overview%}) library to read the file and import the data from it. The example assumes that the first line contains the column names and below them is the data. 
 
+>note In order to use the model of the **RadSpreadProcessing** library in your project, you need to add references to the following assemblies: [Assembly References](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/getting-started#assembly-references).
+
 #### Create Data table from an Excel file
 
 ````C#
