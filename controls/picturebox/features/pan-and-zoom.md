@@ -12,24 +12,8 @@ position: 2
 
 In **RadPictureBox** you can easily pan, zoom in or out. The horizontal and vertical scrollbars help navigating to the visible area of the control.
 
-**RadPictureBox** exposes **ZoomProperties** property that is responsible for the zoom operations. In order to enable zooming you should set **AllowZoom** to true. To start zooming you need to hold down the Ctrl key and use the mouse wheel.
-In order to start a panning operation you can drag the view port with the mouse. The pan operation is triggered by a user interaction.
-
-#### Enable pan and zoom
-
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=EnableZoom}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=EnableZoom}} 
-
-````C#
-
-
-````
-````VB.NET
-
-
-````
-
-{{endregion}}
+The zoom feature is enabled by default. To start zooming you need to hold down the Ctrl key and use the mouse wheel. In order to disable the zooming, you should set the **AllowZoom** property to *false*.
+A pan operation can be started by dragging the viewport with the mouse or by using the scrollbars.
 
 ![picturebox-edit001](images/pan-and-zoom001.gif)
 
@@ -41,11 +25,11 @@ If you do not what the scrollbars to be displayed you can disable them. Thus, th
 {{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=DisableScrollbars}} 
 
 ````C#
-
+this.radPictureBox1.ShowScrollBars = false;
 
 ````
 ````VB.NET
-
+Me.RadPictureBox1.ShowScrollBars = False
 
 ````
 
@@ -54,7 +38,7 @@ If you do not what the scrollbars to be displayed you can disable them. Thus, th
 
 #### Zoom properties
 
-The zooming can be controlled through the following useful properties:
+**RadPictureBox** exposes **ZoomProperties** property that is responsible for the zoom operations. The zooming can be controlled through the following useful properties:
 
 - **ZoomStep**: Gets or sets the step that increments or decrements the element during a zoom operation with the mouse. Cannot have negative value.
 
