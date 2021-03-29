@@ -56,6 +56,11 @@ At this step you can compare the old and the converted files. To do that just cl
 5\. The final step is to resolve any compile time errors. There are properties and methods which do not have analogs in our implementation. Since the converter does not remove the code for these, you will get a compile time error:
     ![winforms-converter-step-by-step-tutorial006](images/winforms-converter-step-by-step-tutorial006.png)
 
+It would be necessary to fine-tune the events' subscriptions in the Designer.cs file to include the **new System.EventHandler** part since it is removed by Roslyn after converting is completed.
+Example: this.button1.Click += new System.EventHandler(this.button1_Click);
+
+More information is available in [How to Deal with Disappearing Event Handlers after Opening the Designer for a Converted WinForms Project]({%slug missing-event-handlers-after-converting-the-project-and-opening-the-designer%}).
+
 >tip After the conversion process is completed, you should check if all existing functionality is working as before.
 
 
