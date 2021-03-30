@@ -30,6 +30,7 @@ position: 3
 |**UseShiftKeyInSelection**| Gets or sets a value indicating whether using shift key in selection.|
 |**IsSelectionEnabled**|Gets or sets a value indicating whether this instance is selection enabled.|
 |**ShowLineNumbers**|Gets or sets a value indicating whether the line numbers are shown. (introduced in R1 2021 SP2)|
+|**ShouldTaggersProcessEntireLines**|Gets or sets a value whether the entire line should be processed by the taggers.(introduced in R2 2021)|
 
 ## RadSyntaxEditorElement's Properties
 

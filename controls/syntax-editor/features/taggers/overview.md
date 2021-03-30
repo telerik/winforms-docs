@@ -63,6 +63,8 @@ RadSyntaxEditor1.TaggersRegistry.RegisterTagger(foldingTagger)
 
 {{endregion}} 
 
+>note As of R2 2021 **RadSyntaxEditor** offers **ShouldTaggersProcessEntireLines** property that indicates whether the entire line should be processed by the taggers.
+
 # See Also
 
 * [How to Achieve Underline Text in RadSyntaxEditor]({%slug underline-text-in-syntax-editor%})
