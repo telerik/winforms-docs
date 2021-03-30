@@ -40,16 +40,18 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 
 |Telerik NuGet Version|Visual Studio Version|
 |----|----|
-|R1 2021 SP2 v2021.1.223|Visual Studio 2019 v16.9; Visual Studio 2019 v16.9 Preview 2 or newer|
+|R1 2021 v2021.1.329-hotfix|Visual Studio 2019 v16.9 GA or newer; Visual Studio 2019 v16.9 Preview 2 or newer|
+|R1 2021 SP3 v2021.1.326|Visual Studio 2019 v16.9 GA or newer; Visual Studio 2019 v16.9 Preview 2 or newer|
+|R1 2021 SP2 v2021.1.223|Visual Studio 2019 v16.9 GA or newer; Visual Studio 2019 v16.9 Preview 2 or newer|
 |R1 2021 SP1 v2021.1.204|Visual Studio 2019 v16.9 Preview 2 or newer|
 |R1 2021 v2021.1.122|Visual Studio 2019 v16.9 Preview 2 or newer|
 |HotFix v2020.3.1215-hotfix|Visual Studio 2019 v16.9 Preview 2|
 |HotFix v2020.3.1116-hotfix|Visual Studio 2019 v16.9 Preview 1|
-|R3 2020 SP1 v2020.3.1020|Visual Studio 2019 v16.8 or newer (e.g. 16.8.1, 16.8.2)|
+|R3 2020 SP1 v2020.3.1020|Visual Studio 2019 v16.8 GA or newer (e.g. 16.8.1, 16.8.2)|
 |R3 2020 SP1 v2020.3.1020|Visual Studio 2019 v16.8 Preview 4|
 |R3 2020 v2020.3.915|Visual Studio 2019 v16.8 Preview 3|
 
->note The HotFix NuGet packages are uploaded to the Telerik NuGet server as part of our [Latest Internal Builds](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/latest-internal-builds#latest-internal-builds).  
+>note The HotFix NuGet packages are uploaded to the Telerik NuGet server as part of our [Latest Internal Builds](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/latest-internal-builds#latest-internal-builds).
 >
 
 >note The toolbox is populated from the UI controls added to the referenced NuGet package/s.  
