@@ -34,6 +34,9 @@ will handle internally the creation of new items. When this property is set to f
     - MoveLastItemButtonImage
     - AddNewButtonImage
     - DeleteButtonImage
+    - ButtonDisplayStyle - Gets or sets a value indicating, whether the buttons will display images or glyphs.(introduced in R2 2021)
+    - ButtonGlyphSize - Gets or sets the font size of the glyphs when the ButtonDisplayStyle property is set to BindingNavigatorButtonDisplayStyle.Glyph.(introduced in R2 2021)
+    
 
 ## See Also
 
