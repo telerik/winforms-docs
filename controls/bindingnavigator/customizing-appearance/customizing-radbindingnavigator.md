@@ -40,9 +40,47 @@ radBindingNavigator1.BindingNavigatorElement.NextButton.GradientStyle = Telerik.
 
 {{endregion}} 
 
->caption The next button background is changed.
+>caption The NextButton background is changed:
 
 ![bindingnavigator-overview-customizing-radbindingnavigator 002](images/bindingnavigator-overview-customizing-radbindingnavigator002.png)
+
+
+### Using glyphs
+
+As of R2 2021 **RadBindingNavigator** can be customized to [use glyphs](https://docs.telerik.com/devtools/winforms/telerik-presentation-framework/glyphs) for the buttons instead of images. The **ButtonDisplayStyle** property defines whether the buttons will display image or glyphs. You can also specify the **ButtonGlyphSize** which determines the font size of the glyphs displayed in the buttons.
+
+The following example shows how you can apply glyphs for the buttons:
+
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=buttonGlyph}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=buttonGlyph}}
+````C#
+radBindingNavigator1.BindingNavigatorElement.ButtonDisplayStyle = BindingNavigatorButtonDisplayStyle.Glyph;
+radBindingNavigator1.BindingNavigatorElement.ButtonGlyphSize = 15;
+
+var font1 = ThemeResolutionService.GetCustomFont("TelerikWebUI");
+radBindingNavigator1.BindingNavigatorElement.AddNewButton.CustomFont = font1.Name;
+radBindingNavigator1.BindingNavigatorElement.DeleteButton.CustomFont = font1.Name;
+radBindingNavigator1.BindingNavigatorElement.AddNewButton.Text = "\ue817";
+radBindingNavigator1.BindingNavigatorElement.DeleteButton.Text = "\ue301";
+
+````
+````VB.NET
+radBindingNavigator1.BindingNavigatorElement.ButtonDisplayStyle = BindingNavigatorButtonDisplayStyle.Glyph
+radBindingNavigator1.BindingNavigatorElement.ButtonGlyphSize = 15
+
+Dim font1 = ThemeResolutionService.GetCustomFont("TelerikWebUI")
+radBindingNavigator1.BindingNavigatorElement.AddNewButton.CustomFont = font1.Name
+radBindingNavigator1.BindingNavigatorElement.DeleteButton.CustomFont = font1.Name
+radBindingNavigator1.BindingNavigatorElement.AddNewButton.Text = "\ue817"
+radBindingNavigator1.BindingNavigatorElement.DeleteButton.Text = "\ue301"
+
+````
+
+{{endregion}} 
+
+>caption The AddNewButton and DeleteButton are customized with custom glyphs:
+
+![bindingnavigator-overview-customizing-radbindingnavigator 003](images/bindingnavigator-overview-customizing-radbindingnavigator003.png)
 
 ## See Also
 
