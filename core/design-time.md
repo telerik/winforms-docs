@@ -58,7 +58,12 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 >
 
 >important As the *AllControls* package contains all UI controls it should not be mixed with other packages containing the same UI controls.
->
+
+## Tips and Tricks
+
+Note that the design-time assemblies are resolved from the installed NuGet package by the new Microsoft SDK which is a part of Visual Studio. When you rebuild the project, the server process will be restarted, the SDK will load all of the .NET Core designer assemblies and this may take some time. Having a designer opened while all this is happening will only make it slower. That is why I would recommend you to close all designers, install the desired NuGet package, clean the project and rebuild it.
+ 
+Please also have in mind that if you have a designer opened and you rebuild your project, this will kill the .NET Core process hosting the design server, ultimately this will lead to restarting the design surface by starting a new server process. That is why it is recommended to consider closing the designers before rebuilding your project.
 
 ## What`s coming next 
 

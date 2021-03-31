@@ -138,3 +138,5 @@ See [End-user Capabilities Sorting]({%slug winforms/gridview/end-user-capabiliti
 
 * [Sorting Expressions]({%slug winforms/gridview/sorting/sorting-expressions%})
 
+* [GridView Cells In Sorted Columns Jumps To a New Position After Editing Its Value]({%slug grid-cells-in-sorted-columns-jumps-to-a-new-position-after-editing-its-value%})
+
