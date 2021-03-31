@@ -11,7 +11,7 @@ previous_url: gridview-columns-gridviewimagecolumn
 
 # GridViewImageColumn
 
-__GridViewImageColumn__ displays *read-only* images for database columns of image data (OLE container or BLOB). 
+__GridViewImageColumn__ displays *read-only* images for database columns of **Image** data type (OLE container or BLOB). 
 
 >note RadGridView tries to convert data columns that contain unspecified binary data to an image.
 >
@@ -44,6 +44,31 @@ imageColumn.FieldName = "Photo"
 imageColumn.HeaderText = "Picture"
 imageColumn.ImageLayout = ImageLayout.Zoom
 RadGridView1.MasterTemplate.Columns.Add(imageColumn)
+
+````
+
+{{endregion}} 
+
+If the **GridViewImageColumn** is mapped to a property coming from the **DataBoundItem** via the specified **FieldName** (used in bound mode), the cells values will be automatically populated. For unbound mode, it is possible to add Image values to cells as it is demonstrated in the following code snippet:
+
+#### Add image value to a cell
+
+{{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=AddCellValue}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=AddCellValue}} 
+
+````C#
+GridViewRowInfo row = this.radGridView1.Rows.AddNew();
+row.Cells["ImageColumn"].Value = Properties.Resources.TV_car;
+
+row = this.radGridView1.Rows.AddNew();
+row.Cells["ImageColumn"].Value = Image.FromFile(@"..\..\logo.png");
+
+````
+````VB.NET
+Dim row As GridViewRowInfo = Me.RadGridView1.Rows.AddNew()
+row.Cells("ImageColumn").Value = My.Resources.TV_car1
+row = Me.RadGridView1.Rows.AddNew()
+row.Cells("ImageColumn").Value = Image.FromFile("..\..\logo.png")
 
 ````
 

@@ -49,7 +49,7 @@ Displays a column bound to a field in a data source.
 
 ## MasterTemplate
 
-__MasterTemplate__ is the top most __GridViewTemplate__ in the hierarchical structure. It contains all inner __GridViewTemplates__(__GridViewTemplate.Templates__ collection). When there is no hierarchical structure, only the __MasterTemplate__ is displayed. 
+__MasterTemplate__ is the top most __GridViewTemplate__ in the hierarchical structure which stores the columns and rows at the root grid level. It contains all inner __GridViewTemplates__(__GridViewTemplate.Templates__ collection). When there is no hierarchical structure, only the __MasterTemplate__ is displayed. 
 
 ![gridview-fundamentals-overview-of-radgridview-structure 007](images/gridview-fundamentals-overview-of-radgridview-structure007.png)
 

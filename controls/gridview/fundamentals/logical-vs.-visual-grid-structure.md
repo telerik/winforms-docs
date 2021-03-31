@@ -112,7 +112,7 @@ Next
 __RadGridView__ uses virtualization for its visual elements. This means that only the rows that are currently visible have a visual element. When the grid is scrolled up and down the visual elements are reused. For example, because of the virtualization, the __CellElement__ can only be accessed inside the __CellFormatting__ event and only for the current cell. The __CellFormatting__ event is fired every time when the cell's visual state needs to be updated.
       	
 
-RadGridView has several events that allow you to access the visual elements of the grid:__ CreateCell__, __CellPaint__, __RowPaint__, __CellFormatting__ and __RowFormatting__. These events pass references to TPF elements that represent rows and cells. 
+RadGridView has several events that allow you to access the visual elements of the grid:__ CreateCell__, __CellPaint__, __RowPaint__, __CellFormatting__ and __RowFormatting__. These events pass references to [TPF elements]({%slug winforms/telerik-presentation-framework/elements/overvie%}) that represent rows and cells. 
 
 
 
