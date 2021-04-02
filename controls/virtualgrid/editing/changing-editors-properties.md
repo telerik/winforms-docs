@@ -10,7 +10,7 @@ position: 5
 
 # Accessing the Editors and Changing their Properties.
 
-Since the editors are created each time when the user stars edit operation, they can by accessed in the __CellEditorInitialized__ event. The following example shows how you can access some of the editors and change their properties.
+Since the editors are created each time when the user starts edit operation, they can by accessed in the __CellEditorInitialized__ event. The following example shows how you can access some of the editors and change their properties.
 
 {{source=..\SamplesCS\VirtualGrid\Editing\EditorsProperties.cs region=AccessProperties}} 
 {{source=..\SamplesVB\Virtualgrid\Editing\EditorsProperties.vb region=AccessProperties}}
