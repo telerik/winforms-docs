@@ -49,6 +49,6 @@ Now that we have a test plan the next step is to decide whether to **Record** th
 
 In the next articles you will see how to create a project and perform the Excel-like filtering test scenario, choosing the approach that best suites you:
 
-* [Record a test]({%slug test-complete-create-a-project%})
+* [Record a test]({%slug test-complete-create-a-project-recorded-test%})
 
-* [Create a test manually]({%slug test-complete-create-a-project%})
+* [Create a test manually]({%slug test-complete-create-a-project-manual-test%})
