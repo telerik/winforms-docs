@@ -1524,7 +1524,16 @@ navigation:
          position: 3  
     testing/just-mock:
          title: JustMock
-         position: 4           
+         position: 4  
+    testing/test-complete:
+         title: TestComplete
+         position: 5  
+    testing/test-complete/record-a-test:
+         title: Record a Test
+         position: 3  
+    testing/test-complete/create-a-test-manually:
+         title: Create a Test Manually
+         position: 4              
     
 ## Api Reference End
 ## The application virtual path
