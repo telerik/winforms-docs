@@ -105,11 +105,41 @@ End Sub
 
 {{endregion}}
 
->note You can subscribe to the RadMenuItem.Click event of the newly added item and execute the desired action when the item is clicked.
+>note You can subscribe to the **RadMenuItem.Click** event of the newly added item and execute the desired action when the item is clicked.
 
 The result of adding and removing items from this article is shown on the screenshot below:
 
 ![picturebox-edit001](images/context-menu002.png)
+
+### Using the ContextMenuItemClick event
+
+**ContextMenuItemClick** event occurs when an item in the context menu is clicked. Through **RadPictureBox.ContextMenuProperties** you can easily get the clicked item. The event arguments provide **Handled** property which defines whether the menu item is processed by a custom logic or by the default implementation. For example, if you want to process a custom logic for the **EditItem** just set **e.Handled** to *true* and customize its behavior:
+
+````C#
+private void RadPictureBox1_ContextMenuItemClick(object sender, HandledEventArgs e)
+{
+    if (sender == this.radPictureBox1.ContextMenuProperties.EditItem)
+    {
+        e.Handled = true;
+        // TO DO
+
+    }
+}
+
+````
+````VB.NET
+Private Sub RadPictureBox1_ContextMenuItemClick(ByVal sender As Object, ByVal e As HandledEventArgs)
+    If sender = Me.radPictureBox1.ContextMenuProperties.EditItem Then
+        e.Handled = True
+        ' ТО DO
+
+    End If
+End Sub
+
+````
+
+{{endregion}}
+
 
 ## Context menu events
 
