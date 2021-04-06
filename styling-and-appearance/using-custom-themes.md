@@ -125,4 +125,6 @@ Next
 
 # See Also
 
- * [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})
+* [Saving and Loading Theme Files]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files%})
+
+* [How to Customize a Theme]({%slug customize-a-theme%})

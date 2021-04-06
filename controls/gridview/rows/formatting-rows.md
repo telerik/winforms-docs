@@ -115,6 +115,7 @@ End Sub
 
 
 ![grid-rows-formatting-rows 002](images/grid-rows-formatting-rows002.png)
+
 # See Also
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
 
@@ -131,4 +132,6 @@ End Sub
 * [New Row]({%slug winforms/gridview/rows/new-row%})
 
 * [Painting Rows]({%slug winforms/gridview/rows/painting-rows%})
+
+* [Change the row hot tracking color in RadGridView by using VSB]({%slug change-row-hot-tracking-color-in-radgrid-by-using-vsb%})
 
