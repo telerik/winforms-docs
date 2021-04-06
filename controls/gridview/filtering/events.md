@@ -14,17 +14,27 @@ previous_url: gridview-filtering-events
 There are two events that are raised when the data in the RadGridView is filtered. The first one is the __FilterChanging__ event and it is raised before the data is filtered. The second one is the __FilterChanged__ event which is raised after the data is filtered.
 
 {{source=..\SamplesCS\GridView\Filtering\FilteringEvents.cs region=events1}} 
-{{source=..\SamplesVB\GridView\Filtering\FilteringEvents.vb region=events}} 
+{{source=..\SamplesVB\GridView\Filtering\FilteringEvents.vb region=events1}} 
 ````C#
-void radGridView1_FilterChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
+void radGridView1_FilterChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
 {
-    e.Cancel = true;
+    
 }
+
+void radGridView1_FilterChanging(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
+{
+
+}
+
 
 ````
 ````VB.NET
-Private Sub RadGridView1_FilterChanging1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.FilterChanging
-    e.Cancel = True
+Private Sub RadGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles RadGridView1.FilterChanged
+
+End Sub
+
+Private Sub RadGridView1_FilterChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.FilterChanging
+
 End Sub
 
 ````
