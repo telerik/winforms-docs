@@ -54,3 +54,4 @@ When working with complex controls in Visual Style Builder, you can inherit prop
 * [Getting Started]({%slug winforms/tools/visual-style-builder/getting-started%})
 * [Starting VSB]({%slug winforms/tools/visual-style-builder/starting-vsb%})
 * [TPF Overview]({%slug winforms/telerik-presentation-framework/overview%})
+* [How to Deal with Layout Issue in Visual Style Builder]({%slug vsb-layout-problems%})
