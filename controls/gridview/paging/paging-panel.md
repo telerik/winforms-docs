@@ -13,6 +13,8 @@ previous_url: gridview-paging-panel
 
 When paging is enabled in __RadGridView__, a panel is added to the bottom of the grid view element. It allows users to navigate back and forth over the pages or jump directly to a desired page.
 
+>note Paging functionality in RadGridView was introduced in **R1 2014 (version 2014.1.226)**.
+
 ![gridview-paging-panel 001](images/gridview-paging-panel001.png)
 
 There are a number of properties, which allow you to customize the paging panel to your specific needs. You can access these properties through the __RadGridView.GridViewElement.PagingPanelElement__. Here is what options you have:
