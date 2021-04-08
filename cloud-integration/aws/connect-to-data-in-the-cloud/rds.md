@@ -1,7 +1,7 @@
 ---
 title: RDS 
-page_title: RDS | Cloud Services
-description: This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite.
+page_title: RDS - WinForms Cloud Integration
+description: Learn how you can use RDS with the Telerik UI For WinForms suite. Other cloud services like GoogleCloud, AWS, and Azure are also available. 
 slug: cloud-services/aws/rds
 tags: amazon,cloud,rds
 published: True

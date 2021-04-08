@@ -1,6 +1,7 @@
 ---
 title:  Overview
-page_title: Overview
+page_title: Google Cloud Services
+description: Learn how one can use the Google Cloud in a Telerik UI for WinForms application.
 slug: common-google-cloud-overview
 position: 0
 ---

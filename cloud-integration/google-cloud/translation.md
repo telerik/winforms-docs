@@ -1,6 +1,7 @@
 ---
 title: Translation API
-page_title: Translation API
+page_title: Translation API - WinForms Cloud Integration
+description: Learn how you can use Translation API with the Telerik UI For WinForms suite. Other cloud services like GoogleCloud, AWS, and Azure are also available.
 slug: common-google-cloud-translation
 position: 4
 ---

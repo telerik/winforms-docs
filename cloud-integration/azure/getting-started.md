@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started with Amanzon Web Services (AWS)| Cloud Services
-description: This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite.
+page_title: Getting Started with Azure Cloud Services
+description: Learn what are the main steps you need to take to setup your environment and start using Azure.
 slug: cloud-services/azure/getting-started
 tags: cloud,azure
 published: True

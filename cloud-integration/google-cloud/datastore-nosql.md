@@ -1,6 +1,7 @@
 ---
 title: Datastore(NoSQL database)
-page_title: Datastore(NoSQL database)
+page_title: Datastore(NoSQL database) - WinForms Cloud Integration
+description: Learn how you can use Datastore(NoSQL database) with the Telerik UI For WinForms suite. Other cloud services like
 slug: common-google-cloud-datastore-nosql
 position: 2
 ---

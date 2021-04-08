@@ -1,7 +1,7 @@
 ---
 title: Storage (S3) 
-page_title: Storage (S3)  | Cloud Services
-description: This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite.
+page_title: Storage (S3) - WinForms Cloud Integration
+description: Learn how you can use Storage (S3) with the Telerik UI For WinForms suite. Other cloud services like GoogleCloud, AWS, and Azure are also available. 
 slug: cloud-services/aws/storage
 tags: cloud,aws,storage
 published: True

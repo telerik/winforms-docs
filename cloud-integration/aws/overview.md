@@ -1,7 +1,7 @@
 ---
 title: Overview 
-page_title: AWS (Amazon Web Services) Overview | Cloud Services
-description: This section describes how one can use the AWS (Amazon Web Services) in a Telerik UI for WinForms application.
+page_title: AWS (Amazon Web Services) Cloud Integration
+description: Learn how you can use AWS with the Telerik UI For WinForms suite. Other cloud services like GoogleCloud, AWS, and Azure are also available. 
 slug: cloud-services/aws/overview
 tags: aws,cloud
 published: True

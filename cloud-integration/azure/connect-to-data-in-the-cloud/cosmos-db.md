@@ -1,7 +1,7 @@
 ---
 title: CosmosDB 
-page_title: CosmosDB | Cloud Services
-description: This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite.
+page_title: CosmosDB - WinForms Cloud Integration
+description: Learn how you can use CosmosDB with the Telerik UI For WinForms suite. Other cloud services like GoogleCloud, AWS, and Azure are also available.
 slug: cloud-services/azure/cosmosdb
 tags: cloud,azure,cosmosdb
 published: True

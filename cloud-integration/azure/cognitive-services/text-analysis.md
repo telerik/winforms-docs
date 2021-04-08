@@ -1,7 +1,7 @@
 ---
 title: Text Analysis
-page_title: Text Analysis | Cloud Services
-description: This section shows how one can use various cloud services like GoogleCloud, AWS, and Azure with the Telerik UI For Winforms suite.
+page_title: Text Analysis - WinForms Cloud Integration
+description: Learn how you can use Text Analysis with the Telerik UI For WinForms suite. Other cloud services like GoogleCloud, AWS, and Azure are also available.
 slug: cloud-services/azure/text-analysis
 tags: cloud,azure
 published: true

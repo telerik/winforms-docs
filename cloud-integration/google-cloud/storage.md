@@ -1,7 +1,7 @@
 ---
 title: Storage
-page_title: Storage
-description: Storage
+page_title: Storage - WinForms Cloud Integration
+description: Learn how you can use Storage with the Telerik UI For WinForms suite. Other cloud services like GoogleCloud, AWS, and Azure are also available. 
 slug:  common-google-cloud-storage
 tags: cloud,integration,google,storage
 published: True

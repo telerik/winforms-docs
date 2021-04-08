@@ -1,7 +1,7 @@
 ---
 title: Getting Started 
-page_title: Getting Started | Cloud Services
-description: Learn what are the main steps you need to take to setup your enviroment and start using AWS.
+page_title: Getting Started with AWS Cloud Services
+description: Learn what are the main steps you need to take to setup your environment and start using AWS Cloud Services.
 slug: cloud-services/aws/getting-started
 tags: cloud, aws
 published: True

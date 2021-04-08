@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started
-description: Getting Started
+page_title: Getting Started with Google Cloud Services
+description: Learn what are the main steps you need to take to setup your environment and start using Google Cloud.
 slug: cloud-integration-google-getting-started
 tags: cloud,integration,google,getting,started
 published: True
