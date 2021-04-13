@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: RadToggleButton is designed to manage states on your form. It shares many features with the RadCheckBox, but provides a different visual effect than the standard check mark. 
+page_title: Getting Started - WinForms ToggleButton Control
+description: WinForms ToggleButton is designed to manage states on your form. It shares many features with the RadCheckBox, but provides a different visual effect than the standard check mark. 
 slug: winforms/buttons/togglebutton/getting-started
 tags: togglebutton
 published: True

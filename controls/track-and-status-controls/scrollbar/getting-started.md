@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadScrollBar
-description: Using Telerik scrollbars is a bit more intricate compared to using the standard scroll bars because you have to handle scroll event manually.
+page_title: Getting Started - WinForms ScrollBar Control
+description: Learn how using Telerik scrollbars is a bit more intricate compared to using the standard scroll bars because you have to handle scroll event manually.
 slug: winforms/track-and-status-controls/scrollbar/getting-started
 tags: getting,started
 published: True

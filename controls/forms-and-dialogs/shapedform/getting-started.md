@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | Shaped Form
-description: The ShapedForm control allows you to design and display a Windows form with any conceivable shape.
+page_title: Getting Started - WinForms ShapedForm
+description: WinForms ShapedForm control allows you to design and display a Windows form with any conceivable shape.
 slug: winforms/forms-and-dialogs/shapedform/getting-started
 tags: getting,started
 published: True

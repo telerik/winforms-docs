@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: DropDownButton | UI for WinForms Documentation
-description: RadDropDownButton provides a menu-like interface open from a button. Each of the items of RadDropDownButton can be set to perform an action when clicked.
+page_title: Getting Started - WinForms DropDownButton Control
+description: WinForms DropDownButton provides a menu-like interface open from a button. Each of the items of RadDropDownButton can be set to perform an action when clicked.
 slug: winforms/buttons/dropdownbutton/getting-started
 tags: dropdownbutton
 published: True

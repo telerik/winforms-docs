@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: Getting Started
+page_title: Getting Started - WinForms ToggleSwitch Control
+description: WinForms ToggleSwitch is a control designed to represent two states - e.g. true/false, On/Off, etc.
 slug: winforms/buttons/toggleswitch/getting-started
 tags: getting,started
 published: True

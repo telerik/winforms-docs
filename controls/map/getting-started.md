@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: Getting Started - WinForms Map Control
+description: WinForms Map can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
 slug: winforms/map/getting-started
 tags: map
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadBreadCrumb
-description:   
+page_title: Getting Started - WinForms BreadCrumb Control
+description: WinForms BreadCrumb offers you to build complicated navigation systems that allow you to track the navigation history.   
 slug: breadcrumb-getting-started
 tags: breadcrumb
 published: True

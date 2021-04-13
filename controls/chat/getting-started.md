@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | Chat
-description: RadChat is a control that provides conversational experience
+page_title: Getting Started - WinForms Chat Control
+description: WinForms Chat is a control that provides conversational experience
 slug: winforms/chat/getting-started 
 tags: chat
 published: True

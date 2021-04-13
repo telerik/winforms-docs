@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadRibbonForm
-description: Getting Started
+page_title: Getting Started - WinForms RibbonForm
+description: WinForms RibbonForm control is designed to host a RadRibbonBar control and mimic the Microsoft Office 2007 UI form style.
 slug: winforms/forms-and-dialogs/ribbonform/getting-started
 tags: getting,started
 published: True

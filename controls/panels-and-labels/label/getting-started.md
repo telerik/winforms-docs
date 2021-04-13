@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | Radlabel
-description: Getting Started
+page_title: Getting Started - WinForms Label Control
+description: WinForms Label is a themeable alternative to the standard Windows Forms label control.
 slug: winforms/panels-and-labels/label/getting-started
 tags: getting started,radlabel
 published: True

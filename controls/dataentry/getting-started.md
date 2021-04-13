@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadDataEntry
-description: Step by step tutorial about how one can use RadDataEntry.
+page_title: Getting Started - WinForms DataEntry Control
+description: WinForms DataEntry provides an easy way to display and edit arbitrary business objects in a form layout. 
 slug: winforms/dataentry/getting-started
 tags: getting,started
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadTabbedForm
-description:  RadTabbedForm allows to display tab items directly in the title bar  
+page_title: Getting Started - WinForms TabbedForm
+description: WinForms TabbedForm allows to display tab items directly in the title bar  
 slug: radtabbedform-getting-started
 tags: radtabbedform
 published: True

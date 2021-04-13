@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadDateTimePicker
-description: This article shows how you can start using RadDateTimePicker.
+page_title: Getting Started - WinForms DateTimePicker Control
+description: WinForms DateTimePicker allows interactive selection of dates using a drop down calendar. 
 slug: winforms/editors/datetimepicker/getting-started
 tags: getting,started
 published: True

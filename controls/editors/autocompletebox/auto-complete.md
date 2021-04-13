@@ -1,7 +1,7 @@
 ---
 title: Auto-Complete
 page_title: Auto-Complete | RadAutoCompleteBox
-description: This article describes which are the supported auto-complete modes.
+description: RadAutoCompleteBox can automatically complete the input string by comparing the prefix being entered to the prefix of all strings in the maintained source.
 slug: winforms/editors/autocompletebox/auto-complete
 tags: auto-complete
 published: True

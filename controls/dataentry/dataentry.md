@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: DataEntry | RadDataEntry
-description: This article describes the purpose of the DataEntry Control.
+description: RadDataEntry provides an easy way to display and edit arbitrary business objects in a form layout. 
 slug: winforms/dataentry
 tags: dataentry
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started 
-page_title: Getting Started | CalculatorDropDown
-description: The following example demonstrates how to set up RadCalculatorDropDown with a minmum popup width and height.
+page_title: Getting Started - WinForms CalculatorDropDown Control
+description: WinForms CalculatorDropDown has a simple easy-to-use interface enabling the end user to perform all basic calculations such as addition, subtraction, multiplication, division as well as some more complicated ones – reciprocal, square root, negate. 
 slug: winforms/editors/calculatordropdown/getting-started
 tags: getting,started
 published: True

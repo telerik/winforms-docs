@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadVirtualGrid
-description: This article shows how you  can easily start using RadVirtualGrid.
+page_title: Getting Started - WinForms VirtualGrid Control
+description: Learn how one can use WinForms VirtualGrid with a list which contains large amount of data.
 slug: winforms/virtualgrid/getting-started
 tags: virtualgrid, started
 published: True

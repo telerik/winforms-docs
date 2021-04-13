@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadTimeSpanPicker
-description: RadTimeSpanPicker is a UI component that provides a full control over picking a specific time span and duration. 
+page_title: Getting Started - WinForms TimeSpanPicker Control
+description: WinForms TimeSpanPicker is a UI component that provides a full control over picking a specific time span and duration. 
 slug: radtimespanpicker-getting-started
 tags: radtimespanpicker
 published: True

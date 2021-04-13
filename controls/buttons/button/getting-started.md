@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started with Button
-description: To add a RadButton to your form, drag a RadButton from the toolbox onto the surface of the form designer.
+page_title: Getting Started - WinForms Button Control
+description: WinForms Button is a themable replacement of the standard WinForms Button. It can be clicked by using the mouse, Enter key, or Spacebar, if the button has focus.
 slug: winforms/buttons/button/getting-started
 tags: button, getting-started
 published: True

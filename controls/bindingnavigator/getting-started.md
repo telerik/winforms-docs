@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadBindingNavigator
-description: Getting Started
+page_title: Getting Started - WinForms BindingNavigator Control
+description: WinForms BindingNavigator's main purpose is to provide a basic UI for navigation through a collection of business objects.
 slug: winforms/bindingnavigator/getting-started
 tags: getting,started
 published: True
@@ -11,7 +11,7 @@ previous_url: bindingnavigator-overview-gettingstarted
 
 # Getting Started
 
-The following tutorial will demonstrate how to get __RadBindingNaviagator__ up and running: 
+The following tutorial will demonstrate how to get __RadBindingNavigator__ up and running: 
 
 1\.Place __RadBindingNaviagator__ control and BindingSource component on a form.
 

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadDiagram
-description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+page_title: Getting Started - WinForms Diagram Control
+description: WinForms Diagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/getting-started
 tags: getting,started
 published: True

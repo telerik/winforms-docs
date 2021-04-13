@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadCollapsiblePanel
-description: This article demonstrates how space can be saved by adding controls to the RadCollapsiblePanel.
+page_title: Getting Started - WinForms CollapsiblePanel Control
+description: WinForms CollapsiblePanel is an expandable panel which can host controls in its content area.
 slug: winforms/panels-and-labels/collapsiblepanel/getting-started
 tags: getting,started
 published: True

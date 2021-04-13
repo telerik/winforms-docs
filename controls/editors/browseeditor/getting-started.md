@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | Browse Editor
-description: The following example demonstrates how to change the image of a RadButton using the RadBrowseEditor.
+page_title: Getting Started - WinForms BrowseEditor Control
+description: WinForms BrowseEditor is a themable control which allows users to select a file or a directory from the file system or directly to type the full path in the editor.
 slug: winforms/editors/browseeditor/getting-started
 tags: getting,started
 published: True
@@ -14,6 +14,7 @@ previous_url: editors-browse-editor-getting-started
 The following example demonstrates how to change the image of a __RadButton__ using the __RadBrowseEditor__.
 
 >caption Figure 1: Browsed Image
+
 ![editors-browse-editor-getting-started 001](images/editors-browse-editor-getting-started001.png)
 
 1\. Drag a __RadBrowseEditor__ and a __RadButton__ on a form.

@@ -1,7 +1,7 @@
 ---
 title: Getting started
-page_title: Getting started | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Getting started - WinForms ListView Control
+description: WinForms ListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/getting-started
 tags: getting,started
 published: True

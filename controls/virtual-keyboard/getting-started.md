@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | Virtual Keyboard
-description:  
+page_title: Getting Started - WinForms VirtualKeyboard Control
+description: Learn how to get started experience with WinForms VirtualKeyboard which is used for the user's input in a  RadTextBox.  
 slug: winforms-virtual-keyboard-getting-started
 tags: virtual, keyboard
 published: True

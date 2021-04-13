@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadListControl
-description:  RadListControl is the an alternative to the Microsoft ListBox control.
+page_title: Getting Started - WinForms ListControl Control
+description: WinForms ListControl is the an alternative to the Microsoft ListBox control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/getting-started
 tags: getting,started
 published: True

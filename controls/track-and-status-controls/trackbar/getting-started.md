@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadTrackBar
-description: RadTrackBar, sometimes called a slider control, can be used for navigating a large amount of information or for visually adjusting a numeric setting. 
+page_title: Getting Started - WinForms TrackBar Control
+description: WinForms TrackBar, sometimes called a slider control, can be used for navigating a large amount of information or for visually adjusting a numeric setting. 
 slug: winforms/track-and-status-controls/trackbar/getting-started
 tags: getting,started
 published: True

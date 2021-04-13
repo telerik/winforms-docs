@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadDataFilter
-description: This article shows how you can use RadDataFilter to filter the data inside RadGridView. 
+page_title: Getting Started - WinForms DataFilter Control
+description: WinForms DataFilter is a control that allows you to filter your data.
 slug: winforms/datafilter/getting-started
 tags: data, filter, getting, started
 published: True

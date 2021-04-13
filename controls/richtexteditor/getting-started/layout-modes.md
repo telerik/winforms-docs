@@ -1,7 +1,7 @@
 ---
 title: Layout Modes
-page_title: Layout Modes | RadRichTextEditor
-description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
+page_title: Layout Modes - WinForms RichTextEditor Control
+description: Learn what are the several layout modes in WinForms RichTextEditor.   
 slug: winforms/richtexteditor-/getting-started/layout-modes
 tags: layout,modes
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadMaskedEditBox
-description: A sample setup demonstrating how to configure RadMaskedEditBox with a custom phone mask and a short date pattern.
+page_title: Getting Started - WinForms MaskedEditBox Control
+description: Learn how to configure RadMaskedEditBox with a custom phone mask and a short date pattern.
 slug: winforms/editors/maskededitbox/getting-started
 tags: getting,started
 published: True
@@ -14,6 +14,7 @@ previous_url: editors-maskededitbox-getting-started
 Here is how to quickly configure two __RadMaskedEditBox__ controls. One uses a custom phone number mask, the second as a predefined short date pattern.
 
 >caption Figure 1: RadMaskedEditBox Setup
+
 ![editors-maskededitbox-getting-started 001](images/editors-maskededitbox-getting-started001.png)
 
 1. Drop two __RadMaskedEditBox__ controls on a form.            

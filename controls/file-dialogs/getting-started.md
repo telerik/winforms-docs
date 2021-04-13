@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | File Dialogs
-description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
+page_title: Getting Started - WinForms File Dialogs
+description: WinForms File Dialogs represent the three most commonly used file and folder manipulation dialogs
 slug: winforms/file-dialogs/getting-started
 tags: filedialogs, started
 published: True

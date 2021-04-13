@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadDomainUpDown
-description: RadDomainUpDown is designed to display text inside an editor like a text-box and sets a text string from a list of choices.  
+page_title: Getting Started - WinForms DomainUpDown Control
+description: WinForms DomainUpDown is designed to display text inside an editor like a text-box and sets a text string from a list of choices.  
 slug: winforms/editors/domainupdown/getting-started
 tags: domainupdown, getting, started
 published: True

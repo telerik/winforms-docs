@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadColorDialog
-description: RadColorDialog is a lightweight UI component that allows users to select from RGB or HEX color models.
+page_title: Getting Started - WinForms ColorDialog
+description: WinForms ColorDialog is a lightweight UI component that allows users to select from RGB or HEX color models.
 slug: winforms/forms-and-dialogs/colordialog/getting-started
 tags: getting,started
 published: True

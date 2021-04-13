@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: RadCheckBox is designed to provide an interface element that can represent an On or Off state using a check mark.
+page_title: Getting Started - WinForms CheckBox Control
+description: WinForms CheckBox is designed to provide an interface element that can represent an On or Off state using a check mark.
 slug: winforms/buttons/checkbox/getting-started
 tags: checkbox
 published: True

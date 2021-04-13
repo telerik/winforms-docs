@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: RadCheckedListBox is an enhanced alternative to the standard Windows Forms checked list box control. 
+page_title: Getting Started - WinForms CheckedListBox Control
+description: WinForms CheckedListBox is an enhanced alternative to the standard Windows Forms checked list box control. 
 slug: winforms/checkedlistbox/getting-started
 tags: getting,started
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadDataLayout
-description: This article shows how you can start using RadDataLayout.
+page_title: Getting Started - WinForms DataLayout Control
+description: WinForms DataLayout control provides means for displaying data in a highly customizable layout by automatically creating the items and editors.
 slug: winforms/datalayout/getting-started
 tags: getting,started
 published: True

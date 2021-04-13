@@ -1,7 +1,7 @@
 ---
 title: Getting started
-page_title: Getting started | RadRadialGauge
-description: Getting started
+page_title: Getting started - WinForms RadialGauge Control
+description: WinForms RadialGauge control is designed to display a simple value within a definite range. 
 slug: winforms/gauges/radialgauge/getting-started
 tags: getting,started
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
+page_title: Getting Started - WinForms CommandBar Control
+description: WinForms CommandBar is a fully theme-able tool strip that provides unprecedented flexibility
 slug: winforms/commandbar/getting-started
 tags: commandbar
 published: True

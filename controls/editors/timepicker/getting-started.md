@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadTimePicker
-description: Shows how you can start using RadTimePicker and use some of its common properties.
+page_title: Getting Started - WinForms TimePicker Control
+description: Learn how you can start using RadTimePicker and use some of its common properties.
 slug: winforms/editors/timepicker/getting-started
 tags: getting,started
 published: True

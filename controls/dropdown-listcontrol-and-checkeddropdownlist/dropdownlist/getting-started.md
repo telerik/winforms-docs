@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadDropDownList
-description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
+page_title: Getting Started - WinForms DropDownList Control
+description: WinForms DropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/getting-started
 tags: getting,started
 published: True

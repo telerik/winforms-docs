@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadDock
-description: Getting Started
+page_title: Getting Started - WinForms Dock Control
+description: WinForms Dock control provides a container that holds dockable windows. Learn how to get started with it.
 slug: winforms/dock/getting-started
 tags: getting,started
 published: True

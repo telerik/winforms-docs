@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started
-description: Getting Started
+page_title: Getting Started - WinForms PictureBox Control
+description: WinForms PictureBox is a control used to display images in different formats. Powered by Telerik UI for WinForms vector images engine and supports both raster & vector (SVG) images.
 slug: radpicturebox-getting-started
 tags: getting-started
 published: True

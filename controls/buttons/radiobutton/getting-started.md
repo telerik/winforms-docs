@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
-description: RadRadioButton replaces the WinForms RadioButton control and adds robust data binding, state management, and design options. 
+page_title: Getting Started - WinForms RadioButton Control
+description: WinForms RadioButton replaces the WinForms RadioButton control and adds robust data binding, state management, and design options. 
 slug: winforms/buttons/radiobutton/getting-started
 tags: getting,started
 published: True

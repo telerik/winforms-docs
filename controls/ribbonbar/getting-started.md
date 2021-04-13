@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadRibbonBar
-description: This section will help you in creating your first RadRibbonBar with some basic functionality.
+page_title: Getting Started - WinForms RibbonBar Control
+description: Learn how to create your first RadRibbonBar with some basic functionality (test formatting).
 slug: winforms/ribbonbar/getting-started
 tags: getting,started
 published: True

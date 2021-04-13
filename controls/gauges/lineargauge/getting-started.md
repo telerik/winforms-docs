@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadLinearGauge
-description: Getting Started
+page_title: Getting Started - WinForms LinearGauge Control 
+description: WinForms LinearGauge displays simple value within a specific range. The range is displayed in a rectangle, this rectangle can contain scale with or without ticks, labels and a scale bar.
 slug: winforms/gauges/lineargauge/getting-started
 tags: getting,started
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadWebCam
-description: This tutorial will walk you through the creation of a sample application that contains a RadWebCam.   
+page_title: Getting Started - WinForms WebCam Control
+description: Learn how to create a sample application that contains a WinForms WebCam.   
 slug: webcam-getting-started
 tags: webcam
 published: True
