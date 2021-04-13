@@ -26,7 +26,7 @@ Since R1 2018 RadControls are supporting mouse effects. Each element that inheri
 * __HighlightColor:__ Gets or Sets the color of the effect.
 
 
-### BorderHighligh Effect:
+### BorderHighlight Effect:
 
 * __EnableBorderHighlight:__ turns this effect on or off.
 
