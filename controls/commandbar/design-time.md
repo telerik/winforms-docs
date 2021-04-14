@@ -1,7 +1,7 @@
 ---
 title: Design-Time
-page_title: Design-Time | UI for WinForms Documentation
-description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
+page_title: Design-Time - WinForms CommandBar Control
+description: Learn what are the design time options of WinForms CommandBar.
 slug: winforms/commandbar/design-time
 tags: design-time
 published: True

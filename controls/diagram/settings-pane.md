@@ -1,7 +1,7 @@
 ---
 title: Settings Pane
-page_title: Settings Pane | RadDiagram
-description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+page_title: Settings Pane - WinForms Diagram Control
+description: SettingsPane control allows the users to examine and modify the settings of the diagramming items at run-time.
 slug: winforms/diagram/settings-pane
 tags: settings,pane
 published: True

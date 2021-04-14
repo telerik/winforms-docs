@@ -1,7 +1,7 @@
 ---
 title: Toolbar
-page_title: Toolbar | Chat
-description: RadChat is a control that provides conversational experience
+page_title: Toolbar - WinForms Chat Control
+description: ChatToolBarElement allows adding different toolbar actions for achieving more user friendly conversational UI. 
 slug: winforms/chat/toolbar
 tags: chat
 published: True

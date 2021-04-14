@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Localization | RadCalendar
-description: Localization
+page_title: Localization - WinForms Calendar Control
+description: WinForms Calendar provides built-in internationalization support to build world-ready applications.  
 slug: winforms/calendar/localization
 tags: localization
 published: True

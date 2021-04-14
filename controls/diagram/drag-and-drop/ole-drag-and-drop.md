@@ -1,7 +1,7 @@
 ---
 title: OLE Drag and Drop
-page_title: OLE Drag and Drop | RadDiagram
-description: This article will demonstrate how you can create shapes in RadDiagram after dragging an object from a separate control. For the purpose of the example we are going to use a RadGridView.
+page_title: OLE Drag and Drop - WinForms Diagram Control
+description: Learn how you can create shapes in WinForms Diagram after dragging an object from a separate control. For the purpose of the example we are going to use a RadGridView.
 slug: winforms/diagram/drag-and-drop/drag-and-drop-from-another-control
 tags: drag and drop,another control
 published: True

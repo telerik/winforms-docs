@@ -1,7 +1,7 @@
 ---
 title: Property Builder
-page_title: Property Builder | ChartView
-description: RadChartView`s Property Builder provides advanced editing and customization options in the Visual Studio designer 
+page_title: Property Builder - WinForms ChartView Control
+description: WinForms ChartView's Property Builder provides advanced editing and customization options in the Visual Studio designer 
 slug: winforms/chartview/design-time/property-builder
 tags: property,builder
 published: True
@@ -16,6 +16,7 @@ The Property builder is divided into three sections: Chart, Series and Appearanc
 The first section allows you to choose the type of chart you will be creating, the type of axes for the chart and the palette. 
 
 >caption Figure 1: Chart Section
+
 ![chartview-propety-builder 001](images/chartview-propety-builder001.png)
 
 The second section is labeled __Series__. Here is where you can add, remove and setup series. You can add new series through the split button below the list with currently added series. You can also remove or copy a series. The latter would make a copy of the series along with all the data points. Here you can also specify the text that will appear in the legend should you decide to show one.

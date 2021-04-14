@@ -1,6 +1,6 @@
 ---
 title: Developer Focused Examples
-page_title: Developer Focused Examples | RadChartView
+page_title: Developer Focused Examples - WinForms ChartView Control
 description: Additional examples built on top the Telerik UI for WinForms RadChartView control.
 slug: winforms/chartview/developer-focused-examples
 tags: developer, sdk, examples

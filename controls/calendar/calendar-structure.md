@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Calendar Structure | RadCalendar
-description: This article shows the calendar structure and the element hierarchy.
+page_title: Structure - WinForms Calendar Control
+description: Learn more about the WinForms Calendar's structure and its elements hierarchy.
 slug: winforms/calendar/calendar-structure
 tags: calendar,structure
 published: True
@@ -9,10 +9,12 @@ position: 1
 previous_url: calendar-overview-structure
 ---
 
-# Calendar Structure
-This article list the main __RadCalendar__ elements.
+# Structure
+
+This article lists the main __RadCalendar__ elements.
 
 >caption Figure 1: The RadCalendar Elements
+
 ![calendar-calendar-structure 001](images/calendar-calendar-structure001.png)
 
 __RadCalenadar__ consists of the following elements:

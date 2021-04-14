@@ -1,7 +1,7 @@
 ---
 title: Design Time Data Binding
-page_title: Design Time Data Binding | RadDiagram
-description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+page_title: Design Time Data Binding - WinForms Diagram Control
+description: Learn how to bind WinForms Diagram from the Visual Studio design time surface.
 slug: winforms/diagram/data-binding/design-time-data-binding
 tags: design,time,data,binding
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Binding to DataTable
-page_title: Binding to DataTable | ChartView
-description: Binding to DataTable is quite easy with RadChartView. Once your table is created, you just need to set the needed members to the desired fields.
+page_title: Binding to DataTable - WinForms ChartView Control
+description: Learn how to bind WinForms ChartView to a DataTable.
 slug: winforms/chartview-/populating-with-data/binding-to-datatable
 tags: binding,to,datatable
 published: True

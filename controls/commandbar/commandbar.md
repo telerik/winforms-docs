@@ -1,7 +1,7 @@
 ---
 title: Oveview
-page_title: CommandBar | UI for WinForms Documentation
-description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
+page_title: Overview - WinForms CommandBar Control
+description: WinForms CommandBar is a fully themeable tool strip that provides unprecedented flexibility
 slug: winforms/commandbar
 tags: commandbar
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Custom Rendering
-page_title: Custom rendering | ChartView
-description: Custom rendering allows customization of the appearance of each data point in a series depending on its value.
+page_title: Custom rendering - WinForms ChartView Control
+description: WinForms ChartView's custom rendering allows customization of the appearance of each data point in a series depending on its value.
 slug: winforms/chartview-/customization/custom-rendering
 tags: custom,rendering
 published: True
@@ -33,6 +33,7 @@ For the purpose of the article, let us make the following assumptions:
 The following image illustrates the desired outcome:
 
 >caption Figure 1: Custom Rendering
+
 ![chartview-customization-custom-rendering 001](images/chartview-customization-custom-rendering001.png)
 
 The starting point of the article is a form with one __RadChartView__ on it. In the form’s Load event handler create a __LineSeries__ instance and add categorical data points. The current example generates random values that fall in the range of 0 – 30. After adding the series to the __RadChartView.Series__ collection, set the __LabelFormat__ and __LabelFitMode__ of the __HorizontalAxis__ and __VerticalAxis__ properties of 

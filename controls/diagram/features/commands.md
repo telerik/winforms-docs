@@ -1,7 +1,7 @@
 ---
 title: Commands
-page_title: Commands | RadDiagram
-description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+page_title: Commands - WinForms Diagram Control
+description: WinForms Diagram provides a powerful set of commands that help you work with your diagram.
 slug: winforms/diagram/features/commands
 tags: commands
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | Chat
-description: RadChat is a control that provides conversational experience
+page_title: Structure - WinForms Chat Control
+description: Get familiar with the internal elements structure of WinForms Chat.
 slug: winforms/chat/structure 
 tags: chat
 published: True

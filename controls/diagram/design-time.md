@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Diagram | RadDiagram
-description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications. 
+page_title: Design Time - WinForms Diagram Control
+description: Get familiar with the design time experience that WinForms Diagram offers. 
 slug: winforms/diagram/design-time
 tags: diagram
 published: True

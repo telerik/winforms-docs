@@ -1,7 +1,7 @@
 ---
 title: MultiView Mode
-page_title: MultiView Mode | RadCalendar
-description: MultiView Mode
+page_title: MultiView Mode - WinForms Calendar Control
+description: WinForms Calendar can be configured to show more than one month in the calendar area.
 slug: winforms/calendar/customizing-behavior/multiview-mode
 tags: multiview,mode
 published: True

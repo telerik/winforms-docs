@@ -1,7 +1,7 @@
 ---
 title: Customizing Appearance
-page_title: Customizing Appearance | RadBindingNavigator
-description: This article demonstrates how one can change the appearance of the navigator elements.  
+page_title: Customizing Appearance - WinForms BindingNavigator Control
+description: Learn how one can change the appearance of the navigator elements.  
 slug: winforms/bindingnavigator/customizing-radbindingnavigator-
 tags: customizing, radbindingnavigator
 published: True

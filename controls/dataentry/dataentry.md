@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: DataEntry | RadDataEntry
-description: RadDataEntry provides an easy way to display and edit arbitrary business objects in a form layout. 
+page_title: Overview - WinForms DataEntry Control
+description: WinForms DataEntry provides an easy way to display and edit arbitrary business objects in a form layout. 
 slug: winforms/dataentry
 tags: dataentry
 published: True

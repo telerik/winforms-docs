@@ -1,7 +1,7 @@
 ---
 title: Themes
-page_title: Styling | RadCalendar
-description: The following article shows how you can change calendar cells in Visual Style Builder.
+page_title: Styling - WinForms Calendar Control
+description: Learn how you can change calendar cells in Visual Style Builder.
 slug: winforms/calendar/customizing-appearance/styling
 tags: styling, themes
 published: True

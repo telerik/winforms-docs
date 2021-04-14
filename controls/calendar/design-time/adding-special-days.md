@@ -1,7 +1,7 @@
 ---
 title: Adding Special Days
-page_title: Adding Special Days | RadCalendar
-description: Adding Special Days
+page_title: Adding Special Days - WinForms Calendar Control
+description: Learn how to add special days in WinForms Calendar.
 slug: winforms/calendar/design-time-support/adding-special-days
 tags: adding,special,days
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Properties that can be Localized
-page_title: Properties that can be localized | RadCalendar
-description: Properties that can be localized
+page_title: Properties that can be localized - WinForms Calendar Control
+description: WinForms Calendar offers properties that can be localized.
 slug: winforms/calendar/localization/properties-that-can-be-localized
 tags: properties,that,can,be,localized
 published: True

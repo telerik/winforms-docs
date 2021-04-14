@@ -1,7 +1,7 @@
 ---
 title: Zoom
-page_title: Zooming | RadCalendar
-description: Zooming
+page_title: Zooming - WinForms Calendar Control
+description: WinForms Calendar offers built-in date zoom functionality. 
 slug: winforms/calendar/customizing-appearance/zooming
 tags: zooming
 published: True

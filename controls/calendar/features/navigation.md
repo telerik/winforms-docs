@@ -1,7 +1,7 @@
 ---
 title: Navigation
-page_title: Customizing Navigation | RadCalendar
-description: Customizing Navigation
+page_title: Customizing Navigation - WinForms Calendar Control
+description: WinForms Calendar provides two types of navigation that allow you to switch or jump to next/previous month.
 slug: winforms/calendar/customizing-behavior/customizing-navigation
 tags: customizing,navigation
 published: True

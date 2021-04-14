@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadCarousel 
-description: This articles shows the RadCarousel structure. 
+page_title: Structure - WinForms Carousel Control
+description: Learn the internal structure of RadCarousel. 
 slug: winforms/carousel/structure
 tags:  carousel, structure
 published: True 

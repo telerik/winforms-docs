@@ -1,7 +1,7 @@
 ---
 title: Messages
-page_title: Messages | Chat
-description: RadChat is a control that provides conversational experience
+page_title: Messages - WinForms Chat Control
+description: ChatMessage is the basic message unit in WinForms Chat control. 
 slug: winforms/chat/chat-items/messages
 tags: chat, messages
 published: True

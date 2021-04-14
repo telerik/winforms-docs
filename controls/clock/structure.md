@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | UI for WinForms Documentation
-description: RadClock is a control which allows the developers to use it in their applications to display time to the users.
+page_title: Structure - WinForms Clock Control
+description: Get familiar with the internal elements structure of WinForms Clock.
 slug: winforms/clock/structure
 tags: clock
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Change The Editor To a Bound RadDropDownList
-page_title: Change the editor to a bound RadDropDownList | RadDataEntry
-description: Change the editor to a bound RadDropDownList
+page_title: Change the editor to a bound RadDropDownList - WinForms DataEntry Control
+description: Learn how to change the editor in WinForms DataEntry to a bound RadDropDownList.
 slug: winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist
 tags: change,the,editor,to,a,bound,raddropdownlist
 published: True
@@ -14,6 +14,7 @@ previous_url: dataentry-how-to-change-editor-to-drop-down-list
 This article will walk you through the process of changing the default editor to a bound drop down list, where the current value corresponds to a value within the drop down list data source. The case where the corresponding values are nullable is also handled. 
 
 >caption Figure 1. Custom Editor
+
 ![dataentry-how-to-change-editor-to-drop-down-list 001](images/dataentry-how-to-change-editor-to-drop-down-list001.png)
 
 1\. First you can subscribe to the __BindingCreating__, __BindingCreated__ and __EditorInitializing__ events of __RadDataEntry__ (please note that this should be done before the data entry control is being data bound). 

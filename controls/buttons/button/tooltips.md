@@ -1,7 +1,7 @@
 ---
 title: Tooltips
-page_title: Tooltips | UI for WinForms Documentation
-description: RadButton is a themable replacement of the standard WinForms Button. It can be clicked by using the mouse, Enter key, or Spacebar, if the button has focus.
+page_title: Tooltips - WinForms Button Control
+description: Learn how to show tooltips for RadButton.
 slug: winforms/buttons/button/tooltips
 tags: button
 published: True

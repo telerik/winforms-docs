@@ -1,7 +1,7 @@
 ---
 title: Customizing Appearance
-page_title: Customizing Appearance | RadCarousel 
-description: This articles shows how one can change the RadCarousel appearance. 
+page_title: Customizing Appearance - WinForms Carousel Control
+description: Learn how one can change the WinForms Carousel's appearance. 
 slug: winforms/carousel/customizing-appearance
 tags: appearance
 published: True 

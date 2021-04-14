@@ -1,7 +1,7 @@
 ---
 title: Working with Items 
-page_title: Working with Items | RadCarousel
-description: This article describes how one cam add/remove items with code.
+page_title: Working with Items - WinForms Carousel Control
+description: Learn how one can add/remove items with code in WinForms Carousel.
 slug: winforms/carousel/using-radcarousel/carousel-items
 tags: carousel,items
 published: True

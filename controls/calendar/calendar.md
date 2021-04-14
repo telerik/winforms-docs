@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Calendar | RadCalendar
-description: Telerik Calendar supports all common features you would find in the standard Month Calendar control.
+page_title: Overview - WinForms Calendar Control
+description: WinForms Calendar supports all common features you would find in the standard Month Calendar control.
 slug: winforms/calendar
 tags: calendar
 published: True

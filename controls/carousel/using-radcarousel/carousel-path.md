@@ -1,7 +1,7 @@
 ---
 title: Carousel Path
-page_title: Carousel Path | RadCarousel
-description: Carousel Path
+page_title: Carousel Path - WinForms Carousel Control
+description: WinForms Carousel allows you to define a route that the carousel items will be animated along. 
 slug: winforms/carousel/using-radcarousel/carousel-path
 tags: carousel,path
 published: True

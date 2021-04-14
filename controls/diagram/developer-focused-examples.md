@@ -1,6 +1,6 @@
 ---
 title: Developer Focused Examples
-page_title: Developer Focused Examples | RadDiagram
+page_title: Developer Focused Examples - WinForms Diagram Control
 description: Additional examples built on top the Telerik UI for WinForms RadGridView control.
 slug: winforms/diagram/developer-focused-examples
 tags: developer, sdk, examples

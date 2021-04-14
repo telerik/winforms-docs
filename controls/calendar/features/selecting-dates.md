@@ -1,7 +1,7 @@
 ---
 title: Selecting Dates
-page_title: Selecting Dates | RadCalendar
-description: Selecting Dates
+page_title: Selecting Dates - WinForms Calendar Control
+description: Learn how to enable selecting dates in WinForms Calendar.
 slug: winforms/calendar/customizing-behavior/selecting-dates
 tags: selecting,dates
 published: True

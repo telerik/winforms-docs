@@ -1,7 +1,7 @@
 ---
 title: Items Events
-page_title: Items Events | RadDiagram
-description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+page_title: Items Events - WinForms WinForms Control
+description: Learn the specific events exposed by the WinForms Diagram's items.
 slug: winforms/diagram/events/items-events
 tags: items,events
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: RepeatButton | UI for WinForms Documentation
-description: RadRepeatButton provides press-and-hold functionality and it is an ideal UI element for allowing users to control an increasing or decreasing value, such as volume or brightness. 
+page_title: RepeatButton - WinForms RepeatButton Control
+description: WinForms RepeatButton provides press-and-hold functionality and it is an ideal UI element for allowing users to control an increasing or decreasing value, such as volume or brightness. 
 slug: winforms/buttons/repeatbutton
 tags: repeatbutton
 published: True

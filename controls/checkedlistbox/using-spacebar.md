@@ -1,7 +1,7 @@
 ---
 title: Using Spacebar key
-page_title: Using Spacebar key | RadCheckedListBox
-description: RadCheckedListBox is an enhanced alternative to the standard Windows Forms checked list box control. 
+page_title: Using Spacebar key - WinForms CheckedListBox Control
+description: Lear how to use the spacebar in WinForms CheckedListBox. 
 slug: winforms/checkedlistbox/structure
 tags: checkedlistbox
 published: True

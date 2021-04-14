@@ -1,7 +1,7 @@
 ---
 title: Binding to BindingList
-page_title: Binding to BindingList | ChartView
-description: BindingList is a generic list type, that provides additional control over list items, i.e. the items in RadChartView can be easily edited, removed or added.
+page_title: Binding to BindingList - WinForms ChartView Control
+description: Learn how to bind WinForms ChartView to a BindingList.
 slug: winforms/chartview-/populating-with-data/binding-to-bindinglist
 tags: binding,to,bindinglist
 published: True

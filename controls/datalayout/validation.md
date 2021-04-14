@@ -1,7 +1,7 @@
 ---
 title: Validation
-page_title: Validation | RadDataLayout
-description: This article shows how one can validate the user input.
+page_title: Validation - WinForms DataLayout Control
+description: Learn how one can validate the user input.
 slug: winforms/datalayout/validation
 tags: validation
 published: True

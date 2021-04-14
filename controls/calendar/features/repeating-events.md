@@ -1,7 +1,7 @@
 ---
 title: Repeating Events
-page_title: Repeating Events | RadCalendar
-description: Repeating Events
+page_title: Repeating Events - WinForms Calendar Control
+description: RadCalendarDay can be configured as a repeating event by setting the Recurring property.
 slug: winforms/calendar/customizing-behavior/repeating-events
 tags: repeating,events
 published: True

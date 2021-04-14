@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: BindingNavigator | RadBindingNavigator
-description: BindingNavigator
+page_title: BindingNavigator - WinForms BindingNavigator Control
+description: WinForms BindingNavigator's main purpose is to provide a basic UI for navigation through a collection of business objects.
 slug: winforms/bindingnavigator
 tags: bindingnavigator
 published: True

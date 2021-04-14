@@ -1,7 +1,7 @@
 ---
 title: Footer
-page_title: Footer | RadCalendar
-description: Footer
+page_title: Footer - WinForms Calendar Control
+description: WinForms Calendar supports footer/status area.
 slug: winforms/calendar/customizing-appearance/footer
 tags: footer
 published: True

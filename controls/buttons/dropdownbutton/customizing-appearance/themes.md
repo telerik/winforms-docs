@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | UI for WinForms Documentation
+page_title: Themes - WinForms DropDownButton Control
 description: RadDropDownButton provides a menu-like interface open from a button. Each of the items of RadDropDownButton can be set to perform an action when clicked.
 slug: winforms/buttons/button/customizing-appearance/themes
 tags: button, themes

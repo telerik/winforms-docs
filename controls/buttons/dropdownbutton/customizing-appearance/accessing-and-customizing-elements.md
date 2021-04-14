@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Element
-page_title: Accessing and Customizing Element | UI for WinForms Documentation
+page_title: Accessing and Customizing Element - WinForms DropDownButton Control
 description: RadDropDownButton provides a menu-like interface open from a button. Each of the items of RadDropDownButton can be set to perform an action when clicked.
 slug: winforms/buttons/dropdownbutton/accessing-and-customizing-elements
 tags: dropdownbutton

@@ -1,7 +1,7 @@
 ---
 title: Structure 
-page_title: Control Element Structure | RadDataEntry
-description: The article describes the DataEntry elements structure.
+page_title: Structure - WinForms DataEntry Control
+description: Get familiar with the DataEntry elements structure.
 slug: winforms/dataentry/control-element-structure
 tags: control,element,structure,
 published: True

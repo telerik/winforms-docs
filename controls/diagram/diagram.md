@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Diagram| RadDiagram
-description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications. 
+page_title: Overview - WinForms Diagram Control
+description: WinForms Diagram offers flexible and interactive diagramming layouts for your rich data-visualization applications. 
 slug: winforms/diagram
 tags: diagram,(beta)
 published: True

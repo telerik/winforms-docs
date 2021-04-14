@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadBreadCrumb
-description:   
+page_title: Structure - WinForms BreadCrumb Control
+description: Learn the internal elements structure of WinForms BreadCrumb.   
 slug: breadcrumb-structure
 tags: breadcrumb
 published: True

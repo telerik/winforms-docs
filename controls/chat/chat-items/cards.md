@@ -1,7 +1,7 @@
 ---
 title: Cards
-page_title: Cards | Chat
-description: RadChat is a control that provides conversational experience
+page_title: Cards - WinForms Chat Control
+description: WinForms Chat offers different cards to display data in a structured layout. 
 slug: winforms/chat/chat-items/cards
 tags: chat, cards
 published: True

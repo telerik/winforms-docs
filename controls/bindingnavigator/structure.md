@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadBindingNavigator 
-description: This articles shows the RadBindingNavigator structure. 
+page_title: Structure - WinForms BindingNavigator Control
+description: WinForms BindingNavigator's structure is presented in this article. 
 slug: winforms/bindingnavigator/structure
 tags:  bindingnavigator, structure
 published: True 

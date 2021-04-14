@@ -1,7 +1,7 @@
 ---
 title: Desing Time
-page_title: SplitButton | UI for WinForms Documentation
-description: RadSplitButton provides a menu-like interface contained within a button that can be placed anywhere on a form.
+page_title: Design Time - WinForms SplitButton Control
+description: WinForms SplitButton provides a menu-like interface contained within a button that can be placed anywhere on a form.
 slug: winforms/buttons/splitbutton/design-time
 tags: splitbutton
 published: True

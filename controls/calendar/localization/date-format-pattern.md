@@ -1,7 +1,7 @@
 ---
 title: Date Format Pattern
-page_title: Date Format Pattern | RadCalendar
-description: Date Format Pattern
+page_title: Date Format Pattern - WinForms Calendar Control
+description: Learn the standard format characters supported by the WinForms Calendar.
 slug: winforms/calendar/localization/date-format-pattern
 tags: date,format,pattern
 published: True

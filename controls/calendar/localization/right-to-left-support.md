@@ -1,7 +1,7 @@
 ---
 title: Right-To-Left Support
-page_title: Right-To-Left Support | RadCalendar
-description: Right-To-Left Support
+page_title: Right-To-Left Support - WinForms Calendar Control
+description: WinForms Calendar offers full right-to-left support.
 slug: winforms/calendar/localization/right-to-left-support
 tags: right-to-left,support
 published: True
@@ -14,9 +14,11 @@ previous_url: calendar-localization-right-to-left-support
 __RadCalendar__ fully supports right-to-left (RTL) language locales. You can enable/disable the right-to-left support using the __RightToLeft__ enumeration, which has two members: __Yes__, __No__.
 
 >caption Figure 1: RightToleft = No
+
 ![calendar-localization-right-to-left-support 001](images/calendar-localization-right-to-left-support001.png)
 
 >caption Figure 2: RightToleft = Yes
+
 ![calendar-localization-right-to-left-support 002](images/calendar-localization-right-to-left-support002.png)
 
 

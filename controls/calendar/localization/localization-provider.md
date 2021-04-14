@@ -1,7 +1,7 @@
 ---
 title: Localization Provider
-page_title: Localization Provider | RadCalendar
-description: Localization Provider
+page_title: Localization Provider - WinForms Calendar Control
+description: Learn how to use CalendarLocalizationProvider.
 slug: winforms/calendar/localization/localization-provider
 tags: localization,provider
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadCardView
-description: At design time you can use the RadCardViews's Smart Tag to change the applied theme or navigate to the online documentation.
+page_title: Design Time - WinForms CardView Control
+description: Learn how you can use the WinForms CardViews's Smart Tag to change the applied theme or navigate to the online documentation.
 slug: winforms/cardview/design-time
 tags: cardview, design-time
 published: True
@@ -13,6 +13,7 @@ position: 2
 ## Smart Tag
 
 >caption Fig.1 Smart Tag
+
 ![radcardview-design-time 001](images/radcardview-design-time001.png)
 
 * __Common Tasks__
@@ -36,6 +37,7 @@ position: 2
 The short video below demonstrates how columns can be set up at design-time and later the layout modified using the Customize Dialog.
 
 >caption Fig.2 Create Layout
+
 ![radcardview-design-time 002](images/radcardview-design-time002.gif)
 
 * __Data Binding__: __RadCardView__ utilizes the standard WinForms data binding mechanism. A complete example is available in Data Binding section.

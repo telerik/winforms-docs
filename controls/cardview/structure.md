@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | UI for WinForms Documentation
-description: CardView uses the Telerik Presentation Framework which enables rich experiences like advanced styling.
+page_title: Structure - WinForms CardView Control
+description: WinForms CardView uses the Telerik Presentation Framework which enables rich experiences like advanced styling.
 slug: winforms/cardview/structure
 tags: cardview, structure
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Validation
-page_title: Validation | RadDataEntry
-description: This article describes how RadDataEntry validates the user input.
+page_title: Validation - WinForms DataEntry Control
+description: Learn how WinForms DataEntry validates the user input.
 slug: winforms/dataentry/validation
 tags: validation
 published: True

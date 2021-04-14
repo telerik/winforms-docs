@@ -1,7 +1,7 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | UI for WinForms Documentation
-description: RadButton is a themable replacement of the standard WinForms Button. It can be clicked by using the mouse, Enter key, or Spacebar, if the button has focus.
+page_title: Accessing and Customizing Elements - WinForms Button Control
+description: WinForms Button allows accessing and customizing elements that can be performed either at design time, or at run time
 slug: winforms/buttons/button/customizing-appearance/accessing-and-customizing-elements 
 tags: button, appearance
 published: True
