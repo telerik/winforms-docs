@@ -1,7 +1,7 @@
 ---
 title: Sorting
-page_title: Sorting | RadDropDownList
-description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
+page_title: Sorting - WinForms DropDownList Control
+description: WinForms DropDownList supports sorting of its pop-up items.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/sorting
 tags: sorting
 published: True

@@ -1,7 +1,7 @@
 ---
 title: RadSaveFileDialog
-page_title: RadSaveFileDialog| File Dialogs
-description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
+page_title: RadSaveFileDialog - WinForms FileDialogs
+description: WinForms SaveFileDialog is a modal dialog box that allows you to specify a file name to save.
 slug: winforms/file-dialogs/dialog-controls/radsavefiledialog
 tags: filedialogs, radsavefiledialog
 published: True

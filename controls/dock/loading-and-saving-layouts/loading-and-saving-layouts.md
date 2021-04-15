@@ -1,7 +1,7 @@
 ---
 title: Loading And Saving Layouts
-page_title: Loading And Saving Layouts | RadDock
-description: Loading And Saving the state of RadDock.
+page_title: Loading And Saving Layouts - WinForms Dock Control
+description: WinForms RadDock provides methods to save and load layouts. 
 slug: winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts
 tags: loading,and,saving,layouts
 published: True

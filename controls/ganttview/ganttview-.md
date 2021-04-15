@@ -1,7 +1,7 @@
 ---
 title: Overview 
-page_title: GanttView | RadGanttView
-description: GanttView is a data-visualization and editing control for project planning data and different types of task and time scheduling.
+page_title: Overview - WinForms GanttView Control
+description: WinForms GanttView is a data-visualization and editing control for project planning data and different types of task and time scheduling.
 slug: winforms/ganttview
 tags: ganttview,
 published: True

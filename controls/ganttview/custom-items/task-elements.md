@@ -1,7 +1,7 @@
 ---
 title: Task Elements
-page_title: Task Elements | RadGanttView
-description: RadGanttView allows you to replace the standard task elements with a custom ones.
+page_title: Task Elements - WinForms GanttView Control
+description: WinForms GanttView allows you to replace the standard task elements with custom ones.
 slug: winforms/ganttview/custom-items/task-elements
 tags: creating,custom,task,elements
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: RadialGauge | RadRadialGauge
-description: The RadRadialGauge control is designed to display a simple value within a definite range. 
+page_title: Overview - WinForms RadialGauge Control
+description: WinForms RadialGauge control is designed to display a simple value within a definite range. 
 slug: winforms/gauges/radialgauge
 tags: radialgauge
 published: True

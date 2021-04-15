@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadDateTimePicker
-description: This article shows what you can do with the smart tag of RadDateTimePicker.
+page_title: Design Time - WinForms DateTimePicker Control
+description: Learn what are the design time options of the WinForms DateTimePicker.
 slug: winforms/editors/datetimepicker/designtime
 tags: datetimepicker
 published: True

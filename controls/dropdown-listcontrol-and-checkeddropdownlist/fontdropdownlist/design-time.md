@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Overview | RadFontDropDownList
-description: RadFontDropDownList represents a drop down list with built-in fonts that are installed on the system. 
+page_title: Design Time - WinForms FontDropDownList Control
+description: Learn what are the design time options in WinForms FontDropDownList. 
 slug: winforms/editors/fontdropdownlist/design-time
 tags: fontdropdownlist,designtime
 published: True

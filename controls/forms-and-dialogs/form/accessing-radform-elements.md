@@ -1,7 +1,7 @@
 ---
 title: Accessing RadForm Elements
-page_title: Accessing RadForm Elements | UI for WinForms Documentation
-description: Accessing RadForm Elements
+page_title: Accessing RadForm Elements - WinForms RadForm
+description: Learn how to access and modify RadFormTitleBarElement, FormBorderPrimitive and FormImageBorderPrimitive.
 slug: winforms/forms-and-dialogs/form/accessing-radform-elements
 tags: accessing,radform,elements
 published: True

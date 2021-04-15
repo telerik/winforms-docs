@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: AutoCompleteBox | RadAutoCompleteBox
+page_title: Overview - WinForms AutoCompleteBox Control
 description: RadAutoCompleteBox allows the end-user to easily fill-in text thanks to auto-complete functionality and tokens of text.
 slug: winforms/editors/autocompletebox
 tags: autocompletebox

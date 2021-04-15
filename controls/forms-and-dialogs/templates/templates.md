@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview | Templates
-description: The Visual Studio templates that install with Telerik UI for WinForms let you add RadForm and ShapedForm to your application without any coding steps. 
+page_title: Overview - WinForms Templates
+description: Visual Studio templates that install with Telerik UI for WinForms let you add RadForm and ShapedForm to your application without any coding steps. 
 slug: winforms/forms-and-dialogs/templates
 tags: templates
 published: True

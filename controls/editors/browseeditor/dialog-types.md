@@ -1,7 +1,7 @@
 ---
 title: Dialog Types
-page_title: Dialog Types | Browse Editors
-description: The following example demonstrates how to change the image of a RadButton using the RadBrowseEditor.
+page_title: Dialog Types - WinForms BrowseEditor Control
+description: WinForms BrowseEditor comes with a predefined set of dialog types.
 slug: winforms/editors/browseeditor/dialog-types
 tags: dialog, types
 published: True

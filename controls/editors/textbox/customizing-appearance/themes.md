@@ -1,7 +1,7 @@
 ---
 title: Themes
-page_title: Themes | RadTextBox
-description: This article shows how you can change the disabled back color of RadTextBox.
+page_title: Themes - WinForms TextBox Control
+description: Learn how you can change the disabled back color of WinForms RadTextBox.
 slug: winforms/editors/textbox/themes
 tags: textbox
 published: True

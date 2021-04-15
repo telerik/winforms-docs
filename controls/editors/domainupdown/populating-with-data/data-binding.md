@@ -1,7 +1,7 @@
 ---
 title: Data Binding
-page_title: Data Binding | RadDomainUpDown
-description: RadDomainUpDown is designed to display text inside an editor like a text-box and sets a text string from a list of choices. 
+page_title: Data Binding - WinForms DomainUpDown Control
+description: Data binding is a mechanism for automatic population of the WinForms DomainUpDown with items, based on the provided data structure.  
 slug: winforms/editors/domainupdown/populating-with-data/data-binding
 tags: domainupdown,databinding
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Input Behavior
-page_title: Input Behavior| RadGanttView
-description: This article list the most important properties of RadGanttView. 
+page_title: Input Behavior - WinForms GanttView Control
+description: BaseGanttViewBehavior is responsible for handling the keyboard, mouse, and context menu. 
 slug: winforms/ganttview/input-behavior
 tags: input,behavior
 published: True

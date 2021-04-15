@@ -1,6 +1,6 @@
 ---
 title: Numeric Masks
-page_title: Numeric Masks | RadMaskedEditBox
+page_title: Numeric Masks - WinForms MaskedEditBox Control
 description: The numeric mask is used when you need to display - Percent values, Decimal values, Currency (culture-aware), Fixed point values.
 slug: winforms/editors/maskededitbox/numeric-masks
 tags: numeric,masks

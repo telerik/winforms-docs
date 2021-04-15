@@ -1,6 +1,6 @@
 ---
 title: Working with Labels
-page_title: Working with labels | RadRadialGauge
+page_title: Working with labels - WinForms RadialGauge Control
 description: RadialGaugeLabels class represents the scale labels displayed next to the ticks.
 slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-labels
 tags: working,with,labels

@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadListControl
-description: RadListControl supports adding items at run time, which means that you can manually populate it with data.
+page_title: Design Time - WinForms ListControl
+description: Learn how to populate WinForms ListControl with data at design time.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data/design-time
 tags: design, time
 published: True

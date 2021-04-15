@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadRadialGauge
-description: This article describes the inner structure and organization of the elements which build the RadRadialGauge control.
+page_title: Structure - WinForms RadialGauge Control
+description: Get familair with the inner structure and organization of the elements which build the WinForms RadialGauge control.
 slug: winforms/gauges/radialgauge/structure
 tags: structure
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Date and Time Masks
-page_title: Date and Time Masks | RadMaskedEditBox
-description: The following tables  describe the mask characters that can be used when the MaskType is DateTime. Note that the format characters are case sensitive.
+page_title: Date and Time Masks - WinForms MaskedEditBox Control
+description: Learn the mask characters that can be used when the MaskType is DateTime. Note that the format characters are case sensitive.
 slug: winforms/editors/maskededitbox/date-and-time-masks
 tags: date,and,time,masks
 published: True

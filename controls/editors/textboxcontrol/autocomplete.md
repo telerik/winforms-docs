@@ -1,7 +1,7 @@
 ---
 title: AutoComplete
-page_title: AutoComplete | RadTextBoxControl
-description: This article shows how you can use the auto-complete functionality of RadTextBoxControl
+page_title: AutoComplete - WinForms TextBoxControl
+description: Learn how you can use the auto-complete functionality of WinForms RadTextBoxControl.
 slug: winforms/editors/textboxcontrol/autocomplete
 tags: autocomplete
 published: True

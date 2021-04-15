@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadTabbedForm
-description:  RadTabbedForm allows to display tab items directly in the title bar  
+page_title: Structure - WinForms TabbedForm
+description:  Get familiar with the internal elements structure of the WinForms TabbedForm.  
 slug: radtabbedform-structure
 tags: radtabbedform
 published: True

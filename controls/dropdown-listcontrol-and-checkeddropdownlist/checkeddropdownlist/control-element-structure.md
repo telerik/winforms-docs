@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadCheckedDropDownList
-description: RadCheckedDropDownList combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area.
+page_title: Structure - WinForms CheckedDropDownList Control
+description: Learn the inner structure and organization of the elements which build the WinForms CheckedDropDownList control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/control-element-structure
 tags: control,element,structure
 published: True

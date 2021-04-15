@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure| UI for WinForms Documentation
-description: Shows the structure and elements hierarchy of RadTimePicker.
+page_title: Structure - WinForms TimePicker Control
+description: Get familiar with the structure and elements hierarchy of WinForms TimePicker.
 slug: winforms/editors/timepicker/structure
 tags: structure,properties,and,events
 published: True

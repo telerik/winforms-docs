@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadTextBox
-description: RadTextBox is a themable control which allows the user to type text.
+page_title: Design Time - WinForms TextBox Control
+description: Get familiar with the design time options that the WinForms TextBox offers.
 slug: winforms/editors/textbox/designtime
 tags: textbox
 published: True

@@ -1,6 +1,6 @@
 ---
 title: Working with Line
-page_title: Working with Line | RadLinearGauge
+page_title: Working with Line - WinForms LinearGauge Control
 description: The line element represents single line which can be used with the ticks.
 slug: winforms/gauges/lineargauge/elements/working-with-line
 tags: working,with,line

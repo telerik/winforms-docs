@@ -1,7 +1,7 @@
 ---
 title: Customizing TabStrip Items
-page_title: Customizing TabStrip Items | RadDock
-description: This article demonstrates how you can customize or replace the TabStrip items.
+page_title: Customizing TabStrip Items - WinForms Dock Control
+description: Learn how you can customize or replace the TabStrip items.
 slug: winforms/dock/object-model/customizing-tabstrip-items
 tags: customizing,tabstrip,items
 published: True

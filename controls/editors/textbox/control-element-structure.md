@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadTextBox
-description: This article shows the structure of RadTextBox.
+page_title: Structure - WinForms TextBox Control
+description: Get familiar with the internal elements structure of the WinForms TextBox.
 slug: winforms/editors/textbox/control-element-structure
 tags: control,element,structure
 published: True

@@ -1,6 +1,6 @@
 ---
 title: Quick Navigator
-page_title: Quick Navigator | RadDock
+page_title: Quick Navigator - WinForms Dock Control
 description: Use the built-in pop-up QuickNavigator to set the focus to any window.
 slug: winforms/dock/architecture-and-features/quick-navigator
 tags: quick,navigator

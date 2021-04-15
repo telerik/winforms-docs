@@ -1,7 +1,7 @@
 ---
 title: Working with Labels
-page_title: Working with Labels | RadLinearGauge
-description: LinearGaugeLabels element represents the scale labels displayed next to the ticks
+page_title: Working with Labels - WinForms LinearGauge Control
+description: LinearGaugeLabels element represents the scale labels displayed next to the ticks.
 slug: winforms/gauges/lineargauge/elements/working-with-labels
 tags: working,with,labels
 published: True

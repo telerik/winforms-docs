@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview | RadTextBoxControl
-description: TextBoxControl extends the the default text box by providing additional functionality like word formating and auto-complete. 
+page_title: Overview - WinForms TextBoxControl
+description: WinForms TextBoxControl extends the the default text box by providing additional functionality like word formating and auto-complete. 
 slug: winforms/editors/textboxcontrol
 tags: textboxcontrol
 published: True

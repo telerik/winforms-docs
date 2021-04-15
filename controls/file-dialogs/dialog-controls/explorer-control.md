@@ -1,7 +1,7 @@
 ---
 title: Explorer Control
-page_title: Explorer Control | File Dialogs
-description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
+page_title: Explorer Control - WinForms FileDialogs
+description: ExplorerControl is the view that presents the UI of the dialogs. When a dialog is opened its content is shown via this control.
 slug: winforms/file-dialogs/dialog-controls/explorer-control
 tags: filedialogs, explorercontrol
 published: True

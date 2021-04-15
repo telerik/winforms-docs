@@ -1,7 +1,7 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | RadDock
-description: This article describes the functionality provided by the RadDock smart tag.
+page_title: Smart Tag - WinForms Dock Control
+description: Learn the functionality provided by the WinForms RadDock's smart tag.
 slug: winforms/raddock/smart-tag
 tags: RadDock, SmartTag 
 published: True

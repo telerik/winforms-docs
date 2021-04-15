@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: PopupEditor | RadPopupEditor
-description: RadPopeditor allows you to build custom drop down controls. 
+page_title: Overview - WinForms PopupEditor Control
+description: WinForms Popeditor allows you to build custom drop down controls. 
 slug: winforms/editors/popupeditor
 tags: popupeditor
 published: True

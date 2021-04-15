@@ -1,7 +1,7 @@
 ---
 title: AllowedDockStates
-page_title: AllowedDockStates | RadDock
-description: Describes how you can set the allowed dock states. 
+page_title: AllowedDockStates - WinForms Dock Control
+description: AllowedDockState property gives you the ability to determine the available dock states per ToolWindow. 
 slug: winforms/dock/object-model/alloweddockstates
 tags: alloweddockstates
 published: True

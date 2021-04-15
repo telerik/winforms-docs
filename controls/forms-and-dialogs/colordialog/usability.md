@@ -1,7 +1,7 @@
 ---
 title: Usability
-page_title: Usability | RadColorDialog
-description: RadColorDialog is a lightweight UI component that allows users to select from RGB or HEX color models.
+page_title: Usability - WinForms ColorDialog
+description: WinForms ColorDialog provides multiple ways to select a color using the Basic, System, Web or Professional color tabs of the dialog. 
 slug: winforms/forms-and-dialogs/colordialog/usability
 tags: usability
 published: True

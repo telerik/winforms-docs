@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadButtonTextBox
-description: RadButtonTextBox is a derivative of **RadTextBox** which allows you to embed easily button elements on the left or right side of the text box.
+page_title: Structure - WinForms ButtonTextBox Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms ButtonTextBox control. 
 slug: winforms/editors/buttontextbox/structure
 tags: button, text, structure
 published: True

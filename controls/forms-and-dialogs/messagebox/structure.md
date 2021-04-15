@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadMessageBox
-description: RadMessageBox displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message, such as status or error information.
+page_title: Structure - WinForms MessageBox
+description: Get familiar with the inner structure and organization of the elements which build the WinForms MessageBox. 
 slug: winforms/forms-and-dialogs/messagebox/structure
 tags: messagebox, structure
 published: True

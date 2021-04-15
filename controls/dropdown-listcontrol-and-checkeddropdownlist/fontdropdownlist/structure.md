@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadFontDropDownList
-description: RadFontDropDownList represents a drop down list with built-in fonts that are installed on the system.   
+page_title: Structure - WinForms FontDropDownList Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms FontDropDownList control. 
 slug: winforms/editors/fontdropdownlist/structure
 tags: font, dropdown, structure
 published: True

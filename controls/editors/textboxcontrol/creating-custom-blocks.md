@@ -1,6 +1,6 @@
 ---
 title: Creating custom blocks
-page_title: Creating custom blocks | RadTextBoxControl
+page_title: Creating custom blocks - WinForms TextBoxControl
 description: Shows how you can create a custom text block and replace a word with a button for example.
 slug: winforms/editors/textboxcontrol/creating-custom-blocks
 tags: creating,custom,blocks

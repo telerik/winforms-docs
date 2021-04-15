@@ -1,7 +1,7 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | CalculatorDropDown
-description: In this article we will describe the design time abilities of RadCalculatorDropDown provided by its Smart Tag.
+page_title: Smart Tag - WinForms CalculatorDropDown Control
+description: Learn what are the design time abilities of WinForms CalculatorDropDown provided by its Smart Tag.
 slug: winforms/calculatordropdown/design-time/smart-tag
 tags: design,time
 published: True
@@ -15,6 +15,7 @@ In this article we will describe the design time abilities of __RadCalculatorDro
 Here is how the control's Smart Tag looks like:
 
 >caption Figure 1: Smart Tag
+
 ![calculatordropdown-design-time-smart-tag 001](images/calculatordropdown-design-time-smart-tag001.png)
 
 * __Common Tasks__

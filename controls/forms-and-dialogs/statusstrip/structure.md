@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadStatusStrip
-description: RadStatusStrip provides a status area that can be composed of any number of RadElement types - buttons, repeat buttons, image buttons, labels, panels, progress bars and separators.
+page_title: Structure - WinForms StatusStrip Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms StatusStrip.
 slug: winforms/forms-and-dialogs/statusstrip/structure
 tags: statusstrip
 published: True

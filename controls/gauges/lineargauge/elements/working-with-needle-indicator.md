@@ -1,6 +1,6 @@
 ---
 title: Working with Needle Indicator
-page_title: Working with Needle Indicator | UI for WinForms Documentation
+page_title: Working with Needle Indicator - WinForms LinearGauge Control
 description: LinearGaugeNeedleIndicator is a scale indicator that points to a value.
 slug: winforms/gauges/lineargauge/elements/working-with-needle-indicator
 tags: working,with,needle,indicator
@@ -18,6 +18,7 @@ __LinearGaugeNeedleIndicator__ is a scale indicator that points to a value.
 The following image shows the smart tag of the gauge control when the needle is selected. You can change the line properties directly in the smart tag window.
 
 >caption Figure 1: Design Time
+
 ![lineargauge-elements-working-with-needle 001](images/lineargauge-elements-working-with-needle001.png)
 
 ## Properties

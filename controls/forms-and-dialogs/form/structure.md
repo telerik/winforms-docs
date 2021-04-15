@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadForm
-description: The RadForm control is an extended standard Windows Form that fully supports the Telerik Presentation Framework (TPF) and the Telerik's theming mechanism.
+page_title: Structure - WinForms RadForm
+description: Get familiar with the inner structure and organization of the elements which build the WinForms RadForm.
 slug: winforms/forms-and-dialogs/form/structure
 tags: form
 published: True

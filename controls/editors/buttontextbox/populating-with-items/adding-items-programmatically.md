@@ -1,7 +1,7 @@
 ---
 title: Adding Items Programmatically
-page_title: Adding Items Programmatically | RadButtonTextBox
-description: RadButtonTextBox is a derivative of **RadTextBox** which allows you to embed easily button elements on the left or right side of the text box.
+page_title: Adding Items Programmatically - WinForms ButtonTextBox Control
+description: WinForms ButtonTextBox supports adding items at run time, which means that you can manually populate it with data.
 slug: winforms/editors/buttontextbox/populating-with-data/adding-items-programmatically
 tags: adding,items,programmatically
 published: True

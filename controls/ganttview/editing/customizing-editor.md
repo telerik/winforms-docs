@@ -1,7 +1,7 @@
 ---
 title: Customizing editor
-page_title: Customizing editor | RadGanttView
-description: The appearance and behavior of property grid editors can be changed programmatically.
+page_title: Customizing editor - WinForms GanttView Control
+description: Learn how the appearance and behavior of ganttview editors can be changed programmatically.
 slug: winforms/ganttview-/editing/customizing-editor
 tags: customizing,editor
 published: True

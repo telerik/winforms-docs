@@ -1,7 +1,7 @@
 ---
 title: Adding Items Programmatically
-page_title: Adding Items Programmatically | RadDomainUpDown
-description: RadDomainUpDown is designed to display text inside an editor like a text-box and sets a text string from a list of choices. 
+page_title: Adding Items Programmatically - WinForms DomainUpDown Control
+description: WinForms DomainUpDown supports adding items at run time, which means that you can manually populate it with data. 
 slug: winforms/editors/domainupdown/populating-with-data/adding-items-programmatically
 tags: domainupdown
 published: True

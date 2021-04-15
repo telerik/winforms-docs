@@ -1,7 +1,7 @@
 ---
 title: Help Button
-page_title: Help Button | RadTitleBar
-description: RadTitleBar control is used in forms and provides functionality for dragging, minimizing, maximizing and closing the form. This control is internally used by RadForm.
+page_title: Help Button - WinForms TitleBar Control
+description: Learn how to display Help on Windows Forms through the Help button, located on the right side of the title bar.
 slug: winforms/forms-and-dialogs/radtitlebar/help-button
 tags: radtitlebar
 published: True

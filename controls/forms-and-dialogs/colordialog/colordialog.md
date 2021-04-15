@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadColorDialog
+page_title: Overview - WinForms ColorDialog
 description: RadColorDialog is a lightweight UI component that allows users to select from RGB or HEX color models.
 slug: winforms/forms-and-dialogs/colordialog
 tags: colordialog

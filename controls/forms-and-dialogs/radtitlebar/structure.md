@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadTitleBar
-description: RadTitleBar control is used in forms and provides functionality for dragging, minimizing, maximizing and closing the form. This control is internally used by RadForm.
+page_title: Structure - WinForms TitleBar Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms TitleBar.
 slug: winforms/forms-and-dialogs/radtitlebar/structure
 tags: radtitlebar
 published: True

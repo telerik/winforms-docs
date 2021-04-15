@@ -1,6 +1,6 @@
 ---
 title: Animation Effects
-page_title: Animation Effects | RadDropDownList
+page_title: Animation Effects - WinForms DropDownList Control
 description: Three properties define the animation behavior of RadDropDownList - DropDownAnimationEnabled, DropDownAnimationEasing, DropDownAnimationFrames.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/animation-effects
 tags: animation,effects

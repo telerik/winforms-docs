@@ -1,7 +1,7 @@
 ---
 title: Properties and Events
-page_title: Properties and Events | RadSpinEditor
-description: This article shows the most common properties and events used in RadSpinEditor.
+page_title: Properties and Events - WinForms SpinEditor Control
+description: Get familiar with the most common properties and events used in WinForms SpinEditor.
 slug: winforms/editors/spineditor/working-with-radspineditor
 tags: working,with,radspineditor
 published: True

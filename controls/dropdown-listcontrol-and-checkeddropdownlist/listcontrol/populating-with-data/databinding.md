@@ -1,7 +1,7 @@
 ---
 title: Data Binding
-page_title: Data Binding | RadListControl
-description: RadListControl supports adding items at run time, which means that you can manually populate it with data.
+page_title: Data Binding - WinForms ListControl
+description: Data binding provides a way to bind the display of data in a WinForms ListControl to a data source.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data/data-binding
 tags: databinding
 published: True

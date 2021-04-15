@@ -1,7 +1,7 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | RadMaskedEditBox
-description: In this article we will describe the design time abilities of RadMaskedEditBox provided by its Smart Tag.
+page_title: Smart Tag - WinForms MaskedEditBox Control
+description: Learn what are the design time abilities of RadMaskedEditBox provided by its Smart Tag.
 slug: winforms/editors/maskededitbox/design-time/smart-tag
 tags: design,time
 published: True
@@ -15,6 +15,7 @@ In this article we will describe the design time abilities of __RadMaskedEditBox
 Here is how the control's Smart Tag looks like:
 
 >caption Figure 1: Smart Tag
+
 ![radmaskededitbox design time 001](images/radmaskededitbox-design-time001.png)
 
 * __Common Tasks__
@@ -30,6 +31,7 @@ Here is how the control's Smart Tag looks like:
 	* __SetMask__: Opens a dialog for specifying the mask.
 
 >caption Figure 1: Set Mask Dialog
+
 ![radmaskededitbox design time 002](images/radmaskededitbox-design-time002.png)
 
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.

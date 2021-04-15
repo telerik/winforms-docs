@@ -1,7 +1,7 @@
 ---
 title: Save and Load layout
-page_title: Save and Load layout | RadRadialGauge
-description: RadRadialGauge supports Save/Load layout functionality which gives you the opportunity to preserve gauge elements' settings and restore them later.
+page_title: Save and Load layout - WinForms RadialGauge Control
+description: WinForms RadialGauge supports Save/Load layout functionality which gives you the opportunity to preserve gauge elements' settings and restore them later.
 slug: winforms/gauges/radialgauge/save-and-load-layout
 tags: save,and,load,layout
 published: True

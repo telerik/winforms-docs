@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadSpinEditor
-description: RadSpinEditor is a themable alternative to the standard Windows Numeric Up Down control.
+page_title: Structure - WinForms SpinEditor Control
+description: Get familiar with the internal elements structure of the WinForms SpinEditor.
 slug: winforms/editors/spineditor/structure
 tags: spineditor
 published: True

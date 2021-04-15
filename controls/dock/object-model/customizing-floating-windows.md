@@ -1,7 +1,7 @@
 ---
 title: Customizing Floating Windows
-page_title: Customizing Floating Windows | RadDock
-description: Customizing Floating Windows when they are created.
+page_title: Customizing Floating Windows - WinForms Dock Control
+description: Learn how to customize Floating Windows when they are created.
 slug: winforms/dock/object-model/customizing-floating-windows
 tags: customizing,floating,windows
 published: True

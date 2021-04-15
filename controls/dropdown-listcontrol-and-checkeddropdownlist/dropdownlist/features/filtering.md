@@ -1,7 +1,7 @@
 ---
 title: Filtering
-page_title: Filtering | RadDropDownList
-description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
+page_title: Filtering - WinForms DropDownList Control
+description: WinForms DropDownList offers filtering functionality for its items.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/filtering
 tags: filtering
 published: True

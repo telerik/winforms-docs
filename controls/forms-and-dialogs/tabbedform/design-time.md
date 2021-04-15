@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadTabbedForm
-description:  RadTabbedForm allows to display tab items directly in the title bar  
+page_title: Design Time - WinForms TabbedForm
+description: Learn what are the design time options of the WinForms TabbedForm.  
 slug: radtabbedform-design-time
 tags: radtabbedform
 published: True

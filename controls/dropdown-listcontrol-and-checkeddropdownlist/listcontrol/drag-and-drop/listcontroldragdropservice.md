@@ -1,7 +1,7 @@
 ---
 title: ListControlDragDropService
-page_title: ListControlDragDropService | dropdown-and-listcontrol-dropdownlist-dropdown-resizing010
-description: RadListControl is the an alternative to the Microsoft ListBox control.
+page_title: ListControlDragDropService - WinForms ListControl
+description: Learn how to use ListControlDragDropService to achieve drag and drop functionality in bound mode.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop/listcontroldragdropservice
 tags: drag,and,drop, 
 published: True

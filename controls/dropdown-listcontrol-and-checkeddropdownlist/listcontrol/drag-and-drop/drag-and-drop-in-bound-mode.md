@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop in Bound Mode
-page_title: Drag and Drop in Bound Mode | dropdown-and-listcontrol-dropdownlist-dropdown-resizing010
-description: RadListControl is the an alternative to the Microsoft ListBox control.
+page_title: Drag and Drop in Bound Mode - WinForms ListControl Control
+description: Learn how to implement drag and drop operation between two bound WinForms ListControl controls.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop/drag-and-drop-in-bound-mode
 tags: drag,and,drop,in,bound,mode
 published: True

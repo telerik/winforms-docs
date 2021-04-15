@@ -1,7 +1,7 @@
 ---
 title: Network Locations
-page_title: Network Locations | File Dialogs
-description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
+page_title: Network Locations - WinForms FileDialogs
+description: WinForms FileDialogs as well as the ExplorerControl provide out of the box support for Network Locations.
 slug: winforms/file-dialogs/features/network-locations
 tags: filedialogs, network, locations
 published: True

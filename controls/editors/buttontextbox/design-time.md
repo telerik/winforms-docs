@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadButtonTextBox
-description: RadButtonTextBox is a derivative of **RadTextBox** which allows you to embed easily button elements on the left or right side of the text box.
+page_title: Design Time - WinForms ButtonTextBox Control
+description: Learn what are the design time options offered by the WinForms ButtonTextBox. 
 slug: winforms/editors/buttontextbox/design-time
 tags: design,time
 published: True

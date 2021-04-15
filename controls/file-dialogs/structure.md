@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | File Dialogs
-description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
+page_title: Structure - WinForms FileDialogs
+description: Get familiar with the inner structure and organization of the elements which build RadOpenFileDialog, RadSaveFileDialog and RadOpenFolderDialog.
 slug: winforms/file-dialogs/structure
 tags: filedialogs, structure
 published: True

@@ -1,7 +1,7 @@
 ---
-title: Overview
-page_title: Structure | RadGanttView
-description: This article shows the elements of RadGanttView.
+title: Structure
+page_title: Structure - WinForms GanttView Control
+description: Get familiar with the internal elements structure of the WinForms GanttView.
 slug: winforms/ganttview-/structure
 tags: structure
 published: True

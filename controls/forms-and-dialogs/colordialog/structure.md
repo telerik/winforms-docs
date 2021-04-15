@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadColorDialog
-description: RadColorDialog is a lightweight UI component that allows users to select from RGB or HEX color models.
+page_title: Structure - WinForms ColorDialog
+description: Get familiar with the internal elements structure of the WinForms ColorDialog. 
 slug: winforms/forms-and-dialogs/colordialog/structure
 tags: colordialog
 published: True

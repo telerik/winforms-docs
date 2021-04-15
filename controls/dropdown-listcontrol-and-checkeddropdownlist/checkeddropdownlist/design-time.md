@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Overview | RadCheckedDropDownList
-description: RadCheckedDropDownList combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area. 
+page_title: Design Time - WinForms CheckedDropDownList Control
+description: Learn what design time options are offered by WinForms CheckedDropDownList.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/design-time
 tags: checkeddropdownlist
 published: True

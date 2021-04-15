@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadDropDownList
-description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
+page_title: Design Time - WinForms DropDownList Control
+description: Learn how to populate WinForms DropDownList with data at design time. 
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/design-time
 tags: design,time
 published: True

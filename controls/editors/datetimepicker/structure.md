@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadDateTimePicker
-description: This article shows the main elements of RadDateTimePicker.
+page_title: Structure - WinForms DateTimePicker Control
+description: Get familiar with the internal elements structure of the WinForms DateTimePicker.
 slug: winforms/editors/datetimepicker
 tags: datetimepicker
 published: True

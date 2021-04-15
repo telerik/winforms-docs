@@ -1,7 +1,7 @@
 ---
 title: Desing Time
-page_title: Desing Time | RadDomainUpDown
-description: RadDomainUpDown is designed to display text inside an editor like a text-box and sets a text string from a list of choices.  
+page_title: Desing Time - WinForms DomainUpDown Control
+description: Learn what are the design time options of the WinForms DomainUpDown.  
 slug: winforms/editors/domainupdown/design-time
 tags: domainupdown, design
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Working with RadBrowseEditor
-page_title: Working with RadBrowseEditor | UI for WinForms Documentation
-description: The events defined in RadBrowseEditor provide an easy way to track user input and perform validation.
+page_title: Working with RadBrowseEditor - WinForms BrowseEditor Control
+description: Learn how to work with RadBrowseEditor which provides an easy way to track user input and perform validation.
 slug: winforms/editors/browseeditor/working-with-radbrowseeditor
 tags: working,with,radbrowseeditor
 published: True

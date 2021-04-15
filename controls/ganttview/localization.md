@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | RadGanttView
-description: This article shows how  you can localize RadGanttView to display control text and messages in a specific language.
+page_title: Localization - WinForms GanttView Control
+description: Learn how you can localize WinForms GanttView to display control text and messages in a specific language.
 slug: winforms/ganttview-/localization
 tags: localization
 published: True

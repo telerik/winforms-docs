@@ -1,7 +1,7 @@
 ---
 title: Custom timeline
-page_title: Custom timeline | RadGanttView
-description: Custom timeline
+page_title: Custom timeline - WinForms GanttView Control
+description: Learn how you to build your own timeline views.
 slug: winforms/ganttview-/timeline/custom-timeline
 tags: custom,timeline
 published: True

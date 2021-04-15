@@ -1,7 +1,7 @@
 ---
 title: DropDown Resizing
-page_title: DropDown Resizing | RadDropDownList
-description: RadDropDownList supports different sizing modes, based on the __DropDownSizingMode__ property of the control.
+page_title: DropDown Resizing - WinForms DropDownList Control
+description: WinForms DropDownList supports different sizing modes, based on the __DropDownSizingMode__ property of the control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdown-resizing
 tags: dropdown,resizing
 published: True

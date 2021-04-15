@@ -1,7 +1,7 @@
 ---
 title: GanttViewDragDropService 
-page_title: GanttViewDragDropService | RadGanttView
-description: GanttView is a data-visualization and editing control for project planning data and different types of task and time scheduling.
+page_title: GanttViewDragDropService - WinForms GanttView Control
+description: WinForms GanttView supports drag and drop functionality for its tasks achieved by the GanttViewDragDropService which is accessed by the GanttViewElement.DragDropService property.
 slug: winforms/ganttview/ganttviewdragdropservice
 tags: ganttview,
 published: True

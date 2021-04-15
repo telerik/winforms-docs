@@ -1,6 +1,6 @@
 ---
 title: Developer Focused Examples
-page_title: Developer Focused Examples | RadGanttView
+page_title: Developer Focused Examples - WinForms GanttView Control
 description: Additional examples built on top the Telerik UI for WinForms RadGanttView control.
 slug: winforms/ganttview/developer-focused-examples
 tags: developer, sdk, examples

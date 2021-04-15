@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadBulletGraph
-description: This article describes the inner structure and organization of the elements which build the RadBulletGraph control
+page_title: Structure - WinForms BulletGraph Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms BulletGraph control.
 slug: winforms/gauges/bulletgraph/structure
 tags: structure
 published: True

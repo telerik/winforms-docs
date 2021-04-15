@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadLinearGauge
-description: In this article we will describe the design time abilities of RadLinearGauge.
+page_title: Design Time - WinForms LinearGauge Control
+description: Geat familiar with the design time abilities of WinForms LinearGauge.
 slug: winforms/gauges/lineargauge/design-time
 tags: design,time
 published: True
@@ -14,6 +14,7 @@ previous_url: lineargauge-design-time
 When you drag a __RadLinearGauge__ from the Toolbox and drop it onto the form, the gauge gallery will offer you to pick up the desired type:
 
 >caption Figure 1: Gallery Types
+
 ![lineargauge-design-time 001](images/lineargauge-design-time001.png)
 
 # Smart Tag
@@ -21,6 +22,7 @@ When you drag a __RadLinearGauge__ from the Toolbox and drop it onto the form, t
 The smart tag allows you to change the control styles, save/load its layout and edit its items.
 
 >caption Figure 2: Smart Tag
+
 ![lineargauge-design-time 002](images/lineargauge-design-time002.png)
 
 * __Common Tasks__
@@ -52,6 +54,7 @@ The smart tag allows you to change the control styles, save/load its layout and 
 The __RadLinearGauge__ control supports precise design time selection of the gauge elements. This allows you to customize the selected element.
 
 >caption Figure 3: Elements Selection
+
 ![lineargauge-design-time 003](images/lineargauge-design-time003.png)
 
 # See Also

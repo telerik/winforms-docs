@@ -1,7 +1,7 @@
 ---
 title: Parameters
-page_title: Parameters | RadMessageBox
-description: RadMessageBox displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message, such as status or error information.
+page_title: Parameters - WinForms MessageBox
+description: Get familiar with the parameters for showing a WinForms MessageBox.
 slug: winforms/forms-and-dialogs/messagebox/parameters
 tags: parameters
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadMaskedEditBox
-description: RadMaskedEditBox uses the Telerik Presentation Framework which enables rich experiences like advanced styling.
+page_title: Structure - WinForms MaskedEditBox Control
+description: Get familiar with the internal elements structure of the WinForms MaskedEditBox.
 slug: winforms/editors/maskededitbox/structure
 tags: maskededitbox, structure
 published: True

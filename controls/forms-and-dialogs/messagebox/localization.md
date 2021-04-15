@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | RadMessageBox
-description: RadMessageBox displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message, such as status or error information.
+page_title: Localization - WinForms MessageBox
+description: WinForms MessageBox provides localization of its buttons text via RadMessageLocalizationProvider.
 slug: winforms/forms-and-dialogs/messagebox/localization
 tags: localization
 published: True

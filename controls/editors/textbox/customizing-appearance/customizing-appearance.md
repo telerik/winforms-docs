@@ -1,7 +1,7 @@
 ---
 title: Customizing Appearance
-page_title: Customizing Appearance | RadTextBox
-description: This article shows how you can change the styles of RadTextBox at design time.
+page_title: Customizing Appearance - WinForms TextBox Control
+description: Learn how to change the styles of WinForms RadTextBox at design time.
 slug: winforms/editors/textbox/customizing-appearance
 tags: textbox
 published: True

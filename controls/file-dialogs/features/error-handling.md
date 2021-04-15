@@ -1,7 +1,7 @@
 ---
 title: Error Handling
-page_title: Error Handling | File Dialogs
-description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
+page_title: Error Handling - WinForms FileDialogs
+description: The file dialogs come with their own error handling mechanism so that you can deal with most exceptional situations that may occur while navigating through the file system. 
 slug: winforms/file-dialogs/features/error-handling
 tags: filedialogs, features, error
 published: True

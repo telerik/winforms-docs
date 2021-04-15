@@ -1,7 +1,7 @@
 ---
 title: Date Formats
-page_title: Date Formats | RadDateTimePicker
-description: This article illustrates a table that displays a list of the standard format characters supported by RadDateTimePicker.
+page_title: Date Formats - WinForms DateTimePicker Control
+description: Get familiar with the standard format characters supported by RadDateTimePicker.
 slug: winforms/editors/datetimepicker/internationalization/date-formats
 tags: date,formats
 published: True

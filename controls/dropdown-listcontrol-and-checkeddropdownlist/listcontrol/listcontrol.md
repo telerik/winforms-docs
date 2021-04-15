@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadListControl
+page_title: Overview - WinForms ListControl Control
 description: RadListControl is the an alternative to the Microsoft ListBox control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol
 tags: listcontrol

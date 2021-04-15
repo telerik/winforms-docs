@@ -1,7 +1,7 @@
 ---
 title: Scrolling
-page_title: Scrolling | RadDropDownList
-description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
+page_title: Scrolling - WinForms DropDownList Control
+description: Get familiar with the different scrolling options supported by WinForms DropDownList.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/scrolling
 tags: scrolling
 published: True
