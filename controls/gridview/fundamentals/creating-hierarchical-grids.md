@@ -1,7 +1,7 @@
 ---
 title: Creating Hierarchical Grids
-page_title: Creating Hierarchical Grids | RadGridView
-description: RadGridView has the ability to represent hierarchical master-detail data. 
+page_title: Creating Hierarchical Grids - WinForms GridView Control
+description: WinForms GridView has the ability to represent hierarchical master-detail data. 
 slug: winforms/gridview/fundamentals/creating-hierarchical-grids
 tags: creating,hierarchical,grids
 published: True

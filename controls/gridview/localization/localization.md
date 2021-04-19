@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | RadGridView
-description: This article shows how you can localize all string used inside RadGridView.
+page_title: Localization - WinForms GridView Control
+description:Learn how you can localize all string used inside WinForms GridView.
 slug: winforms/gridview/localization/localization
 tags: localization
 published: True

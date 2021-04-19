@@ -1,7 +1,7 @@
 ---
 title: Row behaviors
-page_title: Row behaviors | RadGridView
-description: The RowBehavior allows you to override the actions of the mouse and keyboard performed on various row types.
+page_title: Row behaviors - WinForms GridView Control
+description: WinForms GridView offers RowBehavior which allows you to override the actions of the mouse and keyboard performed on various row types.
 slug: winforms/gridview/rows/row-behaviors
 tags: row,behaviors
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Themes
-page_title: Themes | RadGridView
-description: Shows how RadgridView looks with each theme. You can easily switch the themes at runtime as well.
+page_title: Themes - WinForms GridView Control
+description: Get Familiar with the WinForms GridView's looks with each theme. You can easily switch the themes at run time as well.
 slug: winforms/gridview/styling-and-appearance/themes
 tags: themes
 published: True

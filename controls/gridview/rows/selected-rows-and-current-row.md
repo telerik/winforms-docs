@@ -1,7 +1,7 @@
 ---
 title: Selected rows and Current row
-page_title: Selected rows and Current row | RadGridView
-description: This article shows the difference between the Selected and the Current rows.
+page_title: Selected rows and Current row - WinForms GridView Control
+description: Learn what is the difference between the Selected and the Current rows in WinForms GridView.
 slug: winforms/gridview/rows/selected-rows-and-current-row
 tags: selected,rows,and,current,row
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Save/Load layout buttons in the Property Grid
-page_title: Save/Load layout buttons in the Property Grid | RadGridView
-description: Use the Save/Load layout buttons in the Property Grid to save the layout which is build at design time. 
+page_title: Save/Load layout buttons in the Property Grid - WinForms GridView Control
+description: WinForms GridView offers Save/Load layout buttons in the Property Grid to save the layout which is build at design time. 
 slug: winforms/gridview/save-and-load-layout/load-layout-buttons-in-the-property-grid
 tags: save/load,layout,buttons,in,the,property,grid
 published: True

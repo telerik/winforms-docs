@@ -1,7 +1,7 @@
 ---
 title: Scrolling Programmatically
-page_title: Scrolling Programmatically | RadGridView
-description: This article shows how you can scroll to a particular row/column at run time.
+page_title: Scrolling Programmatically - WinForms GridView Control
+description: Learn how you can scroll to a particular row/column at run time in WinForms GridView.
 slug: winforms/gridview/scrolling/scrolling-programmatically
 tags: scrolling,programmatically
 published: True

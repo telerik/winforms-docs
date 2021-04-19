@@ -1,7 +1,7 @@
 ---
 title: Group Aggregates
-page_title: Group Aggregates | RadGridView
-description: Format the text in the group row using the default parameters.
+page_title: Group Aggregates - WinForms GridView Control
+description: Learn how to format the text in the group row in WinForms GridView.
 slug: winforms/gridview/grouping/group-aggregates
 tags: group,aggregates
 published: True

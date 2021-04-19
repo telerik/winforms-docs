@@ -1,7 +1,7 @@
 ---
 title: Adding and Inserting Rows
-page_title: Adding and Inserting Rows | RadGridView
-description: This article shows how you can add or insert rows in RadGridView at runtime. 
+page_title: Adding and Inserting Rows - WinForms GridView Control
+description: Learn how to add or insert rows in WinForms GridView at run time. 
 slug: winforms/gridview/rows/adding-and-inserting-rows
 tags: adding,and,inserting,rows
 published: True

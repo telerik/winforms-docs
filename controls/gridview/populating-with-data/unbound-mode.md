@@ -1,7 +1,7 @@
 ---
 title: Unbound Mode
-page_title: Unbound Mode | RadGridView
-description: This article shows you you can manually create a grid that is not bound to any data source.
+page_title: Unbound Mode - WinForms GridView Controls
+description: Learn how to manually create a WinForms GridView that is not bound to any data source.
 slug: winforms/gridview/populating-with-data/unbound-mode
 tags: unbound,mode
 published: True

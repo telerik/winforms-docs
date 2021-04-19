@@ -1,7 +1,7 @@
 ---
 title: Custom Sorting
-page_title: Custom Sorting | RadGridView
-description: This article describes how you can use the custom sorting to override the default sorting mechanism.
+page_title: Custom Sorting - WinForms GridView Control
+description: Learn how to use custom sorting to override the default sorting mechanism in WinForms GridView.
 slug: winforms/gridview/sorting/custom-sorting
 tags: custom,sorting
 published: True

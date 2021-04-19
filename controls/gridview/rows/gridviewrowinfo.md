@@ -1,7 +1,7 @@
 ---
 title: GridViewRowInfo
-page_title: GridViewRowInfo | RadGridView
-description: GridViewRowInfo class is the logical representation of a single row in RadGridView.
+page_title: GridViewRowInfo - WinForms GridView Control
+description: GridViewRowInfo class is the logical representation of a single row in WinForms GridView.
 slug: winforms/gridview/rows/gridviewrowinfo
 tags: gridviewrowinfo
 published: True

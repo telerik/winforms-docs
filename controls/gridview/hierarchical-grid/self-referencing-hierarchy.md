@@ -1,7 +1,7 @@
 ---
 title: Self-Referencing Hierarchy
-page_title: Self-Referencing Hierarchy | RadGridView
-description: This article shows how you can bind RadGridView to self-referencing hierarchy data.
+page_title: Self-Referencing Hierarchy - WinForms GridView Control
+description: Learn how you can bind WinForms GridView to self-referencing hierarchy data.
 slug: winforms/gridview/hierarchical-grid/self-referencing-hierarchy
 tags: self-referencing,hierarchy, treelist
 published: True

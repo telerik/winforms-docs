@@ -1,7 +1,7 @@
 ---
 title: HTML-like Text Formatting
-page_title: HTML-like Text Formatting | RadGridView
-description: You can use HTML-like text formatting to change the appearance of the cells text.
+page_title: HTML-like Text Formatting - WinForms GridView Control
+description: Learn how to use HTML-like text formatting to change the appearance of the cells text in WinForms GridView.
 slug: winforms/gridview/styling-and-appearance/html-like-text-formatting
 tags: html-like,text,formatting
 published: True

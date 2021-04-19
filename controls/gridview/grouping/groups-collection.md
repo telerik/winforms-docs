@@ -1,7 +1,7 @@
 ---
 title: Groups Collection
-page_title: Groups Collection | RadGridView
-description: Access all current groups using  
+page_title: Groups Collection - WinForms GridView Control
+description: Learn how to access all groups in WinForms GridView.   
 slug: winforms/gridview/grouping/groups-collection
 tags: groups,collection
 published: True

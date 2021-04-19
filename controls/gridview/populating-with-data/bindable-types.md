@@ -1,7 +1,7 @@
 ---
 title: Bindable Types
-page_title: Bindable Types | RadGridView
-description: This article shows which types can be used as data source for RadGridView.
+page_title: Bindable Types - WinForms GridView Control
+description: Learn which types can be used as data source for WinForms GridView.
 slug: winforms/gridview/populating-with-data/bindable-types
 tags: bindable,types
 published: True

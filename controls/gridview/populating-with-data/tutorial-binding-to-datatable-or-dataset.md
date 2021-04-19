@@ -1,7 +1,7 @@
 ---
 title: Tutorial Binding to DataTable or DataSet
-page_title: Tutorial Binding to DataTable or DataSet | RadGridView
-description: A step by step tutorial that shows how you can bind to DataTable or DataSet.
+page_title: Tutorial Binding to DataTable or DataSet - WinForms GridView Control
+description: Learn how you can bind WinForms GridView to a DataTable or a DataSet.
 slug: winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset
 tags: tutorial,binding,to,datatable,or,dataset
 published: True

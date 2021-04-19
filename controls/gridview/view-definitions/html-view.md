@@ -1,7 +1,7 @@
 ---
 title: HTML View
-page_title: HTML View | RadGridView
-description: Define the cells/rows layout configuration using similar to the HTML tables syntax.
+page_title: HTML View - WinForms GridView Control
+description: WinForms GridView allows you to define the cells/rows layout configuration using similar to the HTML tables syntax.
 slug: winforms/gridview/view-definitions/html-view
 tags: html,view
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Object Relational Hierarchy Mode
-page_title: Object Relational Hierarchy Mode | RadGridView
-description: The Object-Relational Hierarchy mode is used to show hierarchy based on a complex IList object that contains inner ILits properties.
+page_title: Object Relational Hierarchy Mode - WinForms GridView Control
+description: WinForms GridView offers Object-Relational Hierarchy mode used to show hierarchy based on a complex IList object that contains inner ILits properties.
 slug: winforms/gridview/hierarchical-grid/object-relational-hierarchy-mode
 tags: object,relational,hierarchy,mode
 published: True

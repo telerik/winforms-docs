@@ -1,7 +1,7 @@
 ---
 title: Alternating Row Color
-page_title: Alternating Row Color | RadGridView
-description: RadGridView supports alternating row color mode which allows you to easily distinguish one row from another.
+page_title: Alternating Row Color - WinForms GridView Control
+description: WinForms GridView supports alternating row color mode which allows you to easily distinguish one row from another.
 slug: winforms/gridview/styling-and-appearance/alternating-row-color
 tags: alternating,row,color
 published: True

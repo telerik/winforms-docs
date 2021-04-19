@@ -1,7 +1,7 @@
 ---
 title: Right-to-left support
-page_title: Right-to-left support | RadGridView
-description: Show the content of your grid instance in a right-to-left direction.
+page_title: Right-to-left support - WinForms GridView Control
+description: Learn how to show the content of your WinForms GridView instance in a right-to-left direction.
 slug: winforms/gridview/localization/right-to-left-support
 tags: right-to-left,support
 published: True

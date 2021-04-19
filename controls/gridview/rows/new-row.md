@@ -1,7 +1,7 @@
 ---
 title: New Row
-page_title: New Row | RadGridView
-description: This article shows how you can use the add rows to the grid by using the new row.
+page_title: New Row - WinForms GridView Control
+description: Learn how to add rows to the WinForms GridView by using the new row.
 slug: winforms/gridview/rows/new-row
 tags: new,row
 published: True
