@@ -1,7 +1,7 @@
 ---
 title: Live Tile Editor
-page_title: Live Tile Editor | RadPanorama
-description: Live Tile Editor
+page_title: Live Tile Editor - WinForms Panorama Control
+description: WinForms Panorama's Live Tile Editor allows you to easily create, edit and preview the contents of RadLiveTileElement.
 slug: winforms/panorama/live-tile-editor
 tags: live,tile,editor
 published: True

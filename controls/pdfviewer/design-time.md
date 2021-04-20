@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadPdfViewer
-description: At design time you can use the RadPdfViewer's Smart Tag to change the applied theme or navigate to the online documentation.
+page_title: Design Time - WinForms PdfViewer Control
+description: WinForms PdfViewer's Smart Tag allows you to change the applied theme or navigate to the online documentation.
 slug: winforms/pdfviewer/design-time
 tags: pdfviewer, design-time
 published: True

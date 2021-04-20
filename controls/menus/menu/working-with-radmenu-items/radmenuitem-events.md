@@ -1,7 +1,7 @@
 ---
 title: RadMenuItem Events
-page_title: RadMenuItem Events | RadMenu
-description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+page_title: RadMenuItem Events - WinForms Menu Control
+description: Get familiar with the events that RadMenuItem offers.
 slug: winforms/menus/menu/working-with-radmenu-items/radmenuitem-events
 tags: radmenuitem,events
 published: True

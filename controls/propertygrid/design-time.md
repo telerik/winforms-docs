@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadPropertyGrid
-description: This article describes the design time capabilities of the RadPropertyGrid control.
+page_title: Design Time - WinForms PropertyGrid Control
+description: Get familiar with the design time capabilities of the WinForms PropertyGrid control.
 slug: winforms/propertygrid/design-time
 tags: design time, smart tag
 published: True
@@ -17,7 +17,7 @@ To start using **RadPropertyGrid** just drag it from the toolbox and drop it at 
 Select **RadPropertyGrid** and click the small arrow on the top right position in order to open the Smart Tag.
 
 >caption Figure 1: Smart Tag
->
+
 ![propertygrid-design-time 001](images/propertygrid-design-time001.png)
 
 * **Common Tasks**

@@ -1,7 +1,7 @@
 ---
 title: Text Position
-page_title: Text Position | RadPdfViewer
-description: Text Position
+page_title: Text Position - WinForms PdfViewer Control
+description: TextPosition is a position in the text of a RadFixedDocument. They enable keeping track of a "current" position in the document (i.e. a caret) and lay the foundations of document selection.
 slug: winforms/pdfviewer/text/text-position
 tags: text,position
 published: True

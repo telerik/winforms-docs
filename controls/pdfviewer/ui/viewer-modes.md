@@ -1,7 +1,7 @@
 ---
 title: Viewer Modes
-page_title: Viewer Modes | RadPdfViewer
-description: There are three FixedDocumentViewerModes which specify the behavior of RadPdfViewer.
+page_title: Viewer Modes - WinForms PdfViewer Control
+description: There are three FixedDocumentViewerModes which specify the behavior of WinForms PdfViewer.
 slug: winforms/pdfviewer/ui/viewer-modes
 tags: viewer modes
 published: True
@@ -17,17 +17,20 @@ There are three __FixedDocumentViewerModes__ which specify the behavior of __Rad
 * *Pan*: The document is scrolled in the respective direction;
 
 >caption Figure 1: Pan
+
 ![pdfviewer-overview 001](images/pdfviewer-ui-viewer-modes001.gif)
 
 * *TextSelection* – selection is initiated, which stops when you release the button of the mouse;
 
 >caption Figure 2: TextSelection
+
 ![pdfviewer-overview 001](images/pdfviewer-ui-viewer-modes002.gif)
 
 ## Specify the Viewer Mode Using UI
 
 The viewer mode can be changed using the __RadPdfViewerNavigator__ (as shown in the picture).
 >caption Figure 3: Using the UI
+
 ![pdfviewer-overview 001](images/pdfviewer-ui-viewer-modes003.png)
 
 ## Specify the  Viewer Mode in Code

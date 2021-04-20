@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadRangeSelector
-description: At design time you can use the RadRangeSelector's Smart Tag to set the associated chart, change the applied theme or navigate to the online documentation.
+page_title: Design Time - WinForms RangeSelector Control
+description: WinForms RangeSelector's Smart Tag allows you to set the associated chart, change the applied theme or navigate to the online documentation.
 slug: winforms/rangeselector/design-time
 tags: pdfviewer, design-time
 published: True

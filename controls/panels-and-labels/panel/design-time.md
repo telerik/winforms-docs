@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadPanel
-description: This article describes the design time capabilities of the RadPanel control.
+page_title: Design Time - WinForms Panel Control
+description: Get familiar with the design time capabilities of the WinForms Panel control.
 slug: winforms/panels-and-labels/panel/design-time
 tags: design time, smart tag
 published: True

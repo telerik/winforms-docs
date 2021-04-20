@@ -1,7 +1,7 @@
 ---
 title: Data Binding
-page_title: Data Binding | RadMultiColumnComboBox
-description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
+page_title: Data Binding - WinForms MultiColumnComboBox Control
+description: Learn how to bind WinForms MultiColumnComboBox.
 slug: winforms/multicolumncombobox/databinding
 tags: databinding
 published: True

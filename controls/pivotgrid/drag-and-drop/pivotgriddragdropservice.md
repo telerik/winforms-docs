@@ -1,7 +1,7 @@
 ---
 title: PivotGridDragDropService
-page_title: PivotGridDragDropService | UI for WinForms Documentation
-description: RadPivotGrid for WinForms is a control which provides functionality similar to the functionality of PivotTables in MS Excel.  
+page_title: PivotGridDragDropService - WinForms PivotGrid Control
+description: WinForms PivotGrid supports PivotGridDragDropService by which the end-user can easily change the way data is aggregated.  
 slug: winforms/pivotgrid/pivotgriddragdropservice
 tags: pivotgrid
 published: True 

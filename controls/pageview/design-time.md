@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadPageView
-description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+page_title: Design Time - WinForms PageView Control
+description: WinForms PageView's Smart tag lets you quickly access common tasks involved with building RadPageView elements and customizing its elements.
 slug: winforms/pageview/design-time
 tags: design-time
 published: True

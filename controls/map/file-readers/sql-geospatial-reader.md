@@ -1,7 +1,7 @@
 ---
 title: SQL Geospatial Reader
-page_title: SQL Geospatial Reader | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: SQL Geospatial Reader - WinForms Map Control
+description: WinForms Map supports SqlGeospatialDataReader which allows generating map shapes from any IEnumerable instance that contains a property with geospatial data in *Wkt* (Well known text) or *Wkb* (Well known binary) format.
 slug: winforms/map/file-readers/sql-geospatial-reader
 tags: map, providers
 published: True

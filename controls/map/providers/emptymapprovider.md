@@ -1,7 +1,7 @@
 ---
 title: EmptyMapProvider
-page_title: EmptyMapProvider | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: EmptyMapProvider - WinForms Map Control
+description: WinForms Map's EmptyMapProvider is a provider which doesn't connect to any real imagery services.
 slug: winforms/map/providers/emptymapprovider
 tags: map, providers
 published: True

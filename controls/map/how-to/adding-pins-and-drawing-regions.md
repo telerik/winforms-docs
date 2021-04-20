@@ -1,7 +1,7 @@
 ---
 title: Adding Pins and Drawing Regions
-page_title: Drawing Markers and Regions | RadMap
-description: This article will demonstrate how you can draw pins and regions on the map.
+page_title: Drawing Markers and Regions - WinForms Map Control
+description: Learn how you can draw pins and regions on the WinForms Map.
 slug: winforms/radmap/how-to/drawing-polugons
 tags: drag and drop,another control
 published: True

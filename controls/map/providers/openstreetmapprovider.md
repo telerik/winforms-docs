@@ -1,7 +1,7 @@
 ---
 title: OpenStreetMapProvider
-page_title: OpenStreetMapProvider | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST service as well as from the local file system.
+page_title: OpenStreetMapProvider - WinForms Map Control
+description: WinForms Map can visualize data from the OpenStreetMaps.
 slug: winforms/map/providers/openstreetmapprovider
 tags: map, providers
 published: True

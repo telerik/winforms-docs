@@ -1,7 +1,7 @@
 ---
 title: Drag and Drop in bound mode
-page_title: Drag and Drop in bound mode | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Drag and Drop in bound mode - WinForms ListView Control
+description: WinForms ListView allows achieving items drag and drop functionality in bound mode. Learn how to use the default service.
 slug: winforms/listview/drag-and-drop/drag-and-drop-in-bound-mode
 tags: drag,and,drop,in,bound,mode
 published: True

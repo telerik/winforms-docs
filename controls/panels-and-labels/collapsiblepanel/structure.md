@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadCollapsiblePanel
-description: This article describes the inner structure and organization of the elements which build the RadCollapsiblePanel control.
+page_title: Structure - WinForms CollapsiblePanel Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms CollapsiblePanel control.
 slug: winforms/panels-and-labels/collapsiblepanel/structure
 tags: structure
 published: True

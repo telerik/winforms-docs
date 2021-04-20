@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Features | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Features - WinForms ListView Control
+description: WinForms ListView supports filtering, sorting, grouping functionality.
 slug: winforms/listview/features
 tags: features
 published: True

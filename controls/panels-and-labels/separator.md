@@ -1,7 +1,7 @@
 ---
-title: Separator
-page_title: Separator Overview | RadSeparator
-description: RadSeparator is a control that gives you the ability to divide your forms into logical parts. 
+title: Overview
+page_title: Overview - WinForms Separator Control
+description: WinForms Separator is a control that gives you the ability to divide your forms into logical parts. 
 slug: winforms/panels-and-labels/separator
 tags: separator
 published: True
@@ -19,12 +19,13 @@ previous_url: panels-and-labels-separator
 {% endif %}
 
 >caption Figure 1: RadSeparator
->
+
 ![panels-and-labels-separator 001](images/panels-and-labels-separator001.png)
 
 The control have several properties that you might find interesting:
 
 * __Orientation__ - gets or sets the control orientation to Vertical or Horizontal
+
     ![panels-and-labels-separator 002](images/panels-and-labels-separator002.png)
 
 * __ShadowOffset__ - gets or sets the offset of the both lines, both horizontal and vertical
@@ -86,7 +87,7 @@ RadSeparator1.SeparatorElement.Line2.GradientAngle = 0
 Here is the result of the following code:
 
 >caption Figure 2: RadSeparator Customization
->
+
 ![panels-and-labels-separator 003](images/panels-and-labels-separator003.png)
 
 # See Also

@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadMultiColumnComboBox
-description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
+page_title: Design Time - WinForms MultiColumnComboBox Control
+description: Learn what are the design time options that WinForms MultiColumnComboBox offers.
 slug: winforms/multicolumncombobox/design-time
 tags: multicolumncombobox, design time
 published: True

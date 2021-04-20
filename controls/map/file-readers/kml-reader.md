@@ -1,7 +1,7 @@
 ---
 title: KML Reader
-page_title: KML Reader | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: KML Reader - WinForms Map Control
+description: WinForms Map provides support for stunning map overlays through its KML-import feature.
 slug: winforms/map/file-readers/kml-reader
 tags: map, providers
 published: True

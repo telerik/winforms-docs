@@ -1,7 +1,7 @@
 ---
 title: Resize
-page_title: Resize
-description: Resize
+page_title: Resize - WinForms ImageEditor Control
+description: WinForms ImageEditor allows image resizing via the Resize dialog or programmatically. 
 slug: radimageeditor-resize
 tags: image, editor, resize 
 published: True

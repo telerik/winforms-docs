@@ -1,7 +1,7 @@
 ---
 title: LayoutControlDragDropService
-page_title: LayoutControlDragDropService | RadLayoutControl
-description: RadLayoutControl allows you to add and arrange other controls in complex layouts.
+page_title: LayoutControlDragDropService - WinForms LayoutControl
+description: WinForms LayoutControl allows you to add and arrange other controls in complex layouts by using LayoutControlDragDropService.
 slug: winforms/layoutcontrol/layoutcontroldragdropservice
 tags: layoutcontrol
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Tiles Drag and Drop
-page_title: Tiles Drag and Drop | RadPanorama
-description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
+page_title: Tiles Drag and Drop - WinForms Panorama Control
+description: WinForms Panorama handles the whole drag and drop operation by its TileDragDropService.
 slug: winforms/panorama/drag-and-drop
 tags: panorama
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Customize PDF Rendering
-page_title: Customize PDF Rendering | RadPdfViewer
-description: RadPdfViewer provides some customization options for the way PDF documents are rendered.
+page_title: Customize PDF Rendering - WinForms PdfViewer Control
+description: WinForms PdfViewer provides some customization options for the way PDF documents are rendered.
 slug: winforms/pdfviewer/customize-and-extensibility/customize-pdf-rendering
 tags: pdf decode
 published: True

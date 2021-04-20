@@ -1,7 +1,7 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | RadMenu
-description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+page_title: Smart Tag - WinForms Menu Control
+description: WinForms Menu's Smart tag lets you quickly access common tasks involved with building menus and customizing appearance through themes.
 slug: winforms/menus/menu/design-time/smart-tag
 tags: smart,tag
 published: True

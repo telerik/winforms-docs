@@ -1,7 +1,7 @@
 ---
 title: Search
-page_title: Search | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: Search - WinForms Map Control
+description: WinForms Map allows you to implement search functionality, that will let the user search for a specific location on the map.
 slug: winforms/map/providers/search
 tags: map, providers, search
 published: True

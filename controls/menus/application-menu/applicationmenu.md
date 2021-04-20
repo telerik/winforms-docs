@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview | RadApplicationMenu
-description: RadApplicationMenu is the Telerik counterpart of the application menu that displays controls used to perform actions on entire documents and forms, such as Save and Print. 
+page_title: Overview - WinForms ApplicationMenu
+description: WinForms ApplicationMenu is the Telerik counterpart of the application menu that displays controls used to perform actions on entire documents and forms, such as Save and Print. 
 slug: winforms/menus/applicationmenu
 tags: applicationmenu
 published: True

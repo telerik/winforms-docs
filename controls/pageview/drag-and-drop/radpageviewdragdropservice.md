@@ -1,7 +1,7 @@
 ---
 title: RadPageViewDragDropService
-page_title: RadPageViewDragDropService | RadPageView
-description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+page_title: RadPageViewDragDropService - WinForms PageView Control
+description: WinForms PageView supports RadPageViewDragDropService which allows you to reorder the page items/tabs.
 slug: winforms/pageview/radpageviewdragdropservice
 tags: pageview
 published: True

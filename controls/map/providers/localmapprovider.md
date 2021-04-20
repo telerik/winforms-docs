@@ -1,7 +1,7 @@
 ---
 title: LocalMapProvider
-page_title: LocalMapProvider | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: LocalMapProvider - WinForms Map Control
+description: WinForms Map can visualize data from local image files by using a LocalMapProvider.
 slug: winforms/map/providers/localmapprovider
 tags: map, providers
 published: True

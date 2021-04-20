@@ -1,7 +1,7 @@
 ---
 title: HTML-like Text Formatting
-page_title: HTML-like Text Formatting | RadLabel
-description: HTML-like Text Formatting is applied on the text primitive allowing the text to be styled with standard HTML tags.
+page_title: HTML-like Text Formatting - WinForms GroupBox Control
+description: WinForms Label supports HTML-like Text Formatting which is applied on the text primitive allowing the text to be styled with standard HTML tags.
 slug: winforms/panels-and-labels/label/html-like-text-formatting
 tags: html-like,text,formatting
 published: True

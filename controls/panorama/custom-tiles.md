@@ -1,7 +1,7 @@
 ---
 title: Custom Tiles
-page_title: Custom Tiles | RadPanorama
-description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
+page_title: Custom Tiles - WinForms Panorama Control
+description: WinForms Panorama supports creating custom tiles.
 slug: winforms/panorama/custom-tiles
 tags: custom,tiles
 published: True

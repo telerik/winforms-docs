@@ -1,7 +1,7 @@
 ---
 title: Polyline
-page_title: Polyline | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: Polyline - WinForms Map Control
+description: Get familiar with the ElevationType.Polyline and performing ElevationRequests in WinForms Map.
 slug: winforms/map/providers/elevation/polyline
 tags: map, providers, elevation
 published: True

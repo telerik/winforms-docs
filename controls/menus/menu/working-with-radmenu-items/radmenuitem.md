@@ -1,7 +1,7 @@
 ---
 title: RadMenuItem
-page_title: RadMenuItem | RadMenu
-description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+page_title: RadMenuItem - WinForms Menu Control
+description: Learn what menu items are supported in the WinForms Menu.
 slug: winforms/menus/menu/working-with-radmenu-items/radmenuitem
 tags: radmenuitem
 published: True

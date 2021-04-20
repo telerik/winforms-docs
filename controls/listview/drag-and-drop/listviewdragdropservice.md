@@ -1,7 +1,7 @@
 ---
 title: ListViewDragDropService
-page_title: ListViewDragDropService | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: ListViewDragDropService - WinForms ListView Control
+description: WinForms ListView handles the whole drag and drop operation by its ListViewDragDropService. Learn how to use it.
 slug: winforms/listview/drag-and-drop/listviewdragdropservice
 tags: drag,and,drop,in,bound,mode
 published: True

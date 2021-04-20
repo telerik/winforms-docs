@@ -1,7 +1,7 @@
 ---
 title: Round Corners
-page_title: Round Corners
-description: Round Corners
+page_title: Round Corners - WinForms ImageEditor Control
+description: WinForms ImageEditor supports rounding the corners by showing the round corners dialog.
 slug: radimageeditor-round-corners
 tags: image, editor, round, corners 
 published: True

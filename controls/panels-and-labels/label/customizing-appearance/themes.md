@@ -1,7 +1,7 @@
 ---
 title: Themes
-page_title: Themes | RadLabel
-description: All RadLabel elements can be styled in Visual Style Builder. This article shows how you can change the header and footer back colors.
+page_title: Themes - WinForms Label Control
+description: WinForms Label's elements can be styled in Visual Style Builder. This article shows how you can change the header and footer back colors.
 slug: winforms/panels-and-labels/label/customizing-appearance/themes
 tags: label, appearance
 published: True

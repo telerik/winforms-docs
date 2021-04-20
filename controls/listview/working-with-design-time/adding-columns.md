@@ -1,7 +1,7 @@
 ---
 title: Adding columns
-page_title: Adding columns | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Adding columns - WinForms ListView Control
+description: When the RadListView.ViewType property is set to DetailsView, the data can be displayed in columns view.
 slug: winforms/listview/working-with-design-time/adding-columns
 tags: adding,columns
 published: True

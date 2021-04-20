@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadMultiColumnComboBox
-description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
+page_title: Structure - WinForms MultiColumnComboBox Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms MultiColumnComboBox.
 slug: winforms/multicolumncombobox/structure
 tags: multicolumncombobox, structure
 published: True

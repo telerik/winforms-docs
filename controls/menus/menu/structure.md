@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadMenu
-description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+page_title: Structure - WinForms Menu Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms Menu.
 slug: winforms/menus/menu/structure
 tags: menu
 published: True

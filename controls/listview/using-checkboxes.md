@@ -1,7 +1,7 @@
 ---
 title: Using Checkboxes
-page_title: Using Checkboxes | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Using Checkboxes - WinForms ListView Control
+description: WinForms ListView items have built-in checkboxes which can be shown by setting the ShowCheckBoxes property to true.
 slug: winforms/listview/using-checkboxes
 tags: listview
 published: True

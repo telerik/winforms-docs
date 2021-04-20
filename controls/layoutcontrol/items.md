@@ -1,7 +1,7 @@
 ---
 title: Items
-page_title: Items | RadLayoutControl
-description: This article explains how the different types of items supported in __RadLayoutControl__ can be used.
+page_title: Items - WinForms LayoutControl
+description: Get familiar with the different types of items supported in WinForms LayoutControl.
 slug: winforms/layoutcontrol/items
 tags: items
 published: True
@@ -14,6 +14,7 @@ previous_url: layoutcontrol-items
 This article explains how the different types of items supported in __RadLayoutControl__ can be used. The items types are shown in Figure1.
         
 >caption Figure 1: Item Types
+
 ![layoutcontrol-items 001](images/layoutcontrol-items001.png)
 
 1. __LayoutControlItem:__ This item holds the controls added to a __RadLayoutControl__. Each control is added to an item and then the item is added to the layout control. This grants you control over the control sizing and position. The most important properties are:

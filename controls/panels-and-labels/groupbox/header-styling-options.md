@@ -1,7 +1,7 @@
 ---
 title: Header Styling Options
-page_title: Header Styling Options | RadGroupBox
-description: This article describes the header styling options supported by RadGroupBox.
+page_title: Header Styling Options - WinForms GroupBox Control
+description: Learn what are the header styling options supported by WinForms GroupBox.
 slug: winforms/panels-and-labels/groupbox/styling-options
 tags: header,styling,options
 published: True

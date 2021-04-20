@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview | RadMultiColumnComboBox
-description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
+page_title: Overview - WinForms MultiColumnComboBox Control
+description: WinForms MultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
 slug: winforms/multicolumncombobox
 tags: multicolumncombobox
 published: True

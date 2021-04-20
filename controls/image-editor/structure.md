@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure
-description: Structure
+page_title: Structure - WinForms ImageEditor Control
+description: Get familiar with the internal elements structure of WinForms ImageEditor.
 slug: radimageeditor-structure
 tags: structure
 published: True

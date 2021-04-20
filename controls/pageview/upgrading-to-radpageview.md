@@ -1,7 +1,7 @@
 ---
 title: Upgrading to RadPageView
-page_title: Upgrading to RadPageView | RadPageView
-description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+page_title: Upgrading to RadPageView - WinForms PageView Control
+description: Learn how to upgrade to the WinForms RadPageView control.
 slug: winforms/pageview/upgrading-to-radpageview
 tags: upgrading,to,radpageview
 published: True

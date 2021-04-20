@@ -1,7 +1,7 @@
 ---
 title: Annotations
-page_title: Annotations | RadPdfViewer
-description: RadPdfViewer supports Link annotations, which means that if you open a PDF file that includes hyperlinks to absolute URIs, you can click them and have a window open, navigated to the respective address.
+page_title: Annotations - WinForms PdfViewer Control
+description: WinForms PdfViewer supports Link annotations, which means that if you open a PDF file that includes hyperlinks to absolute URIs, you can click them and have a window open, navigated to the respective address.
 slug: winforms/pdfviewer/annotations
 tags: annotations
 published: True

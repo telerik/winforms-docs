@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure| RadRibbonBar
-description: This article describes the inner structure and organization of the elements which build the RadRibbonBar control.
+page_title: Structure - WinForms RibbonBar Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms RibbonBar control.
 slug: winforms/ribbonbar/structure
 tags: structure,of,radribbonbar
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Properties and Methods 
-page_title: Properties and Methods | RadPanorama
-description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
+page_title: Properties and Methods - WinForms Panorama Control
+description: Learn what are the public properties and methods that WinForms Panorama offers.
 slug: winforms/panorama/settings
 tags: settings
 published: True

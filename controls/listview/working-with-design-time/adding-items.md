@@ -1,7 +1,7 @@
 ---
 title: Adding items
-page_title: Adding items | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Adding items - WinForms ListView Control
+description: Adding items to WinForms ListView at design time is possible through the Items collection of the control.
 slug: winforms/listview/working-with-design-time/adding-items
 tags: adding,items
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Adding groups
-page_title: Adding groups | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Adding groups - WinForms ListView Control
+description: Items in WinForms ListView can be grouped conveniently into different groups.
 slug: winforms/listview/working-with-design-time/adding-groups
 tags: adding,groups
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Route
-page_title: Route | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: Route - WinForms Map Control
+description: WinForms Map provides a unified route search architecture which uses functionality of the different routing services.
 slug: winforms/map/providers/route
 tags: map, providers
 published: True

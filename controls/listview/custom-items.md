@@ -1,7 +1,7 @@
 ---
 title: Custom items
-page_title: Custom items | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Custom items - WinForms ListView Control
+description: WinForms ListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/custom-items
 tags: custom,items
 published: True

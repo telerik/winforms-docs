@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadLayoutControl
-description: Design Time
+page_title: Design Time - WinForms LayoutControl
+description: Get familiar with the design time options that WinForms LayoutControl offers.
 slug: winforms/layoutcontrol/design-time
 tags: design,time
 published: True

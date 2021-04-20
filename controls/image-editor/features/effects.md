@@ -1,7 +1,7 @@
 ---
 title: Effects
-page_title: Effects
-description: Effects
+page_title: Effects - WinForms ImageEditor Control
+description: WinForms ImageEditor supports sharpen and blur effects over the image.
 slug: radimageeditor-features-effects
 tags: sharpen, blur
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Rotation
-page_title: Rotation | RadPdfViewer
-description: RadPdfViewer provides functionality for rotating the pages of the loaded document.
+page_title: Rotation - WinForms PdfViewer Control
+description: WinForms PdfViewer provides functionality for rotating the pages of the loaded document.
 slug: winforms/pdfviewer/ui/rotation
 tags: rotation
 published: True

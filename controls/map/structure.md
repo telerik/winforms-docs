@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: Structure - WinForms Map Control
+description: Get familiar with the internal elements structure of WinForms Map.
 slug: winforms/map/structure
 tags: map, structure
 published: True

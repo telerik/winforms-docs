@@ -1,7 +1,7 @@
 ---
 title: Document Modes
-page_title: Document Modes | RadPdfViewer
-description: The document modes are controlled by a document presenter responsible for displaying the pages of the document.
+page_title: Document Modes - WinForms PdfViewer Control
+description: WinForms PdfViewer's document modes are controlled by a document presenter responsible for displaying the pages of the document.
 slug: winforms/pdfviewer/ui/document-modes
 tags: document presenters
 published: True
@@ -17,6 +17,7 @@ The document presenter is responsible for displaying the pages of the document, 
 This document presenter displays the pages in a vertical order and is used by default by __RadPdfViewer__. There is a fixed margin between the pages, and each page is centered horizontally inside the __RadPdfViewer__.  
 
 >caption Figure 1: Pages Mode
+
 ![pdfviewer-overview 001](images/pdfviewer-ui-documents-presenter001.gif)
 
 ## Single Page Mode (Fit Full Page)
@@ -40,6 +41,7 @@ Me.RadPdfViewer1.FitFullPage = True
 {{endregion}}
 
 >caption Figure 2: Fit Full Width
+
 ![pdfviewer-overview 001](images/pdfviewer-ui-documents-presenter002.gif)
 
 ## Fit Full Width
@@ -61,6 +63,7 @@ Me.RadPdfViewer1.FitToWidth = True
 {{endregion}}
 
 >caption Figure 3: Fit To Width
+
 ![pdfviewer-overview 001](images/pdfviewer-ui-documents-presenter003.gif)
 
 

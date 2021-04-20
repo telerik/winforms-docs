@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Structure - WinForms ListView Control
+description: Get familiar with the internal elements structure of WinForms ListView.
 slug: winforms/listview/structure
 tags: listview
 published: True

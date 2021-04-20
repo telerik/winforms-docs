@@ -1,7 +1,7 @@
 ---
 title: Tiles
-page_title: Tiles | RadPanorama
-description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
+page_title: Tiles - WinForms Panorama Control
+description: WinForms Panorama uses RadTileElements which represent a simple tile which can contain text and image and acts like a simple button.
 slug: winforms/panorama/tiles
 tags: tiles
 published: True

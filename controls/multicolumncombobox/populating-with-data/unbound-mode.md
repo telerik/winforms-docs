@@ -1,7 +1,7 @@
 ---
 title: Unbound Mode
-page_title: Unbound Mode | RadMultiColumnComboBox
-description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
+page_title: Unbound Mode - WinForms MultiColumnComboBox Control
+description: WinForms MultiColumnComboBox supports unbound mode allowing to add columns and rows programmatically.
 slug: winforms/multicolumncombobox/unbound-mode
 tags: databinding
 published: True

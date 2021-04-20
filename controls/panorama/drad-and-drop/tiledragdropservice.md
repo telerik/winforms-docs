@@ -1,7 +1,7 @@
 ---
 title: TileDragDropService
-page_title: TileDragDropService | RadPanorama
-description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
+page_title: TileDragDropService - WinForms Panorama Control
+description: Get familiar with the TileDragDropService supported by WinForms Panorama.
 slug: winforms/panorama/tiledragdropservice
 tags: panorama
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadCollapsiblePanel
-description: This article describes the desing-time capabilities of the RadCollapsiblePanel control.
+page_title: Design Time - WinForms CollapsiblePanel Control
+description: Get familiar with the desing-time capabilities of the WinForms CollapsiblePanel control.
 slug: winforms/panels-and-labels/collapsiblepanel/design-time
 tags: design,time
 published: True
@@ -18,7 +18,7 @@ To start using **RadCollapsiblePanel** just drag it from the toolbox and drop it
 Select **RadCollapsiblePanel** and click the small arrow on the top right position in order to open the Smart Tag.
 
 >caption Figure 1: Smart Tag
->
+
 ![panels-and-labels-collapsiblepanel-design-time 001](images/panels-and-labels-collapsiblepanel-design-time001.png)
 
 * **Common Tasks**

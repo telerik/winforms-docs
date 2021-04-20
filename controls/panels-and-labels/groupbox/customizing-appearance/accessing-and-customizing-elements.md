@@ -1,7 +1,7 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | RadGroupBox
-description: Accessing and customizing RadGroupBox elements can be performed either at design time, or at run time.
+page_title: Accessing and Customizing Elements - WinForms GroupBox Control
+description: Accessing and customizing WinForms GroupBox elements can be performed either at design time, or at run time.
 slug: winforms/panels-and-labels/groupbox/customizing-appearance/accessing-and-customizing-elements 
 tags: radgroupbox, appearance
 published: True

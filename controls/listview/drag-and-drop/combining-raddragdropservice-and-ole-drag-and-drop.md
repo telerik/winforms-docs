@@ -1,7 +1,7 @@
 ---
 title: Combining RadDragDropService and OLE drag-and-drop
-page_title: Combining RadDragDropService and OLE drag-and-drop | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Combining RadDragDropService and OLE drag-and-drop - WinForms ListView Control
+description: WinForms ListView control supports RadDragDropService and can be combined with the OLE drag and drop functionality.
 slug: winforms/listview/drag-and-drop/combining-raddragdropservice-and-ole-drag-and-drop
 tags: combining,raddragdropservice,and,ole,drag-and-drop
 published: True

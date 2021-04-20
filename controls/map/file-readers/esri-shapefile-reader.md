@@ -1,7 +1,7 @@
 ---
 title: ESRI Shapefile Reader
-page_title: ESRI Shapefile Reader | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: ESRI Shapefile Reader - WinForms Map Control
+description: WinForms Map reads ESRI Shapefiles or simply shape files which are popular format for storing geographical data.
 slug: winforms/map/file-readers/esri-shapefile-reader
 tags: map, providers
 published: True

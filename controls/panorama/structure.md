@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadPanorama
-description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
+page_title: Structure - WinForms Panorama Control
+description: Get familiar with the internal elements structure of WinForms Panorama.
 slug: winforms/panorama/structure
 tags: panorama
 published: True

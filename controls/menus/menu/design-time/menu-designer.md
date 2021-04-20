@@ -1,7 +1,7 @@
 ---
 title: Menu Designer
-page_title: Menu Designer | RadMenu
-description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+page_title: Menu Designer - Winforms Menu
+description: Get familiar with the design time options that the WinForms Menu offers.
 slug: winforms/menus/menu/design-time/menu-designer
 tags: menu,designer
 published: True

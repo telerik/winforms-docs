@@ -1,7 +1,7 @@
 ---
 title: Elevation
-page_title: Elevation | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: Elevation - WinForms Map Control
+description: WinForms Map's Bing Elevation service will enable you to query for elevation information for a set of points, polyline or a region on the Earth described by latitude and longitude pairs.
 slug: winforms/map/providers/elevation
 tags: map, providers, elevation
 published: True

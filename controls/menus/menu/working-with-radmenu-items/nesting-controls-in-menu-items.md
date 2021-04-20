@@ -1,7 +1,7 @@
 ---
 title: Custom Menu Items
-page_title: Custom Menu Items | RadMenu
-description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+page_title: Custom Menu Items - WinForms Menu Control
+description: Learn how to use the WinForms RadMenuContentItem which is a container menu item that allows you to build up custom menu items from other elements.
 slug: winforms/menus/menu/working-with-radmenu-items/nesting-controls-in-menu-items
 tags: nesting,controls,in,menu,items
 published: True

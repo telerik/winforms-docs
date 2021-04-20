@@ -1,7 +1,7 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | RadPivotGrid
-description: This article describes the design time capabilities of the RadPivotGrid control.
+page_title: Smart Tag - WinForms PivotGrid Control
+description: Get familiar with the design time capabilities of the WinForms PivotGrid control.
 slug: winforms/pivotgrid/design-time/smart-tag
 tags: design time, smart tag
 published: True

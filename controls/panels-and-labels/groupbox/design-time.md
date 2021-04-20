@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadGroupBox
-description: This article describes the desing time capabilities of the RadGroupBox control.
+page_title: Design Time - WinForms GroupBox Control
+description: Get familiar with the design time capabilities of the WinForms GroupBox control.
 slug: winforms/panels-and-labels/groupbox/design-time
 tags: smart,tag
 published: True

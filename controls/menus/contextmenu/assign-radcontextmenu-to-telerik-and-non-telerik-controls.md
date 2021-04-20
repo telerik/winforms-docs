@@ -1,7 +1,7 @@
 ---
 title: Assign RadContextMenu to Telerik and non-Telerik controls
-page_title: Assign RadContextMenu to Telerik and non-Telerik controls | RadContextMenu
-description: RadContextMenu is a non-visual component that sits in the component tray located below the form design surface.
+page_title: Assign RadContextMenu to Telerik and non-Telerik controls - WinForms ContextMenu
+description: WinForms ContextMenu is a non-visual component that sits in the component tray located below the form design surface.
 slug: winforms/menus/contextmenu/assign-radcontextmenu-to-telerik-and-non-telerik-controls
 tags: assign,radcontextmenu,to,telerik,and,non-telerik,controls
 published: True

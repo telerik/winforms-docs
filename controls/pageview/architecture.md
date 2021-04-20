@@ -1,7 +1,7 @@
 ---
 title: Architecture
-page_title: Architecture | RadPageView
-description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+page_title: Architecture - WinForms PageView Control
+description: Get familiar of the internal elements structure of WinForms PageView.
 slug: winforms/pageview/architecture
 tags: architecture
 published: True

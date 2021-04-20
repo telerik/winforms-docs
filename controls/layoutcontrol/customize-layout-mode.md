@@ -1,7 +1,7 @@
 ---
 title: Customize Layout Mode
-page_title: Customize Layout Mode | RadLayoutControl
-description: This article describes how the arranged in the control layout can be changed at run-time.
+page_title: Customize Layout Mode - WinForms LayoutControl
+description: Learn how to arrange the control layout at run-time in WinForms LayoutControl.
 slug: winforms/layoutcontrol/customize-layout-mode
 tags: customize,layout,mode
 published: True

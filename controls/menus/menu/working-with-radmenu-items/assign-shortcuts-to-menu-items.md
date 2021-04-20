@@ -1,7 +1,7 @@
 ---
 title: Assign Shortcuts to Menu Items
-page_title: Assign Shortcuts to Menu Items | RadMenu
-description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+page_title: Assign Shortcuts to Menu Items - WinForms Menu Control
+description: Learn how to assign a shortcut to a WinForms RadMenuItem.
 slug: winforms/menus/menu/working-with-radmenu-items/assign-shortcuts-to-menu-items
 tags: assign,shortcuts,to,menu,items
 published: True

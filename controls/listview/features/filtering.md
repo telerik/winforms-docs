@@ -1,7 +1,7 @@
 ---
 title: Filtering
-page_title: Filtering | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Filtering - WinForms ListView Control
+description: WinForms ListView allows filtering operations in all views.
 slug: winforms/listview/features/filtering
 tags: filtering
 published: True

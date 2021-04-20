@@ -1,7 +1,7 @@
 ---
 title: SeaLevel
-page_title: SeaLevel | RadMap
-description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
+page_title: SeaLevel - WinForms Map Control
+description: ElevationType.SeaLevel ElevationRequest gets the offset of the geoid sea level Earth model from the ellipsoid Earth model at a set of latitude and longitude coordinates.
 slug: winforms/map/providers/elevation/sealevel
 tags: map, providers, elevation
 published: True

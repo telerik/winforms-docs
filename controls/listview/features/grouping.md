@@ -1,7 +1,7 @@
 ---
 title: Grouping
-page_title: Grouping | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Grouping - WinForms ListView Control
+description: WinForms ListView supports both custom grouping and automatic grouping based on a certain property.
 slug: winforms/listview/features/grouping
 tags: grouping
 published: True

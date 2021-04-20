@@ -1,7 +1,7 @@
 ---
 title: Adding and Removing Items
-page_title: Adding and Removing Items | RadMenu
-description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+page_title: Adding and Removing Items - WinForms Menu
+description: Learn how to add and remove items in WinForms Menu.
 slug: winforms/menus/menu/working-with-radmenu-items/adding-and-removing-items
 tags: adding,and,removing,items
 published: True

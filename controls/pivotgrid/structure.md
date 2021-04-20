@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadPivotGrid
-description: This article describes the inner structure and organization of the elements which build the RadPivotGrid control.
+page_title: Structure - WinForms PivotGrid Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms PivotGrid control.
 slug: winforms/pivotgrid/structure
 tags: structure
 published: True

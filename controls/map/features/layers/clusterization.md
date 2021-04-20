@@ -1,7 +1,7 @@
 ---
 title: Clusterization
-page_title: Clusterization | RadMap
-description: Layers provide an additional means to present meaningful information to the end user.
+page_title: Clusterization - WinForms Map Control
+description: WinForms Map supports clusterization of its layers allowing grouping of their items.
 slug: winforms/map/features/layers/clusterization
 tags: map, features, layers, clusterization
 published: True

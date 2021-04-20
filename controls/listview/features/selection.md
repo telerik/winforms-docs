@@ -1,7 +1,7 @@
 ---
 title: Selection
-page_title: Selection | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Selection - WinForms ListView Control
+description: WinForms ListView supports both single and multiple selection.
 slug: winforms/listview/features/selection
 tags: features
 published: True

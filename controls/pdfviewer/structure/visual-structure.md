@@ -1,7 +1,7 @@
 ---
 title: Visual Structure
-page_title: Visual Structure | RadPdfViewer
-description: This article describes the visual as well as logical structure of the control.
+page_title: Visual Structure - WinForms PdfViewer Control
+description: Get familiar with the visual as well as logical structure of the WinForms PdfViewer.
 slug: winforms/pdfviewer/structure/visual-structure
 tags: structure
 published: True
@@ -18,9 +18,11 @@ This article describes the visual structure of __RadPdfViewer__.
 __RadPdfViewer__ has the following element structure:
 
 >caption Figure 1: RadPdfViewer`s Element Hierarchy
+
 ![pdfviewer structure 001](images/pdfviewer-structure001.png)
 
 >caption Figure 2: RadPdfViewer`s Structure
+
 ![pdfviewer structure 002](images/pdfviewer-structure002.png)
 
 1. __RadPdfViewerContainer__: Container element.

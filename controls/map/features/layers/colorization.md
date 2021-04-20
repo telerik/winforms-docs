@@ -1,7 +1,7 @@
 ---
 title: Colorization
-page_title: Colorization | RadMap
-description: When used with a shape file, the colorization feature of __RadMap__ allows the data objects to be easily colorized on the basis of a certain condition
+page_title: Colorization - WinForms Map Control
+description: WinForms Map utilizes three different colorization objects expecting a collection of colors which will be evaluated and assigned to the different shapes.
 slug: winforms/map/features/layers/colorization
 tags: map, features, layers, colorization
 published: True

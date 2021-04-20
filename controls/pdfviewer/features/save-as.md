@@ -1,7 +1,7 @@
 ---
 title: Save As
-page_title: Save As | RadPdfViewer
-description: RadPdfViewer enables you to save the loaded document to a file on the file system.
+page_title: Save As - WinForms PdfViewer Control
+description: WinForms PdfViewer enables you to save the loaded document to a file on the file system.
 slug: radpdfviewer-features-save-as
 tags: save as
 published: True

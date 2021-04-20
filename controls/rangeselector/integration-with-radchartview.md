@@ -1,7 +1,7 @@
 ---
 title: Integration with RadChartView 
-page_title: Integration with RadChartView  | RadRangeSelector
-description: Integration with RadChartView 
+page_title: Integration with RadChartView - WinForms RangeSelector Control
+description: WinForms RangeSelector offers full integration support with RadChartView. 
 slug: winforms/rangeselector/integration-with-radchartview
 tags: integration,with,radchartview,
 published: True

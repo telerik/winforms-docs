@@ -1,7 +1,7 @@
 ---
 title: Customizing Appearance
-page_title: Customizing Appearance | RadLayoutControl
-description: This article demonstrates how you can customize the appearance of the RadLayoutControl and its items.
+page_title: Customizing Appearance - WinForms LayoutControl
+description: Learn how to customize the appearance of the WinForms LayoutControl and its items.
 slug: winforms/layoutcontrol/customizing-appearance
 tags: customizing,appearance
 published: True

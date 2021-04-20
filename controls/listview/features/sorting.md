@@ -1,7 +1,7 @@
 ---
 title: Sorting
-page_title: Sorting | RadListView
-description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+page_title: Sorting - WinForms ListView Control
+description: Sorting is possible in two ways either programmatically by adding the appropriate SortDescriptor to the SortDescriptors collection of WinForms ListView, or by enabling the user to sort by clicking a column header in DetailsView.
 slug: winforms/listview/features/sorting
 tags: sorting
 published: True

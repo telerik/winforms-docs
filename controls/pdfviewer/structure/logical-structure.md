@@ -1,7 +1,7 @@
 ---
 title: Logical Structure
-page_title: Logical Structure | RadPdfViewer
-description: This article describes the visual as well as logical structure of the control.
+page_title: Logical Structure - WinForms PdfViewer Control
+description: Get familiar with the visual as well as logical structure of the WinForms PdfViewer.
 slug: winforms/pdfviewer/structure/logical-structure
 tags: structure
 published: True
