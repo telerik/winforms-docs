@@ -1,7 +1,7 @@
 ---
 title: GridViewDataColumn
-page_title: GridViewDataColumn | RadGridView
-description: GridViewDataColumn descends from GridViewColumn and is the base class for all data bound column types.
+page_title: GridViewDataColumn - WinForms GridView Control
+description: WinForms GridViewDataColumn descends from GridViewColumn and is the base class for all data bound column types.
 slug: winforms/gridview/columns/column-types/gridviewdatacolumn
 tags: gridviewdatacolumn
 published: True

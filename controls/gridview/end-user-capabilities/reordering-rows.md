@@ -1,7 +1,7 @@
 ---
 title: Reordering Rows
-page_title: Reordering Rows | RadGridView
-description: RadGridView supports row reordering and it can be done by the user at runtime. 
+page_title: Reordering Rows - WinForms GridView Control
+description: WinForms GridView supports row reordering and it can be done by the user at run time. 
 slug: winforms/gridview/end-user-capabilities/reordering-rows
 tags: reordering,rows
 published: True

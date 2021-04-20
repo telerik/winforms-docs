@@ -1,7 +1,7 @@
 ---
 title: RadGridViewDragDropService
-page_title: RadGridViewDragDropService | RadGridView
-description: RadGridView is a grid component developed on top of Telerik Presentation Framework which provides a combination of performance, extensibility, and ease of use.
+page_title: RadGridViewDragDropService - WinForms GridView Control
+description: WinForms GridView handles the whole drag and drop operation by its RadGridViewDragDropService. Learn how to use it.
 slug: winforms/gridview/radgridviewdragdropservice
 tags: gridview
 published: True

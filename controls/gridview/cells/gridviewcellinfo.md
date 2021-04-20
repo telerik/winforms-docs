@@ -1,7 +1,7 @@
 ---
 title: GridViewCellInfo
-page_title: GridViewCellInfo | RadGridView
-description: GridViewCellInfo class is the logical representation of a single grid cell.
+page_title: GridViewCellInfo - WinForms GridView Control
+description: WinForms GridView uses GridViewCellInfo class which is the logical representation of a single grid cell.
 slug: winforms/gridview/cells/gridviewcellinfo
 tags: gridviewcellinfo
 published: True

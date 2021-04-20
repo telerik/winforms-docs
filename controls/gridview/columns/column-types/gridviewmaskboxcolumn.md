@@ -1,7 +1,7 @@
 ---
 title: GridViewMaskBoxColumn
-page_title: GridViewMaskBoxColumn | RadGridView
-description: GridViewMaskBoxColumn  allows restricted editing of text data.
+page_title: GridViewMaskBoxColumn - WinForms GridView Control
+description: WinForms GridViewMaskBoxColumn  allows restricted editing of text data.
 slug: winforms/gridview/columns/column-types/gridviewmaskboxcolumn
 tags: gridviewmaskboxcolumn
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Accessing and Setting the CurrentCell
-page_title: Accessing and Setting the CurrentCell | RadGridView
-description: This article shows how you can access or set the current cell, column or row. 
+page_title: Accessing and Setting the CurrentCell - WinForms GridView Control
+description: Learn how to access or set the current cell, column or row in WinForms GridView. 
 slug: winforms/gridview/cells/accessing-and-setting-the-currentcell
 tags: accessing,and,setting,the,currentcell
 published: True
@@ -10,7 +10,6 @@ previous_url: gridview-cells-setting-current-cell
 ---
 
 # Accessing and setting the CurrentCell
-
 
 In order to set the current cell of __RadGridView__, set the __CurrentRow__ and __CurrentColumn__ properties to respective row and column which cross at the desired cell:
 

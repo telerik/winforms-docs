@@ -1,7 +1,7 @@
 ---
 title: Filtering Row
-page_title: Filtering Row | RadGridView
-description: This article shows the properties that control the filtering row appearance.
+page_title: Filtering Row - WinForms GridView Control
+description: Get familiar with the properties that control the filtering row appearance in WinForms GridView.
 slug: winforms/gridview/filtering/filtering-row
 tags: filtering,row
 published: True

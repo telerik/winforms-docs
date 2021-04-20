@@ -1,7 +1,7 @@
 ---
 title: Custom Context Menus
-page_title: Custom Context Menus | RadGridView
-description: This article shows how you can change the default context menu of RadGridView with a custom one. 
+page_title: Custom Context Menus - WinForms GridView Control
+description: Learn how to change the default context menu of WinForms GridView with a custom one. 
 slug: winforms/gridview/context-menus/custom-context-menus
 tags: custom,context,menus
 published: True

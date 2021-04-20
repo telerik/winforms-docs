@@ -1,7 +1,7 @@
 ---
 title: Pinning and Unpinning Columns
-page_title: Pinning and Unpinning Columns | RadGridView
-description: This article shows how you can pin columns either by using the using or in the code. Pinning and Unpinning Columns
+page_title: Pinning and Unpinning Columns - WinForms GridView Control
+description: Learn how to pin columns in WinForms GridView either by using the context menu or in the code.
 slug: winforms/gridview/columns/pinning-and-unpinning-columns
 tags: pinning,and,unpinning,columns
 published: True

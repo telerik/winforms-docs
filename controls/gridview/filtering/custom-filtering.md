@@ -1,7 +1,7 @@
 ---
 title: Custom Filtering
-page_title: Custom Filtering | RadGridView
-description: Custom filtering is a flexible mechanism for filtering RadGridView rows by using custom logic.
+page_title: Custom Filtering - WinForms GridView Control
+description: Custom filtering is a flexible mechanism for filtering WinForms GridView rows by using custom logic.
 slug: winforms/gridview/filtering/custom-filtering
 tags: custom,filtering
 published: True

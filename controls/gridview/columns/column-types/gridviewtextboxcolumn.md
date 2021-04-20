@@ -1,7 +1,7 @@
 ---
 title: GridViewTextBoxColumn
-page_title: GridViewTextBoxColumn | RadGridView
-description: GridViewTextBoxColumn displays and allows editing of text data.
+page_title: GridViewTextBoxColumn - WinForms GridView Control
+description: WinForms GridViewTextBoxColumn displays and allows editing of text data.
 slug: winforms/gridview/columns/column-types/gridviewtextboxcolumn
 tags: gridviewtextboxcolumn
 published: True

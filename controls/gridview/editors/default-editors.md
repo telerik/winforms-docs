@@ -1,7 +1,7 @@
 ---
 title: Default Editors
-page_title: Default Editors | RadGridView
-description: RadGridView provides build-in functionality for editing the data.
+page_title: Default Editors - WinForms GridView Control
+description: WinForms GridView provides build-in functionality for editing the data. Learn what are the default editors. 
 slug: winforms/gridview/editors/default-editors
 tags: editors
 published: True

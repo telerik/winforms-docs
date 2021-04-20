@@ -1,7 +1,7 @@
 ---
 title: Customizing editor behavior
-page_title: Customizing editor behavior | RadGridView
-description: Use the CellBeginEdit or CellEditorInitialized events to access the active editor and change its properties.
+page_title: Customizing editor behavior - WinForms GridView Control
+description: WinForms GridView offers the CellBeginEdit or CellEditorInitialized events to access the active editor and change its properties.
 slug: winforms/gridview/editors/customizing-editor-behavior
 tags: customizing,editor,behavior
 published: True

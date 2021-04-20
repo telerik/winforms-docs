@@ -1,7 +1,7 @@
 ---
 title: Filtering
-page_title: Filtering | RadGridView
-description: this article shows how the end user can use the built-in filtering functionality. 
+page_title: Filtering - WinForms GridView Control
+description: Learn how the end user can use the built-in filtering functionality in WinForms GridView. 
 slug: winforms/gridview/end-user-capabilities/filtering
 tags: filtering
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Grouping
-page_title: Grouping | RadGridView
-description: This article shows how the end user can use the built-in grouping functionality. 
+page_title: Grouping - WinForms GridView Control
+description: Learn how the end user can use the built-in grouping functionality in Winforms GridView. 
 slug: winforms/gridview/end-user-capabilities/grouping
 tags: grouping
 published: True

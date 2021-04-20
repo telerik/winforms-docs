@@ -1,7 +1,7 @@
 ---
 title: Accessing Cells
-page_title: Accessing Cells | RadGridView
-description: This article shows how you can access or set the current cell, column or row.
+page_title: Accessing Cells - WinForms GridView Control
+description: Learn how to access the cells in the WinForms GridView.
 slug: winforms/gridview/cells/accessing-cells
 tags: accessing,cells
 published: True

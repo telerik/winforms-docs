@@ -1,7 +1,7 @@
 ---
 title: GridViewComboBoxColumn
-page_title: GridViewComboBoxColumn | RadGridView
-description: GridViewComboBoxColumn displays a set of predefined text values in a drop down list.
+page_title: GridViewComboBoxColumn - WinForms GridView Control
+description: WinForms GridViewComboBoxColumn displays a set of predefined text values in a drop down list.
 slug: winforms/gridview/columns/column-types/gridviewcomboboxcolumn
 tags: gridviewcomboboxcolumn
 published: True

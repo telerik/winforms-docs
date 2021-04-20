@@ -1,7 +1,7 @@
 ---
 title: Events
-page_title: Events | RadGridView
-description: This article describes the events fired along the editing process.
+page_title: Events - WinForms GridView Control
+description: Learn what are the events fired along the editing process in the WinForms GridView.
 slug: winforms/gridview/editors/events
 tags: events
 published: True

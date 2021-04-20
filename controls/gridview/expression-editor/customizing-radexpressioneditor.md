@@ -1,7 +1,7 @@
 ---
 title: Customizing RadExpressionEditor
-page_title: Customizing RadExpressionEditor | RadGridView
-description: Create a custom expression method, which can be used in RadExpressionEditor or as a value of the Expression property.
+page_title: Customizing RadExpressionEditor - WinForms GridView Control
+description: WinForms GridView offers a mechanism for creating custom expression methods used in RadExpressionEditor. 
 slug: winforms/gridview/expression-editor/customizing-radexpressioneditor
 tags: customizing,radexpressioneditor
 published: True

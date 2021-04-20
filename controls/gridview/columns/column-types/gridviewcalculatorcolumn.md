@@ -1,7 +1,7 @@
 ---
 title: GridViewCalculatorColumn
-page_title: GridViewCalculatorColumn | RadGridView
-description: GridViewCalculatorColumn allows RadGridView to edit numbers using popup with calculator.
+page_title: GridViewCalculatorColumn - WinForms GridView Control
+description: GridViewCalculatorColumn allows WinForms GridView to edit numbers using popup with calculator.
 slug: winforms/gridview/columns/column-types/gridviewcalculatorcolumn
 tags: gridviewcalculatorcolumn
 published: True

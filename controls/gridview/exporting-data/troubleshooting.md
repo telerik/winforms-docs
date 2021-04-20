@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
-page_title: Troubleshooting | RadGridView
-description: This article lists common issues with the export process and provides solutions.
+page_title: Troubleshooting - WinForms GridView Control
+description: Get familiar with the common issues during the export process in WinForms GridView and find solutions.
 slug: winforms/gridview/exporting-data/troubleshooting
 tags: troubleshooting
 published: True

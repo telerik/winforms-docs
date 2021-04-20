@@ -1,7 +1,7 @@
 ---
 title: Column Chooser
-page_title: Column Chooser | RadGridView
-description: The visibility of all columns can be managed by the end-user at runtime using Column Chooser window. 
+page_title: Column Chooser - WinForms GridView Control
+description: WinForms GridView offers Column Chooser window. It allows managing the visibility of all columns at runtime. 
 slug: winforms/gridview/end-user-capabilities/column-chooser
 tags: column,chooser
 published: True

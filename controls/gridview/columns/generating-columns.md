@@ -1,7 +1,7 @@
 ---
 title: Generating Columns
-page_title: Generating Columns | RadGridView
-description: You can auto-generate or manually add he columns used inside RadGridView.
+page_title: Generating Columns - WinForms GridView Control
+description: Learn how to auto-generate or manually add the columns used inside the WinForms GridView.
 slug: winforms/gridview/columns/generating-columns
 tags: generating,columns
 published: True

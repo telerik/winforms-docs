@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
-page_title: Developer Focused Examples | RadGridView
-description: Additional examples built on top the Telerik UI for WinForms RadGridView control.
+page_title: Developer Focused Examples - WinForms GridView Control
+description: Additional examples built on top the WinForms GridView control.
 slug: winforms/gridview/developer-focused-examples
 tags: developer, sdk, examples
 published: True

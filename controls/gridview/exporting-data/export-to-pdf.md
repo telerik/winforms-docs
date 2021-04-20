@@ -1,7 +1,7 @@
 ---
 title: Export to PDF
-page_title: Export to PDF | RadGridView
-description: This article shows how you can export your data to a PDF file. Two distinct methods are sported.
+page_title: Export to PDF - WinForms GridView Control
+description: Learn how you can export your data to a PDF file in WinForms GridView.
 slug: winforms/gridview/exporting-data/export-to-pdf
 tags: export,to,pdf
 published: True

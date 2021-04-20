@@ -1,7 +1,7 @@
 ---
 title: Using custom editors
-page_title: Using custom editors | RadGridView
-description: Change the default editor with a custom once containing a track bar.
+page_title: Using custom editors - WinForms GridView Control
+description: WinForms GridView allows changing the default editor with a custom one. Learn how to change it with a track bar.
 slug: winforms/gridview/editors/using-custom-editors
 tags: using,custom,editors
 published: True

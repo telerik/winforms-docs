@@ -1,7 +1,7 @@
 ---
 title: GridViewTimeSpanColumn
-page_title: GridViewTimeSpanColumn | RadGridView
-description: GridViewTimeSpanColumn provides data entry and formatting for TimeSpan data types.
+page_title: GridViewTimeSpanColumn - WinForms GridView Control
+description: WinForms GridViewTimeSpanColumn provides data entry and formatting for TimeSpan data types.
 slug: winforms/gridview/columns/column-types/gridviewtimespancolumn
 tags: gridviewtimespancolumn
 published: True

@@ -1,7 +1,7 @@
 ---
 title: GridViewDecimalColumn
-page_title: GridViewDecimalColumn | RadGridView
-description: GridViewDecimalColumn allows decimal data to be displayed and edited. GridViewDecimalColumn can be bound to fields of any numeric type. 
+page_title: GridViewDecimalColumn - WinForms GridView Control
+description: WinForms GridViewDecimalColumn allows decimal data to be displayed and edited.
 slug: winforms/gridview/columns/column-types/gridviewdecimalcolumn
 tags: gridviewdecimalcolumn
 published: True

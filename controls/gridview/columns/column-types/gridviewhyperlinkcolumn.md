@@ -1,7 +1,7 @@
 ---
 title: GridViewHyperlinkColumn
-page_title: GridViewHyperlinkColumn | RadGridView
-description: GridViewHyperlinkColumn allows RadGridView to display, format, edit and open hyperlinks as well as run executable files.
+page_title: GridViewHyperlinkColumn - WinForms GridView Control
+description: GridViewHyperlinkColumn allows WinForms GridView to display, format, edit and open hyperlinks as well as run executable files.
 slug: winforms/gridview/columns/column-types/gridviewhyperlinkcolumn
 tags: gridviewhyperlinkcolumn
 published: True

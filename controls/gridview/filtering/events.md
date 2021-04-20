@@ -1,7 +1,7 @@
 ---
 title: Events
-page_title: Events | RadGridView
-description: This article shows the events fired when the user is perfoming a filtering operation.
+page_title: Events - WinForms GridView Control
+description: Learn what events are fired when the user is performing a filtering operation in WinForms GridView.
 slug: winforms/gridview/filtering/events
 tags: events
 published: True

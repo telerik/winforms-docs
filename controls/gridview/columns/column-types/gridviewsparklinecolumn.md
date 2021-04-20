@@ -1,7 +1,7 @@
 ---
 title: GridViewSparklineColumn
-page_title: GridViewSparklineColumn | RadGridView
-description: GridViewSparklineColumn allows a Sparkline chart to be displayed and edited in the RadGridView
+page_title: GridViewSparklineColumn - WinForms GridView Control
+description: GridViewSparklineColumn allows a Sparkline chart to be displayed and edited in the WinForms GridView.
 slug: gridview-columntypes-sparklinecolumn
 tags: gridviewsparklinecolumn
 published: True

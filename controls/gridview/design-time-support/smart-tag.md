@@ -1,7 +1,7 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | RadGridView
-description: This article shows the various options available in the Smart Tag of RadGridView.
+page_title: Smart Tag - WinForms GridView Control
+description: Get familiar with the various options available in the Smart Tag of WinForms GridView.
 slug: winforms/gridview/design-time-support/smart-tag
 tags: smart,tag
 published: True

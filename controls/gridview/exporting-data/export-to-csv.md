@@ -1,7 +1,7 @@
 ---
 title: Export to CSV
-page_title: Export to CSV | RadGridView
-description: Use the ExportToCSV exporter to export the data to a text file using the CSV format. 
+page_title: Export to CSV - WinForms GridView Control
+description: WinForms GridView offers the ExportToCSV exporter to export the data to a text file using the CSV format. 
 slug: winforms/gridview/exporting-data/export-to-csv
 tags: export,to,csv
 published: True

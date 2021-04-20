@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | RadGridView
-description: Translate every string used in RadGridView to any desired language.
+page_title: Localization - WinForms GridView Control
+description: Learn how to translate every string used in WinForms GridView to any desired language.
 slug: winforms/gridview/expression-editor/localization
 tags: localization
 published: True

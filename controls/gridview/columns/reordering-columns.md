@@ -1,7 +1,7 @@
 ---
 title: Reordering Columns
-page_title: Reordering Columns | RadGridView
-description: RadGridView control supports column reordering by the user at run-time. 
+page_title: Reordering Columns - WinForms GridView Control
+description: WinForms GridView supports column reordering by the user at run-time. 
 slug: winforms/gridview/columns/reordering-columns
 tags: reordering,columns
 published: True
