@@ -73,8 +73,8 @@ The __CheckBox__ content control exposes two properties __CheckedState__ and __U
 
 #### Example 1: Setting CheckBox properties
 
-{{source=..\SamplesCS\RichTextEditor\ContentControls\ContentControls.cs region=CheckBoxProperties}} 
-{{source=..\SamplesVB\RichTextEditor\ContentControls\ContentControls.vb region=CheckBoxProperties}} 
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=CheckBoxProperties}} 
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.vb region=CheckBoxProperties}} 
 
 ````C#
 SdtCheckBoxState checkedBoxState = new SdtCheckBoxState();
@@ -118,8 +118,8 @@ The __ComboBox__ and __DropDownList__ provider the user with options to choose f
 
 #### Example 2: Setting ComboBox properties
 
-{{source=..\SamplesCS\RichTextEditor\ContentControls\ContentControls.cs region=ComboBoxProperties}} 
-{{source=..\SamplesVB\RichTextEditor\ContentControls\ContentControls.vb region=ComboBoxProperties}} 
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=ComboBoxProperties}} 
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.vb region=ComboBoxProperties}} 
 
 ````C#
 List<ListItem> items = new List<ListItem>();
@@ -155,8 +155,8 @@ The __Date__ content control allows you to enter a date by using a calendar. The
 
 #### Example 3: Setting Date properties
 
-{{source=..\SamplesCS\RichTextEditor\ContentControls\ContentControls.cs region=DateProperties}} 
-{{source=..\SamplesVB\RichTextEditor\ContentControls\ContentControls.vb region=DateProperties}} 
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=DateProperties}} 
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.vb region=DateProperties}} 
 
 ````C#
 DateProperties properties = new DateProperties();
@@ -184,8 +184,8 @@ The __Text__ content control allows you to enter plain text. The text content co
 
 #### Example 4: Setting Text properties
 
-{{source=..\SamplesCS\RichTextEditor\ContentControls\ContentControls.cs region=TextProperties}} 
-{{source=..\SamplesVB\RichTextEditor\ContentControls\ContentControls.vb region=TextProperties}} 
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=TextProperties}} 
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.vb region=TextProperties}} 
 
 ````C#
 TextProperties properties = new TextProperties();
@@ -206,8 +206,8 @@ The __RepeatingSection__ content control repeats the content contained within it
 
 #### Example 5: Setting RepeatingSection properties
 
-{{source=..\SamplesCS\RichTextEditor\ContentControls\ContentControls.cs region=RepeatingSectionProperties}} 
-{{source=..\SamplesVB\RichTextEditor\ContentControls\ContentControls.vb region=RepeatingSectionProperties}} 
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=RepeatingSectionProperties}} 
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.vb region=RepeatingSectionProperties}} 
 
 ````C#
 RepeatingSectionProperties properties = new RepeatingSectionProperties();
