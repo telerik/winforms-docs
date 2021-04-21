@@ -17,27 +17,27 @@ Since R3 2015 you can add and configure the groups view definition in the [prope
 
 1. Before configuring the view definition you should add all regular columns to the grid. For example you can add some columns directly in the property builder window. Figure 2 shows how you can do that.
             
->caption Figure 2: Add the default columns.
+	>caption Figure 2: Add the default columns.
 
-![gridview-viewdefinitions-column-groups-view 003](images/gridview-viewdefinitions-column-groups-view003.gif)
+	![gridview-viewdefinitions-column-groups-view 003](images/gridview-viewdefinitions-column-groups-view003.gif)
 
 1. The next step is to change the __ViewDefinition__ to __ColumnGroups View__. `Figure 3` shows where you can find this property. Changing the view will add the default root group.
             
->caption Figure 3: Change the ViewDefinition
+	>caption Figure 3: Change the ViewDefinition
 
-![gridview-viewdefinitions-column-groups-view 002](images/gridview-viewdefinitions-column-groups-view002.png)
+	![gridview-viewdefinitions-column-groups-view 002](images/gridview-viewdefinitions-column-groups-view002.png)
 
 1. Now you are ready to add the groups. This can be achieved by selecting the __Columns groups__ node which will show the button for adding groups.
             
->caption Figure 4: Add Groups
+	>caption Figure 4: Add Groups
 
-![gridview-viewdefinitions-column-groups-view 004](images/gridview-viewdefinitions-column-groups-view004.gif)
+	![gridview-viewdefinitions-column-groups-view 004](images/gridview-viewdefinitions-column-groups-view004.gif)
 
 1. The final step is to arrange the groups. This can easily achieved by just drag and drop columns or groups to the desired position.
             
->caption Figure 5: Arrange the columns and groups
+	>caption Figure 5: Arrange the columns and groups
 
-![gridview-viewdefinitions-column-groups-view 005](images/gridview-viewdefinitions-column-groups-view005.gif)
+	![gridview-viewdefinitions-column-groups-view 005](images/gridview-viewdefinitions-column-groups-view005.gif)
 
 The property builder allows you to edit the groups properties as well. Once a particular group is selected you will be able to change its properties.
         

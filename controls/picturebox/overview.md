@@ -26,11 +26,11 @@ __RadPictureBox__ is a control used to display images in different formats. The 
 
 ## Key features:
 
-* Edit images
-* Pan and zoom
-* Context menu
-* Customizing elements
-* Panel animations
+* [Edit images](https://docs.telerik.com/devtools/winforms/controls/picturebox/features/edit)
+* [Pan and zoom](https://docs.telerik.com/devtools/winforms/controls/picturebox/features/pan-and-zoom)
+* [Context menu](https://docs.telerik.com/devtools/winforms/controls/picturebox/features/context-menu)
+* [Customizing panels]({%slug radpicturebox-working-with-panels%})
+* Panel animations 
 
 >note SVG image support is available only in .NET 4.0 and above.
 

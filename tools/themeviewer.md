@@ -19,7 +19,7 @@ The controls are placed on different pages which can be selected from the left p
 
 ![tools-themeviewer 002](images/tools-themeviewer002.png)
 
-Switching between the different themes and loading custom themes is available from the drop down button on the top of the form:
+Switching between the different themes and loading custom themes is available from the "CHOOSE THEME" drop down button on the top of the form:
 
 ![tools-themeviewer 003](images/tools-themeviewer003.png)
 

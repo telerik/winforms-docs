@@ -1,16 +1,16 @@
 ---
-title: Customizing appearance
-page_title: Customizing appearance
-description: Customizing appearance
-slug: radpicturebox-customizing-appearance
-tags: customizin-appearance
+title: Working with panels
+page_title: Working with panels
+description: This article shows how to customize panels
+slug: radpicturebox-working-with-panels
+tags: working-with-panels
 published: True
 position: 4
 ---
 
-# Customizing appearance
+# Working with panels
 
-**RadPictureBox** can be customized. It offers a set of predefind panels *TopPanel*, *BottomPanel*, *LeftPanel*, and *RightPanel* that allows adding different elements to its item's collections in order to achieve a better user experience. 
+**RadPictureBox** offers a set of predefind panels *TopPanel*, *BottomPanel*, *LeftPanel*, and *RightPanel* that allows adding different elements to its item's collections in order to achieve a better user experience. 
 
 > **TopPanel** and **BottomPanel** have RightItems, CenterItems, and LeftItems collections.         
 **LeftPanel** and **RightPanel** have TopItems, BottomItems, and CenterItems collectios.
