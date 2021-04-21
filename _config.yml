@@ -82,6 +82,9 @@ navigation:
     controls/barcode/barcode-types/2d-barcodes/datamatrix:
         title: Data Matrix
         position: 2
+    controls/barcode/barcode-types/2d-barcodes/SwissQRCode:
+        title: Swiss QR Code
+        position: 3
     controls/breadcrumb:
         title: BreadCrumb
         position: 58
