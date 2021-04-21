@@ -13,6 +13,11 @@ previous_url: editors-datetimepicker-navigation-modes
  
 The embedded __RadCalendar__ has `HeaderNavigationMode` property, which determines what will be the behavior of control when the end-users clicks on the header of __RadCalendar__. In this article we will demonstrate how to change the default navigation mode.
 
+|HeaderNavigationMode|Design|
+|----|----|
+|Zoom|![editors-datetimepicker-navigation-modes 001](images/editors-datetimepicker-navigation-modes001.png)|
+|Popup|![editors-datetimepicker-navigation-modes 003](images/editors-datetimepicker-navigation-modes003.png)|
+
 #### Setting the value of RadDateTimePicker 
 
 {{source=..\SamplesCS\Editors\DateTimePicker2.cs region=HeaderNavigationMode}} 
@@ -29,7 +34,7 @@ Me.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = Head
 
 {{endregion}} 
 
-
+![editors-datetimepicker-navigation-modes 002](images/editors-datetimepicker-navigation-modes002.gif)
 
 # See Also
 
