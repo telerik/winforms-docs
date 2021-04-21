@@ -35,6 +35,7 @@ position: 4
 |__PdfViewerElement.AllowSignSignatureDialog__|Allows you to disable the document signing.|
 |RadPdfViewerElement.**AsyncRender**|Enable or disable the async rendering of pages.|
 |RadPdfViewerElement.**CachePaint**|Enable or disable the cached painting of pages.|
+|**UseBufferedPrinting** [Released in R2 2021]|If true, the page will be printed in an image that will be send to the printer at once. Loss of quality is possible.|
 
 # Methods
 
