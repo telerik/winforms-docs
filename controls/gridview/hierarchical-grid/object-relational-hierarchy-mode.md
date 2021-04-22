@@ -63,7 +63,7 @@ The Object-Relational hierarchy mode can be setup manually by creating the child
 
 The following example demonstrates how you can manually build an object-relational hierarchy using the "Customers" entity model from the Northwind database:
 
-![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode003.png)
+![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode006.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.cs region=ManualGenerateObjectRelationalMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.vb region=ManualGenerateObjectRelationalMode}} 
