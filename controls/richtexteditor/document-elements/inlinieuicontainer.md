@@ -9,7 +9,7 @@ position: 6
 previous_url: richtexteditor-document-elements-inlineuicontainer
 ---
 
-# InlinieUIContainer
+# InlineUIContainer
  
 __RadRichTextEditor__ provides you with the functionality of enclosing custom UI elements in its document. That is achieved with the help of a special type of inline document element called __InlineUIContainer__, which can wrap any object of type System.Windows.__UIElement__, e.g. a button, an image.
       
