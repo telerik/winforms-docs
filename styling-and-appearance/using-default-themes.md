@@ -27,7 +27,7 @@ If you have installed the suite from the provided installation files, you will s
 
 >note Since R2 2020 **ControlDefault** theme offers additional set of images - SVG images. Clients now are able to choose whether to display SVG or Raster Images in **ControlDefault** theme. By default, SVG images are displayed. More information is available [here]({%slug winforms-tpf-vector-images%}).
 
->note Since R1 2021 Telerik UI for Winforms suite has introduced the brand new **Office2019Light** theme. Inspired by the latest Microsoft Office application, the **Office2019Light** theme is here to help delivering that fresh look and feel to your WinForms application. 
+>note Since R1 2021 Telerik UI for Winforms suite has introduced the brand new **Office2019Light** theme. Inspired by the latest Microsoft Office application, the **Office2019Light** theme is here to help delivering that fresh look and feel to your WinForms application. As of **R2 2021** there are Gray and Dark variations of the Office2019 theme.
 
 In order to use the Theme components, just drag and drop them from the VS Toolbox to the form. This will add a reference to the corresponding theme assembly in the project and will enable the theme in the ThemeName drop-down of all Telerik controls on the form. All you have to do afterwards is to set the needed theme from the __ThemeName__ drop-down (in the smart tag) or programmatically.
 
