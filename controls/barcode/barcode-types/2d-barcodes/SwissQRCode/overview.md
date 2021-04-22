@@ -106,8 +106,8 @@ Once you've set up the **SwissQRCodeValueStringBuilder** you can call its **Vali
 
 #### Example 3: Validate and build barcode value
 
-{{source=..\SamplesCS\Barcode\BarcodeSettings.cs region=ValidateSwissQR }} 
-{{source=..\SamplesVB\Barcode\BarcodeSettings.vb region=ValidateSwissQR }}
+{{source=..\SamplesCS\Barcode\BarcodeSettings.cs region=ValidateSwissQR}} 
+{{source=..\SamplesVB\Barcode\BarcodeSettings.vb region=ValidateSwissQR}}
 
 ````C#
             string errors = qrCodeValue.Validate();
