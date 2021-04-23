@@ -29,7 +29,7 @@ You can choose between the following content controls:
 * __Drop-Down List__ content control
 * __Date Picker__ content control
 
-## Content controls API
+## Content controls commands
 
 The following commands related to the content controls functionality are available in the __RadRichTextEditor__:
 
@@ -37,7 +37,7 @@ The following commands related to the content controls functionality are availab
 
 In order to successfully execute the __InsertStructuredDocumentTagCommand__ you have to pass the wanted content control type (SdtType) as a CommandParameter:
 
-#### Example 1: Execute InsertStructuredDocumentTagCommand()
+#### Example 1: Execute InsertStructuredDocumentTagCommand
 
 {{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=ExecuteInsertStructuredDocumentTag}} 
 {{source=..\SamplesVB\RichTextEditor\Features\ContentControls.vb region=ExecuteInsertStructuredDocumentTag}} 
@@ -53,23 +53,23 @@ Me.RadRichTextEditor1.InsertStructuredDocumentTag(SdtType.Picture)
 
 {{endregion}}
 
-Another way is to create a new instance of the __InsertStructuredDocumentTagCommand__ and call the __Execute__ method:
+Another way is to create a new instance of the __InsertStructuredDocumentTagCommand__ and specify the SdtType in the __Execute__ method:
 
-#### Example 2: Create new InsertStructuredDocumentTagCommand and call Execute() 
+#### Example 2: Execute InsertStructuredDocumentTagCommand
 
-{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ContentControls.vb region=}} 
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=CreateNewInsertStructuredDocumentTag}} 
+{{source=..\SamplesVB\RichTextEditor\Features\ContentControls.vb region=CreateNewInsertStructuredDocumentTag}} 
 
 ````C# 
-InsertStructuredDocumentTagCommand sdtCommand = new InsertStructuredDocumentTagCommand(this.radRichTextEditor1.RichTextBoxElement);
-sdtCommand.Execute("Picture");
+InsertStructuredDocumentTagCommand command = new InsertStructuredDocumentTagCommand(this.radRichTextEditor1.RichTextBoxElement);
+command.Execute("Picture");
 //OR
 this.radRichTextEditor1.Commands.InsertSdtCommand.Execute("Picture");
 
 ````
 ````VB.NET 
-Dim sdtCommand As InsertStructuredDocumentTagCommand = New InsertStructuredDocumentTagCommand(Me.RadRichTextEditor1.RichTextBoxElement)
-sdtCommand.Execute("Picture")
+Dim command As InsertStructuredDocumentTagCommand = New InsertStructuredDocumentTagCommand(Me.RadRichTextEditor1.RichTextBoxElement)
+command.Execute("Picture")
 'OR
 Me.RadRichTextEditor1.Commands.InsertSdtCommand.Execute("Picture")
 
@@ -79,4 +79,30 @@ Me.RadRichTextEditor1.Commands.InsertSdtCommand.Execute("Picture")
 
 
 * __ShowContentControlPropertiesDialogCommand__
+
+In order to execute the __ShowContentControlPropertiesDialogCommand__ you can create a new instance of the command and specify the SdtType in the __Execute()__:
+
+#### Example 3: Execute ShowContentControlPropertiesDialogCommand
+
+{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=ShowContentControlPropertiesDialogCommand}} 
+{{source=..\SamplesVB\RichTextEditor\Features\ContentControls.vb region=ShowContentControlPropertiesDialogCommand}} 
+
+````C# 
+ShowContentControlPropertiesDialogCommand command = new ShowContentControlPropertiesDialogCommand(this.radRichTextEditor1.RichTextBoxElement);
+command.Execute("Text");
+//OR
+this.radRichTextEditor1.Commands.ShowContentControlPropertiesDialogCommand.Execute("Text");
+
+````
+````VB.NET 
+Dim command As ShowContentControlPropertiesDialogCommand = New ShowContentControlPropertiesDialogCommand(Me.RadRichTextEditor1.RichTextBoxElement)
+command.Execute("Text")
+'OR
+Me.RadRichTextEditor1.Commands.ShowContentControlPropertiesDialogCommand.Execute("Text")
+
+````
+
+{{endregion}}
+
+>note In order to learn more about commands and how to use them refer to [Commands]({%slug richtexteditor-features-commands%}) help article.
 
