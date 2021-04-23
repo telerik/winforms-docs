@@ -166,6 +166,9 @@ navigation:
     controls/calendar/localization:
         title: Localization
         position: 8
+    controls/callout:
+        title: Callout
+        position: 85
     controls/cardview:
         title: CardView
         position: 90
