@@ -11,8 +11,7 @@ CTAControlName: Callout
 
 # Design Time 
 
-To start using **RadCallout**, just drag it from the toolbox and drop it at the form. It will be placed in the components tray:
-
+To start using **RadCallout**, just drag it from the toolbox and drop it onto the form. It will be placed in the components tray.
  
 ## Smart Tag
 

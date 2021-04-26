@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview - WinForms ShapedForm
+page_title: Overview - WinForms ShapedForm 
 description: ShapedForm allows you to design and display a Windows form with any conceivable shape.
 slug: winforms/forms-and-dialogs/shapedform
 tags: shapedform
