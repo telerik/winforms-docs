@@ -14,7 +14,7 @@ The easiest way to create a content control is through the user interface. You c
 
 ## User Interface
 
-You can specify which type of content control you wish to insert from the predefined UI of __RadRichTextEditor__. You can select it from the Developer Tab which is part of the [RadRichTextEditorRibbonUI]({%slug richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui%}) by default:
+You can specify which type of content control you wish to insert from the predefined UI of __RadRichTextEditor__. You can select it from the Developer Tab which is part of the [RadRichTextEditorRibbonUI]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}) by default:
 
 ![working-with-content-controls-ui-001](images/working-with-content-controls-ui-001.png)
 
@@ -55,8 +55,6 @@ Me.RadRichTextEditor1.InsertStructuredDocumentTag(SdtType.Picture)
 
 Another way is to create a new instance of the __InsertStructuredDocumentTagCommand__ and specify the SdtType in the __Execute__ method:
 
-#### Example 2: Execute InsertStructuredDocumentTagCommand
-
 {{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=CreateNewInsertStructuredDocumentTag}} 
 {{source=..\SamplesVB\RichTextEditor\Features\ContentControls.vb region=CreateNewInsertStructuredDocumentTag}} 
 
@@ -82,7 +80,7 @@ Me.RadRichTextEditor1.Commands.InsertSdtCommand.Execute("Picture")
 
 In order to execute the __ShowContentControlPropertiesDialogCommand__ you can create a new instance of the command and specify the SdtType in the __Execute()__:
 
-#### Example 3: Execute ShowContentControlPropertiesDialogCommand
+#### Example 2: Execute ShowContentControlPropertiesDialogCommand
 
 {{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=ShowContentControlPropertiesDialogCommand}} 
 {{source=..\SamplesVB\RichTextEditor\Features\ContentControls.vb region=ShowContentControlPropertiesDialogCommand}} 
@@ -104,5 +102,5 @@ Me.RadRichTextEditor1.Commands.ShowContentControlPropertiesDialogCommand.Execute
 
 {{endregion}}
 
->note In order to learn more about commands and how to use them refer to [Commands]({%slug richtexteditor-features-commands%}) help article.
+>note In order to learn more about commands and how to use them refer to [Commands](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/features/commands) help article.
 

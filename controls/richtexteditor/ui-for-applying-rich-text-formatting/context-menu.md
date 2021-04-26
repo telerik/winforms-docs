@@ -207,5 +207,5 @@ And of course, for those of you who don’t need additional UI pop-ups, these ca
 # See Also
 
  * [Getting Started]({%slug winforms/richtexteditor-/getting-started%})
- * [Ribbon Ui]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%})
+ * [Ribbon UI]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%})
  * [Selection Mini Toolbar]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/selection-mini-toolbar%})

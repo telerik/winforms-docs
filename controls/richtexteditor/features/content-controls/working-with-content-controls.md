@@ -10,7 +10,7 @@ position: 1
 
 # Working with Content Controls
 
-This article shows some examples of how you can access a content control and modify their properties from the code. In general, the content controls are marked with annotations and you can manipulate them as such. Detailed information is available here: [Manipulating Annotations]({%slug richtexteditor-document-elements-manipulating-annotations%}) 
+This article shows some examples of how you can access a content control and modify their properties from the code. In general, the content controls are marked with annotations and you can manipulate them as such. Detailed information is available here: [Manipulating Annotations]({%slug winforms/richtexteditor-/document-elements/annotations/manipulating-annotations%}) 
 
 ## Manipulate existing content controls
 
@@ -81,7 +81,7 @@ Next
 
 ## Insert new content controls
 
-New content controls can be inserted trough one of the overloads of the __InsertStructuredDocumentTag__ method accessible from __RadRichTextEditor__ and [RadDocumentEditor]({%slug richtexteditor-features-raddocumenteditor%}):
+New content controls can be inserted trough one of the overloads of the __InsertStructuredDocumentTag__ method accessible from __RadRichTextEditor__ and [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}):
 
 #### Example 3: Inserting a content control
 
