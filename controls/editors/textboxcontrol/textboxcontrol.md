@@ -35,6 +35,8 @@ Key Features:
 
 * Flexible and intuitive API
 
+* [Embedded labels]({%slug winforms/editors/textboxcontrol/properties/embedded-labels%})
+
 * [IME](https://msdn.microsoft.com/en-us/library/cc194855.aspx) support.
 
 # See Also

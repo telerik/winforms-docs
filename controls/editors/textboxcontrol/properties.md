@@ -36,7 +36,10 @@ position: 8
 |__IsReadOnlyCaretVisible__|Gets or sets a value indicating whether the caret is visible in read only mode.|
 |**ShowClearButton**|Gets or sets a value indicating whether the clear button is shown.|
 |**ShowNullText**|Gets or sets a value indicating whether the null text will be shown when the control is focused and the text is empty.|
+|**ShowEmbeddedLabel**|Gets or sets a value indicating whether the embedded label is shown. It is recommended to set AutoSize to true, when using the embedded label.|
+|**EmbeddedLabelText**|Gets or sets the text of the embedded label.|
 
+## ShowClearButton
 
 Since R1 2017 **RadTextBoxControl** can show a clear button when there is some text in the editor. This is controlled by the **ShowClearButton** property.
 
@@ -45,6 +48,42 @@ Since R1 2017 **RadTextBoxControl** can show a clear button when there is some t
 ## NullText
 
 __RadTextBoxControl__ has a **NullText** property that is not shared by the standard Windows Forms text box. This property specifies what text to be displayed when the control has no __Text__ value. By default, when the control receives  focus, this text is automatically removed. This behavior can be controlled by the **ShowNullText** property. If it is set to *true* the **NullText** will be shown even when the text box is focused until you enter some text in the editor.
+
+## Embedded Labels
+
+Since R2 2021 **RadTextBoxControl** supports embedded labels. The embedded label shows a text in the text box field usually to indicate what text should the user enter in the text box. When **RadTextBoxControl** gets focus the embedded label will go up, so the user can type in the text box field. The **ShowEmbeddedLabel** property controls whether the embedded label is shown. You can set the desired text by using the **EmbeddedLabelText** property.
+
+#### Example 1: Setting the embedded label
+
+{{source=..\SamplesCS\Editors\TextBoxControl.cs region=EmbeddedLabels}} 
+{{source=..\SamplesVB\Editors\TextBoxControl.vb region=EmbeddedLabels}} 
+
+````C#
+this.radTextBoxControl1.ShowEmbeddedLabel = true;
+this.radTextBoxControl1.AutoSize = true;
+this.radTextBoxControl1.EmbeddedLabelText = "First Name";        
+
+````
+````VB.NET
+Me.RadTextBoxControl1.ShowEmbeddedLabel = True
+Me.RadTextBoxControl1.AutoSize = True
+Me.RadTextBoxControl1.EmbeddedLabelText = "First Name"
+
+````
+
+{{endregion}} 
+
+![editors-textboxcontrol-properties 002](images/editors-textboxcontrol-properties-embedded-labels.gif)
+
+>note In order the embedded label to be shown correctly it is neccessary to autosize the **RadTextBoxControl** by setting **AutoSize=true** or set an appropriate height.
+
+**RadTextBoxControlElement** exposes the following useful properties. You can access them through the **TextBoxElement** property:
+
+* **EmbeddedLabel** - Gets an instance of the corresponding embedded label. 
+* **RepositionEmbeddedLabel** - Gets or set a value to indicate whether to reposition the embedded label, when text box is empty.
+* **EmbeddedLabelAnimationSpeed** - Gets or set the animation speed of the embedded label.
+The speed is an integer between 1 and 10 (slowest) with default value 8.
+
 
 # Events
 
