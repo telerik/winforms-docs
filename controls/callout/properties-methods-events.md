@@ -15,8 +15,8 @@ CTAControlName: Callout
 
 |Property|Description|
 |----|----|
-|**ErrorCaption**|Gets or sets the title (caption) of the error message when the callout can't be shown.|
-|**ErrorMessage**|Gets or sets the content of the error message.|
+|**ErrorCaption**|Static property which gets or sets the title (caption) of the error message when the callout can't be shown.|
+|**ErrorMessage**|Static property which gets or sets the content of the error message.|
 |**CalloutForm**|Gets the callout form (ShapedForm).|
 |**AssociatedControl**|Gets or sets the associated control that is displayed in the callout. Note that you can associate a single control to RadCallout. If you need to add multiple controls, add them in a container (e.g. RadPanel) control and associate it with RadCallout.|
 |**CalloutType**|Gets or sets the type of the shape of the callout.|
