@@ -25,6 +25,8 @@ __RadTextBox__ shares most of the properties of the standard Windows Forms text 
 |**ShowClearButton**|Gets or sets a value indicating whether the clear button is shown.|
 |**NullText**|Gets or sets the text that is displayed when the textbox contains no text. |
 |**ShowNullText**|Gets or sets a value indicating whether the null text will be shown when the control is focused and the text is empty.|
+|**ShowEmbeddedLabel**|Gets or sets a value indicating whether the embedded label is shown.|
+|**EmbeddedLabelText**|Gets or sets the text of the embedded label.|
 
 ## NullText
 
@@ -43,6 +45,38 @@ By default, when the control receives  focus, this text is automatically removed
 Since R1 2017 **RadTextBox** can show a clear button when there is some text in the editor. This is controlled by the **ShowClearButton** property.
 
 ![editors-textbox-programming-radtextbox 002](images/editors-textbox-programming-radtextbox002.gif)
+
+## Embedded Labels
+
+Since R2 2021 **RadTextBox** supports embedded labels. The embedded label shows a text in the text box field usually to indicate what text should the user enter in the text box. When **RadTextBox** gets focus the embedded label will go up, so the user can type in the text box field. The **ShowEmbeddedLabel** property controls whether the embedded label is shown. You can set the desired text by using the **EmbeddedLabelText** property.
+
+#### Example 1: Setting the embedded label
+
+{{source=..\SamplesCS\Editors\TextBox1.cs region=EmbeddedLabel}} 
+{{source=..\SamplesVB\Editors\TextBox1.vb region=EmbeddedLabel}} 
+
+````C#       
+this.radTextBox1.ShowEmbeddedLabel = true;
+this.radTextBox1.EmbeddedLabelText = "First Name";
+
+````
+````VB.NET
+Me.RadTextBox1.ShowEmbeddedLabel = True
+Me.RadTextBox1.EmbeddedLabelText = "First Name"
+
+````
+
+{{endregion}} 
+
+![editors-textbox-programming-radtextbox 005](images/editors-textbox-programming-radtextbox005.gif)
+
+**RadTextBoxElement** exposes the following useful properties related to embedded labels. You can access them through the **TextBoxElement** property:
+
+* **EmbeddedLabel** - Gets an instance of the corresponding embedded label. 
+* **RepositionEmbeddedLabel** - Gets or set a value to indicate whether to reposition the embedded label, when text box is empty.
+* **EmbeddedLabelAnimationSpeed** - Gets or set the animation speed of the embedded label.
+The speed is an integer between 1 and 10 (slowest) with default value 8.
+
 
 # See Also
 

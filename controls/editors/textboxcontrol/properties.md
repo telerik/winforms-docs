@@ -77,7 +77,7 @@ Me.RadTextBoxControl1.EmbeddedLabelText = "First Name"
 
 >note In order the embedded label to be shown correctly it is neccessary to autosize the **RadTextBoxControl** by setting **AutoSize=true** or set an appropriate height.
 
-**RadTextBoxControlElement** exposes the following useful properties. You can access them through the **TextBoxElement** property:
+**RadTextBoxControlElement** exposes the following useful properties related to embedded labels. You can access them through the **TextBoxElement** property:
 
 * **EmbeddedLabel** - Gets an instance of the corresponding embedded label. 
 * **RepositionEmbeddedLabel** - Gets or set a value to indicate whether to reposition the embedded label, when text box is empty.
