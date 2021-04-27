@@ -21,7 +21,7 @@ The __RadForm__ control is an extended standard Windows Form that fully supports
 {% include cta-panel-overview.html %}
 {% endif %}
  
->caption 
+>caption RadForm
 
 ![forms-and-dialogs-form-overview 001](images/forms-and-dialogs-form-overview001.png)
 
