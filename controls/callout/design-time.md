@@ -40,6 +40,7 @@ It is possible to associate any control available on the form. UserControls are 
 # See Also
 
 * [Getting Started]({%slug callout-getting-started%})
-* [Design Time]({%slug callout-structure%}) 
+* [Structure]({%slug callout-structure%}) 
+* [Shapes]({%slug callout-shapes%}) 
  
         

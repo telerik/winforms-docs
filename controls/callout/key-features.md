@@ -86,6 +86,7 @@ Me.RadCallout1.AnimationManager.CloseAnimationDuration = 3000
 # See Also
 
 * [Getting Started]({%slug callout-getting-started%})
-* [Design Time]({%slug callout-structure%}) 
+* [Design Time]({%slug callout-callout-design-time%}) 
+* [Shapes]({%slug callout-shapes%}) 
  
         

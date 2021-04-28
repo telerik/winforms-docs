@@ -32,5 +32,7 @@ Here are a few of the **RadCallout**'s main features:
 
 * [Getting Started]({%slug callout-getting-started%})
 * [Design Time]({%slug callout-design-time%}) 
+* [Structure]({%slug callout-structure%}) 
+* [Shapes]({%slug callout-shapes%}) 
  
         

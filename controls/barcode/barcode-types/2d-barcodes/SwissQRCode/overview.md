@@ -50,8 +50,6 @@ Me.radBarcode1.Symbology = symbology
 ```` 
 {{endregion}}
 
->important Swiss QR Barcode must have fixed size of 324x324 pixels.
-
 The Swiss QR code standard mandates that the input provided for the generation of the barcode is strictly formatted. Both, validating and generating this input, are complex processes and to facilitate them you can use the **SwissQRCodeValueStringBuilder** helper class. Its purpose is to hold the information needed for a **SwissQRCode** in a type-safe manner, to validate this information and to generate the input. Through its constructor, you need to set the following properties:
 
 * **Iban**: The IBAN of the Account/Payable to.

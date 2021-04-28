@@ -2,7 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms Callout Control
 description: Get familiar with the public API that WinForms Callout offers.   
-slug: properties-methods-events
+slug: callout-properties-methods-events
 tags: callout
 published: True
 position: 4 
@@ -40,6 +40,20 @@ CTAControlName: Callout
 |**Show(RadElement element)**|Shows a callout form pointing to a specific element.|
 |**Close**|Closes the callout form.|
 
+## Static Methods
+
+|Method|Description|
+|----|----|
+|**Show(Control content, Point targetPoint, CalloutShapeSettings shapeSettings = null)**|Shows a callout by given content over the provided target point.|
+|**Show(Control content, Control targetControl, CalloutShapeSettings shapeSettings = null)**|Shows a callout by given content over the provided target control.|
+|**Show(Control content, RadElement targetElement, CalloutShapeSettings shapeSettings = null)**|Shows a callout by given content over the provided target element.|
+|**Show(Point targetPoint, string content, string caption = "", string footer = "", CalloutShapeSettings shapeSettings = null)**|Shows a screen tip in a callout over the provided target point.|
+|**Show(Control targetControl, string content, string caption = "", string footer = "", CalloutShapeSettings shapeSettings = null)**|Shows a screen tip in a callout over the provided target control.|
+|**Show(RadElement targetElement, string content, string caption = "", string footer = "",  CalloutShapeSettings shapeSettings = null)**|Shows a screen tip in a callout over the provided target element.|
+|**Show(RadCallout callout, Point targetPoint, string content, string caption = "", string footer = "")**|Shows a screen tip in a given callout over the provided target screen point.|
+|**Show(RadCallout callout, Control targetControl, string content, string caption = "", string footer = ""**|Shows a screen tip in a given callout over the provided target control.|
+|**Show(RadCallout callout, RadElement targetElement, string content, string caption = "", string footer = "")**|Shows a screen tip in a given callout over the provided target element.|
+
 ## Events
 
 |Event|Description|
@@ -52,6 +66,7 @@ CTAControlName: Callout
 # See Also
 
 * [Getting Started]({%slug callout-getting-started%})
-* [Design Time]({%slug callout-structure%}) 
+* [Design Time]({%slug callout-design-time%})
+* [Shapes]({%slug callout-shapes%}) 
  
         
