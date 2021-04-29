@@ -23,7 +23,7 @@ __RadTextBoxControl__ provides similar to the standard .NET Framework text box f
         
 ![editors-textboxcontrol-overview 001](images/editors-textboxcontrol-overview001.png)
 
-Key Features:
+## Key Features:
 
 * Auto-complete in bound and unbound mode
 
@@ -35,7 +35,7 @@ Key Features:
 
 * Flexible and intuitive API
 
-* [Embedded labels]({%slug winforms/editors/textboxcontrol/properties-/embedded-labels%})
+* [Embedded labels]({%slug winforms/editors/textboxcontrol/properties%})
 
 * [IME](https://msdn.microsoft.com/en-us/library/cc194855.aspx) support.
 
