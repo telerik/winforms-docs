@@ -39,6 +39,16 @@ __Copy referenced assemblies to solution and integrate with source control__ - W
 
 All settings under the WinForms category affect only the Telerik UI for WinForms Visual Studio Extensions.
 
+>note As of **R2 2021** in the **Options** dialog, there is a setting that controls whether the message for changing the default theme will be shown. 
+
+![options-default-theme](images/options-default-theme.png)
+
+If **"Suggest default theme"** is set to **true**, the following message will be prompted to the user when you drag a Telerik RadControl from the toolbox and drop it onto the form:
+
+![default-theme-message](images/default-theme-message.png)
+
+If you accept the changes and restart the designer, the Fluent theme will be used as [default theme]({%slug default-theme%}) for the design time experience.
+ 
 ## Select a folder for downloads
 
 Configures the path where the extensions look for and store distributions.
