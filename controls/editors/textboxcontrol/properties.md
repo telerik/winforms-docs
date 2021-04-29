@@ -84,6 +84,7 @@ Me.RadTextBoxControl1.EmbeddedLabelText = "First Name"
 * **EmbeddedLabelAnimationSpeed** - Gets or set the animation speed of the embedded label.
 The speed is an integer between 1 and 10 (slowest) with default value 8.
 
+>note As of R2 2021 the default **Height** for **RadTextBoxControl** is changed to 22px.
 
 # Events
 
