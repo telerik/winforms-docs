@@ -21,6 +21,8 @@ You can find listed below the required references for using a **RadToastNotifica
 
 * Microsoft.Toolkit.Uwp.Notifications * (necessary for using a custom activator)
 
+>important As of **R2 2021** Toast Notifications are supported in .NET5.
+
 >important RadToastNotificationManager requires .NET Framework 4.6.1 or higher.
 
 >important Toast notifications can only be displayed in Windows 8.0 or higher. For older Windows versions, use RadDesktopAlert instead.
