@@ -90,7 +90,7 @@ Once the necessary assembly is referred, the designer loads with the correct des
 
 ## Custom theme as Default
 
-Since it is possible to build your own [custom style]({%slug winforms/themes/using-custom-themes%}), it is possible to specify this theme as default. We will use the same API to load client's themes defined in their own assemblies:[Creating a theme component]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/creating-a-theme-component-%}) 
+Since it is possible to build your own [custom style]({%slug winforms/themes/using-custom-themes%}), it is possible to specify this theme as default. We will use the same API to load client's themes defined in their own assemblies: [Creating a theme component]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/creating-a-theme-component%}) 
 
 Imagine a client creates a theme with name **LightCoral**. Besides the theme name, the App.config will also need the theme type and theme assembly name. 
 

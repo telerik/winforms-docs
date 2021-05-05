@@ -28,7 +28,7 @@ RichTextBoxLocalizationProvider.CurrentProvider = RichTextBoxLocalizationProvide
 
 {{endregion}} 
 
->important You can download a XML file that contains all the currently used strings from here: [Strings file](https://www.telerik.com/docs/default-source/ui-for-winforms/richtextboxstrings28fe67aa099e4c2a8f3c9f7a77c0db22.xml?sfvrsn=f9881f67_2)
+>important You can download a XML file that contains all the currently used strings from here: [Strings file](https://www.telerik.com/docs/default-source/ui-for-winforms/richtextboxstringsddaf254745904c4eb25fce8836761425.xml?sfvrsn=563f692c_2)
 >
 
 >note As of R2 2015 __RichTextBoxLocalizationProvider__ contains all strings related to the __RadRichTextEditorRibbonUI__ as well.
