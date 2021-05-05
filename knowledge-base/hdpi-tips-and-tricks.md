@@ -60,6 +60,7 @@ If you are designing a scalable application there are few simple guidelines that
 * Design the interface of your forms so that it can “reflow” – use Anchored, Docked, AutoSized controls where possible.
 * All containers must use the same AutoScaleMode.
 * Use default font size (8.25 px) on all containers. If you need custom font size for a specific control, set it on that control instead on the container class.
+* If it is possible to use [vector images]({%slug winforms-tpf-vector-images%}), it will improve the image rendering on HDPI monitors.
 * Pay special attention to whether the font size scales correctly. If not, you will have to manually scale the font size for specific controls.
 * If you have some custom layout logic, always keep in mind that the sizes and the locations of the controls will be different if the form is scaled. Also keep in mind that you should manually scale any constants you use if they denote pixels.
 
