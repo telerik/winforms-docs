@@ -160,3 +160,5 @@ Note that you can still add duplicated tokens in the editor if you type them man
 * [Element Structure and Document Object Model]({%slug winforms/editors/autocompletebox/element-structure-and-document-object-model%})
 * [Properties and Events]({%slug winforms/editors/autocompletebox/formatting-blocks%})
 * [Text Editing]({%slug winforms/editors/autocompletebox/text-editing%})
+* [How to add image icons to RadAutoCompleteBox]({%slug autocompletebox-with-icons%})
+* [How to Create Custom AutoComplete Items in RadAutoCompleteBox]({%slug autocompletebox-with-custom-autocomplete-items%})
