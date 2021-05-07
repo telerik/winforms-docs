@@ -32,3 +32,4 @@ Since __RadDiagramToolbox__ is a separate control it is available in the toolbox
 
 * [RibbonUI]({%slug winforms/diagram/ribbonui%})	
 * [Settings Pane]({%slug winforms/diagram/settings-pane%})	 
+* [Add Custom Items to Diagram Toolbox]({%slug add-custom-items-to-diagram-toolbox%})
