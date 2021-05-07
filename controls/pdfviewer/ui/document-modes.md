@@ -72,3 +72,4 @@ Me.RadPdfViewer1.FitToWidth = True
 * [Getting Started]({%slug winforms/pdfviewer/getting-started%})
 * [Context Menu]({%slug winforms/pdfviewer/ui/context-menu%})
 * [View Modes]({%slug winforms/pdfviewer/ui/viewer-modes%})
+* [Fit to Width RadPdfViewer and Scroll to the Clicked Position]({%slug fit-to-width-pdf-and-locate-clicked-position%})
