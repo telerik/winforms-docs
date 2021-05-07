@@ -23,7 +23,7 @@ Select **RadCallout** and click the small arrow on the top right position in ord
 
 It is possible to associate any control available on the form. UserControls are also supported. Just set the **Associated Control** property from the Smart Tag.
 
-* **AssociatedControl**: allows you to set the associated  .
+* **AssociatedControl**: allows you to set the associated control.
 
 * **Learning Center**: Navigate to the Telerik help, code library projects or support forum.
 

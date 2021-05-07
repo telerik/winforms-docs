@@ -31,7 +31,7 @@ If the target control is close to one of the monitor's edges (e.g. the left edge
 
 ## AutoClose
 
-The **AutoClose** property indicates whether the callout will automatically close. If *true*, the Mouse is captured in the callout and the callout form will be automatically closed if user clicks outside the callout's bounds or navigate to another application.
+The **AutoClose** property indicates whether the callout will automatically close. If *true*, the Mouse is captured in the callout and the callout form will be automatically closed if the user clicks outside the callout's bounds or navigate to another application.
 
 >caption AutoClose=true
 

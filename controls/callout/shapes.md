@@ -36,8 +36,8 @@ CTAControlName: Callout
 
 ![callout-shapes 002](images/callout-shapes002.png)
 
-{{source=..\SamplesCS\Callout\CalloutSettings.cs region=Rectangle}} 
-{{source=..\SamplesVB\Callout\CalloutSettings.vb region=Rectangle}} 
+{{source=..\SamplesCS\Callout\CalloutSettings.cs region=RoundedRectangle}} 
+{{source=..\SamplesVB\Callout\CalloutSettings.vb region=RoundedRectangle}} 
 
 ````C#
 
