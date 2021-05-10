@@ -22,4 +22,18 @@ The Ctrl keyboard combinations supported by the **RadTextBoxControl** are listed
 |Ctrl+Shift+Right|Select the word the right begging from the current position of the caret.|
 |Ctrl+Z|Perform Undo operation.|
 |Ctrl+Y|Perform Redo operation.|
+|Ctrl+X|Cut the selected text.|
+|Ctrl+C|Copy the selected text.|
+|Ctrl+V|Paste the selected text.|
+|Ctrl+A|Select all the text.|
+
+
+# See Also
+
+* [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
+* [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
+* [Structure]({%slug winforms/editors/textboxcontrol/element-structure-and-document-object-model%})
+* [Properties and Events]({%slug winforms/editors/textboxcontrol/properties%})
+* [Text editing]({%slug winforms/editors/textboxcontrol/text-editing%})
+* [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})
 
