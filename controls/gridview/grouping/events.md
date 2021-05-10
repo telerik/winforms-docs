@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events - WinForms GridView Control
-description:Learn how to use the GroupByChanged and GroupByChanging events to control the groping operation.
+description: Learn how to use the GroupByChanged and GroupByChanging events to control the groping operation.
 slug: winforms/gridview/grouping/events
 tags: events
 published: True

@@ -28,7 +28,7 @@ You can review below the [Key Features]({%slug winforms/listview%}#key-features)
 
 ## Key Features
 
-* __DataBinding__: [Data binding]({%slug databinding%}) is a mechanism for automatic population of the **RadListView** with items, based on the provided data structure. **RadListView** support data binding either at design time or at run time. 
+* __DataBinding__: [Data binding]({%slug winforms/listview/data-binding%}) is a mechanism for automatic population of the **RadListView** with items, based on the provided data structure. **RadListView** support data binding either at design time or at run time. 
 
 * __ViewTypes__: RadListView supports three ViewTypes – [ListView](https://docs.telerik.com/devtools/winforms/controls/listview/views#listview), [IconView](https://docs.telerik.com/devtools/winforms/controls/listview/views#iconsview) and [DetailView](https://docs.telerik.com/devtools/winforms/controls/listview/views#detailsview). With RadListView you can customize its appearance in order to fit your needs.
 

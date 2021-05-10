@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview - WinForms Swiss QR Barcode Control
-description:  
+description: WinForms Swiss QR Barcode encodes all the information necessary for a payment in specific format and structure.  
 slug: winforms-2d-barcodes-swissqrcode-overview 
 tags: barcode, qrcode
 published: True

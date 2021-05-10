@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-[RadDiagramToolbox]({%slug %}) introduces a set of shapes that can be dragged to a **RadDiagram**. This tutorial aims to show a sample approach how to add a custom item along with the default items in the diagram toolbox.
+[RadDiagramToolbox]({%slug winforms/diagram/toolbox%}) introduces a set of shapes that can be dragged to a **RadDiagram**. This tutorial aims to show a sample approach how to add a custom item along with the default items in the diagram toolbox.
 
 ![add-custom-items-to-diagram-toolbox 001](images/add-custom-items-to-diagram-toolbox.gif) 
 
