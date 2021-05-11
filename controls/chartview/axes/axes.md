@@ -156,3 +156,4 @@ End Sub
 * [Getting Started]({%slug winforms/chartview/getting-started%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
 * [Series Types]({%slug winforms/chartview-/series-types%})
+* [Tips and Tricks to Optimize RadChartView's Performance]({%slug tips-and-tricks-to-optimize-performance-in-chartview%})
