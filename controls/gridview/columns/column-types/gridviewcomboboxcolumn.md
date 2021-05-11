@@ -497,3 +497,5 @@ End Class
 
 * [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
 
+* [Display Text for Invalid Values in GridView's Combobox Column]({%slug display-text-for-invalid-values-in-grid-combobox-column%})
+
