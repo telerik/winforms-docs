@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Localization - WinForms RichTextEditor Control
+description: To change the default English localization provider in WinForms RichTextEditor, you should use the CurrentProvider static property of the RichTextBoxLocalizationProvider class.
 slug: winforms/richtexteditor/localization
 tags: localization
 published: True

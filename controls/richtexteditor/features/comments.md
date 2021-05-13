@@ -1,7 +1,7 @@
 ---
 title: Comments
-page_title: Comments | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Comments - WinForms RichTextEditor Control
+description: WinForms RichTextEditor provides functionality for inserting comment annotations inside the document. You can programmatically insert and delete comments though the RadDocumentEditor.
 slug: winforms/richtexteditor-/features/comments
 tags: comments
 published: True

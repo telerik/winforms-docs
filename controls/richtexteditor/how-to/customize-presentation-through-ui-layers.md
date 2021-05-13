@@ -1,7 +1,7 @@
 ---
 title: Customize Presentation through UI Layers
-page_title: Customize Presentation through UI Layers | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Customize Presentation through UI Layers - WinForms RichTextEditor Control
+description: UILayers provide an extensible approach to showing different parts of WinForms RichTextEditor Document. 
 slug: winforms/richtexteditor-/how-to/customize-presentation-through-ui-layers
 tags: customize,presentation,through,ui,layers
 published: True

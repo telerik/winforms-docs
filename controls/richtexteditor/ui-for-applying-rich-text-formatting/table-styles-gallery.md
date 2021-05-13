@@ -1,7 +1,7 @@
 ---
 title: Table Styles Gallery
-page_title: Table Styles Gallery | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Table Styles Gallery - WinForms RichTextEditor Control
+description: TableStylesGallery in WinForms RichTextEditor was introduced as a way to easily create, delete, modify and apply table styles in a document.
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/table-styles-gallery
 tags: table,styles,gallery
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Footnotes and Endnotes
-page_title: Footnotes and Endnotes | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Footnotes and Endnotes - WinForms RichTextEditor Control
+description: Footnotes and endnotes (or just notes) in  WinForms RichTextEditor are used in documents and books to show the source of borrowed material or to enter explanatory or supplementary information.
 slug: winforms/richtexteditor-/features/references/footnotes-and-endnotes
 tags: footnotes,and,endnotes
 published: True

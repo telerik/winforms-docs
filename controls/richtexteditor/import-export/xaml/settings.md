@@ -1,7 +1,7 @@
 ---
 title: Settings
-page_title: Settings | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Settings - WinForms RichTextEditor Control
+description: XamlFormatProvider allows for import of XAML documents and respectively export of WinForms RichTextEditor to XAML file.
 slug: winforms/richtexteditor/import-export/xaml/settings
 tags: import/export
 published: True

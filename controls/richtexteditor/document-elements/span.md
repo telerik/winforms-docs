@@ -1,7 +1,7 @@
 ---
 title: Span
-page_title: Span | RadRichTextEditor
-description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
+page_title: Span - WinForms RichTextEditor Control
+description: Span class represents an inline object that allows you to display formatted text. A Span can only be used in the context of a Paragraph in WinForms RichTextEditor.
 slug: winforms/richtexteditor-/document-elements/span
 tags: span
 published: True

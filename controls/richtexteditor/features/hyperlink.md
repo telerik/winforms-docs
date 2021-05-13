@@ -1,7 +1,7 @@
 ---
 title: Hyperlink
-page_title: Hyperlink | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Hyperlink - WinForms RichTextEditor Control
+description: WinForms RichTextEditor supports having a hyperlink span several paragraphs and being able to embed all kind of elements inside hyperlinks, e.g. images, tables and table elements.
 slug: winforms/richtexteditor-/features/hyperlink
 tags: hyperlink
 published: True

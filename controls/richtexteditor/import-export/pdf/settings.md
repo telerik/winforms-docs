@@ -1,7 +1,7 @@
 ---
 title: Settings
-page_title: Settings | RadRichTextEditor
-description: PdfFormatProvider allows for export of PDF documents and respectively export of RadRichTextEditor to Pdf. The export settings provide modification options
+page_title: Settings - WinForms RichTextEditor Control
+description: PdfFormatProvider allows for export of PDF documents and respectively export of WinForms RichTextEditor to Pdf. The export settings provide modification options.
 slug: winforms/richtexteditor/import-export/pdf/settings
 tags: import/export
 published: True

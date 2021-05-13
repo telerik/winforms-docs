@@ -1,7 +1,7 @@
 ---
 title: Using PdfFormatProvider
-page_title: Using PdfFormatProvider | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Using PdfFormatProvider - WinForms RichTextEditor Control
+description: PdfFormatProvider makes it easy to export RadDocument to PDF format, preserving the entire document structure and formatting in WinForms RichTextEditor.
 slug: winforms/richtexteditor/import-export/pdf/pdfformatprovider
 tags: import/export
 published: True

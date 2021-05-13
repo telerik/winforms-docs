@@ -1,7 +1,7 @@
 ---
-title: Overview
-page_title: Styles Overview| RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+title: Styles Overview
+page_title: Styles Overview - WinForms RichTextEditor Control
+description: WinForms RichTextEditor supports Styles similar to the ones in Microsoft Office. Styles can be created and added to a document programmatically or via the Styles dialog. 
 slug: winforms/richtexteditor/features/styles
 tags: styles
 published: True
@@ -11,7 +11,7 @@ previous_url: richtexteditor-features-styles
 
 # Styles
 
-__RadRichTextEditor__ supports *Styles* similar to the ones in Microsoft Office.
+__RadRichTextEditor__ sccc
       
 Styles can be created and added to a document programmatically or via the __Styles__ dialog. In addition, styles can be instantiated from a **docx** or a **XAML** document on import, to provide for a consistent look of the document and richer editing capabilities.
 

@@ -1,7 +1,7 @@
 ---
 title: History
-page_title: History | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: History - WinForms RichTextEditor Control
+description: RadDocument used in WinForms RichTextEditor can track the history of any actions taken against its content. In this way it allows an undo and redo functionality to be easily implemented.
 slug: winforms/richtexteditor-/features/history
 tags: history
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Inline Image
-page_title: Inline Image | RadRichTextEditor
-description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
+page_title: Inline Image - WinForms RichTextEditor Control
+description: Winforms RadRichTextEditor supports ImageInline that allows images to be displayed inside the document.
 slug: winforms/richtexteditor-/document-elements/inline-image
 tags: inline,image
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Ribbon UI
-page_title: Ribbon UI | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Ribbon UI - WinForms RichTextEditor Control
+description: WinForms RichTextEditorRibbonUI is a ribbon control that has been wired to work with the API that RichTextEditor exposes.
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui
 tags: ribbon,ui
 published: True

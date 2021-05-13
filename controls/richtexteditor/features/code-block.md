@@ -1,7 +1,7 @@
 ---
 title: Code Block
-page_title: Code Block | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Code Block - WinForms RichTextEditor Control
+description: Code blocks in WinForms RichTextEditor allow users to add source code fragments to their document and using the existing functionality to format and style those fragments.
 slug: winforms/richtexteditor-/features/code-block
 tags: code,block
 published: True

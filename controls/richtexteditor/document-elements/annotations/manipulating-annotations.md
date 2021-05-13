@@ -1,7 +1,7 @@
 ---
 title: Manipulating Annotations
-page_title: Manipulating Annotations | RadRichTextEditor
-description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
+page_title: Manipulating Annotations - WinForms RadRichTextEditor Control
+description: Learn which are the most commonly used manipulations with regard to Annotations in the WinForms RadRichTextEditor control.
 slug: winforms/richtexteditor-/document-elements/annotations/manipulating-annotations
 tags: manipulating,annotations
 published: True

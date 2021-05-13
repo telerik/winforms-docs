@@ -1,7 +1,7 @@
 ---
 title: Selection
-page_title: Selection | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Selection - WinForms RichTextEditor Control
+description: Winforms RichTextEditor supports not only selection via the UI, but also selection via code.
 slug: winforms/richtexteditor-/features/selection
 tags: selection
 published: True

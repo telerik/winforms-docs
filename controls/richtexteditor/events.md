@@ -1,7 +1,7 @@
 ---
 title: Events
-page_title: Events | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Events - WinForms RichTextEditor Control
+description: Learn what are the public events that WinForms RichTextEditor offers. 
 slug: winforms/richtexteditor/events
 tags: events
 published: True

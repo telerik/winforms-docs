@@ -1,7 +1,7 @@
 ---
 title: Paragraph
-page_title: Paragraph | RadRichTextEditor
-description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
+page_title: Paragraph - WinForms RichTextEditor Control
+description: Get familiar with the the paragraph class in WinForms RichTextEditor that allows you to separate the content into paragraphs.
 slug: winforms/richtexteditor-/document-elements/paragraph
 tags: paragraph
 published: True

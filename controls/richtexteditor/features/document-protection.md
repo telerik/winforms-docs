@@ -1,7 +1,7 @@
 ---
 title: Document Protection
-page_title: Document Protection | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Document Protection - WinForms RichTextEditor Control
+description: Document Protection in WinForms RichTextEditor allows defining and enforcing different editing restrictions in the document for a set of users and groups.
 slug: winforms/richtexteditor-/features/document-protection
 tags: document,protection
 published: True

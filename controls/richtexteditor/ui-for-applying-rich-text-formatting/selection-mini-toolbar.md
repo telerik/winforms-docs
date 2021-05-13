@@ -1,7 +1,7 @@
 ---
 title: Selection Mini Toolbar
-page_title: Selection Mini Toolbar | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Selection Mini Toolbar - WinForms RichTextEditor Control
+description: SelectionMiniToolBar is a floating toolbar that appears next to the current position after making a selection with the mouse in the document.
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/selection-mini-toolbar
 tags: selection,mini,toolbar
 published: True

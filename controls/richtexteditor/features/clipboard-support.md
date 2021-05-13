@@ -1,7 +1,7 @@
 ---
 title: Clipboard Support
-page_title: Clipboard Support | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Clipboard Support - WinForms RichTextEditor Control
+description: WinForms RichTextEditor takes advantage of the clipboard support. Learn what are the supported formats  and how to choose which input to use and further customize the way the text will look when pasted.      
 slug: winforms/richtexteditor-/features/clipboard-support
 tags: clipboard,support
 published: True

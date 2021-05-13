@@ -1,7 +1,7 @@
 ---
 title: Track Changes
-page_title: Track Changes | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Track Changes - WinForms RichTextEditor Control
+description: Track Changes is a way for WinForms RichTextEditor to keep track of the changes you make to a document.
 slug: winforms/richtexteditor-/features/track-changes
 tags: track,changes
 published: True

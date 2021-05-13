@@ -1,7 +1,7 @@
 ---
 title: Format Painter
-page_title: Format Painter | RadRichTextEditor
-description: The Format Painter feature in RadRichTextBox enables you to copy the formatting of a document element and apply it to other elements.
+page_title: Format Painter - WinForms RichTextEditor Control
+description: The Format Painter feature in WinForms RichTextBox enables you to copy the formatting of a document element and apply it to other elements.
 slug: winforms/richtexteditor/features/format-painter
 tags: format, painter
 published: True

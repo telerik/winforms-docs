@@ -1,7 +1,7 @@
 ---
 title: Settings
-page_title: Settings | RadRichTextEditor
-description: The import, export settings provide modification options. The current article outlines the available settings. 
+page_title: Settings - WinForms RichTextEditor Control
+description: HtmlFormatProvider allows for import of HTML documents and respectively export of WinForms RichTextEditor to HTML. 
 slug: winforms/richtexteditor/import-export/html/settings
 tags: import/export
 published: True

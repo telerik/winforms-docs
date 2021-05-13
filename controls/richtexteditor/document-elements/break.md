@@ -1,7 +1,7 @@
 ---
 title: Break
-page_title: Break | RadRichTextEditor
-description: Break element is an inline-level flow content element, which indicates that a break should be placed at the current position.
+page_title: Break - WinForms RadRichTextEditor Control 
+description: Break element in the WinForms RadRichTextEditor control is an inline-level flow content element, which indicates that a break should be placed at the current position.
 slug: winforms/richtextEditor/break
 tags: properties,and,methods
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Document Variables
-page_title: Document Variables | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Document Variables - WinForms RichTextEditor Control
+description: Document variables in WinForms RichTextEditor provide a mechanism to store information in the document. It is possible to define nested fields and can be used as the backbone of master-detail mail merge.      
 slug: winforms/richtexteditor-/features/fields-and-document-variables/document-variables
 tags: document,variables
 published: True

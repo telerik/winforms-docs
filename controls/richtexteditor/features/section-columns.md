@@ -1,7 +1,7 @@
 ---
 title: Section Columns
-page_title: Section Columns | RadRichTextEditor
-description: This article describes how you arrange your text in columns.
+page_title: Section Columns - WinForms RichTextEditor Control
+description: With the Section Columns feature, WinForms RichTextEditor allows you arrange the text in a section into columns.
 slug: winforms/richtextEditor/section-columns
 tags: properties,and,methods
 published: True
@@ -10,7 +10,7 @@ position: 9
 
 # Section Columns
 
-With the Section Columns feature, __RadRichTextBox__ allows you arrange the text in a section into columns. This article will show you how to arrange the text into columns with different or customized width and set a separator between them.
+With the Section Columns feature, __RadRichTextEditor__ allows you arrange the text in a section into columns. This article will show you how to arrange the text into columns with different or customized width and set a separator between them.
 
 * [SectionColumn Class](#sectioncolumn-class)
 

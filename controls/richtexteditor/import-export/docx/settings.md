@@ -1,7 +1,7 @@
 ---
 title: Settings
-page_title: Settings | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Settings - WinForms RichTextEditor Control
+description: DocxFormatProvider allows import of DOCX documents and respectively export of RadDocument to DOCX. 
 slug: winforms/richtexteditor/import-export/docx/settings
 tags: import/export
 published: True

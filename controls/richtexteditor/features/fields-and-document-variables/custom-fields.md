@@ -1,7 +1,7 @@
 ---
 title: Custom Fields
-page_title: Custom Fields | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Custom Fields - WinForms RichTextEditor Control
+description: Fields In WinForms RichTextEditor are a convenient way to show non-static data in the document. It is possible to present different data to the end-user without actually changing the document content.
 slug: winforms/richtexteditor-/features/fields-and-document-variables/custom-fields
 tags: custom,fields
 published: True

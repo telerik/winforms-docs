@@ -1,7 +1,7 @@
 ---
 title: Docx
-page_title: Docx | RadRichTextEditor
-description: Docx, a part of Office Open XML standard, is a zipped, XML-based file format developed by Microsoft for representing word processing document and is one of the supported formats by RadRichTextEditor
+page_title: Docx - WinForms RichTextEditor Control
+description: Docx, a part of Office Open XML standard, is a zipped, XML-based file format developed by Microsoft for representing word processing document and is one of the supported formats by WinForms RichTextEditor.
 slug: winforms/richtexteditor/import-export/docx/docx
 tags: import/export
 published: True

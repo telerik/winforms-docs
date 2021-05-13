@@ -1,7 +1,7 @@
 ---
 title: Positioning
-page_title: Positioning | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Positioning - WinForms RichTextEditor Control
+description: The positioning feature in the WinForms RichTextEditor is used to navigate through document's content and to get information about the document's elements at a specific position.
 slug: winforms/richtexteditor-/features/positioning
 tags: positioning
 published: True

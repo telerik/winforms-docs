@@ -1,7 +1,7 @@
 ---
 title: Using TxtFormatProvider
-page_title: Using TxtFormatProvider | RadRichTextEditor
-description: TxtFormatProvider makes it easy to import and export RadDocument to/from plain text format, preserving the document structure. 
+page_title: Using TxtFormatProvider - WinForms RichTextEditor Control
+description: TxtFormatProvider makes it easy to import and export RadDocument to/from plain text format, preserving the document structure in WinForms RichTextEditor. 
 slug: winforms/richtexteditor/import-export/plain-text/txtformatprovider
 tags: import/export
 published: True

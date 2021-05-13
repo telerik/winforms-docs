@@ -1,7 +1,7 @@
 ---
 title: Captions for tables and Figures
-page_title: Captions for tables and Figures | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Captions for tables and Figures - WinForms RichTextEditor Control
+description: In WinForms RichTextEditor you can easily insert images, tables, etc. Now it is possible to label these by inserting captions. Learn how to define an image or a table and then refer to it later.
 slug: winforms/richtexteditor-/features/references/captions-for-tables-and-figures
 tags: captions,for,tables,and,figures
 published: True

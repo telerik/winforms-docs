@@ -1,7 +1,7 @@
 ---
 title: Using HtmlFormatProvider
-page_title: Using HtmlFormatProvider | RadRichTextEditor
-description: HtmlFormatProvider makes it easy to import and export RadDocument to/from HTML format, preserving as much as possible of the document structure and formatting.
+page_title: Using HtmlFormatProvider - WinForms RichTextEditor Control
+description: HtmlFormatProvider makes it easy to import and export RadDocument to/from HTML format, preserving as much as possible of the document structure and formatting in WinForms RichTextEditor.
 slug: winforms/richtexteditor/import-export/html/htmlformatprovider
 tags: import/export
 published: True

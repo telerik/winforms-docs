@@ -1,7 +1,7 @@
 ---
 title: RadDocument
-page_title: RadDocument | RadRichTextEditor
-description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
+page_title: RadDocument - WinForms RichTextEditor Control
+description: RadDocument is the root element for WinForms RadRichTextEditor's content. It holds the collection of Sections defined for the RadRichTextEditor's content.
 slug: winforms/richtexteditor-/document-elements/raddocument
 tags: raddocument
 published: True

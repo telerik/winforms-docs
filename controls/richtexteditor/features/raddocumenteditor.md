@@ -1,7 +1,7 @@
 ---
 title: RadDocumentEditor
-page_title: RadDocumentEditor | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: RadDocumentEditor - WinForms RichTextEditor Control
+description: RadDocument is the main document unit in WinForms RichTextEditor. It has API of its own for adding and removing Blocks and Inlines from the document.
 slug: winforms/richtexteditor-/features/raddocumenteditor
 tags: raddocumenteditor
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Cross Reference
-page_title: Cross Reference | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Cross Reference - WinForms RichTextEditor Control
+description: Cross-References in WinForms RichTextEditor represent fields that refer to a part of the document. When that part changes, these fields can be updated to reflect the change. 
 slug: winforms/richtexteditor-/features/references/cross-reference
 tags: cross,reference
 published: True

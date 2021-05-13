@@ -1,7 +1,7 @@
 ---
 title: Printing
-page_title: Printing | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Printing - WinForms RichTextEditor Control
+description: WinForms RichTextEditor allows printing theRadDocument instance shown in it.
 slug: winforms/richtexteditor-/printing
 tags: printing
 published: True

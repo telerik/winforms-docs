@@ -1,7 +1,7 @@
 ---
 title: Table
-page_title: Table | RadRichTextEditor
-description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
+page_title: Table - WinForms RichTextEditor Control
+description: WinForms RichTextEditor is capable of displaying tables. Learn how to add a table to the document.
 slug: winforms/richtexteditor-/document-elements/table
 tags: table
 published: True

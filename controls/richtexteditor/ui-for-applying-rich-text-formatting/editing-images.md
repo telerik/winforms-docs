@@ -1,7 +1,7 @@
 ---
 title: Editing Images
-page_title: Editing Images | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Editing Images - WinForms RichTextEditor Control
+description: WinForms RichTextEditor allows editing images that have been inserted in the editor.
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/editing-images
 tags: editing,images
 published: True
@@ -17,7 +17,7 @@ This topic contains the following sections:
 
 * [Disable Image Editing Capabilities](#disable-image-editing-capabilities)
 
-__RadRichTextEditor__ allow editing images that have been inserted in the editor. Currently, you can resize, rotate and drag and drop images. The supported image formats are as follows:
+__RadRichTextEditor__ allows editing images that have been inserted in the editor. Currently, you can resize, rotate and drag and drop images. The supported image formats are as follows:
       
 * JPEG
 

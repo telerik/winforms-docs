@@ -1,7 +1,7 @@
 ---
 title: Spellcheck
-page_title: Spellcheck | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Spellcheck - WinForms RichTextEditor Control
+description: WinForms RichTextEditor is designed to support "spell checking as you type" by setting a single property and specifying a proper dictionary to it.
 slug: winforms/richtexteditor-/features/spellcheck
 tags: spellcheck
 published: True

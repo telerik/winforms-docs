@@ -1,7 +1,7 @@
 ---
 title: Section
-page_title: Section | RadRichTextEditor
-description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
+page_title: Section - WinForms RichTextEditor Control
+description: Section class in WinForms RichTextEditor allows you to separate the content into sections. Sections are chunks of the document that can be displayed on one or several pages.
 slug: winforms/richtexteditor-/document-elements/section
 tags: section
 published: True

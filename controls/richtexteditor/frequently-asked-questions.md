@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Questions
-page_title: Frequently Asked Questions | RadRichTextEditor
-description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
+page_title: Frequently Asked Questions - WinForms RichTextEditor Control
+description: Get familiar with some of the frequently asked questions about the use of WinForms RichTextEditor.
 slug: winforms/richtexteditor-/frequently-asked-questions
 tags: frequently,asked,questions
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Xaml
-page_title: Xaml | RadRichTextEditor
-description:   XAML language is the native RadRichTextEditor document format.
+page_title: Xaml - WinForms RichTextEditor Control
+description: XAML language is the native WinForms RichTextEditor's document format.
 slug: winforms/richtexteditor/import-export/xaml/xaml
 tags: import/export
 published: True

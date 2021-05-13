@@ -1,7 +1,7 @@
 ---
 title: Bibliographic References
-page_title: Bibliographic References | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Bibliographic References - WinForms RichTextEditor Control
+description: Bibliographic references in WinForms RichTextEditor represent links (in the form of text) to documents, books, films and everything that can be cited in a Word document.
 slug: winforms/richtexteditor-/features/references/bibliographic-references
 tags: bibliographic,references
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Custom Annotations
-page_title: Custom Annotations | RadRichTextEditor
-description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
+page_title: Custom Annotations - WinForms RichTextEditor Control
+description: WinForms RadRichTextEditor offers custom annotation ranges which provide an approach for extending the document model to serve specific purposes such as persisting semantic information in the document.
 slug: winforms/richtexteditor-/document-elements/annotations/custom-annotations
 tags: custom,annotations
 published: True

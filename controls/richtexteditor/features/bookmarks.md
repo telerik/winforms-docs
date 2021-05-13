@@ -1,7 +1,7 @@
 ---
 title: Bookmarks
-page_title: Bookmarks | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Bookmarks - WinForms RichTextEditor Control
+description: Bookmarks in WinForms RichTextEditor are a powerful tool for marking parts of the document, which can be later retrieved and reviewed. 
 slug: winforms/richtexteditor-/features/bookmarks
 tags: bookmarks
 published: True

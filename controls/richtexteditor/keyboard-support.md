@@ -1,7 +1,7 @@
 ---
 title: Keyboard Support
-page_title: Keyboard Support | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+page_title: Keyboard Support - WinForms RichTextEditor Control
+description: WinForms RichTextEditor supports shortcuts. There are default key-bindings defined for the most widely used operations.
 slug: winforms/richtexteditor-/keyboard-support
 tags: keyboard,support
 published: True

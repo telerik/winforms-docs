@@ -1,7 +1,7 @@
 ---
 title: Headers and Footers
-page_title: Headers and Footers | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Headers and Footers - WinForms RichTextEditor Control
+description: WinForms RichTextEditor supports Headers and Footers in its document when in Paged layout mode.
 slug: winforms/richtexteditor-/features/headers-and-footers
 tags: headers,and,footers
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Context Menu
-page_title: Context Menu | RadRichTextEditor
-description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+page_title: Context Menu - WinForms RichTextEditor Control
+description: WinForms RichTextEditor has a built-in context menu feature which can be used to easily customize different elements in a document.
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/context-menu
 tags: context,menu
 published: True
