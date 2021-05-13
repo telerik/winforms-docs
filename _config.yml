@@ -1661,6 +1661,7 @@ intro_columns:
       "TrackBar": "winforms/track-and-status-controls/trackbar"
       "WaitingBar": "winforms/track-and-status-controls/waitingbar"
       "VirtualKeyboard": "winforms-virtual-keyboard-overview"
+      "Callout": "callout-overview"
   -
     title: "Forms & Dialogs"
     items:
