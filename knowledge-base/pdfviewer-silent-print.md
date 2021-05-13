@@ -78,6 +78,18 @@ End Sub
 
 >note If you don't assign the RadPrintDocument.PrintController property, then you get a default print controller. An instance of **PrintControllerWithStatusDialog** which displays the progress dialog, counting pages. If you don't want to show the small printing dialog counting the pages, you can initialize the RadPrintDocument.**PrintController** property to a new System.Drawing.Printing.**StandardPrintController** instance.
 
+## Assembly References
+
+If you add the RadPdfViewer at run time you need to add references to the following assemblies:
+
+* Telerik.WinControls.PdfViewer
+* Telerik.WinControls
+* Telerik.WinControls.UI
+* TelerikCommon
+* Telerik.Windows.Documents.Fixed
+* Telerik.Windows.Documents.Core
+* Telerik.Windows.Zip.dll
+
 # See Also
 
 * [RadPdfViewer]({%slug winforms/pdfviewer%})
