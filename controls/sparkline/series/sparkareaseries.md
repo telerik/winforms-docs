@@ -1,7 +1,7 @@
 ---
 title: SparkAreaSeries
-page_title: RadSparkline SparkAreaSeries
-description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+page_title: SparkAreaSeries - WinForms Sparkline Control
+description: SparkAreaSeries plots its data points using CategoricalSparkDataPoints. learn how to fill it with data.
 slug: radsparkline-sparkareaseries
 tags: sparkline
 published: True

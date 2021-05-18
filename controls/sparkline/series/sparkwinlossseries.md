@@ -1,7 +1,7 @@
 ---
 title: SparkWinLossSeries
-page_title: RadSparkline SparkWinLossSeries
-description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+page_title: SparkWinLossSeries - WinForms Sparkline Control
+description: Win Loss Chart provides a quick way of seeing overall situation of a series of data at glance. It shows positive and negative values in a distinctive way. 
 slug: radsparkline-sparkwinlossseries
 tags: sparkline
 published: True

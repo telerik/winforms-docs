@@ -1,7 +1,7 @@
 ---
 title: Localization
-page_title: Localization
-description: Localization
+page_title: Localization - WinForms Spreadsheet Control
+description: To change the default English localization provider in WinForms Spreadsheet, use the CurrentProvider static property of the SpreadsheetLocalizationProvider class.
 slug: radspreadsheet-localization
 tags: localization
 published: True

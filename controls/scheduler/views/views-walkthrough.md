@@ -1,7 +1,7 @@
 ---
 title: Views Walkthrough
-page_title: Views Walkthrough | RadScheduler
-description: The tutorial demonstrates how the scheduler view can be changed dynamically.
+page_title: Views Walkthrough - WinForms Scheduler Control
+description: Learn how the scheduler view can be changed dynamically.
 slug: winforms/scheduler/views/views-walkthrough
 tags: views,walkthrough
 published: True

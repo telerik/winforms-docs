@@ -1,7 +1,7 @@
 ---
 title: Hide Row and Column Headers and Gridlines
-page_title: Hide Row and Column Headers and Gridlines
-description: Hide Row and Column Headers and Gridlines
+page_title: Hide Row and Column Headers and Gridlines - WinForms Spreadsheet Control
+description: Row and Column headings, as well as worksheet gridlines, are handy when creating or editing a document in WinForms Spreadsheet. Learn how to hide them to make the spreadsheet more clean and presentable. 
 slug: radspreadsheet-howto-hide-row-column-headers-and-gridlines
 tags: hide,row,and,column,headers,and,gridlines
 published: True

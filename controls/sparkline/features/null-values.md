@@ -1,7 +1,7 @@
 ---
 title: Null Values Support
-page_title: RadSparkline NUll Values Support 
-description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+page_title: Null Values Support - WinForms Sparkline Control 
+description: The EmptyPointBehavior property controls what happens with null points in WinForms Sparkline.
 slug: radsparkline-null-values
 tags: sparkline
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | RadProgressBar
-description: RadProgressBar is designed to display progress information to the user during a long-running operation.  
+page_title: Accessing and Customizing Elements - WinForms ProgressBar
+description: Learn how to access and customize elements either at design time, or at run time. 
 slug: winforms/track-and-status-controls/progressbar/accessing-and-customizing-elements
 tags: progressbar
 published: True

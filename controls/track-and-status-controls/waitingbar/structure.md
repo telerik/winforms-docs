@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadWaitingBar
-description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
+page_title: Structure - WinForms WaitingBar Control
+description: Get familiar with the internal elements structure of WinForms WaitingBar.
 slug: winforms/track-and-status-controls/waitingbar/structure
 tags: control,element,structure
 published: True

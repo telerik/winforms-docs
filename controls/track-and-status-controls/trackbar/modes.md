@@ -1,7 +1,7 @@
 ---
 title: Modes
-page_title: Modes | RadTrackBar
-description: RadTrackBar, sometimes called a slider control, can be used for navigating a large amount of information or for visually adjusting a numeric setting.
+page_title: Modes - WinForms TrackBar
+description: WinForms TrackBar supports three different modes - SingleThumb, StartFromTheBeginning and Range.
 slug: winforms/track-and-status-controls/trackbar/modes
 tags: modes
 published: True

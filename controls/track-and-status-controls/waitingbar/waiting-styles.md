@@ -1,7 +1,7 @@
 ---
 title: Waiting Styles
-page_title: Waiting Styles | RadWaitingBar
-description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
+page_title: Waiting Styles - WinForms WaitingBar Control
+description: WinForms WaitingBar offers the WaitingStyle property that determines the style for indicating the long-lasting operation. Get familiar with the available styles.
 slug: winforms/track-and-status-controls/waiting-styles
 tags: waitingbar
 published: True

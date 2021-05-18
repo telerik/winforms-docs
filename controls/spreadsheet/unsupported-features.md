@@ -1,7 +1,7 @@
 ---
 title: Unsupported Features
-page_title: Unsupported Features | RadSpreadsheet
-description: This article lists some of the popular features available in Microsoft Office Excel which are not supported in RadSpreadsheet.
+page_title: Unsupported Features - WinForms Spreadsheet Control
+description: Get familiar with some of the popular features available in Microsoft Office Excel which are not supported in WinForms Spreadsheet.
 slug: radspreadsheet-unsupported-features
 tags: unsupported,features
 published: True

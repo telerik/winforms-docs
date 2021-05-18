@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadTreeView
-description: This article shows which are the elements used for the nodes in RadTreeView, it shows the elements hierarchy as well.
+page_title: Structure - WinForms TreeView Control
+description: Learn which are the elements used for the nodes in WinForms TreeView, it shows the elements hierarchy as well.
 slug: winforms/treeview/structure
 tags: treeview,structure
 published: True

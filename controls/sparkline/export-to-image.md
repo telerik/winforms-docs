@@ -1,7 +1,7 @@
 ---
 title: Export to Image
-page_title: RadSparkline Export to Image
-description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+page_title: Export to Image - WinForms Sparkline Control
+description: The WinForms Sparkline control supports exporting to an image out of the box via the ExportToImage method.
 slug: radsparkline-export-to-image
 tags: sparkline
 published: True

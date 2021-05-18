@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadRating
-description: RadRating is a flexible UI component that allows users to place their rating by selecting from a finite number of items (stars, diamonds and hearts).
+page_title: Structure - WinForms Rating Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms Rating control.
 slug: winforms/track-and-status-controls/rating/structure
 tags: structure
 published: True

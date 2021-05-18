@@ -1,7 +1,7 @@
 ---
 title: Formatting Appointments
-page_title: Formatting appointments | RadScheduler
-description: Appointments appearance in RadScheduler can be customized using the AppointmentFormatting event.
+page_title: Formatting appointments - WinForms Scheduler Control
+description: Appointments appearance in WinForms Scheduler can be customized using the AppointmentFormatting event.
 slug: winforms/scheduler/appearance/formatting-appointments
 tags: formatting,appointments
 published: True

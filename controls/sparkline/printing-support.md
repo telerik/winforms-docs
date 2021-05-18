@@ -1,7 +1,7 @@
 ---
 title: Printing Support
-page_title: RadSparkline Printing Support
-description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+page_title: Printing Support - WinForms Sparkline Control
+description: The WinForms Sparkline control supports printing out of the box by the Print or the PrintPreview methods.
 slug: radsparkline-printing
 tags: sparkline, printing 
 published: True

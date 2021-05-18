@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadProgressBar
-description: RadProgressBar is designed to display progress information to the user during a long-running operation.  
+page_title: Structure - WinForms ProgressBar
+description: Get familiar with the inner structure and organization of the elements which build the WinForms ProgressBar control.
 slug: winforms/track-and-status-controls/progressbar/control-element-structure
 tags: control,element,structure
 published: True

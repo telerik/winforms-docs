@@ -1,7 +1,7 @@
 ---
 title: Annotations
-page_title: RadSparkline Annotations
-description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+page_title: Annotations - WinForms Sparkline Control
+description: The WinForms Sparkline control supports annotations. They represent visual elements that can be used to highlight certain areas on the plot area and denote significant values.
 slug: radsparkline-annotations
 tags: sparkline, annotations
 published: True
@@ -10,7 +10,7 @@ position: 0
 
 # Annotations
 
- Annotations are visual elements that can be used to highlight certain areas on the plot area and denote significant values. The currently supported annotations are __Grid Line__ and __Plot Band__. This article shows examples for both.
+Annotations are visual elements that can be used to highlight certain areas on the plot area and denote significant values. The currently supported annotations are __Grid Line__ and __Plot Band__. This article shows examples for both.
 
 Common properties to the all types of annotations are:
 

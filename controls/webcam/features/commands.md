@@ -1,7 +1,7 @@
 ---
 title: Commands
-page_title: Commands | RadWebCam
-description: This article offers a full list of the actions that RadWebCam can execute.    
+page_title: Commands - WinForms WebCam Control
+description: Have a look at a full list of the actions that WinForms WebCam can execute.    
 slug: webcam-commands
 tags: webcam
 published: True

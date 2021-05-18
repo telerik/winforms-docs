@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: TreeView | RadTreeView
-description: Telerik RadTreeView is the supercharged tree view component for Windows Forms.
+page_title: Overview - WinForms TreeView Control
+description: WinForms TreeView facilitates display, management, and navigation of hierarchical data structures. The product offers many advanced features like drag-and-drop, load on demand, context menus and data binding. 
 slug: winforms/treeview
 tags: treeview
 published: True

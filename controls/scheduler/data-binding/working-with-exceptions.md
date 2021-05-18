@@ -1,7 +1,7 @@
 ---
 title: Working with Exceptions
-page_title: Working with Exceptions | RadScheduler
-description: An exception, in RadScheduler terms, is an appointment instance that does not fully conform to the rule that created it.
+page_title: Working with Exceptions - WinForms Scheduler Control
+description: An exception, in WinForms Scheduler terms, is an appointment instance that does not fully conform to the rule that created it. Learn how to add such exceptions.
 slug: winforms/scheduler/data-binding/working-with-exceptions
 tags: working,with,exceptions
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Import from ICalendar
-page_title: Import from ICalendar | RadScheduler
-description: RadScheduler allows you to import appointments from the industry-standard ICalendar format by using the Import method of the RadScheduler class.
+page_title: Import from ICalendar - WinForms Scheduler Control
+description: WinForms Scheduler allows you to import appointments from the industry-standard ICalendar format by using the Import method of the RadScheduler class.
 slug: winforms/scheduler/importing-and-exporting-appointments/import-from-icalendar
 tags: import,from,icalendar
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Dictionaries
-page_title: Dictionaries | RadSpellChecker
-description: RadSpellChecker enables developers to add multilingual spell checking capabilities to their WinForms applications.
+page_title: Dictionaries - WinForms SpellChecker
+description: WinForms SpellChecker comes with one predefined dictionary which checks the English language. Check what dictonaries are available. 
 slug: winforms/spellchecker/dictionaries
 tags: dictionaries
 published: True

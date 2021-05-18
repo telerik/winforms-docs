@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadTrackBar
-description: RadTrackBar, sometimes called a slider control, can be used for navigating a large amount of information or for visually adjusting a numeric setting. 
+page_title: Structure - WinForms TrackBar
+description: Get familiar with the inner structure and organization of the elements which build the WinForms TrackBar control. 
 slug: winforms/track-and-status-controls/trackbar/control-element-structure
 tags: control,element,structure
 published: True

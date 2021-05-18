@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadWaitingBar
-description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
+page_title: Design Time - WinForms WaitingBar Control
+description: Get familiar with the design time options of WinForms WaitingBar.
 slug: winforms/track-and-status-controls/wiating-bar/design-time
 tags: button, design-time
 published: True

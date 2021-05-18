@@ -1,7 +1,7 @@
 ---
 title: Right-to-Left support
-page_title: Right-to-Left support | RadScheduler
-description: RadScheduler supports Right-to-Left support layout and it can be enabled by setting the RightToLeft property to Yes.
+page_title: Right-to-Left support - WinForms Scheduler Control
+description: WinForms Scheduler supports Right-to-Left layout and it can be enabled by setting the RightToLeft property to Yes.
 slug: winforms/scheduler/localization/right-to-left-support
 tags: right-to-left,support
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Timeline View
-page_title: Timeline View | RadScheduler
-description: RadScheduler's Timeline view allows you to display appointments in horizontally arranged time slots. 
+page_title: Timeline View - WinForms Scheduler Control
+description: WinForms Scheduler's Timeline view allows you to display appointments in horizontally arranged time slots. 
 slug: winforms/scheduler/views/timeline-view
 tags: timeline,view
 published: True
@@ -18,6 +18,7 @@ RadScheduler's __Timeline__ view allows you to display appointments in horizonta
 The [Timeline View]({%slug winforms/scheduler/views/timeline-view%}) of the scheduler simply has a __Header__, __Columns__ for every hour/day/week/month and zero or more __Appointment Cells__. 
 
 >caption Figure 1: RadScheduler in Timeline View
+
 ![scheduler-views-timeline-view 001](images/scheduler-views-timeline-view001.gif)
 
 ## Set The Timeline View

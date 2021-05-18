@@ -1,7 +1,7 @@
 ---
 title: Data-Binding
-page_title: RadSparkline Data-Binding
-description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+page_title: Data-Binding - WinForms Sparkline Control
+description: The WinForms Sparkline control supports data-binding directly to IList, IListSource, IBindingList, etc. Learn how to populate it with data. 
 slug: radsparkline-data-binding
 tags: sparkline, data, binding
 published: True

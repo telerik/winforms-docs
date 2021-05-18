@@ -1,7 +1,7 @@
 ---
 title: Appointment Factory
-page_title: Appointment Factory | RadScheduler
-description: Represents an IAppointmentFactory responsible for the creation of Appointment instances in RadScheduler.
+page_title: Appointment Factory - WinForms Scheduler Control
+description: WinForms Scheduler uses a AppointmentFactory that is responsible for the creation of Appointment instances.
 slug: scheduler-appointment-factory
 tags: scheduler, appointment, factory
 published: True

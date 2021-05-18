@@ -1,7 +1,7 @@
 ---
 title: Scrolling
-page_title: Scrolling | RadVirtualGrid
-description: This article describes the different supported scrolling modes in RadVirtualGrid.
+page_title: Scrolling - WinForms VirtualGrid Control
+description: Get familiar with the different supported scrolling modes in WinForms VirtualGrid.
 slug: winforms/virtualgrid/scrolling
 tags: virtualgrid, scrolling
 published: True

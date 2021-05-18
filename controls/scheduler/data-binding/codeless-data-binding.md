@@ -1,7 +1,7 @@
 ---
 title: Codeless data binding
-page_title: Codeless data binding | RadScheduler
-description: This tutorial will show you how to bind RadScheduler from the Visual Studio design time surface, by only using the RadScheduler design-time support, and without writing any code. 
+page_title: Codeless data binding - WinForms Scheduler Control
+description: Learn how to bind WinForms Scheduler from the Visual Studio design time surface, by only using the design-time support, and without writing any code. 
 slug: winforms/scheduler/data-binding/codeless-data-binding
 tags: codeless,data,binding
 published: True

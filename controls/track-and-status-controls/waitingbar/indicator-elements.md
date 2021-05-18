@@ -1,7 +1,7 @@
 ---
 title: Indicator Elements
-page_title: Indicator Elements | RadWaitingBar
-description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
+page_title: Indicator Elements - WinForms WaitingBar Control
+description: All indicators in WinForms WaitingBar inherit from BaseWaitingBarIndicatorElement and define their own implementation of the Animate and ResetAnimation methods. 
 slug: winforms/track-and-status-controls/waitingbar/indicator-elements
 tags: control,element,structure
 published: True
@@ -14,7 +14,7 @@ previous_url: track-and-status-controls-waitingbar-indicator-elements
 All indicators inherit from __BaseWaitingBarIndicatorElement__ and define their own implementation of the __Animate__ and __ResetAnimation__ methods. 
 
 >caption Fig.1 WaitingBar indicators' hierarchy
->
+
 ![track-and-status-controls-waiting-bar-indicator-elements 012](images/track-and-status-controls-waiting-bar-indicator-elements014.png) 
 
 * __BaseWaitingBarIndicatorElement__: Represents the base indicator element.

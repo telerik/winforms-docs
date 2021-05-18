@@ -1,7 +1,7 @@
 ---
 title: Scheduler Mapping
-page_title: Scheduler Mapping | RadScheduler
-description: Scheduler Mapping
+page_title: Scheduler Mapping - WinForms Scheduler Control
+description: WinForms SchedulerMapping class is responsible for mapping a single property from the data source to a scheduler property, which allows you to specify convert callback methods in order to convert values to and from the data source if needed.
 slug: winforms/scheduler/data-binding/scheduler-mapping
 tags: scheduler,mapping
 published: True

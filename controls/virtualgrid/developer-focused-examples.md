@@ -1,7 +1,7 @@
 ---
 title: Developer Focused Examples
-page_title: Developer Focused Examples | RadVirtualGrid
-description: Additional examples built on top the Telerik UI for WinForms RadVirtualGrid control.
+page_title: Developer Focused Examples - WinForms VirtualGrid Control
+description: Additional examples built on top of the WinForms VirtualGrid control.
 slug: winforms/virtualgrid/developer-focused-examples
 tags: developer, sdk, examples
 published: True

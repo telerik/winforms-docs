@@ -1,7 +1,7 @@
 ---
 title: Filtering
-page_title: Filtering | UI for WinForms Documentation
-description: Filtering
+page_title: Filtering - WinForms Spreadsheet Control
+description: The filtering feature in WinForms Spreadsheet allows the user to hide and show certain rows of a range, based on different criteria. It provides an easy way to work with just the relevant set of data.
 slug: radspreadsheet-features-filtering
 tags: filtering
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadScrollBar
-description: As every control which is build with Telerik Presentation Framework, RadVScrollBar and RadHScrollBar consist of building elements order in a tree where property values are inherited in direction from the root to the leaves.
+page_title: Structure - WinForms ScrollBar
+description: Get familiar with the inner structure and organization of the elements which build the WinForms ScrollBar control.
 slug: winforms/track-and-status-controls/scrollbar/control-element-structure
 tags: control,element,structure
 published: True

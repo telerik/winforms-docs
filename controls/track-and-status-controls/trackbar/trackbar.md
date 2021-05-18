@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview | RadTrackBar
-description: RadTrackBar, sometimes called a slider control, can be used for navigating a large amount of information or for visually adjusting a numeric setting. 
+page_title: Overview - WinForms TrackBar
+description: WinForms TrackBar, sometimes called a slider control, can be used for navigating a large amount of information or for visually adjusting a numeric setting. 
 slug: winforms/track-and-status-controls/trackbar
 tags: trackbar
 published: True

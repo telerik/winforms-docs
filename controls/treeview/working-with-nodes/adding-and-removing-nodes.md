@@ -1,7 +1,7 @@
 ---
 title: Adding and Removing Nodes
-page_title: Adding and Removing Nodes | RadTreeView
-description: This article shows how you can add or remove nodes in code and the events that are fired when add/remove action is performed.
+page_title: Adding and Removing Nodes - WinForms TreeView Control
+description: Learn how you can add or remove nodes in code and the events that are fired when add/remove action is performed in WinForms TreeView.
 slug: winforms/treeview/working-with-nodes/adding-and-removing-nodes
 tags: adding,and,removing,nodes
 published: True

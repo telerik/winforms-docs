@@ -1,7 +1,7 @@
 ---
 title: Filtering Nodes
-page_title: Filtering Nodes | RadTreeView
-description: RadTreeView supports filtering of its nodes according to their Text property.
+page_title: Filtering Nodes - WinForms TreeView Control
+description: WinForsm TreeView supports filtering of its nodes according to their Text property.
 slug: winforms/treeview/working-with-nodes/filtering-nodes
 tags: filtering,nodes
 published: True

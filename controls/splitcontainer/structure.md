@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadSplitContainer
-description: RadSplitContainer is a layout control which allows you to add many container panels to a form, separated by splitter(s).
+page_title: Structure - WinForms SplitContainer
+description: Get familiar with the inner structure and organization of the elements which build the  WinForms SplitContainer control.
 slug: winforms/splitcontainer/structure
 tags: splitcontainer
 published: True

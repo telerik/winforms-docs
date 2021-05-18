@@ -1,7 +1,7 @@
 ---
 title: SparkScatterSeries
-page_title: RadSparkline SparkScatterSeries
-description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+page_title: SparkScatterSeries - WinForms Sparkline Control
+description: Unlike Categorical series, ScatterSeries plots its data upon two numerical axes.   
 slug: radsparkline-sparkscatterseries
 tags: sparkline
 published: True

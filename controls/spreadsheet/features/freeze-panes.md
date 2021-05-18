@@ -1,7 +1,7 @@
 ---
 title: Freeze Panes
-page_title: Freeze Panes | UI for WinForms Documentation
-description: Freeze Panes
+page_title: Freeze Panes - WinForms Spreadsheet Control
+description: WinForms Spreadsheet offers Freeze Panes feature so specific rows and columns of the spreadsheet remains visible at all times.
 slug: radspreadsheet-features-freeze-panes
 tags: freeze,panes
 published: True

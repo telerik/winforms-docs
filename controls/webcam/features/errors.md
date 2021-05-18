@@ -1,7 +1,7 @@
 ---
 title: Errors
-page_title: Errors | RadWebCam
-description: This article demonstrates how to customize the error content shown when one of the few known camera errors appear.    
+page_title: Errors - WinForms WebCam Control
+description: Learn how to customize the error content shown when one of the few known camera errors appear in WinForms WebCam.    
 slug: webcam-errors
 tags: webcam
 published: True

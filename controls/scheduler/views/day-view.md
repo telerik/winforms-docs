@@ -1,7 +1,7 @@
 ---
 title: Day View
-page_title: Day View | RadScheduler
-description: The Day view shows one or more days at a time. To move to the next or previous day, you can use the back and forward keyboard arrows, or the SchedulerNavigator.
+page_title: Day View - WinForms Scheduler Control
+description: WinForms Scheduler offers Day view which shows one or more days at a time. To move to the next or previous day, you can use the back and forward keyboard arrows, or the SchedulerNavigator.
 slug: winforms/scheduler/views/day-view
 tags: day,view
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Recording Video
-page_title: Recording Video | RadWebCam
-description: This article shows how to start recording video in RadWebCam.    
+page_title: Recording Video - WinForms WebCam Control
+description: Learn how to start recording video in WinForms WebCam.    
 slug: webcam-recording-video
 tags: webcam
 published: True

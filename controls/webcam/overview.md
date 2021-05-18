@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview | RadWebCam
-description: RadWebCam allows you to display the stream provided by a web camera. You can easily start recording or take snapshot of the stream and save it to a file.
+page_title: Overview - WinForms WebCam Control
+description: WinForms WebCam allows you to display the stream provided by a web camera. You can easily start recording or take snapshot of the stream and save it to a file.
 slug: webcam-overview
 tags: webcam
 published: True

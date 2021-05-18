@@ -1,7 +1,7 @@
 ---
 title: Working with Resources
-page_title: Working with Resources | RadScheduler
-description: Working with Resources
+page_title: Working with Resources - WinForms Scheduler Control
+description: When WinForms Scheduler is grouped by resources it stores them in the Resources collection. Get familiar how to manage this collection.
 slug: winforms-scheduler-working-with-resources
 tags: recurrence,rule,walkthrough
 published: True

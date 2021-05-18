@@ -1,7 +1,7 @@
 ---
 title: Indicators
-page_title: RadSparkline Indicators
-description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+page_title: Indicators - WinForms Sparkline Control
+description: Get familiar with the supported indicators in the WinForms Sparkline control.
 slug: radsparkline-indicators
 tags: sparkline, indicators
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | Virtual Keyboard
-description: RadVirtualKeyboard is a software component that allows the input of characters without the need for physical keys.  
+page_title: Structure - WinForms Virtual Keyboard
+description: Get familiar with the inner structure and organization of the elements which build the WinForms VirtualKeyboard control. 
 slug: winforms-virtual-keyboard-structure
 tags: virtual, keyboard, form
 published: True

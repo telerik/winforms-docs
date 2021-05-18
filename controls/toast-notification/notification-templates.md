@@ -1,7 +1,7 @@
 ---
 title: Notification Templates
-page_title: Notification Templates | Toast Notification
-description: RadToastNotificationManager is built on the Windows' notification system, making it easier for our customers to create and manage notifications.  
+page_title: Notification Templates - WinForms Toast Notification
+description: WinForms ToastNotificationManager offers built-in templates presenting different design. Get familiar with the offered layouts.  
 slug: toast-notification-templates
 tags: toast notification
 published: True

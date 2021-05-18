@@ -1,7 +1,7 @@
 ---
 title: SpellChecking RadGridView
-page_title: SpellChecking RadGridView | RadSpellChecker
-description: RadSpellChecker enables developers to add multilingual spell checking capabilities to their WinForms applications.
+page_title: SpellChecking RadGridView - WinForms SpellChecker
+description: WinForms SpellChecker is not limited to checking only simple text-editing controls such as RadTextBox. It can spell check editors in more complex controls such as RadGridView as well.
 slug: winforms/spellchecker/spellchecking-radgridview
 tags: spellchecking,radgridview
 published: True

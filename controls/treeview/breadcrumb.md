@@ -1,7 +1,7 @@
 ---
 title: Breadcrumb
-page_title: Breadcrumb | RadTreeView
-description: RadBreadCrumb is a separate control designed to visualize the current node path (display all the parent nodes of the current node).  
+page_title: Breadcrumb - WinForms TreeView Control
+description: WinForms BreadCrumb is a separate control designed to visualize the current node path (display all the parent nodes of the current node).  
 slug: winforms/treeview/breadcrumb
 tags: breadcrumb
 published: True

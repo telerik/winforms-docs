@@ -1,7 +1,7 @@
 ---
 title: Snapshots
-page_title: Snapshots | RadWebCam
-description: RadWebCam allows you to snapshot the currently displayed video feed.   
+page_title: Snapshots - WinForms WebCam Control
+description: WinForms WebCam allows you to snapshot the currently displayed video feed.   
 slug: webcam-snapshots
 tags: webcam
 published: True

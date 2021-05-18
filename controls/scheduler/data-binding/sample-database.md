@@ -1,7 +1,7 @@
 ---
 title: Sample Database
-page_title: Sample Database | RadScheduler
-description: The article demonstrates how a sample data base can be accessed to kick start your development.
+page_title: Sample Database - WinForms Scheduler Control
+description: Learn how a sample data base can be accessed to kick start your development with WinForms Scheduler.
 slug: winforms/scheduler/data-binding/sample-database
 tags: sample,database
 published: True

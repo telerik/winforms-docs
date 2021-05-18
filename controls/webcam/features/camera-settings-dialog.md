@@ -1,7 +1,7 @@
 ---
 title: Settings Dialog
-page_title: Settings Dialog | RadWebCam
-description: RadWebCam allows you to control the settings of the connected camera via the CameraSettingsDialog.
+page_title: Settings Dialog - WinForms WebCam Control
+description: WinForms WebCam allows you to control the settings of the connected camera via the CameraSettingsDialog.
 slug: camera-settings-dialog
 tags: webcam
 published: True

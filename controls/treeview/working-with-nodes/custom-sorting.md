@@ -1,7 +1,7 @@
 ---
 title: Custom Sorting
-page_title: Custom Sorting | RadTreeView
-description: Custom sorting is a flexible mechanism which allows you to replace the default sorting logic with your own logic.
+page_title: Custom Sorting - WinForms TreeView Control
+description: Custom sorting is a flexible mechanism in WinForms TreeView which allows you to replace the default sorting logic with your own logic.
 slug: winforms/treeview/working-with-nodes/custom-sorting
 tags: custom,sorting
 published: True

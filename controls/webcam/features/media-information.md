@@ -1,7 +1,7 @@
 ---
 title: Media Information
-page_title: Media Information | RadWebCam
-description: This article gives you information about the connected devices and change the control's device and video format based on this.   
+page_title: Media Information - WinForms WebCam Control
+description: Learn about the connected devices and change the WinForms WebCam's device and video format based on this.   
 slug: webcam-media-information
 tags: webcam
 published: True

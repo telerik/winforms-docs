@@ -1,7 +1,7 @@
 ---
 title: Spell check as you type
-page_title: Spell check as you type | RadSpellChecker
-description: RadSpellChecker enables developers to add multilingual spell checking capabilities to their WinForms applications.
+page_title: Spell check as you type - WinForms SpellChecker
+description: WinForms SpellChecker supports spell check as you type functionality currently available for RadTextBox and RadTextBoxControls, as well as for any HostedTextBoxBase descendant.
 slug: winforms/spellchecker/spell-check-as-you-type
 tags: spell,check,as,you,type
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Register
-page_title: Register | Toast Notification
-description: RadToastNotificationManager is built on the Windows' notification system, making it easier for our customers to create and manage notifications.  
+page_title: Register - WinForms Toast Notification
+description: Before showing a WinForms toast notification, it is important to register the manager first. Learn how to do it.  
 slug: toast-notification-register
 tags: toast notification
 published: True

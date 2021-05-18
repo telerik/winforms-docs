@@ -1,7 +1,7 @@
 ---
 title: Data Binding Walkthrough
-page_title: Data Binding Walkthrough | RadScheduler
-description: This walkthrough will cover creating and binding RadScheduler to a data source in a step-by-step manner
+page_title: Data Binding Walkthrough - WinForms Scheduler Control
+description: Learn hot to create and bind WinForms Scheduler to a data source in a step-by-step manner.
 slug: winforms/scheduler/data-binding/data-binding-walkthrough
 tags: data,binding,walkthrough
 published: True

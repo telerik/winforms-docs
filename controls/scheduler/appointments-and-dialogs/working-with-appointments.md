@@ -1,7 +1,7 @@
 ---
 title: Working with Appointments
-page_title: Working with Appointments | RadScheduler
-description: The article explains how scheduler appointments can be created and modified.
+page_title: Working with Appointments - WinForms Scheduler Control
+description: Get familiar how appointments can be created and modified in WinForms Scheduler.
 slug: winforms/scheduler/appointments-and-dialogs/working-with-appointments
 tags: working,with,appointments
 published: True

@@ -1,7 +1,7 @@
 ---
 title: SparkBarSeries
-page_title: RadSparkline SparkBarSeries
-description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+page_title: SparkBarSeries - WinForms Sparkline Control
+description: SparkBarSeries in WinForms Sparkline are used to visualize data points as bar blocks where the height of each bar denotes the magnitude of its value. 
 slug: radsparkline-sparkbarseries
 tags: sparkline
 published: True

@@ -1,7 +1,7 @@
 ---
 title: AppointmentDraggingBehavior
-page_title: AppointmentDraggingBehavior | RadScheduler
-description: RadScheduler supports drag and drop and it can be implemented so that appointments are dragged from another control, in our case a ListBox.
+page_title: AppointmentDraggingBehavior - WinForms Scheduler Control
+description: WinForms Scheduler supports drag and drop and it can be implemented so that appointments are dragged from another control, in our case a ListBox.
 slug: winforms/scheduler/drag-and-drop/appointmentdraggingbehavior
 tags: drag,and,drop,from,another,control
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Copy/Paste/Cut
-page_title: Copy/Paste/Cut | RadVirtualGrid
-description: RadVirtualGrid supports built-in Copy/Paste functionality, which allows you to store text in the Clipboard and then paste it in a different location.
+page_title: Copy/Paste/Cut - WinForms VirtualGrid Control
+description: WinForms VirtualGrid supports built-in Copy/Paste functionality, which allows you to store text in the Clipboard and then paste it in a different location.
 slug: winforms/virtualgrid/copy-paste-cut
 tags: virtualgrid, copy, paste, cut
 published: True

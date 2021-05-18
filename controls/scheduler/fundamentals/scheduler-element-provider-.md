@@ -1,7 +1,7 @@
 ---
 title: Scheduler Element Provider 
-page_title: Scheduler Element Provider  | RadScheduler
-description: The SchedulerElementProvider class provides means for changing the default RadScheduler elements.
+page_title: Scheduler Element Provider - WinForms Scheduler Control
+description: The SchedulerElementProvider class provides means for changing the default WinForms Scheduler elements.
 slug: winforms/scheduler/fundamentals/scheduler-element-provider-
 tags: scheduler,element,provider,
 published: True

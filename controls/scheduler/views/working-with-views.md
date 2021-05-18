@@ -1,7 +1,7 @@
 ---
 title: Working with Views
-page_title: Working with Views | RadScheduler
-description: The scheduler displays dates and times using a view that can be Day, MultiDay, Week, WorkWeek, Month and TimeLine
+page_title: Working with Views - WinForms Scheduler Control
+description: WinForms Scheduler displays dates and times using a view that can be Day, MultiDay, Week, WorkWeek, Month and TimeLine.
 slug: winforms/scheduler/views/working-with-views
 tags: working,with,views
 published: True

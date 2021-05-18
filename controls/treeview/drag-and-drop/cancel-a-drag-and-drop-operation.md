@@ -1,7 +1,7 @@
 ---
 title: Cancel a Drag and Drop Operation
-page_title: Cancel a Drag and Drop Operation | RadTreeView
-description: This article describes how you can cancel a drag and drop operation upon a specific condition.
+page_title: Cancel a Drag and Drop Operation - WinForms TreeView Control
+description: Learn how you can cancel a drag and drop operation upon a specific condition in WinForms TreeView.
 slug: winforms/treeview/drag-and-drop/cancel-a-drag-and-drop-operation
 tags: cancel,a,drag,and,drop,operation
 published: True

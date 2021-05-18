@@ -1,7 +1,7 @@
 ---
 title: Exact Time Rendering
-page_title: Exact time rendering | RadScheduler
-description: RadScheduler supports functionality to arrange appointments according to their start time and duration.
+page_title: Exact time rendering - WinForms Scheduler Control
+description: WinForms Scheduler supports functionality to arrange appointments according to their start time and duration.
 slug: winforms/scheduler/views/exact-time-rendering
 tags: exact,time,rendering
 published: True

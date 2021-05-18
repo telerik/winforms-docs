@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadSplitContainer
-description: RadSplitContainer is a layout control which allows you to add many container panels to a form, separated by splitter(s).
+page_title: Design Time - WinForms SplitContainer
+description: Get familiar with the design time options that the WinForms SplitContainer offers.
 slug: winforms/splitcontainer/design-time
 tags: splitcontainer
 published: True

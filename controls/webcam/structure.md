@@ -1,7 +1,7 @@
 ---
 title: Structure
-page_title: Structure | RadWebCam
-description: This article shows the inner structure and organization of the elements which build the RadWebCam control.   
+page_title: Structure - WinForms WebCam Control
+description: Get familiar with the inner structure and organization of the elements which build the WinForms WebCam control.   
 slug: webcam-structure
 tags: webcam
 published: True

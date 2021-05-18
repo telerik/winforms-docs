@@ -1,7 +1,7 @@
 ---
 title: Setting Appointment and Resource relations
-page_title: Setting Appointment and Resource relations | RadScheduler
-description: This article covers the case of assigning a single resource to many appointments. 
+page_title: Setting Appointment and Resource relations - WinForms Scheduler Control
+description: Learn how to assign a single resource to many appointments in WinForms Scheduler. 
 slug: winforms/scheduler/data-binding/setting-appointment-and-resource-relations
 tags: setting,appointment,and,resource,relations
 published: True

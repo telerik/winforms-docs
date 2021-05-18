@@ -1,7 +1,7 @@
 ---
 title: Themes
-page_title: Themes | RadProgressBar
-description: RadProgressBar is designed to display progress information to the user during a long-running operation.  
+page_title: Themes - WinForms ProgressBar
+description: Learn how to customize the ControlDefault theme for the WinForms ProgressBar control. 
 slug: winforms/track-and-status-controls/progressbar/themes
 tags: progressbar
 published: True

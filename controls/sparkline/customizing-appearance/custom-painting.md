@@ -1,7 +1,7 @@
 ---
 title: Custom Painting
-page_title: RadSparkline Custom Painting
-description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+page_title: Custom Painting - WinForms Sparkline Control
+description: The WinForms Sparkline control provides two event that allows to style any of the painted elements.
 slug: radsparkline-custom-painting
 tags: sparkline
 published: True

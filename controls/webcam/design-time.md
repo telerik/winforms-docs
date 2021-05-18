@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadWebCam
-description: This article will get you familiar with the design-time options that RadWebCam offers.    
+page_title: Design Time - WinForms WebCam
+description: Get familiar with the design-time options that WinForms WebCam offers.    
 slug: webcam-design-time
 tags: webcam
 published: True

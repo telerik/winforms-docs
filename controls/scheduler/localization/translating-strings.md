@@ -1,7 +1,7 @@
 ---
 title: Localizing RadScheduler
-page_title: Localizing RadScheduler | RadScheduler
-description: To localize RadScheduler to display control text and messages in a specific language create a descendant of the RadSchedulerLocalizationProvider class.
+page_title: Localizing RadScheduler - WinForms Scheduler Control
+description: To localize WinForms Scheduler to display control text and messages in a specific language create a descendant of the RadSchedulerLocalizationProvider class.
 slug: winforms/scheduler/localization/translating-strings
 tags: translating,strings
 published: True

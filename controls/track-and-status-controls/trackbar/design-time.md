@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadTrackBar
-description: RadTrackBar, sometimes called a slider control, can be used for navigating a large amount of information or for visually adjusting a numeric setting. 
+page_title: Design Time - WinForms TrackBar
+description: Learn what are the design time options of WinForms TrackBar. 
 slug: winforms/track-and-status-controls/trackbar/design-time
 tags: trackbar
 published: True

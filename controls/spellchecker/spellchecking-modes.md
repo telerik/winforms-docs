@@ -1,7 +1,7 @@
 ---
 title: Spellchecking Modes
-page_title: Spellchecking Modes | RadSpellChecker
-description: RadSpellChecker enables developers to add multilingual spell checking capabilities to their WinForms applications.
+page_title: Spellchecking Modes - WinForms SpellChecker
+description: WinForms SpellChecker allows you to choose between two spell-checking modes - Check Word By Word and Check All Words At Once. Learn what is the difference. 
 slug: winforms/spellchecker/spellchecking-modes
 tags: spellchecking,modes
 published: True

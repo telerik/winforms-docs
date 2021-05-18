@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | RadRating
-description: RadRating is a flexible UI component that allows users to place their rating by selecting from a finite number of items (stars, diamonds and hearts).
+page_title: Design Time - WinForms Rating Control
+description: Get familiar with the design time options of the WinFormscontrol.
 slug: winforms/track-and-status-controls/rating/design-time
 tags: design,time
 published: True

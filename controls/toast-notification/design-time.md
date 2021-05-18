@@ -1,7 +1,7 @@
 ---
 title: Design Time
-page_title: Design Time | Toast Notification
-description: RadToastNotificationManager is built on the Windows' notification system, making it easier for our customers to create and manage notifications.  
+page_title: Design Time - WinForms Toast Notification
+description: Get familiar with the design time options that WinForms ToastNotificationManager offers.  
 slug: toast-notification-design-time
 tags: toast notification
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Binding to Database Data
-page_title: Binding to Database Data | RadTreeView
-description: RadTreeView supports binding to Database data. Levels are created using the RadTreeView RelationBindings collection.
+page_title: Binding to Database Data - WinForms TreeView Control
+description: WinForms TreeView supports binding to Database data. Levels are created using the RadTreeView RelationBindings collection.
 slug: winforms/treeview/data-binding/binding-to-database-data
 tags: binding,to,database,data
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Overview | RadRating
-description: RadRating is a flexible UI component that allows users to place their rating by selecting from a finite number of items (stars, diamonds and hearts).
+page_title: Overview - WinForms Rating Control
+description: WinForms Rating control is a flexible UI component that allows users to place their rating by selecting from a finite number of items (stars, diamonds and hearts).
 slug: winforms/track-and-status-controls/rating
 tags: rating
 published: True

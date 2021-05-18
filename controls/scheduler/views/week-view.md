@@ -1,7 +1,7 @@
 ---
 title: Week View
-page_title: Week View | RadScheduler
-description: The Week view by default shows a full seven-day week week at a time, which can be set to start at a predefined day (say Monday, or Sunday).
+page_title: Week View - WinForms Scheduler Control
+description: The Week view in WinForms Scheduler shows a full seven-day week at a time, which can be set to start at a predefined day (say Monday, or Sunday).
 slug: winforms/scheduler/views/week-view
 tags: week,view
 published: True

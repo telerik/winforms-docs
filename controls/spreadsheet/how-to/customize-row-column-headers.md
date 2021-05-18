@@ -1,7 +1,7 @@
 ---
 title: Customize Row and Column Headers
-page_title: Customize Row and Column Headers
-description: Customize Row and Column Headers
+page_title: Customize Row and Column Headers - WinForms Spreadsheet Control
+description: Learn how to customize the row and column header in WinForms Spreadsheet.
 slug: radspreadsheet-howto-customize-row-column-headers
 tags: customize,row,and,column,headers
 published: True
@@ -15,6 +15,7 @@ Giving your data meaningful names helps you better understand it. For example, i
 It will be useful if you can set the column heading name when the first row is not visible as shown in the image below.
 
 >caption Figure 1: Column with custom heading name
+
 ![Rad Spreadsheet How To Customize Row and Column Headers 01](images/spreadsheet-how-to-customize-row-and-column-headers001.png)
 
 ## Change the Row and Column Headings

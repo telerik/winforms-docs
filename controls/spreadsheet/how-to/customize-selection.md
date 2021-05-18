@@ -1,7 +1,7 @@
 ---
 title: Customize Selection
-page_title: Customize Selection
-description: Customize Selection
+page_title: Customize Selection - WinForms Spreadsheet Control
+description: WinForms SpreadsheetElement exposes several properties that enable you to control the way the selection in the control is rendered.
 slug: radspreadsheet-howto-customize-selection
 tags: customize,selection
 published: True

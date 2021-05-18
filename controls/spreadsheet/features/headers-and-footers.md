@@ -1,7 +1,7 @@
 ---
 title: Headers and Footers
-page_title: Headers and Footers | RadSpreadsheet
-description: The Headers and Footers functionality enables you to add rich text content in the page margins when laying out a worksheet to pages.
+page_title: Headers and Footers - WinForms Spreadsheet Control
+description: The Headers and Footers functionality in WinForms Spreadsheet enables you to add rich text content in the page margins when laying out a worksheet to pages.
 slug: radspreadsheet-features-headers-and-footers
 tags: headers, footers
 published: True
