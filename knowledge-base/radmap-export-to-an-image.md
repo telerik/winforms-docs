@@ -102,7 +102,10 @@ private void radButton1_Click(object sender, EventArgs e)
         element.Paint(gg, this.radMap1.MapElement);
     }
     object state = gg.SaveState();
-    gg.TranslateTransform(-this.radMap1.MapElement.ViewportInPixels.X, -this.radMap1.MapElement.ViewportInPixels.Y);
+
+	//As of R2 2021 calling TranslateTransform is not necessary
+    //gg.TranslateTransform(-this.radMap1.MapElement.ViewportInPixels.X, -this.radMap1.MapElement.ViewportInPixels.Y);
+
     this.radMap1.MapElement.Layers["PinsLayer"].Paint(gg, this.radMap1.MapElement);
     gg.RestoreState(state);
     bitmap.Save(@"..\..\test.png", ImageFormat.Png);
@@ -119,7 +122,9 @@ Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton
         element.Paint(gg, Me.RadMap1.MapElement)
     Next
     Dim state As Object = gg.SaveState()
-    gg.TranslateTransform(-Me.RadMap1.MapElement.ViewportInPixels.X, -Me.RadMap1.MapElement.ViewportInPixels.Y)
+	
+	'As of R2 2021 calling TranslateTransform is not necessary
+    'gg.TranslateTransform(-Me.RadMap1.MapElement.ViewportInPixels.X, -Me.RadMap1.MapElement.ViewportInPixels.Y)
     Me.RadMap1.MapElement.Layers("PinsLayer").Paint(gg, Me.RadMap1.MapElement)
     gg.RestoreState(state)
     bitmap.Save("..\..\test.png", ImageFormat.Png)
@@ -130,6 +135,8 @@ End Sub
 
 
 {{endregion}}
+
+>important As of **R2 2021** calling the **TranslateTransform** method for the **RadGdiGraphics** object is not necessary. For older versions, please make sure that the method is executed.
 
 
 >tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/Map/RadMapToAnImage).  
