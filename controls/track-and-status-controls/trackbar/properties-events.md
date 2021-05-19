@@ -1,6 +1,6 @@
 ---
 title: Properties and Events
-page_title: Properties and Events | RadTrackBar
+page_title: Properties and Events - WinForms TrackBar Control
 description: RadTrackBar, sometimes called a slider control, can be used for navigating a large amount of information or for visually adjusting a numeric setting.
 slug: winforms/track-and-status-controls/trackbar/properties-events
 tags: programming,radtrackbar

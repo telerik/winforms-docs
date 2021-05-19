@@ -1,7 +1,7 @@
 ---
 title: Properties and Events
-page_title: Properties and Events | RadCalendar
-description: This article list the most important properties and events of RadCalendar.
+page_title: Properties and Events - WinForms Calendar Control
+description: Get familiar the most important properties and events of RadCalendar.
 slug: winforms/calendar/important-events
 tags: important,events
 published: True

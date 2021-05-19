@@ -1,7 +1,7 @@
 ---
 title: Properties, Events and Attributes
-page_title: Properties, Events and Attributes | RadDataLayout
-description: This article shows the most used properties, events and attributes.
+page_title: Properties, Events and Attributes - WinForms DataLayout Control
+description: Learn the most used properties, events and attributes of RadDataLayout.
 slug: winforms/datalayout/properties,-events-and-attributes
 tags: properties,,events,and,attributes
 published: True

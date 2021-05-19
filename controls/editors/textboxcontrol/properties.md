@@ -1,6 +1,6 @@
 ---
 title: Properties and Events
-page_title: Properties and Events| RadTextBoxControl
+page_title: Properties and Events - WinForms TextBoxControl
 description: This article shows the most commonly used properties and events of RadTextBoxControl.
 slug: winforms/editors/textboxcontrol/properties
 tags: properties

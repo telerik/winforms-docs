@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | RadProgressBar
+page_title: Properties, Methods and Events - WinForms ProgressBar Control
 description: RadProgressBar is designed to display progress information to the user during a long-running operation. 
 slug: winforms/track-and-status-controls/progressbar/programming-radprogressbar
 tags: programming,radprogressbar

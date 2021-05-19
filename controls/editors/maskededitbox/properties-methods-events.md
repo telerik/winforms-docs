@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods, Events | RadMaskedEditBox
-description: RadMaskedEditBox is a themeable text box that formats and constrains text to a predefined pattern or a pattern you define. The article lists the important properties, methods and events.
+page_title: Properties, Methods, Events - WinForms MaskedEditBox Control
+description: Get familiar with the public API that WinForms RadMaskedEditBox offers.
 slug: winforms/editors/maskededitbox/properties-methods-and-events
 tags: maskededitbox, properties, methods, events
 published: True

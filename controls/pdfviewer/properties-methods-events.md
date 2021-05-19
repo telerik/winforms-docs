@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods, Events | RadPdfViewer
-description: RadPdfViewer enables you to easily load and display PDF documents natively in your application without using any third-party tools except Telerikâ€™s WinForms toolbox.
+page_title: Properties, Methods, Events - WinForms PdfViewer Control
+description: Get familiar with the public API that WinForms PdfViewer offers.
 slug: winforms/pdfviewer/properties-methods-and-events
 tags: pdfviewer, properties, methods, events
 published: True

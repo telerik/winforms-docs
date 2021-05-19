@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | UI for WinForms Documentation
-description: RadButton is a themable replacement of the standard WinForms Button. It can be clicked by using the mouse, Enter key, or Spacebar, if the button has focus.
+page_title: Properties, Methods and Events - WinForms BindingNavigator Control
+description: Learn the most important of the public API that the WinForms Button offers.
 slug: winforms/buttons/button/properties,methods, events
 tags: button, properties, methods, events
 published: True

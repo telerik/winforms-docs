@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods, Events
-page_title: Properties, Methods, Events | RadDesktopAlert
-description: RadDesktopAlert component displays a small pop-up window on the screen to notify the user that a specific event has occurred in the application. 
+page_title: Properties, Methods, Events - WinForms DesktopAlert
+description: Get familiar with the public API of WinForms RadDesktopAlert. 
 slug: winforms/desktopalert/properties,methods,events
 tags: desktopalert, structure
 published: True

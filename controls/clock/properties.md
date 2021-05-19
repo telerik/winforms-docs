@@ -1,7 +1,7 @@
 ---
 title: Properties 
-page_title: Properties  | UI for WinForms Documentation
-description: RadClock is a control which allows the developers to use it in their applications to display time to the users.
+page_title: Properties - WinForms Clock Control
+description: Get familiar with the public API that the WinForms RadClock offers.
 slug: winforms/clock/properties 
 tags: clock
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | RadTimeSpanPicker
-description:  
+page_title: Properties, Methods and Events - WinForms TimeSpanPicker Control
+description: Get familiar with the public API that WinForms TimeSpanPicker offers. 
 slug: radtimespanpicker-properties
 tags: radtimespanpicker
 published: True

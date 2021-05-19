@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | RadMessageBox
-description: RadMessageBox displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message, such as status or error information.
+page_title: Properties, Methods and Events - WinForms MessageBox
+description: Get familiar with the public API that WinForms RadMessageBox offers.
 slug: winforms/forms-and-dialogs/messagebox/properties-methods-events
 tags: messagebox, structure
 published: True

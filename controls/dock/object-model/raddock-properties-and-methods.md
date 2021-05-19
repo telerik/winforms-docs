@@ -1,7 +1,7 @@
 ---
 title: RadDock Properties, Methods and Events
-page_title: RadDock Properties, Methods and Events
-description: Describes the most used RadDock properties and methods
+page_title: RadDock Properties, Methods and Events - WinForms Dock Control
+description: Get familiar with the public API that WinForms RadDock offers. 
 slug: winforms/dock/object-model/raddock-properties-and-methods
 tags: raddock,properties,and,methods
 published: True

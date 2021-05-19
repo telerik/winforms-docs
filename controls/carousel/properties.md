@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods Events
-page_title: Properties, Methods Events | RadCarousel
-description: RadCarousel is a navigation control that animates a series of elements either by the user clicking a particular element or by clicking the forward and back arrows.
+page_title: Properties, Methods Events - WinForms Carousel Control
+description:Get familiar with the public API that the WinForms Carousel control offers.
 slug: winforms/carousel/properties
 tags: carousel, properties, methods, events
 published: True

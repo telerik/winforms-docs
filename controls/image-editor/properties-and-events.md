@@ -1,6 +1,6 @@
 ---
 title: Properties and Methods 
-page_title: Properties and Methods 
+page_title: Properties and Methods - WinForms ImageEditor Control 
 description: This article contains the most important properties methods and events of RadIamgeEditor.
 slug: radimageeditor-properties-and-events
 tags: properties, methods

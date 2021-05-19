@@ -1,7 +1,7 @@
 ---
 title: Properties and Events
-page_title: Properties and Events | RadLinearGauge
-description: Properties and Events of RadLinearGauge
+page_title: Properties and Events - WinForms LinearGauge Control
+description: Get familiar with the publi API that RadLinearGauge offers. 
 slug: winforms/gauges/lineargauge/properties-and-events
 tags: properties,and,events
 published: True

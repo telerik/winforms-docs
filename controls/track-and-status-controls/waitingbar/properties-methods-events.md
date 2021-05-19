@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties and Methods | RadWaitingBar
+page_title: Properties and Methods - WinForms WaitingBar
 description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
 slug: winforms/track-and-status-controls/waitingbar/properties-methods-events
 tags: properties,and,methods,events

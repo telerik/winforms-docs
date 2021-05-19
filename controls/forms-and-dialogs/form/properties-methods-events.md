@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | RadForm
-description: The RadForm control is an extended standard Windows Form that fully supports the Telerik Presentation Framework (TPF) and the Telerik's theming mechanism.
+page_title: Properties, Methods and Events - WinForms RadForm
+description: Get familiar with the public API that the WinForms RadForm offers.
 slug: winforms/forms-and-dialogs/form/properties-methods-events
 tags: form
 published: True
