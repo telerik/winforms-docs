@@ -1,7 +1,7 @@
 ---
 title: Next Steps
 page_title: Next Steps
-description: Next Steps
+description: The list of resources in this article can help you get a better understanding of how Telerik WinForms controls work and help you get the most of them.
 slug: winforms/getting-started/next-steps
 tags: get,started,next,steps
 published: True

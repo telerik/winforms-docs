@@ -1,7 +1,7 @@
 ---
 title: Adding a custom theme as a file
-page_title: Adding a custom theme as a file | UI for WinForms Documentation
-description: Learn how to add a custom theme as a file in your WinForms application.
+page_title: Adding a custom theme as a file
+description: Learn what are the needed steps to add a custom theme as file in your WinForms project.
 slug: winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/adding-a-custom-theme-as-a-file
 tags: adding,a,custom,theme,as,a,file
 published: True

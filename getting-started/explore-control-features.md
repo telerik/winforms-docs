@@ -1,7 +1,7 @@
 ---
 title: Explore Control Features
 page_title: Explore Control Features
-description: Explore Control Features
+description: This article provides a short overview of how to get started with finding WinForms control functionality and use them.
 slug: winforms/getting-started/explore-control-features
 tags: get,started,explore,control,features
 published: True

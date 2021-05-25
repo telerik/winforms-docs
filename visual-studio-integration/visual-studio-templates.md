@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Templates
 page_title: Visual Studio Templates
-description: Visual Studio Templates
+description: The Visual Studio Templates for UI for WinForms provide an easy way to create a Telerik project from a number of predefined templates.
 slug: winforms/visual-studio-templates
 tags: visual studio,templates
 published: True

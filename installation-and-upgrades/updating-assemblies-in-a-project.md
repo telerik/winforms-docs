@@ -1,7 +1,7 @@
 ---
 title: Updating Assemblies in a Project
 page_title: Updating Assemblies in a Project
-description: Updating Assemblies in a Project
+description: Learn how to use a specific version of the Telerik UI for WinForms suite in your project.
 slug: winforms/installation-deployment-and-distribution/updating-assemblies-in-a-project
 tags: update, assemblies, project
 published: True

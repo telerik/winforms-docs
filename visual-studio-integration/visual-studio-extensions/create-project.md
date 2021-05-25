@@ -1,7 +1,7 @@
 ---
 title: Create Project
 page_title: Create Project
-description: Create Project
+description: With the new Visual Studio Extensions for WinForms you can quickly create an application pre-configured to use Telerik UI for WinForms.
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation
 tags: project, creation
 published: True

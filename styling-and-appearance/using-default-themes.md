@@ -1,7 +1,7 @@
 ---
 title: Using Themes 
-page_title: Using default themes  | UI for WinForms Documentation
-description: Using default themes 
+page_title: Using default themes
+description: All themes that come with Telerik UI for WinForms are available as standalone components, apart from the control's assemblies.
 slug: winforms/themes/using-default-themes
 tags: using,default,themes,
 published: True

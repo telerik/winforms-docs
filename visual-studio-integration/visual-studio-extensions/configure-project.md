@@ -1,7 +1,7 @@
 ---
 title: Configure Project
 page_title: Configure Project
-description: Configure Project
+description: Learn how you can configure your Telerik WinForms Application.
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/configure-project
 tags: project,and,configuration
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Installing On Your Computer
 page_title: Installing On Your Computer
-description: Installing On Your Computer
+description: Read how you can install Telerik UI for WinForms on your computers and what actions are needed.
 slug: winforms/installation-deployment-and-distribution/installing-on-your-computer
 tags: installing,on,your,computer
 published: True

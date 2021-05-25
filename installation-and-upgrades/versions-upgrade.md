@@ -1,7 +1,7 @@
 ---
 title: Versions Upgrade
 page_title: Versions Upgrade | Installation Deployment and Distribution
-description: This article describes how to successfully open your project after installing of the latest version 
+description: Learn how you can deal with one of the most common errors, after installing a new version of Telrik UI for WinForms. 
 slug: winforms/installation-deployment-and-distribution/versions-upgrade
 tags: install,nuget
 published: True

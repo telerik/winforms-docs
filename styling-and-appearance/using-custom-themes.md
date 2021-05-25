@@ -1,7 +1,7 @@
 ---
 title: Using custom themes
-page_title: Using custom themes | UI for WinForms Documentation
-description: Using custom themes
+page_title: Using custom themes
+description: Learn how you can create or modify one theme at a time, but for all RadControls simultaneously.
 slug: winforms/themes/using-custom-themes
 tags: using,custom,themes
 published: True

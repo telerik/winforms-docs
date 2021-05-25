@@ -1,7 +1,7 @@
 ---
 title: Add/Remove RadControls to the Global Assembly Cache (GAC)
 page_title: Add/Remove RadControls to the Global Assembly Cache (GAC)
-description: Add/Remove RadControls to the Global Assembly Cache (GAC)
+description: Learn how you can add or remove Telerik UI for WinForms to the Global Assembly Cache (GAC).
 slug: winforms/installation-deployment-and-distribution/application-deploymentadd-remove-radcontrols-to-the-global-assembly-cache-(gac)
 tags: add/remove,radcontrols,to,the,global,assembly,cache,(gac)
 published: True

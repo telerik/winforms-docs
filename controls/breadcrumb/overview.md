@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadBreadCrumb
+page_title: Overview - WinForms BreadCrumb Control
 description: The RadBreadCrumb control offers you to build complicated navigation systems that allow you to track the navigation history. With powerful data-binding mechanism.  
 slug: breadcrumb-overview
 tags: breadcrumb

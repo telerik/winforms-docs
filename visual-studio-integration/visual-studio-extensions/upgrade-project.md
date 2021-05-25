@@ -1,7 +1,7 @@
 ---
 title: Upgrade project
 page_title: Upgrade project
-description: Upgrade project
+description: An important feature in the Visual Studio Extensions is the Project Upgrade Wizard. The Upgrade Wizard is used to change the version of Telerik UI for WinForms your projects use.
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project
 tags: upgrade,project
 published: True

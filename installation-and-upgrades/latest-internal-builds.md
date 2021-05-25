@@ -1,7 +1,7 @@
 ---
 title: Latest Internal Builds
 page_title: Latest Internal Builds
-description: Latest Internal Builds
+description: Learn how you can access our latest internal build and get advantage of the latest fixes.
 slug: winforms/installation-deployment-and-distribution/latest-internal-builds
 tags: download,product, lib, latest
 published: True

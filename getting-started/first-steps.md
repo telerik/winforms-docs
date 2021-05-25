@@ -1,7 +1,7 @@
 ---
 title: First Steps
 page_title: First Steps
-description: First Steps
+description: Learn how to get the Telerik UI for WinForms controls in your project and start using them quickly.
 slug: winforms/getting-started/first-steps
 tags: get,started,first,steps
 published: True
