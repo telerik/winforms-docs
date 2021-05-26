@@ -155,6 +155,7 @@ Me.RadListView1.CollapseAll()
 
 * [Filtering]({%slug winforms/listview/features/filtering%})	 
 * [Sorting]({%slug winforms/listview/features/sorting%})
+* [Move ListView Items Between Groups in Unbound Mode]({%slug move-listview-items-between-groups-in-unbound-mode%})
 
 
 

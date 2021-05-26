@@ -40,4 +40,5 @@ As a descendant of [RadDragDropService]({%slug winforms/telerik-presentation-fra
 
 * [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%})	
 * [Drag and Drop using RadDragDropService]({%slug winforms/listview/drag-and-drop/drag-and-drop-using-raddragdropservice%})
+* [Move ListView Items Between Groups in Unbound Mode]({%slug move-listview-items-between-groups-in-unbound-mode%})
 
