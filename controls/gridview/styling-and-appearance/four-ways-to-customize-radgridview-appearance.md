@@ -1,6 +1,6 @@
 ---
-title: Four ways to customize RadGridView appearance
-page_title: Four ways to customize RadGridView appearance - WinForms GridView Controlsss
+title: Ways to customize the appearance
+page_title: Ways to customize the appearance - WinForms GridView Control
 description: WinForms GridView offers various ways to change its appearance. Learn which are they.
 slug: winforms/gridview/styling-and-appearance/four-ways-to-customize-radgridview-appearance
 tags: four,ways,to,customize,radgridview,appearance

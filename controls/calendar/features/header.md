@@ -1,7 +1,7 @@
 ---
 title: Header
-page_title: Header | RadCalendar
-description: Header
+page_title: Header - WinForms Calendar Control 
+description: The header in WinForms Calendar contains the calendar title and the navigation buttons.
 slug: winforms/calendar/customizing-appearance/header
 tags: header
 published: True
