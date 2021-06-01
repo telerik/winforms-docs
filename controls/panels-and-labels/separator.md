@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: RadSeparator
 page_title: Overview - WinForms Separator Control
 description: WinForms Separator is a control that gives you the ability to divide your forms into logical parts. 
 slug: winforms/panels-and-labels/separator
