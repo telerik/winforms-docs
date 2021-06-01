@@ -31,7 +31,7 @@ When you open the solution you will see four projects:
 1. **Trie** – This is the data structure used by our **MultiColumnComboBox **to perform the searching operations. Although it is highly modified the main idea still reminds of a **Trie**. More information about it can be found [here](http://en.wikipedia.org/wiki/Trie)
 2. **Trie.Tests** – These are the unit tests for the **Trie**, they are not needed for the project to function properly, however if you decide to modify something in the **Trie **class you would want to run these unit tests in order to ensure that the functionality is still intact.
 3. **VirtualMultiColumnComboBox** – This is the test project which contains one form. In this test project I am filling a data source of 100 000 objects and binding it to the **MultiColumnComboBox**
-4. **VirtualMultiColumnComboBox.Implementation** – The project on which we will focus during this article. Contains the **VirtualMultiColumnComboBox **and **VirtualMultiColumnComboBoxElement**classes.
+4. **VirtualMultiColumnComboBox.Implementation** – The project on which we will focus during this article. Contains the **VirtualMultiColumnComboBox** and **VirtualMultiColumnComboBoxElement** classes.
 
  
 First of all I think we should start from the **Trie **because it is a class completely separated from the**MultiColumnComboBox** and can work independently.  
@@ -40,7 +40,7 @@ First of all I think we should start from the **Trie **because it is a class c
 The **Trie **itself consists of nodes. Each **TrieNode **has a **Value **and **Children **properties. The value property is char and the Children are Dictionary with Char for Key and TrieNode as a Value. Each node also has an "**IsWord" **property which indicates whether this node marks the start of a new word.  
    
 
-The **Trie **has 4 main functionalities:  
+The **Trie** has 4 main functionalities:  
 
 1. Insert words into the Trie
 2. Check if a word is contained inside the Trie
