@@ -36,7 +36,7 @@ Me.RadPictureBox1.ShowScrollBars = False
 {{endregion}}
 
 
-#### Zoom properties
+## Zoom properties
 
 **RadPictureBox** exposes **ZoomProperties** property that is responsible for the zoom operations. The zooming can be controlled through the following useful properties:
 
@@ -108,6 +108,14 @@ Me.RadPictureBox1.ZoomProperties.ZoomOut(5)
 
 
 You can also reset all the zoom settings by calling the **ResetZoom** method. 
+
+## Events
+
+**RadPictureBox** exposes the following events when zooming and panning:
+
+* **ZoomChanged** - Occurs when the **ZoomFactor** has changed.
+* **PanChanged** - Occurs when the **PositionOffset** property of **PictureBoxCanvasElement** is changed. Available since R2 2021 SP1.
+
 
 
 # See Also
