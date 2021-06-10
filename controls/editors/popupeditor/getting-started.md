@@ -13,7 +13,7 @@ previous_url: eidtors-popupeditor-getting-started
 
 This article shows how you can start using __RadPopupEditor__. Go ahead and add __RadPoupEditor__ and __RadPoupContainer__ to a form. The result should look like in Figure 1.
       
->caption Figure 1: RadPopupEditor and RadPoupCintainer at design time.
+>caption Figure 1: RadPopupEditor and RadPopupContainer at design time.
 
 ![eidtors-popupeditor-getting-started 001](images/eidtors-popupeditor-getting-started001.png)
 
