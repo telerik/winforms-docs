@@ -11,15 +11,14 @@ previous_url: installation-deployment-and-distribution-vsx-design-time-assembly-
 
 # Design-time assembly handling
 
-
-
 ## Significance of the Design Assembly
 
 
 __Telerik.WinControls.UI.Design__ is the design-time assembly responsible for the proper rendering of Telerik UI for WinForms in the Designer.
 
-
 When viewing controls from the designer, Visual Studio tries to resolve the corresponding  __Telerik.WinControls.UI.Design__. If the assembly is not in the __GAC__, controls dependent on it will not be visible when added from the __toolbox__.
+
+>note As of R2 2021 Telerik UI for WinForms suite offers **Telerik.WinControls.RadToastNotification.Design.dll** which is a separated assembly from the **Telerik.WinControls.RadToastNotification.dll** containing the designer of the toast notification. 
 
 ![installation-deployment-and-distribution-vsx-design-time-assembly-handling 001](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling001.png)
 
@@ -40,8 +39,7 @@ When the Telerik Project Wizard offers you available distributions to choose it 
 ![installation-deployment-and-distribution-vsx-design-time-assembly-handling 002](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling002.png)
 
 >tip __Elevated privileges__ are required to add an assembly to the GAC. In case your machine has __User Account Control__ enabled a permission dialog will appear later in the wizard and must be confirmed.
->  
+ 
 ##  Location of Telerik.WinControls.UI.Design assembly
-
 
 The design assembly comes along with the distribution of control assemblies. If the distribution was downloaded through the extensions it can be found in __%APPDATA%\Telerik\Updates__.

@@ -23,9 +23,11 @@ You can find listed below the required references for using a **RadToastNotifica
 
 >important As of **R2 2021** Toast Notifications are supported in .NET5.
 
->important RadToastNotificationManager requires .NET Framework 4.6.1 or higher.
+>important **RadToastNotificationManager** requires .NET Framework **4.6.1** or higher.
 
->important Toast notifications can only be displayed in Windows 8.0 or higher. For older Windows versions, use RadDesktopAlert instead.
+>important Toast notifications can only be displayed in **Windows 8.0** or **higher**. For older Windows versions, use RadDesktopAlert instead.
+
+>note As of R2 2021 Telerik UI for WinForms suite offers **Telerik.WinControls.RadToastNotification.Design.dll** which is a separated assembly from the **Telerik.WinControls.RadToastNotification.dll**. In order to use the design time of **RadToastNotification**, Telerik.WinControls.RadToastNotification.Design.dll is needed in the GAC - same behavior as Telerik.WinControls.UI.Design.dll. The design time also uses Telerik.WinControls.SyntaxEditor.dll.
 
 By using the [RadToastNotifications Editor]({%slug toast-notification-design-time%}) you can add different toast notifications to the manager at design time. They are serialized as Telerik toasts which generate Windows system toasts. 
 

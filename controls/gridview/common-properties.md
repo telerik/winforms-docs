@@ -126,6 +126,7 @@ The following table list the properties exposed by __RadGridView.TableElement__:
 |__MenuThemeName__|Gets or sets a value indicating the name of the theme for the context menu in the current GridTableElement.|
 |__ScrollBarThemeName__|Gets or sets a value indicating the name of the theme for the scroll bars in the current GridTableElement.|
 |__ShowSelfReferenceLines__|Gets or sets a value indicating whether to show lines in self reference mode.|
+|**SkipVisibilityCheck** (introduced in R2 2021 SP1)|Get or set a value indicating whether to skip the control visibility check when ensuring cell/row visibility. If you set it to true, the control will scroll to row/cell even when not visible, when ScrollTo or similar functionality is used.|
 
 # Methods
 
