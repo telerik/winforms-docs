@@ -305,8 +305,8 @@ Using the **GlyphsMargin** implementation in the previous example, we can constr
 
 #### Defining Stars Margins
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region=StarsMargins}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region=StarsMargins}}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorMargins.cs region=StarsMargins}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorMargins.vb region=StarsMargins}}
 
 ````C#
 private void SetupStarsMargins()
@@ -370,8 +370,8 @@ It is possible to create an indicator with a vector image which is scaled proper
 
 #### Defining SvgsMargins
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region=SvgMargins}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region=SvgMargins}}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorMargins.cs region=SvgMargins}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorMargins.vb region=SvgMargins}}
 
 ````C#
 private void SetupSvgMargins()
@@ -566,8 +566,8 @@ It is possible to construct a custom **IndicatorsMargin&#60;T&#62;**, where **T*
 
 #### Defining Custom BookmarksPath Margins
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region=BookmarksPathMargin}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region=BookmarksPathMargin}}
+{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorMargins.cs region=BookmarksPathMargin}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorMargins.vb region=BookmarksPathMargin}}
 
 ````C#
 private void SetupBookmarksPathMargin()
