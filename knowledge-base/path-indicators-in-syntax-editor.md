@@ -1,6 +1,6 @@
 ---
 title: Path Indicators in RadSyntaxEditor 
-description: Leanr how to achieve path indicators in WinForms SyntaxEditor.
+description: Learn how to achieve path indicators in WinForms SyntaxEditor.
 type: how-to
 page_title: Path Indicators in RadSyntaxEditor    
 slug: path-indicators-in-syntax-editor
