@@ -27,6 +27,7 @@ previous_url: editors-spineditor-working-with-radspineditor
 |__Hexadecimal__| Gets or sets a value indicating whether the RadSpinEditor should display the value it contains in hexadecimal format.|
 |__RadSpinElement.EnableMouseWheel__| Gets or sets a value indicating whether the user can change the value with mouse wheel.|
  
+>note **DecimalPlaces** is considered when you try to commit a new value to RadSpinEditor. That is why it is expected to round the value if less decimal places are specified than the contained in the value. 
 
 # Events
 |Event|Description|
