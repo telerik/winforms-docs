@@ -16,8 +16,8 @@ Here is a sample demonstrating how you can implement a *Save Layout* button even
 
 #### Save layout
 
-{{source=..\SamplesCS\Panorama\SaveLoadLayout\SaveLoadLayout.cs region=saveLayout}} 
-{{source=..\SamplesVB\Panorama\SaveLoadLayout\SaveLoadLayout1.vb region=saveLayout}} 
+{{source=..\SamplesCS\Panorama\SaveLoadLayout.cs region=saveLayout}} 
+{{source=..\SamplesVB\Panorama\SaveLoadLayout1.vb region=saveLayout}} 
 
 ````C#
 private void SaveButton_Click(object sender, EventArgs e)
@@ -55,8 +55,8 @@ The code snippets below demonstrates how you can implement a *Load Layout* butto
 
 #### Load layout
 
-{{source=..\SamplesCS\Panorama\SaveLoadLayout\SaveLoadLayout.cs region=loadLayout}} 
-{{source=..\SamplesVB\Panorama\SaveLoadLayout\SaveLoadLayout1.vb region=loadLayout}} 
+{{source=..\SamplesCS\Panorama\SaveLoadLayout.cs region=loadLayout}} 
+{{source=..\SamplesVB\Panorama\SaveLoadLayout1.vb region=loadLayout}} 
 
 ````C#
 private void LoadButton_Click(object sender, EventArgs e)
