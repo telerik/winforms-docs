@@ -155,8 +155,23 @@ As the name suggests, this is a connection router that uses a version of the A* 
 
 \* __WallOptimization__- boolean property controlling router optimization logic. If you set this property to *true* the router will try to optimize some of the steps so that there are the least corners.
                 
+With the **R2 2021 SP1** version of Telerik UI for WinForms, several properties were created which can be used to further modify the algorithm for the routing connections. In order the changes to be applied to the algorithm, the **AvoidConnectionOverlap** property of the **AStarRouter** need to be set to **true**.
 
-* __Using virtual methods__ - if the customization provided by these properties does not cover your requirements, you can create your custom router deriving from ours. This will allow you to customize the algorithm by overriding the following methods:
+* **AvoidConnectionOverlap**: Boolean property that gets or sets a value which indicates whether the routing algorithm should try to minimize connection overlaps. The default value is **false**.
+
+>caption Setting AvoidConnectionOverlap property
+
+![diagram-features-routing 007](images/raddiagram-features-routing007.png)
+
+* **SegmentOverlapPenalty**: A property of type double that indicates the penalty of a given path when it overlaps an existing diagram connection. Decreasing the value close to 0, the connections' behavior will become very close to when **AvoidConnectionOverlap** is set to **false**. The connections will start to cross each other. At another hand increasing this property, the connections might start to cross a given shape (avoiding connection will be with higher priority than avoiding a shape). There is no strict number when one is more important than the other. It dependents on the concrete scenario. The default value is 0.5.
+
+* **ShapeCrossPenalty**: A property of type double that indicates the penalty of a given path when it overlaps an existing diagram connection. The default value is 1.
+
+* **SegmentOverlapDistance**: A property of type double that gets or sets the surrounding area of a segment in which an overlap is detected. This property require AvoidConnectionOverlap to be set to True.
+
+### Using virtual methods 
+
+If the customization provided by these properties does not cover your requirements, you can create your custom router deriving from ours. This will allow you to customize the algorithm by overriding the following methods:
 
 \* __GetSiblingNodes__ - this method receives the current state and the end target and should return the next possible nodes
                 
