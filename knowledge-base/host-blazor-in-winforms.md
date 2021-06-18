@@ -335,3 +335,4 @@ That's it! Run the Telerik WinForms app and you will see two tabs that hosts the
 * [BlazorWebView ](https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-3/#blazorwebview-controls-for-wpf-windows-forms)
 * [Blazor on Desktop](https://www.telerik.com/blogs/blazor-on-desktop)
 * [Telerik e-book: Blazor: A Beginner's Guide](https://www.telerik.com/campaigns/blazor/wp-beginners-guide-ebook)
+* [Hybrid Blazor Apps (Blazor Web apps running in WinForms, WPF, MAUI)](https://github.com/telerik/blazor-ui/tree/master/common/hybrid-blazor-apps)

@@ -21,7 +21,7 @@ By default, [RadDropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddr
    
 ## Solution 
    
-First, we will start by creating CustomDropDownList, which inherits from RadDropDownList. We should override the ThemeClassName in order to allow the control to use the RadDropDownList thema and the CreateDropDownListElement, where we will return an instance of a CustomEditorElement and will define the collection editor for our items at design time, so we can add our custom items:  
+First, we will start by creating **CustomDropDownList**, which inherits from **RadDropDownList**. We should override the **ThemeClassName** in order to allow the control to use the **RadDropDownList** theme and the **CreateDropDownListElement**, where we will return an instance of a CustomEditorElement and will define the collection editor for our items at design time, so we can add our custom items:  
    
 ````C#
 public class CustomDropDownList : RadDropDownList
