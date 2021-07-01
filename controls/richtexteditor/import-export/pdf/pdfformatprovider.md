@@ -23,22 +23,23 @@ In order to export a document to PDF you need to use the __Export()__ method of 
 The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ instance and use it to export the document to PDF.
 
 #### Export to Pdf File
-{{source=..\SamplesCS\RichTextEditor\ImportExport\PdfFormatProviderForm.cs region=SetupPdfExportSettings}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\PdfFormatProviderForm.vb region=SetupPdfExportSettings}}
+{{source=..\SamplesCS\RichTextEditor\ImportExport\PdfFormatProviderForm.cs region=ExportPdfToFile}} 
+{{source=..\SamplesVB\RichTextEditor\ImportExport\PdfFormatProviderForm.vb region=ExportPdfToFile}}
 ````C#
-PdfExportSettings pdfExportSettings = new PdfExportSettings();
-pdfExportSettings.ContentsDeflaterCompressionLevel = 9;
-pdfExportSettings.DrawPageBodyBackground = false;
-PdfFormatProvider pdfFormatProvider = new PdfFormatProvider();
-pdfFormatProvider.ExportSettings = pdfExportSettings;
+PdfFormatProvider provider = new PdfFormatProvider();
+using (Stream output = File.OpenWrite("sample.pdf"))
+{
+    RadDocument document = this.radRichTextEditor1.Document;
+    provider.Export(document, output);
+}
 
 ````
 ````VB.NET
-Dim pdfExportSettings As PdfExportSettings = New PdfExportSettings()
-pdfExportSettings.ContentsDeflaterCompressionLevel = 9
-pdfExportSettings.DrawPageBodyBackground = False
-Dim pdfFormatProvider As PdfFormatProvider = New PdfFormatProvider()
-pdfFormatProvider.ExportSettings = pdfExportSettings
+Dim provider As PdfFormatProvider = New PdfFormatProvider()
+Using output As Stream = File.OpenWrite("Sample.pdf")
+    Dim document As RadDocument = Me.radRichTextEditor1.Document
+    provider.Export(document, output)
+End Using
 
 ````
 
