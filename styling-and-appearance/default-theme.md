@@ -36,10 +36,9 @@ As of **R1 2021**, it is possible to define which theme is your **default theme*
   <startup>
     <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
   </startup>
+ 
   <appSettings>
-    
     <add key="TelerikWinFormsThemeName" value="Fluent" />
-    
   </appSettings>
 </configuration>
 
@@ -69,10 +68,9 @@ All Telerik themes are supported with the above API, it is, however, necessary t
   <startup>
     <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
   </startup>
+ 
   <appSettings>
-    
     <add key="TelerikWinFormsThemeName" value="Material" />
-    
   </appSettings>
 </configuration>
 
@@ -103,12 +101,11 @@ Imagine a client creates a theme with name **LightCoral**. Besides the theme nam
   <startup>
     <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
   </startup>
+ 
   <appSettings>
-  
     <add key="TelerikWinFormsThemeName" value="LightCoral" />
     <add key="TelerikWinFormsThemeType" value="LightCoralClassLibrary.LightCoralTheme"/>
     <add key="TelerikWinFormsThemeAssemblyName" value="LightCoralClassLibrary"/>
-
   </appSettings>
 </configuration>
 
