@@ -21,6 +21,14 @@ Properties can be changed in real time and to control element appearance and beh
 
 >note Changes you make through the Control Spy will only affect the current running instance of the application. They are not persisted to the application or the application's theme.
 
+## RadControlSpyForm's Methods
+
+|Method|Description|
+|----|----|
+|SetElementToSpy(RadElement elementToSpy)|Assigns the passed RadElement to RadControlSpy.|
+|SetControlToSpy(Control controlToSpy, bool expandTree)|Assigns the passed RadElement to RadControlSpy. The boolean flag controls whether three structure will be expanded.|
+|SetControlToSpy(Control controlToSpy)|Assigns the passed control to RadControlSpy.|
+
 # See Also
 
 * [ Adding the Control Spy to Your Application]({%slug winforms/tools/controlspy/adding-the-control-spy-to-your-application%})

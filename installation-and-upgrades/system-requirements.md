@@ -13,12 +13,13 @@ previous_url: installation-deployment-and-distribution-system-requirements
 
 The following page describes the system requirements needed by Telerik UI for WinForms: [Telerik UI for WinForms - System requirements](http://www.telerik.com/winforms/tech-sheets/system-requirements).
 
->tip Since R1 2019, .NET Core 3 is also supported. Download it from [here](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+>tip Since **R1 2019**, **.NET Core 3** is also supported. Download it from [here](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
->important Since R1 2020, .NET Core 3.1 is also supported. Download it from [here](https://dotnet.microsoft.com/download/dotnet-core/3.1)       
+>important Since **R1 2020**, **.NET Core 3.1** is also supported. Download it from [here](https://dotnet.microsoft.com/download/dotnet-core/3.1)       
 
->important Since R2 2020, .NET Core 5 is also supported. Download it from [here](https://dotnet.microsoft.com/download/dotnet/5.0) 
->
+>important Since **R2 2020**, **.NET Core 5** is also supported. Download it from [here](https://dotnet.microsoft.com/download/dotnet/5.0) 
+
+>important Since **R2 2021 SP1**, **.NET Core 6** is also supported. Download it from [here](https://dotnet.microsoft.com/download/dotnet/6.0) 
 
 ## See Also
 
