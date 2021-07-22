@@ -15,16 +15,19 @@ You can build the user interface with a __RadRibbonBar__ using a variety of diff
 
 ## Prepare an ImageList to be Used in the Telerik RadRibbonBar
 
-1. Create a __RadRibbonForm__ control by adding it by clicking on the 'Add New Item...' option in the context menu of the project or by changing the base class of a standard Windows Form to __RadRibbonForm.__
+1\. Create a __RadRibbonForm__ control by adding it by clicking on the 'Add New Item...' option in the context menu of the project or by changing the base class of a standard Windows Form to __RadRibbonForm.__
 
-1. Open the designer of the __RadRibbonForm__
+2\. Open the designer of the __RadRibbonForm__
 
-1. Drag a WinForms __ImageList__ component from the Toolbox to the form. In the area below the design surface, you will see __imageList1__. 
+3\. Drag a WinForms __ImageList__ component from the Toolbox to the form. In the area below the design surface, you will see __imageList1__. 
 
-1. Using the Images Collection Editor, add the desired images to the ImageList. For more help with this task, see [How to: Add or Remove ImageList Images with the Designer in Visual Studio](http://msdn2.microsoft.com/en-us/library/ms233674.aspx) documentation. 
+4\. Using the Images Collection Editor, add the desired images to the ImageList. For more help with this task, see [How to: Add or Remove ImageList Images with the Designer in Visual Studio](http://msdn2.microsoft.com/en-us/library/ms233674.aspx) documentation. 
 
 >note A predefined list of images has been prepared for the purpose of this example.
->
+
+5\. Apply the **ImageList** to **RadRibbonBar**:
+
+![ribbonbar-using-different-elements-on-a-radribbonbar 006](images/ribbonbar-using-different-elements-on-a-radribbonbar006.png)
 
 ## Adding a Tab and a Group
 
@@ -59,7 +62,9 @@ You can build the user interface with a __RadRibbonBar__ using a variety of diff
 
 1. Set the __TextImageRelation__ property to __ImageAboveText__.
 
-1. Set an appropriate image by modifying the __Image__ property. 
+1. Set an appropriate image by modifying the __Image__ property or selecting **ImageKey** from the associated ImageList:
+
+	![ribbonbar-using-different-elements-on-a-radribbonbar 007](images/ribbonbar-using-different-elements-on-a-radribbonbar007.png)
 
 1. Set the __ImageAlignment__ property to __MiddleCenter__. 
 
