@@ -9,7 +9,7 @@ res_type: kb
 
 |Product Version|Product|Author|Last modified|
 |----|----|----|----|
-|Q1 2007 SP1|RadGridView for WinForms|Iordan Pavlov|June 11, 2007| 
+|Q1 2007 SP1|RadTreeView for WinForms|Iordan Pavlov|June 11, 2007| 
 
    
 **HOW-TO**
