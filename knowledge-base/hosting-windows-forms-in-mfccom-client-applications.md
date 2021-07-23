@@ -24,8 +24,8 @@ An application's message loop is an internal program loop that retrieves message
 You can resolve these problems by displaying the form on a .NET Framework message loop, which is created by using the [System.Windows.Forms.Application.Run](https://msdn.microsoft.com/en-us/library/ms157900(VS.80).aspx) method.
 To make a Windows Form work correctly from a COM client application, you must run it on a Windows Forms message loop. To do this, use one of the following approaches:
 
-* Use the [System.Windows.Forms.Form.ShowDialog](https://msdn.microsoft.com/en-us/library/c7ykbedk(VS.80).aspx) method to display the Windows Form. For more information, see How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method .
+- Use the [System.Windows.Forms.Form.ShowDialog](http://msdn2.microsoft.com/en-us/library/c7ykbedk%28VS.80%29.aspx) method to display the Windows Form. For more information, see [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/com-interop-by-displaying-a-windows-form-shadow?view=netframeworkdesktop-4.8).
 
-* Display each Windows Form on a new thread. For more information, see [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](http://msdn2.microsoft.com/en-us/library/ms229591(VS.80).aspx).
+- Display each Windows Form on a new thread. For more information, see [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread?view=netframeworkdesktop-4.8).
 
-* Create a shared message loop on a new thread in the .NET Framework component. For more information, see [How to: Support COM Interop by Displaying Windows Forms on a Shared Thread](http://msdn2.microsoft.com/en-us/library/ms229609(VS.80).aspx).
+- Create a shared message loop on a new thread in the .NET Framework component. For more information, see [How to: Support COM Interop by Displaying Windows Forms on a Shared Thread](http://msdn2.microsoft.com/en-us/library/ms229609(VS.80).aspx).

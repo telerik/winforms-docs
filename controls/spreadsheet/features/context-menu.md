@@ -25,6 +25,7 @@ You can access and modify the default context menu in the ContextMenuShowing eve
 
 {{source=..\SamplesCS\Spreadsheet\ContextMenuCode.cs region=context_menu_1}} 
 {{source=..\SamplesVB\Spreadsheet\ContextMenuCode.vb region=context_menu_1}}
+
 ````C#
 public ContextMenuCode()
 {
@@ -60,12 +61,15 @@ End Sub
  
 {{endregion}}
 
+>note Please have in mind that most of the menu items have a binding to the respective command. Hence, their visibility depends on the command itself. Hence, if you want to hide a menu item, it is not enough simply to set the RadMenuItem.**Visibility** property to **Collapsed**. It is necessary to call the RadMenuItem.**UnbindProperty(RadElement.VisibilityProperty)** method as well.
+
 ## RadSpreadsheetSheetSelector's Context Menu
 
 **RadSpreadsheet** offers a separate menu for manipulating the sheet's tab. It is possible to insert, delete, rename or color a tab.
 
 >note As of **R3 2020 SP1** RadSpreadsheet allows hiding/unhiding a sheet. It utilizes the [Sheets Visibility](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-worksheets/sheets-visiblility)  functionality in RadSpreadProcessing.
->
+
+
 * "**Hide**" - hides the selected sheet. If this is the last visible sheet, an alert is shown that it is not possible to hide it.
 * "**Unhide...**" - enabled if there is at least one hidden sheet. Shows a dialog when clicked. In the dialog the user can select, which sheets to unhide.
 >

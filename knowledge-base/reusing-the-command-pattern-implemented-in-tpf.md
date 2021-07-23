@@ -7,9 +7,9 @@ slug: reusing-the-command-pattern-implemented-in-tpf
 res_type: kb
 ---
 
-|Article relates to|Product|Author|Last modified|  
+|Article relates to|Author|Last modified|  
 |----|----|----|----|
-|RadControls for WinForms|Dimitar Kapitanov|Nikolay Diyanov|February 15, 2007| 
+|RadControls for WinForms|Nikolay Diyanov|February 15, 2007| 
 
 ## How To
 
