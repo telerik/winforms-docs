@@ -31,3 +31,4 @@ All controls that contain a **TextPrimitive** in its internal structure can spec
 
 * [GDI+](https://msdn.microsoft.com/en-us/library/windows/desktop/ms533798(v=vs.85).aspx)
 * [GDI](https://msdn.microsoft.com/en-us/library/windows/desktop/dd145203(v=vs.85).aspx)
+* [How to Change the Font of Telerik RadControls]({%slug change-the-font%})
