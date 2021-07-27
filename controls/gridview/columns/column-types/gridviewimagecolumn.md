@@ -111,6 +111,8 @@ imageColumn.ImageAlignment = ContentAlignment.BottomRight
 
 * [Display Images in GridView Cells from URL]({%slug display-images-in-gridview-cells-from-url%})
 
+* [How to Copy the Image in a GridView's Cell]({%slug copy-image-in-grid-cells%})
+
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
 
 * [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
