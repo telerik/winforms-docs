@@ -258,7 +258,10 @@ None of the associated controls (e.g. radSpinEditor1) of a composite rule should
 
 ![validation-provider-validation-rules 004](images/validation-provider-validation-rules004.png) 
 
+## ControlValidation Event
+
 When the validation fails, the **ControlValidation** event is fired. The **RadValidationEventArgs** offers the following information:
+
 * **ValidationHelperElement**: stores the styling information of the error indication. 
 * **IsValid**: determines whether the controls is validated or not. Even though the validation may fail according to the defined rules, you can determine that the situation is valid in certain cases and set it to *true*.
 * **Control**: returns the control being validated. 
@@ -274,6 +277,67 @@ When the validation fails, the **ControlValidation** event is fired. The **RadVa
 * **EnableToolTipShadow**: controls whether the tooltip's shadow will be rendered.
 
 >note As of R1 2021 RadValidationProvider offers the **ClearErrorStatus** method which allows you to clear the visual indication for the validation error.
+
+The **ControlValidation** event is specifically designed to handle cases in which the validation logic may not be easily defined with validation rules. It gives you the possibility to provide conditional validation and control the situations in which the control being validated has correct content or not.
+You can add a **RadValidationRule** for empty Text for example and in addition to this handle the **ControlValidation** event which occurs before a **RadEditorControl** is being validated. The **RadValidationEventArgs** gives very useful information about the tooltip error indication, validation rule, etc. The **IsValid** argument allows you to override the default result indicating whether the validation fails and change the error message accordingly: 
+
+#### Custom Validation in the ControlValidation Event
+
+{{source=..\SamplesCS\ValidationProvider\ValidationProviderGettingStarted.cs region=CustomValidation}} 
+{{source=..\SamplesVB\ValidationProvider\ValidationProviderGettingStarted.vb region=CustomValidation}}
+
+````C#
+        public void CustomValidation()
+        {
+            RadValidationRule radValidationRule1 = new RadValidationRule();
+            radValidationRule1.AutoToolTip = true;
+            radValidationRule1.AddControl(this.radTextBox1);
+            radValidationRule1.Operator = Telerik.WinControls.Data.FilterOperator.IsNotLike;
+            radValidationRule1.PropertyName = "Text";
+            radValidationRule1.ToolTipText = "Text is empty!";
+            radValidationRule1.Value = "";
+
+            radValidationProvider1.ValidationRules.Add(radValidationRule1);
+
+            this.radValidationProvider1.ControlValidation += radValidationProvider_ControlValidation;
+        }
+        private void radValidationProvider_ControlValidation(object sender, RadValidationEventArgs e)
+        {
+            if (e.Control == this.radTextBox1 && this.radTextBox1.Text != string.Empty &&
+                this.radTextBox1.TextBoxElement.TextBoxItem.TextLength < 20)
+            {
+                e.ErrorText = "Text is less than 20 characters !";
+                e.IsValid = false;
+            }
+        }
+
+
+````
+````VB.NET
+    Public Sub CustomValidation()
+        Dim radValidationRule1 As RadValidationRule = New RadValidationRule()
+        radValidationRule1.AutoToolTip = True
+        radValidationRule1.AddControl(Me.RadTextBox1)
+        radValidationRule1.[Operator] = Telerik.WinControls.Data.FilterOperator.IsNotLike
+        radValidationRule1.PropertyName = "Text"
+        radValidationRule1.ToolTipText = "Text is empty!"
+        radValidationRule1.Value = ""
+        radValidationProvider1.ValidationRules.Add(radValidationRule1)
+        AddHandler Me.radValidationProvider1.ControlValidation, AddressOf radValidationProvider_ControlValidation
+    End Sub
+
+    Private Sub radValidationProvider_ControlValidation(ByVal sender As Object, ByVal e As RadValidationEventArgs)
+        If e.Control.Equals(Me.RadTextBox1) AndAlso Me.RadTextBox1.Text <> String.Empty _
+            AndAlso Me.RadTextBox1.TextBoxElement.TextBoxItem.TextLength < 20 Then
+            e.ErrorText = "Text is less than 20 characters !"
+            e.IsValid = False
+        End If
+    End Sub
+
+
+````
+
+{{endregion}} 
 
 # See Also
 
