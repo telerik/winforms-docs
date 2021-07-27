@@ -129,9 +129,122 @@ End Class
 
 ````
 
+>important The provided solution above is applicable for the specified version at the top of the article: **2019.1.219**. For any newer versions, there might be changes and improvements that is possible to affect the expected output. 
+
+Since we have refactored the MapPin's rendering which affects the implementation in this KB article, you can use the following code snippet for newer versions:
+
+````C#
+public class MyMapPin : MapPin
+{
+    private PointL pixelLocation;
+
+    private RectangleL drawRect;
+
+    public MyMapPin(PointG location) : base(location)
+    {
+    }
+
+    public override void Paint(IGraphics graphics, IMapViewport viewport)
+    {
+        object state = graphics.SaveState();
+        graphics.ChangeSmoothingMode(SmoothingMode.AntiAlias);
+        MapVisualElementInfo info = this.GetVisualElementInfo(viewport);
+        GraphicsPath path = info.Path.Clone() as GraphicsPath;
+        GraphicsPath dotPath = new GraphicsPath();
+        long mapSize = MapTileSystemHelper.MapSize(viewport.ZoomLevel);
+        Matrix matrixOffset = new Matrix();
+        matrixOffset.Translate(viewport.PanOffset.Width + info.Offset.X, viewport.PanOffset.Height + info.Offset.Y);
+        path.Transform(matrixOffset);
+        Matrix matrixWraparound = new Matrix();
+        matrixWraparound.Translate(mapSize, 0);
+
+        for (int i = 0; i <= viewport.NumberOfWraparounds - 1; i++)
+        {
+            RectangleF bounds = path.GetBounds();
+            float diameter = bounds.Width / 3 ;
+            dotPath.AddEllipse(bounds.X + diameter, bounds.Y + diameter, diameter, diameter);
+            graphics.FillPath(this.BorderColor, dotPath);
+            FillPrimitiveImpl fill = new FillPrimitiveImpl(this, null);
+            fill.PaintFill(graphics, path, bounds);
+            BorderPrimitiveImpl border = new BorderPrimitiveImpl(this, null);
+            border.PaintBorder(graphics, null/* TODO Change to default(_) if this is not a reference type */, path, bounds);
+
+            StringFormat stringFormat = new StringFormat();
+            stringFormat.Alignment = TelerikAlignHelper.TranslateAlignment(ContentAlignment.MiddleLeft);
+            stringFormat.LineAlignment = TelerikAlignHelper.TranslateLineAlignment(ContentAlignment.MiddleLeft);
+            SizeF size = RadGdiGraphics.MeasurementGraphics.MeasureString(this.Text, this.Font);
+            graphics.DrawString(this.Text, new Rectangle((int)bounds.X, (int)bounds.Y, (int)size.Width + 10, 
+                (int)size.Height), this.Font, this.ForeColor, stringFormat, Orientation.Horizontal, false);
+
+            path.Transform(matrixWraparound);
+        }
+
+        graphics.RestoreState(state);
+    }
+}
+
+
+````
+````VB.NET
+Public Class MyMapPin
+Inherits MapPin
+
+    Private pixelLocation As PointL
+
+    Private drawRect As RectangleL
+
+    Public Sub New(ByVal location As PointG)
+        MyBase.New(location)
+    End Sub
+
+    Public Overrides Sub Paint(ByVal graphics As IGraphics, ByVal viewport As IMapViewport)
+
+        Dim state As Object = graphics.SaveState()
+        graphics.ChangeSmoothingMode(SmoothingMode.AntiAlias)
+        Dim info As MapVisualElementInfo = Me.GetVisualElementInfo(viewport)
+        Dim path As GraphicsPath = TryCast(info.Path.Clone(), GraphicsPath)
+        Dim dotPath As GraphicsPath = New GraphicsPath()
+        Dim mapSize As Long = MapTileSystemHelper.MapSize(viewport.ZoomLevel)
+        Dim matrixOffset As Matrix = New Matrix()
+        matrixOffset.Translate(viewport.PanOffset.Width + info.Offset.X, viewport.PanOffset.Height + info.Offset.Y)
+        path.Transform(matrixOffset)
+        Dim matrixWraparound As Matrix = New Matrix()
+        matrixWraparound.Translate(mapSize, 0)
+
+        For i As Integer = 0 To viewport.NumberOfWraparounds - 1
+            Dim bounds As RectangleF = path.GetBounds()
+            Dim diameter As Single = bounds.Width / 3.0F
+            dotPath.AddEllipse(bounds.X + diameter, bounds.Y + diameter, diameter, diameter)
+            graphics.FillPath(Me.BorderColor, dotPath)
+            Dim fill As FillPrimitiveImpl = New FillPrimitiveImpl(Me, Nothing)
+            fill.PaintFill(graphics, path, bounds)
+            Dim border As BorderPrimitiveImpl = New BorderPrimitiveImpl(Me, Nothing)
+            border.PaintBorder(graphics, Nothing, path, bounds)
+
+            Dim stringFormat As StringFormat = New StringFormat()
+            stringFormat.Alignment = TelerikAlignHelper.TranslateAlignment(ContentAlignment.MiddleLeft)
+            stringFormat.LineAlignment = TelerikAlignHelper.TranslateLineAlignment(ContentAlignment.MiddleLeft)
+            Dim size As SizeF = RadGdiGraphics.MeasurementGraphics.MeasureString(Me.Text, Me.Font)
+            graphics.DrawString(Me.Text, New Rectangle(bounds.X, bounds.Y, size.Width + 10, size.Height), Me.Font, Me.ForeColor, _
+                                stringFormat, Orientation.Horizontal, False)
+
+            path.Transform(matrixWraparound)
+        Next
+
+        graphics.RestoreState(state) 
+        
+    End Sub
+   
+End Class 
+
+````
+
+The code snippet below demonstrates how to use the custom map pin no matter which of the above implementations you are using:
+
 #### Initial Setup
 
 ````C#
+
 public RadForm1()
 {
     InitializeComponent();
@@ -166,6 +279,7 @@ Public Class RadMapPinWithTextForm
         Me.radMap1.MapElement.Providers.Add(osmProvider)
     End Sub
 End Class
+
 ````
 
 # See Also
