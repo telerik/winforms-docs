@@ -11,9 +11,9 @@ previous_url: ribbonbar-backstage-view-working-with-backstage-view
 
 # Working with Backstage View
 
-To enable the Backstage View in RadRibbonBar change the __ApplicationMenuStyle__ property to *BackstageView*.
+To enable the Backstage View in __RadRibbonBar__ change the __ApplicationMenuStyle__ property to *BackstageView*.
 
-#### Enabling Backstage view mode
+#### Enable Backstage view mode
 
 {{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=ApplicationMenuStyle}} 
 {{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=ApplicationMenuStyle}} 
@@ -31,19 +31,33 @@ RadRibbonBar1.ApplicationMenuStyle = Telerik.WinControls.UI.ApplicationMenuStyle
 
 ![ribbonbar-backstage-view-working-with-backstage-view 001](images/ribbonbar-backstage-view-working-with-backstage-view001.png)
 
+
+At design time you can access the __ApplicationMenuStyle__ property through the Properties window and set it to *BackstageView*. Thus, when you click on the __ApplicationMenuButton__, the __RadRibbonBar__ will automatically create an instance of __RadRibbonBarBackstageView__ class (radRibbonBarBackstageView1). The __RadRibbonBarBackstageView__ represents a BackStageView control that may contain tabs, pages, buttons, etc.
+
+![ribbonbar-backstage-view-working-with-backstage-view 005](images/ribbonbar-backstage-view-working-with-backstage-view006.png)
+
+
+
 ## Adding and editing items and controls at design time
 
 You can add two types of items to the BackstageVIew’s left panel at design time: __BackstageButtonItem__ and __BackstageTabItem__. The __BackstageButtonItem__ serves as a normal button while the __BackstageTabItem__ has a page associated with it on which you can drag controls from the toolbox.
 
-You have three options to add these items to the BackstageView at design time.
+You have three options to add these items to the BackstageView at design time:
 
-The first one is by using the __Smart Tag__:
+* By using the __Smart Tag__
+
+The first one is by using the __Smart Tag__. The __Smart Tag__ would appear when you click on the  __ApplicationMenuButton__. A dotted rectangle shows the radRibbonBarBackstageView1. By clicking on its smart tag a RadRibbonBarBackstageView Tasks window will appear, so you can further edit items, add tabs, etc.
 
 ![ribbonbar-backstage-view-working-with-backstage-view 002](images/ribbonbar-backstage-view-working-with-backstage-view002.png)
 
-The second one is using the __RadItem Collection Editor__ to edit the Items collection:
+
+* By using the __RadItem Collection Editor__
+
+The second one is using the __RadItem Collection Editor__ to edit the Items collection. 
 
 ![ribbonbar-backstage-view-working-with-backstage-view 003](images/ribbonbar-backstage-view-working-with-backstage-view003.png)
+
+* By using the context menu
 
 The third one is using the context menu:
 
