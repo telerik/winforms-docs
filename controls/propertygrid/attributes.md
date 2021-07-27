@@ -443,3 +443,4 @@ Private m_BProperty As ToggleState
 * [Binding to Multiple Objects]({%slug winforms/propertygrid/populating-with-data/binding-to-multiple-objects%})
 * [RadPropertyStore - Adding Custom Properties]({%slug winforms/propertygrid/populating-with-data/radpropertystore-adding-custom-properties%})
 * [Type Converters]({%slug winforms/propertygrid/type-converters%})
+* [How to Show Nested Collections in RadPropertyGrid]({%slug show-nested-collections-in-propertygrid%})
