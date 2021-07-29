@@ -26,7 +26,7 @@ By default, **RadGridView** starts [editing]({%slug winforms/gridview/editors/ed
 
 7\. **CellEndEdit** - The **GridViewEditManager** ends the edit operation and deactivates the editor when the editor's value is either confirmed by pressing Enter/Tab or the user discards the changes by pressing Escape. 
 
->note When the grid is in edit mode and the user navigates to another cell either by pressing Tab or by clicking a cell, the editor will by activated for the new current cell (if the **BeginEditMode** property value is not **BeginEditProgrammatically**.). 
+>note When the grid is in edit mode and the user navigates to another cell either by pressing Tab or by clicking a cell, the editor will be activated for the new current cell (if the **BeginEditMode** property value is not **BeginEditProgrammatically**.). 
 
 # See Also
 
