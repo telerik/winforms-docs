@@ -13,8 +13,6 @@ previous_url: pdfviewer-unsupported-features
 
 The unsupported features include:
 
-* Type3 fonts;
-
 * Almost all fonts that are embedded in the PDF file should be displayed correctly. There are minimal limitations with some font formats;
 
 * There are some limitations with CCITTFaxDecode filter;
