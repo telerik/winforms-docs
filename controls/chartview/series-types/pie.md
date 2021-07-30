@@ -71,6 +71,10 @@ series.Range = range
 
 * __ShowLabels:__ The property determines whether the labels above each point will be visible.
 
+* __LabelMode__: Gets or sets the label mode of the __PieSeries__. The user can choose one of the following options: 
+    - *Horizontal* - Each label is renderred horizontally. Its position from the center of its corresponding pie segment is determined by X property.
+    - *Radial* - Each label is renderred radial to its corresponding Pie segment. Its position from the center of the chart is determined by X property.
+
 * __RadiusFactor:__ The property can increase and decrease the diameter of the series. Setting the __RadiusFactor__ to *0.9* will decrease the radius of the series by *10 percent*. Similarly, the value *1.1* will increase it. Leaving the property with value *1* will make the donut fill the available space.            
 
 Additionally, PieSeries allows offsetting a pie segment from the rest of the slices. This is achieved through the __OffsetFromCenter__ property of the individual PieDataPoint. The following snippet demonstrates how to shift the first pie piece: 

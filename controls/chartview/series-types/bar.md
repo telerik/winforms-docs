@@ -66,6 +66,11 @@ __BarSeries__ could be customized using the following properties:
 
 * __ShowLabels__: A Boolean property that indicates whether the labels of each bar should be displayed. The specific position of the labels is determined by the orientation (vertical or horizontal) and the CombineMode (None, Cluster, Stack, Stack100) of the bars.
 
+* __LabelMode__: Gets or sets the label mode of the __BarSeries__. It offers enumeration of three options: 
+    - *Default* - Labels are positoned using the default strategy.
+    - *Center* - Each label is renderred at the center of its corresponding bar.
+    - *Top* - Each label is renderred at the top of its corresponding bar. If the area orientation is horizontal, the labels appear on the right of each bar.
+
 * __CombineMode__: A common property for all categorical series, which introduces a mechanism for combining data points that reside in different series but have the same category. The combine mode can be __None__, __Cluster__, __Stack__ and __Stack100__. __None__ means that the series will be plotted independently of each other, so that they are overlapping. __Cluster__ displays data points in the same category  huddled close together. __Stack__ plots the points on top of each other and __Stack100__ will display the value as percent. The combine mode is best described by a picture (Left - Stack, Right – Stack100).
 
 >caption Figure 2: Combine Mode 
