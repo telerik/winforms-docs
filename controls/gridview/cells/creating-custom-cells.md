@@ -620,3 +620,5 @@ End Sub
 
 * [Create Custom Header Cells in RadGridView]({%slug custom-header-cell-in-gridview%})
 
+* [Barcode Column in RadGridView]({%slug barcode-column-in-gridview%})
+
