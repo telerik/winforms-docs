@@ -95,7 +95,8 @@ Me.radMultiColumnComboBox1.EditorControl.FilterDescriptors.Add(compositeFilter)
 >caution The composite filters allow you to create more complex filtering expressions. Note that this feature is supported for text columns only as the __RadMultiColumnComboBox__ has one common text input for the filtering operation and it is not possible to convert input data to different data formats automatically.
 >
 
-
 # See Also
 
 * [Auto-Complete]({%slug winforms/multicolumncombobox/auto-complete%})	
+
+* [How to Use GridView Filter Row in RadMultiColumnCombobox]({%slug grid-filter-row-in-multicolumncobobox%})	
