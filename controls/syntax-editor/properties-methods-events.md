@@ -46,6 +46,7 @@ position: 3
 |**HorizontalScrollBar**|Gets the horizontal scroll bar.|
 |**HorizontalScrollBarVisibility**|Gets or sets the horizontal scroll bar visibility.|
 |**VerticalScrollBarVisibility**|Gets or sets the vertical scroll bar visibility.|
+|**IsReadOnly**|Gets or sets a value indicating whether the syntax editor is read only.|
 |**Margins**|Gets the margins.|
 |**Selection**|Gets the selection.|
 
