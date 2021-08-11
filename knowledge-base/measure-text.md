@@ -28,7 +28,7 @@ By default, Telerik Presentation Framework uses **GDI+** to measure and render t
 
 * [Draw text with GDI+: Graphics.DrawString](https://docs.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-drawing-text-use) 
 
-That is why when using **GDI** for rendering the text, it is suitable to use the TextRdenderer.[MeasureText](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textrenderer.measuretext?redirectedfrom=MSDN&view=net-5.0#overloads) method for measuring it. And for **GDI+**, feel free to use the Graphics.[MeasureString](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.graphics.measurestring?view=net-5.0) method. Both methods offer different overloads allowing you to measure the text in a precise manner according to different criteria that you may have, e.g. format flags, font, available width, etc.
+That is why when using **GDI** for rendering the text, it is suitable to use the TextRenderer.[MeasureText](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textrenderer.measuretext?redirectedfrom=MSDN&view=net-5.0#overloads) method for measuring it. And for **GDI+**, feel free to use the Graphics.[MeasureString](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.graphics.measurestring?view=net-5.0) method. Both methods offer different overloads allowing you to measure the text in a precise manner according to different criteria that you may have, e.g. format flags, font, available width, etc.
 
 # See Also
 
