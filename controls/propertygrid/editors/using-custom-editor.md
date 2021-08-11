@@ -155,3 +155,4 @@ End Sub
 
 * [Customizing Editor Behavior]({%slug winforms/propertygrid/editors/using-custom-editor%})
 * [Validation]({%slug winforms/propertygrid/editors/customizing-editor-behavior%})
+* [How to allow end-users to add custom items to PropertyGridDropDownListEditor]({%slug allow-end-users-to-add-items-to-propertygriddropdownlisteditor%})

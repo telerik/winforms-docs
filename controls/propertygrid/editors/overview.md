@@ -57,3 +57,4 @@ There are a number of build-in ediotrs which are used for editing different data
 * [Events]({%slug winforms/propertygrid/editors/events%})
 * [Validation]({%slug winforms/propertygrid/editors/validation%})
 * [Custom Editors]({%slug winforms/propertygrid/editors/using-custom-editor%})
+* [How to allow end-users to add custom items to PropertyGridDropDownListEditor]({%slug allow-end-users-to-add-items-to-propertygriddropdownlisteditor%})
