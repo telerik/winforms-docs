@@ -40,18 +40,19 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 
 |Telerik NuGet Version|Visual Studio Version|
 |----|----|
-|R2 2021 SP1 v2021.2.615|VS2019 v16.10 GA or newer; VS2019 v16.11 Preview 1 & 2|
-|Hotfix 2021 v2021.2.607-hotfix|VS2019 v16.10 GA or newer; VS2019 v16.11 Preview 1|
-|R2 2021 v2021.2.511|VS2019 v16.9 GA or newer; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
-|Hotfix 2021 v2021.1.329-hotfix|VS2019 v16.9 GA or newer; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
-|R1 2021 SP3 v2021.1.326|VS2019 v16.9 GA or newer; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
-|R1 2021 SP2 v2021.1.223|VS2019 v16.9 GA or newer; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
+|Hotfix 2021 v2021.2.802-hotfix|VS2019 v16.11 GA; VS2019 v16.11 Preview 4; VS2022 v17.0 Preview 3|
+|Hotfix 2021 v2021.2.712-hotfix|VS2019 v16.11 GA; VS2019 v16.11 Preview 1 & 2; VS2022 v17.0 Preview 2|
+|R2 2021 SP1 v2021.2.615|VS2019 v16.10 GA; VS2019 v16.11 Preview 1 & 2; VS2022 v17.0 Preview 1|
+|Hotfix 2021 v2021.2.607-hotfix|VS2019 v16.10 GA; VS2019 v16.11 Preview 1|
+|R2 2021 v2021.2.511|VS2019 v16.9 GA; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
+|Hotfix 2021 v2021.1.329-hotfix|VS2019 v16.9 GA; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
+|R1 2021 SP3 v2021.1.326|VS2019 v16.9 GA; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
+|R1 2021 SP2 v2021.1.223|VS2019 v16.9 GA; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
 |R1 2021 SP1 v2021.1.204|VS2019 v16.9 Preview 2 or newer|
 |R1 2021 v2021.1.122|VS2019 v16.9 Preview 2 or newer|
 |Hotfix v2020.3.1215-hotfix|VS2019 v16.9 Preview 2|
 |Hotfix v2020.3.1116-hotfix|VS2019 v16.9 Preview 1|
-|R3 2020 SP1 v2020.3.1020|VS2019 v16.8 GA or newer|
-|R3 2020 SP1 v2020.3.1020|VS2019 v16.8 Preview 4|
+|R3 2020 SP1 v2020.3.1020|VS2019 v16.8 GA; VS2019 v16.8 Preview 4|
 |R3 2020 v2020.3.915|VS2019 v16.8 Preview 3|
 
 >note The Hotfix NuGet packages are uploaded to the Telerik NuGet server as part of our [Latest Internal Builds](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/latest-internal-builds#latest-internal-builds).
@@ -68,7 +69,7 @@ Note that the design-time assemblies are resolved from the installed NuGet packa
  
 Please also have in mind that if you have a designer opened and you rebuild your project, this will kill the .NET Core process hosting the design server, ultimately this will lead to restarting the design surface by starting a new server process. That is why it is recommended to consider closing the designers before rebuilding your project.
 
-## What`s coming next 
+## What's coming next 
 
 * Custom glyphs
 * Embedded in the designer editors
