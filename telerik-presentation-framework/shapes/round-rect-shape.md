@@ -63,3 +63,5 @@ radPanel1.PanelElement.Shape = roundRectShape
 
 * [Star Shape]({%slug winforms/telerik-presentation-framework/star-shape%})
 
+* [How to Achieve Rounded Shape and Rounded Border for RadTextBox]({%slug rounded-border%})
+
