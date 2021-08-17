@@ -27,6 +27,7 @@ __RadTrackBar__, sometimes called a slider control, can be used for navigating 
 * Orientation 
 * Value limits
 * Snap mode
+* Negative values support
 
 # See Also
 
