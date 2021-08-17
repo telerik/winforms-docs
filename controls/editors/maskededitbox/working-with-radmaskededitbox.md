@@ -17,23 +17,25 @@ The behavior of the control can be defined by setting up some important properti
 
 __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, methods and events. The significant properties unique to __RadMaskedEditBox__ are:
 
-* __MaskType:__ This property determines how masks are interpreted by the control. Valid values are.
+* __MaskType:__ This property determines how masks are interpreted by the control. Valid values are:
 
-* __None:__ The control acts like a text box.
+    * __None:__ The control acts like a text box.
 
-* [Numeric:]({%slug winforms/editors/maskededitbox/numeric-masks%}) You can define [standard](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) numeric masks.
+    * [Numeric:]({%slug winforms/editors/maskededitbox/numeric-masks%}) You can define [standard](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) numeric masks.
 
-* [Standard:]({%slug winforms/editors/maskededitbox/standard-masks%}) You can define standard masks
+    * [Standard:]({%slug winforms/editors/maskededitbox/standard-masks%}) You can define standard masks
 
-* __Regex:__ You can define [Regex expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions) as masks.
+    * __Regex:__ You can define [Regex expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions) as masks.
 
-* __IP:__ Predefined mask for IP input.
+    * __IP:__ Predefined mask for IP input.
 
-* __Email:__ Predefined mask for email validation.
+    * __Email:__ Predefined mask for email validation.
 
-* __DateTime:__ Predefined mask for DateTime input.
+    * __DateTime:__ Predefined mask for DateTime input.
 
-* __FreeFormatDateTime:__ With that mask type end-users are able to enter a date and time in a wide range of formats without having to conform to a specific mask. In the following article you can find more information how this DateTime parsing logic works: [Parsing Dates]({%slug winforms/editors/maskededitbox/parsing-dates%})
+    * __TimeSpan:__ Predefined mask for TimeSpan input. Available since R1 2019.
+
+    * __FreeFormatDateTime:__ With that mask type end-users are able to enter a date and time in a wide range of formats without having to conform to a specific mask. In the following article you can find more information how this DateTime parsing logic works: [Parsing Dates]({%slug winforms/editors/maskededitbox/parsing-dates%})
 
 * __Mask:__ A string of characters that constrain user input. The Mask property may contain literals and special mask characters. The MaskType determines how the mask characters are interpreted. Use the backslash "\" character to escape any mask characters so that they display as literals. At runtime, any blank space occupied by a Mask character is displayed as the **PromptChar** property character.
 
