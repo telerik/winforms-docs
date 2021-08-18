@@ -84,6 +84,60 @@ Here are the __GridViewHyperlinkColumn__ specific events:
 
 * __HyperlinkOpened:__ event which is raised after opening the link.
 
+The following example demonstrates how to replace the default **GridViewTextBoxColumn** with a **GridViewHyperlinkColumn** which stores emails. When an email hyperlink is clicked, a mail message is opened in the default Mail application:
+
+{{source=..\SamplesCS\GridView\Columns\GridViewHyperlinkColumn1.cs region=EmailColumn}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewHyperlinkColumn1.vb region=EmailColumn}} 
+
+````C#
+
+public void SetupEmailsColumn()
+{
+    DataTable table = new DataTable();
+    table.Columns.Add("textColumn");
+    table.Rows.Add("asd@asd.com");
+    table.Rows.Add("qwe@qwe.com");
+    this.radGridView1.DataSource = table;
+    // how let's replace the column with a hyperlink column 
+    this.radGridView1.Columns.RemoveAt(0);
+    GridViewHyperlinkColumn hyperlinkCol = new GridViewHyperlinkColumn();
+    hyperlinkCol.FieldName = "textColumn";
+    this.radGridView1.Columns.Add(hyperlinkCol);
+    this.radGridView1.Columns[0].Width = 200;
+    this.radGridView1.HyperlinkOpening += RadGridView1_HyperlinkOpening;
+}
+
+private void RadGridView1_HyperlinkOpening(object sender, HyperlinkOpeningEventArgs e)
+{
+    System.Diagnostics.Process.Start("mailto:" + e.Cell.Value);
+}
+
+
+````
+````VB.NET
+ Public Sub SetupEmailsColumn()
+    Dim table As DataTable = New DataTable()
+    table.Columns.Add("textColumn")
+    table.Rows.Add("asd@asd.com")
+    table.Rows.Add("qwe@qwe.com")
+    Me.radGridView1.DataSource = table
+    Me.radGridView1.Columns.RemoveAt(0)
+    Dim hyperlinkCol As GridViewHyperlinkColumn = New GridViewHyperlinkColumn()
+    hyperlinkCol.FieldName = "textColumn"
+    Me.radGridView1.Columns.Add(hyperlinkCol)
+    Me.radGridView1.Columns(0).Width = 200
+    AddHandler Me.radGridView1.HyperlinkOpening, AddressOf RadGridView1_HyperlinkOpening
+End Sub
+
+Private Sub RadGridView1_HyperlinkOpening(ByVal sender As Object, ByVal e As HyperlinkOpeningEventArgs)
+    System.Diagnostics.Process.Start("mailto:" & e.Cell.Value)
+End Sub
+
+
+````
+
+{{endregion}} 
+
 
 # See Also
 
