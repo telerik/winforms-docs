@@ -84,7 +84,7 @@ End Class
 
 
 
-or to use one of the predefined shapes:
+or to use one of the pre-defined shapes:
 
 ![diagram-diagram-items-shapes 002](images/diagram-diagram-items-shapes002.png) 
 
@@ -116,6 +116,7 @@ RadDiagram1.AddShape(starShape)
 
 {{endregion}} 
 
+>note A list of pre-defined shapes is available here: [Shapes](https://docs.telerik.com/devtools/winforms/controls/diagram/diagram-items/shapes)
  
 ## Setting the Position of a Shape
 
@@ -251,4 +252,5 @@ shape.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollection(New
 # See Also
  
 * [ContainerShapes]({%slug winforms/diagram/diagram-items/containershapes%})	
-* [Connections]({%slug winforms/diagram/diagram-items/connections%})	 
+* [Connections]({%slug winforms/diagram/diagram-items/connections%})	
+* [Custom shapes]({%slug winforms/diagram/custom-shapes%})
