@@ -48,6 +48,8 @@ This article describes how you can install the WinForms suite using a NuGet pack
 
 You need to add the Telerik package server (https://nuget.telerik.com/nuget) to the package sources in visual studio.
 
+>note The improved Telerik NuGet v3 is now available for beta testing at [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json). The new v3 API is faster, lighter, and reduces the number of requests from NuGet clients. You are welcome to try it.
+
 1. First open the __Options__ window: 
 
 	![installation-deployment-and-distribution-install-using-nuget 002](images/installation-deployment-and-distribution-install-using-nuget002.png)
