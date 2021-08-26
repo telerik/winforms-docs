@@ -15,7 +15,7 @@ This article shows how you can change the appearance of specific cells.
 
 ## CellFormatting
 
-Using the **CellFormatting** event you can also set various properties of the **PivotGridCellElement** to modify its appearance. The following example colors the cells in August in Blue color and those in November in Green color:
+Using the **CellFormatting** event you can also set various properties of the **PivotCellElement** to modify its appearance. The following example colors the cells in August in Blue color and those in November in Green color:
 
 >caption Figure 1: Formatting Pivot Data Cells
 
