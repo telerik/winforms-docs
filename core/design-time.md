@@ -40,7 +40,7 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 
 |Telerik NuGet Version|Visual Studio Version|
 |----|----|
-|Hotfix 2021 v2021.2.802-hotfix|VS2019 v16.11 GA; VS2019 v16.11 Preview 4; VS2022 v17.0 Preview 3|
+|Hotfix 2021 v2021.2.802-hotfix|VS2019 v16.11 GA; VS2019 v16.11 Preview 4; VS2022 v17.0 Preview 2|
 |Hotfix 2021 v2021.2.712-hotfix|VS2019 v16.11 GA; VS2019 v16.11 Preview 1 & 2; VS2022 v17.0 Preview 2|
 |R2 2021 SP1 v2021.2.615|VS2019 v16.10 GA; VS2019 v16.11 Preview 1 & 2; VS2022 v17.0 Preview 1|
 |Hotfix 2021 v2021.2.607-hotfix|VS2019 v16.10 GA; VS2019 v16.11 Preview 1|
