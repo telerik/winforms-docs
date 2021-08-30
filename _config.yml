@@ -1255,6 +1255,9 @@ navigation:
     controls/syntax-editor/features/taggers:
         title: Taggers
         position: 8
+    controls/task-board:
+        title: Task Board
+        position: 478
     controls/task-dialog:
         title: Task Dialog
         position: 478
@@ -1767,6 +1770,7 @@ intro_columns:
       "RadialGauge": "winforms/gauges/radialgauge"
       "RangeSelector": "winforms/rangeselector/overview"
       "Sparkline": "radsparkline-overview"
+      "Task Board": "task-board-overview"
 
 
 ## Do not edit below this line

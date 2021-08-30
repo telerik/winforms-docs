@@ -107,5 +107,20 @@ It allows adding new pages or dragging the existing pages to a new location and 
 
 ![hierarchy-support 004](images/hierarchy-support004.gif)
 
+### NavigationView Hierarchy Settings
+
+* **HierarchyIndent**: Gets or sets the hierarchical indentation of the child items. Default value = 20.
+
+* **ExpandedGlyph**: Gets or sets the glyph used for the items's expander element, when the item IsExpanded property is true.
+
+* **CollapsedGlyph**: Gets or sets the glyph used for the items's expander element, when the item IsExpanded property is false.
+
+* **ItemExpandCollapseMode**: Gets or sets the expand/collapse mode of navigation items when they have hierarchical children. The available values are: *OnItemClick* and *OnExpanderClick*. 
+
+* **HierarchyPopupExpandMode**: Gets or sets the expand/collapse mode of navigation items when they have hierarchical children.
+
+
+
+
 
 
