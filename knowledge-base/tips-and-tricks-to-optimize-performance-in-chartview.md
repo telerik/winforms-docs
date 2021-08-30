@@ -31,6 +31,8 @@ General tips for improving the performance are listed below:
 
 * **Disable Axis Labels' Caching**: The [EnableElementCache]({%slug winforms/chartview-/axes%}) property of the axis determines whether the axis labels will be cached or not. By default, it is set to true. In scenarios requiring frequent updates in the chart`s data points it is recommended to set the property to **false**.
 
+* **Increase the MajorTickInterval**: When using [CategoricalAxis]({%slug winforms/chartview-/axes/categorical%}), reduce the number of labels displayed on the axis. This can be achieved by applying a bigger value to the MajorTickInterval property.
+
 # See Also
 
 * [FastLineSeries]({%slug winforms/chartview-/series-types/fastline-%})
