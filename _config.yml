@@ -571,6 +571,9 @@ navigation:
     controls/file-dialogs/how-to:
         title: How To
         position: 7
+    controls/filter-view:
+        title: Filter View
+        position: 227
     controls/forms-and-dialogs:
         title: Forms and Dialogs
         position: 230
@@ -1634,6 +1637,7 @@ intro_columns:
       "TreeView": "winforms/treeview"
       "VirtualGrid": "winforms/virtualgrid"
       "DataFilter": "winforms/datafilter/overview"
+      "FilterView": "winforms/filter-view/overview"
   -
     title: "Tools"
     items:
