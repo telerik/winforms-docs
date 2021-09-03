@@ -16,6 +16,24 @@ This article describes the inner structure and organization of the elements whic
 ![task-board-structure 001](images/task-board-structure001.png)
 
 **RadTaskBoard** is composed of column elements. Each **RadTaskBoardColumnElement** contains a header, task card elements and a button at the bottom for adding more task cards. Every **RadTaskCardElement** contains 9 containers: 3 x 3. This allows adding different elements top-left, top-center, top-right, middle-left, middle-center, middle-right, bottom-left, bottom-center, bottom-right. 
+
+* Column: Essential building block, represented by the base class RadTaskBoardColumnElement. The columns inside the control can be collapsed.
+ 
+* Column Header: Represents the header of the columns inside the RadTaskBoard control.
+
+* Task Title: Represents the title of the task item.
+
+* User: Represents the circle container which can display an icon image of the RadTaskBoard card.
+
+* Tags: Displays a collection of highlight objects applied to a given item.
+
+* Accent/Category Indicator: Represents the color container on the left side for a RadTaskBoard card.
+
+* Task Description: Represents the description of the item.
+
+* Expand/Collapse Column Button: Collapses and expands the column.
+
+## Elements Hierarchy
  
 ![task-board-structure 002](images/task-board-structure002.png)
  
