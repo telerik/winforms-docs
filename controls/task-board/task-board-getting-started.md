@@ -5,8 +5,7 @@ description: Learn how to get started with the WinForms TaskBoard (Kanban) contr
 slug: task-board-getting-started
 tags: task board, kanban, getting, started
 published: True
-position: 2 
-CTAControlName: TaskBoard
+position: 2  
 ---
 
 # Getting Started

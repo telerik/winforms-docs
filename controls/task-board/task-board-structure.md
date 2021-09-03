@@ -5,8 +5,7 @@ description: Get familiar with the internal elements structure of the WinForms T
 slug: task-board-structure
 tags: task board, kanban, structure
 published: True
-position: 1 
-CTAControlName: TaskBoard
+position: 1  
 ---
 
 # Structure
@@ -32,6 +31,10 @@ This article describes the inner structure and organization of the elements whic
 * Task Description: Represents the description of the item.
 
 * Expand/Collapse Column Button: Collapses and expands the column.
+
+Each **RadTaskCardElement** offers accent color, title, description, user info, tags, sub tasks. The sub tasks are displayed in the following format: "Number of Completed Tasks/ Total number of tasks". 
+
+![task-board-structure 003](images/task-board-structure003.png)
 
 ## Elements Hierarchy
  
