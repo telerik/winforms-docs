@@ -54,7 +54,7 @@ In the *Properties* window on the right side in Visual Studio, it is possible to
  
 # See Also
 
-* [Design Time]({%slug task-board-design-time%})
+* [Getting Started]({%slug task-board-getting-started%})
 * [Structure]({%slug task-board-structure%})
  
         
