@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-By default the area series are pained from bottom to top (above the horizontal axis). This article shows how you can paint a chart where the area is started from zero. This means that the positive values will go up and the negative down.
+By default the area series are painted from bottom to top (above the horizontal axis). This article shows how you can paint a chart where the area is started from zero. This means that the positive values will go up and the negative down.
 
 >caption Figure 1: Sample Chart
 ![negative-area-chart001](images/negative-area-chart001.png)
