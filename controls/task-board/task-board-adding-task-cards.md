@@ -22,8 +22,8 @@ However, if the button is enabled, the default **RadTaskCardElement** that is ge
 
 #### Create a Predefined RadTaskCardElement
 
-{{source=..\SamplesCS\FilterView\FilterViewGettingStarted.cs region=PredefinedCard}} 
-{{source=..\SamplesVB\FilterView\FilterViewGettingStarted.vb region=PredefinedCard}} 
+{{source=..\SamplesCS\TaskBoard\TaskBoardGettingStarted.cs region=PredefinedCard}} 
+{{source=..\SamplesVB\TaskBoard\TaskBoardGettingStarted.vb region=PredefinedCard}} 
 
 ````C#
 
