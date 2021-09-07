@@ -10,14 +10,23 @@ position: 3
 
 # Design Time
 
-To start using **RadTaskBoard**, just drag it from the toolbox and drop it onto the form.
+To start using **RadFilterView**, just drag it from the toolbox and drop it onto the form.
  
 ## Smart Tag 
 
-Select **RadTaskBoard** and click the small arrow on the top right position in order to open the Smart Tag.
+Select **RadFilterView** and click the small arrow on the top right position in order to open the Smart Tag. It allows you to set the **DataSource** property:
 
-![task-board-design-time 001](images/task-board-design-time001.png)
+![filter-view-design-time 002](images/filter-view-design-time002.png)
 
+Thus, when you run the project, the appropriate filter view group elements will be generated considering the available fields and fields type in the applied source collection:
+
+![filter-view-design-time 003](images/filter-view-design-time003.png)
+
+## Edit Categories
+
+The "Edit categories" option allows you to define your own category elements:
+
+![filter-view-design-time 001](images/filter-view-design-time001.png)
 
  
 # See Also
