@@ -41,3 +41,4 @@ If you want to get another version in the Toolbox, it is necessary to:
 * [Migrating to .NET Core]({%slug winforms/core/core-migration%})
 * [.NET Core Project Converter]({%slug winforms/core/net-core-project-converter%})
 * [Windows Forms Designer for .NET Core Released](https://devblogs.microsoft.com/dotnet/windows-forms-designer-for-net-core-released/)
+* [Handle Toolbox Issues with .NET Core]({%slug toolbox-issues-with-net-core%})
