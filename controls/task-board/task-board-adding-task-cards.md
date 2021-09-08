@@ -16,9 +16,9 @@ However, if the button is enabled, the default **RadTaskCardElement** that is ge
 
 ![task-board-adding-task-cards 001](images/task-board-adding-task-cards001.png)
 
-**RadTaskBoardColumnElement** offers the **AddingTaskCard** event which allows you to define default values for the new task card of a certain column element.
+**RadTaskBoardColumnElement** offers the **TaskCardAdding** event which allows you to define default values for the new task card of a certain column element.
 
->note The **AddingTaskCard** event is also an appropriate place to show a custom dialog and present the end user an appropriate UI for filling in the necessary information. Just make sure that such a dialog is modal and its information is used when assigning the TaskCardAddingEventArgs.TaskCard.
+>note The **TaskCardAdding** event is also an appropriate place to show a custom dialog and present the end user an appropriate UI for filling in the necessary information. Just make sure that such a dialog is modal and its information is used when assigning the TaskCardAddingEventArgs.TaskCard.
 
 #### Create a Predefined RadTaskCardElement
 
@@ -27,7 +27,7 @@ However, if the button is enabled, the default **RadTaskCardElement** that is ge
 
 ````C#
 
-private void RadTaskBoardColumnElement_AddingTaskCard(RadTaskBoardColumnElement.TaskCardAddingEventArgs args)
+private void RadTaskBoardColumnElement_TaskCardAdding(RadTaskBoardColumnElement.TaskCardAddingEventArgs args)
 {
     RadTaskCardElement defaultTaskCard = new RadTaskCardElement();
     defaultTaskCard.TitleText = "ListView improvements";
@@ -52,7 +52,7 @@ private void RadTaskBoardColumnElement_AddingTaskCard(RadTaskBoardColumnElement.
 ````
 ````VB.NET
 
-Private Sub RadTaskBoardColumnElement_AddingTaskCard(args As RadTaskBoardColumnElement.TaskCardAddedEventArgs)
+Private Sub RadTaskBoardColumnElement_TaskCardAdding(args As RadTaskBoardColumnElement.TaskCardAddedEventArgs)
     Dim defaultTaskCard As RadTaskCardElement = New RadTaskCardElement()
     defaultTaskCard.TitleText = "ListView improvements"
     defaultTaskCard.DescriptionText = "Research phase"
