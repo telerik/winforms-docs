@@ -19,12 +19,14 @@ res_type: kb
 
 Usually, when [designing a .NET Core project]({%slug core-design-time%}), the controls in the toolbox are resolved via the installed in the project NuGet package: [Toolbox Version]({%slug core-toolbox-version%}). However, in some cases you may see duplicated or disabled controls in the toolbox or experience any errors when dragging a control from the toolbox and drop it onto the form.
 
->caption 1 Duplicated controls in the Toolbox
+>caption 1. Duplicated controls in the Toolbox
 
 ![toolbox-issues-with-net-core 001](images/toolbox-issues-with-net-core001.png)
->caption 2 Disabled controls in the Toolbox
+
+>caption 2. Disabled controls in the Toolbox
 
 ![toolbox-issues-with-net-core 002](images/toolbox-issues-with-net-core002.png)
+
 This article aims to explain the possible reason for this and how to handle it accordingly.
 
 ## Solution 
