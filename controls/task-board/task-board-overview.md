@@ -17,7 +17,7 @@ CTAControlName: TaskBoard
 
 ## Key Features:
 
-* **Task Card Template**: RadTaskBoard provides built-in design for each task which exposes the most required properties that allow you to track your task life cycle. 
+* **Predefined Task Card**: RadTaskBoard provides built-in design for each task which exposes the most required properties that allow you to track your task life cycle. 
 
 * **Accent Indicator**: Using colors is a quick way to make tasks stand out on the board. It helps users to quickly identify priority, type of work or an assignee as well as to group tasks for further reporting using the color criteria.
 

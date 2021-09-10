@@ -5,7 +5,7 @@ description: Learn how you can localize all strings used in the WinForms FilterV
 slug: filter-view-localization
 tags: filter, view, localization, translate
 published: True
-position: 5  
+position: 6  
 ---
 
 # Localization
