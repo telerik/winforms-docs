@@ -10,7 +10,7 @@ position: 6
 
 # Hierarchy Support
 
-Navigation View offered by RadPageView allows you to define sub-items in order to achieve hierarchical menu visualizаtion.
+Navigation View offered by RadPageView allows you to define sub-items in order to achieve hierarchical menu visualization.
 
 Each **RadPageViewPage** element has a **SubPages** collection that can be populated with RadPageViewPage items, thus allowing multiple levels of items to be defined in the hierarchy.
 

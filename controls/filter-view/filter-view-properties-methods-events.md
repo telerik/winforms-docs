@@ -18,7 +18,7 @@ position: 5
 |**AssociatedControl**|Gets or sets the control which will be filtered by the control|
 |**DataSource**|Gets or sets the source collection which will be used for generating the category elements|
 |**Categories**|Returns the available category elements|
-|**FilteringMode**|Controls the filtering mode. The available options are two: **OnFilterChanged** (The associated control instance is instantly filtered, when the filter is changed) and Programmatically (Programmatically update the filter)|
+|**FilteringMode**|Controls the filtering mode. The available options are two: **OnFilterChanged** (The associated control instance is instantly filtered, when the filter is changed) and **Programmatically** (Programmatically update the filter)|
 |**Expression**|Gets the filter expression|
 |**FilterDescriptors**|Returns the applied FilterDescriptorCollection|
 |**CategoriesFactory**|Gets or sets the factory responsible for creating category elements|

@@ -43,6 +43,6 @@ Each **RadTaskCardElement** offers accent color, title, description, user info, 
 # See Also
 
 * [Getting Started]({%slug task-board-getting-started%})
-* [Structure]({%slug task-board-structure%})
+* [Design Time]({%slug task-board-design-time%})
  
         
