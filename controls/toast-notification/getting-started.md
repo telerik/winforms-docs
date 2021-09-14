@@ -102,5 +102,6 @@ If a user has Focus Assist set to Alarms only, he will only see and hear Alarm n
 
 * [Notification Templates]({%slug toast-notification-templates%})
 * [Design Time]({%slug toast-notification-design-time%})
+* [How to Use ToastNotification in .NET Core/.NET 5]({%slug toast-notification-in-net-core%})
  
         
