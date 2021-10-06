@@ -32,5 +32,5 @@ A complete solution providing a C# and VB.NET project is available [here](https:
 # See Also
 
 * [RadTaskBoard]({%slug task-board-overview%})
-* [Adding Task Cards]({%slug winforms/telerik-presentation-framework/roundrect-shape%})
+* [Adding Task Cards]({%slug task-board-adding-task-cards%})
 
