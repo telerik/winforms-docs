@@ -83,5 +83,6 @@ End Sub
 
 * [Design Time]({%slug task-board-design-time%})
 * [Structure]({%slug task-board-structure%})
+* [Task Card Edit Dialog]({%slug task-board-edit-dialog%})
  
         
