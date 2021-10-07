@@ -11,7 +11,9 @@ previous_url: scheduler-appearance-themes-and-appearance
 
 # Themes and appearance
 
-The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc. The themes can be easily switched using a single property:
+The control is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc. The themes can be easily switched using a single property, **ThemeName**:
+
+![scheduler-appearance-themes-and-appearance 019](images/scheduler-appearance-themes-and-appearance019.png)
         
 | Themes appearance |  |
 | ------ | ------ |
