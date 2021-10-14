@@ -35,7 +35,6 @@ GridViewRowInfo draggedRow = null;
 public RadForm1()
 {
     InitializeComponent();
-
     FillData();
 
     radGridView1.DataSource = parentRecords;
@@ -68,8 +67,13 @@ public RadForm1()
 }
 
 private void svc_PreviewDragStart(object sender, PreviewDragStartEventArgs e)
-{  
-    GridDataRowElement draggedRowElement = e.DragInstance as GridDataRowElement;
+{
+    SnapshotDragItem snapshot = e.DragInstance as SnapshotDragItem;
+    if (snapshot == null)
+    {
+        e.CanStart = false;
+    }
+    GridDataRowElement draggedRowElement = snapshot.Item as GridDataRowElement;
     if (draggedRowElement != null && draggedRowElement.RowInfo != null)
     {
         e.CanStart = true;
@@ -83,7 +87,12 @@ private void svc_PreviewDragStart(object sender, PreviewDragStartEventArgs e)
 
 private void svc_PreviewDragOver(object sender, RadDragOverEventArgs e)
 {
-    if (e.DragInstance is GridDataRowElement)
+    SnapshotDragItem snapshot = e.DragInstance as SnapshotDragItem;
+    if (snapshot == null)
+    {
+        e.CanDrop = false;
+    }
+    if (snapshot.Item is GridDataRowElement)
     {
         e.CanDrop = e.HitTarget is GridDataRowElement || e.HitTarget is GridNewRowElement ||
                     e.HitTarget is GridTableElement ||
@@ -93,7 +102,12 @@ private void svc_PreviewDragOver(object sender, RadDragOverEventArgs e)
 
 private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
 {
-    var rowElement = e.DragInstance as GridDataRowElement;
+    SnapshotDragItem snapshot = e.DragInstance as SnapshotDragItem;
+    if (snapshot == null)
+    {
+        return;
+    }
+    var rowElement = snapshot.Item as GridDataRowElement;
     if (rowElement == null)
     {
         return;
@@ -105,7 +119,7 @@ private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
     if (targetGrid == null)
     {
         return;
-    } 
+    }
     var dragGrid = draggedRow.ViewTemplate.MasterTemplate.Owner;
     if (targetGrid == dragGrid && dropTarget.RowInfo.HierarchyLevel == 1 && draggedRow.HierarchyLevel == 1)
     {
@@ -120,7 +134,7 @@ private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
         childRecords.Insert(targetIndex, newItem);
         targetGrid.EndUpdate();
         targetGrid.CurrentRow = targetDataRow;
-    } 
+    }
 }
 
 public class RowSelectionGridBehavior : GridDataRowBehavior
@@ -133,7 +147,7 @@ public class RowSelectionGridBehavior : GridDataRowBehavior
             RadGridViewDragDropService svc = this.GridViewElement.GetService<RadGridViewDragDropService>();
             svc.AllowAutoScrollColumnsWhileDragging = true;
             svc.AllowAutoScrollRowsWhileDragging = true;
-            svc.Start(row);
+            svc.Start(new SnapshotDragItem(row));
         }
         return base.OnMouseDownLeft(e);
     }
@@ -264,10 +278,11 @@ public class Level1 : System.ComponentModel.INotifyPropertyChanged
     private int _parentId;
     private string _name;
 }
- 
+
 
 ````
 ````VB.NET
+
 Private parentRecords As BindingList(Of Level0) = New BindingList(Of Level0)()
 Private childRecords As BindingList(Of Level1) = New BindingList(Of Level1)()
 Private draggedRow As GridViewRowInfo = Nothing
@@ -299,7 +314,13 @@ Public Sub New()
 End Sub
 
 Private Sub svc_PreviewDragStart(ByVal sender As Object, ByVal e As PreviewDragStartEventArgs)
-    Dim draggedRowElement As GridDataRowElement = TryCast(e.DragInstance, GridDataRowElement)
+    Dim snapshot As SnapshotDragItem = TryCast(e.DragInstance, SnapshotDragItem)
+
+    If snapshot Is Nothing Then
+        e.CanStart = False
+    End If
+
+    Dim draggedRowElement As GridDataRowElement = TryCast(snapshot.Item, GridDataRowElement)
 
     If draggedRowElement IsNot Nothing AndAlso draggedRowElement.RowInfo IsNot Nothing Then
         e.CanStart = True
@@ -310,14 +331,26 @@ Private Sub svc_PreviewDragStart(ByVal sender As Object, ByVal e As PreviewDragS
 End Sub
 
 Private Sub svc_PreviewDragOver(ByVal sender As Object, ByVal e As RadDragOverEventArgs)
-    If TypeOf e.DragInstance Is GridDataRowElement Then
-        e.CanDrop = TypeOf e.HitTarget Is GridDataRowElement OrElse TypeOf e.HitTarget Is GridNewRowElement OrElse
-            TypeOf e.HitTarget Is GridTableElement OrElse TypeOf e.HitTarget Is GridSummaryRowElement
+    Dim snapshot As SnapshotDragItem = TryCast(e.DragInstance, SnapshotDragItem)
+
+    If snapshot Is Nothing Then
+        e.CanDrop = False
+    End If
+
+    If TypeOf snapshot.Item Is GridDataRowElement Then
+        e.CanDrop = TypeOf e.HitTarget Is GridDataRowElement OrElse TypeOf e.HitTarget Is GridNewRowElement _
+            OrElse TypeOf e.HitTarget Is GridTableElement OrElse TypeOf e.HitTarget Is GridSummaryRowElement
     End If
 End Sub
 
 Private Sub svc_PreviewDragDrop(ByVal sender As Object, ByVal e As RadDropEventArgs)
-    Dim rowElement = TryCast(e.DragInstance, GridDataRowElement)
+    Dim snapshot As SnapshotDragItem = TryCast(e.DragInstance, SnapshotDragItem)
+
+    If snapshot Is Nothing Then
+        Return
+    End If
+
+    Dim rowElement = TryCast(snapshot.Item, GridDataRowElement)
 
     If rowElement Is Nothing Then
         Return
@@ -337,7 +370,8 @@ Private Sub svc_PreviewDragDrop(ByVal sender As Object, ByVal e As RadDropEventA
         e.Handled = True
         Dim draggedItem As Level1 = TryCast(draggedRow.DataBoundItem, Level1)
         Dim targetIndex As Integer = childRecords.IndexOf(TryCast(dropTarget.RowInfo.DataBoundItem, Level1))
-        Dim newItem As Level1 = New Level1(draggedItem.Id, CInt((CType(dropTarget.RowInfo.Parent, GridViewHierarchyRowInfo)).Cells("Id").Value), draggedItem.Name)
+        Dim newItem As Level1 = New Level1(draggedItem.Id, CInt((CType(dropTarget.RowInfo.Parent,  _
+                                                                 GridViewHierarchyRowInfo)).Cells("Id").Value), draggedItem.Name)
         Dim targetDataRow As GridViewRowInfo = dropTarget.RowInfo
         targetGrid.BeginUpdate()
         childRecords.Remove(draggedItem)
@@ -357,7 +391,7 @@ Public Class RowSelectionGridBehavior
             Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
             svc.AllowAutoScrollColumnsWhileDragging = True
             svc.AllowAutoScrollRowsWhileDragging = True
-            svc.Start(row)
+            svc.Start(New SnapshotDragItem(row))
         End If
 
         Return MyBase.OnMouseDownLeft(e)
