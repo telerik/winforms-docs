@@ -100,6 +100,7 @@ position: 11
 |**ShowParentGroupSummaries**|Gets or sets a value indicating whether parent group summary rows are visible in grouping.|
 |**ShowChildViewCaptions**|Gets or sets a value indicating whether to show child view captions.|
 |**ContainsColumnExpression**|Gets a value indicating if the template contains a column with defined expression.|
+|**CloseEditorWhenValidationFails**|Gets or sets a value indicating whether the active editor should be closed when validation process fails.|
 
 ## GridViewTableElement
 

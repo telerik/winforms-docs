@@ -136,26 +136,26 @@ private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
 ````
 ````VB.NET
 
-    Public Sub New()
-        InitializeComponent()
-        Me.RadGridView1.MultiSelect = True
-        Me.RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
-        Dim svc As RadDragDropService = Me.RadGridView1.GridViewElement.GetService(Of RadDragDropService)()
-        AddHandler svc.PreviewDragStart, AddressOf svc_PreviewDragStart
-        AddHandler svc.PreviewDragDrop, AddressOf svc_PreviewDragDrop
-        AddHandler svc.PreviewDragOver, AddressOf svc_PreviewDragOver
-        AddHandler svc.PreviewDropTarget, AddressOf svc_PreviewDropTarget
-        Dim gridBehavior = TryCast(Me.RadGridView1.GridBehavior, BaseGridBehavior)
-        gridBehavior.UnregisterBehavior(GetType(GridViewDataRowInfo))
-        gridBehavior.RegisterBehavior(GetType(GridViewDataRowInfo), New RowSelectionGridBehavior())
-    End Sub
+Public Sub New()
+    InitializeComponent()
+    Me.RadGridView1.MultiSelect = True
+    Me.RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
+    Dim svc As RadDragDropService = Me.RadGridView1.GridViewElement.GetService(Of RadDragDropService)()
+    AddHandler svc.PreviewDragStart, AddressOf svc_PreviewDragStart
+    AddHandler svc.PreviewDragDrop, AddressOf svc_PreviewDragDrop
+    AddHandler svc.PreviewDragOver, AddressOf svc_PreviewDragOver
+    AddHandler svc.PreviewDropTarget, AddressOf svc_PreviewDropTarget
+    Dim gridBehavior = TryCast(Me.RadGridView1.GridBehavior, BaseGridBehavior)
+    gridBehavior.UnregisterBehavior(GetType(GridViewDataRowInfo))
+    gridBehavior.RegisterBehavior(GetType(GridViewDataRowInfo), New RowSelectionGridBehavior())
+End Sub
 
-    Private Sub svc_PreviewDropTarget(ByVal sender As Object, ByVal e As PreviewDropTargetEventArgs)
-        e.DropTarget = e.HitTarget
-    End Sub
+Private Sub svc_PreviewDropTarget(ByVal sender As Object, ByVal e As PreviewDropTargetEventArgs)
+    e.DropTarget = e.HitTarget
+End Sub
 
-    Public Class RowSelectionGridBehavior
-    Inherits GridDataRowBehavior
+Public Class RowSelectionGridBehavior
+        Inherits GridDataRowBehavior
 
         Protected Overrides Function OnMouseDownLeft(ByVal e As MouseEventArgs) As Boolean
             Dim row As GridDataRowElement = TryCast(Me.GetRowAtPoint(e.Location), GridDataRowElement)
@@ -163,49 +163,72 @@ private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
             If row IsNot Nothing Then
                 Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
                 svc.AllowAutoScrollColumnsWhileDragging = False
-                svc.AllowAutoScrollRowsWhileDragging = False
-                svc.Start(row)
+                svc.AllowAutoScrollRowsWhileDragging = True
+                svc.Start(New SnapshotDragItem(row))
             End If
 
             Return MyBase.OnMouseDownLeft(e)
         End Function
     End Class
 
-    Private Sub svc_PreviewDragStart(ByVal sender As Object, ByVal e As PreviewDragStartEventArgs)
+Private draggedRow As GridViewRowInfo
+
+Private Sub svc_PreviewDragStart(ByVal sender As Object, ByVal e As PreviewDragStartEventArgs)
+    Dim draggedSnapShot As SnapshotDragItem = TryCast(e.DragInstance, SnapshotDragItem)
+
+    If draggedSnapShot Is Nothing Then
+        e.CanStart = False
+    Else
         e.CanStart = True
-    End Sub
+        Dim dragRowElement As GridDataRowElement = TryCast(draggedSnapShot.Item, GridDataRowElement)
+        draggedRow = dragRowElement.RowInfo
+    End If
+End Sub
 
-    Private Sub svc_PreviewDragOver(ByVal sender As Object, ByVal e As RadDragOverEventArgs)
-        Dim dragRowElement As GridDataRowElement = TryCast(e.DragInstance, GridDataRowElement)
+Private Sub svc_PreviewDragOver(ByVal sender As Object, ByVal e As RadDragOverEventArgs)
+    Dim draggedSnapShot As SnapshotDragItem = TryCast(e.DragInstance, SnapshotDragItem)
 
-        If dragRowElement IsNot Nothing Then
-            Dim targetCell As GridCellElement = TryCast(e.HitTarget, GridCellElement)
+    If draggedSnapShot Is Nothing Then
+        Return
+    End If
 
-            If targetCell IsNot Nothing AndAlso dragRowElement.GridControl.CurrentColumn.Equals(targetCell.ColumnInfo) Then
-                e.CanDrop = True
-            Else
-                e.CanDrop = False
-            End If
-        End If
-    End Sub
+    Dim dragRowElement As GridDataRowElement = TryCast(draggedSnapShot.Item, GridDataRowElement)
 
-    Private Sub svc_PreviewDragDrop(ByVal sender As Object, ByVal e As RadDropEventArgs)
-        Dim dragRowElement As GridDataRowElement = TryCast(e.DragInstance, GridDataRowElement)
+    If dragRowElement IsNot Nothing Then
         Dim targetCell As GridCellElement = TryCast(e.HitTarget, GridCellElement)
 
-        If dragRowElement Is Nothing OrElse targetCell Is Nothing Then
-            Return
+        If targetCell IsNot Nothing AndAlso draggedRow.ViewTemplate.CurrentColumn.Equals(targetCell.ColumnInfo) Then
+            e.CanDrop = True
+        Else
+            e.CanDrop = False
         End If
+    End If
+End Sub
 
-        e.Handled = True
+Private Sub svc_PreviewDragDrop(ByVal sender As Object, ByVal e As RadDropEventArgs)
+    Dim draggedSnapShot As SnapshotDragItem = TryCast(e.DragInstance, SnapshotDragItem)
 
-        For Each cell As GridViewCellInfo In targetCell.GridControl.SelectedCells
+    If draggedSnapShot Is Nothing Then
+        Return
+    End If
 
-            If Not cell.Equals(dragRowElement.GridViewElement.CurrentRow.Cells(dragRowElement.GridViewElement.CurrentColumn.Name)) Then
-                cell.Value = dragRowElement.GridViewElement.CurrentCell.Value
-            End If
-        Next
-    End Sub      
+    Dim dragRowElement As GridDataRowElement = TryCast(draggedSnapShot.Item, GridDataRowElement)
+    Dim targetCell As GridCellElement = TryCast(e.HitTarget, GridCellElement)
+
+    If dragRowElement Is Nothing OrElse targetCell Is Nothing Then
+        Return
+    End If
+
+    e.Handled = True
+
+    For Each cell As GridViewCellInfo In targetCell.GridControl.SelectedCells
+
+        If Not cell.Equals(draggedRow.ViewTemplate.MasterTemplate.CurrentRow.Cells(draggedRow.ViewTemplate.CurrentColumn.Name)) Then
+            cell.Value = draggedRow.ViewTemplate.MasterTemplate.CurrentRow.Cells(draggedRow.ViewTemplate.CurrentColumn.Name).Value
+        End If
+    Next
+End Sub
+
 
 ```` 
 
