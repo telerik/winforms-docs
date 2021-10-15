@@ -29,89 +29,109 @@ This tutorial demonstrates how to drag a single cell in **RadGridView** in such 
 You can enable the multiple cell selection in **RadGridView** by setting the [MultiSelect]({%slug winforms/gridview/selection/multiple-selection%}) property to *true* and the **SelectionMode** property to *CellSelect*. Then, in the **PreviewDragDrop** event of the [RadDragDropService]({%slug winforms/gridview/radgridviewdragdropservice%}), you can adjust the value of the selected cells considering the value of the current cell. 
 
 ````C#
+public RadForm1()
+{
+    InitializeComponent();
 
-        public RadForm1()
+    this.radGridView1.MultiSelect = true;
+    this.radGridView1.SelectionMode = GridViewSelectionMode.CellSelect;
+
+    RadDragDropService svc =
+        this.radGridView1.GridViewElement.GetService<RadDragDropService>();
+    svc.PreviewDragStart += svc_PreviewDragStart;
+    svc.PreviewDragDrop += svc_PreviewDragDrop;
+    svc.PreviewDragOver += svc_PreviewDragOver;
+    svc.PreviewDropTarget += svc_PreviewDropTarget;
+
+    //register the custom row selection behavior
+    var gridBehavior = this.radGridView1.GridBehavior as BaseGridBehavior;
+    gridBehavior.UnregisterBehavior(typeof(GridViewDataRowInfo));
+    gridBehavior.RegisterBehavior(typeof(GridViewDataRowInfo), new RowSelectionGridBehavior());
+}
+
+private void svc_PreviewDropTarget(object sender, PreviewDropTargetEventArgs e)
+{
+    e.DropTarget = e.HitTarget;
+}
+
+//initiates drag and drop service for clicked rows
+public class RowSelectionGridBehavior : GridDataRowBehavior
+{
+    protected override bool OnMouseDownLeft(MouseEventArgs e)
+    {
+        GridDataRowElement row = this.GetRowAtPoint(e.Location) as GridDataRowElement;
+        if (row != null)
         {
-            InitializeComponent();
-            this.radGridView1.MultiSelect = true;
-            this.radGridView1.SelectionMode = GridViewSelectionMode.CellSelect;
-
-            RadDragDropService svc =
-                this.radGridView1.GridViewElement.GetService<RadDragDropService>();
-            svc.PreviewDragStart += svc_PreviewDragStart;
-            svc.PreviewDragDrop += svc_PreviewDragDrop;
-            svc.PreviewDragOver += svc_PreviewDragOver;
-            svc.PreviewDropTarget += svc_PreviewDropTarget;
-
-            //register the custom row selection behavior
-            var gridBehavior = this.radGridView1.GridBehavior as BaseGridBehavior;
-            gridBehavior.UnregisterBehavior(typeof(GridViewDataRowInfo));
-            gridBehavior.RegisterBehavior(typeof(GridViewDataRowInfo), new RowSelectionGridBehavior());
+            RadGridViewDragDropService svc = this.GridViewElement.GetService<RadGridViewDragDropService>();
+            svc.AllowAutoScrollColumnsWhileDragging = false;
+            svc.AllowAutoScrollRowsWhileDragging = true;
+            svc.Start(new SnapshotDragItem(row));
         }
+        return base.OnMouseDownLeft(e);
+    }
+}
+GridViewRowInfo draggedRow;
+//required to initiate drag and drop when grid is in bound mode
+private void svc_PreviewDragStart(object sender, PreviewDragStartEventArgs e)
+{
+    SnapshotDragItem draggedSnapShot = e.DragInstance as SnapshotDragItem;
+    if (draggedSnapShot == null)
+    {
+        e.CanStart = false;
+    }
+    else
+    {
+        e.CanStart = true;
+          GridDataRowElement dragRowElement = draggedSnapShot.Item as GridDataRowElement;
+          draggedRow = dragRowElement.RowInfo;
+    }
+}
 
-        private void svc_PreviewDropTarget(object sender, PreviewDropTargetEventArgs e)
+private void svc_PreviewDragOver(object sender, RadDragOverEventArgs e)
+{
+    SnapshotDragItem draggedSnapShot = e.DragInstance as SnapshotDragItem;
+    if (draggedSnapShot == null)
+    {
+        return;
+    }
+    GridDataRowElement dragRowElement = draggedSnapShot.Item as GridDataRowElement;
+    if (dragRowElement != null)
+    {
+        GridCellElement targetCell = e.HitTarget as GridCellElement;
+        if (targetCell != null && draggedRow.ViewTemplate.CurrentColumn == targetCell.ColumnInfo)
         {
-            e.DropTarget = e.HitTarget;
+            e.CanDrop = true;
         }
-
-        //initiates drag and drop service for clicked rows
-        public class RowSelectionGridBehavior : GridDataRowBehavior
+        else
         {
-            protected override bool OnMouseDownLeft(MouseEventArgs e)
-            {
-                GridDataRowElement row = this.GetRowAtPoint(e.Location) as GridDataRowElement;
-                if (row != null)
-                {
-                    RadGridViewDragDropService svc = this.GridViewElement.GetService<RadGridViewDragDropService>();
-                    svc.AllowAutoScrollColumnsWhileDragging = false;
-                    svc.AllowAutoScrollRowsWhileDragging = false;
-                    svc.Start(row);
-                }
-                return base.OnMouseDownLeft(e);
-            }
+            e.CanDrop = false;
         }
+    }
+}
 
-        //required to initiate drag and drop when grid is in bound mode
-        private void svc_PreviewDragStart(object sender, PreviewDragStartEventArgs e)
+private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
+{
+    SnapshotDragItem draggedSnapShot = e.DragInstance as SnapshotDragItem;
+    if (draggedSnapShot==null)
+    {
+        return;
+    }
+    GridDataRowElement dragRowElement = draggedSnapShot.Item as GridDataRowElement;
+    GridCellElement targetCell = e.HitTarget as GridCellElement;
+    if (dragRowElement == null || targetCell == null)
+    {
+        return;
+    }
+    e.Handled = true;
+
+    foreach (GridViewCellInfo cell in targetCell.GridControl.SelectedCells)
+    {
+        if (cell != draggedRow.ViewTemplate.MasterTemplate.CurrentRow.Cells[draggedRow.ViewTemplate.CurrentColumn.Name])
         {
-            e.CanStart = true;
+             cell.Value = draggedRow.ViewTemplate.MasterTemplate.CurrentRow.Cells[draggedRow.ViewTemplate.CurrentColumn.Name].Value;
         }
-
-        private void svc_PreviewDragOver(object sender, RadDragOverEventArgs e)
-        {
-            GridDataRowElement dragRowElement = e.DragInstance as GridDataRowElement;
-            if (dragRowElement != null)
-            {
-                GridCellElement targetCell = e.HitTarget as GridCellElement;
-                if (targetCell != null && dragRowElement.GridControl.CurrentColumn == targetCell.ColumnInfo)
-                {
-                    e.CanDrop = true;
-                }
-                else
-                {
-                    e.CanDrop = false;
-                }
-            }
-        }
-
-        private void svc_PreviewDragDrop(object sender, RadDropEventArgs e)
-        {
-            GridDataRowElement dragRowElement = e.DragInstance as GridDataRowElement;
-            GridCellElement targetCell = e.HitTarget as GridCellElement;
-            if (dragRowElement == null || targetCell == null)
-            {
-                return;
-            }
-            e.Handled = true;
-
-            foreach (GridViewCellInfo cell in targetCell.GridControl.SelectedCells)
-            {
-                if (cell != dragRowElement.GridViewElement.CurrentRow.Cells[dragRowElement.GridViewElement.CurrentColumn.Name])
-                {
-                    cell.Value = dragRowElement.GridViewElement.CurrentCell.Value;
-                }
-            }
-        }
+    }
+}
 
 ````
 ````VB.NET
