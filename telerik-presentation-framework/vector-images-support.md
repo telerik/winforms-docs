@@ -170,3 +170,44 @@ svg.ClearCache()
 
 
 >note Since R2 2020 **ControlDefault** theme comes with SVG images by default.
+
+### Handling Exceptions
+
+When loading a vector image, an error may occur. The SVG exceptions will continue to be thrown in order to be able to handle them. Usually, these are GDI+ exceptions and we need to be able to handle them in code. The end users need to be able to use the RadSvgImage and in order not to be blocked by the exception, they can handle the DocumentDrawException, and thus the problematic part of the SVG will not be drawn.
+
+Here is a code sample illustrating how to use the new approach to handle SVG exceptions during the drawing of the SVG:
+
+{{source=..\SamplesCS\TPF\SvgSupport\SVGSupport.cs region=HandlingExceptions}} 
+{{source=..\SamplesVB\TPF\SvgSupport\SVGSupport.vb region=HandlingExceptions}}
+
+````C#
+        private void radButton1_Click(object sender, EventArgs e)
+        {
+            RadSvgImage svg = RadSvgImage.FromFile(@"..\..\Resources\15166.svg");
+            svg.Document.DocumentDrawException += this.Document_DocumentDrawException;
+            RadPictureBox radPictureBox1 = new RadPictureBox();
+            radPictureBox1.SvgImage = svg;
+        }
+
+        private void Document_DocumentDrawException(object sender, Telerik.WinControls.Svg.SvgDocumentDrawExceptionEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+````
+````VB.NET
+    Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Dim svg As RadSvgImage = RadSvgImage.FromFile("..\..\Resources\15166.svg")
+        AddHandler svg.Document.DocumentDrawException, AddressOf Me.Document_DocumentDrawException
+        Dim radPictureBox1 As RadPictureBox = New RadPictureBox()
+        radPictureBox1.SvgImage = svg
+    End Sub
+
+    Private Sub Document_DocumentDrawException(ByVal sender As Object, ByVal e As Telerik.WinControls.Svg.SvgDocumentDrawExceptionEventArgs)
+        e.Handled = True
+    End Sub
+
+````
+
+{{endregion}} 
+
