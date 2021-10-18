@@ -19,6 +19,9 @@ Customizing the appearance of the items in RadPropertyGrid is controlled by a nu
 
 * __ItemIndent__: Increases the indent before the items. Valid for all levels.
 
+>note As of R3 2021 SP1 RadPropertyGrid supports individual item's height. As the control does not expose the items directly, there is no Items collection, the data item can be accessed in the **CreateItemElement** or the **ItemFormatting** event. Then, specify the Item.**ItemHeight** property to the desired height.
+>
+
 >caution Since the control uses data virtualization (just like **RadGridView** and **RadListControl**) and you should always reset the values of the customized properties, in order to to prevent applying the formatting to other items (because of the item reuse).
 >
 
