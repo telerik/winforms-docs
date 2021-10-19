@@ -31,6 +31,12 @@ public class CustomGanttViewTextViewCellElement : GanttViewTextViewCellElement
     {
         get { return typeof(GanttViewTextViewCellElement); }
     }
+
+    public override bool IsCompatible(GanttViewTextViewColumn data, object context)
+    {
+        return data.FieldName == "Check"; 
+    }
+
     protected override void CreateChildElements()
     {
         base.CreateChildElements();
@@ -64,6 +70,9 @@ Public Class CustomGanttViewTextViewCellElement
             Return GetType(GanttViewTextViewCellElement)
         End Get
     End Property
+    Public Overrides Function IsCompatible(data As GanttViewTextViewColumn, context As Object) As Boolean
+        Return data.FieldName = "Check"
+    End Function
     Protected Overrides Sub CreateChildElements()
         MyBase.CreateChildElements()
         Me.checkBox = New RadCheckBoxElement()
