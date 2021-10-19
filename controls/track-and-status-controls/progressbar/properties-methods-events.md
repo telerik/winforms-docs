@@ -43,7 +43,7 @@ previous_url: track-and-status-controls-progressbar-programming-radprogressbar
 |**TextOrientation**|Gets or sets the text orientation in the progress bar.|
 |**TextAlignment**|Gets or sets the alignment of the text content on the drawing surface.|
 |**ProgressOrientation**|Gets or sets the progress orientation: Bottom, Left, Right, Top.|
-|**ShowProgressIndicators**|Indicates whether the progress bar style is hatch. When true, the style is Hatch. When both dash and hatch are true the style is hatch.| 
+|**ShowProgressIndicators**|Gets or sets if the progress should be show with percentages.| 
 |**SweepAngle**|Gets or sets the angle at which the dash or hatch lines are tilted.|
 |RadProgressBarElement.**IndicatorElement1**|Gets an instance of the UpperProgressIndicatorElement class that represents the progress indicator of the progress bar.|
 |RadProgressBarElement.**IndicatorElement2**|Gets an instance of the ProgressIndicatorElement class that represents the progress bar indicator.|
