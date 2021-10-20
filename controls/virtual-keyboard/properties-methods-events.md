@@ -18,6 +18,7 @@ position: 8
 |**ScaleFontOnResize**|Gets or sets a value indicating, whether to scale the font when control size in changed.|
 |**SynchronizeCultureWithSystem**|Gets or sets a value indicating whether the RadVirtualKeyboardElement will track with the system for language changes and will be updated automatically.|
 |**XmlSerializationInfo**|Gets the serialization info for RadVirtualKeyboard used by Save/Load layout methods to persist the layout to/from XML.|
+|**UseClickSound**| *(introduced in R3 2021 SP1)* Gets or sets a value indicating whether to play sound when a key is pressed.|
 
 # RadVirtualKeyboardElement's Properties
 
@@ -31,6 +32,7 @@ position: 8
 |**IsAltGrActive**|Gets a value indicating, whether the Alt Gr(right alt) key is in active state.|
 |**ModifierKeys**|Gets the collection with currently active modifier keys.|
 |**CurrentCulture**|Gets or sets current culture for the RadVirtualKeyboardElement. By default or when set to null the ComponentXmlSerializationInfo provided by GetDefaultXmlSerializationInfo() will be used.|
+|**ClickSoundStream**|*(introduced in R3 2021 SP1)* Gets or sets the key press sound stream. Note that if you have not set the stream this property will return the default sound.|
  
 # Methods
 
