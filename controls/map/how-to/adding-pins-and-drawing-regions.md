@@ -164,3 +164,4 @@ End Class
 
 * [Layers]({%slug winforms/map/features/layers/overview%})
 * [BingRestMapProvider]({%slug winforms/map/providers/bingrestmapprovider%})
+* [How to Create Rectangle and Ellipse Shapes in RadMap]({%slug create-map-rectangle-ellipse-shapes%})

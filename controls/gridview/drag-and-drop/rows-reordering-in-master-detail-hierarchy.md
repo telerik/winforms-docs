@@ -131,8 +131,8 @@ public class RowSelectionGridBehavior : GridDataRowBehavior
         if (row != null)
         {
             RadGridViewDragDropService svc = this.GridViewElement.GetService<RadGridViewDragDropService>();
-            svc.AllowAutoScrollColumnsWhileDragging = true;
-            svc.AllowAutoScrollRowsWhileDragging = true;
+            svc.AllowAutoScrollColumnsWhileDragging = false;
+            svc.AllowAutoScrollRowsWhileDragging = false;
             svc.Start(row);
         }
         return base.OnMouseDownLeft(e);
@@ -355,8 +355,8 @@ Public Class RowSelectionGridBehavior
 
         If row IsNot Nothing Then
             Dim svc As RadGridViewDragDropService = Me.GridViewElement.GetService(Of RadGridViewDragDropService)()
-            svc.AllowAutoScrollColumnsWhileDragging = True
-            svc.AllowAutoScrollRowsWhileDragging = True
+            svc.AllowAutoScrollColumnsWhileDragging = False
+            svc.AllowAutoScrollRowsWhileDragging = False
             svc.Start(row)
         End If
 
