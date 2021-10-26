@@ -1114,6 +1114,9 @@ navigation:
     controls/richtexteditor/features/mail-merge:
         title: Mail Merge
         position: 3
+    controls/richtexteditor/features/mentions:
+        title: Mentions (Suggestions)
+        position: 8
     controls/richtexteditor/features/fields-and-document-variables:
         title: Fields and Document Variables
         position: 0
