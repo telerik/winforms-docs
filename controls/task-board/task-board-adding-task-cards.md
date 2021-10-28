@@ -43,16 +43,16 @@ private void RadTaskBoardColumnElement_TaskCardAdding(RadTaskBoardColumnElement.
     //assign a user defined in RadTaskBoard
     //defaultTaskCard.Users.Add(this.radTaskBoard1.Users[1]);
 
-    RadTaskCardTagElement tagWF = new RadTaskCardTagElement();
+    TagInfo tagWF = new TagInfo();
     tagWF.Text = "win-forms"; 
-    defaultTaskCard.TagElements.Add(tagWF);
+    defaultTaskCard.Tags.Add(tagWF);
     args.TaskCard = defaultTaskCard;
 }
 
 ````
 ````VB.NET
 
-Private Sub RadTaskBoardColumnElement_TaskCardAdding(args As RadTaskBoardColumnElement.TaskCardAddedEventArgs)
+Private Sub RadTaskBoardColumnElement_TaskCardAdding(args As RadTaskBoardColumnElement.TaskCardAddingEventArgs)
     Dim defaultTaskCard As RadTaskCardElement = New RadTaskCardElement()
     defaultTaskCard.TitleText = "ListView improvements"
     defaultTaskCard.DescriptionText = "Research phase"
@@ -66,12 +66,11 @@ Private Sub RadTaskBoardColumnElement_TaskCardAdding(args As RadTaskBoardColumnE
     'assign a user defined in RadTaskBoard
     'defaultTaskCard.Users.Add(this.radTaskBoard1.Users(1))
 
-    Dim tagWF As RadTaskCardTagElement = New RadTaskCardTagElement()
+    Dim tagWF As TagInfo = New TagInfo()
     tagWF.Text = "win-forms"
-    defaultTaskCard.TagElements.Add(tagWF)
+    defaultTaskCard.Tags.Add(tagWF)
     args.TaskCard = defaultTaskCard
 End Sub
-
 
 ````
 

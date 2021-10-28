@@ -46,12 +46,12 @@ card.AccentSettings.Color = Color.Red;
 card.Users.Add(user1);
 card.Users.Add(user2);
 
-RadTaskCardTagElement tagWF = new RadTaskCardTagElement();
+TagInfo tagWF = new TagInfo();
 tagWF.Text = "win-forms";
-RadTaskCardTagElement tagWPF = new RadTaskCardTagElement();
+TagInfo tagWPF = new TagInfo();
 tagWPF.Text = "wpf";
-card.TagElements.Add(tagWF);
-card.TagElements.Add(tagWPF);
+card.Tags.Add(tagWF);
+card.Tags.Add(tagWPF);
 
 card.SubTasks.Add(new SubTask(card));
 card.SubTasks.Add(new SubTask(card));
@@ -60,7 +60,6 @@ SubTask x = new SubTask(card);
 x.Completed = true;
 card.SubTasks.Add(x);
 c1.TaskCardCollection.Add(card);
-
 
 ````
 ````VB.NET
@@ -87,12 +86,12 @@ card.DescriptionText = "Research phase"
 card.AccentSettings.Color = Color.Red
 card.Users.Add(user1)
 card.Users.Add(user2)
-Dim tagWF As RadTaskCardTagElement = New RadTaskCardTagElement()
+Dim tagWF As TagInfo = New TagInfo()
 tagWF.Text = "win-forms"
-Dim tagWPF As RadTaskCardTagElement = New RadTaskCardTagElement()
+Dim tagWPF As TagInfo = New TagInfo()
 tagWPF.Text = "wpf"
-card.TagElements.Add(tagWF)
-card.TagElements.Add(tagWPF)
+card.Tags.Add(tagWF)
+card.Tags.Add(tagWPF)
 card.SubTasks.Add(New SubTask(card))
 card.SubTasks.Add(New SubTask(card))
 card.SubTasks.Add(New SubTask(card))
@@ -100,7 +99,6 @@ Dim x As SubTask = New SubTask(card)
 x.Completed = True
 card.SubTasks.Add(x)
 c1.TaskCardCollection.Add(card)
-
 
 ````
 
