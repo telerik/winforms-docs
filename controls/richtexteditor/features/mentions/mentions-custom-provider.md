@@ -135,8 +135,8 @@ End Class
 
 This is done by inheriting the **MentionProviderBase&lt;T&gt;** class where **T** is the mention item. You should implement the **InsertItem** and **DetermineItemVisibility** methods. For more information about them, check the Customize the Insert Action and Customize the Filtering sections.
 
-{{source=..\SamplesCS\RichTextEditor\Features\Mentions.cs region=CustomProvider}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Mentions.vb region=CustomProvider}}
+{{source=..\SamplesCS\RichTextEditor\Features\Mentions.cs region=OrganizationProvider}} 
+{{source=..\SamplesVB\RichTextEditor\Features\Mentions.vb region=OrganizationProvider}}
 
 ````C#
 public class OrganizationMentionProvider : MentionProviderBase<OrganizationInfo>
