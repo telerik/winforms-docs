@@ -124,6 +124,8 @@ personMentionProvider.MentionCharacter = "#"c
 
 >note If the mention character applied to a mention provider is already used by another provider, an InvalidOperationException is thrown.
 
+>note `Space` can't be applied as a mention character.
+
 # See Also
 
 * [Custom Mention Provider]({%slug richtexteditor-features-mentions-custom-provider%})
