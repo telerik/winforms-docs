@@ -30,6 +30,8 @@ CTAControlName: TaskBoard
 * **Styling and Appearance**: RadTaskBoard comes with a variety of themes and properties that allow you to enhance the control's appearance.
 
 * **Touch Support**: The RadTaskBoard control also provides out-of-the-box touch support.
+
+* **Scrolling**: Every column offers a vertical scrollbar allowing the end users to scroll the task cards within the column. Using the Mouse wheel also scrolls the view. Shift + Mouse wheel scrolls the main element.
  
 # See Also
 
