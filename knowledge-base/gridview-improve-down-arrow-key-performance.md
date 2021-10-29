@@ -19,7 +19,7 @@ res_type: kb
 
 When you press the down arrow key, it is expected to move the current row in RadGridView to the next one. Thus, the style for the new current row should be updated depending on the theme and the old current row's style to be reset. This will move the vertical scrollbar respectively. However, if you keep the down arrow key pressed, this will trigger multiple operations of moving the current row to the next row until you release the down arrow key. RadGridView will try to scroll the view according to the current row and refresh the view. However, when multiple scrolling operations and changing the current row are being executed at the same time, this invalidation is not instant as changing the current row is an expensive operation. This tutorial demonstrates a sample approach how to speed up the scrolling behavior when the down arrow key is kept pressed.
  
-#### Imporved scrolling performance with Down Arrow key
+#### Improved scrolling performance with Down Arrow key
 
 ![gridview-improve-down-arrow-key-performance](images/gridview-improve-down-arrow-key-performance.gif)
 
