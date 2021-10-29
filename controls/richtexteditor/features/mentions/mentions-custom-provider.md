@@ -139,6 +139,7 @@ This is done by inheriting the **MentionProviderBase&lt;T&gt;** class where **T*
 {{source=..\SamplesVB\RichTextEditor\Features\Mentions.vb region=OrganizationProvider}}
 
 ````C#
+
 public class OrganizationMentionProvider : MentionProviderBase<OrganizationInfo>
 {
     public override bool DetermineItemVisibility(OrganizationInfo item, string currentMentionText)
