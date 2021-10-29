@@ -307,3 +307,5 @@ Following the demonstrated approach, developers can customize not only the hiera
 
 * [New Row]({%slug winforms/gridview/rows/new-row%})
 
+* [How to Improve Scrolling Performance with Down Arrow Key in RadGridView]({%slug gridview-improve-down-arrow-key-performance%})
+
