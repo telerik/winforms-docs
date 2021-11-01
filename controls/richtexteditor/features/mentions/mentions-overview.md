@@ -26,7 +26,7 @@ Once you have the required objects, you should add the provider and the template
 
 For your convenience, RadRichTextEditor comes with a default implementation of a mention provider that enables you to list and choose persons. This provider:
 
-* Works with **PersonMentionItem** objects that let you specify *Name*, *Mail* and *ImageSource* for a person.
+* Works with **PersonMentionItem** objects that let you specify *Name*, *Mail* and *Image* for a person.
 * Shows a list of all persons when the users type the **@** symbol and allows them to select the desired person. You can also choose a custom mention character for this provider. The items inside the list are automatically filtered if the users write after the mention character. 
 * Comes with a predefined mention template that shows the image and the name of a person (as shown in **Figure 1**), so you shouldn't take care about that.
 * Inserts the mention character and the item that has been selected as a hyperlink with the `PersonMentionItem.Name` as text and `PersonMentionItem.Mail` as URL.
