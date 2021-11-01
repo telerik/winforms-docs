@@ -101,3 +101,5 @@ End Sub
 
 * [Save/Load layout buttons in the Property Grid]({%slug winforms/gridview/save-and-load-layout/load-layout-buttons-in-the-property-grid%})
 
+* [How to Save/Load Layout with Custom Columns in RadGridView]({%slug gridview-save-layout-with-custom-columns%})
+

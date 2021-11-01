@@ -622,3 +622,5 @@ End Sub
 
 * [Barcode Column in RadGridView]({%slug barcode-column-in-gridview%})
 
+* [How to Save/Load Layout with Custom Columns in RadGridView]({%slug gridview-save-layout-with-custom-columns%})
+
