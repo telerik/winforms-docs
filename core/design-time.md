@@ -33,7 +33,7 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 
 	![core-designer002](images/core-designer002.png)
 
-* **Target .NET Core 3.1/.NET 5.0 in your project**: [https://docs.microsoft.com/en-us/dotnet/standard/frameworks#supported-target-frameworks](https://docs.microsoft.com/en-us/dotnet/standard/frameworks#supported-target-frameworks)
+* **Target .NET Core 3.1/.NET 5/.NET 6 in your project**: [https://docs.microsoft.com/en-us/dotnet/standard/frameworks#supported-target-frameworks](https://docs.microsoft.com/en-us/dotnet/standard/frameworks#supported-target-frameworks)
 
 >important Our designers target a specific version of the WinForms Designer SDK and this SDK is also inserted into Visual Studio. Sometimes there might be breaking changes in the WinForms Designer SDK and as it is part of Visual Studio itself this will break our designers. As things are dynamically changing one needs to pay attention of the Telerik NuGet version and the Visual Studio version. The table below is a mapping between the Telerik and the Visual Studio versions.
 >
@@ -68,9 +68,10 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 
 ## Tips and Tricks
 
-Note that the design-time assemblies are resolved from the installed NuGet package by the new Microsoft SDK which is a part of Visual Studio. When you rebuild the project, the server process will be restarted, the SDK will load all of the .NET Core designer assemblies and this may take some time. Having a designer opened while all this is happening will only make it slower. That is why I would recommend you to close all designers, install the desired NuGet package, clean the project and rebuild it.
- 
-Please also have in mind that if you have a designer opened and you rebuild your project, this will kill the .NET Core process hosting the design server, ultimately this will lead to restarting the design surface by starting a new server process. That is why it is recommended to consider closing the designers before rebuilding your project.
+Note that the design-time assemblies are resolved from the installed NuGet packages by the new Microsoft SDK which is part of Visual Studio. It is recommended to close all the opened designers when you are about to install or update our NuGets. The same is also true when rebuilding the project. Please have in mind that if you have a designer opened and you rebuild the project, this will kill the .NET Core process hosting the design server, ultimately this will lead to restarting the design surface by starting a new server process. If your form has a complex desginer this may slow down Visual Studio so you may consider closing the designers before rebuilding the application. 
+
+>important The new architecture is described in more details in our [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5) blog.
+>
 
 ## What's coming next 
 
@@ -79,6 +80,7 @@ Please also have in mind that if you have a designer opened and you rebuild your
 
 
 # See Also
+* [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5)
 * [Migrating to .NET Core]({%slug winforms/core/core-migration%})
 * [.NET Core Project Converter]({%slug winforms/core/net-core-project-converter%})
 * [Windows Forms Designer for .NET Core Released](https://devblogs.microsoft.com/dotnet/windows-forms-designer-for-net-core-released/)
