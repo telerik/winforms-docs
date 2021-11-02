@@ -30,7 +30,6 @@ The supported controls are:
 * **RadFontDropDownList**
 * **FileDialogsBreadcrumb**
 * **RadTextBox**
-* **RadTextBoxControl**
 * **RadDomainUpDown**
 * **RadCheckedDropDownList**
 * **FileDialogSearchPane**
