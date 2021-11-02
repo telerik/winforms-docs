@@ -52,6 +52,12 @@ After the installation is complete, you will be returned to the main screen to i
 
 You can now start creating your first [Telerik UI for WinForms project]({%slug winforms/getting-started/first-steps%}).
 
+## Keep Previous Parallel Versions
+
+The **Options** dialog allows you to adjust the Control Panel settings. It is possible to control whether previous versions will be kept in parallel when installing a new version.
+
+![installing-from-progress-control-panel 009](images/installing-from-progress-control-panel009.png)
+
 ## Removing from Progress Control Panel
 
 Once you have installed the Telerik UI for WinForms suite in the Progress Control Panel, you can click on it and check the **Remove** option:

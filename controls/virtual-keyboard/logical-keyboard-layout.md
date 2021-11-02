@@ -70,6 +70,32 @@ RadMessageBox.Show(homeKeys.ToString())
 
 {{endregion}}
 
+>note As of **R3 2021 SP1** we introduced new API, the **GetAllRows** and **FindRowByKey** methods, which don't require knowing in which LayoutPanel and the exact row which is the owner of the key, to be able to remove it.
+
+#### API for Adding/Removing keys
+
+{{source=..\SamplesCS\VirtualKeyboard\KeyboardGettingStarted.cs region=AddRemoAPI}} 
+{{source=..\SamplesVB\VirtualKeyboard\KeyboardGettingStarted.vb region=AddRemoAPI}}
+
+````C#
+var allKeys = this.radVirtualKeyboard1.MainLayoutPanel.GetAllKeys();
+Key Qkey = allKeys.FirstOrDefault(k => k.VirtualKey == (int)Keys.Q) as Key;
+Row row = this.radVirtualKeyboard1.MainLayoutPanel.FindRowByKey(Qkey);
+row.Keys.Remove(Qkey);
+this.radVirtualKeyboard1.MainLayoutPanel.ResetLayout(true);
+
+````
+````VB.NET
+Dim allKeys = Me.radVirtualKeyboard1.MainLayoutPanel.GetAllKeys()
+Dim Qkey As Key = TryCast(allKeys.FirstOrDefault(Function(k) k.VirtualKey = CInt(Keys.Q)), Key)
+Dim row As Row = Me.radVirtualKeyboard1.MainLayoutPanel.FindRowByKey(Qkey)
+row.Keys.Remove(Qkey)
+Me.radVirtualKeyboard1.MainLayoutPanel.ResetLayout(True)
+
+```` 
+
+{{endregion}}
+
 # See Also
 
 * [Structure]({%slug winforms-virtual-keyboard-structure%})

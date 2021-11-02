@@ -69,6 +69,8 @@ Private Sub BindingToHierarchicalGridProgramatically_Load(ByVal sender As System
 
 {{endregion}} 
 
+>important The column names specified in the relation must be present in the parent and child templates. If you don't want these columns to be shown, just manage their visibility but make sure that they are present in the respective templates. 
+
 
 You can also set the relation in design-time, using the provided collection editor as in the figure below:
 

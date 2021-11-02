@@ -39,11 +39,7 @@ class GridInkEditor : BaseGridEditor
  
         set
         {
-            if (value != null)
-            {
-                inkEdit1.Text = value.ToString();
-            }
- 
+            inkEdit1.Text = value == null ? "" : value.ToString();
         }
     }
     protected override RadElement CreateEditorElement()
@@ -73,9 +69,7 @@ Class GridInkEditor
         End Get
         Set(ByVal value As Object)
 
-            If value IsNot Nothing Then
-                inkEdit1.Text = value.ToString()
-            End If
+          inkEdit1.Text = If(value Is Nothing, "", value.ToString())
         End Set
     End Property
 
