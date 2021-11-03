@@ -19,6 +19,7 @@ This article will discuss the following topics:
 * [How Analytics Works](#how-analytics-works)
 * [Traceable Features](#traceable-features)
 
+>note With the discontinuation of the Telerik Platform as of R2 2018 SP1 (version 2018.2.621) we've also removed the two dependent assemblies from our suite - EQATEC.Analytics.Monitor.dll and Telerik.WinControls.Analytics.dll. The respective NuGet packages have been removed as well. Instead, the ITraceMonitor interface should be used as explained below.
 
 ## ITraceMonitor Interface
 
