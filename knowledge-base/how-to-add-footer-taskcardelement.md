@@ -69,6 +69,7 @@ First we will need to create a custom class which derives from RadTaskCardElemen
 	
 ````
 ````VB.NET
+
 	Public Class MyTaskCardElement
 		Inherits RadTaskCardElement
 
@@ -112,11 +113,13 @@ First we will need to create a custom class which derives from RadTaskCardElemen
 			Return finalSize
 		End Function
 	End Class
+
 ````
 
 The final step is to replace the default RadTaskCardElement with our custom MyTaskCardElement class and populate the RadTaskBoard control. Keep in mind that you will need to subscribe to the TaskCardAdding event of the RadTaskBoard so that any new card which is added will be replaced with the custom one containing a footer.
 
 ````C#
+
 	public partial class RadForm1 : Telerik.WinControls.UI.RadForm
 	{
 		RadTaskBoard radTaskBoard1;
@@ -176,6 +179,7 @@ The final step is to replace the default RadTaskCardElement with our custom MyTa
 
 ````
 ````VB.NET
+
 	Partial Public Class RadForm1
 		Inherits Telerik.WinControls.UI.RadForm
 
@@ -231,4 +235,6 @@ The final step is to replace the default RadTaskCardElement with our custom MyTa
 			args.TaskCard = newCard
 		End Sub
 	End Class
+
 ````
+
