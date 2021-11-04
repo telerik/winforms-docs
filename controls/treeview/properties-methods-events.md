@@ -100,6 +100,7 @@ position: 5
 |__NodeRemoving__|Occurs before a node is removed.|
 |__NodeAdded__|Occurs after a node is being added.|
 |__NodeAdding__|Occurs before a node is being added.|
+|**NodeFormatting**|Occurs when the node changes its state and needs to be formatted.|
 
 # See Also
 
