@@ -51,13 +51,13 @@ this.radRichTextEditor1.RichTextBoxElement.MentionContext.Templates.Clear();
  
 List<Telerik.WinForms.Documents.UI.Mentions.PersonMentionItem> personMentionItems = new List<PersonMentionItem>()
 {
-    new PersonMentionItem() { Name = "Nancy Anders", Mail = "nanders@somecompany.com",
+    new PersonMentionItem() { Name = "Nancy Anders", Mail = "mailto:nanders@somecompany.com",
         Image = Properties.Resources.nancy},
 
-    new PersonMentionItem() { Name = "Andrew Taquería", Mail = "ataqueria@somecompany.com",
+    new PersonMentionItem() { Name = "Andrew Taquería", Mail = "mailto:ataqueria@somecompany.com",
         Image = Properties.Resources.Andrew},
 
-    new PersonMentionItem() { Name = "Janet Hardy", Mail = "jhardy@somecompany.com",
+    new PersonMentionItem() { Name = "Janet Hardy", Mail = "mailto:jhardy@somecompany.com",
         Image = Properties.Resources.Janet} 
 };
 
@@ -74,17 +74,17 @@ Me.radRichTextEditor1.RichTextBoxElement.MentionContext.Templates.Clear()
 Dim personMentionItems As List(Of Telerik.WinForms.Documents.UI.Mentions.PersonMentionItem) = New List(Of PersonMentionItem)() From {
     New PersonMentionItem() With {
         .Name = "Nancy Anders",
-        .Mail = "nanders@somecompany.com",
+        .Mail = "mailto:nanders@somecompany.com",
         .Image = My.Resources.nancy
     },
     New PersonMentionItem() With {
         .Name = "Andrew Taquería",
-        .Mail = "ataqueria@somecompany.com",
+        .Mail = "mailto:ataqueria@somecompany.com",
         .Image = My.Resources.Andrew
     },
     New PersonMentionItem() With {
         .Name = "Janet Hardy",
-        .Mail = "jhardy@somecompany.com",
+        .Mail = "mailto:jhardy@somecompany.com",
         .Image = My.Resources.Janet
     }
 }
