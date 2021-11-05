@@ -101,7 +101,6 @@ form.Show()
 ## NativeMethods
 
 Telerik.WinControls.NativeMethods contains method that allows to apply rounded corners style to each form:
-NativeMethods.ApplyRoundedCorners(form.Handle, (int)RoundedCornersStyle.RoundSmall);
 
 {{source=..\SamplesCS\TPF\Shadows.cs region=NaviteRoundedCorners}} 
 {{source=..\SamplesVB\TPF\Shadows.vb region=NaviteRoundedCorners}}
