@@ -4,7 +4,7 @@ page_title: Register - WinForms Toast Notification
 description: Before showing a WinForms toast notification, it is important to register the manager first. Learn how to do it.  
 slug: toast-notification-register
 tags: toast notification
-published: False
+published: True
 position: 3 
 CTAControlName: ToastNotification
 ---
