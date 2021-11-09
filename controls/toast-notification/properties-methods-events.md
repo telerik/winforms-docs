@@ -21,10 +21,6 @@ CTAControlName: ToastNotification
 
 |Method|Description|
 |----|----|
-|Register()|Registers the application using the current process filename, a default Telerik shortcut name, default AUMID and internal activator. When the internal activator is activated, it fires RadToastActivated.|
-|Register(string exePath, string shortcutName, string aumid)|Registers the application using an internal activator passing the path of the executable, the name of the shortcut that will be placed in start menu, unique id of the application - recommended string - name + GUID. When the internal activator is activated, it fires RadToastActivated.|
-|Register<T>() where T : RadToastNotificationActivatorBase|Registers the application with a custom activator using the current process filename, a default Telerik shortcut name and default AUMID.|
-|Register<T>(string exePath, string shortcutName, string aumid) where T : RadToastNotificationActivatorBase|Registers the application using the manager, so the activator can receive notification activation.|
 |Unregister()|Unregister a registered manager.|
 |Unregister(string shortcutName, string aumid)|Unregister a registered manager, passing the name of the shortcut that will be removed and the unique id of the application.|
 |Unregister<T>() where T : RadToastNotificationActivatorBase|Unregister a registered manager with a custom activator.|
@@ -38,7 +34,7 @@ CTAControlName: ToastNotification
 
 |Event|Description|
 |----|----|
-|RadToastActivated|Static event. If the manager is registered with the internal activator, this event will fire, when a toast activates.|
+|RadToastOnActivated |Static event. Fires the event when a toast activates.|
 
 # See Also
 

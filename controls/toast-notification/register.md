@@ -4,12 +4,14 @@ page_title: Register - WinForms Toast Notification
 description: Before showing a WinForms toast notification, it is important to register the manager first. Learn how to do it.  
 slug: toast-notification-register
 tags: toast notification
-published: True
+published: False
 position: 3 
 CTAControlName: ToastNotification
 ---
 
 # Register
+
+>important As of R3 2021 SP1 registration is no longer needed – Register methods are obsolete.
 
 Before showing a toast notification, it is important to register the manager first. The appropriate place to do it is the form's constructor. Don't forget to unregister the manager while closing the application.
 
@@ -35,6 +37,13 @@ Similar to the above mentioned **Register** method overloads, there are two over
 
 * Register<T>() where T : RadToastNotificationActivatorBase
 * Register<T>(string exePath, string shortcutName, string aumid) where T : RadToastNotificationActivatorBase
+
+## Unregister methods
+
+* **Unregister<T>(string shortcutName, string aumid)**: Unregister a registered manager of type T with the unique id of the application.
+* **Unregister<T>()**: Unregister a registered manager of type T where T : RadToastNotificationActivatorBase
+* **Unregister(string shortcutName, string aumid)**: Unregister a registered manager.
+* **Unregister()**: Cleans up resources used by the Toast Notification Manager. Keep in mind that calling this will clear notifications in the action area as well. You can call this, when the program exits or on uninstalling the program, but it must be called from the exe that was showing the toast notifications.
 
 
 # See Also

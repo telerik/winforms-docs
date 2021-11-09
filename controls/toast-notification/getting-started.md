@@ -21,7 +21,7 @@ You can find listed below the required references for using a **RadToastNotifica
 
 * Microsoft.Toolkit.Uwp.Notifications * (necessary for using a custom activator)
 
->important As of **R2 2021** Toast Notifications are supported in .NET5.
+>important As of **R2 2021** Toast Notifications are supported in .NET5 and the Microsoft.Toolkit.Uwp.Notifications.dll is upgraded to [version 7](https://github.com/CommunityToolkit/WindowsCommunityToolkit/releases/tag/v7.0.0).
 
 >important **RadToastNotificationManager** requires .NET Framework **4.6.1** or higher.
 
@@ -33,9 +33,11 @@ By using the [RadToastNotifications Editor]({%slug toast-notification-design-tim
 
 ![winforms/toast-notification-design-time003](images/toast-notification-design-time003.png) 
 
-Then, if you want to show a toast notification at run time, e.g. when clicking a button, you must [register]({%slug toast-notification-register%}) the **RadToastNotificationManager** first. 
+Then, if you want to show a toast notification at run time, e.g. when clicking a button, you must call **ShowNotification** method.
+Register RadToastNotificationManager and Show a Notification
 
-#### Register RadToastNotificationManager and Show a Notification
+
+#### Show a Notification
 
 {{source=..\SamplesCS\ToastNotification\ToastNotificationGettingStarted.cs region=RegisterGettingStarted}} 
 {{source=..\SamplesVB\ToastNotification\ToastNotificationGettingStarted.vb region=RegisterGettingStarted}}
@@ -46,7 +48,6 @@ public ToastNotificationGettingsStarted()
 {
     InitializeComponent();
 
-    this.radToastNotificationManager1.Register();
     this.radButton1.Click+=radButton1_Click;
 }
 
@@ -66,7 +67,7 @@ protected override void OnClosed(EventArgs e)
 ````VB.NET
 Public Sub New()
     InitializeComponent()
-    Me.RadToastNotificationManager1.Register()
+
     AddHandler Me.RadButton1.Click, AddressOf radButton1_Click
 End Sub
 
