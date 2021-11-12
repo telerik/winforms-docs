@@ -68,3 +68,7 @@ This way when __Submit__ is pressed the name will be displayed in the control's 
 >caption Figure 3: The final result.
 
 ![eidtors-popupeditor-getting-started 003](images/eidtors-popupeditor-getting-started003.gif)
+
+# See Also
+
+* [How to Use RadPopupEditor as a Custom Editor in RadGridView]({%slug use-popup-editor-as-gridview-editor%})

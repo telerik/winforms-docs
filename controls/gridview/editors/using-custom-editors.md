@@ -219,3 +219,5 @@ End Sub
 
 * [How to Achieve Checked RadMultiColumnComboBox]({%slug checked-multicolumncombobox%})
 
+* [How to Use RadPopupEditor as a Custom Editor in RadGridView]({%slug use-popup-editor-as-gridview-editor%})
+
