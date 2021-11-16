@@ -13,7 +13,7 @@ previous_url: gridview-sorting-custom-sorting
 
 Custom sorting is a flexible mechanism for sorting RadGridView rows using custom logic. It has a higher priority than the applied __SortDescriptors__ (added either by code or by clicking the header row).
 
-Custom sorting is applied if user sorting is enabled by the __EnableSorting__ or  __GridViewTemplate.EnableSorting__properties. By default, sorting is enabled at all levels.
+Custom sorting is applied if user sorting is enabled by the __EnableSorting__ or  __GridViewTemplate.EnableSorting__ properties. By default, sorting is enabled at all levels.
 
 RadGridView provides two mechanisms for custom sorting:
 
