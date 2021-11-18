@@ -103,3 +103,19 @@ Items can be programmatically selected either by their value or by their logical
 >note Setting these properties will result in raising the selection events.
 >
 
+{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListSelection.cs region=SetSelectedItem}} 
+{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListSelection.vb region=SetSelectedItem}} 
+
+````C#
+this.radDropDownList1.SelectedItem = this.radDropDownList1.Items[1];
+
+````
+````VB.NET
+Me.radDropDownList1.SelectedItem = Me.radDropDownList1.Items(1)
+
+````
+{{endregion}} 
+
+
+
+
