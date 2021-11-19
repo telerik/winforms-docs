@@ -151,6 +151,27 @@ public RadForm1()
     End Sub
 ````
 
+>note In **R2 2019 (LIB 2019.1.415)** there were changes and improvements that is possible to affect RadMap since we have refactored several classes in the RadMap's implementation when addressing several issues.:
+>
+
+````C#
+
+            public override void ViewportChanged(IMapViewport viewport, ViewportChangeAction action)
+            {
+                double onePixelInMeters = MapTileSystemHelper.GroundResolution(this.Location.Latitude, this.MaxZoom - viewport.ZoomLevel);
+ 
+                int scale = -1;
+                scale = (int)(onePixelInMeters / this.RadiusInMeters * 2);
+                
+                Size newSize = Size.Empty;
+                if (scale > 1)
+                    newSize = new Size(scale, scale);
+                this.Size = newSize;
+                base.ViewportChanged(viewport, action);
+            }
+````
+
+
 # See Also
 * [Exporting RadMap to an Image]({%slug radmap-export-image%})
 * [Adding an Image to a Map Pin]({%slug radmap-custom-pins%})

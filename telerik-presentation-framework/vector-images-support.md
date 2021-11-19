@@ -211,3 +211,7 @@ Here is a code sample illustrating how to use the new approach to handle SVG exc
 
 {{endregion}} 
 
+# See Also
+
+* [Customize the Color for SVG Images]({%slug customize-the-color-for-svg-images%}) 
+
