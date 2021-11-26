@@ -1640,7 +1640,7 @@ intro_columns:
       "TreeView": "winforms/treeview"
       "VirtualGrid": "winforms/virtualgrid"
       "DataFilter": "winforms/datafilter/overview"
-      "FilterView": "winforms/filter-view/overview"
+      "FilterView": "winforms/filter-view/filter-view-overview"
   -
     title: "Tools"
     items:
