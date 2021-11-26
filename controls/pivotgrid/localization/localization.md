@@ -685,7 +685,9 @@ public PivotGridLocalization()
 {
     PivotGridLocalizationProvider.CurrentProvider = new MyEnglishPivotGridLoclizationProvider();
     InitializeComponent();
-}
+}# See Also
+
+* [How to Translate the Month Names in RadPivotGrid]({%slug translate-month-names-in-pivotgrid%}) 
 
 ````
 ````VB.NET
@@ -699,3 +701,8 @@ End Sub
 {{endregion}}
 
 The code provided above illustrates the approach to be used to localize the __RadPivotGrid__ and is not intended as a full translation.
+
+# See Also
+
+* [How to Translate the Month Names in RadPivotGrid]({%slug translate-month-names-in-pivotgrid%}) 
+
