@@ -87,5 +87,7 @@ Me.RadDock1.LoadFromXml("c:\layout1.xml")
 
 # See Also
 
-* [Tutorial Saving and Loading Layout and Content]({%slug winforms/dock/loading-and-saving-layouts/tutorial:-saving-and-loading-layout-and-content%})     
+* [Tutorial Saving and Loading Layout and Content]({%slug winforms/dock/loading-and-saving-layouts/tutorial:-saving-and-loading-layout-and-content%})  
+
+* [How to Improve Performance when Loading XML Layout in RadDock]({%slug improve-dock-performance-when-loading-layout%})   
  
