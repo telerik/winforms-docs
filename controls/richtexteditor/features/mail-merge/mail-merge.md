@@ -115,7 +115,7 @@ MailMerge can be done both [using the UI](#mailmerging-using-the-ui:) and [progr
 
 **RadRichTextEditor** comes with a predefined UI for inserting merge fields, previewing the results and fulfilling the merge. It is separated in the  Mailings tab:
 
-![richtexteditor-features-mail-merge 001](../images/richtexteditor-features-mail-merge001.png)
+![richtexteditor-features-mail-merge 001](/images/richtexteditor-features-mail-merge001.png)
 
 The options in the drop down button **InsertMergeField** are automatically populated to match the properties of the objects which are used as data source. You can also switch the display mode of the merge fields from *FieldCodes* (as in the picture) to *FieldNames* (e.g. "<<FirstName>>") or preview the results.
             
