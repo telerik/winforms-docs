@@ -43,7 +43,6 @@ Please follow the steps:
     <TargetFramework>net5.0-windows10.0.17763</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <EmbeddedResourceUseDependentUponConvention>false</EmbeddedResourceUseDependentUponConvention>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   
