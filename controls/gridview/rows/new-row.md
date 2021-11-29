@@ -313,6 +313,29 @@ End Sub
 
 {{endregion}} 
 
+## Cancel Add New Row 
+
+Generally, the user can cancel adding or editing a row by pressing the escape key. However, in a case the user is editing a new row, to cancel adding a new row, the Escape button need to be pressed twice. The first Escape cancels cell edit and the second one cancels the whole process of adding new row. If this behavior does not meet your requirement, you can easily customize the behavior through adding a [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%}). By subscribing to the __CommandCellClick__ event of the RadGridView, you can call the __CancelAddNewRow()__ of the __TableAddNewRow__ property. The following sample snippet demonstrate the event handler of the  customization.
+
+{{source=..\SamplesCS\GridView\Rows\NewRow.cs region=CancelAddNewRow}} 
+{{source=..\SamplesVB\GridView\Rows\NewRow.vb region=CancelAddNewRow}} 
+
+````C#
+private void RadGridView1_CommandCellClick(object sender, GridViewCellEventArgs e)
+{
+    this.radGridView1.MasterView.TableAddNewRow.CancelAddNewRow();            
+}
+
+````
+````VB.NET
+Private Sub RadGridView1_CommandCellClick(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
+	Me.RadGridView1.MasterView.TableAddNewRow.CancelAddNewRow()
+End Sub
+
+````
+
+{{endregion}}
+
 
 
 # See Also
