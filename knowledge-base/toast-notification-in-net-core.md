@@ -1,8 +1,8 @@
 ---
-title: How to Use ToastNotification in .NET Core/.NET 5  
-description: Learn how to use ToastNotification .NET Core/.NET 5. 
+title: How to Use ToastNotification in .NET Core/.NET 5/.NET 6  
+description: Learn how to use ToastNotification .NET Core/.NET 5/.NET 6. 
 type: how-to
-page_title: How to Use ToastNotification in .NET Core/.NET 5   
+page_title: How to Use ToastNotification in .NET Core/.NET 5/.NET 6 
 slug: toast-notification-in-net-core
 position: 0
 tags: net, core, toast, notification
@@ -17,13 +17,13 @@ res_type: kb
  
 ## Description
 
-This tutorial aims to show how to use [ToastNotification]({%slug toast-notification-getting-started%}) in a .NET 5 application.
+This tutorial aims to show how to use [ToastNotification]({%slug toast-notification-getting-started%}) in a .NET 5/.NET 6 application.
 
 ## Solution
 
 Please follow the steps:
 
-1\. Select the Target Framework to be .NET 5:
+1\. Select the Target Framework to be .NET 5 (or .NET 6):
 
 ![winforms/toast-notification-in-net-core001](images/toast-notification-in-net-core001.png) 
 
@@ -58,6 +58,10 @@ Please follow the steps:
 </Project>
 
 ````
+
+>important For .NET 6, the required TargetFramework is **net6.0-windows10.0.17763**.
+
+>important Please make sure that the **UI.for.WinForms.AllControls** Nuget is not installed at the same time as the **UI.for.WinForms.RadToastNotification** NuGet.
 
 4\. Then, you can drag the RadToastNotificationManager from the toolbox and drop it on the components tray:
 

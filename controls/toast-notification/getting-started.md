@@ -23,6 +23,8 @@ You can find listed below the required references for using a **RadToastNotifica
 
 >important As of **R2 2021** Toast Notifications are supported in .NET5 and the Microsoft.Toolkit.Uwp.Notifications.dll is upgraded to [version 7](https://github.com/CommunityToolkit/WindowsCommunityToolkit/releases/tag/v7.0.0).
 
+If you want to use RadToastNotificationManager in .NET5/.NET6 and use the design time experience, please make sure that the following requirements are fulfilled: [How to Use ToastNotification in .NET Core/.NET 5/.NET6]({%slug toast-notification-in-net-core%}) 
+
 >important **RadToastNotificationManager** requires .NET Framework **4.6.1** or higher.
 
 >important Toast notifications can only be displayed in **Windows 8.0** or **higher**. For older Windows versions, use RadDesktopAlert instead.
@@ -103,6 +105,6 @@ If a user has Focus Assist set to Alarms only, he will only see and hear Alarm n
 
 * [Notification Templates]({%slug toast-notification-templates%})
 * [Design Time]({%slug toast-notification-design-time%})
-* [How to Use ToastNotification in .NET Core/.NET 5]({%slug toast-notification-in-net-core%})
+* [How to Use ToastNotification in .NET Core/.NET 5/.NET6]({%slug toast-notification-in-net-core%})
  
         
