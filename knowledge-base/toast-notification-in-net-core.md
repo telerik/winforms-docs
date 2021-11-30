@@ -1,8 +1,8 @@
 ---
-title: How to Use ToastNotification in .NET Core/.NET 5/.NET 6  
-description: Learn how to use ToastNotification .NET Core/.NET 5/.NET 6. 
+title: How to Use ToastNotification in .NET 5/.NET 6  
+description: Learn how to use ToastNotification .NET 5/.NET 6. 
 type: how-to
-page_title: How to Use ToastNotification in .NET Core/.NET 5/.NET 6 
+page_title: How to Use ToastNotification in .NET 5/.NET 6 
 slug: toast-notification-in-net-core
 position: 0
 tags: net, core, toast, notification
@@ -21,6 +21,8 @@ This tutorial aims to show how to use [ToastNotification]({%slug toast-notificat
 
 ## Solution
 
+The **UI.for.WinForms.RadToastNotification** NuGet has a depedency to the **Microsoft.Toolkit.Uwp.Notifications** and in .NET 5/.NET 6 this forces projects utilizing the toast notification system to target Windows systems after a particular version. In order to install the package please use a target framework with [OS binding](https://docs.microsoft.com/en-us/dotnet/standard/frameworks#net-5-os-specific-tfms) specfying the following version: `windows10.0.17763`.
+
 Please follow the steps:
 
 1\. Select the Target Framework to be .NET 5 (or .NET 6):
@@ -36,7 +38,7 @@ Please follow the steps:
 3\. Double click the project file and update the TargetFramework. Your project should also targets **net5.0-windows10.0.17763**:
 
 ````xml
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
