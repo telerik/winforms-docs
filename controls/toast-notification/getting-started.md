@@ -19,11 +19,11 @@ You can find listed below the required references for using a **RadToastNotifica
 
 * Telerik.WinControls.RadToastNotification
 
-* Microsoft.Toolkit.Uwp.Notifications * (necessary for using a custom activator)
+* Microsoft.Toolkit.Uwp.Notifications
 
 >important As of **R2 2021** Toast Notifications are supported in .NET5 and the Microsoft.Toolkit.Uwp.Notifications.dll is upgraded to [version 7](https://github.com/CommunityToolkit/WindowsCommunityToolkit/releases/tag/v7.0.0).
 
-If you want to use RadToastNotificationManager in .NET5/.NET6 and use the design time experience, please make sure that the following requirements are fulfilled: [How to Use ToastNotification in .NET Core/.NET 5/.NET6]({%slug toast-notification-in-net-core%}) 
+If you want to use RadToastNotificationManager in .NET5/.NET6, please make sure that the following requirements are fulfilled: [How to Use ToastNotification in .NET 5/.NET6]({%slug toast-notification-in-net-core%}) 
 
 >important **RadToastNotificationManager** requires .NET Framework **4.6.1** or higher.
 
