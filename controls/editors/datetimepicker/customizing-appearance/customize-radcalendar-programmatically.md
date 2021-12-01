@@ -66,6 +66,28 @@ Next item
 
 ![editors-datetimepicker-how-to-customize-radcalendar-programmatically 001](images/editors-datetimepicker-how-to-customize-radcalendar-programmatically001.png)
 
+#### Show Clear and Today Buttons
+
+The Clear and Today buttons of the calendar are located in its footer. The footer of the calendar is hidden in the RadDateTimePicker control. To show it, we need to call the  __GetCurrentBehavior__() method to gen an instance of the RadCalendar inside the RadDateTimePicker control.
+
+
+{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=showCalendarFooter}} 
+{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=showCalendarFooter}} 
+
+````C#
+RadDateTimePickerCalendar calendarBehavior = this.radDateTimePicker1.DateTimePickerElement.GetCurrentBehavior() as RadDateTimePickerCalendar;
+calendarBehavior.Calendar.ShowFooter = true;
+
+````
+````VB.NET
+Dim calendarBehavior As RadDateTimePickerCalendar = TryCast(Me.radDateTimePicker1.DateTimePickerElement.GetCurrentBehavior(), RadDateTimePickerCalendar)
+calendarBehavior.Calendar.ShowFooter = True
+
+````
+
+{{endregion}}
+
+![editors-datetimepicker-calendar-footer 001](images/datetimepicker-calendar-footer002.png)
 
 # See Also
 
