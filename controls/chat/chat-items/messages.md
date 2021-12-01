@@ -330,5 +330,6 @@ End Sub
 * [Overlays]({%slug winforms/chat/chat-items/overlays%})
 * [Cards]({%slug winforms/chat/chat-items/cards%})
 * [Getting Started]({%slug winforms/chat/getting-started%})
+* [Reversed Order of Chat Messages]({%slug chat-messages-in-reversed-order%})
  
         
