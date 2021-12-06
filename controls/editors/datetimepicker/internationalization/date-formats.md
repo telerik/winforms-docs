@@ -58,6 +58,22 @@ The table below shows a list of patterns that can be combined to create custo
 
 >note It is possible to define your own format and set the RadDateTimePicker.**Format** property to **Custom** . Then, specify the desired **CustomFormat**, e.g. "**dd/MM/yyyy**".
 
+{{source=..\SamplesCS\Editors\DateTimePicker2.cs region=customFormat}} 
+{{source=..\SamplesVB\Editors\DateTimePicker2.vb region=customFormat}} 
+
+````C#
+this.radDateTimePicker1.Format = DateTimePickerFormat.Custom;
+this.radDateTimePicker1.CustomFormat = "yyyy/MM/dd";
+
+````
+````VB.NET
+Me.radDateTimePicker1.Format = DateTimePickerFormat.Custom
+Me.radDateTimePicker1.CustomFormat = "yyyy/MM/dd"
+
+````
+
+{{endregion}}
+
 # See Also
 
 * [CultureInfo and RegionInfo Basics]({%slug winforms/editors/datetimepicker/internationalization/cultureinfo-and-regioninfo-basics%})
