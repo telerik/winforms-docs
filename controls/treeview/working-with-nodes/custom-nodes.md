@@ -389,3 +389,5 @@ End Sub
 
 * [Filtering Nodes]({%slug winforms/treeview/working-with-nodes/filtering-nodes%})
 
+* [Simulate TreeList Control with Load on Demand]({%slug simulate-treelist-load-on-demand%})
+
