@@ -76,6 +76,38 @@ The __RadGridView__ theme could define styles for the following __GridViewHyperl
 
 The mouse cursor transforms into ‘*hand*’ when hovering hyperlink from the column. 
 
+## Cell Customization
+
+The hyperlink cells can be further customized through the **CellFormating** event of the **RadGridView**. In the event handler, we can check if the **e.CellElement** property is a **GridHyperlinkCellElement** element. If yes, we can modify the look of the cell.
+
+{{source=..\SamplesCS\GridView\Columns\GridViewHyperlinkColumn1.cs region=CustomizeHyperlinkColumnCell}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewHyperlinkColumn1.vb region=CustomizeHyperlinkColumnCell}} 
+
+````C#
+private void RadGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
+{
+    GridHyperlinkCellElement cell = e.CellElement as GridHyperlinkCellElement; 
+    if (cell != null)
+    {
+        cell.ContentElement.ForeColor = Color.Red;
+    }
+}
+
+````
+````VB.NET
+Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs)
+    Dim cell As GridHyperlinkCellElement = TryCast(e.CellElement, GridHyperlinkCellElement)
+
+    If cell IsNot Nothing Then
+        cell.ContentElement.ForeColor = Color.Red
+    End If
+End Sub
+
+````
+
+{{endregion}}
+
+
 ## Events
 
 Here are the __GridViewHyperlinkColumn__ specific events:
