@@ -10,7 +10,7 @@ position: 4
 
 # ThemeViewer
 
-ThemeViewer is a tool that gives you the ability to preview a custom or a predefined theme for all controls of the suite.
+**ThemeViewer** is a tool that gives you the ability to preview a custom or a predefined theme for all controls of the suite. To access the Theme Viewer simply click on the Windows Start button and type "Theme Viewer". It can be started from the Live Demo under Featured Applications as well. If you are not able to find the Live Demos using that approach you can also download it directly from [here](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe).
 
 ![tools-themeviewer 001](images/tools-themeviewer001.png)
 

@@ -23,7 +23,7 @@ There are two levels of layout activation: 
 
     1. Adding, removing and reordering children in one element triggers local layout activation. 
 
-    1. Setting properties that affect layout or perform layout explicitly for an element. For example, the RadElement __PerformLayout__ method causes the element and its children to be measured and arranged. 
+    1. Setting properties that affect layout or perform layout explicitly for an element. For example, the RadElement.ElementTree __PerformLayout__ method causes the element and its children to be measured and arranged. 
 
     1. __SuspendLayout__ prevents layout for a RadElement while adding, removing, reordering children or when setting specific properties. __ResumeLayout__ re-starts the deferred layout. 
 
