@@ -24,6 +24,7 @@ Keep track of the changes and update the data source object accordingly. This ca
 - **UserAddedRow** - refresh the **GridViewTemplate** associated with the added row
 - **UserDeletedRow** - update the data source when a row is deleted
 
+>note Telerik UI for WinForms suite offers a [RadVirtualGrid](https://docs.telerik.com/devtools/winforms/controls/virtualgrid/overview) control which provides a convenient way to implement your own data management operations and optimizes the performance when interacting with large amounts of data. It may also be a good approach to follow. 
 
 Let`s first create our models according to which we will build the hierarchy:
 
