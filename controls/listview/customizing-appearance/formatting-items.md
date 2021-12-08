@@ -157,7 +157,38 @@ End Sub
 
 {{endregion}} 
 
->note In order to customize the header cells they should be cast to the **DetailListViewHeaderCellElement** type.
+>note In order to customize the header cells, the __e.CellElement__ property should be cast to the **DetailListViewHeaderCellElement** type.
+
+{{source=..\SamplesCS\ListView\ListViewFormattingItems.cs region=HeaderFormatting}} 
+{{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=HeaderFormatting}} 
+
+````C#
+private void radListView1_CellFormatting(object sender, ListViewCellFormattingEventArgs e)
+{
+    if (e.CellElement is DetailListViewHeaderCellElement)
+    {
+        e.CellElement.TextAlignment = ContentAlignment.MiddleLeft;
+    }
+    else
+    {
+        e.CellElement.ResetValue(LightVisualElement.TextAlignmentProperty, Telerik.WinControls.ValueResetFlags.Local);
+    }
+}
+
+````
+````VB.NET
+Private Sub radListView1_CellFormatting1(ByVal sender As Object, ByVal e As ListViewCellFormattingEventArgs)
+    If TypeOf e.CellElement Is DetailListViewHeaderCellElement Then
+        e.CellElement.TextAlignment = ContentAlignment.MiddleLeft
+    Else
+        e.CellElement.ResetValue(LightVisualElement.TextAlignmentProperty, Telerik.WinControls.ValueResetFlags.Local)
+    End If
+End Sub
+
+````
+
+{{endregion}} 
+
  
 # See Also
 
