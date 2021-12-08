@@ -13,6 +13,8 @@ previous_url: scheduler-scheduler-navigator-navigation-step
 
 RadScheduler offers the ability to navigate through dates by using day/week/month steps. The step is defined by the developer.
 
+>In order for NavigationStep and the NavigationStepType properties to be respected, the __AutomaticNavigation__ property of the RadScheduler needs to be set to __false__.
+
 You can use the following properties to control the Navigation Step behavior:
 
 * __NavigationStepType__ – this property can take the following values: 
