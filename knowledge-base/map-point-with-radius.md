@@ -14,7 +14,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product Version</td>
-		<td>2018.3.1016</td>
+		<td>2021.3.1123</td>
 	</tr>
 	<tr>
 		<td>Product</td>
@@ -37,16 +37,31 @@ The **MapPoint** class accepts a System.Drawing.Size object in its constructor a
 #### Updating Header Implementation
 
 ````C#
+
 public class CustomMapPoint : MapPoint
 {
     private int radiusInMeters;
+    private int maxZoom;
 
     public CustomMapPoint(PointG location) : base(location)
-    { }
+    {
+    }
 
-    public CustomMapPoint(PointG location, Size size) 
-        : base(location, size)
-    { }
+    public CustomMapPoint(PointG location, Size size) : base(location, size)
+    {
+    }
+
+    public int MaxZoom
+    {
+        get
+        {
+            return this.maxZoom;
+        }
+        set
+        {
+            this.maxZoom = value;
+        }
+    }
 
     public int RadiusInMeters
     {
@@ -62,16 +77,15 @@ public class CustomMapPoint : MapPoint
 
     public override void ViewportChanged(IMapViewport viewport, ViewportChangeAction action)
     {
-        double onePixelInMeters = MapTileSystemHelper.GroundResolution(this.Location.Latitude, viewport.ZoomLevel);
-
+        double onePixelInMeters = MapTileSystemHelper.GroundResolution(this.Location.Latitude, this.MaxZoom - viewport.ZoomLevel);
+        Console.WriteLine(onePixelInMeters + " " + viewport.ZoomLevel);
         int scale = -1;
-        scale = (int)(this.RadiusInMeters * 2 / onePixelInMeters);
+        scale = (int)(onePixelInMeters / this.RadiusInMeters * 2);
+        
         Size newSize = Size.Empty;
         if (scale > 1)
             newSize = new Size(scale, scale);
-
         this.Size = newSize;
-
         base.ViewportChanged(viewport, action);
     }
 }
@@ -82,95 +96,104 @@ public class CustomMapPoint : MapPoint
 Public Class CustomMapPoint
     Inherits MapPoint
 
-    Public Sub New(location As PointG)
+    Private _radiusInMeters As Integer
+    Private _maxZoom As Integer
+
+    Public Sub New(ByVal location As PointG)
         MyBase.New(location)
     End Sub
 
-    Public Sub New(location As PointG, size As Size)
+    Public Sub New(ByVal location As PointG, ByVal size As Size)
         MyBase.New(location, size)
     End Sub
 
-    Private _radius As Integer
-    Public Property RadiusInMeters() As Integer
+    Public Property MaxZoom As Integer
         Get
-            Return _radius
+            Return Me._maxZoom
         End Get
         Set(ByVal value As Integer)
-            _radius = value
+            Me._maxZoom = value
         End Set
     End Property
 
-    Public Overrides Sub ViewportChanged(viewport As IMapViewport, action As ViewportChangeAction)
-        Dim onePixelInMeters = MapTileSystemHelper.GroundResolution(Me.Location.Latitude, viewport.ZoomLevel)
+    Public Property RadiusInMeters As Integer
+        Get
+            Return Me._radiusInMeters
+        End Get
+        Set(ByVal value As Integer)
+            Me._radiusInMeters = value
+        End Set
+    End Property
 
-        Dim scale = -1.0F
-        scale = Me.RadiusInMeters * 2 / onePixelInMeters
-        Dim newSize = Size.Empty
-        If scale > 1 Then
-            newSize = New Size(scale, scale)
-
-        End If
-
-		Me.Size = newSize
-
+    Public Overrides Sub ViewportChanged(ByVal viewport As IMapViewport, ByVal action As ViewportChangeAction)
+        Dim onePixelInMeters As Double = MapTileSystemHelper.GroundResolution(Me.Location.Latitude, Me._maxZoom - viewport.ZoomLevel)
+        Console.WriteLine(onePixelInMeters & " " & viewport.ZoomLevel)
+        Dim scale As Integer = -1
+        scale = CInt((onePixelInMeters / Me._radiusInMeters * 2))
+        Dim newSize As Size = Size.Empty
+        If scale > 1 Then newSize = New Size(scale, scale)
+        Me.Size = newSize
         MyBase.ViewportChanged(viewport, action)
     End Sub
 End Class
+
+
 ````
 
 #### Initial Setup
 
 ````C#
+
 public RadForm1()
 {
     InitializeComponent();
+
+    string cacheFolder = @"..\..\cache";
+    OpenStreetMapProvider osmProvider = new OpenStreetMapProvider();
+    osmProvider.MaxZoomLevel = 10;
+    MapTileDownloader tileDownloader = osmProvider.TileDownloader as MapTileDownloader;
+    tileDownloader.WebHeaders.Add(System.Net.HttpRequestHeader.UserAgent, "your application name");
+    LocalFileCacheProvider cache = new LocalFileCacheProvider(cacheFolder);
+    osmProvider.CacheProvider = cache;
+    this.radMap1.MapElement.Providers.Add(osmProvider);
 
     MapLayer pointLayer = new MapLayer("PointG");
     this.radMap1.Layers.Add(pointLayer);
 
     CustomMapPoint element = new CustomMapPoint(new PointG(34.04302, -118.26725));
     element.RadiusInMeters = 100;
+    element.MaxZoom = osmProvider.MaxZoomLevel;
     element.BackColor = Color.FromArgb(125, Color.LightBlue);
     element.BorderColor = Color.Red;
     this.radMap1.Layers["PointG"].Add(element);
 }
 
+
 ````
 ````VB.NET
- Public Sub New()
-        InitializeComponent()
 
-        Dim pointLayer As MapLayer = New MapLayer("PointG")
-        Me.radMap1.Layers.Add(pointLayer)
-
-        Dim element As CustomMapPoint = New CustomMapPoint(New PointG(34.04302, -118.26725))
-        element.RadiusInMeters = 100
-        element.BackColor = Color.FromArgb(125, Color.LightBlue)
-        element.BorderColor = Color.Red
-        Me.radMap1.Layers("PointG").Add(element)
-    End Sub
-````
-
->note In **R2 2019 (LIB 2019.1.415)** there were changes and improvements that is possible to affect RadMap since we have refactored several classes in the RadMap's implementation when addressing several issues.:
->
-
-````C#
-
-            public override void ViewportChanged(IMapViewport viewport, ViewportChangeAction action)
-            {
-                double onePixelInMeters = MapTileSystemHelper.GroundResolution(this.Location.Latitude, this.MaxZoom - viewport.ZoomLevel);
+Public Sub New()
+    InitializeComponent()
+    Dim cacheFolder As String = "..\..\cache"
+    Dim osmProvider As OpenStreetMapProvider = New OpenStreetMapProvider()
+    osmProvider.MaxZoomLevel = 10
+    Dim tileDownloader As MapTileDownloader = TryCast(osmProvider.TileDownloader, MapTileDownloader)
+    tileDownloader.WebHeaders.Add(System.Net.HttpRequestHeader.UserAgent, "your application name")
+    Dim cache As LocalFileCacheProvider = New LocalFileCacheProvider(cacheFolder)
+    osmProvider.CacheProvider = cache
+    Me.radMap1.MapElement.Providers.Add(osmProvider)
+    Dim pointLayer As MapLayer = New MapLayer("PointG")
+    Me.radMap1.Layers.Add(pointLayer)
+    Dim element As CustomMapPoint = New CustomMapPoint(New PointG(34.04302, -118.26725))
+    element.RadiusInMeters = 100
+    element.MaxZoom = osmProvider.MaxZoomLevel
+    element.BackColor = Color.FromArgb(125, Color.LightBlue)
+    element.BorderColor = Color.Red
+    Me.radMap1.Layers("PointG").Add(element)
+End Sub
  
-                int scale = -1;
-                scale = (int)(onePixelInMeters / this.RadiusInMeters * 2);
-                
-                Size newSize = Size.Empty;
-                if (scale > 1)
-                    newSize = new Size(scale, scale);
-                this.Size = newSize;
-                base.ViewportChanged(viewport, action);
-            }
-````
 
+````
 
 # See Also
 * [Exporting RadMap to an Image]({%slug radmap-export-image%})
