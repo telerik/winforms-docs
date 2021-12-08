@@ -50,6 +50,9 @@ End Sub
 
 {{endregion}} 
 
+# See Also
+
+* [How to Change the CheckBox's Siz]({%slug change-checkbox-size%})
 
 
 
