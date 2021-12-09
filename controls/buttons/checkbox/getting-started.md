@@ -52,7 +52,7 @@ End Sub
 
 # See Also
 
-* [How to Change the CheckBox's Siz]({%slug change-checkbox-size%})
+* [How to Change the CheckBox's Size]({%slug change-checkbox-size%})
 
 
 
