@@ -103,6 +103,29 @@ Me.RadDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.ToBack
 >caption Figure 2: New Document windows are inserted after the first window.
 
 ![dock-architecture-and-features-document-manager 003](images/dock-architecture-and-features-document-manager003.png) 
+
+#### ActiveDocumentMenuSortOrder
+
+This property is an enumeration that Gets or sets the order of the document menu items that appear in the drop-down list. By default, they are alphabetically ordered. This property exposes the following values:
+
+* __ByText__: (default value)  The items are sorted by the Text value of each document. 
+* __None__: No sort order is applied. The items in the menu are in the order they appear in the owned documents.
+* __ZOrdered__: The items are sorted by their z-order, supported by the DocumentManager.
+
+In the following example, we are going to order the items by the order they are added in the document. This can be done by setting the __ActiveDocumentMenuSortOrder__ to __None__.
+
+````C#
+this.radDock1.DocumentManager.ActiveDocumentMenuSortOrder = ActiveDocumentMenuSortOrder.None;
+
+````
+````VB.NET
+Me.RadDock1.DocumentManager.ActiveDocumentMenuSortOrder = ActiveDocumentMenuSortOrder.None
+
+````
+
+{{endregion}}
+
+![dock-architecture-and-features-document-manager 003](images/dock-architecture-and-features-document-manager004.png) 
       
 # See Also
 
