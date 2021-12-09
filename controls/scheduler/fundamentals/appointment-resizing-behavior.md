@@ -2,7 +2,7 @@
 title: AppointmentResizingBehavior
 page_title: AppointmentResizingBehavior | RadScheduler
 description: This article described the default resizing behavior as well as how this behavior can be altered by using a custom class.
-slug: winforms/scheduler/fundamentals/scheduler-selection
+slug: winforms/scheduler/fundamentals/scheduler-resizing
 tags: scheduler,resize
 published: True
 position: 4 
@@ -47,4 +47,6 @@ When the [SchedulerInputBehavior]({%slug winforms/scheduler/fundamentals/input-b
 |**AppointmentResizeEnd**|Occurs when the resize operation has ended.|
 
   
- 
+# See Also
+
+* [How to Confirm Appointment's Resizing in RadScheduler]({%slug custom-resizing-behavior-in-radscheduler%})
