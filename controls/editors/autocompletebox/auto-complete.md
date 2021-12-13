@@ -126,7 +126,7 @@ As of **R1 2020 SP1** **RadAutoCompleteBox** offers the **AllowDuplicates** prop
 |----|----|
 |![editors-autocompletebox-autocomplete 004](images/editors-autocompletebox-autocomplete004.png)|![editors-autocompletebox-autocomplete 003](images/editors-autocompletebox-autocomplete003.png)|
 
-Note that you can still add duplicated tokens in the editor if you type them manually. In order to avoid that you can subscribe to **TokenValidating** event and if the existing text in **RadAutoCompleteBox** contains the new text, set the **IsValidToken** property to *false*.  
+Note that you can still add duplicated tokens in the editor if you type them manually. In order to avoid that you can subscribe to **TokenValidating** event and if the existing text in **RadAutoCompleteBox** contains the new text, set the **IsValidToken** property to *false*. The **TokenValidating** event will be called for each token that is going to be added to the control text area.
 
 {{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=InvalidToken}}
 {{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=InvalidToken}}
