@@ -38,7 +38,7 @@ The available glyphs are separated in several groups, based on their usage:
 * __File__
 
 >note The following article lists all available glyphs from the TelerikWebUI font along with their names, number and string values: [Glyphs Reference](http://docs.telerik.com/devtools/winforms/telerik-presentation-framework/glyphs-reference-sheet).
-
+>
 
 As of R1 2022, it is possible to access the glyphs directly using their names from the table in the above referred help article.
 
@@ -46,20 +46,22 @@ As of R1 2022, it is possible to access the glyphs directly using their names fr
 {{source=..\SamplesVB\TPF\CustomFontsCode.vb region=AccessGlyphWebUIFont}}
 
 ````C#
+
 string fontName = TelerikWebUIFont.Name;
 string glyphText= TelerikWebUIFont.GlyphMarkerPinTarget;
 
 ````
 ````VB.NET
+
 Dim fontName As String = TelerikWebUIFont.Name
 Dim glyphText As String = TelerikWebUIFont.GlyphMarkerPinTarget
 
 ````
+
 {{endregion}} 
 
 
 # Font Awesome 
-
 
 This is an open source font consisting of close to 1400 icons. The Font Awesome pack has three different types.
 
@@ -68,7 +70,7 @@ This is an open source font consisting of close to 1400 icons. The Font Awesome 
 * __Awesome-Solid__
 
 >note The available Font Awesome icons are listed here: [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free) 
-
+>
 
 # Using Glyphs
 
@@ -88,12 +90,15 @@ radLabel1.Text = "\ue920 | \ue812 | \ue13A";
 
 ````
 ````VB.NET
+
 Dim font1 = ThemeResolutionService.GetCustomFont("TelerikWebUI")
 radLabel1.LabelElement.CustomFont = font1.Name
 radLabel1.Text = ChrW(&HE920).ToString() & " | " & ChrW(&HE812).ToString() & " | " & ChrW(&HE13A).ToString()
 
 ````
+
 {{endregion}} 
+
 
 The bellow image shows the results:
 
