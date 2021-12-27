@@ -1300,6 +1300,9 @@ navigation:
     controls/track-and-status-controls/rating:
         title: Rating
         position: 5
+    controls/treemap:
+        title: TreeMap
+        position: 485
     controls/treeview:
         title: TreeView
         position: 490
@@ -1638,6 +1641,7 @@ intro_columns:
       "PivotGrid": "winforms/pivotgrid"
       "PropertyGrid": "winforms/propertygrid"
       "TreeView": "winforms/treeview"
+      "TreeMap": "winforms/treemap"
       "VirtualGrid": "winforms/virtualgrid"
       "DataFilter": "winforms/datafilter/overview"
       "FilterView": "winforms/filter-view/filter-view-overview"
