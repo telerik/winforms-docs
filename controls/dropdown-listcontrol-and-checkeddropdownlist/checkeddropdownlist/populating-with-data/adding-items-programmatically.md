@@ -61,4 +61,5 @@ radCheckedDropDownList1.Items.Add(descriptionItem)
 
 * [Design Time]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/populating-with-data/design-time%})
 * [Data Binding]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/populating-with-data/data-binding%})
+* [Add Non-existing Items as Tokens in RadCheckedDropDownList]({%slug checked-dropdownlist-add-tokens%})
 
