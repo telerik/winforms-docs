@@ -54,3 +54,4 @@ To connect to a web cam manually, execute the following steps:
 * [Media Information]({%slug webcam-media-information%})
 * [Settings Dialog]({%slug camera-settings-dialog%})
 * [Errors]({%slug webcam-errors%})
+* [How to Deal with Slow WebCam Preview on Start]({%slug deal-with-slow-webcam-preview-on-start%})
