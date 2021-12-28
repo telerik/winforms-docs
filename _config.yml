@@ -1641,7 +1641,7 @@ intro_columns:
       "PivotGrid": "winforms/pivotgrid"
       "PropertyGrid": "winforms/propertygrid"
       "TreeView": "winforms/treeview"
-      "TreeMap": "winforms/treemap"
+      "TreeMap": "winforms-treemap-overview"
       "VirtualGrid": "winforms/virtualgrid"
       "DataFilter": "winforms/datafilter/overview"
       "FilterView": "winforms/filter-view/filter-view-overview"
