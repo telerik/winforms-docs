@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview - WinForms TreeMap Control
-description: WinForms TreeMap  
+description: WinForms TreeMap is a data visualization control used to display hierarchical data as a set of nested rectangles.  
 slug: winforms-treemap-overview
 tags: treeview
 published: True
@@ -17,7 +17,7 @@ CTAControlName: TreeMap
 
 ## Key Features:
 
-* **Different tiling algorithms**: The control support two tiling algorithms to visualize the data - **Squarified** and **Slice and Dice**. The default one is Slice and Dice.
+* **Different tiling algorithms**: The control support two tiling algorithms to visualize the data - **Squarified** and **Slice and Dice**. The default one is Squarified.
 
 * **Colorizers**: The colorizers allow you to choose different color for the different tiles in the control. 
 
