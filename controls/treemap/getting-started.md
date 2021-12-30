@@ -1,11 +1,11 @@
 ---
 title: Getting Started
 page_title: Getting Started - WinForms TreeMap Control
-description: WinForms TreeMap  
+description: Get familiar with the WinForms TreeMap.  
 slug: winforms-treemap-getting-started
-tags: treeview
+tags: treemap, getting, started
 published: True
-position: 3
+position: 2
 ---
 
 # Getting Started
