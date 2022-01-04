@@ -45,7 +45,7 @@ Me.RadMap1.Pan(New SizeL(200, 200))
 
 ## ViewportChanged Event
 
-To get notified when the user pan or zoom the __RadMap__ control, you can subscribe to the __ViewportChanged__ event of the control. When the map is Pan, this event will be called one time with __ViewportChangeAction__ set to __Pan__. However, when the map is Zoom, first the map will be zoom then it will be Pan. This behavior will trigger the __ViewportChanged__ event twice. The first time the __ViewportChangeAction__ will be set to __ViewportChangeAction.Zoom__, the second time this property will be set to __ViewportChangeAction.All__.
+To get notified when the users pan or zoom the __RadMap__ control, you can subscribe to the __ViewportChanged__ event of the control. When the map is Panned, this event will be called one time with __ViewportChangeAction__ set to __Pan__. However, when the map is Zoomed, first the map will be zoomed then it will be panned. This behavior will trigger the __ViewportChanged__ event twice. The first time the __ViewportChangeAction__ will be set to __ViewportChangeAction.Zoom__, the second time this property will be set to __ViewportChangeAction.All__.
 
 
 # See Also
