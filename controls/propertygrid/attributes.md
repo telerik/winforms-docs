@@ -438,6 +438,31 @@ Private m_BProperty As ToggleState
 
 ![propertygrid-attributes 010](images/propertygrid-attributes010.gif)
 
+## TypeConverterAttribute
+
+The __TypeConverterAttribute__ specifies what type to use as a converter for the object this attribute is bound to. 
+
+{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=TypeConverterAttribute}} 
+{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=TypeConverterAttribute}} 
+
+````C#
+PropertyStoreItem Item1 = new PropertyStoreItem(typeof(string), "BorderType", "Flat");
+Item1.Attributes.Add(new TypeConverterAttribute(typeof(My_TypeConverter)));
+store.Add(Item1);
+radPropertyGrid1.SelectedObject = store;
+
+````
+````VB.NET
+Dim store As RadPropertyStore = New RadPropertyStore()
+Dim Item1 As PropertyStoreItem = New PropertyStoreItem(GetType(String), "BorderType", "Flat")
+Item1.Attributes.Add(New TypeConverterAttribute(GetType(My_TypeConverter)))
+store.Add(Item1)
+radPropertyGrid1.SelectedObject = store
+
+````
+
+{{endregion}}
+
 # See Also
 
 * [Binding to Multiple Objects]({%slug winforms/propertygrid/populating-with-data/binding-to-multiple-objects%})
