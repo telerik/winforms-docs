@@ -135,4 +135,6 @@ Me.radTreeMap1.Items.AddRange(New Telerik.WinControls.UI.TreeMap.TreeMapDataItem
 
 * [Getting Started]({%slug winforms-treemap-getting-started%})
 
+* [Data Binding]({%slug treemap-data-binding%})
+
 

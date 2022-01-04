@@ -27,7 +27,7 @@ RadTreeMap doesn't use visual elements. It directly paints the data items consid
  
 # See Also
 
-* [Structure]({%slug winforms-treemap-structure%})
+* [Data Binding]({%slug treemap-data-binding%})
 
 * [Getting Started]({%slug winforms-treemap-getting-started%})
 
