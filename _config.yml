@@ -1300,6 +1300,11 @@ navigation:
     controls/track-and-status-controls/rating:
         title: Rating
         position: 5
+    controls/track-and-status-controls/stepprogressbar:
+        title: StepProgressBar
+    controls/treemap:
+        title: TreeMap
+        position: 485
     controls/treeview:
         title: TreeView
         position: 490
@@ -1638,6 +1643,7 @@ intro_columns:
       "PivotGrid": "winforms/pivotgrid"
       "PropertyGrid": "winforms/propertygrid"
       "TreeView": "winforms/treeview"
+      "TreeMap": "winforms-treemap-overview"
       "VirtualGrid": "winforms/virtualgrid"
       "DataFilter": "winforms/datafilter/overview"
       "FilterView": "winforms/filter-view/filter-view-overview"
@@ -1668,6 +1674,7 @@ intro_columns:
       "ProgressBar": "winforms/track-and-status-controls/progressbar"
       "Rating": "winforms/track-and-status-controls/rating"
       "Rotator": "winforms/rotator"
+      "StepProgressBar": "stepprogressbar-overview"
       "TrackBar": "winforms/track-and-status-controls/trackbar"
       "WaitingBar": "winforms/track-and-status-controls/waitingbar"
       "VirtualKeyboard": "winforms-virtual-keyboard-overview"
