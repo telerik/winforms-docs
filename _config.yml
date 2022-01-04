@@ -1300,6 +1300,8 @@ navigation:
     controls/track-and-status-controls/rating:
         title: Rating
         position: 5
+    controls/track-and-status-controls/stepprogressbar:
+        title: StepProgressBar
     controls/treemap:
         title: TreeMap
         position: 485
@@ -1672,6 +1674,7 @@ intro_columns:
       "ProgressBar": "winforms/track-and-status-controls/progressbar"
       "Rating": "winforms/track-and-status-controls/rating"
       "Rotator": "winforms/rotator"
+      "StepProgressBar": "stepprogressbar-overview"
       "TrackBar": "winforms/track-and-status-controls/trackbar"
       "WaitingBar": "winforms/track-and-status-controls/waitingbar"
       "VirtualKeyboard": "winforms-virtual-keyboard-overview"
