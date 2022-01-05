@@ -1305,6 +1305,9 @@ navigation:
     controls/treemap:
         title: TreeMap
         position: 485
+    controls/treemap/features:
+        title: Features
+        position: 7
     controls/treeview:
         title: TreeView
         position: 490
