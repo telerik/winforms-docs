@@ -5,7 +5,7 @@ description: Check our Layout Strategies documentation article for the RadTreeMa
 slug: treemap-colorizers
 tags: treemap, colorizers
 published: True
-position: 5
+position: 7
 ---
 
 # Colorizers
@@ -143,9 +143,37 @@ Me.radTreeMap1.Colorizer = gradientColorizer
 
 {{endregion}} 
 
-In case of grouping,
+In case of grouping, the GradientColorizer offers:
 
+* **StartPalette** - Defines the start colors for each group.
 
+* **EndPalette** - Defines the end colors for each group.
+
+>note The **StartColor** and **EndColor** properties have default values coming from the first color defined in the two palettes respectively.
+
+{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=GroupedGradient}} 
+{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=GroupedGradient}} 
+
+````C#
+
+GradientColorizer groupGradientColorizer = new GradientColorizer();
+groupGradientColorizer.StartPalette = TreeMapPalette.Fluent;
+groupGradientColorizer.EndPalette = TreeMapPalette.Forest;
+this.radTreeMap1.Colorizer = groupGradientColorizer;       
+ 
+````
+````VB.NET
+
+Dim groupGradientColorizer As GradientColorizer = New GradientColorizer()
+groupGradientColorizer.StartPalette = TreeMapPalette.Fluent
+groupGradientColorizer.EndPalette = TreeMapPalette.Forest
+Me.radTreeMap1.Colorizer = groupGradientColorizer
+
+````
+
+{{endregion}} 
+
+![treemap-colorizers 006](images/treemap-colorizers006.png)
  
  
 # See Also
