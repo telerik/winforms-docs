@@ -18,7 +18,14 @@ This article describes the inner structure and organization of the elements whic
 
 * **TreeMapDataItemGroup** - represents the group that holds the items.
 
-RadTreeMap doesn't use visual elements. It directly paints the data items considering the values and the layout [algorithm]({%slug treemap-layout-strategies%}).
+* **TreeMapLegendElement** - represents the legend in RadTreeMap.
+
+	* **LegendTitleElement** - represents the title of the legend.
+	* **LegendItemElement** - represents the item's legend element.
+		* **LegendItemTitle** - item's title.
+		* **LegendItemMarker** - item's marker.
+
+RadTreeMap doesn't use visual elements for its items. It directly paints the data items considering the values and the layout [algorithm]({%slug treemap-layout-strategies%}).
 
 ## Elements Hierarchy
 
