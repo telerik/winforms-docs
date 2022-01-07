@@ -11,7 +11,7 @@ CTAControlName: StepProgressBar
 
 # StepProgressBar 
 
-__RadStepProgressBar__ enables you to setup a visual element that displayes a multi-step process via number of different steps and a progress track bar between each step. Selecting a step will animate a progress movement from the previously selected step to the new one.
+__RadStepProgressBar__ enables you to set up a visual element that displays a multi-step process via a number of different steps and a progress track bar between each step. This control can be used to track the progress of an ongoing process, booking transport tickets, user registration, etc.
 
 ![winforms/stepprogressbar-overview 001](images/stepprogressbar-overview001.png) 
 
@@ -19,11 +19,11 @@ __RadStepProgressBar__ enables you to setup a visual element that displayes a mu
 
 Here are a few of the **StepProgressBar**'s main features:
 
-* __Easily customizeable visuals__: The track bar and each step of the control can be customized by changing their default properties (like color and size) or by replacing the default visualization with a custom one. Read more it the [Appearance]({%slug stepprogressbar-appearance-step%}) section of the documentation.
+* __Easily customizeable visuals__: The track bar and each step of the control can be customized by changing their default properties (like color and size) or by replacing the default indicator shape with a custom one. Read more it the [Customize Step Item]({%slug stepprogressbar-customize-appearance-step-item%}) section of the documentation.
 
-* __Horizontal and vertical orientations__: The control is arranged horizontally by default (left to right). Additionally, the control can be arranged vertically (top to bottom or bottom to top). Read more in the [Layout]({%slug stepprogressbar-layout%}) article.
+* __Horizontal and vertical orientations__: The control is arranged horizontally by default (left to right). Additionally, the control can be arranged vertically (top to bottom or bottom to top). Read more in the [Layout]({%slug stepprogressbar-features-layout%}) article.
 
-__Additional content__: Each step can display content on top and bottom of its visual element. The contents are optional and fully customizeable. Read more in the [Step Item Contents]({%slug stepprogressbar-step-contents%}) article.
+* __Progress Mode__: The control allows you to change how its steps are related to each other. Read more in the [Step Progress Mode]({%slug stepprogressbar-features-progressmode%}) article.
 
 * __Theming__ : Like any other control from the UI for WinForms suite, RadStepProgressBar comes with different themes.   
  

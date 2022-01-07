@@ -1554,7 +1554,12 @@ navigation:
     testing/test-complete/create-a-test-manually:
          title: Create a Test Manually
          position: 4              
+    controls/track-and-status-controls/stepprogressbar/features:
+        title: Features
+        position: 4 
     
+    "*customizing-appearance":
+        title: Customizing Appearance
 ## Api Reference End
 ## The application virtual path
 baseurl: "/devtools/winforms"
