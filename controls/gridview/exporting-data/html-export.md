@@ -21,7 +21,7 @@ This method offers excellent export performance and creates an HTML formatted fi
 
 >note The HTML export functionality is located in the __TelerikData.dll__ assembly. You need to include the following namespaces in order to access the types contained in TelerikData:
 * Telerik.WinControls.Data
-* Telerik.WinControls.UI.Export>
+* Telerik.WinControls.UI.Export
 >
 
 ## Exporting Data
