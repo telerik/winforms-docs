@@ -2,7 +2,7 @@
 title: Layout Mode
 page_title: Layout - WinForms StepProgressBar Control
 description: WinForms StepProgressBar Layout
-slug: stepprogressbar-overview
+slug: stepprogressbar-features-layout
 tags: stepprogressbar, layout
 published: True
 position: 0 
@@ -12,10 +12,6 @@ CTAControlName: StepProgressBar
 # Layout
 
 The RadStepProgressBar control is arranged horizontally by default which means that the steps are ordered from left to right. Additionally, the control can be arranged vertically from top to bottom. The flow direction can also be reversed - right to left or bottom to top.
-
-## StepLayoutMode
-
-
 
 ## Orientation
 
@@ -27,17 +23,21 @@ To change the orientation of the control, set the __Orientation__ property. The 
 {{source=..\SamplesVB\StepProgressBar\StepProgressBarSettings.vb region=ShowStepProgressBar}} 
 
 ````C#
-private void CreateVerticalStepProgressBar()
+private void CreateHorizontalStepProgressBar()
 {
     var stepProgressBar = new RadStepProgressBar();
-    var item1 = new StepProgressItem() { Progress = 100, FirstHeader = "Account", SecondHeader = "Step 1", FirstDescription = "Step 1", SecondDescription = "Desc 2" };
-    var item2 = new StepProgressItem() { Progress = 50, FirstHeader = "Security", SecondHeader = "Header 2", FirstDescription = "Step 2", SecondDescription = "Desc 2" };
-    var item3 = new StepProgressItem() { Progress = 0, FirstHeader = "Review", SecondHeader = "Header 2", FirstDescription = "Step 3", SecondDescription = "Desc 2" };    
+    stepProgressBar.Dock = DockStyle.Fill;
+    stepProgressBar.Orientation = Orientation.Vertical;
+    var item1 = new StepProgressItem() { FirstHeader = "Step 1", SecondHeader = "New", SecondDescription = "Unassigned" };
+    var item2 = new StepProgressItem() { FirstHeader = "Step 2", SecondHeader = "InProgress", SecondDescription = "Dev" };
+    var item3 = new StepProgressItem() { FirstHeader = "Step 3", SecondHeader = "ReadyForTest", SecondDescription = "Dev" };
+    var item4 = new StepProgressItem() { FirstHeader = "Step 4", SecondHeader = "Testing", SecondDescription = "QA", Progress = 61, };
+    var item5 = new StepProgressItem() { FirstHeader = "Step 5", SecondHeader = "Done", SecondDescription = "N/A" };
     stepProgressBar.Steps.Add(item1);
     stepProgressBar.Steps.Add(item2);
     stepProgressBar.Steps.Add(item3);
-    stepProgressBar.Size = new Size(stepProgressBar.Size.Width, stepProgressBar.Size.Height + 100);
-	stepProgressBar.Orientation = Orientation.Vertical;
+    stepProgressBar.Steps.Add(item4);
+    stepProgressBar.Steps.Add(item5);
     this.Controls.Add(stepProgressBar);
 }
 
@@ -62,14 +62,18 @@ To change the horizontal flow direction, set the __RightToLeft__ property.
 private void CreateHorizontalStepProgressBar()
 {
     var stepProgressBar = new RadStepProgressBar();
-    var item1 = new StepProgressItem() { Progress = 100, FirstHeader = "Account", SecondHeader = "Step 1", FirstDescription = "Step 1", SecondDescription = "Desc 2" };
-    var item2 = new StepProgressItem() { Progress = 50, FirstHeader = "Security", SecondHeader = "Header 2", FirstDescription = "Step 2", SecondDescription = "Desc 2" };
-    var item3 = new StepProgressItem() { Progress = 0, FirstHeader = "Review", SecondHeader = "Header 2", FirstDescription = "Step 3", SecondDescription = "Desc 2" };
+    stepProgressBar.Dock = DockStyle.Fill;
+    stepProgressBar.RightToLeft = RightToLeft.Yes;
+    var item1 = new StepProgressItem() { FirstHeader = "Step 1", SecondHeader = "New", SecondDescription = "Unassigned" };
+    var item2 = new StepProgressItem() { FirstHeader = "Step 2", SecondHeader = "InProgress", SecondDescription = "Dev" };
+    var item3 = new StepProgressItem() { FirstHeader = "Step 3", SecondHeader = "ReadyForTest", SecondDescription = "Dev" };
+    var item4 = new StepProgressItem() { FirstHeader = "Step 4", SecondHeader = "Testing", SecondDescription = "QA", Progress = 61, };
+    var item5 = new StepProgressItem() { FirstHeader = "Step 5", SecondHeader = "Done", SecondDescription = "N/A" };
     stepProgressBar.Steps.Add(item1);
     stepProgressBar.Steps.Add(item2);
     stepProgressBar.Steps.Add(item3);
-    stepProgressBar.RightToLeft = RightToLeft.Yes;
-    stepProgressBar.Size = new Size(stepProgressBar.Size.Width, stepProgressBar.Size.Height + 100);
+    stepProgressBar.Steps.Add(item4);
+    stepProgressBar.Steps.Add(item5);
     this.Controls.Add(stepProgressBar);
 }
 
@@ -89,18 +93,22 @@ The same property is applicable in vertical orientation.
 {{source=..\SamplesVB\StepProgressBar\StepProgressBarSettings.vb region=ShowStepProgressBar}} 
 
 ````C#
-private void CreateVerticalStepProgressBar()
+private void CreateHorizontalStepProgressBar()
 {
     var stepProgressBar = new RadStepProgressBar();
-    var item1 = new StepProgressItem() { Progress = 100, FirstHeader = "Account", SecondHeader = "Step 1", FirstDescription = "Step 1", SecondDescription = "Desc 2" };
-    var item2 = new StepProgressItem() { Progress = 50, FirstHeader = "Security", SecondHeader = "Header 2", FirstDescription = "Step 2", SecondDescription = "Desc 2" };
-    var item3 = new StepProgressItem() { Progress = 0, FirstHeader = "Review", SecondHeader = "Header 2", FirstDescription = "Step 3", SecondDescription = "Desc 2" };
+    stepProgressBar.Dock = DockStyle.Fill;
+    stepProgressBar.Orientation = Orientation.Vertical;
+    stepProgressBar.RightToLeft = RightToLeft.Yes;
+    var item1 = new StepProgressItem() { FirstHeader = "Step 1", SecondHeader = "New", SecondDescription = "Unassigned" };
+    var item2 = new StepProgressItem() { FirstHeader = "Step 2", SecondHeader = "InProgress", SecondDescription = "Dev" };
+    var item3 = new StepProgressItem() { FirstHeader = "Step 3", SecondHeader = "ReadyForTest", SecondDescription = "Dev" };
+    var item4 = new StepProgressItem() { FirstHeader = "Step 4", SecondHeader = "Testing", SecondDescription = "QA", Progress = 61, };
+    var item5 = new StepProgressItem() { FirstHeader = "Step 5", SecondHeader = "Done", SecondDescription = "N/A" };
     stepProgressBar.Steps.Add(item1);
     stepProgressBar.Steps.Add(item2);
     stepProgressBar.Steps.Add(item3);
-    stepProgressBar.RightToLeft = RightToLeft.Yes;
-    stepProgressBar.Size = new Size(stepProgressBar.Size.Width, stepProgressBar.Size.Height + 100);
-      stepProgressBar.Orientation = Orientation.Vertical;
+    stepProgressBar.Steps.Add(item4);
+    stepProgressBar.Steps.Add(item5);
     this.Controls.Add(stepProgressBar);
 }
 
@@ -113,6 +121,22 @@ private void CreateVerticalStepProgressBar()
 {{endregion}}
 
 ![stepprogressbar-layout 003](images/stepprogressbar-features-layout003.png)
+
+## LayoutMode
+
+Using the __LayoutMode__ property of the RadStepProgressBar, you can control how the steps are arrange in the form. This property is an enumeration and expose the following options:
+
+### Auto
+
+This is the __default value__ of the __LayoutMode__ property. In this mode the steps are arranged according to the specified spacing and connection lengths. In case there is not enough space, the spacing is decreased so that all steps remain visible.
+
+### Absolute
+
+In this mode the steps are always arranged according to the specified spacing and connection lengths. In case the available space cannot fit all the steps, the navigation buttons become visible.
+
+### Stretched
+
+In this mode the step spacing is adjusted dynamically to fit at an equal distance all steps in the available space.
 
 ## See Also
 

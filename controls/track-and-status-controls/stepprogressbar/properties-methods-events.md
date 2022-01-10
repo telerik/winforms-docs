@@ -44,7 +44,7 @@ CTAControlName: StepProgressBar
 |**StepIndicator**|Gets this indicator element.|
 |**FirstContentElement**|Gets the first content element.|
 |**SecondContentElement**|Gets the second content element.|
-|**IndicatorSize**|Gets or sets the step size. If you use this property to set the step size, the property will unbind from the ndicatorSize property. In order to bind it again, you need to reset the property, using ResetIndicatorSize method.|
+|**IndicatorSize**|Gets or sets the step size. If you use this property to set the step size, the property will unbind from the IndicatorSize property. In order to bind it again, you need to reset the property, using __ResetIndicatorSize()__ method.|
 |**ConnectionLength**|Gets or sets the length of the connection. If you use this property to set the step spacing, the property will unbind from the StepSpacing property. In order to bind it again, you need to reset the property, using ResetConnectionLength method.|
 |**ConnectionThickness**|Gets or sets the thickness of the connection. If you use this property to set the step spacing, the property will unbind from the ConnectionThickness property. In order to bind it again, you need to reset the property, using ResetConnectionThickness method.|
 |**Orientation**| Gets or sets the orientation of the step item. If you use this property to set the step spacing, the property will unbind from the Orientation property. In order to bind it again, you need to reset the property, using ResetOrientation method.|

@@ -21,9 +21,7 @@ The following picture shows the final result produced by the code of this tutori
 
 ## Defining RadStepProgressBar
 
-To start using the __RadStepProgressBar__ control, you can just populate its __Items__ collection with __StepProgressBarItem__ objects. Each __RadStepProgressBar__ will produce a step visual element with track bar rendered between the steps. The following example shows how to add 3 steps along with text to each step added via the __Content__ property of the RadStepProgressBarItem elements. In the example, the second step is selected.
-
-#### Populate RadStepProgressBar
+To start using the __RadStepProgressBar__ control, you can just populate its __Items__ collection with __StepProgressItem__ objects. Each __StepProgressItem__ will produce a step visual element with track bar rendered between the steps. The following example shows how to add 5 steps along with text to each step added via several properties of the StepProgressItem elements.
 
 {{source=..\SamplesCS\StepProgressBar\StepProgressBarSettings.cs region=ShowStepProgressBar}} 
 {{source=..\SamplesVB\StepProgressBar\StepProgressBarSettings.vb region=ShowStepProgressBar}} 
@@ -32,12 +30,17 @@ To start using the __RadStepProgressBar__ control, you can just populate its __I
 private void CreateStepProgressBar()
 {
     var stepProgressBar = new RadStepProgressBar();
-    var item1 = new StepProgressItem() { Progress = 100, FirstHeader = "Account", SecondHeader = "Step 1", FirstDescription = "Step 1", SecondDescription = "Desc 2" };
-    var item2 = new StepProgressItem() { Progress = 50, FirstHeader = "Security", SecondHeader = "Header 2", FirstDescription = "Step 2", SecondDescription = "Desc 2" };
-    var item3 = new StepProgressItem() { Progress = 0, FirstHeader = "Review", SecondHeader = "Header 2", FirstDescription = "Step 3", SecondDescription = "Desc 2" };
+    stepProgressBar.Dock = DockStyle.Fill;
+    var item1 = new StepProgressItem() {FirstHeader="Step 1", SecondHeader = "New", SecondDescription = "Unassigned" };
+    var item2 = new StepProgressItem() {FirstHeader="Step 2", SecondHeader = "InProgress", SecondDescription = "Dev" };
+    var item3 = new StepProgressItem() {FirstHeader="Step 3", SecondHeader = "ReadyForTest", SecondDescription = "Dev" };
+    var item4 = new StepProgressItem() {FirstHeader="Step 4", SecondHeader = "Testing", SecondDescription = "QA", Progress = 61, };
+    var item5 = new StepProgressItem() {FirstHeader="Step 5", SecondHeader = "Done", SecondDescription = "N/A" };
     stepProgressBar.Steps.Add(item1);
     stepProgressBar.Steps.Add(item2);
     stepProgressBar.Steps.Add(item3);
+    stepProgressBar.Steps.Add(item4);
+    stepProgressBar.Steps.Add(item5);
     this.Controls.Add(stepProgressBar);
 }
 
@@ -53,7 +56,8 @@ When you run the project, you can observe that the first step is complete. While
 
 # See Also
 
-* [Structure]({%slug callout-getting-started%})
-* [Design Time]({%slug callout-structure%}) 
+* [Layout]({%slug stepprogressbar-features-layout%})
+* [Step Progress Mode]({%slug stepprogressbar-features-progressmode%})
+* [Design Time]({%slug stepprogressbar-design-time%}) 
  
         
