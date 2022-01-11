@@ -17,15 +17,14 @@ There are two ways to assign tooltips to step indicators in __RadStepProgressBar
 
 The code snippet below demonstrates how you can assign a tooltip to a step indicator.
 
-{{source=..\SamplesCS\StepProgressBar\StepProgressBarSettings.cs region=ShowStepProgressBar}} 
-{{source=..\SamplesVB\StepProgressBar\StepProgressBarSettings.vb region=ShowStepProgressBar}} 
+{{source=..\SamplesCS\TrackAndStatus\StepProgressBar\StepProgressBarGettingStarted.cs region=StepIndicator_ToolTipText}} 
+{{source=..\SamplesVB\TrackAndStatus\StepProgressBar\StepProgressBarGettingStarted.vb region=StepIndicator_ToolTipText}}
 
 ````C#
-private void CreateHorizontalStepProgressBar()
+private void StepIndicator_ToolTipText()
 {
     var stepProgressBar = new RadStepProgressBar();
-    stepProgressBar.ToolTipTextNeeded += StepProgressBar_ToolTipTextNeeded;
-    var item1 = new StepProgressItem() { Progress = 100, FirstHeader = "Step 1",  };
+    var item1 = new StepProgressItem() { Progress = 100, FirstHeader = "Step 1" };
     var item2 = new StepProgressItem() { Progress = 100, FirstHeader = "Step 2" };
     var item3 = new StepProgressItem() { Progress = 80, FirstHeader = "Step 3" };
     var item4 = new StepProgressItem() { Progress = 0, FirstHeader = "Step 4" };
@@ -50,7 +49,45 @@ private void CreateHorizontalStepProgressBar()
 
 ````
 ````VB.NET
-
+Private Sub StepIndicator_ToolTipText()
+	Dim stepProgressBar = New RadStepProgressBar()
+	Dim item1 = New StepProgressItem() With {
+		.Progress = 100,
+		.FirstHeader = "Step 1"
+	}
+	Dim item2 = New StepProgressItem() With {
+		.Progress = 100,
+		.FirstHeader = "Step 2"
+	}
+	Dim item3 = New StepProgressItem() With {
+		.Progress = 80,
+		.FirstHeader = "Step 3"
+	}
+	Dim item4 = New StepProgressItem() With {
+		.Progress = 0,
+		.FirstHeader = "Step 4"
+	}
+	Dim item5 = New StepProgressItem() With {
+		.Progress = 0,
+		.FirstHeader = "Step 5"
+	}
+	item1.StepIndicator.AutoToolTip = True
+	item1.StepIndicator.ToolTipText = item1.FirstHeader
+	item2.StepIndicator.AutoToolTip = True
+	item2.StepIndicator.ToolTipText = item2.FirstHeader
+	item3.StepIndicator.AutoToolTip = True
+	item3.StepIndicator.ToolTipText = item3.FirstHeader
+	item4.StepIndicator.AutoToolTip = True
+	item4.StepIndicator.ToolTipText = item4.FirstHeader
+	item5.StepIndicator.AutoToolTip = True
+	item5.StepIndicator.ToolTipText = item5.FirstHeader
+	stepProgressBar.Steps.Add(item1)
+	stepProgressBar.Steps.Add(item2)
+	stepProgressBar.Steps.Add(item3)
+	stepProgressBar.Steps.Add(item4)
+	stepProgressBar.Steps.Add(item5)
+	Me.Controls.Add(stepProgressBar)
+End Sub
 
 ````
 
@@ -62,11 +99,11 @@ private void CreateHorizontalStepProgressBar()
 
 The code snippet below demonstrates how you can use the ToolTipTextNeeded event handler to set the ToolTipText of step indicators.
 
-{{source=..\SamplesCS\StepProgressBar\StepProgressBarSettings.cs region=ShowStepProgressBar}} 
-{{source=..\SamplesVB\StepProgressBar\StepProgressBarSettings.vb region=ShowStepProgressBar}} 
+{{source=..\SamplesCS\TrackAndStatus\StepProgressBar\StepProgressBarGettingStarted.cs region=ToolTipTextNeeded}} 
+{{source=..\SamplesVB\TrackAndStatus\StepProgressBar\StepProgressBarGettingStarted.vb region=ToolTipTextNeeded}}
 
 ````C#
-private void CreateHorizontalStepProgressBar()
+private void ToolTipTextNeeded()
 {
     var stepProgressBar = new RadStepProgressBar();
     stepProgressBar.ToolTipTextNeeded += StepProgressBar_ToolTipTextNeeded;
@@ -94,7 +131,44 @@ private void StepProgressBar_ToolTipTextNeeded(object sender, ToolTipTextNeededE
 
 ````
 ````VB.NET
+Private Sub ToolTipTextNeeded()
+	Dim stepProgressBar = New RadStepProgressBar()
+	stepProgressBar.ToolTipTextNeeded += AddressOf StepProgressBar_ToolTipTextNeeded
+	Dim item1 = New StepProgressItem() With {
+		.Progress = 100,
+		.FirstHeader = "Step 1"
+	}
+	Dim item2 = New StepProgressItem() With {
+		.Progress = 100,
+		.FirstHeader = "Step 2"
+	}
+	Dim item3 = New StepProgressItem() With {
+		.Progress = 80,
+		.FirstHeader = "Step 3"
+	}
+	Dim item4 = New StepProgressItem() With {
+		.Progress = 0,
+		.FirstHeader = "Step 4"
+	}
+	Dim item5 = New StepProgressItem() With {
+		.Progress = 0,
+		.FirstHeader = "Step 5"
+	}
+	stepProgressBar.Steps.Add(item1)
+	stepProgressBar.Steps.Add(item2)
+	stepProgressBar.Steps.Add(item3)
+	stepProgressBar.Steps.Add(item4)
+	stepProgressBar.Steps.Add(item5)
+	Me.Controls.Add(stepProgressBar)
+End Sub
 
+Private Sub StepProgressBar_ToolTipTextNeeded(ByVal sender As Object, ByVal e As ToolTipTextNeededEventArgs)
+	Dim indicator = TryCast(sender, StepItemIndicatorElement)
+
+	If indicator IsNot Nothing Then
+		e.ToolTipText = (TryCast(indicator.Parent, StepProgressItem)).FirstHeader
+	End If
+End Sub
 
 ````
 

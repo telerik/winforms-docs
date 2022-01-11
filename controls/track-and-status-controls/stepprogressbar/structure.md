@@ -18,16 +18,13 @@ This article describes the inner structure and organization of the elements whic
 
 The __RadStepProgressBarElement__ represents the entire __RadStepProgressBar__ control. Any settings you make at this level will be inherited by all elements further down in the tree.
 
-* **StepProgressItem**:
-* **FirstHeader**:
-* **FirstDescription**:
-* **SecondHeader**:
-* **SecondDescription**:        
-* **StepConnectionElement**: 
-* **Progress**:
-* **Completed Item**:
-* **Uncompleted Item**:
-* **Error**: 
+* __StepIndicator__: Represent the StepIndicator element of the StepProgressItem.
+* __FirstHeader__: Represent the first header of the first content element.
+* __FirstDescription__: Represent the first description of the first content element. 
+* __SecondHeader__: Represent the second header of the second content element.
+* __SecondDescription__: Represent the second description of the second content element.        
+* __Connection__: Represent the StepConnectionElement of the StepIndicator.
+* __StepIndicator InProgress__: Represent StepIndicator in progress.
 
 # See Also
 
