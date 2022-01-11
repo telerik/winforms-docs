@@ -5,7 +5,7 @@ description: WinForms StepProgressBar
 slug: stepprogressbar-customize-appearance-custom-indicator
 tags: stepprogressbar
 published: True
-position: 0 
+position: 1
 CTAControlName: StepProgressBar
 ---
 
@@ -15,37 +15,110 @@ This article demonstrates how you can apply custom shapes to the RadStepProgress
 
 In the following code snippet, we are changing the default look of all shapes. Using the IsFirst and IsLast properties of the StepProgressItem, we can apply different shapes from the rest steps for the first and last indicators.
 
-{{source=..\SamplesCS\StepProgressBar\StepProgressBarSettings.cs region=ShowStepProgressBar}} 
-{{source=..\SamplesVB\StepProgressBar\StepProgressBarSettings.vb region=ShowStepProgressBar}} 
+{{source=..\SamplesCS\TrackAndStatus\StepProgressBar\StepProgressBarGettingStarted.cs region=CustomIndicator}} 
+{{source=..\SamplesVB\TrackAndStatus\StepProgressBar\StepProgressBarGettingStarted.vb region=CustomIndicator}} 
 
 ````C#
-private void CreateHorizontalStepProgressBar()
+private void CreateCustomIndicator()
 {
     var stepProgressBar = new RadStepProgressBar();
-    var item1 = new StepProgressItem() { Progress = 0, FirstHeader = "Step 1",  };
-    var item2 = new StepProgressItem() { Progress = 0, FirstHeader = "Step 2" };
-    var item3 = new StepProgressItem() { Progress = 80, FirstHeader = "Step 3" };
-    var item4 = new StepProgressItem() { Progress = 0, FirstHeader = "Step 4" };
-    var item5 = new StepProgressItem() { Progress = 0, FirstHeader = "Step 5" };
+    stepProgressBar.Dock = DockStyle.Fill;
+    var item1 = new StepProgressItem() { FirstHeader = "Step 1", SecondHeader = "New", SecondDescription = "Unassigned" };
+    var item2 = new StepProgressItem() { FirstHeader = "Step 2", SecondHeader = "InProgress", SecondDescription = "Dev" };
+    var item3 = new StepProgressItem() { FirstHeader = "Step 3", SecondHeader = "ReadyForTest", SecondDescription = "Dev" };
+    var item4 = new StepProgressItem() { FirstHeader = "Step 4", SecondHeader = "Testing", SecondDescription = "QA", Progress = 61, };
+    var item5 = new StepProgressItem() { FirstHeader = "Step 5", SecondHeader = "Done", SecondDescription = "N/A" };
     stepProgressBar.Steps.Add(item1);
     stepProgressBar.Steps.Add(item2);
-    stepProgressBar.Steps.Add(item3);       
-    stepProgressBar.Steps.Add(item4);       
-    stepProgressBar.Steps.Add(item5);       
+    stepProgressBar.Steps.Add(item3);
+    stepProgressBar.Steps.Add(item4);
+    stepProgressBar.Steps.Add(item5);
+    SetFirstLastCustomShape(stepProgressBar);
     this.Controls.Add(stepProgressBar);
+}
+
+private void SetFirstLastCustomShape(RadStepProgressBar radStepProgressBar)
+{
+    foreach (StepProgressItem item in radStepProgressBar.Steps)
+    {
+        string shapeAsString = "20,20,200,100:20,20,False,0,0,0,0,0:200,20,False,0,0,0,0,0:220,70,False,0,0,0,0,0:200,120,False,0,0,0,0,0:20,120,False,0,0,0,0,0:40,70,False,0,0,0,0,0:";
+        if (item.IsFirst)
+        {
+            shapeAsString = "20,20,200,100:20,20,False,0,0,0,0,0:200,20,False,0,0,0,0,0:220,70,False,0,0,0,0,0:200,120,False,0,0,0,0,0:20,120,False,0,0,0,0,0:";
+        }
+        else if (item.IsLast)
+        {
+            shapeAsString = "20,20,200,100:20,20,False,0,0,0,0,0:180,20,True,230,20,230,120,0:180,120,False,0,0,0,0,0:20,120,False,0,0,0,0,0:40,70,False,0,0,0,0,0:";
+        }
+        item.StepIndicator.Shape = new CustomShape() { AsString = shapeAsString };
+        radStepProgressBar.StepProgressBarElement.IndicatorSize = new Size(60, 30);
+        radStepProgressBar.StepProgressBarElement.StepSpacing = 0;
+    }
 }
 
 ````
 ````VB.NET
+Private Sub CreateHorizontalStepProgressBar()
+	Dim stepProgressBar = New RadStepProgressBar()
+	stepProgressBar.Dock = DockStyle.Fill
+	Dim item1 = New StepProgressItem() With {
+		.FirstHeader = "Step 1",
+		.SecondHeader = "New",
+		.SecondDescription = "Unassigned"
+	}
+	Dim item2 = New StepProgressItem() With {
+		.FirstHeader = "Step 2",
+		.SecondHeader = "InProgress",
+		.SecondDescription = "Dev"
+	}
+	Dim item3 = New StepProgressItem() With {
+		.FirstHeader = "Step 3",
+		.SecondHeader = "ReadyForTest",
+		.SecondDescription = "Dev"
+	}
+	Dim item4 = New StepProgressItem() With {
+		.FirstHeader = "Step 4",
+		.SecondHeader = "Testing",
+		.SecondDescription = "QA",
+		.Progress = 61
+	}
+	Dim item5 = New StepProgressItem() With {
+		.FirstHeader = "Step 5",
+		.SecondHeader = "Done",
+		.SecondDescription = "N/A"
+	}
+	stepProgressBar.Steps.Add(item1)
+	stepProgressBar.Steps.Add(item2)
+	stepProgressBar.Steps.Add(item3)
+	stepProgressBar.Steps.Add(item4)
+	stepProgressBar.Steps.Add(item5)
+	SetFirstLastCustomShape(stepProgressBar)
+	Me.Controls.Add(stepProgressBar)
+End Sub
 
+Private Sub SetFirstLastCustomShape(ByVal radStepProgressBar As RadStepProgressBar)
+	For Each item As StepProgressItem In radStepProgressBar.Steps
+		Dim shapeAsString As String = "20,20,200,100:20,20,False,0,0,0,0,0:200,20,False,0,0,0,0,0:220,70,False,0,0,0,0,0:200,120,False,0,0,0,0,0:20,120,False,0,0,0,0,0:40,70,False,0,0,0,0,0:"
+
+		If item.IsFirst Then
+			shapeAsString = "20,20,200,100:20,20,False,0,0,0,0,0:200,20,False,0,0,0,0,0:220,70,False,0,0,0,0,0:200,120,False,0,0,0,0,0:20,120,False,0,0,0,0,0:"
+		ElseIf item.IsLast Then
+			shapeAsString = "20,20,200,100:20,20,False,0,0,0,0,0:180,20,True,230,20,230,120,0:180,120,False,0,0,0,0,0:20,120,False,0,0,0,0,0:40,70,False,0,0,0,0,0:"
+		End If
+
+		item.StepIndicator.Shape = New CustomShape() With {
+			.AsString = shapeAsString
+		}
+		radStepProgressBar.StepProgressBarElement.IndicatorSize = New Size(60, 30)
+		radStepProgressBar.StepProgressBarElement.StepSpacing = 0
+	Next
+End Sub
 
 ````
 
 {{endregion}}
 
 ![stepprogressbar-progress-mode 001](images/stepprogressbar-appearance-customindicator001.png)
-
-
 
 # See Also
 
