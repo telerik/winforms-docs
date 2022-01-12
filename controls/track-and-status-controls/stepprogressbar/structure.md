@@ -26,6 +26,10 @@ The __RadStepProgressBarElement__ represents the entire __RadStepProgressBar__ c
 * __Connection__: Represent the StepConnectionElement of the StepIndicator.
 * __StepIndicator InProgress__: Represent StepIndicator in progress.
 
+## Elements Hierarchy
+
+![winforms/StepProgressBar-structure 002](images/stepprogressbar-structure002.png) 
+
 # See Also
 
 * [Getting Started]({%slug stepprogressbar-getting-started%})

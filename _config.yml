@@ -1559,7 +1559,11 @@ navigation:
          position: 4              
     controls/track-and-status-controls/stepprogressbar/features:
         title: Features
-        position: 4 
+        position: 5
+    controls/track-and-status-controls/stepprogressbar/customizing-appearance:
+        title: Customizing Appearance
+        position: 6
+        
     
     "*customizing-appearance":
         title: Customizing Appearance
