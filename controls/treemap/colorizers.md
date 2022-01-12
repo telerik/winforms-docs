@@ -82,7 +82,7 @@ Me.radTreeMap1.Colorizer = paletteColorizer
 
 ### RangeColorizer
 
-This RangeColorizer contains a set of ranges defined by the **Stops** collection of values. It chooses the color to be applied according to the TreeMapDataItem's value and the From and To values of each range.
+This RangeColorizer contains a set of ranges defined by the **Stops** collection of values. It chooses the color to be applied according to the TreeMapDataItem's value and the stops that define the range.
 
 >note If no values are added to the **Stops** collection, the RangeColorizer gets the minimum/maximum values among the items and calculates default ranges.
 
@@ -114,6 +114,8 @@ Me.radTreeMap1.Colorizer = rangeColorizer
 ````
 
 {{endregion}}
+
+>Each Stop value can be absolute or relative (between 0 and 1) depending on the IsAbsolute property value. This may be useful for cases when half of the items need to be colored in one color, and the rest of them in another. Just add Stops 0, 0.5, 1 and thus two ranges will be defined: 0-0.5 and 0.5-1. Two palette colorw will be used in this case.
 
 ### GradientColorizer
 
