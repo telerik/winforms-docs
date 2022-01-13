@@ -25,6 +25,8 @@ Here are a few of the **StepProgressBar**'s main features:
 
 * __Progress Mode__: The control allows you to change how its steps are related to each other. Read more in the [Step Progress Mode]({%slug stepprogressbar-features-progressmode%}) article.
 
+* __Layout and Flow Direction__: The control allows you to change its orientation (horizontal or vertical) and how the steps are arranged (left-right,right-left). Read more in the [Layout]({%slug stepprogressbar-features-layout%}) article.
+
 * __Theming__ : Like any other control from the UI for WinForms suite, RadStepProgressBar comes with different themes.   
  
 
