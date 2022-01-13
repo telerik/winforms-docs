@@ -9,7 +9,7 @@ position: 4
 CTAControlName: StepProgressBar
 ---
 
-# Properties, Methods and Events for RadCallout
+# Properties, Methods and Events for RadStepProgressBar
 
 ## Properties  
 
