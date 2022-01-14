@@ -138,7 +138,8 @@ private void SetFirstLastCustomShape(RadStepProgressBar radStepProgressBar)
         }
         item.StepIndicator.Shape = new CustomShape() { AsString = shapeAsString };
         radStepProgressBar.StepProgressBarElement.IndicatorSize = new Size(60, 30);
-        radStepProgressBar.StepProgressBarElement.StepSpacing = 0;
+        radStepProgressBar.StepProgressBarElement.StepSpacing = 22;
+        radStepProgressBar.StepProgressBarElement.HideConnections = true;
     }
 }
 
@@ -196,7 +197,8 @@ Private Sub SetFirstLastCustomShape(ByVal radStepProgressBar As RadStepProgressB
 			.AsString = shapeAsString
 		}
 		radStepProgressBar.StepProgressBarElement.IndicatorSize = New Size(60, 30)
-		radStepProgressBar.StepProgressBarElement.StepSpacing = 0
+		radStepProgressBar.StepProgressBarElement.StepSpacing = 22
+		radStepProgressBar.StepProgressBarElement.HideConnections = True
 	Next
 End Sub
 
@@ -204,7 +206,7 @@ End Sub
 
 {{endregion}}
 
-![stepprogressbar-progress-mode 001](images/stepprogressbar-appearance-customindicator001.png)
+![stepprogressbar-progress-mode 001](images/stepprogressbar-appearance-customindicator002.png)
 
 # See Also
 
