@@ -11,9 +11,9 @@ CTAControlName: StepProgressBar
 
 # Customize Step Item 
 
-The __RadStepProgreesBar__ and its __StepProgressItem__ expose various properties which can be used to further customize their visual appearance. In this article we are going to list 
+The __RadStepProgreesBar__ and its __StepProgressItem__ expose various properties which can be used to further customize their visual appearance. In this article we are going to list them. 
 
-## RadStepProgreesBar
+## RadStepProgressBar
 
 >The following properties will be applied to all steps inside the control. In a case, where you want to customize specific steps and their connection, please refer to the next section of this article.
 
@@ -53,19 +53,19 @@ Using this property, you can control the scroll step of the navigation buttons. 
 
 ### IndicatorSize
 
-Using this property, you can change the size of the step progress item. The default size is 30,30. Setting the property of the step item itself will not affect the size of the other steps. If this property is used, the property will unbind from the RadStepProgreesBar IndicatorSize property. To bind it again, you can call the __ResetIndicatorSize()__ method of the item.
+Using this property, you can change the size of the step progress item. The default size is 30,30. Setting the property of the step item itself will not affect the size of the other steps. If this property is used, the property will unbind from the RadStepProgressBar IndicatorSize property. To bind it again, you can call the __ResetIndicatorSize()__ method of the item.
 
 ![stepprogressbar-layout 001](images/stepprogressbar-customize-appearance006.png)
 
 ### ConnectionLength
 
-Using this property, you can control the connection lenght. The default value is 80. Setting the property of the step item itself will not affect the length of the other connections. If this property is used, the property will unbind from the RadStepProgreesBar __StepSpacing__ property. To bind it again, you can call the __ResetConnectionLength()__ method of the item.
+Using this property, you can control the connection lenght. The default value is 80. Setting the property of the step item itself will not affect the length of the other connections. If this property is used, the property will unbind from the RadStepProgressBar __StepSpacing__ property. To bind it again, you can call the __ResetConnectionLength()__ method of the item.
 
 ![stepprogressbar-layout 001](images/stepprogressbar-customize-appearance007.png)
 
 ### ConnectionThickness
 
-Using this property, you can control the connection thickness. The default value is 3. Setting the property of the step item itself will not affect the thickness of the other connections. If this property is used, the property will unbind from the RadStepProgreesBar __ConnectionThickness__ property. To bind it again, you can call the __ResetConnectionThickness()__ method of the item.
+Using this property, you can control the connection thickness. The default value is 3. Setting the property of the step item itself will not affect the thickness of the other connections. If this property is used, the property will unbind from the RadStepProgressBar __ConnectionThickness__ property. To bind it again, you can call the __ResetConnectionThickness()__ method of the item.
 
 ![stepprogressbar-layout 001](images/stepprogressbar-customize-appearance008.png)
 

@@ -145,7 +145,7 @@ End Sub
 
 Setting the progress of a step does not affect the other steps. The progress of all steps is set individually.
 
-> In __Single and Independent__ mode, the progress is not indicated inside the connection. 
+> In **Single** and **Independent** mode, the progress is not indicated inside the connection. 
 
 {{source=..\SamplesCS\TrackAndStatus\StepProgressBar\StepProgressBarGettingStarted.cs region=StepProgressMode_Independent}} 
 {{source=..\SamplesVB\TrackAndStatus\StepProgressBar\StepProgressBarGettingStarted.vb region=StepProgressMode_Independent}}

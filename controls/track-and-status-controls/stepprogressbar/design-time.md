@@ -29,7 +29,7 @@ Select **RadStepProgressBar** and click the small arrow on the top right positio
 
 ## Adding Step Progress Items
 
-Click the browse button next to the **Steps** property in the Smart Tag. This will show the Collection Editor allowing you to add columns to **StepProgressItem**. The collection editor allows you to add as many task items as needed:
+Click the browse button next to the **Steps** property in the Smart Tag. This will show the Collection Editor allowing you to add **StepProgressItem**. The collection editor allows you to add as many step items as needed:
 
 ![stepprogressbar-design-time 002](images/stepprogressbar-design-time002.png)
 
