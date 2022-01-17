@@ -40,25 +40,26 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 
 |Telerik NuGet Version|Visual Studio Version|
 |----|----|
-|Hotfix v2021.3.1213-hotfix|VS2022: v17.0 GA; v17.1.0 Preview 1.1; VS2019: v16.11 GA; v16.11.7 Preview 1.0|
-|R3 2021 SP2 v2021.3.1123|VS2022: v17.0 GA; v17.1.0 Preview 1.1; VS2019: v16.11 GA; v16.11.7 Preview 1.0|
-|R3 2021 SP1 v2021.3.1109|VS2022: v17.0 GA; v17.1 Preview 1; VS2019: v16.11 GA;v16.11 Preview 1|
+|R1 2022 v2022.1.118|VS2022 v17.0.+; VS2019 v16.11.+|
+|Hotfix v2021.3.1213-hotfix|VS2022: v17.0.+; v17.1.0 Preview 1.1; VS2019: v16.11.+; v16.11.7 Preview 1.0|
+|R3 2021 SP2 v2021.3.1123|VS2022: v17.0.+; v17.1.0 Preview 1.1; VS2019: v16.11.+; v16.11.7 Preview 1.0|
+|R3 2021 SP1 v2021.3.1109|VS2022: v17.0.+; v17.1 Preview 1; VS2019: v16.11.+; v16.11 Preview 1|
 |Hotfix v2021.3.1019-hotfix|VS2022 v17.0 Preview 5, 6 & 7|
 |Hotfix v2021.3.927-hotfix|VS2022 v17.0 Preview 4|
-|R3 2021 v2021.3.914|VS2019 v16.11 GA; VS2019 v16.11 Preview|
-|Hotfix v2021.2.802-hotfix|VS2019 v16.11 GA; VS2019 v16.11 Preview 4; VS2022 v17.0 Preview 2|
-|Hotfix v2021.2.712-hotfix|VS2019 v16.11 GA; VS2019 v16.11 Preview 1 & 2; VS2022 v17.0 Preview 2|
-|R2 2021 SP1 v2021.2.615|VS2019 v16.10 GA; VS2019 v16.11 Preview 1 & 2; VS2022 v17.0 Preview 1|
-|Hotfix v2021.2.607-hotfix|VS2019 v16.10 GA; VS2019 v16.11 Preview 1|
-|R2 2021 v2021.2.511|VS2019 v16.9 GA; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
-|Hotfix v2021.1.329-hotfix|VS2019 v16.9 GA; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
-|R1 2021 SP3 v2021.1.326|VS2019 v16.9 GA; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
-|R1 2021 SP2 v2021.1.223|VS2019 v16.9 GA; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
-|R1 2021 SP1 v2021.1.204|VS2019 v16.9 Preview 2 or newer|
+|R3 2021 v2021.3.914|VS2019 v16.11.+; VS2019 v16.11 Preview|
+|Hotfix v2021.2.802-hotfix|VS2019 v16.11.+; VS2019 v16.11 Preview 4; VS2022 v17.0 Preview 2|
+|Hotfix v2021.2.712-hotfix|VS2019 v16.11.+; VS2019 v16.11 Preview 1 & 2; VS2022 v17.0 Preview 2|
+|R2 2021 SP1 v2021.2.615|VS2019 v16.10.+; VS2019 v16.11 Preview 1 & 2; VS2022 v17.0 Preview 1|
+|Hotfix v2021.2.607-hotfix|VS2019 v16.10.+; VS2019 v16.11 Preview 1|
+|R2 2021 v2021.2.511|VS2019 v16.9.+; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
+|Hotfix v2021.1.329-hotfix|VS2019 v16.9.+; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
+|R1 2021 SP3 v2021.1.326|VS2019 v16.9.+; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
+|R1 2021 SP2 v2021.1.223|VS2019 v16.9.+; VS2019 v16.9 Preview 2 to v16.10 Preview 1|
+|R1 2021 SP1 v2021.1.204|VS2019 v16.9.+ Preview 2 or newer|
 |R1 2021 v2021.1.122|VS2019 v16.9 Preview 2 or newer|
 |Hotfix v2020.3.1215-hotfix|VS2019 v16.9 Preview 2|
 |Hotfix v2020.3.1116-hotfix|VS2019 v16.9 Preview 1|
-|R3 2020 SP1 v2020.3.1020|VS2019 v16.8 GA; VS2019 v16.8 Preview 4|
+|R3 2020 SP1 v2020.3.1020|VS2019 v16.8.+; VS2019 v16.8 Preview 4|
 |R3 2020 v2020.3.915|VS2019 v16.8 Preview 3|
 
 >note The Hotfix NuGet packages are uploaded to the Telerik NuGet server as part of our [Latest Internal Builds](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/latest-internal-builds#latest-internal-builds).
