@@ -19,7 +19,7 @@ CTAControlName: TreeMap
 
 * **Different tiling algorithms**: The control support two tiling algorithms to visualize the data - **Squarified** and **Slice and Dice**. The default one is Squarified.
 
-* **Colorizers**: The colorizers allow you to choose different color for the different tiles in the control. 
+* **Colorizers**: The colorizers allow you to choose different colors for the different tiles in the control. 
 
 * **Selection**: The control supports selection functionality that allows you to highlight items upon click or setting a property. 
 
