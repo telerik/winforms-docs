@@ -144,7 +144,7 @@ private void RadGridView1_ScreenTipNeeded(object sender, ScreenTipNeededEventArg
         myScreenTip.ContentElement.Text = cell.Text;
         myScreenTip.ContentElement.Image = img;
         myScreenTip.ContentElement.BackColor = Color.LightBlue;
-        e.Item.ScreenTip = screenTip;
+        e.Item.ScreenTip = myScreenTip;
     }
 }
 
@@ -157,7 +157,7 @@ Private Sub RadGridView1_ScreenTipNeeded(ByVal sender As Object, ByVal e As Scre
         myScreenTip.ContentElement.Text = cell.Text
         myScreenTip.ContentElement.Image = img
         myScreenTip.ContentElement.BackColor = Color.LightBlue
-        e.Item.ScreenTip = screenTip
+        e.Item.ScreenTip = myScreenTip
     End If
 End Sub
 
