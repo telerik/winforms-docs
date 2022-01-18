@@ -1674,6 +1674,13 @@ intro_columns:
       "ImageEditor": "radimageeditor-overview"
       "WebCam": "webcam-overview"
       "PictureBox": "radpicturebox-overview"
+  -
+    title: "Document Processing"
+    items:
+      "PdfProcessing": "radpdfprocessing-overview"
+      "SpreadProcessing": "radspreadprocessing-overview"
+      "SpreadStreamProcessing": "radspreadstreamprocessing-overview"
+      "WordsProcessing": "radwordsprocessing-overview"
 -
   categories:
   -
@@ -1740,6 +1747,12 @@ intro_columns:
       "TimePicker": "winforms/editors/timepicker"
       "TimeSpanPicker": "radtimespanpicker-overview"
       "SyntaxEditor": "syntax-editor-overview"
+  -
+    title: "Office"
+    items:
+      "PDFViewer": "winforms/pdfviewer"
+      "RichTextEditor": "winforms/richtexteditor"
+      "SpellChecker": "winforms/spellchecker"
 -
   categories:
   -
@@ -1768,21 +1781,6 @@ intro_columns:
     title: "Framework"
     items:
       "UI Framework": "winforms/telerik-presentation-framework/overview"
--
-  categories:
-  -
-    title: "Document Processing"
-    items:
-      "PdfProcessing": "radpdfprocessing-overview"
-      "SpreadProcessing": "radspreadprocessing-overview"
-      "SpreadStreamProcessing": "radspreadstreamprocessing-overview"
-      "WordsProcessing": "radwordsprocessing-overview"
-  -
-    title: "Office"
-    items:
-      "PDFViewer": "winforms/pdfviewer"
-      "RichTextEditor": "winforms/richtexteditor"
-      "SpellChecker": "winforms/spellchecker"
   -
     title: "Data Visualization"
     items:
@@ -1797,7 +1795,6 @@ intro_columns:
       "RangeSelector": "winforms/rangeselector/overview"
       "Sparkline": "radsparkline-overview"
       "Task Board": "task-board-overview"
-
 
 ## Do not edit below this line
 safe: false
