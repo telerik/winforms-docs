@@ -100,7 +100,7 @@ Me.radTreeMap1.Algorithm = sliceDiceAlgorithmSmart
  
 # See Also
 
-* [Structure]({%slug winforms-treemap-structure%})
+* [Structure]({%slug treemap-structure%})
 
 * [Getting Started]({%slug winforms-treemap-getting-started%})
 
