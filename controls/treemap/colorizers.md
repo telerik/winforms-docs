@@ -180,7 +180,7 @@ Me.radTreeMap1.Colorizer = groupGradientColorizer
  
 # See Also
 
-* [Structure]({%slug winforms-treemap-structure%}) 
+* [Structure]({%slug treemap-structure%}) 
 
 * [Layout Strategies]({%slug treemap-layout-strategies%})
 

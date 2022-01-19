@@ -47,7 +47,7 @@ RadTreeMap supports data binding either at design time or at run time.
 
 # See Also
 
-* [Structure]({%slug winforms-treemap-structure%}) 
+* [Structure]({%slug treemap-structure%}) 
 
 * [Layout Strategies]({%slug treemap-layout-strategies%})
 

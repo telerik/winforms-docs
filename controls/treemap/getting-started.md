@@ -73,7 +73,7 @@ Me.radTreeMap1.DataSource = dt
  
 # See Also
 
-* [Structure]({%slug winforms-treemap-structure%}) 
+* [Structure]({%slug treemap-structure%}) 
 
 * [Layout Strategies]({%slug treemap-layout-strategies%})
 

@@ -53,7 +53,7 @@ Me.radTreeMap1.GroupDescriptors.Add("CategoryID", ListSortDirection.Ascending)
  
 # See Also
 
-* [Structure]({%slug winforms-treemap-structure%}) 
+* [Structure]({%slug treemap-structure%}) 
 
 * [Layout Strategies]({%slug treemap-layout-strategies%})
 
