@@ -53,7 +53,7 @@ As of **R1 2021**, it is possible to define which theme is your **default theme*
 
 >note The **Telerik.WinControls.Themes.Fluent** assembly is still available and it remains for compatibility so that existing projects don't break when they upgrade. 
 
-The theme settings are being read upon opening the first form designer in the project. If you change the default theme in App.config, it is necessary to **close all opened designers and open them again**. 
+>note The theme settings are being read upon opening the first form designer in the project. If you change the default theme in App.config, it is necessary to **close all opened designers and open them again**. 
 
 We are using the above App.config in the VS templates, so that new Telerik projects created by the Visual Studio extension have the Fluent theme set as default.
 
