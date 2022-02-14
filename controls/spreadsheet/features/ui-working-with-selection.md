@@ -297,6 +297,7 @@ RadSpreadsheet has several selection events you can subscribe to:
 
 * __SelectionTypeChanged__: Raised when the active selection changes between cell selection and shape selection.
             
+>note As of R1 2022 SP1 the RadSpreadsheet.**ActiveWorksheetEditor** offers two events, **FilterMenuOpening** and **FilterMenuOpened**. The **FilterMenuPopupOpeningEventArgs** and **FilterMenuPopupOpenedEventArgs** give you access to the FilterMenu (type of RadSizableDropDownMenu) and its items.
 
 In some scenarios when you make a complex selection and want an event to be fired only once (at the end of this complex selection) it is convenient to use __BeginUpdate()__ and __EndUpdate()__ methods.
         
