@@ -26,7 +26,8 @@ radPanel1.PanelElement.Shape = diamondShape;
 ````
 ````VB.NET
 Dim diamondShape As New DiamondShape()
-radPanel1.PanelElement.Shape = diamondShape
+radPanel1.RootElement.Shape = diamondShape
+radPanel1.RootElement.ApplyShapeToControl = True
 
 ````  
  

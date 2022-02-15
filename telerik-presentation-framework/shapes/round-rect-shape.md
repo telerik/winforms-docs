@@ -21,13 +21,15 @@ The following code shows how you can create and apply a __RoundRectShape__:
 ````C#
 RoundRectShape roundRectShape = new RoundRectShape();
 roundRectShape.Radius = 30;
-radPanel1.PanelElement.Shape = roundRectShape;
+radPanel1.RootElement.Shape = roundRectShape;
+radPanel1.RootElement.ApplyShapeToControl = true;
 
 ````
 ````VB.NET
 Dim roundRectShape As New RoundRectShape()
 roundRectShape.Radius = 30
-radPanel1.PanelElement.Shape = roundRectShape
+radPanel1.RootElement.Shape = roundRectShape
+radPanel1.RootElement.ApplyShapeToControl = True
 
 ````  
  

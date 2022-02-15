@@ -26,5 +26,19 @@ The following list shows all shapes currently included in the suite:
 
 * [StarShape]({%slug winforms/telerik-presentation-framework/star-shape%})
 
+* [TabVsShape]({%slug winforms-telerik-presentation-framework-tab-vs-shape%})
+
+* [TrackBar Thumb Shapes]({%slug winforms-telerik-presentation-framework-trackBar-thumb-shapes%})
+
+* [Chamfered Rect Shape]({%slug winforms-telerik-presentation-framework-chamfered-rect-shape%})
+
+* [Circle Shape]({%slug winforms-telerik-presentation-framework-circle-shape%})
+
+* [Custom Shapes]({%slug winforms/telerik-presentation-framework/custom-shape%})
+
+* [Office Shape]({%slug winforms-telerik-presentation-framework-office-shape%})
+
+* [QAShape]({%slug winforms-telerik-presentation-framework-qa-shape%})
+
 
 

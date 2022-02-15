@@ -21,12 +21,14 @@ The following code shows how you can create and apply a __MediaShape__:
 {{source=..\SamplesVB\TPF\Shapes\ShapesCode.vb region=Media}}
 ````C#
 MediaShape mediaShape = new MediaShape();
-radPanel1.PanelElement.Shape = mediaShape;
+radPanel1.RootElement.Shape = mediaShape;
+radPanel1.RootElement.ApplyShapeToControl = true;
 
 ````
 ````VB.NET
 Dim mediaShape As New MediaShape()
-radPanel1.PanelElement.Shape = mediaShape
+radPanel1.RootElement.Shape = mediaShape
+radPanel1.RootElement.ApplyShapeToControl = True
 
 ````  
  

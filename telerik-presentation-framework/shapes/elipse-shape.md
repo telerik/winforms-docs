@@ -21,12 +21,14 @@ The following code shows how you can create and apply a __EllipseShape__:
 {{source=..\SamplesVB\TPF\Shapes\ShapesCode.vb region=Ellipse}}
 ````C#
 EllipseShape ellipseShape = new EllipseShape();
-radPanel1.PanelElement.Shape = ellipseShape;
+radPanel1.RootElement.Shape = ellipseShape;
+radPanel1.RootElement.ApplyShapeToControl = true;
 
 ````
 ````VB.NET
 Dim ellipseShape As New EllipseShape()
-radPanel1.PanelElement.Shape = ellipseShape
+radPanel1.RootElement.Shape = ellipseShape
+radPanel1.RootElement.ApplyShapeToControl = True
 
 ````  
  
