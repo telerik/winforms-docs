@@ -16,6 +16,9 @@ position: 2
 |**ImageList**|Gets or sets the ImageList that contains the images displayed by this control.|
 |**DropDown**|Gets menu drop down panel.|
 
+As of **R1 2022 SP1** the animation-related properties are exposed directly on the context-menu:
+
+![contextmenu-properties 001](images/contextmenu-properties001.png)
 
 # Methods
 
