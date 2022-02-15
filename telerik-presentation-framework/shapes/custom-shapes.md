@@ -2,7 +2,7 @@
 title: Custom Shapes
 page_title: Custom Shapes | Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
-slug: winforms/telerik-presentation-framework/diamond-shape
+slug: winforms/telerik-presentation-framework/custom-shape
 tags: diamond-shape
 published: True
 position: 100

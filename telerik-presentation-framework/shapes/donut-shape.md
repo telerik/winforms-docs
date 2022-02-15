@@ -22,13 +22,15 @@ The following code shows how you can create and apply a __DonutShape__:
 ````C#
 DonutShape donutShape = new DonutShape();
 donutShape.Thickness = 50;
-radPanel1.PanelElement.Shape = donutShape;
+radPanel1.RootElement.Shape = donutShape;
+radPanel1.RootElement.ApplyShapeToControl = true;
 
 ````
 ````VB.NET
 Dim donutShape As New DonutShape()
 donutShape.Thickness = 50
-radPanel1.PanelElement.Shape = donutShape
+radPanel1.RootElement.Shape = donutShape
+radPanel1.RootElement.ApplyShapeToControl = True
 
 ````  
  

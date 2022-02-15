@@ -21,12 +21,14 @@ The following code shows how you can create and apply a __HeartShape__:
 {{source=..\SamplesVB\TPF\Shapes\ShapesCode.vb region=Heart}}
 ````C#
 HeartShape heartShape = new HeartShape();
-radPanel1.PanelElement.Shape = heartShape;
+radPanel1.RootElement.Shape = heartShape;
+radPanel1.RootElement.ApplyShapeToControl = true;
 
 ````
 ````VB.NET
 Dim heartShape As New HeartShape()
-radPanel1.PanelElement.Shape = heartShape
+radPanel1.RootElement.Shape = heartShape
+radPanel1.RootElement.ApplyShapeToControl = True
 
 ````  
  

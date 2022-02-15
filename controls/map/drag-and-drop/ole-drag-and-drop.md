@@ -37,7 +37,6 @@ public DragAndDropRadMapForm()
     this.radMap1.AllowDrop = true;
     this.radListView1.AllowDrop = true;
     this.radMap1.MouseMove += RadMap1_MouseMove;
-    this.radMap1.MouseUp += RadMap1_MouseUp;
     this.radMap1.DragEnter += RadMap1_DragEnter;
     this.radListView1.DragEnter += RadListView1_DragEnter;
     this.radListView1.DragDrop += RadListView1_DragDrop;
@@ -54,7 +53,6 @@ Public Sub New()
     Me.radMap1.AllowDrop = True
     Me.radListView1.AllowDrop = True
     AddHandler Me.radMap1.MouseMove, AddressOf RadMap1_MouseMove
-    AddHandler Me.radMap1.MouseUp, AddressOf RadMap1_MouseUp
     AddHandler Me.radMap1.DragEnter, AddressOf RadMap1_DragEnter
     AddHandler Me.radListView1.DragEnter, AddressOf RadListView1_DragEnter
     AddHandler Me.radListView1.DragDrop, AddressOf RadListView1_DragDrop
@@ -81,77 +79,65 @@ private void RadMap1_MouseMove(object sender, MouseEventArgs e)
     {
         return;
     }
+
     PointL point = new PointL(e.X - this.radMap1.MapElement.PanOffset.Width, e.Y - this.radMap1.MapElement.PanOffset.Height);
     MapPin pin = this.radMap1.Layers.HitTest(point) as MapPin;
-    if (pin != null && this.radMap1.MapElement.EnablePanning)
-    {
-        this.radMap1.MapElement.EnablePanning = false;
-    }
-    if (pin == null && !this.radMap1.MapElement.EnablePanning)
-    {
-        this.radMap1.MapElement.EnablePanning = true;
-    }
     if (pin != null)
     {
+        this.radMap1.InputBehavior.OnMouseUp(e);
         ((RadMap)sender).DoDragDrop(pin, DragDropEffects.Move);
     }
 }
 private void RadMap1_DragEnter(object sender, DragEventArgs e)
 {
-    MapPin pin = e.Data.GetData(typeof(MapPin)) as MapPin;
-    e.Effect = pin == null ? DragDropEffects.None : DragDropEffects.Move;
+	MapPin pin = e.Data.GetData(typeof(MapPin)) as MapPin;
+	e.Effect = pin == null ? DragDropEffects.None : DragDropEffects.Move;
 }
-private void RadMap1_MouseUp(object sender, MouseEventArgs e)
-{
-    this.radMap1.MapElement.EnablePanning = true;
-}
+
 private void RadListView1_DragEnter(object sender, DragEventArgs e)
 {
-    MapPin pin = e.Data.GetData(typeof(MapPin)) as MapPin;
-    e.Effect = pin == null ? DragDropEffects.None : DragDropEffects.Move;
-}
+	MapPin pin = e.Data.GetData(typeof(MapPin)) as MapPin;
+	e.Effect = pin == null ? DragDropEffects.None : DragDropEffects.Move;
+}					
 private void RadListView1_DragDrop(object sender, DragEventArgs e)
 {
     MapPin pin = e.Data.GetData(typeof(MapPin)) as MapPin;
     this.radMap1.Layers["Pins"].Remove(pin);
     this.radListView1.Items.Add(pin.Text);
-    this.radMap1.MapElement.Invalidate();
+    this.radMap1.Refresh();
 }
 
 ````
 ````VB.NET
-Private Sub RadMap1_MouseMove(sender As Object, e As MouseEventArgs)
-    If Not (e.Button = MouseButtons.Left) Then
-        Return
-    End If
-    Dim point As New PointL(e.X - Me.radMap1.MapElement.PanOffset.Width, e.Y - Me.radMap1.MapElement.PanOffset.Height)
-    Dim pin As MapPin = TryCast(Me.radMap1.Layers.HitTest(point), MapPin)
-    If pin IsNot Nothing AndAlso Me.radMap1.MapElement.EnablePanning Then
-        Me.radMap1.MapElement.EnablePanning = False
-    End If
-    If pin Is Nothing AndAlso Not Me.radMap1.MapElement.EnablePanning Then
-        Me.radMap1.MapElement.EnablePanning = True
-    End If
-    If pin IsNot Nothing Then
-        DirectCast(sender, RadMap).DoDragDrop(pin, DragDropEffects.Move)
-    End If
+Private Sub RadMap1_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)
+	If Not (e.Button = MouseButtons.Left) Then
+		Return
+	End If
+
+	Dim point As PointL = New PointL(e.X - Me.radMap1.MapElement.PanOffset.Width, e.Y - Me.radMap1.MapElement.PanOffset.Height)
+	Dim pin As MapPin = TryCast(Me.radMap1.Layers.HitTest(point), MapPin)
+
+	If pin IsNot Nothing Then
+		Me.radMap1.InputBehavior.OnMouseUp(e)
+		(CType(sender, RadMap)).DoDragDrop(pin, DragDropEffects.Move)
+	End If
 End Sub
-Private Sub RadMap1_MouseUp(sender As Object, e As MouseEventArgs)
-    Me.radMap1.MapElement.EnablePanning = True
+
+Private Sub RadMap1_DragEnter(ByVal sender As Object, ByVal e As DragEventArgs)
+	Dim pin As MapPin = TryCast(e.Data.GetData(GetType(MapPin)), MapPin)
+	e.Effect = If(pin Is Nothing, DragDropEffects.None, DragDropEffects.Move)
 End Sub
-Private Sub RadMap1_DragEnter(sender As Object, e As DragEventArgs)
-    Dim pin As MapPin = TryCast(e.Data.GetData(GetType(MapPin)), MapPin)
-    e.Effect = If(pin Is Nothing, DragDropEffects.None, DragDropEffects.Move)
+
+Private Sub RadListView1_DragEnter(ByVal sender As Object, ByVal e As DragEventArgs)
+	Dim pin As MapPin = TryCast(e.Data.GetData(GetType(MapPin)), MapPin)
+	e.Effect = If(pin Is Nothing, DragDropEffects.None, DragDropEffects.Move)
 End Sub
-Private Sub RadListView1_DragDrop(sender As Object, e As DragEventArgs)
-    Dim pin As MapPin = TryCast(e.Data.GetData(GetType(MapPin)), MapPin)
-    Me.radMap1.Layers("Pins").Remove(pin)
-    Me.radListView1.Items.Add(pin.Text)
-    Me.radMap1.MapElement.Invalidate()
-End Sub
-Private Sub RadListView1_DragEnter(sender As Object, e As DragEventArgs)
-    Dim pin As MapPin = TryCast(e.Data.GetData(GetType(MapPin)), MapPin)
-    e.Effect = If(pin Is Nothing, DragDropEffects.None, DragDropEffects.Move)
+
+Private Sub RadListView1_DragDrop(ByVal sender As Object, ByVal e As DragEventArgs)
+	Dim pin As MapPin = TryCast(e.Data.GetData(GetType(MapPin)), MapPin)
+	Me.radMap1.Layers("Pins").Remove(pin)
+	Me.radListView1.Items.Add(pin.Text)
+	Me.radMap1.Refresh()
 End Sub
 
 ````

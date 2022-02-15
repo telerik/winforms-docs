@@ -23,14 +23,16 @@ The following code shows how you can create and apply a __StarShape__:
 StarShape starShape = new StarShape();
 starShape.Arms = 12;
 starShape.InnerRadiusRatio = .5f;
-radPanel1.PanelElement.Shape = starShape;
+radPanel1.RootElement.Shape = starShape;
+radPanel1.RootElement.ApplyShapeToControl = true;
 
 ````
 ````VB.NET
 Dim starShape As New StarShape()
 starShape.Arms = 12
 starShape.InnerRadiusRatio = 0.5F
-radPanel1.PanelElement.Shape = starShape
+radPanel1.RootElement.Shape = starShape
+radPanel1.RootElement.ApplyShapeToControl = True
 
 ````  
  
