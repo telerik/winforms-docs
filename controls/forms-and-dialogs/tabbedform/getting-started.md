@@ -40,3 +40,4 @@ In VB.NET this can be done from the project properties.
 
 * [Structure]({%slug radtabbedform-structure%})
 * [Design Time]({%slug  radtabbedform-design-time%})
+* [How to Hide the New Tab Button for the Popped out Forms]({%slug tabbedform-keep-show-new-tab-button%})
