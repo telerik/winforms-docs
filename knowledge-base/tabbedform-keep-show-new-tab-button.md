@@ -1,6 +1,6 @@
 ---
 title: How to Hide the New Tab Button for the Popped out Forms
-description: An example demonstrating how to hide the new tab button when a .
+description: An example that demonstrates how to hide the new tab button when the tab is popped out.
 type: how-to 
 page_title: How to Hide the New Tab Button for the Popped out Forms
 slug: tabbedform-keep-show-new-tab-button
