@@ -50,6 +50,8 @@ The top section is devoted to sorting. The rest of the filtering popup exposes t
 
 * Filtering tree: The filtering tree allows easy application and manipulation of the values collection filter. It can be applied and changed by checking and unchecking the options in the tree.
 
+>note As of R1 2022 SP1 the RadSpreadsheet.ActiveWorksheetEditor offers two events, FilterMenuOpening and FilterMenuOpened. The FilterMenuPopupOpeningEventArgs and FilterMenuPopupOpenedEventArgs give you access to the FilterMenu (type of RadSizableDropDownMenu) and its items.
+
 ## Applying Filter
 
 You can apply a filter by using the options provided by the filtering popup. The options which apply a dynamic filter (e.g. above average, last week, etc.) require only a single click. The top filter and the custom filter options open dialogs which allow you to specify the desired parameters of the filters.
