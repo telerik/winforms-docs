@@ -11,7 +11,7 @@ position: 0
 
 # RadThemeManager
 
-RadThememanger is a component which can be dragged from the toolbox. It purpose is to manage the XML files that contain the theme for the controls. The following articles are showing how you can use this control: 
+RadThemeManger is a component that can be dragged from the toolbox. Its purpose is to manage the XML files that contain the theme for the controls. The following articles are showing how you can use this control: 
 
 * [Adding RadThemeManager to a Form]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form%})
 * [Load Themes from a Resource]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource%})

@@ -16,7 +16,7 @@ Telerik UI for Winforms suite contains two themes that are optimized for a touch
 
 
 * __MaterialTheme:__ touch optimized theme which provides additional features such as custom fonts, built-in animations and shadows. We also have three other themes that are using the material theme as foundation but have different colors:
-    * __MaterialBlueGray__
+    * __MaterialBlueGrey__
     * __MaterialPink__
     * __MaterialTeal__
 
@@ -33,7 +33,7 @@ The below images are showing the how the themes are looking with some of our con
 
 ![themes-touch-themes002](images/themes-touch-themes002.png)
 
->caption Figure 3: The MaterialBlueGray theme
+>caption Figure 3: The MaterialBlueGrey theme
 
 ![themes-touch-themes003](images/themes-touch-themes003.png)
 
