@@ -18,11 +18,11 @@ res_type: kb
 
 ## Description
 
-Since [R2 2021](https://www.telerik.com/support/whats-new/winforms/release-history/ui-for-winforms-r2-2021-(version-2021-2-511)) **RadTextBox** and **RadTextBoxControl** support embedded labels. The embedded label shows a text in the text box field usually to indicate what text should the user enter in the text box. When RadTextBox  or RadTextBoxControl gets focus the embedded label will go up, so the user can type in the text box field. 
+Since [R2 2021](https://www.telerik.com/support/whats-new/winforms/release-history/ui-for-winforms-r2-2021-(version-2021-2-511)) **RadTextBox** and **RadTextBoxControl** support embedded labels. The embedded label shows a text in the text box field usually to indicate what text should the user enter in the text box. When RadTextBox or RadTextBoxControl gets focused the embedded label will go up, so the user can type in the text box field. 
 
 ![drop-down-list-embedded-label001](images/drop-down-list-embedded-label001.gif)
 
-A common requirement is to achieve a similar functionality for **RadDropDownList**. This article demonstrates how to do it.
+A common requirement is to achieve similar functionality for **RadDropDownList**. This article demonstrates how to do it.
 
 ## Solution
 
