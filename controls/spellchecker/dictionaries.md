@@ -13,6 +13,8 @@ previous_url: spellchecker-dictionaries
 
 **RadSpellChecker** comes with one predefined dictionary which checks the English language. In case you need a dictionary for another language, you check the [Dictionaries for RadSpellChecker](http://www.telerik.com/community/code-library/winforms/localization-providers/dictionaries-for-radspellchecker.aspx) article where our customers have provided their own implementation of dictionaries for the different languages. The following section demonstrates how you can load one of these dictionaries in your own project.     
 
+>note If you are experiencing any difficulties with downloading the dictionaries from the Code Library, feel free to download them from [this](https://www.telerik.com/forums/dictionaries-for-radspellchecker) forum post.
+
 ## Loading a custom dictionary
 
 > To access the **RadSpellChecker** related types, you need to include the __Telerik.WinControls.SpellChecker.Proofing__ namespace
