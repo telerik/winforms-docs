@@ -4,7 +4,7 @@ description: Reverse the Sequence of Legend Items
 type: how-to
 page_title: How to Reverse the Sequence of Legend Items
 slug: chartview-legend-reverse-order
-position: 
+position: 0
 tags: legend, chartview, reverse
 ticketid: 1556729
 res_type: kb
