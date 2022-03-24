@@ -44,6 +44,7 @@ private void RadForm1_Load(object sender, EventArgs e)
     }
 }
 
+
 ````
 ````VB.NET
 Public Sub New()
@@ -59,5 +60,6 @@ Private Sub RadForm1_Load(ByVal sender As Object, ByVal e As EventArgs)
 		Me.radChartView1.ChartElement.LegendElement.Items.Add(legendItem)
 	Next
 End Sub
+
 
 ````
