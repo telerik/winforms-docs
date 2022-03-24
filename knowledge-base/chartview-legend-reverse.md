@@ -3,7 +3,7 @@ title: How to Reverse the Sequence of Legend Items
 description: Reverse the Sequence of Legend Items
 type: how-to
 page_title: How to Reverse the Sequence of Legend Items
-slug: 
+slug: chartview-legend-reverse-order
 position: 
 tags: legend, chartview, reverse
 ticketid: 1556729
@@ -59,6 +59,5 @@ Private Sub RadForm1_Load(ByVal sender As Object, ByVal e As EventArgs)
 		Me.radChartView1.ChartElement.LegendElement.Items.Add(legendItem)
 	Next
 End Sub
-
 
 ````
