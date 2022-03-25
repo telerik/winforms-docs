@@ -10,8 +10,8 @@ ticketid: 1556729
 res_type: kb
 ---
 
-## Environment
 
+## Environment
 |Product Version|Product|Author|
 |----|----|----|
 |2022.1.222|RadChartView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
@@ -28,6 +28,7 @@ We can reverse the order of the legend items so that is more readable for the en
 ![ ](images/chartview-legend-reverse-order.png)
 
 ````C#
+
 public RadForm1()
 {
     InitializeComponent();
@@ -47,6 +48,7 @@ private void RadForm1_Load(object sender, EventArgs e)
 
 ````
 ````VB.NET
+
 Public Sub New()
 	InitializeComponent()
 	AddHandler Me.Load, AddressOf RadForm1_Load
@@ -61,5 +63,5 @@ Private Sub RadForm1_Load(ByVal sender As Object, ByVal e As EventArgs)
 	Next
 End Sub
 
-
 ````
+
