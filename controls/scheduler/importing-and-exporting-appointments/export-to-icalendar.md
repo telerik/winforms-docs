@@ -63,3 +63,4 @@ End Using
 * [Views]({%slug winforms/scheduler/views/overview-and-structure%})
 * [Working with Appointments]({%slug winforms/scheduler/appointments-and-dialogs/working-with-appointments%})
 * [Data Binding]({%slug winforms/scheduler/data-binding/introduction%})
+* [How to Save Custom Backgrounds in RadScheduler when Exporting to ICal]({%slug save-custom-backgrounds-in-scheduler-when-exporting-to-ical%})
