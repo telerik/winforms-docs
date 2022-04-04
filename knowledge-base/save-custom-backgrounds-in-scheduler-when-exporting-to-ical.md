@@ -468,7 +468,7 @@ End Using
 
 ### Importing ICal data
 
-Once the scheduler data is exported, it would be good to have it back by importing at a later moment. This requires creating a derivative of the **SchedulerICalendarImporter** class and overriding its **ApplyAdditionalData** method. It is necessary to find the correct ID of the custom status/background and apply it to the appointmen:
+Once the scheduler data is exported, it would be good to have it back by importing at a later moment. This requires creating a derivative of the **SchedulerICalendarImporter** class and overriding its **ApplyAdditionalData** method. It is necessary to find the correct ID of the custom status/background and apply it to the appointment:
 
 #### Custom SchedulerICalendarImporter
 
