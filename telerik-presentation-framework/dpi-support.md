@@ -152,3 +152,4 @@ The call must be done at the application entry point. If you have used a manifes
 * [WinForms Scaling at Large DPI Settings–Is It Even Possible?](http://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-)
 * [HDPI Tips and Tricks]({%slug hdpi-tips-and-tricks%})
 * [App becomes DPI-aware at runtime]({%slug app-becomes-dpi-aware%})
+* [How to Deal with WFAC010 Warning - Remove high DPI settings from app.manifest file and configure via Application.SetHighDpiMode API or project property]({%slug wfac010-warning-remove-high-dpi-settings%})
