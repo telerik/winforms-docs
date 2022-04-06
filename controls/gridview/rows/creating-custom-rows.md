@@ -226,3 +226,5 @@ End Sub
 
 * [Painting Rows]({%slug winforms/gridview/rows/painting-rows%})
 
+* [How to Create a Custom Data Row Element in RadGridView]({%slug custom-grid-data-row-element%})
+
