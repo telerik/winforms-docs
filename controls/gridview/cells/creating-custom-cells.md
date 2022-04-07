@@ -624,3 +624,5 @@ End Sub
 
 * [How to Save/Load Layout with Custom Columns in RadGridView]({%slug gridview-save-layout-with-custom-columns%})
 
+* [How to Display and Edit HTML Text in GridView Cells]({%slug display-and-edit-html-text-in-grid-cells%})
+

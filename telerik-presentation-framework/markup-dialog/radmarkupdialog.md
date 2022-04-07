@@ -143,4 +143,6 @@ Markup view contains only the clipboard commands.
 
 * [Inherit themes from RadControls derivatives]({%slug winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives%})
 
+* [How to Display and Edit HTML Text in GridView Cells]({%slug display-and-edit-html-text-in-grid-cells%})
+
 
