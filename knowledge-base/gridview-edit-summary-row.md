@@ -13,19 +13,18 @@ res_type: kb
 
 |Product Version|Product|Author|
 |----|----|----|
-|2022.1.222|RadChartView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2022.1.222|RadГGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 
 ## Description
 
-Some scenarios will require to have an editable summary row. This article shows how to achieve this functionality, so when the clicks on the summary cell, the editor will appear. Editing the summary cell value will affect the values of the cells in this column. For the purpose of this tutorial, we will populate our RadGridVew with custom data and set the second column to be __GridViewDecimalColumn__. The value in the summary cell will represent the sum of all cells inside this column. Modifying the summary cell will proportionally change the values inside each cell.
+Some scenarios will require to have an editable summary row. This article shows how to achieve this functionality, so when the user clicks on the summary cell, the editor will appear. Editing the summary cell value will affect the values of the cells in this column. For the purpose of this tutorial, we will populate our RadGridVew with custom data and set the second column to be __GridViewDecimalColumn__. The value in the summary cell will represent the sum of all cells inside this column. Modifying the summary cell will proportionally change the values inside each cell.
 
-![radgridview-copy-cell-row](images/radgridview-copy-cell-row.gif)
+![EditableSummaryRow](images/EditableSummaryRow.gif)
 
 ## Solution 
 
-First we need to populate our RadGridVew with some dummy data.
-
+1. First we need to populate our RadGridVew with some dummy data.
 
 ````C#
 
@@ -144,7 +143,7 @@ End Class
     
 ````
 
-Now to implement editable summary cell, we need to create custom column(__GridViewDecimalColumn__) and replace the default summary cell with a custom one.
+2. Now to implement editable summary cell, we need to create custom column(__GridViewDecimalColumn__) and replace the default summary cell with a custom one.
 
 ````C#
 
@@ -183,7 +182,7 @@ End Class
     
 ````
 
-The final step will be our custom summary cell. Your class should derive from the __GridDataCellElement__ so that you can get advantage of the default editing mechanism and editor. In the following code snippet, you can observe that we have subscribe to the __ValueChanged__ of the editor. In the event handler, when the summary cell is edited, the values inside the cells will proportionally change.
+3. The final step will be our custom summary cell. Your class should derive from the __GridDataCellElement__ so that you can get advantage of the default editing mechanism and editor. In the following code snippet, you can observe that we have subscribe to the __ValueChanged__ of the editor. In the event handler, when the summary cell is edited, the values inside the cells will proportionally change.
 
 ````C#
 
