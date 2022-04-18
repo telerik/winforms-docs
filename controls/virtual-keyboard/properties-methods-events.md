@@ -31,7 +31,7 @@ position: 8
 |**IsAltActive**|Gets a value indicating, whether the Alt key is in active state.|
 |**IsAltGrActive**|Gets a value indicating, whether the Alt Gr(right alt) key is in active state.|
 |**ModifierKeys**|Gets the collection with currently active modifier keys.|
-|**CurrentCulture**|Gets or sets current culture for the RadVirtualKeyboardElement. By default or when set to null the ComponentXmlSerializationInfo provided by GetDefaultXmlSerializationInfo() will be used.|
+|**CurrentCulture**|Gets or sets current culture for the RadVirtualKeyboardElement.|
 |**ClickSoundStream**|*(introduced in R3 2021 SP1)* Gets or sets the key press sound stream. Note that if you have not set the stream this property will return the default sound.|
  
 # Methods
