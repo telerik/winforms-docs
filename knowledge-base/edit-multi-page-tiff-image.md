@@ -173,4 +173,4 @@ A complete C# and VB.NET projects are available [here](https://github.com/teleri
 
 # See Also
 
-* * [RadImageEditor - Getting Started]({%slug radimageeditor-getting-started%})
+* [RadImageEditor - Getting Started]({%slug radimageeditor-getting-started%})

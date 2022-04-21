@@ -30,5 +30,5 @@ This article describes the inner structure and organization of the elements whic
 
 # See Also
 
-* [Design Time]({%slug winforms/editors/domainupdown/designtime%}) 
+* [Design Time]({%slug winforms/editors/domainupdown/design-time%}) 
 * [Getting Started]({%slug winforms/editors/domainupdown/getting-started%}) 

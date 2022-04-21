@@ -153,6 +153,5 @@ End Sub
 # See Also
 
 * [Edit]({%slug radpicturebox-edit%})
-* [Customizing appearance]({%slug radpicturebox-customizing-appearance%})
 * [Pan and Zoom]({%slug radpicturebox-pan-and-zoom%})
 

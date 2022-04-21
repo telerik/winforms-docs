@@ -136,7 +136,7 @@ And here is the result:
 
 ## Manual Column Generation 
 
-Setting the __AutoGenerateColumns__ property to *false* allows the developer to add unbound or bound columns from the data source. Columns are added to using the __Columns__ collection of a template. While the type of auto-generated columns is strictly defined by the data layer, manually added columns are defined by the developer. When defining a column you are able to choose between [several column types]({%slug winforms/gridview/columns%})
+Setting the __AutoGenerateColumns__ property to *false* allows the developer to add unbound or bound columns from the data source. Columns are added to using the __Columns__ collection of a template. While the type of auto-generated columns is strictly defined by the data layer, manually added columns are defined by the developer. When defining a column you are able to choose between [several column types]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
 
 #### Adding Columns in Code at Run Time
 
@@ -200,5 +200,5 @@ Select **RadGridView** and click the small arrow at the top right position in or
 
 # See Also
 
- * [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
- * [Property Builder]({%slug winforms/gridview/design-time-support/property-builder%})
+* [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
+* [Property Builder]({%slug winforms/gridview/design-time-support/property-builder%})

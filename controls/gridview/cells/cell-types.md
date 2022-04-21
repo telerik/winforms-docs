@@ -128,4 +128,4 @@ Note that if the row and the respective cell are not specified for a certain col
 
 
 # See Also
-* [Columns]({%slug winforms/gridview/columns%})
+* [Columns]({%slug winforms/gridview/columns/converting-data-types%})

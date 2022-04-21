@@ -1658,7 +1658,7 @@ intro_columns:
       "TreeMap": "winforms-treemap-overview"
       "VirtualGrid": "winforms/virtualgrid"
       "DataFilter": "winforms/datafilter/overview"
-      "FilterView": "winforms/filter-view/filter-view-overview"
+      "FilterView": "filter-view-overview"
   -
     title: "Tools"
     items:
@@ -1773,7 +1773,7 @@ intro_columns:
       "Dock": "winforms/dock"
       "GroupBox": "winforms/panels-and-labels/groupbox/overview"
       "LayoutControl": "winforms/layoutcontrol" 
-      "Panel": "winforms/panels-and-labels/panels"
+      "Panel": "winforms/panels-and-labels/panel"
       "ScrollablePanel": "winforms/panels-and-labels/radscrollablepanel"
       "Separator": "winforms/panels-and-labels/separator"
       "SplitContainer": "winforms/splitcontainer"

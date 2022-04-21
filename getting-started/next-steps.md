@@ -16,7 +16,7 @@ If you are just getting started, you can find guidance in the following articles
 
 * [First Steps]({% slug winforms/getting-started/first-steps %})
 * [Explore control features]({% slug winforms/getting-started/explore-control-features %})
-* [Preview and Change control appearance]({%slug winforms/getting-started/preview-and-change-control-appearance%})
+* [Preview and Change control appearance]({%slug winforms/getting-started/change-control-appearance%})
 
 ### More Learning Resources
 

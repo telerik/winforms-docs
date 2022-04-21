@@ -93,7 +93,6 @@ Me.RadPictureBox1.ImageEditorDialog.ImageEditor.ImageEditorElement.DialogFactory
 
 # See Also
 
-* [Customizing appearance]({%slug radpicturebox-customizing-appearance%})
 * [Pan and Zoom]({%slug radpicturebox-pan-and-zoom%})
-* [Context Menu]({%slug radpicturebox-context-menu%})
+* [Context Menu]({%slug context-menu%})
 

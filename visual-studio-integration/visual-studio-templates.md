@@ -84,7 +84,7 @@ The Excel-Inspired Template implements Excel-like editing experience represented
 ![visual studio templates 005](images/visual-studio-templates005.png)
 # See Also
 
-* [Visual Studio Extensions]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions%})
+* [Visual Studio Extensions]({%slug winforms-installation-deployment-and-distribution-visual-studio-extensions%})
 * [Create Telerik Project]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation%})
 * [Project Configuration Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/configure-project%})
 * [Using Default Themes]({%slug winforms/themes/using-default-themes%})

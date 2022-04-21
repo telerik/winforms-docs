@@ -150,7 +150,7 @@ Public Function GetAllColumns(ByVal template As GridViewTemplate) As List(Of Gri
 # See Also
 * [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
 
-* [Overview]({%slug winforms/gridview/columns%})
+* [Overview]({%slug winforms/gridview/columns/column-types/gridviewcolumn%})
 
 * [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
 
