@@ -61,8 +61,6 @@ RadGridView1.Columns.Move(4, 1)
 
 * [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
 
-* [Overview]({%slug winforms/gridview/columns%})
-
 * [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
 
 * [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})

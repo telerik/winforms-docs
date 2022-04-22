@@ -45,9 +45,8 @@ Last, but not least, some most common tasks and configuration options are availa
 
 Below you can find guidance on changing the control appearance as well as next steps:
 
-* [Change control appearance]({% slug winforms/getting-started/change-control-appearance %})
-* [Preview and Change control appearance]({% slug winforms/getting-started/preview-and-change-control-appearance %})
-* [Further information]({% slug winforms/getting-started/next-steps %})
+* [Preview and Change control appearance]({%slug winforms/getting-started/change-control-appearance%})
+* [Further information]({%slug winforms/getting-started/next-steps%})
 
 ## See Also
 

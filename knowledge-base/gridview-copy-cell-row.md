@@ -72,7 +72,7 @@ End Sub
     
 ````
 
-Thanks to the build-in [Copy/Paste functionality]({%slug winforms/controls/gridview/copy-paste-cut%}) which **RadGridView** supports, you can store the text in the Clipboard and then paste it in a different location. **RadGridView** copies the selected data considering the **SelectionMode**. If the **SelectionMode** property is set to *FullRowSelect*, the entire row will be copied. If it is set to *CellSelect* only the selected cell will be copied. 
+Thanks to the build-in [Copy/Paste functionality]({%slug winforms/gridview/cut-copy-paste%}) which **RadGridView** supports, you can store the text in the Clipboard and then paste it in a different location. **RadGridView** copies the selected data considering the **SelectionMode**. If the **SelectionMode** property is set to *FullRowSelect*, the entire row will be copied. If it is set to *CellSelect* only the selected cell will be copied. 
 
 In the *CopyCellItem_Click* event handler you should first store the **GridViewSelectionMode**, set the **SelectionMode** to *CellSelect*, execute the **Copy** method, and then restore the **SelectionMode**. 
 

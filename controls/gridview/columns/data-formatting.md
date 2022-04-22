@@ -83,8 +83,6 @@ productNameColumn.TextAlignment = ContentAlignment.BottomRight
 
 * [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
 
-* [Overview]({%slug winforms/gridview/columns%})
-
 * [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
 
 * [Generating Columns]({%slug winforms/gridview/columns/generating-columns%})

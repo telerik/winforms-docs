@@ -121,6 +121,5 @@ You can also reset all the zoom settings by calling the **ResetZoom** method.
 # See Also
 
 * [Edit]({%slug radpicturebox-edit%})
-* [Customizing appearance]({%slug radpicturebox-customizing-appearance%})
-* [Context Menu]({%slug radpicturebox-context-menu%})
+* [Context Menu]({%slug context-menu%})
 

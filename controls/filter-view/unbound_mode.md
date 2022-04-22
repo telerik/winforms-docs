@@ -266,7 +266,7 @@ End Class
  
 # See Also
 
-* [Design Time]({%slug filter-view-desing-time%})
+* [Design Time]({%slug filter-view-design-time%})
 * [Structure]({%slug filter-view-structure%})
  
         

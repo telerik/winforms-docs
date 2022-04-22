@@ -113,5 +113,5 @@ Me.RadPictureBox1.PanelOverflowMode = PictureBoxPanelOverflowMode.HorizontalOver
 
 * [Edit]({%slug radpicturebox-edit%})
 * [Pan and Zoom]({%slug radpicturebox-pan-and-zoom%})
-* [Context Menu]({%slug radpicturebox-context-menu%})
+* [Context Menu]({%slug context-menu%})
 

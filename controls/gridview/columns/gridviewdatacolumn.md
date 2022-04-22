@@ -27,7 +27,7 @@ previous_url: gridview-columns-gridviewdatacolumn, /devtools/winforms/gridview/c
 |[GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})|represents Calculator|
 |[GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})|represents Buttons|
 |[GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})|represents File paths|
-|[GridViewSparklineColumn]({%slug winforms/gridview-columntypes-sparklinecolumn%})|represents Sparklines|
+|[GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})|represents Sparklines|
 |[GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})|represents a column whose cells contains comboboxes|
 |[GridViewMaskBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmaskboxcolumn%})|represents a column whose cells contain masked text boxes with String values|
 |[GridViewRatingColumn]({%slug winforms/gridview/columns/column-types/gridviewratingcolumn%})|represents a column that visualizes the cell's value by using a rating element|
@@ -75,7 +75,6 @@ The following table shows the properties that **GridViewDataColumn** offers:
 # See Also
 * [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
 * [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
-* [Overview]({%slug winforms/gridview/columns%})
 * [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
 * [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
 * [Generating Columns]({%slug winforms/gridview/columns/generating-columns%})

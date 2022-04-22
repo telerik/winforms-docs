@@ -70,7 +70,7 @@ You can add these item types to the __CommandBarStripElement__ from the context 
 |CommandBarSeparatorItem|![commandbar-item-types 006](images/commandbar-item-types006.png)|Adds empty space between other elements on a strip element.|
 |CommandBarDropDownButton|![commandbar-item-types 007](images/commandbar-item-types007.png)|Displays a button with a drop-down arrow. Clicking the drop-down arrow displays a menu of choices. Use the Items property to populate the menu. Attach event handlers for individual element events in code to respond to user actions.|
 |CommandBarSplitButton|![commandbar-item-types 008](images/commandbar-item-types008.png)|Displays a button with a drop-down arrow. Clicking the drop-down arrow displays a menu of choices. Clicking the button has the same effect as clicking the default item from the menu.|
-|CommandBarHostItem|![commandbar-item-types 009](images/commandbar-item-types009.png)|Item that can host any RadElement. Use the **HostedItem** property to get/set the element that you are hosting. Please check the example [here]({%slug winforms/knowledge-base/commandbar-hosted-item%}).|
+|CommandBarHostItem|![commandbar-item-types 009](images/commandbar-item-types009.png)|Item that can host any RadElement. Use the **HostedItem** property to get/set the element that you are hosting. Please check the example [here]({%slug host-element-in-commandbar%}).|
 |CommandBarMaskedEditBox|![commandbar-item-types 010](images/commandbar-item-types010.png)|Displays [RadMaskedEditBox]({%slug winforms/editors/maskededitbox%}).|
 
 

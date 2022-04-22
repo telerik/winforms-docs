@@ -100,6 +100,6 @@ Me.radVirtualKeyboard1.MainLayoutPanel.ResetLayout(True)
 
 * [Structure]({%slug winforms-virtual-keyboard-structure%})
 * [Getting Started]({%slug winforms-virtual-keyboard-getting-started%})
-* [Default Layouts]({%slug virtual-keabord-default-layouts%})
+* [Default Layouts]({%slug virtual-keyboard-default-layouts%})
  
         

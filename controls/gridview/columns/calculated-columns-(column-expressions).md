@@ -85,8 +85,6 @@ Refer to the following external resource about further information on the expres
 # See Also
 * [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
 
-* [Overview]({%slug winforms/gridview/columns%})
-
 * [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
 
 * [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})

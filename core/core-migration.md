@@ -1,7 +1,7 @@
 ---
 title: Migrating to .NET Core 
 page_title: Migrating to .NET Core  | NET Core
-description:   
+description: Learn how to migrate to .NET Core.  
 slug: core-migration
 tags: core, getting, started
 published: True
