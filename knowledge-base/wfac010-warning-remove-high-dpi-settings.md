@@ -39,9 +39,9 @@ With the development of the .NET Framework, Microsoft has introduced several cha
 
 In the beginning, this was done in the app.manifest file. During the latest versions of the full framework, this behavior was moved to the App.config. And in the .NET Core, .NET5/6 Microsoft introduced a public API to do this. The public API and the app.manifest do the same thing - declare your app to be DPI aware.
 
-The WFAC010 warning is just stating that you are using the app.manifest file to declare the DPI mode. You can safely ignore it or you can remove the **dpiAware** section from the manifest and use the new API. Removing the noted section from the app.manifest will render your app use the default setting, which is SystemAware. If you want to remove the section from app.manifest, you must use the Application.[SetHighDpiMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.application.sethighdpimode?view=windowsdesktop-6.0) API to set equivalent dpi aware mode.
+The WFAC010 warning is just stating that you are using the app.manifest file to declare the DPI mode. You can safely ignore it or you can remove the **dpiAware** section from the manifest and use the new API. Removing the noted section from the app.manifest will render your app using the default setting, which is SystemAware. If you want to remove the section from app.manifest, you must use the Application.[SetHighDpiMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.application.sethighdpimode?view=windowsdesktop-6.0) API to set equivalent dpi aware mode.
 
-It is recommended using the new API instead of app.manifest with following line:
+It is recommended to use the new API instead of app.manifest with following line:
 
 ````C#  
           
