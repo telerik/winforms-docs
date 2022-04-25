@@ -1,0 +1,66 @@
+---
+title: View Modes
+page_title: View Modes | RadOfficeNavigationBar
+description: Compact and Full view modes control whether the items are visualized by image only or full text in the WinForms OfficeNavigationBar.  
+slug: officenavigationbar-view-modes
+tags: officenavigationbar, view, mode, compact
+published: True
+position: 4
+---
+
+# View Modes
+
+**RadOfficeNavigationBar** offers view modes that indicate whether the items are visualized by image only or full text. This is controlled by the **UseCompactFont** and the **ItemsDisplayStyle** properties.
+
+## Compact
+
+{{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=CompactMode}} 
+{{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=CompactMode}} 
+
+````C#
+
+            this.radOfficeNavigationBar1.UseCompactFont = true;
+            this.radOfficeNavigationBar1.ItemsDisplayStyle = DisplayStyle.Image;
+
+````
+````VB.NET
+
+        Me.radOfficeNavigationBar1.UseCompactFont = True
+        Me.radOfficeNavigationBar1.ItemsDisplayStyle = DisplayStyle.Image
+
+````
+
+{{endregion}} 
+
+![officenavigationbar-view-modes 001](images/officenavigationbar-view-modes001.png)
+
+## Full
+
+{{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=FullMode}} 
+{{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=FullMode}} 
+
+````C#
+
+            this.radOfficeNavigationBar1.UseCompactFont = false;
+            this.radOfficeNavigationBar1.ItemsDisplayStyle = DisplayStyle.ImageAndText;
+
+````
+````VB.NET
+
+        Me.radOfficeNavigationBar1.UseCompactFont = False
+        Me.radOfficeNavigationBar1.ItemsDisplayStyle = DisplayStyle.ImageAndText
+
+````
+
+{{endregion}} 
+
+![officenavigationbar-view-modes 002](images/officenavigationbar-view-modes002.png)
+
+# See Also
+
+* [Structure]({%slug officenavigationbar-structure%})	
+* [Design Time]({%slug officenavigationbar-design-time%})	
+* [Getting Started]({%slug officenavigationbar-getting-started%})	
+
+
+
