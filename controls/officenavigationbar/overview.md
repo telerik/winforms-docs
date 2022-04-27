@@ -25,8 +25,8 @@ CTAControlName: OfficeNavigationBar
 ## Key Features
 
 * [View modes]({%slug officenavigationbar-view-modes%}) - *Compact* and *Full* (expanded) that control whether the items are visualized by image only or full text.
-* [Options button]({%slug slug officenavigationbar-options-button%}) - Allows the user navigate through the hidden items in the navigation bar. 
-* [Navigation Options]({%slug officenavigationbar-navigation-options%}) - The Navigation Options dialog controls the items' order, maximum number of visible items. Allows switching between full (expanded) and compact mode.
+* Overflow item - Allows the user navigate through the hidden items in the navigation bar. 
+* [Navigation Options]({%slug officenavigationbar-options-dialog%}) - The Navigation Options dialog controls the items' order, maximum number of visible items. Allows switching between full (expanded) and compact mode.
 * [Peek Window]({%slug officenavigationbar-peek-window%}) - Shown when the user hovers an item for about 1 second.
 
 # See Also
