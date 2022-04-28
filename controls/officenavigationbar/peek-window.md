@@ -11,7 +11,7 @@ CTAControlName: OfficeNavigationBar
 
 # Peek Window 
 
-RadOfficeNavigationBar provides popup preview option for its RadPageView elements when the mouse is over a them. This functionality is disable by default. To enable it, you can set the __EnablePeekPopup__ property to true.
+RadOfficeNavigationBar provides popup preview option for its elements when the mouse is over a them. This functionality is disable by default. To enable it, you can set the __EnablePeekPopup__ property to true.
 
 ![winforms/officenavigationbar-peek-window 001](images/officenavigationbar-peek-window001.png) 
 
