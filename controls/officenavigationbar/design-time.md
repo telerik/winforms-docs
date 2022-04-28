@@ -5,7 +5,7 @@ description: Get familiar with the design time options that the WinForms OfficeN
 slug: officenavigationbar-design-time
 tags: officenavigationbar
 published: True
-position: 2 
+position: 3
 CTAControlName: OfficeNavigationBar
 ---
 

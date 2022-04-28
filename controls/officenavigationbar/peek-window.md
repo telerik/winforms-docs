@@ -5,7 +5,7 @@ description: Get familiar with the design time options that the WinForms OfficeN
 slug: officenavigationbar-peek-window
 tags: officenavigationbar
 published: True
-position: 2 
+position: 5
 CTAControlName: OfficeNavigationBar
 ---
 

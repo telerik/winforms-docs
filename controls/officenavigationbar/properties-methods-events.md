@@ -5,7 +5,7 @@ description: Get familiar with the public API that WinForms OfficeNavigationBar 
 slug: officenavigationbar-properties-methods-events
 tags: officenavigationbar
 published: True
-position: 4 
+position: 8 
 CTAControlName: OfficeNavigationBar
 ---
 
