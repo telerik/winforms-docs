@@ -5,7 +5,7 @@ description: Get started with the WinForms OfficeNavigationBar and construct you
 slug: officenavigationbar-getting-started
 tags: officenavigationbar
 published: True
-position: 3 
+position: 2
 CTAControlName: OfficeNavigationBar
 ---
 

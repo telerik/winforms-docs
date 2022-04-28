@@ -5,7 +5,7 @@ description: Learn how you can localize the strings used in WinForms OfficeNavig
 slug: officenavigationbar-localization
 tags: localization
 published: True
-position: 10
+position: 9
 ---
 
 # Localization

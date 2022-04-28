@@ -5,7 +5,7 @@ description: OfficeNavigationBarOptionsDialog allows you to adjust the settings 
 slug: officenavigationbar-options-dialog
 tags: officenavigationbar, options, dialog
 published: True
-position: 5
+position: 7
 ---
 
 # Options Dialog

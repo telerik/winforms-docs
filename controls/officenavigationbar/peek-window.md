@@ -5,13 +5,15 @@ description: Get familiar with the design time options that the WinForms OfficeN
 slug: officenavigationbar-peek-window
 tags: officenavigationbar
 published: True
-position: 2 
+position: 5
 CTAControlName: OfficeNavigationBar
 ---
 
 # Peek Window 
 
-RadOfficeNavigationBar provides popup preview option for its RadPageView elements when the mouse is over a them. This functionality is disable by default. To enable it, you can set the __EnablePeekPopup__ property to true. 
+RadOfficeNavigationBar provides popup preview option for its RadPageView elements when the mouse is over a them. This functionality is disable by default. To enable it, you can set the __EnablePeekPopup__ property to true.
+
+![winforms/officenavigationbar-peek-window 001](images/officenavigationbar-peek-window001.png) 
 
 {{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=PeekWindow}} 
 {{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=PeekWindow}} 
@@ -63,6 +65,10 @@ End Sub
 ````
 
 {{endregion}}
+
+In the following image we can see the Peek Window content when it host a custom user control.
+
+![winforms/officenavigationbar-peek-window 001](images/officenavigationbar-peek-window002.png) 
 
 # See Also
 
