@@ -12,7 +12,7 @@ position: 6
 
 **RadCalculator** handles the whole calculation logic by its **StandardCalculatorCalculationBehavior**. It can be accessed by the **CalculationBehavior** property of the control. 
 
-It offers convenient public API that can be used for any customization purposes.
+It offers a convenient public API that can be used for any customization purposes.
 
 ## Custom StandardCalculatorCalculationBehavior
 
