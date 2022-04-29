@@ -50,6 +50,7 @@ CTAControlName: OfficeNavigationBar
 |----|----|
 |**PeekPopupOpening**|Fired when the peek pop-up is about to be shown. In this event you need to populate the content of the peek pop-up, otherwise it will not be displayed.|
 |**PeekPopupClosed**|Fired when the peek pop-up has been closed.|
+|**CreateNavigationOptionsDialog**|Occurs when the NavigationOptionsMenuItem is clicked and the options dialog is about to be opened. Suitable place to customize or replace the navigation options dialog.|
 
 ## RadOfficeNavigationBarElement's Methods
 
