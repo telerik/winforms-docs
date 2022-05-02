@@ -22,14 +22,16 @@ position: 10
 |**SelectionWrap**|Gets or sets whether the pages will be wrapped around when performing selection using the arrow keys. If the property is set to true, pressing the right arrow key when the last page is selected will result in selecting the first page.|
 |**AllowShowFocusCues**|Indicates the focus cues visibility when available, based on the corresponding control type and the current UI state.|
 |**ViewElement.UseMnemonic**|Determines whether ampersand character will be treated as mnemonic or not.|
-
+|**EnablePeekPopup**|Gets or sets a value indicating whether a peek pop-up can be shown when an item is hovered with the mouse. The content of the peek pop-up needs to be set in the __RadPageViewElement.PeekPopupOpening__ event.|
+|**PeekPopup**|Gets the peek pop-up, which is represented by a RadCallout.|
+|**PeekPopupInterval**|Gets or sets the interval needed to show a PeekPopup after a RadPageViewItem is hovered.|
 
 # Methods
 
 |Method|Description|
 |----|----|
 |**EnsurePageVisible**|Ensures that the passed page as an argument will be visible.|
-
+|**ShowPeekPopup**|Shows a peek pop-up over a RadPageViewItem. The content of the peek pop-up needs to be set in the __RadPageViewElement.PeekPopupOpening__ event.|
 
 # Events
 
@@ -59,6 +61,8 @@ position: 10
 |**SelectedPageChanged**|Raised when currently selected page has changed.|
 |**SuspendEvents**|Temporary suspends event raising.|
 |**ResumeEvents**|Resumes event raising, previously suspended by a SuspendEvents call.|
+|**PeekPopupOpening**|Fired when the peek pop-up is about to be shown. In this event you need to populate the content of the peek pop-up, otherwise it will not be displayed.|
+|**PeekPopupClosed**|Fired when the peek pop-up has been closed.|
 
 # See Also
 
