@@ -22,13 +22,6 @@ When decoding a barcode image, the control will either display the type and text
 ![barcodereader 001](images/barcodereader001.png)
 
 The `Open Barcode` button lets the user choose an image path, to the image which will be decoded. The Decode Barcode triggers the decoding algorithm. The underlying text area is updated with the result of the decoding process.
-The RadBarcodeReader exposes the following properties:
-
-* **OpenButtonText**: Gets or sets the string of the open image button
-
-* **DecodeButtonText**: Gets or sets the string of the decode image button
-
-* **ResultText**: Gets the decoded from the image string.
 
 The complete example is available in the Demo application >> BarcodeReader example.
 
