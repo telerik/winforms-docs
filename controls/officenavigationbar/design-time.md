@@ -11,7 +11,7 @@ CTAControlName: OfficeNavigationBar
 
 # Design Time 
 
-To start using **RadOfficeNavigationBar**, just drag it from the toolbox and drop it onto the form. It will be placed in the components tray.
+To start using **RadOfficeNavigationBar**, just drag it from the toolbox and drop it onto the form. 
 
 ## Smart Tag 
 
@@ -19,7 +19,7 @@ Select **RadOfficeNavigationBar** and click the small arrow on the top right pos
 
 ![winforms/officenavigationbar-design-time 001](images/officenavigationbar-design-time001.png) 
 
-* **Common Tasks**
+**Common Tasks**
 
 * __New Theme Manager__: Adds a new RadThemeManager component to the form.
 
@@ -27,7 +27,7 @@ Select **RadOfficeNavigationBar** and click the small arrow on the top right pos
 
 * __Theme Name__: Select a theme name from the drop-down list of themes available for that control. Selecting a theme allows you to change all aspects of the control visual style at one time.
 	
-* **Common PageView Tasks**
+**Common PageView Tasks**
 
 * __Item Size Mode__: Determines whether the items should have equal size. The supported modes are *EqualHeight, EqualWidth, EqualSize* and *Individual*.
 
@@ -39,7 +39,7 @@ Select **RadOfficeNavigationBar** and click the small arrow on the top right pos
 
 * __Default Page__: Specifies the default page in **RadOfficeNavigationBar**.
 	
-### Addding Pages
+### Adding Pages
 
 To add/remove a page, we can click on the Add Page/Remove Page buttons.
 
@@ -51,13 +51,13 @@ To add/remove a page, we can click on the Add Page/Remove Page buttons.
 
 ### Customize a Page
 
-From the Properties window in Visual Studio, we can navigate to the Pages collection property. Then clicking on the button on its right side, we could further customize the elements inside the collection.
+From the Properties window in Visual Studio, we can navigate to the Pages collection property. Then clicking on the button on its right side, we can further customize the elements inside the collection.
 
 ![winforms/officenavigationbar-design-time 001](images/officenavigationbar-design-time002.png) 
 
 ### Customize RadOfficeNavigationBar
 
-Using the settings inside the Office Navigation Bar Tasks we could further customize the control.
+Using the settings inside the **Office Navigation Bar Tasks** section in the smart tag, we can further customize the control.
 
 * __Use Compact Font__: Specifies whether to use compact or large font for the items in **RadOfficeNavigationBar**.
 
