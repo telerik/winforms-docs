@@ -11,7 +11,7 @@ CTAControlName: PageView
 
 # Peek Window 
 
-RadPageView provides popup preview option for its elements when the mouse is over a them. This functionality is disable by default. To enable it, you can set the __EnablePeekPopup__ property to true.
+RadPageView provides popup preview option for its elements when the mouse is over a them. This functionality is disabled by default. To enable it, you can set the __EnablePeekPopup__ property to true.
 
 ![winforms/pageview-peek-window 001](images/pageview-peek-window001.png) 
 
