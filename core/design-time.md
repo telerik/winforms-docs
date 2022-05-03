@@ -75,16 +75,26 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 
 ## Tips and Tricks
 
-Note that the design-time assemblies are resolved from the installed NuGet packages by the new Microsoft SDK which is part of Visual Studio. It is recommended to close all the opened designers when you are about to install or update our NuGets. The same is also true when rebuilding the project. Please have in mind that if you have a designer opened and you rebuild the project, this will kill the .NET Core process hosting the design server, ultimately this will lead to restarting the design surface by starting a new server process. If your form has a complex desginer this may slow down Visual Studio so you may consider closing the designers before rebuilding the application. 
+Note that the design-time assemblies are resolved from the installed NuGet packages by the new Microsoft SDK which is part of Visual Studio. It is recommended to close all the opened designers when you are about to install or update our NuGets. The same is also true when rebuilding the project. Please have in mind that if you have a designer opened and you rebuild the project, this will kill the .NET Core process hosting the design server, ultimately this will lead to restarting the design surface by starting a new server process. If your form has a complex designer this may slow down Visual Studio so you may consider closing the designers before rebuilding the application. 
 
 >important The new architecture is described in more details in our [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5) blog.
 >
 
-## What's coming next 
-
-* Custom glyphs
-* Embedded in the designer editors
-
+<br>
+>important As of **R2 2022** we have support for:
+>
+* RadItem glyphs
+* RadItem action lists
+* RadItem context menus
+* RadItem default event generation
+* Inline editing
+* Menus and drop-downs
+* Form conversion
+* F1 help integration
+* Layout control, Rotator and Carousel implementations
+>
+Now, we have a feature parity with the .NET Framework designer. It is highly recommended using Visual Studio 2022.
+>
 
 # See Also
 * [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5)
