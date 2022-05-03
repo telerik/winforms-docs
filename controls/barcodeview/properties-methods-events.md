@@ -17,7 +17,7 @@ position: 2
 |**Value**|Gets or sets the value that will be converted into a barcode.|
 |**Symbology**|Gets or sets the symbology that will be used to convert the value of this element into a visual barcode representation.|
 
-# RadBarcodeElement's Properties
+# RadBarcodeViewElement's Properties
 
 |Property|Description|
 |----|----|

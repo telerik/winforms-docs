@@ -12,6 +12,21 @@ position: 1
 
 Telerik UI for WinForms supports the Visual Studio .NET Core WinForms designer. All of the Telerik designers are migrated and the controls are populated in the toolbox. We have special control designers, action lists, property builders and editors achieving a design time experience similar to the one seen on the full .NET framework. 
 
+>important As of **R2 2022** we have support for:
+>
+* RadItem glyphs
+* RadItem action lists
+* RadItem context menus
+* RadItem default event generation
+* Inline editing
+* Menus and drop-downs
+* Form conversion
+* F1 help integration
+* Layout control, Rotator and Carousel implementations
+>
+Now, we have a feature parity with the .NET Framework designer. It is highly recommended using Visual Studio 2022.
+
+<br>
 >caption Figure 1: RadGridView .NET Core Designer
 
 ![core-designer001](images/core-designer001.png)
@@ -80,21 +95,7 @@ Note that the design-time assemblies are resolved from the installed NuGet packa
 >important The new architecture is described in more details in our [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5) blog.
 >
 
-<br>
->important As of **R2 2022** we have support for:
->
-* RadItem glyphs
-* RadItem action lists
-* RadItem context menus
-* RadItem default event generation
-* Inline editing
-* Menus and drop-downs
-* Form conversion
-* F1 help integration
-* Layout control, Rotator and Carousel implementations
->
-Now, we have a feature parity with the .NET Framework designer. It is highly recommended using Visual Studio 2022.
->
+
 
 # See Also
 * [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5)

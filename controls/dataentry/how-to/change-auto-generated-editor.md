@@ -20,6 +20,7 @@ By default __RadDataEntry__ generates several different editors according to the
 |Color|RadColorBox|
 |Image|PictureBox|
 |string|RadTextBox|
+|Byte, SByte, UInt16, UInt32, UInt64, Int16, Int32, Int64, Single, Double, Decimal|RadSpinEditor|
 
 >note For any type that is not represented in this table  __RadDataEntry__  generates  __RadTextBox__ .
 
