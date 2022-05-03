@@ -11,7 +11,7 @@ CTAControlName: PageView
 
 # Peek Window 
 
-RadPageView provides popup preview option for its elements when the mouse is over a them. This functionality is disabled by default. To enable it, you can set the __EnablePeekPopup__ property to true.
+RadPageView provides popup preview option for its elements when the mouse is over them. This functionality is disabled by default. To enable it, you can set the __EnablePeekPopup__ property to true.
 
 ![winforms/pageview-peek-window 001](images/pageview-peek-window001.png) 
 
@@ -34,7 +34,7 @@ Me.radPageView1.EnablePeekPopup = True
 
 To set a content for each peek window, we can use the __PeekPopupOpening__ event. In the event handler, we have access to the current hovered RadPageViewItem and depending on it, we can set the __Page.PeekPopupContent__ property. This property is of type __Control__. 
 
->The Peek Window will take the size of its content. This need to be consider while using UserControl as a content of the Peek Window.
+>The Peek Window will take the size of its content. This needs to be considered while using UserControl as a content of the Peek Window.
 
 {{source=..\SamplesCS\PageView\PeekWindow.cs region=PeekWindowEvent_PageView}} 
 {{source=..\SamplesVB\PageView\PeekWindow.vb region=PeekWindowEvent_PageView}} 
@@ -66,7 +66,7 @@ End Sub
 
 {{endregion}}
 
-In the following image we can see the Peek Window content when it host a custom user control.
+In the following image we can see the Peek Window content when it hosts a custom user control.
 
 ![winforms/pageview-peek-window 001](images/pageview-peek-window002.png) 
 
