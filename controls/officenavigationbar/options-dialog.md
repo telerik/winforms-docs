@@ -16,7 +16,7 @@ The **OfficeNavigationBarOptionsDialog** is shown when the user clicks the **Nav
 
 ![officenavigationbar-options-dialog 001](images/officenavigationbar-options-dialog001.png)
 
-The **ShowNavigationOptionsMenuItem** property indicates whether to show the navigation options menu item when context menu is opened.
+The **ShowNavigationOptionsMenuItem** property indicates whether to show the navigation options menu item when the context menu is opened.
 
 >caption NavigationOptionsMenuItem
 

@@ -11,7 +11,7 @@ CTAControlName: OfficeNavigationBar
 
 # Properties, Methods and Events for RadStepProgressBar
 
-## RadOfficeNavigationBar Properties  
+## RadOfficeNavigationBar's Properties  
 
 |Property|Description|
 |----|----|

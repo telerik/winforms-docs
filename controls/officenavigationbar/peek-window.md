@@ -11,7 +11,7 @@ CTAControlName: OfficeNavigationBar
 
 # Peek Window 
 
-RadOfficeNavigationBar provides popup preview option for its elements when the mouse is over a them. This functionality is disable by default. To enable it, you can set the __EnablePeekPopup__ property to true.
+RadOfficeNavigationBar provides popup preview option for its elements when the mouse is over a them. This functionality is disabled by default. To enable it, you can set the __EnablePeekPopup__ property to true.
 
 ![winforms/officenavigationbar-peek-window 001](images/officenavigationbar-peek-window001.png) 
 
@@ -34,7 +34,7 @@ Me.radOfficeNavigationBar1.OfficeNavigationBarElement.EnablePeekPopup = True
 
 To set a content for each peek window, we can use the __PeekPopupOpening__ event. In the event handler, we have access to the current hovered RadPageViewItem and depending on it, we can set the __Page.PeekPopupContent__ property. This property is of type __Control__.
 
->The Peek Window will take the size of its content. This need to be consider while using UserControl as a content of the Peek Window.
+>The Peek Window will take the size of its content. This needs to be considered while using UserControl as a content of the Peek Window.
 
 {{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=PeekWindowEvent}} 
 {{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=PeekWindowEvent}} 
@@ -66,7 +66,7 @@ End Sub
 
 {{endregion}}
 
-In the following image we can see the Peek Window content when it host a custom user control.
+In the following image we can see the Peek Window content when it hosts a custom user control.
 
 ![winforms/officenavigationbar-peek-window 001](images/officenavigationbar-peek-window002.png) 
 
