@@ -93,7 +93,7 @@ Note that the design-time assemblies are resolved from the installed NuGet packa
 * F1 help integration
 * Layout control, Rotator and Carousel implementations
 >
-Now, we have a feature parity with the .NET Framework designer.
+Now, we have a feature parity with the .NET Framework designer. It is highly recommended using Visual Studio 2022.
 >
 
 # See Also
