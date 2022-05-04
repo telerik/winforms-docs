@@ -49,3 +49,5 @@ Me.RadGridView1.MasterView.TableFilteringRow.Cells(0).BeginEdit()
 
 * [Setting Filters Programmatically (composite descriptors)]({%slug winforms/gridview/filtering/setting-filters-programmatically-(composite-descriptors)%})
 
+* [How to Indicate RadTextBoxEditor in Grid Filter Cells]({%slug indicate-textboxeditor-in-grid-filter-cell%})
+
