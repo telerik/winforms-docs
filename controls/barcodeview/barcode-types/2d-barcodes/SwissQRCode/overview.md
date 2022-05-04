@@ -30,8 +30,9 @@ To generate a Swiss Barcode using Telerik UI for WinForms, you need to first set
 
 #### Example 1: Setting the SwissQRCode symbology
 
-{{source=..\SamplesCS\BarcodeViewGettingStarted.cs region=SetSwissQRCode}} 
-{{source=..\SamplesVB\BarcodeViewGettingStarted.vb region=SetSwissQRCode}}
+
+{{source=..\SamplesCS\BarcodeView\BarcodeViewGettingStarted.cs region=SetSwissQRCode}} 
+{{source=..\SamplesVB\BarcodeView\BarcodeViewGettingStarted.vb region=SetSwissQRCode}}
 
 
 ````C#
@@ -73,8 +74,8 @@ The Swiss QR code standard mandates that the input provided for the generation o
 
 #### Example 2: Creating the SwissQRCodeValueStringBuilder
 
-{{source=..\SamplesCS\BarcodeViewGettingStarted.cs region=SwissQRCodeValueStringBuilder}} 
-{{source=..\SamplesVB\BarcodeViewGettingStarted.vb region=SwissQRCodeValueStringBuilder}}
+{{source=..\SamplesCS\BarcodeView\BarcodeViewGettingStarted.cs region=SwissQRCodeValueStringBuilder}} 
+{{source=..\SamplesVB\BarcodeView\BarcodeViewGettingStarted.vb region=SwissQRCodeValueStringBuilder}}
 
 ````C#
 
@@ -113,8 +114,8 @@ Once you've set up the **SwissQRCodeValueStringBuilder** you can call its **Vali
 
 #### Example 3: Validate and build barcode value
 
-{{source=..\SamplesCS\BarcodeViewGettingStarted.cs region=ValidateSwissQR}} 
-{{source=..\SamplesVB\BarcodeViewGettingStarted.vb region=ValidateSwissQR}}
+{{source=..\SamplesCS\BarcodeView\BarcodeViewGettingStarted.cs region=ValidateSwissQR}} 
+{{source=..\SamplesVB\BarcodeView\BarcodeViewGettingStarted.vb region=ValidateSwissQR}}
 
 ````C#
 
