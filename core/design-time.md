@@ -86,7 +86,7 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 >note The toolbox is populated from the UI controls added to the referenced NuGet package/s.  
 >
 
->important As the *AllControls* package contains all UI controls it should not be mixed with other packages containing the same UI controls.
+>important As the *AllControls* package contains all UI controls and themes it should not be installed in projects having other packages containing the UI controls (e.g. *UI.for.WinForms.Common* etc.) or the *UI.for.WinForms.Themes* package. Either use the *AllControls* package or the packages of the separate controls and the themes.
 
 ## Tips and Tricks
 
