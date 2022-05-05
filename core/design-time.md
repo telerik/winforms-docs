@@ -102,3 +102,4 @@ Note that the design-time assemblies are resolved from the installed NuGet packa
 * [Migrating to .NET Core]({%slug core-migration%})
 * [.NET Core Project Converter]({%slug net-core-project-converter%})
 * [Windows Forms Designer for .NET Core Released](https://devblogs.microsoft.com/dotnet/windows-forms-designer-for-net-core-released/)
+* [How to Handle NETSDK1141 Error]({%slug netsdk1141-error%})
