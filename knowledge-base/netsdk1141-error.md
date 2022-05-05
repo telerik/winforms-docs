@@ -34,6 +34,8 @@ There are cases in which it may not be possible to build the project due to the 
 More information about it is available here:
 [NETSDK1141: Unable to resolve the .NET SDK version as specified in the global.json](https://docs.microsoft.com/en-us/dotnet/core/tools/sdk-errors/netsdk1141?f1url=%3FappId%3DDev16IDEF1%26l%3DEN-US%26k%3Dk(NETSDK1141)%26rd%3Dtrue)
 
+>note Have in mind that this is one of the possible errors that may occur due to the same reason, the global.json. file.
+
 This error occurs if there is a **global.json** file inside of some parent folder which refers a different sdk version, for example:
 
 ![netsdk1141-error 004](images/netsdk1141-error004.png)
