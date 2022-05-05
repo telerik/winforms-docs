@@ -176,7 +176,7 @@ End Class
 
 {{endregion}} 
 
-1. RadRibbonBar API doesn't provide a way to replace the RadRibbonBarElement object. That is why we will use reflection to replace the default RadRibbonBarElement class with a custom one.
+1. The final step is to replace the default __RadRibbonBarElement__ object with the custom one created above. 
 
 ````C#
 
@@ -201,18 +201,16 @@ public class CustomRadRibbonBar : RadRibbonBar
         }
     }
 
-    protected override void CreateChildItems(RadElement parent)
-    {
-        this.RootElement.Name = this.Name;
-        this.RootElement.Children.Clear();
-
-        FieldInfo fi = typeof(RadRibbonBar).GetField("ribbonBarElement", BindingFlags.Instance | BindingFlags.NonPublic);
-
-        this.customRibbonBarElement = new CustomRadRibbonBarElement();
-        fi.SetValue(this, this.customRibbonBarElement);
-
-        this.RootElement.Children.Add(this.customRibbonBarElement);
-    }
+    protected override RadRibbonBarElement CreateRibbonBarElement()
+	{
+		customRibbonBarElement = new CustomRadRibbonBarElement();
+		return customRibbonBarElement;
+	}
+	
+	protected override void CreateChildItems(RadElement parent)
+	{
+		base.CreateChildItems(parent);
+	}
 
     public Image Watermark
     {
@@ -244,13 +242,13 @@ Public Class CustomRadRibbonBar
         End Get
     End Property
 
+    Protected Overrides Function CreateRibbonBarElement() As RadRibbonBarElement
+        customRibbonBarElement = New CustomRadRibbonBarElement()
+        Return customRibbonBarElement
+    End Function
+
     Protected Overrides Sub CreateChildItems(ByVal parent As RadElement)
-        Me.RootElement.Name = Me.Name
-        Me.RootElement.Children.Clear()
-        Dim fi As FieldInfo = GetType(RadRibbonBar).GetField("ribbonBarElement", BindingFlags.Instance Or BindingFlags.NonPublic)
-        Me.customRibbonBarElement = New CustomRadRibbonBarElement()
-        fi.SetValue(Me, Me.customRibbonBarElement)
-        Me.RootElement.Children.Add(Me.customRibbonBarElement)
+        MyBase.CreateChildItems(parent)
     End Sub
 
     Public Property Watermark As Image
