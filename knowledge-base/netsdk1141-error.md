@@ -65,4 +65,5 @@ Thus, the project rebuild will be successful:
 2\. Move the **global.json** file from the parent folder to another destination together with the projects that depend on this file.
 
 # See Also
+
 * [NET Core Design Time]({%slug core-design-time%})
