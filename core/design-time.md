@@ -98,6 +98,7 @@ Note that the design-time assemblies are resolved from the installed NuGet packa
 
 
 # See Also
+
 * [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5)
 * [Migrating to .NET Core]({%slug core-migration%})
 * [.NET Core Project Converter]({%slug net-core-project-converter%})
