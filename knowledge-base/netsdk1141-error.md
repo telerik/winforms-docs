@@ -42,7 +42,7 @@ More information about it is available here:
 * [NuGet Error NU1105](https://docs.microsoft.com/en-us/nuget/reference/errors-and-warnings/nu1105?f1url=%3FappId%3DDev16IDEF1%26l%3DEN-US%26k%3Dk(NU1105)%26rd%3Dtrue)
 
 
->note Have in mind that these are one of the possible errors that may occur due to the same reason, the global.json. file.
+>note Have in mind that these are some of the possible errors that may occur due to the same reason, the global.json. file.
 
 All of these errors are due to a mismatch between the target framework and the specified SDK version. They may occur if there is a **global.json** file inside of some parent folder which refers a different sdk version, for example:
 
