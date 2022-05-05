@@ -1,8 +1,8 @@
 ---
-title: How to Handle NETSDK1141 Error
+title: How to Handle Build Errors After Using a Telerik WinForms .NET Core Template
 description: NETSDK1141: Unable to resolve the .NET SDK version as specified in the global.json.
 type: how-to 
-page_title: How to Handle NETSDK1141 Error
+page_title: How to Handle Build Errors After Using a Telerik WinForms .NET Core Template
 slug: netsdk1141-error
 position: 39
 tags: net, sdk, build, project
