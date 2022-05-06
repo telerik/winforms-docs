@@ -65,3 +65,7 @@ Invoking the **OpenFileDialog** method will open the find dialog with the specif
 
 - **void OpenFindDialog(string searchText)**
 - **void CloseFindDialog()**
+
+# See Also
+
+* [How to Customize the Highlight Style for the Found Results in SyntaxEditor]({%slug customize-highlight-style-for-found-results-in-syntaxeditor%}) 
