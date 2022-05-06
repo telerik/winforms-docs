@@ -219,3 +219,4 @@ End Sub
 * [Editing Graphical View]({%slug winforms/ganttview-/editing/editing-graphical-view%})
 * [Editing Text View]({%slug winforms/ganttview-/editing/editing-text-view%})
 * [Working Hours in GanttView]({%slug working-hours-in-ganttview%})
+* [How to Build a Truck System with Custom Task Elements in GanttView]({%slug truck-system-with-custom-items-in-ganttview%})
