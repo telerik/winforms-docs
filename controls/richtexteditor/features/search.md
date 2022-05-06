@@ -162,3 +162,6 @@ End Sub
 
 There is a need to create new __TextRanges__ with document positions that track the changes to the document, because the deletion and  insertion affects the document positions. The document positions created using the 2-parameter constructor with the second parameter set to "*true*" keep their relative position as the document changes. They, however, have to be manually disposed of, as they subscribe to events in order to track the changes to the document and must detach their handlers at the end of their use. This is done using the __Dispose__ method. If you skip that step, there will be memory leaks in your application.
         
+# See Also
+
+* [How to Search and Highlight Text in RichTextEditor]({%slug rte-highligh-search-text%})

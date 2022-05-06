@@ -250,8 +250,10 @@ Loop While position.MoveToNextWordStart()
 
 # See Also
 
- * [Positioning]({%slug winforms/richtexteditor-/features/positioning%})
+* [Positioning]({%slug winforms/richtexteditor-/features/positioning%})
 
- * [History]({%slug winforms/richtexteditor-/features/history%})
+* [History]({%slug winforms/richtexteditor-/features/history%})
 
- * [Clipboard Support]({%slug winforms/richtexteditor-/features/clipboard-support%})
+* [Clipboard Support]({%slug winforms/richtexteditor-/features/clipboard-support%})
+
+* [How to Search and Highlight Text in RichTextEditor]({%slug rte-highligh-search-text%})
