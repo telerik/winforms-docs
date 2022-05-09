@@ -75,3 +75,4 @@ End Sub
 
 * [Find and Replace]({%slug syntax-editor-features-finad-and-replace%})
 * [How to Achieve Underline Text in RadSyntaxEditor]({%slug underline-text-in-syntax-editor%})
+* []({%slug multiple-highlight-rules%})
