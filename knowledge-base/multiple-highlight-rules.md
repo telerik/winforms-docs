@@ -247,4 +247,4 @@ End Sub
 
 * [Find and Replace]({%slug syntax-editor-features-finad-and-replace%})
 * [How to Achieve Underline Text in RadSyntaxEditor]({%slug underline-text-in-syntax-editor%})
-* []({%slug customize-highlight-style-for-found-results-in-syntaxeditor%})
+* [How to Customize the Highlight Style for the Found Results in SyntaxEditor]({%slug customize-highlight-style-for-found-results-in-syntaxeditor%})
