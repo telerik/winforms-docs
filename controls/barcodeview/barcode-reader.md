@@ -32,7 +32,7 @@ The complete example is available in the Demo application >> BarcodeReader examp
 
 ````C#
 
-BarcodeType barcodeType = Telerik.WinControls.UI.Barcode.Reader.BarcodeType.Code39Extended;
+BarcodeType barcodeType = Telerik.WinControls.UI.Barcode.Reader.BarcodeType.Code93Extended;
 Bitmap bitmap = new Bitmap(Properties.Resources.barcode_reader);
 RadBarcodeReader reader = new Telerik.WinControls.UI.Barcode.RadBarcodeReader();
 var decodeResult = reader.Decode(bitmap, barcodeType);
@@ -44,7 +44,7 @@ if (decodeResult != null && decodeResult != DecodeResult.Empty)
 ````
 ````VB.NET
 
-Dim barcodeType As BarcodeType = Telerik.WinControls.UI.Barcode.Reader.BarcodeType.Code39Extended
+Dim barcodeType As BarcodeType = Telerik.WinControls.UI.Barcode.Reader.BarcodeType.Code93Extended
 Dim bitmap As Bitmap = New Bitmap(My.Resources.barcode_reader)
 Dim reader As RadBarcodeReader = New Telerik.WinControls.UI.Barcode.RadBarcodeReader()
 Dim decodeResult = reader.Decode(bitmap, barcodeType)
@@ -57,23 +57,20 @@ End If
 
 {{endregion}} 
 
+>caution When decoding a barcode image, the image should contain only the barcode itself, no additional text to be present in that image. 
+
 ## Decoded Types
 
 In some scenarios, to improve performance, you may want to specify the types of barcodes the reader will try to decode rather than have it iterate over all the available types.
 
-This can also be useful to avoid conflicts between symbologies whose symbols may overlap, for example, **Code39** and **Code39Extended**.
+This can also be useful to avoid conflicts between symbologies whose symbols may overlap, for example, **Code93** and **Code93Extended**.
 
 For the purpose, you can use the **BarcodeType** argument of the **RadBarcodeReader**'s **Decode** and **DecodeAll** methods. It is a flags enumeration which holds the following types:
 
-* **Code11**
+* **None**
 * **Code128**
-* **Code25Interleaved**
-* **Code25Standard**
-* **Code39**
-* **Code39Extended**
 * **Code93**
 * **Code93Extended**
-* **Codebar**
 * **CodeMSI**
 * **EAN13**
 * **EAN128**
@@ -85,17 +82,12 @@ For the purpose, you can use the **BarcodeType** argument of the **RadBarcodeRea
 * **UPCE**
 * **UPCSupplement2**
 * **UPCSupplement5**
-* **QR**
-* **PDF417**
-* **DataMatrix**
 
 In addition, the following values can also be set:
 
-* **All**: Decode all barcode types. This is the default value.
 * **OneDimensional**: All 1D barcodes.
-* **WidthModulated1D**: All width-modulated 1D barcodes (39/93 Extended included).
+* **WidthModulated1D**: All width-modulated 1D barcodes (93 Extended included).
 * **HeightModulated1D**: All height-modulated 1D barcodes.
-* **TwoDimensional**: All 2D barcodes.
 
 # See Also
 
