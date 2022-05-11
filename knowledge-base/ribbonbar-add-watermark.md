@@ -176,7 +176,7 @@ End Class
 
 {{endregion}} 
 
-1. The final step is to replace the default __RadRibbonBarElement__ object with the custom one created above. 
+2. The final step is to replace the default __RadRibbonBarElement__ object with the custom one created above. 
 
 ````C#
 
