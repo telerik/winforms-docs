@@ -190,3 +190,5 @@ The __EditorType__ allows you to easily change the editor type. It could be set 
 
 * [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
 
+* [How to Show DateTime Values Stored in a UNIX Format with Filtering Still Working in RadGridView]({%slug gridview-datetimecolumn-unix-format%})
+
