@@ -14,7 +14,7 @@ Telerik UI for WinForms suite gives your Windows Forms applications a new power 
 
 In **R2 2017** we introduced built-in HDPI support in the Telerik UI for WinForms suite. This coincides with the HDPI improvements [Microsoft is bringing with .NET 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/) and the *Windows 10 Creators Update*. The best part is that you will get this support no matter which .NET framework you are targeting (currently supported from .NET 2.0 and up).
 
->important With **R2 2022** we have introduced some improvements in the HDPI scalling in Telerik UI for WinForms suite. [Read More](#scale-improvements)
+>important With **R2 2022** we have introduced some improvements in the HDPI scalling in Telerik UI for WinForms suite. [Read More](#hdpi-scale-improvements)
 
 All you will have to do is to declare your application as DPI aware and all RadControls will scale their UI elements in accordance to the current DPI settings automatically. To do that, you have to add an **app.manifest** file and/or an **app.config** file with several lines of code. You can see examples of that in our blog post on the [High DPI in WinForms](http://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-) matter. We will look into the technical details further down this article.
 
