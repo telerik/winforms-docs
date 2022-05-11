@@ -1,5 +1,5 @@
 ---
-title: Add watermark to RadRibbonBar.
+title: Add watermark to RadRibbonBar
 description: This article shows how you can watermark the RadRibbonBar.
 type: troubleshooting
 page_title: How to add watermark to RadRibbonBar control.
