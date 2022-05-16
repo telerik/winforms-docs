@@ -84,3 +84,4 @@ The speed is an integer between 1 and 10 (slowest) with default value 8.
 * [Structure]({%slug winforms/editors/textbox/control-element-structure%})
 * [Adding Buttons to RadTextBox]({%slug winforms/editors/textbox/adding-buttons-to-radtextbox%})
 * [Show Embedded Label for RadDropDownList]({%slug drop-down-list-embedded-label%})
+* [How to Add Custom ContextMenu for RadTextBox]({%slug custom-contextmenu-for-radtextbox%})
