@@ -41,6 +41,4 @@ You can force all the pages to be loaded when initializing the form by making ea
 
 ````
 
-# See Also
 
-* [RadGridViewDragDropService]({%slug winforms/gridview/radgridviewdragdropservice%})
