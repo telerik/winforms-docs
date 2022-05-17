@@ -81,11 +81,8 @@ There are no Outlook view related properties in the Action Menu of **RadPageView
 ![](images/pageview-design-time005.png)
 
 * __Strip Alignment__: Determines the position of the tab items in **RadPageView** in relation to the content area. It can be *Top*, *Left*, *Bottom* or *Right*.
-
 * __Item Alignment__: Determines the alignment of items within the strip layout.
-
 * __Item Fit Mode__: Determines the fit mode of the items. The available modes are *None*, *Fill*, *Shrink* and *ShrinkAndFill*.
-
 * __Item Area Width__: Gets or sets the width of the items area.
 
 >caution In order to switch from one Action Menu to another, you should first close the menu by clicking on the **Smart Tag** and then reopen it again.
@@ -104,4 +101,18 @@ There are no Outlook view related properties in the Action Menu of **RadPageView
 * __Compact Mode Threshold Width__: This property determines when the DisplayMode will be switched from Compact to Minimal. The DisplayMode should be set to Auto in order this to work.
 * __Expanded Mode Threshold Width__:This property determines when the DisplayMode will be switched from Expanded to Compact. The DisplayMode should be set to Auto in order this to work.
 
+## OfficeNavigationBar
+
+![winforms/officenavigationbar-design-time 001](images/officenavigationbar-design-time001.png) 
+
+* __New Theme Manager__: Adds a new RadThemeManager component to the form.
+* __Edit UI elements__: Opens a dialog that displays the Element Hierarchy Editor. This editor lets you browse all the elements in the control.
+* __Theme Name__: Select a theme name from the drop-down list of themes available for that control. Selecting a theme allows you to change all aspects of the control visual style at one time.
+* __Item Size Mode__: Determines whether the items should have equal size. The supported modes are *EqualHeight, EqualWidth, EqualSize* and *Individual*.
+* __Item Drag Mode__: Determines the drag mode of the items. The supported modes are *Preview* and *Immediate*.
+* __Item Content Orientation__: Determines the orientation of the item content (image, text, and buttons' panel). The supported orientations are *Auto*, *Horizontal*, *Horizontal180*, *Vertical90* and *Vertical270*.
+* __Item Spacing__: Determines the spacing between the items in pixels.
+* __Default Page__: Specifies the default page in **RadOfficeNavigationBar**.
+* __Add Page__: Clicking on this link will add a new page to RadOfficeNavigationBar.**Pages** collection.
+* __Remove Page__: Clicking on this will remove the currently selected page in **RadOfficeNavigationBar**.
 

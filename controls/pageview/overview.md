@@ -38,6 +38,8 @@ Here are some of the key **RadPageView**'s aspects:
 
 * Myriad of features in *Strip View* mode such as animated scrolling, items fit mode, items alignment, item size mode plus much more.
 
+* Different View Modes to optiomize your layout: [StripView]({%slug winforms/pageview/stripview/getting-started%}), [OutlookView]({%slug winforms/pageview/outlookview%}), [ExplorerBarView]({%slug winforms/pageview/explorerbarview%}), [StackView]({%slug winforms/pageview/stackview%}), [BackstageView]({%slug winforms/pageview/getting-started%}), [OfficeNavigationBarView]({%slug pageview-officenavigationbar%}), [NavigationView]({%slug winforms/pageview/navigationview%})
+
 * Pixel-perfect look and feel.
 
 * Polished and intuitive design-time support.
