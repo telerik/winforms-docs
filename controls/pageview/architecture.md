@@ -29,6 +29,7 @@ Currently, we ship the following modes of this control which implement different
 * *Explorer Mode*: designed to display multiple visible pages at once.
 * *Backstage Mode*: designed after the Office 2010 backstage mode.
 * *Navigation Mode*: designed to change the strip width depending of the available space. 
+* *OfficeNavigationBar Mode*: designed to mimic MS Outlook 2013-2019 navigation style.
 
 The following tables show the internal elements hierarchy and structure of **RadPageView** considering the view mode:
 
@@ -42,6 +43,7 @@ The following tables show the internal elements hierarchy and structure of **Rad
 |**ExplorerBar**|![pageview-architecture005](images/pageview-architecture005.png)|
 |**Backstage**|![pageview-architecture006](images/pageview-architecture006.png)|
 |**NavigationView**|![pageview-architecture013](images/pageview-architecture013.png)|
+|**OfficeNavigationBar**|![pageview-architecture013](images/officenavigationbar-structure002.png)|
 
 >caption Structure
 
@@ -53,6 +55,7 @@ The following tables show the internal elements hierarchy and structure of **Rad
 |**ExplorerBar**|![pageview-architecture010](images/pageview-architecture010.png)|
 |**Backstage**|![pageview-architecture011](images/pageview-architecture011.png)|
 |**NavigationView**|![pageview-architecture012](images/pageview-architecture012.png)|
+|**OfficeNavigationBar**|![pageview-architecture013](images/officenavigationbar-structure001.png)|
 
 # See Also
 
