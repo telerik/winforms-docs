@@ -2,7 +2,7 @@
 title: How to Drag File Names from RadGridView and Drop Them to Windows Explorer
 description: Learn how to drag file names from RadGridView and drop them to Windows Explorer.
 type: how-to 
-page_title: How to Drag File Names from RadGridView and Drop Them to Windows Explorer
+page_title: How to Drag File Names from RadGridView and Drop Them into Windows Explorer
 slug: drag-file-names-from-grid-drop-to-windows-explorer
 position: 39
 tags: grid, drag, drop, file, explorer
