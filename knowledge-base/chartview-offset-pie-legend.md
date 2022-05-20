@@ -14,7 +14,7 @@ res_type: kb
 ## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2022.2.511|RadChartView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2022.2.510|RadChartView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 
 ## Description
