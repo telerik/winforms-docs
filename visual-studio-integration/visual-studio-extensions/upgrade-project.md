@@ -58,3 +58,5 @@ Notes:
 * [Automatic Dependency Resolving]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-dependency-resolving%})
 
 * [Download New Version]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})
+
+* [How to Upgrade a Telerik UI for WinForms Project]({%slug how-to-upgrade-a-project%})

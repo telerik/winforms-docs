@@ -40,3 +40,4 @@ Now, you are ready to build and run your project with the downloaded version fro
 
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
 * [Latest Internal Builds]({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%})
+* [How to Upgrade a Telerik UI for WinForms Project]({%slug how-to-upgrade-a-project%})
