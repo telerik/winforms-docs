@@ -64,7 +64,7 @@ In addition to the pure assembly reference change, the upgrade wizard provides s
 
 * Check if a new version of Telerik UI for WinForms is available on the Telerik website.
 
-* Download of a newly discovered version.
+* Download a newly discovered version.
 
 * Visual Studio toolbox update.
 
