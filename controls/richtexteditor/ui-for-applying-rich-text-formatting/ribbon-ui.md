@@ -33,4 +33,5 @@ You can automatically add a **RadRichTextEditorRibbonUI** by using the __RadRich
 
 # See Also
 
- * [Localization]({%slug winforms/richtexteditor/localization%})
+* [Localization]({%slug winforms/richtexteditor/localization%})
+* [Custom Save Button in RichTextEditorRibbonBar]({%slug richtext-ribbon-ui-custom-save%})
