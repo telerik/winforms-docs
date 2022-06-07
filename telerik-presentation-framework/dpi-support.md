@@ -152,7 +152,7 @@ The call must be done at the application entry point. If you have used a manifes
 
 ## HDPI Scale Improvements
 
-With the **R2 2022** we have added some improvements to how our controls are scaled in their parent Forms/RadForms. The following improvements are listed below.
+With the **R2 2022** we have added some improvements to how our controls are scaled in their parent Forms/RadForms. The introduced improvements are listed below.
 
 > These new functionalities are controlled by the static __RadControl.EnableRadAutoScale__ property. In a case, you want to disable these improvements you can set it false.
 

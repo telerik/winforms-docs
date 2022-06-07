@@ -21,6 +21,8 @@ To connect to a web cam manually, execute the following steps:
 3. Initialize the camera device in the control. To do this, use the **Initialize** method of the **RadWebCam** control.
 4. Start the web cam control. To do this, use the **Start** method of the control.
 
+>note The manual initialization of RadWebCam should be executed after the control gets loaded. For example, you can use the form's Load event.
+
 {{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=SelectDevice}} 
 {{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=SelectDevice}} 
 
