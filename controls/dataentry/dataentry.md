@@ -32,6 +32,10 @@ __RadDataEntry__ control generates various editors depending on the type of prop
 
 * __PictureBox__ for Image.
 
+> With the R2 2022 SP1 version of our control, a __RadSpinEditor__ control will be used as the default editor for all numeric types.
+
+* __RadSpinEditor__ for numeric properties.
+
 In addition __RadDataEntry__ allows manual setting and customization of editors and their layouts via the standard for windows forms practices. It is highly customizable, allowing the user to modify the default look in easy and intuitive manner.
 
 >caption Figure 1: RadDataEntry

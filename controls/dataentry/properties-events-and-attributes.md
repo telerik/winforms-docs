@@ -142,12 +142,12 @@ Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
 
 ````C#
 this.radDataEntry1.ColumnCount = 2;
-this.radDataEntry1.FlowDirection = FlowDirection.TopDown;
+this.radDataEntry1.FlowDirection = FlowDirection.BottomUp;
 
 ````
 ````VB.NET
 Me.radDataEntry1.ColumnCount = 2
-Me.radDataEntry1.FlowDirection = FlowDirection.TopDown
+Me.radDataEntry1.FlowDirection = FlowDirection.BottomUp
 
 ````
 
@@ -201,7 +201,7 @@ Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
 
 ![dataentry-properties-events-and-attributes 007](images/dataentry-properties-events-and-attributes007.png)
 
-* In __RadDataEntry__ control there is logic that arranges the labels of the editors in one column according to the longest text. This logic can be controlled by the __AutoSizeLabels__ property. By default the property value is false and the labels width will equals the longest label width. If you set this property to true, the labels will be sized according to their content, as shown on the following figure: 
+* In __RadDataEntry__ control there is logic that arranges the labels of the editors in one column according to the longest text. This logic can be controlled by the __AutoSizeLabels__ property. By default the property value is __false__ and the labels width will equals the longest label width. If you set this property to __true__, the labels will be sized according to their content, as shown on the following figure: 
 
 #### Set The AutoSizeLabels Property.
 
@@ -209,11 +209,11 @@ Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
 {{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ResizeLabels}} 
 
 ````C#
-this.radDataEntry1.AutoSizeLabels = false;
+this.radDataEntry1.AutoSizeLabels = true;
 
 ````
 ````VB.NET
-Me.radDataEntry1.AutoSizeLabels = False
+Me.radDataEntry1.AutoSizeLabels = True
 
 ````
 
