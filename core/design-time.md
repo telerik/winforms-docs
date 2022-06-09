@@ -12,7 +12,7 @@ position: 1
 
 Telerik UI for WinForms supports the Visual Studio .NET Core WinForms designer. All of the Telerik designers are migrated and the controls are populated in the toolbox. We have special control designers, action lists, property builders and editors achieving a design time experience similar to the one seen on the full .NET framework. 
 
->important As of **R2 2022** we have support for:
+>important In **R2 2022** we added support for:
 >
 * RadItem glyphs
 * RadItem action lists
@@ -55,7 +55,7 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 
 |Telerik NuGet Version|Visual Studio Version|
 |----|----|
-|Hotfix v2022.2.510|VS2022: v17.1.+; v17.3.0 Preview 1; VS2019: v16.11.+|
+|R2 2022 v2022.2.510|VS2022: v17.1.+; v17.3.0 Preview 1; VS2019: v16.11.+|
 |Hotfix v2022.1.329-hotfix|VS2022: v17.0.+; v17.2.0 Preview 2; VS2019: v16.11.+|
 |Hotfix v2022.1.322-hotfix|VS2022: v17.0.+; v17.2.0 Preview 2; VS2019: v16.11.+|
 |R1 2022 SP1 v2022.1.222|VS2022 v17.0.+; VS2019 v16.11.+|
