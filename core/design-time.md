@@ -53,6 +53,8 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 >important Our designers target a specific version of the WinForms Designer SDK and this SDK is also inserted into Visual Studio. Sometimes there might be breaking changes in the WinForms Designer SDK and as it is part of Visual Studio itself this will break our designers. As things are dynamically changing one needs to pay attention of the Telerik NuGet version and the Visual Studio version. The table below is a mapping between the Telerik and the Visual Studio versions.
 >
 
+>note The latest **Telerik UI for WinForms** NuGets should be supported in the latest VS2022 and VS2019 releases. Below is a compatiblity table with our previous versions and a matching Visual Studio release. As it is not needed anymore, this table will no longer be updated.
+
 |Telerik NuGet Version|Visual Studio Version|
 |----|----|
 |R2 2022 v2022.2.510|VS2022: v17.1.+; v17.3.0 Preview 1; VS2019: v16.11.+|
@@ -95,8 +97,6 @@ Note that the design-time assemblies are resolved from the installed NuGet packa
 
 >important The new architecture is described in more details in our [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5) blog.
 >
-
-
 
 # See Also
 
