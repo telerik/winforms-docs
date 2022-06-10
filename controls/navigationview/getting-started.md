@@ -33,6 +33,7 @@ Now, each page has an associated content area (on the right) where the developer
 # See Also
 
 * [Navigation View]({%slug winforms/pageview/navigationview%})	 
+* [Structure]({%slug navigationview-structure%})
 
 
 

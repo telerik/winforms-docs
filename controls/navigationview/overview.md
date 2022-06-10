@@ -37,6 +37,7 @@ As of **R2 2022 SP1** Telerik UI for WinForms suite offers a standalone **RadNav
 
 * [Navigation View]({%slug winforms/pageview/navigationview%})	 
 * [Getting Started]({%slug navigationview-getting-started%})
+* [Structure]({%slug navigationview-structure%})
 
 
 
