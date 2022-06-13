@@ -29,3 +29,4 @@ Detailed information about the views is available here: [Display Modes]({%slug w
 # See Also
 * [Getting Started]({%slug winforms/pageview/navigationview-getting-started%})
 * [Properties]({%slug winforms/pageview/navigationview-properties%})
+* [RadNavigationView]({%slug navigationview-overview%})

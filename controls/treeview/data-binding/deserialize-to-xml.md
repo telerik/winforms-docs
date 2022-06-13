@@ -22,6 +22,7 @@ TreeView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http:/
 
 >important As of R2 2021 we are using the XmlReader class to read the XML content before loading it in the control. If you are using the LoadXml method and pass a file path to load the layout from a file, make sure that the document is properly encoded. If you are using the overload with the memory stream, make sure that you are writing the stream with the correct encoding. In case you are not sure what encoding to use, you can specify Encoding.Unicode.
 
+>important As of R2 2022 SP1 a new static property is introduced. It determines whether to use InvariantCulture when serializing and deserializing the tree nodes: XmlTreeNode.**UseInvariantCulture** = true. By default, the property is set to true. 
 
 The contents of the saved XML file contain the properties for the RadTreeView as a whole and each of the nodes in the tree.
 
