@@ -652,3 +652,4 @@ Private m_TotalLungCapacity As Double
 * [RadPropertyStore - Adding Custom Properties]({%slug winforms/propertygrid/populating-with-data/radpropertystore-adding-custom-properties%})
 * [Attributes]({%slug winforms/propertygrid/attributes%})
 * [How to Show Nested Collections in RadPropertyGrid]({%slug show-nested-collections-in-propertygrid%})
+* [How to Specify Displayed Enum Values in RadPropertyGrid]({%slug specify-displayed-enum-values-in-propertygrid%})
