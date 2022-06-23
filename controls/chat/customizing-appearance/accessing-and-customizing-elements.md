@@ -207,5 +207,6 @@ End Sub
 * [Structure]({%slug winforms/chat/structure%})
 * [Getting Started]({%slug winforms/chat/getting-started%})
 * [Toolbar]({%slug winforms/chat/toolbar%})
+* [How to Format the Time Separator in RadChat]({%slug format-chat-time-separator%})
  
         
