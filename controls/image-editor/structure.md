@@ -36,3 +36,4 @@ This article shows the ImageEditor structure and elements hierarchy.
 
 * [Getting Started]({%slug radimageeditor-getting-started%})
 * [Properties and Events]({%slug radimageeditor-properties-and-events%})
+* [How to Add Custom Buttons to RadImageEditor]({%slug custom-buttons-in-imageeditor%})
