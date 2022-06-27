@@ -90,6 +90,32 @@ End Sub
 >
 
 
+## Word Wrapping
+
+To enable wrapping text of the nodes in RadTreeView, you can set the __TextWrap__ property of the visual node element in the __NodeFormatting__ event handler.
+
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\NodeFormatting.cs region=nodeFormatting}} 
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}}
+````C#
+        
+void radTreeView_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
+{
+    e.NodeElement.ContentElement.TextWrap = true;
+}
+
+````
+````VB.NET
+
+Private Sub radTreeView_NodeFormatting(ByVal sender As Object, ByVal e As TreeNodeFormattingEventArgs)
+    e.NodeElement.ContentElement.TextWrap = True
+End Sub
+
+
+````
+
+
+{{endregion}} 
+
 # See Also
 * [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})
 
