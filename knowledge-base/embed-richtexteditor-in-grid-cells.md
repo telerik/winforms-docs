@@ -20,7 +20,7 @@ res_type: kb
 
 A common requirement is to display and edit HTML text in RadGridView. RadGridView offers [rich text formatting]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}) mechanism that uses plain HTML tags to display formatted text such as font style, font color, font size, etc. This can be used to display plain HTML in the grid cells. However, it is also necessary to provide a convenient editing mechanism for this HTML. This article demonstrates a sample approach how to embed a [RadRichTextEditor]({%slug winforms/richtexteditor%}) in each cell in RadGridView.
 
->caution Note that RadRichTextEditor is a heavy control due its diversity of supported features. Since RadRichTextEditor can't work as an element, it should be hosted as a control in a RadHostItem. Thus, it can be used inside the custom cell element. Note that since this approach uses controls (instead of elements), some visual glitches are possible as controls does not support clipping. In addition, if you are having a lot of rows, performance implications may occur for the same reason.
+>caution Note that RadRichTextEditor is a heavy control due to its diversity of supported features. Since RadRichTextEditor can't work as an element, it should be hosted as a control in a RadHostItem. Thus, it can be used inside the custom cell element. Note that since this approach uses controls (instead of elements), some visual glitches are possible as controls do not support clipping. In addition, if you are having a lot of rows, performance implications may occur for the same reason.
 >
 
 >caption Display and Edit rich text
