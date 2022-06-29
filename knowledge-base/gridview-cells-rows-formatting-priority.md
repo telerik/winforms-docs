@@ -13,13 +13,13 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2022.1.222|RadGridView for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
+|2022.2.622|RadGridView for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
 
 
 ## Description
 
 All controls built on top of the [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) have default style coming from the applied [theme]({%slug winforms/themes/using-default-themes%}).
-Note that the different themes offer different design which can be achieved by applying different style settings of the respective inner elements. Hence, when applying one set of style settings programmatically, it may work for one theme but it may not work the same way for another theme. 
+Note that the different themes offer a different design which can be achieved by applying different style settings of the respective inner elements. Hence, when applying one set of style settings programmatically, it may work for one theme but it may not work the same way for another theme. 
 
 Since RadGridView offers different ways for styling the row and cell elements, this article gives more information about the priority order of the different styling approaches.
 
