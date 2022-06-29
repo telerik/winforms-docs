@@ -181,5 +181,6 @@ End Sub
 * [Getting Started]({%slug stepprogressbar-getting-started%})
 * [Design Time]({%slug stepprogressbar-design-time%}) 
 * [Structure]({%slug stepprogressbar-structure%}) 
+* [How to Add Callout for StepProgressBar]({%slug callout-for-stepprogresbar%})
  
         
