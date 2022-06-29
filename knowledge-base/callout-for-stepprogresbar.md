@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-By default, RadStepProgressBar offers [tooltips]({%slug stepprogressbar-features-tooltip%}). However, it may be required to display a more detailed information for the different steps. This article demonstrates a sample approach how to achieve it.
+By default, RadStepProgressBar offers [tooltips]({%slug stepprogressbar-features-tooltip%}). However, it may be required to display more detailed information for the different steps. This article demonstrates a sample approach to how to achieve it.
 
 ## Solution 
 
