@@ -76,32 +76,21 @@ public partial class RadForm1 : Telerik.WinControls.UI.RadForm
     }
 
     private void RadCheckedListBox1_ItemCheckedChanged(object sender, Telerik.WinControls.UI.ListViewItemEventArgs e)
-    {
-        if (e.Item.CheckState == Telerik.WinControls.Enumerations.ToggleState.Off)
-        {
-            this.visibleColumns.Remove(e.Item.Text);
-            foreach (VirtualGridRowElement rowElement in
-                this.radVirtualGrid1.VirtualGridElement.TableElement.GetDescendants(delegate (RadElement x) { return x is VirtualGridRowElement; }, TreeTraversalMode.BreadthFirst))
-            {
-                rowElement.CellContainer.Children.Clear();
-            }
-        }
-        else
-        {
-            this.visibleColumns.Add(e.Item.Text);
-            this.visibleColumns.Sort(new ColumnNamesComparer(this.columnNames));
-        }
+	{
+		if (e.Item.CheckState == Telerik.WinControls.Enumerations.ToggleState.Off)
+		{
+			this.visibleColumns.Remove(e.Item.Text);
+			this.radVirtualGrid1.ColumnCount = 0;
+			this.radVirtualGrid1.ColumnCount = this.visibleColumns.Count;
+		}
+		else
+		{
+			this.visibleColumns.Add(e.Item.Text);
+			this.visibleColumns.Sort(new ColumnNamesComparer(this.columnNames));
+		}
 
-        if (!visibleColumns.Contains("Column 3"))
-        {
-            radVirtualGrid1.ColumnCount = 0;
-            radVirtualGrid1.ColumnCount = this.visibleColumns.Count;
-
-        }
-
-        radVirtualGrid1.ColumnCount = this.visibleColumns.Count;
-
-    }
+		radVirtualGrid1.ColumnCount = this.visibleColumns.Count;
+	}
 
     static DataTable GetTable()
     {
@@ -186,24 +175,17 @@ Partial Public Class RadForm1
     End Sub
 
     Private Sub RadCheckedListBox1_ItemCheckedChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemEventArgs)
-        If e.Item.CheckState = Telerik.WinControls.Enumerations.ToggleState.Off Then
-            Me.visibleColumns.Remove(e.Item.Text)
+		If e.Item.CheckState = Telerik.WinControls.Enumerations.ToggleState.Off Then
+			Me.visibleColumns.Remove(e.Item.Text)
+			Me.radVirtualGrid1.ColumnCount = 0
+			Me.radVirtualGrid1.ColumnCount = Me.visibleColumns.Count
+		Else
+			Me.visibleColumns.Add(e.Item.Text)
+			Me.visibleColumns.Sort(New ColumnNamesComparer(Me.columnNames))
+		End If
 
-            For Each rowElement As VirtualGridRowElement In Me.radVirtualGrid1.VirtualGridElement.TableElement.GetDescendants(Function(ByVal x As RadElement) TypeOf x Is VirtualGridRowElement, TreeTraversalMode.BreadthFirst)
-                rowElement.CellContainer.Children.Clear()
-            Next
-        Else
-            Me.visibleColumns.Add(e.Item.Text)
-            Me.visibleColumns.Sort(New ColumnNamesComparer(Me.columnNames))
-        End If
-
-        If Not visibleColumns.Contains("Column 3") Then
-            radVirtualGrid1.ColumnCount = 0
-            radVirtualGrid1.ColumnCount = Me.visibleColumns.Count
-        End If
-
-        radVirtualGrid1.ColumnCount = Me.visibleColumns.Count
-    End Sub
+		radVirtualGrid1.ColumnCount = Me.visibleColumns.Count
+	End Sub
 
     Private Shared Function GetTable() As DataTable
         Dim table As DataTable = New DataTable()
