@@ -626,3 +626,5 @@ End Sub
 
 * [How to Display and Edit HTML Text in GridView Cells]({%slug display-and-edit-html-text-in-grid-cells%})
 
+* [Build Custom GridView Cells with Stacked Elements]({%slug custom-grid-cells-with-stacked-elements%})
+
