@@ -118,3 +118,5 @@ End Sub
 ````
 
 {{endregion}} 
+
+>note The __RadListControl.FilterExpression__ property value resembles a SQL expression.

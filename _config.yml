@@ -904,6 +904,9 @@ navigation:
     controls/multicolumncombobox/how-to:
         title: How-To
         position: 9	
+    controls/navigationview:
+        title: NavigationView
+        position: 303
     controls/officenavigationbar:
         title: OfficeNavigationBar
         position: 305
@@ -1792,6 +1795,7 @@ intro_columns:
       "ContextMenu": "winforms/menus/contextmenu/context-menus"
       "Menu": "winforms/menus/menu"
       "PageView": "winforms/pageview"
+      "NavigationView": "navigationview-overview"     
       "OfficeNavigationBar": "officenavigationbar-overview"
       "Panorama": "winforms/panorama"
       "RibbonBar": "winforms/ribbonbar"

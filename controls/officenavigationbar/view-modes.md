@@ -1,6 +1,6 @@
 ---
-title: View Modes
-page_title: View Modes | RadOfficeNavigationBar
+title: Item Display Modes
+page_title: Item Display Modes | RadOfficeNavigationBar
 description: Compact and Full view modes control whether the items are visualized by image only or full text in the WinForms OfficeNavigationBar.  
 slug: officenavigationbar-view-modes
 tags: officenavigationbar, view, mode, compact
@@ -8,9 +8,9 @@ published: True
 position: 4
 ---
 
-# View Modes
+# Item Display Modes
 
-**RadOfficeNavigationBar** offers view modes that indicate whether the items are visualized by image only or full text. This is controlled by the **UseCompactFont** and the **ItemsDisplayStyle** properties.
+**RadOfficeNavigationBar** offers item display modes that indicate whether the items are visualized by image only or full text. This is controlled by the **UseCompactFont** and the **ItemsDisplayStyle** properties.
 
 ## Compact
 

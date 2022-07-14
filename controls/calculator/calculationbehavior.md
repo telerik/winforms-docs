@@ -16,9 +16,9 @@ It offers a convenient public API that can be used for any customization purpose
 
 ## Custom StandardCalculatorCalculationBehavior
 
-1\. Create a derivative of the **StandardCalculatorCalculationBehavior** class and override the **OnButtonMouseUp** and **OnButtonMouseUp** methods where it is possible to control what button action to be executed. 
+1\. Create a derivative of the **StandardCalculatorCalculationBehavior** class and override the **OnButtonMouseUp** and **OnButtonKeyDown** methods where it is possible to control what button action to be executed. 
 
-2\. Restrict all memory commands considering the passed CalculatorButtonType.
+2\. Restrict all memory commands considering the passed CalculatorButtonType. In addition to this, Keys.NumPad5 is also forbidden by the keyboard:
 
 {{source=..\SamplesCS\Calculator\CalculatorGettingStarted.cs region=Behavior}} 
 {{source=..\SamplesVB\Calculator\CalculatorGettingStarted.vb region=Behavior}} 

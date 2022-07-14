@@ -12,7 +12,7 @@ position: 1
 
 Telerik UI for WinForms supports the Visual Studio .NET Core WinForms designer. All of the Telerik designers are migrated and the controls are populated in the toolbox. We have special control designers, action lists, property builders and editors achieving a design time experience similar to the one seen on the full .NET framework. 
 
->important As of **R2 2022** we have support for:
+>important In **R2 2022** we added support for:
 >
 * RadItem glyphs
 * RadItem action lists
@@ -53,10 +53,13 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 >important Our designers target a specific version of the WinForms Designer SDK and this SDK is also inserted into Visual Studio. Sometimes there might be breaking changes in the WinForms Designer SDK and as it is part of Visual Studio itself this will break our designers. As things are dynamically changing one needs to pay attention of the Telerik NuGet version and the Visual Studio version. The table below is a mapping between the Telerik and the Visual Studio versions.
 >
 
+>note The latest **Telerik UI for WinForms** NuGets should be supported in the latest VS2022 and VS2019 releases. Below is a compatiblity table with our previous versions and a matching Visual Studio release. As it is not needed anymore, this table will no longer be updated.
+
 |Telerik NuGet Version|Visual Studio Version|
 |----|----|
-|Hotfix v2022.1.329-hotfix|VS2022: v17.0.+; v17.2.0 Preview 2; VS2019: v16.11.+;|
-|Hotfix v2022.1.322-hotfix|VS2022: v17.0.+; v17.2.0 Preview 2; VS2019: v16.11.+;|
+|R2 2022 v2022.2.510|VS2022: v17.1.+; v17.3.0 Preview 1; VS2019: v16.11.+|
+|Hotfix v2022.1.329-hotfix|VS2022: v17.0.+; v17.2.0 Preview 2; VS2019: v16.11.+|
+|Hotfix v2022.1.322-hotfix|VS2022: v17.0.+; v17.2.0 Preview 2; VS2019: v16.11.+|
 |R1 2022 SP1 v2022.1.222|VS2022 v17.0.+; VS2019 v16.11.+|
 |R1 2022 v2022.1.118|VS2022 v17.0.+; VS2019 v16.11.+|
 |Hotfix v2021.3.1213-hotfix|VS2022: v17.0.+; v17.1.0 Preview 1.1; VS2019: v16.11.+; v16.11.7 Preview 1.0|
@@ -86,7 +89,7 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 >note The toolbox is populated from the UI controls added to the referenced NuGet package/s.  
 >
 
->important As the *AllControls* package contains all UI controls it should not be mixed with other packages containing the same UI controls.
+>important As the *AllControls* package contains all UI controls and themes it should not be installed in projects having other packages containing the UI controls (e.g. *UI.for.WinForms.Common* etc.) or the *UI.for.WinForms.Themes* package. Either use the *AllControls* package or the packages of the separate controls and the themes.
 
 ## Tips and Tricks
 
@@ -95,10 +98,10 @@ Note that the design-time assemblies are resolved from the installed NuGet packa
 >important The new architecture is described in more details in our [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5) blog.
 >
 
-
-
 # See Also
+
 * [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5)
 * [Migrating to .NET Core]({%slug core-migration%})
 * [.NET Core Project Converter]({%slug net-core-project-converter%})
 * [Windows Forms Designer for .NET Core Released](https://devblogs.microsoft.com/dotnet/windows-forms-designer-for-net-core-released/)
+* [How to Handle NETSDK1141 Error]({%slug netsdk1141-error%})

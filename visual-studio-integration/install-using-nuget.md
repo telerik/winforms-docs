@@ -69,3 +69,4 @@ You need to add the Telerik package server (**https://nuget.telerik.com/v3/index
 # See Also
 
 * [Installing On Your Computer]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%})
+* [How to Upgrade a Telerik UI for WinForms Project]({%slug how-to-upgrade-a-project%})

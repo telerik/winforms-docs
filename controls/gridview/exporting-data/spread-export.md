@@ -174,7 +174,7 @@ End Using
 
     - *CurrentPageOnly*: The exporter will export only the data on the current page.
 
-    - *AllPAges*: The exporter will export the data from all pages.
+    - *AllPages*: The exporter will export the data from all pages.
 
 * __SummariesExportOption:__ Allows to specify how to export summary items. There are four options to choose:
 

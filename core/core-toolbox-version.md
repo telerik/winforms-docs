@@ -22,7 +22,7 @@ The Toolbox version depends on the installed NuGet package:
 
 ![core-toolbox-version001](images/core-toolbox-version001.png)
 
-If you want to get another version in the Toolbox, it is necessary to:
+For example, if you have the UI.for.WinForms.AllControls.NetCore and you want to get another version in the Toolbox, it is necessary to:
 
 1\. Remove the current version of the **UI.for.WinForms.AllControls.NetCore** package:
 
@@ -34,6 +34,7 @@ If you want to get another version in the Toolbox, it is necessary to:
 
 3\. Rebuild the project.
 
+>note The same approach is also valid for the other Telerik UI for WinForms packages, e.g. UI.for.WinForms.AllControls.Net60, UI.for.WinForms.Common, etc.
 
 # See Also
 

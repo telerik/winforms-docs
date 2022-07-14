@@ -232,3 +232,4 @@ End Class
 # See Also
 
 * [Creating custom cells]({%slug winforms/gridview/cells/creating-custom-cells%})
+* [How to Embed RadRichTextEditor in GridView Cells]({%slug embed-richtexteditor-in-grid-cells%})

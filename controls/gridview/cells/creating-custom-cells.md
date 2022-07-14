@@ -626,5 +626,8 @@ End Sub
 
 * [How to Display and Edit HTML Text in GridView Cells]({%slug display-and-edit-html-text-in-grid-cells%})
 
-* [Build Custom GridView Cells with Stacked Elements]({%slug custom-grid-cells-with-stacked-elements%})
+* [How to Indicate RadTextBoxEditor in Grid Filter Cells]({%slug indicate-textboxeditor-in-grid-filter-cell%})
 
+* [How to Embed RadRichTextEditor in GridView Cells]({%slug embed-richtexteditor-in-grid-cells%})
+
+* [Build Custom GridView Cells with Stacked Elements]({%slug custom-grid-cells-with-stacked-elements%})

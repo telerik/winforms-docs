@@ -14,6 +14,8 @@ Telerik UI for WinForms suite gives your Windows Forms applications a new power 
 
 In **R2 2017** we introduced built-in HDPI support in the Telerik UI for WinForms suite. This coincides with the HDPI improvements [Microsoft is bringing with .NET 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/) and the *Windows 10 Creators Update*. The best part is that you will get this support no matter which .NET framework you are targeting (currently supported from .NET 2.0 and up).
 
+>important With **R2 2022** we have introduced some improvements in the HDPI scalling in Telerik UI for WinForms suite. [Read More](#hdpi-scale-improvements)
+
 All you will have to do is to declare your application as DPI aware and all RadControls will scale their UI elements in accordance to the current DPI settings automatically. To do that, you have to add an **app.manifest** file and/or an **app.config** file with several lines of code. You can see examples of that in our blog post on the [High DPI in WinForms](http://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-) matter. We will look into the technical details further down this article.
 
 With the changes we have introduced, the common problem of bad scaling when your applications run on high resolution monitors goes away. So, your app will ship with higher quality on more systems instantly. The problem with the blurry fonts and unreadable texts will be eliminated and the potential of modern hardware will be utilized fully.
@@ -147,6 +149,18 @@ With .NET Core 3.0 Microsoft introduced a new way to set a high DPI mode for Win
 * DpiUnawareGdiScaled
 
 The call must be done at the application entry point. If you have used a manifest file to set the DPI awareness mode, this method call will fail.
+
+## HDPI Scale Improvements
+
+With the **R2 2022** we have added some improvements to how our controls are scaled in their parent Forms/RadForms. The introduced improvements are listed below.
+
+> These new functionalities are controlled by the static __RadControl.EnableRadAutoScale__ property. In a case, you want to disable these improvements you can set it false.
+
+* RadControl is dynamically scaled now when it is added runtime.
+* RadControl is scaled correctly in a __System.Windows.Forms.Form__.
+* RadControl is scaled correctly in an UserControl.
+* Scaling works in all .NET versions and DPI Awareness modes combinations except in .Net4 Framework. In this version, the scaling will not work in Microsoft Form.
+* Fixed various DPI-related scaling issues. 
 
 # See Also 
 * [WinForms Scaling at Large DPI Settings–Is It Even Possible?](http://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-)

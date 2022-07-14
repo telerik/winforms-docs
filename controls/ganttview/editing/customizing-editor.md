@@ -41,6 +41,43 @@ End Sub
 
 {{endregion}} 
 
+## Mask Editor
+
+The following sample demonstrates how to change the default font of a __GanttViewDateTimeEditor__ in RadGanttView and apply __MaskDateTimeProvider__ with a custom format for time:
+
+{{source=..\SamplesCS\GanttView\Editing\CustomizingEditor.cs region=CustomizingEditor_Mask}} 
+{{source=..\SamplesVB\GanttView\Editing\CustomizingEditor.vb region=CustomizingEditor_Mask}} 
+
+````C#
+
+private void GanttViewElement_MaskEditorInitialized(object sender, GanttViewItemEditorInitializedEventArgs e)
+{
+    GanttViewDateTimeEditor dtEditor = e.Editor as GanttViewDateTimeEditor;
+    if (dtEditor != null)
+    {
+        dtEditor.CustomFormat = "hh/mm/ss";
+        MaskDateTimeProvider dtprovider = ((BaseDateTimeEditorElement)dtEditor.EditorElement).TextBoxElement.Provider as MaskDateTimeProvider;
+        dtprovider.AutoSelectNextPart = true;
+    }
+}
+
+````
+````VB.NET
+
+Private Sub GanttViewElement_MaskEditorInitialized(ByVal sender As Object, ByVal e As GanttViewItemEditorInitializedEventArgs)
+    Dim dtEditor As GanttViewDateTimeEditor = TryCast(e.Editor, GanttViewDateTimeEditor)
+
+    If dtEditor IsNot Nothing Then
+        dtEditor.CustomFormat = "hh/mm/ss"
+        Dim dtprovider As MaskDateTimeProvider = TryCast((CType(dtEditor.EditorElement, BaseDateTimeEditorElement)).TextBoxElement.Provider, MaskDateTimeProvider)
+        dtprovider.AutoSelectNextPart = True
+    End If
+End Sub
+
+````
+
+{{endregion}} 
+
 # See Also
 
 * [Creating custom editor]({%slug winforms/ganttview-/editing/creating-custom-editor%})

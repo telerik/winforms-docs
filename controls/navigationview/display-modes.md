@@ -2,7 +2,7 @@
 title: Display Modes
 page_title: Display Modes | Navigation View
 description: The navigation view control provides a collapsible navigation pane that helps implement the hamburger menu pattern and automatically adapts the pane's display mode to different control sizes.
-slug: winforms/pageview/navigationview/displaymode
+slug: navigationview-displaymode
 tags: navigation, view, hamburger
 published: True
 position: 4
@@ -38,5 +38,5 @@ With this mode both the icons and the text of the items is displayed. The pane c
 
 
 # See Also
-* [Getting Started]({%slug winforms/pageview/navigationview-getting-started%})
-* [Properties]({%slug winforms/pageview/navigationview-properties%})
+* [Getting Started]({%slug navigationview-getting-started%})
+* [Properties]({%slug navigationview-properties-methods-events%})

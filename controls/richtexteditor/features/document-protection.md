@@ -236,6 +236,25 @@ Me.radRichTextEditor1.InsertPermissionRange(infos)
 {{endregion}} 
 
 This code will insert a permission range around the current selection in the document. The type of the permission is *Individual* - meaning that only the **CurrentUser** will be able to edit the region.
+
+To change the highlight color of the permission range, we can use the __EnforcedPermissionRangeBrush__ property.
+
+{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=color_permissions}} 
+{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=color_permissions}}
+
+````C#
+
+this.radRichTextEditor1.RichTextBoxElement.EnforcedPermissionRangeBrush = new SolidBrush(System.Drawing.Color.Red);
+
+
+````
+````VB.NET
+
+Me.radRichTextEditor1.RichTextBoxElement.EnforcedPermissionRangeBrush = New SolidBrush(System.Drawing.Color.Red)
+
+
+````
+
         
 # See Also
 

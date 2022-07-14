@@ -263,6 +263,40 @@ End Sub
 
 ![dataentry-overview-change-auto-generated-editor 002](images/dataentry-overview-change-auto-generated-editor002.png) 
 
+## RadSpinEditor Default Values
+
+The spin editor is created with the default settings for __Minimum/Maximum, DecimalPlaces, and Step__. If a case, you are using fractional numbers, the decimal part will be lost so we need to change the above properties. You can do that in the __EditorInitializing__.
+
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=SpinEditorDefaultValues}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=SpinEditorDefaultValues}} 
+
+````C#
+void radDataEntry_EditorInitializing(object sender, EditorInitializingEventArgs e)
+{
+  var spinEditor = e.Editor as RadSpinEditor;
+
+  if (spinEditor == null)
+    return;
+
+  spinEditor.Step = 0.01m;
+  spinEditor.DecimalPlaces = 2;
+  spinEditor.Maximum = Decimal.MaxValue;
+}
+
+````
+````VB.NET
+Private Sub radDataEntry_EditorInitializing(ByVal sender As Object, ByVal e As EditorInitializingEventArgs)
+    Dim spinEditor = TryCast(e.Editor, RadSpinEditor)
+    If spinEditor Is Nothing Then Return
+    spinEditor.[Step] = 0.01D
+    spinEditor.DecimalPlaces = 2
+    spinEditor.Maximum = Decimal.MaxValue
+End Sub
+
+````
+
+{{endregion}}
+
 # See Also
 
  * [Structure]({%slug  winforms/dataentry/control-element-structure%})
@@ -270,3 +304,4 @@ End Sub
  * [Properties, events and attributes]({%slug  winforms/dataentry/properties,-events-and-attributes%})
  * [Themes]({%slug winforms/dataentry/themes%})
  * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})
+ * [How to Use RadSpinEditor for Nullable Numeric Fields in RadDataEntry]({%slug dataentry-nullable-fields%})

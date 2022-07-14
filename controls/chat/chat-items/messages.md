@@ -331,5 +331,6 @@ End Sub
 * [Cards]({%slug winforms/chat/chat-items/cards%})
 * [Getting Started]({%slug winforms/chat/getting-started%})
 * [Reversed Order of Chat Messages]({%slug chat-messages-in-reversed-order%})
+* [How to Format the Time Separator in RadChat]({%slug format-chat-time-separator%})
  
         

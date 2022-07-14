@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-**RadImageEditor** supports Tiff images. However, support for multi-page Tiff images is not available at the moment. The following tutorial demonstrates a sample approach how achieve it.
+**RadImageEditor** supports Tiff images. However, support for multi-page Tiff images is not available at the moment. The following tutorial demonstrates a sample approach how to achieve it.
 
 ![edit-multi-page-tiff-image 001](images/edit-multi-page-tiff-image001.gif)
 
@@ -172,5 +172,4 @@ End Class
 A complete C# and VB.NET projects are available [here](https://github.com/telerik/winforms-sdk/tree/master/ImageEditor/RadImageEditorMultiPageTiff).
 
 # See Also
-
 * [RadImageEditor - Getting Started]({%slug radimageeditor-getting-started%})

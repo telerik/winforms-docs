@@ -1,7 +1,7 @@
 ---
 title: Hierarchy Support
 page_title: Hierarchy Support | Navigation View
-description: Navigation View offered by RadPageView supports defining nested pages to build hierarchy.
+description: RadNavigationView supports defining nested pages to build hierarchy.
 slug: navigation-view-hierarchy-support
 tags: navigation, view, hierarchy, nested
 published: True
@@ -10,7 +10,7 @@ position: 6
 
 # Hierarchy Support
 
-Navigation View offered by RadPageView allows you to define sub-items in order to achieve hierarchical menu visualization.
+**RadNavigationView** allows you to define sub-items in order to achieve hierarchical menu visualization.
 
 Each **RadPageViewPage** element has a **SubPages** collection that can be populated with RadPageViewPage items, thus allowing multiple levels of items to be defined in the hierarchy.
 
@@ -24,6 +24,7 @@ Each **RadPageViewPage** element has a **SubPages** collection that can be popul
 {{source=..\SamplesVB\PageView\NavigationView.vb region=Hierarchy}} 
 
 ````C#
+
 RadPageViewPage inboxPage = new RadPageViewPage("Inbox");
 RadPageViewPage radPageViewPage2 = new RadPageViewPage("LinkedIn");
 RadPageViewPage radPageViewPage3 = new RadPageViewPage("Twitter");
@@ -48,14 +49,13 @@ inboxPage.SubPages.Add(radPageViewPage6);
 importantPage.SubPages.Add(radPageViewPage10);
 importantPage.SubPages.Add(radPageViewPage11);
 
-this.radPageView1.Pages.Add(inboxPage);
-this.radPageView1.Pages.Add(draftsPage);
-this.radPageView1.Pages.Add(sentPage);
-this.radPageView1.Pages.Add(importantPage);
-this.radPageView1.Pages.Add(allMailPage);
-this.radPageView1.Pages.Add(spamPage);
-this.radPageView1.Pages.Add(deletedPage);
-
+this.radNavigationView1.Pages.Add(inboxPage);
+this.radNavigationView1.Pages.Add(draftsPage);
+this.radNavigationView1.Pages.Add(sentPage);
+this.radNavigationView1.Pages.Add(importantPage);
+this.radNavigationView1.Pages.Add(allMailPage);
+this.radNavigationView1.Pages.Add(spamPage);
+this.radNavigationView1.Pages.Add(deletedPage);
 
 ````
 ````VB.NET
@@ -81,13 +81,13 @@ inboxPage.SubPages.Add(radPageViewPage5)
 inboxPage.SubPages.Add(radPageViewPage6)
 importantPage.SubPages.Add(radPageViewPage10)
 importantPage.SubPages.Add(radPageViewPage11)
-Me.radPageView1.Pages.Add(inboxPage)
-Me.radPageView1.Pages.Add(draftsPage)
-Me.radPageView1.Pages.Add(sentPage)
-Me.radPageView1.Pages.Add(importantPage)
-Me.radPageView1.Pages.Add(allMailPage)
-Me.radPageView1.Pages.Add(spamPage)
-Me.radPageView1.Pages.Add(deletedPage)
+Me.radNavigationView1.Pages.Add(inboxPage)
+Me.radNavigationView1.Pages.Add(draftsPage)
+Me.radNavigationView1.Pages.Add(sentPage)
+Me.radNavigationView1.Pages.Add(importantPage)
+Me.radNavigationView1.Pages.Add(allMailPage)
+Me.radNavigationView1.Pages.Add(spamPage)
+Me.radNavigationView1.Pages.Add(deletedPage)
 
 ````
 

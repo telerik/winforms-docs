@@ -120,7 +120,7 @@ Dim row As GridViewRowInfo = Me.radGridView1.Rows.AddNew()
 
 ## SparkDataNeeded event
 
-The **SparkDataNeeded** event can be used to dinamically populate or change data at run-time. It is fired right before creating the data points inside the sparkline element in the cell.
+The **SparkDataNeeded** event can be used to dynamically populate or change data at run-time. It is fired right before creating the data points inside the sparkline element in the cell.
 
 ````C#
  private void SparkLineColumn_SparkDataNeeded(object sender, SparkDataNeededEventArgs e)
