@@ -494,3 +494,5 @@ End Sub
 
 * [How to Change PageViewMode for the Nested Levels in RadGridView]({%slug pageview-mode-in-nested-gridview-levels%})
 
+* [Build GridView Hierarchy with Multiple Tabs]({%slug grid-hierarchy-with-multiple-tabs%})
+
