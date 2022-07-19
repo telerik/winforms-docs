@@ -37,7 +37,7 @@ CTAControlName: Calculator
 
 # See Also
 
-* [Getting Started]({%slug Calculator-getting-started%})
-* [Design Time]({%slug Calculator-design-times%})
+* [Getting Started]({%slug calculator-getting-started%})
+* [Design Time]({%slug calculator-design-time%})
  
         

@@ -61,6 +61,6 @@ CTAControlName: OfficeNavigationBar
 # See Also
 
 * [Getting Started]({%slug officenavigationbar-getting-started%})
-* [Design Time]({%slug officenavigationbar-design-times%})
+* [Design Time]({%slug officenavigationbar-design-time%})
  
         
