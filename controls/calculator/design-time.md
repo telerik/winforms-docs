@@ -33,7 +33,7 @@ Select **RadCalculator** and click the small arrow on the top right position in 
 
 # See Also
 
-* [Getting Started]({%slug officenavigationbar-getting-started%})
-* [Structure]({%slug officenavigationbar-structure%})
+* [Getting Started]({%slug calculator-getting-started%})
+* [Structure]({%slug calculator-structure%})
  
         

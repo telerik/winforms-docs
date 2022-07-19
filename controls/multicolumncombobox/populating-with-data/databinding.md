@@ -47,13 +47,13 @@ As a result **RadMultiColumnComboBox** is bound to the Northwind.Customers table
 
 ###  Columns collection
 
-You can set your own columns list using the [Columns]({%slug winforms/gridview/columns%}) collection editor of __RadGridView__:
+You can set your own columns list using the [Columns](https://docs.telerik.com/devtools/winforms/controls/gridview/columns/gridviewcolumn) collection editor of __RadGridView__:
 
 >caption Figure 4: GridViewDataColumn Collection Editor
 
 ![multicolumncombobox-databinding 004](images/multicolumncombobox-databinding004.png)
 
-The collection editor is accessible through the [Columns]({%slug winforms/gridview/columns%}) property in the *Properties* grid: 
+The collection editor is accessible through the [Columns](https://docs.telerik.com/devtools/winforms/controls/gridview/columns/gridviewcolumn) property in the *Properties* grid: 
 
 ![multicolumncombobox-databinding 005](images/multicolumncombobox-databinding005.png)
 

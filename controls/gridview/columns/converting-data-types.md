@@ -374,8 +374,6 @@ End Class
 
 * [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
 
-* [Overview]({%slug winforms/gridview/columns%})
-
 * [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
 
 * [Generating Columns]({%slug winforms/gridview/columns/generating-columns%})
