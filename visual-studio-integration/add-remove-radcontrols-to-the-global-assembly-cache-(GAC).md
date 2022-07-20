@@ -22,9 +22,10 @@ To add Telerik controls to the [Global Assembly Cache](http://msdn.microsoft.com
 
 1. Start the [gacutil.exe tool](http://msdn.microsoft.com/en-us/library/ex0ss12c%28VS.80%29.aspx) with __-i__ parameter (install) and the full path to the control's DLL. For example:
 
- * gacutil.exe -i "C:\Program Files\Telerik\UI for WinForms\Version\bin\TelerikCommon.dll"
 
- * gacutil.exe -i "C:\Program Files\Telerik\UI for WinForms\Version\bin\Telerik.WinControls.dll"
+ * gacutil.exe -i "C:\Program Files (x86)\Progress\UI for WinForms\Version\bin\TelerikCommon.dll"
+
+ * gacutil.exe -i "C:\Program Files (x86)\Progress\UI for WinForms\Version\bin\Telerik.WinControls.dll"
 
 To get information on the the assembly attributes (Version, Culture, PublicKeyToken), run the gacutil __/l__ command which will return a list of all the assemblies in the GAC. You can also see the information associated with a particular assembly using the __-l__ parameter. For example:
 
