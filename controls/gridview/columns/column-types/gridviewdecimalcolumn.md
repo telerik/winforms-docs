@@ -166,3 +166,5 @@ decimalColumn.FormatString = "{0:N2}"
 
 * [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
 
+* [How to Skip Rounding Decimal Values in GridView]({%slug skip-decimal-rounding-in-gridview%})
+
