@@ -294,7 +294,7 @@ End Class
 
 ````
 
->note It is just a sample approach and it may not cover all possible cases. Feel free to modify and extend it in a way which suits your requirements best.
+>note It is just a sample approach and it may not cover all possible cases. Feel free to modify and extend it in a way that suits your requirements best.
 
 
 # See Also
