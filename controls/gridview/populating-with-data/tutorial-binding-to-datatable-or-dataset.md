@@ -15,6 +15,8 @@ The following tutorial demonstrates binding to a single database table. For info
 
 ![gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset 001](images/gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset001.png)
 
+>important This tutorial is applicable for Visual Studio 2019 (or prior versions).  If you're using Visual Studio to connect to Access databases, you will need to be aware that versions of Visual Studio prior to Visual Studio 2022 are all 32-bit processes. This means some of the data tools in Visual Studio 2019 and earlier will only be able to connect to Access databases using 32-bit data providers. The last version of Visual Studio that was a 32-bit process was Visual Studio 2019. [READ MORE](https://docs.microsoft.com/en-us/visualstudio/data-tools/connect-to-data-in-an-access-database-windows-forms?view=vs-2022)
+
 1\. Place a **RadGridView** component on a form. Set the __Dock__ property to *Fill*.
 
 2\. In the Properties window locate the __DataSource__ property and click the arrow to open the list. Select the __Add Project Data Source...__ link. *This step will display the Data Source Configuration Wizard.*
@@ -96,4 +98,6 @@ End Sub
 * [Binding to EntityFramework using Database first approach]({%slug winforms/gridview/populating-with-data/binding-to-entityframework-using-database-first-approach%})
 
 * [Binding to Generic Lists]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%})
+
+* [How to Bind GridView to a Local SQL Server]({%slug gridview-databinding-tutorial-sql-server%})
 
