@@ -156,3 +156,5 @@ Now, if you run your application you should see the hierarchical data.
 
 * [Binding to ObservableCollection]({%slug winforms/gridview/populating-with-data/binding-to-observablecollection%})
 
+* [How to Bind GridView to a Local SQL Server]({%slug gridview-databinding-tutorial-sql-server%})
+
