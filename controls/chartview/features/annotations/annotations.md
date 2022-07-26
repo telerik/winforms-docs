@@ -40,6 +40,13 @@ __RadChartView__ provides the following types of annotations:
 |**DrawMode**|Gets or sets a value indicating the position of the annotation in the chart draw stack.|
 |**PositonOffset**|Gets or sets the offset of the label of the annotations in pixels.|
 
+## Draw Mode
+
+The __DrawMode__ property indicates whether the annotation should be drawn above the data points or beneath them.
+
+>caption Figure 2: Annotations Draw Mode
+![chartview-annotations 002](images/chartview-annotations002.png)
+
 # See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
