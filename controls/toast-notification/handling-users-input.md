@@ -11,7 +11,7 @@ CTAControlName: ToastNotification
 
 ## Handling Users Input
 
-**RadToastNotificationManager** offers the static **RadToastOnActivated ** event which is fired when the user interacts with the notification and activates it, e.g. after clicking a button. The **RadToastOnActivatedEventArgs** gives you the following arguments:
+**RadToastNotificationManager** offers the static **RadToastOnActivated** event which is fired when the user interacts with the notification and activates it, e.g. after clicking a button. The **RadToastOnActivatedEventArgs** gives you the following arguments:
 
 * **Arguments** - arguments passed to the toast. 
 * **UserInput** - returns a Dictionary<string, string> containing the user's input. 
