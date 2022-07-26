@@ -149,6 +149,22 @@ The result is shown on the image below:
 >
 
 
+## Page View Modes
+
+We can use the __RadGridView.TableElement.PageViewMode__ property to change how the tabs are visualised in the child table.
+
+#### __Strip View Mode__
+![gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 003](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations003.png)
+
+#### __Stack View Mode__
+![gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 004](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations004.png)
+
+#### __Outlook View Mode__
+![gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 005](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations005.png)
+
+#### __Explorer Bar View Mode__
+![gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 006](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations006.png)
+
 # See Also
 * [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
 
