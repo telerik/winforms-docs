@@ -27,3 +27,4 @@ __RadDiagramRibbonBar__ introduces UI for saving and loading predefined diagramm
  
 * [Settings Pane]({%slug winforms/diagram/settings-pane%})	
 * [Toolbox]({%slug winforms/diagram/toolbox%})
+* [How to Add Custom Items to RadDiagramRibbonBar]({%slug diagram-custom-items%})
