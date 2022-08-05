@@ -1,8 +1,8 @@
 ---
-title: How to change the encoding configuration of a SVG file from UTF-16 to UTF-8
-description: This article shows how to change the encoding configuration of a SVG file from UTF-16 to UTF-8
+title: How to change the encoding configuration of an SVG file from UTF-16 to UTF-8
+description: This article shows how to change the encoding configuration of an SVG file from UTF-16 to UTF-8
 type: how-to
-page_title: Manually change the encoding configuration of a SVG file from UTF-16 to UTF-8
+page_title: Manually change the encoding configuration of an SVG file from UTF-16 to UTF-8
 slug: picturebox-change-encoding
 position: 0
 tags: picturebox, svg, encoding, byte,mark ,unicode ,utf-16,utf-8
