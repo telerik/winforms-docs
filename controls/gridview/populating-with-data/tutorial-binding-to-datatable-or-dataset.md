@@ -1,7 +1,7 @@
 ---
-title: Tutorial Binding to DataTable or DataSet
-page_title: Tutorial Binding to DataTable or DataSet - WinForms GridView Control
-description: Learn how you can bind WinForms GridView to a DataTable or a DataSet.
+title: Tutorial Binding to MS Access DataTable/Database
+page_title: Tutorial Binding to MS Access DataTable/Database - WinForms GridView Control
+description: Learn how you can bind WinForms GridView to MS Access DataTable/Database.
 slug: winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset
 tags: tutorial,binding,to,datatable,or,dataset
 published: True
@@ -9,7 +9,7 @@ position: 5
 previous_url: gridview-populating-with-data-tutorial-binding-to-datatable-or-dataset
 ---
 
-# Tutorial: Binding to DataTable or DataSet
+# Tutorial: Binding to MS Access DataTable/Database
 
 The following tutorial demonstrates binding to a single database table. For information on binding to multiple tables see the [Binding to Hierarchical Data]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%}) topic. 
 
