@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
 
-When using [data binding]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/data-binding%}) for populating **RadDropDownList** with data, note that the **DisplayMember** property allows you to specify the particular field in the data source which will be used from the items in RadDropDownList for their Text. However, it is possible to specify only a single field.
+When using [data binding]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/data-binding%}) for populating **RadDropDownList** with data, note that the **DisplayMember** property allows you to specify the particular field in the data source which will be used by the items in RadDropDownList for their Text. However, it is possible to specify only a single field.
 
 ````C#  
 
