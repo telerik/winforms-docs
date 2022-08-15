@@ -1,19 +1,19 @@
 ---
-title: Adding RadControls to Visual Studio Toolbox
+title: Adding RadControls to Visual Studio Toolbox in .NET Framework Projects
 page_title: Adding RadControls to Visual Studio Toolbox
 description: Telerik UI for WinForms are automatically added to Visual Studio Toolbox during installation. But there are also two ways to manually do that.
 slug: winforms/installation-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox
-tags: adding,radcontrols,to,visual,studio,toolbox
+tags: adding,radcontrols,to,visual,studio,toolbox,net framework
 published: True
 position: 3
 previous_url: installation-deployment-and-distribution-adding-radcontrols-to-visual-studio-toolbox
 ---
 
-# Adding RadControls to Visual Studio Toolbox
+# Adding RadControls to Visual Studio Toolbox in .NET Framework Projects
 
 Telerik UI for WinForms are automatically added to Visual Studio 2005/2008/2010/2012/2013/2015/2017/2019/2022 Toolbox [during installation]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). If however they do not appear in the toolbox after the installation, you can do this manually. There are two ways to manually add Telerik UI for WinForms to the Toolbox in your Visual Studio.
 
->important This article is relevant when using .NET Framework. For .NET Core or newer versions, please refer to [NET Core Toolbox Version]({%slug core-toolbox-version%}).
+>caution This article is relevant when using .NET Framework. For .NET Core or newer versions, please refer to [NET Core Toolbox Version]({%slug core-toolbox-version%}).
       
 ## Using the Visual Studio menus
 
