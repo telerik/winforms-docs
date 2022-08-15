@@ -1,14 +1,14 @@
 ---
-title: Toolbox Version 
+title: Adding RadControls to Visual Studio Toolbox in .NET Core Projects
 page_title: NET Core Toolbox Version
 description:   
 slug: core-toolbox-version
-tags: core, designer, toolbox
+tags: core, designer, toolbox, net core
 published: True
 position: 1
 ---
 
-# Toolbox Version
+# Adding RadControls to Visual Studio Toolbox in .NET Core Projects
 
 Telerik UI for WinForms controls used to be automatically added to Visual Studio's Toolbox during the [installation]({%slug winforms/installation-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox%}) process when using **.NET 2.0 (up to 4.8)** Framework in your project. This means that the Toolbox population relies on the Telerik WinForms version available in the Global Assembly Cache.
 
@@ -16,7 +16,9 @@ With the introduction of .NET Core/.NET 5 and the WinForms designer, the Toolbox
 
 >important In order to enable the WinForms Designer, please get familiar with the requirements you need to meet: [Design Time]({%slug core-design-time%}).
 
-The Toolbox version depends on the installed NuGet package:
+## Toolbox Version
+
+The Toolbox version depends on the version of installed NuGet package:
 
 >caption Toolbox version R3 2020 SP1 (2020.3.10.20)
 
