@@ -209,3 +209,4 @@ And of course, for those of you who don’t need additional UI pop-ups, these ca
  * [Getting Started]({%slug winforms/richtexteditor-/getting-started%})
  * [Ribbon UI]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%})
  * [Selection Mini Toolbar]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/selection-mini-toolbar%})
+ * [How to Customize the RichTextEditor's Context Menu items]({%slug customize-richtexteditor-context-menu%})
