@@ -25,6 +25,9 @@ Please follow the steps described in the [Download Product Files]({%slug winform
 Once you have the source code downloaded, let's continue with the following steps:
 
 1. Unzip the file in C:\sampleFolder. 
+
+>caution As of R3 2022 the zip contains not only the .NET Framework projects of the Telerik source code, but .NETCore projects as well. Make sure that you don't mix projects of different target framework when building the source code.
+
 2. In order to attach the source code to your project, you need to check what Telerik reference you have in your application:
 
 	![attach-telerik-source-code-to-your-project 002](images/attach-telerik-source-code-to-your-project002.png)
