@@ -18,8 +18,8 @@ The following tutorial demonstrates how to specify a file name by using a **RadS
 
 ####  How to use the file dialogs
 
-{{source=..\SamplesCS\Filedialogs\FiledialogEditingOptions.cs region=GettingStartedExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=GettingStartedExample}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=GettingStartedExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=GettingStartedExample}}
 
 ````C#
 
