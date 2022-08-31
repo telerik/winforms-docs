@@ -35,6 +35,8 @@ RadOverlayManager.Show(this.radGridView1)
 
 ````
 
+{{endregion}}
+
 ## Close Overlay
 
 {{source=..\SamplesCS\SplashScreens\Overlay\OverlaySettings.cs region=GettingStarted_Close}} 
@@ -53,6 +55,7 @@ RadOverlayManager.Close()
 
 ````
 
+{{endregion}}
 
 # See Also
 

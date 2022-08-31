@@ -110,6 +110,8 @@ End Class
 
 ````
 
+{{endregion}}
+
 Next step is to apply our custom form by returning it in the __CreateFrom__ of the __OverlayScreen__ class.
 
 ## Custom OverlayScreen
@@ -143,6 +145,8 @@ End Class
 
 ````
 
+{{endregion}}
+
 Our final step is to replace the default overlay screen with our custom one by setting the RadOverlayManager.OverlayInstance static property.
 
 
@@ -169,7 +173,7 @@ End Sub
 
 ````
 
-
+{{endregion}}
 
 # See Also
 
