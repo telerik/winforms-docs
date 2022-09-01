@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadSplashScreen
+page_title: Overview | SplashScreen
 description: RadSplashScreen allows you to display a Telerik themed control that notifies the user that the program is loading.
 slug: splashscreen-overview
 tags: splash, screen

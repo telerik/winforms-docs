@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | RadSplashScreen
+page_title: Structure | SplashScreen
 description: Get familiar with the internal strcuture of teh WinForms SplashScreen .
 slug: splashscreen-structure
 tags: splash, screen
