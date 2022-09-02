@@ -54,6 +54,8 @@ Please follow the steps below to install Telerik UI for WinForms from the .msi f
             
 ![installation-deployment-and-distribution-installing-on-your-computer 003](images/installation-deployment-and-distribution-installing-on-your-computer003.png)
 
+>note As of R3 2022 Telerik UI for WinForms suite offers .NET 4.8 distribution and the .NET 2.0 distribution is removed.
+
 6\. Once done with the installation customization click the __Install__ to start the installation process.           
 
 7\. The installer will install the controls and display its progress as it does so. You may click __Cancel__ to reverse the process while this screen is displayed.                    

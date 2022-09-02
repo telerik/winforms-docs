@@ -72,4 +72,3 @@ We can subscribe to the __ScreenTipNeeded__ event of the RadPivotGrid control. I
 
 ````
 
-
