@@ -35,6 +35,7 @@ The **RadSplashScreenElement** is the main element in **RadSplashScreenControl**
 
 # See Also
 
-* [Getting Started]({%slug splashscreen-getting-started%}) 
+* [Custom Splash]({%slug splashscreen-custom-splash%}) 
+* [Getting Started]({%slug splashscreen-getting-started%})  
  
         
