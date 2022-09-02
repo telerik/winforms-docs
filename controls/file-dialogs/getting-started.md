@@ -23,39 +23,41 @@ The following tutorial demonstrates how to specify a file name by using a **RadS
 
 ````C#
 
-         private void radButton1_Click(object sender, EventArgs e)
-        {
-            RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
-            openFolderDialog.ShowDialog();
-            if (openFolderDialog.DialogResult == System.Windows.Forms.DialogResult.OK)
-            {
-                string folderName = openFolderDialog.FileName;
-                this.radLabel1.Text = folderName;
-            }
-        }
+	private void radButton1_Click(object sender, EventArgs e)
+	{
+		RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
+		openFolderDialog.ShowDialog();
+		if (openFolderDialog.OpenFolderDialogForm.DialogResult == System.Windows.Forms.DialogResult.OK)
+		{
+			string folderName = openFolderDialog.FileName;
+			this.radLabel1.Text = folderName;
+		}
+	}
 
-        private void radButton2_Click(object sender, EventArgs e)
-        {
-            RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-            openFileDialog.ShowDialog();
-            if (openFileDialog.DialogResult == System.Windows.Forms.DialogResult.OK)
-            {
-                string fileName = openFileDialog.FileName;
-                this.radLabel2.Text = fileName;
-            }
-        }
+	private void radButton2_Click(object sender, EventArgs e)
+	{
+		RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
+		openFileDialog.ShowDialog();
 
-        private void radButton3_Click(object sender, EventArgs e)
-        {
-            RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
-            saveFileDialog.ShowDialog();
-            if (saveFileDialog.DialogResult == System.Windows.Forms.DialogResult.OK)
-            {
-                string selectedFileName = saveFileDialog.FileName;
-                this.radLabel3.Text = selectedFileName;
-            }
-        }   
+		if (openFileDialog.OpenFileDialogForm.DialogResult == System.Windows.Forms.DialogResult.OK)
+		{
+			string fileName = openFileDialog.FileName;
+			this.radLabel2.Text = fileName;
+		}
+	}
 
+	private void radButton3_Click(object sender, EventArgs e)
+	{
+		RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
+		saveFileDialog.ShowDialog();
+		if (saveFileDialog.SaveFileDialogForm.DialogResult == System.Windows.Forms.DialogResult.OK)
+		{
+			string selectedFileName = saveFileDialog.FileName;
+			this.radLabel3.Text = selectedFileName;
+		}
+	}
+	
+	
 ````
 ````VB.NET
 
@@ -63,7 +65,7 @@ The following tutorial demonstrates how to specify a file name by using a **RadS
         Dim openFolderDialog As RadOpenFolderDialog = New RadOpenFolderDialog()
         openFolderDialog.ShowDialog()
 
-        If openFolderDialog.DialogResult = System.Windows.Forms.DialogResult.OK Then
+        If openFolderDialog.OpenFolderDialogForm.DialogResult = System.Windows.Forms.DialogResult.OK Then
             Dim folderName As String = openFolderDialog.FileName
             Me.radLabel1.Text = folderName
         End If
@@ -73,7 +75,7 @@ The following tutorial demonstrates how to specify a file name by using a **RadS
         Dim openFileDialog As RadOpenFileDialog = New RadOpenFileDialog()
         openFileDialog.ShowDialog()
 
-        If openFileDialog.DialogResult = System.Windows.Forms.DialogResult.OK Then
+        If openFileDialog.OpenFileDialogForm.DialogResult = System.Windows.Forms.DialogResult.OK Then
             Dim fileName As String = openFileDialog.FileName
             Me.radLabel2.Text = fileName
         End If
@@ -83,7 +85,7 @@ The following tutorial demonstrates how to specify a file name by using a **RadS
         Dim saveFileDialog As RadSaveFileDialog = New RadSaveFileDialog()
         saveFileDialog.ShowDialog()
 
-        If saveFileDialog.DialogResult = System.Windows.Forms.DialogResult.OK Then
+        If saveFileDialog.SaveFileDialogForm.DialogResult = System.Windows.Forms.DialogResult.OK Then
             Dim selectedFileName As String = saveFileDialog.FileName
             Me.radLabel3.Text = selectedFileName
         End If
@@ -91,10 +93,7 @@ The following tutorial demonstrates how to specify a file name by using a **RadS
 
 
 ````
-
-
 {{endregion}} 
-
 
 This is it! Now you can select a file name or open a folder.
 

@@ -24,6 +24,9 @@ To show the dialog call its **ShowDialog** method. If a valid folder is opened w
 
 ####  Example 1: Show a open folder dialog 
 
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=OpenFolderDialogExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=OpenFolderDialogExample}}
+
 ````C#
 
 RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
@@ -46,11 +49,16 @@ End If
 
 ````
 
+{{endregion}}
+
 ## Enabling Multiple Selection
 
 The dialog supports single and multiple selection modes. By default, you can select only one folder at a time. To alter this you can set the **Multiselect** property of **RadOpenFolderDialog** to *True*.
 
 ####  Example 2: Multiple selection
+
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=MultipleSelection}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=MultipleSelection}}
 
 ````C#
 
@@ -65,6 +73,8 @@ openFolderDialog.Multiselect = True
 
 ````
 
+{{endregion}}
+
 >caption Figure 2: Multiple selection
 
 ![winforms/file-dialogs-radopenfolderdialog 002](images/file-dialogs-radopenfolderdialog002.png) 
@@ -76,6 +86,9 @@ You can get the paths of the selected folders via the **FileName** and **FileNam
 You can get only the name of the selected folders, without the full path, via the **SafeFileNames** collection property.
 
 ####  Example 3: Get the selected folder names
+
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=SelectedFolderNames}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=SelectedFolderNames}}
 
 ````C#
 
@@ -105,11 +118,16 @@ End If
 
 ````
 
+{{endregion}}
+
 ## Saving the Last Used Directory
 
 You can save the last used directory by setting the **RestoreDirectory** property of the **RadOpenFolderDialog**. 
 
 ####  Example 4: Set RestoreDirectory property
+
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=RestoreDirectoryProperty}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=RestoreDirectoryProperty}}
 
 ````C#
 
@@ -123,6 +141,8 @@ Dim openFolderDialog As RadOpenFolderDialog = New RadOpenFolderDialog()
 openFolderDialog.RestoreDirectory = True
 
 ````
+
+{{endregion}}
 
 After setting this property to *True* and opening a folder the **InitialDirectory** of this **RadOpenFolderDialog** instance will be set to the parent of the opened folder.
 
