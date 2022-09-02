@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | RadSplashScreen
+page_title: Structure | SplashScreen
 description: Get familiar with the internal strcuture of teh WinForms SplashScreen .
 slug: splashscreen-structure
 tags: splash, screen
@@ -35,6 +35,7 @@ The **RadSplashScreenElement** is the main element in **RadSplashScreenControl**
 
 # See Also
 
-* [Getting Started]({%slug splashscreen-getting-started%}) 
+* [Custom Splash]({%slug splashscreen-custom-splash%}) 
+* [Getting Started]({%slug splashscreen-getting-started%})  
  
         
