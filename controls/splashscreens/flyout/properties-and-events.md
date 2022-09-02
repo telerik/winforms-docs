@@ -26,15 +26,11 @@ position: 3
 
 |Event|Description|
 |----|----|
-|**FormLoad**|Occurs when the splash form has been loaded.|
-|**FormShown**|Occurs when the splash form is shown.|
+|**FormLoad**|Occurs when the flyout screen has been loaded.|
+|**FormShown**|Occurs when the flyout screen is shown.|
+|**FlyoutClosed**|Occurs when the flyout screen has been closed.|
+|**Contentcreated**|Occurs when the flyout screen is shown.|
 
->Note that both events are created on a separate __System.Threading.Threads__ and it is required to use BeginInvoke/Invoke when accessing it in order to prevent cross-thread exceptions. Also, these events are static and you need to explicitly unsubscribe from them in order to prevent memory leaks. Each object that is subscribed to one of these events cannot be garbage collected.
-
-## FlyoutScreen Methods
-
-|Method|Description|
-|----|----|
-|**CreateFrom**|This method can be overriden to return your own custom form. This form will be used for the overlay screen to be place on top of the passed control.|
+>Note that all events are created on a separate __System.Threading.Threads__ and it is required to use BeginInvoke/Invoke when accessing it in order to prevent cross-thread exceptions. Also, these events are static and you need to explicitly unsubscribe from them in order to prevent memory leaks. Each object that is subscribed to one of these events cannot be garbage collected.
 
 

@@ -5,7 +5,7 @@ description: Learn the most important properties for changing the Overlay Screen
 slug: overlay-properties-events
 tags: properties,and,events
 published: True
-position: 3
+position: 2
 ---
 
 # Properties, Methods and Events

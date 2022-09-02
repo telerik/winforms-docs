@@ -5,7 +5,7 @@ description: Check our &quot;Getting Started&quot; documentation article for the
 slug: flyout-getting-started
 tags: flyout,show,close
 published: True
-position: 0 
+position: 1
 CTAControlName: Flyout
 ---
 
