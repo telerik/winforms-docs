@@ -1264,6 +1264,12 @@ navigation:
     controls/splashscreens/splashscreen:
         title: SplashScreen
         position: 0
+    controls/splashscreens/flyout:
+        title: Flyout
+        position: 2
+    controls/splashscreens/overlay:
+        title: Overlay
+        position: 1 
     controls/splitcontainer:
         title: SplitContainer
         position: 460
@@ -1752,6 +1758,9 @@ intro_columns:
       "TabbedForm": "radtabbedform-overview"
       "TitleBar": "winforms/forms-and-dialogs/statusstrip"
       "ToastNotification": "toast-notification-overview"
+      "SplashScreen": "splashscreen-overview"
+      "Overlay": "overlay-overview"
+      "Flyout": "flyout-overview"
 -
   categories:
   -
