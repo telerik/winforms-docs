@@ -110,3 +110,4 @@ To achieve this add four __BarSeries__ and set the __StackGroupKey__ property of
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
+* [How to Rotate the Labels for BarSeries]({%slug rotate-labels-for-barseries%})

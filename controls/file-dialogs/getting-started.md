@@ -18,6 +18,9 @@ The following tutorial demonstrates how to specify a file name by using a **RadS
 
 ####  How to use the file dialogs
 
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=GettingStartedExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=GettingStartedExample}}
+
 ````C#
 
          private void radButton1_Click(object sender, EventArgs e)
@@ -88,6 +91,10 @@ The following tutorial demonstrates how to specify a file name by using a **RadS
 
 
 ````
+
+
+{{endregion}} 
+
 
 This is it! Now you can select a file name or open a folder.
 

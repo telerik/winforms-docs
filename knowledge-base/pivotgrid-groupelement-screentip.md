@@ -12,7 +12,7 @@ res_type: kb
 ## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2022.2.622|PictureBox for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2022.2.622|PivotGrid for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 
 ## Description
@@ -27,44 +27,47 @@ We can subscribe to the __ScreenTipNeeded__ event of the RadPivotGrid control. I
 
 #### Sample Implementation
 
+
 ````C#
 
-private void Pivot_ScreenTipNeeded(object sender, Telerik.WinControls.ScreenTipNeededEventArgs e)
-{
-    PivotGroupElement cellGroup = e.Item as PivotGroupElement;
-    if (cellGroup != null)
-    {
-        RadOffice2007ScreenTipElement screenTipGroupCell = new RadOffice2007ScreenTipElement();
-        screenTipGroupCell.CaptionLabel.Text = "";
 
-        if (cellGroup.Data.Axis == PivotAxis.Rows & this.RadPivotGrid1.RowGroupDescriptions.Count - 1 >= cellGroup.Data.Group.Level)
-        {
-            var rowGroupDescriptor = this.RadPivotGrid1.RowGroupDescriptions[cellGroup.Data.Group.Level];
-            screenTipGroupCell.MainTextLabel.Text = rowGroupDescriptor.DisplayName;
-            screenTipGroupCell.FooterTextLabel.Text = "";
-            cellGroup.ScreenTip = screenTipGroupCell;
-        }
-    }
-}
+	private void Pivot_ScreenTipNeeded(object sender, Telerik.WinControls.ScreenTipNeededEventArgs e)
+	{
+		PivotGroupElement cellGroup = e.Item as PivotGroupElement;
+		if (cellGroup != null)
+		{
+			RadOffice2007ScreenTipElement screenTipGroupCell = new RadOffice2007ScreenTipElement();
+			screenTipGroupCell.CaptionLabel.Text = "";
 
+			if (cellGroup.Data.Axis == PivotAxis.Rows & this.RadPivotGrid1.RowGroupDescriptions.Count - 1 >= cellGroup.Data.Group.Level)
+			{
+				var rowGroupDescriptor = this.RadPivotGrid1.RowGroupDescriptions[cellGroup.Data.Group.Level];
+				screenTipGroupCell.MainTextLabel.Text = rowGroupDescriptor.DisplayName;
+				screenTipGroupCell.FooterTextLabel.Text = "";
+				cellGroup.ScreenTip = screenTipGroupCell;
+			}
+		}
+	}
+
+	
 
 ````
 ````VB.NET
 
-Private Sub Pivot_ScreenTipNeeded(sender As Object, e As Telerik.WinControls.ScreenTipNeededEventArgs)
-    Dim cellGroup As PivotGroupElement = TryCast(e.Item, PivotGroupElement)
-    If cellGroup IsNot Nothing Then
-        Dim screenTipGroupCell As RadOffice2007ScreenTipElement = New RadOffice2007ScreenTipElement()
-        screenTipGroupCell.CaptionLabel.Text = ""
+	Private Sub Pivot_ScreenTipNeeded(sender As Object, e As Telerik.WinControls.ScreenTipNeededEventArgs)
+		Dim cellGroup As PivotGroupElement = TryCast(e.Item, PivotGroupElement)
+		If cellGroup IsNot Nothing Then
+			Dim screenTipGroupCell As RadOffice2007ScreenTipElement = New RadOffice2007ScreenTipElement()
+			screenTipGroupCell.CaptionLabel.Text = ""
 
-        If cellGroup.Data.Axis = PivotAxis.Rows And Me.RadPivotGrid1.RowGroupDescriptions.Count - 1 >= cellGroup.Data.Group.Level Then
-            Dim rowGroupDescriptor = Me.RadPivotGrid1.RowGroupDescriptions(cellGroup.Data.Group.Level)
-            screenTipGroupCell.MainTextLabel.Text = rowGroupDescriptor.DisplayName
-            screenTipGroupCell.FooterTextLabel.Text = ""
-            cellGroup.ScreenTip = screenTipGroupCell
-        End If
-    End If
-End Sub
+			If cellGroup.Data.Axis = PivotAxis.Rows And Me.RadPivotGrid1.RowGroupDescriptions.Count - 1 >= cellGroup.Data.Group.Level Then
+				Dim rowGroupDescriptor = Me.RadPivotGrid1.RowGroupDescriptions(cellGroup.Data.Group.Level)
+				screenTipGroupCell.MainTextLabel.Text = rowGroupDescriptor.DisplayName
+				screenTipGroupCell.FooterTextLabel.Text = ""
+				cellGroup.ScreenTip = screenTipGroupCell
+			End If
+		End If
+	End Sub
 
 
 ````
