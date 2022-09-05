@@ -248,6 +248,7 @@ if (dr == System.Windows.Forms.DialogResult.OK)
     End If
 
 ````
+
 {{endregion}}
 
 >important If in multiple or single selection the first selected item is a link to a directory and **DereferenceLinks** is set to *True*, clicking the `Open` button will actually navigate to this directory.
