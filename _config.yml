@@ -85,6 +85,12 @@ navigation:
     controls/barcode/barcode-types/2d-barcodes/SwissQRCode:
         title: Swiss QR Code
         position: 3
+    controls/barcode/barcode-types/2d-barcodes/PDF417:
+        title: PDF 417
+        position: 4
+    controls/barcode/barcode-types/2d-barcodes/QRCode:
+        title: QR Code
+        position: 5
     controls/barcodeview: 
         title: BarcodeView
         position: 56
@@ -106,6 +112,12 @@ navigation:
     controls/barcodeview/barcode-types/2d-barcodes/SwissQRCode:
         title: Swiss QR Code
         position: 3
+    controls/barcodeview/barcode-types/2d-barcodes/PDF417:
+        title: PDF 417
+        position: 4
+    controls/barcodeview/barcode-types/2d-barcodes/QRCode:
+        title: QR Code
+        position: 5
     controls/breadcrumb:
         title: BreadCrumb
         position: 58
