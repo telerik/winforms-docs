@@ -23,9 +23,9 @@ Here are a few of the **RadOverlay**'s main features:
 
 * **Auto-Size**: The overlay screen size is based on the size of the form/control on which it is placed.
 
-* **Themable**: The control support all themes which the Telerik WinForms suite provides.
+* **Themable**: The control supports all themes which the Telerik WinForms suite provides.
 
-* **Customizable**: The RadOverlay control expose an API that can be used to customize the default look of the overlay form per your requirements.
+* **Customizable**: The RadOverlay control exposes an API that can be used to customize the default look of the overlay form per your requirements.
  
 # See Also
 

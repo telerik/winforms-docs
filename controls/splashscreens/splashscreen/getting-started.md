@@ -137,7 +137,7 @@ The **RadSplashScreenSettings** allows specifying certain settings when showing 
 
 ## SplashAnimationManager
 
-It is accessed by the SplashScreen.**AnimationManager** property.The following settings are available:
+It is accessed by the SplashScreen.**AnimationManager** property. The following settings are available:
 
 * **ShowAnimationType** - specifies the animation type when showing the splash. It can be *None*, *Fade*, *Slide*.
 * **CloseAnimationType** - specifies the animation type when closing the splash. It can be *None*, *Fade*, *Slide*.

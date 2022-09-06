@@ -22,7 +22,7 @@ The **RadSplashScreenElement** is the main element in **RadSplashScreenControl**
 
 * Text element represented by a **SplashScreenLightVisualElement**.
 	
-3\. Progress Indicator contained represented by a **StackLayoutElement**. It contains:
+3\. Progress Indicator container represented by a **StackLayoutElement**. It contains:
 
 * Progress Indicator element represented by a **SplashScreenProgressIndicatorElement**.
 
