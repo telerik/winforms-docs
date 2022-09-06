@@ -15,7 +15,7 @@ This tutorial will walk you through how you can create a custom __Overlay Screen
 
 ![overlay-howto-custom-overlay 001](images/overlay-howto-custom-overlay001.png)
 
-To create a custom overlay screen, we can create our own form/class which derives from __RadOverlayForm__. Then we can construct our new overlay form per our requirements. For the purpose of this example, we are going to add a label in the midding of the form. We can call the base class with a false parameter to remove the default __RadWaitingBar__ control.
+To create a custom overlay screen, we can create our own form/class which derives from __RadOverlayForm__. Then, we can construct our new overlay form per our requirements. For the purpose of this example, we are going to add a label in the midding of the form. We can call the base class with a false parameter to remove the default __RadWaitingBar__ control.
 
 ## Custom RadOverlayForm
 

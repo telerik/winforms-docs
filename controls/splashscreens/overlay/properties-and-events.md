@@ -10,18 +10,20 @@ position: 2
 
 # Properties, Methods and Events
 
-## RadOverlayManager Properties
+## RadOverlayManager's Properties
 
 |Property|Description|
 |----|----|
 |**OverlayInstance**|Return instance of OverlayScreen|
 
-## RadOverlayManager Methods
+## RadOverlayManager's Methods
 
 |Method|Description|
 |----|----|
 |**Show**|Show the Overlay screen over the passed control|
 |**Close**|Close the Overlay screen.|
+
+## RadOverlayManager's Events
 
 |Event|Description|
 |----|----|

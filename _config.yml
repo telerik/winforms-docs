@@ -1282,6 +1282,9 @@ navigation:
     controls/splashscreens/overlay:
         title: Overlay
         position: 1 
+    controls/splashscreens/overlay/how-to:
+        title: How To
+        position: 1 
     controls/splitcontainer:
         title: SplitContainer
         position: 460

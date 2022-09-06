@@ -10,26 +10,28 @@ position: 3
 
 # Properties, Methods and Events
 
-## RadFlyoutManager Properties
+## RadFlyoutManager's Properties
 
 |Property|Description|
 |----|----|
 |**FlyoutInstance**|Return instance of FlyoutScreen|
 |**IsActive**|Get whether the Flyout is currently active or not|
 
-## RadFlyoutManager Methods
+## RadFlyoutManager's Methods
 
 |Method|Description|
 |----|----|
 |**Show**|Show the Flyout screen over the passed control with the set type of user control|
 |**Close**|Close the Flyout screen.|
 
+## RadFlyoutManager's Events
+
 |Event|Description|
 |----|----|
 |**FormLoad**|Occurs when the flyout screen has been loaded.|
 |**FormShown**|Occurs when the flyout screen is shown.|
 |**FlyoutClosed**|Occurs when the flyout screen has been closed.|
-|**Contentcreated**|Occurs when the flyout screen is shown.|
+|**ContentCreated**|Occurs when the flyout screen is shown.|
 
 >Note that all events are created on a separate __System.Threading.Threads__ and it is required to use BeginInvoke/Invoke when accessing it in order to prevent cross-thread exceptions. Also, these events are static and you need to explicitly unsubscribe from them in order to prevent memory leaks. Each object that is subscribed to one of these events cannot be garbage collected.
 
