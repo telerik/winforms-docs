@@ -13,8 +13,6 @@ CTAControlName: Overlay
 
 This tutorial will walk you through how you can use the __Overlay Screen__. 
 
-![overlay-overview 001](images/overlay-overview001.png)
-
 The overlay form can be activated throught the __RadOverlayManager.Show()__ method. This method accept parameter of type __Control__. When the Show() method is called, the Overlay form will take the size of the control which is passed as a parameter and it will appear on top of that control. This will make the control beneath the screen inactive. Rotating dots in the center will notify the user that currently a long running operation is being executed. After this operation is finished, we can close the overlay screen by calling the __RadOverlayManager.Close()__ static method. 
 
 ## Show Overlay
