@@ -85,6 +85,12 @@ navigation:
     controls/barcode/barcode-types/2d-barcodes/SwissQRCode:
         title: Swiss QR Code
         position: 3
+    controls/barcode/barcode-types/2d-barcodes/PDF417:
+        title: PDF 417
+        position: 4
+    controls/barcode/barcode-types/2d-barcodes/QRCode:
+        title: QR Code
+        position: 5
     controls/barcodeview: 
         title: BarcodeView
         position: 56
@@ -106,6 +112,12 @@ navigation:
     controls/barcodeview/barcode-types/2d-barcodes/SwissQRCode:
         title: Swiss QR Code
         position: 3
+    controls/barcodeview/barcode-types/2d-barcodes/PDF417:
+        title: PDF 417
+        position: 4
+    controls/barcodeview/barcode-types/2d-barcodes/QRCode:
+        title: QR Code
+        position: 5
     controls/breadcrumb:
         title: BreadCrumb
         position: 58
@@ -1258,6 +1270,21 @@ navigation:
     controls/spellchecker:
         title: SpellChecker
         position: 450
+    controls/splashscreens:
+        title: Splash Screens
+        position: 455
+    controls/splashscreens/splashscreen:
+        title: SplashScreen
+        position: 0
+    controls/splashscreens/flyout:
+        title: Flyout
+        position: 2
+    controls/splashscreens/overlay:
+        title: Overlay
+        position: 1 
+    controls/splashscreens/overlay/how-to:
+        title: How To
+        position: 1 
     controls/splitcontainer:
         title: SplitContainer
         position: 460
@@ -1746,6 +1773,9 @@ intro_columns:
       "TabbedForm": "radtabbedform-overview"
       "TitleBar": "winforms/forms-and-dialogs/statusstrip"
       "ToastNotification": "toast-notification-overview"
+      "SplashScreen": "splashscreen-overview"
+      "Overlay": "overlay-overview"
+      "Flyout": "flyout-overview"
 -
   categories:
   -

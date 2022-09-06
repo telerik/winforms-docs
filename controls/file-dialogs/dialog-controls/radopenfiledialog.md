@@ -25,6 +25,9 @@ To show the dialog call its **ShowDialog** method. If a valid file is opened whe
 
 ####  Example 1: Show an open file dialog 
 
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=OpenFileDialogExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=OpenFileDialogExample}}
+
 ````C#
 
 RadOpenFileDialog openFileDialog = new RadOpenFileDialog(); 
@@ -46,11 +49,16 @@ End If
 
 ````
 
+{{endregion}}
+
 ## Opening the Selected File
 
 You can open a read-only file stream for the selected file using the OpenFile method. Or alternatively you can use the **FileName** and **FileNames** properties and open the file manually.
 
 ####  Example 2: Open a file stream 
+
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=OpenFileStreamExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=OpenFileStreamExample}}
 
 ````C# 
 
@@ -73,11 +81,16 @@ End If
 
 ````
 
+{{endregion}}
+
 ## Enabling Multiple Selection
 
 The dialog supports single and multiple selection modes. By default, you can select only one file at a time. To alter this you can set the **Multiselect** property of **RadOpenFileDialog** to *True*.
 
 ####  Example 3: Enable multiple selection 
+
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=MultipleSelectionExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=MultipleSelectionExample}}
 
 ````C# 
 
@@ -90,7 +103,10 @@ openFileDialog.MultiSelect  = true;
 Dim openFileDialog As RadOpenFileDialog = New RadOpenFileDialog()
 openFileDialog.MultiSelect  = True
 
+
 ````
+
+{{endregion}}
 
 >caption Figure 2: Multiple selection 
 
@@ -104,6 +120,9 @@ You can get only the name of the selected files, without the full path, via the 
 
 
 ####  Example 4: Get the selected file names
+
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=SelectedFileNames}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=SelectedFileNames}}
 
 ````C# 
 
@@ -131,7 +150,10 @@ If dr = System.Windows.Forms.DialogResult.OK Then
    Dim fileNames As IEnumerable(Of String) = openFileDialog.SafeFileNames
 End If
 
+
 ````
+
+{{endregion}}
 
 The **FileName** property can be set manually. This will change the value displayed in the selected file auto-complete box area. Note that setting this won't change the selected item in the list with the files.
 
@@ -140,6 +162,9 @@ The **FileName** property can be set manually. This will change the value displa
 You can save the last used directory by setting the **RestoreDirectory** property of the **RadOpenFileDialog**. After setting this property to *True* and opening a file the **InitialDirectory** of this **RadOpenFileDialog** instance will be set to the parent folder of the opened file.
 
 ####  Example 5: Set RestoreDirectory property
+
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=RestoreDirectoryPropertyExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=RestoreDirectoryPropertyExample}}
 
 ````C# 
 
@@ -154,11 +179,16 @@ openFileDialog.RestoreDirectory = True
 
 ````
 
+{{endregion}}
+
 ## Enabling ReadOnly CheckBox
 
 You can display a checkbox to control whether the file should be opened in readonly mode with the **ShowReadOnly** property of the **RadOpenFileDialog**. You can control the state of that checkbox by using the **ReadOnlyChecked** property of the **RadOpenFileDialog**.
 
 ####  Example 6: Enabling the ReadOnly CheckBox
+
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=EnablingReadOnlyCheckBoxExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=EnablingReadOnlyCheckBoxExample}}
 
 ````C# 
 
@@ -177,6 +207,8 @@ Dim dr As DialogResult = openFileDialog.ShowDialog()
 
 ````
 
+{{endregion}}
+
 >caption Figure 3: RadOpenFileDialog with Checked ReadOnly CheckBox
 
 ![winforms/file-dialogs-radopenfiledialog 003](images/file-dialogs-radopenfiledialog003.png) 
@@ -186,6 +218,9 @@ Dim dr As DialogResult = openFileDialog.ShowDialog()
 **RadOpenFileDialog** exposes a **DereferenceLinks** property indicating whether a file dialog returns the location of the file referenced by a shortcut or the location of the actual shortcut file (with the .lnk extension).
 
 ####  Example 7: Using the DereferenceLinks property
+
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=UsingDereferenceLinksPropertyExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=UsingDereferenceLinksPropertyExample}}
 
 ````C# 
 
@@ -213,6 +248,8 @@ if (dr == System.Windows.Forms.DialogResult.OK)
     End If
 
 ````
+
+{{endregion}}
 
 >important If in multiple or single selection the first selected item is a link to a directory and **DereferenceLinks** is set to *True*, clicking the `Open` button will actually navigate to this directory.
 

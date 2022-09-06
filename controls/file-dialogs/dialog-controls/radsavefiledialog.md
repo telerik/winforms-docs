@@ -25,6 +25,9 @@ To show the dialog call its **ShowDialog** method. If a valid file is selected w
 
 ####  Example 1: Show a save file dialog
 
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=SaveFileDialogExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=SaveFileDialogExample}}
+
 ````C#
 
 RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
@@ -46,11 +49,16 @@ End If
 
 ````
 
+{{endregion}}
+
 ## Creating a stream for the selected file
 
 You can open a read-write file stream for the selected file using the **OpenFile** method. Or alternatively you can use the **FileName** property and open the file manually.
 
 ####  Example 2: Open a file stream
+
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=OpenFileStreamExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=OpenFileStreamExample}}
 
 ````C#
 
@@ -72,6 +80,8 @@ End If
 
 ````
 
+{{endregion}}
+
 ## Working with the selected file
 
 You can get the path of the selected file via the **FileName** property (see Example 1). Note that the property is empty until the **DialogResult** is valid. When the dialog closes and if **DialogResult** is OK the property will return the corresponding file path.
@@ -79,6 +89,9 @@ You can get the path of the selected file via the **FileName** property (see Exa
 The **FileName** property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 
 ####  Example 3: Set the file name 
+
+{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=SetFileNameExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=SetFileNameExample}}
 
 ````C#
 RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
@@ -95,6 +108,8 @@ saveFileDialog.FileName = "C:\Program Files\Internet Explorer\iexplore.exe"
 Dim dr As DialogResult = saveFileDialog.ShowDialog()
 
 ````
+
+{{endregion}}
 
 
 >caption Figure 2: Setting the file name
