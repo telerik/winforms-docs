@@ -136,7 +136,13 @@ RadGridView1.MasterView.TableSearchRow.ResumeSearch()
 ````
 
 {{endregion}}
+
 # See Also
+
+* [StartsWith search in RadGridView]({%slug starts-with-search-in-radgridview%})
+
+* [How to Properly Search Numeric Values in RadGridView]({%slug grid-searching-in-formated-decimal-columns%})
+
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
 
 * [Conditional Formatting Rows]({%slug winforms/gridview/rows/conditional-formatting-rows%})
