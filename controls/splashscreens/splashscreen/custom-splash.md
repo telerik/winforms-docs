@@ -1,6 +1,6 @@
 ---
-title: Custom Splash
-page_title: Custom Splash | SplashScreen
+title: Customize Splash Content
+page_title: Customize Splash Content | SplashScreen
 description: Learn how to show a custom WinForms SplashScreen.
 slug: splashscreen-custom-splash
 tags: splash, screen
@@ -8,7 +8,7 @@ published: True
 position: 3  
 ---
 
-# Custom Splash
+# Customize Splash Content
 
 The **RadSplashScreenManager** offers an overload of the **Show** method that accepts **Type** argument. This allows you to create a custom **UserControl** with the desired design for example and show it as a splash screen.
 
