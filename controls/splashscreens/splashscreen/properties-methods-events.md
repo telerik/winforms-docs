@@ -38,7 +38,11 @@ position: 4
 
 |Event|Description|
 |----|----|
-|**ContentCreated**|Occurs when the content control has been created. Note that the control is created on a separate System.Threading.Thread and it is required to use BeginInvoke/Invoke when accessing it in order to prevent cross thread exceptions. Note that this is a static event and you need to explicitly unsubscribe from it in order to prevent memory leaks. Each object that is subscribed to this event cannot be garbage collected.|
+|**ContentCreated**|Occurs when the content control has been created.| 
+|**FormLoad**|Occurs when the splash form has been loaded.|
+|**FormShown**|Occurs when the splash form is shown.|
+
+>caution Note that the events are created on a separate __System.Threading.Threads__ and it is required to use BeginInvoke/Invoke when accessing it in order to prevent cross-thread exceptions. Also, these events are static and you need to explicitly unsubscribe from them in order to prevent memory leaks. Each object that is subscribed to one of these events cannot be garbage collected.
 
 # See Also
 

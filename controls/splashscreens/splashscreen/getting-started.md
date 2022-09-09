@@ -10,7 +10,11 @@ position: 2
 
 # Getting Started
 
-**SplashScreen** is a derivative of **BaseSplash&#60;SplashScreenForm&#62;**. Actually, it is a [ShapedForm]({%slug winforms/forms-and-dialogs/shapedform%}) that contains a **RadSplashScreenControl** which is built by all the elements of the splash. By default, it is [TopMost](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.topmost?view=windowsdesktop-6.0).
+The splash screen is represented by a **RadSplashScreenForm**. Actually, it is a [ShapedForm]({%slug winforms/forms-and-dialogs/shapedform%}) which content is displayed as a splash. There are two modes of the splash:
+
+* The splash can display a predefined **RadSplashScreenControl** by given **RadSplashScreenSettings**, that contains the initial image and text. The **RadSplashScreenControl** is built by all the elements of the splash. By default, it is [TopMost](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.topmost?view=windowsdesktop-6.0).
+
+* The splash form can contain any control/UserControl, so you can achieve any look and design you like.
 
 The **RadSplashScreenManager** is responsible for showing/closing a splash screen. 
 
