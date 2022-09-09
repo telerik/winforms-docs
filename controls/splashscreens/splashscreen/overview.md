@@ -20,7 +20,7 @@ The WinForms SplashScreen allows you to display a Telerik themed control that no
 
 * Customizable image content: The control allows you to easily set the splash screen image. 
 
-* Built-in progress bar: By default, the control shows an indeterminate RadProgressBar. You can easily change this and indicate some loading progress.
+* Built-in progress bar: By default, the control shows an indeterminate progress indicator. You can easily change this and indicate some loading progress.
 
 * Customizable content/footer UI: You can customize the content/footer of the splash screen by only setting the Content/Footer properties.
 
