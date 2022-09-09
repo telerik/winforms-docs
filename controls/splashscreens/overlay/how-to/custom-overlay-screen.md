@@ -31,14 +31,9 @@ public class CustomOverlayForm : RadOverlayForm
 	{
 		loadingLabel = new RadLabel();
 		this.loadingLabel.Parent = this;
-		loadingLabel.ForeColor = Color.Black;
-		loadingLabel.Font = new Font(loadingLabel.Font.FontFamily, 16);
-		loadingLabel.Text = "Loading...";
-		this.Opacity = 0.75;
-	}
-	public RadLabel LoadingLabel
-	{
-		get { return this.loadingLabel; }
+		this.loadingLabel.ForeColor = Color.Black;
+		this.loadingLabel.Font = new Font(loadingLabel.Font.FontFamily, 16);
+		this.loadingLabel.Text = "Loading...";
 	}
 	protected override void OnSizeChanged(EventArgs e)
 	{
@@ -48,17 +43,17 @@ public class CustomOverlayForm : RadOverlayForm
 	}
 	private void UpdateLoadingLabelLocation()
 	{
-		if (this.LoadingLabel == null)
+		if (this.loadingLabel == null)
 		{
 			return;
 		}
 
 		var total = this.ClientSize;
-		var wbSize = this.LoadingLabel.Size;
+		var wbSize = this.loadingLabel.Size;
 		Point location = new Point();
 		location.X = (total.Width - wbSize.Width) / 2;
 		location.Y = (total.Height - wbSize.Height) / 2;
-		this.LoadingLabel.Location = location;
+		this.loadingLabel.Location = location;
 	}
 }
 	
@@ -75,17 +70,10 @@ Public Class CustomOverlayForm
         MyBase.New(False)
         loadingLabel = New RadLabel()
         Me.loadingLabel.Parent = Me
-        loadingLabel.ForeColor = Color.Black
-        loadingLabel.Font = New Font(loadingLabel.Font.FontFamily, 16)
-        loadingLabel.Text = "Loading..."
-        Me.Opacity = 0.75
+        Me.loadingLabel.ForeColor = Color.Black
+        Me.loadingLabel.Font = New Font(loadingLabel.Font.FontFamily, 16)
+        Me.loadingLabel.Text = "Loading..."
     End Sub
-
-    Public ReadOnly Property LoadingLabel As RadLabel
-        Get
-            Return Me.loadingLabel
-        End Get
-    End Property
 
     Protected Overrides Sub OnSizeChanged(ByVal e As EventArgs)
         MyBase.OnSizeChanged(e)
@@ -93,16 +81,16 @@ Public Class CustomOverlayForm
     End Sub
 
     Private Sub UpdateLoadingLabelLocation()
-        If Me.LoadingLabel Is Nothing Then
+        If Me.loadingLabel Is Nothing Then
             Return
         End If
 
         Dim total = Me.ClientSize
-        Dim wbSize = Me.LoadingLabel.Size
+        Dim wbSize = Me.loadingLabel.Size
         Dim location As Point = New Point()
         location.X = (total.Width - wbSize.Width) / 2
         location.Y = (total.Height - wbSize.Height) / 2
-        Me.LoadingLabel.Location = location
+        Me.loadingLabel.Location = location
     End Sub
 End Class
 
