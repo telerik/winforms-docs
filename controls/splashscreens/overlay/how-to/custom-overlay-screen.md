@@ -31,14 +31,9 @@ public class CustomOverlayForm : RadOverlayForm
 	{
 		loadingLabel = new RadLabel();
 		this.loadingLabel.Parent = this;
-		loadingLabel.ForeColor = Color.Black;
-		loadingLabel.Font = new Font(loadingLabel.Font.FontFamily, 16);
-		loadingLabel.Text = "Loading...";
-		this.Opacity = 0.75;
-	}
-	public RadLabel LoadingLabel
-	{
-		get { return this.loadingLabel; }
+		this.loadingLabel.ForeColor = Color.Black;
+		this.loadingLabel.Font = new Font(loadingLabel.Font.FontFamily, 16);
+		this.loadingLabel.Text = "Loading...";
 	}
 	protected override void OnSizeChanged(EventArgs e)
 	{
@@ -48,17 +43,17 @@ public class CustomOverlayForm : RadOverlayForm
 	}
 	private void UpdateLoadingLabelLocation()
 	{
-		if (this.LoadingLabel == null)
+		if (this.loadingLabel == null)
 		{
 			return;
 		}
 
 		var total = this.ClientSize;
-		var wbSize = this.LoadingLabel.Size;
+		var wbSize = this.loadingLabel.Size;
 		Point location = new Point();
 		location.X = (total.Width - wbSize.Width) / 2;
 		location.Y = (total.Height - wbSize.Height) / 2;
-		this.LoadingLabel.Location = location;
+		this.loadingLabel.Location = location;
 	}
 }
 	

@@ -13,7 +13,7 @@ CTAControlName: flyout
 
 Thank you for choosing __Flyout Screen__!
 
-Flyout control is a powerful tool that combines message box and pop-up control in one. It can be used either as a notification to notify the user of a long-running background process or as a message box with user control inside its content. The second use case will fit in scenarios where a complex user control needs to be shown which requires user input. 
+Flyout control is a powerful tool that combines the overlay form with any container control, which allows you to fit any design you like. It can be used as a notification to notify the user of a long-running background process with user control inside its content. Another use case is to fit in scenarios where a complex user control needs to be shown which requires user input. 
 
 ![flyout-overview 001](images/flyout-overview001.gif)
 
