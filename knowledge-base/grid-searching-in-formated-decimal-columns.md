@@ -270,6 +270,199 @@ End Sub
 
 ![grid-searching-in-formated-decimal-columns 006](images/grid-searching-in-formated-decimal-columns006.gif)
 
+### Search Results and Highlighted Cells 
+
+The search functionality is designed to highlight the **formatted text** as it highlights the precise characters that match the search criteria.
+
+Another possible solution is to disable the highlighting and implement your own custom search logic. Then, the **CellFormatting** event will be used to highlight the cells that contain search matches:
+
+>caution It is important to subscribe to the **CreateRowInfo** event at design time.
+
+````C#  
+
+public RadForm1()
+{
+    InitializeComponent();
+  
+    CultureInfo culture = new System.Globalization.CultureInfo("en-US");
+    NumberFormatInfo ni = new NumberFormatInfo();
+    ni.NumberGroupSeparator = " ";
+    culture.NumberFormat = ni;
+    System.Threading.Thread.CurrentThread.CurrentCulture = culture;
+
+    DataTable dt = new DataTable();
+    dt.Columns.Add("Id", typeof(int));
+    dt.Columns.Add("Name", typeof(string));
+    dt.Columns.Add("Price", typeof(decimal));
+
+    dt.Rows.Add(1, "Test", 461892.65);
+    dt.Rows.Add(1, "Test", 12);
+    dt.Rows.Add(1, "Test", 5461.34);
+
+    this.radGridView1.DataSource = dt;
+    this.radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
+
+    GridViewDecimalColumn decimalColumn = radGridView1.Columns["Price"] as GridViewDecimalColumn;
+    decimalColumn.FormatInfo = culture;
+    decimalColumn.FormatString = "{0:n2}";
+
+    this.radGridView1.CellFormatting += RadGridView1_CellFormatting;
+    this.radGridView1.AllowSearchRow = true;
+    this.radGridView1.MasterTemplate.MasterViewInfo.TableSearchRow.HighlightResults = false;
+    this.radGridView1.CurrentRowChanging += RadGridView1_CurrentRowChanging;
+
+
+} 
+
+private void RadGridView1_CurrentRowChanging(object sender, CurrentRowChangingEventArgs e)
+{
+    if (e.NewRow is GridViewSearchRowInfo)
+    {
+        e.Cancel = true;
+    }
+}
+
+private void RadGridView1_CellFormatting(object sender, CellFormattingEventArgs e)
+{
+    if ( e.Row.SearchCache.Contains(e.Column))
+    {
+        e.CellElement.DrawFill = true;
+        e.CellElement.GradientStyle = GradientStyles.Solid;
+        e.CellElement.BackColor = Color.LightBlue;
+    }
+    else
+    {
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+    }
+}
+
+private void RadGridView1_CreateRowInfo(object sender, GridViewCreateRowInfoEventArgs e)
+{
+    if (e.RowInfo is GridViewSearchRowInfo)
+    {
+         e.RowInfo = new CustomSearchRow(e.ViewInfo);
+    }
+}
+
+public class CustomSearchRow : GridViewSearchRowInfo
+{
+    public CustomSearchRow(GridViewInfo viewInfo) : base(viewInfo)
+    {
+       
+    } 
+    protected override void OnSearchProgressChanged(SearchProgressChangedEventArgs e)
+    {
+        base.OnSearchProgressChanged(e);
+        if (e.SearchFinished)
+        {
+            foreach (GridViewRowInfo row in this.ViewTemplate.Rows)
+            {
+                row.InvalidateRow();
+            }
+        }
+    } 
+
+    protected override bool MatchesSearchCriteria(string searchCriteria, GridViewRowInfo row, GridViewColumn col)
+    {  
+        bool result= base.MatchesSearchCriteria(searchCriteria, row, col);
+        string rawValue = row.Cells[col.Name].Value + "";
+        if (rawValue.Contains(searchCriteria))
+        { 
+            return true;
+        }
+        return result;
+    } 
+}
+
+         
+````
+````VB.NET
+
+Public Sub New()
+    InitializeComponent()
+    Dim culture As CultureInfo = New System.Globalization.CultureInfo("en-US")
+    Dim ni As NumberFormatInfo = New NumberFormatInfo()
+    ni.NumberGroupSeparator = " "
+    culture.NumberFormat = ni
+    System.Threading.Thread.CurrentThread.CurrentCulture = culture
+    Dim dt As DataTable = New DataTable()
+    dt.Columns.Add("Id", GetType(Integer))
+    dt.Columns.Add("Name", GetType(String))
+    dt.Columns.Add("Price", GetType(Decimal))
+    dt.Rows.Add(1, "Test", 461892.65)
+    dt.Rows.Add(1, "Test", 12)
+    dt.Rows.Add(1, "Test", 5461.34)
+    Me.RadGridView1.DataSource = dt
+    Me.RadGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
+    Dim decimalColumn As GridViewDecimalColumn = TryCast(RadGridView1.Columns("Price"), GridViewDecimalColumn)
+    decimalColumn.FormatInfo = culture
+    decimalColumn.FormatString = "{0:n2}"
+    AddHandler Me.RadGridView1.CellFormatting, AddressOf RadGridView1_CellFormatting
+    Me.RadGridView1.AllowSearchRow = True
+    Me.RadGridView1.MasterTemplate.MasterViewInfo.TableSearchRow.HighlightResults = False
+    AddHandler Me.RadGridView1.CurrentRowChanging, AddressOf RadGridView1_CurrentRowChanging
+End Sub
+
+Private Sub RadGridView1_CurrentRowChanging(ByVal sender As Object, ByVal e As CurrentRowChangingEventArgs)
+    If TypeOf e.NewRow Is GridViewSearchRowInfo Then
+        e.Cancel = True
+    End If
+End Sub
+
+Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As CellFormattingEventArgs)
+    If e.Row.SearchCache.Contains(e.Column) Then
+        e.CellElement.DrawFill = True
+        e.CellElement.GradientStyle = GradientStyles.Solid
+        e.CellElement.BackColor = Color.LightBlue
+    Else
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
+    End If
+End Sub
+
+Private Sub RadGridView1_CreateRowInfo(ByVal sender As Object, ByVal e As GridViewCreateRowInfoEventArgs) Handles RadGridView1.CreateRowInfo
+    If TypeOf e.RowInfo Is GridViewSearchRowInfo Then
+        e.RowInfo = New CustomSearchRow(e.ViewInfo)
+    End If
+End Sub
+
+Public Class CustomSearchRow
+    Inherits GridViewSearchRowInfo
+
+    Public Sub New(ByVal viewInfo As GridViewInfo)
+        MyBase.New(viewInfo)
+    End Sub
+
+    Protected Overrides Sub OnSearchProgressChanged(ByVal e As SearchProgressChangedEventArgs)
+        MyBase.OnSearchProgressChanged(e)
+
+        If e.SearchFinished Then
+
+            For Each row As GridViewRowInfo In Me.ViewTemplate.Rows
+                row.InvalidateRow()
+            Next
+        End If
+    End Sub
+
+    Protected Overrides Function MatchesSearchCriteria(ByVal searchCriteria As String, ByVal row As GridViewRowInfo, ByVal col As GridViewColumn) As Boolean
+        Dim result As Boolean = MyBase.MatchesSearchCriteria(searchCriteria, row, col)
+        Dim rawValue As String = row.Cells(col.Name).Value & ""
+
+        If rawValue.Contains(searchCriteria) Then
+            Return True
+        End If
+
+        Return result
+    End Function
+End Class
+
+````
+
+![grid-searching-in-formated-decimal-columns 007](images/grid-searching-in-formated-decimal-columns007.gif)
+
 # See Also
 
 * [StartsWith search in RadGridView]({%slug starts-with-search-in-radgridview%})
