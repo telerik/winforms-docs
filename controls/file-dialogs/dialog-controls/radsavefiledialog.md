@@ -25,8 +25,8 @@ To show the dialog call its **ShowDialog** method. If a valid file is selected w
 
 ####  Example 1: Show a save file dialog
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=SaveFileDialogExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=SaveFileDialogExample}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=SaveFileDialogExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=SaveFileDialogExample}}
 
 ````C#
 
@@ -57,8 +57,8 @@ You can open a read-write file stream for the selected file using the **OpenFile
 
 ####  Example 2: Open a file stream
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=OpenFileStreamExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=OpenFileStreamExample}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=OpenFileStreamExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=OpenFileStreamExample}}
 
 ````C#
 
@@ -90,8 +90,8 @@ The **FileName** property can be set manually. This will change the value displa
 
 ####  Example 3: Set the file name 
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=SetFileNameExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=SetFileNameExample}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=SetFileNameExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=SetFileNameExample}}
 
 ````C#
 RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();

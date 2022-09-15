@@ -24,8 +24,8 @@ To show the dialog call its **ShowDialog** method. If a valid folder is opened w
 
 ####  Example 1: Show a open folder dialog 
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=OpenFolderDialogExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=OpenFolderDialogExample}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=OpenFolderDialogExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=OpenFolderDialogExample}}
 
 ````C#
 
@@ -57,8 +57,8 @@ The dialog supports single and multiple selection modes. By default, you can sel
 
 ####  Example 2: Multiple selection
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=MultipleSelection}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=MultipleSelection}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=MultipleSelection}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=MultipleSelection}}
 
 ````C#
 
@@ -87,8 +87,8 @@ You can get only the name of the selected folders, without the full path, via th
 
 ####  Example 3: Get the selected folder names
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=SelectedFolderNames}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=SelectedFolderNames}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=SelectedFolderNames}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=SelectedFolderNames}}
 
 ````C#
 
@@ -126,8 +126,8 @@ You can save the last used directory by setting the **RestoreDirectory** propert
 
 ####  Example 4: Set RestoreDirectory property
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=RestoreDirectoryProperty}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=RestoreDirectoryProperty}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=RestoreDirectoryProperty}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=RestoreDirectoryProperty}}
 
 ````C#
 
