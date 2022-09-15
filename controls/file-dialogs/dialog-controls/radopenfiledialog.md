@@ -25,8 +25,8 @@ To show the dialog call its **ShowDialog** method. If a valid file is opened whe
 
 ####  Example 1: Show an open file dialog 
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=OpenFileDialogExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=OpenFileDialogExample}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=OpenFileDialogExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=OpenFileDialogExample}}
 
 ````C#
 
@@ -57,8 +57,8 @@ You can open a read-only file stream for the selected file using the OpenFile me
 
 ####  Example 2: Open a file stream 
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=OpenFileStreamExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=OpenFileStreamExample}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=OpenFileStreamExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=OpenFileStreamExample}}
 
 ````C# 
 
@@ -89,8 +89,8 @@ The dialog supports single and multiple selection modes. By default, you can sel
 
 ####  Example 3: Enable multiple selection 
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=MultipleSelectionExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=MultipleSelectionExample}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=MultipleSelectionExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=MultipleSelectionExample}}
 
 ````C# 
 
@@ -121,8 +121,8 @@ You can get only the name of the selected files, without the full path, via the 
 
 ####  Example 4: Get the selected file names
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=SelectedFileNames}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=SelectedFileNames}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=SelectedFileNames}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=SelectedFileNames}}
 
 ````C# 
 
@@ -163,8 +163,8 @@ You can save the last used directory by setting the **RestoreDirectory** propert
 
 ####  Example 5: Set RestoreDirectory property
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=RestoreDirectoryPropertyExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=RestoreDirectoryPropertyExample}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=RestoreDirectoryPropertyExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=RestoreDirectoryPropertyExample}}
 
 ````C# 
 
@@ -187,8 +187,8 @@ You can display a checkbox to control whether the file should be opened in reado
 
 ####  Example 6: Enabling the ReadOnly CheckBox
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=EnablingReadOnlyCheckBoxExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=EnablingReadOnlyCheckBoxExample}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=EnablingReadOnlyCheckBoxExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=EnablingReadOnlyCheckBoxExample}}
 
 ````C# 
 
@@ -219,8 +219,8 @@ Dim dr As DialogResult = openFileDialog.ShowDialog()
 
 ####  Example 7: Using the DereferenceLinks property
 
-{{source=..\SamplesCS\FileDialogs\FileDialogEditingOptions.cs region=UsingDereferenceLinksPropertyExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogEditingOptions.vb region=UsingDereferenceLinksPropertyExample}}
+{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=UsingDereferenceLinksPropertyExample}} 
+{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=UsingDereferenceLinksPropertyExample}}
 
 ````C# 
 
