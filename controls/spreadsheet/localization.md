@@ -32,7 +32,7 @@ End Sub
 {{endregion}} 
 
  
->important You can download a XML file that contains all the currently used strings from here: [Strings file](https://d585tldpucybw.cloudfront.net/docs/default-source/ui-for-winforms/spreadsheetstrings701ff8af-8d2e-42ef-bcd6-f0d6a1948eb7.zip?sfvrsn=21876de0_5/SpreadsheetStrings701ff8af-8d2e-42ef-bcd6-f0d6a1948eb7)
+>important You can download a XML file that contains all the currently used strings from here: [Strings file](https://github.com/telerik/winforms-sdk/blob/master/Localization%20Providers/SpreadsheetStrings.xml)
 >
 
 >note __SpreadsheetLocalizationProvider__ contains all strings related to the __RadSpreadsheetRibbonBar__ as well.
