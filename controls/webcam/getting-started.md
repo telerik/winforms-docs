@@ -28,7 +28,7 @@ In order to use **RadWebCam**, you will need to add references to the following 
 You can download the required assemblies for each control from your Telerik account: [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%}).
 
 
->caution Microsoft Media Foundation enables the development of applications and components for using digital media on **Windows Vista and later**. Thus, [RadWebCam is not support for Windows XP machines](https://social.msdn.microsoft.com/Forums/Windows/en-US/3de928f0-1190-4ee8-9d94-06f5d2db5bd2/run-media-foundation-application-on-windows-xp?forum=mediafoundationdevelopment). 
+>caution Microsoft Media Foundation enables the development of applications and components for using digital media on **Windows Vista and later**. Thus, [RadWebCam is not support for Windows XP machines](https://social.msdn.microsoft.com/Forums/Windows/en-US/3de928f0-1190-4ee8-9d94-06f5d2db5bd2/run-media-foundation-application-on-windows-xp?forum=mediafoundationdevelopment). Also, some versions of Windows 7 don't have the Media Feature Package installed, so you may need to install it separately.
 
 ## Setting up the Control
 
