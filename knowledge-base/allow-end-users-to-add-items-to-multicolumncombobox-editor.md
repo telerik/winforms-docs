@@ -213,7 +213,9 @@ End Class
 >note **RadGridView** is bound to the Northwind.Products table. The **GridViewMultiComboBoxColumn** uses the Northwind.Categories table. 
 
 
+# See Also
 
+* [User-Defined Values in RadMultiColumnComboBox]({%slug user-defined-values-in-multicolumncombobox%})
 
 
 

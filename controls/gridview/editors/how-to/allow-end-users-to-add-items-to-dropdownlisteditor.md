@@ -243,3 +243,5 @@ A complete solution which demonstrate the approach in this article is available 
 # See Also
 * [Change the Active Editor Depending on the Cell Value Type.]({%slug winforms/gridview/editors/how-to/change-the-active-editor-depending-on-the-cell-value-type.%})
 
+* [User-Defined Values in RadMultiColumnComboBox]({%slug user-defined-values-in-multicolumncombobox%})	
+

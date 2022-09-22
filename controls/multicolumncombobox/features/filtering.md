@@ -99,4 +99,6 @@ Me.radMultiColumnComboBox1.EditorControl.FilterDescriptors.Add(compositeFilter)
 
 * [Auto-Complete]({%slug winforms/multicolumncombobox/auto-complete%})	
 
-* [How to Use GridView Filter Row in RadMultiColumnCombobox]({%slug grid-filter-row-in-multicolumncobobox%})	
+* [How to Use GridView Filter Row in RadMultiColumnCombobox]({%slug grid-filter-row-in-multicolumncobobox%})
+
+* [User-Defined Values in RadMultiColumnComboBox]({%slug user-defined-values-in-multicolumncombobox%})	
