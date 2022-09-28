@@ -25,7 +25,7 @@ When a shape is selected in RadDiagram and the user hits the Delete key, only th
 
 ## Solution
 
-**DiagramInputBehavior** is responsible for handling the user's input. Hence, we should create a derivative of **DiagramInputBehavior** and override its **HandleKeyDown**. When the Delete key is pressed, all selected shapes are iterated, their connections are removed. At the end, the selected shape is also deleted:
+**DiagramInputBehavior** is responsible for handling the user's input. Hence, we should create a derivative of **DiagramInputBehavior** and override its **HandleKeyDown**. When the Delete key is pressed, all selected shapes are iterated, their connections are removed. In the end, the selected shape is also deleted:
  
 ````C#
 
