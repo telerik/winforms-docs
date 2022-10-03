@@ -177,3 +177,7 @@ Below are the different kinds of occurrences and their possible fixes:
      * Right-click the Toolbox inside Visual Studio and click Reset
 
 * Multiple entries per control, number increasing with each start of the IDE: this is the worst scenario we have come across. All the registry entries and files on the customer machine seemed fine in this case. The only fix we were able to apply was a complete uninstall of Telerik UI for WinForms and Visual Studio 2010, followed by a clean install of the IDE and the suite.
+
+# See Also
+
+* [How to Deal with Multiplied Controls in Toolbox]({%slug multiplied-controls-in-toolbox%})

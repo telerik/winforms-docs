@@ -29,3 +29,7 @@ The __Toolbox Configurator__ is supported in Visual Studio 2008, 2010, 2012, 201
 
 
 ![installation-deployment-and-distribution-vsx-toolbox-configurator 003](images/installation-deployment-and-distribution-vsx-toolbox-configurator003.png)
+
+# See Also
+
+* [How to Deal with Multiplied Controls in Toolbox]({%slug multiplied-controls-in-toolbox%})
