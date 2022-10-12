@@ -82,3 +82,4 @@ In addition to the pure assembly reference change, the upgrade wizard provides s
 * [Install using NuGet Packages]({%slug winforms/nuget%})
 * [Upgrade Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%})
 * [Download New Version]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})
+* [Designer is Not Loading]({%slug designer-not-loading%})
