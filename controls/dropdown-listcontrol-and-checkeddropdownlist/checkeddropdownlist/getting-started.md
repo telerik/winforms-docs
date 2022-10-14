@@ -59,3 +59,4 @@ End Sub
 
 * [Structure]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/control-element-structure%})
 * [Design Time]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/design-time%})
+* [How to Order the Tokens Based on the Items Collection]({%slug tokens-order-in-checkeddropdownlist%})
