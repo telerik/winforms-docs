@@ -271,3 +271,4 @@ As a result of the update call, the **CellFormatting** event (and the other form
 * [The Style Property]({%slug winforms/gridview/cells/style%})
 * [Change the row hot tracking color in RadGridView by using VSB]({%slug change-row-hot-tracking-color-in-radgrid-by-using-vsb%})
 * [Formatting Priority Order in RadGridView]({%slug gridview-cells-rows-formatting-priority%})
+* [How to Prevent Applying Formatting To Other Columns In RadGridView CellElements]({%slug customize-grid-data-cell-element%})
