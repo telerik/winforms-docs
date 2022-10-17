@@ -144,6 +144,11 @@ checkBoxColumn.EditMode = EditMode.OnValueChange
 |**HeaderCheckBoxAlignmentProperty**|Controls the alignment of the checkbox to the Text.|
 |**CheckFilteredRows**|Gets or sets a value indicating if the hidden rows will be checked by the header check-box.|
 
+|HeaderCheckBoxPosition/HeaderCheckBoxAlignment|Result|
+|----|----|
+|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleLeft|![gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn002.png)|
+|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleRight|![gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn003.png)|
+
 
 # See Also
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
