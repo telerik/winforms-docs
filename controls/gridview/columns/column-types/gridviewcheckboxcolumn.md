@@ -151,6 +151,9 @@ checkBoxColumn.EditMode = EditMode.OnValueChange
 
 
 # See Also
+
+* [How to Convert a GridViewCheckBoxColumn to a Custom ToggleSwitch Column]({%slug convert-checkboxcolumn-to-toggleswitchcolumn%})
+
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
 
 * [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
