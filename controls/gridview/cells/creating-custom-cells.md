@@ -600,6 +600,8 @@ End Sub
 
 # See Also
 
+* [How to Convert a GridViewCheckBoxColumn to a Custom ToggleSwitch Column]({%slug convert-checkboxcolumn-to-toggleswitchcolumn%})
+
 * [How to Create Custom Cells with Input Elements]({%slug custom-gridview-cells-with-input-elements%})
 
 * [Accessing and Setting the CurrentCell]({%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%})
