@@ -140,3 +140,9 @@ See [End-user Capabilities Sorting]({%slug winforms/gridview/end-user-capabiliti
 
 * [GridView Cells In Sorted Columns Jumps To a New Position After Editing Its Value]({%slug grid-cells-in-sorted-columns-jumps-to-a-new-position-after-editing-its-value%})
 
+* [Use Custom Comparer to Speed up the Sorting in RadGridView]({%slug use-custom-comparer-to-speed-up-the-sorting-in-radgridview%})
+
+* [Improve GridView Sorting for Columns with Similar Values]({%slug improve-gridview-sorting%})
+
+
+
