@@ -13,12 +13,12 @@ res_type: kb
 
 ## Problem
 
-When sorting the **RadGridView **logic should retrieve all object properties  by using reflection. This is needed because the sorting must work with different kind of objects and should be able to compare them. Taking the property value with reflection is slow (this can be noted when you have large amount of rows in the grid) and can be avoided by using a custom comparer where the items are directly casted to the respective objects.   
+When sorting the **RadGridView** logic should retrieve all object properties  by using reflection. This is needed because the sorting must work with different kind of objects and should be able to compare them. Taking the property value with reflection is slow (this can be noted when you have large amount of rows in the grid) and can be avoided by using a custom comparer where the items are directly casted to the respective objects.   
    
 ## Solution
 
-First, you need to implement the custom comparer class. This class should implement the **IComparer&lt;GridViewRowInfo&gt;** interface. This interface has only one method called **Compare**. It takes two arguments and their type is **GridViewRowInfo **(In general the class should be able to compare two rows and return the result).    
-In addition you should have access to the **SortDescritors **collection of the grid view. This can be achieved by passing it to group comparer constructor. This will allow you to compare the rows according to all columns sort descriptors and the current sort direction.   
+First, you need to implement the custom comparer class. This class should implement the **IComparer&lt;GridViewRowInfo&gt;** interface. This interface has only one method called **Compare**. It takes two arguments and their type is **GridViewRowInfo** (In general the class should be able to compare two rows and return the result).    
+In addition you should have access to the **SortDescritors** collection of the grid view. This can be achieved by passing it to group comparer constructor. This will allow you to compare the rows according to all columns sort descriptors and the current sort direction.   
    
 The **CompareDataItems** method should be able to compare all data object properties. This way the user will be able to sort each column.  
    
