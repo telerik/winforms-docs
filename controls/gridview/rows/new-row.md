@@ -168,14 +168,14 @@ It is possible to add default values in all of the fields. However, by default y
 ````C#
 private void RadGridView1_DefaultValuesNeeded(object sender, GridViewRowEventArgs e)
 {
-    var args = e as DefaultValesNeeedEventArgs;
+    var args = e as DefaultValuesNeededEventArgs;
     args.AddWithDefaultValues = true;
 }
 
 ````
 ````VB.NET
 Private Sub RadGridView1_DefaultValuesNeeded1(ByVal sender As Object, ByVal e As GridViewRowEventArgs)
-    Dim args = TryCast(e, DefaultValesNeeedEventArgs)
+    Dim args = TryCast(e, DefaultValuesNeededEventArgs)
     args.AddWithDefaultValues = True
 End Sub
 
