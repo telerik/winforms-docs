@@ -21,6 +21,9 @@ BindingList is a generic list type that has additional binding support. While yo
 ````C#
 public class MyObject
 {
+    public MyObject()
+    {
+    }
     public MyObject(int myInt, string myString)
     {
         _myInt = myInt;
@@ -43,6 +46,8 @@ public class MyObject
 ````
 ````VB.NET
 Public Class MyObject
+    Public Sub New()
+        End Sub
     Public Sub New(ByVal myInt As Integer, ByVal myString As String)
         _myInt = myInt
         _myString = myString
