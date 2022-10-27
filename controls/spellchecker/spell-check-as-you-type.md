@@ -17,7 +17,7 @@ As the user types in one of the supported controls a red underline indicates the
 
 ![spellchecker-spell-check-as-you-type 001](images/spellchecker-spell-check-as-you-type001.png)
 
->important Supported controls are: __RadTextBox__ , __RadTextBoxControl__ and __TextBox__ 
+>important Supported controls are: __RadTextBox__ , __RadTextBoxControl__. **RichTextBox** and __TextBox__. 
 
 In order to enable this functionality you should set the __AutoSpellCheckControl__ property of **RadSpellChecker** to an instance of the supported controls:
 
