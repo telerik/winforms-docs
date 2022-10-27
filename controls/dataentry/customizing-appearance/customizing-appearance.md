@@ -82,6 +82,29 @@ Next item
 
 ![dataentry-customizing-appearance003](images/dataentry-customizing-appearance003.png)  
 
+## Changing Validation Panel BackColor
+
+The following code snippets represent how to change the BackColor property of Validation Panel:
+
+### Change Back Color
+
+{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ChangeBackColor}} 
+{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ChangeBackColor}}
+````C#
+this.radDataEntry1.ValidationPanel.PanelElement.Fill.BackColor = Color.PapayaWhip;
+
+````
+````VB.NET
+Me.radDataEntry1.ValidationPanel.PanelElement.Fill.BackColor = Color.PapayaWhip
+
+```` 
+
+{{endregion}}
+
+>caption Fig4. Set Validaton Panel BackColor.
+
+![dataentry-customizing-appearance003](images/dataentry-customizing-appearance004.png)  
+
 # See Also
 
  * [Structure]({%slug winforms/dataentry/control-element-structure%})
