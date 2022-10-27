@@ -18,7 +18,7 @@ RadRichTextBox is a control that is able to display and edit rich-text content i
 {% include cta-panel-overview.html %}
 {% endif %}
 
->important **RadRichTextBox** has been replaced by **RadRichTextEditor**. Plese refer to the following help article demonstraing how to upgrade: [Upgrading to RadRichTextEditor](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/overview)
+>important **RadRichTextBox** has been replaced by **RadRichTextEditor**. Please refer to the following help article demonstrating how to upgrade: [Upgrading to RadRichTextEditor]({%slug winforms/richtexteditor-/upgrading-to-radrichtexteditor%})
 >
 
 >note RadRichTextBox and RadSpellChecker require .NET Framework 4.0.
