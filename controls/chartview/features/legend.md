@@ -35,7 +35,8 @@ Me.RadChartView1.LegendTitle = "Legend"
 
 {{endregion}} 
 
->caoption Figure 1: Show Legend
+>caption Figure 1: Show Legend
+
 ![chartview-features-legend 001](images/chartview-features-legend001.png)
 
 ##  Customize legend
@@ -63,6 +64,7 @@ Me.RadChartView1.ChartElement.LegendElement.TitleElement.ForeColor = Drawing.Col
 {{endregion}} 
 
 >caption Figure 2: Legend Settings
+
 ![chartview-features-legend 002](images/chartview-features-legend002.png)
 
 You can dock the legend to each of the four sides of the control by setting the __LegendPosition__ property.
@@ -84,6 +86,7 @@ Me.RadChartView1.ChartElement.LegendPosition = LegendPosition.Bottom
 {{endregion}}
 
 >caption Figure 3: Legend Position 
+
 ![chartview-features-legend 003](images/chartview-features-legend003.png)
 
 Alternatively, you can set it to float over the chart view. Here is how to set the legend to stay at position  *200 , 0* over the chart area.
@@ -110,7 +113,35 @@ Me.RadChartView1.ChartElement.LegendOffset = New Point(200, 0)
 {{endregion}} 
 
 >caption Figure 4: Float Legend
+
 ![chartview-features-legend 004](images/chartview-features-legend004.png)
+
+
+>note As of **R3 2022 SP2** RadChartView supports wrapping for its legend items. It is controlled by the ChartElement.**LegendItemsLayout** property. The available options are: **Stack** - the items are positioned in rows or columns(horizontally or vertically) and if necessary a scrollbar is shown. **Wrap** - the items are positioned in rows or columns, based on the orientation property. When the space is filled, the container automatically wraps items onto a new row or column. 
+
+#### Wrap Legend Items
+
+{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=WrapLegend}} 
+{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=WrapLegend}} 
+
+````C#
+
+this.radChartView1.ChartElement.LegendItemsLayout = LegendItemsLayout.Wrap;
+this.radChartView1.ChartElement.LegendElement.WrapPanelElement.Orientation = System.Windows.Forms.Orientation.Horizontal;
+
+````
+````VB.NET
+
+Me.RadChartView1.ChartElement.LegendItemsLayout = LegendItemsLayout.Wrap
+Me.RadChartView1.ChartElement.LegendElement.WrapPanelElement.Orientation = System.Windows.Forms.Orientation.Horizontal
+
+````
+
+{{endregion}} 
+
+|LegendItemsLayout.Stack|LegendItemsLayout.Wrap|
+|----|----|
+|![chartview-features-legend 009](images/chartview-features-legend009.png)|![chartview-features-legend 010](images/chartview-features-legend010.png)|
 
 ## Setup LegendItem
 
@@ -137,6 +168,7 @@ line.LegendTitle = "Windows 8"
 {{endregion}} 
 
 >caption Figure 5: Legend Properties
+
 ![chartview-features-legend 005](images/chartview-features-legend005.png)
 
 ## Modify LegendItem title
@@ -160,7 +192,8 @@ Me.RadChartView1.ChartElement.LegendElement.Items(0).Title = "Linux"
 
 {{endregion}} 
 
->catpion Figure 6: Changed Text
+>caption Figure 6: Changed Text
+
 ![chartview-features-legend 006](images/chartview-features-legend006.png)
 
 ## Add/Remove LegendItems
@@ -193,6 +226,7 @@ Me.RadChartView1.ChartElement.LegendElement.Items.Add(item)
 {{endregion}} 
 
 >caption Figure 7: Added Item
+
 ![chartview-features-legend 007](images/chartview-features-legend007.png)
 
 ## Custom Legend Item
@@ -271,6 +305,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 8: Custom Legend Item
+
 ![chartview-features-legend 008](images/chartview-features-legend008.png)
 
 # See Also
