@@ -78,6 +78,59 @@ Node4.Selected = True
 
 {{endregion}}
 
+## SelectedNodeChanged Event
+
+When multiple selections are allowed and you click a new node, the selection is supposed to be cleared. That is why the __SelectedNodeChanged__ event is fired twice - for the previously selected node first and the it is fired for the new mode.
+In the RadTreeViewEventArgs you can distinguish the two event firings by the __Action__ property which is set to __Unknown__ when the selection is cleared.
+
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectedNodeEvent}} 
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectedNodeEvent}}
+
+````C#
+private void radTreeView1_SelectedNodeChanged(object sender, Telerik.WinControls.UI.RadTreeViewEventArgs e)
+{
+    if (e.Action != Telerik.WinControls.UI.RadTreeViewAction.ByMouse)
+    {
+        Console.WriteLine(e.Node.Text);
+    }
+}
+
+````
+````VB.NET
+Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RadTreeViewEventArgs)
+        If e.Action <> Telerik.WinControls.UI.RadTreeViewAction.ByMouse Then
+            Console.WriteLine(e.Node.Text)
+        End If
+End Sub
+
+````
+
+Another approach will be to check the __Selected__ property of the node. If it is true,execute your logic.
+
+{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectedPropertyOfTheNode}} 
+{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectedPropertyOfTheNode}}
+
+````C#
+private void radTreeView2_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
+{
+    if (e.Node.Selected == true)
+    {
+        Console.WriteLine(e.Node.Text);
+    }
+}
+
+````
+````VB.NET
+Private Sub RadTreeView2_SelectedNodeChanged(ByVal sender As Object, ByVal e As RadTreeViewEventArgs)
+    If e.Node.Selected = True Then
+        Console.WriteLine(e.Node.Text)
+    End If
+End Sub
+
+````
+
+{{endregion}}
+
 # See Also
 * [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})
 
