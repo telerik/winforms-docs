@@ -13,15 +13,24 @@ previous_url: treeview-working-with-nodes-events
 
 __RadTreeView__ provides a large set of events which allows you to respond to node interactions. 
 
-* __NodeAdded/NodeAdding__ - the events occur before and after node is added.
+* __NodeAdded/NodeAdding__: The events occur before and after node is added.
 
-* __NodeRemoved/NodeRemoving__- the events occur before and after node is removed.
+* __NodeRemoved/NodeRemoving__: The events occur before and after node is removed.
 
-* __NodeExpandedChanged/NodeExpandedChanging__ - the events occur before and after node is expanded or collapsed.
+* __NodeExpandedChanged/NodeExpandedChanging__: The events occur before and after node is expanded or collapsed.
 
-* __NodeMouseClick/NodeMouseDoubleClick__ - the events occur when a node is clicked or double clicked. 
+* __NodeMouseClick/NodeMouseDoubleClick__: The events occur when a node is clicked or double clicked. 
 
->note Since __R3 2020__ the __NodeMouseClick/NodeMouseDoubleClick__  events offer one additional parameter which allows access the original MouseEventArgs. It is neccessary to cast the event arguments to __RadTreeViewMouseEventArgs__.
+>note Since __R3 2020__ the __NodeMouseClick/NodeMouseDoubleClick__  events offer one additional parameter which allows access to the original MouseEventArgs. It is necessary to cast the event arguments to __RadTreeViewMouseEventArgs__.
+
+* __SelectedNodeChanging__: The event occurs before a tree node is selected.
+
+* __SelectedNodeChanged__: The event occurs after the tree node is selected.
+
+>note Note that __SelectedNodeChanged__ event fires twice. For more information, you can see the [Selecting Nodes]({%slug winforms/treeview/working-with-nodes/selecting-nodes%}) article.
+
+* __SelectedNodesChanged__ - the event occurs when SelectedNodes collection has been changed.
+
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=NodeMouseClick}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=NodeMouseClick}} 
@@ -72,3 +81,4 @@ The above events are using __RadTreeViewEventArgs__ and __RadTreeViewCancelEvent
 
 * [Filtering Nodes]({%slug winforms/treeview/working-with-nodes/filtering-nodes%})
 
+* [Selecting Nodes]({%slug winforms/treeview/working-with-nodes/selecting-nodes%})
