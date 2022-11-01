@@ -19,15 +19,15 @@ __RadTreeView__ provides a large set of events which allows you to respond to no
 
 * __NodeExpandedChanged/NodeExpandedChanging__: The events occur before and after node is expanded or collapsed.
 
-* __NodeMouseClick/NodeMouseDoubleClick__ - the events occur when a node is clicked or double clicked. 
+* __NodeMouseClick/NodeMouseDoubleClick__: The events occur when a node is clicked or double clicked. 
 
->note Since __R3 2020__ the __NodeMouseClick/NodeMouseDoubleClick__  events offer one additional parameter which allows access the original MouseEventArgs. It is neccessary to cast the event arguments to __RadTreeViewMouseEventArgs__.
+>note Since __R3 2020__ the __NodeMouseClick/NodeMouseDoubleClick__  events offer one additional parameter which allows access to the original MouseEventArgs. It is necessary to cast the event arguments to __RadTreeViewMouseEventArgs__.
 
-* __SelectedNodeChanging__ - the event occurs before a tree node is selected.
+* __SelectedNodeChanging__: The event occurs before a tree node is selected.
 
-* __SelectedNodeChanged__ - the event occurs after the tree node is selected.
+* __SelectedNodeChanged__: The event occurs after the tree node is selected.
 
->note Note that __SelectedNodeChanged__ event fires twice. For more information you can see the [Selecting Nodes]({%slug winforms/treeview/working-with-nodes/selecting-nodes%}) article.
+>note Note that __SelectedNodeChanged__ event fires twice. For more information, you can see the [Selecting Nodes]({%slug winforms/treeview/working-with-nodes/selecting-nodes%}) article.
 
 * __SelectedNodesChanged__ - the event occurs when SelectedNodes collection has been changed.
 
