@@ -80,8 +80,7 @@ Node4.Selected = True
 
 ## SelectedNodeChanged Event
 
-When multiple selections are allowed and you click a new node, the selection is supposed to be cleared. That is why the __SelectedNodeChanged__ event is fired twice - for the previously selected node first and the it is fired for the new mode.
-In the RadTreeViewEventArgs you can distinguish the two event firings by the __Action__ property which is set to __Unknown__ when the selection is cleared.
+When multiple selection functionality is turned on, the __SelectedNodeChanged__ event will be called twice: first for the previously selected node first and one more time for the newly selected node. In the RadTreeViewEventArgs you can distinguish the two event firings by the __Action__ property which is set to __Unknown__ when the selection is cleared.
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectedNodeEvent}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectedNodeEvent}}
@@ -105,7 +104,9 @@ End Sub
 
 ````
 
-Another approach will be to check the __Selected__ property of the node. If it is true,execute your logic.
+{{endregion}}
+
+Another approach will be to check the __Selected__ property of the node. If it is true, execute your logic.
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectedPropertyOfTheNode}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectedPropertyOfTheNode}}
