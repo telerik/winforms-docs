@@ -26,7 +26,7 @@ Add Korean language to your Windows 11 machine:
 
 ![duplicated-korean-characters-in-richtexteditor 003](images/duplicated-korean-characters-in-richtexteditor003.png)
 
-Press keys as the following order with English keyboard, e.g.**rkskekfk**. In Korean IME you are expected to get Korean letters:
+Press keys in the following order with the __English__ keyboard, e.g.**rkskekfk**. In Korean IME you are expected to get Korean letters:
 
 ![duplicated-korean-characters-in-richtexteditor 003](images/duplicated-korean-characters-in-richtexteditor003.gif) 
 
@@ -36,13 +36,13 @@ However, on some Windows versions, the Korean symbols may be duplicated:
 
 ## Solution
 
-Microsoft IME has upgrade to a new version, but not all features are compatible with it. If you encounter issues, you can return to using the previous version:
+Microsoft IME has upgraded to a new version, but not all features are compatible with it. If you encounter issues, you can return to using the previous version:
 
 ![duplicated-korean-characters-in-richtexteditor 005](images/duplicated-korean-characters-in-richtexteditor005.png)
 
 ![duplicated-korean-characters-in-richtexteditor 006](images/duplicated-korean-characters-in-richtexteditor006.png)
 
-Make sure that you switch to previous Microsoft IME:
+Make sure that you switch to the previous Microsoft IME:
 
 ![duplicated-korean-characters-in-richtexteditor 007](images/duplicated-korean-characters-in-richtexteditor007.png)
 
