@@ -20,6 +20,10 @@ We do provide several builds of our assemblies - one for **.NET 2.0**, one for *
 
 ![assemblies-version 004](images/assemblies-version004.png)
 
+>caution As of **R3 2022 SP2** Telerik UI for WinForms suite offers **.NET 7** distribution. 
+
+![assemblies-version 005](images/assemblies-version005.png)
+
 
 Right-click over the .dll file and select *Properties*. Then, navigate to the *Details* tab:
 
