@@ -36,7 +36,7 @@ It is fired right after a group is already painted. It is appropriate if you nee
 * **Graphics**: Gets the System.Drawing.Graphics object. 
 * **Bounds**: Gets the Rectangle bounds of the group.
 
->note If the **GroupPainting** is **Handled**, the **GroupPainted** wouldn't be fired. 
+>note If the **GroupPainting** is **Handled**, the **GroupPainted** and **ItemPainting** events wouldn't be fired. 
 
 {{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=GroupPainting}} 
 {{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=GroupPainting}} 
