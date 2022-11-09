@@ -24,7 +24,7 @@ This tutorial demonstrates how to add custom menu items to the default RadContex
 
 To add your custom RadMenuItems, you can subscribe to the __ContextMenuOpening__ event of the AutoCompleteTextBox element inside the control. The code snippet below demonstrates how to navigate to this element.
  
-![checked-dropdownlist-add-tokens](images/checked-dropdownlist-contextmenu.gif)
+![checked-dropdownlist-add-tokens](images/checked-dropdownlist-contextmenu.png)
 
 
 ````C#
@@ -37,8 +37,26 @@ public Form1()
 
 private void AutoCompleteTextBox_ContextMenuOpening(object sender, TreeBoxContextMenuOpeningEventArgs e)
 {
-	e.ContextMenu.DropDown.Items.Clear();
-	e.ContextMenu.Items.Add(new RadMenuItem("Test item"));
+    RadMenuItem menuItem1 = new RadMenuItem();
+    menuItem1.Click += MenuItem1_Click;
+    menuItem1.Text = "Show";
+	
+    RadMenuItem menuItem2 = new RadMenuItem();
+    menuItem2.Click += MenuItem2_Click;
+    menuItem2.Text = "Hide";
+	
+	e.ContextMenu.Items.Add(menuItem1);
+	e.ContextMenu.Items.Add(menuItem2);
+
+}
+private void MenuItem1_Click(object sender, EventArgs e)
+{
+    // TODO
+}
+
+private void MenuItem2_Click(object sender, EventArgs e)
+{
+    //TODO
 }
 
 ````
@@ -49,8 +67,24 @@ Public Sub New()
 End Sub
 
 Private Sub AutoCompleteTextBox_ContextMenuOpening(ByVal sender As Object, ByVal e As TreeBoxContextMenuOpeningEventArgs)
-	e.ContextMenu.DropDown.Items.Clear()
-	e.ContextMenu.Items.Add(New RadMenuItem("Test item"))
+	Dim menuItem1 As RadMenuItem = New RadMenuItem()
+	AddHandler menuItem1.Click, AddressOf MenuItem1_Click
+	menuItem1.Text = "Show"
+	
+	Dim menuItem2 As RadMenuItem = New RadMenuItem()
+	AddHandler menuItem2.Click, AddressOf MenuItem2_Click
+	menuItem2.Text = "Hide"
+	
+	e.ContextMenu.Items.Add(menuItem1)
+	e.ContextMenu.Items.Add(menuItem2)
+End Sub
+
+Private Sub MenuItem1_Click(ByVal sender As Object, ByVal e As EventArgs)
+'TODO
+End Sub
+
+Private Sub MenuItem2_Click(ByVal sender As Object, ByVal e As EventArgs)
+'TODO
 End Sub
 
 
