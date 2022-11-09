@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview - WinForms DropDownList Control
 description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
-slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/overview
+slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist
 tags: dropdownlist
 published: True
 position: 0
