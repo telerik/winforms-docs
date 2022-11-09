@@ -45,8 +45,8 @@ private void AutoCompleteTextBox_ContextMenuOpening(object sender, TreeBoxContex
     menuItem2.Click += MenuItem2_Click;
     menuItem2.Text = "Hide";
 	
-	e.ContextMenu.Items.Add(menuItem1);
-	e.ContextMenu.Items.Add(menuItem2);
+    e.ContextMenu.Items.Add(menuItem1);
+    e.ContextMenu.Items.Add(menuItem2);
 
 }
 private void MenuItem1_Click(object sender, EventArgs e)
