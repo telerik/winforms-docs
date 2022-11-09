@@ -26,7 +26,7 @@ The observed slight delay occurs when RadSpellchecker loads the [dictionary]({%s
 
 You can choose when this loading time will be performed:
 
-1\. Instant loading of the form but wait the dictionary loading when you start typing for the first time. 
+1\. Instant loading of the form but wait for the dictionary loading when you start typing for the first time. 
 
 2\. Slight delay when showing the window to load the dictionary (by setting some initial text inside the AutoSpellCheckControl and then clearing it) but then instant typing in the input box will be available.
 
