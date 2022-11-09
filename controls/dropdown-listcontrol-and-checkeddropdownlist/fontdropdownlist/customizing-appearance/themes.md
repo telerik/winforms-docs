@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadFontDropDownList
+page_title: Themes - RadFontDropDownList
 description: RadFontDropDownList represents a drop down list with built-in fonts that are installed on the system.
 slug: winforms/editors/fontdropdownlist/accessing-and-customizing-elements/themes
 tags: formatting,items, themes

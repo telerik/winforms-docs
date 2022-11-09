@@ -1,6 +1,6 @@
 ---
 title: ZOrder
-page_title: ZOrder | RadDiagram
+page_title: ZOrder - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/items-manipulation/zorder
 tags: zorder

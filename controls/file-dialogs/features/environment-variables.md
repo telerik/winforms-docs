@@ -1,6 +1,6 @@
 ---
 title: Environment Variables
-page_title: Environment Variables | File Dialogs
+page_title: Environment Variables - File Dialogs
 description:  
 slug: file-dialogs-environment-variables
 tags: filedialogs

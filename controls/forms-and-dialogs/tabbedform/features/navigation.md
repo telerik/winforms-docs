@@ -1,6 +1,6 @@
 ---
 title: Navigation
-page_title: Navigation | RadTabbedForm
+page_title: Navigation - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
 slug: radtabbedform-navigation 
 tags: radtabbedform

@@ -1,6 +1,6 @@
 ---
 title: Azure Chat Bot
-page_title: Azure Chat Bot | Chat
+page_title: Azure Chat Bot - Chat
 description: The idea of this tutorial is to show you how you can quickly build a chat bot with Bot Framework and connect it to RadChat.
 slug: winforms/chat/integration/azure-chat-bot
 tags: chat

@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection | UI for WinForms Documentation
+page_title: Selection - UI for WinForms Documentation
 description: Selection
 slug: winforms/richtextbox-(obsolete)/features/selection
 tags: selection

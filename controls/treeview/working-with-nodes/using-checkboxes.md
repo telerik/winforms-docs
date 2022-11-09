@@ -1,6 +1,6 @@
 ---
 title: Using Checkboxes
-page_title: Using Checkboxes | RadTreeView
+page_title: Using Checkboxes - RadTreeView
 description: RadTreeView can display CheckBox in each node. This article shows how you enable this functionality.
 slug: winforms/treeview/working-with-nodes/using-checkboxes
 tags: using,checkboxes

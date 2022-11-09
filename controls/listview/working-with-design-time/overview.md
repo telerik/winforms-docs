@@ -1,6 +1,6 @@
 ---
 title: Design Time Basics
-page_title: Design Time Basics | RadListView
+page_title: Design Time Basics - RadListView
 description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/working-with-design-time/design-time
 tags: listview

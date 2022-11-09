@@ -1,6 +1,6 @@
 ---
 title: Expand Behavior
-page_title: Expand Behavior | RadPivotGrid
+page_title: Expand Behavior - RadPivotGrid
 description: Expand Behavior
 slug: winforms/pivotgrid/expand-behavior
 tags: expand,behavior

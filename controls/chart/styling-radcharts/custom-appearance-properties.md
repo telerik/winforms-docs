@@ -1,6 +1,6 @@
 ---
 title: Custom Appearance Properties
-page_title: Custom Appearance Properties | UI for WinForms Documentation
+page_title: Custom Appearance Properties - UI for WinForms Documentation
 description: Custom Appearance Properties
 slug: winforms/chart/styling-radcharts/custom-appearance-properties
 tags: custom,appearance,properties

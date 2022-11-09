@@ -1,6 +1,6 @@
 ---
 title: Adding links
-page_title: Adding links | RadGanttView
+page_title: Adding links - RadGanttView
 description: The CollectionEditor allows you to add links (dependences) between the items in the gantt view at design time.
 slug: winforms/ganttview-/design-time/adding-links
 tags: adding,links

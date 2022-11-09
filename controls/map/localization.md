@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadMap
+page_title: Localization - RadMap
 description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
 slug: winforms/map/localization
 tags: map, structure

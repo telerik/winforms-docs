@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: QR Code | Barcode
+page_title: QR Code - Barcode
 description: QR code (Quick Response Code) is the trademark for a type of matrix barcode.
 slug: winforms/barcode/barcode-types/2d-barcodes/qrcode/overview 
 tags: barcode, qrcode

@@ -1,6 +1,6 @@
 ---
 title: Donut Shape
-page_title: Donut Shape| Telerik Presentation Framework
+page_title: Donut Shape- Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms/telerik-presentation-framework/donut-shape
 tags: donut-shape

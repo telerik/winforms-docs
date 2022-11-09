@@ -1,6 +1,6 @@
 ---
 title: Starting VSB
-page_title: Starting VSB | UI for WinForms Tools
+page_title: Starting VSB - UI for WinForms Tools
 description: Visual Style Builder is an end-user application that allows fast and intuitive styling of all controls in the Windows Forms suite.
 slug: winforms/tools/visual-style-builder/starting-vsb
 tags: starting,vsb

@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | RadMultiColumnComboBox
+page_title: Properties, Methods and Events - RadMultiColumnComboBox
 description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
 slug: winforms/multicolumncombobox/selectedindexchanged
 tags: selectedindexchanged

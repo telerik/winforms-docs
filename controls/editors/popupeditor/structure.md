@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | RadPopupEditor
+page_title: Structure - RadPopupEditor
 description: This article shows the elements used in RadPopupEditor. 
 slug: winforms/editors/popupeditor/structure
 tags: structure

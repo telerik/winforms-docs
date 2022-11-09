@@ -1,6 +1,6 @@
 ---
 title: Scale Indicators
-page_title: Scale Indicators| RadMap
+page_title: Scale Indicators- RadMap
 description: The scale indicators use two measures - imperial and metric. Depending on the scale of the view port the indicators have two modes showing miles and kilometers or feet and meters.
 slug: winforms/map/features/scale-indicators
 tags: map, scale indicators

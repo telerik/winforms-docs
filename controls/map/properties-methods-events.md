@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods, Events | RadMap
+page_title: Properties, Methods, Events - RadMap
 description: RadMap can visualize tile data from the Bing Maps and the OpenStreetMaps REST services as well as from the local file system.
 slug: winforms/map/properties-methods-and-events
 tags: radmap, properties, methods, events

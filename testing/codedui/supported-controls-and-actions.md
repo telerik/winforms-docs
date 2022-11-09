@@ -1,6 +1,6 @@
 ---
 title: Supported Controls and Actions
-page_title: Supported Controls and Actions | UI for WinForms Documentation
+page_title: Supported Controls and Actions - UI for WinForms Documentation
 description: Supported Controls and Actions
 slug: winforms/codedui/supported-controls-and-actions
 tags: supported,controls,and,actions

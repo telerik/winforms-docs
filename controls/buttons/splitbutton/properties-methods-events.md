@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | UI for WinForms Documentation
+page_title: Properties, Methods and Events - UI for WinForms Documentation
 description: RadSplitButton provides a menu-like interface contained within a button that can be placed anywhere on a form.
 slug: winforms/buttons/splitbutton/properties-methods-events
 tags: splitbutton

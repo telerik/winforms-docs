@@ -1,6 +1,6 @@
 ---
 title: Populating with Data Programmatically
-page_title: Populating with Data Programmatically | RadGanttView
+page_title: Populating with Data Programmatically - RadGanttView
 description: You can manually populate RadGanttView with the summary items, task items and milestone items.
 slug: winforms/ganttview-/working-with-data/populating-with-data-programmatically
 tags: populating,with,data,programmatically

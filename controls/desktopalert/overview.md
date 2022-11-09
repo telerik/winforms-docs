@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: DesktopAlert | RadDesktopAlert
+page_title: DesktopAlert - RadDesktopAlert
 description: RadDesktopAlert component displays a small pop-up window on the screen to notify the user that a specific event has occurred in the application. 
 slug: winforms/desktopalert
 tags: desktopalert

@@ -1,6 +1,6 @@
 ---
 title: BarcodeReader
-page_title: Overview | BarcodeReader
+page_title: Overview - BarcodeReader
 description: RadBarcodeReader aims to decode image representations of one of the supported barcode symbologies.
 slug: barcodereader
 tags: barcode, reader

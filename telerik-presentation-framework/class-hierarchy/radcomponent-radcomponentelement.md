@@ -1,6 +1,6 @@
 ---
 title: RadComponent, RadComponentElement
-page_title: RadComponent, RadComponentElement | Telerik Presentation Framework
+page_title: RadComponent, RadComponentElement - Telerik Presentation Framework
 description: RadComponent and RadComponentElement both implement the IComponent interface which introduces the ability to be contained.
 slug: winforms/telerik-presentation-framework/class-hierarchy/radcomponent,-radcomponentelement
 tags: radcomponent,,radcomponentelement

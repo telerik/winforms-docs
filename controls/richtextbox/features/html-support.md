@@ -1,6 +1,6 @@
 ---
 title: HTML Support
-page_title: HTML Support | UI for WinForms Documentation
+page_title: HTML Support - UI for WinForms Documentation
 description: HTML Support
 slug: winforms/richtextbox-(obsolete)/features/html-support
 tags: html,support

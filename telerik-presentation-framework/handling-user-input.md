@@ -1,6 +1,6 @@
 ---
 title: Handling User Input
-page_title: Handling User Input | Telerik Presentation Framework
+page_title: Handling User Input - Telerik Presentation Framework
 description: Mouse and keyboard user input is accepted from Windows event notification in RadControl, but actually handled in RadElement and RadItem objects.
 slug: winforms/telerik-presentation-framework/handling-user-input
 tags: handling,user,input

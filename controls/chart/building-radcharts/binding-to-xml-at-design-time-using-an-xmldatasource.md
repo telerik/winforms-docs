@@ -1,6 +1,6 @@
 ---
 title: Binding to XML at Design-Time using an XMLDataSource
-page_title: Binding to XML at Design-Time using an XMLDataSource | UI for WinForms Documentation
+page_title: Binding to XML at Design-Time using an XMLDataSource - UI for WinForms Documentation
 description: Binding to XML at Design-Time using an XMLDataSource
 slug: winforms/chart/building-radcharts/binding-to-xml-at-design-time-using-an-xmldatasource
 tags: binding,to,xml,at,design-time,using,an,xmldatasource

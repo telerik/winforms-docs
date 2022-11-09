@@ -1,6 +1,6 @@
 ---
 title: The Wizard Labels, Legend and Titles Tab
-page_title: The Wizard Labels, Legend and Titles Tab | UI for WinForms Documentation
+page_title: The Wizard Labels, Legend and Titles Tab - UI for WinForms Documentation
 description: The Wizard Labels, Legend and Titles Tab
 slug: winforms/chart/understanding-radchart-ui/the-wizard-labels,-legend-and-titles-tab
 tags: the,wizard,labels,,legend,and,titles,tab

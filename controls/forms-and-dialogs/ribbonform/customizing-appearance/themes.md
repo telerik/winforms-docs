@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadRibbonForm
+page_title: Themes - RadRibbonForm
 description: RadRibbonForm control is designed to host a RadRibbonBar control and mimic the Microsoft Office 2007 UI form style.
 slug: winforms/forms-and-dialogs/ribbonform/themes
 tags: ribbonform

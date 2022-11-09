@@ -1,6 +1,6 @@
 ---
 title: ActiveRegions and Showing ToolTips
-page_title: ActiveRegions and Showing ToolTips | UI for WinForms Documentation
+page_title: ActiveRegions and Showing ToolTips - UI for WinForms Documentation
 description: ActiveRegions and Showing ToolTips
 slug: winforms/chart/advanced-topics/activeregions-and-showing-tooltips
 tags: activeregions,and,showing,tooltips

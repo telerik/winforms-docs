@@ -1,6 +1,6 @@
 ---
 title: MDI
-page_title: MDI | RadForm
+page_title: MDI - RadForm
 description: The RadForm control is an extended standard Windows Form that fully supports the Telerik Presentation Framework (TPF) and the Telerik's theming mechanism.
 slug: winforms/forms-and-dialogs/form/mdi
 tags: mdi

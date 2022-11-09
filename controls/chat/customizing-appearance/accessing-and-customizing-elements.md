@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | Chat
+page_title: Accessing and Customizing Elements - Chat
 description: Demonstrates an example how you can access certain elements and style them programmatically
 slug: winforms/chat/customizing-appearance/accessing-and-customizing-elements
 tags: chat

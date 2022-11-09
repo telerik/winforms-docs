@@ -1,6 +1,6 @@
 ---
 title: Tooltips
-page_title: Tooltips | UI for WinForms Documentation
+page_title: Tooltips - UI for WinForms Documentation
 description: RadRepeatButton provides press-and-hold functionality and it is an ideal UI element for allowing users to control an increasing or decreasing value, such as volume or brightness. 
 slug: winforms/buttons/repeatbutton/tooltips
 tags: repeatbutton

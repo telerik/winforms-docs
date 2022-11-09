@@ -1,6 +1,6 @@
 ---
 title: Specific Properties and Methods
-page_title: Common Properties | RadGridView
+page_title: Common Properties - RadGridView
 description: Describes the most commonly used properties of RadGridView
 slug: winforms/gridview/common-properties
 tags: copy/paste/cut

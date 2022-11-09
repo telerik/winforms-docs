@@ -1,6 +1,6 @@
 ---
 title: Printing Events
-page_title: Printing Events | RadGanttView
+page_title: Printing Events - RadGanttView
 description: You can customize the print output through the PrintElementFormatting and PrintElementPaint events.
 slug: winforms/ganttview-/printing-support/printing-events
 tags: printing,events

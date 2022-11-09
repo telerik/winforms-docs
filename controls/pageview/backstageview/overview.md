@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadPageView
+page_title: Overview - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/getting-started
 tags: getting,started

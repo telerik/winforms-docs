@@ -1,6 +1,6 @@
 ---
 title: Legends
-page_title: Legends | UI for WinForms Documentation
+page_title: Legends - UI for WinForms Documentation
 description: Legends
 slug: winforms/chart/understanding-radchart-elements/legends
 tags: legends

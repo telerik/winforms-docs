@@ -1,6 +1,6 @@
 ---
 title: RadDragDropService
-page_title: RadDragDropService | Telerik Presentation Framework
+page_title: RadDragDropService - Telerik Presentation Framework
 description: RadDragDropService
 slug: winforms/telerik-presentation-framework/raddragdropservice
 tags: animations

@@ -1,6 +1,6 @@
 ---
 title: Line Charts
-page_title: Line Charts | UI for WinForms Documentation
+page_title: Line Charts - UI for WinForms Documentation
 description: Line Charts
 slug: winforms/chart/understanding-radchart-types/line-charts
 tags: line,charts

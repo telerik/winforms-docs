@@ -1,6 +1,6 @@
 ---
 title: Data Binding RadChart to an ObjectDataSource
-page_title: Data Binding RadChart to an ObjectDataSource | UI for WinForms Documentation
+page_title: Data Binding RadChart to an ObjectDataSource - UI for WinForms Documentation
 description: Data Binding RadChart to an ObjectDataSource
 slug: winforms/chart/building-radcharts/data-binding-radchart-to-an-objectdatasource
 tags: data,binding,radchart,to,an,objectdatasource

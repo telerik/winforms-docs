@@ -1,6 +1,6 @@
 ---
 title: Resizing rows
-page_title: Resizing rows | RadGridView
+page_title: Resizing rows - RadGridView
 description: 
 slug: winforms/gridview/rows/resizing-rows
 tags: resizing,rows

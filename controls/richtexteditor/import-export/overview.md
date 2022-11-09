@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadRichTextEditor
+page_title: Overview - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor/import-export/overview
 tags: import/export

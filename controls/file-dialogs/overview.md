@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | File Dialogs
+page_title: Overview - File Dialogs
 description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
 slug: winforms/file-dialogs/overview
 tags: filedialogs

@@ -1,6 +1,6 @@
 ---
 title: PropertyGrid
-page_title: PropertyGrid | WinForms Converter
+page_title: PropertyGrid - WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/propertygrid
 tags: covert, winforms, propertygrid

@@ -1,6 +1,6 @@
 ---
 title: Open a WebPage in Response to a Click
-page_title: Open a WebPage in Response to a Click | UI for WinForms Documentation
+page_title: Open a WebPage in Response to a Click - UI for WinForms Documentation
 description: Open a WebPage in Response to a Click
 slug: winforms/chart/advanced-topics/open-a-webpage-in-response-to-a-click
 tags: open,a,webpage,in,response,to,a,click

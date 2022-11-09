@@ -1,6 +1,6 @@
 ---
 title: Title Bar Style
-page_title: Title Bar Style | RadTabbedForm
+page_title: Title Bar Style - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
 slug: radtabbedform-titlebar-styles
 tags: radtabbedform

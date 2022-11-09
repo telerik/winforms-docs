@@ -1,6 +1,6 @@
 ---
 title: Mnemonics
-page_title: Mnemonics | RadGroupBox
+page_title: Mnemonics - RadGroupBox
 description: RadGroupBox supports mnemonics out of the box.
 slug: winforms/panels-and-labels/mnemonics
 tags: groupbox, mnemonics

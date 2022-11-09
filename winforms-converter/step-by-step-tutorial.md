@@ -1,6 +1,6 @@
 ---
 title: Step-by-step tutorial
-page_title: Step-by-step tutorial | WinForms Converter
+page_title: Step-by-step tutorial - WinForms Converter
 description: This article explains how you can convert a project with the winforms converter.
 slug: winforms/winforms-converter/step-by-step-tutorial
 tags: covert, winforms, radcontrols

@@ -1,6 +1,6 @@
 ---
 title: Working with Content Controls UI
-page_title:  Working with Content Controls UI | RadRichTextEditor
+page_title:  Working with Content Controls UI - RadRichTextEditor
 description: This article show you you can access the content controls in UI
 slug: radrichtexteditor-features-working-with-content-controls-ui
 tags: content controls, richtexteditor, ui

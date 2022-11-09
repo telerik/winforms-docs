@@ -1,6 +1,6 @@
 ---
 title: The Wizard Data Tab
-page_title: The Wizard Data Tab | UI for WinForms Documentation
+page_title: The Wizard Data Tab - UI for WinForms Documentation
 description: The Wizard Data Tab
 slug: winforms/chart/understanding-radchart-ui/the-wizard-data-tab
 tags: the,wizard,data,tab

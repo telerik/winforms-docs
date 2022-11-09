@@ -1,6 +1,6 @@
 ---
 title: Drag and Drop from Another Control
-page_title: Drag and Drop from Another Control | RadDiagram
+page_title: Drag and Drop from Another Control - RadDiagram
 description: This article will demonstrate how you can create shapes in RadDiagram after dragging an object from a separate control. For the purpose of the example we are going to use a RadGridView.
 slug: winforms/diagram/drag-and-drop/drag-and-drop-from-another-control
 tags: drag and drop,another control

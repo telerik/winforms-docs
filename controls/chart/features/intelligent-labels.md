@@ -1,6 +1,6 @@
 ---
 title: Intelligent Labels
-page_title: Intelligent Labels | UI for WinForms Documentation
+page_title: Intelligent Labels - UI for WinForms Documentation
 description: Intelligent Labels
 slug: winforms/chart/features/intelligent-labels
 tags: intelligent,labels

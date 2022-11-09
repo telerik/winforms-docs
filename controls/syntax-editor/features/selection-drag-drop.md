@@ -1,6 +1,6 @@
 ---
 title: Selection Drag Drop
-page_title: Selection Drag Drop | RadSyntaxEditor
+page_title: Selection Drag Drop - RadSyntaxEditor
 description: RadSyntaxEditor allows dragging the selection and dropping it onto another position in the loaded document
 slug: syntax-editor-selection-drag-drop
 tags: selection, drag, drop

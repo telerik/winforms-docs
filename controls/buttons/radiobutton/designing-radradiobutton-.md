@@ -1,6 +1,6 @@
 ---
 title: Designing RadRadioButton 
-page_title: Designing RadRadioButton  | UI for WinForms Documentation
+page_title: Designing RadRadioButton  - UI for WinForms Documentation
 description: Designing RadRadioButton 
 slug: winforms/buttons/radiobutton/designing-radradiobutton-
 tags: designing,radradiobutton,

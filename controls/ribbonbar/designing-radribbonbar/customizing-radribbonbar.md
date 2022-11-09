@@ -1,6 +1,6 @@
 ---
 title: Customizing RadRibbonBar
-page_title: Customizing RadRibbonBar | RadRibbonBar
+page_title: Customizing RadRibbonBar - RadRibbonBar
 description: You can control several aspects of the overall RadRibbonBar presentation with properties.
 slug: winforms/ribbonbar/getting-started/customizing-radribbonbar
 tags: customizing,radribbonbar

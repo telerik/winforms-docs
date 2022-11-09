@@ -1,6 +1,6 @@
 ---
 title: Right-To-Left Support
-page_title: Right-To-Left Support | RadDropDownList
+page_title: Right-To-Left Support - RadDropDownList
 description: RadDropDownList fully supports right-to-left (RTL) language locales which is controlled by the RightToLeft property
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/right-to-left-support
 tags: right-to-left,support

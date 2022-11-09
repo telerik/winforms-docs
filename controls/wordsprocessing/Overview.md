@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadWordsProcessing
+page_title: Overview - RadWordsProcessing
 description: RadWordsProcessing is a processing library that allows to create, modify and export documents to a variety of formats.
 slug: radwordsprocessing-overview
 tags: overview

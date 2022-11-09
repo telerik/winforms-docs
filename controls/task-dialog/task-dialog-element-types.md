@@ -1,6 +1,6 @@
 ---
 title: Element Types
-page_title: Element Types | Task Dialog
+page_title: Element Types - Task Dialog
 description: RadTaskDialog is a themable alternative of the windows dialog boxes and the newly released TaskDialog for .NET 5.
 slug: task-dialog-element-types
 tags: task dialog

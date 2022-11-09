@@ -1,6 +1,6 @@
 ---
 title: Default Theme
-page_title: Default Theme | UI for WinForms Documentation
+page_title: Default Theme - UI for WinForms Documentation
 description: Defualt theme for the Telerik controls 
 slug: default-theme
 tags: default, theme

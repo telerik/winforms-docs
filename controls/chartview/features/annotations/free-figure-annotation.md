@@ -1,6 +1,6 @@
 ---
 title: Free Figure Annotation
-page_title: Free Figure Annotation | UI for WinForms Documentation
+page_title: Free Figure Annotation - UI for WinForms Documentation
 description: The CartesianFreeFigureAnnotation is an annotation defined by a set of data points to form a free figure.
 slug: free-figure-annotation
 tags: free, figure, annotation

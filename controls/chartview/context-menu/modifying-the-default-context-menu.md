@@ -1,6 +1,6 @@
 ---
 title: Modifying the Default Context Menu
-page_title: Modifying the Default Context Menu | ChartView
+page_title: Modifying the Default Context Menu - ChartView
 description: The default RadChartView context menu can be customized in the ContextMenuOpening event handler.
 slug: winforms/chartview/context-menu/modifying-the-default-context-menu
 tags: modifying,the,default,context,menu

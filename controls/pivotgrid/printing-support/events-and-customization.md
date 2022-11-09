@@ -1,6 +1,6 @@
 ---
 title: Events and Customization
-page_title: Events and Customization | RadPivotGrid
+page_title: Events and Customization - RadPivotGrid
 description: RadPivotGrid exposes events which you can use to format the appearance and add custom painting to your printed cells.
 slug: winforms/pivotgrid/printing-support/events-and-customization
 tags: events,and,customization

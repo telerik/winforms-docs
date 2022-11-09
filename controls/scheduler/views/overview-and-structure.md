@@ -1,6 +1,6 @@
 ---
 title: Overview and Structure
-page_title: Overview and Structure | RadScheduler
+page_title: Overview and Structure - RadScheduler
 description: The structure of the RadScheduler control varies slightly, depending on the view type. 
 slug: winforms/scheduler/views/overview-and-structure
 tags: overview,and,structure

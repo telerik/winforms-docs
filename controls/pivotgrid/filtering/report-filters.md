@@ -1,6 +1,6 @@
 ---
 title: Report Filters
-page_title: Report Filters | RadPivotGrid
+page_title: Report Filters - RadPivotGrid
 description: RadPivotGrid allows you to add filter conditions which describe which items from the data source should be included in the report.
 slug: winforms/pivotgrid/filtering/report-filters
 tags: report,filters

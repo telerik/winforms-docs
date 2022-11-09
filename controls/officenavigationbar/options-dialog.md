@@ -1,6 +1,6 @@
 ---
 title: Options Dialog
-page_title: Options Dialog | RadOfficeNavigationBar
+page_title: Options Dialog - RadOfficeNavigationBar
 description: OfficeNavigationBarOptionsDialog allows you to adjust the settings offered by the WinForms OfficeNavigationBar.  
 slug: officenavigationbar-options-dialog
 tags: officenavigationbar, options, dialog

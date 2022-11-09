@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | RadFontDropDownList
+page_title: Accessing and Customizing Elements - RadFontDropDownList
 description: RadFontDropDownList represents a drop down list with built-in fonts that are installed on the system. 
 slug: winforms/editors/fontdropdownlist/accessing-and-customizing-elements
 tags: fontdropdownlist, customize

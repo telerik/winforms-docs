@@ -1,6 +1,6 @@
 ---
 title: Using the LocalSourceDataProvider
-page_title: Using the LocalSourceDataProvider | RadPivotGrid
+page_title: Using the LocalSourceDataProvider - RadPivotGrid
 description: LocalDataSourceProvider is one of the data providers that can be used with RadPivotGrid and RadPivotFieldList. It provides data access to local source such as an IList of instances of user defined classes.
 slug: winforms/pivotgrid/populating-with-data/using-the-localsourcedataprovider
 tags: using,the,localsourcedataprovider

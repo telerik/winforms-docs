@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadNavigationView
+page_title: Getting Started - RadNavigationView
 description: Learn how to add pages to the WinForms NavigationView.   
 slug: navigationview-getting-started
 tags: navigationview, getting, started

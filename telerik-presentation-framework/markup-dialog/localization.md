@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadMarkupDialog
+page_title: Localization - RadMarkupDialog
 description: This article shows how one ca localize the strings used in RadMarkupDialog.
 slug: winforms/tpd/markup-dialog/localization
 tags: localization 

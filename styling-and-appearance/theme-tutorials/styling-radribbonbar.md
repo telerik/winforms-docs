@@ -1,6 +1,6 @@
 ---
 title: Styling RadRibbonBar
-page_title: Styling RadRibbonBar | Themes
+page_title: Styling RadRibbonBar - Themes
 description: Create a custom theme for the RadRibbonBar starting from an existing one.
 slug: winforms/themes/theme-tutorials/styling-radribbonbar
 tags: styling,radribbonbar

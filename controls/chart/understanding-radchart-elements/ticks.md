@@ -1,6 +1,6 @@
 ---
 title: Ticks
-page_title: Ticks | UI for WinForms Documentation
+page_title: Ticks - UI for WinForms Documentation
 description: Ticks
 slug: winforms/chart/understanding-radchart-elements/ticks
 tags: ticks

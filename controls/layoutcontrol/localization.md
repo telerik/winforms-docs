@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadLayoutControl
+page_title: Localization - RadLayoutControl
 description: Localization
 slug: winforms/layoutcontrol/localization
 tags: localization

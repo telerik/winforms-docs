@@ -1,6 +1,6 @@
 ---
 title: Read Only Ranges
-page_title: Read Only Ranges | RadRichTextEditor
+page_title: Read Only Ranges - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/features/read-only-ranges
 tags: read,only,ranges

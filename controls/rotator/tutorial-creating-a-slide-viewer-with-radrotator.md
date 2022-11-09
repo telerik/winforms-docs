@@ -1,6 +1,6 @@
 ---
 title: Tutorial Creating a Slide Viewer with RadRotator
-page_title: Tutorial Creating a Slide Viewer with RadRotator | UI for WinForms Documentation
+page_title: Tutorial Creating a Slide Viewer with RadRotator - UI for WinForms Documentation
 description: Tutorial Creating a Slide Viewer with RadRotator
 slug: winforms/rotator/tutorial:-creating-a-slide-viewer-with-radrotator
 tags: tutorial,creating,a,slide,viewer,with,radrotator

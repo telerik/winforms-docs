@@ -1,6 +1,6 @@
 ---
 title: TextView item formatting
-page_title: TextView item formatting | RadGanttView
+page_title: TextView item formatting - RadGanttView
 description: RadGanttView offers two events for formatting the text view part.
 slug: winforms/ganttview-/formatting/textview-item-formatting
 tags: textview,item,formatting

@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadPdfViewer
+page_title: Localization - RadPdfViewer
 description: RadPdfViewer can be fully localized to display text messages in a specific language.
 slug: winforms/pdfviewer/localization
 tags: localization

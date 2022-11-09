@@ -1,6 +1,6 @@
 ---
 title: Handling Users Input
-page_title: Handling Users Input | Toast Notification
+page_title: Handling Users Input - Toast Notification
 description: RadToastNotificationManager is built on the Windows' notification system, making it easier for our customers to create and manage notifications.  
 slug: toast-notification-handling-users-input
 tags: toast notification

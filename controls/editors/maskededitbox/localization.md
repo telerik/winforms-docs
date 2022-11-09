@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadMaskedEditBox
+page_title: Localization - RadMaskedEditBox
 description: RadMaskedEditBox is a themeable text box that formats and constrains text to a predefined pattern or a pattern you define.
 slug: radmaskededitbox-localization
 tags: radmaskededitbox

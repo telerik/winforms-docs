@@ -1,6 +1,6 @@
 ---
 title: Custom Grouping
-page_title: Custom Grouping | RadPropertyGrid
+page_title: Custom Grouping - RadPropertyGrid
 description: Custom grouping is a flexible mechanism for creating RadPropertyGrid groups by using custom logic.
 slug: winforms/propertygrid/features/custom-grouping
 tags: custom,grouping

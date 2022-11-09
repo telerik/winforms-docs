@@ -1,6 +1,6 @@
 ---
 title: Formatting Appearance
-page_title: Formatting Appearance | RadPivotGrid
+page_title: Formatting Appearance - RadPivotGrid
 description: This article shows how you can change the appearance of specific cells.
 slug: winforms/pivotgrid/formatting-appearance
 tags: formatting,appearance

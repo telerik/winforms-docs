@@ -1,6 +1,6 @@
 ---
 title: ToolStrip    
-page_title: ToolStrip | Winforms Converter
+page_title: ToolStrip - Winforms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/toolstrip
 tags: covert, winforms, treeview

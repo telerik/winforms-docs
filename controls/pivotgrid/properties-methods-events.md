@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods, Events | RadPivotGrid
+page_title: Properties, Methods, Events - RadPivotGrid
 description: RadPivotGrid for WinForms is a control which provides functionality similar to the functionality of PivotTables in MS Excel.
 slug: winforms/pivotgrid/properties-methods-and-events
 tags: pivotgrid, properties, methods, events

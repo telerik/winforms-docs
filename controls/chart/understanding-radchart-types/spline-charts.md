@@ -1,6 +1,6 @@
 ---
 title: Spline Charts
-page_title: Spline Charts | UI for WinForms Documentation
+page_title: Spline Charts - UI for WinForms Documentation
 description: Spline Charts
 slug: winforms/chart/understanding-radchart-types/spline-charts
 tags: spline,charts

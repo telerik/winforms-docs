@@ -1,6 +1,6 @@
 ---
 title: Quick Start Create a Bar Chart with Simple Static Data
-page_title: Quick Start Create a Bar Chart with Simple Static Data | UI for WinForms Documentation
+page_title: Quick Start Create a Bar Chart with Simple Static Data - UI for WinForms Documentation
 description: Quick Start Create a Bar Chart with Simple Static Data
 slug: winforms/chart/getting-started/quick-start:-create-a-bar-chart-with-simple-static-data
 tags: quick,start,create,a,bar,chart,with,simple,static,data

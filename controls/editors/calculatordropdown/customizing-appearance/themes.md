@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | CalculatorDropDown
+page_title: Themes - CalculatorDropDown
 description: This topic will demonstrate how to access different element in the control in order to change their appearance.
 slug: winforms/editors/customizing-appearance/themes
 tags: customization

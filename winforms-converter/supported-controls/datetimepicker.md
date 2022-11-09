@@ -1,6 +1,6 @@
 ---
 title: DateTimePicker
-page_title: DateTimePicker | WinForms Converter
+page_title: DateTimePicker - WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/datetimepicker
 tags: covert, winforms, datetimepicker

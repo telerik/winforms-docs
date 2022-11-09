@@ -1,6 +1,6 @@
 ---
 title: Titles
-page_title: Titles | UI for WinForms Documentation
+page_title: Titles - UI for WinForms Documentation
 description: Titles
 slug: winforms/chart/understanding-radchart-elements/titles
 tags: titles

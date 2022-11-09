@@ -1,6 +1,6 @@
 ---
 title: Data Binding RadChart
-page_title: Data Binding RadChart | UI for WinForms Documentation
+page_title: Data Binding RadChart - UI for WinForms Documentation
 description: Data Binding RadChart
 slug: winforms/chart/building-radcharts/data-binding-radchart
 tags: data,binding,radchart

@@ -1,6 +1,6 @@
 ---
 title: Adding new items
-page_title: Adding new items | RadGanttView
+page_title: Adding new items - RadGanttView
 description: Handle the ItemChildIdNeeded event to provide the id for the new items.
 slug: winforms/ganttview-/working-with-data/adding-new-items
 tags: adding,new,items

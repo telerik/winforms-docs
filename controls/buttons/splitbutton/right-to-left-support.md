@@ -1,6 +1,6 @@
 ---
 title: Right-to-Left support
-page_title: Right-to-Left support | UI for WinForms Documentation
+page_title: Right-to-Left support - UI for WinForms Documentation
 description: Right-to-Left support
 slug: winforms/buttons/splitbutton/right-to-left-support
 tags: right-to-left,support

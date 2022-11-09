@@ -1,6 +1,6 @@
 ---
 title: Customize Elements
-page_title: Customize Elements | RadPopupEditor
+page_title: Customize Elements - RadPopupEditor
 description: This article shows how you can access and change the properties of the PopupEditor elements. 
 slug: winforms/editors/popupeditor/customize-elements
 tags: customize,elements

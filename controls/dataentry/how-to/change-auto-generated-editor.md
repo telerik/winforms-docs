@@ -1,6 +1,6 @@
 ---
 title: Change Auto Generated Editor
-page_title: Change auto generated editor  | RadDataEntry
+page_title: Change auto generated editor  - RadDataEntry
 description: By default RadDataEntry generates several different editors according to the data type of the property that it should edit. 
 slug: winforms/dataentry/change-auto-generated-editor-
 tags: change,auto,generated,editor,

@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | File Dialogs
+page_title: Localization - File Dialogs
 description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
 slug: winforms/file-dialogs/localization
 tags: filedialogs, localization

@@ -1,6 +1,6 @@
 ---
 title: Using the FormImageBorderPrimitive
-page_title: Using the FormImageBorderPrimitive | RadForm
+page_title: Using the FormImageBorderPrimitive - RadForm
 description: The RadForm control is an extended standard Windows Form that fully supports the Telerik Presentation Framework (TPF) and the Telerik's theming mechanism.
 slug: winforms/forms-and-dialogs/form/using-the-formimageborderprimitive
 tags: using,the,formimageborderprimitive

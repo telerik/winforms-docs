@@ -1,6 +1,6 @@
 ---
 title: Specifications
-page_title: Specifications | Barcode
+page_title: Specifications - Barcode
 description: RadBarcodeView is a set of components that can be used to create, show and read barcodes. 
 slug: barcodeview-barcode-types-1d-barcodes 
 tags: barcode, types

@@ -1,6 +1,6 @@
 ---
 title: Properties and Events
-page_title: Properties and Events | RadCheckedDropDownList
+page_title: Properties and Events - RadCheckedDropDownList
 description: RadCheckedDropDownList combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area. 
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/properties-and-events
 tags: properties,and,events

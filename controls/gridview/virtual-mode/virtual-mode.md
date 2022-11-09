@@ -1,6 +1,6 @@
 ---
 title: Virtual Mode
-page_title: Virtual Mode | RadGridView
+page_title: Virtual Mode - RadGridView
 description: Use the virtual mode when you need to shows large amount of data without fetching the entire data at once. 
 slug: winforms/gridview/virtual-mode/virtual-mode
 tags: virtual,mode

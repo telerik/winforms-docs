@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadDataFilter
+page_title: Localization - RadDataFilter
 description: RadDataFilter allows you to build complex filter expressions based on the data and collection type of the source fields. 
 slug: winforms/datafilter/localization
 tags: data, filter, localization

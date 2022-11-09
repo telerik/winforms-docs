@@ -1,6 +1,6 @@
 ---
 title: Save and Load Layout
-page_title: Save and Load Layout | RadDiagram
+page_title: Save and Load Layout - RadDiagram
 description: RadDiagram offers save and load layout to XML functionality.
 slug: winforms/diagram/features/save-and-load-layout
 tags: diagram, save, load, layout, xml

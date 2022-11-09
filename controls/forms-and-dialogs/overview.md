@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | Forms and Dialogs
+page_title: Overview - Forms and Dialogs
 description: Overview
 slug: winforms/forms-and-dialogs/overview
 tags: overview

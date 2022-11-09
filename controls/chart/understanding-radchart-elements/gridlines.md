@@ -1,6 +1,6 @@
 ---
 title: Gridlines
-page_title: Gridlines | UI for WinForms Documentation
+page_title: Gridlines - UI for WinForms Documentation
 description: Gridlines
 slug: winforms/chart/understanding-radchart-elements/gridlines
 tags: gridlines

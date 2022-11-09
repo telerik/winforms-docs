@@ -1,6 +1,6 @@
 ---
 title: Paragraph
-page_title: Paragraph | UI for WinForms Documentation
+page_title: Paragraph - UI for WinForms Documentation
 description: Paragraph
 slug: winforms/richtextbox-(obsolete)/features/document-elements/paragraph
 tags: paragraph

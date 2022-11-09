@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | Validation Provider
+page_title: Getting Started - Validation Provider
 description:  
 slug: validation-provider-getting-started
 tags: validation, provider

@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadTabbedForm
+page_title: Themes - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
 slug: radtabbedform-themes
 tags: radtabbedform, themes

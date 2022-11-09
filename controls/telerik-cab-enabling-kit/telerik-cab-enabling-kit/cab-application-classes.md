@@ -1,6 +1,6 @@
 ---
 title: CAB Application Classes
-page_title: CAB Application Classes | UI for WinForms Documentation
+page_title: CAB Application Classes - UI for WinForms Documentation
 description: CAB Application Classes
 slug: winforms/telerik-cab-enabling-kit/telerik-cab-enabling-kit/cab-application-classes
 tags: cab,application,classes

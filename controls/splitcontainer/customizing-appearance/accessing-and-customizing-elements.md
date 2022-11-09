@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | RadSplitContainer
+page_title: Accessing and Customizing Elements - RadSplitContainer
 description: RadSplitContainer is a layout control which allows you to add many container panels to a form, separated by splitter(s).
 slug: winforms/splitcontainer/accessing-and-customizing-elements
 tags: splitcontainer

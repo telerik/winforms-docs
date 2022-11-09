@@ -1,6 +1,6 @@
 ---
 title: Scale Breaks
-page_title: Scale Breaks | UI for WinForms Documentation
+page_title: Scale Breaks - UI for WinForms Documentation
 description: Scale Breaks
 slug: winforms/chart/features/scale-breaks
 tags: scale,breaks

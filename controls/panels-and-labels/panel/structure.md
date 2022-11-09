@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | RadPanel
+page_title: Structure - RadPanel
 description: This article describes the inner structure and organization of the elements which build the RadPanel control.
 slug: winforms/panels-and-labels/panel/structure
 tags: radpanel,structure

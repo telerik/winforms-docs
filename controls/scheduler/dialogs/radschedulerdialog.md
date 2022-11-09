@@ -1,6 +1,6 @@
 ---
 title: RadSchedulerDialog
-page_title: RadSchedulerDialog | RadScheduler
+page_title: RadSchedulerDialog - RadScheduler
 description: RadSchedulerDialog is a basic dialog class. It is inherited by the DeleteRecurringAppointmentDialog, EditAppointmentDialog, EditRecurrenceDialog, OpenRecurringAppointmentDialog
 slug: winforms/scheduler/dialogs/radschedulerdialog
 tags: scheduler

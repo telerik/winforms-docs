@@ -1,6 +1,6 @@
 ---
 title: Context Menu
-page_title: Context Menu | RadOfficeNavigationBar
+page_title: Context Menu - RadOfficeNavigationBar
 description: RadOfficeNavigationBarOverflowItem shows a RadContextMenuDropDown with the overflown items and the NavigationOptionsMenuItem.  
 slug: officenavigationbar-context-menu
 tags: officenavigationbar, menu, options

@@ -1,6 +1,6 @@
 ---
 title: RadDocument
-page_title: RadDocument | UI for WinForms Documentation
+page_title: RadDocument - UI for WinForms Documentation
 description: RadDocument
 slug: winforms/richtextbox-(obsolete)/features/document-elements/raddocument
 tags: raddocument

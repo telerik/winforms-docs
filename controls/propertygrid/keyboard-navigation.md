@@ -1,6 +1,6 @@
 ---
 title: Keyboard Navigation
-page_title: Keyboard Navigation | UI for WinForms Documentation
+page_title: Keyboard Navigation - UI for WinForms Documentation
 description: Keyboard Navigation
 slug: winforms/propertygrid/keyboard-navigation
 tags: keyboard,navigation

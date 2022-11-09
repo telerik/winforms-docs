@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | UI for WinForms Documentation
+page_title: Themes - UI for WinForms Documentation
 description: RadClock is a control which allows the developers to use it in their applications to display time to the users.
 slug: winforms/clock/customizing-appearance/themes
 tags: clock

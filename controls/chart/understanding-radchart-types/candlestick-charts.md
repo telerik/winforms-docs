@@ -1,6 +1,6 @@
 ---
 title: CandleStick Charts
-page_title: CandleStick Charts | UI for WinForms Documentation
+page_title: CandleStick Charts - UI for WinForms Documentation
 description: CandleStick Charts
 slug: winforms/chart/understanding-radchart-types/candlestick-charts
 tags: candlestick,charts

@@ -1,6 +1,6 @@
 ---
 title: Add Remove Theme Files
-page_title: Add Remove Theme Files | RadThemeManager
+page_title: Add Remove Theme Files - RadThemeManager
 description: This article shows how you can edit the list of XML files loaded into a Theme Manager.
 slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/editing-themes
 tags: editing,themes

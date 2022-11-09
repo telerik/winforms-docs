@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | Task Board
+page_title: Overview - Task Board
 description: RadTaskBoard is a powerful new control designed to enable users to track their tasks in a simple, agile-style manner.
 slug: task-board-overview
 tags: task board, kanban

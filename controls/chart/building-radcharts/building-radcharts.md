@@ -1,6 +1,6 @@
 ---
 title: Building RadCharts
-page_title: Building RadCharts | UI for WinForms Documentation
+page_title: Building RadCharts - UI for WinForms Documentation
 description: Building RadCharts
 slug: winforms/chart/building-radcharts/building-radcharts
 tags: building,radcharts

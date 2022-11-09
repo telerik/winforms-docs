@@ -1,6 +1,6 @@
 ---
 title: Agenda View
-page_title: Agenda View | RadScheduler
+page_title: Agenda View - RadScheduler
 description: Agenda View is a table structured like a simple list, which lists appointments for a specific period of time. 
 slug: winforms/scheduler/views/agenda-view
 tags: agenda,view

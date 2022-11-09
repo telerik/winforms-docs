@@ -1,6 +1,6 @@
 ---
 title: FillPrimitive
-page_title: FillPrimitive | Telerik Presentation Framework
+page_title: FillPrimitive - Telerik Presentation Framework
 description: The FillPrimitive class is responsible for filling in an area on the screen.
 slug: winforms/telerik-presentation-framework/primitives/fillprimitive
 tags: fillprimitive

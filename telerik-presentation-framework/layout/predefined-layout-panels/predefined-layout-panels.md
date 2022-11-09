@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Predefined Layout Panels | Telerik Presentation Framework
+page_title: Predefined Layout Panels - Telerik Presentation Framework
 description: This article lists the Predefined Layout Panels available in Telerik Presentation Framework.
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels
 tags: predefined,layout,panels

@@ -1,6 +1,6 @@
 ---
 title: Property Builder
-page_title: Property Builder| RadDiagram
+page_title: Property Builder- RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications. 
 slug: winforms/diagram/property-builder
 tags: diagram,(beta)

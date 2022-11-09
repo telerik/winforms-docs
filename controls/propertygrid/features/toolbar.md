@@ -1,6 +1,6 @@
 ---
 title: ToolBar
-page_title: ToolBar | RadPropertyGrid
+page_title: ToolBar - RadPropertyGrid
 description: ToolBar
 slug: winforms/propertygrid/features/toolbar
 tags: toolbar

@@ -1,6 +1,6 @@
 ---
 title: Point Charts
-page_title: Point Charts | UI for WinForms Documentation
+page_title: Point Charts - UI for WinForms Documentation
 description: Point Charts
 slug: winforms/chart/understanding-radchart-types/point-charts
 tags: point,charts

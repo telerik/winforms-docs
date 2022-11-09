@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | Task Dialog
+page_title: Overview - Task Dialog
 description: RadTaskDialog is a themable alternative of the windows dialog boxes and the newly released TaskDialog for .NET 5.
 slug: task-dialog-overview
 tags: task dialog

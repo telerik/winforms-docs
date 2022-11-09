@@ -1,6 +1,6 @@
 ---
 title: Styling Chart Elements
-page_title: Styling Chart Elements | UI for WinForms Documentation
+page_title: Styling Chart Elements - UI for WinForms Documentation
 description: Styling Chart Elements
 slug: winforms/chart/styling-radcharts/styling-chart-elements
 tags: styling,chart,elements

@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | Filter View
+page_title: Localization - Filter View
 description: Learn how you can localize all strings used in the WinForms FilterView control.  
 slug: filter-view-localization
 tags: filter, view, localization, translate

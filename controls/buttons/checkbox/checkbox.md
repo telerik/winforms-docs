@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: CheckBox | UI for WinForms Documentation
+page_title: CheckBox - UI for WinForms Documentation
 description: RadCheckBox is designed to provide an interface element that can represent an On or Off state using a check mark.
 slug: winforms/buttons/checkbox
 tags: checkbox

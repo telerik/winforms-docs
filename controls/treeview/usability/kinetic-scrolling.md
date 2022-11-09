@@ -1,6 +1,6 @@
 ---
 title: Kinetic Scrolling
-page_title: Kinetic Scrolling | RadTreeView
+page_title: Kinetic Scrolling - RadTreeView
 description: This article shows how you can use the built-in kinetic scrolling functionality.
 slug: winforms/treeview/usability/kinetic-scrolling
 tags: kinetic,scrolling

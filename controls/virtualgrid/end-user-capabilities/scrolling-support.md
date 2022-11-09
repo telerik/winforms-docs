@@ -1,6 +1,6 @@
 ---
 title: Scrolling Support
-page_title: Scrolling Support | RadVirtualGrid
+page_title: Scrolling Support - RadVirtualGrid
 description: This article shows how one can scroll and point to the available scroll modes. 
 slug: winforms/vitualgrid/end-user-capabilities/scrolling-support
 tags: scrolling,support

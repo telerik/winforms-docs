@@ -1,6 +1,6 @@
 ---
 title: Supported Types
-page_title: Supported Types | Barcode
+page_title: Supported Types - Barcode
 description: RadBarcode is a set of components that can be used to create, show and read barcodes. 
 slug: winforms/barcode/barcode-types/supported-types 
 tags: barcode, types

@@ -1,6 +1,6 @@
 ---
 title: Data Binding RadChart to a Generic List of Simple Types
-page_title: Data Binding RadChart to a Generic List of Simple Types | UI for WinForms Documentation
+page_title: Data Binding RadChart to a Generic List of Simple Types - UI for WinForms Documentation
 description: Data Binding RadChart to a Generic List of Simple Types
 slug: winforms/chart/building-radcharts/data-binding-radchart-to-a-generic-list-of-simple-types
 tags: data,binding,radchart,to,a,generic,list,of,simple,types

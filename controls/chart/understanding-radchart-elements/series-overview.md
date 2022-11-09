@@ -1,6 +1,6 @@
 ---
 title: Series Overview
-page_title: Series Overview | UI for WinForms Documentation
+page_title: Series Overview - UI for WinForms Documentation
 description: Series Overview
 slug: winforms/chart/understanding-radchart-elements/series-overview
 tags: series,overview

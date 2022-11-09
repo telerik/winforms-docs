@@ -1,6 +1,6 @@
 ---
 title: Input Behavior
-page_title: Input Behavior | RadScheduler
+page_title: Input Behavior - RadScheduler
 description: Input behavior
 slug: winforms/scheduler/fundamentals/input-behavior
 tags: input,behavior

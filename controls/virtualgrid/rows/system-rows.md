@@ -1,6 +1,6 @@
 ---
 title: System Rows
-page_title: System Rows | RadVirtualGrid
+page_title: System Rows - RadVirtualGrid
 description: This article list the system rows used in RadVirtualgrid how one can show/hide them.
 slug: winforms/virtualgrid/rows/system-rows
 tags: virtualgrid, rows, system

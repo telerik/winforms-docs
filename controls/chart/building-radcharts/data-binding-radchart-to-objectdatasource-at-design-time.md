@@ -1,6 +1,6 @@
 ---
 title: Data Binding RadChart to ObjectDataSource at Design-Time
-page_title: Data Binding RadChart to ObjectDataSource at Design-Time | UI for WinForms Documentation
+page_title: Data Binding RadChart to ObjectDataSource at Design-Time - UI for WinForms Documentation
 description: Data Binding RadChart to ObjectDataSource at Design-Time
 slug: winforms/chart/building-radcharts/data-binding-radchart-to-objectdatasource-at-design-time
 tags: data,binding,radchart,to,objectdatasource,at,design-time

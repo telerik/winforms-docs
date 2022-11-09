@@ -1,6 +1,6 @@
 ---
 title: Context Menu
-page_title: Context Menu | RadTabbedForm
+page_title: Context Menu - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
 slug: radtabbedform-context-menu
 tags: radtabbedform

@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadListControl
+page_title: Themes - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/customizing-appearance/themes
 tags: listcontrol

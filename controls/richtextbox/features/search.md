@@ -1,6 +1,6 @@
 ---
 title: Search
-page_title: Search | UI for WinForms Documentation
+page_title: Search - UI for WinForms Documentation
 description: Search
 slug: winforms/richtextbox-(obsolete)/features/search
 tags: search

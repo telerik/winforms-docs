@@ -1,6 +1,6 @@
 ---
 title: Touch Support
-page_title: Touch Support | RadGridView
+page_title: Touch Support - RadGridView
 description: This article shows what the end user can do when interacting with RadGridView on a touch screen.  
 slug: winforms/gridview/end-user-capabilities/touch-support
 tags: touch,support

@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | RadMaskedEditBox
+page_title: Accessing and Customizing Elements - RadMaskedEditBox
 description: Accessing and customizing elements can be performed either at design time, or at run time
 slug: winforms/maskededitbox/customizing-appearance/acessing-and-customizing-appearance
 tags: button, themes

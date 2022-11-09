@@ -1,6 +1,6 @@
 ---
 title: Design Time
-page_title: Design Time | RadSpinEditor
+page_title: Design Time - RadSpinEditor
 description: RadColorBox is a themable control which allows users to select a color from a color dialog or to directly type it in the text field.
 slug: winforms/editors/spineditor/designtime
 tags: spineditor

@@ -1,6 +1,6 @@
 ---
 title: Pinned Tabs
-page_title: Pinned Tabs | RadTabbedForm
+page_title: Pinned Tabs - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
 slug: radtabbedform-overview-pinned-tabs
 tags: radtabbedform

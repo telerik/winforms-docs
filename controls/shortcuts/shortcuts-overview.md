@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadShortcut
+page_title: Overview - RadShortcut
 description: Almost each application uses the so called “Shortcuts” – a keyboard combination that triggers a specific action.
 slug: winforms/shortcuts
 tags: shortcuts

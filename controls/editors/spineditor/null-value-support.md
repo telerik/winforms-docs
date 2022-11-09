@@ -1,6 +1,6 @@
 ---
 title: Null Value Support
-page_title: Null Value Support | RadSpinEditor 
+page_title: Null Value Support - RadSpinEditor 
 description: RadSpinEditor is a themable alternative to the standard Windows Numeric Up Down control.
 slug: winforms/editors/spineditor/null-value-support
 tags: spineditor

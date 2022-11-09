@@ -1,6 +1,6 @@
 ---
 title: Pie
-page_title: Pie | ChartView
+page_title: Pie - ChartView
 description: PieSeries visualize each data point as a pie slices with arc size directly proportional to the magnitude of the raw data point’s value
 slug: winforms/chartview-/series-types/pie
 tags: pie

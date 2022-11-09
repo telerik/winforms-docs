@@ -1,6 +1,6 @@
 ---
 title: ControlXmlSerializer
-page_title: ControlXmlSerializer | Telerik Presentation Framework
+page_title: ControlXmlSerializer - Telerik Presentation Framework
 description: Telerik Presentation Framework supports serializing/deserializing entire controls via the ControlXmlSerializer.
 slug: winforms/telerik-presentation-framework/touch-support
 tags: touch,support

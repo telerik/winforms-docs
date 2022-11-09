@@ -1,6 +1,6 @@
 ---
 title: Assigning Global RadShortcuts
-page_title: Assigning Global RadShortcuts | RadShortcut
+page_title: Assigning Global RadShortcuts - RadShortcut
 description: Almost each application uses the so called “Shortcuts” – a keyboard combination that triggers a specific action.
 slug: winforms/shortcuts/assigning-global-radshortcuts
 tags: assigning,global,radshortcuts

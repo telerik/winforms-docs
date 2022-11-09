@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties Methods and Events | RadCollapsiblePanel
+page_title: Properties Methods and Events - RadCollapsiblePanel
 description: This article describes the more important properties methods and events of RadCollapsiblePanel.
 slug: winforms/panels-and-labels/collapsiblepanel/properties-methods-events
 tags: radcollapsiblepanel, properties, events

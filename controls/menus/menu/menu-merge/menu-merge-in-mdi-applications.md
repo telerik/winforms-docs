@@ -1,6 +1,6 @@
 ---
 title: Menu Merge in MDI applications
-page_title: Menu Merge in MDI applications | RadMenu
+page_title: Menu Merge in MDI applications - RadMenu
 description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 slug: winforms/menus/menu/menu-merge/menu-merge-in-mdi-applications
 tags: menu,merge,in,mdi,applications

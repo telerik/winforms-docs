@@ -1,6 +1,6 @@
 ---
 title: SpreadStreamExportRenderer
-page_title: SpreadStreamExportRenderer | Telerik Presentation Framework
+page_title: SpreadStreamExportRenderer - Telerik Presentation Framework
 description: SpreadStreamExportRenderer class exposes methods and events that allow changing the exported document.
 slug: winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer
 tags: spreadexportrenderer

@@ -1,6 +1,6 @@
 ---
 title: Multiple Chart Types in a Single Chart
-page_title: Multiple Chart Types in a Single Chart | UI for WinForms Documentation
+page_title: Multiple Chart Types in a Single Chart - UI for WinForms Documentation
 description: Multiple Chart Types in a Single Chart
 slug: winforms/chart/advanced-topics/multiple-chart-types-in-a-single-chart
 tags: multiple,chart,types,in,a,single,chart

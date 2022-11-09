@@ -1,6 +1,6 @@
 ---
 title:  Glyphs
-page_title:  Glyphs | Telerik Presentation Framework
+page_title:  Glyphs - Telerik Presentation Framework
 description: This article shows how one ca use the Glyphs loaded from custom fonts. 
 slug: winforms/telerik-presentation-framework/glyphs
 tags: touch, themes

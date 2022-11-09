@@ -1,6 +1,6 @@
 ---
 title: Radial
-page_title: Radial | ChartView
+page_title: Radial - ChartView
 description: Radial
 slug: winforms/chartview-/axes/radial
 tags: radial

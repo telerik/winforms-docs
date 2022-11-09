@@ -1,6 +1,6 @@
 ---
 title: Layout Structure
-page_title: Layout Structure | Telerik Presentation Framework
+page_title: Layout Structure - Telerik Presentation Framework
 description: Telerik Presentation Foundation layout follows the W3C box model standard.
 slug: winforms/telerik-presentation-framework/layout/layout-structure
 tags: layout,structure

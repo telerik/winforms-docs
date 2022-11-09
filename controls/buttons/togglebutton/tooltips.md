@@ -1,6 +1,6 @@
 ---
 title: Tooltips
-page_title: Tooltips | UI for WinForms Documentation
+page_title: Tooltips - UI for WinForms Documentation
 description: RadToggleButton is designed to manage states on your form. It shares many features with the RadCheckBox, but provides a different visual effect than the standard check mark. 
 slug: winforms/buttons/togglebutton/tooltips
 tags: togglebutton

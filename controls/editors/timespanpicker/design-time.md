@@ -1,6 +1,6 @@
 ---
 title: Design-Time
-page_title: Design-Time | RadTimeSpanPicker
+page_title: Design-Time - RadTimeSpanPicker
 description: RadTimeSpanPicker is a UI component that provides a full control over picking a specific time span and duration. 
 slug: radtimespanpicker-design-time
 tags: radtimespanpicker

@@ -1,6 +1,6 @@
 ---
 title: EditAppointmentDialog
-page_title: EditAppointmentDialog | RadScheduler
+page_title: EditAppointmentDialog - RadScheduler
 description: EditAppointmentDialog is shown when you try to add a new appointment or start editing an existing one.
 slug: winforms/scheduler/dialogs/editappointmentdialog
 tags: scheduler

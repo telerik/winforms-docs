@@ -1,6 +1,6 @@
 ---
 title: Navigation Step
-page_title: Navigation Step | RadScheduler
+page_title: Navigation Step - RadScheduler
 description: RadScheduler offers the ability to navigate through dates by using day/week/month steps. The step is defined by the developer.
 slug: winforms/scheduler/scheduler-navigator/navigation-step
 tags: navigation,step

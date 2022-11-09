@@ -1,6 +1,6 @@
 ---
 title: Customizing Appearance
-page_title: Customizing Appearance | RadTimeSpanPicker
+page_title: Customizing Appearance - RadTimeSpanPicker
 description: RadTimeSpanPicker is a UI component that provides a full control over picking a specific time span and duration.
 slug: radtimespanpicker-customizing-appearance
 tags: radtimespanpicker

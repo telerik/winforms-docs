@@ -1,6 +1,6 @@
 ---
 title: Link Type Converter
-page_title: Link Type Converter | RadGanttView
+page_title: Link Type Converter - RadGanttView
 description: Convert the data stored in your database to TasksLinkType and vice versa.
 slug: winforms/ganttview-/working-with-data/link-type-converter
 tags: link,type,converter

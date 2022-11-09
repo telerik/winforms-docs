@@ -1,6 +1,6 @@
 ---
 title: Title
-page_title: Title | RadGridView
+page_title: Title - RadGridView
 description: Describes how you can show the grid view caption label.
 slug: winforms/gridview/caption
 tags: gridview, caption, title

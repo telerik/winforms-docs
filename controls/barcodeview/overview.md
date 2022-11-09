@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | BarcodeView
+page_title: Overview - BarcodeView
 description: RadBarcodeView is a set of components that can be used to create, show and read barcodes. 
 slug: barcodeview-overview
 tags: barcode

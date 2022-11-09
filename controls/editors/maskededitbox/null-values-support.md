@@ -1,6 +1,6 @@
 ---
 title: Null Values Support
-page_title: Null Values Support | RadMaskedEditBox
+page_title: Null Values Support - RadMaskedEditBox
 description: RadMaskedEditBox supports entering null values. This article shows how you can enable and use this functionality.
 slug: winforms/editors/maskededitbox/null-values-support
 tags: maskededitbox,null,values

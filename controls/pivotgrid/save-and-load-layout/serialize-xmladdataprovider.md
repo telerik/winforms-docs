@@ -1,6 +1,6 @@
 ---
 title: Serialize XmlaDataProvider
-page_title: Serialize XmladDataProvider | UI for WinForms Documentation
+page_title: Serialize XmladDataProvider - UI for WinForms Documentation
 description: Serialize XmlaDataProvider
 slug: winforms/pivotgrid/save-and-load-layout/serialize-xmladataprovider
 tags: save,and,load,layout

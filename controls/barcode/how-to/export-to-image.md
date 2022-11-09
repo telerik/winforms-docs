@@ -1,6 +1,6 @@
 ---
 title: Export to Image
-page_title: Export to Image | Barcode
+page_title: Export to Image - Barcode
 description: RadBarcode is a set of components that can be used to create, show and read barcodes. 
 slug: winforms/barcode/how-to/export-to-image 
 tags: barcode

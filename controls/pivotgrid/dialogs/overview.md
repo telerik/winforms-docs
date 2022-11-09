@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Dialogs | RadPivotGrid
+page_title: Dialogs - RadPivotGrid
 description: There are several different dialogs which allow the end user to modify various settings in RadPivotGrid. Each dialog implements a specific interface which will allow you to replace the default dialogs with custom implemented ones.
 slug: winforms/pivotgrid/dialogs
 tags: dialogs

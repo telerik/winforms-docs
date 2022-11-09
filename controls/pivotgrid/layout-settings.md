@@ -1,6 +1,6 @@
 ---
 title: Layout Settings
-page_title: Layout Settings | RadPivotGrid
+page_title: Layout Settings - RadPivotGrid
 description: RadPivotGrid supports two types of layouts - Tabular and Compact. You can control the layout type of the column and row headers via the following properties.
 slug: winforms/pivotgrid/layout-settings
 tags: layout,settings

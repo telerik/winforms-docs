@@ -1,6 +1,6 @@
 ---
 title: Floating Strips
-page_title: Floating Strips | UI for WinForms Documentation
+page_title: Floating Strips - UI for WinForms Documentation
 description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
 slug: winforms/commandbar/floating-strips
 tags: floating,strips

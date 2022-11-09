@@ -1,6 +1,6 @@
 ---
 title: Export to PDF
-page_title: Export to PDF | RadPivotGrid
+page_title: Export to PDF - RadPivotGrid
 description: RadPivotGrid can export its contents to PDF. This is achieved with the help of the RadPdfProcessing library.
 slug: winforms/pivotgrid/exporting-data/export-to-pdf
 tags: export,to,pdf

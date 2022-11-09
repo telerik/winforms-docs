@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events | RadWebCam
+page_title: Events - RadWebCam
 description: RadWebCam offers several events indicating errors and taking snapshots.   
 slug: webcam-events
 tags: webcam

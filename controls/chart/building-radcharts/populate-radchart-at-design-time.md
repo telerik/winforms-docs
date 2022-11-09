@@ -1,6 +1,6 @@
 ---
 title: Populate RadChart at Design-Time
-page_title: Populate RadChart at Design-Time | UI for WinForms Documentation
+page_title: Populate RadChart at Design-Time - UI for WinForms Documentation
 description: Populate RadChart at Design-Time
 slug: winforms/chart/building-radcharts/populate-radchart-at-design-time
 tags: populate,radchart,at,design-time

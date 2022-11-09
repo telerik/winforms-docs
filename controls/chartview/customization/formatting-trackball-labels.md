@@ -1,6 +1,6 @@
 ---
 title: Formatting Trackball Labels
-page_title: Formatting Trackball Labels | ChartView
+page_title: Formatting Trackball Labels - ChartView
 description: This article demonstrates how to customize the trackball labels text and styles. This can be achieved in the TextNeeded event of the trackball controller.
 slug: winforms/chartview-/customization/formatting-trackball-labels
 tags: formatting,trackball,labels

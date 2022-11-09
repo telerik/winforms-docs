@@ -1,6 +1,6 @@
 ---
 title: Panel
-page_title: Panel | WinForms Converter
+page_title: Panel - WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/panel
 tags: covert, winforms, panel

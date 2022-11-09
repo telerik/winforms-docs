@@ -1,6 +1,6 @@
 ---
 title: ScatterLine
-page_title: ScatterLine | ChartView
+page_title: ScatterLine - ChartView
 description: ScatterLineSeries allow data represented as a line to be plotted against two linear axes. Each point from the line in the chart is defined by two numeric values – XValue and YValue
 slug: winforms/chartview-/series-types/scatterline
 tags: scatterline

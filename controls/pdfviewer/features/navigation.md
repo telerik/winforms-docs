@@ -1,6 +1,6 @@
 ---
 title: Navigation
-page_title: Navigation | RadPdfViewer
+page_title: Navigation - RadPdfViewer
 description: You can use the PageUp, PageDown, GoToPage methods to navigate through the document.
 slug: winforms/pdfviewer/navigation
 tags: navigation

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: PivotGrid | RadPivotGrid
+page_title: PivotGrid - RadPivotGrid
 description: RadPivotGrid for WinForms is a control which provides functionality similar to the functionality of PivotTables in MS Excel.  
 slug: winforms/pivotgrid
 tags: pivotgrid

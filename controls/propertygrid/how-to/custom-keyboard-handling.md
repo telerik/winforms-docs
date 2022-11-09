@@ -1,6 +1,6 @@
 ---
 title: Custom Keyboard Handling
-page_title: Custom Keyboard Handling | RadPropertyGrid
+page_title: Custom Keyboard Handling - RadPropertyGrid
 description: RadPropertyGrid exposes an easy API to customize the behavior of how the input keys are handled.
 slug: winforms/propertygrid/custom-keyboard-handling
 tags: custom,keyboard,handling

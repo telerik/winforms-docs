@@ -1,6 +1,6 @@
 ---
 title: Scrolling and Overflow (strip buttons)
-page_title: Scrolling and Overflow (strip buttons) | RadPageView
+page_title: Scrolling and Overflow (strip buttons) - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/stripview/scrolling-and-overflow-(strip-buttons)
 tags: scrolling,and,overflow,(strip,buttons)

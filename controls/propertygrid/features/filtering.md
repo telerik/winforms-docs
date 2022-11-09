@@ -1,6 +1,6 @@
 ---
 title: Filtering
-page_title: Filtering | RadPropertyGrid
+page_title: Filtering - RadPropertyGrid
 description: Just like the grouping and sorting functionality, filtering is possible both through the text box of the toolbar, or programmatically by populating the FilterDescriptors collection of RadPropertyGrid.
 slug: winforms/propertygrid/features/filtering
 tags: filtering

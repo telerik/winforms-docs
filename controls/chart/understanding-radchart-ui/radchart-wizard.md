@@ -1,6 +1,6 @@
 ---
 title: RadChart Wizard
-page_title: RadChart Wizard | UI for WinForms Documentation
+page_title: RadChart Wizard - UI for WinForms Documentation
 description: RadChart Wizard
 slug: winforms/chart/understanding-radchart-ui/radchart-wizard
 tags: radchart,wizard

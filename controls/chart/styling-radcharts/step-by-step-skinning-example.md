@@ -1,6 +1,6 @@
 ---
 title: Step-By-Step Skinning Example
-page_title: Step-By-Step Skinning Example | UI for WinForms Documentation
+page_title: Step-By-Step Skinning Example - UI for WinForms Documentation
 description: Step-By-Step Skinning Example
 slug: winforms/chart/styling-radcharts/step-by-step-skinning-example
 tags: step-by-step,skinning,example

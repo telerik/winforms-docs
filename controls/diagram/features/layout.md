@@ -1,6 +1,6 @@
 ---
 title: Layout
-page_title: Layout | RadDiagram
+page_title: Layout - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram-(beta)/features/layout
 tags: layout

@@ -1,6 +1,6 @@
 ---
 title: AppointmentResizingBehavior
-page_title: AppointmentResizingBehavior | RadScheduler
+page_title: AppointmentResizingBehavior - RadScheduler
 description: This article described the default resizing behavior as well as how this behavior can be altered by using a custom class.
 slug: winforms/scheduler/fundamentals/scheduler-resizing
 tags: scheduler,resize

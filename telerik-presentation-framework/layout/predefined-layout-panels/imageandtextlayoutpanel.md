@@ -1,6 +1,6 @@
 ---
 title: ImageAndTextLayoutPanel
-page_title: ImageAndTextLayoutPanel | Telerik Presentation Framework
+page_title: ImageAndTextLayoutPanel - Telerik Presentation Framework
 description: The purpose of the ImageAndTextLayoutPanel is to arrange an image and a string in a box.
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/imageandtextlayoutpanel
 tags: imageandtextlayoutpanel

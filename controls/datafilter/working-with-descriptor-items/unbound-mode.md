@@ -1,6 +1,6 @@
 ---
 title: Unbound Mode
-page_title: Unbound Mode | RadDataFilter
+page_title: Unbound Mode - RadDataFilter
 description: RadDataFilter allows you to build complex filter expressions based on the data and collection type of the source fields. 
 slug: winforms/datafilter/populating-with-data/unbound-mode
 tags: data, filter

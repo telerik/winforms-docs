@@ -1,6 +1,6 @@
 ---
 title: Formatting Items
-page_title: Formatting Items | RadDropDownList
+page_title: Formatting Items - RadDropDownList
 description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/formatting-items
 tags: formatting,items

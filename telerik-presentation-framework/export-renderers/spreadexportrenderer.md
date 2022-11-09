@@ -1,6 +1,6 @@
 ---
 title: SpreadExportRenderer
-page_title: SpreadExportRenderer | Telerik Presentation Framework
+page_title: SpreadExportRenderer - Telerik Presentation Framework
 description: The SpreadExportRenderer class gives you access to the exported document and provides you with the ability to change it prior saving.
 slug: winforms/telerik-presentation-framework/export-renderers/spreadexportrenderer
 tags: spreadexportrenderer

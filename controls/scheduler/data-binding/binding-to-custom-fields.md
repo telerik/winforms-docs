@@ -1,6 +1,6 @@
 ---
 title: Binding to Custom Fields
-page_title: Binding to Custom Fields | RadScheduler
+page_title: Binding to Custom Fields - RadScheduler
 description: RadScheduler__ has full support for binding to custom fields i.e. RadScheduler can be bound to an email field in your data source.
 slug: winforms/scheduler/data-binding/binding-to-custom-fields
 tags: binding,to,custom,fields

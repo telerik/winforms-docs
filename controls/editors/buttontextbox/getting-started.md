@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadButtonTextBox
+page_title: Getting Started - RadButtonTextBox
 description: RadButtonTextBox is a derivative of **RadTextBox** which allows you to embed easily button elements on the left or right side of the text box.
 slug: winforms/editors/buttontextbox/getting-started
 tags: getting,started

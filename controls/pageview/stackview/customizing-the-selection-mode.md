@@ -1,6 +1,6 @@
 ---
 title: Customizing the Selection Mode
-page_title: Customizing the Selection Mode | RadPageView
+page_title: Customizing the Selection Mode - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/stackview/customizing-the-selection-mode
 tags: customizing,the,selection,mode

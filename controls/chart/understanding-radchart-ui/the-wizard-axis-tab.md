@@ -1,6 +1,6 @@
 ---
 title: The Wizard Axis Tab
-page_title: The Wizard Axis Tab | UI for WinForms Documentation
+page_title: The Wizard Axis Tab - UI for WinForms Documentation
 description: The Wizard Axis Tab
 slug: winforms/chart/understanding-radchart-ui/the-wizard-axis-tab
 tags: the,wizard,axis,tab

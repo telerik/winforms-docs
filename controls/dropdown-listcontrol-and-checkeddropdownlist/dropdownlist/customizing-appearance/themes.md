@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadDropDownList
+page_title: Themes - RadDropDownList
 description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/accessing-and-customizing-elements/themes
 tags: accessing,and,customizing,elements

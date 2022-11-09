@@ -1,6 +1,6 @@
 ---
 title: Rotation
-page_title: Rotation | RadPdfViewer
+page_title: Rotation - RadPdfViewer
 description: RadPdfViewer support page rotation out of the box. This article describes how you can rotate pages in the code.
 slug: winforms/pdfviewer/rotation
 tags: pdfviewer, rotation

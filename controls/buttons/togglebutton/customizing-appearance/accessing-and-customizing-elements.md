@@ -1,6 +1,6 @@
 ---
 title: Accessing and customizing elements
-page_title: Accessing and customizing elements | UI for WinForms Documentation
+page_title: Accessing and customizing elements - UI for WinForms Documentation
 description: RadToggleButton is designed to manage states on your form. It shares many features with the RadCheckBox, but provides a different visual effect than the standard check mark. 
 slug: winforms/buttons/togglebutton/accessing-and-customizing-elements
 tags: togglebutton

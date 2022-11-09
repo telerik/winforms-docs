@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadListView
+page_title: Themes - RadListView
 description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/accessing-and-customizing-elements/themes
 tags: formatting,items

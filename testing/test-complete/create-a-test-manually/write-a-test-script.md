@@ -1,6 +1,6 @@
 ---
 title: Write a Test Script
-page_title: Write a Test Script | TestComplete
+page_title: Write a Test Script - TestComplete
 description: We will use TestComplete - functional automated testing platform developed by SmartBear Software to automate Telerik UI for WinForms Controls.  
 slug: test-complete-write-a-test-script
 tags: testcomplete, test, script

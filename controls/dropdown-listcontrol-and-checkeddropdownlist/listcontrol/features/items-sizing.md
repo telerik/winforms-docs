@@ -1,6 +1,6 @@
 ---
 title: Items Sizing
-page_title: Items Sizing | RadListControl
+page_title: Items Sizing - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features/items-sizing
 tags: listcontrol, sizing

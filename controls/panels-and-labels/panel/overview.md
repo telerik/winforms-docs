@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadPanel
+page_title: Overview - RadPanel
 description: RadPanel provides the features of a standard panel but adds advanced styling and text.
 slug: winforms/panels-and-labels/panel
 tags: panel

@@ -1,6 +1,6 @@
 ---
 title: Data Binding RadChart to a Generic List of Objects
-page_title: Data Binding RadChart to a Generic List of Objects | UI for WinForms Documentation
+page_title: Data Binding RadChart to a Generic List of Objects - UI for WinForms Documentation
 description: Data Binding RadChart to a Generic List of Objects
 slug: winforms/chart/building-radcharts/data-binding-radchart-to-a-generic-list-of-objects
 tags: data,binding,radchart,to,a,generic,list,of,objects

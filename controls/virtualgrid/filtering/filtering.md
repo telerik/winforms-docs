@@ -1,6 +1,6 @@
 ---
 title: Filtering Overview
-page_title: Filtering Overview | RadVirtualGrid
+page_title: Filtering Overview - RadVirtualGrid
 description: This article shows how you can use the built in filtering functionality. 
 slug: winforms/virtualgrid/filtering/filtering
 tags: virtualgrid, filtering

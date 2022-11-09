@@ -1,6 +1,6 @@
 ---
 title: Gantt Charts
-page_title: Gantt Charts | UI for WinForms Documentation
+page_title: Gantt Charts - UI for WinForms Documentation
 description: Gantt Charts
 slug: winforms/chart/understanding-radchart-types/gantt-charts
 tags: gantt,charts

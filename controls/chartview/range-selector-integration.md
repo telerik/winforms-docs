@@ -1,6 +1,6 @@
 ---
 title: Range Selector Integration 
-page_title: Range Selector Integration  | ChartView
+page_title: Range Selector Integration  - ChartView
 description: Null values support 
 slug: winforms/chartview/range-selector-integration
 tags: null,values,support,

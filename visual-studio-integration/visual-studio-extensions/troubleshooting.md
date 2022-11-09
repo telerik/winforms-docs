@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-page_title: Troubleshooting | UI for WinForms Documentation
+page_title: Troubleshooting - UI for WinForms Documentation
 description: Troubleshooting
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/troubleshooting
 tags: troubleshooting 

@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | RadCarousel
+page_title: Smart Tag - RadCarousel
 description: This article explain what you can do with the RadCarousel smart tag. 
 slug: winforms/carousel/design-time/smart-tag
 tags: adding,carousel,items,smart,tag

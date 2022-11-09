@@ -1,6 +1,6 @@
 ---
 title: Data Binding
-page_title: Data Binding | RadDataFilter
+page_title: Data Binding - RadDataFilter
 description: RadDataFilter allows you to build complex filter expressions based on the data and collection type of the source fields. 
 slug: winforms/datafilter/populating-with-data/data-binding
 tags: data, filter

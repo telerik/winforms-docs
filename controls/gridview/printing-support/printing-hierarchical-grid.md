@@ -1,6 +1,6 @@
 ---
 title: Printing Hierarchical Grid
-page_title: Printing Hierarchical Grid | RadGridView
+page_title: Printing Hierarchical Grid - RadGridView
 description: RadgridView can print a hierarchical grid and this article shows how you can achieve this.
 slug: winforms/gridview/printing-support/printing-hierarchical-grid
 tags: printing,hierarchical,grid

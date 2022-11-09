@@ -1,6 +1,6 @@
 ---
 title: Exception Handling
-page_title: Exception Handling | RadPdfViewer
+page_title: Exception Handling - RadPdfViewer
 description: RadPdfViewer provides an API for handling exceptions caused by documents which cannot be loaded correctly because of unsupported features of the control.
 slug: winforms/pdfviewer/exception-handling
 tags: exception,handling

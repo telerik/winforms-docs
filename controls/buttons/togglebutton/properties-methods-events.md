@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | UI for WinForms Documentation
+page_title: Properties, Methods and Events - UI for WinForms Documentation
 description: RadToggleButton is designed to manage states on your form. It shares many features with the RadCheckBox, but provides a different visual effect than the standard check mark. 
 slug: winforms/buttons/togglebutton/properties-methods-events
 tags: togglebutton

@@ -1,6 +1,6 @@
 ---
 title: UI Virtualization
-page_title: UI Virtualization | RadRichTextEditor
+page_title: UI Virtualization - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor-/ui-virtualization
 tags: ui,virtualization

@@ -1,6 +1,6 @@
 ---
 title: Formatting Items
-page_title: Formatting Items | RadFontDropDownList
+page_title: Formatting Items - RadFontDropDownList
 description: RadFontDropDownList represents a drop down list with built-in fonts that are installed on the system.
 slug: winforms/editors/fontdropdownlist/accessing-and-customizing-elements/formatting-items
 tags: customization

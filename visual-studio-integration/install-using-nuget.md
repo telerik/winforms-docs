@@ -1,6 +1,6 @@
 ---
 title: Install using NuGet Packages
-page_title: Install using NuGet Packages | Installation Deployment and Distribution
+page_title: Install using NuGet Packages - Installation Deployment and Distribution
 description: This article describes how you can install the WinForms suite using a NuGet package.   
 slug: winforms/nuget
 tags: install,nuget

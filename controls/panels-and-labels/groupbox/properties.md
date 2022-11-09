@@ -1,6 +1,6 @@
 ---
 title: Properties
-page_title: Properties | RadGroupBox
+page_title: Properties - RadGroupBox
 description: This article describes the more important propertiesof RadGroupBox.
 slug: winforms/panels-and-labels/groupbox/properties-and-events
 tags: radgroupbox, properties, events

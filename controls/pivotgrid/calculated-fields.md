@@ -1,6 +1,6 @@
 ---
 title: Calculated Fields 
-page_title: Calculated Fields | RadPivotGrid
+page_title: Calculated Fields - RadPivotGrid
 description: In this article you will find out how to extend RadPivotGrid's generated report by adding Calculated Fields.
 slug: winforms/pivotgrid/calculated-fields
 tags: calculated,fields

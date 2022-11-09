@@ -1,6 +1,6 @@
 ---
 title: SplitContainer
-page_title: SplitContainer | WinForms Converter
+page_title: SplitContainer - WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/splitcontainer
 tags: covert, winforms, splitcontainer

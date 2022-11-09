@@ -1,6 +1,6 @@
 ---
 title: Office Shape
-page_title: Office Shape| Telerik Presentation Framework
+page_title: Office Shape- Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms-telerik-presentation-framework-office-shape
 tags: office,shape

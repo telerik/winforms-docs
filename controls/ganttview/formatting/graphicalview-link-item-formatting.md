@@ -1,6 +1,6 @@
 ---
 title: GraphicalView Link Item formatting
-page_title: GraphicalView Link Item formatting | RadGanttView
+page_title: GraphicalView Link Item formatting - RadGanttView
 description: RadGanttView allows formatting of individual links through the GraphicalViewLinkItemFormatting event.
 slug: winforms/ganttview-/formatting/graphicalview-link-item-formatting
 tags: graphicalview,link,item,formatting

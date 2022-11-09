@@ -1,6 +1,6 @@
 ---
 title: Programatically adding pages
-page_title: Programatically adding pages | RadPageView
+page_title: Programatically adding pages - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/how-to/programatically-adding-pages
 tags: programatically,adding,pages

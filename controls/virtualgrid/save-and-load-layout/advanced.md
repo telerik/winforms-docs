@@ -1,6 +1,6 @@
 ---
 title: Advanced
-page_title: Advanced | RadVirtualGrid
+page_title: Advanced - RadVirtualGrid
 description: This article shows how you can customize the save layout operation.
 slug: winforms/virtualgrid/save-and-load-layout/advanced
 tags: save-and-load-layout, advanced

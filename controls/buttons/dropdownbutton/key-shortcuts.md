@@ -1,6 +1,6 @@
 ---
 title: Key ShortCuts
-page_title: Key ShortCuts | UI for WinForms Documentation
+page_title: Key ShortCuts - UI for WinForms Documentation
 description: Key ShortCuts
 slug: winforms/buttons/dropdownbutton/key-shortcuts
 tags: key,shortcuts

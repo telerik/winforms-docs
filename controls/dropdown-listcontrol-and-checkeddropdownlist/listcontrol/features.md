@@ -1,6 +1,6 @@
 ---
 title: Features
-page_title: Features | UI for WinForms Documentation
+page_title: Features - UI for WinForms Documentation
 description: Features
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features
 tags: features

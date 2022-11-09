@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: QR Code | BarcodeView
+page_title: QR Code - BarcodeView
 description: QR code (Quick Response Code) is the trademark for a type of matrix barcode.
 slug: barcodeview-barcode-types-2d-barcodes-qrcode-overview 
 tags: barcode, qrcode
