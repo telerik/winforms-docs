@@ -14,10 +14,11 @@ res_type: kb
 |2019.1.117|RadPdfViewer for WinForms|[Dimitar](https://www.telerik.com/blogs/author/dimitar-karamfilov)|
 
 
-Highlight form fields in RadPdfViewer
+## Description
 
 This article demonstrates how you can use the custom painting functionality in order to highlight the editable fields in PDF document. 
 
+## Solution
 
 1\. Subscribe to the __DocumentLoaded__ event. This event will allow you to access the pages of the document ans subscribe to their __ElementPainted__ event. 
 
@@ -88,3 +89,15 @@ End Sub
 This example will paint a yellow border around each field.
 
 ![pdfviewer-highlight-form-fields 001](images/pdfviewer-highlight-form-fields001.png)
+
+## Notes
+
+* In a .NET Framework project, a reference to **WindowsBase** is required to be added:
+
+![pdfviewer-highlight-form-fields 002](images/pdfviewer-highlight-form-fields002.png)
+
+* In a .NET Core (or newer version), it is necessary to edit the proj file and include WPF: 
+
+![pdfviewer-highlight-form-fields 003](images/pdfviewer-highlight-form-fields003.png)
+
+![pdfviewer-highlight-form-fields 004](images/pdfviewer-highlight-form-fields004.png)
