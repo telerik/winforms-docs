@@ -1,6 +1,6 @@
 ---
 title: Data Binding
-page_title: Data Binding | RadBreadCrumb
+page_title: Data Binding - RadBreadCrumb
 description:   
 slug: breadcrumb-data-binding
 tags: breadcrumb

@@ -1,6 +1,6 @@
 ---
 title: Stacked Area Charts
-page_title: Stacked Area Charts | UI for WinForms Documentation
+page_title: Stacked Area Charts - UI for WinForms Documentation
 description: Stacked Area Charts
 slug: winforms/chart/understanding-radchart-types/stacked-area-charts
 tags: stacked,area,charts

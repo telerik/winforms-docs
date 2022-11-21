@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadWizard
+page_title: Overview - RadWizard
 description: RadWizard will help you differentiate a complex process into separate steps and provide your users with the ability to govern the process upon their decisions.
 slug: winforms/wizard
 tags: wizard

@@ -1,6 +1,6 @@
 ---
 title: Drag and Drop from Another Control
-page_title: Drag and Drop from Another Control | RadScheduler
+page_title: Drag and Drop from Another Control - RadScheduler
 description: RadScheduler supports drag and drop and it can be implemented so that appointments are dragged from another control, in our case a ListBox.
 slug: winforms/scheduler/drag-and-drop/drag-and-drop-from-another-control
 tags: drag,and,drop,from,another,control

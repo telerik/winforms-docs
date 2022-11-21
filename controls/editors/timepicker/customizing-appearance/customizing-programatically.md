@@ -1,6 +1,6 @@
 ---
 title: Customizing Programmatically
-page_title: Customizing Programmatically | UI for WinForms Documentation
+page_title: Customizing Programmatically - UI for WinForms Documentation
 description: Access and change the styles of the TimePicker elements in the code.
 slug: winforms/editors/timepicker/customization
 tags: customization

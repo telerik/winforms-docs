@@ -1,6 +1,6 @@
 ---
 title: RadSchedulerReminder
-page_title: RadSchedulerReminder | RadScheduler
+page_title: RadSchedulerReminder - RadScheduler
 description: RadSchedulerReminder represents a special reminder object for the appointments that are collected in RadScheduler.
 slug: winforms/scheduler/reminders/radschedulerreminder
 tags: radschedulerreminder

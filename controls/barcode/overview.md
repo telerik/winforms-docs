@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | Barcode
+page_title: Overview - Barcode
 description: RadBarcode is a set of components that can be used to create, show and read barcodes. 
 slug: winforms/barcode/overview 
 tags: barcode

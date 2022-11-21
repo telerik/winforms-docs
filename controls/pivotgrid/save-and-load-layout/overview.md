@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadPivotGrid
+page_title: Overview - RadPivotGrid
 description: Overview
 slug: winforms/pivotgrid/save-load-layout/overview
 tags: save,and,load,layout

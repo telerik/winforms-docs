@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | TestComplete
+page_title: Overview - TestComplete
 description: We will use TestComplete - functional automated testing platform developed by SmartBear Software to automate Telerik UI for WinForms Controls.  
 slug: test-complete-overview
 tags: testcomplete, test, complete, winforms

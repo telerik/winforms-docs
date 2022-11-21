@@ -1,6 +1,6 @@
 ---
 title: Creating a Gallery
-page_title: Creating a Gallery | RadRibbonBar
+page_title: Creating a Gallery - RadRibbonBar
 description: RadGalleryElement allows the user to choose among large number of visual items
 slug: winforms/ribbonbar/getting-started/creating-a-gallery
 tags: creating,a,gallery

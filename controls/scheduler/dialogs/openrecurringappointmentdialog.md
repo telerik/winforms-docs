@@ -1,6 +1,6 @@
 ---
 title: OpenRecurringAppointmentDialog
-page_title: OpenRecurringAppointmentDialog | RadScheduler
+page_title: OpenRecurringAppointmentDialog - RadScheduler
 description: OpenRecurringAppointmentDialog is shown when you try to edit a recurring appointment.
 slug: winforms/scheduler/dialogs/openrecurringappointmentdialog
 tags: scheduler

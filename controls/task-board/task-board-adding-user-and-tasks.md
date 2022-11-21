@@ -1,6 +1,6 @@
 ---
 title: Adding Users and Tags
-page_title: Adding Users and Tags | Task Board
+page_title: Adding Users and Tags - Task Board
 description: Add tags and users in the WinForms TaskBoard (Kanban) control.
 slug: task-board-adding-user-and-tasks
 tags: task board, kanban, add, user, tag

@@ -1,6 +1,6 @@
 ---
 title: Quick Start Create a Data Bound Chart
-page_title: Quick Start Create a Data Bound Chart | UI for WinForms Documentation
+page_title: Quick Start Create a Data Bound Chart - UI for WinForms Documentation
 description: Quick Start Create a Data Bound Chart
 slug: winforms/chart/getting-started/quick-start:-create-a-data-bound-chart
 tags: quick,start,create,a,data,bound,chart

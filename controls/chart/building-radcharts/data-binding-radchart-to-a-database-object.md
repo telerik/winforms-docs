@@ -1,6 +1,6 @@
 ---
 title: Data Binding RadChart to a Database Object
-page_title: Data Binding RadChart to a Database Object | UI for WinForms Documentation
+page_title: Data Binding RadChart to a Database Object - UI for WinForms Documentation
 description: Data Binding RadChart to a Database Object
 slug: winforms/chart/building-radcharts/data-binding-radchart-to-a-database-object
 tags: data,binding,radchart,to,a,database,object

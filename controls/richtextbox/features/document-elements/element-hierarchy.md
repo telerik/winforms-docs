@@ -1,6 +1,6 @@
 ---
 title: Element Hierarchy
-page_title: Element Hierarchy | UI for WinForms Documentation
+page_title: Element Hierarchy - UI for WinForms Documentation
 description: Element Hierarchy
 slug: winforms/richtextbox-(obsolete)/features/document-elements/element-hierarchy
 tags: element,hierarchy

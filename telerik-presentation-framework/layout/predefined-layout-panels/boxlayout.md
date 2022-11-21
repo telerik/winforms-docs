@@ -1,6 +1,6 @@
 ---
 title: BoxLayout
-page_title: BoxLayout | Telerik Presentation Framework
+page_title: BoxLayout - Telerik Presentation Framework
 description: BoxLayout is a panel that arranges its items according to three predefined settings - Proportion, Orientation and StripPosition.
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/boxlayout
 tags: boxlayout

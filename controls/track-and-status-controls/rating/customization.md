@@ -1,6 +1,6 @@
 ---
 title: Customization
-page_title: Customization | RadRating
+page_title: Customization - RadRating
 description: RadRating is a flexible UI component that allows users to place their rating by selecting from a finite number of items (stars, diamonds and hearts).
 slug: winforms/track-and-status-controls/rating/customization
 tags: customization

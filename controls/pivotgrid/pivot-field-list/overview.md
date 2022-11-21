@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: RadPivotFieldList | RadPivotFieldList
+page_title: RadPivotFieldList - RadPivotFieldList
 description: RadPivotFieldList is a control which provides functionality similar to the PivotTable Field List panel in MS Excel.
 slug: winforms/pivotgrid/pivot-field-list/radpivotfieldlist
 tags: radpivotfieldlist

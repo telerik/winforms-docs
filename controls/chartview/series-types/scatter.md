@@ -1,6 +1,6 @@
 ---
 title: Scatter
-page_title: Scatter | ChartView
+page_title: Scatter - ChartView
 description: ScatterSeries plots its data upon two numerical axes. Scatter series identify the position of each ScatterDataPoint using two numerical values - XValue and YValue
 slug: winforms/chartview-/series-types/scatter
 tags: scatter

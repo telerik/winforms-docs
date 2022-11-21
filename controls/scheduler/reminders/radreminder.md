@@ -1,6 +1,6 @@
 ---
 title: RadReminder
-page_title: RadReminder | RadScheduler
+page_title: RadReminder - RadScheduler
 description: RadReminder is a component that reminds you of an object that you pass to it.
 slug: winforms/scheduler/reminders/radreminder
 tags: radreminder

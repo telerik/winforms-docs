@@ -1,6 +1,6 @@
 ---
 title: RichTextBox
-page_title: RichTextBox | WinForms Converter
+page_title: RichTextBox - WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/richtextbox
 tags: covert, winforms, button

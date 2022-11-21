@@ -1,6 +1,6 @@
 ---
 title: Selection
-page_title: Selection | RadSyntaxEditor
+page_title: Selection - RadSyntaxEditor
 description: RadSyntaxEditor is a useful text editor control which provides built-in syntax highlighting and code editing experience
 slug: syntax-editor-features-selection
 tags: selection

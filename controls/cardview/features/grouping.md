@@ -1,6 +1,6 @@
 ---
 title: Grouping
-page_title: Grouping | UI for WinForms Documentation
+page_title: Grouping - UI for WinForms Documentation
 description: Grouping
 slug: winforms/cardview/features/grouping
 tags: grouping

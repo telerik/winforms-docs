@@ -1,6 +1,6 @@
 ---
 title: Personal Data Collection
-page_title: Personal Data Collection | Telerik UI for WinForms
+page_title: Personal Data Collection - Telerik UI for WinForms
 description: Personal Data Collection
 slug: winforms/personal-data-collection
 tags: data, personal

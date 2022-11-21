@@ -1,6 +1,6 @@
 ---
 title: Using WaitingBar with a Background Worker
-page_title: Using WaitingBar with a Background Worker | UI for WinForms Documentation
+page_title: Using WaitingBar with a Background Worker - UI for WinForms Documentation
 description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
 slug: winforms/track-and-status-controls/waitingbar/using-waitingbar-with-a-background-worker
 tags: using,waitingbar,with,a,background,worker

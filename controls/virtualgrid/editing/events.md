@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events | RadVirtualGrid
+page_title: Events - RadVirtualGrid
 description: This article describes which events are fired while the user is editing a value in RadVirtualGrid.
 slug: winforms/virtualgrid/editing/events
 tags: virtualgrid, editors

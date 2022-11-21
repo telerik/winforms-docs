@@ -1,6 +1,6 @@
 ---
 title: ToolTips
-page_title: ToolTips | RadVirtualGrid
+page_title: ToolTips - RadVirtualGrid
 description: Use the ToolTipTextNeeded or the CellFormatting events to shows tooltips for different VirtualGridElements
 slug: winforms/virtualgrid/cells/tooltips
 tags: virtualgrid, cells, tooltips

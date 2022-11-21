@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadFontDropDownList
+page_title: Getting Started - RadFontDropDownList
 description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
 slug: winforms/editors/fontdropdownlist/getting-started
 tags: getting,started

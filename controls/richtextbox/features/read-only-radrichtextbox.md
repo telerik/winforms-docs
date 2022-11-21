@@ -1,6 +1,6 @@
 ---
 title: Read Only RadRichTextBox
-page_title: Read Only RadRichTextBox | UI for WinForms Documentation
+page_title: Read Only RadRichTextBox - UI for WinForms Documentation
 description: Read Only RadRichTextBox
 slug: winforms/richtextbox-(obsolete)/features/read-only-radrichtextbox
 tags: read,only,radrichtextbox

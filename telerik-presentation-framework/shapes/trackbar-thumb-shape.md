@@ -1,6 +1,6 @@
 ---
 title: TrackBar Thumb Shapes
-page_title: TrackBar Thumb Shapes| Telerik Presentation Framework
+page_title: TrackBar Thumb Shapes- Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms-telerik-presentation-framework-trackBar-thumb-shapes
 tags: star-shape

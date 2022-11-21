@@ -1,6 +1,6 @@
 ---
 title: Drop Down Properties
-page_title: Drop Down Properties | RadMultiColumnComboBox
+page_title: Drop Down Properties - RadMultiColumnComboBox
 description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
 slug: winforms/multicolumncombobox/drop-down-properties
 tags: drop,down,properties

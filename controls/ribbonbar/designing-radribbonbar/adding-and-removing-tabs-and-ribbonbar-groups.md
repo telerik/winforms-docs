@@ -1,6 +1,6 @@
 ---
 title: Adding and Removing Tabs and RibbonBar Groups
-page_title: Adding and Removing Tabs and RibbonBar Groups | RadRibbonBar
+page_title: Adding and Removing Tabs and RibbonBar Groups - RadRibbonBar
 description: Tabs and RibbonBar groups logically organize the functionality of your application.
 slug: winforms/ribbonbar/getting-started/adding-and-removing-tabs-and-ribbonbar-groups
 tags: adding,and,removing,tabs,and,ribbonbar,groups

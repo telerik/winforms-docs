@@ -1,6 +1,6 @@
 ---
 title: PopupContainer
-page_title: PopupContainer | RadPopupEditor
+page_title: PopupContainer - RadPopupEditor
 description: Use the PopupContainer build the layout that will be shown in the drop down.
 slug: winforms/editors/popupeditor/popupcontainer
 tags: popupcontainer

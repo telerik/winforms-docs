@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadRichTextEditor
+page_title: Overview - RadRichTextEditor
 description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
 slug: winforms/richtexteditor-/document-elements/annotations
 tags: annotations

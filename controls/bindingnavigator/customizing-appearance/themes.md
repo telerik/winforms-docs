@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadBindingNavigator 
+page_title: Themes - RadBindingNavigator 
 description: This article shows the RadBindingNavigator elements available in Visual Style Builder. 
 slug: winforms/bindingnavigator/themes
 tags:  bindingnavigator, themes

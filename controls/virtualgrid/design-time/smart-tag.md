@@ -1,6 +1,6 @@
 ---
 title: Smart Tag
-page_title: Smart Tag | RadVirtualGrid
+page_title: Smart Tag - RadVirtualGrid
 description: The Smart Tag for RadVirtualGrid lets you quickly access common tasks involved with building the grid and customizing appearance through themes.
 slug: winforms/virtualgrid/design-time/smart-tag
 tags: smart tag

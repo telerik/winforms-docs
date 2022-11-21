@@ -1,6 +1,6 @@
 ---
 title: Pan and Zoom
-page_title: Pan and Zoom | RadMap
+page_title: Pan and Zoom - RadMap
 description: RadMap can be panned and zoomed both from the UI as well as programmatically.
 slug: winforms/map/features/pan-and-zoom
 tags: map, features, pan, zoom

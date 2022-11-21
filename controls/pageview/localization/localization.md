@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadPageView
+page_title: Localization - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/localization/localization
 tags: localization

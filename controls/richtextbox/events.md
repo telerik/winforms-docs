@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events | UI for WinForms Documentation
+page_title: Events - UI for WinForms Documentation
 description: Events
 slug: winforms/richtextbox-(obsolete)/events
 tags: events

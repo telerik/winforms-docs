@@ -1,6 +1,6 @@
 ---
 title: Localization Example Using Local Resources, Implicit Expression
-page_title: Localization Example Using Local Resources, Implicit Expression | UI for WinForms Documentation
+page_title: Localization Example Using Local Resources, Implicit Expression - UI for WinForms Documentation
 description: Localization Example Using Local Resources, Implicit Expression
 slug: winforms/chart/advanced-topics/localization-example-using-local-resources,-implicit-expression
 tags: localization,example,using,local,resources,,implicit,expression

@@ -1,6 +1,6 @@
 ---
 title: WrapLayoutPanel
-page_title: WrapLayoutPanel | Telerik Presentation Framework
+page_title: WrapLayoutPanel - Telerik Presentation Framework
 description: WrapLayoutPanel is a panel that handles the layout of elements in a vertical or horizontal row and wraps to additional lines.
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/wraplayoutpanel
 tags: wraplayoutpanel

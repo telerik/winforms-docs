@@ -1,6 +1,6 @@
 ---
 title: RadTextBoxControl vs RadTextBox
-page_title: RadTextBoxControl vs RadTextBox | RadTextBoxControl
+page_title: RadTextBoxControl vs RadTextBox - RadTextBoxControl
 description: This article show the differences between RadTextBox and RadTextBoxControl. 
 slug: winforms/editors/textboxcontrol/radtextboxcontrol-vs-radtextbox
 tags: radtextboxcontrol,vs,radtextbox

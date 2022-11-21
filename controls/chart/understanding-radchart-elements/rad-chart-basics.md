@@ -1,6 +1,6 @@
 ---
 title: Rad Chart Basics
-page_title: Rad Chart Basics | UI for WinForms Documentation
+page_title: Rad Chart Basics - UI for WinForms Documentation
 description: Rad Chart Basics
 slug: winforms/chart/understanding-radchart-elements/rad-chart-basics
 tags: rad,chart,basics

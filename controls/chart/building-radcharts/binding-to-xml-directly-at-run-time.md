@@ -1,6 +1,6 @@
 ---
 title: Binding to XML Directly at Run-Time
-page_title: Binding to XML Directly at Run-Time | UI for WinForms Documentation
+page_title: Binding to XML Directly at Run-Time - UI for WinForms Documentation
 description: Binding to XML Directly at Run-Time
 slug: winforms/chart/building-radcharts/binding-to-xml-directly-at-run-time
 tags: binding,to,xml,directly,at,run-time

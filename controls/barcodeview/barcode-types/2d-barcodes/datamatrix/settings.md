@@ -1,6 +1,6 @@
 ---
 title: Settings
-page_title: Settings | BarcodeView
+page_title: Settings - BarcodeView
 description: Data Matrix barcode is a two-dimensional type of code used widely in industry for marking small parts and items due to its high data density and reliability.   
 slug: barcodeview-barcode-types-2d-barcodes-datamatrix-settings 
 tags: barcode, datamatrix

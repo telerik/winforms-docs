@@ -1,6 +1,6 @@
 ---
 title: Custom Fonts
-page_title: Custom Fonts | RadRichTextEditor
+page_title: Custom Fonts - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to fonts which are only read in the memory of the application.
 slug: winforms/richtexteditor/features/custom-fonts
 tags: watermark

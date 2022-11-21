@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | Task Dialog
+page_title: Localization - Task Dialog
 description: RadTaskDialog is a themable alternative of the windows dialog boxes and the newly released TaskDialog for .NET 5.
 slug: task-dialog-localization
 tags: task dialog, localization

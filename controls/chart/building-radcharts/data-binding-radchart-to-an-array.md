@@ -1,6 +1,6 @@
 ---
 title: Data Binding RadChart to an Array
-page_title: Data Binding RadChart to an Array | UI for WinForms Documentation
+page_title: Data Binding RadChart to an Array - UI for WinForms Documentation
 description: Data Binding RadChart to an Array
 slug: winforms/chart/building-radcharts/data-binding-radchart-to-an-array
 tags: data,binding,radchart,to,an,array

@@ -1,6 +1,6 @@
 ---
 title: MDI List
-page_title: MDI List | RadMenu
+page_title: MDI List - RadMenu
 description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 slug: winforms/menus/menu/menu-merge/mdi-list
 tags: mdi,list

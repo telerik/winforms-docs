@@ -1,6 +1,6 @@
 ---
 title: Save/Load Layout
-page_title: Save/Load Layout | RadLayoutControl
+page_title: Save/Load Layout - RadLayoutControl
 description: RadLayoutControl allows layout changes at run time. To preserve the changed layout you can use the predefined SaveLayout and LoadLayout methods
 slug: winforms/layoutcontrol/load-layout
 tags: save/load,layout

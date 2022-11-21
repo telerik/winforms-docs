@@ -1,6 +1,6 @@
 ---
 title: RadAboutBox Template
-page_title: RadAboutBox Template | Templates
+page_title: RadAboutBox Template - Templates
 description: The Visual Studio templates that install with Telerik UI for WinForms let you add RadForm and ShapedForm to your application without any coding steps. 
 slug: winforms/forms-and-dialogs/templates/radaboutbox-template
 tags: radaboutbox,template

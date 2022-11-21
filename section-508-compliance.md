@@ -1,6 +1,6 @@
 ---
 title: Section 508 Compliance
-page_title: Section 508 Compliance | UI for WinForms Documentation
+page_title: Section 508 Compliance - UI for WinForms Documentation
 description: Section 508 Compliance
 slug: winforms/section-508-compliance
 tags: section,508,compliance

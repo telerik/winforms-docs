@@ -1,6 +1,6 @@
 ---
 title: How Do I extend the Displayable Area for YAxis Data?
-page_title: How Do I extend the Displayable Area for YAxis Data? | UI for WinForms Documentation
+page_title: How Do I extend the Displayable Area for YAxis Data? - UI for WinForms Documentation
 description: How Do I extend the Displayable Area for YAxis Data?
 slug: winforms/chart/how-to/how-do-i-extend-the-displayable-area-for-yaxis-data?
 tags: how,do,i,extend,the,displayable,area,for,yaxis,data?

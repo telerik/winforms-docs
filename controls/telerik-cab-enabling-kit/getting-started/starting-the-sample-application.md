@@ -1,6 +1,6 @@
 ---
 title: Starting the Sample application
-page_title: Starting the Sample application | UI for WinForms Documentation
+page_title: Starting the Sample application - UI for WinForms Documentation
 description: Starting the Sample application
 slug: winforms/telerik-cab-enabling-kit/getting-started/starting-the-sample-application
 tags: starting,the,sample,application

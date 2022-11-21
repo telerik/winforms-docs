@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | UI for WinForms Documentation
+page_title: Localization - UI for WinForms Documentation
 description: Localization
 slug: winforms/commandbar/localization/localization
 tags: localization

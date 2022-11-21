@@ -1,6 +1,6 @@
 ---
 title: Search Row
-page_title: Search Row | RadGridView
+page_title: Search Row - RadGridView
 description: RadGridView offers a build-in search functionality available for both end users and developers.
 slug: winforms/gridview/rows/search-row
 tags: search,row

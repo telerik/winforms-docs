@@ -1,6 +1,6 @@
 ---
 title: DefaultLabelValue
-page_title: DefaultLabelValue | UI for WinForms Documentation
+page_title: DefaultLabelValue - UI for WinForms Documentation
 description: DefaultLabelValue
 slug: winforms/chart/understanding-radchart-elements/defaultlabelvalue
 tags: defaultlabelvalue

@@ -1,6 +1,6 @@
 ---
 title: Calculated Items
-page_title: Calculated Items | RadPivotGrid
+page_title: Calculated Items - RadPivotGrid
 description: A calculated item is a new item in a row or column field in which the values are the result of a custom calculation. 
 slug: winforms/pivotgrid/calculated-items
 tags: calculated,items

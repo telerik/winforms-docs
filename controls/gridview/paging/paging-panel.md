@@ -1,6 +1,6 @@
 ---
 title: Paging panel
-page_title: Paging panel | RadGridView
+page_title: Paging panel - RadGridView
 description: This article shows how you can access the Paging panel and set the properties that control the buttons configuration.
 slug: winforms/gridview/paging/paging-panel
 tags: paging,panel

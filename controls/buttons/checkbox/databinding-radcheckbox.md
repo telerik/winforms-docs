@@ -1,6 +1,6 @@
 ---
 title: DataBinding RadCheckBox
-page_title: DataBinding RadCheckBox | UI for WinForms Documentation
+page_title: DataBinding RadCheckBox - UI for WinForms Documentation
 description: DataBinding RadCheckBox
 slug: winforms/buttons/checkbox/databinding-radcheckbox
 tags: databinding,radcheckbox

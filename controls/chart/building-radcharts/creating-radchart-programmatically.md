@@ -1,6 +1,6 @@
 ---
 title: Creating RadChart Programmatically
-page_title: Creating RadChart Programmatically | UI for WinForms Documentation
+page_title: Creating RadChart Programmatically - UI for WinForms Documentation
 description: Creating RadChart Programmatically
 slug: winforms/chart/building-radcharts/creating-radchart-programmatically
 tags: creating,radchart,programmatically

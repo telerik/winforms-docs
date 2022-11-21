@@ -1,6 +1,6 @@
 ---
 title: Tables
-page_title: Tables | UI for WinForms Documentation
+page_title: Tables - UI for WinForms Documentation
 description: Tables
 slug: winforms/richtextbox-(obsolete)/features/document-elements/tables
 tags: tables

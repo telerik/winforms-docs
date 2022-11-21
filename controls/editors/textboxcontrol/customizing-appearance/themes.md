@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadTextBoxControl
+page_title: Themes - RadTextBoxControl
 description: This article shows how you can the disabled state color in Visual Style Builder.
 slug: winforms/editors/radtextboxcontrol/themes
 tags: radtextboxcontrol

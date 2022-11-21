@@ -1,6 +1,6 @@
 ---
 title: Section
-page_title: Section | UI for WinForms Documentation
+page_title: Section - UI for WinForms Documentation
 description: Section
 slug: winforms/richtextbox-(obsolete)/features/document-elements/section
 tags: section

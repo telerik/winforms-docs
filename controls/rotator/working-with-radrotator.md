@@ -1,6 +1,6 @@
 ---
 title: Working with RadRotator
-page_title: Working with RadRotator | UI for WinForms Documentation
+page_title: Working with RadRotator - UI for WinForms Documentation
 description: Working with RadRotator
 slug: winforms/rotator/working-with-radrotator
 tags: working,with,radrotator

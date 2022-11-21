@@ -1,6 +1,6 @@
 ---
 title: Add Custom Fonts
-page_title: Add Custom Fonts | RadFontDropDownList
+page_title: Add Custom Fonts - RadFontDropDownList
 description: RadFontDropDownList represents a drop down list with built-in fonts that are installed on the system.   
 slug: winforms/editors/fontdropdownlist/add-custom-fonts
 tags: font,editor

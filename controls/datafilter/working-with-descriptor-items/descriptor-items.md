@@ -1,6 +1,6 @@
 ---
 title: Descriptor Items
-page_title: Descriptor Items | RadDataFilter
+page_title: Descriptor Items - RadDataFilter
 description: RadDataFilter allows you to build complex filter expressions based on the data and collection type of the source fields. 
 slug: winforms/datafilter/populating-with-data/descriptor-items
 tags: data, filter, items

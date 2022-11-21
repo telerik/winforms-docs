@@ -1,6 +1,6 @@
 ---
 title: ToolTips
-page_title: Tooltips | RadTreeView
+page_title: Tooltips - RadTreeView
 description: This article shows how you can assign tooltips on nodes or set the tooltips text at run-time.
 slug: winforms/treeview/working-with-nodes/tooltips
 tags: tooltips

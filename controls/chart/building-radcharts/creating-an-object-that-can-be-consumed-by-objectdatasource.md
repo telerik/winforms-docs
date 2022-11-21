@@ -1,6 +1,6 @@
 ---
 title: Creating an Object that can be Consumed by ObjectDataSource
-page_title: Creating an Object that can be Consumed by ObjectDataSource | UI for WinForms Documentation
+page_title: Creating an Object that can be Consumed by ObjectDataSource - UI for WinForms Documentation
 description: Creating an Object that can be Consumed by ObjectDataSource
 slug: winforms/chart/building-radcharts/creating-an-object-that-can-be-consumed-by-objectdatasource
 tags: creating,an,object,that,can,be,consumed,by,objectdatasource

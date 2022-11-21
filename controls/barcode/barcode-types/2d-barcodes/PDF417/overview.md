@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: PDF417 | Barcode
+page_title: PDF417 - Barcode
 description: PDF417 is a stacked linear barcode symbol format used in a variety of applications, primarily transport, identification cards, and inventory management. 
 slug: winforms/barcode/barcode-types/2d-barcodes/pdf417/overview 
 tags: barcode, pdf417

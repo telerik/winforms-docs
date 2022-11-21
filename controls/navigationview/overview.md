@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadNavigationView
+page_title: Overview - RadNavigationView
 description: RadNavigationView actually represents a RadPageView with already applied ViewMode to NavigationView.   
 slug: navigationview-overview
 tags: navigationview

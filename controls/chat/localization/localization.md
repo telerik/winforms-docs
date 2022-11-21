@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadChat
+page_title: Localization - RadChat
 description: This article shows how you can localize all string used inside RadChat.
 slug: winforms/chat/localization/localization
 tags: localization

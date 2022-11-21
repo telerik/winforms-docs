@@ -1,6 +1,6 @@
 ---
 title: Design Time
-page_title: Design Time | UI for WinForms Documentation
+page_title: Design Time - UI for WinForms Documentation
 description: RadCheckBox is designed to provide an interface element that can represent an On or Off state using a check mark.
 slug: winforms/buttons/checkbox/desing-time
 tags: checkbox

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Data Matrix | Barcode
+page_title: Data Matrix - Barcode
 description: Data Matrix barcode is a two-dimensional type of code used widely in industry for marking small parts and items due to its high data density and reliability.   
 slug: 2d-barcodes-datamatrix-overview 
 tags: barcode, datamatrix

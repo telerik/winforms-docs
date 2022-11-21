@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadApplicationMenu
+page_title: Themes - RadApplicationMenu
 description: RadApplicationMenu is the Telerik counterpart of the application menu that displays controls used to perform actions on entire documents and forms, such as Save and Print. 
 slug: winforms/menus/applicationmenu/themes
 tags: applicationmenu

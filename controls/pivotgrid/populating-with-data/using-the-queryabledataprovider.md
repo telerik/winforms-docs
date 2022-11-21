@@ -1,6 +1,6 @@
 ---
 title: Using the QueryableDataProvider
-page_title: Using the QueryableDataProvider | RadPivotGrid
+page_title: Using the QueryableDataProvider - RadPivotGrid
 description: QueryableDataProvider provides an easy way to use data from database with RadPivotGrid. With QueryableDataProvider all calculations and aggregations are executed on the database server. This way the whole collection of items is saved only on the server and not in the memory of the application.
 slug: winforms/pivotgrid/populating-with-data/using-the-queryabledataprovider
 tags: using,the,queryabledataprovider

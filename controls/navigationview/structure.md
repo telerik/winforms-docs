@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | RadNavigationView
+page_title: Structure - RadNavigationView
 description: Get familiar with the internal elements structure of RadNavigationView.   
 slug: navigationview-structure
 tags: navigationview, structure

@@ -1,6 +1,6 @@
 ---
 title: Setting Sorting Programmatically
-page_title: Setting Sorting Programmatically | RadVirtualGrid
+page_title: Setting Sorting Programmatically - RadVirtualGrid
 description: The SortDescriptors collection allows you to use descriptors which define the sorting property and the sorting direction.
 slug: winforms/virtualgrid/sorting/setting-sorting-programmatically
 tags: virtualgrid, sorting

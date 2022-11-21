@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | UI for WinForms Documentation
+page_title: Getting Started - UI for WinForms Documentation
 description: Getting Started
 slug: winforms/telerik-cab-enabling-kit/getting-started/getting-started
 tags: getting,started

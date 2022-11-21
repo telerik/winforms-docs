@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Connections | RadDiagram
+page_title: Connections - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/diagram-items/connections
 tags: connections

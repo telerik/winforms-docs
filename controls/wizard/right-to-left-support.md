@@ -1,6 +1,6 @@
 ---
 title: Right-to-Left Support
-page_title: Right-to-Left Support | RadWizard
+page_title: Right-to-Left Support - RadWizard
 description: RadWizard will help you differentiate a complex process into separate steps and provide your users with the ability to govern the process upon their decisions.
 slug: winforms/wizard/right-to-left-support
 tags: right-to-left,support

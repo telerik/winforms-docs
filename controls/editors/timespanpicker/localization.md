@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadTimeSpanPicker
+page_title: Localization - RadTimeSpanPicker
 description: RadTimeSpanPicker is a UI component that provides a full control over picking a specific time span and duration.
 slug: radtimespanpicker-overview
 tags: radtimespanpicker

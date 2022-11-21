@@ -1,6 +1,6 @@
 ---
 title: Removing Rows
-page_title: Removing Rows | RadGridView
+page_title: Removing Rows - RadGridView
 description: This article describes how you can remove rows from RadgridView at runtime.
 slug: winforms/gridview/rows/removing-rows
 tags: removing,rows

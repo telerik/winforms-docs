@@ -1,6 +1,6 @@
 ---
 title: How Do I Assign Individual Colors to Bars?
-page_title: How Do I Assign Individual Colors to Bars? | UI for WinForms Documentation
+page_title: How Do I Assign Individual Colors to Bars? - UI for WinForms Documentation
 description: How Do I Assign Individual Colors to Bars?
 slug: winforms/chart/how-to/how-do-i-assign-individual-colors-to-bars?
 tags: how,do,i,assign,individual,colors,to,bars?

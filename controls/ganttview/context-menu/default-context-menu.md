@@ -1,6 +1,6 @@
 ---
 title: Default context menu
-page_title: Default context menu | RadGanttView
+page_title: Default context menu - RadGanttView
 description: __RadGanttView__ has a default context menu which allows several operations with the gantt data items to be performed.
 slug: winforms/ganttview-/context-menu/default-context-menu
 tags: default,context,menu

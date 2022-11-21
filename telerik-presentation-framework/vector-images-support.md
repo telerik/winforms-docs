@@ -1,6 +1,6 @@
 ---
 title: Vector Images Support
-page_title: Support for vector graphics | Telerik Presentation Framework
+page_title: Support for vector graphics - Telerik Presentation Framework
 description: RadControls now support displaying vector graphics for building high DPI applications
 slug: winforms-tpf-vector-images
 tags: vector, images

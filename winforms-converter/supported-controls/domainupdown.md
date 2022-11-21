@@ -1,6 +1,6 @@
 ---
 title: DomainUpDown
-page_title: DomainUpDown | WinForms Converter
+page_title: DomainUpDown - WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/domainupdown
 tags: covert, winforms, domainupdown

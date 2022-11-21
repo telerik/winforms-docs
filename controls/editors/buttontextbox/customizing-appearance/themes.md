@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadButtonTextBox
+page_title: Themes - RadButtonTextBox
 description: RadButtonTextBox is a derivative of **RadTextBox** which allows you to embed easily button elements on the left or right side of the text box.
 slug: winforms/editors/buttontextbox/customizing-elements/themes
 tags: formatting,items, themes

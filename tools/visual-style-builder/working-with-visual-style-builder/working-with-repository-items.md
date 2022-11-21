@@ -1,6 +1,6 @@
 ---
 title: Working With Repository Items
-page_title: Working With Repository Items | UI for WinForms Tools
+page_title: Working With Repository Items - UI for WinForms Tools
 description: This article shows how one can create or edit existing  repository items.
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items
 tags: working,with,repository,items

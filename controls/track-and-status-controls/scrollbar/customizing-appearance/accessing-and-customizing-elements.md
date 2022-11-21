@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | RadScrollBar
+page_title: Accessing and Customizing Elements - RadScrollBar
 description: RadHSrollBar and RadVScrollBar are themeable alternatives to the standard Windows Forms scroll bar controls.
 slug: winforms/track-and-status-controls/scrollbar/accessing-and-customizing-elements
 tags: scrollbar

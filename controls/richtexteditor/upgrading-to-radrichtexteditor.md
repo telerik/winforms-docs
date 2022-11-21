@@ -1,6 +1,6 @@
 ---
 title: Upgrading to RadRichTextEditor
-page_title: Upgrading to RadRichTextEditor | RadRichTextEditor
+page_title: Upgrading to RadRichTextEditor - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor-/upgrading-to-radrichtexteditor
 tags: upgrading,to,radrichtexteditor

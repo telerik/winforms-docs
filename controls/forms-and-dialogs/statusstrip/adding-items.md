@@ -1,6 +1,6 @@
 ---
 title: Adding Items
-page_title: Adding Items | RadStatusBar
+page_title: Adding Items - RadStatusBar
 description: RadStatusStrip provides a status area that can be composed of any number of RadElement types - buttons, repeat buttons, image buttons, labels, panels, progress bars and separators.
 slug: winforms/forms-and-dialogs/statusstrip/adding-items
 tags: working,with,radstatusstrip,items

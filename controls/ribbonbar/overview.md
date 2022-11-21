@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadRibbonBar
+page_title: Overview - RadRibbonBar
 description: The RadRibbonBar control provides a flexible way for organizing all the functionality of your application.
 slug: winforms/ribbonbar
 tags: ribbonbar

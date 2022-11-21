@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadTreeView
+page_title: Themes - RadTreeView
 description: This article shows how RadTreeView looks like with each theme available in the WinForms suite. 
 slug: winforms/treeview/styling-and-appearance/themes
 tags: themes

@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | Virtual Keyboard
+page_title: Themes - Virtual Keyboard
 description: RadVirtualKeyboard is a software component that allows the input of characters without the need for physical keys. 
 slug: virtual-keyboard-themes
 tags: virtual, keyboard, themes

@@ -1,6 +1,6 @@
 ---
 title: Formatting Blocks
-page_title: Formatting Blocks | RadAutoCompleteBox
+page_title: Formatting Blocks - RadAutoCompleteBox
 description: This article shows how one can change the tokenized elements styles.
 slug: winforms/editors/autocompletebox/formatting-blocks
 tags: formatting,blocks

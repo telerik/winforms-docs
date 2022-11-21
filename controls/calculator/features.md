@@ -1,6 +1,6 @@
 ---
 title: Features
-page_title: Features | RadCalculator
+page_title: Features - RadCalculator
 description: Learn what are the supported features in the WinForms Calculator control.    
 slug: calculator-features
 tags: calculator

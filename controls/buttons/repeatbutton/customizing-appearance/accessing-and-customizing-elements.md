@@ -1,6 +1,6 @@
 ---
 title: Accessing and customizing elements
-page_title: Accessing and customizing elements | UI for WinForms Documentation
+page_title: Accessing and customizing elements - UI for WinForms Documentation
 description: RadRepeatButton provides press-and-hold functionality and it is an ideal UI element for allowing users to control an increasing or decreasing value, such as volume or brightness. 
 slug: winforms/buttons/repeatbutton/customizing-appearance/accessing-and-customizing-elements 
 tags: repeatbutton

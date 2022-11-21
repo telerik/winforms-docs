@@ -1,6 +1,6 @@
 ---
 title: Information Adorner
-page_title: Information Adorner | RadDiagram
+page_title: Information Adorner - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/information-adorner
 tags: information,adorner

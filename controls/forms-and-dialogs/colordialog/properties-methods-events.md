@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | RadColorDialog
+page_title: Properties, Methods and Events - RadColorDialog
 description: RadColorDialog is a lightweight UI component that allows users to select from RGB or HEX color models.
 slug: winforms/forms-and-dialogs/colordialog/properties-methods-events
 tags: working,with,the,radcolordialog

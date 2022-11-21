@@ -1,6 +1,6 @@
 ---
 title: DockingGuidesTemplate
-page_title: DockingGuidesTemplate | RadDock
+page_title: DockingGuidesTemplate - RadDock
 description: Shows how you can use the predefined templates or use custom ones.
 slug: winforms/dock/architecture-and-features/dockingguidestemplate
 tags: dockingguidestemplate

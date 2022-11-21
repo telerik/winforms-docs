@@ -1,6 +1,6 @@
 ---
 title: New Item
-page_title: New Item | RadPageView
+page_title: New Item - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/stripview/new-item
 tags: new,item

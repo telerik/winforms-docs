@@ -1,6 +1,6 @@
 ---
 title: Ellipse Shape
-page_title: Ellipse Shape| Telerik Presentation Framework
+page_title: Ellipse Shape- Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms/telerik-presentation-framework/ellipse-shape
 tags: ellipse-shape

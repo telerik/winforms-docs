@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | RadListControl
+page_title: Structure - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/structure
 tags: listcontrol, structure

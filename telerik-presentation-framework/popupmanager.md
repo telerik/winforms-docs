@@ -1,6 +1,6 @@
 ---
 title: PopupManager
-page_title: PopupManager | Telerik Presentation Framework
+page_title: PopupManager - Telerik Presentation Framework
 description: Get started with the WinForms PopupManager class.
 slug: winforms-tpf-popup-manager
 tags: popupmanager, themes

@@ -1,6 +1,6 @@
 ---
 title: Radar Column
-page_title: Radar Column | ChartView
+page_title: Radar Column - ChartView
 description: The radar chart is a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point
 slug: winforms/chartview-/series-types/radar-column
 tags: radar, column

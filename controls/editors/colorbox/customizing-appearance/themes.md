@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadColorBox
+page_title: Themes - RadColorBox
 description: RadColorBox is a themable control which allows users to select a color from a color dialog or to directly type it in the text field.
 slug: winforms/editors/themes
 tags: colorbox

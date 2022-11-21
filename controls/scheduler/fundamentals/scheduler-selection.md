@@ -1,6 +1,6 @@
 ---
 title: Scheduler Selection
-page_title: Scheduler Selection | RadScheduler
+page_title: Scheduler Selection - RadScheduler
 description: This articles described the default selection behavior as well as how this behavior can be altered by using a custom class.
 slug: winforms/scheduler/fundamentals/scheduler-selection
 tags: scheduler,selection

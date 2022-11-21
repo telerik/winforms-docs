@@ -1,6 +1,6 @@
 ---
 title: Series Items
-page_title: Series Items | UI for WinForms Documentation
+page_title: Series Items - UI for WinForms Documentation
 description: Series Items
 slug: winforms/chart/understanding-radchart-elements/series-items
 tags: series,items

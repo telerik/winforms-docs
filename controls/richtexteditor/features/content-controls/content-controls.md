@@ -1,6 +1,6 @@
 ---
 title: Content Controls (Structured Document Tags) 
-page_title: Content Controls | RadRichTextEditor
+page_title: Content Controls - RadRichTextEditor
 description: This article describes which content controls are supported in RadRichTextEditor
 slug: radrichtexteditor-features-content-controls
 tags: content controls, richtexteditor

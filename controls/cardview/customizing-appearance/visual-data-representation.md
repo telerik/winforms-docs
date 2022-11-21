@@ -1,6 +1,6 @@
 ---
 title: Visual Data Representation
-page_title: Visual Data Representation | UI for WinForms Documentation
+page_title: Visual Data Representation - UI for WinForms Documentation
 description: Formatting Items
 slug: winforms/cardviewview/customizing-appearance/visual-data-representation
 tags: visual,data,representation

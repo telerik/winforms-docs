@@ -1,6 +1,6 @@
 ---
 title: Item Types
-page_title: Item Types | RadButtonTextBox
+page_title: Item Types - RadButtonTextBox
 description: RadButtonTextBox is a derivative of **RadTextBox** which allows you to embed easily button elements on the left or right side of the text box.
 slug: winforms/editors/buttontextbox/items-type
 tags: getting,started

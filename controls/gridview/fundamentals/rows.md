@@ -1,6 +1,6 @@
 ---
 title: Rows
-page_title: Rows | RadGridView
+page_title: Rows - RadGridView
 description: This article shows the main row types used in RadGridView
 slug: winforms/gridview/fundamentals/rows
 tags: rows

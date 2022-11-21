@@ -1,6 +1,6 @@
 ---
 title: Custom Indicators
-page_title: Custom Indicators | UI for WinForms Documentation
+page_title: Custom Indicators - UI for WinForms Documentation
 description: This article aims to demonstrate how to create indicators that use custom built-in formulas
 slug: winforms/chartview-/series-types/indicators/custom-indicators
 tags: custom,indicators

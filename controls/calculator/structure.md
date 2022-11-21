@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | RadCalculator
+page_title: Structure - RadCalculator
 description: Get familiar with the internal elements structure of the WinForms Calculator control.    
 slug: calculator-structure
 tags: calculator

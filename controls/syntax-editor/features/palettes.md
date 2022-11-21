@@ -1,6 +1,6 @@
 ---
 title: Palettes
-page_title: Palettes | RadSyntaxEditor
+page_title: Palettes - RadSyntaxEditor
 description: RadSyntaxEditor is a useful text editor control which provides built-in syntax highlighting and code editing experience
 slug: syntax-editor-features-palettes
 tags: palettes

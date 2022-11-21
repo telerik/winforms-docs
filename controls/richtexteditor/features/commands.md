@@ -1,6 +1,6 @@
 ---
 title: Commands
-page_title: Commands | RadRichTextEditor
+page_title: Commands - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/features/commands
 tags: commands

@@ -1,6 +1,6 @@
 ---
 title: Using the DataSource Property
-page_title: Using the DataSource property | RadPivotGrid
+page_title: Using the DataSource property - RadPivotGrid
 description: Using the DataSource property
 slug: winforms/pivotgrid/populating-with-data/using-the-datasource-property
 tags: using,the,datasource,property

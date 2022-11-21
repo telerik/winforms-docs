@@ -1,6 +1,6 @@
 ---
 title: Crystal Themes Blending
-page_title: Crystal Themes Blending | UI for WinForms Tools
+page_title: Crystal Themes Blending - UI for WinForms Tools
 description: Color blending the Fluent themes in the Visual Style Builder tool.
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/crystal-themes-blending
 tags: color, blending, crystal

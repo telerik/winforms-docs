@@ -1,6 +1,6 @@
 ---
 title: Elements Overview
-page_title: Overview | Telerik Presentation Framework
+page_title: Overview - Telerik Presentation Framework
 description: This article shows the elements types used in Telerik Presentation Framework.
 slug: winforms/telerik-presentation-framework/elements/overview
 tags: overview

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: VirtualGrid | RadVirtualGrid
+page_title: VirtualGrid - RadVirtualGrid
 description: RadVirtualGrid is a grid component which provides a convenient way to implement your own data management operations and optimizes the performance.
 slug: winforms/virtualgrid
 tags: virtualgrid

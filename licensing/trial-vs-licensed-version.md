@@ -1,6 +1,6 @@
 ---
 title: Trial vs Licensed version
-page_title: Trial Vs Licensed Version | Licensing
+page_title: Trial Vs Licensed Version - Licensing
 description: This article shows the difference between the trial and licensed version and how you can switch between them.
 slug: winforms/licensing/trial-vs-license
 tags: license,trial

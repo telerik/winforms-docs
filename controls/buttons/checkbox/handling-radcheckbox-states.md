@@ -1,6 +1,6 @@
 ---
 title: Handling RadCheckBox States
-page_title: Handling RadCheckBox States | UI for WinForms Documentation
+page_title: Handling RadCheckBox States - UI for WinForms Documentation
 description: RadCheckBox is designed to provide an interface element that can represent an On or Off state using a check mark.
 slug: winforms/buttons/checkbox/handling-radcheckbox-states
 tags: handling,radcheckbox,states

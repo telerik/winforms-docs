@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods, Events | Chat
+page_title: Properties, Methods, Events - Chat
 description: RadChat is a control that provides conversational experience.
 slug: winforms/chat/properties-methods-and-events
 tags: pivotgrid, properties, methods, events

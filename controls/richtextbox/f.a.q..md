@@ -1,6 +1,6 @@
 ---
 title: F.A.Q.
-page_title: F.A.Q. | UI for WinForms Documentation
+page_title: F.A.Q. - UI for WinForms Documentation
 description: F.A.Q.
 slug: winforms/richtextbox-(obsolete)/f.a.q.
 tags: f.a.q.

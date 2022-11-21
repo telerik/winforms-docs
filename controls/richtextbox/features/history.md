@@ -1,6 +1,6 @@
 ---
 title: History
-page_title: History | UI for WinForms Documentation
+page_title: History - UI for WinForms Documentation
 description: History
 slug: winforms/richtextbox-(obsolete)/features/history
 tags: history

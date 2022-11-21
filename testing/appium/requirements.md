@@ -1,6 +1,6 @@
 ---
 title: Requirements
-page_title: Requirements | Appium
+page_title: Requirements - Appium
 description: We will explore how to use Appium, the Microsoft recommended open source test automation framework, with Telerik UI for WinForms.  
 slug: appium-requirements
 tags: appium

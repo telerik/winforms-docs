@@ -1,6 +1,6 @@
 ---
 title: DockLayout
-page_title: DockLayout | Telerik Presentation Framework
+page_title: DockLayout - Telerik Presentation Framework
 description: DockLayoutPanel is a panel that docks its child elements to a predefined-position.
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/docklayout
 tags: docklayout

@@ -1,6 +1,6 @@
 ---
 title: RadChart SmartTag Menu
-page_title: RadChart SmartTag Menu | UI for WinForms Documentation
+page_title: RadChart SmartTag Menu - UI for WinForms Documentation
 description: RadChart SmartTag Menu
 slug: winforms/chart/understanding-radchart-ui/radchart-smarttag-menu
 tags: radchart,smarttag,menu

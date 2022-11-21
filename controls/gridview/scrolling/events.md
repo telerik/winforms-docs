@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events | RadGridView
+page_title: Events - RadGridView
 description: This article shows how you can subscribe to the ValueChanged event of the vertical scrollbar.
 slug: winforms/gridview/scrolling/events
 tags: events

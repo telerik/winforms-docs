@@ -1,6 +1,6 @@
 ---
 title: Context Menu
-page_title: Context Menu | File Dialogs
+page_title: Context Menu - File Dialogs
 description: Similar to Windows FileExplorer, the Telerik **ExplorerControl** also shows the standard Windows context menu
 slug: file-dialogs-context-menu
 tags: filedialogs, menu

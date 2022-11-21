@@ -1,6 +1,6 @@
 ---
 title: Adding and Customizing Elements
-page_title: Adding and Customizing Elements | RadRibbonBar
+page_title: Adding and Customizing Elements - RadRibbonBar
 description: A RibbonBar group may contain button groups or elements. Button groups in turn can contain other button groups or elements. You can add, remove, and customize any of these building blocks by code.
 slug: winforms/ribbonbar/programming-radribbonbar/adding-and-customizing-elements
 tags: adding,and,customizing,elements

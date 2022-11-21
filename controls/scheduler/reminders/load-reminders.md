@@ -1,6 +1,6 @@
 ---
 title: Save/Load reminders
-page_title: Save/Load reminders | RadScheduler
+page_title: Save/Load reminders - RadScheduler
 description: RadScheduler allows you to save and load the reminders set for appointments. Reminders are saved into an xml file format to a user provider file path or stream.
 slug: winforms/scheduler/reminders/save/load-reminders
 tags: save/load,reminders

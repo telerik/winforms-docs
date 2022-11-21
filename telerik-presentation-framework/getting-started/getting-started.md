@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | Telerik Presentation Framework
+page_title: Getting Started - Telerik Presentation Framework
 description: This article demonstrates how you can create custom control using the Telerik Presentation Framework.
 slug: winforms/telerik-presentation-framework/getting-started/getting-started
 tags: getting,started

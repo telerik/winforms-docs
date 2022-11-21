@@ -1,6 +1,6 @@
 ---
 title: Custom Taggers
-page_title: Custom Taggers | RadSyntaxEditor
+page_title: Custom Taggers - RadSyntaxEditor
 description: Taggers are used to identify spans of text and assign them a specific tag if they match a specific condition.     
 slug: syntax-editor-custom-taggers
 tags: features, custom, taggers

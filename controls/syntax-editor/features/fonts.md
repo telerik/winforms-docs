@@ -1,6 +1,6 @@
 ---
 title: Fonts
-page_title: Fonts | RadSyntaxEditor
+page_title: Fonts - RadSyntaxEditor
 description: RadSyntaxEditor responds to changes in its font properties just as any other WinForms control. 
 slug: syntax-editor-features-fonts
 tags: features, fonts

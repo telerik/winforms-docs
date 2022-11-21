@@ -1,6 +1,6 @@
 ---
 title: Element Hierarchy Editor
-page_title: Element Hierarchy Editor | UI for WinForms Tools
+page_title: Element Hierarchy Editor - UI for WinForms Tools
 description: Element Hierarchy Editor allows you to work with complex control types and to navigate the class and element hierarchy.
 slug: winforms/tools/element-hierarchy-editor
 tags: element,hierarchy,editor

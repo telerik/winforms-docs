@@ -1,6 +1,6 @@
 ---
 title: Hyperlink
-page_title: Hyperlink | UI for WinForms Documentation
+page_title: Hyperlink - UI for WinForms Documentation
 description: Hyperlink
 slug: winforms/richtextbox-(obsolete)/features/document-elements/hyperlink
 tags: hyperlink

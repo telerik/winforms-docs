@@ -1,6 +1,6 @@
 ---
 title: Binding to ObjectDataSource at Run-Time
-page_title: Binding to ObjectDataSource at Run-Time | UI for WinForms Documentation
+page_title: Binding to ObjectDataSource at Run-Time - UI for WinForms Documentation
 description: Binding to ObjectDataSource at Run-Time
 slug: winforms/chart/building-radcharts/binding-to-objectdatasource-at-run-time
 tags: binding,to,objectdatasource,at,run-time

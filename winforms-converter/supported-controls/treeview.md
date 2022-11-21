@@ -1,6 +1,6 @@
 ---
 title: TreeView
-page_title: DataGridView | Winforms Converter
+page_title: DataGridView - Winforms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/treeview
 tags: covert, winforms, datagridview

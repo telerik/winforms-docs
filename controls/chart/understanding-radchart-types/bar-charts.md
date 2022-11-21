@@ -1,6 +1,6 @@
 ---
 title: Bar Charts
-page_title: Bar Charts | UI for WinForms Documentation
+page_title: Bar Charts - UI for WinForms Documentation
 description: Bar Charts
 slug: winforms/chart/understanding-radchart-types/bar-charts
 tags: bar,charts

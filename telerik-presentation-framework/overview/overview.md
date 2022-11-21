@@ -1,6 +1,6 @@
 ---
 title: Telerik Presentation Framework Overview
-page_title: Overview | Telerik Presentation Framework
+page_title: Overview - Telerik Presentation Framework
 description: The Telerik Presentation Framework (TPF) offers WPF-like features within classic Windows Forms applications. 
 slug: winforms/telerik-presentation-framework/overview
 tags: overview

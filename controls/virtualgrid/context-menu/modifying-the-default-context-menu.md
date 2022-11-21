@@ -1,6 +1,6 @@
 ---
 title: Modifying the Default Context Menu
-page_title: Modifying the Default Context Menu | RadVirtualGrid
+page_title: Modifying the Default Context Menu - RadVirtualGrid
 description: This article shows how one can access and modify the default context menu of RadVirtualGrid.
 slug: winforms/virtualgrid/context-menu/modifying-the-default-context-menu
 tags: virtualgrid, menu, modify

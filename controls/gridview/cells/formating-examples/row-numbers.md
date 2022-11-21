@@ -1,6 +1,6 @@
 ---
 title: Row Numbers
-page_title: Row Numbers | RadGridView
+page_title: Row Numbers - RadGridView
 description: Use the CellFormatting event to show the row number.
 slug: winforms/gridview/cells/formatting-row-numbers
 tags: formatting,cells

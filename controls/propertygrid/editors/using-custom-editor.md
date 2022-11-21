@@ -1,6 +1,6 @@
 ---
 title: Using Custom Editor
-page_title: Using custom editor | RadPropertyGrid
+page_title: Using custom editor - RadPropertyGrid
 description: This following snippet demonstrates how to create and replace the standard spin editor with a track bar editor.
 slug: winforms/propertygrid/editors/using-custom-editor
 tags: using,custom,editor

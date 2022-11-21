@@ -1,6 +1,6 @@
 ---
 title: Model
-page_title: Model | RadSpreadsheet
+page_title: Model - RadSpreadsheet
 description: Model
 slug: radspreadsheet-model
 tags: model

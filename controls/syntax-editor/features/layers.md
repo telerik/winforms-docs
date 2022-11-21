@@ -1,6 +1,6 @@
 ---
 title: Layers
-page_title: Layers | RadSyntaxEditor
+page_title: Layers - RadSyntaxEditor
 description: RadSyntaxEditor control renders its elements on different layers based on the types of tags that are used   
 slug: syntax-editor-features-layers
 tags: features, layers

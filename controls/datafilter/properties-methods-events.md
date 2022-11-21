@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | RadDataFilter
+page_title: Properties, Methods and Events - RadDataFilter
 description: This article show what RadDataFilter represents and its key features. 
 slug: winforms/datafilter/properties-methods-events
 tags: data, filter

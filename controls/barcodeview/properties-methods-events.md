@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | BarcodeView
+page_title: Properties, Methods and Events - BarcodeView
 description: RadBarcodeView is a set of components that can be used to create, show and read barcodes. 
 slug: barcodeview-properties-methods-events
 tags: barcode, getting started

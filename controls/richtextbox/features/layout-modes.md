@@ -1,6 +1,6 @@
 ---
 title: Layout modes
-page_title: Layout modes | UI for WinForms Documentation
+page_title: Layout modes - UI for WinForms Documentation
 description: Layout modes
 slug: winforms/richtextbox-(obsolete)/features/layout-modes
 tags: layout,modes

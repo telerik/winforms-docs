@@ -1,6 +1,6 @@
 ---
 title: Create a project
-page_title: Create a project | TestComplete
+page_title: Create a project - TestComplete
 description: We will use TestComplete - functional automated testing platform developed by SmartBear Software to automate Telerik UI for WinForms Controls.  
 slug: test-complete-create-a-project-manual-test
 tags: testcomplete, test, manual, winforms, test script

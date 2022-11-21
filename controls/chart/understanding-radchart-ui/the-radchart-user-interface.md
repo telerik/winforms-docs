@@ -1,6 +1,6 @@
 ---
 title: The RadChart User Interface
-page_title: The RadChart User Interface | UI for WinForms Documentation
+page_title: The RadChart User Interface - UI for WinForms Documentation
 description: The RadChart User Interface
 slug: winforms/chart/understanding-radchart-ui/the-radchart-user-interface
 tags: the,radchart,user,interface

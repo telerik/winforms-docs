@@ -1,6 +1,6 @@
 ---
 title: BarOverlapPercent and BarWidthPercent
-page_title: BarOverlapPercent and BarWidthPercent | UI for WinForms Documentation
+page_title: BarOverlapPercent and BarWidthPercent - UI for WinForms Documentation
 description: BarOverlapPercent and BarWidthPercent
 slug: winforms/chart/understanding-radchart-elements/baroverlappercent-and-barwidthpercent
 tags: baroverlappercent,and,barwidthpercent

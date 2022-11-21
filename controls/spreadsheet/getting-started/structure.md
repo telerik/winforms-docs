@@ -1,6 +1,6 @@
 ---
 title: Visual Structure
-page_title: Visual Structure | RadSpreadsheet
+page_title: Visual Structure - RadSpreadsheet
 description: RadSpreadsheet is a control that allows editing tabular data utilizing a variety of cell formatting options, styles and themes.
 slug: radspreadsheet-visual-structure
 tags: visual,structure

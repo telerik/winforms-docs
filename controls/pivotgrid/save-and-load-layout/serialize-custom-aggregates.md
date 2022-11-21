@@ -1,6 +1,6 @@
 ---
 title: Serialize Custom Aggregates
-page_title: Serialize Custom Aggregates | RadPivotGrid
+page_title: Serialize Custom Aggregates - RadPivotGrid
 description: Serialize Custom Aggregates
 slug: winforms/pivotgrid/save-and-load-layout/serialize-custom-aggregates
 tags: save,and,load,layout,aggregates

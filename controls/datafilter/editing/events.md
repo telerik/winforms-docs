@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events | RadDataFilter
+page_title: Events - RadDataFilter
 description: RadDataFilter allows you to build complex filter expressions based on the data and collection type of the source fields.  
 slug: winforms/datafilter/editing/events
 tags: data, filter

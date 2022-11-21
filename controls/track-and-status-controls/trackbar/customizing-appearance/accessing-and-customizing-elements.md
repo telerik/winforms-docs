@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | RadTrackBar
+page_title: Accessing and Customizing Elements - RadTrackBar
 description: RadTrackBar, sometimes called a slider control, can be used for navigating a large amount of information or for visually adjusting a numeric setting. 
 slug: winforms/track-and-status-controls/trackbar/accessing-and-customizing-elements
 tags: trackbar

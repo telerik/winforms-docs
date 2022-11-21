@@ -1,6 +1,6 @@
 ---
 title: Binding to Multiple Objects
-page_title: Binding to Multiple Objects | RadPropertyGrid
+page_title: Binding to Multiple Objects - RadPropertyGrid
 description: You can set an array of objects as SelectedObjects of RadPropertyGrid . When you do so, the RadPropertyGrid will display only the common properties of all the objects in the array.
 slug: winforms/propertygrid/populating-with-data/binding-to-multiple-objects
 tags: binding,to,multiple,objects

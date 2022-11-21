@@ -1,6 +1,6 @@
 ---
 title: Copyright
-page_title: Copyright | UI for WinForms Documentation
+page_title: Copyright - UI for WinForms Documentation
 description: All Progress software products are copyrighted and all rights are reserved by Progress Software Corporation.
 slug: winforms/licensing/copyright
 tags: Copyright

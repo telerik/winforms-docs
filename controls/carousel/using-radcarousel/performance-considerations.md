@@ -1,6 +1,6 @@
 ---
 title: Performance Considerations
-page_title: Performance Considerations | RadCarousel
+page_title: Performance Considerations - RadCarousel
 description: Performance Considerations
 slug: winforms/carousel/using-radcarousel/performance-considerations
 tags: performance,considerations

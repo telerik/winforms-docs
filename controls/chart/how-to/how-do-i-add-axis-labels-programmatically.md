@@ -1,6 +1,6 @@
 ---
 title: How Do I add Axis Labels Programmatically?
-page_title: How Do I add Axis Labels Programmatically? | UI for WinForms Documentation
+page_title: How Do I add Axis Labels Programmatically? - UI for WinForms Documentation
 description: How Do I add Axis Labels Programmatically?
 slug: winforms/chart/how-to/how-do-i-add-axis-labels-programmatically?
 tags: how,do,i,add,axis,labels,programmatically?

@@ -1,6 +1,6 @@
 ---
 title: Reordering System Rows
-page_title: Reordering System Rows | RadGridView
+page_title: Reordering System Rows - RadGridView
 description: This article describes how you can change the order of the header, filtering, search and new rows.
 slug: winforms/gridview/rows/reordering-system-rows
 tags: reordering,system,rows

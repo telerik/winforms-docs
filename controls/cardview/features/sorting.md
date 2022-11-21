@@ -1,6 +1,6 @@
 ---
 title: Sorting
-page_title: Sorting | UI for WinForms Documentation
+page_title: Sorting - UI for WinForms Documentation
 description: Sorting is possible in two ways either programmatically by adding the appropriate SortDescriptor to the SortDescriptors collection of RadCardView.
 slug: winforms/cardview/features/sorting
 tags: sorting

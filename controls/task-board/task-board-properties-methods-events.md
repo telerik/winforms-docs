@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | Task Board
+page_title: Properties, Methods and Events - Task Board
 description: Get familiar with the public API of the WinForms TaskBoard (Kanban) control.
 slug: task-board-properties-methods-events
 tags: task board, kanban, properties, methods, events

@@ -1,6 +1,6 @@
 ---
 title: RibbonBar UI
-page_title: RibbonBar UI | UI for WinForms Documentation
+page_title: RibbonBar UI - UI for WinForms Documentation
 description: RibbonBar UI
 slug: winforms/richtextbox-(obsolete)/features/ribbonbar-ui
 tags: ribbonbar,ui

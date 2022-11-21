@@ -1,6 +1,6 @@
 ---
 title: Mouse Effects
-page_title: Mouse Effects | Telerik Presentation Framework
+page_title: Mouse Effects - Telerik Presentation Framework
 description: This article describes the new fluent theme mouse effects ans their properties. 
 slug: winforms/telerik-presentation-framework/painting-logic
 tags: mouse, effects, fluent

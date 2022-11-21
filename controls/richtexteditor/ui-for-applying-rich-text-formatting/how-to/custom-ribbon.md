@@ -1,6 +1,6 @@
 ---
 title: Inherit RichTextEditorRibbonBar
-page_title: Inherit RichTextEditorRibbonBar | RadRichTextEditor
+page_title: Inherit RichTextEditorRibbonBar - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/custom-ribbon
 tags: ribbon,ui

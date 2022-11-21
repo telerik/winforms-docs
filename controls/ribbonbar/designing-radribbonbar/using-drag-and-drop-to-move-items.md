@@ -1,6 +1,6 @@
 ---
 title: Using Drag and Drop to Move Items
-page_title: Using Drag and Drop to Move Items | RadRibbonBar
+page_title: Using Drag and Drop to Move Items - RadRibbonBar
 description: In the designer, developers can use drag-and-drop to rearrange the tabs within a RadRibbonBar.
 slug: winforms/ribbonbar/getting-started/using-drag-and-drop-to-move-items
 tags: using,drag,and,drop,to,move,items

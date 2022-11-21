@@ -1,6 +1,6 @@
 ---
 title: Background and Plot Areas
-page_title: Background and Plot Areas | UI for WinForms Documentation
+page_title: Background and Plot Areas - UI for WinForms Documentation
 description: Background and Plot Areas
 slug: winforms/chart/understanding-radchart-elements/background-and-plot-areas
 tags: background,and,plot,areas

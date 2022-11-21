@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | Overlay Screen
+page_title: Overview - Overlay Screen
 description: Overlay is a powerful new control which aims to notify the end user for long running background operations.
 slug: overlay-overview
 tags: overlay

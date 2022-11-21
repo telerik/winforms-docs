@@ -1,6 +1,6 @@
 ---
 title: Copy/Paste/Cut
-page_title: Copy/Paste/Cut | RadScheduler
+page_title: Copy/Paste/Cut - RadScheduler
 description: RadScheduler supports built-in Copy/Paste/Cut functionality, which allows you to store appointments information in the Clipboard and then paste it in a different location.
 slug: winforms/scheduler/end-user-functionality/copy/paste/cut
 tags: copy/paste/cut

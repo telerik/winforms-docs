@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | RadBreadCrumb
+page_title: Properties, Methods and Events - RadBreadCrumb
 description:   
 slug: breadcrumb-properties-methods-events
 tags: breadcrumb

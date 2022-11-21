@@ -1,6 +1,6 @@
 ---
 title: AutoCompleteModes
-page_title: AutoCompleteModes | RadCheckedDropDownList
+page_title: AutoCompleteModes - RadCheckedDropDownList
 description: RadCheckedDropDownList combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area. 
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/autocompletemodes
 tags: autocompletemodes

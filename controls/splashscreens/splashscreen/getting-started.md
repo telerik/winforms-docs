@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | SplashScreen
+page_title: Getting Started - SplashScreen
 description: Get familiar with the internal strcuture of the WinForms SplashScreen .
 slug: splashscreen-getting-started
 tags: splash, screen

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadCardView
+page_title: Overview - RadCardView
 description: RadCardView supports editing of its content out of the box. This operation can be started by clicking with the mouse on the value of a particular item.
 slug: winforms/cardview/editors/overview
 tags: overview editors

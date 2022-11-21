@@ -1,6 +1,6 @@
 ---
 title: Pdf
-page_title: Pdf | RadRichTextEditor
+page_title: Pdf - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display PDF documents. 
 slug: winforms/richtexteditor/import-export/pdf/pdf
 tags: import/export

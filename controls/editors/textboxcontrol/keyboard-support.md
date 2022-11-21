@@ -1,6 +1,6 @@
 ---
 title: Keyboard Support
-page_title: Keyboard Support| RadTextBoxControl
+page_title: Keyboard Support- RadTextBoxControl
 description: This article shows keyboard combinations of RadTextBoxControl
 slug: winforms/editors/textboxcontrol/keyboard-support
 tags: keyboard, support

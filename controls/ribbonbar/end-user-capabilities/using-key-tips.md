@@ -1,6 +1,6 @@
 ---
 title: Using Key Tips
-page_title: Using Key Tips | RadRibbonBar
+page_title: Using Key Tips - RadRibbonBar
 description: Key tips allow the user to easily discover the keyboard shortcuts for any item of RadRibbonBar control.
 slug: winforms/ribbonbar/end-user-capabilities/using-key-tips
 tags: using,key,tips

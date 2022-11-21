@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Editors Overview | RadListView
+page_title: Editors Overview - RadListView
 description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/editors/editors
 tags: checkboxes,and,editors

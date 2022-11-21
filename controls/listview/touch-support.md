@@ -1,6 +1,6 @@
 ---
 title: Touch Support
-page_title: Touch Support | UI for WinForms Documentation
+page_title: Touch Support - UI for WinForms Documentation
 description: Touch Support
 slug: winforms/listview/touch-support
 tags: touch,support

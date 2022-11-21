@@ -1,6 +1,6 @@
 ---
 title: Customizing the Application Menu
-page_title: Customizing the Application Menu | RadRibbonBar
+page_title: Customizing the Application Menu - RadRibbonBar
 description: The Application Menu is a menu that is displayed when you click on the Office Button in the upper left corner of RadRibbonBar.
 slug: winforms/ribbonbar/programming-radribbonbar/customizing-the-application-menu
 tags: customizing,the,application,menu

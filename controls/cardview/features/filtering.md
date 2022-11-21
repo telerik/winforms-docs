@@ -1,6 +1,6 @@
 ---
 title: Filtering
-page_title: Filtering | UI for WinForms Documentation
+page_title: Filtering - UI for WinForms Documentation
 description: RadCardView allows filtering applied to its CardViewItems. To enable filtering use the EnableFiltering property of the control.
 slug: winforms/cardview/features/filtering
 tags: filtering

@@ -1,6 +1,6 @@
 ---
 title: Bezier Charts
-page_title: Bezier Charts | UI for WinForms Documentation
+page_title: Bezier Charts - UI for WinForms Documentation
 description: Bezier Charts
 slug: winforms/chart/understanding-radchart-types/bezier-charts
 tags: bezier,charts

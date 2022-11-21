@@ -1,6 +1,6 @@
 ---
 title: Use Control inside an Element
-page_title: Use Control inside an Element | Telerik Presentation Framework
+page_title: Use Control inside an Element - Telerik Presentation Framework
 description: 
 slug: winforms/telerik-presentation-framework/elements/radtrackbarelement
 tags: radtrackbarelement

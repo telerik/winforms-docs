@@ -1,6 +1,6 @@
 ---
 title: License file (licx)
-page_title: License file (licx) | UI for WinForms Documentation
+page_title: License file (licx) - UI for WinForms Documentation
 description: License file (licx)
 slug: winforms/licensing/license-file-(licx)
 tags: license,file,(licx)

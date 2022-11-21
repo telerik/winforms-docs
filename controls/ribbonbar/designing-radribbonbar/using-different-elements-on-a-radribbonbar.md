@@ -1,6 +1,6 @@
 ---
 title: Using Different Elements on a RadRibbonBar
-page_title: Using Different Elements on a RadRibbonBar | RadRibbonBar
+page_title: Using Different Elements on a RadRibbonBar - RadRibbonBar
 description: You can build the user interface with a RadRibbonBar using a variety of different elements. In this tutorial, you will see how some of these elements can be placed and customized.
 slug: winforms/ribbonbar/getting-started/using-different-elements-on-a-radribbonbar
 tags: using,different,elements,on,a,radribbonbar

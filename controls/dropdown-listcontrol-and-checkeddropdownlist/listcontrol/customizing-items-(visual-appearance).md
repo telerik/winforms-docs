@@ -1,6 +1,6 @@
 ---
 title: Customizing Items
-page_title: Customizing Items | RadListControl
+page_title: Customizing Items - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/customizing-items-(visual-appearance)
 tags: customizing,items,(visual,appearance)

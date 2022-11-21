@@ -1,6 +1,6 @@
 ---
 title: Customizing the ExplorerBarView
-page_title: Customizing the ExplorerBarView | RadPageView
+page_title: Customizing the ExplorerBarView - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/explorerbarview/customizing-the-explorerbarview
 tags: customizing,the,explorerbarview

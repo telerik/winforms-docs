@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadOfficeNavigationBar
+page_title: Overview - RadOfficeNavigationBar
 description: RadOfficeNavigationBar represents the control available in the MS Outlook 2013-2019 navigation style.   
 slug: officenavigationbar-overview
 tags: officenavigationbar

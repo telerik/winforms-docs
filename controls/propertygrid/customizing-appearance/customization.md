@@ -1,6 +1,6 @@
 ---
 title: Customization
-page_title: Customization | RadPropertyGrid
+page_title: Customization - RadPropertyGrid
 description: Customizing the appearance of the items in RadPropertyGrid is controlled by a few properties and the ItemFormatting event
 slug: winforms/propertygrid/customizing-appearance/customization
 tags: customization

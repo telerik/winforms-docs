@@ -1,6 +1,6 @@
 ---
 title: Loading Data for Selected Day Only
-page_title: Loading Data for Selected Day Only | RadScheduler
+page_title: Loading Data for Selected Day Only - RadScheduler
 description: The article provides an example how data can be loaded for a selected data only
 slug: winforms/scheduler/how-to/loading-data-for-selected-day-only
 tags: loading,data,for,selected,day,only

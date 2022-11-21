@@ -1,6 +1,6 @@
 ---
 title: Customize the Calendar inside RadDateTimePicker. 
-page_title: Customize the Calendar | RadDateTimePicker. 
+page_title: Customize the Calendar - RadDateTimePicker. 
 description: Customize the RadCalendar in the drop down programmatically.
 slug: winforms/editors/datetimepicker/how-to/customize-radcalendar-programmatically
 tags: customize,radcalendar,programmatically

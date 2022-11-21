@@ -1,6 +1,6 @@
 ---
 title: Attributes
-page_title: Attributes | RadPropertyGrid
+page_title: Attributes - RadPropertyGrid
 description: This article contains a list of some of the more important and more commonly used attributes used with RadPropertyGrid
 slug: winforms/propertygrid/attributes
 tags: attributes

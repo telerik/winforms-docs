@@ -1,6 +1,6 @@
 ---
 title: Styling RadRibbonBar
-page_title: Styling RadRibbonBar | UI for WinForms Tools
+page_title: Styling RadRibbonBar - UI for WinForms Tools
 description: Create a custom theme for the RadRibbonBar starting from an existing one.
 slug: winforms/tools/visual-style-builder/control-specific-theme-tutorials/styling-radribbonbar
 tags: styling,radribbonbar

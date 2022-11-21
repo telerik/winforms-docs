@@ -1,6 +1,6 @@
 ---
 title: Margins
-page_title: Margins | UI for WinForms Documentation
+page_title: Margins - UI for WinForms Documentation
 description: Margins
 slug: winforms/chart/understanding-radchart-elements/margins
 tags: margins

@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadSyntaxEditor
+page_title: Localization - RadSyntaxEditor
 description:   
 slug: syntax-editor-localization
 tags: syntax-editor

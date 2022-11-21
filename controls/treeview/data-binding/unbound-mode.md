@@ -1,6 +1,6 @@
 ---
 title: Unbound Mode
-page_title: Unbound Mode | RadTreeView
+page_title: Unbound Mode - RadTreeView
 description: This article shows how one can manually add nodes to RadTreeView either in code or at design time.
 slug: winforms/treeview/data-binding/unbound-mode
 tags: unbound

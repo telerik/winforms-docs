@@ -1,6 +1,6 @@
 ---
 title: Series-Specific Properties
-page_title: Series-Specific Properties | UI for WinForms Documentation
+page_title: Series-Specific Properties - UI for WinForms Documentation
 description: Series-Specific Properties
 slug: winforms/chart/understanding-radchart-elements/series-specific-properties
 tags: series-specific,properties

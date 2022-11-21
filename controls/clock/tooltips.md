@@ -1,6 +1,6 @@
 ---
 title: Tooltips
-page_title: Tooltips | UI for WinForms Documentation
+page_title: Tooltips - UI for WinForms Documentation
 description: RadClock is a control which allows the developers to use it in their applications to display time to the users.
 slug: winforms/clock/tooltips
 tags: clock

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadFontDropDownList
+page_title: Overview - RadFontDropDownList
 description: RadFontDropDownList represents a drop down list with built-in fonts that are installed on the system.   
 slug: winforms/editors/fontdropdownlist
 tags: font,editor

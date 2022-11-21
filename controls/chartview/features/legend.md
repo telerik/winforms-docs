@@ -1,6 +1,6 @@
 ---
 title: Legend
-page_title: Legend | ChartView
+page_title: Legend - ChartView
 description: RadChartView has built-in support for legends – descriptions about the charts on the plot.
 slug: winforms/chartview-/features/legend
 tags: legend

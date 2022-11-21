@@ -1,6 +1,6 @@
 ---
 title: Pie Charts
-page_title: Pie Charts | UI for WinForms Documentation
+page_title: Pie Charts - UI for WinForms Documentation
 description: Pie Charts
 slug: winforms/chart/understanding-radchart-types/pie-charts
 tags: pie,charts

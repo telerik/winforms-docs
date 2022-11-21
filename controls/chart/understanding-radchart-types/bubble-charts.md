@@ -1,6 +1,6 @@
 ---
 title: Bubble Charts
-page_title: Bubble Charts | UI for WinForms Documentation
+page_title: Bubble Charts - UI for WinForms Documentation
 description: Bubble Charts
 slug: winforms/chart/understanding-radchart-types/bubble-charts
 tags: bubble,charts

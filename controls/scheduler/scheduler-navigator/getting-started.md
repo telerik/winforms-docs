@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started | RadScheduler
+page_title: Getting Started - RadScheduler
 description: The RadSchedulerNavigator control is used with a RadScheduler control and represents a navigation tool that makes using the RadScheduler easier.
 slug: winforms/scheduler/scheduler-navigator/getting-started
 tags: getting,started

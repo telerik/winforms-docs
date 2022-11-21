@@ -1,6 +1,6 @@
 ---
 title: Resizing Rows
-page_title: Resizing Rows | RadVirtualGrid
+page_title: Resizing Rows - RadVirtualGrid
 description: This article shows how you can resize rows in RadVirtualGrid at runtime. 
 slug: winforms/virtualgrid/end-user-capabilities/resizing-rows
 tags: resizing, rows

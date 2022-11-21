@@ -1,6 +1,6 @@
 ---
 title: RadMarkupDialog
-page_title: RadMarkupDialog | Telerik Presentation Framework
+page_title: RadMarkupDialog - Telerik Presentation Framework
 description: RadMarkupEditor is a dialog used for creation of the formatted text supported by our WinForms suite.
 slug: winforms/telerik-presentation-framework/radmarkupdialog
 tags: radmarkupdialog

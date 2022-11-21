@@ -1,6 +1,6 @@
 ---
 title: Customizing RadRangeSelector 
-page_title: Customizing RadRangeSelector  | RadRangeSelector
+page_title: Customizing RadRangeSelector  - RadRangeSelector
 description: Customizing RadRangeSelector 
 slug: winforms/rangeselector/customizing-radrangeselector
 tags: customizing,radrangeselector,

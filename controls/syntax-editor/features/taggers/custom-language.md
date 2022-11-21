@@ -1,6 +1,6 @@
 ---
 title: Custom Language
-page_title: Custom Language | RadSyntaxEditor
+page_title: Custom Language - RadSyntaxEditor
 description: RadSyntaxEditor allows you to create custom syntax highlighting for any custom language.   
 slug: syntax-editor-custom-language
 tags: features, custom, language

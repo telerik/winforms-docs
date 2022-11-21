@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | Virtual Keyboard
+page_title: Accessing and Customizing Elements - Virtual Keyboard
 description: RadVirtualKeyboard is a software component that allows the input of characters without the need for physical keys. 
 slug: virtual-keyboard-accessing-and-customizing-elements
 tags: virtual, keyboard

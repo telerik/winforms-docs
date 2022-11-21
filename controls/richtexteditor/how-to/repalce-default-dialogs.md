@@ -1,6 +1,6 @@
 ---
 title: Replace Default Dialogs
-page_title: Replace Default Dialogs | RadRichTextEditor
+page_title: Replace Default Dialogs - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 slug: winforms/richtexteditor-/how-to/repalce-default-dialogs
 tags: repalce,default,dialogs

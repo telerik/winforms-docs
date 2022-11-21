@@ -1,6 +1,6 @@
 ---
 title: Rows Reordering in Master-Detail Hierarchy
-page_title: Rows Reordering in Master-Detail Hierarchy | RadGridView
+page_title: Rows Reordering in Master-Detail Hierarchy - RadGridView
 description: RadGridView allows you implementing rows reordering in mater-detail hierarchy.
 slug: rows-reordering-in-master-detail-hierarchy
 tags: gridview

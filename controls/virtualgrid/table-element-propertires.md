@@ -1,6 +1,6 @@
 ---
 title: TableElement Properties
-page_title: TableElement Properties | RadVirtualGrid
+page_title: TableElement Properties - RadVirtualGrid
 description: The TableElement allows to to set a lot of useful styling and layout properties.
 slug: winforms/radvirtualgrid/customizing-appearance/themes
 tags: virtualgrid, themes

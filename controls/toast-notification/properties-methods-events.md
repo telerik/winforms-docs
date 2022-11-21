@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | Toast Notification
+page_title: Properties, Methods and Events - Toast Notification
 description: RadToastNotificationManager is built on the Windows' notification system, making it easier for our customers to create and manage notifications.  
 slug: toast-notification-properties-methods-events
 tags: toast notification

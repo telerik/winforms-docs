@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadChat
+page_title: Themes - RadChat
 description: This article shows how you can change the styles of RadChat in Visual Style Builder.
 slug: winforms/chat/customizing-appearance/themes
 tags: chat, themes

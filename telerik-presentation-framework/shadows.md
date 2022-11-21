@@ -1,6 +1,6 @@
 ---
 title: Shadows
-page_title: Shadows | Telerik Presentation Framework
+page_title: Shadows - Telerik Presentation Framework
 description:  
 slug: winforms/tpf/shadows
 tags: touch, themes

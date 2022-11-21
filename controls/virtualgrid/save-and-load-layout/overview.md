@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Save and Load Layout | RadVirtualGrid
+page_title: Save and Load Layout - RadVirtualGrid
 description: Save/Load layout functionality gives your applications the opportunity to preserve user grid settings such as column order and restore them later. 
 slug: winforms/virtualgrid/save-and-load-layout/overview
 tags: save-and-load-layout

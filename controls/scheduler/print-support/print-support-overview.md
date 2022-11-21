@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Print Support | RadScheduler
+page_title: Print Support - RadScheduler
 description: The printing support of RadScheduler, allows the end user to directly pass the RadScheduler data to the printer.
 slug: winforms/scheduler/print-support
 tags: print,support

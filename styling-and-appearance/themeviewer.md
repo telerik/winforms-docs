@@ -1,6 +1,6 @@
 ---
 title: ThemeViewer
-page_title: ThemeViewer | UI for WinForms Tools
+page_title: ThemeViewer - UI for WinForms Tools
 description: ThemeViewer is a tool that allows you to examine the look of the controls with all the predefined themes.
 slug: winforms/styling-and-appearance/theme-viewer
 tags: themeviewer

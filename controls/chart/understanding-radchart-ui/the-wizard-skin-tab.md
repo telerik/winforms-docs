@@ -1,6 +1,6 @@
 ---
 title: The Wizard Skin Tab
-page_title: The Wizard Skin Tab | UI for WinForms Documentation
+page_title: The Wizard Skin Tab - UI for WinForms Documentation
 description: The Wizard Skin Tab
 slug: winforms/chart/understanding-radchart-ui/the-wizard-skin-tab
 tags: the,wizard,skin,tab

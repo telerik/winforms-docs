@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | ChartView
+page_title: Structure - ChartView
 description: RadChartView uses the Telerik Presentation Framework which enables rich experiences like advanced styling.
 slug: winforms/chartview/structure
 tags: radchartview, structure

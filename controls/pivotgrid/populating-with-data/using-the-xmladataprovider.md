@@ -1,6 +1,6 @@
 ---
 title: Using the XmlaDataProvider
-page_title: Using the XmlaDataProvider | RadPivotGrid
+page_title: Using the XmlaDataProvider - RadPivotGrid
 description: Using the XmlaDataProvider
 slug: winforms/pivotgrid/populating-with-data/using-the-xmladataprovider
 tags: using,the,xmladataprovider
