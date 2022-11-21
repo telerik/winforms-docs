@@ -2,7 +2,7 @@
 title: Duplicated Korean Characters in RichTextEditor
 description: Learn how to deal with duplicated Korean characters in the WinForms RichTextEditor. 
 type: how-to
-page_title: duplicated-korean-characters-in-richtexteditor.md
+page_title: Duplicated Korean Characters in RichTextEditor
 slug: duplicated-korean-characters-in-richtexteditor
 position: 5
 tags: richtext, ime, korean, duplicate
