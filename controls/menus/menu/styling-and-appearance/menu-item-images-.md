@@ -1,6 +1,6 @@
 ---
 title: Menu Item Images 
-page_title: Menu Item Images  | RadMenu
+page_title: Menu Item Images  - RadMenu
 description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 slug: winforms/menus/menu/styling-and-appearance/menu-item-images-
 tags: menu,item,images,

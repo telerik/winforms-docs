@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | UI for WinForms Documentation
+page_title: Properties, Methods and Events - UI for WinForms Documentation
 description: RadCheckedListBox is an enhanced alternative to the standard Windows Forms checked list box control. 
 slug: winforms/checkedlistbox/properties-and-methods
 tags: properties,and,methods

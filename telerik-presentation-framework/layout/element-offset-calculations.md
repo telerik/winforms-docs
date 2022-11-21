@@ -1,6 +1,6 @@
 ---
 title: Element Offset Calculations
-page_title: Element Offset Calculations | Telerik Presentation Framework
+page_title: Element Offset Calculations - Telerik Presentation Framework
 description: Calculate the elements offset by taking its parent settings under consideration.
 slug: winforms/telerik-presentation-framework/layout/element-offset-calculations
 tags: element,offset,calculations

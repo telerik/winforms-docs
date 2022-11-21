@@ -1,6 +1,6 @@
 ---
 title: Empty Values
-page_title: Empty Values | UI for WinForms Documentation
+page_title: Empty Values - UI for WinForms Documentation
 description: Empty Values
 slug: winforms/chart/features/empty-values
 tags: empty,values

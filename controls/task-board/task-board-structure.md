@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | Task Board
+page_title: Structure - Task Board
 description: Get familiar with the internal elements structure of the WinForms TaskBoard (Kanban) control.
 slug: task-board-structure
 tags: task board, kanban, structure

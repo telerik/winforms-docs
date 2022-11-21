@@ -1,6 +1,6 @@
 ---
 title: Custom Dialogs
-page_title: Custom Dialogs | RadPivotGrid
+page_title: Custom Dialogs - RadPivotGrid
 description: To customize the dialogs in **RadPivotGrid**/**RadPivotFieldList**, you can either inherit from them to override/extend the base functionality or you can create an entirely custom dialogs by implementing the corresponding dialog interface.
 slug: winforms/pivotgrid/dialogs/custom-dialogs
 tags: customizing,the,dialogs

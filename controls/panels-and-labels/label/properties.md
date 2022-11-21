@@ -1,6 +1,6 @@
 ---
 title: Properties
-page_title: Properties | RadLabel
+page_title: Properties - RadLabel
 description: This article describes the more important properties of RadLabel.
 slug: winforms/panels-and-labels/label/properties-and-events
 tags: radlabel, properties, events

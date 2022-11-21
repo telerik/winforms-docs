@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | Appium
+page_title: Overview - Appium
 description: We will explore how to use Appium, the Microsoft recommended open source test automation framework, with Telerik UI for WinForms.  
 slug: appium-overview
 tags: appium

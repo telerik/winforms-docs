@@ -1,6 +1,6 @@
 ---
 title: Hlc
-page_title: Hlc | ChartView
+page_title: Hlc - ChartView
 description: The Hlc series is a simple variant of the Ohlc series. Its data points contain information about the following parameters - high, low and close.
 slug: winforms/chartview-/series-types/hlc
 tags: hlc

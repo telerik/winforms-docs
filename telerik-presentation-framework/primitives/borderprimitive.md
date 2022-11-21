@@ -1,6 +1,6 @@
 ---
 title: BorderPrimitive
-page_title: BorderPrimitive | Telerik Presentation Framework
+page_title: BorderPrimitive - Telerik Presentation Framework
 description: The BorderPrimitive class is responsible for drawing a border around an area on the screen.
 slug: winforms/telerik-presentation-framework/primitives/borderprimitive
 tags: borderprimitive

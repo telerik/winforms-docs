@@ -1,6 +1,6 @@
 ---
 title: Bookmarks
-page_title: Bookmarks | UI for WinForms Documentation
+page_title: Bookmarks - UI for WinForms Documentation
 description: Bookmarks
 slug: winforms/richtextbox-(obsolete)/features/document-elements/bookmarks
 tags: bookmarks

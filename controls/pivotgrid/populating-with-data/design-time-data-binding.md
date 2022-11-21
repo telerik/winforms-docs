@@ -1,6 +1,6 @@
 ---
 title: Design Time Data Binding
-page_title: Design Time Data Binding | RadPivotGrid
+page_title: Design Time Data Binding - RadPivotGrid
 description: RadPivotGrid supports the standard binding functionality known to you from other WinForms controls. You can use its DataSource property to create or use existing data source.
 slug: winforms/pivotgrid/populating-with-data/design-time-data-binding
 tags: design,time,data,binding

@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | RadPanorama
+page_title: Themes - RadPanorama
 description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
 slug: winforms/panorama/themes
 tags: panorama

@@ -1,6 +1,6 @@
 ---
 title: Properties and Events
-page_title: Properties and Events | RadButtonTextBox
+page_title: Properties and Events - RadButtonTextBox
 description: RadButtonTextBox is a derivative of **RadTextBox** which allows you to embed easily button elements on the left or right side of the text box.
 slug: winforms/editors/buttontextbox/properties-events
 tags: structure

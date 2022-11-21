@@ -1,6 +1,6 @@
 ---
 title: Adding Screen Tips
-page_title: Adding Screen Tips | RadRibbonBar
+page_title: Adding Screen Tips - RadRibbonBar
 description: Screen tips give you a mechanism to provide extended tooltips for any element within a Telerik RadRibbonBar.
 slug: winforms/ribbonbar/getting-started/adding-screen-tips
 tags: adding,screen,tips

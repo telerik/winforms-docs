@@ -1,6 +1,6 @@
 ---
 title: Scrolling Nodes
-page_title: Scrolling | RadTreeView
+page_title: Scrolling - RadTreeView
 description: 
 slug: winforms/treeview/working-with-nodes/scrolling
 tags: scrolling

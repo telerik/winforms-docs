@@ -1,6 +1,6 @@
 ---
 title: HTML-like Text Formatting
-page_title: HTML-like Text Formatting | UI for WinForms Documentation
+page_title: HTML-like Text Formatting - UI for WinForms Documentation
 description: Telerik UI for WinForms provides an advanced text styling mechanism, which can be applied to all controls in the suite
 slug: winforms/buttons/button/html-like-text-formatting
 tags: html-like,text,formatting

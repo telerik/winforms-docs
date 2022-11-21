@@ -1,6 +1,6 @@
 ---
 title: Assembly Version
-page_title: Assembly Version | Installation Deployment and Distribution
+page_title: Assembly Version - Installation Deployment and Distribution
 description: Assembly Version
 slug: assemblies-version
 tags: install,nuget

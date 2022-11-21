@@ -1,6 +1,6 @@
 ---
 title: Validation Rules
-page_title: Validation Rules | Validation Provider
+page_title: Validation Rules - Validation Provider
 description: RadValidationProvider supports three types of validation rules all of which implements the IRadValidationRule interface. 
 slug: validation-provider-validation-rules
 tags: validation, provider

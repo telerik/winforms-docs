@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Printing Support | RadPivotGrid
+page_title: Printing Support - RadPivotGrid
 description: RadPivotGrid provides printing support out of the box and this functionality can be customized through a style object, events or with inheritance.
 slug: winforms/pivotgrid/printing-support
 tags: printing,support

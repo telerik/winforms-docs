@@ -1,6 +1,6 @@
 ---
 title: Combining RadDragDropService and OLE Drag and Drop
-page_title: Combining RadDragDropService and OLE drag-and-drop | RadScheduler
+page_title: Combining RadDragDropService and OLE drag-and-drop - RadScheduler
 description: This article demonstrates a sample approach how to achieve drag and drop functionality between RadScheduler and RadListControl.
 slug: winforms/scheduler/drag-and-drop/combining-raddragdropservice-and-ole-drag-and-drop
 tags: combining,raddragdropservice,and,ole,drag-and-drop

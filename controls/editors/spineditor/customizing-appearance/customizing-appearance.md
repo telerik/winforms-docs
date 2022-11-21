@@ -1,6 +1,6 @@
 ---
 title: Customizing Appearance
-page_title: Customizing Appearance | RadSpinEditor
+page_title: Customizing Appearance - RadSpinEditor
 description: RadSpinEditor is a themable alternative to the standard Windows Numeric Up Down control.
 slug: winforms/editors/spineditor/customizing-appearance
 tags: colorbox

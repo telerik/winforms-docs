@@ -1,6 +1,6 @@
 ---
 title: Formatting Nodes
-page_title: Formatting Nodes | RadTreeView
+page_title: Formatting Nodes - RadTreeView
 description: This article describes how you can change the the styles of the nodes in RadTreeView.
 slug: winforms/treeview/working-with-nodes/formatting-nodes
 tags: formatting,nodes

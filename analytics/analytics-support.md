@@ -1,6 +1,6 @@
 ---
 title: Analytics Support
-page_title: Analytics Support | UI for WinForms Documentation
+page_title: Analytics Support - UI for WinForms Documentation
 description: When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors occurred during the execution.
 slug: winforms/analytics/analytics-support
 tags: telerik,analytics,support

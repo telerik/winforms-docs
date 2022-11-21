@@ -1,6 +1,6 @@
 ---
 title: Filter on Enter
-page_title: Filter on Enter | RadGridView
+page_title: Filter on Enter - RadGridView
 description: This article shows how you can filter when Enter is presses instead on every keystroke.
 slug: winforms/gridview/filtering/basic-filtering
 tags: basic,filtering

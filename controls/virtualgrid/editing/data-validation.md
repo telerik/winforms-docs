@@ -1,6 +1,6 @@
 ---
 title: Data Validation
-page_title: Data Validation | RadVirtualGrid
+page_title: Data Validation - RadVirtualGrid
 description: This article shows how you can validate the data in RadVirtualGrid using the appropriate events. 
 slug: winforms/virtualgrid/editing/data-validation
 tags: virtualgrid, editors

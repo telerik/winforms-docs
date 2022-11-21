@@ -1,6 +1,6 @@
 ---
 title: Sorting
-page_title: Sorting | RadPivotGrid
+page_title: Sorting - RadPivotGrid
 description: RadPivotGrid provides various sorting options. The RowGroupDescriptions and ColumnGroupDescriptions can be sorted ascending (from A to Z) and descending (from Z to A)
 slug: winforms/pivotgrid/sorting
 tags: sorting

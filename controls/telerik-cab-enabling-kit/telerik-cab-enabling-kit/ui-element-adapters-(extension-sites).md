@@ -1,6 +1,6 @@
 ---
 title: UI Element Adapters (Extension Sites)
-page_title: UI Element Adapters (Extension Sites) | UI for WinForms Documentation
+page_title: UI Element Adapters (Extension Sites) - UI for WinForms Documentation
 description: UI Element Adapters (Extension Sites)
 slug: winforms/telerik-cab-enabling-kit/telerik-cab-enabling-kit/ui-element-adapters-(extension-sites)
 tags: ui,element,adapters,(extension,sites)

@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | UI for WinForms Documentation
+page_title: Themes - UI for WinForms Documentation
 description: RadToggleSwitch is a control designed to represent two states- e.g. true/false, On/Off, etc.
 
 slug: winforms/buttons/toggleswitch/customizing-appearance/themes

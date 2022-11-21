@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods, Events
-page_title: Properties, Methods, Events | UI for WinForms Documentation
+page_title: Properties, Methods, Events - UI for WinForms Documentation
 description: RadCheckBox uses the Telerik Presentation Framework which enables rich experiences like advanced styling.
 slug: winforms/buttons/checkbox/properties-methods-events
 tags: checkbox

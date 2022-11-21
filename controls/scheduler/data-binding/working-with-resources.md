@@ -1,6 +1,6 @@
 ---
 title: Working with Resources
-page_title: Working with Resources | RadScheduler
+page_title: Working with Resources - RadScheduler
 description: Working with Resources
 slug: winforms/scheduler/data-binding/working-with-resources
 tags: working,with,resources

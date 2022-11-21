@@ -1,6 +1,6 @@
 ---
 title: Word Taggers
-page_title: Word Taggers | RadSyntaxEditor
+page_title: Word Taggers - RadSyntaxEditor
 description: RadSyntaxEditor works with the underlying document with the help of taggers. 
 slug: syntax-editor-word-taggers
 tags: features, word, taggers

@@ -1,6 +1,6 @@
 ---
 title: RadChart Types Overview
-page_title: RadChart Types Overview | UI for WinForms Documentation
+page_title: RadChart Types Overview - UI for WinForms Documentation
 description: RadChart Types Overview
 slug: winforms/chart/understanding-radchart-types/radchart-types-overview
 tags: radchart,types,overview

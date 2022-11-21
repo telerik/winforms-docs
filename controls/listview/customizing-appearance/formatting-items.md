@@ -1,6 +1,6 @@
 ---
 title: Formatting Items
-page_title: Formatting Items | RadListView
+page_title: Formatting Items - RadListView
 description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/formatting-items
 tags: formatting,items

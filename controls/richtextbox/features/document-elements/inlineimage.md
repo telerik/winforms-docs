@@ -1,6 +1,6 @@
 ---
 title: InlineImage
-page_title: InlineImage | UI for WinForms Documentation
+page_title: InlineImage - UI for WinForms Documentation
 description: InlineImage
 slug: winforms/richtextbox-(obsolete)/features/document-elements/inlineimage
 tags: inlineimage

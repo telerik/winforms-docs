@@ -1,6 +1,6 @@
 ---
 title: Adding Appointments
-page_title: Adding Appointments | RadScheduler
+page_title: Adding Appointments - RadScheduler
 description: The end user can add appointments either by using the context menu or by double clicking a cell.
 slug: winforms/scheduler/end-user-functionality/adding-appointments
 tags: adding,appointments

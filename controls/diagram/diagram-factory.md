@@ -1,6 +1,6 @@
 ---
 title: Diagram Factory
-page_title: Diagram Factory | RadDiagram
+page_title: Diagram Factory - RadDiagram
 description: DiagramDataLayerElementProvider provides means for creating custom shape/connections while binding.
 slug: winforms/diagram/diagram-factory
 tags: custom,shapes

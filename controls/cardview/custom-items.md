@@ -1,6 +1,6 @@
 ---
 title: Custom items
-page_title: Custom items | UI for WinForms Documentation
+page_title: Custom items - UI for WinForms Documentation
 description: RadCardView allows you to create and use your own custom visual items. This article demonstrates how to achieve it.
 slug: winforms/cardview/custom-items
 tags: custom,items

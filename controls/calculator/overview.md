@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadCalculator
+page_title: Overview - RadCalculator
 description: RadCalculator performs all basic calculations such as addition, subtraction, multiplication, division as well as some more complicated ones – reciprocal, square root, negate.    
 slug: calculator-overview
 tags: calculator

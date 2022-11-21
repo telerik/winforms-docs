@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods, Events | RadScheduler
+page_title: Properties, Methods, Events - RadScheduler
 description: Telerik RadScheduler is a highly-customizable appointment presentation component that offers rich Outlook®-style functionality.
 slug: winforms/scheduler/properties-methods-and-events
 tags: radscheduler, properties, methods, events

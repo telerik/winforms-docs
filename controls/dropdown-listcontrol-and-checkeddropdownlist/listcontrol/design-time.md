@@ -1,6 +1,6 @@
 ---
 title: Design Time
-page_title: Design Time | RadListControl
+page_title: Design Time - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/structure
 tags: listcontrol, structure

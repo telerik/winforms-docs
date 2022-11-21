@@ -1,6 +1,6 @@
 ---
 title: Understanding Wizard Values Data Table Tab
-page_title: Understanding Wizard Values Data Table Tab | UI for WinForms Documentation
+page_title: Understanding Wizard Values Data Table Tab - UI for WinForms Documentation
 description: Understanding Wizard Values Data Table Tab
 slug: winforms/chart/understanding-radchart-ui/understanding-wizard-values-data-table-tab
 tags: understanding,wizard,values,data,table,tab

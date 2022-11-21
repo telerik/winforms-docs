@@ -1,6 +1,6 @@
 ---
 title: Grouping
-page_title: Grouping | RadDiagram
+page_title: Grouping - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/features/grouping
 tags: grouping

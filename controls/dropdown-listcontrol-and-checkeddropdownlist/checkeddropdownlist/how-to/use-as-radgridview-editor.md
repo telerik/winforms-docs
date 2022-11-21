@@ -1,6 +1,6 @@
 ---
 title: Use as RadGridView editor
-page_title: Use as RadGridView editor | RadCheckedDropDownList
+page_title: Use as RadGridView editor - RadCheckedDropDownList
 description: RadCheckedDropDownList combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area. 
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to/use-as-radgridview-editor
 tags: use,as,radgridview,editor

@@ -1,6 +1,6 @@
 ---
 title: Data Editing Event Sequence
-page_title: Data Editing Event Sequence | RadGridView
+page_title: Data Editing Event Sequence - RadGridView
 description: This article shows which event are fired when the end user performs data editing operation.
 slug: winforms/gridview/insert/update/delete-records/data-editing-event-sequence
 tags: data,editing,event,sequence

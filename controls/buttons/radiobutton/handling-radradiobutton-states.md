@@ -1,6 +1,6 @@
 ---
 title: Handling RadRadioButton States
-page_title: Handling RadRadioButton States | UI for WinForms Documentation
+page_title: Handling RadRadioButton States - UI for WinForms Documentation
 description: Handling RadRadioButton States
 slug: winforms/buttons/radiobutton/handling-radradiobutton-states
 tags: handling,radradiobutton,states

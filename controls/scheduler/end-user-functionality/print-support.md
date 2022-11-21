@@ -1,6 +1,6 @@
 ---
 title: Print Support
-page_title: Print Support | RadScheduler
+page_title: Print Support - RadScheduler
 description: RadScheduler supports printing by using print styles corresponding to the available views of the control.
 slug: winforms/scheduler/end-user-functionality/print-support
 tags: print,support

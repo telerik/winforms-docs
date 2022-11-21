@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadRibbonBar
+page_title: Localization - RadRibbonBar
 description: RadRibbonBar provides the possibility to localize the strings of the Options and Exit buttons that belong to the application menu.
 slug: winforms/ribbonbar/localization/localization
 tags: localization

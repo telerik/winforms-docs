@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Context Menu | RadVirtualGrid
+page_title: Context Menu - RadVirtualGrid
 description: RadVirtualGrid provides default context menu for its cells. This context menu will appear every time the user right-clicks the RadVirtualGrid. 
 slug: winforms/virtualgrid/context-menu/context-menu
 tags: virtualgrid, menu

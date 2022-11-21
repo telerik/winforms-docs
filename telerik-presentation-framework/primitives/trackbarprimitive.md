@@ -1,6 +1,6 @@
 ---
 title: TrackBarPrimitive
-page_title: TrackBarPrimitive | Telerik Presentation Framework
+page_title: TrackBarPrimitive - Telerik Presentation Framework
 description: TrackBarPrimitive provides the basic visual layout of a track-bar background.
 slug: winforms/telerik-presentation-framework/primitives/trackbarprimitive
 tags: trackbarprimitive

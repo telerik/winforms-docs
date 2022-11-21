@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | UI for WinForms Documentation
+page_title: Themes - UI for WinForms Documentation
 description: RadRadioButton replaces the WinForms RadioButton control and adds robust data binding, state management, and design options. 
 slug: winforms/buttons/radiobutton/themes
 tags: radiobutton

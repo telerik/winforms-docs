@@ -1,6 +1,6 @@
 ---
 title: Group Filters
-page_title: Group Filters | RadPivotGrid
+page_title: Group Filters - RadPivotGrid
 description: Group Filters
 slug: winforms/pivotgrid/filtering/group-filters
 tags: group,filters

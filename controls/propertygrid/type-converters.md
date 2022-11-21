@@ -1,6 +1,6 @@
 ---
 title: Type Converters
-page_title: Type Converters | RadPropertyGrid 
+page_title: Type Converters - RadPropertyGrid 
 description: RadPropertyGrid is commonly used to visualize custom object’s properties and values. A common case is when a certain property is of custom type, or there is no predefined editor for the specific type
 slug: winforms/propertygrid/type-converters
 tags: type,converters

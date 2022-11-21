@@ -1,6 +1,6 @@
 ---
 title: VisualElement
-page_title: VisualElement | Telerik Presentation Framework
+page_title: VisualElement - Telerik Presentation Framework
 description: VisualElement adds visual properties common to all elements that will be painted, e.g. BackColor, ForeColor, font, smoothing mode, opacity.
 slug: winforms/telerik-presentation-framework/class-hierarchy/visualelement
 tags: visualelement

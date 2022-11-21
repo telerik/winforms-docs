@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | RadPropertyGrid
+page_title: Localization - RadPropertyGrid
 description: The article provides an example with a sample implementation of an English localization provider.
 slug: winforms/propertygrid/localization
 tags: localization

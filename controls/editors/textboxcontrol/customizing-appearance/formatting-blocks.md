@@ -1,6 +1,6 @@
 ---
 title: Formatting blocks
-page_title: Formatting blocks | RadTextBoxControl
+page_title: Formatting blocks - RadTextBoxControl
 description: Formatting blocks
 slug: winforms/editors/textboxcontrol/formatting-blocks
 tags: formatting,blocks

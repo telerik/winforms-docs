@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Customizing RadWaitingBar | RadWaitingBar
+page_title: Customizing RadWaitingBar - RadWaitingBar
 description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
 slug: winforms/track-and-status-controls/waitingbar/accessing-and-customizing-elements
 tags: customizing,radwaitingbar

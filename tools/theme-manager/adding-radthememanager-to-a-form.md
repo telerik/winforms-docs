@@ -1,6 +1,6 @@
 ---
 title: Adding RadThemeManager to a Form
-page_title: Adding RadThemeManager to a Form | RadThemeManager
+page_title: Adding RadThemeManager to a Form - RadThemeManager
 description: RadThemeManager is an non-visual component that manages the connection between themes (stored in XML files) and Telerik controls.
 slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form
 tags: adding,radthememanager,to,a,form

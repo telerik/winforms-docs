@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | RadTabbedForm
+page_title: Properties, Methods and Events - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
 slug: radtabbedform-properties
 tags: radtabbedform

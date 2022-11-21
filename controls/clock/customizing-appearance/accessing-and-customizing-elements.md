@@ -1,6 +1,6 @@
 ---
 title: Accessing and customizing elements
-page_title: Accessing and customizing elements | UI for WinForms Documentation
+page_title: Accessing and customizing elements - UI for WinForms Documentation
 description: RadClock is a control which allows the developers to use it in their applications to display time to the users.
 slug: winforms/clock/accessing-and-customizing-elements
 tags: clock

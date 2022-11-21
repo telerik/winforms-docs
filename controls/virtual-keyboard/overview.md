@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | Virtual Keyboard
+page_title: Overview - Virtual Keyboard
 description: RadVirtualKeyboard is a software component that allows the input of characters without the need for physical keys.
 slug: winforms-virtual-keyboard-overview 
 tags: virtual, keyboard

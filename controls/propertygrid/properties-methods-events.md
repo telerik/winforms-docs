@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods, Events | RadPropertyGrid
+page_title: Properties, Methods, Events - RadPropertyGrid
 description: RadPropertyGrid for WinForms displays the properties of a given object in a user-friendly way allowing the end-user to edit these properties using our editors..
 slug: winforms/propertygrid/properties-methods-and-events
 tags: propertygrid, properties, methods, events

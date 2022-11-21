@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Elements
-page_title: Accessing and Customizing Elements | RadDomainUpDown
+page_title: Accessing and Customizing Elements - RadDomainUpDown
 description: RadDomainUpDown is designed to display text inside an editor like a text-box and sets a text string from a list of choices. 
 slug: winforms/editors/domainupdown/accessing-and-customizing-elements
 tags: domainupdown, customizing, elements

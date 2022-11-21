@@ -1,6 +1,6 @@
 ---
 title: DesktopAlertManager 
-page_title: DesktopAlertManager  | RadDesktopAlert
+page_title: DesktopAlertManager  - RadDesktopAlert
 description: RadDesktopAlert component displays a small pop-up window on the screen to notify the user that a specific event has occurred in the application. 
 slug: winforms/desktopalert/desktopalertmanager 
 tags: desktopalert, desktopalertmanager

@@ -1,6 +1,6 @@
 ---
 title: Creating RadChart Programmatically - more complex example
-page_title: Creating RadChart Programmatically - more complex example | UI for WinForms Documentation
+page_title: Creating RadChart Programmatically - more complex example - UI for WinForms Documentation
 description: Creating RadChart Programmatically - more complex example
 slug: winforms/chart/building-radcharts/creating-radchart-programmatically---more-complex-example
 tags: creating,radchart,programmatically,-,more,complex,example

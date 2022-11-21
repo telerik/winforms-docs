@@ -1,6 +1,6 @@
 ---
 title: Import/Export Settings
-page_title: Import/Export Settings | UI for WinForms Documentation
+page_title: Import/Export Settings - UI for WinForms Documentation
 description: Import/Export Settings
 slug: winforms/richtextbox-(obsolete)/features/import/export/import/export-settings
 tags: import/export,settings

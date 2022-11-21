@@ -1,6 +1,6 @@
 ---
 title: Virtual Keyboard Form
-page_title: Virtual Keyboard Form | Virtual Keyboard
+page_title: Virtual Keyboard Form - Virtual Keyboard
 description: RadVirtualKeyboard is a software component that allows the input of characters without the need for physical keys. 
 slug: virtual-keyboard-form
 tags: virtual, keyboard

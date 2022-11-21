@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadMenu
+page_title: Overview - RadMenu
 description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 slug: winforms/menus/menu
 tags: menu

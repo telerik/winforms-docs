@@ -1,6 +1,6 @@
 ---
 title: Setting The Background
-page_title: Setting The Background | UI for WinForms Documentation
+page_title: Setting The Background - UI for WinForms Documentation
 description: Setting The Background
 slug: winforms/chart/styling-radcharts/setting-the-background
 tags: setting,the,background

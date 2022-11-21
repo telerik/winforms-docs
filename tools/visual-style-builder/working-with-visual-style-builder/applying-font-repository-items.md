@@ -1,6 +1,6 @@
 ---
 title: Applying Font repository items
-page_title: Applying Font repository items | UI for WinForms Tools
+page_title: Applying Font repository items - UI for WinForms Tools
 description: This article shows the best practices when one need to create and apply Font repository items.
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/applying-font-repository-items
 tags: applying,font,repository,items

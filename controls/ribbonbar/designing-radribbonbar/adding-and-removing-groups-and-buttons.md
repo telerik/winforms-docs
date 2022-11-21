@@ -1,6 +1,6 @@
 ---
 title: Adding and Removing Groups and Buttons
-page_title: Adding and Removing Groups and Buttons | RadRibbonBar
+page_title: Adding and Removing Groups and Buttons - RadRibbonBar
 description: After adding tabs and RadRibbonBar groups, the next step in designing a RadRibbonBar is to add  button groups and buttons.
 slug: winforms/ribbonbar/getting-started/adding-and-removing-groups-and-buttons
 tags: adding,and,removing,groups,and,buttons

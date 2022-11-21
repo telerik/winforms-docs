@@ -1,6 +1,6 @@
 ---
 title: Creating the Start Menu, Quick Access Toolbar, and Shortcuts
-page_title: Creating the Start Menu, Quick Access Toolbar, and Shortcuts | RadRibbonBar
+page_title: Creating the Start Menu, Quick Access Toolbar, and Shortcuts - RadRibbonBar
 description: This tutorial is in three parts. First, you will create a Quick Access Toolbar with some functionality on a RadRibbonBar. Then, you will add a Start Menu to add more functionality. Last, you will create keyboard shortcuts to some of these functions.
 slug: winforms/ribbonbar/getting-started/creating-the-start-menu,-quick-access-toolbar,-and-shortcuts
 tags: creating,the,start,menu,,quick,access,toolbar,,and,shortcuts

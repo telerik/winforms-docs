@@ -1,6 +1,6 @@
 ---
 title: Requirements
-page_title: Requirements | WinForms Converter
+page_title: Requirements - WinForms Converter
 description: This article explains which what you require in order to convert your projects. 
 slug: winforms/winforms-converter/requirements
 tags: covert, winforms, requirements

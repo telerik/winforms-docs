@@ -1,6 +1,6 @@
 ---
 title: Data Binding Basics
-page_title: Data Binding Basics | RadGanttView
+page_title: Data Binding Basics - RadGanttView
 description: RadGanttView can be bound to any object that implements IList, IListSource or IBindingList interfaces.
 slug: winforms/ganttview-/working-with-data/data-binding-basics
 tags: data,binding,basics

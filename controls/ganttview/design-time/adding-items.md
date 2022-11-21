@@ -1,6 +1,6 @@
 ---
 title: Adding items
-page_title: Adding items | RadGanttView
+page_title: Adding items - RadGanttView
 description: The Collection Editor allows you to add tasks to the gantt view in design time.
 slug: winforms/ganttview-/design-time/adding-items
 tags: adding,items

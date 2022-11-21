@@ -1,6 +1,6 @@
 ---
 title: Save Loaded Document
-page_title: Save Loaded Document | RadPdfViewer
+page_title: Save Loaded Document - RadPdfViewer
 description: This article shows how you can use the built-in methods to save the loaded document or get is as a stream.
 slug: winforms/pdfviewer/save-as 
 tags: save, image

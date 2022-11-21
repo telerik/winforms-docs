@@ -1,6 +1,6 @@
 ---
 title: Shape Editor User Interface
-page_title: Shape Editor User Interface | UI for WinForms Tools
+page_title: Shape Editor User Interface - UI for WinForms Tools
 description: This article shows all elements of the Shape Editor User Interface.
 slug: winforms/tools/shapeeditor/shape-editor-user-interface
 tags: shape,editor,user,interface

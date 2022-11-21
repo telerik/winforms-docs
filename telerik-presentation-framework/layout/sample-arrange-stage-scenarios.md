@@ -1,6 +1,6 @@
 ---
 title: Sample Arrange Stage Scenarios
-page_title: Sample Arrange Stage Scenarios | Telerik Presentation Framework
+page_title: Sample Arrange Stage Scenarios - Telerik Presentation Framework
 description: This article shows arrange stage scenarios that can occur when the layout is created.
 slug: winforms/telerik-presentation-framework/layout/sample-arrange-stage-scenarios
 tags: sample,arrange,stage,scenarios

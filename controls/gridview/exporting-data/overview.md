@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadGridView
+page_title: Overview - RadGridView
 description: RadGridView supports several built-in methods for exporting data and they are listed in this article.
 slug: winforms/gridview/exporting-data/overview
 tags: overview

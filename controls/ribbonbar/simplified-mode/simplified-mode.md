@@ -1,6 +1,6 @@
 ---
 title: Simplified Mode
-page_title: Simplified Mode | RadRibbonBar
+page_title: Simplified Mode - RadRibbonBar
 description:  
 slug: winforms/ribbonbar/simplified-mode
 tags: radribbonbar. simplified, mode

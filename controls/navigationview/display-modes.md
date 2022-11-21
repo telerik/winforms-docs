@@ -1,6 +1,6 @@
 ---
 title: Display Modes
-page_title: Display Modes | Navigation View
+page_title: Display Modes - Navigation View
 description: The navigation view control provides a collapsible navigation pane that helps implement the hamburger menu pattern and automatically adapts the pane's display mode to different control sizes.
 slug: navigationview-displaymode
 tags: navigation, view, hamburger

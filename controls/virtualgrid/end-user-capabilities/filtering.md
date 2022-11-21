@@ -1,6 +1,6 @@
 ---
 title: Filtering
-page_title: Filtering | RadVirtualGrid
+page_title: Filtering - RadVirtualGrid
 description: This article shows how one can perform a filtering operation in RadVirtualGrid.
 slug: winforms/virtualgrid/end-user-capabilities/filtering
 tags: filtering

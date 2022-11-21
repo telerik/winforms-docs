@@ -1,6 +1,6 @@
 ---
 title: Binding to EntityFramework and Telerik Data Access
-page_title: Binding to EntityFramework and Telerik Data Access | RadScheduler
+page_title: Binding to EntityFramework and Telerik Data Access - RadScheduler
 description: Binding to EntityFramework and Telerik Data Access. Binding to an ORM is similar to binding to a DataSet.
 slug: winforms/scheduler/data-binding/binding-to-entityframework-and-telerik-data-access
 tags: binding,to,entityframework,and,telerik,data,access

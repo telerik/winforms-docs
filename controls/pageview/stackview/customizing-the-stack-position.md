@@ -1,6 +1,6 @@
 ---
 title: Customizing the Stack Position
-page_title: Customizing the Stack Position | RadPageView
+page_title: Customizing the Stack Position - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/stackview/customizing-the-stack-position
 tags: customizing,the,stack,position

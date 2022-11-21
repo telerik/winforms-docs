@@ -1,6 +1,6 @@
 ---
 title: Using the Keyboard
-page_title: Using the Keyboard | RadPageView
+page_title: Using the Keyboard - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/explorerbarview/using-the-keyboard
 tags: customizing,the,explorerbarview

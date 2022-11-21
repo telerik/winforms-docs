@@ -1,6 +1,6 @@
 ---
 title: Menu Background  and Background Image
-page_title: Menu Background  and Background Image | RadMenu
+page_title: Menu Background  and Background Image - RadMenu
 description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 slug: winforms/menus/menu/styling-and-appearance/menu-background--and-background-image
 tags: menu,background,,and,background,image

@@ -1,6 +1,6 @@
 ---
 title: Formatting API
-page_title: Formatting API | UI for WinForms Documentation
+page_title: Formatting API - UI for WinForms Documentation
 description: Formatting API
 slug: winforms/richtextbox-(obsolete)/features/formatting-api
 tags: formatting,api

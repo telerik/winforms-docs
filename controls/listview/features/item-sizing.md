@@ -1,6 +1,6 @@
 ---
 title: Item Sizing
-page_title: Item Sizing | RadListView
+page_title: Item Sizing - RadListView
 description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
 slug: winforms/listview/features/item-sizing
 tags: features

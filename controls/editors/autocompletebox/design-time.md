@@ -1,6 +1,6 @@
 ---
 title: Design Time
-page_title: Design-Time | RadAutoCompleteBox
+page_title: Design-Time - RadAutoCompleteBox
 description: This article describes the functionality provided by the RadAutoCompleteBox smart tag.
 slug: winforms/bindingnavigator/smarttag
 tags: bindingnavigator

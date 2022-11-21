@@ -1,6 +1,6 @@
 ---
 title: Building a Layout of RadSplitContainers Programmatically
-page_title: Building a Layout of RadSplitContainers Programmatically | RadSplitContainer
+page_title: Building a Layout of RadSplitContainers Programmatically - RadSplitContainer
 description: RadSplitContainer is a layout control which allows you to add many container panels to a form, separated by splitter(s).
 slug: winforms/splitcontainer/building-a-layout-of-radsplitcontainers-programmatically
 tags: building,a,layout,of,radsplitcontainers,programmatically

@@ -1,6 +1,6 @@
 ---
 title: Focus Border and Ripple Animations
-page_title: Focus Border and Ripple Animations | Telerik Presentation Framework
+page_title: Focus Border and Ripple Animations - Telerik Presentation Framework
 description:  
 slug: winforms/telerik-presentation-framework/focus-border-and-ripple-animations
 tags: touch, themes

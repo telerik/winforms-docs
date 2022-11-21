@@ -1,6 +1,6 @@
 ---
 title: Tracking changes in RadGridView
-page_title: Tracking changes in RadGridView | RadGridView
+page_title: Tracking changes in RadGridView - RadGridView
 description: This article show which events you should use to detect any  changes in RadGridView.
 slug: winforms/gridview/insert/update/delete-records/tracking-changes-in-radgridview
 tags: tracking,changes,in,radgridview

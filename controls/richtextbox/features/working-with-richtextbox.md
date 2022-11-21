@@ -1,6 +1,6 @@
 ---
 title: Working with RichTextBox
-page_title: Working with RichTextBox | UI for WinForms Documentation
+page_title: Working with RichTextBox - UI for WinForms Documentation
 description: Working with RichTextBox
 slug: winforms/richtextbox-(obsolete)/features/working-with-richtextbox
 tags: working,with,richtextbox

@@ -1,6 +1,6 @@
 ---
 title: Strip Element Properties
-page_title: Strip Element Properties | RadPageView
+page_title: Strip Element Properties - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
 slug: winforms/pageview/stripview/strip-element-properties
 tags: strip,element,properties

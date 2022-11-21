@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | SplashScreen
+page_title: Properties, Methods and Events - SplashScreen
 description: Get familiar with the public API of the WinForms SplashScreen.
 slug: properties-methods-events
 tags: splash, screen

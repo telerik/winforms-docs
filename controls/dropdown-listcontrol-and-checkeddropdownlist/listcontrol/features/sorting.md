@@ -1,6 +1,6 @@
 ---
 title: Sorting
-page_title: Sorting | RadListControl
+page_title: Sorting - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features/sorting
 tags: listcontrol, sorting

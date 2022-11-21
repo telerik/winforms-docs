@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | RadTabbedForm
+page_title: Overview - RadTabbedForm
 description: WinForms RadTabbedForm allows you to display tabs in the title bar, just like in most modern Web browsers.  
 slug: radtabbedform-overview
 tags: radtabbedform

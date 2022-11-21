@@ -1,6 +1,6 @@
 ---
 title: Docking Singleton Forms
-page_title: Docking Singleton Forms | RadDock
+page_title: Docking Singleton Forms - RadDock
 description: Shows how you can have only one instance of specific window.
 slug: winforms/dock/docking-usercontrols-and-forms/docking-singleton-forms
 tags: docking,singleton,forms

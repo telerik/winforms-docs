@@ -1,6 +1,6 @@
 ---
 title: Undo and Redo
-page_title: Undo and Redo | RadDiagram
+page_title: Undo and Redo - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
 slug: winforms/diagram/features/undo-and-redo
 tags: undo,and,redo

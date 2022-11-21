@@ -1,6 +1,6 @@
 ---
 title: End-user Functionalities
-page_title: End-user Functionalities | RadPivotGrid
+page_title: End-user Functionalities - RadPivotGrid
 description: This articles describes the end-user functionalities provided by RadPivotGrid
 slug: winforms/pivotgrid/end-user-functionalities
 tags: end-user,functionalities

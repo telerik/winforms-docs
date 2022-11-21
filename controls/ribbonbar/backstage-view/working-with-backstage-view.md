@@ -1,6 +1,6 @@
 ---
 title: Working with Backstage View
-page_title: Working with Backstage View | RadRibbonBar
+page_title: Working with Backstage View - RadRibbonBar
 description: Working with Backstage View
 slug: winforms/ribbonbar/overview/working-with-backstage-view
 tags: working,with,backstage,view

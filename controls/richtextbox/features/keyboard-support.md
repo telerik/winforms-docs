@@ -1,6 +1,6 @@
 ---
 title: Keyboard support
-page_title: Keyboard support | UI for WinForms Documentation
+page_title: Keyboard support - UI for WinForms Documentation
 description: Keyboard support
 slug: winforms/richtextbox-(obsolete)/features/keyboard-support
 tags: keyboard,support

@@ -1,6 +1,6 @@
 ---
 title: Strict Mode
-page_title: Strict Mode | UI for WinForms Documentation
+page_title: Strict Mode - UI for WinForms Documentation
 description: Strict Mode
 slug: winforms/chart/features/strict-mode
 tags: strict,mode

@@ -1,6 +1,6 @@
 ---
 title: Set null or empty value
-page_title: Set null or empty value | RadDateTimePicker
+page_title: Set null or empty value - RadDateTimePicker
 description: This article shows how you can set the control value to null.
 slug: winforms/editors/datetimepicker/how-to/set-null-or-empty-value
 tags: set,null,or,empty,value

@@ -1,6 +1,6 @@
 ---
 title: List Styles
-page_title: List Styles | RadRichTextEditor
+page_title: List Styles - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
 slug: winforms/richtexteditor-/features/styles/list-styles
 tags: list,styles

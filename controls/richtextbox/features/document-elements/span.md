@@ -1,6 +1,6 @@
 ---
 title: Span
-page_title: Span | UI for WinForms Documentation
+page_title: Span - UI for WinForms Documentation
 description: Span
 slug: winforms/richtextbox-(obsolete)/features/document-elements/span
 tags: span

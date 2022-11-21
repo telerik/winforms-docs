@@ -1,6 +1,6 @@
 ---
 title: TextPrimitive
-page_title: TextPrimitive | Telerik Presentation Framework
+page_title: TextPrimitive - Telerik Presentation Framework
 description: Use the TextPrimitive class whenever you need to display text as part of a control.
 slug: winforms/telerik-presentation-framework/primitives/textprimitive
 tags: textprimitive

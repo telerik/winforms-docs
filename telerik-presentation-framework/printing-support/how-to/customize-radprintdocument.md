@@ -1,6 +1,6 @@
 ---
 title: Customize RadPrintDocument
-page_title: Customize RadPrintDocument | Telerik Presentation Framework
+page_title: Customize RadPrintDocument - Telerik Presentation Framework
 description: In this example we will modify the header of the print document by introducing new properties, defining fonts, color and a new layout.
 slug: winforms/telerik-presentation-framework/printing-support/how-to/customize-radprintdocument
 tags: customize, header, radprintdocument

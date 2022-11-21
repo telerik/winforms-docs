@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Taggers Overview | RadSyntaxEditor
+page_title: Taggers Overview - RadSyntaxEditor
 description: RadSyntaxEditor works with the underlying document with the help of taggers. 
 slug: syntax-editor-taggers-overview
 tags: features, taggers

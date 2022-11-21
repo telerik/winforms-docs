@@ -1,6 +1,6 @@
 ---
 title: ComboBox
-page_title: ComboBox | WinForms Converter
+page_title: ComboBox - WinForms Converter
 description: This article explains which standard .NET controls properties are removed and which are replaced with similar equivalents. 
 slug: winforms/winforms-converter/supported-controls/combobox
 tags: covert, winforms, combobox, raddropdownlist

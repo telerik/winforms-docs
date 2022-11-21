@@ -1,6 +1,6 @@
 ---
 title: Prevent the control from gaining focus
-page_title: Prevent the control from gaining focus | UI for WinForms Documentation
+page_title: Prevent the control from gaining focus - UI for WinForms Documentation
 description: Prevent the control from gaining focus
 slug: winforms/commandbar/how-to/prevent-the-control-from-gaining-focus
 tags: prevent,the,control,from,gaining,focus

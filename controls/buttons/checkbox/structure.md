@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | UI for WinForms Documentation
+page_title: Structure - UI for WinForms Documentation
 description: RadCheckBox uses the Telerik Presentation Framework which enables rich experiences like advanced styling.
 slug: winforms/buttons/checkbox/structure
 tags: checkbox

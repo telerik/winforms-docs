@@ -1,6 +1,6 @@
 ---
 title: Handle Rendering Events
-page_title: Handle Rendering Events | RadPdfViewer
+page_title: Handle Rendering Events - RadPdfViewer
 description: This article shows how you can utilize the PageRenderStarted and PageRenderCompleted events to display a waiting bar while rendering heavy pages in RadPdfViewer.
 slug: winforms/pdfviewer/how-to/handle-rendering-events 
 tags: save, image

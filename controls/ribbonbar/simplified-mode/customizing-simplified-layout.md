@@ -1,6 +1,6 @@
 ---
 title: Customizing Simplified Layout
-page_title: Customizing Simplified Layout | RadRibbonBar
+page_title: Customizing Simplified Layout - RadRibbonBar
 description:  
 slug: winforms/ribbonbar/customizing-simplified-layout
 tags: radribbonbar. simplified, mode

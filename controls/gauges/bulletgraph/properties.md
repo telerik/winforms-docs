@@ -1,6 +1,6 @@
 ---
 title: Properties and Events
-page_title: Properties and Events| RadBulletGraph
+page_title: Properties and Events- RadBulletGraph
 description: The article lists the important properties, methods and events.
 slug: winforms/gauges/bulletgraph/properties
 tags: properties

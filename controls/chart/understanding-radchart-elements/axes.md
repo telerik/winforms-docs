@@ -1,6 +1,6 @@
 ---
 title: Axes
-page_title: Axes | UI for WinForms Documentation
+page_title: Axes - UI for WinForms Documentation
 description: Axes
 slug: winforms/chart/understanding-radchart-elements/axes
 tags: axes

@@ -1,6 +1,6 @@
 ---
 title: Getting started
-page_title: Getting started | UI for WinForms Documentation
+page_title: Getting started - UI for WinForms Documentation
 description: Getting started
 slug: winforms/richtextbox-(obsolete)/getting-started
 tags: getting,started

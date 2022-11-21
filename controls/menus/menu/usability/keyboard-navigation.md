@@ -1,6 +1,6 @@
 ---
 title: Keyboard Navigation
-page_title: Keyboard Navigation | RadMenu
+page_title: Keyboard Navigation - RadMenu
 description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 slug: winforms/menus/menu/usability/keyboard-navigation
 tags: keyboard,navigation

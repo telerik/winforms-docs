@@ -1,6 +1,6 @@
 ---
 title: Stacked Bar Charts
-page_title: Stacked Bar Charts | UI for WinForms Documentation
+page_title: Stacked Bar Charts - UI for WinForms Documentation
 description: Stacked Bar Charts
 slug: winforms/chart/understanding-radchart-types/stacked-bar-charts
 tags: stacked,bar,charts

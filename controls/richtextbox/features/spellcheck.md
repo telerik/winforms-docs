@@ -1,6 +1,6 @@
 ---
 title: Spellcheck
-page_title: Spellcheck | UI for WinForms Documentation
+page_title: Spellcheck - UI for WinForms Documentation
 description: Spellcheck
 slug: winforms/richtextbox-(obsolete)/features/spellcheck
 tags: spellcheck

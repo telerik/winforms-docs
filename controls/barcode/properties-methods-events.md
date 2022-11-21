@@ -1,6 +1,6 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events | Barcode
+page_title: Properties, Methods and Events - Barcode
 description: RadBarcode is a set of components that can be used to create, show and read barcodes. 
 slug: winforms/barcode/properties-methods-events
 tags: barcode, getting started

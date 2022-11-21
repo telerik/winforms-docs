@@ -1,6 +1,6 @@
 ---
 title: Validation
-page_title: Validation | RadPropertyGrid
+page_title: Validation - RadPropertyGrid
 description: RadPropertyGrid provides a convenient way to perform validation before data is committed.
 slug: winforms/propertygrid/editors/validation
 tags: validation

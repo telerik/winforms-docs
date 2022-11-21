@@ -1,6 +1,6 @@
 ---
 title: Accessing and Customizing Element
-page_title: Accessing and Customizing Element | UI for WinForms Documentation
+page_title: Accessing and Customizing Element - UI for WinForms Documentation
 description: RadSplitButton provides a menu-like interface contained within a button that can be placed anywhere on a form.
 slug: winforms/buttons/splitbutton/accessing-and-customizing-elements
 tags: splitbutton

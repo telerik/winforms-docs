@@ -1,6 +1,6 @@
 ---
 title: Applying a Theme to a Control
-page_title: Applying a Theme to a Control | RadThemeManager
+page_title: Applying a Theme to a Control - RadThemeManager
 description: This article shows you can apply theme to a control from RadThemeManager.
 slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/applying-a-theme-to-a-control
 tags: applying,a,theme,to,a,control

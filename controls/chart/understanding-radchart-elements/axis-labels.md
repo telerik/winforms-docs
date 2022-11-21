@@ -1,6 +1,6 @@
 ---
 title: Axis Labels
-page_title: Axis Labels | UI for WinForms Documentation
+page_title: Axis Labels - UI for WinForms Documentation
 description: Axis Labels
 slug: winforms/chart/understanding-radchart-elements/axis-labels
 tags: axis,labels

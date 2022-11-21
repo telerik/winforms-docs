@@ -1,6 +1,6 @@
 ---
 title: Positioning
-page_title: Positioning | UI for WinForms Documentation
+page_title: Positioning - UI for WinForms Documentation
 description: Positioning
 slug: winforms/richtextbox-(obsolete)/features/positioning
 tags: positioning

@@ -1,6 +1,6 @@
 ---
 title: Circle Shape
-page_title: Circle Shape| Telerik Presentation Framework
+page_title: Circle Shape- Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
 slug: winforms-telerik-presentation-framework-circle-shape
 tags: circle,shape

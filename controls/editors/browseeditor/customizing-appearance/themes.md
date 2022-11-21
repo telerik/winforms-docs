@@ -1,6 +1,6 @@
 ---
 title: Themes
-page_title: Themes | Browse Editor
+page_title: Themes - Browse Editor
 description: This help article will demonstrate a step by step tutorial how to customize the ControlDefault theme of RadBrowseEditor. 
 slug: winforms/browseeditor/customizing-appearance/themes
 tags: button, themes

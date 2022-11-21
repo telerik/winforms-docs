@@ -1,6 +1,6 @@
 ---
 title: Find and Replace
-page_title: Find and Replace | RadSyntaxEditor
+page_title: Find and Replace - RadSyntaxEditor
 description: RadSyntaxEditor is a useful text editor control which provides built-in syntax highlighting and code editing experience 
 slug: syntax-editor-features-finad-and-replace
 tags: find-and-replace

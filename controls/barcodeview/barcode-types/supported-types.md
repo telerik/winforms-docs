@@ -1,6 +1,6 @@
 ---
 title: Supported Types
-page_title: Supported Types | BarcodeView
+page_title: Supported Types - BarcodeView
 description: RadBarcodeView is a set of components that can be used to create, show and read barcodes. 
 slug: barcodeview-barcode-types-supported-types 
 tags: barcode, types

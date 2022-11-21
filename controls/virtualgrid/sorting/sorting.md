@@ -1,6 +1,6 @@
 ---
 title: Sorting Overview
-page_title: Sorting Overview | RadVirtualGrid
+page_title: Sorting Overview - RadVirtualGrid
 description: This article shows how you can configure and use the built-in sorting functionality.
 slug: winforms/virtualgrid/sorting/sorting
 tags: virtualgrid, sorting

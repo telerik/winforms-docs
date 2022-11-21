@@ -1,6 +1,6 @@
 ---
 title: Mnemonics
-page_title: Mnemonics | UI for WinForms Documentation
+page_title: Mnemonics - UI for WinForms Documentation
 description: RadButton, RadCheckBox, RadRadioButton, and RadToggleButton support mnemonics. 
 slug: winforms/buttons/mnemonics
 tags: mnemonics

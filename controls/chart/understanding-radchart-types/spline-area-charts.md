@@ -1,6 +1,6 @@
 ---
 title: Spline Area Charts
-page_title: Spline Area Charts | UI for WinForms Documentation
+page_title: Spline Area Charts - UI for WinForms Documentation
 description: Spline Area Charts
 slug: winforms/chart/understanding-radchart-types/spline-area-charts
 tags: spline,area,charts

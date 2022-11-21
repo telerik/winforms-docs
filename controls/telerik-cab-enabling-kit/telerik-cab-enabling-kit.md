@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Telerik CAB Enabling Kit | UI for WinForms Documentation
+page_title: Telerik CAB Enabling Kit - UI for WinForms Documentation
 description: Telerik CAB Enabling Kit
 slug: winforms/telerik-cab-enabling-kit
 tags: telerik,cab,enabling,kit

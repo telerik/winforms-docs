@@ -1,6 +1,6 @@
 ---
 title: Summary Rows
-page_title: Summary Rows | RadVirtualGrid
+page_title: Summary Rows - RadVirtualGrid
 description: This article show how you can configure and use the Summary Rows in RadVirualGrid.
 slug: winforms/virtualgrid/how-to/summary-rows
 tags: virtualgrid, summary rows

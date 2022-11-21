@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview | CodedUI
+page_title: Overview - CodedUI
 description: The CodedUI Extension for Telerik UI for WinForms controls is an extension for Microsoft Visual Studio, which runs in the Visual Studio Coded UI Test process and captures information about the Rad Controls that it encounters during a test recording and then generates code to replay that test session.
 slug: winforms/codedui
 tags: codedui

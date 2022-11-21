@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Supported Controls | WinForms Converter
+page_title: Supported Controls - WinForms Converter
 description: This article explains which default .NET controls are automatically converted.
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/supported-controls
 tags: covert, winforms, radcontrols
