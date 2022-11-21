@@ -98,3 +98,5 @@ The following article shows how you can access the buttons in the **CellFormatin
 
 * [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
 
+* [How to Filter GridViewCommandColumn in RadGridView]({%slug filter-commandcolumn-in-gridview%})
+
