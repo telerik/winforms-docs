@@ -32,7 +32,7 @@ It is necessary to create two separate Windows Forms Applications, one with name
 
 ![send-receive-messages-between-windows-forms-applications 003](images/send-receive-messages-between-windows-forms-applications003.png) 
 
-We will use the [SendMessage function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendmessage) passing **WM_SETTEXT** with the input available in a RadTextBox control. Then, the form that is expecting to receive the message from another application, should override its **WndProc** method and execute the desired action - in our case this will be inserting the text in a RadRichTextEditor. 
+We will use the [SendMessage function](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendmessage) passing **WM_SETTEXT** with the input available in a RadTextBox control. The **FindWindowByCaption** function is used for finding the **handle** of the "receiver" form. Then, the form that is expecting to receive the message from another application, should override its **WndProc** method and execute the desired action - in our case this will be inserting the text in a RadRichTextEditor. 
 
 This is the code added to the **SendMessagesApp**: 
 
