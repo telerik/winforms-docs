@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-This tutorial demonstrates a step by step tutorial how to create a theme component and integrate your [custom theme]({%slug customize-a-theme%}) inside the project. Thus, the theme will be available at design time as well. 
+This tutorial demonstrates a step by step tutorial on how to create a theme component and integrate your [custom theme]({%slug customize-a-theme%}) inside the project. Thus, the theme will be available at design time as well. 
 
 ## Solution
 
@@ -93,7 +93,7 @@ End Class
 
 ![tutorial-custom-theme-component 005](images/tutorial-custom-theme-component005.png) 
  
-4\. Build the entire application. The theme component will be available in the toolbox. You will be able to drag this component to the forms in all the projects in you solution which will load the corresponding theme.
+4\. Build the entire application. The theme component will be available in the toolbox. You will be able to drag this component to the forms in all the projects in your solution which will load the corresponding theme.
 
 ![tutorial-custom-theme-component 006](images/tutorial-custom-theme-component006.png) 
 
