@@ -85,3 +85,5 @@ When you compile the project, you will be able to drag this component to the for
 
 * [Adding a custom theme as a resource]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/adding-a-custom-theme-as-a-resource%})
 
+* [Tutorial - Create a Custom Theme Component]({%slug tutorial-custom-theme-component%})
+
