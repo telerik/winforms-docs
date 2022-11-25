@@ -14,7 +14,6 @@ res_type: kb
 |Product Version|Product|Author|
 |----|----|----|
 |2022.3.913|RadChartView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
- 
 
 ## Description
 
@@ -24,7 +23,7 @@ RadChartView provides two ways of populating with data:
 	* [Binding to BindingList]({%slug winforms/chartview-/populating-with-data/binding-to-bindinglist%})
 * Unbound Mode: adding data points to each series. There are different series types, e.g. [BarSeries]({%slug winforms/chartview-/series-types/bar%}), [LineSeries]({%slug winforms/chartview-/series-types/line%}), etc.
   
-Using one of the two approaches you can populate the chart with the data extracted from the database. In this tutorial we are going to get the data from the Access Database file and create DataTable to populate the RadChartView.
+Using one of the two approaches you can populate the chart with the data extracted from the database. In this tutorial, we are going to get the data from the Access Database file and create DataTable to populate the RadChartView.
 
 ## Solution 
 
