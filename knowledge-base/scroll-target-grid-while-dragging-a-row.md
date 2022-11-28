@@ -24,7 +24,7 @@ This tutorial demonstrates a sample approach how to achieve such a scrolling beh
 
 ## Solution
 
-It is necessary to create a custom **RadGridViewDragDropService** which drag and drop behavior is based on the demonstrated approach [here]({%slug winforms/gridview/rows/drag-and-drop%}). We will further extend the example and override the **HandleMouseMove** method where the target **GridTableElement** will be programmatically scrolled:
+It is necessary to create a custom **RadGridViewDragDropService** whose drag and drop behavior is based on the demonstrated approach [here]({%slug winforms/gridview/rows/drag-and-drop%}). We will further extend the example and override the **HandleMouseMove** method where the target **GridTableElement** will be programmatically scrolled:
  
 ![scroll-target-grid-while-dragging-a-row 001](images/scroll-target-grid-while-dragging-a-row001.gif) 
 
@@ -514,7 +514,7 @@ End Class
 
 ````
 
->note Please have in mind that this is just a sample approach and it may not cover all possible cases. Feel free to modify and extend it in a way which suits your requirements best. 
+>note Please have in mind that this is just a sample approach and it may not cover all possible cases. Feel free to modify and extend it in a way that suits your requirements best. 
 
 # See Also
 
