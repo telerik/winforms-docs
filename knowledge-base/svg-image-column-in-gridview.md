@@ -22,7 +22,7 @@ Usually, the SVG (vector) images are stored as XML/text content in the database.
 
 ![svg-image-column-in-gridvie 001](images/svg-image-column-in-gridvie001.png) 
  
-This article demonstrates a sample approach how add a grid column that supports SVG images. 
+This article demonstrates a sample approach how to add a grid column that supports SVG images. 
 
 ## Solution
 
@@ -171,7 +171,7 @@ End Class
 
 ````
 
->caution Please have in mind that the complexity of the vector images and the number of records may affect the rows resizing or scrolling performance. 
+>caution Please have in mind that the complexity of the vector images and the number of records may affect the row resizing or scrolling performance. 
 
 # See Also
 
