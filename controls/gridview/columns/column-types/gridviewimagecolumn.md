@@ -131,3 +131,5 @@ imageColumn.ImageAlignment = ContentAlignment.BottomRight
 
 * [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
 
+* [How to Load SVG Images in RadGridView Column]({%slug svg-image-column-in-gridview%})
+

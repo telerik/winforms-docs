@@ -214,4 +214,4 @@ Here is a code sample illustrating how to use the new approach to handle SVG exc
 # See Also
 
 * [Customize the Color for SVG Images]({%slug customize-the-color-for-svg-images%}) 
-
+* [How to Load SVG Images in RadGridView Column]({%slug svg-image-column-in-gridview%})
