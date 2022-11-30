@@ -45,3 +45,5 @@ document.Print()
 
 * [Watermark]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/watermark%})
 
+* [How to Print Documents to a Specific Printer]({%slug print-document-to-a-specific-printer%})
+
