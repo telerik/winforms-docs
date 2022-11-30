@@ -22,7 +22,7 @@ This article demonstrates how to print a document to a specific printer by using
 
 ## Solution
 
-**RadPdfViewer** and **RadRichTextEditor** are two controls from the UI for WinForms suite that support loading .pdf, .docx, .rtf and other document formats. No matter what type of document you want to print, the [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}).**AssociatedObject** property allows you to specify the control (IPrintable) you want to print.
+**RadPdfViewer** and **RadRichTextEditor** are two controls from the UI for WinForms suite that supports loading .pdf, .docx, .rtf and other document formats. No matter what type of document you want to print, the [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}).**AssociatedObject** property allows you to specify the control (IPrintable) you want to print.
 
 The following example uses a RadPdfViewer but it can be applied to RadRichTextEditor as well. The **PrinterSettings** object offers different settings for adjusting the print document and specifying the **PrinterName**:
 
