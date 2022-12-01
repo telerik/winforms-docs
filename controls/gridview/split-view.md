@@ -10,7 +10,7 @@ position: 12
 
 The Split View allows easy data comparison by displaying two grids in the same container. The section can be synchronized as well.  
 
-![radgridview-split-view001](images/radgridview-split-view.png)
+![WinForms RadGridView radgridview-split-view001](images/radgridview-split-view.png)
 
 The following properties are controlling the Split View mode:
 

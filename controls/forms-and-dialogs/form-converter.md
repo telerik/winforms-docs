@@ -14,7 +14,7 @@ position: 8
 
 >caption Figure 1: RadFormConverter
 
-![forms-and-dialogs-form-converter 001](images/forms-and-dialogs-form-converter001.gif)
+![WinForms RadTimeSpanPicker RadFormConverter](images/forms-and-dialogs-form-converter001.gif)
 
 The actual conversion process is executed after selecting an item from the component`s action list. The available options are: 
 
@@ -29,7 +29,7 @@ If you have at least one control from the Telerik UI for WinForms suite on the s
 
 >caption Figure 2: Form's smart tag
 
-![forms-and-dialogs-form-converter 002](images/forms-and-dialogs-form-converter002.png)
+![WinForms RadTimeSpanPicker Form's smart tag](images/forms-and-dialogs-form-converter002.png)
 
 # See Also 
 

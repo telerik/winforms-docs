@@ -62,7 +62,7 @@ End If
 {{endregion}}
 
 >caption Figure 1: CategoricalRadialAxis Setup
-![chartview-axes-radial 001](images/chartview-axes-radial001.png)
+![WinForms RadChartView CategoricalRadialAxis Setup](images/chartview-axes-radial001.png)
 
 ## NumericRadialAxis
 
@@ -135,7 +135,7 @@ End If
 {{endregion}} 
 
 >caption Figure 1: NumericRadialAxis Setup
-![chartview-axes-radial 002](images/chartview-axes-radial002.png)
+![WinForms RadChartView NumericRadialAxis Setup](images/chartview-axes-radial002.png)
 
 # See Also
 

@@ -22,9 +22,9 @@ To change the display of any given point use the chart item's __PointAppearance_
 To create a Vertical Point Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Point__. Add one or more chart series to the __Series__ collection.  Add one or more chart items to the series __Items__ collection. Populate numeric values for __XValue__ and __YValue__ properties of each chart series item.
 >caption 
 
-![chart-undestanding-radchart-types-point-charts 001](images/chart-undestanding-radchart-types-point-charts001.png)
+![WinForms RadChart ](images/chart-undestanding-radchart-types-point-charts001.png)
 
 To create a Vertical Point Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Point__. Add one or more chart series to the __Series__ collection.  Add one or more chart items to the series __Items__ collection. Populate numeric values for __XValue__ and __YValue__ properties of each chart series item.
 >caption 
 
-![chart-undestanding-radchart-types-point-charts 002](images/chart-undestanding-radchart-types-point-charts002.png)
+![WinForms RadChart chart-undestanding-radchart-types-point-charts 002](images/chart-undestanding-radchart-types-point-charts002.png)

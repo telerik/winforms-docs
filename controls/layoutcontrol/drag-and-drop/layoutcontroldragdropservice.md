@@ -16,7 +16,7 @@ position: 0
 
 >caption Figure 1: LayoutControlDragDropService
 
-![layoutcontrol-drag-and-drop-layoutcontroldragdropservice 001](images/layoutcontrol-drag-and-drop-layoutcontroldragdropservice001.gif)
+![WinForms RadLayoutControl LayoutControlDragDropService](images/layoutcontrol-drag-and-drop-layoutcontroldragdropservice001.gif)
 
 As a descendant of [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%}), **LayoutControlDragDropService** handles the whole drag and drop operation. The **PreviewDragOver** event allows you to control on what targets the item being dragged can be dropped on. The **PreviewDragDrop** event allows you to get a handle on all the aspects of the drag and drop operation, the source (drag) **RadLayoutControl**, the destination (target) control, as well as the item being dragged. 
 

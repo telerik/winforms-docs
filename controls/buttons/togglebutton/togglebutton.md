@@ -19,6 +19,6 @@ __RadToggleButton__ is designed to manage states on your form. It shares many f
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![buttons-togglebutton-overview 001](images/buttons-togglebutton-overview001.png)
+![WinForms RadButtons buttons-togglebutton-overview 001](images/buttons-togglebutton-overview001.png)
 
 To learn how to act on state changes and alter the appearance of __RadToggleButton__ for different states, see [Handling the ToggleButton States]({%slug winforms/buttons/togglebutton/handling-radtogglebutton-states%}).

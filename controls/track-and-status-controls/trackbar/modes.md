@@ -19,7 +19,7 @@ In this mode **RadTrackBar** works like a standard **TrackBar**. It contains one
 
 >caption Figure 1: 
 
-![track-and-status-controls-trackbar-modes 001](images/track-and-status-controls-trackbar-modes001.png)
+![WinForms RadTrackBar ](images/track-and-status-controls-trackbar-modes001.png)
 
 ## StartFromTheBeginning
 
@@ -44,7 +44,7 @@ Me.RadTrackBar1.Ranges.Add(New TrackBarRange(0, 15, "MyRange2"))
 {{endregion}} 
 
 
-![track-and-status-controls-trackbar-modes 002](images/track-and-status-controls-trackbar-modes002.png)
+![WinForms RadTrackBar track-and-status-controls-trackbar-modes 002](images/track-and-status-controls-trackbar-modes002.png)
 
 In order to access the values of the thumbs in this mode you should go through the __Ranges__ collection and check the values of each __TrackBarRange__. Please, note that even though __TrackBarRange__ has both __Start__ and __End__ properties, in this mode **RadTrackBar** uses only the __End__ property, so you should access it in order to take the value of some range.
 
@@ -109,7 +109,7 @@ Me.RadTrackBar1.Ranges.Add(New TrackBarRange(10, 15))
 
 {{endregion}} 
 
-![track-and-status-controls-trackbar-modes 003](images/track-and-status-controls-trackbar-modes003.png)
+![WinForms RadTrackBar track-and-status-controls-trackbar-modes 003](images/track-and-status-controls-trackbar-modes003.png)
 
 To receive notification when the **Value** is changed in this mode, you should use the __RangeValueChanged__ event of the RadTrackBar:
 

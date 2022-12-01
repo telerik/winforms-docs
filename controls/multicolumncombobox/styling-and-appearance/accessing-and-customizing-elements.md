@@ -18,9 +18,9 @@ You can access and modify the style for different elements in **RadMultiColumnCo
 
 >caption Figure 1: Element hierarchy editor
 
-![multicolumncombobox-accessing-and-customizing-elements 001](images/multicolumncombobox-accessing-and-customizing-elements001.png)
+![WinForms RadMultiColumnComboBox Element hierarchy editor](images/multicolumncombobox-accessing-and-customizing-elements001.png)
 
-![multicolumncombobox-accessing-and-customizing-elements 002](images/multicolumncombobox-accessing-and-customizing-elements002.png)
+![WinForms RadMultiColumnComboBox multicolumncombobox-accessing-and-customizing-elements 002](images/multicolumncombobox-accessing-and-customizing-elements002.png)
 
 ## Programmatically
 
@@ -28,7 +28,7 @@ You can customize the nested elements at run time as well:
 
 >caption Figure 2: Customize elements
 
-![multicolumncombobox-accessing-and-customizing-elements 003](images/multicolumncombobox-accessing-and-customizing-elements003.png)
+![WinForms RadMultiColumnComboBox Customize elements](images/multicolumncombobox-accessing-and-customizing-elements003.png)
 
 #### Customize elements 
 

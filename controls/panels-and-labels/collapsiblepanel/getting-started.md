@@ -17,17 +17,17 @@ In this article you will learn the basics of how to use RadCollapsiblePanel. We 
 
 >caption Figure 1: Collapsed Panel
 >
-![panels-and-labels-collapsible-panel-getting-started 001](images/panels-and-labels-collapsible-panel-getting-started001.png)
+![WinForms RadTemplates Collapsed Panel](images/panels-and-labels-collapsible-panel-getting-started001.png)
 
 And this is how it will look if the panel is expanded.
 
 >caption Figure 2: Expanded Panel
 >
-![panels-and-labels-collapsible-panel-getting-started 002](images/panels-and-labels-collapsible-panel-getting-started002.png)
+![WinForms RadTemplates Expanded Panel](images/panels-and-labels-collapsible-panel-getting-started002.png)
 
 1\. Create a **RadForm** and add a few controls (buttons in our case) on the left side of the form, but leave about 30 pixels to the form’s border. These controls will be visible only when **RadCollapsiblePanel** is collapsed.
 
-![panels-and-labels-collapsible-panel-getting-started 003](images/panels-and-labels-collapsible-panel-getting-started003.png)
+![WinForms RadTemplates panels-and-labels-collapsible-panel-getting-started 003](images/panels-and-labels-collapsible-panel-getting-started003.png)
 
 2\. Now drag a **RadCollapsiblePanel** control from the Toolbox of Visual Studio onto the form. Drag it to the top-left corner of the form and increase its height so it fits the height of the form. From the Property Window set the following properties
 
@@ -37,13 +37,13 @@ And this is how it will look if the panel is expanded.
 
 * __HeaderText__: *"ShowGrid"*
 
-    ![panels-and-labels-collapsible-panel-getting-started 004](images/panels-and-labels-collapsible-panel-getting-started004.png)
+    ![WinForms RadTemplates panels-and-labels-collapsible-panel-getting-started 004](images/panels-and-labels-collapsible-panel-getting-started004.png)
 
 3\. Increase the panel's width to at least the half of the form. After this is ready drag a **RadGridView** to the controls container of the **RadCollapsiblePanel** instance you just created and set the following properties to the grid:
 
 * __Dock__: *Fill*
 
-* __DataSource__: *This is optional, you can read how to bind RadGridView* [here]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})<br>![panels-and-labels-collapsible-panel-getting-started 002](images/panels-and-labels-collapsible-panel-getting-started002.png)
+* __DataSource__: *This is optional, you can read how to bind RadGridView* [WinForms RadTemplates here]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})<br>![WinForms RadTemplates panels-and-labels-collapsible-panel-getting-started 002](images/panels-and-labels-collapsible-panel-getting-started002.png)
 
 #### Handle Events
 
@@ -77,7 +77,7 @@ Our example is ready to be tested. You can start the application and observe the
 
 >caption Figure 3: End Result
 >
-![panels-and-labels-collapsible-panel-getting-started 005](images/panels-and-labels-collapsible-panel-getting-started005.gif)
+![WinForms RadTemplates End Result](images/panels-and-labels-collapsible-panel-getting-started005.gif)
 
 
 # See Also

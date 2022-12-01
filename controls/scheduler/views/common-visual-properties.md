@@ -32,7 +32,7 @@ Me.RadScheduler1.EnableExactTimeRendering = True
 {{endregion}} 
 
 >caption Figure 1: Exact Time Rendering
-![scheduler-views-common-visual-properties 001](images/scheduler-views-common-visual-properties001.png)
+![WinForms RadScheduler Exact Time Rendering](images/scheduler-views-common-visual-properties001.png)
 
 ## AutoSize Appointments
 
@@ -53,7 +53,7 @@ Me.RadScheduler1.AutoSizeAppointments = True
 {{endregion}} 
 
 >caption Figure 2: AutoSize Appointments
-![scheduler-views-common-visual-properties 002](images/scheduler-views-common-visual-properties002.png)
+![WinForms RadScheduler AutoSize Appointments](images/scheduler-views-common-visual-properties002.png)
 
 ## Appointments’ Height
 
@@ -94,7 +94,7 @@ Me.RadScheduler1.ViewElement.AppointmentMargin = New Padding(5, 0, 10, 0)
 {{endregion}}
 
 >caption Figure 3: Appointments Spacing
-![scheduler-views-common-visual-properties 003](images/scheduler-views-common-visual-properties003.png)
+![WinForms RadScheduler Appointments Spacing](images/scheduler-views-common-visual-properties003.png)
 
 # See Also
 

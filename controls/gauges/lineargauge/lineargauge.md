@@ -18,7 +18,7 @@ __RadLinearGauge__  displays simple value within a specific range. The range is 
 {% include cta-panel-overview.html %}
 {% endif %}
         
-![lineargauge-overview 001](images/lineargauge-overview001.gif)
+![WinForms RadGauges lineargauge-overview 001](images/lineargauge-overview001.gif)
 
 __Key Features__
 

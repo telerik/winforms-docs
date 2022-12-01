@@ -16,7 +16,7 @@ Here is how the control's Smart Tag looks like:
 
 >caption Figure 1: Smart Tag
 
-![calculatordropdown-design-time-smart-tag 001](images/calculatordropdown-design-time-smart-tag001.png)
+![WinForms RadCalculatorDropDown Smart Tag](images/calculatordropdown-design-time-smart-tag001.png)
 
 * __Common Tasks__
 

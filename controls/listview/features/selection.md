@@ -44,7 +44,7 @@ The **FullRowSelect** property controls whether the full row should be selected 
 
 |FullRowSelect=*true*|FullRowSelect=*false*|
 |----|----|
-|![listview-features-selection](images/listview-features-selection001.png)|![listview-features-selection](images/listview-features-selection002.png)|
+|![WinForms RadListView listview-features-selection](images/listview-features-selection001.png)|![WinForms RadListView listview-features-selection](images/listview-features-selection002.png)|
 
 By default, when you add items programmatically, the last added item is selected. This is controlled by the **SelectLastAddedItem** property and if you don't want **RadListView** to select the last inserted item, set the mentioned property to *false*.
 
@@ -53,7 +53,7 @@ By default, when you add items programmatically, the last added item is selected
 **RadListView** provides lasso selection functionality by selecting a rectangle on the surface of the control. As a result multiple items are selected if multiple selection is enabled. 
 
 >caption Figure 1: Lasso selection
-![listview-features-selection](images/listview-features-selection003.gif)
+![WinForms RadListView Lasso selection](images/listview-features-selection003.gif)
 
 ## Selection Events
 

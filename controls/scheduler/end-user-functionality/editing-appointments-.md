@@ -13,7 +13,7 @@ previous_url: scheduler-end-user-functionality-editing-appointments
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[In-Place Editors with RadScheduler for WinForms](http://www.telerik.com/videos/winforms/in-place-editors-with-radscheduler-for-winforms)<br>In this video, you will learn how to use the new in-place editors feature of RadScheduler for WinForms.|![scheduler-end-user-functionality-editing-appointments 004](images/scheduler-end-user-functionality-editing-appointments004.png)|
+|[WinForms RadScheduler In-Place Editors with RadScheduler for WinForms](http://www.telerik.com/videos/winforms/in-place-editors-with-radscheduler-for-winforms)<br>In this video, you will learn how to use the new in-place editors feature of RadScheduler for WinForms.|![WinForms RadScheduler scheduler-end-user-functionality-editing-appointments 004](images/scheduler-end-user-functionality-editing-appointments004.png)|
 
 RadScheduler offers two options to edit an appointment:
 
@@ -27,10 +27,10 @@ When a change in an appointment's property occurs, the __AppointmentChanged__ ev
 
 The EditAppointmentDialog allows for editing all the properties that an appointment exposes. To edit an appointment once it has been created:
 
-1. Double-click an appointment and the "Editor Appointment Dialog" is shown if the appointment is not recurring.![scheduler-end-user-functionality-editing-appointments 001](images/scheduler-end-user-functionality-editing-appointments001.png)
+1. Double-click an appointment and the "Editor Appointment Dialog" is shown if the appointment is not recurring.![WinForms RadScheduler scheduler-end-user-functionality-editing-appointments 001](images/scheduler-end-user-functionality-editing-appointments001.png)
 
 1. If the appointment is recurring, the "Editing a recurring appointment" pop-up appears, where you can specify whether you want to edit only the selected occurrence of the appointment, or edit the entire series:
-    ![scheduler-end-user-functionality-editing-appointments 005](images/scheduler-end-user-functionality-editing-appointments005.png)
+    ![WinForms RadScheduler scheduler-end-user-functionality-editing-appointments 005](images/scheduler-end-user-functionality-editing-appointments005.png)
 
     Choose which you want to edit and press OK to open the "Editor Appointment Dialog". You can also press Cancel to cancel the edit entirely.
             
@@ -43,7 +43,7 @@ The EditAppointmentDialog allows for editing all the properties that an appointm
 
 #### EditAppointmentDialog with multiple resources
 
-![scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+![WinForms RadScheduler scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
 
             
 ## Using In-place editors      
@@ -69,7 +69,7 @@ Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditor
 {{endregion}} 
 
 >caption Figure 1: Simple Editor
-![scheduler-end-user-functionality-editing-appointments 001](images/scheduler-end-user-functionality-editing-appointments006.png)
+![WinForms RadScheduler Simple Editor](images/scheduler-end-user-functionality-editing-appointments006.png)
 
 * The in-place editor behaves as a composite dialog editor that appears next to the appointment in the view. This editor allows for editing more properties of the appointment at once.
 
@@ -90,7 +90,7 @@ Me.RadScheduler1.SchedulerElement.EditorManager.EditorViewMode = SchedulerEditor
 {{endregion}} 
 
 >caption Figure 2: Dialog Editor
-![scheduler-end-user-functionality-editing-appointments 002](images/scheduler-end-user-functionality-editing-appointments002.png)
+![WinForms RadScheduler Dialog Editor](images/scheduler-end-user-functionality-editing-appointments002.png)
 
 * All in-place editors are disabled. This is the default behavior.
 
@@ -191,7 +191,7 @@ End Sub
 The result is shown on the screenshot below:
 
 >caption Figure 3: Custom TextBox Editor
-![scheduler-end-user-functionality-editing-appointments 003](images/scheduler-end-user-functionality-editing-appointments003.png)
+![WinForms RadScheduler Custom TextBox Editor](images/scheduler-end-user-functionality-editing-appointments003.png)
 
 In this the EditorRequired event you can also change the in-place editor dialog if the editor mode is EditorDialog.
 

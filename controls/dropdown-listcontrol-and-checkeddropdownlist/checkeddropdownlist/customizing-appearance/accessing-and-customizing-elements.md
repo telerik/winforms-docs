@@ -21,7 +21,7 @@ You can access and modify the style for different elements in __RadCheckedDropDo
 
 >caption Figure 1: Element hierarchy editor
 
-![dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements 001](images/dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements001.png)
+![WinForms RadCheckedDropDownList Element hierarchy editor](images/dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
@@ -29,7 +29,7 @@ You can customize the nested elements at run time as well:
 
 >caption Figure 2: Customize elements
 
-![dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements 002](images/dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements002.png)
+![WinForms RadCheckedDropDownList Customize elements](images/dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

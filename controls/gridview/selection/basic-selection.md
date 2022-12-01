@@ -38,7 +38,7 @@ RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
 
 To select an item in RadGridView click in the rectangle area of the desired row.
 
-![gridview-selection-basic-selection 001](images/gridview-selection-basic-selection001.png)
+![WinForms RadGridView gridview-selection-basic-selection 001](images/gridview-selection-basic-selection001.png)
 
 ## Basic cell selection
 
@@ -62,7 +62,7 @@ RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
 
 After setting these properties, to select a cell in RadGridView, click the desired cell.
 
-![gridview-selection-basic-selection 002](images/gridview-selection-basic-selection002.png)
+![WinForms RadGridView gridview-selection-basic-selection 002](images/gridview-selection-basic-selection002.png)
 
 ## Selected items
 

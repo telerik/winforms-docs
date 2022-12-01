@@ -14,7 +14,7 @@ Consider the case you have a bound **RadGridView** with self-reference hierarchi
 
 >caption Figure 1: Rows reordering in self-reference hierarchy
 
-![gridview-drag-and-drop-rows-reordering-in-self-reference-hierarchy 001](images/gridview-drag-and-drop-rows-reordering-in-self-reference-hierarchy001.gif)
+![WinForms RadGridView Rows reordering in self-reference hierarchy](images/gridview-drag-and-drop-rows-reordering-in-self-reference-hierarchy001.gif)
 
 1\. Populate **RadGridView** with self-reference hierarchical data:
 

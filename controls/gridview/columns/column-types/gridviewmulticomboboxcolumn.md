@@ -13,7 +13,7 @@ previous_url: gridview-columns-gridviewmulticomboboxcolumn
 
 This column has __RadMultiColumnComboBoxElement__ as an editor. It covers the features that the RadMultiColumnComboBox control has.
 
-![gridview-columns-gridviewmulticomboboxcolumn 001](images/gridview-columns-gridviewmulticomboboxcolumn001.png)
+![WinForms RadGridView gridview-columns-gridviewmulticomboboxcolumn 001](images/gridview-columns-gridviewmulticomboboxcolumn001.png)
 
 The following example demonstrates how to [manually generate columns for RadGridView]({%slug winforms/gridview/columns/generating-columns%}) in the dropdown and then make the dropdown autosize itself according to the width of the RadGridView columns.
 

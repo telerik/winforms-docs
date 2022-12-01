@@ -78,7 +78,7 @@ End Sub
 {{endregion}} 
 
 
-![gridview-rows-painting-rows 001](images/gridview-rows-painting-rows001.png)
+![WinForms RadGridView gridview-rows-painting-rows 001](images/gridview-rows-painting-rows001.png)
 # See Also
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
 

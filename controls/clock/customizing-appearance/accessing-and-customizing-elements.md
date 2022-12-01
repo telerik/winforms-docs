@@ -19,7 +19,7 @@ You can access and modify the style for different elements in __RadClock__ by us
 
 >caption Fig.1 Element hierarchy editor
 
-![clock-customizing-appearance-accessing-and-customizing-elements 001](images/clock-customizing-appearance-accessing-and-customizing-elements001.png)
+![WinForms RadClock Element hierarchy editor](images/clock-customizing-appearance-accessing-and-customizing-elements001.png)
 
 >note The background for __RadClockElement__ and the __ArrowElement__ use images to introduce the style for a given theme. If you need to customize the arrows for example, it is necessary to apply the desired image to the respective __ArrowPrimitive__.
 
@@ -28,7 +28,7 @@ You can access and modify the style for different elements in __RadClock__ by us
 You can customize the nested elements at run time as well:
 >caption Fig.2 Customize elements
 
-![clock-customizing-appearance-accessing-and-customizing-elements 002](images/clock-customizing-appearance-accessing-and-customizing-elements002.gif)
+![WinForms RadClock Customize elements](images/clock-customizing-appearance-accessing-and-customizing-elements002.gif)
 
 #### Customize elements 
 

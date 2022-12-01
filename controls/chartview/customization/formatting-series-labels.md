@@ -14,7 +14,7 @@ previous_url: chartview-customization-formatting-series-labels
 This article demonstrates how to change the labels styles and text. The series labels can be customized in the __LabelFormatting__ event of __RadChartView__. This event is fired for each label, which allows you to customize all labels, depending on your goals.
 
 >caption Figure 1: Formatting Labels
-![chartview-customization-formatting-series-labels 001](images/chartview-customization-formatting-series-labels001.png)
+![WinForms RadChartView Formatting Labels](images/chartview-customization-formatting-series-labels001.png)
 
 1\. In order this event to fire, you should set the __ShowLabels__ property to *true* for at least one series. For example, you can set this property for all series with the following code. 
 

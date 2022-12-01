@@ -13,7 +13,7 @@ previous_url: gridview-populating-with-data-binding-to-bindinglist
 
 BindingList is a generic list type that has additional binding support. While you can [bind to a generic list]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%}), BindingList provides additional control over list items, i.e. if they can be edited, removed or added. BindingList also surfaces events that notify when the list has been changed. The example below creates a list of `MyObject`, initializes the list and assigns the list to the grid __DataSource__ property. The example also uses a __ListChangedEventHandler__ that reports the type of change that occurred, the new index of the item and the content of the item.
 
-![gridview-populating-with-data-binding-to-bindinglist 001](images/gridview-populating-with-data-binding-to-bindinglist001.png)
+![WinForms RadGridView gridview-populating-with-data-binding-to-bindinglist 001](images/gridview-populating-with-data-binding-to-bindinglist001.png)
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToBindingList.cs region=MyObjectClass}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToBindingList.vb region=MyObjectClass}} 

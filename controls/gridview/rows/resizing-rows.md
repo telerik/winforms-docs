@@ -26,7 +26,7 @@ Me.RadGridView1.TableElement.RowHeight = 50
 
 {{endregion}} 
 
-![gridview-rows-adding-and-inserting-rows 002](images/row-resizing001.png)
+![WinForms RadGridView gridview-rows-adding-and-inserting-rows 002](images/row-resizing001.png)
 
 >note **GridViewRowInfo** offers three properties that allow you specifying the height of an individual data row: **Height**, **MinHeight**, **MaxHeight**. It controls the current height of the row, its minimum and maximum height respectively.
 
@@ -45,7 +45,7 @@ this.radGridView1.TableElement.SearchRowHeight = 50;
 
 {{endregion}} 
 
-![gridview-rows-adding-and-inserting-rows 002](images/row-resizing002.png)
+![WinForms RadGridView gridview-rows-adding-and-inserting-rows 002](images/row-resizing002.png)
 
 #### New Row Height
 
@@ -60,7 +60,7 @@ Me.RadGridView1.MasterView.TableAddNewRow.Height = 50
 
 {{endregion}} 
 
-![gridview-rows-adding-and-inserting-rows 002](images/row-resizing003.png)
+![WinForms RadGridView gridview-rows-adding-and-inserting-rows 002](images/row-resizing003.png)
 
 #### TableHeader Height
 
@@ -75,7 +75,7 @@ Me.RadGridView1.TableElement.TableHeaderHeight = 50
 
 {{endregion}} 
 
-![gridview-rows-adding-and-inserting-rows 002](images/row-resizing004.png)
+![WinForms RadGridView gridview-rows-adding-and-inserting-rows 002](images/row-resizing004.png)
 
 #### Pinned Row Height
 
@@ -96,7 +96,7 @@ Me.RadGridView1.MasterView.PinnedRows(1).Height = 50
 
 {{endregion}} 
 
-![gridview-rows-adding-and-inserting-rows 002](images/row-resizing005.png)
+![WinForms RadGridView gridview-rows-adding-and-inserting-rows 002](images/row-resizing005.png)
 
 #### Filtering Row Height
 
@@ -113,7 +113,7 @@ Me.RadGridView1.TableElement.FilterRowHeight = 50
 
 {{endregion}} 
 
-![gridview-rows-adding-and-inserting-rows 002](images/row-resizing006.png)
+![WinForms RadGridView gridview-rows-adding-and-inserting-rows 002](images/row-resizing006.png)
 
 #### Group Header Height
 
@@ -128,7 +128,7 @@ Me.RadGridView1.TableElement.GroupHeaderHeight = 50
 
 {{endregion}} 
 
-![gridview-rows-adding-and-inserting-rows 002](images/row-resizing007.png)
+![WinForms RadGridView gridview-rows-adding-and-inserting-rows 002](images/row-resizing007.png)
 
 #### Summary Row Height
 ````C#
@@ -142,7 +142,7 @@ Me.RadGridView1.MasterView.SummaryRows(0).Height = 50
 
 {{endregion}} 
 
-![gridview-rows-adding-and-inserting-rows 002](images/row-resizing008.png)
+![WinForms RadGridView gridview-rows-adding-and-inserting-rows 002](images/row-resizing008.png)
 
 # See Also
 

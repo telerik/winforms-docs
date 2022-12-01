@@ -93,7 +93,7 @@ End Sub
 
 {{endregion}}
 
-![stepprogressbar-layout 001](images/stepprogressbar-features-tooltip001.png)
+![WinForms RadStepProgressBar stepprogressbar-layout 001](images/stepprogressbar-features-tooltip001.png)
 
 ## Setting Tooltips in the ToolTipTextNeeded Event
 
@@ -174,7 +174,7 @@ End Sub
 
 {{endregion}}
 
-![stepprogressbar-layout 001](images/stepprogressbar-features-tooltip002.png)
+![WinForms RadStepProgressBar stepprogressbar-layout 001](images/stepprogressbar-features-tooltip002.png)
 
 # See Also
 

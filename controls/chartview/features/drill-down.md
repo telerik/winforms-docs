@@ -16,7 +16,7 @@ The drill down functionality of a chart allows users to click on a graphical ele
 The animation below demonstrates how from BarSeries showing sales for 10 years as bars, when a bar is clicked you are navigated to another view showing BarSeries again, but this time displaying the sales for all months in the selected year. Clicking a month bar will produce another view, which displays line series with data for each day of the month.
 
 >caption Figure 1: Drill Down Functionality
-![chartview-features-drill-down 001](images/chartview-features-drill-down001.gif)
+![WinForms RadChartView Drill Down Functionality](images/chartview-features-drill-down001.gif)
 
 To support this functionality a __DrillDownControler__ should be used: 
 

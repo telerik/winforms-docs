@@ -18,7 +18,7 @@ Select __RadListView__ and click the small arrow on the top right position in or
 
 >caption Fig.1 Smart Tag
 
-![listview-desing-time 001](images/listview-design-time001.png)
+![WinForms RadListView Smart Tag](images/listview-design-time001.png)
 
 * __Common Tasks__
 
@@ -28,7 +28,7 @@ Select __RadListView__ and click the small arrow on the top right position in or
 
 	>caption Figure 2: Element hierarchy editor
 
-	![listview-desing-time 002](images/listview-desing-time002.png)
+	![WinForms RadListView Element hierarchy editor](images/listview-desing-time002.png)
 
 
 	* __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style at one time.
@@ -41,7 +41,7 @@ Select __RadListView__ and click the small arrow on the top right position in or
 
 	>caption Figure 3: ListViewDataItem Collection Editor
 
-	![listview-desing-time 003](images/listview-desing-time003.png)
+	![WinForms RadListView ListViewDataItem Collection Editor](images/listview-desing-time003.png)
 	
 	* __Edit Columns__: Opens the *ListViewDetailColumn Collection Editor*.
 	

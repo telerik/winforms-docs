@@ -65,12 +65,12 @@ End Sub
 {{endregion}} 
 
 >caption Figure 1: Binding to DataTable
-![chartview-databinding-binding-to-datatable 001](images/chartview-databinding-binding-to-datatable001.png)
+![WinForms RadChartView Binding to DataTable](images/chartview-databinding-binding-to-datatable001.png)
 
 Adding, removing or modifying a record in the DataTable is automatically reflected in __RadChartView__:
 
 >caption Figure 2: Modify Item
-![chartview-databinding-binding-to-datatable 002](images/chartview-databinding-binding-to-datatable002.png)
+![WinForms RadChartView Modify Item](images/chartview-databinding-binding-to-datatable002.png)
 
 # See Also
 

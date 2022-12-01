@@ -15,11 +15,11 @@ RadGridView settings can be saved and loaded at design time and there is a fine
 
 *Load Settings form file* and *Save Settings to file* buttons are located in the lower left corner of *RadGridView Property Builder*:
 
-![gridview-save-and-load-layout-save-load-layout-buttons-in-the-property-grid 001](images/gridview-save-and-load-layout-save-load-layout-buttons-in-the-property-grid001.png)
+![WinForms RadGridView gridview-save-and-load-layout-save-load-layout-buttons-in-the-property-grid 001](images/gridview-save-and-load-layout-save-load-layout-buttons-in-the-property-grid001.png)
 
 When you click on *Save, Settings to file* the Save Layout dialog appears: 
 
-![gridview-save-and-load-layout-save-load-layout-buttons-in-the-property-grid 002](images/gridview-save-and-load-layout-save-load-layout-buttons-in-the-property-grid002.png)
+![WinForms RadGridView gridview-save-and-load-layout-save-load-layout-buttons-in-the-property-grid 002](images/gridview-save-and-load-layout-save-load-layout-buttons-in-the-property-grid002.png)
 
 The label in the upper part of the dialog describes its function:
 

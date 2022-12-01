@@ -15,7 +15,7 @@ __RadTextBoxElement__ is created for the purpose of reusability, as it is not a
  
 >caption RadTextBox Elements Hierarchy
 
-![editors-textbox-control-element-structure 001](images/editors-textbox-control-element-structure001.png)
+![WinForms RadButtonTextBox RadTextBox Elements Hierarchy](images/editors-textbox-control-element-structure001.png)
 
 * __FillPrimitive__ and __BorderPrimitive__ set the overall background and border properties of the control.
             

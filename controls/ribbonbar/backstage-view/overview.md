@@ -29,7 +29,7 @@ RadRibbonBar1.ApplicationMenuStyle = Telerik.WinControls.UI.ApplicationMenuStyle
 
 {{endregion}} 
 
-![ribbonbar-backstage-view-overview 001](images/ribbonbar-backstage-view-overview001.png)
+![WinForms RadRibbonBar ribbonbar-backstage-view-overview 001](images/ribbonbar-backstage-view-overview001.png)
 
 ## See Also
 

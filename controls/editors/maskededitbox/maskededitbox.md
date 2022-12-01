@@ -20,13 +20,13 @@ __RadMaskedEditBox__ is a themeable text box that formats and constrains text t
 
 >caption Figure 1: RadMaskedEditBox Types
 
-![editors-maskededitbox-overview 001](images/editors-maskededitbox-overview001.png)
+![WinForms RadMaskedEditBox RadMaskedEditBox Types](images/editors-maskededitbox-overview001.png)
 
 The __MaskType__ property defines what type of mask would be used in the masked box:
 
 >caption Figure 2: MaskType Property
 
-![editors-maskededitbox-overview 002](images/editors-maskededitbox-overview002.png)
+![WinForms RadMaskedEditBox MaskType Property](images/editors-maskededitbox-overview002.png)
 
 * __None__
 
@@ -40,19 +40,19 @@ The __MaskType__ property defines what type of mask would be used in the masked 
 
 >caption Figure 3: Regex Mask
 
-![editors-maskededitbox-overview 003](images/editors-maskededitbox-overview003.png)
+![WinForms RadMaskedEditBox Regex Mask](images/editors-maskededitbox-overview003.png)
 
 * __IP__: Allows user to input only __3__ digits in __0-255__ range in __four__ groups.
 
 >caption Figure 4: IP Mask
 
-![editors-maskededitbox-overview 004](images/editors-maskededitbox-overview004.png)
+![WinForms RadMaskedEditBox IP Mask](images/editors-maskededitbox-overview004.png)
 
 * __Email__: Validate user input for the valid mail. If this email is not valid will notify user with validation icon:
 
 >caption Figure 5: Email Mask
 
-![editors-maskededitbox-overview 005](images/editors-maskededitbox-overview005.png)
+![WinForms RadMaskedEditBox Email Mask](images/editors-maskededitbox-overview005.png)
 
 
 >note The **RegexMaskTextBoxProvider**, **EMailMaskTextBoxProvider**, and **IPMaskTextBoxProvider** have an **ErrorMessage** property which can be set so that the displayed text with the message is localized.

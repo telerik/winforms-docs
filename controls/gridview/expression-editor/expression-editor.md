@@ -17,11 +17,11 @@ Expressions consist of functions, operators, constants, and identifiers (for exa
 
 Once shown, RadExpressionEditor automatically loads all available functions, operators and current grid’s fields (columns). In addition, every entered expression is parsed and evaluated. A preview of the result is shown (for the current row of the grid) and the confirmation button is enabled only if there is a valid expression. Please note that the preview is shown only if there is at least one row at run time.
 
-![gridview-expressioneditor-overview 001](images/gridview-expressioneditor-overview001.png)
+![WinForms RadGridView gridview-expressioneditor-overview 001](images/gridview-expressioneditor-overview001.png)
 
 ## Anatomy of RadExpressionEditor
 
-![gridview-expressioneditor-overview 002](images/gridview-expressioneditor-overview002.png)
+![WinForms RadGridView gridview-expressioneditor-overview 002](images/gridview-expressioneditor-overview002.png)
 
 1. __Expression Box:__ Type your expression here, or add expression elements by double-clicking or dragging items in the element lists below;
 

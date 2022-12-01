@@ -61,7 +61,7 @@ End Sub
 {{endregion}} 
 
 
-![editors-textboxcontrol-formatting-blocks 001](images/editors-textboxcontrol-formatting-blocks001.png)
+![WinForms RadTextBoxControl editors-textboxcontrol-formatting-blocks 001](images/editors-textboxcontrol-formatting-blocks001.png)
 
 >note Notice that the event occurs when the text blocks are repositioned. This happens in different cases: editing, control resizing and etc. Hence, you should subscribe to the event before initializing the __Text__ property.
 

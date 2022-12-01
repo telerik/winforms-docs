@@ -13,7 +13,7 @@ previous_url: gridview-hirarchical-grid-resizing-child-gridviewinfo
 
 RadGridView supports resizing child GridViewInfos at runtime by a mouse drag operation (only when __UseScrollbarsInHierarchy__ property is *true*). You should simply position your mouse pointer over the left part of the bottom line of the child GridViewInfo and then resize this GridViewInfo by a mouse drag operation:
 
-![gridview-hirarchical-grid-resizing-child-gridviewinfo 001](images/gridview-hirarchical-grid-resizing-child-gridviewinfo001.gif)
+![WinForms RadGridView gridview-hirarchical-grid-resizing-child-gridviewinfo 001](images/gridview-hirarchical-grid-resizing-child-gridviewinfo001.gif)
 
 ## Resizing a child GridViewInfo programmatically
 

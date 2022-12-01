@@ -13,7 +13,7 @@ previous_url: gridview-printing-support-printing-hierarchical-grid
 
 When bound to hierarchical data __RadGridView__ can print its contents preserving the original hierarchical structure. This article will explain in details what settings need to be configured and how they should be applied. For the purpose of this example we will generate our [hierarchy binding to the Northwind sample database]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%}). Here is how the resulting grid, looks when printed.
 
->caption Fig.1 Printing Hierarchical Grid<br>![gridview-printing-support-printing-hierarchical-grid 001](images/gridview-printing-support-printing-hierarchical-grid001.png)
+>caption Fig.1 Printing Hierarchical Grid<br>![WinForms RadGridView gridview-printing-support-printing-hierarchical-grid 001](images/gridview-printing-support-printing-hierarchical-grid001.png)
 
 #### Printing Settings
 

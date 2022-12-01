@@ -109,7 +109,7 @@ Me.RadChartView1.Series.Add(series)
 {{endregion}}
 
 >caption Figure 1: Average Indicator
-![chartview series types indicators 001](images/chartview-series-types-indicators001.png)
+![WinForms RadChartView Average Indicator](images/chartview-series-types-indicators001.png)
 
 ## Bollinger Bands Indicator
 
@@ -180,7 +180,7 @@ Me.RadChartView1.Series.Add(ohlcSeries)
 {{endregion}} 
 
 >caption Figure 2: Bollinger Indicator
-![](images/chartview-series-types-indicators002.png)
+![WinForms RadChartView Bollinger Indicator](images/chartview-series-types-indicators002.png)
 
 # See Also
 

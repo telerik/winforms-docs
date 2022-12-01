@@ -15,7 +15,7 @@ With RadPdfViewer, you can provide the end users the ability to show, fill and s
 The control renders each field according to its type and provides an easy way for the user to edit its value. **Figure 1** shows a document containing text, choice, radio button and check box fields.
 
 >caption Figure 1: Interactive form fields in RadPdfViewer
-![pdfviewer-interactive-forms001](images/pdfviewer-interactive-forms001.png)
+![WinForms RadPdfViewer Interactive form fields in RadPdfViewer](images/pdfviewer-interactive-forms001.png)
 
 
 >note In the versions between R1 and R3 2017, the content of the interactive forms is visualized read-only. The interactions with the form fields are supported since R3 2017. 

@@ -18,7 +18,7 @@ Select **RadPropertyGrid** and click the small arrow on the top right position i
 
 >caption Figure 1: Smart Tag
 
-![propertygrid-design-time 001](images/propertygrid-design-time001.png)
+![WinForms RadPropertyGrid Smart Tag](images/propertygrid-design-time001.png)
 
 * **Common Tasks**
 

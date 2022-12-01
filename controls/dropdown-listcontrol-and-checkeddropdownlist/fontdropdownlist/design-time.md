@@ -18,7 +18,7 @@ Select **RadFontDropDownList** and click the small arrow on the top right positi
 
 >caption Figure 1: Smart Tag
 
-![editors-fontdropdownlist-design-time 001](images/editors-fontdropdownlist-design-time001.png)
+![WinForms RadFontDropDownList Smart Tag](images/editors-fontdropdownlist-design-time001.png)
 
 * __New Theme Manager__: Adds a new __RadThemeManager__ component to the form.
             
@@ -27,7 +27,7 @@ Select **RadFontDropDownList** and click the small arrow on the top right positi
             
 >caption Figure 2: Element hierarchy editor
 
-![editors-fontdropdownlist-design-time 002](images/editors-fontdropdownlist-design-time002.png)
+![WinForms RadFontDropDownList Element hierarchy editor](images/editors-fontdropdownlist-design-time002.png)
 
 * __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the control's visual style at one time.
             

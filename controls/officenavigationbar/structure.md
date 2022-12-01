@@ -12,7 +12,7 @@ position: 1
 
 This article describes the inner structure and organization of the elements which build **RadOfficeNavigationBar**.
 
-![officenavigationbar-structure 001](images/officenavigationbar-structure001.png)
+![WinForms RadOfficeNavigationBar officenavigationbar-structure 001](images/officenavigationbar-structure001.png)
 
 * **RadOfficeNavigationBarElement** - the main element in **RadOfficeNavigationBar**.
 	* **OfficeNavigationBarItemContainer** - holds the items and their content area. 
@@ -24,7 +24,7 @@ This article describes the inner structure and organization of the elements whic
 
 # Elements Hierarchy
 
-![officenavigationbar-structure 002](images/officenavigationbar-structure002.png)
+![WinForms RadOfficeNavigationBar officenavigationbar-structure 002](images/officenavigationbar-structure002.png)
 
 # See Also
 

@@ -14,11 +14,11 @@ This article describes the inner structure and organization of the elements whic
         
 >caption Figure 1: RadForm's elements hierarchy
 
-![forms-and-dialogs-form-structure 001](images/forms-and-dialogs-form-structure001.png)
+![WinForms RadForm RadForm's elements hierarchy](images/forms-and-dialogs-form-structure001.png)
 
 >caption Figure 2: RadForm's structure
 
-![forms-and-dialogs-form-structure 002](images/forms-and-dialogs-form-structure002.png)
+![WinForms RadForm RadForm's structure](images/forms-and-dialogs-form-structure002.png)
 
  1. __RadFormElement__  
   1.1 __RadFormTitleBarElement__: represents the title bar.   

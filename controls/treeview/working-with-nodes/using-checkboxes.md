@@ -17,7 +17,7 @@ Enable the check boxes by setting the __CheckBoxes__ property to *true*. By defa
 
 Tri-state check boxes in addition to checked and unchecked states also have a "indeterminate" state. To enable this feature set the __TriStateMode__ property to *true*. The screen shot below shows that "Node1" is in __Indeterminate__ state to indicate that its children are not all checked.
 
-![treeview-working-with-nodes-using-checkboxes 001](images/treeview-working-with-nodes-using-checkboxes001.png)
+![WinForms RadTreeView treeview-working-with-nodes-using-checkboxes 001](images/treeview-working-with-nodes-using-checkboxes001.png)
 
 >note When __TriStateMode__ is set to true, the __CheckBoxes__ property is also set to true automatically.
 >
@@ -25,13 +25,13 @@ Tri-state check boxes in addition to checked and unchecked states also have a "i
 
 To programmatically set the state when __TriStateMode__ is true assign the __CheckState__ property one of the __ToggleState__ enumeration values.
 
-![treeview-working-with-nodes-using-checkboxes 002](images/treeview-working-with-nodes-using-checkboxes002.png)
+![WinForms RadTreeView treeview-working-with-nodes-using-checkboxes 002](images/treeview-working-with-nodes-using-checkboxes002.png)
 
 ## Option Tree Support
 
 __RadTreeView__ the supports option trees that allows radio buttons and check boxes to be mixed in order to form an arbitrary complex option tree. The only limitation is that all sibling nodes must have either check boxes or radio buttons. Check boxes and radio buttons can be mixed in a single __RadTreeNodeCollection__. The __RadTreeNode__ property that control the type of option element to be shown (check box or radio button) is __CheckType:__
 
-![treeview-working-with-nodes-using-checkboxes 003](images/treeview-working-with-nodes-using-checkboxes003.png)
+![WinForms RadTreeView treeview-working-with-nodes-using-checkboxes 003](images/treeview-working-with-nodes-using-checkboxes003.png)
 
 {{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=optionList}} 
 {{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=optionList}} 

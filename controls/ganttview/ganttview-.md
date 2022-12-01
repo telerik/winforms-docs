@@ -18,7 +18,7 @@ __RadGanttView__ is a data-visualization and editing control for project plannin
 {% include cta-panel-overview.html %}
 {% endif %}
         
-![ganttview-overview 001](images/ganttview-overview001.png)
+![WinForms RadGanttView ganttview-overview 001](images/ganttview-overview001.png)
 
 # See Also
 

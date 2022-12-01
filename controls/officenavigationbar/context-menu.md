@@ -12,7 +12,7 @@ position: 6
 
 The **OverflowItem** ("**...**") shows a **RadContextMenuDropDown** with the overflown items and the [NavigationOptionsMenuItem]({%slug officenavigationbar-options-dialog%})
 
-![officenavigationbar-context-menu 001](images/officenavigationbar-context-menu001.png)
+![WinForms RadOfficeNavigationBar officenavigationbar-context-menu 001](images/officenavigationbar-context-menu001.png)
 
 >important When the user clicks the **RadOfficeNavigationBarOverflowItem** ("**...**") to open the menu, the items in  the **RadContextMenuDropDown** are always rebuilt.
 
@@ -58,7 +58,7 @@ End Sub
 
 {{endregion}} 
 
-![officenavigationbar-context-menu 002](images/officenavigationbar-context-menu002.png)
+![WinForms RadOfficeNavigationBar officenavigationbar-context-menu 002](images/officenavigationbar-context-menu002.png)
 
 # See Also
 

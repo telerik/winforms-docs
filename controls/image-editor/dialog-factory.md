@@ -59,4 +59,4 @@ this.radImageEditor1.ImageEditorElement.DialogFactory = new CustomImageEditorDia
 Me.RadImageEditor1.ImageEditorElement.DialogFactory = New CustomImageEditorDialogFactory()
 
 ```` 
-![](images/dialog-factory001.png)
+![WinForms RadImage-Editor ](images/dialog-factory001.png)

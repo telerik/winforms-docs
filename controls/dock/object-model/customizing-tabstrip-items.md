@@ -94,7 +94,7 @@ End Sub
  
 The tabs will look like this:
 
-![dock-object-model-customizing-tabstrip-items 001](images/dock-object-model-customizing-tabstrip-items001.png)
+![WinForms RadDock dock-object-model-customizing-tabstrip-items 001](images/dock-object-model-customizing-tabstrip-items001.png)
 
 ## Replacing the entire TabStrip element.
 
@@ -199,7 +199,7 @@ End Sub
  
 The tabs will look like in the following image:
 
-![dock-object-model-customizing-tabstrip-items 002](images/dock-object-model-customizing-tabstrip-items002.png)
+![WinForms RadDock dock-object-model-customizing-tabstrip-items 002](images/dock-object-model-customizing-tabstrip-items002.png)
 
 ## DocumentTabStrip Multi Line Row Layout with a Custom Tab Shape
       
@@ -276,7 +276,7 @@ End Sub
 
 Here is the outcome of the code above:
 
-![dock-object-model-customizing-tabstrip-items 003](images/dock-object-model-customizing-tabstrip-items003.png)
+![WinForms RadDock dock-object-model-customizing-tabstrip-items 003](images/dock-object-model-customizing-tabstrip-items003.png)
 
 # See Also
 

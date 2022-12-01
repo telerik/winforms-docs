@@ -91,11 +91,11 @@ End Sub
 
 * If __LazyMode__ is *true*, here is the result that we will get. When the end-user tries expanding nodes that do not have any sub-nodes, the plus sign will turn into a minus sign, but nothing else would change:
 
-    ![treeview-data-binding-load-on-demand 002](images/treeview-data-binding-load-on-demand002.png)
+    ![WinForms RadTreeView treeview-data-binding-load-on-demand 002](images/treeview-data-binding-load-on-demand002.png)
 
 * When __LazyMode__ is *false* no plus/minus signs appear next to some of the nodes, because for these nodes RadTreeView already knows that there will be no sub-nodes:
 
-    ![treeview-data-binding-load-on-demand 001](images/treeview-data-binding-load-on-demand001.png)
+    ![WinForms RadTreeView treeview-data-binding-load-on-demand 001](images/treeview-data-binding-load-on-demand001.png)
 
 # See Also
 * [Binding to Database Data]({%slug winforms/treeview/data-binding/binding-to-database-data%})

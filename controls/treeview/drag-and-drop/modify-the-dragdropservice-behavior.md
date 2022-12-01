@@ -13,7 +13,7 @@ previous_url: treeview-drag-and-drop-modify-the-drag-drop-service-behavior
 
 This article demonstrates how to customize the __TreeViewDragDropService__ behavior and more precisely how to customize it to copy the nodes when dropped, instead of moving them.
 
-![treeview-drag-and-drop-modify-the-drag-drop-service-behavior 001](images/treeview-drag-and-drop-modify-the-drag-drop-service-behavior001.gif)
+![WinForms RadTreeView treeview-drag-and-drop-modify-the-drag-drop-service-behavior 001](images/treeview-drag-and-drop-modify-the-drag-drop-service-behavior001.gif)
 
 
 To achieve this scenario we will need to create a descendant of TreeViewDragDropService (lets call it CustomDragDropService) where we will expose the RadTreeViewElement as a field, so we can use it later. This field will be assigned in the CustomDragDropService class constructor. We will also need another field of type RadTreeNode which will hold the dragged node. The latter will be assigned in the __PerformStart__ and will be cleared in the __PerformStop__ method.

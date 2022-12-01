@@ -13,7 +13,7 @@ position: 5
 
 You can use the rotate buttons to directly rotate the image. No dialog is shown in this case.
 
-![](images/image-editor-flip001.png)
+![WinForms RadImage-Editor ](images/image-editor-flip001.png)
 
 # Flip Programmatically
 

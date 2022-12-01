@@ -19,11 +19,11 @@ As stated in [this documentation article]({%slug winforms/dock/loading-and-savin
 
 >caption Figure 1: Three UserControls containing different controls.
 
-![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 001](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content001.png)
+![WinForms RadDock Three UserControls containing different controls](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content001.png)
 
-![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 002](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content002.png)
+![WinForms RadDock dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 002](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content002.png)
 
-![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 003](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content003.png)
+![WinForms RadDock dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 003](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content003.png)
 
 
 2\. Then, let's define the path to the xml file where we will save our layout: 
@@ -97,11 +97,11 @@ End Sub
 
 Please note that the names of the types of the **UserControls** are important, because these names will actually give the names of the **HostWindows** that will be created to host the **UserControls**. The names of the **HostWindows** will be later used during the process of loading the content.
 
-![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 004](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content004.png)
+![WinForms RadDock dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 004](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content004.png)
 
 4\. Let's now arrange the dock window in a more user friendly way:
 
-![dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 005](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content005.png)
+![WinForms RadDock dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content 005](images/dock-loading-and-saving-layouts-tutorial-saving-and-loading-layout-content005.png)
 
 5\. Now close the form containing RadDock. The **FormClosing** event handler is a convenient place to save our layout: 
 
@@ -193,7 +193,7 @@ As a result we get the layout shown on the screenshot below:
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Saving and Loading RadDock for WinForms Layouts](http://www.telerik.com/videos/winforms/saving-and-loading-raddock-for-winforms-layouts) In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts. (Runtime: 07:03)|![dock-loading-and-saving-layouts 001](images/dock-loading-and-saving-layouts001.png)|
+|[WinForms RadDock Saving and Loading RadDock for WinForms Layouts](http://www.telerik.com/videos/winforms/saving-and-loading-raddock-for-winforms-layouts) In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts. (Runtime: 07:03)|![WinForms RadDock dock-loading-and-saving-layouts 001](images/dock-loading-and-saving-layouts001.png)|
 
 # See Also
 

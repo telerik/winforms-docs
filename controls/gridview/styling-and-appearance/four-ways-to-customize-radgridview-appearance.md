@@ -22,7 +22,7 @@ Just as all our WinForms controls, RadGridView supports our theming mechanism. Y
 
 *Edit UI Elements* can be started from the *smart tag* of the control. In particular for the RadGridView, it has a limited functionality so that row and cell properties __cannot__ be edited. Cells and Rows are formatted using the other 3 approaches. Note also that there are no similar kind of limitations in Edit UI Elements dialog for the rest of our controls. The reason for this is that RadGridView employs UI virtualization and certain elements, for instance, cells are reused.
 
-![gridview-styling-and-appearance-four-ways-to-customize-radgridview-appearance 001](images/gridview-styling-and-appearance-four-ways-to-customize-radgridview-appearance001.png)
+![WinForms RadGridView gridview-styling-and-appearance-four-ways-to-customize-radgridview-appearance 001](images/gridview-styling-and-appearance-four-ways-to-customize-radgridview-appearance001.png)
 
 Therefore, you can edit properties of other elements like *GridTableElement* and *GridTableBodyElement*. Actually these elements contain some properties that control behavior and appearance of grid cells and rows, like GridTableElement.RowHeight, RowSpacing and so on.
         

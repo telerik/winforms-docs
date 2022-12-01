@@ -37,7 +37,7 @@ When these settings are applied, you have several options to make a multiple sel
 * Hold the __Ctrl__ key and click the rows that you want to select.
 * In order to mark a block selection, mark the first row of the desired selection, hold __Shift__ and click on the last row of the desired selection.
 
-![virtualgrid-multi-selection001](images/virtualgrid-multi-selection001.png)
+![WinForms RadVirtualGrid virtualgrid-multi-selection001](images/virtualgrid-multi-selection001.png)
 
 
 ## Multiple Cell Selection
@@ -66,7 +66,7 @@ Once you have applied these setting, the options for selection are:
 * Holding the __Ctrl__ key and click the cells that you want to select.
 * In order to mark a block selection, mark the first cell of the desired selection, hold __Shift__ and click on the last cell of the desired selection. Please note that this will select all the cells in the rectangle between the first and the second selected cell.
 
-![virtualgrid-multi-selection002](images/virtualgrid-multi-selection002.png)
+![WinForms RadVirtualGrid virtualgrid-multi-selection002](images/virtualgrid-multi-selection002.png)
 
 # See Also
 * [Selecting Cells Programmatically]({%slug winforms/virtualgrid/selection/selecting-cells-programmatically%})

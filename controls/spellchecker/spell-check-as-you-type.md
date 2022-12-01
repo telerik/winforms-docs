@@ -15,7 +15,7 @@ This article demonstrates the spell check as you type functionality currently av
 
 As the user types in one of the supported controls a red underline indicates the spelling mistakes and right-clicking on the error shows a context menu with spelling suggestions.
 
-![spellchecker-spell-check-as-you-type 001](images/spellchecker-spell-check-as-you-type001.png)
+![WinForms RadSpellChecker spellchecker-spell-check-as-you-type 001](images/spellchecker-spell-check-as-you-type001.png)
 
 >important Supported controls are: __RadTextBox__ , __RadTextBoxControl__. **RichTextBox** and __TextBox__. 
 
@@ -41,7 +41,7 @@ Me.RadSpellChecker3.AutoSpellCheckControl = Me.RadTextBoxControl1
 
 This property can also be set at design time:
 
-![spellchecker-spell-check-as-you-type 002](images/spellchecker-spell-check-as-you-type002.png)
+![WinForms RadSpellChecker spellchecker-spell-check-as-you-type 002](images/spellchecker-spell-check-as-you-type002.png)
 
 >important If you set this property to *null* you will turn off the spell check as you type functionality. Also every __RadSpellChecker__ can be used with only one of the supported controls. For example, if you have five text boxes you will need five __RadSpellChecker__ instances for them.
 

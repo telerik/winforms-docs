@@ -46,11 +46,11 @@ The __Visual Properties__ section of the page controls properties for the axis a
 * Click the __Bind Axis Labels to Database__ link to navigate back to the [Data tab]({%slug winforms/chart/understanding-radchart-ui/the-wizard-data-tab%}).
 >caption 
 
-![chart-understanding-radchart-ui-the-wizard-axis-tab 001](images/chart-understanding-radchart-ui-the-wizard-axis-tab001.png)
+![WinForms RadChart ](images/chart-understanding-radchart-ui-the-wizard-axis-tab001.png)
 
 
 
 The settings in the Axis Tab shown above result in the following X Axis labeling example: 
 >caption 
 
-![chart-understanding-radchart-ui-the-wizard-axis-tab 002](images/chart-understanding-radchart-ui-the-wizard-axis-tab002.png)
+![WinForms RadChart chart-understanding-radchart-ui-the-wizard-axis-tab 002](images/chart-understanding-radchart-ui-the-wizard-axis-tab002.png)

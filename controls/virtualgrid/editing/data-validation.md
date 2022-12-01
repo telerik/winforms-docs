@@ -27,7 +27,7 @@ The code snippet below demonstrates simple data validation scenario. It is enabl
 
 >caption Figure 1: Cell validation
 
-![virtualgrid-editing-data-validation001](images/virtualgrid-editing-data-validation001.png)
+![WinForms RadVirtualGrid Cell validation](images/virtualgrid-editing-data-validation001.png)
 
 
 {{source=..\SamplesCS\VirtualGrid\Editing\EditorsProperties.cs region=CellValidating}} 

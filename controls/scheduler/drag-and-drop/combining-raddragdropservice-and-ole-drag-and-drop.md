@@ -179,7 +179,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 1: Using RadDragDropService
-![scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop 001](images/scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop001.gif)
+![WinForms RadScheduler Using RadDragDropService](images/scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop001.gif)
 
 >note As we remove the dragged appointment,it is necessary to save the performed changes in the data source.Please refer to [Data Binding Walkthrough]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}) article.
 >
@@ -470,7 +470,7 @@ End Class
 {{endregion}} 
 
 >caption Figure 2: OLE Drag and Drop
-![scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop 002](images/scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop002.gif)
+![WinForms RadScheduler OLE Drag and Drop](images/scheduler-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop002.gif)
 
 # See Also
 

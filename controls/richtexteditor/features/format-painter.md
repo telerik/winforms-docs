@@ -20,7 +20,7 @@ The Format Painter feature in **RadRichTextEditor** enables you to copy the form
 The Format Painter functionality can be used through the button inside the Home tab of [Ribbon UI]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}).
 
 >caption Figure 1: Format Painter
-![richtexteditorfeatures-format-painter 001](images/richtexteditorfeatures-format-painter001.png)
+![WinForms RadRichTextEditor Format Painter](images/richtexteditorfeatures-format-painter001.png)
 
 
 The following commands related to the copying of formatting are available in the **Commands** property of **RadRichTextEditor**:

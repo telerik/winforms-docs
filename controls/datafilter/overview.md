@@ -17,7 +17,7 @@ Building complex filter expressions is a breeze with __RadDataFilter__. The cont
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![data-filter-overview 001](images/data-filter-overview001.png)
+![WinForms RadDataFilter data-filter-overview 001](images/data-filter-overview001.png)
 
 ### Key features:
 

@@ -70,7 +70,7 @@ Me.RadRating1.ShowItemToolTips = False
 
 |ShowItemToolTips=false|ShowItemToolTips=true|
 |----|----|
-|![rating-properties-and-events 001](images/rating-properties-and-events001.png)|![rating-properties-and-events 002](images/rating-properties-and-events002.png)|
+|![WinForms RadRating rating-properties-and-events 001](images/rating-properties-and-events001.png)|![WinForms RadRating rating-properties-and-events 002](images/rating-properties-and-events002.png)|
 
 
 * **RightToLeft** - __RadRating__ supports **RightToLeft** functionality. It is disabled by default, so you should enable it:
@@ -92,7 +92,7 @@ Me.RadRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 |RightToLeft=false|RightToLeft=true|
 |----|----|
-|![rating-properties-and-events 003](images/rating-properties-and-events003.png)|![rating-properties-and-events 011](images/rating-properties-and-events011.png)|
+|![WinForms RadRating rating-properties-and-events 003](images/rating-properties-and-events003.png)|![WinForms RadRating rating-properties-and-events 011](images/rating-properties-and-events011.png)|
 
 * *Direction* property can be used to control the hover direction.
 
@@ -113,7 +113,7 @@ Me.RadRating1.Direction = RatingDirection.Reversed
 
 |Direction=Standard|Direction=Reversed|
 |----|----|
-|![rating-properties-and-events 004](images/rating-properties-and-events004.gif)|![rating-properties-and-events 005](images/rating-properties-and-events005.gif)|
+|![WinForms RadRating rating-properties-and-events 004](images/rating-properties-and-events004.gif)|![WinForms RadRating rating-properties-and-events 005](images/rating-properties-and-events005.gif)|
 
 * **Orientation** - the default __RadRating__ orientation is *Horizontal*. It is allowed to change it to Vertical:
 
@@ -136,7 +136,7 @@ Me.RadRating1.AutoSize = True
 
 |Orientation=Horizontal|Orientation=Vertical|
 |----|----|
-|![rating-properties-and-events 005](images/rating-properties-and-events005.png)|![rating-properties-and-events 012](images/rating-properties-and-events012.png)|
+|![WinForms RadRating rating-properties-and-events 005](images/rating-properties-and-events005.png)|![WinForms RadRating rating-properties-and-events 012](images/rating-properties-and-events012.png)|
 
 * **Caption, Subcaption and Description** – specify texts for the captions of __RadRating__:
 
@@ -160,7 +160,7 @@ Me.RadRating1.Subcaption = "SubCaption"
 {{endregion}} 
 
 
-![rating-properties-and-events 013](images/rating-properties-and-events013.png)
+![WinForms RadRating rating-properties-and-events 013](images/rating-properties-and-events013.png)
 
 * **SelectionMode** - determines how precisely the user will select the value:
 
@@ -215,7 +215,7 @@ Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.FullIte
 
 |SelectionMode=FullItem|SelectionMode=HalfItem|SelectionMode=Precise|
 |----|----|----|
-|![rating-properties-and-events 006](images/rating-properties-and-events006.gif)|![rating-properties-and-events 014](images/rating-properties-and-events014.gif)|![rating-properties-and-events 015](images/rating-properties-and-events015.gif)|
+|![WinForms RadRating rating-properties-and-events 006](images/rating-properties-and-events006.gif)|![WinForms RadRating rating-properties-and-events 014](images/rating-properties-and-events014.gif)|![WinForms RadRating rating-properties-and-events 015](images/rating-properties-and-events015.gif)|
 
 * **Minimum** and **Maximum** – specifies the range of __RadRating__:
 
@@ -238,7 +238,7 @@ Me.RadRating1.Maximum = 40
 
 {{endregion}} 
 
-![rating-properties-and-events 009](images/rating-properties-and-events009.png)![rating-properties-and-events 010](images/rating-properties-and-events010.png)
+![WinForms RadRating rating-properties-and-events 009](images/rating-properties-and-events009.png)![WinForms RadRating rating-properties-and-events 010](images/rating-properties-and-events010.png)
 
 * **Value** - sets or gets the value of the __RadRating__:
 

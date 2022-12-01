@@ -19,7 +19,7 @@ All context menu related operations are handled by a stand alone service, regist
  
 The following example demonstrates how you can hide the **Close** options from the **DocumentWindow** context menu. By default, the menu looks like this:
 
-![dock-architecture-and-features-using-the-contextmenuservice 001](images/dock-architecture-and-features-using-the-contextmenuservice001.png)
+![WinForms RadDock dock-architecture-and-features-using-the-contextmenuservice 001](images/dock-architecture-and-features-using-the-contextmenuservice001.png)
 
  
 Let's get the **ContextMenuService** and subscribe to its **ContextMenuDisplaying** event:
@@ -96,7 +96,7 @@ End Sub
  
 The result is shown on the screenshot below:
 
-![dock-architecture-and-features-using-the-contextmenuservice 002](images/dock-architecture-and-features-using-the-contextmenuservice002.png)
+![WinForms RadDock dock-architecture-and-features-using-the-contextmenuservice 002](images/dock-architecture-and-features-using-the-contextmenuservice002.png)
  
 ## Menu items' names 
 

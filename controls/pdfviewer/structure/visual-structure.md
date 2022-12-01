@@ -19,11 +19,11 @@ __RadPdfViewer__ has the following element structure:
 
 >caption Figure 1: RadPdfViewer`s Element Hierarchy
 
-![pdfviewer structure 001](images/pdfviewer-structure001.png)
+![WinForms RadPdfViewer RadPdfViewer`s Element Hierarchy](images/pdfviewer-structure001.png)
 
 >caption Figure 2: RadPdfViewer`s Structure
 
-![pdfviewer structure 002](images/pdfviewer-structure002.png)
+![WinForms RadPdfViewer RadPdfViewer`s Structure](images/pdfviewer-structure002.png)
 
 1. __RadPdfViewerContainer__: Container element.
 

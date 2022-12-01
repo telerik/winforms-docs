@@ -43,7 +43,7 @@ position: 8
 
 Since R1 2017 **RadTextBoxControl** can show a clear button when there is some text in the editor. This is controlled by the **ShowClearButton** property.
 
-![editors-textboxcontrol-properties 001](images/editors-textboxcontrol-properties001.gif)
+![WinForms RadTextBoxControl editors-textboxcontrol-properties 001](images/editors-textboxcontrol-properties001.gif)
 
 ## NullText
 
@@ -73,7 +73,7 @@ Me.RadTextBoxControl1.EmbeddedLabelText = "First Name"
 
 {{endregion}} 
 
-![editors-textboxcontrol-properties 002](images/editors-textboxcontrol-properties-embedded-labels.gif)
+![WinForms RadTextBoxControl editors-textboxcontrol-properties 002](images/editors-textboxcontrol-properties-embedded-labels.gif)
 
 >note In order the embedded label to be shown correctly it is neccessary to autosize the **RadTextBoxControl** by setting **AutoSize=true** or set an appropriate height.
 

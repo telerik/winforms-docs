@@ -42,7 +42,7 @@ The specified folders will then appear in the dialogs navigation pane.
 
 >caption Custom directories shown in the navigation pane
 
-![file-dialogs-custom-places 001](images/file-dialogs-custom-places001.png)
+![WinForms RadFile-Dialogs Custom directories shown in the navigation pane](images/file-dialogs-custom-places001.png)
 
 # See Also
 

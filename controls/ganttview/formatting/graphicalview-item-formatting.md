@@ -44,7 +44,7 @@ End Sub
 {{endregion}} 
 
 
-![ganttview-formatting-graphicalviewitem-formatting 001](images/ganttview-formatting-graphicalviewitem-formatting001.png)
+![WinForms RadGanttView ganttview-formatting-graphicalviewitem-formatting 001](images/ganttview-formatting-graphicalviewitem-formatting001.png)
 
 # See Also
 

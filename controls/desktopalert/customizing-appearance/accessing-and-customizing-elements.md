@@ -16,7 +16,7 @@ The following code example demonstrates how to customize the nested elements at 
 
 >caption Figure 1: Customize elements
 
-![desktopalert-accessing-and-customizing-elements 001](images/desktopalert-accessing-and-customizing-elements001.png)
+![WinForms RadDesktopAlert Customize elements](images/desktopalert-accessing-and-customizing-elements001.png)
 
 #### Customize elements 
 

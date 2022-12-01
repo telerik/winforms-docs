@@ -18,7 +18,7 @@ You can access and modify the style for different elements in **RadDomainUpDown*
 
 >caption Fig.1 Element hierarchy editor
 
-![domainupdown-accessing-and-customizing-elements 001](images/domainupdown-accessing-and-customizing-elements001.png)
+![WinForms RadDomainUpDown Element hierarchy editor](images/domainupdown-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
@@ -26,7 +26,7 @@ You can customize the nested elements at run time as well:
 
 >caption Fig.2 Customize elements
 
-![domainupdown-accessing-and-customizing-elements 002](images/domainupdown-accessing-and-customizing-elements002.png)
+![WinForms RadDomainUpDown Customize elements](images/domainupdown-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

@@ -26,7 +26,7 @@ Telerik __RadDiagram__ are powerful diagramming framework that can bring to life
 
 This tutorial will walk you through the main concepts and tools of __RadDiagram__ while helping you to create the flow diagram of an "if-else" operator.
 
-![diagram-getting-started 001](images/diagram-getting-started001.png)
+![WinForms RadDiagram diagram-getting-started 001](images/diagram-getting-started001.png)
 
 ## Graph Object Model
 
@@ -45,9 +45,9 @@ The graph object model is the main concept behind the diagramming framework. It 
  
 In order to populate __RadDiagram__ with __RadDiagramItems__ you can add __RadDiagramShapes__ and __RadDiagramConnections__ by using the Property Builder.
 
-![diagram-getting-started 002](images/diagram-getting-started002.png)
+![WinForms RadDiagram diagram-getting-started 002](images/diagram-getting-started002.png)
 
-![diagram-getting-started 003](images/diagram-getting-started003.png)
+![WinForms RadDiagram diagram-getting-started 003](images/diagram-getting-started003.png)
 
 The Property Builder allows you to drag a shapes from the [RadDiagramToolbox]({%slug winforms/diagram/toolbox%}) and drop it onto the __RadDiagram__ surface. Afterwards, you can connect several shapes by using the connectors. The [RadDiagramRibbonBar]({%slug winforms/diagram/ribbonui%}) gives you a set of options to customize the diagram and save the changes as well.
       
@@ -56,7 +56,7 @@ In order to create a diagram describing the flow of an "if-else" operator, you w
 
 >note The __RadDiagramShape__ exposes an __ElementShape__ property that allows you to create a custom geometry or use predefined shape geometry.
  
-![diagram-getting-started 004](images/diagram-getting-started004.png)
+![WinForms RadDiagram diagram-getting-started 004](images/diagram-getting-started004.png)
 
 Finally, you can connect all shapes using __RadDiagramConnections__.
 

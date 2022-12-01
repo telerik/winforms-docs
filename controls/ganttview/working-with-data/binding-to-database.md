@@ -20,7 +20,7 @@ __RadGanttView__ supports binding to Database data. Levels are created using the
 
 1. In the __Choose a Data Source Type__ page select the __Database__ icon, then click the __Next__ button.
             
-	![ganttview-working-with-data-binding-to-database 001](images/ganttview-working-with-data-binding-to-database001.png)
+	![WinForms RadGanttView ganttview-working-with-data-binding-to-database 001](images/ganttview-working-with-data-binding-to-database001.png)
 
 1. In the __Choose Your Data Connection__ page of the wizard click the __New Connection__ button.
             
@@ -30,22 +30,22 @@ __RadGanttView__ supports binding to Database data. Levels are created using the
     >note You can download the mdb file from here: [WeddingPlanner.mdb](http://www.telerik.com/docs/default-source/ui-for-winforms/weddingplanner.zip?sfvrsn=2)
     
 
-	![ganttview-working-with-data-binding-to-database 002](images/ganttview-working-with-data-binding-to-database002.png)
+	![WinForms RadGanttView ganttview-working-with-data-binding-to-database 002](images/ganttview-working-with-data-binding-to-database002.png)
 
 1. In the `Choose Your Database Objects` page of the wizard check the "Tasks" and "Links" tables checkboxes. Click __Finish__.
             
-	![ganttview-working-with-data-binding-to-database 003](images/ganttview-working-with-data-binding-to-database003.png)
+	![WinForms RadGanttView ganttview-working-with-data-binding-to-database 003](images/ganttview-working-with-data-binding-to-database003.png)
 
 1. Set the __DataSource__ property first to _Tasks_, then to _Links_ datatable. This will create the necessary data-binding components in the component tray - a `DataSet`, `BindingSources` and `TableAdapters`. The `DataSet` is the container for the data, the `TableAdapters` are used to fill the `DataSet`.
             
 
 1. In the Smart Tag or in the properties window set the member properties in the following way.
             
-	![ganttview-working-with-data-binding-to-database 004](images/ganttview-working-with-data-binding-to-database004.png)
+	![WinForms RadGanttView ganttview-working-with-data-binding-to-database 004](images/ganttview-working-with-data-binding-to-database004.png)
 
 1. Once the binding is completed, you can open the _Edit Columns_ option from the Smart Tag, where you can add three columns. Make sure to set their FieldName's to the respective fields - Title, Start and End.
 
-	![ganttview-working-with-data-binding-to-database 004](images/ganttview-working-with-data-binding-to-database005.png)
+	![WinForms RadGanttView ganttview-working-with-data-binding-to-database 004](images/ganttview-working-with-data-binding-to-database005.png)
 
 1. Finally add this code to the form load event handler to specify the timeline range:
             
@@ -65,7 +65,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineEnd = New DateTim
 
 {{endregion}} 
 
-![ganttview-working-with-data-binding-to-database 005](images/ganttview-working-with-data-binding-to-database006.png)
+![WinForms RadGanttView ganttview-working-with-data-binding-to-database 005](images/ganttview-working-with-data-binding-to-database006.png)
 
 # See Also  
 

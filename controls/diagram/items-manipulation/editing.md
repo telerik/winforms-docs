@@ -19,7 +19,7 @@ By default, the __RadDiagramItems__ are enabled for editing. In order to disable
 
 >caption Fig1. IsEditable
 
-![diagram-items-manipulation-editing 001](images/diagram-items-manipulation-editing001.png) 
+![WinForms RadDiagram Fig IsEditable](images/diagram-items-manipulation-editing001.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=IsEditable}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=IsEditable}} 
@@ -91,7 +91,7 @@ __RadDiagram__ provides three predefined commands for editing the selected item 
 
 >caption Fig2. Editing by commands
 
-![diagram-items-manipulation-editing 002](images/diagram-items-manipulation-editing002.gif) 
+![WinForms RadDiagram Fig Editing by commands](images/diagram-items-manipulation-editing002.gif) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EditCommands}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EditCommands}} 

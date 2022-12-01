@@ -20,7 +20,7 @@ Here is how the control's Smart Tag looks like:
 
 >caption Figure 1: Smart Tag
 
-![chartview-design-time 001](images/chartview-design-time001.png)
+![WinForms RadChartView Smart Tag](images/chartview-design-time001.png)
 
 * __Common Tasks__
 

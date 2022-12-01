@@ -89,7 +89,7 @@ End Class
 
 >caption Figure 1: Calculated Field in RadPivotFieldList
 
-![pivotgrid-calculated-fields 001](images/pivotgrid-calculated-fields001.png)
+![WinForms RadPivotGrid Calculated Field in RadPivotFieldList](images/pivotgrid-calculated-fields001.png)
 
 Now it is time to add a new instance of this class to the **CalculatedFields** collection of **LocalDataSourceProvider**:
 
@@ -123,7 +123,7 @@ End Using
 
 >caption Figure 2: Calculated Field in RadPivotGrid
 
-![pivotgrid-calculated-fields 002](images/pivotgrid-calculated-fields002.png)
+![WinForms RadPivotGrid Calculated Field in RadPivotGrid](images/pivotgrid-calculated-fields002.png)
 
 
 # See Also

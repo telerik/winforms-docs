@@ -51,7 +51,7 @@ RadGridView1.Rows(2).IsCurrent = True
 
 Both ways to select a single row result in adding this row into the RadGridView.__SelectedRows__ collection.
 
-![gridview-selection-selecting-rows-and-cells-programmatically 001](images/gridview-selection-selecting-rows-and-cells-programmatically001.png)
+![WinForms RadGridView gridview-selection-selecting-rows-and-cells-programmatically 001](images/gridview-selection-selecting-rows-and-cells-programmatically001.png)
 
 ## Selecting multiple rows
 
@@ -84,7 +84,7 @@ RadGridView1.Rows(9).IsSelected = True
 {{endregion}} 
 
 
-![gridview-selection-selecting-rows-and-cells-programmatically 002](images/gridview-selection-selecting-rows-and-cells-programmatically002.png)
+![WinForms RadGridView gridview-selection-selecting-rows-and-cells-programmatically 002](images/gridview-selection-selecting-rows-and-cells-programmatically002.png)
 
 In this scenario all, four rows are added to the __SelectedRows__ collection of **RadGridView**. You can access the instances of the selected rows in the __SelectedRows__ collection by their index:
 
@@ -132,7 +132,7 @@ RadGridView1.Rows(1).Cells(3).IsSelected = True
 
 Selecting a single cell will result in adding this cell into the RadGridView.**SelectedCells** collection.
 
-![gridview-selection-selecting-rows-and-cells-programmatically 003](images/gridview-selection-selecting-rows-and-cells-programmatically003.png)
+![WinForms RadGridView gridview-selection-selecting-rows-and-cells-programmatically 003](images/gridview-selection-selecting-rows-and-cells-programmatically003.png)
 
 ## Selecting multiple cells
 
@@ -162,7 +162,7 @@ RadGridView1.Rows(6).Cells(3).IsSelected = True
 
 {{endregion}} 
 
-![gridview-selection-selecting-rows-and-cells-programmatically 004](images/gridview-selection-selecting-rows-and-cells-programmatically004.png)
+![WinForms RadGridView gridview-selection-selecting-rows-and-cells-programmatically 004](images/gridview-selection-selecting-rows-and-cells-programmatically004.png)
 
 In this scenario, all four cells are added to the __SelectedCells__ collection of **RadGridView**. You can access the instances of the selected cells in the __SelectedCells__ collection by their index:
 

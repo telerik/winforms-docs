@@ -13,7 +13,7 @@ previous_url: gridview-exporting-data-export-to-html
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Exporting to HTML with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/exporting-to-html-with-radgridview-for-winforms)<br>In this video, you will learn how to export RadGridView to the HTML file format.|![gridview-exporting-data-export-to-html 001](images/gridview-exporting-data-export-to-html001.png)|
+|[WinForms RadGridView Exporting to HTML with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/exporting-to-html-with-radgridview-for-winforms)<br>In this video, you will learn how to export RadGridView to the HTML file format.|![WinForms RadGridView gridview-exporting-data-export-to-html 001](images/gridview-exporting-data-export-to-html001.png)|
 
 ## Overview
 

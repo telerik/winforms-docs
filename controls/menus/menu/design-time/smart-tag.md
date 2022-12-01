@@ -15,7 +15,7 @@ The *Smart Tag* for **RadMenu** lets you quickly access common tasks involved wi
 
 >caption Figure 1: RadMenu's Smart Tag
 
-![menus-menu-design-time-smart-tag 001](images/menus-menu-design-time-smart-tag001.png)
+![WinForms RadMenus RadMenu's Smart Tag](images/menus-menu-design-time-smart-tag001.png)
 
 * __New Theme Manager__: Adds a new __RadThemeManager__ component to the form.
 
@@ -25,7 +25,7 @@ The *Smart Tag* for **RadMenu** lets you quickly access common tasks involved wi
 
 * __Edit Items__: Opens the *RadItem Collection Editor* 
 
-![menus-menu-design-time-smart-tag 003](images/menus-menu-design-time-smart-tag003.png)
+![WinForms RadMenus menus-menu-design-time-smart-tag 003](images/menus-menu-design-time-smart-tag003.png)
 
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 
@@ -33,7 +33,7 @@ The *Smart Tag* for **RadMenu** lets you quickly access common tasks involved wi
 
 Each individual __RadMenuItem__ within the **RadMenu** also has a *Smart Tag*. Use this *Smart Tag* to quickly toggle the __AutoSize__ property, set the __Text__ property, set the **Image** property and to display the __Element Hierarchy Editor__ for the selected **RadMenuItem*8.
 
-![menus-menu-design-time-smart-tag 002](images/menus-menu-design-time-smart-tag002.png)
+![WinForms RadMenus menus-menu-design-time-smart-tag 002](images/menus-menu-design-time-smart-tag002.png)
 
 # See Also
 

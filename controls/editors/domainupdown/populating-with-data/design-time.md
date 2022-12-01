@@ -14,13 +14,13 @@ This article demonstrates how to populate **RadDomainUpDown** with data at desig
 
 >caption Figure 1: RadListDataItem Collection Editor
 
-![domainupdown-populating-with-data-design-time 001](images/domainupdown-populating-with-data-design-time001.png)
+![WinForms RadDomainUpDown RadListDataItem Collection Editor](images/domainupdown-populating-with-data-design-time001.png)
 
 Another possibility to open the editor is via the **Items** collection in the *Properties* Visual Studio section:
 
 >caption Figure 2:  Visual Studio Properties window
 
-![domainupdown-populating-with-data-design-time 002](images/domainupdown-populating-with-data-design-time002.png)
+![WinForms RadDomainUpDown Visual Studio Properties window](images/domainupdown-populating-with-data-design-time002.png)
 
 Both ways you can add a **RadListDataItem**  which represents a logical data item which can display specific text and image.
 

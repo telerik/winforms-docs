@@ -43,11 +43,11 @@ End If
 
 >caption Figure 1: Before setting the value.
 
-![gridview-cells-accessing-cells 001](images/gridview-cells-accessing-cells001.png)
+![WinForms RadGridView Before setting the value](images/gridview-cells-accessing-cells001.png)
 
 >caption Figure 2: After the value is set.
 
-![gridview-cells-accessing-cells 002](images/gridview-cells-accessing-cells002.png)
+![WinForms RadGridView After the value is set](images/gridview-cells-accessing-cells002.png)
 
 ## Accessing cells by index
 
@@ -103,7 +103,7 @@ Me.RadGridView1.TableElement.EndUpdate()
 
 >caption Figure 3: Setting multiple values.
 
-![gridview-cells-accessing-cells 003](images/gridview-cells-accessing-cells003.png)
+![WinForms RadGridView Setting multiple values](images/gridview-cells-accessing-cells003.png)
 
 # See Also
 * [Accessing and Setting the CurrentCell]({%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%})

@@ -15,13 +15,13 @@ The control allows building the drop down layout at design time. For the purpose
       
 >caption Figure 1: Sample layout built at design time.
 
-![editors-popupeditor-design-time 002](images/editors-popupeditor-design-time002.png)
+![WinForms RadPopupEditor Sample layout built at design time](images/editors-popupeditor-design-time002.png)
 
 # Smart Tag
 
 >caption Figure 2: RadPopupEditor smart tag.
 
-![editors-popupeditor-design-time 001](images/editors-popupeditor-design-time001.png)
+![WinForms RadPopupEditor RadPopupEditor smart tag](images/editors-popupeditor-design-time001.png)
 
 * __Common Tasks__
     - __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.

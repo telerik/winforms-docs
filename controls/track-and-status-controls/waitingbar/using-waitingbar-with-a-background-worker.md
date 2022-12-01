@@ -21,7 +21,7 @@ The aim of the sample application is to calculate numbers of the Fibonacci seque
 
 >caption Fig.1 Fibonacci example
 
-![track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker 001](images/track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker001.png)
+![WinForms RadWaitingBar Fibonacci example](images/track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker001.png)
 
 1\. When the form is loaded the BackgroundWorker instance should be initialized. Additionally, you should subscribe to two of its events: __DoWork__ and __RunWorkerCompleted__.
 
@@ -90,7 +90,7 @@ End Sub
 
 >caption Fig.2 Calculation in progress
 
-![track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker 002](images/track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker002.gif)
+![WinForms RadWaitingBar Calculation in progress](images/track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker002.gif)
 
 3\. In the __DoWork__ event handler you should execute the time-consuming operation, i.e. calculate the required Fibonacci number.
 
@@ -201,4 +201,4 @@ End Sub
 
 >caption Fig.3 Result
 
-![track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker 003](images/track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker003.png)
+![WinForms RadWaitingBar Result](images/track-and-status-controls-waitingbar-using-radwaitingbar-with-a-background-worker003.png)

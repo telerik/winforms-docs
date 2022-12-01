@@ -23,7 +23,7 @@ Sorting in __RadListControl__ is controlled by the __SortStyle__ property. The a
             
 >caption Figure 1: SortStyle.Descending
 
-![dropdown-and-listcontrol-listcontrol-sorting 001](images/dropdown-and-listcontrol-listcontrol-sorting001.png)
+![WinForms RadListControl SortStyleDescending](images/dropdown-and-listcontrol-listcontrol-sorting001.png)
 
 #### Setting Sorting 
 

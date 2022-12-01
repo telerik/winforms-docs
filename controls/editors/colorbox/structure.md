@@ -14,7 +14,7 @@ The bellow image shows the structure of __RadColorBox__.
 
 >caption Figure 1: RadColorBox Elements.
 
-![colorbox-structure 001](images/colorbox-structure001.png)
+![WinForms RadColorBox RadColorBox Elements](images/colorbox-structure001.png)
 
 * __ColorPickerColorBox:__ This element shows the currently selected color.
 * __RadTextBoxItem:__ This element displays the color name or the color code in RGB or HEX format. 
@@ -25,7 +25,7 @@ The bellow image shows the structure of __RadColorBox__.
 
 >caption Figure 2: The RadColorBox elements hierarchy.
 
-![colorbox-structure 001](images/colorbox-structure002.png)
+![WinForms RadColorBox The RadColorBox elements hierarchy](images/colorbox-structure002.png)
 
 # See Also
  

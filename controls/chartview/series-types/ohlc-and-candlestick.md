@@ -18,7 +18,7 @@ __Ohlc__ and __Candlestick__ series are indeed two alternative ways to visualize
 
 |  __Ohlc__  |  __Candlestick__  |
 | ------ | ------ |
-|![chartview-series-types-ohlc-and-candlestick 001](images/chartview-series-types-ohlc-and-candlestick001.png)|![chartview-series-types-ohlc-and-candlestick 002](images/chartview-series-types-ohlc-and-candlestick002.png)|
+|![WinForms RadChartView chartview-series-types-ohlc-and-candlestick 001](images/chartview-series-types-ohlc-and-candlestick001.png)|![WinForms RadChartView chartview-series-types-ohlc-and-candlestick 002](images/chartview-series-types-ohlc-and-candlestick002.png)|
 
 Here is how to setup Ohlc series: 
 
@@ -49,7 +49,7 @@ Me.RadChartView1.Series.Add(ohlcSeries)
 {{endregion}} 
 
 >caption Figure 1: Initial Setup OhlcSeries
-![chartview-series-types-ohlc-and-candlestick 003](images/chartview-series-types-ohlc-and-candlestick003.png)
+![WinForms RadChartView Initial Setup OhlcSeries](images/chartview-series-types-ohlc-and-candlestick003.png)
 
 Here is how to setup Candlestick series:
 
@@ -80,7 +80,7 @@ Me.RadChartView1.Series.Add(candlestickSeries)
 {{endregion}} 
 
 >caption Figure 2: Initial Setup CandlestickSeries
-![chartview-series-types-ohlc-and-candlestick 004](images/chartview-series-types-ohlc-and-candlestick004.png)
+![WinForms RadChartView Initial Setup CandlestickSeries](images/chartview-series-types-ohlc-and-candlestick004.png)
 
 # See Also
 

@@ -81,4 +81,4 @@ Here is a list of the steps one has to make in order to style RadChart to look l
 	1. Data -> Series -> Series 2 -> Appearance -> Appearance -> FillStyle -> SecondColor : __59; 161; 197__
 	1. Data -> Series -> Series 2 -> Appearance -> Appearance -> TextAppearance -> TextProperties -> Color : __White__
 
-![chart-styling-radcharts-step-by-step-skinning-example 001](images/chart-styling-radcharts-step-by-step-skinning-example001.png)
+![WinForms RadChart chart-styling-radcharts-step-by-step-skinning-example 001](images/chart-styling-radcharts-step-by-step-skinning-example001.png)

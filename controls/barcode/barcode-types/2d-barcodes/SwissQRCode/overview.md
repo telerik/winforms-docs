@@ -14,7 +14,7 @@ The QR-bill makes issuing and paying invoices simpler, and is being introduced t
 
 >caption Figure 1: A Swiss QR-bill
 
-![winforms-2d-barcodes-swissqrcode-overview 001](images/winforms-2d-barcodes-swissqrcode-overview001.png)
+![WinForms RadBarcode A Swiss QR-bill](images/winforms-2d-barcodes-swissqrcode-overview001.png)
 
 The Swiss QR Code encodes all the information necessary for a payment in specific format and structure. Along with the printed information, the Swiss QR Code forms the payment part of the QR-bill. The allowed currencies for payments are CHF and EUR. The QR-Bill also guarantees you compliance with the regulatory requirements arising from the revised Anti-Money Laundering Ordinance.
 
@@ -128,6 +128,6 @@ Once you've set up the **SwissQRCodeValueStringBuilder** you can call its **Vali
 
 Invoking the code from **Example 3** will generate the following result:
 
-![winforms-2d-barcodes-swissqrcode-overview 002](images/winforms-2d-barcodes-swissqrcode-overview002.png)
+![WinForms RadBarcode winforms-2d-barcodes-swissqrcode-overview 002](images/winforms-2d-barcodes-swissqrcode-overview002.png)
 
  

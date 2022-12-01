@@ -22,20 +22,20 @@ To bind to XML at design-time using an [XMLDataSource](http://msdn2.microsoft.co
 
 	>caption 
 
-	![chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource 001](images/chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource001.png)
+	![WinForms RadChart ](images/chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource001.png)
 
 1. From the "Choose a data source type" page of the wizard select "XML File" and click "OK". 
 
 
 	>caption 
 
-	![chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource 002](images/chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource002.png)
+	![WinForms RadChart chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource 002](images/chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource002.png)
 
 1. Using the Browse button locate and select the XML file. Click OK. 
 
 
 	>caption 
 
-	![chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource 003](images/chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource003.png)
+	![WinForms RadChart chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource 003](images/chart-building-radcharts-data-binding-radchart-binding-to-xml-at-design-time-using-an-xmldatasource003.png)
 
 

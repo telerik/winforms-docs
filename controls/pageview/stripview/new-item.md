@@ -13,7 +13,7 @@ previous_url: pageview-stripview-new-item
 
 **RadPageView** supports a special kind of page item that prompts the end-user to create a new page at run time by clicking that item. Let's call the item *NewItem*. When the *NewItem* is clicked, a special event is fired where the developer can decide what exactly should be done - in the context of **RadPageView** usually a new **RadPageViewPage** is being created.
 
-![pageview-stripview-new-item 001](images/pageview-stripview-new-item001.png)
+![WinForms RadPageView pageview-stripview-new-item 001](images/pageview-stripview-new-item001.png)
 
 ## Enabling the NewItem
 
@@ -23,11 +23,11 @@ You can easily show the *NewItem* by setting the __NewItemVisibility__ property 
 
 * __Front__: The *NewItem* appears in front of the other page items in the items strip area.
 
-![pageview-stripview-new-item 002](images/pageview-stripview-new-item002.png)
+![WinForms RadPageView pageview-stripview-new-item 002](images/pageview-stripview-new-item002.png)
 
 * __End__: The *NewItem* appears at the end of the row of page items in the items strip area. 
 
-![pageview-stripview-new-item 003](images/pageview-stripview-new-item003.png)   
+![WinForms RadPageView pageview-stripview-new-item 003](images/pageview-stripview-new-item003.png)   
         
 Here is how to set the **NewItemVisibility** property:
 
@@ -84,7 +84,7 @@ End Sub
 
 The result is shown on the screenshot below:
 
-![pageview-stripview-new-item 004](images/pageview-stripview-new-item004.png)
+![WinForms RadPageView pageview-stripview-new-item 004](images/pageview-stripview-new-item004.png)
 
 # See Also
 

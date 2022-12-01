@@ -15,7 +15,7 @@ The following tutorial demonstrates how to setup **RadMultiColumnComboBox** and 
 1\. Add a **RadMultiColumnComboBox** and a **RadStatusStrip** to a **RadForm**.  
 2\. By using the Visual Studio *Properties* grid and the *Data Source Configuration Wizard*, set the **DataSource**, **ValueMember** and **DisplayMember** properties of **RadMultiColumnComboBox**. Thus, **RadMultiColumnComboBox** will be bound to the Northwind.Employees table.
 
-![multicolumncombobox-getting-started 001](images/multicolumncombobox-getting-started001.png)
+![WinForms RadMultiColumnComboBox multicolumncombobox-getting-started 001](images/multicolumncombobox-getting-started001.png)
 
 3\. Add a **RadImageButtonElement** and a **RadLabelElement** to the **RadStatusStrip**.
 4\. In the Visual Studio *Properties* grid, select the **Events** tab and double click the **SelectedIndexChanged** event in order to generate an event handler.
@@ -101,7 +101,7 @@ End Function
 5\. Open the **Property Builder** by using the **Smart Tag** and uncheck some of the columns in order to control which columns to be visible.
 6\. Press `F5` to run the application and change the selection in **RadMultiColumnComboBox**.
 
-![multicolumncombobox-getting-started 002](images/multicolumncombobox-getting-started002.gif)
+![WinForms RadMultiColumnComboBox multicolumncombobox-getting-started 002](images/multicolumncombobox-getting-started002.gif)
 
 # See Also
 

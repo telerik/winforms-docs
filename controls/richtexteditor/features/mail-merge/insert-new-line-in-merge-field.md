@@ -75,13 +75,13 @@ The next figures demonstrate a sample scenario that uses the vertical tab to sep
 
 >caption Figure 1: Result fragment of mail merge, when all the fields have values
 
-![](images/radrichtexteditor-MailMerge-InsertANewLineInMergeField_01.png)
+![WinForms RadRichTextEditor Result fragment of mail merge, when all the fields have values](images/radrichtexteditor-MailMerge-InsertANewLineInMergeField_01.png)
 
 If a line break is inserted after each merge field and a value for a field is missing, the result is an empty line. **Figure 2** shows the result of the mail merge when the merge field for job title has no value.
 
 >caption Figure 2: Result fragment of mail merge, when one of the fields has no value 
 
-![](images/radrichtexteditor-MailMerge-InsertANewLineInMergeField_02.png)
+![WinForms RadRichTextEditor Result fragment of mail merge, when one of the fields has no value](images/radrichtexteditor-MailMerge-InsertANewLineInMergeField_02.png)
 
 You could handle a similar scenario using the vertical tab symbol in the **TextAfterIfNotEmpty** property of the merge field. **Example 3** shows you how to create such a field and the result is demonstrated in **Figure 3**.
  
@@ -107,7 +107,7 @@ Dim mergeField As New MergeField() With { _
  
 >caption Figure 3: Result fragment of mail merge, when one of the fields has applied a switch using vertical tab and has no value
 
-![](images/radrichtexteditor-MailMerge-InsertANewLineInMergeField_03.png)
+![WinForms RadRichTextEditor Result fragment of mail merge, when one of the fields has applied a switch using vertical tab and has no value](images/radrichtexteditor-MailMerge-InsertANewLineInMergeField_03.png)
 
 ### Using End of Paragraph "\r\n" Instead the Vertical Tab
 

@@ -20,7 +20,7 @@ __RadDiagramContainerShape__ allows you to place multiple shapes into one contai
         
 >caption Fig.1 Illustration of the ContainerShape auto-sizing capabilities
 
-![diagram-diagram-items-container-shapes 001](images/diagram-diagram-items-container-shapes001.gif)
+![WinForms RadDiagram Illustration of the ContainerShape auto-sizing capabilities](images/diagram-diagram-items-container-shapes001.gif)
 
 A container can be connected and handled like other shapes.
 
@@ -55,7 +55,7 @@ Me.RadDiagram1.Items.Add(container)
 
 >caption Fig.2 ContainerShape's content
 
-![diagram-diagram-items-container-shapes 002](images/diagram-diagram-items-container-shapes002.png)
+![WinForms RadDiagram ContainerShape's content](images/diagram-diagram-items-container-shapes002.png)
 
 ## Edit Mode
 
@@ -112,7 +112,7 @@ containerShape.Items.Add(shape)
 
 >caption Fig.3 RadDiagramContainerShape.Items
 
-![diagram-diagram-items-container-shapes 003](images/diagram-diagram-items-container-shapes003.png)
+![WinForms RadDiagram RadDiagramContainerShapeItems](images/diagram-diagram-items-container-shapes003.png)
 
 ## Container Bounds
 
@@ -124,7 +124,7 @@ By default, __RadDiagramContainerShape__ is collapsible. It is controlled by the
         
 >caption Fig.4 RadDiagramContainerShape.Items
 
-![diagram-diagram-items-container-shapes 004](images/diagram-diagram-items-container-shapes004.gif)
+![WinForms RadDiagram 4 RadDiagramContainerShapeItems](images/diagram-diagram-items-container-shapes004.gif)
 
 Below you can find a list of all __RadDiagramContainerShape__ members that are related to the collapsible feature of the shape:
 
@@ -191,7 +191,7 @@ container.BorderBrush = New System.Drawing.SolidBrush(Color.Fuchsia)
 
 >caption Fig.5 RadDiagramContainerShape's appearance
 
-![diagram-diagram-items-container-shapes 005](images/diagram-diagram-items-container-shapes005.png)
+![WinForms RadDiagram 5 RadDiagramContainerShape's appearance](images/diagram-diagram-items-container-shapes005.png)
 
 # See Also
   	

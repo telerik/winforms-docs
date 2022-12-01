@@ -16,7 +16,7 @@ previous_url: pageview-outlookview-using-the-overflow-grip
 The Overflow Grip can be used to increase/decrease the amount of currently visible items in the Outlook View to modify the amount available for the currently displayed content. The user can drag the Overflow Grip in the corresponding direction to adjust the amount of visible items in the stack as shown on the animated gif below. When the user drags the grip, items are added/removed from the overflow panel in the direction shown by the horizontal arrow.
 >caption Figure 1: Overflow Grip
 
-![](images/pageview-outlookview-using-the-overflow001.gif)
+![WinForms RadPageView Overflow Grip](images/pageview-outlookview-using-the-overflow001.gif)
 
 ## Programming the Overflow Grip
 
@@ -74,7 +74,7 @@ When items are hidden by using the overflow grip, they appear as a strip of butt
 
 >caption Figure 2: Overflow strip buttons
 
-![](images/pageview-outlookview-using-the-overflow002.png)
+![WinForms RadPageView Overflow strip buttons](images/pageview-outlookview-using-the-overflow002.png)
 
 You can use these buttons to select and show the content of the corresponding item.
 

@@ -18,18 +18,18 @@ The Headers and Footers functionality enables you to add rich text content in th
 **RadSpreadsheet** enables you to add headers and footers in a spreadsheet’s worksheet. The headers and footers appear when you print the worksheet or export it to a PDF document; they are not displayed on the worksheet when the document is visualized when you work with it in the application.
 
 >caption Figure 1: Headers and footers in a spreadsheet
-![radspreadsheet-features-headers-footers](images/radspreadsheet-features-headers-footers-001.png)
+![WinForms RadSpreadsheet Headers and footers in a spreadsheet](images/radspreadsheet-features-headers-footers-001.png)
 
 ## Insert Header and Footer
 
 You can insert headers or footers using the **Header/Footer tab** of the **Page Setup** section in the ribbon.
 
 >caption Figure 2: Page Setup section in ribbon
-![radspreadsheet-features-headers-footers](images/radspreadsheet-features-headers-footers-002.png)
+![WinForms RadSpreadsheet Page Setup section in ribbon](images/radspreadsheet-features-headers-footers-002.png)
 
 
 >caption Figure 3: Header/Footer in the Page Setup dialog box
-![radspreadsheet-features-headers-footers](images/radspreadsheet-features-headers-footers-003.png)
+![WinForms RadSpreadsheet Header/Footer in the Page Setup dialog box](images/radspreadsheet-features-headers-footers-003.png)
 
 This tab enables you to set the content of headers and footers using predefined templates. 
 
@@ -63,7 +63,7 @@ The content of the header or footer is customizable.You can insert the text that
 Keep in mind that the amount of content that can be inserted in the three sections of a header or footer depends on the space available for rendering them. 
 
 >caption Figure 4: Additional fields in Header and Footer dialog boxes
-![radspreadsheet-features-headers-footers](images/radspreadsheet-features-headers-footers-004.png)
+![WinForms RadSpreadsheet Additional fields in Header and Footer dialog boxes](images/radspreadsheet-features-headers-footers-004.png)
 
 Along with text, you can insert several fields in a header or footer as shown in **Figure 4**.
 

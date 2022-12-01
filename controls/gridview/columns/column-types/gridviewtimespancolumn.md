@@ -14,7 +14,7 @@ position: 8
 
 >caption Figure 1: GridViewTimeSpanColumn in edit mode
 
-![gridview-columns-gridviewtimespancolumn 001](images/gridview-columns-gridviewtimespancolumn001.png)
+![WinForms RadGridView GridViewTimeSpanColumn in edit mode](images/gridview-columns-gridviewtimespancolumn001.png)
 
 The __FormatString__ property sets the format of the TimeSpan when the cell is not currently being edited. The **Format** property is used to format the value once the user clicks on the cell to invoke the editor. The activated editor takes into consideration the applied **Format** and thus, only the specified parts of the TimeSpan will be loaded when the drop down editor opens.
 
@@ -42,7 +42,7 @@ Me.RadGridView1.Columns.Add(gridViewTimeSpanColumn1)
 
 >caption Figure 2: Formatted editor's value
 
-![gridview-columns-gridviewtimespancolumn 002](images/gridview-columns-gridviewtimespancolumn002.png)
+![WinForms RadGridView Formatted editor's value](images/gridview-columns-gridviewtimespancolumn002.png)
 
 There are two ways to change the TimeSpan format when the cell enters edit mode - either by setting the above mentioned **Format** property of the column or by handling the RadGridView.**CellEditorInitialized** event and applying the desired format to the **GridTimeSpanPickerEditor**. It is fired when the initialization of an editor is performed:  
 

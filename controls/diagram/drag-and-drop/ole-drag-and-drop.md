@@ -14,7 +14,7 @@ __RadDiagram__ is capable of performing drag and drop operation using the native
 
 >caption Figure 1: Drag and Drop Between Two Diagrams 
 
-![diagram-drag-and-drop-ole-drag-and-drop 001](images/diagram-drag-and-drop-ole-drag-and-drop001.gif)
+![WinForms RadDiagram Drag and Drop Between Two Diagrams](images/diagram-drag-and-drop-ole-drag-and-drop001.gif)
 
 In order to achieve the desired result the MouseDown, MouseMove and MouseUp events need to be handled in the first diagram. The drag operation will be started in the handler of the MouseMove event. The second diagram instance needs to be subscribed to the DragEnter and DragDrop events.
 

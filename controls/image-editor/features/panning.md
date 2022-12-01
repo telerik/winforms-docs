@@ -13,7 +13,7 @@ The PanTool is one of the tools that come out-of-the-box with __RadImageEditor__
 
 When panning the cursor will became a hand and you will be able to pan by holding the left mouse button. 
 
-![](images/image-editor-pan001.gif)
+![WinForms RadImage-Editor ](images/image-editor-pan001.gif)
 
 ## See Also  
 

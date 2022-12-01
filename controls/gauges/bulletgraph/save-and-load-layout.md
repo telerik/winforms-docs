@@ -17,7 +17,7 @@ __RadBulletGraph__ supports Save/Load layout functionality which gives you the o
 You can easily save/load the layout with the smart tag.
 
 >caption Figure 1: Smart Tag
-![radbulletgraph-save-and-load-layout 001](images/radbulletgraph-save-and-load-layout001.png)
+![WinForms RadGauges Smart Tag](images/radbulletgraph-save-and-load-layout001.png)
 
 ## Run Time
 

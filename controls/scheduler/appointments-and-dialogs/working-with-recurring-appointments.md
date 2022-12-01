@@ -165,7 +165,7 @@ Next ev
 The __Occurrences__ property of the __Appointment__ class returns an enumerator that can be used to retrieve all the occurrences defined by the rule. Similarly the __GetOccurrences__ method of the __Appointment__ class can be used to retrieve all occurrences in a given interval. The example above produces the following output:
 
 >caption Figure 1: Appointment Occurrences 
-![scheduler-appointments-and-dialogs-working-with-recurring-appointments 001](images/scheduler-appointments-and-dialogs-working-with-recurring-appointments001.jpg)
+![WinForms RadScheduler Appointment Occurrences](images/scheduler-appointments-and-dialogs-working-with-recurring-appointments001.jpg)
 
 # See Also
 

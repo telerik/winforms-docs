@@ -19,7 +19,7 @@ This tutorial walks you through a real-world scenario that you can have in your 
 
 In our particular case we dock a user control instance inside a __RadDock__ instance. The user control itself contains a __RadCalendar__. When the user clicks the __RadCalendar__ a custom __DateChanged__ event for the **UserControl1** fires, showing a dialog with the selected date. Using this as a model you can create **UserControls** with custom properties, methods and events for more complex situations.
 
-![dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event 001](images/dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event001.png)
+![WinForms RadDock dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event 001](images/dock-docking-usercontrols-and-forms-docking-a-usercontrol-with-custom-event001.png)
  
 1\. In Visual Studio create a new Windows Application.
 

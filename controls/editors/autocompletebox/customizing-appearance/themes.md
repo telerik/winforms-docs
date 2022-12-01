@@ -16,13 +16,13 @@ This help article will demonstrate a step by step tutorial how to customize the 
 2. Export the built-in themes in a specific folder by selecting `File` >> `Export Built-in Themes`.
 3. Load a desired theme from the just exported files by selecting `File` >> `Open Package`.
 4. Expand __RadAutoCompleteBox__ and select the `TokenizedTextBlockElement`. 
-    ![autocompletebox-themes001](images/autocompletebox-themes001.png)
+    ![WinForms RadAutoCompleteBox autocompletebox-themes001](images/autocompletebox-themes001.png)
 
 5. Open the `Edit Repository Item` dialog and change the BackCokor:
-   ![autocompletebox-themes002](images/autocompletebox-themes002.png)
+   ![WinForms RadAutoCompleteBox autocompletebox-themes002](images/autocompletebox-themes002.png)
 
 6. The BackColor is now changed:
-   ![autocompletebox-themes003](images/autocompletebox-themes003.png)
+   ![WinForms RadAutoCompleteBox autocompletebox-themes003](images/autocompletebox-themes003.png)
 
 >note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
 

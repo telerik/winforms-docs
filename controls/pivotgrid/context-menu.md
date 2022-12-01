@@ -16,7 +16,7 @@ The PivotGridContextMenuBase.**Context** property provides information about the
 
 >caption Figure 1: Custom Context Menu Item
 
-![pivotgrid-context-menu 001](images/pivotgrid-context-menu001.gif)
+![WinForms RadPivotGrid Custom Context Menu Item](images/pivotgrid-context-menu001.gif)
 
 #### Initialize and Set Custom Menu
 

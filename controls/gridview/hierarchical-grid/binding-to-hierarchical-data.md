@@ -14,11 +14,11 @@ previous_url: gridview-hierarchical-grid-binding-to-hierarchical-data
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/watch/winforms/radgrid/radgridview-winforms-hierarchy-overview)<br>In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|![gridview-hierarchical-grid-binding-to-hierarchical-data 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data001.png)|
+|[WinForms RadGridView RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/watch/winforms/radgrid/radgridview-winforms-hierarchy-overview)<br>In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|![WinForms RadGridView gridview-hierarchical-grid-binding-to-hierarchical-data 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data001.png)|
 
 RadGridView can display hierarchical, master-detail data to an arbitrary number of levels. The hierarchical schema can be established at run-time or design-time.
 
-![gridview-hierarchical-grid-binding-to-hierarchical-data 002](images/gridview-hierarchical-grid-binding-to-hierarchical-data002.png)
+![WinForms RadGridView gridview-hierarchical-grid-binding-to-hierarchical-data 002](images/gridview-hierarchical-grid-binding-to-hierarchical-data002.png)
 
 At run-time you can use the RadGridView.AutoGenerateHierarchyFromDataSet to [automatically create the hierarchy]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%}).
 

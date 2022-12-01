@@ -28,7 +28,7 @@ Me.RadRibbonBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 {{endregion}} 
 
 >caption Figure 1: Right-to-left Ribbon UI
-![ribbonbar-localization-rtl 001](images/ribbonbar-localization-rtl001.png)
+![WinForms RadRibbonBar Right-to-left Ribbon UI](images/ribbonbar-localization-rtl001.png)
 
 ## See Also
 

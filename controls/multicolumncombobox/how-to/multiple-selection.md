@@ -16,7 +16,7 @@ However, in some cases, it may be required to allow multiple selection, e.g. sel
 
 >caption Figure 1: Multiple selection in RadMultiColumnComboBox 
 
-![multicolumncombobox-how-to-multiple-selection 001](images/multicolumncombobox-how-to-multiple-selection001.png)
+![WinForms RadMultiColumnComboBox Multiple selection in RadMultiColumnComboBox](images/multicolumncombobox-how-to-multiple-selection001.png)
 
 1\. Drag a **RadMultiColumnComboBox** control on the form and populate it with data by setting the [DataSource]({%slug winforms/multicolumncombobox/databinding%}) property and specifying the **DisplayMember** and **ValueMember** properties. Create a **RadMultiColumnComboBoxSelectionExtender** class that inherits **System.ComponentModel.Component**. It will contain the whole logic for creating check boxes in the row header column of the pop up grid and creating tokens for the checked rows as well. You can find below a sample implementation:
 

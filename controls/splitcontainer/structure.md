@@ -14,17 +14,17 @@ This article illustrates the inner structure and organization of the elements wh
 
 >caption Figure 1: RadSplitContainer's elements hierarchy
 
-![splitcontainer-structure 001](images/splitcontainer-structure001.png)
+![WinForms RadSplitContainer RadSplitContainer's elements hierarchy](images/splitcontainer-structure001.png)
 
 >caption Figure 2: SplitPanel's elements hierarchy
 
-![splitcontainer-structure 002](images/splitcontainer-structure002.png)
+![WinForms RadSplitContainer SplitPanel's elements hierarchy](images/splitcontainer-structure002.png)
 
 >caption Figure 3: RadSplitContainer's visual structure
 
-![splitcontainer-structure 003](images/splitcontainer-structure003.png)
+![WinForms RadSplitContainer RadSplitContainer's visual structure](images/splitcontainer-structure003.png)
 
-![splitcontainer-structure 004](images/splitcontainer-structure004.png)
+![WinForms RadSplitContainer splitcontainer-structure 004](images/splitcontainer-structure004.png)
  
 
 # See Also

@@ -14,7 +14,7 @@ position: 2
 
 >caption Fig.1 Smart Tag
 
-![diagram-design-time 001](images/diagram-design-time001.png)
+![WinForms RadDiagram Smart Tag](images/diagram-design-time001.png)
 
 * __Common Tasks__
 

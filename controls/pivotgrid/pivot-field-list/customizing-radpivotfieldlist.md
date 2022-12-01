@@ -18,7 +18,7 @@ __RadPivotFieldList__ internally contains a __RadTreeView__ built with nodes com
 
 | Before Sorting | After Sorting |
 | ------ | ------ |
-|![pivotgrid-radpivotfieldlist 004](images/pivotgrid-radpivotfieldlist004.png)|![pivotgrid-radpivotfieldlist 005](images/pivotgrid-radpivotfieldlist005.png)|
+|![WinForms RadPivotGrid pivotgrid-radpivotfieldlist 004](images/pivotgrid-radpivotfieldlist004.png)|![WinForms RadPivotGrid pivotgrid-radpivotfieldlist 005](images/pivotgrid-radpivotfieldlist005.png)|
 
 #### Sorting the Nodes
 
@@ -39,7 +39,7 @@ Me.RadPivotFieldList1.FieldsControl.SortOrder = System.Windows.Forms.SortOrder.D
 
 | Before Hiding | After Hiding |
 | ------ | ------ |
-|![pivotgrid-radpivotfieldlist 006](images/pivotgrid-radpivotfieldlist006.png)|![pivotgrid-radpivotfieldlist 007](images/pivotgrid-radpivotfieldlist007.png)|
+|![WinForms RadPivotGrid pivotgrid-radpivotfieldlist 006](images/pivotgrid-radpivotfieldlist006.png)|![WinForms RadPivotGrid pivotgrid-radpivotfieldlist 007](images/pivotgrid-radpivotfieldlist007.png)|
 
 #### Hiding Nodes
 
@@ -149,7 +149,7 @@ End Sub
 
 | Before Removing | After Removing |
 | ------ | ------ |
-|![pivotgrid-radpivotfieldlist 008](images/pivotgrid-radpivotfieldlist008.png)|![pivotgrid-radpivotfieldlist 009](images/pivotgrid-radpivotfieldlist009.png)|
+|![WinForms RadPivotGrid pivotgrid-radpivotfieldlist 008](images/pivotgrid-radpivotfieldlist008.png)|![WinForms RadPivotGrid pivotgrid-radpivotfieldlist 009](images/pivotgrid-radpivotfieldlist009.png)|
 
 #### Remove a Child Date Node
 
@@ -251,7 +251,7 @@ End Sub
 
 {{endregion}}
 
-|![pivotgrid-radpivotfieldlist 010](images/pivotgrid-radpivotfieldlist010.png)
+|![WinForms RadPivotGrid pivotgrid-radpivotfieldlist 010](images/pivotgrid-radpivotfieldlist010.png)
 
 >note Please note that you should always provide an 'else' clause in the **NodeFormatting** event where you should reset all of the introduced customizations. More information is available [here](https://docs.telerik.com/devtools/winforms/controls/treeview/working-with-nodes/formatting-nodes). 
 >

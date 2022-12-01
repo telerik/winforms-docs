@@ -14,15 +14,15 @@ This article describes the inner structure and organization of the elements whic
 
 >caption Figure 1: RadMultiColumnComboBox's elements hierarchy
 
-![multicolumncombobox-structure 001](images/multicolumncombobox-structure001.png)
+![WinForms RadMultiColumnComboBox RadMultiColumnComboBox's elements hierarchy](images/multicolumncombobox-structure001.png)
 
 >caption Figure 2: MultiColumnComboPopupForm's elements hierarchy
 
-![multicolumncombobox-structure 002](images/multicolumncombobox-structure002.png)
+![WinForms RadMultiColumnComboBox MultiColumnComboPopupForm's elements hierarchy](images/multicolumncombobox-structure002.png)
         
 >caption Figure 3: RadMultiColumnComboBox visual structure
 
-![multicolumncombobox-structure 003](images/multicolumncombobox-structure003.png)
+![WinForms RadMultiColumnComboBox RadMultiColumnComboBox visual structure](images/multicolumncombobox-structure003.png)
 
 1\. **RadMultiColumnComboBoxelement**:    
 &nbsp;&nbsp;&nbsp;&nbsp;1\. 1\. **RadTextBoxElement**: represents the editor element.   

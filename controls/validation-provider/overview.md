@@ -18,7 +18,7 @@ It allows users to create various validation rules and associate them with edito
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![validation-provider-overview 001](images/validation-provider-overview001.png) 
+![WinForms RadValidation-Provider validation-provider-overview 001](images/validation-provider-overview001.png) 
 
 ## Key Features
 

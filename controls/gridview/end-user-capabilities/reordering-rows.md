@@ -20,7 +20,7 @@ RadGridView supports row reordering and it can be done by the user at runtime. T
 >note The __RowsChanged__ event will be fired when reorder operation is performed.
 
 
-![gridview-rows-reordering-rows 001](images/gridview-rows-reordering-rows001.gif)
+![WinForms RadGridView gridview-rows-reordering-rows 001](images/gridview-rows-reordering-rows001.gif)
 # See Also
 * [Column Chooser]({%slug winforms/gridview/end-user-capabilities/column-chooser%})
 

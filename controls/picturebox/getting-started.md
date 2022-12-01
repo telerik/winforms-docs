@@ -14,7 +14,7 @@ To start using the control you only need to add a **RadPictureBox** control to t
 
 By default, the control is shown with no image icon:
 
-![picturebox-getting-started](images/picturebox-getting-started001.png)
+![WinForms RadPictureBox picturebox-getting-started](images/picturebox-getting-started001.png)
 
 ### Customize default look when there is no image
 
@@ -36,7 +36,7 @@ Me.RadPictureBox1.DefaultText = "No image available"
 
 {{endregion}}
 
-![picturebox-getting-started2](images/picturebox-getting-started003.png)
+![WinForms RadPictureBox picturebox-getting-started2](images/picturebox-getting-started003.png)
 
 ### Load an image
 
@@ -74,7 +74,7 @@ Me.RadPictureBox1.SvgImage = RadSvgImage.FromFile("..//..//PictureBox//emoticon-
 
 {{endregion}}
 
-![picturebox-getting-started3](images/picturebox-getting-started002.png)
+![WinForms RadPictureBox picturebox-getting-started3](images/picturebox-getting-started002.png)
 
 
 # See Also

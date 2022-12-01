@@ -20,7 +20,7 @@ Items appearance in __RadDropDownList__ can be customized by making use of the _
 
 >caption Figure 1: Formatting items in drop down
 
-![dropdown-and-listcontrol-dropdownlist-customizing-items 001](images/dropdown-and-listcontrol-dropdownlist-customizing-items001.png)
+![WinForms RadDropDownList Formatting items in drop down](images/dropdown-and-listcontrol-dropdownlist-customizing-items001.png)
 
 #### Customize selected item appearance 
 
@@ -111,4 +111,4 @@ End Sub
 
 >caption Figure 2: Formatting auto-complete items
 
-![dropdown-and-listcontrol-dropdownlist-customizing-items 002](images/dropdown-and-listcontrol-dropdownlist-customizing-items002.png)
+![WinForms RadDropDownList Formatting auto-complete items](images/dropdown-and-listcontrol-dropdownlist-customizing-items002.png)

@@ -29,7 +29,7 @@ Me.RadToggleSwitch1.ToggleSwitchElement.ToolTipText = "sample tooltip"
 
 {{endregion}} 
 
-![buttons-toggleswitch-tooltips 001](images/buttons-toggleswitch-tooltips001.png)
+![WinForms RadButtons buttons-toggleswitch-tooltips 001](images/buttons-toggleswitch-tooltips001.png)
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
@@ -52,7 +52,7 @@ End Sub
 
 {{endregion}} 
 
-![buttons-toggleswitch-tooltips 002](images/buttons-toggleswitch-tooltips002.png)
+![WinForms RadButtons buttons-toggleswitch-tooltips 002](images/buttons-toggleswitch-tooltips002.png)
 
 >note The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set in  the __ToolTipText__ property.
 

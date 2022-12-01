@@ -28,7 +28,7 @@ In order to cut, copy or paste particular __RadDiagramItems__  you have to selec
 * __(Ctrl + V)__ - pastes the selected items.
             
 
-You can perform these operations in a single form, but you can also copy/cut and paste items between several forms.![diagram-items-manipulation-clipboard-operations 001](images/diagram-items-manipulation-clipboard-operations001.gif)
+You can perform these operations in a single form, but you can also copy/cut and paste items between several forms.![WinForms RadDiagram diagram-items-manipulation-clipboard-operations 001](images/diagram-items-manipulation-clipboard-operations001.gif)
 
 ## Cut, Copy, Paste with DiagramCommands
 

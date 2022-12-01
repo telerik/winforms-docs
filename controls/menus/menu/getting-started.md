@@ -21,7 +21,7 @@ The following tutorial demonstrates creating a **RadMenu** with standard **RadMe
 
 3\. Press `Enter`.
 
- ![menus-menu-getting-started 001](images/menus-menu-getting-started001.png)
+ ![WinForms RadMenus menus-menu-getting-started 001](images/menus-menu-getting-started001.png)
 
 4\. Click in the area labeled __Type Here__ and type *Help*.
             
@@ -40,12 +40,12 @@ The following tutorial demonstrates creating a **RadMenu** with standard **RadMe
 
 9\. In the __RadItem Collection Editor__, click the drop-down arrow on the __Add__ button. Select the __RadMenuItem__.
 
-![menus-menu-getting-started 005](images/menus-menu-getting-started005.png)
+![WinForms RadMenus menus-menu-getting-started 005](images/menus-menu-getting-started005.png)
             
 
 10\. Set the __Text__ property of the new __RadMenuItem__ to *New*.
 
-![menus-menu-getting-started 002](images/menus-menu-getting-started002.png)
+![WinForms RadMenus menus-menu-getting-started 002](images/menus-menu-getting-started002.png)
 
 11\. Add two more **RadMenuItems**. Set their __Text__ properties to *Open* and *Save*.
             
@@ -84,7 +84,7 @@ The following tutorial demonstrates creating a **RadMenu** with standard **RadMe
  
 23\. Add two more **RadListDataItems**. Set their __Text__ properties to *Support* and *Knowledge Base*.
 
-![menus-menu-getting-started 003](images/menus-menu-getting-started003.png)
+![WinForms RadMenus menus-menu-getting-started 003](images/menus-menu-getting-started003.png)
 
 24\. Click __OK__ to close the **RadListDataItem Collection Editor**.
             
@@ -144,7 +144,7 @@ End Sub
 
 32\. Press __F5__ to run the project. Notice the menu styling, the use of Ctrl+N to trigger the message box, and the combo box in the Help menu. 
 
-![menus-menu-getting-started 004](images/menus-menu-getting-started004.png)
+![WinForms RadMenus menus-menu-getting-started 004](images/menus-menu-getting-started004.png)
 
 
 # See Also

@@ -19,19 +19,19 @@ You can access and modify the style for different elements in **RadPanorama** by
 
 >caption Figure 1: RadPanorama's Element hierarchy editor
 
-![panorama-accessing-and-customizing-elements 001](images/panorama-accessing-and-customizing-elements001.png)
+![WinForms RadPanorama RadPanorama's Element hierarchy editor](images/panorama-accessing-and-customizing-elements001.png)
 
 If you select a **RadTileElement** and open the tile's smart tag, this allows you to invoke the *Element hierarchy editor* and customize its appearance:
 
-![panorama-accessing-and-customizing-elements 002](images/panorama-accessing-and-customizing-elements002.png)
+![WinForms RadPanorama panorama-accessing-and-customizing-elements 002](images/panorama-accessing-and-customizing-elements002.png)
 
-![panorama-accessing-and-customizing-elements 003](images/panorama-accessing-and-customizing-elements003.png)
+![WinForms RadPanorama panorama-accessing-and-customizing-elements 003](images/panorama-accessing-and-customizing-elements003.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
 
-![panorama-accessing-and-customizing-elements 004](images/panorama-accessing-and-customizing-elements004.png)
+![WinForms RadPanorama panorama-accessing-and-customizing-elements 004](images/panorama-accessing-and-customizing-elements004.png)
 
 >caption Fig.2 Customize elements
 

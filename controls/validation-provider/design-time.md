@@ -16,7 +16,7 @@ To start using **RadValidationProvider** just drag it from the toolbox and drop 
 
 Select **RadValidationProvider** and click the small arrow at the top right position in order to open the **Smart Tag**. Open the *FilterDescriptor Collection Editor* by clicking the *Edit Validation Rules* option in the Smart tag.
 
-![validation-provider-design-time 001](images/validation-provider-design-time001.png) 
+![WinForms RadValidation-Provider validation-provider-design-time 001](images/validation-provider-design-time001.png) 
 
 The different [Validation Rules]({%slug validation-provider-validation-rules%}) that **RadValidationProvider** offers can be added at design time without the necessity of writing any code once the *FilterDescriptor Collection Editor* is opened. 
 
@@ -28,23 +28,23 @@ We will add a rule that validates the value in a **RadSpinEditor** and ensures t
 
 1. Add a **RadValidationRule** and select the **RadSpinEditor** control that you want to validate from the **Controls** collection: 
 
-	![validation-provider-design-time 002](images/validation-provider-design-time002.png) 
+	![WinForms RadValidation-Provider validation-provider-design-time 002](images/validation-provider-design-time002.png) 
 
 2. Set the **Operator** to *IsLessThan*, **PropertyName** to *Value*, **ToolTipText** to *"Value should be less than 100!"*:
 
-	![validation-provider-design-time 003](images/validation-provider-design-time003.png) 
+	![WinForms RadValidation-Provider validation-provider-design-time 003](images/validation-provider-design-time003.png) 
 
 3. Set the **Value** to *100* and then select **int** from the types drop down:
 
-	![validation-provider-design-time 003](images/validation-provider-design-time004.png) 
+	![WinForms RadValidation-Provider validation-provider-design-time 003](images/validation-provider-design-time004.png) 
 
-	![validation-provider-design-time 003](images/validation-provider-design-time005.png) 
+	![WinForms RadValidation-Provider validation-provider-design-time 003](images/validation-provider-design-time005.png) 
 
 	>important The data type of the **Value** can be specified after entering a value first and then selecting the type from the drop down. Thus, the correct expression will be serialized.
 
 When you enter a value and try to exit **RadSpinEditor**, the validation rule will be evaluated and an error indication will be shown if the validation fails:
 
-![validation-provider-design-time 006](images/validation-provider-design-time006.png) 
+![WinForms RadValidation-Provider validation-provider-design-time 006](images/validation-provider-design-time006.png) 
 
 ## RadValidationRuleWithTargetControl
 
@@ -52,22 +52,22 @@ When you enter a value and try to exit **RadSpinEditor**, the validation rule wi
 
 1. Add a **RadValidationRuleWithTargetControl** and select the "minimum price" **RadSpinEditor** from the **Controls** collection: 
 
-	![validation-provider-design-time 007](images/validation-provider-design-time007.png) 
+	![WinForms RadValidation-Provider validation-provider-design-time 007](images/validation-provider-design-time007.png) 
 
-	![validation-provider-design-time 008](images/validation-provider-design-time008.png) 
+	![WinForms RadValidation-Provider validation-provider-design-time 008](images/validation-provider-design-time008.png) 
 
 2. Set the **Operator** to *IsLessThan*, **PropertyName** to *Value*, **ToolTipText** to *"Minimum price should be less than Maximum price!"*:
 
-	![validation-provider-design-time 009](images/validation-provider-design-time009.png) 
+	![WinForms RadValidation-Provider validation-provider-design-time 009](images/validation-provider-design-time009.png) 
 
 3. Select the "maximum price" **RadSpinEditor** as **TargetControl** and set the **TargetControlPropertyName** to *Value*:
 
-	![validation-provider-design-time 010](images/validation-provider-design-time010.png) 
+	![WinForms RadValidation-Provider validation-provider-design-time 010](images/validation-provider-design-time010.png) 
 
 >important Please ensure that the initial values in both **RadSpinEditor** controls meet the validation. Otherwise, you may remain blocked when you focus the "minimum price" **RadSpinEditor** for the first time, e.g. if both controls have initial value = **0**. No matter what value you enter in the "minimum price" **RadSpinEditor**, you want to be able to validate it and exit the control.
 >
 
-![validation-provider-design-time 011](images/validation-provider-design-time011.png)   
+![WinForms RadValidation-Provider validation-provider-design-time 011](images/validation-provider-design-time011.png)   
 
 In a similar way you can add a rule to validate that the "maximum price" **RadSpinEditor**'s value is greater than the value of the first one. Thus, when you focus the second **RadSpinEditor** and try to exit it, it will ensure that a valid value (greater than minimum) is added.
 
@@ -79,32 +79,32 @@ Considering the previous example with minimum and maximum price, we want to vali
 
 1. For this purpose, it is necessary to add a **RadCompositeValidationRule** which contains two **RadValidationRuleWithTargetControls**:
 
-	![validation-provider-design-time 012](images/validation-provider-design-time012.png)   
+	![WinForms RadValidation-Provider validation-provider-design-time 012](images/validation-provider-design-time012.png)   
 
-	![validation-provider-design-time 013](images/validation-provider-design-time013.png) 
+	![WinForms RadValidation-Provider validation-provider-design-time 013](images/validation-provider-design-time013.png) 
 
 2. The first **RadValidationRuleWithTargetControl** should validate that "price" **RadSpinEditor** is greater than "minimum price" **RadSpinEditor**:
 
-	![validation-provider-design-time 012](images/validation-provider-design-time014.png)   
+	![WinForms RadValidation-Provider validation-provider-design-time 012](images/validation-provider-design-time014.png)   
 
-	![validation-provider-design-time 013](images/validation-provider-design-time015.png) 
+	![WinForms RadValidation-Provider validation-provider-design-time 013](images/validation-provider-design-time015.png) 
 
 3. The second **RadValidationRuleWithTargetControl** should validate that "price" **RadSpinEditor** is less than "maximum price" **RadSpinEditor**:
 
-	![validation-provider-design-time 016](images/validation-provider-design-time016.png)   
+	![WinForms RadValidation-Provider validation-provider-design-time 016](images/validation-provider-design-time016.png)   
 
-	![validation-provider-design-time 017](images/validation-provider-design-time017.png) 
+	![WinForms RadValidation-Provider validation-provider-design-time 017](images/validation-provider-design-time017.png) 
 
 	>caution None of the associated controls (e.g. radSpinEditor3) of a composite rule should be added as a target in any of the nested rules! Please be careful when defining composite rules in order to get the proper validation logic. Usually, it is even possible to simplify the validation logic and define separate **RadValidationRuleWithTargetControls** outside a composite rule.
 	
 
 4. Once you have added the nested rules, return back to the **RadCompositeValidationRule** and specify the **LogicalOperator** and **ToolTipText**:
 
-	![validation-provider-design-time 018](images/validation-provider-design-time018.png)  
+	![WinForms RadValidation-Provider validation-provider-design-time 018](images/validation-provider-design-time018.png)  
 
 When you start the application and enter a price that doesn't meet the validations rules, the specified error message for the **composite rule** will be shown:
 
-![validation-provider-design-time 019](images/validation-provider-design-time019.png)  
+![WinForms RadValidation-Provider validation-provider-design-time 019](images/validation-provider-design-time019.png)  
 
 # See Also
 

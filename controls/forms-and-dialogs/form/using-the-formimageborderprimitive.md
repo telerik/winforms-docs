@@ -37,7 +37,7 @@ The following picture shows the positions at which the images appear:
 
 >caption Figure 1: Image positions
 
-![forms-and-dialogs-form-using-the-formimageborderprimitive 001](images/forms-and-dialogs-form-using-the-formimageborderprimitive001.png)
+![WinForms RadForm Image positions](images/forms-and-dialogs-form-using-the-formimageborderprimitive001.png)
 
 The __LeftTexture__, __BottomTexture__ and __RightTexture__ are drawn as textures between the __TopLeftEnd__ and __BottomLeftCorner__, __BottomLeftCorner__ and __BottomRightCorner__, __BottomRightCorner__ and __TopRightEnd__ respectively. The __TopLeftEnd__ and the __TopRightEnd__ images are used to define a smooth transition between the image border and the __RadFormTitleBarElement__. The __BottomLeftCorner__ and __BottomRightCorner__ properties are used to set the images which are drawn in the corners of the form's border.
 
@@ -62,37 +62,37 @@ The minimum requirement for parts of the border to be drawn is setting one of th
 
 Here is how the __RadForm__ control looks when the __LeftTexture__ property is set with the following image:
 
-![forms-and-dialogs-form-using-the-formimageborderprimitive 002](images/forms-and-dialogs-form-using-the-formimageborderprimitive002.bmp)
+![WinForms RadForm forms-and-dialogs-form-using-the-formimageborderprimitive 002](images/forms-and-dialogs-form-using-the-formimageborderprimitive002.bmp)
 
 >caption Figure 2: LeftTexture
 
-![forms-and-dialogs-form-using-the-formimageborderprimitive 003](images/forms-and-dialogs-form-using-the-formimageborderprimitive003.png)
+![WinForms RadForm LeftTexture](images/forms-and-dialogs-form-using-the-formimageborderprimitive003.png)
 
 After setting the __BottomTexture__ property with the following image:
 
-![forms-and-dialogs-form-using-the-formimageborderprimitive 004](images/forms-and-dialogs-form-using-the-formimageborderprimitive004.bmp)
+![WinForms RadForm forms-and-dialogs-form-using-the-formimageborderprimitive 004](images/forms-and-dialogs-form-using-the-formimageborderprimitive004.bmp)
 
 >caption Figure 3: BottomTexture
 
-![forms-and-dialogs-form-using-the-formimageborderprimitive 005](images/forms-and-dialogs-form-using-the-formimageborderprimitive005.png)
+![WinForms RadForm BottomTexture](images/forms-and-dialogs-form-using-the-formimageborderprimitive005.png)
 
 The __RightTexture__ property with the following image:
 
-![forms-and-dialogs-form-using-the-formimageborderprimitive 006](images/forms-and-dialogs-form-using-the-formimageborderprimitive006.bmp)
+![WinForms RadForm forms-and-dialogs-form-using-the-formimageborderprimitive 006](images/forms-and-dialogs-form-using-the-formimageborderprimitive006.bmp)
 
 >caption Figure 4: RightTexture
 
-![forms-and-dialogs-form-using-the-formimageborderprimitive 007](images/forms-and-dialogs-form-using-the-formimageborderprimitive007.png)
+![WinForms RadForm RightTexture](images/forms-and-dialogs-form-using-the-formimageborderprimitive007.png)
 
 The __BottomLeftCorner__ and __BottomRightCorner__ properties with the corresponding images:
 
-![forms-and-dialogs-form-using-the-formimageborderprimitive 008](images/forms-and-dialogs-form-using-the-formimageborderprimitive008.bmp)
+![WinForms RadForm forms-and-dialogs-form-using-the-formimageborderprimitive 008](images/forms-and-dialogs-form-using-the-formimageborderprimitive008.bmp)
 
-![forms-and-dialogs-form-using-the-formimageborderprimitive 010](images/forms-and-dialogs-form-using-the-formimageborderprimitive010.bmp)
+![WinForms RadForm forms-and-dialogs-form-using-the-formimageborderprimitive 010](images/forms-and-dialogs-form-using-the-formimageborderprimitive010.bmp)
 
 >caption Figure 5: BottomLeftCorner and BottomRightCorner
 
-![forms-and-dialogs-form-using-the-formimageborderprimitive 009](images/forms-and-dialogs-form-using-the-formimageborderprimitive009.png)
+![WinForms RadForm BottomLeftCorner and BottomRightCorner](images/forms-and-dialogs-form-using-the-formimageborderprimitive009.png)
 
 The parts used to build the Image Border of the form are scaled for the purpose of the topic.
 

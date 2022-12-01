@@ -20,7 +20,7 @@ With the Section Columns feature, __RadRichTextEditor__ allows you arrange the t
 
 >caption Figure 1: Text laid out in columns
 
-![RadRichTextBox_Features_Section_Columns_01](images/RadRichTextBox_Features_Section_Columns_01.png)
+![WinForms RadRichTextEditor Text laid out in columns](images/RadRichTextBox_Features_Section_Columns_01.png)
 
 ## SectionColumn Class
 
@@ -70,7 +70,7 @@ __Figure 2__ demonstrates the result of __Example 1__.
 
 >caption Figure 2: Columns with separator
 
-![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_02.png)
+![WinForms RadRichTextEditor Columns with separator](images/RadRichTextBox_Features_Section_Columns_02.png)
 
 ## Using Section Columns
 
@@ -162,7 +162,7 @@ editor.ChangeSectionColumns(SectionColumnsLayout.Left)
 
 >caption __Figure 3: SectionColumnsLayout.Left applied on a section__
 
-![RadRichTextBox_Features_Section_Columns_02](images/RadRichTextBox_Features_Section_Columns_03.png)
+![WinForms RadRichTextEditor SectionColumnsLayoutLeft applied on a section__](images/RadRichTextBox_Features_Section_Columns_03.png)
 
 You can insert a column break at a specific position inside a section column. For more information, check [this article]({%slug winforms/richtextEditor/break%}).
 

@@ -23,11 +23,11 @@ Here's a dataset design view for the SchedulerData.mdf database file that ships 
 
 >note Notice that while the database structure allows for multiple resources, the built-in scheduler dialog only allows a single resource to be selected at a time.
 
-![scheduler-data-binding-using-datasource-property 001](images/scheduler-data-binding-using-datasource-property001.png)
+![WinForms RadScheduler scheduler-data-binding-using-datasource-property 001](images/scheduler-data-binding-using-datasource-property001.png)
 
 The foreign key relationship between "TransientAppointmentsResources" and the "Appointments" table will also be defined in the AppointmentMappingInfo object.
 
-![scheduler-data-binding-using-datasource-property 002](images/scheduler-data-binding-using-datasource-property002.png)
+![WinForms RadScheduler scheduler-data-binding-using-datasource-property 002](images/scheduler-data-binding-using-datasource-property002.png)
 
 >note You can find SchedulerData.mdb (Access) in the installation directory under \Examples\QuickStart\DataSources. You can find SchedulerData.mdf (MS SQL database file) [here](http://www.telerik.com/docs/default-source/ui-for-winforms/schedulerdatasql.zip)
 >
@@ -42,7 +42,7 @@ RadScheduler works from a provider model so that in the future, custom appointme
 
 #### EditAppointmentDialog with multiple resources
 
-![scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+![WinForms RadScheduler scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
 
 #### Create Mapping
 

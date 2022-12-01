@@ -15,13 +15,13 @@ previous_url: dock-architecture-and-features-auto-hiding-windows
 
 Un-pin the __ToolWindow__ by clicking the pushpin icon in the title bar. This will cause the __ToolWindow__ to auto-hide at the edge of the __RadDock__.
 
-![dock-architecture-and-features-auto-hiding-windows 001](images/dock-architecture-and-features-auto-hiding-windows001.gif)
+![WinForms RadDock dock-architecture-and-features-auto-hiding-windows 001](images/dock-architecture-and-features-auto-hiding-windows001.gif)
 
 ## Showing and Pinning a Hidden DockPanel
 
 Hover the mouse over the tab at the edge of the __RadDock__ that displays the __ToolWindow__ title. This will cause the __ToolWindow__ to slide out over the other panels. As long as the mouse cursor is over the tab or the panel itself, the panel will stay visible. Moving the mouse away from the tab and panel will cause the panel to collapse again to its un-pinned state. To dock the panel, click the **Pin** button to pin the panel in place.
 
-![dock-architecture-and-features-auto-hiding-windows 002](images/dock-architecture-and-features-auto-hiding-windows002.gif)
+![WinForms RadDock dock-architecture-and-features-auto-hiding-windows 002](images/dock-architecture-and-features-auto-hiding-windows002.gif)
  
 ## Understanding AutoHidePosition
 

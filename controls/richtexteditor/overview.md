@@ -22,7 +22,7 @@ If you are new to this control, see the [Getting Started]({%slug winforms/richte
         
 >note **RadRichTextEditor** requires **.NET Framework 4.0** and cannot be used with an older version. 
 
-![richtexteditor 001](images/richtexteditor001.png)
+![WinForms RadRichTextEditor richtexteditor 001](images/richtexteditor001.png)
 
 ## Features
 

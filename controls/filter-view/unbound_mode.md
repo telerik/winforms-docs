@@ -66,7 +66,7 @@ End Class
 
 {{endregion}} 
 
-![filter-view-unbound-mode 001](images/filter-view-unbound-mode001.png)
+![WinForms RadFilter-View filter-view-unbound-mode 001](images/filter-view-unbound-mode001.png)
 
 If we run the example, we can see that the __RadGridView__ is populated correctly, but the __RadFilterView__ will remain empty. As the __DataSource__ of the __RadGridView__ is null, the __RadFilterView__ control won't be aware which filter categories need to be created. Upon checking the RadGridView we can create 3 filter categories for the following ID,Date and Title columns.
 
@@ -147,7 +147,7 @@ Me.radFilterView1.Categories.Add(stringFilterCategory)
 
 > Any changes to RadGridView cells in unbound mode won't be reflected in the RadFilterView control. If a cell value is edited, you will need to call the CreateItems() method for the respected filter category.
 
-![filter-view-unbound-mode 001](images/filter-view-unbound-mode002.gif)
+![WinForms RadFilter-View filter-view-unbound-mode 001](images/filter-view-unbound-mode002.gif)
 
 Here is the complete code snippet.
 

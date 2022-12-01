@@ -16,12 +16,12 @@ Key tips provide a way to add discoverable keyboard shortcuts to the items on th
 For example, when the user presses the __Alt__ key with the control on this **RadRibbonBar**, the top-level key tips are displayed:
 
 >caption Figure 1: Top-Level Key Tips
-![ribbonbar-adding-key-tips 001](images/ribbonbar-adding-key-tips001.png)
+![WinForms RadRibbonBar Top-Level Key Tips](images/ribbonbar-adding-key-tips001.png)
 
 Furthermore, pressing the __7__ key selects the __Write__ tab and displays the key tips for the elements on that tab:
 
 >caption Figure 2: Text Tab Key Tips
-![ribbonbar-adding-key-tips 002](images/ribbonbar-adding-key-tips002.png)
+![WinForms RadRibbonBar Text Tab Key Tips](images/ribbonbar-adding-key-tips002.png)
 
 ## See Also
 

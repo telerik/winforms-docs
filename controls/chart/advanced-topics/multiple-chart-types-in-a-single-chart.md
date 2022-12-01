@@ -22,7 +22,7 @@ To designate dissimilar [chart types]({%slug winforms/chart/understanding-radch
 
 >caption 
 
-![chart-advanced-topics-multiple-chart-types-in-a-single-chart 001](images/chart-advanced-topics-multiple-chart-types-in-a-single-chart001.png)
+![WinForms RadChart ](images/chart-advanced-topics-multiple-chart-types-in-a-single-chart001.png)
 
 
 
@@ -54,7 +54,7 @@ Use the Axis.Range property to set minimum values, maximum values and step amou
 
 >caption 
 
-![chart-advanced-topics-multiple-chart-types-in-a-single-chart 002](images/chart-advanced-topics-multiple-chart-types-in-a-single-chart002.png)
+![WinForms RadChart chart-advanced-topics-multiple-chart-types-in-a-single-chart 002](images/chart-advanced-topics-multiple-chart-types-in-a-single-chart002.png)
  
 {{source=..\SamplesCS\Chart\MultipleChartTypes.cs region=differentChartSeries}} 
 {{source=..\SamplesVB\Chart\MultipleChartTypes.vb region=differentChartSeries}} 

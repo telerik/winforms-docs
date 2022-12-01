@@ -22,11 +22,11 @@ Depending on the __Skin__ used, RadChart can automatically differentiate each 
 To create a Vertical Stacked Area Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __StackedArea__.
 >caption 
 
-![chart-undestanding-radchart-types-stacked-area-charts 001](images/chart-undestanding-radchart-types-stacked-area-charts001.png)
+![WinForms RadChart ](images/chart-undestanding-radchart-types-stacked-area-charts001.png)
 
 
 
 To create a Vertical Stacked Area Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __StackedArea__.
 >caption 
 
-![chart-undestanding-radchart-types-stacked-area-charts 002](images/chart-undestanding-radchart-types-stacked-area-charts002.png)
+![WinForms RadChart chart-undestanding-radchart-types-stacked-area-charts 002](images/chart-undestanding-radchart-types-stacked-area-charts002.png)

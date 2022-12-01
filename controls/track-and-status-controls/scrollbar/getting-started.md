@@ -15,15 +15,15 @@ Using Telerik scroll bars is a bit more intricate compared to using the standard
 
 1\. Add a **RadPanel** to your form (*TelerikMetro* theme was used for both panels. This theme is contained in the Miscellaneous theme component):
 
-![track-and-status-controls-scroll-bar-getting-started 001](images/track-and-status-controls-scroll-bar-getting-started001.png)
+![WinForms RadScrollBar track-and-status-controls-scroll-bar-getting-started 001](images/track-and-status-controls-scroll-bar-getting-started001.png)
 
 2\. Add a **RadVScrollbar** in the panel and dock it to the *Right*:
 
-![track-and-status-controls-scroll-bar-getting-started 002](images/track-and-status-controls-scroll-bar-getting-started002.png)
+![WinForms RadScrollBar track-and-status-controls-scroll-bar-getting-started 002](images/track-and-status-controls-scroll-bar-getting-started002.png)
 
 3\. Add another **RadPanel** in the already added one and set its height to the *total* height you want to be available upon scrolling. This value can be statics e.g. *1000* pixels or dynamic determined by the scrollable content. For the purpose, of this example it is set to *1000* pixels. 
 
-![track-and-status-controls-scroll-bar-getting-started 003](images/track-and-status-controls-scroll-bar-getting-started003.png)
+![WinForms RadScrollBar track-and-status-controls-scroll-bar-getting-started 003](images/track-and-status-controls-scroll-bar-getting-started003.png)
 
 4\. The next step is to add controls to the second **RadPanel** (the controls which are to be scrolled):
 
@@ -59,7 +59,7 @@ Next i
 >note You can add controls by drag and drop at design time as well.
 >
 
-![track-and-status-controls-scroll-bar-getting-started 004](images/track-and-status-controls-scroll-bar-getting-started004.png)
+![WinForms RadScrollBar track-and-status-controls-scroll-bar-getting-started 004](images/track-and-status-controls-scroll-bar-getting-started004.png)
 
 5\. Then, subscribe to the **Scroll** event of the vertical scroll bar and assign its negated value to the **Top** property of the second **RadPanel**:
 
@@ -102,7 +102,7 @@ Me.RadVScrollBar1.Maximum = Me.RadPanel2.Size.Height - Me.RadPanel1.Size.Height
 
 {{endregion}} 
 
-![track-and-status-controls-scroll-bar-getting-started 005](images/track-and-status-controls-scroll-bar-getting-started005.png)
+![WinForms RadScrollBar track-and-status-controls-scroll-bar-getting-started 005](images/track-and-status-controls-scroll-bar-getting-started005.png)
 
 # See Also
 

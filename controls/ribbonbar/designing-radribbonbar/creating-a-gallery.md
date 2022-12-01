@@ -14,15 +14,15 @@ previous_url: ribbonbar-creating-a-gallery
 __RadGalleryElement__ allows the user to choose among large number of visual items. In its default collapsed view, a gallery shows a single row of its items, as well as an up arrow and a down arrow that scroll to other rows of items. Special properties allow you to specify the number of visible rows and columns of items in the collapsed view. 
 
 >caption Figure 1: Collapsed Gallery 
-![ribbonbar-creating-a-gallery 001](images/ribbonbar-creating-a-gallery001.png)
+![WinForms RadRibbonBar Collapsed Gallery](images/ribbonbar-creating-a-gallery001.png)
 
 The gallery also has a drop-down arrow which sets the element into expanded view. In this view the gallery shows a popup containing all of its items, organized in groups.
 
 >caption Figure 2: Expanded Plain Tables
-![ribbonbar-creating-a-gallery 002](images/ribbonbar-creating-a-gallery002.png)
+![WinForms RadRibbonBar Expanded Plain Tables](images/ribbonbar-creating-a-gallery002.png)
 
 >caption Figure 3: Expanded Built-In
-![ribbonbar-creating-a-gallery 003](images/ribbonbar-creating-a-gallery003.png)
+![WinForms RadRibbonBar Expanded Built-In](images/ribbonbar-creating-a-gallery003.png)
 
 ## Creating a Gallery
 
@@ -97,7 +97,7 @@ Me.RadGalleryElement1.Items.AddRange(blueItem1, blueItem2, blueItem3, blueItem4,
 
 ## Adding Groups
 
-Groups organize the items within a gallery into distinct sections. Groups are not visible when the gallery is in collapsed view. They appear in the gallery popup as blocks of items under the same title. For example, in the screenshot above the Plain Tables and Built-In are the titles of gallery groups. The Plain Tables group contains a single item and the Built-In group contains plenty. The following screenshot has six groups: Black Items, Blue Items, Red Items, Green Items, Purple Items, Orange Items. <br>![ribbonbar-creating-a-gallery 003](images/ribbonbar-creating-a-gallery003.png)
+Groups organize the items within a gallery into distinct sections. Groups are not visible when the gallery is in collapsed view. They appear in the gallery popup as blocks of items under the same title. For example, in the screenshot above the Plain Tables and Built-In are the titles of gallery groups. The Plain Tables group contains a single item and the Built-In group contains plenty. The following screenshot has six groups: Black Items, Blue Items, Red Items, Green Items, Purple Items, Orange Items. <br>![WinForms RadRibbonBar ribbonbar-creating-a-gallery 003](images/ribbonbar-creating-a-gallery003.png)
 
 To add a group at design-time, please follow these steps:
 
@@ -159,7 +159,7 @@ Me.RadGalleryElement1.Groups.Add(purpleGroup)
 
 A gallery filter is a set of groups. Filters appear as options of a drop-down list, docked at the top of the gallery popup. They allow the user to choose the combination of groups to be displayed in the popup. For example, the following screenshot contains three filters. The All filter displays all groups; the Red, Orange and Green Items filter shows the items in groups Red, Orange and Green; the Blue and Purple Items lists the items in the Blue and Purple groups.
 
-![ribbonbar-creating-a-gallery 004](images/ribbonbar-creating-a-gallery004.png)
+![WinForms RadRibbonBar ribbonbar-creating-a-gallery 004](images/ribbonbar-creating-a-gallery004.png)
 
 To create a filter, follow these steps:
 

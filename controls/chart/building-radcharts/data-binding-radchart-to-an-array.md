@@ -20,7 +20,7 @@ To bind a __RadChart__ to an [Array](http://msdn2.microsoft.com/en-us/library/
 
 >caption 
 
-![chart-building-radcharts-data-binding-radchart-to-an-array 001](images/chart-building-radcharts-data-binding-radchart-to-an-array001.png)
+![WinForms RadChart ](images/chart-building-radcharts-data-binding-radchart-to-an-array001.png)
 
 {{source=..\SamplesCS\Chart\DataBindingToArray.cs region=bindToArray}} 
 {{source=..\SamplesVB\Chart\DataBindingToArray.vb region=bindToArray}} 

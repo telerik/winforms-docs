@@ -21,7 +21,7 @@ The operations can be executed either by clicking the calculator buttons, or by 
 {% endif %}
 
 >caption Figure 1: RadCalculatorDropDown
-![editors-calculator-overview 001](images/editors-calculator-overview001.png)
+![WinForms RadCalculatorDropDown RadCalculatorDropDown](images/editors-calculator-overview001.png)
 
 __RadCalculatorDropDown__ key features list:
 

@@ -12,13 +12,13 @@ position: 2
 
 When you drag a __RadWaitingBar__ from the Toolbox and drop it onto the form, the waiting bar style gallery will offer you to pick up the desired type. It allows you to customize the appearance settings as well:
 
-![track-and-status-controls-waiting-bar-design-time 001](images/track-and-status-controls-waiting-bar-design-time001.png)
+![WinForms RadWaitingBar track-and-status-controls-waiting-bar-design-time 001](images/track-and-status-controls-waiting-bar-design-time001.png)
 
 ## Smart Tag
 
 >caption Fig.1 Smart Tag
 
-![track-and-status-controls-waiting-bar-design-time 002](images/track-and-status-controls-waiting-bar-design-time002.png)
+![WinForms RadWaitingBar Smart Tag](images/track-and-status-controls-waiting-bar-design-time002.png)
 
 * __Common Tasks__
 

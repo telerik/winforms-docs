@@ -20,7 +20,7 @@ You can review below the [Key Features]({%slug winforms/dropdown-listcontrol-and
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![dropdown-and-listcontrol-dropdownlist-overview 001](images/dropdown-and-listcontrol-dropdownlist-overview001.png)
+![WinForms RadDropDownList dropdown-and-listcontrol-dropdownlist-overview 001](images/dropdown-and-listcontrol-dropdownlist-overview001.png)
 
 ## Key Features
 

@@ -27,7 +27,7 @@ You can build the user interface with a __RadRibbonBar__ using a variety of diff
 
 5\. Apply the **ImageList** to **RadRibbonBar**:
 
-![ribbonbar-using-different-elements-on-a-radribbonbar 006](images/ribbonbar-using-different-elements-on-a-radribbonbar006.png)
+![WinForms RadRibbonBar ribbonbar-using-different-elements-on-a-radribbonbar 006](images/ribbonbar-using-different-elements-on-a-radribbonbar006.png)
 
 ## Adding a Tab and a Group
 
@@ -41,7 +41,7 @@ You can build the user interface with a __RadRibbonBar__ using a variety of diff
 
 1. Click __Add New Group...__ to create a new group.
 
-1. Set the __Text__ property of the new group to __Clipboard__. <br>![ribbonbar-using-different-elements-on-a-radribbonbar 001](images/ribbonbar-using-different-elements-on-a-radribbonbar001.png)
+1. Set the __Text__ property of the new group to __Clipboard__. <br>![WinForms RadRibbonBar ribbonbar-using-different-elements-on-a-radribbonbar 001](images/ribbonbar-using-different-elements-on-a-radribbonbar001.png)
 
 ## Add Elements
 
@@ -54,7 +54,7 @@ You can build the user interface with a __RadRibbonBar__ using a variety of diff
 1. Select the __Vertical Button Group__ and from its __SmartTag__ execute the __Edit Items__ action. 
 
 1. Add three __RadButtonElement__ instances in the button group:
-    ![ribbonbar-using-different-elements-on-a-radribbonbar 002](images/ribbonbar-using-different-elements-on-a-radribbonbar002.png)
+    ![WinForms RadRibbonBar ribbonbar-using-different-elements-on-a-radribbonbar 002](images/ribbonbar-using-different-elements-on-a-radribbonbar002.png)
 
 ## Customize the RadButtonElement
 
@@ -64,14 +64,14 @@ You can build the user interface with a __RadRibbonBar__ using a variety of diff
 
 1. Set an appropriate image by modifying the __Image__ property or selecting **ImageKey** from the associated ImageList:
 
-	![ribbonbar-using-different-elements-on-a-radribbonbar 007](images/ribbonbar-using-different-elements-on-a-radribbonbar007.png)
+	![WinForms RadRibbonBar ribbonbar-using-different-elements-on-a-radribbonbar 007](images/ribbonbar-using-different-elements-on-a-radribbonbar007.png)
 
 1. Set the __ImageAlignment__ property to __MiddleCenter__. 
 
 1. Set the __Text__ property to __Paste__ and the __TextAlignment__ property to __MiddleCenter__.
 
 With an appropriate __Image__ the __RadRibbonBar__ should look similarly:
-    ![ribbonbar-using-different-elements-on-a-radribbonbar 003](images/ribbonbar-using-different-elements-on-a-radribbonbar003.png)
+    ![WinForms RadRibbonBar ribbonbar-using-different-elements-on-a-radribbonbar 003](images/ribbonbar-using-different-elements-on-a-radribbonbar003.png)
 
 ## Customize the RadButtonElements in the RadRibbonBarButtonGroup
 
@@ -84,7 +84,7 @@ With an appropriate __Image__ the __RadRibbonBar__ should look similarly:
 1. Set the __Image__ property with an appropriate image
 
 1. Do the same for the rest elements in the __RadRibbonBarButtonGroup__ so that the result looks similar to this:
-    ![ribbonbar-using-different-elements-on-a-radribbonbar 004](images/ribbonbar-using-different-elements-on-a-radribbonbar004.png)
+    ![WinForms RadRibbonBar ribbonbar-using-different-elements-on-a-radribbonbar 004](images/ribbonbar-using-different-elements-on-a-radribbonbar004.png)
 
 ## Adding a RadGalleryElement
 
@@ -103,7 +103,7 @@ With an appropriate __Image__ the __RadRibbonBar__ should look similarly:
 >note For the purpose of this demonstration Office 2007 like images for the gallery have been used.
 >
 
-![ribbonbar-using-different-elements-on-a-radribbonbar 005](images/ribbonbar-using-different-elements-on-a-radribbonbar005.png)
+![WinForms RadRibbonBar ribbonbar-using-different-elements-on-a-radribbonbar 005](images/ribbonbar-using-different-elements-on-a-radribbonbar005.png)
 
 ## See Also
 

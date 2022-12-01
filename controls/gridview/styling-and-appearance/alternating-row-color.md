@@ -51,7 +51,7 @@ CType(Me.RadGridView1.TableElement, GridTableElement).AlternatingRowColor = Colo
 
 The result is shown on the screenshot below:
 
-![gridview-styling-and-appearance-alternating-row-color](images/gridview-styling-and-appearance-alternating-row-color.png)
+![WinForms RadGridView gridview-styling-and-appearance-alternating-row-color](images/gridview-styling-and-appearance-alternating-row-color.png)
 # See Also
 * [Four ways to customize RadGridView appearance]({%slug winforms/gridview/styling-and-appearance/four-ways-to-customize-radgridview-appearance%})
 

@@ -18,11 +18,11 @@ You can customize the visual appearance by using [VisualStyleBuilder]({%slug win
 2. Export the built-in themes in a specific folder by selecting `File >> Export Built-in Themes`.
 3. Load a desired theme from the just exported files by selecting `File >> Open Package`.
 4. Select __RadBindingNavigator__ in `Controls Structure` on the left side. Then, select __RadCommandBarElement__ in the `Elements` window.
- ![bindingnavigator-themes001](images/bindingnavigator-themes001.png)
+ ![WinForms RadBindingNavigator bindingnavigator-themes001](images/bindingnavigator-themes001.png)
 5. Edit the fill repository item and select different color.
- ![bindingnavigator-themes002](images/bindingnavigator-themes002.png)
+ ![WinForms RadBindingNavigator bindingnavigator-themes002](images/bindingnavigator-themes002.png)
 6. You can see the result directly in the Visual Style Builder.    
- ![bindingnavigator-themes003](images/bindingnavigator-themes003.png)
+ ![WinForms RadBindingNavigator bindingnavigator-themes003](images/bindingnavigator-themes003.png)
 
 ## See Also
 

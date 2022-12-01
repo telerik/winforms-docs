@@ -13,8 +13,8 @@ previous_url: scheduler-appointments-and-dialogs-working-with-appointments
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Adding Custom Fields to RadScheduler Appointments](http://tv.telerik.com/watch/winforms/radscheduler/adding-custom-fields-radscheduler-winforms-appointments)<br>In this video, you will learn how to add custom fields to the RadScheduler for WinForms. You'll learn how to create the required classes, mappings, and dialogs that make it easy to integrate any custom data in a Scheduler appointment. (Runtime: 19:48)|![scheduler-data-binding-codeless-data-binding 001](images/scheduler-data-binding-codeless-data-binding001.png)|
-|[Introduction to RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/introduction-radscheduler-winforms)<br>In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)|![scheduler-data-binding-codeless-data-binding 002](images/scheduler-data-binding-codeless-data-binding002.png)|
+|[WinForms RadScheduler Adding Custom Fields to RadScheduler Appointments](http://tv.telerik.com/watch/winforms/radscheduler/adding-custom-fields-radscheduler-winforms-appointments)<br>In this video, you will learn how to add custom fields to the RadScheduler for WinForms. You'll learn how to create the required classes, mappings, and dialogs that make it easy to integrate any custom data in a Scheduler appointment. (Runtime: 19:48)|![WinForms RadScheduler scheduler-data-binding-codeless-data-binding 001](images/scheduler-data-binding-codeless-data-binding001.png)|
+|[WinForms RadScheduler Introduction to RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/introduction-radscheduler-winforms)<br>In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)|![WinForms RadScheduler scheduler-data-binding-codeless-data-binding 002](images/scheduler-data-binding-codeless-data-binding002.png)|
 
 
 | RELATED BLOGS |  |
@@ -48,7 +48,7 @@ Me.RadScheduler1.Appointments.Add(appointment)
 {{endregion}} 
 
 >Figure 1: Appointmennt Element
-![scheduler-appointments-and-dialogs-working-with-appointments 003](images/scheduler-appointments-and-dialogs-working-with-appointments003.png)
+![WinForms RadScheduler scheduler-appointments-and-dialogs-working-with-appointments 003](images/scheduler-appointments-and-dialogs-working-with-appointments003.png)
 
 ## Customizing Appointments
 

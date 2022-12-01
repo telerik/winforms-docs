@@ -15,7 +15,7 @@ position: 1
 
 >caption Figure 1: Adding button elements
 
-![buttontextbox-populating-with-data-adding-items-programmatically 001](images/buttontextbox-populating-with-data-adding-items-programmatically001.png)
+![WinForms RadButtonTextBox Adding button elements](images/buttontextbox-populating-with-data-adding-items-programmatically001.png)
 
 #### Add button elements programmatically 
 
@@ -84,7 +84,7 @@ The following code snippet demonstrates how to add programmatically different ty
 
 >caption Figure 2: Adding different elements
 
-![buttontextbox-populating-with-data-adding-items-programmatically 002](images/buttontextbox-populating-with-data-adding-items-programmatically002.png)
+![WinForms RadButtonTextBox Adding different elements](images/buttontextbox-populating-with-data-adding-items-programmatically002.png)
 
 #### Add different elements programmatically 
 

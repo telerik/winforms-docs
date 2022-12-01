@@ -92,7 +92,7 @@ End Sub
 {{endregion}} 
 
 
-![gridview-sorting-custom-sorting 001](images/gridview-sorting-custom-sorting001.png)
+![WinForms RadGridView gridview-sorting-custom-sorting 001](images/gridview-sorting-custom-sorting001.png)
 
 The following example demonstrates the usage of the __Handled__ property of the __CustomSorting__ event arguments. It uses custom sorting to sort the rows ascending by the values of the `Freight` column. This sorting is applied to the rows that have a value in the `Freight` column greater than "0.33". The rest are handled by the defined __SortDescriptor__ and sorted descending by the values of the `Freight` column.
 
@@ -162,7 +162,7 @@ End Sub
 {{endregion}} 
 
 
-![gridview-sorting-custom-sorting 002](images/gridview-sorting-custom-sorting002.png)
+![WinForms RadGridView gridview-sorting-custom-sorting 002](images/gridview-sorting-custom-sorting002.png)
 
 ## Implementing sorting mechanism by using SortComparer
 
@@ -187,7 +187,7 @@ Me.RadGridView1.MasterTemplate.SortComparer = New CustomComparer()
 {{endregion}} 
 
 
-![gridview-sorting-custom-sorting 003](images/gridview-sorting-custom-sorting003.png)
+![WinForms RadGridView gridview-sorting-custom-sorting 003](images/gridview-sorting-custom-sorting003.png)
 
 ## Create custom sort order criteria for a particular column.
       
@@ -259,7 +259,7 @@ void radGridView1_CustomSorting(object sender, Telerik.WinControls.UI.GridViewCu
 {{endregion}} 
 
 
-![gridview-sorting-custom-sorting 005](images/gridview-sorting-custom-sorting005.png)
+![WinForms RadGridView gridview-sorting-custom-sorting 005](images/gridview-sorting-custom-sorting005.png)
 # See Also
 * [Basic Sorting]({%slug winforms/gridview/sorting/basic-sorting%})
 

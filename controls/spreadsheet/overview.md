@@ -19,7 +19,7 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![RadSpreadsheet Overview small](images/spreadsheet-overview001.png)
+![WinForms RadSpreadsheet RadSpreadsheet Overview small](images/spreadsheet-overview001.png)
 
 >note **RadSpreadsheet** requires **.NET Framework 4.0** and cannot be used with an older version. 
 

@@ -19,7 +19,7 @@ The following image shows the smart tag of the gauge control when the needle is 
 
 >caption Figure 1: Design Time
 
-![lineargauge-elements-working-with-needle 001](images/lineargauge-elements-working-with-needle001.png)
+![WinForms RadGauges Design Time](images/lineargauge-elements-working-with-needle001.png)
 
 ## Properties
 

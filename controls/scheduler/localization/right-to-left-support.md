@@ -32,7 +32,7 @@ RadScheduler1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 Here is how your scheduler will look like in this mode:
 
 >caption Figure 1: Right-to-Left Layout
-![scheduler-localization-right-to-left](images/scheduler-localization-right-to-left.png)
+![WinForms RadScheduler Right-to-Left Layout](images/scheduler-localization-right-to-left.png)
 
 # See Also
 

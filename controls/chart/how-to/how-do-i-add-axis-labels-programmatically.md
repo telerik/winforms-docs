@@ -28,7 +28,7 @@ To add labels along an Axis programmatically:
 
 >caption 
 
-![chart-how-to-add-axis-labels-programmatically 001](images/chart-how-to-add-axis-labels-programmatically001.png) 
+![WinForms RadChart ](images/chart-how-to-add-axis-labels-programmatically001.png) 
 
 {{source=..\SamplesCS\Chart\AddAxisLabelsProgrammaticaly.cs region=addAxisLabels}} 
 {{source=..\SamplesVB\Chart\AddAxisLabelsProgrammaticaly.vb region=addAxisLabels}} 

@@ -16,7 +16,7 @@ Items appearance in __RadListControl__ can be customized by making use of the __
 
 >caption Figure 1: Formatting items
 
-![listcontrol-formatting-items 001](images/listcontrol-formatting-items001.gif)
+![WinForms RadListControl Formatting items](images/listcontrol-formatting-items001.gif)
 
 #### Formatting items
 
@@ -160,7 +160,7 @@ End Sub
 
 >caption Figure 2: AlternatingItemColor
 
-![listcontrol-formatting-items 002](images/listcontrol-formatting-items002.png)
+![WinForms RadListControl AlternatingItemColor](images/listcontrol-formatting-items002.png)
 
 
 

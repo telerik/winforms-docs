@@ -218,11 +218,11 @@ Once you run the application, the comments are expected to be colored as it is i
 
 >caption Figure 1: Default comments' style
 
-![syntax-editor-features-layers001](images/syntax-editor-features-layers001.png)
+![WinForms RadSyntax-Editor Default comments' style](images/syntax-editor-features-layers001.png)
 
 >caption Figure 2: Custom layer for comments
 
-![syntax-editor-features-layers002](images/syntax-editor-features-layers002.png)
+![WinForms RadSyntax-Editor Custom layer for comments](images/syntax-editor-features-layers002.png)
 
 # See Also
 

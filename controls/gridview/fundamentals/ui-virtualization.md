@@ -80,7 +80,7 @@ End Sub
 {{endregion}} 
 
 
-![gridview-fundamentals-ui-virtualization 001](images/gridview-fundamentals-ui-virtualization001.png)
+![WinForms RadGridView gridview-fundamentals-ui-virtualization 001](images/gridview-fundamentals-ui-virtualization001.png)
 
 ## Style property
 

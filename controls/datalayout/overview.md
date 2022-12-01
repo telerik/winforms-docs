@@ -20,7 +20,7 @@ The __RadDataLayout__ control provides means for displaying data in a highly cus
         
 >caption Figure 1: RadDataLayout.
 
-![raddatalayout-overview 001](images/raddatalayout-overview001.png)
+![WinForms RadDataLayout RadDataLayout](images/raddatalayout-overview001.png)
 
 __RadDataLayout__ generates different editors depending on the type of the properties coming from the data bound object.
          

@@ -75,7 +75,7 @@ tempVerticalAxis.Title = " ºC"
 {{endregion}}
 
 >caption Figure 1: One Axis Offset
-![chartview-axes-axis-alignment 001](images/chartview-axes-axis-alignment001.png)
+![WinForms RadChartView One Axis Offset](images/chartview-axes-axis-alignment001.png)
 
 ## Two Axes Offset
 
@@ -126,7 +126,7 @@ cubicVerticalAxis.StartPositionValue = 0
 {{endregion}}
 
 >caption Figure 2: Two Axis Offset
-![chartview-axes-axis-alignment 002](images/chartview-axes-axis-alignment002.png)
+![WinForms RadChartView Two Axis Offset](images/chartview-axes-axis-alignment002.png)
 
 
 # See Also

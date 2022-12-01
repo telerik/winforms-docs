@@ -42,7 +42,7 @@ End Sub
 {{endregion}} 
 
 
-![gridview-grouping-formatting-group-header-row 001](images/gridview-grouping-formatting-group-header-row001.png)
+![WinForms RadGridView gridview-grouping-formatting-group-header-row 001](images/gridview-grouping-formatting-group-header-row001.png)
 
 The following example demonstrates formatting of group header which uses data from the group rows:
 
@@ -88,7 +88,7 @@ End Sub
 
 {{endregion}} 
 
-![gridview-grouping-formatting-group-header-row 002](images/gridview-grouping-formatting-group-header-row002.png)
+![WinForms RadGridView gridview-grouping-formatting-group-header-row 002](images/gridview-grouping-formatting-group-header-row002.png)
 # See Also
 * [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
 

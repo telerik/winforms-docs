@@ -16,19 +16,19 @@ previous_url: forms-and-dialogs-colordialog-working-with-the-radcolordialog, /de
 |__ColorDialogForm__|Gets the instance of RadColorDialogForm, which incorporates various settings of the underlaying color selection Form and ColorSelector user control.||
 |__Icon__|Gets or sets the icon displayed for this dialog.||
 |RadColorDialogForm.__ActiveMode__|Determines the currently selected tab.  Valid enumeration values from __Telerik.WinControls.ColorPickerActiveMode__ are *Basic*, *System*, *Web*,*Professional*.||
-|RadColorDialogForm.__AllowColorPickFromScreen__|When *true* (the default) the "eye dropper" tool is displayed.|![forms-and-dialogs-colordialog-working-with-the-radcolordialog 001](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog001.png)|
-|RadColorDialogForm.__AllowColorSaving__|Toggles the "Add a custom color" button visibility.|![forms-and-dialogs-colordialog-working-with-the-radcolordialog 002](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog002.png)|
+|RadColorDialogForm.__AllowColorPickFromScreen__|When *true* (the default) the "eye dropper" tool is displayed.|![WinForms RadColorDialog forms-and-dialogs-colordialog-working-with-the-radcolordialog 001](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog001.png)|
+|RadColorDialogForm.__AllowColorSaving__|Toggles the "Add a custom color" button visibility.|![WinForms RadColorDialog forms-and-dialogs-colordialog-working-with-the-radcolordialog 002](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog002.png)|
 |__BackColor__|The background color of the color selector as a whole. You can also set this color to be *Transparent* to have it blend in with your other UI elements.||
 |__ForeColor__|The color for labels and text entry.||
 |__SelectedColor__|In the figure below the __SelectedColor__ is labeled as "New".||
-|RadColorDialogForm.__OldColor__|In the figure below the __OldColor__ is labeled as "Current".|![forms-and-dialogs-colordialog-working-with-the-radcolordialog 003](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog003.png)|
+|RadColorDialogForm.__OldColor__|In the figure below the __OldColor__ is labeled as "Current".|![WinForms RadColorDialog forms-and-dialogs-colordialog-working-with-the-radcolordialog 003](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog003.png)|
 |RadColorDialogForm.__ShowBasicColors__|If true (the default) the corresponding Basic tab is displayed.||
 |RadColorDialogForm.__ShowSystemColors__|If true (the default) the corresponding System tab is displayed.||
 |RadColorDialogForm.__ShowWebColors__|If true (the default) the corresponding Web tab is displayed.||
 |RadColorDialogForm.__ShowProfessionalColors__|If true (the default) the corresponding Professional tab is displayed.||
 |RadColorDialogForm.__AllowEditHEXValue__|If true (the default) enables hexadecimal entry of color values.||
-|RadColorDialogForm.__ShowHEXColorValue__|If true (the default) displays the hexadecimal entry of color values.|![forms-and-dialogs-colordialog-working-with-the-radcolordialog 004](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog004.png)|
-|RadColorDialogForm.__CustomColors[]__|This is a read-only array of Color objects.  You can query the contents of the custom colors displayed along the bottom of the selector.|![forms-and-dialogs-colordialog-working-with-the-radcolordialog 005](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog005.png)|
+|RadColorDialogForm.__ShowHEXColorValue__|If true (the default) displays the hexadecimal entry of color values.|![WinForms RadColorDialog forms-and-dialogs-colordialog-working-with-the-radcolordialog 004](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog004.png)|
+|RadColorDialogForm.__CustomColors[WinForms RadColorDialog ]__|This is a read-only array of Color objects.  You can query the contents of the custom colors displayed along the bottom of the selector.|![WinForms RadColorDialog forms-and-dialogs-colordialog-working-with-the-radcolordialog 005](images/forms-and-dialogs-colordialog-working-with-the-radcolordialog005.png)|
 |RadColorDialogForm.__RadColorSelector__|Gets the color selector||
 |RadColorDialogForm.__AddNewColorButtonText__|Gets or sets the text of the add new color button.||
 |RadColorDialogForm.__BasicTabHeading__|Gets or sets the heading of the basic colors tab.||

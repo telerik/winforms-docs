@@ -14,11 +14,11 @@ This article describes the inner structure and organization of the elements whic
         
 >caption Figure 1: RadRibbonForm's elements hierarchy
 
-![forms-and-dialogs-ribbonform-structure 001](images/forms-and-dialogs-ribbonform-structure001.png)
+![WinForms RadRibbonForm RadRibbonForm's elements hierarchy](images/forms-and-dialogs-ribbonform-structure001.png)
 
 >caption Figure 2: RadRibbonForm's structure
 
-![forms-and-dialogs-ribbonform-structure 002](images/forms-and-dialogs-ribbonform-structure002.png)
+![WinForms RadRibbonForm RadRibbonForm's structure](images/forms-and-dialogs-ribbonform-structure002.png)
 
  1. __RibbonFormElement__  
   1.1 __RibbonFormBorderPrimitive__: represents the form's border  

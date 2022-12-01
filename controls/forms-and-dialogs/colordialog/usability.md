@@ -24,19 +24,19 @@ Under Hue, Saturation and Luminance are the edits for <b>A</b>lpha, <b>R</b>ed, 
  
 |||
 |----|----|
-|__Basic__|![forms-and-dialogs-colordialog-usability 001](images/forms-and-dialogs-colordialog-usability001.png)|
-|__System__|![forms-and-dialogs-colordialog-usability 002](images/forms-and-dialogs-colordialog-usability002.png)|
-|__Web__|![forms-and-dialogs-colordialog-usability 003](images/forms-and-dialogs-colordialog-usability003.png)|
-|__Professional__|![forms-and-dialogs-colordialog-usability 004](images/forms-and-dialogs-colordialog-usability004.png)|
+|__Basic__|![WinForms RadColorDialog forms-and-dialogs-colordialog-usability 001](images/forms-and-dialogs-colordialog-usability001.png)|
+|__System__|![WinForms RadColorDialog forms-and-dialogs-colordialog-usability 002](images/forms-and-dialogs-colordialog-usability002.png)|
+|__Web__|![WinForms RadColorDialog forms-and-dialogs-colordialog-usability 003](images/forms-and-dialogs-colordialog-usability003.png)|
+|__Professional__|![WinForms RadColorDialog forms-and-dialogs-colordialog-usability 004](images/forms-and-dialogs-colordialog-usability004.png)|
 
 The right side of each tab includes sample color swatches that show the __Current__ color property when the dialog was invoked and a __New__ color that will be used after the dialog closes. A hexadecimal entry shows the color as a numeric value that can be edited or pasted from another source.  An eye dropper control lets you pick up another color from anywhere on the screen. To use the eye dropper control, click the button and move the mouse over the screen.  Colors under the mouse are reflected in the hexadecimal value and the __New__ color patch. Left-click the mouse to retain a color selected by the eyedropper control.
 
 >caption Figure 1: Color Hex value
 
-![forms-and-dialogs-colordialog-usability 005](images/forms-and-dialogs-colordialog-usability005.png)
+![WinForms RadColorDialog Color Hex value](images/forms-and-dialogs-colordialog-usability005.png)
 
 The bottom area of each tab in __RadColorDialog__ displays a row of slots where selected colors can be saved. Use any of the tabs color selection tools to select a color, including the eye dropper, then click the __Add Custom Color__ button. These custom colors will be retained between invocations of the color dialog.
 
 >caption Figure 2: Eyedropper
 
-![forms-and-dialogs-colordialog-usability 006](images/forms-and-dialogs-colordialog-usability006.png)
+![WinForms RadColorDialog Eyedropper](images/forms-and-dialogs-colordialog-usability006.png)

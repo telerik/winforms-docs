@@ -57,7 +57,7 @@ End Sub
 
 >caption Figure 1: SparkLineSeries
 
-![](images/sparklineseries001.png)
+![WinForms RadSparkline SparkLineSeries](images/sparklineseries001.png)
 
 ### The essential properties of SparkPointSeries are:
 

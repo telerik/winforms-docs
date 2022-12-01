@@ -73,7 +73,7 @@ End Sub
 
 {{endregion}}
 
-![stepprogressbar-progress-mode 001](images/stepprogressbar-features-progressmode001.png)
+![WinForms RadStepProgressBar stepprogressbar-progress-mode 001](images/stepprogressbar-features-progressmode001.png)
 
 ## Single
 
@@ -139,7 +139,7 @@ End Sub
 
 {{endregion}}
 
-![stepprogressbar-progress-mode 001](images/stepprogressbar-features-progressmode002.png)
+![WinForms RadStepProgressBar stepprogressbar-progress-mode 001](images/stepprogressbar-features-progressmode002.png)
 
 ## Independent
 
@@ -205,7 +205,7 @@ End Sub
 
 {{endregion}}
 
-![stepprogressbar-progress-mode 001](images/stepprogressbar-features-progressmode003.png)
+![WinForms RadStepProgressBar stepprogressbar-progress-mode 001](images/stepprogressbar-features-progressmode003.png)
 
 ## See Also
 

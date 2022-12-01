@@ -57,7 +57,7 @@ End Sub
 
 >caption Figure 1: SparkAreaSeries
 
-![](images/sparkareaseries001.png)
+![WinForms RadSparkline SparkAreaSeries](images/sparkareaseries001.png)
 
  The essential properties of SparkAreaSeries coincide with these of SparkLineSeries:
 

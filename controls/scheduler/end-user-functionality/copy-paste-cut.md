@@ -76,7 +76,7 @@ End Sub
 {{endregion}}
 
 >caption Figure 1: Pasting Appointment
-![scheduler-end-user-functionality-copy-paste-cut 001](images/scheduler-end-user-functionality-copy-paste-cut001.gif)
+![WinForms RadScheduler Pasting Appointment](images/scheduler-end-user-functionality-copy-paste-cut001.gif)
 
 You can cancel this event as well in order to prevent pasting data in some cases.
 

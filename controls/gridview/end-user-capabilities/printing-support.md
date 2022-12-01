@@ -13,7 +13,7 @@ previous_url: gridview-end-user-capabilities-printing-support
 
 The __GridPrintSettingsDialog__ is allows the end user to edit the print style settings of RadGridView, the settings of the printed paper and the header and footer of the printed document. The first tab (__Format__) of the dialog is specific to the RadGridView the other two tabs, namely __Paper__ and __Header/Footer__, are discussed in the [Printing documentation section.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog%})
 
-![gridview-end-user-capabilities-printing-support](images/gridview-end-user-capabilities-printing-support.png)
+![WinForms RadGridView gridview-end-user-capabilities-printing-support](images/gridview-end-user-capabilities-printing-support.png)
 
 The __Format tab__ is divided into two sections.
 

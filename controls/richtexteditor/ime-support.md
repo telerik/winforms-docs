@@ -12,7 +12,7 @@ position: 11
 
 __RadRichTextEditor__ provides built-in support for the most commonly used Microsoft IMEs like Chinese IME, Japanese IME, Korean IME and etc. which are shipped with the Windows OS. 
 
-![richtexteditor-ime-support 001](images/richtexteditor-ime-support001.png)
+![WinForms RadRichTextEditor richtexteditor-ime-support 001](images/richtexteditor-ime-support001.png)
 
 
 # See Also

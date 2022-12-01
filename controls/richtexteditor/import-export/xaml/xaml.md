@@ -14,7 +14,7 @@ position: 0
 The __[eXtensible Application Markup Language(XAML)](https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language)__ is declaritive XML-based markup language develop by Microsoft for creating a rich graphical user interface(GUI). XAML language is the native __RadRichTextEditor__ document format.
 
 >caption Figure 1: XAML Document
-![XAML sample](images/RadRichTextBox_Formats_And_Conversion_XAML_01.PNG)
+![WinForms RadRichTextEditor XAML Document](images/RadRichTextBox_Formats_And_Conversion_XAML_01.PNG)
 
 __XamlFormatProvider__  is compliant with the XAML markup language.
 

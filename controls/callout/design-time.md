@@ -19,7 +19,7 @@ Select **RadCallout** and click the small arrow on the top right position in ord
 
 >caption Fig.1 Smart Tag
 
-![winforms/callout-design-time 001](images/callout-design-time001.png) 
+![WinForms RadCallout Smart Tag](images/callout-design-time001.png) 
 
 It is possible to associate any control available on the form. UserControls are also supported. Just set the **Associated Control** property from the Smart Tag.
 
@@ -35,7 +35,7 @@ It is possible to associate any control available on the form. UserControls are 
  
 >caption Fig.2 Properties
 
-![winforms/callout-design-time 002](images/callout-design-time002.png) 
+![WinForms RadCallout Properties](images/callout-design-time002.png) 
 
 # See Also
 

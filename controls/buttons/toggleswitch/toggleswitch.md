@@ -19,7 +19,7 @@ __RadToggleSwitch__ is a control designed to represent two states: e.g. *true*/*
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![buttons-toggleswitch-overview 001](images/buttons-toggleswitch-overview001.gif)
+![WinForms RadButtons buttons-toggleswitch-overview 001](images/buttons-toggleswitch-overview001.gif)
 
 # See Also
 

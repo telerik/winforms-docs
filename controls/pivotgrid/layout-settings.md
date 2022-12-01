@@ -19,7 +19,7 @@ You can control the layout type of the column and row headers via the following 
 
 >caption Figure 1: Row and Column Headers Layout
 
-![pivotgrid-layout-settings 001](images/pivotgrid-layout-settings001.png)
+![WinForms RadPivotGrid Row and Column Headers Layout](images/pivotgrid-layout-settings001.png)
 
 #### Headers Layout
 
@@ -45,7 +45,7 @@ You can also control where SubTotals and GrandTotals are displayed:
 
 >caption Figure 2: Totals Position
 
-![pivotgrid-layout-settings 002](images/pivotgrid-layout-settings002.png)
+![WinForms RadPivotGrid Totals Position](images/pivotgrid-layout-settings002.png)
 
 #### Set Grand and Sub Totals Position
 
@@ -73,7 +73,7 @@ When you set the **RowSubTotalsPosition** and **ColumnSubTotalsPosition** proper
 
 |Row Group with SubTotal| Row Group without SubTotal|
 |----|----|
-![pivotgrid-layout-settings 004](images/pivotgrid-layout-settings004.png)|![pivotgrid-layout-settings 005](images/pivotgrid-layout-settings005.png)|
+![WinForms RadPivotGrid pivotgrid-layout-settings 004](images/pivotgrid-layout-settings004.png)|![WinForms RadPivotGrid pivotgrid-layout-settings 005](images/pivotgrid-layout-settings005.png)|
 
 #### Hiding Sub Totals
 
@@ -109,7 +109,7 @@ When you have added more than one aggregate description, there are special heade
 
 >caption Figure 4: Aggregates Settings
 
-![pivotgrid-layout-settings 003](images/pivotgrid-layout-settings003.png)
+![WinForms RadPivotGrid Aggregates Settings](images/pivotgrid-layout-settings003.png)
 
 #### Set Aggregates Level and Position
 

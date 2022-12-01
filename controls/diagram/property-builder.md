@@ -14,11 +14,11 @@ In order to populate __RadDiagram__ with __RadDiagramItems__ you can add __RadDi
 
 >caption Figure 1: Smart Tag >> Open Property Builder
 
-![diagram-getting-started 002](images/diagram-getting-started002.png)
+![WinForms RadDiagram Smart Tag >> Open Property Builder](images/diagram-getting-started002.png)
 
 >caption Figure 2: Property Builder
 
-![diagram-getting-started 003](images/diagram-getting-started003.png)
+![WinForms RadDiagram Property Builder](images/diagram-getting-started003.png)
 
 The Property Builder allows you to drag a shapes from the [RadDiagramToolbox]({%slug winforms/diagram/toolbox%}) and drop it onto the __RadDiagram__ surface. Afterwards, you can connect several shapes by using the connectors. The [RadDiagramRibbonBar]({%slug winforms/diagram/ribbonui%}) gives you a set of options to customize the diagram and save the changes as well.
       

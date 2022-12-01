@@ -68,7 +68,7 @@ Now when you press the button, **RadSpellChecker** form will appear with the app
 
 >caption Figure 1: Spellchecking form
 
-![spellchecker-overview 001](images/spellchecker-overview001.png)
+![WinForms RadSpellChecker Spellchecking form](images/spellchecker-overview001.png)
 
 # See Also
 

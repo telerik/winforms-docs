@@ -20,7 +20,7 @@ The __ShapedForm__ control allows you to design and display a Windows form wit
 
 
 
-![forms-and-dialogs-shapedform-overview 001](images/forms-and-dialogs-shapedform-overview001.png)
+![WinForms RadShapedForm forms-and-dialogs-shapedform-overview 001](images/forms-and-dialogs-shapedform-overview001.png)
 
 
 # See Also

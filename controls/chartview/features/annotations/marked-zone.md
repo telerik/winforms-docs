@@ -30,7 +30,7 @@ Common properties to the two types of annotations include:
 The __CartesianMarkedzoneAnnotation__ is a rectangle defined by the __HorizontalFrom/To__ and __VerticalFrom/To__ properties.
 
 >caption Figure 1: Marked Annotation
-![chartview-annotations-markedzone-annotations 001](images/chartview-annotations-markedzone-annotations001.png)
+![WinForms RadChartView Marked Annotation](images/chartview-annotations-markedzone-annotations001.png)
 
 ### Properties
 
@@ -49,7 +49,7 @@ Besides the __HorizontalFrom/To__ and __VerticalFrom/To__ properties that are us
 In the following example additional styling is applied to the default look of the annotation.
 
 >caption Figure 2: Annotation With All Bounds Set
-![chartview-annotations-markedzone-annotations 002](images/chartview-annotations-markedzone-annotations002.png)
+![WinForms RadChartView Annotation With All Bounds Set](images/chartview-annotations-markedzone-annotations002.png)
 
 #### Define Annotation
 
@@ -134,14 +134,14 @@ Me.radChartView1.Annotations.Add(annotation)
 {{endregion}} 
 
 >caption Figure 3: Horizontally Defined Marked Zone
-![chartview-annotations-markedzone-annotations 003](images/chartview-annotations-markedzone-annotations003.png)
+![WinForms RadChartView Horizontally Defined Marked Zone](images/chartview-annotations-markedzone-annotations003.png)
 
 ## Polar Marked Zone Annotation
 
 The **PolarMarkedZoneAnnotation** defines a pie arc segment painted on a *Polar* area. This annotation is compatible for series using a *Polar* coordinate system: **RadarColumnSeries**, **RadarPointSeries**, and **PolarPointSeries**.
 
 >caption Figure 4: Polar Marked Zone Annotation in Combination with a RadarColumnSeries
-![chartview-annotations-markedzone-annotations 004](images/chartview-annotations-markedzone-annotations004.png)
+![WinForms RadChartView Polar Marked Zone Annotation in Combination with a RadarColumnSeries](images/chartview-annotations-markedzone-annotations004.png)
 
 ### Properties
 
@@ -162,7 +162,7 @@ Four properties need to be set for a polar marked zone annotation.
 The example below adds a **PolarMarkedZoneAnnotation** to a **PolarPointSeries**.
 
 >caption Figure 5: PolarPointSeries and Markzed Zone
-![chartview-annotations-markedzone-annotations 005](images/chartview-annotations-markedzone-annotations005.png)
+![WinForms RadChartView PolarPointSeries and Markzed Zone](images/chartview-annotations-markedzone-annotations005.png)
 
 #### Polar Marked Zone Settings
 

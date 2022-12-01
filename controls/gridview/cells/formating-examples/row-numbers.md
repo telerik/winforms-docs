@@ -14,7 +14,7 @@ By default, **RadGridView** displays a current row indicator in the row header r
 
 >caption Figure 1: Row numbers
 
-![gridview-cells-formatting-row-numbers 001](images/gridview-cells-formatting-row-numbers001.png)
+![WinForms RadGridView Row numbers](images/gridview-cells-formatting-row-numbers001.png)
 
 #### Handling the ViewCellFormatting event
 

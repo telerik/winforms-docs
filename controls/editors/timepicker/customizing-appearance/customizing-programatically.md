@@ -35,7 +35,7 @@ RadTimePicker1.TimePickerElement.MaskedEditBox.TextBoxItem.BackColor = Color.Red
 {{endregion}} 
  
 
-![editors-timepicker-customization 001](images/editors-timepicker-customization001.png)
+![WinForms RadDateTimePicker editors-timepicker-customization 001](images/editors-timepicker-customization001.png)
 
 ## Customize dropdown button
 
@@ -56,7 +56,7 @@ RadTimePicker1.TimePickerElement.DropDownButton.Padding = New Windows.Forms.Padd
 {{endregion}} 
  
 
-![editors-timepicker-customization 002](images/editors-timepicker-customization002.png)
+![WinForms RadDateTimePicker editors-timepicker-customization 002](images/editors-timepicker-customization002.png)
 
 ## Customize up/down buttons
 
@@ -82,7 +82,7 @@ RadTimePicker1.TimePickerElement.DownButton.Border.ForeColor = Color.Blue
 
 {{endregion}} 
 
-![editors-timepicker-customization 003](images/editors-timepicker-customization003.png)
+![WinForms RadDateTimePicker editors-timepicker-customization 003](images/editors-timepicker-customization003.png)
 
 ## Customize clock element appearance
 
@@ -112,7 +112,7 @@ RadTimePicker1.TimePickerElement.PopupContentElement.ClockElement.SecondsArrow.V
 
 {{endregion}} 
 
-![editors-timepicker-customization 004](images/editors-timepicker-customization004.png)
+![WinForms RadDateTimePicker editors-timepicker-customization 004](images/editors-timepicker-customization004.png)
 
 ## Customize hours and minutes headers
 
@@ -146,7 +146,7 @@ RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.TableHeader.He
 
 {{endregion}} 
 
-![editors-timepicker-customization 005](images/editors-timepicker-customization005.png)
+![WinForms RadDateTimePicker editors-timepicker-customization 005](images/editors-timepicker-customization005.png)
 
 ## Customize hours and minutes cells appearance
 
@@ -190,7 +190,7 @@ End Sub
 
 {{endregion}} 
 
-![editors-timepicker-customization 006](images/editors-timepicker-customization006.png)
+![WinForms RadDateTimePicker editors-timepicker-customization 006](images/editors-timepicker-customization006.png)
 
 ## Customize hours and minutes tables 
 
@@ -224,7 +224,7 @@ RadTimePicker1.TimePickerElement.PopupContentElement.MinutesTable.BackColor = Co
 
 {{endregion}} 
 
-![editors-timepicker-customization 007](images/editors-timepicker-customization007.png)
+![WinForms RadDateTimePicker editors-timepicker-customization 007](images/editors-timepicker-customization007.png)
 
 ## Customize button panel
 
@@ -244,7 +244,7 @@ RadTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Col
 
 {{endregion}} 
 
-![editors-timepicker-customization 008](images/editors-timepicker-customization008.png)
+![WinForms RadDateTimePicker editors-timepicker-customization 008](images/editors-timepicker-customization008.png)
 
 # See Also
 

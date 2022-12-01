@@ -14,14 +14,14 @@ The **DeleteRecurringAppointmentDialog** is shown when you try to delete a recur
 
 >caption Figure 1. DeleteRecurringAppointmentDialog
 
-![scheduler-winforms-scheduler-dialogs-deleterecurringappointmentdialog 001](images/scheduler-winforms-scheduler-dialogs-deleterecurringappointmentdialog001.png)
+![WinForms RadScheduler DeleteRecurringAppointmentDialog](images/scheduler-winforms-scheduler-dialogs-deleterecurringappointmentdialog001.png)
 
 It will pop up when you press the `Delete` key while a recurring appointment is selected. Alternatively, you can show it by pressing the **Delete** button in the **EditAppointmentDialog** while editing a single occurrence.
 
 
 >caption Figure 2. Delete button in the EditAppointmentDialog
 
-![scheduler-winforms-scheduler-dialogs-deleterecurringappointmentdialog 002](images/scheduler-winforms-scheduler-dialogs-deleterecurringappointmentdialog002.png)
+![WinForms RadScheduler Delete button in the EditAppointmentDialog](images/scheduler-winforms-scheduler-dialogs-deleterecurringappointmentdialog002.png)
 
 ## Create a custom DeleteRecurringAppointmentDialog
 
@@ -37,7 +37,7 @@ In the following example, we will create a derivative of the **DeleteRecurringAp
 
 >caption Figure 3. Custom DeleteRecurringAppointmentDialog
 
-![scheduler-winforms-scheduler-dialogs-deleterecurringappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-deleterecurringappointmentdialog003.png)
+![WinForms RadScheduler Custom DeleteRecurringAppointmentDialog](images/scheduler-winforms-scheduler-dialogs-deleterecurringappointmentdialog003.png)
 
 {{source=..\SamplesCS\Scheduler\Dialogs\CustomDeleteRecurringAppointmentDialog.cs region=MyDeleteRecurringAppointmentDialog}}
 {{source=..\SamplesVB\Scheduler\Dialogs\CustomDeleteRecurringAppointmentDialog.vb region=MyDeleteRecurringAppointmentDialog}}    

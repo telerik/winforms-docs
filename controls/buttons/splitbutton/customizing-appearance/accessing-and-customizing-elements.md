@@ -20,14 +20,14 @@ You can access and modify the style for different elements in __RadSplitButton__
 
 >caption Fig.1 Element hierarchy editor
 
-![splitbutton-customizing-appearance-accessing-and-customizing-elements 001](images/splitbutton-customizing-appearance-accessing-and-customizing-elements001.png)
+![WinForms RadButtons Element hierarchy editor](images/splitbutton-customizing-appearance-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
 >caption Fig.2 Customize elements
 
-![splitbutton-customizing-appearance-accessing-and-customizing-elements 002](images/splitbutton-customizing-appearance-accessing-and-customizing-elements002.png)
+![WinForms RadButtons Customize elements](images/splitbutton-customizing-appearance-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

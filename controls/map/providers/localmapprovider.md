@@ -14,7 +14,7 @@ __RadMap__ can visualize data from local image files by using a __LocalMapProvid
 
 >caption Figure 1: LocalMapProvider 
 
-![map-localmapprovider 001](images/map-localmapprovider001.png)
+![WinForms RadMap LocalMapProvider](images/map-localmapprovider001.png)
 
 #### Using LocalMapProvider
 

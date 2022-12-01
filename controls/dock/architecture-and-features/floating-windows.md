@@ -31,7 +31,7 @@ You can drag __DockPanels__ to an existing floating container. Select left, rig
 
 >caption Figure 1: Dock window inside floating window.
 
-![dock-architecture-and-features-floating-windows 001](images/dock-architecture-and-features-floating-windows001.gif) 
+![WinForms RadDock Dock window inside floating window](images/dock-architecture-and-features-floating-windows001.gif) 
 
 ## Unfloating a ToolWindow
 
@@ -43,14 +43,14 @@ If you use the drop target icons in the [DockingAssistant]({%slug winforms/dock/
 
 >caption Figure 2: Re-Dock floating window.
 
-![dock-architecture-and-features-floating-windows 002](images/dock-architecture-and-features-floating-windows002.gif)
+![WinForms RadDock Re-Dock floating window](images/dock-architecture-and-features-floating-windows002.gif)
 
 ## Moving a Floating ToolWindow to an Existing Container
 
 If you use the drop target icons in the inner zone different than the fill option, the __RadDock__ will insert the __ToolWindow__ that was in the floating container into an new docked container. Then, it will rearrange other docking containers within that container to accommodate the new docking container, subject to any minimum or maximum size restrictions. 
 
 >caption Figure 3: Moving a Floating ToolWindow to an Existing Container.
-![dock-architecture-and-features-floating-windows 003](images/dock-architecture-and-features-floating-windows003.gif)
+![WinForms RadDock Moving a Floating ToolWindow to an Existing Container](images/dock-architecture-and-features-floating-windows003.gif)
 
 ## Floating a document window
 
@@ -58,7 +58,7 @@ Document windows can also reside in a floating window. To make a document window
 
 >caption Figure 4: Floating a document window.
 
-![dock-architecture-and-features-floating-windows 004](images/dock-architecture-and-features-floating-windows004.gif)
+![WinForms RadDock Floating a document window](images/dock-architecture-and-features-floating-windows004.gif)
 
 ## Moving a document window to an existing floating window
 
@@ -66,7 +66,7 @@ You can drag document windows to an existing floating container. Select left, ri
 
 >caption Figure 5: Moving a document window to an existing floating window.
 
-![dock-architecture-and-features-floating-windows 005](images/dock-architecture-and-features-floating-windows005.gif)
+![WinForms RadDock Moving a document window to an existing floating window](images/dock-architecture-and-features-floating-windows005.gif)
 
 ## Changing the floating behavior
 

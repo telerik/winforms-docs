@@ -19,7 +19,7 @@ Using the **CellFormatting** event you can also set various properties of the **
 
 >caption Figure 1: Formatting Pivot Data Cells
 
-![pivotgrid-formatting-appearance 001](images/pivotgrid-formatting-appearance001.png)
+![WinForms RadPivotGrid Formatting Pivot Data Cells](images/pivotgrid-formatting-appearance001.png)
 
 #### CellFormatting Event
 
@@ -70,7 +70,7 @@ End Sub
 The **GroupElementFormatting** event can be used for styling the group cells:
 
 >caption Figure 2: Formatting Group Cells
-![pivotgrid-formatting-appearance 002](images/pivotgrid-formatting-appearance002.png)
+![WinForms RadPivotGrid Formatting Group Cells](images/pivotgrid-formatting-appearance002.png)
 
 #### GroupElementFormatting Event
 

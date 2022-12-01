@@ -14,7 +14,7 @@ previous_url: ribbonbar-programming-radribbonbar-customizing-the-quick-access-me
 __Quick Access Toolbar__ is an area of __RadRibbonBar__ above the tabs.
 
 >caption Figure 1: Quick Access Toolbar 
-![ribbonbar-programming-radribbonbar-customizing-the-quick-access-menu 001](images/ribbonbar-programming-radribbonbar-customizing-the-quick-access-menu001.png)
+![WinForms RadRibbonBar Quick Access Toolbar](images/ribbonbar-programming-radribbonbar-customizing-the-quick-access-menu001.png)
 
 __Quick Access Toolbar__ can contain the same elements as __RadMenu.__
 

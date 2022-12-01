@@ -29,7 +29,7 @@ You can set the __DataSource__ property at design time in the *Properties* windo
  
 >caption Figure 1: DataSource
 
-![multicolumncombobox-databinding 001](images/multicolumncombobox-databinding001.png)
+![WinForms RadMultiColumnComboBox DataSource](images/multicolumncombobox-databinding001.png)
 
 This will force the **RadGridView** (contained in **RadMultiColumnComboBox**) to auto-generate columns for each field in the specified **DataSource**. 
 
@@ -37,13 +37,13 @@ This will force the **RadGridView** (contained in **RadMultiColumnComboBox**) to
 
 >caption Figure 2: DisplayMember and ValueMember
 
-![multicolumncombobox-databinding 002](images/multicolumncombobox-databinding002.png)
+![WinForms RadMultiColumnComboBox DisplayMember and ValueMember](images/multicolumncombobox-databinding002.png)
 
 As a result **RadMultiColumnComboBox** is bound to the Northwind.Customers table:
 
 >caption Figure 3: Bound RadMultiColumnComboBox
 
-![multicolumncombobox-databinding 003](images/multicolumncombobox-databinding003.png)
+![WinForms RadMultiColumnComboBox Bound RadMultiColumnComboBox](images/multicolumncombobox-databinding003.png)
 
 ###  Columns collection
 
@@ -51,11 +51,11 @@ You can set your own columns list using the [Columns](https://docs.telerik.com/
 
 >caption Figure 4: GridViewDataColumn Collection Editor
 
-![multicolumncombobox-databinding 004](images/multicolumncombobox-databinding004.png)
+![WinForms RadMultiColumnComboBox GridViewDataColumn Collection Editor](images/multicolumncombobox-databinding004.png)
 
 The collection editor is accessible through the [Columns](https://docs.telerik.com/devtools/winforms/controls/gridview/columns/gridviewcolumn) property in the *Properties* grid: 
 
-![multicolumncombobox-databinding 005](images/multicolumncombobox-databinding005.png)
+![WinForms RadMultiColumnComboBox multicolumncombobox-databinding 005](images/multicolumncombobox-databinding005.png)
 
 The important point when adding columns manually is to turn off the automatic generation of columns, otherwise you will have your columns duplicated in run time.
 

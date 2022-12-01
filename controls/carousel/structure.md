@@ -14,7 +14,7 @@ The bellow image shows the __RadCaroucel__ elements:
 
 >caption Figure 1: RadCarousel Elements.
 
-![carousel-structure 001](images/carousel-structure001.png)
+![WinForms RadCarousel RadCarousel Elements](images/carousel-structure001.png)
 
 # Elements Hierarchy
 
@@ -23,7 +23,7 @@ __RadCarousel__ consist of the following elements:
 * __Items Container__ the container which holds the items.
 * __Navigation Buttons__ These buttons allows you to change the current item.
 
-![carousel-structure 002](images/carousel-structure002.png)
+![WinForms RadCarousel carousel-structure 002](images/carousel-structure002.png)
 
 # See Also
 

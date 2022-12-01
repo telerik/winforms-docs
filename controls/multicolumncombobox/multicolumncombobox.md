@@ -18,7 +18,7 @@ previous_url: multicolumncombobox-overview
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![multicolumncombobox-overview 001](images/multicolumncombobox-overview001.png)
+![WinForms RadMultiColumnComboBox multicolumncombobox-overview 001](images/multicolumncombobox-overview001.png)
 
 ## Key Featues
 

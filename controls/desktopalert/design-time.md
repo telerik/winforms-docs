@@ -18,7 +18,7 @@ Select __RadDesktopAlert__ and click the small arrow on the top right position i
 
 >caption Fig.1 Smart Tag
 
-![desktopalert-desing-time 001](images/desktopalert-design-time001.png)
+![WinForms RadDesktopAlert Smart Tag](images/desktopalert-design-time001.png)
 
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 

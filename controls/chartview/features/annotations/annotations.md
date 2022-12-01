@@ -30,7 +30,7 @@ __RadChartView__ provides the following types of annotations:
 * __Radial axis plot band (associated with the radial axis)__
 
 >caption Figure 1: Chart Annotations
-![chartview-annotations 001](images/chartview-annotations001.png)
+![WinForms RadChartView Chart Annotations](images/chartview-annotations001.png)
 
 # Common Properties
 
@@ -45,7 +45,7 @@ __RadChartView__ provides the following types of annotations:
 The __DrawMode__ property indicates whether the annotation should be drawn above the data points or beneath them.
 
 >caption Figure 2: Annotations Draw Mode
-![chartview-annotations 002](images/chartview-annotations002.png)
+![WinForms RadChartView Annotations Draw Mode](images/chartview-annotations002.png)
 
 # See Also
 

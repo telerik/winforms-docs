@@ -19,7 +19,7 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
 >caption Figure 1: The final result
 
-![grid-getting-started 001](images/grid-getting-started001.png)
+![WinForms RadGridView The final result](images/grid-getting-started001.png)
 
 ## Setting up the Form
 
@@ -36,7 +36,7 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 1. Select __Add Project Data Source__. This step will open the __Data Source Configuration Wizard__.
 
 1. On the __Choose a Data Source Type__ page, select __Database__ and click __Next__.
-![grid-getting-started 002](images/grid-getting-started002.png)
+![WinForms RadGridView grid-getting-started 002](images/grid-getting-started002.png)
 
 1. On the __Choose a Database Model__ page, select __Dataset__.
 
@@ -64,7 +64,7 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
 1. Expand the `Products` table and select the following columns: `ProductName`, `CategoryID`, `UnitsOnOrder` and `Discontinued`.
 
-    ![grid-getting-started 003](images/grid-getting-started003.png)
+    ![WinForms RadGridView grid-getting-started 003](images/grid-getting-started003.png)
 
 1. Click __Finish__ to close the __Data Source Configuration Wizard__.
 
@@ -74,7 +74,7 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
 1. Select `Categories` from the `NwindDataSet` data source. This step will create the `categoriesBindingSource` and `categoriesTableAdapter` components.
 
-    ![grid-getting-started 004](images/grid-getting-started004.png)
+    ![WinForms RadGridView grid-getting-started 004](images/grid-getting-started004.png)
 
 1. Select the `DataSource` property drop-down for a second time.
 
@@ -84,7 +84,7 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
 1. Select `NwindDataSet`. This step will assign the entire data set to the grid.
 
-    ![grid-getting-started 005](images/grid-getting-started005.png)
+    ![WinForms RadGridView grid-getting-started 005](images/grid-getting-started005.png)
 
 ## Setting Properties
 

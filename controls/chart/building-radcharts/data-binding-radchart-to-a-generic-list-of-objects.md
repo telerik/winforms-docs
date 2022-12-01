@@ -20,7 +20,7 @@ You can bind to a [generic lists](http://msdn2.microsoft.com/en-us/library/6sh2e
 
 >caption 
 
-![chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-objects 001](images/chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-objects001.png)
+![WinForms RadChart ](images/chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-objects001.png)
 
 The Product object is defined with a constructor that passes both Name and QuantityInStock:  
 

@@ -32,7 +32,7 @@ radSpreadsheet.SpreadsheetElement.VisibleSize = New SizeI(5, 10)
 
 As a result, __RadSpreadsheet__ displays to the user only 5 columns and 10 rows:
 
-![Rad Spreadsheet UI Restrict Number Visible Rows Columns 1](images/spreadsheet-restrict-the-number-of-visible-rows-and-columns001.png)
+![WinForms RadSpreadsheet Rad Spreadsheet UI Restrict Number Visible Rows Columns 1](images/spreadsheet-restrict-the-number-of-visible-rows-and-columns001.png)
 
 ## How it works?
 

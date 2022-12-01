@@ -14,13 +14,13 @@ This article describes the inner structure and organization of the elements whic
 
 >caption Figure 1: RadMenu's elements hierarchy
 
-![menus-menu-structure 001](images/menus-menu-structure001.png)
+![WinForms RadMenus RadMenu's elements hierarchy](images/menus-menu-structure001.png)
 
-![menus-menu-structure 003](images/menus-menu-structure003.png)
+![WinForms RadMenus menus-menu-structure 003](images/menus-menu-structure003.png)
         
 >caption Figure 2: RadMenu visual structure
 
-![menus-menu-structure 002](images/menus-menu-structure002.png)
+![WinForms RadMenus RadMenu visual structure](images/menus-menu-structure002.png)
 
 1. **RadMenuElement**    
 	1\.1\. **WrapLayoutPanel**       

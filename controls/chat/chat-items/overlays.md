@@ -12,7 +12,7 @@ position: 3
 
 **RadChat** offers different overlays to present the user a selection of choices either as a pop up, or over the messages' view. The overlay is visible until the user selects a certain choice. 
 
-![winforms/chat-overview 004](images/chat-overview004.gif)
+![WinForms RadChat winforms/chat-overview 004](images/chat-overview004.gif)
 
 Depending on the information that is presented and the choice that should be made, the overlays can be one of the types listed below. 
 
@@ -24,7 +24,7 @@ When you press the `OK` button, a new message will be automatically added with t
 
 >caption Figure 1: ChatCalendarOverlay
 
-![winforms/chat-items-overlays 001](images/chat-items-overlays001.gif) 
+![WinForms RadChat ChatCalendarOverlay](images/chat-items-overlays001.gif) 
 
 #### Adding a ChatCalendarOverlay
 
@@ -59,7 +59,7 @@ You have access to the calendar itself by the ChatCalendarOverlay.**Calendar** p
 
 >caption Figure 2: ChatDateTimeOverlay
 
-![winforms/chat-items-overlays 002](images/chat-items-overlays002.gif) 
+![WinForms RadChat ChatDateTimeOverlay](images/chat-items-overlays002.gif) 
 
 #### Adding a ChatDateTimeOverlay
 
@@ -92,7 +92,7 @@ Me.radChat1.AddMessage(overlayMessage)
 
 >caption Figure 3: ChatListOverlay
 
-![winforms/chat-items-overlays 003](images/chat-items-overlays003.gif) 
+![WinForms RadChat ChatListOverlay](images/chat-items-overlays003.gif) 
 
 #### Adding a ChatListOverlay
 
@@ -134,7 +134,7 @@ You have access to the list view by the ChatListOverlay.**ListView** property.
 
 >caption Figure 4: ChatTimeOverlay
 
-![winforms/chat-items-overlays 004](images/chat-items-overlays004.gif) 
+![WinForms RadChat ChatTimeOverlay](images/chat-items-overlays004.gif) 
 
 #### Adding a ChatTimeOverlay
 

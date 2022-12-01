@@ -41,7 +41,7 @@ End Sub
 {{endregion}} 
  
 The result is:
-![dock-object-model-customizing-floating-windows 001](images/dock-object-model-customizing-floating-windows001.png)
+![WinForms RadDock dock-object-model-customizing-floating-windows 001](images/dock-object-model-customizing-floating-windows001.png)
 
 ## Allowing the FloatingWindow to be under the main form
 
@@ -114,7 +114,7 @@ End Sub
  
 
 Here is the result. As you can see, the form that contains the **RadDock** manager can cover the **FloatingWindow**:
-![dock-object-model-customizing-floating-windows 002](images/dock-object-model-customizing-floating-windows002.png)
+![WinForms RadDock dock-object-model-customizing-floating-windows 002](images/dock-object-model-customizing-floating-windows002.png)
 
 ## Setting the theme of a FloatingWindow
 
@@ -140,7 +140,7 @@ End Sub
 {{endregion}} 
 
 
-![dock-object-model-customizing-floating-windows 003](images/dock-object-model-customizing-floating-windows003.png)
+![WinForms RadDock dock-object-model-customizing-floating-windows 003](images/dock-object-model-customizing-floating-windows003.png)
 
 # See Also
 

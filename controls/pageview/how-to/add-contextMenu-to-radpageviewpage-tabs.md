@@ -15,7 +15,7 @@ This help article will demonstrate you how to add custom __RadContextMenu__ to _
 
 >caption Figure 1: Context menu
 
-![](images/pageview-how-to-add-contextmenu-to-radpageview-tabs001.png)
+![WinForms RadPageView Context menu](images/pageview-how-to-add-contextmenu-to-radpageview-tabs001.png)
 
 To create your custom __RadContextMenu__, add its' __RadMenuItems__, set their properties and add them to the RadContextMenu.**Items** collection:
 

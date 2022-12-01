@@ -14,20 +14,20 @@ This article demonstrates how to populate __RadCheckedDropDownList__ with data a
 
 >caption Figure 1: RadCheckedListDataItem Collection Editor
 
-![dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time 001](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time001.png)
+![WinForms RadCheckedDropDownList RadCheckedListDataItem Collection Editor](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time001.png)
 
 
 You can access it through the *Smart tag >> Edit Items* option:
 
 >caption Figure 2: Smart tag options
 
-![dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time 002](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time002.png)
+![WinForms RadCheckedDropDownList Smart tag options](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time002.png)
 
 Another possibility to open the editor is via the __Items__ collection in the *Properties* Visual Studio section:
 
 >caption Figure 3:  Visual Studio Properties window
 
-![dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time 003](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time003.png)
+![WinForms RadCheckedDropDownList Visual Studio Properties window](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time003.png)
 
 You can add two item types:
 
@@ -35,26 +35,26 @@ You can add two item types:
 
 >caption Figure 4: Sample RadCheckedListDataItem
 
-![dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time 004](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time004.png)
+![WinForms RadCheckedDropDownList Sample RadCheckedListDataItem](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time004.png)
 
 Below you can find the properties associated with the __RadCheckedListDataItem__:
 
 >caption Figure 5:  RadCheckedListDataItem's properties
 
-![dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time 005](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time005.png)
+![WinForms RadCheckedDropDownList RadCheckedListDataItem's properties](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time005.png)
 
 * __DescriptionTextCheckedListDataItem__ – similar to the __RadCheckedListDataItem__. In addition, it displays some description below the item’s text.
 
 >caption Figure 6:  Sample DescriptionTextCheckedListDataItem
 
-![dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time 006](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time006.png)
+![WinForms RadCheckedDropDownList Sample DescriptionTextCheckedListDataItem](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time006.png)
 
 
 You have two additional properties: __DescriptionFont__ and __DescriptionText__ which specifies the font and the text associated with the item’s description.
 
 >caption Figure 7:  DescriptionTextCheckedListDataItem's properties
 
-![dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time 007](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time007.png)
+![WinForms RadCheckedDropDownList DescriptionTextCheckedListDataItem's properties](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time007.png)
 
 # See Also
 

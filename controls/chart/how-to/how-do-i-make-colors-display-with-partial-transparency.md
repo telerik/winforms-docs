@@ -30,4 +30,4 @@ In the example below both series have a main color with a transparency of 90%.
 
 >caption 
 
-![chart-how-to-make-colors-display-with-partial-transparency 001](images/chart-how-to-make-colors-display-with-partial-transparency001.png)
+![WinForms RadChart ](images/chart-how-to-make-colors-display-with-partial-transparency001.png)

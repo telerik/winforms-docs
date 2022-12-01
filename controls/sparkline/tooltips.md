@@ -25,7 +25,7 @@ The tooltips are supported out of the box and you just need to enable them.
 
 The default tooltips will displayed when hovering over a particular data point. 
 
-![](images/sparkline-tooltips001.png)
+![WinForms RadSparkline ](images/sparkline-tooltips001.png)
 
 
 ## Customizing Tooltip Text

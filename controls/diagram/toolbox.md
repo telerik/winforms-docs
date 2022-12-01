@@ -13,7 +13,7 @@ previous_url: diagram-toolbox
 
 __RadDiagramToolbox__  introduces a set of shapes that can be dragged to a __RadDiagram__. Internally, this control is a derivative of **RadListView** in ListViewType.**IconsView** which is grouped by shape types.
 
-![diagram-toolbox 001](images/diagram-toolbox001.png)
+![WinForms RadDiagram diagram-toolbox 001](images/diagram-toolbox001.png)
 
 ## Using the RadDiagramToolbox at design time
 

@@ -63,7 +63,7 @@ If you apply the above filter to a __RadDropDownList__ that is bound to the Nort
         
 >caption Figure 1: Filter
 
-![dropdown-and-listcontrol-dropdownlist-filtering 001](images/dropdown-and-listcontrol-dropdownlist-filtering001.png)
+![WinForms RadDropDownList Filter](images/dropdown-and-listcontrol-dropdownlist-filtering001.png)
 
 Another option to filter the items is to specify the __FilterExpression__ property.
 
@@ -84,7 +84,7 @@ Me.radDropDownList1.FilterExpression = "Country LIKE 'Argentina'"
  
 >caption Figure 2: FilteringExpression
 
-![dropdown-and-listcontrol-dropdownlist-filtering 002](images/dropdown-and-listcontrol-dropdownlist-filtering002.png)
+![WinForms RadDropDownList FilteringExpression](images/dropdown-and-listcontrol-dropdownlist-filtering002.png)
 
 >note The __IsFilterActive__ property gets a value indicating whether there is a __Filter__ or __FilterExpression__ set.
 >

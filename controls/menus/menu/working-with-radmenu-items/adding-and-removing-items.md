@@ -17,7 +17,7 @@ In order to add top level "main" menu items use the RadMenu.__Items__ collection
 
 >caption Figure 1: Adding menu items
 
-![menus-menu-working-with-radmenu-items-adding-and-removing-items 001](images/menus-menu-working-with-radmenu-items-adding-and-removing-items001.png)
+![WinForms RadMenus Adding menu items](images/menus-menu-working-with-radmenu-items-adding-and-removing-items001.png)
 
 #### Constructing and adding menu items
 
@@ -53,7 +53,7 @@ Adding sub menu items plays by the same rules as adding items to the RadMenu.__I
 
 >caption Figure 2: Adding sub menu items
 
-![menus-menu-working-with-radmenu-items-adding-and-removing-items 002](images/menus-menu-working-with-radmenu-items-adding-and-removing-items002.png)
+![WinForms RadMenus Adding sub menu items](images/menus-menu-working-with-radmenu-items-adding-and-removing-items002.png)
 
 #### Adding menu sub items
 
@@ -103,7 +103,7 @@ End Sub
 
 >caption Figure 3: Adding combo item
 
-![menus-menu-working-with-radmenu-items-adding-and-removing-items 003](images/menus-menu-working-with-radmenu-items-adding-and-removing-items003.png)
+![WinForms RadMenus Adding combo item](images/menus-menu-working-with-radmenu-items-adding-and-removing-items003.png)
 
 #### Adding combo sub item
 

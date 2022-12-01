@@ -84,7 +84,7 @@ verticalAxis.HorizontalLocation = AxisHorizontalLocation.Right
 {{endregion}} 
 
 >caption Figure 1: LinearAxis Setup
-![chartview-axes-linear 001](images/chartview-axes-linear001.png)
+![WinForms RadChartView LinearAxis Setup](images/chartview-axes-linear001.png)
 
 # See Also
 

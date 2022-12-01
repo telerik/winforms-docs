@@ -118,7 +118,7 @@ End Sub
 
 {{endregion}} 
 
-![treeview-working-with-nodes-custom-sorting 001](images/treeview-working-with-nodes-custom-sorting001.png)
+![WinForms RadTreeView treeview-working-with-nodes-custom-sorting 001](images/treeview-working-with-nodes-custom-sorting001.png)
 
 # See Also
 * [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})

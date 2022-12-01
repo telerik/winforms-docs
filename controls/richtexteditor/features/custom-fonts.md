@@ -14,7 +14,7 @@ position: 10
 
 >caption Figure 1: Custom Font
 
-![richtexteditor-features-cutom-fonts 001](images/richtexteditor-features-cutom-fonts001.png)
+![WinForms RadRichTextEditor Custom Font](images/richtexteditor-features-cutom-fonts001.png)
 
 In order to utilize this functionality, one needs to load the font carried with the application and then register it with the editor.
 

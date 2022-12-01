@@ -13,7 +13,7 @@ previous_url: gridview-populating-with-data-databinding-radgridview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Binding RadGridView for WinForms to OpenAccess](http://tv.telerik.com/watch/winforms/binding-radgridview-for-winforms-to-openaccess)<br>In this video, you will learn how to bind RadGridView for WinForms to OpenAccess entities.|![gridview-populating-with-data-databinding-radgridview 001](images/gridview-populating-with-data-databinding-radgridview001.png)|
+|[WinForms RadGridView Binding RadGridView for WinForms to OpenAccess](http://tv.telerik.com/watch/winforms/binding-radgridview-for-winforms-to-openaccess)<br>In this video, you will learn how to bind RadGridView for WinForms to OpenAccess entities.|![WinForms RadGridView gridview-populating-with-data-databinding-radgridview 001](images/gridview-populating-with-data-databinding-radgridview001.png)|
 
 ## 
 

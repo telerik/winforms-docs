@@ -20,11 +20,11 @@ Stacked bar charts are used to compare contributions of values to a total across
 To create a Vertical Stacked Bar Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __StackedBar__.
 >caption 
 
-![chart-undestanding-radchart-types-stacked-bar-charts 001](images/chart-undestanding-radchart-types-stacked-bar-charts001.png)
+![WinForms RadChart ](images/chart-undestanding-radchart-types-stacked-bar-charts001.png)
  
 To create a Horizontal Stacked Bar Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __StackedBar__.
 
-![chart-undestanding-radchart-types-stacked-bar-charts 002](images/chart-undestanding-radchart-types-stacked-bar-charts002.png)
+![WinForms RadChart chart-undestanding-radchart-types-stacked-bar-charts 002](images/chart-undestanding-radchart-types-stacked-bar-charts002.png)
 
 To display custom labeling on the X-Axis "Qtr 1", "Qtr 2", etc., set the RadChart __PlotArea.XAxis Autoscale__ property to False.  Use the __PlotArea.XAxis.Items__ property and for each item set the __TextBlock Text__ property to the desired label.
         

@@ -17,7 +17,7 @@ Please refer to the next [section]({%slug winforms/menus/menu/menu-merge/menu-me
 
 >caption Figure 1: Menu Merge
 
-![menus-menu-menu-merge-menu-merge-in-mdi-applications 001](images/menus-menu-menu-merge-menu-merge-in-mdi-applications001.gif)
+![WinForms RadMenus Menu Merge](images/menus-menu-menu-merge-menu-merge-in-mdi-applications001.gif)
 
 # See Also
 

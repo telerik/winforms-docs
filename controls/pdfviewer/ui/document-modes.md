@@ -18,7 +18,7 @@ This document presenter displays the pages in a vertical order and is used by de
 
 >caption Figure 1: Pages Mode
 
-![pdfviewer-overview 001](images/pdfviewer-ui-documents-presenter001.gif)
+![WinForms RadPdfViewer Pages Mode](images/pdfviewer-ui-documents-presenter001.gif)
 
 ## Single Page Mode (Fit Full Page)
 
@@ -42,7 +42,7 @@ Me.RadPdfViewer1.FitFullPage = True
 
 >caption Figure 2: Fit Full Width
 
-![pdfviewer-overview 001](images/pdfviewer-ui-documents-presenter002.gif)
+![WinForms RadPdfViewer Fit Full Width](images/pdfviewer-ui-documents-presenter002.gif)
 
 ## Fit Full Width
 
@@ -64,7 +64,7 @@ Me.RadPdfViewer1.FitToWidth = True
 
 >caption Figure 3: Fit To Width
 
-![pdfviewer-overview 001](images/pdfviewer-ui-documents-presenter003.gif)
+![WinForms RadPdfViewer Fit To Width](images/pdfviewer-ui-documents-presenter003.gif)
 
 
 # See Also

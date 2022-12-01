@@ -59,7 +59,7 @@ End Sub
 
 {{endregion}} 
 
-![ganttview-formatting-custom-paiting 001](images/ganttview-formatting-custom-paiting001.png)
+![WinForms RadGanttView ganttview-formatting-custom-paiting 001](images/ganttview-formatting-custom-paiting001.png)
 
 Another example demonstrating how to draw a colored rectangle which would be 10 hours in duration and will "start" 18 hours before each summary task.
 
@@ -104,7 +104,7 @@ End Sub
 {{endregion}} 
 
 
-![ganttview-formatting-custom-paiting 002](images/ganttview-formatting-custom-paiting002.png)
+![WinForms RadGanttView ganttview-formatting-custom-paiting 002](images/ganttview-formatting-custom-paiting002.png)
 
 # See Also
 

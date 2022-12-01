@@ -56,7 +56,7 @@ The bellow example demonstrates the main capabilities of __RadCheckedListBox__.
 2\. Add two panels to the split container. For example by using the smart tag.
             
 
-3\. Add  __RadLabel__, __RadCheckedListBox__ and a __RadButton__ to each of the panels. At this point the form should look like this: ![checkedlistbox-getting-started 001](images/checkedlistbox-getting-started001.png)
+3\. Add  __RadLabel__, __RadCheckedListBox__ and a __RadButton__ to each of the panels. At this point the form should look like this: ![WinForms RadCheckedListBox checkedlistbox-getting-started 001](images/checkedlistbox-getting-started001.png)
 
 4\. Now you are ready to bind the control. Open the code behind and add the following:  
 
@@ -348,4 +348,4 @@ End If
 {{endregion}} 
 
 
-![checkedlistbox-getting-started 002](images/checkedlistbox-getting-started002.png)
+![WinForms RadCheckedListBox checkedlistbox-getting-started 002](images/checkedlistbox-getting-started002.png)

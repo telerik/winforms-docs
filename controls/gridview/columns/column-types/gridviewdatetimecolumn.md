@@ -15,7 +15,7 @@ __GridViewDateTimeColumn__ provides date entry and formatting for DateTime data 
 
 >caption Figure 1: GridViewDateTimeColumn in edit mode
 
-![gridview-columns-gridviewdatetimecolumn 002](images/gridview-columns-gridviewdatetimecolumn001.png)
+![WinForms RadGridView GridViewDateTimeColumn in edit mode](images/gridview-columns-gridviewdatetimecolumn001.png)
 
 #### Formatting the date.
 

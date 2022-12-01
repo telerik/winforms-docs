@@ -18,13 +18,13 @@ Buttons can be added directly after typing inside the element with text *Type he
 
 >caption Figure 1: Add buttons at design time.
 
-![radtabbedform-buttons001](images/radtabbedform-buttons001.gif)
+![WinForms RadTabbedForm Add buttons at design time](images/radtabbedform-buttons001.gif)
 
 Other predefined elements can be added using the Collection Editor of the Left/RightItems collections:
 
 >caption Figure 2: Add Elements in Collection Editor
 
-![radtabbedform-buttons003](images/radtabbedform-buttons003.png)
+![WinForms RadTabbedForm Add Elements in Collection Editor](images/radtabbedform-buttons003.png)
 
 ## Add Items at Run-Time
 
@@ -49,4 +49,4 @@ Me.TabbedFormControl.RightItems.Add(New RadButtonElement With {.Text = "button2"
 
 >caption Figure 1:Adding Buttons Programmatically.
 
-![radtabbedform-buttons002](images/radtabbedform-buttons002.png)
+![WinForms RadTabbedForm Adding Buttons Programmatically](images/radtabbedform-buttons002.png)

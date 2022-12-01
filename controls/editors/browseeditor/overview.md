@@ -19,7 +19,7 @@ __RadBrowseEditor__ is a themable control which allows users to select a file or
 {% endif %}
 
 >caption Figure 1: RadBrowseEditor
-![editors-browse-editor-overview 001](images/editors-browse-editor-overview001.png)
+![WinForms RadBrowseEditor RadBrowseEditor](images/editors-browse-editor-overview001.png)
 
 The dialog type is determined by the __BrowseEditorDialogType__ enumeration and defined through the __DialogType__ property.
 

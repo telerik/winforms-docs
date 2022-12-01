@@ -45,7 +45,7 @@ Me.RadGridView1.GroupDescriptors.Add(descriptor)
 
 {{endregion}} 
 
-![gridview-group-aggregates 001](images/gridview-group-aggregates001.png)
+![WinForms RadGridView gridview-group-aggregates 001](images/gridview-group-aggregates001.png)
 
 
 #### Example 2: Adding and formatting several aggregates.
@@ -77,7 +77,7 @@ Me.RadGridView1.GroupDescriptors.Add(descriptor)
 {{endregion}} 
 
 
-![gridview-group-aggregates 002](images/gridview-group-aggregates002.png)
+![WinForms RadGridView gridview-group-aggregates 002](images/gridview-group-aggregates002.png)
 # See Also
 * [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
 

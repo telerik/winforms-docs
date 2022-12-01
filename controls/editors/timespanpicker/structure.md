@@ -13,12 +13,12 @@ position: 1
 This article describes all the visual elements and terms used in __RadTimeSpanPicker__ control.
 
 
-![radtimespanpicker-structure001](images/radtimespanpicker-structure001.png)
+![WinForms RadTimeSpanPicker radtimespanpicker-structure001](images/radtimespanpicker-structure001.png)
 
 
 ## Elements Hierarchy
 
-![radtimespanpicker-structure002](images/radtimespanpicker-structure002.png)
+![WinForms RadTimeSpanPicker radtimespanpicker-structure002](images/radtimespanpicker-structure002.png)
 
 
 # See Also

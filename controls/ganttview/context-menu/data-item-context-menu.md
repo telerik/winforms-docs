@@ -45,9 +45,9 @@ Me.radGanttView1.Items(0).Items(0).ContextMenu = ContextMenu2
 
 {{endregion}} 
 
-![ganttview-context-menu-item-context-menu 001](images/ganttview-context-menu-item-context-menu001.png)
+![WinForms RadGanttView ganttview-context-menu-item-context-menu 001](images/ganttview-context-menu-item-context-menu001.png)
 
-![ganttview-context-menu-item-context-menu 002](images/ganttview-context-menu-item-context-menu002.png)
+![WinForms RadGanttView ganttview-context-menu-item-context-menu 002](images/ganttview-context-menu-item-context-menu002.png)
 
 
 # See Also

@@ -20,7 +20,7 @@ To implement context menus use __RadContextMenu__ in your application. __RadCont
 
 >caption Figure 1: RadContextMenu
 
-![menus-context-menu-getting-started 001](images/menus-context-menu-getting-started001.png)
+![WinForms RadMenus RadContextMenu](images/menus-context-menu-getting-started001.png)
 
 There are two ways to attach a context menu to a given control or portion of a control: 
 

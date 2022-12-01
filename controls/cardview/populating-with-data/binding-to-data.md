@@ -27,7 +27,7 @@ A complete tutorial for connecting to the *Northwind* database from the Visual S
 The example below will demonstrate how to bind __RadCardView__ to a collection of models. As a result the control will automatically create __CardViewItem__ objects for all public properties of the model.
 
 >caption Fig. 1: RadCardView Bound at Run-Time
-![radcardview-populating-with-data 001](images/radcardview-populating-with-data001.png)
+![WinForms RadCardview RadCardView Bound at Run-Time](images/radcardview-populating-with-data001.png)
 
 #### Bind RadCardView
 

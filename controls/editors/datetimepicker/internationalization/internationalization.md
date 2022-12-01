@@ -31,7 +31,7 @@ Me.RadDateTimePicker1.Culture = New System.Globalization.CultureInfo("de-DE")
 
 >caption Figure 1: The culture is changed to German.
 
-![editors-datetimepicker-internationalization 001](images/editors-datetimepicker-internationalization001.png)
+![WinForms RadDateTimePicker The culture is changed to German](images/editors-datetimepicker-internationalization001.png)
 
 \* Right-to-Left support:          
             
@@ -53,7 +53,7 @@ Me.RadDateTimePicker1.RightToLeft = RightToLeft.No
 {{endregion}} 
 
 >caption Figure 2: The right to left support is turned off.
-![editors-datetimepicker-internationalization 002](images/editors-datetimepicker-internationalization002.png)
+![WinForms RadDateTimePicker The right to left support is turned off](images/editors-datetimepicker-internationalization002.png)
 
 \*  Right-to-Left = Yes 
 
@@ -73,7 +73,7 @@ Me.RadDateTimePicker1.RightToLeft = RightToLeft.Yes
 
 >caption Figure 3: The right to left support is turned on.
 
-![editors-datetimepicker-internationalization 003](images/editors-datetimepicker-internationalization003.png)
+![WinForms RadDateTimePicker The right to left support is turned on](images/editors-datetimepicker-internationalization003.png)
 
 \* [Date Format Pattern]({%slug winforms/editors/datetimepicker/internationalization/date-formats%}): The __Format__ property has valid values of __Short__, __Long__, __Time__ and __Custom__. The __Custom__enables the __CustomFormat__ property.  
 
@@ -95,7 +95,7 @@ Me.RadDateTimePicker1.CustomFormat = "MMM - dd - yyyy"
 
 >caption Figure 4: Using custom format.
 
-![editors-datetimepicker-internationalization 004](images/editors-datetimepicker-internationalization004.png)
+![WinForms RadDateTimePicker Using custom format](images/editors-datetimepicker-internationalization004.png)
 
 See the article [Introduction to International Applications Based on .NET Framework](http://msdn2.microsoft.com/en-us/library/t18274tk(vs.80).aspx) for an overview of internationalization in general. 
 

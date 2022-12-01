@@ -12,7 +12,7 @@ position: 1
 
 The Kinetic Scrolling is a functionality that allows you to scroll by directly dragging the items. The bellow image show how it can be used.
 
-![treeview-usability-kinetic-scrolling 001](images/treeview-usability-kinetic-scrolling001.gif)    
+![WinForms RadTreeView treeview-usability-kinetic-scrolling 001](images/treeview-usability-kinetic-scrolling001.gif)    
 
 # See Also
 

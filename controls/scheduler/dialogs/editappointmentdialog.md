@@ -14,7 +14,7 @@ The **EditAppointmentDialog** is shown when you try to add a new appointment or 
 
 >caption Figure 1. EditAppointmentDialog
 
-![scheduler-winforms-scheduler-dialogs-editappointmentdialog 001](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog001.png)
+![WinForms RadScheduler EditAppointmentDialog](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog001.png)
 
 It will pop up when you double click an empty cell or an existing appointment. Alternatively, you can show it by using the default context menu. 
 
@@ -22,7 +22,7 @@ It will pop up when you double click an empty cell or an existing appointment. A
 
 #### EditAppointmentDialog with multiple resources
 
-![scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+![WinForms RadScheduler scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
 
 
 # Create a custom EditAppointmentDialog
@@ -39,7 +39,7 @@ As a derivative of **RadSchedulerDialog** which inherits **RadForm**, the **Show
 
 >caption Figure 2. Custom edit dialog
 
-![scheduler-winforms-scheduler-dialogs-editappointmentdialog 002](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog002.png)
+![WinForms RadScheduler Custom edit dialog](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog002.png)
 
 {{source=..\SamplesCS\Scheduler\Dialogs\CustomEditForm.cs region=CustomEditDialog}}
 {{source=..\SamplesVB\Scheduler\Dialogs\CustomEditForm.vb region=CustomEditDialog}}    

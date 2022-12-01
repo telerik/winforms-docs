@@ -30,7 +30,7 @@ Cartesian plot band annotation is either a horizontal or a vertical stripe that 
 Here is what __CartesianPlotBandAnnotation__ looks like:
 
 >caption Figure 1: CartesianPlotBandAnnotation
-![chartview-annotations-plotband-annotations 001](images/chartview-annotations-plotband-annotations001.png)
+![WinForms RadChartView CartesianPlotBandAnnotation](images/chartview-annotations-plotband-annotations001.png)
 
 #### Plot Band Annotation Setup
 
@@ -95,7 +95,7 @@ The Polar axis plot band annotation resembles a donut.
 Here is what __PolarAxisPlotBandAnnotation__ looks like:
 
 >caption Figure 2: PolarAxisPlotBandAnnotation
-![chartview-annotations-plotband-annotations 002](images/chartview-annotations-plotband-annotations002.png)
+![WinForms RadChartView PolarAxisPlotBandAnnotation](images/chartview-annotations-plotband-annotations002.png)
 
 #### Polar Axis Annotation
 
@@ -140,7 +140,7 @@ Radial axis plot band annotations represent visually a sector of the circle (pie
 A plot band starting from *180* degrees and ending in *270* degrees will look like this:
 
 >caption Figure 3: RadialAxisPlotBandAnnotation
-![chartview-annotations-plotband-annotations 003](images/chartview-annotations-plotband-annotations003.png)
+![WinForms RadChartView RadialAxisPlotBandAnnotation](images/chartview-annotations-plotband-annotations003.png)
 
 #### Radial Axis Annotations
 
@@ -167,7 +167,7 @@ Me.radChartView1.Annotations.Add(annotation1)
 If you wonder how to annotate the bigger segment from the image above, then you should use the __From__ and __To__ values.
 
 >caption Figure 3: Annotated Bigger Segment
-![chartview-annotations-plotband-annotations 004](images/chartview-annotations-plotband-annotations004.png)
+![WinForms RadChartView Annotated Bigger Segment](images/chartview-annotations-plotband-annotations004.png)
 
 #### Define Bigger Segment
 

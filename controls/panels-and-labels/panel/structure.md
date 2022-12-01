@@ -16,11 +16,11 @@ Like all Telerik WinForms controls **RadPanel** is build upon [Telerik Presenta
 
 >caption Figure 1: RadPanel`s Element Hierarchy
 >
-![panel structure 001](images/panels-and-labels-panel-structure001.png)
+![WinForms RadPanel RadPanel`s Element Hierarchy](images/panels-and-labels-panel-structure001.png)
 
 >caption Figure 2: RadPanel`s Structure
 >
-![panel structure 002](images/panels-and-labels-panel-structure002.png)
+![WinForms RadPanel RadPanel`s Structure](images/panels-and-labels-panel-structure002.png)
 
 * **RadPanelElement**: Represents the main element of the control.
   * **FillPrimitive**: Background color of the control

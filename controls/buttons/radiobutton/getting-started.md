@@ -47,7 +47,7 @@ Me.Controls.Add(radioButton)
 
 The following tutorial demonstrates creating two groups of radio buttons that act independently of one another. Choices are reflected in a label as they are selected.
 
-![buttons-radiobutton-getting-started 001](images/buttons-radiobutton-getting-started001.png)
+![WinForms RadButtons buttons-radiobutton-getting-started 001](images/buttons-radiobutton-getting-started001.png)
 
 1\. Drop two __RadGroupBoxes__ on the form.
 

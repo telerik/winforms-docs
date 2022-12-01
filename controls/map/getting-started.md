@@ -59,7 +59,7 @@ Me.radMap1.Providers.Add(bingProvider)
 
 >caption Figure 1: RadMap 
 
-![map-getting-started 001](images/map-getting-started001.png)
+![WinForms RadMap RadMap](images/map-getting-started001.png)
 
 # See Also
 * [Providers]({%slug winforms/map/providers%})

@@ -31,7 +31,7 @@ The grid rows can be resized by end users simply by positioning the mouse over t
 
 >caption Figure 1: Mouse Resizing
 
-![virtualgrid-end-user-capabilities-resizing-rows001](images/virtualgrid-end-user-capabilities-resizing-rows001.gif)
+![WinForms RadVirtualGrid Mouse Resizing](images/virtualgrid-end-user-capabilities-resizing-rows001.gif)
 
 See [this]({%slug winforms/virtualgrid/rows/resizing-rows-programmatically%}) topic for more information on how the columns can be resized programmatically.
 

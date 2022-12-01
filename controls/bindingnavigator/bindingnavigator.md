@@ -18,7 +18,7 @@ __RadBindingNavigator__’s main purpose is to provide a basic UI for navigation
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![bindingnavigator-overview 001](images/bindingnavigator-overview001.png)
+![WinForms RadBindingNavigator bindingnavigator-overview 001](images/bindingnavigator-overview001.png)
 
 >tip In the related [Getting Started](https://docs.telerik.com/devtools/winforms/controls/bindingnavigator/getting-started) article you can find how to use the control with a sample scenario.
 

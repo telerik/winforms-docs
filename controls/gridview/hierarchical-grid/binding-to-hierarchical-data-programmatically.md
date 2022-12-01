@@ -14,7 +14,7 @@ previous_url: gridview-hierarchical-grid-binding-to-hierarchical-data-programmat
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/watch/winforms/radgrid/radgridview-winforms-hierarchy-overview)<br>In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically001.png)|
+|[WinForms RadGridView RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/watch/winforms/radgrid/radgridview-winforms-hierarchy-overview)<br>In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|![WinForms RadGridView gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically001.png)|
 
 There are many cases when you wouldn't want to include the whole dataset and hierarchy in your application. In such cases you cannot use the automatically mode for hierarchical data binding and you will need to set up the hierarchy in code manually.
 
@@ -74,7 +74,7 @@ Private Sub BindingToHierarchicalGridProgramatically_Load(ByVal sender As System
 
 You can also set the relation in design-time, using the provided collection editor as in the figure below:
 
-![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 005](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically005.png)
+![WinForms RadGridView gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 005](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically005.png)
 
 >important If you generate the columns manually either at design time or run time, note that it is necessary the **FieldName** and **Name** properties of the columns participating in the relation to have equal values. 
 
@@ -82,7 +82,7 @@ You can also set the relation in design-time, using the provided collection edit
 
 It is possible to manually set up the child templates and the relations between them in order to build a multi-level hierarchy as well. The code snippet below demonstrates the approach, which uses three data tables from the Northwind database:
 
-![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 002](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically002.png)
+![WinForms RadGridView gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 002](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically002.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.cs region=creatingMultiLevelHierarchicalGridInUnboundMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridProgramatically.vb region=creatingMultiLevelHierarchicalGridInUnboundMode}} 
@@ -151,7 +151,7 @@ End Sub
 {{endregion}} 
 
 
-![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 003](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically003.png)
+![WinForms RadGridView gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 003](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically003.png)
 
 ## Hierarchical Grid in Unbound mode
 
@@ -474,7 +474,7 @@ End Sub
 {{endregion}} 
 
 
-![gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 004](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically004.png)
+![WinForms RadGridView gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically 004](images/gridview-hierarchical-grid-binding-to-hierarchical-data-programmatically004.png)
 # See Also
 * [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
 

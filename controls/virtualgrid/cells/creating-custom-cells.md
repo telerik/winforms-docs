@@ -14,7 +14,7 @@ __RadVirtualGrid__ provides a convenient way to create custom cells. __RadVirtua
 
 |Default VirtualGridCellElement for the *Discontinued* column|Custom VirtualGridCheckBoxCellElement for the *Discontinued* column|
 |----|----|
-|![virtualgrid-creating-custom-cells 001](images/virtualgrid-creating-custom-cells001.png)|![virtualgrid-creating-custom-cells 002](images/virtualgrid-creating-custom-cells002.png)|
+|![WinForms RadVirtualGrid virtualgrid-creating-custom-cells 001](images/virtualgrid-creating-custom-cells001.png)|![WinForms RadVirtualGrid virtualgrid-creating-custom-cells 002](images/virtualgrid-creating-custom-cells002.png)|
 
 You can use the following approach to create a custom data cell with a check box in it:
 

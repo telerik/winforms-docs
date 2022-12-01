@@ -61,7 +61,7 @@ Dim dr As DialogResult = saveFileDialog.ShowDialog()
 
 >caption Figure 1: RadOpenFileDialog in Tile view mode
 
-![winforms/file-dialogs-features-common 001](images/file-dialogs-features-common001.png) 
+![WinForms RadFile-Dialogs RadOpenFileDialog in Tile view mode](images/file-dialogs-features-common001.png) 
 
 The layout is determined by the LayoutType enum that provides the following modes:
 
@@ -85,7 +85,7 @@ You can add a new folder in all the dialog controls with the **New Folder** butt
 
 >caption Figure 2: New folder button and new folder
 
-![winforms/file-dialogs-features-common 002](images/file-dialogs-features-common002.png) 
+![WinForms RadFile-Dialogs New folder button and new folder](images/file-dialogs-features-common002.png) 
 
 ## Edit Mode
 
@@ -93,13 +93,13 @@ In order to edit the selected file/folder, you can press the `F2` key. Alternati
 
 >caption Figure 3: Reserved character warning 
 
-![winforms/file-dialogs-features-common 003](images/file-dialogs-features-common003.png) 
+![WinForms RadFile-Dialogs Reserved character warning](images/file-dialogs-features-common003.png) 
 
 Trying to change the file extension prompts the message box shown in Figure 4:
 
 >caption Figure 4: Changing file extension message box 
 
-![winforms/file-dialogs-features-common 004](images/file-dialogs-features-common004.png) 
+![WinForms RadFile-Dialogs Changing file extension message box](images/file-dialogs-features-common004.png) 
 
 ## Using the ContextMenu
 
@@ -107,7 +107,7 @@ Trying to change the file extension prompts the message box shown in Figure 4:
 
 >caption Figure 5: Showing the ContextMenu
 
-![winforms/file-dialogs-features-common 005](images/file-dialogs-features-common005.png) 
+![WinForms RadFile-Dialogs Showing the ContextMenu](images/file-dialogs-features-common005.png) 
 
 ## Disable the Automatic Expanding to Current Directory
 
@@ -152,7 +152,7 @@ Dim dr As DialogResult = openFileDialog.ShowDialog()
 
 >caption Figure 6: Showing hidden files 
 
-![winforms/file-dialogs-features-common 006](images/file-dialogs-features-common006.png) 
+![WinForms RadFile-Dialogs Showing hidden files](images/file-dialogs-features-common006.png) 
 
 # See Also
 

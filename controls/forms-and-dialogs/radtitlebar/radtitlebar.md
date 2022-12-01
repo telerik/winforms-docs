@@ -22,7 +22,7 @@ To include a title bar with help, maximize, minimize and close button functional
 
 To customize the help, minimize, maximize and close buttons, use the __RadTitleBar.TitleBarElement's HelpButton, MinimizeButton, MaximizeButton__ and __CloseButton__ objects. Each button is a __RadButtonElement__ type that include properties to control text, image, and layout.
 
-![forms-and-dialogs-radtitlebar-overview 001](images/forms-and-dialogs-radtitlebar-overview001.png)
+![WinForms RadRadTitleBar forms-and-dialogs-radtitlebar-overview 001](images/forms-and-dialogs-radtitlebar-overview001.png)
 
 >note By default, the __HelpButton__ is not shown. It is necessary to set its __Visibility__ property to *ElementVisibility.Visible* in order to be displayed. 
 

@@ -33,7 +33,7 @@ For your convenience, RadRichTextEditor comes with a default implementation of a
 
 #### Figure 1: Default mention template
 
-![Default mention template](images/richtexteditor-features-mentions-overview001.png)
+![WinForms RadRichTextEditor Default mention template](images/richtexteditor-features-mentions-overview001.png)
 
 **Example 1** demonstrates how to populate data and enable the mentions using **PersonMentionProvider**.
 
@@ -100,7 +100,7 @@ Figure 2 shows how the result of Example 1 would look like in RadRichTextEditor.
 
 #### Figure 2: Default mention template
 
-![richtexteditor-features-mentions-overview002](images/richtexteditor-features-mentions-overview002.gif)
+![WinForms RadRichTextEditor richtexteditor-features-mentions-overview002](images/richtexteditor-features-mentions-overview002.gif)
 
 ## Custom Mention Character
 

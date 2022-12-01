@@ -13,7 +13,7 @@ previous_url: gridview-columns-gridviewcolorcolumn
 
 __GridViewColorColumn__ allows **RadGridView** to edit colors using [RadColorDialog]({%slug winforms/forms-and-dialogs/colordialog%}). 
 
-![gridview-columns-gridviewcolorcolumn 001](images/gridview-columns-gridviewcolorcolumn001.png)
+![WinForms RadGridView gridview-columns-gridviewcolorcolumn 001](images/gridview-columns-gridviewcolorcolumn001.png)
 
 __GridViewColorColumn__ is auto-generated for __Color__ properties in the RadGridView.**DataSource**. The following code snippet demonstrates how to create it manually, add it to **RadGridView** and populate it with data:
 
@@ -51,7 +51,7 @@ Me.radGridView1.Rows.Add("Violet")
 
 The default editor of the **GridViewColorColumn** is __GridColorPickerEditor__ which can be accessed in the **CellEditorInitialized** event. The **RadColorPickerEditorElement** gives you full access to the **RadColorDialogForm** by accessing the GridColorPickerElement.ColorDialog.**ColorDialogForm** property.
 
-![gridview-columns-gridviewcolorcolumn 002](images/gridview-columns-gridviewcolorcolumn002.png)
+![WinForms RadGridView gridview-columns-gridviewcolorcolumn 002](images/gridview-columns-gridviewcolorcolumn002.png)
 
 # See Also
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})

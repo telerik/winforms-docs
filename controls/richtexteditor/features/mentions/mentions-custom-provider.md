@@ -406,7 +406,7 @@ Me.radRichTextEditor1.RichTextBoxElement.MentionContext.Templates.Add(template)
 
 #### Custom mentions
 
-![richtexteditor-features-mentions-custom-provider001](images/richtexteditor-features-mentions-custom-provider001.gif)
+![WinForms RadRichTextEditor richtexteditor-features-mentions-custom-provider001](images/richtexteditor-features-mentions-custom-provider001.gif)
 
 ## Customize the Insert Action
 
@@ -447,7 +447,7 @@ End Class
 
 {{endregion}}
 
-![richtexteditor-features-mentions-custom-provider002](images/richtexteditor-features-mentions-custom-provider002.gif)
+![WinForms RadRichTextEditor richtexteditor-features-mentions-custom-provider002](images/richtexteditor-features-mentions-custom-provider002.gif)
 
 ## Customize the Filtering
 
@@ -503,10 +503,10 @@ End Class
 
 {{endregion}}
 
-![richtexteditor-features-mentions-custom-provider003](images/richtexteditor-features-mentions-custom-provider003.gif)
+![WinForms RadRichTextEditor richtexteditor-features-mentions-custom-provider003](images/richtexteditor-features-mentions-custom-provider003.gif)
 
 ## Using Multiple Mention Providers
 
 Through the **MentionContext**, you can register as many providers as you need and invoke their lists of items through the associated mention character.
 
-![richtexteditor-features-mentions-custom-provider004](images/richtexteditor-features-mentions-custom-provider004.gif)
+![WinForms RadRichTextEditor richtexteditor-features-mentions-custom-provider004](images/richtexteditor-features-mentions-custom-provider004.gif)

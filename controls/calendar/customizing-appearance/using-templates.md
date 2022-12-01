@@ -18,7 +18,7 @@ In the example below a __PictureBox__ control is created and assigned an image f
 
 >caption Figure 1: RadCalndar with a picture box added to a cell.
 
-![calendar-customizing-appearance-using-templates 001](images/calendar-customizing-appearance-using-templates001.png)
+![WinForms RadCalendar RadCalndar with a picture box added to a cell](images/calendar-customizing-appearance-using-templates001.png)
 
 #### Assigning a TemplateItem 
 

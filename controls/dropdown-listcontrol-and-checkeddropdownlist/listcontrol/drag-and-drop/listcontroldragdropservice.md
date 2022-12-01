@@ -26,7 +26,7 @@ The following steps demonstrates how to populate two **RadListControls** with it
 
 >caption Figure 1: Drag and drop in unbound mode
 
-![listcontrol-listcontroldragdropservice 001](images/listcontrol-listcontroldragdropservice001.gif)
+![WinForms RadListControl Drag and drop in unbound mode](images/listcontrol-listcontroldragdropservice001.gif)
 
 ## Drag and drop in bound mode by using ListControlDragDropService
 
@@ -254,7 +254,7 @@ End Sub
 
 >caption Figure 2: Drag and drop in bound mode
 
-![listcontrol-listcontroldragdropservice 002](images/listcontrol-listcontroldragdropservice002.gif)
+![WinForms RadListControl Drag and drop in bound mode](images/listcontrol-listcontroldragdropservice002.gif)
 
 
 # See Also

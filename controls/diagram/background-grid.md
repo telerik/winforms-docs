@@ -36,7 +36,7 @@ Me.RadDiagram1.DiagramElement.IsBackgroundSurfaceVisible = True
 
 | __IsBackgroundSurfaceVisible__ = *true* | __IsBackgroundSurfaceVisible__ = *false* |
 |----|----|
-|![diagram-backgroundgrid 001](images/diagram-backgroundgrid001.png)|![diagram-backgroundgrid 002](images/diagram-backgroundgrid002.png)|
+|![WinForms RadDiagram diagram-backgroundgrid 001](images/diagram-backgroundgrid001.png)|![WinForms RadDiagram diagram-backgroundgrid 002](images/diagram-backgroundgrid002.png)|
 
 * __Background__: this property is of type *Brush* and it controls the fill of the __RadDiagram__ background.
 
@@ -59,7 +59,7 @@ Me.RadDiagram1.DiagramElement.BackgroundGrid.Background = New System.Drawing.Sol
  
 >caption Figure 1: Background
 
-![diagram-backgroundgrid 003](images/diagram-backgroundgrid003.png)
+![WinForms RadDiagram Background](images/diagram-backgroundgrid003.png)
 
 You can access the __BackgroundGrid__ properties:
 
@@ -67,7 +67,7 @@ You can access the __BackgroundGrid__ properties:
             
 >caption Figure 2: CellSize
 
-![diagram-backgroundgrid 004](images/diagram-backgroundgrid004.png)
+![WinForms RadDiagram CellSize](images/diagram-backgroundgrid004.png)
 
 #### Set CellSize 
  
@@ -91,7 +91,7 @@ Me.RadDiagram1.DiagramElement.BackgroundGrid.CellSize = New Telerik.Windows.Diag
             
 >caption Figure 3: LineStroke
 
-![diagram-backgroundgrid 005](images/diagram-backgroundgrid005.png)  
+![WinForms RadDiagram LineStroke](images/diagram-backgroundgrid005.png)  
 
 #### Set LineStroke
 
@@ -114,7 +114,7 @@ Me.RadDiagram1.DiagramElement.BackgroundGrid.LineStroke = New System.Drawing.Sol
             
 >caption Figure 4: LineStrokeThickness
 
-![diagram-backgroundgrid 006](images/diagram-backgroundgrid006.png) 
+![WinForms RadDiagram LineStrokeThickness](images/diagram-backgroundgrid006.png) 
 
 #### Set LineStrokeThickness
 

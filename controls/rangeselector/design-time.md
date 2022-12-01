@@ -11,7 +11,7 @@ position: 2
 # Design Time
 
 >caption Figure 1: Smart Tag
-![pdfviewer-design-time 001](images/rangeselector-design-time001.png)
+![WinForms RadRangeSelector Smart Tag](images/rangeselector-design-time001.png)
 
 * __Common Tasks__
 

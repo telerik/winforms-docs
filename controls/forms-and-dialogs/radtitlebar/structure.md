@@ -14,11 +14,11 @@ This article describes the inner structure and organization of the elements whic
         
 >caption Figure 1: RadTitleBar's elements hierarchy
 
-![forms-and-dialogs-titlebar-structure 001](images/forms-and-dialogs-titlebar-structure001.png)
+![WinForms RadRadTitleBar RadTitleBar's elements hierarchy](images/forms-and-dialogs-titlebar-structure001.png)
 
 >caption Figure 2: RadTitleBar's structure
 
-![forms-and-dialogs-titlebar-structure 002](images/forms-and-dialogs-titlebar-structure002.png)
+![WinForms RadRadTitleBar RadTitleBar's structure](images/forms-and-dialogs-titlebar-structure002.png)
 
 1. __RadTitleBarElement__  
 	1.1 __FillPrimitive__: Represents the fill of __RadTitleBar__    

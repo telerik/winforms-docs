@@ -15,7 +15,7 @@ __RadPivotGrid__ allows you to add filter conditions which describe which items 
 
 >caption Figure 1: RadPivotGrid Report Filters 
 
-![pivotgrid-filtering-report-filters 001](images/pivotgrid-filtering-report-filters001.png)
+![WinForms RadPivotGrid RadPivotGrid Report Filters](images/pivotgrid-filtering-report-filters001.png)
 
 The report filters are displayed as descriptor elements in the report filters area. This area is hidden by default and in order to show it, you need to set the following property:
 
@@ -43,7 +43,7 @@ Report filter descriptions are stored in the FilterDescriptions collection of Ra
 
 >caption Figure 1: Report Filters Designer
 
-![pivotgrid-filtering-report-filters 002](images/pivotgrid-filtering-report-filters002.png)
+![WinForms RadPivotGrid Report Filters Designer](images/pivotgrid-filtering-report-filters002.png)
 
 The contents of the **FilterDescriptions** collection can also be edited at runtime using code. The __FilterDescriptions__ collection consists of __PropertyFilterDescription__ instances which specify the field on which a filter is applied.
 

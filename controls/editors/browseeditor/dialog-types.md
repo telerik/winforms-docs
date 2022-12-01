@@ -43,7 +43,7 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.FolderBrowseDialog
 
 >caption Figure 1: FolderBrowseDialog
 
-![editors-browse-editor-dialog-types 001](images/editors-browse-editor-dialog-types001.png)
+![WinForms RadBrowseEditor FolderBrowseDialog](images/editors-browse-editor-dialog-types001.png)
 
 #### FontDialog
 
@@ -64,7 +64,7 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.FontDialog
 
 >caption Figure 2: FontDialog
 
-![editors-browse-editor-dialog-types 002](images/editors-browse-editor-dialog-types002.png)
+![WinForms RadBrowseEditor FontDialog](images/editors-browse-editor-dialog-types002.png)
 
 #### OpenFileDialog
 
@@ -85,7 +85,7 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.OpenFileDialog
 
 >caption Figure 3: OpenFileDialog
 
-![editors-browse-editor-dialog-types 003](images/editors-browse-editor-dialog-types003.png)
+![WinForms RadBrowseEditor OpenFileDialog](images/editors-browse-editor-dialog-types003.png)
 
 #### SaveFileDialog
 
@@ -103,7 +103,7 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.SaveFileDialog
 
 >caption Figure 4: SaveFileDialog
 
-![editors-browse-editor-dialog-types 004](images/editors-browse-editor-dialog-types004.png)
+![WinForms RadBrowseEditor SaveFileDialog](images/editors-browse-editor-dialog-types004.png)
 
 
 #### RadOpenFileDialog
@@ -123,7 +123,7 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.RadOpenFileDialog
 
 >caption Figure 5: RadOpenFileDialog
 
-![editors-browse-editor-dialog-types 005](images/editors-browse-editor-dialog-types005.png)
+![WinForms RadBrowseEditor RadOpenFileDialog](images/editors-browse-editor-dialog-types005.png)
 
 #### RadOpenFolderDialog
 
@@ -142,7 +142,7 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.RadOpenFolderDialog
 
 >caption Figure 6: RadOpenFolderDialog
 
-![editors-browse-editor-dialog-types 006](images/editors-browse-editor-dialog-types006.png)
+![WinForms RadBrowseEditor RadOpenFolderDialog](images/editors-browse-editor-dialog-types006.png)
 
 
 #### RadSaveFileDialog
@@ -163,7 +163,7 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.RadSaveFileDialog
 
 >caption Figure 7: RadSaveFileDialog
 
-![editors-browse-editor-dialog-types 007](images/editors-browse-editor-dialog-types007.png)
+![WinForms RadBrowseEditor RadSaveFileDialog](images/editors-browse-editor-dialog-types007.png)
 
 ## See Also
 

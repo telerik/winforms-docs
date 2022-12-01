@@ -30,7 +30,7 @@ Me.radChartView1.DataSource = Me.radPivotGrid1
 {{endregion}}
 
 >caption Figure 1: Associating a Chart
-![pivotgrid-binding-with-radchartview 001](images/pivotgrid-binding-with-radchartview001.png)
+![WinForms RadPivotGrid Associating a Chart](images/pivotgrid-binding-with-radchartview001.png)
 
 Populating **RadChartView** with data is performed by a __PivotGridChartDataProvider__ object. It provides several properties for customizing its behavior. You can access this object by the __ChartDataProvider__ property of **RadPivotGrid**.
 
@@ -67,7 +67,7 @@ You can change the type of the generated series to one of the categorical types:
 >
 
 >caption Figure 2: Line Series with Null Values
-![pivotgrid-binding-with-radchartview 002](images/pivotgrid-binding-with-radchartview002.png)
+![WinForms RadPivotGrid Line Series with Null Values](images/pivotgrid-binding-with-radchartview002.png)
 
 #### Series Type
 

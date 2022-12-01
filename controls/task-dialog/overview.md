@@ -19,7 +19,7 @@ CTAControlName: TaskDialog
 
 **RadTaskDialog** represents an extended version of the standard System.Windows.Forms.**MessageBox** and respectively the **RadMessageBox**. 
 
-![winforms/task-dialog-overview 001](images/task-dialog-overview001.gif) 
+![WinForms RadTask-Dialog winforms/task-dialog-overview 001](images/task-dialog-overview001.gif) 
 
 ## Key Features
 

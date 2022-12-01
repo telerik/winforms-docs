@@ -20,7 +20,7 @@ The __AutoCompleteMode__ property controls the auto-complete behavior and can be
  
 >caption Figure 1: AutoCompleteMode.None
 
-![multicolumncombobox-autocomplete 001](images/multicolumncombobox-autocomplete001.png)
+![WinForms RadMultiColumnComboBox AutoCompleteModeNone](images/multicolumncombobox-autocomplete001.png)
 
 {{source=..\SamplesCS\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.cs region=AutoCompleteMode.None}} 
 {{source=..\SamplesVB\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.vb region=AutoCompleteMode.None}} 
@@ -40,7 +40,7 @@ Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.None
 
 >caption Figure 2: AutoCompleteMode.Append
 
-![multicolumncombobox-autocomplete 002](images/multicolumncombobox-autocomplete002.png)
+![WinForms RadMultiColumnComboBox AutoCompleteModeAppend](images/multicolumncombobox-autocomplete002.png)
 
 {{source=..\SamplesCS\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.cs region=AutoCompleteMode.Append}} 
 {{source=..\SamplesVB\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.vb region=AutoCompleteMode.Append}} 

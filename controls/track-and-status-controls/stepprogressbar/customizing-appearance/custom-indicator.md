@@ -93,7 +93,7 @@ End Sub
 
 {{endregion}}
 
-![stepprogressbar-progress-mode 001](images/stepprogressbar-appearance-customindicator001.png)
+![WinForms RadStepProgressBar stepprogressbar-progress-mode 001](images/stepprogressbar-appearance-customindicator001.png)
 
 ## Using ShapeEditor
 
@@ -206,7 +206,7 @@ End Sub
 
 {{endregion}}
 
-![stepprogressbar-progress-mode 001](images/stepprogressbar-appearance-customindicator002.png)
+![WinForms RadStepProgressBar stepprogressbar-progress-mode 001](images/stepprogressbar-appearance-customindicator002.png)
 
 # See Also
 

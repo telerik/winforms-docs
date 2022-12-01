@@ -12,18 +12,18 @@ position: 0
 
 **RadPictureBox** allows editing images. In order to edit an image it is neccessary to right click with the mouse on the control and a context menu will be shown. Then, choose the *Edit image* option.
 
-![picturebox-edit001](images/edit001.png)
+![WinForms RadPictureBox picturebox-edit001](images/edit001.png)
 
 A new window showing **PictureBoxImageEditorDialog** should be displayed. Now, you can start editing the image.
 
 >note **PictureBoxImageEditorDialog** internally uses [RadImageEditor](https://docs.telerik.com/devtools/winforms/controls/image-editor/overview).
 
-![picturebox-edit002](images/edit002.png)
+![WinForms RadPictureBox picturebox-edit002](images/edit002.png)
 
 > RadPictureBox can not edit SVG images. Only raster images can be edited. 
 
 If you are trying to edit SVG image you will get the following warning message:
-![picturebox-edit003](images/edit003.png)
+![WinForms RadPictureBox picturebox-edit003](images/edit003.png)
 
 **RadPictureBox** exposes the following useful events:
 

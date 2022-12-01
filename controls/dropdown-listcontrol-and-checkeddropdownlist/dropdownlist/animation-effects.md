@@ -23,7 +23,7 @@ Three properties define the animation behavior of __RadDropDownList__:
             
 >caption Figure 1: Enable Animation
 
-![dropdown-and-listcontrol-dropdownlist-animation-effects 001](images/dropdown-and-listcontrol-dropdownlist-animation-effects001.gif)
+![WinForms RadDropDownList Enable Animation](images/dropdown-and-listcontrol-dropdownlist-animation-effects001.gif)
 
 #### Animation Settings 
 

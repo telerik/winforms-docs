@@ -16,25 +16,25 @@ This help article will demonstrate a step by step tutorial how to customize the 
 2. Export the built-in themes in a specific folder by selecting `File` >> `Export Built-in Themes`.
 3. Load a desired theme from the just exported files by selecting `File` >> `Open Package`.
 4. Expand **RadChat** and select the `ChatMessageBubbleElement`. 
-   ![chat-themes 001](images/chat-themes001.png)
+   ![WinForms RadChat chat-themes 001](images/chat-themes001.png)
 
 5. For the `IsOwnMessage` element state, open the `Edit Repository Item` dialog and change the `BackColor`:
-   ![chat-themes 002](images/chat-themes002.png)
+   ![WinForms RadChat chat-themes 002](images/chat-themes002.png)
 
 6. Expand the **RadTextBoxElement** and select the `ChatShowToolbarElement`.
-   ![chat-themes 003](images/chat-themes003.png)
+   ![WinForms RadChat chat-themes 003](images/chat-themes003.png)
 
 7. For the default and `MouseOver` element states, open the `Edit Repository Item` dialog and change the `ForeColor`:
-   ![chat-themes 004](images/chat-themes004.png)
+   ![WinForms RadChat chat-themes 004](images/chat-themes004.png)
 
 8. Select the `ChatSendButtonElement`.
-   ![chat-themes 005](images/chat-themes005.png)
+   ![WinForms RadChat chat-themes 005](images/chat-themes005.png)
 
 9. For the default and `MouseOver` element states, open the `Edit Repository Item` dialog and change the `Image`:
-   ![chat-themes 006](images/chat-themes006.png)
+   ![WinForms RadChat chat-themes 006](images/chat-themes006.png)
 
 10. The bellow image shows the result.
-   ![chat-themes 007](images/chat-themes007.png)
+   ![WinForms RadChat chat-themes 007](images/chat-themes007.png)
 
 >note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
 

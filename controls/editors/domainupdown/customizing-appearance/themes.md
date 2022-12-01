@@ -20,11 +20,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select **UpButton** in *Controls Structure* on the left side. Then, select **RadArrowButtonImage** in the *Elements* section.
 
-	![domainupdown-customizing-appearance-themes 001](images/domainupdown-customizing-appearance-themes001.png)
+	![WinForms RadDomainUpDown domainupdown-customizing-appearance-themes 001](images/domainupdown-customizing-appearance-themes001.png)
 
 1. Modify the applied *image* repository item and select the desired image for the **up** button. 
 
-	![domainupdownt-customizing-appearance-themes 002](images/domainupdown-customizing-appearance-themes002.png)
+	![WinForms RadDomainUpDown domainupdownt-customizing-appearance-themes 002](images/domainupdown-customizing-appearance-themes002.png)
 	
 	You can follow a similar approach for the **DownButton**.
 

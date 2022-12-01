@@ -21,7 +21,7 @@ This tutorial will walk you through the functionality and the main features of _
 
 __RadDiagramConnection__ is basically an object that connects zero, one or two shapes:
 
-![diagram-diagram-items-connections 001](images/diagram-diagram-items-connections001.png)
+![WinForms RadDiagram diagram-diagram-items-connections 001](images/diagram-diagram-items-connections001.png)
 
 You can use its extensive API to configure its source and target points or shapes. You can choose from a list of predefined cap types thus customizing the start and end point of the connection to better fit in your application scenario. You can also control the type of a connection using the __ConnectionType__ property, add a custom content and customize the overall look and feel of the items.
 
@@ -52,21 +52,21 @@ The __RadDiagramConnection__ class exposes the following properties that allow y
 
 	* __Bottom__ - use it to define the bottom connector of a shape as the source/target point of the connection
 
-![diagram-diagram-items-connections 009](images/diagram-diagram-items-connections009.png)
+![WinForms RadDiagram diagram-diagram-items-connections 009](images/diagram-diagram-items-connections009.png)
 
 * __SourceCapType/TargetCapType__ - both properties are an enumeration of type __CapType__ that allow you to choose a cap from a set of predefined Cap types. For more detailed information, please, view the CapTypes section below. 
 
-![diagram-diagram-items-connections 010](images/diagram-diagram-items-connections010.png)
+![WinForms RadDiagram diagram-diagram-items-connections 010](images/diagram-diagram-items-connections010.png)
 
 * __SourceCapSize/TargetCapSize__ - these properties are of type Size and they get or set the size of the __SourceCap/TargetCap__.
 
-![diagram-diagram-items-connections 011](images/diagram-diagram-items-connections011.png)
+![WinForms RadDiagram diagram-diagram-items-connections 011](images/diagram-diagram-items-connections011.png)
 
 ## Set Content
 
 You can label a connection by setting its __Content__ property.
 
-![diagram-diagram-items-connections 024](images/diagram-diagram-items-connections024.png) 
+![WinForms RadDiagram diagram-diagram-items-connections 024](images/diagram-diagram-items-connections024.png) 
 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=Content}} 
@@ -91,7 +91,7 @@ You can easily customize the visual appearance of the __RadDiagramConnection__ b
 
 * __BackColor__: gets or sets the color that specifies how the __RadDiagramConnection__ is painted.
 
-![diagram-diagram-items-connections 025](images/diagram-diagram-items-connections025.png)
+![WinForms RadDiagram diagram-diagram-items-connections 025](images/diagram-diagram-items-connections025.png)
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=ConnectionBackColor}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=ConnectionBackColor}} 
@@ -111,7 +111,7 @@ connection1.BackColor = Color.Red
 
 * __StrokeThickness__: gets or sets the width of the __RadDiagramConnection__ outline.
 
-![diagram-diagram-items-connections 026](images/diagram-diagram-items-connections026.png) 
+![WinForms RadDiagram diagram-diagram-items-connections 026](images/diagram-diagram-items-connections026.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=StrokeThickness}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=StrokeThickness}} 
@@ -132,7 +132,7 @@ connection1.StrokeThickness = 5
 
 * __ForeColor__: gets or sets the color that specifies how the __RadDiagramConnection__'s text is painted.
 
-![diagram-diagram-items-connections 027](images/diagram-diagram-items-connections027.png) 
+![WinForms RadDiagram diagram-diagram-items-connections 027](images/diagram-diagram-items-connections027.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=ConnectionForeColor}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=ConnectionForeColor}} 
@@ -173,12 +173,12 @@ connection1.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollecti
 {{endregion}} 
 
 
-![diagram-diagram-items-connections 029](images/diagram-diagram-items-connections029.png)
+![WinForms RadDiagram diagram-diagram-items-connections 029](images/diagram-diagram-items-connections029.png)
 
 ## Connection Edit Mode
 
 You can set the __RadDiagramConnection__ in edit mode by using the __IsInEditMode__ property. By default, when an item enters edit mode, the RadDiagramConnection.__Content__ is displayed inside a TextBox control so that you can change its value.
-![diagram-diagram-items-connections 028](images/diagram-diagram-items-connections028.png)
+![WinForms RadDiagram diagram-diagram-items-connections 028](images/diagram-diagram-items-connections028.png)
 
 >note Apart from setting the __IsInEditMode__ property to *true*, you can also enter edit mode by pressing F2 or double-clicking on the connection. For more information please refer to the [Editing]({%slug winforms/diagram/items-manipulation/editing%}) article.
 >
@@ -190,15 +190,15 @@ The connection bridge is essentially what you see when two connections collide. 
 
 * __None__ - there is no bridge to visualize the intersection of the connections
 
-![diagram-diagram-items-connections 030](images/diagram-diagram-items-connections030.png)
+![WinForms RadDiagram diagram-diagram-items-connections 030](images/diagram-diagram-items-connections030.png)
 
 * __Bow__- a half circle is displayed to indicate the intersection of the connections
 
-![diagram-diagram-items-connections 031](images/diagram-diagram-items-connections031.png)
+![WinForms RadDiagram diagram-diagram-items-connections 031](images/diagram-diagram-items-connections031.png)
 
 * __Gap__ - a gap is displayed to indicate the intersection of the connections
 
-![diagram-diagram-items-connections 032](images/diagram-diagram-items-connections032.png)
+![WinForms RadDiagram diagram-diagram-items-connections 032](images/diagram-diagram-items-connections032.png)
 
 ## Connection Selection State
 

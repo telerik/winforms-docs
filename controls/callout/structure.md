@@ -14,7 +14,7 @@ CTAControlName: Callout
 **RadCallout** is a component which internally has a **RadCalloutForm** that hosts the **AssociatedControl**.
  
 
-![winforms/callout-structure 001](images/callout-structure001.png) 
+![WinForms RadCallout winforms/callout-structure 001](images/callout-structure001.png) 
 
 The **AssociatedControl** can be any **Control** or a Control derivative.
 

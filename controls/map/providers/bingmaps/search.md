@@ -14,7 +14,7 @@ __RadMap__ allows you to implement search functionality, that will let the user 
 
 >caption Figure 1: Bing search
 
-![map-providers-bingmaps-search 001](images/map-providers-bingmaps-search001.gif)
+![WinForms RadMap Bing search](images/map-providers-bingmaps-search001.gif)
 
 In order to use the built-in search bar that __RadMap__ offers set the __ShowSearchBar__ property to *true*. Depending on the amount of control you want to have over the search you can do one of three things. First, you can subscribe to the __MapSearchBarElement__'s __SearchCriteriaChanged__ event. In the event handler you will receive the search criteria and you are responsible for the rest of the search handling. That is __RadMap__ will not perform any further actions related to the search. Second, if you have not subscribed to the __SearchCriteriaChanged__ event you can set the SearchBarElement.__SearchProvider__ property to an __IMapSearchProvider__ instance. When you do this __RadMap__ will initiate a new search through that provider. You should still handle the search result through the provider's __SearchCompleted__ and __SearchError__ events. Third, if you have not subscribed to the event and you have not set the SearchBarElement.__SearchProvider__ property __RadMap__ will go through its __Providers__ collection and will initiate a search through the first provider that implements the __IMapSearchProvider__. Results will be displayed in a layer named *Search*. If the layer does not exist it will be added by __RadMap__. You should note that all overlays will be removed from the *Search* layer when a new search is initiated.
 

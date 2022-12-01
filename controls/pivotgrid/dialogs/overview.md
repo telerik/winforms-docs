@@ -19,7 +19,7 @@ The __AggregateOptionsDialog__ allows the end-user to change the aggregate funct
 
 >caption Figure 1: AggregateOptionsDialog
 
-![pivotgrid-dialogs 001](images/pivotgrid-dialogs001.png)
+![WinForms RadPivotGrid AggregateOptionsDialog](images/pivotgrid-dialogs001.png)
 
 ## CalculationOptionsDialog
 
@@ -27,7 +27,7 @@ The __CalculationOptionsDialog__ allows the end-user to change the way that valu
 
 >caption Figure 2: CalculationOptionsDialog 
 
-![pivotgrid-dialogs 002](images/pivotgrid-dialogs002.png)
+![WinForms RadPivotGrid CalculationOptionsDialog](images/pivotgrid-dialogs002.png)
 
 ## NumberFormatOptionsDialog
 
@@ -35,7 +35,7 @@ The __NumberFormatOptionsDialog__ allows the end-user set a format string for th
 
 >caption Figure 3: NumberFormatOptionsDialog
 
-![pivotgrid-dialogs 003](images/pivotgrid-dialogs003.png)
+![WinForms RadPivotGrid NumberFormatOptionsDialog](images/pivotgrid-dialogs003.png)
 
 ## SortOptionsDialog
 
@@ -43,7 +43,7 @@ The __SortOptionsDialog__ allows the end-user to select order in which the group
 
 >caption Figure 4: SortOptionsDialog
 
-![pivotgrid-dialogs 004](images/pivotgrid-dialogs004.png)
+![WinForms RadPivotGrid SortOptionsDialog](images/pivotgrid-dialogs004.png)
 
 ## LabelFilterOptionsDialog
 
@@ -51,7 +51,7 @@ The __LabelFilterOptionsDialog__ allows the end-user to select the filter functi
 
 >caption Figure 5: LabelFilterOptionsDialog
 
-![pivotgrid-dialogs 005](images/pivotgrid-dialogs005.png)
+![WinForms RadPivotGrid LabelFilterOptionsDialog](images/pivotgrid-dialogs005.png)
 
 ## ValueFilterOptionsDialog
 
@@ -59,7 +59,7 @@ The __ValueFilterOptionsDialog__ allows the end-user to select the filter functi
 
 >caption Figure 6: ValueFilterOptionsDialog
 
-![pivotgrid-dialogs 006](images/pivotgrid-dialogs006.png)
+![WinForms RadPivotGrid ValueFilterOptionsDialog](images/pivotgrid-dialogs006.png)
 
 ## Top10FilterOptionsDialog
 
@@ -67,7 +67,7 @@ The __Top10FilterOptionsDialog__ allows the end-user to set the Top10 filter app
 
 >caption Figure 7: Top10FilterOptionsDialog
 
-![pivotgrid-dialogs 007](images/pivotgrid-dialogs007.png)
+![WinForms RadPivotGrid Top0FilterOptionsDialog](images/pivotgrid-dialogs007.png)
 
 # See Also
 

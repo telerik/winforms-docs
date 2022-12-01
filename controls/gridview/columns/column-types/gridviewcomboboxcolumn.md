@@ -45,7 +45,7 @@ The useful methods for **GridViewComboBoxColumn** are:
 
 >caption Figure 1: GridViewComboBoxColumn
 
-![gridview-columns-gridviewcomboboxcolumn 001](images/gridview-columns-gridviewcomboboxcolumn001.png)
+![WinForms RadGridView GridViewComboBoxColumn](images/gridview-columns-gridviewcomboboxcolumn001.png)
 
 #### Adding and binding GridViewComboBoxColumn
 
@@ -474,7 +474,7 @@ End Class
 
 >caption Figure 2: The items styles are now changed.
 
-![gridview-columns-gridviewcomboboxcolumn 004](images/gridview-columns-gridviewcomboboxcolumn004.png)
+![WinForms RadGridView The items styles are now changed](images/gridview-columns-gridviewcomboboxcolumn004.png)
 # See Also
 
 * [How to Filter a GridViewComboBoxColumn by DisplayMember]({%slug filter-gridviewcomboboxcolumn-by-display-member%})

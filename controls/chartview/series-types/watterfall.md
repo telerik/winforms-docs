@@ -16,7 +16,7 @@ A waterfall chart type (a.k.a. flying bricks, bridge, etc.) shows the cumulative
 A Waterfall chart is useful for different types of quantitative analysis related to inventory, cash flows, performance, etc. This chart type looks like a [range column chart]({%slug winforms/chartview-/series-types/range-and-rangebar%}) where the low  or high value of a subsequent item is connected to the preceding one with a line. 
 
 >caption Figure 1: WaterFallSeries
-![charview-series-types-waterfall 001](images/charview-series-types-waterfall001.png)
+![WinForms RadChartView WaterFallSeries](images/charview-series-types-waterfall001.png)
 
 The example above can be achieved with the following code snippet:  
 

@@ -14,7 +14,7 @@ ElevationType.*List* __ElevationRequest__ gets elevations for latitude and longi
 
 >caption Figure 1: List ElevationRequest 
 
-![map-providers-elevation-list 001](images/map-providers-elevation-list001.png)
+![WinForms RadMap List ElevationRequest](images/map-providers-elevation-list001.png)
 
 #### List ElevationType request
 

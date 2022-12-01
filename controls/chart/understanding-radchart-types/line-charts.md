@@ -20,11 +20,11 @@ Line charts are used to display a series of data points, typically to show trend
 To create a Vertical Line Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Line__.
 >caption 
 
-![chart-undestanding-radchart-types-line-charts 001](images/chart-undestanding-radchart-types-line-charts001.png)
+![WinForms RadChart ](images/chart-undestanding-radchart-types-line-charts001.png)
 
 
 
 To create a Vertical Line Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Line__.
 >caption 
 
-![chart-undestanding-radchart-types-line-charts 002](images/chart-undestanding-radchart-types-line-charts002.png)
+![WinForms RadChart chart-undestanding-radchart-types-line-charts 002](images/chart-undestanding-radchart-types-line-charts002.png)

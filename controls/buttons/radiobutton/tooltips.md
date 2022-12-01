@@ -29,7 +29,7 @@ Me.radRadioButton1.ButtonElement.ToolTipText = "sample tooltip"
 {{endregion}} 
 
 
-![buttons-radibutton-tooltips 001](images/buttons-radibutton-tooltips001.png)
+![WinForms RadButtons buttons-radibutton-tooltips 001](images/buttons-radibutton-tooltips001.png)
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
@@ -52,7 +52,7 @@ End Sub
 
 {{endregion}} 
 
-![buttons-radibutton-tooltips 002](images/buttons-radibutton-tooltips002.png)
+![WinForms RadButtons buttons-radibutton-tooltips 002](images/buttons-radibutton-tooltips002.png)
 
 >note The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set in the __ToolTipText__ property.
 

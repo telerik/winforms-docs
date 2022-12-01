@@ -38,7 +38,7 @@ RadListView1.Columns(2).Width = 100
 
 >caption Figure 1: Item sizing in DetailsView
 
-![listview-features-working-with-items 001](images/listview-features-working-with-items001.png)
+![WinForms RadListView Item sizing in DetailsView](images/listview-features-working-with-items001.png)
 
 In ViewType.*ListView*, when the __FullRowSelect__ property is set to *false*, the __ItemSize__ sets the __Item__ size accordingly:
 
@@ -62,7 +62,7 @@ RadListView1.ItemSize = New Drawing.Size(180, 35)
 
 >caption Figure 2: Item sizing in ListView
 
-![listview-features-working-with-items 002](images/listview-features-working-with-items002.png)
+![WinForms RadListView Item sizing in ListView](images/listview-features-working-with-items002.png)
 
 There are two more properties that provide additional customization options for all views –  __AllowArbitraryItemWidth__ and __AllowArbitraryItemHeight__. When both of these are set to *false*, the __ItemSize__ is the one that determines the size of the items:
 
@@ -88,18 +88,18 @@ RadListView1.AllowArbitraryItemWidth = False
 
 >caption Figure 3: Item sizing when arbitrary height/width is disabled
 
-![listview-features-working-with-items 003](images/listview-features-working-with-items003.png)
+![WinForms RadListView Item sizing when arbitrary height/width is disabled](images/listview-features-working-with-items003.png)
 
 If the __AllowArbitraryItemWidth__ property is set to *true*, the item will size horizontally as much as it needs to fit its content:
 
 >caption Figure 4: Enable AllowArbitraryItemWidth
 
-![listview-features-working-with-items 004](images/listview-features-working-with-items004.png)
+![WinForms RadListView Enable AllowArbitraryItemWidth](images/listview-features-working-with-items004.png)
 
 Respectively, the __AllowArbitraryItemHeight__ property sizes the item in height in order to fit its content.
 
 >caption Figure 5: AllowArbitraryItemHeight
-![listview-features-working-with-items 005](images/listview-features-working-with-items005.png)
+![WinForms RadListView AllowArbitraryItemHeight](images/listview-features-working-with-items005.png)
 
 ## Best fit columns
 
@@ -107,7 +107,7 @@ When using *DetailsView*, **RadListView** provides a grid-like interface for dis
 
 |Before best-fitting columns|After best-fitting columns|
 |----|----|
-|![listview-features-working-with-items 006](images/listview-features-working-with-items006.png)|![listview-features-working-with-items 006](images/listview-features-working-with-items007.png)|
+|![WinForms RadListView listview-features-working-with-items 006](images/listview-features-working-with-items006.png)|![WinForms RadListView listview-features-working-with-items 006](images/listview-features-working-with-items007.png)|
 
 You can customize the execution of the algorithm of a concrete column by setting its **AutoSizeMode** property if the desired column. There are the following options:
 
@@ -128,7 +128,7 @@ As of **R3 2020** RadListView offers the **AutoSizeColumnsMode** property which 
 
 |ListViewAutoSizeColumnsMode.None|ListViewAutoSizeColumnsMode.Fill|
 |----|----|
-|![listview-features-working-with-items 008](images/listview-features-working-with-items008.png)|![listview-features-working-with-items 009](images/listview-features-working-with-items009.png)|
+|![WinForms RadListView listview-features-working-with-items 008](images/listview-features-working-with-items008.png)|![WinForms RadListView listview-features-working-with-items 009](images/listview-features-working-with-items009.png)|
 
          
 # See Also

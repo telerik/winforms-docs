@@ -14,7 +14,7 @@ ElevationType.*Bounds* __ElevationRequest__ gets elevations at equally-spaced lo
 
 >caption Figure 1: Bounds ElevationRequest 
 
-![map-providers-elevation-bounds 001](images/map-providers-elevation-bounds001.png)
+![WinForms RadMap Bounds ElevationRequest](images/map-providers-elevation-bounds001.png)
 
 #### Bounds ElevationType request
 

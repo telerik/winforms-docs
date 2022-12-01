@@ -16,11 +16,11 @@ Like all Telerik WinForms controls **RadPropertyGrid** is build upon [Telerik P
 
 >caption Figure 1: RadPropertyGrid`s Element Hierarchy
 
-![propertygrid structure 001](images/propertygrid-structure001.png)
+![WinForms RadPropertyGrid RadPropertyGrid`s Element Hierarchy](images/propertygrid-structure001.png)
 
 >caption Figure 2: RadPropertyGrid`s Structure
 
-![propertygrid structure 002](images/propertygrid-structure002.png)
+![WinForms RadPropertyGrid RadPropertyGrid`s Structure](images/propertygrid-structure002.png)
 
 * **PropertyGridElement**: Represents the main element of the control.
   * **PropertyGridToolbarElement**: Represents the toolbar.

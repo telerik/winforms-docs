@@ -13,7 +13,7 @@ position: 2
 
 You can use the rotate buttons to directly rotate the image. No dialog is shown in this case.
 
-![](images/image-editor-rotate001.png)
+![WinForms RadImage-Editor ](images/image-editor-rotate001.png)
 
 # Rotate Programmatically
 

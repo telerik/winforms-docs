@@ -20,12 +20,12 @@ Stacked Bar 100 charts are used when you have three or more data series and want
 To create a Vertical Stacked Bar 100 Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __StackedBar100__.
 >caption 
 
-![chart-undestanding-radchart-types-stacked-bar-100-charts 001](images/chart-undestanding-radchart-types-stacked-bar-100-charts001.png)
+![WinForms RadChart ](images/chart-undestanding-radchart-types-stacked-bar-100-charts001.png)
 
 To create a Horizontal Stacked Bar Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries__.Type to __StackedBar100__.
 >caption 
 
-![chart-undestanding-radchart-types-stacked-bar-100-charts 002](images/chart-undestanding-radchart-types-stacked-bar-100-charts002.png)
+![WinForms RadChart chart-undestanding-radchart-types-stacked-bar-100-charts 002](images/chart-undestanding-radchart-types-stacked-bar-100-charts002.png)
 
 To display the label values as percentages, change the __DefaultLabelValue__ for each chart series from "#Y" (the numeric value for each data point) to "#%" (the percentage of each data point to the category).
         

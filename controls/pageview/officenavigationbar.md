@@ -12,4 +12,4 @@ position: 9
 
 As of **R2 2022** RadPageView offers PageViewMode.**OfficeNavigationBar**. A new standalone control is released called [RadOfficeNavigationBar]({%slug officenavigationbar-overview%}). It represents the control available in the MS Outlook 2013-2019 navigation style.
 
-![pageview-officenavigationbar 001](images/pageview-officenavigationbar001.png)
+![WinForms RadPageView pageview-officenavigationbar 001](images/pageview-officenavigationbar001.png)

@@ -49,7 +49,7 @@ Me.RadSyntaxEditor1.SyntaxEditorElement.IntelliPrompts.CompletionListWindow.Pres
 {{endregion}} 
 
 #### Figure 1: Code completion
-![features-intellipropmpts001](images/intelliprompts001.png)
+![WinForms RadSyntax-Editor features-intellipropmpts001](images/intelliprompts001.png)
 
 >note **CodeCompletionCommand** is being executed by **RadSyntaxEditor** when pressing `Space`+`Control` keys. It shows the **CompletionListWindow**. An alternative solution is to display the dialog programmatically by simply calling the SyntaxEditorElement.IntelliPrompts.CompletionListWindow.**Show** method.
 
@@ -89,7 +89,7 @@ Me.RadSyntaxEditor1.SyntaxEditorElement.IntelliPrompts.OverloadListWindow.Show()
 {{endregion}} 
 
 #### Figure 2: Code completion
-![features-intellipropmpts001](images/intelliprompts002.png) 
+![WinForms RadSyntax-Editor features-intellipropmpts001](images/intelliprompts002.png) 
 
 # See Also
 

@@ -41,7 +41,7 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 
 >caption Figure 1 Custom Grouping
 
-![gridview-grouping-custom-grouping 001](images/gridview-grouping-custom-grouping001.png)
+![WinForms RadGridView Custom Grouping](images/gridview-grouping-custom-grouping001.png)
 
 {{source=..\SamplesCS\GridView\Grouping\CustomGrouping.cs region=usingCustomGrouping}} 
 {{source=..\SamplesVB\GridView\Grouping\CustomGrouping.vb region=usingCustomGrouping}} 
@@ -129,11 +129,11 @@ When __RadGridView__ is displaying date columns, it is a common requirement to p
 
 >caption Figure: 2 DateTime Grouping Default Behavior
 
-![gridview-grouping-custom-grouping 001](images/gridview-grouping-custom-grouping003.png)
+![WinForms RadGridView DateTime Grouping Default Behavior](images/gridview-grouping-custom-grouping003.png)
 
 >caption Figure: 3 DateTime Grouping Custom Behavior
 
-![gridview-grouping-custom-grouping 001](images/gridview-grouping-custom-grouping004.png)
+![WinForms RadGridView DateTime Grouping Custom Behavior](images/gridview-grouping-custom-grouping004.png)
 
 {{source=..\SamplesCS\GridView\Grouping\CustomGroupingDateFields.cs region=CustomGrouping}} 
 {{source=..\SamplesVB\GridView\Grouping\CustomGroupingDateFields.vb region=CustomGrouping}} 
@@ -207,7 +207,7 @@ The following example demonstrates how to use a custom grouping mechanism to gro
 
 >caption Figure: 4 Implementing GroupPredicate
 
-![gridview-grouping-custom-grouping 002](images/gridview-grouping-custom-grouping002.png)
+![WinForms RadGridView 4 Implementing GroupPredicate](images/gridview-grouping-custom-grouping002.png)
 
 
 ````C#

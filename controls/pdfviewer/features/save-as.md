@@ -14,7 +14,7 @@ position: 2
 
 >caption Figure 1: Save As button in RadPdfViewerNavigator
 
-![pdfviewer-features-save-as 001](images/features-save-as001.png) 
+![WinForms RadPdfViewer Save As button in RadPdfViewerNavigator](images/features-save-as001.png) 
 
 ### Saving in Code-Behind
 

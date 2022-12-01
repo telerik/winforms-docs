@@ -15,7 +15,7 @@ In **RadPictureBox** you can easily pan, zoom in or out. The horizontal and vert
 The zoom feature is enabled by default. To start zooming you need to hold down the Ctrl key and use the mouse wheel. In order to disable the zooming, you should set the **AllowZoom** property to *false*.
 A pan operation can be started by dragging the viewport with the mouse or by using the scrollbars.
 
-![picturebox-edit001](images/pan-and-zoom001.gif)
+![WinForms RadPictureBox picturebox-edit001](images/pan-and-zoom001.gif)
 
 If you do not what the scrollbars to be displayed you can disable them. Thus, the user can navigate to the visible area of the control just by using the mouse or via touch gestures.
 

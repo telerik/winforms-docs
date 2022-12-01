@@ -13,8 +13,8 @@ previous_url: dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol
  
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Converting from RadComboBox to RadDropDownList](http://tv.telerik.com/watch/winforms/converting-from-radcombobox-to-raddropdownlist)<br>In this video, you will learn how to convert a __RadComboBox__ to the new __RadDropDownList__ control introduced in the Q2 2010 release of RadControls for WinForms.|![dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 003](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol003.png)|
-|[Converting from RadListBox to RadListControl](http://tv.telerik.com/watch/winforms/converting-from-radlistbox-to-radlistcontrol)<br>In this video, you will learn how to convert a RadListBox to the new RadListControl introduced in the R2 2010 release of RadControls for WinForms.|![dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 004](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol004.png)|
+|[WinForms DropDown and ListControl Converting from RadComboBox to RadDropDownList](http://tv.telerik.com/watch/winforms/converting-from-radcombobox-to-raddropdownlist)<br>In this video, you will learn how to convert a __RadComboBox__ to the new __RadDropDownList__ control introduced in the Q2 2010 release of RadControls for WinForms.|![WinForms DropDown and ListControl dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 003](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol003.png)|
+|[WinForms DropDown and ListControl Converting from RadListBox to RadListControl](http://tv.telerik.com/watch/winforms/converting-from-radlistbox-to-radlistcontrol)<br>In this video, you will learn how to convert a RadListBox to the new RadListControl introduced in the R2 2010 release of RadControls for WinForms.|![WinForms DropDown and ListControl dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 004](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol004.png)|
 
 ## 
 
@@ -34,11 +34,11 @@ Since Q2 2010 several brand new controls were released, as successors of older a
 
 In order to encourage our users to use the new controls, we have removed all the old controls from our Toolbox. But what about old controls, present in already existing applications? A manual conversion by simply dropping the new control and moving the entire content of the old control to the new one is not a straightforward process. Here comes the new tool, introduced in our __Q2 2010 Service Pack 1__ release, namely Telerik Conversion Wizard. The tool is available as a smart tag option in all Telerik Controls:
 
-![dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 001](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol001.png)
+![WinForms DropDown and ListControl dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 001](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol001.png)
 
 *The "Conversion Wizard…" command will open the wizard dialog:*
 
-![dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 002](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol002.png)
+![WinForms DropDown and ListControl dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol 002](images/dropdown-and-listcontrol-upgrading-to-dropdownlist-and-listcontrol002.png)
 
 *On the left side are listed all the controls, available for conversion, while on the right side are all the controls that will be actually converted. The two lists can be organized using the buttons in the middle.*
 

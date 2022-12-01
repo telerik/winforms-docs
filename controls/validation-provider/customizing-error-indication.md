@@ -12,7 +12,7 @@ position: 5
 
 When a control is being validated and some of the validation rules fails, a tool tip indicating the error occurs:
 
-![validation-provider-customizing-error-indication 001](images/validation-provider-customizing-error-indication001.png) 
+![WinForms RadValidation-Provider validation-provider-customizing-error-indication 001](images/validation-provider-customizing-error-indication001.png) 
 
 In addition, the **ControlValidation** event is fired. The **RadValidationEventArgs** offers the following information:
 
@@ -99,7 +99,7 @@ End Sub
 
 {{endregion}} 
 
-![validation-provider-customizing-error-indication 002](images/validation-provider-customizing-error-indication002.png) 
+![WinForms RadValidation-Provider validation-provider-customizing-error-indication 002](images/validation-provider-customizing-error-indication002.png) 
 
 
 # See Also

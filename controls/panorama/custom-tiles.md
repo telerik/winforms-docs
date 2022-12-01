@@ -15,7 +15,7 @@ This article demonstrates how you can create custom tiles. The bellow sample cod
 
 >caption Figure 1: Custom Title.
 
-![panorama-custom-tiles 001](images/panorama-custom-tiles001.png)
+![WinForms RadPanorama Custom Title](images/panorama-custom-tiles001.png)
 
 The code snippet bellow illustrates how the layout is achieved. There is a [GridLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/gridlayout%}) which is taking care of the items arrangement. Four [LightVisualElements]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}) are added to the grid layout. The first is used for the subject, the second and third for the start/end dates and the forth is used for the icon. The back color is changed in the class constructor.
 

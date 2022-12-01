@@ -54,7 +54,7 @@ The code snippet above will result in the following multi-column combobox:
 
 >caption Figure 1: Basic filtering
 
-![multicolumncombobox-filtering 001](images/multicolumncombobox-filtering001.png)
+![WinForms RadMultiColumnComboBox Basic filtering](images/multicolumncombobox-filtering001.png)
 
 ## Using CompositeFilterDescriptor
 
@@ -62,7 +62,7 @@ You can filter data records by multiple values. For this purpose you have to use
 
 >caption Figure 2: Filtering with CompositeFilterDescriptors
 
-![multicolumncombobox-filtering 002](images/multicolumncombobox-filtering002.gif)
+![WinForms RadMultiColumnComboBox Filtering with CompositeFilterDescriptors](images/multicolumncombobox-filtering002.gif)
 
 {{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=CompositeFilters}} 
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=CompositeFilters}} 

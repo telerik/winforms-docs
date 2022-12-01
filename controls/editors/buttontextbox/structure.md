@@ -16,11 +16,11 @@ This article describes the inner structure and organization of the elements whic
         
 >caption Figure 1: RadButtonTextBox's elements hierarchy
 
-![editors-buttontextbox-structure 001](images/editors-buttontextbox-structure001.png) 
+![WinForms RadButtonTextBox RadButtonTextBox's elements hierarchy](images/editors-buttontextbox-structure001.png) 
 
 >caption Figure 2: RadButtonTextBox's structure
 
-![editors-buttontextbox-structure 002](images/editors-buttontextbox-structure002.png)
+![WinForms RadButtonTextBox RadButtonTextBox's structure](images/editors-buttontextbox-structure002.png)
 
 1. **RadButtonTextBoxElement** - represents the main element.
 2. **StrechedHorizontalStackLayoutPanel** - hosts the left/right button elements.

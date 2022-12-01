@@ -13,7 +13,7 @@ CTAControlName: FilterView
 
 **RadFilterView** provides user friendly filtering options like the most popular shopping sites (for example Amazon). The data in the different filtering categories is collected by going through all the records of data.  
 
-![filter-view-overview 001](images/filter-view-overview001.png)
+![WinForms RadFilter-View filter-view-overview 001](images/filter-view-overview001.png)
 
 ## Key Features
 

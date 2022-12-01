@@ -99,13 +99,13 @@ End Sub
 
 11\. Click the *Start* button to start and stop the animation.
 
-![track-and-status-controls-waitingbar-getting-started 001](images/track-and-status-controls-waitingbar-getting-started001.gif)
+![WinForms RadWaitingBar track-and-status-controls-waitingbar-getting-started 001](images/track-and-status-controls-waitingbar-getting-started001.gif)
 
 ## Adding Indicator Elements programmatically
 
 The following example demonstrates how to add __DotsLineWaitingBarIndicatorElements__ in a __RadWaitingBar__ with WaitingBarStyles.*DotsSpinner*:
 
-![track-and-status-controls-waitingbar-getting-started 002](images/track-and-status-controls-waitingbar-getting-started002.gif)
+![WinForms RadWaitingBar track-and-status-controls-waitingbar-getting-started 002](images/track-and-status-controls-waitingbar-getting-started002.gif)
 
 {{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=AddingIndicators}} 
 {{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=AddingIndicators}} 

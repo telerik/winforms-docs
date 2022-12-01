@@ -35,11 +35,11 @@ On the screenshots below, you can see the Welcome pages for both wizard mode wit
 
 >caption Figure 1: Wizard97
 
-![wizard-structure 001](images/wizard-structure001.png)
+![WinForms RadWizard Wizard97](images/wizard-structure001.png)
 
 >caption Figure 2: Wizard Aero
 
-![wizard-structure 002](images/wizard-structure002.png)
+![WinForms RadWizard Wizard Aero](images/wizard-structure002.png)
 
 ## 
 
@@ -47,11 +47,11 @@ The following screenshots describe the inner structure and organization of the e
 
 >caption Figure 3: RadWizard's elements hierarchy in WizardMode.Wizard97
 
-![wizard-structure 003](images/wizard-structure003.png) 
+![WinForms RadWizard RadWizard's elements hierarchy in WizardModeWizard97](images/wizard-structure003.png) 
         
 >caption Figure 4: RadWizard visual structure in WizardMode.Wizard97
 
-![wizard-structure 004](images/wizard-structure004.png) 
+![WinForms RadWizard RadWizard visual structure in WizardModeWizard97](images/wizard-structure004.png) 
 
 # See Also
 

@@ -16,7 +16,7 @@ RadTreeView support nodes sorting. The sorting operation is applied separately t
 
 For example, if we have this RadTreeView instance:
 
-![treeview-working-with-nodes-sorting 001](images/treeview-working-with-nodes-sorting001.png)
+![WinForms RadTreeView treeview-working-with-nodes-sorting 001](images/treeview-working-with-nodes-sorting001.png)
         
 and we set the __SortOrder__ as shown below:
 
@@ -36,7 +36,7 @@ Me.RadTreeView1.SortOrder = SortOrder.Ascending
 
 we will get this look of RadTreeView at the end:
 
-![treeview-working-with-nodes-sorting 002](images/treeview-working-with-nodes-sorting002.png)
+![WinForms RadTreeView treeview-working-with-nodes-sorting 002](images/treeview-working-with-nodes-sorting002.png)
 
 # See Also
 * [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})

@@ -14,11 +14,11 @@ This article illustrates the inner structure and organization of the elements wh
 
 >caption Figure 1: RadPanorama's elements hierarchy
 
-![panorama-structure 001](images/panorama-structure001.png)
+![WinForms RadPanorama RadPanorama's elements hierarchy](images/panorama-structure001.png)
 
 >caption Figure 2: RadPanorama's visual structure
 
-![panorama-structure 002](images/panorama-structure002.png)
+![WinForms RadPanorama RadPanorama's visual structure](images/panorama-structure002.png)
  
 # See Also
 

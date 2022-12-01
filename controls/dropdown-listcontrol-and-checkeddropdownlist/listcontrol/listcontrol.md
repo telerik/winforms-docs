@@ -18,7 +18,7 @@ __RadListControl__ is the an alternative to the Microsoft ListBox control. Due t
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![dropdown-and-listcontrol-listcontrol-overview 001](images/dropdown-and-listcontrol-listcontrol-overview001.png)
+![WinForms RadListControl dropdown-and-listcontrol-listcontrol-overview 001](images/dropdown-and-listcontrol-listcontrol-overview001.png)
    
 ## RadListDataItem
      

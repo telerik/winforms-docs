@@ -14,7 +14,7 @@ The __GridViewSpreadStreamExport__ uses the [__RadSpreadStreamProcessing__](http
 
 >caption Figure 1: Exporting RadGridView.
 
-![gridview-exporting-data-spreadstream-export 001](images/gridview-exporting-data-spreadstream-export001.png)
+![WinForms RadGridView Exporting RadGridView](images/gridview-exporting-data-spreadstream-export001.png)
 
 
 >note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
@@ -209,7 +209,7 @@ This feature can be utilized by calling the __RunExportAsync__ method on the __G
 
 >caption Figure 2: The asynchronous export.
 
-![gridview-exporting-data-spreadstream-export 002](images/gridview-exporting-data-spreadstream-export002.png)
+![WinForms RadGridView The asynchronous export](images/gridview-exporting-data-spreadstream-export002.png)
 
 #### Exporting asynchronously and reporting the progress.  
 

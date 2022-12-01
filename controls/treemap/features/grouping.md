@@ -16,17 +16,17 @@ When using [unbound mode]({%slug treemap-unbound-mode%}), it is necessary to add
 
 >caption Adding Groups at Design Time
 
-![winforms-treemap-grouping 001](images/winforms-treemap-grouping001.png)
+![WinForms RadTreeMap Adding Groups at Design Time](images/winforms-treemap-grouping001.png)
 
 When using [bound mode]({%slug treemap-data-binding%}), once the **RadTreeMap** is populated with data, it is possible to add a new **GroupDescriptor** to the **GroupDescriptors** collection:
 
 >caption RadTreeMap with no grouping
 
-![winforms-treemap-grouping 002](images/winforms-treemap-grouping002.png)
+![WinForms RadTreeMap RadTreeMap with no grouping](images/winforms-treemap-grouping002.png)
 
 >caption RadTreeMap grouped by CategoryID 
 
-![winforms-treemap-grouping 003](images/winforms-treemap-grouping003.png)
+![WinForms RadTreeMap RadTreeMap grouped by CategoryID](images/winforms-treemap-grouping003.png)
 
 {{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=Grouping}} 
 {{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=Grouping}} 

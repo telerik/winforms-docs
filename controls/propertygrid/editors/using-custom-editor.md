@@ -15,7 +15,7 @@ This following snippet demonstrates how to create and replace the standard spin 
 
 >caption Figure 1: TrackBar Editor
 
-![propertygrid-editors-using-custom-editor](images/propertygrid-editors-using-custom-editor.png)
+![WinForms RadPropertyGrid TrackBar Editor](images/propertygrid-editors-using-custom-editor.png)
 
 All property grid editors inherit from __BaseInputEditor__. So, you have to inherit from this class and override several methods:
 

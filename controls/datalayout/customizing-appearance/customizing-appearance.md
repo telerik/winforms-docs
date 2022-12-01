@@ -14,7 +14,7 @@ You can access and modify the style for different elements in __RadDataEntry__ b
 
 >caption Figure 1: Element Hierarchy Editor
 
-![datalayout-customizing-appearance001](images/datalayout-customizing-appearance001.png)   
+![WinForms RadDataLayout Element Hierarchy Editor](images/datalayout-customizing-appearance001.png)   
 
 # Changing the styles of the underlying items and controls
 
@@ -48,7 +48,7 @@ Next item
 
 >caption Figure 2: Change the items styles
 
-![datalayout-customizing-appearance002](images/datalayout-customizing-appearance002.png)   
+![WinForms RadDataLayout Change the items styles](images/datalayout-customizing-appearance002.png)   
 
 # See Also
 

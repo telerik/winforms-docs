@@ -14,7 +14,7 @@ This section defines terms and concepts used in the scope of the **RadSyntaxEdit
 
 #### Figure 1: RadSyntaxEditor's structure
 
-![syntax-editor-structure](images/syntax-editor-structure001.png) 
+![WinForms RadSyntax-Editor syntax-editor-structure](images/syntax-editor-structure001.png) 
 
 
 - **Line Number Margin**: Displays a number for each line of the current document.
@@ -31,4 +31,4 @@ This section defines terms and concepts used in the scope of the **RadSyntaxEdit
 
 #### Figure 2: RadSyntaxEditor's elements hierarchy
 
-![syntax-editor-structure](images/syntax-editor-structure02.png)
+![WinForms RadSyntax-Editor syntax-editor-structure](images/syntax-editor-structure02.png)

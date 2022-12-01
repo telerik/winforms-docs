@@ -12,7 +12,7 @@ position: 0
 
 You can access and modify the style for the different elements in the editable area of __RadTabbedForm__ by using the Element hierarchy editor.
 
-![radtabbedform-customizing-appearance001](images/customizing-appearance001.png)
+![WinForms RadTabbedForm radtabbedform-customizing-appearance001](images/customizing-appearance001.png)
 
 
 # Programmatically

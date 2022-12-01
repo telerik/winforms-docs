@@ -43,7 +43,7 @@ End Sub
 
 >caption Figure 1: Using the formatting event to set the tooltips.
 
-![gridview-cells-tooltips 001](images/gridview-cells-tooltips001.png)
+![WinForms RadGridView Using the formatting event to set the tooltips](images/gridview-cells-tooltips001.png)
 
 ## Setting tooltips in the ToolTipTextNeeded event
 
@@ -77,7 +77,7 @@ End Sub
 
 >caption Figure 2: Using the ToolTipTextNeeded event.
 
-![gridview-cells-tooltips 002](images/gridview-cells-tooltips002.png)
+![WinForms RadGridView Using the ToolTipTextNeeded event](images/gridview-cells-tooltips002.png)
 
 >note The *ToolTipTextNeeded* event has higher priority and overrides the tooltips set in CellFormatting event handler.
 >

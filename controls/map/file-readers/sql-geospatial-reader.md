@@ -14,7 +14,7 @@ __SqlGeospatialDataReader__ allows generating map shapes from any IEnumerable in
 
 >caption Figure 1: SQL Geospatial Reader
 
-![map-file-readers-sql-geospatial-reader 001](images/map-file-readers-sql-geospatial-reader001.png)
+![WinForms RadMap SQL Geospatial Reader](images/map-file-readers-sql-geospatial-reader001.png)
 
 
 #### Using SqlGeospatialDataReader
@@ -67,6 +67,6 @@ Me.radMap1.Layers("Capitals").AddRange(elements)
 
 >caption Figure 2: Sample data table
 
-![map-file-readers-sql-geospatial-reader 002](images/map-file-readers-sql-geospatial-reader002.png)
+![WinForms RadMap Sample data table](images/map-file-readers-sql-geospatial-reader002.png)
 
  

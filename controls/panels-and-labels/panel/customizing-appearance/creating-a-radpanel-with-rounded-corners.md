@@ -19,17 +19,17 @@ The following steps describe how to apply a rounded rectangle shape to the __Ra
 
 1. From its Smart Tag choose the *Edit UI Elements* action
 
-    ![panels-and-labels-panel-creating-a-radpanel-with-rounded-corners 001](images/panels-and-labels-panel-creating-a-radpanel-with-rounded-corners001.png)
+    ![WinForms RadPanel panels-and-labels-panel-creating-a-radpanel-with-rounded-corners 001](images/panels-and-labels-panel-creating-a-radpanel-with-rounded-corners001.png)
 
 1. In the Element Hierarchy Editor dialog select the *RadPanelElement* node in the tree view on the left:
 
-    ![panels-and-labels-panel-creating-a-radpanel-with-rounded-corners 002](images/panels-and-labels-panel-creating-a-radpanel-with-rounded-corners002.png)
+    ![WinForms RadPanel panels-and-labels-panel-creating-a-radpanel-with-rounded-corners 002](images/panels-and-labels-panel-creating-a-radpanel-with-rounded-corners002.png)
 
 1. In the Property Grid on the right find the *Shape* property and from its drop down select the *RoundRectShape*.
 
 1. Close the Element Hierarchy Editor. The rounded corner shape should be applied to the __RadPanel__ control:
 
-    ![panels-and-labels-panel-creating-a-radpanel-with-rounded-corners 003](images/panels-and-labels-panel-creating-a-radpanel-with-rounded-corners003.png)
+    ![WinForms RadPanel panels-and-labels-panel-creating-a-radpanel-with-rounded-corners 003](images/panels-and-labels-panel-creating-a-radpanel-with-rounded-corners003.png)
 
 # See Also
 

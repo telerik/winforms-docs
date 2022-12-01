@@ -14,7 +14,7 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 
 >caption Figure 1: BingRestMapProvider 
 
-![map-bingrestmapprovider 001](images/map-bingrestmapprovider001.png)
+![WinForms RadMap BingRestMapProvider](images/map-bingrestmapprovider001.png)
 
 >note You must provide a Bing Maps Key to the provider for it to work. To get your free Bing Maps Key, please refer to the following link: [Getting a Bing Maps Key](https://msdn.microsoft.com/en-us/library/ff428642.aspx).
 
@@ -57,7 +57,7 @@ Me.radMap1.Providers.Add(bingProvider)
 |__BingKey__|Gets or sets the Bing key.|
 |__UseSession__|Gets or sets a value indicating whether to use session key.|
 |__SessionId__|Gets the session identifier.|
-|__ImagerySet__|Gets or sets the imagery set. The possible values are: *Aerial*, *AerialWithLabels*, *AerialWithLabelsOnDemand*,*Road*, *RoadOnDemand*, *CanvasDark*, *CanvasLight*, *CanvasGray*, *OrdnanceSurvey*. ![map-bingrestmapprovider 001](images/map-bingrestmapprovider002.png)|
+|__ImagerySet__|Gets or sets the imagery set. The possible values are: *Aerial*, *AerialWithLabels*, *AerialWithLabelsOnDemand*,*Road*, *RoadOnDemand*, *CanvasDark*, *CanvasLight*, *CanvasGray*, *OrdnanceSurvey*. ![WinForms RadMap map-bingrestmapprovider 001](images/map-bingrestmapprovider002.png)|
 |__Initializing__|Gets or sets a value indicating whether this __BingRestMapProvider__ is currently in the initialization process.|
 |__Initialized__|Gets or sets a value indicating whether this __BingRestMapProvider__ is initialized.|
 |__MaxZoomLevel__|Gets or sets the maximum zoom level.|

@@ -14,7 +14,7 @@ The **OpenRecurringAppointmentDialog** is shown when you try to edit a recurring
 
 >caption Figure 1. OpenRecurringAppointmentDialog
 
-![scheduler-winforms-scheduler-dialogs-openrecurringappointmentdialog 001](images/scheduler-winforms-scheduler-dialogs-openrecurringappointmentdialog001.png)
+![WinForms RadScheduler OpenRecurringAppointmentDialog](images/scheduler-winforms-scheduler-dialogs-openrecurringappointmentdialog001.png)
 
 It will pop up when you double click a recurring appointment. Alternatively, you can show it by using the "Edit Appointment" option in the default context menu when a recurring appointment is currently selected. 
 

@@ -35,7 +35,7 @@ __GridViewRowInfo__ class is the logical representation of a single row. Some of
 
 The example below demonstrates the behavior of several of these properties:
 
-![gridview-rows-gridviewrowinfo 001](images/gridview-rows-gridviewrowinfo001.png)
+![WinForms RadGridView gridview-rows-gridviewrowinfo 001](images/gridview-rows-gridviewrowinfo001.png)
 
 #### Using GridViewRowInfo 
 

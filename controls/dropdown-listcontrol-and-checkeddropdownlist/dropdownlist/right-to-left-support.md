@@ -23,7 +23,7 @@ __RadDropDownList__ fully supports right-to-left (RTL) language locales. You can
             
 |RightToLeft.Yes|RightToLeft.No|
 |----|----|
-|![dropdown-and-listcontrol-dropdownlist-right-to-left-support 001](images/dropdown-and-listcontrol-dropdownlist-right-to-left-support001.png)|![dropdown-and-listcontrol-dropdownlist-right-to-left-support 002](images/dropdown-and-listcontrol-dropdownlist-right-to-left-support002.png)
+|![WinForms RadDropDownList dropdown-and-listcontrol-dropdownlist-right-to-left-support 001](images/dropdown-and-listcontrol-dropdownlist-right-to-left-support001.png)|![WinForms RadDropDownList dropdown-and-listcontrol-dropdownlist-right-to-left-support 002](images/dropdown-and-listcontrol-dropdownlist-right-to-left-support002.png)
  
 #### Assigning RightToLeft 
 

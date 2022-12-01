@@ -58,7 +58,7 @@ Me.RadChartView1.Series.Add(series)
 {{endregion}} 
 
 >caption Figure 1: BetweenTicks PlotMode
-![chartview-axes-plot-mode 001](images/chartview-axes-plot-mode001.png)
+![WinForms RadChartView BetweenTicks PlotMode](images/chartview-axes-plot-mode001.png)
 
 You can always change the PlotMode property, even if the CategoricalAxis was auto-generated, using the Get() method of the Axes collection. The following snippet changes the PlotMode to OnTicks: 
 
@@ -81,7 +81,7 @@ axis.PlotMode = AxisPlotMode.OnTicks
 {{endregion}} 
 
 >caption Figure 2: OnTicks PlotMode
-![chartview-axes-plot-mode 002](images/chartview-axes-plot-mode002.png)
+![WinForms RadChartView OnTicks PlotMode](images/chartview-axes-plot-mode002.png)
 
 Using the aforementioned approach you can set the PlotMode property to OnTicksPadded: 
 
@@ -102,7 +102,7 @@ axis.PlotMode = AxisPlotMode.OnTicksPadded
 {{endregion}} 
 
 >caption Figure 3: OnTicksPadded PlotMode
-![chartview-axes-plot-mode 003](images/chartview-axes-plot-mode003.png)
+![WinForms RadChartView OnTicksPadded PlotMode](images/chartview-axes-plot-mode003.png)
 
 # See Also
 

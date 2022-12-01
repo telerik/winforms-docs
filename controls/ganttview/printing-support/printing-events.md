@@ -81,7 +81,7 @@ End Sub
 
 {{endregion}} 
 
-![ganttview-printing-printing-events 001](images/ganttview-printing-printing-events001.png)![ganttview-printing-printing-events 002](images/ganttview-printing-printing-events002.png)
+![WinForms RadGanttView ganttview-printing-printing-events 001](images/ganttview-printing-printing-events001.png)![WinForms RadGanttView ganttview-printing-printing-events 002](images/ganttview-printing-printing-events002.png)
 
 ## PrintElementPaint
 
@@ -119,6 +119,6 @@ End Sub
 
 {{endregion}} 
 
-![ganttview-printing-printing-events 003](images/ganttview-printing-printing-events003.png)
+![WinForms RadGanttView ganttview-printing-printing-events 003](images/ganttview-printing-printing-events003.png)
 
  

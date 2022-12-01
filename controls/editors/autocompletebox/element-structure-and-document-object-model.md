@@ -20,7 +20,7 @@ The visual element structure of the RadTextBoxControlElement is presented on the
 
 >caption Figure 1: The elements used in RadAutoCompleteBox
 
-![editors-autocompletebox-element-structure-and-dom 001](images/editors-autocompletebox-element-structure-and-dom001.png)
+![WinForms RadAutoCompleteBox The elements used in RadAutoCompleteBox](images/editors-autocompletebox-element-structure-and-dom001.png)
 
 * __TextBoxViewElement__ represents a viewport that is responsible for the layout and arrangement of all text blocks. It executes layout algorithms for single, multi-line and word wrap layout. It inherits from __ITextBlock__.
 		  	

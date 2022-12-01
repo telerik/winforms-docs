@@ -18,7 +18,7 @@ You can access and modify the style for different elements in __RadMaskedEditBox
 
 >caption Fig.1 Element Hierarchy Editor
 
-![radmaskededitbox customizing appearance customizing appearance 001](images/radmaskededitbox-customizing-appearance-customizing-appearance001.png.png)
+![WinForms RadMaskedEditBox Element Hierarchy Editor](images/radmaskededitbox-customizing-appearance-customizing-appearance001.png.png)
 
 {{endregion}} 
 

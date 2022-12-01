@@ -14,7 +14,7 @@ The __Smart Tag__ of __RadSpinEditor__ lets you quickly access common tasks invo
 
 >caption Figure 1: The Smart Tag of RadSpinEditor
 
-![editors-spineditor-design-time001](images/editors-spineditor-design-time001.png)        
+![WinForms RadSpinEditor The Smart Tag of RadSpinEditor](images/editors-spineditor-design-time001.png)        
 
 * __Common Tasks__
     - __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.

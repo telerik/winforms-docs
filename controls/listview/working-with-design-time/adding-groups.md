@@ -15,27 +15,27 @@ Items in **RadListView** can be grouped conveniently into different groups, whic
 
 >caption Figure 1: Groups option in Smart tag
 
-![listview-working-with-design-time-adding-groups 001](images/listview-working-with-design-time-adding-groups001.png)
+![WinForms RadListView Groups option in Smart tag](images/listview-working-with-design-time-adding-groups001.png)
 
 >caption Figure 2: Groups option in Properties section
 
-![listview-working-with-design-time-adding-groups 002](images/listview-working-with-design-time-adding-groups002.png)
+![WinForms RadListView Groups option in Properties section](images/listview-working-with-design-time-adding-groups002.png)
 
 Once the __ListViewDataItemGroup Collection Editor__ is opened, you can add the desired groups by using the __Add__ button on the bottom, and also, you can modify the group settings in the property grid.
 
 >caption Figure 3: ListViewDataItemGroup Collection Editor
 
-![listview-working-with-design-time-adding-groups 003](images/listview-working-with-design-time-adding-groups003.png)
+![WinForms RadListView ListViewDataItemGroup Collection Editor](images/listview-working-with-design-time-adding-groups003.png)
 
 After the desired groups are added, you can easily assign each __ListViewDataItem__ to the group of your choice by setting the ListViewDataItem.__Group__ property:
 
 >caption Figure 4: Specifying item's group
 
-![listview-working-with-design-time-adding-groups 004](images/listview-working-with-design-time-adding-groups004.png)
+![WinForms RadListView Specifying item's group](images/listview-working-with-design-time-adding-groups004.png)
 
 Here is how the grouped items will look like:
 
-![listview-working-with-design-time-adding-groups 005](images/listview-working-with-design-time-adding-groups005.png)
+![WinForms RadListView listview-working-with-design-time-adding-groups 005](images/listview-working-with-design-time-adding-groups005.png)
 
 # See Also
 

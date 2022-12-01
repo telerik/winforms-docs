@@ -229,7 +229,7 @@ End Sub
 16\. Run the application and test the various combinations of settings.
 
 >caption Figure 1: Views Walkthrough
-![scheduler-views-views-walkthrough 001](images/scheduler-views-views-walkthrough001.png)
+![WinForms RadScheduler Views Walkthrough](images/scheduler-views-views-walkthrough001.png)
 
 # See Also
 

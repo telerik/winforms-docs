@@ -14,7 +14,7 @@ __RadMap__ provides a unified route search architecture which uses functionality
 
 >caption Figure 1: Bing routing
 
-![map-providers-bingmaps-route 001](images/map-providers-bingmaps-route001.png)
+![WinForms RadMap Bing routing](images/map-providers-bingmaps-route001.png)
 
 The whole information that is necessary for calculating the route, like start/end points, the distance unit, mode, optimization etc., is stored in a __RouteRequest__. Subscribe to the IMapRouteProvider.__CalculateRouteCompleted__ event where you can add __MapPins__ and __MapRoute__ to the __MapLayer__ for the route results.
 

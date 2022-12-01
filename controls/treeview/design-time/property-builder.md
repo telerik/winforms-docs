@@ -15,12 +15,12 @@ To quickly create and arrange node structure and appearance invoke the `Property
 
 >caption Figure 1: TreeView PropertyBuilder
 
-![treeview-design-time-property-builder 001](images/treeview-design-time-property-builder001.png)
+![WinForms RadTreeView TreeView PropertyBuilder](images/treeview-design-time-property-builder001.png)
 
 ## Node Properties Tab
 
 >caption Figure 2: Node Properties
-![treeview-design-time-property-builder 003](images/treeview-design-time-property-builder003.png)
+![WinForms RadTreeView Node Properties](images/treeview-design-time-property-builder003.png)
 
 By default you will see an empty tree view where the command buttons allow you to add and arrange nodes. The buttons perform the following actions (in order from left to right): 
 
@@ -44,13 +44,13 @@ The __Settings__ pane contains the most commonly used properties for each node (
 
 >caption Figure 3: The Settings tab
 
-![treeview-design-time-property-builder 001](images/treeview-design-time-property-builder001.png)
+![WinForms RadTreeView The Settings tab](images/treeview-design-time-property-builder001.png)
 
 The __Advanced__ tab contains more properties for each node:
 
 >caption Figure 4: The Advanced tab
 
-![treeview-design-time-property-builder 004](images/treeview-design-time-property-builder004.png)
+![WinForms RadTreeView The Advanced tab](images/treeview-design-time-property-builder004.png)
 
 The *Advanced* tab allows you to set various properties for each node (BackColor, ForeColor, Height).
 
@@ -74,14 +74,14 @@ The available items are:
 
 >caption Figure 5. The RadTreeViewProperties
 
-![treeview-design-time-property-builder 002](images/treeview-design-time-property-builder002.png)
+![WinForms RadTreeView 5 The RadTreeViewProperties](images/treeview-design-time-property-builder002.png)
  
 
 ### The Advanced tab
 
 >caption Figure 6. The RadTreeViewProperties
 
-![treeview-design-time-property-builder 006](images/treeview-design-time-property-builder006.png)
+![WinForms RadTreeView 6 The RadTreeViewProperties](images/treeview-design-time-property-builder006.png)
 
 The *Advanced* tab displays all the properties of the RadTreeView as you would see them in the `Properties` window. The Advanced tab provides the best control over the RadTreeView characteristics but it may take longer to find the relevant properties.
 

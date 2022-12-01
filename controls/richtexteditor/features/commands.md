@@ -274,4 +274,4 @@ End Sub
 
 Now, the button will respond to the current state of the selection.
 
-![richtexteditor-features-clipboard-support 001](images/richtexteditor-features-clipboard-support001.gif)
+![WinForms RadRichTextEditor richtexteditor-features-clipboard-support 001](images/richtexteditor-features-clipboard-support001.gif)

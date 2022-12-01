@@ -17,23 +17,23 @@ This topic will walk you through the creating process of __RadTabbedForm__.
 
 2\. Add a new Tabbed form from Visual Studio. Go to __Project -> Add Windows Form__ and then select TabbedForm
 
-![radtabbedform-getting-started001](images/radtabbedform-getting-started001.jpg)
+![WinForms RadTabbedForm radtabbedform-getting-started001](images/radtabbedform-getting-started001.jpg)
 
 3\. Add some tabs from the Smart Tag.
 
-![radtabbedform-getting-started002](images/radtabbedform-getting-started002.png)
+![WinForms RadTabbedForm radtabbedform-getting-started002](images/radtabbedform-getting-started002.png)
 
 4\. Go to the Program.cs and change the startup form. 
 
-![radtabbedform-getting-started003](images/radtabbedform-getting-started003.png)
+![WinForms RadTabbedForm radtabbedform-getting-started003](images/radtabbedform-getting-started003.png)
 
 In VB.NET this can be done from the project properties.
 
-![radtabbedform-getting-started004](images/radtabbedform-getting-started004.png)
+![WinForms RadTabbedForm radtabbedform-getting-started004](images/radtabbedform-getting-started004.png)
 
 5\. Start the application. 
 
-![radtabbedform-getting-started005](images/radtabbedform-getting-started005.png)
+![WinForms RadTabbedForm radtabbedform-getting-started005](images/radtabbedform-getting-started005.png)
 
 
 # See Also

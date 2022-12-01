@@ -26,7 +26,7 @@ previous_url: calendar-design-time-support-adding-special-dates
 
 >caption Figure 1: Adding special days.
 
-![calendar-design-time-support-adding-special-dates 001](images/calendar-design-time-support-adding-special-dates001.png)
+![WinForms RadCalendar Adding special days](images/calendar-design-time-support-adding-special-dates001.png)
 
 ## See Also
 

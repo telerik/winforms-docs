@@ -14,7 +14,7 @@ previous_url: bulletgraph-getting-started
 When you drag a __RadBulletGraph__ from the Toolbox and drop it onto the form, the gauge gallery will offer you to pick up the desired type:
 
 >caption Figure 1: Gallery Types
-![bulletgraph-getting-started 001](images/bulletgraph-getting-started001.png)
+![WinForms RadGauges Gallery Types](images/bulletgraph-getting-started001.png)
 
 >note If you do not choose a gauge's style and just close the gallery, an empty __RadBulletGraph__ will be created.
 >
@@ -22,12 +22,12 @@ When you drag a __RadBulletGraph__ from the Toolbox and drop it onto the form, t
 You can change the gauge's style via the Smart tag's option Open Gallery as well.
 
 >caption Figure 2: Smart Tag Gallery Options
-![bulletgraph-getting-started 002](images/bulletgraph-getting-started002.png)
+![WinForms RadGauges Smart Tag Gallery Options](images/bulletgraph-getting-started002.png)
 
 Once the control is added to the form you just need to synchronize the __FeaturedMeasure__ and __ComparativeMeasure__ values with your business logic values. For example you can see how the controls work with the following code:      
 
 >caption Figure 3: Update Properties
-![bulletgraph-getting-started 003](images/bulletgraph-getting-started003.gif)
+![WinForms RadGauges Update Properties](images/bulletgraph-getting-started003.gif)
 
 #### Update Properties
 

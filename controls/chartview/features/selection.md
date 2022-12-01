@@ -151,7 +151,7 @@ End Sub
 {{endregion}}
 
 >caption Figure 2: Sliced Pie
-![chartview-features-selection 001](images/chartview-features-selection001.png)
+![WinForms RadChartView Sliced Pie](images/chartview-features-selection001.png)
 
 # See Also
 

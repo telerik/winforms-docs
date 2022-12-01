@@ -16,7 +16,7 @@ Select **RadPivotGrid** and click the small arrow on the top right position in o
 
 >caption Figure 1: Smart Tag
 
-![propertygrid-design-time 001](images/pivotgrid-smart-tag001.png)
+![WinForms RadPivotGrid Smart Tag](images/pivotgrid-smart-tag001.png)
 
 * **Common Tasks**
 

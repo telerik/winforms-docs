@@ -20,13 +20,13 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select **RadTileElement** in *Controls Structure* on the left side. The **RadTileElement** in the *Elements* section will be automatically selected.
 
-	![panorama-customizing-appearance-themes 001](images/panorama-customizing-appearance-themes001.png)
+	![WinForms RadPanorama panorama-customizing-appearance-themes 001](images/panorama-customizing-appearance-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![panorama-customizing-appearance-themes 002](images/panorama-customizing-appearance-themes002.png)
+	![WinForms RadPanorama panorama-customizing-appearance-themes 002](images/panorama-customizing-appearance-themes002.png)
 	
-	![panorama-customizing-appearance-themes 003](images/panorama-customizing-appearance-themes003.png)
+	![WinForms RadPanorama panorama-customizing-appearance-themes 003](images/panorama-customizing-appearance-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

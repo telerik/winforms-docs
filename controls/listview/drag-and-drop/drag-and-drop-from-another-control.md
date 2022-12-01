@@ -17,7 +17,7 @@ __RadListView__  supports drag and drop functionality from another control, such
 
 >caption Figure 1 Drag and drop from ListBox to RadListView
 
-![listview-drag-and-drop-drag-and-drop-from-another-control 001](images/listview-drag-and-drop-drag-and-drop-from-another-control001.gif)
+![WinForms RadListView Drag and drop from ListBox to RadListView](images/listview-drag-and-drop-drag-and-drop-from-another-control001.gif)
 
 1\. Firstly, we should start the drag and drop operation, using the ListBox.__MouseMove__ event when the left mouse button is pressed. We should keep the mouse down location in the ListBox.__MouseDown__ event. Afterwards, allow dragging over the __RadListView__  via the __Effect__ argument of the __DragEventArgs__ in the RadListView.__DragEnter__ event handler:
 
@@ -185,7 +185,7 @@ End Sub
 
 >caption Figure 2: Drag and drop from RadListView to ListBox
 
-![listview-drag-and-drop-drag-and-drop-from-another-control 002](images/listview-drag-and-drop-drag-and-drop-from-another-control002.gif)
+![WinForms RadListView Drag and drop from RadListView to ListBox](images/listview-drag-and-drop-drag-and-drop-from-another-control002.gif)
 
 1\. In order to enable dragging an item from the __RadListView__ and dropping it onto the **ListBox**, it is necessary to use the RadListView.__MouseDown__ and the RadListView.__MouseMove__ events to start the drag and drop operation. In the ListBox.__DragOver__ event you should allow the drop operation:
 

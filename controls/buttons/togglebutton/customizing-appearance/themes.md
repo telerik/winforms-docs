@@ -21,11 +21,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __RadToggleButtonElement__ in *Controls Structure* on the left side. Then, select __ToggleButtonFill__ in the *Elements* section.
 
-	![togglebutton-customizing-appearance-themes 001](images/togglebutton-customizing-appearance-themes001.png)
+	![WinForms RadButtons togglebutton-customizing-appearance-themes 001](images/togglebutton-customizing-appearance-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![togglebutton-customizing-appearance-themes 002](images/togglebutton-customizing-appearance-themes002.png)
+	![WinForms RadButtons togglebutton-customizing-appearance-themes 002](images/togglebutton-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

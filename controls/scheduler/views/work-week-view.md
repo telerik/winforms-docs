@@ -16,7 +16,7 @@ previous_url: scheduler-views-work-week-view
 The Work Week View is a special case of the WeekView, where the __ShowWeekend__ property is by default set to __false__.
 
 >caption Figure 1: Work Week View
-![scheduler-views-work-week-view 001](images/scheduler-views-work-week-view001.png)
+![WinForms RadScheduler Work Week View](images/scheduler-views-work-week-view001.png)
 
 ## Set the Work Week View
 

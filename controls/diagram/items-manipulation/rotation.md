@@ -17,7 +17,7 @@ __RadDiagram__ gives you the ability to rotate shapes by dragging their Rotation
 
 By default, the __RadDiagram__ is enabled for rotation manipulation. In order to disable this functionality, you can set the __IsRotationEnabled__ property to *false*.
 
-![diagram-items-manipulation-rotation 001](images/diagram-items-manipulation-rotation001.png) 
+![WinForms RadDiagram diagram-items-manipulation-rotation 001](images/diagram-items-manipulation-rotation001.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EnableRotation}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EnableRotation}} 
@@ -38,7 +38,7 @@ Me.RadDiagram1.IsRotationEnabled = False
 
 You can rotate shapes by using their __RotationAngle__ property: 
 
-![diagram-items-manipulation-rotation 002](images/diagram-items-manipulation-rotation002.png) 
+![WinForms RadDiagram diagram-items-manipulation-rotation 002](images/diagram-items-manipulation-rotation002.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=RotationAngle}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=RotationAngle}} 

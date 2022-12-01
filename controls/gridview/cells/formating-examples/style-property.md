@@ -89,7 +89,7 @@ Me.StyleCell(Me.RadGridView1.Rows(1).Cells(1))
 
 >caption Figure 1: Format using the Style property.
 
-![gridview-cells-formatting-cells-style-property 001](images/gridview-cells-formatting-cells-style-property001.png)
+![WinForms RadGridView Format using the Style property](images/gridview-cells-formatting-cells-style-property001.png)
 
 >note Before assigning a certain value to the **Style** of the data cell, you can store the initial values of the properties. Thus, you can reset the style to the initial values if the style is not needed anymore.
 

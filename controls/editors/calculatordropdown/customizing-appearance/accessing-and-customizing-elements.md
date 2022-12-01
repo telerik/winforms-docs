@@ -30,7 +30,7 @@ Me.RadCalculatorDropDown1.CalculatorElement.MemoryElement.Image = My.Resources.e
 {{endregion}} 
 
 >caption Figure 1: RadCalculatorMemoryElement Customization
-![editors-calculatordropdown-customization 001](images/editors-calculatordropdown-customization001.png)
+![WinForms RadCalculatorDropDown RadCalculatorMemoryElement Customization](images/editors-calculatordropdown-customization001.png)
 
 ## Text Box Visual Customization 
 
@@ -51,7 +51,7 @@ Me.RadCalculatorDropDown1.CalculatorElement.EditorContentElement.Fill.BackColor 
 {{endregion}} 
 
 >caption Figure 2: Text Box Customization
-![editors-calculatordropdown-customization 002](images/editors-calculatordropdown-customization002.png)
+![WinForms RadCalculatorDropDown Text Box Customization](images/editors-calculatordropdown-customization002.png)
 
 ## Calculator Visual Customization 
 
@@ -70,7 +70,7 @@ Me.RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.BackColor =
 {{endregion}} 
 
 >caption Figure 3: Calculator Customization
-![editors-calculatordropdown-customization 003](images/editors-calculatordropdown-customization003.png)
+![WinForms RadCalculatorDropDown Calculator Customization](images/editors-calculatordropdown-customization003.png)
 
 ## Buttons Visual Customization 
 
@@ -95,7 +95,7 @@ Me.RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.ButtonDelet
 {{endregion}} 
 
 >caption Figure 4: Button Elements Customization
-![editors-calculatordropdown-customization 004](images/editors-calculatordropdown-customization004.png)
+![WinForms RadCalculatorDropDown Button Elements Customization](images/editors-calculatordropdown-customization004.png)
 
 ## See Also
 

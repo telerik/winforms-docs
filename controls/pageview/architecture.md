@@ -17,7 +17,7 @@ The architecture of this control is pretty simple. It consists of pages which ha
 
 >caption Figure 1: Architecture
 
-![pageview-architecture001](images/pageview-architecture001.png)
+![WinForms RadPageView Architecture](images/pageview-architecture001.png)
 
 ## View Modes
 
@@ -37,25 +37,25 @@ The following tables show the internal elements hierarchy and structure of **Rad
 
 |View Mode|Elements Hierarchy|
 |----|----|
-|**Strip**|![pageview-architecture002](images/pageview-architecture002.png)|
-|**Stack**|![pageview-architecture003](images/pageview-architecture003.png)|
-|**Outlook**|![pageview-architecture004](images/pageview-architecture004.png)|
-|**ExplorerBar**|![pageview-architecture005](images/pageview-architecture005.png)|
-|**Backstage**|![pageview-architecture006](images/pageview-architecture006.png)|
-|**NavigationView**|![pageview-architecture013](images/pageview-architecture013.png)|
-|**OfficeNavigationBar**|![pageview-architecture013](images/officenavigationbar-structure002.png)|
+|**Strip**|![WinForms RadPageView pageview-architecture002](images/pageview-architecture002.png)|
+|**Stack**|![WinForms RadPageView pageview-architecture003](images/pageview-architecture003.png)|
+|**Outlook**|![WinForms RadPageView pageview-architecture004](images/pageview-architecture004.png)|
+|**ExplorerBar**|![WinForms RadPageView pageview-architecture005](images/pageview-architecture005.png)|
+|**Backstage**|![WinForms RadPageView pageview-architecture006](images/pageview-architecture006.png)|
+|**NavigationView**|![WinForms RadPageView pageview-architecture013](images/pageview-architecture013.png)|
+|**OfficeNavigationBar**|![WinForms RadPageView pageview-architecture013](images/officenavigationbar-structure002.png)|
 
 >caption Structure
 
 |View Mode|Structure|
 |----|----|
-|**Strip**|![pageview-architecture007](images/pageview-architecture007.png)|
-|**Stack**|![pageview-architecture008](images/pageview-architecture008.png)|
-|**Outlook**|![pageview-architecture009](images/pageview-architecture009.png)|
-|**ExplorerBar**|![pageview-architecture010](images/pageview-architecture010.png)|
-|**Backstage**|![pageview-architecture011](images/pageview-architecture011.png)|
-|**NavigationView**|![pageview-architecture012](images/pageview-architecture012.png)|
-|**OfficeNavigationBar**|![pageview-architecture013](images/officenavigationbar-structure001.png)|
+|**Strip**|![WinForms RadPageView pageview-architecture007](images/pageview-architecture007.png)|
+|**Stack**|![WinForms RadPageView pageview-architecture008](images/pageview-architecture008.png)|
+|**Outlook**|![WinForms RadPageView pageview-architecture009](images/pageview-architecture009.png)|
+|**ExplorerBar**|![WinForms RadPageView pageview-architecture010](images/pageview-architecture010.png)|
+|**Backstage**|![WinForms RadPageView pageview-architecture011](images/pageview-architecture011.png)|
+|**NavigationView**|![WinForms RadPageView pageview-architecture012](images/pageview-architecture012.png)|
+|**OfficeNavigationBar**|![WinForms RadPageView pageview-architecture013](images/officenavigationbar-structure001.png)|
 
 # See Also
 

@@ -23,7 +23,7 @@ Specifying tooltips for the elements in RadTaskCardElement:
 
 * RadTaskCardUserElement.**ToolTipText**: Gets or sets the tooltip string for the user element inside the task card. By default, the tooltip text contains the user names.
 
-![task-board-tooltips 001](images/task-board-tooltips001.png)
+![WinForms RadTask-Board task-board-tooltips 001](images/task-board-tooltips001.png)
 
 * The sub-task elements consider the **SubTasksToolTipStringFormat** and apply the respective value to the **ToolTipText** property for the sub-task element.
 
@@ -91,11 +91,11 @@ End Sub
 
 >caption Custom tooltip for the Tag element
 
-![task-board-tooltips 002](images/task-board-tooltips002.png)
+![WinForms RadTask-Board Custom tooltip for the Tag element](images/task-board-tooltips002.png)
 
 >caption Custom tooltip for the User element
 
-![task-board-tooltips 003](images/task-board-tooltips003.png)
+![WinForms RadTask-Board Custom tooltip for the User element](images/task-board-tooltips003.png)
 
 # See Also
 

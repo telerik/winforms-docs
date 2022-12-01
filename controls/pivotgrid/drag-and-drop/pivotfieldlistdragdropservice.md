@@ -14,7 +14,7 @@ By using **RadPivotFieldList**, the end user can change the way of representing 
 
 >caption Figure 1: PivotFieldListDragDropService
 
-![pivotgrid-drag-and-drop-pivotfieldlistdragdropservice 001](images/pivotgrid-drag-and-drop-pivotfieldlistdragdropservice001.gif)
+![WinForms RadPivotGrid PivotFieldListDragDropService](images/pivotgrid-drag-and-drop-pivotfieldlistdragdropservice001.gif)
 
 Similar to [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%}), **PivotFieldListDragDropService** exposes public events which allows to handle the drag and drop operation and customize it according to your requirements, e.g. control which items to be dragged.
 

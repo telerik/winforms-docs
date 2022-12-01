@@ -181,11 +181,11 @@ End Sub
 
 The initial view when we start the application is this:
 
-![gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 001](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv001.png) 
+![WinForms RadGridView gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 001](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv001.png) 
 
 What will happen after we press the button once? We will have the same view:
 
-![gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 001](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv001.png)
+![WinForms RadGridView gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 001](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv001.png)
 
 RadGridView is not synchronized, simply because nothing notifies it about the change in the collection.
         
@@ -275,15 +275,15 @@ End Sub
 
 Let's now test this case. At the beginning we have this view:
 
-![gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 002](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv002.png)
+![WinForms RadGridView gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 002](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv002.png)
 
 After we press the button which removes the first record, we indeed get a RadGridView with four records in return. This is because RadGridView is bound to a collection that implements IBindingList:
 
-![gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 003](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv003.png)
+![WinForms RadGridView gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 003](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv003.png)
 
 Let's now press the other button in order to change the Grade of the last student in the collection. The result is shown below: 
 
-![gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 003](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv003.png) 
+![WinForms RadGridView gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 003](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv003.png) 
 
 You do not see a difference? This is normal and expected, because the type `Student` does not implement `INotifyPropertyChanged`, so the changes in the properties of the `Student` objects are not reflected in RadGridView.
 
@@ -506,7 +506,7 @@ After we press the button which removes the first record, we indeed get a RadGri
 
 Let's now press the other button in order to change the Grade of the last student in the collection. The result is shown below:
 
-![gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 004](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv004.png)
+![WinForms RadGridView gridview-populating-with-data-reflecting-custom-object-changes-in-rgv 004](images/gridview-populating-with-data-reflecting-custom-object-changes-in-rgv004.png)
 
 As you can see RadGridView successfully reflects the change in the `Grade` property that we make. This is because of the improved `Student` object implements `INotifyPropertyChanged` and because of the `BindingList` that implements `IBindingList`.
         

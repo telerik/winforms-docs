@@ -16,7 +16,7 @@ previous_url: scheduler-views-week-view
 The Week view by default shows a full seven-day week week at a time, which can be set to start at a predefined day (say Monday, or Sunday). To move to the next or previous week, you can use the back and forward keyboard arrows, or the [SchedulerNavigator]({%slug winforms/scheduler/scheduler-navigator/overview%}) control, which also allows you to control whether to show weekends or not.
 
 >caption Figure 1: Week View
-![scheduler-views-week-view 001](images/scheduler-views-week-view001.png)
+![WinForms RadScheduler Week View](images/scheduler-views-week-view001.png)
 
 ## Set Week View
 

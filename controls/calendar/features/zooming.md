@@ -19,7 +19,7 @@ __RadCalendar__ has a built-in date zoom functionality.The  __Zoom-In__ operati
 
 >caption Figure 1: Calendar with a zoomed-in date.
 
-![calendar-features-zoom 001](images/calendar-features-zoom001.png)
+![WinForms RadCalendar Calendar with a zoomed-in date](images/calendar-features-zoom001.png)
 
 ## Navigation Zoom
 
@@ -30,7 +30,7 @@ The zoom functionality supports changing the current view type as well. With thi
 
 >caption Figure 2: Header zoom navigation mode
 
-![calendar-features-zoom 002](images/calendar-features-zoom002.gif)
+![WinForms RadCalendar Header zoom navigation mode](images/calendar-features-zoom002.gif)
 
 >caution
 Zoom navigation mode is not supporting in MultipleView of RadCalendar.

@@ -20,13 +20,13 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select **BottomContentElement** in *Controls Structure* on the left side. Then, select **BottomContentElementFill** in the *Elements* section.
 
-	![menus-application-menu-themes 001](images/menus-application-menu-themes001.png)
+	![WinForms RadMenus menus-application-menu-themes 001](images/menus-application-menu-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![menus-application-menu-themes 002](images/menus-application-menu-themes002.png)
+	![WinForms RadMenus menus-application-menu-themes 002](images/menus-application-menu-themes002.png)
 
-	![menus-application-menu-themes 003](images/menus-application-menu-themes003.png)
+	![WinForms RadMenus menus-application-menu-themes 003](images/menus-application-menu-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

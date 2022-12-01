@@ -18,7 +18,7 @@ Axis ticks are the small marks that identify the position of items on the axes 
 Vertical ticks are controlled by the __XAxis__ and horizontal ticks are controlled by __YAxis__ and __YAxis2__. Ticks can be "major", e.g. falling on the labeled axis __Step__ values.  "Minor" ticks fall between __Step__ values for __YAxis__ and __YAxis2__. See the figure below where major ticks fall on 50, 100, 150, 200, 250 of the __YAxis__ and minor ticks fall between the major ticks. 
 >caption 
 
-![chart-undestanding-radchart-elements-ticks 001](images/chart-undestanding-radchart-elements-ticks001.png)
+![WinForms RadChart ](images/chart-undestanding-radchart-elements-ticks001.png)
 
 To control the visibility and general appearance of gridlines use the the PlotArea.<axis>.Appearance property to reach __MajorTick__ and __MinorTick__ properties.  __XAxis__ has only a __MajorTick__ property while __YAxis__ and __YAxis2__ have both __MajorTick__ and __MinorTick__ properties.  Both major and minor tick objects include the following properties: 
 
@@ -44,4 +44,4 @@ To control the visibility and general appearance of gridlines use the the PlotA
 The __LayoutMode__ property of each the X axis object specifies how axis marks are positioned with regard to series items. Layout modes change the chart appearance while the underlying data remains the same. The available __LayoutMode__ values are __Normal__, __Inside__ and __Between__. 
 >caption  
 
-![chart-undestanding-radchart-elements-ticks 002](images/chart-undestanding-radchart-elements-ticks002.png)
+![WinForms RadChart ](images/chart-undestanding-radchart-elements-ticks002.png)

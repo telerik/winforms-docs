@@ -16,7 +16,7 @@ Select **RadBarcodeView** and click the small arrow on the top right position in
 
 >caption Figure 1: Smart Tag
 
-![barcode-design-time 001](images/barcode-design-time001.png)
+![WinForms RadBarcodeView Smart Tag](images/barcode-design-time001.png)
 
 **Common Tasks:**
 

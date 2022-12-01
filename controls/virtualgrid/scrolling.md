@@ -20,7 +20,7 @@ __RadVirtualGrid__ allows three types of scroll modes:
 
 >caption Figure 1: Smooth Scrolling
 
-![virtualgrid-overview 001](images/virtualgrid-scrolling001.gif)
+![WinForms RadVirtualGrid Smooth Scrolling](images/virtualgrid-scrolling001.gif)
 
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=SmoothScrolling}} 
@@ -40,7 +40,7 @@ Me.RadVirtualGrid1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes
 
 >caption Figure 2: Discrete Scrolling
 
-![virtualgrid-overview 002](images/virtualgrid-scrolling002.gif)
+![WinForms RadVirtualGrid Discrete Scrolling](images/virtualgrid-scrolling002.gif)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=DiscreteScrolling}} 
 {{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=DiscreteScrolling}}
@@ -59,7 +59,7 @@ Me.RadVirtualGrid1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes
 
 >caption Figure 3: Deferred Scrolling
 
-![virtualgrid-overview 003](images/virtualgrid-scrolling003.gif)
+![WinForms RadVirtualGrid Deferred Scrolling](images/virtualgrid-scrolling003.gif)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=DeferredScrolling}} 
 {{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=DeferredScrolling}}

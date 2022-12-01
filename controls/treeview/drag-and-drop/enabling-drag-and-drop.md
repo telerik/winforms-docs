@@ -27,14 +27,14 @@ __AllowDragDrop__ when true enables fully automatic drag and drop. The selected
 
 | __Description__ | __User Action__ |
 |-----|-----|
-|"Node"2" is dropped on "Node8". The result is that "Node2" is added as a child node of "Node8".|![treeview-drag-and-drop-enabling-drag-and-drop 001](images/treeview-drag-and-drop-enabling-drag-and-drop001.gif)|
-|For the other cases the dashed line described there the dragged node will be inserted. In this case "Node9" is going to me placed between nodes "Node11" and "Node12". The result is that "Node9" will be added as a sibling of "Node11" and located just above "Node12".|![treeview-drag-and-drop-enabling-drag-and-drop 002](images/treeview-drag-and-drop-enabling-drag-and-drop002.gif)|
+|"Node"2" is dropped on "Node8". The result is that "Node2" is added as a child node of "Node8".|![WinForms RadTreeView treeview-drag-and-drop-enabling-drag-and-drop 001](images/treeview-drag-and-drop-enabling-drag-and-drop001.gif)|
+|For the other cases the dashed line described there the dragged node will be inserted. In this case "Node9" is going to me placed between nodes "Node11" and "Node12". The result is that "Node9" will be added as a sibling of "Node11" and located just above "Node12".|![WinForms RadTreeView treeview-drag-and-drop-enabling-drag-and-drop 002](images/treeview-drag-and-drop-enabling-drag-and-drop002.gif)|
 
 ## AllowDrop 
 
 __AllowDrop__ when true enables RadTreeView to accept data dropped onto it. This event can be used to allow interaction between standard Windows controls  and RadTreeView. In the example below a RadTextBox control is dragged to a RadTreeNode.
 
-![treeview-drag-and-drop-enabling-drag-and-drop 005](images/treeview-drag-and-drop-enabling-drag-and-drop005.gif)
+![WinForms RadTreeView treeview-drag-and-drop-enabling-drag-and-drop 005](images/treeview-drag-and-drop-enabling-drag-and-drop005.gif)
 
 >note In order to use the standard OLE drag drop you need to disable the built-in drag and drop functionality (set AllowDragDrop to false).
 

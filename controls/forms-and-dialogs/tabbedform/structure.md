@@ -14,14 +14,14 @@ position: 1
 
 >caption Figure: 1 The elements of RadTabbedFormControl
 
-![radtabbedform-structure001](images/radtabbedform-structure001.png)
+![WinForms RadTabbedForm The elements of RadTabbedFormControl](images/radtabbedform-structure001.png)
 
 
 ## Elements Hierarchy
 
 >caption Figure: 2 The elements hierarchy
 
-![radtabbedform-structure002](images/radtabbedform-structure002.png)
+![WinForms RadTabbedForm The elements hierarchy](images/radtabbedform-structure002.png)
 
 
 # See Also

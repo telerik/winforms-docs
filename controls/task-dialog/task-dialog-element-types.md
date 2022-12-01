@@ -41,7 +41,7 @@ The **State** property is of type **RadTaskDialogProgressBarState** which offers
 * **MarqueePaused** - shows a waiting bar which initially looks like an empty progress bar, but also can be paused at some point.
 * **None** - neither progress bar, nor waiting bar is shown.
 
-![winforms/task-dialog-element-types 001](images/task-dialog-element-types001.png) 
+![WinForms RadTask-Dialog winforms/task-dialog-element-types 001](images/task-dialog-element-types001.png) 
 
 #### Adding a RadTaskDialogProgressBar
 
@@ -88,7 +88,7 @@ The **State** property is of type **RadTaskDialogProgressBarState** which offers
 
 **RadTaskDialogVerificationCheckBox** represents a check box shown in the collapsible command area of a **RadTaskDialog**. Appropriate for simple choices such as *"Do not show this dialog again"*.
 
-![winforms/task-dialog-element-types 002](images/task-dialog-element-types002.png) 
+![WinForms RadTask-Dialog winforms/task-dialog-element-types 002](images/task-dialog-element-types002.png) 
 
 #### Adding a RadTaskDialogVerificationCheckBox
 
@@ -134,7 +134,7 @@ The **State** property is of type **RadTaskDialogProgressBarState** which offers
 
 **RadTaskDialogCommandLinkButton** represents a flat button positioned in the content area of the page.
 
-![winforms/task-dialog-element-types 003](images/task-dialog-element-types003.png) 
+![WinForms RadTask-Dialog winforms/task-dialog-element-types 003](images/task-dialog-element-types003.png) 
 
 #### Adding a RadTaskDialogCommandLinkButton
 
@@ -178,7 +178,7 @@ The **State** property is of type **RadTaskDialogProgressBarState** which offers
 
 Adding multiple **RadTaskDialogRadioButtons** allows users to choose from different options. 
 
-![winforms/task-dialog-element-types 004](images/task-dialog-element-types004.png) 
+![WinForms RadTask-Dialog winforms/task-dialog-element-types 004](images/task-dialog-element-types004.png) 
 
 #### Adding a RadTaskDialogRadioButton
 
@@ -228,7 +228,7 @@ Adding multiple **RadTaskDialogRadioButtons** allows users to choose from differ
 
 **RadTaskDialogButton** is shown in the command area of the page. 
 
-![winforms/task-dialog-element-types 005](images/task-dialog-element-types005.png) 
+![WinForms RadTask-Dialog winforms/task-dialog-element-types 005](images/task-dialog-element-types005.png) 
 
 #### Adding a RadTaskDialogButton
 

@@ -38,55 +38,55 @@ PageViewMode.*Strip* supports the following __StripButtons__ modes:
 
 >caption Figure 1: StripViewButtons.All
 
-![](images/pageview-stripview-scrolling-and-overflow001.png) 
+![WinForms RadPageView StripViewButtonsAll](images/pageview-stripview-scrolling-and-overflow001.png) 
 
 * __LeftScroll__. This option displays only the left scroll button:
 
 >caption Figure 2: StripViewButtons.LeftScroll
 
-![](images/pageview-stripview-scrolling-and-overflow002.png)
+![WinForms RadPageView StripViewButtonsLeftScroll](images/pageview-stripview-scrolling-and-overflow002.png)
 
 * __RightScroll__. This option displays only the right scroll button:
 
 >caption Figure 3: StripViewButtons.RightScroll
 
-![](images/pageview-stripview-scrolling-and-overflow003.png)
+![WinForms RadPageView StripViewButtonsRightScroll](images/pageview-stripview-scrolling-and-overflow003.png)
 
 * __Scroll__. Display both left and right scroll buttons:
 
 >caption Figure 4: StripViewButtons.Scroll
 
-![](images/pageview-stripview-scrolling-and-overflow004.png)
+![WinForms RadPageView StripViewButtonsScroll](images/pageview-stripview-scrolling-and-overflow004.png)
 
 * __Close__. Displays only the close strip button.
 
 >caption Figure 5: StripViewButtons.Close
 
-![](images/pageview-stripview-scrolling-and-overflow005.png)
+![WinForms RadPageView StripViewButtonsClose](images/pageview-stripview-scrolling-and-overflow005.png)
 
 * __VS2005Style__: Displays both scroll buttons and the close button: 
 
 >caption Figure 6: StripViewButtons.VS2005Style
 
-![](images/pageview-stripview-scrolling-and-overflow006.png)
+![WinForms RadPageView StripViewButtonsVS005Style](images/pageview-stripview-scrolling-and-overflow006.png)
 
 * __ItemList__. Displays a drop-down button that invokes a drop-down list of the items:
 
 >caption Figure 7: StripViewButtons.ItemList
 
-![](images/pageview-stripview-scrolling-and-overflow007.png)
+![WinForms RadPageView StripViewButtonsItemList](images/pageview-stripview-scrolling-and-overflow007.png)
 
 * __VS2008Style.__ Displays the item list drop-down button and the close button.
 
 >caption Figure 8: StripViewButtons.VS2008Style
 
-![](images/pageview-stripview-scrolling-and-overflow008.png)
+![WinForms RadPageView StripViewButtonsVS008Style](images/pageview-stripview-scrolling-and-overflow008.png)
 
 * __None__. Displays no strip buttons:
 
 >caption Figure 9: StripViewButtons.None
 
-![](images/pageview-stripview-scrolling-and-overflow009.png)
+![WinForms RadPageView StripViewButtonsNone](images/pageview-stripview-scrolling-and-overflow009.png)
 
 # See Also
 

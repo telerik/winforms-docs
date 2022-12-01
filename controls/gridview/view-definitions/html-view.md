@@ -13,7 +13,7 @@ previous_url: gridview-viewdefinitions-html-view
 
 The name of this view may lead to some confusion. __RadGridView__ does not support HTML rendering, and there are no plans to support it. This view enables using row layout similar to the one existing in HTML tables. In fact, you can take an existing HTML table and use its HTML code in RadGridView. Sometimes this can save a lot of work. Just change the cell text to be the unique name of the desired column.
 
-![gridview-viewdefinitions-html-view 001](images/gridview-viewdefinitions-html-view001.png)
+![WinForms RadGridView gridview-viewdefinitions-html-view 001](images/gridview-viewdefinitions-html-view001.png)
 
 To use an HTML view we should instantiate HtmlViewDefinition and add the desired rows and cells.
 

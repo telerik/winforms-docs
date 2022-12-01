@@ -16,7 +16,7 @@ The **ExplorerControl** element can be used as a stand-alone control, thus allow
 
 >caption Figure 1. ExplorerControl
 
-![winforms/file-dialogs-explorer-control 001](images/file-dialogs-explorer-control001.png) 
+![WinForms RadFile-Dialogs ExplorerControl](images/file-dialogs-explorer-control001.png) 
 
 ####  Example 1: Define explorer control
 
@@ -156,7 +156,7 @@ explorerControl.FilterIndex = 1
 
 >caption Figure 2. Filtered ExplorerControl to display images
 
-![winforms/file-dialogs-explorer-control 002](images/file-dialogs-explorer-control002.png) 
+![WinForms RadFile-Dialogs Filtered ExplorerControl to display images](images/file-dialogs-explorer-control002.png) 
 
 >important Filtering is available only if the **IsFolderBrowser** property is set to *False*.
 

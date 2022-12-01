@@ -18,7 +18,7 @@ You can access and modify the style for different elements in **RadSplitContaine
 
 >caption Figure 1: Element hierarchy editor
 
-![track-and-status-controls-scrollbar-accessing-and-customizing-elements 001](images/track-and-status-controls-scrollbar-accessing-and-customizing-elements001.png)
+![WinForms RadScrollBar Element hierarchy editor](images/track-and-status-controls-scrollbar-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
@@ -26,7 +26,7 @@ You can customize the nested elements at run time as well:
 
 >caption Fig.2 Customize elements
 
-![track-and-status-controls-scrollbar-accessing-and-customizing-elements 002](images/track-and-status-controls-scrollbar-accessing-and-customizing-elements002.png)
+![WinForms RadScrollBar Customize elements](images/track-and-status-controls-scrollbar-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

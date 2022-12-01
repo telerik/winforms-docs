@@ -14,12 +14,12 @@ This article describes the inner structure and organization of the elements whic
 
 >caption Figure 1: RadDomainUpDown's elements hierarchy
 
-![domainupdown-structure 001](images/domainupdown-structure001.png)
+![WinForms RadDomainUpDown RadDomainUpDown's elements hierarchy](images/domainupdown-structure001.png)
 
 
 >caption Figure 2: RadDomainUpDown's structure
 
-![domainupdown-structure 002](images/domainupdown-structure002.png)
+![WinForms RadDomainUpDown RadDomainUpDown's structure](images/domainupdown-structure002.png)
 
 * **RadDomainUpDownElement** - the main element that holds the stack container of all inner elements. 
 	* **RadDropDownListEditableAreaElement** - holds the text and image when the **ReadOnly** property is set to *true*;

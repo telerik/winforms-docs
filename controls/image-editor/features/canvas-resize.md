@@ -13,8 +13,8 @@ position: 1
 
 You can use the __Canvas Resize__ button which will open the canvas resize dialog. In the dialog you can set the alignment, the size, and the BackColor.
 
-![](images/image-editor-canvas-resize001.png)
-![](images/image-editor-canvas-resize002.png)
+![WinForms RadImage-Editor ](images/image-editor-canvas-resize001.png)
+![WinForms RadImage-Editor ](images/image-editor-canvas-resize002.png)
 
 # Canvas Resize Programmatically
 

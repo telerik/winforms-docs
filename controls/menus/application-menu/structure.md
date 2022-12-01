@@ -14,13 +14,13 @@ This article describes the inner structure and organization of the elements whic
 
 >caption Figure 1: RadApplicationMenu's elements hierarchy
 
-![application-menu-structure 001](images/application-menu-structure001.png)
+![WinForms RadMenus RadApplicationMenu's elements hierarchy](images/application-menu-structure001.png)
 
-![application-menu-structure 002](images/application-menu-structure002.png)
+![WinForms RadMenus application-menu-structure 002](images/application-menu-structure002.png)
         
 >caption Figure 2: RadApplicationMenu visual structure
 
-![application-menu-structure 003](images/application-menu-structure003.png)
+![WinForms RadMenus RadApplicationMenu visual structure](images/application-menu-structure003.png)
 
 
 1. **RadApplicationMenuButtonElement**: represents the application menu button element    

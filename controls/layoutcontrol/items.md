@@ -15,7 +15,7 @@ This article explains how the different types of items supported in __RadLayoutC
         
 >caption Figure 1: Item Types
 
-![layoutcontrol-items 001](images/layoutcontrol-items001.png)
+![WinForms RadLayoutControl Item Types](images/layoutcontrol-items001.png)
 
 1. __LayoutControlItem:__ This item holds the controls added to a __RadLayoutControl__. Each control is added to an item and then the item is added to the layout control. This grants you control over the control sizing and position. The most important properties are:
   * __MinSize:__ Gets or sets the item’s minimum size.

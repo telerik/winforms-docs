@@ -91,7 +91,7 @@ End Sub
 
 >caption Figure 1: Drag and Drop from RadGridView to RadListView
 
-![listview-drag-and-drop-drag-and-drop-using-raddragdropservice 001](images/listview-drag-and-drop-drag-and-drop-using-raddragdropservice001.gif)
+![WinForms RadListView Drag and Drop from RadGridView to RadListView](images/listview-drag-and-drop-drag-and-drop-using-raddragdropservice001.gif)
 
 1\. The first thing we need to do is to start the __RadGridView__’s drag and drop service when a user clicks on a row with the left mouse down. For this purpose, we should create a custom [grid behavior]({%slug winforms/gridview/rows/row-behaviors%}):
 
@@ -258,7 +258,7 @@ End Sub
 
 >caption Figure 2: Drag and Drop from RadListView to RadGridView
 
-![listview-drag-and-drop-drag-and-drop-using-raddragdropservice 002](images/listview-drag-and-drop-drag-and-drop-using-raddragdropservice002.gif)
+![WinForms RadListView Drag and Drop from RadListView to RadGridView](images/listview-drag-and-drop-drag-and-drop-using-raddragdropservice002.gif)
 
 1\. In order to enable dragging an item from the __RadListView__ and dropping it onto the __RadGridView__, it is necessary to set the RadListView.__AllowDragDrop__ property to *true*.
 

@@ -22,7 +22,7 @@ The following tutorial demonstrates how to populate **RadApplicationMenu** and h
             
 >caption Figure 1: Adding items at design time
 
-![menus-application-menu-getting-started 001](images/menus-application-menu-getting-started001.png)
+![WinForms RadMenus Adding items at design time](images/menus-application-menu-getting-started001.png)
 
 4\. Apply different images for each item.
 
@@ -30,7 +30,7 @@ The following tutorial demonstrates how to populate **RadApplicationMenu** and h
 
 >caption Figure 2: Generate Click event handler:
 
-![menus-application-menu-getting-started 002](images/menus-application-menu-getting-started002.png)
+![WinForms RadMenus Generate Click event handler](images/menus-application-menu-getting-started002.png)
 
 6\. Replace the automatically generated event handler with this code:
 
@@ -57,7 +57,7 @@ End Sub
 
 >caption Figure 2: Handling Click event
 
-![menus-application-menu-getting-started 002](images/menus-application-menu-getting-started002.gif)
+![WinForms RadMenus Handling Click event](images/menus-application-menu-getting-started002.gif)
 
 # See Also
 

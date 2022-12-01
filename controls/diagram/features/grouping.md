@@ -138,7 +138,7 @@ Me.RadDiagram1.Group("Odd", oddShapes)
 Below you can see how the grouping works:
 >caption Fig.1 Grouping shapes
 
-![diagram-features-grouping 001](images/diagram-features-grouping001.gif)
+![WinForms RadDiagram Grouping shapes](images/diagram-features-grouping001.gif)
 
 >note The shapes' positions are not changed after grouping. If you click shape 3, this selects every odd shape. Dragging a single shape from group, drags the whole group.
 >
@@ -220,7 +220,7 @@ Dim parentGroup As IGroup = Me.RadDiagram1.Group("1-2-3-4", groupA, groupB)
 
 >caption Fig.2 Sub groups
 
-![diagram-features-grouping 002](images/diagram-features-grouping002.gif)
+![WinForms RadDiagram Sub groups](images/diagram-features-grouping002.gif)
 
 Below you can see how consecutive clicks on a shape reflects the selection of groups. First click selects the outermost (the biggest group), second click selects the smaller group and the third selects only the shape.The forth click will select the biggest group and so on.
         

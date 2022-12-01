@@ -18,7 +18,7 @@ In the example below we will handle RadPivotGrid.__MouseDoubleClick__ event and 
 
 >caption Figure 1: RadPivotGrid Drill Down Data
 
-![pivotgrid-drilldown 001](images/pivotgrid-drilldown001.gif)
+![WinForms RadPivotGrid RadPivotGrid Drill Down Data](images/pivotgrid-drilldown001.gif)
 
 #### GetUnderlyingData Method
 

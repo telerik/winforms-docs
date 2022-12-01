@@ -14,7 +14,7 @@ position: 6
 
 >caption Figure 1: Custom AppointmentElement 
 
-![scheduler-appointments-and-dialogs-custom-appointment-element 001](images/scheduler-appointments-and-dialogs-custom-appointment-element001.png)
+![WinForms RadScheduler Custom AppointmentElement](images/scheduler-appointments-and-dialogs-custom-appointment-element001.png)
  
 1\. Let's start with creating a derivative of the **AppointmentElement** class. We will add the desired elements in the **CreateChildElements** method. The **Synchronize** method is the appropriate place to display the correct data in the custom elements in the **AppointmentElement**. It is also necessary to override the **DrawEventText** method and leave it empty in order to prevent drawing the default text.
 

@@ -17,13 +17,13 @@ Like all Telerik *WinForms* controls **RadGroupBox** is build upon [Telerik Pre
 
 >caption Figure 1: RadGroupBox`s Element Hierarchy
 >
-![radgroupbox structure 001](images/radgroupbox-structure001.png)
+![WinForms RadGroupBox RadGroupBox`s Element Hierarchy](images/radgroupbox-structure001.png)
 
 The most important nodes are **GroupBoxContent**, **GroupBoxHeader**, **GroupBoxFooter**, and **RadGroupBoxElement**. The last one also plays the role of the layout node for the control which arranges its child nodes - content, header, and footer (all three extending the **GroupBoxVisualElement** class). The footer node if not collapsed (the default value is *collapsed*) is always arranged as a bar at the bottom of the control, while the content and the header are arranged above the area occupied by the footer. All *high level* arrangement properties such as **GroupBoxStyle**, **HeaderPosition**, **HeaderAlignment**, etc. are defined as dependency properties.
 
 >caption Figure 2: RadGroupBox`s Structure
 >
-![radgroupbox structure 002](images/radgroupbox-structure002.png)
+![WinForms RadGroupBox RadGroupBox`s Structure](images/radgroupbox-structure002.png)
 
 1. __RadGroupBoxElement__: Represents the main element of the control responsible for arranging the layout.
 1. __GroupBoxContent__: Represents the content element.

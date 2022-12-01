@@ -13,7 +13,7 @@ previous_url: dock-object-model-example-building-an-advanced-layout-at-runtime
  
 In this tutorial we are going to create an advanced layout of __ToolWindows__ and __DocumentWindows__ programmatically. Our aim is to build the layout shown on the screenshot below:
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 001](images/dock-object-model-example-building-an-advanced-layout-at-runtime001.png)
+![WinForms RadDock dock-object-model-example-building-an-advanced-layout-at-runtime 001](images/dock-object-model-example-building-an-advanced-layout-at-runtime001.png)
 
 We will have a floating window with two **ToolWindows** and dimensions of the floating window 150 height and 300 width. An interesting part of building the layout is using the __SizeInfo__ property of the **TabStrip** containers. This property gives you:
 
@@ -53,7 +53,7 @@ Me.RadDock1.DockWindow(window2, window1, DockPosition.Bottom)
 
 {{endregion}} 
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 002](images/dock-object-model-example-building-an-advanced-layout-at-runtime002.png)
+![WinForms RadDock dock-object-model-example-building-an-advanced-layout-at-runtime 002](images/dock-object-model-example-building-an-advanced-layout-at-runtime002.png)
 
 3\. Next, let's make the height of `window2` relative to the height of the `window1`:
 
@@ -77,11 +77,11 @@ window2.TabStrip.SizeInfo.RelativeRatio = New System.Drawing.SizeF(0, 0.33F)
  
 The result is shown on the picture below:
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 003](images/dock-object-model-example-building-an-advanced-layout-at-runtime003.png)
+![WinForms RadDock dock-object-model-example-building-an-advanced-layout-at-runtime 003](images/dock-object-model-example-building-an-advanced-layout-at-runtime003.png)
 
 Now, if we decide to resize the form, the ration of the **TabStrips**' height will be kept:
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 004](images/dock-object-model-example-building-an-advanced-layout-at-runtime004.png)
+![WinForms RadDock dock-object-model-example-building-an-advanced-layout-at-runtime 004](images/dock-object-model-example-building-an-advanced-layout-at-runtime004.png)
  
 4\. Let's add two more windows:
 
@@ -117,9 +117,9 @@ window4.TabStrip.SizeInfo.AbsoluteSize = New Size(150, 0)
  
 This time we set the __Width__ of the `window4` to an absolute value of 150 pixels.  
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 005](images/dock-object-model-example-building-an-advanced-layout-at-runtime005.png)
+![WinForms RadDock dock-object-model-example-building-an-advanced-layout-at-runtime 005](images/dock-object-model-example-building-an-advanced-layout-at-runtime005.png)
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 006](images/dock-object-model-example-building-an-advanced-layout-at-runtime006.png)
+![WinForms RadDock dock-object-model-example-building-an-advanced-layout-at-runtime 006](images/dock-object-model-example-building-an-advanced-layout-at-runtime006.png)
 
 5\. Add two more **ToolWindows**. The interesting thing here is that these **ToolWindows** will be in a __Floating__ *DockState*. Please note that you can give the size and location of the form that will host the **ToolWindows**.
 
@@ -149,7 +149,7 @@ Me.RadDock1.DockWindow(window6, window5, DockPosition.Right)
 
 {{endregion}} 
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 007](images/dock-object-model-example-building-an-advanced-layout-at-runtime007.png) 
+![WinForms RadDock dock-object-model-example-building-an-advanced-layout-at-runtime 007](images/dock-object-model-example-building-an-advanced-layout-at-runtime007.png) 
 
 6\. We will add one more **ToolWindow**. The specific thing here is that although the **ToolWindow** should be auto-hidden to `Bottom` if the user decides to click the `Pin` button, this window will be auto-hidden to top. This is done with the help of __AutoHidePosition__ property of the **TabStrip** which hosts the **ToolWindow**. In addition, this auto-hidden window will have a specific size of (200, 200). Since the __AutoHidePosition__ is set to *Top*, **Height** of the given size will be taken into consideration:
 
@@ -179,11 +179,11 @@ CType(window7.TabStrip, ToolTabStrip).AutoHidePosition = AutoHidePosition.Top
 
 Initially, the layout will look like this:
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 008](images/dock-object-model-example-building-an-advanced-layout-at-runtime008.png) 
+![WinForms RadDock dock-object-model-example-building-an-advanced-layout-at-runtime 008](images/dock-object-model-example-building-an-advanced-layout-at-runtime008.png) 
 
 If the user clicks the `Pin` button of `window7`, it will become auto-hidden to the top. Next, when the user hovers the `window7` tab, a window with 100 pixels in height is shown:
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 009](images/dock-object-model-example-building-an-advanced-layout-at-runtime009.png)
+![WinForms RadDock dock-object-model-example-building-an-advanced-layout-at-runtime 009](images/dock-object-model-example-building-an-advanced-layout-at-runtime009.png)
 
 7\. Finally, we should decide if we want to show several **DocumentWindows**. If yes, we can add them as shown below:
 
@@ -214,7 +214,7 @@ Me.RadDock1.AddDocument(document2, document1, DockPosition.Bottom)
 {{endregion}} 
 
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 010](images/dock-object-model-example-building-an-advanced-layout-at-runtime010.png)
+![WinForms RadDock dock-object-model-example-building-an-advanced-layout-at-runtime 010](images/dock-object-model-example-building-an-advanced-layout-at-runtime010.png)
 
 However, you may not want to have any documents. In this case, set the __MainDocumentContainerVisible__ property to *false*:
 
@@ -234,7 +234,7 @@ Me.RadDock1.MainDocumentContainerVisible = False
 
 {{endregion}} 
 
-![dock-object-model-example-building-an-advanced-layout-at-runtime 011](images/dock-object-model-example-building-an-advanced-layout-at-runtime011.png)
+![WinForms RadDock dock-object-model-example-building-an-advanced-layout-at-runtime 011](images/dock-object-model-example-building-an-advanced-layout-at-runtime011.png)
 
 # See Also
 

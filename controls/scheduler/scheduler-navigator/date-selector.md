@@ -14,7 +14,7 @@ As of **R3 2021 SP1**, RadSchedulerNavigator offers a date selector.
 
 >caption Figure 1: Date Selector in RadSchedulerNavigator
 
-![scheduler-date-selector 001](images/scheduler-date-selector001.gif)
+![WinForms RadScheduler Date Selector in RadSchedulerNavigator](images/scheduler-date-selector001.gif)
 
 Selecting a date inside the calendar will change the start date of the active view. 
 

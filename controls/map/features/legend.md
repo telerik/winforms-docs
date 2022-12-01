@@ -14,7 +14,7 @@ The __RadMap__ control introduces the __MapLegendElement__ object. It allows dis
 
 >caption Figure 1: Map Legend
 
-![map features legend 001](images/map-features-legend001.png)
+![WinForms RadMap Map Legend](images/map-features-legend001.png)
 
 # Setup Legends
 
@@ -22,7 +22,7 @@ Legend items can be added by accessing the __Children__ collection of the legend
 
 >caption Figure 2: Setup Legends
 
-![map features legend 002](images/map-features-legend002.png)
+![WinForms RadMap Setup Legends](images/map-features-legend002.png)
 
 #### Customizing Appearance
 

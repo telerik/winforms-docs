@@ -18,7 +18,7 @@ Select **RadButtonTextBox** and click the small arrow on the top right position 
 
 >caption Figure 1: Smart Tag
 
-![editors-buttontextbox-design-time 001](images/editors-buttontextbox-design-time001.png)
+![WinForms RadButtonTextBox Smart Tag](images/editors-buttontextbox-design-time001.png)
 
 * __New Theme Manager__: adds a new __RadThemeManager__ component to the form.
             
@@ -27,7 +27,7 @@ Select **RadButtonTextBox** and click the small arrow on the top right position 
             
     >caption Figure 2: Element hierarchy editor
 
-    ![editors-buttontextbox-design-time 002](images/editors-buttontextbox-design-time002.png)
+    ![WinForms RadButtonTextBox Element hierarchy editor](images/editors-buttontextbox-design-time002.png)
 
 * __Theme Name__: select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the control's visual style at one time.
             

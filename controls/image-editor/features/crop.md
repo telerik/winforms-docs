@@ -12,7 +12,7 @@ position: 6
 
 When pressing the crop button a red border will appear on the image. You can adjust the size and then pressing __Accept__ will confirm the operation.
 
-![](images/image-editor-crop001.png)
+![WinForms RadImage-Editor ](images/image-editor-crop001.png)
 
 # Crop Programmatically
 

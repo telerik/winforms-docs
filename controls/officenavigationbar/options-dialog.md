@@ -14,13 +14,13 @@ The **OfficeNavigationBarOptionsDialog** is shown when the user clicks the **Nav
 
 >caption OfficeNavigationBarOptionsDialog
 
-![officenavigationbar-options-dialog 001](images/officenavigationbar-options-dialog001.png)
+![WinForms RadOfficeNavigationBar OfficeNavigationBarOptionsDialog](images/officenavigationbar-options-dialog001.png)
 
 The **ShowNavigationOptionsMenuItem** property indicates whether to show the navigation options menu item when the context menu is opened.
 
 >caption NavigationOptionsMenuItem
 
-![officenavigationbar-options-dialog 002](images/officenavigationbar-options-dialog002.png)
+![WinForms RadOfficeNavigationBar NavigationOptionsMenuItem](images/officenavigationbar-options-dialog002.png)
 
 #### Hide NavigationOptionsMenuItem
 

@@ -29,7 +29,7 @@ To enable or disable the spell checking functionality (present as red wavy under
     
 >caption Figure 1: Spell checking as you type
 
-![richtexteditor-features-spellcheck 001](images/richtexteditor-features-spellcheck001.png)
+![WinForms RadRichTextEditor Spell checking as you type](images/richtexteditor-features-spellcheck001.png)
 
 You can customize the spell checker by using the __SpellChecker__ property of __RadRichTextEditor__. It’s of type __ISpellChecker__. By default, an object of type **DocumentSpellChecker** that implements the interface, is used for this property. You can either use it or provide your custom class that implements the __ISpellChecker__ interface.
 
@@ -39,7 +39,7 @@ When you right click a misspelled word, the context menu gives you the opportuni
 
 >caption Figure 2: Spell checking dialog
 
-![richtexteditor-features-spellcheck 002](images/richtexteditor-features-spellcheck002.png)
+![WinForms RadRichTextEditor Spell checking dialog](images/richtexteditor-features-spellcheck002.png)
 
 >note __RadRichTextEditor__ can also be configured to be used with a spell-checker using an OpenOffice dictionary and the NHunspell library: [RadRichTextEditor OpenOffice Spell Checking](http://www.telerik.com/support/code-library/radrichtexteditor-openoffice-spell-checking).
 >        

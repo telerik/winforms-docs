@@ -42,7 +42,7 @@ When using this mode, **RadSpellChecker** will check every word in a separate wi
 
 >caption Figure 1: Spellchecking form in SpellCheckMode.WordByWord
 
-![spellchecker-spellchecking-modes 001](images/spellchecker-spellchecking-modes001.png)
+![WinForms RadSpellChecker Spellchecking form in SpellCheckModeWordByWord](images/spellchecker-spellchecking-modes001.png)
         
 You are presented with a list of all possible suggestions, from which you can choose a word to replace the wrong one. Alternatively, you can ignore the word or add it to a custom dictionary.    
 
@@ -74,6 +74,6 @@ When using SpellCheckMode.*AllAtOnce*, **RadSpellChecker** loads the entire cont
 
 >caption Figure 2: Spellchecking form in SpellCheckMode.AllAtOnce
 
-![spellchecker-spellchecking-modes 002](images/spellchecker-spellchecking-modes002.png)
+![WinForms RadSpellChecker Spellchecking form in SpellCheckModeAllAtOnce](images/spellchecker-spellchecking-modes002.png)
     	
 You are presented with the same options as the *WordByWord* mode. The difference is that the entire spellchecking is executed in this window and only after that the content is transferred to the original control being spellchecked. 

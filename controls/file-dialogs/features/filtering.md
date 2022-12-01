@@ -52,7 +52,7 @@ openFileDialog.ShowDialog()
 
 >caption Figure 1: Filter drop-down visualization in RadOpenFileDialog 
 
-![winforms/file-dialogs-features-filtering 001](images/file-dialogs-features-filtering001.png) 
+![WinForms RadFile-Dialogs Filter drop-down visualization in RadOpenFileDialog](images/file-dialogs-features-filtering001.png) 
 
 ## Filter in RadSaveFileDialog
 
@@ -87,4 +87,4 @@ saveFileDialog.ShowDialog();
 
 >caption Figure 2: Filter drop-down visualization in RadSaveFileDialog
 
-![winforms/file-dialogs-features-filtering 002](images/file-dialogs-features-filtering002.png) 
+![WinForms RadFile-Dialogs Filter drop-down visualization in RadSaveFileDialog](images/file-dialogs-features-filtering002.png) 

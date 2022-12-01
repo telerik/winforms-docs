@@ -66,7 +66,7 @@ End Sub
 
 6\. The result RadMessageBox is shown below:
     
-![forms-and-dialogs-messagebox-getting-started 001](images/forms-and-dialogs-messagebox-getting-started001.png)
+![WinForms RadMessageBox forms-and-dialogs-messagebox-getting-started 001](images/forms-and-dialogs-messagebox-getting-started001.png)
 
 # See Also
 

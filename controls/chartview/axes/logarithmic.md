@@ -75,7 +75,7 @@ radChartView1.Series.Add(series);
 {{endregion}} 
 
 >caption Figure 1: LogarithmicAxis Setup
-![chartview-axes-logarithmic 001](images/chartview-axes-logarithmic001.png)
+![WinForms RadChartView LogarithmicAxis Setup](images/chartview-axes-logarithmic001.png)
 
 # See Also
 

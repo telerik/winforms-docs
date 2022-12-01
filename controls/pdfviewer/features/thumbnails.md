@@ -14,7 +14,7 @@ previous_url: pdfviewer-thumbnails
 __RadPdfViewer__ providers options to display the pdf pages as thumbnails for easier navigation.
 
 >caption Figure 1 Thumbnails
-![pdfviewer-thumbnails 001](images/pdfviewer-thumbnails001.png)
+![WinForms RadPdfViewer Thumbnails](images/pdfviewer-thumbnails001.png)
 
 You can control whether the thumbnail element is visible by setting the __EnableThumbnail__ property.
 

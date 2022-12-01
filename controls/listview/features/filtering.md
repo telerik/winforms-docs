@@ -51,7 +51,7 @@ RadListView1.FilterDescriptors.Add(valueFilter)
 
 |Before filtering|After filtering|
 |----|----|
-|![listview-features-filtering 001](images/listview-features-filtering001.png)|![listview-features-filtering 003](images/listview-features-filtering003.png)|
+|![WinForms RadListView listview-features-filtering 001](images/listview-features-filtering001.png)|![WinForms RadListView listview-features-filtering 003](images/listview-features-filtering003.png)|
  
 When a column name is specified as __PropertyName__ of the filter descriptor, **RadListView** will filter by the values of the specified column:
 
@@ -75,7 +75,7 @@ RadListView1.FilterDescriptors.Add(typeFilter)
 
 |Before|After|
 |----|----|
-|![listview-features-filtering 002](images/listview-features-filtering002.png)|![listview-features-filtering 004](images/listview-features-filtering004.png)|
+|![WinForms RadListView listview-features-filtering 002](images/listview-features-filtering002.png)|![WinForms RadListView listview-features-filtering 004](images/listview-features-filtering004.png)|
 
 ## Custom Filtering
 
@@ -127,7 +127,7 @@ Me.RadListView1.ListViewElement.DataView.Filter = AddressOf MyFilter
 
 >caption Figure 3: Custom filtering
 
-![listview-features-filtering 005](images/listview-features-filtering005.png)
+![WinForms RadListView Custom filtering](images/listview-features-filtering005.png)
 
 # See Also
 

@@ -15,7 +15,7 @@ __RadGridView__ uses the [Telerik Presentation Framework]({%slug winforms/teleri
       
 >caption Figure 1: The RadGridView element hierarchy.
 
-![gridview-fundamentals-element-hierarchy 001](images/gridview-fundamentals-element-hierarchy001.png)
+![WinForms RadGridView The RadGridView element hierarchy](images/gridview-fundamentals-element-hierarchy001.png)
 
 * __GridVisualElement__ is the base element which is inherited by all visual elements in __RadGridView__. It derives from the __LightVisualElement__ and provides functionality to display fill, border, text and image.
 

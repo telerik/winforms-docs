@@ -19,7 +19,7 @@ Select __RadSplitButton__ and click the small arrow on the top right position in
 
 >caption Figure 1: Smart Tag
 
-![buttons-splitbutton-desing-time 001](images/buttons-splitbutton-design-time001.png)
+![WinForms RadButtons Smart Tag](images/buttons-splitbutton-design-time001.png)
 
 * __Common Tasks__
 
@@ -39,11 +39,11 @@ Select __RadSplitButton__ and click the small arrow on the top right position in
 
 To add menu items at Design Time, click on the *Edit Items* property to launch the __RadElement Collection Editor__. Click the arrow next to the `Add` button to add items to the menu. You can add a variety of items to the collection.
 
-![buttons-splitbutton-working-with-raddropdownbutton-items 001](images/buttons-splitbutton-working-with-raddropdownbutton-items001.png)
+![WinForms RadButtons buttons-splitbutton-working-with-raddropdownbutton-items 001](images/buttons-splitbutton-working-with-raddropdownbutton-items001.png)
 
 Once you have added a __RadMenuItem__ to the collection, it will appear in the list on the left side of the dialog. Click the __RadMenuItem__ to edit its properties in the corresponding property grid on the right of the dialog.
 
-![buttons-splitbutton-working-with-raddropdownbutton-items 002](images/buttons-splitbutton-working-with-raddropdownbutton-items002.png)
+![WinForms RadButtons buttons-splitbutton-working-with-raddropdownbutton-items 002](images/buttons-splitbutton-working-with-raddropdownbutton-items002.png)
 
 In the property grid you will find many of the standard control properties, including __Text__, to control the display text of the item and __ToolTipText__ that displays when the mouse hovers over an item. Each __RadMenuItem__ you add also contains an __Items__ collection of its own, allowing you to create menu hierarchies in the __RadSplitButton__. You can also do the following with each item:
 

@@ -19,14 +19,14 @@ You can access and modify the style for different elements in __RadGroupBox__ by
 
 >caption Figure 1: Element Hierarchy Editor
 
-![groupbox-customizing-appearance-accessing-and-customizing-elements 001](images/groupbox-customizing-appearance-accessing-and-customizing-elements001.png)
+![WinForms RadGroupBox Element Hierarchy Editor](images/groupbox-customizing-appearance-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
 >caption Figure 2: Customize elements
 
-![groupbox-customizing-appearance-accessing-and-customizing-elements 002](images/groupbox-customizing-appearance-accessing-and-customizing-elements002.png)
+![WinForms RadGroupBox Customize elements](images/groupbox-customizing-appearance-accessing-and-customizing-elements002.png)
 
 
 The code sample below access the **FillPrimitive** of the header, changes the first two gradient stop colors to red and yellow, and then the gradient style to linear. *GroupBoxElement* property of the control returns the **RadGroupBoxElement**, then the code access the *GroupBoxHeader* - Children[1] - finally the code access the **FillPrimitive** - Children[0] - which is cast to **FillPrimitive** so that you can use its properties like **GradientStyle**.

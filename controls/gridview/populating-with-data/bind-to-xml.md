@@ -32,7 +32,7 @@ This is a simple xml file used in the examples below:
     </people>
 ````
 
-![gridview-populating-with-data-bind-to-xml 001](images/gridview-populating-with-data-bind-to-xml001.png)
+![WinForms RadGridView gridview-populating-with-data-bind-to-xml 001](images/gridview-populating-with-data-bind-to-xml001.png)
 
 You have to create a DataSet instance from the XML file. For the sample XML file above, the created DataSet contains only __one__ DataTable which is set as RadGridView data source. Please refer to this [topic]({%slug winforms/gridview/hierarchical-grid/creating-hierarchy-using-an-xml-data-source%}) if you want to create hierarchy.
 

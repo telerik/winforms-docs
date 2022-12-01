@@ -13,7 +13,7 @@ previous_url: gridview-filtering-filtering-row
 
 The __GridFilterRowElement__ is the row that holds the filtering boxes. It appears automatically when you enable filtering (__EnableFiltering__ is __true__). __GridFilterRowElement__ could be pinned at the top or bottom as well as made scrollable.
 
-![gridview-filtering-filtering-row 001](images/gridview-filtering-filtering-row001.png)
+![WinForms RadGridView gridview-filtering-filtering-row 001](images/gridview-filtering-filtering-row001.png)
 
 You can hide the operator text of the filter cells by setting the __ShowFilterCellOperator__ property to *false*:
 
@@ -33,7 +33,7 @@ Me.RadGridView1.MasterTemplate.ShowFilterCellOperatorText = False
 
 {{endregion}} 
 
-![gridview-filtering-filtering-row 002](images/gridview-filtering-filtering-row002.png)
+![WinForms RadGridView gridview-filtering-filtering-row 002](images/gridview-filtering-filtering-row002.png)
 
 You can also hide the entire __GridFilterRowElement__: 
 

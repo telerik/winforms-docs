@@ -131,7 +131,7 @@ simpleToolTipTagger.UpdateSearchWord("Telerik")
 
 >caption The custom tool-tip tagger
 
-![syntax-editor-custom-taggers001](images/syntax-editor-custom-taggers001.png)
+![WinForms RadSyntax-Editor The custom tool-tip tagger](images/syntax-editor-custom-taggers001.png)
 
 # See Also
 

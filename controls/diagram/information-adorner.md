@@ -35,7 +35,7 @@ Me.RadDiagram1.IsInformationAdornerVisible = True
 Fig.1 visualizes the X and Y component of the current position of the shape when moving. It also visualizes the angle that the shape is rotated to and the current Width and Height of the corresponding shape when resizing.
 >caption Fig.1 Information Adorner
 
-![diagram-information-adorner 001](images/diagram-information-adorner001.gif)
+![WinForms RadDiagram Information Adorner](images/diagram-information-adorner001.gif)
 
 ## Custom ItemInformationAdorner 
 
@@ -128,7 +128,7 @@ item.Height = 20
 
 >caption Fig.2 Custom Information Adorner
 
-![diagram-information-adorner 002](images/diagram-information-adorner002.gif)
+![WinForms RadDiagram Custom Information Adorner](images/diagram-information-adorner002.gif)
 
 # See Also
 

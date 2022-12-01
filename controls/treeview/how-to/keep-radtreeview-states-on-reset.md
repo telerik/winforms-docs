@@ -202,7 +202,7 @@ On the left figure, you can see the tree with some selected and expanded nodes a
 
 |Initial state|After a change in the data source occurs|
 |-----|-----|
-|![treeview-how-to-keep-radtreeview-states-on-reset 001](images/treeview-how-to-keep-radtreeview-states-on-reset001.png)|![treeview-how-to-keep-radtreeview-states-on-reset 002](images/treeview-how-to-keep-radtreeview-states-on-reset002.png)|
+|![WinForms RadTreeView treeview-how-to-keep-radtreeview-states-on-reset 001](images/treeview-how-to-keep-radtreeview-states-on-reset001.png)|![WinForms RadTreeView treeview-how-to-keep-radtreeview-states-on-reset 002](images/treeview-how-to-keep-radtreeview-states-on-reset002.png)|
 
 Unfortunately, a solution of this cannot be added to the control as it depends on the case and there has to be logic added for the specific case to be handled. To keep the expanded and selected state of RadTreeView after a change in the data source occurs, we can use a Dictionary with some unique value for a key i.e. this could be the node’s Text, DataBoundItem, Value, or even an ID taken from the DataBoundItem and store the state for the node in it. The following example demonstrates how to create a simple structure - State, which will hold and describe the state of a node. The __SaveExpandedStates__ method is used to recursively iterate all nodes in RadTreeView and populate a dictionary with the nodes information. The __RestoreExpandedStates__ method is used to read the saved states from the dictionary, find the respective node and restore its state.
 
@@ -431,7 +431,7 @@ Now, using these methods the tree states will be restored accordingly.
 
 |Initial state|After a change in the data source occurs|
 |------|------|
-|![treeview-how-to-keep-radtreeview-states-on-reset 003](images/treeview-how-to-keep-radtreeview-states-on-reset003.png)|![treeview-how-to-keep-radtreeview-states-on-reset 004](images/treeview-how-to-keep-radtreeview-states-on-reset004.png)|
+|![WinForms RadTreeView treeview-how-to-keep-radtreeview-states-on-reset 003](images/treeview-how-to-keep-radtreeview-states-on-reset003.png)|![WinForms RadTreeView treeview-how-to-keep-radtreeview-states-on-reset 004](images/treeview-how-to-keep-radtreeview-states-on-reset004.png)|
 
 # See Also
 * [Assign RadScreenTip to nodes]({%slug winforms/treeview/how-to/assign-radscreentip-to-nodes%})

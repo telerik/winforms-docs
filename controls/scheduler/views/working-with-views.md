@@ -42,7 +42,7 @@ dayView.RulerEndScale = 5
 After running the code, the day view for the scheduler looks like this screenshot:
 
 >caption Figure 1: Day View
-![scheduler-views-working-with-views 001](images/scheduler-views-working-with-views001.png)
+![WinForms RadScheduler Day View](images/scheduler-views-working-with-views001.png)
 
 Change between views by changing the __ActiveViewType__ property to one of the __SchedulerViewType__ enumeration members.
 
@@ -83,7 +83,7 @@ TryCast(RadScheduler1.ActiveView, SchedulerMonthView).WeekCount = 2
 {{endregion}} 
 
 >caption Figure 2: Week Count
-![scheduler-views-working-with-views 002](images/scheduler-views-working-with-views002.png)
+![WinForms RadScheduler Week Count](images/scheduler-views-working-with-views002.png)
 
 Detect changes to the view by handling the __ActiveViewChanging__ and __ActiveViewChanged__ events. As always, the "Changing" event arguments provide the ability to cancel the view change, but also the "old" and "new" views before and after the view changes transpires:
 

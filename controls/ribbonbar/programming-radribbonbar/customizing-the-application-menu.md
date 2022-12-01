@@ -14,7 +14,7 @@ previous_url: ribbonbar-programming-radribbonbar-customizing-the-application-men
 The *Application Menu* is a menu that is displayed when you click on the *Office Button* in the upper left corner of __RadRibbonBar__:
 
 >caption Figure 1: RadRibbonBar Application Menu
-![ribbonbar-programming-radribbonbar-customizing-the-application-menu 000](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu000.png)
+![WinForms RadRibbonBar RadRibbonBar Application Menu](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu000.png)
 
 The *Application Menu *can contain the same elements as __RadMenu__. Please refer to RadMenu section of the documentation for further a more comprehensive information about __RadMenu__. In contrast to __RadMenu__, menu items can be arranged in two columns.
 
@@ -188,7 +188,7 @@ Me.UntitledFileMenuItem.Text = "Untitled.png"
 
 {{endregion}}
 
-By default, the menu will look like this:<br>![ribbonbar-programming-radribbonbar-customizing-the-application-menu 002](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu002.png)
+By default, the menu will look like this:<br>![WinForms RadRibbonBar ribbonbar-programming-radribbonbar-customizing-the-application-menu 002](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu002.png)
 
 So, as mentioned above, we should set the TextWrap and MaxSize properties of the Text and Description parts of the menu items:
 
@@ -214,7 +214,7 @@ Me.UntitledFileMenuItem.Layout.Description.MaxSize = New Size(150, 0)
 
 {{endregion}}
 
-The result in this case will be:<br>![ribbonbar-programming-radribbonbar-customizing-the-application-menu 001](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu001.png)
+The result in this case will be:<br>![WinForms RadRibbonBar ribbonbar-programming-radribbonbar-customizing-the-application-menu 001](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu001.png)
 
 ## Keyboard Support
 

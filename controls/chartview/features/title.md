@@ -32,7 +32,7 @@ Me.RadChartView1.ShowTitle = True
 {{endregion}} 
 
 >caption Figure 1: Custom Title
-![chartview-features-title 001](images/chartview-features-title001.png)
+![WinForms RadChartView Custom Title](images/chartview-features-title001.png)
 
 The title can be moved to all four sides of the chart using the __TitleLocation__ property. Also, you can access the title element, which allows you to set various options: 
 
@@ -55,7 +55,7 @@ Me.RadChartView1.ChartElement.TitleElement.FlipText = True
 {{endregion}} 
 
 >caption Figure 2: Title Positon
-![chartview-features-title 002](images/chartview-features-title002.png)
+![WinForms RadChartView Title Positon](images/chartview-features-title002.png)
 
 # See Also
 

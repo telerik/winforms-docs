@@ -35,7 +35,7 @@ When checkboxes are enabled, you have several options to handle the checked item
 
 >caption Figure 1: Toggle the item by using the mouse
 
-![listview-using-checkboxes 001](images/listview-using-checkboxes001.gif)
+![WinForms RadListView Toggle the item by using the mouse](images/listview-using-checkboxes001.gif)
 
 * You can get or set the checked state of the __ListViewDataItem__ directly via its __CheckedState__ property:
 
@@ -68,7 +68,7 @@ Me.RadListView1.Items.Add(uncheckedItem)
 
 >caption Figure 2: Toggle items programmatically
 
-![listview-using-checkboxes 002](images/listview-using-checkboxes002.png)
+![WinForms RadListView Toggle items programmatically](images/listview-using-checkboxes002.png)
 
 * You can get the checked items in **RadListView** via its __CheckedItems__ collection
 

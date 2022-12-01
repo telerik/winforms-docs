@@ -18,7 +18,7 @@ There are 3 options that you can use to draw on the image.
 
 >caption Figure 1: Draw Buttons
 
-![](images/image-editor-draw001.png)
+![WinForms RadImage-Editor Draw Buttons](images/image-editor-draw001.png)
 
 
 ## Draw Text
@@ -27,7 +27,7 @@ To draw text click the button and the __DrawText__ dialog will be shown. In it y
 
 >caption Figure 2: DrawText Dialog
 
-![](images/image-editor-draw002.png)
+![WinForms RadImage-Editor DrawText Dialog](images/image-editor-draw002.png)
 
 
 ### Drawing text programmatically
@@ -57,13 +57,13 @@ When the Draw Shape button is pressed the DrawShape dialog appears. In this dial
 
 >caption Figure 3: DrawShape Dialog
 
-![](images/image-editor-draw005.png)
+![WinForms RadImage-Editor DrawShape Dialog](images/image-editor-draw005.png)
 
 Once you are ready with the settings you can draw your shape with the mouse.
 
 >caption Figure 4: Drawing Shapes
 
-![](images/image-editor-draw003.png)
+![WinForms RadImage-Editor Drawing Shapes](images/image-editor-draw003.png)
 
 The currently supported shapes are:
 * FreeFlow
@@ -106,7 +106,7 @@ When the Draw button is pressed the Draw dialog appears. In this dialog you can 
 
 >caption Figure 1: Draw Dialog
 
-![](images/image-editor-draw004.png)
+![WinForms RadImage-Editor Draw Dialog](images/image-editor-draw004.png)
 
 
 # See Also

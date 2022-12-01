@@ -19,7 +19,7 @@ You can use the following properties to change the behavior of the Strip View:
 |__ShowItemPinButton__|Shows/hides the pin button. This button allows you to pin some of the tabs.|
 |__StripButtons__|Controls which strip button are currently visible. Detailed information is available here: [Scrolling and Overflow (strip buttons)]({%slug winforms/pageview/stripview/scrolling-and-overflow-(strip-buttons)%})|
 |__ItemAlignment__|Allows you to align the items.The possible values are: *Near, Center, Far*.|
-|__PreviewItem__|You can use this property to set the preview item. This item is opened for preview on the far side of the regular items. <br>![pageview-strip-view-properties 001](images/pageview-strip-view-properties001.png)|
+|__PreviewItem__|You can use this property to set the preview item. This item is opened for preview on the far side of the regular items. <br>![WinForms RadPageView pageview-strip-view-properties 001](images/pageview-strip-view-properties001.png)|
 |__StripAlignment__|Allows you to align the entire strip. The possible values are: *Bottom, Left, Top, Right*.|
 |**NewItemVisibility**|Gets or sets the visibility of the internal NewItem.|
 |**AnimatedStripScrolling**|Determines whether strip scrolling will be animated.|

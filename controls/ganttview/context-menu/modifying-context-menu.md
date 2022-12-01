@@ -49,7 +49,7 @@ End Sub
 
 {{endregion}} 
 
-![ganttview-context-menu-modifying-context-menu 001](images/ganttview-context-menu-modifying-context-menu001.png)
+![WinForms RadGanttView ganttview-context-menu-modifying-context-menu 001](images/ganttview-context-menu-modifying-context-menu001.png)
 
 # See Also
 

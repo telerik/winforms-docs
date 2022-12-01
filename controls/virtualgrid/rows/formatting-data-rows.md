@@ -12,7 +12,7 @@ position: 0
 
 Use the __RowFormatting__ event to apply custom formatting to RadVirtualGrid's data rows. The code snippet below demonstrates changing the __ForeColor__, __BackColor__ and __GradientStyle__ in all data rows where the cell value in the *ContactTitle* column is *Owner*:
 
-![virtualgrid-rows-formatting-data-rows001](images/virtualgrid-cells-formatting-data-rows001.png)
+![WinForms RadVirtualGrid virtualgrid-rows-formatting-data-rows001](images/virtualgrid-cells-formatting-data-rows001.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridFormattingRows.cs region=FormattingRows}} 
 {{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridFormattingRows.vb region=FormattingRows}} 

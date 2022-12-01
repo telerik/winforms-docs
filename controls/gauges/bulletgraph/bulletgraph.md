@@ -20,7 +20,7 @@ The __RadBulletGraph__ control is a variation of linear gauge. It combines a num
 
 >caption Figure 1: RadBulletGraph
 
-![bulletgraph-overview 001](images/bulletgraph-overview001.png)
+![WinForms RadGauges RadBulletGraph](images/bulletgraph-overview001.png)
 
 ## Key Features
 

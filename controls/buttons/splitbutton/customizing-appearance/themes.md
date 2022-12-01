@@ -21,11 +21,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __RadSplitButtonElement__ in *Controls Structure* on the left side. Then, select __SplitButtonActionPartFill__ in the *Elements* section.
 
-	![splitbutton-customizing-appearance-themes 001](images/splitbutton-customizing-appearance-themes001.png)
+	![WinForms RadButtons splitbutton-customizing-appearance-themes 001](images/splitbutton-customizing-appearance-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![splitbutton-customizing-appearance-themes 002](images/splitbutton-customizing-appearance-themes002.png)
+	![WinForms RadButtons splitbutton-customizing-appearance-themes 002](images/splitbutton-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

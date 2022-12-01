@@ -14,7 +14,7 @@ The ESRI Shapefiles or simply the shapefiles are popular format for storing geog
 
 >caption Figure 1: ESRI Shapefile Reader 
 
-![map-file-readers-esri-shapefile-reader 001](images/map-file-readers-esri-shapefile-reader001.png)
+![WinForms RadMap ESRI Shapefile Reader](images/map-file-readers-esri-shapefile-reader001.png)
 
 To read your data you have to use a __ShapeFileReader__ which reads __ShapeFileReaderParameters__ where the __ShapeStream__ and __DbfStream__ are stored.
 

@@ -30,17 +30,17 @@ You can set the **DataSource** property at design time in the *Properties* windo
 
 	>caption Figure: 1 Setting the DataSource at Design time
 
-	![domainupdown-populating-with-data-data-binding 001](images/domainupdown-populating-with-data-data-binding001.png)
+	![WinForms RadDomainUpDown Setting the DataSource at Design time](images/domainupdown-populating-with-data-data-binding001.png)
 
 1. Afterwards, you need to specify the __DisplayMember__ and __ValueMember__ properties.
 
 	>caption Figure: 2 Setting the DisplayMember and ValueMember properties at Design time
 
-	![domainupdown-populating-with-data-data-binding 002](images/domainupdown-populating-with-data-data-binding002.png)
+	![WinForms RadDomainUpDown Setting the DisplayMember and ValueMember properties at Design time](images/domainupdown-populating-with-data-data-binding002.png)
 
 	>caption Figure: 3 RadDomainUpDown bound at Design time
 
-	![domainupdown-populating-with-data-data-binding 003](images/domainupdown-populating-with-data-data-binding003.gif)
+	![WinForms RadDomainUpDown RadDomainUpDown bound at Design time](images/domainupdown-populating-with-data-data-binding003.gif)
 
 ## Data binding at run time
 
@@ -126,7 +126,7 @@ You can bind **RadDomainUpDown** programmatically as well. The following code sn
  
 >caption Figure: 4 RadDomainUpDown bound at Run time
 
-![domainupdown-populating-with-data-data-binding 004](images/domainupdown-populating-with-data-data-binding004.gif)
+![WinForms RadDomainUpDown 4 RadDomainUpDown bound at Run time](images/domainupdown-populating-with-data-data-binding004.gif)
 
 # See Also
 

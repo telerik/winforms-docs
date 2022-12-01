@@ -12,7 +12,7 @@ position: 0
 
 __RadVirtualGrid__ can display hierarchical, master-detail data to an arbitrary number of levels.
  
-![virtualgrid-hierarchical-data 001](images/hierarchical-data.png)
+![WinForms RadVirtualGrid virtualgrid-hierarchical-data 001](images/hierarchical-data.png)
 
 >caution Before proceeding with this article, please refer to the [Populating with Data](https://docs.telerik.com/devtools/winforms/controls/virtualgrid/working-with-data/virtualgrid-populating-with-data) article which demonstrates how to fill data in __RadVirtualGrid__.
 

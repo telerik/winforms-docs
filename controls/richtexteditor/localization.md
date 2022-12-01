@@ -130,9 +130,9 @@ InitializeComponent()
 
 >caption Fig.1 RichTextBoxLocalizationProvider
 
-![richtexteditor-localization 001](images/richtexteditor-localization001.png)
+![WinForms RadRichTextEditor RichTextBoxLocalizationProvider](images/richtexteditor-localization001.png)
 >caption Fig.2 Localize RadRichTextEditorRibbonUI
 
-![richtexteditor-localization 002](images/richtexteditor-localization002.png)
+![WinForms RadRichTextEditor Localize RadRichTextEditorRibbonUI](images/richtexteditor-localization002.png)
 
 

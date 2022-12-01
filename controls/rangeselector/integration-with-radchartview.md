@@ -62,7 +62,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 1: BarSeries
-![rangeselector-integration-with-chartview 001](images/rangeselector-integration-with-chartview001.png)
+![WinForms RadRangeSelector BarSeries](images/rangeselector-integration-with-chartview001.png)
 
 As you can see, the chart displays a __LineSeries__, while in __RadRangeSelector__ we have changed it to __BarSeries__.
 
@@ -126,7 +126,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 2: Changed Chart Labels
-![rangeselector-integration-with-chartview 002](images/rangeselector-integration-with-chartview002.png)
+![WinForms RadRangeSelector Changed Chart Labels](images/rangeselector-integration-with-chartview002.png)
 
 Also, the generated from __RangeSelectorViewElement__ scales (__RangeSelectorChartScaleContainerElement__) have embedded logic that prevents overlapping of labels and the following properties can be used to control it:
 

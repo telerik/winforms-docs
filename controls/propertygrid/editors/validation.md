@@ -23,7 +23,7 @@ You can use the error indicator of the item to visualize error when such occurs.
 
 >caption Figure 1: RadPropertyGrid Validation 
 
-![propertygrid-editors-validation](images/propertygrid-editors-validation.png)
+![WinForms RadPropertyGrid RadPropertyGrid Validation](images/propertygrid-editors-validation.png)
 
 The code snippet below demonstrates simple data validation scenario. It is performed on a string property to do not allow entering an empty string. In the __PropertyValidating__ event we check if an empty string is entered, if this is the case the validation fails, the error indicator is shown and the event is canceled. If the value entered is valid in the __Edited__ event we reset the error text and the error indicator is hidden:
 

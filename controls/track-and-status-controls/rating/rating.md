@@ -33,7 +33,7 @@ __RadRating__ is a flexible UI component that allows users to place their rating
 * Description
 
 
-![rating-overview 001](images/rating-overview001.png)
+![WinForms RadRating rating-overview 001](images/rating-overview001.png)
 
 # See Also
 

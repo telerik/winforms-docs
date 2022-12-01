@@ -30,7 +30,7 @@ You can tailor the look of each pie slice individually by working with the pie c
 To create a Pie chart set the RadChart __DefaultType__ property or __ChartSeries.TypePie__.
 >caption 
 
-![chart-undestanding-radchart-types-pie-charts 001](images/chart-undestanding-radchart-types-pie-charts001.png)
+![WinForms RadChart ](images/chart-undestanding-radchart-types-pie-charts001.png)
 >caption 
 
-![chart-undestanding-radchart-types-pie-charts 002](images/chart-undestanding-radchart-types-pie-charts002.png)
+![WinForms RadChart chart-undestanding-radchart-types-pie-charts 002](images/chart-undestanding-radchart-types-pie-charts002.png)

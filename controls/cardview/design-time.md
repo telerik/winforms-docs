@@ -14,7 +14,7 @@ position: 2
 
 >caption Fig.1 Smart Tag
 
-![radcardview-design-time 001](images/radcardview-design-time001.png)
+![WinForms RadCardview Smart Tag](images/radcardview-design-time001.png)
 
 * __Common Tasks__
 
@@ -38,7 +38,7 @@ The short video below demonstrates how columns can be set up at design-time and 
 
 >caption Fig.2 Create Layout
 
-![radcardview-design-time 002](images/radcardview-design-time002.gif)
+![WinForms RadCardview Create Layout](images/radcardview-design-time002.gif)
 
 * __Data Binding__: __RadCardView__ utilizes the standard WinForms data binding mechanism. A complete example is available in Data Binding section.
 

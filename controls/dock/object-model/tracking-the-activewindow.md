@@ -21,7 +21,7 @@ In certain scenarios you may need to track the moment the __ActiveWindow__ of __
     - __OldWindow__: returns the currently active window.
     
      In the picture below the currently active window is `toolWindow2`. Activating `toolWindow1` will cause `ActiveWindowChanging` to fire, and we can expect __NewWindow__ to return `toolWindow1` and __OldWindow__ to return `toolWindow2`.
-     ![dock-object-model-tracking-the-activewindow 001](images/dock-object-model-tracking-the-activewindow001.png)
+     ![WinForms RadDock dock-object-model-tracking-the-activewindow 001](images/dock-object-model-tracking-the-activewindow001.png)
 
 
 

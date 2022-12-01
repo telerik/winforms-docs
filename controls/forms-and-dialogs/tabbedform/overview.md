@@ -17,7 +17,7 @@ __RadTabbedForm__ allows you to display tabs in the title bar, just like in most
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![radtabbedform-overview001](images/radtabbedform-overview001.png)
+![WinForms RadTabbedForm radtabbedform-overview001](images/radtabbedform-overview001.png)
 
 ## Key Features
 

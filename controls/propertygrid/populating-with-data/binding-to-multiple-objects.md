@@ -15,7 +15,7 @@ You can set an array of objects as **SelectedObjects** of **RadPropertyGrid**. W
 
 >caption Figure 1: RadPropertyGrid Multiple Objects
 
-![propertygrid-bindiing-to-multiple-objects 001](images/propertygrid-bindiing-to-multiple-objects001.png)
+![WinForms RadPropertyGrid RadPropertyGrid Multiple Objects](images/propertygrid-bindiing-to-multiple-objects001.png)
 
 Here is how to use this feature:
 

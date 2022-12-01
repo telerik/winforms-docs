@@ -21,7 +21,7 @@ __RadCalendar__ provides two types of navigation that allow you to switch or jum
 
 >caption Figure 1: The navigation pane of RadCalendar. 
 
-![calendar-customizing-behaviour-customizing-navigation 001](images/calendar-customizing-behaviour-customizing-navigation001.png)
+![WinForms RadCalendar The navigation pane of RadCalendar](images/calendar-customizing-behaviour-customizing-navigation001.png)
 
 ## Navigation properties:
 

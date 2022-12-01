@@ -14,7 +14,7 @@ __RadColorDialog__ shows a __RadColorDialogForm__ which represents a dialog cont
 
 >caption Figure 1: RadColorSelector's elements hierarchy
 
-![colordialog-structure 001](images/colordialog-structure001.png)
+![WinForms RadColorDialog RadColorSelector's elements hierarchy](images/colordialog-structure001.png)
 
 
 # See Also

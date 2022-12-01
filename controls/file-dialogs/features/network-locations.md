@@ -34,7 +34,7 @@ openFileDialog.ShowDialog()
 
 >caption Figure 1:  Result from Example 1 
 
-![winforms/file-dialogs-features-network-locations 001](images/file-dialogs-features-network-locations001.png) 
+![WinForms RadFile-Dialogs Result from Example](images/file-dialogs-features-network-locations001.png) 
 
 >note **ShowNetworkLocations** does not support run-time change.
 

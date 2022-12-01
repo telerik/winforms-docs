@@ -31,7 +31,7 @@ The main elements of the structure of __RadGanttView__ are displayed below:
 
 				* GanttGraphicalViewBaseTaskElement
                             
-![ganttview-structure 001](images/ganttview-structure001.png)
+![WinForms RadGanttView ganttview-structure 001](images/ganttview-structure001.png)
 
 1. RadGanttViewElement is the main element contained in the control. It parents the two main elements that you can see in RadGanttView and the separator between them.
             

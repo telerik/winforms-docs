@@ -61,7 +61,7 @@ label.Text = "I am a RadLabel!"
 The example below has the BackgroundImage property set to "BlueHills.jpg" (available in the \Samples Pictures directory of many Windows installations) and __BackgroundImageLayout__ set to __Stretch__. The ForeColor property is set to White.
 
 >caption Figure 1: RadLabel BackgroundImage
-![panels-and-labels-label-programming-radlabel 001](images/panels-and-labels-label-programming-radlabel001.png)
+![WinForms RadLabel RadLabel BackgroundImage](images/panels-and-labels-label-programming-radlabel001.png)
 
 # See Also
 

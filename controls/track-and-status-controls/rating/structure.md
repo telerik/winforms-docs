@@ -15,11 +15,11 @@ This article illustrates the inner structure and organization of the elements wh
 
 >caption Figure 1: RadRating's elements hierarchy
 
-![rating-structure 002](images/rating-structure002.png)
+![WinForms RadRating RadRating's elements hierarchy](images/rating-structure002.png)
 
 >caption Figure 2: RadRating's visual structure
 
-![rating-structure 001](images/rating-structure001.png)
+![WinForms RadRating RadRating's visual structure](images/rating-structure001.png)
 
 1. Caption Element (Light Visual Element) 
 

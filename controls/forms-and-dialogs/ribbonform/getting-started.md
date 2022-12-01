@@ -24,12 +24,12 @@ There are three ways in which you can use the __RadRibbonForm__ control:
 
 When you add a __RadRibbonBar__ control on a __RadForm__ the Visual Studio Designer pops up a dialog which asks you whether you would like to switch the form’s behavior to __RadRibbonFormBehavior:__
 
-![forms-and-dialogs-ribbonform-getting-started 001](images/forms-and-dialogs-ribbonform-getting-started001.png)
+![WinForms RadRibbonForm forms-and-dialogs-ribbonform-getting-started 001](images/forms-and-dialogs-ribbonform-getting-started001.png)
 
 
 After you choose to replace the form's default behavior with a __RadRibbonFormBehavior__, the __RadForm__ is transformed to a __RadRibbonForm__:
 
-![forms-and-dialogs-ribbonform-getting-started 002](images/forms-and-dialogs-ribbonform-getting-started002.png)
+![WinForms RadRibbonForm forms-and-dialogs-ribbonform-getting-started 002](images/forms-and-dialogs-ribbonform-getting-started002.png)
 
 Switching to __RadRibbonFormBehavior__ does not change the base class to __RadRibbonForm__ but enables the __RadRibbonForm__ functionality on the __RadForm__ control.
 

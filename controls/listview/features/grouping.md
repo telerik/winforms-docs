@@ -41,7 +41,7 @@ RadListView1.GroupDescriptors.Add(groupByValue)
 
 |Before grouping|After grouping|
 |----|----|
-|![listview-features-grouping 001](images/listview-features-grouping001.png)|![listview-features-grouping 004](images/listview-features-grouping004.png)|
+|![WinForms RadListView listview-features-grouping 001](images/listview-features-grouping001.png)|![WinForms RadListView listview-features-grouping 004](images/listview-features-grouping004.png)|
 
 And here is how you can group by a certain column when __DetailsView__ is used:
 
@@ -72,7 +72,7 @@ RadListView1.GroupDescriptors.Add(groupByType)
 
 |Before grouping|After grouping|
 |----|----|
-|![listview-features-grouping 002](images/listview-features-grouping002.png)|![listview-features-grouping 005](images/listview-features-grouping005.png)| 
+|![WinForms RadListView listview-features-grouping 002](images/listview-features-grouping002.png)|![WinForms RadListView listview-features-grouping 005](images/listview-features-grouping005.png)| 
 
 ## Custom Grouping
 
@@ -128,7 +128,7 @@ Please note, that if you are using data binding, you can use the __ItemDataBound
 
 |Before grouping|After grouping|
 |----|----|
-|![listview-features-grouping 003](images/listview-features-grouping003.png)|![listview-features-grouping 006](images/listview-features-grouping006.png)|
+|![WinForms RadListView listview-features-grouping 003](images/listview-features-grouping003.png)|![WinForms RadListView listview-features-grouping 006](images/listview-features-grouping006.png)|
  
 When grouping is enabled you have the option to quickly expand or collapse all groups in __RadListView__ throught the __ExpandAll__ and __CollapseAll__ methods:
 

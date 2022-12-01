@@ -43,6 +43,6 @@ This article demonstrates how you can add __RadContextMenu__ in the code and att
 
 4\.	Here is the result:
 
-![menus-context-menu-add-context-meni-in-code](images/menus-context-menu-add-context-meni-in-code001.png)
+![WinForms RadMenus menus-context-menu-add-context-meni-in-code](images/menus-context-menu-add-context-meni-in-code001.png)
 
 

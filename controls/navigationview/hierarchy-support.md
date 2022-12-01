@@ -16,7 +16,7 @@ Each **RadPageViewPage** element has a **SubPages** collection that can be popul
 
 >important The **SubPages** collection is considered only when using Navigation view. For the rest of the views, it doesn't take effect.  
 
-![hierarchy-support 001](images/hierarchy-support001.png)
+![WinForms RadNavigationView hierarchy-support 001](images/hierarchy-support001.png)
 
 ### Building Hierarchy with Nested Pages Programmatically
 
@@ -93,19 +93,19 @@ Me.radNavigationView1.Pages.Add(deletedPage)
 
 {{endregion}}
 
-![hierarchy-support 002](images/hierarchy-support002.png)
+![WinForms RadNavigationView hierarchy-support 002](images/hierarchy-support002.png)
 
 ### Setup Hierarchy at Design Time
 
 At design time, the hierarchy can be built by using the Property Builder which can be started from the Smart Tag:
 
-![hierarchy-support 003](images/hierarchy-support003.png)
+![WinForms RadNavigationView hierarchy-support 003](images/hierarchy-support003.png)
 
 It allows adding new pages or dragging the existing pages to a new location and thus build nested menus:
 
 >caption NavigationView Property Builder
 
-![hierarchy-support 004](images/hierarchy-support004.gif)
+![WinForms RadNavigationView NavigationView Property Builder](images/hierarchy-support004.gif)
 
 ### NavigationView Hierarchy Settings
 

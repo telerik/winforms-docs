@@ -15,7 +15,7 @@ previous_url: treeview-breadcrumb
 
 >caption Figure 1: BreadCrumb Drop-down 
 
-![treeview-breadcrumb 003](images/treeview-breadcrumb003.png)
+![WinForms RadTreeView BreadCrumb Drop-down](images/treeview-breadcrumb003.png)
 
 Use __DefaultTreeView__ property of __RadBreadCrumb__ to associate the bread crumb with an instance of __RadTreeView__. 
 
@@ -39,7 +39,7 @@ The **SelectTreeNodeOnClick** property determines whether the nodes in the tree 
 
 >caption Figure 2: Selecting Nodes
 
-![treeview-breadcrumb 004](images/treeview-breadcrumb004.gif)
+![WinForms RadTreeView Selecting Nodes](images/treeview-breadcrumb004.gif)
 
 {{source=..\SamplesCS\TreeView\BreadCrumb.cs region=SelectingNodes}} 
 {{source=..\SamplesVB\TreeView\BreadCrumb.vb region=SelectingNodes}}

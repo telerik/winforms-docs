@@ -15,11 +15,11 @@ This article illustrates the inner structure and organization of the elements wh
 
 >caption Figure 1: RadTrackBar's elements hierarchy
 
-![trackbar-structure 001](images/trackbar-structure001.png)
+![WinForms RadTrackBar RadTrackBar's elements hierarchy](images/trackbar-structure001.png)
 
 >caption Figure 2: RadTrackBar's visual structure
 
-![trackbar-structure 002](images/trackbar-structure002.png)
+![WinForms RadTrackBar RadTrackBar's visual structure](images/trackbar-structure002.png)
  
 Here is a brief explanation of the various elements in the tree:      
 

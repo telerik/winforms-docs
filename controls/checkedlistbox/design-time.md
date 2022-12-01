@@ -19,7 +19,7 @@ Select __RadCheckedListBox__ and click the small arrow on the top right position
 
 >caption Fig.1 Smart Tag
 
-![checkedlistbox-desing-time 001](images/checkedlistbox-design-time001.png)
+![WinForms RadCheckedListBox Smart Tag](images/checkedlistbox-design-time001.png)
 
 * __Common Tasks__
 

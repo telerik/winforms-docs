@@ -45,7 +45,7 @@ RadPageView1.ViewElement.BeginEdit()
 
 >caption Figure 1: Page tab's editing
 
-![pageview-how-to-editing-radpageviewelement 001](images/pageview-how-to-editing-radpageviewelement001.png)
+![WinForms RadPageView Page tab's editing](images/pageview-how-to-editing-radpageviewelement001.png)
 
 ## The Editing process and events
 
@@ -147,8 +147,8 @@ End Sub
 
 >caption Figure 2: Validation fails
 
-![pageview-how-to-editing-radpageviewelement 002](images/pageview-how-to-editing-radpageviewelement002.gif)
+![WinForms RadPageView Validation fails](images/pageview-how-to-editing-radpageviewelement002.gif)
 
 >caption Figure 3: Successful edit operation
 
-![pageview-how-to-editing-radpageviewelement 003](images/pageview-how-to-editing-radpageviewelement003.gif)
+![WinForms RadPageView Successful edit operation](images/pageview-how-to-editing-radpageviewelement003.gif)

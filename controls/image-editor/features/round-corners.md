@@ -12,8 +12,8 @@ position: 5
 
 You round the corners by showing the round corners dialog and set the __Radius__, the __Border Thickness__ and their colors. 
 
-![](images/image-editor-round-corners001.png)
-![](images/image-editor-round-corners002.png)
+![WinForms RadImage-Editor ](images/image-editor-round-corners001.png)
+![WinForms RadImage-Editor ](images/image-editor-round-corners002.png)
 
 # Round Corners Programmatically
 

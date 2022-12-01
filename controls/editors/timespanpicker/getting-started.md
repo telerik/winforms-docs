@@ -15,7 +15,7 @@ This topic will walk you through the process of creating of __RadTimeSpanPicker_
 
 1\. Create a blank new application and drop __RadTimeSpanPicker__ on the form. The layout should look like this.
 
-![radtimespanpicker-getting-started001](images/radtimespanpicker-getting-started001.png)
+![WinForms RadTimeSpanPicker radtimespanpicker-getting-started001](images/radtimespanpicker-getting-started001.png)
 
 2\. In the code behind set the value of the control. 
 
@@ -34,7 +34,7 @@ Me.radTimeSpanPicker1.Value = TimeSpan.FromDays(5)
 
 3\. You can start the application and enter a new value.
 
-![radtimespanpicker-getting-started002](images/radtimespanpicker-getting-started002.png)
+![WinForms RadTimeSpanPicker radtimespanpicker-getting-started002](images/radtimespanpicker-getting-started002.png)
 
 # See Also
 

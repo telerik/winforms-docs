@@ -14,7 +14,7 @@ previous_url: editors-timepicker-getting-started
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadTimePicker for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms)<br>This video demonstrates the new RadTimePicker control as well as several properties you should be aware of.|![editors-timepicker-overview 003](images/editors-timepicker-overview003.png)|
+|[WinForms RadDateTimePicker Getting Started with RadTimePicker for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms)<br>This video demonstrates the new RadTimePicker control as well as several properties you should be aware of.|![WinForms RadDateTimePicker editors-timepicker-overview 003](images/editors-timepicker-overview003.png)|
 
 This tutorial will demonstrate how to get started with __RadTimePicker__ control, its functionalities and customization abilities:
         
@@ -33,7 +33,7 @@ This tutorial will demonstrate how to get started with __RadTimePicker__ control
 
 Here is how the control will look like, after the modifications:
 
-![editors-timepicker-getting-started](images/editors-timepicker-getting-started.png)
+![WinForms RadDateTimePicker editors-timepicker-getting-started](images/editors-timepicker-getting-started.png)
 
 # See Also
 

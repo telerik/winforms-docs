@@ -66,7 +66,7 @@ radSpreadsheet1.SpreadsheetElement.PrintPreview()
 The bellow image shows the options available in the PrintPreview dialog.
 
 >caption The PrintPreview dialog
-![RadSpreadsheet Printing](images/radspreadsheet-features-printing001.png)
+![WinForms RadSpreadsheet The PrintPreview dialog](images/radspreadsheet-features-printing001.png)
 
 
 ## Worksheet page setup
@@ -81,7 +81,7 @@ When you need to set different print option such as page size, page orientation 
 Our **RadSpreadsheetRibbonBar** allows you to print the current document as well. The print option is accessible from the application menu. In this case you have exactly the same options like in the **PrintPreview** dialog. 
 
 >caption Printing from RadSpreadsheetRibbonBar
-![RadSpreadsheet Printing ](images/radspreadsheet-features-printing002.png)
+![WinForms RadSpreadsheet Printing from RadSpreadsheetRibbonBar](images/radspreadsheet-features-printing002.png)
 
 
 ## See Also

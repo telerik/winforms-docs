@@ -37,7 +37,7 @@ RadGridView1.Rows.AddNew()
 
 >caption Figure 1: Add a blank new row.
 
-![gridview-rows-adding-and-inserting-rows 001](images/gridview-rows-adding-and-inserting-rows001.png)
+![WinForms RadGridView Add a blank new row](images/gridview-rows-adding-and-inserting-rows001.png)
 
 The RadGridView.Rows.__Add(value-for-first-column, value-for-second-column, value-for-third-column)__ method adds a new row with the specified values. You can use the following code snippet to add values for each column:
 
@@ -59,7 +59,7 @@ RadGridView1.Rows.Add("Adding New Row", 12.5, DateTime.Now, True)
 
 >caption Figure 2: Add new row with data in it.
 
-![gridview-rows-adding-and-inserting-rows 002](images/gridview-rows-adding-and-inserting-rows002.png)
+![WinForms RadGridView Add new row with data in it](images/gridview-rows-adding-and-inserting-rows002.png)
 
 You can also add rows by creating an instance of __GridViewDataRowInfo__ and adding it to the __Rows__ collection of __RadGridView__:
 
@@ -91,7 +91,7 @@ RadGridView1.Rows.Add(rowInfo)
 
 >caption Figure 3: Add new row by creating an instance first.
 
-![gridview-rows-adding-and-inserting-rows 003](images/gridview-rows-adding-and-inserting-rows003.png)
+![WinForms RadGridView Add new row by creating an instance first](images/gridview-rows-adding-and-inserting-rows003.png)
 
 ## Inserting rows in RadGridView
 
@@ -123,7 +123,7 @@ RadGridView1.Rows.Insert(2, dataRowInfo)
 
 >caption Figure 4: Insert row to a specific position.
 
-![gridview-rows-adding-and-inserting-rows 004](images/gridview-rows-adding-and-inserting-rows004.png)
+![WinForms RadGridView Insert row to a specific position](images/gridview-rows-adding-and-inserting-rows004.png)
 
 # See Also
 * [Conditional Formatting Rows]({%slug winforms/gridview/rows/conditional-formatting-rows%})

@@ -14,7 +14,7 @@ The __Smart Tag__ of __RadAutoCompleteBox__ lets you quickly access common tasks
 
 >caption Figure 1: The Smart Tag of RadAutoCompleteBox
 
-![datetimepicker-smart-tag001.png](images/datetimepicker-smart-tag001.png) 
+![WinForms RadDateTimePicker The Smart Tag of RadAutoCompleteBox](images/datetimepicker-smart-tag001.png) 
 
 * __Common Tasks__
     - __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.

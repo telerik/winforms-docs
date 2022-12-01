@@ -17,13 +17,13 @@ __RadRadioButtons__ are grouped according to their parent. You can place a set
 
 Use __RadioCheckAlignment__ to control where the radio button appears in relation to the text of the control. 
 
-![buttons-radiobutton-designing-radradiobutton 001](images/buttons-radiobutton-designing-radradiobutton001.png)
+![WinForms RadButtons buttons-radiobutton-designing-radradiobutton 001](images/buttons-radiobutton-designing-radradiobutton001.png)
 
 ## Adding Images
 
 To add an image to RadRadioButton, click on the __Image__ property (the ellipsis button) to launch the __Select Resource__ dialog. Use the Import button to load image files as a Local Resource, i.e. for that radio button only, or as a Project resource file where other components can share the same images.
 
-![buttons-radiobutton-designing-radradiobutton 002](images/buttons-radiobutton-designing-radradiobutton002.png)
+![WinForms RadButtons buttons-radiobutton-designing-radradiobutton 002](images/buttons-radiobutton-designing-radradiobutton002.png)
 
 ## Text and Image Layout
 
@@ -48,7 +48,7 @@ Me.radRadioButton10.TextImageRelation = TextImageRelation.TextBeforeImage
 {{endregion}} 
 
 
-![buttons-radiobutton-designing-radradiobutton 003](images/buttons-radiobutton-designing-radradiobutton003.png)
+![WinForms RadButtons buttons-radiobutton-designing-radradiobutton 003](images/buttons-radiobutton-designing-radradiobutton003.png)
 
 ## Text Entry
 

@@ -100,7 +100,7 @@ appointment.Reminder = New TimeSpan(10000)
 Also you can set this in AppointmentEditDialog at runtime.
 
 >caption Figure 1: RadScheduler Reminder
-![scheduler-reminders-radschedulerreminder 001](images/scheduler-reminders-radschedulerreminder001.png)
+![WinForms RadScheduler RadScheduler Reminder](images/scheduler-reminders-radschedulerreminder001.png)
 
 When you start RadSchedulerReminder it will be filled with the appointment that starts in this interval. When you stop it all reminders will be cleared from the RadSchedulerReminder.
 

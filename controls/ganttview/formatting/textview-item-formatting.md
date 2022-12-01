@@ -64,7 +64,7 @@ End Sub
 {{endregion}} 
 
 
-![ganttview-formatting-textviewitem-cellformatting 001](images/ganttview-formatting-textviewitem-cellformatting001.png)
+![WinForms RadGanttView ganttview-formatting-textviewitem-cellformatting 001](images/ganttview-formatting-textviewitem-cellformatting001.png)
 
 Another example showing how to change the fore color of the cells in the `Title` column for all types of tasks that start on an even day of the month.
         
@@ -98,7 +98,7 @@ End Sub
 
 {{endregion}} 
 
-![ganttview-formatting-textviewitem-cellformatting 002](images/ganttview-formatting-textviewitem-cellformatting002.png)
+![WinForms RadGanttView ganttview-formatting-textviewitem-cellformatting 002](images/ganttview-formatting-textviewitem-cellformatting002.png)
 
 
 # See Also

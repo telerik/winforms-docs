@@ -16,13 +16,13 @@ This tutorial will walk you through the creation of **RadBreadCrumb** in your pr
 2. [Data bind]({%slug winforms/treeview/data-binding/binding-to-database-data%}) the **RadTreeView** control.
 3. Set the RadBreadCrumb.**DefaultTreeView** property to the tree view control on the form.
 
-	![breadcrumb-getting-started 002](images/breadcrumb-getting-started002.png) 
+	![WinForms RadBreadCrumb breadcrumb-getting-started 002](images/breadcrumb-getting-started002.png) 
 
 When you run the project and select a node in **RadTreeView**, the **RadBreadCrumb** control will be populated with the path to the selected node:
  
 >caption RadBreadCrumb associated with a RadTreeView
 
-![breadcrumb-getting-started 001](images/breadcrumb-getting-started001.png) 
+![WinForms RadBreadCrumb RadBreadCrumb associated with a RadTreeView](images/breadcrumb-getting-started001.png) 
 
 ## Using RadBreadCrumb as a standalone control 
 
@@ -173,7 +173,7 @@ Similar to **RadTreeView**, **RadBreadCrumb** can also be bound to a collection 
 
 >caption RadBreadCrumb used as a standalone control
 
-![breadcrumb-getting-started 003](images/breadcrumb-getting-started003.png) 
+![WinForms RadBreadCrumb RadBreadCrumb used as a standalone control](images/breadcrumb-getting-started003.png) 
 
 >important Please avoid using the character set as a PathSeparator in the Header of the items, because this can lead to an unexpected behavior when you try to expand a path. Also, keep in mind that the '**&#92;**' character is the default **PathSeparator**.
 

@@ -11,7 +11,7 @@ position: 3
 The following tutorial demonstrates how to add items and images to a **RadDomainUpDown** and how to retrieve the selected text and image.
 >caption Figure 1: Select a country from RadDomainUpDown
 
-![editors-domainupdown-getting-started 001](images/editors-domainupdown-getting-started001.gif)
+![WinForms RadDomainUpDown Select a country from RadDomainUpDown](images/editors-domainupdown-getting-started001.gif)
 
 1. Add a **RadDomainUpDown** and a **RadStatusStrip** to a form. 
 
@@ -21,11 +21,11 @@ The following tutorial demonstrates how to add items and images to a **RadDomain
             
 	>caption Figure 2: RadStatusStrip item elements
 
-	![editors-domainupdown-getting-started 002](images/editors-domainupdown-getting-started002.png)
+	![WinForms RadDomainUpDown RadStatusStrip item elements](images/editors-domainupdown-getting-started002.png)
 
 4. Select **RadDomainUpDown** and find the **Items** property in the *Properties* Window of Visual Studio. Click the  ellipsis button to open the **RadListDataItem Collection Editor**. Click the `Add` button three times to create three list items. Set the text of the first, second and third item to *Bulgaria*, *Canada* and *Germany* respectively. Set the resource images to the __Image__ property of the items.
 
-	![editors-domainupdown-getting-started 003](images/editors-domainupdown-getting-started003.png)
+	![WinForms RadDomainUpDown editors-domainupdown-getting-started 003](images/editors-domainupdown-getting-started003.png)
 
 5. Click **OK** to close the **RadListDataItem Collection Editor**. 
 

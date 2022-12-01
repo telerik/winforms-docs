@@ -14,7 +14,7 @@ Data Matrix barcode is a two-dimensional type of code used widely in industry fo
 
 >caption Figure 1. Data Matrix Barcode Structure
 
-![2d-barcodes-datamatrix-overview 001](images/2d-barcodes-datamatrix-overview001.png)
+![WinForms RadBarcode Data Matrix Barcode Structure](images/2d-barcodes-datamatrix-overview001.png)
 
 * **Finder pattern** - the L-shaped lines at the bottom and left of the code are called "finder pattern". It is used by the readers for orientation, adjustment and to correct distortion.
 

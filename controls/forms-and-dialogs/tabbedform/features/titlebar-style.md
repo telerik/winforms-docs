@@ -28,8 +28,8 @@ Me.AllowAero = False
 
 >caption Figure 1: AllowAero = false on Windows 10
 
-![radtabbedform-standard-styles001](images/radtabbedform-standard-styles001.png)
+![WinForms RadTabbedForm AllowAero = false on Windows 0](images/radtabbedform-standard-styles001.png)
 
 >caption Figure 2: AllowAero = true on Windows 10
 
-![radtabbedform-standard-styles002](images/radtabbedform-standard-styles002.png)
+![WinForms RadTabbedForm AllowAero = true on Windows 0](images/radtabbedform-standard-styles002.png)

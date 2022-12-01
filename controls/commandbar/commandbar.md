@@ -18,18 +18,18 @@ __RadCommandBar__ is a fully themeable tool strip that provides unprecedented fl
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![commandbar-overview 001](images/commandbar-overview001.png)
+![WinForms RadCommandBar commandbar-overview 001](images/commandbar-overview001.png)
 
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Working with RadCommandBar](http://www.telerik.com/videos/winforms/working-with-radcommandbar-for-winforms)<br>In this video, you will learn how to create and add RadCommandBars to your applications.|![command-bar-working-with-command-bar-video](images/command-bar-working-with-command-bar-video.png)|
+|[WinForms RadCommandBar Working with RadCommandBar](http://www.telerik.com/videos/winforms/working-with-radcommandbar-for-winforms)<br>In this video, you will learn how to create and add RadCommandBars to your applications.|![WinForms RadCommandBar command-bar-working-with-command-bar-video](images/command-bar-working-with-command-bar-video.png)|
 
 ## Orientation
 
 __RadCommandBar__ supports horizontal and vertical orientation:
 
-![commandbar-overview 002](images/commandbar-overview002.png)
+![WinForms RadCommandBar commandbar-overview 002](images/commandbar-overview002.png)
 
 ## Theming
 

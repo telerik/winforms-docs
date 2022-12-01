@@ -18,7 +18,7 @@ This article lists the supported features by **RadDomainUpDown**:
 
 	>caption Figure: 1 Auto-complete functionality
 
-	![domainupdown-features 001](images/domainupdown-features001.gif)
+	![WinForms RadDomainUpDown Auto-complete functionality](images/domainupdown-features001.gif)
 
 * **ReadOnly**: when read-only mode is enabled, the user should not be allowed to type in the editor, still selecting items should be possible.
 
@@ -32,7 +32,7 @@ This article lists the supported features by **RadDomainUpDown**:
 
 	>caption Figure: 2 Right-to-Left mode
 
-	![domainupdown-features 002](images/domainupdown-features002.gif)
+	![WinForms RadDomainUpDown Right-to-Left mode](images/domainupdown-features002.gif)
 
 * **Navigation**: The predefined set of items can be navigated by using the arrow buttons, the up and down arrow keys or by double clicking in the editor. The **Wrap** property determines if the selected item will revert to first item after reaching the last item and vice versa while navigating the list. The **SelectNextOnDoubleClick** property controls whether to rotate items on double click in the edit box part. 
 

@@ -21,7 +21,7 @@ Consider the __RadGridView__ is [bound]({%slug winforms/gridview/populating-with
         
 >caption Figure 1: Alphabetical sort order
 
-![gridview-grouping-sorting-group-rows 001](images/gridview-grouping-sorting-group-rows001.png)
+![WinForms RadGridView Alphabetical sort order](images/gridview-grouping-sorting-group-rows001.png)
 
 However, you can change this sort order by using a group comparer. It is necessary to create a class that implements the  __IComparer<Group<GridViewRowInfo>>__ interface where you should return an integer number in the implemented __Compare__ method. The following code snippet illustrates how to order the group rows considering the integer value, not the string:
 
@@ -98,7 +98,7 @@ Me.RadGridView1.MasterTemplate.GroupComparer = New GroupComparer()
 
 >caption Figure 2: Custom sort order of group rows.
 
-![gridview-grouping-sorting-group-rows 002](images/gridview-grouping-sorting-group-rows002.png)
+![WinForms RadGridView Custom sort order of group rows](images/gridview-grouping-sorting-group-rows002.png)
 # See Also
 * [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
 

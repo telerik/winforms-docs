@@ -15,7 +15,7 @@ previous_url: scheduler-views-overview-and-structure
 
 |Related Videos|  |
 |-------|------|
-|[Using RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/scheduler)<br>Have you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs. (Runtime: 32:46)|![scheduler-introduction 001](images/scheduler-introduction001.png)|
+|[WinForms RadScheduler Using RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/scheduler)<br>Have you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs. (Runtime: 32:46)|![WinForms RadScheduler scheduler-introduction 001](images/scheduler-introduction001.png)|
 
 A first-rate scheduling component should offer intuitive, simple, and familiar interface, to help the user review all events in  a fast and efficient manner. Telerik Windows Forms Scheduler provides simplistic, but powerful interface, following closely the established UI standards.
 
@@ -43,26 +43,26 @@ RadScheduler displays all of its events in a __Time table__. The time table cons
 * __Current Day__ is highlighted in most scheduler views for a better visual presentation.
 
 >caption Figure 1: Day and Week Structure
-![scheduler-views-overview-and-structure 002](images/scheduler-views-overview-and-structure002.png)
+![WinForms RadScheduler Day and Week Structure](images/scheduler-views-overview-and-structure002.png)
 
 * In addition, __Navigation Elements__ let the user jump forward or backwards to the nearest appointment.
 
 >caption Figure 2: Navigation Elements
-![scheduler-views-overview-and-structure 003](images/scheduler-views-overview-and-structure003.png)
+![WinForms RadScheduler Navigation Elements](images/scheduler-views-overview-and-structure003.png)
 
 ## Structure of Month View
 
 The [Month View]({%slug winforms/scheduler/views/month-view%}) of the scheduler simply has a __Header__, __Month Cells__ for every day in the month and zero or more __Appointment Cells__ in each month cell.
 
 >caption Figure 3: Month View Structure
-![scheduler-views-overview-and-structure 004](images/scheduler-views-overview-and-structure004.png)
+![WinForms RadScheduler Month View Structure](images/scheduler-views-overview-and-structure004.png)
 
 ## Structure of Timeline View
 
 The [Timeline View]({%slug winforms/scheduler/views/timeline-view%}) of the scheduler has a __Header__, __Columns (scales)__ and __Appointment Cells:__
 
 >caption Figure 4: Timeline View Structure           
-![scheduler-views-timeline-view 001](images/scheduler-views-timeline-view001.gif)
+![WinForms RadScheduler Timeline View Structure](images/scheduler-views-timeline-view001.gif)
 
 The supported __scales__ can be set to any of the predefined values, or the user can select a new scale by simply right-clicking in the time table and selecting the preferable setting from the context menu.
 
@@ -84,7 +84,7 @@ A [Scheduler Navigator]({%slug winforms/scheduler/scheduler-navigator/overview%}
 
 >caption Figure 5: Scheduler Navigator 
 
-![scheduler-views-overview-and-structure 006](images/scheduler-views-overview-and-structure006.png)
+![WinForms RadScheduler Scheduler Navigator](images/scheduler-views-overview-and-structure006.png)
 
 # See Also
 

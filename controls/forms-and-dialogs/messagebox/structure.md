@@ -14,7 +14,7 @@ This article describes the inner structure and organization of the elements whic
         
 >caption Figure 1: RadMessageBoxForm's structure
 
-![forms-and-dialogs-messagebox-structure 001](images/forms-and-dialogs-messagebox-structure001.png)
+![WinForms RadMessageBox RadMessageBoxForm's structure](images/forms-and-dialogs-messagebox-structure001.png)
 
 # See Also
 

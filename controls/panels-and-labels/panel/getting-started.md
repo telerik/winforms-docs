@@ -24,7 +24,7 @@ You can add a **RadPanel** either at design time or at run-time:
 To programmatically add a **RadPanel** to a form, create a new instance of a **RadPanel**, and add it to the form`s __Controls__ collection. Change its **Text**, **ForeColor**, and **BackColor** properties.
 
 >caption Figure 1: RadPanel Run-time
-![panels-and-labels-panel-getting-started 001](images/panels-and-labels-panel-getting-started001.png)
+![WinForms RadPanel RadPanel Run-time](images/panels-and-labels-panel-getting-started001.png)
 
 #### Adding a RadPanel at Run-time 
 
@@ -68,7 +68,7 @@ panel.Text = "I am a RadPanel!"
 The example below has the **BackgroundImage** property set to the Progress logo.
 
 >caption Figure 2: RadPanel BackgroundImage
-![panels-and-labels-panel-getting-started 002](images/panels-and-labels-panel-getting-started002.png)
+![WinForms RadPanel RadPanel BackgroundImage](images/panels-and-labels-panel-getting-started002.png)
 
 # See Also
 

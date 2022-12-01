@@ -32,7 +32,7 @@ position: 4
 
 {{endregion}} 
 
-![officenavigationbar-view-modes 001](images/officenavigationbar-view-modes001.png)
+![WinForms RadOfficeNavigationBar officenavigationbar-view-modes 001](images/officenavigationbar-view-modes001.png)
 
 ## Full
 
@@ -54,7 +54,7 @@ position: 4
 
 {{endregion}} 
 
-![officenavigationbar-view-modes 002](images/officenavigationbar-view-modes002.png)
+![WinForms RadOfficeNavigationBar officenavigationbar-view-modes 002](images/officenavigationbar-view-modes002.png)
 
 # See Also
 

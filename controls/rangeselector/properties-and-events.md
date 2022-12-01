@@ -20,7 +20,7 @@ Here are the most important properties for changing the control appearance and b
 >note The *Deferred* update mode may be suitable for scenarios in which the chart has been loaded with extremely large data sets.
 
 >caption Figure 1: UpdateMode.Immediate
-![rangeselector-properties-and-events 001](images/rangeselector-properties-and-events001.gif)
+![WinForms RadRangeSelector UpdateModeImmediate](images/rangeselector-properties-and-events001.gif)
 
 ####  UpdateMode.Immediate
 
@@ -40,7 +40,7 @@ Me.radRangeSelector1.UpdateMode = UpdateMode.Deferred
 {{endregion}}
 
 >caption Figure 2: UpdateMode.Deferred
-![rangeselector-properties-and-events 002](images/rangeselector-properties-and-events002.gif)
+![WinForms RadRangeSelector UpdateModeDeferred](images/rangeselector-properties-and-events002.gif)
 
 ####  UpdateMode.Defferred
 
@@ -221,7 +221,7 @@ End Sub
 **RadRangeSelector** can also be setup to use a custom renderer just as the stand-alone **RadChartView** control. In order to utilize this feature, one needs to subscribe to the **CreateRenderer** event of the **RangeSelectorViewElement** instance.
 
 >caption Figure 3: Custom Rendering
-![rangeselector-properties-and-events 003](images/rangeselector-properties-and-events003.gif)
+![WinForms RadRangeSelector Custom Rendering](images/rangeselector-properties-and-events003.gif)
 
 {{source=..\SamplesCS\RangeSelector\RadRangeSelectorCustomRenderer.cs region=CustomRendering}} 
 {{source=..\SamplesVB\RangeSelector\RadRangeSelectorCustomRenderer.vb region=CustomRendering}}

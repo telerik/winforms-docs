@@ -17,7 +17,7 @@ Select **RadRating** and click the small arrow on the top right position in orde
 
 >caption Figure 1: Smart Tag
 
-![rating-design-time 001](images/rating-design-time001.png)
+![WinForms RadRating Smart Tag](images/rating-design-time001.png)
 
 * __New Theme Manager__: adds a new __RadThemeManager__ component to the form.
             
@@ -31,7 +31,7 @@ Select **RadRating** and click the small arrow on the top right position in orde
 
 >caption Figure 2: RadItem Collection Editor
 
-![rating-design-time 002](images/rating-design-time002.png) 
+![WinForms RadRating RadItem Collection Editor](images/rating-design-time002.png) 
 
 By clicking the `Add` button you can add items to the collection. Additionally, on the right hand side, you will see a property grid, where you can change the properties of each item individually.        
            

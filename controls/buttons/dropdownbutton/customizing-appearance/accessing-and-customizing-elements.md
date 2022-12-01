@@ -20,14 +20,14 @@ You can access and modify the style for different elements in __RadDropDownButto
 
 >caption Figure 1: Element hierarchy editor
 
-![dropdownbutton-customizing-appearance-accessing-and-customizing-elements 001](images/dropdownbutton-customizing-appearance-accessing-and-customizing-elements001.png)
+![WinForms RadButtons Element hierarchy editor](images/dropdownbutton-customizing-appearance-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
 >caption Figure 2: Customize elements
 
-![dropdownbutton-customizing-appearance-accessing-and-customizing-elements 002](images/dropdownbutton-customizing-appearance-accessing-and-customizing-elements002.png)
+![WinForms RadButtons Customize elements](images/dropdownbutton-customizing-appearance-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

@@ -59,7 +59,7 @@ Me.RadPictureBox1.TopPanel.CenterItems.Add(button)
 {{endregion}}
 
 
-![picturebox-getting-started3](images/customizing-appearance001.png)
+![WinForms RadPictureBox picturebox-getting-started3](images/customizing-appearance001.png)
 
 ### Panel Display Mode
 

@@ -22,7 +22,7 @@ __RadScheduler__ has a very flexible binding system which can cover various bind
 
 The following screen shot demonstrates the schema of the database.
 
-![scheduler-data-binding-data-binding-walkthrough 001](images/scheduler-data-binding-data-binding-walkthrough001.png)
+![WinForms RadScheduler scheduler-data-binding-data-binding-walkthrough 001](images/scheduler-data-binding-data-binding-walkthrough001.png)
 
 ## Binding the Scheduler
 
@@ -32,15 +32,15 @@ Let’s assume you have added a __RadScheduler__ to your form and you want to bi
 
 1. In the Properties window, open the __EventProvider__ property. Drop down the  __DataSource__ sub-property list and select __Add Project DataSource...__ This step will display the Data Source Configuration Wizard dialog.
 
-![scheduler-data-binding-data-binding-walkthrough 002](images/scheduler-data-binding-data-binding-walkthrough002.png)
+![WinForms RadScheduler scheduler-data-binding-data-binding-walkthrough 002](images/scheduler-data-binding-data-binding-walkthrough002.png)
 
-1. Complete this wizard by choosing __Access Database File__ connection and selecting the sample database located under the \Examples\DataSources directory. This will create a DataSet component and add it to the component tray below the form designer. ![scheduler-data-binding-data-binding-walkthrough 003](images/scheduler-data-binding-data-binding-walkthrough003.png)
+1. Complete this wizard by choosing __Access Database File__ connection and selecting the sample database located under the \Examples\DataSources directory. This will create a DataSet component and add it to the component tray below the form designer. ![WinForms RadScheduler scheduler-data-binding-data-binding-walkthrough 003](images/scheduler-data-binding-data-binding-walkthrough003.png)
 
-1. Click the "SchedulerDataDataSet" Smart Tag and select __Edit in Dataset Designer__. Add a relation between the Appointments and AppointmentsResources tables and name it "Appointments_AppointmentsResources". Make the "Key Columns" entry be "ID" from the Appointments table and set "Foreign Key Columns" from the AppointmentsResources table to "AppointmentID".![scheduler-data-binding-data-binding-walkthrough 004](images/scheduler-data-binding-data-binding-walkthrough004.png)
+1. Click the "SchedulerDataDataSet" Smart Tag and select __Edit in Dataset Designer__. Add a relation between the Appointments and AppointmentsResources tables and name it "Appointments_AppointmentsResources". Make the "Key Columns" entry be "ID" from the Appointments table and set "Foreign Key Columns" from the AppointmentsResources table to "AppointmentID".![WinForms RadScheduler scheduler-data-binding-data-binding-walkthrough 004](images/scheduler-data-binding-data-binding-walkthrough004.png)
 
-1. When you create a dataset from the MS Access database, several properties of the auto number fields are wrongly set. Please, set these as in the right (correct) version below:![scheduler-data-binding-data-binding-walkthrough 005](images/scheduler-data-binding-data-binding-walkthrough005.png)
+1. When you create a dataset from the MS Access database, several properties of the auto number fields are wrongly set. Please, set these as in the right (correct) version below:![WinForms RadScheduler scheduler-data-binding-data-binding-walkthrough 005](images/scheduler-data-binding-data-binding-walkthrough005.png)
 
-1. Build the project. This step will create several useful adapter components that we will use later to fill the dataset.![scheduler-data-binding-data-binding-walkthrough 006](images/scheduler-data-binding-data-binding-walkthrough006.png)
+1. Build the project. This step will create several useful adapter components that we will use later to fill the dataset.![WinForms RadScheduler scheduler-data-binding-data-binding-walkthrough 006](images/scheduler-data-binding-data-binding-walkthrough006.png)
 
 ## Mapping the Properties
 
@@ -48,7 +48,7 @@ In order to map the fields of your data source to the correct properties of sche
 
 To setup appointment mapping at design time, click the Edit Appointment Mapping button in the smart tag menu of your SchedulerBindingDataSource instance. To edit the resource mapping, click the Edit Resource Mapping button. 
 
-![scheduler-data-binding-data-binding-walkthrough 007](images/scheduler-data-binding-data-binding-walkthrough007.png)
+![WinForms RadScheduler scheduler-data-binding-data-binding-walkthrough 007](images/scheduler-data-binding-data-binding-walkthrough007.png)
 
 When you do so, a dialog will appear letting you choose the field of the data source which should be mapped to the corresponding appointment/resource property.
 
@@ -112,7 +112,7 @@ Me.SchedulerBindingDataSource1.ResourceProvider.Mapping = resourceMappingInfo
 
 #### EditAppointmentDialog with multiple resources
 
-![scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+![WinForms RadScheduler scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
 
 ## Retrieving the Data
 
@@ -159,7 +159,7 @@ SchedulerBindingDataSource1.EventProvider.DataSource = SchedulerDataDataSet.Appo
 
 Finally, we assign our SchedulerBindingDataSource instance to __RadScheduler__ as its DataSource. This can be achieved either through the Smart Tag of __RadScheduler__ or via code:
 
-![scheduler-data-binding-data-binding-walkthrough 008](images/scheduler-data-binding-data-binding-walkthrough008.png)
+![WinForms RadScheduler scheduler-data-binding-data-binding-walkthrough 008](images/scheduler-data-binding-data-binding-walkthrough008.png)
 
 {{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=dataSource}} 
 {{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=dataSource}} 
@@ -335,7 +335,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 1: Data Bound RadScheduler
-![scheduler-data-binding-data-binding-walkthrough 009](images/scheduler-data-binding-data-binding-walkthrough009.png)
+![WinForms RadScheduler Data Bound RadScheduler](images/scheduler-data-binding-data-binding-walkthrough009.png)
 
 # See Also
 

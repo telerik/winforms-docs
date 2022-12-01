@@ -14,7 +14,7 @@ __RadVirtualGrid__ is a control that allows you to display and edit tabular data
 
 |ShowNoDataText = *true*|ShowNoDataText = *false*|
 |----|----|
-|![virtualgrid-populating-with-data002](images/virtualgrid-populating-with-data002.png)|![virtualgrid-populating-with-data003](images/virtualgrid-populating-with-data003.png)|
+|![WinForms RadVirtualGrid virtualgrid-populating-with-data002](images/virtualgrid-populating-with-data002.png)|![WinForms RadVirtualGrid virtualgrid-populating-with-data003](images/virtualgrid-populating-with-data003.png)|
  
 
 In order to fill the grid with data, you should follow the steps below:
@@ -25,7 +25,7 @@ In order to fill the grid with data, you should follow the steps below:
 
 The code snippet below demonstrates how to select data from the Northwind.Customers table stored in a mdb file. While reading the returned result, we fill a *List* of custom objects which is needed to track the number of records and sync the RadVirtualGrid. __RowCount__ property.
 
-![virtualgrid-populating-with-data001](images/virtualgrid-populating-with-data001.gif)
+![WinForms RadVirtualGrid virtualgrid-populating-with-data001](images/virtualgrid-populating-with-data001.gif)
 
 #### Populate with data
 

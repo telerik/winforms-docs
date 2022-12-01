@@ -14,7 +14,7 @@ ElevationType.*Polyline* __ElevationRequest__ gets elevations at equally-spaced 
 
 >caption Figure 1: Polyline ElevationRequest 
 
-![map-providers-elevation-polyline 001](images/map-providers-elevation-polyline001.png)
+![WinForms RadMap Polyline ElevationRequest](images/map-providers-elevation-polyline001.png)
 
 #### Polyline ElevationType request
 

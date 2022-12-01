@@ -23,7 +23,7 @@ Additionally, you can tune the sort order by setting the __SortOrder__ property.
 
 >caption Figure 1: Default Groups
 
-![propertygrid-features-grouping 001](images/propertygrid-features-grouping001.png)
+![WinForms RadPropertyGrid Default Groups](images/propertygrid-features-grouping001.png)
 
 #### Setting Default Groups
 
@@ -65,7 +65,7 @@ Here is an example of grouping by the formatted value:
 
 >caption Figure 2: Group Descriptor
 
-![propertygrid-features-grouping 002](images/propertygrid-features-grouping002.png) 
+![WinForms RadPropertyGrid Group Descriptor](images/propertygrid-features-grouping002.png) 
 
 #### Adding a Group Descriptor
 

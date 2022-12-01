@@ -20,14 +20,14 @@ You can access and modify the style for different elements in __RadToggleButton_
 
 >caption Fig.1 Element hierarchy editor
 
-![togglebutton-customizing-appearance-accessing-and-customizing-elements 001](images/togglebutton-customizing-appearance-accessing-and-customizing-elements001.png)
+![WinForms RadButtons Element hierarchy editor](images/togglebutton-customizing-appearance-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
 >caption Fig.2 Customize elements
 
-![togglebutton-customizing-appearance-accessing-and-customizing-elements 002](images/togglebutton-customizing-appearance-accessing-and-customizing-elements002.png)
+![WinForms RadButtons Customize elements](images/togglebutton-customizing-appearance-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

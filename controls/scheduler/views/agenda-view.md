@@ -14,7 +14,7 @@ Agenda View is a table, structured like a simple list, which lists appointments 
 
 >caption Figure 1: RadScheduler in Agenda View
 
-![scheduler-views-agenda-view 001](images/scheduler-views-agenda-view001.png)
+![WinForms RadScheduler RadScheduler in Agenda View](images/scheduler-views-agenda-view001.png)
 
 ## Set Agenda View
 
@@ -100,7 +100,7 @@ Since **SchedulerAgendaView** uses a **RadGridView**, it supports grouping by di
 
 >caption Figure 2: Agenda View Grouped by Resources
 
-![scheduler-views-agenda-view 003](images/scheduler-views-agenda-view003.gif)
+![WinForms RadScheduler Agenda View Grouped by Resources](images/scheduler-views-agenda-view003.gif)
 
 In order to group the **SchedulerAgendaView** by resources programmatically it is necessary to add a [GroupDescriptor]({%slug winforms/gridview/grouping/setting-groups-programmatically%}) to the grid for the **Resource** property:
 
@@ -124,7 +124,7 @@ agendaViewElement.Grid.GroupDescriptors.Add(descriptor)
 
 >caption Figure 3: Agenda View Grouped by Resources
 
-![scheduler-views-agenda-view 002](images/scheduler-views-agenda-view002.png)
+![WinForms RadScheduler Agenda View Grouped by Resources](images/scheduler-views-agenda-view002.png)
 
 # See Also
 

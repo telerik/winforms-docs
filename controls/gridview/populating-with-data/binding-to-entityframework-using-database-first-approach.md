@@ -13,7 +13,7 @@ previous_url: gridview-populating-with-data-binding-to-entity-framework-using-da
 
 This article demonstrates how to build a hierarchical grid by using Entity Framework and Database first approach.
 
-![gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 001](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach001.png)
+![WinForms RadGridView gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 001](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach001.png)
 
 ## Installing and Configuring Entity Framework
 
@@ -23,22 +23,22 @@ After you have installed Entity Framework, follow these steps:
 
 1\. Right-click on your Project in Visual Studio and choose Add >> New Item.
             
-![gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 002](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach002.png)
+![WinForms RadGridView gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 002](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach002.png)
 
 2\. Choose ADO.NET Entity Data Model
             
-![gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 003](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach003.png)
+![WinForms RadGridView gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 003](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach003.png)
 
 3\. From the next window choose *Generate From Database* and Click next.
             
 
 4\. Choose your database and click Next.
             
-![gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 004](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach004.png)
+![WinForms RadGridView gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 004](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach004.png)
 
 5\. From this final window select the needed tables and click Finish.
             
-![gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 005](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach005.png)
+![WinForms RadGridView gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach 005](images/gridview-populating-with-data-binding-to-entity-framework-using-database-first-approach005.png)
 
 Now, our models should be generated.        
 

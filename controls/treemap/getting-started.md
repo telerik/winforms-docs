@@ -14,7 +14,7 @@ This article shows how you can start using **RadTreeMap**. Just drag a RadTreeMa
 
 >important **RadTreeMap** is supported in .NET Framework 4.0 (or higher). 
 
-![treemap-getting-started 001](images/treemap-getting-started001.png)
+![WinForms RadTreeMap treemap-getting-started 001](images/treemap-getting-started001.png)
 
 {{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=Populate}} 
 {{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=Populate}} 

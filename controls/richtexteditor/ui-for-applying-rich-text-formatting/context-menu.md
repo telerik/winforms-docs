@@ -15,7 +15,7 @@ The __RadRichTextEditor__ UI has a built-in context menu feature which can be us
 
 >caption Figure 1: Menu in the context of a table
 
-![richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-context-menu 0001](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-context-menu0001.png)
+![WinForms RadRichTextEditor Menu in the context of a table](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-context-menu0001.png)
 
 The context menu is enabled by default. You can control this with the __IsContextMenuEnabled__ property. If you set the property to *false*, the [Selection Mini Tool Bar]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/selection-mini-toolbar%}) will be displayed when you click the mouse right button.
 
@@ -121,7 +121,7 @@ End Sub
 
 >caption Figure 2: Changing Text Color
 
-![richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-context-menu 0001](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-context-menu0002.png)
+![WinForms RadRichTextEditor Changing Text Color](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-context-menu0002.png)
 
 ## Creating ContextMenuBuilder Class
 

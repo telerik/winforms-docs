@@ -13,7 +13,7 @@ position: 2
 **RadChartView** provides lasso selection functionality allowing data points to be selected upon creating a lasso rectangle with the mouse. The functionality is defined in the **LassoSelectionController** class and it is only supported in the *Cartesian Area*.
 
 >caption Figure 1: Selecting Data Points
-![chartview-features-lasso-selection 001](images/chartview-features-lasso-selection003.gif)
+![WinForms RadChartView Selecting Data Points](images/chartview-features-lasso-selection003.gif)
 
 #### Add Sample Data and a Controller
 
@@ -122,7 +122,7 @@ End Sub
 >note The controllers added in **RadChartView** are invoked in the order at which they have been added. In case a **LassoZoomController** is to be used together with a **LassoSelectionController**, the selection controller needs to be added first. 
 
 >caption Figure 2: Lasso and Zoom
-![chartview-features-lasso-selection 002](images/chartview-features-lasso-selection004.gif)
+![WinForms RadChartView Lasso and Zoom](images/chartview-features-lasso-selection004.gif)
 
 #### Lasso and Zoom Selection Controllers
 

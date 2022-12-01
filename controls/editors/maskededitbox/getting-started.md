@@ -15,7 +15,7 @@ Here is how to quickly configure two __RadMaskedEditBox__ controls. One uses a c
 
 >caption Figure 1: RadMaskedEditBox Setup
 
-![editors-maskededitbox-getting-started 001](images/editors-maskededitbox-getting-started001.png)
+![WinForms RadMaskedEditBox RadMaskedEditBox Setup](images/editors-maskededitbox-getting-started001.png)
 
 1. Drop two __RadMaskedEditBox__ controls on a form.            
 

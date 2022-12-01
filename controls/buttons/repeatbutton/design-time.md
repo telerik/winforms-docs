@@ -16,7 +16,7 @@ To start using __RadRepeatButton__ just drag it from the toolbox and drop it at 
 
 >caption Figure 1: Smart Tag
 
-![buttons-repeatbutton-desing-time 001](images/buttons-repeatbutton-design-time001.png)
+![WinForms RadButtons Smart Tag](images/buttons-repeatbutton-design-time001.png)
 
 * __Common Tasks__
 

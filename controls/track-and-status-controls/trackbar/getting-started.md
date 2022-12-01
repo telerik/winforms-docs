@@ -54,7 +54,7 @@ End Sub
 
 9\. Move the slider on the track bar using the mouse. The text box will update to show the new slider position.
 
-![track-and-status-controls-trackbar-getting-started 001](images/track-and-status-controls-trackbar-getting-started001.png)
+![WinForms RadTrackBar track-and-status-controls-trackbar-getting-started 001](images/track-and-status-controls-trackbar-getting-started001.png)
 
 # See Also
 

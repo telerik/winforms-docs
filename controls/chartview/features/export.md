@@ -43,7 +43,7 @@ Me.RadChartView1.ExportToImage(filePath, Me.RadChartView1.Size, System.Drawing.I
 {{endregion}} 
 
 >caption Figure 1: Exported Chart
-![chartview-features-export 001](images/chartview-features-export001.png)
+![WinForms RadChartView Exported Chart](images/chartview-features-export001.png)
 
 >note If you need to export the chart data to a document, you can use a __RadDocument__ and [insert the exported image]({%slug winforms/richtexteditor-/document-elements/inline-image%}) into it. Afterwards, you can use the __RadRichTextEditor__ 's[ export]({%slug winforms/richtexteditor/import-export/overview%}) functionality.
 >

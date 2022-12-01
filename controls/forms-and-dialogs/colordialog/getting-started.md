@@ -15,7 +15,7 @@ The following tutorial demonstrates configuring the __RadColorDialog__, localizi
 
 >caption Figure 1: Getting started with RadColorDialog
 
-![forms-and-dialogs-colordialog-getting-started 001](images/forms-and-dialogs-colordialog-getting-started001.png)
+![WinForms RadColorDialog Getting started with RadColorDialog](images/forms-and-dialogs-colordialog-getting-started001.png)
 
 1\. Drop a __RadColorDialog__ on the form.
 

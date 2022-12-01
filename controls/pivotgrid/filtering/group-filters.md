@@ -15,7 +15,7 @@ Group filtering allows you to add filter conditions to the group descriptions. T
 
 >caption Figure 1: Group Filters
 
-![pivotgrid-filtering-group-filters 001](images/pivotgrid-filtering-group-filters001.png)
+![WinForms RadPivotGrid Group Filters](images/pivotgrid-filtering-group-filters001.png)
 
 Group filtering is enabled by default. To enable or disable it use the following property:
 

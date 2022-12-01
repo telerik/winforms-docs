@@ -14,7 +14,7 @@ With the built-in drag and drop functionality of **RadPivotGrid**, achieved by t
 
 >caption Figure 1: PivotGridDragDropService
 
-![pivotgrid-drag-and-drop-pivotgriddragdropservice 001](images/pivotgrid-drag-and-drop-pivotgriddragdropservice001.gif)
+![WinForms RadPivotGrid PivotGridDragDropService](images/pivotgrid-drag-and-drop-pivotgriddragdropservice001.gif)
 
 Similar to [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%}), **PivotGridDragDropService** exposes public events which allows to handle the drag and drop operation and customize it according to your requirements, e.g. control which items to be dragged.
 

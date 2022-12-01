@@ -19,7 +19,7 @@ The customize dialog can be opened from the default context menu of __RadDataLay
         
 >caption Figure 1: Customize Dialog
 
-![datalayout-customize-layout-mode 001](images/datalayout-customize-layout-mode001.png)
+![WinForms RadDataLayout Customize Dialog](images/datalayout-customize-layout-mode001.png)
 
 ## Perform Changes
 
@@ -27,7 +27,7 @@ The __Items__ tab contain the available elements which can be added to the contr
         
 >caption Figure 2: Changes at Runtime
 
-![datalayout-customize-layout-mode 002](images/datalayout-customize-layout-mode002.gif)
+![WinForms RadDataLayout Changes at Runtime](images/datalayout-customize-layout-mode002.gif)
 
 ## The DragOverlay
 
@@ -35,7 +35,7 @@ The __DragOverlay__ is a separate control which is shown when the customize dial
 
 >caption Figure 3: DragOverlay
 
-![datalayout-customize-layout-mode 002](images/datalayout-customize-layout-mode003.png)
+![WinForms RadDataLayout DragOverlay](images/datalayout-customize-layout-mode003.png)
 
 
 # See Also

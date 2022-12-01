@@ -36,13 +36,13 @@ Me.RadDiagram1.IsSettingsPaneEnabled = True
 
 >caption Figure 1: SettingsPane
 
-![diagram-settings-pane 001](images/diagram-settings-pane001.gif)
+![WinForms RadDiagram SettingsPane](images/diagram-settings-pane001.gif)
 
 The __SettingsPane__ control is a standalone control that can be displayed as the content of any ContentControl. Its main purpose is to provide you with a ready-to-use view that contains the most common features and settings of a single __RadDiagramItem__ (Shape or Connection). In most Diagramming examples you will find the __SettingsPane__ applied as an AdditionalContent on the diagramming surface. This way the control is displayed next to a focused __RadDiagramItem__ thus allowing users to dynamically change the look and feel of the item. 
         
 >caption Figure 2:
 
-![diagram-settings-pane 002](images/diagram-settings-pane002.png)
+![WinForms RadDiagram ](images/diagram-settings-pane002.png)
 
 1. ItemInformationAdorner
 
@@ -99,7 +99,7 @@ Me.RadDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Add(toolsPage)
 
 >caption Figure 3:
 
-![diagram-settings-pane 003](images/diagram-settings-pane003.png)
+![WinForms RadDiagram ](images/diagram-settings-pane003.png)
 
 * __Edit the content of an existing tab__ - the content of each of the four default __SettingsPane__ tabs – Home, Size, Style, Text, is represented by a different __RadPageViewPage__:
             
@@ -148,7 +148,7 @@ Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCut.Visible = False
 
 >caption Figure 4:
 
-![diagram-settings-pane 004](images/diagram-settings-pane004.png)
+![WinForms RadDiagram ](images/diagram-settings-pane004.png)
 
 ## Events
 

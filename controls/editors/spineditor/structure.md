@@ -14,7 +14,7 @@ The bellow image shows the structure of RadSpinEditor.
 
 >caption Figure 1: RadSpinEditor elements.
 
-![spineditor-structure 001](images/spineditor-structure001.png)
+![WinForms RadSpinEditor RadSpinEditor elements](images/spineditor-structure001.png)
 
 * __TextBoxItem:__ Shows the current value, accepts only numeric characters.
 * __Up/Down Buttons:__ Used for increasing/decreasing the value.
@@ -24,7 +24,7 @@ The bellow image shows the structure of RadSpinEditor.
 
 >caption Figure 2: The RadSpinEditor elements hierarchy.
 
-![spineditor-structure 002](images/spineditor-structure002.png)
+![WinForms RadSpinEditor The RadSpinEditor elements hierarchy](images/spineditor-structure002.png)
 
 
 # See Also

@@ -13,7 +13,7 @@ previous_url: ganttview-tooltip
  
 To set a ToolTip value to the RadGanttView elements, we can use the __ToolTipTextNeeded__ event. In its event handler we can set different value of __ToolTipText__ property for the currently hover element. 
 
-![ganttview-today-indicator 001](images/ganttview-tooltip001.png)
+![WinForms RadGanttView ganttview-today-indicator 001](images/ganttview-tooltip001.png)
 
 
 {{source=..\SamplesCS\GanttView\TodayIndicator\TodayIndicator.cs region=ToolTip}} 

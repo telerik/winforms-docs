@@ -17,7 +17,7 @@ position: 1
 
 >caption Figure 1: RadDataFilter structure
 
-![data-filter-structure 001](images/data-filter-structure001.png)
+![WinForms RadDataFilter RadDataFilter structure](images/data-filter-structure001.png)
 
 1. __Root Operator Item:__ This is the main operator and it hosts all other group and expression items. This node cannot be removed by default. Pressing its delete button will clear all other items.
 2. __Nested Group Item:__ The groups can hold any number of expression or group items. Can be added with the add button. 
@@ -33,7 +33,7 @@ position: 1
 
 >caption Figure 2: The Element structure of RadDataFilter
 
-![data-filter-structure 002](images/data-filter-structure002.png)
+![WinForms RadDataFilter The Element structure of RadDataFilter](images/data-filter-structure002.png)
 
 
 # See Also

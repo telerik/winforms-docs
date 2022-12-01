@@ -55,7 +55,7 @@ End Sub
 
 >caption Figure 1: SparkBarSeries
 
-![](images/sparkbarseries001.png)
+![WinForms RadSparkline SparkBarSeries](images/sparkbarseries001.png)
 
 ### The essential properties of SparkBarSeries are:
 

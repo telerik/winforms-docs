@@ -24,11 +24,11 @@ The **RadTabbedFormControl** item in Visual Style Builder gives you access to th
 
 1. Select __RadTabbedFormControl__ in *Controls Structure* on the left side. Then, select __MouseOver__ in the *Element States* section.
 
-    ![radtabbedform-themes001](images/radtabbedform-themes001.png)
+    ![WinForms RadTabbedForm radtabbedform-themes001](images/radtabbedform-themes001.png)
 
 1. Modify the *BackColor* and the *Gradient Style* of the item. Now, when a tab is hovered its back color will be red.
     
-    ![radtabbedform-themes002](images/radtabbedform-themes002.png)
+    ![WinForms RadTabbedForm radtabbedform-themes002](images/radtabbedform-themes002.png)
 
 
 ## Styling RadTabbedForm
@@ -43,11 +43,11 @@ The __RadTabbedForm__ item in Visual Style Builder gives you access to the conte
 
 1. Select __RadTabbedFormElement__ in *Controls Structure* on the left side.  
 
-    ![radtabbedform-themes003](images/radtabbedform-themes003.png)
+    ![WinForms RadTabbedForm radtabbedform-themes003](images/radtabbedform-themes003.png)
 
 1. Modify the *BorderColor* of the item.
     
-    ![radtabbedform-themes004](images/radtabbedform-themes004.png)
+    ![WinForms RadTabbedForm radtabbedform-themes004](images/radtabbedform-themes004.png)
 
 
 

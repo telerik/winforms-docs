@@ -56,7 +56,7 @@ When an item is brought out of edit mode, the following steps are performed:
 * If the previous event was not canceled, the new value is assigned to the item and the __ItemValueChanged__ event is fired.
 
 >caption Fig. 1: Data Validation
-![cardview-editors-overview 001](images/cardview-editors-overview001.gif)
+![WinForms RadCardview Data Validation](images/cardview-editors-overview001.gif)
 
 The Following example demonstrates the __ItemValidating__ event handling integer values: 
             

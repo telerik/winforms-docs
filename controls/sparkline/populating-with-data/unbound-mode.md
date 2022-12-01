@@ -65,7 +65,7 @@ Me.radSparkline1.Series = barSeries
 
 You can see the result in the following image.
 
- ![](images/sparkline-unbound-mode001.png)
+ ![WinForms RadSparkline ](images/sparkline-unbound-mode001.png)
 
 
  

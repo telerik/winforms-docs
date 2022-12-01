@@ -15,7 +15,7 @@ As of **R2 2022 SP1** Telerik UI for WinForms suite offers a standalone **RadNav
 
 >note RadNavigationView actually represents a [RadPageView]({%slug winforms/pageview%}) with already applied ViewMode to NavigationView. The whole API that is available for the PageViewMode.NavigationView is also valid for RadNavigationView. 
 
-![navigationview-overview 001](images/navigationview-overview001.gif)
+![WinForms RadNavigationView navigationview-overview 001](images/navigationview-overview001.gif)
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}

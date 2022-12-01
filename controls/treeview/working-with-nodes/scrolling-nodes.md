@@ -28,7 +28,7 @@ The __TreeViewElement__ supports three types of __ScrollModes__:
             
 >caption Figure 3: Discrete Scrolling
 
-![treeview-scrolling003](images/treeview-scrolling003.gif)
+![WinForms RadTreeView Discrete Scrolling](images/treeview-scrolling003.gif)
 
 #### Discrete Scrolling 
 
@@ -43,7 +43,7 @@ Me.RadTreeView1.TreeViewElement.Scroller.ScrollMode = ItemScrollerScrollModes.Di
 
 >caption Figure 4: Smooth Scrolling
 
-![treeview-scrolling004](images/treeview-scrolling004.gif)
+![WinForms RadTreeView Smooth Scrolling](images/treeview-scrolling004.gif)
 
 #### Smooth Scrolling 
 
@@ -58,7 +58,7 @@ Me.RadTreeView1.TreeViewElement.Scroller.ScrollMode = ItemScrollerScrollModes.Sm
  
 >caption Figure 5: Deferred Scrolling
 
-![treeview-scrolling005](images/treeview-scrolling005.gif)
+![WinForms RadTreeView Deferred Scrolling](images/treeview-scrolling005.gif)
 
 #### Deferred Scrolling 
 
@@ -79,7 +79,7 @@ This feature ensures that the control is ready for modern touch-screen applicati
         
 >caption Figure 1: Enable Kinetic Scrolling
 
-![treeview-scrolling001](images/treeview-scrolling001.gif)
+![WinForms RadTreeView Enable Kinetic Scrolling](images/treeview-scrolling001.gif)
 
 #### Enabling Kinetic Scrolling 
 
@@ -99,7 +99,7 @@ __RadTreeView__ provides out of the box functionality for programmatically scrol
           
 >caption Figure 2: Scroll to Item
 
-![treeview-scrolling002](images/treeview-scrolling002.gif)
+![WinForms RadTreeView Scroll to Item](images/treeview-scrolling002.gif)
 
 #### Scroll to Item 
 

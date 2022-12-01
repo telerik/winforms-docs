@@ -20,7 +20,7 @@ The following screenshot shows the __RadRibbonForm__ control in action:
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![forms-and-dialogs-ribbonform-overview 001](images/forms-and-dialogs-ribbonform-overview001.png)
+![WinForms RadRibbonForm forms-and-dialogs-ribbonform-overview 001](images/forms-and-dialogs-ribbonform-overview001.png)
 
 # See Also 
 

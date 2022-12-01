@@ -37,7 +37,7 @@ The table below is a sample list of the names and identifiers found in the Cult
 
 >caption Figure 1: Setting Pashto Culture
 
-![calendar-localization-cultureinfo-and-regioninfo-basics 001](images/calendar-localization-cultureinfo-and-regioninfo-basics001.png)
+![WinForms RadCalendar Setting Pashto Culture](images/calendar-localization-cultureinfo-and-regioninfo-basics001.png)
 
 {{source=..\SamplesCS\Calendar\Calendar1.cs region=SetPashtoCulture}} 
 {{source=..\SamplesVB\Calendar\Calendar1.vb region=SetPashtoCulture}} 

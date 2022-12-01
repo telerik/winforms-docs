@@ -13,7 +13,7 @@ position: 5
 The split panels can be collapsed to a particular direction via the splitter`s navigation buttons.
 
 >caption Figure 1: RadSplitContainer Splitter Buttons
-![splitcontainer-splitter-buttons 001](images/splitcontainer-splitter-buttons001.gif)
+![WinForms RadSplitContainer RadSplitContainer Splitter Buttons](images/splitcontainer-splitter-buttons001.gif)
 
 In order to use the splitter buttons the following properties need to be set to true.
 
@@ -39,7 +39,7 @@ Me.RadSplitContainer1.UseSplitterButtons = True
 >note Since **R3 2020 SP1** RadSplitContaiter comes with left and right arrow buttons on every SplitterElement for easier navigation. Thus, the users are able to collapse the SplitPanels to desired location.
 
 >caption Figure 2: RadSplitContainer Splitter Buttons
-![splitcontainer-splitter-buttons 001](images/splitcontainer-splitter-buttons002.gif)
+![WinForms RadSplitContainer RadSplitContainer Splitter Buttons](images/splitcontainer-splitter-buttons002.gif)
 
 
 The control also exposes a convenient API for accessing the splitter elements. Each of the splitters can be moved to a position so that it collapses one of its associated panel. The responsible **MoveSplitter** method receives a splitter element instance and a **RadDirection** flag as parameters. The splitter`s position can be restored to its previous location with the **RestoreSplitterPosition** method.
@@ -95,7 +95,7 @@ Me.RadSplitContainer1.Splitters(0).DefaultCollapseDirection = RadDirection.Right
 
 
 >caption Figure 3: Change default split direction when double click on SplitterElement
-![splitcontainer-splitter-buttons 001](images/splitcontainer-splitter-buttons003.gif)
+![WinForms RadSplitContainer Change default split direction when double click on SplitterElement](images/splitcontainer-splitter-buttons003.gif)
 
 >caution If you set **RadDirection.Up**/**RadDirection.Down** on vertical splitters or **RadDirection.Left**/**RadDirection.Right** on horizontal splitters an InvalidEnumArgumentException will be thrown.
 

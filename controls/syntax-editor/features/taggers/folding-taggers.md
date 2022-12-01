@@ -14,7 +14,7 @@ The folding taggers are used when you want to create collapsible (foldable) sect
 
 >caption RadSyntaxEditor with a registered CSharpFoldingTagger
 
-![syntax-editor-folding-taggers001](images/syntax-editor-folding-taggers001.png)
+![WinForms RadSyntax-Editor RadSyntaxEditor with a registered CSharpFoldingTagger](images/syntax-editor-folding-taggers001.png)
  
 
 ## FoldingTaggerBase

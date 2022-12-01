@@ -14,7 +14,7 @@ position: 3
 
 >caption Figure 1: RadSaveFileDialog
 
-![winforms/file-dialogs-radsavefiledialogg 001](images/file-dialogs-radsavefiledialog001.png) 
+![WinForms RadFile-Dialogs RadSaveFileDialog](images/file-dialogs-radsavefiledialog001.png) 
 
 ## Showing the dialog
 
@@ -114,7 +114,7 @@ Dim dr As DialogResult = saveFileDialog.ShowDialog()
 
 >caption Figure 2: Setting the file name
 
-![winforms/file-dialogs-radsavefiledialogg 002](images/file-dialogs-radsavefiledialog002.png)
+![WinForms RadFile-Dialogs Setting the file name](images/file-dialogs-radsavefiledialog002.png)
 
 # See Also
 

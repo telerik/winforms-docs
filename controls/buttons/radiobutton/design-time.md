@@ -19,7 +19,7 @@ Select __RadRadioButton__ and click the small arrow on the top right position in
 
 >caption Figure 1: Smart Tag
 
-![buttons-radiobutton-desing-time 001](images/buttons-radiobutton-design-time001.png)
+![WinForms RadButtons Smart Tag](images/buttons-radiobutton-design-time001.png)
 
 * __Common Tasks__
 

@@ -41,7 +41,7 @@ RadGridView1.Columns("Calculated Column").Expression = "UnitsOnOrder * UnitPrice
 
 >caption Figure 1: The last column values are calculated dynamically.
  
-![gridview-columns-calculated-columns-column-expressions 001](images/gridview-columns-calculated-columns-column-expressions001.png)
+![WinForms RadGridView The last column values are calculated dynamically](images/gridview-columns-calculated-columns-column-expressions001.png)
 
 ## Expressions
 

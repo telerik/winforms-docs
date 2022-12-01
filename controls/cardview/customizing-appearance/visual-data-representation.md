@@ -37,7 +37,7 @@ __RadCardView__ synchronizes the most important __RadProperties__ between the di
 The collection with these __RadProperties__ is static and it it accessible, therefore changes of the collection are possible. The example below adds the __LightVisualElement.VisibilityProperty__ and sets others in order to customize the appearance of the items.
 
 >caption Fig.1 Modifying RadProperties
-![cardview-customzing-appearance-visual-data-representation 001](images/cardview-customizing-appearance-visual-data-representation001.png)
+![WinForms RadCardview Modifying RadProperties](images/cardview-customizing-appearance-visual-data-representation001.png)
 
 #### Formatting the Visual Item
 

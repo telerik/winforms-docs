@@ -15,7 +15,7 @@ Due to the UI virtualization in **RadGridView**, cell elements are created only 
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Formatting Data In RadGridView for WinForms](http://tv.telerik.com/watch/radtips/radgrid/formatting-data-in-radgridview)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|![gridview-cells-formatting-cells 006](images/gridview-cells-formatting-cells006.png)|
+|[WinForms RadGridView Formatting Data In RadGridView for WinForms](http://tv.telerik.com/watch/radtips/radgrid/formatting-data-in-radgridview)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|![WinForms RadGridView gridview-cells-formatting-cells 006](images/gridview-cells-formatting-cells006.png)|
 
 ## Formatting data cells.
 
@@ -55,7 +55,7 @@ End Sub
 
 >caption Figure 1: Changing the cells fore color. 
 
-![gridview-cells-formatting-cells 001](images/gridview-cells-formatting-cells001.png)
+![WinForms RadGridView Changing the cells fore color](images/gridview-cells-formatting-cells001.png)
 
 ## Cells background formatting
 
@@ -63,7 +63,7 @@ This is an advanced example of using **CellFormatting** event to highlight certa
 
 >caption Figure 2: Formatting cell upon a condition. 
 
-![gridview-cells-formatting-cells 002](images/gridview-cells-formatting-cells002.png)
+![WinForms RadGridView Formatting cell upon a condition](images/gridview-cells-formatting-cells002.png)
 
 #### Formatting cells 
 
@@ -190,7 +190,7 @@ End Sub
 
 >caption Figure 3: Formatting non-data rows.
 
-![gridview-cells-formatting-cells 003](images/gridview-cells-formatting-cells003.png)
+![WinForms RadGridView Formatting non-data rows](images/gridview-cells-formatting-cells003.png)
 
 ## Formatting cells on demand   
 
@@ -261,7 +261,7 @@ As a result of the update call, the **CellFormatting** event (and the other form
 
 >caption Figure 4: Manually trigger the grid update. 
 
-![gridview-cells-formatting-cells 004](images/gridview-cells-formatting-cells004.png)
+![WinForms RadGridView Manually trigger the grid update](images/gridview-cells-formatting-cells004.png)
 
 # See Also
 

@@ -26,8 +26,8 @@ __RadDiagram__ offers flexible and interactive diagramming layouts for your rich
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![diagram-overview 001](images/diagram-overview001.png)
-![diagram-overview 002](images/diagram-overview002.png)
+![WinForms RadDiagram diagram-overview 001](images/diagram-overview001.png)
+![WinForms RadDiagram diagram-overview 002](images/diagram-overview002.png)
 
 ## Diagram features
 

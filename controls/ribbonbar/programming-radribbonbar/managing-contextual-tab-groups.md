@@ -31,7 +31,7 @@ You can assign tabs to contextual tab groups using the designer in either of the
 
 >caption Figure 1: Contextual Tab Groups Editor
 
-![ribbonbar-programming-radribbonbar-managing-contextual-tab-groups 001](images/ribbonbar-programming-radribbonbar-managing-contextual-tab-groups001.png)
+![WinForms RadRibbonBar Contextual Tab Groups Editor](images/ribbonbar-programming-radribbonbar-managing-contextual-tab-groups001.png)
 
 ## Using Contextual Tabs programmatically
 

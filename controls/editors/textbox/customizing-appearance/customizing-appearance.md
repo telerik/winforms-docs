@@ -15,7 +15,7 @@ You can easily change the styles of the border in the `Element Hierarchy Editor`
 1. Open the `Element Hierarchy Editor` from the smart tag.
 2. Select __BorderPrimitive__. 
 3. Change the __ForeColor__ and the __BoxStyle__ properties:
-    ![editors-radtextbox-customizing appearance 001](images/radtextbox-customizing-appearance001.png)
+    ![WinForms RadButtonTextBox editors-radtextbox-customizing appearance 001](images/radtextbox-customizing-appearance001.png)
 
 
 # See Also

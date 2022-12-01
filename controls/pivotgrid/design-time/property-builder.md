@@ -15,7 +15,7 @@ To setup your **RadPivotGrid** easily at design time you can invoke the RadPivot
 
 >caption Figure 1: Property Builder
 
-![pivotgrid-propertybuilder 001](images/pivotgrid-propertybuilder001.png)
+![WinForms RadPivotGrid Property Builder](images/pivotgrid-propertybuilder001.png)
 
 The RadPivotGrid Property Builder is a design time wizard that consists of a preview pane on the right side and also three tabs on the left which contain different editors that allow you to modify the most commonly used properties:
 

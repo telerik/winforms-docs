@@ -13,7 +13,7 @@ previous_url: splitcontainer-building-advanced-layouts
 
 This tutorial demonstrates how to create a 5*5 grid of **SplitPanel** instances, with the center panel’s **SizeMode** set to SplitPanelSizeMode.*Fill*. The following screenshot illustrates the result.
 
-![splitcontainer-building-advanced-layouts 001](images/splitcontainer-building-advanced-layouts001.png)
+![WinForms RadSplitContainer splitcontainer-building-advanced-layouts 001](images/splitcontainer-building-advanced-layouts001.png)
            
 In order to achieve the layout on the top screen, refer to the code snippet below:
 
@@ -90,7 +90,7 @@ What we are doing here is to create a number (specified by the "**rows**" parame
          
 If we do not apply the *Fill* size mode to the center panel, then we have evenly auto-sized panels.
 
-![splitcontainer-building-advanced-layouts 002](images/splitcontainer-building-advanced-layouts002.png)
+![WinForms RadSplitContainer splitcontainer-building-advanced-layouts 002](images/splitcontainer-building-advanced-layouts002.png)
 
 ## Size Restrictions
 
@@ -123,7 +123,7 @@ End Sub
 
 The panel in the center is with applied size restrictions.
 
-![splitcontainer-building-advanced-layouts 003](images/splitcontainer-building-advanced-layouts003.gif)
+![WinForms RadSplitContainer splitcontainer-building-advanced-layouts 003](images/splitcontainer-building-advanced-layouts003.gif)
        
 These settings are considered by both the layout engine and the splitter logic, which will clamp the drag hint to visually emphasize on the restrictions.
         

@@ -14,7 +14,7 @@ The **RadSyntaxEditor** control provides out of the box zooming functionality. Y
 
 #### Figure 1: Zooming the RadSyntaxEditor
 
-![features-zooming](images/zooming.gif)
+![WinForms RadSyntax-Editor features-zooming](images/zooming.gif)
 
 The zooming functionality is enabled by default. To enable or disable it at run time you can use the **AllowScaling** property. If you want to disallow users to zoom through the control's UI, you can set the **AllowScalling** property to *false*.
 
@@ -56,7 +56,7 @@ Me.RadSyntaxEditor1.ScaleFactor = 1.5
 
 #### Figure 2: Setting the ScaleFactor
 
-![features-zooming](images/zooming001.png)
+![WinForms RadSyntax-Editor features-zooming](images/zooming001.png)
 
 ## Programmatic Zooming
 

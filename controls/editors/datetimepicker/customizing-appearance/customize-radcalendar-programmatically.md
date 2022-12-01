@@ -64,7 +64,7 @@ Next item
 
 >caption Figure 1: The result from the above code:
 
-![editors-datetimepicker-how-to-customize-radcalendar-programmatically 001](images/editors-datetimepicker-how-to-customize-radcalendar-programmatically001.png)
+![WinForms RadDateTimePicker The result from the above code](images/editors-datetimepicker-how-to-customize-radcalendar-programmatically001.png)
 
 #### Show Clear and Today Buttons
 
@@ -87,7 +87,7 @@ calendarBehavior.Calendar.ShowFooter = True
 
 {{endregion}}
 
-![editors-datetimepicker-calendar-footer 001](images/datetimepicker-calendar-footer002.png)
+![WinForms RadDateTimePicker editors-datetimepicker-calendar-footer 001](images/datetimepicker-calendar-footer002.png)
 
 # See Also
 

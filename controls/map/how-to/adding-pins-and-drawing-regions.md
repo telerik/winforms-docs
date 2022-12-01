@@ -14,7 +14,7 @@ A common requirement for applications utilizing a map control is to allow the en
 
 >caption Figure 1: RadMap Pins and Regions 
 
-![radmap-how-to-adding-pins-and-drawing-regions001](images/radmap-how-to-adding-pins-and-drawing-regions001.gif)
+![WinForms RadMap RadMap Pins and Regions](images/radmap-how-to-adding-pins-and-drawing-regions001.gif)
 
 **RadMap** is handling the mouse, keyboard, and gestures by a special input behavior class. This class can be inherited and further extended to handle custom scenarios. In our example we will override its **OnDoubleClick** method and execute our special logic for adding the pins and the regions. The custom provider class can be assigned to the map by simply setting its **InputBehavior** property.
 

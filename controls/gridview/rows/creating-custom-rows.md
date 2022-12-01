@@ -58,7 +58,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 
 >caption Figure 1: The new row is replaced with the custom one. 
 
-![gridview-rows-custom-rows 001](images/gridview-rows-custom-rows001.png)
+![WinForms RadGridView The new row is replaced with the custom one](images/gridview-rows-custom-rows001.png)
 
 1\. Create a descendant of the __GridRowElement__ and override its __CreateChildElements__ where you should add a single __GridCellElement__ that contains the chart. The __IsCompatible__ method  determines for which __GridViewRowInfo__ the custom row element is applicable:
 

@@ -15,7 +15,7 @@ __RadWizard__ provides handful __Smart Tag__ and __Pages Collection Editor__ at 
 
 >caption Figure 1: Smart Tag
 
-![wizard-design-time 001](images/wizard-design-time001.png)
+![WinForms RadWizard Smart Tag](images/wizard-design-time001.png)
 
 * __New Theme Manager__: Adds a new [RadThemeManager]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form%}).
 
@@ -47,7 +47,7 @@ __RadWizard__ provides handful __Smart Tag__ and __Pages Collection Editor__ at 
 
 	>caption Figure 2: Pages Collection Editor
 	
-	![wizard-design-time 002](images/wizard-design-time002.png)
+	![WinForms RadWizard Pages Collection Editor](images/wizard-design-time002.png)
 
 * __Add Pages__: Adds a new **WizardPage**.
 

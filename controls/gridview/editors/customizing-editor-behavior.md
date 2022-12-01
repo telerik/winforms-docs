@@ -47,7 +47,7 @@ End Sub
 
 >caption Figure 1: Accessing the editor element.
 
-![gridview-editors-customizing-editor-behavior 001](images/gridview-editors-customizing-editor-behavior001.png)
+![WinForms RadGridView Accessing the editor element](images/gridview-editors-customizing-editor-behavior001.png)
 # See Also
 * [API]({%slug winforms/gridview/editors/api%})
 

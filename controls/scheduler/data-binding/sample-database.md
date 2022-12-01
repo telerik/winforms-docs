@@ -17,21 +17,21 @@ To kick start your development, a sample database for RadScheduler can be found 
 
 Here is the structure of the __Appointments__ table:
 
-![scheduler-data-binding-sample-database 001](images/scheduler-data-binding-sample-database001.png)
+![WinForms RadScheduler scheduler-data-binding-sample-database 001](images/scheduler-data-binding-sample-database001.png)
 
 Note that the mandatory fields for __RadScheduler__ are __ID__, __Summary__, __Start__ and __End__ (those fields which do not allow null values to be stored in the database).
 
 Here is the structure of the __Resources__ table:
 
-![scheduler-data-binding-sample-database 002](images/scheduler-data-binding-sample-database002.png)
+![WinForms RadScheduler scheduler-data-binding-sample-database 002](images/scheduler-data-binding-sample-database002.png)
 
 And the cross relations table that allows many-to-many relations:
 
-![scheduler-data-binding-sample-database 003](images/scheduler-data-binding-sample-database003.png)
+![WinForms RadScheduler scheduler-data-binding-sample-database 003](images/scheduler-data-binding-sample-database003.png)
 
 The general overview of the database is on the following diagram:
 
-![scheduler-data-binding-sample-database 004](images/scheduler-data-binding-sample-database004.png)
+![WinForms RadScheduler scheduler-data-binding-sample-database 004](images/scheduler-data-binding-sample-database004.png)
 
 The __AppointmentsResources__ table has relations to the primary keys of the AppointmentsResources and Resources tables.
 

@@ -19,7 +19,7 @@ With __RadCardView__, users can display and edit text data organized in a card l
 
 >caption Fig.1 RadCardView
 
-![cardview-overview 001](images/radcardview-overview001.png)
+![WinForms RadCardview RadCardView](images/radcardview-overview001.png)
 
 The below list shows the main features of the control:
 

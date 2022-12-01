@@ -13,11 +13,11 @@ previous_url: menus-menu-working-with-radmenu-items-multi-line-menu-item-text
 
 The RadMenuItem.__Text__ property can be displayed on multiple lines as shown in the screenshot below. 
 
-![menus-menu-working-with-radmenu-items-multi-line-menu-item-text 001](images/menus-menu-working-with-radmenu-items-multi-line-menu-item-text001.png)
+![WinForms RadMenus menus-menu-working-with-radmenu-items-multi-line-menu-item-text 001](images/menus-menu-working-with-radmenu-items-multi-line-menu-item-text001.png)
 
 In the Properties Window for a __RadMenuItem__ use the drop down list to invoke the editor for multiple lines. __Ctrl+Enter__ creates a new line in the editor. __Esc__ cancels changes and closes the editor. 
 
-![menus-menu-working-with-radmenu-items-multi-line-menu-item-text 002](images/menus-menu-working-with-radmenu-items-multi-line-menu-item-text002.png)
+![WinForms RadMenus menus-menu-working-with-radmenu-items-multi-line-menu-item-text 002](images/menus-menu-working-with-radmenu-items-multi-line-menu-item-text002.png)
 
 In code use __Environment.NewLine__ to separate strings:
 

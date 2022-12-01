@@ -31,7 +31,7 @@ position: 4
 
 The following code snippet demonstrates how to add a validation rule ensuring that a **RadTextBox** is not empty. When you focus the control and try to exit without entering any text, the validation logic won't succeed and the error tool tip will be displayed: 
 
-![validation-provider-validation-rules 001](images/validation-provider-validation-rules001.png) 
+![WinForms RadValidation-Provider validation-provider-validation-rules 001](images/validation-provider-validation-rules001.png) 
 
 {{source=..\SamplesCS\ValidationProvider\ValidationProviderGettingStarted.cs region=SimpleRule}} 
 {{source=..\SamplesVB\ValidationProvider\ValidationProviderGettingStarted.vb region=SimpleRule}}
@@ -77,7 +77,7 @@ radValidationProvider1.ValidationRules.Add(radValidationRule1)
 
 The following rule will ensure that the first **RadDateTimePicker**'s value is less than the value of the second one:
 
-![validation-provider-validation-rules 002](images/validation-provider-validation-rules002.png) 
+![WinForms RadValidation-Provider validation-provider-validation-rules 002](images/validation-provider-validation-rules002.png) 
 
 {{source=..\SamplesCS\ValidationProvider\ValidationProviderGettingStarted.cs region=SecondControl}} 
 {{source=..\SamplesVB\ValidationProvider\ValidationProviderGettingStarted.vb region=SecondControl}}
@@ -115,7 +115,7 @@ The following rule will ensure that the first **RadDateTimePicker**'s value is l
 
 In order to cover the case that the second **RadDateTimePicker** is greater than the first one, you will need to add one more **RadValidationRuleWithTargetControl**:
 
-![validation-provider-validation-rules 003](images/validation-provider-validation-rules003.png) 
+![WinForms RadValidation-Provider validation-provider-validation-rules 003](images/validation-provider-validation-rules003.png) 
 
 {{source=..\SamplesCS\ValidationProvider\ValidationProviderGettingStarted.cs region=TargetControl}} 
 {{source=..\SamplesVB\ValidationProvider\ValidationProviderGettingStarted.vb region=TargetControl}}
@@ -256,7 +256,7 @@ None of the associated controls (e.g. radSpinEditor1) of a composite rule should
 
 {{endregion}}
 
-![validation-provider-validation-rules 004](images/validation-provider-validation-rules004.png) 
+![WinForms RadValidation-Provider validation-provider-validation-rules 004](images/validation-provider-validation-rules004.png) 
 
 ## ControlValidation Event
 

@@ -19,7 +19,7 @@ You can access and modify the style for different elements in **RadSplitContaine
 
 >caption Figure 1: Element hierarchy editor
 
-![splitcontainer-accessing-and-customizing-elements 001](images/splitcontainer-accessing-and-customizing-elements001.png)
+![WinForms RadSplitContainer Element hierarchy editor](images/splitcontainer-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
@@ -27,7 +27,7 @@ You can customize the nested elements at run time as well:
 
 >caption Fig.2 Customize elements
 
-![splitcontainer-accessing-and-customizing-elements 002](images/splitcontainer-accessing-and-customizing-elements002.png)
+![WinForms RadSplitContainer Customize elements](images/splitcontainer-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

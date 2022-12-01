@@ -56,7 +56,7 @@ __RadDataLayout__ has support for several attributes that can be used to change 
 
 >caption Figure 1: Model With Attributes
 
-![datalayout-properties-event-and-attributes 001](images/datalayout-properties-event-and-attributes001.png)
+![WinForms RadDataLayout Model With Attributes](images/datalayout-properties-event-and-attributes001.png)
 
 #### Using attributes.
 

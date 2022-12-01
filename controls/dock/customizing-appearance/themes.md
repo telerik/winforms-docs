@@ -20,10 +20,10 @@ This article demonstrates how to customize the default theme of **RadDock**:
 
 1. Navigate to __RadDock__ in **Controls Structure** on the left side. Then, expand to and select __ToolWindoCaption__. In the **Elements** window select __ToolWindowCaptionFill__.
 
-    ![raddock-customizing-appearance-themes 001](images/raddock-customizing-appearance-themes001.png)
+    ![WinForms RadDock raddock-customizing-appearance-themes 001](images/raddock-customizing-appearance-themes001.png)
 
 1. Modify the applied fill repository item.
-    ![raddock-customizing-appearance-themes 002](images/raddock-customizing-appearance-themes002.png)
+    ![WinForms RadDock raddock-customizing-appearance-themes 002](images/raddock-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

@@ -14,7 +14,7 @@ __RadImageEditor__ has a history stack, which records each command that is execu
 
 Undo/Redo commands can be executed from the UI.
 
-![](images/image-editor-history001.png)
+![WinForms RadImage-Editor ](images/image-editor-history001.png)
 
 You can use the methods as well.
 

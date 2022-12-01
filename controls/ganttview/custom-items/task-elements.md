@@ -14,7 +14,7 @@ position: 3
 
 >caption Figure 1: Custom Task Elements
 
-![ganttview-formatting-creating-task-elements 001](images/ganttview-custom-items-task-elements001.gif)
+![WinForms RadGanttView Custom Task Elements](images/ganttview-custom-items-task-elements001.gif)
 
 The methods which need to be overridden in the derived custom class are:
  

@@ -14,7 +14,7 @@ Similar to Outlook, since **R2 2018** **RadScheduler** provides holidays support
 
 >caption Figure1: Holidays
 
-![scheduler-holidays 001](images/scheduler-holidays001.png)
+![WinForms RadScheduler Holidays](images/scheduler-holidays001.png)
 
 The RadScheduler.**Holidays** collection stores all special days. It is of type **SchedulerHolidays** which is actually **IEnumerable&lt;Holiday&gt;**. For each **Holiday** object you can specify **Date**, **Location** and **HolidayName**.
 
@@ -117,7 +117,7 @@ End Using
 
 >caption Figure2: Holidays Formatting 
 
-![scheduler-holidays 002](images/scheduler-holidays002.png)
+![WinForms RadScheduler Holidays Formatting](images/scheduler-holidays002.png)
 
 #### Formatting the holidays
 

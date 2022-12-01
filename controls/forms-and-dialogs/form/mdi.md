@@ -15,7 +15,7 @@ __RadForm__ can be used in Multiple Document Interface (MDI) scenarios. With MDI
 
 >caption Figure 1: MDI
 
-![forms-and-dialogs-form-mdi 001](images/forms-and-dialogs-form-mdi001.png)
+![WinForms RadForm MDI](images/forms-and-dialogs-form-mdi001.png)
 
 ## Adding MDI Child Forms to RadForm
 
@@ -77,7 +77,7 @@ When a MDI child Form is maximized, it automatically hides its title bar and the
 
 >caption Figure 2: MDI Menu Strip
 
-![forms-and-dialogs-form-mdi 002](images/forms-and-dialogs-form-mdi002.png)
+![WinForms RadForm MDI Menu Strip](images/forms-and-dialogs-form-mdi002.png)
 
 The appearance of the default MDI menu can be designed in the Visual Style Builder.
 

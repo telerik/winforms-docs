@@ -14,14 +14,14 @@ previous_url: scheduler-reminders-radreminder
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadSchedulerReminder](http://tv.telerik.com/watch/winforms/getting-started-with-radschedulerreminder)<br>In this video, you will learn how to notify users of upcoming appointments through the use of RadSchedulerReminder.|![scheduler-reminders-radreminder 002](images/scheduler-reminders-radreminder002.png)|
+|[WinForms RadScheduler Getting Started with RadSchedulerReminder](http://tv.telerik.com/watch/winforms/getting-started-with-radschedulerreminder)<br>In this video, you will learn how to notify users of upcoming appointments through the use of RadSchedulerReminder.|![WinForms RadScheduler scheduler-reminders-radreminder 002](images/scheduler-reminders-radreminder002.png)|
 
 ## Overview
 
 __RadReminder__ is a component that reminds you of an object that you pass to it. This object should implement __IRemindObject__ and depending on the values that you set in the implementation of the __IRemindObject__ interface, __RadReminder__ throws an event. When the event is fired, you can show an appropriate message to the user using [RadDesktopAlert](http://www.telerik.com/help/winforms/alert_overview.html) or another alert implementation of your choice.
 
 >caption Figure 1: RadReminder
-![scheduler-reminders-radreminder 001](images/scheduler-reminders-radreminder001.png)
+![WinForms RadScheduler RadReminder](images/scheduler-reminders-radreminder001.png)
 
 ## Properties
 

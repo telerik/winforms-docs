@@ -44,7 +44,7 @@ Me.radBindingNavigator1.BindingSource = Me.bindingSource1
 
 3\. Press __F5__ to run the project and you should see the following:
 
-![bindingnavigator-overview-gettingstarted 001](images/bindingnavigator-overview-gettingstarted001.png)
+![WinForms RadBindingNavigator bindingnavigator-overview-gettingstarted 001](images/bindingnavigator-overview-gettingstarted001.png)
 
 >caution Due to the nature of the way __RadBindingNavigator__ is created at design time its __Name__ property should not be changed (does not apply if the control is created at runtime).
 >(This is needed in order to map the handler of a certain button with the button itself and have it accessible and editable at design time, as is it not possible to generate click event handler with the code in it at design time).

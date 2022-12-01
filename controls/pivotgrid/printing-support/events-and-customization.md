@@ -15,7 +15,7 @@ previous_url: pivotgrid-printing-support-events-and-customization
 
 >caption Figure 1: Formatting Print Cells
 
-![pivotgrid-printing-support-events-and-customization 001](images/pivotgrid-printing-support-events-and-customization001.png)
+![WinForms RadPivotGrid Formatting Print Cells](images/pivotgrid-printing-support-events-and-customization001.png)
 
 #### Formatting Print Cells
 

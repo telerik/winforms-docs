@@ -18,7 +18,7 @@ The __RadPanel__ control comes with all the features of a standard panel and the
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![panels-and-labels-panel-overview 001](images/panels-and-labels-panel-overview001.png)
+![WinForms RadPanel panels-and-labels-panel-overview 001](images/panels-and-labels-panel-overview001.png)
 
 >tip In the related [Getting Started](https://docs.telerik.com/devtools/winforms/controls/panels-and-labels/panel/getting-started) article you can find how to use the control with a sample scenario.
 

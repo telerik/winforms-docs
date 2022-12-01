@@ -13,7 +13,7 @@ previous_url: forms-and-dialogs-statusstrip-getting-started
  
 The following tutorial demonstrates configuring __RadStatusStrip__ at design-time and programmatic access of individual status bar items at run-time. The status bar contains label, separator, buttons and progress bar elements. One of the button elements increments the __RadListControl__ selected index. The label and one of the button elements reflect the current selection in the __RadListControl__ while the progress bar mimics a process against the upcoming item.
         
-![forms-and-dialogs-statusstrip-getting-started 001](images/forms-and-dialogs-statusstrip-getting-started001.png)
+![WinForms RadStatusStrip forms-and-dialogs-statusstrip-getting-started 001](images/forms-and-dialogs-statusstrip-getting-started001.png)
 
 1\. Add a __RadStatusStrip,__ and a __RadListControl__ to a form. 
         
@@ -25,7 +25,7 @@ The following tutorial demonstrates configuring __RadStatusStrip__ at design-tim
 
 >note Setting the **Spring** property to *true* will stretch horizontally the respective element. Thus, this element will occupy the free space and the rest of the elements will be positioned on the right most side when resizing the **RadStatusStrip**. 
             
-![forms-and-dialogs-statusstrip-getting-started 002](images/forms-and-dialogs-statusstrip-getting-started002.png)
+![WinForms RadStatusStrip forms-and-dialogs-statusstrip-getting-started 002](images/forms-and-dialogs-statusstrip-getting-started002.png)
 
 5\. In the *Type here* element click the downward arrow. Add the following elements:
             

@@ -20,7 +20,7 @@ On a desktop computer, a virtual keyboard might provide an alternative input mec
 
 **RadVirtualKeyboard** will serve the need of a virtual keyboard with consistent theming for each WinForms application with Telerik UI for WinForms controls. 
 
-![winforms/virtual-keyboard-overview 001](images/virtual-keyboard-overview001.png) 
+![WinForms RadVirtual-Keyboard winforms/virtual-keyboard-overview 001](images/virtual-keyboard-overview001.png) 
 
 ## Key Features
 

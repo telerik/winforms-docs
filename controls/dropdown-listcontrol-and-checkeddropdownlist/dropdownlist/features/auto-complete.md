@@ -25,7 +25,7 @@ The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavio
 
 >caption Figure 1: AutoCompleteMode.None 
  
-![dropdown-and-listcontrol-dropdownlist-autocompleate 001](images/dropdown-and-listcontrol-dropdownlist-autocompleate001.png)
+![WinForms RadDropDownList AutoCompleteModeNone](images/dropdown-and-listcontrol-dropdownlist-autocompleate001.png)
 
 #### AutoCompleteMode.None 
  
@@ -48,7 +48,7 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None
 
 >caption Figure 2: AutoCompleteMode.Suggest 
 
-![dropdown-and-listcontrol-dropdownlist-autocompleate 002](images/dropdown-and-listcontrol-dropdownlist-autocompleate002.png)
+![WinForms RadDropDownList AutoCompleteModeSuggest](images/dropdown-and-listcontrol-dropdownlist-autocompleate002.png)
 
 #### AutoCompleteMode.Suggest 
 
@@ -71,7 +71,7 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest
 
 * __Append__: As the user types, the next item in the list that matches the user input is automatically appended to the characters the user has already typed. The drop-down list is not shown without the user clicking the arrow.
 
-![dropdown-and-listcontrol-dropdownlist-autocompleate 003](images/dropdown-and-listcontrol-dropdownlist-autocompleate003.png)
+![WinForms RadDropDownList dropdown-and-listcontrol-dropdownlist-autocompleate 003](images/dropdown-and-listcontrol-dropdownlist-autocompleate003.png)
 
 #### AutoCompleteMode.Append 
 
@@ -94,7 +94,7 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Append
 
 >caption Figure 4: AutoCompleteMode.SuggestAppend
 
-![dropdown-and-listcontrol-dropdownlist-autocompleate 004](images/dropdown-and-listcontrol-dropdownlist-autocompleate004.png)
+![WinForms RadDropDownList AutoCompleteModeSuggestAppend](images/dropdown-and-listcontrol-dropdownlist-autocompleate004.png)
 
 #### AutoCompleteMode.SuggestAppend 
 
@@ -124,7 +124,7 @@ __RadDropDownList__ internally uses auto-complete helpers to perform the auto-co
                 
 >caption Figure 5: SuggestMode.Contains
 
-![dropdown-and-listcontrol-dropdownlist-autocompleate 005](images/dropdown-and-listcontrol-dropdownlist-autocompleate005.png)
+![WinForms RadDropDownList SuggestModeContains](images/dropdown-and-listcontrol-dropdownlist-autocompleate005.png)
 
 #### SuggestMode.Contains 
 
@@ -173,7 +173,7 @@ By default, the items displayed in the __AutoCompleteSuggestHelper__’s pop-up 
 
 >caption Figure 6: Custom comparer
 
-![dropdown-and-listcontrol-dropdownlist-autocompleate 006](images/dropdown-and-listcontrol-dropdownlist-autocompleate006.png)
+![WinForms RadDropDownList Custom comparer](images/dropdown-and-listcontrol-dropdownlist-autocompleate006.png)
 
 #### Custom comparer 
 

@@ -17,18 +17,18 @@ The user can navigate __RadTreeView__ and control TreeView modes using the follo
 
 || __Key__ | __Description__ |
 |-----|-----|-----|
-|![treeview-usability-keyboard-navigation 001](images/treeview-usability-keyboard-navigation001.png)|Up Arrow|moves the selection up in the nodes hierarchy|
-|![treeview-usability-keyboard-navigation 002](images/treeview-usability-keyboard-navigation002.png)|Down Arrow|moves the selection down in the nodes hierarchy|
-|![treeview-usability-keyboard-navigation 003](images/treeview-usability-keyboard-navigation003.png)|Left Arrow|collapses a node|
-|![treeview-usability-keyboard-navigation 004](images/treeview-usability-keyboard-navigation004.png)|Right Arrow|expands a node|
-|![treeview-usability-keyboard-navigation 005](images/treeview-usability-keyboard-navigation005.png)|Enter|expands/collapses a node|
+|![WinForms RadTreeView treeview-usability-keyboard-navigation 001](images/treeview-usability-keyboard-navigation001.png)|Up Arrow|moves the selection up in the nodes hierarchy|
+|![WinForms RadTreeView treeview-usability-keyboard-navigation 002](images/treeview-usability-keyboard-navigation002.png)|Down Arrow|moves the selection down in the nodes hierarchy|
+|![WinForms RadTreeView treeview-usability-keyboard-navigation 003](images/treeview-usability-keyboard-navigation003.png)|Left Arrow|collapses a node|
+|![WinForms RadTreeView treeview-usability-keyboard-navigation 004](images/treeview-usability-keyboard-navigation004.png)|Right Arrow|expands a node|
+|![WinForms RadTreeView treeview-usability-keyboard-navigation 005](images/treeview-usability-keyboard-navigation005.png)|Enter|expands/collapses a node|
 ||Space|Toggles node's check box|
-|![treeview-usability-keyboard-navigation 006](images/treeview-usability-keyboard-navigation006.png)|PageUp|scrolls the scrolling area up with one frame (page)|
-|![treeview-usability-keyboard-navigation 007](images/treeview-usability-keyboard-navigation007.png)|PageDown|scrolls the scrolling area down with one frame (page)|
-|![treeview-usability-keyboard-navigation 008](images/treeview-usability-keyboard-navigation008.png)|F2|activates tree's editor and places it on the selected node|
-|![treeview-usability-keyboard-navigation 009](images/treeview-usability-keyboard-navigation009.png)|Esc|deactivates tree's editor|
-|![treeview-usability-keyboard-navigation 010](images/treeview-usability-keyboard-navigation010.png)|Home|moves the selection to the first visible node|
-|![treeview-usability-keyboard-navigation 011](images/treeview-usability-keyboard-navigation011.png)|End|moves the selection to the last visible node|
+|![WinForms RadTreeView treeview-usability-keyboard-navigation 006](images/treeview-usability-keyboard-navigation006.png)|PageUp|scrolls the scrolling area up with one frame (page)|
+|![WinForms RadTreeView treeview-usability-keyboard-navigation 007](images/treeview-usability-keyboard-navigation007.png)|PageDown|scrolls the scrolling area down with one frame (page)|
+|![WinForms RadTreeView treeview-usability-keyboard-navigation 008](images/treeview-usability-keyboard-navigation008.png)|F2|activates tree's editor and places it on the selected node|
+|![WinForms RadTreeView treeview-usability-keyboard-navigation 009](images/treeview-usability-keyboard-navigation009.png)|Esc|deactivates tree's editor|
+|![WinForms RadTreeView treeview-usability-keyboard-navigation 010](images/treeview-usability-keyboard-navigation010.png)|Home|moves the selection to the first visible node|
+|![WinForms RadTreeView treeview-usability-keyboard-navigation 011](images/treeview-usability-keyboard-navigation011.png)|End|moves the selection to the last visible node|
 
 ## Keyboard Search
 
@@ -40,7 +40,7 @@ RadTreeView allows navigation through the visible nodes by using keyboard. Two s
 
 * Typing more than one character will navigate to the first node matching the typed string 
 
-![treeview-usability-keyboard-navigation 012](images/treeview-usability-keyboard-navigation012.gif)
+![WinForms RadTreeView treeview-usability-keyboard-navigation 012](images/treeview-usability-keyboard-navigation012.gif)
 
 To enable this functionality a single property setting is needed:
 

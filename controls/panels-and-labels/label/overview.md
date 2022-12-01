@@ -20,7 +20,7 @@ __RadLabel__ is a themeable alternative to the standard Windows Forms label cont
 
 >caption Figure: 1 RadLabel
 
-![panels-and-labels-label-overview 001](images/panels-and-labels-label-overview001.png)
+![WinForms RadLabel RadLabel](images/panels-and-labels-label-overview001.png)
 
 # See Also
 

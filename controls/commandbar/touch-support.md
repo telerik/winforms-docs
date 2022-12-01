@@ -17,9 +17,9 @@ RadCommandBar allows you to drag its Strips horizontally
 
 ## 
 
-To drag a strip, perform a drag operation started at the he beginning of the desired strip and drag to the desired position![commandbar-touch-support 001](images/commandbar-touch-support001.png)
+To drag a strip, perform a drag operation started at the he beginning of the desired strip and drag to the desired position![WinForms RadCommandBar commandbar-touch-support 001](images/commandbar-touch-support001.png)
 
-Here is the result of dragging the top strip to the right![commandbar-touch-support 002](images/commandbar-touch-support002.png)
+Here is the result of dragging the top strip to the right![WinForms RadCommandBar commandbar-touch-support 002](images/commandbar-touch-support002.png)
 
 # See Also
 

@@ -19,7 +19,7 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 >caption Figure 1: Customizing Items
 
-![dropdown-and-listcontrol-listcontrol-customizing-items-visual-appearance 001](images/dropdown-and-listcontrol-listcontrol-customizing-items-visual-appearance001.png)
+![WinForms RadListControl Customizing Items](images/dropdown-and-listcontrol-listcontrol-customizing-items-visual-appearance001.png)
 
 1\. Handle the __ItemDataBound__ event to fill the data list items with custom data. 
 

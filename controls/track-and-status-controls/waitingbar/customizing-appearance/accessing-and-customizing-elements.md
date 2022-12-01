@@ -19,14 +19,14 @@ You can access and modify the style for different elements in __RadWaitingBar__ 
 
 >caption Fig.1 Element hierarchy editor
 
-![track-and-status-controls-waitingbar-customizing-radwaitingbar 005](images/track-and-status-controls-waitingbar-customizing-radwaitingbar005.png)
+![WinForms RadWaitingBar Element hierarchy editor](images/track-and-status-controls-waitingbar-customizing-radwaitingbar005.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
 >caption Fig.2 Customize elements
 
-![track-and-status-controls-waitingbar-customizing-radwaitingbar 006](images/track-and-status-controls-waitingbar-customizing-radwaitingbar006.gif)
+![WinForms RadWaitingBar Customize elements](images/track-and-status-controls-waitingbar-customizing-radwaitingbar006.gif)
 
 #### Customize elements 
 
@@ -90,7 +90,7 @@ Me.RadWaitingBar1.WaitingBarElement.TextElement.TextAlignment = ContentAlignment
 
 {{endregion}} 
 
-![track-and-status-controls-waitingbar-customizing-radwaitingbar 001](images/track-and-status-controls-waitingbar-customizing-radwaitingbar001.gif)
+![WinForms RadWaitingBar track-and-status-controls-waitingbar-customizing-radwaitingbar 001](images/track-and-status-controls-waitingbar-customizing-radwaitingbar001.gif)
 
 ### How to customize RadWaitingBar’s Dash style 
 
@@ -128,7 +128,7 @@ dash.GradientPercentage = 0.25F
 
 {{endregion}} 
 
-![track-and-status-controls-waitingbar-customizing-radwaitingbar 002](images/track-and-status-controls-waitingbar-customizing-radwaitingbar002.gif)
+![WinForms RadWaitingBar track-and-status-controls-waitingbar-customizing-radwaitingbar 002](images/track-and-status-controls-waitingbar-customizing-radwaitingbar002.gif)
 
 ### How to set Dash style only for the waiting indicators
 
@@ -192,7 +192,7 @@ helpSeparator.GradientPercentage = 0.25F
 
 {{endregion}} 
 
-![track-and-status-controls-waitingbar-customizing-radwaitingbar 003](images/track-and-status-controls-waitingbar-customizing-radwaitingbar003.gif)
+![WinForms RadWaitingBar track-and-status-controls-waitingbar-customizing-radwaitingbar 003](images/track-and-status-controls-waitingbar-customizing-radwaitingbar003.gif)
 
 ### How to customize the shape of RadWatingBar
 
@@ -222,7 +222,7 @@ Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(1).Shape = shape
 
 {{endregion}} 
 
-![track-and-status-controls-waitingbar-customizing-radwaitingbar 004](images/track-and-status-controls-waitingbar-customizing-radwaitingbar004.gif)
+![WinForms RadWaitingBar track-and-status-controls-waitingbar-customizing-radwaitingbar 004](images/track-and-status-controls-waitingbar-customizing-radwaitingbar004.gif)
 
 # See Also
 

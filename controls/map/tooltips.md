@@ -37,7 +37,7 @@ Me.radMap1.MapElement.NavigationBarElement.ZoomOutButton.ToolTipText = "Zoom out
 
 >caption Figure 1: Tool tip assigned by using the ToolTipText property
 
-![map-tooltips 001](images/map-tooltips001.png)
+![WinForms RadMap Tool tip assigned by using the ToolTipText property](images/map-tooltips001.png)
 
 ## Setting tool tips in the ToolTipTextNeeded event
 
@@ -74,7 +74,7 @@ End Sub
 
 >caption Figure 2: Tool tip assigned by using the ToolTipTextNeeded event
 
-![map-tooltips 002](images/map-tooltips002.png)
+![WinForms RadMap Tool tip assigned by using the ToolTipTextNeeded event](images/map-tooltips002.png)
 
 >important The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set by the __ToolTipText__ property of __MapVisualElements__.
 >

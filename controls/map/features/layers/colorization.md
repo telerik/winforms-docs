@@ -24,7 +24,7 @@ The __GraphColorizationStrategy__ internally arranges the predefined colors so t
 
 >caption Figure 1: Graph Colorization
 
-![map features layers colorization 001](images/map-features-layers-colorization001.png)
+![WinForms RadMap Graph Colorization](images/map-features-layers-colorization001.png)
 
 #### Setting up GraphColorizationStrategy
 
@@ -70,7 +70,7 @@ The __ChoroplethColorizationStrategy__ arranges the predefined colors according 
 
 >caption Figure 2: Choropleth Colorization
 
-![map features layers colorization 002](images/map-features-layers-colorization002.png)
+![WinForms RadMap Choropleth Colorization](images/map-features-layers-colorization002.png)
 
 #### Setting up ChoroplethColorizationStrategy
 
@@ -146,7 +146,7 @@ End Sub
 
 The __PropertyColorizationStrategy__ evaluates the values of a certain property defined in the shape file. Depending on the result the engine assigns one of the predefined colors.
 
-![map features layers colorization 003](images/map-features-layers-colorization003.png)
+![WinForms RadMap map features layers colorization 003](images/map-features-layers-colorization003.png)
 
 #### Setting up PropertyColorizationStrategy
 

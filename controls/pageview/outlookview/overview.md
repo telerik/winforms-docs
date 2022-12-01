@@ -15,7 +15,7 @@ The PageViewMode.*Outlook* of **RadPageView** is designed to mimic the Microsoft
 
 >caption Figure 1: PageViewMode.Outlook
 
-![](images/pageview-outlookview-overview001.png)
+![WinForms RadPageView PageViewModeOutlook](images/pageview-outlookview-overview001.png)
 
 # See Also
 

@@ -43,7 +43,7 @@ End Sub
  
 >caption Figure 1: Inserting text.
 
-![editors-autocompletebox-text-editing 001](images/editors-autocompletebox-text-editing001.png)
+![WinForms RadAutoCompleteBox Inserting text](images/editors-autocompletebox-text-editing001.png)
 
 Alternatively, you can insert text at the end of the __RadAutoCompleteBox__ content by using the __AppendText__ method: 
 
@@ -72,7 +72,7 @@ End Sub
  
 >caption Figure 2: The text is appended at the end.
 
-![editors-autocompletebox-text-editing 002](images/editors-autocompletebox-text-editing002.png)
+![WinForms RadAutoCompleteBox The text is appended at the end](images/editors-autocompletebox-text-editing002.png)
 
 You can delete the selected text or character at the caret position by using the __Delete__ method: 
 
@@ -103,7 +103,7 @@ End Sub
  
 >caption Figure 3: The firs word is deleted. 
 
-![editors-autocompletebox-text-editing 003](images/editors-autocompletebox-text-editing003.png)
+![WinForms RadAutoCompleteBox The firs word is deleted](images/editors-autocompletebox-text-editing003.png)
 
 Each editing operation raises the __TextChanging__ and __TextChanged__ events. Notice that you can prevent successful finishing of operation by subscribing to the __TextChanging__ event: 
 

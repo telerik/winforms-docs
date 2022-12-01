@@ -18,7 +18,7 @@ You can easily change the styles of the border in the `Element Hierarchy Editor`
 3. Change the __ForeColor__ and the __BoxStyle__ properties:
 
 >caption Figure 1: Customizing Appearance.
-![editors-colorbox-customizing appearance 001](images/colorbox-customizing appearance001.png)
+![WinForms RadColorBox Customizing Appearance](images/colorbox-customizing appearance001.png)
 
 
 # See Also

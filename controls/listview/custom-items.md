@@ -20,7 +20,7 @@ This can be done by making use of the __VisualItemCreating__ event. The followin
 
 >caption Figure 1: Custom SimpleListViewVisualItem
 
-![listview-custom-items 001](images/listview-custom-items001.png)
+![WinForms RadListView Custom SimpleListViewVisualItem](images/listview-custom-items001.png)
 
 First let's create a custom visual item by inheriting from the __SimpleListViewVisualItem__ class:
 
@@ -166,7 +166,7 @@ End Sub
 
 >caption Figure 2: Custom IconListViewVisualItem
 
-![listview-custom-items 003](images/listview-custom-items003.png)
+![WinForms RadListView Custom IconListViewVisualItem](images/listview-custom-items003.png)
 
 We should create a custom visual item inheriting the __IconListViewVisualItem__. The following example demonstrates how to add custom elements to the IconListViewVisualItem.__Children__ collection:
 
@@ -282,7 +282,7 @@ Since the *DetailsView* provides a grid-like interface, it displays a cell for e
 
 >caption Figure 3: Custom DetailListViewDataCellElement
 
-![listview-custom-items 002](images/listview-custom-items002.png)
+![WinForms RadListView Custom DetailListViewDataCellElement](images/listview-custom-items002.png)
 
 First let's populate __RadListView__ with items and set its __ViewType__ property to *DetailsView*:
 

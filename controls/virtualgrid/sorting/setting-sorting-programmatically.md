@@ -16,7 +16,7 @@ __RadVirtualGrid__ includes __SortDescriptors__ property. This collection allows
 
 Here is how to create and add two __SortDescriptors__. The __PropertyName__ property defines the property, by which the data will be sorted, and the __SortDirection__ property allows you to define the sort direction.
 
-![virtualgrid-setting-sorting-programmatically 001](images/setting-sorting-programmatically001.png)
+![WinForms RadVirtualGrid virtualgrid-setting-sorting-programmatically 001](images/setting-sorting-programmatically001.png)
 
 #### Using SortDescriptor 
 

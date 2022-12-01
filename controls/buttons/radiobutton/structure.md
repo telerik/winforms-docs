@@ -14,7 +14,7 @@ This article will show the internal elements structure of __RadRadioButton__:
 
 >caption Figure 1: RadRadioButton's elements hierarchy
 
-![buttons-radiobutton-structure 001](images/buttons-radiobutton-structure001.png)
+![WinForms RadButtons RadRadioButton's elements hierarchy](images/buttons-radiobutton-structure001.png)
 
 1. __RadRadiomark__ <br>
 	1\.1\. __RadioPrimitive__: represents the radio button's toggle primitive <br>
@@ -24,4 +24,4 @@ This article will show the internal elements structure of __RadRadioButton__:
 
 >caption Figure 2: RadRadioButton's structure
 
-![buttons-radiobutton-structure002](images/buttons-radiobutton-structure002.png)
+![WinForms RadButtons RadRadioButton's structure](images/buttons-radiobutton-structure002.png)

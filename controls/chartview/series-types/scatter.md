@@ -68,7 +68,7 @@ Me.RadChartView1.Series.Add(scatterSeries2)
 
 
 >caption Figure 1: Initial Setup
-![chartview series types scatter 001](images/chartview-series-types-scatter001.png)
+![WinForms RadChartView Initial Setup](images/chartview-series-types-scatter001.png)
 
 __ScatterSeries__ have few important properties:
 
@@ -100,7 +100,7 @@ scatterSeries2.Shape = shape
 {{endregion}} 
 
 >caption Figure 2: Custom Shape
-![](images/chartview-series-types-scatter002.png)
+![WinForms RadChartView Custom Shape](images/chartview-series-types-scatter002.png)
 
 # See Also
 

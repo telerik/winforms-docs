@@ -18,7 +18,7 @@ You can access and modify the style for different elements in __RadDataEntry__ b
 
 >caption Fig.1 Element Hierarchy Editor
 
-![dataentry-customizing-appearance001](images/dataentry-customizing-appearance001.png)   
+![WinForms RadDataEntry Element Hierarchy Editor](images/dataentry-customizing-appearance001.png)   
 
 ## Programmatically
 
@@ -41,7 +41,7 @@ radDataEntry1.DataEntryElement.Border.ForeColor = ColorTranslator.FromHtml("#e83
 
 >caption Fig2. The changed border.
 
-![dataentry-customizing-appearance002](images/dataentry-customizing-appearance002.png)  
+![WinForms RadDataEntry Fig The changed border](images/dataentry-customizing-appearance002.png)  
 
 ## Changing The Styles Of The Underlying Controls. 
 
@@ -80,7 +80,7 @@ Next item
 
 >caption Fig3. Set Labels ForeColor.
 
-![dataentry-customizing-appearance003](images/dataentry-customizing-appearance003.png)  
+![WinForms RadDataEntry Fig Set Labels ForeColor](images/dataentry-customizing-appearance003.png)  
 
 ## Changing Validation Panel BackColor
 
@@ -103,7 +103,7 @@ Me.radDataEntry1.ValidationPanel.PanelElement.Fill.BackColor = Color.PapayaWhip
 
 >caption Fig4. Set Validaton Panel BackColor.
 
-![dataentry-customizing-appearance003](images/dataentry-customizing-appearance004.png)  
+![WinForms RadDataEntry Fig4 Set Validaton Panel BackColor](images/dataentry-customizing-appearance004.png)  
 
 # See Also
 

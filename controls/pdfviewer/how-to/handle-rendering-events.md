@@ -15,7 +15,7 @@ position: 0
 >important The **PageRenderStarted** and **PageRenderCompleted** events are raised from a background thread so one should use [BeginInvoke](https://msdn.microsoft.com/en-us/library/a06c0dc2(v=vs.110).aspx) when interacting with any controls on the UI thread from the event handlers.  
 
 >caption Figure 1: Waiting Bar While Rendering
-![pdf-viewer-how-to-handle-rendering-events001](images/pdf-viewer-how-to-handle-rendering-events001.gif)
+![WinForms RadPdfViewer Waiting Bar While Rendering](images/pdf-viewer-how-to-handle-rendering-events001.gif)
 
 #### Initial Setup and Events Subscription.
 

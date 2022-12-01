@@ -15,11 +15,11 @@ The __RadDropDownList.DropDownStyle__ property determines if the text area at th
          
 >caption Figure 1: DropDown
 
-![dropdown-and-listcontrol-dropdownlist-dropdownstyle 001](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle001.png)
+![WinForms RadDropDownList DropDown](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle001.png)
 
 >caption Figure 2: DropDownList
 
-![dropdown-and-listcontrol-dropdownlist-dropdownstyle 002](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle002.png)
+![WinForms RadDropDownList DropDownList](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle002.png)
 
 #### Setting DropDownStyle 
 
@@ -65,7 +65,7 @@ This section describes how user defined values can be added to the data source p
         
 >caption Fig.3 Adding User Defined Values
 
-![dropdown-and-listcontrol-dropdownlist-dropdownstyle 003](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle003.gif)
+![WinForms RadDropDownList Adding User Defined Values](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle003.gif)
 
 #### Initial Set Up 
 

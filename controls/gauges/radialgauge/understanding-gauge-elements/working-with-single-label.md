@@ -14,7 +14,7 @@ previous_url: radialgauge-understanding-gauge-elements-working-with-single-label
 __RadialGaugeSingleLabel__ is suitable to present additional information for the __RadRadialGauge__, e.g. current value.To add a single label to the gauge, you should add it via the RadradialGauge.__Items__ collection.
 
 >caption Figure 1: Single Label
-![radialgauge-understanding-gauge-elements-working-with-single-label 001](images/radialgauge-understanding-gauge-elements-working-with-single-label001.png)
+![WinForms RadGauges Single Label](images/radialgauge-understanding-gauge-elements-working-with-single-label001.png)
 
 You can customize the single label's look by using the following properties:
 
@@ -23,17 +23,17 @@ You can customize the single label's look by using the following properties:
 * __LocationPercentage:__ Controls the label's location (x, y) according to the center point.  __LocationPercentage:__ Accepts values withing the range [(-1,-1), (1,1)]. On the picture below, the green single label has __LocationPercentage__ = *(0, 1)*.
 
 >caption Figure 2: Location Percentage
-![radialgauge-understanding-gauge-elements-working-with-single-label 002](images/radialgauge-understanding-gauge-elements-working-with-single-label002.png)
+![WinForms RadGauges Location Percentage](images/radialgauge-understanding-gauge-elements-working-with-single-label002.png)
 
 * __LabelFontSize:__ Specifies the label size.
 
 >caption Figure 3: Font Size
-![radialgauge-understanding-gauge-elements-working-with-single-label 003](images/radialgauge-understanding-gauge-elements-working-with-single-label003.png)
+![WinForms RadGauges Font Size](images/radialgauge-understanding-gauge-elements-working-with-single-label003.png)
 
 * __LabelFormat:__ Specifies the label format. By default, it is set to *#,##0.#*. On the following picture the single label has format *N2*.
 
 >caption Figure 3: Format            
-![radialgauge-understanding-gauge-elements-working-with-single-label 004](images/radialgauge-understanding-gauge-elements-working-with-single-label004.png)
+![WinForms RadGauges Format](images/radialgauge-understanding-gauge-elements-working-with-single-label004.png)
 
 # See Also
 

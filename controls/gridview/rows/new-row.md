@@ -13,7 +13,7 @@ previous_url: gridview-rows-new-row
 
 **RadGridView** provides the end-users with a special row that allows them to add a new data row. For brevity, we will call this row "new row". The following sections describe useful events and properties which will allow you to achieve different scenarios related to the new row.
 
-![gridview-rows-new-row 005](images/gridview-rows-new-row005.png)
+![WinForms RadGridView gridview-rows-new-row 005](images/gridview-rows-new-row005.png)
 
 ## Enabling the New Row
 
@@ -106,7 +106,7 @@ Me.RadGridView1.AddNewRowPosition = SystemRowPosition.Bottom
 
 {{endregion}} 
 
-![gridview-rows-new-row 003](images/gridview-rows-new-row003.png)
+![WinForms RadGridView gridview-rows-new-row 003](images/gridview-rows-new-row003.png)
 
 ## Accessing the new row
 
@@ -157,7 +157,7 @@ End Sub
 
 As a result, when the end-user clicks the new row, the following values will be filled in for him:
 
-![gridview-rows-new-row 001](images/gridview-rows-new-row001.png)
+![WinForms RadGridView gridview-rows-new-row 001](images/gridview-rows-new-row001.png)
 
 ### Adding with default values only
 

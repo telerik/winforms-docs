@@ -23,7 +23,7 @@ This tutorial is in three parts. First, you will create a Quick Access Toolbar 
 
 1. Create a __RadRibbonForm__ by changing the base class of a standard form to __RadRibbonForm__ or by using the *Add New Item* dialog for your project:
 
-    ![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 001](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts001.png)
+    ![WinForms RadRibbonBar ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 001](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts001.png)
 
 1. Select the __RadRibbonBar__ control on the form and open the *Properties* window in Visual Studio. In the __Properties__ window find the __ImageList__ property and from the drop-down menu select the __imageList1__ option.
 
@@ -32,7 +32,7 @@ This tutorial is in three parts. First, you will create a Quick Access Toolbar 
 1. Click __Add New Tab...__ to create a new tab.
 
 1. Type the word __Write__ and press __Enter__:
-    ![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 002](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts002.png)
+    ![WinForms RadRibbonBar ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 002](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts002.png)
 
 ## Add Items to the Quick Access Toolbar
 
@@ -43,7 +43,7 @@ This tutorial is in three parts. First, you will create a Quick Access Toolbar 
 1. Open the Collection Editor for this collection.
 
 1. On the __Add__ button, click the drop-down arrow and select __RadButtonElement__ from the list.
-    ![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 003](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts003.png)
+    ![WinForms RadRibbonBar ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 003](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts003.png)
 
 1. Repeat this step to add a __CommandBarSeparator__ and then another __RadButtonElement__.
 
@@ -58,7 +58,7 @@ This tutorial is in three parts. First, you will create a Quick Access Toolbar 
 1. In the Members list, click __radButtonElement2__.
 
 1. Change its __DisplayStyle__ property to __Image__ and the __ImageIndex__ property to an icon that represents Bold. Select the appropriate image from the Image List. 
-    ![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 004](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts004.png)
+    ![WinForms RadRibbonBar ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 004](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts004.png)
 
 1. Click __OK__ to close the RadElement Collection Editor.
 
@@ -67,7 +67,7 @@ This tutorial is in three parts. First, you will create a Quick Access Toolbar 
 1. Drag a standard WinForms __RichTextBox__ control onto the form.
 
 1. Open the __Smart Tag__ of the control and execute the 'Dock in parent container' action.
-    ![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 005](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts005.png)
+    ![WinForms RadRibbonBar ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 005](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts005.png)
 
 ## Add Code
 
@@ -201,7 +201,7 @@ In C#, it is necessary to connect the controls to the methods you have copied in
 1. Open the Collection Editor for this property.
 
 1. Add three __RadMenuItem__'s and change their __DisplayStyle__ property to __Text__.
-    ![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 007](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts007.png)
+    ![WinForms RadRibbonBar ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 007](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts007.png)
 
 The sub-menu will display the three most recently used files.
 
@@ -222,7 +222,7 @@ The sub-menu will display the three most recently used files.
 These settings will be used to keep track of the three most recent files a user has opened.
 
 If you would like to learn more about Application Settings, follow the __Learn more about application settings...__ link on the page:
-    ![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 008](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts008.png)
+    ![WinForms RadRibbonBar ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 008](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts008.png)
 
 ## Modify Existing Code
 
@@ -275,7 +275,7 @@ In C#, do this in the property window.
 
 3\. Choose __radMenuItem1__ from the control list in the __Properties__ window.
 
-4\. Click the __Events__ icon ![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 009](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts009.png).
+4\. Click the __Events__ icon ![WinForms RadRibbonBar ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 009](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts009.png).
 
 5\. Locate the __Click__ event and select __radButtonElement1_Click__ from its drop-down list.
 
@@ -363,7 +363,7 @@ In C#, it is necessary to connect these methods to the control events:
 
 1. Choose __radMenuItem1__ from the control list in the __Properties__ window.
 
-1. Click the __Events__ icon ![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 009](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts009.png).
+1. Click the __Events__ icon ![WinForms RadRibbonBar ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 009](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts009.png).
 
 1. Locate the __Click__ event and select __radMenuItem2_DropDownOpening__ from its drop-down list.
 
@@ -375,7 +375,7 @@ In C#, it is necessary to connect these methods to the control events:
 
 ##  Run the Form
 
-![ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 010](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts010.png)
+![WinForms RadRibbonBar ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts 010](images/ribbonbar-creating-the-start-menu-quick-access-toolbar-and-shortcuts010.png)
 
 ## Create a Shortcut for the File Open and Bold functions
 

@@ -14,7 +14,7 @@ You can customize the carousel elements with the [Element Hierarchy Editor]({%sl
 
 >caption Figure 1: Change Carousel BackColor
 
-![carousel-customize-appearance001](images/carousel-customize-appearance001.png)
+![WinForms RadCarousel Change Carousel BackColor](images/carousel-customize-appearance001.png)
 
 # Customizing in the Code behind
 
@@ -41,7 +41,7 @@ RadCarousel1.ButtonPrevious.ButtonFillElement.BackColor = ColorTranslator.FromHt
 
 >caption Figure 2: Navigation Buttons BackColor Changed.
 
-![carousel-customize-appearance002](images/carousel-customize-appearance002.png)
+![WinForms RadCarousel Navigation Buttons BackColor Changed](images/carousel-customize-appearance002.png)
 
 
 # See Also

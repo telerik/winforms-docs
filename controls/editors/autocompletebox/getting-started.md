@@ -14,7 +14,7 @@ previous_url: editors-autocompletebox-getting-started
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadAutoCompleteBox for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-radautocompletebox-for-winforms)<br>RadAutoCompleteBox allows the end-user to easily fill-in text thanks to auto-complete functionality and tokens of text. This behavior is similar to the “To” field of Outlook and Facebook where you are filling-in the recipients to which you are going to send a new message.|![editors-autocompletebox-getting-started 004](images/editors-autocompletebox-getting-started004.png)|
+|[WinForms RadAutoCompleteBox Getting Started with RadAutoCompleteBox for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-radautocompletebox-for-winforms)<br>RadAutoCompleteBox allows the end-user to easily fill-in text thanks to auto-complete functionality and tokens of text. This behavior is similar to the “To” field of Outlook and Facebook where you are filling-in the recipients to which you are going to send a new message.|![WinForms RadAutoCompleteBox editors-autocompletebox-getting-started 004](images/editors-autocompletebox-getting-started004.png)|
 
 
 The __RadAutoCompleteBox__ allows your users to select multiple items from a predefined list, using auto completion as they type. You may have seen a similar type of text entry when filling in the recipient’s field, while sending messages on Facebook. __RadAutoCompleteBox__ inherits all features of [RadTextBoxControl]({%slug winforms/editors/textboxcontrol%}).
@@ -45,7 +45,7 @@ End Sub
  
 >caption Figure 1: Set the text of RadAutoCompleteBox.
 
-![editors-autocompletebox-getting-started 001](images/editors-autocompletebox-getting-started001.png)
+![WinForms RadAutoCompleteBox Set the text of RadAutoCompleteBox](images/editors-autocompletebox-getting-started001.png)
 
 You can determine the visibility of the remove button by changing the __ShowRemoveButton__ property: 
 
@@ -65,7 +65,7 @@ Me.RadAutoCompleteBox1.ShowRemoveButton = False
 
 >caption Figure 2: The Tokenized items are not showing the close button.
 
-![editors-autocompletebox-getting-started 002](images/editors-autocompletebox-getting-started002.png)
+![WinForms RadAutoCompleteBox The Tokenized items are not showing the close button](images/editors-autocompletebox-getting-started002.png)
 
 
 # See Also

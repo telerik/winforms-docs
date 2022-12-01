@@ -20,7 +20,7 @@ __RadButton__ is a [themable] ({%slug winforms/buttons/button/customizing-appear
 
 >caption Figure 1: RadButton
 
-![buttons-button-overview 001](images/buttons-button-overview001.png)
+![WinForms RadButtons RadButton](images/buttons-button-overview001.png)
 
 >tip In the related [Getting Started](https://docs.telerik.com/devtools/winforms/controls/buttons/button/getting-started) article you can find how to use the control with a sample scenario.
 

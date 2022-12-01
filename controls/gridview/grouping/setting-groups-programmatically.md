@@ -39,7 +39,7 @@ Me.RadGridView1.GroupDescriptors.Add(descriptor)
 
 {{endregion}} 
 
-![gridview-grouping-setting-groups-programmatically 001](images/gridview-grouping-setting-groups-programmatically001.png)
+![WinForms RadGridView gridview-grouping-setting-groups-programmatically 001](images/gridview-grouping-setting-groups-programmatically001.png)
 
 The __GroupNames__ property defines the property, by which the data will be grouped. The __GroupNames__ is a __SortDescriptorCollection__ and defines group names for one grouping criteria.
 
@@ -68,7 +68,7 @@ Me.RadGridView1.GroupDescriptors.Add(descriptor1)
 {{endregion}} 
 
 
-![gridview-grouping-setting-groups-programmatically 002](images/gridview-grouping-setting-groups-programmatically002.png)
+![WinForms RadGridView gridview-grouping-setting-groups-programmatically 002](images/gridview-grouping-setting-groups-programmatically002.png)
 
 **RadGridView** supports grouping on one or more levels. The following example demonstrates how you can group on two levels:
 
@@ -98,7 +98,7 @@ Me.RadGridView1.GroupDescriptors.Add(descriptor3)
 
 {{endregion}} 
 
-![gridview-grouping-setting-groups-programmatically 003](images/gridview-grouping-setting-groups-programmatically003.png)
+![WinForms RadGridView gridview-grouping-setting-groups-programmatically 003](images/gridview-grouping-setting-groups-programmatically003.png)
 # See Also
 * [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
 

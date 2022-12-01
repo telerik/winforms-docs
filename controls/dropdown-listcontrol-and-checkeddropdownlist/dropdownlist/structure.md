@@ -15,7 +15,7 @@ This article describes the inner structure and organization of the elements whic
         
 >caption Figure 1: RadDropDownList visual structure
 
-![dropdown-and-listcontrol-dropdownlist-structure 001](images/dropdown-and-listcontrol-dropdownlist-structure001.png)
+![WinForms RadDropDownList RadDropDownList visual structure](images/dropdown-and-listcontrol-dropdownlist-structure001.png)
 
 1. __StackLayoutElement__: Serves as a container element defining a stack layout.
             

@@ -13,6 +13,6 @@ previous_url: forms-and-dialogs-templates-radaboutbox-overview
 
 The __RadAboutBox__ has a little extra code to access the assembly you're running and will display all that information automatically in the about box along with an icon.
 
-![forms-and-dialogs-templates-radaboutbox-overview 001](images/forms-and-dialogs-templates-radaboutbox-overview001.png)
+![WinForms RadTemplates forms-and-dialogs-templates-radaboutbox-overview 001](images/forms-and-dialogs-templates-radaboutbox-overview001.png)
 
 

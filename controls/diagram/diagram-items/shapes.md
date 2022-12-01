@@ -20,7 +20,7 @@ This tutorial will walk you through the functionality and the main features of _
 
 __RadDiagramShape__ is an object that describes the nodes of the diagram. You can configure its form using the __Shape__ property as it allows you to define a custom shape:
 
-![diagram-diagram-items-shapes 001](images/diagram-diagram-items-shapes001.png)  
+![WinForms RadDiagram diagram-diagram-items-shapes 001](images/diagram-diagram-items-shapes001.png)  
 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=SetAShape}} 
@@ -86,7 +86,7 @@ End Class
 
 or to use one of the pre-defined shapes:
 
-![diagram-diagram-items-shapes 002](images/diagram-diagram-items-shapes002.png) 
+![WinForms RadDiagram diagram-diagram-items-shapes 002](images/diagram-diagram-items-shapes002.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=StarShape}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=StarShape}} 
@@ -133,7 +133,7 @@ You can add content in the __RadDiagramShape__ using its __Text__ property. It a
 Each __RadDiagramShape__ has 5 default connectors - Top, Right, Bottom, Left and Auto. Those are the predefined points where you can connect a __RadDiagramConnection__ to the shape.
 >caption Fig.3 Connectors
 
-![diagram-diagram-items-shapes 003](images/diagram-diagram-items-shapes003.png)
+![WinForms RadDiagram Connectors](images/diagram-diagram-items-shapes003.png)
 
 * __Top__- the connector point positioned in the middle of the top border of a shape
             
@@ -178,7 +178,7 @@ The __RadDiagramShape__ class exposes multiple properties that allow you to cont
 * __Edit Mode__ - you can set the __RadDiagramShape__ in edit mode using the __IsInEditMode__ property. By default, when a shape enters edit mode, the RadDiagramShape.__Text__ is displayed inside a __TextBox__ control so that you can change its value. 
 >caption Fig.4 Edit mode
 
-![diagram-diagram-items-shapes 004](images/diagram-diagram-items-shapes004.png)
+![WinForms RadDiagram 4 Edit mode](images/diagram-diagram-items-shapes004.png)
 
 * __Shape Selection State__ - the __IsSelected__ property allows you to track and control the selection state of a shape.
 
@@ -214,7 +214,7 @@ shape1.DrawBorder = True
 
 >caption Fig.5 Shape border
 
-![diagram-diagram-items-shapes 005](images/diagram-diagram-items-shapes005.png)
+![WinForms RadDiagram 5 Shape border](images/diagram-diagram-items-shapes005.png)
 
 * __StrokeDashArray__ - gets or sets a collection of Double values that indicate the pattern of dashes and gaps that is used to outline the __RadDiagramShape__.
             
@@ -241,13 +241,13 @@ shape.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollection(New
 
 >caption Fig.6 StrokeDashArray
 
-![diagram-diagram-items-shapes 006](images/diagram-diagram-items-shapes006.png)
+![WinForms RadDiagram 6 StrokeDashArray](images/diagram-diagram-items-shapes006.png)
 
 * __StrokeThickness__- gets or sets the width of the __RadDiagramShape__ outline.
             
 >caption Fig.7 StrokeThickness
 
-![diagram-diagram-items-shapes 007](images/diagram-diagram-items-shapes007.png)
+![WinForms RadDiagram 7 StrokeThickness](images/diagram-diagram-items-shapes007.png)
 
 # See Also
  

@@ -83,7 +83,7 @@ End Sub
 
 {{endregion}} 
 
-![ganttview-formatting-graphical-view-item-formatting 001](images/ganttview-formatting-graphical-view-item-formatting001.png)
+![WinForms RadGanttView ganttview-formatting-graphical-view-item-formatting 001](images/ganttview-formatting-graphical-view-item-formatting001.png)
 
 # See Also
 

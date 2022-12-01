@@ -49,4 +49,4 @@ Me.radButton1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, 
 {{endregion}} 
 
 
-![buttons-button-html-like-text-formatting 001](images/buttons-button-html-like-text-formatting001.png)
+![WinForms RadButtons buttons-button-html-like-text-formatting 001](images/buttons-button-html-like-text-formatting001.png)

@@ -13,7 +13,7 @@ previous_url: ganttview-designtime-adding-links
 
 The __GanttViewLinkDataItem__ CollectionEditor allows you to add links (dependences) between the items in the gantt view at design time.
         
-![ganttview-designtime-adding-links 001](images/ganttview-designtime-adding-links001.png)
+![WinForms RadGanttView ganttview-designtime-adding-links 001](images/ganttview-designtime-adding-links001.png)
 
 The more important properties of the links you need to set up are:
 

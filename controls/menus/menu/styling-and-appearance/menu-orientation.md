@@ -17,7 +17,7 @@ The __Orientation__ property of the **RadMenu** control and the __TextOrientatio
 
 The __RadMenu__ default settings are: __Orientation__ = *Horizontal*, __TextOrientation__ = *Horizontal*, __FlipText__ = *false*. The resulting menu is arranged as shown in the figure below:
 
-![menus-menu-styling-and-appearance-menu-orientation 001](images/menus-menu-styling-and-appearance-menu-orientation001.png)
+![WinForms RadMenus menus-menu-styling-and-appearance-menu-orientation 001](images/menus-menu-styling-and-appearance-menu-orientation001.png)
 
 #### Default orientation
 
@@ -55,7 +55,7 @@ radMenuItemHelp.FlipText = False
 
 The menu can be oriented horizontally with menu items arranged vertically:
 
-![menus-menu-styling-and-appearance-menu-orientation 002](images/menus-menu-styling-and-appearance-menu-orientation002.png)
+![WinForms RadMenus menus-menu-styling-and-appearance-menu-orientation 002](images/menus-menu-styling-and-appearance-menu-orientation002.png)
 
 #### Vertical text orientation
 
@@ -93,7 +93,7 @@ radMenuItemHelp.FlipText = False
 
 The menu can be oriented vertically with menu items arranged horizontally to create a "sideways" menu:
 
-![menus-menu-styling-and-appearance-menu-orientation 003](images/menus-menu-styling-and-appearance-menu-orientation003.png)
+![WinForms RadMenus menus-menu-styling-and-appearance-menu-orientation 003](images/menus-menu-styling-and-appearance-menu-orientation003.png)
 
 #### Vertical menu with horizontal text
 
@@ -129,7 +129,7 @@ radMenuItemHelp.FlipText = False
 
 ## Stacked Vertical Menu
 
-![menus-menu-styling-and-appearance-menu-orientation 004](images/menus-menu-styling-and-appearance-menu-orientation004.png)
+![WinForms RadMenus menus-menu-styling-and-appearance-menu-orientation 004](images/menus-menu-styling-and-appearance-menu-orientation004.png)
 
 #### Vertical menu with vertical text
 

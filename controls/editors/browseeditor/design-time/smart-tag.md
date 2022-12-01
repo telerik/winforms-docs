@@ -15,7 +15,7 @@ In this article we will describe the design time abilities of __RadBrowseEditor_
 Here is how the control's Smart Tag looks like:
 
 >caption Figure 1: Smart Tag
-![browseeditor-design-time-smart-tag 001](images/browseeditor-design-time-smart-tag001.png)
+![WinForms RadBrowseEditor Smart Tag](images/browseeditor-design-time-smart-tag001.png)
 
 * __Common Tasks__
 

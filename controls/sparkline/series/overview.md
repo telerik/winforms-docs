@@ -12,7 +12,7 @@ position: 0
 
 >caption Figure 1: Supported Series
 
-![](images/series-overview001.png)
+![WinForms RadSparkline Supported Series](images/series-overview001.png)
 
 The currently supported series are:
 * [SparkAreaSeries]({%slug radsparkline-sparkareaseries%})

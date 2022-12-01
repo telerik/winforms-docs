@@ -115,7 +115,7 @@ Me.RadAutoCompleteBox1.Text = "Euro;USD;GBP;"
 
 The following image demonstrates the final result:
 
-![editors-autocompletebox-creating-custom-blocks 001](images/editors-autocompletebox-creating-custom-blocks001.png)
+![WinForms RadAutoCompleteBox editors-autocompletebox-creating-custom-blocks 001](images/editors-autocompletebox-creating-custom-blocks001.png)
 
 
 # See Also

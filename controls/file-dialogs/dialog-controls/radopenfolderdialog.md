@@ -14,7 +14,7 @@ position: 2
 
 >caption Figure 1: RadOpenFolderDialog in single selection mode
 
-![winforms/file-dialogs-radopenfolderdialog 001](images/file-dialogs-radopenfolderdialog001.png) 
+![WinForms RadFile-Dialogs RadOpenFolderDialog in single selection mode](images/file-dialogs-radopenfolderdialog001.png) 
 
 ## Showing the Dialog
 
@@ -77,7 +77,7 @@ openFolderDialog.Multiselect = True
 
 >caption Figure 2: Multiple selection
 
-![winforms/file-dialogs-radopenfolderdialog 002](images/file-dialogs-radopenfolderdialog002.png) 
+![WinForms RadFile-Dialogs Multiple selection](images/file-dialogs-radopenfolderdialog002.png) 
 
 ## Working with the Selected Folders
 

@@ -18,7 +18,7 @@ With the Section Columns feature, **RadRichTextEditor** allows you arrange the t
 
 >caption Figure 1: Text laid out in column
 
-![RadRichTextEditor_Features_Section_Columns_01](images/RadRichTextEditor_Features_Section_Columns_01.png)
+![WinForms RadRichTextEditor Text laid out in column](images/RadRichTextEditor_Features_Section_Columns_01.png)
 
 ## Create Section Columns
 
@@ -26,7 +26,7 @@ The Page Layout tab of [RadRichTextEditorRibbonUI]({%slug winforms/richtextedito
 
 >caption Figure 2: Section columns menu
 
-![RadRichTextEditor_Features_Section_Columns_03](images/RadRichTextEditor_Features_Section_Columns_03.png)
+![WinForms RadRichTextEditor Section columns menu](images/RadRichTextEditor_Features_Section_Columns_03.png)
 
 * **One**: Represents a single text column.
 
@@ -42,7 +42,7 @@ The Page Layout tab of [RadRichTextEditorRibbonUI]({%slug winforms/richtextedito
 
 >caption Figure 3: Left option applied on a section
 
-![RadRichTextEditor_Features_Section_Columns_02](images/RadRichTextEditor_Features_Section_Columns_02.png)
+![WinForms RadRichTextEditor Left option applied on a section](images/RadRichTextEditor_Features_Section_Columns_02.png)
 
 ## Changing the Width of a Section Column
 
@@ -50,13 +50,13 @@ When the Section contains columns with equal width, you can customize the width 
 
 >caption Figure 4: Customizing the width of a column
 
-![RadRichTextEditor_Features_Section_Columns_04](images/RadRichTextEditor_Features_Section_Columns_04.png)
+![WinForms RadRichTextEditor Customizing the width of a column](images/RadRichTextEditor_Features_Section_Columns_04.png)
 
 Another approach for applying different settings to section columns is through the Columns dialog.
 
 >caption Figure 5: Customizing the width and spacing of columns using dialog
 
-![RadRichTextEditor_Features_Section_Columns_05](images/RadRichTextEditor_Features_Section_Columns_05.png)
+![WinForms RadRichTextEditor Customizing the width and spacing of columns using dialog](images/RadRichTextEditor_Features_Section_Columns_05.png)
 
 # See Also
 

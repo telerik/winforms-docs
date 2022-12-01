@@ -21,17 +21,17 @@ Since **RadMultiColumnComboBox** is a compound control, it uses the theming of _
 
 4\. First, we can change the appearance of the __RadMultiColumnComboBox__ element. Let's change its BorderPrimitive.__ForeColor__ to *Light Green*. To do that, we can just change the fore color of the already applied repository item style.
 
-![multicolumncombobox-styling-and-appearance-theme 001](images/multicolumncombobox-styling-and-appearance-theme001.png)
+![WinForms RadMultiColumnComboBox multicolumncombobox-styling-and-appearance-theme 001](images/multicolumncombobox-styling-and-appearance-theme001.png)
 
 5\. Now, we can edit the styles for the __RadGridView__. For this example we will change the hover row back color to a light green. This can be achieved by selecting the __GridDataCellElement__ and changing the __BackColor__ of the __GridDataCellHoverFill__ repository item.
 
-![multicolumncombobox-styling-and-appearance-theme 002](images/multicolumncombobox-styling-and-appearance-theme002.png)
+![WinForms RadMultiColumnComboBox multicolumncombobox-styling-and-appearance-theme 002](images/multicolumncombobox-styling-and-appearance-theme002.png)
 
 6\. Save the theme by selecting *File >> Save As*.
 
 7\. Now, you can apply your custom theme to **RadMultiColumnComboBox** by using the demonstrated approach in the following link: [Using custom themes]({%slug winforms/themes/using-custom-themes%})
 
-![multicolumncombobox-styling-and-appearance-theme 003](images/multicolumncombobox-styling-and-appearance-theme003.png)
+![WinForms RadMultiColumnComboBox multicolumncombobox-styling-and-appearance-theme 003](images/multicolumncombobox-styling-and-appearance-theme003.png)
 
 # See Also
 

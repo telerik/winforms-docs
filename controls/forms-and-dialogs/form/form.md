@@ -23,7 +23,7 @@ The __RadForm__ control is an extended standard Windows Form that fully supports
  
 >caption RadForm
 
-![forms-and-dialogs-form-overview 001](images/forms-and-dialogs-form-overview001.png)
+![WinForms RadForm RadForm](images/forms-and-dialogs-form-overview001.png)
 
 # See Also 
 

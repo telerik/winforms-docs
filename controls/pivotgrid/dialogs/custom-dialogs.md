@@ -15,7 +15,7 @@ To customize the dialogs in **RadPivotGrid**/**RadPivotFieldList**, you can eith
 
 >caption Figure 1: Custom Header Text
 
-![pivotgrid-dialogs-customizing-the-dialogs 001](images/pivotgrid-dialogs-customizing-the-dialogs001.png)
+![WinForms RadPivotGrid Custom Header Text](images/pivotgrid-dialogs-customizing-the-dialogs001.png)
 
 #### Custom AggregateOptionsDialog
 

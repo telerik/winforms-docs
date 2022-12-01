@@ -14,7 +14,7 @@ This article will show the internal elements structure of __RadRepeatButton__:
 
 >caption Figure 1: RadRepeatButton's elements hierarchy
 
-![buttons-repeatbutton-structure 001](images/buttons-repeatbutton-structure001.png)
+![WinForms RadButtons RadRepeatButton's elements hierarchy](images/buttons-repeatbutton-structure001.png)
 
 1. __FillPrimitive__: represents the repeat button's filling
 1. __ImageAndTextLayoutPanel__ <br>
@@ -24,5 +24,5 @@ This article will show the internal elements structure of __RadRepeatButton__:
 
 >caption Figure 2: RadRepeatButton's structure
 
-![buttons-repeatbutton-structure 002](images/buttons-repeatbutton-structure002.png)
+![WinForms RadButtons RadRepeatButton's structure](images/buttons-repeatbutton-structure002.png)
  

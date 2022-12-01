@@ -15,7 +15,7 @@ This method offers exporting functionality and does not require MS Office instal
 
 >caption Figure 1: RadPivotGrid Export to Excel
 
-![pivotgrid-export-to-excel 001](images/pivotgrid-export-to-excel001.png)
+![WinForms RadPivotGrid RadPivotGrid Export to Excel](images/pivotgrid-export-to-excel001.png)
 
 ## Exporting Data
 

@@ -33,7 +33,7 @@ Me.RadGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 {{endregion}} 
 
-![ganttview-timeline-timeline-views 001](images/ganttview-timeline-timeline-views001.png)
+![WinForms RadGanttView ganttview-timeline-timeline-views 001](images/ganttview-timeline-timeline-views001.png)
 
 * __TimeRange.Month:__  Each element of the upper row represents one month. The elements on the lower row represent days. 
 
@@ -51,7 +51,7 @@ Me.RadGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 {{endregion}} 
 
-![ganttview-timeline-timeline-views 002](images/ganttview-timeline-timeline-views002.png)
+![WinForms RadGanttView ganttview-timeline-timeline-views 002](images/ganttview-timeline-timeline-views002.png)
 
 * __TimeRange.Year:__ Each element of the upper row represents one year. The elements on the lower row represent months.
 
@@ -69,7 +69,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 {{endregion}} 
 
-![ganttview-timeline-timeline-views 003](images/ganttview-timeline-timeline-views003.png)
+![WinForms RadGanttView ganttview-timeline-timeline-views 003](images/ganttview-timeline-timeline-views003.png)
 
 * __TimeRange.YearHalves:__ Each element of the upper row represents one year. The elements on the lower row represent half year periods (roughly six months). 
 
@@ -87,7 +87,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 
 {{endregion}} 
 
-![ganttview-timeline-timeline-views 004](images/ganttview-timeline-timeline-views004.png)
+![WinForms RadGanttView ganttview-timeline-timeline-views 004](images/ganttview-timeline-timeline-views004.png)
 
 * __TimeRange.YearQuarters:__ Each element of the upper row represents one year. The elements on the lower row represent quarter year periods (roughly three months).
              
@@ -107,7 +107,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 {{endregion}} 
 
 
-![ganttview-timeline-timeline-views 005](images/ganttview-timeline-timeline-views005.png)
+![WinForms RadGanttView ganttview-timeline-timeline-views 005](images/ganttview-timeline-timeline-views005.png)
 
 * __TimeRange.Day__ – Each element of the upper row represents one day. The elements on the lower row represent hours. 
 
@@ -126,7 +126,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 {{endregion}} 
 
 
-![ganttview-timeline-timeline-views 006](images/ganttview-timeline-timeline-views006.png)
+![WinForms RadGanttView ganttview-timeline-timeline-views 006](images/ganttview-timeline-timeline-views006.png)
 
 * __TimeRange.DayHalfHours:__ Each element of the upper row represents one day. The elements on the lower row represent half hours (30 minutes period).
              
@@ -145,7 +145,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 {{endregion}} 
 
 
-![ganttview-timeline-timeline-views 007](images/ganttview-timeline-timeline-views007.png)
+![WinForms RadGanttView ganttview-timeline-timeline-views 007](images/ganttview-timeline-timeline-views007.png)
 
 * __TimeRange.DayQuarterHours:__ Each element of the upper row represents one day. The elements on the lower row represent quarter hours (15 minutes period).
             
@@ -165,7 +165,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 {{endregion}} 
 
 
-![ganttview-timeline-timeline-views 008](images/ganttview-timeline-timeline-views008.png)
+![WinForms RadGanttView ganttview-timeline-timeline-views 008](images/ganttview-timeline-timeline-views008.png)
 
 * __TimeRange.Hour:__ Each element of the upper row represents one hour. The elements on the lower row represent minutes. 
 
@@ -184,7 +184,7 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 {{endregion}} 
 
 
-![ganttview-timeline-timeline-views 009](images/ganttview-timeline-timeline-views009.png)
+![WinForms RadGanttView ganttview-timeline-timeline-views 009](images/ganttview-timeline-timeline-views009.png)
 
 # See Also
 

@@ -19,9 +19,9 @@ Bar charts graphically summarize and display categories of data and let the user
 
 To create a Vertical Bar Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Bar__.
 
-![chart-undestanding-radchart-types-bar-charts 001](images/chart-undestanding-radchart-types-bar-charts001.png)
+![WinForms RadChart chart-undestanding-radchart-types-bar-charts 001](images/chart-undestanding-radchart-types-bar-charts001.png)
 
 To create a Horizontal Bar Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Bar__.
 >caption 
 
-![chart-undestanding-radchart-types-bar-charts 002](images/chart-undestanding-radchart-types-bar-charts002.png)
+![WinForms RadChart ](images/chart-undestanding-radchart-types-bar-charts002.png)

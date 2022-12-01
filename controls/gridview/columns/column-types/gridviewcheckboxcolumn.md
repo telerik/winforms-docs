@@ -13,7 +13,7 @@ previous_url: gridview-columns-gridviewcheckboxcolumn, gridview-editors-howto-ch
 
 __GridViewCheckBoxColumn__ displays and allows editing of boolean data. The values are shown as check boxes and allow the user to set or clear the check boxes to toggle the underlying boolean data values. __GridViewCheckBoxColumn__ inherits from __GridViewDataColumn.__
 
-![gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn001.png)
+![WinForms RadGridView gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn001.png)
 
 #### Create and add GridViewCheckBoxColumn
 
@@ -146,8 +146,8 @@ checkBoxColumn.EditMode = EditMode.OnValueChange
 
 |HeaderCheckBoxPosition/HeaderCheckBoxAlignment|Result|
 |----|----|
-|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleLeft|![gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn002.png)|
-|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleRight|![gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn003.png)|
+|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleLeft|![WinForms RadGridView gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn002.png)|
+|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleRight|![WinForms RadGridView gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn003.png)|
 
 
 # See Also

@@ -13,7 +13,7 @@ previous_url: pdfviewer-getting-started
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with the WinForms RadPdfViewer](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-the-winforms-radpdfviewer)<br>__RadPdfViewer__ enables you to easily load and display PDF documents natively in your app without using any third-party tools except Telerik’s WinForms toolbox. Thanks to its built-in UI virtualization, RadPdfViewer delivers a performant solution in every scenario. This component will come as a nice addition to your Content Management Systems and Reporting applications, let’s see what __RadPdfViewer__ provides as a feature set.|![pdfviewer-getting-started 003](images/pdfviewer-getting-started003.png)|
+|[WinForms RadPdfViewer Getting Started with the WinForms RadPdfViewer](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-the-winforms-radpdfviewer)<br>__RadPdfViewer__ enables you to easily load and display PDF documents natively in your app without using any third-party tools except Telerik’s WinForms toolbox. Thanks to its built-in UI virtualization, RadPdfViewer delivers a performant solution in every scenario. This component will come as a nice addition to your Content Management Systems and Reporting applications, let’s see what __RadPdfViewer__ provides as a feature set.|![WinForms RadPdfViewer pdfviewer-getting-started 003](images/pdfviewer-getting-started003.png)|
 
 This article will help you quickly get started with __RadPdfViewer__. To start off, drag and drop __RadPdfViewer__ the control from the toolbox to your form. 
 
@@ -24,7 +24,7 @@ This article will help you quickly get started with __RadPdfViewer__. To start o
 Once you have __RadPdfViewer__, you can set the __ViewerMode__ option to a desired value.
 
 >caption Figure 1: Visual Studio Designer
-![pdfviewer-getting-started 001](images/pdfviewer-getting-started001.png)
+![WinForms RadPdfViewer Visual Studio Designer](images/pdfviewer-getting-started001.png)
 
 There is also a property for the above setting which you can set in your code:
 
@@ -106,7 +106,7 @@ Me.RadPdfViewer1.UnloadDocument()
 To provide to the end-user an additional set of abilities for manipulating the document, you can use __RadPdfViewerNavigator__. To do this, drag it from the toolbox to your form and set its __AssociatedViewer__ from its __SmartTag__ menu. 
 
 >caption Figure 2. RadPdfViewerNavigator
-![pdfviewer-getting-started 002](images/pdfviewer-getting-started002.png)
+![WinForms RadPdfViewer RadPdfViewerNavigator](images/pdfviewer-getting-started002.png)
 
 You can also set this in your code by using the __AssociatedPdfViewer__ property of the __PdfViewerNavigator__.
 

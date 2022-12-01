@@ -22,20 +22,20 @@ A keyboard layout that includes the functions keys, main keys, home buttons and 
 * **HomeButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all buttons from the home keys group of the keyboard.
 * **NumpadButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all buttons from the numpad keys group of the keyboard.
 
-![winforms/virtual-keabord-default-layouts 001](images/virtual-keabord-default-layouts001.png) 
+![WinForms RadVirtual-Keyboard winforms/virtual-keabord-default-layouts 001](images/virtual-keabord-default-layouts001.png) 
 
 ### **Simplified**
 A keyboard layout that includes the main buttons group with escape key and arrow keys included. This layout is of **SimplifiedVirtualKeyboardLayoutPanel** type and offers the following useful properties:
 * **MainButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all keys from the main group of the keyboard.
 * **HomeButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all buttons from the home keys group of the keyboard.
 
-![winforms/virtual-keabord-default-layouts 002](images/virtual-keabord-default-layouts002.png) 
+![WinForms RadVirtual-Keyboard winforms/virtual-keabord-default-layouts 002](images/virtual-keabord-default-layouts002.png) 
 
 ### **Numpad**
 A keyboard layout that includes the numpad buttons group. This layout is of **NumpadVirtualKeyboardLayoutPanel** type and offers:
 * **NumpadButtonsLayout** - Gets the **VirtualKeyboardLayout** that holds all buttons from the numpad keys group of the keyboard.
 
-![winforms/virtual-keabord-default-layouts 003](images/virtual-keabord-default-layouts003.png) 
+![WinForms RadVirtual-Keyboard winforms/virtual-keabord-default-layouts 003](images/virtual-keabord-default-layouts003.png) 
 
 ## Customizing default layouts
 
@@ -43,7 +43,7 @@ A keyboard layout that includes the numpad buttons group. This layout is of **Nu
 
 The following code snippet demonstrates how to add a **Z** button in the *Home* layout when using KeyboardLayoutType.*Extended*:
 
-![winforms/virtual-keabord-default-layouts 003](images/virtual-keabord-default-layouts004.png) 
+![WinForms RadVirtual-Keyboard winforms/virtual-keabord-default-layouts 003](images/virtual-keabord-default-layouts004.png) 
 
 
 #### Adding a key to the default Home layout

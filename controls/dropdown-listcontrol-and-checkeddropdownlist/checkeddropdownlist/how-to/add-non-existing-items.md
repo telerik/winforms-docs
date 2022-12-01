@@ -71,7 +71,7 @@ End Sub
 
 >caption Figure 1: Tokens Validating
 
-![dropdown-and-listcontrol-checkeddropdownlist-how-to 001](images/dropdown-and-listcontrol-checkeddropdownlist-how-to001.gif)
+![WinForms RadCheckedDropDownList Tokens Validating](images/dropdown-and-listcontrol-checkeddropdownlist-how-to001.gif)
 
 
 

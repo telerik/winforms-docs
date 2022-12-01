@@ -68,7 +68,7 @@ End Sub
 
 {{endregion}} 
 
-![ganttview-formatting-timelineviewitem-formatting 001](images/ganttview-formatting-timelineviewitem-formatting001.png)
+![WinForms RadGanttView ganttview-formatting-timelineviewitem-formatting 001](images/ganttview-formatting-timelineviewitem-formatting001.png)
 
 # See Also
 

@@ -29,7 +29,7 @@ Generic template used in Windows 10.
 </toast>
 ````
 
-![winforms/toast-notification-templates001](images/toast-notification-templates001.png) 
+![WinForms RadSplashScreen winforms/toast-notification-templates001](images/toast-notification-templates001.png) 
 
 
 ### ToastNews
@@ -48,7 +48,7 @@ News template.
 </toast>
 ````
 
-![winforms/toast-notification-templates003](images/toast-notification-templates003.png) 
+![WinForms RadSplashScreen winforms/toast-notification-templates003](images/toast-notification-templates003.png) 
 
 ### ToastAlarm
 
@@ -76,7 +76,7 @@ Alarm template.
 </toast>
 ````
 
-![winforms/toast-notification-templates004](images/toast-notification-templates004.png) 
+![WinForms RadSplashScreen winforms/toast-notification-templates004](images/toast-notification-templates004.png) 
 
 ### ToastCall
 
@@ -104,7 +104,7 @@ Phone Call template.
 </toast>
 ````
 
-![winforms/toast-notification-templates005](images/toast-notification-templates005.png) 
+![WinForms RadSplashScreen winforms/toast-notification-templates005](images/toast-notification-templates005.png) 
 
 ### ToastChat
 
@@ -127,7 +127,7 @@ Chat template.
 </toast>
 ````
 
-![winforms/toast-notification-templates006](images/toast-notification-templates006.png) 
+![WinForms RadSplashScreen winforms/toast-notification-templates006](images/toast-notification-templates006.png) 
 
 ### ToastReminder
 
@@ -156,7 +156,7 @@ Meeting template.
 </toast>
 ````
 
-![winforms/toast-notification-templates007](images/toast-notification-templates007.png) 
+![WinForms RadSplashScreen winforms/toast-notification-templates007](images/toast-notification-templates007.png) 
 
 ### ToastWeather
 
@@ -194,7 +194,7 @@ Wheather template.
 </toast>
 ````
 
-![winforms/toast-notification-templates008](images/toast-notification-templates008.png) 
+![WinForms RadSplashScreen winforms/toast-notification-templates008](images/toast-notification-templates008.png) 
 
 ### ToastDownload
 
@@ -215,7 +215,7 @@ Download template.
 </toast>
 ````
 
-![winforms/toast-notification-templates009](images/toast-notification-templates009.png) 
+![WinForms RadSplashScreen winforms/toast-notification-templates009](images/toast-notification-templates009.png) 
 
 ### ToastLegacy
 
@@ -234,19 +234,19 @@ Legacy template, used in Windows 8. It is not recommended to use it in Windows 1
 </toast>
 ````
 
-![winforms/toast-notification-templates002](images/toast-notification-templates002.png) 
+![WinForms RadSplashScreen winforms/toast-notification-templates002](images/toast-notification-templates002.png) 
 
 ### Customizing Default Templates
 
 On the right side of the [RadToastNotifications Editor]({%slug toast-notification-design-time%}), you have the possibilities to customize the loaded toast notification and add different [types of elements](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts?tabs=builder-syntax) and toast attributes to them. You can add additional [elements](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts?tabs=builder-syntax) to the toast or remove any of the existing ones by managing the syntax editor in the center.
 
-![winforms/toast-notification-templates010](images/toast-notification-templates010.png)
+![WinForms RadSplashScreen winforms/toast-notification-templates010](images/toast-notification-templates010.png)
 
 Let's try to extend the **ToastDownload** and add a combo with two items to it. Select the **Combobox** element and fill the data for two items:
 
-![winforms/toast-notification-templates010](images/toast-notification-templates011.png)
+![WinForms RadSplashScreen winforms/toast-notification-templates010](images/toast-notification-templates011.png)
 
-![winforms/toast-notification-templates010](images/toast-notification-templates012.png)
+![WinForms RadSplashScreen winforms/toast-notification-templates010](images/toast-notification-templates012.png)
 
 Once you confirm the changes, the syntax code gets updated:
 
@@ -271,7 +271,7 @@ Once you confirm the changes, the syntax code gets updated:
 
 Then, the **Preview** button at the bottom right corner of the [RadToastNotifications Editor]({%slug toast-notification-design-time%}) allows you to see the changes that you just made:
 
-![winforms/toast-notification-templates013](images/toast-notification-templates013.gif)
+![WinForms RadSplashScreen winforms/toast-notification-templates013](images/toast-notification-templates013.gif)
 
 Thus, you can use the Generic template and construct the desired toast from scratch. 
 

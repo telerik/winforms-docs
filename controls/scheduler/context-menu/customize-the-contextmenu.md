@@ -14,7 +14,7 @@ previous_url: scheduler-context-menu-customize-context-menu
 __RadScheduler__ gives you the ability to easily customize its default context menu. This can be achieve by using the __ContextMenuOppennig__ event.
 
 >caption Figure 1: RadScheduler Context Menu
-![scheduler-context-menu-customize-context-menu 001](images/scheduler-context-menu-customize-context-menu001.png)
+![WinForms RadScheduler RadScheduler Context Menu](images/scheduler-context-menu-customize-context-menu001.png)
 
 ## Replace the Default and the Appointments Context Menu.
 
@@ -57,10 +57,10 @@ End Sub
 As you can see in the screenshots below, we can set different context menus depending on the element that invokes the context menu creation.
 
 >caption Figure 1: RadScheduler Cell Context Menu
-![scheduler-context-menu-customize-context-menu 002](images/scheduler-context-menu-customize-context-menu002.png)
+![WinForms RadScheduler RadScheduler Cell Context Menu](images/scheduler-context-menu-customize-context-menu002.png)
 
 >caption Figure 1: RadScheduler Appointment Context Menu
-![scheduler-context-menu-customize-context-menu 003](images/scheduler-context-menu-customize-context-menu003.png)
+![WinForms RadScheduler RadScheduler Appointment Context Menu](images/scheduler-context-menu-customize-context-menu003.png)
 
 ## Change the Default Items or and Disable the Context Menu.
 

@@ -47,7 +47,7 @@ Me.RadGridView1.SummaryRowsBottom.Add(summaryRowItem)
 
 >caption Figure 1: Top pinned summary row
 
-![gridview-rows-summary-rows 001](images/gridview-rows-summary-rows001.png)
+![WinForms RadGridView Top pinned summary row](images/gridview-rows-summary-rows001.png)
 
 ## SummaryItem properties
 
@@ -112,7 +112,7 @@ Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 
 >caption Figure 2: Format the summary item
 
-![gridview-rows-summary-rows 002](images/gridview-rows-summary-rows002.png)
+![WinForms RadGridView Format the summary item](images/gridview-rows-summary-rows002.png)
 
 ## Using an AggregateExpression
 
@@ -145,7 +145,7 @@ Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 
 >caption Figure 3: Using AggregateExpression
 
-![gridview-rows-summary-rows 003](images/gridview-rows-summary-rows003.png)
+![WinForms RadGridView Using AggregateExpression](images/gridview-rows-summary-rows003.png)
 
 ## Summary rows in a grouped RadGridView
 
@@ -179,7 +179,7 @@ Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 
 >caption Figure 4: Summary rows in a grouped RadGridView
 
-![gridview-rows-summary-rows 004](images/gridview-rows-summary-rows004.png)
+![WinForms RadGridView Summary rows in a grouped RadGridView](images/gridview-rows-summary-rows004.png)
 
 ## Summary rows in a hierarchical RadGridView
 
@@ -238,7 +238,7 @@ End Sub
 
 >caption Figure 5: Customizing the summary row
 
-![gridview-rows-summary-rows 006](images/gridview-rows-summary-rows006.png)
+![WinForms RadGridView Customizing the summary row](images/gridview-rows-summary-rows006.png)
 
         
 ## Extending the SummaryItem
@@ -305,7 +305,7 @@ End Class
 
 {{endregion}}
 
-![gridview-rows-summary-rows 007](images/gridview-rows-summary-rows007.png)
+![WinForms RadGridView gridview-rows-summary-rows 007](images/gridview-rows-summary-rows007.png)
 
 ## BottomPinnedRowsMode 
 
@@ -316,7 +316,7 @@ You can control the location of the bottom summary rows through the **BottomPinn
 
 |GridViewBottomPinnedRowsMode.Fixed|GridViewBottomPinnedRowsMode.Float|
 |----|----|
-|![gridview-rows-summary-rows 008](images/gridview-rows-summary-rows008.png)|![gridview-rows-summary-rows 009](images/gridview-rows-summary-rows009.png)|
+|![WinForms RadGridView gridview-rows-summary-rows 008](images/gridview-rows-summary-rows008.png)|![WinForms RadGridView gridview-rows-summary-rows 009](images/gridview-rows-summary-rows009.png)|
 
 >note When you use the *Fixed* mode, it is necessary to pin the summary row accessing them by the MasterView.SummaryRows collection. Make sure to set the __IsPinned__ property before setting the __PinPosition__.
 

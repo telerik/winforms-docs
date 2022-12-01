@@ -17,15 +17,15 @@ __RadDataFilter__ allows you to create complex filter criteria with unlimited nu
 To create a filter condition you need to define the __Column/Field__, the operator (__AND__ or __OR__) and the __Value__. For instance, __'Quantity > 200'__ is a simple filter condition, where the __Quantity__ is a column/field name, __'>'__ is the "greater than" operator and __'200'__ is the value. Here is how to create this condition using the **RadDataFilter** user interface. 
 
 1. If no filtering has been applied, __RadDataFilter__ will contain the root operator only. 
-    ![datafilter-end-user-functionality 001](images/datafilter-end-user-functionality001.png)
+    ![WinForms RadDataFilter datafilter-end-user-functionality 001](images/datafilter-end-user-functionality001.png)
 
 2. To add your first filter criteria - click the `Add` button and select __Expression__. It will create a new row with several elements.
 
-     ![datafilter-end-user-functionality 002](images/datafilter-end-user-functionality002.png)
+     ![WinForms RadDataFilter datafilter-end-user-functionality 002](images/datafilter-end-user-functionality002.png)
 
 3. Once the expression item is added you need to set the column/field, the operator and the value.
 
-     ![datafilter-end-user-functionality 003](images/datafilter-end-user-functionality003.png)
+     ![WinForms RadDataFilter datafilter-end-user-functionality 003](images/datafilter-end-user-functionality003.png)
 
 The first drop down contains all the data fields/columns of the data source, to which **RadDataFilter** is bound. They are automatically populated, so you do not need to do any code to get them. The second drop down shows the available logical operators that could be applied against the type of the selected field. For example, the text field will have the __Contains__ or __Starts With__ operators, while the DateTime field will have __Is Greater Than__ operators.
 
@@ -37,17 +37,17 @@ The groups allow you to define the relation between the conditions  or groups in
 By default, the control always has one root group that can contain expressions or other groups. 
 
 The following example shows a single group with two filter expressions in it. If the first OR the second condition are met the entry will fulfill the criteria. 
-    ![datafilter-end-user-functionality 004](images/datafilter-end-user-functionality004.png)
+    ![WinForms RadDataFilter datafilter-end-user-functionality 004](images/datafilter-end-user-functionality004.png)
 
 If you change the condition all the filter expressions must be fulfilled. Here is an example for this as well.
-    ![datafilter-end-user-functionality 005](images/datafilter-end-user-functionality005.png)
+    ![WinForms RadDataFilter datafilter-end-user-functionality 005](images/datafilter-end-user-functionality005.png)
 
 
 ## Drag and Drop
 
 __RadDataFilter__ natively supports drag and drop allowing the end users to perform easy modifications of the visual tree. The drag and drop operation will also change the control`s expression. 
 
-![datafilter-end-user-functionality 006](images/datafilter-end-user-functionality006.gif)
+![WinForms RadDataFilter datafilter-end-user-functionality 006](images/datafilter-end-user-functionality006.gif)
 
 >note __RadDataFilter__ extends the drag and drop functionality provided by __RadTreeView__. Detailed information on how the drag-drop service is working is available [here]({%slug winforms/treeview/drag-and-drop/modify-the-dragdropservice-behavior%}).
 >

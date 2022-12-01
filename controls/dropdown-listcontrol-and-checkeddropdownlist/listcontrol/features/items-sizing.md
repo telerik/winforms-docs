@@ -14,6 +14,6 @@ __RadListControl__ has two modes that determine how large an item will be. These
 
 >caption Figure 1: AutoSizeItems
 
-![dropdown-and-listcontrol-listcontrol-items-sizing 001](images/dropdown-and-listcontrol-listcontrol-items-sizing001.png)
+![WinForms RadListControl AutoSizeItems](images/dropdown-and-listcontrol-listcontrol-items-sizing001.png)
 
 When __AutoSizeItems__ is *false* on the other hand, the user can set the height of every item at once with the __ItemHeight__ property of __RadListControl__. If users decide to set a large font for example, they either have to set __AutoSizeItems__ to *true* so that the items can stretch to accommodate the large text or to remain with __AutoSizeItems__ = *false* but set the __ItemHeight__ property to some value that will be enough to display the whole text.

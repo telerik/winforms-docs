@@ -56,7 +56,7 @@ End Sub
 {{endregion}} 
 
 
-![gridview-printing-support-events 001](images/gridview-printing-support-events001.png)
+![WinForms RadGridView gridview-printing-support-events 001](images/gridview-printing-support-events001.png)
 
 ## PrintCellPaint
 
@@ -109,7 +109,7 @@ End Sub
 
 {{endregion}} 
 
-![gridview-printing-support-events 002](images/gridview-printing-support-events002.png)
+![WinForms RadGridView gridview-printing-support-events 002](images/gridview-printing-support-events002.png)
 # See Also
 * [GridPrintStyle]({%slug winforms/gridview/printing-support/gridprintstyle%})
 
