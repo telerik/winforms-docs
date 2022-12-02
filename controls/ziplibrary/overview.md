@@ -21,7 +21,7 @@ Have you ever wondered how to increase the responsiveness of your applications b
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadZipLibrary Zip Library Overview image](images/ZipLibrary_Overview_01.png)
+![WinForms RadZipLibrary Overview Image](images/ZipLibrary_Overview_01.png)
 
 This is a list with short descriptions of the top-of-the-line features of Telerik's __Zip Library__ control:
         
