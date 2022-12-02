@@ -13,7 +13,7 @@ previous_url: wizard-right-to-left
 
 __RadWizard__ also supports __RightToLeft__ alignment of its elements:
 
-![WinForms RadWizard wizard-rtl 001](images/wizard-rtl001.png)
+![WinForms RadWizard RightToLeft Support](images/wizard-rtl001.png)
 
 You can enable the right-to-left functionality, by setting the __RightToLeft__ property to *True*:
 			

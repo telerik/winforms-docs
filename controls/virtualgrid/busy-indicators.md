@@ -18,7 +18,7 @@ While this indicator is shown the entire grid is disabled. It is useful when the
 
 >caption Figure 1: WaitingBar in RadVirtualGrid enabled.
 
-![WinForms RadVirtualGrid WaitingBar in RadVirtualGrid enabled](images/virtualgrid-busy-indicators001.gif)        
+![WinForms RadVirtualGrid WaitingBar](images/virtualgrid-busy-indicators001.gif)        
 
 The following snippet shows how you can show/hide the waiting bar:
 
@@ -44,7 +44,7 @@ The waiting icon can be shown in each row header. With it you can indicate that 
 
 >caption Figure 2: Busy indicators in RadVirtualGrid.
 
-![WinForms RadVirtualGrid Busy indicators in RadVirtualGrid](images/virtualgrid-busy-indicators002.gif)
+![WinForms RadVirtualGrid Busy indicators](images/virtualgrid-busy-indicators002.gif)
 
 
 The following snippet shows how you can show/hide the waiting icon:

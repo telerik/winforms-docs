@@ -20,17 +20,17 @@ There are few expected errors that could appear using the control:
 
 * CameraErrorState.**NoCamera**: This error appears when there is no camera device connected to the computer.
 
-	![WinForms RadWebcam webcam-errors 001](images/webcam-errors001.png)
+	![WinForms RadWebCam NoCamera Error](images/webcam-errors001.png)
 
 * CameraErrorState.**CameraIsBusy**: This error appears when another application is using the camera device.
 
-	![WinForms RadWebcam webcam-errors 002](images/webcam-errors002.png)
+	![WinForms RadWebCam CameraIsBusy Error](images/webcam-errors002.png)
 
 >caution **RadWebCam** can be used by a single application. Once a second application tries to access it, **CameraIsBusy** error will be shown. 
 
 * CameraErrorState.**CameraAccessDenied**: This error appears when the access to the camera is denied.
 
-	![WinForms RadWebcam webcam-errors 004](images/webcam-errors004.png)
+	![WinForms RadWebCam AccessDenied Error](images/webcam-errors004.png)
 
 ## Replacing the Error Message
 
@@ -62,7 +62,7 @@ To replace the error message use the **CameraError** event of **RadWebCam**. The
 
 {{endregion}} 
 
-![WinForms RadWebcam webcam-errors 003](images/webcam-errors003.png)
+![WinForms RadWebCam Replace Error Message](images/webcam-errors003.png)
 
 
 ## See Also

@@ -16,7 +16,7 @@ The **VirtualKeyboardLayout** offers a public **Rows** property which is an Obse
 
 The following code snippet demonstrates how to customize the `F1` button from the functions layout and the `*` key from the numpad layout.
 
-![WinForms RadVirtual-Keyboard winforms/virtual-keyboard-accessing-and-customizing-elements 001](images/virtual-keyboard-accessing-and-customizing-elements001.png) 
+![WinForms RadVirtualKeyboard Customize Elements](images/virtual-keyboard-accessing-and-customizing-elements001.png) 
 
  
 

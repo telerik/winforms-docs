@@ -17,7 +17,7 @@ RadVirtualGrid provides you with a selection functionality, which allows the use
 
 To select an item in __RadVirtualGrid__ click in the rectangle area of the desired row. By default the user can select only one row (the entire row is selected). 
 
-![WinForms RadVirtualGrid virtualgrid-selection001](images/virtualgrid-selection001.png)
+![WinForms RadVirtualGrid Row Selection](images/virtualgrid-selection001.png)
 
 
 ## Cell Selection
@@ -39,7 +39,7 @@ Me.radVirtualGrid1.SelectionMode = VirtualGridSelectionMode.CellSelect
 
 After setting this property, to select a cell in __RadVirtualGrid__, click the desired cell.
 
-![WinForms RadVirtualGrid virtualgrid-selection002](images/virtualgrid-selection002.png)
+![WinForms RadVirtualGrid Cell Selection](images/virtualgrid-selection002.png)
 
 ## Events
 

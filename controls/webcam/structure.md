@@ -14,19 +14,19 @@ This article shows the inner structure and organization of the elements which bu
  
 >caption Figure 1: RadWebCam's elements hierarchy
 
-![WinForms RadWebcam RadWebCam's elements hierarchy](images/webcam-structure001.png)
+![WinForms RadWebCam's elements hierarchy](images/webcam-structure001.png)
 
 >caption Figure 2: RadWebCam - Initial State
 
-![WinForms RadWebcam RadWebCam - Initial State](images/webcam-structure002.png)
+![WinForms RadWebCam's Initial State](images/webcam-structure002.png)
 
 >caption Figure 3: RadWebCam - Recording State
 
-![WinForms RadWebcam RadWebCam - Recording State](images/webcam-structure003.png)
+![WinForms RadWebcam's Recording State](images/webcam-structure003.png)
 
 >caption Figure 4: RadWebCam - Settings Dialog
 
-![WinForms RadWebcam RadWebCam - Settings Dialog](images/webcam-structure004.png)
+![WinForms RadWebcam's Settings Dialog](images/webcam-structure004.png)
 
 
 ## See Also

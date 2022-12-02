@@ -25,16 +25,16 @@ Currently, __RadVirtualGrid__ supports the following editors out of the box:
 
 |Editor type|Description|Image|
 |----|----|----|
-|__VirtualGridCalculatorEditor__|Represents a calculator editor|![WinForms RadVirtualGrid virtualgrid-editing-using-custom-editors001](images/virtualgrid-editing-using-custom-editors001.png)|
-|__VirtualGridDateTimeEditor__|Represents a date time editor|![WinForms RadVirtualGrid virtualgrid-editing-using-custom-editors002](images/virtualgrid-editing-using-custom-editors002.png)|
-|__VirtualGridDropDownListEditor__|Represents a DropDownList editor|![WinForms RadVirtualGrid virtualgrid-editing-using-custom-editors003](images/virtualgrid-editing-using-custom-editors003.png)|
-|__VirtualGridMaskedEditBoxEditor__|Represents a masked editbox editor|![WinForms RadVirtualGrid virtualgrid-editing-using-custom-editors004](images/virtualgrid-editing-using-custom-editors004.png)|
-|__VirtualGridSpinEditor__|Represents a spin editor|![WinForms RadVirtualGrid virtualgrid-editing-using-custom-editors005](images/virtualgrid-editing-using-custom-editors005.png)|
-|__VirtualGridTextBoxControlEditor__|Represents a textbox control editor|![WinForms RadVirtualGrid virtualgrid-editing-using-custom-editors006](images/virtualgrid-editing-using-custom-editors006.png)|
-|__VirtualGridTextBoxEditor__|Represents a textbox editor|![WinForms RadVirtualGrid virtualgrid-editing-using-custom-editors006](images/virtualgrid-editing-using-custom-editors006.png)|
-|__VirtualGridTimePickerEditor__|Represents a time picker editor|![WinForms RadVirtualGrid virtualgrid-editing-using-custom-editors007](images/virtualgrid-editing-using-custom-editors007.png)|
-|__VirtualGridBrowseEditor__|Represents a browse editor|![WinForms RadVirtualGrid virtualgrid-editing-using-custom-editors008](images/virtualgrid-editing-using-custom-editors008.png)|
-|__VirtualGridColorPickerEditor__|Represents a color editor|![WinForms RadVirtualGrid virtualgrid-editing-using-custom-editors009](images/virtualgrid-editing-using-custom-editors009.png)|
+|__VirtualGridCalculatorEditor__|Represents a calculator editor|![WinForms RadVirtualGrid VirtualGridCalculatorEditor](images/virtualgrid-editing-using-custom-editors001.png)|
+|__VirtualGridDateTimeEditor__|Represents a date time editor|![WinForms RadVirtualGrid VirtualGridDateTimeEditor](images/virtualgrid-editing-using-custom-editors002.png)|
+|__VirtualGridDropDownListEditor__|Represents a DropDownList editor|![WinForms RadVirtualGrid VirtualGridDropDownListEditor](images/virtualgrid-editing-using-custom-editors003.png)|
+|__VirtualGridMaskedEditBoxEditor__|Represents a masked editbox editor|![WinForms RadVirtualGrid VirtualGridMaskedEditBoxEditor](images/virtualgrid-editing-using-custom-editors004.png)|
+|__VirtualGridSpinEditor__|Represents a spin editor|![WinForms RadVirtualGrid VirtualGridSpinEditor](images/virtualgrid-editing-using-custom-editors005.png)|
+|__VirtualGridTextBoxControlEditor__|Represents a textbox control editor|![WinForms RadVirtualGrid VirtualGridTextBoxControlEditor](images/virtualgrid-editing-using-custom-editors006.png)|
+|__VirtualGridTextBoxEditor__|Represents a textbox editor|![WinForms RadVirtualGrid VirtualGridTextBoxEditor](images/virtualgrid-editing-using-custom-editors006.png)|
+|__VirtualGridTimePickerEditor__|Represents a time picker editor|![WinForms RadVirtualGrid VirtualGridTimePickerEditor](images/virtualgrid-editing-using-custom-editors007.png)|
+|__VirtualGridBrowseEditor__|Represents a browse editor|![WinForms RadVirtualGrid VirtualGridBrowseEditor](images/virtualgrid-editing-using-custom-editors008.png)|
+|__VirtualGridColorPickerEditor__|Represents a color editor|![WinForms RadVirtualGrid VirtualGridColorPickerEditor](images/virtualgrid-editing-using-custom-editors009.png)|
 
 
 __RadVirtualGrid__ exposes an API for defining the data types of its columns. If the data type is explicitly set it wil determine the cell editors used in this column. Otherwise, the editor is determined by the cell value. The API works by column index.

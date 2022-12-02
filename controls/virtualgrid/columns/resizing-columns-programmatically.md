@@ -99,7 +99,7 @@ Columns can be auto-sized to fit the available space in __RadVirtualGrid__. It i
 
 >caption Figure 4: AutoSizeColumnsMode.*Fill*
 
-![WinForms RadVirtualGrid AutoSizeColumnsMode*Fill*](images/virtualgrid-columns-resizing-columns004.gif)
+![WinForms RadVirtualGrid AutoSizeColumnsMode Fill](images/virtualgrid-columns-resizing-columns004.gif)
 
 {{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=AutoSizeColumnsMode}} 
 {{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=AutoSizeColumnsMode}}

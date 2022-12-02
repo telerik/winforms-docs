@@ -12,7 +12,7 @@ position: 0
 
 The Smart Tag for __RadVirtualGrid__ lets you quickly access common tasks involved with building the grid and customizing appearance through themes.
 
-![WinForms RadVirtualGrid virtualgrid-design-time-smart-tag001](images/virtualgrid-design-time-smart-tag001.png)
+![WinForms RadVirtualGrid Design Time Smart Tag](images/virtualgrid-design-time-smart-tag001.png)
 
 * __Common Tasks__
 

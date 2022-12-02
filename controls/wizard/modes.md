@@ -31,7 +31,7 @@ Me.RadWizard1.Mode = WizardMode.Wizard97
 
 >caption Figire 1: WizardMode.Wizard97
 
-![WinForms RadWizard WizardModeWizard97](images/wizard-mode001.png)
+![WinForms RadWizard WizardMode Wizard97](images/wizard-mode001.png)
 
 The aero style of WizardMode.*Aero* can be enabled (for Windows Vista and later versions) or disabled. You can achieve it using the **EnableAeroStyle**  property of __RadWizard__.
 
@@ -55,7 +55,7 @@ Me.RadWizard1.EnableAeroStyle = True
 
 >caption Figure 2: WizardMode.Aero with enabled aero
 
-![WinForms RadWizard WizardModeAero with enabled aero](images/wizard-mode002.png)
+![WinForms RadWizard WizardMode Aero with enabled aero](images/wizard-mode002.png)
 
 #### Disable __Aero Style__
 
@@ -77,7 +77,7 @@ Me.RadWizard1.EnableAeroStyle = False
 
 >caption Figure 3: WizardMode.Aero with disabled aero
 
-![WinForms RadWizard WizardModeAero with disabled aero](images/wizard-mode003.png)
+![WinForms RadWizard WizardMode Aero with disabled aero](images/wizard-mode003.png)
 
 When __RadWizard__ is in __Aero mode__ with disabled __Aero style__, 
 the appearance of the control is defined by the styles in its theme.

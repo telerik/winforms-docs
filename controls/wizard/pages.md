@@ -16,7 +16,7 @@ __RadWizard__ contains a collection of __WizardPage__ elements. The pages are __
 
 Each wizard page contains a __ContentArea__ which hosts Win Forms controls. Below is an example of a page containing several controls:
 
-![WinForms RadWizard wizard-pages 001](images/wizard-pages001.png)
+![WinForms RadWizard Pages](images/wizard-pages001.png)
 
 You can define the page header’s title and header text by using the __Title__ and __Header__ properties of the page.
 		

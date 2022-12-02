@@ -12,7 +12,7 @@ position: 0
 
 __RadVirtualGrid__  supports data sorting. Set the RadVirtualGrid.__AllowSorting__ property to *true*  in order to enable the user sorting feature. To enable the multiple columns sorting, you should set the RadVirtualGrid.__AllowMultiColumnSorting__ property to *true*: 
  
-![WinForms RadVirtualGrid virtualgrid-sorting 001](images/virtualgrid-sorting001.png)
+![WinForms RadVirtualGrid AllowSorting](images/virtualgrid-sorting001.png)
 
 #### Enabling the user sorting 
 
@@ -30,7 +30,7 @@ Me.RadVirtualGrid1.AllowSorting = True
 
 {{endregion}}
 
-![WinForms RadVirtualGrid virtualgrid-sorting 002](images/virtualgrid-sorting002.png)
+![WinForms RadVirtualGrid AllowMultiColumnSorting](images/virtualgrid-sorting002.png)
 
 #### Enabling multiple columns sorting
 

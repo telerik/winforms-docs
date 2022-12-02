@@ -14,7 +14,7 @@ __RadVirtualGrid__ manages user mouse and keyboard input over its rows by __Virt
 
 You can find below a sample code snippet demonstrating how to override the default up/down navigation logic when pressing the up/down arrow keys and show a message to confirm the operation. For this purpose, we should create a derivative of __VirtualGridInputBehavior__ and override its __HandleUpKey__ and __HandleDownKey__ methods:
 
-![WinForms RadVirtualGrid virtualgrid-input-behavior 001](images/virtualgrid-input-behavior001.gif)
+![WinForms RadVirtualGrid InputBehavior](images/virtualgrid-input-behavior001.gif)
 
 #### Custom VirtualGridInputBehavior
 
