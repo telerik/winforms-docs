@@ -14,7 +14,7 @@ This article aims to show a sample approach how to create a custom function, |Ab
 
 |Default functions|Custom function|
 |----|----|
-|![WinForms RadCalculator calculator-custom-functions 001](images/calculator-custom-functions001.png)|![WinForms RadCalculator calculator-custom-functions 002](images/calculator-custom-functions002.png)|
+|![WinForms RadCalculator Custom Function](images/calculator-custom-functions001.png)|![WinForms RadCalculator calculator-custom-functions 002](images/calculator-custom-functions002.png)|
  
 >note The exact implementation of the custom calculation is just a sample approach. It may be customized according to the specific custom requirements that need to be covered.
 

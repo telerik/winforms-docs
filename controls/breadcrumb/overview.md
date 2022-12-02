@@ -17,9 +17,9 @@ As of **R3 2019** Telerik UI for WinForms suite offers an improved **RadBreadCru
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadBreadCrumb breadcrumb-overview 002](images/breadcrumb-overview002.png)
+![WinForms RadBreadCrumb Overview Sample](images/breadcrumb-overview002.png)
 
-![WinForms RadBreadCrumb breadcrumb-overview 001](images/breadcrumb-overview001.png)
+![WinForms RadBreadCrumb Sample Overview](images/breadcrumb-overview001.png)
 
 ## Key Features
 

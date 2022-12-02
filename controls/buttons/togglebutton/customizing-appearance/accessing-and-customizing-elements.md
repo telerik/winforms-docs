@@ -18,16 +18,16 @@ Accessing and customizing elements can be performed either at design time, or at
 
 You can access and modify the style for different elements in __RadToggleButton__ by using the Element hierarchy editor.
 
->caption Fig.1 Element hierarchy editor
+>caption Figure 1: Element hierarchy editor
 
-![WinForms RadButtons Element hierarchy editor](images/togglebutton-customizing-appearance-accessing-and-customizing-elements001.png)
+![WinForms RadToggleButton Element Hierarchy Editor](images/togglebutton-customizing-appearance-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
->caption Fig.2 Customize elements
+>caption Figure 2: Customize elements
 
-![WinForms RadButtons Customize elements](images/togglebutton-customizing-appearance-accessing-and-customizing-elements002.png)
+![WinForms RadToggleButton Customize elements](images/togglebutton-customizing-appearance-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

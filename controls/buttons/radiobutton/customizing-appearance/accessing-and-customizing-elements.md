@@ -20,14 +20,14 @@ You can access and modify the style for different elements in __RadRadioButton__
 
 >caption Figure 1: Element hierarchy editor
 
-![WinForms RadButtons Element hierarchy editor](images/radiobutton-customizing-appearance-accessing-and-customizing-elements001.png)
+![WinForms RadRadioButton Element Hierarchy Editor](images/radiobutton-customizing-appearance-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
 >caption Figure 2: Customize elements
 
-![WinForms RadButtons Customize elements](images/radiobutton-customizing-appearance-accessing-and-customizing-elements002.png)
+![WinForms RadRadioButton Customize Elements](images/radiobutton-customizing-appearance-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

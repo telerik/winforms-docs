@@ -19,7 +19,7 @@ When **RadCallout** is shown to a target control, e.g. RadButton, and this targe
 
 >caption Move with target control
  
-![WinForms RadCallout Move with target control](images/callout-key-features001.gif)
+![WinForms RadCallout Move With Target Control](images/callout-key-features001.gif)
 
 This behavior is controlled by the **MoveWithParentForm** property which default value is *true*. If you don't want the callout form to be moved together with the target control, set the **MoveWithParentForm** property to *false*.
 
@@ -27,7 +27,7 @@ If the target control is close to one of the monitor's edges (e.g. the left edge
 
 >caption Move close to the monitor's edges
 
-![WinForms RadCallout Move close to the monitor's edges](images/callout-key-features002.gif)
+![WinForms RadCallout Move Close to The Monitor's Edges](images/callout-key-features002.gif)
 
 ## AutoClose
 
@@ -35,13 +35,13 @@ The **AutoClose** property indicates whether the callout will automatically clos
 
 >caption AutoClose=true
 
-![WinForms RadCallout AutoClose=true](images/callout-key-features003.gif)
+![WinForms RadCallout AutoClose true](images/callout-key-features003.gif)
 
 If *false*, the callout form remains shown. The developer is responsible for closing the callout form with the RadCallout.**Close** method.
 
 >caption AutoClose=false
 
-![WinForms RadCallout AutoClose=false](images/callout-key-features004.gif)
+![WinForms RadCallout AutoClose false](images/callout-key-features004.gif)
 
 ## Animations
 
@@ -81,7 +81,7 @@ Me.RadCallout1.AnimationManager.CloseAnimationDuration = 3000
 
 >caption Callout Animation
 
-![WinForms RadCallout Callout Animation](images/callout-key-features005.gif)
+![WinForms RadCallout Animation](images/callout-key-features005.gif)
 
 # See Also
 

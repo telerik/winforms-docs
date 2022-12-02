@@ -16,7 +16,7 @@ Select __RadCheckBox__ and click the small arrow on the top right position in or
 
 >caption Figure 1: Smart Tag
 
-![WinForms RadButtons Smart Tag](images/buttons-checkbox-desing-time001.png)
+![WinForms RadCheckBox Smart Tag](images/buttons-checkbox-desing-time001.png)
 
 * __Common Tasks__
 

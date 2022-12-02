@@ -66,7 +66,7 @@ End Sub
 
 >caption Figure 1: The zoom level is limited to months.
 
-![WinForms RadCalendar The zoom level is limited to months](images/calendar-customizing-behavior-customizing-zoom-navigation001.gif)
+![WinForms RadCalendar The Zoom Level is Limited to Months](images/calendar-customizing-behavior-customizing-zoom-navigation001.gif)
 
 ## See Also
 

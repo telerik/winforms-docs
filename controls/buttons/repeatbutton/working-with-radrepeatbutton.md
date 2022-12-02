@@ -83,4 +83,4 @@ End Sub
 
 {{endregion}} 
 
-![WinForms RadButtons buttons-repeatbutton-overview 001](images/buttons-repeatbutton-overview001.gif)
+![WinForms RadRepeatButton Overview](images/buttons-repeatbutton-overview001.gif)

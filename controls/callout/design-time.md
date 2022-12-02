@@ -17,7 +17,7 @@ To start using **RadCallout**, just drag it from the toolbox and drop it onto th
 
 Select **RadCallout** and click the small arrow on the top right position in order to open the Smart Tag.
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
 
 ![WinForms RadCallout Smart Tag](images/callout-design-time001.png) 
 
@@ -33,7 +33,7 @@ It is possible to associate any control available on the form. UserControls are 
 
 **RadCallout** allows adjusting the arrow direction, close action and other properties at design time:
  
->caption Fig.2 Properties
+>caption Figure 2: Properties
 
 ![WinForms RadCallout Properties](images/callout-design-time002.png) 
 

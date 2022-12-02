@@ -12,7 +12,7 @@ previous_url: calendar-getting-started
 # Getting Started
 
 
-This tutorial will demonstrate adding selected and special days to the calendar at design time, then iterating and displaying those dates at runtime.![WinForms RadCalendar calendar-getting-started 004](images/calendar-getting-started004.gif)
+This tutorial will demonstrate adding selected and special days to the calendar at design time, then iterating and displaying those dates at runtime.![WinForms RadCalendar Getting Started](images/calendar-getting-started004.gif)
 
 1. In a new Windows Application form drop a __RadCalendar__ control. Set the __AllowMultipleSelect__ property to *true*.
           
@@ -24,17 +24,17 @@ This tutorial will demonstrate adding selected and special days to the calendar 
 1. Click the __Add__ button to append a new selected date to the collection. In the __Value__ property for the date select "Today" from the drop-down calendar.
 
 1. Add two more selected dates and set their __Value__ properties to the two days following "Today".
- ![WinForms RadCalendar calendar-getting-started 001](images/calendar-getting-started001.png)
+ ![WinForms RadCalendar Getting Started Selected Datess](images/calendar-getting-started001.png)
 
 1. In the `Properties` window click the ellipses for the __SpecialDays__ property of the __RadCalendar__. 
 
 
 1. Click the __Add__ button to append a new __RadCalendarDay__ to the collection.
 
-1. Set the __Date__ property for the special day to the last day of the month.![WinForms RadCalendar calendar-getting-started 002](images/calendar-getting-started002.png)
+1. Set the __Date__ property for the special day to the last day of the month.![WinForms RadCalendar Date Property](images/calendar-getting-started002.png)
 
 1. Set the __Disabled__ property to true and the __Recurring__ property to __DayInMonth.__
- ![WinForms RadCalendar calendar-getting-started 003](images/calendar-getting-started003.png)
+ ![WinForms RadCalendar Getting Started Disabled Recurring](images/calendar-getting-started003.png)
 
 1. Double-Click the __RadButton__ in the designer and add the following code to the __Click__ event handler. This code will iterate and list results for the __SelectedDates__ and __SpecialDays__ collections.
 

@@ -15,7 +15,7 @@ The __Culture__ property can be set using the drop down list in the Properties 
 
 >caption Figure 1: RadCalendar with French culture.
 
-![WinForms RadCalendar RadCalendar with French culture](images/calendar-localization-globalization-properties001.png)
+![WinForms RadCalendar With French culture](images/calendar-localization-globalization-properties001.png)
 
 #### Setting CultureInfo in code 
 

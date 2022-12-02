@@ -33,7 +33,7 @@ Click the ellipses in the `Property Window` to edit the __SelecteDates DateTime_
 
 >caption Figure 1: Add selected dates.
 
-![WinForms RadCalendar Add selected dates](images/calendar-design-time-support-adding-selected-dates001.png)
+![WinForms RadCalendar Add Selected Dates](images/calendar-design-time-support-adding-selected-dates001.png)
 
 ## See Also
 

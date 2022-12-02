@@ -16,7 +16,7 @@ __RadBindingNavigator__ extends [RadCommandBar]({%slug winforms/commandbar%}) co
 
 >caption Figure 1: RadBindingNavigator elements.
 
-![WinForms RadBindingNavigator RadBindingNavigator elements](images/bindingnavigator-structure 001.png)
+![WinForms RadBindingNavigator RadBindingNavigator Structure](images/bindingnavigator-structure 001.png)
 
    
 Adding a __RadBindingNavigator__ control to a form and binding it to a data source, such as a [BindingSource](http://msdn.microsoft.com/en-us/library/system.windows.forms.bindingsource%28v=vs.110%29.aspx), will automatically establish relationships between the buttons and the BindingSource methods. In the list below are represented all relationships.

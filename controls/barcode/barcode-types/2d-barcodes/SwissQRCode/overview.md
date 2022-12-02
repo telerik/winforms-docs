@@ -128,6 +128,6 @@ Once you've set up the **SwissQRCodeValueStringBuilder** you can call its **Vali
 
 Invoking the code from **Example 3** will generate the following result:
 
-![WinForms RadBarcode winforms-2d-barcodes-swissqrcode-overview 002](images/winforms-2d-barcodes-swissqrcode-overview002.png)
+![WinForms RadBarcode A SwissQRCode Validate](images/winforms-2d-barcodes-swissqrcode-overview002.png)
 
  

@@ -13,7 +13,7 @@ CTAControlName: Callout
 
 This article shows how you can start using **RadCallout**. The following result will be achieved at the end of this tutorial:
 
-![WinForms RadCallout callout-getting-started 001](images/callout-getting-started001.png)
+![WinForms RadCallout Getting Started](images/callout-getting-started001.png)
 
 >note The design may vary according to the applied theme to the application. 
 
@@ -33,13 +33,13 @@ The following UserControl contains:
 
 * **RadLabel** for displaying the main information message "Select a Language and continue to a Version".
 
-![WinForms RadCallout callout-getting-started 002](images/callout-getting-started002.png)
+![WinForms RadCallout RadLabel](images/callout-getting-started002.png)
 
 3\. Build the project and then add the UserControl from the toolbox to the form.
 
 4\. Select **RadCallout** and click the small arrow on the top right position in order to open the Smart Tag. Then set the **AssociatedControl** to the UserControl we just added onto the form:
 
-![WinForms RadCallout callout-getting-started 003](images/callout-getting-started003.png)
+![WinForms RadCallout AssociatedControl](images/callout-getting-started003.png)
 
 5\. At design time double-click the **RadButton** that we added in step 1. Thus, its **Click** event handler will be generated. Now, when the button is clicked, the **RadCallout** will be shown:
 

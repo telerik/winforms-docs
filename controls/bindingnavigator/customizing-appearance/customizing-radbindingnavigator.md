@@ -42,7 +42,7 @@ radBindingNavigator1.BindingNavigatorElement.NextButton.GradientStyle = Telerik.
 
 >caption The NextButton background is changed:
 
-![WinForms RadBindingNavigator ](images/bindingnavigator-overview-customizing-radbindingnavigator002.png)
+![WinForms RadBindingNavigator Modify NextButton Background](images/bindingnavigator-overview-customizing-radbindingnavigator002.png)
 
 
 ### Using glyphs
@@ -80,7 +80,7 @@ radBindingNavigator1.BindingNavigatorElement.DeleteButton.Text = "\ue301"
 
 >caption The AddNewButton and DeleteButton are customized with custom glyphs:
 
-![WinForms RadBindingNavigator ](images/bindingnavigator-overview-customizing-radbindingnavigator003.png)
+![WinForms RadBindingNavigator Customized AddNewButton And DeleteButton](images/bindingnavigator-overview-customizing-radbindingnavigator003.png)
 
 ## See Also
 

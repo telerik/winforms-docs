@@ -30,4 +30,4 @@ radSplitButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 {{endregion}} 
 
 
-![WinForms RadButtons buttons-splitbutton-rtl 001](images/buttons-splitbutton-rtl001.png)
+![WinForms RadSplitButton Right to Left](images/buttons-splitbutton-rtl001.png)

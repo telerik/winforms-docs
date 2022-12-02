@@ -17,7 +17,7 @@ To start using **RadCalculator**, just drag it from the toolbox and drop it onto
 
 Select **RadCalculator** and click the small arrow on the top right position in order to open the Smart Tag.
 
-![WinForms RadCalculator winforms/calculator-design-time 001](images/calculator-design-time001.png) 
+![WinForms RadCalculator Smart Tag](images/calculator-design-time001.png) 
 
 **Common Tasks**
 

@@ -22,7 +22,7 @@ __RadCalendar__ supports all common features you would find in the standard Mont
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadCalendar calendar-calendar-structure 001](images/calendar-overview001.png)
+![WinForms RadCalendar Overview](images/calendar-overview001.png)
 
 ## See Also
 

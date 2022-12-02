@@ -23,7 +23,7 @@ Use __RadioCheckAlignment__ to control where the radio button appears in relatio
 
 To add an image to RadRadioButton, click on the __Image__ property (the ellipsis button) to launch the __Select Resource__ dialog. Use the Import button to load image files as a Local Resource, i.e. for that radio button only, or as a Project resource file where other components can share the same images.
 
-![WinForms RadButtons buttons-radiobutton-designing-radradiobutton 002](images/buttons-radiobutton-designing-radradiobutton002.png)
+![WinForms RadRadioButton Adding Images](images/buttons-radiobutton-designing-radradiobutton002.png)
 
 ## Text and Image Layout
 

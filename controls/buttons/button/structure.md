@@ -14,7 +14,7 @@ This article will show the internal elements structure of __RadButton__.
 
 >caption Figure 1: RadButton's elements hierarchy
 
-![WinForms RadButtons RadButton's elements hierarchy](images/buttons-button-structure001.png)
+![WinForms RadButtons Elements Hierarchy](images/buttons-button-structure001.png)
 
 1. __FillPrimitive__: represents the button's filling
 1. __ImageAndTextLayoutPanel__ <br>
@@ -24,5 +24,5 @@ This article will show the internal elements structure of __RadButton__.
 
 >caption Figure 2: RadButton's structure
 
-![WinForms RadButtons RadButton's structure](images/buttons-button-structure002.png)
+![WinForms RadButtons Structure](images/buttons-button-structure002.png)
 

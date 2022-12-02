@@ -14,7 +14,7 @@ This article will show the internal elements structure of __RadSplitButton__:
 
 >caption Figure 1: RadDropDownButton's elements hierarchy
 >
-![WinForms RadButtons RadDropDownButton's elements hierarchy](images/buttons-splitbutton-structure001.png)
+![WinForms RadDropDownButton's elements hierarchy](images/buttons-splitbutton-structure001.png)
 
 1. __RadArrowButtonElement__: represents the arrow button that opens the popup
 2. __ActionButtonElement__: represents the action button element
@@ -23,4 +23,4 @@ This article will show the internal elements structure of __RadSplitButton__:
 
 >caption Figure 2: RadDropDownButton's structure
 
-![WinForms RadButtons RadDropDownButton's structure](images/buttons-splitbutton-structure002.png)
+![WinForms RadDropDownButton's structure](images/buttons-splitbutton-structure002.png)

@@ -34,7 +34,7 @@ __RadCalenadar__ consists of the following elements:
 * __Fast Navigation Popup:__ Displays a popup window with the months and years surrounding the selected date.
 
 >caption The fast navigation popup.
-![WinForms RadCalendar The fast navigation popup](images/calendar-calendar-structure002.png)
+![WinForms RadCalendar The Fast Navigation Popup](images/calendar-calendar-structure002.png)
 
 # Element Hierarchy
 
@@ -42,7 +42,7 @@ __RadCalendar__ uses the Telerik Presentation Framework which enables rich exper
 
 >caption Figure 2: RadCalendar element hierarchy.
 
-![WinForms RadCalendar RadCalendar element hierarchy](images/calendar-calendar-structure003.png)
+![WinForms RadCalendar Element Hierarchy](images/calendar-calendar-structure003.png)
 
 * __RadCalenadarElement:__ The main calendar element, contains all other elements. 
 * __CalendaraStatusElement:__ The footer element contains the current date/time and the Clear ant Today buttons.

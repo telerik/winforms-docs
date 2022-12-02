@@ -15,7 +15,7 @@ This tutorial will walk you through the creation of a sample application that co
 
 The following picture shows the final result produced by the code of this tutorial.
 
-![WinForms RadCalculator calculator-getting-started 001](images/calculator-getting-started001.png)
+![WinForms RadCalculator Getting Started](images/calculator-getting-started001.png)
 
 >note The design may vary according to the applied theme to the application. 
 

@@ -18,4 +18,4 @@ __RadRepeatButton__ provides press-and-hold functionality. While the mouse butt
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadButtons buttons-repeatbutton-overview 001](images/buttons-repeatbutton-overview001.gif)
+![WinForms RadRepeatButton Overview](images/buttons-repeatbutton-overview001.gif)

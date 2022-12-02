@@ -19,14 +19,14 @@ You can access and modify the style for different elements in __RadButton__ by u
 
 >caption Figure 1: Element hierarchy editor
 
-![WinForms RadButtons Element hierarchy editor](images/button-customizing-appearance-accessing-and-customizing-elements001.png)
+![WinForms RadButtons Element Hierarchy Editor](images/button-customizing-appearance-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
 >caption Figure 2: Customize elements
 
-![WinForms RadButtons Customize elements](images/button-customizing-appearance-accessing-and-customizing-elements002.png)
+![WinForms RadButtons Customize Elements Programmatically](images/button-customizing-appearance-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

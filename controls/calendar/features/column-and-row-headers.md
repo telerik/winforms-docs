@@ -15,7 +15,7 @@ __RadCalendar__ supports row and column headers that can be enabled by setting t
 
 >caption Figure 1: The column/row headers and the view selector
 
-![WinForms RadCalendar The column/row headers and the view selector](images/calendar-features-column-and-row-headers001.png)
+![WinForms RadCalendar The Column/Row Headers and The View Selector](images/calendar-features-column-and-row-headers001.png)
 
 {{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=showingHeaders}} 
 {{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=showingHeaders}} 
@@ -56,7 +56,7 @@ Me.RadCalendar1.AllowRowHeaderSelectors = True
 
 {{endregion}} 
 >caption Selecting specific day with column header
-![WinForms RadCalendar Selecting specific day with column header](images/calendar-fatures-column-and-row-headers002.png)
+![WinForms RadCalendar Selecting Specific Day With Column Header](images/calendar-fatures-column-and-row-headers002.png)
 
 
 ## See Also

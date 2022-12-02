@@ -34,7 +34,7 @@ A __RadCalendarDay__ object can be configured as a repeating event by setting th
 
 The example below creates a __RadCalendarDay__ and assigns the __Date__. The __Recurring__ value of __DayInMonth__ causes the day to show for the 5th of every month.
 
-![WinForms RadCalendar calendar-features-repeating-events 001](images/calendar-features-repeating-events001.png)
+![WinForms RadCalendar Repeating Events](images/calendar-features-repeating-events001.png)
 
 __Configuring a recurring event__
 

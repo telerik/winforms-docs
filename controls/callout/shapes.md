@@ -15,7 +15,7 @@ CTAControlName: Callout
 
 * **CalloutType.Rectangle**:
 
-![WinForms RadCallout callout-shapes 001](images/callout-shapes001.png)
+![WinForms RadCallout Rectangle](images/callout-shapes001.png)
 
 {{source=..\SamplesCS\Callout\CalloutSettings.cs region=Rectangle}} 
 {{source=..\SamplesVB\Callout\CalloutSettings.vb region=Rectangle}} 
@@ -34,7 +34,7 @@ CTAControlName: Callout
 
 * **CalloutType.RoundedRectangle**:
 
-![WinForms RadCallout callout-shapes 002](images/callout-shapes002.png)
+![WinForms RadCallout RoundedRectangle](images/callout-shapes002.png)
 
 {{source=..\SamplesCS\Callout\CalloutSettings.cs region=RoundedRectangle}} 
 {{source=..\SamplesVB\Callout\CalloutSettings.vb region=RoundedRectangle}} 

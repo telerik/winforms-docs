@@ -14,7 +14,7 @@ previous_url: calendar-customizing-appearance-header, /calendar/customizing-appe
 The Header area of __RadCalendar__ is located above the calendar's content area. The header contains the calendar title and the navigation buttons.
 
 >caption Figure 1: The structure of RadCalendar header.
-![WinForms RadCalendar The structure of RadCalendar header](images/calendar-customizing-appearance-header001.png)
+![WinForms RadCalendar Header Structure](images/calendar-customizing-appearance-header001.png)
 
 Use the the following properties to modify title appearance and functionality:
 

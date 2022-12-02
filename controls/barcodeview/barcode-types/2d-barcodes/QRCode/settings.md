@@ -12,7 +12,7 @@ position: 0
 
 This article explains the specific QR code settings.
 
-![WinForms RadBarcodeView winforms/barcode-2d-barcodes-qrcode-settings 001](images/barcode-2d-barcodes-qrcode-settings001.png)
+![WinForms RadBarcodeView 2D QR Settings](images/barcode-2d-barcodes-qrcode-settings001.png)
 
 ## Mode
 

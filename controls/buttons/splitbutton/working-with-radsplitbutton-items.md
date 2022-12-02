@@ -144,11 +144,11 @@ End Sub
 
 You can display images as well as text on your menu items.
 
-![WinForms RadButtons buttons-splitbutton-working-with-radsplitbutton-items 003](images/buttons-splitbutton-working-with-radsplitbutton-items003.png)
+![WinForms RadSplitButton Image Items](images/buttons-splitbutton-working-with-radsplitbutton-items003.png)
 
 To add an image to your menu item, click in the __Image__ property of the __RadMenuItem__, and then click the ellipsis button to launch the __Select Resource__ dialog.
 
-![WinForms RadButtons buttons-splitbutton-working-with-radsplitbutton-items 004](images/buttons-splitbutton-working-with-radsplitbutton-items004.png)
+![WinForms RadSplitButton RadMenuItem Image Text](images/buttons-splitbutton-working-with-radsplitbutton-items004.png)
 
 From this dialog you can select an image file from a project resource file or from an image resource on your local hard drive. 
 

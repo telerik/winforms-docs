@@ -16,13 +16,13 @@ This article will show the internal elements structure of __RadToggleSwitch__:
 
 >caption Fiure 1: RadToggleSwitch's elements hierarchy
 
-![WinForms RadButtons RadToggleSwitch's elements hierarchy](images/buttons-toggleswitch-structure002.png)
+![WinForms RadToggleSwitch's Elements Hierarchy](images/buttons-toggleswitch-structure002.png)
 
 This article describes the inner structure and organization of the elements which build the __RadToggleSwitch__ control.
         
 >caption Figure 2: RadToggleSwitch visual structure
 
-![WinForms RadButtons RadToggleSwitch visual structure](images/buttons-toggleswitch-structure001.png)
+![WinForms RadToggleSwitch Visual Structure](images/buttons-toggleswitch-structure001.png)
 
 1. __ToggleSwitchPartElement__: visual representation of the RadToggleSwitchElement.__OnElement__.
             

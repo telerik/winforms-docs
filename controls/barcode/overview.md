@@ -19,9 +19,9 @@ CTAControlName: Barcode
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadBarcode winforms/barcode-overview 001](images/barcode-overview001.png)
+![WinForms RadBarcode Sample Overview](images/barcode-overview001.png)
 
-![WinForms RadBarcode winforms/barcode-overview 002](images/barcode-overview002.png)
+![WinForms RadBarcode Overview Sample](images/barcode-overview002.png)
 
 # See Also
 

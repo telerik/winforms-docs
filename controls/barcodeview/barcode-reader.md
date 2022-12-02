@@ -19,7 +19,7 @@ When decoding a barcode image, the control will either display the type and text
 >caption Demo application >> BarcodeReader example
 
 
-![WinForms RadBarcodeView barcodereader 001](images/barcodereader001.png)
+![WinForms RadBarcodeView BarcodeReader Example](images/barcodereader001.png)
 
 The `Open Barcode` button lets the user choose an image path, to the image which will be decoded. The Decode Barcode triggers the decoding algorithm. The underlying text area is updated with the result of the decoding process.
 

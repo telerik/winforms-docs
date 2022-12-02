@@ -20,11 +20,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __RadCheckBoxElement__ in *Controls Structure* on the left side. Then, select __CheckMarkBackGround__ in the *Elements* section.
 
-	![WinForms RadButtons checkbox-customizing-appearance-themes 001](images/checkbox-customizing-appearance-themes001.png)
+	![WinForms RadCheckBox VisualStyleBuilder CheckMarkBackGround](images/checkbox-customizing-appearance-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![WinForms RadButtons checkbox-customizing-appearance-themes 002](images/checkbox-customizing-appearance-themes002.png)
+	![WinForms RadButtons RadCheckBox VisualStyleBuilder Fill repository](images/checkbox-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

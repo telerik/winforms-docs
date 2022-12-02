@@ -28,7 +28,7 @@ Me.radCheckBox1.ButtonElement.ToolTipText = "CheckBox tool tip"
 
 {{endregion}} 
 
-![WinForms RadButtons buttons-checkbox-tooltips 001](images/buttons-checkbox-tooltips001.gif)
+![WinForms RadCheckBox ToolTipText](images/buttons-checkbox-tooltips001.gif)
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
@@ -51,7 +51,7 @@ End Sub
 
 {{endregion}} 
 
-![WinForms RadButtons buttons-checkbox-tooltips 002](images/buttons-checkbox-tooltips002.gif)
+![WinForms RadButtons ToolTipTextNeeded to set ToolTipText](images/buttons-checkbox-tooltips002.gif)
 
 >note The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set in  the __ToolTipText__ property.
 

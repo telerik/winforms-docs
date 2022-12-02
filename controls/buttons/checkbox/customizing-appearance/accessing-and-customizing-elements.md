@@ -24,6 +24,7 @@ You can access and modify the style for different elements in __RadCheckBox__ by
 ## Programmatically
 
 You can customize the nested elements at run time as well:
+
 >caption Figure 2: Customize elements
 
 ![WinForms RadButtons Customize elements](images/checkbox-customizing-appearance-accessing-and-customizing-elements002.png)
