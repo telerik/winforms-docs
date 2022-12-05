@@ -46,7 +46,7 @@ End Function
 
 | Here you have nodes from 1-100 | After the filtering the nodes are only from 10-100, since nodes 1-9 contain just one char as text |
 | ------ | ------ |
-|![WinForms RadTreeView treeview-working-with-nodes-custom-filtering 001](images/treeview-working-with-nodes-custom-filtering001.png)|![WinForms RadTreeView treeview-working-with-nodes-custom-filtering 002](images/treeview-working-with-nodes-custom-filtering002.png)|
+|![WinForms RadTreeView Default Order](images/treeview-working-with-nodes-custom-filtering001.png)|![WinForms RadTreeView Custom Filtering](images/treeview-working-with-nodes-custom-filtering002.png)|
 
 To set the __Predicate__ to RadTreeView, use the __FilterPredicate__ property of the control:
     	

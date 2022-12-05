@@ -20,14 +20,14 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __TreeNodeElement__ in *Controls Structure* on the left side. Then, select __FullRowSelect.MouseOver__ in the *Element States* section.
 
-    ![WinForms RadTreeView treeview-customizing-appearance-themes 001](images/treeview-customizing-appearance-themes001.png)
+    ![WinForms RadTreeView VSB Controls Structure](images/treeview-customizing-appearance-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-    ![WinForms RadTreeView treeview-customizing-appearance-themes 002](images/treeview-customizing-appearance-themes002.png)
+    ![WinForms RadTreeView VSB Fill Repository](images/treeview-customizing-appearance-themes002.png)
     The result is illustrated below. The new fill color is applied when hovering the item:
 
-    ![WinForms RadTreeView treeview-customizing-appearance-themes 003](images/treeview-customizing-appearance-themes003.png)
+    ![WinForms RadTreeView VSB Color](images/treeview-customizing-appearance-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

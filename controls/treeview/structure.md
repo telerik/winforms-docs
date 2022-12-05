@@ -12,7 +12,7 @@ position: 1
 
 >caption Figure 1: RadTreeView Structure
 
-![WinForms RadTreeView RadTreeView Structure](images/treeview-structure001.png)        
+![WinForms RadTreeView Structure](images/treeview-structure001.png)        
 
 1. __TreeNodeElement:__ Represents the entire node element. Contains all other elements.
 2. __TreeNodeImageElement:__ Used for displaying an image. 

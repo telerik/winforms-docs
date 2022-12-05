@@ -15,7 +15,7 @@ In order to assign __RadScreenTip__ to the nodes of RadTreeView you should use t
 
 If the item which needs a ScreenTip is a TreeNodeElement, you set the necessary properties of the globally instantiated __RadOffice2007ScreenTip__:
 
-![WinForms RadTreeView treeview-how-to-assign-radscreentip-to-nodes 001](images/treeview-how-to-assign-radscreentip-to-nodes001.png)
+![WinForms RadTreeView RadOffice2007ScreenTip](images/treeview-how-to-assign-radscreentip-to-nodes001.png)
 
 {{source=..\SamplesCS\TreeView\HowTo\TreeScreenTips.cs region=screenTip}} 
 {{source=..\SamplesVB\TreeView\HowTo\TreeScreenTips.vb region=screenTip}} 

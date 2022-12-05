@@ -36,9 +36,9 @@ To enable the multiple selection the __MultiSelect__ property must be set to *tr
 
 | __Selection__ | __Example__ | __Description__ |
 |---------------|-------------|-----------------|
-| __Single Selection__ |![WinForms RadTreeView ](images/treeview-working-with-nodes-selecting-nodes001.png)|The user can select a single node by clicking the node.|
-| __Multiple Selection using the Shift key__ |![WinForms RadTreeView ](images/treeview-working-with-nodes-selecting-nodes002.png)|To select a continuous series of multiple nodes at one time hold __Shift__ and click on a node using the mouse. That will select all nodes between the first selected node and the node that was just clicked. The screenshot shows nodes selected between "Deleted Items" and "Large Mail".|
-| __Multiple Selection using the Ctrl key__ |![WinForms RadTreeView treeview-working-with-nodes-selecting-nodes 003](images/treeview-working-with-nodes-selecting-nodes003.png)|To select multiple nodes in distributed throughout, hold __Ctrl__ and click on each node using the mouse. That will select the clicked node or unselect the previously selected nodes. The screenshot shows the "Deleted Items" and "Send Items" nodes selected.|
+| __Single Selection__ |![WinForms RadTreeView Single Selection](images/treeview-working-with-nodes-selecting-nodes001.png)|The user can select a single node by clicking the node.|
+| __Multiple Selection using the Shift key__ |![WinForms RadTreeView Multiple Selection using the Shift key](images/treeview-working-with-nodes-selecting-nodes002.png)|To select a continuous series of multiple nodes at one time hold __Shift__ and click on a node using the mouse. That will select all nodes between the first selected node and the node that was just clicked. The screenshot shows nodes selected between "Deleted Items" and "Large Mail".|
+| __Multiple Selection using the Ctrl key__ |![WinForms RadTreeView Multiple Selection using the Ctrl key](images/treeview-working-with-nodes-selecting-nodes003.png)|To select multiple nodes in distributed throughout, hold __Ctrl__ and click on each node using the mouse. That will select the clicked node or unselect the previously selected nodes. The screenshot shows the "Deleted Items" and "Send Items" nodes selected.|
 
 ## Selecting Multiple Nodes Programmatically
 
