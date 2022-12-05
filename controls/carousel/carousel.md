@@ -22,7 +22,7 @@ __RadCarousel__ is a navigation control that animates a series of elements eithe
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadCarousel carousel-overview 002](images/carousel-overview002.png)
+![WinForms RadCarousel Overview](images/carousel-overview002.png)
 
 # See Also
 

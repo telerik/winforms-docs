@@ -48,8 +48,8 @@ Me.RadCardView1.FilterDescriptors.Add(valueFilter)
 
 {{endregion}} 
 
->caption Fig.1 Before
-![WinForms RadCardview Before](images/radcardview-features-filtering001.png)
+>caption Figure 1: Before
+![WinForms RadCardView Before](images/radcardview-features-filtering001.png)
 
->caption Fig.2 After
-![WinForms RadCardview After](images/radcardview-features-filtering002.png)
+>caption Figure 2: After
+![WinForms RadCardView After](images/radcardview-features-filtering002.png)

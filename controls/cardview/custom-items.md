@@ -16,8 +16,8 @@ __RadCardView__ allows you to create and use your own custom visual items. This 
 
 This can be done by making use of the __CardViewItemCreating__ event. The following example demonstrates creating a visual item with a checkbox in it. The checkbox itself is an editor and in order to customize it we need to extend the __CardViewItem__ and __CardViewEditorItem__ classes.
 
->caption Fig.1 CardView With Checkbox
-![WinForms RadCardview CardView With Checkbox](images/cardview-custom-items001.png)
+>caption Figure 1: CardView With Checkbox
+![WinForms RadCardView CardView With Checkbox](images/cardview-custom-items001.png)
 
 First let's create our custom items:
 

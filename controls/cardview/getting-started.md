@@ -21,11 +21,11 @@ The example below demonstrates setting up __RadCardView__ to display data from t
 
 ## Connecting to Data
 
-1. Open the __Smart Tag__ of the control and in the __Cooose DataSource__ drop down select *Add Project Data Source..*
-![WinForms RadCardview radcardview-getting-started 001](images/radcardview-getting-started001.png)
+1. Open the __Smart Tag__ of the control and in the __Choose DataSource__ drop down select *Add Project Data Source..*
+![WinForms RadCardView Choose DataSource](images/radcardview-getting-started001.png)
 
 1. In the __Data Source Configuration Wizard__, select the *Database* icon, and click *Next*.
-![WinForms RadCardview radcardview-getting-started 002](images/radcardview-getting-started002.png)
+![WinForms RadCardView Data Source Configuration Wizard](images/radcardview-getting-started002.png)
 
 1. In the __Choose a Database Model__ page of the wizard, select the *Dataset* icon and click *Next*.
             
@@ -46,13 +46,13 @@ The example below demonstrates setting up __RadCardView__ to display data from t
 1. In __Save the Connection String to the Application Configuration File__ page of the wizard, click the *Next* button. 
 
 1. In __Choose Database Objects__ page of the dialog, select the *Employees* table
-![WinForms RadCardview radcardview-getting-started 003](images/radcardview-getting-started003.png)
+![WinForms RadCardView Employees DataBase](images/radcardview-getting-started003.png)
 
 1. Now, __RadCardView__ is bound to the *Employees* table from the *Northwind* database and should look like this screen shot below: 
-![WinForms RadCardview grid-getting-started 005](images/radcardview-getting-started004.png)
+![WinForms RadCardView Bound Employees](images/radcardview-getting-started004.png)
 
 1. Press __F5__ to run the application.
-![WinForms RadCardview grid-getting-started 005](images/radcardview-getting-started005.gif)
+![WinForms RadCardView Getting Started](images/radcardview-getting-started005.gif)
             
 # See Also
 

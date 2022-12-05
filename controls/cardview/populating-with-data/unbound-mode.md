@@ -14,20 +14,21 @@ position: 1
 
 Unbound data can be populated in the Visual Studio designer by using the __Edit Columns__ and __Edit Items__ groups of the control's Smart Tag. The value of the label is determined by the __HeaderText__ property of the column. Each of the added items exposes a __SubItems__ collection which can be filled with string data corresponding to each of the columns. The short video below sets up the control with one __CardViewItem__ having four columns and four editor values.
 
->caption Fig. 1: Add Items at Design Time
-![WinForms RadCardview Add Items at Design Time](images/radcardview-populating-with-data002.gif)
+>caption Figure 1: Add Items at Design Time
+![WinForms RadCardView Add Items at Design Time](images/radcardview-populating-with-data002.gif)
 
 After you run the application, the result should be similar to the following image.
 
->caption Fig. 2: Added Items at Design Time
-![WinForms RadCardview Added Items at Design Time](images/radcardview-populating-with-data003.png)
+>caption Figure 2: Added Items at Design Time
+![WinForms RadCardView Added Items at Design Time](images/radcardview-populating-with-data003.png)
 
 ## Populating Data Programatically
 
 __RadCardView__ can also be set up to display data added at run-time. The following example will also demonstrate how custom grouping can be achieved. 
 
->caption Fig. 3: Add Grouped Items at Run Time
-![WinForms RadCardview Add Grouped Items at Run Time](images/radcardview-populating-with-data004.gif)
+>caption Figure 3: Add Grouped Items at Run Time
+![WinForms RadCardView Add Grouped Items at Run Time](images/radcardview-populating-with-data004.gif)
+
 ### Adding Columns
 
 The columns of __RadCardView__ are stored in a collection that is accessible through the __Columns__ property. Columns can be added to __RadCardView__ using one of the three overloads of the __Add__ method as it is shown below. Each column must have unique name because columns are distinguished by their __Name__ property. 

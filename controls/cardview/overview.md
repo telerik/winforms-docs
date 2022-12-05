@@ -17,9 +17,9 @@ With __RadCardView__, users can display and edit text data organized in a card l
 {% include cta-panel-overview.html %}
 {% endif %}
 
->caption Fig.1 RadCardView
+>caption Figure 1: RadCardView
 
-![WinForms RadCardview RadCardView](images/radcardview-overview001.png)
+![WinForms  RadCardView Overview](images/radcardview-overview001.png)
 
 The below list shows the main features of the control:
 

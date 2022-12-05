@@ -25,7 +25,7 @@ This same pattern holds true, regardless of the type of data being bound to.
 
 The example below creates a generic list of an object called "Feature". "Feature" has "ID" and "Name" properties. In the __NewCarouselItemCreating__ event handler, `RadButtonElement` instances are created. In the __ItemDataBound__ event handler, the button text is assigned the "Name" property of the "Feature" object. The "ID" property of the "Feature" object is stored in the `RadButtonElement` __Tag__ property for later use in the `Click` event handler.
 
-![WinForms RadCarousel carousel-using-radcorousel-carousel-data-binding 001](images/carousel-using-radcorousel-carousel-data-binding001.png)
+![WinForms RadCarousel Data Binding Example](images/carousel-using-radcorousel-carousel-data-binding001.png)
 
 #### The Features Object
 

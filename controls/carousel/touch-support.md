@@ -14,11 +14,11 @@ previous_url: carousel-touch-support
 
 RadCarousel supports changing the selected item via touch. Simply tap the desired item and it will be selected:
 
-![WinForms RadCarousel carousel-touch-support 001](images/carousel-touch-support001.png)
+![WinForms RadCarousel Touch Support](images/carousel-touch-support001.png)
 
 As you can see on the following image, the planet that we touched is now selected.
 
-![WinForms RadCarousel carousel-touch-support 002](images/carousel-touch-support002.png)
+![WinForms RadCarousel Touch Support Selection](images/carousel-touch-support002.png)
 
 # See Also
 

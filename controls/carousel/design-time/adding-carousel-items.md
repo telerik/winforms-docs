@@ -15,7 +15,7 @@ The __Smart Tag__ of __RadCarousel__ lets you quickly access common tasks involv
 
 >caption Figure 1: The Smart Tag of RadCarousel
 
-![WinForms RadCarousel The Smart Tag of RadCarousel](images/carousel-smart-tag001.png)
+![WinForms RadCarousel Smart Tag](images/carousel-smart-tag001.png)
 
 * __Edit Items:__ Opens the __RadItem__ collection editor, in it you can add different types of __RadElements__: 
     ![WinForms RadCarousel carousel-smart-tag002](images/carousel-smart-tag002.png)
