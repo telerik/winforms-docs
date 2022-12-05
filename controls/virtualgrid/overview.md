@@ -19,7 +19,7 @@ __RadVirtualGrid__ is a grid component developed on top of Telerik Presentation 
 
 >caption Figure 1: RadVirtualGrid
  
-![WinForms RadVirtualGrid RadVirtualGrid](images/virtualgrid-overview001.gif)
+![WinForms RadVirtualGrid Overview](images/virtualgrid-overview001.gif)
 
 ## Key features
 

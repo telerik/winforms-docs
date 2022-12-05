@@ -14,12 +14,12 @@ position: 3
 
 The following tutorial will demonstrate how to associate a **RadVirtualKeyboardForm** with a **RadTextBoxEditor** in **RadGridView**.
 
-![WinForms RadVirtual-Keyboard winforms/virtual-keyboard-form 001](images/virtual-keyboard-form001.gif) 
+![WinForms RadVirtualKeyboard Form](images/virtual-keyboard-form001.gif) 
 
 1. Add a **RadGridView** control to the form and populate it with some data.
 2. Drag a **RadVirtualKeyboardForm** from the toolbox and drop it onto the form. It will be added as a component: 
 
-	![WinForms RadVirtual-Keyboard winforms/virtual-keyboard-form 002](images/virtual-keyboard-form002.png) 
+	![WinForms RadVirtualKeyboardForm Toolbox](images/virtual-keyboard-form002.png) 
 
 3. Subscribe to the RadGridView.**CellEditorInitialized** event and associate the hosted TextBox in the grid editor with the virtual keyboard form:
 

@@ -35,11 +35,11 @@ Me.RadVirtualGrid1.AllowFiltering = True
 
 When filtering is enabled, each column displays a filter button beneath the corresponding header which controls the filter operator:
 
-![WinForms RadVirtualGrid virtualgrid-filtering 002](images/virtualgrid-filtering002.png)
+![WinForms RadVirtualGrid Filter Button](images/virtualgrid-filtering002.png)
 
 When clicking over the filter cell, the filter text box is activated:
 
-![WinForms RadVirtualGrid virtualgrid-filtering 003](images/virtualgrid-filtering003.png)
+![WinForms RadVirtualGrid Filter TextBox](images/virtualgrid-filtering003.png)
 
 It is necessary to handle the __FilterChanged__ event which is fired once the __FilterDescriptors__ collection is changed. In the event handler you should extract the filtered data from the external data source.
 

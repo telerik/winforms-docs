@@ -59,7 +59,7 @@ To take the snapshot press the "Take snapshot" button. Or call the **TakeSnapsho
 
 >note By default, a preview of the snapshot will be shown that allows you to choose if it should be saved or not. If you choose to save it the **SnapshotTaken** event will fire. To disable the preview set the **IsPreviewingSnapshot** property of **RadWebCam** to *false*.
  
-![WinForms RadWebcam webcam-webcam-save-snapshot-to-file 001](images/webcam-save-snapshot-to-file001.png)
+![WinForms RadWebCam Save Snapshot to File](images/webcam-save-snapshot-to-file001.png)
 
 ## See Also
 * [Commands]({%slug webcam-commands%})

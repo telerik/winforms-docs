@@ -20,13 +20,13 @@ This help article will demonstrate a step by step tutorial how to customize the 
 1. Load a desired theme from the just exported files by selecting *File >> Open Package*
 
 1. Navigate to __RadVirtualGrid__ in `Controls Structure` on the left side. Then, expand to and select __VirtualgridRowElement__. In the `Elements States` window select __VirtualGridRowElement.IsCurrent__.
-    ![WinForms RadVirtualGrid radvirtualgrid-customizing-appearance-themes 001](images/radvirtualgrid-customizing-appearance-themes001.png)
+    ![WinForms RadVirtualGrid Themes Controls Structure](images/radvirtualgrid-customizing-appearance-themes001.png)
 
 1. Modify the applied fill repository item.
-    ![WinForms RadVirtualGrid radvirtualgrid-customizing-appearance-themes 002](images/radvirtualgrid-customizing-appearance-themes002.png)
+    ![WinForms RadVirtualGrid Modify the applied fill repository item](images/radvirtualgrid-customizing-appearance-themes002.png)
 
 1. The following image shows the results. 
-    ![WinForms RadVirtualGrid radvirtualgrid-customizing-appearance-themes 003](images/radvirtualgrid-customizing-appearance-themes003.png)
+    ![WinForms RadVirtualGrid Themes Result](images/radvirtualgrid-customizing-appearance-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

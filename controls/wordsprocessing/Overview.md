@@ -20,7 +20,7 @@ CTAControlName: WordsProcessing
 {% include cta-panel-overview.html %}
 {% endif %}
 
-   ![WinForms RadWordsProcessing RadWordsProcessing Overview image](images/RadWordsProcessing_Overview_01.png)
+![WinForms RadWordsProcessing Overview Image](images/RadWordsProcessing_Overview_01.png)
 
 
 ## Model

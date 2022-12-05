@@ -12,4 +12,4 @@ position: 7
 
 **RadVirtualKeyboard** introduces the **SynchronizeCultureWithSystem** property which indicates whether the keyboard will track the system for language changes and will be updated automatically. The default value is *true*. This means that whenever you change the system language, the virtual keyboard will get updated with the relevant keys. 
 
-![WinForms RadVirtual-Keyboard winforms/keyboard-system-synchronization 001](images/keyboard-system-synchronization001.gif)
+![WinForms RadVirtualKeyboard System Synchronization](images/keyboard-system-synchronization001.gif)

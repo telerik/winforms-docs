@@ -30,7 +30,7 @@ radVirtualGrid1.VirtualGridElement.SetRowPinPosition(2, PinnedRowPosition.Top)
 
 The result is that the row is pined bellow the filter row.
 
-![WinForms RadVirtualGrid virtualgrid-rows-pinned-row001](images/virtualgrid-rows-pinned-row001.gif)
+![WinForms RadVirtualGrid Pinned Row](images/virtualgrid-rows-pinned-row001.gif)
 
 To unpin a row you just need to set its pin position to *none*.
 

@@ -20,7 +20,7 @@ __RadVirtualGrid__ fully supports right-to-left (RTL) language locales. You can 
 
 |RightToLeft.No|RightToLeft.Yes|
 |----|----|
-|![WinForms RadVirtualGrid virtualgrid-localization-right-to-left-support001](images/virtualgrid-localization-right-to-left-support001.png)|![WinForms RadVirtualGrid virtualgrid-localization-right-to-left-support002](images/virtualgrid-localization-right-to-left-support002.png)|
+|![WinForms RadVirtualGrid RightToLeft No](images/virtualgrid-localization-right-to-left-support001.png)|![WinForms RadVirtualGrid ightToLeft Yes](images/virtualgrid-localization-right-to-left-support002.png)|
 
 # See Also
 * [Localization]({%slug winforms/virtualgrid/localization/localization%})

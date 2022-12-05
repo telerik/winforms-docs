@@ -12,7 +12,7 @@ position: 1
 
 __RadVirtualGrid__ provides a straightforward way to use custom context menus, instead of the default one. This context menu will appear every time the user right-clicks the __RadVirtualGrid__, regardless of the element of the control they click.
 
-![WinForms RadVirtualGrid virtualgrid-context-menu 001](images/virtualgrid-custom-context-menu001.png)
+![WinForms RadVirtualGrid Custom context Menu](images/virtualgrid-custom-context-menu001.png)
  
 Start by creating a __RadContextMenu__, initializing its items, and subscribing for the events that you want to handle to achieve the desired behavior:
 
@@ -219,7 +219,7 @@ End Sub
 
 |Data Cells Menu|Header Cells Menu|
 |----|----|
-|![WinForms RadVirtualGrid virtualgrid-context-menu 002](images/virtualgrid-custom-context-menu002.png)|![WinForms RadVirtualGrid virtualgrid-context-menu 003](images/virtualgrid-custom-context-menu003.png)|
+|![WinForms RadVirtualGrid Data Cells Menu](images/virtualgrid-custom-context-menu002.png)|![WinForms RadVirtualGrid Header Cells Menu](images/virtualgrid-custom-context-menu003.png)|
 
 # See Also
 * [Overview]({%slug winforms/virtualgrid/context-menu/context-menu%})

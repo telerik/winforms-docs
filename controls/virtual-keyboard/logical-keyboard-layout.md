@@ -14,11 +14,11 @@ RadVirtualKeyboard.**MainLayoutPanel** is represented by a **VirtualKeyboardLayo
 
 Depending on the applied **LayoutType**, the **MainLayoutPanel** stores in its **KeyboardLayouts** a set of **VirtualKeyboardLayoutPanels** and **VirtualKeyboardLayouts**. The **VirtualKeyboardLayoutPanel** contains a collection of **VirtualKeyboardLayouts** depending on how many group of keys will be created:
 
-![WinForms RadVirtual-Keyboard winforms/logical-keyboard-layout 001](images/logical-keyboard-layout001.png) 
+![WinForms RadVirtualKeyboard Logical Layout Panel](images/logical-keyboard-layout001.png) 
 
 The **VirtualKeyboardLayout** offers a public **Rows** property which is an **ObservableCollection** of **Row** instances. Each **Row** represents a logical structure used to organize the keys stored in the **Keys** property. 
 
-![WinForms RadVirtual-Keyboard winforms/logical-keyboard-layout 002](images/logical-keyboard-layout002.png) 
+![WinForms RadVirtualKeyboard Logical Layout](images/logical-keyboard-layout002.png) 
  
 
 #### Accessing the logical layout and iterating the keys in the Home layout

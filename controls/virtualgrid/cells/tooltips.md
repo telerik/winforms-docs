@@ -17,7 +17,7 @@ There are two ways to assign tooltips to cells in __RadVirtualGrid__, namely set
 
 The code snippet below demonstrates how you can use the __ToolTipTextNeeded__ event handler to set __ToolTipText__ for the given __VirtualGridCellElement__.
 
-![WinForms RadVirtualGrid virtualgrid-cells-tooltips 002](images/virtualgrid-cells-tooltips002.png)
+![WinForms RadVirtualGrid Setting tooltips in the ToolTipTextNeeded event](images/virtualgrid-cells-tooltips002.png)
 {{source=..\SamplesCS\VirtualGrid\Cells\VirtualGridFormattingCells.cs region=ToolTipTextNeeded}} 
 {{source=..\SamplesVB\VirtualGrid\Cells\VirtualGridFormattingCells.vb region=ToolTipTextNeeded}}
 
@@ -50,7 +50,7 @@ End Sub
 
 The code snippet below demonstrates how you can assign a tooltip to a cell in __RadVirtualGrid__.
 
-![WinForms RadVirtualGrid virtualgrid-cells-tooltips 001](images/virtualgrid-cells-tooltips001.png)
+![WinForms RadVirtualGrid Setting tooltips in the CellFormatting event handler](images/virtualgrid-cells-tooltips001.png)
 
 {{source=..\SamplesCS\VirtualGrid\Cells\VirtualGridFormattingCells.cs region=CellsTooltips}} 
 {{source=..\SamplesVB\VirtualGrid\Cells\VirtualGridFormattingCells.vb region=CellsTooltips}}
