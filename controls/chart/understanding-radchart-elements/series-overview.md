@@ -39,6 +39,6 @@ Some key properties for the __ChartSeries__ are:
 * __Visible__: Turn this property off to hide the series.
 >caption 
 
-![WinForms RadChart ](images/chart-undestanding-radchart-elements-series-overview001.png)
+![WinForms RadChart Hide Series Using Visible Property](images/chart-undestanding-radchart-elements-series-overview001.png)
 
 DataRelatedPropertiesSeries

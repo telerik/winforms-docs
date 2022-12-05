@@ -30,12 +30,12 @@ The "bar" portion of each chart item is formed between the __YValue__ and __YVal
 To create a Vertical CandleStick Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __CandleStick__.
 >caption 
 
-![WinForms RadChart ](images/chart-undestanding-radchart-types-candlestick-charts001.png)
+![WinForms RadChart CandleStick SeriesOrientation Vertical](images/chart-undestanding-radchart-types-candlestick-charts001.png)
 
 To create a Vertical CandleStick Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __CandleStick__.
 >caption 
 
-![WinForms RadChart chart-undestanding-radchart-types-candlestick-charts 002](images/chart-undestanding-radchart-types-candlestick-charts002.png)
+![WinForms RadChart CandleStick SeriesOrientation Horizontal](images/chart-undestanding-radchart-types-candlestick-charts002.png)
 
 The screenshots above use the following data points:
 

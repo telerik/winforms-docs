@@ -22,7 +22,7 @@ By default __RadChart__ is designed so that all bars from a series have the same
 
 >caption 
 
-![WinForms RadChart ](images/chart-how-to-assign-individual-colors-to-bars001.png) 
+![WinForms RadChart Assign Individual Colors](images/chart-how-to-assign-individual-colors-to-bars001.png) 
 
 {{source=..\SamplesCS\Chart\AddIndividualColorsToBars.cs region=assignColors}} 
 {{source=..\SamplesVB\Chart\AddIndividualColorsToBars.vb region=assignColors}} 

@@ -119,7 +119,7 @@ RadChart1.Series.Add(chartSeries)
 
 >caption 
 
-![WinForms RadChart ](images/chart-building-radcharts-creating-radchart-programmatically001.png)
+![WinForms RadChart Created Programmatically](images/chart-building-radcharts-creating-radchart-programmatically001.png)
 
 
 

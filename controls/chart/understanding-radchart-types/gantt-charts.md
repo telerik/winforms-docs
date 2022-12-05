@@ -20,12 +20,12 @@ Gantt charts help visualize time based information. Gantt charts, also known as
 To create a vertical Gantt Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to *Gantt*.
 >caption 
 
-![WinForms RadChart ](images/chart-undestanding-radchart-types-gantt-charts001.png)
+![WinForms RadChart Gantt SeriesOrientation Vertical](images/chart-undestanding-radchart-types-gantt-charts001.png)
 
 To create a horizontal Gantt Chart set the __SeriesOrientation__  property to __Horizontal__. Set the __RadChart DefaultType__ property or __ChartSeries.Type__ to *Gantt*.
 >caption 
 
-![WinForms RadChart chart-undestanding-radchart-types-gantt-charts 002](images/chart-undestanding-radchart-types-gantt-charts002.png)
+![WinForms RadChart Gantt SeriesOrientation Horizontal](images/chart-undestanding-radchart-types-gantt-charts002.png)
 
 Other Gantt chart issues:
 

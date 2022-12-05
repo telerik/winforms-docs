@@ -45,7 +45,7 @@ This Quick Start tutorial is designed to have you quickly up and running with a 
 1. In the property window for the new item, change the __Name__ property to "Beverages".
 
 1. Change the YValue property to "10000".
- ![WinForms RadChart chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 003](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data003.png)
+ ![WinForms RadChart Change YValue Property](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data003.png)
 
 1. Repeat the Add Item steps to add 3 new items.
 
@@ -63,7 +63,7 @@ This Quick Start tutorial is designed to have you quickly up and running with a 
 1. Click the __OK__ button to close the __ChartSeries Collection Editor__.
 
 1. The chart will display the new data using the default formatting.
- ![WinForms RadChart chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 004](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data004.png)
+ ![WinForms RadChart Default Formatting](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data004.png)
 
 ## Format the Chart Using the SmartTag
 
@@ -73,7 +73,9 @@ This Quick Start tutorial is designed to have you quickly up and running with a 
 
 1. In the __Appearance__ section, change the __Title Text__ entry to "Category Sales".
 
-1. The SmartTag options and resulting chart should look like the screen shot below.![WinForms RadChart chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 005](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data005.png)
+1. The SmartTag options and resulting chart should look like the screen shot below.
+
+![WinForms RadChart Smart Tag Layout](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data005.png)
 
 ## Format the Chart
 
@@ -86,21 +88,23 @@ This Quick Start tutorial is designed to have you quickly up and running with a 
 1. On the __Select Axis drop down__ list select the X Axis. In the __Axis Title__ entry enter "Product Categories". Uncheck __Show Ticks__ to remove the tick marks from the bottom of the chart.
 
 1. On the __Select Axis drop down__ list select the Y Axis. Uncheck __Show Ticks__ to remove the tick marks on the left hand side of the chart.
- ![WinForms RadChart chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 006](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data006.png)
+ ![WinForms RadChart Smart Tag Select Axis drop down](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data006.png)
 
 1. Click the __Labels, Legend and Title__ tab
 
 1. Locate the __Legend__ section.
 
 1. Uncheck the __Visible__ check box. This will remove the Sales legend from the right side of the graph
- ![WinForms RadChart chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 007](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data007.png)
+ ![WinForms RadChart Smart Tag Uncheck Visible](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data007.png)
 
 1. On the __Skins__ tab select the __Deep Blue__ skin.
- ![WinForms RadChart chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 008](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data008.png)
+ ![WinForms RadChart Smart Tag Deep Blue Skin](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data008.png)
 
 1. Click the __OK__ button to close the wizard.
 
 1. In the properties window, locate __PlotArea.XAxis.AxisLabel.TextBlock.Visible__ and set it to "True".
- ![WinForms RadChart chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 009](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data009.png)
+ ![WinForms RadChart Smart Tag AxisLabel Visible Property](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data009.png)
 
-Run the application to view the finished chart.  It should look like the screen shot shown below. ![WinForms RadChart chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data 010](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data010.png)
+Run the application to view the finished chart.  It should look like the screen shot shown below. 
+
+![WinForms RadChart Add Bar Series with Simple Static Data](images/chart-getting-started-quick-start-create-a-bar-chart-with-simple-static-data010.png)

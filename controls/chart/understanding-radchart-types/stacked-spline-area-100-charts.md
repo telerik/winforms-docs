@@ -22,7 +22,7 @@ To create a vertical Stacked Spline Area Chart 100% chart, set the __SeriesOrien
 To create a horizontal Stacked Spline Area Chart 100% chart, set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __StackedSplineArea100__.
 >caption 
 
-![WinForms RadChart ](images/chart-undestanding-radchart-types-stacked-spline-area-100-charts001.png)
+![WinForms RadChart Horizontal Stacked Spline Area 100](images/chart-undestanding-radchart-types-stacked-spline-area-100-charts001.png)
 
 To display the label values as percentages, change the __DefaultLabelValue__ for each chart series from "#Y" (the numeric value for each data point) to "#%" (the percentage of each data point to the category).
         

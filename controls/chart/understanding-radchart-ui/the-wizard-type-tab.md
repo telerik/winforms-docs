@@ -18,4 +18,4 @@ previous_url: chart-understanding-radchart-ui-the-wizard-type-tab
 The Type tab lets you quickly choose the chart type by providing visual cues to what each type looks like.  Here you can also choose the chart orientation.
 >caption 
 
-![WinForms RadChart ](images/chart-understanding-radchart-ui-the-wizard-type-tab001.png)
+![WinForms RadChart Wizard Type Tab ](images/chart-understanding-radchart-ui-the-wizard-type-tab001.png)

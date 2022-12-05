@@ -16,7 +16,7 @@ previous_url: chart-understanding-radchart-ui-the-wizard-data-tab
 The __Data__ tab brings together the Series, Series Item, Axis labels and data binding to a single screen. Here you can add data points to your chart manually or by binding to data sources. 
 >caption 
 
-![WinForms RadChart ](images/chart-understanding-radchart-ui-the-wizard-data-tab001.png)
+![WinForms RadChart Wizard Data Tab](images/chart-understanding-radchart-ui-the-wizard-data-tab001.png)
 
 
 
@@ -37,7 +37,7 @@ Use the __Series__ area of the tab to add, delete and reorder chart series eleme
 If you bind to a data source the __Databind Series Elements__ portion will be enabled and allow you to choose column names for your labels and values from the drop down lists provided. When you bind to a data source the __Series__ list box will be populated automatically with a series for each numeric column in the data source. If you need to fine tune the behavior or appearance of a series in more depth than the __Data__ tab provides, use the __RadChart__ [Series]({%slug winforms/chart/understanding-radchart-elements/series-overview%}) property in the property window. In the example below the __Labels__ for the series have been bound to a column "TenMostExpensiveProducts", which contains product descriptions. These descriptions display to the right next to each bar in the chart.  Note that [SeriesOrientation]({%slug winforms/chart/understanding-radchart-elements/background-and-plot-areas%}) is Horizontal, so the X-Axis is on the left.
 >caption 
 
-![WinForms RadChart chart-understanding-radchart-ui-the-wizard-data-tab 002](images/chart-understanding-radchart-ui-the-wizard-data-tab002.png)
+![WinForms RadChart Wizard Data Tab Series](images/chart-understanding-radchart-ui-the-wizard-data-tab002.png)
 
 ## Series Items
 

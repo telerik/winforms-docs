@@ -20,4 +20,4 @@ The __RadChart.Skin__ property lets you apply a coordinated set of style changes
 
 >caption 
 
-![WinForms RadChart ](images/chart-understanding-radchart-ui-the-wizard-skin-tab001.png)
+![WinForms RadChart Wizard Skin Tab](images/chart-understanding-radchart-ui-the-wizard-skin-tab001.png)

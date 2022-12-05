@@ -15,7 +15,7 @@ previous_url: chart-undestanding-radchart-elements-radchart-basics
 Charts are composed of a hierarchy of elements. Most of the elements are common across all chart types (unless otherwise noted). The illustration below shows some of the significant chart elements.   
 >caption 
 
-![WinForms RadChart ](images/chart-undestanding-radchart-elements-radchart-basics001.png)
+![WinForms RadChart Elements Hierarchy](images/chart-undestanding-radchart-elements-radchart-basics001.png)
 
 ## Chart Element Descriptions
 

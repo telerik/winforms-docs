@@ -20,4 +20,4 @@ The new Spline Area Charts take the Spline chart a step further.  Like the Spli
 You can see how the same data is presented using the new chart types. __SplineArea__ displays from the back to the front, starting with the first series.  __StackedSplineArea__ adds each area to the next without covering previous areas. __StackedSplineArea100__ shows each area as a percentage contributing to the whole of a category. 
 >caption 
 
-![WinForms RadChart ](images/chart-features-spline-areas001.png)
+![WinForms RadChart Spline Areas](images/chart-features-spline-areas001.png)

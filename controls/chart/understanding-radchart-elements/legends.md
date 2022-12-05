@@ -36,12 +36,12 @@ Use the legend Appearance __ItemTextAppearance__ property to tailor the look of 
 Use the __ItemMarkerAppearance Figure__ property to select from a set of predefined marker shapes.
 >caption 
 
-![WinForms RadChart ](images/chart-undestanding-radchart-elements-legends001.png)
+![WinForms RadChart Legends ItemMarkerAppearance Figure](images/chart-undestanding-radchart-elements-legends001.png)
 
 Use the Legend.Appearance.Position property to control where the legend should appear on the chart surface. The __AlignedPosition__ sub property automatically places the legend in a predefined position. Or set the __Auto__ property false and manually set the __X__ and __Y__ properties to place the legend in any exact position. 
 >caption 
 
-![WinForms RadChart chart-undestanding-radchart-elements-legends 002](images/chart-undestanding-radchart-elements-legends002.png)
+![WinForms RadChart Legends Appearance Position](images/chart-undestanding-radchart-elements-legends002.png)
 
 Use the Legend.Appearance.Dimensions property to control the legend height and width.  By default the __AutoSize__ sub property is true and dimensioning is handled for you.  Set __AutoSize__ off to manually handle __Width__, __Height__, __Margins__ and __Paddings__. 
 

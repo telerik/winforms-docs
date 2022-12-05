@@ -18,4 +18,4 @@ previous_url: chart-features-scale-breaks
 The ScaleBreaks feature allows you to "break off" large chunks of the axis so that graphs with large amplitude are easier to read. ScaleBreaks are available for both YAxis and YAxis2 of the plot area. You can tailor the maximum number of breaks, the minimum interval between data points before a break can occur, the visual size of the breaks and the visual style of the breaks.
 >caption 
 
-![WinForms RadChart ](images/chart-features-scale-breaks001.png)
+![WinForms RadChart Scale Breaks](images/chart-features-scale-breaks001.png)

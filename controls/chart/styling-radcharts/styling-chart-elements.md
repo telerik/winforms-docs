@@ -16,7 +16,7 @@ previous_url: chart-styling-radcharts-styling-chart-elements
 RadChart offers a set of properties to modify the look and feel of its elements. See those elements marked on the image below consider the table showing where their customization properties are located in the chart properties grid.
 >caption 
 
-![WinForms RadChart ](images/chart-styling-radcharts-styling-chart-elements001.png)
+![WinForms RadChart Styling Chart Elements](images/chart-styling-radcharts-styling-chart-elements001.png)
 
 
 

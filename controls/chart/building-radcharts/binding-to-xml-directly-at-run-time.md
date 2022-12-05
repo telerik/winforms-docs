@@ -71,6 +71,6 @@ The running application looks something like the figure shown below.
 
 >caption 
 
-![WinForms RadChart ](images/chart-building-radcharts-data-binding-radchart-binding-to-xml-directly-at-runtime001.png)
+![WinForms RadChart Binding to XML](images/chart-building-radcharts-data-binding-radchart-binding-to-xml-directly-at-runtime001.png)
 
 

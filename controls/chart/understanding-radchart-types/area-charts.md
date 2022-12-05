@@ -24,9 +24,9 @@ To create a Vertical Area Chart set the __SeriesOrientation__ property to __Ver
 
 >caption 
 
-![WinForms RadChart ](images/chart-undestanding-radchart-types-area-charts001.png)
+![WinForms RadChart SeriesOrientation Vertical](images/chart-undestanding-radchart-types-area-charts001.png)
 
-To create a Vertical Area Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Area__.
+To create a Horizontal Area Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Area__.
 >caption 
 
-![WinForms RadChart chart-undestanding-radchart-types-area-charts 002](images/chart-undestanding-radchart-types-area-charts002.png)
+![WinForms RadChart SeriesOrientation Horizontal](images/chart-undestanding-radchart-types-area-charts002.png)

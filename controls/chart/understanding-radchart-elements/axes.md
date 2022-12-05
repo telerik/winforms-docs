@@ -16,7 +16,7 @@ previous_url: chart-undestanding-radchart-elements-axes
 X and Y axes are included in all chart types but the [Pie]({%slug winforms/chart/understanding-radchart-types/pie-charts%}) chart. Typically the __YAxis__ displays values and the __XAxis__ displays categories.  For example, the __YAxis__ might show "items sold" or "revenue", while the __XAxis__ might show "Months" or "Products". The X axis can also display values. A second "Y" axis property __YAxis2__ is provided for displaying a second scale of measurements. 
 >caption 
 
-![WinForms RadChart ](images/chart-undestanding-radchart-elements-axes001.png)
+![WinForms RadChart Axes](images/chart-undestanding-radchart-elements-axes001.png)
 
 ## Axis Elements
 
@@ -39,7 +39,7 @@ Each axis has:
 The example below shows a sample X-axis with several appearance related properties customized. 
 >caption 
 
-![WinForms RadChart chart-undestanding-radchart-elements-axes 002](images/chart-undestanding-radchart-elements-axes002.png)
+![WinForms RadChart Axis Elements](images/chart-undestanding-radchart-elements-axes002.png)
 
 The RadChart __PlotArea__ property has sub properties __XAxis__, __YAxis__ and __YAxis2__. Each axis object has an __Appearance__ property used to make the customizations shown above.  Some significant axis appearance related properties are: 
 
@@ -64,7 +64,7 @@ You can modify the overall appearance of an axes by changing the __AutoScale__ a
 ## Formatting Axis Labels
 >caption 
 
-![WinForms RadChart chart-undestanding-radchart-elements-axes 003](images/chart-undestanding-radchart-elements-axes003.png)
+![WinForms RadChart Formatting Axis Labels](images/chart-undestanding-radchart-elements-axes003.png)
 
 To display a range of values along an axis, specify for the __ChartAxis__ a starting __MinValue__, an ending __MaxValue__, and a __Step__. In the example above, the YAxis has a __MinValue__ of "0", a __MaxValue__ of "250" and a __Step__ of "50." The X axis is labeled explicitly by setting PlotArea.XAxis properties:  
 

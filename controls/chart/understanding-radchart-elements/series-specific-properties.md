@@ -25,7 +25,7 @@ The __LineSeriesAppearance__ property is specific to the [Line]({%slug winforms
 
 The __PointMark__ is a shape that occurs at every data point, including the first.  PointMarks are off by default but can be enabled using the Pointmark.Visible property. Use the Pointmark.Figure property to choose one of the predefined shapes. Other __PointMark__ properties include __Border__, __Corners__, __Dimensions__, __FillStyle__, __RotationAngle__ and __Shadow__.
 
-![WinForms RadChart chart-undestanding-radchart-elements-series-specific-properties 001](images/chart-undestanding-radchart-elements-series-specific-properties001.png)
+![WinForms RadChart Lines and Splines PointMark](images/chart-undestanding-radchart-elements-series-specific-properties001.png)
 
 The example above shows Series 1 in red where __LineSeriesAppearance__ properties are:
 
@@ -65,23 +65,23 @@ Series 2 show in blue has __PointMark__ properties set as:
 
 The __StartAngle__ property specifies degrees for the rotation of a pie. The default value and the starting position is 0°. Positive values of the __StartAngle__ property will rotate the pie clockwise and negative - counterclockwise.
 
-![WinForms RadChart chart-undestanding-radchart-elements-series-specific-properties 002](images/chart-undestanding-radchart-elements-series-specific-properties002.png)
+![WinForms RadChart Pie Start Angle Property](images/chart-undestanding-radchart-elements-series-specific-properties002.png)
 
 
 
 The __DiameterScale__ property controls the ratio between the size of the plot area and the diameter of the chart. It effectively sets the size of the pie. In the example below, __DiameterScale__ is set to 1, .75 (the default) and .5.
 
-![WinForms RadChart chart-undestanding-radchart-elements-series-specific-properties 003](images/chart-undestanding-radchart-elements-series-specific-properties003.png)
+![WinForms RadChart Pie Diameter Scale](images/chart-undestanding-radchart-elements-series-specific-properties003.png)
 
 When true, the __ShowLabelConnectors__ property visually ties the label with the corresponding pie slice.
 
-![WinForms RadChart chart-undestanding-radchart-elements-series-specific-properties 004](images/chart-undestanding-radchart-elements-series-specific-properties004.png)
+![WinForms RadChart Pie Show Label Connectors](images/chart-undestanding-radchart-elements-series-specific-properties004.png)
 
 
 
 The __ExplodePercent__ property defines the percentage of explosion of pie pieces. By default this is 20 percent.  In the example below it is set to 50 percent: 
 
-![WinForms RadChart chart-undestanding-radchart-elements-series-specific-properties 005](images/chart-undestanding-radchart-elements-series-specific-properties005.png)
+![WinForms RadChart Pie Explode Percent](images/chart-undestanding-radchart-elements-series-specific-properties005.png)
 
 The __CenterXOffset__ and __CenterYOffset__ properties specify the distance from the center of the plot area to the center of the pie in pixels. Use these two properties to position pie charts within the plot area.
 
