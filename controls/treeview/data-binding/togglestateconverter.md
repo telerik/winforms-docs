@@ -358,7 +358,7 @@ Me.RadTreeView1.ToggleStateConverter = New CustomTypeConverter()
 
 Now, you can toggle/untoggle the nodes and this will be properly reflected to the underlying data object:
 
-![WinForms RadTreeView treeview-data-binding-togglestateconverter 001](images/treeview-data-binding-togglestateconverter001.gif)
+![WinForms RadTreeView ToggleStateConverter](images/treeview-data-binding-togglestateconverter001.gif)
 
 Note that following this approach it is possible to convert any custom type to **ToggleState** and thus bind the check boxes in the tree view to any custom property that you have. It is just necessary to implement the specific conversion.
 

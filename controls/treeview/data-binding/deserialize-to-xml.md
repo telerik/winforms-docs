@@ -26,7 +26,7 @@ TreeView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http:/
 
 The contents of the saved XML file contain the properties for the RadTreeView as a whole and each of the nodes in the tree.
 
-![WinForms RadTreeView treeview-data-binding-serialize-deserialize-to-xml 001](images/treeview-data-binding-serialize-deserialize-to-xml001.png)
+![WinForms RadTreeView Serialize Deserialize to XML](images/treeview-data-binding-serialize-deserialize-to-xml001.png)
 
 >note  __RadTreeView__ supports save/load functionality at design time via the [Property Builder]({%slug winforms/treeview/design-time/property-builder%}).
 >

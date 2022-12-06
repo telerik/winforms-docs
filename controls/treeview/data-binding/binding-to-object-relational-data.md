@@ -15,7 +15,7 @@ RadTreeView has the ability to bind to related data of custom objects which have
 
 Consider the following class diagram: 
 
-![WinForms RadTreeView treeview-data-binding-binding-to-object-relational-data 004](images/treeview-data-binding-binding-to-object-relational-data004.png)
+![WinForms RadTreeView OR Class Diagram](images/treeview-data-binding-binding-to-object-relational-data004.png)
 
 There are three classes named __Customer__, __Order__ and __Order_Detail__. The data relations in the case of custom objects are represented by properties which provide references to collections of related objects. In this case the __Customer__ class has a property named __Orders__ which is a collection of __Order__ objects. This is the first relation. The second relation is the __Order_Details__ property in the __Order__ class, it offers a reference to a collection of __Order_Details__. Once you have such class composition, it is trivial for RadTreeView to represent it visually in your application.
         
@@ -64,7 +64,7 @@ Me.RadTreeView1.ChildMember = "Customers\Orders\Order_Details"
 
 As a result, we get the following hierarchy in RadTreeView:
 
-![WinForms RadTreeView treeview-data-binding-binding-to-object-relational-data 001](images/treeview-data-binding-binding-to-object-relational-data001.png)
+![WinForms RadTreeView Binding to Object-relational Data](images/treeview-data-binding-binding-to-object-relational-data001.png)
 
 
 

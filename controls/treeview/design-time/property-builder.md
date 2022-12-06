@@ -74,14 +74,14 @@ The available items are:
 
 >caption Figure 5. The RadTreeViewProperties
 
-![WinForms RadTreeView 5 The RadTreeViewProperties](images/treeview-design-time-property-builder002.png)
+![WinForms RadTreeView Properties Settings tab](images/treeview-design-time-property-builder002.png)
  
 
 ### The Advanced tab
 
 >caption Figure 6. The RadTreeViewProperties
 
-![WinForms RadTreeView 6 The RadTreeViewProperties](images/treeview-design-time-property-builder006.png)
+![WinForms RadTreeView Properties Advanced tab](images/treeview-design-time-property-builder006.png)
 
 The *Advanced* tab displays all the properties of the RadTreeView as you would see them in the `Properties` window. The Advanced tab provides the best control over the RadTreeView characteristics but it may take longer to find the relevant properties.
 

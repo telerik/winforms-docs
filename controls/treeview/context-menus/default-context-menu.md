@@ -46,7 +46,7 @@ Me.RadTreeView1.AllowDefaultContextMenu = True
 {{endregion}} 
 
 
-![WinForms RadTreeView treeview-context-menus-default-context-menu 001](images/treeview-context-menus-default-context-menu001.png)
+![WinForms RadTreeView Default Menu](images/treeview-context-menus-default-context-menu001.png)
 
 This will display only a small subset of all available menu items. Please note that only the *Expand/Collapse* item is enabled. All the other items are disabled and below you will see how to enable them.
 
@@ -69,7 +69,7 @@ Me.RadTreeView1.AllowAdd = True
 {{endregion}} 
 
 
-![WinForms RadTreeView treeview-context-menus-default-context-menu 002](images/treeview-context-menus-default-context-menu002.png)
+![WinForms RadTreeView AllowAdd](images/treeview-context-menus-default-context-menu002.png)
 
 __Enabling the Edit item__: To enable the Edit item, you should set the __AllowEdit__ property to *true*:
 
@@ -87,7 +87,7 @@ Me.RadTreeView1.AllowEdit = True
 
 {{endregion}} 
 
-![WinForms RadTreeView treeview-context-menus-default-context-menu 005](images/treeview-context-menus-default-context-menu005.png)
+![WinForms RadTreeView AllowEdit](images/treeview-context-menus-default-context-menu005.png)
 
 __Enabling the Delete item__: To enable the Delete item, you should set the __AllowRemove__ property to *true*:
 
@@ -105,7 +105,7 @@ Me.RadTreeView1.AllowRemove = True
 
 {{endregion}} 
 
-![WinForms RadTreeView treeview-context-menus-default-context-menu 004](images/treeview-context-menus-default-context-menu004.png)
+![WinForms RadTreeView AllowRemove](images/treeview-context-menus-default-context-menu004.png)
 
 # See Also
 * [Custom Context Menus]({%slug winforms/treeview/design-time/context-menus%})

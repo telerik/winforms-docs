@@ -32,7 +32,7 @@ RadTreeView supports binding to Database data. Levels are created using the RadT
 * __ChildMember__: The name of the child data field which takes part in the relation.
           
 
-![WinForms RadTreeView treeview-data-binding-binding-to-database-data 001](images/treeview-data-binding-binding-to-database-data001.png)
+![WinForms RadTreeView Binding](images/treeview-data-binding-binding-to-database-data001.png)
 
 The purpose of this example is to demonstrate how to bind to database data.
 
@@ -42,17 +42,17 @@ The purpose of this example is to demonstrate how to bind to database data.
 
 1. In the __Choose a Data Source Type__ page select the __Database__ icon, then click __Next__.
 
-    ![WinForms RadTreeView treeview-data-binding-binding-to-database-data 002](images/treeview-data-binding-binding-to-database-data002.png)
+    ![WinForms RadTreeView Wizard](images/treeview-data-binding-binding-to-database-data002.png)
 
 1. In the __Choose Your Data Connection__ page of the wizard click __New Connection__.
 
 1. In the __Add Connection__ dialog click the __Change__ button, select "Microsoft Access Database File" and click the __OK__ button. In the __Database file name__ entry click the __Browse__ button and locate the `MusicCollection.mdb` file in the installation directory under `\Examples\DataSources`. Click __OK__. When prompted if you would like to copy the local data file to your project click __Yes__.
 
-    ![WinForms RadTreeView treeview-data-binding-binding-to-database-data 003](images/treeview-data-binding-binding-to-database-data003.png)
+    ![WinForms RadTreeView Connection](images/treeview-data-binding-binding-to-database-data003.png)
 
 1. In the __Choose Your Database Objects__ page of the wizard select the "Artists", "Albums" and "Songs" tables checkboxes. Click __Finish__.
 
-    ![WinForms RadTreeView treeview-data-binding-binding-to-database-data 004](images/treeview-data-binding-binding-to-database-data004.png)
+    ![WinForms RadTreeView DataBase](images/treeview-data-binding-binding-to-database-data004.png)
 
 1. Set the __DataSource__ property first to `Songs`, then to `Albums` and finally to `Artists` data table. This will create the necessary data-binding components in the component tray - a DataSet, BindingSources and TableAdapters. The DataSet is the container for the data, the TableAdapters are used to fill the DataSet.
 
