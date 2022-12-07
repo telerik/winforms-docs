@@ -13,7 +13,7 @@ previous_url: track-and-status-controls-waitingbar-structure, track-and-status-c
 
 >caption Fig.1 RadWaitingBar's elements hierarchy
 
-![WinForms RadWaitingBar RadWaitingBar's elements hierarchy](images/track-and-status-controls-waitingbar-structure001.png)
+![WinForms RadWaitingBar's elements hierarchy](images/track-and-status-controls-waitingbar-structure001.png)
 
  1. __WaitingBarIndicatorElement__
  2. __WaitingBarTextElement__
@@ -22,7 +22,7 @@ previous_url: track-and-status-controls-waitingbar-structure, track-and-status-c
 
 >caption Fig.2 RadWaitingBar's structure
 
-![WinForms RadWaitingBar RadWaitingBar's structure](images/track-and-status-controls-waitingbar-structure002.png)
+![WinForms RadWaitingBar's structure](images/track-and-status-controls-waitingbar-structure002.png)
 
 
 

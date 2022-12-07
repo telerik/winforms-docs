@@ -22,11 +22,11 @@ When using [bound mode]({%slug treemap-data-binding%}), once the **RadTreeMap** 
 
 >caption RadTreeMap with no grouping
 
-![WinForms RadTreeMap RadTreeMap with no grouping](images/winforms-treemap-grouping002.png)
+![WinForms RadTreeMap with no grouping](images/winforms-treemap-grouping002.png)
 
 >caption RadTreeMap grouped by CategoryID 
 
-![WinForms RadTreeMap RadTreeMap grouped by CategoryID](images/winforms-treemap-grouping003.png)
+![WinForms RadTreeMap grouped by CategoryID](images/winforms-treemap-grouping003.png)
 
 {{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=Grouping}} 
 {{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=Grouping}} 

@@ -20,7 +20,7 @@ RadTreeMap shows tooltips/screentips out of the box. The **ToolTipDisplayMode** 
 
 By default, ToolTipDisplayMode.**ScreenTip** is used:
 
-![WinForms RadTreeMap winforms-treemap-tooltips 001](images/winforms-treemap-tooltips001.png)
+![WinForms RadTreeMap Tooltips](images/winforms-treemap-tooltips001.png)
 
 ## Events
 
@@ -86,13 +86,13 @@ End Sub
 
 {{endregion}} 
 
-![WinForms RadTreeMap winforms-treemap-tooltips 002](images/winforms-treemap-tooltips002.png)
+![WinForms RadTreeMap Customizing Screentips](images/winforms-treemap-tooltips002.png)
 
 ### ToolTipShowing
 
 When the **ToolTipDisplayMode** property is set to **ToolTip**, the **ToolTipShowing** event is expected to be fired just before showing the RadToolTip. This event can be canceled if the tooltip shouldn't be shown in certain conditions. 
 
-![WinForms RadTreeMap winforms-treemap-tooltips 003](images/winforms-treemap-tooltips003.png)
+![WinForms RadTreeMap ToolTipShowing](images/winforms-treemap-tooltips003.png)
 
 The **TreeMapToolTipEventArgs** gives access to the following argumens:
 
@@ -131,7 +131,7 @@ End Sub
 
 {{endregion}} 
 
-![WinForms RadTreeMap winforms-treemap-tooltips 004](images/winforms-treemap-tooltips004.png)
+![WinForms RadTreeMap TreeMapToolTipEventArgs](images/winforms-treemap-tooltips004.png)
 
  
 # See Also
