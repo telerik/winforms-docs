@@ -15,11 +15,11 @@ This article describes the inner structure and organization of the elements whic
 
 >caption Figure 1: RadProgressBar's elements hierarchy
 
-![WinForms RadProgressBar RadProgressBar's elements hierarchy](images/track-and-status-controls-progressbar-control-element-structure001.png)
+![WinForms RadProgressBar's elements hierarchy](images/track-and-status-controls-progressbar-control-element-structure001.png)
 
 >caption Figure 2: RadProgressBar visual structure
 
-![WinForms RadProgressBar RadProgressBar visual structure](images/track-and-status-controls-progressbar-control-element-structure002.png)
+![WinForms RadProgressBar visual structure](images/track-and-status-controls-progressbar-control-element-structure002.png)
 
 The __RadProgressBarElement__ represents the entire __RadProgressBar__ control. Any settings you make at this level will be inherited by all elements further down in the tree.
 

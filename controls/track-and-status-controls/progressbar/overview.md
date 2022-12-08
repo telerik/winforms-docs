@@ -18,11 +18,11 @@ __RadProgressBar__ is designed to display progress information to the user durin
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadProgressBar track-and-status-controls-progressbar-overview 001](images/track-and-status-controls-progressbar-overview001.gif)
+![WinForms RadProgressBar Overview](images/track-and-status-controls-progressbar-overview001.gif)
 
 Dashed and cross-hatched indicator styles
 
-![WinForms RadProgressBar track-and-status-controls-progressbar-overview 002](images/track-and-status-controls-progressbar-overview002.png)
+![WinForms RadProgressBar Dashed](images/track-and-status-controls-progressbar-overview002.png)
 
 >tip In the related [Getting Started](https://docs.telerik.com/devtools/winforms/controls/track-and-status-controls/progressbar/getting-started) article you can find how to use the control with a sample scenario.
 

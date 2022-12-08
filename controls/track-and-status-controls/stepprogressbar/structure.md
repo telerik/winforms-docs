@@ -14,7 +14,7 @@ CTAControlName: StepProgressBar
 This article describes the inner structure and organization of the elements which build the **RadStepProgressBar** control.
  
 
-![WinForms RadStepProgressBar winforms/StepProgressBar-structure 001](images/stepprogressbar-structure001.png) 
+![WinForms RadStepProgressBar Structure](images/stepprogressbar-structure001.png) 
 
 The __RadStepProgressBarElement__ represents the entire __RadStepProgressBar__ control. Any settings you make at this level will be inherited by all elements further down in the tree.
 
@@ -28,7 +28,7 @@ The __RadStepProgressBarElement__ represents the entire __RadStepProgressBar__ c
 
 ## Elements Hierarchy
 
-![WinForms RadStepProgressBar winforms/StepProgressBar-structure 002](images/stepprogressbar-structure002.png) 
+![WinForms RadStepProgressBar Elements Hierarchy](images/stepprogressbar-structure002.png) 
 
 # See Also
 

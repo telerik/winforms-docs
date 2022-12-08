@@ -15,7 +15,7 @@ Below are the basic steps needed to get started with __RadRating__ control in Vi
 
 1\. Drag __RadRating__ from the Visual Studio Toolbox to the form.
 
-![WinForms RadRating rating-getting-started 001](images/rating-getting-started001.png)
+![WinForms RadRating Getting Started](images/rating-getting-started001.png)
 
 1. Set the *Caption* to *“The best movie ever”*.
 
@@ -82,7 +82,7 @@ End Sub
 
 5\. Press F5 to run the application.
 
-![WinForms RadRating rating-getting-started 002](images/rating-getting-started002.png)
+![WinForms RadRating Getting Started Result](images/rating-getting-started002.png)
 
 # See Also
 

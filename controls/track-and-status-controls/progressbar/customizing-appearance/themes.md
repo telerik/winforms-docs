@@ -20,13 +20,13 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select **IndicatorElement1** in *Controls Structure* on the left side. Then, select **UpperProgressindicatorElement** in the *Elements* section.
 
-	![WinForms RadProgressBar progressbar-customizing-appearance-themes 001](images/progressbar-customizing-appearance-themes001.png)
+	![WinForms RadProgressBar Controls Structure](images/progressbar-customizing-appearance-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![WinForms RadProgressBar progressbar-customizing-appearance-themes 002](images/progressbar-customizing-appearance-themes002.png)
+	![WinForms RadProgressBar Edit Fill](images/progressbar-customizing-appearance-themes002.png)
 	
-	![WinForms RadProgressBar progressbar-customizing-appearance-themes 003](images/progressbar-customizing-appearance-themes003.png)
+	![WinForms RadProgressBar BackColor](images/progressbar-customizing-appearance-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

@@ -13,7 +13,7 @@ previous_url: track-and-status-controls-trackbar-customization
 
 **RadTrackBar** introduces the **TickFormatting** and **LableFormatting** events in order to facilitate the standard customization through the element tree of the control. Below you will find a scenario that will increase your knowledge about **RadTrackBar**'s API. Basically, we will customize **RadTrackBar** to use it as a selection tool for dates in a month:
 
-![WinForms RadTrackBar track-and-status-controls-trackbar-customization 001](images/track-and-status-controls-trackbar-customization001.png)
+![WinForms RadTrackBar Customization](images/track-and-status-controls-trackbar-customization001.png)
 
 #### Dates selection example
 

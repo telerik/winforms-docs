@@ -106,4 +106,4 @@ End Sub
 
 20\. Click the __Go__ Button to see the Telerik RadProgressBar animation.
 
-![WinForms RadProgressBar track-and-status-controls-progressbar-getting-started 001](images/track-and-status-controls-progressbar-getting-started001.gif)
+![WinForms RadProgressBar Getting Started](images/track-and-status-controls-progressbar-getting-started001.gif)
