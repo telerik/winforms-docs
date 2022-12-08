@@ -17,16 +17,16 @@ Accessing and customizing elements can be performed either at design time, or at
 
 You can access and modify the style for different elements in __RadClock__ by using the Element hierarchy editor. It can be accessed by selecting the *Edit UI Elements* item from the Smart Tag.
 
->caption Fig.1 Element hierarchy editor
+>caption Figure 1: Element hierarchy editor
 
-![WinForms RadClock Element hierarchy editor](images/clock-customizing-appearance-accessing-and-customizing-elements001.png)
+![WinForms RadClock Element Hierarchy Editor](images/clock-customizing-appearance-accessing-and-customizing-elements001.png)
 
 >note The background for __RadClockElement__ and the __ArrowElement__ use images to introduce the style for a given theme. If you need to customize the arrows for example, it is necessary to apply the desired image to the respective __ArrowPrimitive__.
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
->caption Fig.2 Customize elements
+>caption Figure 2: Customize elements
 
 ![WinForms RadClock Customize elements](images/clock-customizing-appearance-accessing-and-customizing-elements002.gif)
 

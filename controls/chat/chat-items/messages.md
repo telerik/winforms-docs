@@ -22,7 +22,7 @@ A **ChatTimeSeparatorMessage** visually separates the messages according to a ce
 
 >caption Figure 1: ChatTimeSeparatorMessage
 
-![WinForms RadChat ChatTimeSeparatorMessage](images/chat-items-messages001.png) 
+![WinForms RadChat Time Separator Message](images/chat-items-messages001.png) 
 
 #### Setting TimeSeparatorInterval
 
@@ -74,7 +74,7 @@ End Sub
 
 >caption Figure 2: ChatTimeSeparatorMessage
 
-![WinForms RadChat ChatTimeSeparatorMessage](images/chat-items-messages003.png) 
+![WinForms RadChat Separator Message](images/chat-items-messages003.png) 
 
 ## ChatTextMessage
 
@@ -82,7 +82,7 @@ A **ChatTextMessage** represents a single text message by a certain author and s
 
 >caption Figure 3: ChatTextMessages
 
-![WinForms RadChat ChatTextMessages](images/chat-items-messages002.png) 
+![WinForms RadChat Text Messages](images/chat-items-messages002.png) 
 
 
 #### Adding Text Messages
@@ -127,7 +127,7 @@ A **ChatMediaMessage** represents an image message by a certain author and sent 
 
 >caption Figure 4: ChatMediaMessage
 
-![WinForms RadChat ChatMediaMessage](images/chat-items-messages004.png) 
+![WinForms RadChat Media Message](images/chat-items-messages004.png) 
 
 
 #### Adding Media Message
@@ -160,7 +160,7 @@ A **ChatCarouselMessage** allows adding and visualizing multiple [card elements]
 
 >caption Figure 5: ChatCarouselMessage
 
-![WinForms RadChat ChatCarouselMessage](images/chat-items-messages005.gif) 
+![WinForms RadChat Carousel Message Sample](images/chat-items-messages005.gif) 
 
 
 #### Adding Carousel Message with Cards
@@ -226,7 +226,7 @@ A **ChatOverlayMessage** represents a **ChatMessage** that displays an [overlay 
 
 >caption Figure 6: ChatOverlayMessage
 
-![WinForms RadChat ChatOverlayMessage](images/chat-items-messages006.gif) 
+![WinForms RadChat Overlay Message Sample](images/chat-items-messages006.gif) 
 
 #### Adding a ChatListOverlay Message 
 
@@ -263,7 +263,7 @@ Me.radChat1.AddMessage(overlayMessage)
 
 >caption Figure 7: ChatListOverlay
 
-![WinForms RadChat ChatListOverlay](images/chat-items-messages007.png) 
+![WinForms RadChat List Overlay Sample](images/chat-items-messages007.png) 
 
 The **ChatOverlayMessage** can host any **BaseChatOverlay**: **ChatCalendarOverlay**, **ChatDateTimeOverlay**, **ChatListOverlay**, **ChatTimeOverlay**.
 
@@ -273,7 +273,7 @@ A **ChatSuggestedActionsMessage** represents a message offering a list of **Sugg
 
 >caption Figure 8: ChatSuggestedActionsMessage
 
-![WinForms RadChat ChatSuggestedActionsMessage](images/chat-items-messages008.gif) 
+![WinForms RadChat Suggested Actions Message](images/chat-items-messages008.gif) 
 
 #### Adding a ChatSuggestedActionsMessage Message 
 

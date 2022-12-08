@@ -132,7 +132,7 @@ End Sub
 
 >caption Figure 3: Carousel Item
 
-![WinForms RadChat Carousel Item](images/chat-formatting003.png)
+![WinForms RadChat Carousel Item Sample](images/chat-formatting003.png)
 
 #### Customizing the Child Items
 

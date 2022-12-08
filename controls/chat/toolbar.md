@@ -14,7 +14,7 @@ position: 3
 
 >caption Figure 1. ChatToolbarElement
 
-![WinForms RadChat ChatToolbarElement](images/chat-items-toolbar002.gif) 
+![WinForms RadChat Chat Toolbar Element](images/chat-items-toolbar002.gif) 
  
 The below sample code demonstrates how to add a toolbar action that inserts an image selected from the File Explorer:
 

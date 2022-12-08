@@ -22,7 +22,7 @@ Depending on the information that is presented, the cards can be one of the foll
 
 >caption Figure 1: ChatImageCardElement
 
-![WinForms RadChat ChatImageCardElement](images/chat-items-cards001.png) 
+![WinForms RadChat Chat Image Card Element](images/chat-items-cards001.png) 
 
 #### Adding a ChatImageCardElement programmatically
 
@@ -52,13 +52,13 @@ Me.radChat1.AddMessage(message)
 
 {{endregion}}
 
-## ChatProductCardElement
+## Chat Product Card Element
 
 **ChatProductCardElement** illustrates an image and several fields with additional information. It resembles a product brochure.
 
 >caption Figure 2: ChatProductCardElement
 
-![WinForms RadChat ChatProductCardElement](images/chat-items-cards002.png) 
+![WinForms RadChat Chat Product Card Element](images/chat-items-cards002.png) 
 
 #### Adding a ChatProductCardElement programmatically
 
@@ -93,7 +93,7 @@ Me.radChat1.AddMessage(message)
 
 >caption Figure 3: ChatWeatherCardElement
 
-![WinForms RadChat ChatWeatherCardElement](images/chat-items-cards003.png) 
+![WinForms RadChat Chat Weather Card Element](images/chat-items-cards003.png) 
 
 #### Adding a ChatWeatherCardElement programmatically
 
@@ -125,7 +125,7 @@ Me.radChat1.AddMessage(message)
 
 >caption Figure 4: ChatFlightCardElement
 
-![WinForms RadChat ChatFlightCardElement](images/chat-items-cards004.png) 
+![WinForms RadChat Chat Flight Card Element](images/chat-items-cards004.png) 
 
 #### Adding a ChatFlightCardElement programmatically
 
@@ -160,7 +160,7 @@ The above examples demonstrates how to add the different card types in a simple 
 
 >caption Figure 5: ChatCarouselMessage
 
-![WinForms RadChat ChatCarouselMessage](images/chat-items-cards005.gif) 
+![WinForms RadChat Carousel Message](images/chat-items-cards005.gif) 
 
 ## Card Actions
 
@@ -235,7 +235,7 @@ End Sub
 
 >caption Figure 6: Handling ChatCardActions
 
-![WinForms RadChat Handling ChatCardActions](images/chat-items-cards006.gif) 
+![WinForms RadChat Handling Chat Card Actions](images/chat-items-cards006.gif) 
 
  
 # See Also

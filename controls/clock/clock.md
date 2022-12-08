@@ -18,7 +18,7 @@ __RadClock__ is a control which allows the developers to use it in their applica
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadClock clock-overview 001](images/clock-overview001.gif)
+![WinForms RadClock Overview](images/clock-overview001.gif)
 
 >note The control cannot be resized since it uses a bitmap for its background.
 >
@@ -26,7 +26,7 @@ __RadClock__ is a control which allows the developers to use it in their applica
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadClock Getting Started with RadTimePicker and RadClock for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms)<br>In this video, we are going to demonstrate the new RadTimePicker and RadClock controls as well as several properties you should be aware of.|![WinForms RadClock clock-getting-started 002](images/clock-getting-started002.png)|
+|[WinForms RadClock Getting Started with RadTimePicker and RadClock for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms)<br>In this video, we are going to demonstrate the new RadTimePicker and RadClock controls as well as several properties you should be aware of.|![WinForms RadClock and RadTimePicker Overview](images/clock-getting-started002.png)|
 
 # See Also
 

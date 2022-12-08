@@ -348,4 +348,4 @@ End If
 {{endregion}} 
 
 
-![WinForms RadCheckedListBox checkedlistbox-getting-started 002](images/checkedlistbox-getting-started002.png)
+![WinForms RadCheckedListBox VisualItemFormatting](images/checkedlistbox-getting-started002.png)

@@ -18,7 +18,7 @@ __RadCommandBar__ is a fully themeable tool strip that provides unprecedented fl
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadCommandBar commandbar-overview 001](images/commandbar-overview001.png)
+![WinForms RadCommandBar Overview](images/commandbar-overview001.png)
 
 
 | RELATED VIDEOS |  |
@@ -29,7 +29,7 @@ __RadCommandBar__ is a fully themeable tool strip that provides unprecedented fl
 
 __RadCommandBar__ supports horizontal and vertical orientation:
 
-![WinForms RadCommandBar commandbar-overview 002](images/commandbar-overview002.png)
+![WinForms RadCommandBar Overview Orientation](images/commandbar-overview002.png)
 
 ## Theming
 

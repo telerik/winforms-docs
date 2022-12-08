@@ -38,11 +38,11 @@ As an inheritor of __RadListView__, __RadCheckedListBox__ extends its functional
 
 To data bind the checkboxes of __RadCheckedListBox__ you need to set __CheckedMember__ using the smart tag or the properties window. 
 
-![WinForms RadCheckedListBox checkedlistbox-data-binding 001](images/checkedlistbox-data-binding001.png)
+![WinForms RadCheckedListBox Design Time](images/checkedlistbox-data-binding001.png)
 
 The result is data bound __CheckedListBox__
 
-![WinForms RadCheckedListBox checkedlistbox-data-binding 002](images/checkedlistbox-data-binding002.png)
+![WinForms RadCheckedListBox Data Bound Result](images/checkedlistbox-data-binding002.png)
 
 ## Binding Programmatically
 
@@ -198,4 +198,4 @@ Me.RadCheckedListBox1.CheckedMember = "CheckState"
 {{endregion}} 
 
 
-![WinForms RadCheckedListBox checkedlistbox-data-binding 003](images/checkedlistbox-data-binding003.png)
+![WinForms RadCheckedListBox Programmatically DataSource DisplayMember ValueMember CheckedMember](images/checkedlistbox-data-binding003.png)

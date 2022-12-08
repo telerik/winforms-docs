@@ -95,7 +95,7 @@ End Sub
 
 {{endregion}} 
 
-After loading the layout it will reload the initial settings of the existing items:![WinForms RadCommandBar command-bar-save-and-load-layout 001](images/command-bar-save-and-load-layout001.png)
+After loading the layout it will reload the initial settings of the existing items:![WinForms RadCommandBar Save Load Layout](images/command-bar-save-and-load-layout001.png)
 
 >important When loading the layout it will only load the settings for the items that were there by the time when the layout was saved. If some of the items (i.e. CommandBarButton, CommandBarToggleButton) were deleted - the layout loading will not recreate them and if some items were added the layout will not effect them either.
 >

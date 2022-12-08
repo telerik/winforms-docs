@@ -28,7 +28,7 @@ radClock1.ClockElement.ToolTipText = DateTime.Now.ToLongTimeString()
 
 {{endregion}} 
 
-![WinForms RadClock clock-tooltips 001](images/clock-tooltips001.png)
+![WinForms RadClock ToolTips](images/clock-tooltips001.png)
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
@@ -51,7 +51,7 @@ End Sub
 
 {{endregion}} 
 
-![WinForms RadClock clock-tooltips 002](images/clock-tooltips002.png)
+![WinForms RadClock ToolTipTextNeeded](images/clock-tooltips002.png)
 
 >note The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set in  the __ToolTipText__ property.
 

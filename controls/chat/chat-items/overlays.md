@@ -24,7 +24,7 @@ When you press the `OK` button, a new message will be automatically added with t
 
 >caption Figure 1: ChatCalendarOverlay
 
-![WinForms RadChat ChatCalendarOverlay](images/chat-items-overlays001.gif) 
+![WinForms RadChat Calendar Overlay Sample](images/chat-items-overlays001.gif) 
 
 #### Adding a ChatCalendarOverlay
 
@@ -59,7 +59,7 @@ You have access to the calendar itself by the ChatCalendarOverlay.**Calendar** p
 
 >caption Figure 2: ChatDateTimeOverlay
 
-![WinForms RadChat ChatDateTimeOverlay](images/chat-items-overlays002.gif) 
+![WinForms RadChat DateTime Overlay Sample](images/chat-items-overlays002.gif) 
 
 #### Adding a ChatDateTimeOverlay
 
@@ -92,7 +92,7 @@ Me.radChat1.AddMessage(overlayMessage)
 
 >caption Figure 3: ChatListOverlay
 
-![WinForms RadChat ChatListOverlay](images/chat-items-overlays003.gif) 
+![WinForms RadChat List Overlay Sample](images/chat-items-overlays003.gif) 
 
 #### Adding a ChatListOverlay
 
@@ -134,7 +134,7 @@ You have access to the list view by the ChatListOverlay.**ListView** property.
 
 >caption Figure 4: ChatTimeOverlay
 
-![WinForms RadChat ChatTimeOverlay](images/chat-items-overlays004.gif) 
+![WinForms RadChat Time Overlay Sample](images/chat-items-overlays004.gif) 
 
 #### Adding a ChatTimeOverlay
 

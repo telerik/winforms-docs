@@ -66,6 +66,6 @@ End Sub
 
 >caption Figure 1: CustomizeContextMenu
 >
-![WinForms RadCommandBar CustomizeContextMenu](images/commandbar-customize-the-control-context-menu001.png)
+![WinForms RadCommandBar CustomizeContextMenu Example](images/commandbar-customize-the-control-context-menu001.png)
 
 

@@ -16,21 +16,21 @@ Every journey has a starting point and this one starts at [azure.com](https://az
 
 Once we have our account and subscription our journey goes to the [Azure portal](https://portal.azure.com/). Here we will create and manage the app for our bot. We can even edit the source code of our bot right in the browser, but let's not get ahead of ourselves. First, go to *“Create a Resource” (1)*. If this is your first time in the portal you will have the option right in your dashboard, in all cases you can use the button on the menu on left hand side. The type of resource we are interested in is called *“Web App Bot” (4)* which can be found under the “*AI + Machine Learning” group (2)*. Note that clicking on *(3)* is optional but will help you understand the next window.
 
-![WinForms RadChat chat-integration-azure-chat-bot 001](images/chat-integration-azure-chat-bot001.png)
+![WinForms RadChat Azure Chat Bot](images/chat-integration-azure-chat-bot001.png)
 
 On the next step, fill in the required fields and leave the Bot Template to “*Basic (C#)*” then hit **Create**. This will create an echo bot that will repeat back any messages we send to it.
 
-![WinForms RadChat chat-integration-azure-chat-bot 002](images/chat-integration-azure-chat-bot002.png)
+![WinForms RadChat Azure Chat Bot Template](images/chat-integration-azure-chat-bot002.png)
 
 In a few moments the bot app will be deployed and we will be ready for the channel setup.
 
 When we open our newly created app, the only way to reach it is through Web chat. To enable DirectLine, which will be our channel of communication, click on the **Channels** option *(1)* and then on the **DirectLine** button *(2)*.
 
-![WinForms RadChat chat-integration-azure-chat-bot 003](images/chat-integration-azure-chat-bot003.png)
+![WinForms RadChat Azure Chat Bot DirectLine](images/chat-integration-azure-chat-bot003.png)
 
 After you enable the channel the channel's settings dialog will open. Since we are there and we are close to being done with the part of the project on the Azure portal side, you can hit **Show** *(1)* on either secret key and then copy the actual secret from the text box *(2)*. In the end hit **Done** *(3)* and we are done with the setup.
 
-![WinForms RadChat chat-integration-azure-chat-bot 004](images/chat-integration-azure-chat-bot004.png)
+![WinForms RadChat Azure Chat Bot Channel](images/chat-integration-azure-chat-bot004.png)
 
 If you ever need to come back to this dialog you can hit the **Edit** button in the channels list.
 
@@ -151,7 +151,7 @@ private void ChatElement_SendMessage(object sender, SendMessageEventArgs e)
 
 With this our journey concludes. All the steps and code to have a working chat bot brought us here and now we can start the application and send a message to the bot which he should echo it back.
 
-![WinForms RadChat chat-integration-azure-chat-bot 005](images/chat-integration-azure-chat-bot005.png)
+![WinForms RadChat Azure Chat Bot Sample](images/chat-integration-azure-chat-bot005.png)
 
 # See Also
 

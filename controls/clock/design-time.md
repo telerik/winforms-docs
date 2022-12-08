@@ -12,7 +12,7 @@ position: 2
 
 ## Smart Tag
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
 
 ![WinForms RadClock Smart Tag](images/clock-design-time001.png)
 

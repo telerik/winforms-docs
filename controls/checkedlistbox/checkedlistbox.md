@@ -20,7 +20,7 @@ __RadCheckedListBox__ is an enhanced alternative to the standard Windows Forms c
 
 >caption Figure 1: RadCheckedListBox
 
-![WinForms RadCheckedListBox RadCheckedListBox](images/checkedlistbox-overview001.png)
+![WinForms RadCheckedListBox Overview](images/checkedlistbox-overview001.png)
 
 # See Also
 

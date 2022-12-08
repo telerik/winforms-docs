@@ -12,14 +12,14 @@ position: 0
 
 You can access and modify the style for different elements in __RadCommandBar__ by selecting the element and customizing its look by the *Properties* section in Visual Studio 
 
->caption Fig.1 Customizing CommandBarStripElement's border at design time.
+>caption Figure 1: Customizing CommandBarStripElement's border at design time.
 
 ![WinForms RadCommandBar Customizing CommandBarStripElement's border at design time](images/commandbar-appearance-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the elements at run time as well:
->caption Fig.2 Customize elements
+>caption Figure 2: Customize elements
 
 ![WinForms RadCommandBar Customize elements](images/commandbar-appearance-accessing-and-customizing-elements002.png)
 

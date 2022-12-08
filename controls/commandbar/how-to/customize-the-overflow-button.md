@@ -13,11 +13,11 @@ previous_url: commandbar-howto-customize-the-overflow-button
 
 This article will demonstrate how to access the __Overflow__ button in __RadCommandBar__ and how to customize its items.
  
-![WinForms RadCommandBar commandbar-howto-customize-the-overflow-button 001](images/commandbar-howto-customize-the-overflow-button001.png)
+![WinForms RadCommandBar Customize the Overflow Button](images/commandbar-howto-customize-the-overflow-button001.png)
 
 Each [CommandBarStripElement]({%slug winforms/commandbar/structure%}) has its own __Overflow__ button. This button has a drop down, which contains of __"Add or Remove Buttons"__ menu item, __"Customize..."__ menu item and  __RadMenuSeparatorItems__ items. Additionally, if there is not enough space on the control to fit all the items, they will be displayed in the drop down menu as well.
  
-![WinForms RadCommandBar commandbar-howto-customize-the-overflow-button 002](images/commandbar-howto-customize-the-overflow-button002.png)
+![WinForms RadCommandBar Smart Tag Customize CommandBarStripElement](images/commandbar-howto-customize-the-overflow-button002.png)
 
 The following example, demonstrates how to access the __RadMenuItems__ of the __Overflow__ button. For your convenience we have exposed the __CustomizeButtonMenuItem__ and the __AddRemoveButtonsMenuItem__. 
 
@@ -58,7 +58,7 @@ Next
 {{endregion}} 
 
 
-![WinForms RadCommandBar commandbar-howto-customize-the-overflow-button 003](images/commandbar-howto-customize-the-overflow-button003.png)
+![WinForms RadCommandBar Customize the Overflow Button Result](images/commandbar-howto-customize-the-overflow-button003.png)
 
 Alternatively, if you need to hide the whole __Overflow__ button, simply set its Visibility property to *Collapsed* 
  
@@ -78,4 +78,4 @@ CommandBarStripElement1.OverflowButton.Visibility = Telerik.WinControls.ElementV
 {{endregion}} 
 
 
-![WinForms RadCommandBar commandbar-howto-customize-the-overflow-button 004](images/commandbar-howto-customize-the-overflow-button004.png)
+![WinForms RadCommandBar Customize the Overflow Button Hide](images/commandbar-howto-customize-the-overflow-button004.png)

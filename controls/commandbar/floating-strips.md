@@ -17,7 +17,7 @@ A __CommandBarStripElement__ object can be docked to the command bar or floated 
 
 The ability of a __CommandBarStripElement__ object to float is controlled by the commandbar's __EnableDragging__ and __EnableFloating__ properties.  In order to allow a __CommandBarStripElement__ to float, both the __EnableDragging__ and __EnableFloating__ properties must be set to *true*. Setting only the __EnableFloating__ property to *true* has no effect on the floating behavior. The image below shows a __RadCommandBar__ with two strips one of which is floating:
  
-![WinForms RadCommandBar commandbar-floating-strips 001](images/commandbar-floating-strips001.png)
+![WinForms RadCommandBar Floating Strips Basics](images/commandbar-floating-strips001.png)
 
 A __CommandBarStrip__ element is made floating when it is dragged outside the area of its control. You can dock it again by moving it with mouse over any __RadCommandBar__ control.
 

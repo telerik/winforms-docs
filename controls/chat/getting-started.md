@@ -14,7 +14,7 @@ This article will give you getting started experience with **RadChat**.
 
 1\. To start using **RadChat** just drag it from the toolbox and drop it onto the form:
 
-![WinForms RadChat winforms/chat-items-getting-started 001](images/chat-items-getting-started001.png) 
+![WinForms RadChat RadChat Getting Started](images/chat-items-getting-started001.png) 
 
 2\. Set the RadChat.**Author** property: 
 
@@ -38,7 +38,7 @@ Me.radChat1.Author = New Author(My.Resources.architect, "Ben")
 
 Now, you are ready to start sending messages:
 
-![WinForms RadChat winforms/chat-items-getting-started 002](images/chat-items-getting-started002.gif) 
+![WinForms RadChat Setting default author](images/chat-items-getting-started002.gif) 
 
 By default, when you enter some input in the text box and press the `Enter` key to confirm the message, it is automatically added to **RadChat**. This is controlled by the RadChat.**AutoAddUserMessages** property which default value is *true*.  Once a message is confirmed either by pressing the `Enter` key or by clicking the arrow sign, the RadChat.**SendMessage** event is fired. 
 
@@ -81,7 +81,7 @@ End Sub
 
 {{endregion}}
 
-![WinForms RadChat winforms/chat-items-getting-started 003](images/chat-items-getting-started003.gif) 
+![WinForms RadChat Adding Message Programmatically](images/chat-items-getting-started003.gif) 
 
 # See Also
 

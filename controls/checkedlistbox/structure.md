@@ -15,11 +15,11 @@ This article will show the internal elements structure of __RadCheckedListBox__ 
 
 >caption Figure 1: ListViewType.ListView's elements hierarchy
 
-![WinForms RadCheckedListBox ListViewTypeListView's elements hierarchy](images/checkedlistbox-structure001.png)
+![WinForms RadCheckedListBox ListViewTypeListView's Elements hierarchy](images/checkedlistbox-structure001.png)
 
 >caption Figure 2: RadCheckedListBox's structure in ListViewType.ListView
 
-![WinForms RadCheckedListBox RadCheckedListBox's structure in ListViewTypeListView](images/checkedlistbox-structure002.png)
+![WinForms RadCheckedListBox Structure in ListViewType ListView](images/checkedlistbox-structure002.png)
 
 1. __SimpleListViewVisualItem__: represents the visual item. <br>
 	1\.1\. __ListViewItemCheckbox__: represents the check box.
@@ -34,7 +34,7 @@ This article will show the internal elements structure of __RadCheckedListBox__ 
 
 >caption Figure 4: RadCheckedListBox's structure in ListViewType.IconsView
 
-![WinForms RadCheckedListBox RadCheckedListBox's structure in ListViewTypeIconsView](images/checkedlistbox-structure003.png)
+![WinForms RadCheckedListBox Structure in ListViewTypeIconsView](images/checkedlistbox-structure003.png)
 
 1. __IconListViewVisualItem__: represents the visual item. <br>
 	1\.1\. __ListViewItemCheckbox__: represents the check box.
@@ -45,11 +45,11 @@ This article will show the internal elements structure of __RadCheckedListBox__ 
 
 >caption Figure 5: RadCheckedListBox's structure in ListViewType.DetailsView
 
-![WinForms RadCheckedListBox RadCheckedListBox's structure in ListViewTypeDetailsView](images/checkedlistbox-structure006.png)
+![WinForms RadCheckedListBox Structure in ListViewTypeDetailsView](images/checkedlistbox-structure006.png)
 
 >caption Figure 6: RadCheckedListBox's structure in ListViewType.DetailsView
 
-![WinForms RadCheckedListBox RadCheckedListBox's structure in ListViewTypeDetailsView](images/checkedlistbox-structure004.png)
+![WinForms RadCheckedListBox Elements Structure in ListViewTypeDetailsView](images/checkedlistbox-structure004.png)
 
 1. __DetailListViewVisualItem__: represents the visual item. <br>
 	1\.1\. __ListViewItemCheckbox__: represents the check box.<br>
