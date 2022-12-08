@@ -52,7 +52,7 @@ Me.RadDataFilter1.Expression = "([ProductName] LIKE '%ch%' OR [UnitPrice] > '15'
 {{endregion}}
 
 
-![WinForms RadDataFilter datafilter-unbound-mode 001](images/datafilter-unbound-mode001.png)
+![WinForms RadDataFilter Unbound Mode Design Time](images/datafilter-unbound-mode001.png)
 
 # See Also
 

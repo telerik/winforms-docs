@@ -50,8 +50,8 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 {{endregion}} 
 
 
->caption> Figure 1. Set The Data Source of RadDataEntry
-![WinForms RadDataEntry >   Set The Data Source of RadDataEntry](images/dataentry-properties-events-and-attributes001.png)
+>caption> Figure 1: Set The Data Source of RadDataEntry
+![WinForms RadDataEntry Set The Data Source of RadDataEntry](images/dataentry-properties-events-and-attributes001.png)
 
 * The __ColumnCount__ property controls the amount of columns that __RadDataEntry__ will use to arrange generated controls. Default value is 1 
  
@@ -71,7 +71,7 @@ Me.radDataEntry1.ColumnCount = 2
 
 {{endregion}} 
 
->caption Figure 2. Set The Columns Count.
+>caption Figure 2: Set The Columns Count.
 
 ![WinForms RadDataEntry Set The Columns Count](images/dataentry-properties-events-and-attributes002.png)
 
@@ -129,9 +129,9 @@ Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
 
 {{endregion}} 
 
->caption Figure 4. The Validation Panel.
+>caption Figure 4: The Validation Panel.
 
-![WinForms RadDataEntry 4 The Validation Panel](images/dataentry-properties-events-and-attributes004.png)
+![WinForms RadDataEntry The Validation Panel](images/dataentry-properties-events-and-attributes004.png)
 
 * The __FlowDirection__ controls the direction the editors will be generated when the __ColumnCount__ property has value bigger than 1. 
 
@@ -153,9 +153,9 @@ Me.radDataEntry1.FlowDirection = FlowDirection.BottomUp
 
 {{endregion}} 
 
->caption Figure 5. Set the flow direction.
+>caption Figure 5: Set the flow direction.
 
-![WinForms RadDataEntry 5 Set the flow direction](images/dataentry-properties-events-and-attributes005.png)
+![WinForms RadDataEntry Set the Flow Direction](images/dataentry-properties-events-and-attributes005.png)
 
 * The __ItemSpace__ property controls the space that between the generated items. Default value is 5 pixels.
            
@@ -177,7 +177,7 @@ Me.radDataEntry1.ItemSpace = 10
 
 >caption Figure 6 Set the items space.
 
-![WinForms RadDataEntry 6 Set the items space](images/dataentry-properties-events-and-attributes006.png)
+![WinForms RadDataEntry Set the Items Space](images/dataentry-properties-events-and-attributes006.png)
 
 * The __ItemDefaultSize__ property sets the size that generated items should have if __FitToParentWidth__ property has value *false*. When property the __FitToParentWidth__ has value *true* the width of items are calculated according the width of the __RadDataEntry__ control and the number of the columns. In this case the width defined with __ItemDefaultSize__ is ignored. 
 
@@ -199,7 +199,7 @@ Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
 
 >caption Figure 7. Set items size.
 
-![WinForms RadDataEntry 7 Set items size](images/dataentry-properties-events-and-attributes007.png)
+![WinForms RadDataEntry Set Items Size](images/dataentry-properties-events-and-attributes007.png)
 
 * In __RadDataEntry__ control there is logic that arranges the labels of the editors in one column according to the longest text. This logic can be controlled by the __AutoSizeLabels__ property. By default the property value is __false__ and the labels width will equals the longest label width. If you set this property to __true__, the labels will be sized according to their content, as shown on the following figure: 
 
@@ -219,9 +219,9 @@ Me.radDataEntry1.AutoSizeLabels = True
 
 {{endregion}} 
 
->caption Figure 8. The labels are not auto sized.
+>caption Figure 8: The Labels are not Auto-Sized.
 
-![WinForms RadDataEntry 8 The labels are not auto sized](images/dataentry-properties-events-and-attributes008.png)
+![WinForms RadDataEntry The labels are not Auto-Sized](images/dataentry-properties-events-and-attributes008.png)
 
 ## Events
 
@@ -316,7 +316,7 @@ Private m_LastName As String
 {{endregion}} 
 
 
-![WinForms RadDataEntry dataentry-properties-events-and-attributes 009](images/dataentry-properties-events-and-attributes009.png)
+![WinForms RadDataEntry Set The DisplayName Attribute](images/dataentry-properties-events-and-attributes009.png)
 
 With __RadRange__ attribute users can define range that can be used into validation process. This attribute is provided in validation events. 
 

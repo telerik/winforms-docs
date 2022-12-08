@@ -18,12 +18,12 @@ __RadDataFilter__ is a control that allows you to filter your data. It allows yo
 
 At this point your form should look like this:
     
-![WinForms RadDataFilter datafilter-getting-started001](images/datafilter-getting-started001.png)
+![WinForms RadDataFilter Getting Started](images/datafilter-getting-started001.png)
 
 
 3\. Open the **Smart Tag** of the **RadDataFilter** control and select the "ordersBindingSource".
 
-![WinForms RadDataFilter datafilter-getting-started002](images/datafilter-getting-started002.png)
+![WinForms RadDataFilter Smart Tag](images/datafilter-getting-started002.png)
 
 4\. When the user adds his filtering criteria, the control automatically produces a filter expression available in its Expression property. To apply this filter to the underlying BindingSource, the __ApplyFilter__ method should be invoked. We can use the control events to call the method when new filter is added by the user for example when an item is applied and when removed. Since the RadDataFilter control is build on top of RadTreeView we can use the NodeRemoved and the Edited events for the purpose. 
 
@@ -56,7 +56,7 @@ End Sub
 
 5\. Start the application and add some filters.
 
-![WinForms RadDataFilter datafilter-getting-started003](images/datafilter-getting-started003.gif)
+![WinForms RadDataFilter Getting Started](images/datafilter-getting-started003.gif)
 
 # See Also 
 

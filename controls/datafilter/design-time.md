@@ -30,7 +30,7 @@ Select **RadDataFilter** and click the small arrow on the top right position in 
 
 >caption Figure 2: RadDataFilter Design Time Editor
 
-![WinForms RadDataFilter RadDataFilter Design Time Editor](images/datafilter-design-time002.png)
+![WinForms RadDataFilter Design Time Editor](images/datafilter-design-time002.png)
 
 * __Edit Descriptors__ – opens the *RadItem Collection Editor* which allows you to add/remove/modify **DataFilterDescriptorItems** specifying the **DescriptorName** and **DescriptorType**.
 

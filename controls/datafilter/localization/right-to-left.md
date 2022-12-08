@@ -20,7 +20,7 @@ position: 1
 
 |RightToLeft.No|RightToLeft.Yes|
 |----|----|
-|![WinForms RadDataFilter datafilter-localization-right-to-left-support001](images/datafilter-localization-right-to-left-support001.png)|![WinForms RadDataFilter datafilter-localization-right-to-left-support002](images/datafilter-localization-right-to-left-support002.png)|
+|![WinForms RadDataFilter RightToLeft No](images/datafilter-localization-right-to-left-support001.png)|![WinForms RadDataFilter RightToLeft Yes](images/datafilter-localization-right-to-left-support002.png)|
 
 # See Also
 

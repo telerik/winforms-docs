@@ -186,9 +186,9 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 
 {{endregion}} 
 
->caption Figure 1. RadDataEntry Initializing.
+>caption Figure 1: RadDataEntry Initializing.
 
-![WinForms RadDataEntry RadDataEntry Initializing](images/dataentry-overview-change-auto-generated-editor001.png)
+![WinForms RadDataEntry Initializing](images/dataentry-overview-change-auto-generated-editor001.png)
 
 2\. To change the default __RadTextBox__ editor of the “Salary” property with __RadMaskedEditBox__ we will subscribe to *EditorInitializing* event of __RadDataEntry__.
            
@@ -259,9 +259,9 @@ End Sub
 
 {{endregion}}
 
->caption Figure 2. RadDataEntry MaskedEditBox.
+>caption Figure 2: RadDataEntry MaskedEditBox.
 
-![WinForms RadDataEntry RadDataEntry MaskedEditBox](images/dataentry-overview-change-auto-generated-editor002.png) 
+![WinForms RadDataEntry MaskedEditBox](images/dataentry-overview-change-auto-generated-editor002.png) 
 
 ## RadSpinEditor Default Values
 

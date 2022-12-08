@@ -150,7 +150,7 @@ Each of the nodes holding the expressions has three editor elements which can be
 
 >caption Figure 3: Add Button Text
 
-![WinForms RadDataFilter datafilter-customizing-appearance-formatting-nodes 004](images/datafilter-customizing-appearance-formatting-nodes004.png)
+![WinForms RadDataFilter Add Button Text](images/datafilter-customizing-appearance-formatting-nodes004.png)
 
 #### Child Expression Elements
 

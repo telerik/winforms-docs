@@ -97,7 +97,7 @@ When this is done you can add new expression item and choose from the list:
 
 >caption Figure 2: DataFilterComboDescriptorItem at runtime.
 
-![WinForms RadDataFilter DataFilterComboDescriptorItem at runtime](images/datafilter-combo-descriptor-item002.png)
+![WinForms RadDataFilter DataFilterComboDescriptorItem at Runtime](images/datafilter-combo-descriptor-item002.png)
 
 # See Also
 
