@@ -18,7 +18,7 @@ __RadHSrollBar__ and __RadVScrollBar__ are themeable alternatives to the standar
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadScrollBar track-and-status-controls-scrollbar-overview 001](images/track-and-status-controls-scrollbar-overview001.png)
+![WinForms RadScrollBar Overview](images/track-and-status-controls-scrollbar-overview001.png)
 
 
 # See Also

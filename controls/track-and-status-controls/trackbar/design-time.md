@@ -36,7 +36,7 @@ Select **RadTrackBar** and click the small arrow on the top right position in or
 
 * __Edit Ranges__: opens the *TrackBarRabge Collection Editor*.
 
-![WinForms RadTrackBar trackbar-design-time 002](images/trackbar-design-time002.png)
+![WinForms RadTrackBar TrackBarRabge Collection Editor](images/trackbar-design-time002.png)
            
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 
