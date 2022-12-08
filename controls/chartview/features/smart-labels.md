@@ -58,16 +58,16 @@ Automatic label placement is one the most complex and time consuming operations 
 __RadChartView__’s __SmartLabelsController__ uses strategies specific to different chart types to resolve label overlaps. Since label overlapping can be quite time consuming with more generalized methods, the more concrete a strategy is the better the performance that can be expected out of it. You do not need to be concerned with the strategy, __RadChartView__ will choose the best of the built-in strategies to be used in your chart.
 
 >caption Figure 3: Without Smart Labels
-![WinForms RadChartView Without Smart Labels](images/chartview-features-smart-labels003.png)
+![WinForms RadChartView BarSeries Without Smart Labels](images/chartview-features-smart-labels003.png)
 
 >caption Figure 4: With Smart Labels
-![WinForms RadChartView With Smart Labels](images/chartview-features-smart-labels004.png)
+![WinForms RadChartView BarSeries With Smart Labels](images/chartview-features-smart-labels004.png)
 
 >caption Figure 5: Without Smart Labels
-![WinForms RadChartView Without Smart Labels](images/chartview-features-smart-labels005.png)
+![WinForms RadChartView Point Series Without Smart Labels](images/chartview-features-smart-labels005.png)
 
 >caption Figure 6: With Smart Labels
-![WinForms RadChartView With Smart Labels](images/chartview-features-smart-labels006.png)
+![WinForms RadChartView Point Series With Smart Labels](images/chartview-features-smart-labels006.png)
 
 # Custom labels strategy
 
@@ -214,7 +214,7 @@ Me.radChartView1.Controllers.Add(controler)
 
 |Before|After|
 |----|----|
-|![WinForms RadChartView chartview-features-smart-labels 007](images/chartview-features-smart-labels007.png)|![WinForms RadChartView chartview-features-smart-labels 008](images/chartview-features-smart-labels008.png)|
+|![WinForms RadChartView Without Custom Smart Label Stategy](images/chartview-features-smart-labels007.png)|![WinForms RadChartView With Custom Smart Label Stategy](images/chartview-features-smart-labels008.png)|
 
 # See Also
 

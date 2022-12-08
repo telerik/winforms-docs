@@ -30,7 +30,7 @@ Cartesian plot band annotation is either a horizontal or a vertical stripe that 
 Here is what __CartesianPlotBandAnnotation__ looks like:
 
 >caption Figure 1: CartesianPlotBandAnnotation
-![WinForms RadChartView CartesianPlotBandAnnotation](images/chartview-annotations-plotband-annotations001.png)
+![WinForms RadChartView Cartesian Plot Band Annotation](images/chartview-annotations-plotband-annotations001.png)
 
 #### Plot Band Annotation Setup
 
@@ -95,7 +95,7 @@ The Polar axis plot band annotation resembles a donut.
 Here is what __PolarAxisPlotBandAnnotation__ looks like:
 
 >caption Figure 2: PolarAxisPlotBandAnnotation
-![WinForms RadChartView PolarAxisPlotBandAnnotation](images/chartview-annotations-plotband-annotations002.png)
+![WinForms RadChartView Polar Axis Plot Band Annotation](images/chartview-annotations-plotband-annotations002.png)
 
 #### Polar Axis Annotation
 
@@ -140,7 +140,7 @@ Radial axis plot band annotations represent visually a sector of the circle (pie
 A plot band starting from *180* degrees and ending in *270* degrees will look like this:
 
 >caption Figure 3: RadialAxisPlotBandAnnotation
-![WinForms RadChartView RadialAxisPlotBandAnnotation](images/chartview-annotations-plotband-annotations003.png)
+![WinForms RadChartView Radial Axis Plot Band Annotation](images/chartview-annotations-plotband-annotations003.png)
 
 #### Radial Axis Annotations
 

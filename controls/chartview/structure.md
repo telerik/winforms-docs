@@ -26,10 +26,10 @@ This article describes the inner structure and organization of the elements whic
 The featured example illustrates the hierarchy defined by two [BarSeries](%slug winforms/chartview-/series-types/bar%}) added to __RadChartView__.
 
 >caption Figure 1: RadChartView`s Element Hierarchy
-![WinForms RadChartView RadChartView`s Element Hierarchy](images/radchartview-structure001.png)
+![WinForms RadChartView Element Hierarchy Cartesian Area](images/radchartview-structure001.png)
 
 >caption Figure 2: RadChartViews`s Structure
-![WinForms RadChartView RadChartViews`s Structure](images/radchartview-structure002.png)
+![WinForms RadChartView Structure](images/radchartview-structure002.png)
 
 * __RadChartElement:__ Represents the main element of __RadChartView__.
 * __BreadcrumbDrilButtonsContainer:__ Container element of the buttons needed by the __DrillDownController__.
@@ -45,10 +45,10 @@ The featured example illustrates the hierarchy defined by two [BarSeries](%slug 
 The featured example illustrates the hierarchy defined by one [RadarSeries](%slug winforms/chartview-/series-types/radar%}) added to __RadChartView__.
 
 >caption Figure 3: RadChartView`s Element Hierarchy
-![WinForms RadChartView RadChartView`s Element Hierarchy](images/radchartview-structure003.png)
+![WinForms RadChartView Element Hierarchy Polar Area](images/radchartview-structure003.png)
 
 >caption Figure 4: RadChartViews`s Structure
-![WinForms RadChartView RadChartViews`s Structure](images/radchartview-structure004.png)
+![WinForms RadChartView Polar Area Structure](images/radchartview-structure004.png)
 
 * __RadChartElement:__ Represents the main element of __RadChartView__.
 * __RadarLineSeries:__ Each of the series displayed in __RadChartView__.
@@ -62,10 +62,10 @@ The featured example illustrates the hierarchy defined by one [RadarSeries](%slu
 The featured example illustrates the hierarchy defined by three [PieSeries](%slug winforms/chartview-/series-types/pie%}) added to __RadChartView__.
 
 >caption Figure 5: RadChartView`s Element Hierarchy
-![WinForms RadChartView RadChartView`s Element Hierarchy](images/radchartview-structure005.png)
+![WinForms RadChartView Pie Area Element Hierarchy](images/radchartview-structure005.png)
 
 >caption Figure 6: RadChartViews`s Structure
-![WinForms RadChartView RadChartViews`s Structure](images/radchartview-structure006.png)
+![WinForms RadChartView Pie Area Structure](images/radchartview-structure006.png)
 
 * __RadChartElement:__ Represents the main element of __RadChartView__.
 * __BreadcrumbDrilButtonsContainer:__ Container element of the buttons needed by the __DrillDownController__.

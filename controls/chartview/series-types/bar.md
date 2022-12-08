@@ -60,7 +60,7 @@ Me.RadChartView1.Series.Add(barSeries2)
 {{endregion}} 
 
 >caption Figure 1: Initial Setup
-![WinForms RadChartView Initial Setup](images/chartview-series-types-bar001.png)
+![WinForms RadChartView Bar Initial Setup](images/chartview-series-types-bar001.png)
 
 __BarSeries__ could be customized using the following properties:
 

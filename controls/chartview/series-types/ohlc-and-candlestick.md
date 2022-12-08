@@ -18,7 +18,7 @@ __Ohlc__ and __Candlestick__ series are indeed two alternative ways to visualize
 
 |  __Ohlc__  |  __Candlestick__  |
 | ------ | ------ |
-|![WinForms RadChartView chartview-series-types-ohlc-and-candlestick 001](images/chartview-series-types-ohlc-and-candlestick001.png)|![WinForms RadChartView chartview-series-types-ohlc-and-candlestick 002](images/chartview-series-types-ohlc-and-candlestick002.png)|
+|![WinForms RadChartView Ohlc Sample](images/chartview-series-types-ohlc-and-candlestick001.png)|![WinForms RadChartView Candlestick Sample](images/chartview-series-types-ohlc-and-candlestick002.png)|
 
 Here is how to setup Ohlc series: 
 

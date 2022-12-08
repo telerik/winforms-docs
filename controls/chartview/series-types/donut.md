@@ -44,7 +44,7 @@ Me.RadChartView1.Series.Add(series)
 {{endregion}} 
 
 >caption Figure 1: Initial Setup
-![WinForms RadChartView Initial Setup](images/chartview-series-types-donut001.png)
+![WinForms RadChartView Donut Initial Setup](images/chartview-series-types-donut001.png)
 
 DonutSeries can be customized using the following properties:
 
@@ -69,7 +69,7 @@ series.Range = range
 {{endregion}} 
 
 >caption Figure 2: AngleRange
-![WinForms RadChartView AngleRange](images/chartview-series-types-donut002.png)
+![WinForms RadChartView Donut AngleRange](images/chartview-series-types-donut002.png)
 
 * __ShowLabels:__ The property determines whether the labels above each point will be visible.            
 

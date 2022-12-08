@@ -78,7 +78,7 @@ End Sub
 Now, let’s select some area:
 
 >caption Figure 2: Lasso Selection
-![WinForms RadChartView Lasso Selection](images/chartview-features-lasso-selection002.png)
+![WinForms RadChartView Lasso Selection Area](images/chartview-features-lasso-selection002.png)
 
 And the chart will automatically zoom to the selected area:
 

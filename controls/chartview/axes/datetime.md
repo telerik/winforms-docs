@@ -139,7 +139,7 @@ RadChartView1.Series.Add(lineSeries)
 {{endregion}} 
 
 >caption Figure 2: DateTimeContinuousAxis Setup Setup
-![WinForms RadChartView DateTimeContinuousAxis Setup Setup](images/chartview-axes-datetimel002.png)
+![WinForms RadChartView DateTimeContinuousAxis Setup](images/chartview-axes-datetimel002.png)
 
 # See Also
 

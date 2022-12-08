@@ -14,7 +14,7 @@ position: 4
 
 >caption Figure 1: CartesianFreeFigureAnnotation
 
-![WinForms RadChartView CartesianFreeAnnotation](images/free-figure-annotation001.png)
+![WinForms RadChartView Cartesian Free Annotation](images/free-figure-annotation001.png)
 
 #### Define Annotation
 

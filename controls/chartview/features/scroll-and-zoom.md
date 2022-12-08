@@ -57,7 +57,7 @@ RadChartView1.ShowPanZoom = True
 The __PanZoomMode__ property allow developers to restrict zooming. Setting either of these properties to the __Both__ value removes any restrictions and the chart can be zoomed in both the horizontal and vertical axes. The last two values are __Horizontal__ and __Vertical__ which restrict the behavior horizontally and vertically respectively. You can now get/set the zoom and pan values of the RadChartView using the __Zoom__ and __Pan__ methods. Note that the offset should be provided in negative absolute values e.g Pan(-300,0) will offset the chart horizontally at 300px. You may use it to simultaneously  set zoom for the both axes by separating the values with comma. For example a Zoom(3 , 1) setting specifies that the data will be zoomed 3 times according to the XAxis and won't be zoomed by YAxis.
 
 >caption Figure 1: Initial Chart
-![WinForms RadChartView Initial Chart](images/chartview-features-scroll-and-zoom001.png)
+![WinForms RadChartView Scroll Zoom Initial Chart](images/chartview-features-scroll-and-zoom001.png)
 
 #### Zooming
 

@@ -50,7 +50,7 @@ Me.RadChartView1.Series.Add(radarPointSeries2)
 {{endregion}} 
 
 >caption Figure 1: Initial Setup RadarPointSeries
-![WinForms RadChartView Initial Setup RadarPointSeries](images/chartview-series-types-radar001.png)  
+![WinForms RadChartView Initial Setup Radar Point Series](images/chartview-series-types-radar001.png)  
 
 #### Initial Setup RadarLineSeries
 
@@ -89,7 +89,7 @@ Me.RadChartView1.Series.Add(radarLineSeries2)
 {{endregion}} 
 
 >caption Figure 2: Initial Setup RadarLineSeries
-![WinForms RadChartView Initial Setup RadarLineSeries](images/chartview-series-types-radar002.png) 
+![WinForms RadChartView Initial Setup Radar Line Series](images/chartview-series-types-radar002.png) 
 
 #### Initial Setup RadarAreaSeries
 
@@ -136,7 +136,7 @@ Me.RadChartView1.Series.Add(radarAreaSeries2)
 {{endregion}} 
 
 >caption Figure 3: Initial Setup RadarAreaSeries
-![WinForms RadChartView Initial Setup RadarAreaSeries](images/chartview-series-types-radar003.png)
+![WinForms RadChartView Initial Setup Radar Area Series](images/chartview-series-types-radar003.png)
 
 Here are some of the important properties all __PolarSeries__ share:
 

@@ -141,7 +141,7 @@ Me.RadChartView1.ChartElement.LegendElement.WrapPanelElement.Orientation = Syste
 
 |LegendItemsLayout.Stack|LegendItemsLayout.Wrap|
 |----|----|
-|![WinForms RadChartView chartview-features-legend 009](images/chartview-features-legend009.png)|![WinForms RadChartView chartview-features-legend 010](images/chartview-features-legend010.png)|
+|![WinForms RadChartView LegendItemsLayout Stack](images/chartview-features-legend009.png)|![WinForms RadChartView LegendItemsLayout Wrap](images/chartview-features-legend010.png)|
 
 ## Setup LegendItem
 

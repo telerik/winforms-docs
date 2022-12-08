@@ -21,10 +21,10 @@ The example below demonstrates setting up __RadChartView__ to display data from 
 ## Connecting to Data
 
 1. Open the __Smart Tag__ of the control and in the __Cooose DataSource__ drop down select *Add Project Data Source..*
-![WinForms RadChartView radchartview-getting-started 001](images/radchartview-getting-started001.png)
+![WinForms RadChartView Data Smart Tag](images/radchartview-getting-started001.png)
 
 1. In the __Data Source Configuration Wizard__, select the *Database* icon, and click *Next*.
-![WinForms RadChartView radchartview-getting-started 001](images/radchartview-getting-started002.png)
+![WinForms RadChartView Data Source Configuration Wizard](images/radchartview-getting-started002.png)
 
 1. In the __Choose a Database Model__ page of the wizard, select the *Dataset* icon and click *Next*.
             
@@ -45,16 +45,16 @@ The example below demonstrates setting up __RadChartView__ to display data from 
 1. In __Save the Connection String to the Application Configuration File__ page of the wizard, click the *Next* button. 
 
 1. In __Choose Database Objects__ page of the dialog, select the *Employees* table
-![WinForms RadChartView radchartview-getting-started 001](images/radchartview-getting-started003.png)
+![WinForms RadChartView Choose Database Employees Objects](images/radchartview-getting-started003.png)
 
 1. Back in the __Smart Tag__ of the control click on the *Series* drop-down button and open the __ChartSeries Collection Editor__ dialog. Add a new __BarSeries__.
-![WinForms RadChartView radchartview-getting-started 001](images/radchartview-getting-started004.png)
+![WinForms RadChartView ChartSeries Collection Editor](images/radchartview-getting-started004.png)
 
 1. Set the __CategoryMember__ and __ValueMember__ fields to *LastName* and *Extension* respectively. Make sure that the __DataSource__ property points the *Employees* binding source instance.
-![WinForms RadChartView radchartview-getting-started 001](images/radchartview-getting-started005.gif)
+![WinForms RadChartView Set CategoryMember ValueMember](images/radchartview-getting-started005.gif)
 
 1. Press __F5__ to run the application.
-![WinForms RadChartView grid-getting-started 005](images/radchartview-getting-started006.png)
+![WinForms RadChartView Getting Started](images/radchartview-getting-started006.png)
             
 # See Also
 

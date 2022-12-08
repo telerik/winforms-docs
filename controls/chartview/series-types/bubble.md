@@ -62,7 +62,7 @@ Me.RadChartView1.Series.Add(bubbleSeries2)
 {{endregion}}
 
 >caption Figure 1: Initial Setup
-![WinForms RadChartView Initial Setup](images/chartview-series-types-bubble001.png)
+![WinForms RadChartView Bubble Initial Setup](images/chartview-series-types-bubble001.png)
  
 Here are some of the important properties of __BubbleSeries__:
 

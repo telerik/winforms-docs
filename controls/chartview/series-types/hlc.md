@@ -17,7 +17,7 @@ Here is how to read the values of an __Hlc__ point:
 
 |  __Hlc__  |
 | ------ |
-|![WinForms RadChartView chartview-series-types-hlc 001](images/chartview-series-types-hlc001.png)|
+|![WinForms RadChartView Sample](images/chartview-series-types-hlc001.png)|
 
 Here is how to setup the __Hlc__ series: 
 
@@ -48,7 +48,7 @@ Me.RadChartView1.Series.Add(hlcSeries)
 {{endregion}} 
 
 >caption Figure 1: Initial Setup 
-![WinForms RadChartView Initial Setup](images/chartview-series-types-hlc002.png)
+![WinForms RadChartView Hlc Initial Setup](images/chartview-series-types-hlc002.png)
 
 # See Also
 
