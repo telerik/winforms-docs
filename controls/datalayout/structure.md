@@ -14,14 +14,14 @@ __RadDataLayout__ uses the [RadLayoutControl]({%slug winforms/layoutcontrol%}) t
 
 >caption Figure 1: RadDataLayout structure
 
-![WinForms RadDataLayout RadDataLayout structure](images/datalayout-structure001.png)
+![WinForms RadDataLayout Structure](images/datalayout-structure001.png)
 
 __RadDataLayout__ generates content item for each public property that can be edited. These items represent one 
 *DataLayoutControlItem*. This item has display text, contains the editor control and a small validation label.
 
 >caption Figure 2: Single item structure
 
-![WinForms RadDataLayout Single item structure](images/datalayout-structure002.png)
+![WinForms RadDataLayout Single Item Structure](images/datalayout-structure002.png)
 
 The *Validation label* does not have any text by default. It is designed to be used in cases where users want to show some additional information. 
 

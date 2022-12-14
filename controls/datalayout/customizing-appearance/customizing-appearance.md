@@ -48,7 +48,7 @@ Next item
 
 >caption Figure 2: Change the items styles
 
-![WinForms RadDataLayout Change the items styles](images/datalayout-customizing-appearance002.png)   
+![WinForms RadDataLayout Change the Items Styles](images/datalayout-customizing-appearance002.png)   
 
 # See Also
 

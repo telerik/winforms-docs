@@ -14,7 +14,7 @@ __RadDesktopAlert__ supports adding custom items to the pop up by using the __Bu
 
 >caption Figure 1: RadDesktopAlert's button items
 
-![WinForms RadDesktopAlert RadDesktopAlert's button items](images/desktopalert-button-items001.png)
+![WinForms RadDesktopAlert Button Items](images/desktopalert-button-items001.png)
  
 #### Adding elements to the ButtonItems collection
 

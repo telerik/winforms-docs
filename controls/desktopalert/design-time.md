@@ -16,7 +16,7 @@ To start using __RadDesktopAlert__ just drag it from the toolbox and drop it at 
 
 Select __RadDesktopAlert__ and click the small arrow on the top right position in order to open the Smart Tag.
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
 
 ![WinForms RadDesktopAlert Smart Tag](images/desktopalert-design-time001.png)
 

@@ -19,7 +19,7 @@ This example demonstrates binding __RadDataLayout__ to a single object or a coll
             
 >caption Figure 1: RadDataLayout Control
 
-![WinForms RadDataLayout RadDataLayout Control](images/datalayout-getting-started001.png)
+![WinForms RadDataLayout Getting Started](images/datalayout-getting-started001.png)
 
 2\. Let`s define the layout of our data control.
 

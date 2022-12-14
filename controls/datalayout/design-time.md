@@ -35,7 +35,7 @@ This editor allows us to rearrange the generated editors. Additional elements ca
         
 >caption Figure 3: The design time Layout Editor.
 
-![WinForms RadDataLayout The design time Layout Editor](images/datalayout-design-time003.png)
+![WinForms RadDataLayout The design Time Layout Editor](images/datalayout-design-time003.png)
 
 
 ## Selection Glyph

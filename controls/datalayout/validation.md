@@ -127,7 +127,7 @@ Me.RadDataLayout1.DataSource = New Employee() With {
 
 >caption Figure 1: RadDataLayout Initialized
 
-![WinForms RadDataLayout RadDataLayout Initialized](images/datalayout-validation001.png)
+![WinForms RadDataLayout Initialized](images/datalayout-validation001.png)
 
 2\. Set the __ShowValidationPanel__ property to *true*. This will display the panel below the editors:
 
