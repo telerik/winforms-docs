@@ -12,7 +12,7 @@ position: 2
 
 ## Smart Tag
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
 
 ![WinForms RadDiagram Smart Tag](images/diagram-design-time001.png)
 

@@ -140,4 +140,4 @@ End Sub
 {{endregion}} 
 
 
-![WinForms RadDiagram diagram-features-commands 001](images/diagram-features-commands001.gif)
+![WinForms RadDiagram Commands](images/diagram-features-commands001.gif)

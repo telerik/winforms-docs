@@ -53,7 +53,7 @@ End Sub
 
 
 
->caption Figure.1 Undo/Redo
+>caption Figure 1: Undo/Redo
 
 ![WinForms RadDiagram Undo/Redo](images/diagram-features-undo-and-redo001.gif)
 

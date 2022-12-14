@@ -88,17 +88,17 @@ End Class
 {{endregion}} 
 
 
-![WinForms RadDiagram diagram-custom-shapes 001](images/diagram-custom-shapes001.png)
+![WinForms RadDiagram Custom Shapes](images/diagram-custom-shapes001.png)
 
 ## Creating custom shapes by the Custom Shape Editor
 
 When you open the RadDiagram Property Builder from the Smart Tag and drag a shape from the toolbox you can customize the default shape  by editing the __ElementShape__ property and selecting the *Create new custom shape ...* option from the list:
 
-![WinForms RadDiagram diagram-custom-shapes 002](images/diagram-custom-shapes002.png)
+![WinForms RadDiagram Shape Editor](images/diagram-custom-shapes002.png)
 
 This will display the [Custom Shape Editor]({%slug winforms/tools/shapeeditor/using-the-custom-shape-editor/launching-the-shape-editor%}).
         
-![WinForms RadDiagram diagram-custom-shapes 003](images/diagram-custom-shapes003.png)
+![WinForms RadDiagram Custom Shape using Editor](images/diagram-custom-shapes003.png)
 
 # See Also
 

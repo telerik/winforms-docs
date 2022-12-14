@@ -14,7 +14,7 @@ __CapType__ enumeration members:
 
 * __None__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 012](images/diagram-diagram-items-connections012.png) 
+![WinForms RadDiagram CapType Enumeration Members](images/diagram-diagram-items-connections012.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeNone}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeNone}} 
@@ -38,7 +38,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.None
 
 * __Arrow1__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 013](images/diagram-diagram-items-connections013.png) 
+![WinForms RadDiagram Arrow1](images/diagram-diagram-items-connections013.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow1}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow1}} 
@@ -59,7 +59,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1
 
 * __Arrow1Filled__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 014](images/diagram-diagram-items-connections014.png) 
+![WinForms RadDiagram Arrow1Filled](images/diagram-diagram-items-connections014.png) 
 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow1Filled}} 
@@ -82,7 +82,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1Filled
 
 * __Arrow2__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 015](images/diagram-diagram-items-connections015.png) 
+![WinForms RadDiagram Arrow2](images/diagram-diagram-items-connections015.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow2}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow2}} 
@@ -104,7 +104,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2
 
 * __Arrow2Filled__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 016](images/diagram-diagram-items-connections016.png) 
+![WinForms RadDiagram Arrow2Filled](images/diagram-diagram-items-connections016.png) 
  
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow2Filled}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow2Filled}} 
@@ -125,7 +125,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow2Filled
 
 * __Arrow3__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 017](images/diagram-diagram-items-connections017.png) 
+![WinForms RadDiagram Arrow3](images/diagram-diagram-items-connections017.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow3}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow3}} 
@@ -147,7 +147,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow3
 
 * __Arrow4__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 018](images/diagram-diagram-items-connections018.png) 
+![WinForms RadDiagram Arrow4](images/diagram-diagram-items-connections018.png) 
  
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow4}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow4}} 
@@ -169,7 +169,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4
 
 * __Arrow4Filled__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 019](images/diagram-diagram-items-connections019.png) 
+![WinForms RadDiagram Arrow4Filled](images/diagram-diagram-items-connections019.png) 
  
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow4Filled}} 
@@ -192,7 +192,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow4Filled
 
 * __Arrow5__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 020](images/diagram-diagram-items-connections020.png) 
+![WinForms RadDiagram Arrow5](images/diagram-diagram-items-connections020.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow5}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow5}} 
@@ -214,7 +214,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow5
 
 * __Arrow5Filled__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 021](images/diagram-diagram-items-connections021.png) 
+![WinForms RadDiagram Arrow5Filled](images/diagram-diagram-items-connections021.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow5Filled}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow5Filled}} 
@@ -235,7 +235,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow5Filled
 
 * __Arrow6__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 022](images/diagram-diagram-items-connections022.png) 
+![WinForms RadDiagram Arrow6](images/diagram-diagram-items-connections022.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow6}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=CapTypeArrow6}} 
@@ -258,7 +258,7 @@ connection1.TargetCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow6
 
 * __Arrow6Filled__:
 
-![WinForms RadDiagram diagram-diagram-items-connections 023](images/diagram-diagram-items-connections023.png) 
+![WinForms RadDiagram Arrow6Filled](images/diagram-diagram-items-connections023.png) 
 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=CapTypeArrow6Filled}} 

@@ -14,7 +14,7 @@ In order to populate __RadDiagram__ with __RadDiagramItems__ you can add __RadDi
 
 >caption Figure 1: Smart Tag >> Open Property Builder
 
-![WinForms RadDiagram Smart Tag >> Open Property Builder](images/diagram-getting-started002.png)
+![WinForms RadDiagram Smart Tag Open Property Builder](images/diagram-getting-started002.png)
 
 >caption Figure 2: Property Builder
 

@@ -39,7 +39,7 @@ Me.RadDiagram1.IsPanEnabled = True
 
 
 
->caption Figure.1 Pan
+>caption Figure 1: Pan
 
 ![WinForms RadDiagram Pan](images/diagram-features-pan-and-zoom001.gif)
 
@@ -106,7 +106,7 @@ Me.RadDiagram1.IsZoomEnabled = True
 
 
 
->caption Figure.2 Zoom
+>caption Figure 2: Zoom
 
 ![WinForms RadDiagram Zoom](images/diagram-features-pan-and-zoom002.gif)
 

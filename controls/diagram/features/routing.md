@@ -69,9 +69,9 @@ The __TreeLayoutType__ points to the type of Layout you wish to use. The routing
         
 
 Below you can see these shapes after *TreeDown* Layout operation performed on the __RadDiagram__.
->caption Figure 2:
+>caption Figure 2: TreeDown
 
-![WinForms RadDiagram ](images/diagram-features-routing002.png)
+![WinForms RadDiagram TreeDown](images/diagram-features-routing002.png)
 
 ## OrgTreeRouter: TipOverTreeRouter
 
@@ -140,7 +140,7 @@ As the name suggests, this is a connection router that uses a version of the A* 
                 
 >caption Figure 4: RoutingGridSize
 
-![WinForms RadDiagram RoutingGridSize](images/diagram-features-routing004.png)
+![WinForms RadDiagram AStarRouter RoutingGridSize](images/diagram-features-routing004.png)
 
 \* __DiagramConstants.RouterInflationValue__ - of type double and gets or sets the size of the restricted area around the shapes.
                 
@@ -151,7 +151,7 @@ As the name suggests, this is a connection router that uses a version of the A* 
                 
 >caption Figure 5: AvoidShapes
 
-![WinForms RadDiagram AvoidShapes](images/diagram-features-routing005.png)
+![WinForms RadDiagram AStarRouter AvoidShapes](images/diagram-features-routing005.png)
 
 \* __WallOptimization__- boolean property controlling router optimization logic. If you set this property to *true* the router will try to optimize some of the steps so that there are the least corners.
                 
@@ -161,7 +161,7 @@ With the **R2 2021 SP1** version of Telerik UI for WinForms, several properties 
 
 >caption Setting AvoidConnectionOverlap property
 
-![WinForms RadDiagram Setting AvoidConnectionOverlap property](images/raddiagram-features-routing007.png)
+![WinForms RadDiagram Setting AvoidConnectionOverlap Property](images/raddiagram-features-routing007.png)
 
 * **SegmentOverlapPenalty**: A property of type double that indicates the penalty of a given path when it overlaps an existing diagram connection. Decreasing the value close to 0, the connections' behavior will become very close to when **AvoidConnectionOverlap** is set to **false**. The connections will start to cross each other. At another hand increasing this property, the connections might start to cross a given shape (avoiding connection will be with higher priority than avoiding a shape). There is no strict number when one is more important than the other. It dependents on the concrete scenario. The default value is 0.5.
 

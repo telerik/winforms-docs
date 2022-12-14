@@ -39,7 +39,7 @@ RadDiagram1.Items.Add(connection1)
 {{endregion}} 
 
 
-![WinForms RadDiagram diagram-diagram-items-connections 002](images/diagram-diagram-items-connections002.png)
+![WinForms RadDiagram Connection Types](images/diagram-diagram-items-connections002.png)
 
 >note You can refer to the [Shapes]({%slug winforms/diagram/diagram-items/shapes%}) article where the shapes are defined.
 >
@@ -50,7 +50,7 @@ RadDiagram1.Items.Add(connection1)
 
 \* __Polyline__ - this type allows you to define multiple points a connection has to pass through. By default, such a connection have two points it has to pass through - its source connector (or StartPoint) and its target connector (or EndPoint). This is why by default the Polyline __ConnectionType__ visualizes a straight connection. Sample of a straight Polyline connection between two shapes:
 
-![WinForms RadDiagram diagram-diagram-items-connections 003](images/diagram-diagram-items-connections003.png) 
+![WinForms RadDiagram Polyline](images/diagram-diagram-items-connections003.png) 
 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=PolylineConnection}} 
@@ -137,13 +137,13 @@ polylineConnection.ConnectionPoints.Add(New Point(330, 280))
 
 Sample of a curved Polyline connection:
 
-![WinForms RadDiagram diagram-diagram-items-connections 004](images/diagram-diagram-items-connections004.png)
+![WinForms RadDiagram Curved Polyline](images/diagram-diagram-items-connections004.png)
 
 \* __Bezier__ - this connection type allows you to create a Bézier curve. The Bezier connection is a curve specified by four points: two end points (p1 and p2) - the source/start and target/end of the connection and two handle points (h1 and h2) and a tension parameter. The curve begins at p1 and ends at p2 and it doesn't   pass through the handle points, but the handle points act as magnets, pulling the curve in certain directions and influencing the way the curve bends. The following illustration shows a Bézier RadDiagramConnection along with its endpoints and handle points.
 
-![WinForms RadDiagram diagram-diagram-items-connections 005](images/diagram-diagram-items-connections005.png) The RadDiagramConnection. __BezierTension__ parameter defines the curve that will be produced for a given set of end and handle points. The following illustration shows a Bezier connection:
+![WinForms RadDiagram Bézier Connection](images/diagram-diagram-items-connections005.png) The RadDiagramConnection. __BezierTension__ parameter defines the curve that will be produced for a given set of end and handle points. The following illustration shows a Bezier connection:
 
-![WinForms RadDiagram diagram-diagram-items-connections 006](images/diagram-diagram-items-connections006.png) 
+![WinForms RadDiagram BezierTension Option](images/diagram-diagram-items-connections006.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=BezierConnection}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=BezierConnection}} 
@@ -176,7 +176,7 @@ RadDiagram1.Items.Add(bezierConnection)
 
 By default, when you create a Bezier connection and attach its endpoints to __RadDiagramShapes__, the position of the handle points of the connection will be calculated based on the connector positions. Both handle points will be added to the RadDiagramConnection.__ConnectionPoints__ collection. The following snapshot illustrates the default direction of the Bezier connection handles based on the position of the connector to which the connection is attached.
 
-![WinForms RadDiagram diagram-diagram-items-connections 007](images/diagram-diagram-items-connections007.png) 
+![WinForms RadDiagram Bezier Connection Handles Default Direction](images/diagram-diagram-items-connections007.png) 
 
 The offset between a Bezier connection handle point and its corresponding endpoint is controlled thorough the __BezierAutoOffset__ DiagramConstants. Its default value is *30px*, but you can change it to better fit your needs.When attaching a Bezier connection to a RadDiagramShape you need to consider if it is attached to a built-in connector or to a custom connector. If the connection is attached to a custom connector, then you will have to manually set the position of the Bezier handle points. You can change the position of the points after you access them from the RadDiagramConnection. __ConnectionPoints__ collection, but you will also have to set the RadDiagramConnection. __IsModified__ property to True to apply the changes. If you don't want to manually traverse the __ConnectionPoints__ collection and then set the __IsModified__ property, you can use the RadDiagramConnection. __SetBezierHandles(Point,Point)__ method. It facilitates the definition of custom coordinates for the two handle points of a Bezier connection.
 
@@ -191,7 +191,7 @@ The offset between a Bezier connection handle point and its corresponding endpoi
 
 \* __Spline__ - this connection type represents a cardinal spline. The connection is specified by an array of points - the connection passes smoothly through each point in the array; there are no sharp corners and no abrupt changes in the tightness of the curve. The following illustration shows a set of points and a spline connection that passes through each point in the set. Sample of a Spline connection:
 
-![WinForms RadDiagram diagram-diagram-items-connections 008](images/diagram-diagram-items-connections008.png) 
+![WinForms RadDiagram Spline Connection Type](images/diagram-diagram-items-connections008.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItems.cs region=SplineConnection}} 
 {{source=..\SamplesVB\Diagram\DiagramItems.vb region=SplineConnection}} 

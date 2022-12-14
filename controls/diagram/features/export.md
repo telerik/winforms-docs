@@ -39,11 +39,11 @@ img1.Save(imagePath1)
 
 Alternatively, you can use the __RadDiagramRibbonBar__ and its *Export* button:
 
-![WinForms RadDiagram diagram-features-export 001](images/diagram-features-export001.png)
+![WinForms RadDiagram RadDiagramRibbonBar Export](images/diagram-features-export001.png)
 
 #### The exported image is illustrated below
 
-![WinForms RadDiagram diagram-features-export 001](images/diagram-features-export002.png)
+![WinForms RadDiagram Exported Image](images/diagram-features-export002.png)
 
 
 

@@ -53,15 +53,15 @@ Me.RadDiagram1.PrintPreview()
 
 
 
->caption Fig.1 RadDiagram.PrintPreview
+>caption Figure 1: RadDiagram PrintPreview
 
 ![WinForms RadDiagram RadDiagramPrintPreview](images/diagram-features-printing-support001.png)
 
 __RadDiagram__ supports pages preview canvas. The default look and size of the page preview canvas is demonstrated in the next snapshot:
         
->caption Fig.2 The PagesPreview canvas in a zoomed RadDiagram
+>caption Figure 2: The PagesPreview canvas in a zoomed RadDiagram
 
-![WinForms RadDiagram The PagesPreview canvas in a zoomed RadDiagram](images/diagram-features-printing-support002.png)
+![WinForms RadDiagram The PagesPreview canvas in a Zoomed RadDiagram](images/diagram-features-printing-support002.png)
 
 In order to modify it, you can change some or all of the following properties:
 

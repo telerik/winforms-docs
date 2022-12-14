@@ -136,7 +136,7 @@ Me.RadDiagram1.Group("Odd", oddShapes)
 
 
 Below you can see how the grouping works:
->caption Fig.1 Grouping shapes
+>caption Figure 1: Grouping shapes
 
 ![WinForms RadDiagram Grouping shapes](images/diagram-features-grouping001.gif)
 
@@ -218,7 +218,7 @@ Dim parentGroup As IGroup = Me.RadDiagram1.Group("1-2-3-4", groupA, groupB)
 
 
 
->caption Fig.2 Sub groups
+>caption Figure 2: Sub groups
 
 ![WinForms RadDiagram Sub groups](images/diagram-features-grouping002.gif)
 

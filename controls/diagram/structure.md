@@ -15,7 +15,7 @@ previous_url: diagram-structure
 
 __RadDiagram__ allows you to create various kinds of diagrams like Organizational, Class and Flow as well as many others. This section defines terms and concepts used in the scope of __RadDiagram__ you have to get familiar with prior to continue reading this help. In the following picture you can see the main components which a __RadDiagram__ could have: 
 
-![WinForms RadDiagram diagram-structure 001](images/diagram-structure001.png)
+![WinForms RadDiagram Structure](images/diagram-structure001.png)
 
 1. __Rotation Thumb__ - it is part of the manipulation adorner and you can use it to rotate the shape or group of shapes and connections.
             

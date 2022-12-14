@@ -17,7 +17,7 @@ __RadDiagram__ gives you the ability to edit the content of its items. You can d
 
 By default, the __RadDiagramItems__ are enabled for editing. In order to disable this functionality, you can use the __IsEditable__ property:
 
->caption Fig1. IsEditable
+>caption Figure 1: IsEditable
 
 ![WinForms RadDiagram Fig IsEditable](images/diagram-items-manipulation-editing001.png) 
 
@@ -89,9 +89,9 @@ End Sub
 
 __RadDiagram__ provides three predefined commands for editing the selected item - __BeginEdit__, __CommitEdit__ and __CancelEdit__.
 
->caption Fig2. Editing by commands
+>caption Figure 2: Editing by commands
 
-![WinForms RadDiagram Fig Editing by commands](images/diagram-items-manipulation-editing002.gif) 
+![WinForms RadDiagram Editing by commands](images/diagram-items-manipulation-editing002.gif) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EditCommands}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EditCommands}} 

@@ -83,7 +83,7 @@ DiagramRibbonBarLocalizationProvider.CurrentProvider = New MyDiagramRibbonBarLoc
 {{endregion}} 
 
 
-![WinForms RadDiagram diagram-localization 001](images/diagram-localization001.png)
+![WinForms RadDiagram Localization Provider](images/diagram-localization001.png)
 
 ## Localizing SettingsPane
 
@@ -162,4 +162,4 @@ DiagramSettingsPaneLocalizationProvider.CurrentProvider = New MyDiagramSettingsP
 {{endregion}} 
 
 
-![WinForms RadDiagram diagram-localization 002](images/diagram-localization002.png)
+![WinForms RadDiagram Custom Localization Provider](images/diagram-localization002.png)

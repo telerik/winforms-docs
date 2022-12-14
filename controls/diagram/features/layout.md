@@ -90,7 +90,7 @@ Below you can see how random shapes and connections are being arranged with the 
 >caption Fig.1 Random generated shapes and connections
 
 ![WinForms RadDiagram Random generated shapes and connections](images/diagram-features-layout001.png)
->caption Fig.2 Sugiyama layout
+>caption Figure 2: Sugiyama layout
 
 ![WinForms RadDiagram Sugiyama layout](images/diagram-features-layout002.png)
 
@@ -126,35 +126,35 @@ Below you can see a snapshots of random diagrams laid out with Tree Layout types
 
 * __TreeLayoutType.TreeDown__:
  
-![WinForms RadDiagram diagram-features-layout 003](images/diagram-features-layout003.png)
+![WinForms RadDiagram TreeLayoutType TreeDown](images/diagram-features-layout003.png)
 
 * __TreeLayoutType.TreeUp__:
             
-![WinForms RadDiagram diagram-features-layout 004](images/diagram-features-layout004.png)
+![WinForms RadDiagram TreeLayoutType TreeUp](images/diagram-features-layout004.png)
 
 * __TreeLayoutType.TreeLeft__:
             
-![WinForms RadDiagram diagram-features-layout 005](images/diagram-features-layout005.png)
+![WinForms RadDiagram TreeLayoutType TreeLeft](images/diagram-features-layout005.png)
 
 * __TreeLayoutType.TreeRight__:
             
-![WinForms RadDiagram diagram-features-layout 006](images/diagram-features-layout006.png)
+![WinForms RadDiagram TreeLayoutType TreeRight](images/diagram-features-layout006.png)
 
 * __TreeLayoutType.MindmapVertical__:
             
-![WinForms RadDiagram diagram-features-layout 007](images/diagram-features-layout007.png)
+![WinForms RadDiagram TreeLayoutType MindmapVertical](images/diagram-features-layout007.png)
 
 * __TreeLayoutType.MindmapHorizontal__:
             
-![WinForms RadDiagram diagram-features-layout 008](images/diagram-features-layout008.png)
+![WinForms RadDiagram TreeLayoutType MindmapHorizontal](images/diagram-features-layout008.png)
 
 * __TreeLayoutType.TipOverTree__:
             
-![WinForms RadDiagram diagram-features-layout 009](images/diagram-features-layout009.png)
+![WinForms RadDiagram TreeLayoutType TipOverTree](images/diagram-features-layout009.png)
 
 * __TreeLayoutType.RadialTree__:
             
-![WinForms RadDiagram diagram-features-layout 010](images/diagram-features-layout010.png)
+![WinForms RadDiagram TreeLayoutType RadialTree](images/diagram-features-layout010.png)
 
 Here is how this could be achieved in code behind. 
 
@@ -265,9 +265,9 @@ The splitting in components is automatic and the grid layout of the components a
 
 * __EndRadialAngle__: This end angle defines the end of the sector used (the part of 360 degrees used). Below you can see the explanation of the main TreeLayout Settings for the base 4 types (Up, Down, Left, Right) + TipOverTree.
 
-![WinForms RadDiagram diagram-features-layout 012](images/diagram-features-layout012.png)Below you can see how the __KeepComponentsInOneRadialLayout__ actually works when you have more than one component:
+![WinForms RadDiagram EndRadialAngle](images/diagram-features-layout012.png)Below you can see how the __KeepComponentsInOneRadialLayout__ actually works when you have more than one component:
 
-![WinForms RadDiagram diagram-features-layout 013](images/diagram-features-layout013.png)
+![WinForms RadDiagram KeepComponentsInOneRadialLayout](images/diagram-features-layout013.png)
 
 ## Properties and Methods
 
