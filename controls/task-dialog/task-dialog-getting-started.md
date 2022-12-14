@@ -14,7 +14,7 @@ Before proceeding further with this article, it is recommended to get familiar w
 
 This article will walk you through the creation of a sample task dialog that contains a link button, several radio buttons, a progress bar and collapsible information in the footer via code.
 
-![WinForms RadTask-Dialog winforms/task-dialog-overview 001](images/task-dialog-overview001.gif) 
+![WinForms RadTaskDialog Getting Started](images/task-dialog-overview001.gif) 
 
 
 {{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=Example1}} 

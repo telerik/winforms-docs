@@ -18,7 +18,7 @@ By pressing the **Ctrl + F** key combination you can open the find dialog which 
 
 #### Figure 1: The Find Dialog
 
-![WinForms RadSyntax-Editor features-intellipropmpts001](images/find-and-replace.png)
+![WinForms RadSyntaxEditor Find Dialog](images/find-and-replace.png)
 
 ## Search programmatically
 

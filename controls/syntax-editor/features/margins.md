@@ -75,7 +75,7 @@ End Sub
 
 >caption Figure 1: Defining Simple Margins
 
-![WinForms RadSyntax-Editor Defining Simple Margins](images/syntax-editor-features-margins001.png)
+![WinForms RadSyntaxEditor Defining Simple Margins](images/syntax-editor-features-margins001.png)
 
 ## Indicators Margin
 
@@ -182,7 +182,7 @@ End Class
 
 >caption Figure 2: Defining Breakpoint Margins
 
-![WinForms RadSyntax-Editor Defining Breakpoint Margins](images/syntax-editor-features-margins002.png)
+![WinForms RadSyntaxEditor Defining Breakpoint Margins](images/syntax-editor-features-margins002.png)
 
 >note You can add new breakpoints by clicking on the margin in the UI.
 
@@ -297,7 +297,7 @@ End Class
 
 >caption Figure 3: Defining Bookmarks Margins
 
-![WinForms RadSyntax-Editor Defining Bookmarks Margins](images/syntax-editor-features-margins003.png)
+![WinForms RadSyntaxEditor Defining Bookmarks Margins](images/syntax-editor-features-margins003.png)
 
 ### Stars Indicators
 
@@ -362,7 +362,7 @@ End Class
 
 >caption Figure 4: Defining Stars Margins
 
-![WinForms RadSyntax-Editor Defining Stars Margins](images/syntax-editor-features-margins004.png)
+![WinForms RadSyntaxEditor Defining Stars Margins](images/syntax-editor-features-margins004.png)
 
 ### SVG Indicators
 
@@ -558,7 +558,7 @@ End Class
 
 >caption Figure 5: Defining SVG Margins
 
-![WinForms RadSyntax-Editor Defining SVG Margins](images/syntax-editor-features-margins005.gif)
+![WinForms RadSyntaxEditor Defining SVG Margins](images/syntax-editor-features-margins005.gif)
 
 # See Also
  

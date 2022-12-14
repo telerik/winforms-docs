@@ -16,7 +16,7 @@ position: 5
 
 Here is a list of all the colors in the palettes and their default values for each palette.
 
-![WinForms RadSyntax-Editor features-palettes001](images/palettes001.png)
+![WinForms RadSyntaxEditor Palette List](images/palettes001.png)
 
 It is possible to change the palette according to which theme you prefer to use in your application. Here is an example:
 
@@ -74,7 +74,8 @@ Me.RadSyntaxEditor1.Palette = SyntaxPalettes.NeutralDark
 {{endregion}} 
 
 #### Difference between NeutralDark palette and modified NeutralDark pallete
-![WinForms RadSyntax-Editor features-palettes002](images/palettes002.png)
+
+![WinForms RadSyntaxEditor NeutralDark and modified NeutralDark Palette](images/palettes002.png)
 
 ### Creating custom SyntaxEditorPalette in code behind
 
@@ -117,4 +118,4 @@ Me.RadSyntaxEditor1.Palette = customPalette
 {{endregion}} 
 
 #### Figure 2: RadSyntaxEditor with a custom palette
-![WinForms RadSyntax-Editor features-palettes002](images/palettes003.png)
+![WinForms RadSyntaxEditor with a custom palette](images/palettes003.png)

@@ -15,7 +15,7 @@ position: 1
 
 The picture below illustrates the inner structure and organization of the elements which build the **RadTaskDialog** control.
 
-![WinForms RadTask-Dialog winforms/task-dialog-structure 001](images/task-dialog-structure001.png) 
+![WinForms RadTaskDialog Structure](images/task-dialog-structure001.png) 
 
 
 # See Also

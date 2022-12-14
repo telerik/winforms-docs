@@ -17,11 +17,11 @@ Toast Notifications are accessed either via the Windows' Action Center or they p
 
 #### Toast Notification's Preview
 
-![WinForms RadSplashScreen winforms/toast-notification-overview 001](images/toast-notification-overview001.png) 
+![WinForms Toast Notification Overview Weather](images/toast-notification-overview001.png) 
 
 #### Toast Notifications in Windows' Action Center
 
-![WinForms RadSplashScreen winforms/toast-notification-overview 002](images/toast-notification-overview002.png) 
+![WinForms Toast Notification Overview Action Center](images/toast-notification-overview002.png) 
 
 ## Key Features
 

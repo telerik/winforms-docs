@@ -17,7 +17,7 @@ As of **R1 2020** Telerik UI for WinForms suite offers a **RadSyntaxEditor** con
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadSyntax-Editor syntax-editor-overview001](images/syntax-editor-overview001.png)
+![WinForms RadSyntaxEditor Overview](images/syntax-editor-overview001.png)
 
 ## Key Features
 

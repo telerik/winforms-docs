@@ -29,7 +29,7 @@ Generic template used in Windows 10.
 </toast>
 ````
 
-![WinForms RadSplashScreen winforms/toast-notification-templates001](images/toast-notification-templates001.png) 
+![WinForms ToastGeneric](images/toast-notification-templates001.png) 
 
 
 ### ToastNews
@@ -48,7 +48,7 @@ News template.
 </toast>
 ````
 
-![WinForms RadSplashScreen winforms/toast-notification-templates003](images/toast-notification-templates003.png) 
+![WinForms ToastNews](images/toast-notification-templates003.png) 
 
 ### ToastAlarm
 
@@ -76,7 +76,7 @@ Alarm template.
 </toast>
 ````
 
-![WinForms RadSplashScreen winforms/toast-notification-templates004](images/toast-notification-templates004.png) 
+![WinForms ToastAlarm](images/toast-notification-templates004.png) 
 
 ### ToastCall
 
@@ -104,7 +104,7 @@ Phone Call template.
 </toast>
 ````
 
-![WinForms RadSplashScreen winforms/toast-notification-templates005](images/toast-notification-templates005.png) 
+![WinForms ToastCall](images/toast-notification-templates005.png) 
 
 ### ToastChat
 
@@ -127,7 +127,7 @@ Chat template.
 </toast>
 ````
 
-![WinForms RadSplashScreen winforms/toast-notification-templates006](images/toast-notification-templates006.png) 
+![WinForms ToastChat](images/toast-notification-templates006.png) 
 
 ### ToastReminder
 
@@ -156,7 +156,7 @@ Meeting template.
 </toast>
 ````
 
-![WinForms RadSplashScreen winforms/toast-notification-templates007](images/toast-notification-templates007.png) 
+![WinForms ToastReminder](images/toast-notification-templates007.png) 
 
 ### ToastWeather
 
@@ -194,7 +194,7 @@ Wheather template.
 </toast>
 ````
 
-![WinForms RadSplashScreen winforms/toast-notification-templates008](images/toast-notification-templates008.png) 
+![WinForms ToastWeather](images/toast-notification-templates008.png) 
 
 ### ToastDownload
 
@@ -215,7 +215,7 @@ Download template.
 </toast>
 ````
 
-![WinForms RadSplashScreen winforms/toast-notification-templates009](images/toast-notification-templates009.png) 
+![WinForms ToastDownload](images/toast-notification-templates009.png) 
 
 ### ToastLegacy
 
@@ -234,19 +234,19 @@ Legacy template, used in Windows 8. It is not recommended to use it in Windows 1
 </toast>
 ````
 
-![WinForms RadSplashScreen winforms/toast-notification-templates002](images/toast-notification-templates002.png) 
+![WinForms ToastLegacy](images/toast-notification-templates002.png) 
 
 ### Customizing Default Templates
 
 On the right side of the [RadToastNotifications Editor]({%slug toast-notification-design-time%}), you have the possibilities to customize the loaded toast notification and add different [types of elements](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts?tabs=builder-syntax) and toast attributes to them. You can add additional [elements](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts?tabs=builder-syntax) to the toast or remove any of the existing ones by managing the syntax editor in the center.
 
-![WinForms RadSplashScreen winforms/toast-notification-templates010](images/toast-notification-templates010.png)
+![WinForms RadToastNotifications Editor](images/toast-notification-templates010.png)
 
 Let's try to extend the **ToastDownload** and add a combo with two items to it. Select the **Combobox** element and fill the data for two items:
 
-![WinForms RadSplashScreen winforms/toast-notification-templates010](images/toast-notification-templates011.png)
+![WinForms ToastNotification Extend ToastDownload](images/toast-notification-templates011.png)
 
-![WinForms RadSplashScreen winforms/toast-notification-templates010](images/toast-notification-templates012.png)
+![WinForms ToastNotification Add Combobox](images/toast-notification-templates012.png)
 
 Once you confirm the changes, the syntax code gets updated:
 

@@ -29,7 +29,7 @@ Dim radSyntaxEditor1 As RadSyntaxEditor = New RadSyntaxEditor()
 
 #### Figure 1: Empty RadSyntaxEditor
 
-![WinForms RadSyntax-Editor syntax-editor-getting-started 001](images/getting-started001.png) 
+![WinForms RadSyntaxEditor Empty](images/getting-started001.png) 
 
 ## Opening a File
 
@@ -65,7 +65,7 @@ End Sub
 
 #### Figure 2: RadSyntaxEditor with a loaded C# file
 
-![WinForms RadSyntax-Editor syntax-editor-getting-started 002](images/getting-started002.png) 
+![WinForms RadSyntaxEditor with a Loaded CSharp File](images/getting-started002.png) 
 
 ## Enable Syntax Highlighting
 
@@ -88,5 +88,5 @@ Me.RadSyntaxEditor1.TaggersRegistry.RegisterTagger(CSharptagger)
 
 #### Figure 3: RadSyntaxEditor with C# code highlighting
 
-![WinForms RadSyntax-Editor syntax-editor-getting-started 003](images/getting-started003.png) 
+![WinForms RadSyntaxEditor with CSharp Code Highlighting](images/getting-started003.png) 
 
