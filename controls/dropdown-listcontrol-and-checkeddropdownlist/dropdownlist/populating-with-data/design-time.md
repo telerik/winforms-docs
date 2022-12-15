@@ -17,18 +17,17 @@ This article demonstrates how to populate __RadDropDownList__ with data at desig
 
 ![WinForms RadDropDownList RadListDataItem Collection Editor](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time001.png)
 
-
 You can access it through the *Smart tag >> Edit Items* option:
 
 >caption Figure 2: Smart tag options
 
-![WinForms RadDropDownList Smart tag options](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time002.png)
+![WinForms RadDropDownList Smart Tag Options](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time002.png)
 
 Another possibility to open the editor is via the __Items__ collection in the *Properties* Visual Studio section:
 
 >caption Figure 3:  Visual Studio Properties window
 
-![WinForms RadDropDownList Visual Studio Properties window](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time003.png)
+![WinForms RadDropDownList Visual Studio Properties Window](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time003.png)
 
 You can add two item types:
 
@@ -42,7 +41,7 @@ Below you can find the properties associated with the __RadListDataItem__:
 
 >caption Figure 5:  RadListDataItem's properties
 
-![WinForms RadDropDownList RadListDataItem's properties](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time005.png)
+![WinForms RadDropDownList RadListDataItem's Properties](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time005.png)
 
 * __DescriptionTextListDataItem__ – similar to the __RadListDataItem__. In addition, it displays some description below the item’s text.
 
@@ -55,7 +54,7 @@ You have two additional properties: __DescriptionFont__ and __DescriptionText__ 
 
 >caption Figure 7:  DescriptionTextListDataItem's properties
 
-![WinForms RadDropDownList DescriptionTextListDataItem's properties](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time007.png)
+![WinForms RadDropDownList DescriptionTextListDataItem's Properties](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-design-time007.png)
 
 # See Also
 

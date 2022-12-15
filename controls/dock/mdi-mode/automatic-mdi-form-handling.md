@@ -13,7 +13,7 @@ previous_url: dock-mdi-mode-automatic-mdi-form-handling
 
 __RadDock__ has the capability of automatically finding and attaching Multiple Document Interface (MDI) child forms as tabbed documents. Since __RadDock__ takes control over the MDI children, these children are not added to the parent form's **MdiChildren** collection, but they are added to the RadDock.**MdiChildren** collection instead.
 
-![WinForms RadDock dock-mdi-mode-automatic-mdi-form-handling 001](images/dock-mdi-mode-automatic-mdi-form-handling001.png)
+![WinForms RadDock Automatic MDI Form Handling](images/dock-mdi-mode-automatic-mdi-form-handling001.png)
 
 To configure your MDI application to use this feature:
 
@@ -99,7 +99,7 @@ Me.RadDock1.MdiChildrenDockType = DockType.ToolWindow
 
 When initially created, these **ToolWindows** look like **DocumentWindows**. This is just because their state is Tabbed Document. However, their real identity is **ToolWindow** - i.e. these windows can be docked, auto-hidden and floated. 
 
-![WinForms RadDock dock-mdi-mode-automatic-mdi-form-handling 002](images/dock-mdi-mode-automatic-mdi-form-handling002.png)
+![WinForms RadDock MdiChildrenDockType](images/dock-mdi-mode-automatic-mdi-form-handling002.png)
 
 ## Closing a window containing an MDI child form
 

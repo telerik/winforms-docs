@@ -25,7 +25,7 @@ __RadDropDownList__ supports sorting of its pop-up items. You can control how th
             
 >caption Figure 1: SortStyle.Descending
 
-![WinForms RadDropDownList SortStyleDescending](images/dropdown-and-listcontrol-dropdownlist-sorting001.png)
+![WinForms RadDropDownList SortStyle Descending](images/dropdown-and-listcontrol-dropdownlist-sorting001.png)
 
 #### SortStyle 
 
@@ -51,7 +51,7 @@ When the __SortStyle__ property is set to *Ascending* or *Descending* you can ma
         
 >caption Figure 2: Custom sort order
 
-![WinForms RadDropDownList Custom sort order](images/dropdown-and-listcontrol-dropdownlist-sorting002.png)
+![WinForms RadDropDownList Custom Sort Order](images/dropdown-and-listcontrol-dropdownlist-sorting002.png)
 
 #### Custom comparer 
 

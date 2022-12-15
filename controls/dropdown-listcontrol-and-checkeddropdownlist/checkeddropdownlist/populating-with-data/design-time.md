@@ -19,15 +19,15 @@ This article demonstrates how to populate __RadCheckedDropDownList__ with data a
 
 You can access it through the *Smart tag >> Edit Items* option:
 
->caption Figure 2: Smart tag options
+>caption Figure 2: Smart Tag Options
 
-![WinForms RadCheckedDropDownList Smart tag options](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time002.png)
+![WinForms RadCheckedDropDownList Smart Tag Options](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time002.png)
 
 Another possibility to open the editor is via the __Items__ collection in the *Properties* Visual Studio section:
 
 >caption Figure 3:  Visual Studio Properties window
 
-![WinForms RadCheckedDropDownList Visual Studio Properties window](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time003.png)
+![WinForms RadCheckedDropDownList Visual Studio Properties Window](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time003.png)
 
 You can add two item types:
 

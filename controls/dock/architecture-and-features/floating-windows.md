@@ -43,7 +43,7 @@ If you use the drop target icons in the [DockingAssistant]({%slug winforms/dock/
 
 >caption Figure 2: Re-Dock floating window.
 
-![WinForms RadDock Re-Dock floating window](images/dock-architecture-and-features-floating-windows002.gif)
+![WinForms RadDock Re-Dock Floating Window](images/dock-architecture-and-features-floating-windows002.gif)
 
 ## Moving a Floating ToolWindow to an Existing Container
 

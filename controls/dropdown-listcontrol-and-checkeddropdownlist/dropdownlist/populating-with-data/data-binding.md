@@ -39,11 +39,11 @@ You can set the __DataSource__ property at design time in the *Properties* windo
 
 	>caption Figure: 2 Setting the DisplayMember and ValueMember properties at Design time
 
-	![WinForms RadDropDownList Setting the DisplayMember and ValueMember properties at Design time](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding002.png)
+	![WinForms RadDropDownList Setting the DisplayMember and ValueMember Properties at Design Time](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding002.png)
 
 	>caption Figure: 3 RadDropDownList bound at Design time
 
-	![WinForms RadDropDownList RadDropDownList bound at Design time](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding003.png)
+	![WinForms RadDropDownList RadDropDownList Bound at Design Time](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding003.png)
 
 ## Data binding at run time
 
@@ -123,7 +123,7 @@ End Sub
  
 >caption Figure: 4 RadDropDownList bound at Run time
 
-![WinForms RadDropDownList 4 RadDropDownList bound at Run time](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding004.png)
+![WinForms RadDropDownList 4 RadDropDownList Bound at Run Time](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-data-binding004.png)
 
 # See Also
 

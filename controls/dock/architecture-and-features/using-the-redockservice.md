@@ -18,10 +18,10 @@ previous_url: dock-architecture-and-features-using-the-redockservice
 Let's take a look at the following scenario: 
          
 1. We have a __RadDock__ instance containing several docked **ToolWindows** as shown below:        
-	![WinForms RadDock dock-architecture-and-features-using-the-redockservice 001](images/dock-architecture-and-features-using-the-redockservice001.png)
+	![WinForms RadDock RedockService ToolWindows](images/dock-architecture-and-features-using-the-redockservice001.png)
 
 1. The end-user decides to float some of the **ToolWindows**:
-	![WinForms RadDock dock-architecture-and-features-using-the-redockservice 002](images/dock-architecture-and-features-using-the-redockservice002.png)
+	![WinForms RadDock RedockService ToolWindows Float State](images/dock-architecture-and-features-using-the-redockservice002.png)
 
 1. Now comes the time when the user wants to re-dock the floating **ToolWindows**. However, the user does not only want to dock the **ToolWindows**, he/she want to achieve the layout that he/she had at the beginning. For that purpose, we can have a button or a menu item on the **Click** of which we get the **RedockService** and return the floating windows to their original docked state by calling the __RestoreMethod__ of the service. When the user clicks that button, he/she will get the layout below, which as you can see is the same as the layout that we had at the beginning:
    
@@ -56,7 +56,7 @@ End Sub
 
 {{endregion}} 
  
-![WinForms RadDock dock-architecture-and-features-using-the-redockservice 001](images/dock-architecture-and-features-using-the-redockservice001.png)
+![WinForms RadDock Redock Floating ToolWindows](images/dock-architecture-and-features-using-the-redockservice001.png)
 
 # See Also
 

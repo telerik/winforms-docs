@@ -27,7 +27,7 @@ Select __RadCheckedDropDownList__ and click the small arrow on the top right pos
             
 >caption Figure 2: Element hierarchy editor
 
-![WinForms RadCheckedDropDownList Element hierarchy editor](images/dropdown-and-listcontrol-checkedropdownlist-design-time002.png)
+![WinForms RadCheckedDropDownList Element Hierarchy Editor](images/dropdown-and-listcontrol-checkedropdownlist-design-time002.png)
 
 * __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the control's visual style at one time.
             

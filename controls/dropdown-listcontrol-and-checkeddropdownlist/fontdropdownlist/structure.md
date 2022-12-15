@@ -16,11 +16,11 @@ This article describes the inner structure and organization of the elements whic
         
 >caption Figure 1: RadFontDropDownList's elements hierarchy
 
-![WinForms RadFontDropDownList RadFontDropDownList's elements hierarchy](images/editors-fontdropdownlist-structure001.png)![WinForms RadFontDropDownList RadFontDropDownList's elements hierarchy](images/editors-fontdropdownlist-structure003.png)
+![WinForms RadFontDropDownList RadFontDropDownList's Elements Hierarchy](images/editors-fontdropdownlist-structure001.png)![WinForms RadFontDropDownList RadFontDropDownList's elements hierarchy](images/editors-fontdropdownlist-structure003.png)
 
 >caption Figure 2: RadFontDropDownList's structure
 
-![WinForms RadFontDropDownList RadFontDropDownList's structure](images/editors-fontdropdownlist-structure002.png)
+![WinForms RadFontDropDownList RadFontDropDownList's Structure](images/editors-fontdropdownlist-structure002.png)
 
 1. **RadPopupContainerForm** - represents the pop up container that hosts the **RadListViewElement**.
 2. **DetailListViewGroupVisualItem** - represents a visual element for the group item (e.g. *Recently Used Fonts* and *All Fonts* items).  

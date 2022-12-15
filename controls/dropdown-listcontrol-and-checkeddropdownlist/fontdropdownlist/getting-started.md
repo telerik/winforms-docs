@@ -15,11 +15,11 @@ The following tutorial demonstrates how to add a **RadFontDropDownList** and how
 1. Add a **RadFontDropDownList** and a **RadLabel** to a form. 
 2. Set some text to the **RadLabel** via the Properties section in Visual Studio.
 
-	![WinForms RadFontDropDownList fontdropdownlistt-getting-started 001](images/fontdropdownlist-getting-started001.png)
+	![WinForms RadFontDropDownList Getting Started](images/fontdropdownlist-getting-started001.png)
 
 3. Set the **DropDownStyle** property for the **RadFontPopupEditorElement** via the *Element hierrachy editor*:
  
-	![WinForms RadFontDropDownList fontdropdownlistt-getting-started 002](images/fontdropdownlist-getting-started002.png)
+	![WinForms RadFontDropDownList DropDownStyle](images/fontdropdownlist-getting-started002.png)
 
 5. Subscribe to the **SelectedFontChanged** event and use the following code snippet:
             
@@ -71,6 +71,6 @@ End Sub
 
 {{endregion}} 
 
-![WinForms RadFontDropDownList fontdropdownlistt-getting-started 003](images/fontdropdownlist-getting-started003.gif)
+![WinForms RadFontDropDownList SelectedFont](images/fontdropdownlist-getting-started003.gif)
  
 This is it! Now, the change in the selection of the **RadFontDropDownList** instance will be reflected on **RadLabel**'s font.

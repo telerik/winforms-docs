@@ -83,7 +83,7 @@ Me.RadDock1.LoadFromXml("c:\layout1.xml")
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadDock Saving and Loading RadDock for WinForms Layouts](http://www.telerik.com/videos/winforms/saving-and-loading-raddock-for-winforms-layouts) In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts. (Runtime: 07:03)|![WinForms RadDock dock-loading-and-saving-layouts 001](images/dock-loading-and-saving-layouts001.png)|
+|[Saving and Loading RadDock for WinForms Layouts](http://www.telerik.com/videos/winforms/saving-and-loading-raddock-for-winforms-layouts) In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts. (Runtime: 07:03)|![WinForms RadDock Save Load Tutorial](images/dock-loading-and-saving-layouts001.png)|
 
 # See Also
 

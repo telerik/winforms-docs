@@ -63,7 +63,7 @@ Me.radDropDownList1.ShowImageInEditorArea = False
 
 This section describes how user defined values can be added to the data source populating the items in __RadDropDownList__. For the purpose we are going to bind the control to a BindingList instance and add the newly created item if the Enter key has been pressed.
         
->caption Fig.3 Adding User Defined Values
+>caption Figure 3: Adding User Defined Values
 
 ![WinForms RadDropDownList Adding User Defined Values](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle003.gif)
 

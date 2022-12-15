@@ -27,7 +27,7 @@ Select **RadFontDropDownList** and click the small arrow on the top right positi
             
 >caption Figure 2: Element hierarchy editor
 
-![WinForms RadFontDropDownList Element hierarchy editor](images/editors-fontdropdownlist-design-time002.png)
+![WinForms RadFontDropDownList Element Hierarchy Editor](images/editors-fontdropdownlist-design-time002.png)
 
 * __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the control's visual style at one time.
             

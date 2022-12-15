@@ -25,7 +25,7 @@ The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavio
 
 >caption Figure 1: AutoCompleteMode.None 
  
-![WinForms RadDropDownList AutoCompleteModeNone](images/dropdown-and-listcontrol-dropdownlist-autocompleate001.png)
+![WinForms RadDropDownList AutoCompleteMode None](images/dropdown-and-listcontrol-dropdownlist-autocompleate001.png)
 
 #### AutoCompleteMode.None 
  
@@ -46,10 +46,6 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.None
  
 * __Suggest__: As the user types an entry into the text box, the drop-down part of the control is shown, and the displayed items are filtered according to the entered text.
 
->caption Figure 2: AutoCompleteMode.Suggest 
-
-![WinForms RadDropDownList AutoCompleteModeSuggest](images/dropdown-and-listcontrol-dropdownlist-autocompleate002.png)
-
 #### AutoCompleteMode.Suggest 
 
 {{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=autoCSuggest}} 
@@ -66,12 +62,16 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Suggest
 ````
 
 {{endregion}} 
- 
->caption Figure 3: AutoCompleteMode.Append 
 
+>caption Figure 2: AutoCompleteMode.Suggest 
+
+![WinForms RadDropDownList AutoCompleteMode Suggest](images/dropdown-and-listcontrol-dropdownlist-autocompleate002.png)
+ 
 * __Append__: As the user types, the next item in the list that matches the user input is automatically appended to the characters the user has already typed. The drop-down list is not shown without the user clicking the arrow.
 
-![WinForms RadDropDownList dropdown-and-listcontrol-dropdownlist-autocompleate 003](images/dropdown-and-listcontrol-dropdownlist-autocompleate003.png)
+>caption Figure 3: AutoCompleteMode.Append 
+
+![WinForms RadDropDownList AutoCompleteMode Append ](images/dropdown-and-listcontrol-dropdownlist-autocompleate003.png)
 
 #### AutoCompleteMode.Append 
 
@@ -92,10 +92,6 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.Append
  
 * __SuggestAppend__: Similar to the Append setting, but the drop-down list is shown and the suggested item is highlighted.
 
->caption Figure 4: AutoCompleteMode.SuggestAppend
-
-![WinForms RadDropDownList AutoCompleteModeSuggestAppend](images/dropdown-and-listcontrol-dropdownlist-autocompleate004.png)
-
 #### AutoCompleteMode.SuggestAppend 
 
 {{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=autoCSuggestAppend}} 
@@ -112,8 +108,12 @@ Me.radDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
 ````
 
 {{endregion}} 
+
+>caption Figure 4: AutoCompleteMode.SuggestAppend
+
+![WinForms RadDropDownList AutoCompleteMode SuggestAppend](images/dropdown-and-listcontrol-dropdownlist-autocompleate004.png)
  
-## Auto-complete helpers
+## Auto-Complete Helpers
 
 __RadDropDownList__ internally uses auto-complete helpers to perform the auto-complete functionality.
 
@@ -122,10 +122,6 @@ __RadDropDownList__ internally uses auto-complete helpers to perform the auto-co
 
 * __SuggestMode__: determines whether the items are auto-completed considering whether the text starts with or contains the searched text.
                 
->caption Figure 5: SuggestMode.Contains
-
-![WinForms RadDropDownList SuggestModeContains](images/dropdown-and-listcontrol-dropdownlist-autocompleate005.png)
-
 #### SuggestMode.Contains 
 
 {{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=autoCsuggestMode}} 
@@ -141,6 +137,10 @@ Me.radDropDownList1.DropDownListElement.AutoCompleteSuggest.SuggestMode = Teleri
 ````
 
 {{endregion}} 
+
+>caption Figure 5: SuggestMode.Contains
+
+![WinForms RadDropDownList SuggestMode Contains](images/dropdown-and-listcontrol-dropdownlist-autocompleate005.png)
  
 
 * __AutoCompleteDataSource__: specifies the data structure to be bound.
@@ -170,10 +170,6 @@ Me.radDropDownList1.DropDownListElement.AutoCompleteAppend.LimitToList = True
 ## Customize auto-complete helpers
 
 By default, the items displayed in the __AutoCompleteSuggestHelper__’s pop-up are sorted alphabetically. The following example demonstrates how to manipulate the sort order considering the item’s Text.__Length__ property:
-
->caption Figure 6: Custom comparer
-
-![WinForms RadDropDownList Custom comparer](images/dropdown-and-listcontrol-dropdownlist-autocompleate006.png)
 
 #### Custom comparer 
 
@@ -238,5 +234,7 @@ End Class
 
 {{endregion}} 
 
+>caption Figure 6: Custom comparer
 
+![WinForms RadDropDownList Custom Comparer](images/dropdown-and-listcontrol-dropdownlist-autocompleate006.png)
 

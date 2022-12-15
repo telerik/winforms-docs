@@ -17,7 +17,7 @@ The __DocumentManager__ object manages all **DockWindows** that are parented in 
 
 This property allows you to get the currently active document among the documents in a __RadDock__ instance. This property is not equal to the __ActiveWindow__ property, because the currently active window can be a **ToolWindow**, but still there will be one document that is active among the rest of the documents. For example, in the screenshot below the ActiveWindow is *ToolWindow1*, but the **ActiveDocument** of **DocumentManager** is *DocumentWindow3*: 
 
-![WinForms RadDock raddock-document-manager001](images/raddock-document-manager001.png)        
+![WinForms RadDock ActiveDocument](images/raddock-document-manager001.png)        
 
 #### Get the active DocumentWindow\ToolWindow 
 {{source=..\SamplesCS\Dock\DocumentManager1.cs region=activeWindows}} 
@@ -78,9 +78,9 @@ Me.RadDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.InFront
 
 {{endregion}} 
 
->caption Figure 1: New DocumentWindows are inserted before the firs window.
+>caption Figure 1: New DocumentWindows are inserted before the first window.
 
-![WinForms RadDock New DocumentWindows are inserted before the firs window](images/dock-architecture-and-features-document-manager002.png) 
+![WinForms RadDock New DocumentWindows are Inserted Before the First window](images/dock-architecture-and-features-document-manager002.png) 
 
 The other available option for this property is *ToBack.* The behavior of **DocumentTabStrip** in this case resembles the behavior of most web browsers. The screenshot below demonstrates what happens after three clicks on the **AddDocument** button: 
 
@@ -125,7 +125,7 @@ Me.RadDock1.DocumentManager.ActiveDocumentMenuSortOrder = ActiveDocumentMenuSort
 
 {{endregion}}
 
-![WinForms RadDock dock-architecture-and-features-document-manager 003](images/dock-architecture-and-features-document-manager004.png) 
+![WinForms RadDock ActiveDocumentMenuSortOrder](images/dock-architecture-and-features-document-manager004.png) 
       
 # See Also
 

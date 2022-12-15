@@ -18,7 +18,7 @@ __RadCheckedDropDownList__ combines [RadDropDownList]({%slug winforms/dropdown-l
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadCheckedDropDownList dropdown-and-listcontrol-checkedropdownlist-overview 001](images/dropdown-and-listcontrol-checkedropdownlist-overview001.png)
+![WinForms RadCheckedDropDownList Overview](images/dropdown-and-listcontrol-checkedropdownlist-overview001.png)
 
 # See Also
 

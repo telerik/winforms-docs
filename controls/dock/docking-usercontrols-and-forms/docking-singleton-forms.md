@@ -21,7 +21,7 @@ A typical scenario for an application showing many forms is to allow the end-use
 
 Let's assume that we have a __RadRibbonForm__ with two buttons each of which opens a specific type of form that lies in RadDock. Let's call these forms `YellowForm` and `GreenForm`. If a form of particular type is already opened, clicking the button that has opened it will not open any new forms of the same type. If the end-user closes the form after filling-in some data, clicking the 'show' button for this form will open the form with the data filled-in.
 
-![WinForms RadDock docking-usercontrols-and-forms-docking-singleton-forms 001](images/docking-usercontrols-and-forms-docking-singleton-forms001.png)
+![WinForms RadDock Docking Singleton Forms in RadDock](images/docking-usercontrols-and-forms-docking-singleton-forms001.png)
 
 Here is how to do that:
 

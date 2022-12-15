@@ -17,7 +17,7 @@ This article demonstrates how to display detailed information for each employee 
 
 >caption Figure 1: Custom visual items
 
-![WinForms RadDropDownList Custom visual items](images/dropdown-and-listcontrol-dropdownlist-customizing-items003.png)
+![WinForms RadDropDownList Custom Visual Items](images/dropdown-and-listcontrol-dropdownlist-customizing-items003.png)
 
 1\. Create a class that inherits from __RadListVisualItem__. Override its __CreateChildElements__ method where you can add the desired content elements. The custom item will have no styles, because there are no defined styles for its type in the themes. You can apply the __RadListVisualItem__’s styles to it by defining its __ThemeEffectiveType__.
 

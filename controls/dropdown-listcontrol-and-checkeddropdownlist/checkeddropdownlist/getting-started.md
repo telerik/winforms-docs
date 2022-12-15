@@ -15,7 +15,7 @@ The following tutorial demonstrates how to populate __RadCheckedDropDownList__ a
 
 >caption Figure 1: Adding items at design time
 
-![WinForms RadCheckedDropDownList Adding items at design time](images/dropdown-and-listcontrol-checkeddropdownlist-getting-started001.png)
+![WinForms RadCheckedDropDownList Adding Items at Design Time](images/dropdown-and-listcontrol-checkeddropdownlist-getting-started001.png)
 
 1\. Drag __RadCheckedDropDownList__ to a form and click the *Smart Tag*.
             

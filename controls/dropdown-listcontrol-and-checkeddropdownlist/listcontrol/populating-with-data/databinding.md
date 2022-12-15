@@ -39,7 +39,7 @@ You can set the __DataSource__ property at design time in the *Properties* windo
 
 	>caption Figure: 3 RadListControl bound at Design time
 
-	![WinForms RadListControl RadListControl bound at Design time](images/dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding003.png)
+	![WinForms RadListControl RadListControl Bound at Design time](images/dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding003.png)
 
 ## Data binding at run time
 

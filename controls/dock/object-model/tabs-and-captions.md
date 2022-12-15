@@ -13,7 +13,7 @@ previous_url: dock-object-model-tabs-and-captions
  
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadDock RadDock Tab Alignment/Visibility and Automation](http://tv.telerik.com/watch/winforms/raddock/raddock-tab-alignmentvisibility-automation)In this video, you will learn about some of the new features provided in the R3 2009 release of the RadDock. These features include tab alignment and visibility as well as drag and drop automation.|![WinForms RadDock dock-object-model-tabs-and-captions 007](images/dock-object-model-tabs-and-captions007.png)|
+|[RadDock Tab Alignment/Visibility and Automation](http://tv.telerik.com/watch/winforms/raddock/raddock-tab-alignmentvisibility-automation)In this video, you will learn about some of the new features provided in the R3 2009 release of the RadDock. These features include tab alignment and visibility as well as drag and drop automation.|![WinForms RadDock Tabs and Captions Tutorial](images/dock-object-model-tabs-and-captions007.png)|
 
 __RadDock__ exposes several properties which allow you to have full control over the visibility and the position of the tabs/captions:
 
@@ -36,7 +36,7 @@ Me.RadDock1.DocumentTabsAlignment = TabStripAlignment.Left
 {{endregion}} 
 
 
-![WinForms RadDock dock-object-model-tabs-and-captions 001](images/dock-object-model-tabs-and-captions001.png)
+![WinForms RadDock Left DocumentTabsAlignment](images/dock-object-model-tabs-and-captions001.png)
 
 * __DocumentTabsVisible:__ allows you to hide/show all document tabs:
 
@@ -57,7 +57,7 @@ Me.RadDock1.DocumentTabsVisible = False
 {{endregion}} 
 
 
-![WinForms RadDock dock-object-model-tabs-and-captions 002](images/dock-object-model-tabs-and-captions002.png)
+![WinForms RadDock Hiding Document Tabs](images/dock-object-model-tabs-and-captions002.png)
 
 * __ToolTabAlignment:__ defines the position of the tabs for all **ToolTabStrip** instances in **RadDock**:
 
@@ -78,7 +78,7 @@ Me.RadDock1.ToolTabsAlignment = TabStripAlignment.Right
 {{endregion}} 
 
 
-![WinForms RadDock dock-object-model-tabs-and-captions 003](images/dock-object-model-tabs-and-captions003.png)
+![WinForms RadDock ToolTabsAlignment Right](images/dock-object-model-tabs-and-captions003.png)
 
 * __ToolTabsVisible:__ allows you to hide/show all tool tabs.
 
@@ -98,7 +98,7 @@ Me.RadDock1.ToolTabsVisible = False
 
 {{endregion}} 
 
-![WinForms RadDock dock-object-model-tabs-and-captions 004](images/dock-object-model-tabs-and-captions004.png)
+![WinForms RadDock Hiding Tool Tabs](images/dock-object-model-tabs-and-captions004.png)
 
 * __CaptionVisible:__ allows you to hide the caption of a single **ToolTabStrip**.
 
@@ -118,7 +118,7 @@ Me.ToolTabStrip1.CaptionVisible = False
 
 {{endregion}} 
 
-![WinForms RadDock dock-object-model-tabs-and-captions 005](images/dock-object-model-tabs-and-captions005.png)
+![WinForms RadDock Hinding Caption ToolTabStrip](images/dock-object-model-tabs-and-captions005.png)
 
 * __ShowToolCloseButton and ShowDocumentCloseButton:__  displays/hides close buttons in the **ToolWindow**/**DocumentWindow** tabs.
 
@@ -140,7 +140,7 @@ Me.RadDock1.ShowDocumentCloseButton = True
 
 {{endregion}} 
 
-![WinForms RadDock dock-object-model-tabs-and-captions 006](images/dock-object-model-tabs-and-captions006.png)
+![WinForms RadDock Showing Close Buttons](images/dock-object-model-tabs-and-captions006.png)
 
 # See Also
 

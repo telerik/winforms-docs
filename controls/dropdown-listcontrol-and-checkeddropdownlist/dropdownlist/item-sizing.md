@@ -70,7 +70,7 @@ If this property is set to *false* the user can set the __Height__ property of e
         
 >caption Figure 3: Custom height for each item
 
-![WinForms RadDropDownList Custom height for each item](images/dropdown-and-listcontrol-dropdownlist-item-sizing003.gif)
+![WinForms RadDropDownList Custom Height for Each Item](images/dropdown-and-listcontrol-dropdownlist-item-sizing003.gif)
 
 #### Height 
 
@@ -119,7 +119,7 @@ When the RadDropDownList.__AutoCompleteMode__ property is set to *Suggest* or *S
         
 >caption Figure 4: AutoCompleteSuggest.DropDownList.ListElement.ItemHeight
 
-![WinForms RadDropDownList AutoCompleteSuggestDropDownListListElementItemHeight](images/dropdown-and-listcontrol-dropdownlist-item-sizing004.png)
+![WinForms RadDropDownList AutoCompleteSuggest DropDownList ListElement ItemHeight](images/dropdown-and-listcontrol-dropdownlist-item-sizing004.png)
 
 #### Auto-complete items height 
 

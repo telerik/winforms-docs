@@ -75,7 +75,7 @@ End Sub
 
 >caption Figure 1: Customizing tokens
 
-![WinForms RadCheckedDropDownList Customizing tokens](images/dropdown-and-listcontrol-checkeddropdownlist-customization001.png)
+![WinForms RadCheckedDropDownList Customizing Tokens](images/dropdown-and-listcontrol-checkeddropdownlist-customization001.png)
 
 ## Formatting the drop down items
 
@@ -134,4 +134,4 @@ End Sub
 
 >caption Figure 2: Customizing dropdown items
 
-![WinForms RadCheckedDropDownList Customizing dropdown items](images/dropdown-and-listcontrol-checkeddropdownlist-customization002.png)
+![WinForms RadCheckedDropDownList Customizing Dropdown Items](images/dropdown-and-listcontrol-checkeddropdownlist-customization002.png)

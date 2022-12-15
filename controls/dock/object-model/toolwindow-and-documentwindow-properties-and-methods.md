@@ -41,7 +41,7 @@ __ToolWindow__ and __DocumentWindow__ both implement the same interfaces, such a
 
 * __DockTo(DockWindow window, DockPosition dockPosition):__ Docks a window with another window in the same container. The example below docks "Bottom Window" to the container of "Top Window".
 
-    ![WinForms RadDock dock-object-model-toolwindow-and-documentwindow-properties-at-runtime 001](images/dock-object-model-toolwindow-and-documentwindow-properties-at-runtime001.png)
+    ![WinForms RadDock DockTo Method](images/dock-object-model-toolwindow-and-documentwindow-properties-at-runtime001.png)
 
 #### Using DockTo() 
 

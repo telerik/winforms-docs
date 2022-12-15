@@ -23,7 +23,7 @@ The __SizingMode__ enumeration has the following members:
             
 >caption Figure 1: SizingMode.None
 
-![WinForms RadDropDownList SizingModeNone](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing001.png)
+![WinForms RadDropDownList SizingMode None](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing001.png)
 
 #### SizingMode.None 
 
@@ -45,7 +45,7 @@ Me.radDropDownList1.DropDownSizingMode = SizingMode.None
             
 >caption Figure 2: SizingMode.RightBottom
 
-![WinForms RadDropDownList SizingModeRightBottom](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing002.png)
+![WinForms RadDropDownList SizingMode RightBottom](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing002.png)
 
 #### SizingMode.RightBottom 
 
@@ -68,7 +68,7 @@ Me.radDropDownList1.DropDownSizingMode = SizingMode.RightBottom
             
 >caption Figure 3: SizingMode.UpDown
 
-![WinForms RadDropDownList SizingModeUpDown](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing003.png)
+![WinForms RadDropDownList SizingMode UpDown](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing003.png)
 
 #### SizingMode.UpDown 
 
@@ -91,7 +91,7 @@ Me.radDropDownList1.DropDownSizingMode = SizingMode.UpDown
             
 >caption Figure 4: SizingMode.UpDownAndRightBottom
 
-![WinForms RadDropDownList SizingModeUpDownAndRightBottom](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing004.png)
+![WinForms RadDropDownList SizingMode UpDownAndRightBottom](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing004.png)
 
 #### SizingMode.UpDownAndRightBottom 
 
@@ -231,7 +231,7 @@ End Function
 
 |Default pop up size|Auto sized popup|
 |----|----|
-|![WinForms RadDropDownList dropdown-and-listcontrol-dropdownlist-dropdown-resizing 009](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing009.png)|![WinForms RadDropDownList dropdown-and-listcontrol-dropdownlist-dropdown-resizing 010](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing010.png)|
+|![WinForms RadDropDownList Default Popup Size](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing009.png)|![WinForms RadDropDownList Auto sized Popup](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing010.png)|
 
 ## Displayed items
 

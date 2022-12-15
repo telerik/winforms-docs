@@ -65,7 +65,7 @@ Me.RadDock1.AddDocument(documentTop)
 
 The following example creates multiple panels and document panes at runtime.
 
-![WinForms RadDock dock-object-model-creating-toolwindow-and-documentwindow-at-runtime 001](images/dock-object-model-creating-toolwindow-and-documentwindow-at-runtime001.png)
+![WinForms RadDock Creating Multiple ToolWindow and DocumentWindow at Runtime](images/dock-object-model-creating-toolwindow-and-documentwindow-at-runtime001.png)
 
 #### Creating ToolWindows and DocumentWindows 
 
@@ -121,7 +121,7 @@ Me.RadDock1.AddDocument(document3)
 
 There are cases in which you might prefer docking two or more windows to the right edge of __RadDock__ only, so that these right-edged windows are tabbed in a single container. For example, let’s say that we have `Team Explorer`, `Solution Explorer` and `Server Explorer` windows and they are all initially closed. We also have a menu that allows us to open these windows, and after clicking all the corresponding menu items we want to get this picture:
 
-![WinForms RadDock dock-how-to-docking-windows-in-a-single-strip 001](images/dock-how-to-docking-windows-in-a-single-strip001.png)
+![WinForms RadDock Menu Item for Multiple Windows](images/dock-how-to-docking-windows-in-a-single-strip001.png)
 
 The bellow code shows how you can create each one of the windows:
 
@@ -177,7 +177,7 @@ End Sub
 {{endregion}}  
 However, this API docks the windows to right of **RadDock**, not taking into consideration other right-docked windows:
 
-![WinForms RadDock dock-object-model-creating-toolwindow-and-documentwindow-at-runtime 002](images/dock-object-model-creating-toolwindow-and-documentwindow-at-runtime002.png)
+![WinForms RadDock Windows are Docked To the Right](images/dock-object-model-creating-toolwindow-and-documentwindow-at-runtime002.png)
 
 So, we need to follow another approach. What we need to do is to globally define a **ToolTabStrip** variable that would be set the first time a window is right-docked. Then, the next time we dock a window, we will do it in the context of the already created **ToolTabStrip**. Here is what should be done in code on click of the menu items:
 

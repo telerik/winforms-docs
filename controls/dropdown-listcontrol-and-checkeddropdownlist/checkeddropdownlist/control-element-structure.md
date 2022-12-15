@@ -15,11 +15,11 @@ This article describes the inner structure and organization of the elements whic
         
 >caption Figure 1: RadCheckedDropDownList's elements hierarchy
 
-![WinForms RadCheckedDropDownList RadCheckedDropDownList's elements hierarchy](images/dropdown-and-listcontrol-checkedropdownlist-structure001.png)
+![WinForms RadCheckedDropDownList Elements Hierarchy](images/dropdown-and-listcontrol-checkedropdownlist-structure001.png)
 
 >caption Figure 2: RadCheckedDropDownList's structure
 
-![WinForms RadCheckedDropDownList RadCheckedDropDownList's structure](images/dropdown-and-listcontrol-checkedropdownlist-structure002.png)
+![WinForms RadCheckedDropDownList Structure](images/dropdown-and-listcontrol-checkedropdownlist-structure002.png)
 
 1. __RadCheckedDropDownListElement__: The main element of the control which holds all other elements. It can be accessed by the RadCheckedDropDownList.__CheckedDropDownListElement__ property. It also gives you access to the popup which shows when the arrow button is clicked: RadCheckedDropDownList.CheckedDropDownListElement.__PopupForm__.  
   1.1. __RadCheckedDropDownListEditableAreaElement__: Contains the [editor]({%slug winforms/editors/autocompletebox%}) and the arrow button.  

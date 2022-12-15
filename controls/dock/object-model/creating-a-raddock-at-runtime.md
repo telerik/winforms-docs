@@ -13,7 +13,7 @@ previous_url: dock-object-model-creating-a-raddock-at-runtime
  
 To create a __RadDock__ in code, construct a __RadDock__, set properties and add to the controls collection of the form. The example below creates a __RadDock__, adds it to the form and docks a single __ToolWindow__ to it. See [DockWindows]({%slug winforms/dock/object-model/toolwindow-and-documentwindow-properties-and-methods%}) for more information on instantiating __DockWindow__ at runtime.
 
-![WinForms RadDock dock-object-model-creating-a-raddock-at-runtime 001](images/dock-object-model-creating-a-raddock-at-runtime001.png)
+![WinForms RadDock Creating a RadDock at Runtime](images/dock-object-model-creating-a-raddock-at-runtime001.png)
 
 #### Creating a simple RadDock instance 
 
