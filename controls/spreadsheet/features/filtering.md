@@ -94,13 +94,13 @@ If we apply a top filter on the second column, so as to show only the three larg
 
 Figure 6: Apply Top Filter 
 
-![WinForms RadSpreadsheet spreadsheet-features-filtering 006](images/spreadsheet-features-filtering006.png)
+![WinForms RadSpreadsheet Apply Top Filter](images/spreadsheet-features-filtering006.png)
 
 This will completely hide the respective values from the filtering tree of the first column.
 
 Figure 7: Result
 
-![WinForms RadSpreadsheet spreadsheet-features-filtering 007](images/spreadsheet-features-filtering007.png)
+![WinForms RadSpreadsheet Result](images/spreadsheet-features-filtering007.png)
 
 ## Apply Filters Programmatically
 

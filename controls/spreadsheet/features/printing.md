@@ -66,7 +66,7 @@ radSpreadsheet1.SpreadsheetElement.PrintPreview()
 The bellow image shows the options available in the PrintPreview dialog.
 
 >caption The PrintPreview dialog
-![WinForms RadSpreadsheet The PrintPreview dialog](images/radspreadsheet-features-printing001.png)
+![WinForms RadSpreadsheet PrintPreview dialog](images/radspreadsheet-features-printing001.png)
 
 
 ## Worksheet page setup

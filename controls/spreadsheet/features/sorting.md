@@ -95,7 +95,7 @@ The other way to add a sort condition is through the filtering popup. When you o
 
 >caption Figure 5: Filtering Popus Sorting by Color
 
-![WinForms RadSpreadsheet Filtering Popus Sorting by Color](images/spreadsheet-features-sorting005.png)
+![WinForms RadSpreadsheet Filtering Popup Sorting by Color](images/spreadsheet-features-sorting005.png)
 
 ## See Also
 

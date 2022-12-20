@@ -23,7 +23,7 @@ RadSpreadsheet enables you working with charts through its UI. You can add a cha
 
 #### Figure 1: Insert Chart dialog
 
-![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts001.png)
+![WinForms RadSpreadsheet Insert Chart](images/radspreadsheet-features-ui-charts001.png)
 
 ## Supported Chart Types
 
@@ -33,7 +33,7 @@ Column/bar charts are used to display values as sets of vertical columns, groupe
 
 | Clustered column        | Stacked column | 100% stacked column |
 | ----------------------- |:--------------:| -------------------:|
-| ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts002.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts003.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts004.png)| 
+| ![WinForms RadSpreadsheet Cluster Column](images/radspreadsheet-features-ui-charts002.png) | ![WinForms RadSpreadsheet Stacked column](images/radspreadsheet-features-ui-charts003.png) | ![WinForms RadSpreadsheet 100% stacked column](images/radspreadsheet-features-ui-charts004.png)| 
 
 ### Bar Charts
 
@@ -41,7 +41,7 @@ Bar charts are analogical to the column charts, except the orientation of the ba
 
 | Clustered bar           | Stacked bar    | 100% stacked bar    |
 | ----------------------- |:--------------:| -------------------:|
-| ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts005.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts006.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts007.png)|
+| ![WinForms RadSpreadsheet Clustered bar](images/radspreadsheet-features-ui-charts005.png) | ![WinForms RadSpreadsheet Stacked bar ](images/radspreadsheet-features-ui-charts006.png) | ![WinForms RadSpreadsheet 100% stacked bar](images/radspreadsheet-features-ui-charts007.png)|
 
 ### Line Charts
 
@@ -49,11 +49,11 @@ The line chart shows the category data distributed on the horizontal axis and al
 
 | Line                    | Stacked line   | 100% stacked line   |
 | ----------------------- |:--------------:| -------------------:|
-| ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts008.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts009.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts010.png)|
+| ![WinForms RadSpreadsheet Line Charts](images/radspreadsheet-features-ui-charts008.png) | ![WinForms RadSpreadsheet Stacked line](images/radspreadsheet-features-ui-charts009.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts010.png)|
 
 | Line with Markers       | Stacked line with Markers| 100% stacked line with Markers|
 | ----------------------- |:------------------------:| :----------------------------:
-| ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts011.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts012.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts013.png)|
+| ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts011.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts012.png) | ![WinForms RadSpreadsheet 100% stacked line](images/radspreadsheet-features-ui-charts013.png)|
 
 ### Scatter and Bubble Charts
 
@@ -63,9 +63,9 @@ In a bubble chart, a third numeric field determines the size of the data points 
 
 | Scatter     |Scatter with Smooth Lines | Scatter with Smooth Lines and Markers | 
 | ----------- |:------------------------ |:--------------------------------------| 
-| ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts014.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts015.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts016.png) |
+| ![WinForms RadSpreadsheet Scatter](images/radspreadsheet-features-ui-charts014.png) | ![WinForms RadSpreadsheet Scatter with Smooth Lines](images/radspreadsheet-features-ui-charts015.png) | ![WinForms RadSpreadsheet Scatter with Smooth Lines and Markers](images/radspreadsheet-features-ui-charts016.png) |
 | Scatter with Straight Lines     |Scatter with Straight Lines and Markers | Bubble | 
-| ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts017.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts018.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts019.png) |
+| ![WinForms RadSpreadsheet Scatter with Straight Lines](images/radspreadsheet-features-ui-charts017.png) | ![WinForms RadSpreadsheet Scatter with Straight Lines and Markers](images/radspreadsheet-features-ui-charts018.png) | ![WinForms RadSpreadsheet Bubble](images/radspreadsheet-features-ui-charts019.png) |
 
 ### Pie and Doughnut Charts
 	
@@ -74,7 +74,7 @@ Pie charts are useful for comparing the values of different points in a single s
 
 | Pie         | Doughnut  | 
 | ----------- |:----------| 
-| ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts020.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts021.png) |
+| ![WinForms RadSpreadsheet Pie](images/radspreadsheet-features-ui-charts020.png) | ![WinForms RadSpreadsheet Doughnut](images/radspreadsheet-features-ui-charts021.png) |
 
 
 
@@ -84,7 +84,7 @@ Area charts can be used to plot change over time and draw attention to the total
 
 | Clustered area          | Stacked area   | 100% stacked area   |
 | ----------------------- |:--------------:| -------------------:|
-| ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts022.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts023.png) | ![WinForms RadSpreadsheet ](images/radspreadsheet-features-ui-charts024.png)|
+| ![WinForms RadSpreadsheet Clustered area](images/radspreadsheet-features-ui-charts022.png) | ![WinForms RadSpreadsheet Stacked area](images/radspreadsheet-features-ui-charts023.png) | ![WinForms RadSpreadsheet 100% stacked area](images/radspreadsheet-features-ui-charts024.png)|
 
 
 ## Manipulating Charts in Code

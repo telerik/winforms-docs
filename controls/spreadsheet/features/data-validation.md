@@ -36,7 +36,7 @@ Figure 2 shows hot to turn the option on and the result when invalid data is pre
 
 ![WinForms RadSpreadsheet Circle Invalid Data](images/spreadsheet-features-data-validation002.png)
 
-![WinForms RadSpreadsheet spreadsheet-features-data-validation 003](images/spreadsheet-features-data-validation003.png)
+![WinForms RadSpreadsheet Invalid cells](images/spreadsheet-features-data-validation003.png)
 
 Example 1 shows the use of the two methods that toggle this functionality - **CircleInvalidData**() and **ClearInvalidDataCircles**().
 

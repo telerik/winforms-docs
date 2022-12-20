@@ -37,7 +37,7 @@ In order to interact with the working surface of RadSpreadsheet, the user create
 
 The cell selection designates a region/regions of cells and performs a given action onto these cells. The selection can be a single cell, a rectangular region of cells, or a composition of rectangular regions. The UI selection can contain numerous selected cells, however, only one of the cells is active at a time.
 
-![WinForms RadSpreadsheet Rad Spreadsheet UI Selection 04](images/RadSpreadsheet_UI_Selection_04.png)
+![WinForms RadSpreadsheet UI Selection](images/RadSpreadsheet_UI_Selection_04.png)
 
 The shape selection can contain one or more shapes.
 
@@ -120,7 +120,7 @@ The __Selection__ class exposes an overloaded __Select__ method that offers flex
 
 One of the Select overloads gets a CellIndex parameter that points to the cell to be selected (or added to the selection). The following example demonstrates how the clearSelection parameter changes the outcome of this Select() method.
 
-![WinForms RadSpreadsheet Rad Spreadsheet UI Selection 02](images/RadSpreadsheet_UI_Selection_02.png)
+![WinForms RadSpreadsheet Select CellIndex](images/RadSpreadsheet_UI_Selection_02.png)
 
 #### Selecting a Cell
 
@@ -140,7 +140,7 @@ selection_2.Select(New CellIndex(0, 0), False)
  
 {{endregion}} 
  
-![WinForms RadSpreadsheet Rad Spreadsheet UI Selection 03](images/RadSpreadsheet_UI_Selection_03.png)
+![WinForms RadSpreadsheet Select First Cell](images/RadSpreadsheet_UI_Selection_03.png)
 
 The Selection class also offers a Select() method that takes a CellRange as an argument. The overload selects (or adds to the current selection) the designated region and makes the top left cell to be the Active one. The next sample snippet shows how to select the C3:D4 cell region:
         
@@ -166,7 +166,7 @@ selection_3.Select(New CellRange(0, 0, 2, 2))
 
 Another overload of the __Select__ method takes as input two __CellIndex__ instances that indicate the start and the end cell indexes of the selected region. Note that unlike the Select(CellRange) method, this overload makes the cell with the start CellIndex the active one. The following snippet illustrates how use the method to select the region B7 to E3. Note that the active cell is B7, not B3.
 
-![WinForms RadSpreadsheet Rad Spreadsheet UI Selection 01](images/RadSpreadsheet_UI_Selection_01.png)
+![WinForms RadSpreadsheet Select CellRange](images/RadSpreadsheet_UI_Selection_01.png)
 
 Here is a sample code on how you can achieve the result from the above image through the RadSpreadsheet API:
 
@@ -192,7 +192,7 @@ selection.ActiveCellMode = ActiveCellMode.Edit
 
 The following result can be achieved with the sample code below:
 
-![WinForms RadSpreadsheet Rad Spreadsheet UI Selection 05](images/RadSpreadsheet_UI_Selection_05.png)
+![WinForms RadSpreadsheet Select Region](images/RadSpreadsheet_UI_Selection_05.png)
 
 #### Select Image
 
@@ -239,7 +239,7 @@ selection_6.Select(image2, True)
 
 The result will be the following:
 
-![WinForms RadSpreadsheet Rad Spreadsheet UI Selection 06](images/RadSpreadsheet_UI_Selection_06.png)
+![WinForms RadSpreadsheet Select Next Image](images/RadSpreadsheet_UI_Selection_06.png)
 
 Note that even though the clearSelection parameter is set to true, this will clear only the shape selection. The underlying cell selection will remain intact and will become visible in its previous state if the shape selection becomes empty.
 -->
@@ -370,15 +370,15 @@ The automatic filling of data in RadSpreadsheet can also be performed through th
 
 In order to use the fill handle, select the initial set of data, click and hold the handle and drag it in the desired direction.
 
-![WinForms RadSpreadsheet Rad Spreadsheet UI Selection 07](images/RadSpreadsheet_UI_Selection_07.png)
+![WinForms RadSpreadsheet Select Initial Data](images/RadSpreadsheet_UI_Selection_07.png)
 
 The initially selected area will remain marked while the part of selection you are dragging will be colored in Grey.
 
-![WinForms RadSpreadsheet Rad Spreadsheet UI Selection 08](images/RadSpreadsheet_UI_Selection_08.png)
+![WinForms RadSpreadsheet Select and Drag](images/RadSpreadsheet_UI_Selection_08.png)
 
 Once you've selected the desired range, you can drop the selection. The selected range will be filled with data the same way as it would be if you had used the autofill data series.
 
-![WinForms RadSpreadsheet Rad Spreadsheet UI Selection 09](images/RadSpreadsheet_UI_Selection_09.png)
+![WinForms RadSpreadsheet Select and Drop](images/RadSpreadsheet_UI_Selection_09.png)
 
 
 ## Using Selection to Complete Formulas
@@ -389,11 +389,11 @@ In order to use the selection to enter a formula, start typing it by entering th
 
 This mode of the selection can be also used when entering the arguments of a function and is available both in the cell editor and the formula bar.
 
-![WinForms RadSpreadsheet Rad Spreadsheet UI Selection 10](images/RadSpreadsheet_UI_Selection_10.png)
+![WinForms RadSpreadsheet Cell Editor](images/RadSpreadsheet_UI_Selection_10.png)
 
 If a formula is already entered and you would like to see the references used in it, enter edit mode and they will be selected automatically.
 
-![WinForms RadSpreadsheet Rad Spreadsheet UI Selection 10](images/RadSpreadsheet_UI_Selection_12.png)
+![WinForms RadSpreadsheet Formula](images/RadSpreadsheet_UI_Selection_12.png)
 
 # See Also
 

@@ -112,7 +112,7 @@ The headings of the rows and columns have different states. You can use these st
     * **Selected**: The control is selected.
     
 >       >caption **Figure 3: SelectAllControl in selected state**
-        ![WinForms RadSpreadsheet SelectAllControl in selected state**](images/spreadsheet-how-to-customize-row-and-column-headers003.png)
+        ![WinForms RadSpreadsheet SelectAllControl in selected state](images/spreadsheet-how-to-customize-row-and-column-headers003.png)
 
 -->
 

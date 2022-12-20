@@ -91,7 +91,7 @@ Through the UI of RadSpreadsheet you can enable the end user to open and save do
 
 #### Figure 1: Open and Save buttons in the File menu
 
-![WinForms RadSpreadsheet ](images/RadSpreadsheet_ImportExport_01.png)
+![WinForms RadSpreadsheet File Menu](images/RadSpreadsheet_ImportExport_01.png)
 
 
 ## See Also

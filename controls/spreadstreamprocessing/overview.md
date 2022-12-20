@@ -19,7 +19,7 @@ This article briefly explains the specifics of **RadSpreadStreamProcessing** - w
 
 >note **RadSpreadStreamProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamsprocessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview).
 
-![WinForms RadSpreadStreamProcessing SpreadStreamProcessing Fast Export image](images/SpreadStreamProcessing-Overview_01.png)
+![WinForms RadSpreadStreamProcessing Overview](images/SpreadStreamProcessing-Overview_01.png)
 
 ## What is Spread Streaming?
 

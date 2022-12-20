@@ -24,7 +24,7 @@ __SpreadsheetElement__ exposes several properties that enable you to control the
 
 >caption Figure 1: Customized selection in RadSpreadsheet
 
-![WinForms RadSpreadsheet Customized selection in RadSpreadsheet](images/spreadsheet-ho-to-customize-selection_001.png)
+![WinForms RadSpreadsheet Customized selection](images/spreadsheet-ho-to-customize-selection_001.png)
 
 **Example 1** demonstrate how you could customize the properties of the selection in code to achieve the result shown in **Figure 1**. 
 

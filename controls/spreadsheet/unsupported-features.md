@@ -10,8 +10,6 @@ position: 8
 
 # Unsupported Features
 
-
-
 This article lists some of the popular features available in Microsoft Office Open XML Spreadsheet (xlsx) and common editors which are currently not supported in __RadSpreadsheet__.
 
 
