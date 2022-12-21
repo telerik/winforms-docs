@@ -20,13 +20,13 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select **SplitterElement** in *Controls Structure* on the left side. Then, select **SplitterBorder** in the *Elements* section.
 
-	![WinForms RadSplitContainer splitcontainer-customizing-appearance-themes 001](images/splitcontainer-customizing-appearance-themes001.png)
+	![WinForms RadSplitContainer Controls Structure](images/splitcontainer-customizing-appearance-themes001.png)
 
 1. Modify the applied *border* repository item. 
 
-	![WinForms RadSplitContainer splitcontainer-customizing-appearance-themes 002](images/splitcontainer-customizing-appearance-themes002.png)
+	![WinForms RadSplitContainer Border](images/splitcontainer-customizing-appearance-themes002.png)
 	
-	![WinForms RadSplitContainer splitcontainer-customizing-appearance-themes 003](images/splitcontainer-customizing-appearance-themes003.png)
+	![WinForms RadSplitContainer Red](images/splitcontainer-customizing-appearance-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 
