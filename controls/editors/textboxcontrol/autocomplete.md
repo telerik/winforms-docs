@@ -56,7 +56,7 @@ Two properties control data binding:
 
 To set the __AutoCompleteDataSource__ property, select the __AutoCompleteDataSource__ property in the Properties window, click the drop-down arrow to display all existing data sources on the form. Click the `Add Project Data Source` link and follow the instructions in the `Data Source Configuration Wizard` to add a data source to your project. You can use databases, web services, or objects as data sources.
 
-![WinForms RadTextBoxControl editors-textboxcontrol-autocomplete 001](images/editors-textboxcontrol-autocomplete001.png)
+![WinForms RadTextBoxControl DataBound Mode](images/editors-textboxcontrol-autocomplete001.png)
 
 To set the __AutoCompleteDisplayMember__ property, first set the data source property. Then, select a value for the __AutoCompleteDisplayMember__ property from the drop-down list in the `Properties` window.
 		
@@ -111,10 +111,10 @@ End Sub
 
 Here is the result of the above code:
 
-![WinForms RadTextBoxControl editors-textboxcontrol-autocomplete 002](images/editors-textboxcontrol-autocomplete002.png)
+![WinForms RadTextBoxControl Unbound Mode](images/editors-textboxcontrol-autocomplete002.png)
 
 
-## Accessing the auto-complete drop down and formating the items.
+## Accessing the auto-complete drop down and formating the items
 
 The bellow example shows how you can change the styles of the auto-complete drop down.
 
@@ -158,7 +158,7 @@ End Sub
 
 Here is the result of the above code:
 
-![WinForms RadTextBoxControl editors-textboxcontrol-autocomplete 003](images/editors-textboxcontrol-autocomplete003.png)
+![WinForms RadTextBoxControl Customize DropDown](images/editors-textboxcontrol-autocomplete003.png)
 
 # See Also
 

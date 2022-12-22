@@ -16,13 +16,13 @@ This help article will demonstrate a step by step tutorial how to customize the 
 2. Export the built-in themes in a specific folder by selecting `File` >> `Export Built-in Themes`.
 3. Load a desired theme from the just exported files by selecting `File` >> `Open Package`.
 4. Expand __RadDateTimePicker__ and select the `DateTimePickerBorder`. 
-    ![WinForms RadDateTimePicker datetimepicker-themes001](images/datetimepicker-themes001.png)
+    ![WinForms RadDateTimePicker VisualStyleBuilder](images/datetimepicker-themes001.png)
 
-5. Open the `Edit Repository Item` dialog and change the __ForeCokor__:
-   ![WinForms RadDateTimePicker datetimepicker-themes002](images/datetimepicker-themes002.png)
+5. Open the `Edit Repository Item` dialog and change the __ForeColor__:
+   ![WinForms RadDateTimePicker Edit Repository Item](images/datetimepicker-themes002.png)
 
 6. The BorderColor is now changed:
-   ![WinForms RadDateTimePicker datetimepicker-themes003](images/datetimepicker-themes003.png)
+   ![WinForms RadDateTimePicker BorderColor Changed](images/datetimepicker-themes003.png)
 
 >note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
 

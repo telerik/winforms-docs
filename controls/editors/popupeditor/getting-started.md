@@ -15,7 +15,7 @@ This article shows how you can start using __RadPopupEditor__. Go ahead and add 
       
 >caption Figure 1: RadPopupEditor and RadPopupCintainer at design time.
 
-![WinForms RadPopupEditor RadPopupEditor and RadPopupCintainer at design time](images/eidtors-popupeditor-getting-started001.png)
+![WinForms RadPopupEditor and RadPopupCintainer at design time](images/eidtors-popupeditor-getting-started001.png)
 
 Add three text boxes, four labels and two buttons to the __RadPopupContainer__. Arrange the controls like in Figure 2.
         
@@ -67,7 +67,7 @@ This way when __Submit__ is pressed the name will be displayed in the control's 
         
 >caption Figure 3: The final result.
 
-![WinForms RadPopupEditor The final result](images/eidtors-popupeditor-getting-started003.gif)
+![WinForms RadPopupEditor Getting Started](images/eidtors-popupeditor-getting-started003.gif)
 
 # See Also
 

@@ -20,7 +20,7 @@ RadSpinEditor is a themable alternative to the standard Windows Numeric Up Down 
 
 >caption Figure 1: RadSpinEditor
 
-![WinForms RadSpinEditor RadSpinEditor](images/editors-spineditor-overview001.png)
+![WinForms RadSpinEditor Overview](images/editors-spineditor-overview001.png)
 
 # See Also
 

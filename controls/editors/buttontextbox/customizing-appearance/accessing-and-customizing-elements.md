@@ -22,7 +22,7 @@ You can access and modify the style for the different elements in the editable a
 
 >caption Figure 1: Element hierarchy editor
 
-![WinForms RadButtonTextBox Element hierarchy editor](images/editors-buttontextbox-customizing-elements001.png)
+![WinForms RadButtonTextBox Element Hierarchy Editor](images/editors-buttontextbox-customizing-elements001.png)
 
 ## Programmatically
 

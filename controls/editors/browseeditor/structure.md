@@ -13,10 +13,10 @@ position: 1
 This article describes the inner structure and organization of the elements which build the __RadBrowseEditor__ control.
 
 >caption Figure 1: RadBrowseEditor`s Element Hierarchy
-![WinForms RadBrowseEditor RadBrowseEditor`s Element Hierarchy](images/radbrowseeditor-structure001.png)
+![WinForms RadBrowseEditor Element Hierarchy](images/radbrowseeditor-structure001.png)
 
 >caption Figure 2: RadBrowseEditor`s Structure
-![WinForms RadBrowseEditor RadBrowseEditor`s Structure](images/radbrowseeditor-structure002.png)
+![WinForms RadBrowseEditor Structure](images/radbrowseeditor-structure002.png)
 
 1. __RadBrowseEditorElement:__ Represents the main element of __RadBrowseEditor__.
 1. __StackLayoutElement:__ Container element responsible for arranging the text box and the button.

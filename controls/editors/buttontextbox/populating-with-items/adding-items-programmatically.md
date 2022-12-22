@@ -15,7 +15,7 @@ position: 1
 
 >caption Figure 1: Adding button elements
 
-![WinForms RadButtonTextBox Adding button elements](images/buttontextbox-populating-with-data-adding-items-programmatically001.png)
+![WinForms RadButtonTextBox Adding Button Elements](images/buttontextbox-populating-with-data-adding-items-programmatically001.png)
 
 #### Add button elements programmatically 
 
@@ -82,9 +82,9 @@ RadButtonTextBox1.Text = ""
 
 The following code snippet demonstrates how to add programmatically different types of elements in **RadButtonTextBox**:
 
->caption Figure 2: Adding different elements
+>caption Figure 2: Adding Different Elements
 
-![WinForms RadButtonTextBox Adding different elements](images/buttontextbox-populating-with-data-adding-items-programmatically002.png)
+![WinForms RadButtonTextBox Adding Different Elements](images/buttontextbox-populating-with-data-adding-items-programmatically002.png)
 
 #### Add different elements programmatically 
 

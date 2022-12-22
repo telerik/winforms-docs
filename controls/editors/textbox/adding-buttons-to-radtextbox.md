@@ -16,7 +16,7 @@ Telerik UI for WinForms are based on a special framework called [Telerik Present
      
 >caption Figure 1: RadTextBox with buttons inside it.       
 
-![WinForms RadButtonTextBox RadTextBox with buttons inside it](images/editors-textbox-adding-buttons-to-radtextbox001.png)
+![WinForms RadTextBox With Buttons Inside](images/editors-textbox-adding-buttons-to-radtextbox001.png)
 
 ## Adding buttons to RadTextBox
 

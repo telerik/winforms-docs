@@ -18,9 +18,9 @@ This article demonstrates how to populate **RadDomainUpDown** with data at desig
 
 Another possibility to open the editor is via the **Items** collection in the *Properties* Visual Studio section:
 
->caption Figure 2:  Visual Studio Properties window
+>caption Figure 2:  Visual Studio Properties Window
 
-![WinForms RadDomainUpDown Visual Studio Properties window](images/domainupdown-populating-with-data-design-time002.png)
+![WinForms RadDomainUpDown Visual Studio Properties Window](images/domainupdown-populating-with-data-design-time002.png)
 
 Both ways you can add a **RadListDataItem**  which represents a logical data item which can display specific text and image.
 

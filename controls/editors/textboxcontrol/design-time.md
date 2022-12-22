@@ -14,7 +14,7 @@ The __Smart Tag__ of __RadTextBoxControl__ lets you quickly access common tasks 
 
 >caption Figure 1: The Smart Tag of RadTextBoxControl
 
-![WinForms RadTextBoxControl The Smart Tag of RadTextBoxControl](images/editors-radtextbox-designcontrol-time001.png)        
+![WinForms RadTextBoxControl Smart Tag](images/editors-radtextbox-designcontrol-time001.png)        
 
 * __Common Tasks__
     - __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.

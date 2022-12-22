@@ -24,7 +24,7 @@ The main purpose of the control is to allow the user to select a color from a [c
 
 >caption Figure 1: RadColorBox
 
-![WinForms RadColorBox RadColorBox](images/editors-color-box-overview001.png)
+![WinForms RadColorBox Overview](images/editors-color-box-overview001.png)
 
 
 # See Also

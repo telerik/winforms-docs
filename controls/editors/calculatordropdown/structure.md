@@ -16,10 +16,10 @@ This article describes the inner structure and organization of the elements whic
 __RadCalculatorDropDown__ consists of two parts - editable part which is the actual editor and a popup hosting the calculator.
 
 >caption Figure 1: RadCalculatorDropDown`s Element Hierarchy
-![WinForms RadCalculatorDropDown RadCalculatorDropDown`s Element Hierarchy](images/editors-calculator-element-structure001.png)
+![WinForms RadCalculatorDropDown Element Hierarchy](images/editors-calculator-element-structure001.png)
 
 >caption Figure 2: RadCalculatorDropDown Structure
-![WinForms RadCalculatorDropDown RadCalculatorDropDown Structure](images/editors-calculator-element-structure002.png)
+![WinForms RadCalculatorDropDown Structure](images/editors-calculator-element-structure002.png)
 
 ## Editable Area
 

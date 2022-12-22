@@ -20,7 +20,7 @@ __RadMaskedEditBox__ is a themeable text box that formats and constrains text t
 
 >caption Figure 1: RadMaskedEditBox Types
 
-![WinForms RadMaskedEditBox RadMaskedEditBox Types](images/editors-maskededitbox-overview001.png)
+![WinForms RadMaskedEditBox Types](images/editors-maskededitbox-overview001.png)
 
 The __MaskType__ property defines what type of mask would be used in the masked box:
 

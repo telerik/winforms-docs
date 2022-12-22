@@ -15,7 +15,7 @@ You can easily customize the fill and border in the `Element Hierarchy editor`. 
 1. Open the `Element Hierarchy editor` from the smart tag.
 2. Select __RadAutoCompleteBoxElement__. Make sure that the __DrawFill__ property is set to *true*.
 3. Change the __BackColor__ and the __BorderColor__ properties:
-    ![WinForms RadAutoCompleteBox editors-autocompletebox-fill-and-border 001](images/editors-autocompletebox-fill-and-border001.png)
+    ![WinForms RadAutoCompleteBox Customize Fill and Border](images/editors-autocompletebox-fill-and-border001.png)
 
 
 # See Also

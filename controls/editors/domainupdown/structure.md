@@ -12,14 +12,14 @@ This article describes the inner structure and organization of the elements whic
 
 **RadDomainUpDown** is a derivative of a **RadDropDownList**. Unlike **RadDropDownList**, **RadDomainUpDown** doesn't show a popup with the items:
 
->caption Figure 1: RadDomainUpDown's elements hierarchy
+>caption Figure 1: RadDomainUpDown's Elements Hierarchy
 
-![WinForms RadDomainUpDown RadDomainUpDown's elements hierarchy](images/domainupdown-structure001.png)
+![WinForms RadDomainUpDown Elements Hierarchy](images/domainupdown-structure001.png)
 
 
 >caption Figure 2: RadDomainUpDown's structure
 
-![WinForms RadDomainUpDown RadDomainUpDown's structure](images/domainupdown-structure002.png)
+![WinForms RadDomainUpDown Structure](images/domainupdown-structure002.png)
 
 * **RadDomainUpDownElement** - the main element that holds the stack container of all inner elements. 
 	* **RadDropDownListEditableAreaElement** - holds the text and image when the **ReadOnly** property is set to *true*;

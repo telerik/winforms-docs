@@ -19,7 +19,7 @@ __RadAutoCompleteBox__ allows the end-user to easily fill-in text thanks to auto
 {% endif %}
      
 >caption Figure 1: RadAutoCompleteBox 
-![WinForms RadAutoCompleteBox RadAutoCompleteBox](images/editors-autocompletebox-overview001.png)
+![WinForms RadAutoCompleteBox Overview](images/editors-autocompletebox-overview001.png)
 
 Key Features:
 

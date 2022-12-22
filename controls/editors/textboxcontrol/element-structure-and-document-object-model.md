@@ -16,7 +16,7 @@ The document object model of RadTextBoxControl is represented by __LineInfo__ cl
 
 The visual element structure of the `RadTextBoxControlElement` is presented on the following diagram:
 
-![WinForms RadTextBoxControl editors-textboxcontrol-element-structure 001](images/editors-textboxcontrol-element-structure001.png)
+![WinForms RadTextBoxControl Element Structure](images/editors-textboxcontrol-element-structure001.png)
 
 * __TextBoxViewElement__ represents a viewport that is responsible for the layout and arrangement of all text blocks. It executes layout algorithms for single, multi-line and word wrap layout. It inherits from ITextBlock.
 		  	

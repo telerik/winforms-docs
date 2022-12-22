@@ -14,16 +14,16 @@ The below image shows the structure of RadDateTimePicker.
 
 >caption Figure 1: RadDateTimePicker structure.
 
-![WinForms RadDateTimePicker RadDateTimePicker structure](images/editors-datetimepicker-structure001.png)
+![WinForms RadDateTimePicker Structure](images/editors-datetimepicker-structure001.png)
 
 
 ## Elements Hierarchy
 
 Figure 2 shows the elements used in RadDateTimePicker.
 
->caption Figure 2: RadDatatimePicker elements hierarchy.
+>caption Figure 2: RadDatatimePicker Elements Hierarchy.
 
-![WinForms RadDateTimePicker RadDatatimePicker elements hierarchy](images/editors-datetimepicker-structure002.png)
+![WinForms RadDateTimePicker Elements Hierarchy](images/editors-datetimepicker-structure002.png)
 
 
 # See Also

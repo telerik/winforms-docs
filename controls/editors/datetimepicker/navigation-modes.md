@@ -15,8 +15,8 @@ The embedded __RadCalendar__ has `HeaderNavigationMode` property, which determin
 
 |HeaderNavigationMode|Design|
 |----|----|
-|Zoom|![WinForms RadDateTimePicker editors-datetimepicker-navigation-modes 001](images/editors-datetimepicker-navigation-modes001.png)|
-|Popup|![WinForms RadDateTimePicker editors-datetimepicker-navigation-modes 003](images/editors-datetimepicker-navigation-modes003.png)|
+|Zoom|![WinForms RadDateTimePicker Zoom](images/editors-datetimepicker-navigation-modes001.png)|
+|Popup|![WinForms RadDateTimePicker Popup](images/editors-datetimepicker-navigation-modes003.png)|
 
 #### Setting the value of RadDateTimePicker 
 
@@ -34,7 +34,7 @@ Me.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = Head
 
 {{endregion}} 
 
-![WinForms RadDateTimePicker editors-datetimepicker-navigation-modes 002](images/editors-datetimepicker-navigation-modes002.gif)
+![WinForms RadDateTimePicker Value Property](images/editors-datetimepicker-navigation-modes002.gif)
 
 # See Also
 

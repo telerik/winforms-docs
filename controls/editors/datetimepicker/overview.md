@@ -26,7 +26,7 @@ __RadDateTimePicker__ allows interactive selection of dates using a drop down ca
 {% endif %}
 
 >caption Figure 1: RadDateTimePicker.
-![WinForms RadDateTimePicker RadDateTimePicker](images/editors-datetimepicker-overview001.png)
+![WinForms RadDateTimePicker Overview](images/editors-datetimepicker-overview001.png)
 
 
 # See Also

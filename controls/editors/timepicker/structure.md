@@ -13,19 +13,19 @@ position: 1
 The following image demonstrates the structure of __RadTimePicker__ control, which might come in handy when you need to access different control elements:
 
 >caption Figure 1: RadTimePicker elements structure. 
-![WinForms RadDateTimePicker RadTimePicker elements structure](images/editors-timepicker-structure001.png)
+![WinForms RadDateTimePicker Elements Structure](images/editors-timepicker-structure001.png)
 
 # Elements Hierarchy
 
 >caption Figure 2: The Elements hierarchy of RadTimePicker.
-![WinForms RadDateTimePicker The Elements hierarchy of RadTimePicker](images/editors-timepicker-structure002.png)
+![WinForms RadDateTimePicker Elements Hierarchy]images/editors-timepicker-structure002.png)
 
 
 # PopupContentElement Hierarchy 
 
 >caption Figure 3: The hierarchy of the popup element.
 
-![WinForms RadDateTimePicker The hierarchy of the popup element](images/editors-timepicker-structure003.png)
+![WinForms RadDateTimePicker PopupContentElement Hierarchy](images/editors-timepicker-structure003.png)
 
 # See Also
 

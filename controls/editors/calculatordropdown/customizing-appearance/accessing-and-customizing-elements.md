@@ -70,7 +70,7 @@ Me.RadCalculatorDropDown1.CalculatorElement.CalculatorContentElement.BackColor =
 {{endregion}} 
 
 >caption Figure 3: Calculator Customization
-![WinForms RadCalculatorDropDown Calculator Customization](images/editors-calculatordropdown-customization003.png)
+![WinForms RadCalculatorDropDown Customization](images/editors-calculatordropdown-customization003.png)
 
 ## Buttons Visual Customization 
 

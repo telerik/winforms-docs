@@ -20,13 +20,13 @@ You can access it through the *Smart tag >> Buttons Left/Buttons Right* option:
 
 >caption Figure 2: Smart tag options
 
-![WinForms RadButtonTextBox Smart tag options](images/buttontextbox-populating-with-data-design-time002.png)
+![WinForms RadButtonTextBox Smart Tag Options](images/buttontextbox-populating-with-data-design-time002.png)
 
 Another possibility to open the editor is via the **LeftButtonItems** and **RightButtonItems** collections in the *Properties* Visual Studio section:
 
->caption Figure 3:  Visual Studio Properties window
+>caption Figure 3:  Visual Studio Properties Window
 
-![WinForms RadButtonTextBox Visual Studio Properties window](images/buttontextbox-populating-with-data-design-time003.png)
+![WinForms RadButtonTextBox Visual Studio Properties Window](images/buttontextbox-populating-with-data-design-time003.png)
 
 You can add several item types: **RadButtonElement**, **RadToggleButtonElement**, **RadRepeatButtonElement**, **RadCheckBoxElement**, **RadImageButtonElement**, **RadRadioButtonElement**, **RadDropDownButtonElement**, **RadSplitButtonElement**, **CommandBarSeparator**, **RadToggleSwitchElement**. The *RadItem Collection Editor* allows you to manipulate the respective properties of the element that you have added at design time. Once, the desired button elements are added, you can subscribe to the **Click** event (or any other event) via the *Properties* section in Visual Studio. 
 

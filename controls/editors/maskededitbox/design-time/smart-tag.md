@@ -30,7 +30,7 @@ Here is how the control's Smart Tag looks like:
 
 	* __SetMask__: Opens a dialog for specifying the mask.
 
->caption Figure 1: Set Mask Dialog
+>caption Figure 2: Set Mask Dialog
 
 ![WinForms RadMaskedEditBox Set Mask Dialog](images/radmaskededitbox-design-time002.png)
 

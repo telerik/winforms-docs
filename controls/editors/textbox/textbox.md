@@ -20,7 +20,7 @@ __RadTextBox__ is a [themeable]({%slug winforms/editors/textbox/themes%}) altern
 
 >caption Figure: 1 RadTextBox
 
-![WinForms RadButtonTextBox RadTextBox](images/editors-textbox-overview001.png)
+![WinForms RadTextBox Overview](images/editors-textbox-overview001.png)
 
 > Download and check out the online demo at [demos.telerik.com](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe)
 

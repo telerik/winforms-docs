@@ -20,14 +20,14 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __RadMaskedEditBoxElement__ in *Controls Structure* on the left side and then select its __ForeColor__ property.
 
-	![WinForms RadMaskedEditBox radmaskededitbox-customizing-appearance-themes 001](images/radmaskededitbox-customizing-appearance-themes001.png)
+	![WinForms RadMaskedEditBox VisualStyleBuilder](images/radmaskededitbox-customizing-appearance-themes001.png)
 
 1. Modify the applied repository item.
 
-	![WinForms RadMaskedEditBox radmaskededitbox-customizing-appearance-themes 002](images/radmaskededitbox-customizing-appearance-themes002.png)
+	![WinForms RadMaskedEditBox Modify Repository Item](images/radmaskededitbox-customizing-appearance-themes002.png)
 
 1. You can see the result directly in the Visual Style Builder.
-    ![WinForms RadMaskedEditBox radmaskededitbox-customizing-appearance-themes 002](images/radmaskededitbox-customizing-appearance-themes003.png)
+    ![WinForms RadMaskedEditBox Visual Style Builder Customization](images/radmaskededitbox-customizing-appearance-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

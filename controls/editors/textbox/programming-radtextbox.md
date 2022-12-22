@@ -34,17 +34,17 @@ __RadTextBox__ has a **NullText** property that is not shared by the standard Wi
 
 >caption Figure 1: Using the null text.
 
-![WinForms RadButtonTextBox Using the null text](images/editors-textbox-programming-radtextbox001.png)
+![WinForms RadTextBox Using the Null Text](images/editors-textbox-programming-radtextbox001.png)
 
 By default, when the control receives  focus, this text is automatically removed. This behavior can be controlled by the **ShowNullText** property. If it is set to *true* the **NullText** will be shown even when the text box is focused until you enter some text in the editor.
 
 |ShowNullText=false|ShowNullText=true|
 |----|----|
-|![WinForms RadButtonTextBox editors-textbox-programming-radtextbox 003](images/editors-textbox-programming-radtextbox003.gif)|![WinForms RadButtonTextBox editors-textbox-programming-radtextbox 004](images/editors-textbox-programming-radtextbox004.gif)|
+|![WinForms RadTextBox ShowNullText False](images/editors-textbox-programming-radtextbox003.gif)|![WinForms RadTextBox ShowNullText True](images/editors-textbox-programming-radtextbox004.gif)|
 
 Since R1 2017 **RadTextBox** can show a clear button when there is some text in the editor. This is controlled by the **ShowClearButton** property.
 
-![WinForms RadButtonTextBox editors-textbox-programming-radtextbox 002](images/editors-textbox-programming-radtextbox002.gif)
+![WinForms RadTextBox ShowClearButton](images/editors-textbox-programming-radtextbox002.gif)
 
 ## Embedded Labels
 
@@ -68,7 +68,7 @@ Me.RadTextBox1.EmbeddedLabelText = "First Name"
 
 {{endregion}} 
 
-![WinForms RadButtonTextBox editors-textbox-programming-radtextbox 005](images/editors-textbox-programming-radtextbox005.gif)
+![WinForms RadTextBox Embedded Labels](images/editors-textbox-programming-radtextbox005.gif)
 
 **RadTextBoxElement** exposes the following useful properties related to embedded labels. You can access them through the **TextBoxElement** property:
 

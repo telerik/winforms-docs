@@ -14,7 +14,7 @@ This article shows how you can change the back color of the control at design ti
 
 1. Open the Element Hierachy editor from the smart tag.
 2. Change the __BackColor__ property of __RadTextBoxItem__ and the __FillPrimitive__ of RadDateTimePicker element:
-    ![WinForms RadDateTimePicker editors-datetimepicker-customizing-appearance 001](images/editors-datetimepicker-customizing-appearance001.png)
+    ![WinForms RadDateTimePicker Customizing Appearance](images/editors-datetimepicker-customizing-appearance001.png)
 
 
 # See Also

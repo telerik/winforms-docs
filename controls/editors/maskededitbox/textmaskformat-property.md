@@ -48,7 +48,7 @@ Me.RadMaskedEditBox1.PromptChar = "_"
 
 2\. Then, let's assume that the user types "123123123". As you can notice, the number of digits is smaller than the provided prompt places by one and this is for demonstration purposes. The result in the UI of RadMaskedEditBox will look like this:
 
-![WinForms RadMaskedEditBox editors-maskededitbox-textmaskformat 001](images/editors-maskededitbox-textmaskformat001.png)
+![WinForms RadMaskedEditBox Using Phone mask](images/editors-maskededitbox-textmaskformat001.png)
 
 So, here we have:
 
@@ -91,7 +91,7 @@ Me.RadMaskedEditBox1.Mask = "C2"
 
 2\. Now, assume that the user types "-1234.12". The UI of RadMaskedEditBox in this case look like this:
             
-![WinForms RadMaskedEditBox editors-maskededitbox-textmaskformat 002](images/editors-maskededitbox-textmaskformat002.png)
+![WinForms RadMaskedEditBox Using Currency mask](images/editors-maskededitbox-textmaskformat002.png)
 
 So, here we have:
 

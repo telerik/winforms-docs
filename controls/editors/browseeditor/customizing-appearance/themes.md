@@ -20,14 +20,14 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __BrowseEditorButton__ in *Controls Structure* on the left side. Then, select __ButtonFill__ in the *Elements* section.
 
-	![WinForms RadBrowseEditor browseeditor-customizing-appearance-themes 001](images/browseeditor-customizing-appearance-themes001.png)
+	![WinForms RadBrowseEditor VisualStyleBuilder](images/browseeditor-customizing-appearance-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![WinForms RadBrowseEditor browseeditor-customizing-appearance-themes 002](images/browseeditor-customizing-appearance-themes002.png)
+	![WinForms RadBrowseEditor Modify Fill Repository](images/browseeditor-customizing-appearance-themes002.png)
 
 1. You can see the result directly in the Visual Style Builder.
-    ![WinForms RadBrowseEditor browseeditor-customizing-appearance-themes 002](images/browseeditor-customizing-appearance-themes003.png)
+    ![WinForms RadBrowseEditor Visual Style Builder](images/browseeditor-customizing-appearance-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

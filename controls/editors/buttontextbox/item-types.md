@@ -14,16 +14,16 @@ You can add these item types to the **RadButtonTextBox** either at design time v
 
 |Type|Image
 |----|----|
-|**RadButtonElement**|![WinForms RadButtonTextBox buttontextbox-items-type 001](images/buttontextbox-items-type001.png)|
-|**RadToggleButtonElement**|![WinForms RadButtonTextBox buttontextbox-items-type 002](images/buttontextbox-items-type002.png)|
-|**RadRepeatButtonElement**|![WinForms RadButtonTextBox buttontextbox-items-type 003](images/buttontextbox-items-type003.png)|
-|**RadCheckBoxElement**|![WinForms RadButtonTextBox buttontextbox-items-type 004](images/buttontextbox-items-type004.png)|
-|**RadImageButtonElement**|![WinForms RadButtonTextBox buttontextbox-items-type 005](images/buttontextbox-items-type005.png)|
-|**RadRadioButtonElement**|![WinForms RadButtonTextBox buttontextbox-items-type 006](images/buttontextbox-items-type006.png)|
-|**RadDropDownButtonElement**|![WinForms RadButtonTextBox buttontextbox-items-type 007](images/buttontextbox-items-type007.png)|
-|**RadSplitButtonElement**|![WinForms RadButtonTextBox buttontextbox-items-type 008](images/buttontextbox-items-type008.png)|
-|**CommandBarSeparator**|![WinForms RadButtonTextBox buttontextbox-items-type 009](images/buttontextbox-items-type009.png)|
-|**RadToggleSwitchElement**|![WinForms RadButtonTextBox buttontextbox-items-type 010](images/buttontextbox-items-type010.png)|
+|**RadButtonElement**|![WinForms RadButtonTextBox RadButtonElement](images/buttontextbox-items-type001.png)|
+|**RadToggleButtonElement**|![WinForms RadButtonTextBox RadToggleButtonElement](images/buttontextbox-items-type002.png)|
+|**RadRepeatButtonElement**|![WinForms RadButtonTextBox RadRepeatButtonElement](images/buttontextbox-items-type003.png)|
+|**RadCheckBoxElement**|![WinForms RadButtonTextBox RadCheckBoxElement](images/buttontextbox-items-type004.png)|
+|**RadImageButtonElement**|![WinForms RadButtonTextBox RadImageButtonElement](images/buttontextbox-items-type005.png)|
+|**RadRadioButtonElement**|![WinForms RadButtonTextBox RadRadioButtonElement](images/buttontextbox-items-type006.png)|
+|**RadDropDownButtonElement**|![WinForms RadButtonTextBox RadDropDownButtonElement](images/buttontextbox-items-type007.png)|
+|**RadSplitButtonElement**|![WinForms RadButtonTextBox RadSplitButtonElement](images/buttontextbox-items-type008.png)|
+|**CommandBarSeparator**|![WinForms RadButtonTextBox CommandBarSeparator](images/buttontextbox-items-type009.png)|
+|**RadToggleSwitchElement**|![WinForms RadButtonTextBox RadToggleSwitchElement](images/buttontextbox-items-type010.png)|
 
 # See Also
 

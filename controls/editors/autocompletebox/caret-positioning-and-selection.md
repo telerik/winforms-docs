@@ -70,7 +70,7 @@ End Sub
 
 The both approaches produce same result:
 
-![WinForms RadAutoCompleteBox editors-autocompletebox-caret-positioning-and-selection 001](images/editors-autocompletebox-caret-positioning-and-selection001.png)
+![WinForms RadAutoCompleteBox Select Text](images/editors-autocompletebox-caret-positioning-and-selection001.png)
 
 
 # See Also

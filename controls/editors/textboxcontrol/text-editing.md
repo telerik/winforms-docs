@@ -42,7 +42,7 @@ End Sub
  
 >caption Figure 1: The string is inserted at the specified position.
 
-![WinForms RadTextBoxControl The string is inserted at the specified position](images/editors-textboxcontrol-text-editing001.png)
+![WinForms RadTextBoxControl Insert String](images/editors-textboxcontrol-text-editing001.png)
 
 Alternatively, you can insert text at the end of the RadTextBoxControl content by using the __AppendText__ method: 
 
@@ -70,7 +70,7 @@ End Sub
  
 >caption Figure 2: The string is added at the end of the existing text.
 
-![WinForms RadTextBoxControl The string is added at the end of the existing text](images/editors-textboxcontrol-text-editing002.png)
+![WinForms RadTextBoxControl Add String At The End](images/editors-textboxcontrol-text-editing002.png)
 
 You can delete the selected text or character at the caret position by using the __Delete__ method: 
 
@@ -100,7 +100,7 @@ End Sub
  
 >caption Figure 3: The first word is deleted.
 
-![WinForms RadTextBoxControl The first word is deleted](images/editors-textboxcontrol-text-editing003.png)
+![WinForms RadTextBoxControl Delete First Word](images/editors-textboxcontrol-text-editing003.png)
 
 Each editing operation raises the __TextChanging__ and __TextChanged__ events. Notice that you can prevent successful finishing of operation by subscribing to the __TextChanging__ event: 
 
