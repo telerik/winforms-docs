@@ -14,7 +14,7 @@ position: 1
 
 >caption Figure 1: RadOpenFileDialog in single selection mode
 
-![WinForms RadFile-Dialogs RadOpenFileDialog in single selection mode](images/file-dialogs-radopenfiledialog001.png) 
+![WinForms RadFileDialogs RadOpenFileDialog in Single Selection Mode](images/file-dialogs-radopenfiledialog001.png) 
 
 ## Showing the Dialog
 
@@ -110,7 +110,7 @@ openFileDialog.MultiSelect  = True
 
 >caption Figure 2: Multiple selection 
 
-![WinForms RadFile-Dialogs Multiple selection](images/file-dialogs-radopenfiledialog002.png) 
+![WinForms RadFileDialogs Multiple Selection](images/file-dialogs-radopenfiledialog002.png) 
 
 ## Working with the Selected Files
 
@@ -211,7 +211,7 @@ Dim dr As DialogResult = openFileDialog.ShowDialog()
 
 >caption Figure 3: RadOpenFileDialog with Checked ReadOnly CheckBox
 
-![WinForms RadFile-Dialogs RadOpenFileDialog with Checked ReadOnly CheckBox](images/file-dialogs-radopenfiledialog003.png) 
+![WinForms RadFileDialogs RadOpenFileDialog With Checked ReadOnly CheckBox](images/file-dialogs-radopenfiledialog003.png) 
 
 ## DereferenceLinks
 

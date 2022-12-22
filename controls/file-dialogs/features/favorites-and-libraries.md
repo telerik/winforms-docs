@@ -12,7 +12,7 @@ position: 3
 
 As of **R3 2019** File Dialogs allow defining [custom places]({%slug file-dialogs-custom-places%}) to be displayed on the left side of the **ExplorerControl**'s Main Pane. It is also possible to add multiple custom places like favorites and libraries nodes:
 
-![WinForms RadFile-Dialogs file-dialogs-favorites-and-libraries 001](images/file-dialogs-favorites-and-libraries001.png)
+![WinForms RadFileDialogs Favorites and Libraries Nodes](images/file-dialogs-favorites-and-libraries001.png)
 
 This will give you quick access to the custom-defined folders. Once a node in the *Favorites/Libraries* section is clicked, the respective folder is selected under *This PC*.
 

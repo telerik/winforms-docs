@@ -18,19 +18,19 @@ position: 1
 
 >note The examples in this section assume that you have an environment variable defined, named "test" with a value of "C:&#92;Test5".
 
-![WinForms RadFile-Dialogs file-dialogs-environment-variables 001](images/file-dialogs-environment-variables001.png)
+![WinForms RadFileDialogs Common Behavior](images/file-dialogs-environment-variables001.png)
 
 When typing an environment variable in the Path Navigation Pane of the file dialogs and typing enter, the Tree Navigation Pane will navigate to the respective directory. Figure 1 demonstrates what will happen when typing %test% in the Path Navigation Pane.
 
 >caption Figure 1: Typing an environment variable in the breadcrumb
 
-![WinForms RadFile-Dialogs Typing an environment variable in the breadcrumb](images/file-dialogs-environment-variables002.gif)
+![WinForms RadFileDialogs Environment Variable Breadcrumb](images/file-dialogs-environment-variables002.gif)
 
 When typing an enviroment variable followed by "\" in the Path Navigation Pane, the suggestions list containing all of the child folders of the current directory will be listed. When doing the same in the Operations Pane, all child folders and files will be listed. This is demonstrated in Figure 2.
 
 >caption Figure 2: Listing all child files/folders in an environment variable directory from breadcrumb and autocomplete
 
-![WinForms RadFile-Dialogs Listing all child files/folders in an environment variable directory from breadcrumb and autocomplete](images/file-dialogs-environment-variables003.gif)
+![WinForms RadFileDialogs Environment Variable Breadcrumb Autocomplete](images/file-dialogs-environment-variables003.gif)
 
 >note If you type %invalid% and hit enter, assuming that you have not defined an environment variable named "invalid", an **InvalidOperationException** will be thrown and the OpenFileDialogForm.ExplorerControl.PathNavigationBreadCrumb.**ExceptionRaised** event will be raised. If the environment variable returns a valid path to a file, the file will be opened using the corresponding Windows program.
 

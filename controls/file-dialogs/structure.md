@@ -12,7 +12,7 @@ position: 1
 
 This article describes the inner structure and organization of the elements which build **RadOpenFileDialog**, **RadSaveFileDialog** and **RadOpenFolderDialog**.
 
-![WinForms RadFile-Dialogs winforms/file-dialogs-structure 001](images/file-dialogs-structure001.png) 
+![WinForms RadFileDialogs Structure](images/file-dialogs-structure001.png) 
 
 * **Header**: Displays the content specified by the **OpenFileDialogHeader** string in the **FileDialogsLocalizationProvider**. 
 

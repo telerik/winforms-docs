@@ -12,9 +12,9 @@ position: 2
 
 **RadOpenFolderDialog** is a modal dialog box that allows you to specify one or multiple folder names to open.
 
->caption Figure 1: RadOpenFolderDialog in single selection mode
+>caption Figure 1: RadOpenFolderDialog in Single Selection Mode
 
-![WinForms RadFile-Dialogs RadOpenFolderDialog in single selection mode](images/file-dialogs-radopenfolderdialog001.png) 
+![WinForms RadFileDialogs RadOpenFolderDialog in Single Selection Mode](images/file-dialogs-radopenfolderdialog001.png) 
 
 ## Showing the Dialog
 
@@ -75,9 +75,9 @@ openFolderDialog.Multiselect = True
 
 {{endregion}}
 
->caption Figure 2: Multiple selection
+>caption Figure 2: Multiple Selection
 
-![WinForms RadFile-Dialogs Multiple selection](images/file-dialogs-radopenfolderdialog002.png) 
+![WinForms RadFileDialogs Multiple Selection](images/file-dialogs-radopenfolderdialog002.png) 
 
 ## Working with the Selected Folders
 

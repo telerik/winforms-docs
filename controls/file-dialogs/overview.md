@@ -17,7 +17,7 @@ Telerik UI for WinForms features the three most commonly used file and folder ma
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadFile-Dialogs winforms/file-dialogs-overview 001](images/file-dialogs-overview001.png) 
+![WinForms RadFileDialogs Overview](images/file-dialogs-overview001.png) 
 
 ## Key Features
 

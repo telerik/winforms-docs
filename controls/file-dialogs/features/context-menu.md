@@ -12,7 +12,7 @@ position: 9
 
 Similar to Windows FileExplorer, the Telerik **ExplorerControl** also shows the standard Windows context menu:
 
-![WinForms RadFile-Dialogs file-dialogs-context-menu 001](images/file-dialogs-context-menu001.png)
+![WinForms RadFileDialogs Context Menu](images/file-dialogs-context-menu001.png)
 
 >important You cannot modify files/folders context menu but you can choose to cancel its opening or modify the empty space context menu items.
 
