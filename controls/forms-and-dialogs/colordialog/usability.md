@@ -24,10 +24,10 @@ Under Hue, Saturation and Luminance are the edits for <b>A</b>lpha, <b>R</b>ed, 
  
 |||
 |----|----|
-|__Basic__|![WinForms RadColorDialog forms-and-dialogs-colordialog-usability 001](images/forms-and-dialogs-colordialog-usability001.png)|
-|__System__|![WinForms RadColorDialog forms-and-dialogs-colordialog-usability 002](images/forms-and-dialogs-colordialog-usability002.png)|
-|__Web__|![WinForms RadColorDialog forms-and-dialogs-colordialog-usability 003](images/forms-and-dialogs-colordialog-usability003.png)|
-|__Professional__|![WinForms RadColorDialog forms-and-dialogs-colordialog-usability 004](images/forms-and-dialogs-colordialog-usability004.png)|
+|__Basic__|![WinForms RadColorDialog Usability Basic](images/forms-and-dialogs-colordialog-usability001.png)|
+|__System__|![WinForms RadColorDialog Usability System](images/forms-and-dialogs-colordialog-usability002.png)|
+|__Web__|![WinForms RadColorDialog Usability Web](images/forms-and-dialogs-colordialog-usability003.png)|
+|__Professional__|![WinForms RadColorDialog Usability Professional](images/forms-and-dialogs-colordialog-usability004.png)|
 
 The right side of each tab includes sample color swatches that show the __Current__ color property when the dialog was invoked and a __New__ color that will be used after the dialog closes. A hexadecimal entry shows the color as a numeric value that can be edited or pasted from another source.  An eye dropper control lets you pick up another color from anywhere on the screen. To use the eye dropper control, click the button and move the mouse over the screen.  Colors under the mouse are reflected in the hexadecimal value and the __New__ color patch. Left-click the mouse to retain a color selected by the eyedropper control.
 

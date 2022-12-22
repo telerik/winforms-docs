@@ -45,7 +45,7 @@ AddHandler dragDropService.TabbedFormShown, AddressOf DragDropService_TabbedForm
 
 By default you can reorder the tabs via drag an drop.
 
->caption Figure 1: Reorder Tabs.
+>caption Figure 1: Reorder Tabs
 
 ![WinForms RadTabbedForm Reorder Tabs](images/radtabbedform-drag-drop001.gif)
 
@@ -54,7 +54,7 @@ By default you can reorder the tabs via drag an drop.
 
 By default you can popup any tab in a standalone window. 
 
->caption Figure 2: Detach Tabs.
+>caption Figure 2: Detach Tabs
 
 ![WinForms RadTabbedForm Detach Tabs](images/radtabbedform-drag-drop002.gif)
 
@@ -62,7 +62,7 @@ By default you can popup any tab in a standalone window.
 
 You can attach any stand alone tabbed form to the main form as well.
 
->caption Figure 3: Attach Tabs.
+>caption Figure 3: Attach Tabs
 
 ![WinForms RadTabbedForm Attach Tabs](images/radtabbedform-drag-drop003.gif)
 
@@ -88,5 +88,5 @@ Me.TabbedFormControl.ItemDragMode = TabItemDragMode.Preview
 
 {{endregion}} 
 
-![WinForms RadTabbedForm radtabbedform-drag-drop004](images/radtabbedform-drag-drop004.gif)
+![WinForms RadTabbedForm Drag Drop Mode](images/radtabbedform-drag-drop004.gif)
 

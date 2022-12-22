@@ -35,9 +35,9 @@ The __FormImageBorderPrimitive__ exposes the following properties which are used
 
 The following picture shows the positions at which the images appear:
 
->caption Figure 1: Image positions
+>caption Figure 1: Image Positions
 
-![WinForms RadForm Image positions](images/forms-and-dialogs-form-using-the-formimageborderprimitive001.png)
+![WinForms RadForm Image Positions](images/forms-and-dialogs-form-using-the-formimageborderprimitive001.png)
 
 The __LeftTexture__, __BottomTexture__ and __RightTexture__ are drawn as textures between the __TopLeftEnd__ and __BottomLeftCorner__, __BottomLeftCorner__ and __BottomRightCorner__, __BottomRightCorner__ and __TopRightEnd__ respectively. The __TopLeftEnd__ and the __TopRightEnd__ images are used to define a smooth transition between the image border and the __RadFormTitleBarElement__. The __BottomLeftCorner__ and __BottomRightCorner__ properties are used to set the images which are drawn in the corners of the form's border.
 
@@ -62,7 +62,7 @@ The minimum requirement for parts of the border to be drawn is setting one of th
 
 Here is how the __RadForm__ control looks when the __LeftTexture__ property is set with the following image:
 
-![WinForms RadForm forms-and-dialogs-form-using-the-formimageborderprimitive 002](images/forms-and-dialogs-form-using-the-formimageborderprimitive002.bmp)
+![WinForms RadForm Left Texture Visual](images/forms-and-dialogs-form-using-the-formimageborderprimitive002.bmp)
 
 >caption Figure 2: LeftTexture
 
@@ -70,7 +70,7 @@ Here is how the __RadForm__ control looks when the __LeftTexture__ property is s
 
 After setting the __BottomTexture__ property with the following image:
 
-![WinForms RadForm forms-and-dialogs-form-using-the-formimageborderprimitive 004](images/forms-and-dialogs-form-using-the-formimageborderprimitive004.bmp)
+![WinForms RadForm Bottom Texture Visual](images/forms-and-dialogs-form-using-the-formimageborderprimitive004.bmp)
 
 >caption Figure 3: BottomTexture
 
@@ -78,7 +78,7 @@ After setting the __BottomTexture__ property with the following image:
 
 The __RightTexture__ property with the following image:
 
-![WinForms RadForm forms-and-dialogs-form-using-the-formimageborderprimitive 006](images/forms-and-dialogs-form-using-the-formimageborderprimitive006.bmp)
+![WinForms RadForm Right Texture Visual](images/forms-and-dialogs-form-using-the-formimageborderprimitive006.bmp)
 
 >caption Figure 4: RightTexture
 
@@ -86,9 +86,9 @@ The __RightTexture__ property with the following image:
 
 The __BottomLeftCorner__ and __BottomRightCorner__ properties with the corresponding images:
 
-![WinForms RadForm forms-and-dialogs-form-using-the-formimageborderprimitive 008](images/forms-and-dialogs-form-using-the-formimageborderprimitive008.bmp)
+![WinForms RadForm Bottom Left Corner Visual](images/forms-and-dialogs-form-using-the-formimageborderprimitive008.bmp)
 
-![WinForms RadForm forms-and-dialogs-form-using-the-formimageborderprimitive 010](images/forms-and-dialogs-form-using-the-formimageborderprimitive010.bmp)
+![WinForms RadForm Bottom Right Corner Visual](images/forms-and-dialogs-form-using-the-formimageborderprimitive010.bmp)
 
 >caption Figure 5: BottomLeftCorner and BottomRightCorner
 

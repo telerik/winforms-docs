@@ -60,7 +60,7 @@ Changing the base class of a standard Windows Form to **RadForm** in VB.NET:
 
 Return to the __Design View__ of the form. Visual Studio will repaint the form and the __ControlDefault (Office2007Blue)__ theme will be applied to the form. __RadForm__ is ready for use:
 
-	![WinForms RadForm forms-and-dialogs-form-getting-started 001](images/forms-and-dialogs-form-getting-started001.png)
+	![WinForms RadForm Design View](images/forms-and-dialogs-form-getting-started001.png)
 
 ## Applying a Theme to your Form
 
@@ -68,11 +68,11 @@ To apply a theme to RadForm, you should first drag-and-drop the desired Theme Co
 
 1. From the Visual Studio Toolbox drag the __Office2007Black__ component and drop it on your __RadForm__ 
 	
-	![WinForms RadForm forms-and-dialogs-form-getting-started 002](images/forms-and-dialogs-form-getting-started002.png)
+	![WinForms RadForm VS Toolbox Office2007Black](images/forms-and-dialogs-form-getting-started002.png)
 
 1. In the Properties Window set the __ThemeName__ property of the Form to *'Office2007Black'*
 	
-	![WinForms RadForm forms-and-dialogs-form-getting-started 003](images/forms-and-dialogs-form-getting-started003.png)
+	![WinForms RadForm ThemeName](images/forms-and-dialogs-form-getting-started003.png)
 
 
 # See Also 

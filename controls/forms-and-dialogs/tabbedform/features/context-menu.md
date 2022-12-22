@@ -12,7 +12,7 @@ position: 0
 
 The default context menu allows you to perform various actions.The menu is opened by right-clicking any of the tabs.
 
-![WinForms RadTabbedForm radtabbedform-context-menu001](images/radtabbedform-context-menu001.png)
+![WinForms RadTabbedForm Context Menu](images/radtabbedform-context-menu001.png)
 
 # Accessing and Modifying the Context Menu
 

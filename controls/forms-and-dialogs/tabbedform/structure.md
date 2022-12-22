@@ -12,16 +12,16 @@ position: 1
 
 ## Structure
 
->caption Figure: 1 The elements of RadTabbedFormControl
+>caption Figure 1: The Elements of RadTabbedFormControl
 
-![WinForms RadTabbedForm The elements of RadTabbedFormControl](images/radtabbedform-structure001.png)
+![WinForms RadTabbedForm Elements](images/radtabbedform-structure001.png)
 
 
 ## Elements Hierarchy
 
->caption Figure: 2 The elements hierarchy
+>caption Figure 2: Elements Hierarchy
 
-![WinForms RadTabbedForm The elements hierarchy](images/radtabbedform-structure002.png)
+![WinForms RadTabbedForm Elements Hierarchy](images/radtabbedform-structure002.png)
 
 
 # See Also

@@ -17,9 +17,9 @@ The tabs can be pinned to the left or right. This will freeze them and they will
 
 ## Pin using Context Menu
 
->caption Figure 1: Pin Tabs from the Context Menu.
+>caption Figure 1: Pin Tabs From the Context Menu
 
-![WinForms RadTabbedForm Pin Tabs from the Context Menu](images/radtabbedform-pinned-tabs001.gif)
+![WinForms RadTabbedForm Pin Tabs Context Menu](images/radtabbedform-pinned-tabs001.gif)
 
 ## Pin using the Button
 
@@ -40,9 +40,9 @@ Me.TabbedFormControl.Tabs(0).Item.IsPinned = True
 
 {{endregion}} 
 
->caption Figure 2: Pin Tabs by using the pin button.
+>caption Figure 2: Pin Tabs by Using the Pin Button
 
-![WinForms RadTabbedForm Pin Tabs by using the pin button](images/radtabbedform-pinned-tabs001.gif)
+![WinForms RadTabbedForm Pin Tabs ](images/radtabbedform-pinned-tabs001.gif)
 
 
 ## Pin Programmatically

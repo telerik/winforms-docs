@@ -13,11 +13,11 @@ This article describes the inner structure and organization of the elements whic
         
 >caption Figure 1: RadStatusStrip's elements hierarchy
 
-![WinForms RadStatusStrip RadStatusStrip's elements hierarchy](images/forms-and-dialogs-form-statusstrip001.png)
+![WinForms RadStatusStrip Elements Hierarchy](images/forms-and-dialogs-form-statusstrip001.png)
 
 >caption Figure 2: RadStatusStrip's structure
 
-![WinForms RadStatusStrip RadStatusStrip's structure](images/forms-and-dialogs-form-statusstrip002.png)
+![WinForms RadStatusStrip Structure](images/forms-and-dialogs-form-statusstrip002.png)
 
 1 __RadStatusBarElement__  
 	&nbsp;&nbsp;1.1 __WrapLayoutPanel__: Represents the wrap layout panel that holds the items when the __LayoutStyle__ is *Overflow*.   

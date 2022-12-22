@@ -20,7 +20,7 @@ You can localize the labeling of each of the major portions of the control. Each
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadColorDialog colordialog-overview 001](images/colordialog-overview001.png)
+![WinForms RadColorDialog Overview](images/colordialog-overview001.png)
 
 # See Also
 

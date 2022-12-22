@@ -18,7 +18,7 @@ __RadMessageBox__ displays a modal dialog box that contains a system icon, a set
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadMessageBox forms-and-dialogs-messagebox-overview 001](images/forms-and-dialogs-messagebox-overview001.png)
+![WinForms RadMessageBox Overview](images/forms-and-dialogs-messagebox-overview001.png)
 
 >tip In the related [Getting Started](https://docs.telerik.com/devtools/winforms/controls/forms-and-dialogs/messagebox/getting-started) article you can find how to use the control with a sample scenario.
 

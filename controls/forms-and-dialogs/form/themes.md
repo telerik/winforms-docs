@@ -21,7 +21,7 @@ This section shows how to apply the __Office2007Black__ theme to a __RadForm__ i
         
 1\. Add a __RadForm__ item in your project or change the base class of an existing standard Windows Form to __Telerik.WinControls.UI.RadForm.__
 
-![WinForms RadForm forms-and-dialogs-form-themes 001](images/forms-and-dialogs-form-themes001.png)
+![WinForms RadForm Creating](images/forms-and-dialogs-form-themes001.png)
 
 #### Changing WinForms form to Telerik RadForm 
 
@@ -53,7 +53,7 @@ Partial Class Form1
 
 6\. In order to apply the Office2007Black theme to RadForm, choose the *'Office2007Black'* option from the ThemeName drop-down:
             
-![WinForms RadForm forms-and-dialogs-form-themes 003](images/forms-and-dialogs-form-themes003.png)
+![WinForms RadForm ThemeName DropDown](images/forms-and-dialogs-form-themes003.png)
 
 >tip You do not need to add multiple Theme Components on each form which you would like to customize. By adding one Theme Component on a form, the theme is loaded in the memory and it becomes available for all __RadControls__ and __RadForms__ in your project.
 

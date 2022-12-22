@@ -39,7 +39,7 @@ There are several alternatives for adding and editing the RadStatusStrip.__Items
 
 >caption Figure 1: Add items at design time
 
-![WinForms RadStatusStrip Add items at design time](images/forms-and-dialogs-statusstrip-working-with-radstatusstrip-items001.png)
+![WinForms RadStatusStrip Design Time](images/forms-and-dialogs-statusstrip-working-with-radstatusstrip-items001.png)
 
 * From the __Properties__ Editor select the __Items__ property ellipses to open the __RadItem Collection Editor__.
 
@@ -53,9 +53,9 @@ Add items at run time by creating __RadElement__ instances and adding them to th
 
 >caption Figure 3: Adding items at run time
 
-![WinForms RadStatusStrip Adding items at run time](images/forms-and-dialogs-statusstrip-working-with-radstatusstrip-items002.png)
+![WinForms RadStatusStrip Run Time](images/forms-and-dialogs-statusstrip-working-with-radstatusstrip-items002.png)
 
-#### Adding elements to RadStatusStrip 
+#### Adding Elements to RadStatusStrip 
 
 {{source=..\SamplesCS\Forms and Dialogs\StatusStrip1.cs region=addingElementsToRadStatusStrip}} 
 {{source=..\SamplesVB\Forms and Dialogs\StatusStrip1.vb region=addingElementsToRadStatusStrip}} 

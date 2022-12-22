@@ -18,14 +18,14 @@ Accessing and customizing elements can be performed either at design time, or at
 You can access and modify the style for different elements in __RadRibbonForm__ by using the Element hierarchy editor.
 >caption Figure 1: Element hierarchy editor
 
-![WinForms RadRibbonForm Element hierarchy editor](images/forms-and-dialogs-ribbonform-accessing-and-customizing-elements001.png)
+![WinForms RadRibbonForm Element Hierarchy Editor](images/forms-and-dialogs-ribbonform-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
->caption Figure 2: Customize elements
+>caption Figure 2: Customize Elements
 
-![WinForms RadRibbonForm Customize elements](images/forms-and-dialogs-ribbonform-accessing-and-customizing-elements002.png)
+![WinForms RadRibbonForm Customize Elements](images/forms-and-dialogs-ribbonform-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 
