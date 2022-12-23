@@ -18,7 +18,7 @@ The **RadSplashScreenManager** offers an overload of the **Show** method that ac
 
 1\. Create a new UserControl to your project, e.g. RestartRequiredUserControl.cs
 
-![WinForms RadSplashScreen splashscreen-custom-splash 002](images/splashscreen-custom-splash002.png) 
+![WinForms RadSplashScreen RestartRequiredUserControl](images/splashscreen-custom-splash002.png) 
 
 2\. Construct the UI according to the specific design you may have. For the above splash, it is necessary to add:
 

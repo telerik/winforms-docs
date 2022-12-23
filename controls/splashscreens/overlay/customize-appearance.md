@@ -15,7 +15,7 @@ This tutorial will walk you through how you can customize the __Overlay Screen__
 
 >caution Note that both events are created on a separate __System.Threading.Threads__ and it is required to use BeginInvoke/Invoke when accessing it in order to prevent cross-thread exceptions. Also, these events are static and you need to explicitly unsubscribe from them in order to prevent memory leaks. Each object that is subscribed to one of these events cannot be garbage collected.
 
-![WinForms RadOverlay overlay-customize-appearance 001](images/overlay-customize-appearance1.gif)
+![WinForms RadOverlay Getting Started](images/overlay-customize-appearance1.gif)
 
 ## Show Overlay
 

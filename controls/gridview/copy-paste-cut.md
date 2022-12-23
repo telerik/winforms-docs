@@ -215,3 +215,5 @@ The cutting functionality in __RadGridView__ is controlled via the __ClipboardCu
 
 * [Overview]({%slug winforms/gridview%})
 
+* [How to Deal with Invalid FORMATETC structure Error when Copying Data from RadGridView]({%slug invalid-formatetc-structure-when-copying-data-from-radgridview%})
+

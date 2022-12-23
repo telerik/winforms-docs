@@ -13,7 +13,8 @@ previous_url: gridview-hierarchical-grid-load-on-demand-hierarchy
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadGridView Event Based Hierarchies with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/event-based-hierarchies-with-radgridview-for-winforms)<br>In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![WinForms RadGridView gridview-hierarchical-grid-load-on-demand-hierarchy 001](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)|
+
+|[Event Based Hierarchies with RadGridView for WinForms](https://www.telerik.com/videos/winforms/event-based-hierarchies-with-radgridview-for-winforms)<br>In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![gridview-hierarchical-grid-load-on-demand-hierarchy 001](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)|
 
 ## 
 
