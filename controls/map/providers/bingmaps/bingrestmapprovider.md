@@ -20,12 +20,15 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 
 >note Only billable transactions count towards the free-use limits for Basic keys, and Enterprise keys are only charged for billable transactions. Non-billable transactions do not incur charges and do not count towards free-use limits. You can find additional information in the following link:  [Billable versus non-billable transactions](https://msdn.microsoft.com/en-us/library/ff859477.aspx).
 
+>caution **BingRestMapProvider** internally loads tile data from the [Bing Maps](https://www.bingmapsportal.com/) REST service which requires **TLS 1.2** coming automatically with .NET Framework 4.7. It is necessary to ensure the version explicitly by setting the System.Net.ServicePointManager.**SecurityProtocol** property to SecurityProtocolType.**Tls12**. More information is available here: [Transport Layer Security (TLS) best practices with the .NET Framework](https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls).
+
 #### Using BingRestMapProvider
 
 {{source=..\SamplesCS\Map\MapGettingStarted.cs region=GettingStarted}} 
 {{source=..\SamplesVB\Map\MapGettingStarted.vb region=GettingStarted}}
 
 ````C#
+
 string cacheFolder = @"..\..\cache";
 BingRestMapProvider bingProvider = new Telerik.WinControls.UI.BingRestMapProvider();
 bingProvider.UseSession = true;
@@ -36,6 +39,7 @@ this.radMap1.Providers.Add(bingProvider);
 
 ````
 ````VB.NET
+
 Dim cacheFolder As String = "..\..\cache"
 Dim bingProvider As BingRestMapProvider = New Telerik.WinControls.UI.BingRestMapProvider()
 bingProvider.UseSession = True
@@ -103,3 +107,4 @@ Me.radMap1.Providers.Add(bingProvider)
 * [Route]({%slug winforms/map/providers/route%})
 * [Elevation]({%slug winforms/map/providers/elevation%})
 * [How to Create Map Image Silently]({%slug create-map-image-silently%})
+* [How to Deal with Empty RadMap using BingRestMapProvider]({%slug bing-map-not-loading%})
