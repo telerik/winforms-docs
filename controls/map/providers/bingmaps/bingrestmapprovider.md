@@ -20,7 +20,7 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 
 >note Only billable transactions count towards the free-use limits for Basic keys, and Enterprise keys are only charged for billable transactions. Non-billable transactions do not incur charges and do not count towards free-use limits. You can find additional information in the following link:  [Billable versus non-billable transactions](https://msdn.microsoft.com/en-us/library/ff859477.aspx).
 
->caution **BingRestMapProvider** internally loads tile data from the [Bing Maps](https://www.bingmapsportal.com/) REST service which requires **TLS 1.2** coming automatically with .NET Framework 4.7. It is necessary to ensure the version explicitly by setting the System.Net.ServicePointManager.**SecurityProtocol** property to SecurityProtocolType.**Tls12**. More information is available here: [Transport Layer Security (TLS) best practices with the .NET Framework](https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls).
+>caution **BingRestMapProvider** internally loads tile data from the [Bing Maps](https://www.bingmapsportal.com/) REST service which requires **TLS 1.2** coming automatically with .NET Framework 4.7. For older .NET Frameworks, or because of some other Windows settings, it may be necessary to explicitly choose TLS 1.2 for your application by setting the System.Net.ServicePointManager.**SecurityProtocol** property to SecurityProtocolType.**Tls12**. More information is available here: [Transport Layer Security (TLS) best practices with the .NET Framework](https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls).
 
 #### Using BingRestMapProvider
 
