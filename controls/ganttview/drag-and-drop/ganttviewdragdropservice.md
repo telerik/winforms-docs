@@ -12,9 +12,9 @@ position: 0
 
 **RadGanttView** supports drag and drop functionality for its tasks. It can be achieved by the **GanttViewDragDropService** which is accessed by the GanttViewElement.**DragDropService** property.
 
->caption Figure 1: Tasks drag and drop
+>caption Figure 1: Tasks Drag and Drop
 
-![WinForms RadGanttView Tasks drag and drop](images/ganttview-drag-and-drop-ganttviewdragdropservice001.gif)
+![WinForms RadGanttView Tasks Drag and Drop](images/ganttview-drag-and-drop-ganttviewdragdropservice001.gif)
 
 The GanttViewDragDropService.**Location** property gives you the location from where the drag operation is started. The **Owner** property returns the **RadGanttViewElement**. If you need to disable dragging tasks, you can set the RadGanttView.**ReadOnly** property to *true*.
 

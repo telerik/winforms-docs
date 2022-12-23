@@ -9,11 +9,11 @@ position: 1
 previous_url: ganttview-designtime-adding-columns
 ---
 
-# Adding columns
+# Adding Columns
 
 The __GanttViewTextViewColumn__ CollectionEditor allows you to add columns to the gantt view at design time.
 
-![WinForms RadGanttView ganttview-designtime-adding-columns 001](images/ganttview-designtime-adding-columns001.png)
+![WinForms RadGanttView Columns Design Time](images/ganttview-designtime-adding-columns001.png)
 
 The more important properties of the column you need to set up are:
 

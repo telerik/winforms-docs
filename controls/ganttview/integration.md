@@ -53,7 +53,7 @@ End Sub
 
 {{endregion}} 
 
-![WinForms RadGanttView ganttview-integration 001](images/ganttview-integration001.png)
+![WinForms RadGanttView Integration](images/ganttview-integration001.png)
 
 # See Also
 * [RadScheduler]({%slug winforms/scheduler%})

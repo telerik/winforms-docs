@@ -12,11 +12,11 @@ position: 6
  
 **RadGanttView** provides you with selection functionality, which allows the user to select a link or a task displayed in the control. 
 
->caption Figure 1. Selected Task
+>caption Figure 1: Selected Task
 
 ![WinForms RadGanttView Selected Task](images/ganttview-selection001.png)
 
->caption Figure 2. Selected Link
+>caption Figure 2: Selected Link
 
 ![WinForms RadGanttView Selected Link](images/ganttview-selection002.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Keyboard navigation
-page_title: Keyboard navigation - WinForms GanttView Control
+title: Keyboard Navigation
+page_title: Keyboard Navigation - WinForms GanttView Control
 description: Learn the keyboard commands to navigate in the WinForms GanttView.
 slug: winforms/ganttview-/usability/keyboard-navigation
 tags: keyboard,navigation
@@ -9,7 +9,7 @@ position: 0
 previous_url: ganttview-usability-keyboard-navigation
 ---
 
-# Keyboard navigation
+# Keyboard Navigation
 
 The user can use the keyboard commands in the below table to navigate in the gantt view.
 
@@ -29,4 +29,4 @@ The user can use the keyboard commands in the below table to navigate in the gan
 
 # See Also
 
-* [Mouse navigation]({%slug winforms/ganttview-/usability/mouse-navigation%})
+* [Mouse Navigation]({%slug winforms/ganttview-/usability/mouse-navigation%})

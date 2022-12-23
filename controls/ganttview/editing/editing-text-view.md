@@ -9,9 +9,9 @@ position: 0
 previous_url: ganttview-editing-editing-textview
 ---
 
-# Editing text view
+# Editing Text View
  
-##  Methods and properties
+##  Methods and Properties
 
 The editing process in the text view of __RadGanttView__ goes through a similar lifecycle as other controls using our editors system.
 
@@ -36,7 +36,7 @@ There are three main methods that can be used to control the editing and two pro
 You can configure __RadGanttView__ so that items enter edit mode directly when the item is selected or when users press __F2, Space or Enter__ or click for a second time on the item without triggering a double click event. The __BeginEditMode__ property of __RadGanttViewElement__ controls this behavior.
         
 
-## Built-in editors
+## Built-In Editors
 
 There are several build-in editors which are used for editing different data types. These editors can be customized or can be replaced by custom editors all together. Here is a list of the build-in editors and the data types they are used for:
         

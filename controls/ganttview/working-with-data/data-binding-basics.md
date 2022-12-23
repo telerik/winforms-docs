@@ -9,7 +9,7 @@ position: 0
 previous_url: ganttview-working-with-data-data-binding-basics
 ---
 
-# Data binding basics
+# Data Binding Basics
 
 __RadGanttView__ binds to any object that implements `IList`, `IListSource` or `IBindingList`. This includes generic lists and `BindingSource` for example. To make data binding work, minimally you must assign the __DataSource__ property and the member properties explained below.
         
@@ -164,7 +164,7 @@ Me.RadGanttView1.Columns.Add("End")
 
 >important If you don't see the tasks, it is most probably because the graphical view is not scrolled to the tasks' date. Feel free to set the **TimelineStart** and **TimelineEnd** properties of the GanttViewElement.**GraphicalViewElement**.
 
-![WinForms RadGanttView ganttview-working-with-data-data-binding-basics 001](images/ganttview-working-with-data-data-binding-basics001.png)
+![WinForms RadGanttView DataBinding Basics](images/ganttview-working-with-data-data-binding-basics001.png)
 
 # See Also  
 

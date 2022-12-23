@@ -1,6 +1,6 @@
 ---
-title: Custom timeline
-page_title: Custom timeline - WinForms GanttView Control
+title: Custom Timeline
+page_title: Custom Timeline - WinForms GanttView Control
 description: Learn how you to build your own timeline views.
 slug: winforms/ganttview-/timeline/custom-timeline
 tags: custom,timeline
@@ -9,12 +9,12 @@ position: 1
 previous_url: ganttview-timeline-custom-timeline
 ---
 
-# Custom timeline
+# Custom Timeline
  
 
 __RadGanttView__ offers a number of built-in *TimeRange* settings which allow users to display the timeline in different views. Although these settings would cover most cases the users might require a view that is not available out-of-the-box. In this case developers can build their own timeline views. This article demonstrates the process for creating a custom timeline view which displays items in decades (10-year time spans). The following image demonstrates the final goal:
 
-![WinForms RadGanttView ganttview-timeline-custom-timeline 001](images/ganttview-timeline-custom-timeline001.png)
+![WinForms RadGanttView Custom Timeline](images/ganttview-timeline-custom-timeline001.png)
 
 1\. First you need to set the __TimelineRange__ property of the gantt view graphical element to *Custom*. If you want you can override and modify the default views as well but for this example we will use the custom value. 
 

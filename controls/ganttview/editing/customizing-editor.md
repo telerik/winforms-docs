@@ -9,7 +9,7 @@ position: 2
 previous_url: ganttview-editing-customizing-editor
 ---
 
-# Customizing editor
+# Customizing Editor
 
 The appearance and behavior of property grid editors can be changed programmatically. This can be done in the __EditorInitialized__ event. __EditorInitialized__ is fired when the editor is created and initialized with a predefined set of properties.
         

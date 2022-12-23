@@ -9,7 +9,7 @@ position: 1
 previous_url: ganttview-editing-editing-graphicalview
 ---
 
-# Editing graphical view
+# Editing Graphical View
 
 The graphical view of __RadGanttView__ allows the users to modify several aspects of the tasks they are viewing.
 
@@ -17,15 +17,15 @@ The graphical view of __RadGanttView__ allows the users to modify several aspect
 
 Users can grab the edge of a summary task or a regular task and drag the edge with the mouse to effectively modify the start or end time of the tasks.
         
-![WinForms RadGanttView ganttview-editing-editing-graphicalview 003](images/ganttview-editing-editing-graphicalview003.gif)
+![WinForms RadGanttView Resizing](images/ganttview-editing-editing-graphicalview003.gif)
 
-## Drag dropping
+## Drag Drop
 
 Users can drag the whole task by clicking anywhere on the task surface, without the edges, and drag the whole task back or forth in time. This way they modify both the start and the end time of the task.
         
-![WinForms RadGanttView ganttview-editing-editing-graphicalview 002](images/ganttview-editing-editing-graphicalview002.gif)
+![WinForms RadGanttView Drag Drop](images/ganttview-editing-editing-graphicalview002.gif)
 
-## Creating links
+## Creating Links
 
 Users can create links (dependences) by doing the following:
 
@@ -37,7 +37,7 @@ Users can create links (dependences) by doing the following:
 
 1. Finally the user should release the mouse over a link handle of another item. The link type is determined by the link handle where the operation started and the link handle where it ended.
             
-![WinForms RadGanttView ganttview-editing-editing-graphicalview 001](images/ganttview-editing-editing-graphicalview001.gif)
+![WinForms RadGanttView Creating Links](images/ganttview-editing-editing-graphicalview001.gif)
 
 # See Also
 

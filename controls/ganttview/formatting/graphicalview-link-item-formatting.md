@@ -9,7 +9,7 @@ position: 4
 previous_url: ganttview-formatting-graphical-view-link-item-formatting
 ---
 
-# GraphicalView Link Item formatting
+# GraphicalView Link Item Formatting
 
 __RadGanttView__ allows formatting of individual links through the __GraphicalViewLinkItemFormatting__ event. The following example demonstrates how to format links based on their type.
 
@@ -83,7 +83,7 @@ End Sub
 
 {{endregion}} 
 
-![WinForms RadGanttView ganttview-formatting-graphical-view-item-formatting 001](images/ganttview-formatting-graphical-view-item-formatting001.png)
+![WinForms RadGanttView GraphicalView Link Item Formatting](images/ganttview-formatting-graphical-view-item-formatting001.png)
 
 # See Also
 

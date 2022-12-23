@@ -9,7 +9,7 @@ position: 2
 previous_url: ganttview-context-menu-modifying-context-menu
 ---
 
-# Modifying context menu
+# Modifying Context Menu
 
 When a context menu in __RadGanttView__ is about to be opened the __ContextMenuOpening__ event is fired. This event allows you to customize the items shown in the context menu.
 
@@ -49,7 +49,7 @@ End Sub
 
 {{endregion}} 
 
-![WinForms RadGanttView ganttview-context-menu-modifying-context-menu 001](images/ganttview-context-menu-modifying-context-menu001.png)
+![WinForms RadGanttView Modifying Context Menu](images/ganttview-context-menu-modifying-context-menu001.png)
 
 # See Also
 

@@ -196,7 +196,7 @@ Me.RadGanttView1.GanttViewElement.Columns.Add(endColumn)
 
 {{endregion}} 
 
-![WinForms RadGanttView ganttview-working-with-data-populating-with-data-programmatically 002](images/ganttview-working-with-data-populating-with-data-programmatically002.png)
+![WinForms RadGanttView Populating Data Programmatically](images/ganttview-working-with-data-populating-with-data-programmatically002.png)
 
 # See Also  
 
