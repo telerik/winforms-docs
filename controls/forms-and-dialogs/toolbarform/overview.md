@@ -2,14 +2,15 @@
 title: Overview
 page_title: Overview - RadToolbarForm
 description: Overview
-slug: toolbarform-overview
+slug: radtoolbarform-overview
 tags: overview, toolbar, form
 published: True
 position: 0 
 ---
 
 # RadToolbarForm
- 
+
+**RadToolbarForm** allows you to build modern UI. Having items in the non-client area of the window is crucial to saving valuable space. With RadToolbarForm, you will be able to create modern applications that can mimic the Visual Studio title bar experience, thanks to the ability to add buttons, drop-down menus, text boxes and more.   
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
@@ -17,15 +18,18 @@ position: 0
 
 ![WinForms RadToolbarForm Overview](images/toolbarform-overview001.png)
 
+![WinForms RadToolbarForm Overview Stretched](images/toolbarform-overview002.png)
+
 ## Key Features
 
-* Feature 1
-* Feature 2
+* Straight-forward API for adding various UI elements - labels, buttons, text boxes, etc.
+* Adjustable height of the titlebar.
+* Horizontally separated title bar into three areas: Left, Middle, Right. 
 
 
 # See Also
 
-* [Structure]({%slug toolbarform-structure%})
-* [Getting Started]({%slug  toolbarform-getting-started%})
-* [Design Time]({%slug  toolbarform-design-time%})
+* [Structure]({%slug radtoolbarform-structure%})
+* [Getting Started]({%slug radtoolbarform-getting-started%})
+* [Design Time]({%slug radtoolbarform-design-time%})
 
