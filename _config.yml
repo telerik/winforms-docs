@@ -649,6 +649,9 @@ navigation:
     controls/forms-and-dialogs/tabbedform/customizing-appearance:
         title: Customizing Apearance
         position: 7
+    controls/forms-and-dialogs/toolbarform:
+        title: ToolbarForm
+        position: 10
     controls/ganttview:
         title: GanttView
         position: 240
@@ -1771,6 +1774,7 @@ intro_columns:
       "ShapedForm": "winforms/forms-and-dialogs/shapedform"
       "StatusStrip": "winforms/forms-and-dialogs/statusstrip"
       "TabbedForm": "radtabbedform-overview"
+      "ToolbarForm": "toolbarform-overview"
       "TitleBar": "winforms/forms-and-dialogs/statusstrip"
       "ToastNotification": "toast-notification-overview"
       "SplashScreen": "splashscreen-overview"
