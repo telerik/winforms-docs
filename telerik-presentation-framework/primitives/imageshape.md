@@ -45,16 +45,16 @@ __Advanced Settings__
 
 RadImageShape exposes some advanced settings that allow any complex rendering logic to be easily described. Such settings are:
 
-* *PaintMode* – available are 14 different modes, where each one defines custom paint logic of the 9 segments.
+* **PaintMode** – available are 14 different modes, where each one defines custom paint logic of the 9 segments.
 
 ![tpf-primitives-imageshape 003](images/tpf-primitives-imageshape003.png)
 
 *PaintMode.StretchYTileX*
 
-* *InterpolationMode* – defines the interpolation passed to the underlying GDI+ Graphics used to paint the each image part.
+* **InterpolationMode** – defines the interpolation passed to the underlying GDI+ Graphics used to paint the each image part.
 
 
-* *RotateFlip* – additional option, which allows the source image to be rotated/flipped before segmentation.
+* **RotateFlip** – additional option, which allows the source image to be rotated/flipped before segmentation.
 
 * **BackgroundShapePaintMode** - determines when the BackgroundShape will be painted. The following options are available:
 	* **PrePaint**: The BackgroundShape will be painted in the PrePaintElement method(before fill, border, text, image etc.). Suitable when you use the BackgroundShape instead of Fill and/or Border.
