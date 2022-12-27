@@ -56,6 +56,12 @@ RadImageShape exposes some advanced settings that allow any complex rendering lo
 
 * *RotateFlip* – additional option, which allows the source image to be rotated/flipped before segmentation.
 
+* **BackgroundShapePaintMode** - determines when the BackgroundShape will be painted. The following options are available:
+	* **PrePaint**: The BackgroundShape will be painted in the PrePaintElement method(before fill, border, text, image etc.). Suitable when you use the BackgroundShape instead of Fill and/or Border.
+	
+	* **PostPaint**: The BackgroundShape will be painted on top of all other elements(fill, border, text, image). Here it is not suitable to use a big BackgroundShape, because it will cover everything else painted before. But it is suitable to add some minor indications, for example, the little selection indicator in Windows 10:
+
+	![WinForms TPF PostPaint](images/tpf-primitives-imageshape005.png)
 
 __Editing RadImageShape in Visual Style Builder__
 
