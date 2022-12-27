@@ -14,7 +14,7 @@ As of **R1 2023**, the RadSyntaxEditor control supports word wrapping which enab
 
 The functionality can be enabled by setting the `IsWordWrapEnabled` property to `True`.
 
-#### Example 1: Setting font properties
+#### Example 1: Setting IsWordWrapEnabled property
 
 {{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=WordWrap}}
 {{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.vb region=WordWrap}}
