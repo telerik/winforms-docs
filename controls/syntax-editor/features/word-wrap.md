@@ -31,7 +31,9 @@ Me.RadSyntaxEditor1.IsWordWrapEnabled = True
 
 ````
 
-#### RadSyntaxEditor with Word Wrapping
+{{endregion}} 
+
+>caption Figure 1: RadSyntaxEditor with Word Wrapping
 
 ![WinForms RadSyntaxEditor Word Wrap](images/winforms-radsyntaxeditor-word-wrap.png)
 

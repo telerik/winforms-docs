@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-## Getting Started
+# Getting Started
 
 This topic will walk you through the creating process of RadToolbarForm.
 
@@ -16,7 +16,7 @@ This topic will walk you through the creating process of RadToolbarForm.
 
 2\. Add a new Toolbar form from Visual Studio. Go to __Project -> Add Windows Form__ and then select ToolbarForm.
 
-# See Also
+## See Also
 
 * [Structure]({%slug radtoolbarform-structure%})
 * [Design Time]({%slug  radtoolbarform-design-time%})

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-## Design Time 
+# Design Time 
 
 At design time you can directly type on the left, middle or right part to add **RadToolbarFormMenuItem**.
 

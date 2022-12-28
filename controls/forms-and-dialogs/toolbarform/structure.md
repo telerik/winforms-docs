@@ -8,9 +8,9 @@ published: True
 position: 1
 ---
 
-RadToolbarForm is a wrapper of the RadToolbarFormControl. The toolbar control is docked to Fill and it is the sole child control of the RadToolbarForm. This article explains the inner structure of the RadToolbarFormControl.
+# Structure
 
-## Structure
+RadToolbarForm is a wrapper of the RadToolbarFormControl. The toolbar control is docked to Fill and it is the sole child control of the RadToolbarForm. This article explains the inner structure of the RadToolbarFormControl.
 
 >caption Figure 1: Elements of RadTabbedFormControl
 
