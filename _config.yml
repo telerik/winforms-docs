@@ -652,6 +652,9 @@ navigation:
     controls/forms-and-dialogs/toolbarform:
         title: ToolbarForm
         position: 10
+    controls/forms-and-dialogs/toolbarform/features:
+        title: Features
+        position: 7
     controls/ganttview:
         title: GanttView
         position: 240
