@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-## Customizing Appearance
+# Customizing Appearance
 
 ### Design Time
 
@@ -42,7 +42,7 @@ Me.ToolbarFormControl.ToolbarFormControlElement.CaptionTextElement.ForeColor = C
 
 ![WinForms RadToolbarForm Change CaptionFill](images/toolbarform-customizing-appearance002.png)
 
-# See Also
+## See Also
 
 * [Structure]({%slug radtoolbarform-structure%})
 * [Design Time]({%slug radtoolbarform-design-time%})

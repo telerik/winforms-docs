@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-## Adding Items Programmatically
+# Adding Items Programmatically
 
 **RadToolbarForm** allows adding items either at [design time]({%slug radtoolbarform-design-time%}) or programmatically. This article shows how to add elements to the *near*, *center* and *far* parts of the **RadToolbarFormControl**:
 
@@ -151,7 +151,7 @@ Me.ToolbarFormControl.FarItems.Add(New RadButtonElement() With {
 
 {{endregion}} 
 
-# See Also
+## See Also
 
 * [Structure]({%slug radtoolbarform-structure%})
 * [Design Time]({%slug radtoolbarform-design-time%})
