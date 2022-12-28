@@ -5,7 +5,7 @@ description: Learn how to add items via code to the WinForms ToolbarForm.
 slug: radtoolbarform-adding-items-programmatically
 tags: radtoolbarform, add, items
 published: True
-position: 2
+position: 4
 ---
 
 ## Adding Items Programmatically
