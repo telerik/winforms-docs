@@ -1,12 +1,12 @@
 ---
 title: Properties, Methods and Events
-page_title: Properties, Methods and Events - Taskbar Manager
-description: RadTaskbarManager is built on the Windows' notification system, making it easier for our customers to create and manage notifications.  
-slug: taskbar-manager-properties-methods-events
-tags: taskbar,manager, properties
+page_title: Properties, Methods and Events - Taskbar Button
+description: Learn the most important of the public API that the WinForms RadTaskbarButton offers.
+slug: taskbar-button-properties-methods-events
+tags: taskbar,button, properties,manager
 published: True
 position: 5 
-CTAControlName: TaskbarManager
+CTAControlName: TaskbarButton
 ---
 
 # RadTaskbarButton
@@ -29,7 +29,26 @@ CTAControlName: TaskbarManager
 |__Event__|__Description__|
 |__ThumbnailButtonClick__|Occurs when a __RadThumbnailButton__ has been clicked.|
 
-ThumbnailButtonClick
+# RadThumbnailButton
+
+## Properties
+
+|__Property__|__Description__|
+|__Tag__|Tag object that can be used to store user data, taht correcposnds to this button.|
+|__ImageIndex__|Gets or sets the image list index value of the image displayed on the button control.|
+|__ImageKey__|Gets or sets the key accessor for the image in the ImageList.|
+|__Icon__|Gets or sets the __Icon__ displayed in this button.|
+|__ToolTip__|Gets or sets the tool tip text.|
+|__Enabled__|Gets or sets a value indicating, whether the buttons is enabled.|
+|__DismissOnClick__|When the button is clicked, the taskbar button's flyout closes immediately.|
+|__NoBackground__|Do not draw a button border, use only the image.|
+|__Hidden__|The button is not shown to the user.|
+|__NonInteractive__|The button is enabled but not interactive: no pressed button state is drawn. This value is intended for instances where the button is used in a notification.|
+
+## Methods
+
+|__Event__|__Description__|
+|__Update__||
 
 # RadTaskbarManager
 
@@ -61,7 +80,7 @@ ThumbnailButtonClick
 
 # See Also
 
-* [Getting Started]({%slug taskbar-manager-getting-started%})
-* [Design Time]({%slug taskbar-manager-design-time%})
+* [Getting Started]({%slug taskbar-button-getting-started%})
+* [Design Time]({%slug taskbar-button-design-time%})
  
         

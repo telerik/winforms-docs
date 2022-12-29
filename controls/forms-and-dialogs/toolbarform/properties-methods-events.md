@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadToolbarForm
-description:  RadToolbarForm allows to display tab items directly in the title bar  
+description: Learn the most important of the public API that the WinForms RadToolbarForm offers.
 slug: radtoolbarform-properties
 tags: radtoolbarform
 published: True
