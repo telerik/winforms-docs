@@ -1786,7 +1786,7 @@ intro_columns:
       "ToolbarForm": "radtoolbarform-overview"
       "TitleBar": "winforms/forms-and-dialogs/statusstrip"
       "ToastNotification": "toast-notification-overview"
-      "TaskbarManager": "taskbar-button-overview"
+      "TaskbarButton": "taskbar-button-overview"
       "SplashScreen": "splashscreen-overview"
       "Overlay": "overlay-overview"
       "Flyout": "flyout-overview"

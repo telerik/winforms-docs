@@ -10,17 +10,13 @@ position: 1
 
 # Structure
 
-The Taskbar is the access point for programs displayed on the desktop. With Windows 7 the taskbar features, users can give commands, access resources, and view program status directly from the taskbar. 
- 
+This article describes the inner structure and organization of the elements which build RadTaskbarButton: 
 
 ![WinForms Taskbar ButtonStructure Overview](images/taskbar-button-structure001.png) 
-
- 
- 
 
 # See Also
 
 * [Getting Started]({%slug taskbar-button-getting-started%})
-* [Design Time]({%slug ttaskbar-button-design-time%}) 
+* [Design Time]({%slug taskbar-button-design-time%}) 
  
         
