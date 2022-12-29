@@ -23,7 +23,7 @@ this.radToolbarFormControl1.CaptionHeight = 60;
 ````
 ````VB.NET
 
-Me.RadToolbarFormControl1.CaptionHeight = 60
+Me.ToolbarFormControl.CaptionHeight = 60
 
 ````
 
@@ -49,9 +49,9 @@ this.radToolbarFormControl1.FarItemsVerticalAlignment = RadVerticalAlignment.Str
 ````
 ````VB.NET
 
-Me.RadToolbarFormControl1.NearItemsVerticalAlignment = RadVerticalAlignment.Bottom
-Me.RadToolbarFormControl1.CenterItemsVerticalAlignment = RadVerticalAlignment.Center
-Me.RadToolbarFormControl1.FarItemsVerticalAlignment = RadVerticalAlignment.Stretch
+Me.ToolbarFormControl.NearItemsVerticalAlignment = RadVerticalAlignment.Bottom
+Me.ToolbarFormControl.CenterItemsVerticalAlignment = RadVerticalAlignment.Center
+Me.ToolbarFormControl.FarItemsVerticalAlignment = RadVerticalAlignment.Stretch
 
 ````
 
@@ -66,7 +66,7 @@ Me.RadToolbarFormControl1.FarItemsVerticalAlignment = RadVerticalAlignment.Stret
 The text position in the title bar of the control can be change throught the __TextPosition__ property of the __RadToolbarFormControl__. This property is enumeration and expose four values: __Near__ (default), __CenterBefore__, __CenterAfter__, __Far__.
 
 {{source=..\SamplesCS\Forms and Dialogs\RadToolbarForm1.cs region=TextPosition}} 
-{{source=..\SamplesVB\Forms and Dialogs\RadToolbarForm1.vb region=VerticalAlignment}}
+{{source=..\SamplesVB\Forms and Dialogs\RadToolbarForm1.vb region=TextPosition}}
 
 ````C#
 
@@ -76,7 +76,7 @@ this.radToolbarFormControl1.TextPosition = ToolbarTextPosition.CenterAfter;
 ````
 ````VB.NET
 
-Me.RadToolbarFormControl1.TextPosition = ToolbarTextPosition.CenterAfter
+Me.ToolbarFormControl.TextPosition = ToolbarTextPosition.CenterAfter
 
 ````
 
@@ -87,6 +87,35 @@ __Figure 3__ shows how the text will be visualize in all four options of the __T
 >caption Figure 3: Text Position
 
 ![WinForms RadToolbarForm Text Position](images/winforms-radtoolbarform-text-position.png)
+
+## Margins
+
+The RadToolbarFormControl expose three properties to control the margins of its item sections: __NearItemsMargin__, __CenterItemsMargin__, __FarItemsMargin__. Their default value is: __0,8,0,8__. You can use these properties to adjust the items per your needs.
+
+{{source=..\SamplesCS\Forms and Dialogs\RadToolbarForm1.cs region=Margins}} 
+{{source=..\SamplesVB\Forms and Dialogs\RadToolbarForm1.vb region=Margins}}
+
+````C#
+
+this.radToolbarFormControl1.NearItemsMargin = new Padding(0,8,0,0);
+this.radToolbarFormControl1.CenterItemsMargin = new Padding(100,8,0,0);
+this.radToolbarFormControl1.FarItemsMargin = new Padding(0,0,0,8);
+
+````
+````VB.NET
+
+Me.ToolbarFormControl.NearItemsMargin = New Padding(0,8,0,0)
+Me.ToolbarFormControl.CenterItemsMargin = New Padding(100,8,0,0)
+Me.ToolbarFormControl.FarItemsMargin = New Padding(0,0,0,8)
+
+
+````
+
+{{endregion}}
+
+>caption Figure 4: Margins
+
+![WinForms RadToolbarForm Margins](images/winforms-radtoolbarform-margins.png)
 
 ## See Also
 

@@ -14,7 +14,6 @@ At design time you can directly type on the left, middle or right part to add **
 
 >caption Figure 1: RadToolbarForm add items to the left,middle or right.
 
-
 ![WinForms RadToolbarForm Design Time](images/toolbarform-design-time001.png)
 
 ## RadToolbarForm's Smart Tag
