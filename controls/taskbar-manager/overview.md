@@ -3,7 +3,7 @@ title: Overview
 page_title: Overview - Taskbar Manager
 description: With the WinForms Taskbar Manager users can give commands, access resources, and view program status directly from the taskbar.  
 slug: taskbar-manager-overview
-tags: taskabr, manager
+tags: taskbar, manager
 published: True
 position: 0 
 CTAControlName: TaskbarManager
@@ -22,6 +22,6 @@ The Taskbar is the access point for programs displayed on the desktop. With Wind
 # See Also
 
 * [Getting Started]({%slug taskbar-manager-getting-started%})
-* [Design Time]({%slug ttaskbar-manager-design-time%}) 
+* [Design Time]({%slug taskbar-manager-design-time%}) 
  
         
