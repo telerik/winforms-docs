@@ -1324,9 +1324,12 @@ navigation:
     controls/syntax-editor/features/taggers:
         title: Taggers
         position: 8
-    controls/taskbar-manager:
-        title: Taskbar Manager
+    controls/taskbar-button:
+        title: Taskbar Button
         position: 478
+    controls/taskbar-button/features:
+        title: Features
+        position: 4
     controls/task-board:
         title: Task Board
         position: 479
@@ -1783,7 +1786,7 @@ intro_columns:
       "ToolbarForm": "radtoolbarform-overview"
       "TitleBar": "winforms/forms-and-dialogs/statusstrip"
       "ToastNotification": "toast-notification-overview"
-      "TaskbarManager": "taskbar-manager-overview"
+      "TaskbarManager": "taskbar-button-overview"
       "SplashScreen": "splashscreen-overview"
       "Overlay": "overlay-overview"
       "Flyout": "flyout-overview"
