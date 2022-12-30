@@ -13,7 +13,7 @@ CTAControlName: TaskbarButton
 
 [Windows Taskbar](https://learn.microsoft.com/en-us/windows/win32/uxguide/winenv-taskbar) is the access point for programs displayed on the desktop. With the taskbar features, users can give commands, access resources, and view program status directly from the taskbar. 
 
-The **RadTaskbarButton** component from the UI for WinForms suite allows you to interact with the Taskbar and gives the developers the appropriate API to define the style for their application's taskbar button.
+The **RadTaskbarButton** component from the UI for WinForms suite allows you to interact with the Windows Taskbar and gives the developers the appropriate API to define the style for their application's taskbar button.
 
 ![WinForms Taskbar Manager Overview](images/taskbar-button-overview001.png) 
 
