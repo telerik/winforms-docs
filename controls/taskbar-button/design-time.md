@@ -5,7 +5,7 @@ description: Get familiar with the design time options that WinForms Taskbar But
 slug: taskbar-button-design-time
 tags: taskbar,button,design,time
 published: True
-position: 1 
+position: 2 
 CTAControlName: TaskbarButton
 ---
 

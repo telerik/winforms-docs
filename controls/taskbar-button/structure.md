@@ -14,6 +14,8 @@ This article describes the inner structure and organization of the elements whic
 
 ![WinForms Taskbar ButtonStructure Overview](images/taskbar-button-structure001.png) 
 
+>note RadTaskbarButton does not provide any UI element. It just offers convenient API for specifying the content displayed for your application on the [Windows Taskbar](https://learn.microsoft.com/en-us/windows/win32/uxguide/winenv-taskbar). The exact visualization depends on the Windows version. 
+
 # See Also
 
 * [Getting Started]({%slug taskbar-button-getting-started%})
