@@ -18,6 +18,11 @@ position: 4
 |__FormElement__| Gets the main element of the RadToolbarForm.|
 |__TabbedFormControl__| Gets the RadToolbarFormControl which is used internally by the form responsible for working with the areas.|
 
+## Events
+|__Event__|__Description__|
+|---|---|
+|__ToolbarFormControlCreating__|Raised while creating the RadToolbarFormControl. The event is raised only when the form is created at run-time.
+
 # RadToolbarFormControl
 
 ## Properties
@@ -59,4 +64,4 @@ position: 4
 |__IconElement__|Gets the icon element.|
 |__CaptionTextElement__|Gets the text element.|
 
-# See Also
+## See Also
