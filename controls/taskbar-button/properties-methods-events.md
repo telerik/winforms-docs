@@ -14,6 +14,7 @@ CTAControlName: TaskbarButton
 ## Properties
 
 |__Property__|__Description__|
+|---|---|
 |__OwnerForm__|The form that is represented on the task bar.|
 |__ThumbnailButtons__|Gets the thumbnail buttons collection.|
 |__ThumbnailButtonsImageList__|Gets or sets the ImageList that contains the images displayed by the thumbnail buttons.|
@@ -34,6 +35,7 @@ CTAControlName: TaskbarButton
 ## Properties
 
 |__Property__|__Description__|
+|---|---|
 |__Tag__|Tag object that can be used to store user data, taht correcposnds to this button.|
 |__ImageIndex__|Gets or sets the image list index value of the image displayed on the button control.|
 |__ImageKey__|Gets or sets the key accessor for the image in the ImageList.|
@@ -48,6 +50,7 @@ CTAControlName: TaskbarButton
 ## Methods
 
 |__Event__|__Description__|
+|---|---|
 |__Update__||
 
 # RadTaskbarManager
