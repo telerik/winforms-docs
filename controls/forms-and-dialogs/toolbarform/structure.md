@@ -16,6 +16,12 @@ RadToolbarForm is a wrapper of the RadToolbarFormControl. The toolbar control is
 
 ![WinForms RadToolbarForm Structure](images/winforms-radtoolbarform-structure.png)
 
+* __ContentArea__: Represents the content are of the form.
+* __Icon__: Represents the icon of the form.
+* __Text__: Represents the text of the form.
+* __Near Items__: Represents the near items of the toolbar form.
+* __Center Items__:  Represents the center items of the toolbar form.
+* __Far Items__:  Represents the far items of the toolbar form.
 
 ## Elements Hierarchy
 
@@ -23,8 +29,7 @@ RadToolbarForm is a wrapper of the RadToolbarFormControl. The toolbar control is
 
 ![WinForms RadToolbarForm Elements Hierarchy](images/winforms-radtoolbarform-elements-hierarchy.png)
 
-
-# See Also
+## See Also
 
 * [Getting Started]({%slug  radtoolbarform-getting-started%})
 * [Design Time]({%slug  radtoolbarform-design-time%})
