@@ -10,7 +10,7 @@ position: 2
 
 # Jump List
 
-A jump list is a system-provided menu that appears when the user right-clicks a program in the taskbar. It is used to provide quick access to *recently* or *frequently* used documents and offers direct links to app functionality.
+A jump list is a system-provided menu that appears when the user right-clicks a program in the taskbar. It is used to provide quick access to *recently* or *frequently* used documents and offers direct links to app's functionality.
 
 >caption Jump List for Visual Studio 2022 Preview
 
