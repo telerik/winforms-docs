@@ -13,8 +13,8 @@ CTAControlName: TaskbarButton
 
 The RadTaskbarButton control can display buttons in its thumbnail part. Adding buttons to your thumbnail preview will be an excellent enhancement to your application. This way the user can call commands in your application without restoring or activating the application's window. To add thumbnail button, you can populate the __ThumbnailButtons__ collection of the control.
 
-{{source=..\SamplesCS\RadTaskbarButton\RadTaskbarButton.cs region=ThumbnailButtons}} 
-{{source=..\SamplesVB\RadTaskbarButton\RadTaskbarButton.vb region=ThumbnailButtons}}
+{{source=..\SamplesCS\TaskbarButton\TaskbarButtonGettingStarted.cs region=ThumbnailButtons}} 
+{{source=..\SamplesVB\TaskbarButton\TaskbarButtonGettingStarted.vb region=ThumbnailButtons}}
 
 ````C#
 
@@ -41,8 +41,8 @@ __Figure 1__ demonstrate the above code snippet. You can observe that the button
  
 To add image content to the buttons, you can populate the __ThumbnailButtonsImageList__ collection of the __RadTaskbarButton__ with the required images. Then you can set the ImageIndex property of each button to the index of image inside the collection.
  
-{{source=..\SamplesCS\RadTaskbarButton\RadTaskbarButton.cs region=ThumbnailButtons}} 
-{{source=..\SamplesVB\RadTaskbarButton\RadTaskbarButton.vb region=ThumbnailButtons}}
+{{source=..\SamplesCS\TaskbarButton\TaskbarButtonGettingStarted.cs region=Thumbnail_Image}} 
+{{source=..\SamplesVB\TaskbarButton\TaskbarButtonGettingStarted.vb region=Thumbnail_Image}}
 
 ````C#
 
@@ -76,8 +76,8 @@ To distingues which button is click by the user and execute application logic, y
 
 There could be requirement to add non interactive icon in the buttons section inside the thumbnail preview. To simulate this effect you can use the NonBackground and NonInteractive properties. The first one will remove the border rectangle and mouse hover effects and the second one will disable the button press event. 
 
-{{source=..\SamplesCS\RadTaskbarButton\RadTaskbarButton.cs region=ThumbnailButtons}} 
-{{source=..\SamplesVB\RadTaskbarButton\RadTaskbarButton.vb region=ThumbnailButtons}}
+{{source=..\SamplesCS\TaskbarButton\RadTaskbarButton.cs region=Non_Interactive_State}} 
+{{source=..\SamplesVB\TaskbarButton\RadTaskbarButton.vb region=Non_Interactive_State}}
 
 ````C#
 
