@@ -52,7 +52,7 @@ End Sub
 
 {{endregion}}
 
-![WinForms RadTaskbarButton ProgressPercentage](images/winforms-radtaskbarbutton-progresspercentage.png)
+![WinForms RadTaskbarButton ProgressPercentage](images/winforms-radtaskbarbutton-progresspercentage.gif)
 
 ### ProgressState
 
@@ -74,13 +74,13 @@ In this state, the progress color will be set to red to indicate that an error a
 
 In this state the progress bar won't respect the __ProgressPercentage__ property value, it will continue to load until you set a different state.
 
-![WinForms RadTaskbarButton ProgressState Indeterminate](images/winforms-radtaskbarbutton-progressstate-indeterminate.png)
+![WinForms RadTaskbarButton ProgressState Indeterminate](images/winforms-radtaskbarbutton-progressstate-indeterminate.gif)
 
 #### Normal
 
 In this state, the progress will appear in its default visualization.
 
-![WinForms RadTaskbarButton ProgressState Normal](images/winforms-radtaskbarbutton-progresspercentage.png)
+![WinForms RadTaskbarButton ProgressState Normal](images/winforms-radtaskbarbutton-progresspercentage.gif)
 
 #### Pause
 In this state, the color of the progress will turn yellow. In this state, the __ProgressPercentage__ property value change should be stopped to show that the currently running task is on pause.
