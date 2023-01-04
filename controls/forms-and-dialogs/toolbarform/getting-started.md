@@ -12,9 +12,9 @@ position: 3
 
 This topic will walk you through the creating process of RadToolbarForm.
 
-1\. Create a blank new Telerik Winforms application using the standard template. 
+1\. Create a blank new Telerik WinForms application using the standard template. 
 
-2\. Add a new Toolbar form from Visual Studio. Go to __Project -> Add Windows Form__ and then select ToolbarForm.
+2\. Add a new Toolbar form from Visual Studio. Go to __Project -> Add Windows Form__ and then select Telerik RadToolbarForm.
 
 ![WinForms RadToolbarForm VS Template](images/winforms-radtoolbarform-vs-template.png)
 
@@ -30,7 +30,7 @@ This topic will walk you through the creating process of RadToolbarForm.
 
 ![WinForms RadToolbarForm Startup Form](images/winforms-radtoolbarform-start-up-form.png)
 
-In VB.NET this can be done from the project properties.
+In VB.NET this can be done from the project's properties.
 
 ![WinForms RadToolbarForm VB Startup Form](images/winforms-radtoolbarform-vb-start-up-form.png)
 
