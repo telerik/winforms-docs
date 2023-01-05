@@ -10,7 +10,7 @@ position: 3
 
 # Item Alignment
 
-In general case, there could be requirement to increase the size of the title bar part of the RadToolBarForm. In this case, the RadToolBarForm provides a mechanism to customize the alignment of the elements inside it. The height of the title bar can be changed by setting the __CaptionHeight__ property.
+In general case, there could be a requirement to increase the size of the title bar part of the RadToolBarForm. In this case, RadToolBarForm provides a mechanism to customize the alignment of the elements inside it. The height of the title bar can be changed by setting the __CaptionHeight__ property.
 
 {{source=..\SamplesCS\Forms and Dialogs\RadToolbarForm1.cs region=CaptionHeight}} 
 {{source=..\SamplesVB\Forms and Dialogs\RadToolbarForm1.vb region=CaptionHeight}}
@@ -90,7 +90,7 @@ __Figure 3__ shows how the text will be visualize in all four options of the __T
 
 ## Margins
 
-The RadToolbarFormControl expose three properties to control the margins of its item sections: __NearItemsMargin__, __CenterItemsMargin__, __FarItemsMargin__. Their default value is: __0,8,0,8__. You can use these properties to adjust the items per your needs.
+The RadToolbarFormControl exposes three properties to control the margins of its items sections: __NearItemsMargin__, __CenterItemsMargin__, __FarItemsMargin__. Their default value is: __0,8,0,8__. You can use these properties to adjust the items per your needs.
 
 {{source=..\SamplesCS\Forms and Dialogs\RadToolbarForm1.cs region=Margins}} 
 {{source=..\SamplesVB\Forms and Dialogs\RadToolbarForm1.vb region=Margins}}
