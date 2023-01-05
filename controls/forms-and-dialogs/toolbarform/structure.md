@@ -10,13 +10,13 @@ position: 1
 
 # Structure
 
-RadToolbarForm is a wrapper of the RadToolbarFormControl. The toolbar control is docked to Fill and it is the sole child control of the RadToolbarForm. This article explains the inner structure of the RadToolbarFormControl.
+RadToolbarForm is a wrapper of the RadToolbarFormControl. The toolbar control is docked to Top and it is the sole child control of the RadToolbarForm. This article explains the inner structure of the RadToolbarFormControl.
 
 >caption Figure 1: Elements of RadTabbedFormControl
 
 ![WinForms RadToolbarForm Structure](images/winforms-radtoolbarform-structure.png)
 
-* __ContentArea__: Represents the content are of the form.
+* __ContentArea__: Represents the content area of the form.
 * __Icon__: Represents the icon of the form.
 * __Text__: Represents the text of the form.
 * __Near Items__: Represents the near items of the toolbar form.
