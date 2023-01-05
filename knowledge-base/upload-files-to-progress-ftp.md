@@ -38,15 +38,15 @@ To login, you should use an FTP client such as FileZilla or WinSCP etc. Below yo
 
 ![upload-files-to-progress-ftp 003](images/upload-files-to-progress-ftp003.png) 
 
-Make sure you select SFTP – SSH File Tranfer Protocol from the Protocol drop-down menu. Fill in the host address, account name and Port number from the credentials you received earlier and click **Connect**.
+3\. Make sure you select SFTP – SSH File Tranfer Protocol from the Protocol drop-down menu. Fill in the host address, account name and Port number from the credentials you received earlier and click **Connect**.
 
 ![upload-files-to-progress-ftp 004](images/upload-files-to-progress-ftp004.png) 
 
-Enter the password on the prompt and click OK.
+4\. Enter the password on the prompt and click OK.
 
 ![upload-files-to-progress-ftp 005](images/upload-files-to-progress-ftp005.png) 
 
-On the left side of the menu, you should see your local computer tree structure and on the right is the SFTP server with the upload folder. Select, on the left, a local folder from where you want the file to be uploaded. Click Upload.
+5\. On the left side of the menu, you should see your local computer tree structure and on the right is the SFTP server with the upload folder. Select, on the left, a local folder from where you want the file to be uploaded. Click Upload.
 
 ![upload-files-to-progress-ftp 006](images/upload-files-to-progress-ftp006.png) 
 
