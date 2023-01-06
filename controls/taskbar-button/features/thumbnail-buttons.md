@@ -27,7 +27,10 @@ this.radTaskbarButton1.ThumbnailButtons.Add(radThumbnailButton2);
 ````
 ````VB.NET
 
-
+Dim radThumbnailButton1 As Telerik.WinControls.Taskbar.RadThumbnailButton = New Telerik.WinControls.Taskbar.RadThumbnailButton()
+Dim radThumbnailButton2 As Telerik.WinControls.Taskbar.RadThumbnailButton = New Telerik.WinControls.Taskbar.RadThumbnailButton()
+Me.RadTaskbarButton1.ThumbnailButtons.Add(radThumbnailButton1)
+Me.RadTaskbarButton1.ThumbnailButtons.Add(radThumbnailButton2
 
 ````
 
@@ -57,7 +60,12 @@ this.radTaskbarButton1.ThumbnailButtons[1].ImageIndex = 1;
 ````
 ````VB.NET
 
-
+Dim images = New ImageList()
+images.Images.Add(New Bitmap("../../ProgressIcon.ico"))
+images.Images.Add(New Bitmap("../../WinFormsIcon.ico"))
+Me.RadTaskbarButton1.ThumbnailButtonsImageList = images
+Me.RadTaskbarButton1.ThumbnailButtons(0).ImageIndex = 0
+Me.RadTaskbarButton1.ThumbnailButtons(1).ImageIndex = 1
 
 ````
 
@@ -76,8 +84,8 @@ To distingues which button is click by the user and execute application logic, y
 
 There could be requirement to add non interactive icon in the buttons section inside the thumbnail preview. To simulate this effect you can use the NonBackground and NonInteractive properties. The first one will remove the border rectangle and mouse hover effects and the second one will disable the button press event. 
 
-{{source=..\SamplesCS\TaskbarButton\RadTaskbarButton.cs region=Non_Interactive_State}} 
-{{source=..\SamplesVB\TaskbarButton\RadTaskbarButton.vb region=Non_Interactive_State}}
+{{source=..\SamplesCS\TaskbarButton\TaskbarButtonGettingStarted.cs region=Non_Interactive_State}} 
+{{source=..\SamplesVB\TaskbarButton\TaskbarButtonGettingStarted.vb region=Non_Interactive_State}}
 
 ````C#
 
@@ -88,7 +96,8 @@ this.radTaskbarButton1.ThumbnailButtons[0].NonInteractive = true;
 ````
 ````VB.NET
 
-
+Me.RadTaskbarButton1.ThumbnailButtons(0).NoBackground = True
+Me.RadTaskbarButton1.ThumbnailButtons(0).NonInteractive = True
 
 ````
 

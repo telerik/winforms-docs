@@ -26,7 +26,7 @@ RadTaskbarButton offers the following parts for customizing:
 * **Loading indicator** - Four different styles that indicate the progress on the taskbar button.  
 The colors and styles of the progress indication come from the system and cannot be customized by the developer: 
 
-	* **Indeterminate** – indeterminate progress indication with infinite loop. 
+	* **Indeterminate** – Indeterminate progress indication with infinite loop. 
 
 	* **Normal** – Progress indicated in Green 
  

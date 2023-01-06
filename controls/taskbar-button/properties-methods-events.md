@@ -28,6 +28,7 @@ CTAControlName: TaskbarButton
 ## Events
 
 |__Event__|__Description__|
+|----|----|
 |__ThumbnailButtonClick__|Occurs when a __RadThumbnailButton__ has been clicked.|
 
 # RadThumbnailButton

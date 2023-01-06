@@ -11,9 +11,9 @@ CTAControlName: TaskbarButton
 
 # ToolTips
 
-The RadTaskbarButton expose Microsoft API to set tooltip text on its thumbnail preview container or its thumbnail buttons.
+RadTaskbarButton exposes Microsoft API to set tooltip text on its thumbnail preview container or its thumbnail buttons.
 
-To set a ToolTip on the thumbnail preview part of the control, you can use the __ThumbnailTooltip__ property of the __RadTaskbarButton__.
+To set a ToolTip on the thumbnail preview part of the control, you can use the __ThumbnailTooltip__ property of __RadTaskbarButton__.
 
 {{source=..\SamplesCS\TaskbarButton\TaskbarButtonGettingStarted.cs region=ThumbnailTooltip}} 
 {{source=..\SamplesVB\TaskbarButton\TaskbarButtonGettingStarted.vb region=ThumbnailTooltip}}
