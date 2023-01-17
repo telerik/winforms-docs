@@ -47,6 +47,7 @@ Telerik UI for WinForms suite offers the following custom fonts that are embedde
 |Awesome-Brands-Regular|"Font Awesome 5 Brands Regular"|
 |Awesome-Regular|"Font Awesome 5 Free Regular"|
 |Awesome-Solid|"Font Awesome 5 Free Solid"|
+|TelerikFluentIcons|"TelerikFluentIcons"|
 
 >note The ThemeResolutionService.**GetCustomFont** method accepts a font name as a string input parameter and returns a **FontFamily** instance. Then, it can be used for creating a **Font** instance and apply it to the **Font** property of any control.
 

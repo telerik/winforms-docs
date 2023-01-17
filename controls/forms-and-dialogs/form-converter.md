@@ -22,10 +22,11 @@ The actual conversion process is executed after selecting an item from the compo
 * **Convert to RadForm**: Converts a standard, ribbon or tabbed form to a **RadForm**.
 * **Convert to RadRibbonForm**: Converts a standard or **RadForm** or a **RadTabbedForm** to a **RadRibbonForm**.
 * **Convert to RadTabbedForm**: Converts a standard or **RadForm** or a **RadRibbonForm** to a **RadTabbedForm**.
+* **Convert to RadToolbarForm**: Converts a standard or **RadForm** or a **RadRibbonForm** to a **RadToolbarForm**.
 
 >note Any controls added in the Controls collection of the form will not be influenced by the conversion process.
 
-If you have at least one control from the Telerik UI for WinForms suite on the standard MS Form, you can also use the Form's smart tag in order to convert it to a **RadForm**, **RadRibbonForm** or **RadTabbedForm**. 
+If you have at least one control from the Telerik UI for WinForms suite on the standard MS Form, you can also use the Form's smart tag in order to convert it to a **RadForm**, **RadRibbonForm**, **RadTabbedForm** or **RadToolbarForm**. 
 
 >caption Figure 2: Form's smart tag
 

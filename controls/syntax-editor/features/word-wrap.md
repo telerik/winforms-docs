@@ -29,6 +29,7 @@ this.radSyntaxEditor1.IsWordWrapEnabled = true;
 
 Me.RadSyntaxEditor1.IsWordWrapEnabled = True
 
+
 ````
 
 {{endregion}} 
