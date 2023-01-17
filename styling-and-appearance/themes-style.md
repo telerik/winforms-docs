@@ -12,6 +12,10 @@ position: 2
 
 This article lists all of the available themes that come with the installation of the Telerik UI for WinForms suite and illustrates the design for each of them.
 
+## Windows11
+
+![Windows11 Theme](images/themes-style032.png)
+
 ## VisualStudio2022
 
 ![themes-style 001](images/themes-style001.png)
