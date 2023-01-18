@@ -64,4 +64,3 @@ position: 4
 |__IconElement__|Gets the icon element.|
 |__CaptionTextElement__|Gets the text element.|
 
-## See Also
