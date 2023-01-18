@@ -17,7 +17,7 @@ The functionality can be enabled by setting the `IsWordWrapEnabled` property to 
 #### Example 1: Setting IsWordWrapEnabled property
 
 {{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=WordWrap}}
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.vb region=WordWrap}}
+{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=WordWrap}}
 
 ````C#
 
