@@ -60,26 +60,26 @@ CTAControlName: TaskbarButton
 
 |__Method__|__Description__|
 |----|----|
-|__Flash()__|Flashes the specified window. It does not change the active state of the window.|
-|__FlashUntilActive()__|Flashes the specified window until it is activated. Note that if the window is currently active the flash will not begin.|
-|__StopFlash()__|Stops the flashing of the specified window.|
-|__FlashCore()__|Flashes the specified window. It does not change the active state of the window.|
-|__SetOverlayIcon()__|Applies an overlay to a taskbar button to indicate application status or a notification to the user.|
-|__SetProgressState()__|Sets the type and state of the progress indicator displayed on a taskbar button.|
-|__SetProgressValue()__|Displays or updates a progress bar hosted in a taskbar button to show the specific percentage completed of the full operation.|
-|__SetThumbnailClip()__|Selects a portion of a window's client area to display as that window's thumbnail in the taskbar.|
-|__SetThumbnailTooltip()__|Specifies or updates the text of the tooltip that is displayed when the mouse pointer rests on an individual preview thumbnail in a taskbar button flyout.|
-|__ThumbBarSetImageList()__|Specifies an image list that contains button images for a toolbar embedded in a thumbnail image of a window in a taskbar button flyout.|
-|__MarkFullscreenWindow()__|Marks a window as full-screen.|
-|__AddTab()__|Adds an item to the taskbar.|
-|__DeleteTab()__|Deletes an item from the taskbar.|
-|__ActivateTab()__|Activates an item on the taskbar. The window is not actually activated; the window's item on the taskbar is merely displayed as active.|
-|__RegisterTab()__|Informs the taskbar that a new tab or document thumbnail has been provided for display in an application's taskbar group flyout.|
-|__UnregisterTab()|Removes a thumbnail from an application's preview group when that tab or document is closed in the application.|
-|__SetTabProperties()__|Allows a tab to specify whether the main application frame window or the tab window should be used as a thumbnail or in the peek feature under certain circumstances.|
-|__SetTabOrder()__|Inserts a new thumbnail into a tabbed-document interface (TDI) or multiple-document interface (MDI) application's group flyout or moves an existing thumbnail to a new position in the application's group.|
-|__SetTabActive()__|Informs the taskbar that a tab or document window has been made the active window.|
-|__SetActiveAlt()__|Marks a taskbar item as active but does not visually activate it.
+|__Flash__|Flashes the specified window. It does not change the active state of the window.|
+|__FlashUntilActive__|Flashes the specified window until it is activated. Note that if the window is currently active the flash will not begin.|
+|__StopFlash__|Stops the flashing of the specified window.|
+|__FlashCore__|Flashes the specified window. It does not change the active state of the window.|
+|__SetOverlayIcon__|Applies an overlay to a taskbar button to indicate application status or a notification to the user.|
+|__SetProgressState__|Sets the type and state of the progress indicator displayed on a taskbar button.|
+|__SetProgressValue__|Displays or updates a progress bar hosted in a taskbar button to show the specific percentage completed of the full operation.|
+|__SetThumbnailClip__|Selects a portion of a window's client area to display as that window's thumbnail in the taskbar.|
+|__SetThumbnailTooltip__|Specifies or updates the text of the tooltip that is displayed when the mouse pointer rests on an individual preview thumbnail in a taskbar button flyout.|
+|__ThumbBarSetImageList__|Specifies an image list that contains button images for a toolbar embedded in a thumbnail image of a window in a taskbar button flyout.|
+|__MarkFullscreenWindow__|Marks a window as full-screen.|
+|__AddTab__|Adds an item to the taskbar.|
+|__DeleteTab__|Deletes an item from the taskbar.|
+|__ActivateTab__|Activates an item on the taskbar. The window is not actually activated; the window's item on the taskbar is merely displayed as active.|
+|__RegisterTab__|Informs the taskbar that a new tab or document thumbnail has been provided for display in an application's taskbar group flyout.|
+|__UnregisterTab__|Removes a thumbnail from an application's preview group when that tab or document is closed in the application.|
+|__SetTabProperties__|Allows a tab to specify whether the main application frame window or the tab window should be used as a thumbnail or in the peek feature under certain circumstances.|
+|__SetTabOrder__|Inserts a new thumbnail into a tabbed-document interface (TDI) or multiple-document interface (MDI) application's group flyout or moves an existing thumbnail to a new position in the application's group.|
+|__SetTabActive__|Informs the taskbar that a tab or document window has been made the active window.|
+|__SetActiveAlt__|Marks a taskbar item as active but does not visually activate it.
 
 
 # See Also
