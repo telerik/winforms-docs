@@ -15,7 +15,7 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2023.1.117|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2023.1.117|RadScheduler for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
