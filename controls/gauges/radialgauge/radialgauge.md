@@ -18,7 +18,7 @@ The __RadRadialGauge__ control is designed to display a simple value within a de
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadGauges radialgauge-overview 001](images/radialgauge-overview001.gif)
+![WinForms RadRadialGauge Overview](images/radialgauge-overview001.gif)
 
 ## Key Features
 

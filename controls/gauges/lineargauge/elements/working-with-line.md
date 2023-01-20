@@ -18,7 +18,7 @@ This element represents a single line which can be used with the ticks.
 The following image shows the smart tag of the gauge control when the line is selected. You can change the line properties directly in the smart tag window.
 
 >caption Figure 1: Design Time
-![WinForms RadGauges Design Time](images/lineargauge-elements-working-with-lines001.png)
+![WinForms RadGauges LinearGauge Line Design Time](images/lineargauge-elements-working-with-lines001.png)
 
 ## Properties
 

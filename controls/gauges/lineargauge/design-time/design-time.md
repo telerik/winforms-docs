@@ -23,7 +23,7 @@ The smart tag allows you to change the control styles, save/load its layout and 
 
 >caption Figure 2: Smart Tag
 
-![WinForms RadGauges Smart Tag](images/lineargauge-design-time002.png)
+![WinForms RadGauges LinearGauge Smart Tag](images/lineargauge-design-time002.png)
 
 * __Common Tasks__
 
@@ -55,7 +55,7 @@ The __RadLinearGauge__ control supports precise design time selection of the gau
 
 >caption Figure 3: Elements Selection
 
-![WinForms RadGauges Elements Selection](images/lineargauge-design-time003.png)
+![WinForms RadGauges LinearGauge Elements Selection](images/lineargauge-design-time003.png)
 
 # See Also
 

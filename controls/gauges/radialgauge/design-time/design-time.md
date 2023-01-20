@@ -14,14 +14,14 @@ previous_url: radialgauge-design-time
 When you drag a __RadRadialGauge__ from the Toolbox and drop it onto the form, the gauge gallery will offer you to pick up the desired type:
 
 >caption Figure 1: Gallery Types
-![WinForms RadGauges Gallery Types](images/radialgauge-design-time001.png)
+![WinForms RadRadialGauge Gallery Types](images/radialgauge-design-time001.png)
 
 # Smart Tag
 
 The smart tag allows you to change the control styles, save/load its layout and edit its items.
 
 >caption Figure 2: Smart Tag
-![WinForms RadGauges Smart Tag](images/radialgauge-design-time002.png)
+![WinForms RadRadialGauge Smart Tag](images/radialgauge-design-time002.png)
 
 * __Common Tasks__
 
@@ -62,7 +62,7 @@ Additionally, you can perform some modifications to the gauge elements and save 
 The __RadRadialGauge__ control supports precise design time selection of the gauge elements in order to customize the selected element.
 
 >caption Figure 5: Elements Selection
-![WinForms RadGauges Elements Selection](images/radialgauge-design-time005.png)
+![WinForms RadRadialGauge Elements Selection](images/radialgauge-design-time005.png)
 
 # See Also
 

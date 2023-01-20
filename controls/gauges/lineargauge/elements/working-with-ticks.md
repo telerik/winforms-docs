@@ -18,7 +18,7 @@ The __RadLienarGaugeTicks__ element gives you the ability to easily show a scale
 The properties can be set directly in the smart tag window.
 
 >caption Figure 1: Design Time
-![WinForms RadGauges Design Time](images/lineargauge-elements-working-with-ticks001.png)
+![WinForms RadGauges LienarGaugeTicks Design Time](images/lineargauge-elements-working-with-ticks001.png)
 
 ## Properties
 

@@ -14,12 +14,12 @@ previous_url: radialgauge-understanding-gauge-elements-working-with-arcs
 __RadialGaugeArc__ is rendered as a continuous band spanning the entire sweep angle. The arc is also used as a basis for the placement of child elements, such as the tick marks and labels.
 
 >caption Figure 1: Arc
-![WinForms RadGauges Arc](images/radialgauge-understanding-gauge-elements-working-with-arcs001.png)
+![WinForms RadialGaugeArc Arc](images/radialgauge-understanding-gauge-elements-working-with-arcs001.png)
 
 * __Radius:__ Controls the radius of the arc. In the image below, the green arc has a smaller radius than the dark gray one. This allows several arcs to be defined and positioned as desired.
 
 >caption Figure 2: Radius
-![WinForms RadGauges Radius](images/radialgauge-understanding-gauge-elements-working-with-arcs002.png)
+![WinForms RadialGaugeArc Radius](images/radialgauge-understanding-gauge-elements-working-with-arcs002.png)
 
 * __RangeStart:__ Specifies the start value of the arc and moves clock-wise to the __RangeEnd__ value. On the above picture the dark gray arc starts from 0, but the red one starts from 121.
 
@@ -28,7 +28,7 @@ __RadialGaugeArc__ is rendered as a continuous band spanning the entire sweep an
 * __Width:__ Controls how thick the arc will be rendered.
 
 >caption Figure 3: Width
-![WinForms RadGauges Width](images/radialgauge-understanding-gauge-elements-working-with-arcs003.png)
+![WinForms RadialGaugeArc Width](images/radialgauge-understanding-gauge-elements-working-with-arcs003.png)
 
 * __BackColor__ and __BackColor2:__ Specifies the fill colors for the arc.
 
@@ -41,7 +41,7 @@ __RadialGaugeArc__ is rendered as a continuous band spanning the entire sweep an
 * __BindEndRangeOffset:__ Specifies the end range offset of the arc according to the gauge's value.
 
 >caption Figure 4: Offset            
-![WinForms RadGauges Offset](images/radialgauge-understanding-gauge-elements-working-with-arcs004.png)
+![WinForms RadialGaugeArc Offset](images/radialgauge-understanding-gauge-elements-working-with-arcs004.png)
 
 # See Also
 

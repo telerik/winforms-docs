@@ -19,7 +19,7 @@ __RadLinearGauge__ supports Save/Load layout functionality which gives you the o
 You can easily save/load the layout with the smart tag.
 
 >caption Figure 1: Smart Tag
-![WinForms RadGauges Smart Tag](images/lineargauge-save-and-load-layout001.png)
+![WinForms RadGauges Save/Load Smart Tag](images/lineargauge-save-and-load-layout001.png)
 
 ## Run Time
 
