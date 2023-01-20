@@ -290,4 +290,5 @@ End Class
 
 # See Also
 * [Handle Add, Delete and Update of Rows]({%slug winforms/virtualgrid/working-with-data/handle-add-delete-update-of-rows%})
+* [Live Data in VirtualGrid]({%slug live-data-in-virtualgrid%})
 
