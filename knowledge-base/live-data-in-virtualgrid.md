@@ -18,11 +18,11 @@ res_type: kb
 
 ## Description
 
-RadVirtualGrid is an appropriate control for loading big data with high refresh rate. This article demonstrates how to use a timer for refreshing the external data collection and update the virtual grid accordingly.
+RadVirtualGrid is an appropriate control for loading big data with a high refresh rate. This article demonstrates how to use a timer for refreshing the external data collection and updating the virtual grid accordingly.
 
 ## Solution
 
-The CellValueNeeded event is the place for specifying what data to be displayed in the respective cell. Once the external collection is updated, it is necessary to force refreshing the grid's content by calling the TableElement.SynchronizeRows method.
+The CellValueNeeded event is the place for specifying what data to be displayed in the respective cell. Once the external collection is updated, it is necessary to force refresh the grid's content by calling the TableElement.SynchronizeRows method.
 
 ![WinForms VirtualGrid Live Data](images/live-data-in-virtualgrid.gif)
 
@@ -241,7 +241,7 @@ End Sub
 
 ````
 
-# See Also
+## See Also
 
 * [Populating with Data]({%slug winforms/virtualgrid/working-with-data/populating-with-data%}) 
 
