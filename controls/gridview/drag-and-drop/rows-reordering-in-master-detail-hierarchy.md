@@ -14,7 +14,7 @@ Consider the case you have a bound **RadGridView** with [master-detail hierarchi
 
 >caption Figure 1: Rows reordering in Master-Detail hierarchy
 
-![WinForms RadGridView Rows reordering in Master-Detail hierarchy](images/rows-reordering-in-master-detail-hierarchy.gif)
+![WinForms RadGridView Rows Reordering Master-Detail Hierarchy](images/rows-reordering-in-master-detail-hierarchy.gif)
 
 There are several main steps that need to be followed:
 

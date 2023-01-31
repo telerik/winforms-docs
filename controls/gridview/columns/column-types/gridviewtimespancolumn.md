@@ -42,7 +42,7 @@ Me.RadGridView1.Columns.Add(gridViewTimeSpanColumn1)
 
 >caption Figure 2: Formatted editor's value
 
-![WinForms RadGridView Formatted editor's value](images/gridview-columns-gridviewtimespancolumn002.png)
+![WinForms RadGridView GridViewTimeSpanColumn Formatted editor's value](images/gridview-columns-gridviewtimespancolumn002.png)
 
 There are two ways to change the TimeSpan format when the cell enters edit mode - either by setting the above mentioned **Format** property of the column or by handling the RadGridView.**CellEditorInitialized** event and applying the desired format to the **GridTimeSpanPickerEditor**. It is fired when the initialization of an editor is performed:  
 

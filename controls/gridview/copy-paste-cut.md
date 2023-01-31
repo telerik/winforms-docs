@@ -27,9 +27,9 @@ Copying is a pretty simple operation. After cell/row is selected, right click ov
 
 >important Since **R1 2017** when you press `Ctrl+C` **RadGridView** copies the selected data considering the **SelectionMode**. If the **SelectionMode** property is set to *FullRowSelect*, pressing `Ctrl+C` will copy the entire row. If it is set to *CellSelect* only the selected cell will be copied when pressing `Ctrl+C`. Note that you can still copy just a single cell when the **SelectionMode** is set to *FullRowSelect*. It is necessary to select the desired cell and right click to open the context menu where you have "Copy" option.
 
->caption Figure 1: Copy rows from RadGridView.
+>caption Figure 1: Copy Rows From RadGridView
 
-![WinForms RadGridView Copy rows from RadGridView](images/gridview-copy-paste001.gif)
+![WinForms RadGridView Copy Rows From RadGridView](images/gridview-copy-paste001.gif)
 
 __RadGridView__ introduces __Copying__ event which occurs when the grid has prepared appropriate data formats that represent the copy selection. This event is fired once for each supported format:*Text*, *HTML*, *CommaSeparatedValue*. You can cancel this event if the data is not allowed to be stored to Clipboard in a specific format, e.g. HTML format:
 

@@ -15,7 +15,7 @@ The Smart Tag of RadGridView lets you quickly access common tasks involved with 
 
 >caption Figure 1: The Smart Tag of RadGridView.
 
-![WinForms RadGridView The Smart Tag of RadGridView](images/gridview-design-time-support-smart-tag001.png)
+![WinForms RadGridView Smart Tag](images/gridview-design-time-support-smart-tag001.png)
 
 * __Common Tasks__
     

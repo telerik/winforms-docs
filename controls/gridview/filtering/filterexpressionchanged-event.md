@@ -44,7 +44,7 @@ This event is also the final place where the filtering expression can be changed
 
 
 
-# See Also
+## See Also
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 
 * [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})

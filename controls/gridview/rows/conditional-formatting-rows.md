@@ -49,7 +49,7 @@ The __ConditionalFormattingObject__ also contains formatting properties for the 
 
 This example looks for the same condition as the [cell formatting example]({%slug winforms/gridview/cells/conditional-formatting-cells%}). The difference is that the last parameter ("ApplyToRow") passed to the __ConditionalFormattingObject__ is set to *true*, allowing the __RowBackColor__ property to be recognized.
 
-![WinForms RadGridView gridview-rows-conditional-formatting-rows 001](images/gridview-rows-conditional-formatting-rows001.png)
+![WinForms RadGridView Conditional Formatting Rows](images/gridview-rows-conditional-formatting-rows001.png)
 
 {{source=..\SamplesCS\GridView\Rows\ConditionalFormattingRows.cs region=conditionalFormatting}} 
 {{source=..\SamplesVB\GridView\Rows\ConditionalFormattingRows.vb region=conditionalFormatting}} 
@@ -77,9 +77,9 @@ Me.RadGridView1.Columns("Unit Price").ConditionalFormattingObjectList.Add(obj)
 
 **RadGridView** provides a convenient form which the end user could use to create formatting objects. You can show the form by using the header cells' context menu. To access and customize the dialog, you can use the **ConditionalFormattingFormShown** event. :
 
-![WinForms RadGridView gridview-rows-conditional-formatting-rows 002](images/gridview-rows-conditional-formatting-rows002.png)
+![WinForms RadGridView Condi Formatting Option](images/gridview-rows-conditional-formatting-rows002.png)
 
-![WinForms RadGridView gridview-rows-conditional-formatting-rows 003](images/gridview-rows-conditional-formatting-rows003.png)
+![WinForms RadGridView Conditional Formatting Rules Manager](images/gridview-rows-conditional-formatting-rows003.png)
 
 # See Also
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})

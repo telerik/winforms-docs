@@ -31,7 +31,8 @@ __ValueChanged:__ Fires when the active editor changes its value. The data is no
 __CellValueChanged:__ Fires when the value of a cell has been changed.
 
 There are more events fired during this process. Please look in the [Data validation]({%slug winforms/gridview/editors/data-validation%}) section.
-# See Also
+
+## See Also
 * [API]({%slug winforms/gridview/editors/api%})
 
 * [Customizing editor behavior]({%slug winforms/gridview/editors/customizing-editor-behavior%})

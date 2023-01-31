@@ -56,7 +56,7 @@ On the new row we will display a __RadChartViewElement__ visualizing the Product
 >note You can replace the __RadChartViewElement__ with any __RadElement__ or a set of elements.
 >
 
->caption Figure 1: The new row is replaced with the custom one. 
+>caption Figure 1: The new row is replaced with the custom one 
 
 ![WinForms RadGridView The new row is replaced with the custom one](images/gridview-rows-custom-rows001.png)
 

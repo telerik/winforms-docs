@@ -75,7 +75,7 @@ End Sub
 
 {{endregion}} 
 
-![WinForms RadGridView gridview-filtering-custom-filtering 001](images/gridview-filtering-custom-filtering001.png)
+![WinForms RadGridView CustomFiltering Event](images/gridview-filtering-custom-filtering001.png)
 
 The following example demonstrates how you can use the __Handled__ property of the __CustomFiltering__ event arguments. We will hide all rows that have their **UnitPrice** less than "30" and **ProductName** not starting with "Ch". In addition, there is a __FilterDescriptor__  that will hide rows containing values less than "1" in the `UnitsInStock` column.
 
@@ -124,7 +124,7 @@ End Sub
 {{endregion}} 
 
 
-![WinForms RadGridView gridview-filtering-custom-filtering 002](images/gridview-filtering-custom-filtering002.png)
+![WinForms RadGridView Custom Filtering Event](images/gridview-filtering-custom-filtering002.png)
 
 >important In order to determine more easily whether a row is visible or not in the **CustomFiltering** event when the grid is filtered by several columns, you can use the MasterTemplate.DataView.**FilterEvaluate** method. This method accepts a **FilterDescriptor** and a row as parameters and returns a boolean value indicating whether the row will be visible or not according to the passed **FilterDescriptor**. Thus, you can combine the custom logic for a certain column and evaluate the default one for the rest of the column's filters.
 
@@ -171,7 +171,7 @@ End Function
 
 
 
-# See Also
+## See Also
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 
 * [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})

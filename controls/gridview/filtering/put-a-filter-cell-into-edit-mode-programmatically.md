@@ -29,10 +29,11 @@ Me.RadGridView1.MasterView.TableFilteringRow.Cells(0).BeginEdit()
 
 {{endregion}}
 
-![WinForms RadGridView gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 001](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically001.png)
+![WinForms RadGridView Filter Cell Non Edit Mode](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically001.png)
 
-![WinForms RadGridView gridview-filtering-put-a-filter-cell-into-edit-mode-programatically 002](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically002.png)
-# See Also
+![WinForms RadGridView Filter Cell In Edit Mode](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically002.png)
+
+## See Also
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 
 * [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})

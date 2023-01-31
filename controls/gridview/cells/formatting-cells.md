@@ -15,7 +15,7 @@ Due to the UI virtualization in **RadGridView**, cell elements are created only 
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadGridView Formatting Data In RadGridView for WinForms](http://tv.telerik.com/watch/radtips/radgrid/formatting-data-in-radgridview)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|![WinForms RadGridView gridview-cells-formatting-cells 006](images/gridview-cells-formatting-cells006.png)|
+|[Formatting Data In RadGridView for WinForms](http://tv.telerik.com/watch/radtips/radgrid/formatting-data-in-radgridview)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|![WinForms RadGridView Formating Cells Tutorials](images/gridview-cells-formatting-cells006.png)|
 
 ## Formatting data cells.
 

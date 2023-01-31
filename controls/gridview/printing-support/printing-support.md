@@ -13,7 +13,7 @@ previous_url: gridview-printing-support
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadGridView Getting Started with Printing for RadGridView](http://tv.telerik.com/watch/winforms/getting-started-with-printing-for-radgridview-)<br>This video demonstrates how to use the new Print features of RadGridView without the need to export to other formats. It also includes a tour of new end-user printing features.|![WinForms RadGridView gridview-printing-support 003](images/gridview-printing-support003.png)|
+|[Getting Started with Printing for RadGridView](http://tv.telerik.com/watch/winforms/getting-started-with-printing-for-radgridview-)<br>This video demonstrates how to use the new Print features of RadGridView without the need to export to other formats. It also includes a tour of new end-user printing features.|![WinForms RadGridView Printing Support Tutorial](images/gridview-printing-support003.png)|
 
 RadGridView provides printing support, which allows you to print the grid content by using [RadPrintDocument.]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}) You are able to print:
 
@@ -45,7 +45,7 @@ Me.RadGridView1.Print(True)
 
 {{endregion}} 
 
-![WinForms RadGridView gridview-printing-support 001](images/gridview-printing-support001.png)
+![WinForms RadGridView Print Option](images/gridview-printing-support001.png)
 
 The other available method is __PrintPreview()__, which opens [RadPrintPreviewDialog.]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})
 
@@ -63,7 +63,7 @@ Me.RadGridView1.PrintPreview()
 
 {{endregion}} 
 
-![WinForms RadGridView gridview-printing-support 002](images/gridview-printing-support002.png)
+![WinForms RadGridView PrintPreview](images/gridview-printing-support002.png)
 
 # See Also
 

@@ -57,7 +57,7 @@ End Sub
 
 ![WinForms RadGridView CompositeFilterForm](images/gridview-filtering-composite-filter-dialog001.png)
 
-# See Also
+## See Also
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 
 * [Custom Filtering]({%slug winforms/gridview/filtering/custom-filtering%})

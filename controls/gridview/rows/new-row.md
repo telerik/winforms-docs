@@ -13,7 +13,7 @@ previous_url: gridview-rows-new-row
 
 **RadGridView** provides the end-users with a special row that allows them to add a new data row. For brevity, we will call this row "new row". The following sections describe useful events and properties which will allow you to achieve different scenarios related to the new row.
 
-![WinForms RadGridView gridview-rows-new-row 005](images/gridview-rows-new-row005.png)
+![WinForms RadGridView New Row](images/gridview-rows-new-row005.png)
 
 ## Enabling the New Row
 
@@ -72,7 +72,7 @@ Me.RadGridView1.MasterTemplate.Templates(0).NewRowText = "Click here to add a ne
 
 {{endregion}} 
 
-## New Row position
+## New Row Position
 
 The `New Row` can be pinned to top or bottom. By default, the new row is pinned to top. You can explicitly set its position to top by setting the __AddNewRowPosition__ to *Top*:
 
@@ -106,7 +106,7 @@ Me.RadGridView1.AddNewRowPosition = SystemRowPosition.Bottom
 
 {{endregion}} 
 
-![WinForms RadGridView gridview-rows-new-row 003](images/gridview-rows-new-row003.png)
+![WinForms RadGridView New Row Position](images/gridview-rows-new-row003.png)
 
 ## Accessing the new row
 
@@ -157,7 +157,7 @@ End Sub
 
 As a result, when the end-user clicks the new row, the following values will be filled in for him:
 
-![WinForms RadGridView gridview-rows-new-row 001](images/gridview-rows-new-row001.png)
+![WinForms RadGridView Autofill New Row Values](images/gridview-rows-new-row001.png)
 
 ### Adding with default values only
 

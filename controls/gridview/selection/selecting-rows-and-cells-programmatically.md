@@ -51,9 +51,9 @@ RadGridView1.Rows(2).IsCurrent = True
 
 Both ways to select a single row result in adding this row into the RadGridView.__SelectedRows__ collection.
 
-![WinForms RadGridView gridview-selection-selecting-rows-and-cells-programmatically 001](images/gridview-selection-selecting-rows-and-cells-programmatically001.png)
+![WinForms RadGridView Select Row Programmatically](images/gridview-selection-selecting-rows-and-cells-programmatically001.png)
 
-## Selecting multiple rows
+## Selecting Multiple Rows
 
 To select multiple rows programmatically, set their __IsSelected__ property to `true`:
 
@@ -84,7 +84,7 @@ RadGridView1.Rows(9).IsSelected = True
 {{endregion}} 
 
 
-![WinForms RadGridView gridview-selection-selecting-rows-and-cells-programmatically 002](images/gridview-selection-selecting-rows-and-cells-programmatically002.png)
+![WinForms RadGridView Selecting Multiple Rows Programmatically](images/gridview-selection-selecting-rows-and-cells-programmatically002.png)
 
 In this scenario all, four rows are added to the __SelectedRows__ collection of **RadGridView**. You can access the instances of the selected rows in the __SelectedRows__ collection by their index:
 
@@ -104,7 +104,7 @@ Dim selectedRow As GridViewRowInfo = RadGridView1.SelectedRows(0)
 
 >note The rows are added to the __SelectedRows__ collection in the same order as the order in which you have set the selected rows.
 
-## Selecting a single cell
+## Selecting a Single Cell
 
 You can select cells the same way you select rows – by setting their __IsSelected__ property to `true`:
 
@@ -132,9 +132,9 @@ RadGridView1.Rows(1).Cells(3).IsSelected = True
 
 Selecting a single cell will result in adding this cell into the RadGridView.**SelectedCells** collection.
 
-![WinForms RadGridView gridview-selection-selecting-rows-and-cells-programmatically 003](images/gridview-selection-selecting-rows-and-cells-programmatically003.png)
+![WinForms RadGridView Selecting a single cell Programmatically](images/gridview-selection-selecting-rows-and-cells-programmatically003.png)
 
-## Selecting multiple cells
+## Selecting Multiple Cells
 
 To select multiple cells programmatically, set the __IsSelected__ property of the desired cells to `true`.
 
@@ -162,7 +162,7 @@ RadGridView1.Rows(6).Cells(3).IsSelected = True
 
 {{endregion}} 
 
-![WinForms RadGridView gridview-selection-selecting-rows-and-cells-programmatically 004](images/gridview-selection-selecting-rows-and-cells-programmatically004.png)
+![WinForms RadGridView Selecting Multiple Cells Programmatically](images/gridview-selection-selecting-rows-and-cells-programmatically004.png)
 
 In this scenario, all four cells are added to the __SelectedCells__ collection of **RadGridView**. You can access the instances of the selected cells in the __SelectedCells__ collection by their index:
 

@@ -96,7 +96,7 @@ Me.RadGridView1.MasterTemplate.GroupComparer = New GroupComparer()
 
 {{endregion}} 
 
->caption Figure 2: Custom sort order of group rows.
+>caption Figure 2: Custom Sort Order of Group Rows
 
 ![WinForms RadGridView Custom sort order of group rows](images/gridview-grouping-sorting-group-rows002.png)
 # See Also

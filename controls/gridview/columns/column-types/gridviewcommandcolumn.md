@@ -15,7 +15,7 @@ __GridViewCommandColumn__ displays a button element that responds to user input 
 
 The example below creates two __GridViewCommandColumns__. The first has __UseDefaultText__ set to  *false* and so displays the __FieldName__ value for "ProductName" in the button text. The second has the __UseDefaultText__ property set to *true* and the __DefaultText__ property set to "Order". In both cases the RadGridView.__CommandCellClick__ reacts to a mouse click, casts "sender" to be __GridCommandCellElement__ and makes use of the __Value__ property.
 
-![WinForms RadGridView gridview-columns-gridviewcommandcolumn 001](images/gridview-columns-gridviewcommandcolumn001.png)
+![WinForms RadGridView GridViewCommandColumn](images/gridview-columns-gridviewcommandcolumn001.png)
 
 #### Add GridViewCommandColumn to the grid.
 

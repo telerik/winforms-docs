@@ -103,7 +103,7 @@ Me.RadGridView1.TableElement.EndUpdate()
 
 >caption Figure 3: Setting multiple values.
 
-![WinForms RadGridView Setting multiple values](images/gridview-cells-accessing-cells003.png)
+![WinForms RadGridView Setting Multiple Values](images/gridview-cells-accessing-cells003.png)
 
 # See Also
 * [Accessing and Setting the CurrentCell]({%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%})

@@ -14,7 +14,7 @@ previous_url: radgridview-exporting-data-how-to-add-header-and-footer
 This article will show how you can add header and footer to your exported document. After the document is exported it will look like in figure 1.
 
 >caption Fig.1 The final exported document.
-![WinForms RadGridView The final exported document](images/radgridview-exporting-data-how-to-add-header-and-footer001.png)
+![WinForms RadGridView Final Exported Document](images/radgridview-exporting-data-how-to-add-header-and-footer001.png)
 
 ## 
 

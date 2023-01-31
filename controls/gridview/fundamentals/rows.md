@@ -28,7 +28,7 @@ __Selected row__
 
 You can check if a grid row is in selected state using __GridRowElement.IsSelected__ property. Multiple rows can be selected if the RadGridView __MultiSelect__ property is set to *True*.
 
-![WinForms RadGridView gridview-fundamentals-row 001](images/gridview-fundamentals-row001.png)
+![WinForms RadGridView Selected row](images/gridview-fundamentals-row001.png)
 
 ## Structure Rows
 
@@ -36,19 +36,19 @@ __FilteringRow__
 
 Filtering row will appear automatically when you have [Filtering]({%slug winforms/gridview/filtering/basic-filtering%}) enabled either by __EnableFiltering__ or __GridViewTemplate.EnableFiltering__ properties.
 
-![WinForms RadGridView gridview-fundamentals-overview-of-radgridview-structure 004](images/gridview-fundamentals-overview-of-radgridview-structure004.png)
+![WinForms RadGridView FilteringRow](images/gridview-fundamentals-overview-of-radgridview-structure004.png)
 
 __HeaderRow__
 
 The header element is represented by __GridHeaderRowElement__ object.
 
-![WinForms RadGridView gridview-fundamentals-overview-of-radgridview-structure 002](images/gridview-fundamentals-overview-of-radgridview-structure002.png)
+![WinForms RadGridView HeaderRow](images/gridview-fundamentals-overview-of-radgridview-structure002.png)
 
 __Add New Row__
 
 Depending of the value of the __GridViewTemplate.AddNewRowPosition__ property the new row element appears below the header row or after the data rows.
 
-![WinForms RadGridView gridview-fundamentals-overview-of-radgridview-structure 003](images/gridview-fundamentals-overview-of-radgridview-structure003.png)
+![WinForms RadGridView Add New Row](images/gridview-fundamentals-overview-of-radgridview-structure003.png)
 # See Also
 * [Binding the Grid]({%slug winforms/gridview/fundamentals/binding-the-grid%})
 

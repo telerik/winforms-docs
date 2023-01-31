@@ -101,7 +101,7 @@ Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
 
 >caption Figure 2: Expression based formatting objects.
 
-![WinForms RadGridView Expression based formatting objects](images/gridview-cells-conditional-formatting-cells002.png)
+![WinForms RadGridView Expression Based Formatting Objects](images/gridview-cells-conditional-formatting-cells002.png)
 
 ## Customize ConditionalFormattingForm
 

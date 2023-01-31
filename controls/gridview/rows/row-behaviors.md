@@ -117,7 +117,7 @@ End Sub
 
 
 
-By default, when the user hits the __Delete__ key over a certain row, the row is deleted. We will extend this functionality by notifying the user when he tries to delete a parent row, which __ChildRows__ collection is not empty. For this purpose, it is necessary to create a custom grid behavior. To do this, create a new class named __CustomGridHierarchyRowBehavior__. As we are currently using a hierarchical grid, our class should inherit the __GridHierarchyRowBehavior__. Override the __ProcessDeleteKey__ method in order to display a MessageBox and proceed with the delete operation after confirmation only:<br>![WinForms RadGridView gridview-rows-row-behaviors 001](images/gridview-rows-row-behaviors001.gif)
+By default, when the user hits the __Delete__ key over a certain row, the row is deleted. We will extend this functionality by notifying the user when he tries to delete a parent row, which __ChildRows__ collection is not empty. For this purpose, it is necessary to create a custom grid behavior. To do this, create a new class named __CustomGridHierarchyRowBehavior__. As we are currently using a hierarchical grid, our class should inherit the __GridHierarchyRowBehavior__. Override the __ProcessDeleteKey__ method in order to display a MessageBox and proceed with the delete operation after confirmation only:<br>![WinForms RadGridView Using Custom Behavior](images/gridview-rows-row-behaviors001.gif)
 
 {{source=..\SamplesCS\GridView\Rows\RowBehaviorsForm.cs region=ProcessDeleteKey}} 
 {{source=..\SamplesVB\GridView\Rows\RowBehaviorsForm.vb region=ProcessDeleteKey}} 
@@ -246,7 +246,7 @@ End Function
 {{endregion}} 
 
 
-![WinForms RadGridView gridview-rows-row-behaviors 002](images/gridview-rows-row-behaviors002.png)
+![WinForms RadGridView Show Context Menu](images/gridview-rows-row-behaviors002.png)
 
 __RadGridView__ supports rows/cells navigation by default, using the arrow keys. It is possible to customize this behavior as well. In the __CustomGridHierarchyRowBehavior__ class override the __ProcessKey__ method and stop the base grid logic for navigation upwards/downwards if the current row belongs to the __MasterTemplate__ and its *“IsActive”* cell value is set to *false*:
 

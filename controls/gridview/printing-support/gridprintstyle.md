@@ -63,7 +63,7 @@ Me.RadGridView1.Print()
 
 {{endregion}} 
 
-![WinForms RadGridView gridview-printing-support-gridprintstyle](images/gridview-printing-support-gridprintstyle.png)
+![WinForms RadGridView GridPrintStyle](images/gridview-printing-support-gridprintstyle.png)
 
 ## Multi-page printing
 
@@ -113,13 +113,13 @@ This code defines four pages where the content of the pages is as follows:
 
 You should note that one column can appear on several pages. Here is the result of the above code when previewed in the PrintPreviewDialog:
 
-![WinForms RadGridView gridview-printing-support-gridprintstyle 003](images/gridview-printing-support-gridprintstyle003.png)
+![WinForms RadGridView PrintPreview Page 1](images/gridview-printing-support-gridprintstyle003.png)
 
-![WinForms RadGridView gridview-printing-support-gridprintstyle 004](images/gridview-printing-support-gridprintstyle004.png)
+![WinForms RadGridView PrintPreview Page 2](images/gridview-printing-support-gridprintstyle004.png)
 
-![WinForms RadGridView gridview-printing-support-gridprintstyle 005](images/gridview-printing-support-gridprintstyle005.png)
+![WinForms RadGridView PrintPreview Page 3](images/gridview-printing-support-gridprintstyle005.png)
 
-![WinForms RadGridView gridview-printing-support-gridprintstyle 006](images/gridview-printing-support-gridprintstyle006.png)
+![WinForms RadGridView PrintPreview Page 4](images/gridview-printing-support-gridprintstyle006.png)
 
 # See Also
 * [Events and Customization]({%slug winforms/gridview/printing-support/events-and-customization%})

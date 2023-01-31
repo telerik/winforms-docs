@@ -31,7 +31,7 @@ By default, **RadGridView** supports rows drag and drop functionality in unbound
 
 >caption Figure 1: Drag and drop in bound mode
 
-![WinForms RadGridView Drag and drop in bound mode](images/gridview-drag-and-drop-radgridviewdragdropservice001.gif)
+![WinForms RadGridView Drag-Drop Bound Mode](images/gridview-drag-and-drop-radgridviewdragdropservice001.gif)
 
 
 ## Drag and Drop in Bound Mode

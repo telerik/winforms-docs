@@ -3,7 +3,7 @@ title: Multiple Selection
 page_title: Multiple Selection - RadGridView
 description: RadGridView allows the user to select more than one item at a time from the displayed data.
 slug: winforms/gridview/selection/multiple-selection
-tags: multiple,selection
+tags: multiple,selection,lasso,selectionmode
 published: True
 position: 1
 previous_url: gridview-selection-multiple-selection
@@ -13,7 +13,7 @@ previous_url: gridview-selection-multiple-selection
 
 RadGridView allows the user to select more than one item at a time from the displayed data. By default, this functionality is disabled and in order to turn it on, you have to set the __MultiSelect__ property to *true*. 
 
-## Multiple row selection
+## Multiple Row Selection
 
 In order to enable multiple row selection, after setting the MultiSelect property to true, you have to set the SelectionMode to GridViewSelectionMode.FullRowSelect:
 
@@ -39,11 +39,11 @@ When these settings are applied, you have several options to make a multiple sel
 
 * Hold the Ctrl key and click the rows that you want to select.
 
-* In order to mark a block selection, mark the first row of the desired selection, hold Shift and click on the last row of the desired selection.<br>![WinForms RadGridView gridview-selection-multiple-selection 001](images/gridview-selection-multiple-selection001.png)
+* In order to mark a block selection, mark the first row of the desired selection, hold Shift and click on the last row of the desired selection.<br>![WinForms RadGridView Multiple Selection](images/gridview-selection-multiple-selection001.png)
 
 >note When using GridViewSelectionMode.**FullRowSelect**, all the selected rows are available in the RadGridView.**SelectedRows** collection.
 
-## Multiple cell selection
+## Multiple Cell Selection
 
 In order to enable multiple cell selection, after setting the MultiSelect property to true, you have to set the SelectionMode to GridViewSelectionMode.CellSelect:
 
@@ -71,12 +71,12 @@ Once you have applied these setting, the options for selection are:
 
 * In order to mark a block selection, mark the first cell of the desired selection, hold `Shift` and click on the last cell of the desired selection. Please note that this will select all the cells in the rectangle between the first and the second selected cell.
  
-![WinForms RadGridView gridview-selection-multiple-selection 002](images/gridview-selection-multiple-selection002.png)
+![WinForms RadGridView Multiple Cell Selection](images/gridview-selection-multiple-selection002.png)
 
 >note When using GridViewSelectionMode.**CellSelect**, all the selected cells are available in the RadGridView.**SelectedCells** collection.
 
 If the __MultiSelect__ property is enabled, you can make a multiple selection by holding the left mouse button down and moving the mouse making a rectangle. This will select all rows (cells) in the created rectangle.
-![WinForms RadGridView gridview-selection-multiple-selection 003](images/gridview-selection-multiple-selection003.gif)
+![WinForms RadGridView Lasso Selection](images/gridview-selection-multiple-selection003.gif)
 ## CurrentRow and CurrentCell when multiple selection is used
 
 When multiple row (cell) selection is used, the current row(cell) value will be equal to the last cell (row) clicked when a selection is made. 

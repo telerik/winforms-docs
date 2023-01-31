@@ -13,11 +13,11 @@ previous_url: gridview-filtering-filtering-row
 
 The __GridFilterRowElement__ is the row that holds the filtering boxes. It appears automatically when you enable filtering (__EnableFiltering__ is __true__). __GridFilterRowElement__ could be pinned at the top or bottom as well as made scrollable.
 
-![WinForms RadGridView gridview-filtering-filtering-row 001](images/gridview-filtering-filtering-row001.png)
+![WinForms RadGridView Filtering Row](images/gridview-filtering-filtering-row001.png)
 
 You can hide the operator text of the filter cells by setting the __ShowFilterCellOperator__ property to *false*:
 
-#### Hide operator text.
+## Hide Operator Text
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=filterOperatorText}} 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=filterOperatorText}} 
@@ -37,7 +37,7 @@ Me.RadGridView1.MasterTemplate.ShowFilterCellOperatorText = False
 
 You can also hide the entire __GridFilterRowElement__: 
 
-#### Hide filter row
+## Hide filter row
 
 {{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=hidingTheFilterRow}} 
 {{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=hidingTheFilterRow}} 
@@ -56,11 +56,11 @@ Me.RadGridView1.ShowFilteringRow = False
 You can still add [FilterDescriptors]({%slug winforms/gridview/filtering/setting-filters-programmatically-(simple-descriptors)%}) programmatically when the __GridFilterRowElement__ is hidden.
 
 
-### Filter Menu
+## Filter Menu
 
 The menu with the filter operators is actually a context menu. So if you want to modify it you need to use the __ContextMenuOpening__ event. Detailed information is available here: [Modifying the Default Context Menu]({%slug winforms/gridview/context-menus/modifying-the-default-context-menu%})
 
-# See Also
+## See Also
 
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 

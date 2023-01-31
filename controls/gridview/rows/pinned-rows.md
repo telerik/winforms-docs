@@ -70,7 +70,7 @@ Next
 
 __RadGridView__ rows can be pinned so that the rows appear anchored to the top of the grid. To pin a particular row, set the __IsPinned__ property of a __Rows__ collection item to  *true*.
 
-The example below shows pinning rows in the grid.<br> ![WinForms RadGridView gridview-rows-pinned-rows 002](images/gridview-rows-pinned-rows002.png)
+The example below shows pinning rows in the grid.<br> ![WinForms RadGridView Pinned Rows](images/gridview-rows-pinned-rows002.png)
 
 
 # See Also

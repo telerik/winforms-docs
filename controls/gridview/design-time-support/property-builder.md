@@ -13,7 +13,7 @@ previous_url: gridview-design-time-support-property-builder
 
 To quickly create and arrange node structure and appearance invoke the Property Builder from the context menu or the [Smart Tag]({%slug winforms/gridview/design-time-support/smart-tag%}). The figure below diagrams the general layout and functions of the Property Builder:
 
-![WinForms RadGridView gridview-design-time-support-property-builder 001](images/gridview-design-time-support-property-builder001.png)
+![WinForms RadGridView Property Builder](images/gridview-design-time-support-property-builder001.png)
 
 ### __Command Bar__
 

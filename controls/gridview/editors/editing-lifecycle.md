@@ -28,7 +28,7 @@ By default, **RadGridView** starts [editing]({%slug winforms/gridview/editors/ed
 
 >note When the grid is in edit mode and the user navigates to another cell either by pressing Tab or by clicking a cell, the editor will be activated for the new current cell (if the **BeginEditMode** property value is not **BeginEditProgrammatically**). 
 
-# See Also
+## See Also
 
 * [Customizing editor behavior]({%slug winforms/gridview/editors/customizing-editor-behavior%})
 

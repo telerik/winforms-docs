@@ -15,19 +15,19 @@ previous_url: gridview-fundamentals-overview-of-radgridview-structure
 
 Each row in __RadGridView__ is represented by __GridRowElement__ class.
 
-![WinForms RadGridView gridview-fundamentals-overview-of-radgridview-structure 001](images/gridview-fundamentals-overview-of-radgridview-structure001.png)
+![WinForms RadGridView Row](images/gridview-fundamentals-overview-of-radgridview-structure001.png)
 
 ## HeaderRow
 
 The header element is represented by __GridHeaderRowElement__ class.
 
-![WinForms RadGridView gridview-fundamentals-overview-of-radgridview-structure 002](images/gridview-fundamentals-overview-of-radgridview-structure002.png)
+![WinForms RadGridView HeaderRow](images/gridview-fundamentals-overview-of-radgridview-structure002.png)
 
 ## NewRow
 
 Depending on the value of __GridViewTemplate.AddNewRowPosition__ property, the new row element appears below the header row or after the data rows. 
 
-![WinForms RadGridView gridview-fundamentals-overview-of-radgridview-structure 003](images/gridview-fundamentals-overview-of-radgridview-structure003.png)
+![WinForms RadGridView NewRow](images/gridview-fundamentals-overview-of-radgridview-structure003.png)
 
 ## FilteringRow
 
@@ -39,31 +39,31 @@ Depending on the value of __GridViewTemplate.AddNewRowPosition__ property, the n
 
 This column appears when the grid data is grouped or there is a hierarchical structure to facilitate the expand/collapse functionality. The expand column is always placed in front of all other grid content columns and cannot be moved.
 
-![WinForms RadGridView gridview-fundamentals-overview-of-radgridview-structure 005](images/gridview-fundamentals-overview-of-radgridview-structure005.png)
+![WinForms RadGridView GridViewIndentColumn](images/gridview-fundamentals-overview-of-radgridview-structure005.png)
 
 ## GridViewDataColumn
 
 Displays a column bound to a field in a data source.
 
-![WinForms RadGridView gridview-fundamentals-overview-of-radgridview-structure 006](images/gridview-fundamentals-overview-of-radgridview-structure006.png)
+![WinForms RadGridView GridViewDataColumn](images/gridview-fundamentals-overview-of-radgridview-structure006.png)
 
 ## MasterTemplate
 
 __MasterTemplate__ is the top most __GridViewTemplate__ in the hierarchical structure which stores the columns and rows at the root grid level. It contains all inner __GridViewTemplates__(__GridViewTemplate.Templates__ collection). When there is no hierarchical structure, only the __MasterTemplate__ is displayed. 
 
-![WinForms RadGridView gridview-fundamentals-overview-of-radgridview-structure 007](images/gridview-fundamentals-overview-of-radgridview-structure007.png)
+![WinForms RadGridView MasterTemplate](images/gridview-fundamentals-overview-of-radgridview-structure007.png)
 
 ## GridViewTemplate
 
 __GridViewTemplate__ is a basic class containing settings for a single level of the hierarchical structure.
 
-![WinForms RadGridView gridview-fundamentals-overview-of-radgridview-structure 008](images/gridview-fundamentals-overview-of-radgridview-structure008.png)
+![WinForms RadGridView GridViewTemplate](images/gridview-fundamentals-overview-of-radgridview-structure008.png)
 
 ## GroupPanel
 
 When you want to enable the group-by functionality for the end-user, you need to set __RadGridView.GroupingEnabled__ to *true* and __GridViewTemplate.EnableGrouping__.  If you want to prevent the end-user to drag column header into the __GroupPanel,__  set __GridViewTemplate.AllowDragToGroup__ to *false*. __RadGridView.ShowGroupPanel__ shows/hides the group panel. You can access the group panel using __RadGridView.GridElement.HeaderElement.GroupPanel__ property. 
 
-![WinForms RadGridView gridview-fundamentals-overview-of-radgridview-structure 010](images/gridview-fundamentals-overview-of-radgridview-structure010.png)
+![WinForms RadGridView GroupPanel](images/gridview-fundamentals-overview-of-radgridview-structure010.png)
 # See Also
 * [Binding the Grid]({%slug winforms/gridview/fundamentals/binding-the-grid%})
 

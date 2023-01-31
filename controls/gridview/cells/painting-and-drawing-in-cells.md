@@ -60,6 +60,7 @@ Private Sub RadGridView1_CellPaint(ByVal sender As Object, ByVal e As Telerik.Wi
 >caption Figure 1: Painting in cells
 
 ![WinForms RadGridView Painting in cells](images/gridview-cells-painting-and-drawing-in-cells001.png)
+
 # See Also
 * [Accessing and Setting the CurrentCell]({%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%})
 

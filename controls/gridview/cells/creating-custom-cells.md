@@ -324,7 +324,7 @@ End Function
 
 >caption Figure 2: The new custom cell is shown in RadgridView.
 
-![WinForms RadGridView The new custom cell is shown in RadgridView](images/gridview-cells-custom-cell002.png)
+![WinForms RadGridView The new custom cell is shown](images/gridview-cells-custom-cell002.png)
 
 ## Custom group cell example
 

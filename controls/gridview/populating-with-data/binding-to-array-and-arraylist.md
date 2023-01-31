@@ -20,7 +20,7 @@ The examples below demonstrate binding to a generic list, an arrays of custom ob
 
 The example below creates an __ArrayList__ of generic objects initialized with five values and assigned as a __DataSource__ to the __RadGridView__.
 
-![WinForms RadGridView gridview-populating-with-data-binding-to-array-and-arraylist 001](images/gridview-populating-with-data-binding-to-array-and-arraylist001.png)
+![WinForms RadGridView Binding to a Array List](images/gridview-populating-with-data-binding-to-array-and-arraylist001.png)
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToSimpleArrayClass}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToSimpleArrayClass}} 
@@ -96,7 +96,7 @@ Arrays of objects containing [bindable types]({%slug winforms/gridview/populati
 
 The example below defines a "MyObject" class containing one integer and one string property. The snippet of code at end of the example creates an array of MyObject, initializes the array with two objects and assigns the array to the __DataSource__. The MyObject class would typically be placed in its own separate class file and the array creation, initialization and assignment code might be placed in a form's `Load` event handler.
 
- ![WinForms RadGridView gridview-populating-with-data-binding-to-array-and-arraylist 002](images/gridview-populating-with-data-binding-to-array-and-arraylist002.png)
+ ![WinForms RadGridView Binding to an Array of Objects](images/gridview-populating-with-data-binding-to-array-and-arraylist002.png)
 
 {{source=..\SamplesCS\GridView\PopulatingWithData\BindingToArrayAndArrayList.cs region=bindingToArrayOfObjectsClass}} 
 {{source=..\SamplesVB\GridView\PopulatingWithData\BindingToArrayAndArrayList.vb region=bindingToArrayOfObjectsClass}} 

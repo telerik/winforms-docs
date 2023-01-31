@@ -13,7 +13,7 @@ previous_url: gridview-columns-gridviewsparklinecolumn
 
 **GridViewSparklineColumn** allows a Sparkline chart to be displayed in the **RadGridView**. **GridViewSparklineColumn** can be one of the following types: [SparkAreaSeries]({%slug radsparkline-sparkareaseries%}), [SparkBarSeries]({%slug radsparkline-sparkbarseries%}), [SparkLineSeries]({%slug radsparkline-sparklineseries%}), [SparkScatterSeries]({%slug radsparkline-sparkscatterseries%}), [SparkWinLossSeries]({%slug radsparkline-sparkwinlossseries%}).
 
-![WinForms RadGridView gridview-columns-gridviewsparklinecolumn 001](images/gridview-columns-sparkline001.png)
+![WinForms RadGridView GridViewSparklineColumn](images/gridview-columns-sparkline001.png)
 
 #### Add GridViewSparklineColumn to the grid.
 The following code snippet demonstrates how to create and add **GridViewSparklineColumn** to **RadGridView** with some sample data added in it:
@@ -210,7 +210,7 @@ this.radGridView1.Columns.Add(sparkLineColumn);
         dt.Rows.Add(i, "Row" & i, pointsValues)
     Next
 
-    Ме.RadGridView1.MasterTemplate.AutoGenerateColumns = False
+    Me.RadGridView1.MasterTemplate.AutoGenerateColumns = False
     Me.RadGridView1.DataSource = dt
     Dim sparkLineColumn As GridViewSparklineColumn = New GridViewSparklineColumn("Points")
     sparkLineColumn.SeriesType = SparkSeriesType.Line
@@ -227,7 +227,7 @@ this.radGridView1.Columns.Add(sparkLineColumn);
 
 **GridViewSparklineColumn** can be customized by making use of **CellFormatting** event. Here is an example how to make the even rows in **GridViewSparklineColumn** to desplay bar series, and the odd rows to display line series. Due to the UI Virtualization, an `if-else` statement is used to reset the series.
 
-![WinForms RadGridView gridview-columns-gridviewsparklinecolumn 002](images/gridview-columns-sparkline002.png)
+![WinForms RadGridView GridViewSparklineColumn Customize](images/gridview-columns-sparkline002.png)
 
 ````C#
 private void RadGridView1_CellFormatting(object sender, CellFormattingEventArgs e)

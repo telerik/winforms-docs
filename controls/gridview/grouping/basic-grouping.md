@@ -93,7 +93,7 @@ Me.RadGridView1.ShowGroupPanelScrollbars = True
 {{endregion}} 
 |ShowGroupPanelScrollbars = *false* |ShowGroupPanelScrollbars = *true* |
 | ------ | ------ |
-|![WinForms RadGridView gridview-grouping-basic-grouping 002](images/gridview-grouping-basic-grouping002.png)|![WinForms RadGridView gridview-grouping-basic-grouping 003](images/gridview-grouping-basic-grouping003.png)|
+|![WinForms RadGridView ShowGroupPanelScrollbars False](images/gridview-grouping-basic-grouping002.png)|![WinForms RadGridView ShowGroupPanelScrollbars True](images/gridview-grouping-basic-grouping003.png)|
 # See Also
 * [Custom Grouping]({%slug winforms/gridview/grouping/custom-grouping%})
 

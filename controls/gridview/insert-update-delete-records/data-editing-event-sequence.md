@@ -54,7 +54,8 @@ Validated
 Validated
 
 CellEndEdit
-# See Also
+
+## See Also
 * [Data Editing Support]({%slug winforms/gridview/insert/update/delete-records/data-editing-support%})
 
 * [Insert/Update/Delete Using Controls API]({%slug winforms/gridview/insert/update/delete-records/insert/update/delete-using-controls-api%})

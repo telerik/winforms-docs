@@ -9,11 +9,11 @@ position: 6
 previous_url: gridview-hirarchical-grid-hierarchy-of-one-to-many-relations
 ---
 
-# Hierarchy of one to many relations
+# Hierarchy of one to Many Relations
 
 __RadGridView__ supports binding to a hierarchy containing one to many relations. The result is presented in tabs inside child views.
 
-![WinForms RadGridView grid-hierarchical-grid-hierarchy-of-one-to-many-relations 001](images/grid-hierarchical-grid-hierarchy-of-one-to-many-relations001.png)
+![WinForms RadGridView Hierarchy of one to Many Relations](images/grid-hierarchical-grid-hierarchy-of-one-to-many-relations001.png)
 
 Follow these steps to setup the hierarchy:
 
@@ -100,7 +100,7 @@ End Sub
 >
 
 
-## Formatting tabs
+## Formatting Tabs
 
 In some cases you may want to set custom text to the tabs of the child views different than the text of the template's caption. In this case, the solution is to use the [Formatting events]({%slug winforms/gridview/cells/formatting-cells%}) that RadGridView exposes, and more specifically, the __ViewCellFormatting__ event. This event will give you access to the detail cell that contains the whole `RadPageViewElement` and from this element you will be able to set the text of each tab separately. For example, if we need to display the count of the rows in each view, we can use the following code snippet in order to apply our custom text:
 
@@ -143,7 +143,7 @@ End Sub
 
 The result is shown on the image below:
 
-![WinForms RadGridView gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 002](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations002.png)
+![WinForms RadGridView Formatting Tabs](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations002.png)
 
 >note The ChildViewTabsPosition property gets or sets the position to place tabs for child views related with this template.
 >
@@ -154,18 +154,18 @@ The result is shown on the image below:
 We can use the __RadGridView.TableElement.PageViewMode__ property to change how the tabs are visualised in the child table.
 
 #### __Strip View Mode__
-![WinForms RadGridView gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 003](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations003.png)
+![WinForms RadGridView Strip View Mode](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations003.png)
 
 #### __Stack View Mode__
-![WinForms RadGridView gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 004](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations004.png)
+![WinForms RadGridView Stack View Mode](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations004.png)
 
 #### __Outlook View Mode__
-![WinForms RadGridView gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 005](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations005.png)
+![WinForms RadGridView Outlook View Mode](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations005.png)
 
 #### __Explorer Bar View Mode__
-![WinForms RadGridView gridview-hirarchical-grid-hierarchy-of-one-to-many-relations 006](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations006.png)
+![WinForms RadGridView Explorer Bar View Mode](images/gridview-hirarchical-grid-hierarchy-of-one-to-many-relations006.png)
 
-# See Also
+## See Also
 * [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
 
 * [Binding to Hierarchical Data Programmatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically%})

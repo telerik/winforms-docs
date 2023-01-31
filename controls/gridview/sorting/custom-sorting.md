@@ -92,7 +92,7 @@ End Sub
 {{endregion}} 
 
 
-![WinForms RadGridView gridview-sorting-custom-sorting 001](images/gridview-sorting-custom-sorting001.png)
+![WinForms RadGridView Default Sorting](images/gridview-sorting-custom-sorting001.png)
 
 The following example demonstrates the usage of the __Handled__ property of the __CustomSorting__ event arguments. It uses custom sorting to sort the rows ascending by the values of the `Freight` column. This sorting is applied to the rows that have a value in the `Freight` column greater than "0.33". The rest are handled by the defined __SortDescriptor__ and sorted descending by the values of the `Freight` column.
 
@@ -162,7 +162,7 @@ End Sub
 {{endregion}} 
 
 
-![WinForms RadGridView gridview-sorting-custom-sorting 002](images/gridview-sorting-custom-sorting002.png)
+![WinForms RadGridView Custom Sorting Event](images/gridview-sorting-custom-sorting002.png)
 
 ## Implementing sorting mechanism by using SortComparer
 
@@ -187,10 +187,9 @@ Me.RadGridView1.MasterTemplate.SortComparer = New CustomComparer()
 {{endregion}} 
 
 
-![WinForms RadGridView gridview-sorting-custom-sorting 003](images/gridview-sorting-custom-sorting003.png)
+![WinForms RadGridView Using Custom SortComparer](images/gridview-sorting-custom-sorting003.png)
 
-## Create custom sort order criteria for a particular column.
-      
+## Create Custom Sort Order Criteria for a Particular Column.
 
 You can use the custom sorting functionality to change the default sorting behavior for a particular column. This will leave the sorting functionality for the other columns intact and the user will be able to sort them in the usual way. However when the user presses the column header cell for the column that we have changed the sort criteria, it will be sorted by the custom criteria. To achieve this we can use the __SortDescriptors__ collection of __RadGridView__. For example you can order the rows by the text length in the *Customer* column with the following code:
 
@@ -259,7 +258,7 @@ void radGridView1_CustomSorting(object sender, Telerik.WinControls.UI.GridViewCu
 {{endregion}} 
 
 
-![WinForms RadGridView gridview-sorting-custom-sorting 005](images/gridview-sorting-custom-sorting005.png)
+![WinForms RadGridView Column Custom Sort Order Criteria](images/gridview-sorting-custom-sorting005.png)
 # See Also
 * [Basic Sorting]({%slug winforms/gridview/sorting/basic-sorting%})
 

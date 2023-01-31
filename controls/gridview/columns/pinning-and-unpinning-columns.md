@@ -70,9 +70,9 @@ Me.RadGridView1.Columns("LastName").PinPosition = Telerik.WinControls.UI.PinnedC
 
 >caption Figure 3: Reordering pinned columns. 
 
-![WinForms RadGridView Reordering pinned columns](images/gridview-columns-pinning-and-unpinning-columns003.png)
+![WinForms RadGridView Reordering Pinned Columns](images/gridview-columns-pinning-and-unpinning-columns003.png)
 
-![WinForms RadGridView gridview-columns-pinning-and-unpinning-columns 004](images/gridview-columns-pinning-and-unpinning-columns004.png)
+![WinForms RadGridView Reordered Pinned Columns](images/gridview-columns-pinning-and-unpinning-columns004.png)
 # See Also
 * [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
 

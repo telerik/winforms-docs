@@ -13,7 +13,7 @@ previous_url: gridview-hierarchical-grid-self-referencing-hierarchy
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadGridView Binding RadGridView to a Self Referencing Hierarchy](http://tv.telerik.com/watch/winforms/binding-radgridview-for-winforms-to-self-referencing-hierarchy)<br>In this video, you will learn how to display a self referencing hierarchy inside of RadGridView for WinForms.|![WinForms RadGridView gridview-hierarchical-grid-self-referencing-hierarchy 002](images/gridview-hierarchical-grid-self-referencing-hierarchy002.png)|
+|[Binding RadGridView to a Self Referencing Hierarchy](http://tv.telerik.com/watch/winforms/binding-radgridview-for-winforms-to-self-referencing-hierarchy)<br>In this video, you will learn how to display a self referencing hierarchy inside of RadGridView for WinForms.|![WinForms RadGridView Self-Referencing Hierarchy Tutorial](images/gridview-hierarchical-grid-self-referencing-hierarchy002.png)|
 
 RadGridView allows you to define a relation that points back to the same table. In the cases when the hierarchical data is build from one type of items you can use a self-referencing RadGridView to display the data. This modes gives you all the functionality a TreeList control would provide, with a lot more.
 
@@ -21,7 +21,7 @@ RadGridView allows you to define a relation that points back to the same table. 
 
 The following example demonstrates how RadGridView displays a hierarchy based on the data provided by the file system where one folder can have files and folders that can have other files and folders, etc.
 
-![WinForms RadGridView gridview-hierarchical-grid-self-referencing-hierarchy 001](images/gridview-hierarchical-grid-self-referencing-hierarchy001.png)
+![WinForms RadGridView Self-Referencing Example](images/gridview-hierarchical-grid-self-referencing-hierarchy001.png)
 
 In order to achieve the look of the RadGridView from the above image, you need to follow these steps:
 
@@ -326,7 +326,7 @@ End Sub
 
 It is possible to put the self-reference expander in any column by setting the __SelfReferenceExpanderColumn__ property of the __MasterTemplate__: 
 
-![WinForms RadGridView gridview-hierarchical-grid-self-referencing-hierarchy 003](images/gridview-hierarchical-grid-self-referencing-hierarchy003.png)
+![WinForms RadGridView SelfReferenceExpanderColumn](images/gridview-hierarchical-grid-self-referencing-hierarchy003.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\SelfReferencingHierarchy.cs region=SelfReferenceExpanderColumn}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\SelfReferencingHierarchy.vb region=SelfReferenceExpanderColumn}} 
@@ -366,7 +366,7 @@ End Sub
 
 
 
-# See Also
+## See Also
 * [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
 
 * [Binding to Hierarchical Data Programmatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically%})

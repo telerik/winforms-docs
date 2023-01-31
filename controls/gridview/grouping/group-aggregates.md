@@ -21,7 +21,7 @@ The text of the group header row is a formatted string with the following parame
 
 You can define the format of the group header row by using the __GroupDescriptor Format__ property. Its default value is __“{0}: {1}”__. The following two examples demonstrate how you can use the group aggregates. Full list of the available expressions can be found here:[http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx](http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx)
 
-#### Example 1: adding the count aggregate.
+#### Example 1: Adding the Count Aggregate
 
 {{source=..\SamplesCS\GridView\Grouping\GroupAggregates.cs region=GroupAggregates}} 
 {{source=..\SamplesVB\GridView\Grouping\GroupAggregates.vb region=GroupAggregates}} 
@@ -45,10 +45,10 @@ Me.RadGridView1.GroupDescriptors.Add(descriptor)
 
 {{endregion}} 
 
-![WinForms RadGridView gridview-group-aggregates 001](images/gridview-group-aggregates001.png)
+![WinForms RadGridView Adding the Count Aggregate](images/gridview-group-aggregates001.png)
 
 
-#### Example 2: Adding and formatting several aggregates.
+#### Example 2: Adding and Formatting Several Aggregates
  
 {{source=..\SamplesCS\GridView\Grouping\GroupAggregates1.cs region=GroupAggregates1}} 
 {{source=..\SamplesVB\GridView\Grouping\GroupAggregates1.vb region=GroupAggregates1}} 
@@ -77,7 +77,7 @@ Me.RadGridView1.GroupDescriptors.Add(descriptor)
 {{endregion}} 
 
 
-![WinForms RadGridView gridview-group-aggregates 002](images/gridview-group-aggregates002.png)
+![WinForms RadGridView Adding and Formatting Several Aggregates](images/gridview-group-aggregates002.png)
 # See Also
 * [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
 

@@ -86,7 +86,7 @@ The following properties are controlling the errors visibility:
 
 **RadGridView** also offers the **CloseEditorWhenValidationFails** property which indicates whether the active editor should close when validation process fails.
 
-# See Also
+## See Also
 
 * [API]({%slug winforms/gridview/editors/api%})
 

@@ -125,9 +125,9 @@ End Using
 >
 
 
->caption Figure: Image export
+>caption Figure: Image Export
 
-![WinForms RadGridView Image export](images/gridview-exporting-data-spread-export006.png)
+![WinForms RadGridView Image Export](images/gridview-exporting-data-spread-export006.png)
 
 
 ## Properties
@@ -545,7 +545,7 @@ End Sub
 {{endregion}} 
 
 
-# See Also
+## See Also
 * [Export Data in a Group to Excel]({%slug winforms/gridview/exporting-data/export-data-in-a-group-to-excel%})
 
 * [Export to CSV]({%slug winforms/gridview/exporting-data/export-to-csv%})

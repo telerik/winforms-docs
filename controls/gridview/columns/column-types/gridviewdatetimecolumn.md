@@ -13,9 +13,9 @@ previous_url: gridview-columns-gridviewdatetimecolumn
 
 __GridViewDateTimeColumn__ provides date entry and formatting for DateTime data types. You may enter the date and time directly into the editor or drop down the calendar to choose a date. The __FormatString__ property sets the format of the date when the date is not currently being edited. The __CustomFormat__ property is used to format the date once the user clicks on the cell to invoke the editor.
 
->caption Figure 1: GridViewDateTimeColumn in edit mode
+>caption Figure 1: GridViewDateTimeColumn in Edit Mode
 
-![WinForms RadGridView GridViewDateTimeColumn in edit mode](images/gridview-columns-gridviewdatetimecolumn001.png)
+![WinForms RadGridView GridViewDateTimeColumn in Edit Mode](images/gridview-columns-gridviewdatetimecolumn001.png)
 
 #### Formatting the date.
 
