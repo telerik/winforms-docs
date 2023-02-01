@@ -40,7 +40,7 @@ Me.radRangeSelector1.UpdateMode = UpdateMode.Deferred
 {{endregion}}
 
 >caption Figure 2: UpdateMode.Deferred
-![WinForms RadRangeSelector UpdateModeDeferred](images/rangeselector-properties-and-events002.gif)
+![WinForms RadRangeSelector UpdateMode Deferred](images/rangeselector-properties-and-events002.gif)
 
 ####  UpdateMode.Defferred
 
@@ -157,7 +157,7 @@ Me.radRangeSelector1.RangeSelectorElement.AssociatedElement = New RangeSelectorV
 
 {{endregion}} 
 
-# Events
+## Events
 
 There are several events that you will find useful in the context of RadRangeSelector:
 
@@ -216,7 +216,7 @@ End Sub
 
 {{endregion}}
 
-# Custom Rendering
+## Custom Rendering
 
 **RadRangeSelector** can also be setup to use a custom renderer just as the stand-alone **RadChartView** control. In order to utilize this feature, one needs to subscribe to the **CreateRenderer** event of the **RangeSelectorViewElement** instance.
 

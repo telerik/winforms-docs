@@ -23,7 +23,7 @@ The __RadRichTextEditor__ allows you to choose between several layout modes.
 
 >caption Figure 1: DocumentLayoutMode.Paged
 
-![WinForms RadRichTextEditor DocumentLayoutModePaged](images/richtexteditor-layout-modes001.png)
+![WinForms RadRichTextEditor DocumentLayoutMode Paged](images/richtexteditor-layout-modes001.png)
 
 When using the paged mode, the content of the edited document is divided into pages. The size and layout of each page are defined by the __DefaultPageLayoutSettings__ property of [RadDocument]({%slug winforms/richtexteditor-/document-elements/raddocument%}) and specifically - the __Width__ and __Height__ properties of the __PageLayoutSettings__ object.
         
@@ -35,7 +35,7 @@ In __Paged__ mode, resizing a __RadRichTextEditor__ will not affect the document
 
 >caption Figure 2: DocumentLayoutMode.Flow
 
-![WinForms RadRichTextEditor DocumentLayoutModeFlow](images/richtexteditor-layout-modes002.png)
+![WinForms RadRichTextEditor DocumentLayoutMode Flow](images/richtexteditor-layout-modes002.png)
 
 In __Flow__ layout mode, the document content is not divided into pages. Instead the whole content is displayed as in a  TextBox or RichTextBox. This layout option resembles __MS Word’s Web-Layout__ mode. The width of the document is the same as that of the __RadRichTextEditor__ and changing the control’s width will also resize the content of the document.
 

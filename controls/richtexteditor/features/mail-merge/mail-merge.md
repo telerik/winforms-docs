@@ -111,11 +111,11 @@ Me.radRichTextEditor1.Document.MailMergeDataSource.ItemsSource = (New ExamplesDa
 
 MailMerge can be done both [using the UI](#mailmerging-using-the-ui:) and [programmatically.](#programmatic-mail-merge)
 
-### MailMerging using the UI:
+### MailMerging using the UI
 
 **RadRichTextEditor** comes with a predefined UI for inserting merge fields, previewing the results and fulfilling the merge. It is separated in the  Mailings tab:
 
-![richtexteditor-features-mail-merge 001](/images/richtexteditor-features-mail-merge001.png)
+![WinForms RadRichTextEditor MailMerging UI](/images/richtexteditor-features-mail-merge001.png)
 
 The options in the drop down button **InsertMergeField** are automatically populated to match the properties of the objects which are used as data source. You can also switch the display mode of the merge fields from *FieldCodes* (as in the picture) to *FieldNames* (e.g. "<<FirstName>>") or preview the results.
             

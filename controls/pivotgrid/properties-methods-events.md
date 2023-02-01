@@ -54,7 +54,7 @@ position: 5
 |**TableLayoutState**|Gets or sets an object which holds the state of the resized and the collapsed rows and columns. Setting the object will apply the state and will update the layout.|
 |**LayoutState**|Gets or sets an object which holds the state of the resized and the collapsed rows and columns. Setting the object will apply the state and will update the layout.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |------|------|
@@ -68,7 +68,7 @@ position: 5
 |**SaveLayout**|Stores RadPivotGrid properties, sub-objects and their properties in XML format, using the serialization information provided by the property|
 |**LoadLayout**|Loads RadPivotGrid properties, sub-objects and their properties from XML file, using the serialization information provided by the property|
 
-# Events
+## Events
 
 |Event|Description|
 |------|------|
@@ -89,7 +89,7 @@ position: 5
 |**UpdateCompleted**|Fires when the data provider has finished building the data and the UI was updated.|
 |**DataProviderChanged**|Fires when the DataProvider property has changed.|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpivotgrid.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpivotgrid.html#methods)

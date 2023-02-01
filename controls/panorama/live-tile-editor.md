@@ -13,11 +13,11 @@ previous_url: panorama-live-tile-editor
 
 The **Live Tile Editor** allows you to easily create, edit and preview the contents of **RadLiveTileElement**. To open the **Live Tile Editor**, use the “*Open Live Tile Editor*” link in the **Smart Tag** of a live tile. 
 
-![WinForms RadPanorama panorama-live-tile-editor 001](images/panorama-live-tile-editor001.png)
+![WinForms RadPanorama Tile Smart Tag](images/panorama-live-tile-editor001.png)
 
 The **Live Tile Editor** consists of several controls. At the top there is a preview panel in which you can see the changes you make to a frame or watch the whole animation by pressing the `Play` button.  
 
-![WinForms RadPanorama panorama-live-tile-editor 003](images/panorama-live-tile-editor003.gif)     
+![WinForms RadPanorama Live Tile Editor](images/panorama-live-tile-editor003.gif)     
 
 Just below the preview panel, there is a list of all frames that are contained within the live tile. Selecting a frame from that list loads its properties in the property grid on the left and displays a preview of the frame in the preview panel.
 
@@ -43,7 +43,7 @@ As mentioned above, the property grid on the left is used to edit the properties
 
 * **Transition Type** - sets the type of the transition animation. 
 
-![WinForms RadPanorama panorama-live-tile-editor 002](images/panorama-live-tile-editor002.png)
+![WinForms RadPanorama Live Tile Editor Modifications](images/panorama-live-tile-editor002.png)
 
 
 # See Also

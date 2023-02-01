@@ -83,9 +83,9 @@ Using the UI of __RadRichTextEditor__, you have the ability to add or remove hea
 
 The **TableProperties** dialog gives you a simple UI to add or remove a repeating header row.
 
->caption Figure 2: The RadRichTextEditor's Table Properties dialog
+>caption Figure 2: The RadRichTextEditor's Table Properties Dialog
 
-![WinForms RadRichTextEditor The RadRichTextEditor's Table Properties dialog](images/RadRichTextBox-Features_Repeat-Table-Header-Row002.png)
+![WinForms RadRichTextEditor Table Properties Dialog](images/RadRichTextBox-Features_Repeat-Table-Header-Row002.png)
 
 >note Through the dialog you can set only the first row from the table as a repeated header row. If another row is chosen (click on the next, previous row buttons), the check box is disabled. 
 
@@ -93,7 +93,7 @@ Repeating table header row(s) could be added or removed via the Table Tools’ c
 
 Using this approach, header rows can be added consecutively. In other words, if row N is added as repeated header row, row N+1 can be added as well. However, if the row N is not added to repeat on each page, row N+1 cannot be added. A gap of non-repeated header rows cannot exist between two rows that you want to mark as repeated header rows. 
 
->caption Figure 3: Repeat Table Header Rows button in the Table Tools contextual menu
+>caption Figure 3: Repeat Table Header Rows button in the Table Tools Contextual Menu
 
 ![WinForms RadRichTextEditor Repeat Table Header Rows button in the Table Tools contextual menu](images/RadRichTextBox-Features_Repeat-Table-Header-Row003.png)
 

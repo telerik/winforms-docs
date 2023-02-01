@@ -13,9 +13,9 @@ previous_url: propertygrid-features-filtering
 
 Just like the grouping and sorting functionality, filtering is possible both through the text box of the toolbar, or programmatically by populating the __FilterDescriptors__ collection of RadPropertyGrid. For the first option, just enable the toolbar by setting __ToolBarxVisible__ to *true* and type the desired search string in the text box:
 
->caption Figure 1: RadPropertyGrid Filtering
+>caption Figure 1: Filtering
 
-![WinForms RadPropertyGrid RadPropertyGrid Filtering](images/propertygrid-features-filtering001.png)
+![WinForms RadPropertyGrid Filtering](images/propertygrid-features-filtering001.png)
 
 To add filters programmatically, first make sure that the __EnableFiltering__ property is set to *true* and then, define the desired __FilterDescriptor__ and add it to the control __FilterDescriptors__ collection.
 

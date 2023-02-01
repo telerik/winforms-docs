@@ -73,7 +73,7 @@ When you set the **RowSubTotalsPosition** and **ColumnSubTotalsPosition** proper
 
 |Row Group with SubTotal| Row Group without SubTotal|
 |----|----|
-![WinForms RadPivotGrid pivotgrid-layout-settings 004](images/pivotgrid-layout-settings004.png)|![WinForms RadPivotGrid pivotgrid-layout-settings 005](images/pivotgrid-layout-settings005.png)|
+![WinForms RadPivotGrid Row Group with SubTotal](images/pivotgrid-layout-settings004.png)|![WinForms RadPivotGrid Row Group without SubTotal](images/pivotgrid-layout-settings005.png)|
 
 #### Hiding Sub Totals
 

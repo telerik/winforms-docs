@@ -37,13 +37,13 @@ Me.radRangeSelector1.AssociatedControl = Me.radChartView1
 
 * Set in Property Builder at design time:
 
-    ![WinForms RadRangeSelector rangeselector-getting-started 001](images/rangeselector-getting-started001.png)
+    ![WinForms RadRangeSelector Property Builder](images/rangeselector-getting-started001.png)
 
 * Set it by using the control’s SmartTag at design time:
-    ![WinForms RadRangeSelector rangeselector-getting-started 002](images/rangeselector-getting-started002.png)
+    ![WinForms RadRangeSelector Smart Tag ](images/rangeselector-getting-started002.png)
 
 4\. Press F5 to run the project.
-    ![WinForms RadRangeSelector rangeselector-getting-started 003](images/rangeselector-getting-started003.gif)
+    ![WinForms RadRangeSelector Visualization](images/rangeselector-getting-started003.gif)
 
 # See Also
 

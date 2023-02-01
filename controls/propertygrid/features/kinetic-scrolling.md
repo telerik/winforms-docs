@@ -12,7 +12,7 @@ position: 6
 
 Kinetic Scrolling is a functionality that allows you to scroll by directly dragging the property grid items. The bellow image shows how it can be used:
 
-![WinForms RadPropertyGrid winforms-propertygrid-kinetic-scrolling 001](images/winforms-propertygrid-kinetic-scrolling001.gif)
+![WinForms RadPropertyGrid Kinetic Scrolling](images/winforms-propertygrid-kinetic-scrolling001.gif)
 
 It is necessary to set the **EnableKineticScrolling** property to **true**.
 

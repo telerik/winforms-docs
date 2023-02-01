@@ -12,9 +12,9 @@ position: 11
 
 **RadPropertyGrid** uses a **PropertyGridItemElementProvider** for creating the visual items when specifying the **SelectedObject** property. Depending on the property type, the following **PropertyGridItemElement** will be created:
 
-* **PropertyGridCheckBoxItemElement** - 
-* **PropertyGridColorItemElement** - 
-* **PropertyGridGroupElement** - 
+* **PropertyGridCheckBoxItemElement**
+* **PropertyGridColorItemElement**
+* **PropertyGridGroupElement**
 * **PropertyGridItemElement**
 
 # See Also

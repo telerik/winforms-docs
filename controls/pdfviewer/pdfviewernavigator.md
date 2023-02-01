@@ -15,7 +15,7 @@ This article describes the features provided by __PdfViewerNavigator__. The foll
       
 >caption Figure 1: PdfViewerNavigator
 
-![WinForms RadPdfViewer PdfViewerNavigator](images/pdfviewer-pdfviewernavigator001.png)
+![WinForms RadPdfViewer PdfViewerNavigator Overview](images/pdfviewer-pdfviewernavigator001.png)
 
 This control can be used with __RadPdfViewer__. It provides predefined UI for the most common operations used with PDF files. The following list contains all features:
 

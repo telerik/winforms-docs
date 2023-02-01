@@ -177,7 +177,7 @@ End Sub
 
 {{endregion}}
 
-## Pan and Zoom synchronization
+## Pan and Zoom Synchronization
 
 There is two-way synchronization between the pan and zoom functionality of RadChartView and the selected range of RadRangeSelector. By setting __EnablePanAndZoomSynchronization__ property to false this synchronization will be only one way - from RadRangeSelector to RadChartView.
 

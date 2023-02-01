@@ -51,7 +51,7 @@ The information about a digital signature in a document is stored in a signature
 
 When a document containing a signature field is loaded in **RadPdfViewer**, you can apply a signature to it. This is done through the **SignSignatureDialog**. This dialog gives you the ability to choose a .pfx file representing the certificate and enter the password for it. Clicking the Sign button prompts you to save the signed document to a new file. The newly saved file then opens in **RadPdfViewer**.
 
-![WinForms RadPdfViewer pdfviewer-digital-signature003](images/pdfviewer-digital-signature003.gif)
+![WinForms RadPdfViewer Signing](images/pdfviewer-digital-signature003.gif)
 
 >note As of R1 2021 RadPdfViewerElement offers the cancelable **SignatureDialogShowing** and **SignSignatureDialogShowing** events. They allow customizing or changing the signature dialogs in **RadPdfViewer**.
 

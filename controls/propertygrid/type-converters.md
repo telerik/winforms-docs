@@ -390,7 +390,7 @@ Private m_BodyTemperature As Temperature
 
 >caption Figure 2: RadPropertyGrid TypeConverterAttribute
 
-![WinForms RadPropertyGrid RadPropertyGrid TypeConverterAttribute](images/propertygrid-type-converters002.png)
+![WinForms RadPropertyGrid TypeConverterAttribute](images/propertygrid-type-converters002.png)
 
 ## Display a predefined list of values for a property with TypeConverter 
 

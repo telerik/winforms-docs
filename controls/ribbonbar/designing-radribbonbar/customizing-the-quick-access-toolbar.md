@@ -37,9 +37,13 @@ To add an item to the Quick Access Toolbar, follow these steps:
 
 1. Click the __Edit QuickAccessToolbarItems__ task. Alternatively, you can click in the  __QuickAccessToolbarItems__ property, and then click the ellipsis button.
 
-1. In the RadElement Collection Editor dialog box, click the drop-down arrow next to the Add button to select the type of element you wish to add to the Quick Access Toolbar.<br>![WinForms RadRibbonBar ribbonbar-customizing-the-quick-access-toolbar 002](images/ribbonbar-customizing-the-quick-access-toolbar002.png)
+1. In the RadElement Collection Editor dialog box, click the drop-down arrow next to the Add button to select the type of element you wish to add to the Quick Access Toolbar.
 
-1. Use the Properties window in the RadElement Collection Editor dialog box to set the properties of the new Quick Access Toolbar item.<br>![WinForms RadRibbonBar ribbonbar-customizing-the-quick-access-toolbar 003](images/ribbonbar-customizing-the-quick-access-toolbar003.png)
+![WinForms RadRibbonBar Quick Access Toolbar Collection Editor](images/ribbonbar-customizing-the-quick-access-toolbar002.png)
+
+1. Use the Properties window in the RadElement Collection Editor dialog box to set the properties of the new Quick Access Toolbar item.
+
+![WinForms RadRibbonBar Quick Access Toolbar Properties](images/ribbonbar-customizing-the-quick-access-toolbar003.png)
 
 1. Repeat steps 3 and 4 to add additional Quick Access Toolbar items.
 

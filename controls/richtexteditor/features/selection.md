@@ -46,7 +46,7 @@ Me.radRichTextEditor1.SelectionStroke = Color.DarkRed
 
 {{endregion}} 
 
-![WinForms RadRichTextEditor richtexteditor-features-selection 002](images/richtexteditor-features-selection002.png)
+![WinForms RadRichTextEditor Text Selection](images/richtexteditor-features-selection002.png)
 
 ## Programmatic Selection
 
@@ -246,7 +246,7 @@ Loop While position.MoveToNextWordStart()
 
 {{endregion}} 
 
-![WinForms RadRichTextEditor richtexteditor-features-selection 001](images/richtexteditor-features-selection001.png)
+![WinForms RadRichTextEditor Multi-Range Selection](images/richtexteditor-features-selection001.png)
 
 # See Also
 

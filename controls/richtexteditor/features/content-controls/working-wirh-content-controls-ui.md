@@ -16,7 +16,7 @@ The easiest way to create a content control is through the user interface. You c
 
 You can specify which type of content control you wish to insert from the predefined UI of __RadRichTextEditor__. You can select it from the Developer Tab which is part of the [RadRichTextEditorRibbonUI]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}) by default:
 
-![WinForms RadRichTextEditor working-with-content-controls-ui-001](images/working-with-content-controls-ui-001.png)
+![WinForms RadRichTextEditor User Interface](images/working-with-content-controls-ui-001.png)
 
 You can choose between the following content controls:
 

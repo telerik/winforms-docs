@@ -128,10 +128,11 @@ InitializeComponent()
 >note It is necessary to specify the RichTextBoxLocalizationProvider. __CurrentProvider__ property before initializing the components.
 >
 
->caption Fig.1 RichTextBoxLocalizationProvider
+>caption Figure 1: RichTextBoxLocalizationProvider
 
 ![WinForms RadRichTextEditor RichTextBoxLocalizationProvider](images/richtexteditor-localization001.png)
->caption Fig.2 Localize RadRichTextEditorRibbonUI
+
+>caption Figure 2: Localize RadRichTextEditorRibbonUI
 
 ![WinForms RadRichTextEditor Localize RadRichTextEditorRibbonUI](images/richtexteditor-localization002.png)
 

@@ -15,11 +15,11 @@ __RadRibbonBar__ can appear to take up a large amount of screen real estate, esp
 
 ## Group Collapsing
 
-As you resize horizontally a form containing a __RadRibbonBar__, the individual groups collapse one by one into simple rectangles. Instead of displaying their constituent controls, these rectangles display a drop-down arrow. Clicking the drop-down arrow displays the controls from the collapsed group.<br>![WinForms RadRibbonBar ribbonbar-end-user-capabilities-collapsing-the-ribbonbar 001](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar001.png)<br>![WinForms RadRibbonBar ribbonbar-end-user-capabilities-collapsing-the-ribbonbar 002](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar002.png)<br>![WinForms RadRibbonBar ribbonbar-end-user-capabilities-collapsing-the-ribbonbar 003](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar003.png)<br>![WinForms RadRibbonBar ribbonbar-end-user-capabilities-collapsing-the-ribbonbar 004](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar004.png)
+As you resize horizontally a form containing a __RadRibbonBar__, the individual groups collapse one by one into simple rectangles. Instead of displaying their constituent controls, these rectangles display a drop-down arrow. Clicking the drop-down arrow displays the controls from the collapsed group.<br>![WinForms RadRibbonBar Collapsing](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar001.png)<br>![WinForms RadRibbonBar Collapsing Items Are Groupped](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar002.png)<br>![WinForms RadRibbonBar Collapsing Items are in DropDown](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar003.png)<br>![WinForms RadRibbonBar Collapsing Reduce Space](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar004.png)
 
 ## Base Collapsing
 
-Double-clicking the selected main tab will collapse all of the groups and hide them from view. Double-clicking the selected main tab again will display the groups again<br>![WinForms RadRibbonBar ribbonbar-end-user-capabilities-collapsing-the-ribbonbar 005](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar005.png)
+Double-clicking the selected main tab will collapse all of the groups and hide them from view. Double-clicking the selected main tab again will display the groups again<br>![WinForms RadRibbonBar Collapsed All Groups](images/ribbonbar-end-user-capabilities-collapsing-the-ribbonbar005.png)
 
 ## Skipping the No-Text Mode
 

@@ -17,18 +17,18 @@ __RadRichTextEditor__ has support for bulleted, numbered and multilevel lists. I
 
 You can specify whether you wish to use a bulleted, numbered or some kind of multilevel list from the predefined UI   of __RadRichTextEditor__:
 
-![WinForms RadRichTextEditor richtexteditor-features-styles-list-styles 001](images/richtexteditor-features-styles-list-styles001.png)
+![WinForms RadRichTextEditor List Styles Overview](images/richtexteditor-features-styles-list-styles001.png)
 
 When using a multilevel list, you can easily change the level using the default key-bindings (`Tab` for increasing
 the indent and `Shift` + `Tab` for decreasing it).
 
 Through the user interface, you can also create a multilevel list using the *Define New List Style* dialog. Your new style can have up to 9 levels, each of which can be customized. You can choose the font, font size, font weight, color and symbol to be used as the current level's mark. In addition, using the advanced settings you can create a level which includes in itself the symbol from another level.
 
-![WinForms RadRichTextEditor richtexteditor-features-styles-list-styles 002](images/richtexteditor-features-styles-list-styles002.png)
+![WinForms RadRichTextEditor Define new List Style Dialog](images/richtexteditor-features-styles-list-styles002.png)
 
 After defining your new style, it is added to the list gallery and can easily be accessed and used throughout the document.
 
-![WinForms RadRichTextEditor richtexteditor-features-styles-list-styles 003](images/richtexteditor-features-styles-list-styles003.png)
+![WinForms RadRichTextEditor List Library](images/richtexteditor-features-styles-list-styles003.png)
 
 ## Creating Lists Programmatically
 

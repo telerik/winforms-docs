@@ -19,4 +19,4 @@ One of the supported type of styles is Table styles. The __TableStylesGallery__ 
 
 Applying a Table Style from the **TableStylesGallery** is easy and intuitive. You can apply a style from the preview or open the gallery and chose  one of the styles using the pop up.
 
-![WinForms RadRichTextEditor richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-table-style-gallery 001](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-table-style-gallery001.png)
+![WinForms RadRichTextEditor Table Styles Gallery](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-table-style-gallery001.png)

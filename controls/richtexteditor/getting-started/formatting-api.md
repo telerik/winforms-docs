@@ -13,7 +13,7 @@ previous_url: richtexteditor-getting-started-formatting-api
 
 If you want to format the content of __RadRichTextEditor__ at run time, you have to use the API exposed by __RadRichTextEditor__. This is essential, as the main purpose of __RadRichTextEditor__ is to allow the users to format their input via UI. The UI should call the respective API methods of the control.
 
-## Changing the text formatting
+## Changing the Text Formatting
 
 __RadRichTextEditor__ exposes methods that change the style of the selected text or the paragraph. When a method is called, the respective style is applied to the selected text. If there is no selection available, the style is applied to the word in which the caret is located.
 

@@ -24,7 +24,7 @@ Code blocks allow users to add source code fragments to their document and using
 
 The options in the dialog allow to select the desired code language, as well as whether you wish to display line numbers and alternate the formatting of the lines.
 
-![WinForms RadRichTextEditor richtexteditor-features-code-block 001](images/richtexteditor-features-code-block001.png)
+![WinForms RadRichTextEditor Code Block User Interface](images/richtexteditor-features-code-block001.png)
 
 ## Insert and Delete code blocks
 

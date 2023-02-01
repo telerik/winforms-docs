@@ -166,7 +166,7 @@ mnuPrint.Items.AddRange(New RadMenuItem() {mnuPrintsubPrint, mnuPrintsubQuickPri
 
 {{endregion}}
 
-## Wrapping items' text
+## Wrapping Items' Text
 
 The ApplicationMenu of RadRibbonBar supports wrapping of the main and description texts of its items in the right column. To enable it, you should set the TextWrap property of the __Text__ and __Description__ parts of the menu items to true. In addition, you should set the MaxSize of these parts. Finally, you can set the width of the right column to an appropriate value by the ApplicationMenuRightColumnWidth property. Let's say that we have the following RadMenuItems in the right column:
 
@@ -188,7 +188,7 @@ Me.UntitledFileMenuItem.Text = "Untitled.png"
 
 {{endregion}}
 
-By default, the menu will look like this:<br>![WinForms RadRibbonBar ribbonbar-programming-radribbonbar-customizing-the-application-menu 002](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu002.png)
+By default, the menu will look like this:<br>![WinForms RadRibbonBar No WordWrap](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu002.png)
 
 So, as mentioned above, we should set the TextWrap and MaxSize properties of the Text and Description parts of the menu items:
 
@@ -214,7 +214,7 @@ Me.UntitledFileMenuItem.Layout.Description.MaxSize = New Size(150, 0)
 
 {{endregion}}
 
-The result in this case will be:<br>![WinForms RadRibbonBar ribbonbar-programming-radribbonbar-customizing-the-application-menu 001](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu001.png)
+The result in this case will be:<br>![WinForms RadRibbonBar With WordWrap](images/ribbonbar-programming-radribbonbar-customizing-the-application-menu001.png)
 
 ## Keyboard Support
 

@@ -17,7 +17,7 @@ __RadRichTextEditor__ control provides functionality for inserting comment annot
 
 Commenting functionality is available in the **Review** tab inside the **RadRichTextEditorRibbonUI** example:
 
-![WinForms RadRichTextEditor richtexteditor-features-comments 001](images/richtexteditor-features-comments001.png)
+![WinForms RadRichTextEditor Comments Options](images/richtexteditor-features-comments001.png)
 
 The following commands related to the commenting functionality are available in the **Commands** property of the **RadRichTextEditor**:
         
@@ -115,7 +115,7 @@ End Sub
 
 And the result looks like this:
 
-![WinForms RadRichTextEditor richtexteditor-features-comments 002](images/richtexteditor-features-comments002.png)
+![WinForms RadRichTextEditor Comments Review](images/richtexteditor-features-comments002.png)
 
 Note, that for performance reasons this event will be thrown only once per each comment – the first time it is shown. The __AppearanceSettings__ will then be cached and used for the associated comment when needed.
         

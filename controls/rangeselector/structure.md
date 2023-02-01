@@ -16,10 +16,10 @@ This article describes the inner structure and organization of the elements whic
 __RadRangeSelector__ is built up of several levels of nested elements.  Images below demonstrate the element tree of __RadRangeSelector__. 
 
 >caption Figure 1: RadRangeSelector`s Element Hierarchy
-![WinForms RadRangeSelector RadRangeSelector`s Element Hierarchy](images/radrangeselector-structure001.png)
+![WinForms RadRangeSelector Element Hierarchy](images/radrangeselector-structure001.png)
 
 >caption Figure 2: RadRangeSelector`s Structure
-![WinForms RadRangeSelector RadRangeSelector`s Structure](images/radrangeselector-structure002.png)
+![WinForms RadRangeSelector Structure](images/radrangeselector-structure002.png)
 
 Here is a brief explanation of the various elements in the tree:
 

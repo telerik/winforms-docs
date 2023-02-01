@@ -29,9 +29,9 @@ RadPropertyGrid1.ToolbarVisible = True
 
 {{endregion}}
 
->caption Figure 1: RadPropertyGrid Toolbar
+>caption Figure 1: Toolbar
 
-![WinForms RadPropertyGrid RadPropertyGrid Toolbar](images/propertygrid-features-toolbar001.png)
+![WinForms RadPropertyGrid Toolbar](images/propertygrid-features-toolbar001.png)
 
 You can set the predefined filter operator and property by making use of the following properties:
 
@@ -79,8 +79,8 @@ If you want to add a new element in the toolbar, just add it to the __Children__
 
 #### Add Element to Toolbar
 
->caption Figure 2: RadPropertyGrid Toolbar
-![WinForms RadPropertyGrid RadPropertyGrid Toolbar](images/propertygrid-features-toolbar002.png)
+>caption Figure 2: Add Element to Toolbar
+![WinForms RadPropertyGrid Add Element to Toolbar](images/propertygrid-features-toolbar002.png)
 
 {{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=addElement}} 
 {{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=addElement}} 

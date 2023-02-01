@@ -68,9 +68,9 @@ Dim sectionColumnCollection As New SectionColumnCollection(2, 75, True)
 
 __Figure 2__ demonstrates the result of __Example 1__.
 
->caption Figure 2: Columns with separator
+>caption Figure 2: Columns With Separator
 
-![WinForms RadRichTextEditor Columns with separator](images/RadRichTextBox_Features_Section_Columns_02.png)
+![WinForms RadRichTextEditor Columns With Separator](images/RadRichTextBox_Features_Section_Columns_02.png)
 
 ## Using Section Columns
 

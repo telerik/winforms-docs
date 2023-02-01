@@ -47,7 +47,7 @@ Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElem
 
 {{endregion}}
 
-![WinForms RadRangeSelector rangeselector-customizing-radrangeselector 001](images/rangeselector-customizing001.png)
+![WinForms RadRangeSelector Customize Hover Elements](images/rangeselector-customizing001.png)
 
 ## Customize Thumbs
 
@@ -75,7 +75,7 @@ Me.radRangeSelector1.RangeSelectorElement.BodyElement.ViewContainer.TrackingElem
 
 {{endregion}}
 
-![WinForms RadRangeSelector rangeselector-customizing-radrangeselector 002](images/rangeselector-customizing002.png)
+![WinForms RadRangeSelector Customize Thumbs](images/rangeselector-customizing002.png)
 
 ## Customize Scroll Event
 
@@ -107,7 +107,7 @@ Me.radRangeSelector1.RangeSelectorElement.ScrollSelectorElement.SellectionRange.
 
 {{endregion}}
 
-![WinForms RadRangeSelector rangeselector-customizing-radrangeselector 003](images/rangeselector-customizing003.png)
+![WinForms RadRangeSelector Customize Scroll Event](images/rangeselector-customizing003.png)
 
 ## Customize Scales
 
@@ -156,7 +156,7 @@ End Sub
 
 {{endregion}}
 
-![WinForms RadRangeSelector rangeselector-customizing-radrangeselector 004](images/rangeselector-customizing004.png)
+![WinForms RadRangeSelector Customize Scales](images/rangeselector-customizing004.png)
 
 ## Customize ChartElement
 
@@ -203,7 +203,7 @@ End Sub
 
 {{endregion}}
 
-![WinForms RadRangeSelector rangeselector-customizing-radrangeselector 005](images/rangeselector-customizing005.png)
+![WinForms RadRangeSelector Customize ChartElement](images/rangeselector-customizing005.png)
 
 ## See Also
 

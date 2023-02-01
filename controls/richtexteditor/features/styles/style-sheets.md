@@ -17,8 +17,8 @@ Instances of the __Stylesheet__ class contain __StyleDefinitions__ and __ListSty
 
 Below you can see the result when the style sheet of a document is changed
 
-![WinForms RadRichTextEditor richtexteditor-features-styles-style-sheets 001](images/richtexteditor-features-styles-style-sheets001.png)
-![WinForms RadRichTextEditor richtexteditor-features-styles-style-sheets 002](images/richtexteditor-features-styles-style-sheets002.png)
+![WinForms RadRichTextEditor Style Sheet Blue](images/richtexteditor-features-styles-style-sheets001.png)
+![WinForms RadRichTextEditor Style Sheet Green](images/richtexteditor-features-styles-style-sheets002.png)
 
 ## Exporting and Importing Style sheets
 

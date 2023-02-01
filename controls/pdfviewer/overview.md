@@ -14,7 +14,7 @@ previous_url: pdfviewer-overview, pdfviewer-manipulating-programatically
 
 | RELATED VIDEOS |  |
 | ------ | --- |
-|[WinForms RadPdfViewer Getting Started with the WinForms RadPdfViewer](https://www.telerik.com/videos/winforms/getting-started-with-the-winforms-radpdfviewer)<br>__RadPdfViewer__ enables you to easily load and display PDF documents natively in your application without using any third-party tools except Telerik’s WinForms toolbox. Thanks to the built-in UI virtualization, RadPdfViewer delivers an efficient solution for every scenario. This component comes as a nice addition to your Content Management System or Reporting application.|[WinForms RadPdfViewer !pdfviewer-overview002](images/pdfviewer-overview002.png)](https://www.telerik.com/videos/winforms/getting-started-with-the-winforms-radpdfviewer)|
+|[Getting Started with the WinForms RadPdfViewer](https://www.telerik.com/videos/winforms/getting-started-with-the-winforms-radpdfviewer)<br>__RadPdfViewer__ enables you to easily load and display PDF documents natively in your application without using any third-party tools except Telerik’s WinForms toolbox. Thanks to the built-in UI virtualization, RadPdfViewer delivers an efficient solution for every scenario. This component comes as a nice addition to your Content Management System or Reporting application.|[WinForms RadPdfViewer !WinForms RadPdfViewer Turoarial Overview](images/pdfviewer-overview002.png)](https://www.telerik.com/videos/winforms/getting-started-with-the-winforms-radpdfviewer)|
 
 __RadPdfViewer__ is a control that:
 
@@ -29,7 +29,7 @@ __RadPdfViewer__ is a control that:
 {% endif %}
 
 >caption Figure 1: RadPdfViewer
-![WinForms RadPdfViewer RadPdfViewer](images/pdfviewer-overview001.png)
+![WinForms RadPdfViewer Overview Image](images/pdfviewer-overview001.png)
 
 Here is a list of the supported features
 * [Interactive Forms]({%slug radpdfviewer-features-interactive-forms%}): The control supports different types of interactive forms and enables the end user to modify their values.

@@ -55,7 +55,7 @@ The context menu can change dynamically. For example, when the Text Selection mo
 
 |FixedDocumentViewerMode.Pan|FixedDocumentViewerMode.TextSelection|
 |----|----|
-|![WinForms RadPdfViewer pdfviewer-overview 001](images/pdfviewer-ui-context-menu001.png)|![WinForms RadPdfViewer pdfviewer-overview 001](images/pdfviewer-ui-context-menu002.png)|
+|![WinForms RadPdfViewer FixedDocumentViewerMode Pan](images/pdfviewer-ui-context-menu001.png)|![WinForms RadPdfViewer FixedDocumentViewerMode TextSelection](images/pdfviewer-ui-context-menu002.png)|
  
 Additionally, you can easily add a custom menu item to the context menu. You can find below a sample code snippet:
 

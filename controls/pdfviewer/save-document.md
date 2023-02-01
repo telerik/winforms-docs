@@ -53,4 +53,4 @@ Dim stream = radPdfViewer1.GetDocumentAsStream()
 
 The PdfViewerNavigator has a __Save As__ button that can be used for saving the document as well.
 
-![WinForms RadPdfViewer pdf-viewer-save-document001](images/pdf-viewer-save-document001.png)        
+![WinForms RadPdfViewer PdfViewerNavigator Save Option](images/pdf-viewer-save-document001.png)        

@@ -9,7 +9,7 @@ position: 3
 previous_url: richtexteditor-features-references-caption-for-tables-and-figures
 ---
 
-# Captions for tables and Figures
+# Captions for Tables and Figures
 
 In Telerik's __RadRichTextEditor__ you can easily insert images, tables, etc. Now it is possible to label these by inserting captions. This article will help you define an image or a table and then refer to it later.
       
@@ -17,11 +17,11 @@ In Telerik's __RadRichTextEditor__ you can easily insert images, tables, etc. No
 
 You can open the __Caption__ window by clicking on the __Insert Caption__ button.
 
-![WinForms RadRichTextEditor richtexteditor-features-references-caption-for-tables-and-figures 001](images/richtexteditor-features-references-caption-for-tables-and-figures001.png)
+![WinForms RadRichTextEditor Insert Caption](images/richtexteditor-features-references-caption-for-tables-and-figures001.png)
 
 If the caret is inside a table, the dialog would look like this:
 
-![WinForms RadRichTextEditor richtexteditor-features-references-caption-for-tables-and-figures 002](images/richtexteditor-features-references-caption-for-tables-and-figures002.png)
+![WinForms RadRichTextEditor ](images/richtexteditor-features-references-caption-for-tables-and-figures002.png)
 
 ### Caption Preview
 
@@ -31,17 +31,17 @@ On the top there is a preview of the caption text that would be inserted. In thi
 
 You can select different options. The first one is __Label__. From here you can select the label text. By default, you have two options – __Figure__ and __Table__.
 
-![WinForms RadRichTextEditor richtexteditor-features-references-caption-for-tables-and-figures 003](images/richtexteditor-features-references-caption-for-tables-and-figures003.png)
+![WinForms RadRichTextEditor Caption Preview Options](images/richtexteditor-features-references-caption-for-tables-and-figures003.png)
 
 You can also specify the __Position__ of the caption - __Above selected item__ or __Below  selected item__
 
 We will have this option only if the caret is in a table or on an image. Otherwise, it will be disabled.
 
-### Creating and deleting labels
+### Creating and Deleting Labels
 
 You can add new labels by using the __New Label…__ dialog and of course delete old ones with the __Delete Label__ button.
 
-![WinForms RadRichTextEditor richtexteditor-features-references-caption-for-tables-and-figures 004](images/richtexteditor-features-references-caption-for-tables-and-figures004.png)
+![WinForms RadRichTextEditor Creating and Deleting Labels](images/richtexteditor-features-references-caption-for-tables-and-figures004.png)
 
 >note You cannot delete the two default labels - __Figure__ and __Table__ 
 >
@@ -52,25 +52,25 @@ When __Exclude label from caption__ checkbox is checked the label text will be r
 
 You can control how the numbering is displayed by using the __Format__ ComboBox. You can see the available formats in the  picture below. By default the (“1, 2, 3, …”) format is selected.
 
-![WinForms RadRichTextEditor richtexteditor-features-references-caption-for-tables-and-figures 005](images/richtexteditor-features-references-caption-for-tables-and-figures005.png)
+![WinForms RadRichTextEditor Format](images/richtexteditor-features-references-caption-for-tables-and-figures005.png)
 
-### Include chapter number
+### Include Chapter Number
 
 When the __Include chapter number__ check box is checked, every time you insert a __Caption__ in a new section, the numbering is restarted. That’s why the preview now looks like this:
 
-![WinForms RadRichTextEditor richtexteditor-features-references-caption-for-tables-and-figures 007](images/richtexteditor-features-references-caption-for-tables-and-figures007.png)
+![WinForms RadRichTextEditor Include Chapter Number](images/richtexteditor-features-references-caption-for-tables-and-figures007.png)
 
 The first number shows the bullet of the section you are currently in, and the second number shows the number of __Captions__ being inserted in this section.            
 
 A section is defined by the __Heading__ styles, but only when they are in a list. You can choose which __Heading__ style the chapter starts from and what separator to use. There are several available separators – __hyphen__, __period__, __colon__.
 
-![WinForms RadRichTextEditor richtexteditor-features-references-caption-for-tables-and-figures 006](images/richtexteditor-features-references-caption-for-tables-and-figures006.png)
+![WinForms RadRichTextEditor Include Chapter Number Suggestion Dialog](images/richtexteditor-features-references-caption-for-tables-and-figures006.png)
 
 ### Insert
 
 Clicking on the __OK__ button will insert the __Caption__. It would look like this:
 
-![WinForms RadRichTextEditor richtexteditor-features-references-caption-for-tables-and-figures 008](images/richtexteditor-features-references-caption-for-tables-and-figures008.png)
+![WinForms RadRichTextEditor Insert Caption](images/richtexteditor-features-references-caption-for-tables-and-figures008.png)
 
 Here the __Below selected item__ position is chosen, __:__ for separator and __A, B, C…__ for formatting.
 

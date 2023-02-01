@@ -15,7 +15,7 @@ Cross-References represent fields that refer to a part of the document. When tha
 
 You can insert a Cross-Reference from here:
 
-![WinForms RadRichTextEditor richtexteditor-features-references-cross-reference 001](images/richtexteditor-features-references-cross-reference001.png)
+![WinForms RadRichTextEditor Cross Reference](images/richtexteditor-features-references-cross-reference001.png)
 
 This article covers:
 
@@ -29,11 +29,11 @@ This article covers:
 
 The dialog looks like this:
 
-![WinForms RadRichTextEditor richtexteditor-features-references-cross-reference 002](images/richtexteditor-features-references-cross-reference002.png)
+![WinForms RadRichTextEditor Insert Cross-Reference](images/richtexteditor-features-references-cross-reference002.png)
 
 You can choose between 4 Reference types: __Figure__, __Table__, __Bookmark__ and  __Heading__.
 
-![WinForms RadRichTextEditor richtexteditor-features-references-cross-reference 003](images/richtexteditor-features-references-cross-reference003.png)
+![WinForms RadRichTextEditor Reference Types](images/richtexteditor-features-references-cross-reference003.png)
 
 When you have chosen the [type of the reference](#types-of-cross-references), you should choose one of the items in the "*Insert reference to:*" combo box. The items depend on the selected item in the "Reference type" combo box.
         
@@ -49,7 +49,7 @@ Clicking on the __Insert__ button inserts the __Cross-Reference__ to the documen
 
 These are the options you have when you select the __Figure__ reference type:
 
-![richtexteditor-features-references-cross-reference 003](images/richtexteditor-features-references-cross-reference003.png)
+![WinForms RadRichTextEditor Types of Cross-References](images/richtexteditor-features-references-cross-reference003.png)
 
 * __Entire Caption__ – inserts a field with text equal to the entire caption. In this case the text would be "Figure 1 CaptionText".
                 
@@ -65,13 +65,13 @@ These are the options you have when you select the __Figure__ reference type:
 
 __Table__ and __Figure__ are both __Captions__ so they have the same options.
 
-![WinForms RadRichTextEditor richtexteditor-features-references-cross-reference 004](images/richtexteditor-features-references-cross-reference004.png)
+![WinForms RadRichTextEditor Table](images/richtexteditor-features-references-cross-reference004.png)
 
 ### Heading
 
 These are the options when __Heading__ is selected:
 
-![WinForms RadRichTextEditor richtexteditor-features-references-cross-reference 005](images/richtexteditor-features-references-cross-reference005.png)
+![WinForms RadRichTextEditor Heading](images/richtexteditor-features-references-cross-reference005.png)
 
 * __Heading text__ - inserts a field with text equal to the one in the heading chosen. For example, here we have a paragraph with text “Heading1” (and style *Heading1*). The text inserted by the field would be "Heading1".
                 
@@ -83,7 +83,7 @@ These are the options when __Heading__ is selected:
 
 When __Bookmark__ item is selected in the list with all available bookmarks you see only the names (not the text as with captions  and headings)
 
- ![WinForms RadRichTextEditor richtexteditor-features-references-cross-reference 006](images/richtexteditor-features-references-cross-reference006.png)
+ ![WinForms RadRichTextEditor Bookmark](images/richtexteditor-features-references-cross-reference006.png)
 
 * __Bookmark text__ - inserts the text in the bookmark. Here the name is shown, not the text. So the field would look something like "*Bookmark Text Here*", given that this is the text of the bookmark with name "Bookmark".
                 

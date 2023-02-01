@@ -170,7 +170,7 @@ Me.radRichTextEditor1.Document = document
 
 The result (`Ctrl` + `Click` to follow):
 
-![WinForms RadRichTextEditor richtexteditor-features-hyperlink 001](images/richtexteditor-features-hyperlink001.png)
+![WinForms RadRichTextEditor Hyperlink Review](images/richtexteditor-features-hyperlink001.png)
 
 You will also need to use **HyperlinkRangeStart** and **HyperlinkRangeEnd**, if you are using hyperlinks for the implementation of a custom logic and want to get all hyperlinks from the document, manipulate the properties of the **HyperlinkInfo** or the whole part of the document that is included in the hyperlink.
         
@@ -218,7 +218,7 @@ __HyperlinkClicked__
 
 When you click on a hyperlink, the __HyperlinkClicked__ event of __RadRichTextEditor__ is fired. The sender of the event is the document element, which you have clicked, e.g. a **Span**, an **Image**, **InlineUIContainer**, etc. The event args on the other hand, provide the possibility to mark the event as handled and prevent the default action. Custom logic can also be implemented depending on the __HyperlinkTarget__ and __URL__, which are also visible as properties of the event args.
 
-![WinForms RadRichTextEditor richtexteditor-features-hyperlink 002](images/richtexteditor-features-hyperlink002.png)
+![WinForms RadRichTextEditor Hyperlink Click Even Handler](images/richtexteditor-features-hyperlink002.png)
 
 # See Also
 

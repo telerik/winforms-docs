@@ -29,7 +29,7 @@ __RadRichTextEditor__ allows editing images that have been inserted in the edito
 
 You can resize the image using the adorner that is shown around the image. In addition, the thumb that is shown on top allows you to rotate the image.
 
-![WinForms RadRichTextEditor richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-editing-images 001](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-editing-images001.png)
+![WinForms RadRichTextEditor Modify Image](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui-editing-images001.png)
 
 ## Disable Image Editing Capabilities
 

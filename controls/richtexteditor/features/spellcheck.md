@@ -27,7 +27,7 @@ The __RadRichTextEditor__ control is designed to support "*spell checking as you
 
 To enable or disable the spell checking functionality (present as red wavy underlines below unrecognized words), you can use the __IsSpellCheckingEnabled__ property on __RadRichTextEditor__. When the property is *false*, no dictionaries are loaded and no overhead is incurred for spell checking.    
     
->caption Figure 1: Spell checking as you type
+>caption Figure 1: Spell Checking as you type
 
 ![WinForms RadRichTextEditor Spell checking as you type](images/richtexteditor-features-spellcheck001.png)
 

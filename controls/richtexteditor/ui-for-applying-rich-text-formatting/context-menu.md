@@ -182,7 +182,7 @@ End Class
 ```` 
 {{endregion}}
 
-No,w you can simply assign the instance of your class to the __ContentBuilder__ property of the context menu:
+Now you can simply assign the instance of your class to the __ContentBuilder__ property of the context menu:
 
 #### Assinging Builder
 

@@ -32,7 +32,7 @@ previous_url: panorama-settings
 |**Items**|Gets a collection of RadTileElement objects that represent the tiles that are displayed.|
 |**Groups**|Gets a collection of RadTileElement objects that represent the tiles that are displayed.|
 
-# RadPanoramaElement's Properties
+## RadPanoramaElement's Properties
 
 |Property|Description|
 |----|----|
@@ -43,7 +43,7 @@ previous_url: panorama-settings
 |**DragDropService**|Gets or sets the RadDragDropService that is responsible for the drag-drop reorder of tiles.|
 |**ScrollService**|Gets the ScrollService that is responsible for kinetic scrolling behavior with the mouse pointer.|
 
-# RadTileElement's Properties
+## RadTileElement's Properties
 
 |Property|Description|
 |----|----|
@@ -56,7 +56,7 @@ previous_url: panorama-settings
 >caution **RadPanorama** uses dynamic number of columns, so you can set the __Column__ property of a tile with a value, greater than the __ColumnsCount__ value. However, setting the __Row__ property with a value, greater than the __RowsCount__ value, will result in an exception.
 >
 
-# RadLiveTileElement's Properties
+## RadLiveTileElement's Properties
 
 **RadLiveTileElement** is a derivative of **RadTileElement**. Hence, the listed properties above are relevant for the **RadLiveTileElement** as well.
 
@@ -70,7 +70,7 @@ previous_url: panorama-settings
 |**TransitionType**|Gets or sets the type of the transition animation.|
 |**CurrentItem**|Gets or sets the currently displayed item.|
 
-# TileGroupElement's Properties
+## TileGroupElement's Properties
 
 |Property|Description|
 |----|----|
@@ -82,7 +82,7 @@ previous_url: panorama-settings
 |**RowsCount**|Gets or sets the number of rows.|
 |**CellSize**|Gets or sets the size of a single cell.|
 
-# RadPanoramaElement's Methods
+## RadPanoramaElement's Methods
 
 |Method|Description|
 |----|----|
@@ -94,7 +94,7 @@ previous_url: panorama-settings
 |**ScrollToItem(RadTileElement tile)**|Scrolls to the specified tile.|
 |**ScrollToItem(RadTileElement tile, int desiredOffset)**|Scrolls to the specified tile with the desired offset.|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpanorama.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpanorama.html#methods) 

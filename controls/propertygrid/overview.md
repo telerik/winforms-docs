@@ -18,7 +18,7 @@ previous_url: propertygrid-overview
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadPropertyGrid propertygrid-overview](images/propertygrid-overview.png)
+![WinForms RadPropertyGrid Overview](images/propertygrid-overview.png)
 
 **RadPropertyGrid** comes with a built-in tool bar which filters properties as you type. You can customize its behavior by defining the part of the property by which the filter is applied. For example, you can filter by property name, property label, property category or property description. You can also change the operator by which the filter is applied - Starts, Contains, etc.
 

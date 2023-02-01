@@ -107,7 +107,7 @@ Dim mergeField As New MergeField() With { _
  
 >caption Figure 3: Result fragment of mail merge, when one of the fields has applied a switch using vertical tab and has no value
 
-![WinForms RadRichTextEditor Result fragment of mail merge, when one of the fields has applied a switch using vertical tab and has no value](images/radrichtexteditor-MailMerge-InsertANewLineInMergeField_03.png)
+![WinForms RadRichTextEditor Result fragment of mail merge](images/radrichtexteditor-MailMerge-InsertANewLineInMergeField_03.png)
 
 ### Using End of Paragraph "\r\n" Instead the Vertical Tab
 

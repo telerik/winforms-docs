@@ -15,21 +15,21 @@ This topic explains how the predefined UI of __RadRichTextEditor - RadRichTextEd
 
 __RadRichTextEditorRibbonUI__ is a ribbon control that has been wired to work with the API that **RadRichTextEditor** exposes.
 
-![WinForms RadRichTextEditor richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui 001](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui001.png)
+![WinForms RadRichTextEditor RadRichTextEditorRibbonUI Overview](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui001.png)
 
 ## Using RadRichTextEditorRibbonUI
 
 __RadRichTextEditorRibbonUI__ can be found in the Toolbox of Visual Studio, if you have installed the controls automatically. In order to use it, drag an instance of the __RadRichTextEditorRibbonUI__ in the designer area and drop it. After this you can set the associated **RadRichTextEditor** by using the smart tag.
 
->caption RichTextEditorRibbonBar's smart tag
+>caption RichTextEditorRibbonBar's Smart Tag
 
-![WinForms RadRichTextEditor RichTextEditorRibbonBar's smart tag](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui002.png)
+![WinForms RadRichTextEditor RichTextEditorRibbonBar's Smart Tag](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui002.png)
 
 You can automatically add a **RadRichTextEditorRibbonUI** by using the __RadRichTextEditor__ smart tag as well. 
 
->caption RadRichTextEditor's smart tag
+>caption RadRichTextEditor's Smart Tag
 
-![WinForms RadRichTextEditor RadRichTextEditor's smart tag](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui003.png)
+![WinForms RadRichTextEditor Smart Tag](images/richtexteditor-ui-for-applying-rich-text-formatting-ribbon-ui003.png)
 
 # See Also
 

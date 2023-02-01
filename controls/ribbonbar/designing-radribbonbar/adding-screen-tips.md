@@ -26,7 +26,7 @@ To create a screen tip, follow these steps:
 
 1. Select the __Telerik.WinControls.UI.RadOffice2007ScreenTipElement__ template.
 
-1. Use the embedded property sheet to customize the screen tip.<br>![WinForms RadRibbonBar ribbonbar-adding-screen-tips 002](images/ribbonbar-adding-screen-tips002.png)
+1. Use the embedded property sheet to customize the screen tip.<br>![WinForms RadRibbonBar New Screen Tip](images/ribbonbar-adding-screen-tips002.png)
 
 ## Modifying a Screen Tip
 
@@ -38,7 +38,7 @@ To modify an existing screen tip, follow these steps:
 
 1. Click the ellipsis button in the __TipItems__ collection.
 
-1. Use the RadItems Collection Editor to change the properties of any part of the screen tip.<br>![WinForms RadRibbonBar ribbonbar-adding-screen-tips 003](images/ribbonbar-adding-screen-tips003.png)
+1. Use the RadItems Collection Editor to change the properties of any part of the screen tip.<br>![WinForms RadRibbonBar Modifying a Screen Tip](images/ribbonbar-adding-screen-tips003.png)
 
 ## Adding Screen Tips Programmatically
 

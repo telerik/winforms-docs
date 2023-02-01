@@ -65,7 +65,7 @@ End Class
 
 |Default|Custom|
 |---|---|
-|![WinForms RadRichTextEditor richtexteditor-ui-for-applying-rich-text-formatting-custom-ribbon001](images/richtexteditor-ui-for-applying-rich-text-formatting-custom-ribbon001.png)|![WinForms RadRichTextEditor richtexteditor-ui-for-applying-rich-text-formatting-custom-ribbon002](images/richtexteditor-ui-for-applying-rich-text-formatting-custom-ribbon002.png)|
+|![WinForms RadRichTextEditor Default RibbonBar](images/richtexteditor-ui-for-applying-rich-text-formatting-custom-ribbon001.png)|![WinForms RadRichTextEditor Custom RibbonBar](images/richtexteditor-ui-for-applying-rich-text-formatting-custom-ribbon002.png)|
 
 
 # See Also

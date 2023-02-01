@@ -13,7 +13,7 @@ previous_url: panorama-cutom-tiles
 
 This article demonstrates how you can create custom tiles. The bellow sample code adds four elements to the tile. The result is shown in following screenshot.
 
->caption Figure 1: Custom Title.
+>caption Figure 1: Custom Title
 
 ![WinForms RadPanorama Custom Title](images/panorama-custom-tiles001.png)
 

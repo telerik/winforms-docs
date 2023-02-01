@@ -46,19 +46,19 @@ Select **RadPanorama** and click the small arrow on the top right position in or
 
 In order to add or remove tiles either click on the “*Edit items*” link in the **Smart Tag** or edit the __Items__ collection in the Properties window in Visual Studio. This will open the *RadItem Collection Editor*. You can add two types of elements to the __Items__ collection: __RadTileElement__ and __RadLiveTileElement__.
 
-![WinForms RadPanorama panorama-design-time 001](images/panorama-design-time001.png)
+![WinForms RadPanorama Adding Tiles](images/panorama-design-time001.png)
 
 ## Adding Groups
 
 To add or remove groups click on the “*Edit Groups*” link in the **Smart Tag** or edit the __Groups__ collection in the Properties window in Visual Studio. To add tiles to a group, edit the __Items__ collection of the group itself. Switching between grouped or ungrouped view, is achieved by checking or unchecking the **ShowGroups** check box in the **Smart Tag** or setting the __ShowGroups__ property in the Properties window in Visual Studio.
 
-![WinForms RadPanorama panorama-design-time 002](images/panorama-design-time002.png)
+![WinForms RadPanorama Adding Groups](images/panorama-design-time002.png)
 
-## Customizing tiles
+## Customizing Tiles
 
 Each __RadTileElement__'s properties can be customized via the Properties window of Visual Studio, or via the **Smart Tag**. The available properties for customization in the **Smart Tag** are:
 
-![WinForms RadPanorama panorama-design-time 003](images/panorama-design-time003.png)
+![WinForms RadPanorama Customizing Tiles](images/panorama-design-time003.png)
 
 * **Text** – sets the text of the tile.
 
@@ -76,7 +76,7 @@ Each __RadTileElement__'s properties can be customized via the Properties window
 
 Each __RadLiveTileElement__'s properties can be customized via the Properties window of Visual Studio, or via the **Smart Tag**. The available properties for customization in the **Smart Tag** are:
 
-![WinForms RadPanorama panorama-design-time 004](images/panorama-design-time004.png)
+![WinForms RadPanorama Customizing Live Tiles](images/panorama-design-time004.png)
 
 * **Text** – sets the text of the tile.
 
@@ -90,7 +90,7 @@ Each __RadLiveTileElement__'s properties can be customized via the Properties wi
 
 * **Open Live Tile Editor** – opens the [Live Tile Editor]({%slug winforms/panorama/live-tile-editor%}), where you can customize the tile. 
 
-![WinForms RadPanorama panorama-design-time 006](images/panorama-design-time006.png)
+![WinForms RadPanorama Live Tile Editor](images/panorama-design-time006.png)
 
 * **Edit UI elements** – allows you to edit the element’s properties.
  

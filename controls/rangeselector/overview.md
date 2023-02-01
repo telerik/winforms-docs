@@ -21,7 +21,7 @@ Currently, __RadRangeSelector__ works out of the box together with __RadChartVie
 {% endif %}
 
 >caption Figure 1: RadRangeSelector
-![WinForms RadRangeSelector RadRangeSelector](images/rangeselector-overview001.png)
+![WinForms RadRangeSelector Overview](images/rangeselector-overview001.png)
 
 ## See Also
 

@@ -15,7 +15,7 @@ __RadPivotFieldList__ is a control which provides functionality similar to the P
 
 >caption Figure 1: RadPivotFieldList
 
-![WinForms RadPivotGrid RadPivotFieldList](images/pivotgrid-radpivotfieldlist001.png)
+![WinForms RadPivotGrid RadPivotFieldList Overview](images/pivotgrid-radpivotfieldlist001.png)
 
 ## Associating with RadPivotGrid
 

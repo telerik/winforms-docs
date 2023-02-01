@@ -110,7 +110,7 @@ Most features that __RadRichTextEditor__ provides are also supported in the form
         
 * __Exporting with HtmlFormatProvider__ - the inline UI containers are serialized as XML and are included in the HTML as comments. If the user handles the __InlineUIContainerExporting__ event, they can provide their own implementation for the export of the UI elements by accessing the properties of the __InlineUIContainerExportingEventArgs__ and setting the ones they need. The CommentContent contains the XML serialization and the __HtmlContent__ string property can be set to the desired user-defined HTML equivalent of the UI element. It will appear when the page is rendered outside **RadRichTextEditor**. The UI element can also be omitted from the document altogether.
             
-	![WinForms RadRichTextEditor richtexteditor-document-elements-inlineuicontainer 001](images/richtexteditor-document-elements-inlineuicontainer001.png)
+	![WinForms RadRichTextEditor VS Suggestion DropDown](images/richtexteditor-document-elements-inlineuicontainer001.png)
 
 * __Importing with HtmlFormatProvider__ – there is a property of the **HtmlFormatProvider** class called __HtmlImportSettings__, which provides two events – __InlineUIContainerImporting__ and __InlineUIContainerImported__. The __EventArgs__ of these events have the same properties, as the ones that the __InlineUIContainerExporting__ event of __HtmlExportSettings__ has. Thus, even if you have not implemented custom export of inline UI containers, you can process the XML comments on import and provide your own logic to create the serialized objects, set their properties and insert them in the Document.
 
@@ -120,7 +120,7 @@ Most features that __RadRichTextEditor__ provides are also supported in the form
 
 * **PdfFormatProvider**: PDF import is currently not supported. The **InlineUIContainers** are taken a snapshot of and included in the export. If you like, you can prevent that by setting the **InlineUIContainersExportMode** property of the provider to *None*.
 
-	![WinForms RadRichTextEditor richtexteditor-document-elements-inlineuicontainer 002](images/richtexteditor-document-elements-inlineuicontainer002.png)
+	![WinForms RadRichTextEditor InlineUIContainersExportMode Options](images/richtexteditor-document-elements-inlineuicontainer002.png)
             
 >tip For more information on Import/Export, please refer to [this topic](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/import-export/overview).
 >

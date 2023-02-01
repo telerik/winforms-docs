@@ -12,7 +12,7 @@ position: 3
 
 The context menu will appear every time the user right-clicks on the **RadPictureBox** control. 
 
-![WinForms RadPictureBox picturebox-edit001](images/context-menu001.png)
+![WinForms RadPictureBox Context Menu](images/context-menu001.png)
 
 The context menu is enabled by default. If you want to disable it you can use the **ContextMenuEnabled** property:
 
@@ -109,7 +109,7 @@ End Sub
 
 The result of adding and removing items from this article is shown on the screenshot below:
 
-![WinForms RadPictureBox picturebox-edit001](images/context-menu002.png)
+![WinForms RadPictureBox Custom ContextMenu](images/context-menu002.png)
 
 ### Using the ContextMenuItemClick event
 

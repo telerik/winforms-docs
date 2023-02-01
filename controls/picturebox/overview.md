@@ -12,7 +12,7 @@ position: 0
 
 __RadPictureBox__ is a control used to display images in different formats. The control is powered by Telerik UI for WinForms vector images engine and supports both raster and vector (SVG) images. __RadPictureBox__ is an extended version of the standard System.Windows.Forms.PictureBox. It allows scrolling, editing raster images, zoom and pan.
 
-![WinForms RadPictureBox picturebox-overview](images/picturebox-overview001.png)
+![WinForms RadPictureBox Overview](images/picturebox-overview001.png)
 
 ## Supported Formats
 

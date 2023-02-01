@@ -14,7 +14,7 @@ previous_url: panorama-getting-started
 
 | RELATED VIDEOS |  |
 | --- | ------ |
-|[WinForms RadPanorama Getting started with RadPanorama ](http://www.telerik.com/videos/winforms/radpanorama-getting-started)![WinForms RadPanorama panorama-getting-started 000](images/panorama-getting-started000.png)|In this video, we are going to see what it takes to get started with the RadPanorama. RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner. This control is inspired by the Metro Start Menu screen of Windows 8.|
+|[Getting started with RadPanorama ](http://www.telerik.com/videos/winforms/radpanorama-getting-started)![WinForms RadPanorama Tutorial](images/panorama-getting-started000.png)|In this video, we are going to see what it takes to get started with the RadPanorama. RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner. This control is inspired by the Metro Start Menu screen of Windows 8.|
 
 This article will demonstrate how to get started with **RadPanorama**. You will be guided through the process of creating a sample application step-by-step.
 
@@ -24,29 +24,29 @@ This article will demonstrate how to get started with **RadPanorama**. You will 
 
 3\. In the **Smart Tag** click the __Edit Groups__ link:
 
-![WinForms RadPanorama panorama-getting-started 001](images/panorama-getting-started001.png)
+![WinForms RadPanorama Edit Groups Design Time](images/panorama-getting-started001.png)
 
 4\. The **RadItem Collection Editor** will be opened. Add three groups and set their __Text__  properties to: *Tile, Live Tiles, Mixed*
 
-![WinForms RadPanorama panorama-getting-started 002](images/panorama-getting-started002.png)
+![WinForms RadPanorama RadItem Collection Editor](images/panorama-getting-started002.png)
 
 5\. Now, navigate to the __Items__ property of each group and add few items in it. In this case the first group will contain only __RadTileElements__, the  second group only __RadListTileElements__ and the third group both types of elements.
 
-![WinForms RadPanorama panorama-getting-started 003](images/panorama-getting-started003.png)
+![WinForms RadPanorama Populate Items Collection](images/panorama-getting-started003.png)
 
 6\. Then click `OK` to close the editor.
 
 7\. Go back to the **Smart Tag** and check the __Show Groups__ check box. 
 
-![WinForms RadPanorama panorama-getting-started 004](images/panorama-getting-started004.png)
+![WinForms RadPanorama Show Groups](images/panorama-getting-started004.png)
 
 8\. Select each tile and in each tile’s **Smart Tag**, edit its __Column__, __Row__, __Column Span__ and __Row Span__ properties.
 
-![WinForms RadPanorama panorama-getting-started 005](images/panorama-getting-started005.png)
+![WinForms RadPanorama Column Row Properties](images/panorama-getting-started005.png)
 
 9\. Once you are done with the customization of the properties, if the size that the items need is greater than the control size, the scroll bar will automatically be shown: 
 
-![WinForms RadPanorama panorama-getting-started 006](images/panorama-getting-started006.png)
+![WinForms RadPanorama Scroll Bar](images/panorama-getting-started006.png)
 
 10\. The layout is done. You can customize each item according to your needs and also you can subscribe to the __Click__ event of each of them, in order to perform some action upon click. To customize **RadLiveTileElements**, you can use the [Live Tile Editor]({%slug winforms/panorama/live-tile-editor%}).
 
