@@ -34,7 +34,7 @@ In WinForms, controls that are owned by another control (in that control's Contr
 
 I will summarize here:
 
-RadControls are Generation #2 and Form automatically calls its Dispose method when Form is shown and closed. MS Controls are gen #0 because they are just tiny wrappers and its Dispose() method is not necessary to call. If there is a memory leak even calling the Dispose() will not free the memory.
+RadControls are Generation #2 and Form automatically calls its Dispose method when Form is shown and closed. Most of the objects created by the MS Controls  are gen #0 because they are just tiny wrappers and its Dispose() method is not necessary to call. If there is a memory leak even calling the Dispose() will not free the memory.
 
 
 
