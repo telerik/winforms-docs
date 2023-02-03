@@ -40,7 +40,7 @@ Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordB
 
 When using this mode, **RadSpellChecker** will check every word in a separate window, which looks like this:
 
->caption Figure 1: Spellchecking form in SpellCheckMode.WordByWord
+>caption Figure 1: SpellChecking form in SpellCheckMode.WordByWord
 
 ![WinForms RadSpellChecker Spellchecking form in SpellCheckModeWordByWord](images/spellchecker-spellchecking-modes001.png)
         

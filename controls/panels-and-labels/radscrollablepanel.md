@@ -20,7 +20,7 @@ previous_url: panels-and-labels-radscrollablepanel-overview
 
 >caption Figure 1: RadScrollablePanel
 >
-![WinForms RadTemplates RadScrollablePanel](images/panels-and-labels-radscrollablepanel001.png)
+![WinForms RadScrollablePanel Overview](images/panels-and-labels-radscrollablepanel001.png)
 
 # See Also
 

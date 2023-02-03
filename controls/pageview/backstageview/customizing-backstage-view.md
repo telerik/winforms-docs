@@ -38,13 +38,13 @@ Follows an example on how to customize the content area with Visual Style Builde
 
 3\. After the theme is loaded, navigate to **RadPageView** in the Control Structure pane, right click it and select Backstage View 
 
-![WinForms RadPageView pageview-backstageview-customizing-backstageview 001](images/pageview-backstageview-customizing-backstageview001.png)
+![WinForms RadPageView Visual Style Builder](images/pageview-backstageview-customizing-backstageview001.png)
 
 4\. Expand **RadPageViewBackstageElement** and select **RadPageViewContentAreaElement**.
 
 5\. In the Elements Window, expand the **RadPageViewBackstageElement** and set its **BackColor** property to *191, 219, 255*.
 
-![WinForms RadPageView pageview-backstageview-customizing-backstageview 002](images/pageview-backstageview-customizing-backstageview002.png)
+![WinForms RadPageView RadPageViewBackstageElement](images/pageview-backstageview-customizing-backstageview002.png)
 
 6\. Save your theme, load it to your application and set the **RadPageView** theme to be the currently created theme as explained in [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}) section.
 
@@ -72,7 +72,7 @@ backStageElement.ContentArea.BackColor = Color.Yellow
 
 The approach for customizing is the same, you just have to select the appropriate element from the Element Structure tree. In this case this is **StripViewItemLayout**.
 
-![WinForms RadPageView pageview-backstageview-customizing-backstageview 003](images/pageview-backstageview-customizing-backstageview003.png)
+![WinForms RadPageView StripViewItemLayout](images/pageview-backstageview-customizing-backstageview003.png)
 
 Use the following code snippet to access the element in code:
 
@@ -102,7 +102,7 @@ To access the element responsible for the buttons area, expand **RadPageViewBack
 
 Have in mind that the **StripViewButtonsPanel** is not visible by default. After you select it, you can make it visible by first expanding the **StripViewButtonsPanel** and then setting the **Visibility** property to *Visible*. In addition, by default it does not have a fill, so you have to set the **DrawFill** property to *true*. Now, you can customize its fill appearance.
 
-![WinForms RadPageView pageview-backstageview-customizing-backstageview 004](images/pageview-backstageview-customizing-backstageview004.png)
+![WinForms RadPageView StripViewButtonsPanel](images/pageview-backstageview-customizing-backstageview004.png)
 
 The buttons panel can be accessed from the **ItemsContaier** of the **RadPageViewBackstageElement**:
 
@@ -138,35 +138,35 @@ By default, page items use [ImageShape]({%slug winforms/telerik-presentation-fra
 
 |  |  |  |
 | ------ | ------ | ------ |
-|Down<br>![WinForms RadPageView pageview-backstageview-customizing-backstageview 005](images/pageview-backstageview-customizing-backstageview005.png)|Over<br>![WinForms RadPageView pageview-backstageview-customizing-backstageview 006](images/pageview-backstageview-customizing-backstageview006.png)|Selected<br>![WinForms RadPageView pageview-backstageview-customizing-backstageview 007](images/pageview-backstageview-customizing-backstageview007.png)|
+|Down<br>![WinForms RadPageView Down](images/pageview-backstageview-customizing-backstageview005.png)|Over<br>![WinForms RadPageView Over](images/pageview-backstageview-customizing-backstageview006.png)|Selected<br>![WinForms RadPageView Selected](images/pageview-backstageview-customizing-backstageview007.png)|
 
 We will use the [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%}) functionality to stretch those images in order to fill the desired items size.
 
 1\. The element responsible for the items in Backstage View is called **RadPageViewStripItem**. Locate it in the Element Structure pane. (For the sake of this example *ControlDefault* theme is loaded in advance)
 
-![WinForms RadPageView pageview-backstageview-customizing-backstageview 008](images/pageview-backstageview-customizing-backstageview008.png)
+![WinForms RadPageView PageViewStripItem](images/pageview-backstageview-customizing-backstageview008.png)
 
 2\. Choose the desired states in this case *Selected*, *MouseOver* and *MouseDown*.
 
-![WinForms RadPageView pageview-backstageview-customizing-backstageview 009](images/pageview-backstageview-customizing-backstageview009.png)
+![WinForms RadPageView PageViewStripItem Element States](images/pageview-backstageview-customizing-backstageview009.png)
 
 3\. Edit the corresponding **ImageShape** repository items for each state.
 
-![WinForms RadPageView pageview-backstageview-customizing-backstageview 010](images/pageview-backstageview-customizing-backstageview010.png)
+![WinForms RadPageView ImageShape Repository](images/pageview-backstageview-customizing-backstageview010.png)
 
 4\. Set the desired image and assign the desired properties in order to customize the image according to your requirement. For more information refer to the [ImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%}) article.
 
-![WinForms RadPageView pageview-backstageview-customizing-backstageview 011](images/pageview-backstageview-customizing-backstageview011.png)
+![WinForms RadPageView Edit Image Shape](images/pageview-backstageview-customizing-backstageview011.png)
 
 5\. Save and load your new theme into the application, as described in [Using Custom Themes]({%slug winforms/tools/visual-style-builder%}) article.
 
-![WinForms RadPageView pageview-backstageview-customizing-backstageview 012](images/pageview-backstageview-customizing-backstageview012.png)
+![WinForms RadPageView Save Load Dialog](images/pageview-backstageview-customizing-backstageview012.png)
 
 ## Customizing RadPageViewStripGroupItem
 
 **RadPageViewStripGroup** item is responsible for the group items in **RadPageView** . Every group item have an underline which is also customizable (**PageViewGroupItemUnderline**).
 
-![WinForms RadPageView pageview-backstageview-customizing-backstageview 013](images/pageview-backstageview-customizing-backstageview013.png)
+![WinForms RadPageView RadPageViewStripGroupItem](images/pageview-backstageview-customizing-backstageview013.png)
 
 The following code snippet demonstrates how to access and customize the group items in code:
 
@@ -211,7 +211,7 @@ Next
 {{endregion}} 
 
 
-![WinForms RadPageView pageview-backstageview-customizing-backstageview 014](images/pageview-backstageview-customizing-backstageview014.png)
+![WinForms RadPageView Backstage ContentArea](images/pageview-backstageview-customizing-backstageview014.png)
 
 
 # See Also

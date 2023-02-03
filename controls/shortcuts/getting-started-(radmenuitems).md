@@ -15,11 +15,11 @@ previous_url: shortcuts-getting-started-(radmenuitems)
 
 2\. On the **RadMenu** that reads "*Type here*" enter "*New*". This will automatically create a menu item object "radMenuItem1":
 
-![WinForms RadShortcuts shortcuts-getting-started-(radmenuitems)001](images/shortcuts-getting-started-(radmenuitems)001.png)
+![WinForms RadShortcuts Design Time](images/shortcuts-getting-started-(radmenuitems)001.png)
 
 3\. Click and the newly created item to open the drop down menu and create a sub menu item. By default, the text of the new item will be set to *radMenuItem2*. Change it to *File*:
 
-![WinForms RadShortcuts shortcuts-getting-started-(radmenuitems)002](images/shortcuts-getting-started-(radmenuitems)002.png)
+![WinForms RadShortcuts Created MenuItem Design Time](images/shortcuts-getting-started-(radmenuitems)002.png)
 
 4\. In the *Properties* Window locate the **Click** events for **radMenuItem1** and **radMenuItem2** and double-click them to create event handlers.
 
@@ -74,7 +74,7 @@ Me.RadMenuItem2.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.F, Keys.K))
 
 As a result, you will get this picture at run time. As you can see, the shortcuts are automatically displayed for the **RadMenuItems**:
 
-![WinForms RadShortcuts shortcuts-getting-started-(radmenuitems)003](images/shortcuts-getting-started-(radmenuitems)003.png)
+![WinForms RadShortcuts Add Shortcut](images/shortcuts-getting-started-(radmenuitems)003.png)
 
 Interesting functionality to mention is the ability to set your own custom text to describe the shortcut added. This can be achieved via the __HintText__ property of the menu item:
 
@@ -94,7 +94,7 @@ RadMenuItem2.HintText = "Custom Text"
 
 {{endregion}} 
 
-![WinForms RadShortcuts shortcuts-getting-started-(radmenuitems)004](images/shortcuts-getting-started-(radmenuitems)004.png)
+![WinForms RadShortcuts Specifying HintText](images/shortcuts-getting-started-(radmenuitems)004.png)
 
 # See Also
 

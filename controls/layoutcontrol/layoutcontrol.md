@@ -19,7 +19,7 @@ With __RadLayoutControl__ you can quickly design and arrange your controls in co
 {% endif %}
 
 >caption Figure 1: RadLayoutControl
-![WinForms RadLayoutControl RadLayoutControl](images/layoutcontrol-overview001.png)
+![WinForms RadLayoutControl Overview](images/layoutcontrol-overview001.png)
 
 The below list shows the main features of the control.
 

@@ -20,7 +20,7 @@ __RadImageEditor__ supports the following image adjustments.
 
 >caption Figure 1: Adjust section
 
-![WinForms RadImage-Editor Adjust section](images/image-editor-adjustments001.png)
+![WinForms RadImageEditor Adjust section](images/image-editor-adjustments001.png)
 
 
 # Hue adjustment
@@ -29,7 +29,7 @@ The Hue can be adjusted with the respective dialog, the values can be from 0 to 
 
 >caption Figure 2: Hue Dialog
 
-![WinForms RadImage-Editor Hue Dialog](images/image-editor-adjustments002.png)
+![WinForms RadImageEditor Hue Dialog](images/image-editor-adjustments002.png)
 
 This can be done in the code behind as well.
 
@@ -54,7 +54,7 @@ The Saturation can be adjusted with the respective dialog the values can be from
 
 >caption Figure 3: Saturation Dialog
 
-![WinForms RadImage-Editor Saturation Dialog](images/image-editor-adjustments003.png)
+![WinForms RadImageEditor Saturation Dialog](images/image-editor-adjustments003.png)
 
 To do this programmatically use the __SetSaturation__ method.
 
@@ -80,7 +80,7 @@ The Contrast and Brightness can be adjusted with the respective dialog the value
 
 >caption Figure 4: Brightness and Contrast Dialog
 
-![WinForms RadImage-Editor Brightness and Contrast Dialog](images/image-editor-adjustments004.png)
+![WinForms RadImageEditor Brightness and Contrast Dialog](images/image-editor-adjustments004.png)
 
 This can be done in the code behind as well.
 
@@ -106,7 +106,7 @@ The Invert Color button just inverts the colors in the image pixel by pixel.
  
 >caption Figure 5: Inverted Colors
 
-![WinForms RadImage-Editor Inverted Colors](images/image-editor-adjustments005.png)
+![WinForms RadImageEditor Inverted Colors](images/image-editor-adjustments005.png)
 
 This action can be performed in code with the following method.
 

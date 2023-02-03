@@ -72,9 +72,9 @@ outlookElement.DragGripUp()
 
 When items are hidden by using the overflow grip, they appear as a strip of buttons on the overflow panel below the stack:
 
->caption Figure 2: Overflow strip buttons
+>caption Figure 2: Overflow Strip Buttons
 
-![WinForms RadPageView Overflow strip buttons](images/pageview-outlookview-using-the-overflow002.png)
+![WinForms RadPageView Overflow Strip Buttons](images/pageview-outlookview-using-the-overflow002.png)
 
 You can use these buttons to select and show the content of the corresponding item.
 

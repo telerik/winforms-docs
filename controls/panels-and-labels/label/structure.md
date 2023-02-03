@@ -16,7 +16,7 @@ Like all Telerik WinForms controls **RadLabel** is build upon [Telerik Presenta
 
 >caption Figure 1: RadLabel`s Element Hierarchy
 >
-![WinForms RadLabel RadLabel`s Element Hierarchy](images/radlabel-structure001.png)
+![WinForms RadLabel Element Hierarchy](images/radlabel-structure001.png)
 
 * **RadLabelElement**: Represents the main element of the control.
   * **FillPrimitive**: Background color of the control

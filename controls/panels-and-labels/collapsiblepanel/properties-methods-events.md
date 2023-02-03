@@ -27,7 +27,7 @@ position: 4
 |**AnimationType**|Gets or sets the type of the expand or collapse animation.|
 |**BackColor**|Gets or sets the BackColor of the control. This is actually the BackColor property of the root element.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |------|------|
@@ -35,7 +35,7 @@ position: 4
 |**Collapse**|Collapses the control. Will not have effect if the control is already collapsed or is animating. Can be canceled from the Collapsing event.|
 |**ToggleExpandCollapse**|If the Control is expanded it will be collapsed and vice-versa.|
 
-# Events
+## Events
 
 |Event|Description|
 |------|------|

@@ -17,16 +17,16 @@ It follows a very simple example of how to use this mode:
 
 1\. Drag **RadPageView** control from the Toolbox and by using the **SmartTag** drop down set the **ViewMode** to *Backstage* and add a few groups and **RadPageViewPages**.
 
-![WinForms RadPageView pageview-backstageview-getting-started 001](images/pageview-backstageview-getting-started001.png)
+![WinForms RadPageView Backstage Smart Tag](images/pageview-backstageview-getting-started001.png)
 
 2\. Select each page one by one and set their Text and Image properties accordingly.
 
-![WinForms RadPageView pageview-backstageview-getting-started 002](images/pageview-backstageview-getting-started002.png)
+![WinForms RadPageView VS Properties Window](images/pageview-backstageview-getting-started002.png)
 
 3\. Drag the desired controls from the Toolbox on each page content area.
 
-![WinForms RadPageView pageview-backstageview-getting-started 003](images/pageview-backstageview-getting-started003.png)
+![WinForms RadPageView VS Toolbox](images/pageview-backstageview-getting-started003.png)
 
 4\. Start the application and click on the Calendar page item.
 
-![WinForms RadPageView pageview-backstageview-getting-started 004](images/pageview-backstageview-getting-started004.png)
+![WinForms RadPageView Backstage Overview](images/pageview-backstageview-getting-started004.png)

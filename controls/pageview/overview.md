@@ -14,7 +14,7 @@ previous_url: pageview-overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadPageView Getting Started With RadPageView](http://tv.telerik.com/watch/winforms/getting-started-with-radpageview)<br>In this video, you will learn what it takes to get started with RadPageView. You will also learn about its different view modes.|![WinForms RadPageView pageview-overview 001](images/pageview-overview001.png)|
+|[Getting Started With RadPageView](http://tv.telerik.com/watch/winforms/getting-started-with-radpageview)<br>In this video, you will learn what it takes to get started with RadPageView. You will also learn about its different view modes.|![WinForms RadPageView Overview](images/pageview-overview001.png)|
 
 **RadPageView** is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of sub controls in different views. 
 
@@ -22,11 +22,11 @@ previous_url: pageview-overview
 {% include cta-panel-overview.html %}
 {% endif %}
 
-## RadPageView layout modes
+## RadPageView Layout Modes
 
 **RadPageView** supports the following modes:
 
-![WinForms RadPageView pageview-overview 002](images/pageview-overview002.gif)
+![WinForms RadPageView Layout Modes](images/pageview-overview002.gif)
 
 ## Key Features
 

@@ -17,7 +17,7 @@ __RadImageEditor__ is a control that can be used to preview and edit images in d
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadImage-Editor ](images/image-editor-overview001.png)
+![WinForms RadImageEditor Overview](images/image-editor-overview001.png)
 
 ## Key Features
 

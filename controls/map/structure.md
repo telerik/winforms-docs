@@ -12,13 +12,13 @@ position: 1
 
 This article describes the inner structure and organization of the elements which build the __RadMap__ control.
         
->caption Figure 1: RadMap's elements hierarchy
+>caption Figure 1: RadMap's Elements Hierarchy
 
-![WinForms RadMap RadMap's elements hierarchy](images/map-structure001.png)
+![WinForms RadMap Elements Hierarchy](images/map-structure001.png)
 
->caption Figure 2: RadMap visual structure
+>caption Figure 2: RadMap Visual Structure
 
-![WinForms RadMap RadMap visual structure](images/map-structure002.png)
+![WinForms RadMap Visual Structure](images/map-structure002.png)
 
 1. __MapLegendElement__: represents the legend  
   1.1. __MapLegendTitleElement__: represents the legend's title  

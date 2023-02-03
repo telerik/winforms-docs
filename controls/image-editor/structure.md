@@ -13,9 +13,11 @@ position: 1
 
 This article shows the ImageEditor structure and elements hierarchy.
 
->caption Figure 1: RadImageEditor structure
+## Structure
 
-![WinForms RadImage-Editor RadImageEditor structure](images/image-editor-structure002.png)
+>caption Figure 1: RadImageEditor Structure
+
+![WinForms RadImageEditor Structure](images/image-editor-structure002.png)
 
 1. __Open/Save buttons:__ These buttons allows you to open an existing image and save the current changes.  
 2. __Undo/Redo buttons:__ Use these buttons to undo/redo a specific action.
@@ -25,11 +27,11 @@ This article shows the ImageEditor structure and elements hierarchy.
 6. __Zoom Element:__ You can zoom with this control.
 7. __Image Area:__ This area shows the image along with any applied changes. 
 
-# Elements Hierarchy
+## Elements Hierarchy
 
->caption Figure 2: RadImageEditor elements hierarchy.
+>caption Figure 2: RadImageEditor Elements Hierarchy.
 
-![WinForms RadImage-Editor RadImageEditor elements hierarchy](images/image-editor-structure001.png)
+![WinForms RadImageEditor Elements Hierarchy](images/image-editor-structure001.png)
 
 
 # See Also

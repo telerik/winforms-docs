@@ -18,9 +18,9 @@ position: 2
 
 As of **R1 2022 SP1** the animation-related properties are exposed directly on the context-menu:
 
-![WinForms RadMenus contextmenu-properties 001](images/contextmenu-properties001.png)
+![WinForms RadContextMenu Animation](images/contextmenu-properties001.png)
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
@@ -36,7 +36,7 @@ As of **R1 2022 SP1** the animation-related properties are exposed directly on t
 |**Show(RadItem item, Point point, RadDirection popupDirection)**|Positions the context menu relative to the specified RadItem location and with the specified direction.|
 |**Show(RadItem item, int ownerOffset, RadDirection popupDirection)**|Positions the context menu relative to the specified RadItem location and with specified direction and offset according to the owner.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|

@@ -135,7 +135,7 @@ End Class
 
 To use the newly created items, you should handle the __VisualItemCreating__ event as shown below:
 
-#### Use the custom item
+#### Use the Custom Item
 
 {{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=UseCustomItem}} 
 {{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=UseCustomItem}} 
@@ -276,7 +276,7 @@ End Sub
 
 {{endregion}} 
 
-## Custom items in DetailsView ViewType
+## Custom Items in DetailsView ViewType
 
 Since the *DetailsView* provides a grid-like interface, it displays a cell for each data field. In order to create custom cells you need to subscribe to the __CellCreating__ event and replace the default __DetailListViewDataCellElement__ with your own cell implementation.
 

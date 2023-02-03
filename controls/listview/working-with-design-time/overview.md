@@ -28,7 +28,7 @@ Select __RadListView__ and click the small arrow on the top right position in or
 
 	>caption Figure 2: Element hierarchy editor
 
-	![WinForms RadListView Element hierarchy editor](images/listview-desing-time002.png)
+	![WinForms RadListView Element Hierarchy Editor](images/listview-desing-time002.png)
 
 
 	* __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the controls visual style at one time.

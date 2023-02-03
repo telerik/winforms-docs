@@ -31,7 +31,7 @@ To set the __DataSource__:
 
 1\. Select the __DataSource__ property and click the drop-down arrow to display all existing data sources on the form.   
 
-![WinForms RadListView listview-databinding 009](images/listview-databinding009.png)
+![WinForms RadListView DataSource](images/listview-databinding009.png)
 
 2\. Click the __Add Project Data Source__ link and follow the instructions in the __Data Source Configuration Wizard__ to add a data source to your project. You can use databases, web services, or objects as data sources.
 
@@ -95,7 +95,7 @@ The following tutorial will demonstrate how to bind a **RadListView** to a list 
 
 1\. First let's create our business object. Note that it is important that our custom object implements the **INotifyPropertyChanged** interface, since this will allow notifications between the object and the control:
 
-#### Person class
+#### Person Class
 
 {{source=..\SamplesCS\ListView\ListViewDataBinding.cs region=person}} 
 {{source=..\SamplesVB\ListView\ListViewDataBinding.vb region=person}} 
@@ -333,7 +333,7 @@ Me.RadListView1.ValueMember = "ID"
 
 As a result you will get the **RadListView** populated with items that display the value __Name__ property of the business objects and have the __ID__ property of the business object returned as value. Opening an item for editing will display the id.
 
-![WinForms RadListView listview-databinding 005](images/listview-databinding005.png)
+![WinForms RadListView Images](images/listview-databinding005.png)
 
 4\. We can extend this example by handling the __ItemDataBound__ event, which is fired when the __ListViewDataItem__ is assigned an object from your data source. In the event handler we can access the data bound object properties and assign an image to the item:
 
@@ -368,7 +368,7 @@ End Sub
 
 When **RadListView** is in __DetailView__ mode and is bound to this collection, as a result, you will get all the properties of the business object displayed in columns. In this case the **Picture** column is hidden:
 
-![WinForms RadListView listview-databinding 007](images/listview-databinding007.png)
+![WinForms RadListView DetailView Mode](images/listview-databinding007.png)
 
 # See Also
 

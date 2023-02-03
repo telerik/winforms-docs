@@ -29,13 +29,13 @@ Once __ListViewDetailColumn Collection Editor__ is opened, you can add as many c
 
 Once the __Columns__ collection is populated, you can assign values for each column of each **ListViewDataItem**, by making use of the __SubItems__ property (this property is available in design-time only):
 
->caption Figure 4: Fill cells' values
+>caption Figure 4: Fill Cells' Values
 
-![WinForms RadListView Fill cells' values](images/listview-working-with-design-time-adding-columns004.png)
+![WinForms RadListView Fill Cells' Values](images/listview-working-with-design-time-adding-columns004.png)
 
 Here is the result of the explained operations:
 
-![WinForms RadListView listview-working-with-design-time-adding-columns 005](images/listview-working-with-design-time-adding-columns005.png)
+![WinForms RadListView Columns](images/listview-working-with-design-time-adding-columns005.png)
 
 > Note if you assign a DataSource programmatically, this will use the default column widths. To handle this scenario, use the **ColumnCreating** event to access column by field name and set the desired width there.
 

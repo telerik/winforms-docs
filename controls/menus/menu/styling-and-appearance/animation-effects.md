@@ -21,7 +21,7 @@ Three properties control the animation behavior for expand and collapse effects 
 
 The example below demonstrates toggling animation on and off, changing animation type and altering the animation speed. 
 
-![WinForms RadMenus menus-menu-styling-and-appearance-animation-effects 001](images/menus-menu-styling-and-appearance-animation-effects001.gif)
+![WinForms RadMenus Toggling Animation](images/menus-menu-styling-and-appearance-animation-effects001.gif)
 
 The controls used in the example are:
 

@@ -12,7 +12,7 @@ position: 9
 
 **RadListViews'** items have built-in checkboxes which can be shown by setting the __ShowCheckBoxes__ property of **RadListView** to *true*.
 
-#### Enable checkboxes
+#### Enable Checkboxes
 
 {{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=EnableCheckBoxes}} 
 {{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=EnableCheckBoxes}} 

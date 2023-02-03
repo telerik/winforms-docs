@@ -13,9 +13,9 @@ position: 2
 
 You can use the rotate buttons to directly rotate the image. No dialog is shown in this case.
 
-![WinForms RadImage-Editor ](images/image-editor-rotate001.png)
+![WinForms RadImageEditor Rotate Option](images/image-editor-rotate001.png)
 
-# Rotate Programmatically
+## Rotate Programmatically
 
 The following spinet shows how you can access and use the __RotateFlip__ method.
 

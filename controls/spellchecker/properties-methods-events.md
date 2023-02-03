@@ -18,7 +18,7 @@ position: 5
 |**SpellingFormStartPosition**|Gets or sets the start position of the spelling form.|
 |**AutoSpellCheckControl**|Checks as you type the specified TextBox control for spelling mistakes.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
@@ -26,7 +26,7 @@ position: 5
 |**RegisterControlSpellChecker**|Registers an instance of IControlSpellChecker that is responsible for managing the spell checking of concrete type control.|
 |**GetControlSpellChecker**|Gets the control spell checker.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|

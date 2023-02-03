@@ -20,7 +20,7 @@ __RadGroupBox__ control is a group box control with advanced styling options. Th
 
 >caption Figure 1: RadGroupBox
 >
-![WinForms RadGroupBox RadGroupBox](images/panels-and-labels-groupbox-overview001.png)
+![WinForms RadGroupBox Overview](images/panels-and-labels-groupbox-overview001.png)
 
 # See Also
 

@@ -66,7 +66,7 @@ End If
 {{endregion}}
 
 
-# Mini Map Modes
+## Mini Map Modes
 
 The mini map behavior can be altered by setting the __MiniMapMode__ property.
 
@@ -90,7 +90,7 @@ The mini map behavior can be altered by setting the __MiniMapMode__ property.
 
 The __MiniMapElement__ can be easily accessed via the RadMap.__MapElement__ object. The table below lists the exposed properties and methods.
 
-# Properties
+## Properties
 
 |Property|Description|
 |------|------|
@@ -104,7 +104,7 @@ The __MiniMapElement__ can be easily accessed via the RadMap.__MapElement__ obje
 |__ViewportControlBackColor__|Gets or sets the back color of the view port control.|
 |__ViewportControlBorderColor__|Gets or sets the border color of the view port control.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |------|------|

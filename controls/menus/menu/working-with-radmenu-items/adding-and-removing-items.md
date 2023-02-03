@@ -15,9 +15,9 @@ previous_url: menus-menu-working-with-radmenu-items-adding-and-removing-items
 
 In order to add top level "main" menu items use the RadMenu.__Items__ collection and the RadMenuItem.__Items__ collection for sub menu items. Here are a few examples using overloads of the __RadMenuItem__. The first uses a parameter-less constructor, assigns the RadMenuItem.__Text__ property and finally adds the menu item to the RadMenu.__Items__ collection. The second example uses the easiest way to include and add menu items all at one time where a constructor that has a single string __Text__ parameter. The last example uses a constructor with a second object __Tag__ parameter that you can store any arbitrary data in.
 
->caption Figure 1: Adding menu items
+>caption Figure 1: Adding Menu Items
 
-![WinForms RadMenus Adding menu items](images/menus-menu-working-with-radmenu-items-adding-and-removing-items001.png)
+![WinForms RadMenus Adding Menu Items](images/menus-menu-working-with-radmenu-items-adding-and-removing-items001.png)
 
 #### Constructing and adding menu items
 
@@ -51,11 +51,9 @@ RadMenu1.Items.Add(dvdItem)
 
 Adding sub menu items plays by the same rules as adding items to the RadMenu.__Items__ collection except here we use the **Items** collection of another __RadMenuItem__. In the code example below a reference to the first menu item *Books* is retrieved and several __RadMenuItems__ are added to the *Books* menu __Items__ collection. Also notice that a **Click** event handler is attached to the last *Bargains* menu item.
 
->caption Figure 2: Adding sub menu items
+>caption Figure 2: Adding Sub Menu Items
 
-![WinForms RadMenus Adding sub menu items](images/menus-menu-working-with-radmenu-items-adding-and-removing-items002.png)
-
-#### Adding menu sub items
+![WinForms RadMenus Adding Sub Menu Items](images/menus-menu-working-with-radmenu-items-adding-and-removing-items002.png)
 
 {{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=subItems}} 
 {{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=subItems}} 
@@ -101,11 +99,11 @@ End Sub
 
 **RadMenuComboItems** are constructed with no parameters and then the ComboBoxElement.__Items__ collection is used to populate the drop-down list.
 
->caption Figure 3: Adding combo item
+>caption Figure 3: Adding Combo Item
 
-![WinForms RadMenus Adding combo item](images/menus-menu-working-with-radmenu-items-adding-and-removing-items003.png)
+![WinForms RadMenus Adding Combo Item](images/menus-menu-working-with-radmenu-items-adding-and-removing-items003.png)
 
-#### Adding combo sub item
+#### Adding Combo Sub Item
 
 {{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=comboItem}} 
 {{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=comboItem}} 

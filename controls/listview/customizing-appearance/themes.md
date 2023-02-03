@@ -20,14 +20,14 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __SimpleListViewgroupVisualItem__ in *Controls Structure* on the left side. Then, select __IsHotTracking__ in the *Element States* section.
 
-	![WinForms RadListView listview-customizing-appearance-themes 001](images/listview-customizing-appearance-themes001.png)
+	![WinForms RadListView VisualStyleBuilder](images/listview-customizing-appearance-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![WinForms RadListView listview-customizing-appearance-themes 002](images/listview-customizing-appearance-themes002.png)
+	![WinForms RadListView Fill Repository](images/listview-customizing-appearance-themes002.png)
 	The result is illustrated below. The new fill color is applied when hovering the item:
 
-	![WinForms RadListView listview-customizing-appearance-themes 004](images/listview-customizing-appearance-themes004.png)
+	![WinForms RadListView  VisualStyleBuilder Sample](images/listview-customizing-appearance-themes004.png)
 
 1. Save the theme by selecting *File >> Save As*.
 
@@ -36,7 +36,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 >note If you need to customize the elements in some of the other views, you can switch the view by right click on **RadListView**:
 
 
-![WinForms RadListView listview-customizing-appearance-themes 003](images/listview-customizing-appearance-themes003.png)
+![WinForms RadListView Setting IconsViewMode](images/listview-customizing-appearance-themes003.png)
 
 
 # See Also 

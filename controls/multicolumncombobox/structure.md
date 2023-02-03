@@ -12,17 +12,17 @@ position: 1
 
 This article describes the inner structure and organization of the elements which build the **RadMultiColumnComboBox** control.
 
->caption Figure 1: RadMultiColumnComboBox's elements hierarchy
+>caption Figure 1: RadMultiColumnComboBox's Elements Hierarchy
 
-![WinForms RadMultiColumnComboBox RadMultiColumnComboBox's elements hierarchy](images/multicolumncombobox-structure001.png)
+![WinForms RadMultiColumnComboBox Elements Hierarchy](images/multicolumncombobox-structure001.png)
 
->caption Figure 2: MultiColumnComboPopupForm's elements hierarchy
+>caption Figure 2: MultiColumnComboPopupForm's Elements Hierarchy
 
-![WinForms RadMultiColumnComboBox MultiColumnComboPopupForm's elements hierarchy](images/multicolumncombobox-structure002.png)
+![WinForms RadMultiColumnComboBox MultiColumnComboPopupForm's Elements Hierarchy](images/multicolumncombobox-structure002.png)
         
->caption Figure 3: RadMultiColumnComboBox visual structure
+>caption Figure 3: RadMultiColumnComboBox Visual Structure
 
-![WinForms RadMultiColumnComboBox RadMultiColumnComboBox visual structure](images/multicolumncombobox-structure003.png)
+![WinForms RadMultiColumnComboBox RadMultiColumnComboBox Visual Structure](images/multicolumncombobox-structure003.png)
 
 1\. **RadMultiColumnComboBoxelement**:    
 &nbsp;&nbsp;&nbsp;&nbsp;1\. 1\. **RadTextBoxElement**: represents the editor element.   

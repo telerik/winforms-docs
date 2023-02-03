@@ -16,7 +16,7 @@ __RadMap__ supports clusterization of its layers allowing grouping of their item
 
 ![WinForms RadMap Clustering](images/map-features-layers-clusterization001.png)
 
-# Clusterization Modes
+## Clusterization Modes
 
 The __ClusterDistance__ property of a certain layer is responsible for setting a distance according to which each of the layer items will be evaluated to form a group. There are two types of clusters which can be assigned to the __ClusterStrategy__ property of the layer:
 

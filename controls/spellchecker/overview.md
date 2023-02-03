@@ -18,7 +18,7 @@ previous_url: spellchecker-overview
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadSpellChecker spellchecker-overview 001](images/spellchecker-overview001.png)
+![WinForms RadSpellChecker Overview](images/spellchecker-overview001.png)
 
 >important RadSpellChecker requires .NET 4.0 Framework.
 >

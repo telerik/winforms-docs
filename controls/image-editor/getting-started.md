@@ -24,7 +24,7 @@ The control offers a set of operations you can perform on an image which is load
 
 To use the __RadImageEditor__ just drop it from the toolbox on your form. The control already contains UI for editing the image. Once your application is started you can click the open button and load image in the control.
 
-![WinForms RadImage-Editor ](images/image-editor-getting-started001.png)
+![WinForms RadImageEditor Getting Started](images/image-editor-getting-started001.png)
 
 
 # See Also

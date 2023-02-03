@@ -13,8 +13,8 @@ previous_url: pageview-upgrading-to-radpageview
  
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadPageView Converting from RadPanelBar to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radpanelbar-to-radpageview)<br>In this video, you will learn how to convert a RadPanelBar to the new RadPageView control introduced in the R2 2010 release of RadControls for WinForms.|![WinForms RadPageView pageview-upgrading-to-radpageview 003](images/pageview-upgrading-to-radpageview003.png)|
-|[WinForms RadPageView Converting from RadTabStrip to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radtabstrip-to-radpageview)<br>In this video, you will learn how to convert a RadTabStrip to the new RadPageView control introduced in the R2 2010 release of RadControls for WinForms.|![WinForms RadPageView pageview-upgrading-to-radpageview 004](images/pageview-upgrading-to-radpageview004.png)|
+|[Converting from RadPanelBar to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radpanelbar-to-radpageview)<br>In this video, you will learn how to convert a RadPanelBar to the new RadPageView control introduced in the R2 2010 release of RadControls for WinForms.|![WinForms RadPageView Upgrading Tutorial](images/pageview-upgrading-to-radpageview003.png)|
+|[Converting from RadTabStrip to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radtabstrip-to-radpageview)<br>In this video, you will learn how to convert a RadTabStrip to the new RadPageView control introduced in the R2 2010 release of RadControls for WinForms.|![WinForms RadPageView Converting from RadTabStrip to RadPageView Tutorial](images/pageview-upgrading-to-radpageview004.png)|
 
 ## 
 

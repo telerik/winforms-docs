@@ -25,9 +25,9 @@ Select **RadMultiColumnComboBox** and click the small arrow on the top right pos
 
 * __Edit UI Elements__: allows setting properties at multiple levels of the class hierarchy.
             
->caption Figure 2: Element hierarchy editor
+>caption Figure 2: Element Hierarchy Editor
 
-![WinForms RadMultiColumnComboBox Element hierarchy editor](images/multicolumncombobox-design-time002.png)
+![WinForms RadMultiColumnComboBox Element Hierarchy Editor](images/multicolumncombobox-design-time002.png)
 
 * __Theme Name__: select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the control's visual style at one time.
 
@@ -35,7 +35,7 @@ Select **RadMultiColumnComboBox** and click the small arrow on the top right pos
             
 * __Open Property Builder__: allows quickly creating and arranging node structure and appearance.
 
-![WinForms RadMultiColumnComboBox multicolumncombobox-design-time 003](images/multicolumncombobox-design-time003.png)
+![WinForms RadMultiColumnComboBox GridView Property Builder](images/multicolumncombobox-design-time003.png)
            
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 

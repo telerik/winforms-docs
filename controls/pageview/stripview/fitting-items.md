@@ -34,7 +34,7 @@ stripElement.ItemFitMode = StripViewItemFitMode.None
 {{endregion}} 
 
 
-![WinForms RadPageView pageview-strip-view-fitting-items 001](images/pageview-strip-view-fitting-items001.png)
+![WinForms RadPageView Fitting Items None](images/pageview-strip-view-fitting-items001.png)
 
 * *Shrink* - Items are shrunk if their size exceeds the available one.
 
@@ -54,7 +54,7 @@ stripElement1.ItemFitMode = StripViewItemFitMode.Shrink
 
 {{endregion}} 
  
-![WinForms RadPageView pageview-strip-view-fitting-items 002](images/pageview-strip-view-fitting-items002.gif)
+![WinForms RadPageView Fitting Items Shrink](images/pageview-strip-view-fitting-items002.gif)
 
 * *Fill* - Items are expanded if their size is less than the available one.
 
@@ -75,7 +75,7 @@ stripElement2.ItemFitMode = StripViewItemFitMode.Fill
 {{endregion}} 
 
 
-![WinForms RadPageView pageview-strip-view-fitting-items 003](images/pageview-strip-view-fitting-items003.gif)
+![WinForms RadPageView Fitting Items Fill](images/pageview-strip-view-fitting-items003.gif)
 
 * *ShrinkAndFill* - Items are either shrinked or expanded when needed.
 
@@ -97,7 +97,7 @@ stripElement3.ItemFitMode = StripViewItemFitMode.ShrinkAndFill
 {{endregion}} 
 
 
-![WinForms RadPageView pageview-strip-view-fitting-items 004](images/pageview-strip-view-fitting-items004.gif)
+![WinForms RadPageView Fitting Items ShrinkAndFill](images/pageview-strip-view-fitting-items004.gif)
 
 * *FillHeight* - Items are stretched in the available height of their parent container.
 
@@ -119,7 +119,7 @@ stripElement4.ItemContainer.MinSize = New System.Drawing.Size(0, 50)
 {{endregion}} 
 
 
-![WinForms RadPageView pageview-strip-view-fitting-items 005](images/pageview-strip-view-fitting-items005.png)
+![WinForms RadPageView Fitting Items FillHeight](images/pageview-strip-view-fitting-items005.png)
 
 * *MultiLine* - Items are arranged in multiLine layout. You can also set the __MultiLineItemFitMode__ property to *None* or *Reflow*. If you set the __MultiLineItemFitMode__ property to *None* you will manually need to set the **Row** property of the items:
 
@@ -148,7 +148,7 @@ Me.RadPageViewPage5.Item.Row = 3
 {{endregion}} 
 
 
-![WinForms RadPageView pageview-strip-view-fitting-items 006](images/pageview-strip-view-fitting-items006.gif)
+![WinForms RadPageView Fitting Items MultiLine](images/pageview-strip-view-fitting-items006.gif)
 
 If the **MultiLineItemFitMode** property is set to *Reflow*, the layout will automatically calculate these settings:
 
@@ -173,7 +173,7 @@ stripElement1.MultiLineItemFitMode = MultiLineItemFitMode.Reflow
 {{endregion}} 
 
 
-![WinForms RadPageView pageview-strip-view-fitting-items 007](images/pageview-strip-view-fitting-items007.gif)
+![WinForms RadPageView MultiLineItemFitMode Reflow](images/pageview-strip-view-fitting-items007.gif)
 
 # See Also
 

@@ -21,15 +21,15 @@ In the example below we are assigning __RadContextMenu__ to __RadListControl__ a
 
 1. Select the __RadContextMenu__ component and click its __Smart Tag__. From the Action Menu click on the __Add ContextMenuManager__ option. This will create a __RadContextMenuManager__ instance and will add a __RadContextMenu__ property to all the controls on our form. 
 	
-	![WinForms RadMenus menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls 001](images/menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls001.png)
+	![WinForms RadContextMenu Smart Tag](images/menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls001.png)
 
 1. Select __RadListControl__ and __Microsoft ListBox__ controls and set their __RadContextMenu__ property to the **RadContextMenu** instance.
 
-	![WinForms RadMenus menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls 002](images/menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls002.png)
+	![WinForms RadContextMenu Properties Window](images/menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls002.png)
 
 1. Run the project. When you right click on the __ListBox__ or __RadListControl__ the __RadContextMenu__ instance will be displayed.
 
-	![WinForms RadMenus menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls 003](images/menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls003.png)
+	![WinForms RadContextMenu ListBox ContextMenu](images/menus-context-menu-assign-radcontextmenu-to-telerik-and-non-telerik-controls003.png)
 
 # See Also
 * [Distinguishing the Source Control of RadContextMenu]({%slug distinguishing-the-source-control-of-radcontextmenu%})

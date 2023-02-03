@@ -89,6 +89,6 @@ End Sub
 ![WinForms RadSparkline ShowAsZero](images/sparkline-null-values002.png)
 
 
->caption Figure 3: ShowAsZero
+>caption Figure 3: DoNotShow
 
-![WinForms RadSparkline ShowAsZero](images/sparkline-null-values003.png)
+![WinForms RadSparkline DoNotShow](images/sparkline-null-values003.png)

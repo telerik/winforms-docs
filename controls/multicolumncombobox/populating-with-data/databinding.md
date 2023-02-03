@@ -43,7 +43,7 @@ As a result **RadMultiColumnComboBox** is bound to the Northwind.Customers table
 
 >caption Figure 3: Bound RadMultiColumnComboBox
 
-![WinForms RadMultiColumnComboBox Bound RadMultiColumnComboBox](images/multicolumncombobox-databinding003.png)
+![WinForms RadMultiColumnComboBox Bound Mode](images/multicolumncombobox-databinding003.png)
 
 ###  Columns collection
 
@@ -55,7 +55,7 @@ You can set your own columns list using the [Columns](https://docs.telerik.com/
 
 The collection editor is accessible through the [Columns](https://docs.telerik.com/devtools/winforms/controls/gridview/columns/gridviewcolumn) property in the *Properties* grid: 
 
-![WinForms RadMultiColumnComboBox multicolumncombobox-databinding 005](images/multicolumncombobox-databinding005.png)
+![WinForms RadMultiColumnComboBox Columns](images/multicolumncombobox-databinding005.png)
 
 The important point when adding columns manually is to turn off the automatic generation of columns, otherwise you will have your columns duplicated in run time.
 

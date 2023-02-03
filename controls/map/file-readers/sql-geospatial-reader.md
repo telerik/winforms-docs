@@ -65,8 +65,8 @@ Me.radMap1.Layers("Capitals").AddRange(elements)
 
 {{endregion}} 
 
->caption Figure 2: Sample data table
+>caption Figure 2: Sample Data Table
 
-![WinForms RadMap Sample data table](images/map-file-readers-sql-geospatial-reader002.png)
+![WinForms RadMap Sample Data Table](images/map-file-readers-sql-geospatial-reader002.png)
 
  

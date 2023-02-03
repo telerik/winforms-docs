@@ -25,7 +25,7 @@ Here is how the following __RadListView__, looks when it is exported.
       
 >caption Figure 1: Before and after export
 
-![WinForms RadListView Before and after export](images/listview-export-data-spread-export001.png)![WinForms RadListView Before and after export](images/listview-export-data-spread-export002.png)
+![WinForms RadListView Before Export](images/listview-export-data-spread-export001.png)![WinForms RadListView After Export](images/listview-export-data-spread-export002.png)
 
 >note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
 * Telerik.WinControls.TelerikExport
@@ -163,7 +163,7 @@ End Sub
 
 >caption Figure 2: Export using formatting
 
-![WinForms RadListView Export using formatting](images/listview-export-data-spread-export003.png)
+![WinForms RadListView Export Using Formatting](images/listview-export-data-spread-export003.png)
 
 * __ExportCompleted__: This event is triggered when the export operation completes.
 

@@ -23,7 +23,7 @@ position: 6
 |__ShowScaleIndicator__|Gets or sets a value indicating whether the scale indicator is visible.|
 |__IsUpdateSuspended__|Gets a value indicating whether updates are suspended.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |------|------|
@@ -39,7 +39,7 @@ position: 6
 |__BringIntoView__|Brings the specified geo point into the center of the viewport and zooms the viewport to the specified zoom level.|
 |__BringIntoView__|Calculates the best zoom level that will fit the specified rectangle and centers it in the viewport.|
 
-# Events
+## Events
 
 |Event|Description|
 |------|------|

@@ -18,7 +18,7 @@ Select **RadApplicationMenu** and click the small arrow on the top right positio
 
 >caption Figure 1: Smart Tag
 
-![WinForms RadMenus Smart Tag](images/menus-application-menu-design-time001.png)
+![WinForms RadApplicationMenu Smart Tag](images/menus-application-menu-design-time001.png)
 
 * __New Theme Manager__: adds a new __RadThemeManager__ component to the form.
             
@@ -27,13 +27,13 @@ Select **RadApplicationMenu** and click the small arrow on the top right positio
             
 >caption Figure 2: Element hierarchy editor
 
-![WinForms RadMenus Element hierarchy editor](images/menus-application-menu-design-time002.png)
+![WinForms RadApplicationMenu Element hierarchy editor](images/menus-application-menu-design-time002.png)
 
 * __Theme Name__: select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the control's visual style at one time.
 
 * __Edit RightColumnItems__: allows populating the right column with items by using the *RadItem Collection Editor*.
 
-![WinForms RadMenus menus-application-menu-design-time 003](images/menus-application-menu-design-time003.png)
+![WinForms RadApplicationMenu menus-application-menu-design-time 003](images/menus-application-menu-design-time003.png)
             
 * __Edit ButtonItems__: allows populating the buttons strip layout with items by using the *RadItem Collection Editor*.
 

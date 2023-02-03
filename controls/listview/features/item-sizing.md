@@ -107,7 +107,7 @@ When using *DetailsView*, **RadListView** provides a grid-like interface for dis
 
 |Before best-fitting columns|After best-fitting columns|
 |----|----|
-|![WinForms RadListView listview-features-working-with-items 006](images/listview-features-working-with-items006.png)|![WinForms RadListView listview-features-working-with-items 006](images/listview-features-working-with-items007.png)|
+|![WinForms RadListView Before Best Fit](images/listview-features-working-with-items006.png)|![WinForms RadListView After Best Fit](images/listview-features-working-with-items007.png)|
 
 You can customize the execution of the algorithm of a concrete column by setting its **AutoSizeMode** property if the desired column. There are the following options:
 
@@ -128,7 +128,7 @@ As of **R3 2020** RadListView offers the **AutoSizeColumnsMode** property which 
 
 |ListViewAutoSizeColumnsMode.None|ListViewAutoSizeColumnsMode.Fill|
 |----|----|
-|![WinForms RadListView listview-features-working-with-items 008](images/listview-features-working-with-items008.png)|![WinForms RadListView listview-features-working-with-items 009](images/listview-features-working-with-items009.png)|
+|![WinForms RadListView ListViewAutoSizeColumnsMode None](images/listview-features-working-with-items008.png)|![WinForms RadListView ListViewAutoSizeColumnsMode Fill](images/listview-features-working-with-items009.png)|
 
          
 # See Also

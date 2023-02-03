@@ -20,8 +20,8 @@ RadRotator is a multipurpose component for content rotation and personalization.
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WinForms RadRotator rotator-overview 001](images/rotator-overview001.png)
+![WinForms RadRotator Overview](images/rotator-overview001.png)
 
 Animation between frames can be opaque or transparent and the movement can be in any direction. You can adjust the level of granularity and interval between frames.
 
-![WinForms RadRotator rotator-overview 002](images/rotator-overview002.png)
+![WinForms RadRotator Rotator Frame Animation](images/rotator-overview002.png)

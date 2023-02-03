@@ -18,7 +18,7 @@ The __RadSparkline__ control is lightweight chart that aims to present key infor
 {% include cta-panel-overview.html %}
 {% endif %}
 
- ![WinForms RadSparkline ](images/sparkline-overview001.png)
+ ![WinForms RadSparkline Overview](images/sparkline-overview001.png)
 
 # Features
 

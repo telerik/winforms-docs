@@ -66,9 +66,9 @@ End Sub
 
 Now when you press the button, **RadSpellChecker** form will appear with the appropriate suggestions for the mistaken words:
 
->caption Figure 1: Spellchecking form
+>caption Figure 1: Spellchecking Form
 
-![WinForms RadSpellChecker Spellchecking form](images/spellchecker-overview001.png)
+![WinForms RadSpellChecker Spellchecking Form](images/spellchecker-overview001.png)
 
 # See Also
 

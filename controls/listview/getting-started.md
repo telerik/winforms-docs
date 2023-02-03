@@ -41,7 +41,7 @@ For the sake of this example, we are going to use a DataTable containing data ab
 
 At this point the form should like something similar to this:
 
-![WinForms RadListView listview-getting-started 003](images/listview-getting-started003.png)
+![WinForms RadListView Getting Started](images/listview-getting-started003.png)
 
 2\. Now, lets continue with setting the control __DataSource__, allow edit and remove operations and subscribe to the events that we are going to use in this example.
 
@@ -548,4 +548,4 @@ End Sub
 
 9\. Run the application and try the different functionalities: 
 
-![WinForms RadListView listview-getting-started 005](images/listview-getting-started005.png)
+![WinForms RadListView Getting Started Sample](images/listview-getting-started005.png)

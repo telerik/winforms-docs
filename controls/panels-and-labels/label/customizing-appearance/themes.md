@@ -19,10 +19,10 @@ This help article will demonstrate a step by step tutorial how to customize the 
 1. Load a desired theme from the just exported files by selecting *File >> Open Package*
 
 1. Navigate to **RadLabel** in `Controls Structure` on the left side. 
-    ![WinForms RadLabel label-customizing-appearance-themes 001](images/label-customizing-appearance-themes001.png)
+    ![WinForms RadLabel VisualStyleBuilder](images/label-customizing-appearance-themes001.png)
 
 1. Modify the applied text repository item.
-    ![WinForms RadLabel label-customizing-appearance-themes 002](images/label-customizing-appearance-themes002.png)
+    ![WinForms RadLabel Text Repository Item](images/label-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

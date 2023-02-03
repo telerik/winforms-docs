@@ -12,13 +12,13 @@ position: 6
 
 The **OverflowItem** ("**...**") shows a **RadContextMenuDropDown** with the overflown items and the [NavigationOptionsMenuItem]({%slug officenavigationbar-options-dialog%})
 
-![WinForms RadOfficeNavigationBar officenavigationbar-context-menu 001](images/officenavigationbar-context-menu001.png)
+![WinForms RadOfficeNavigationBar Context Menu Overview](images/officenavigationbar-context-menu001.png)
 
 >important When the user clicks the **RadOfficeNavigationBarOverflowItem** ("**...**") to open the menu, the items in  the **RadContextMenuDropDown** are always rebuilt.
 
 **RadOfficeNavigationBar** offers the **ContextMenuDropDown** property giving direct access to the RadContextMenuDropDown with items. The ContextMenuDropDown's **DropDownOpening**, **DropDownOpened**, **DropDownClosing** and **DropDownClosed** events are suitable for handling all aspects of opening and closing the menu drop down. Once the menu is opened, the ContextMenuDropDown.**Items** collection is populated with the correct items and they can be further customized according to the specific requirements.
 
-#### Disable Notes item in the ContextMenuDropDown.DropDownOpened event
+#### Disable Notes item in the ContextMenuDropDown.DropDownOpened Event
 
 {{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=DisableNotes}} 
 {{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=DisableNotes}} 
@@ -58,7 +58,7 @@ End Sub
 
 {{endregion}} 
 
-![WinForms RadOfficeNavigationBar officenavigationbar-context-menu 002](images/officenavigationbar-context-menu002.png)
+![WinForms RadOfficeNavigationBar DropDownOpened Event](images/officenavigationbar-context-menu002.png)
 
 # See Also
 

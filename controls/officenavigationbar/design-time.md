@@ -17,7 +17,7 @@ To start using **RadOfficeNavigationBar**, just drag it from the toolbox and dro
 
 Select **RadOfficeNavigationBar** and click the small arrow on the top right position in order to open the Smart Tag.
 
-![WinForms RadOfficeNavigationBar winforms/officenavigationbar-design-time 001](images/officenavigationbar-design-time001.png) 
+![WinForms RadOfficeNavigationBar Smart Tag](images/officenavigationbar-design-time001.png) 
 
 **Common Tasks**
 
@@ -47,13 +47,13 @@ To add/remove a page, we can click on the Add Page/Remove Page buttons.
 
 * __Remove Page__: Clicking on this will remove the currently selected page in **RadOfficeNavigationBar**.
 
-![WinForms RadOfficeNavigationBar winforms/officenavigationbar-design-time 001](images/officenavigationbar-design-time002.png) 
+![WinForms RadOfficeNavigationBar Adding Pages](images/officenavigationbar-design-time002.png) 
 
 ### Customize a Page
 
 From the Properties window in Visual Studio, we can navigate to the Pages collection property. Then clicking on the button on its right side, we can further customize the elements inside the collection.
 
-![winforms/officenavigationbar-design-time 001](images/officenavigationbar-design-time002.png) 
+![WinForms RadOfficeNavigationBar Customize Pages](images/officenavigationbar-design-time003.png) 
 
 ### Customize RadOfficeNavigationBar
 
@@ -61,7 +61,7 @@ Using the settings inside the **Office Navigation Bar Tasks** section in the sma
 
 * __Use Compact Font__: Specifies whether to use compact or large font for the items in **RadOfficeNavigationBar**.
 
-![WinForms RadOfficeNavigationBar winforms/officenavigationbar-design-time 001](images/officenavigationbar-design-time004.png)
+![WinForms RadOfficeNavigationBar Customization](images/officenavigationbar-design-time004.png)
 
 * __Visible Items Count__: Specifies items that are visible on the strip.
 

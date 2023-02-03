@@ -17,11 +17,11 @@ The following tutorial demonstrates how to assign a shortcut to a **RadMenuItem*
 
 2\. On the **RadMenu** that reads "*Type here*" enter *New*. This will automatically create a menu item object "radMenuItem1":
 
-![WinForms RadMenus menu-items-shortcut 001](images/menu-items-shortcut001.png)
+![WinForms RadMenu Smart Tag](images/menu-items-shortcut001.png)
 
 3\. Click the newly created item to open the drop down menu and create a sub menu item. By default, the text of the new item will be set to *radMenuItem2*. Change it to *File*:
 
-![WinForms RadMenus menu-items-shortcut 002](images/menu-items-shortcut002.gif)
+![WinForms RadMenu Add Menu Item](images/menu-items-shortcut002.gif)
 
 4\. In the Properties Window locate the **Click** events for radMenuItem1 and radMenuItem2 and double-click them to create event handlers.
 
@@ -80,7 +80,7 @@ Me.RadMenuItem2.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.F, Keys.K))
 
 As a result, you will get this picture runtime. As you can see, the shortcuts are automatically displayed for the **RadMenuItems**:
 
-![WinForms RadMenus menu-items-shortcut 003](images/menu-items-shortcut003.png)
+![WinForms RadMenu Shortcut Overview](images/menu-items-shortcut003.png)
 
 Interesting functionality to mention is the ability to set your own custom text to describe the shortcut added. This can be achieved via the __HintText__ property of the menu item:
 
@@ -100,7 +100,7 @@ RadMenuItem2.HintText = "Custom Text"
 
 {{endregion}} 
 
-![WinForms RadMenus menu-items-shortcut 004](images/menu-items-shortcut004.png)
+![WinForms RadMenu ShortCut HintText](images/menu-items-shortcut004.png)
 
 # See Also
 

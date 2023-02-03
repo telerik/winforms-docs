@@ -14,7 +14,7 @@ position: 1
 
 Multiple items can be selected in code as well. This can be achieved by using the **Select** method. This method takes an array of **ListViewDataItem** as parameter.
 
-#### Programmatically select items
+#### Programmatically Select Items
 
 {{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=itemSelect}} 
 {{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=itemSelect}} 
@@ -44,7 +44,7 @@ The **FullRowSelect** property controls whether the full row should be selected 
 
 |FullRowSelect=*true*|FullRowSelect=*false*|
 |----|----|
-|![WinForms RadListView listview-features-selection](images/listview-features-selection001.png)|![WinForms RadListView listview-features-selection](images/listview-features-selection002.png)|
+|![WinForms RadListView FullRowSelect True](images/listview-features-selection001.png)|![WinForms RadListView FullRowSelect False](images/listview-features-selection002.png)|
 
 By default, when you add items programmatically, the last added item is selected. This is controlled by the **SelectLastAddedItem** property and if you don't want **RadListView** to select the last inserted item, set the mentioned property to *false*.
 

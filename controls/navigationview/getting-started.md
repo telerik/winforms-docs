@@ -14,19 +14,19 @@ To start using **RadNavigationView**, just drag it from the toolbox and drop it 
 
 1\. Select the RadNavigationView control and click the small arrow on the top right position in order to open the Smart Tag. It allows you to add/remove pages and adjust the settings relevant for the [NavigationView]({%slug winforms/pageview/navigationview%})	 
 
-![WinForms RadNavigationView navigationview-getting-started 001](images/navigationview-getting-started001.png)
+![WinForms RadNavigationView Design Time](images/navigationview-getting-started001.png)
 
 2\. The *Properties* section in Visual Studio gives access to the *RadPageView Collection Editor*:
 
-![WinForms RadNavigationView navigationview-getting-started 002](images/navigationview-getting-started002.png)
+![WinForms RadNavigationView Properties Window](images/navigationview-getting-started002.png)
 
 It is possible to add/remove pages, change the page's text, image, etc.
 
-![WinForms RadNavigationView navigationview-getting-started 003](images/navigationview-getting-started003.png)
+![WinForms RadNavigationView Page Collection Editor Window](images/navigationview-getting-started003.png)
 
 3\. Once you are done with the changes, press the OK button to confirm the changes and close the collection editor:
 
-![WinForms RadNavigationView navigationview-getting-started 004](images/navigationview-getting-started004.png)
+![WinForms RadNavigationView Sample](images/navigationview-getting-started004.png)
 
 Now, each page has an associated content area (on the right) where the developer can build whatever design is required for the page. Just select the page and drag the necessary controls.  
 

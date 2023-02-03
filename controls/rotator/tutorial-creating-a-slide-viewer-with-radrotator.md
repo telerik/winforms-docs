@@ -15,7 +15,7 @@ previous_url: rotator-tutorial-creating-a-slide-viewer-with-radrotator
 
 The following tutorial demonstrates programmatically loading images from your "My Documents\Pictures" directory for display in the RadRotator. The tutorial will also integrate __RadStatusStrip__ control which contains RadLabelElement.
 
-![WinForms RadRotator rotator-tutorial-creating-a-slide-viewer-with-radrotator 001](images/rotator-tutorial-creating-a-slide-viewer-with-radrotator001.png)
+![WinForms RadRotator StatusStrip Overview](images/rotator-tutorial-creating-a-slide-viewer-with-radrotator001.png)
 
 1\. In the default form of a new Windows application:
 
@@ -46,7 +46,7 @@ Partial Class TutorialCreatingASlideViewerWithRadRotator
 
 7\. Return to the design view of the form. Visual Studio will repaint the form.
 
-![WinForms RadRotator rotator-tutorial-creating-a-slide-viewer-with-radrotator 002](images/rotator-tutorial-creating-a-slide-viewer-with-radrotator002.png)
+![WinForms RadRotator Design Time](images/rotator-tutorial-creating-a-slide-viewer-with-radrotator002.png)
 
 8\. Click the __Events__ tab of the __Properties__ Window and navigate to the Forms __Load__ event.  Double click it to create a Load event handler and replace that code with the code below. *The code here uses the System.IO Directory object GetFiles() method to retrieve all "*.jpg" file paths. The file paths are passed to a GetThumbNail() method that will be described next. GetThumbNail() returns an ImageItem that is added to the RadRotator items collection. Once the image items are loaded the Start() method is called to begin animation.
 

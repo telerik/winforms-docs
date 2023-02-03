@@ -9,7 +9,7 @@ position: 2
 previous_url: listview-working-with-design-time-adding-groups
 ---
 
-# Adding groups
+# Adding Groups
  
 Items in **RadListView** can be grouped conveniently into different groups, which will enhance your end-user experience when working with **RadListView**. Grouping the items at design time can be achieved by setting the __EnableCustomGroups__ and __ShowGroups__ properties of the control to true and, adding the desired groups into the __Groups__ collection of **RadListView**. This collection is accessible either through the __Smart Tag__ of the control or through the __Groups__ collection property located in the property grid.
 
@@ -31,11 +31,11 @@ After the desired groups are added, you can easily assign each __ListViewDataIte
 
 >caption Figure 4: Specifying item's group
 
-![WinForms RadListView Specifying item's group](images/listview-working-with-design-time-adding-groups004.png)
+![WinForms RadListView Specifying Item's Group](images/listview-working-with-design-time-adding-groups004.png)
 
 Here is how the grouped items will look like:
 
-![WinForms RadListView listview-working-with-design-time-adding-groups 005](images/listview-working-with-design-time-adding-groups005.png)
+![WinForms RadListView Groups](images/listview-working-with-design-time-adding-groups005.png)
 
 # See Also
 

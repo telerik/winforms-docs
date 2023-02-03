@@ -88,7 +88,7 @@ The navigation control allows the end user to easily zoom and pan to a particula
 
 The __MapNavigationBarElement__ can be accessed through the __RadMap.MapElement.NavigationBarElement__. The table below lists the exposed properties.
 
-# Properties
+## Properties
 
 |Property|Description|
 |------|------|

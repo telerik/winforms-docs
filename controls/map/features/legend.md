@@ -14,9 +14,9 @@ The __RadMap__ control introduces the __MapLegendElement__ object. It allows dis
 
 >caption Figure 1: Map Legend
 
-![WinForms RadMap Map Legend](images/map-features-legend001.png)
+![WinForms RadMap Legend](images/map-features-legend001.png)
 
-# Setup Legends
+## Setup Legends
 
 Legend items can be added by accessing the __Children__ collection of the legend stack element. The code fragment below extends the [Layers Overview]({%slug winforms/map/features/layers/overview%}) example by adding two legends.
 
