@@ -131,7 +131,7 @@ This scenario is also demonstrated in the [Data Binding Walkthrough article]({%s
 
 #### EditAppointmentDialog with multiple resources
 
-![WinForms RadScheduler scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+![WinForms RadScheduler EditAppointmentDialog with multiple resources](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
 
 
 # See Also

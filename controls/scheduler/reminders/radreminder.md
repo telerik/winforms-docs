@@ -14,7 +14,7 @@ previous_url: scheduler-reminders-radreminder
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadScheduler Getting Started with RadSchedulerReminder](http://tv.telerik.com/watch/winforms/getting-started-with-radschedulerreminder)<br>In this video, you will learn how to notify users of upcoming appointments through the use of RadSchedulerReminder.|![WinForms RadScheduler scheduler-reminders-radreminder 002](images/scheduler-reminders-radreminder002.png)|
+|[Getting Started with RadSchedulerReminder](http://tv.telerik.com/watch/winforms/getting-started-with-radschedulerreminder)<br>In this video, you will learn how to notify users of upcoming appointments through the use of RadSchedulerReminder.|![WinForms RadScheduler Reminder Tutorial](images/scheduler-reminders-radreminder002.png)|
 
 ## Overview
 

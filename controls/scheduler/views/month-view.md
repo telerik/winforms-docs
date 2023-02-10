@@ -130,8 +130,8 @@ monthView.WorkWeekEnd = DayOfWeek.Saturday
 
 >caption Figure 2: Shown Weekends
 
-![WinForms RadScheduler Shown Weekends](images/scheduler-views-month-view001.png)
-![WinForms RadScheduler scheduler-views-month-view 002](images/scheduler-views-month-view002.png)
+![WinForms RadScheduler Shown Weekends False](images/scheduler-views-month-view001.png)
+![WinForms RadScheduler Shown Weekends True](images/scheduler-views-month-view002.png)
 
 ## Setting The Number Of Weeks
 

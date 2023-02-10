@@ -13,7 +13,7 @@ previous_url: scheduler-end-user-functionality-editing-appointments
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadScheduler In-Place Editors with RadScheduler for WinForms](http://www.telerik.com/videos/winforms/in-place-editors-with-radscheduler-for-winforms)<br>In this video, you will learn how to use the new in-place editors feature of RadScheduler for WinForms.|![WinForms RadScheduler scheduler-end-user-functionality-editing-appointments 004](images/scheduler-end-user-functionality-editing-appointments004.png)|
+|[In-Place Editors with RadScheduler for WinForms](http://www.telerik.com/videos/winforms/in-place-editors-with-radscheduler-for-winforms)<br>In this video, you will learn how to use the new in-place editors feature of RadScheduler for WinForms.|![WinForms RadScheduler Editing Appointments  tutorial](images/scheduler-end-user-functionality-editing-appointments004.png)|
 
 RadScheduler offers two options to edit an appointment:
 
@@ -30,7 +30,7 @@ The EditAppointmentDialog allows for editing all the properties that an appointm
 1. Double-click an appointment and the "Editor Appointment Dialog" is shown if the appointment is not recurring.![WinForms RadScheduler scheduler-end-user-functionality-editing-appointments 001](images/scheduler-end-user-functionality-editing-appointments001.png)
 
 1. If the appointment is recurring, the "Editing a recurring appointment" pop-up appears, where you can specify whether you want to edit only the selected occurrence of the appointment, or edit the entire series:
-    ![WinForms RadScheduler scheduler-end-user-functionality-editing-appointments 005](images/scheduler-end-user-functionality-editing-appointments005.png)
+    ![WinForms RadScheduler Dialog](images/scheduler-end-user-functionality-editing-appointments005.png)
 
     Choose which you want to edit and press OK to open the "Editor Appointment Dialog". You can also press Cancel to cancel the edit entirely.
             
@@ -43,7 +43,7 @@ The EditAppointmentDialog allows for editing all the properties that an appointm
 
 #### EditAppointmentDialog with multiple resources
 
-![WinForms RadScheduler scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+![WinForms RadScheduler EditAppointmentDialog with multiple resources](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
 
             
 ## Using In-place editors      

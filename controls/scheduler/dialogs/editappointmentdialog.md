@@ -22,7 +22,7 @@ It will pop up when you double click an empty cell or an existing appointment. A
 
 #### EditAppointmentDialog with multiple resources
 
-![WinForms RadScheduler scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+![WinForms RadScheduler resources Multiple](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
 
 
 # Create a custom EditAppointmentDialog
@@ -37,7 +37,7 @@ Alternatively, you can create a completely new dialog according to any specific 
 
 As a derivative of **RadSchedulerDialog** which inherits **RadForm**, the **ShowDialog** method and **Shown** event are already available. It is left to implement the **ShowRecurrenceDialog** and **EditAppointment** methods. You can find below a sample implementation of the edit dialog which contains a few controls to modify the summary, start/end date and time of the appointment.
 
->caption Figure 2. Custom edit dialog
+>caption Figure 2: Custom Edit Dialog
 
 ![WinForms RadScheduler Custom edit dialog](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog002.png)
 

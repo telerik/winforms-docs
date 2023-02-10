@@ -13,7 +13,7 @@ previous_url: scheduler-views-time-zones
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[WinForms RadScheduler Using Time Zones in RadScheduler for WinForms](http://www.telerik.com/videos/winforms/using-time-zones-in-radscheduler-for-winforms)<br>In this video, you will learn how to display appointments contained in RadScheduler in different time zones. You will also learn how to add time zone rulers to RadScheduler.|![WinForms RadScheduler scheduler-views-time-zones 009](images/scheduler-views-time-zones009.png)|
+|[Using Time Zones in RadScheduler for WinForms](http://www.telerik.com/videos/winforms/using-time-zones-in-radscheduler-for-winforms)<br>In this video, you will learn how to display appointments contained in RadScheduler in different time zones. You will also learn how to add time zone rulers to RadScheduler.|![WinForms RadScheduler Time Zones](images/scheduler-views-time-zones009.png)|
 
 
 The Time Zones feature of __RadScheduler__ allows the user to see a ruler representing an hour scale set according to a time zone different than the local time zone. In addition, the user can see not just one time ruler, but several rulers for several time zones at once. Two important properties determine the behavior of the Time Zones feature: SystemTimeZone and DefaultTimeZone.
@@ -143,7 +143,7 @@ Again, this will change the representation of the appointment according to the t
 
 ### Combining SystemTimeZone with DefaultTimeZone
           
-The combination of using both SystemTimeZone and DefaultTimeZone will result in the following representation:![WinForms RadScheduler scheduler-views-time-zones 003](images/scheduler-views-time-zones003.png)
+The combination of using both SystemTimeZone and DefaultTimeZone will result in the following representation:![WinForms RadScheduler SystemTimeZone with DefaultTimeZone](images/scheduler-views-time-zones003.png)
 
 ### TimeZones
           

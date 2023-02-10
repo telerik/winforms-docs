@@ -8,7 +8,9 @@ published: True
 position: 8
 ---
 
-# Properties
+# Properties, Methods and Events
+
+## Properties
 
 |Property|Description|
 |------|------|
@@ -65,7 +67,7 @@ position: 8
 |__PrintStyle__|Gets or sets a value indicating how the is printed.|
 |__DropDownMenu__|Gets the drop down menu.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |------|------|
@@ -118,7 +120,7 @@ position: 8
 |__PrintPreview__|Shows a for editing the print settings. As instance of RadPrintDocument used to control the print preview process.|
 |__PrintPreview(RadPrintDocument document)__|Shows a for editing the print settings.|
 
-# Events
+## Events
 
 |Event|Description|
 |------|------|
@@ -181,7 +183,7 @@ position: 8
 |__AppointmentsPasting__|Fired by the Paste operation when the scheduler is about to read the clipboard data. This event allows you to cancel the default action and implement a custom one.|
 |__ContextMenuShowing__|Occurs when a context menu is about to show.|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radscheduler.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radscheduler.html#methods)

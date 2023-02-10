@@ -36,7 +36,7 @@ RadScheduler offers the **AppointmentTitleFormat** property allowing you to spec
 
 >note The **AppointmentBackgroundInfo** controls the font style and color that will be used in the {4}{5} construction - "&lt;span&gt; &lt;/span&gt;" by its **DateTimeColor** and **DateTimeFont** properties.  The AppointmentBackgroundInfo.Font property controls the font for the entire text in the appointment element. 
 
-![WinForms RadScheduler appointment-title-formatter 001](images/appointment-title-formatter001.png)
+![WinForms RadScheduler Appointment Title Format](images/appointment-title-formatter001.png)
 
 {{source=..\SamplesCS\Scheduler\Fundamentals\TitleFormatter.cs region=Example1}}
 {{source=..\SamplesVB\Scheduler\Fundamentals\TitleFormatter.vb region=Example1}} 
@@ -80,7 +80,7 @@ Me.radScheduler1.AppointmentTitleFormat = "{6}{0:dd-MM-yyyy h:mm tt} - {1:dd-MM-
 
 ````
 
-![WinForms RadScheduler appointment-title-formatter 003](images/appointment-title-formatter003.png)
+![WinForms RadScheduler Custom Format](images/appointment-title-formatter003.png)
 
 ## ShowAppointmentDescription
 
@@ -105,7 +105,7 @@ End Sub
 
 ````
 
-![WinForms RadScheduler appointment-title-formatter 002](images/appointment-title-formatter002.png)
+![WinForms RadScheduler Appointment Description](images/appointment-title-formatter002.png)
 
 ## AppointmentTitleFormatterFactory
 
@@ -119,13 +119,13 @@ When the **SchedulerViewType** is *Day*, *MultiDay*, *Week*, *WorkWeek* a DayVie
 
 When the **SchedulerViewType** is *Month* a MonthViewAppointmentTitleFormatter is used. 
 
-![WinForms RadScheduler appointment-title-formatter 004](images/appointment-title-formatter004.png)
+![WinForms RadScheduler MonthViewAppointmentTitleFormatter](images/appointment-title-formatter004.png)
 
 ### TimelineViewAppointmentTitleFormatter
 
 When the **SchedulerViewType** is *Timeline* a TimelineViewAppointmentTitleFormatter is used. 
 
-![WinForms RadScheduler appointment-title-formatter 005](images/appointment-title-formatter005.png)
+![WinForms RadScheduler TimelineViewAppointmentTitleFormatter](images/appointment-title-formatter005.png)
 
 ## Customize Appointment's Text
 
@@ -175,7 +175,7 @@ End Class
 
 Do not forget to replace the custom AppointmentElement with the help of a [SchedulerElementProvider]({%slug winforms/scheduler/appointments-and-dialogs/custom-appointment-element%}).
 
-![WinForms RadScheduler appointment-title-formatter 006](images/appointment-title-formatter006.png)
+![WinForms RadScheduler Appointment Customized Text](images/appointment-title-formatter006.png)
 
 # See Also
 

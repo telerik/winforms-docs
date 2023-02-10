@@ -17,7 +17,7 @@ In this article we will describe the design time abilities of __RadScheduler__ a
 Here is how the control's Smart Tag looks like:
 
 >caption Figure 1: RadScheduler Smart Tag
-![WinForms RadScheduler RadScheduler Smart Tag](images/radscheduler-design-time001.png)
+![WinForms RadScheduler Smart Tag](images/radscheduler-design-time001.png)
 
 * __Common Tasks__
 

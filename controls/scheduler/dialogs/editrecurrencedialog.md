@@ -26,7 +26,7 @@ In the following example, we will create a completely new dialog which will repl
 1\. Create a class which inherits the **RadSchedulerDialog** class and implements the **IEditRecurrenceDialog** interface.
 2\. Add one **RadDropDownList**, two **RadLabels**, two **RadSpinEditors** and three **RadButtons** as it is shown in the below screenshot:
 
-![WinForms RadScheduler scheduler-winforms-scheduler-dialogs-editrecurrencedialog 002](images/scheduler-winforms-scheduler-dialogs-editrecurrencedialog002.png)
+![WinForms RadScheduler Custom EditRecurrenceDialog](images/scheduler-winforms-scheduler-dialogs-editrecurrencedialog002.png)
 
 3\. Manage the recurrence rule of the appointment by the added controls on the form:
 

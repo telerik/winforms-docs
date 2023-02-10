@@ -14,7 +14,7 @@ Agenda View is a table, structured like a simple list, which lists appointments 
 
 >caption Figure 1: RadScheduler in Agenda View
 
-![WinForms RadScheduler RadScheduler in Agenda View](images/scheduler-views-agenda-view001.png)
+![WinForms RadScheduler in Agenda View](images/scheduler-views-agenda-view001.png)
 
 ## Set Agenda View
 

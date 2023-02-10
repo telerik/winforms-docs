@@ -69,7 +69,7 @@ End Sub
 
 #### EditAppointmentDialog with multiple resources
 
-![WinForms RadScheduler scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+![WinForms RadScheduler multiple resources](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
 
 # See Also
 

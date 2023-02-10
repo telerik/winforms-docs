@@ -203,7 +203,7 @@ Me.scheduler.GroupType = GroupType.Resource
 
 #### EditAppointmentDialog with multiple resources
 
-![WinForms RadScheduler scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+![WinForms RadScheduler Dialog with multiple resources](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
 
 Saving changes to the database happens when the __SaveChanges__ method of the DbContext is invoked. You can invoke it on a button click or when the form is closing:
 

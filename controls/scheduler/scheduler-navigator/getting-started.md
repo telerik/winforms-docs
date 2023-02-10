@@ -17,7 +17,7 @@ To use the __RadSchedulerNavigator__ control you should add it to your form and 
 
 >caption Figure 1: Associating RadScheduler
 
-![WinForms RadScheduler Associating RadScheduler](images/scheduler-scheduler-navigator-getting-started001.png)
+![WinForms RadScheduler Associating Scheduler Control](images/scheduler-scheduler-navigator-getting-started001.png)
 
 # See Also
 
