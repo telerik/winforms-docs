@@ -649,6 +649,12 @@ navigation:
     controls/forms-and-dialogs/tabbedform/customizing-appearance:
         title: Customizing Apearance
         position: 7
+    controls/forms-and-dialogs/toolbarform:
+        title: ToolbarForm
+        position: 10
+    controls/forms-and-dialogs/toolbarform/features:
+        title: Features
+        position: 7
     controls/ganttview:
         title: GanttView
         position: 240
@@ -1318,18 +1324,24 @@ navigation:
     controls/syntax-editor/features/taggers:
         title: Taggers
         position: 8
+    controls/taskbar-button:
+        title: Taskbar Button
+        position: 478
+    controls/taskbar-button/features:
+        title: Features
+        position: 4
     controls/task-board:
         title: Task Board
-        position: 478
+        position: 479
     controls/task-dialog:
         title: Task Dialog
-        position: 478
+        position: 480
     controls/toast-notification:
         title: Toast Notification
-        position: 479
+        position: 481
     controls/track-and-status-controls:
         title: Track and Status controls
-        position: 480
+        position: 482
     controls/track-and-status-controls/progressbar:
         title: ProgressBar
         position: 0
@@ -1771,8 +1783,10 @@ intro_columns:
       "ShapedForm": "winforms/forms-and-dialogs/shapedform"
       "StatusStrip": "winforms/forms-and-dialogs/statusstrip"
       "TabbedForm": "radtabbedform-overview"
+      "ToolbarForm": "radtoolbarform-overview"
       "TitleBar": "winforms/forms-and-dialogs/statusstrip"
       "ToastNotification": "toast-notification-overview"
+      "TaskbarButton": "taskbar-button-overview"
       "SplashScreen": "splashscreen-overview"
       "Overlay": "overlay-overview"
       "Flyout": "flyout-overview"

@@ -13,12 +13,13 @@ position: 0
 __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsportal.com/) REST service. You can enable tile caching to a local folder by setting a new __LocalFileCacheProvider__ to the BingRestMapProvider.__CacheProvider__ property.
 
 >caption Figure 1: BingRestMapProvider 
-
 ![WinForms RadMap BingRestMapProvider](images/map-bingrestmapprovider001.png)
 
 >note You must provide a Bing Maps Key to the provider for it to work. To get your free Bing Maps Key, please refer to the following link: [Getting a Bing Maps Key](https://msdn.microsoft.com/en-us/library/ff428642.aspx).
 
 >note Only billable transactions count towards the free-use limits for Basic keys, and Enterprise keys are only charged for billable transactions. Non-billable transactions do not incur charges and do not count towards free-use limits. You can find additional information in the following link:  [Billable versus non-billable transactions](https://msdn.microsoft.com/en-us/library/ff859477.aspx).
+
+>caution **BingRestMapProvider** internally loads tile data from the [Bing Maps](https://www.bingmapsportal.com/) REST service which requires **TLS 1.2** coming automatically with .NET Framework 4.7. For older .NET Frameworks, or because of some other Windows settings, it may be necessary to explicitly choose TLS 1.2 for your application by setting the System.Net.ServicePointManager.**SecurityProtocol** property to SecurityProtocolType.**Tls12**. More information is available here: [Transport Layer Security (TLS) best practices with the .NET Framework](https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls).
 
 #### Using BingRestMapProvider
 
@@ -26,6 +27,7 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 {{source=..\SamplesVB\Map\MapGettingStarted.vb region=GettingStarted}}
 
 ````C#
+
 string cacheFolder = @"..\..\cache";
 BingRestMapProvider bingProvider = new Telerik.WinControls.UI.BingRestMapProvider();
 bingProvider.UseSession = true;
@@ -36,6 +38,7 @@ this.radMap1.Providers.Add(bingProvider);
 
 ````
 ````VB.NET
+
 Dim cacheFolder As String = "..\..\cache"
 Dim bingProvider As BingRestMapProvider = New Telerik.WinControls.UI.BingRestMapProvider()
 bingProvider.UseSession = True
@@ -57,7 +60,7 @@ Me.radMap1.Providers.Add(bingProvider)
 |__BingKey__|Gets or sets the Bing key.|
 |__UseSession__|Gets or sets a value indicating whether to use session key.|
 |__SessionId__|Gets the session identifier.|
-|__ImagerySet__|Gets or sets the imagery set. The possible values are: *Aerial*, *AerialWithLabels*, *AerialWithLabelsOnDemand*,*Road*, *RoadOnDemand*, *CanvasDark*, *CanvasLight*, *CanvasGray*, *OrdnanceSurvey*. ![WinForms RadMap map-bingrestmapprovider 001](images/map-bingrestmapprovider002.png)|
+|__ImagerySet__|Gets or sets the imagery set. The possible values are: *Aerial*, *AerialWithLabels*, *AerialWithLabelsOnDemand*,*Road*, *RoadOnDemand*, *CanvasDark*, *CanvasLight*, *CanvasGray*, *OrdnanceSurvey*. ![WinForms RadMap ImagerySet](images/map-bingrestmapprovider002.png)|
 |__Initializing__|Gets or sets a value indicating whether this __BingRestMapProvider__ is currently in the initialization process.|
 |__Initialized__|Gets or sets a value indicating whether this __BingRestMapProvider__ is initialized.|
 |__MaxZoomLevel__|Gets or sets the maximum zoom level.|
@@ -103,3 +106,5 @@ Me.radMap1.Providers.Add(bingProvider)
 * [Route]({%slug winforms/map/providers/route%})
 * [Elevation]({%slug winforms/map/providers/elevation%})
 * [How to Create Map Image Silently]({%slug create-map-image-silently%})
+* [How to Deal with Empty RadMap using BingRestMapProvider]({%slug bing-map-not-loading%})
+
